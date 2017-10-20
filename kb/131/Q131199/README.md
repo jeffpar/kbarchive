@@ -6,6 +6,8 @@ permalink: /kb/131/Q131199/
 
 ## Q131199: STRAVINSKY: ^K Character Displayed in Corner of Screen
 
+{% raw %}
+
 	Article: Q131199
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -95,3 +97,5 @@ permalink: /kb/131/Q131199/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122544/
 
 ## Q122544: UPDATE.TXT: TCP/IP-32 3.11b for Windows for Workgroups
 
+{% raw %}
+
 	Article: Q122544
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11; WINDOWS:3.11
@@ -268,3 +270,5 @@ permalink: /kb/122/Q122544/
 	
 	=============================================================================
 	
+
+{% endraw %}

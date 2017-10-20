@@ -6,6 +6,8 @@ permalink: /kb/094/Q94666/
 
 ## Q94666: Difficult to Use F5 &amp; F8 Keys on Data General Computers
 
+{% raw %}
+
 	Article: Q94666
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -52,3 +54,5 @@ permalink: /kb/094/Q94666/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/273/Q273806/
 
 ## Q273806: Midtown Madness 2: Distorted Sound Effects When Playing the Game
 
+{% raw %}
+
 	Article: Q273806
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -80,3 +82,5 @@ permalink: /kb/273/Q273806/
 	
 	=============================================================================
 	
+
+{% endraw %}

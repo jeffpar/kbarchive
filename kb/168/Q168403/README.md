@@ -6,6 +6,8 @@ permalink: /kb/168/Q168403/
 
 ## Q168403: BUG: Setup Doesn't Ask to Register Environment Variables
 
+{% raw %}
+
 	Article: Q168403
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0
@@ -82,3 +84,5 @@ permalink: /kb/168/Q168403/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/256/Q256071/
 
 ## Q256071: SMS: Inventory Agent Does Not Detect Pentium III Processors
 
+{% raw %}
+
 	Article: Q256071
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,1.2 SP4
@@ -115,3 +117,5 @@ permalink: /kb/256/Q256071/
 	
 	=============================================================================
 	
+
+{% endraw %}

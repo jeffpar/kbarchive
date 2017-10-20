@@ -6,6 +6,8 @@ permalink: /kb/163/Q163410/
 
 ## Q163410: ODE97: Creating Run-Time Apps for MS Excel, Word, or PowerPoint
 
+{% raw %}
+
 	Article: Q163410
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -259,3 +261,5 @@ permalink: /kb/163/Q163410/
 	
 	=============================================================================
 	
+
+{% endraw %}

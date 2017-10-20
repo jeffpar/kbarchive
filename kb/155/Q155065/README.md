@@ -6,6 +6,8 @@ permalink: /kb/155/Q155065/
 
 ## Q155065: PPT7: Error inserting QuickTime Movie (&#42;.mov)
 
+{% raw %}
+
 	Article: Q155065
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -80,3 +82,5 @@ permalink: /kb/155/Q155065/
 	
 	=============================================================================
 	
+
+{% endraw %}

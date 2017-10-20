@@ -6,6 +6,8 @@ permalink: /kb/138/Q138993/
 
 ## Q138993: PRB: Print Break in MFC App Running in Windows NT 3.51 Checked
 
+{% raw %}
+
 	Article: Q138993
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -73,3 +75,5 @@ permalink: /kb/138/Q138993/
 	
 	=============================================================================
 	
+
+{% endraw %}

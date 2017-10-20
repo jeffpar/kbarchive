@@ -6,6 +6,8 @@ permalink: /kb/086/Q86318/
 
 ## Q86318: PC OS2: About Box Fields Are Incorrect Under PM
 
+{% raw %}
+
 	Article: Q86318
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -44,3 +46,5 @@ permalink: /kb/086/Q86318/
 	
 	=============================================================================
 	
+
+{% endraw %}

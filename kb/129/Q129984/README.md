@@ -6,6 +6,8 @@ permalink: /kb/129/Q129984/
 
 ## Q129984: SWITCH.INF Script Unavailable as Option in Remote Access
 
+{% raw %}
+
 	Article: Q129984
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,4.0
@@ -73,3 +75,5 @@ permalink: /kb/129/Q129984/
 	
 	=============================================================================
 	
+
+{% endraw %}

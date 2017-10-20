@@ -6,6 +6,8 @@ permalink: /kb/167/Q167749/
 
 ## Q167749: FIX: Access to Nested Base Class Member Functions Blocked
 
+{% raw %}
+
 	Article: Q167749
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -87,3 +89,5 @@ permalink: /kb/167/Q167749/
 	
 	=============================================================================
 	
+
+{% endraw %}

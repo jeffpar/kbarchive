@@ -6,6 +6,8 @@ permalink: /kb/113/Q113225/
 
 ## Q113225: NE2000 Failure on Windows NT/NTAS
 
+{% raw %}
+
 	Article: Q113225
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -63,3 +65,5 @@ permalink: /kb/113/Q113225/
 	
 	=============================================================================
 	
+
+{% endraw %}

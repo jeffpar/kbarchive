@@ -6,6 +6,8 @@ permalink: /kb/131/Q131745/
 
 ## Q131745: VidEdit &amp; VidCap Version 1.1 Are Incompatible with Windows 95
 
+{% raw %}
+
 	Article: Q131745
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/131/Q131745/
 	
 	=============================================================================
 	
+
+{% endraw %}

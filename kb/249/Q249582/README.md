@@ -6,6 +6,8 @@ permalink: /kb/249/Q249582/
 
 ## Q249582: SMS: &quot;Primary Key Violation&quot; Error Message When Processing DDRs
 
+{% raw %}
+
 	Article: Q249582
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -131,3 +133,5 @@ permalink: /kb/249/Q249582/
 	
 	=============================================================================
 	
+
+{% endraw %}

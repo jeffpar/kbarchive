@@ -6,6 +6,8 @@ permalink: /kb/086/Q86023/
 
 ## Q86023: Control Panel .CPL Files and Icon Installation
 
+{% raw %}
+
 	Article: Q86023
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -269,3 +271,5 @@ permalink: /kb/086/Q86023/
 	
 	=============================================================================
 	
+
+{% endraw %}

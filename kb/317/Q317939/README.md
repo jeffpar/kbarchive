@@ -6,6 +6,8 @@ permalink: /kb/317/Q317939/
 
 ## Q317939: PRB: Can't Convert to FrontPage Web Project After Unbinding
 
+{% raw %}
+
 	Article: Q317939
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/317/Q317939/
 	
 	=============================================================================
 	
+
+{% endraw %}

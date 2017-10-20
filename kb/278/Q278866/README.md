@@ -6,6 +6,8 @@ permalink: /kb/278/Q278866/
 
 ## Q278866: MSN Companion dials but does not connect during set-up.
 
+{% raw %}
+
 	Article: Q278866
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -50,3 +52,5 @@ permalink: /kb/278/Q278866/
 	
 	=============================================================================
 	
+
+{% endraw %}

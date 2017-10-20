@@ -6,6 +6,8 @@ permalink: /kb/083/Q83782/
 
 ## Q83782: Older NWPOPUP Not Functioning Correctly in Windows
 
+{% raw %}
+
 	Article: Q83782
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -80,3 +82,5 @@ permalink: /kb/083/Q83782/
 	
 	=============================================================================
 	
+
+{% endraw %}

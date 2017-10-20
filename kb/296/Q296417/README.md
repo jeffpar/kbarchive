@@ -6,6 +6,8 @@ permalink: /kb/296/Q296417/
 
 ## Q296417: Mapisp32.dll Invalid Page Fault Err Msg in Schedule+ Profile
 
+{% raw %}
+
 	Article: Q296417
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 7.0
@@ -74,3 +76,5 @@ permalink: /kb/296/Q296417/
 	
 	=============================================================================
 	
+
+{% endraw %}

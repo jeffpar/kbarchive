@@ -6,6 +6,8 @@ permalink: /kb/131/Q131167/
 
 ## Q131167: PRB: Modal Form in Form Set Behaves as a Modeless Form
 
+{% raw %}
+
 	Article: Q131167
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -90,3 +92,5 @@ permalink: /kb/131/Q131167/
 	
 	=============================================================================
 	
+
+{% endraw %}

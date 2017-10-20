@@ -6,6 +6,8 @@ permalink: /kb/259/Q259541/
 
 ## Q259541: XADM: Store Hangs During Move Mailbox Process
 
+{% raw %}
+
 	Article: Q259541
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -99,3 +101,5 @@ permalink: /kb/259/Q259541/
 	
 	=============================================================================
 	
+
+{% endraw %}

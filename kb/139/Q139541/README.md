@@ -6,6 +6,8 @@ permalink: /kb/139/Q139541/
 
 ## Q139541: How WINS Static Entries Replicate to Partners
 
+{% raw %}
+
 	Article: Q139541
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -39,3 +41,5 @@ permalink: /kb/139/Q139541/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177418/
 
 ## Q177418: XFOR: Migrating Data Containing DBCS Characters to Exchange
 
+{% raw %}
+
 	Article: Q177418
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/177/Q177418/
 	
 	=============================================================================
 	
+
+{% endraw %}

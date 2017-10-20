@@ -6,6 +6,8 @@ permalink: /kb/182/Q182232/
 
 ## Q182232: XFOR: SMTP Messages with TNEF May Lose Formatting and Attachment
 
+{% raw %}
+
 	Article: Q182232
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -85,3 +87,5 @@ permalink: /kb/182/Q182232/
 	
 	=============================================================================
 	
+
+{% endraw %}

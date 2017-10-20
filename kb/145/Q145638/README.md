@@ -6,6 +6,8 @@ permalink: /kb/145/Q145638/
 
 ## Q145638: FIX: Cannot Select Sheridan Tab Control from Modal Form
 
+{% raw %}
+
 	Article: Q145638
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -87,3 +89,5 @@ permalink: /kb/145/Q145638/
 	
 	=============================================================================
 	
+
+{% endraw %}

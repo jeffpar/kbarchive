@@ -6,6 +6,8 @@ permalink: /kb/132/Q132579/
 
 ## Q132579: SHIFT+DEL Does Not Bypass the Recycle Bin
 
+{% raw %}
+
 	Article: Q132579
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -47,3 +49,5 @@ permalink: /kb/132/Q132579/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/302/Q302534/
 
 ## Q302534: Broadband User Wants To Use Dial-up Access
 
+{% raw %}
+
 	Article: Q302534
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -51,3 +53,5 @@ permalink: /kb/302/Q302534/
 	
 	=============================================================================
 	
+
+{% endraw %}

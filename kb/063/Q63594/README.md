@@ -6,6 +6,8 @@ permalink: /kb/063/Q63594/
 
 ## Q63594: Incorrect Fonts Displayed with Canon LBP-8II Driver
 
+{% raw %}
+
 	Article: Q63594
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -39,3 +41,5 @@ permalink: /kb/063/Q63594/
 	
 	=============================================================================
 	
+
+{% endraw %}

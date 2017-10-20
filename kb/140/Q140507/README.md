@@ -6,6 +6,8 @@ permalink: /kb/140/Q140507/
 
 ## Q140507: Golf 2.0 CD: How to Perform a Minimum Installation
 
+{% raw %}
+
 	Article: Q140507
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -76,3 +78,5 @@ permalink: /kb/140/Q140507/
 	
 	=============================================================================
 	
+
+{% endraw %}

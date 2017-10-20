@@ -6,6 +6,8 @@ permalink: /kb/063/Q63319/
 
 ## Q63319: PRB: Unknown Function psrch with Brief Emulation in PWB
 
+{% raw %}
+
 	Article: Q63319
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -68,3 +70,5 @@ permalink: /kb/063/Q63319/
 	
 	=============================================================================
 	
+
+{% endraw %}

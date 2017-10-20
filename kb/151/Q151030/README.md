@@ -6,6 +6,8 @@ permalink: /kb/151/Q151030/
 
 ## Q151030: PRB: Data Corruption with LBS_SORT and CCheckListBox on Win32s
 
+{% raw %}
+
 	Article: Q151030
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1
@@ -66,3 +68,5 @@ permalink: /kb/151/Q151030/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/088/Q88410/
 
 ## Q88410: Windows Err Msg: The Microsoft Windows 32-Bit Disk...
 
+{% raw %}
+
 	Article: Q88410
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -147,3 +149,5 @@ permalink: /kb/088/Q88410/
 	
 	=============================================================================
 	
+
+{% endraw %}

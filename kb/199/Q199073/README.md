@@ -6,6 +6,8 @@ permalink: /kb/199/Q199073/
 
 ## Q199073: SBS 4.5 Setup Lists Incorrect Space Required for Other Drives
 
+{% raw %}
+
 	Article: Q199073
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -51,3 +53,5 @@ permalink: /kb/199/Q199073/
 	
 	=============================================================================
 	
+
+{% endraw %}

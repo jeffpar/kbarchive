@@ -6,6 +6,8 @@ permalink: /kb/184/Q184101/
 
 ## Q184101: Small Single and Double-Precision Values Are Rounded to Zero
 
+{% raw %}
+
 	Article: Q184101
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -76,3 +78,5 @@ permalink: /kb/184/Q184101/
 	
 	=============================================================================
 	
+
+{% endraw %}

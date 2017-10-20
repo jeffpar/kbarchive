@@ -6,6 +6,8 @@ permalink: /kb/116/Q116399/
 
 ## Q116399: Valid File Formats in BitEdit Dependent on Installed Filters
 
+{% raw %}
+
 	Article: Q116399
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:1.0
@@ -76,3 +78,5 @@ permalink: /kb/116/Q116399/
 	
 	=============================================================================
 	
+
+{% endraw %}

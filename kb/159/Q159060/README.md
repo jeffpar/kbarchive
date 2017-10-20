@@ -6,6 +6,8 @@ permalink: /kb/159/Q159060/
 
 ## Q159060: Mouse Cursor Freezes or Fails with Microsoft IntelliMouse
 
+{% raw %}
+
 	Article: Q159060
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/159/Q159060/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152786/
 
 ## Q152786: MSN Mail/Exchange Questions &amp; Answers
 
+{% raw %}
+
 	Article: Q152786
 	Product(s): The Microsoft Network
 	Version(s): 1.2,1.3
@@ -161,3 +163,5 @@ permalink: /kb/152/Q152786/
 	
 	=============================================================================
 	
+
+{% endraw %}

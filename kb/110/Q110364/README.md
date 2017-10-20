@@ -6,6 +6,8 @@ permalink: /kb/110/Q110364/
 
 ## Q110364: PRB: &quot;End of File Encountered&quot; with APPEND GENERAL
 
+{% raw %}
+
 	Article: Q110364
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
@@ -67,3 +69,5 @@ permalink: /kb/110/Q110364/
 	
 	=============================================================================
 	
+
+{% endraw %}

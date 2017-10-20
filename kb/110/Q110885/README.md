@@ -6,6 +6,8 @@ permalink: /kb/110/Q110885/
 
 ## Q110885: System Requirements for Multimedia Golf 1.0
 
+{% raw %}
+
 	Article: Q110885
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/110/Q110885/
 	
 	=============================================================================
 	
+
+{% endraw %}

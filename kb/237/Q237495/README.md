@@ -6,6 +6,8 @@ permalink: /kb/237/Q237495/
 
 ## Q237495: SMS Err Msg: ERROR 2 Failed to Run MofComp
 
+{% raw %}
+
 	Article: Q237495
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -100,3 +102,5 @@ permalink: /kb/237/Q237495/
 	
 	=============================================================================
 	
+
+{% endraw %}

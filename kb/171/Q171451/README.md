@@ -6,6 +6,8 @@ permalink: /kb/171/Q171451/
 
 ## Q171451: Cluster Node May Fail to Join Cluster
 
+{% raw %}
+
 	Article: Q171451
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/171/Q171451/
 	
 	=============================================================================
 	
+
+{% endraw %}

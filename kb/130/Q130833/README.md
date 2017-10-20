@@ -6,6 +6,8 @@ permalink: /kb/130/Q130833/
 
 ## Q130833: How to Find If Two Object Variables Refer to One Instance
 
+{% raw %}
+
 	Article: Q130833
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -80,3 +82,5 @@ permalink: /kb/130/Q130833/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/202/Q202108/
 
 ## Q202108: SMS: Software Inventory Does Not Amass &amp; Display Full File Paths
 
+{% raw %}
+
 	Article: Q202108
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0; winnt:2.0
@@ -48,3 +50,5 @@ permalink: /kb/202/Q202108/
 	
 	=============================================================================
 	
+
+{% endraw %}

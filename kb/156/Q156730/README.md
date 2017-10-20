@@ -6,6 +6,8 @@ permalink: /kb/156/Q156730/
 
 ## Q156730: XFOR: CSI Type Addresses Show Up in Exchange GAL
 
+{% raw %}
+
 	Article: Q156730
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.5
@@ -96,3 +98,5 @@ permalink: /kb/156/Q156730/
 	
 	=============================================================================
 	
+
+{% endraw %}

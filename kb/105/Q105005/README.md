@@ -6,6 +6,8 @@ permalink: /kb/105/Q105005/
 
 ## Q105005: PRB: DDEInitiate() Gives Remote Data Not Accessible Dialog Box
 
+{% raw %}
+
 	Article: Q105005
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,3.0
@@ -81,3 +83,5 @@ permalink: /kb/105/Q105005/
 	
 	=============================================================================
 	
+
+{% endraw %}

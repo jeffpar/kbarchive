@@ -6,6 +6,8 @@ permalink: /kb/135/Q135891/
 
 ## Q135891: Windows 95 CD-ROM Msn.txt File
 
+{% raw %}
+
 	Article: Q135891
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -133,3 +135,5 @@ permalink: /kb/135/Q135891/
 	
 	=============================================================================
 	
+
+{% endraw %}

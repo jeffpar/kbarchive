@@ -6,6 +6,8 @@ permalink: /kb/136/Q136587/
 
 ## Q136587: List of Sample Applications that Include Source Code
 
+{% raw %}
+
 	Article: Q136587
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 |3.00b
@@ -83,3 +85,5 @@ permalink: /kb/136/Q136587/
 	
 	=============================================================================
 	
+
+{% endraw %}

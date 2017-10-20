@@ -6,6 +6,8 @@ permalink: /kb/248/Q248474/
 
 ## Q248474: Windows NT Server Tools Overwrites Terminal Server Information
 
+{% raw %}
+
 	Article: Q248474
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:3.51,4.0
@@ -99,3 +101,5 @@ permalink: /kb/248/Q248474/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190952/
 
 ## Q190952: PRB: Upgrade Project to Use New VB6 Controls
 
+{% raw %}
+
 	Article: Q190952
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -129,3 +131,5 @@ permalink: /kb/190/Q190952/
 	
 	=============================================================================
 	
+
+{% endraw %}

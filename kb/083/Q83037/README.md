@@ -6,6 +6,8 @@ permalink: /kb/083/Q83037/
 
 ## Q83037: Common Problems with Font Packages and Windows 3.1
 
+{% raw %}
+
 	Article: Q83037
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -103,3 +105,5 @@ permalink: /kb/083/Q83037/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152099/
 
 ## Q152099: MFC Dialog Font Substitution Under DBCS System
 
+{% raw %}
+
 	Article: Q152099
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -67,3 +69,5 @@ permalink: /kb/152/Q152099/
 	
 	=============================================================================
 	
+
+{% endraw %}

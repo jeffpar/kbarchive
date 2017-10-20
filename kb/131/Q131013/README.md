@@ -6,6 +6,8 @@ permalink: /kb/131/Q131013/
 
 ## Q131013: FIX: Fatal Error C1001 'd:&#92;b_bld&#92;c2.m2&#92;P2&#92;main.c', line 374
 
+{% raw %}
+
 	Article: Q131013
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1
@@ -86,3 +88,5 @@ permalink: /kb/131/Q131013/
 	
 	=============================================================================
 	
+
+{% endraw %}

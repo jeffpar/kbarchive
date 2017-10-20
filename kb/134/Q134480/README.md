@@ -6,6 +6,8 @@ permalink: /kb/134/Q134480/
 
 ## Q134480: &quot;Wizardry - Crusaders of the Dark Savant&quot; Game Terminated
 
+{% raw %}
+
 	Article: Q134480
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -59,3 +61,5 @@ permalink: /kb/134/Q134480/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/106/Q106113/
 
 ## Q106113: Doc Err: Mandatory Profiles Assigned to Local Groups
 
+{% raw %}
+
 	Article: Q106113
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -52,3 +54,5 @@ permalink: /kb/106/Q106113/
 	
 	=============================================================================
 	
+
+{% endraw %}

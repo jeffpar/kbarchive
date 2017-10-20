@@ -6,6 +6,8 @@ permalink: /kb/047/Q47124/
 
 ## Q47124: Array in SUB Statement Doesn't Need Dimensions in Parentheses
 
+{% raw %}
+
 	Article: Q47124
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -57,3 +59,5 @@ permalink: /kb/047/Q47124/
 	and QBX.EXE editor:
 	
 	   SUB PrintOut(A()) STATIC
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123855/
 
 ## Q123855: PC MMTA: MMTA and Digiboard Configurations
 
+{% raw %}
+
 	Article: Q123855
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -89,3 +91,5 @@ permalink: /kb/123/Q123855/
 	
 	=============================================================================
 	
+
+{% endraw %}

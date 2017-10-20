@@ -6,6 +6,8 @@ permalink: /kb/098/Q98044/
 
 ## Q98044: PC WRmt: Setup May Fail If Program Manager Not Running
 
+{% raw %}
+
 	Article: Q98044
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -62,3 +64,5 @@ permalink: /kb/098/Q98044/
 	
 	=============================================================================
 	
+
+{% endraw %}

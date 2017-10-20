@@ -6,6 +6,8 @@ permalink: /kb/094/Q94965/
 
 ## Q94965: HiJaak for Windows 1.0 Doesn't Install If SHARE.EXE Is Loaded
 
+{% raw %}
+
 	Article: Q94965
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/094/Q94965/
 	
 	=============================================================================
 	
+
+{% endraw %}

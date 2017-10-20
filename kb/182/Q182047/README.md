@@ -6,6 +6,8 @@ permalink: /kb/182/Q182047/
 
 ## Q182047: DHCP Server Performance Degraded by Large Number of Scopes
 
+{% raw %}
+
 	Article: Q182047
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -93,3 +95,5 @@ permalink: /kb/182/Q182047/
 	
 	=============================================================================
 	
+
+{% endraw %}

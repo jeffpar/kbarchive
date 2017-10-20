@@ -6,6 +6,8 @@ permalink: /kb/034/Q34810/
 
 ## Q34810: QB.EXE Search and &quot;Change...&quot; on Line Label in IF...GOTO Hangs
 
+{% raw %}
+
 	Article: Q34810
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -48,3 +50,5 @@ permalink: /kb/034/Q34810/
 	follows:
 	
 	30 IF a < 10 THEN GOTO 10
+
+{% endraw %}

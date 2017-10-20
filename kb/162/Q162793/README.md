@@ -6,6 +6,8 @@ permalink: /kb/162/Q162793/
 
 ## Q162793: How to Set Up KiXtart Logon Scripts for a Windows 95 Client
 
+{% raw %}
+
 	Article: Q162793
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 4.0
@@ -210,3 +212,5 @@ permalink: /kb/162/Q162793/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157392/
 
 ## Q157392: INFO: STL Sample for the inner_product Function
 
+{% raw %}
+
 	Article: Q157392
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -178,3 +180,5 @@ permalink: /kb/157/Q157392/
 	
 	=============================================================================
 	
+
+{% endraw %}

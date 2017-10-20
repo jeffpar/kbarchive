@@ -6,6 +6,8 @@ permalink: /kb/137/Q137436/
 
 ## Q137436: Error Installing Attachmate Extra! After SNA Server Client
 
+{% raw %}
+
 	Article: Q137436
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0
@@ -91,3 +93,5 @@ permalink: /kb/137/Q137436/
 	
 	=============================================================================
 	
+
+{% endraw %}

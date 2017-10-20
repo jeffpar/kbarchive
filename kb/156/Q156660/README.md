@@ -6,6 +6,8 @@ permalink: /kb/156/Q156660/
 
 ## Q156660: Cannot Install Windows NT 4.0 Competitive Upgrade
 
+{% raw %}
+
 	Article: Q156660
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -54,3 +56,5 @@ permalink: /kb/156/Q156660/
 	
 	=============================================================================
 	
+
+{% endraw %}

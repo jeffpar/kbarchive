@@ -6,6 +6,8 @@ permalink: /kb/029/Q29841/
 
 ## Q29841: C 5.10 MTDYNA.DOC: Multiple Thread Dynamic-Link libraries
 
+{% raw %}
+
 	Article: Q29841
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -118,3 +120,5 @@ permalink: /kb/029/Q29841/
 	environment by the C functions _beginthread() and _endthread(). The
 	OS/2 API call DosCreateThread should not be used. A description of
 	these two functions is given in Section 3.0.
+
+{% endraw %}

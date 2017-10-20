@@ -6,6 +6,8 @@ permalink: /kb/166/Q166257/
 
 ## Q166257: Applications Using OpenGL Cause Access Violation in OPENGL.DLL
 
+{% raw %}
+
 	Article: Q166257
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -50,3 +52,5 @@ permalink: /kb/166/Q166257/
 	
 	=============================================================================
 	
+
+{% endraw %}

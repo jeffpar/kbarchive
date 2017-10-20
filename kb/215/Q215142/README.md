@@ -6,6 +6,8 @@ permalink: /kb/215/Q215142/
 
 ## Q215142: SMS: Errors in Status Messages 615, 616, 617, 618, 619 and 620.
 
+{% raw %}
+
 	Article: Q215142
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -64,3 +66,5 @@ permalink: /kb/215/Q215142/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154139/
 
 ## Q154139: XCLN: Set Exchange to Use Alternate Spelling Checker
 
+{% raw %}
+
 	Article: Q154139
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -115,3 +117,5 @@ permalink: /kb/154/Q154139/
 	
 	=============================================================================
 	
+
+{% endraw %}

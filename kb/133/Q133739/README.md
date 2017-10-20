@@ -6,6 +6,8 @@ permalink: /kb/133/Q133739/
 
 ## Q133739: PRB: Order of Read Level Clauses Different in Visual FoxPro
 
+{% raw %}
+
 	Article: Q133739
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -210,3 +212,5 @@ permalink: /kb/133/Q133739/
 	
 	=============================================================================
 	
+
+{% endraw %}

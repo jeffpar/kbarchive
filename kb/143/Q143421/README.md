@@ -6,6 +6,8 @@ permalink: /kb/143/Q143421/
 
 ## Q143421: HOWTO: Synchronize Data on the Form with a dbCombo
 
+{% raw %}
+
 	Article: Q143421
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -101,3 +103,5 @@ permalink: /kb/143/Q143421/
 	
 	=============================================================================
 	
+
+{% endraw %}

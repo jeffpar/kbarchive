@@ -6,6 +6,8 @@ permalink: /kb/078/Q78389/
 
 ## Q78389: PRB: Cannot Print Object from an Embedded Window in Viewer
 
+{% raw %}
+
 	Article: Q78389
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 1.0
@@ -58,3 +60,5 @@ permalink: /kb/078/Q78389/
 	
 	=============================================================================
 	
+
+{% endraw %}

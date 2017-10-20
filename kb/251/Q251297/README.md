@@ -6,6 +6,8 @@ permalink: /kb/251/Q251297/
 
 ## Q251297: How to Customize the Account Joiner Utility for a Specific MA
 
+{% raw %}
+
 	Article: Q251297
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -112,3 +114,5 @@ permalink: /kb/251/Q251297/
 	
 	=============================================================================
 	
+
+{% endraw %}

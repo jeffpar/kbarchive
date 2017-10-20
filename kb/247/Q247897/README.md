@@ -6,6 +6,8 @@ permalink: /kb/247/Q247897/
 
 ## Q247897: Mac Bookshelf Err Msg: The Finder Has Unexpectedly Quit...
 
+{% raw %}
+
 	Article: Q247897
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -69,3 +71,5 @@ permalink: /kb/247/Q247897/
 	
 	=============================================================================
 	
+
+{% endraw %}

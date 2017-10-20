@@ -6,6 +6,8 @@ permalink: /kb/140/Q140943/
 
 ## Q140943: XFOR: Can't Open Attachments Sent From AppleTalk Mail
 
+{% raw %}
+
 	Article: Q140943
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -44,3 +46,5 @@ permalink: /kb/140/Q140943/
 	
 	=============================================================================
 	
+
+{% endraw %}

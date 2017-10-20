@@ -6,6 +6,8 @@ permalink: /kb/254/Q254412/
 
 ## Q254412: Err Msg: Msvcp60.dll File Is Linked to Missing Export Msvcrt.dll
 
+{% raw %}
+
 	Article: Q254412
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/254/Q254412/
 	
 	=============================================================================
 	
+
+{% endraw %}

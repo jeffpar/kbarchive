@@ -6,6 +6,8 @@ permalink: /kb/197/Q197712/
 
 ## Q197712: XCLN: How to Configure Default Free/Busy Options
 
+{% raw %}
+
 	Article: Q197712
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03
@@ -151,3 +153,5 @@ permalink: /kb/197/Q197712/
 	
 	=============================================================================
 	
+
+{% endraw %}

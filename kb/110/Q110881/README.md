@@ -6,6 +6,8 @@ permalink: /kb/110/Q110881/
 
 ## Q110881: Poor Sound Quality Using TrueSpeech Compression
 
+{% raw %}
+
 	Article: Q110881
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/110/Q110881/
 	
 	=============================================================================
 	
+
+{% endraw %}

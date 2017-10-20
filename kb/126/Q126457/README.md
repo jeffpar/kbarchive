@@ -6,6 +6,8 @@ permalink: /kb/126/Q126457/
 
 ## Q126457: VERIFY ON, COPY /V, XCOPY /V Commands Do Not Compare Data
 
+{% raw %}
+
 	Article: Q126457
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -61,3 +63,5 @@ permalink: /kb/126/Q126457/
 	
 	=============================================================================
 	
+
+{% endraw %}

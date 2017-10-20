@@ -6,6 +6,8 @@ permalink: /kb/132/Q132244/
 
 ## Q132244: PRB: Visual Basic DisableAsync Fails w/ MASJT200.DLL
 
+{% raw %}
+
 	Article: Q132244
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -70,3 +72,5 @@ permalink: /kb/132/Q132244/
 	
 	=============================================================================
 	
+
+{% endraw %}

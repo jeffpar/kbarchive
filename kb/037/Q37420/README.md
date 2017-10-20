@@ -6,6 +6,8 @@ permalink: /kb/037/Q37420/
 
 ## Q37420: BSEDOSPC.BI Is Missing DosSetSigHandler Definition; for OS/2
 
+{% raw %}
+
 	Article: Q37420
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10
@@ -27,3 +29,5 @@ permalink: /kb/037/Q37420/
 	This information applies to Microsoft BASIC Compiler Versions 6.00 and
 	6.00b for MS OS/2 and to Microsoft BASIC Professional Development System
 	(PDS) Versions 7.00 and 7.10 for MS OS/2.
+
+{% endraw %}

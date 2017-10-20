@@ -6,6 +6,8 @@ permalink: /kb/248/Q248136/
 
 ## Q248136: An Error Occurred Reading or Setting a Configuration Parameter
 
+{% raw %}
+
 	Article: Q248136
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,4.0
@@ -60,3 +62,5 @@ permalink: /kb/248/Q248136/
 	
 	=============================================================================
 	
+
+{% endraw %}

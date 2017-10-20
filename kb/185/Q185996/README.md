@@ -6,6 +6,8 @@ permalink: /kb/185/Q185996/
 
 ## Q185996: XFOR: Internet Mail Service Takes Very Long Time to Start
 
+{% raw %}
+
 	Article: Q185996
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -66,3 +68,5 @@ permalink: /kb/185/Q185996/
 	
 	=============================================================================
 	
+
+{% endraw %}

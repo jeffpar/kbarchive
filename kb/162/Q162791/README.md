@@ -6,6 +6,8 @@ permalink: /kb/162/Q162791/
 
 ## Q162791: &quot;Access Denied&quot; Error Accessing IBM LanServer 4.0 Share
 
+{% raw %}
+
 	Article: Q162791
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -50,3 +52,5 @@ permalink: /kb/162/Q162791/
 	
 	=============================================================================
 	
+
+{% endraw %}

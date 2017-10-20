@@ -6,6 +6,8 @@ permalink: /kb/278/Q278154/
 
 ## Q278154: How to Extract SMTP Addresses for Mailbox Recipients
 
+{% raw %}
+
 	Article: Q278154
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -156,3 +158,5 @@ permalink: /kb/278/Q278154/
 	
 	=============================================================================
 	
+
+{% endraw %}

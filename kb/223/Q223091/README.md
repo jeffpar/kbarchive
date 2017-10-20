@@ -6,6 +6,8 @@ permalink: /kb/223/Q223091/
 
 ## Q223091: FIX: Bad Codebase Parameter Made by VB6 PDW for DHTML Projects
 
+{% raw %}
+
 	Article: Q223091
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -116,3 +118,5 @@ permalink: /kb/223/Q223091/
 	
 	=============================================================================
 	
+
+{% endraw %}

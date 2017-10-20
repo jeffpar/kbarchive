@@ -6,6 +6,8 @@ permalink: /kb/176/Q176513/
 
 ## Q176513: Incorrect Daylight Savings Settings for Finnish Time Zone
 
+{% raw %}
+
 	Article: Q176513
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -187,3 +189,5 @@ permalink: /kb/176/Q176513/
 	
 	=============================================================================
 	
+
+{% endraw %}

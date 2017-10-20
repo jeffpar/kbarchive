@@ -6,6 +6,8 @@ permalink: /kb/254/Q254644/
 
 ## Q254644: SMS: Network Monitor Experts Increase CPU Use and Finish Slowly
 
+{% raw %}
+
 	Article: Q254644
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP1
@@ -66,3 +68,5 @@ permalink: /kb/254/Q254644/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170435/
 
 ## Q170435: MDG: Using the ADMINSCH Account to Log in to the Admin Program
 
+{% raw %}
+
 	Article: Q170435
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -47,3 +49,5 @@ permalink: /kb/170/Q170435/
 	
 	=============================================================================
 	
+
+{% endraw %}

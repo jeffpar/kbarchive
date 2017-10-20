@@ -6,6 +6,8 @@ permalink: /kb/191/Q191128/
 
 ## Q191128: BUG: GetItem and SetItem Do Not Have an Indent Parameter
 
+{% raw %}
+
 	Article: Q191128
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0,6.0
@@ -102,3 +104,5 @@ permalink: /kb/191/Q191128/
 	
 	=============================================================================
 	
+
+{% endraw %}

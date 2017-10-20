@@ -6,6 +6,8 @@ permalink: /kb/150/Q150059/
 
 ## Q150059: Cannot Perform a NET VIEW Across RAS to Windows 95 Client
 
+{% raw %}
+
 	Article: Q150059
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:3.5,3.51
@@ -67,3 +69,5 @@ permalink: /kb/150/Q150059/
 	
 	=============================================================================
 	
+
+{% endraw %}

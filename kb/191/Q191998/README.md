@@ -6,6 +6,8 @@ permalink: /kb/191/Q191998/
 
 ## Q191998: BUG: Form Cannot Override Parent Class AutoCenter Setting
 
+{% raw %}
+
 	Article: Q191998
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -86,3 +88,5 @@ permalink: /kb/191/Q191998/
 	
 	=============================================================================
 	
+
+{% endraw %}

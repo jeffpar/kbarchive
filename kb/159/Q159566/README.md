@@ -6,6 +6,8 @@ permalink: /kb/159/Q159566/
 
 ## Q159566: XCON: MTA Error 209: Submitting Domain Is Inconsistent
 
+{% raw %}
+
 	Article: Q159566
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -105,3 +107,5 @@ permalink: /kb/159/Q159566/
 	
 	=============================================================================
 	
+
+{% endraw %}

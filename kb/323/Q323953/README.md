@@ -6,6 +6,8 @@ permalink: /kb/323/Q323953/
 
 ## Q323953: Dungeon Siege: &quot;Needs to Close&quot; Err Msg Connecting by ZoneMatch
 
+{% raw %}
+
 	Article: Q323953
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -91,3 +93,5 @@ permalink: /kb/323/Q323953/
 	
 	=============================================================================
 	
+
+{% endraw %}

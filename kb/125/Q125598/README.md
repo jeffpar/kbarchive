@@ -6,6 +6,8 @@ permalink: /kb/125/Q125598/
 
 ## Q125598: Ensoniq Soundscape Support in Windows NT
 
+{% raw %}
+
 	Article: Q125598
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -56,3 +58,5 @@ permalink: /kb/125/Q125598/
 	
 	=============================================================================
 	
+
+{% endraw %}

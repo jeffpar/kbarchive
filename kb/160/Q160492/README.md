@@ -6,6 +6,8 @@ permalink: /kb/160/Q160492/
 
 ## Q160492: Administrator Privilege Required to Administer DNS
 
+{% raw %}
+
 	Article: Q160492
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/160/Q160492/
 	
 	=============================================================================
 	
+
+{% endraw %}

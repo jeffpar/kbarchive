@@ -6,6 +6,8 @@ permalink: /kb/149/Q149699/
 
 ## Q149699: FIX: RichTextBox Control Prevents Click Event from Firing
 
+{% raw %}
+
 	Article: Q149699
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/149/Q149699/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134751/
 
 ## Q134751: PC Gen: 3.5 Mail for PC Networks Supp. Modem Script Disk &#91;3.5&#93;
 
+{% raw %}
+
 	Article: Q134751
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -169,3 +171,5 @@ permalink: /kb/134/Q134751/
 	
 	=============================================================================
 	
+
+{% endraw %}

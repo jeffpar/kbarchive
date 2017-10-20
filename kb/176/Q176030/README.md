@@ -6,6 +6,8 @@ permalink: /kb/176/Q176030/
 
 ## Q176030: Reducing RIP Requests with NWLINK
 
+{% raw %}
+
 	Article: Q176030
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -92,3 +94,5 @@ permalink: /kb/176/Q176030/
 	
 	=============================================================================
 	
+
+{% endraw %}

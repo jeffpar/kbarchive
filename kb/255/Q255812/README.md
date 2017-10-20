@@ -6,6 +6,8 @@ permalink: /kb/255/Q255812/
 
 ## Q255812: Streets and Trips 2000: Unable to Download Construction Updates
 
+{% raw %}
+
 	Article: Q255812
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -49,3 +51,5 @@ permalink: /kb/255/Q255812/
 	
 	=============================================================================
 	
+
+{% endraw %}

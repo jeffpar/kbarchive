@@ -6,6 +6,8 @@ permalink: /kb/147/Q147873/
 
 ## Q147873: Semicolon Not Processed Correctly in NetWare Login Script
 
+{% raw %}
+
 	Article: Q147873
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/147/Q147873/
 	
 	=============================================================================
 	
+
+{% endraw %}

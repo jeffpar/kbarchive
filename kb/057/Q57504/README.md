@@ -6,6 +6,8 @@ permalink: /kb/057/Q57504/
 
 ## Q57504: Documentation Errors in BASIC 7.00 Presentation Graphics
 
+{% raw %}
+
 	Article: Q57504
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -37,3 +39,5 @@ permalink: /kb/057/Q57504/
 	   This line should be changed to the following:
 	
 	      Env.MainTitle.TitleFont = 3
+
+{% endraw %}

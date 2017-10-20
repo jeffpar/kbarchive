@@ -6,6 +6,8 @@ permalink: /kb/083/Q83295/
 
 ## Q83295: Pasting Text into Windows Paintbrush
 
+{% raw %}
+
 	Article: Q83295
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/083/Q83295/
 	
 	=============================================================================
 	
+
+{% endraw %}

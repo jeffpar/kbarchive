@@ -6,6 +6,8 @@ permalink: /kb/201/Q201114/
 
 ## Q201114: PRB: Windows 95 PCs Unable to Browse Remote Domain Across Router
 
+{% raw %}
+
 	Article: Q201114
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:3.1,3.11,95; winnt:3.5,3.51,4.0
@@ -65,3 +67,5 @@ permalink: /kb/201/Q201114/
 	
 	=============================================================================
 	
+
+{% endraw %}

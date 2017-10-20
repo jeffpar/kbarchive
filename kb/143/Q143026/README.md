@@ -6,6 +6,8 @@ permalink: /kb/143/Q143026/
 
 ## Q143026: Dinosaurs: Windows Command Buttons Are Missing
 
+{% raw %}
+
 	Article: Q143026
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -52,3 +54,5 @@ permalink: /kb/143/Q143026/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/325/Q325646/
 
 ## Q325646: Services.exe Heap Corruption If Messenger Service Does Not Start
 
+{% raw %}
+
 	Article: Q325646
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -92,3 +94,5 @@ permalink: /kb/325/Q325646/
 	
 	=============================================================================
 	
+
+{% endraw %}

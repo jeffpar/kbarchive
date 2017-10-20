@@ -6,6 +6,8 @@ permalink: /kb/149/Q149559/
 
 ## Q149559: FPNW LOGIN.EXE Doesn't Handle Password Expiration
 
+{% raw %}
+
 	Article: Q149559
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -62,3 +64,5 @@ permalink: /kb/149/Q149559/
 	
 	=============================================================================
 	
+
+{% endraw %}

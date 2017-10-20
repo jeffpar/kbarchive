@@ -6,6 +6,8 @@ permalink: /kb/219/Q219942/
 
 ## Q219942: Error Message When Attempting to Install or Run Encarta Africana
 
+{% raw %}
+
 	Article: Q219942
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/219/Q219942/
 	
 	=============================================================================
 	
+
+{% endraw %}

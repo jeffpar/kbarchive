@@ -6,6 +6,8 @@ permalink: /kb/230/Q230275/
 
 ## Q230275: XFOR: How to Re-add Extensions to Exchange for OV/VM Connector
 
+{% raw %}
+
 	Article: Q230275
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -92,3 +94,5 @@ permalink: /kb/230/Q230275/
 	
 	=============================================================================
 	
+
+{% endraw %}

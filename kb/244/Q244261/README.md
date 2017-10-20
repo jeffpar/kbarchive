@@ -6,6 +6,8 @@ permalink: /kb/244/Q244261/
 
 ## Q244261: PRB:Printer.Print May Use Different Fonts on Different Computers
 
+{% raw %}
+
 	Article: Q244261
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -74,3 +76,5 @@ permalink: /kb/244/Q244261/
 	
 	=============================================================================
 	
+
+{% endraw %}

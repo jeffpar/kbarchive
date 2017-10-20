@@ -6,6 +6,8 @@ permalink: /kb/245/Q245603/
 
 ## Q245603: How to Create a Windows NT Printer Share
 
+{% raw %}
+
 	Article: Q245603
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -50,3 +52,5 @@ permalink: /kb/245/Q245603/
 	
 	=============================================================================
 	
+
+{% endraw %}

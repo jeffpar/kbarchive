@@ -6,6 +6,8 @@ permalink: /kb/258/Q258496/
 
 ## Q258496: Games: How to Troubleshoot Setup Problems in Microsoft Games
 
+{% raw %}
+
 	Article: Q258496
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -358,3 +360,5 @@ permalink: /kb/258/Q258496/
 	
 	=============================================================================
 	
+
+{% endraw %}

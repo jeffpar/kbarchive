@@ -6,6 +6,8 @@ permalink: /kb/038/Q38113/
 
 ## Q38113: CHKDSK and File Allocation Adjustments
 
+{% raw %}
+
 	Article: Q38113
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -60,3 +62,5 @@ permalink: /kb/038/Q38113/
 	
 	=============================================================================
 	
+
+{% endraw %}

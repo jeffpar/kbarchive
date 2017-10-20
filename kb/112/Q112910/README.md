@@ -6,6 +6,8 @@ permalink: /kb/112/Q112910/
 
 ## Q112910: PC WRmt: Selector Hangs if Fax Printer Driver Missing
 
+{% raw %}
+
 	Article: Q112910
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -45,3 +47,5 @@ permalink: /kb/112/Q112910/
 	
 	=============================================================================
 	
+
+{% endraw %}

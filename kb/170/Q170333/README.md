@@ -6,6 +6,8 @@ permalink: /kb/170/Q170333/
 
 ## Q170333: The Last Logged-On User Is Not Displayed
 
+{% raw %}
+
 	Article: Q170333
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0
@@ -47,3 +49,5 @@ permalink: /kb/170/Q170333/
 	
 	=============================================================================
 	
+
+{% endraw %}

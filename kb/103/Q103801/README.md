@@ -6,6 +6,8 @@ permalink: /kb/103/Q103801/
 
 ## Q103801: FFAPI: Err Msg: 190 Automatic File Transfer Not Supported
 
+{% raw %}
+
 	Article: Q103801
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -102,3 +104,5 @@ permalink: /kb/103/Q103801/
 	
 	=============================================================================
 	
+
+{% endraw %}

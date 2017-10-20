@@ -6,6 +6,8 @@ permalink: /kb/190/Q190168/
 
 ## Q190168: XCLN: Outlook Client Dials Incorrect Connectoid When Syncing
 
+{% raw %}
+
 	Article: Q190168
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03; WINDOWS:
@@ -104,3 +106,5 @@ permalink: /kb/190/Q190168/
 	
 	=============================================================================
 	
+
+{% endraw %}

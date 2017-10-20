@@ -6,6 +6,8 @@ permalink: /kb/077/Q77850/
 
 ## Q77850: Lotus 1-2-3 Release 3 and MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q77850
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -104,3 +106,5 @@ permalink: /kb/077/Q77850/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182406/
 
 ## Q182406: XFOR: Mail Looping When First Host Cannot Be Reached
 
+{% raw %}
+
 	Article: Q182406
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -65,3 +67,5 @@ permalink: /kb/182/Q182406/
 	
 	=============================================================================
 	
+
+{% endraw %}

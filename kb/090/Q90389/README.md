@@ -6,6 +6,8 @@ permalink: /kb/090/Q90389/
 
 ## Q90389: NET STOP Command from MS-DOS Command Prompt Hangs WFWG
 
+{% raw %}
+
 	Article: Q90389
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -53,3 +55,5 @@ permalink: /kb/090/Q90389/
 	
 	=============================================================================
 	
+
+{% endraw %}

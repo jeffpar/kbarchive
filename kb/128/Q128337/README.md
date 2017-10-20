@@ -6,6 +6,8 @@ permalink: /kb/128/Q128337/
 
 ## Q128337: How to Make a Terminating Command Button
 
+{% raw %}
+
 	Article: Q128337
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/128/Q128337/
 	
 	=============================================================================
 	
+
+{% endraw %}

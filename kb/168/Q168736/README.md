@@ -6,6 +6,8 @@ permalink: /kb/168/Q168736/
 
 ## Q168736: XFOR: Invalid PO During Migration From PC Mail
 
+{% raw %}
+
 	Article: Q168736
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -63,3 +65,5 @@ permalink: /kb/168/Q168736/
 	
 	=============================================================================
 	
+
+{% endraw %}

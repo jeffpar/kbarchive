@@ -6,6 +6,8 @@ permalink: /kb/179/Q179122/
 
 ## Q179122: FS95/98/2000: How to Start and Shut Down Jet Engines
 
+{% raw %}
+
 	Article: Q179122
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -74,3 +76,5 @@ permalink: /kb/179/Q179122/
 	
 	=============================================================================
 	
+
+{% endraw %}

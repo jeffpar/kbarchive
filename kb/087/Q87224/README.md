@@ -6,6 +6,8 @@ permalink: /kb/087/Q87224/
 
 ## Q87224: FFAPI: Memory and Disk Usage
 
+{% raw %}
+
 	Article: Q87224
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -52,3 +54,5 @@ permalink: /kb/087/Q87224/
 	
 	=============================================================================
 	
+
+{% endraw %}

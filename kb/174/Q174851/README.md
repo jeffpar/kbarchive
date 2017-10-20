@@ -6,6 +6,8 @@ permalink: /kb/174/Q174851/
 
 ## Q174851: CC: A Bridge Too Far: Minimum System Requirements for Windows
 
+{% raw %}
+
 	Article: Q174851
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -57,3 +59,5 @@ permalink: /kb/174/Q174851/
 	
 	=============================================================================
 	
+
+{% endraw %}

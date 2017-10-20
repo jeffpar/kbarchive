@@ -6,6 +6,8 @@ permalink: /kb/258/Q258697/
 
 ## Q258697: INFO: Single SQL Connection Supports Only One Active Firehose
 
+{% raw %}
+
 	Article: Q258697
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.1,2.1 SP1,2.1 SP2,2.5,5.0,6.0,7.0
@@ -154,3 +156,5 @@ permalink: /kb/258/Q258697/
 	
 	=============================================================================
 	
+
+{% endraw %}

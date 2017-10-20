@@ -6,6 +6,8 @@ permalink: /kb/119/Q119834/
 
 ## Q119834: LAN Manager as the Network with Windows for Workgroups 3.11
 
+{% raw %}
+
 	Article: Q119834
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11
@@ -120,3 +122,5 @@ permalink: /kb/119/Q119834/
 	
 	=============================================================================
 	
+
+{% endraw %}

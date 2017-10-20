@@ -6,6 +6,8 @@ permalink: /kb/166/Q166509/
 
 ## Q166509: BUG: Column Name Greater Than 128 Characters Cause Error
 
+{% raw %}
+
 	Article: Q166509
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS: 3.0,3.0b,6.0
@@ -131,3 +133,5 @@ permalink: /kb/166/Q166509/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150377/
 
 ## Q150377: After You Run Arcade, Quitting Norton Desktop Hangs Computer
 
+{% raw %}
+
 	Article: Q150377
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/150/Q150377/
 	
 	=============================================================================
 	
+
+{% endraw %}

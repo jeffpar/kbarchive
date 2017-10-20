@@ -6,6 +6,8 @@ permalink: /kb/269/Q269522/
 
 ## Q269522: BUG: Data Doesn't Revert to Original Value After CancelUpdate
 
+{% raw %}
+
 	Article: Q269522
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.1,2.1 (GA),2.1 SP1,2.1 SP2,2.5,2.6,6.0
@@ -112,3 +114,5 @@ permalink: /kb/269/Q269522/
 	
 	=============================================================================
 	
+
+{% endraw %}

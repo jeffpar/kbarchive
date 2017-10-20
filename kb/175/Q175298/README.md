@@ -6,6 +6,8 @@ permalink: /kb/175/Q175298/
 
 ## Q175298: XADM: System Attendant Started After Running Restore
 
+{% raw %}
+
 	Article: Q175298
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -37,3 +39,5 @@ permalink: /kb/175/Q175298/
 	
 	=============================================================================
 	
+
+{% endraw %}

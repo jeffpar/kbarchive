@@ -6,6 +6,8 @@ permalink: /kb/313/Q313442/
 
 ## Q313442: Zoo Tycoon: How to Download and Install Update and Bonus Items
 
+{% raw %}
+
 	Article: Q313442
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -172,3 +174,5 @@ permalink: /kb/313/Q313442/
 	
 	=============================================================================
 	
+
+{% endraw %}

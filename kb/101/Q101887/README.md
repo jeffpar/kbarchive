@@ -6,6 +6,8 @@ permalink: /kb/101/Q101887/
 
 ## Q101887: Unable to Close MSD Button Option Using Keyboard
 
+{% raw %}
+
 	Article: Q101887
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/101/Q101887/
 	
 	=============================================================================
 	
+
+{% endraw %}

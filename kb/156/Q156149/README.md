@@ -6,6 +6,8 @@ permalink: /kb/156/Q156149/
 
 ## Q156149: MSDLC32 May Not Receive All Packets in Heavy Traffic
 
+{% raw %}
+
 	Article: Q156149
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/156/Q156149/
 	
 	=============================================================================
 	
+
+{% endraw %}

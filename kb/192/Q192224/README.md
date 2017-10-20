@@ -6,6 +6,8 @@ permalink: /kb/192/Q192224/
 
 ## Q192224: Windows NT Option Pack Update for IIS Available for Download
 
+{% raw %}
+
 	Article: Q192224
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -106,3 +108,5 @@ permalink: /kb/192/Q192224/
 	
 	=============================================================================
 	
+
+{% endraw %}

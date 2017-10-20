@@ -6,6 +6,8 @@ permalink: /kb/281/Q281521/
 
 ## Q281521: How to change passwords in MSN Companion
 
+{% raw %}
+
 	Article: Q281521
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -56,3 +58,5 @@ permalink: /kb/281/Q281521/
 	
 	=============================================================================
 	
+
+{% endraw %}

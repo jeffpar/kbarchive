@@ -6,6 +6,8 @@ permalink: /kb/280/Q280068/
 
 ## Q280068: Games: How to Troubleshoot Invalid Page Faults (Part 1)
 
+{% raw %}
+
 	Article: Q280068
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0,3.0
@@ -351,3 +353,5 @@ permalink: /kb/280/Q280068/
 	
 	=============================================================================
 	
+
+{% endraw %}

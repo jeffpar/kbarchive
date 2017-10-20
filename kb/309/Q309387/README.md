@@ -6,6 +6,8 @@ permalink: /kb/309/Q309387/
 
 ## Q309387: SMS: &quot;Invalid Collection Name&quot; After Valid Collection Browsing
 
+{% raw %}
+
 	Article: Q309387
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -294,3 +296,5 @@ permalink: /kb/309/Q309387/
 	
 	=============================================================================
 	
+
+{% endraw %}

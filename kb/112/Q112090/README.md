@@ -6,6 +6,8 @@ permalink: /kb/112/Q112090/
 
 ## Q112090: AWFAX: Err Msg or No Connection with PM14400FXSA Fax Modem
 
+{% raw %}
+
 	Article: Q112090
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -61,3 +63,5 @@ permalink: /kb/112/Q112090/
 	
 	=============================================================================
 	
+
+{% endraw %}

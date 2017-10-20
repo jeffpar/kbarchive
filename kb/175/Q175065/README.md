@@ -6,6 +6,8 @@ permalink: /kb/175/Q175065/
 
 ## Q175065: Frequently Asked Questions About Using Chat on MSN
 
+{% raw %}
+
 	Article: Q175065
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6,5.0
@@ -80,3 +82,5 @@ permalink: /kb/175/Q175065/
 	
 	=============================================================================
 	
+
+{% endraw %}

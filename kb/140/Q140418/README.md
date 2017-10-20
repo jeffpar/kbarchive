@@ -6,6 +6,8 @@ permalink: /kb/140/Q140418/
 
 ## Q140418: Detailed Explanation of FAT Boot Sector
 
+{% raw %}
+
 	Article: Q140418
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.10 3.50 3.51
@@ -300,3 +302,5 @@ permalink: /kb/140/Q140418/
 	
 	=============================================================================
 	
+
+{% endraw %}

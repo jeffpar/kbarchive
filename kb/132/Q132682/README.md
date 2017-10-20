@@ -6,6 +6,8 @@ permalink: /kb/132/Q132682/
 
 ## Q132682: PC Win: How to Hide the Microsoft Mail Spooler Icon
 
+{% raw %}
+
 	Article: Q132682
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.2a
@@ -59,3 +61,5 @@ permalink: /kb/132/Q132682/
 	
 	=============================================================================
 	
+
+{% endraw %}

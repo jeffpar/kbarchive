@@ -6,6 +6,8 @@ permalink: /kb/085/Q85162/
 
 ## Q85162: Forcing the Installation of Only MS-DOS 5 or Windows 3.1
 
+{% raw %}
+
 	Article: Q85162
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/085/Q85162/
 	
 	=============================================================================
 	
+
+{% endraw %}

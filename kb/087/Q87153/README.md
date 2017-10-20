@@ -6,6 +6,8 @@ permalink: /kb/087/Q87153/
 
 ## Q87153: Mac Wkst: Local Address List
 
+{% raw %}
+
 	Article: Q87153
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -44,3 +46,5 @@ permalink: /kb/087/Q87153/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/326/Q326444/
 
 ## Q326444: HOW TO: Configure the URLScan Tool
 
+{% raw %}
+
 	Article: Q326444
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -381,3 +383,5 @@ permalink: /kb/326/Q326444/
 	
 	=============================================================================
 	
+
+{% endraw %}

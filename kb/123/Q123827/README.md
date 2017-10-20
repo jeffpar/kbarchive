@@ -6,6 +6,8 @@ permalink: /kb/123/Q123827/
 
 ## Q123827: SMTP: Err Msg: Error (119) Network Write Error
 
+{% raw %}
+
 	Article: Q123827
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.x
@@ -71,3 +73,5 @@ permalink: /kb/123/Q123827/
 	
 	=============================================================================
 	
+
+{% endraw %}

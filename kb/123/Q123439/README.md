@@ -6,6 +6,8 @@ permalink: /kb/123/Q123439/
 
 ## Q123439: Problems Copying Large Files Using Texel DM 3024 CD-ROM
 
+{% raw %}
+
 	Article: Q123439
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/123/Q123439/
 	
 	=============================================================================
 	
+
+{% endraw %}

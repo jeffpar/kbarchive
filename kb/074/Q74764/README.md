@@ -6,6 +6,8 @@ permalink: /kb/074/Q74764/
 
 ## Q74764: Cannot Run Windows Because of Video Device Conflict
 
+{% raw %}
+
 	Article: Q74764
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -67,3 +69,5 @@ permalink: /kb/074/Q74764/
 	
 	=============================================================================
 	
+
+{% endraw %}

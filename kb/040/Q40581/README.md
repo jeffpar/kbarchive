@@ -6,6 +6,8 @@ permalink: /kb/040/Q40581/
 
 ## Q40581: Overlays and BINDing Are Not Compatible
 
+{% raw %}
+
 	Article: Q40581
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -34,3 +36,5 @@ permalink: /kb/040/Q40581/
 	no real advantage to this; however, the new .EXE file will be a little
 	larger than the two separate files. The STUB statement is documented
 	by the C 5.10 utilities update in the LINK section.
+
+{% endraw %}

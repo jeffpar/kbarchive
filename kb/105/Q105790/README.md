@@ -6,6 +6,8 @@ permalink: /kb/105/Q105790/
 
 ## Q105790: MS-DOS 6.2 Step-Up May Leave Temporary Files If Interrupted
 
+{% raw %}
+
 	Article: Q105790
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -51,3 +53,5 @@ permalink: /kb/105/Q105790/
 	
 	=============================================================================
 	
+
+{% endraw %}

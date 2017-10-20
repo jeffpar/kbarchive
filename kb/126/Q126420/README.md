@@ -6,6 +6,8 @@ permalink: /kb/126/Q126420/
 
 ## Q126420: NT RAS Client with TCP/IP Alone Cannot Browse the Network
 
+{% raw %}
+
 	Article: Q126420
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -89,3 +91,5 @@ permalink: /kb/126/Q126420/
 	
 	=============================================================================
 	
+
+{% endraw %}

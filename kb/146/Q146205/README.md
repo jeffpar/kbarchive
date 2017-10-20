@@ -6,6 +6,8 @@ permalink: /kb/146/Q146205/
 
 ## Q146205: Account Dates on MSN Are Not Displayed in Localized Format
 
+{% raw %}
+
 	Article: Q146205
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5
@@ -37,3 +39,5 @@ permalink: /kb/146/Q146205/
 	
 	=============================================================================
 	
+
+{% endraw %}

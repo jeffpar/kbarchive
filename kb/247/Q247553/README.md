@@ -6,6 +6,8 @@ permalink: /kb/247/Q247553/
 
 ## Q247553: Windows NT Option Pack (NTOP) Downgrades MDAC Components
 
+{% raw %}
+
 	Article: Q247553
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/247/Q247553/
 	
 	=============================================================================
 	
+
+{% endraw %}

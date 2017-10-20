@@ -6,6 +6,8 @@ permalink: /kb/177/Q177681/
 
 ## Q177681: Services Using UNC Names May Fail
 
+{% raw %}
+
 	Article: Q177681
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -104,3 +106,5 @@ permalink: /kb/177/Q177681/
 	
 	=============================================================================
 	
+
+{% endraw %}

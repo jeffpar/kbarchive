@@ -6,6 +6,8 @@ permalink: /kb/221/Q221762/
 
 ## Q221762: Error Message Using the CALL Command in Windows NT Logon Script
 
+{% raw %}
+
 	Article: Q221762
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/221/Q221762/
 	
 	=============================================================================
 	
+
+{% endraw %}

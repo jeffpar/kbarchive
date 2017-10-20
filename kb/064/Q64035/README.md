@@ -6,6 +6,8 @@ permalink: /kb/064/Q64035/
 
 ## Q64035: Updated IS/Pensmith Driver Available from Kurta for Windows
 
+{% raw %}
+
 	Article: Q64035
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -54,3 +56,5 @@ permalink: /kb/064/Q64035/
 	
 	=============================================================================
 	
+
+{% endraw %}

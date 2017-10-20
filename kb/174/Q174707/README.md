@@ -6,6 +6,8 @@ permalink: /kb/174/Q174707/
 
 ## Q174707: XWEB: Changing the Outlook Web Access Virtual Directory
 
+{% raw %}
+
 	Article: Q174707
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -111,3 +113,5 @@ permalink: /kb/174/Q174707/
 	
 	=============================================================================
 	
+
+{% endraw %}

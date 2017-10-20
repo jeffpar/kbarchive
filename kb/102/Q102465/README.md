@@ -6,6 +6,8 @@ permalink: /kb/102/Q102465/
 
 ## Q102465: How to Use the _MEMVARMASK Variable
 
+{% raw %}
+
 	Article: Q102465
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6,2.6a,3.0
@@ -100,3 +102,5 @@ permalink: /kb/102/Q102465/
 	
 	=============================================================================
 	
+
+{% endraw %}

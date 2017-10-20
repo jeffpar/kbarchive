@@ -6,6 +6,8 @@ permalink: /kb/086/Q86607/
 
 ## Q86607: PC WSPlus: Undoing Deleted Recurring Appointment
 
+{% raw %}
+
 	Article: Q86607
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -35,3 +37,5 @@ permalink: /kb/086/Q86607/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/269/Q269076/
 
 ## Q269076: XADM: Information Store Access Violation on LAST, NEXT Command
 
+{% raw %}
+
 	Article: Q269076
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -77,3 +79,5 @@ permalink: /kb/269/Q269076/
 	
 	=============================================================================
 	
+
+{% endraw %}

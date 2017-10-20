@@ -6,6 +6,8 @@ permalink: /kb/071/Q71448/
 
 ## Q71448: Moving Task with Minimized Icons Causes a UAE in Windows
 
+{% raw %}
+
 	Article: Q71448
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -53,3 +55,5 @@ permalink: /kb/071/Q71448/
 	
 	=============================================================================
 	
+
+{% endraw %}

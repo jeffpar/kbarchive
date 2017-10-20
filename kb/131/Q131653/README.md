@@ -6,6 +6,8 @@ permalink: /kb/131/Q131653/
 
 ## Q131653: Removing Duplicate ODBC Icons from Control Panel
 
+{% raw %}
+
 	Article: Q131653
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/131/Q131653/
 	
 	=============================================================================
 	
+
+{% endraw %}

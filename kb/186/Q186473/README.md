@@ -6,6 +6,8 @@ permalink: /kb/186/Q186473/
 
 ## Q186473: You Can Delete All Records on a WINS Server Using SNMP
 
+{% raw %}
+
 	Article: Q186473
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/186/Q186473/
 	
 	=============================================================================
 	
+
+{% endraw %}

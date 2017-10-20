@@ -6,6 +6,8 @@ permalink: /kb/263/Q263660/
 
 ## Q263660: BUG: Click Event May Fire Even Though Command Button Is Hidden
 
+{% raw %}
+
 	Article: Q263660
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -73,3 +75,5 @@ permalink: /kb/263/Q263660/
 	
 	=============================================================================
 	
+
+{% endraw %}

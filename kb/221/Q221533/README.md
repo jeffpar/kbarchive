@@ -6,6 +6,8 @@ permalink: /kb/221/Q221533/
 
 ## Q221533: INF: EZY1309E IBM Runtime Error on Mainframe Using CICS MS Link
 
+{% raw %}
+
 	Article: Q221533
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -76,3 +78,5 @@ permalink: /kb/221/Q221533/
 	
 	=============================================================================
 	
+
+{% endraw %}

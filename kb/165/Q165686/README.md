@@ -6,6 +6,8 @@ permalink: /kb/165/Q165686/
 
 ## Q165686: INFO: Visual C++ 5.0 Readme, Wizard and User-Interface Issues
 
+{% raw %}
+
 	Article: Q165686
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -237,3 +239,5 @@ permalink: /kb/165/Q165686/
 	
 	=============================================================================
 	
+
+{% endraw %}

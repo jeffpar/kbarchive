@@ -6,6 +6,8 @@ permalink: /kb/237/Q237274/
 
 ## Q237274: WD97: Err Msg: &quot;This Document May Be Corrupt&quot;
 
+{% raw %}
+
 	Article: Q237274
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -144,3 +146,5 @@ permalink: /kb/237/Q237274/
 	
 	=============================================================================
 	
+
+{% endraw %}

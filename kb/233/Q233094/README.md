@@ -6,6 +6,8 @@ permalink: /kb/233/Q233094/
 
 ## Q233094: STOP 1E Error Message in Sfmsrv.sys
 
+{% raw %}
+
 	Article: Q233094
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5
@@ -82,3 +84,5 @@ permalink: /kb/233/Q233094/
 	
 	=============================================================================
 	
+
+{% endraw %}

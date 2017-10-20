@@ -6,6 +6,8 @@ permalink: /kb/159/Q159452/
 
 ## Q159452: SNA Shared Folders Gateway Shows Large Free Disk Space
 
+{% raw %}
+
 	Article: Q159452
 	Product(s): Microsoft SNA Server
 	Version(s): winnt:3.0,4.0
@@ -66,3 +68,5 @@ permalink: /kb/159/Q159452/
 	
 	=============================================================================
 	
+
+{% endraw %}

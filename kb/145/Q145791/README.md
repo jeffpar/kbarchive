@@ -6,6 +6,8 @@ permalink: /kb/145/Q145791/
 
 ## Q145791: XCLN: No Read Receipt Indicator for Message Headers
 
+{% raw %}
+
 	Article: Q145791
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -47,3 +49,5 @@ permalink: /kb/145/Q145791/
 	
 	=============================================================================
 	
+
+{% endraw %}

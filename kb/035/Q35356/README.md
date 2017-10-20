@@ -6,6 +6,8 @@ permalink: /kb/035/Q35356/
 
 ## Q35356: SCREEN 0 &quot;Illegal Function Call,&quot; MCGA Only Supports 4 Pages
 
+{% raw %}
+
 	Article: Q35356
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -33,3 +35,5 @@ permalink: /kb/035/Q35356/
 	for i=0 to 7
 	Screen 0,,i
 	next i
+
+{% endraw %}

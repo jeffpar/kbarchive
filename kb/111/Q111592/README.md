@@ -6,6 +6,8 @@ permalink: /kb/111/Q111592/
 
 ## Q111592: BUG: DeleteObject() Generates Debug Errors in WEP
 
+{% raw %}
+
 	Article: Q111592
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -60,3 +62,5 @@ permalink: /kb/111/Q111592/
 	
 	=============================================================================
 	
+
+{% endraw %}

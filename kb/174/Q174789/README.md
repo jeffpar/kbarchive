@@ -6,6 +6,8 @@ permalink: /kb/174/Q174789/
 
 ## Q174789: Perl Script Gets Access Denied Error on IIS
 
+{% raw %}
+
 	Article: Q174789
 	Product(s): Internet Information Server
 	Version(s): 2.00 3.00
@@ -103,3 +105,5 @@ permalink: /kb/174/Q174789/
 	
 	=============================================================================
 	
+
+{% endraw %}

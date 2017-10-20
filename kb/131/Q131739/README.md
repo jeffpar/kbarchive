@@ -6,6 +6,8 @@ permalink: /kb/131/Q131739/
 
 ## Q131739: Windows NT 3.5: NetBT Event ID 4320
 
+{% raw %}
+
 	Article: Q131739
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/131/Q131739/
 	
 	=============================================================================
 	
+
+{% endraw %}

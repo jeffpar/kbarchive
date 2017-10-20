@@ -6,6 +6,8 @@ permalink: /kb/040/Q40519/
 
 ## Q40519: Compaq ADAPT.COM TSR Is Not Compatible with QC 2.00
 
+{% raw %}
+
 	Article: Q40519
 	Product(s): See article
 	Version(s): 2.00
@@ -32,3 +34,5 @@ permalink: /kb/040/Q40519/
 	
 	Microsoft has confirmed this problem with Version 2.00 of the QuickC
 	compiler. Microsoft will post new information as it becomes available.
+
+{% endraw %}

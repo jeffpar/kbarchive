@@ -6,6 +6,8 @@ permalink: /kb/114/Q114418/
 
 ## Q114418: Adaptec Drivers Include BIOS Detection Code
 
+{% raw %}
+
 	Article: Q114418
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -66,3 +68,5 @@ permalink: /kb/114/Q114418/
 	
 	=============================================================================
 	
+
+{% endraw %}

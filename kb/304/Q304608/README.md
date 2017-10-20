@@ -6,6 +6,8 @@ permalink: /kb/304/Q304608/
 
 ## Q304608: Interrupted Forced Upgrade Causes Subsequent Upgrade Attempt To
 
+{% raw %}
+
 	Article: Q304608
 	Product(s): The Microsoft Network
 	Version(s): 5.4
@@ -166,3 +168,5 @@ permalink: /kb/304/Q304608/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/250/Q250450/
 
 ## Q250450: XFOR: Using Notes Document Type Cause Address Books to Reload
 
+{% raw %}
+
 	Article: Q250450
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -64,3 +66,5 @@ permalink: /kb/250/Q250450/
 	
 	=============================================================================
 	
+
+{% endraw %}

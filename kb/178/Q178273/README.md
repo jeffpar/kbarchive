@@ -6,6 +6,8 @@ permalink: /kb/178/Q178273/
 
 ## Q178273: Error in Cluster Server Administration Guide
 
+{% raw %}
+
 	Article: Q178273
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -43,3 +45,5 @@ permalink: /kb/178/Q178273/
 	
 	=============================================================================
 	
+
+{% endraw %}

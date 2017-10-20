@@ -6,6 +6,8 @@ permalink: /kb/175/Q175291/
 
 ## Q175291: Long Local or Global Group Names Do Not Display Properly
 
+{% raw %}
+
 	Article: Q175291
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -56,3 +58,5 @@ permalink: /kb/175/Q175291/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135746/
 
 ## Q135746: Conference Slide Show Keystrokes Don't Affect Audience Screens
 
+{% raw %}
+
 	Article: Q135746
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -59,3 +61,5 @@ permalink: /kb/135/Q135746/
 	
 	=============================================================================
 	
+
+{% endraw %}

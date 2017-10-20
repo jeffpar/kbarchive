@@ -6,6 +6,8 @@ permalink: /kb/175/Q175459/
 
 ## Q175459: Error: Missing Oleaut32.dll in Setup Program
 
+{% raw %}
+
 	Article: Q175459
 	Product(s): Microsoft Press
 	Version(s): 
@@ -92,3 +94,5 @@ permalink: /kb/175/Q175459/
 	
 	=============================================================================
 	
+
+{% endraw %}

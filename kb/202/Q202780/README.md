@@ -6,6 +6,8 @@ permalink: /kb/202/Q202780/
 
 ## Q202780: Encarta 99 Err Msg: An Error Has Occurred in Your Program
 
+{% raw %}
+
 	Article: Q202780
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -94,3 +96,5 @@ permalink: /kb/202/Q202780/
 	
 	=============================================================================
 	
+
+{% endraw %}

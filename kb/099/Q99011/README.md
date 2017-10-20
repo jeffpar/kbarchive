@@ -6,6 +6,8 @@ permalink: /kb/099/Q99011/
 
 ## Q99011: Encarta Err Msg: This List Is Corrupt!
 
+{% raw %}
+
 	Article: Q99011
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1993 editions,1995 editions,2.0; WINDOWS:
@@ -60,3 +62,5 @@ permalink: /kb/099/Q99011/
 	
 	=============================================================================
 	
+
+{% endraw %}

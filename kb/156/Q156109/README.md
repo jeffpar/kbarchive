@@ -6,6 +6,8 @@ permalink: /kb/156/Q156109/
 
 ## Q156109: Encarta 97 Err Msg: Lookup Reference Cannot Execute
 
+{% raw %}
+
 	Article: Q156109
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition; WINDOWS:
@@ -53,3 +55,5 @@ permalink: /kb/156/Q156109/
 	
 	=============================================================================
 	
+
+{% endraw %}

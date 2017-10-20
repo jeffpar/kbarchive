@@ -6,6 +6,8 @@ permalink: /kb/156/Q156546/
 
 ## Q156546: &quot;Cannot Connect to Internet&quot; When Starting Microsoft Exchange
 
+{% raw %}
+
 	Article: Q156546
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0
@@ -64,3 +66,5 @@ permalink: /kb/156/Q156546/
 	
 	=============================================================================
 	
+
+{% endraw %}

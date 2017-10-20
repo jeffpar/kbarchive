@@ -6,6 +6,8 @@ permalink: /kb/194/Q194205/
 
 ## Q194205: Err Msg: WAOL Caused an Invalid Page Fault in Module MSVCRT.DLL
 
+{% raw %}
+
 	Article: Q194205
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -116,3 +118,5 @@ permalink: /kb/194/Q194205/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196690/
 
 ## Q196690: XADM: Failed to Traverse Mailboxes Using MBCLEAN on Exchange
 
+{% raw %}
+
 	Article: Q196690
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -61,3 +63,5 @@ permalink: /kb/196/Q196690/
 	
 	=============================================================================
 	
+
+{% endraw %}

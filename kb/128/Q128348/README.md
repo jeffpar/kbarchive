@@ -6,6 +6,8 @@ permalink: /kb/128/Q128348/
 
 ## Q128348: Doc Err: Promoting and Demoting Domain Controllers and Servers
 
+{% raw %}
+
 	Article: Q128348
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/128/Q128348/
 	
 	=============================================================================
 	
+
+{% endraw %}

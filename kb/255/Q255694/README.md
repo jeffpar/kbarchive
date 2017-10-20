@@ -6,6 +6,8 @@ permalink: /kb/255/Q255694/
 
 ## Q255694: PRB: MSDN Library Setup Reports &quot;Not Enough Disk Space&quot;
 
+{% raw %}
+
 	Article: Q255694
 	Product(s): Microsoft Developer Network
 	Version(s): WINDOWS:January 00
@@ -75,3 +77,5 @@ permalink: /kb/255/Q255694/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235609/
 
 ## Q235609: Recovering a WINS Database From Other Backup Sources
 
+{% raw %}
+
 	Article: Q235609
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -194,3 +196,5 @@ permalink: /kb/235/Q235609/
 	
 	=============================================================================
 	
+
+{% endraw %}

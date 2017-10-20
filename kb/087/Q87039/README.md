@@ -6,6 +6,8 @@ permalink: /kb/087/Q87039/
 
 ## Q87039: SMTP: Encapsulation and the SMTP Gateway
 
+{% raw %}
+
 	Article: Q87039
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -44,3 +46,5 @@ permalink: /kb/087/Q87039/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195061/
 
 ## Q195061: Pinball Arcade: Cannot Start a Game on Any Table
 
+{% raw %}
+
 	Article: Q195061
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -69,3 +71,5 @@ permalink: /kb/195/Q195061/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/306/Q306814/
 
 ## Q306814: Bookshelf: Cannot Connect to a Site When You Click Web Link
 
+{% raw %}
+
 	Article: Q306814
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -111,3 +113,5 @@ permalink: /kb/306/Q306814/
 	
 	=============================================================================
 	
+
+{% endraw %}

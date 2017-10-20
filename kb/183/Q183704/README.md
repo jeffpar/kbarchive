@@ -6,6 +6,8 @@ permalink: /kb/183/Q183704/
 
 ## Q183704: Hide Drives Policy in Common.adm Has No VALUEOFF Statement
 
+{% raw %}
+
 	Article: Q183704
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/183/Q183704/
 	
 	=============================================================================
 	
+
+{% endraw %}

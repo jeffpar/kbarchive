@@ -6,6 +6,8 @@ permalink: /kb/180/Q180624/
 
 ## Q180624: BUG: Invalid Page Fault Occurs with More than 34 DDE Channels
 
+{% raw %}
+
 	Article: Q180624
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -196,3 +198,5 @@ permalink: /kb/180/Q180624/
 	
 	=============================================================================
 	
+
+{% endraw %}

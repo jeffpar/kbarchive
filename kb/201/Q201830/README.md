@@ -6,6 +6,8 @@ permalink: /kb/201/Q201830/
 
 ## Q201830: BUG: Error C2011 When Reusing Nested Structure Tag Names
 
+{% raw %}
+
 	Article: Q201830
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,4.0,5.0,6.0
@@ -88,3 +90,5 @@ permalink: /kb/201/Q201830/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150201/
 
 ## Q150201: BUG: Application Does Not Restore Window from Minimized Icon
 
+{% raw %}
+
 	Article: Q150201
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -70,3 +72,5 @@ permalink: /kb/150/Q150201/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/077/Q77382/
 
 ## Q77382: Flight Simulator Version 4.0 Read Me Text
 
+{% raw %}
+
 	Article: Q77382
 	Product(s): Microsoft Home Games
 	Version(s): 4.00
@@ -149,3 +151,5 @@ permalink: /kb/077/Q77382/
 	
 	=============================================================================
 	
+
+{% endraw %}

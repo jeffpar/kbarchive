@@ -6,6 +6,8 @@ permalink: /kb/155/Q155261/
 
 ## Q155261: PRB: Protected Property Cannot be Changed by Objects in a Class
 
+{% raw %}
+
 	Article: Q155261
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0
@@ -124,3 +126,5 @@ permalink: /kb/155/Q155261/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/077/Q77627/
 
 ## Q77627: MS-DOS and DPT PM2001/95 SCSI Controller
 
+{% raw %}
+
 	Article: Q77627
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -45,3 +47,5 @@ permalink: /kb/077/Q77627/
 	
 	=============================================================================
 	
+
+{% endraw %}

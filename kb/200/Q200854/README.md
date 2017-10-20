@@ -6,6 +6,8 @@ permalink: /kb/200/Q200854/
 
 ## Q200854: HOWTO: Trapping Server's Menu Commands in Composite Menu Bar
 
+{% raw %}
+
 	Article: Q200854
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -118,3 +120,5 @@ permalink: /kb/200/Q200854/
 	
 	=============================================================================
 	
+
+{% endraw %}

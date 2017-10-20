@@ -6,6 +6,8 @@ permalink: /kb/224/Q224084/
 
 ## Q224084: How to Remove the Internet Explorer Icon from the Desktop
 
+{% raw %}
+
 	Article: Q224084
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/224/Q224084/
 	
 	=============================================================================
 	
+
+{% endraw %}

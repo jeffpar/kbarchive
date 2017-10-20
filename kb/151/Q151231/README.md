@@ -6,6 +6,8 @@ permalink: /kb/151/Q151231/
 
 ## Q151231: XFOR: MSExchangeMSMI Session Error EventID 2376
 
+{% raw %}
+
 	Article: Q151231
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/151/Q151231/
 	
 	=============================================================================
 	
+
+{% endraw %}

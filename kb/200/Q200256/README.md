@@ -6,6 +6,8 @@ permalink: /kb/200/Q200256/
 
 ## Q200256: INFO: Assembly Output from Visual C++ Compiler May Not Assemble
 
+{% raw %}
+
 	Article: Q200256
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,5.0,6.0
@@ -61,3 +63,5 @@ permalink: /kb/200/Q200256/
 	
 	=============================================================================
 	
+
+{% endraw %}

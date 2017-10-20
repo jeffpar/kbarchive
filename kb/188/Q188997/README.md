@@ -6,6 +6,8 @@ permalink: /kb/188/Q188997/
 
 ## Q188997: Microsoft NetBIOS Computer Naming Conventions
 
+{% raw %}
+
 	Article: Q188997
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11,3.51,4.0
@@ -65,3 +67,5 @@ permalink: /kb/188/Q188997/
 	
 	=============================================================================
 	
+
+{% endraw %}

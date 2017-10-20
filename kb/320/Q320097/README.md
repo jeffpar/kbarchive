@@ -6,6 +6,8 @@ permalink: /kb/320/Q320097/
 
 ## Q320097: XADM: Installation of Service Pack 4 Stops with Files in Use Err
 
+{% raw %}
+
 	Article: Q320097
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -72,3 +74,5 @@ permalink: /kb/320/Q320097/
 	
 	=============================================================================
 	
+
+{% endraw %}

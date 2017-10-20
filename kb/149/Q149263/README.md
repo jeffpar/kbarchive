@@ -6,6 +6,8 @@ permalink: /kb/149/Q149263/
 
 ## Q149263: XCLN: Close and Return from Word Freedoc Has No Cancel
 
+{% raw %}
+
 	Article: Q149263
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -47,3 +49,5 @@ permalink: /kb/149/Q149263/
 	
 	=============================================================================
 	
+
+{% endraw %}

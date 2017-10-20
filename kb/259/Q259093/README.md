@@ -6,6 +6,8 @@ permalink: /kb/259/Q259093/
 
 ## Q259093: INFO: Logo FAQ: How Difficult Is it to Comply with the App Spec?
 
+{% raw %}
+
 	Article: Q259093
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -94,3 +96,5 @@ permalink: /kb/259/Q259093/
 	
 	=============================================================================
 	
+
+{% endraw %}

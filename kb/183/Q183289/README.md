@@ -6,6 +6,8 @@ permalink: /kb/183/Q183289/
 
 ## Q183289: Download of Self-Extracting File Expands Into the Root Folder
 
+{% raw %}
+
 	Article: Q183289
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -48,3 +50,5 @@ permalink: /kb/183/Q183289/
 	
 	=============================================================================
 	
+
+{% endraw %}

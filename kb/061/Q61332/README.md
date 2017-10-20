@@ -6,6 +6,8 @@ permalink: /kb/061/Q61332/
 
 ## Q61332: Storage Format for MKI&#36;, MKL&#36;, MKS&#36;, MKD&#36; Same as Variable
 
+{% raw %}
+
 	Article: Q61332
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -65,3 +67,5 @@ permalink: /kb/061/Q61332/
 	  asval1 = PEEK(asptr): asval2 = PEEK(asptr + 1)
 	  PRINT aval1, aval2, , asval1, asval2
 	NEXT a%
+
+{% endraw %}

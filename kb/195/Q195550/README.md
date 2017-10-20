@@ -6,6 +6,8 @@ permalink: /kb/195/Q195550/
 
 ## Q195550: Problems Running My Personal Tutor Using Multiple Displays
 
+{% raw %}
+
 	Article: Q195550
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/195/Q195550/
 	
 	=============================================================================
 	
+
+{% endraw %}

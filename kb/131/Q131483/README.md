@@ -6,6 +6,8 @@ permalink: /kb/131/Q131483/
 
 ## Q131483: Error Message: Quick Recorder - A Memory Error Has Occurred
 
+{% raw %}
+
 	Article: Q131483
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/131/Q131483/
 	
 	=============================================================================
 	
+
+{% endraw %}

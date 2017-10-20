@@ -6,6 +6,8 @@ permalink: /kb/164/Q164512/
 
 ## Q164512: Windows 95 Briefcase: No Drag-and-Drop on WinNT Compressed Dir
 
+{% raw %}
+
 	Article: Q164512
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.51,4.0
@@ -76,3 +78,5 @@ permalink: /kb/164/Q164512/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/106/Q106469/
 
 ## Q106469: WD97: Word Accesses Mail Merge Data File Frequently
 
+{% raw %}
+
 	Article: Q106469
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -129,3 +131,5 @@ permalink: /kb/106/Q106469/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148251/
 
 ## Q148251: Dinosaurs: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q148251
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.00
@@ -59,3 +61,5 @@ permalink: /kb/148/Q148251/
 	
 	=============================================================================
 	
+
+{% endraw %}

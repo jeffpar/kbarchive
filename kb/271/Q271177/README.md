@@ -6,6 +6,8 @@ permalink: /kb/271/Q271177/
 
 ## Q271177: FIX: Unable To Repair Password Protected Database
 
+{% raw %}
+
 	Article: Q271177
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5,2.5 SP1,4.0
@@ -151,3 +153,5 @@ permalink: /kb/271/Q271177/
 	
 	=============================================================================
 	
+
+{% endraw %}

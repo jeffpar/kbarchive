@@ -6,6 +6,8 @@ permalink: /kb/156/Q156616/
 
 ## Q156616: Writer 2: Dimensions of PaintIt! Picture Aren't Retained
 
+{% raw %}
+
 	Article: Q156616
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -80,3 +82,5 @@ permalink: /kb/156/Q156616/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84491/
 
 ## Q84491: Troubleshooting Print-Sharing Devices
 
+{% raw %}
+
 	Article: Q84491
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a,3.1,3.11,95
@@ -244,3 +246,5 @@ permalink: /kb/084/Q84491/
 	
 	=============================================================================
 	
+
+{% endraw %}

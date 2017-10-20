@@ -6,6 +6,8 @@ permalink: /kb/195/Q195701/
 
 ## Q195701: SMS: No System BIOS Information Returned on IBM OS/2 Clients
 
+{% raw %}
+
 	Article: Q195701
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -94,3 +96,5 @@ permalink: /kb/195/Q195701/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132179/
 
 ## Q132179: PRB: Controls in a Page Frame Are Not Refreshed
 
+{% raw %}
+
 	Article: Q132179
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS: 3.0,5.0,5.0a
@@ -120,3 +122,5 @@ permalink: /kb/132/Q132179/
 	
 	=============================================================================
 	
+
+{% endraw %}

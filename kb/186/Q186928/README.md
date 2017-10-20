@@ -6,6 +6,8 @@ permalink: /kb/186/Q186928/
 
 ## Q186928: XWEB: Application Error When Using User-defined View with DBCS
 
+{% raw %}
+
 	Article: Q186928
 	Product(s): Microsoft Exchange
 	Version(s): 8.00, 8.01, 8.02, 8.03, 8.50
@@ -197,3 +199,5 @@ permalink: /kb/186/Q186928/
 	
 	=============================================================================
 	
+
+{% endraw %}

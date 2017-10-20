@@ -6,6 +6,8 @@ permalink: /kb/187/Q187183/
 
 ## Q187183: RDP Client Hangs If the Network Is Unavailable
 
+{% raw %}
+
 	Article: Q187183
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/187/Q187183/
 	
 	=============================================================================
 	
+
+{% endraw %}

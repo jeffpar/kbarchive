@@ -6,6 +6,8 @@ permalink: /kb/150/Q150823/
 
 ## Q150823: Trap 0xA When Token Ring Source Routing Data Exceeds 18 Bytes
 
+{% raw %}
+
 	Article: Q150823
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -82,3 +84,5 @@ permalink: /kb/150/Q150823/
 	
 	=============================================================================
 	
+
+{% endraw %}

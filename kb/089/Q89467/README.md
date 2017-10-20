@@ -6,6 +6,8 @@ permalink: /kb/089/Q89467/
 
 ## Q89467: LAN Man 2.1 Test Summary (Tripp Lite BC800LAN)
 
+{% raw %}
+
 	Article: Q89467
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/089/Q89467/
 	
 	=============================================================================
 	
+
+{% endraw %}

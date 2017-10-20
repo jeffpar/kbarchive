@@ -6,6 +6,8 @@ permalink: /kb/078/Q78930/
 
 ## Q78930: PRB: Unresolved Externals Remain When Libraries Share a Name
 
+{% raw %}
+
 	Article: Q78930
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.x,4.x,5.0x,5.1x,5.2,5.2x,5.5,5.6; OS/2:5.0x,5.1,5.11,5.13,5.15
@@ -74,3 +76,5 @@ permalink: /kb/078/Q78930/
 	
 	=============================================================================
 	
+
+{% endraw %}

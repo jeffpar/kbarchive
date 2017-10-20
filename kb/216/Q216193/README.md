@@ -6,6 +6,8 @@ permalink: /kb/216/Q216193/
 
 ## Q216193: PC DirSync: WinNT Version of Import Cannot Add for Batch
 
+{% raw %}
+
 	Article: Q216193
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -94,3 +96,5 @@ permalink: /kb/216/Q216193/
 	
 	=============================================================================
 	
+
+{% endraw %}

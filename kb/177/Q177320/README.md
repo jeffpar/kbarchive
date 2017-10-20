@@ -6,6 +6,8 @@ permalink: /kb/177/Q177320/
 
 ## Q177320: How to Display Quick View Icon Only When Connected to MSN
 
+{% raw %}
+
 	Article: Q177320
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -58,3 +60,5 @@ permalink: /kb/177/Q177320/
 	
 	=============================================================================
 	
+
+{% endraw %}

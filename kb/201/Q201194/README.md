@@ -6,6 +6,8 @@ permalink: /kb/201/Q201194/
 
 ## Q201194: How to Configure Telnet NTLM Authentication
 
+{% raw %}
+
 	Article: Q201194
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,4.0
@@ -88,3 +90,5 @@ permalink: /kb/201/Q201194/
 	
 	=============================================================================
 	
+
+{% endraw %}

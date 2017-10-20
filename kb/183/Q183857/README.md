@@ -6,6 +6,8 @@ permalink: /kb/183/Q183857/
 
 ## Q183857: WD97: Save As HTML Command Missing from File Menu
 
+{% raw %}
+
 	Article: Q183857
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -259,3 +261,5 @@ permalink: /kb/183/Q183857/
 	
 	=============================================================================
 	
+
+{% endraw %}

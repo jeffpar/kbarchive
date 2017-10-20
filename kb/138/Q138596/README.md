@@ -6,6 +6,8 @@ permalink: /kb/138/Q138596/
 
 ## Q138596: Microsoft Service for NetWare Directory Services Readme.txt
 
+{% raw %}
+
 	Article: Q138596
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -217,3 +219,5 @@ permalink: /kb/138/Q138596/
 	
 	=============================================================================
 	
+
+{% endraw %}

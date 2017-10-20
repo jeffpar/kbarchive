@@ -6,6 +6,8 @@ permalink: /kb/176/Q176029/
 
 ## Q176029: Messenger Service Fails When Using Only NWLINK
 
+{% raw %}
+
 	Article: Q176029
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/176/Q176029/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143303/
 
 ## Q143303: PRB: Some OLE Control Events Do Not Fire in Visual FoxPro 3.0b
 
+{% raw %}
+
 	Article: Q143303
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b
@@ -135,3 +137,5 @@ permalink: /kb/143/Q143303/
 	
 	=============================================================================
 	
+
+{% endraw %}

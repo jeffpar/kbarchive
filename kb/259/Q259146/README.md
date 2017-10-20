@@ -6,6 +6,8 @@ permalink: /kb/259/Q259146/
 
 ## Q259146: XCON: MTA Slow When Sending to Multiple Servers in the Same Site
 
+{% raw %}
+
 	Article: Q259146
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -64,3 +66,5 @@ permalink: /kb/259/Q259146/
 	
 	=============================================================================
 	
+
+{% endraw %}

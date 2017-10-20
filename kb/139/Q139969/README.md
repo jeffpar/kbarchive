@@ -6,6 +6,8 @@ permalink: /kb/139/Q139969/
 
 ## Q139969: FIX: File Extension Lost if Save As Option is Used in Win95
 
+{% raw %}
+
 	Article: Q139969
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -98,3 +100,5 @@ permalink: /kb/139/Q139969/
 	
 	=============================================================================
 	
+
+{% endraw %}

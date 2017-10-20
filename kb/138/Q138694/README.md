@@ -6,6 +6,8 @@ permalink: /kb/138/Q138694/
 
 ## Q138694: FIX: Using CSocket w/ CArchive Causes Block from Extra FD_READ
 
+{% raw %}
+
 	Article: Q138694
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.1,2.2,4.0,4.1
@@ -102,3 +104,5 @@ permalink: /kb/138/Q138694/
 	
 	=============================================================================
 	
+
+{% endraw %}

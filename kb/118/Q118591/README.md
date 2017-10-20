@@ -6,6 +6,8 @@ permalink: /kb/118/Q118591/
 
 ## Q118591: Calculating the Disk Space Required for an AVI File
 
+{% raw %}
+
 	Article: Q118591
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:1.0,1.1
@@ -87,3 +89,5 @@ permalink: /kb/118/Q118591/
 	
 	=============================================================================
 	
+
+{% endraw %}

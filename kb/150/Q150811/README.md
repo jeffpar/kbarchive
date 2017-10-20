@@ -6,6 +6,8 @@ permalink: /kb/150/Q150811/
 
 ## Q150811: XADM: Explanation of Exchange PCMTA's /Z Parameter
 
+{% raw %}
+
 	Article: Q150811
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -65,3 +67,5 @@ permalink: /kb/150/Q150811/
 	
 	=============================================================================
 	
+
+{% endraw %}

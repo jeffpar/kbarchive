@@ -6,6 +6,8 @@ permalink: /kb/123/Q123980/
 
 ## Q123980: PPP Message: RAS Has Connected Using an Earlier RAS Protocol
 
+{% raw %}
+
 	Article: Q123980
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/123/Q123980/
 	
 	=============================================================================
 	
+
+{% endraw %}

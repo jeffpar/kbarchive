@@ -6,6 +6,8 @@ permalink: /kb/169/Q169547/
 
 ## Q169547: WD97: Some OLE Automation Commands Fail with Visual Fox Pro
 
+{% raw %}
+
 	Article: Q169547
 	Product(s): Word 97 for Windows
 	Version(s): 5.0,5.0a,6.0
@@ -68,3 +70,5 @@ permalink: /kb/169/Q169547/
 	
 	=============================================================================
 	
+
+{% endraw %}

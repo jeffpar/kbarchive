@@ -6,6 +6,8 @@ permalink: /kb/237/Q237187/
 
 ## Q237187: XCON: Excessive Context Switching During Heavy Message Traffic
 
+{% raw %}
+
 	Article: Q237187
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -68,3 +70,5 @@ permalink: /kb/237/Q237187/
 	
 	=============================================================================
 	
+
+{% endraw %}

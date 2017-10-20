@@ -6,6 +6,8 @@ permalink: /kb/074/Q74450/
 
 ## Q74450: Upgrading to Microsoft Mouse Driver Version 8.1
 
+{% raw %}
+
 	Article: Q74450
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -51,3 +53,5 @@ permalink: /kb/074/Q74450/
 	
 	=============================================================================
 	
+
+{% endraw %}

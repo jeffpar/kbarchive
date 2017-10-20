@@ -6,6 +6,8 @@ permalink: /kb/249/Q249900/
 
 ## Q249900: PRB: Unable to Open/Import FoxPro Table in Some Applications
 
+{% raw %}
+
 	Article: Q249900
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,2.5a,2.5b,2.6,2.6a,3.0,3.0b,5.0,5.0a,6.0
@@ -122,3 +124,5 @@ permalink: /kb/249/Q249900/
 	
 	=============================================================================
 	
+
+{% endraw %}

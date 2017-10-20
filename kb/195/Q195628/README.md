@@ -6,6 +6,8 @@ permalink: /kb/195/Q195628/
 
 ## Q195628: FIX: VFP Will Not Shutdown With Multiple Component Galleries
 
+{% raw %}
+
 	Article: Q195628
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -82,3 +84,5 @@ permalink: /kb/195/Q195628/
 	
 	=============================================================================
 	
+
+{% endraw %}

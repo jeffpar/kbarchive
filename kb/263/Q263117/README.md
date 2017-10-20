@@ -6,6 +6,8 @@ permalink: /kb/263/Q263117/
 
 ## Q263117: Delay When Connecting MMC to Remote IIS Server
 
+{% raw %}
+
 	Article: Q263117
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -87,3 +89,5 @@ permalink: /kb/263/Q263117/
 	
 	=============================================================================
 	
+
+{% endraw %}

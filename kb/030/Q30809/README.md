@@ -6,6 +6,8 @@ permalink: /kb/030/Q30809/
 
 ## Q30809: MASM 5.10 OS2.DOC: OS/2 Call Summary - Module Management
 
+{% raw %}
+
 	Article: Q30809
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -35,3 +37,5 @@ permalink: /kb/030/Q30809/
 	
 	   @DosGetModName - Returns the complete pathname of a specified module
 	   Parameters - ModuleHandle:W, BufferLength:W, Buffer:PB
+
+{% endraw %}

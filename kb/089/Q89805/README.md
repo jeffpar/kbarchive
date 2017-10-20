@@ -6,6 +6,8 @@ permalink: /kb/089/Q89805/
 
 ## Q89805: Cinemania: Audio Failed Error Message
 
+{% raw %}
+
 	Article: Q89805
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1992 editions,1994 editions
@@ -79,3 +81,5 @@ permalink: /kb/089/Q89805/
 	
 	=============================================================================
 	
+
+{% endraw %}

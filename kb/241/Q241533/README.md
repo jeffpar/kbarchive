@@ -6,6 +6,8 @@ permalink: /kb/241/Q241533/
 
 ## Q241533: Dr. Watson in Mmc.exe with SNA Server and SMS on Same Computer
 
+{% raw %}
+
 	Article: Q241533
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2
@@ -68,3 +70,5 @@ permalink: /kb/241/Q241533/
 	
 	=============================================================================
 	
+
+{% endraw %}

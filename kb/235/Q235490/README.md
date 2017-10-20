@@ -6,6 +6,8 @@ permalink: /kb/235/Q235490/
 
 ## Q235490: XFOR: Contacts Are Not Supported By GroupWise
 
+{% raw %}
+
 	Article: Q235490
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -56,3 +58,5 @@ permalink: /kb/235/Q235490/
 	
 	=============================================================================
 	
+
+{% endraw %}

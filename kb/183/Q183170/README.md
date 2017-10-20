@@ -6,6 +6,8 @@ permalink: /kb/183/Q183170/
 
 ## Q183170: Dial on Demand Works but Connections to the Internet Do Not
 
+{% raw %}
+
 	Article: Q183170
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/183/Q183170/
 	
 	=============================================================================
 	
+
+{% endraw %}

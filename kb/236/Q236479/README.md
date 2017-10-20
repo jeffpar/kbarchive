@@ -6,6 +6,8 @@ permalink: /kb/236/Q236479/
 
 ## Q236479: ACC2000: New Tables &amp; Pages Deleted When You Undo VSS Checkout
 
+{% raw %}
+
 	Article: Q236479
 	Product(s): Microsoft SourceSafe
 	Version(s): ; WINDOWS:2000
@@ -126,3 +128,5 @@ permalink: /kb/236/Q236479/
 	
 	=============================================================================
 	
+
+{% endraw %}

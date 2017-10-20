@@ -6,6 +6,8 @@ permalink: /kb/124/Q124267/
 
 ## Q124267: Display Adapter Information and Useful Switches
 
+{% raw %}
+
 	Article: Q124267
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -140,3 +142,5 @@ permalink: /kb/124/Q124267/
 	
 	=============================================================================
 	
+
+{% endraw %}

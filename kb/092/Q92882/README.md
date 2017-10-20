@@ -6,6 +6,8 @@ permalink: /kb/092/Q92882/
 
 ## Q92882: WFWG Real Mode Redirector Error Messages Caused by Low Memory
 
+{% raw %}
+
 	Article: Q92882
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -63,3 +65,5 @@ permalink: /kb/092/Q92882/
 	
 	=============================================================================
 	
+
+{% endraw %}

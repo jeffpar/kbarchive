@@ -6,6 +6,8 @@ permalink: /kb/255/Q255682/
 
 ## Q255682: XFOR: Connector for Lotus Notes Does Not Support Encryption
 
+{% raw %}
+
 	Article: Q255682
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -42,3 +44,5 @@ permalink: /kb/255/Q255682/
 	
 	=============================================================================
 	
+
+{% endraw %}

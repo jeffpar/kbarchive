@@ -6,6 +6,8 @@ permalink: /kb/160/Q160170/
 
 ## Q160170: Display Problems Playing Video Clips in Windows
 
+{% raw %}
+
 	Article: Q160170
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition,95
@@ -97,3 +99,5 @@ permalink: /kb/160/Q160170/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188234/
 
 ## Q188234: PRB: Cannot Move Windowless Controls on Form
 
+{% raw %}
+
 	Article: Q188234
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -71,3 +73,5 @@ permalink: /kb/188/Q188234/
 	
 	=============================================================================
 	
+
+{% endraw %}

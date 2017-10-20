@@ -6,6 +6,8 @@ permalink: /kb/184/Q184618/
 
 ## Q184618: Number 2 Automatically Appended to New Virtual Directory Name
 
+{% raw %}
+
 	Article: Q184618
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/184/Q184618/
 	
 	=============================================================================
 	
+
+{% endraw %}

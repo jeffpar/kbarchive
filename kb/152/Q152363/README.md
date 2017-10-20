@@ -6,6 +6,8 @@ permalink: /kb/152/Q152363/
 
 ## Q152363: BUG: Project Manager Context Menu Visible After Program Switch
 
+{% raw %}
+
 	Article: Q152363
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -71,3 +73,5 @@ permalink: /kb/152/Q152363/
 	
 	=============================================================================
 	
+
+{% endraw %}

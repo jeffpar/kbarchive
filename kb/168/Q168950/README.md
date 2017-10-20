@@ -6,6 +6,8 @@ permalink: /kb/168/Q168950/
 
 ## Q168950: WD97: Bookmark at End of Document Lost After Save
 
+{% raw %}
+
 	Article: Q168950
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -62,3 +64,5 @@ permalink: /kb/168/Q168950/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165250/
 
 ## Q165250: WD97: Errors Setting Border LineWidths Via Macro Commands
 
+{% raw %}
+
 	Article: Q165250
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/165/Q165250/
 	
 	=============================================================================
 	
+
+{% endraw %}

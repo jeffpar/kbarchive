@@ -6,6 +6,8 @@ permalink: /kb/107/Q107131/
 
 ## Q107131: WFWG: Creating a New SYSTEM.INI Without Third-Party Drivers
 
+{% raw %}
+
 	Article: Q107131
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -177,3 +179,5 @@ permalink: /kb/107/Q107131/
 	
 	=============================================================================
 	
+
+{% endraw %}

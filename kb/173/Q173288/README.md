@@ -6,6 +6,8 @@ permalink: /kb/173/Q173288/
 
 ## Q173288: PPT: Sample Code to Update Links in a Graph Datasheet
 
+{% raw %}
+
 	Article: Q173288
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 97,98
@@ -156,3 +158,5 @@ permalink: /kb/173/Q173288/
 	
 	=============================================================================
 	
+
+{% endraw %}

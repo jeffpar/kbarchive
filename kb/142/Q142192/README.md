@@ -6,6 +6,8 @@ permalink: /kb/142/Q142192/
 
 ## Q142192: PRB: Abnormal Termination When Instantiate Object from VCX
 
+{% raw %}
+
 	Article: Q142192
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b 5.00
@@ -82,3 +84,5 @@ permalink: /kb/142/Q142192/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166640/
 
 ## Q166640: XFOR: Unable to Delete Read Receipts from Mail Sent to PROFS
 
+{% raw %}
+
 	Article: Q166640
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -91,3 +93,5 @@ permalink: /kb/166/Q166640/
 	
 	=============================================================================
 	
+
+{% endraw %}

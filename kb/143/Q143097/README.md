@@ -6,6 +6,8 @@ permalink: /kb/143/Q143097/
 
 ## Q143097: FP97: HTTP Error Creating Web, Viewing Page w/Image, WebBot
 
+{% raw %}
+
 	Article: Q143097
 	Product(s): Word Front Page
 	Version(s): 
@@ -165,3 +167,5 @@ permalink: /kb/143/Q143097/
 	
 	=============================================================================
 	
+
+{% endraw %}

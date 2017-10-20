@@ -6,6 +6,8 @@ permalink: /kb/183/Q183623/
 
 ## Q183623: WD97: Tabs Are Removed Running Spelling Check
 
+{% raw %}
+
 	Article: Q183623
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/183/Q183623/
 	
 	=============================================================================
 	
+
+{% endraw %}

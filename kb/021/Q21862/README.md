@@ -6,6 +6,8 @@ permalink: /kb/021/Q21862/
 
 ## Q21862: Duplicate Labels Can Only Be Separately Compiled             s
 
+{% raw %}
+
 	Article: Q21862
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -37,3 +39,5 @@ permalink: /kb/021/Q21862/
 	This information needs to be added to Section 9.2.1, "Using Line
 	Labels", on Page 160 of the "Microsoft QuickBASIC Compiler" manual for
 	Versions 2.00, 2.01, and 3.00.
+
+{% endraw %}

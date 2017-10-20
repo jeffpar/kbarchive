@@ -6,6 +6,8 @@ permalink: /kb/126/Q126413/
 
 ## Q126413: Empty Program Groups Created on 16-bit Windows Clients
 
+{% raw %}
+
 	Article: Q126413
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -43,3 +45,5 @@ permalink: /kb/126/Q126413/
 	
 	=============================================================================
 	
+
+{% endraw %}

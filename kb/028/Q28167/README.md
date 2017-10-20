@@ -6,6 +6,8 @@ permalink: /kb/028/Q28167/
 
 ## Q28167: Long Integer Passed to SUB and Modified May Not Return OK
 
+{% raw %}
+
 	Article: Q28167
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -60,3 +62,5 @@ permalink: /kb/028/Q28167/
 	   b& = b& + VAL(a$)
 	   PRINT "subprogram -- after: "; b&
 	END SUB
+
+{% endraw %}

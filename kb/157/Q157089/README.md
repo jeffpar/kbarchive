@@ -6,6 +6,8 @@ permalink: /kb/157/Q157089/
 
 ## Q157089: WD97: Limitations of Converting from WordPerfect 6.x to Word 97
 
+{% raw %}
+
 	Article: Q157089
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -244,3 +246,5 @@ permalink: /kb/157/Q157089/
 	
 	=============================================================================
 	
+
+{% endraw %}

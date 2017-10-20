@@ -6,6 +6,8 @@ permalink: /kb/142/Q142851/
 
 ## Q142851: Internet Explorer FTP Cannot 'PUT' (Upload) Files
 
+{% raw %}
+
 	Article: Q142851
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:3.0,3.01,4.0,4.01; winnt:1.0
@@ -47,3 +49,5 @@ permalink: /kb/142/Q142851/
 	
 	=============================================================================
 	
+
+{% endraw %}

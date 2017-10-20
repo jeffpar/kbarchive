@@ -6,6 +6,8 @@ permalink: /kb/057/Q57580/
 
 ## Q57580: What Features Would You Want for a 1-Byte Data Type in BASIC?
 
+{% raw %}
+
 	Article: Q57580
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -34,3 +36,5 @@ permalink: /kb/057/Q57580/
 	Please send in your comments to Microsoft Product Support
 	(206-454-2030) so we may forward them to the Microsoft BASIC Program
 	Manager. Your input will be greatly appreciated.
+
+{% endraw %}

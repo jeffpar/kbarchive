@@ -6,6 +6,8 @@ permalink: /kb/077/Q77224/
 
 ## Q77224: LapLink and MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q77224
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -50,3 +52,5 @@ permalink: /kb/077/Q77224/
 	
 	=============================================================================
 	
+
+{% endraw %}

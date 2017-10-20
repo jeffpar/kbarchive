@@ -6,6 +6,8 @@ permalink: /kb/231/Q231871/
 
 ## Q231871: Running Microsoft Internet Explorer 5 Comments and Corrections
 
+{% raw %}
+
 	Article: Q231871
 	Product(s): Microsoft Press
 	Version(s): 
@@ -293,3 +295,5 @@ permalink: /kb/231/Q231871/
 	
 	=============================================================================
 	
+
+{% endraw %}

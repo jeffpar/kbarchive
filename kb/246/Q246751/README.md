@@ -6,6 +6,8 @@ permalink: /kb/246/Q246751/
 
 ## Q246751: Cannot Dual Boot Windows 9.x and Windows NT 4.0 on Pavilion 6350
 
+{% raw %}
+
 	Article: Q246751
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95,98; winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/246/Q246751/
 	
 	=============================================================================
 	
+
+{% endraw %}

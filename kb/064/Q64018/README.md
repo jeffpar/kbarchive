@@ -6,6 +6,8 @@ permalink: /kb/064/Q64018/
 
 ## Q64018: DOCERR: Environment Variables in STARTUP.CMD in FORTRAN
 
+{% raw %}
+
 	Article: Q64018
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.0,5.1
@@ -88,3 +90,5 @@ permalink: /kb/064/Q64018/
 	
 	=============================================================================
 	
+
+{% endraw %}

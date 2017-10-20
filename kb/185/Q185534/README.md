@@ -6,6 +6,8 @@ permalink: /kb/185/Q185534/
 
 ## Q185534: MSN Shortcut in Online Services Folder on Desktop Does Not Work
 
+{% raw %}
+
 	Article: Q185534
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.52
@@ -87,3 +89,5 @@ permalink: /kb/185/Q185534/
 	
 	=============================================================================
 	
+
+{% endraw %}

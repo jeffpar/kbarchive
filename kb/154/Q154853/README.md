@@ -6,6 +6,8 @@ permalink: /kb/154/Q154853/
 
 ## Q154853: Intel MMX Technology Support in Visual C++
 
+{% raw %}
+
 	Article: Q154853
 	Product(s): Microsoft C Compiler
 	Version(s): 4.1,4.2,5.0,6.0
@@ -69,3 +71,5 @@ permalink: /kb/154/Q154853/
 	
 	=============================================================================
 	
+
+{% endraw %}

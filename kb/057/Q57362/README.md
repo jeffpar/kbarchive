@@ -6,6 +6,8 @@ permalink: /kb/057/Q57362/
 
 ## Q57362: Variable Length String Passed from BASIC PDS 7.00 to C
 
+{% raw %}
+
 	Article: Q57362
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -51,3 +53,5 @@ permalink: /kb/057/Q57362/
 	%c\n",i,a[i],a[i]);
 	       };
 	 }
+
+{% endraw %}

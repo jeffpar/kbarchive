@@ -6,6 +6,8 @@ permalink: /kb/156/Q156784/
 
 ## Q156784: SMS: Appstart Corrupts New Process Environment on Windows NT
 
+{% raw %}
+
 	Article: Q156784
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -55,3 +57,5 @@ permalink: /kb/156/Q156784/
 	
 	=============================================================================
 	
+
+{% endraw %}

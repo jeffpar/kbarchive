@@ -6,6 +6,8 @@ permalink: /kb/155/Q155059/
 
 ## Q155059: PRB: Need Design-Time License for Microsoft ActiveX Controls
 
+{% raw %}
+
 	Article: Q155059
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/155/Q155059/
 	
 	=============================================================================
 	
+
+{% endraw %}

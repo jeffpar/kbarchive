@@ -6,6 +6,8 @@ permalink: /kb/236/Q236988/
 
 ## Q236988: Err Msg: &quot;Failed Getting User Configuration...&quot; Using TSPROF
 
+{% raw %}
+
 	Article: Q236988
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -70,3 +72,5 @@ permalink: /kb/236/Q236988/
 	
 	=============================================================================
 	
+
+{% endraw %}

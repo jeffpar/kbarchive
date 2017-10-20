@@ -6,6 +6,8 @@ permalink: /kb/060/Q60332/
 
 ## Q60332: INFO: sizeof() Function Returns unsigned Instead of int
 
+{% raw %}
+
 	Article: Q60332
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -70,3 +72,5 @@ permalink: /kb/060/Q60332/
 	
 	=============================================================================
 	
+
+{% endraw %}

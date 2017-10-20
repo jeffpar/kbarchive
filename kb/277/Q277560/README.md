@@ -6,6 +6,8 @@ permalink: /kb/277/Q277560/
 
 ## Q277560: Queries on the Contents Property Do Not return Hits for MSG File
 
+{% raw %}
+
 	Article: Q277560
 	Product(s): Internet Information Server
 	Version(s): 2000,5.0
@@ -68,3 +70,5 @@ permalink: /kb/277/Q277560/
 	
 	=============================================================================
 	
+
+{% endraw %}

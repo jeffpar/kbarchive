@@ -6,6 +6,8 @@ permalink: /kb/192/Q192193/
 
 ## Q192193: Windows Cannot Find USB Drivers on OSR2.1 CD-ROM
 
+{% raw %}
+
 	Article: Q192193
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -58,3 +60,5 @@ permalink: /kb/192/Q192193/
 	
 	=============================================================================
 	
+
+{% endraw %}

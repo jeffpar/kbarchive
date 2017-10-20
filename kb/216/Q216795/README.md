@@ -6,6 +6,8 @@ permalink: /kb/216/Q216795/
 
 ## Q216795: Semaphore Error After Disabling Write Behind Caching
 
+{% raw %}
+
 	Article: Q216795
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -112,3 +114,5 @@ permalink: /kb/216/Q216795/
 	
 	=============================================================================
 	
+
+{% endraw %}

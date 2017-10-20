@@ -6,6 +6,8 @@ permalink: /kb/240/Q240870/
 
 ## Q240870: &quot;Access Denied&quot; When SP5 RRAS Client Access SP5 RRAS Server
 
+{% raw %}
+
 	Article: Q240870
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5
@@ -111,3 +113,5 @@ permalink: /kb/240/Q240870/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/045/Q45146/
 
 ## Q45146: DOCERR: Some Coprocessor Instructions Not Emulated
 
+{% raw %}
+
 	Article: Q45146
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b,6.1,6.11a,6.1a
@@ -107,3 +109,5 @@ permalink: /kb/045/Q45146/
 	
 	=============================================================================
 	
+
+{% endraw %}

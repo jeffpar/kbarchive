@@ -6,6 +6,8 @@ permalink: /kb/271/Q271600/
 
 ## Q271600: XCON: In Certain Conditions MTA Erroneously Deletes Data Files
 
+{% raw %}
+
 	Article: Q271600
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -113,3 +115,5 @@ permalink: /kb/271/Q271600/
 	
 	=============================================================================
 	
+
+{% endraw %}

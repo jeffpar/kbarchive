@@ -6,6 +6,8 @@ permalink: /kb/176/Q176883/
 
 ## Q176883: WD97: Double-Clicking Graphic File in Explorer Opens in IE 4.0
 
+{% raw %}
+
 	Article: Q176883
 	Product(s): Word 97 for Windows
 	Version(s): 4.0
@@ -177,3 +179,5 @@ permalink: /kb/176/Q176883/
 	
 	=============================================================================
 	
+
+{% endraw %}

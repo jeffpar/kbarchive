@@ -6,6 +6,8 @@ permalink: /kb/192/Q192664/
 
 ## Q192664: SMS: How to Disable the PCM Welcome Screen
 
+{% raw %}
+
 	Article: Q192664
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -55,3 +57,5 @@ permalink: /kb/192/Q192664/
 	
 	=============================================================================
 	
+
+{% endraw %}

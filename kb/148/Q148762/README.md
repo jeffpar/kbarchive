@@ -6,6 +6,8 @@ permalink: /kb/148/Q148762/
 
 ## Q148762: FIX: Distribution Disk Setup Fails with Setup Error 279
 
+{% raw %}
+
 	Article: Q148762
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00b
@@ -93,3 +95,5 @@ permalink: /kb/148/Q148762/
 	
 	=============================================================================
 	
+
+{% endraw %}

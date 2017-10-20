@@ -6,6 +6,8 @@ permalink: /kb/152/Q152423/
 
 ## Q152423: Pcmsvc32.exe Does Not Check &#92;MSTEST Directory for Files
 
+{% raw %}
+
 	Article: Q152423
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -63,3 +65,5 @@ permalink: /kb/152/Q152423/
 	
 	=============================================================================
 	
+
+{% endraw %}

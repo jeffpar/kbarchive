@@ -6,6 +6,8 @@ permalink: /kb/177/Q177308/
 
 ## Q177308: XADM: Slow Client Logon Due to Missing Addressing Template
 
+{% raw %}
+
 	Article: Q177308
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0 5.5
@@ -140,3 +142,5 @@ permalink: /kb/177/Q177308/
 	
 	=============================================================================
 	
+
+{% endraw %}

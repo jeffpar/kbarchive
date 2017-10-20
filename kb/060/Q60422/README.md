@@ -6,6 +6,8 @@ permalink: /kb/060/Q60422/
 
 ## Q60422: How to Run the CHRTDEMO.BAS Example Program
 
+{% raw %}
+
 	Article: Q60422
 	Product(s): See article
 	Version(s): 7.00
@@ -123,3 +125,5 @@ permalink: /kb/060/Q60422/
 	'   LINK /EX chrtdemo chrtdem1 chrtdem2, chrtdemo.exe,, chrtdem.lib;
 	'
 	' "CHRTDEMO" can now be run from the command line.
+
+{% endraw %}

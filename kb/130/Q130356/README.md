@@ -6,6 +6,8 @@ permalink: /kb/130/Q130356/
 
 ## Q130356: Baseball 95: American League Schedule Changes Caused By Strike
 
+{% raw %}
+
 	Article: Q130356
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -149,3 +151,5 @@ permalink: /kb/130/Q130356/
 	
 	=============================================================================
 	
+
+{% endraw %}

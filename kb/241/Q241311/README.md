@@ -6,6 +6,8 @@ permalink: /kb/241/Q241311/
 
 ## Q241311: Text After Embedded Object May Be Printed with Blank Characters
 
+{% raw %}
+
 	Article: Q241311
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -105,3 +107,5 @@ permalink: /kb/241/Q241311/
 	
 	=============================================================================
 	
+
+{% endraw %}

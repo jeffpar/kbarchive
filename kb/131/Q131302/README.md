@@ -6,6 +6,8 @@ permalink: /kb/131/Q131302/
 
 ## Q131302: PRB: Visual FoxPro Makes Bigger .EXE Files Than FoxPro 2.6 Did
 
+{% raw %}
+
 	Article: Q131302
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/131/Q131302/
 	
 	=============================================================================
 	
+
+{% endraw %}

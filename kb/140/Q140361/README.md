@@ -6,6 +6,8 @@ permalink: /kb/140/Q140361/
 
 ## Q140361: FIX: Comment_Template Setting Does Not Work in Srcsafe.ini File
 
+{% raw %}
+
 	Article: Q140361
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0
@@ -55,3 +57,5 @@ permalink: /kb/140/Q140361/
 	
 	=============================================================================
 	
+
+{% endraw %}

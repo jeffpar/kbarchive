@@ -6,6 +6,8 @@ permalink: /kb/044/Q44329/
 
 ## Q44329: QuickC: Unresolved _main in dos&#92;crt0.asm
 
+{% raw %}
+
 	Article: Q44329
 	Product(s): See article
 	Version(s): 2.00
@@ -20,3 +22,5 @@ permalink: /kb/044/Q44329/
 	because there is no program (and hence no main function) in the
 	working window. To correct this problem, make sure to copy the source
 	FROM the help window TO the working window.
+
+{% endraw %}

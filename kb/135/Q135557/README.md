@@ -6,6 +6,8 @@ permalink: /kb/135/Q135557/
 
 ## Q135557: Desktop Themes Icons Are Different
 
+{% raw %}
+
 	Article: Q135557
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -43,3 +45,5 @@ permalink: /kb/135/Q135557/
 	
 	=============================================================================
 	
+
+{% endraw %}

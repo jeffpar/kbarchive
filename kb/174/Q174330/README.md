@@ -6,6 +6,8 @@ permalink: /kb/174/Q174330/
 
 ## Q174330: SMSINST: Use of the RESTART Variable in SMS Installer
 
+{% raw %}
+
 	Article: Q174330
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -78,3 +80,5 @@ permalink: /kb/174/Q174330/
 	
 	=============================================================================
 	
+
+{% endraw %}

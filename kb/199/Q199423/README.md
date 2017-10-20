@@ -6,6 +6,8 @@ permalink: /kb/199/Q199423/
 
 ## Q199423: XFOR: Error 403 When Issuing a MODE on an Invisible Chat User
 
+{% raw %}
+
 	Article: Q199423
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -45,3 +47,5 @@ permalink: /kb/199/Q199423/
 	
 	=============================================================================
 	
+
+{% endraw %}

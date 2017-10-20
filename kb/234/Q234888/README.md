@@ -6,6 +6,8 @@ permalink: /kb/234/Q234888/
 
 ## Q234888: Cannot Install &quot;Character Map&quot; in Add/Remove Programs
 
+{% raw %}
+
 	Article: Q234888
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -68,3 +70,5 @@ permalink: /kb/234/Q234888/
 	
 	=============================================================================
 	
+
+{% endraw %}

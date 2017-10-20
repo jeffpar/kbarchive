@@ -6,6 +6,8 @@ permalink: /kb/038/Q38141/
 
 ## Q38141: Hewlett-Packard Font Cartridges &quot;Q&quot; through &quot;Z&quot; Description
 
+{% raw %}
+
 	Article: Q38141
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): 
@@ -130,3 +132,5 @@ permalink: /kb/038/Q38141/
 	
 	=============================================================================
 	
+
+{% endraw %}

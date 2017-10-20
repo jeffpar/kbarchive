@@ -6,6 +6,8 @@ permalink: /kb/198/Q198691/
 
 ## Q198691: SMS: Forcing Changes in RC Settings to 32-bit Clients
 
+{% raw %}
+
 	Article: Q198691
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -76,3 +78,5 @@ permalink: /kb/198/Q198691/
 	
 	=============================================================================
 	
+
+{% endraw %}

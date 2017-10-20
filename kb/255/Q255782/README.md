@@ -6,6 +6,8 @@ permalink: /kb/255/Q255782/
 
 ## Q255782: HOWTO: Use ADO/ADOX to Modify Base Query of Access QueryDef
 
+{% raw %}
+
 	Article: Q255782
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.1,2.1 SP1,2.1 SP2,2.5,5.0,6.0
@@ -112,3 +114,5 @@ permalink: /kb/255/Q255782/
 	
 	=============================================================================
 	
+
+{% endraw %}

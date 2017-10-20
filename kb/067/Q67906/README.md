@@ -6,6 +6,8 @@ permalink: /kb/067/Q67906/
 
 ## Q67906: ASD: NumLock Always On with Enhanced Instrument Panel
 
+{% raw %}
+
 	Article: Q67906
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/067/Q67906/
 	
 	=============================================================================
 	
+
+{% endraw %}

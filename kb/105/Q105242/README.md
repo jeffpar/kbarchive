@@ -6,6 +6,8 @@ permalink: /kb/105/Q105242/
 
 ## Q105242: Brother HL-8e May Need Firmware Update to Print TrueType Fonts
 
+{% raw %}
+
 	Article: Q105242
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -59,3 +61,5 @@ permalink: /kb/105/Q105242/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/071/Q71455/
 
 ## Q71455: HOWTO: Tracking Down Lost System Resources
 
+{% raw %}
+
 	Article: Q71455
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -185,3 +187,5 @@ permalink: /kb/071/Q71455/
 	
 	=============================================================================
 	
+
+{% endraw %}

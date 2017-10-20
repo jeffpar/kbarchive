@@ -6,6 +6,8 @@ permalink: /kb/082/Q82583/
 
 ## Q82583: Sound Blaster Drivers Are for Specific Sound Blaster Cards
 
+{% raw %}
+
 	Article: Q82583
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -83,3 +85,5 @@ permalink: /kb/082/Q82583/
 	
 	=============================================================================
 	
+
+{% endraw %}

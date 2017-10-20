@@ -6,6 +6,8 @@ permalink: /kb/163/Q163589/
 
 ## Q163589: XCLN: Restoring from an OST after Deleting the Mailbox
 
+{% raw %}
+
 	Article: Q163589
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,8.0,8.01,8.02,8.03
@@ -108,3 +110,5 @@ permalink: /kb/163/Q163589/
 	
 	=============================================================================
 	
+
+{% endraw %}

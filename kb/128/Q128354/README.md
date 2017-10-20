@@ -6,6 +6,8 @@ permalink: /kb/128/Q128354/
 
 ## Q128354: Hang or &quot;Read Fault&quot; Accessing Bad Cluster on Compressed Drive
 
+{% raw %}
+
 	Article: Q128354
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:95
@@ -85,3 +87,5 @@ permalink: /kb/128/Q128354/
 	
 	=============================================================================
 	
+
+{% endraw %}

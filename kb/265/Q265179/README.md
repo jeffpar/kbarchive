@@ -6,6 +6,8 @@ permalink: /kb/265/Q265179/
 
 ## Q265179: FP: Java Applet Does Not Work as Exptected in a Shared Border
 
+{% raw %}
+
 	Article: Q265179
 	Product(s): Word Front Page
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/265/Q265179/
 	
 	=============================================================================
 	
+
+{% endraw %}

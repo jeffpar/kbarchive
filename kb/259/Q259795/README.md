@@ -6,6 +6,8 @@ permalink: /kb/259/Q259795/
 
 ## Q259795: XCLN: ErrMsg When You Synchronize Mailbox with OST File
 
+{% raw %}
+
 	Article: Q259795
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/259/Q259795/
 	
 	=============================================================================
 	
+
+{% endraw %}

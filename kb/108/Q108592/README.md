@@ -6,6 +6,8 @@ permalink: /kb/108/Q108592/
 
 ## Q108592: Flight Simulator: Lockup Using Mouse and SoundBlaster on IRQ2
 
+{% raw %}
+
 	Article: Q108592
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -53,3 +55,5 @@ permalink: /kb/108/Q108592/
 	
 	=============================================================================
 	
+
+{% endraw %}

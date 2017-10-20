@@ -6,6 +6,8 @@ permalink: /kb/064/Q64438/
 
 ## Q64438: PRB: CV2206 WARNING: Corrupt Debug OMF Detected in Object...
 
+{% raw %}
+
 	Article: Q64438
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.1
@@ -73,3 +75,5 @@ permalink: /kb/064/Q64438/
 	
 	=============================================================================
 	
+
+{% endraw %}

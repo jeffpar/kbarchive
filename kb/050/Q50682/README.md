@@ -6,6 +6,8 @@ permalink: /kb/050/Q50682/
 
 ## Q50682: FltSim 4.00: Incorrect Straight and Level Instruction
 
+{% raw %}
+
 	Article: Q50682
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/050/Q50682/
 	
 	=============================================================================
 	
+
+{% endraw %}

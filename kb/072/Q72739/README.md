@@ -6,6 +6,8 @@ permalink: /kb/072/Q72739/
 
 ## Q72739: The Difference Between HDBKUP.EXE and BACKUP.EXE
 
+{% raw %}
+
 	Article: Q72739
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -59,3 +61,5 @@ permalink: /kb/072/Q72739/
 	
 	=============================================================================
 	
+
+{% endraw %}

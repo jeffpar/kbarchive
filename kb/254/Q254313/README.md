@@ -6,6 +6,8 @@ permalink: /kb/254/Q254313/
 
 ## Q254313: Err Msg: Active Server Pages Error 'ASP 0203' Invalid Code
 
+{% raw %}
+
 	Article: Q254313
 	Product(s): Internet Information Server
 	Version(s): 2.0,4.0,5.0
@@ -125,3 +127,5 @@ permalink: /kb/254/Q254313/
 	
 	=============================================================================
 	
+
+{% endraw %}

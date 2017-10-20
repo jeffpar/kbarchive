@@ -6,6 +6,8 @@ permalink: /kb/173/Q173518/
 
 ## Q173518: Stop: 0xC000012F -Image File Did Not Have the Correct Format
 
+{% raw %}
+
 	Article: Q173518
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -123,3 +125,5 @@ permalink: /kb/173/Q173518/
 	
 	=============================================================================
 	
+
+{% endraw %}

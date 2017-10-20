@@ -6,6 +6,8 @@ permalink: /kb/030/Q30880/
 
 ## Q30880: FIX(N!&#42;10^2) Gives Different Results in .EXE and QB.EXE
 
+{% raw %}
+
 	Article: Q30880
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -33,3 +35,5 @@ permalink: /kb/030/Q30880/
 	
 	   N! = -21
 	   PRINT FIX(N!) * 10 ^ 2
+
+{% endraw %}

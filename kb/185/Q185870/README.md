@@ -6,6 +6,8 @@ permalink: /kb/185/Q185870/
 
 ## Q185870: SQL Server Insert Error Regarding Column Name Mismatch
 
+{% raw %}
+
 	Article: Q185870
 	Product(s): Internet Information Server
 	Version(s): WINNT:3.0
@@ -66,3 +68,5 @@ permalink: /kb/185/Q185870/
 	
 	=============================================================================
 	
+
+{% endraw %}

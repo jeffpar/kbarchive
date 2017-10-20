@@ -6,6 +6,8 @@ permalink: /kb/029/Q29135/
 
 ## Q29135: Omitting .LIB Extension with BIND Gives U1268 Error
 
+{% raw %}
+
 	Article: Q29135
 	Product(s): See article
 	Version(s): 1.10 1.30 | 1.10 1.30
@@ -36,3 +38,5 @@ permalink: /kb/029/Q29135/
 	
 	Note that BIND version 1.00 displays the same error, but does not
 	display an error number.
+
+{% endraw %}

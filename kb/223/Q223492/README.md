@@ -6,6 +6,8 @@ permalink: /kb/223/Q223492/
 
 ## Q223492: Registry Size Increases After Installing Outlook Express 5
 
+{% raw %}
+
 	Article: Q223492
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/223/Q223492/
 	
 	=============================================================================
 	
+
+{% endraw %}

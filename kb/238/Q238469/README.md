@@ -6,6 +6,8 @@ permalink: /kb/238/Q238469/
 
 ## Q238469: Incorrect Server Name in the MMC after a Name Change
 
+{% raw %}
+
 	Article: Q238469
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/238/Q238469/
 	
 	=============================================================================
 	
+
+{% endraw %}

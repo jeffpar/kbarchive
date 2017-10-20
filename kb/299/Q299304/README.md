@@ -6,6 +6,8 @@ permalink: /kb/299/Q299304/
 
 ## Q299304: XFOR: Random Inbound Messages Appear with Empty Fields
 
+{% raw %}
+
 	Article: Q299304
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -68,3 +70,5 @@ permalink: /kb/299/Q299304/
 	
 	=============================================================================
 	
+
+{% endraw %}

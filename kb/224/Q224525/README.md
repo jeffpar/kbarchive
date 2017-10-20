@@ -6,6 +6,8 @@ permalink: /kb/224/Q224525/
 
 ## Q224525: PRB: SQL Server Upsizing Wizard Padding Char and VarChar Fields
 
+{% raw %}
+
 	Article: Q224525
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0
@@ -203,3 +205,5 @@ permalink: /kb/224/Q224525/
 	
 	=============================================================================
 	
+
+{% endraw %}

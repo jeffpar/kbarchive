@@ -6,6 +6,8 @@ permalink: /kb/160/Q160911/
 
 ## Q160911: FIX: &quot;Mouse Click Middle&quot; Command Produces Error Message
 
+{% raw %}
+
 	Article: Q160911
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0
@@ -58,3 +60,5 @@ permalink: /kb/160/Q160911/
 	
 	=============================================================================
 	
+
+{% endraw %}

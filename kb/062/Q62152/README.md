@@ -6,6 +6,8 @@ permalink: /kb/062/Q62152/
 
 ## Q62152: Gates Learjet 25G Performance Specifications
 
+{% raw %}
+
 	Article: Q62152
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/062/Q62152/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/236/Q236615/
 
 ## Q236615: HOWTO: Automate MapPoint 2000 from Visual Basic
 
+{% raw %}
+
 	Article: Q236615
 	Product(s): Microsoft Automap
 	Version(s): 1.0,5.0,6.0
@@ -103,3 +105,5 @@ permalink: /kb/236/Q236615/
 	
 	=============================================================================
 	
+
+{% endraw %}

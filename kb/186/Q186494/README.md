@@ -6,6 +6,8 @@ permalink: /kb/186/Q186494/
 
 ## Q186494: Event ID 517 Not Created When Security Log Is Cleared
 
+{% raw %}
+
 	Article: Q186494
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/186/Q186494/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117902/
 
 ## Q117902: FIX: D2030 Internal Compiler Error with /Ox
 
+{% raw %}
+
 	Article: Q117902
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -79,3 +81,5 @@ permalink: /kb/117/Q117902/
 	
 	=============================================================================
 	
+
+{% endraw %}

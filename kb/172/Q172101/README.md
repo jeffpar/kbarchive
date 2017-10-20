@@ -6,6 +6,8 @@ permalink: /kb/172/Q172101/
 
 ## Q172101: PRB: &quot;Data Type Conversion Error&quot; When Using a Data Control
 
+{% raw %}
+
 	Article: Q172101
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/172/Q172101/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180953/
 
 ## Q180953: &quot;Missing Component&quot; When Applying Service Pack
 
+{% raw %}
+
 	Article: Q180953
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1,3.0 SP2
@@ -72,3 +74,5 @@ permalink: /kb/180/Q180953/
 	
 	=============================================================================
 	
+
+{% endraw %}

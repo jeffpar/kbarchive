@@ -6,6 +6,8 @@ permalink: /kb/143/Q143146/
 
 ## Q143146: Error Msg: &quot;This FTP Server Does Not Support Passive Mode&quot;
 
+{% raw %}
+
 	Article: Q143146
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -67,3 +69,5 @@ permalink: /kb/143/Q143146/
 	
 	=============================================================================
 	
+
+{% endraw %}

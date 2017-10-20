@@ -6,6 +6,8 @@ permalink: /kb/186/Q186026/
 
 ## Q186026: Baseball 3D: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q186026
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/186/Q186026/
 	
 	=============================================================================
 	
+
+{% endraw %}

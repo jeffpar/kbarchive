@@ -6,6 +6,8 @@ permalink: /kb/157/Q157725/
 
 ## Q157725: PRB: Min and Max Buttons Disappear when ControlBox = .F.
 
+{% raw %}
+
 	Article: Q157725
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -74,3 +76,5 @@ permalink: /kb/157/Q157725/
 	
 	=============================================================================
 	
+
+{% endraw %}

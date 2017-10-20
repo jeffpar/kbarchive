@@ -6,6 +6,8 @@ permalink: /kb/153/Q153795/
 
 ## Q153795: Encarta 97 Encyclopedia: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q153795
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -81,3 +83,5 @@ permalink: /kb/153/Q153795/
 	
 	=============================================================================
 	
+
+{% endraw %}

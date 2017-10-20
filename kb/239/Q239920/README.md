@@ -6,6 +6,8 @@ permalink: /kb/239/Q239920/
 
 ## Q239920: XFOR: Connect-ME SNADS Gateway Stops Working with Dr. Watson
 
+{% raw %}
+
 	Article: Q239920
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -72,3 +74,5 @@ permalink: /kb/239/Q239920/
 	
 	=============================================================================
 	
+
+{% endraw %}

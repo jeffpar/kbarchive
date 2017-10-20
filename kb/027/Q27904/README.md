@@ -6,6 +6,8 @@ permalink: /kb/027/Q27904/
 
 ## Q27904: Bound EXE Must Run on DOS 2.10 Default Drive
 
+{% raw %}
+
 	Article: Q27904
 	Product(s): See article
 	Version(s): 6.00 6.00b | 6.00 6.00b
@@ -37,3 +39,5 @@ permalink: /kb/027/Q27904/
 	Versions 3.x.
 	
 	This information is taken from the README.DOC disk file.
+
+{% endraw %}

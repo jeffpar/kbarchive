@@ -6,6 +6,8 @@ permalink: /kb/047/Q47159/
 
 ## Q47159: Scaletitle Does Not Display Category Axis
 
+{% raw %}
+
 	Article: Q47159
 	Product(s): See article
 	Version(s): 2.00
@@ -38,3 +40,5 @@ permalink: /kb/047/Q47159/
 	To unconditionally display axis titles, the variable "axistitle"
 	should be used instead. The chart functions display these axis titles
 	whether the axis is of numeric value type or string category type.
+
+{% endraw %}

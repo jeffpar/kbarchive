@@ -6,6 +6,8 @@ permalink: /kb/157/Q157053/
 
 ## Q157053: PRB: DisabledBackColor Property of a Label Defaults to Gray
 
+{% raw %}
+
 	Article: Q157053
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -75,3 +77,5 @@ permalink: /kb/157/Q157053/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/281/Q281320/
 
 ## Q281320: Err Msg: Setup Was Unable to Download the Required Components...
 
+{% raw %}
+
 	Article: Q281320
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,5,5.5,5.5 Service Pack 1
@@ -81,3 +83,5 @@ permalink: /kb/281/Q281320/
 	
 	=============================================================================
 	
+
+{% endraw %}

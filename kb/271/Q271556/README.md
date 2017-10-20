@@ -6,6 +6,8 @@ permalink: /kb/271/Q271556/
 
 ## Q271556: SMS: Advertisements Not Sent If IBM DB2 Installed
 
+{% raw %}
+
 	Article: Q271556
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -81,3 +83,5 @@ permalink: /kb/271/Q271556/
 	
 	=============================================================================
 	
+
+{% endraw %}

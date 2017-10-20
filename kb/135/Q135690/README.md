@@ -6,6 +6,8 @@ permalink: /kb/135/Q135690/
 
 ## Q135690: SMS: PDF For Office 4.3 Does Not Support Office 4.3c
 
+{% raw %}
+
 	Article: Q135690
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -57,3 +59,5 @@ permalink: /kb/135/Q135690/
 	
 	=============================================================================
 	
+
+{% endraw %}

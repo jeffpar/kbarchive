@@ -6,6 +6,8 @@ permalink: /kb/271/Q271618/
 
 ## Q271618: Cannot Open Research Organizer Files in Encarta Researcher
 
+{% raw %}
+
 	Article: Q271618
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/271/Q271618/
 	
 	=============================================================================
 	
+
+{% endraw %}

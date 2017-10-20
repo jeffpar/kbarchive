@@ -6,6 +6,8 @@ permalink: /kb/149/Q149270/
 
 ## Q149270: How Routers Handle IPX Type 20 NetBIOS Packets
 
+{% raw %}
+
 	Article: Q149270
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -71,3 +73,5 @@ permalink: /kb/149/Q149270/
 	
 	=============================================================================
 	
+
+{% endraw %}

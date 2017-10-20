@@ -6,6 +6,8 @@ permalink: /kb/152/Q152879/
 
 ## Q152879: Schedule+ 7.0 is Unable to Write to Schedule+ 1.0 CAL
 
+{% raw %}
+
 	Article: Q152879
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/152/Q152879/
 	
 	=============================================================================
 	
+
+{% endraw %}

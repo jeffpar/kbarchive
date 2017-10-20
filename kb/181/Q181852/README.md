@@ -6,6 +6,8 @@ permalink: /kb/181/Q181852/
 
 ## Q181852: PRB: Program Generates Error 429 on First Reference to RDO
 
+{% raw %}
+
 	Article: Q181852
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -69,3 +71,5 @@ permalink: /kb/181/Q181852/
 	
 	=============================================================================
 	
+
+{% endraw %}

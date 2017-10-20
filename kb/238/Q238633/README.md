@@ -6,6 +6,8 @@ permalink: /kb/238/Q238633/
 
 ## Q238633: SMS: Unable to Create Collection Based on Direct Rule Membership
 
+{% raw %}
+
 	Article: Q238633
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -135,3 +137,5 @@ permalink: /kb/238/Q238633/
 	
 	=============================================================================
 	
+
+{% endraw %}

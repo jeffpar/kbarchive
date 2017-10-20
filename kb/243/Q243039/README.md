@@ -6,6 +6,8 @@ permalink: /kb/243/Q243039/
 
 ## Q243039: How to Perform a Clean Boot in Windows 95
 
+{% raw %}
+
 	Article: Q243039
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -368,3 +370,5 @@ permalink: /kb/243/Q243039/
 	
 	=============================================================================
 	
+
+{% endraw %}

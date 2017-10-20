@@ -6,6 +6,8 @@ permalink: /kb/087/Q87670/
 
 ## Q87670: FoxBASE+ Error Messages: I - M
 
+{% raw %}
+
 	Article: Q87670
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.17
@@ -166,3 +168,5 @@ permalink: /kb/087/Q87670/
 	
 	=============================================================================
 	
+
+{% endraw %}

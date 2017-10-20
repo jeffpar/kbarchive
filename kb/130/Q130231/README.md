@@ -6,6 +6,8 @@ permalink: /kb/130/Q130231/
 
 ## Q130231: PC NTMMTA: External Command Line Options Not Used with NT MMTA
 
+{% raw %}
+
 	Article: Q130231
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -62,3 +64,5 @@ permalink: /kb/130/Q130231/
 	
 	=============================================================================
 	
+
+{% endraw %}

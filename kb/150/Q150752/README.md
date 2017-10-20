@@ -6,6 +6,8 @@ permalink: /kb/150/Q150752/
 
 ## Q150752: HOWTO: Skip the Validation of a Control and Exit the Form
 
+{% raw %}
+
 	Article: Q150752
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/150/Q150752/
 	
 	=============================================================================
 	
+
+{% endraw %}

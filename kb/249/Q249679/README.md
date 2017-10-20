@@ -6,6 +6,8 @@ permalink: /kb/249/Q249679/
 
 ## Q249679: XCLN: Word Document Becomes Mail Message in Outlook 2000
 
+{% raw %}
+
 	Article: Q249679
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000
@@ -61,3 +63,5 @@ permalink: /kb/249/Q249679/
 	
 	=============================================================================
 	
+
+{% endraw %}

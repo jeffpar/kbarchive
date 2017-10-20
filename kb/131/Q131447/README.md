@@ -6,6 +6,8 @@ permalink: /kb/131/Q131447/
 
 ## Q131447: HOWTO: Use PHYSICAL Command to Find SourceSafe Database File
 
+{% raw %}
+
 	Article: Q131447
 	Product(s): Microsoft SourceSafe
 	Version(s): MS-DOS:3.04,3.1; WINDOWS:3.04,3.1,4.0,5.0,6.0; winnt:3.04,3.1
@@ -59,3 +61,5 @@ permalink: /kb/131/Q131447/
 	
 	=============================================================================
 	
+
+{% endraw %}

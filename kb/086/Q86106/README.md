@@ -6,6 +6,8 @@ permalink: /kb/086/Q86106/
 
 ## Q86106: PROFS: Which Systems the Gateway Provides Connectivity To
 
+{% raw %}
+
 	Article: Q86106
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -44,3 +46,5 @@ permalink: /kb/086/Q86106/
 	
 	=============================================================================
 	
+
+{% endraw %}

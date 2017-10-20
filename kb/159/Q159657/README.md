@@ -6,6 +6,8 @@ permalink: /kb/159/Q159657/
 
 ## Q159657: HOWTO: Capture the Parameters from an SQL Procedure with RDO
 
+{% raw %}
+
 	Article: Q159657
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/159/Q159657/
 	
 	=============================================================================
 	
+
+{% endraw %}

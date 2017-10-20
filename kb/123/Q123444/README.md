@@ -6,6 +6,8 @@ permalink: /kb/123/Q123444/
 
 ## Q123444: UNC Connection Generates Error Message on Shutdown
 
+{% raw %}
+
 	Article: Q123444
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/123/Q123444/
 	
 	=============================================================================
 	
+
+{% endraw %}

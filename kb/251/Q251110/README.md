@@ -6,6 +6,8 @@ permalink: /kb/251/Q251110/
 
 ## Q251110: FS2000: Distorted or Incorrect Text in Certain Aircraft Gauges
 
+{% raw %}
+
 	Article: Q251110
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -76,3 +78,5 @@ permalink: /kb/251/Q251110/
 	
 	=============================================================================
 	
+
+{% endraw %}

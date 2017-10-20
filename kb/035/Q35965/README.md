@@ -6,6 +6,8 @@ permalink: /kb/035/Q35965/
 
 ## Q35965: Which BASIC Versions Can CALL C, FORTRAN, Pascal, MASM
 
+{% raw %}
+
 	Article: Q35965
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -105,3 +107,5 @@ permalink: /kb/035/Q35965/
 	differently than CALL. SHELL invokes another copy of the DOS
 	COMMAND.COM command processor before running a requested executable
 	program.
+
+{% endraw %}

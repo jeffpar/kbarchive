@@ -6,6 +6,8 @@ permalink: /kb/152/Q152395/
 
 ## Q152395: HOWTO: Using Setup Wizard to Distribute VFP App on CD-ROM
 
+{% raw %}
+
 	Article: Q152395
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -128,3 +130,5 @@ permalink: /kb/152/Q152395/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/063/Q63722/
 
 ## Q63722: &quot;C For Yourself&quot; Documentation Error
 
+{% raw %}
+
 	Article: Q63722
 	Product(s): See article
 	Version(s): 2.50
@@ -29,3 +31,5 @@ permalink: /kb/063/Q63722/
 	
 	Note that the backslashes can be omitted if you put the #define all on
 	one line.
+
+{% endraw %}

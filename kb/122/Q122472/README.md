@@ -6,6 +6,8 @@ permalink: /kb/122/Q122472/
 
 ## Q122472: Encarta 95-96: Summary of Video Issues and Resolutions
 
+{% raw %}
+
 	Article: Q122472
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -119,3 +121,5 @@ permalink: /kb/122/Q122472/
 	
 	=============================================================================
 	
+
+{% endraw %}

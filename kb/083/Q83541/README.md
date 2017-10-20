@@ -6,6 +6,8 @@ permalink: /kb/083/Q83541/
 
 ## Q83541: Mac Fax: FaxGate Gateway Error Messages
 
+{% raw %}
+
 	Article: Q83541
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.x,3.0
@@ -61,3 +63,5 @@ permalink: /kb/083/Q83541/
 	
 	=============================================================================
 	
+
+{% endraw %}

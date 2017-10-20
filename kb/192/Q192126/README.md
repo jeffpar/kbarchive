@@ -6,6 +6,8 @@ permalink: /kb/192/Q192126/
 
 ## Q192126: Add Workstation Fails with RestrictAnonymous
 
+{% raw %}
+
 	Article: Q192126
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -78,3 +80,5 @@ permalink: /kb/192/Q192126/
 	
 	=============================================================================
 	
+
+{% endraw %}

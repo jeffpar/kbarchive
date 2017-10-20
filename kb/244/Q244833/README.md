@@ -6,6 +6,8 @@ permalink: /kb/244/Q244833/
 
 ## Q244833: XCLN: Synchronization Interval Displayed As Large Number
 
+{% raw %}
+
 	Article: Q244833
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:
@@ -71,3 +73,5 @@ permalink: /kb/244/Q244833/
 	
 	=============================================================================
 	
+
+{% endraw %}

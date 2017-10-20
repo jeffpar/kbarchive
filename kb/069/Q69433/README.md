@@ -6,6 +6,8 @@ permalink: /kb/069/Q69433/
 
 ## Q69433: Piggyback Cards Disable Standard VGA on Paradise Professional
 
+{% raw %}
+
 	Article: Q69433
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -50,3 +52,5 @@ permalink: /kb/069/Q69433/
 	
 	=============================================================================
 	
+
+{% endraw %}

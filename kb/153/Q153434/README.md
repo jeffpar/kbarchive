@@ -6,6 +6,8 @@ permalink: /kb/153/Q153434/
 
 ## Q153434: MSB Dinosaurs: Minimum System Requirements for Windows
 
+{% raw %}
+
 	Article: Q153434
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -61,3 +63,5 @@ permalink: /kb/153/Q153434/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/074/Q74882/
 
 ## Q74882: MASM MUL Operation Accepts Only One Operand
 
+{% raw %}
+
 	Article: Q74882
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.01a,5.1,6.0
@@ -61,3 +63,5 @@ permalink: /kb/074/Q74882/
 	
 	=============================================================================
 	
+
+{% endraw %}

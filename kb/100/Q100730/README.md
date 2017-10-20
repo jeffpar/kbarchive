@@ -6,6 +6,8 @@ permalink: /kb/100/Q100730/
 
 ## Q100730: Creating a Custom Separator Page for PCL5 Printers
 
+{% raw %}
+
 	Article: Q100730
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -83,3 +85,5 @@ permalink: /kb/100/Q100730/
 	
 	=============================================================================
 	
+
+{% endraw %}

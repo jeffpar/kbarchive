@@ -6,6 +6,8 @@ permalink: /kb/235/Q235899/
 
 ## Q235899: ScardGetStatusChange() API Causes Deadlock in Smart Card RM
 
+{% raw %}
+
 	Article: Q235899
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -108,3 +110,5 @@ permalink: /kb/235/Q235899/
 	
 	=============================================================================
 	
+
+{% endraw %}

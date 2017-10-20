@@ -6,6 +6,8 @@ permalink: /kb/119/Q119931/
 
 ## Q119931: Space: Setup Fails on Disk 2
 
+{% raw %}
+
 	Article: Q119931
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -51,3 +53,5 @@ permalink: /kb/119/Q119931/
 	
 	=============================================================================
 	
+
+{% endraw %}

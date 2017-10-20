@@ -6,6 +6,8 @@ permalink: /kb/113/Q113403/
 
 ## Q113403: Drive Fails with Conner CFP 1060S Fixed Disk &amp; Firmware 1823
 
+{% raw %}
+
 	Article: Q113403
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -41,3 +43,5 @@ permalink: /kb/113/Q113403/
 	
 	=============================================================================
 	
+
+{% endraw %}

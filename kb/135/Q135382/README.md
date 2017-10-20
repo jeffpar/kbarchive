@@ -6,6 +6,8 @@ permalink: /kb/135/Q135382/
 
 ## Q135382: ADT/ODE: File Compression Ratio Less Than Other Programs
 
+{% raw %}
+
 	Article: Q135382
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0,7.0,97; :
@@ -61,3 +63,5 @@ permalink: /kb/135/Q135382/
 	
 	=============================================================================
 	
+
+{% endraw %}

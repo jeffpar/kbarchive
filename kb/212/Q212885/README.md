@@ -6,6 +6,8 @@ permalink: /kb/212/Q212885/
 
 ## Q212885: INFO: VBCE: Samples Included with the Windows CE Toolkit for VB6
 
+{% raw %}
+
 	Article: Q212885
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -165,3 +167,5 @@ permalink: /kb/212/Q212885/
 	
 	=============================================================================
 	
+
+{% endraw %}

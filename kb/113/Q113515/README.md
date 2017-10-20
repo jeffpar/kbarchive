@@ -6,6 +6,8 @@ permalink: /kb/113/Q113515/
 
 ## Q113515: MS DLC over ODI May Cause GP Faults in WFWG 3.11
 
+{% raw %}
+
 	Article: Q113515
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -64,3 +66,5 @@ permalink: /kb/113/Q113515/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138629/
 
 ## Q138629: How Windows NT 3.51 Handles Compression of Paging Files
 
+{% raw %}
+
 	Article: Q138629
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -56,3 +58,5 @@ permalink: /kb/138/Q138629/
 	
 	=============================================================================
 	
+
+{% endraw %}

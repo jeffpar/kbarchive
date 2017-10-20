@@ -6,6 +6,8 @@ permalink: /kb/081/Q81322/
 
 ## Q81322: Renaming Compile Results Window with a PWB Extension
 
+{% raw %}
+
 	Article: Q81322
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1,2.0
@@ -65,11 +67,11 @@ permalink: /kb/081/Q81322/
 	                   flagType fMeta);
 	
 	  /* switch description table (required for an extension) */ 
-	  struct swiDesc swiTable[] = { { NULL,NULL,0} };
+	  struct swiDesc swiTable[] = { { NULL,NULL,0}};
 	
 	  /* command description table ( required for a pwb extension) */ 
 	  struct cmdDesc cmdTable[] ={ { "funcname", funcname, 0 , NOARG},
-	                                  { NULL, NULL, 0, 0} };
+	                                  { NULL, NULL, 0, 0}};
 	
 	  /* function that PWB calls when loading the extension */ 
 	  void EXTERNAL WhenLoaded(void)
@@ -99,3 +101,5 @@ permalink: /kb/081/Q81322/
 	
 	=============================================================================
 	
+
+{% endraw %}

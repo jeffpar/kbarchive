@@ -6,6 +6,8 @@ permalink: /kb/141/Q141150/
 
 ## Q141150: Streets 4.0: Display Corruption with Content Dragging Feature
 
+{% raw %}
+
 	Article: Q141150
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:4.0,95,98
@@ -57,3 +59,5 @@ permalink: /kb/141/Q141150/
 	
 	=============================================================================
 	
+
+{% endraw %}

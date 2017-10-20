@@ -6,6 +6,8 @@ permalink: /kb/186/Q186358/
 
 ## Q186358: How to Enable TAPI 2.1 in Windows NT 4.0 with Service Pack 4
 
+{% raw %}
+
 	Article: Q186358
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -74,3 +76,5 @@ permalink: /kb/186/Q186358/
 	
 	=============================================================================
 	
+
+{% endraw %}

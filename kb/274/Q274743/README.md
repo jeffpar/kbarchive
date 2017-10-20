@@ -6,6 +6,8 @@ permalink: /kb/274/Q274743/
 
 ## Q274743: SMS: SQL Error 3023 in Collection Evaluator Log
 
+{% raw %}
+
 	Article: Q274743
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -80,3 +82,5 @@ permalink: /kb/274/Q274743/
 	
 	=============================================================================
 	
+
+{% endraw %}

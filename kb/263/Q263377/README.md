@@ -6,6 +6,8 @@ permalink: /kb/263/Q263377/
 
 ## Q263377: Sitecomp.exe May Generate Access Violations After Site Install
 
+{% raw %}
+
 	Article: Q263377
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -112,3 +114,5 @@ permalink: /kb/263/Q263377/
 	
 	=============================================================================
 	
+
+{% endraw %}

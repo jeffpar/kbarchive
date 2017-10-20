@@ -6,6 +6,8 @@ permalink: /kb/133/Q133075/
 
 ## Q133075: Disabling Adaptec SCSI Chip in CMOS Hangs Windows 95
 
+{% raw %}
+
 	Article: Q133075
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/133/Q133075/
 	
 	=============================================================================
 	
+
+{% endraw %}

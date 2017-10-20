@@ -6,6 +6,8 @@ permalink: /kb/162/Q162680/
 
 ## Q162680: XCON: SMTP Messages Contain Encapsulated X.400 Addresses
 
+{% raw %}
+
 	Article: Q162680
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -59,3 +61,5 @@ permalink: /kb/162/Q162680/
 	
 	=============================================================================
 	
+
+{% endraw %}

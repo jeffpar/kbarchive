@@ -6,6 +6,8 @@ permalink: /kb/192/Q192982/
 
 ## Q192982: XFOR: Internet Mail Service Does Not Allow Auto Forwarded Msgs
 
+{% raw %}
+
 	Article: Q192982
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -116,3 +118,5 @@ permalink: /kb/192/Q192982/
 	
 	=============================================================================
 	
+
+{% endraw %}

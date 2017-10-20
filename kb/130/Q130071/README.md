@@ -6,6 +6,8 @@ permalink: /kb/130/Q130071/
 
 ## Q130071: Setup Detects Disk Errors but SCANDISK /ALL Does Not
 
+{% raw %}
+
 	Article: Q130071
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/130/Q130071/
 	
 	=============================================================================
 	
+
+{% endraw %}

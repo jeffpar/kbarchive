@@ -6,6 +6,8 @@ permalink: /kb/214/Q214798/
 
 ## Q214798: Cannot Print After Installing HP JetAdmin Print Monitor
 
+{% raw %}
+
 	Article: Q214798
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -88,3 +90,5 @@ permalink: /kb/214/Q214798/
 	
 	=============================================================================
 	
+
+{% endraw %}

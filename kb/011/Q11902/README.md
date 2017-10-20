@@ -6,6 +6,8 @@ permalink: /kb/011/Q11902/
 
 ## Q11902: PRB: Assume Directive Not Displayed
 
+{% raw %}
+
 	Article: Q11902
 	Product(s): Microsoft Macro Assembler
 	Version(s): 1.25,1.27,3.0x,4.0,5.0,5.1,6.0
@@ -58,3 +60,5 @@ permalink: /kb/011/Q11902/
 	
 	=============================================================================
 	
+
+{% endraw %}

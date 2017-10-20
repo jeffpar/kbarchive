@@ -6,6 +6,8 @@ permalink: /kb/083/Q83378/
 
 ## Q83378: IdleWild Screen Saver and the Always On Top Command
 
+{% raw %}
+
 	Article: Q83378
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/083/Q83378/
 	
 	=============================================================================
 	
+
+{% endraw %}

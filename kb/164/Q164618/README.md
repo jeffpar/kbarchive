@@ -6,6 +6,8 @@ permalink: /kb/164/Q164618/
 
 ## Q164618: WD97: Conversion of Bullets and Numbering
 
+{% raw %}
+
 	Article: Q164618
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -117,3 +119,5 @@ permalink: /kb/164/Q164618/
 	
 	=============================================================================
 	
+
+{% endraw %}

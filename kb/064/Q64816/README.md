@@ -6,6 +6,8 @@ permalink: /kb/064/Q64816/
 
 ## Q64816: Mouse Hangs with Mouse Loaded in Multiple Virtual Machines
 
+{% raw %}
+
 	Article: Q64816
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -76,3 +78,5 @@ permalink: /kb/064/Q64816/
 	
 	=============================================================================
 	
+
+{% endraw %}

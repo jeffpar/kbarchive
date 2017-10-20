@@ -6,6 +6,8 @@ permalink: /kb/257/Q257771/
 
 ## Q257771: FS2000: Computer Stops Responding During Game Play
 
+{% raw %}
+
 	Article: Q257771
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -76,3 +78,5 @@ permalink: /kb/257/Q257771/
 	
 	=============================================================================
 	
+
+{% endraw %}

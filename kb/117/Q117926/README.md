@@ -6,6 +6,8 @@ permalink: /kb/117/Q117926/
 
 ## Q117926: MAC Cinemania: Two Unnecessary Items Left After Reinstallation
 
+{% raw %}
+
 	Article: Q117926
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -46,3 +48,5 @@ permalink: /kb/117/Q117926/
 	
 	=============================================================================
 	
+
+{% endraw %}

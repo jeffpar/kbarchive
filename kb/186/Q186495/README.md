@@ -6,6 +6,8 @@ permalink: /kb/186/Q186495/
 
 ## Q186495: WOW Leak Launching Many Instances of a 16-Bit Application
 
+{% raw %}
+
 	Article: Q186495
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/186/Q186495/
 	
 	=============================================================================
 	
+
+{% endraw %}

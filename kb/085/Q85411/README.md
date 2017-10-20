@@ -6,6 +6,8 @@ permalink: /kb/085/Q85411/
 
 ## Q85411: MS-DOS 5.0a Upgrade README.TXT: Documentation
 
+{% raw %}
+
 	Article: Q85411
 	Product(s): Microsoft Disk Operating System
 	Version(s): 5.0a
@@ -124,3 +126,5 @@ permalink: /kb/085/Q85411/
 	
 	=============================================================================
 	
+
+{% endraw %}

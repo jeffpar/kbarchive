@@ -6,6 +6,8 @@ permalink: /kb/198/Q198819/
 
 ## Q198819: Chat: CREATE Command Does Not Accept Capital Letters for Modes
 
+{% raw %}
+
 	Article: Q198819
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -64,3 +66,5 @@ permalink: /kb/198/Q198819/
 	
 	=============================================================================
 	
+
+{% endraw %}

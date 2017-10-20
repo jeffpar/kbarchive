@@ -6,6 +6,8 @@ permalink: /kb/271/Q271459/
 
 ## Q271459: IIS 4.0: Can't Extract Data from Access on Netware 5 Server
 
+{% raw %}
+
 	Article: Q271459
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -159,3 +161,5 @@ permalink: /kb/271/Q271459/
 	
 	=============================================================================
 	
+
+{% endraw %}

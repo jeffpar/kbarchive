@@ -6,6 +6,8 @@ permalink: /kb/260/Q260247/
 
 ## Q260247: XFOR: Message Looping with Exchange Server on a Windows 2000 DC
 
+{% raw %}
+
 	Article: Q260247
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -143,3 +145,5 @@ permalink: /kb/260/Q260247/
 	
 	=============================================================================
 	
+
+{% endraw %}

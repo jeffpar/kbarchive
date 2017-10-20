@@ -6,6 +6,8 @@ permalink: /kb/070/Q70207/
 
 ## Q70207: Cannot ALT+ESC from Works Under Windows 3.0 in Standard Mode
 
+{% raw %}
+
 	Article: Q70207
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -44,3 +46,5 @@ permalink: /kb/070/Q70207/
 	
 	=============================================================================
 	
+
+{% endraw %}

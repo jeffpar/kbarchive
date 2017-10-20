@@ -6,6 +6,8 @@ permalink: /kb/275/Q275444/
 
 ## Q275444: INFO: Online Resources for Visual FoxPro Support
 
+{% raw %}
+
 	Article: Q275444
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0,7.0
@@ -82,3 +84,5 @@ permalink: /kb/275/Q275444/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153637/
 
 ## Q153637: Remove Package From Server Job Fails if Files Are in Use
 
+{% raw %}
+
 	Article: Q153637
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -54,3 +56,5 @@ permalink: /kb/153/Q153637/
 	
 	=============================================================================
 	
+
+{% endraw %}

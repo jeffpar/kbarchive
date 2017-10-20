@@ -6,6 +6,8 @@ permalink: /kb/074/Q74828/
 
 ## Q74828: MIRROR: Unrecognized DOS INT 25h/26h Handler
 
+{% raw %}
+
 	Article: Q74828
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -55,3 +57,5 @@ permalink: /kb/074/Q74828/
 	
 	=============================================================================
 	
+
+{% endraw %}

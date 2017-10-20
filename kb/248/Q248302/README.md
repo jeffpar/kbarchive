@@ -6,6 +6,8 @@ permalink: /kb/248/Q248302/
 
 ## Q248302: Fighter Ace II: Rudder on Logitech WingMan Does Not Function
 
+{% raw %}
+
 	Article: Q248302
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/248/Q248302/
 	
 	=============================================================================
 	
+
+{% endraw %}

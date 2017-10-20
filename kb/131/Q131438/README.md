@@ -6,6 +6,8 @@ permalink: /kb/131/Q131438/
 
 ## Q131438: Mac Encarta 95: Read Me Contents
 
+{% raw %}
+
 	Article: Q131438
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -480,3 +482,5 @@ permalink: /kb/131/Q131438/
 	
 	=============================================================================
 	
+
+{% endraw %}

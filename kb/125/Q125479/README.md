@@ -6,6 +6,8 @@ permalink: /kb/125/Q125479/
 
 ## Q125479: MONITOR2.INF Resolution Does Not Match Hardware Spec
 
+{% raw %}
+
 	Article: Q125479
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/125/Q125479/
 	
 	=============================================================================
 	
+
+{% endraw %}

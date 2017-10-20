@@ -6,6 +6,8 @@ permalink: /kb/136/Q136851/
 
 ## Q136851: Cases Where Failed ALTER TABLE Doesn't Revert
 
+{% raw %}
+
 	Article: Q136851
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/136/Q136851/
 	
 	=============================================================================
 	
+
+{% endraw %}

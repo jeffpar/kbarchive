@@ -6,6 +6,8 @@ permalink: /kb/253/Q253009/
 
 ## Q253009: Using CD-ROM During Ejection Sequence Causes Computer to Hang
 
+{% raw %}
+
 	Article: Q253009
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/253/Q253009/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/288/Q288281/
 
 ## Q288281: Changing The Name That Appears On E-mail And Instant Messages
 
+{% raw %}
+
 	Article: Q288281
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -66,3 +68,5 @@ permalink: /kb/288/Q288281/
 	
 	=============================================================================
 	
+
+{% endraw %}

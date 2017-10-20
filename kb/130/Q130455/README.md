@@ -6,6 +6,8 @@ permalink: /kb/130/Q130455/
 
 ## Q130455: PRB: Long Variable Names from 2.x Not Found in Visual FoxPro
 
+{% raw %}
+
 	Article: Q130455
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -68,3 +70,5 @@ permalink: /kb/130/Q130455/
 	
 	=============================================================================
 	
+
+{% endraw %}

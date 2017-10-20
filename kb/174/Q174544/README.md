@@ -6,6 +6,8 @@ permalink: /kb/174/Q174544/
 
 ## Q174544: PJL Control Commands May Cause Postscript Code to Print
 
+{% raw %}
+
 	Article: Q174544
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -96,3 +98,5 @@ permalink: /kb/174/Q174544/
 	
 	=============================================================================
 	
+
+{% endraw %}

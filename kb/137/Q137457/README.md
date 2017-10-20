@@ -6,6 +6,8 @@ permalink: /kb/137/Q137457/
 
 ## Q137457: How to Move to the Next Column in a Grid When Using Check Box
 
+{% raw %}
+
 	Article: Q137457
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/137/Q137457/
 	
 	=============================================================================
 	
+
+{% endraw %}

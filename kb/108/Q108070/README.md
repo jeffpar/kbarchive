@@ -6,6 +6,8 @@ permalink: /kb/108/Q108070/
 
 ## Q108070: Application Log Full Dialog Box Appears Instead of Overwriting
 
+{% raw %}
+
 	Article: Q108070
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -68,3 +70,5 @@ permalink: /kb/108/Q108070/
 	
 	=============================================================================
 	
+
+{% endraw %}

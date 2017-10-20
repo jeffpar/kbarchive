@@ -6,6 +6,8 @@ permalink: /kb/156/Q156578/
 
 ## Q156578: Cannot Cancel Print Job on Windows NT 3.51 Shared Printer
 
+{% raw %}
+
 	Article: Q156578
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/156/Q156578/
 	
 	=============================================================================
 	
+
+{% endraw %}

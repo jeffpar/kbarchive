@@ -6,6 +6,8 @@ permalink: /kb/161/Q161398/
 
 ## Q161398: How to Add Microsoft Golf 2.0 Courses to Golf 3.0
 
+{% raw %}
+
 	Article: Q161398
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:3.0
@@ -46,3 +48,5 @@ permalink: /kb/161/Q161398/
 	
 	=============================================================================
 	
+
+{% endraw %}

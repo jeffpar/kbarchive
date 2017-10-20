@@ -6,6 +6,8 @@ permalink: /kb/077/Q77990/
 
 ## Q77990: Switching Stacks at Interrupt Time
 
+{% raw %}
+
 	Article: Q77990
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0
@@ -99,3 +101,5 @@ permalink: /kb/077/Q77990/
 	
 	=============================================================================
 	
+
+{% endraw %}

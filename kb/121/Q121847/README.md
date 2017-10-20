@@ -6,6 +6,8 @@ permalink: /kb/121/Q121847/
 
 ## Q121847: Systems Management Server Upgrade with Debug Option Fails
 
+{% raw %}
+
 	Article: Q121847
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -48,3 +50,5 @@ permalink: /kb/121/Q121847/
 	
 	=============================================================================
 	
+
+{% endraw %}

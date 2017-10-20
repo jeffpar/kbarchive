@@ -6,6 +6,8 @@ permalink: /kb/199/Q199859/
 
 ## Q199859: Combat Flight Simulator: Computer Hangs After EULA Is Displayed
 
+{% raw %}
+
 	Article: Q199859
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/199/Q199859/
 	
 	=============================================================================
 	
+
+{% endraw %}

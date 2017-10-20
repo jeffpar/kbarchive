@@ -6,6 +6,8 @@ permalink: /kb/247/Q247036/
 
 ## Q247036: HOWTO: Add Sound to Form Using the Microsoft Multimedia Control
 
+{% raw %}
+
 	Article: Q247036
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a,6.0
@@ -112,3 +114,5 @@ permalink: /kb/247/Q247036/
 	
 	=============================================================================
 	
+
+{% endraw %}

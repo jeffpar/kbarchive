@@ -6,6 +6,8 @@ permalink: /kb/170/Q170032/
 
 ## Q170032: WD97: Multiple-Heading Numbering Converted to Plain Text
 
+{% raw %}
+
 	Article: Q170032
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -66,3 +68,5 @@ permalink: /kb/170/Q170032/
 	
 	=============================================================================
 	
+
+{% endraw %}

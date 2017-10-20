@@ -6,6 +6,8 @@ permalink: /kb/275/Q275710/
 
 ## Q275710: TN3270 Does Not Handle CD Field Properly During Error Recovery
 
+{% raw %}
+
 	Article: Q275710
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -100,3 +102,5 @@ permalink: /kb/275/Q275710/
 	
 	=============================================================================
 	
+
+{% endraw %}

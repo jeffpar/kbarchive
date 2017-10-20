@@ -6,6 +6,8 @@ permalink: /kb/142/Q142432/
 
 ## Q142432: Problems Running Batch Files Through Scheduler Service
 
+{% raw %}
+
 	Article: Q142432
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -58,3 +60,5 @@ permalink: /kb/142/Q142432/
 	
 	=============================================================================
 	
+
+{% endraw %}

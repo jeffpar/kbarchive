@@ -6,6 +6,8 @@ permalink: /kb/121/Q121618/
 
 ## Q121618: Saving Workstation Default User Profiles for a Domain
 
+{% raw %}
+
 	Article: Q121618
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -69,3 +71,5 @@ permalink: /kb/121/Q121618/
 	
 	=============================================================================
 	
+
+{% endraw %}

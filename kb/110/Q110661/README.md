@@ -6,6 +6,8 @@ permalink: /kb/110/Q110661/
 
 ## Q110661: PRB: Windows 3.1 SDK HOOKS Sample Causes a GP Fault
 
+{% raw %}
+
 	Article: Q110661
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -88,3 +90,5 @@ permalink: /kb/110/Q110661/
 	
 	=============================================================================
 	
+
+{% endraw %}

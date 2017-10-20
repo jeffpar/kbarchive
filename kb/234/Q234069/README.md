@@ -6,6 +6,8 @@ permalink: /kb/234/Q234069/
 
 ## Q234069: Computer Stops Responding After You Install Drivers
 
+{% raw %}
+
 	Article: Q234069
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -121,3 +123,5 @@ permalink: /kb/234/Q234069/
 	
 	=============================================================================
 	
+
+{% endraw %}

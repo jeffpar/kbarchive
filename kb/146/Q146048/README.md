@@ -6,6 +6,8 @@ permalink: /kb/146/Q146048/
 
 ## Q146048: XCLN: Changing Fonts for Richedit Field Doesn't Resize Field
 
+{% raw %}
+
 	Article: Q146048
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -39,3 +41,5 @@ permalink: /kb/146/Q146048/
 	
 	=============================================================================
 	
+
+{% endraw %}

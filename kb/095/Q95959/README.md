@@ -6,6 +6,8 @@ permalink: /kb/095/Q95959/
 
 ## Q95959: Intersvr Resets Screen Mode
 
+{% raw %}
+
 	Article: Q95959
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -59,3 +61,5 @@ permalink: /kb/095/Q95959/
 	
 	=============================================================================
 	
+
+{% endraw %}

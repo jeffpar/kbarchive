@@ -6,6 +6,8 @@ permalink: /kb/170/Q170618/
 
 ## Q170618: Virus Detected in the Suhdlog.dat File
 
+{% raw %}
+
 	Article: Q170618
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -103,3 +105,5 @@ permalink: /kb/170/Q170618/
 	
 	=============================================================================
 	
+
+{% endraw %}

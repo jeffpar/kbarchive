@@ -6,6 +6,8 @@ permalink: /kb/224/Q224337/
 
 ## Q224337: Errors Noted in Event Viewer After Installing Wacom Tablet
 
+{% raw %}
+
 	Article: Q224337
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/224/Q224337/
 	
 	=============================================================================
 	
+
+{% endraw %}

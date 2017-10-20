@@ -6,6 +6,8 @@ permalink: /kb/178/Q178775/
 
 ## Q178775: Changing Default Setting For Published Free/Busy Information
 
+{% raw %}
+
 	Article: Q178775
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0,7.5
@@ -47,3 +49,5 @@ permalink: /kb/178/Q178775/
 	
 	=============================================================================
 	
+
+{% endraw %}

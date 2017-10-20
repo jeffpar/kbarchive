@@ -6,6 +6,8 @@ permalink: /kb/126/Q126661/
 
 ## Q126661: PC MAPI: MAPILogon Does not Return an Error Code 1
 
+{% raw %}
+
 	Article: Q126661
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -45,3 +47,5 @@ permalink: /kb/126/Q126661/
 	
 	=============================================================================
 	
+
+{% endraw %}

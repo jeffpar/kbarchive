@@ -6,6 +6,8 @@ permalink: /kb/198/Q198057/
 
 ## Q198057: WD97: Macro Virus Warning Message When You Start Word
 
+{% raw %}
+
 	Article: Q198057
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -154,3 +156,5 @@ permalink: /kb/198/Q198057/
 	
 	=============================================================================
 	
+
+{% endraw %}

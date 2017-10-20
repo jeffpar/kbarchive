@@ -6,6 +6,8 @@ permalink: /kb/243/Q243229/
 
 ## Q243229: WD97: Postal Bar Code Will Not Fit on Some Labels
 
+{% raw %}
+
 	Article: Q243229
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -90,3 +92,5 @@ permalink: /kb/243/Q243229/
 	
 	=============================================================================
 	
+
+{% endraw %}

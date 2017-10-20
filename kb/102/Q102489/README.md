@@ -6,6 +6,8 @@ permalink: /kb/102/Q102489/
 
 ## Q102489: Mac Gty: How to Extract and Install Access Gateways
 
+{% raw %}
+
 	Article: Q102489
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -81,3 +83,5 @@ permalink: /kb/102/Q102489/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99697/
 
 ## Q99697: PC Forms: MS Mail Spooler (Auto) Is Visible
 
+{% raw %}
+
 	Article: Q99697
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -50,3 +52,5 @@ permalink: /kb/099/Q99697/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/078/Q78004/
 
 ## Q78004: Compaticard, AMI BIOS, and MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q78004
 	Product(s): Microsoft Disk Operating System
 	Version(s): 5.0
@@ -75,3 +77,5 @@ permalink: /kb/078/Q78004/
 	
 	=============================================================================
 	
+
+{% endraw %}

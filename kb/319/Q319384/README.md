@@ -6,6 +6,8 @@ permalink: /kb/319/Q319384/
 
 ## Q319384: Pages Do Not Expire as Expected After Web Site Content Change
 
+{% raw %}
+
 	Article: Q319384
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -80,3 +82,5 @@ permalink: /kb/319/Q319384/
 	
 	=============================================================================
 	
+
+{% endraw %}

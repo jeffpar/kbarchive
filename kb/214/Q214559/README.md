@@ -6,6 +6,8 @@ permalink: /kb/214/Q214559/
 
 ## Q214559: XADM: Clients Hang Using the Offline Address Book
 
+{% raw %}
+
 	Article: Q214559
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -72,3 +74,5 @@ permalink: /kb/214/Q214559/
 	
 	=============================================================================
 	
+
+{% endraw %}

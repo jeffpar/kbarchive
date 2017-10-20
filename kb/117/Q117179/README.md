@@ -6,6 +6,8 @@ permalink: /kb/117/Q117179/
 
 ## Q117179: Running WFWG TCP/IP (WFWTCP) with Workgroup Add-On for MS-DOS
 
+{% raw %}
+
 	Article: Q117179
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): MS-DOS:3.11
@@ -86,3 +88,5 @@ permalink: /kb/117/Q117179/
 	
 	=============================================================================
 	
+
+{% endraw %}

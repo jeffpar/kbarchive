@@ -6,6 +6,8 @@ permalink: /kb/067/Q67854/
 
 ## Q67854: Mouse Menu Key Sequences: Corrections and Additions
 
+{% raw %}
+
 	Article: Q67854
 	Product(s): See article
 	Version(s): 1.x 2.x 3.x 4.x 5.x 6.x 1.00
@@ -164,3 +166,5 @@ permalink: /kb/067/Q67854/
 	Sourcebook," pages 400-406; the "IBM PC/AT Technical Reference," pages
 	4-21 and 5-14 to 5-23; and the "IBM PS/2 Hardware Technical
 	Reference," pages 41-49.
+
+{% endraw %}

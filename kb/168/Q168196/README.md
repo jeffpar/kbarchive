@@ -6,6 +6,8 @@ permalink: /kb/168/Q168196/
 
 ## Q168196: PRB: Error Setting Partition of Grid Too Wide at Design Time
 
+{% raw %}
+
 	Article: Q168196
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b
@@ -106,3 +108,5 @@ permalink: /kb/168/Q168196/
 	
 	=============================================================================
 	
+
+{% endraw %}

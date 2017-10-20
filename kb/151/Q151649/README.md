@@ -6,6 +6,8 @@ permalink: /kb/151/Q151649/
 
 ## Q151649: Bookshelf '96-'97: See Also Scroll Bars Missing
 
+{% raw %}
+
 	Article: Q151649
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -41,3 +43,5 @@ permalink: /kb/151/Q151649/
 	
 	=============================================================================
 	
+
+{% endraw %}

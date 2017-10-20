@@ -6,6 +6,8 @@ permalink: /kb/188/Q188775/
 
 ## Q188775: WD97: Table Macro Returns Incorrect Result on Empty Cell
 
+{% raw %}
+
 	Article: Q188775
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -145,3 +147,5 @@ permalink: /kb/188/Q188775/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143315/
 
 ## Q143315: Unconf.Haunted House: Cirrus Logic Video Drivers Problems
 
+{% raw %}
+
 	Article: Q143315
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -66,3 +68,5 @@ permalink: /kb/143/Q143315/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/240/Q240938/
 
 ## Q240938: Access Violation in Lsass.exe on Domain Controllers
 
+{% raw %}
+
 	Article: Q240938
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -99,3 +101,5 @@ permalink: /kb/240/Q240938/
 	
 	=============================================================================
 	
+
+{% endraw %}

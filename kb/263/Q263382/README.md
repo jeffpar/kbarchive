@@ -6,6 +6,8 @@ permalink: /kb/263/Q263382/
 
 ## Q263382: SMS: Logical Disk Has Two Instances of Each Drive After Upgrade
 
+{% raw %}
+
 	Article: Q263382
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -77,3 +79,5 @@ permalink: /kb/263/Q263382/
 	
 	=============================================================================
 	
+
+{% endraw %}

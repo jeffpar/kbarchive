@@ -6,6 +6,8 @@ permalink: /kb/318/Q318472/
 
 ## Q318472: Cannot obtain an IP address from a DHCP server
 
+{% raw %}
+
 	Article: Q318472
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/318/Q318472/
 	
 	=============================================================================
 	
+
+{% endraw %}

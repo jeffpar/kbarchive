@@ -6,6 +6,8 @@ permalink: /kb/172/Q172373/
 
 ## Q172373: Change Made to Enable 3270 SSO Does Not Set Out-Of-Date Flag
 
+{% raw %}
+
 	Article: Q172373
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -66,3 +68,5 @@ permalink: /kb/172/Q172373/
 	
 	=============================================================================
 	
+
+{% endraw %}

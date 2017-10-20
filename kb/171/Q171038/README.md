@@ -6,6 +6,8 @@ permalink: /kb/171/Q171038/
 
 ## Q171038: SMS: SPNumber in Sms.Ini Remains 0 After Service Pack Update
 
+{% raw %}
+
 	Article: Q171038
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -49,3 +51,5 @@ permalink: /kb/171/Q171038/
 	
 	=============================================================================
 	
+
+{% endraw %}

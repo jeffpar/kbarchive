@@ -6,6 +6,8 @@ permalink: /kb/196/Q196892/
 
 ## Q196892: XFOR: Dirsync Service Stops Unexpectedly-Event 181 in Event Log
 
+{% raw %}
+
 	Article: Q196892
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -87,3 +89,5 @@ permalink: /kb/196/Q196892/
 	
 	=============================================================================
 	
+
+{% endraw %}

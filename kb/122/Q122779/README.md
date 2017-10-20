@@ -6,6 +6,8 @@ permalink: /kb/122/Q122779/
 
 ## Q122779: CONN: GW Version 3.2.11 Update
 
+{% raw %}
+
 	Article: Q122779
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -262,3 +264,5 @@ permalink: /kb/122/Q122779/
 	
 	=============================================================================
 	
+
+{% endraw %}

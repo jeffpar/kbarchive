@@ -6,6 +6,8 @@ permalink: /kb/084/Q84255/
 
 ## Q84255: File Manager Reports Incorrect Disk Size on Novell Network
 
+{% raw %}
+
 	Article: Q84255
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/084/Q84255/
 	
 	=============================================================================
 	
+
+{% endraw %}

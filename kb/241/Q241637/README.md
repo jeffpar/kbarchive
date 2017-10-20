@@ -6,6 +6,8 @@ permalink: /kb/241/Q241637/
 
 ## Q241637: PRB: Adding New Method to VB Component Breaks Existing Client
 
+{% raw %}
+
 	Article: Q241637
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -163,3 +165,5 @@ permalink: /kb/241/Q241637/
 	
 	=============================================================================
 	
+
+{% endraw %}

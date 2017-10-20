@@ -6,6 +6,8 @@ permalink: /kb/085/Q85286/
 
 ## Q85286: Checklist for Troubleshooting TrueType Font Problems
 
+{% raw %}
+
 	Article: Q85286
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -249,3 +251,5 @@ permalink: /kb/085/Q85286/
 	
 	=============================================================================
 	
+
+{% endraw %}

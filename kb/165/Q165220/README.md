@@ -6,6 +6,8 @@ permalink: /kb/165/Q165220/
 
 ## Q165220: Applet Does Not Display Greek and Central European Characters
 
+{% raw %}
+
 	Article: Q165220
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/165/Q165220/
 	
 	=============================================================================
 	
+
+{% endraw %}

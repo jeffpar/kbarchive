@@ -6,6 +6,8 @@ permalink: /kb/199/Q199192/
 
 ## Q199192: XFOR:IMS Ignores MIME Settings for Specific Domains
 
+{% raw %}
+
 	Article: Q199192
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -63,3 +65,5 @@ permalink: /kb/199/Q199192/
 	
 	=============================================================================
 	
+
+{% endraw %}

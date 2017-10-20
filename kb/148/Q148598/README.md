@@ -6,6 +6,8 @@ permalink: /kb/148/Q148598/
 
 ## Q148598: PPT7: Menu Text Jumbled or Out of Place in PowerPoint for Window
 
+{% raw %}
+
 	Article: Q148598
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -66,3 +68,5 @@ permalink: /kb/148/Q148598/
 	
 	=============================================================================
 	
+
+{% endraw %}

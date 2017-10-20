@@ -6,6 +6,8 @@ permalink: /kb/194/Q194631/
 
 ## Q194631: WD97: How to Convert WordPerfect Supplemental Dictionaries
 
+{% raw %}
+
 	Article: Q194631
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -159,3 +161,5 @@ permalink: /kb/194/Q194631/
 	
 	=============================================================================
 	
+
+{% endraw %}

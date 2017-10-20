@@ -6,6 +6,8 @@ permalink: /kb/085/Q85228/
 
 ## Q85228: BUG: Causes of A2042 During Data Initialization
 
+{% raw %}
+
 	Article: Q85228
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -78,21 +80,21 @@ permalink: /kb/085/Q85228/
 	  ; test_struct0 and test_struct1 should be single lines; they were
 	  ; broken for readability. Reassemble them to a single line.
 	
-	  test_struct0 prob_struct { {0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,
+	  test_struct0 prob_struct {{0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,
 	                             1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,
-	                             2,3,4,5,6,7} } ; no error
+	                             2,3,4,5,6,7}} ; no error
 	
-	  test_struct1 prob_struct { {0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,
+	  test_struct1 prob_struct {{0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,
 	                             1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,
-	                             2,3,4,5,6,7,8} } ; error produced
+	                             2,3,4,5,6,7,8}} ; error produced
 	
-	  test_struct2 prob_struct { {0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,
+	  test_struct2 prob_struct {{0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,
 	                             0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,
-	                             0,1,2,3,4,5,6,7} } ; no error
+	                             0,1,2,3,4,5,6,7}} ; no error
 	
-	  test_struct3 prob_struct { {0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,
+	  test_struct3 prob_struct {{0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,
 	                             0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,
-	                             0,1,2,3,4,5,6,7,8} } ; error produced
+	                             0,1,2,3,4,5,6,7,8}} ; error produced
 	
 	  d1 WORD  1,2,3,4,5,6,7,8,9,10,11,2,3,4,5,6,7,8,9,20,
 	           21,2,3,4,5,6,7,8,9,30,31,2,3,4,5,6,7,8,9,
@@ -116,3 +118,5 @@ permalink: /kb/085/Q85228/
 	
 	=============================================================================
 	
+
+{% endraw %}

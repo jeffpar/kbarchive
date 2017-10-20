@@ -6,6 +6,8 @@ permalink: /kb/189/Q189709/
 
 ## Q189709: FIX: Class Browser Code Does Not Show Correct Visibility
 
+{% raw %}
+
 	Article: Q189709
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -80,3 +82,5 @@ permalink: /kb/189/Q189709/
 	
 	=============================================================================
 	
+
+{% endraw %}

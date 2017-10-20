@@ -6,6 +6,8 @@ permalink: /kb/169/Q169915/
 
 ## Q169915: XFOR: How to Publish Exchange Public Folders as NNTP
 
+{% raw %}
+
 	Article: Q169915
 	Product(s): Microsoft Exchange
 	Version(s): 5.00
@@ -114,3 +116,5 @@ permalink: /kb/169/Q169915/
 	
 	=============================================================================
 	
+
+{% endraw %}

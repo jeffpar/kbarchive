@@ -6,6 +6,8 @@ permalink: /kb/154/Q154009/
 
 ## Q154009: HOWTO: Set the System Time
 
+{% raw %}
+
 	Article: Q154009
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -103,3 +105,5 @@ permalink: /kb/154/Q154009/
 	
 	=============================================================================
 	
+
+{% endraw %}

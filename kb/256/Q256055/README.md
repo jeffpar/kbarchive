@@ -6,6 +6,8 @@ permalink: /kb/256/Q256055/
 
 ## Q256055: WD97: Page Border Art Displayed Incorrectly on Page Border Tab
 
+{% raw %}
+
 	Article: Q256055
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:95,97,98
@@ -85,3 +87,5 @@ permalink: /kb/256/Q256055/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137880/
 
 ## Q137880: Julia Child: Can't Click Back for Previous Index Choices
 
+{% raw %}
+
 	Article: Q137880
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -41,3 +43,5 @@ permalink: /kb/137/Q137880/
 	
 	=============================================================================
 	
+
+{% endraw %}

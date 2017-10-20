@@ -6,6 +6,8 @@ permalink: /kb/152/Q152030/
 
 ## Q152030: FIX: Port I/O Functions Not in DLL Version of CRT for VC++ 4.0
 
+{% raw %}
+
 	Article: Q152030
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00
@@ -114,3 +116,5 @@ permalink: /kb/152/Q152030/
 	
 	=============================================================================
 	
+
+{% endraw %}

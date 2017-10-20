@@ -6,6 +6,8 @@ permalink: /kb/186/Q186404/
 
 ## Q186404: SMS: Rservice Fails to Enumerate Clients
 
+{% raw %}
+
 	Article: Q186404
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -41,3 +43,5 @@ permalink: /kb/186/Q186404/
 	
 	=============================================================================
 	
+
+{% endraw %}

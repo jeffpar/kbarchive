@@ -6,6 +6,8 @@ permalink: /kb/178/Q178082/
 
 ## Q178082: XFOR: BCC Recipient Appears in To: Field When Sending to PROFS
 
+{% raw %}
+
 	Article: Q178082
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -49,3 +51,5 @@ permalink: /kb/178/Q178082/
 	
 	=============================================================================
 	
+
+{% endraw %}

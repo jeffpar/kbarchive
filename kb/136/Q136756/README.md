@@ -6,6 +6,8 @@ permalink: /kb/136/Q136756/
 
 ## Q136756: Display Applet Does Not Disable Drivers
 
+{% raw %}
+
 	Article: Q136756
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/136/Q136756/
 	
 	=============================================================================
 	
+
+{% endraw %}

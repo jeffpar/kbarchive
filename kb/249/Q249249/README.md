@@ -6,6 +6,8 @@ permalink: /kb/249/Q249249/
 
 ## Q249249: How to Migrate from an Alpha Computer to an Intel Computer
 
+{% raw %}
+
 	Article: Q249249
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -170,3 +172,5 @@ permalink: /kb/249/Q249249/
 	
 	=============================================================================
 	
+
+{% endraw %}

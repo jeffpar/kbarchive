@@ -6,6 +6,8 @@ permalink: /kb/170/Q170059/
 
 ## Q170059: MS DNS Resolvers' Behavior with Non-Microsoft Multihomed DNS
 
+{% raw %}
+
 	Article: Q170059
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51;Windows:95
@@ -72,3 +74,5 @@ permalink: /kb/170/Q170059/
 	
 	=============================================================================
 	
+
+{% endraw %}

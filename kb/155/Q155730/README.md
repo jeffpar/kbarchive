@@ -6,6 +6,8 @@ permalink: /kb/155/Q155730/
 
 ## Q155730: Objects Don't Appear When Viewed in Page on Personal Web Server
 
+{% raw %}
+
 	Article: Q155730
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:1.0
@@ -93,3 +95,5 @@ permalink: /kb/155/Q155730/
 	
 	=============================================================================
 	
+
+{% endraw %}

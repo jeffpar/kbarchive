@@ -6,6 +6,8 @@ permalink: /kb/155/Q155299/
 
 ## Q155299: XADM: Err Msg: Parameter is Incorrect ID No: 0xc0020057
 
+{% raw %}
+
 	Article: Q155299
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/155/Q155299/
 	
 	=============================================================================
 	
+
+{% endraw %}

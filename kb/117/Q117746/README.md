@@ -6,6 +6,8 @@ permalink: /kb/117/Q117746/
 
 ## Q117746: How to Search for Special Characters
 
+{% raw %}
+
 	Article: Q117746
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c; MS-DOS:2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0
@@ -51,3 +53,5 @@ permalink: /kb/117/Q117746/
 	
 	=============================================================================
 	
+
+{% endraw %}

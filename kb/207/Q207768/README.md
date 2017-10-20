@@ -6,6 +6,8 @@ permalink: /kb/207/Q207768/
 
 ## Q207768: Invalid Date Accepted in Find Files or Folders Parameters
 
+{% raw %}
+
 	Article: Q207768
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/207/Q207768/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/060/Q60968/
 
 ## Q60968: QBX.EXE 7.10 Expanded Memory Usage Better Than 7.00; 32K Table
 
+{% raw %}
+
 	Article: Q60968
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -79,3 +81,5 @@ permalink: /kb/060/Q60968/
 	
 	To be compatible with BASIC PDS 7.00 or 7.10, the expanded-memory
 	device driver must observe the LIM 4.0 EMS.
+
+{% endraw %}

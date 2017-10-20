@@ -6,6 +6,8 @@ permalink: /kb/199/Q199856/
 
 ## Q199856: FIX: SIZE Command Does Not Work in Internet Transfer Control
 
+{% raw %}
+
 	Article: Q199856
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -114,3 +116,5 @@ permalink: /kb/199/Q199856/
 	
 	=============================================================================
 	
+
+{% endraw %}

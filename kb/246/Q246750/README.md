@@ -6,6 +6,8 @@ permalink: /kb/246/Q246750/
 
 ## Q246750: XADM: OAB Doesn't Send to Custom Recipients in Rich Text Format
 
+{% raw %}
+
 	Article: Q246750
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -75,3 +77,5 @@ permalink: /kb/246/Q246750/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/223/Q223052/
 
 ## Q223052: Cannot Set Custom Form As Default Paper Size
 
+{% raw %}
+
 	Article: Q223052
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -63,3 +65,5 @@ permalink: /kb/223/Q223052/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/262/Q262449/
 
 ## Q262449: Err Msg: Unable to Locate Windows NT Account Synchronization
 
+{% raw %}
+
 	Article: Q262449
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/262/Q262449/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152715/
 
 ## Q152715: RDO 1.0b Release Available
 
+{% raw %}
+
 	Article: Q152715
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -103,3 +105,5 @@ permalink: /kb/152/Q152715/
 	
 	=============================================================================
 	
+
+{% endraw %}

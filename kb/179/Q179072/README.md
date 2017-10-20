@@ -6,6 +6,8 @@ permalink: /kb/179/Q179072/
 
 ## Q179072: XFOR: Exchange cc:Mail Connector Causes NFT Error on Clandata
 
+{% raw %}
+
 	Article: Q179072
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -166,3 +168,5 @@ permalink: /kb/179/Q179072/
 	
 	=============================================================================
 	
+
+{% endraw %}

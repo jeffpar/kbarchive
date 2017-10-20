@@ -6,6 +6,8 @@ permalink: /kb/263/Q263646/
 
 ## Q263646: XCON: Mail for Local Mailbox Remains in Queue Folder
 
+{% raw %}
+
 	Article: Q263646
 	Product(s): Microsoft Exchange
 	Version(s): winnt:2.0,5.5
@@ -68,3 +70,5 @@ permalink: /kb/263/Q263646/
 	
 	=============================================================================
 	
+
+{% endraw %}

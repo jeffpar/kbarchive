@@ -6,6 +6,8 @@ permalink: /kb/043/Q43791/
 
 ## Q43791: &#36;INCLUDE with DATA Statements in SUB May Hang QB.EXE Editor
 
+{% raw %}
+
 	Article: Q43791
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -61,3 +63,5 @@ permalink: /kb/043/Q43791/
 	contain the following:
 	
 	   DATA 1,2,3
+
+{% endraw %}

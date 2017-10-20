@@ -6,6 +6,8 @@ permalink: /kb/155/Q155217/
 
 ## Q155217: How to Enable or Disable Automatically Running CD-ROMs
 
+{% raw %}
+
 	Article: Q155217
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -96,3 +98,5 @@ permalink: /kb/155/Q155217/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173400/
 
 ## Q173400: Msndc.exe Caused an Invalid Page Fault in Module...
 
+{% raw %}
+
 	Article: Q173400
 	Product(s): The Microsoft Network
 	Version(s): 2.6,5.0,5.1,5.2
@@ -99,3 +101,5 @@ permalink: /kb/173/Q173400/
 	
 	=============================================================================
 	
+
+{% endraw %}

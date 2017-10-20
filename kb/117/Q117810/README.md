@@ -6,6 +6,8 @@ permalink: /kb/117/Q117810/
 
 ## Q117810: No Sound with MediaVision Pro Audio PAS-16 CD Player
 
+{% raw %}
+
 	Article: Q117810
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -50,3 +52,5 @@ permalink: /kb/117/Q117810/
 	
 	=============================================================================
 	
+
+{% endraw %}

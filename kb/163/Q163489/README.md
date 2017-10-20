@@ -6,6 +6,8 @@ permalink: /kb/163/Q163489/
 
 ## Q163489: WD97: &quot;For Each...Next&quot; Loop Gives Wrong Result with Endnotes
 
+{% raw %}
+
 	Article: Q163489
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -108,3 +110,5 @@ permalink: /kb/163/Q163489/
 	
 	=============================================================================
 	
+
+{% endraw %}

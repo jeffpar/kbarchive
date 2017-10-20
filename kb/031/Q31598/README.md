@@ -6,6 +6,8 @@ permalink: /kb/031/Q31598/
 
 ## Q31598: Sign-Extended Register and Immediate Form of AND/OR/XOR
 
+{% raw %}
+
 	Article: Q31598
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,6.0
@@ -56,3 +58,5 @@ permalink: /kb/031/Q31598/
 	
 	=============================================================================
 	
+
+{% endraw %}

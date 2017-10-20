@@ -6,6 +6,8 @@ permalink: /kb/230/Q230587/
 
 ## Q230587: PRB: Focus Not Set in Edit Controls in Inactive Child Window
 
+{% raw %}
+
 	Article: Q230587
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -98,3 +100,5 @@ permalink: /kb/230/Q230587/
 	
 	=============================================================================
 	
+
+{% endraw %}

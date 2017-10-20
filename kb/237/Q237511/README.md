@@ -6,6 +6,8 @@ permalink: /kb/237/Q237511/
 
 ## Q237511: Encarta 2000: Article Title Is Displayed with Jagged Edges
 
+{% raw %}
+
 	Article: Q237511
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/237/Q237511/
 	
 	=============================================================================
 	
+
+{% endraw %}

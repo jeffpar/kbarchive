@@ -6,6 +6,8 @@ permalink: /kb/049/Q49423/
 
 ## Q49423: WINDOWCOMPAT Directs CodeView to Create a Window
 
+{% raw %}
+
 	Article: Q49423
 	Product(s): See article
 	Version(s): 2.20 2.30
@@ -25,3 +27,5 @@ permalink: /kb/049/Q49423/
 	some cases this feature could be desirable, but for most debugging, a
 	PM window is only cumbersome. The way to work around this feature is
 	to relink without the WINDOWCOMPAT directive.
+
+{% endraw %}

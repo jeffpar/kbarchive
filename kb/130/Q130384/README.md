@@ -6,6 +6,8 @@ permalink: /kb/130/Q130384/
 
 ## Q130384: Critical System Files Installed with Visual FoxPro 3.0 Setup
 
+{% raw %}
+
 	Article: Q130384
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -173,3 +175,5 @@ permalink: /kb/130/Q130384/
 	
 	=============================================================================
 	
+
+{% endraw %}

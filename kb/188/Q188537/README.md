@@ -6,6 +6,8 @@ permalink: /kb/188/Q188537/
 
 ## Q188537: WD97: Styles Not in Alphabetical Order in Style List
 
+{% raw %}
+
 	Article: Q188537
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -170,3 +172,5 @@ permalink: /kb/188/Q188537/
 	
 	=============================================================================
 	
+
+{% endraw %}

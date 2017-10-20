@@ -6,6 +6,8 @@ permalink: /kb/131/Q131088/
 
 ## Q131088: XCLN: Message Finder and Filter Don't Display Bcc'd Messages
 
+{% raw %}
+
 	Article: Q131088
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -49,3 +51,5 @@ permalink: /kb/131/Q131088/
 	
 	=============================================================================
 	
+
+{% endraw %}

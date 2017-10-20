@@ -6,6 +6,8 @@ permalink: /kb/314/Q314611/
 
 ## Q314611: Error Message: HTTP Error 500-12 (Application Restarting)
 
+{% raw %}
+
 	Article: Q314611
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -63,3 +65,5 @@ permalink: /kb/314/Q314611/
 	
 	=============================================================================
 	
+
+{% endraw %}

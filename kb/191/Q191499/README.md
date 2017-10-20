@@ -6,6 +6,8 @@ permalink: /kb/191/Q191499/
 
 ## Q191499: INFO: Where to Find the Builder Applications' Source Files
 
+{% raw %}
+
 	Article: Q191499
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -220,3 +222,5 @@ permalink: /kb/191/Q191499/
 	
 	=============================================================================
 	
+
+{% endraw %}

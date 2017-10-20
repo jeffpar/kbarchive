@@ -6,6 +6,8 @@ permalink: /kb/050/Q50383/
 
 ## Q50383: Inference Rule May Fail When Spaces on Blank Command Line
 
+{% raw %}
+
 	Article: Q50383
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.01,1.1,1.11,1.12,1.13,1.2,1.3,1.4; OS/2:1.01,1.11,1.12,1.21
@@ -60,3 +62,5 @@ permalink: /kb/050/Q50383/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194514/
 
 ## Q194514: PRB: Cannot Pass Array Property of Form by Reference to OLE DLL
 
+{% raw %}
+
 	Article: Q194514
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -183,3 +185,5 @@ permalink: /kb/194/Q194514/
 	
 	=============================================================================
 	
+
+{% endraw %}

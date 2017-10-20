@@ -6,6 +6,8 @@ permalink: /kb/177/Q177868/
 
 ## Q177868: SnmpMgrTrapListen API Returns ERROR_SERVICE_NOT_ACTIVE Error
 
+{% raw %}
+
 	Article: Q177868
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -74,3 +76,5 @@ permalink: /kb/177/Q177868/
 	
 	=============================================================================
 	
+
+{% endraw %}

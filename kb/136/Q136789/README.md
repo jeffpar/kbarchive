@@ -6,6 +6,8 @@ permalink: /kb/136/Q136789/
 
 ## Q136789: Drive Uncompress Fails Because Drive Letter Change Not Allowed
 
+{% raw %}
+
 	Article: Q136789
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -80,3 +82,5 @@ permalink: /kb/136/Q136789/
 	
 	=============================================================================
 	
+
+{% endraw %}

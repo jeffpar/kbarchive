@@ -6,6 +6,8 @@ permalink: /kb/266/Q266785/
 
 ## Q266785: XADM: ADC Er. Mssg.: Server Specified on the Connection Page...
 
+{% raw %}
+
 	Article: Q266785
 	Product(s): Microsoft Exchange
 	Version(s): 2000,5.5 SP3
@@ -88,3 +90,5 @@ permalink: /kb/266/Q266785/
 	
 	=============================================================================
 	
+
+{% endraw %}

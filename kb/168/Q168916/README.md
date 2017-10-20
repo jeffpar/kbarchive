@@ -6,6 +6,8 @@ permalink: /kb/168/Q168916/
 
 ## Q168916: Volume Control Icon No Longer Visible on the Taskbar
 
+{% raw %}
+
 	Article: Q168916
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 4.0 95
@@ -52,3 +54,5 @@ permalink: /kb/168/Q168916/
 	
 	=============================================================================
 	
+
+{% endraw %}

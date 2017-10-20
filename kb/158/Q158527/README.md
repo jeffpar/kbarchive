@@ -6,6 +6,8 @@ permalink: /kb/158/Q158527/
 
 ## Q158527: WD97: Multi-Column Revision Bars Do Not Print As Expected
 
+{% raw %}
+
 	Article: Q158527
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -97,3 +99,5 @@ permalink: /kb/158/Q158527/
 	
 	=============================================================================
 	
+
+{% endraw %}

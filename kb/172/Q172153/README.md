@@ -6,6 +6,8 @@ permalink: /kb/172/Q172153/
 
 ## Q172153: Moving a WINS Database from Windows NT 3.51 to Windows NT 4.0
 
+{% raw %}
+
 	Article: Q172153
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -112,3 +114,5 @@ permalink: /kb/172/Q172153/
 	
 	=============================================================================
 	
+
+{% endraw %}

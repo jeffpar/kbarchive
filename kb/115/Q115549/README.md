@@ -6,6 +6,8 @@ permalink: /kb/115/Q115549/
 
 ## Q115549: FAX: Ferrari Board Functions; Gateway Fails w/ Corrupt RRS.FAX
 
+{% raw %}
+
 	Article: Q115549
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0a
@@ -53,3 +55,5 @@ permalink: /kb/115/Q115549/
 	
 	=============================================================================
 	
+
+{% endraw %}

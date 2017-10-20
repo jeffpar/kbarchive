@@ -6,6 +6,8 @@ permalink: /kb/216/Q216167/
 
 ## Q216167: How to Increase a Command-Prompt Window Size
 
+{% raw %}
+
 	Article: Q216167
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -55,3 +57,5 @@ permalink: /kb/216/Q216167/
 	
 	=============================================================================
 	
+
+{% endraw %}

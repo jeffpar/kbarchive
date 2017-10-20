@@ -6,6 +6,8 @@ permalink: /kb/162/Q162073/
 
 ## Q162073: FIX: Import Wizard Does Not Import Spreadsheet Cells as Null
 
+{% raw %}
+
 	Article: Q162073
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b
@@ -91,3 +93,5 @@ permalink: /kb/162/Q162073/
 	
 	=============================================================================
 	
+
+{% endraw %}

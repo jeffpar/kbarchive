@@ -6,6 +6,8 @@ permalink: /kb/160/Q160187/
 
 ## Q160187: Packet Burst Protocol
 
+{% raw %}
+
 	Article: Q160187
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -87,3 +89,5 @@ permalink: /kb/160/Q160187/
 	
 	=============================================================================
 	
+
+{% endraw %}

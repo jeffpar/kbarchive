@@ -6,6 +6,8 @@ permalink: /kb/157/Q157699/
 
 ## Q157699: XCON: Messages Sent to Wang Via X.400 Do Not Return Receipts
 
+{% raw %}
+
 	Article: Q157699
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/157/Q157699/
 	
 	=============================================================================
 	
+
+{% endraw %}

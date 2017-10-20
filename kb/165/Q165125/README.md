@@ -6,6 +6,8 @@ permalink: /kb/165/Q165125/
 
 ## Q165125: Elink-III Net Card Detected Multiple Times on Alpha Raptor
 
+{% raw %}
+
 	Article: Q165125
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -47,3 +49,5 @@ permalink: /kb/165/Q165125/
 	
 	=============================================================================
 	
+
+{% endraw %}

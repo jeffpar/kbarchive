@@ -6,6 +6,8 @@ permalink: /kb/230/Q230295/
 
 ## Q230295: Contents of Site Server Express Content Analyzer Release Notes
 
+{% raw %}
+
 	Article: Q230295
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -122,3 +124,5 @@ permalink: /kb/230/Q230295/
 	
 	=============================================================================
 	
+
+{% endraw %}

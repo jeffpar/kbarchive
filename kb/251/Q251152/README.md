@@ -6,6 +6,8 @@ permalink: /kb/251/Q251152/
 
 ## Q251152: XADM: Finding Ambiguous or Duplicate Recipients
 
+{% raw %}
+
 	Article: Q251152
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -110,3 +112,5 @@ permalink: /kb/251/Q251152/
 	
 	=============================================================================
 	
+
+{% endraw %}

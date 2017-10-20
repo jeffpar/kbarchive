@@ -6,6 +6,8 @@ permalink: /kb/199/Q199017/
 
 ## Q199017: HOW TO: Deploy Visual Basic IIS Applications with the PDW
 
+{% raw %}
+
 	Article: Q199017
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -206,3 +208,5 @@ permalink: /kb/199/Q199017/
 	
 	=============================================================================
 	
+
+{% endraw %}

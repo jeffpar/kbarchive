@@ -6,6 +6,8 @@ permalink: /kb/198/Q198252/
 
 ## Q198252: PRB: Installation Error with Setup Wizard in Visual Basic 5.0
 
+{% raw %}
+
 	Article: Q198252
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -105,3 +107,5 @@ permalink: /kb/198/Q198252/
 	
 	=============================================================================
 	
+
+{% endraw %}

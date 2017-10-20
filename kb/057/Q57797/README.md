@@ -6,6 +6,8 @@ permalink: /kb/057/Q57797/
 
 ## Q57797: Problems Using BASIC 7.00 with Novell Advanced NetWare 2.15
 
+{% raw %}
+
 	Article: Q57797
 	Product(s): See article
 	Version(s): 7.00
@@ -91,3 +93,5 @@ permalink: /kb/057/Q57797/
 	    MDI Graphics Card (Hercules-compatible)
 	    MF-II keyboard
 	    MS-DOS 3.30
+
+{% endraw %}

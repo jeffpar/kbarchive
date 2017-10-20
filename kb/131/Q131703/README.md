@@ -6,6 +6,8 @@ permalink: /kb/131/Q131703/
 
 ## Q131703: Read Errors with Texel (Plextor) Single-Speed CD-ROM Drive
 
+{% raw %}
+
 	Article: Q131703
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/131/Q131703/
 	
 	=============================================================================
 	
+
+{% endraw %}

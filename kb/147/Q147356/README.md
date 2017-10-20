@@ -6,6 +6,8 @@ permalink: /kb/147/Q147356/
 
 ## Q147356: Intermittent Replication Between WINS Servers
 
+{% raw %}
+
 	Article: Q147356
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -53,3 +55,5 @@ permalink: /kb/147/Q147356/
 	
 	=============================================================================
 	
+
+{% endraw %}

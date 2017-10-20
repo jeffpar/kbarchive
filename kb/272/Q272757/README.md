@@ -6,6 +6,8 @@ permalink: /kb/272/Q272757/
 
 ## Q272757: MapPoint 2001 Err Msg: Remove Corrupt Devices from Registry
 
+{% raw %}
+
 	Article: Q272757
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/272/Q272757/
 	
 	=============================================================================
 	
+
+{% endraw %}

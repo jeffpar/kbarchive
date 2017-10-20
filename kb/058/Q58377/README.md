@@ -6,6 +6,8 @@ permalink: /kb/058/Q58377/
 
 ## Q58377: File Manager Directory Window Not Updating
 
+{% raw %}
+
 	Article: Q58377
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -96,3 +98,5 @@ permalink: /kb/058/Q58377/
 	
 	=============================================================================
 	
+
+{% endraw %}

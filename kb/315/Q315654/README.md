@@ -6,6 +6,8 @@ permalink: /kb/315/Q315654/
 
 ## Q315654: FIX: Code Changes Lost Switching Between Bookmarks in Methods
 
+{% raw %}
+
 	Article: Q315654
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -78,3 +80,5 @@ permalink: /kb/315/Q315654/
 	
 	=============================================================================
 	
+
+{% endraw %}

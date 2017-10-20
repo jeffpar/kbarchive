@@ -6,6 +6,8 @@ permalink: /kb/112/Q112845/
 
 ## Q112845: WFWG 3.11 Disk 5 Directory Listing (5.25 Inch, 1.2 MB)
 
+{% raw %}
+
 	Article: Q112845
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -83,3 +85,5 @@ permalink: /kb/112/Q112845/
 	
 	=============================================================================
 	
+
+{% endraw %}

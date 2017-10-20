@@ -6,6 +6,8 @@ permalink: /kb/177/Q177765/
 
 ## Q177765: XADM: Version of Store Incompatible with Version of Admin Pgm
 
+{% raw %}
+
 	Article: Q177765
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -67,3 +69,5 @@ permalink: /kb/177/Q177765/
 	
 	=============================================================================
 	
+
+{% endraw %}

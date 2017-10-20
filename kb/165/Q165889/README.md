@@ -6,6 +6,8 @@ permalink: /kb/165/Q165889/
 
 ## Q165889: PRB: ItemTips = .T. Causes Error When in Private DataSession
 
+{% raw %}
+
 	Article: Q165889
 	Product(s): Microsoft FoxPro
 	Version(s): 5.00 5.00a
@@ -75,3 +77,5 @@ permalink: /kb/165/Q165889/
 	
 	=============================================================================
 	
+
+{% endraw %}

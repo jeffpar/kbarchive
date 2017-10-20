@@ -6,6 +6,8 @@ permalink: /kb/323/Q323058/
 
 ## Q323058: &quot;Unable to Obtain a Write Lock on Config File&quot; Error in SNA Mgr
 
+{% raw %}
+
 	Article: Q323058
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -76,3 +78,5 @@ permalink: /kb/323/Q323058/
 	
 	=============================================================================
 	
+
+{% endraw %}

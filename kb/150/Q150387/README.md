@@ -6,6 +6,8 @@ permalink: /kb/150/Q150387/
 
 ## Q150387: Only 5 Users Can Connect to Evaluation Copy of NT Server
 
+{% raw %}
+
 	Article: Q150387
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -106,3 +108,5 @@ permalink: /kb/150/Q150387/
 	
 	=============================================================================
 	
+
+{% endraw %}

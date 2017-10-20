@@ -6,6 +6,8 @@ permalink: /kb/122/Q122362/
 
 ## Q122362: Error C0000004 When Running Process-Monitoring Tools
 
+{% raw %}
+
 	Article: Q122362
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/122/Q122362/
 	
 	=============================================================================
 	
+
+{% endraw %}

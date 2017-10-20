@@ -6,6 +6,8 @@ permalink: /kb/095/Q95423/
 
 ## Q95423: Installing LAN Manager on IBM DOS 5.02 Workstations
 
+{% raw %}
+
 	Article: Q95423
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/095/Q95423/
 	
 	=============================================================================
 	
+
+{% endraw %}

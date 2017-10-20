@@ -6,6 +6,8 @@ permalink: /kb/133/Q133469/
 
 ## Q133469: Streets: Installing and Using Streets on Mobile Computers
 
+{% raw %}
+
 	Article: Q133469
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:4.0
@@ -120,3 +122,5 @@ permalink: /kb/133/Q133469/
 	
 	=============================================================================
 	
+
+{% endraw %}

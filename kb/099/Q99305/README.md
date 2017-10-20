@@ -6,6 +6,8 @@ permalink: /kb/099/Q99305/
 
 ## Q99305: Mac Tool: Errors Saving Enclosures After Rebuild
 
+{% raw %}
+
 	Article: Q99305
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1a
@@ -67,3 +69,5 @@ permalink: /kb/099/Q99305/
 	
 	=============================================================================
 	
+
+{% endraw %}

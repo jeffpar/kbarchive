@@ -6,6 +6,8 @@ permalink: /kb/122/Q122190/
 
 ## Q122190: Steps To Remove Golf 2.0 From Your Computer
 
+{% raw %}
+
 	Article: Q122190
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -79,3 +81,5 @@ permalink: /kb/122/Q122190/
 	
 	=============================================================================
 	
+
+{% endraw %}

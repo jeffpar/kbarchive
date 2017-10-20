@@ -6,6 +6,8 @@ permalink: /kb/078/Q78679/
 
 ## Q78679: WordPerfect Office TSRs Don't Function Correctly
 
+{% raw %}
+
 	Article: Q78679
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -53,3 +55,5 @@ permalink: /kb/078/Q78679/
 	
 	=============================================================================
 	
+
+{% endraw %}

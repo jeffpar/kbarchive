@@ -6,6 +6,8 @@ permalink: /kb/121/Q121645/
 
 ## Q121645: STOP 0x0000001E in SRV.SYS
 
+{% raw %}
+
 	Article: Q121645
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5
@@ -60,3 +62,5 @@ permalink: /kb/121/Q121645/
 	
 	=============================================================================
 	
+
+{% endraw %}

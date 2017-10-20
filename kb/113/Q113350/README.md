@@ -6,6 +6,8 @@ permalink: /kb/113/Q113350/
 
 ## Q113350: PowerChute Plus Broadcast Messages Can Cause Problems
 
+{% raw %}
+
 	Article: Q113350
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -40,3 +42,5 @@ permalink: /kb/113/Q113350/
 	
 	=============================================================================
 	
+
+{% endraw %}

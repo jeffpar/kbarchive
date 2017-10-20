@@ -6,6 +6,8 @@ permalink: /kb/187/Q187047/
 
 ## Q187047: Acregl.exe Has No Help Switches
 
+{% raw %}
+
 	Article: Q187047
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -43,3 +45,5 @@ permalink: /kb/187/Q187047/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172915/
 
 ## Q172915: Host Security Fails to Enumerate Memberships of Local Groups
 
+{% raw %}
+
 	Article: Q172915
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -63,3 +65,5 @@ permalink: /kb/172/Q172915/
 	
 	=============================================================================
 	
+
+{% endraw %}

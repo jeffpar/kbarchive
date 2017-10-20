@@ -6,6 +6,8 @@ permalink: /kb/152/Q152939/
 
 ## Q152939: XADM: Meeting Requests Written to Assistant's Calendar
 
+{% raw %}
+
 	Article: Q152939
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:7.0; winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/152/Q152939/
 	
 	=============================================================================
 	
+
+{% endraw %}

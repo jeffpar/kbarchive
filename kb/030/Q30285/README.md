@@ -6,6 +6,8 @@ permalink: /kb/030/Q30285/
 
 ## Q30285: C Extension to Make Psearch Prompt for an Input in M.EXE
 
+{% raw %}
+
 	Article: Q30285
 	Product(s): See article
 	Version(s): 1.00
@@ -52,3 +54,5 @@ permalink: /kb/030/Q30285/
 	    Psearch searches forward for the previously defined string or
 	pattern. Msearch (Minus Search) searches backward for the previously
 	defined string or pattern.
+
+{% endraw %}

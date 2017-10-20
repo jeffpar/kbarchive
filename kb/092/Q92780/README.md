@@ -6,6 +6,8 @@ permalink: /kb/092/Q92780/
 
 ## Q92780: WFWG Setup Modifies Wrong Lines in CONFIG.SYS File
 
+{% raw %}
+
 	Article: Q92780
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/092/Q92780/
 	
 	=============================================================================
 	
+
+{% endraw %}

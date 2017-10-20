@@ -6,6 +6,8 @@ permalink: /kb/058/Q58650/
 
 ## Q58650: Changing a Drive's Volume Label
 
+{% raw %}
+
 	Article: Q58650
 	Product(s): Microsoft Programming Utilities
 	Version(s): 5.1
@@ -105,3 +107,5 @@ permalink: /kb/058/Q58650/
 	
 	=============================================================================
 	
+
+{% endraw %}

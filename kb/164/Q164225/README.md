@@ -6,6 +6,8 @@ permalink: /kb/164/Q164225/
 
 ## Q164225: Poor Data Transfer with CardBus Card in Docking Station
 
+{% raw %}
+
 	Article: Q164225
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -64,3 +66,5 @@ permalink: /kb/164/Q164225/
 	
 	=============================================================================
 	
+
+{% endraw %}

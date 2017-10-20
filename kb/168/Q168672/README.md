@@ -6,6 +6,8 @@ permalink: /kb/168/Q168672/
 
 ## Q168672: Cannot Read Japanese E-mail Messages on MSN
 
+{% raw %}
+
 	Article: Q168672
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5
@@ -59,3 +61,5 @@ permalink: /kb/168/Q168672/
 	
 	=============================================================================
 	
+
+{% endraw %}

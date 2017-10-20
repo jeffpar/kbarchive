@@ -6,6 +6,8 @@ permalink: /kb/235/Q235853/
 
 ## Q235853: XWEB: MAPI Message Property PR_PRIORITY Is Not Created with CDO
 
+{% raw %}
+
 	Article: Q235853
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -63,3 +65,5 @@ permalink: /kb/235/Q235853/
 	
 	=============================================================================
 	
+
+{% endraw %}

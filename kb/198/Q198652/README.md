@@ -6,6 +6,8 @@ permalink: /kb/198/Q198652/
 
 ## Q198652: SMS: Administrator Console Fails to Load and Reports WBEM Error
 
+{% raw %}
+
 	Article: Q198652
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -77,3 +79,5 @@ permalink: /kb/198/Q198652/
 	
 	=============================================================================
 	
+
+{% endraw %}

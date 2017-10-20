@@ -6,6 +6,8 @@ permalink: /kb/115/Q115306/
 
 ## Q115306: HOWTO: How to Get the Current State of a Button in a CToolbar
 
+{% raw %}
+
 	Article: Q115306
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,4.0
@@ -94,3 +96,5 @@ permalink: /kb/115/Q115306/
 	
 	=============================================================================
 	
+
+{% endraw %}

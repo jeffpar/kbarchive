@@ -6,6 +6,8 @@ permalink: /kb/248/Q248824/
 
 ## Q248824: IP Restriction Does Not Work for SMTP and NNTP Admin Directories
 
+{% raw %}
+
 	Article: Q248824
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/248/Q248824/
 	
 	=============================================================================
 	
+
+{% endraw %}

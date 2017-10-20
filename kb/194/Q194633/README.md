@@ -6,6 +6,8 @@ permalink: /kb/194/Q194633/
 
 ## Q194633: How to Add Additional Host Security Domains
 
+{% raw %}
+
 	Article: Q194633
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP1
@@ -87,3 +89,5 @@ permalink: /kb/194/Q194633/
 	
 	=============================================================================
 	
+
+{% endraw %}

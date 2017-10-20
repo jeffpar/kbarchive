@@ -6,6 +6,8 @@ permalink: /kb/043/Q43528/
 
 ## Q43528: VARPTR&#36; Malfunctions on Local Variable Length STRING Arrays
 
+{% raw %}
+
 	Article: Q43528
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -56,3 +58,5 @@ permalink: /kb/043/Q43528/
 	
 	3. Assign a temporary variable to A$(1) and use the temporary variable
 	   in the VARPTR$ function.
+
+{% endraw %}

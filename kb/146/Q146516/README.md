@@ -6,6 +6,8 @@ permalink: /kb/146/Q146516/
 
 ## Q146516: XCLN: Richedit Max Chars Allowed Does Not Recognize Zero
 
+{% raw %}
+
 	Article: Q146516
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -63,3 +65,5 @@ permalink: /kb/146/Q146516/
 	
 	=============================================================================
 	
+
+{% endraw %}

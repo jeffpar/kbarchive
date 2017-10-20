@@ -6,6 +6,8 @@ permalink: /kb/150/Q150052/
 
 ## Q150052: XCLN: Simple MAPI Not Supported as an Exchange 4.0 Service
 
+{% raw %}
+
 	Article: Q150052
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -47,3 +49,5 @@ permalink: /kb/150/Q150052/
 	
 	=============================================================================
 	
+
+{% endraw %}

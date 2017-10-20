@@ -6,6 +6,8 @@ permalink: /kb/149/Q149498/
 
 ## Q149498: XCLN: Click Close Box Quits Microsoft Exchange Client
 
+{% raw %}
+
 	Article: Q149498
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -35,3 +37,5 @@ permalink: /kb/149/Q149498/
 	
 	=============================================================================
 	
+
+{% endraw %}

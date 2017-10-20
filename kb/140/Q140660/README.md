@@ -6,6 +6,8 @@ permalink: /kb/140/Q140660/
 
 ## Q140660: Windows 3.x: How To Change the Windows Video Driver
 
+{% raw %}
+
 	Article: Q140660
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/140/Q140660/
 	
 	=============================================================================
 	
+
+{% endraw %}

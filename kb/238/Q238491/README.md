@@ -6,6 +6,8 @@ permalink: /kb/238/Q238491/
 
 ## Q238491: XCON: Exchange MTA MIMEInternet X.400 Enhanced Relay - MIXER
 
+{% raw %}
+
 	Article: Q238491
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP3
@@ -94,3 +96,5 @@ permalink: /kb/238/Q238491/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/071/Q71212/
 
 ## Q71212: BT M5200F Hangs During Setup of MS-DOS Upgrade
 
+{% raw %}
+
 	Article: Q71212
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -57,3 +59,5 @@ permalink: /kb/071/Q71212/
 	
 	=============================================================================
 	
+
+{% endraw %}

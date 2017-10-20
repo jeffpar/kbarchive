@@ -6,6 +6,8 @@ permalink: /kb/072/Q72267/
 
 ## Q72267: Determining the Mode Windows Is Running In
 
+{% raw %}
+
 	Article: Q72267
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/072/Q72267/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/077/Q77821/
 
 ## Q77821: Repartitioning Your Hard Disk After MS-DOS 5 Upgrade
 
+{% raw %}
+
 	Article: Q77821
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -261,3 +263,5 @@ permalink: /kb/077/Q77821/
 	
 	=============================================================================
 	
+
+{% endraw %}

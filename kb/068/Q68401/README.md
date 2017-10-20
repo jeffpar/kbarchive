@@ -6,6 +6,8 @@ permalink: /kb/068/Q68401/
 
 ## Q68401: PC Setup: Server Update Copies Over DEFAULT.SCR
 
+{% raw %}
+
 	Article: Q68401
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.0b,3.2,3.2a
@@ -55,3 +57,5 @@ permalink: /kb/068/Q68401/
 	
 	=============================================================================
 	
+
+{% endraw %}

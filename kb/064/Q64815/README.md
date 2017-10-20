@@ -6,6 +6,8 @@ permalink: /kb/064/Q64815/
 
 ## Q64815: Pasting Information to MS-DOS Apps in Real and Standard
 
+{% raw %}
+
 	Article: Q64815
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/064/Q64815/
 	
 	=============================================================================
 	
+
+{% endraw %}

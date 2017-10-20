@@ -6,6 +6,8 @@ permalink: /kb/258/Q258932/
 
 ## Q258932: PRB: Server Object Error &quot;ASP 0177:800401f3&quot; with WebClass
 
+{% raw %}
+
 	Article: Q258932
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0,6.0
@@ -84,3 +86,5 @@ permalink: /kb/258/Q258932/
 	
 	=============================================================================
 	
+
+{% endraw %}

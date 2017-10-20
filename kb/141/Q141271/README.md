@@ -6,6 +6,8 @@ permalink: /kb/141/Q141271/
 
 ## Q141271: XADM: Changing Recipient Alias Does Not Change Proxy
 
+{% raw %}
+
 	Article: Q141271
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -50,3 +52,5 @@ permalink: /kb/141/Q141271/
 	
 	=============================================================================
 	
+
+{% endraw %}

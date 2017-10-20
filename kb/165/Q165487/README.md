@@ -6,6 +6,8 @@ permalink: /kb/165/Q165487/
 
 ## Q165487: Incorrect or Garbled Text on Tab Labels in Properties
 
+{% raw %}
+
 	Article: Q165487
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -88,3 +90,5 @@ permalink: /kb/165/Q165487/
 	
 	=============================================================================
 	
+
+{% endraw %}

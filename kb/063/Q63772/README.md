@@ -6,6 +6,8 @@ permalink: /kb/063/Q63772/
 
 ## Q63772: Northgate 286 with AMI BIOS Requires HIMEM.SYS /M:8 Switch
 
+{% raw %}
+
 	Article: Q63772
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -74,3 +76,5 @@ permalink: /kb/063/Q63772/
 	
 	=============================================================================
 	
+
+{% endraw %}

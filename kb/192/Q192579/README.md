@@ -6,6 +6,8 @@ permalink: /kb/192/Q192579/
 
 ## Q192579: MCM: &quot;No 3D Accelerator&quot; Error Message, or Game Hangs or Quits
 
+{% raw %}
+
 	Article: Q192579
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -72,3 +74,5 @@ permalink: /kb/192/Q192579/
 	
 	=============================================================================
 	
+
+{% endraw %}

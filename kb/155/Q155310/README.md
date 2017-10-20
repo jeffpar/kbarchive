@@ -6,6 +6,8 @@ permalink: /kb/155/Q155310/
 
 ## Q155310: Cannot Print Pages in Reverse Order with HP 1600C Driver
 
+{% raw %}
+
 	Article: Q155310
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/155/Q155310/
 	
 	=============================================================================
 	
+
+{% endraw %}

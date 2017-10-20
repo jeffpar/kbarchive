@@ -6,6 +6,8 @@ permalink: /kb/168/Q168452/
 
 ## Q168452: XGEN: MIME Type Tab Not in IMC Property Page
 
+{% raw %}
+
 	Article: Q168452
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -47,3 +49,5 @@ permalink: /kb/168/Q168452/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171730/
 
 ## Q171730: WD97: How to Retain the Template View in the New Dialog Box
 
+{% raw %}
+
 	Article: Q171730
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -89,3 +91,5 @@ permalink: /kb/171/Q171730/
 	
 	=============================================================================
 	
+
+{% endraw %}

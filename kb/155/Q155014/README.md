@@ -6,6 +6,8 @@ permalink: /kb/155/Q155014/
 
 ## Q155014: Moving Sign In Screen During Sign In May Cause GP Fault
 
+{% raw %}
+
 	Article: Q155014
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0
@@ -56,3 +58,5 @@ permalink: /kb/155/Q155014/
 	
 	=============================================================================
 	
+
+{% endraw %}

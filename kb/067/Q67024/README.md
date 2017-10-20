@@ -6,6 +6,8 @@ permalink: /kb/067/Q67024/
 
 ## Q67024: Bitstream Fontware 3.0 Installation Kit Character Sets
 
+{% raw %}
+
 	Article: Q67024
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -59,3 +61,5 @@ permalink: /kb/067/Q67024/
 	
 	=============================================================================
 	
+
+{% endraw %}

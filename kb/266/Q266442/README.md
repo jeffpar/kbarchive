@@ -6,6 +6,8 @@ permalink: /kb/266/Q266442/
 
 ## Q266442: XCLN: Mail Stops Flowing from MS Mail Connector to Exchange Ser
 
+{% raw %}
+
 	Article: Q266442
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -81,3 +83,5 @@ permalink: /kb/266/Q266442/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168518/
 
 ## Q168518: SMS: Troubleshooting SMS Windows NT Client Services Installation
 
+{% raw %}
+
 	Article: Q168518
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -230,3 +232,5 @@ permalink: /kb/168/Q168518/
 	
 	=============================================================================
 	
+
+{% endraw %}

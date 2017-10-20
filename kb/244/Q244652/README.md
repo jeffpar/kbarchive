@@ -6,6 +6,8 @@ permalink: /kb/244/Q244652/
 
 ## Q244652: Updated Inoculan Driver Prevents Data Files from Being Deleted
 
+{% raw %}
+
 	Article: Q244652
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/244/Q244652/
 	
 	=============================================================================
 	
+
+{% endraw %}

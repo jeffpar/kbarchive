@@ -6,6 +6,8 @@ permalink: /kb/084/Q84287/
 
 ## Q84287: How to Disable Micrologic MoreFonts
 
+{% raw %}
+
 	Article: Q84287
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -128,3 +130,5 @@ permalink: /kb/084/Q84287/
 	
 	=============================================================================
 	
+
+{% endraw %}

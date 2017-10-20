@@ -6,6 +6,8 @@ permalink: /kb/181/Q181680/
 
 ## Q181680: Flight Simulator 98: Inside Moves Corrections &amp; Comments
 
+{% raw %}
+
 	Article: Q181680
 	Product(s): Microsoft Press
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/181/Q181680/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/254/Q254821/
 
 ## Q254821: XADM: Re-establishing ADC Connection Agreement Deletes Objects
 
+{% raw %}
+
 	Article: Q254821
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:; winnt:5.5
@@ -56,3 +58,5 @@ permalink: /kb/254/Q254821/
 	
 	=============================================================================
 	
+
+{% endraw %}

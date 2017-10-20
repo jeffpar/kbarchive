@@ -6,6 +6,8 @@ permalink: /kb/174/Q174994/
 
 ## Q174994: WD97: Autoexec Macro Runs Twice When Reference Is Added
 
+{% raw %}
+
 	Article: Q174994
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -55,3 +57,5 @@ permalink: /kb/174/Q174994/
 	
 	=============================================================================
 	
+
+{% endraw %}

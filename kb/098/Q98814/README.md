@@ -6,6 +6,8 @@ permalink: /kb/098/Q98814/
 
 ## Q98814: MHS: 3.0 Gateway Access Disk &#91;3.5, 720K&#93;
 
+{% raw %}
+
 	Article: Q98814
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -46,3 +48,5 @@ permalink: /kb/098/Q98814/
 	
 	=============================================================================
 	
+
+{% endraw %}

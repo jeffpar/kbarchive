@@ -6,6 +6,8 @@ permalink: /kb/182/Q182914/
 
 ## Q182914: SNA Server Can Be &quot;Paused&quot; to Force New Users to Other Servers
 
+{% raw %}
+
 	Article: Q182914
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -83,3 +85,5 @@ permalink: /kb/182/Q182914/
 	
 	=============================================================================
 	
+
+{% endraw %}

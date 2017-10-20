@@ -6,6 +6,8 @@ permalink: /kb/126/Q126853/
 
 ## Q126853: Windows NT 3.5 Setup Fails with Microspeed Trackball Mouse
 
+{% raw %}
+
 	Article: Q126853
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -52,3 +54,5 @@ permalink: /kb/126/Q126853/
 	
 	=============================================================================
 	
+
+{% endraw %}

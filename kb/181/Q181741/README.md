@@ -6,6 +6,8 @@ permalink: /kb/181/Q181741/
 
 ## Q181741: XADM: Directory Service Does Not Update the Object Count
 
+{% raw %}
+
 	Article: Q181741
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -87,3 +89,5 @@ permalink: /kb/181/Q181741/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163307/
 
 ## Q163307: XCON: How to Identify Most MTA Queues by Object Id
 
+{% raw %}
+
 	Article: Q163307
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -96,3 +98,5 @@ permalink: /kb/163/Q163307/
 	
 	=============================================================================
 	
+
+{% endraw %}

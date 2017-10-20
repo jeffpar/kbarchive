@@ -6,6 +6,8 @@ permalink: /kb/164/Q164390/
 
 ## Q164390: WinNT Appears Not to Send DTR Signal to a UPS on Shutdown
 
+{% raw %}
+
 	Article: Q164390
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -92,3 +94,5 @@ permalink: /kb/164/Q164390/
 	
 	=============================================================================
 	
+
+{% endraw %}

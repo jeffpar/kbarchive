@@ -6,6 +6,8 @@ permalink: /kb/195/Q195583/
 
 ## Q195583: XADM: Rules Are Not Applied to SMTP Messages Received as &#91;cc&#93;
 
+{% raw %}
+
 	Article: Q195583
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,8.03,8.5; winnt:5.5
@@ -159,3 +161,5 @@ permalink: /kb/195/Q195583/
 	
 	=============================================================================
 	
+
+{% endraw %}

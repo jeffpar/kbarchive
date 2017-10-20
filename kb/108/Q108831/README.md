@@ -6,6 +6,8 @@ permalink: /kb/108/Q108831/
 
 ## Q108831: PC DirSync: Err Msg: Fatal &#91;203&#93; GAL Rebuild Problem
 
+{% raw %}
+
 	Article: Q108831
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -97,3 +99,5 @@ permalink: /kb/108/Q108831/
 	
 	=============================================================================
 	
+
+{% endraw %}

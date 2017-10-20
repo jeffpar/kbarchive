@@ -6,6 +6,8 @@ permalink: /kb/243/Q243258/
 
 ## Q243258: End User License Agreement (EULA) Policy on Backup CD-ROMs
 
+{% raw %}
+
 	Article: Q243258
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -90,3 +92,5 @@ permalink: /kb/243/Q243258/
 	
 	=============================================================================
 	
+
+{% endraw %}

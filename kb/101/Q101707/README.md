@@ -6,6 +6,8 @@ permalink: /kb/101/Q101707/
 
 ## Q101707: Machine Not Found When Adding to Directory Permissions
 
+{% raw %}
+
 	Article: Q101707
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -45,3 +47,5 @@ permalink: /kb/101/Q101707/
 	
 	=============================================================================
 	
+
+{% endraw %}

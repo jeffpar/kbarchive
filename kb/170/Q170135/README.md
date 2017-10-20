@@ -6,6 +6,8 @@ permalink: /kb/170/Q170135/
 
 ## Q170135: Error Message: WINS Client (TCP/IP) Service Fails to Start
 
+{% raw %}
+
 	Article: Q170135
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/170/Q170135/
 	
 	=============================================================================
 	
+
+{% endraw %}

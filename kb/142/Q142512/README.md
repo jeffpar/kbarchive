@@ -6,6 +6,8 @@ permalink: /kb/142/Q142512/
 
 ## Q142512: Artist: Epson Stylus Prints with Gray Overlay
 
+{% raw %}
+
 	Article: Q142512
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a,1.1b,1.1c,3.1
@@ -58,3 +60,5 @@ permalink: /kb/142/Q142512/
 	
 	=============================================================================
 	
+
+{% endraw %}

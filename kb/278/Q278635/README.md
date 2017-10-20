@@ -6,6 +6,8 @@ permalink: /kb/278/Q278635/
 
 ## Q278635: MSN Companion Keyboards
 
+{% raw %}
+
 	Article: Q278635
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -69,3 +71,5 @@ permalink: /kb/278/Q278635/
 	
 	=============================================================================
 	
+
+{% endraw %}

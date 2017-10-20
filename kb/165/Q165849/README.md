@@ -6,6 +6,8 @@ permalink: /kb/165/Q165849/
 
 ## Q165849: SNA Manager Improvements When Many 3270 LUs Are Configured
 
+{% raw %}
+
 	Article: Q165849
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -69,3 +71,5 @@ permalink: /kb/165/Q165849/
 	
 	=============================================================================
 	
+
+{% endraw %}

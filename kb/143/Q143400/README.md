@@ -6,6 +6,8 @@ permalink: /kb/143/Q143400/
 
 ## Q143400: PRB: Resetting Defaults May Fix Form Misbehavior in VFP
 
+{% raw %}
+
 	Article: Q143400
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -62,3 +64,5 @@ permalink: /kb/143/Q143400/
 	
 	=============================================================================
 	
+
+{% endraw %}

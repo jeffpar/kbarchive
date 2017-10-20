@@ -6,6 +6,8 @@ permalink: /kb/308/Q308251/
 
 ## Q308251: FIX: Forms, Menus, Reports Corrupted on Windows 2000 After Cycle
 
+{% raw %}
+
 	Article: Q308251
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -103,3 +105,5 @@ permalink: /kb/308/Q308251/
 	
 	=============================================================================
 	
+
+{% endraw %}

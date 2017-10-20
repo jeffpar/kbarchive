@@ -6,6 +6,8 @@ permalink: /kb/129/Q129946/
 
 ## Q129946: PRB: Object Instances Are Not Freed from Memory
 
+{% raw %}
+
 	Article: Q129946
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -207,3 +209,5 @@ permalink: /kb/129/Q129946/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86869/
 
 ## Q86869: Windows 3.1x WIN87EM.DLL Patch for Intel 80387
 
+{% raw %}
+
 	Article: Q86869
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/086/Q86869/
 	
 	=============================================================================
 	
+
+{% endraw %}

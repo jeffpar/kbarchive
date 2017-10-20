@@ -6,6 +6,8 @@ permalink: /kb/198/Q198657/
 
 ## Q198657: XADM: Outlook 98 Shows Bckgrd Sync error after Move Server
 
+{% raw %}
+
 	Article: Q198657
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -62,3 +64,5 @@ permalink: /kb/198/Q198657/
 	
 	=============================================================================
 	
+
+{% endraw %}

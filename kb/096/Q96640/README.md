@@ -6,6 +6,8 @@ permalink: /kb/096/Q96640/
 
 ## Q96640: PC DB: 3.0 Server Disk 2 &#91;3.5, 5.25&#93;
 
+{% raw %}
+
 	Article: Q96640
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -52,3 +54,5 @@ permalink: /kb/096/Q96640/
 	
 	=============================================================================
 	
+
+{% endraw %}

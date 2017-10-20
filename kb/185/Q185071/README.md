@@ -6,6 +6,8 @@ permalink: /kb/185/Q185071/
 
 ## Q185071: XGEN: README.TXT: Microsoft Exchange 4.0 U.S. Service Pack 5
 
+{% raw %}
+
 	Article: Q185071
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0
@@ -107,3 +109,5 @@ permalink: /kb/185/Q185071/
 	
 	=============================================================================
 	
+
+{% endraw %}

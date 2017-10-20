@@ -6,6 +6,8 @@ permalink: /kb/163/Q163194/
 
 ## Q163194: PPT: Sample VB Code to Retrieve Current Slide Number
 
+{% raw %}
+
 	Article: Q163194
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -113,3 +115,5 @@ permalink: /kb/163/Q163194/
 	
 	=============================================================================
 	
+
+{% endraw %}

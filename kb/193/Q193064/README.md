@@ -6,6 +6,8 @@ permalink: /kb/193/Q193064/
 
 ## Q193064: Pressing Cancel Button in Date/Time Utility Changes Date
 
+{% raw %}
+
 	Article: Q193064
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/193/Q193064/
 	
 	=============================================================================
 	
+
+{% endraw %}

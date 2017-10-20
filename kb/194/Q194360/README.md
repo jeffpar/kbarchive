@@ -6,6 +6,8 @@ permalink: /kb/194/Q194360/
 
 ## Q194360: How to Determine the Version of Encarta Virtual Globe 99
 
+{% raw %}
+
 	Article: Q194360
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -84,3 +86,5 @@ permalink: /kb/194/Q194360/
 	
 	=============================================================================
 	
+
+{% endraw %}

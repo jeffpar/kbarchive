@@ -6,6 +6,8 @@ permalink: /kb/285/Q285867/
 
 ## Q285867: Casino Err Msg: Microsoft Casino Requires 32 MB of RAM
 
+{% raw %}
+
 	Article: Q285867
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/285/Q285867/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/071/Q71506/
 
 ## Q71506: Paintbrush Cannot Rotate a Graphic
 
+{% raw %}
+
 	Article: Q71506
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -41,3 +43,5 @@ permalink: /kb/071/Q71506/
 	
 	=============================================================================
 	
+
+{% endraw %}

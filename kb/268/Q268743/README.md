@@ -6,6 +6,8 @@ permalink: /kb/268/Q268743/
 
 ## Q268743: PRB: Passing DeviceObject to HalAssignSlotResources Is Mandatory
 
+{% raw %}
+
 	Article: Q268743
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; winnt:
@@ -60,3 +62,5 @@ permalink: /kb/268/Q268743/
 	
 	=============================================================================
 	
+
+{% endraw %}

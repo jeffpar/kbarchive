@@ -6,6 +6,8 @@ permalink: /kb/312/Q312438/
 
 ## Q312438: Older Versions of Profgen.exe and Newprof.exe Fail on Win2000
 
+{% raw %}
+
 	Article: Q312438
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -52,3 +54,5 @@ permalink: /kb/312/Q312438/
 	
 	=============================================================================
 	
+
+{% endraw %}

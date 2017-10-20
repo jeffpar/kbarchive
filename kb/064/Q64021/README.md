@@ -6,6 +6,8 @@ permalink: /kb/064/Q64021/
 
 ## Q64021: C1001: Internal Compiler Error: '../grammar.c', Line 140
 
+{% raw %}
+
 	Article: Q64021
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -60,3 +62,5 @@ permalink: /kb/064/Q64021/
 	Microsoft has confirmed this to be a problem in C version 6.00. We are
 	researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

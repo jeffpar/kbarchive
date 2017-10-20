@@ -6,6 +6,8 @@ permalink: /kb/187/Q187297/
 
 ## Q187297: PRB: Run-time Error Message 3024 Using SQL and DAO Against Oracl
 
+{% raw %}
+
 	Article: Q187297
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -100,3 +102,5 @@ permalink: /kb/187/Q187297/
 	
 	=============================================================================
 	
+
+{% endraw %}

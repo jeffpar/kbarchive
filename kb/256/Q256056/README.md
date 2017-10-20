@@ -6,6 +6,8 @@ permalink: /kb/256/Q256056/
 
 ## Q256056: FIX: DllMain Throws Unhandled Exception with DLL_THREAD_DETACH
 
+{% raw %}
+
 	Article: Q256056
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -78,3 +80,5 @@ permalink: /kb/256/Q256056/
 	
 	=============================================================================
 	
+
+{% endraw %}

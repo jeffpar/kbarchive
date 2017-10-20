@@ -6,6 +6,8 @@ permalink: /kb/074/Q74464/
 
 ## Q74464: Pipe (&#124;) After IF EXIST Fails
 
+{% raw %}
+
 	Article: Q74464
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -56,3 +58,5 @@ permalink: /kb/074/Q74464/
 	
 	=============================================================================
 	
+
+{% endraw %}

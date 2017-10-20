@@ -6,6 +6,8 @@ permalink: /kb/151/Q151671/
 
 ## Q151671: Incorrect Event ID 6 in the Event Viewer
 
+{% raw %}
+
 	Article: Q151671
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -53,3 +55,5 @@ permalink: /kb/151/Q151671/
 	
 	=============================================================================
 	
+
+{% endraw %}

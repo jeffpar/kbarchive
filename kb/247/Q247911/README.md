@@ -6,6 +6,8 @@ permalink: /kb/247/Q247911/
 
 ## Q247911: NET USER /DOMAIN Returns Incorrect Last User Logon
 
+{% raw %}
+
 	Article: Q247911
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/247/Q247911/
 	
 	=============================================================================
 	
+
+{% endraw %}

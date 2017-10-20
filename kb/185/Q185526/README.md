@@ -6,6 +6,8 @@ permalink: /kb/185/Q185526/
 
 ## Q185526: Golf 98: Computer Hangs at Random Intervals
 
+{% raw %}
+
 	Article: Q185526
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -52,3 +54,5 @@ permalink: /kb/185/Q185526/
 	
 	=============================================================================
 	
+
+{% endraw %}

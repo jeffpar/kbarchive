@@ -6,6 +6,8 @@ permalink: /kb/169/Q169987/
 
 ## Q169987: Msgsrv32 Not Responding When Computer Hangs While Idle
 
+{% raw %}
+
 	Article: Q169987
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -79,3 +81,5 @@ permalink: /kb/169/Q169987/
 	
 	=============================================================================
 	
+
+{% endraw %}

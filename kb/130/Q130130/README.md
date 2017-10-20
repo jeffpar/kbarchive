@@ -6,6 +6,8 @@ permalink: /kb/130/Q130130/
 
 ## Q130130: How to Customize Class Icons
 
+{% raw %}
+
 	Article: Q130130
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/130/Q130130/
 	
 	=============================================================================
 	
+
+{% endraw %}

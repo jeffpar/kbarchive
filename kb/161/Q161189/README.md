@@ -6,6 +6,8 @@ permalink: /kb/161/Q161189/
 
 ## Q161189: Error 7008 when Using StarSQL ODBC Driver
 
+{% raw %}
+
 	Article: Q161189
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11 SP1;2.11 SP2,3.0 (all SP),4.0,4.0 SP1
@@ -94,3 +96,5 @@ permalink: /kb/161/Q161189/
 	
 	=============================================================================
 	
+
+{% endraw %}

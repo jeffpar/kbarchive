@@ -6,6 +6,8 @@ permalink: /kb/172/Q172311/
 
 ## Q172311: Mouse Problems After Switching to Left-Handed Mouse Setup
 
+{% raw %}
+
 	Article: Q172311
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -50,3 +52,5 @@ permalink: /kb/172/Q172311/
 	
 	=============================================================================
 	
+
+{% endraw %}

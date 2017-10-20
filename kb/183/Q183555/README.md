@@ -6,6 +6,8 @@ permalink: /kb/183/Q183555/
 
 ## Q183555: Size Of Dynamic Output Array Always Set to Maximum
 
+{% raw %}
+
 	Article: Q183555
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -78,3 +80,5 @@ permalink: /kb/183/Q183555/
 	
 	=============================================================================
 	
+
+{% endraw %}

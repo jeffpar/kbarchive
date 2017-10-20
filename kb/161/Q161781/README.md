@@ -6,6 +6,8 @@ permalink: /kb/161/Q161781/
 
 ## Q161781: SMS: Error: Unable to Get NetBIOS Lana List
 
+{% raw %}
+
 	Article: Q161781
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -99,3 +101,5 @@ permalink: /kb/161/Q161781/
 	
 	=============================================================================
 	
+
+{% endraw %}

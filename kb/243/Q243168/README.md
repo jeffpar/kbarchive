@@ -6,6 +6,8 @@ permalink: /kb/243/Q243168/
 
 ## Q243168: Asheron's Call Requires a Pentium 166 or Higher...
 
+{% raw %}
+
 	Article: Q243168
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -69,3 +71,5 @@ permalink: /kb/243/Q243168/
 	
 	=============================================================================
 	
+
+{% endraw %}

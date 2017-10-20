@@ -6,6 +6,8 @@ permalink: /kb/040/Q40428/
 
 ## Q40428: You Cannot Display Past Column 71 in CodeView
 
+{% raw %}
+
 	Article: Q40428
 	Product(s): See article
 	Version(s): 2.20   | 2.20
@@ -21,3 +23,5 @@ permalink: /kb/040/Q40428/
 	source code, reduce the tab size with the # dialog command, as
 	described on Page 240 of the "Microsoft CodeView and Utilities"
 	manual.
+
+{% endraw %}

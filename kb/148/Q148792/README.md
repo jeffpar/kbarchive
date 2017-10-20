@@ -6,6 +6,8 @@ permalink: /kb/148/Q148792/
 
 ## Q148792: PC Ext: Not Dial the Modem at the Regular Interval Variable
 
+{% raw %}
+
 	Article: Q148792
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.5
@@ -52,3 +54,5 @@ permalink: /kb/148/Q148792/
 	
 	=============================================================================
 	
+
+{% endraw %}

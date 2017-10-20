@@ -6,6 +6,8 @@ permalink: /kb/163/Q163672/
 
 ## Q163672: Windows NT 4.0 Setup Fails on ThinkPad 535
 
+{% raw %}
+
 	Article: Q163672
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/163/Q163672/
 	
 	=============================================================================
 	
+
+{% endraw %}

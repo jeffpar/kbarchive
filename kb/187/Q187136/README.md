@@ -6,6 +6,8 @@ permalink: /kb/187/Q187136/
 
 ## Q187136: NetDDE Error Messages During Logon
 
+{% raw %}
+
 	Article: Q187136
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/187/Q187136/
 	
 	=============================================================================
 	
+
+{% endraw %}

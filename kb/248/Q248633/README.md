@@ -6,6 +6,8 @@ permalink: /kb/248/Q248633/
 
 ## Q248633: Objects May Be Incorrectly Joined When MA Is in Reflector Mode
 
+{% raw %}
+
 	Article: Q248633
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -72,3 +74,5 @@ permalink: /kb/248/Q248633/
 	
 	=============================================================================
 	
+
+{% endraw %}

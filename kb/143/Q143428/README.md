@@ -6,6 +6,8 @@ permalink: /kb/143/Q143428/
 
 ## Q143428: DOCERR: SetWindowPos Declaration Incorrect in On-Line Help
 
+{% raw %}
+
 	Article: Q143428
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -69,3 +71,5 @@ permalink: /kb/143/Q143428/
 	
 	=============================================================================
 	
+
+{% endraw %}

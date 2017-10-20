@@ -6,6 +6,8 @@ permalink: /kb/111/Q111716/
 
 ## Q111716: How to Obtain the WinWord Converter SDK (GC1039)
 
+{% raw %}
+
 	Article: Q111716
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.1
@@ -189,3 +191,5 @@ permalink: /kb/111/Q111716/
 	
 	=============================================================================
 	
+
+{% endraw %}

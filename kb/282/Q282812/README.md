@@ -6,6 +6,8 @@ permalink: /kb/282/Q282812/
 
 ## Q282812: XADM: Age Limits for Public Folders Use Modified Time Property
 
+{% raw %}
+
 	Article: Q282812
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -44,3 +46,5 @@ permalink: /kb/282/Q282812/
 	
 	=============================================================================
 	
+
+{% endraw %}

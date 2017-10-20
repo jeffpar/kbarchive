@@ -6,6 +6,8 @@ permalink: /kb/112/Q112311/
 
 ## Q112311: FILE: Fw1003.exe FoxPro for Windows 2.5x Resource Kit
 
+{% raw %}
+
 	Article: Q112311
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.5b
@@ -134,3 +136,5 @@ permalink: /kb/112/Q112311/
 	
 	=============================================================================
 	
+
+{% endraw %}

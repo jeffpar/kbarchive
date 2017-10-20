@@ -6,6 +6,8 @@ permalink: /kb/222/Q222871/
 
 ## Q222871: Err Msg: &quot;Drive Is Not Ready for Use&quot; with Removable Media
 
+{% raw %}
+
 	Article: Q222871
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/222/Q222871/
 	
 	=============================================================================
 	
+
+{% endraw %}

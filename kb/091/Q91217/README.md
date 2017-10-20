@@ -6,6 +6,8 @@ permalink: /kb/091/Q91217/
 
 ## Q91217: Remove Locator Service After Installing LM 2.1 3Com Tape
 
+{% raw %}
+
 	Article: Q91217
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/091/Q91217/
 	
 	=============================================================================
 	
+
+{% endraw %}

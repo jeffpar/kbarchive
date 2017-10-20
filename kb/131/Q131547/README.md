@@ -6,6 +6,8 @@ permalink: /kb/131/Q131547/
 
 ## Q131547: NE2000 Network Adapter Driver Reports Incorrect MAC Address
 
+{% raw %}
+
 	Article: Q131547
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -61,3 +63,5 @@ permalink: /kb/131/Q131547/
 	
 	=============================================================================
 	
+
+{% endraw %}

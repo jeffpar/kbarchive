@@ -6,6 +6,8 @@ permalink: /kb/173/Q173254/
 
 ## Q173254: VB5 Step By Step: Page 24, Step 6 Causes Illegal Operation
 
+{% raw %}
+
 	Article: Q173254
 	Product(s): Microsoft Press
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/173/Q173254/
 	
 	=============================================================================
 	
+
+{% endraw %}

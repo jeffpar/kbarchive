@@ -6,6 +6,8 @@ permalink: /kb/135/Q135321/
 
 ## Q135321: PPT7: Changing the Working Directory in PowerPoint
 
+{% raw %}
+
 	Article: Q135321
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -56,3 +58,5 @@ permalink: /kb/135/Q135321/
 	
 	=============================================================================
 	
+
+{% endraw %}

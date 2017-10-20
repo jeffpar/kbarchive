@@ -6,6 +6,8 @@ permalink: /kb/128/Q128256/
 
 ## Q128256: UT1x: Upsizing Tools Requires Local Installation of MS Access
 
+{% raw %}
+
 	Article: Q128256
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/128/Q128256/
 	
 	=============================================================================
 	
+
+{% endraw %}

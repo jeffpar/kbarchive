@@ -6,6 +6,8 @@ permalink: /kb/181/Q181632/
 
 ## Q181632: XCLN: Exchange Client for Macintosh Cannot Attach Macintosh Alia
 
+{% raw %}
+
 	Article: Q181632
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:4.0,5.0,8.0
@@ -62,3 +64,5 @@ permalink: /kb/181/Q181632/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/071/Q71208/
 
 ## Q71208: Running Setup Within a Window Causes UAE On Novell Network
 
+{% raw %}
+
 	Article: Q71208
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -60,3 +62,5 @@ permalink: /kb/071/Q71208/
 	
 	=============================================================================
 	
+
+{% endraw %}

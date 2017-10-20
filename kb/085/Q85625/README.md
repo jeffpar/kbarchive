@@ -6,6 +6,8 @@ permalink: /kb/085/Q85625/
 
 ## Q85625: Write: Save As Leaves the Find Dialog Box on the Screen
 
+{% raw %}
+
 	Article: Q85625
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -44,3 +46,5 @@ permalink: /kb/085/Q85625/
 	
 	=============================================================================
 	
+
+{% endraw %}

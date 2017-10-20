@@ -6,6 +6,8 @@ permalink: /kb/258/Q258306/
 
 ## Q258306: Microsoft INTERIX Installation Program Stops Responding
 
+{% raw %}
+
 	Article: Q258306
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2.1,2.2.2,2.2.3,2.2.4,2.2.4.03,2.2.4.08,2.2.5
@@ -62,3 +64,5 @@ permalink: /kb/258/Q258306/
 	
 	=============================================================================
 	
+
+{% endraw %}

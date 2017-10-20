@@ -6,6 +6,8 @@ permalink: /kb/234/Q234557/
 
 ## Q234557: Executable with Specially Malformed Image Header Crashes Windows
 
+{% raw %}
+
 	Article: Q234557
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -152,3 +154,5 @@ permalink: /kb/234/Q234557/
 	
 	=============================================================================
 	
+
+{% endraw %}

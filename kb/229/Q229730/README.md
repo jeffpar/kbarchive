@@ -6,6 +6,8 @@ permalink: /kb/229/Q229730/
 
 ## Q229730: Synchronous Remote Scripting Causes Browser to Stop Responding
 
+{% raw %}
+
 	Article: Q229730
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:3.02,4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2; winnt:3.0,4.0
@@ -75,3 +77,5 @@ permalink: /kb/229/Q229730/
 	
 	=============================================================================
 	
+
+{% endraw %}

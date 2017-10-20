@@ -6,6 +6,8 @@ permalink: /kb/224/Q224991/
 
 ## Q224991: XFOR: DXA Does Not Start After Upgrading Windows NT to SP4
 
+{% raw %}
+
 	Article: Q224991
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5,5.0,5.5
@@ -79,3 +81,5 @@ permalink: /kb/224/Q224991/
 	
 	=============================================================================
 	
+
+{% endraw %}

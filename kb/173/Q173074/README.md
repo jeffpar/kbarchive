@@ -6,6 +6,8 @@ permalink: /kb/173/Q173074/
 
 ## Q173074: PRB: Multiple Visual Basic Printouts Are Not the Same
 
+{% raw %}
+
 	Article: Q173074
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -136,3 +138,5 @@ permalink: /kb/173/Q173074/
 	
 	=============================================================================
 	
+
+{% endraw %}

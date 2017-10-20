@@ -6,6 +6,8 @@ permalink: /kb/257/Q257779/
 
 ## Q257779: FIX: Printer Dialog of DataReport PrintReport Is Always Portrait
 
+{% raw %}
+
 	Article: Q257779
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -129,3 +131,5 @@ permalink: /kb/257/Q257779/
 	
 	=============================================================================
 	
+
+{% endraw %}

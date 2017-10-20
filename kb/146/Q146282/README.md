@@ -6,6 +6,8 @@ permalink: /kb/146/Q146282/
 
 ## Q146282: Import Project with Same Name as Existing Project Merges Tasks
 
+{% raw %}
+
 	Article: Q146282
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -54,3 +56,5 @@ permalink: /kb/146/Q146282/
 	
 	=============================================================================
 	
+
+{% endraw %}

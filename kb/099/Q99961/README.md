@@ -6,6 +6,8 @@ permalink: /kb/099/Q99961/
 
 ## Q99961: PC DirSync: Dir-Sync Import Required If Requestor Deleted
 
+{% raw %}
+
 	Article: Q99961
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.5
@@ -69,3 +71,5 @@ permalink: /kb/099/Q99961/
 	
 	=============================================================================
 	
+
+{% endraw %}

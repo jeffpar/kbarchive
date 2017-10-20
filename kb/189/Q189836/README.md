@@ -6,6 +6,8 @@ permalink: /kb/189/Q189836/
 
 ## Q189836: Outlook Web Access Error: HTTP/1.0 403 Access Forbidden
 
+{% raw %}
+
 	Article: Q189836
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0; winnt:5.0,5.5
@@ -74,3 +76,5 @@ permalink: /kb/189/Q189836/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177340/
 
 ## Q177340: BUG: Using Selected Method in Init Event Does Not Work
 
+{% raw %}
+
 	Article: Q177340
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -76,3 +78,5 @@ permalink: /kb/177/Q177340/
 	
 	=============================================================================
 	
+
+{% endraw %}

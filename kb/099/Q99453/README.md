@@ -6,6 +6,8 @@ permalink: /kb/099/Q99453/
 
 ## Q99453: NET COPY Gives Moved Files New Directory's Permissions
 
+{% raw %}
+
 	Article: Q99453
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/099/Q99453/
 	
 	=============================================================================
 	
+
+{% endraw %}

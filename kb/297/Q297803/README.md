@@ -6,6 +6,8 @@ permalink: /kb/297/Q297803/
 
 ## Q297803: FIX: VFP Crashes With Two REPORT Previews Active
 
+{% raw %}
+
 	Article: Q297803
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -74,3 +76,5 @@ permalink: /kb/297/Q297803/
 	
 	=============================================================================
 	
+
+{% endraw %}

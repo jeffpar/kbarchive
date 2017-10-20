@@ -6,6 +6,8 @@ permalink: /kb/159/Q159098/
 
 ## Q159098: WinNT 4.0 Resource Kit Utility &quot;Remote Console&quot; Client Fails
 
+{% raw %}
+
 	Article: Q159098
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/159/Q159098/
 	
 	=============================================================================
 	
+
+{% endraw %}

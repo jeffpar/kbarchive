@@ -6,6 +6,8 @@ permalink: /kb/164/Q164361/
 
 ## Q164361: FIX: Using EditBox SelStart Property Causes Refresh Problems
 
+{% raw %}
+
 	Article: Q164361
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -109,3 +111,5 @@ permalink: /kb/164/Q164361/
 	
 	=============================================================================
 	
+
+{% endraw %}

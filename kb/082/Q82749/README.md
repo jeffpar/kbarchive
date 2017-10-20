@@ -6,6 +6,8 @@ permalink: /kb/082/Q82749/
 
 ## Q82749: Using LPT1.OS2, LPT1.DOS, or FILE: Ports When Printing
 
+{% raw %}
+
 	Article: Q82749
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/082/Q82749/
 	
 	=============================================================================
 	
+
+{% endraw %}

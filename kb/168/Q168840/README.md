@@ -6,6 +6,8 @@ permalink: /kb/168/Q168840/
 
 ## Q168840: WD97: New File Types Still Open in Version 7.0 After Upgrade
 
+{% raw %}
+
 	Article: Q168840
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:95,97
@@ -84,3 +86,5 @@ permalink: /kb/168/Q168840/
 	
 	=============================================================================
 	
+
+{% endraw %}

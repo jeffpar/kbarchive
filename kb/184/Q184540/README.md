@@ -6,6 +6,8 @@ permalink: /kb/184/Q184540/
 
 ## Q184540: &quot;File Not Found&quot; Error Displayed in Product Documentation
 
+{% raw %}
+
 	Article: Q184540
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/184/Q184540/
 	
 	=============================================================================
 	
+
+{% endraw %}

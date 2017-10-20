@@ -6,6 +6,8 @@ permalink: /kb/160/Q160047/
 
 ## Q160047: 3DMM: Cannot Load Studio.chk File
 
+{% raw %}
+
 	Article: Q160047
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -60,3 +62,5 @@ permalink: /kb/160/Q160047/
 	
 	=============================================================================
 	
+
+{% endraw %}

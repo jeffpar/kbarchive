@@ -6,6 +6,8 @@ permalink: /kb/185/Q185700/
 
 ## Q185700: HOWTO: Remote User-Defined Types
 
+{% raw %}
+
 	Article: Q185700
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -209,3 +211,5 @@ permalink: /kb/185/Q185700/
 	
 	=============================================================================
 	
+
+{% endraw %}

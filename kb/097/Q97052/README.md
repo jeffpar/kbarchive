@@ -6,6 +6,8 @@ permalink: /kb/097/Q97052/
 
 ## Q97052: Redefining the Function Keys in FoxPro Config File
 
+{% raw %}
+
 	Article: Q97052
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:1.0,1.01,1.02,1.21,2.0,2.1,2.5,2.5a; WINDOWS:2.5,2.5a
@@ -50,3 +52,5 @@ permalink: /kb/097/Q97052/
 	
 	=============================================================================
 	
+
+{% endraw %}

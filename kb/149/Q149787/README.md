@@ -6,6 +6,8 @@ permalink: /kb/149/Q149787/
 
 ## Q149787: 3Com 3C59x Causes Windows NT Server to Stop Responding
 
+{% raw %}
+
 	Article: Q149787
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -63,3 +65,5 @@ permalink: /kb/149/Q149787/
 	
 	=============================================================================
 	
+
+{% endraw %}

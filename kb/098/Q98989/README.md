@@ -6,6 +6,8 @@ permalink: /kb/098/Q98989/
 
 ## Q98989: FIX: Constructor C4705 Warning from Aggregate Class Member
 
+{% raw %}
+
 	Article: Q98989
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,2.20
@@ -109,3 +111,5 @@ permalink: /kb/098/Q98989/
 	
 	=============================================================================
 	
+
+{% endraw %}

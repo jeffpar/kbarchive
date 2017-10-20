@@ -6,6 +6,8 @@ permalink: /kb/181/Q181256/
 
 ## Q181256: WD97: Application Error Saving File w/Graphic to WordPerfect 5.x
 
+{% raw %}
+
 	Article: Q181256
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -66,3 +68,5 @@ permalink: /kb/181/Q181256/
 	
 	=============================================================================
 	
+
+{% endraw %}

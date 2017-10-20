@@ -6,6 +6,8 @@ permalink: /kb/157/Q157577/
 
 ## Q157577: Soccer: Troubleshooting Display Problems
 
+{% raw %}
+
 	Article: Q157577
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -168,3 +170,5 @@ permalink: /kb/157/Q157577/
 	
 	=============================================================================
 	
+
+{% endraw %}

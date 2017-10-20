@@ -6,6 +6,8 @@ permalink: /kb/181/Q181797/
 
 ## Q181797: XFOR: Message May Be Duplicated In cc:Mail Inbox
 
+{% raw %}
+
 	Article: Q181797
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -46,3 +48,5 @@ permalink: /kb/181/Q181797/
 	
 	=============================================================================
 	
+
+{% endraw %}

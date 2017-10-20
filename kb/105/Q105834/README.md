@@ -6,6 +6,8 @@ permalink: /kb/105/Q105834/
 
 ## Q105834: BUG: FoxPro Does Not Import .DIF Format File
 
+{% raw %}
+
 	Article: Q105834
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6,2.6a; WINDOWS:2.5x,2.6,2.6a,3.0,5.0,5.0a,6.0
@@ -107,3 +109,5 @@ permalink: /kb/105/Q105834/
 	
 	=============================================================================
 	
+
+{% endraw %}

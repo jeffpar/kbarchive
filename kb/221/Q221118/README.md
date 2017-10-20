@@ -6,6 +6,8 @@ permalink: /kb/221/Q221118/
 
 ## Q221118: HOWTO: Upgrade a VSS5 Database to VSS6 Using Archive Utility
 
+{% raw %}
+
 	Article: Q221118
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -99,3 +101,5 @@ permalink: /kb/221/Q221118/
 	
 	=============================================================================
 	
+
+{% endraw %}

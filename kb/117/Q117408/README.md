@@ -6,6 +6,8 @@ permalink: /kb/117/Q117408/
 
 ## Q117408: Query Speed Is Slower with ORDER BY Clause
 
+{% raw %}
+
 	Article: Q117408
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6; MS-DOS:2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
@@ -61,3 +63,5 @@ permalink: /kb/117/Q117408/
 	
 	=============================================================================
 	
+
+{% endraw %}

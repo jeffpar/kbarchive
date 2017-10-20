@@ -6,6 +6,8 @@ permalink: /kb/075/Q75007/
 
 ## Q75007: Installing MS-DOS 5.x or 6.x on Tandy 2500XL/1000TL3/1000TL
 
+{% raw %}
+
 	Article: Q75007
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -71,3 +73,5 @@ permalink: /kb/075/Q75007/
 	
 	=============================================================================
 	
+
+{% endraw %}

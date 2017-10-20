@@ -6,6 +6,8 @@ permalink: /kb/169/Q169199/
 
 ## Q169199: XADM: Purpose of Hierarch.dat in the DSADATA Directory
 
+{% raw %}
+
 	Article: Q169199
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -55,3 +57,5 @@ permalink: /kb/169/Q169199/
 	
 	=============================================================================
 	
+
+{% endraw %}

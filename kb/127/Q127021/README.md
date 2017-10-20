@@ -6,6 +6,8 @@ permalink: /kb/127/Q127021/
 
 ## Q127021: SMARTDrive Version History
 
+{% raw %}
+
 	Article: Q127021
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.0,5.x,6.0,6.2,6.21,6.22; WINDOWS:3.0,3.0a,3.1,3.11
@@ -97,3 +99,5 @@ permalink: /kb/127/Q127021/
 	
 	=============================================================================
 	
+
+{% endraw %}

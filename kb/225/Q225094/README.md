@@ -6,6 +6,8 @@ permalink: /kb/225/Q225094/
 
 ## Q225094: RPC Named Pipe Server App Encounters Invalid Handle Exceptions
 
+{% raw %}
+
 	Article: Q225094
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -81,3 +83,5 @@ permalink: /kb/225/Q225094/
 	
 	=============================================================================
 	
+
+{% endraw %}

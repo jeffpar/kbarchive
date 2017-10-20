@@ -6,6 +6,8 @@ permalink: /kb/183/Q183878/
 
 ## Q183878: CART: Screen Flashes Above the Horizon in 3D Mode
 
+{% raw %}
+
 	Article: Q183878
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -76,3 +78,5 @@ permalink: /kb/183/Q183878/
 	
 	=============================================================================
 	
+
+{% endraw %}

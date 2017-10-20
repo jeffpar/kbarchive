@@ -6,6 +6,8 @@ permalink: /kb/086/Q86024/
 
 ## Q86024: Ocean Isle Software ReachOut May Fail Under Windows 3.1
 
+{% raw %}
+
 	Article: Q86024
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -76,3 +78,5 @@ permalink: /kb/086/Q86024/
 	
 	=============================================================================
 	
+
+{% endraw %}

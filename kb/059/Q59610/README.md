@@ -6,6 +6,8 @@ permalink: /kb/059/Q59610/
 
 ## Q59610: OS/2 SDK Version of CVP 2.30 Won't Debug DosLoadModule DLLs
 
+{% raw %}
+
 	Article: Q59610
 	Product(s): See article
 	Version(s): 2.30
@@ -27,3 +29,5 @@ permalink: /kb/059/Q59610/
 	dated 3-21-89. The file date is the only discernible difference
 	between these two versions since the files themselves are exactly the
 	same size.
+
+{% endraw %}

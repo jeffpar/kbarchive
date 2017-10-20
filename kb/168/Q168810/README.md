@@ -6,6 +6,8 @@ permalink: /kb/168/Q168810/
 
 ## Q168810: WD97: Cannot Type in Floating Text Box with Protected Document
 
+{% raw %}
+
 	Article: Q168810
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -75,3 +77,5 @@ permalink: /kb/168/Q168810/
 	
 	=============================================================================
 	
+
+{% endraw %}

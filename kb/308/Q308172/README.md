@@ -6,6 +6,8 @@ permalink: /kb/308/Q308172/
 
 ## Q308172: DOC:Performance Counter Docs Mention MS-Search Instead of Search
 
+{% raw %}
+
 	Article: Q308172
 	Product(s): Internet Information Server
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/308/Q308172/
 	
 	=============================================================================
 	
+
+{% endraw %}

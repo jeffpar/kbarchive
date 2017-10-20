@@ -6,6 +6,8 @@ permalink: /kb/139/Q139392/
 
 ## Q139392: Mac MM: How to Run Program Without CD-ROM
 
+{% raw %}
+
 	Article: Q139392
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/139/Q139392/
 	
 	=============================================================================
 	
+
+{% endraw %}

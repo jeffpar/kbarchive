@@ -6,6 +6,8 @@ permalink: /kb/099/Q99376/
 
 ## Q99376: Status Frames Skipped Returns a Value of Zero
 
+{% raw %}
+
 	Article: Q99376
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/099/Q99376/
 	
 	=============================================================================
 	
+
+{% endraw %}

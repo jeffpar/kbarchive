@@ -6,6 +6,8 @@ permalink: /kb/129/Q129781/
 
 ## Q129781: PC DB: Move User Err: A User Already Exists on the Postoffice
 
+{% raw %}
+
 	Article: Q129781
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -57,3 +59,5 @@ permalink: /kb/129/Q129781/
 	
 	=============================================================================
 	
+
+{% endraw %}

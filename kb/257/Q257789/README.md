@@ -6,6 +6,8 @@ permalink: /kb/257/Q257789/
 
 ## Q257789: FIX: Data Source Is Not Updated When PropertyChanged Is Called
 
+{% raw %}
+
 	Article: Q257789
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -73,3 +75,5 @@ permalink: /kb/257/Q257789/
 	
 	=============================================================================
 	
+
+{% endraw %}

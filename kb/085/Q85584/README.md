@@ -6,6 +6,8 @@ permalink: /kb/085/Q85584/
 
 ## Q85584: WRK 3.1 Troubleshooting Multimedia is Misleading
 
+{% raw %}
+
 	Article: Q85584
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/085/Q85584/
 	
 	=============================================================================
 	
+
+{% endraw %}

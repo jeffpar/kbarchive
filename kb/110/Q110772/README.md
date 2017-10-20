@@ -6,6 +6,8 @@ permalink: /kb/110/Q110772/
 
 ## Q110772: PRB: Window Sizes in .EXE Change w/ MODIFY WINDOW SCREEN FONT
 
+{% raw %}
+
 	Article: Q110772
 	Product(s): Microsoft FoxPro
 	Version(s): 2.00 2.50 2.50a 2.50b 3.00
@@ -75,3 +77,5 @@ permalink: /kb/110/Q110772/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/083/Q83239/
 
 ## Q83239: Epson Action Laser II Printer and Windows
 
+{% raw %}
+
 	Article: Q83239
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/083/Q83239/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/043/Q43560/
 
 ## Q43560: Getting Full EXEC Pathname from Environment Table Using PSP
 
+{% raw %}
+
 	Article: Q43560
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -90,3 +92,5 @@ permalink: /kb/043/Q43560/
 	
 	  FullPath$ = tmp$
 	END FUNCTION
+
+{% endraw %}

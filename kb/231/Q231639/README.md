@@ -6,6 +6,8 @@ permalink: /kb/231/Q231639/
 
 ## Q231639: Academic Learning Series Microsoft Windows NT Network Administra
 
+{% raw %}
+
 	Article: Q231639
 	Product(s): Microsoft Press
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/231/Q231639/
 	
 	=============================================================================
 	
+
+{% endraw %}

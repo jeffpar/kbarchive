@@ -6,6 +6,8 @@ permalink: /kb/131/Q131439/
 
 ## Q131439: Mac Encarta 95: ErrMsg: Error Loading the Specified List
 
+{% raw %}
+
 	Article: Q131439
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -49,3 +51,5 @@ permalink: /kb/131/Q131439/
 	
 	=============================================================================
 	
+
+{% endraw %}

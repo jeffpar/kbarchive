@@ -6,6 +6,8 @@ permalink: /kb/231/Q231276/
 
 ## Q231276: Missing IIS 4.0 Software Development Kit (SDK) Files
 
+{% raw %}
+
 	Article: Q231276
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/231/Q231276/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131875/
 
 ## Q131875: BUG: Form Designer Window Won't Scroll When Selecting Objects
 
+{% raw %}
+
 	Article: Q131875
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -76,3 +78,5 @@ permalink: /kb/131/Q131875/
 	
 	=============================================================================
 	
+
+{% endraw %}

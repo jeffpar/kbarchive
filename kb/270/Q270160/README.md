@@ -6,6 +6,8 @@ permalink: /kb/270/Q270160/
 
 ## Q270160: XADM: Unable to View Free/Busy Information Across Exchange Sites
 
+{% raw %}
+
 	Article: Q270160
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -153,3 +155,5 @@ permalink: /kb/270/Q270160/
 	
 	=============================================================================
 	
+
+{% endraw %}

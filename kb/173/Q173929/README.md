@@ -6,6 +6,8 @@ permalink: /kb/173/Q173929/
 
 ## Q173929: WD97: Frame Converted from Text Box Is Gray When Header Is Open
 
+{% raw %}
+
 	Article: Q173929
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/173/Q173929/
 	
 	=============================================================================
 	
+
+{% endraw %}

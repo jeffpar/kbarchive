@@ -6,6 +6,8 @@ permalink: /kb/160/Q160910/
 
 ## Q160910: PRB: No Text/Caption Properties for Subclassed Combo or List
 
+{% raw %}
+
 	Article: Q160910
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0,6.0
@@ -80,3 +82,5 @@ permalink: /kb/160/Q160910/
 	
 	=============================================================================
 	
+
+{% endraw %}

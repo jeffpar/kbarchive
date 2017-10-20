@@ -6,6 +6,8 @@ permalink: /kb/066/Q66290/
 
 ## Q66290: Reference to _pgmptr in CRTEXE.OBJ Is Invalid
 
+{% raw %}
+
 	Article: Q66290
 	Product(s): See article
 	Version(s): 6.00 6.00a
@@ -80,3 +82,5 @@ permalink: /kb/066/Q66290/
 	Move the resulting DLL to your LIBPATH and call DLLpgmptr() wherever
 	you would normally use _pgmptr, and link the library that results from
 	running IMPLIB into the final .EXE.
+
+{% endraw %}

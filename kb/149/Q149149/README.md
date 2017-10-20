@@ -6,6 +6,8 @@ permalink: /kb/149/Q149149/
 
 ## Q149149: No Network Access with LAN Workplace and TCP/IP
 
+{% raw %}
+
 	Article: Q149149
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -71,3 +73,5 @@ permalink: /kb/149/Q149149/
 	
 	=============================================================================
 	
+
+{% endraw %}

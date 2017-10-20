@@ -6,6 +6,8 @@ permalink: /kb/114/Q114779/
 
 ## Q114779: Overview of Disk Mirroring (RAID Level 1) in Windows NT
 
+{% raw %}
+
 	Article: Q114779
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -125,3 +127,5 @@ permalink: /kb/114/Q114779/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216548/
 
 ## Q216548: HOWTO: Add Submenus Using Add-Ins
 
+{% raw %}
+
 	Article: Q216548
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -124,3 +126,5 @@ permalink: /kb/216/Q216548/
 	
 	=============================================================================
 	
+
+{% endraw %}

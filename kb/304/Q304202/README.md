@@ -6,6 +6,8 @@ permalink: /kb/304/Q304202/
 
 ## Q304202: HTTP Compression Unavailable in Internet Information Services
 
+{% raw %}
+
 	Article: Q304202
 	Product(s): Internet Information Server
 	Version(s): 2000,5.0
@@ -50,3 +52,5 @@ permalink: /kb/304/Q304202/
 	
 	=============================================================================
 	
+
+{% endraw %}

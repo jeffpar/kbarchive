@@ -6,6 +6,8 @@ permalink: /kb/067/Q67887/
 
 ## Q67887: &quot;Illegal Function Call,&quot; Negative Number to Fractional Power
 
+{% raw %}
+
 	Article: Q67887
 	Product(s): See article
 	Version(s): 1.00a 1.00b | 6.00 6.00b 7.00 7.10
@@ -68,3 +70,5 @@ permalink: /kb/067/Q67887/
 	      PRINT "Warning: the resulting root is an imaginary number. This"
 	      PRINT "root should be multiplied by i, the square root of -1."
 	   END IF
+
+{% endraw %}

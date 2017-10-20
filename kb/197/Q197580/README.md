@@ -6,6 +6,8 @@ permalink: /kb/197/Q197580/
 
 ## Q197580: INFO: Distribution Issues with Riched32.dll
 
+{% raw %}
+
 	Article: Q197580
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -105,3 +107,5 @@ permalink: /kb/197/Q197580/
 	
 	=============================================================================
 	
+
+{% endraw %}

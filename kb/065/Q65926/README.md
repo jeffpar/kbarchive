@@ -6,6 +6,8 @@ permalink: /kb/065/Q65926/
 
 ## Q65926: How PutCopyBox Determines Window Size in 7.00/7.10 UI ToolBox
 
+{% raw %}
+
 	Article: Q65926
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -92,3 +94,5 @@ permalink: /kb/065/Q65926/
 	        movsb                           ;and height out of string
 	
 	        pop     ds
+
+{% endraw %}

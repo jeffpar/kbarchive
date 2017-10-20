@@ -6,6 +6,8 @@ permalink: /kb/087/Q87276/
 
 ## Q87276: Windows Err Msg: Micro Channel Bus Time-out Error
 
+{% raw %}
+
 	Article: Q87276
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/087/Q87276/
 	
 	=============================================================================
 	
+
+{% endraw %}

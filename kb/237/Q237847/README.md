@@ -6,6 +6,8 @@ permalink: /kb/237/Q237847/
 
 ## Q237847: INFO: The Role of the PJM File in VSS and VFP Integration
 
+{% raw %}
+
 	Article: Q237847
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -117,3 +119,5 @@ permalink: /kb/237/Q237847/
 	
 	=============================================================================
 	
+
+{% endraw %}

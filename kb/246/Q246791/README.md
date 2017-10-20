@@ -6,6 +6,8 @@ permalink: /kb/246/Q246791/
 
 ## Q246791: SMS: Status Filter Rule Property Page Is Unresponsive
 
+{% raw %}
+
 	Article: Q246791
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -66,3 +68,5 @@ permalink: /kb/246/Q246791/
 	
 	=============================================================================
 	
+
+{% endraw %}

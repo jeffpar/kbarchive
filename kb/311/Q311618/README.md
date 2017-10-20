@@ -6,6 +6,8 @@ permalink: /kb/311/Q311618/
 
 ## Q311618: Unknown HTTP Verbs Generate a 405 Error Message Instead of a 501
 
+{% raw %}
+
 	Article: Q311618
 	Product(s): Internet Information Server
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/311/Q311618/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/252/Q252312/
 
 ## Q252312: XCLN: Delegate Cannot Modify an Owner's Appointment Twice
 
+{% raw %}
+
 	Article: Q252312
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; :8.03,8.04
@@ -60,3 +62,5 @@ permalink: /kb/252/Q252312/
 	
 	=============================================================================
 	
+
+{% endraw %}

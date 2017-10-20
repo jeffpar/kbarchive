@@ -6,6 +6,8 @@ permalink: /kb/118/Q118996/
 
 ## Q118996: Encarta 1994 Err Msg: Encarta Must Be Loaded To Use Dictionary!
 
+{% raw %}
+
 	Article: Q118996
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1994 edition,1995 edition; WINDOWS:
@@ -58,3 +60,5 @@ permalink: /kb/118/Q118996/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/090/Q90372/
 
 ## Q90372: DOC: Clarification of the LOGFONT lfOutPrecision Field
 
+{% raw %}
+
 	Article: Q90372
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -63,3 +65,5 @@ permalink: /kb/090/Q90372/
 	
 	=============================================================================
 	
+
+{% endraw %}

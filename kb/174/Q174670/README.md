@@ -6,6 +6,8 @@ permalink: /kb/174/Q174670/
 
 ## Q174670: Close Combat: Program Hangs During Game Play
 
+{% raw %}
+
 	Article: Q174670
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -69,3 +71,5 @@ permalink: /kb/174/Q174670/
 	
 	=============================================================================
 	
+
+{% endraw %}

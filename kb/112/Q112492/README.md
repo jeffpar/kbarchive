@@ -6,6 +6,8 @@ permalink: /kb/112/Q112492/
 
 ## Q112492: Schubert: Text Cut Off with ATI Mach 32 Large Fonts
 
+{% raw %}
+
 	Article: Q112492
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -52,3 +54,5 @@ permalink: /kb/112/Q112492/
 	
 	=============================================================================
 	
+
+{% endraw %}

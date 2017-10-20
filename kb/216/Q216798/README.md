@@ -6,6 +6,8 @@ permalink: /kb/216/Q216798/
 
 ## Q216798: XFOR: Embedded OLE Objects Are Not Converted
 
+{% raw %}
+
 	Article: Q216798
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -48,3 +50,5 @@ permalink: /kb/216/Q216798/
 	
 	=============================================================================
 	
+
+{% endraw %}

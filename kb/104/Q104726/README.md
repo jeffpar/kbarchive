@@ -6,6 +6,8 @@ permalink: /kb/104/Q104726/
 
 ## Q104726: DoubleSpace Restarts Your Computer and Loops Endlessly
 
+{% raw %}
+
 	Article: Q104726
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -64,3 +66,5 @@ permalink: /kb/104/Q104726/
 	
 	=============================================================================
 	
+
+{% endraw %}

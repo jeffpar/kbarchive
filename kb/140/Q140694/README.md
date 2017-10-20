@@ -6,6 +6,8 @@ permalink: /kb/140/Q140694/
 
 ## Q140694: How to Restart the Macintosh from Within FoxPro
 
+{% raw %}
+
 	Article: Q140694
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,2.6a,3.0b
@@ -114,3 +116,5 @@ permalink: /kb/140/Q140694/
 	
 	=============================================================================
 	
+
+{% endraw %}

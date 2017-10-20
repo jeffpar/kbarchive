@@ -6,6 +6,8 @@ permalink: /kb/150/Q150706/
 
 ## Q150706: PRB: Long File Names are Converted to Short by Association
 
+{% raw %}
+
 	Article: Q150706
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -84,3 +86,5 @@ permalink: /kb/150/Q150706/
 	
 	=============================================================================
 	
+
+{% endraw %}

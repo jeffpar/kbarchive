@@ -6,6 +6,8 @@ permalink: /kb/032/Q32151/
 
 ## Q32151: QB.EXE Hang After Editing &quot;Duplicate Definition&quot; in SHARED
 
+{% raw %}
+
 	Article: Q32151
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -46,3 +48,5 @@ permalink: /kb/032/Q32151/
 	   SHARED a, b, c%()
 	   SHARED x$, c%()
 	   END SUB
+
+{% endraw %}

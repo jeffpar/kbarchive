@@ -6,6 +6,8 @@ permalink: /kb/111/Q111913/
 
 ## Q111913: Creating Comma-Delimited File That Retains Trailing Space
 
+{% raw %}
+
 	Article: Q111913
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a,2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
@@ -71,3 +73,5 @@ permalink: /kb/111/Q111913/
 	
 	=============================================================================
 	
+
+{% endraw %}

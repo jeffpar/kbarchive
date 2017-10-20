@@ -6,6 +6,8 @@ permalink: /kb/230/Q230755/
 
 ## Q230755: Microsoft Commerce Solutions Comments and Corrections
 
+{% raw %}
+
 	Article: Q230755
 	Product(s): Microsoft Press
 	Version(s): 
@@ -213,3 +215,5 @@ permalink: /kb/230/Q230755/
 	
 	=============================================================================
 	
+
+{% endraw %}

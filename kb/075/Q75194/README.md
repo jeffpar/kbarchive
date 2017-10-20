@@ -6,6 +6,8 @@ permalink: /kb/075/Q75194/
 
 ## Q75194: Zoom In Feature Disabled After Minimizing PaintBrush
 
+{% raw %}
+
 	Article: Q75194
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -36,3 +38,5 @@ permalink: /kb/075/Q75194/
 	
 	=============================================================================
 	
+
+{% endraw %}

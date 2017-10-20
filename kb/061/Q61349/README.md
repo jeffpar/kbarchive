@@ -6,6 +6,8 @@ permalink: /kb/061/Q61349/
 
 ## Q61349: BASIC PDS 7.00 &quot;Program Memory Overflow&quot; with Too Many CONST
 
+{% raw %}
+
 	Article: Q61349
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -87,3 +89,5 @@ permalink: /kb/061/Q61349/
 	   CLOSE
 	   PRINT "File 'test.bas' successfully created"
 	   END
+
+{% endraw %}

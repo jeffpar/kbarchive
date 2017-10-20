@@ -6,6 +6,8 @@ permalink: /kb/196/Q196174/
 
 ## Q196174: XADM: How Move Server Wizard Handles Duplicate E-Mail Addresses
 
+{% raw %}
+
 	Article: Q196174
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -56,3 +58,5 @@ permalink: /kb/196/Q196174/
 	
 	=============================================================================
 	
+
+{% endraw %}

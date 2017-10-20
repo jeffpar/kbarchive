@@ -6,6 +6,8 @@ permalink: /kb/136/Q136376/
 
 ## Q136376: MEMORY.DMP File Not Created on Some NCR Computers
 
+{% raw %}
+
 	Article: Q136376
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/136/Q136376/
 	
 	=============================================================================
 	
+
+{% endraw %}

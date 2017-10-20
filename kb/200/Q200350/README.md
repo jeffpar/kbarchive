@@ -6,6 +6,8 @@ permalink: /kb/200/Q200350/
 
 ## Q200350: HPMON Generates Event ID 1012 When Using DLC Protocol
 
+{% raw %}
+
 	Article: Q200350
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/200/Q200350/
 	
 	=============================================================================
 	
+
+{% endraw %}

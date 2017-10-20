@@ -6,6 +6,8 @@ permalink: /kb/046/Q46049/
 
 ## Q46049: Paper Sizes and Names
 
+{% raw %}
+
 	Article: Q46049
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/046/Q46049/
 	
 	=============================================================================
 	
+
+{% endraw %}

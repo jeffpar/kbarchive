@@ -6,6 +6,8 @@ permalink: /kb/057/Q57931/
 
 ## Q57931: EXE Does Nothing If BC.EXE Compiled from GW-BASIC Binary Code
 
+{% raw %}
+
 	Article: Q57931
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10
@@ -46,3 +48,5 @@ permalink: /kb/057/Q57931/
 	MS-DOS.
 	
 	Additional reference words: B_QuickBas B_GWBasicI
+
+{% endraw %}

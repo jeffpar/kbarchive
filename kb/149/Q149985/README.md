@@ -6,6 +6,8 @@ permalink: /kb/149/Q149985/
 
 ## Q149985: NEC READY Boot Disk Configuration for SB16 to Work in FS5.
 
+{% raw %}
+
 	Article: Q149985
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0,5.1
@@ -113,3 +115,5 @@ permalink: /kb/149/Q149985/
 	
 	=============================================================================
 	
+
+{% endraw %}

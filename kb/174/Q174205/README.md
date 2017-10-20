@@ -6,6 +6,8 @@ permalink: /kb/174/Q174205/
 
 ## Q174205: LSASS May Use a Large Amount of Memory on a Domain Controller
 
+{% raw %}
+
 	Article: Q174205
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/174/Q174205/
 	
 	=============================================================================
 	
+
+{% endraw %}

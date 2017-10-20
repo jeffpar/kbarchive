@@ -6,6 +6,8 @@ permalink: /kb/143/Q143371/
 
 ## Q143371: MSB Solar: Blank Buttons on Windows 95 Taskbar After Exiting
 
+{% raw %}
+
 	Article: Q143371
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,95
@@ -48,3 +50,5 @@ permalink: /kb/143/Q143371/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/044/Q44641/
 
 ## Q44641: QuickC 2.00 Has Problems with BREAK Key on TANDY 1000 TX
 
+{% raw %}
+
 	Article: Q44641
 	Product(s): See article
 	Version(s): 2.00
@@ -33,3 +35,5 @@ permalink: /kb/044/Q44641/
 	and CTRL+C Keys until you have contacted Microsoft Support,
 	received the patch, and installed it.  You can reach
 	Support at (206) 454-2030.
+
+{% endraw %}

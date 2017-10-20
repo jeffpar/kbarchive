@@ -6,6 +6,8 @@ permalink: /kb/099/Q99175/
 
 ## Q99175: Bookshelf: Message Asks for Encarta CD
 
+{% raw %}
+
 	Article: Q99175
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/099/Q99175/
 	
 	=============================================================================
 	
+
+{% endraw %}

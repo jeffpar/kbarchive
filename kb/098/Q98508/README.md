@@ -6,6 +6,8 @@ permalink: /kb/098/Q98508/
 
 ## Q98508: EMM386.EXE B=&lt;address&gt; Explained
 
+{% raw %}
+
 	Article: Q98508
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -61,3 +63,5 @@ permalink: /kb/098/Q98508/
 	
 	=============================================================================
 	
+
+{% endraw %}

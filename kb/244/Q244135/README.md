@@ -6,6 +6,8 @@ permalink: /kb/244/Q244135/
 
 ## Q244135: Too Many Printers Can Cause Unsuccessful Boot
 
+{% raw %}
+
 	Article: Q244135
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -155,3 +157,5 @@ permalink: /kb/244/Q244135/
 	
 	=============================================================================
 	
+
+{% endraw %}

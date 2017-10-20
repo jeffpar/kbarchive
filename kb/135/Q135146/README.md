@@ -6,6 +6,8 @@ permalink: /kb/135/Q135146/
 
 ## Q135146: McAfee Secure Station Clock Drawn Incorrectly
 
+{% raw %}
+
 	Article: Q135146
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/135/Q135146/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/275/Q275728/
 
 ## Q275728: Encarta: How to Register Encarta Encyclopedia Online
 
+{% raw %}
+
 	Article: Q275728
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/275/Q275728/
 	
 	=============================================================================
 	
+
+{% endraw %}

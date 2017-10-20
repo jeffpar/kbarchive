@@ -6,6 +6,8 @@ permalink: /kb/123/Q123418/
 
 ## Q123418: STOP 0x0000008B During Installation on DEC Alpha 2100
 
+{% raw %}
+
 	Article: Q123418
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/123/Q123418/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/094/Q94942/
 
 ## Q94942: DOCERR: Value Returned By Prologue Macro Documented Incorrectly
 
+{% raw %}
+
 	Article: Q94942
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -52,3 +54,5 @@ permalink: /kb/094/Q94942/
 	
 	=============================================================================
 	
+
+{% endraw %}

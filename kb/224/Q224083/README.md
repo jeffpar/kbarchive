@@ -6,6 +6,8 @@ permalink: /kb/224/Q224083/
 
 ## Q224083: Err Msg: Event ID 7022: The Messenger Service Hung on Starting
 
+{% raw %}
+
 	Article: Q224083
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/224/Q224083/
 	
 	=============================================================================
 	
+
+{% endraw %}

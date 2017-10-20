@@ -6,6 +6,8 @@ permalink: /kb/093/Q93239/
 
 ## Q93239: PC DB: Mail Message (.MAI) File Format
 
+{% raw %}
+
 	Article: Q93239
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 
@@ -32,3 +34,5 @@ permalink: /kb/093/Q93239/
 	
 	=============================================================================
 	
+
+{% endraw %}

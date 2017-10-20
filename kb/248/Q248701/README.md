@@ -6,6 +6,8 @@ permalink: /kb/248/Q248701/
 
 ## Q248701: Schdist.exe Caught in Endless Loop of &quot;Sent Resend Requests&quot;
 
+{% raw %}
+
 	Article: Q248701
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0a
@@ -78,3 +80,5 @@ permalink: /kb/248/Q248701/
 	
 	=============================================================================
 	
+
+{% endraw %}

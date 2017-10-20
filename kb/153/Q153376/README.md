@@ -6,6 +6,8 @@ permalink: /kb/153/Q153376/
 
 ## Q153376: Redial on Link Failure Problems After Upgrade
 
+{% raw %}
+
 	Article: Q153376
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -74,3 +76,5 @@ permalink: /kb/153/Q153376/
 	
 	=============================================================================
 	
+
+{% endraw %}

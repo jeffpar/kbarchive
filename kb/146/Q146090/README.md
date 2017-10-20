@@ -6,6 +6,8 @@ permalink: /kb/146/Q146090/
 
 ## Q146090: Configuring Proteon ProNET-4/16 p1394 Token Ring Adapter
 
+{% raw %}
+
 	Article: Q146090
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -64,3 +66,5 @@ permalink: /kb/146/Q146090/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136487/
 
 ## Q136487: PC DirSync: Err Msg: Fatal &#91;161&#93; Server Configuration Busy
 
+{% raw %}
+
 	Article: Q136487
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a,3.2,3.5
@@ -72,3 +74,5 @@ permalink: /kb/136/Q136487/
 	
 	=============================================================================
 	
+
+{% endraw %}

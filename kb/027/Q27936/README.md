@@ -6,6 +6,8 @@ permalink: /kb/027/Q27936/
 
 ## Q27936: Sample Program That Makes OS/2 Call to DosChdir
 
+{% raw %}
+
 	Article: Q27936
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -36,3 +38,5 @@ permalink: /kb/027/Q27936/
 	  Print "Directory changed for the process."
 	END IF
 	END
+
+{% endraw %}

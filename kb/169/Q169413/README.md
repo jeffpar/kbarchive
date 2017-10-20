@@ -6,6 +6,8 @@ permalink: /kb/169/Q169413/
 
 ## Q169413: XADM: Mailbox Resources Does Not Show All Mailboxes
 
+{% raw %}
+
 	Article: Q169413
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -50,3 +52,5 @@ permalink: /kb/169/Q169413/
 	
 	=============================================================================
 	
+
+{% endraw %}

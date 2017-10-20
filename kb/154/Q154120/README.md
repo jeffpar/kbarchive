@@ -6,6 +6,8 @@ permalink: /kb/154/Q154120/
 
 ## Q154120: Debugging User Profiles and System Policies in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q154120
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -182,3 +184,5 @@ permalink: /kb/154/Q154120/
 	
 	=============================================================================
 	
+
+{% endraw %}

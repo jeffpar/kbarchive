@@ -6,6 +6,8 @@ permalink: /kb/151/Q151910/
 
 ## Q151910: File Copy Animation Appears as Shredded Paper
 
+{% raw %}
+
 	Article: Q151910
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -56,3 +58,5 @@ permalink: /kb/151/Q151910/
 	
 	=============================================================================
 	
+
+{% endraw %}

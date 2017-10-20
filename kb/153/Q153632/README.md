@@ -6,6 +6,8 @@ permalink: /kb/153/Q153632/
 
 ## Q153632: INFO: Type of OCX Property in Typelib Should Match Its RetVal
 
+{% raw %}
+
 	Article: Q153632
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -60,3 +62,5 @@ permalink: /kb/153/Q153632/
 	
 	=============================================================================
 	
+
+{% endraw %}

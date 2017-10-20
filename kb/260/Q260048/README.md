@@ -6,6 +6,8 @@ permalink: /kb/260/Q260048/
 
 ## Q260048: PRB: Grid Becomes Empty When Changing DataSession
 
+{% raw %}
+
 	Article: Q260048
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -102,3 +104,5 @@ permalink: /kb/260/Q260048/
 	
 	=============================================================================
 	
+
+{% endraw %}

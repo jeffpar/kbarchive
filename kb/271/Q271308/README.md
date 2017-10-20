@@ -6,6 +6,8 @@ permalink: /kb/271/Q271308/
 
 ## Q271308: Err Installing HIS 2000 on Windows 2000 Using Terminal Server
 
+{% raw %}
+
 	Article: Q271308
 	Product(s): Microsoft SNA Server
 	Version(s): ; WINDOWS:2000,2000 SP1
@@ -122,3 +124,5 @@ permalink: /kb/271/Q271308/
 	
 	=============================================================================
 	
+
+{% endraw %}

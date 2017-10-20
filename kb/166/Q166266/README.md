@@ -6,6 +6,8 @@ permalink: /kb/166/Q166266/
 
 ## Q166266: STOP 0x0000000A Using OpenNT Commands and Utilities
 
+{% raw %}
+
 	Article: Q166266
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/166/Q166266/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179346/
 
 ## Q179346: XADM: Generating the OAB Yields Error c1031662 Events 5004 5012
 
+{% raw %}
+
 	Article: Q179346
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -121,3 +123,5 @@ permalink: /kb/179/Q179346/
 	
 	=============================================================================
 	
+
+{% endraw %}

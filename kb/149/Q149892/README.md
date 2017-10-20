@@ -6,6 +6,8 @@ permalink: /kb/149/Q149892/
 
 ## Q149892: XCON: Web Client Cannot Post Reply to Public Folder on IPM.Note
 
+{% raw %}
+
 	Article: Q149892
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -67,3 +69,5 @@ permalink: /kb/149/Q149892/
 	
 	=============================================================================
 	
+
+{% endraw %}

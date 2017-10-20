@@ -6,6 +6,8 @@ permalink: /kb/241/Q241428/
 
 ## Q241428: HTTP Compression Does Not Compress Office Documents
 
+{% raw %}
+
 	Article: Q241428
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -56,3 +58,5 @@ permalink: /kb/241/Q241428/
 	
 	=============================================================================
 	
+
+{% endraw %}

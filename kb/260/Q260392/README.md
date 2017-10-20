@@ -6,6 +6,8 @@ permalink: /kb/260/Q260392/
 
 ## Q260392: Resource Explorer Takes a Long Time to Display Large Text File
 
+{% raw %}
+
 	Article: Q260392
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -62,3 +64,5 @@ permalink: /kb/260/Q260392/
 	
 	=============================================================================
 	
+
+{% endraw %}

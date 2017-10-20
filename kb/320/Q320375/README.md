@@ -6,6 +6,8 @@ permalink: /kb/320/Q320375/
 
 ## Q320375: HOW TO: Create GUIDs by Using Active Server Pages in IIS
 
+{% raw %}
+
 	Article: Q320375
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -446,3 +448,5 @@ permalink: /kb/320/Q320375/
 	
 	=============================================================================
 	
+
+{% endraw %}

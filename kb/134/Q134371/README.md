@@ -6,6 +6,8 @@ permalink: /kb/134/Q134371/
 
 ## Q134371: SMTP: Loss of Available Free Memory During Operation
 
+{% raw %}
+
 	Article: Q134371
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -75,3 +77,5 @@ permalink: /kb/134/Q134371/
 	
 	=============================================================================
 	
+
+{% endraw %}

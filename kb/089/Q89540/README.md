@@ -6,6 +6,8 @@ permalink: /kb/089/Q89540/
 
 ## Q89540: PRB: 15-Sec Hang During Critical Error Handling on Pen System
 
+{% raw %}
+
 	Article: Q89540
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -66,3 +68,5 @@ permalink: /kb/089/Q89540/
 	
 	=============================================================================
 	
+
+{% endraw %}

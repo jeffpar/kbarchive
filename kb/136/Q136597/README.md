@@ -6,6 +6,8 @@ permalink: /kb/136/Q136597/
 
 ## Q136597: Drives May Appear to Be Missing When Using DriveSpace
 
+{% raw %}
+
 	Article: Q136597
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -88,3 +90,5 @@ permalink: /kb/136/Q136597/
 	
 	=============================================================================
 	
+
+{% endraw %}

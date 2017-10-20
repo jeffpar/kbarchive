@@ -6,6 +6,8 @@ permalink: /kb/247/Q247875/
 
 ## Q247875: XCLN: Mapped Drive Letter Path Changes to UNC Path
 
+{% raw %}
+
 	Article: Q247875
 	Product(s): Microsoft Exchange
 	Version(s): 8.04; WINDOWS:
@@ -61,3 +63,5 @@ permalink: /kb/247/Q247875/
 	
 	=============================================================================
 	
+
+{% endraw %}

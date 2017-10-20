@@ -6,6 +6,8 @@ permalink: /kb/086/Q86949/
 
 ## Q86949: 3COM: Information Needed to Troubleshoot the Gateway
 
+{% raw %}
+
 	Article: Q86949
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -47,3 +49,5 @@ permalink: /kb/086/Q86949/
 	
 	=============================================================================
 	
+
+{% endraw %}

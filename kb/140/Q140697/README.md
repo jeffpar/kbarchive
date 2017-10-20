@@ -6,6 +6,8 @@ permalink: /kb/140/Q140697/
 
 ## Q140697: INF: Win16 ODBC Applications in a Win32 Environment
 
+{% raw %}
+
 	Article: Q140697
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -116,3 +118,5 @@ permalink: /kb/140/Q140697/
 	
 	=============================================================================
 	
+
+{% endraw %}

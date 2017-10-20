@@ -6,6 +6,8 @@ permalink: /kb/179/Q179129/
 
 ## Q179129: STOP 0x0000000A or 0x00000019 Due to Modified Teardrop Attack
 
+{% raw %}
+
 	Article: Q179129
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -140,3 +142,5 @@ permalink: /kb/179/Q179129/
 	
 	=============================================================================
 	
+
+{% endraw %}

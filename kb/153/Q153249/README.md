@@ -6,6 +6,8 @@ permalink: /kb/153/Q153249/
 
 ## Q153249: WIN16 to Windows NT Upgrade Fails with Long Server Name
 
+{% raw %}
+
 	Article: Q153249
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -51,3 +53,5 @@ permalink: /kb/153/Q153249/
 	
 	=============================================================================
 	
+
+{% endraw %}

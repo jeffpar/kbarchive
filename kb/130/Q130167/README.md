@@ -6,6 +6,8 @@ permalink: /kb/130/Q130167/
 
 ## Q130167: Keyboard Shortcuts for Visual FoxPro
 
+{% raw %}
+
 	Article: Q130167
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -114,3 +116,5 @@ permalink: /kb/130/Q130167/
 	
 	=============================================================================
 	
+
+{% endraw %}

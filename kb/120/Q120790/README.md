@@ -6,6 +6,8 @@ permalink: /kb/120/Q120790/
 
 ## Q120790: How to Create a Modal Screen Effect Programmatically
 
+{% raw %}
+
 	Article: Q120790
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
@@ -102,3 +104,5 @@ permalink: /kb/120/Q120790/
 	
 	=============================================================================
 	
+
+{% endraw %}

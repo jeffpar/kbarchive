@@ -6,6 +6,8 @@ permalink: /kb/293/Q293841/
 
 ## Q293841: Non-Paged Pool Is Exhausted by Afd
 
+{% raw %}
+
 	Article: Q293841
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -107,3 +109,5 @@ permalink: /kb/293/Q293841/
 	
 	=============================================================================
 	
+
+{% endraw %}

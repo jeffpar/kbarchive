@@ -6,6 +6,8 @@ permalink: /kb/176/Q176740/
 
 ## Q176740: XFOR: Migrated GroupWise Users Cannot See Migrated Messages
 
+{% raw %}
+
 	Article: Q176740
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -51,3 +53,5 @@ permalink: /kb/176/Q176740/
 	
 	=============================================================================
 	
+
+{% endraw %}

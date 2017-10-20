@@ -6,6 +6,8 @@ permalink: /kb/146/Q146467/
 
 ## Q146467: Recurring Meetings w/ Same Patterns May Fall on Different Days
 
+{% raw %}
+
 	Article: Q146467
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -42,3 +44,5 @@ permalink: /kb/146/Q146467/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/121/Q121333/
 
 ## Q121333: Bookshelf: No Pronunciations in Dictionary
 
+{% raw %}
+
 	Article: Q121333
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,1995 edition
@@ -123,3 +125,5 @@ permalink: /kb/121/Q121333/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173088/
 
 ## Q173088: How to Remove and Reinstall the Dial-Up Adapter for MSN
 
+{% raw %}
+
 	Article: Q173088
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5
@@ -79,3 +81,5 @@ permalink: /kb/173/Q173088/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/105/Q105288/
 
 ## Q105288: SMTP: Gateway Cannot Run Under Windows NT TCP/IP
 
+{% raw %}
+
 	Article: Q105288
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -48,3 +50,5 @@ permalink: /kb/105/Q105288/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/061/Q61264/
 
 ## Q61264: Mouse Will Not Work with PC Tools Deluxe 5.5 and 6.0
 
+{% raw %}
+
 	Article: Q61264
 	Product(s): See article
 	Version(s): 1.00
@@ -21,3 +23,5 @@ permalink: /kb/061/Q61264/
 	
 	For information about this update, contact Central Point Software at
 	(503) 690-8080.
+
+{% endraw %}

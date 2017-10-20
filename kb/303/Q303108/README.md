@@ -6,6 +6,8 @@ permalink: /kb/303/Q303108/
 
 ## Q303108: MechWarrior 4: Err Msg: EXCEPTION Stack Overflow or File Not...
 
+{% raw %}
+
 	Article: Q303108
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -150,3 +152,5 @@ permalink: /kb/303/Q303108/
 	
 	=============================================================================
 	
+
+{% endraw %}

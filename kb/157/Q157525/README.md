@@ -6,6 +6,8 @@ permalink: /kb/157/Q157525/
 
 ## Q157525: BUG: Remote View Has Only Two Join Types
 
+{% raw %}
+
 	Article: Q157525
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,5.0,5.0a,6.0
@@ -88,3 +90,5 @@ permalink: /kb/157/Q157525/
 	
 	=============================================================================
 	
+
+{% endraw %}

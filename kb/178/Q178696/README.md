@@ -6,6 +6,8 @@ permalink: /kb/178/Q178696/
 
 ## Q178696: Age of Empires: List of Civilizations and Wonders
 
+{% raw %}
+
 	Article: Q178696
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/178/Q178696/
 	
 	=============================================================================
 	
+
+{% endraw %}

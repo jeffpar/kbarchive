@@ -6,6 +6,8 @@ permalink: /kb/050/Q50470/
 
 ## Q50470: .BAS in Set Paths for Include Files in QB 4.50 Options Menu
 
+{% raw %}
+
 	Article: Q50470
 	Product(s): See article
 	Version(s): 4.50
@@ -49,3 +51,5 @@ permalink: /kb/050/Q50470/
 	the Set Paths directory:
 	
 	   REM $INCLUDE: 'BOB.INC'
+
+{% endraw %}

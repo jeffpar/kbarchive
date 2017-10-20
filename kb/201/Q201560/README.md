@@ -6,6 +6,8 @@ permalink: /kb/201/Q201560/
 
 ## Q201560: Streets 98: Cannot Start or Export Yellow Pages USA Addresses
 
+{% raw %}
+
 	Article: Q201560
 	Product(s): Microsoft Automap
 	Version(s): 1.0,98
@@ -54,3 +56,5 @@ permalink: /kb/201/Q201560/
 	
 	=============================================================================
 	
+
+{% endraw %}

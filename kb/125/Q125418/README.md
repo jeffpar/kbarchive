@@ -6,6 +6,8 @@ permalink: /kb/125/Q125418/
 
 ## Q125418: UNCONF: PRB: Error in SCX: Objtype=1 not found
 
+{% raw %}
+
 	Article: Q125418
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.5x,2.6,2.6a
@@ -91,3 +93,5 @@ permalink: /kb/125/Q125418/
 	
 	=============================================================================
 	
+
+{% endraw %}

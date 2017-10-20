@@ -6,6 +6,8 @@ permalink: /kb/272/Q272258/
 
 ## Q272258: Programs Included with the Fun Pocket PC Expansion Pack
 
+{% raw %}
+
 	Article: Q272258
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -210,3 +212,5 @@ permalink: /kb/272/Q272258/
 	
 	=============================================================================
 	
+
+{% endraw %}

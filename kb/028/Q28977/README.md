@@ -6,6 +6,8 @@ permalink: /kb/028/Q28977/
 
 ## Q28977: /MBF Fails When Variable x Used in Random file PUT#1,,x
 
+{% raw %}
+
 	Article: Q28977
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -75,3 +77,5 @@ permalink: /kb/028/Q28977/
 	   NEXT i
 	   CLOSE #1
 	   END
+
+{% endraw %}

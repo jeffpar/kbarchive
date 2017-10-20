@@ -6,6 +6,8 @@ permalink: /kb/125/Q125879/
 
 ## Q125879: WINS Static Mappings and Remote Access Services
 
+{% raw %}
+
 	Article: Q125879
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -66,3 +68,5 @@ permalink: /kb/125/Q125879/
 	
 	=============================================================================
 	
+
+{% endraw %}

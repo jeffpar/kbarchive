@@ -6,6 +6,8 @@ permalink: /kb/035/Q35276/
 
 ## Q35276: Sample Program That Makes MS OS/2 Call to DosPhysicalDisk
 
+{% raw %}
+
 	Article: Q35276
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -65,3 +67,5 @@ permalink: /kb/035/Q35276/
 	   PRINT asc(mid$(databuff,1,1));asc(mid$(databuff,2,2))
 	END IF
 	END
+
+{% endraw %}

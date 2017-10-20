@@ -6,6 +6,8 @@ permalink: /kb/081/Q81786/
 
 ## Q81786: Windows 3.1 Startup Group Order
 
+{% raw %}
+
 	Article: Q81786
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/081/Q81786/
 	
 	=============================================================================
 	
+
+{% endraw %}

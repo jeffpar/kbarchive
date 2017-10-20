@@ -6,6 +6,8 @@ permalink: /kb/116/Q116252/
 
 ## Q116252: 3/2 Currency Grouping Not Available in Windows 95
 
+{% raw %}
+
 	Article: Q116252
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/116/Q116252/
 	
 	=============================================================================
 	
+
+{% endraw %}

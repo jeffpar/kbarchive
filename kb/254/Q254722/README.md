@@ -6,6 +6,8 @@ permalink: /kb/254/Q254722/
 
 ## Q254722: FTP Download Session Fails When FTP Control Connection Is Closed
 
+{% raw %}
+
 	Article: Q254722
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -71,3 +73,5 @@ permalink: /kb/254/Q254722/
 	
 	=============================================================================
 	
+
+{% endraw %}

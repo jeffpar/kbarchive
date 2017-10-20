@@ -6,6 +6,8 @@ permalink: /kb/151/Q151184/
 
 ## Q151184: SMS: Disabling Inventory Collection over Slow Connections
 
+{% raw %}
+
 	Article: Q151184
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1,1.2
@@ -97,3 +99,5 @@ permalink: /kb/151/Q151184/
 	
 	=============================================================================
 	
+
+{% endraw %}

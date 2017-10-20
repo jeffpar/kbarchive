@@ -6,6 +6,8 @@ permalink: /kb/322/Q322864/
 
 ## Q322864: Deleted Files Do Not Immediately Go Away
 
+{% raw %}
+
 	Article: Q322864
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0
@@ -88,3 +90,5 @@ permalink: /kb/322/Q322864/
 	
 	=============================================================================
 	
+
+{% endraw %}

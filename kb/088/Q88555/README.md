@@ -6,6 +6,8 @@ permalink: /kb/088/Q88555/
 
 ## Q88555: HOWTO: Obtain Width and Height of a CBitmap Object
 
+{% raw %}
+
 	Article: Q88555
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,2.1,4.0,7.0
@@ -70,3 +72,5 @@ permalink: /kb/088/Q88555/
 	
 	=============================================================================
 	
+
+{% endraw %}

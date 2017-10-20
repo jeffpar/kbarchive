@@ -6,6 +6,8 @@ permalink: /kb/178/Q178640/
 
 ## Q178640: Could Not Find Domain Controller When Establishing a Trust
 
+{% raw %}
+
 	Article: Q178640
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -126,3 +128,5 @@ permalink: /kb/178/Q178640/
 	
 	=============================================================================
 	
+
+{% endraw %}

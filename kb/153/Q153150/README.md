@@ -6,6 +6,8 @@ permalink: /kb/153/Q153150/
 
 ## Q153150: XFOR: Err Msg: IMC The Following Recipient Couldn't Be Reached
 
+{% raw %}
+
 	Article: Q153150
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -61,3 +63,5 @@ permalink: /kb/153/Q153150/
 	
 	=============================================================================
 	
+
+{% endraw %}

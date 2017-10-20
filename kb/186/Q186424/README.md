@@ -6,6 +6,8 @@ permalink: /kb/186/Q186424/
 
 ## Q186424: INFO: DateTimePicker CustomFormat Is Case-Sensitive
 
+{% raw %}
+
 	Article: Q186424
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -121,3 +123,5 @@ permalink: /kb/186/Q186424/
 	
 	=============================================================================
 	
+
+{% endraw %}

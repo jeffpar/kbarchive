@@ -6,6 +6,8 @@ permalink: /kb/188/Q188317/
 
 ## Q188317: SuperTip Demonstrates Tool Tips in an MFC Application
 
+{% raw %}
+
 	Article: Q188317
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0sp3
@@ -233,3 +235,5 @@ permalink: /kb/188/Q188317/
 	
 	=============================================================================
 	
+
+{% endraw %}

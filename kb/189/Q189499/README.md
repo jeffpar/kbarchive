@@ -6,6 +6,8 @@ permalink: /kb/189/Q189499/
 
 ## Q189499: FIX: VB5.EXE Application Error with UserControls in Project
 
+{% raw %}
+
 	Article: Q189499
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -71,3 +73,5 @@ permalink: /kb/189/Q189499/
 	
 	=============================================================================
 	
+
+{% endraw %}

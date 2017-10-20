@@ -6,6 +6,8 @@ permalink: /kb/084/Q84946/
 
 ## Q84946: Okidata Microline 320, 321 Correct Print Quality Selection
 
+{% raw %}
+
 	Article: Q84946
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/084/Q84946/
 	
 	=============================================================================
 	
+
+{% endraw %}

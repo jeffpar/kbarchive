@@ -6,6 +6,8 @@ permalink: /kb/198/Q198101/
 
 ## Q198101: Combat Flight Simulator: Textures Disappear or Computer Hangs
 
+{% raw %}
+
 	Article: Q198101
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -84,3 +86,5 @@ permalink: /kb/198/Q198101/
 	
 	=============================================================================
 	
+
+{% endraw %}

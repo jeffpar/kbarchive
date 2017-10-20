@@ -6,6 +6,8 @@ permalink: /kb/117/Q117397/
 
 ## Q117397: Incorrect File Size Displayed Using FTP Service
 
+{% raw %}
+
 	Article: Q117397
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -53,3 +55,5 @@ permalink: /kb/117/Q117397/
 	
 	=============================================================================
 	
+
+{% endraw %}

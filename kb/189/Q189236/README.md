@@ -6,6 +6,8 @@ permalink: /kb/189/Q189236/
 
 ## Q189236: WD97: Table of Contents Entries Appear in All Caps
 
+{% raw %}
+
 	Article: Q189236
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/189/Q189236/
 	
 	=============================================================================
 	
+
+{% endraw %}

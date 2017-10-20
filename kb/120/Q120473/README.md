@@ -6,6 +6,8 @@ permalink: /kb/120/Q120473/
 
 ## Q120473: Setup Hangs with Buslogic BT-946C on Powerstation/Powerserver
 
+{% raw %}
+
 	Article: Q120473
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51 4.0
@@ -93,3 +95,5 @@ permalink: /kb/120/Q120473/
 	
 	=============================================================================
 	
+
+{% endraw %}

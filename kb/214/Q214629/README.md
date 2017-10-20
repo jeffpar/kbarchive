@@ -6,6 +6,8 @@ permalink: /kb/214/Q214629/
 
 ## Q214629: How To Retrieve 3270 LU Information For SNA Server
 
+{% raw %}
+
 	Article: Q214629
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1
@@ -255,3 +257,5 @@ permalink: /kb/214/Q214629/
 	
 	=============================================================================
 	
+
+{% endraw %}

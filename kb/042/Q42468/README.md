@@ -6,6 +6,8 @@ permalink: /kb/042/Q42468/
 
 ## Q42468: QB.EXE Hang or &quot;Division by Zero&quot; with Labeled REM &#36;INCLUDE
 
+{% raw %}
+
 	Article: Q42468
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -51,3 +53,5 @@ permalink: /kb/042/Q42468/
 	20 '  "FILE NOT FOUND"
 	30 '
 	40 REM $INCLUDE: 'missing'       --one space between line number and REM
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146552/
 
 ## Q146552: XCLN: Revision Marks in Word Document are not Updated in PFs
 
+{% raw %}
+
 	Article: Q146552
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -62,3 +64,5 @@ permalink: /kb/146/Q146552/
 	
 	=============================================================================
 	
+
+{% endraw %}

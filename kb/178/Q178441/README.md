@@ -6,6 +6,8 @@ permalink: /kb/178/Q178441/
 
 ## Q178441: ActiveMovie Version Error During Starts Here Setup
 
+{% raw %}
+
 	Article: Q178441
 	Product(s): Microsoft Press
 	Version(s): 
@@ -101,3 +103,5 @@ permalink: /kb/178/Q178441/
 	
 	=============================================================================
 	
+
+{% endraw %}

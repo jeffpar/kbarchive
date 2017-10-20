@@ -6,6 +6,8 @@ permalink: /kb/242/Q242341/
 
 ## Q242341: XWEB: Access Violation After Saving Changes to Appointment
 
+{% raw %}
+
 	Article: Q242341
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -76,3 +78,5 @@ permalink: /kb/242/Q242341/
 	
 	=============================================================================
 	
+
+{% endraw %}

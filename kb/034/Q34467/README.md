@@ -6,6 +6,8 @@ permalink: /kb/034/Q34467/
 
 ## Q34467: MASM 5.10 MACRO.DOC: DOS Macro Syntax and Description
 
+{% raw %}
+
 	Article: Q34467
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -56,3 +58,5 @@ permalink: /kb/034/Q34467/
 	                segment     = Segment of buffer (DS if not given)
 	Return:         Pointer to string in SI, length of string in BX
 	Registers used: AX, DX, BX, SI
+
+{% endraw %}

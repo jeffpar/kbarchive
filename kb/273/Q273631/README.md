@@ -6,6 +6,8 @@ permalink: /kb/273/Q273631/
 
 ## Q273631: MM2: Vehicle Sticks in the Ground Near the San Francisco Docks
 
+{% raw %}
+
 	Article: Q273631
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -47,3 +49,5 @@ permalink: /kb/273/Q273631/
 	
 	=============================================================================
 	
+
+{% endraw %}

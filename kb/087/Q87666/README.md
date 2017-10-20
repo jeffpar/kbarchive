@@ -6,6 +6,8 @@ permalink: /kb/087/Q87666/
 
 ## Q87666: PRB: Changing Default Drive in FoxBASE+ Fox Central
 
+{% raw %}
+
 	Article: Q87666
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.17
@@ -52,3 +54,5 @@ permalink: /kb/087/Q87666/
 	
 	=============================================================================
 	
+
+{% endraw %}

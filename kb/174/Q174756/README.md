@@ -6,6 +6,8 @@ permalink: /kb/174/Q174756/
 
 ## Q174756: XADM: X.400 Connector Enabled on Standard Version of Exchange
 
+{% raw %}
+
 	Article: Q174756
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0 5.5
@@ -38,3 +40,5 @@ permalink: /kb/174/Q174756/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/201/Q201133/
 
 ## Q201133: Scripting Change Occurs When Upgrading from IIS 3.0
 
+{% raw %}
+
 	Article: Q201133
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -103,3 +105,5 @@ permalink: /kb/201/Q201133/
 	
 	=============================================================================
 	
+
+{% endraw %}

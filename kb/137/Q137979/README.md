@@ -6,6 +6,8 @@ permalink: /kb/137/Q137979/
 
 ## Q137979: Creating Windows 9x Home Directories on Windows NT Server
 
+{% raw %}
+
 	Article: Q137979
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.5,3.51,4.0
@@ -137,3 +139,5 @@ permalink: /kb/137/Q137979/
 	
 	=============================================================================
 	
+
+{% endraw %}

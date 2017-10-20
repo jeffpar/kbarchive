@@ -6,6 +6,8 @@ permalink: /kb/156/Q156126/
 
 ## Q156126: Troubleshooting Windows 95 Using Safe Mode
 
+{% raw %}
+
 	Article: Q156126
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2
@@ -527,3 +529,5 @@ permalink: /kb/156/Q156126/
 	
 	=============================================================================
 	
+
+{% endraw %}

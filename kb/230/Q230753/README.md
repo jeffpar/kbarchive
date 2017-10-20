@@ -6,6 +6,8 @@ permalink: /kb/230/Q230753/
 
 ## Q230753: XCLN: Outlook 8.03 Stays in Memory after Exiting
 
+{% raw %}
+
 	Article: Q230753
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:8.0
@@ -86,3 +88,5 @@ permalink: /kb/230/Q230753/
 	
 	=============================================================================
 	
+
+{% endraw %}

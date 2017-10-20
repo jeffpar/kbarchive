@@ -6,6 +6,8 @@ permalink: /kb/141/Q141949/
 
 ## Q141949: Changes in the SYS(0) Function in Visual FoxPro
 
+{% raw %}
+
 	Article: Q141949
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -50,3 +52,5 @@ permalink: /kb/141/Q141949/
 	
 	=============================================================================
 	
+
+{% endraw %}

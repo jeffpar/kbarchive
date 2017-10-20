@@ -6,6 +6,8 @@ permalink: /kb/098/Q98846/
 
 ## Q98846: Netwkstasetuid2 (Return 5) Error Means Privilege Problem
 
+{% raw %}
+
 	Article: Q98846
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/098/Q98846/
 	
 	=============================================================================
 	
+
+{% endraw %}

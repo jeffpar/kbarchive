@@ -6,6 +6,8 @@ permalink: /kb/158/Q158074/
 
 ## Q158074: XCLN: Using ShivaRemote w/ Exchange (MS-DOS/Real-Mode IPX)
 
+{% raw %}
+
 	Article: Q158074
 	Product(s): Microsoft Exchange
 	Version(s): MS-DOS:4.0,5.0
@@ -171,3 +173,5 @@ permalink: /kb/158/Q158074/
 	
 	=============================================================================
 	
+
+{% endraw %}

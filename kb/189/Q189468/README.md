@@ -6,6 +6,8 @@ permalink: /kb/189/Q189468/
 
 ## Q189468: HOWTO: Create a Basic Add-in Using VB5 or VB6
 
+{% raw %}
+
 	Article: Q189468
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -353,3 +355,5 @@ permalink: /kb/189/Q189468/
 	
 	=============================================================================
 	
+
+{% endraw %}

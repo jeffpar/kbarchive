@@ -6,6 +6,8 @@ permalink: /kb/195/Q195950/
 
 ## Q195950: How and Why ROOTDRIVE Is Used on Windows Terminal Server
 
+{% raw %}
+
 	Article: Q195950
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -190,3 +192,5 @@ permalink: /kb/195/Q195950/
 	
 	=============================================================================
 	
+
+{% endraw %}

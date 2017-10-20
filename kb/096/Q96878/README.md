@@ -6,6 +6,8 @@ permalink: /kb/096/Q96878/
 
 ## Q96878: File Manager Does Not Create Complete MS-DOS 6.x System Disk
 
+{% raw %}
+
 	Article: Q96878
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/096/Q96878/
 	
 	=============================================================================
 	
+
+{% endraw %}

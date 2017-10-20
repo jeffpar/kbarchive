@@ -6,6 +6,8 @@ permalink: /kb/245/Q245694/
 
 ## Q245694: XADM: Mailbox Manager Crashes When Excluded Mailbox Has No Proxy
 
+{% raw %}
+
 	Article: Q245694
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -85,3 +87,5 @@ permalink: /kb/245/Q245694/
 	
 	=============================================================================
 	
+
+{% endraw %}

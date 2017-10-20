@@ -6,6 +6,8 @@ permalink: /kb/156/Q156870/
 
 ## Q156870: PRB: Mouse &amp; Click Events Behavior in List Box and Grid Differ
 
+{% raw %}
+
 	Article: Q156870
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b 5.00
@@ -75,3 +77,5 @@ permalink: /kb/156/Q156870/
 	
 	=============================================================================
 	
+
+{% endraw %}

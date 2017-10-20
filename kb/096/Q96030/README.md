@@ -6,6 +6,8 @@ permalink: /kb/096/Q96030/
 
 ## Q96030: Err Msg: 'DoubleSpace Cannot Continue...' with Bernoulli
 
+{% raw %}
+
 	Article: Q96030
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -53,3 +55,5 @@ permalink: /kb/096/Q96030/
 	
 	=============================================================================
 	
+
+{% endraw %}

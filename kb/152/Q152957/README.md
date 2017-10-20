@@ -6,6 +6,8 @@ permalink: /kb/152/Q152957/
 
 ## Q152957: XADM: Non-Delivery Reports Incorrectly Returned in German
 
+{% raw %}
+
 	Article: Q152957
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/152/Q152957/
 	
 	=============================================================================
 	
+
+{% endraw %}

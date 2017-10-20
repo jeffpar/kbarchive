@@ -6,6 +6,8 @@ permalink: /kb/242/Q242349/
 
 ## Q242349: 'Error 5: Access Denied' When Connecting Using PPTP
 
+{% raw %}
+
 	Article: Q242349
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP5
@@ -115,3 +117,5 @@ permalink: /kb/242/Q242349/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85197/
 
 ## Q85197: Setup Runs in Black and White on 8514/a Video Systems
 
+{% raw %}
+
 	Article: Q85197
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/085/Q85197/
 	
 	=============================================================================
 	
+
+{% endraw %}

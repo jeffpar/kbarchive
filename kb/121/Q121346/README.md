@@ -6,6 +6,8 @@ permalink: /kb/121/Q121346/
 
 ## Q121346: BUG: Spaces Preceding Header File Name Generate Build Errors
 
+{% raw %}
+
 	Article: Q121346
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,2.0,2.1,4.0,4.1,5.0
@@ -81,3 +83,5 @@ permalink: /kb/121/Q121346/
 	
 	=============================================================================
 	
+
+{% endraw %}

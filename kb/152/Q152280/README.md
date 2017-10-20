@@ -6,6 +6,8 @@ permalink: /kb/152/Q152280/
 
 ## Q152280: How To Call a Visual FoxPro Application Using AppleScript
 
+{% raw %}
+
 	Article: Q152280
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -68,3 +70,5 @@ permalink: /kb/152/Q152280/
 	
 	=============================================================================
 	
+
+{% endraw %}

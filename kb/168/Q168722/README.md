@@ -6,6 +6,8 @@ permalink: /kb/168/Q168722/
 
 ## Q168722: GSNW May Create an Unnecessary DependOnService to LanManSer
 
+{% raw %}
+
 	Article: Q168722
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -90,3 +92,5 @@ permalink: /kb/168/Q168722/
 	
 	=============================================================================
 	
+
+{% endraw %}

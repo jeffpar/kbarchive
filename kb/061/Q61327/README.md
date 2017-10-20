@@ -6,6 +6,8 @@ permalink: /kb/061/Q61327/
 
 ## Q61327: C 6.00 Install Program May Create Empty Directories
 
+{% raw %}
+
 	Article: Q61327
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -19,3 +21,5 @@ permalink: /kb/061/Q61327/
 	to copy only one file from the installation disks (Setup/Copy), the
 	directory structure already will be in place. If you feel that the
 	extra subdirectories are unnecessary, you may delete them.
+
+{% endraw %}

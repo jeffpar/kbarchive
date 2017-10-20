@@ -6,6 +6,8 @@ permalink: /kb/188/Q188070/
 
 ## Q188070: List of Bugs Fixed in SNA Server 4.0 Service Packs 1 and 2
 
+{% raw %}
+
 	Article: Q188070
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0SP1,4.0SP2
@@ -373,3 +375,5 @@ permalink: /kb/188/Q188070/
 	
 	=============================================================================
 	
+
+{% endraw %}

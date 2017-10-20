@@ -6,6 +6,8 @@ permalink: /kb/129/Q129159/
 
 ## Q129159: How to Fill an Array Used as the Rowsource of a Combo Box
 
+{% raw %}
+
 	Article: Q129159
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -168,3 +170,5 @@ permalink: /kb/129/Q129159/
 	
 	=============================================================================
 	
+
+{% endraw %}

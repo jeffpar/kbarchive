@@ -6,6 +6,8 @@ permalink: /kb/242/Q242223/
 
 ## Q242223: XADM: How to Install and Use the Global Address List Modify Tool
 
+{% raw %}
+
 	Article: Q242223
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -151,3 +153,5 @@ permalink: /kb/242/Q242223/
 	
 	=============================================================================
 	
+
+{% endraw %}

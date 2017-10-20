@@ -6,6 +6,8 @@ permalink: /kb/273/Q273917/
 
 ## Q273917: Crimson Skies: Slow Performance When You Play Game for Long Time
 
+{% raw %}
+
 	Article: Q273917
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/273/Q273917/
 	
 	=============================================================================
 	
+
+{% endraw %}

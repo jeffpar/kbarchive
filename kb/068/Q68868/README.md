@@ -6,6 +6,8 @@ permalink: /kb/068/Q68868/
 
 ## Q68868: Unable to run Standard Mode Windows with EMM386
 
+{% raw %}
+
 	Article: Q68868
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22; WINDOWS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/068/Q68868/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98935/
 
 ## Q98935: Description of WordZap
 
+{% raw %}
+
 	Article: Q98935
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -72,3 +74,5 @@ permalink: /kb/098/Q98935/
 	
 	=============================================================================
 	
+
+{% endraw %}

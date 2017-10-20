@@ -6,6 +6,8 @@ permalink: /kb/178/Q178878/
 
 ## Q178878: WD97: Error 5152 Running Macro To Insert Graphic w/URL Address
 
+{% raw %}
+
 	Article: Q178878
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -97,3 +99,5 @@ permalink: /kb/178/Q178878/
 	
 	=============================================================================
 	
+
+{% endraw %}

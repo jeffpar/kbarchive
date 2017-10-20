@@ -6,6 +6,8 @@ permalink: /kb/030/Q30368/
 
 ## Q30368: Linking .OBJ Files from Compilers Prior to 5.00 May Give L4051
 
+{% raw %}
+
 	Article: Q30368
 	Product(s): See article
 	Version(s): 5.00 5.10 6.00 6.00a
@@ -45,3 +47,5 @@ permalink: /kb/030/Q30368/
 	or
 	
 	   cl c4mod c5mod /link llibce.lib/NOD;
+
+{% endraw %}

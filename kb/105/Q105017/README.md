@@ -6,6 +6,8 @@ permalink: /kb/105/Q105017/
 
 ## Q105017: X400: Description of X400ADM.EXE Program
 
+{% raw %}
+
 	Article: Q105017
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -86,3 +88,5 @@ permalink: /kb/105/Q105017/
 	
 	=============================================================================
 	
+
+{% endraw %}

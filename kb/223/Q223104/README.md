@@ -6,6 +6,8 @@ permalink: /kb/223/Q223104/
 
 ## Q223104: FIX: ParentControls.Count May Fail on Windows NT 4, SP4
 
+{% raw %}
+
 	Article: Q223104
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -106,3 +108,5 @@ permalink: /kb/223/Q223104/
 	
 	=============================================================================
 	
+
+{% endraw %}

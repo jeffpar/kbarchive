@@ -6,6 +6,8 @@ permalink: /kb/123/Q123010/
 
 ## Q123010: LAN Manager Login PIF Changes Foreground Settings
 
+{% raw %}
+
 	Article: Q123010
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/123/Q123010/
 	
 	=============================================================================
 	
+
+{% endraw %}

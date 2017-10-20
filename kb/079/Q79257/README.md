@@ -6,6 +6,8 @@ permalink: /kb/079/Q79257/
 
 ## Q79257: Ahead Systems Video Drivers for Windows
 
+{% raw %}
+
 	Article: Q79257
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -82,3 +84,5 @@ permalink: /kb/079/Q79257/
 	
 	=============================================================================
 	
+
+{% endraw %}

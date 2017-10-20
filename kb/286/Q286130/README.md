@@ -6,6 +6,8 @@ permalink: /kb/286/Q286130/
 
 ## Q286130: Casino: Game Quits When You Win Too Many Complimentary Items
 
+{% raw %}
+
 	Article: Q286130
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -53,3 +55,5 @@ permalink: /kb/286/Q286130/
 	
 	=============================================================================
 	
+
+{% endraw %}

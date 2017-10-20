@@ -6,6 +6,8 @@ permalink: /kb/199/Q199176/
 
 ## Q199176: XFOR: GroupWise/Lotus Notes DXA Slow to Respond to Full Reload
 
+{% raw %}
+
 	Article: Q199176
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.2; winnt:5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/199/Q199176/
 	
 	=============================================================================
 	
+
+{% endraw %}

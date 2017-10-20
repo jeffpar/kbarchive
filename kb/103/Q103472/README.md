@@ -6,6 +6,8 @@ permalink: /kb/103/Q103472/
 
 ## Q103472: No Network Option Doesn't Stop Mail and Schedule+ Installation
 
+{% raw %}
+
 	Article: Q103472
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -88,3 +90,5 @@ permalink: /kb/103/Q103472/
 	
 	=============================================================================
 	
+
+{% endraw %}

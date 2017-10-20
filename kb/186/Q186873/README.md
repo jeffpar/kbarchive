@@ -6,6 +6,8 @@ permalink: /kb/186/Q186873/
 
 ## Q186873: Netbios Delays Sending/Receiving Packets When Session Is Lost
 
+{% raw %}
+
 	Article: Q186873
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -77,3 +79,5 @@ permalink: /kb/186/Q186873/
 	
 	=============================================================================
 	
+
+{% endraw %}

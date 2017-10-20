@@ -6,6 +6,8 @@ permalink: /kb/274/Q274009/
 
 ## Q274009: XADM: Event ID 179  Message Is Logged During Automated Directory
 
+{% raw %}
+
 	Article: Q274009
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -66,3 +68,5 @@ permalink: /kb/274/Q274009/
 	
 	=============================================================================
 	
+
+{% endraw %}

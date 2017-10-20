@@ -6,6 +6,8 @@ permalink: /kb/177/Q177489/
 
 ## Q177489: SNA Web Clients Only Available on 3.0 Service Pack 2 CD
 
+{% raw %}
+
 	Article: Q177489
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP2
@@ -54,3 +56,5 @@ permalink: /kb/177/Q177489/
 	
 	=============================================================================
 	
+
+{% endraw %}

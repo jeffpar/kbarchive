@@ -6,6 +6,8 @@ permalink: /kb/163/Q163689/
 
 ## Q163689: XCON: MTA: Content Conversion Error 210
 
+{% raw %}
+
 	Article: Q163689
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -66,3 +68,5 @@ permalink: /kb/163/Q163689/
 	
 	=============================================================================
 	
+
+{% endraw %}

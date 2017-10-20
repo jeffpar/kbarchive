@@ -6,6 +6,8 @@ permalink: /kb/075/Q75143/
 
 ## Q75143: Using DISPLAY.SYS and PRINTER.SYS Drivers with QEMM
 
+{% raw %}
+
 	Article: Q75143
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -63,3 +65,5 @@ permalink: /kb/075/Q75143/
 	
 	=============================================================================
 	
+
+{% endraw %}

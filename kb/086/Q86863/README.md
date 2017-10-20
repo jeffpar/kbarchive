@@ -6,6 +6,8 @@ permalink: /kb/086/Q86863/
 
 ## Q86863: Maximum Hard Drive Partitions with MS OS/2 1.3 for Server
 
+{% raw %}
+
 	Article: Q86863
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/086/Q86863/
 	
 	=============================================================================
 	
+
+{% endraw %}

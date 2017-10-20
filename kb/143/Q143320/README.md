@@ -6,6 +6,8 @@ permalink: /kb/143/Q143320/
 
 ## Q143320: INFO: List of Problems Solved by Visual FoxPro 3.0 for Windows
 
+{% raw %}
+
 	Article: Q143320
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -175,3 +177,5 @@ permalink: /kb/143/Q143320/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/244/Q244973/
 
 ## Q244973: SNA Server Client Returns APPC Error 0001 0000015B
 
+{% raw %}
+
 	Article: Q244973
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -76,3 +78,5 @@ permalink: /kb/244/Q244973/
 	
 	=============================================================================
 	
+
+{% endraw %}

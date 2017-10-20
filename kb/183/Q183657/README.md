@@ -6,6 +6,8 @@ permalink: /kb/183/Q183657/
 
 ## Q183657: Unable to Insert OLE Objects into Application Documents
 
+{% raw %}
+
 	Article: Q183657
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -99,3 +101,5 @@ permalink: /kb/183/Q183657/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166537/
 
 ## Q166537: XFOR: NNTP Authentication Denied with Space in NT Password
 
+{% raw %}
+
 	Article: Q166537
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -62,3 +64,5 @@ permalink: /kb/166/Q166537/
 	
 	=============================================================================
 	
+
+{% endraw %}

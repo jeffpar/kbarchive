@@ -6,6 +6,8 @@ permalink: /kb/087/Q87204/
 
 ## Q87204: PROFS: How the Different Software Layers Communicate on the PC
 
+{% raw %}
+
 	Article: Q87204
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -47,3 +49,5 @@ permalink: /kb/087/Q87204/
 	
 	=============================================================================
 	
+
+{% endraw %}

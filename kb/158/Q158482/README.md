@@ -6,6 +6,8 @@ permalink: /kb/158/Q158482/
 
 ## Q158482: WD97: Envelopes Printed Upside Down on Hewlett-Packard 5si/5si
 
+{% raw %}
+
 	Article: Q158482
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -55,3 +57,5 @@ permalink: /kb/158/Q158482/
 	
 	=============================================================================
 	
+
+{% endraw %}

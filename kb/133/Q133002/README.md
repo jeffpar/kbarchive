@@ -6,6 +6,8 @@ permalink: /kb/133/Q133002/
 
 ## Q133002: How the AddColumn Method Computes New ColumnCount Value
 
+{% raw %}
+
 	Article: Q133002
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -50,3 +52,5 @@ permalink: /kb/133/Q133002/
 	
 	=============================================================================
 	
+
+{% endraw %}

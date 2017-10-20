@@ -6,6 +6,8 @@ permalink: /kb/235/Q235507/
 
 ## Q235507: FIX: DAO 3.6 Causes Debug Errors in MFC DAO Non-Unicode Builds
 
+{% raw %}
+
 	Article: Q235507
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -188,3 +190,5 @@ permalink: /kb/235/Q235507/
 	
 	=============================================================================
 	
+
+{% endraw %}

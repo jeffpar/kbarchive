@@ -6,6 +6,8 @@ permalink: /kb/114/Q114688/
 
 ## Q114688: RAS Can't Connect at 14400 or 19200 on TI 4000e
 
+{% raw %}
+
 	Article: Q114688
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -56,3 +58,5 @@ permalink: /kb/114/Q114688/
 	
 	=============================================================================
 	
+
+{% endraw %}

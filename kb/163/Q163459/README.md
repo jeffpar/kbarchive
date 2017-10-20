@@ -6,6 +6,8 @@ permalink: /kb/163/Q163459/
 
 ## Q163459: WD97: Footnote/Endnote Deleted by Grammar Checker
 
+{% raw %}
+
 	Article: Q163459
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -65,3 +67,5 @@ permalink: /kb/163/Q163459/
 	
 	=============================================================================
 	
+
+{% endraw %}

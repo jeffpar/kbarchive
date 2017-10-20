@@ -6,6 +6,8 @@ permalink: /kb/132/Q132737/
 
 ## Q132737: Commonly Asked Windows 95 Questions and Answers
 
+{% raw %}
+
 	Article: Q132737
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -189,3 +191,5 @@ permalink: /kb/132/Q132737/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141398/
 
 ## Q141398: FIX: &quot;Source Control&quot; Does Not Appear in Tools Menu w/ MIPS
 
+{% raw %}
+
 	Article: Q141398
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0; winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/141/Q141398/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197027/
 
 ## Q197027: BUG: WhatsThisHelpID on Toolbar Does Not Function as Expected
 
+{% raw %}
+
 	Article: Q197027
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -261,3 +263,5 @@ permalink: /kb/197/Q197027/
 	
 	=============================================================================
 	
+
+{% endraw %}

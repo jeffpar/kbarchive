@@ -6,6 +6,8 @@ permalink: /kb/102/Q102449/
 
 ## Q102449: NetWkstaGetInfo Documented Incorrectly in Programmer's Ref
 
+{% raw %}
+
 	Article: Q102449
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -35,3 +37,5 @@ permalink: /kb/102/Q102449/
 	
 	=============================================================================
 	
+
+{% endraw %}

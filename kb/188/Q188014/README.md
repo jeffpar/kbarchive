@@ -6,6 +6,8 @@ permalink: /kb/188/Q188014/
 
 ## Q188014: WD97: HTML File Opens into Online Layout View Not as HTML Tags
 
+{% raw %}
+
 	Article: Q188014
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -108,3 +110,5 @@ permalink: /kb/188/Q188014/
 	
 	=============================================================================
 	
+
+{% endraw %}

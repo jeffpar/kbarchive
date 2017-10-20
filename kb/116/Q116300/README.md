@@ -6,6 +6,8 @@ permalink: /kb/116/Q116300/
 
 ## Q116300: BUG: CV: Trace Does Not Step Into Some MOVE Overlay Functions
 
+{% raw %}
+
 	Article: Q116300
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.1
@@ -167,3 +169,5 @@ permalink: /kb/116/Q116300/
 	
 	=============================================================================
 	
+
+{% endraw %}

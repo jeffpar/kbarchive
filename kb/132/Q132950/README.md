@@ -6,6 +6,8 @@ permalink: /kb/132/Q132950/
 
 ## Q132950: Event ID 3216 and 3208 Logged For Replicator Service
 
+{% raw %}
+
 	Article: Q132950
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -95,3 +97,5 @@ permalink: /kb/132/Q132950/
 	
 	=============================================================================
 	
+
+{% endraw %}

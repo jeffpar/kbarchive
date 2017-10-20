@@ -6,6 +6,8 @@ permalink: /kb/250/Q250495/
 
 ## Q250495: PRB: SAVE SCREEN Not Creating Variable on CLEARed Screen
 
+{% raw %}
+
 	Article: Q250495
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -85,3 +87,5 @@ permalink: /kb/250/Q250495/
 	
 	=============================================================================
 	
+
+{% endraw %}

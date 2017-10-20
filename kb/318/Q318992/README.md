@@ -6,6 +6,8 @@ permalink: /kb/318/Q318992/
 
 ## Q318992: FIX: Fatal Exception in Edit Box with MS Active Accessibility
 
+{% raw %}
+
 	Article: Q318992
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -116,3 +118,5 @@ permalink: /kb/318/Q318992/
 	
 	=============================================================================
 	
+
+{% endraw %}

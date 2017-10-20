@@ -6,6 +6,8 @@ permalink: /kb/298/Q298892/
 
 ## Q298892: SNA/HIS Client Logon Fails After New Password Prompt
 
+{% raw %}
+
 	Article: Q298892
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0
@@ -66,3 +68,5 @@ permalink: /kb/298/Q298892/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117337/
 
 ## Q117337: Full Network Printer Path Not Shown in Microsoft Excel 5.0
 
+{% raw %}
+
 	Article: Q117337
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/117/Q117337/
 	
 	=============================================================================
 	
+
+{% endraw %}

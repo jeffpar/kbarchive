@@ -6,6 +6,8 @@ permalink: /kb/063/Q63956/
 
 ## Q63956: How to Scroll Text in BASIC Protected Mode Program Using API
 
+{% raw %}
+
 	Article: Q63956
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10
@@ -146,3 +148,5 @@ permalink: /kb/063/Q63956/
 	
 	DownArrow:  E = VioScrollDn (Y1, X1, Y2, X2, Lines, FillNew, Handle)
 	            RETURN
+
+{% endraw %}

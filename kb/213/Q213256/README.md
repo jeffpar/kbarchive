@@ -6,6 +6,8 @@ permalink: /kb/213/Q213256/
 
 ## Q213256: SMS: Data Summarization Does Not Account For Leap Years
 
+{% raw %}
+
 	Article: Q213256
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -50,3 +52,5 @@ permalink: /kb/213/Q213256/
 	
 	=============================================================================
 	
+
+{% endraw %}

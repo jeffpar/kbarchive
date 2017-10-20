@@ -6,6 +6,8 @@ permalink: /kb/196/Q196929/
 
 ## Q196929: Cannot Install Encarta on Windows NT 4.0-Based Computer
 
+{% raw %}
+
 	Article: Q196929
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -52,3 +54,5 @@ permalink: /kb/196/Q196929/
 	
 	=============================================================================
 	
+
+{% endraw %}

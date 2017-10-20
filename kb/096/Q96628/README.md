@@ -6,6 +6,8 @@ permalink: /kb/096/Q96628/
 
 ## Q96628: Screen Does Not Pause With MEM /C /P OR DIR /P
 
+{% raw %}
+
 	Article: Q96628
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -43,3 +45,5 @@ permalink: /kb/096/Q96628/
 	
 	=============================================================================
 	
+
+{% endraw %}

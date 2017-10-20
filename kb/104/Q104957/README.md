@@ -6,6 +6,8 @@ permalink: /kb/104/Q104957/
 
 ## Q104957: FIX: Cannot Make Server-Server RPCs in Non-trusted Mode
 
+{% raw %}
+
 	Article: Q104957
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/104/Q104957/
 	
 	=============================================================================
 	
+
+{% endraw %}

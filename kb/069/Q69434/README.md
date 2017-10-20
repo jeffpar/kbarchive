@@ -6,6 +6,8 @@ permalink: /kb/069/Q69434/
 
 ## Q69434: Pagemaker Err Msg: Memory Manager Failure
 
+{% raw %}
+
 	Article: Q69434
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -62,3 +64,5 @@ permalink: /kb/069/Q69434/
 	
 	=============================================================================
 	
+
+{% endraw %}

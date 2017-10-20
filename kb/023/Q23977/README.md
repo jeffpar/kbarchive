@@ -6,6 +6,8 @@ permalink: /kb/023/Q23977/
 
 ## Q23977: Creating Pointers to Specific Addresses in Memory
 
+{% raw %}
+
 	Article: Q23977
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10 6.00 6.00a
@@ -37,3 +39,5 @@ permalink: /kb/023/Q23977/
 	
 	When converting a pointer to or from a long, the upper 16 bits hold
 	the segment and the lower 16 bits hold the offset.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167595/
 
 ## Q167595: FP: How to Create a Script for the Marquee Control
 
+{% raw %}
+
 	Article: Q167595
 	Product(s): Word Front Page
 	Version(s): windows:97
@@ -135,3 +137,5 @@ permalink: /kb/167/Q167595/
 	
 	=============================================================================
 	
+
+{% endraw %}

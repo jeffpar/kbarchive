@@ -6,6 +6,8 @@ permalink: /kb/200/Q200852/
 
 ## Q200852: SMS: Troubleshooting Software Inventory Problems
 
+{% raw %}
+
 	Article: Q200852
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -83,3 +85,5 @@ permalink: /kb/200/Q200852/
 	
 	=============================================================================
 	
+
+{% endraw %}

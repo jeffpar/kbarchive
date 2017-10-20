@@ -6,6 +6,8 @@ permalink: /kb/168/Q168729/
 
 ## Q168729: WD97: View Merged Data Fails After Using Find Record
 
+{% raw %}
+
 	Article: Q168729
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/168/Q168729/
 	
 	=============================================================================
 	
+
+{% endraw %}

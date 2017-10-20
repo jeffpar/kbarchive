@@ -6,6 +6,8 @@ permalink: /kb/170/Q170121/
 
 ## Q170121: FP: Wrong Title after Changing File Extension from .TXT to .HTM
 
+{% raw %}
+
 	Article: Q170121
 	Product(s): Word Front Page
 	Version(s): windows:1.1,97, macintosh:1.0
@@ -64,3 +66,5 @@ permalink: /kb/170/Q170121/
 	
 	=============================================================================
 	
+
+{% endraw %}

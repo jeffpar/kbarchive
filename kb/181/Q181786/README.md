@@ -6,6 +6,8 @@ permalink: /kb/181/Q181786/
 
 ## Q181786: WD97: Using the INFO Field to Obtain Summary Info Data
 
+{% raw %}
+
 	Article: Q181786
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -54,11 +56,11 @@ permalink: /kb/181/Q181786/
 	For example, you can create a memo template that prompts you for sender,
 	recipient, and subject information by inserting the following fields:
 	
-	     {INFO Author {FILLIN "Who is the memo from?"} }
-	     {INFO Comments {FILLIN "Who is the memo to?"} }
-	     {INFO Title {FILLIN "What is the topic of the memo?"} }
-	     {INFO Subject {FILLIN "What is the subject of the memo?"} }
-	     {INFO Keywords {FILLIN "What are the keywords?"} }
+	     {INFO Author {FILLIN "Who is the memo from?"}}
+	     {INFO Comments {FILLIN "Who is the memo to?"}}
+	     {INFO Title {FILLIN "What is the topic of the memo?"}}
+	     {INFO Subject {FILLIN "What is the subject of the memo?"}}
+	     {INFO Keywords {FILLIN "What are the keywords?"}}
 	
 	NOTE: To create the field brackets, press CTRL+F9 (Windows) or COMMAND+F9
 	(Macintosh).
@@ -96,3 +98,5 @@ permalink: /kb/181/Q181786/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67271/
 
 ## Q67271: CodeView Asks for Path to a Source File Without Extension
 
+{% raw %}
+
 	Article: Q67271
 	Product(s): See article
 	Version(s): 2.x 3.00 3.10 3.11 3.50
@@ -23,3 +25,5 @@ permalink: /kb/067/Q67271/
 	This is a problem with the Microsoft LIB utilities earlier than version
 	3.08 and some third-party library managers. Beginning with LIB version
 	3.08, the full filename is stored in the library.
+
+{% endraw %}

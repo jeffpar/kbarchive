@@ -6,6 +6,8 @@ permalink: /kb/167/Q167946/
 
 ## Q167946: FIX: ATL Service EXE Doesn't Build in Release Build
 
+{% raw %}
+
 	Article: Q167946
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -94,3 +96,5 @@ permalink: /kb/167/Q167946/
 	
 	=============================================================================
 	
+
+{% endraw %}

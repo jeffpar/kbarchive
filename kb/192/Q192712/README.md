@@ -6,6 +6,8 @@ permalink: /kb/192/Q192712/
 
 ## Q192712: SBS Err Msg: Unable to Display This Folder
 
+{% raw %}
+
 	Article: Q192712
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 5.0,8.03,8.5
@@ -105,3 +107,5 @@ permalink: /kb/192/Q192712/
 	
 	=============================================================================
 	
+
+{% endraw %}

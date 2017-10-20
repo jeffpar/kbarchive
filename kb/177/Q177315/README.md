@@ -6,6 +6,8 @@ permalink: /kb/177/Q177315/
 
 ## Q177315: Err Msg: Your Server Has Not Responded...
 
+{% raw %}
+
 	Article: Q177315
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.51,4.0
@@ -91,3 +93,5 @@ permalink: /kb/177/Q177315/
 	
 	=============================================================================
 	
+
+{% endraw %}

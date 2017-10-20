@@ -6,6 +6,8 @@ permalink: /kb/264/Q264035/
 
 ## Q264035: XADM: Can't Configure Port for UDP New Mail Notification Packets
 
+{% raw %}
+
 	Article: Q264035
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -90,3 +92,5 @@ permalink: /kb/264/Q264035/
 	
 	=============================================================================
 	
+
+{% endraw %}

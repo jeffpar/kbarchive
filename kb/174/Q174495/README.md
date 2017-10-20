@@ -6,6 +6,8 @@ permalink: /kb/174/Q174495/
 
 ## Q174495: ODE97: Setup Wizard Disk Images Do Not Contain Long File Names
 
+{% raw %}
+
 	Article: Q174495
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/174/Q174495/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/202/Q202110/
 
 ## Q202110: PRB: Deleting ATL Dialog Causes Assert in Atlwin.h, Line 2281
 
+{% raw %}
+
 	Article: Q202110
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -243,3 +245,5 @@ permalink: /kb/202/Q202110/
 	
 	=============================================================================
 	
+
+{% endraw %}

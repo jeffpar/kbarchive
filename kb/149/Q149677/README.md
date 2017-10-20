@@ -6,6 +6,8 @@ permalink: /kb/149/Q149677/
 
 ## Q149677: How to Upgrade to MSN 1.2 Without Connecting to MSN
 
+{% raw %}
+
 	Article: Q149677
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2
@@ -66,3 +68,5 @@ permalink: /kb/149/Q149677/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138820/
 
 ## Q138820: BUG: Button Image on the Toolbar Appears Incomplete
 
+{% raw %}
+
 	Article: Q138820
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -107,3 +109,5 @@ permalink: /kb/138/Q138820/
 	
 	=============================================================================
 	
+
+{% endraw %}

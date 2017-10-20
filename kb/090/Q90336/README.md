@@ -6,6 +6,8 @@ permalink: /kb/090/Q90336/
 
 ## Q90336: Real-Mode NDIS Drivers Included with Windows for Workgroups
 
+{% raw %}
+
 	Article: Q90336
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -155,3 +157,5 @@ permalink: /kb/090/Q90336/
 	
 	=============================================================================
 	
+
+{% endraw %}

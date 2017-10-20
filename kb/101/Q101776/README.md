@@ -6,6 +6,8 @@ permalink: /kb/101/Q101776/
 
 ## Q101776: How Windows NT Detects Idle Time
 
+{% raw %}
+
 	Article: Q101776
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -38,3 +40,5 @@ permalink: /kb/101/Q101776/
 	
 	=============================================================================
 	
+
+{% endraw %}

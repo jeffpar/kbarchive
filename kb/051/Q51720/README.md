@@ -6,6 +6,8 @@ permalink: /kb/051/Q51720/
 
 ## Q51720: FltSim Hangs on CompuAdd 386/16 with Award BIOS 3.04
 
+{% raw %}
+
 	Article: Q51720
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/051/Q51720/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/113/Q113442/
 
 ## Q113442: Obtain Lantastic 6.0 NETBEUI.EXE from Artisoft
 
+{% raw %}
+
 	Article: Q113442
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.10,3.11
@@ -44,3 +46,5 @@ permalink: /kb/113/Q113442/
 	
 	=============================================================================
 	
+
+{% endraw %}

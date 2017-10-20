@@ -6,6 +6,8 @@ permalink: /kb/207/Q207750/
 
 ## Q207750: How to Prevent the Display of Control Panel Icons
 
+{% raw %}
+
 	Article: Q207750
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -250,3 +252,5 @@ permalink: /kb/207/Q207750/
 	
 	=============================================================================
 	
+
+{% endraw %}

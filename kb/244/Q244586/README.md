@@ -6,6 +6,8 @@ permalink: /kb/244/Q244586/
 
 ## Q244586: XADM: Mailbox Manager Logging Levels in Exchange Server
 
+{% raw %}
+
 	Article: Q244586
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -138,3 +140,5 @@ permalink: /kb/244/Q244586/
 	
 	=============================================================================
 	
+
+{% endraw %}

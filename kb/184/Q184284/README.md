@@ -6,6 +6,8 @@ permalink: /kb/184/Q184284/
 
 ## Q184284: WD97: Cannot Find Grammar DLL During Spell Check
 
+{% raw %}
+
 	Article: Q184284
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -89,3 +91,5 @@ permalink: /kb/184/Q184284/
 	
 	=============================================================================
 	
+
+{% endraw %}

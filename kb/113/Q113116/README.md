@@ -6,6 +6,8 @@ permalink: /kb/113/Q113116/
 
 ## Q113116: DOC: Undocumented Fatal Error C1053
 
+{% raw %}
+
 	Article: Q113116
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -51,3 +53,5 @@ permalink: /kb/113/Q113116/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175238/
 
 ## Q175238: Trip Planner 98: Program Hangs When Canceling Print Job
 
+{% raw %}
+
 	Article: Q175238
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -49,3 +51,5 @@ permalink: /kb/175/Q175238/
 	
 	=============================================================================
 	
+
+{% endraw %}

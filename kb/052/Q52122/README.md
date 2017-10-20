@@ -6,6 +6,8 @@ permalink: /kb/052/Q52122/
 
 ## Q52122: Calling a User-Written Function from an ISR
 
+{% raw %}
+
 	Article: Q52122
 	Product(s): See article
 	Version(s): 5.10
@@ -118,3 +120,5 @@ permalink: /kb/052/Q52122/
 	                                  /* Restore old ISR and exit */
 	      _dos_setvect( KEYSVC_INT, oldint9 );
 	}
+
+{% endraw %}

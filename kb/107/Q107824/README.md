@@ -6,6 +6,8 @@ permalink: /kb/107/Q107824/
 
 ## Q107824: PRB: Orientation and Paper Settings Not Transported
 
+{% raw %}
+
 	Article: Q107824
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,3.0b
@@ -49,3 +51,5 @@ permalink: /kb/107/Q107824/
 	
 	=============================================================================
 	
+
+{% endraw %}

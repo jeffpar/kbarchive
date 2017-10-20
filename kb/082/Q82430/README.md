@@ -6,6 +6,8 @@ permalink: /kb/082/Q82430/
 
 ## Q82430: STAR Micronix Printers Run in Loops Printing to File
 
+{% raw %}
+
 	Article: Q82430
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/082/Q82430/
 	
 	=============================================================================
 	
+
+{% endraw %}

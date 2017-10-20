@@ -6,6 +6,8 @@ permalink: /kb/170/Q170372/
 
 ## Q170372: BUG: Setup Wizard Closes With Error: Invalid Property Value...
 
+{% raw %}
+
 	Article: Q170372
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0
@@ -120,3 +122,5 @@ permalink: /kb/170/Q170372/
 	
 	=============================================================================
 	
+
+{% endraw %}

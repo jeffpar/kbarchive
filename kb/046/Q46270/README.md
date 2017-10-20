@@ -6,6 +6,8 @@ permalink: /kb/046/Q46270/
 
 ## Q46270: Typedef of Function Pointer with _loadds Fails
 
+{% raw %}
+
 	Article: Q46270
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -51,3 +53,5 @@ permalink: /kb/046/Q46270/
 	
 	Microsoft is researching this problem and will post new information as
 	it becomes available.
+
+{% endraw %}

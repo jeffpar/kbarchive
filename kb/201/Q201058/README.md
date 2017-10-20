@@ -6,6 +6,8 @@ permalink: /kb/201/Q201058/
 
 ## Q201058: All Exchange Users Receive NDR When Sending to cc:Mail Users
 
+{% raw %}
+
 	Article: Q201058
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -65,3 +67,5 @@ permalink: /kb/201/Q201058/
 	
 	=============================================================================
 	
+
+{% endraw %}

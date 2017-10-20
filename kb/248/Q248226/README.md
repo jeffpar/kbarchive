@@ -6,6 +6,8 @@ permalink: /kb/248/Q248226/
 
 ## Q248226: BUG: ListIndex Value Not Updated Correctly In Loop with AddItem
 
+{% raw %}
+
 	Article: Q248226
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -154,3 +156,5 @@ permalink: /kb/248/Q248226/
 	
 	=============================================================================
 	
+
+{% endraw %}

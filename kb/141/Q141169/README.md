@@ -6,6 +6,8 @@ permalink: /kb/141/Q141169/
 
 ## Q141169: Writer: Cannot Apply Backgrounds in Writing Studio
 
+{% raw %}
+
 	Article: Q141169
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.1a
@@ -54,3 +56,5 @@ permalink: /kb/141/Q141169/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167737/
 
 ## Q167737: FIX: Deploy to a Unix Server Via FTP Fails
 
+{% raw %}
+
 	Article: Q167737
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0
@@ -83,3 +85,5 @@ permalink: /kb/167/Q167737/
 	
 	=============================================================================
 	
+
+{% endraw %}

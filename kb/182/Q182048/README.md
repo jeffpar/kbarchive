@@ -6,6 +6,8 @@ permalink: /kb/182/Q182048/
 
 ## Q182048: SMS: Suppressing Unaddressable Sites Message Opening SMS Admin
 
+{% raw %}
+
 	Article: Q182048
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -102,3 +104,5 @@ permalink: /kb/182/Q182048/
 	
 	=============================================================================
 	
+
+{% endraw %}

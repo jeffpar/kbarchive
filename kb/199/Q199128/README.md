@@ -6,6 +6,8 @@ permalink: /kb/199/Q199128/
 
 ## Q199128: PRB: Error 40041 Calling RDO Parameters Through User Connection
 
+{% raw %}
+
 	Article: Q199128
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -173,3 +175,5 @@ permalink: /kb/199/Q199128/
 	
 	=============================================================================
 	
+
+{% endraw %}

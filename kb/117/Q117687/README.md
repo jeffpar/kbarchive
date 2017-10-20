@@ -6,6 +6,8 @@ permalink: /kb/117/Q117687/
 
 ## Q117687: INFO: Misplaced &#95;&#95;declspec Causes Error C2062, C2059, or C4
 
+{% raw %}
+
 	Article: Q117687
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,4.0,5.0,6.0
@@ -93,3 +95,5 @@ permalink: /kb/117/Q117687/
 	
 	=============================================================================
 	
+
+{% endraw %}

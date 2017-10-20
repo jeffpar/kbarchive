@@ -6,6 +6,8 @@ permalink: /kb/172/Q172642/
 
 ## Q172642: Media Player Hangs When Window Is Resized
 
+{% raw %}
+
 	Article: Q172642
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -58,3 +60,5 @@ permalink: /kb/172/Q172642/
 	
 	=============================================================================
 	
+
+{% endraw %}

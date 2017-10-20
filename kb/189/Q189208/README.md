@@ -6,6 +6,8 @@ permalink: /kb/189/Q189208/
 
 ## Q189208: Microsoft Outlook 98 Step by Step Comments and Corrections
 
+{% raw %}
+
 	Article: Q189208
 	Product(s): Microsoft Press
 	Version(s): 
@@ -437,3 +439,5 @@ permalink: /kb/189/Q189208/
 	
 	=============================================================================
 	
+
+{% endraw %}

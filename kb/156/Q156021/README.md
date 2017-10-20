@@ -6,6 +6,8 @@ permalink: /kb/156/Q156021/
 
 ## Q156021: HOWTO: Use the FillColor vs. BackColor Properties of a Shape
 
+{% raw %}
+
 	Article: Q156021
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -64,3 +66,5 @@ permalink: /kb/156/Q156021/
 	
 	=============================================================================
 	
+
+{% endraw %}

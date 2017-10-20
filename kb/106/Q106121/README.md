@@ -6,6 +6,8 @@ permalink: /kb/106/Q106121/
 
 ## Q106121: Sleeping Server Stops Responding to Requests
 
+{% raw %}
+
 	Article: Q106121
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -504,3 +506,5 @@ permalink: /kb/106/Q106121/
 	
 	=============================================================================
 	
+
+{% endraw %}

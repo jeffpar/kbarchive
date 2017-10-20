@@ -6,6 +6,8 @@ permalink: /kb/177/Q177455/
 
 ## Q177455: WD97: Problems with Document Based on Contemporary Memo Template
 
+{% raw %}
+
 	Article: Q177455
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -71,3 +73,5 @@ permalink: /kb/177/Q177455/
 	
 	=============================================================================
 	
+
+{% endraw %}

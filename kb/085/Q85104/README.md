@@ -6,6 +6,8 @@ permalink: /kb/085/Q85104/
 
 ## Q85104: Windows 3.1 Upgrade Backs Up WIN.INI and SYSTEM.INI
 
+{% raw %}
+
 	Article: Q85104
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -39,3 +41,5 @@ permalink: /kb/085/Q85104/
 	
 	=============================================================================
 	
+
+{% endraw %}

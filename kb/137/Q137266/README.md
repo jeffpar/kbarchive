@@ -6,6 +6,8 @@ permalink: /kb/137/Q137266/
 
 ## Q137266: Problems Reinstalling Microsoft Plus!
 
+{% raw %}
+
 	Article: Q137266
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -106,3 +108,5 @@ permalink: /kb/137/Q137266/
 	
 	=============================================================================
 	
+
+{% endraw %}

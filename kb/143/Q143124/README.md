@@ -6,6 +6,8 @@ permalink: /kb/143/Q143124/
 
 ## Q143124: Inventory Reports Non-IBM MCA System as IBM PS/2 Model 70/80
 
+{% raw %}
+
 	Article: Q143124
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -54,3 +56,5 @@ permalink: /kb/143/Q143124/
 	
 	=============================================================================
 	
+
+{% endraw %}

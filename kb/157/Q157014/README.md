@@ -6,6 +6,8 @@ permalink: /kb/157/Q157014/
 
 ## Q157014: XFOR: IMC Deletes Mail in MTS-OUT if no Code Page on MIME Tab
 
+{% raw %}
+
 	Article: Q157014
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/157/Q157014/
 	
 	=============================================================================
 	
+
+{% endraw %}

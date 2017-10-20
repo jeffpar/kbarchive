@@ -6,6 +6,8 @@ permalink: /kb/127/Q127134/
 
 ## Q127134: Windows NT Setup: SCSI Boot Disk Size Limitations
 
+{% raw %}
+
 	Article: Q127134
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/127/Q127134/
 	
 	=============================================================================
 	
+
+{% endraw %}

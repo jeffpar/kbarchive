@@ -6,6 +6,8 @@ permalink: /kb/149/Q149264/
 
 ## Q149264: BUG: ListView in Report View Mode Truncates First ListItem
 
+{% raw %}
+
 	Article: Q149264
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -89,3 +91,5 @@ permalink: /kb/149/Q149264/
 	
 	=============================================================================
 	
+
+{% endraw %}

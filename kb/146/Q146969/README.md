@@ -6,6 +6,8 @@ permalink: /kb/146/Q146969/
 
 ## Q146969: XCLN: Options Not Supported by WordMail
 
+{% raw %}
+
 	Article: Q146969
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -54,3 +56,5 @@ permalink: /kb/146/Q146969/
 	
 	=============================================================================
 	
+
+{% endraw %}

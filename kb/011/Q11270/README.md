@@ -6,6 +6,8 @@ permalink: /kb/011/Q11270/
 
 ## Q11270: INFO: CreatePen() and CreatePenIndirect() Use Predefined Styles
 
+{% raw %}
+
 	Article: Q11270
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 3.0,3.1
@@ -41,3 +43,5 @@ permalink: /kb/011/Q11270/
 	
 	=============================================================================
 	
+
+{% endraw %}

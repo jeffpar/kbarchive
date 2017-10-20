@@ -6,6 +6,8 @@ permalink: /kb/235/Q235214/
 
 ## Q235214: Microsoft SQL Server 7.0 System Administration Training Kit Comm
 
+{% raw %}
+
 	Article: Q235214
 	Product(s): Microsoft Press
 	Version(s): 
@@ -187,3 +189,5 @@ permalink: /kb/235/Q235214/
 	
 	=============================================================================
 	
+
+{% endraw %}

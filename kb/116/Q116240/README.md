@@ -6,6 +6,8 @@ permalink: /kb/116/Q116240/
 
 ## Q116240: FIX: Compiler Errors Initializing const Reference to an Array
 
+{% raw %}
+
 	Article: Q116240
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,4.1,4.2,5.0,6.0
@@ -100,3 +102,5 @@ permalink: /kb/116/Q116240/
 	
 	=============================================================================
 	
+
+{% endraw %}

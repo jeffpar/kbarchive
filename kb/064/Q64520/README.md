@@ -6,6 +6,8 @@ permalink: /kb/064/Q64520/
 
 ## Q64520: INFO: Printing Monochrome and Color Bitmaps from Windows
 
+{% raw %}
+
 	Article: Q64520
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -67,3 +69,5 @@ permalink: /kb/064/Q64520/
 	
 	=============================================================================
 	
+
+{% endraw %}

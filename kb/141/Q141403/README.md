@@ -6,6 +6,8 @@ permalink: /kb/141/Q141403/
 
 ## Q141403: Bookshelf: Can't Use Spell Check During QuickShelf Search
 
+{% raw %}
+
 	Article: Q141403
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition; WINDOWS:
@@ -61,3 +63,5 @@ permalink: /kb/141/Q141403/
 	
 	=============================================================================
 	
+
+{% endraw %}

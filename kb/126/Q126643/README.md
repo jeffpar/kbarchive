@@ -6,6 +6,8 @@ permalink: /kb/126/Q126643/
 
 ## Q126643: PCM and PGC Cannot Connect to Servers With Long Names
 
+{% raw %}
+
 	Article: Q126643
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -59,3 +61,5 @@ permalink: /kb/126/Q126643/
 	
 	=============================================================================
 	
+
+{% endraw %}

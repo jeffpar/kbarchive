@@ -6,6 +6,8 @@ permalink: /kb/031/Q31487/
 
 ## Q31487: Features Supported when Editing TextArgs in Microsoft Editor
 
+{% raw %}
+
 	Article: Q31487
 	Product(s): See article
 	Version(s): 1.00
@@ -23,3 +25,5 @@ permalink: /kb/031/Q31487/
 	
 	The END key allows you to find the length of the search/replace
 	string; pressing ARG clears the entire string.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/228/Q228795/
 
 ## Q228795: XADM: Posting to a Public Folder for Another User
 
+{% raw %}
+
 	Article: Q228795
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -43,3 +45,5 @@ permalink: /kb/228/Q228795/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104232/
 
 ## Q104232: Windows NT Remote Access Client Information
 
+{% raw %}
+
 	Article: Q104232
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -222,3 +224,5 @@ permalink: /kb/104/Q104232/
 	
 	=============================================================================
 	
+
+{% endraw %}

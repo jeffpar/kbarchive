@@ -6,6 +6,8 @@ permalink: /kb/225/Q225410/
 
 ## Q225410: Browse Button in Scheduled Task Properties Does Not Work
 
+{% raw %}
+
 	Article: Q225410
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:5; winnt:4.0,4.5
@@ -48,3 +50,5 @@ permalink: /kb/225/Q225410/
 	
 	=============================================================================
 	
+
+{% endraw %}

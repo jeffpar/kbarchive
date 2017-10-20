@@ -6,6 +6,8 @@ permalink: /kb/050/Q50221/
 
 ## Q50221: How to Resize and Turn On/Off the Text Mode (SCREEN 0) Cursor
 
+{% raw %}
+
 	Article: Q50221
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -100,3 +102,5 @@ permalink: /kb/050/Q50221/
 	   WHILE INKEY$ = "": WEND
 	NEXT
 	END
+
+{% endraw %}

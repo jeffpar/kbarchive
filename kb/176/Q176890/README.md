@@ -6,6 +6,8 @@ permalink: /kb/176/Q176890/
 
 ## Q176890: FS95/98/2000: How to Use the POV Hat and POV Keyboard Commands
 
+{% raw %}
+
 	Article: Q176890
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -186,3 +188,5 @@ permalink: /kb/176/Q176890/
 	
 	=============================================================================
 	
+
+{% endraw %}

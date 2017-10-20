@@ -6,6 +6,8 @@ permalink: /kb/179/Q179076/
 
 ## Q179076: WD97: Visio Object Background Turns Black When Doc Saved as HTML
 
+{% raw %}
+
 	Article: Q179076
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -54,3 +56,5 @@ permalink: /kb/179/Q179076/
 	
 	=============================================================================
 	
+
+{% endraw %}

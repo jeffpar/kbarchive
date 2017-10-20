@@ -6,6 +6,8 @@ permalink: /kb/214/Q214430/
 
 ## Q214430: Multihomed SNA NT Client Can't Find Local Server over IP
 
+{% raw %}
+
 	Article: Q214430
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0SP1
@@ -85,3 +87,5 @@ permalink: /kb/214/Q214430/
 	
 	=============================================================================
 	
+
+{% endraw %}

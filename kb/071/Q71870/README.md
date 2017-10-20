@@ -6,6 +6,8 @@ permalink: /kb/071/Q71870/
 
 ## Q71870: Task Swapper in MS-DOS Shell
 
+{% raw %}
+
 	Article: Q71870
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -72,3 +74,5 @@ permalink: /kb/071/Q71870/
 	
 	=============================================================================
 	
+
+{% endraw %}

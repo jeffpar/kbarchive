@@ -6,6 +6,8 @@ permalink: /kb/152/Q152915/
 
 ## Q152915: XFOR: Messages Inbound from IMC Include Body as Attachment
 
+{% raw %}
+
 	Article: Q152915
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/152/Q152915/
 	
 	=============================================================================
 	
+
+{% endraw %}

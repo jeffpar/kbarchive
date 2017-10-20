@@ -6,6 +6,8 @@ permalink: /kb/197/Q197714/
 
 ## Q197714: XWEB: OWA/SSL: This Page Contains Secure and Non-secure Items
 
+{% raw %}
+
 	Article: Q197714
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -73,3 +75,5 @@ permalink: /kb/197/Q197714/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/255/Q255245/
 
 ## Q255245: Unable to Remove or Change the DNS IP Address Assigned by RAS
 
+{% raw %}
+
 	Article: Q255245
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/255/Q255245/
 	
 	=============================================================================
 	
+
+{% endraw %}

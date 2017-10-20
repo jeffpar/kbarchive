@@ -6,6 +6,8 @@ permalink: /kb/132/Q132992/
 
 ## Q132992: Windows 95 Multimedia Questions and Answers
 
+{% raw %}
+
 	Article: Q132992
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -151,3 +153,5 @@ permalink: /kb/132/Q132992/
 	
 	=============================================================================
 	
+
+{% endraw %}

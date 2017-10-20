@@ -6,6 +6,8 @@ permalink: /kb/175/Q175530/
 
 ## Q175530: Windows Computer Is Unable to View a Network Share
 
+{% raw %}
+
 	Article: Q175530
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -57,3 +59,5 @@ permalink: /kb/175/Q175530/
 	
 	=============================================================================
 	
+
+{% endraw %}

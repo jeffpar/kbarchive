@@ -6,6 +6,8 @@ permalink: /kb/146/Q146563/
 
 ## Q146563: XCLN: Bad Headers from Resent NDR with Changed To: Field
 
+{% raw %}
+
 	Article: Q146563
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -47,3 +49,5 @@ permalink: /kb/146/Q146563/
 	
 	=============================================================================
 	
+
+{% endraw %}

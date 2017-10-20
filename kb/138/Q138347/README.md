@@ -6,6 +6,8 @@ permalink: /kb/138/Q138347/
 
 ## Q138347: SMS: Procedure for Backing Up and Restoring a Secondary Site
 
+{% raw %}
+
 	Article: Q138347
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -123,3 +125,5 @@ permalink: /kb/138/Q138347/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84581/
 
 ## Q84581: 3COM 3C501 Network Card May Require Updated Drivers
 
+{% raw %}
+
 	Article: Q84581
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/084/Q84581/
 	
 	=============================================================================
 	
+
+{% endraw %}

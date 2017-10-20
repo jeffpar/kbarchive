@@ -6,6 +6,8 @@ permalink: /kb/113/Q113077/
 
 ## Q113077: Golf Is Unplayable Because Swing Is Too Fast
 
+{% raw %}
+
 	Article: Q113077
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -94,3 +96,5 @@ permalink: /kb/113/Q113077/
 	
 	=============================================================================
 	
+
+{% endraw %}

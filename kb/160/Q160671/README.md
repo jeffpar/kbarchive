@@ -6,6 +6,8 @@ permalink: /kb/160/Q160671/
 
 ## Q160671: Stop 0x0000007F May Occur on Compaq SystemPro
 
+{% raw %}
+
 	Article: Q160671
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/160/Q160671/
 	
 	=============================================================================
 	
+
+{% endraw %}

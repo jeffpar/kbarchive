@@ -6,6 +6,8 @@ permalink: /kb/268/Q268169/
 
 ## Q268169: SMS: Audit of Successful Use of User Rights Creates Mult Entries
 
+{% raw %}
+
 	Article: Q268169
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -69,3 +71,5 @@ permalink: /kb/268/Q268169/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/222/Q222647/
 
 ## Q222647: XADM: Extended Characters Cause Directory Replication to Break
 
+{% raw %}
+
 	Article: Q222647
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -85,3 +87,5 @@ permalink: /kb/222/Q222647/
 	
 	=============================================================================
 	
+
+{% endraw %}

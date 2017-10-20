@@ -6,6 +6,8 @@ permalink: /kb/184/Q184482/
 
 ## Q184482: WD97: Unable to Show UserForms in Other Projects
 
+{% raw %}
+
 	Article: Q184482
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -115,3 +117,5 @@ permalink: /kb/184/Q184482/
 	
 	=============================================================================
 	
+
+{% endraw %}

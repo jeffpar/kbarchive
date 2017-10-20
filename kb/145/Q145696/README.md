@@ -6,6 +6,8 @@ permalink: /kb/145/Q145696/
 
 ## Q145696: FIX: CDC::CreatePointFont() May Create Wrong Size Font
 
+{% raw %}
+
 	Article: Q145696
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/145/Q145696/
 	
 	=============================================================================
 	
+
+{% endraw %}

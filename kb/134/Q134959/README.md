@@ -6,6 +6,8 @@ permalink: /kb/134/Q134959/
 
 ## Q134959: Cannot copy Icons From a Common Group to a Personal Group
 
+{% raw %}
+
 	Article: Q134959
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/134/Q134959/
 	
 	=============================================================================
 	
+
+{% endraw %}

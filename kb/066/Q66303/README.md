@@ -6,6 +6,8 @@ permalink: /kb/066/Q66303/
 
 ## Q66303: Errors in Chapter 16 of Advanced Programming Techniques
 
+{% raw %}
+
 	Article: Q66303
 	Product(s): See article
 	Version(s): 6.00 6.00a
@@ -89,3 +91,5 @@ permalink: /kb/066/Q66303/
 	
 	Microsoft is researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/215/Q215347/
 
 ## Q215347: Cluster Disk with More Than 15 Logical Drives Fails to Go Online
 
+{% raw %}
+
 	Article: Q215347
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/215/Q215347/
 	
 	=============================================================================
 	
+
+{% endraw %}

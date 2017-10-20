@@ -6,6 +6,8 @@ permalink: /kb/125/Q125370/
 
 ## Q125370: DBCLEAN Merge Machines Creates Duplicate Records
 
+{% raw %}
+
 	Article: Q125370
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.1
@@ -42,3 +44,5 @@ permalink: /kb/125/Q125370/
 	
 	=============================================================================
 	
+
+{% endraw %}

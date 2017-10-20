@@ -6,6 +6,8 @@ permalink: /kb/306/Q306388/
 
 ## Q306388: PRB: CursorType Returns adOpenStatic from Server-Side Recordset
 
+{% raw %}
+
 	Article: Q306388
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.6,2.6sp1,2.7,6.0,7.0,8.0,SP1
@@ -110,3 +112,5 @@ permalink: /kb/306/Q306388/
 	
 	=============================================================================
 	
+
+{% endraw %}

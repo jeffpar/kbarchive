@@ -6,6 +6,8 @@ permalink: /kb/145/Q145972/
 
 ## Q145972: XCLN: Cannot Move Messages by Moving Group Header
 
+{% raw %}
+
 	Article: Q145972
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -49,3 +51,5 @@ permalink: /kb/145/Q145972/
 	
 	=============================================================================
 	
+
+{% endraw %}

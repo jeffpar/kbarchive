@@ -6,6 +6,8 @@ permalink: /kb/220/Q220944/
 
 ## Q220944: SMS: Error Message When Using Healthmon on a Secondary Site
 
+{% raw %}
+
 	Article: Q220944
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -79,3 +81,5 @@ permalink: /kb/220/Q220944/
 	
 	=============================================================================
 	
+
+{% endraw %}

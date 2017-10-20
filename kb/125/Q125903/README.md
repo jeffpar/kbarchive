@@ -6,6 +6,8 @@ permalink: /kb/125/Q125903/
 
 ## Q125903: File Size Displayed Incorrectly After Copying to an NTFS Share
 
+{% raw %}
+
 	Article: Q125903
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11; winnt:3.5
@@ -64,3 +66,5 @@ permalink: /kb/125/Q125903/
 	
 	=============================================================================
 	
+
+{% endraw %}

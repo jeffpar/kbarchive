@@ -6,6 +6,8 @@ permalink: /kb/156/Q156935/
 
 ## Q156935: Writer 2: Email Packages Contain Creative Writer 2 Viewer
 
+{% raw %}
+
 	Article: Q156935
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -63,3 +65,5 @@ permalink: /kb/156/Q156935/
 	
 	=============================================================================
 	
+
+{% endraw %}

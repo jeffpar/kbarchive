@@ -6,6 +6,8 @@ permalink: /kb/238/Q238182/
 
 ## Q238182: BUG: GET on a Pinned and Labeled File Gets Wrong Version
 
+{% raw %}
+
 	Article: Q238182
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -95,3 +97,5 @@ permalink: /kb/238/Q238182/
 	
 	=============================================================================
 	
+
+{% endraw %}

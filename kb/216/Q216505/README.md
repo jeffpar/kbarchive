@@ -6,6 +6,8 @@ permalink: /kb/216/Q216505/
 
 ## Q216505: DirectX 6.1: List of Files Displayed in DirectX Diagnostic Tool
 
+{% raw %}
+
 	Article: Q216505
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/216/Q216505/
 	
 	=============================================================================
 	
+
+{% endraw %}

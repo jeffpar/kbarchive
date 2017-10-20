@@ -6,6 +6,8 @@ permalink: /kb/030/Q30502/
 
 ## Q30502: FIX: A2107 with .RADIX 16 and Real Number Initialization
 
+{% raw %}
+
 	Article: Q30502
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -59,3 +61,5 @@ permalink: /kb/030/Q30502/
 	
 	=============================================================================
 	
+
+{% endraw %}

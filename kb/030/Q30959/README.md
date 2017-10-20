@@ -6,6 +6,8 @@ permalink: /kb/030/Q30959/
 
 ## Q30959: chdir() Example Is Incorrect
 
+{% raw %}
+
 	Article: Q30959
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -19,3 +21,5 @@ permalink: /kb/030/Q30959/
 	follows:
 	
 	chdir("c:\\temp") ;
+
+{% endraw %}

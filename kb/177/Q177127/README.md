@@ -6,6 +6,8 @@ permalink: /kb/177/Q177127/
 
 ## Q177127: Incorrect Report on Disk Free Space Under Dfs
 
+{% raw %}
+
 	Article: Q177127
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT:4.0,4.01;Windows:95
@@ -61,3 +63,5 @@ permalink: /kb/177/Q177127/
 	
 	=============================================================================
 	
+
+{% endraw %}

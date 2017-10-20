@@ -6,6 +6,8 @@ permalink: /kb/047/Q47018/
 
 ## Q47018: Presentation Graphics Charting Function: Error Codes
 
+{% raw %}
+
 	Article: Q47018
 	Product(s): See article
 	Version(s): 2.00
@@ -43,3 +45,5 @@ permalink: /kb/047/Q47018/
 	_PG_BADSCALEFACTOR      06        Scale factor = 0
 	_PG_TOOSMALLN          109        Number of data points <= 0
 	_PG_TOOFEWSERIES       110        Number of series <= 0
+
+{% endraw %}

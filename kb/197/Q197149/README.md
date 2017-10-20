@@ -6,6 +6,8 @@ permalink: /kb/197/Q197149/
 
 ## Q197149: WD97: Mail Merge Helper Behaves Differently When Called by Macro
 
+{% raw %}
+
 	Article: Q197149
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -126,3 +128,5 @@ permalink: /kb/197/Q197149/
 	
 	=============================================================================
 	
+
+{% endraw %}

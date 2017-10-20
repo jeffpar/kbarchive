@@ -6,6 +6,8 @@ permalink: /kb/138/Q138792/
 
 ## Q138792: TCARC.SYS Causes Trap 0xA or Hangs Windows NT
 
+{% raw %}
+
 	Article: Q138792
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -75,3 +77,5 @@ permalink: /kb/138/Q138792/
 	
 	=============================================================================
 	
+
+{% endraw %}

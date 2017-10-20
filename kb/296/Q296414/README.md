@@ -6,6 +6,8 @@ permalink: /kb/296/Q296414/
 
 ## Q296414: Err Msg: There Was a Problem Starting Microsoft Schedule Plus
 
+{% raw %}
+
 	Article: Q296414
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 7.0,7.0a,7.5
@@ -86,3 +88,5 @@ permalink: /kb/296/Q296414/
 	
 	=============================================================================
 	
+
+{% endraw %}

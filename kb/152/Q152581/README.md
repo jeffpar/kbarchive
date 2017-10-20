@@ -6,6 +6,8 @@ permalink: /kb/152/Q152581/
 
 ## Q152581: Complete Gardening: Can't Add Just One Plant to Plant List
 
+{% raw %}
+
 	Article: Q152581
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -40,3 +42,5 @@ permalink: /kb/152/Q152581/
 	
 	=============================================================================
 	
+
+{% endraw %}

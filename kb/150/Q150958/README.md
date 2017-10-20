@@ -6,6 +6,8 @@ permalink: /kb/150/Q150958/
 
 ## Q150958: INFO: Troubleshooting Enhanced PC Support APPC (Ehnappc.dll) Err
 
+{% raw %}
+
 	Article: Q150958
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11 SP1;2.11 SP2,3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -552,3 +554,5 @@ permalink: /kb/150/Q150958/
 	
 	=============================================================================
 	
+
+{% endraw %}

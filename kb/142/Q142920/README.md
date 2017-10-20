@@ -6,6 +6,8 @@ permalink: /kb/142/Q142920/
 
 ## Q142920: How to Create Unique Values on SQL Server 6.x
 
+{% raw %}
+
 	Article: Q142920
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -146,3 +148,5 @@ permalink: /kb/142/Q142920/
 	
 	=============================================================================
 	
+
+{% endraw %}

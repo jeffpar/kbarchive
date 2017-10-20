@@ -6,6 +6,8 @@ permalink: /kb/185/Q185093/
 
 ## Q185093: FTP Server Fails to Transfer Files Larger Than 4 Gigabytes
 
+{% raw %}
+
 	Article: Q185093
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -111,3 +113,5 @@ permalink: /kb/185/Q185093/
 	
 	=============================================================================
 	
+
+{% endraw %}

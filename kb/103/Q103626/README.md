@@ -6,6 +6,8 @@ permalink: /kb/103/Q103626/
 
 ## Q103626: PC WSPlus: Libraries Do Not Function When Offline
 
+{% raw %}
+
 	Article: Q103626
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -47,3 +49,5 @@ permalink: /kb/103/Q103626/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/298/Q298458/
 
 ## Q298458: Frequently Asked Questions for Windows NT 4.0
 
+{% raw %}
+
 	Article: Q298458
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -171,3 +173,5 @@ permalink: /kb/298/Q298458/
 	
 	=============================================================================
 	
+
+{% endraw %}

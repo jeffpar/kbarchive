@@ -6,6 +6,8 @@ permalink: /kb/084/Q84122/
 
 ## Q84122: Setting Allowing Each User to Have Personal Default Directory
 
+{% raw %}
+
 	Article: Q84122
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -132,3 +134,5 @@ permalink: /kb/084/Q84122/
 	
 	=============================================================================
 	
+
+{% endraw %}

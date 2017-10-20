@@ -6,6 +6,8 @@ permalink: /kb/131/Q131954/
 
 ## Q131954: Wine Guide: Find Tool Only Matches First Word on Page
 
+{% raw %}
+
 	Article: Q131954
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0,2.0; WINDOWS:1.0,1.0a,2.0
@@ -52,3 +54,5 @@ permalink: /kb/131/Q131954/
 	
 	=============================================================================
 	
+
+{% endraw %}

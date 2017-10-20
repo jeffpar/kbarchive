@@ -6,6 +6,8 @@ permalink: /kb/136/Q136771/
 
 ## Q136771: How to Verify If a Table Is Free or Belongs to a Database
 
+{% raw %}
+
 	Article: Q136771
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -65,3 +67,5 @@ permalink: /kb/136/Q136771/
 	
 	=============================================================================
 	
+
+{% endraw %}

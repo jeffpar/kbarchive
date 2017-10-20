@@ -6,6 +6,8 @@ permalink: /kb/130/Q130236/
 
 ## Q130236: Explanation of Referential Integrity Rules for INSERT
 
+{% raw %}
+
 	Article: Q130236
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -66,3 +68,5 @@ permalink: /kb/130/Q130236/
 	
 	=============================================================================
 	
+
+{% endraw %}

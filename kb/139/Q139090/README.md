@@ -6,6 +6,8 @@ permalink: /kb/139/Q139090/
 
 ## Q139090: HOWTO: Highlight a Row in a Grid that Has Lost the Focus
 
+{% raw %}
+
 	Article: Q139090
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/139/Q139090/
 	
 	=============================================================================
 	
+
+{% endraw %}

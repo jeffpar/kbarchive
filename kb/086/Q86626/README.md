@@ -6,6 +6,8 @@ permalink: /kb/086/Q86626/
 
 ## Q86626: Magic Cursor! Hot Keys Take Precedence over Windows Defaults
 
+{% raw %}
+
 	Article: Q86626
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/086/Q86626/
 	
 	=============================================================================
 	
+
+{% endraw %}

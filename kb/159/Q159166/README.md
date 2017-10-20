@@ -6,6 +6,8 @@ permalink: /kb/159/Q159166/
 
 ## Q159166: XCON: MTA Stops Responding; Event ID 2110
 
+{% raw %}
+
 	Article: Q159166
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -119,3 +121,5 @@ permalink: /kb/159/Q159166/
 	
 	=============================================================================
 	
+
+{% endraw %}

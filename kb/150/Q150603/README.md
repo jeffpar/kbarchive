@@ -6,6 +6,8 @@ permalink: /kb/150/Q150603/
 
 ## Q150603: Doc Error: IIS Download Version Readme File Is Incorrect
 
+{% raw %}
+
 	Article: Q150603
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -45,3 +47,5 @@ permalink: /kb/150/Q150603/
 	
 	=============================================================================
 	
+
+{% endraw %}

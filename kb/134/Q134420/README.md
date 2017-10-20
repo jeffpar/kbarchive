@@ -6,6 +6,8 @@ permalink: /kb/134/Q134420/
 
 ## Q134420: PRB: App Studio Displays Incorrect Colors for Bitmaps
 
+{% raw %}
+
 	Article: Q134420
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,2.2,4.0,4.1,5.0,6.0
@@ -57,3 +59,5 @@ permalink: /kb/134/Q134420/
 	
 	=============================================================================
 	
+
+{% endraw %}

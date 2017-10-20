@@ -6,6 +6,8 @@ permalink: /kb/244/Q244824/
 
 ## Q244824: XADM: Personal Distribution Lists Missing After Running MBClean
 
+{% raw %}
+
 	Article: Q244824
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2
@@ -62,3 +64,5 @@ permalink: /kb/244/Q244824/
 	
 	=============================================================================
 	
+
+{% endraw %}

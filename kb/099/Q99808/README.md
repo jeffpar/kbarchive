@@ -6,6 +6,8 @@ permalink: /kb/099/Q99808/
 
 ## Q99808: MsgColor.exe Changes Msg. Box Background &amp; Text Color
 
+{% raw %}
+
 	Article: Q99808
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -59,3 +61,5 @@ permalink: /kb/099/Q99808/
 	
 	=============================================================================
 	
+
+{% endraw %}

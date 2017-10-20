@@ -6,6 +6,8 @@ permalink: /kb/125/Q125513/
 
 ## Q125513: Cannot Log On to Domain Using Xircom Adapter in WFWG
 
+{% raw %}
+
 	Article: Q125513
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -51,3 +53,5 @@ permalink: /kb/125/Q125513/
 	
 	=============================================================================
 	
+
+{% endraw %}

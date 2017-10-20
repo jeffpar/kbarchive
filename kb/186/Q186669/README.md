@@ -6,6 +6,8 @@ permalink: /kb/186/Q186669/
 
 ## Q186669: FPNW Logout.exe Incorrectly Reports Year After Jan. 1, 2000
 
+{% raw %}
+
 	Article: Q186669
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -145,3 +147,5 @@ permalink: /kb/186/Q186669/
 	
 	=============================================================================
 	
+
+{% endraw %}

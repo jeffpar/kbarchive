@@ -6,6 +6,8 @@ permalink: /kb/140/Q140356/
 
 ## Q140356: FIX: NMAKE Fails If Paths &amp; File Names Have Special Characters
 
+{% raw %}
+
 	Article: Q140356
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -96,3 +98,5 @@ permalink: /kb/140/Q140356/
 	
 	=============================================================================
 	
+
+{% endraw %}

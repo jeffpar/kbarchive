@@ -6,6 +6,8 @@ permalink: /kb/257/Q257695/
 
 ## Q257695: FIX: Invalid Page Fault When Using Data Environment Designer
 
+{% raw %}
+
 	Article: Q257695
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -65,3 +67,5 @@ permalink: /kb/257/Q257695/
 	
 	=============================================================================
 	
+
+{% endraw %}

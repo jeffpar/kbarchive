@@ -6,6 +6,8 @@ permalink: /kb/168/Q168049/
 
 ## Q168049: HyperTerminal Files Cannot Be Opened If No Modem Is Installed
 
+{% raw %}
+
 	Article: Q168049
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/168/Q168049/
 	
 	=============================================================================
 	
+
+{% endraw %}

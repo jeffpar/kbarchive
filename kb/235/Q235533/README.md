@@ -6,6 +6,8 @@ permalink: /kb/235/Q235533/
 
 ## Q235533: XIMS: Refreshing MTS-OUT Queue Causes Application Error
 
+{% raw %}
+
 	Article: Q235533
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -86,3 +88,5 @@ permalink: /kb/235/Q235533/
 	
 	=============================================================================
 	
+
+{% endraw %}

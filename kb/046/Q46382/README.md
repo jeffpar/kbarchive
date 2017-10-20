@@ -6,6 +6,8 @@ permalink: /kb/046/Q46382/
 
 ## Q46382: _registerfonts, _setfont Return Values Incorrect in Manual
 
+{% raw %}
+
 	Article: Q46382
 	Product(s): See article
 	Version(s): 2.00
@@ -37,3 +39,5 @@ permalink: /kb/046/Q46382/
 	     0      If successful
 	    -1      Font wasn't registered
 	    -4      Not enough memory available for the font
+
+{% endraw %}

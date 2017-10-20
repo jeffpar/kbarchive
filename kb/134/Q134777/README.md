@@ -6,6 +6,8 @@ permalink: /kb/134/Q134777/
 
 ## Q134777: Microsoft Plus! Uninstall Interruption Causes Errors Booting
 
+{% raw %}
+
 	Article: Q134777
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/134/Q134777/
 	
 	=============================================================================
 	
+
+{% endraw %}

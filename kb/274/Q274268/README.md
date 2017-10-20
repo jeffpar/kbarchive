@@ -6,6 +6,8 @@ permalink: /kb/274/Q274268/
 
 ## Q274268: Network Adapters Do Not Appear in Drop-Down List
 
+{% raw %}
+
 	Article: Q274268
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP3
@@ -104,3 +106,5 @@ permalink: /kb/274/Q274268/
 	
 	=============================================================================
 	
+
+{% endraw %}

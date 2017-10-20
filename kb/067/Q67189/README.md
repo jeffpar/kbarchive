@@ -6,6 +6,8 @@ permalink: /kb/067/Q67189/
 
 ## Q67189: ASD: Not Possible to Add ATIS Frequency
 
+{% raw %}
+
 	Article: Q67189
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/067/Q67189/
 	
 	=============================================================================
 	
+
+{% endraw %}

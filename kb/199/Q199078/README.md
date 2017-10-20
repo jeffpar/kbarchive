@@ -6,6 +6,8 @@ permalink: /kb/199/Q199078/
 
 ## Q199078: SMS: How to Remove a Systems Management Server 2.0 Client
 
+{% raw %}
+
 	Article: Q199078
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -154,3 +156,5 @@ permalink: /kb/199/Q199078/
 	
 	=============================================================================
 	
+
+{% endraw %}

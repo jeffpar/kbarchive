@@ -6,6 +6,8 @@ permalink: /kb/107/Q107725/
 
 ## Q107725: Writer: Can't Preview 16-Bit Sounds
 
+{% raw %}
+
 	Article: Q107725
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a
@@ -64,3 +66,5 @@ permalink: /kb/107/Q107725/
 	
 	=============================================================================
 	
+
+{% endraw %}

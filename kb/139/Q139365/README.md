@@ -6,6 +6,8 @@ permalink: /kb/139/Q139365/
 
 ## Q139365: Capabilities of the &quot;Add Workstations To Domain&quot; Right
 
+{% raw %}
+
 	Article: Q139365
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -79,3 +81,5 @@ permalink: /kb/139/Q139365/
 	
 	=============================================================================
 	
+
+{% endraw %}

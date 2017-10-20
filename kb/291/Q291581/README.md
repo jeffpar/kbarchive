@@ -6,6 +6,8 @@ permalink: /kb/291/Q291581/
 
 ## Q291581: MCSE Readiness Review Exam 70-210: Windows 2000 Professional Com
 
+{% raw %}
+
 	Article: Q291581
 	Product(s): Microsoft Press
 	Version(s): 
@@ -217,3 +219,5 @@ permalink: /kb/291/Q291581/
 	
 	=============================================================================
 	
+
+{% endraw %}

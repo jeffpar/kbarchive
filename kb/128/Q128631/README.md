@@ -6,6 +6,8 @@ permalink: /kb/128/Q128631/
 
 ## Q128631: No Sharing Options in Clipboard Viewer in Windows 95
 
+{% raw %}
+
 	Article: Q128631
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -52,3 +54,5 @@ permalink: /kb/128/Q128631/
 	
 	=============================================================================
 	
+
+{% endraw %}

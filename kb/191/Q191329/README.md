@@ -6,6 +6,8 @@ permalink: /kb/191/Q191329/
 
 ## Q191329: SMS: How to Install the PCM Service Without Using RSERVICE
 
+{% raw %}
+
 	Article: Q191329
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -118,3 +120,5 @@ permalink: /kb/191/Q191329/
 	
 	=============================================================================
 	
+
+{% endraw %}

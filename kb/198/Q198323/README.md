@@ -6,6 +6,8 @@ permalink: /kb/198/Q198323/
 
 ## Q198323: WD: Cannot Move Indent Marker Without Moving Tab Marker
 
+{% raw %}
+
 	Article: Q198323
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -42,3 +44,5 @@ permalink: /kb/198/Q198323/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/108/Q108411/
 
 ## Q108411: Configuring IRQ of Future Domain 8xx SCSI Controller
 
+{% raw %}
+
 	Article: Q108411
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -66,3 +68,5 @@ permalink: /kb/108/Q108411/
 	
 	=============================================================================
 	
+
+{% endraw %}

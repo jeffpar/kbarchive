@@ -6,6 +6,8 @@ permalink: /kb/238/Q238436/
 
 ## Q238436: PRB: MFC DAO Classes Error &quot;Syntax Error in From Clause&quot;
 
+{% raw %}
+
 	Article: Q238436
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -94,3 +96,5 @@ permalink: /kb/238/Q238436/
 	
 	=============================================================================
 	
+
+{% endraw %}

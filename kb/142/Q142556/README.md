@@ -6,6 +6,8 @@ permalink: /kb/142/Q142556/
 
 ## Q142556: Testing a Default Installation of Microsoft IIS WWW
 
+{% raw %}
+
 	Article: Q142556
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -64,3 +66,5 @@ permalink: /kb/142/Q142556/
 	
 	=============================================================================
 	
+
+{% endraw %}

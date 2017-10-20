@@ -6,6 +6,8 @@ permalink: /kb/241/Q241018/
 
 ## Q241018: Microsoft Windows NT Workstation 4.0 Resource Kit Corrections
 
+{% raw %}
+
 	Article: Q241018
 	Product(s): Microsoft Press
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/241/Q241018/
 	
 	=============================================================================
 	
+
+{% endraw %}

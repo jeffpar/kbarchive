@@ -6,6 +6,8 @@ permalink: /kb/187/Q187499/
 
 ## Q187499: Performance Monitor Counters For IIS Not Available
 
+{% raw %}
+
 	Article: Q187499
 	Product(s): Internet Information Server
 	Version(s): WINNT:2.0,3.0
@@ -61,3 +63,5 @@ permalink: /kb/187/Q187499/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/255/Q255931/
 
 ## Q255931: TAMA Additions Appear as Modifcations in Export File
 
+{% raw %}
+
 	Article: Q255931
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -72,3 +74,5 @@ permalink: /kb/255/Q255931/
 	
 	=============================================================================
 	
+
+{% endraw %}

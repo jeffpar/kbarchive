@@ -6,6 +6,8 @@ permalink: /kb/145/Q145986/
 
 ## Q145986: XCON: Illegal Country Code in X400 Address Causes MTA to Hang
 
+{% raw %}
+
 	Article: Q145986
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -95,3 +97,5 @@ permalink: /kb/145/Q145986/
 	
 	=============================================================================
 	
+
+{% endraw %}

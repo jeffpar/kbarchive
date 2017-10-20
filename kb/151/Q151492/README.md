@@ -6,6 +6,8 @@ permalink: /kb/151/Q151492/
 
 ## Q151492: Apple LaserWriter Pro 810 and TCP/IP Require Updated ROM
 
+{% raw %}
+
 	Article: Q151492
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -60,3 +62,5 @@ permalink: /kb/151/Q151492/
 	
 	=============================================================================
 	
+
+{% endraw %}

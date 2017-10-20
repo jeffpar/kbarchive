@@ -6,6 +6,8 @@ permalink: /kb/120/Q120737/
 
 ## Q120737: Winhlp32 &amp; Custom DLL Calling Conventions
 
+{% raw %}
+
 	Article: Q120737
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/120/Q120737/
 	
 	=============================================================================
 	
+
+{% endraw %}

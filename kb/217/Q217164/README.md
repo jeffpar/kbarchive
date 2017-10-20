@@ -6,6 +6,8 @@ permalink: /kb/217/Q217164/
 
 ## Q217164: FIX: Bad Code Is Generated When the Result of an Intrinsic Passe
 
+{% raw %}
+
 	Article: Q217164
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -103,3 +105,5 @@ permalink: /kb/217/Q217164/
 	
 	=============================================================================
 	
+
+{% endraw %}

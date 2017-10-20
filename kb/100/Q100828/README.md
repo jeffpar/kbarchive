@@ -6,6 +6,8 @@ permalink: /kb/100/Q100828/
 
 ## Q100828: PC Ext: Normal Purge on P1 Subdirectory for NetWare
 
+{% raw %}
+
 	Article: Q100828
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -61,3 +63,5 @@ permalink: /kb/100/Q100828/
 	
 	=============================================================================
 	
+
+{% endraw %}

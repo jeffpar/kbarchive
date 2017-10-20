@@ -6,6 +6,8 @@ permalink: /kb/103/Q103636/
 
 ## Q103636: BUG: EV_RLSDS Event Does Not Indicate Current RLSD State
 
+{% raw %}
+
 	Article: Q103636
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -54,3 +56,5 @@ permalink: /kb/103/Q103636/
 	
 	=============================================================================
 	
+
+{% endraw %}

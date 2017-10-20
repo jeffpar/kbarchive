@@ -6,6 +6,8 @@ permalink: /kb/089/Q89562/
 
 ## Q89562: SAMPLE: BttnCur.exe Contains Buttons and Cursors Doc and Sample
 
+{% raw %}
+
 	Article: Q89562
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -61,3 +63,5 @@ permalink: /kb/089/Q89562/
 	
 	=============================================================================
 	
+
+{% endraw %}

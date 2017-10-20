@@ -6,6 +6,8 @@ permalink: /kb/159/Q159281/
 
 ## Q159281: PRB: Documenting Wizard Generates Error #10
 
+{% raw %}
+
 	Article: Q159281
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -54,3 +56,5 @@ permalink: /kb/159/Q159281/
 	
 	=============================================================================
 	
+
+{% endraw %}

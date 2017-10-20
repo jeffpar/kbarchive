@@ -6,6 +6,8 @@ permalink: /kb/175/Q175658/
 
 ## Q175658: Gathering Information for Troubleshooting Performance Issues
 
+{% raw %}
+
 	Article: Q175658
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -238,3 +240,5 @@ permalink: /kb/175/Q175658/
 	
 	=============================================================================
 	
+
+{% endraw %}

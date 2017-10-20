@@ -6,6 +6,8 @@ permalink: /kb/156/Q156134/
 
 ## Q156134: FIX: CLongBinary Causes &quot;Invalid String or Buffer Length&quot;
 
+{% raw %}
+
 	Article: Q156134
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2
@@ -144,3 +146,5 @@ permalink: /kb/156/Q156134/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189281/
 
 ## Q189281: HOWTO: View Documents w/ FoxPro OLE Controls w/o MS Office
 
+{% raw %}
+
 	Article: Q189281
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -67,3 +69,5 @@ permalink: /kb/189/Q189281/
 	
 	=============================================================================
 	
+
+{% endraw %}

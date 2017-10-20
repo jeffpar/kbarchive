@@ -6,6 +6,8 @@ permalink: /kb/174/Q174895/
 
 ## Q174895: XCON: Messages Are Lost When MTA Size Limit Is Exceeded
 
+{% raw %}
+
 	Article: Q174895
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -59,3 +61,5 @@ permalink: /kb/174/Q174895/
 	
 	=============================================================================
 	
+
+{% endraw %}

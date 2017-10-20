@@ -6,6 +6,8 @@ permalink: /kb/260/Q260167/
 
 ## Q260167: XCON: MTA Stops Communicating with Other MTAs in the Same Site
 
+{% raw %}
+
 	Article: Q260167
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -74,3 +76,5 @@ permalink: /kb/260/Q260167/
 	
 	=============================================================================
 	
+
+{% endraw %}

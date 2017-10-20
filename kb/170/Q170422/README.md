@@ -6,6 +6,8 @@ permalink: /kb/170/Q170422/
 
 ## Q170422: SNA Server APPC Returns AP_BAD_PARTNER_LU_ALIAS in Error
 
+{% raw %}
+
 	Article: Q170422
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0
@@ -68,3 +70,5 @@ permalink: /kb/170/Q170422/
 	
 	=============================================================================
 	
+
+{% endraw %}

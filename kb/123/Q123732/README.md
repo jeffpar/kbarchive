@@ -6,6 +6,8 @@ permalink: /kb/123/Q123732/
 
 ## Q123732: Setup Err Msg: This HAL.DLL Requires an MPS Version 1.1
 
+{% raw %}
+
 	Article: Q123732
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -115,3 +117,5 @@ permalink: /kb/123/Q123732/
 	
 	=============================================================================
 	
+
+{% endraw %}

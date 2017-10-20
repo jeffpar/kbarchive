@@ -6,6 +6,8 @@ permalink: /kb/198/Q198378/
 
 ## Q198378: HOWTO: Use the VB DataEnvironment In Your MTS Components
 
+{% raw %}
+
 	Article: Q198378
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,6.0
@@ -88,3 +90,5 @@ permalink: /kb/198/Q198378/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231525/
 
 ## Q231525: MapPoint 2000 Err Msg: There Was a Problem Opening this File...
 
+{% raw %}
+
 	Article: Q231525
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -66,3 +68,5 @@ permalink: /kb/231/Q231525/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/221/Q221736/
 
 ## Q221736: FIX: WriteExpression Fails With Unknown Error Code -5
 
+{% raw %}
+
 	Article: Q221736
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -100,3 +102,5 @@ permalink: /kb/221/Q221736/
 	
 	=============================================================================
 	
+
+{% endraw %}

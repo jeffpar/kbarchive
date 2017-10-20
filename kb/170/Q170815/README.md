@@ -6,6 +6,8 @@ permalink: /kb/170/Q170815/
 
 ## Q170815: WD97: AutoCorrect Entry Formatted with Capital Letter
 
+{% raw %}
+
 	Article: Q170815
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -70,3 +72,5 @@ permalink: /kb/170/Q170815/
 	
 	=============================================================================
 	
+
+{% endraw %}

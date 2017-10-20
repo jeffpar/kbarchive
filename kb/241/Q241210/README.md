@@ -6,6 +6,8 @@ permalink: /kb/241/Q241210/
 
 ## Q241210: Drive List Shows Only Program Drive in 16-Bit or 32-Bit Program
 
+{% raw %}
+
 	Article: Q241210
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5
@@ -95,3 +97,5 @@ permalink: /kb/241/Q241210/
 	
 	=============================================================================
 	
+
+{% endraw %}

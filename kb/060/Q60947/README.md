@@ -6,6 +6,8 @@ permalink: /kb/060/Q60947/
 
 ## Q60947: Mac Form: Text Fields Are Resized When Compiling Custom Form
 
+{% raw %}
+
 	Article: Q60947
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -42,3 +44,5 @@ permalink: /kb/060/Q60947/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/102/Q102728/
 
 ## Q102728: Manual Installation of the UAM
 
+{% raw %}
+
 	Article: Q102728
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -77,3 +79,5 @@ permalink: /kb/102/Q102728/
 	
 	=============================================================================
 	
+
+{% endraw %}

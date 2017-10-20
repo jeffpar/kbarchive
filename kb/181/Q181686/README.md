@@ -6,6 +6,8 @@ permalink: /kb/181/Q181686/
 
 ## Q181686: Windows 98 Beta Expires on December 31, 1998
 
+{% raw %}
+
 	Article: Q181686
 	Product(s): Microsoft Press
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/181/Q181686/
 	
 	=============================================================================
 	
+
+{% endraw %}

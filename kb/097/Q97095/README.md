@@ -6,6 +6,8 @@ permalink: /kb/097/Q97095/
 
 ## Q97095: WD97: Send Command Missing from File Menu
 
+{% raw %}
+
 	Article: Q97095
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/097/Q97095/
 	
 	=============================================================================
 	
+
+{% endraw %}

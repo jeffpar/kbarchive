@@ -6,6 +6,8 @@ permalink: /kb/047/Q47725/
 
 ## Q47725: QuickC: Tilde Erroneously Replaced by Minus Sign in Help
 
+{% raw %}
+
 	Article: Q47725
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -22,3 +24,5 @@ permalink: /kb/047/Q47725/
 	menu, go into the contents section, and select operator precedence
 	under the "Useful Tables" heading. The minus sign is located in the
 	second section above the correctly represented minus sign.
+
+{% endraw %}

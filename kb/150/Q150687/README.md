@@ -6,6 +6,8 @@ permalink: /kb/150/Q150687/
 
 ## Q150687: Group Policies Not Applied on Windows NT Domain
 
+{% raw %}
+
 	Article: Q150687
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -112,3 +114,5 @@ permalink: /kb/150/Q150687/
 	
 	=============================================================================
 	
+
+{% endraw %}

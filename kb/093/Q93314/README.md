@@ -6,6 +6,8 @@ permalink: /kb/093/Q93314/
 
 ## Q93314: OK, Browse Buttons Disabled in File Manager Associate Option
 
+{% raw %}
+
 	Article: Q93314
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/093/Q93314/
 	
 	=============================================================================
 	
+
+{% endraw %}

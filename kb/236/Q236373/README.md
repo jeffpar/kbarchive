@@ -6,6 +6,8 @@ permalink: /kb/236/Q236373/
 
 ## Q236373: How Maximum Password Age Is Implemented
 
+{% raw %}
+
 	Article: Q236373
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -65,3 +67,5 @@ permalink: /kb/236/Q236373/
 	
 	=============================================================================
 	
+
+{% endraw %}

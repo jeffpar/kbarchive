@@ -6,6 +6,8 @@ permalink: /kb/171/Q171834/
 
 ## Q171834: FIX: Crash When UserControl Accesses Members of ParentControls
 
+{% raw %}
+
 	Article: Q171834
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -107,3 +109,5 @@ permalink: /kb/171/Q171834/
 	
 	=============================================================================
 	
+
+{% endraw %}

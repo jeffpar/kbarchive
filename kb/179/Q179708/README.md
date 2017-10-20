@@ -6,6 +6,8 @@ permalink: /kb/179/Q179708/
 
 ## Q179708: WD97: Custom &quot;Page Design&quot; Changes Not Used by Letter Wizard
 
+{% raw %}
+
 	Article: Q179708
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/179/Q179708/
 	
 	=============================================================================
 	
+
+{% endraw %}

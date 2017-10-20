@@ -6,6 +6,8 @@ permalink: /kb/319/Q319895/
 
 ## Q319895: Zoo Tycoon: Computer Stops Responding When You Start Zoo Tycoon
 
+{% raw %}
+
 	Article: Q319895
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/319/Q319895/
 	
 	=============================================================================
 	
+
+{% endraw %}

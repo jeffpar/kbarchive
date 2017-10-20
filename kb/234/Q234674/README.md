@@ -6,6 +6,8 @@ permalink: /kb/234/Q234674/
 
 ## Q234674: Character Mappings Are Incorrect for Four Definitions
 
+{% raw %}
+
 	Article: Q234674
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,3.0SP4
@@ -281,3 +283,5 @@ permalink: /kb/234/Q234674/
 	
 	=============================================================================
 	
+
+{% endraw %}

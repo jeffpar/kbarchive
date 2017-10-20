@@ -6,6 +6,8 @@ permalink: /kb/162/Q162230/
 
 ## Q162230: Fragmentation and Performance Issues with PPTP Connections
 
+{% raw %}
+
 	Article: Q162230
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -129,3 +131,5 @@ permalink: /kb/162/Q162230/
 	
 	=============================================================================
 	
+
+{% endraw %}

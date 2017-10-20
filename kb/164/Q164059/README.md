@@ -6,6 +6,8 @@ permalink: /kb/164/Q164059/
 
 ## Q164059: IIS Execution File Text Can Be Viewed in Client
 
+{% raw %}
+
 	Article: Q164059
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,3.0
@@ -78,3 +80,5 @@ permalink: /kb/164/Q164059/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/062/Q62702/
 
 ## Q62702: PWB 1.0 Does Not Return from DOS Shell If TMP Contains &quot;;&quot;
 
+{% raw %}
+
 	Article: Q62702
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0; OS/2:1.0
@@ -52,3 +54,5 @@ permalink: /kb/062/Q62702/
 	
 	=============================================================================
 	
+
+{% endraw %}

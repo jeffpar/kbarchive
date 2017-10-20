@@ -6,6 +6,8 @@ permalink: /kb/143/Q143250/
 
 ## Q143250: Streets 4.0: How to Use the &quot;Go To Lat/Long Option&quot;
 
+{% raw %}
+
 	Article: Q143250
 	Product(s): Microsoft Automap
 	Version(s): 4.00
@@ -69,3 +71,5 @@ permalink: /kb/143/Q143250/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192460/
 
 ## Q192460: Matrox Video Driver Causes STOP 0x00000050
 
+{% raw %}
+
 	Article: Q192460
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/192/Q192460/
 	
 	=============================================================================
 	
+
+{% endraw %}

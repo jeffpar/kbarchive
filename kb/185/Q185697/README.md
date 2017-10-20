@@ -6,6 +6,8 @@ permalink: /kb/185/Q185697/
 
 ## Q185697: HOWTO: Use the AddObject Method of the Script Control
 
+{% raw %}
+
 	Article: Q185697
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -138,3 +140,5 @@ permalink: /kb/185/Q185697/
 	
 	=============================================================================
 	
+
+{% endraw %}

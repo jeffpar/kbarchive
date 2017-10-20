@@ -6,6 +6,8 @@ permalink: /kb/070/Q70073/
 
 ## Q70073: WinRes.exe Extracts an Icon from a Windows .EXE File
 
+{% raw %}
+
 	Article: Q70073
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -123,3 +125,5 @@ permalink: /kb/070/Q70073/
 	
 	=============================================================================
 	
+
+{% endraw %}

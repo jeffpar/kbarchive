@@ -6,6 +6,8 @@ permalink: /kb/138/Q138827/
 
 ## Q138827: ALT+F4 Hangs Paint When in View Bitmap Mode
 
+{% raw %}
+
 	Article: Q138827
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -56,3 +58,5 @@ permalink: /kb/138/Q138827/
 	
 	=============================================================================
 	
+
+{% endraw %}

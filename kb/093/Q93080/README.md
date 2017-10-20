@@ -6,6 +6,8 @@ permalink: /kb/093/Q93080/
 
 ## Q93080: PC Ext: External Tries Repeatedly to Deliver Mail
 
+{% raw %}
+
 	Article: Q93080
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/093/Q93080/
 	
 	=============================================================================
 	
+
+{% endraw %}

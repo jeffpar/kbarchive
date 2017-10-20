@@ -6,6 +6,8 @@ permalink: /kb/119/Q119151/
 
 ## Q119151: README.NOW:  MS-DOS 6.22 Step-Up (BBS) README.NOW File
 
+{% raw %}
+
 	Article: Q119151
 	Product(s): Microsoft Disk Operating System
 	Version(s): 6.22
@@ -550,3 +552,5 @@ permalink: /kb/119/Q119151/
 	
 	=============================================================================
 	
+
+{% endraw %}

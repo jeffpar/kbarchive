@@ -6,6 +6,8 @@ permalink: /kb/129/Q129132/
 
 ## Q129132: BUG: Can't Use Simple Type in an Explicit Call of a Destructor
 
+{% raw %}
+
 	Article: Q129132
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.52,2.0,2.1,4.0,4.1,4.2,5.0,6.0
@@ -98,3 +100,5 @@ permalink: /kb/129/Q129132/
 	
 	=============================================================================
 	
+
+{% endraw %}

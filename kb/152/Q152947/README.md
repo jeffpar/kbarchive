@@ -6,6 +6,8 @@ permalink: /kb/152/Q152947/
 
 ## Q152947: XCON: Err Msg: Suspected Deadlock
 
+{% raw %}
+
 	Article: Q152947
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/152/Q152947/
 	
 	=============================================================================
 	
+
+{% endraw %}

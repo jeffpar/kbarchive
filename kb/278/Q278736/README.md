@@ -6,6 +6,8 @@ permalink: /kb/278/Q278736/
 
 ## Q278736: XADM:  Alternatives to the &quot;Move  Mailbox&quot; command of the
 
+{% raw %}
+
 	Article: Q278736
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.0 SP1,5.0 SP2,5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -188,3 +190,5 @@ permalink: /kb/278/Q278736/
 	
 	=============================================================================
 	
+
+{% endraw %}

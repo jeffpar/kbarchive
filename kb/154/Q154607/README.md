@@ -6,6 +6,8 @@ permalink: /kb/154/Q154607/
 
 ## Q154607: XCLN: Folder Deleted From Offline Store Removes Online Folder
 
+{% raw %}
+
 	Article: Q154607
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -74,3 +76,5 @@ permalink: /kb/154/Q154607/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180599/
 
 ## Q180599: WD97: How to Use Query to Merge Two Excel Files for Data Source
 
+{% raw %}
+
 	Article: Q180599
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:8.0,97
@@ -258,3 +260,5 @@ permalink: /kb/180/Q180599/
 	
 	=============================================================================
 	
+
+{% endraw %}

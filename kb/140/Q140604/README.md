@@ -6,6 +6,8 @@ permalink: /kb/140/Q140604/
 
 ## Q140604: FIX: 'using' Declaration Doesn't Overload Base Class Members
 
+{% raw %}
+
 	Article: Q140604
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -98,3 +100,5 @@ permalink: /kb/140/Q140604/
 	
 	=============================================================================
 	
+
+{% endraw %}

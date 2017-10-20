@@ -6,6 +6,8 @@ permalink: /kb/185/Q185183/
 
 ## Q185183: XADM: Administering Alpha-based Servers from Intel Workstations
 
+{% raw %}
+
 	Article: Q185183
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -157,3 +159,5 @@ permalink: /kb/185/Q185183/
 	
 	=============================================================================
 	
+
+{% endraw %}

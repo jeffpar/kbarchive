@@ -6,6 +6,8 @@ permalink: /kb/135/Q135926/
 
 ## Q135926: SMTP: SMTPPUT 201: Failure Submitting Message to Mail Database
 
+{% raw %}
+
 	Article: Q135926
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -182,3 +184,5 @@ permalink: /kb/135/Q135926/
 	
 	=============================================================================
 	
+
+{% endraw %}

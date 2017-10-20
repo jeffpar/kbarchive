@@ -6,6 +6,8 @@ permalink: /kb/225/Q225151/
 
 ## Q225151: PC Card Modem Does Not Use Assigned Interrupt
 
+{% raw %}
+
 	Article: Q225151
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -99,3 +101,5 @@ permalink: /kb/225/Q225151/
 	
 	=============================================================================
 	
+
+{% endraw %}

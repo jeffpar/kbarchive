@@ -6,6 +6,8 @@ permalink: /kb/253/Q253930/
 
 ## Q253930: Expedia Streets and Trips 2000: How to Clear the Find List
 
+{% raw %}
+
 	Article: Q253930
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -59,3 +61,5 @@ permalink: /kb/253/Q253930/
 	
 	=============================================================================
 	
+
+{% endraw %}

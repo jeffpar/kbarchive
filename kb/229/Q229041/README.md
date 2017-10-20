@@ -6,6 +6,8 @@ permalink: /kb/229/Q229041/
 
 ## Q229041: Files Are Not Deleted From Recycler Folder
 
+{% raw %}
+
 	Article: Q229041
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/229/Q229041/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141630/
 
 ## Q141630: PRB: Visual Foxpro Must Quit After Error When Set PageCount
 
+{% raw %}
+
 	Article: Q141630
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -72,3 +74,5 @@ permalink: /kb/141/Q141630/
 	
 	=============================================================================
 	
+
+{% endraw %}

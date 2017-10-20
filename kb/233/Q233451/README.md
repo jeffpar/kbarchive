@@ -6,6 +6,8 @@ permalink: /kb/233/Q233451/
 
 ## Q233451: MSBP: Version Tab Missing from File Properties Dialog Box
 
+{% raw %}
+
 	Article: Q233451
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -56,3 +58,5 @@ permalink: /kb/233/Q233451/
 	
 	=============================================================================
 	
+
+{% endraw %}

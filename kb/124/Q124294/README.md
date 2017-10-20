@@ -6,6 +6,8 @@ permalink: /kb/124/Q124294/
 
 ## Q124294: Windows NT Help Err Msg: Cannot Open Help File
 
+{% raw %}
+
 	Article: Q124294
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/124/Q124294/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84159/
 
 ## Q84159: Windows: Mouse Trails Only Work at Lower Resolutions
 
+{% raw %}
+
 	Article: Q84159
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -74,3 +76,5 @@ permalink: /kb/084/Q84159/
 	
 	=============================================================================
 	
+
+{% endraw %}

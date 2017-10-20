@@ -6,6 +6,8 @@ permalink: /kb/096/Q96937/
 
 ## Q96937: UNINSTALL and DELOLDOS Don't Remove Directories
 
+{% raw %}
+
 	Article: Q96937
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -66,3 +68,5 @@ permalink: /kb/096/Q96937/
 	
 	=============================================================================
 	
+
+{% endraw %}

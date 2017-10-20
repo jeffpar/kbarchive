@@ -6,6 +6,8 @@ permalink: /kb/132/Q132806/
 
 ## Q132806: Persistent Connections Not Preserved on Upgrade
 
+{% raw %}
+
 	Article: Q132806
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -56,3 +58,5 @@ permalink: /kb/132/Q132806/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162520/
 
 ## Q162520: WD97: GetAllSettings Returns Type Mismatch
 
+{% raw %}
+
 	Article: Q162520
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -150,3 +152,5 @@ permalink: /kb/162/Q162520/
 	
 	=============================================================================
 	
+
+{% endraw %}

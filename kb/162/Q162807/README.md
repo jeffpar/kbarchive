@@ -6,6 +6,8 @@ permalink: /kb/162/Q162807/
 
 ## Q162807: Err Msg: RAS Error 633: The Port Is in Use or Not Configured
 
+{% raw %}
+
 	Article: Q162807
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/162/Q162807/
 	
 	=============================================================================
 	
+
+{% endraw %}

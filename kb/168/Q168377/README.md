@@ -6,6 +6,8 @@ permalink: /kb/168/Q168377/
 
 ## Q168377: PRB: STL string Class replace Function Does Not Work as Expected
 
+{% raw %}
+
 	Article: Q168377
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2 5.0
@@ -80,3 +82,5 @@ permalink: /kb/168/Q168377/
 	
 	=============================================================================
 	
+
+{% endraw %}

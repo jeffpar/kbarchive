@@ -6,6 +6,8 @@ permalink: /kb/238/Q238010/
 
 ## Q238010: XADM: Mailbox Manager Setup Installs i386 &amp; Alpha Extension DLL
 
+{% raw %}
+
 	Article: Q238010
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -41,3 +43,5 @@ permalink: /kb/238/Q238010/
 	
 	=============================================================================
 	
+
+{% endraw %}

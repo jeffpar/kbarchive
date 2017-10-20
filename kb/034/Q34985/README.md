@@ -6,6 +6,8 @@ permalink: /kb/034/Q34985/
 
 ## Q34985: PRB: A2102 Warnings Generated for Possible 80286 Problems
 
+{% raw %}
+
 	Article: Q34985
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -92,3 +94,5 @@ permalink: /kb/034/Q34985/
 	
 	=============================================================================
 	
+
+{% endraw %}

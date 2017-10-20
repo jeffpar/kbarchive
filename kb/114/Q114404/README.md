@@ -6,6 +6,8 @@ permalink: /kb/114/Q114404/
 
 ## Q114404: PROFS: First Contact Form for PROFS Gateway
 
+{% raw %}
+
 	Article: Q114404
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2,3.3,3.4,3.4a
@@ -121,3 +123,5 @@ permalink: /kb/114/Q114404/
 	
 	=============================================================================
 	
+
+{% endraw %}

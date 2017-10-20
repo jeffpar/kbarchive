@@ -6,6 +6,8 @@ permalink: /kb/241/Q241006/
 
 ## Q241006: NBA 2000: Slow Frame Rate and Poor Graphics Performance
 
+{% raw %}
+
 	Article: Q241006
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/241/Q241006/
 	
 	=============================================================================
 	
+
+{% endraw %}

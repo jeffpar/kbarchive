@@ -6,6 +6,8 @@ permalink: /kb/160/Q160921/
 
 ## Q160921: PRB: Error Using OLE Controls
 
+{% raw %}
+
 	Article: Q160921
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0
@@ -101,3 +103,5 @@ permalink: /kb/160/Q160921/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148786/
 
 ## Q148786: Fury 3: Ship Direction Problem with Blue Lightning Motherboard
 
+{% raw %}
+
 	Article: Q148786
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -60,3 +62,5 @@ permalink: /kb/148/Q148786/
 	
 	=============================================================================
 	
+
+{% endraw %}

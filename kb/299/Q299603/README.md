@@ -6,6 +6,8 @@ permalink: /kb/299/Q299603/
 
 ## Q299603: PRB: &quot;Error reading file&quot; Err Msg on Windows 2000 Terminal Svcs
 
+{% raw %}
+
 	Article: Q299603
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0,7.0
@@ -104,3 +106,5 @@ permalink: /kb/299/Q299603/
 	
 	=============================================================================
 	
+
+{% endraw %}

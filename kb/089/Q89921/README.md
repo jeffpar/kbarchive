@@ -6,6 +6,8 @@ permalink: /kb/089/Q89921/
 
 ## Q89921: Applications, Executables, &amp; Libraries Q&amp;A for FoxPro 2.0
 
+{% raw %}
+
 	Article: Q89921
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/089/Q89921/
 	
 	=============================================================================
 	
+
+{% endraw %}

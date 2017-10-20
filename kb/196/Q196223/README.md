@@ -6,6 +6,8 @@ permalink: /kb/196/Q196223/
 
 ## Q196223: SMS: How to Configure SMS Security for Individual User Accounts
 
+{% raw %}
+
 	Article: Q196223
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -90,3 +92,5 @@ permalink: /kb/196/Q196223/
 	
 	=============================================================================
 	
+
+{% endraw %}

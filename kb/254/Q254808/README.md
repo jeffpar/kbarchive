@@ -6,6 +6,8 @@ permalink: /kb/254/Q254808/
 
 ## Q254808: IIS Sample ADSI Script to Create FTP Virtual Directories
 
+{% raw %}
+
 	Article: Q254808
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -293,3 +295,5 @@ permalink: /kb/254/Q254808/
 	
 	=============================================================================
 	
+
+{% endraw %}

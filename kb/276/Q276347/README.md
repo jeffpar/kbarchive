@@ -6,6 +6,8 @@ permalink: /kb/276/Q276347/
 
 ## Q276347: XFOR: Messages Moved to the Badmail Folder with SMTP Service
 
+{% raw %}
+
 	Article: Q276347
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -125,3 +127,5 @@ permalink: /kb/276/Q276347/
 	
 	=============================================================================
 	
+
+{% endraw %}

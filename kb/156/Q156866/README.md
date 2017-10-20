@@ -6,6 +6,8 @@ permalink: /kb/156/Q156866/
 
 ## Q156866: FIX: REPORT FORM Command Returns Wrong Font Size in Windows 95
 
+{% raw %}
+
 	Article: Q156866
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -119,3 +121,5 @@ permalink: /kb/156/Q156866/
 	
 	=============================================================================
 	
+
+{% endraw %}

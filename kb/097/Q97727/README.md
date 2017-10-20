@@ -6,6 +6,8 @@ permalink: /kb/097/Q97727/
 
 ## Q97727: WFWG: NET START Prompts for Logon on 80286-Based Computers
 
+{% raw %}
+
 	Article: Q97727
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -57,3 +59,5 @@ permalink: /kb/097/Q97727/
 	
 	=============================================================================
 	
+
+{% endraw %}

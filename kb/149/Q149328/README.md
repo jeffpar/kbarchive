@@ -6,6 +6,8 @@ permalink: /kb/149/Q149328/
 
 ## Q149328: FIX: Selecting Invisible Tab Can Cause GPF with SSTab Control
 
+{% raw %}
+
 	Article: Q149328
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/149/Q149328/
 	
 	=============================================================================
 	
+
+{% endraw %}

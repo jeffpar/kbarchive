@@ -6,6 +6,8 @@ permalink: /kb/172/Q172988/
 
 ## Q172988: SAMPLE: CLSNMMBR.EXE Retrieves Members of a DLL Class
 
+{% raw %}
+
 	Article: Q172988
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -241,3 +243,5 @@ permalink: /kb/172/Q172988/
 	
 	=============================================================================
 	
+
+{% endraw %}

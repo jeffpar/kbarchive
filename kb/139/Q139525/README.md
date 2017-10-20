@@ -6,6 +6,8 @@ permalink: /kb/139/Q139525/
 
 ## Q139525: How to Verify If an Object Has a Particular Property or Method
 
+{% raw %}
+
 	Article: Q139525
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -106,3 +108,5 @@ permalink: /kb/139/Q139525/
 	
 	=============================================================================
 	
+
+{% endraw %}

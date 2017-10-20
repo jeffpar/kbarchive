@@ -6,6 +6,8 @@ permalink: /kb/137/Q137187/
 
 ## Q137187: Bookshelf 95 for Windows 95: Contents of Readme.txt
 
+{% raw %}
+
 	Article: Q137187
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -835,3 +837,5 @@ permalink: /kb/137/Q137187/
 	
 	=============================================================================
 	
+
+{% endraw %}

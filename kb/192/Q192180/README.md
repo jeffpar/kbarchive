@@ -6,6 +6,8 @@ permalink: /kb/192/Q192180/
 
 ## Q192180: XADM: Selecting the View Only Admin Role for the Organization
 
+{% raw %}
+
 	Article: Q192180
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -51,3 +53,5 @@ permalink: /kb/192/Q192180/
 	
 	=============================================================================
 	
+
+{% endraw %}

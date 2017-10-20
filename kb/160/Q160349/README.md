@@ -6,6 +6,8 @@ permalink: /kb/160/Q160349/
 
 ## Q160349: DNS Does Not Support &#36;INCLUDE Statement
 
+{% raw %}
+
 	Article: Q160349
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -52,3 +54,5 @@ permalink: /kb/160/Q160349/
 	
 	=============================================================================
 	
+
+{% endraw %}

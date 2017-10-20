@@ -6,6 +6,8 @@ permalink: /kb/191/Q191126/
 
 ## Q191126: PRB: Font Changes as ActiveX Control Resizes
 
+{% raw %}
+
 	Article: Q191126
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -112,3 +114,5 @@ permalink: /kb/191/Q191126/
 	
 	=============================================================================
 	
+
+{% endraw %}

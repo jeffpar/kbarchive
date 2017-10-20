@@ -6,6 +6,8 @@ permalink: /kb/181/Q181866/
 
 ## Q181866: Fatal Exception Error Accessing Windows NT Share From Windows 95
 
+{% raw %}
+
 	Article: Q181866
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; WINNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/181/Q181866/
 	
 	=============================================================================
 	
+
+{% endraw %}

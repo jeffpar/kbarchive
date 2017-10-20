@@ -6,6 +6,8 @@ permalink: /kb/156/Q156812/
 
 ## Q156812: XCLN: Running Exchange MS-DOS Client in Monitor Mode
 
+{% raw %}
+
 	Article: Q156812
 	Product(s): Microsoft Exchange
 	Version(s): MS-DOS:4.0,5.0
@@ -56,3 +58,5 @@ permalink: /kb/156/Q156812/
 	
 	=============================================================================
 	
+
+{% endraw %}

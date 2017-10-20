@@ -6,6 +6,8 @@ permalink: /kb/238/Q238349/
 
 ## Q238349: Specially-Malformed Header Creates Denial of Service
 
+{% raw %}
+
 	Article: Q238349
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,2.5,3.0,4.0
@@ -88,3 +90,5 @@ permalink: /kb/238/Q238349/
 	
 	=============================================================================
 	
+
+{% endraw %}

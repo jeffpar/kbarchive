@@ -6,6 +6,8 @@ permalink: /kb/313/Q313631/
 
 ## Q313631: BUG: Debugger Does Not Expand Variable Of C Structure Type
 
+{% raw %}
+
 	Article: Q313631
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -81,3 +83,5 @@ permalink: /kb/313/Q313631/
 	
 	=============================================================================
 	
+
+{% endraw %}

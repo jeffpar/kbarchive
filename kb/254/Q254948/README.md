@@ -6,6 +6,8 @@ permalink: /kb/254/Q254948/
 
 ## Q254948: MapPoint 2001: How to Install and Run Over a Network
 
+{% raw %}
+
 	Article: Q254948
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/254/Q254948/
 	
 	=============================================================================
 	
+
+{% endraw %}

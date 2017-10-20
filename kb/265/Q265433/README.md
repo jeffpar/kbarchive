@@ -6,6 +6,8 @@ permalink: /kb/265/Q265433/
 
 ## Q265433: Rpcss Leaks Memory with CoCreateInstance() and Release
 
+{% raw %}
+
 	Article: Q265433
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/265/Q265433/
 	
 	=============================================================================
 	
+
+{% endraw %}

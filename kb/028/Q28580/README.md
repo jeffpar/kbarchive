@@ -6,6 +6,8 @@ permalink: /kb/028/Q28580/
 
 ## Q28580: How to Put Microsoft Editor (M or MEP) into 43-Line Mode
 
+{% raw %}
+
 	Article: Q28580
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -39,3 +41,5 @@ permalink: /kb/028/Q28580/
 	
 	M.EXE runs in MS-DOS real mode, and MEP.EXE runs in OS/2 protected
 	mode.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/113/Q113017/
 
 ## Q113017: PPT: Cannot Branch to PowerPoint Slide Objects
 
+{% raw %}
+
 	Article: Q113017
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -133,3 +135,5 @@ permalink: /kb/113/Q113017/
 	
 	=============================================================================
 	
+
+{% endraw %}

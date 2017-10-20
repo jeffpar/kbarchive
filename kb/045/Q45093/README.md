@@ -6,6 +6,8 @@ permalink: /kb/045/Q45093/
 
 ## Q45093: QC Advisor Says That fabs() Prototyped in STDLIB.H
 
+{% raw %}
+
 	Article: Q45093
 	Product(s): See article
 	Version(s): 2.00
@@ -23,3 +25,5 @@ permalink: /kb/045/Q45093/
 	3, the compiler produces messages indicating that fabs() has not been
 	prototyped and returns an integer by default; however, at warning
 	levels 0 and 1 there is no indication that this problem exists.
+
+{% endraw %}

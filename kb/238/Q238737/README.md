@@ -6,6 +6,8 @@ permalink: /kb/238/Q238737/
 
 ## Q238737: VPath Variable Not Populated in Index Server Results Page
 
+{% raw %}
+
 	Article: Q238737
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0
@@ -72,3 +74,5 @@ permalink: /kb/238/Q238737/
 	
 	=============================================================================
 	
+
+{% endraw %}

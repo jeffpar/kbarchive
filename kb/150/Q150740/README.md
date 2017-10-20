@@ -6,6 +6,8 @@ permalink: /kb/150/Q150740/
 
 ## Q150740: XCLN: DocErr: Client Floppy Install Instructions are Wrong
 
+{% raw %}
+
 	Article: Q150740
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -55,3 +57,5 @@ permalink: /kb/150/Q150740/
 	
 	=============================================================================
 	
+
+{% endraw %}

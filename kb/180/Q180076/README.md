@@ -6,6 +6,8 @@ permalink: /kb/180/Q180076/
 
 ## Q180076: Manager Should Only Allow QPCSUPP Mode For TN5250
 
+{% raw %}
+
 	Article: Q180076
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0,4.0 SP1
@@ -51,3 +53,5 @@ permalink: /kb/180/Q180076/
 	
 	=============================================================================
 	
+
+{% endraw %}

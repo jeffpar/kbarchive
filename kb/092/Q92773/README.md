@@ -6,6 +6,8 @@ permalink: /kb/092/Q92773/
 
 ## Q92773: WFWG: Problems when Windows Express Version 3.0 Run as Shell
 
+{% raw %}
+
 	Article: Q92773
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -85,3 +87,5 @@ permalink: /kb/092/Q92773/
 	
 	=============================================================================
 	
+
+{% endraw %}

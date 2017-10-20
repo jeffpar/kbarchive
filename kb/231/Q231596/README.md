@@ -6,6 +6,8 @@ permalink: /kb/231/Q231596/
 
 ## Q231596: Midtown Madness: Game Controller Stops Functioning During Game
 
+{% raw %}
+
 	Article: Q231596
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/231/Q231596/
 	
 	=============================================================================
 	
+
+{% endraw %}

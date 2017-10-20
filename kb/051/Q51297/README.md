@@ -6,6 +6,8 @@ permalink: /kb/051/Q51297/
 
 ## Q51297: C 5.00 and C 5.10 Compiler Exit Codes
 
+{% raw %}
+
 	Article: Q51297
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -25,3 +27,5 @@ permalink: /kb/051/Q51297/
 	
 	The compiler returns the same exit codes when you run it from inside
 	the Microsoft Editor Version 1.00.
+
+{% endraw %}

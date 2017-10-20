@@ -6,6 +6,8 @@ permalink: /kb/162/Q162578/
 
 ## Q162578: Unable to Back Up from a Windows 95 Share to Windows NT
 
+{% raw %}
+
 	Article: Q162578
 	Product(s): Microsoft Windows NT
 	Version(s): 1,2,3.51,4.0
@@ -95,3 +97,5 @@ permalink: /kb/162/Q162578/
 	
 	=============================================================================
 	
+
+{% endraw %}

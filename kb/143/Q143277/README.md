@@ -6,6 +6,8 @@ permalink: /kb/143/Q143277/
 
 ## Q143277: No Notification If Monthly Charge Exceeds Specified Amount
 
+{% raw %}
+
 	Article: Q143277
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3,2.0,2.5
@@ -42,3 +44,5 @@ permalink: /kb/143/Q143277/
 	
 	=============================================================================
 	
+
+{% endraw %}

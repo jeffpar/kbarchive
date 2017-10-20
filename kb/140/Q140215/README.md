@@ -6,6 +6,8 @@ permalink: /kb/140/Q140215/
 
 ## Q140215: FIX: Brackets Cause Recordset Update to Fail in SQL Server
 
+{% raw %}
+
 	Article: Q140215
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0 2.1 2.2
@@ -92,3 +94,5 @@ permalink: /kb/140/Q140215/
 	
 	=============================================================================
 	
+
+{% endraw %}

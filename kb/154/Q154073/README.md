@@ -6,6 +6,8 @@ permalink: /kb/154/Q154073/
 
 ## Q154073: ADT95: MSDBOUTL.OCX Unable to Register Itself in System Registry
 
+{% raw %}
+
 	Article: Q154073
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0
@@ -99,3 +101,5 @@ permalink: /kb/154/Q154073/
 	
 	=============================================================================
 	
+
+{% endraw %}

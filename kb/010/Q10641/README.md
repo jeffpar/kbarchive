@@ -6,6 +6,8 @@ permalink: /kb/010/Q10641/
 
 ## Q10641: Heap and Stack Usage Within Windows
 
+{% raw %}
+
 	Article: Q10641
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -65,3 +67,5 @@ permalink: /kb/010/Q10641/
 	
 	=============================================================================
 	
+
+{% endraw %}

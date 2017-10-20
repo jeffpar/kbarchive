@@ -6,6 +6,8 @@ permalink: /kb/140/Q140878/
 
 ## Q140878: BUG: Adding PIF Files in Setup Wiz Step 7 Copies Actual Files
 
+{% raw %}
+
 	Article: Q140878
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -94,3 +96,5 @@ permalink: /kb/140/Q140878/
 	
 	=============================================================================
 	
+
+{% endraw %}

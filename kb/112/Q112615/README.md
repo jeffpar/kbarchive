@@ -6,6 +6,8 @@ permalink: /kb/112/Q112615/
 
 ## Q112615: AWFAX: Minimum Number of Rings for Auto Answer
 
+{% raw %}
+
 	Article: Q112615
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -58,3 +60,5 @@ permalink: /kb/112/Q112615/
 	
 	=============================================================================
 	
+
+{% endraw %}

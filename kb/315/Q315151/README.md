@@ -6,6 +6,8 @@ permalink: /kb/315/Q315151/
 
 ## Q315151: FP: Error Message: Cannot Establish Secure Connection Using SSL
 
+{% raw %}
+
 	Article: Q315151
 	Product(s): Word Front Page
 	Version(s): 
@@ -99,3 +101,5 @@ permalink: /kb/315/Q315151/
 	
 	=============================================================================
 	
+
+{% endraw %}

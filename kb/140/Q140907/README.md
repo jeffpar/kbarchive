@@ -6,6 +6,8 @@ permalink: /kb/140/Q140907/
 
 ## Q140907: Cannot Send E-mail to X.400 Addresses from MSN
 
+{% raw %}
+
 	Article: Q140907
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5,95
@@ -45,3 +47,5 @@ permalink: /kb/140/Q140907/
 	
 	=============================================================================
 	
+
+{% endraw %}

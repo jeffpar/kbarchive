@@ -6,6 +6,8 @@ permalink: /kb/225/Q225207/
 
 ## Q225207: APPC/CPIC App Unable to Allocate Conversation over Dependent LU
 
+{% raw %}
+
 	Article: Q225207
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0SP3,4.0SP1,4.0SP2
@@ -132,3 +134,5 @@ permalink: /kb/225/Q225207/
 	
 	=============================================================================
 	
+
+{% endraw %}

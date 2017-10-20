@@ -6,6 +6,8 @@ permalink: /kb/294/Q294379/
 
 ## Q294379: Addressees Appear in Body of SMTP Message Instead of the Header
 
+{% raw %}
+
 	Article: Q294379
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -96,3 +98,5 @@ permalink: /kb/294/Q294379/
 	
 	=============================================================================
 	
+
+{% endraw %}

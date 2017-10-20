@@ -6,6 +6,8 @@ permalink: /kb/124/Q124046/
 
 ## Q124046: WordPerfect Always Prompts for Net Login ID in Windows 95
 
+{% raw %}
+
 	Article: Q124046
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -60,3 +62,5 @@ permalink: /kb/124/Q124046/
 	
 	=============================================================================
 	
+
+{% endraw %}

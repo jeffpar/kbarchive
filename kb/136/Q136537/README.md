@@ -6,6 +6,8 @@ permalink: /kb/136/Q136537/
 
 ## Q136537: How the Leopard Got His Spots: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q136537
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -97,3 +99,5 @@ permalink: /kb/136/Q136537/
 	
 	=============================================================================
 	
+
+{% endraw %}

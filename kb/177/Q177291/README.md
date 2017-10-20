@@ -6,6 +6,8 @@ permalink: /kb/177/Q177291/
 
 ## Q177291: A Bridge Too Far: Pointing Device Does Not Respond Correctly
 
+{% raw %}
+
 	Article: Q177291
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -57,3 +59,5 @@ permalink: /kb/177/Q177291/
 	
 	=============================================================================
 	
+
+{% endraw %}

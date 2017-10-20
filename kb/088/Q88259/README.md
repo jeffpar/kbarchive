@@ -6,6 +6,8 @@ permalink: /kb/088/Q88259/
 
 ## Q88259: PPT: Cannot Press TAB at Beginning of Paragraph
 
+{% raw %}
+
 	Article: Q88259
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,7.0
@@ -62,3 +64,5 @@ permalink: /kb/088/Q88259/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137516/
 
 ## Q137516: How to Register an MFC OLE Automation Server to Avoid Failure
 
+{% raw %}
+
 	Article: Q137516
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/137/Q137516/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128714/
 
 ## Q128714: Windows Sound System Produces Clicking Sounds in Windows 95
 
+{% raw %}
+
 	Article: Q128714
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0,95
@@ -48,3 +50,5 @@ permalink: /kb/128/Q128714/
 	
 	=============================================================================
 	
+
+{% endraw %}

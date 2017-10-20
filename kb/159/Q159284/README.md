@@ -6,6 +6,8 @@ permalink: /kb/159/Q159284/
 
 ## Q159284: XADM: Client Operation Failed Accessing Categorized PF View
 
+{% raw %}
+
 	Article: Q159284
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -121,3 +123,5 @@ permalink: /kb/159/Q159284/
 	
 	=============================================================================
 	
+
+{% endraw %}

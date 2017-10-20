@@ -6,6 +6,8 @@ permalink: /kb/271/Q271725/
 
 ## Q271725: Font Related Issues in Multimedia Products
 
+{% raw %}
+
 	Article: Q271725
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,1.5,99; :
@@ -214,3 +216,5 @@ permalink: /kb/271/Q271725/
 	
 	=============================================================================
 	
+
+{% endraw %}

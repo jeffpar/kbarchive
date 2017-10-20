@@ -6,6 +6,8 @@ permalink: /kb/142/Q142280/
 
 ## Q142280: PPT7: Fonts in Font List Contain Question Marks
 
+{% raw %}
+
 	Article: Q142280
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -87,3 +89,5 @@ permalink: /kb/142/Q142280/
 	
 	=============================================================================
 	
+
+{% endraw %}

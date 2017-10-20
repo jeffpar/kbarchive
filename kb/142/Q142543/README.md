@@ -6,6 +6,8 @@ permalink: /kb/142/Q142543/
 
 ## Q142543: Windows 95 Hangs with TCP/IP Routing Enabled
 
+{% raw %}
+
 	Article: Q142543
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -81,3 +83,5 @@ permalink: /kb/142/Q142543/
 	
 	=============================================================================
 	
+
+{% endraw %}

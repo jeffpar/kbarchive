@@ -6,6 +6,8 @@ permalink: /kb/231/Q231315/
 
 ## Q231315: How to Renew Network Bindings Using Setup.exe
 
+{% raw %}
+
 	Article: Q231315
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -55,3 +57,5 @@ permalink: /kb/231/Q231315/
 	
 	=============================================================================
 	
+
+{% endraw %}

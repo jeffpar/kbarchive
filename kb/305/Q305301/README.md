@@ -6,6 +6,8 @@ permalink: /kb/305/Q305301/
 
 ## Q305301: ENC Err Msg: Your Computer Does Not Have Enough Disk...
 
+{% raw %}
+
 	Article: Q305301
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -62,3 +64,5 @@ permalink: /kb/305/Q305301/
 	
 	=============================================================================
 	
+
+{% endraw %}

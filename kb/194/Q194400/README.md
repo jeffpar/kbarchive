@@ -6,6 +6,8 @@ permalink: /kb/194/Q194400/
 
 ## Q194400: FP98: Command-Line Arguments for Server Administrator
 
+{% raw %}
+
 	Article: Q194400
 	Product(s): Word Front Page
 	Version(s): WINDOWS:
@@ -183,3 +185,5 @@ permalink: /kb/194/Q194400/
 	
 	=============================================================================
 	
+
+{% endraw %}

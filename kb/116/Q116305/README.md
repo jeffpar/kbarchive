@@ -6,6 +6,8 @@ permalink: /kb/116/Q116305/
 
 ## Q116305: BUG: LINK Creates Zero-Size File if Insufficient Disk Space
 
+{% raw %}
+
 	Article: Q116305
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:5.5,5.60.22
@@ -60,3 +62,5 @@ permalink: /kb/116/Q116305/
 	
 	=============================================================================
 	
+
+{% endraw %}

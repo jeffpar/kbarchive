@@ -6,6 +6,8 @@ permalink: /kb/174/Q174676/
 
 ## Q174676: NetWare Authentication Failure When Logging On to NetWare Server
 
+{% raw %}
+
 	Article: Q174676
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -74,3 +76,5 @@ permalink: /kb/174/Q174676/
 	
 	=============================================================================
 	
+
+{% endraw %}

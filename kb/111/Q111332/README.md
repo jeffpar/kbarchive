@@ -6,6 +6,8 @@ permalink: /kb/111/Q111332/
 
 ## Q111332: WFWG Error Msg: This Postoffice Cannot Be Updated
 
+{% raw %}
+
 	Article: Q111332
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/111/Q111332/
 	
 	=============================================================================
 	
+
+{% endraw %}

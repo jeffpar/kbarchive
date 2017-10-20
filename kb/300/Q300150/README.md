@@ -6,6 +6,8 @@ permalink: /kb/300/Q300150/
 
 ## Q300150: SMS: Remote Control Console Problems with High Compression
 
+{% raw %}
+
 	Article: Q300150
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -83,3 +85,5 @@ permalink: /kb/300/Q300150/
 	
 	=============================================================================
 	
+
+{% endraw %}

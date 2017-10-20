@@ -6,6 +6,8 @@ permalink: /kb/061/Q61199/
 
 ## Q61199: C 6.00 README: New /BATCH Option
 
+{% raw %}
+
 	Article: Q61199
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -22,3 +24,5 @@ permalink: /kb/061/Q61199/
 	/BATCH Option. To disable prompting for library names or other
 	information and permit the use of CL in a batch or command file,
 	specify the /BATCH option.
+
+{% endraw %}

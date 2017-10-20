@@ -6,6 +6,8 @@ permalink: /kb/030/Q30855/
 
 ## Q30855: &quot;Device Unavailable&quot; Using Communications Port in Real Mode
 
+{% raw %}
+
 	Article: Q30855
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00B 7.00
@@ -41,3 +43,5 @@ permalink: /kb/030/Q30855/
 	For more information, please refer to Page 190 in the "Microsoft
 	Operating System/2 Beginning User's Guide" of the Microsoft OS/2 SDK
 	(Software Development Kit) Version 1.00.
+
+{% endraw %}

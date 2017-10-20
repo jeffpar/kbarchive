@@ -6,6 +6,8 @@ permalink: /kb/094/Q94013/
 
 ## Q94013: MS-DOS: MEM Doesn't Display &quot;Bytes Available XMS Memory&quot;
 
+{% raw %}
+
 	Article: Q94013
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a
@@ -50,3 +52,5 @@ permalink: /kb/094/Q94013/
 	
 	=============================================================================
 	
+
+{% endraw %}

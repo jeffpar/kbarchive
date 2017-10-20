@@ -6,6 +6,8 @@ permalink: /kb/168/Q168139/
 
 ## Q168139: XFOR: IMS Inbound Mail Communication Problem
 
+{% raw %}
+
 	Article: Q168139
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -66,3 +68,5 @@ permalink: /kb/168/Q168139/
 	
 	=============================================================================
 	
+
+{% endraw %}

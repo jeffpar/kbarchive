@@ -6,6 +6,8 @@ permalink: /kb/180/Q180769/
 
 ## Q180769: INFO: Text and Label Size Limitations in VBCE
 
+{% raw %}
+
 	Article: Q180769
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/180/Q180769/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183739/
 
 ## Q183739: XADM: Identifying and Removing Large Numbers of Orphaned Objects
 
+{% raw %}
+
 	Article: Q183739
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -313,3 +315,5 @@ permalink: /kb/183/Q183739/
 	
 	=============================================================================
 	
+
+{% endraw %}

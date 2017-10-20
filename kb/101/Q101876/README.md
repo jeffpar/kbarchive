@@ -6,6 +6,8 @@ permalink: /kb/101/Q101876/
 
 ## Q101876: Dinosaurs: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q101876
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -244,3 +246,5 @@ permalink: /kb/101/Q101876/
 	
 	=============================================================================
 	
+
+{% endraw %}

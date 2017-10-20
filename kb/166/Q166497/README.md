@@ -6,6 +6,8 @@ permalink: /kb/166/Q166497/
 
 ## Q166497: WD97: Error Using Border Constants with Font.Borders
 
+{% raw %}
+
 	Article: Q166497
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -107,3 +109,5 @@ permalink: /kb/166/Q166497/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143230/
 
 ## Q143230: 3D Movie Maker: Movies Cannot be Saved in AVI Format
 
+{% raw %}
+
 	Article: Q143230
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.00
@@ -57,3 +59,5 @@ permalink: /kb/143/Q143230/
 	
 	=============================================================================
 	
+
+{% endraw %}

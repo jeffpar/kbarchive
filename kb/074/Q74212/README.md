@@ -6,6 +6,8 @@ permalink: /kb/074/Q74212/
 
 ## Q74212: Search Algorithm of MS-DOS 5.0 EMM386.EXE
 
+{% raw %}
+
 	Article: Q74212
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a
@@ -59,3 +61,5 @@ permalink: /kb/074/Q74212/
 	
 	=============================================================================
 	
+
+{% endraw %}

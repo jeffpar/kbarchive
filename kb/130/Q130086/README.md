@@ -6,6 +6,8 @@ permalink: /kb/130/Q130086/
 
 ## Q130086: Encarta 1995: Fine Artist Loads Instead of Word Processor
 
+{% raw %}
+
 	Article: Q130086
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0; :1995 edition
@@ -86,3 +88,5 @@ permalink: /kb/130/Q130086/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143336/
 
 ## Q143336: Scenes 2.0: Installed File Descriptions
 
+{% raw %}
+
 	Article: Q143336
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 2.00
@@ -121,3 +123,5 @@ permalink: /kb/143/Q143336/
 	
 	=============================================================================
 	
+
+{% endraw %}

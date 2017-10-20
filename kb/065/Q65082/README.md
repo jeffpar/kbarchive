@@ -6,6 +6,8 @@ permalink: /kb/065/Q65082/
 
 ## Q65082: &quot;Error During Run-Time Initialization&quot; Mixing Near/Far Strings
 
+{% raw %}
+
 	Article: Q65082
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -101,3 +103,5 @@ permalink: /kb/065/Q65082/
 	
 	Note that "ENR" in BRT71ENR.LIB refers to "E" for IEEE math, "N" for
 	near strings, and "R" for MS-DOS (real) mode.
+
+{% endraw %}

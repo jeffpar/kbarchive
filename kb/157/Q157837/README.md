@@ -6,6 +6,8 @@ permalink: /kb/157/Q157837/
 
 ## Q157837: SMS: Windows Clients Exit to MS-DOS During Use of Help Desk
 
+{% raw %}
+
 	Article: Q157837
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -61,3 +63,5 @@ permalink: /kb/157/Q157837/
 	
 	=============================================================================
 	
+
+{% endraw %}

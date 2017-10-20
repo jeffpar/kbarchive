@@ -6,6 +6,8 @@ permalink: /kb/179/Q179562/
 
 ## Q179562: SMS: DNS Name Not Reported for Windows 95 Clients
 
+{% raw %}
+
 	Article: Q179562
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -48,3 +50,5 @@ permalink: /kb/179/Q179562/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166577/
 
 ## Q166577: XFOR: Subject Field for SMTP Outbound Mails not ECU-KR Encoded
 
+{% raw %}
+
 	Article: Q166577
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -68,3 +70,5 @@ permalink: /kb/166/Q166577/
 	
 	=============================================================================
 	
+
+{% endraw %}

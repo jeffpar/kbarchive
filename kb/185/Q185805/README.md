@@ -6,6 +6,8 @@ permalink: /kb/185/Q185805/
 
 ## Q185805: SMS: Disabling the Mandatory Countdown Timer in PCM
 
+{% raw %}
+
 	Article: Q185805
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -70,3 +72,5 @@ permalink: /kb/185/Q185805/
 	
 	=============================================================================
 	
+
+{% endraw %}

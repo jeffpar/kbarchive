@@ -6,6 +6,8 @@ permalink: /kb/176/Q176975/
 
 ## Q176975: Creating Internal Root Servers Using Cache.dns
 
+{% raw %}
+
 	Article: Q176975
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/176/Q176975/
 	
 	=============================================================================
 	
+
+{% endraw %}

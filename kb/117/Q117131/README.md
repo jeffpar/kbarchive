@@ -6,6 +6,8 @@ permalink: /kb/117/Q117131/
 
 ## Q117131: Master Boot Record Not Written to Mirrored Shadow Partition
 
+{% raw %}
+
 	Article: Q117131
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51
@@ -81,3 +83,5 @@ permalink: /kb/117/Q117131/
 	
 	=============================================================================
 	
+
+{% endraw %}

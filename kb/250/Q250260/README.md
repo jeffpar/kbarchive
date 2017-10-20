@@ -6,6 +6,8 @@ permalink: /kb/250/Q250260/
 
 ## Q250260: Windows 95 Clients Cannot Use Resources from Windows NT Server
 
+{% raw %}
+
 	Article: Q250260
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/250/Q250260/
 	
 	=============================================================================
 	
+
+{% endraw %}

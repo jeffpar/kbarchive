@@ -6,6 +6,8 @@ permalink: /kb/155/Q155215/
 
 ## Q155215: External Library Procedure Error When Installing SP4
 
+{% raw %}
+
 	Article: Q155215
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -62,3 +64,5 @@ permalink: /kb/155/Q155215/
 	
 	=============================================================================
 	
+
+{% endraw %}

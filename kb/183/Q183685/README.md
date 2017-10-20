@@ -6,6 +6,8 @@ permalink: /kb/183/Q183685/
 
 ## Q183685: WD97: Format Painter Cancelled When Using Next Page Scroll Bar
 
+{% raw %}
+
 	Article: Q183685
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -50,3 +52,5 @@ permalink: /kb/183/Q183685/
 	
 	=============================================================================
 	
+
+{% endraw %}

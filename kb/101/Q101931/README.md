@@ -6,6 +6,8 @@ permalink: /kb/101/Q101931/
 
 ## Q101931: Mac Srv: Asterisk for Zone Name in Global Server Report
 
+{% raw %}
+
 	Article: Q101931
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,3.0,3.1
@@ -57,3 +59,5 @@ permalink: /kb/101/Q101931/
 	
 	=============================================================================
 	
+
+{% endraw %}

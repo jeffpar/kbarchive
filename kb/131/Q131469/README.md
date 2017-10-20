@@ -6,6 +6,8 @@ permalink: /kb/131/Q131469/
 
 ## Q131469: Windows NT Err Msg The RPC Server is Unavailable
 
+{% raw %}
+
 	Article: Q131469
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1; winnt:3.5,4.0
@@ -128,3 +130,5 @@ permalink: /kb/131/Q131469/
 	
 	=============================================================================
 	
+
+{% endraw %}

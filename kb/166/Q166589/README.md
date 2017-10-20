@@ -6,6 +6,8 @@ permalink: /kb/166/Q166589/
 
 ## Q166589: XFOR: Microsoft Mail Connector Fails When Sending an Attachment
 
+{% raw %}
+
 	Article: Q166589
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -112,3 +114,5 @@ permalink: /kb/166/Q166589/
 	
 	=============================================================================
 	
+
+{% endraw %}

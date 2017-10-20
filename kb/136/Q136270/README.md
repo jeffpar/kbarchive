@@ -6,6 +6,8 @@ permalink: /kb/136/Q136270/
 
 ## Q136270: How to Expand or Collapse an Outline Control Programmatically
 
+{% raw %}
+
 	Article: Q136270
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -104,3 +106,5 @@ permalink: /kb/136/Q136270/
 	
 	=============================================================================
 	
+
+{% endraw %}

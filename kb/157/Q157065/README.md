@@ -6,6 +6,8 @@ permalink: /kb/157/Q157065/
 
 ## Q157065: STL Sample for deque::size and deque::resize Functions
 
+{% raw %}
+
 	Article: Q157065
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -181,3 +183,5 @@ permalink: /kb/157/Q157065/
 	
 	=============================================================================
 	
+
+{% endraw %}

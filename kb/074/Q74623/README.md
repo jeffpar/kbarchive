@@ -6,6 +6,8 @@ permalink: /kb/074/Q74623/
 
 ## Q74623: New DayBook with Run-Time Toolbook 1.5 Upgrade Available
 
+{% raw %}
+
 	Article: Q74623
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -50,3 +52,5 @@ permalink: /kb/074/Q74623/
 	
 	=============================================================================
 	
+
+{% endraw %}

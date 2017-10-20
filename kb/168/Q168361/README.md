@@ -6,6 +6,8 @@ permalink: /kb/168/Q168361/
 
 ## Q168361: MSB Rainforest: Overview of Magic School Bus Explores Rainforest
 
+{% raw %}
+
 	Article: Q168361
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/168/Q168361/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125204/
 
 ## Q125204: Err Msg: MCIAVI Requires a Newer Version of MSVIDEO.DLL
 
+{% raw %}
+
 	Article: Q125204
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -109,3 +111,5 @@ permalink: /kb/125/Q125204/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177962/
 
 ## Q177962: SBS Client Add Pack Cannot Be Reused to Upgrade SBS Licenses
 
+{% raw %}
+
 	Article: Q177962
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/177/Q177962/
 	
 	=============================================================================
 	
+
+{% endraw %}

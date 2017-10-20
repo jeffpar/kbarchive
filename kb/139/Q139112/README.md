@@ -6,6 +6,8 @@ permalink: /kb/139/Q139112/
 
 ## Q139112: PC Forms: ErrMsg: Displaying this Message Correctly Requires..
 
+{% raw %}
+
 	Article: Q139112
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0
@@ -104,3 +106,5 @@ permalink: /kb/139/Q139112/
 	
 	=============================================================================
 	
+
+{% endraw %}

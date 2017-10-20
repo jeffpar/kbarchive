@@ -6,6 +6,8 @@ permalink: /kb/110/Q110138/
 
 ## Q110138: Flight Simulator: Map View Is Black and White
 
+{% raw %}
+
 	Article: Q110138
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -45,3 +47,5 @@ permalink: /kb/110/Q110138/
 	
 	=============================================================================
 	
+
+{% endraw %}

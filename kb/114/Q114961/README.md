@@ -6,6 +6,8 @@ permalink: /kb/114/Q114961/
 
 ## Q114961: RFX_Date() function for TIMESTAMP_STRUCT
 
+{% raw %}
+
 	Article: Q114961
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5,1.51,1.52,2.0,2.1,4.0
@@ -100,3 +102,5 @@ permalink: /kb/114/Q114961/
 	
 	=============================================================================
 	
+
+{% endraw %}

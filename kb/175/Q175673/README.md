@@ -6,6 +6,8 @@ permalink: /kb/175/Q175673/
 
 ## Q175673: How to Modify Private Information in Microsoft Wallet
 
+{% raw %}
+
 	Article: Q175673
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,4.0
@@ -51,3 +53,5 @@ permalink: /kb/175/Q175673/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158862/
 
 ## Q158862: Microsoft Mail PostOffice Icon Is Missing in Control Panel
 
+{% raw %}
+
 	Article: Q158862
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -99,3 +101,5 @@ permalink: /kb/158/Q158862/
 	
 	=============================================================================
 	
+
+{% endraw %}

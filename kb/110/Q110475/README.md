@@ -6,6 +6,8 @@ permalink: /kb/110/Q110475/
 
 ## Q110475: INF: Sharing ODBC Handles Among Several Applications
 
+{% raw %}
+
 	Article: Q110475
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -67,3 +69,5 @@ permalink: /kb/110/Q110475/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/064/Q64329/
 
 ## Q64329: INFO: Windows Message-Processing Caveats
 
+{% raw %}
+
 	Article: Q64329
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -53,3 +55,5 @@ permalink: /kb/064/Q64329/
 	
 	=============================================================================
 	
+
+{% endraw %}

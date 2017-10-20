@@ -6,6 +6,8 @@ permalink: /kb/165/Q165059/
 
 ## Q165059: XCON: Exchange Does Not Support Maximum 3-digit Country Codes
 
+{% raw %}
+
 	Article: Q165059
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -68,3 +70,5 @@ permalink: /kb/165/Q165059/
 	
 	=============================================================================
 	
+
+{% endraw %}

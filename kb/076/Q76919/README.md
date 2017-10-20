@@ -6,6 +6,8 @@ permalink: /kb/076/Q76919/
 
 ## Q76919: Bookshelf 1991: Problems Copying Almanac Table Headings
 
+{% raw %}
+
 	Article: Q76919
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1991 edition
@@ -45,3 +47,5 @@ permalink: /kb/076/Q76919/
 	
 	=============================================================================
 	
+
+{% endraw %}

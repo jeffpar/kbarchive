@@ -6,6 +6,8 @@ permalink: /kb/304/Q304952/
 
 ## Q304952: Error Message: &quot;Passport Partner Error&quot; at Login
 
+{% raw %}
+
 	Article: Q304952
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4,1.99
@@ -105,3 +107,5 @@ permalink: /kb/304/Q304952/
 	
 	=============================================================================
 	
+
+{% endraw %}

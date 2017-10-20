@@ -6,6 +6,8 @@ permalink: /kb/178/Q178917/
 
 ## Q178917: XCLN: Cannot Access Outlook CD from DOS, Win 3.1x, WinNT 3.51
 
+{% raw %}
+
 	Article: Q178917
 	Product(s): Microsoft Exchange
 	Version(s): MS-DOS:5.0; WINDOWS:8.0; winnt:5.5; :8.03
@@ -98,3 +100,5 @@ permalink: /kb/178/Q178917/
 	
 	=============================================================================
 	
+
+{% endraw %}

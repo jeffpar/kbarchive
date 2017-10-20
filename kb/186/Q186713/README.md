@@ -6,6 +6,8 @@ permalink: /kb/186/Q186713/
 
 ## Q186713: Event IDs 1010, 1008, 1011, and 4005 with CIM and Perflib
 
+{% raw %}
+
 	Article: Q186713
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -96,3 +98,5 @@ permalink: /kb/186/Q186713/
 	
 	=============================================================================
 	
+
+{% endraw %}

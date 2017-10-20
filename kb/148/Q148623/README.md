@@ -6,6 +6,8 @@ permalink: /kb/148/Q148623/
 
 ## Q148623: BUG: Assumed-Size Array Allowed in Integer POINTER Statement
 
+{% raw %}
+
 	Article: Q148623
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -64,3 +66,5 @@ permalink: /kb/148/Q148623/
 	
 	=============================================================================
 	
+
+{% endraw %}

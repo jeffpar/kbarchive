@@ -6,6 +6,8 @@ permalink: /kb/170/Q170661/
 
 ## Q170661: TN3270E Printer Can't Connect; LUSessionStateConfused
 
+{% raw %}
+
 	Article: Q170661
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0
@@ -70,3 +72,5 @@ permalink: /kb/170/Q170661/
 	
 	=============================================================================
 	
+
+{% endraw %}

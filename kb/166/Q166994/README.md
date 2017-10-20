@@ -6,6 +6,8 @@ permalink: /kb/166/Q166994/
 
 ## Q166994: XWEB: Spaces in Alias Name Cause &quot;Failed to get Inbox&quot;
 
+{% raw %}
+
 	Article: Q166994
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -61,3 +63,5 @@ permalink: /kb/166/Q166994/
 	
 	=============================================================================
 	
+
+{% endraw %}

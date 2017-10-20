@@ -6,6 +6,8 @@ permalink: /kb/187/Q187948/
 
 ## Q187948: INFO: Server Installation With Visual Studio 6.0
 
+{% raw %}
+
 	Article: Q187948
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -107,3 +109,5 @@ permalink: /kb/187/Q187948/
 	
 	=============================================================================
 	
+
+{% endraw %}

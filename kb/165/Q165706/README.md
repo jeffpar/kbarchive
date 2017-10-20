@@ -6,6 +6,8 @@ permalink: /kb/165/Q165706/
 
 ## Q165706: MacFile Volume Icon Changes after Permissions Are Changed
 
+{% raw %}
+
 	Article: Q165706
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/165/Q165706/
 	
 	=============================================================================
 	
+
+{% endraw %}

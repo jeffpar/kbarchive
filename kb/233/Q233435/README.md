@@ -6,6 +6,8 @@ permalink: /kb/233/Q233435/
 
 ## Q233435: Business Planner: Black Bar Is Printed Beneath Heading of Page
 
+{% raw %}
+
 	Article: Q233435
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -69,3 +71,5 @@ permalink: /kb/233/Q233435/
 	
 	=============================================================================
 	
+
+{% endraw %}

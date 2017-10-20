@@ -6,6 +6,8 @@ permalink: /kb/042/Q42587/
 
 ## Q42587: QuickBASIC Program to Change the Mouse Shape in Graphics Mode
 
+{% raw %}
+
 	Article: Q42587
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -159,3 +161,5 @@ permalink: /kb/042/Q42587/
 	  CALL mouse(m1, m2, m3, m4)
 	
 	END SUB
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246423/
 
 ## Q246423: How to Identify Your Interix CD-ROM and Subsystem Version
 
+{% raw %}
+
 	Article: Q246423
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2.1,2.2.2,2.2.3,2.2.4
@@ -55,3 +57,5 @@ permalink: /kb/246/Q246423/
 	
 	=============================================================================
 	
+
+{% endraw %}

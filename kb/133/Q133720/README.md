@@ -6,6 +6,8 @@ permalink: /kb/133/Q133720/
 
 ## Q133720: PC Ext: External Processes Mail During F1, F2, and F3 Screens
 
+{% raw %}
+
 	Article: Q133720
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -70,3 +72,5 @@ permalink: /kb/133/Q133720/
 	
 	=============================================================================
 	
+
+{% endraw %}

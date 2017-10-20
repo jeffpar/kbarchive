@@ -6,6 +6,8 @@ permalink: /kb/065/Q65528/
 
 ## Q65528: Mouse Cursor on Wrong Monitor During Dual-Monitor Debugging
 
+{% raw %}
+
 	Article: Q65528
 	Product(s): See article
 	Version(s): 3.00 3.10
@@ -58,3 +60,5 @@ permalink: /kb/065/Q65528/
 	3. Disable the extended video registers. Check the video card
 	   documentation to see if this method is possible with your
 	   particular card.
+
+{% endraw %}

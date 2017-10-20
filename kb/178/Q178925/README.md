@@ -6,6 +6,8 @@ permalink: /kb/178/Q178925/
 
 ## Q178925: XADM: Monitoring the Progress of Directory Replication
 
+{% raw %}
+
 	Article: Q178925
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -44,3 +46,5 @@ permalink: /kb/178/Q178925/
 	
 	=============================================================================
 	
+
+{% endraw %}

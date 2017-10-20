@@ -6,6 +6,8 @@ permalink: /kb/165/Q165006/
 
 ## Q165006: DHCP Event 1020
 
+{% raw %}
+
 	Article: Q165006
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -50,3 +52,5 @@ permalink: /kb/165/Q165006/
 	
 	=============================================================================
 	
+
+{% endraw %}

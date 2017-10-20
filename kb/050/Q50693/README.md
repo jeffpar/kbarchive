@@ -6,6 +6,8 @@ permalink: /kb/050/Q50693/
 
 ## Q50693: Special Macros Not Recognized in NMAKE Inline Files
 
+{% raw %}
+
 	Article: Q50693
 	Product(s): See article
 	Version(s): 1.00 1.01 | 1.00 1.01
@@ -47,3 +49,5 @@ permalink: /kb/050/Q50693/
 	
 	FOO.LRF: *.OBJ
 	    echo $**; >FOO.LRF
+
+{% endraw %}

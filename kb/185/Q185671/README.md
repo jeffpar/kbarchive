@@ -6,6 +6,8 @@ permalink: /kb/185/Q185671/
 
 ## Q185671: FIX: ClassWizard Uses DISPID_CAPTION as Custom Caption Property
 
+{% raw %}
+
 	Article: Q185671
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -57,10 +59,10 @@ permalink: /kb/185/Q185671/
 	
 	        enum {
 	   
-	           //{ {AFX_DISP_ID(CPersistctrlCtrl)
+	           //{{AFX_DISP_ID(CPersistctrlCtrl)
 	           // ... more dispid enumeration goes here
 	           dispidCaption = 2L  // ADD THIS!!! - same DISPID as in step 1
-	           //} }AFX_DISP_ID
+	           //}}AFX_DISP_ID
 	        };
 	
 	3. Change the following line in the .cpp file of the COleControl-derived class.
@@ -198,3 +200,5 @@ permalink: /kb/185/Q185671/
 	
 	=============================================================================
 	
+
+{% endraw %}

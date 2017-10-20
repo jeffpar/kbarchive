@@ -6,6 +6,8 @@ permalink: /kb/064/Q64565/
 
 ## Q64565: #if Uses Only Lower 2 Bytes of Expression for Test
 
+{% raw %}
+
 	Article: Q64565
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -41,3 +43,5 @@ permalink: /kb/064/Q64565/
 	Microsoft has confirmed this to be a problem with the Microsoft C
 	Compiler version 6.00. We are researching this problem and will post
 	new information here as it becomes available.
+
+{% endraw %}

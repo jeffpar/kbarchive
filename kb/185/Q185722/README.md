@@ -6,6 +6,8 @@ permalink: /kb/185/Q185722/
 
 ## Q185722: SFM Rebuilds Indexes upon Restarting of Windows NT
 
+{% raw %}
+
 	Article: Q185722
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -128,3 +130,5 @@ permalink: /kb/185/Q185722/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/230/Q230650/
 
 ## Q230650: XCON: Moving Messages from One X.400 Connector Queue to Another
 
+{% raw %}
+
 	Article: Q230650
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -87,3 +89,5 @@ permalink: /kb/230/Q230650/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/257/Q257727/
 
 ## Q257727: XCON: Slow Mail Flow Across X.400 with 289 and 1294 Warnings
 
+{% raw %}
+
 	Article: Q257727
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -84,3 +86,5 @@ permalink: /kb/257/Q257727/
 	
 	=============================================================================
 	
+
+{% endraw %}

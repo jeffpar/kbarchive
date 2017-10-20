@@ -6,6 +6,8 @@ permalink: /kb/136/Q136008/
 
 ## Q136008: PC Ext: The F2 Key Does Not Display All Postoffices
 
+{% raw %}
+
 	Article: Q136008
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a,3.2,3.2a,3.5
@@ -51,3 +53,5 @@ permalink: /kb/136/Q136008/
 	
 	=============================================================================
 	
+
+{% endraw %}

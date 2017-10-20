@@ -6,6 +6,8 @@ permalink: /kb/231/Q231875/
 
 ## Q231875: PRB: C Datatype's Pseudo Null Not Inserted into SQL Database
 
+{% raw %}
+
 	Article: Q231875
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -176,3 +178,5 @@ permalink: /kb/231/Q231875/
 	
 	=============================================================================
 	
+
+{% endraw %}

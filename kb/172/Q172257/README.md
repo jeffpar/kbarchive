@@ -6,6 +6,8 @@ permalink: /kb/172/Q172257/
 
 ## Q172257: Installing Perl 5 from the Windows NT 4.0 Resource Kit
 
+{% raw %}
+
 	Article: Q172257
 	Product(s): Microsoft Press
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/172/Q172257/
 	
 	=============================================================================
 	
+
+{% endraw %}

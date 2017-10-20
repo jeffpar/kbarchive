@@ -6,6 +6,8 @@ permalink: /kb/132/Q132615/
 
 ## Q132615: Details Tab Incorrectly Selected After Invalid Separator Page
 
+{% raw %}
+
 	Article: Q132615
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -54,3 +56,5 @@ permalink: /kb/132/Q132615/
 	
 	=============================================================================
 	
+
+{% endraw %}

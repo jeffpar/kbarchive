@@ -6,6 +6,8 @@ permalink: /kb/165/Q165410/
 
 ## Q165410: PRB: Private DataSession Loses ASCENDING &#124; DESCENDING Order
 
+{% raw %}
+
 	Article: Q165410
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -90,3 +92,5 @@ permalink: /kb/165/Q165410/
 	
 	=============================================================================
 	
+
+{% endraw %}

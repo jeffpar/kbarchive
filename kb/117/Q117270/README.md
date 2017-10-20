@@ -6,6 +6,8 @@ permalink: /kb/117/Q117270/
 
 ## Q117270: Named Pipe Applications Without Network Adapter Fail
 
+{% raw %}
+
 	Article: Q117270
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5
@@ -57,3 +59,5 @@ permalink: /kb/117/Q117270/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132413/
 
 ## Q132413: PC Ext: Err Msg: Error Code=1005, Device Error=000c
 
+{% raw %}
+
 	Article: Q132413
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -87,3 +89,5 @@ permalink: /kb/132/Q132413/
 	
 	=============================================================================
 	
+
+{% endraw %}

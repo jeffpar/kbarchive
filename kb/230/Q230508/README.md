@@ -6,6 +6,8 @@ permalink: /kb/230/Q230508/
 
 ## Q230508: XCON: How to Configure X.400 to Send System Messages Only
 
+{% raw %}
+
 	Article: Q230508
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1
@@ -81,3 +83,5 @@ permalink: /kb/230/Q230508/
 	
 	=============================================================================
 	
+
+{% endraw %}

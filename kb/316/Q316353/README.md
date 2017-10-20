@@ -6,6 +6,8 @@ permalink: /kb/316/Q316353/
 
 ## Q316353: HOW TO: Configure a User Account to Use a Roaming User Profile
 
+{% raw %}
+
 	Article: Q316353
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -151,3 +153,5 @@ permalink: /kb/316/Q316353/
 	
 	=============================================================================
 	
+
+{% endraw %}

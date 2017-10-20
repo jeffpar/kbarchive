@@ -6,6 +6,8 @@ permalink: /kb/315/Q315657/
 
 ## Q315657: HOW TO: Print the Contents of a WebBrowser Control
 
+{% raw %}
+
 	Article: Q315657
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5,5.5,6.0
@@ -142,3 +144,5 @@ permalink: /kb/315/Q315657/
 	
 	=============================================================================
 	
+
+{% endraw %}

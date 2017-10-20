@@ -6,6 +6,8 @@ permalink: /kb/158/Q158237/
 
 ## Q158237: SAMPLE: Vfpie3.exe Shows How to Automate Internet Explorer 3.0
 
+{% raw %}
+
 	Article: Q158237
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -71,3 +73,5 @@ permalink: /kb/158/Q158237/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98523/
 
 ## Q98523: Using Direct Access 5.1 with MS-DOS 6.0 or later
 
+{% raw %}
+
 	Article: Q98523
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -52,3 +54,5 @@ permalink: /kb/098/Q98523/
 	
 	=============================================================================
 	
+
+{% endraw %}

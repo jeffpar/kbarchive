@@ -6,6 +6,8 @@ permalink: /kb/198/Q198766/
 
 ## Q198766: SMS: How MIF Files Are Processed in Version 2.0
 
+{% raw %}
+
 	Article: Q198766
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -74,3 +76,5 @@ permalink: /kb/198/Q198766/
 	
 	=============================================================================
 	
+
+{% endraw %}

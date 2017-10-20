@@ -6,6 +6,8 @@ permalink: /kb/147/Q147892/
 
 ## Q147892: FIX: Custom AppWizard Doesn't Support Multiple Languages
 
+{% raw %}
+
 	Article: Q147892
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -77,3 +79,5 @@ permalink: /kb/147/Q147892/
 	
 	=============================================================================
 	
+
+{% endraw %}

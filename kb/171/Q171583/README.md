@@ -6,6 +6,8 @@ permalink: /kb/171/Q171583/
 
 ## Q171583: HOWTO: Fill a 32-bit VBA Array of UDType via a Visual C++ DLL
 
+{% raw %}
+
 	Article: Q171583
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,7.0,97; winnt:4.0
@@ -253,3 +255,5 @@ permalink: /kb/171/Q171583/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186547/
 
 ## Q186547: Terminal Server Error Messages: 3700 to 3899
 
+{% raw %}
+
 	Article: Q186547
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -848,3 +850,5 @@ permalink: /kb/186/Q186547/
 	
 	=============================================================================
 	
+
+{% endraw %}

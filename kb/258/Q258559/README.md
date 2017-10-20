@@ -6,6 +6,8 @@ permalink: /kb/258/Q258559/
 
 ## Q258559: HOWTO: Write a REG_SZ Value to the Registry
 
+{% raw %}
+
 	Article: Q258559
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -166,3 +168,5 @@ permalink: /kb/258/Q258559/
 	
 	=============================================================================
 	
+
+{% endraw %}

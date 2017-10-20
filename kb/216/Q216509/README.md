@@ -6,6 +6,8 @@ permalink: /kb/216/Q216509/
 
 ## Q216509: XCLN: Can't Open Schedule: The Schedule File Could Not Be Opened
 
+{% raw %}
+
 	Article: Q216509
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.5
@@ -57,3 +59,5 @@ permalink: /kb/216/Q216509/
 	
 	=============================================================================
 	
+
+{% endraw %}

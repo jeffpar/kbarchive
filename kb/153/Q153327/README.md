@@ -6,6 +6,8 @@ permalink: /kb/153/Q153327/
 
 ## Q153327: XCLN: SMS Install of Exchange Client Crashes with /Q1 Switch
 
+{% raw %}
+
 	Article: Q153327
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -64,3 +66,5 @@ permalink: /kb/153/Q153327/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246608/
 
 ## Q246608: XCON: Event ID 9405: MTA Causes Access Violation
 
+{% raw %}
+
 	Article: Q246608
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -140,3 +142,5 @@ permalink: /kb/246/Q246608/
 	
 	=============================================================================
 	
+
+{% endraw %}

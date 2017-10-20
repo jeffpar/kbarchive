@@ -6,6 +6,8 @@ permalink: /kb/214/Q214755/
 
 ## Q214755: BUG: VB 6 DLL Settings Cause Access Error During Shutdown
 
+{% raw %}
+
 	Article: Q214755
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0,6.0 SP2
@@ -86,3 +88,5 @@ permalink: /kb/214/Q214755/
 	
 	=============================================================================
 	
+
+{% endraw %}

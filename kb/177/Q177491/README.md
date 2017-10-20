@@ -6,6 +6,8 @@ permalink: /kb/177/Q177491/
 
 ## Q177491: XADM: Corrupted IPX Packets Cause Information Store to Stop
 
+{% raw %}
+
 	Article: Q177491
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0 SP1,5.5
@@ -69,3 +71,5 @@ permalink: /kb/177/Q177491/
 	
 	=============================================================================
 	
+
+{% endraw %}

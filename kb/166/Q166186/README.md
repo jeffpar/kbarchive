@@ -6,6 +6,8 @@ permalink: /kb/166/Q166186/
 
 ## Q166186: OS/2 with TCP/IP May Refuse Socket Connections from Windows NT
 
+{% raw %}
+
 	Article: Q166186
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -107,3 +109,5 @@ permalink: /kb/166/Q166186/
 	
 	=============================================================================
 	
+
+{% endraw %}

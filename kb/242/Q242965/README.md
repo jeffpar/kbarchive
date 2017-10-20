@@ -6,6 +6,8 @@ permalink: /kb/242/Q242965/
 
 ## Q242965: Collection Based on Query May Display Incorrect Results
 
+{% raw %}
+
 	Article: Q242965
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -80,3 +82,5 @@ permalink: /kb/242/Q242965/
 	
 	=============================================================================
 	
+
+{% endraw %}

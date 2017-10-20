@@ -6,6 +6,8 @@ permalink: /kb/153/Q153480/
 
 ## Q153480: XADM: Exchange Stops Responding; Event 7200 1711 1025
 
+{% raw %}
+
 	Article: Q153480
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 4.0 5.0
@@ -93,3 +95,5 @@ permalink: /kb/153/Q153480/
 	
 	=============================================================================
 	
+
+{% endraw %}

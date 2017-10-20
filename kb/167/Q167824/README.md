@@ -6,6 +6,8 @@ permalink: /kb/167/Q167824/
 
 ## Q167824: XCLN: How Schedule+ Displays Busy Times for Resources
 
+{% raw %}
+
 	Article: Q167824
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -69,3 +71,5 @@ permalink: /kb/167/Q167824/
 	
 	=============================================================================
 	
+
+{% endraw %}

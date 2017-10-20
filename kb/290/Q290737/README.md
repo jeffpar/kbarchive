@@ -6,6 +6,8 @@ permalink: /kb/290/Q290737/
 
 ## Q290737: Delay Connecting to a Printer Added in a Terminal Server Session
 
+{% raw %}
+
 	Article: Q290737
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP5,4.0 SP6
@@ -102,3 +104,5 @@ permalink: /kb/290/Q290737/
 	
 	=============================================================================
 	
+
+{% endraw %}

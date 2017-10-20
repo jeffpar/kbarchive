@@ -6,6 +6,8 @@ permalink: /kb/206/Q206884/
 
 ## Q206884: HOWTO: Simulate Expanded and Condensed Fonts
 
+{% raw %}
+
 	Article: Q206884
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0,2.1,2.11,3.0 Professional Edition,3.11,3.5,3.51,4.0
@@ -186,3 +188,5 @@ permalink: /kb/206/Q206884/
 	
 	=============================================================================
 	
+
+{% endraw %}

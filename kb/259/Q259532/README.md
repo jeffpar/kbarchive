@@ -6,6 +6,8 @@ permalink: /kb/259/Q259532/
 
 ## Q259532: The X500.db File Is Not Found on Tape Backup
 
+{% raw %}
+
 	Article: Q259532
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1; winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/259/Q259532/
 	
 	=============================================================================
 	
+
+{% endraw %}

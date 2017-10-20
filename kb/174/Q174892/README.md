@@ -6,6 +6,8 @@ permalink: /kb/174/Q174892/
 
 ## Q174892: Ultimate Climb: Err Msg: Cannot Find Msacm32.dll
 
+{% raw %}
+
 	Article: Q174892
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0a
@@ -49,3 +51,5 @@ permalink: /kb/174/Q174892/
 	
 	=============================================================================
 	
+
+{% endraw %}

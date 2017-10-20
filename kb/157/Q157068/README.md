@@ -6,6 +6,8 @@ permalink: /kb/157/Q157068/
 
 ## Q157068: XCON: MTA Server Work Queue Increases Perfmon Unrealistically
 
+{% raw %}
+
 	Article: Q157068
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/157/Q157068/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/295/Q295716/
 
 ## Q295716: Host Integration Server May Hinder SNA 4.0 Administration
 
+{% raw %}
+
 	Article: Q295716
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -178,3 +180,5 @@ permalink: /kb/295/Q295716/
 	
 	=============================================================================
 	
+
+{% endraw %}

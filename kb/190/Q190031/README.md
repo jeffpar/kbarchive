@@ -6,6 +6,8 @@ permalink: /kb/190/Q190031/
 
 ## Q190031: PRB: Control Does Not Remain in Lightweight Frame Control
 
+{% raw %}
+
 	Article: Q190031
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -104,3 +106,5 @@ permalink: /kb/190/Q190031/
 	
 	=============================================================================
 	
+
+{% endraw %}

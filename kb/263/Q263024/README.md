@@ -6,6 +6,8 @@ permalink: /kb/263/Q263024/
 
 ## Q263024: XADM: RoleAdmin Installation and Script Errors on Windows 2000
 
+{% raw %}
+
 	Article: Q263024
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -114,3 +116,5 @@ permalink: /kb/263/Q263024/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162798/
 
 ## Q162798: HOWTO: Use SET PRINTER TO NAME to Specify Report Destination
 
+{% raw %}
+
 	Article: Q162798
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -183,3 +185,5 @@ permalink: /kb/162/Q162798/
 	
 	=============================================================================
 	
+
+{% endraw %}

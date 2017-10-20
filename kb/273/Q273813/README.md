@@ -6,6 +6,8 @@ permalink: /kb/273/Q273813/
 
 ## Q273813: FIX: &quot;Incorrect Syntax near the Keyword 'by'&quot; Error Message
 
+{% raw %}
+
 	Article: Q273813
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5,2.6,3.7,7.0,7.0 Service Pack 1,7.0 Service Pack 2
@@ -140,3 +142,5 @@ permalink: /kb/273/Q273813/
 	
 	=============================================================================
 	
+
+{% endraw %}

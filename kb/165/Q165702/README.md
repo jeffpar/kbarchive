@@ -6,6 +6,8 @@ permalink: /kb/165/Q165702/
 
 ## Q165702: Increase Capacity of LUs in a Pool to 30,000
 
+{% raw %}
+
 	Article: Q165702
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1,2.11 SP2,3.0
@@ -65,3 +67,5 @@ permalink: /kb/165/Q165702/
 	
 	=============================================================================
 	
+
+{% endraw %}

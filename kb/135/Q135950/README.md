@@ -6,6 +6,8 @@ permalink: /kb/135/Q135950/
 
 ## Q135950: Not All MS Plus! Files Installed in Specified Custom Folder
 
+{% raw %}
+
 	Article: Q135950
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/135/Q135950/
 	
 	=============================================================================
 	
+
+{% endraw %}

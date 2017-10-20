@@ -6,6 +6,8 @@ permalink: /kb/183/Q183407/
 
 ## Q183407: XADM: Err Msg: There Are No Mailboxes in Container Specified
 
+{% raw %}
+
 	Article: Q183407
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -47,3 +49,5 @@ permalink: /kb/183/Q183407/
 	
 	=============================================================================
 	
+
+{% endraw %}

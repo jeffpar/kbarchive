@@ -6,6 +6,8 @@ permalink: /kb/304/Q304617/
 
 ## Q304617: Services for Macintosh Breaks SFU 2.0 Password Synchronization
 
+{% raw %}
+
 	Article: Q304617
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -56,3 +58,5 @@ permalink: /kb/304/Q304617/
 	
 	=============================================================================
 	
+
+{% endraw %}

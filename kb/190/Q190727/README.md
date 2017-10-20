@@ -6,6 +6,8 @@ permalink: /kb/190/Q190727/
 
 ## Q190727: HOWTO: Control Your Updates in ADO Through &quot;Update Criteria&quot;
 
+{% raw %}
+
 	Article: Q190727
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.1 SP2,2.5,2.6,5.0,6.0
@@ -116,3 +118,5 @@ permalink: /kb/190/Q190727/
 	
 	=============================================================================
 	
+
+{% endraw %}

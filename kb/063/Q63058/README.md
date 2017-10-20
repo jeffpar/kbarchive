@@ -6,6 +6,8 @@ permalink: /kb/063/Q63058/
 
 ## Q63058: Function Prototype with Undefined Structure Causes Error
 
+{% raw %}
+
 	Article: Q63058
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -50,3 +52,5 @@ permalink: /kb/063/Q63058/
 	
 	Microsoft is researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

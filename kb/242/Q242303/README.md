@@ -6,6 +6,8 @@ permalink: /kb/242/Q242303/
 
 ## Q242303: NDIS Driver May Not Properly Release Network Adapter's Resources
 
+{% raw %}
+
 	Article: Q242303
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/242/Q242303/
 	
 	=============================================================================
 	
+
+{% endraw %}

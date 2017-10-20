@@ -6,6 +6,8 @@ permalink: /kb/130/Q130929/
 
 ## Q130929: DHCP Seconds Field Limits Forwarding of Packets by Relay Agents
 
+{% raw %}
+
 	Article: Q130929
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -45,3 +47,5 @@ permalink: /kb/130/Q130929/
 	
 	=============================================================================
 	
+
+{% endraw %}

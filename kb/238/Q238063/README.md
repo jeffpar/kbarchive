@@ -6,6 +6,8 @@ permalink: /kb/238/Q238063/
 
 ## Q238063: XADM: How to Do an Online Restore of an Exchange Cluster Server
 
+{% raw %}
+
 	Article: Q238063
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -117,3 +119,5 @@ permalink: /kb/238/Q238063/
 	
 	=============================================================================
 	
+
+{% endraw %}

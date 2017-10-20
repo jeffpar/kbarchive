@@ -6,6 +6,8 @@ permalink: /kb/047/Q47507/
 
 ## Q47507: Mac DOS: Err Msg: &quot;You Need to Run AppleTalk&quot; with TOPS
 
+{% raw %}
+
 	Article: Q47507
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.37,2.0,3.0
@@ -71,3 +73,5 @@ permalink: /kb/047/Q47507/
 	
 	=============================================================================
 	
+
+{% endraw %}

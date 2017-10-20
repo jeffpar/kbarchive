@@ -6,6 +6,8 @@ permalink: /kb/184/Q184699/
 
 ## Q184699: XADM: Store.exe Working Set Performance Counter Keeps Growing
 
+{% raw %}
+
 	Article: Q184699
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -56,3 +58,5 @@ permalink: /kb/184/Q184699/
 	
 	=============================================================================
 	
+
+{% endraw %}

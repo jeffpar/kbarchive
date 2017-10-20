@@ -6,6 +6,8 @@ permalink: /kb/158/Q158362/
 
 ## Q158362: Drive Letters Assigned In Disk Admin Disappear On Restart
 
+{% raw %}
+
 	Article: Q158362
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -97,3 +99,5 @@ permalink: /kb/158/Q158362/
 	
 	=============================================================================
 	
+
+{% endraw %}

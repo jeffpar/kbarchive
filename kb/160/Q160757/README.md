@@ -6,6 +6,8 @@ permalink: /kb/160/Q160757/
 
 ## Q160757: WD97: Run-Tme Error Using True Parameter on NewTemplate Method
 
+{% raw %}
+
 	Article: Q160757
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/160/Q160757/
 	
 	=============================================================================
 	
+
+{% endraw %}

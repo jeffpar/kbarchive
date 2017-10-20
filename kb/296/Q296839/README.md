@@ -6,6 +6,8 @@ permalink: /kb/296/Q296839/
 
 ## Q296839: Administrator Client Fails to Open Subdomain in SNA Manager
 
+{% raw %}
+
 	Article: Q296839
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/296/Q296839/
 	
 	=============================================================================
 	
+
+{% endraw %}

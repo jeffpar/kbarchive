@@ -6,6 +6,8 @@ permalink: /kb/152/Q152278/
 
 ## Q152278: XCLN: Exchange Client Setup Command Line Switches
 
+{% raw %}
+
 	Article: Q152278
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -67,3 +69,5 @@ permalink: /kb/152/Q152278/
 	
 	=============================================================================
 	
+
+{% endraw %}

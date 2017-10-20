@@ -6,6 +6,8 @@ permalink: /kb/233/Q233446/
 
 ## Q233446: Business Planner: Excel Template Opens in Background
 
+{% raw %}
+
 	Article: Q233446
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -72,3 +74,5 @@ permalink: /kb/233/Q233446/
 	
 	=============================================================================
 	
+
+{% endraw %}

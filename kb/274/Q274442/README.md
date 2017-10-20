@@ -6,6 +6,8 @@ permalink: /kb/274/Q274442/
 
 ## Q274442: Windows 95/98/Me Users Cannot Process a Logon Script
 
+{% raw %}
+
 	Article: Q274442
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2000,2000 SP1
@@ -66,3 +68,5 @@ permalink: /kb/274/Q274442/
 	
 	=============================================================================
 	
+
+{% endraw %}

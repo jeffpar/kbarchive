@@ -6,6 +6,8 @@ permalink: /kb/043/Q43256/
 
 ## Q43256: CALL INTERRUPT RegType in Manual Inconsistent with QB.BI File
 
+{% raw %}
+
 	Article: Q43256
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -44,3 +46,5 @@ permalink: /kb/043/Q43256/
 	The RegType defined in the QB.BI file (used with $INCLUDE) does not
 	contain the DS and ES registers. The DS and ES registers are only
 	needed for the CALL INTERRUPTX statement, which uses RegTypeX.
+
+{% endraw %}

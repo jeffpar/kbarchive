@@ -6,6 +6,8 @@ permalink: /kb/185/Q185076/
 
 ## Q185076: XGEN: How to Obtain Exchange Server 4.0 Service Pack 5
 
+{% raw %}
+
 	Article: Q185076
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -107,3 +109,5 @@ permalink: /kb/185/Q185076/
 	
 	=============================================================================
 	
+
+{% endraw %}

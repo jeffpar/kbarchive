@@ -6,6 +6,8 @@ permalink: /kb/137/Q137949/
 
 ## Q137949: FIX: Microsoft Excel Worksheets w/ Formulas Import Incorrectly
 
+{% raw %}
+
 	Article: Q137949
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0
@@ -99,3 +101,5 @@ permalink: /kb/137/Q137949/
 	
 	=============================================================================
 	
+
+{% endraw %}

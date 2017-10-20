@@ -6,6 +6,8 @@ permalink: /kb/195/Q195868/
 
 ## Q195868: Virtual Globe 99: Boxes Replace Letters in Some Find List Items
 
+{% raw %}
+
 	Article: Q195868
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -41,3 +43,5 @@ permalink: /kb/195/Q195868/
 	
 	=============================================================================
 	
+
+{% endraw %}

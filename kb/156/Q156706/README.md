@@ -6,6 +6,8 @@ permalink: /kb/156/Q156706/
 
 ## Q156706: XCON: Messages Forwarded from DEC ALL IN ONE User Missing Date
 
+{% raw %}
+
 	Article: Q156706
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/156/Q156706/
 	
 	=============================================================================
 	
+
+{% endraw %}

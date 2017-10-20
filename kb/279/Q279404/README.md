@@ -6,6 +6,8 @@ permalink: /kb/279/Q279404/
 
 ## Q279404: XCON: Site Scope Address Space Considerations
 
+{% raw %}
+
 	Article: Q279404
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -98,3 +100,5 @@ permalink: /kb/279/Q279404/
 	
 	=============================================================================
 	
+
+{% endraw %}

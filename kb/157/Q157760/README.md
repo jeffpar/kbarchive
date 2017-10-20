@@ -6,6 +6,8 @@ permalink: /kb/157/Q157760/
 
 ## Q157760: PRB: Grid Column Widths Change at Run Time
 
+{% raw %}
+
 	Article: Q157760
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -87,3 +89,5 @@ permalink: /kb/157/Q157760/
 	
 	=============================================================================
 	
+
+{% endraw %}

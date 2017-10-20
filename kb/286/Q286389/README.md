@@ -6,6 +6,8 @@ permalink: /kb/286/Q286389/
 
 ## Q286389: Service Program Does Not Start Automatically
 
+{% raw %}
+
 	Article: Q286389
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -78,3 +80,5 @@ permalink: /kb/286/Q286389/
 	
 	=============================================================================
 	
+
+{% endraw %}

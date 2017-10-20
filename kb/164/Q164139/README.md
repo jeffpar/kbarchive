@@ -6,6 +6,8 @@ permalink: /kb/164/Q164139/
 
 ## Q164139: Pop-up Error: Cannot Complete Input Operation
 
+{% raw %}
+
 	Article: Q164139
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -75,3 +77,5 @@ permalink: /kb/164/Q164139/
 	
 	=============================================================================
 	
+
+{% endraw %}

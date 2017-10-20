@@ -6,6 +6,8 @@ permalink: /kb/161/Q161243/
 
 ## Q161243: MSB Rainforest: Report Closed Caption Window Remains Open
 
+{% raw %}
+
 	Article: Q161243
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -50,3 +52,5 @@ permalink: /kb/161/Q161243/
 	
 	=============================================================================
 	
+
+{% endraw %}

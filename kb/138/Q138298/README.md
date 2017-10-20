@@ -6,6 +6,8 @@ permalink: /kb/138/Q138298/
 
 ## Q138298: INFO: Visual SourceSafe System Capacities and Specifications
 
+{% raw %}
+
 	Article: Q138298
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,5.0,6.0
@@ -101,3 +103,5 @@ permalink: /kb/138/Q138298/
 	
 	=============================================================================
 	
+
+{% endraw %}

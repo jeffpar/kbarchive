@@ -6,6 +6,8 @@ permalink: /kb/131/Q131545/
 
 ## Q131545: IBM DIAGS.COM Token Ring Utility Must Run in MS-DOS Mode
 
+{% raw %}
+
 	Article: Q131545
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/131/Q131545/
 	
 	=============================================================================
 	
+
+{% endraw %}

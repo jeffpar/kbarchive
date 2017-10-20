@@ -6,6 +6,8 @@ permalink: /kb/058/Q58315/
 
 ## Q58315: Summary of New Features in Windows 3.0
 
+{% raw %}
+
 	Article: Q58315
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -68,3 +70,5 @@ permalink: /kb/058/Q58315/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126079/
 
 ## Q126079: Destination Ski Disk Contents (3.5 Inch, 720K)
 
+{% raw %}
+
 	Article: Q126079
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -42,3 +44,5 @@ permalink: /kb/126/Q126079/
 	
 	=============================================================================
 	
+
+{% endraw %}

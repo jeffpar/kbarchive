@@ -6,6 +6,8 @@ permalink: /kb/132/Q132548/
 
 ## Q132548: HOWTO: Use More Than One Table in a Combo or List Box
 
+{% raw %}
+
 	Article: Q132548
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -65,3 +67,5 @@ permalink: /kb/132/Q132548/
 	
 	=============================================================================
 	
+
+{% endraw %}

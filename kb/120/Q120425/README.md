@@ -6,6 +6,8 @@ permalink: /kb/120/Q120425/
 
 ## Q120425: Err Msg: &quot;Unable to Find Windows&quot; Installing C/C++ 7.0a SDK
 
+{% raw %}
+
 	Article: Q120425
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/120/Q120425/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/240/Q240984/
 
 ## Q240984: Pandora's Box: Graphics Not Displayed Properly with STB Velocity
 
+{% raw %}
+
 	Article: Q240984
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/240/Q240984/
 	
 	=============================================================================
 	
+
+{% endraw %}

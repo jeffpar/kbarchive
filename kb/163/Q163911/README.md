@@ -6,6 +6,8 @@ permalink: /kb/163/Q163911/
 
 ## Q163911: Cacls.exe May Not Redirect Output to a File
 
+{% raw %}
+
 	Article: Q163911
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/163/Q163911/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/275/Q275630/
 
 ## Q275630: INSERTS from DTS to DB2 Through OLE DB Provider for DB2 May Fail
 
+{% raw %}
+
 	Article: Q275630
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP2,4.0 SP3
@@ -77,3 +79,5 @@ permalink: /kb/275/Q275630/
 	
 	=============================================================================
 	
+
+{% endraw %}

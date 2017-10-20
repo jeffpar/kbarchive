@@ -6,6 +6,8 @@ permalink: /kb/162/Q162835/
 
 ## Q162835: XADM: SMTP Address is Stripped from Auto-forwarded Message
 
+{% raw %}
+
 	Article: Q162835
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -50,3 +52,5 @@ permalink: /kb/162/Q162835/
 	
 	=============================================================================
 	
+
+{% endraw %}

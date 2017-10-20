@@ -6,6 +6,8 @@ permalink: /kb/140/Q140303/
 
 ## Q140303: FIX: DBSETPROP() for DataType Gives Incorrect Results
 
+{% raw %}
+
 	Article: Q140303
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -105,3 +107,5 @@ permalink: /kb/140/Q140303/
 	
 	=============================================================================
 	
+
+{% endraw %}

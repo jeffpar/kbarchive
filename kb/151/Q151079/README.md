@@ -6,6 +6,8 @@ permalink: /kb/151/Q151079/
 
 ## Q151079: BUG: Label of ListView Items Large When LabelWrap Set to TRUE
 
+{% raw %}
+
 	Article: Q151079
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/151/Q151079/
 	
 	=============================================================================
 	
+
+{% endraw %}

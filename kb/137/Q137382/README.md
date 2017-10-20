@@ -6,6 +6,8 @@ permalink: /kb/137/Q137382/
 
 ## Q137382: Client RPC Call for Remote APPC LU List Causes SNABASE Error
 
+{% raw %}
+
 	Article: Q137382
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11
@@ -84,3 +86,5 @@ permalink: /kb/137/Q137382/
 	
 	=============================================================================
 	
+
+{% endraw %}

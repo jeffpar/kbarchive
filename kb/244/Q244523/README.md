@@ -6,6 +6,8 @@ permalink: /kb/244/Q244523/
 
 ## Q244523: XCLN: Unable to Open Your Default E-Mail Folders
 
+{% raw %}
+
 	Article: Q244523
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -113,3 +115,5 @@ permalink: /kb/244/Q244523/
 	
 	=============================================================================
 	
+
+{% endraw %}

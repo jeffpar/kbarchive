@@ -6,6 +6,8 @@ permalink: /kb/123/Q123473/
 
 ## Q123473: HOWTO: Increase Performance in SourceSafe
 
+{% raw %}
+
 	Article: Q123473
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -56,3 +58,5 @@ permalink: /kb/123/Q123473/
 	
 	=============================================================================
 	
+
+{% endraw %}

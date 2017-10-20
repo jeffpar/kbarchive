@@ -6,6 +6,8 @@ permalink: /kb/106/Q106099/
 
 ## Q106099: PC Adm: Invalid or Inaccurate Error Messages
 
+{% raw %}
+
 	Article: Q106099
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -61,3 +63,5 @@ permalink: /kb/106/Q106099/
 	
 	=============================================================================
 	
+
+{% endraw %}

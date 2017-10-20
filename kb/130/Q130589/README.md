@@ -6,6 +6,8 @@ permalink: /kb/130/Q130589/
 
 ## Q130589: Error Message &quot;Access Is Denied&quot; Renaming Directory
 
+{% raw %}
+
 	Article: Q130589
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/130/Q130589/
 	
 	=============================================================================
 	
+
+{% endraw %}

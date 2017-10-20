@@ -6,6 +6,8 @@ permalink: /kb/082/Q82786/
 
 ## Q82786: System Hangs After Installing Windows or Windows Application
 
+{% raw %}
+
 	Article: Q82786
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/082/Q82786/
 	
 	=============================================================================
 	
+
+{% endraw %}

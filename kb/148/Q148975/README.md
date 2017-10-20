@@ -6,6 +6,8 @@ permalink: /kb/148/Q148975/
 
 ## Q148975: Err Msg: &quot;STOP 0x00000079 MISMATCHED_HAL&quot; on IBM PC Server 320
 
+{% raw %}
+
 	Article: Q148975
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -56,3 +58,5 @@ permalink: /kb/148/Q148975/
 	
 	=============================================================================
 	
+
+{% endraw %}

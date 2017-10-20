@@ -6,6 +6,8 @@ permalink: /kb/172/Q172312/
 
 ## Q172312: PRB: WithEvents Does Not Work with Remote Automation
 
+{% raw %}
+
 	Article: Q172312
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -145,3 +147,5 @@ permalink: /kb/172/Q172312/
 	
 	=============================================================================
 	
+
+{% endraw %}

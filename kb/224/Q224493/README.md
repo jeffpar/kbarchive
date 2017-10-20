@@ -6,6 +6,8 @@ permalink: /kb/224/Q224493/
 
 ## Q224493: XADM: Using ISSCAN to Remove Virus-Affected Messages/Attachments
 
+{% raw %}
+
 	Article: Q224493
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -275,3 +277,5 @@ permalink: /kb/224/Q224493/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/115/Q115490/
 
 ## Q115490: FFAPI: PUT Programs Work Only on First 50 Messages of MMF File
 
+{% raw %}
+
 	Article: Q115490
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1,3.0
@@ -72,3 +74,5 @@ permalink: /kb/115/Q115490/
 	
 	=============================================================================
 	
+
+{% endraw %}

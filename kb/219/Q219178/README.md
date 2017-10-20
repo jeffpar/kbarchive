@@ -6,6 +6,8 @@ permalink: /kb/219/Q219178/
 
 ## Q219178: SFM Macintosh Clients Print %%&#91;Error: undefined...&#93;%%
 
+{% raw %}
+
 	Article: Q219178
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/219/Q219178/
 	
 	=============================================================================
 	
+
+{% endraw %}

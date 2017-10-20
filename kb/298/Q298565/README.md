@@ -6,6 +6,8 @@ permalink: /kb/298/Q298565/
 
 ## Q298565: XCON: Internet Mail Connector Does Not Start wit Event ID 4086
 
+{% raw %}
+
 	Article: Q298565
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -108,3 +110,5 @@ permalink: /kb/298/Q298565/
 	
 	=============================================================================
 	
+
+{% endraw %}

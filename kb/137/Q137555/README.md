@@ -6,6 +6,8 @@ permalink: /kb/137/Q137555/
 
 ## Q137555: OLE Controls and Control Containers Guidelines
 
+{% raw %}
+
 	Article: Q137555
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -91,3 +93,5 @@ permalink: /kb/137/Q137555/
 	
 	=============================================================================
 	
+
+{% endraw %}

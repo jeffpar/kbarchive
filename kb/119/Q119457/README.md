@@ -6,6 +6,8 @@ permalink: /kb/119/Q119457/
 
 ## Q119457: FIX: Visual C++ Setup Program Prompts &quot;Insert dis
 
+{% raw %}
+
 	Article: Q119457
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,2.1,4.0,4.1
@@ -53,3 +55,5 @@ permalink: /kb/119/Q119457/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241212/
 
 ## Q241212: Japanese WV: Cannot Open File w/Name That Includes 0x5c in DBCS
 
+{% raw %}
+
 	Article: Q241212
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -84,3 +86,5 @@ permalink: /kb/241/Q241212/
 	
 	=============================================================================
 	
+
+{% endraw %}

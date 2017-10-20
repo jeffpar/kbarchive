@@ -6,6 +6,8 @@ permalink: /kb/107/Q107134/
 
 ## Q107134: WFWG: Scrambled Display Using Generic Super VGA Driver
 
+{% raw %}
+
 	Article: Q107134
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -47,3 +49,5 @@ permalink: /kb/107/Q107134/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165226/
 
 ## Q165226: Application Exception in SNA Manager
 
+{% raw %}
+
 	Article: Q165226
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/165/Q165226/
 	
 	=============================================================================
 	
+
+{% endraw %}

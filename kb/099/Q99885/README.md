@@ -6,6 +6,8 @@ permalink: /kb/099/Q99885/
 
 ## Q99885: Security Issues Occur Due to How WinNT Handles FPNWCLNT.DLL
 
+{% raw %}
+
 	Article: Q99885
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -131,3 +133,5 @@ permalink: /kb/099/Q99885/
 	
 	=============================================================================
 	
+
+{% endraw %}

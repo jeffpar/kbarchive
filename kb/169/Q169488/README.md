@@ -6,6 +6,8 @@ permalink: /kb/169/Q169488/
 
 ## Q169488: Errors When Performance Monitoring SNA Server
 
+{% raw %}
+
 	Article: Q169488
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -95,3 +97,5 @@ permalink: /kb/169/Q169488/
 	
 	=============================================================================
 	
+
+{% endraw %}

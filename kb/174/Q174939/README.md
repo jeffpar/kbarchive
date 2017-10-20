@@ -6,6 +6,8 @@ permalink: /kb/174/Q174939/
 
 ## Q174939: SMS: How to Use Listnt.exe with Systems Management Server
 
+{% raw %}
+
 	Article: Q174939
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP3
@@ -87,3 +89,5 @@ permalink: /kb/174/Q174939/
 	
 	=============================================================================
 	
+
+{% endraw %}

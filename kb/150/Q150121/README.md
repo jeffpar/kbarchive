@@ -6,6 +6,8 @@ permalink: /kb/150/Q150121/
 
 ## Q150121: PRB: MFC Loads Wrong Resource in Extension DLL
 
+{% raw %}
+
 	Article: Q150121
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -139,3 +141,5 @@ permalink: /kb/150/Q150121/
 	
 	=============================================================================
 	
+
+{% endraw %}

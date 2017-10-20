@@ -6,6 +6,8 @@ permalink: /kb/143/Q143014/
 
 ## Q143014: PPT: Objects Disappear from Presentation on Windows NT
 
+{% raw %}
+
 	Article: Q143014
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0; winnt:3.51
@@ -55,3 +57,5 @@ permalink: /kb/143/Q143014/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138236/
 
 ## Q138236: Deinstall of SMS Administrator Does Not Clean Registry
 
+{% raw %}
+
 	Article: Q138236
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -45,3 +47,5 @@ permalink: /kb/138/Q138236/
 	
 	=============================================================================
 	
+
+{% endraw %}

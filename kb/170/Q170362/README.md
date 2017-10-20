@@ -6,6 +6,8 @@ permalink: /kb/170/Q170362/
 
 ## Q170362: Mastering:Internet Jumps Open Two Instances of Internet Explorer
 
+{% raw %}
+
 	Article: Q170362
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -52,3 +54,5 @@ permalink: /kb/170/Q170362/
 	
 	=============================================================================
 	
+
+{% endraw %}

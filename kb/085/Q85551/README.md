@@ -6,6 +6,8 @@ permalink: /kb/085/Q85551/
 
 ## Q85551: Machine Hangs; Repeat Rate too High in Windows 3.1, MS-DOS 5
 
+{% raw %}
+
 	Article: Q85551
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/085/Q85551/
 	
 	=============================================================================
 	
+
+{% endraw %}

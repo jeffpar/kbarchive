@@ -6,6 +6,8 @@ permalink: /kb/130/Q130153/
 
 ## Q130153: No Printout with Adobe PostScript Printer Driver 2.1.1
 
+{% raw %}
+
 	Article: Q130153
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -64,3 +66,5 @@ permalink: /kb/130/Q130153/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112873/
 
 ## Q112873: SNMPTRAP Quits When Sending Information
 
+{% raw %}
+
 	Article: Q112873
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -63,3 +65,5 @@ permalink: /kb/112/Q112873/
 	
 	=============================================================================
 	
+
+{% endraw %}

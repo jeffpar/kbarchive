@@ -6,6 +6,8 @@ permalink: /kb/124/Q124245/
 
 ## Q124245: Closing LAN Manager Logon Script Dialog Box Automatically
 
+{% raw %}
+
 	Article: Q124245
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11; winnt:3.5
@@ -49,3 +51,5 @@ permalink: /kb/124/Q124245/
 	
 	=============================================================================
 	
+
+{% endraw %}

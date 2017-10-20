@@ -6,6 +6,8 @@ permalink: /kb/248/Q248985/
 
 ## Q248985: BUG: UserControl Containing ADO Data Control Fails to Unload
 
+{% raw %}
+
 	Article: Q248985
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -122,3 +124,5 @@ permalink: /kb/248/Q248985/
 	
 	=============================================================================
 	
+
+{% endraw %}

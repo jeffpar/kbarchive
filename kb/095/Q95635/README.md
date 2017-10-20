@@ -6,6 +6,8 @@ permalink: /kb/095/Q95635/
 
 ## Q95635: Using Unique Labels with Multi-Config
 
+{% raw %}
+
 	Article: Q95635
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -47,3 +49,5 @@ permalink: /kb/095/Q95635/
 	
 	=============================================================================
 	
+
+{% endraw %}

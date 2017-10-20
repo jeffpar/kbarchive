@@ -6,6 +6,8 @@ permalink: /kb/136/Q136186/
 
 ## Q136186: DOC: Incorrect Description of Array Created by ADBOBJECTS()
 
+{% raw %}
+
 	Article: Q136186
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -60,3 +62,5 @@ permalink: /kb/136/Q136186/
 	
 	=============================================================================
 	
+
+{% endraw %}

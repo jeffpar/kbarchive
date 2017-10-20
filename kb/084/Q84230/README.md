@@ -6,6 +6,8 @@ permalink: /kb/084/Q84230/
 
 ## Q84230: DPT 2011 and 2012B Controllers Need at Least 2G BIOS
 
+{% raw %}
+
 	Article: Q84230
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/084/Q84230/
 	
 	=============================================================================
 	
+
+{% endraw %}

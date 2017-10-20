@@ -6,6 +6,8 @@ permalink: /kb/097/Q97803/
 
 ## Q97803: MSBackup Stops on Disk Two And Continues to Count User Time
 
+{% raw %}
+
 	Article: Q97803
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -46,3 +48,5 @@ permalink: /kb/097/Q97803/
 	
 	=============================================================================
 	
+
+{% endraw %}

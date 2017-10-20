@@ -6,6 +6,8 @@ permalink: /kb/023/Q23829/
 
 ## Q23829: Standard Mouse Menus Are Not in .COM Format
 
+{% raw %}
+
 	Article: Q23829
 	Product(s): See article
 	Version(s): 6.00
@@ -22,3 +24,5 @@ permalink: /kb/023/Q23829/
 	mouse menus. For more information, call Microsoft Hardware Development
 	at (206) 882-8080, and ask for information on Expert Menus Development
 	software.
+
+{% endraw %}

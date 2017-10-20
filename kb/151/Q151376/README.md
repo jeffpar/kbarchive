@@ -6,6 +6,8 @@ permalink: /kb/151/Q151376/
 
 ## Q151376: How to Disable Autochk if It Stops Responding During Reboot
 
+{% raw %}
+
 	Article: Q151376
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.50,3.51
@@ -124,3 +126,5 @@ permalink: /kb/151/Q151376/
 	
 	=============================================================================
 	
+
+{% endraw %}

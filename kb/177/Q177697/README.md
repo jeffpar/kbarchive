@@ -6,6 +6,8 @@ permalink: /kb/177/Q177697/
 
 ## Q177697: HOWTO: List Local Network Connections with WNetEnumResources
 
+{% raw %}
+
 	Article: Q177697
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2000,3.51,4.0,5.0,6.0
@@ -180,3 +182,5 @@ permalink: /kb/177/Q177697/
 	
 	=============================================================================
 	
+
+{% endraw %}

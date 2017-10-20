@@ -6,6 +6,8 @@ permalink: /kb/075/Q75043/
 
 ## Q75043: QEMM and 386MAX: Functionality and Compatibility with CV
 
+{% raw %}
+
 	Article: Q75043
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -155,3 +157,5 @@ permalink: /kb/075/Q75043/
 	
 	=============================================================================
 	
+
+{% endraw %}

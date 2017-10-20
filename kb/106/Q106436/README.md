@@ -6,6 +6,8 @@ permalink: /kb/106/Q106436/
 
 ## Q106436: SmartVu Disabled on Dell Computers with VFAT
 
+{% raw %}
+
 	Article: Q106436
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -42,3 +44,5 @@ permalink: /kb/106/Q106436/
 	
 	=============================================================================
 	
+
+{% endraw %}

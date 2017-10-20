@@ -6,6 +6,8 @@ permalink: /kb/137/Q137823/
 
 ## Q137823: Windows 95 Client Can Browse NetWare 2.x Without Permission
 
+{% raw %}
+
 	Article: Q137823
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/137/Q137823/
 	
 	=============================================================================
 	
+
+{% endraw %}

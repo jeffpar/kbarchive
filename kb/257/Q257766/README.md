@@ -6,6 +6,8 @@ permalink: /kb/257/Q257766/
 
 ## Q257766: XADM: How to Move Exchange Server Folders
 
+{% raw %}
+
 	Article: Q257766
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -134,3 +136,5 @@ permalink: /kb/257/Q257766/
 	
 	=============================================================================
 	
+
+{% endraw %}

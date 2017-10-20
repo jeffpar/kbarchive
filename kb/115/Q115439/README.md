@@ -6,6 +6,8 @@ permalink: /kb/115/Q115439/
 
 ## Q115439: X400: Longer-than-Maximum Address Map Values Displayed
 
+{% raw %}
+
 	Article: Q115439
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -59,3 +61,5 @@ permalink: /kb/115/Q115439/
 	
 	=============================================================================
 	
+
+{% endraw %}

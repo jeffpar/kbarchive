@@ -6,6 +6,8 @@ permalink: /kb/286/Q286813/
 
 ## Q286813: Users May Fail to Reconnect to Dynamically Defined Dependent LUs
 
+{% raw %}
+
 	Article: Q286813
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP4
@@ -183,3 +185,5 @@ permalink: /kb/286/Q286813/
 	
 	=============================================================================
 	
+
+{% endraw %}

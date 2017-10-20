@@ -6,6 +6,8 @@ permalink: /kb/120/Q120219/
 
 ## Q120219: Gateway2000 w/ Mitsumi CD-ROM Hangs on Re-Boot During Install
 
+{% raw %}
+
 	Article: Q120219
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/120/Q120219/
 	
 	=============================================================================
 	
+
+{% endraw %}

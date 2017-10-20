@@ -6,6 +6,8 @@ permalink: /kb/201/Q201116/
 
 ## Q201116: BUG: CB_SETTOPINDEX and CB_GETTOPINDEX Always Return 0 on Mac
 
+{% raw %}
+
 	Article: Q201116
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:4.0,4.0b
@@ -133,3 +135,5 @@ permalink: /kb/201/Q201116/
 	
 	=============================================================================
 	
+
+{% endraw %}

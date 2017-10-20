@@ -6,6 +6,8 @@ permalink: /kb/160/Q160491/
 
 ## Q160491: INFO: Files Modified by VC42b Patch - Part 1 of 4
 
+{% raw %}
+
 	Article: Q160491
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -1151,3 +1153,5 @@ permalink: /kb/160/Q160491/
 	
 	=============================================================================
 	
+
+{% endraw %}

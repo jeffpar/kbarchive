@@ -6,6 +6,8 @@ permalink: /kb/209/Q209071/
 
 ## Q209071: BUG: Doc Errors in &quot;Installing and Registering a Control&quot; Topic
 
+{% raw %}
+
 	Article: Q209071
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:1.0
@@ -97,3 +99,5 @@ permalink: /kb/209/Q209071/
 	
 	=============================================================================
 	
+
+{% endraw %}

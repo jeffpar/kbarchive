@@ -6,6 +6,8 @@ permalink: /kb/153/Q153661/
 
 ## Q153661: Remote Control of Windows Clients Displays Video Corruption
 
+{% raw %}
+
 	Article: Q153661
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -49,3 +51,5 @@ permalink: /kb/153/Q153661/
 	
 	=============================================================================
 	
+
+{% endraw %}

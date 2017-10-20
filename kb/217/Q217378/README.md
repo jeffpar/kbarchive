@@ -6,6 +6,8 @@ permalink: /kb/217/Q217378/
 
 ## Q217378: XFOR: Chat Service Stops Unexpectedly, Unable to Change Nickname
 
+{% raw %}
+
 	Article: Q217378
 	Product(s): Microsoft Exchange
 	Version(s): winnt:2.0,5.5
@@ -74,3 +76,5 @@ permalink: /kb/217/Q217378/
 	
 	=============================================================================
 	
+
+{% endraw %}

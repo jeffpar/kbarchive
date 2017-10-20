@@ -6,6 +6,8 @@ permalink: /kb/266/Q266492/
 
 ## Q266492: Encarta 2001: Cannot Copy Images in Articles to Researcher
 
+{% raw %}
+
 	Article: Q266492
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/266/Q266492/
 	
 	=============================================================================
 	
+
+{% endraw %}

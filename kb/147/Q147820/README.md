@@ -6,6 +6,8 @@ permalink: /kb/147/Q147820/
 
 ## Q147820: Slow Performance Running VB 3.0 Applications on Windows NT
 
+{% raw %}
+
 	Article: Q147820
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51; :
@@ -75,3 +77,5 @@ permalink: /kb/147/Q147820/
 	
 	=============================================================================
 	
+
+{% endraw %}

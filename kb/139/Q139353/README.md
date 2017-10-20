@@ -6,6 +6,8 @@ permalink: /kb/139/Q139353/
 
 ## Q139353: PC WSPlus: Err Msg: Problem Occurred Initializing MSSCHED.DLL
 
+{% raw %}
+
 	Article: Q139353
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -82,3 +84,5 @@ permalink: /kb/139/Q139353/
 	
 	=============================================================================
 	
+
+{% endraw %}

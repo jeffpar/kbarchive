@@ -6,6 +6,8 @@ permalink: /kb/153/Q153912/
 
 ## Q153912: Internet Shortcuts Do Not Function After Reinstalling MSN
 
+{% raw %}
+
 	Article: Q153912
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5,95
@@ -86,3 +88,5 @@ permalink: /kb/153/Q153912/
 	
 	=============================================================================
 	
+
+{% endraw %}

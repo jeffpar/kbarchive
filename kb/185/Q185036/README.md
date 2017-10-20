@@ -6,6 +6,8 @@ permalink: /kb/185/Q185036/
 
 ## Q185036: WD97: Single-Spaced Paragraphs Convert to Double-Spaced in HTML
 
+{% raw %}
+
 	Article: Q185036
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -108,3 +110,5 @@ permalink: /kb/185/Q185036/
 	
 	=============================================================================
 	
+
+{% endraw %}

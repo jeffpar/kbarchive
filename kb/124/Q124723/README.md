@@ -6,6 +6,8 @@ permalink: /kb/124/Q124723/
 
 ## Q124723: Ancient Lands/Dangerous Creatures: Minimal or No Sounds
 
+{% raw %}
+
 	Article: Q124723
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -56,3 +58,5 @@ permalink: /kb/124/Q124723/
 	
 	=============================================================================
 	
+
+{% endraw %}

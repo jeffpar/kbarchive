@@ -6,6 +6,8 @@ permalink: /kb/159/Q159973/
 
 ## Q159973: WD97: Macro to Move Insertion Point to Top of Current Page
 
+{% raw %}
+
 	Article: Q159973
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -98,3 +100,5 @@ permalink: /kb/159/Q159973/
 	
 	=============================================================================
 	
+
+{% endraw %}

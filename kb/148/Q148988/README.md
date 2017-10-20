@@ -6,6 +6,8 @@ permalink: /kb/148/Q148988/
 
 ## Q148988: TN3270 Excluding IP Addresses from the TN3270E Server
 
+{% raw %}
+
 	Article: Q148988
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -46,3 +48,5 @@ permalink: /kb/148/Q148988/
 	
 	=============================================================================
 	
+
+{% endraw %}

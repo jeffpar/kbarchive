@@ -6,6 +6,8 @@ permalink: /kb/120/Q120747/
 
 ## Q120747: Broderbund's &quot;Grandma and Me&quot; App Won't Install but Still Runs
 
+{% raw %}
+
 	Article: Q120747
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/120/Q120747/
 	
 	=============================================================================
 	
+
+{% endraw %}

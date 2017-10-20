@@ -6,6 +6,8 @@ permalink: /kb/260/Q260146/
 
 ## Q260146: Video Adapter Is Not Detected on a Windows 2000-Based Computer
 
+{% raw %}
+
 	Article: Q260146
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -85,3 +87,5 @@ permalink: /kb/260/Q260146/
 	
 	=============================================================================
 	
+
+{% endraw %}

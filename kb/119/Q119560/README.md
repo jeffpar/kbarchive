@@ -6,6 +6,8 @@ permalink: /kb/119/Q119560/
 
 ## Q119560: PC DOS: How to Use One-Off Addressing
 
+{% raw %}
+
 	Article: Q119560
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b
@@ -65,3 +67,5 @@ permalink: /kb/119/Q119560/
 	
 	=============================================================================
 	
+
+{% endraw %}

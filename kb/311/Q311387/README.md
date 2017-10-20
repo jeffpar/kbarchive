@@ -6,6 +6,8 @@ permalink: /kb/311/Q311387/
 
 ## Q311387: XADM: Search Permission Prevents Viewing Membership of DL
 
+{% raw %}
+
 	Article: Q311387
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -77,3 +79,5 @@ permalink: /kb/311/Q311387/
 	
 	=============================================================================
 	
+
+{% endraw %}

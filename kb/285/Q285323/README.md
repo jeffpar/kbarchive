@@ -6,6 +6,8 @@ permalink: /kb/285/Q285323/
 
 ## Q285323: Crimson Skies Err Msg: Fatal Exception OE Has Occurred at  0028
 
+{% raw %}
+
 	Article: Q285323
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -110,3 +112,5 @@ permalink: /kb/285/Q285323/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/281/Q281447/
 
 ## Q281447: USB Keyboard does not work properly with Compaq IA-2
 
+{% raw %}
+
 	Article: Q281447
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -51,3 +53,5 @@ permalink: /kb/281/Q281447/
 	
 	=============================================================================
 	
+
+{% endraw %}

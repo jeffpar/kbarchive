@@ -6,6 +6,8 @@ permalink: /kb/138/Q138758/
 
 ## Q138758: How to Print Event Procedures for a Form
 
+{% raw %}
+
 	Article: Q138758
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -84,3 +86,5 @@ permalink: /kb/138/Q138758/
 	
 	=============================================================================
 	
+
+{% endraw %}

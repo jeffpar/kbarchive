@@ -6,6 +6,8 @@ permalink: /kb/190/Q190881/
 
 ## Q190881: Analyze6.exe Utility for Visual SourceSafe
 
+{% raw %}
+
 	Article: Q190881
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,4.0a,5.0
@@ -188,3 +190,5 @@ permalink: /kb/190/Q190881/
 	
 	=============================================================================
 	
+
+{% endraw %}

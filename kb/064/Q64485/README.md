@@ -6,6 +6,8 @@ permalink: /kb/064/Q64485/
 
 ## Q64485: IBM EE 1.2 Lan Server Expanded Character Set
 
+{% raw %}
+
 	Article: Q64485
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/064/Q64485/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175620/
 
 ## Q175620: INFO: Limitations on Distribution of Spellchk.app
 
+{% raw %}
+
 	Article: Q175620
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -61,3 +63,5 @@ permalink: /kb/175/Q175620/
 	
 	=============================================================================
 	
+
+{% endraw %}

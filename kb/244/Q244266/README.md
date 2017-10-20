@@ -6,6 +6,8 @@ permalink: /kb/244/Q244266/
 
 ## Q244266: WD97: Word Template Hyperlink Opens Instead of New Document
 
+{% raw %}
+
 	Article: Q244266
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/244/Q244266/
 	
 	=============================================================================
 	
+
+{% endraw %}

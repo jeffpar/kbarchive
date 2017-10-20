@@ -6,6 +6,8 @@ permalink: /kb/234/Q234661/
 
 ## Q234661: Cannot Log On if Desktop Background File Is on a Floppy Disk
 
+{% raw %}
+
 	Article: Q234661
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/234/Q234661/
 	
 	=============================================================================
 	
+
+{% endraw %}

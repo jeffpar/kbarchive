@@ -6,6 +6,8 @@ permalink: /kb/109/Q109466/
 
 ## Q109466: PC Gen: PODIAG.EXE Creates INI Directory on 2.1 &amp; 3.0 POs
 
+{% raw %}
+
 	Article: Q109466
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -43,3 +45,5 @@ permalink: /kb/109/Q109466/
 	
 	=============================================================================
 	
+
+{% endraw %}

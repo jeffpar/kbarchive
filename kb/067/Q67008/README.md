@@ -6,6 +6,8 @@ permalink: /kb/067/Q67008/
 
 ## Q67008: Syntax Error When Watching Variables That Begin with &quot;P&quot;
 
+{% raw %}
+
 	Article: Q67008
 	Product(s): See article
 	Version(s): 2.20 2.30 | 2.20 2.30
@@ -38,3 +40,5 @@ permalink: /kb/067/Q67008/
 	version 3.00.
 	
 	Additional keywords: buglist2.30 buglist2.35
+
+{% endraw %}

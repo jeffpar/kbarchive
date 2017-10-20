@@ -6,6 +6,8 @@ permalink: /kb/137/Q137603/
 
 ## Q137603: PPT: Unpacked PPT4.0 Presentation Requires PPT95
 
+{% raw %}
+
 	Article: Q137603
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -94,3 +96,5 @@ permalink: /kb/137/Q137603/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134508/
 
 ## Q134508: External MIDI Devices Do Not Work with Sound Blaster Pro
 
+{% raw %}
+
 	Article: Q134508
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/134/Q134508/
 	
 	=============================================================================
 	
+
+{% endraw %}

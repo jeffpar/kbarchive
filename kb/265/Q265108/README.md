@@ -6,6 +6,8 @@ permalink: /kb/265/Q265108/
 
 ## Q265108: XADM: Error Message: Could Not Complete the Operation
 
+{% raw %}
+
 	Article: Q265108
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -76,3 +78,5 @@ permalink: /kb/265/Q265108/
 	
 	=============================================================================
 	
+
+{% endraw %}

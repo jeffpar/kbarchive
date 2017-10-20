@@ -6,6 +6,8 @@ permalink: /kb/086/Q86723/
 
 ## Q86723: PRB: Creating File with Exclusive Access Allows Concurrent Use
 
+{% raw %}
+
 	Article: Q86723
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -47,3 +49,5 @@ permalink: /kb/086/Q86723/
 	
 	=============================================================================
 	
+
+{% endraw %}

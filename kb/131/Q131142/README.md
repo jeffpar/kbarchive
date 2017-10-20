@@ -6,6 +6,8 @@ permalink: /kb/131/Q131142/
 
 ## Q131142: Display Driver Setup Fails for Intergraph G91 Video Adapter
 
+{% raw %}
+
 	Article: Q131142
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/131/Q131142/
 	
 	=============================================================================
 	
+
+{% endraw %}

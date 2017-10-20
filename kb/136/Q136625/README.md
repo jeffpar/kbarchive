@@ -6,6 +6,8 @@ permalink: /kb/136/Q136625/
 
 ## Q136625: PC Mac: Creating a Personal User List and Personal Group
 
+{% raw %}
+
 	Article: Q136625
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.x
@@ -46,3 +48,5 @@ permalink: /kb/136/Q136625/
 	
 	=============================================================================
 	
+
+{% endraw %}

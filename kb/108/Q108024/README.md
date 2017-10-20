@@ -6,6 +6,8 @@ permalink: /kb/108/Q108024/
 
 ## Q108024: System Hangs When Booting with FSSYSTEM Disk
 
+{% raw %}
+
 	Article: Q108024
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -57,3 +59,5 @@ permalink: /kb/108/Q108024/
 	
 	=============================================================================
 	
+
+{% endraw %}

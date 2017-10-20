@@ -6,6 +6,8 @@ permalink: /kb/199/Q199277/
 
 ## Q199277: Installing Windows NT 4.0 SP4 Requests Windows NT 4.0 SP3 CD-ROM
 
+{% raw %}
+
 	Article: Q199277
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/199/Q199277/
 	
 	=============================================================================
 	
+
+{% endraw %}

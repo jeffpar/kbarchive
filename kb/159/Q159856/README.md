@@ -6,6 +6,8 @@ permalink: /kb/159/Q159856/
 
 ## Q159856: WD97: Page Field in Header/Footer Causes Odd Behavior
 
+{% raw %}
+
 	Article: Q159856
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -153,3 +155,5 @@ permalink: /kb/159/Q159856/
 	
 	=============================================================================
 	
+
+{% endraw %}

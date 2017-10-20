@@ -6,6 +6,8 @@ permalink: /kb/236/Q236304/
 
 ## Q236304: Microsoft Press E-Books Do Not Install Or Run On WindowsCE Devic
 
+{% raw %}
+
 	Article: Q236304
 	Product(s): Microsoft Press
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/236/Q236304/
 	
 	=============================================================================
 	
+
+{% endraw %}

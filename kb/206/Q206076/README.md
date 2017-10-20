@@ -6,6 +6,8 @@ permalink: /kb/206/Q206076/
 
 ## Q206076: MARSHAL.EXE: How To Marshal Interfaces Across Apartments
 
+{% raw %}
+
 	Article: Q206076
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -121,3 +123,5 @@ permalink: /kb/206/Q206076/
 	
 	=============================================================================
 	
+
+{% endraw %}

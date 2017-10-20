@@ -6,6 +6,8 @@ permalink: /kb/173/Q173468/
 
 ## Q173468: Err Msg: Cmmgr32.exe Caused a Stack Fault in Module Kernel32.dll
 
+{% raw %}
+
 	Article: Q173468
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6
@@ -106,3 +108,5 @@ permalink: /kb/173/Q173468/
 	
 	=============================================================================
 	
+
+{% endraw %}

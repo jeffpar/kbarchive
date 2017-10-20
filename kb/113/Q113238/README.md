@@ -6,6 +6,8 @@ permalink: /kb/113/Q113238/
 
 ## Q113238: WFWG Err Msg: Error 58: The Network Has Responded Incorrectly
 
+{% raw %}
+
 	Article: Q113238
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -83,3 +85,5 @@ permalink: /kb/113/Q113238/
 	
 	=============================================================================
 	
+
+{% endraw %}

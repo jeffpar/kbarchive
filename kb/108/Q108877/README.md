@@ -6,6 +6,8 @@ permalink: /kb/108/Q108877/
 
 ## Q108877: PC Gen: PODIAG.EXE Toolbar Icon Descriptions
 
+{% raw %}
+
 	Article: Q108877
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -80,3 +82,5 @@ permalink: /kb/108/Q108877/
 	
 	=============================================================================
 	
+
+{% endraw %}

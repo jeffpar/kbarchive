@@ -6,6 +6,8 @@ permalink: /kb/162/Q162553/
 
 ## Q162553: FIX: ALEN() Function Causes Illegal Operation in Debug Window
 
+{% raw %}
+
 	Article: Q162553
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -87,3 +89,5 @@ permalink: /kb/162/Q162553/
 	
 	=============================================================================
 	
+
+{% endraw %}

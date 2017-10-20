@@ -6,6 +6,8 @@ permalink: /kb/120/Q120967/
 
 ## Q120967: BUG: Try Blocks Within a Switch Statement Behave Incorrectly
 
+{% raw %}
+
 	Article: Q120967
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,4.0,4.1,4.2,5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/120/Q120967/
 	
 	=============================================================================
 	
+
+{% endraw %}

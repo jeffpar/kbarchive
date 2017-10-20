@@ -6,6 +6,8 @@ permalink: /kb/171/Q171042/
 
 ## Q171042: WD97: Red Box Prints Behind WordArt Object on Canon BJC 4550
 
+{% raw %}
+
 	Article: Q171042
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/171/Q171042/
 	
 	=============================================================================
 	
+
+{% endraw %}

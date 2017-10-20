@@ -6,6 +6,8 @@ permalink: /kb/111/Q111009/
 
 ## Q111009: Accessing Keywords in a Viewer Title
 
+{% raw %}
+
 	Article: Q111009
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0
@@ -79,3 +81,5 @@ permalink: /kb/111/Q111009/
 	
 	=============================================================================
 	
+
+{% endraw %}

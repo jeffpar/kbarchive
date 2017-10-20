@@ -6,6 +6,8 @@ permalink: /kb/176/Q176143/
 
 ## Q176143: XCON: Non-Delivery Report on Empty P772 Messages
 
+{% raw %}
+
 	Article: Q176143
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -57,3 +59,5 @@ permalink: /kb/176/Q176143/
 	
 	=============================================================================
 	
+
+{% endraw %}

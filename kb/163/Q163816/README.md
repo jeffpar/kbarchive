@@ -6,6 +6,8 @@ permalink: /kb/163/Q163816/
 
 ## Q163816: XCLN: How to Suppress the Mail Header when Printing Message
 
+{% raw %}
+
 	Article: Q163816
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; Win95:4.0,5.0
@@ -69,3 +71,5 @@ permalink: /kb/163/Q163816/
 	
 	=============================================================================
 	
+
+{% endraw %}

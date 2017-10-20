@@ -6,6 +6,8 @@ permalink: /kb/129/Q129401/
 
 ## Q129401: Using Low-Level I/O to Remove Leading CR/LF Created by LIST
 
+{% raw %}
+
 	Article: Q129401
 	Product(s): Microsoft FoxPro
 	Version(s): 2.6a,3.0,5.0,6.0,7.0
@@ -76,3 +78,5 @@ permalink: /kb/129/Q129401/
 	
 	=============================================================================
 	
+
+{% endraw %}

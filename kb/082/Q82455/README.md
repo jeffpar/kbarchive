@@ -6,6 +6,8 @@ permalink: /kb/082/Q82455/
 
 ## Q82455: EMS=0 Parameter Hangs 386MAXs ASQ Program in Standard Mode
 
+{% raw %}
+
 	Article: Q82455
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -70,3 +72,5 @@ permalink: /kb/082/Q82455/
 	
 	=============================================================================
 	
+
+{% endraw %}

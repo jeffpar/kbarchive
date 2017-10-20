@@ -6,6 +6,8 @@ permalink: /kb/083/Q83231/
 
 ## Q83231: The 44 TrueType Fonts Offered in Windows 3.1 Font Pack 1
 
+{% raw %}
+
 	Article: Q83231
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/083/Q83231/
 	
 	=============================================================================
 	
+
+{% endraw %}

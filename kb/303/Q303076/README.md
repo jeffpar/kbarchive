@@ -6,6 +6,8 @@ permalink: /kb/303/Q303076/
 
 ## Q303076: Academic Learning Series Designing a Microsoft Windows 2000 Dire
 
+{% raw %}
+
 	Article: Q303076
 	Product(s): Microsoft Press
 	Version(s): 
@@ -299,3 +301,5 @@ permalink: /kb/303/Q303076/
 	
 	=============================================================================
 	
+
+{% endraw %}

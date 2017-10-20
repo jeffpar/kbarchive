@@ -6,6 +6,8 @@ permalink: /kb/108/Q108071/
 
 ## Q108071: WinAPPCCancelAsyncRequest Never Returns WAPPCALREADY (0xF000)
 
+{% raw %}
+
 	Article: Q108071
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -69,3 +71,5 @@ permalink: /kb/108/Q108071/
 	
 	=============================================================================
 	
+
+{% endraw %}

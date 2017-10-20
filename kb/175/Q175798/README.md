@@ -6,6 +6,8 @@ permalink: /kb/175/Q175798/
 
 ## Q175798: Error Message Appears When Creating a Demand Dial Interface
 
+{% raw %}
+
 	Article: Q175798
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/175/Q175798/
 	
 	=============================================================================
 	
+
+{% endraw %}

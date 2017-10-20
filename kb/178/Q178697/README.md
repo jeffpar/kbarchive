@@ -6,6 +6,8 @@ permalink: /kb/178/Q178697/
 
 ## Q178697: Remote Access Server Stops Responding After Several Connections
 
+{% raw %}
+
 	Article: Q178697
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -126,3 +128,5 @@ permalink: /kb/178/Q178697/
 	
 	=============================================================================
 	
+
+{% endraw %}

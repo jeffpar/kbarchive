@@ -6,6 +6,8 @@ permalink: /kb/168/Q168879/
 
 ## Q168879: INF: Driver Manager Trace Facility Logs User Names and  Password
 
+{% raw %}
+
 	Article: Q168879
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.0
@@ -75,3 +77,5 @@ permalink: /kb/168/Q168879/
 	
 	=============================================================================
 	
+
+{% endraw %}

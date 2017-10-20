@@ -6,6 +6,8 @@ permalink: /kb/051/Q51077/
 
 ## Q51077: &quot;Argument Count Mismatch&quot; If CALL ABSOLUTE DECLARE Not Changed
 
+{% raw %}
+
 	Article: Q51077
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -42,3 +44,5 @@ permalink: /kb/051/Q51077/
 	following:
 	
 	   DECLARE SUB ABSOLUTE(A AS SINGLE, B AS INTEGER, address AS INTEGER)
+
+{% endraw %}

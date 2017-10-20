@@ -6,6 +6,8 @@ permalink: /kb/183/Q183718/
 
 ## Q183718: CACLS Not Resolving Principle Names Correctly
 
+{% raw %}
+
 	Article: Q183718
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/183/Q183718/
 	
 	=============================================================================
 	
+
+{% endraw %}

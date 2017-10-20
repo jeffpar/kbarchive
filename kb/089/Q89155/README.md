@@ -6,6 +6,8 @@ permalink: /kb/089/Q89155/
 
 ## Q89155: PPT: Pattern Shows Through Double Line Style Border
 
+{% raw %}
+
 	Article: Q89155
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,7.0
@@ -60,3 +62,5 @@ permalink: /kb/089/Q89155/
 	
 	=============================================================================
 	
+
+{% endraw %}

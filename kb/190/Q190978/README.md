@@ -6,6 +6,8 @@ permalink: /kb/190/Q190978/
 
 ## Q190978: PRB: Missing Dependency Information Dialog in PDW
 
+{% raw %}
+
 	Article: Q190978
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -100,3 +102,5 @@ permalink: /kb/190/Q190978/
 	
 	=============================================================================
 	
+
+{% endraw %}

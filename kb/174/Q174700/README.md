@@ -6,6 +6,8 @@ permalink: /kb/174/Q174700/
 
 ## Q174700: XFOR: Error Opening Notes Database 'Foreign.nsf'
 
+{% raw %}
+
 	Article: Q174700
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/174/Q174700/
 	
 	=============================================================================
 	
+
+{% endraw %}

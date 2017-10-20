@@ -6,6 +6,8 @@ permalink: /kb/131/Q131667/
 
 ## Q131667: Problems Clearing and Adding To Routing Tables Using ROUTE.EXE
 
+{% raw %}
+
 	Article: Q131667
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.11,3.5,3.51
@@ -74,3 +76,5 @@ permalink: /kb/131/Q131667/
 	
 	=============================================================================
 	
+
+{% endraw %}

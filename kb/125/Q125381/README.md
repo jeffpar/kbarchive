@@ -6,6 +6,8 @@ permalink: /kb/125/Q125381/
 
 ## Q125381: Diamond Stealth 64 at 16.7 Million Colors Fails VGA Test
 
+{% raw %}
+
 	Article: Q125381
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,1994-1995 edition
@@ -90,3 +92,5 @@ permalink: /kb/125/Q125381/
 	
 	=============================================================================
 	
+
+{% endraw %}

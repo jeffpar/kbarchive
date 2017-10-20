@@ -6,6 +6,8 @@ permalink: /kb/248/Q248338/
 
 ## Q248338: Fighter Ace II: Problems If You Press ALT+TAB When You Play Game
 
+{% raw %}
+
 	Article: Q248338
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/248/Q248338/
 	
 	=============================================================================
 	
+
+{% endraw %}

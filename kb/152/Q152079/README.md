@@ -6,6 +6,8 @@ permalink: /kb/152/Q152079/
 
 ## Q152079: SNMP Traps Contain Invalid Agent ID Field
 
+{% raw %}
+
 	Article: Q152079
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -84,3 +86,5 @@ permalink: /kb/152/Q152079/
 	
 	=============================================================================
 	
+
+{% endraw %}

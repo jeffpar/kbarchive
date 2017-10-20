@@ -6,6 +6,8 @@ permalink: /kb/274/Q274218/
 
 ## Q274218: Server Returns &quot;Diagnostic 52&quot; When Deleting Replicated Object
 
+{% raw %}
+
 	Article: Q274218
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,2.2
@@ -70,3 +72,5 @@ permalink: /kb/274/Q274218/
 	
 	=============================================================================
 	
+
+{% endraw %}

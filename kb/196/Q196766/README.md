@@ -6,6 +6,8 @@ permalink: /kb/196/Q196766/
 
 ## Q196766: WD97: Formatting/Drawing Layer Change Unmarked in Compare Docs
 
+{% raw %}
+
 	Article: Q196766
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/196/Q196766/
 	
 	=============================================================================
 	
+
+{% endraw %}

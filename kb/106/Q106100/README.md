@@ -6,6 +6,8 @@ permalink: /kb/106/Q106100/
 
 ## Q106100: PC DOS: Err Msg: Keyboard Is Disabled. Saving Image.
 
+{% raw %}
+
 	Article: Q106100
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -59,3 +61,5 @@ permalink: /kb/106/Q106100/
 	
 	=============================================================================
 	
+
+{% endraw %}

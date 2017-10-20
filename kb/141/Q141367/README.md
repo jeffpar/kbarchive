@@ -6,6 +6,8 @@ permalink: /kb/141/Q141367/
 
 ## Q141367: Supported Network Adapters for Windows 95 RPL Boot
 
+{% raw %}
+
 	Article: Q141367
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/141/Q141367/
 	
 	=============================================================================
 	
+
+{% endraw %}

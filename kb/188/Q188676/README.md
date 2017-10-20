@@ -6,6 +6,8 @@ permalink: /kb/188/Q188676/
 
 ## Q188676: XADM: Log Stalls/sec Are Regularly Greater Than 0 (Zero)
 
+{% raw %}
+
 	Article: Q188676
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -101,3 +103,5 @@ permalink: /kb/188/Q188676/
 	
 	=============================================================================
 	
+
+{% endraw %}

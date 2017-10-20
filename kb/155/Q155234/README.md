@@ -6,6 +6,8 @@ permalink: /kb/155/Q155234/
 
 ## Q155234: Computer Restart After Text-Mode Setup Fails
 
+{% raw %}
+
 	Article: Q155234
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/155/Q155234/
 	
 	=============================================================================
 	
+
+{% endraw %}

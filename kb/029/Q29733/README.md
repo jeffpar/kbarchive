@@ -6,6 +6,8 @@ permalink: /kb/029/Q29733/
 
 ## Q29733: HOWTO: Drawing a Different Icon for Each Application Instance
 
+{% raw %}
+
 	Article: Q29733
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -154,3 +156,5 @@ permalink: /kb/029/Q29733/
 	
 	=============================================================================
 	
+
+{% endraw %}

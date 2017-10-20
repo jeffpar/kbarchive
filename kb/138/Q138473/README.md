@@ -6,6 +6,8 @@ permalink: /kb/138/Q138473/
 
 ## Q138473: BUG: Code Window Closes Design Tools When Run from a Program
 
+{% raw %}
+
 	Article: Q138473
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -93,3 +95,5 @@ permalink: /kb/138/Q138473/
 	
 	=============================================================================
 	
+
+{% endraw %}

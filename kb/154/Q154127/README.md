@@ -6,6 +6,8 @@ permalink: /kb/154/Q154127/
 
 ## Q154127: Only One Font Available in HyperTerminal
 
+{% raw %}
+
 	Article: Q154127
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -66,3 +68,5 @@ permalink: /kb/154/Q154127/
 	
 	=============================================================================
 	
+
+{% endraw %}

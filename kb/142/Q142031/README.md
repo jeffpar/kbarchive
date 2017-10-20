@@ -6,6 +6,8 @@ permalink: /kb/142/Q142031/
 
 ## Q142031: BUG: Error Installing Windows NT Resource Kit Perl Utility
 
+{% raw %}
+
 	Article: Q142031
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.51
@@ -54,3 +56,5 @@ permalink: /kb/142/Q142031/
 	
 	=============================================================================
 	
+
+{% endraw %}

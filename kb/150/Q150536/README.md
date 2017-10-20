@@ -6,6 +6,8 @@ permalink: /kb/150/Q150536/
 
 ## Q150536: Rcmd.exe Err Msg: Error 53 Failed to Connect to Server
 
+{% raw %}
+
 	Article: Q150536
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -57,3 +59,5 @@ permalink: /kb/150/Q150536/
 	
 	=============================================================================
 	
+
+{% endraw %}

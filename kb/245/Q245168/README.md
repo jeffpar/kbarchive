@@ -6,6 +6,8 @@ permalink: /kb/245/Q245168/
 
 ## Q245168: WINS, DHCP Do Not Start After Upgrade to Command AntiVirus 4.54.
 
+{% raw %}
+
 	Article: Q245168
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/245/Q245168/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137399/
 
 ## Q137399: Hung Server Service, Event 7022 w/ Many DLC Printers Connected
 
+{% raw %}
+
 	Article: Q137399
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -132,3 +134,5 @@ permalink: /kb/137/Q137399/
 	
 	=============================================================================
 	
+
+{% endraw %}

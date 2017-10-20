@@ -6,6 +6,8 @@ permalink: /kb/191/Q191083/
 
 ## Q191083: BUG: IPF When Replacing Class Module with UserControl
 
+{% raw %}
+
 	Article: Q191083
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -82,3 +84,5 @@ permalink: /kb/191/Q191083/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124649/
 
 ## Q124649: HOWTO: How to Print a Single Line Without Formfeed
 
+{% raw %}
+
 	Article: Q124649
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -165,3 +167,5 @@ permalink: /kb/124/Q124649/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139378/
 
 ## Q139378: Debugging SNA Server Application Exceptions on WinNT 3.5 &amp; 3.51
 
+{% raw %}
+
 	Article: Q139378
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1,4.0 SP2,4.0 SP3; winnt:3.5
@@ -237,3 +239,5 @@ permalink: /kb/139/Q139378/
 	
 	=============================================================================
 	
+
+{% endraw %}

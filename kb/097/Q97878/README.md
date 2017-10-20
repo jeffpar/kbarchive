@@ -6,6 +6,8 @@ permalink: /kb/097/Q97878/
 
 ## Q97878: Encarta: Setup Diagnostic Fails
 
+{% raw %}
+
 	Article: Q97878
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1993
@@ -84,3 +86,5 @@ permalink: /kb/097/Q97878/
 	
 	=============================================================================
 	
+
+{% endraw %}

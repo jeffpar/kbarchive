@@ -6,6 +6,8 @@ permalink: /kb/152/Q152124/
 
 ## Q152124: USR-Megahertz 288 Ethernet/Modem Combo Card Fails
 
+{% raw %}
+
 	Article: Q152124
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -70,3 +72,5 @@ permalink: /kb/152/Q152124/
 	
 	=============================================================================
 	
+
+{% endraw %}

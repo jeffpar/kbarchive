@@ -6,6 +6,8 @@ permalink: /kb/156/Q156601/
 
 ## Q156601: Computer Pauses at Blue Startup Screen for 30 to 45 Seconds
 
+{% raw %}
+
 	Article: Q156601
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -50,3 +52,5 @@ permalink: /kb/156/Q156601/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134633/
 
 ## Q134633: MS Exchange Postoffice in Windows 95 Questions and Answers
 
+{% raw %}
+
 	Article: Q134633
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/134/Q134633/
 	
 	=============================================================================
 	
+
+{% endraw %}

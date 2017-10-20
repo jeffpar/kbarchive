@@ -6,6 +6,8 @@ permalink: /kb/081/Q81337/
 
 ## Q81337: PrncDlg.exe - Common Dialogs and Printing Functions
 
+{% raw %}
+
 	Article: Q81337
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -58,3 +60,5 @@ permalink: /kb/081/Q81337/
 	
 	=============================================================================
 	
+
+{% endraw %}

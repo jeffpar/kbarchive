@@ -6,6 +6,8 @@ permalink: /kb/183/Q183000/
 
 ## Q183000: WD97: Invalid Page Fault When You Insert Equation Editor Object
 
+{% raw %}
+
 	Article: Q183000
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -120,3 +122,5 @@ permalink: /kb/183/Q183000/
 	
 	=============================================================================
 	
+
+{% endraw %}

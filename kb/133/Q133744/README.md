@@ -6,6 +6,8 @@ permalink: /kb/133/Q133744/
 
 ## Q133744: How to Re-dimension a Class Array Outside the Class Definition
 
+{% raw %}
+
 	Article: Q133744
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -79,3 +81,5 @@ permalink: /kb/133/Q133744/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138738/
 
 ## Q138738: VESA Local Bus Device Conflicts in Windows NT
 
+{% raw %}
+
 	Article: Q138738
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/138/Q138738/
 	
 	=============================================================================
 	
+
+{% endraw %}

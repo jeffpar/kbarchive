@@ -6,6 +6,8 @@ permalink: /kb/149/Q149510/
 
 ## Q149510: BUG: Environment Compiler Options Incorrectly Take Precedence
 
+{% raw %}
+
 	Article: Q149510
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -76,3 +78,5 @@ permalink: /kb/149/Q149510/
 	
 	=============================================================================
 	
+
+{% endraw %}

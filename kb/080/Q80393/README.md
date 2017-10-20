@@ -6,6 +6,8 @@ permalink: /kb/080/Q80393/
 
 ## Q80393: How to Rebuild the Default Windows REG.DAT File
 
+{% raw %}
+
 	Article: Q80393
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -170,3 +172,5 @@ permalink: /kb/080/Q80393/
 	
 	=============================================================================
 	
+
+{% endraw %}

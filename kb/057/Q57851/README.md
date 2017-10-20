@@ -6,6 +6,8 @@ permalink: /kb/057/Q57851/
 
 ## Q57851: CALL INTERRUPT for Small Time Increments Using BIOS Tick Count
 
+{% raw %}
+
 	Article: Q57851
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -137,3 +139,5 @@ permalink: /kb/057/Q57851/
 	        PRINT USING "######.##"; seconds#
 	WEND
 	END
+
+{% endraw %}

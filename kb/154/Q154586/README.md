@@ -6,6 +6,8 @@ permalink: /kb/154/Q154586/
 
 ## Q154586: Console Text Incorrectly Formatted
 
+{% raw %}
+
 	Article: Q154586
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/154/Q154586/
 	
 	=============================================================================
 	
+
+{% endraw %}

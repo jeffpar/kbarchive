@@ -6,6 +6,8 @@ permalink: /kb/149/Q149659/
 
 ## Q149659: Printer Driver Files Dated 6/3/80
 
+{% raw %}
+
 	Article: Q149659
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -71,3 +73,5 @@ permalink: /kb/149/Q149659/
 	
 	=============================================================================
 	
+
+{% endraw %}

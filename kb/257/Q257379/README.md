@@ -6,6 +6,8 @@ permalink: /kb/257/Q257379/
 
 ## Q257379: Wspsrv.exe Exception: Access Violation (0xC0000005)
 
+{% raw %}
+
 	Article: Q257379
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,4.0,4.x,5.0,5.5
@@ -109,3 +111,5 @@ permalink: /kb/257/Q257379/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/258/Q258293/
 
 ## Q258293: XFOR: Services Required for NNTP Clients
 
+{% raw %}
+
 	Article: Q258293
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -47,3 +49,5 @@ permalink: /kb/258/Q258293/
 	
 	=============================================================================
 	
+
+{% endraw %}

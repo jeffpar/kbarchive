@@ -6,6 +6,8 @@ permalink: /kb/132/Q132351/
 
 ## Q132351: NE2000 Install Fails with Default Base I/O Address
 
+{% raw %}
+
 	Article: Q132351
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/132/Q132351/
 	
 	=============================================================================
 	
+
+{% endraw %}

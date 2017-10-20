@@ -6,6 +6,8 @@ permalink: /kb/135/Q135111/
 
 ## Q135111: BUG: &quot;Feature Not Available&quot; Error If READ in Form of Formset
 
+{% raw %}
+
 	Article: Q135111
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -85,3 +87,5 @@ permalink: /kb/135/Q135111/
 	
 	=============================================================================
 	
+
+{% endraw %}

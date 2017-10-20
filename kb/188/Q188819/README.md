@@ -6,6 +6,8 @@ permalink: /kb/188/Q188819/
 
 ## Q188819: XFOR: OV/VM Connector Returns Different NDRs to PROFS Sender
 
+{% raw %}
+
 	Article: Q188819
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -132,3 +134,5 @@ permalink: /kb/188/Q188819/
 	
 	=============================================================================
 	
+
+{% endraw %}

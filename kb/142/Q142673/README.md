@@ -6,6 +6,8 @@ permalink: /kb/142/Q142673/
 
 ## Q142673: NetWare Drives Become Inaccessible to Certain Applications
 
+{% raw %}
+
 	Article: Q142673
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -77,3 +79,5 @@ permalink: /kb/142/Q142673/
 	
 	=============================================================================
 	
+
+{% endraw %}

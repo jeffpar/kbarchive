@@ -6,6 +6,8 @@ permalink: /kb/063/Q63798/
 
 ## Q63798: Entering QB 4.50 with Multi-Module Program Requires Full Menus
 
+{% raw %}
+
 	Article: Q63798
 	Product(s): See article
 	Version(s): 4.50
@@ -40,3 +42,5 @@ permalink: /kb/063/Q63798/
 	Menus and display shortened menus. The QBX.EXE environment in
 	Microsoft BASIC Professional Development System (PDS) 7.00 also does
 	not have an option to display shortened menus.
+
+{% endraw %}

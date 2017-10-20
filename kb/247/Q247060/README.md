@@ -6,6 +6,8 @@ permalink: /kb/247/Q247060/
 
 ## Q247060: Error Message in Ntbackup.exe When Starting to Read Tapes
 
+{% raw %}
+
 	Article: Q247060
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/247/Q247060/
 	
 	=============================================================================
 	
+
+{% endraw %}

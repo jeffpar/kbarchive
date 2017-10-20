@@ -6,6 +6,8 @@ permalink: /kb/063/Q63322/
 
 ## Q63322: C 5.00/5.10 and 6.00 Regard Right Arrow Character (1Ah) as EOF
 
+{% raw %}
+
 	Article: Q63322
 	Product(s): See article
 	Version(s): 5.00 5.10 6.00 | 5.10 6.00
@@ -32,3 +34,5 @@ permalink: /kb/063/Q63322/
 	separated from the rest of the string, it may be read as a different
 	hex value, since characters will appear directly after it. In addition
 	to hex values, an octal value may be used.
+
+{% endraw %}

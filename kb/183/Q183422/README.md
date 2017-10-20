@@ -6,6 +6,8 @@ permalink: /kb/183/Q183422/
 
 ## Q183422: Long Delays Trying to View Registry Values Edit Dialog Box
 
+{% raw %}
+
 	Article: Q183422
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -70,3 +72,5 @@ permalink: /kb/183/Q183422/
 	
 	=============================================================================
 	
+
+{% endraw %}

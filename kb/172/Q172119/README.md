@@ -6,6 +6,8 @@ permalink: /kb/172/Q172119/
 
 ## Q172119: Encarta 97: Incorrect Installation Instructions in Jewel Box
 
+{% raw %}
+
 	Article: Q172119
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -48,3 +50,5 @@ permalink: /kb/172/Q172119/
 	
 	=============================================================================
 	
+
+{% endraw %}

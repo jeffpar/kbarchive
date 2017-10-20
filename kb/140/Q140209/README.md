@@ -6,6 +6,8 @@ permalink: /kb/140/Q140209/
 
 ## Q140209: Opening Sample Scripts with Batch.exe Causes Errors
 
+{% raw %}
+
 	Article: Q140209
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -70,3 +72,5 @@ permalink: /kb/140/Q140209/
 	
 	=============================================================================
 	
+
+{% endraw %}

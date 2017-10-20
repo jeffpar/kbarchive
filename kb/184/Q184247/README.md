@@ -6,6 +6,8 @@ permalink: /kb/184/Q184247/
 
 ## Q184247: BUG: FileListBox Display Inconsistent Between Windows 95 &amp; NT 4
 
+{% raw %}
+
 	Article: Q184247
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -75,3 +77,5 @@ permalink: /kb/184/Q184247/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/115/Q115482/
 
 ## Q115482: SET VOLUME Provides Support for MS-DOS-Style Paths
 
+{% raw %}
+
 	Article: Q115482
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -95,3 +97,5 @@ permalink: /kb/115/Q115482/
 	
 	=============================================================================
 	
+
+{% endraw %}

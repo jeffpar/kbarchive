@@ -6,6 +6,8 @@ permalink: /kb/195/Q195280/
 
 ## Q195280: Visual J++ 6.0 Developer's Workshop Comments and Corrections
 
+{% raw %}
+
 	Article: Q195280
 	Product(s): Microsoft Press
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/195/Q195280/
 	
 	=============================================================================
 	
+
+{% endraw %}

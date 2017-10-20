@@ -6,6 +6,8 @@ permalink: /kb/138/Q138395/
 
 ## Q138395: PRB: Visual FoxPro Gives @...GET a Default Caption
 
+{% raw %}
+
 	Article: Q138395
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -136,3 +138,5 @@ permalink: /kb/138/Q138395/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/060/Q60829/
 
 ## Q60829: /I Documented Incorrectly in &quot;Advanced Programming Techniques&quot;
 
+{% raw %}
+
 	Article: Q60829
 	Product(s): See article
 	Version(s): 3.00   | 3.00
@@ -22,3 +24,5 @@ permalink: /kb/060/Q60829/
 	The correct switch options are /I0 to trap these interrupts, or /I1 to
 	ignore these interrupts. Both the online documentation and the
 	"Microsoft C Reference" give this correct usage of the /I switch.
+
+{% endraw %}

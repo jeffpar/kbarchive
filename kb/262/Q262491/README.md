@@ -6,6 +6,8 @@ permalink: /kb/262/Q262491/
 
 ## Q262491: XADM: Information Store Crashes When Using Antivirus Application
 
+{% raw %}
+
 	Article: Q262491
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -103,3 +105,5 @@ permalink: /kb/262/Q262491/
 	
 	=============================================================================
 	
+
+{% endraw %}

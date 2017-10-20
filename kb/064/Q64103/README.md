@@ -6,6 +6,8 @@ permalink: /kb/064/Q64103/
 
 ## Q64103: CURRENCY Variable of User-Defined TYPE Cannot Use @ Symbol
 
+{% raw %}
+
 	Article: Q64103
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -63,3 +65,5 @@ permalink: /kb/064/Q64103/
 	me(1).f$ = "12"
 	PRINT me(1).a, me(1).b, me(1).c
 	PRINT me(1).d, me(1).e, me(1).f
+
+{% endraw %}

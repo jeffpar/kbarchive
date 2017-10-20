@@ -6,6 +6,8 @@ permalink: /kb/167/Q167315/
 
 ## Q167315: QRI Bit Not Set Correctly on Responses to RUI Apps
 
+{% raw %}
+
 	Article: Q167315
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11 SP2,3.0 SP1
@@ -125,3 +127,5 @@ permalink: /kb/167/Q167315/
 	
 	=============================================================================
 	
+
+{% endraw %}

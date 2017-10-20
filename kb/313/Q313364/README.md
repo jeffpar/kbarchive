@@ -6,6 +6,8 @@ permalink: /kb/313/Q313364/
 
 ## Q313364: OpenGL-Based Program Causes Access Violation in Windows NT
 
+{% raw %}
+
 	Article: Q313364
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -91,3 +93,5 @@ permalink: /kb/313/Q313364/
 	
 	=============================================================================
 	
+
+{% endraw %}

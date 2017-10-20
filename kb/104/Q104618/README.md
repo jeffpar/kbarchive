@@ -6,6 +6,8 @@ permalink: /kb/104/Q104618/
 
 ## Q104618: HOW TO: Pass a char from C to MASM by Value &amp; Returning a char
 
+{% raw %}
+
 	Article: Q104618
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,2.1,4.0,5.0,6.0
@@ -135,3 +137,5 @@ permalink: /kb/104/Q104618/
 	
 	=============================================================================
 	
+
+{% endraw %}

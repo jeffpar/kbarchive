@@ -6,6 +6,8 @@ permalink: /kb/128/Q128072/
 
 ## Q128072: How to use SQL Select to Locate NULL Values
 
+{% raw %}
+
 	Article: Q128072
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -60,3 +62,5 @@ permalink: /kb/128/Q128072/
 	
 	=============================================================================
 	
+
+{% endraw %}

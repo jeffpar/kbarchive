@@ -6,6 +6,8 @@ permalink: /kb/298/Q298109/
 
 ## Q298109: SAMPLE: Create a Context Menu Handler by Using ATL
 
+{% raw %}
+
 	Article: Q298109
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -268,3 +270,5 @@ permalink: /kb/298/Q298109/
 	
 	=============================================================================
 	
+
+{% endraw %}

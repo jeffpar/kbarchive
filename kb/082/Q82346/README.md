@@ -6,6 +6,8 @@ permalink: /kb/082/Q82346/
 
 ## Q82346: What Is SEGENTRY.DAT?
 
+{% raw %}
+
 	Article: Q82346
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -40,3 +42,5 @@ permalink: /kb/082/Q82346/
 	
 	=============================================================================
 	
+
+{% endraw %}

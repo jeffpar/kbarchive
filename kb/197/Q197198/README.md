@@ -6,6 +6,8 @@ permalink: /kb/197/Q197198/
 
 ## Q197198: WD97: Address in Envelopes and Labels Blank or Shows Date/Text
 
+{% raw %}
+
 	Article: Q197198
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -215,3 +217,5 @@ permalink: /kb/197/Q197198/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141758/
 
 ## Q141758: HOWTO: How to Add Tooltips for Controls to an MFC Modal Dialog B
 
+{% raw %}
+
 	Article: Q141758
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.1,2.2,4.0
@@ -74,10 +76,10 @@ permalink: /kb/141/Q141758/
 	         CAboutDlg();
 	
 	         // Dialog Data
-	         //{ {AFX_DATA(CAboutDlg)
+	         //{{AFX_DATA(CAboutDlg)
 	         enum { IDD = IDD_ABOUTBOX };
 	         CButton   m_btOK;
-	         //} }AFX_DATA
+	         //}}AFX_DATA
 	
 	         CToolTipCtrl* m_pToolTip;
 	
@@ -183,10 +185,10 @@ permalink: /kb/141/Q141758/
 	         CAboutDlg();
 	
 	         // Dialog Data
-	         //{ {AFX_DATA(CAboutDlg)
+	         //{{AFX_DATA(CAboutDlg)
 	         enum { IDD = IDD_ABOUTBOX };
 	         CButton   m_btOK;
-	         //} }AFX_DATA
+	         //}}AFX_DATA
 	
 	         CToolTipCtrl* m_pToolTip;
 	
@@ -268,3 +270,5 @@ permalink: /kb/141/Q141758/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141126/
 
 ## Q141126: BBS Attachment Properties Show Compressed File Size
 
+{% raw %}
+
 	Article: Q141126
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -33,3 +35,5 @@ permalink: /kb/141/Q141126/
 	
 	=============================================================================
 	
+
+{% endraw %}

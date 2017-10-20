@@ -6,6 +6,8 @@ permalink: /kb/083/Q83702/
 
 ## Q83702: UltraStor 22CA ESDI Controller Needs /Double_Buffer+ Line
 
+{% raw %}
+
 	Article: Q83702
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/083/Q83702/
 	
 	=============================================================================
 	
+
+{% endraw %}

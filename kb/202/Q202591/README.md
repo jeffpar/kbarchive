@@ -6,6 +6,8 @@ permalink: /kb/202/Q202591/
 
 ## Q202591: FIX: Developer Studio Source and Dialog Editors Respond Slowly
 
+{% raw %}
+
 	Article: Q202591
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -95,3 +97,5 @@ permalink: /kb/202/Q202591/
 	
 	=============================================================================
 	
+
+{% endraw %}

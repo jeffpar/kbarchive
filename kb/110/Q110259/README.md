@@ -6,6 +6,8 @@ permalink: /kb/110/Q110259/
 
 ## Q110259: Flight Simulator 5.0: Map View Is Black
 
+{% raw %}
+
 	Article: Q110259
 	Product(s): Microsoft Home Games
 	Version(s): 5.0
@@ -66,3 +68,5 @@ permalink: /kb/110/Q110259/
 	
 	=============================================================================
 	
+
+{% endraw %}

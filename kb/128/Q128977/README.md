@@ -6,6 +6,8 @@ permalink: /kb/128/Q128977/
 
 ## Q128977: RASPHONE Hangs After Making PPP Connection To Server
 
+{% raw %}
+
 	Article: Q128977
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -55,3 +57,5 @@ permalink: /kb/128/Q128977/
 	
 	=============================================================================
 	
+
+{% endraw %}

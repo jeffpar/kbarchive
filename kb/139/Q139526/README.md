@@ -6,6 +6,8 @@ permalink: /kb/139/Q139526/
 
 ## Q139526: HOWTO: Send to the Serial Port by Using Mscomm32.ocx
 
+{% raw %}
+
 	Article: Q139526
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -131,3 +133,5 @@ permalink: /kb/139/Q139526/
 	
 	=============================================================================
 	
+
+{% endraw %}

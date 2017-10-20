@@ -6,6 +6,8 @@ permalink: /kb/159/Q159777/
 
 ## Q159777: BUG: Invalid Syntax Error When Logging On to Visual SourceSafe
 
+{% raw %}
+
 	Article: Q159777
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -127,3 +129,5 @@ permalink: /kb/159/Q159777/
 	
 	=============================================================================
 	
+
+{% endraw %}

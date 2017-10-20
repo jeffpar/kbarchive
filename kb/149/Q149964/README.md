@@ -6,6 +6,8 @@ permalink: /kb/149/Q149964/
 
 ## Q149964: FIX: C1001 on Large Basic Block with Optimizations Enabled
 
+{% raw %}
+
 	Article: Q149964
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -228,3 +230,5 @@ permalink: /kb/149/Q149964/
 	
 	=============================================================================
 	
+
+{% endraw %}

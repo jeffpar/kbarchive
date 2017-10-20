@@ -6,6 +6,8 @@ permalink: /kb/141/Q141430/
 
 ## Q141430: Bookshelf 1995: QuickShelf Toolbar Overlaps Office Toolbar
 
+{% raw %}
+
 	Article: Q141430
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -51,3 +53,5 @@ permalink: /kb/141/Q141430/
 	
 	=============================================================================
 	
+
+{% endraw %}

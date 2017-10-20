@@ -6,6 +6,8 @@ permalink: /kb/057/Q57364/
 
 ## Q57364: Missing FUNCTION Name in BASIC PDS 7.00 Example
 
+{% raw %}
+
 	Article: Q57364
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -26,3 +28,5 @@ permalink: /kb/057/Q57364/
 	
 	This information applies to Microsoft BASIC Professional Development
 	System (PDS) versions 7.00 and 7.10 for MS-DOS and MS OS/2.
+
+{% endraw %}

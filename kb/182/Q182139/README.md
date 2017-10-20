@@ -6,6 +6,8 @@ permalink: /kb/182/Q182139/
 
 ## Q182139: LUA Pool Cannot Be Assigned to Two TN3270 Servers
 
+{% raw %}
+
 	Article: Q182139
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -101,3 +103,5 @@ permalink: /kb/182/Q182139/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161886/
 
 ## Q161886: Property Sheet as the View Window of a CFrameWnd
 
+{% raw %}
+
 	Article: Q161886
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -178,12 +180,12 @@ permalink: /kb/161/Q161886/
 	   - Add the following ON_NOTIFY macro to the message map table:
 	
 	       BEGIN_MESSAGE_MAP(CTabView, CView)
-	         //{ {AFX_MSG_MAP(CTabView)
+	         //{{AFX_MSG_MAP(CTabView)
 	         ON_WM_CREATE()
 	         ON_WM_SIZE()
 	         ON_WM_SETFOCUS()
 	         ...                              // other message macros
-	         //} }AFX_MSG_MAP
+	         //}}AFX_MSG_MAP
 	         ON_NOTIFY(TCN_SELCHANGE, ID_TABCTRL, OnTabSelChange)
 	         ON_NOTIFY(TCN_SELCHANGING, ID_TABCTRL, OnTabSelChanging)
 	         ...                              // other message macros
@@ -251,3 +253,5 @@ permalink: /kb/161/Q161886/
 	
 	=============================================================================
 	
+
+{% endraw %}

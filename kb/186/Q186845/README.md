@@ -6,6 +6,8 @@ permalink: /kb/186/Q186845/
 
 ## Q186845: WD97: Picture Wrapping Changes from No Wrap to Around Wrap
 
+{% raw %}
+
 	Article: Q186845
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -92,3 +94,5 @@ permalink: /kb/186/Q186845/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122442/
 
 ## Q122442: PRB: stdout/stderr May Not Be In Sync When Using Redirection
 
+{% raw %}
+
 	Article: Q122442
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5,1.51,2.0,2.1,4.0,5.0,6.0
@@ -95,3 +97,5 @@ permalink: /kb/122/Q122442/
 	
 	=============================================================================
 	
+
+{% endraw %}

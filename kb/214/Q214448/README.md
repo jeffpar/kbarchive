@@ -6,6 +6,8 @@ permalink: /kb/214/Q214448/
 
 ## Q214448: SMS: Job Status Stays at None for Run Command on Workstation Job
 
+{% raw %}
+
 	Article: Q214448
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -154,3 +156,5 @@ permalink: /kb/214/Q214448/
 	
 	=============================================================================
 	
+
+{% endraw %}

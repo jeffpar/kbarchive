@@ -6,6 +6,8 @@ permalink: /kb/156/Q156063/
 
 ## Q156063: XADM: Readme.wri: Microsoft Exchange Server 5.0 Release Notes
 
+{% raw %}
+
 	Article: Q156063
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -3978,3 +3980,5 @@ permalink: /kb/156/Q156063/
 	
 	=============================================================================
 	
+
+{% endraw %}

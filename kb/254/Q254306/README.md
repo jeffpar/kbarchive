@@ -6,6 +6,8 @@ permalink: /kb/254/Q254306/
 
 ## Q254306: Typing a Letter in a List Box May Not Jump to the Correct Entry
 
+{% raw %}
+
 	Article: Q254306
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -96,3 +98,5 @@ permalink: /kb/254/Q254306/
 	
 	=============================================================================
 	
+
+{% endraw %}

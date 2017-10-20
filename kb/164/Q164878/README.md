@@ -6,6 +6,8 @@ permalink: /kb/164/Q164878/
 
 ## Q164878: E21xx Cabletron Network Cards Do Not Work Properly in MPS
 
+{% raw %}
+
 	Article: Q164878
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/164/Q164878/
 	
 	=============================================================================
 	
+
+{% endraw %}

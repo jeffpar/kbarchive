@@ -6,6 +6,8 @@ permalink: /kb/263/Q263206/
 
 ## Q263206: VTAM V4R2 PTF May Cause APPC Conversation to Stop Responding
 
+{% raw %}
+
 	Article: Q263206
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 (all SP),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -124,3 +126,5 @@ permalink: /kb/263/Q263206/
 	
 	=============================================================================
 	
+
+{% endraw %}

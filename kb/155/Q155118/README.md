@@ -6,6 +6,8 @@ permalink: /kb/155/Q155118/
 
 ## Q155118: IDE Controller Marked as SCSI in Boot.ini File
 
+{% raw %}
+
 	Article: Q155118
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -73,3 +75,5 @@ permalink: /kb/155/Q155118/
 	
 	=============================================================================
 	
+
+{% endraw %}

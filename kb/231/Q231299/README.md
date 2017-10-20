@@ -6,6 +6,8 @@ permalink: /kb/231/Q231299/
 
 ## Q231299: XADM: Information Store Returns Service-Specific Error 335544375
 
+{% raw %}
+
 	Article: Q231299
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -97,3 +99,5 @@ permalink: /kb/231/Q231299/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/048/Q48303/
 
 ## Q48303: FltSim: Using the Mouse During a Demo
 
+{% raw %}
+
 	Article: Q48303
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -26,3 +28,5 @@ permalink: /kb/048/Q48303/
 	
 	=============================================================================
 	
+
+{% endraw %}

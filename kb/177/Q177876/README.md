@@ -6,6 +6,8 @@ permalink: /kb/177/Q177876/
 
 ## Q177876: Bookshelf: Cannot Use Mouse to Select More Than One Media Type
 
+{% raw %}
+
 	Article: Q177876
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -60,3 +62,5 @@ permalink: /kb/177/Q177876/
 	
 	=============================================================================
 	
+
+{% endraw %}

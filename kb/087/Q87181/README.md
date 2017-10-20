@@ -6,6 +6,8 @@ permalink: /kb/087/Q87181/
 
 ## Q87181: PROFS: How to Trace Where Mail Failed
 
+{% raw %}
+
 	Article: Q87181
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -87,3 +89,5 @@ permalink: /kb/087/Q87181/
 	
 	=============================================================================
 	
+
+{% endraw %}

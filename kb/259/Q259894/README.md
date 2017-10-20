@@ -6,6 +6,8 @@ permalink: /kb/259/Q259894/
 
 ## Q259894: XCLN: Error Closing PowerPoint Presentation from Public Folder
 
+{% raw %}
+
 	Article: Q259894
 	Product(s): Microsoft Exchange
 	Version(s): 2000
@@ -82,3 +84,5 @@ permalink: /kb/259/Q259894/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/323/Q323478/
 
 ## Q323478: PRB: You Cannot Debug Through a Terminal Server Session
 
+{% raw %}
+
 	Article: Q323478
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -111,3 +113,5 @@ permalink: /kb/323/Q323478/
 	
 	=============================================================================
 	
+
+{% endraw %}

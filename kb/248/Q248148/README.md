@@ -6,6 +6,8 @@ permalink: /kb/248/Q248148/
 
 ## Q248148: XCLN: The Signature &lt;Name.sig&gt; Could Not Be Located
 
+{% raw %}
+
 	Article: Q248148
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,97,98
@@ -79,3 +81,5 @@ permalink: /kb/248/Q248148/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140956/
 
 ## Q140956: XCON: MTA: Aborts Connection After Legitimate RTSE Activity
 
+{% raw %}
+
 	Article: Q140956
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/140/Q140956/
 	
 	=============================================================================
 	
+
+{% endraw %}

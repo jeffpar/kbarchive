@@ -6,6 +6,8 @@ permalink: /kb/250/Q250655/
 
 ## Q250655: Asheron's Call: Character Hangs in Portal Space
 
+{% raw %}
+
 	Article: Q250655
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -122,3 +124,5 @@ permalink: /kb/250/Q250655/
 	
 	=============================================================================
 	
+
+{% endraw %}

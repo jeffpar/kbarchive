@@ -6,6 +6,8 @@ permalink: /kb/131/Q131037/
 
 ## Q131037: How to Compile MediaView Example Player Using Visual C++
 
+{% raw %}
+
 	Article: Q131037
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 1.3,2.0,2.1
@@ -154,3 +156,5 @@ permalink: /kb/131/Q131037/
 	
 	=============================================================================
 	
+
+{% endraw %}

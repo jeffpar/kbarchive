@@ -6,6 +6,8 @@ permalink: /kb/317/Q317872/
 
 ## Q317872: SMS: Troubleshooting SMS Administrator Console Connectivity
 
+{% raw %}
+
 	Article: Q317872
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -259,3 +261,5 @@ permalink: /kb/317/Q317872/
 	
 	=============================================================================
 	
+
+{% endraw %}

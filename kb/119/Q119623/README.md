@@ -6,6 +6,8 @@ permalink: /kb/119/Q119623/
 
 ## Q119623: RAS Error 212: Bad Modem or COM Port Failure
 
+{% raw %}
+
 	Article: Q119623
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 1.0,1.1a
@@ -54,3 +56,5 @@ permalink: /kb/119/Q119623/
 	
 	=============================================================================
 	
+
+{% endraw %}

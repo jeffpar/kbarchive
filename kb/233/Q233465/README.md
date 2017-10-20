@@ -6,6 +6,8 @@ permalink: /kb/233/Q233465/
 
 ## Q233465: MSBP: &quot;Problem Printing&quot; Error Message When You Attempt to Print
 
+{% raw %}
+
 	Article: Q233465
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -56,3 +58,5 @@ permalink: /kb/233/Q233465/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126006/
 
 ## Q126006: Explorapedia: Err Msg: Cannot Open .TDF; Unable to Locate
 
+{% raw %}
+
 	Article: Q126006
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -188,3 +190,5 @@ permalink: /kb/126/Q126006/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87084/
 
 ## Q87084: VGA Chip Sets and Revisions Used on Video Cards
 
+{% raw %}
+
 	Article: Q87084
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -82,3 +84,5 @@ permalink: /kb/087/Q87084/
 	
 	=============================================================================
 	
+
+{% endraw %}

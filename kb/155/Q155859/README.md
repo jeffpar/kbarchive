@@ -6,6 +6,8 @@ permalink: /kb/155/Q155859/
 
 ## Q155859: XCLN: Err Msg: The Following Unrecoverable Error Has Occurred
 
+{% raw %}
+
 	Article: Q155859
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -68,3 +70,5 @@ permalink: /kb/155/Q155859/
 	
 	=============================================================================
 	
+
+{% endraw %}

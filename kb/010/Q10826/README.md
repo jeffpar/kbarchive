@@ -6,6 +6,8 @@ permalink: /kb/010/Q10826/
 
 ## Q10826: Limitations on Writing Device Drivers in C
 
+{% raw %}
+
 	Article: Q10826
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,1.5,6.0,6.0a,6.0ax; MS-DOS:7.0
@@ -61,3 +63,5 @@ permalink: /kb/010/Q10826/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/029/Q29691/
 
 ## Q29691: Conditions Where /PACKCODE is Not the Default
 
+{% raw %}
+
 	Article: Q29691
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:5.01,5.02,5.03,5.05,5.1,5.11,5.13,5.15,5.2,5.3
@@ -40,3 +42,5 @@ permalink: /kb/029/Q29691/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152841/
 
 ## Q152841: Windows NT 4.0 Service Pack 3 Readme.txt File (40-bit)
 
+{% raw %}
+
 	Article: Q152841
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP3
@@ -1040,3 +1042,5 @@ permalink: /kb/152/Q152841/
 	
 	=============================================================================
 	
+
+{% endraw %}

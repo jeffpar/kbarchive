@@ -6,6 +6,8 @@ permalink: /kb/198/Q198511/
 
 ## Q198511: Error 629 with ISDN Multilink
 
+{% raw %}
+
 	Article: Q198511
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/198/Q198511/
 	
 	=============================================================================
 	
+
+{% endraw %}

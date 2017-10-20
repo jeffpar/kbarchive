@@ -6,6 +6,8 @@ permalink: /kb/242/Q242367/
 
 ## Q242367: XADM: Limitation Warning Message Has Wrong Words
 
+{% raw %}
+
 	Article: Q242367
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -85,3 +87,5 @@ permalink: /kb/242/Q242367/
 	
 	=============================================================================
 	
+
+{% endraw %}

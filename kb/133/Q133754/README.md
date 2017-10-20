@@ -6,6 +6,8 @@ permalink: /kb/133/Q133754/
 
 ## Q133754: Julia Child Chef's Tips: No Text with ATI Video Drivers in NT
 
+{% raw %}
+
 	Article: Q133754
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -73,3 +75,5 @@ permalink: /kb/133/Q133754/
 	
 	=============================================================================
 	
+
+{% endraw %}

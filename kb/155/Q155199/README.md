@@ -6,6 +6,8 @@ permalink: /kb/155/Q155199/
 
 ## Q155199: WD97: How to Create Two-Page Numbering Schemes in One Document
 
+{% raw %}
+
 	Article: Q155199
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -212,7 +214,7 @@ permalink: /kb/155/Q155199/
 	
 	5. Enter the following field into the Footer of Section 2:
 	
-	  {={PAGE} + {PAGEREF BookmarkName (section 1)} }
+	  {={PAGE} + {PAGEREF BookmarkName (section 1)}}
 	
 	  Note: The BookmarkName should be the PREVIOUS Section's BookmarkName.
 	
@@ -231,7 +233,7 @@ permalink: /kb/155/Q155199/
 	  c. With field codes turned on, change the field to the following:
 	
 	  {={PAGE} + {PAGEREF BookmarkName (section 1)}
-	  + {PAGEREF BookmarkName (section 2)} }
+	  + {PAGEREF BookmarkName (section 2)}}
 	
 	7. Repeat step 6 for each section of your document.
 	
@@ -247,7 +249,7 @@ permalink: /kb/155/Q155199/
 	
 	  {={PAGE} + {PAGEREF BookmarkName (section 1)}
 	  + {PAGEREF BookmarkName (section 2)}
-	  + {PAGEREF BookmarkName (section 3)} }
+	  + {PAGEREF BookmarkName (section 3)}}
 	
 	8. Click Close on the Header and Footer toolbar.
 	
@@ -261,3 +263,5 @@ permalink: /kb/155/Q155199/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155780/
 
 ## Q155780: XADM: Mailbox Cleanup Agent Doesn't Exclude Mailboxes With Comma
 
+{% raw %}
+
 	Article: Q155780
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -55,3 +57,5 @@ permalink: /kb/155/Q155780/
 	
 	=============================================================================
 	
+
+{% endraw %}

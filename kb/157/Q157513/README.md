@@ -6,6 +6,8 @@ permalink: /kb/157/Q157513/
 
 ## Q157513: Adaptec EZ-SCSI 4 Power Management Does Not Work
 
+{% raw %}
+
 	Article: Q157513
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -50,3 +52,5 @@ permalink: /kb/157/Q157513/
 	
 	=============================================================================
 	
+
+{% endraw %}

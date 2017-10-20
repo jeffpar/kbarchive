@@ -6,6 +6,8 @@ permalink: /kb/059/Q59398/
 
 ## Q59398: PRINT Ignored After PRINT CURRENCY Variable in QBX.EXE 7.00
 
+{% raw %}
+
 	Article: Q59398
 	Product(s): See article
 	Version(s): 7.00
@@ -61,3 +63,5 @@ permalink: /kb/059/Q59398/
 	   10
 	
 	   A blank line was printed
+
+{% endraw %}

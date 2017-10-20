@@ -6,6 +6,8 @@ permalink: /kb/177/Q177669/
 
 ## Q177669: Changing to UK Regional Settings during an Unattended Install
 
+{% raw %}
+
 	Article: Q177669
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -112,3 +114,5 @@ permalink: /kb/177/Q177669/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112262/
 
 ## Q112262: PC MAPI: MAPI_SENT Set Improperly on Shared Folder Messages
 
+{% raw %}
+
 	Article: Q112262
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -52,3 +54,5 @@ permalink: /kb/112/Q112262/
 	
 	=============================================================================
 	
+
+{% endraw %}

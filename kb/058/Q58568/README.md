@@ -6,6 +6,8 @@ permalink: /kb/058/Q58568/
 
 ## Q58568: How to Use Customize Menu Command of Utility Menu in QBX.EXE
 
+{% raw %}
+
 	Article: Q58568
 	Product(s): See article
 	Version(s): 7.00
@@ -172,3 +174,5 @@ permalink: /kb/058/Q58568/
 	    ALT+F5. After displaying the contents of the current directory, you
 	    will be prompted with "press any key to continue" before control is
 	    returned to QBX.
+
+{% endraw %}

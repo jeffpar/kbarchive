@@ -6,6 +6,8 @@ permalink: /kb/149/Q149280/
 
 ## Q149280: XCLN: Win16 Client Fails on Real Mode TCP/IP Protocol
 
+{% raw %}
+
 	Article: Q149280
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; winnt:3.0
@@ -73,3 +75,5 @@ permalink: /kb/149/Q149280/
 	
 	=============================================================================
 	
+
+{% endraw %}

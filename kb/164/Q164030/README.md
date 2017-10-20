@@ -6,6 +6,8 @@ permalink: /kb/164/Q164030/
 
 ## Q164030: WD97: Define and Lookup Reference Unavailable in Word
 
+{% raw %}
+
 	Article: Q164030
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -78,3 +80,5 @@ permalink: /kb/164/Q164030/
 	
 	=============================================================================
 	
+
+{% endraw %}

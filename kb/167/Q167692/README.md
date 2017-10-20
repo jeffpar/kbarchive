@@ -6,6 +6,8 @@ permalink: /kb/167/Q167692/
 
 ## Q167692: FIX: Assertion Line 257 in File Dlgprop.cpp
 
+{% raw %}
+
 	Article: Q167692
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -84,3 +86,5 @@ permalink: /kb/167/Q167692/
 	
 	=============================================================================
 	
+
+{% endraw %}

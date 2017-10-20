@@ -6,6 +6,8 @@ permalink: /kb/157/Q157442/
 
 ## Q157442: Cannot Issue Second Allocate from a CPI-C Application
 
+{% raw %}
+
 	Article: Q157442
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -60,3 +62,5 @@ permalink: /kb/157/Q157442/
 	
 	=============================================================================
 	
+
+{% endraw %}

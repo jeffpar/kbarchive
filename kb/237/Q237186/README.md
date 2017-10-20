@@ -6,6 +6,8 @@ permalink: /kb/237/Q237186/
 
 ## Q237186: LU6.2 BIND Rejected When Connecting through 3174 NN
 
+{% raw %}
+
 	Article: Q237186
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,
@@ -94,3 +96,5 @@ permalink: /kb/237/Q237186/
 	
 	=============================================================================
 	
+
+{% endraw %}

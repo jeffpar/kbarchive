@@ -6,6 +6,8 @@ permalink: /kb/082/Q82409/
 
 ## Q82409: AGFA Compugraphics Genics Resets During Printing
 
+{% raw %}
+
 	Article: Q82409
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/082/Q82409/
 	
 	=============================================================================
 	
+
+{% endraw %}

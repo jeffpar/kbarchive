@@ -6,6 +6,8 @@ permalink: /kb/173/Q173065/
 
 ## Q173065: PRB: Problems After Branching Integrated DevStudio Projects
 
+{% raw %}
+
 	Article: Q173065
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0; winnt:5.0,6.0
@@ -213,3 +215,5 @@ permalink: /kb/173/Q173065/
 	
 	=============================================================================
 	
+
+{% endraw %}

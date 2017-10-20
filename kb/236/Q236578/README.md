@@ -6,6 +6,8 @@ permalink: /kb/236/Q236578/
 
 ## Q236578: Offline Servers Should Be Removed from Clients' Service Table
 
+{% raw %}
+
 	Article: Q236578
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1,4.0 SP2
@@ -120,3 +122,5 @@ permalink: /kb/236/Q236578/
 	
 	=============================================================================
 	
+
+{% endraw %}

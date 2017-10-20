@@ -6,6 +6,8 @@ permalink: /kb/150/Q150658/
 
 ## Q150658: Mastering Access Programming: Contents of README.WRI
 
+{% raw %}
+
 	Article: Q150658
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0,1.0a
@@ -341,3 +343,5 @@ permalink: /kb/150/Q150658/
 	
 	=============================================================================
 	
+
+{% endraw %}

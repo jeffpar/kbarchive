@@ -6,6 +6,8 @@ permalink: /kb/186/Q186378/
 
 ## Q186378: FIX: Keywords in WHERE Clause Cause Oracle ODBC Driver Errors
 
+{% raw %}
+
 	Article: Q186378
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): Build 2.73.7269,Build 2.73.7283.01,Build 2.73.7283.03
@@ -121,3 +123,5 @@ permalink: /kb/186/Q186378/
 	
 	=============================================================================
 	
+
+{% endraw %}

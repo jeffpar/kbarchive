@@ -6,6 +6,8 @@ permalink: /kb/084/Q84042/
 
 ## Q84042: Windows Err Msg: Cannot Run This Program...
 
+{% raw %}
+
 	Article: Q84042
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -139,3 +141,5 @@ permalink: /kb/084/Q84042/
 	
 	=============================================================================
 	
+
+{% endraw %}

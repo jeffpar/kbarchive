@@ -6,6 +6,8 @@ permalink: /kb/074/Q74650/
 
 ## Q74650: BUG: &quot;Insufficient Floppy Drive&quot; (DataView Snap 1+1)
 
+{% raw %}
+
 	Article: Q74650
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -52,3 +54,5 @@ permalink: /kb/074/Q74650/
 	
 	=============================================================================
 	
+
+{% endraw %}

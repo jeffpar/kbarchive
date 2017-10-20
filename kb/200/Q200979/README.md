@@ -6,6 +6,8 @@ permalink: /kb/200/Q200979/
 
 ## Q200979: FIX: File Corruption Occurs When Shadowed
 
+{% raw %}
+
 	Article: Q200979
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0,6.0
@@ -104,3 +106,5 @@ permalink: /kb/200/Q200979/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147811/
 
 ## Q147811: HOWTO: Detect If Computer Has Sound Card That Plays Wave Audio
 
+{% raw %}
+
 	Article: Q147811
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/147/Q147811/
 	
 	=============================================================================
 	
+
+{% endraw %}

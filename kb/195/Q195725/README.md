@@ -6,6 +6,8 @@ permalink: /kb/195/Q195725/
 
 ## Q195725: Intermediate Network Driver Causes STOP 0x0000001E on MP PC
 
+{% raw %}
+
 	Article: Q195725
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -75,3 +77,5 @@ permalink: /kb/195/Q195725/
 	
 	=============================================================================
 	
+
+{% endraw %}

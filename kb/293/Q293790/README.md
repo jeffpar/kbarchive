@@ -6,6 +6,8 @@ permalink: /kb/293/Q293790/
 
 ## Q293790: FIX: SQLDescribeParam Causes Syntax Error or Access Violation
 
+{% raw %}
+
 	Article: Q293790
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2000.80.194,3.7
@@ -137,3 +139,5 @@ permalink: /kb/293/Q293790/
 	
 	=============================================================================
 	
+
+{% endraw %}

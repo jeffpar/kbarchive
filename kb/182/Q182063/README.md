@@ -6,6 +6,8 @@ permalink: /kb/182/Q182063/
 
 ## Q182063: SNA API Traces May Fail to Capture CMALLC or Allocate Failures
 
+{% raw %}
+
 	Article: Q182063
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -67,3 +69,5 @@ permalink: /kb/182/Q182063/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107176/
 
 ## Q107176: Flight Simulator: Statue of Liberty Is Two Dimensional
 
+{% raw %}
+
 	Article: Q107176
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -48,3 +50,5 @@ permalink: /kb/107/Q107176/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160776/
 
 ## Q160776: SMS: Inventory Processor Fails on RAW to MIF Conversion
 
+{% raw %}
+
 	Article: Q160776
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -94,3 +96,5 @@ permalink: /kb/160/Q160776/
 	
 	=============================================================================
 	
+
+{% endraw %}

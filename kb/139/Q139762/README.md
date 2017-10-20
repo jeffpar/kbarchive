@@ -6,6 +6,8 @@ permalink: /kb/139/Q139762/
 
 ## Q139762: Control Menu Fails to Drop Down
 
+{% raw %}
+
 	Article: Q139762
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition; WINDOWS:1.0
@@ -54,3 +56,5 @@ permalink: /kb/139/Q139762/
 	
 	=============================================================================
 	
+
+{% endraw %}

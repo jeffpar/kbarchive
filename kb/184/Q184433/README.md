@@ -6,6 +6,8 @@ permalink: /kb/184/Q184433/
 
 ## Q184433: BUG: Escape Seq in Params to Stored Procs Are Incorrectly Parsed
 
+{% raw %}
+
 	Article: Q184433
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.5
@@ -55,3 +57,5 @@ permalink: /kb/184/Q184433/
 	
 	=============================================================================
 	
+
+{% endraw %}

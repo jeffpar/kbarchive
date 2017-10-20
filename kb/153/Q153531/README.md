@@ -6,6 +6,8 @@ permalink: /kb/153/Q153531/
 
 ## Q153531: Quick Viewer Resizes Incorrectly During Remote Control
 
+{% raw %}
+
 	Article: Q153531
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -48,3 +50,5 @@ permalink: /kb/153/Q153531/
 	
 	=============================================================================
 	
+
+{% endraw %}

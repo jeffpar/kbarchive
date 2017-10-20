@@ -6,6 +6,8 @@ permalink: /kb/163/Q163301/
 
 ## Q163301: PPT: Sample VB Code to Check for Open Presentation
 
+{% raw %}
+
 	Article: Q163301
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -163,3 +165,5 @@ permalink: /kb/163/Q163301/
 	
 	=============================================================================
 	
+
+{% endraw %}

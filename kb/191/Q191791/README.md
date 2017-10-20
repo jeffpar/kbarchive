@@ -6,6 +6,8 @@ permalink: /kb/191/Q191791/
 
 ## Q191791: INFO: VB 6.0 Readme Part 14: Visual Component Manager
 
+{% raw %}
+
 	Article: Q191791
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -140,3 +142,5 @@ permalink: /kb/191/Q191791/
 	
 	=============================================================================
 	
+
+{% endraw %}

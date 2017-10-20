@@ -6,6 +6,8 @@ permalink: /kb/134/Q134691/
 
 ## Q134691: AFTP -F Script Fails if Password is Eight Characters Long
 
+{% raw %}
+
 	Article: Q134691
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -71,3 +73,5 @@ permalink: /kb/134/Q134691/
 	
 	=============================================================================
 	
+
+{% endraw %}

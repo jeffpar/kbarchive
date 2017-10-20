@@ -6,6 +6,8 @@ permalink: /kb/138/Q138542/
 
 ## Q138542: RAS Authentication Retry Dialog Box Does Not Appear
 
+{% raw %}
+
 	Article: Q138542
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -44,3 +46,5 @@ permalink: /kb/138/Q138542/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/088/Q88821/
 
 ## Q88821: Epson L-750 Does Not Handle US Fanfold Correctly
 
+{% raw %}
+
 	Article: Q88821
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -47,3 +49,5 @@ permalink: /kb/088/Q88821/
 	
 	=============================================================================
 	
+
+{% endraw %}

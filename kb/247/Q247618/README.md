@@ -6,6 +6,8 @@ permalink: /kb/247/Q247618/
 
 ## Q247618: XCON: No Mail Flow from Exchange to MSMail, Events 2556 and 2369
 
+{% raw %}
+
 	Article: Q247618
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -81,3 +83,5 @@ permalink: /kb/247/Q247618/
 	
 	=============================================================================
 	
+
+{% endraw %}

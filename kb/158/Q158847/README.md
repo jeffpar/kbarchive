@@ -6,6 +6,8 @@ permalink: /kb/158/Q158847/
 
 ## Q158847: WD97: Run-Time Error '5841' If Style Doesn't Exist
 
+{% raw %}
+
 	Article: Q158847
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -134,3 +136,5 @@ permalink: /kb/158/Q158847/
 	
 	=============================================================================
 	
+
+{% endraw %}

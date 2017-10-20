@@ -6,6 +6,8 @@ permalink: /kb/315/Q315117/
 
 ## Q315117: Asheron's Call: Err Msg: You Must Purchase Asheron's Call...
 
+{% raw %}
+
 	Article: Q315117
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -70,3 +72,5 @@ permalink: /kb/315/Q315117/
 	
 	=============================================================================
 	
+
+{% endraw %}

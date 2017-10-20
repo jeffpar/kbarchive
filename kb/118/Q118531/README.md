@@ -6,6 +6,8 @@ permalink: /kb/118/Q118531/
 
 ## Q118531: FFAPI: GTWGET Extracts All FFAPI Messages, Specifies PO
 
+{% raw %}
+
 	Article: Q118531
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -55,3 +57,5 @@ permalink: /kb/118/Q118531/
 	
 	=============================================================================
 	
+
+{% endraw %}

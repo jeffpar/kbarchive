@@ -6,6 +6,8 @@ permalink: /kb/184/Q184561/
 
 ## Q184561: Instrument Flight Techniques with Flight Sim 98 Corrections
 
+{% raw %}
+
 	Article: Q184561
 	Product(s): Microsoft Press
 	Version(s): 
@@ -157,3 +159,5 @@ permalink: /kb/184/Q184561/
 	
 	=============================================================================
 	
+
+{% endraw %}

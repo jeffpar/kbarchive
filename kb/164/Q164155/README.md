@@ -6,6 +6,8 @@ permalink: /kb/164/Q164155/
 
 ## Q164155: SMS: Doset32.exe Produces a Bad Image Error
 
+{% raw %}
+
 	Article: Q164155
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -59,3 +61,5 @@ permalink: /kb/164/Q164155/
 	
 	=============================================================================
 	
+
+{% endraw %}

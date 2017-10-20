@@ -6,6 +6,8 @@ permalink: /kb/076/Q76750/
 
 ## Q76750: MS-DOS 5.0 on Zeos Computer with Mylex BIOS Earlier than 6.04
 
+{% raw %}
+
 	Article: Q76750
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -47,3 +49,5 @@ permalink: /kb/076/Q76750/
 	
 	=============================================================================
 	
+
+{% endraw %}

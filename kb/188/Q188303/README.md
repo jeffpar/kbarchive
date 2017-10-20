@@ -6,6 +6,8 @@ permalink: /kb/188/Q188303/
 
 ## Q188303: Random Stop 0x50 Errors on Cirrus Video Adapters
 
+{% raw %}
+
 	Article: Q188303
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/188/Q188303/
 	
 	=============================================================================
 	
+
+{% endraw %}

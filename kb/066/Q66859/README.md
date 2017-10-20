@@ -6,6 +6,8 @@ permalink: /kb/066/Q66859/
 
 ## Q66859: Description of Cruel in Windows Entertainment Pack
 
+{% raw %}
+
 	Article: Q66859
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/066/Q66859/
 	
 	=============================================================================
 	
+
+{% endraw %}

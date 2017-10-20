@@ -6,6 +6,8 @@ permalink: /kb/303/Q303834/
 
 ## Q303834: Setup Returns Error When the Source Path Contains Spaces
 
+{% raw %}
+
 	Article: Q303834
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -85,3 +87,5 @@ permalink: /kb/303/Q303834/
 	
 	=============================================================================
 	
+
+{% endraw %}

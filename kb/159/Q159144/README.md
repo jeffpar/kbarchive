@@ -6,6 +6,8 @@ permalink: /kb/159/Q159144/
 
 ## Q159144: Dongle May Not Function Under Windows NT 4.0
 
+{% raw %}
+
 	Article: Q159144
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/159/Q159144/
 	
 	=============================================================================
 	
+
+{% endraw %}

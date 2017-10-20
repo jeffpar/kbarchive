@@ -6,6 +6,8 @@ permalink: /kb/190/Q190539/
 
 ## Q190539: HOWTO: Make Move or Resize Call Form's THIS_ACCESS Method
 
+{% raw %}
+
 	Article: Q190539
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -122,3 +124,5 @@ permalink: /kb/190/Q190539/
 	
 	=============================================================================
 	
+
+{% endraw %}

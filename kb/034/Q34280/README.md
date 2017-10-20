@@ -6,6 +6,8 @@ permalink: /kb/034/Q34280/
 
 ## Q34280: QB &quot;String Space Corrupt&quot; Using a CONST in a FIELD Statement
 
+{% raw %}
+
 	Article: Q34280
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -47,3 +49,5 @@ permalink: /kb/034/Q34280/
 	
 	    0 Warning Error(s)
 	    1 Severe  Error(s)
+
+{% endraw %}

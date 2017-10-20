@@ -6,6 +6,8 @@ permalink: /kb/128/Q128230/
 
 ## Q128230: Broderbund Software Fails with SoundBits Installed
 
+{% raw %}
+
 	Article: Q128230
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -60,3 +62,5 @@ permalink: /kb/128/Q128230/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/116/Q116024/
 
 ## Q116024: PRB: Errors Occur when Using Database Classes with Access 2.0
 
+{% raw %}
+
 	Article: Q116024
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -74,3 +76,5 @@ permalink: /kb/116/Q116024/
 	
 	=============================================================================
 	
+
+{% endraw %}

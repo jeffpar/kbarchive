@@ -6,6 +6,8 @@ permalink: /kb/131/Q131200/
 
 ## Q131200: How to Print a Report When No Records Are Involved
 
+{% raw %}
+
 	Article: Q131200
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -52,3 +54,5 @@ permalink: /kb/131/Q131200/
 	
 	=============================================================================
 	
+
+{% endraw %}

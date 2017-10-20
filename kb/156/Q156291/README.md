@@ -6,6 +6,8 @@ permalink: /kb/156/Q156291/
 
 ## Q156291: Winnt.exe Shows Hidden Attribute in July 1996 MSDN Level 3
 
+{% raw %}
+
 	Article: Q156291
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -50,3 +52,5 @@ permalink: /kb/156/Q156291/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/040/Q40870/
 
 ## Q40870: BC 6.00 Example of OS/2 API Function Call DosNewSize
 
+{% raw %}
+
 	Article: Q40870
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -63,3 +65,5 @@ permalink: /kb/040/Q40870/
 	  END IF
 	END IF
 	END
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157192/
 
 ## Q157192: DOCERR:SYS(1037) Function Displays Page Dialog Not Print Setup
 
+{% raw %}
+
 	Article: Q157192
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -37,3 +39,5 @@ permalink: /kb/157/Q157192/
 	
 	=============================================================================
 	
+
+{% endraw %}

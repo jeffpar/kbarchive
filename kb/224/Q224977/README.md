@@ -6,6 +6,8 @@ permalink: /kb/224/Q224977/
 
 ## Q224977: XADM: Store Fails to Start: 4294965882, FFFFFA7A, Event 177,...
 
+{% raw %}
+
 	Article: Q224977
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -209,3 +211,5 @@ permalink: /kb/224/Q224977/
 	
 	=============================================================================
 	
+
+{% endraw %}

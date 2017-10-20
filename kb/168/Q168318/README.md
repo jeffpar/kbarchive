@@ -6,6 +6,8 @@ permalink: /kb/168/Q168318/
 
 ## Q168318: XADM: Guidgen.exe Available Only for Intel Platforms
 
+{% raw %}
+
 	Article: Q168318
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -53,3 +55,5 @@ permalink: /kb/168/Q168318/
 	
 	=============================================================================
 	
+
+{% endraw %}

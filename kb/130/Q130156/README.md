@@ -6,6 +6,8 @@ permalink: /kb/130/Q130156/
 
 ## Q130156: PPT: Some PowerPoint Buttons Not Available in Office Binder
 
+{% raw %}
+
 	Article: Q130156
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0,97; Win95:7.0
@@ -51,3 +53,5 @@ permalink: /kb/130/Q130156/
 	
 	=============================================================================
 	
+
+{% endraw %}

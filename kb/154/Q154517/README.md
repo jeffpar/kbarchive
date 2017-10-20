@@ -6,6 +6,8 @@ permalink: /kb/154/Q154517/
 
 ## Q154517: HOWTO: Use the DrawText API Call from Visual Basic
 
+{% raw %}
+
 	Article: Q154517
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -120,3 +122,5 @@ permalink: /kb/154/Q154517/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/214/Q214452/
 
 ## Q214452: STOP 0x1E in Win32k.sys When Running Solomon v2.06 (Accounting)
 
+{% raw %}
+
 	Article: Q214452
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/214/Q214452/
 	
 	=============================================================================
 	
+
+{% endraw %}

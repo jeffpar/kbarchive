@@ -6,6 +6,8 @@ permalink: /kb/135/Q135560/
 
 ## Q135560: PPT7: Contents of Disks 1-12 (3.5&quot; disks)
 
+{% raw %}
+
 	Article: Q135560
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -143,3 +145,5 @@ permalink: /kb/135/Q135560/
 	
 	=============================================================================
 	
+
+{% endraw %}

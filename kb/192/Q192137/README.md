@@ -6,6 +6,8 @@ permalink: /kb/192/Q192137/
 
 ## Q192137: PRB: Failed Registration of VBCE Components, Error 0000007e
 
+{% raw %}
+
 	Article: Q192137
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/192/Q192137/
 	
 	=============================================================================
 	
+
+{% endraw %}

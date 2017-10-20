@@ -6,6 +6,8 @@ permalink: /kb/124/Q124803/
 
 ## Q124803: QIC Tape with Multiple Backups Sets, Only First Set Displayed
 
+{% raw %}
+
 	Article: Q124803
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -49,3 +51,5 @@ permalink: /kb/124/Q124803/
 	
 	=============================================================================
 	
+
+{% endraw %}

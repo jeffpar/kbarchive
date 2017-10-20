@@ -6,6 +6,8 @@ permalink: /kb/272/Q272771/
 
 ## Q272771: Clustering Doesn't Start If Cluster Files on Extended Partition
 
+{% raw %}
+
 	Article: Q272771
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -94,3 +96,5 @@ permalink: /kb/272/Q272771/
 	
 	=============================================================================
 	
+
+{% endraw %}

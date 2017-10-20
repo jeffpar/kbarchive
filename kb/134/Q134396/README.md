@@ -6,6 +6,8 @@ permalink: /kb/134/Q134396/
 
 ## Q134396: MSN Err Msg: Unable to Find &lt;Internet Address&gt;...
 
+{% raw %}
+
 	Article: Q134396
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5 (OEM Release),95
@@ -50,3 +52,5 @@ permalink: /kb/134/Q134396/
 	
 	=============================================================================
 	
+
+{% endraw %}

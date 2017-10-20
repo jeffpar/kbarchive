@@ -6,6 +6,8 @@ permalink: /kb/126/Q126241/
 
 ## Q126241: Clients Cannot Run NetWare System Utilities Through GSNW
 
+{% raw %}
+
 	Article: Q126241
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 4.0
@@ -90,3 +92,5 @@ permalink: /kb/126/Q126241/
 	
 	=============================================================================
 	
+
+{% endraw %}

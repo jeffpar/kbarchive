@@ -6,6 +6,8 @@ permalink: /kb/166/Q166982/
 
 ## Q166982: WD97: Pressing TAB Key Moves Insertion Point to Wrong Cell
 
+{% raw %}
+
 	Article: Q166982
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/166/Q166982/
 	
 	=============================================================================
 	
+
+{% endraw %}

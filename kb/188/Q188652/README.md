@@ -6,6 +6,8 @@ permalink: /kb/188/Q188652/
 
 ## Q188652: Error Replicating Registry Keys
 
+{% raw %}
+
 	Article: Q188652
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/188/Q188652/
 	
 	=============================================================================
 	
+
+{% endraw %}

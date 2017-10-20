@@ -6,6 +6,8 @@ permalink: /kb/238/Q238866/
 
 ## Q238866: SMS: Event 1011 on Smsperf.dll Appears in Windows NT Event Log
 
+{% raw %}
+
 	Article: Q238866
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -92,3 +94,5 @@ permalink: /kb/238/Q238866/
 	
 	=============================================================================
 	
+
+{% endraw %}

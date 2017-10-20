@@ -6,6 +6,8 @@ permalink: /kb/169/Q169159/
 
 ## Q169159: XCON: X.400 Connector Configuration Checklist
 
+{% raw %}
+
 	Article: Q169159
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -131,3 +133,5 @@ permalink: /kb/169/Q169159/
 	
 	=============================================================================
 	
+
+{% endraw %}

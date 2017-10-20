@@ -6,6 +6,8 @@ permalink: /kb/137/Q137322/
 
 ## Q137322: Bookshelf  95: Accents Stripped from International Characters
 
+{% raw %}
+
 	Article: Q137322
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -42,3 +44,5 @@ permalink: /kb/137/Q137322/
 	
 	=============================================================================
 	
+
+{% endraw %}

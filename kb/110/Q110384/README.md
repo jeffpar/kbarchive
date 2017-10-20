@@ -6,6 +6,8 @@ permalink: /kb/110/Q110384/
 
 ## Q110384: Direct Control of AVI Files from Viewer
 
+{% raw %}
+
 	Article: Q110384
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -108,3 +110,5 @@ permalink: /kb/110/Q110384/
 	
 	=============================================================================
 	
+
+{% endraw %}

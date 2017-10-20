@@ -6,6 +6,8 @@ permalink: /kb/135/Q135120/
 
 ## Q135120: Configuration Backup Tool for Backing Up the Registry
 
+{% raw %}
+
 	Article: Q135120
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/135/Q135120/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/075/Q75430/
 
 ## Q75430: PRB: Available Memory Decreases When Print Job Terminated
 
+{% raw %}
+
 	Article: Q75430
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -78,3 +80,5 @@ permalink: /kb/075/Q75430/
 	
 	=============================================================================
 	
+
+{% endraw %}

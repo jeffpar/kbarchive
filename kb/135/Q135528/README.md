@@ -6,6 +6,8 @@ permalink: /kb/135/Q135528/
 
 ## Q135528: Event ID 1999 Appears When Using Compaq Insight Manager
 
+{% raw %}
+
 	Article: Q135528
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -66,3 +68,5 @@ permalink: /kb/135/Q135528/
 	
 	=============================================================================
 	
+
+{% endraw %}

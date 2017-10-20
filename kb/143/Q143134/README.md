@@ -6,6 +6,8 @@ permalink: /kb/143/Q143134/
 
 ## Q143134: OEMSETUP.INF Modifications for Automated Windows NT Setup
 
+{% raw %}
+
 	Article: Q143134
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -226,10 +228,10 @@ permalink: /kb/143/Q143134/
 	     Ifstr(i) $(MachineType) == "MCA"
 	        set NewValueList =
 	
-	     { {BusType,$(NoTitle),$(!REG_VT_DWORD),$(BusTypeNum)},+
+	     {{BusType,$(NoTitle),$(!REG_VT_DWORD),$(BusTypeNum)},+
 	        {McaPosId,$(NoTitle),$(!REG_VT_DWORD),$(NETCARD_ID)},+
 	        {SlotNumber,$(NoTitle),$(!REG_VT_DWORD),$(SlotNum)},+
-	        {MediaType,$(NoTitle),$(!REG_VT_DWORD),1} }
+	        {MediaType,$(NoTitle),$(!REG_VT_DWORD),1}}
 	
 	     else
 	
@@ -239,14 +241,14 @@ permalink: /kb/143/Q143134/
 	        Shell "" DebugConfiguration "Before Writing Parameters"
 	        set NewValueList =
 	
-	     { {INTERRUPT,$(NoTitle),$(!REG_VT_DWORD),$(IRQValue)},+
+	     {{INTERRUPT,$(NoTitle),$(!REG_VT_DWORD),$(IRQValue)},+
 	
 	        {BusType,$(NoTitle),$(!REG_VT_DWORD),$(BusInterfaceType)},+
 	        {BusNumber,$(NoTitle),$(!REG_VT_DWORD),$(BusNumber)},+
 	        {MediaType,$(NoTitle),$(!REG_VT_DWORD),1},+
 	        {IoChannelReady,$(NoTitle),$(!REG_VT_DWORD),$(IOReadyValue)},+
 	        {Transceiver,$(NoTitle),$(!REG_VT_DWORD),$(TransceiverValue)},+
-	        {IOADDRESS,$(NoTitle),$(!REG_VT_DWORD),$(IOAddrValue)} }
+	        {IOADDRESS,$(NoTitle),$(!REG_VT_DWORD),$(IOAddrValue)}}
 	
 	     endif
 	
@@ -269,3 +271,5 @@ permalink: /kb/143/Q143134/
 	
 	=============================================================================
 	
+
+{% endraw %}

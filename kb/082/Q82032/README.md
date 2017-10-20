@@ -6,6 +6,8 @@ permalink: /kb/082/Q82032/
 
 ## Q82032: CD-ROM Drives Compatible with ProAudio Spectrum Card
 
+{% raw %}
+
 	Article: Q82032
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1.0,3.0,3.0a,3.1
@@ -75,3 +77,5 @@ permalink: /kb/082/Q82032/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/064/Q64512/
 
 ## Q64512: Loading a .TXT File from File Manager into Word 5.0
 
+{% raw %}
+
 	Article: Q64512
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -61,3 +63,5 @@ permalink: /kb/064/Q64512/
 	
 	=============================================================================
 	
+
+{% endraw %}

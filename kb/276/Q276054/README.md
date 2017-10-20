@@ -6,6 +6,8 @@ permalink: /kb/276/Q276054/
 
 ## Q276054: SMS: Unable to Remote Control Computers at Remote Site
 
+{% raw %}
+
 	Article: Q276054
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -68,3 +70,5 @@ permalink: /kb/276/Q276054/
 	
 	=============================================================================
 	
+
+{% endraw %}

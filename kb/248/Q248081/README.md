@@ -6,6 +6,8 @@ permalink: /kb/248/Q248081/
 
 ## Q248081: XWEB: Suddenly and Permanently Unable to Reach Inbox Using OWA
 
+{% raw %}
+
 	Article: Q248081
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -120,3 +122,5 @@ permalink: /kb/248/Q248081/
 	
 	=============================================================================
 	
+
+{% endraw %}

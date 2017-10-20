@@ -6,6 +6,8 @@ permalink: /kb/142/Q142926/
 
 ## Q142926: PRB: Handling Errors Caused by the MSRDC Update Method
 
+{% raw %}
+
 	Article: Q142926
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -147,3 +149,5 @@ permalink: /kb/142/Q142926/
 	
 	=============================================================================
 	
+
+{% endraw %}

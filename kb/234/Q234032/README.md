@@ -6,6 +6,8 @@ permalink: /kb/234/Q234032/
 
 ## Q234032: XCLN: Suggestions for Configuring OWA for 640 X 480 Resolutions
 
+{% raw %}
+
 	Article: Q234032
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -81,3 +83,5 @@ permalink: /kb/234/Q234032/
 	
 	=============================================================================
 	
+
+{% endraw %}

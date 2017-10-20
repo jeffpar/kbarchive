@@ -6,6 +6,8 @@ permalink: /kb/241/Q241586/
 
 ## Q241586: WD97: Bullets Not Vertically Centered in Word Document Object
 
+{% raw %}
+
 	Article: Q241586
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/241/Q241586/
 	
 	=============================================================================
 	
+
+{% endraw %}

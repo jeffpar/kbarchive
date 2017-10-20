@@ -6,6 +6,8 @@ permalink: /kb/169/Q169544/
 
 ## Q169544: WD97: ReadabilityStatistics Collection Causes Invalid Page Fault
 
+{% raw %}
+
 	Article: Q169544
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -139,3 +141,5 @@ permalink: /kb/169/Q169544/
 	
 	=============================================================================
 	
+
+{% endraw %}

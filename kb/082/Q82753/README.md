@@ -6,6 +6,8 @@ permalink: /kb/082/Q82753/
 
 ## Q82753: Printers with Limited TrueType Font Support
 
+{% raw %}
+
 	Article: Q82753
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -97,3 +99,5 @@ permalink: /kb/082/Q82753/
 	
 	=============================================================================
 	
+
+{% endraw %}

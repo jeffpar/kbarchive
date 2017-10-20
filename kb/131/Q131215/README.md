@@ -6,6 +6,8 @@ permalink: /kb/131/Q131215/
 
 ## Q131215: FIX: COPY STRUCTURE EXTENDED Ignores Long Field Names
 
+{% raw %}
+
 	Article: Q131215
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -67,3 +69,5 @@ permalink: /kb/131/Q131215/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/264/Q264393/
 
 ## Q264393: PRB: Type Mismatch and Floating Point Error with CoolBar Control
 
+{% raw %}
+
 	Article: Q264393
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -74,3 +76,5 @@ permalink: /kb/264/Q264393/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136973/
 
 ## Q136973: PPT7: Sorry, PowerPoint Could Not Start or Locate 'PPT Tools'
 
+{% raw %}
+
 	Article: Q136973
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -174,3 +176,5 @@ permalink: /kb/136/Q136973/
 	
 	=============================================================================
 	
+
+{% endraw %}

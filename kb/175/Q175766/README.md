@@ -6,6 +6,8 @@ permalink: /kb/175/Q175766/
 
 ## Q175766: FIX: WAIT WINDOW NOWAIT Problem with Top-Level Forms
 
+{% raw %}
+
 	Article: Q175766
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -123,3 +125,5 @@ permalink: /kb/175/Q175766/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82163/
 
 ## Q82163: Differences Between the Mini- and Full-OLE Servers
 
+{% raw %}
+
 	Article: Q82163
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/082/Q82163/
 	
 	=============================================================================
 	
+
+{% endraw %}

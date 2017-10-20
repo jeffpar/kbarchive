@@ -6,6 +6,8 @@ permalink: /kb/238/Q238045/
 
 ## Q238045: Encarta Reference Suite 2000: Setup Stops Responding
 
+{% raw %}
+
 	Article: Q238045
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -85,3 +87,5 @@ permalink: /kb/238/Q238045/
 	
 	=============================================================================
 	
+
+{% endraw %}

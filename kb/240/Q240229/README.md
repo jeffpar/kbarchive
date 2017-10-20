@@ -6,6 +6,8 @@ permalink: /kb/240/Q240229/
 
 ## Q240229: PRB: Treeview Control NodeClick Event Not Raised
 
+{% raw %}
+
 	Article: Q240229
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0,6.0 SP3
@@ -93,3 +95,5 @@ permalink: /kb/240/Q240229/
 	
 	=============================================================================
 	
+
+{% endraw %}

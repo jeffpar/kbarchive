@@ -6,6 +6,8 @@ permalink: /kb/161/Q161358/
 
 ## Q161358: PRB: Cannot Add Rows to Updateable Outer Join
 
+{% raw %}
+
 	Article: Q161358
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/161/Q161358/
 	
 	=============================================================================
 	
+
+{% endraw %}

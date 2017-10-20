@@ -6,6 +6,8 @@ permalink: /kb/320/Q320862/
 
 ## Q320862: Err msg: &quot;Inbox not Activated&quot; error for MSN Explorer with Micro
 
+{% raw %}
+
 	Article: Q320862
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -51,3 +53,5 @@ permalink: /kb/320/Q320862/
 	
 	=============================================================================
 	
+
+{% endraw %}

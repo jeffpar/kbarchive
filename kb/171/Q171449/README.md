@@ -6,6 +6,8 @@ permalink: /kb/171/Q171449/
 
 ## Q171449: WD97: Spell Checking HTML File with BGSOUND Changes View
 
+{% raw %}
+
 	Article: Q171449
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -85,3 +87,5 @@ permalink: /kb/171/Q171449/
 	
 	=============================================================================
 	
+
+{% endraw %}

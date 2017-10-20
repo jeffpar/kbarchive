@@ -6,6 +6,8 @@ permalink: /kb/160/Q160160/
 
 ## Q160160: Monster Truck Madness: Joystick Calibration with NT 4.0
 
+{% raw %}
+
 	Article: Q160160
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/160/Q160160/
 	
 	=============================================================================
 	
+
+{% endraw %}

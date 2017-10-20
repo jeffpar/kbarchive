@@ -6,6 +6,8 @@ permalink: /kb/219/Q219885/
 
 ## Q219885: How to Enable the Quick Reboot Feature for Windows NT 4.0 SP4
 
+{% raw %}
+
 	Article: Q219885
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -71,3 +73,5 @@ permalink: /kb/219/Q219885/
 	
 	=============================================================================
 	
+
+{% endraw %}

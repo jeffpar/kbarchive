@@ -6,6 +6,8 @@ permalink: /kb/092/Q92399/
 
 ## Q92399: Installing Locator Service with LAN Man 2.1 3Com Upgrade
 
+{% raw %}
+
 	Article: Q92399
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/092/Q92399/
 	
 	=============================================================================
 	
+
+{% endraw %}

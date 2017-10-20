@@ -6,6 +6,8 @@ permalink: /kb/072/Q72221/
 
 ## Q72221: Windows Resource Kit Setup Target Directory
 
+{% raw %}
+
 	Article: Q72221
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/072/Q72221/
 	
 	=============================================================================
 	
+
+{% endraw %}

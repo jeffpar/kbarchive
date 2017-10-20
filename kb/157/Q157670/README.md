@@ -6,6 +6,8 @@ permalink: /kb/157/Q157670/
 
 ## Q157670: INFO: STL Sample for the Pair Logical Operator Functions
 
+{% raw %}
+
 	Article: Q157670
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -216,3 +218,5 @@ permalink: /kb/157/Q157670/
 	
 	=============================================================================
 	
+
+{% endraw %}

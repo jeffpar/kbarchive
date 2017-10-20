@@ -6,6 +6,8 @@ permalink: /kb/271/Q271203/
 
 ## Q271203: XADM: Accounts  Moved with Clone Principal Not Resolved
 
+{% raw %}
+
 	Article: Q271203
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -80,3 +82,5 @@ permalink: /kb/271/Q271203/
 	
 	=============================================================================
 	
+
+{% endraw %}

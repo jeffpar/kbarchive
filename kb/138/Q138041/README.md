@@ -6,6 +6,8 @@ permalink: /kb/138/Q138041/
 
 ## Q138041: 1ToMany.exe Form for One-to-Many Order Entry Application
 
+{% raw %}
+
 	Article: Q138041
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -66,3 +68,5 @@ permalink: /kb/138/Q138041/
 	
 	=============================================================================
 	
+
+{% endraw %}

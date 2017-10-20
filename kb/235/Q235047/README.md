@@ -6,6 +6,8 @@ permalink: /kb/235/Q235047/
 
 ## Q235047: Quick Course in Microsoft FrontPage 2000 Comments and Correction
 
+{% raw %}
+
 	Article: Q235047
 	Product(s): Microsoft Press
 	Version(s): 
@@ -152,3 +154,5 @@ permalink: /kb/235/Q235047/
 	
 	=============================================================================
 	
+
+{% endraw %}

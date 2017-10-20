@@ -6,6 +6,8 @@ permalink: /kb/180/Q180391/
 
 ## Q180391: PRB: ScrollBars Appear Incorrectly in Run-Mode
 
+{% raw %}
+
 	Article: Q180391
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -74,3 +76,5 @@ permalink: /kb/180/Q180391/
 	
 	=============================================================================
 	
+
+{% endraw %}

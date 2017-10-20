@@ -6,6 +6,8 @@ permalink: /kb/281/Q281596/
 
 ## Q281596: Fighter Ace II: No Training Demos Available
 
+{% raw %}
+
 	Article: Q281596
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -40,3 +42,5 @@ permalink: /kb/281/Q281596/
 	
 	=============================================================================
 	
+
+{% endraw %}

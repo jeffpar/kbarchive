@@ -6,6 +6,8 @@ permalink: /kb/114/Q114791/
 
 ## Q114791: PRB: SET COLOR TO Results in Differing Shades of Gray
 
+{% raw %}
+
 	Article: Q114791
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -88,3 +90,5 @@ permalink: /kb/114/Q114791/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216156/
 
 ## Q216156: BUG: &quot;Invalid Line In Setup Information File&quot; Installing VB6 App
 
+{% raw %}
+
 	Article: Q216156
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -100,3 +102,5 @@ permalink: /kb/216/Q216156/
 	
 	=============================================================================
 	
+
+{% endraw %}

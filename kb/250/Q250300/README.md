@@ -6,6 +6,8 @@ permalink: /kb/250/Q250300/
 
 ## Q250300: PRB: FoxPro DIR Command Returns Incorrect Year for Years &gt; 1999
 
+{% raw %}
+
 	Article: Q250300
 	Product(s): Microsoft FoxPro
 	Version(s): 2.0,2.5,2.5a,2.5b,2.5c,2.6,2.6a,3.0,3.0b,5.0,5.0a
@@ -400,3 +402,5 @@ permalink: /kb/250/Q250300/
 	
 	=============================================================================
 	
+
+{% endraw %}

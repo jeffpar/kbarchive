@@ -6,6 +6,8 @@ permalink: /kb/266/Q266743/
 
 ## Q266743: PostScript Printer Does Not Print Duplex
 
+{% raw %}
+
 	Article: Q266743
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -112,3 +114,5 @@ permalink: /kb/266/Q266743/
 	
 	=============================================================================
 	
+
+{% endraw %}

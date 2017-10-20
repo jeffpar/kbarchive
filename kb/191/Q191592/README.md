@@ -6,6 +6,8 @@ permalink: /kb/191/Q191592/
 
 ## Q191592: BUG: List Box Shrinks on No Height When Displaying Large Fonts
 
+{% raw %}
+
 	Article: Q191592
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -109,3 +111,5 @@ permalink: /kb/191/Q191592/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185245/
 
 ## Q185245: EnableSGC Does Not Always Provide for 1024-bit Keys
 
+{% raw %}
+
 	Article: Q185245
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/185/Q185245/
 	
 	=============================================================================
 	
+
+{% endraw %}

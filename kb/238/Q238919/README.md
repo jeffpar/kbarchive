@@ -6,6 +6,8 @@ permalink: /kb/238/Q238919/
 
 ## Q238919: SMS: Distributing SMS Network Monitor
 
+{% raw %}
+
 	Article: Q238919
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP1
@@ -60,3 +62,5 @@ permalink: /kb/238/Q238919/
 	
 	=============================================================================
 	
+
+{% endraw %}

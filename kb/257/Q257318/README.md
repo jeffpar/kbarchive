@@ -6,6 +6,8 @@ permalink: /kb/257/Q257318/
 
 ## Q257318: SMS: Advertisement .ofr Files Are Not Deleted on Secondary Site
 
+{% raw %}
+
 	Article: Q257318
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -70,3 +72,5 @@ permalink: /kb/257/Q257318/
 	
 	=============================================================================
 	
+
+{% endraw %}

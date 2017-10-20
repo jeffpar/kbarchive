@@ -6,6 +6,8 @@ permalink: /kb/191/Q191626/
 
 ## Q191626: FIX: CComVariant &gt; and &lt; Operators Cause LNK2001 Errors
 
+{% raw %}
+
 	Article: Q191626
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -118,3 +120,5 @@ permalink: /kb/191/Q191626/
 	
 	=============================================================================
 	
+
+{% endraw %}

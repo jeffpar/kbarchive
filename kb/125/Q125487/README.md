@@ -6,6 +6,8 @@ permalink: /kb/125/Q125487/
 
 ## Q125487: SMS Administrator Unable To Retrieve Machine List
 
+{% raw %}
+
 	Article: Q125487
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -75,3 +77,5 @@ permalink: /kb/125/Q125487/
 	
 	=============================================================================
 	
+
+{% endraw %}

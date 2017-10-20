@@ -6,6 +6,8 @@ permalink: /kb/185/Q185998/
 
 ## Q185998: SMS: What Is SMS and What Capabilities Does It Provide?
 
+{% raw %}
+
 	Article: Q185998
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -58,3 +60,5 @@ permalink: /kb/185/Q185998/
 	
 	=============================================================================
 	
+
+{% endraw %}

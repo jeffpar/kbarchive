@@ -6,6 +6,8 @@ permalink: /kb/271/Q271506/
 
 ## Q271506: XFOR: Prompted to Add  Address Space When Changing Restrictions
 
+{% raw %}
+
 	Article: Q271506
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -69,3 +71,5 @@ permalink: /kb/271/Q271506/
 	
 	=============================================================================
 	
+
+{% endraw %}

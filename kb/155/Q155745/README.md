@@ -6,6 +6,8 @@ permalink: /kb/155/Q155745/
 
 ## Q155745: Cannot Read Media.ini
 
+{% raw %}
+
 	Article: Q155745
 	Product(s): The Microsoft Network
 	Version(s): 1.3,2.0,2.5,2.51,2.52,2.6
@@ -145,3 +147,5 @@ permalink: /kb/155/Q155745/
 	
 	=============================================================================
 	
+
+{% endraw %}

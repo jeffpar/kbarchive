@@ -6,6 +6,8 @@ permalink: /kb/256/Q256294/
 
 ## Q256294: XADM: Server Delegate Rule Is Disabled by External E-Mail
 
+{% raw %}
+
 	Article: Q256294
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -81,3 +83,5 @@ permalink: /kb/256/Q256294/
 	
 	=============================================================================
 	
+
+{% endraw %}

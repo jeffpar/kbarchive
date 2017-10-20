@@ -6,6 +6,8 @@ permalink: /kb/263/Q263512/
 
 ## Q263512: Pressing CTRL+ALT+DELETE During Shutdown Can Halt Shutdown
 
+{% raw %}
+
 	Article: Q263512
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/263/Q263512/
 	
 	=============================================================================
 	
+
+{% endraw %}

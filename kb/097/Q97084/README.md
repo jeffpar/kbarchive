@@ -6,6 +6,8 @@ permalink: /kb/097/Q97084/
 
 ## Q97084: PROFS: Gateway Unable to Mail to HP Desk System
 
+{% raw %}
+
 	Article: Q97084
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.1,3.2,3.3
@@ -66,3 +68,5 @@ permalink: /kb/097/Q97084/
 	
 	=============================================================================
 	
+
+{% endraw %}

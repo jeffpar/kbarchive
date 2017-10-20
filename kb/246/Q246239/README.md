@@ -6,6 +6,8 @@ permalink: /kb/246/Q246239/
 
 ## Q246239: XWEB: Unable to Reply to or Forward a Large Message in OWA
 
+{% raw %}
+
 	Article: Q246239
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -72,3 +74,5 @@ permalink: /kb/246/Q246239/
 	
 	=============================================================================
 	
+
+{% endraw %}

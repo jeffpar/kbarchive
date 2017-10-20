@@ -6,6 +6,8 @@ permalink: /kb/234/Q234831/
 
 ## Q234831: MOD2000: Deleting VSSODE Module Damages VSS Control Connection
 
+{% raw %}
+
 	Article: Q234831
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/234/Q234831/
 	
 	=============================================================================
 	
+
+{% endraw %}

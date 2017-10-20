@@ -6,6 +6,8 @@ permalink: /kb/201/Q201506/
 
 ## Q201506: XFOR: Alarm Time Wrong After French Notes Migration
 
+{% raw %}
+
 	Article: Q201506
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -51,3 +53,5 @@ permalink: /kb/201/Q201506/
 	
 	=============================================================================
 	
+
+{% endraw %}

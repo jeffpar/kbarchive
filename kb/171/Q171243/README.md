@@ -6,6 +6,8 @@ permalink: /kb/171/Q171243/
 
 ## Q171243: PPT: Creating 35 mm Slides for Slide Imaging
 
+{% raw %}
+
 	Article: Q171243
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:7.0
@@ -78,3 +80,5 @@ permalink: /kb/171/Q171243/
 	
 	=============================================================================
 	
+
+{% endraw %}

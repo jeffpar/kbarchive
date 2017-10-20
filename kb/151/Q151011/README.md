@@ -6,6 +6,8 @@ permalink: /kb/151/Q151011/
 
 ## Q151011: Pregnancy: Text, &quot;Click here...&quot; Prints at Bottom of Articles
 
+{% raw %}
+
 	Article: Q151011
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -63,3 +65,5 @@ permalink: /kb/151/Q151011/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/222/Q222159/
 
 ## Q222159: Symbolic Link Case Sensitivity Exploit Bypasses System Security
 
+{% raw %}
+
 	Article: Q222159
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -85,3 +87,5 @@ permalink: /kb/222/Q222159/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234622/
 
 ## Q234622: PRB: VC++ 6.0 Setup Does Not Copy the CRT Make Files
 
+{% raw %}
+
 	Article: Q234622
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -69,3 +71,5 @@ permalink: /kb/234/Q234622/
 	
 	=============================================================================
 	
+
+{% endraw %}

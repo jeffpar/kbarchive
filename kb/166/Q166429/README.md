@@ -6,6 +6,8 @@ permalink: /kb/166/Q166429/
 
 ## Q166429: PCNTW: How to Set Appropriate System Locale for Applications
 
+{% raw %}
+
 	Article: Q166429
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -66,3 +68,5 @@ permalink: /kb/166/Q166429/
 	
 	=============================================================================
 	
+
+{% endraw %}

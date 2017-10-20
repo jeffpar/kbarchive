@@ -6,6 +6,8 @@ permalink: /kb/081/Q81710/
 
 ## Q81710: 1 MB COMPAQ and AT&amp;T Machines Can't Run HIMEM.SYS
 
+{% raw %}
+
 	Article: Q81710
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -77,3 +79,5 @@ permalink: /kb/081/Q81710/
 	
 	=============================================================================
 	
+
+{% endraw %}

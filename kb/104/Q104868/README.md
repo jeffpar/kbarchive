@@ -6,6 +6,8 @@ permalink: /kb/104/Q104868/
 
 ## Q104868: Backup Err Msg: Invalid Volume Information Block Detected
 
+{% raw %}
+
 	Article: Q104868
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -61,3 +63,5 @@ permalink: /kb/104/Q104868/
 	
 	=============================================================================
 	
+
+{% endraw %}

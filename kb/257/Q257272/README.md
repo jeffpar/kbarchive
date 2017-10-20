@@ -6,6 +6,8 @@ permalink: /kb/257/Q257272/
 
 ## Q257272: &quot;Auto Select&quot; Property Set to Letter Instead of A4
 
+{% raw %}
+
 	Article: Q257272
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -82,3 +84,5 @@ permalink: /kb/257/Q257272/
 	
 	=============================================================================
 	
+
+{% endraw %}

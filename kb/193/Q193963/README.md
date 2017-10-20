@@ -6,6 +6,8 @@ permalink: /kb/193/Q193963/
 
 ## Q193963: Conversion Errors Result when Return Value is Repositioned
 
+{% raw %}
+
 	Article: Q193963
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0 SP1
@@ -87,3 +89,5 @@ permalink: /kb/193/Q193963/
 	
 	=============================================================================
 	
+
+{% endraw %}

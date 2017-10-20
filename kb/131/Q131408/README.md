@@ -6,6 +6,8 @@ permalink: /kb/131/Q131408/
 
 ## Q131408: Object Variables Return &quot;(Object)&quot; in Debug Window
 
+{% raw %}
+
 	Article: Q131408
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -54,3 +56,5 @@ permalink: /kb/131/Q131408/
 	
 	=============================================================================
 	
+
+{% endraw %}

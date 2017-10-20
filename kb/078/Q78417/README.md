@@ -6,6 +6,8 @@ permalink: /kb/078/Q78417/
 
 ## Q78417: Relocating Help Files in Windows with Multimedia Extensions
 
+{% raw %}
+
 	Article: Q78417
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.0
@@ -61,3 +63,5 @@ permalink: /kb/078/Q78417/
 	
 	=============================================================================
 	
+
+{% endraw %}

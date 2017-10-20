@@ -6,6 +6,8 @@ permalink: /kb/268/Q268771/
 
 ## Q268771: FIX: DOEVENTS Command Runs Slowly
 
+{% raw %}
+
 	Article: Q268771
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -113,3 +115,5 @@ permalink: /kb/268/Q268771/
 	
 	=============================================================================
 	
+
+{% endraw %}

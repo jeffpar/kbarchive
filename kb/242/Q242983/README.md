@@ -6,6 +6,8 @@ permalink: /kb/242/Q242983/
 
 ## Q242983: Error Message: Stop 0x0000001E in Win32k!GreRealizePalette()
 
+{% raw %}
+
 	Article: Q242983
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -68,3 +70,5 @@ permalink: /kb/242/Q242983/
 	
 	=============================================================================
 	
+
+{% endraw %}

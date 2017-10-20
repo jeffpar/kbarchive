@@ -6,6 +6,8 @@ permalink: /kb/153/Q153194/
 
 ## Q153194: WD97: Extended Characters Corrupt After Editing MacWord Document
 
+{% raw %}
+
 	Article: Q153194
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -62,3 +64,5 @@ permalink: /kb/153/Q153194/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159290/
 
 ## Q159290: XFOR: Data Truncated in SMTP Protocol Log
 
+{% raw %}
+
 	Article: Q159290
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/159/Q159290/
 	
 	=============================================================================
 	
+
+{% endraw %}

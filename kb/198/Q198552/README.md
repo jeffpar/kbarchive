@@ -6,6 +6,8 @@ permalink: /kb/198/Q198552/
 
 ## Q198552: Windows NT Load Balancing Service Cluster Is Not Load Balancing
 
+{% raw %}
+
 	Article: Q198552
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -50,3 +52,5 @@ permalink: /kb/198/Q198552/
 	
 	=============================================================================
 	
+
+{% endraw %}

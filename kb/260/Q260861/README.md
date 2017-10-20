@@ -6,6 +6,8 @@ permalink: /kb/260/Q260861/
 
 ## Q260861: StarLancer: Hangs After You Accept End User License Agreement
 
+{% raw %}
+
 	Article: Q260861
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -81,3 +83,5 @@ permalink: /kb/260/Q260861/
 	
 	=============================================================================
 	
+
+{% endraw %}

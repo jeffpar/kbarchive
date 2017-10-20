@@ -6,6 +6,8 @@ permalink: /kb/252/Q252303/
 
 ## Q252303: IDC Script Sample with Multiple SQL Statements
 
+{% raw %}
+
 	Article: Q252303
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0
@@ -81,3 +83,5 @@ permalink: /kb/252/Q252303/
 	
 	=============================================================================
 	
+
+{% endraw %}

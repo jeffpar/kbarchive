@@ -6,6 +6,8 @@ permalink: /kb/155/Q155047/
 
 ## Q155047: PRB: A2041 Initializing a Large STRUCT
 
+{% raw %}
+
 	Article: Q155047
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.1,6.11
@@ -262,3 +264,5 @@ permalink: /kb/155/Q155047/
 	
 	=============================================================================
 	
+
+{% endraw %}

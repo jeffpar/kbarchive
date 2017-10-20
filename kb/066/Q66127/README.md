@@ -6,6 +6,8 @@ permalink: /kb/066/Q66127/
 
 ## Q66127: Using _psp for Pointer Checking
 
+{% raw %}
+
 	Article: Q66127
 	Product(s): See article
 	Version(s): 6.00
@@ -76,3 +78,5 @@ permalink: /kb/066/Q66127/
 	    temp_ptr= malloc (size);
 	  return temp_ptr;
 	  }
+
+{% endraw %}

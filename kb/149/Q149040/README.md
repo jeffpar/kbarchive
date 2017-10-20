@@ -6,6 +6,8 @@ permalink: /kb/149/Q149040/
 
 ## Q149040: BUG: 3426 and 3020 - Different Error Number With 16-bit/32-bit
 
+{% raw %}
+
 	Article: Q149040
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -92,3 +94,5 @@ permalink: /kb/149/Q149040/
 	
 	=============================================================================
 	
+
+{% endraw %}

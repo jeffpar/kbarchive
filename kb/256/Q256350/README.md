@@ -6,6 +6,8 @@ permalink: /kb/256/Q256350/
 
 ## Q256350: XCON: MTA Event 246 w. PR_CONTENT_CORRELATOR More Than 2 Bytes
 
+{% raw %}
+
 	Article: Q256350
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -77,3 +79,5 @@ permalink: /kb/256/Q256350/
 	
 	=============================================================================
 	
+
+{% endraw %}

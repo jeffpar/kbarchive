@@ -6,6 +6,8 @@ permalink: /kb/263/Q263359/
 
 ## Q263359: SMS: When Deleting an Ad You Receive &quot;No Status&quot; Error Message
 
+{% raw %}
+
 	Article: Q263359
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -68,3 +70,5 @@ permalink: /kb/263/Q263359/
 	
 	=============================================================================
 	
+
+{% endraw %}

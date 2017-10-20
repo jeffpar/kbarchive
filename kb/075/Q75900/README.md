@@ -6,6 +6,8 @@ permalink: /kb/075/Q75900/
 
 ## Q75900: Second Hard Disk Inaccessible Using SMARTDrive in Enhanced
 
+{% raw %}
+
 	Article: Q75900
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -61,3 +63,5 @@ permalink: /kb/075/Q75900/
 	
 	=============================================================================
 	
+
+{% endraw %}

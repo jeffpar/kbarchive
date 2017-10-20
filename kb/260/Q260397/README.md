@@ -6,6 +6,8 @@ permalink: /kb/260/Q260397/
 
 ## Q260397: SMS: Program Does Not Run When System.lkp Is Busy
 
+{% raw %}
+
 	Article: Q260397
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -71,3 +73,5 @@ permalink: /kb/260/Q260397/
 	
 	=============================================================================
 	
+
+{% endraw %}

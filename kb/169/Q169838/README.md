@@ -6,6 +6,8 @@ permalink: /kb/169/Q169838/
 
 ## Q169838: DHCP Client Experiences Delays During Name Resolution
 
+{% raw %}
+
 	Article: Q169838
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -110,3 +112,5 @@ permalink: /kb/169/Q169838/
 	
 	=============================================================================
 	
+
+{% endraw %}

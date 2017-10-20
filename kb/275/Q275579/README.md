@@ -6,6 +6,8 @@ permalink: /kb/275/Q275579/
 
 ## Q275579: Combat Flight Simulator 2: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q275579
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -87,3 +89,5 @@ permalink: /kb/275/Q275579/
 	
 	=============================================================================
 	
+
+{% endraw %}

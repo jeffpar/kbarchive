@@ -6,6 +6,8 @@ permalink: /kb/270/Q270762/
 
 ## Q270762: ELL FR &amp; SP: Setup Takes Longer Than You Expect
 
+{% raw %}
+
 	Article: Q270762
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/270/Q270762/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112145/
 
 ## Q112145: Err Msg: Performance Monitor: Illegal to Append Data From...
 
+{% raw %}
+
 	Article: Q112145
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -48,3 +50,5 @@ permalink: /kb/112/Q112145/
 	
 	=============================================================================
 	
+
+{% endraw %}

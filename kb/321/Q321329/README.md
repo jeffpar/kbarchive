@@ -6,6 +6,8 @@ permalink: /kb/321/Q321329/
 
 ## Q321329: HOWTO: Find Jet Database .mdb File Format Version
 
+{% raw %}
+
 	Article: Q321329
 	Product(s): Microsoft C Compiler
 	Version(s): 2.7,6.0
@@ -94,3 +96,5 @@ permalink: /kb/321/Q321329/
 	
 	=============================================================================
 	
+
+{% endraw %}

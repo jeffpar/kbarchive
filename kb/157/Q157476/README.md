@@ -6,6 +6,8 @@ permalink: /kb/157/Q157476/
 
 ## Q157476: WD97: Equation Editor Objects Not Visible In Converted Document
 
+{% raw %}
+
 	Article: Q157476
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -56,3 +58,5 @@ permalink: /kb/157/Q157476/
 	
 	=============================================================================
 	
+
+{% endraw %}

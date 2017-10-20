@@ -6,6 +6,8 @@ permalink: /kb/186/Q186629/
 
 ## Q186629: INFO: Terminal Server Unattended Installation
 
+{% raw %}
+
 	Article: Q186629
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -144,3 +146,5 @@ permalink: /kb/186/Q186629/
 	
 	=============================================================================
 	
+
+{% endraw %}

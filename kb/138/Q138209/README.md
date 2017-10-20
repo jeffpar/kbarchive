@@ -6,6 +6,8 @@ permalink: /kb/138/Q138209/
 
 ## Q138209: Encarta 1996: Contents of the Patch Fix Text File for MSN, WWW
 
+{% raw %}
+
 	Article: Q138209
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -95,3 +97,5 @@ permalink: /kb/138/Q138209/
 	
 	=============================================================================
 	
+
+{% endraw %}

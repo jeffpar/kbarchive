@@ -6,6 +6,8 @@ permalink: /kb/283/Q283679/
 
 ## Q283679: Information on the IIS File Transmission Protocol (FTP) Service
 
+{% raw %}
+
 	Article: Q283679
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0
@@ -277,3 +279,5 @@ permalink: /kb/283/Q283679/
 	
 	=============================================================================
 	
+
+{% endraw %}

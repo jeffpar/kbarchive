@@ -6,6 +6,8 @@ permalink: /kb/165/Q165827/
 
 ## Q165827: UT97: &quot;Overflow&quot; or &quot;Division by Zero&quot; Error Upsizing Table
 
+{% raw %}
+
 	Article: Q165827
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 97
@@ -180,3 +182,5 @@ permalink: /kb/165/Q165827/
 	
 	=============================================================================
 	
+
+{% endraw %}

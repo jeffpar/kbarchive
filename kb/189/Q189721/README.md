@@ -6,6 +6,8 @@ permalink: /kb/189/Q189721/
 
 ## Q189721: BUG: ZOOM WINDOW MIN Does Not Minimize User-Defined Window
 
+{% raw %}
+
 	Article: Q189721
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -78,3 +80,5 @@ permalink: /kb/189/Q189721/
 	
 	=============================================================================
 	
+
+{% endraw %}

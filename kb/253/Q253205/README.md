@@ -6,6 +6,8 @@ permalink: /kb/253/Q253205/
 
 ## Q253205: Long Event to Trap Translator Description Causes Error Message
 
+{% raw %}
+
 	Article: Q253205
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -70,3 +72,5 @@ permalink: /kb/253/Q253205/
 	
 	=============================================================================
 	
+
+{% endraw %}

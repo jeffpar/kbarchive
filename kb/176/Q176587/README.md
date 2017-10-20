@@ -6,6 +6,8 @@ permalink: /kb/176/Q176587/
 
 ## Q176587: XWEB: Active Server Components Not Compatible with IIS 4.0
 
+{% raw %}
+
 	Article: Q176587
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -91,3 +93,5 @@ permalink: /kb/176/Q176587/
 	
 	=============================================================================
 	
+
+{% endraw %}

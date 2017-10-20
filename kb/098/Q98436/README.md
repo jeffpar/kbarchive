@@ -6,6 +6,8 @@ permalink: /kb/098/Q98436/
 
 ## Q98436: How to Create a Default Text Button on an Input Screen
 
+{% raw %}
+
 	Article: Q98436
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -80,3 +82,5 @@ permalink: /kb/098/Q98436/
 	
 	=============================================================================
 	
+
+{% endraw %}

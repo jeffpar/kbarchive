@@ -6,6 +6,8 @@ permalink: /kb/238/Q238285/
 
 ## Q238285: XFOR: GroupWise Migration Fails with Event ID 4012
 
+{% raw %}
+
 	Article: Q238285
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -79,3 +81,5 @@ permalink: /kb/238/Q238285/
 	
 	=============================================================================
 	
+
+{% endraw %}

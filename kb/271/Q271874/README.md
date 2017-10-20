@@ -6,6 +6,8 @@ permalink: /kb/271/Q271874/
 
 ## Q271874: Global Optimizations Generate Incorrect Code When Using unions
 
+{% raw %}
+
 	Article: Q271874
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -85,3 +87,5 @@ permalink: /kb/271/Q271874/
 	
 	=============================================================================
 	
+
+{% endraw %}

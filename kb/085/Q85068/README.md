@@ -6,6 +6,8 @@ permalink: /kb/085/Q85068/
 
 ## Q85068: Displaying Data for Debugging in MASM
 
+{% raw %}
+
 	Article: Q85068
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.x,6.0,6.0a,6.0b
@@ -153,3 +155,5 @@ permalink: /kb/085/Q85068/
 	
 	=============================================================================
 	
+
+{% endraw %}

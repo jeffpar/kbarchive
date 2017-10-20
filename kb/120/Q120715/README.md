@@ -6,6 +6,8 @@ permalink: /kb/120/Q120715/
 
 ## Q120715: Problems Associated with the Servers Group
 
+{% raw %}
+
 	Article: Q120715
 	Product(s): Microsoft Windows NT
 	Version(s): 1.1,2.x,3.5
@@ -130,3 +132,5 @@ permalink: /kb/120/Q120715/
 	
 	=============================================================================
 	
+
+{% endraw %}

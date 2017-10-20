@@ -6,6 +6,8 @@ permalink: /kb/269/Q269387/
 
 ## Q269387: HOWTO: Obtain a GUID in Visual FoxPro
 
+{% raw %}
+
 	Article: Q269387
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -125,3 +127,5 @@ permalink: /kb/269/Q269387/
 	
 	=============================================================================
 	
+
+{% endraw %}

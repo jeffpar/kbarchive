@@ -6,6 +6,8 @@ permalink: /kb/127/Q127732/
 
 ## Q127732: SMTP: Configuring LAN Manager 2.2c MS-DOS Client w/ TCP/IP
 
+{% raw %}
+
 	Article: Q127732
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -150,3 +152,5 @@ permalink: /kb/127/Q127732/
 	
 	=============================================================================
 	
+
+{% endraw %}

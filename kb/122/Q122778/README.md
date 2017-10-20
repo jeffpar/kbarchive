@@ -6,6 +6,8 @@ permalink: /kb/122/Q122778/
 
 ## Q122778: CONN: Connection Name Utility (CNU) 3.4 Update
 
+{% raw %}
+
 	Article: Q122778
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -156,3 +158,5 @@ permalink: /kb/122/Q122778/
 	
 	=============================================================================
 	
+
+{% endraw %}

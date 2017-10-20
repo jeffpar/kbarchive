@@ -6,6 +6,8 @@ permalink: /kb/157/Q157094/
 
 ## Q157094: WD97: Using StartConversionWizard to Convert Multiple Documents
 
+{% raw %}
+
 	Article: Q157094
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -100,3 +102,5 @@ permalink: /kb/157/Q157094/
 	
 	=============================================================================
 	
+
+{% endraw %}

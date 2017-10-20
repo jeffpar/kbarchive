@@ -6,6 +6,8 @@ permalink: /kb/159/Q159071/
 
 ## Q159071: NTFS Does Not Prevent a File Deletion During Rename
 
+{% raw %}
+
 	Article: Q159071
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/159/Q159071/
 	
 	=============================================================================
 	
+
+{% endraw %}

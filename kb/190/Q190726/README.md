@@ -6,6 +6,8 @@ permalink: /kb/190/Q190726/
 
 ## Q190726: FIX: Visual C++ 5.0 #import Causes Errors with ADO Version 2.0
 
+{% raw %}
+
 	Article: Q190726
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.0; winnt:5.0
@@ -174,3 +176,5 @@ permalink: /kb/190/Q190726/
 	
 	=============================================================================
 	
+
+{% endraw %}

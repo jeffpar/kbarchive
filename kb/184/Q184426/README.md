@@ -6,6 +6,8 @@ permalink: /kb/184/Q184426/
 
 ## Q184426: Internet Information Server Training Comments and Corrections
 
+{% raw %}
+
 	Article: Q184426
 	Product(s): Microsoft Press
 	Version(s): 
@@ -735,3 +737,5 @@ permalink: /kb/184/Q184426/
 	
 	=============================================================================
 	
+
+{% endraw %}

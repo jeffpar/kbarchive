@@ -6,6 +6,8 @@ permalink: /kb/152/Q152396/
 
 ## Q152396: How To Determine if QuickDraw GX Is Loaded Using SYS Function
 
+{% raw %}
+
 	Article: Q152396
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -86,3 +88,5 @@ permalink: /kb/152/Q152396/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234676/
 
 ## Q234676: WD97: Word Document Is Saved Locally When Saved in IE
 
+{% raw %}
+
 	Article: Q234676
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/234/Q234676/
 	
 	=============================================================================
 	
+
+{% endraw %}

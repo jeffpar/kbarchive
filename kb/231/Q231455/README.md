@@ -6,6 +6,8 @@ permalink: /kb/231/Q231455/
 
 ## Q231455: Internet Explorer 5 At a Glance Corrections and Comments
 
+{% raw %}
+
 	Article: Q231455
 	Product(s): Microsoft Press
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/231/Q231455/
 	
 	=============================================================================
 	
+
+{% endraw %}

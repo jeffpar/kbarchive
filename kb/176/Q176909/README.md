@@ -6,6 +6,8 @@ permalink: /kb/176/Q176909/
 
 ## Q176909: HOWTO: Move a VSS Database or Project to New Location
 
+{% raw %}
+
 	Article: Q176909
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0,6.0
@@ -220,3 +222,5 @@ permalink: /kb/176/Q176909/
 	
 	=============================================================================
 	
+
+{% endraw %}

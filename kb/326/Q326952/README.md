@@ -6,6 +6,8 @@ permalink: /kb/326/Q326952/
 
 ## Q326952: XADM: &quot;Permission Problem&quot; Err Msg with Directory Replication
 
+{% raw %}
+
 	Article: Q326952
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -143,3 +145,5 @@ permalink: /kb/326/Q326952/
 	
 	=============================================================================
 	
+
+{% endraw %}

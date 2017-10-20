@@ -6,6 +6,8 @@ permalink: /kb/207/Q207419/
 
 ## Q207419: SMS: Accessibility Keys for MMC and Toolbar Buttons Not Working
 
+{% raw %}
+
 	Article: Q207419
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -57,3 +59,5 @@ permalink: /kb/207/Q207419/
 	
 	=============================================================================
 	
+
+{% endraw %}

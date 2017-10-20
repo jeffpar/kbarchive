@@ -6,6 +6,8 @@ permalink: /kb/044/Q44389/
 
 ## Q44389: Only Certain C Library Functions Have an Intrinsic Form
 
+{% raw %}
+
 	Article: Q44389
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -25,3 +27,5 @@ permalink: /kb/044/Q44389/
 	having intrinsic forms, refer to the "Microsoft C 5.1 Optimizing
 	Compiler User's Guide," Pages 93-94, and the C 5.10 README.DOC, "Part
 	2: Notes for the 'Microsoft C Optimizing Compiler User's Guide.'"
+
+{% endraw %}

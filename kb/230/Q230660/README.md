@@ -6,6 +6,8 @@ permalink: /kb/230/Q230660/
 
 ## Q230660: SMS 1.2 PCM Dialog Box Remains Open After Logging On
 
+{% raw %}
+
 	Article: Q230660
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -58,3 +60,5 @@ permalink: /kb/230/Q230660/
 	
 	=============================================================================
 	
+
+{% endraw %}

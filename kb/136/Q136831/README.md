@@ -6,6 +6,8 @@ permalink: /kb/136/Q136831/
 
 ## Q136831: Windows 95 May Not Detect ATI Graphics Pro Turbo PCI Mach64
 
+{% raw %}
+
 	Article: Q136831
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/136/Q136831/
 	
 	=============================================================================
 	
+
+{% endraw %}

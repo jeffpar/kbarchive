@@ -6,6 +6,8 @@ permalink: /kb/094/Q94295/
 
 ## Q94295: PRB: &quot;!&quot; Modifier Fails in a Macro Substitution
 
+{% raw %}
+
 	Article: Q94295
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.11,1.12,1.13,1.2,1.3,1.4; NT:1.4,1.5; OS/2:1.21
@@ -94,3 +96,5 @@ permalink: /kb/094/Q94295/
 	
 	=============================================================================
 	
+
+{% endraw %}

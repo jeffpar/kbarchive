@@ -6,6 +6,8 @@ permalink: /kb/183/Q183216/
 
 ## Q183216: PRB: AtlAdvise() Returns 80004002, 80040200, or 80040202 Errors
 
+{% raw %}
+
 	Article: Q183216
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,3.0,4.2b,5.0,6.0
@@ -159,3 +161,5 @@ permalink: /kb/183/Q183216/
 	
 	=============================================================================
 	
+
+{% endraw %}

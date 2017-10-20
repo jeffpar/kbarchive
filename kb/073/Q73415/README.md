@@ -6,6 +6,8 @@ permalink: /kb/073/Q73415/
 
 ## Q73415: Can't Backup/Restore from Peachtree Complete 3 with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q73415
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -47,3 +49,5 @@ permalink: /kb/073/Q73415/
 	
 	=============================================================================
 	
+
+{% endraw %}

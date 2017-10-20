@@ -6,6 +6,8 @@ permalink: /kb/155/Q155805/
 
 ## Q155805: XCLN: Macintosh: Accessing Client Software on 4.0 CD
 
+{% raw %}
+
 	Article: Q155805
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -45,3 +47,5 @@ permalink: /kb/155/Q155805/
 	
 	=============================================================================
 	
+
+{% endraw %}

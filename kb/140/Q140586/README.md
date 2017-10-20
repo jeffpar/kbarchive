@@ -6,6 +6,8 @@ permalink: /kb/140/Q140586/
 
 ## Q140586: HOWTO: How to Add Buttons to a Modeless CPropertySheet
 
+{% raw %}
+
 	Article: Q140586
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -38,8 +40,8 @@ permalink: /kb/140/Q140586/
 	  // CMySheet is derived from CPropertySheet
 	
 	  BEGIN_MESSAGE_MAP(CMySheet, CPropertySheet)
-	            //{ {AFX_MSG_MAP(CMySheet)
-	            //} }AFX_MSG_MAP
+	            //{{AFX_MSG_MAP(CMySheet)
+	            //}}AFX_MSG_MAP
 	            ON_COMMAND(IDC_MYBUTTON, OnMyButton)
 	  END_MESSAGE_MAP()
 	
@@ -79,3 +81,5 @@ permalink: /kb/140/Q140586/
 	
 	=============================================================================
 	
+
+{% endraw %}

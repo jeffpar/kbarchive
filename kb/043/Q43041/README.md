@@ -6,6 +6,8 @@ permalink: /kb/043/Q43041/
 
 ## Q43041: Calculating Memory Requirements for MS-DOS-Based Apps
 
+{% raw %}
+
 	Article: Q43041
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -144,3 +146,5 @@ permalink: /kb/043/Q43041/
 	
 	=============================================================================
 	
+
+{% endraw %}

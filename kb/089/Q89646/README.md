@@ -6,6 +6,8 @@ permalink: /kb/089/Q89646/
 
 ## Q89646: WD97: Error Msg: Text Formatted with No Proofing Was Skipped
 
+{% raw %}
+
 	Article: Q89646
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -67,3 +69,5 @@ permalink: /kb/089/Q89646/
 	
 	=============================================================================
 	
+
+{% endraw %}

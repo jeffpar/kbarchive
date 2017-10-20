@@ -6,6 +6,8 @@ permalink: /kb/061/Q61859/
 
 ## Q61859: Access Control Lists in OS/2 LAN Manager 2.x HPFS386
 
+{% raw %}
+
 	Article: Q61859
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/061/Q61859/
 	
 	=============================================================================
 	
+
+{% endraw %}

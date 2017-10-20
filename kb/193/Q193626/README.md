@@ -6,6 +6,8 @@ permalink: /kb/193/Q193626/
 
 ## Q193626: HOWTO: Overriding Default Right-Click Behavior in Editor Window
 
+{% raw %}
+
 	Article: Q193626
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -136,3 +138,5 @@ permalink: /kb/193/Q193626/
 	
 	=============================================================================
 	
+
+{% endraw %}

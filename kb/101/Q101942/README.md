@@ -6,6 +6,8 @@ permalink: /kb/101/Q101942/
 
 ## Q101942: Err Msg: Network Error 2240 from Windows for Workgroups
 
+{% raw %}
+
 	Article: Q101942
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,3.1
@@ -52,3 +54,5 @@ permalink: /kb/101/Q101942/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/115/Q115088/
 
 ## Q115088: PRB: A _USRDLL with No CWinApp Object Fails to Load
 
+{% raw %}
+
 	Article: Q115088
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -188,3 +190,5 @@ permalink: /kb/115/Q115088/
 	
 	=============================================================================
 	
+
+{% endraw %}

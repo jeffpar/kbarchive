@@ -6,6 +6,8 @@ permalink: /kb/260/Q260835/
 
 ## Q260835: XADM: How to Log Mailbox Access by Computer Name
 
+{% raw %}
+
 	Article: Q260835
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -145,3 +147,5 @@ permalink: /kb/260/Q260835/
 	
 	=============================================================================
 	
+
+{% endraw %}

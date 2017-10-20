@@ -6,6 +6,8 @@ permalink: /kb/132/Q132707/
 
 ## Q132707: Customized Setting For Access Reverts Back to Original
 
+{% raw %}
+
 	Article: Q132707
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -115,3 +117,5 @@ permalink: /kb/132/Q132707/
 	
 	=============================================================================
 	
+
+{% endraw %}

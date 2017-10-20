@@ -6,6 +6,8 @@ permalink: /kb/275/Q275669/
 
 ## Q275669: ODBC Driver for DB2 Truncates Binary Data Flow That Includes NUL
 
+{% raw %}
+
 	Article: Q275669
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 4.0 SP2,4.0 SP3
@@ -63,3 +65,5 @@ permalink: /kb/275/Q275669/
 	
 	=============================================================================
 	
+
+{% endraw %}

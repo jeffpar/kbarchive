@@ -6,6 +6,8 @@ permalink: /kb/195/Q195025/
 
 ## Q195025: BUG: VFP: &quot;SCC API error &quot;Reload File&quot; occurred on file&quot;
 
+{% raw %}
+
 	Article: Q195025
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/195/Q195025/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141976/
 
 ## Q141976: Contents of Visual FoxPro Pro Edition on 3.5&quot; Disk (1 of 2)
 
+{% raw %}
+
 	Article: Q141976
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -544,3 +546,5 @@ permalink: /kb/141/Q141976/
 	
 	=============================================================================
 	
+
+{% endraw %}

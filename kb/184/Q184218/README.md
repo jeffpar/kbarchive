@@ -6,6 +6,8 @@ permalink: /kb/184/Q184218/
 
 ## Q184218: Formexit.exe EXIT Command May Leave Form Object Visible
 
+{% raw %}
+
 	Article: Q184218
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -89,3 +91,5 @@ permalink: /kb/184/Q184218/
 	
 	=============================================================================
 	
+
+{% endraw %}

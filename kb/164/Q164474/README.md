@@ -6,6 +6,8 @@ permalink: /kb/164/Q164474/
 
 ## Q164474: 0E Exception in NWLINK Sending Message from Microsoft Exchange
 
+{% raw %}
+
 	Article: Q164474
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0
@@ -69,3 +71,5 @@ permalink: /kb/164/Q164474/
 	
 	=============================================================================
 	
+
+{% endraw %}

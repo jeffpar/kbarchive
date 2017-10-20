@@ -6,6 +6,8 @@ permalink: /kb/218/Q218442/
 
 ## Q218442: HOWTO: Dynamically Add ActiveX Controls to ATL Composite Control
 
+{% raw %}
+
 	Article: Q218442
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -186,3 +188,5 @@ permalink: /kb/218/Q218442/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136178/
 
 ## Q136178: PPT7: Setup Installs Icon for Graflink on Windows NT 3.51
 
+{% raw %}
+
 	Article: Q136178
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0; winnt:3.51
@@ -54,3 +56,5 @@ permalink: /kb/136/Q136178/
 	
 	=============================================================================
 	
+
+{% endraw %}

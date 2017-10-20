@@ -6,6 +6,8 @@ permalink: /kb/168/Q168111/
 
 ## Q168111: FIX: #import Does Not Compensate for Gaps in vtable
 
+{% raw %}
+
 	Article: Q168111
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -83,3 +85,5 @@ permalink: /kb/168/Q168111/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154624/
 
 ## Q154624: XCON: Configuring the Site Connector Between Untrusted Domains
 
+{% raw %}
+
 	Article: Q154624
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -108,3 +110,5 @@ permalink: /kb/154/Q154624/
 	
 	=============================================================================
 	
+
+{% endraw %}

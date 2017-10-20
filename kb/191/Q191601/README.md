@@ -6,6 +6,8 @@ permalink: /kb/191/Q191601/
 
 ## Q191601: Defragmentation Application Hangs
 
+{% raw %}
+
 	Article: Q191601
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/191/Q191601/
 	
 	=============================================================================
 	
+
+{% endraw %}

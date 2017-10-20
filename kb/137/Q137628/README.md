@@ -6,6 +6,8 @@ permalink: /kb/137/Q137628/
 
 ## Q137628: PRB:Visual FoxPro App's .EXE Quits &amp; Returns to Command Window
 
+{% raw %}
+
 	Article: Q137628
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/137/Q137628/
 	
 	=============================================================================
 	
+
+{% endraw %}

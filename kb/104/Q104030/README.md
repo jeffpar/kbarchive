@@ -6,6 +6,8 @@ permalink: /kb/104/Q104030/
 
 ## Q104030: PC WSPlus: Schedule+ Prints Incomplete Message, Header Info
 
+{% raw %}
+
 	Article: Q104030
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -63,3 +65,5 @@ permalink: /kb/104/Q104030/
 	
 	=============================================================================
 	
+
+{% endraw %}

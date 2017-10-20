@@ -6,6 +6,8 @@ permalink: /kb/243/Q243707/
 
 ## Q243707: MapPoint Err Msg: Failed to Open Default Map Templates...
 
+{% raw %}
+
 	Article: Q243707
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -298,3 +300,5 @@ permalink: /kb/243/Q243707/
 	
 	=============================================================================
 	
+
+{% endraw %}

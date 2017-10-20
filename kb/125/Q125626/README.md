@@ -6,6 +6,8 @@ permalink: /kb/125/Q125626/
 
 ## Q125626: Err Msg: Application Database Cannot Server, Share or Dir...
 
+{% raw %}
+
 	Article: Q125626
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -59,3 +61,5 @@ permalink: /kb/125/Q125626/
 	
 	=============================================================================
 	
+
+{% endraw %}

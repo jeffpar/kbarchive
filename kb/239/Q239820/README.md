@@ -6,6 +6,8 @@ permalink: /kb/239/Q239820/
 
 ## Q239820: XADM: MTA Queue Message Time Ahead One Hour Following DST Change
 
+{% raw %}
+
 	Article: Q239820
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2,5.5 SP3
@@ -57,3 +59,5 @@ permalink: /kb/239/Q239820/
 	
 	=============================================================================
 	
+
+{% endraw %}

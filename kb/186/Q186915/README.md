@@ -6,6 +6,8 @@ permalink: /kb/186/Q186915/
 
 ## Q186915: XFOR: Notes Connector May Send Empty Messages
 
+{% raw %}
+
 	Article: Q186915
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -72,3 +74,5 @@ permalink: /kb/186/Q186915/
 	
 	=============================================================================
 	
+
+{% endraw %}

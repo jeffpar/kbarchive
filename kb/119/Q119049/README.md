@@ -6,6 +6,8 @@ permalink: /kb/119/Q119049/
 
 ## Q119049: FAX: FAXVIEW Incorrectly Displays Driver on Multiple Ports
 
+{% raw %}
+
 	Article: Q119049
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -72,3 +74,5 @@ permalink: /kb/119/Q119049/
 	
 	=============================================================================
 	
+
+{% endraw %}

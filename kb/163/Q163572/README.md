@@ -6,6 +6,8 @@ permalink: /kb/163/Q163572/
 
 ## Q163572: XADM: Performance Optimizer Values Change Depending on NT Login
 
+{% raw %}
+
 	Article: Q163572
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/163/Q163572/
 	
 	=============================================================================
 	
+
+{% endraw %}

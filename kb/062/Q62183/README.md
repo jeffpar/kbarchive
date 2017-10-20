@@ -6,6 +6,8 @@ permalink: /kb/062/Q62183/
 
 ## Q62183: C2404 Error with /qc Compile Option and fidiv Instruction
 
+{% raw %}
+
 	Article: Q62183
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -37,3 +39,5 @@ permalink: /kb/062/Q62183/
 	Microsoft has confirmed this to be a problem with C version 6.00 and
 	QuickC versions 2.50 and 2.51. We are researching this problem and
 	will post new information here as it becomes available.
+
+{% endraw %}

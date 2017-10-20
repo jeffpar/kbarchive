@@ -6,6 +6,8 @@ permalink: /kb/199/Q199057/
 
 ## Q199057: BUG: Expansion of &#95;&#95;LINE&#95;&#95; Macro Is Incorrect When Using /ZI
 
+{% raw %}
+
 	Article: Q199057
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -79,3 +81,5 @@ permalink: /kb/199/Q199057/
 	
 	=============================================================================
 	
+
+{% endraw %}

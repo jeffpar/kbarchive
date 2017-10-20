@@ -6,6 +6,8 @@ permalink: /kb/233/Q233441/
 
 ## Q233441: MSBP: Heading Text Is Cut Off When You Paste Article into Word
 
+{% raw %}
+
 	Article: Q233441
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -51,3 +53,5 @@ permalink: /kb/233/Q233441/
 	
 	=============================================================================
 	
+
+{% endraw %}

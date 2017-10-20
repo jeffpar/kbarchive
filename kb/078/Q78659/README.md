@@ -6,6 +6,8 @@ permalink: /kb/078/Q78659/
 
 ## Q78659: Sytos and Sytos Plus Tape Backups with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q78659
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -63,3 +65,5 @@ permalink: /kb/078/Q78659/
 	
 	=============================================================================
 	
+
+{% endraw %}

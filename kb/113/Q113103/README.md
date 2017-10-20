@@ -6,6 +6,8 @@ permalink: /kb/113/Q113103/
 
 ## Q113103: Bookshelf: Animation Resets Too Quickly to Read Last Screen
 
+{% raw %}
+
 	Article: Q113103
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition; WINDOWS:
@@ -48,3 +50,5 @@ permalink: /kb/113/Q113103/
 	
 	=============================================================================
 	
+
+{% endraw %}

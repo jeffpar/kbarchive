@@ -6,6 +6,8 @@ permalink: /kb/215/Q215349/
 
 ## Q215349: Associated Routes for Deleted IP Address May Not Get Deleted
 
+{% raw %}
+
 	Article: Q215349
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/215/Q215349/
 	
 	=============================================================================
 	
+
+{% endraw %}

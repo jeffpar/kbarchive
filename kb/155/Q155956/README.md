@@ -6,6 +6,8 @@ permalink: /kb/155/Q155956/
 
 ## Q155956: Cannot Restore Default Setting for Shutdown Button
 
+{% raw %}
+
 	Article: Q155956
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/155/Q155956/
 	
 	=============================================================================
 	
+
+{% endraw %}

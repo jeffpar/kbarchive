@@ -6,6 +6,8 @@ permalink: /kb/180/Q180011/
 
 ## Q180011: XADM: EDB File Size Not Updated
 
+{% raw %}
+
 	Article: Q180011
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -69,3 +71,5 @@ permalink: /kb/180/Q180011/
 	
 	=============================================================================
 	
+
+{% endraw %}

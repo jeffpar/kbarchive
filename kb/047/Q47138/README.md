@@ -6,6 +6,8 @@ permalink: /kb/047/Q47138/
 
 ## Q47138: Driver &quot;Removed from Memory&quot; Versus &quot;Disabled&quot;
 
+{% raw %}
+
 	Article: Q47138
 	Product(s): See article
 	Version(s): 1.x 2.x 3.x 4.x 5.x 6.x
@@ -23,3 +25,5 @@ permalink: /kb/047/Q47138/
 	
 	Versions 6.11 and 6.12 are the only versions that are removed from
 	memory if connected to the PS/2 mouse port.
+
+{% endraw %}

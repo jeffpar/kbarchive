@@ -6,6 +6,8 @@ permalink: /kb/150/Q150033/
 
 ## Q150033: BUG: Clicking Menu Does Not Go Straight to the Click Event
 
+{% raw %}
+
 	Article: Q150033
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -68,3 +70,5 @@ permalink: /kb/150/Q150033/
 	
 	=============================================================================
 	
+
+{% endraw %}

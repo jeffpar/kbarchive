@@ -6,6 +6,8 @@ permalink: /kb/154/Q154492/
 
 ## Q154492: FIX: List of Fixes in VC++ 4.2 to Bugs in VC++ 4.0/VC++ 4.1
 
+{% raw %}
+
 	Article: Q154492
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -315,3 +317,5 @@ permalink: /kb/154/Q154492/
 	
 	=============================================================================
 	
+
+{% endraw %}

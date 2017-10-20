@@ -6,6 +6,8 @@ permalink: /kb/111/Q111676/
 
 ## Q111676: BUG: SHOW POPUP Does Not Work with Menu Popups
 
+{% raw %}
+
 	Article: Q111676
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0,5.0,5.0a,6.0
@@ -114,3 +116,5 @@ permalink: /kb/111/Q111676/
 	
 	=============================================================================
 	
+
+{% endraw %}

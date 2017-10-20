@@ -6,6 +6,8 @@ permalink: /kb/301/Q301486/
 
 ## Q301486: Setting Password Protection at Log In
 
+{% raw %}
+
 	Article: Q301486
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -39,3 +41,5 @@ permalink: /kb/301/Q301486/
 	
 	=============================================================================
 	
+
+{% endraw %}

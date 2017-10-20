@@ -6,6 +6,8 @@ permalink: /kb/269/Q269588/
 
 ## Q269588: XADM: Heap Corruption in MAPI Causes MTA to Stop Responding
 
+{% raw %}
+
 	Article: Q269588
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -111,3 +113,5 @@ permalink: /kb/269/Q269588/
 	
 	=============================================================================
 	
+
+{% endraw %}

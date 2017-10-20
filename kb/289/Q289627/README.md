@@ -6,6 +6,8 @@ permalink: /kb/289/Q289627/
 
 ## Q289627: How to Enable File Name Character Translation
 
+{% raw %}
+
 	Article: Q289627
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,2.1 OEM Only,2.2 OEM Only
@@ -138,3 +140,5 @@ permalink: /kb/289/Q289627/
 	
 	=============================================================================
 	
+
+{% endraw %}

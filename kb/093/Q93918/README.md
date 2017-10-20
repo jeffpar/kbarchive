@@ -6,6 +6,8 @@ permalink: /kb/093/Q93918/
 
 ## Q93918: Help Topic Margins Always 1 Inch When Printed
 
+{% raw %}
+
 	Article: Q93918
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -39,3 +41,5 @@ permalink: /kb/093/Q93918/
 	
 	=============================================================================
 	
+
+{% endraw %}

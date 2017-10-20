@@ -6,6 +6,8 @@ permalink: /kb/147/Q147771/
 
 ## Q147771: Removable Media with IDE Interface Not Supported
 
+{% raw %}
+
 	Article: Q147771
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -38,3 +40,5 @@ permalink: /kb/147/Q147771/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/228/Q228538/
 
 ## Q228538: STOP 0x1E in Rdr.sys When DormantFileLimit Set to 0
 
+{% raw %}
+
 	Article: Q228538
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -96,3 +98,5 @@ permalink: /kb/228/Q228538/
 	
 	=============================================================================
 	
+
+{% endraw %}

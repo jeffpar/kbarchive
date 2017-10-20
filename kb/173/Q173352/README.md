@@ -6,6 +6,8 @@ permalink: /kb/173/Q173352/
 
 ## Q173352: INFO: Controls Shipped with Visual Basic 5.0
 
+{% raw %}
+
 	Article: Q173352
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97,97sp1,97sp2,97sp3
@@ -443,3 +445,5 @@ permalink: /kb/173/Q173352/
 	
 	=============================================================================
 	
+
+{% endraw %}

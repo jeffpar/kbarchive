@@ -6,6 +6,8 @@ permalink: /kb/121/Q121271/
 
 ## Q121271: Bypassing Novell Login Scripts for Troubleshooting Purposes
 
+{% raw %}
+
 	Article: Q121271
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0,6.0,6.2,6.21,6.22; WINDOWS:3.0,3.1,3.11
@@ -100,3 +102,5 @@ permalink: /kb/121/Q121271/
 	
 	=============================================================================
 	
+
+{% endraw %}

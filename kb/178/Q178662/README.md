@@ -6,6 +6,8 @@ permalink: /kb/178/Q178662/
 
 ## Q178662: Package Command Manager Service Fails to Start on Remote Servers
 
+{% raw %}
+
 	Article: Q178662
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -70,3 +72,5 @@ permalink: /kb/178/Q178662/
 	
 	=============================================================================
 	
+
+{% endraw %}

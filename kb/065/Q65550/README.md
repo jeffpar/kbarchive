@@ -6,6 +6,8 @@ permalink: /kb/065/Q65550/
 
 ## Q65550: SHELL &quot;CHDIR&quot;, &quot;Input Path for Run-Time Module&quot; if No BC /O
 
+{% raw %}
+
 	Article: Q65550
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -65,3 +67,5 @@ permalink: /kb/065/Q65550/
 	   ' TEST.BAS
 	   SHELL "CHDIR \"
 	   PRINT "TEST"
+
+{% endraw %}

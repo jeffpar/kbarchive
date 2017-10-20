@@ -6,6 +6,8 @@ permalink: /kb/162/Q162920/
 
 ## Q162920: Cannot Change the Default Sending Font in Microsoft Exchange
 
+{% raw %}
+
 	Article: Q162920
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 4.00 95
@@ -59,3 +61,5 @@ permalink: /kb/162/Q162920/
 	
 	=============================================================================
 	
+
+{% endraw %}

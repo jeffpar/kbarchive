@@ -6,6 +6,8 @@ permalink: /kb/126/Q126923/
 
 ## Q126923: PC DOS: How to Use CONVERT.EXE
 
+{% raw %}
+
 	Article: Q126923
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.2a
@@ -56,3 +58,5 @@ permalink: /kb/126/Q126923/
 	
 	=============================================================================
 	
+
+{% endraw %}

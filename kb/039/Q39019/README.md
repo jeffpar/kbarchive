@@ -6,6 +6,8 @@ permalink: /kb/039/Q39019/
 
 ## Q39019: Error U2157 Filename : Cannot Access File
 
+{% raw %}
+
 	Article: Q39019
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -35,3 +37,5 @@ permalink: /kb/039/Q39019/
 	
 	A hyphen (dash, - ) in a subdirectory name in the path can cause this
 	error; this error occurs because of a problem in LIB.
+
+{% endraw %}

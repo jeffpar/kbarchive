@@ -6,6 +6,8 @@ permalink: /kb/322/Q322315/
 
 ## Q322315: XADM: &quot;2147500037&quot; Err Msg and Event IDs 1121 and 5000
 
+{% raw %}
+
 	Article: Q322315
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -126,3 +128,5 @@ permalink: /kb/322/Q322315/
 	
 	=============================================================================
 	
+
+{% endraw %}

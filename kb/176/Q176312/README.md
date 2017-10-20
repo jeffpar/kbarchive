@@ -6,6 +6,8 @@ permalink: /kb/176/Q176312/
 
 ## Q176312: WD97: Macro Shortcut Key Assignments Do Not Appear
 
+{% raw %}
+
 	Article: Q176312
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -69,3 +71,5 @@ permalink: /kb/176/Q176312/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157069/
 
 ## Q157069: &quot;Can't Access This Folder. Path Is Too Long&quot; Error
 
+{% raw %}
+
 	Article: Q157069
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0a,4.5
@@ -92,3 +94,5 @@ permalink: /kb/157/Q157069/
 	
 	=============================================================================
 	
+
+{% endraw %}

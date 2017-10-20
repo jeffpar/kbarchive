@@ -6,6 +6,8 @@ permalink: /kb/188/Q188697/
 
 ## Q188697: Disconnecting Network Printer Leaves Registry Settings
 
+{% raw %}
+
 	Article: Q188697
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -118,3 +120,5 @@ permalink: /kb/188/Q188697/
 	
 	=============================================================================
 	
+
+{% endraw %}

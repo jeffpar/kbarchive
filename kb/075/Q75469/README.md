@@ -6,6 +6,8 @@ permalink: /kb/075/Q75469/
 
 ## Q75469: HOWTO: Accurately Showing on the Screen What Will Print
 
+{% raw %}
+
 	Article: Q75469
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51
@@ -94,3 +96,5 @@ permalink: /kb/075/Q75469/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/072/Q72855/
 
 ## Q72855: Automated Test Facilities and Microsoft Windows
 
+{% raw %}
+
 	Article: Q72855
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/072/Q72855/
 	
 	=============================================================================
 	
+
+{% endraw %}

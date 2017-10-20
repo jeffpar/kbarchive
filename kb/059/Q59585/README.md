@@ -6,6 +6,8 @@ permalink: /kb/059/Q59585/
 
 ## Q59585: FIX: LOCAL Directive with a Structure
 
+{% raw %}
+
 	Article: Q59585
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -94,3 +96,5 @@ permalink: /kb/059/Q59585/
 	
 	=============================================================================
 	
+
+{% endraw %}

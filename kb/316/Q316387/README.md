@@ -6,6 +6,8 @@ permalink: /kb/316/Q316387/
 
 ## Q316387: FP: &quot;Unable to Run Text Converter&quot; Err Msg When Pasting Text
 
+{% raw %}
+
 	Article: Q316387
 	Product(s): Word Front Page
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/316/Q316387/
 	
 	=============================================================================
 	
+
+{% endraw %}

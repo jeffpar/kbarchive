@@ -6,6 +6,8 @@ permalink: /kb/167/Q167874/
 
 ## Q167874: WD97: Page Borders May Be Displayed or Printed Incorrectly
 
+{% raw %}
+
 	Article: Q167874
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -179,3 +181,5 @@ permalink: /kb/167/Q167874/
 	
 	=============================================================================
 	
+
+{% endraw %}

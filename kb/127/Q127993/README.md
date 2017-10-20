@@ -6,6 +6,8 @@ permalink: /kb/127/Q127993/
 
 ## Q127993: PRB: Corrupt Binary File After Merging with SourceSafe
 
+{% raw %}
+
 	Article: Q127993
 	Product(s): Microsoft SourceSafe
 	Version(s): 3.10
@@ -88,3 +90,5 @@ permalink: /kb/127/Q127993/
 	
 	=============================================================================
 	
+
+{% endraw %}

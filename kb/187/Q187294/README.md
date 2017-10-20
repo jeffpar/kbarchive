@@ -6,6 +6,8 @@ permalink: /kb/187/Q187294/
 
 ## Q187294: Emergency Recovery Utility Does Not Require System Disk
 
+{% raw %}
+
 	Article: Q187294
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -41,3 +43,5 @@ permalink: /kb/187/Q187294/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/293/Q293150/
 
 ## Q293150: FIX: Leak in Repeated Calls to MAPILogonEx
 
+{% raw %}
+
 	Article: Q293150
 	Product(s): Microsoft Exchange
 	Version(s): 1.0,1.2,5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -102,3 +104,5 @@ permalink: /kb/293/Q293150/
 	
 	=============================================================================
 	
+
+{% endraw %}

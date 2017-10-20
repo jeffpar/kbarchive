@@ -6,6 +6,8 @@ permalink: /kb/041/Q41650/
 
 ## Q41650: QuickC 2.00 README.DOC: /F (Set Stack Size)
 
+{% raw %}
+
 	Article: Q41650
 	Product(s): See article
 	Version(s): 2.00
@@ -21,3 +23,5 @@ permalink: /kb/041/Q41650/
 	
 	The number following /F must be hexadecimal; decimal and octal are not
 	allowed.
+
+{% endraw %}

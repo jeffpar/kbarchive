@@ -6,6 +6,8 @@ permalink: /kb/172/Q172180/
 
 ## Q172180: WD97: General Information About Headers and Footers
 
+{% raw %}
+
 	Article: Q172180
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -394,3 +396,5 @@ permalink: /kb/172/Q172180/
 	
 	=============================================================================
 	
+
+{% endraw %}

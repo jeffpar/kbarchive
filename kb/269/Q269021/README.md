@@ -6,6 +6,8 @@ permalink: /kb/269/Q269021/
 
 ## Q269021: PRB: Synergex Driver Displays Fields Wrong in View Designer
 
+{% raw %}
+
 	Article: Q269021
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -87,3 +89,5 @@ permalink: /kb/269/Q269021/
 	
 	=============================================================================
 	
+
+{% endraw %}

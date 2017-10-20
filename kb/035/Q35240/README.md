@@ -6,6 +6,8 @@ permalink: /kb/035/Q35240/
 
 ## Q35240: On IBM PS/2 MCGA, SCREEN 1 and 2 Are Monochrome
 
+{% raw %}
+
 	Article: Q35240
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -37,3 +39,5 @@ permalink: /kb/035/Q35240/
 	
 	   "Programmer's Guide to PC & PS/2 Video Systems: Maximum Video
 	   Performance from the EGA, VGA, HGC, and MCGA" by Richard Wilton (1987)
+
+{% endraw %}

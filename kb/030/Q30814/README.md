@@ -6,6 +6,8 @@ permalink: /kb/030/Q30814/
 
 ## Q30814: MASM 5.10 OS2.DOC: OS/2 Call Summary - Queue Management
 
+{% raw %}
+
 	Article: Q30814
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -48,3 +50,5 @@ permalink: /kb/030/Q30814/
 	   @DosWriteQueue - Adds an element to a queue
 	   Parameters - QueueHandle:W, Request:W, DataLength:W, DataBuffer:PB,
 	                ElemPriority:W
+
+{% endraw %}

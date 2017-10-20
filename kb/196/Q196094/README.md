@@ -6,6 +6,8 @@ permalink: /kb/196/Q196094/
 
 ## Q196094: How to Manually Install Small Business Server Clients
 
+{% raw %}
+
 	Article: Q196094
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 4.0,4.0a
@@ -113,3 +115,5 @@ permalink: /kb/196/Q196094/
 	
 	=============================================================================
 	
+
+{% endraw %}

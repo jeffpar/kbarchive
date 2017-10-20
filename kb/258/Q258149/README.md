@@ -6,6 +6,8 @@ permalink: /kb/258/Q258149/
 
 ## Q258149: SMS: Verify Hotfix Installation in System Management Server 2.0
 
+{% raw %}
+
 	Article: Q258149
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP1,2.0 SP2
@@ -55,3 +57,5 @@ permalink: /kb/258/Q258149/
 	
 	=============================================================================
 	
+
+{% endraw %}

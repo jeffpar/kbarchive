@@ -6,6 +6,8 @@ permalink: /kb/174/Q174062/
 
 ## Q174062: Internet Mail Enhancement Patch Needed to Use Outlook 97 w/MSN
 
+{% raw %}
+
 	Article: Q174062
 	Product(s): The Microsoft Network
 	Version(s): 2.5,2.51,2.52,2.6,5.0,5.1
@@ -133,3 +135,5 @@ permalink: /kb/174/Q174062/
 	
 	=============================================================================
 	
+
+{% endraw %}

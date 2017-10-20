@@ -6,6 +6,8 @@ permalink: /kb/180/Q180022/
 
 ## Q180022: MSB Solar: Sound Suddenly Stops After You Click an Object
 
+{% raw %}
+
 	Article: Q180022
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/180/Q180022/
 	
 	=============================================================================
 	
+
+{% endraw %}

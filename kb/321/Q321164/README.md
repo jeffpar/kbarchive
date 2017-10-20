@@ -6,6 +6,8 @@ permalink: /kb/321/Q321164/
 
 ## Q321164: XADM: You Can't Administer KMS &amp; Event IDs 5258/5257 Are Logged
 
+{% raw %}
+
 	Article: Q321164
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -54,3 +56,5 @@ permalink: /kb/321/Q321164/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147589/
 
 ## Q147589: Location of .Vue File Can Be Customized
 
+{% raw %}
+
 	Article: Q147589
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/147/Q147589/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189859/
 
 ## Q189859: WD97: Bullets, Numbers Lost After Saving As WordPerfect 5.x
 
+{% raw %}
+
 	Article: Q189859
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -98,3 +100,5 @@ permalink: /kb/189/Q189859/
 	
 	=============================================================================
 	
+
+{% endraw %}

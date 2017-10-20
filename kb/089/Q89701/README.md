@@ -6,6 +6,8 @@ permalink: /kb/089/Q89701/
 
 ## Q89701: Using Both the Retail and Debug Kernel of Windows
 
+{% raw %}
+
 	Article: Q89701
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -66,3 +68,5 @@ permalink: /kb/089/Q89701/
 	
 	=============================================================================
 	
+
+{% endraw %}

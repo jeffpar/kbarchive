@@ -6,6 +6,8 @@ permalink: /kb/177/Q177353/
 
 ## Q177353: Qic117.sys Driver May Make Drive A Inaccessible
 
+{% raw %}
+
 	Article: Q177353
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -109,3 +111,5 @@ permalink: /kb/177/Q177353/
 	
 	=============================================================================
 	
+
+{% endraw %}

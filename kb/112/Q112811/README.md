@@ -6,6 +6,8 @@ permalink: /kb/112/Q112811/
 
 ## Q112811: Print Notification Message has Incorrect Time and Date
 
+{% raw %}
+
 	Article: Q112811
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -49,3 +51,5 @@ permalink: /kb/112/Q112811/
 	
 	=============================================================================
 	
+
+{% endraw %}

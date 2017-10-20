@@ -6,6 +6,8 @@ permalink: /kb/256/Q256879/
 
 ## Q256879: XADM: Mbclean Stops Unexpectedly Because of Memory Corruption
 
+{% raw %}
+
 	Article: Q256879
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -80,3 +82,5 @@ permalink: /kb/256/Q256879/
 	
 	=============================================================================
 	
+
+{% endraw %}

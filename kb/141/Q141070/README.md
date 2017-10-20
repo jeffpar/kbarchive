@@ -6,6 +6,8 @@ permalink: /kb/141/Q141070/
 
 ## Q141070: PC Win:Attachment Saved as 0 Byte File if First 126 Bytes Null
 
+{% raw %}
+
 	Article: Q141070
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.5
@@ -52,3 +54,5 @@ permalink: /kb/141/Q141070/
 	
 	=============================================================================
 	
+
+{% endraw %}

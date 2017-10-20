@@ -6,6 +6,8 @@ permalink: /kb/258/Q258140/
 
 ## Q258140: XFOR: Error Message Occurs When You Enable a User to Relay
 
+{% raw %}
+
 	Article: Q258140
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP2
@@ -115,3 +117,5 @@ permalink: /kb/258/Q258140/
 	
 	=============================================================================
 	
+
+{% endraw %}

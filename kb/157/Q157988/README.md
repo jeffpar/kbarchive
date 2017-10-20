@@ -6,6 +6,8 @@ permalink: /kb/157/Q157988/
 
 ## Q157988: FIX: Illegal Operation Caused by Clicking on Blank Index
 
+{% raw %}
+
 	Article: Q157988
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -71,3 +73,5 @@ permalink: /kb/157/Q157988/
 	
 	=============================================================================
 	
+
+{% endraw %}

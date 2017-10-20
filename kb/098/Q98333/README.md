@@ -6,6 +6,8 @@ permalink: /kb/098/Q98333/
 
 ## Q98333: PC MAPI: 3.0 MAPI Tools Disk &#91;3.5, 1.44 MB; 5.25, 1.2 MB&#93;
 
+{% raw %}
+
 	Article: Q98333
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -148,3 +150,5 @@ permalink: /kb/098/Q98333/
 	
 	=============================================================================
 	
+
+{% endraw %}

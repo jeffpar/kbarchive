@@ -6,6 +6,8 @@ permalink: /kb/193/Q193020/
 
 ## Q193020: INFO: PDW &#91;Do Not Redistribute&#93; Section of VB6DEP.INI
 
+{% raw %}
+
 	Article: Q193020
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -65,3 +67,5 @@ permalink: /kb/193/Q193020/
 	
 	=============================================================================
 	
+
+{% endraw %}

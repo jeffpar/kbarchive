@@ -6,6 +6,8 @@ permalink: /kb/026/Q26898/
 
 ## Q26898: CASE Statement Never Executed When Tracing with F8 Key in QB
 
+{% raw %}
+
 	Article: Q26898
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -45,3 +47,5 @@ permalink: /kb/026/Q26898/
 	END SELECT
 	PRINT "done"                      'always executed
 	END
+
+{% endraw %}

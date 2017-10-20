@@ -6,6 +6,8 @@ permalink: /kb/261/Q261947/
 
 ## Q261947: XADM: How to Determine if Eseutil /p Has Been Run on a Database
 
+{% raw %}
+
 	Article: Q261947
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -76,3 +78,5 @@ permalink: /kb/261/Q261947/
 	
 	=============================================================================
 	
+
+{% endraw %}

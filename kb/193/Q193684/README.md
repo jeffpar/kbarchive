@@ -6,6 +6,8 @@ permalink: /kb/193/Q193684/
 
 ## Q193684: APPC/CPI-C Apps May Hang When Allocating LU 6.2 Sessions
 
+{% raw %}
+
 	Article: Q193684
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -95,3 +97,5 @@ permalink: /kb/193/Q193684/
 	
 	=============================================================================
 	
+
+{% endraw %}

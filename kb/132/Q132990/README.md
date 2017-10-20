@@ -6,6 +6,8 @@ permalink: /kb/132/Q132990/
 
 ## Q132990: Estimated Compression Ratio Does Not Match Drive Properties
 
+{% raw %}
+
 	Article: Q132990
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/132/Q132990/
 	
 	=============================================================================
 	
+
+{% endraw %}

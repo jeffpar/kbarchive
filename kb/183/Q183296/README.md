@@ -6,6 +6,8 @@ permalink: /kb/183/Q183296/
 
 ## Q183296: FIX: SETALL() Corrupts Properties of Custom Objects
 
+{% raw %}
+
 	Article: Q183296
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -150,3 +152,5 @@ permalink: /kb/183/Q183296/
 	
 	=============================================================================
 	
+
+{% endraw %}

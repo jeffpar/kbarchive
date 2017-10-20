@@ -6,6 +6,8 @@ permalink: /kb/222/Q222066/
 
 ## Q222066: XADM: Event ID 11 Logged in the Application Log
 
+{% raw %}
+
 	Article: Q222066
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -159,3 +161,5 @@ permalink: /kb/222/Q222066/
 	
 	=============================================================================
 	
+
+{% endraw %}

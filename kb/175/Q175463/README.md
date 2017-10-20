@@ -6,6 +6,8 @@ permalink: /kb/175/Q175463/
 
 ## Q175463: NETDOM 1.2 Fails to Join a Domain
 
+{% raw %}
+
 	Article: Q175463
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT3.51,4.0
@@ -51,3 +53,5 @@ permalink: /kb/175/Q175463/
 	
 	=============================================================================
 	
+
+{% endraw %}

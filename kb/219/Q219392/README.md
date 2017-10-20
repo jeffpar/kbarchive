@@ -6,6 +6,8 @@ permalink: /kb/219/Q219392/
 
 ## Q219392: System Drive Cannot be Hidden in Windows NT Explorer View
 
+{% raw %}
+
 	Article: Q219392
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/219/Q219392/
 	
 	=============================================================================
 	
+
+{% endraw %}

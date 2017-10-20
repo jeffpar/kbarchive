@@ -6,6 +6,8 @@ permalink: /kb/134/Q134427/
 
 ## Q134427: Dr. Watson Access Violation Occurs Sending Mail Attachments
 
+{% raw %}
+
 	Article: Q134427
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/134/Q134427/
 	
 	=============================================================================
 	
+
+{% endraw %}

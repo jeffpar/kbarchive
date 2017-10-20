@@ -6,6 +6,8 @@ permalink: /kb/176/Q176253/
 
 ## Q176253: Plus! For Kids: &quot;Restrictions&quot; Err Msg When You Start Windows
 
+{% raw %}
+
 	Article: Q176253
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,95
@@ -58,3 +60,5 @@ permalink: /kb/176/Q176253/
 	
 	=============================================================================
 	
+
+{% endraw %}

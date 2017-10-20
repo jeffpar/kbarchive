@@ -6,6 +6,8 @@ permalink: /kb/167/Q167423/
 
 ## Q167423: FIX: CRecordset Members Not in &quot;Add Member Variable&quot; Dialog Box
 
+{% raw %}
+
 	Article: Q167423
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -106,9 +108,9 @@ permalink: /kb/167/Q167423/
 	     void CTestView::DoDataExchange(CDataExchange* pDX)
 	     {
 	        CRecordView::DoDataExchange(pDX);
-	        //{ {AFX_DATA_MAP(CDbtestView)
+	        //{{AFX_DATA_MAP(CDbtestView)
 	        DDX_FieldText(pDX, IDC_EDIT1, m_pSet->m_StudentID, m_pSet);
-	        //} }AFX_DATA_MAP
+	        //}}AFX_DATA_MAP
 	     }
 	
 	Additional query words:
@@ -122,3 +124,5 @@ permalink: /kb/167/Q167423/
 	
 	=============================================================================
 	
+
+{% endraw %}

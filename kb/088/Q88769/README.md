@@ -6,6 +6,8 @@ permalink: /kb/088/Q88769/
 
 ## Q88769: HOWTO: Test for End of File with CFile and CStdioFile
 
+{% raw %}
+
 	Article: Q88769
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,2.2,4.0
@@ -54,3 +56,5 @@ permalink: /kb/088/Q88769/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131823/
 
 ## Q131823: Error Message: Vines NDIS Interface Error 1021
 
+{% raw %}
+
 	Article: Q131823
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/131/Q131823/
 	
 	=============================================================================
 	
+
+{% endraw %}

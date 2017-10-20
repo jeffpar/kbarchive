@@ -6,6 +6,8 @@ permalink: /kb/075/Q75141/
 
 ## Q75141: Using SMARTDRV.SYS and RAMDRIVE.SYS with QEMM's QEXT.SYS
 
+{% raw %}
+
 	Article: Q75141
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -52,3 +54,5 @@ permalink: /kb/075/Q75141/
 	
 	=============================================================================
 	
+
+{% endraw %}

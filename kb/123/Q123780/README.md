@@ -6,6 +6,8 @@ permalink: /kb/123/Q123780/
 
 ## Q123780: BUG: Link Fails w/ Unresolved External When Call SWAP.H
 
+{% raw %}
+
 	Article: Q123780
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0b
@@ -80,3 +82,5 @@ permalink: /kb/123/Q123780/
 	
 	=============================================================================
 	
+
+{% endraw %}

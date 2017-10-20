@@ -6,6 +6,8 @@ permalink: /kb/291/Q291845/
 
 ## Q291845: Malformed WebDAV Request Can Cause IIS to Exhaust CPU Resources
 
+{% raw %}
+
 	Article: Q291845
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -132,3 +134,5 @@ permalink: /kb/291/Q291845/
 	
 	=============================================================================
 	
+
+{% endraw %}

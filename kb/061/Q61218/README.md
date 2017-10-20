@@ -6,6 +6,8 @@ permalink: /kb/061/Q61218/
 
 ## Q61218: C 6.00 README: PWB: OS/2 Long Filename Support
 
+{% raw %}
+
 	Article: Q61218
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -106,3 +108,5 @@ permalink: /kb/061/Q61218/
 	  command above might instead be:
 	
 	     readonly: "Change Attribute" -r "%s"
+
+{% endraw %}

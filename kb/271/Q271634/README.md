@@ -6,6 +6,8 @@ permalink: /kb/271/Q271634/
 
 ## Q271634: XADM: How to Apply Exchange Server 5.5 Fixes to Cluster
 
+{% raw %}
+
 	Article: Q271634
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -62,3 +64,5 @@ permalink: /kb/271/Q271634/
 	
 	=============================================================================
 	
+
+{% endraw %}

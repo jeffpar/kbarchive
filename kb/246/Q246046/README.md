@@ -6,6 +6,8 @@ permalink: /kb/246/Q246046/
 
 ## Q246046: XCLN: Error in People Directory in Intranet Collaboration Server
 
+{% raw %}
+
 	Article: Q246046
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -47,3 +49,5 @@ permalink: /kb/246/Q246046/
 	
 	=============================================================================
 	
+
+{% endraw %}

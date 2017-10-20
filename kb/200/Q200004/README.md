@@ -6,6 +6,8 @@ permalink: /kb/200/Q200004/
 
 ## Q200004: XFOR: Unable to Log On to Migrated Mailbox
 
+{% raw %}
+
 	Article: Q200004
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/200/Q200004/
 	
 	=============================================================================
 	
+
+{% endraw %}

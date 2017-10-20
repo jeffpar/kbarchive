@@ -6,6 +6,8 @@ permalink: /kb/138/Q138937/
 
 ## Q138937: How to Tell Which Directory Holds a Visual FoxPro App's .Exe
 
+{% raw %}
+
 	Article: Q138937
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -54,3 +56,5 @@ permalink: /kb/138/Q138937/
 	
 	=============================================================================
 	
+
+{% endraw %}

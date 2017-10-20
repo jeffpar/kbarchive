@@ -6,6 +6,8 @@ permalink: /kb/099/Q99807/
 
 ## Q99807: Shell DDE Using DDEML
 
+{% raw %}
+
 	Article: Q99807
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -84,3 +86,5 @@ permalink: /kb/099/Q99807/
 	
 	=============================================================================
 	
+
+{% endraw %}

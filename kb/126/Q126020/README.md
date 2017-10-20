@@ -6,6 +6,8 @@ permalink: /kb/126/Q126020/
 
 ## Q126020: Setup Err Msg on Intel Xpress Deskside: Inaccessible Boot...
 
+{% raw %}
+
 	Article: Q126020
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/126/Q126020/
 	
 	=============================================================================
 	
+
+{% endraw %}

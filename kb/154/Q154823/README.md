@@ -6,6 +6,8 @@ permalink: /kb/154/Q154823/
 
 ## Q154823: HOWTO: Determine the Size of the Desktop Area
 
+{% raw %}
+
 	Article: Q154823
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -159,3 +161,5 @@ permalink: /kb/154/Q154823/
 	
 	=============================================================================
 	
+
+{% endraw %}

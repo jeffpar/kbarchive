@@ -6,6 +6,8 @@ permalink: /kb/176/Q176919/
 
 ## Q176919: IIS Fails to Display Custom Error Messages for .asp Files
 
+{% raw %}
+
 	Article: Q176919
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -74,3 +76,5 @@ permalink: /kb/176/Q176919/
 	
 	=============================================================================
 	
+
+{% endraw %}

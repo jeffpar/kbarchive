@@ -6,6 +6,8 @@ permalink: /kb/137/Q137086/
 
 ## Q137086: No Output: Right-Hand ALT Key with UK Keyboard Layout
 
+{% raw %}
+
 	Article: Q137086
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/137/Q137086/
 	
 	=============================================================================
 	
+
+{% endraw %}

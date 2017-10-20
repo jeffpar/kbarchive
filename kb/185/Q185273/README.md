@@ -6,6 +6,8 @@ permalink: /kb/185/Q185273/
 
 ## Q185273: Window Closes After Choosing End Task in Edit Alias Dialog Box
 
+{% raw %}
+
 	Article: Q185273
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:4.0,95
@@ -63,3 +65,5 @@ permalink: /kb/185/Q185273/
 	
 	=============================================================================
 	
+
+{% endraw %}

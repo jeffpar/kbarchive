@@ -6,6 +6,8 @@ permalink: /kb/165/Q165268/
 
 ## Q165268: WD97: wdParagraph, ColumnSelectMode Do Not Select Text Column
 
+{% raw %}
+
 	Article: Q165268
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -102,3 +104,5 @@ permalink: /kb/165/Q165268/
 	
 	=============================================================================
 	
+
+{% endraw %}

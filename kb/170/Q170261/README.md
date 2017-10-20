@@ -6,6 +6,8 @@ permalink: /kb/170/Q170261/
 
 ## Q170261: Cannot Reapply Service Pack 5 from November 1996 MSDN
 
+{% raw %}
+
 	Article: Q170261
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -71,3 +73,5 @@ permalink: /kb/170/Q170261/
 	
 	=============================================================================
 	
+
+{% endraw %}

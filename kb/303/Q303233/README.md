@@ -6,6 +6,8 @@ permalink: /kb/303/Q303233/
 
 ## Q303233: &quot;Unread&quot; And &quot;Unfinished&quot; Statuses Do Not Appear in Bulk Mail an
 
+{% raw %}
+
 	Article: Q303233
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -53,3 +55,5 @@ permalink: /kb/303/Q303233/
 	
 	=============================================================================
 	
+
+{% endraw %}

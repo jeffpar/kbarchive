@@ -6,6 +6,8 @@ permalink: /kb/179/Q179470/
 
 ## Q179470: Unable to Access Shares on RAS Client from RAS Server
 
+{% raw %}
+
 	Article: Q179470
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT:3.5,3.51,4.0;Windows:95
@@ -109,3 +111,5 @@ permalink: /kb/179/Q179470/
 	
 	=============================================================================
 	
+
+{% endraw %}

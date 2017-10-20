@@ -6,6 +6,8 @@ permalink: /kb/061/Q61436/
 
 ## Q61436: Problem of Testing Floating-Point Equality, IF n=VAL(&quot;n&quot;)
 
+{% raw %}
+
 	Article: Q61436
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -76,3 +78,5 @@ permalink: /kb/061/Q61436/
 	following query:
 	
 	   floating and point and format and QuickBASIC
+
+{% endraw %}

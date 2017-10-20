@@ -6,6 +6,8 @@ permalink: /kb/139/Q139320/
 
 ## Q139320: World Atlas Err Msg: Setup Unable to Determine Valid Default..
 
+{% raw %}
+
 	Article: Q139320
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/139/Q139320/
 	
 	=============================================================================
 	
+
+{% endraw %}

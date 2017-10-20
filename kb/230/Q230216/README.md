@@ -6,6 +6,8 @@ permalink: /kb/230/Q230216/
 
 ## Q230216: Running Microsoft Office 2000 Small Business Comments and Correc
 
+{% raw %}
+
 	Article: Q230216
 	Product(s): Microsoft Press
 	Version(s): 
@@ -175,3 +177,5 @@ permalink: /kb/230/Q230216/
 	
 	=============================================================================
 	
+
+{% endraw %}

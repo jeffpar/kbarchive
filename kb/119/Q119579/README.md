@@ -6,6 +6,8 @@ permalink: /kb/119/Q119579/
 
 ## Q119579: Windows Support of the 16550 UART
 
+{% raw %}
+
 	Article: Q119579
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -191,3 +193,5 @@ permalink: /kb/119/Q119579/
 	
 	=============================================================================
 	
+
+{% endraw %}

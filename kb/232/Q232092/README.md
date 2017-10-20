@@ -6,6 +6,8 @@ permalink: /kb/232/Q232092/
 
 ## Q232092: BUG: In-Top-Level Form Appears to Hang
 
+{% raw %}
+
 	Article: Q232092
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -128,3 +130,5 @@ permalink: /kb/232/Q232092/
 	
 	=============================================================================
 	
+
+{% endraw %}

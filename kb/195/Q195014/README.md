@@ -6,6 +6,8 @@ permalink: /kb/195/Q195014/
 
 ## Q195014: Outlook 98 May Install Incorrectly on Windows NT Terminal Server
 
+{% raw %}
+
 	Article: Q195014
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/195/Q195014/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/203/Q203488/
 
 ## Q203488: WD97: File Corruption Error Starting Multiple Instances of Word
 
+{% raw %}
+
 	Article: Q203488
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/203/Q203488/
 	
 	=============================================================================
 	
+
+{% endraw %}

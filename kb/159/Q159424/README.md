@@ -6,6 +6,8 @@ permalink: /kb/159/Q159424/
 
 ## Q159424: WD97: FileCopy Statement Requires Destination File Name
 
+{% raw %}
+
 	Article: Q159424
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -117,3 +119,5 @@ permalink: /kb/159/Q159424/
 	
 	=============================================================================
 	
+
+{% endraw %}

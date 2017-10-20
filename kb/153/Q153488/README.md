@@ -6,6 +6,8 @@ permalink: /kb/153/Q153488/
 
 ## Q153488: XADM: Mail Limits on CR Fail to Stop Delivery of Large Message
 
+{% raw %}
+
 	Article: Q153488
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -59,3 +61,5 @@ permalink: /kb/153/Q153488/
 	
 	=============================================================================
 	
+
+{% endraw %}

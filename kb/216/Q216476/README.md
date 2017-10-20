@@ -6,6 +6,8 @@ permalink: /kb/216/Q216476/
 
 ## Q216476: FFAPI: Messages Get Duplicated when Sending Across FFAPI Gateway
 
+{% raw %}
+
 	Article: Q216476
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -83,3 +85,5 @@ permalink: /kb/216/Q216476/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128995/
 
 ## Q128995: PRB: Unrecognized Command Verb Error When Instantiate Object
 
+{% raw %}
+
 	Article: Q128995
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -87,3 +89,5 @@ permalink: /kb/128/Q128995/
 	
 	=============================================================================
 	
+
+{% endraw %}

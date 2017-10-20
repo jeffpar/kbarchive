@@ -6,6 +6,8 @@ permalink: /kb/111/Q111865/
 
 ## Q111865: BUG: StretchBlt()/StretchDIBits() Fail with Very Large Stretch
 
+{% raw %}
+
 	Article: Q111865
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/111/Q111865/
 	
 	=============================================================================
 	
+
+{% endraw %}

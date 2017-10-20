@@ -6,6 +6,8 @@ permalink: /kb/151/Q151389/
 
 ## Q151389: PRB: Code Example in Online Help on HelpContextID Gives Error
 
+{% raw %}
+
 	Article: Q151389
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -76,3 +78,5 @@ permalink: /kb/151/Q151389/
 	
 	=============================================================================
 	
+
+{% endraw %}

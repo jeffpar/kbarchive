@@ -6,6 +6,8 @@ permalink: /kb/196/Q196227/
 
 ## Q196227: SMS: Scandisk Delayed During Windows 9x Client Installation
 
+{% raw %}
+
 	Article: Q196227
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -53,3 +55,5 @@ permalink: /kb/196/Q196227/
 	
 	=============================================================================
 	
+
+{% endraw %}

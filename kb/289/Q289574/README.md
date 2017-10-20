@@ -6,6 +6,8 @@ permalink: /kb/289/Q289574/
 
 ## Q289574: XADM: Cannot Access Contents of a Public Folder
 
+{% raw %}
+
 	Article: Q289574
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -69,3 +71,5 @@ permalink: /kb/289/Q289574/
 	
 	=============================================================================
 	
+
+{% endraw %}

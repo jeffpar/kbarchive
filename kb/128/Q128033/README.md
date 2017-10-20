@@ -6,6 +6,8 @@ permalink: /kb/128/Q128033/
 
 ## Q128033: Unable to Read Text with a 16-color Video Driver
 
+{% raw %}
+
 	Article: Q128033
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -48,3 +50,5 @@ permalink: /kb/128/Q128033/
 	
 	=============================================================================
 	
+
+{% endraw %}

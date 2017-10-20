@@ -6,6 +6,8 @@ permalink: /kb/285/Q285033/
 
 ## Q285033: CFS2: Enemy Aircraft Are Not Displayed on the Tactical Display
 
+{% raw %}
+
 	Article: Q285033
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -130,3 +132,5 @@ permalink: /kb/285/Q285033/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67449/
 
 ## Q67449: &quot;BASIC 7.0: Programmer's Guide&quot; Correction for ISAMCVT.EXE
 
+{% raw %}
+
 	Article: Q67449
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -44,3 +46,5 @@ permalink: /kb/067/Q67449/
 	-----------
 	
 	   ISAMCVT /B filename tablename databasename specfile
+
+{% endraw %}

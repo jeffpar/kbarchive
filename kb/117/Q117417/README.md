@@ -6,6 +6,8 @@ permalink: /kb/117/Q117417/
 
 ## Q117417: Availability of MS-DOS 6.22 Step-Up
 
+{% raw %}
+
 	Article: Q117417
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:
@@ -70,3 +72,5 @@ permalink: /kb/117/Q117417/
 	
 	=============================================================================
 	
+
+{% endraw %}

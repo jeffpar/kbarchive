@@ -6,6 +6,8 @@ permalink: /kb/117/Q117463/
 
 ## Q117463: Macintosh Sees Incorrect File Size when Volume is Over 2 GB
 
+{% raw %}
+
 	Article: Q117463
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -52,3 +54,5 @@ permalink: /kb/117/Q117463/
 	
 	=============================================================================
 	
+
+{% endraw %}

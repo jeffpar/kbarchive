@@ -6,6 +6,8 @@ permalink: /kb/174/Q174229/
 
 ## Q174229: Control Panel Date/Time Tool Changes the Date
 
+{% raw %}
+
 	Article: Q174229
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95
@@ -69,3 +71,5 @@ permalink: /kb/174/Q174229/
 	
 	=============================================================================
 	
+
+{% endraw %}

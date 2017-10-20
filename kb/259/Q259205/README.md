@@ -6,6 +6,8 @@ permalink: /kb/259/Q259205/
 
 ## Q259205: APPC TP_STARTED Does Not Verify Local LU Alias By Default
 
+{% raw %}
+
 	Article: Q259205
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/259/Q259205/
 	
 	=============================================================================
 	
+
+{% endraw %}

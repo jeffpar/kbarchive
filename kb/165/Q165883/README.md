@@ -6,6 +6,8 @@ permalink: /kb/165/Q165883/
 
 ## Q165883: Errors with Large Recursive Branch and Share Operations
 
+{% raw %}
+
 	Article: Q165883
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0,6.0
@@ -222,3 +224,5 @@ permalink: /kb/165/Q165883/
 	
 	=============================================================================
 	
+
+{% endraw %}

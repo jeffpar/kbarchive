@@ -6,6 +6,8 @@ permalink: /kb/237/Q237541/
 
 ## Q237541: XADM: Exchange Perfmon Counters Not Visible on Cluster
 
+{% raw %}
+
 	Article: Q237541
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -200,3 +202,5 @@ permalink: /kb/237/Q237541/
 	
 	=============================================================================
 	
+
+{% endraw %}

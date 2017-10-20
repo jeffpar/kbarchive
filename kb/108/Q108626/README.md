@@ -6,6 +6,8 @@ permalink: /kb/108/Q108626/
 
 ## Q108626: Writer 1: Gaps in Letters that Cross Page Breaks
 
+{% raw %}
+
 	Article: Q108626
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a
@@ -59,3 +61,5 @@ permalink: /kb/108/Q108626/
 	
 	=============================================================================
 	
+
+{% endraw %}

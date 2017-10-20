@@ -6,6 +6,8 @@ permalink: /kb/030/Q30646/
 
 ## Q30646: Cannot Create .COM Files in C Compiler
 
+{% raw %}
+
 	Article: Q30646
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10
@@ -29,3 +31,5 @@ permalink: /kb/030/Q30646/
 	   One way to use the C Compiler in creating .COM programs is to
 	compile with the /Fa option to create an assembly listing. The .ASM
 	file(s) can then be modified so it only uses one segment.
+
+{% endraw %}

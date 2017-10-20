@@ -6,6 +6,8 @@ permalink: /kb/180/Q180839/
 
 ## Q180839: FIX: In-line Comments Parsed by Microsoft Oracle Driver
 
+{% raw %}
+
 	Article: Q180839
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5,Build 2.73.7269,Build 2.73.7283.01,Build 2.73.7283.03,Build 2.73.7356
@@ -102,3 +104,5 @@ permalink: /kb/180/Q180839/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/201/Q201181/
 
 ## Q201181: BUG: CoolBar: Large FixedWidth/MinWidth Setting Locks Computer
 
+{% raw %}
+
 	Article: Q201181
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -90,3 +92,5 @@ permalink: /kb/201/Q201181/
 	
 	=============================================================================
 	
+
+{% endraw %}

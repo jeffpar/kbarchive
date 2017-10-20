@@ -6,6 +6,8 @@ permalink: /kb/154/Q154611/
 
 ## Q154611: SMS: NetCard ID Not Detected on a Direct Hosted IPX Client
 
+{% raw %}
+
 	Article: Q154611
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -71,3 +73,5 @@ permalink: /kb/154/Q154611/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165211/
 
 ## Q165211: PPT7: Text Behind Object Prints w/ Some HP Printer Drivers
 
+{% raw %}
+
 	Article: Q165211
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -118,3 +120,5 @@ permalink: /kb/165/Q165211/
 	
 	=============================================================================
 	
+
+{% endraw %}

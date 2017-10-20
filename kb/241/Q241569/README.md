@@ -6,6 +6,8 @@ permalink: /kb/241/Q241569/
 
 ## Q241569: BUG: C2258 and C2252 on in Place Initialization of Static Const
 
+{% raw %}
+
 	Article: Q241569
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -87,3 +89,5 @@ permalink: /kb/241/Q241569/
 	
 	=============================================================================
 	
+
+{% endraw %}

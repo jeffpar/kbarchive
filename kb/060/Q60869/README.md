@@ -6,6 +6,8 @@ permalink: /kb/060/Q60869/
 
 ## Q60869: How to Explicitly Reference Command-Line Tail
 
+{% raw %}
+
 	Article: Q60869
 	Product(s): See article
 	Version(s): 5.x 6.00
@@ -68,3 +70,5 @@ permalink: /kb/060/Q60869/
 	Note: A more portable way of getting this information is to use the
 	argv mechanism built into C. This may be easier because the command
 	line would be already partially parsed by the setargv() function.
+
+{% endraw %}

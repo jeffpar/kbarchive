@@ -6,6 +6,8 @@ permalink: /kb/133/Q133162/
 
 ## Q133162: PPT7: Network Installation: .cag Files Not Read-Only
 
+{% raw %}
+
 	Article: Q133162
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -80,3 +82,5 @@ permalink: /kb/133/Q133162/
 	
 	=============================================================================
 	
+
+{% endraw %}

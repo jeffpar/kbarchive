@@ -6,6 +6,8 @@ permalink: /kb/318/Q318396/
 
 ## Q318396: Password Length Limitations for SMS Service Accounts
 
+{% raw %}
+
 	Article: Q318396
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -62,3 +64,5 @@ permalink: /kb/318/Q318396/
 	
 	=============================================================================
 	
+
+{% endraw %}

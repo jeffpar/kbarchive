@@ -6,6 +6,8 @@ permalink: /kb/062/Q62493/
 
 ## Q62493: Mac Hyp: displayMessageCenter Displays Mail DA Account
 
+{% raw %}
+
 	Article: Q62493
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0
@@ -50,3 +52,5 @@ permalink: /kb/062/Q62493/
 	
 	=============================================================================
 	
+
+{% endraw %}

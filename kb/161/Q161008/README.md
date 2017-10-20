@@ -6,6 +6,8 @@ permalink: /kb/161/Q161008/
 
 ## Q161008: HOWTO: Add an About Box to an ActiveX Control (UserControl)
 
+{% raw %}
+
 	Article: Q161008
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/161/Q161008/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82050/
 
 ## Q82050: PC Win: Wide Objects Cannot Be Entirely Viewed
 
+{% raw %}
+
 	Article: Q82050
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/082/Q82050/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85187/
 
 ## Q85187: Directly Accessing Control Panel Options
 
+{% raw %}
+
 	Article: Q85187
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/085/Q85187/
 	
 	=============================================================================
 	
+
+{% endraw %}

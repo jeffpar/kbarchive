@@ -6,6 +6,8 @@ permalink: /kb/191/Q191742/
 
 ## Q191742: IIS: Access Denied When Trying to Update Files on IIS Computer
 
+{% raw %}
+
 	Article: Q191742
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -139,3 +141,5 @@ permalink: /kb/191/Q191742/
 	
 	=============================================================================
 	
+
+{% endraw %}

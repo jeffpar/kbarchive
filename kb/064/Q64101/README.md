@@ -6,6 +6,8 @@ permalink: /kb/064/Q64101/
 
 ## Q64101: Description of Expanded Memory Switches for BASIC PDS 7.10
 
+{% raw %}
+
 	Article: Q64101
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -139,3 +141,5 @@ permalink: /kb/064/Q64101/
 	
 	  Note: /Es will not cause save/restore operations on ISAM statements
 	  if ISAM is NOT using expanded memory.
+
+{% endraw %}

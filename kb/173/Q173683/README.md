@@ -6,6 +6,8 @@ permalink: /kb/173/Q173683/
 
 ## Q173683: WD97: Error Message: &quot;Word Cannot Give a Document the Same Name&quot;
 
+{% raw %}
+
 	Article: Q173683
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -92,3 +94,5 @@ permalink: /kb/173/Q173683/
 	
 	=============================================================================
 	
+
+{% endraw %}

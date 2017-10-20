@@ -6,6 +6,8 @@ permalink: /kb/255/Q255960/
 
 ## Q255960: Allegiance: Colors of the Aiming Reticule Described Incorrectly
 
+{% raw %}
+
 	Article: Q255960
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -41,3 +43,5 @@ permalink: /kb/255/Q255960/
 	
 	=============================================================================
 	
+
+{% endraw %}

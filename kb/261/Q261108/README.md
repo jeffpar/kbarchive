@@ -6,6 +6,8 @@ permalink: /kb/261/Q261108/
 
 ## Q261108: HOWTO: Use ADO in VFP Interactively with the ADO Control
 
+{% raw %}
+
 	Article: Q261108
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6,6.0
@@ -97,3 +99,5 @@ permalink: /kb/261/Q261108/
 	
 	=============================================================================
 	
+
+{% endraw %}

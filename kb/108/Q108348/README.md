@@ -6,6 +6,8 @@ permalink: /kb/108/Q108348/
 
 ## Q108348: FIX: Error F1001 in schedp5u.c Compiling with -Ox and -G5
 
+{% raw %}
+
 	Article: Q108348
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -68,3 +70,5 @@ permalink: /kb/108/Q108348/
 	
 	=============================================================================
 	
+
+{% endraw %}

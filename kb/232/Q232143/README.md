@@ -6,6 +6,8 @@ permalink: /kb/232/Q232143/
 
 ## Q232143: Various Errors When MSI File Creates and Modifies Files and Keys
 
+{% raw %}
+
 	Article: Q232143
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000
@@ -74,3 +76,5 @@ permalink: /kb/232/Q232143/
 	
 	=============================================================================
 	
+
+{% endraw %}

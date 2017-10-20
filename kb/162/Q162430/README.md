@@ -6,6 +6,8 @@ permalink: /kb/162/Q162430/
 
 ## Q162430: XCON: Exchange Content Type Encoding
 
+{% raw %}
+
 	Article: Q162430
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/162/Q162430/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191313/
 
 ## Q191313: BUG: Word Doc in Component Gallery Gives Fatal Exception Err
 
+{% raw %}
+
 	Article: Q191313
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -71,3 +73,5 @@ permalink: /kb/191/Q191313/
 	
 	=============================================================================
 	
+
+{% endraw %}

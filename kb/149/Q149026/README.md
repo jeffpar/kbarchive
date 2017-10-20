@@ -6,6 +6,8 @@ permalink: /kb/149/Q149026/
 
 ## Q149026: Encarta 1996: Generic Icon Appears for CD-ROM Drive
 
+{% raw %}
+
 	Article: Q149026
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -64,3 +66,5 @@ permalink: /kb/149/Q149026/
 	
 	=============================================================================
 	
+
+{% endraw %}

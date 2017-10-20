@@ -6,6 +6,8 @@ permalink: /kb/302/Q302979/
 
 ## Q302979: When Adding A Paying Hotmail.com Account, Phone Number Pages Ski
 
+{% raw %}
+
 	Article: Q302979
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -65,3 +67,5 @@ permalink: /kb/302/Q302979/
 	
 	=============================================================================
 	
+
+{% endraw %}

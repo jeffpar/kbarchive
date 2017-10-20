@@ -6,6 +6,8 @@ permalink: /kb/233/Q233170/
 
 ## Q233170: Error: 'Top.Opener.Document.Userform.HdnPort' Is Not an Object
 
+{% raw %}
+
 	Article: Q233170
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/233/Q233170/
 	
 	=============================================================================
 	
+
+{% endraw %}

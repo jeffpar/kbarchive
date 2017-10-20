@@ -6,6 +6,8 @@ permalink: /kb/121/Q121139/
 
 ## Q121139: Space: Planets Have No Color
 
+{% raw %}
+
 	Article: Q121139
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/121/Q121139/
 	
 	=============================================================================
 	
+
+{% endraw %}

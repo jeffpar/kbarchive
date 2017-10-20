@@ -6,6 +6,8 @@ permalink: /kb/142/Q142708/
 
 ## Q142708: WinNT 3.51 SP2 w/ UK Keyboard Gives Wrong Accented Characters
 
+{% raw %}
+
 	Article: Q142708
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP2,4.0
@@ -55,3 +57,5 @@ permalink: /kb/142/Q142708/
 	
 	=============================================================================
 	
+
+{% endraw %}

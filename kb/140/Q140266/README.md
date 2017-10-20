@@ -6,6 +6,8 @@ permalink: /kb/140/Q140266/
 
 ## Q140266: 5250 Applet Causes GP Fault when Entering AS/400 Host Editor
 
+{% raw %}
+
 	Article: Q140266
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11
@@ -80,3 +82,5 @@ permalink: /kb/140/Q140266/
 	
 	=============================================================================
 	
+
+{% endraw %}

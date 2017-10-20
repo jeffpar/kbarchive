@@ -6,6 +6,8 @@ permalink: /kb/225/Q225279/
 
 ## Q225279: Unable to Start Internet Services Manager (HTML) Tool
 
+{% raw %}
+
 	Article: Q225279
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/225/Q225279/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172216/
 
 ## Q172216: How to Force Routing and Remote Access to Use PAP
 
+{% raw %}
+
 	Article: Q172216
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -96,3 +98,5 @@ permalink: /kb/172/Q172216/
 	
 	=============================================================================
 	
+
+{% endraw %}

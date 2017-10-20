@@ -6,6 +6,8 @@ permalink: /kb/083/Q83477/
 
 ## Q83477: New Key Combinations for Edit Menu Commands in Windows 3.1
 
+{% raw %}
+
 	Article: Q83477
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11,95; winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/083/Q83477/
 	
 	=============================================================================
 	
+
+{% endraw %}

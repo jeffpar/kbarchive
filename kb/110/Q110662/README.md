@@ -6,6 +6,8 @@ permalink: /kb/110/Q110662/
 
 ## Q110662: BUG: SystemParametersInfo() Does Not Modify WIN.INI
 
+{% raw %}
+
 	Article: Q110662
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -73,3 +75,5 @@ permalink: /kb/110/Q110662/
 	
 	=============================================================================
 	
+
+{% endraw %}

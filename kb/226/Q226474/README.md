@@ -6,6 +6,8 @@ permalink: /kb/226/Q226474/
 
 ## Q226474: Err Msg: Active Server Pages, ASP 0131 Disallowed Parent Path
 
+{% raw %}
+
 	Article: Q226474
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0;5.0
@@ -101,3 +103,5 @@ permalink: /kb/226/Q226474/
 	
 	=============================================================================
 	
+
+{% endraw %}

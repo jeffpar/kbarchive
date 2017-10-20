@@ -6,6 +6,8 @@ permalink: /kb/304/Q304588/
 
 ## Q304588: SMS: No Mouse or Keyboard When You Remotely Control SMS Client
 
+{% raw %}
+
 	Article: Q304588
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP3
@@ -76,3 +78,5 @@ permalink: /kb/304/Q304588/
 	
 	=============================================================================
 	
+
+{% endraw %}

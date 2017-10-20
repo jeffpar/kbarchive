@@ -6,6 +6,8 @@ permalink: /kb/320/Q320860/
 
 ## Q320860: PRB: &quot;Operation Could Not Be Completed&quot; Err Msg
 
+{% raw %}
+
 	Article: Q320860
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/320/Q320860/
 	
 	=============================================================================
 	
+
+{% endraw %}

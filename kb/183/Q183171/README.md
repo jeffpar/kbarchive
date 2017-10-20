@@ -6,6 +6,8 @@ permalink: /kb/183/Q183171/
 
 ## Q183171: XADM: Internet Mail Service Error with 5.5 Added to Site
 
+{% raw %}
+
 	Article: Q183171
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -72,3 +74,5 @@ permalink: /kb/183/Q183171/
 	
 	=============================================================================
 	
+
+{% endraw %}

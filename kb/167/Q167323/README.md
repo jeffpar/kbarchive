@@ -6,6 +6,8 @@ permalink: /kb/167/Q167323/
 
 ## Q167323: BUG: Compiler Error C2955 Caused by Global STL Iterators
 
+{% raw %}
+
 	Article: Q167323
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -93,3 +95,5 @@ permalink: /kb/167/Q167323/
 	
 	=============================================================================
 	
+
+{% endraw %}

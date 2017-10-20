@@ -6,6 +6,8 @@ permalink: /kb/234/Q234398/
 
 ## Q234398: XCLN: Extended Chars. Not Displayed Correctly in Meeting Request
 
+{% raw %}
+
 	Article: Q234398
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -64,3 +66,5 @@ permalink: /kb/234/Q234398/
 	
 	=============================================================================
 	
+
+{% endraw %}

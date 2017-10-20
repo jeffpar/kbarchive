@@ -6,6 +6,8 @@ permalink: /kb/268/Q268712/
 
 ## Q268712: SMS: Error Message When You Perform a Site Reset
 
+{% raw %}
+
 	Article: Q268712
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -84,3 +86,5 @@ permalink: /kb/268/Q268712/
 	
 	=============================================================================
 	
+
+{% endraw %}

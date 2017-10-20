@@ -6,6 +6,8 @@ permalink: /kb/047/Q47623/
 
 ## Q47623: Using the Toshiba PageLaser II with Windows
 
+{% raw %}
+
 	Article: Q47623
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a
@@ -69,3 +71,5 @@ permalink: /kb/047/Q47623/
 	
 	=============================================================================
 	
+
+{% endraw %}

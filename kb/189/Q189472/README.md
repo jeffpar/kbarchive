@@ -6,6 +6,8 @@ permalink: /kb/189/Q189472/
 
 ## Q189472: PRB: &quot;Unexpected Error; Quitting&quot; When Starting Visual Basic
 
+{% raw %}
+
 	Article: Q189472
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -90,3 +92,5 @@ permalink: /kb/189/Q189472/
 	
 	=============================================================================
 	
+
+{% endraw %}

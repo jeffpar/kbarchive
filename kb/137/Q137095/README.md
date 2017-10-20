@@ -6,6 +6,8 @@ permalink: /kb/137/Q137095/
 
 ## Q137095: HOWTO: Provide Constants from an ActiveX Component
 
+{% raw %}
+
 	Article: Q137095
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -95,3 +97,5 @@ permalink: /kb/137/Q137095/
 	
 	=============================================================================
 	
+
+{% endraw %}

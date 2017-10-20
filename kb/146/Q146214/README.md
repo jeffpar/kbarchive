@@ -6,6 +6,8 @@ permalink: /kb/146/Q146214/
 
 ## Q146214: How to Change Insertion Point Color in Windows-Based Programs
 
+{% raw %}
+
 	Article: Q146214
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a,3.1,3.11,4.0
@@ -87,3 +89,5 @@ permalink: /kb/146/Q146214/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172509/
 
 ## Q172509: Explorer Erroneously Generates Event 560 - Write Failures
 
+{% raw %}
+
 	Article: Q172509
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -79,3 +81,5 @@ permalink: /kb/172/Q172509/
 	
 	=============================================================================
 	
+
+{% endraw %}

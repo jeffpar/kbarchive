@@ -6,6 +6,8 @@ permalink: /kb/111/Q111283/
 
 ## Q111283: FIX: F1001 Error Compiling 2 Gigabyte Array with -Zi
 
+{% raw %}
+
 	Article: Q111283
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -85,3 +87,5 @@ permalink: /kb/111/Q111283/
 	
 	=============================================================================
 	
+
+{% endraw %}

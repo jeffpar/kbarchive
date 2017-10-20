@@ -6,6 +6,8 @@ permalink: /kb/190/Q190682/
 
 ## Q190682: HOWTO: Use the Password Dialog Box Foundation Class
 
+{% raw %}
+
 	Article: Q190682
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -82,3 +84,5 @@ permalink: /kb/190/Q190682/
 	
 	=============================================================================
 	
+
+{% endraw %}

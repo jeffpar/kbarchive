@@ -6,6 +6,8 @@ permalink: /kb/137/Q137425/
 
 ## Q137425: Not Enough Disk Space When Running WINHLP32 in Windows NT 3.51
 
+{% raw %}
+
 	Article: Q137425
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -74,3 +76,5 @@ permalink: /kb/137/Q137425/
 	
 	=============================================================================
 	
+
+{% endraw %}

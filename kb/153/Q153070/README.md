@@ -6,6 +6,8 @@ permalink: /kb/153/Q153070/
 
 ## Q153070: Some IPC&#36; Connections Cannot Be Disconnected
 
+{% raw %}
+
 	Article: Q153070
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -80,3 +82,5 @@ permalink: /kb/153/Q153070/
 	
 	=============================================================================
 	
+
+{% endraw %}

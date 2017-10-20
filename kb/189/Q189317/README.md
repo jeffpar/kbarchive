@@ -6,6 +6,8 @@ permalink: /kb/189/Q189317/
 
 ## Q189317: MTM2: &quot;Application Error&quot; Installing Game in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q189317
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -81,3 +83,5 @@ permalink: /kb/189/Q189317/
 	
 	=============================================================================
 	
+
+{% endraw %}

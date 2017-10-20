@@ -6,6 +6,8 @@ permalink: /kb/231/Q231879/
 
 ## Q231879: PRB: No Update Tables are Specified when Updating Records
 
+{% raw %}
+
 	Article: Q231879
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0,6.0 SP3
@@ -163,3 +165,5 @@ permalink: /kb/231/Q231879/
 	
 	=============================================================================
 	
+
+{% endraw %}

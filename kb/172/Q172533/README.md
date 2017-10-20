@@ -6,6 +6,8 @@ permalink: /kb/172/Q172533/
 
 ## Q172533: SMS: Invmac Fails to Perform Resync
 
+{% raw %}
+
 	Article: Q172533
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -83,3 +85,5 @@ permalink: /kb/172/Q172533/
 	
 	=============================================================================
 	
+
+{% endraw %}

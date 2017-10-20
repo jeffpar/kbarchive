@@ -6,6 +6,8 @@ permalink: /kb/159/Q159599/
 
 ## Q159599: WINS Consistency Checking May Not Start at Scheduled Time
 
+{% raw %}
+
 	Article: Q159599
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -76,3 +78,5 @@ permalink: /kb/159/Q159599/
 	
 	=============================================================================
 	
+
+{% endraw %}

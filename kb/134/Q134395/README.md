@@ -6,6 +6,8 @@ permalink: /kb/134/Q134395/
 
 ## Q134395: Sorting by Size and Date Modified Does Not Work in MSN Explorer
 
+{% raw %}
+
 	Article: Q134395
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -41,3 +43,5 @@ permalink: /kb/134/Q134395/
 	
 	=============================================================================
 	
+
+{% endraw %}

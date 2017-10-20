@@ -6,6 +6,8 @@ permalink: /kb/136/Q136274/
 
 ## Q136274: Stacker 4.0 or Earlier May Damage Long Filenames
 
+{% raw %}
+
 	Article: Q136274
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -69,3 +71,5 @@ permalink: /kb/136/Q136274/
 	
 	=============================================================================
 	
+
+{% endraw %}

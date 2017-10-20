@@ -6,6 +6,8 @@ permalink: /kb/065/Q65647/
 
 ## Q65647: Warning C4035 When Compiling with /Zg and Either /W3 or /W4
 
+{% raw %}
+
 	Article: Q65647
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -30,3 +32,5 @@ permalink: /kb/065/Q65647/
 	together. Microsoft has confirmed this to be a problem in C version
 	6.00. We are researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

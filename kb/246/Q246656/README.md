@@ -6,6 +6,8 @@ permalink: /kb/246/Q246656/
 
 ## Q246656: PRB: SQL SELECT Cursor Resultset Changes when Variable Changes
 
+{% raw %}
+
 	Article: Q246656
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -170,3 +172,5 @@ permalink: /kb/246/Q246656/
 	
 	=============================================================================
 	
+
+{% endraw %}

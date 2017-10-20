@@ -6,6 +6,8 @@ permalink: /kb/134/Q134316/
 
 ## Q134316: List of Read-Only Properties at Design Time in Visual FoxPro
 
+{% raw %}
+
 	Article: Q134316
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -95,3 +97,5 @@ permalink: /kb/134/Q134316/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/223/Q223817/
 
 ## Q223817: XWEB: POST w/ Long URLs May Fail; 2-KB Limit in Exchfilt.dll
 
+{% raw %}
+
 	Article: Q223817
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/223/Q223817/
 	
 	=============================================================================
 	
+
+{% endraw %}

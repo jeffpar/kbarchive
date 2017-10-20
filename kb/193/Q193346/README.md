@@ -6,6 +6,8 @@ permalink: /kb/193/Q193346/
 
 ## Q193346: XFOR: Message Delivery Is Slowed or Stopped to SNADS
 
+{% raw %}
+
 	Article: Q193346
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -79,3 +81,5 @@ permalink: /kb/193/Q193346/
 	
 	=============================================================================
 	
+
+{% endraw %}

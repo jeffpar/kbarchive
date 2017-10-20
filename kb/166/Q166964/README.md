@@ -6,6 +6,8 @@ permalink: /kb/166/Q166964/
 
 ## Q166964: Incorrect File Listing on NetWare Server with DIR /TC Command
 
+{% raw %}
+
 	Article: Q166964
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/166/Q166964/
 	
 	=============================================================================
 	
+
+{% endraw %}

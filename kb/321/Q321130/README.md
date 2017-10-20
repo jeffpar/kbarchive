@@ -6,6 +6,8 @@ permalink: /kb/321/Q321130/
 
 ## Q321130: MS02-018: Patch for Buffer Overrun in HTTP Header Handling
 
+{% raw %}
+
 	Article: Q321130
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -146,3 +148,5 @@ permalink: /kb/321/Q321130/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/062/Q62051/
 
 ## Q62051: Mac Hyp: Getting a Message Type or List of Message Types
 
+{% raw %}
+
 	Article: Q62051
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -62,3 +64,5 @@ permalink: /kb/062/Q62051/
 	
 	=============================================================================
 	
+
+{% endraw %}

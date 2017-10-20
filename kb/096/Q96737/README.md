@@ -6,6 +6,8 @@ permalink: /kb/096/Q96737/
 
 ## Q96737: FTADMIN Incorrectly Shows Phantom Drives or Problems
 
+{% raw %}
+
 	Article: Q96737
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/096/Q96737/
 	
 	=============================================================================
 	
+
+{% endraw %}

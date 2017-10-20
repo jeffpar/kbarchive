@@ -6,6 +6,8 @@ permalink: /kb/286/Q286819/
 
 ## Q286819: SMS 1.2 SP3 Inventory Agent May Corrupt Network Adapter Data
 
+{% raw %}
+
 	Article: Q286819
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP3
@@ -116,3 +118,5 @@ permalink: /kb/286/Q286819/
 	
 	=============================================================================
 	
+
+{% endraw %}

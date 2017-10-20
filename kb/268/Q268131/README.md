@@ -6,6 +6,8 @@ permalink: /kb/268/Q268131/
 
 ## Q268131: XADM: Store Uses Wrong Language Delivering Quota Warning to PF
 
+{% raw %}
+
 	Article: Q268131
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -88,3 +90,5 @@ permalink: /kb/268/Q268131/
 	
 	=============================================================================
 	
+
+{% endraw %}

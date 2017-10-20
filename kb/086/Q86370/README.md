@@ -6,6 +6,8 @@ permalink: /kb/086/Q86370/
 
 ## Q86370: Paintbrush Err Msg: Unable to Print, Not Enough Memory or ...
 
+{% raw %}
+
 	Article: Q86370
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -74,3 +76,5 @@ permalink: /kb/086/Q86370/
 	
 	=============================================================================
 	
+
+{% endraw %}

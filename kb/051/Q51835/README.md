@@ -6,6 +6,8 @@ permalink: /kb/051/Q51835/
 
 ## Q51835: &quot;Error C2410: 'var' : Ambiguous Member Name Operand 2&quot;
 
+{% raw %}
+
 	Article: Q51835
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -44,3 +46,5 @@ permalink: /kb/051/Q51835/
 	Microsoft has confirmed this to be a problem in QuickC Version 2.10.
 	We are researching this problem and will post new information here as
 	it becomes available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173974/
 
 ## Q173974: HOWTO: Add MFC Support to an ATL Project
 
+{% raw %}
+
 	Article: Q173974
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,3.0,5.0,6.0
@@ -227,3 +229,5 @@ permalink: /kb/173/Q173974/
 	
 	=============================================================================
 	
+
+{% endraw %}

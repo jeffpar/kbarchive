@@ -6,6 +6,8 @@ permalink: /kb/039/Q39524/
 
 ## Q39524: TSR in Assembly
 
+{% raw %}
+
 	Article: Q39524
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -221,3 +223,5 @@ permalink: /kb/039/Q39524/
 	                int     27h                   ; int 21h would work
 	_text   ends
 	        end start
+
+{% endraw %}

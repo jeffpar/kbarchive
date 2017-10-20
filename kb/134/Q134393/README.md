@@ -6,6 +6,8 @@ permalink: /kb/134/Q134393/
 
 ## Q134393: FIX: Can't Bring a Grid Forward When It's Beneath Another Grid
 
+{% raw %}
+
 	Article: Q134393
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -65,3 +67,5 @@ permalink: /kb/134/Q134393/
 	
 	=============================================================================
 	
+
+{% endraw %}

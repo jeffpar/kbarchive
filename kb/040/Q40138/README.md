@@ -6,6 +6,8 @@ permalink: /kb/040/Q40138/
 
 ## Q40138: Inner Marker Beacon Does Not Beep or Light for ILS Landings
 
+{% raw %}
+
 	Article: Q40138
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/040/Q40138/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86025/
 
 ## Q86025: LaserJet II Does Not Print Large TrueType Fonts Correctly
 
+{% raw %}
+
 	Article: Q86025
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/086/Q86025/
 	
 	=============================================================================
 	
+
+{% endraw %}

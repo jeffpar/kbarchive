@@ -6,6 +6,8 @@ permalink: /kb/121/Q121161/
 
 ## Q121161: Access Denied Using User Manager for Domains in Server Tools
 
+{% raw %}
+
 	Article: Q121161
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -51,3 +53,5 @@ permalink: /kb/121/Q121161/
 	
 	=============================================================================
 	
+
+{% endraw %}

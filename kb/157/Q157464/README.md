@@ -6,6 +6,8 @@ permalink: /kb/157/Q157464/
 
 ## Q157464: WD97: Where Settings Are Stored in the Registry
 
+{% raw %}
+
 	Article: Q157464
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -417,3 +419,5 @@ permalink: /kb/157/Q157464/
 	
 	=============================================================================
 	
+
+{% endraw %}

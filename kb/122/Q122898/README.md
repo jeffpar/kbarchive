@@ -6,6 +6,8 @@ permalink: /kb/122/Q122898/
 
 ## Q122898: DEC Pathworks Problems with 3COM Network Adapters
 
+{% raw %}
+
 	Article: Q122898
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/122/Q122898/
 	
 	=============================================================================
 	
+
+{% endraw %}

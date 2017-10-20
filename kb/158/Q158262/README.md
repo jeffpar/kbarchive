@@ -6,6 +6,8 @@ permalink: /kb/158/Q158262/
 
 ## Q158262: SAMPLE: Custom AppWizard for the DAO SDK/dbDao Classes
 
+{% raw %}
+
 	Article: Q158262
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -85,3 +87,5 @@ permalink: /kb/158/Q158262/
 	
 	=============================================================================
 	
+
+{% endraw %}

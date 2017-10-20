@@ -6,6 +6,8 @@ permalink: /kb/163/Q163905/
 
 ## Q163905: Auditing User Right Assignment Changes
 
+{% raw %}
+
 	Article: Q163905
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -312,3 +314,5 @@ permalink: /kb/163/Q163905/
 	
 	=============================================================================
 	
+
+{% endraw %}

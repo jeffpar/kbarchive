@@ -6,6 +6,8 @@ permalink: /kb/075/Q75601/
 
 ## Q75601: BUG: Continuation Char with Initializing Structures
 
+{% raw %}
+
 	Article: Q75601
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.10a,6.0,6.0a,6.0b,6.1,6.10a,6.11
@@ -104,3 +106,5 @@ permalink: /kb/075/Q75601/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87980/
 
 ## Q87980: SYSTEM.INI Entries Made by PC-Speaker Explained
 
+{% raw %}
+
 	Article: Q87980
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -105,3 +107,5 @@ permalink: /kb/087/Q87980/
 	
 	=============================================================================
 	
+
+{% endraw %}

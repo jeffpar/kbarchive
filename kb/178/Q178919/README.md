@@ -6,6 +6,8 @@ permalink: /kb/178/Q178919/
 
 ## Q178919: XADM: Exchange Event Service Not Installed During Upgrade
 
+{% raw %}
+
 	Article: Q178919
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -47,3 +49,5 @@ permalink: /kb/178/Q178919/
 	
 	=============================================================================
 	
+
+{% endraw %}

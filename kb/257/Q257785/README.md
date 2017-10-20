@@ -6,6 +6,8 @@ permalink: /kb/257/Q257785/
 
 ## Q257785: FIX: Access Violation Closing IE Window After Opening HTML Page
 
+{% raw %}
+
 	Article: Q257785
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/257/Q257785/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/113/Q113710/
 
 ## Q113710: Err Msg: &quot;Access Denied&quot; on Backup or Update of RAS Temp File
 
+{% raw %}
+
 	Article: Q113710
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -68,3 +70,5 @@ permalink: /kb/113/Q113710/
 	
 	=============================================================================
 	
+
+{% endraw %}

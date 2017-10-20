@@ -6,6 +6,8 @@ permalink: /kb/302/Q302424/
 
 ## Q302424: FP: Error Message or Active Server Pages Stop Responding (Hang)
 
+{% raw %}
+
 	Article: Q302424
 	Product(s): Word Front Page
 	Version(s): 4.0,5.0
@@ -104,3 +106,5 @@ permalink: /kb/302/Q302424/
 	
 	=============================================================================
 	
+
+{% endraw %}

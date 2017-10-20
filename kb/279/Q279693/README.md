@@ -6,6 +6,8 @@ permalink: /kb/279/Q279693/
 
 ## Q279693: HOWTO: T-Shoot Errors from Apps with Missing Components
 
+{% raw %}
+
 	Article: Q279693
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -87,3 +89,5 @@ permalink: /kb/279/Q279693/
 	
 	=============================================================================
 	
+
+{% endraw %}

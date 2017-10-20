@@ -6,6 +6,8 @@ permalink: /kb/126/Q126290/
 
 ## Q126290: PC Win: Reply All Does Not Function Correctly w/ Routing Form
 
+{% raw %}
+
 	Article: Q126290
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -50,3 +52,5 @@ permalink: /kb/126/Q126290/
 	
 	=============================================================================
 	
+
+{% endraw %}

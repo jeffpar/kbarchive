@@ -6,6 +6,8 @@ permalink: /kb/187/Q187442/
 
 ## Q187442: Unable to Create a New Session
 
+{% raw %}
+
 	Article: Q187442
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/187/Q187442/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159190/
 
 ## Q159190: XCON: Spaces in Attachment File Names Are Replaced with Tildes
 
+{% raw %}
+
 	Article: Q159190
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/159/Q159190/
 	
 	=============================================================================
 	
+
+{% endraw %}

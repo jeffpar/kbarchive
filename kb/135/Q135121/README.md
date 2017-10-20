@@ -6,6 +6,8 @@ permalink: /kb/135/Q135121/
 
 ## Q135121: Configuration Backup Gives Confusing Warning on Restore
 
+{% raw %}
+
 	Article: Q135121
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/135/Q135121/
 	
 	=============================================================================
 	
+
+{% endraw %}

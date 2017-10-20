@@ -6,6 +6,8 @@ permalink: /kb/067/Q67321/
 
 ## Q67321: FAT Type and Cluster Size Depends on Logical Drive Size
 
+{% raw %}
+
 	Article: Q67321
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22; Win2000:95
@@ -94,3 +96,5 @@ permalink: /kb/067/Q67321/
 	
 	=============================================================================
 	
+
+{% endraw %}

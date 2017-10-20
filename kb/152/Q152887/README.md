@@ -6,6 +6,8 @@ permalink: /kb/152/Q152887/
 
 ## Q152887: XADM: Opening Property Page of Public IS Takes a Long Time
 
+{% raw %}
+
 	Article: Q152887
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -45,3 +47,5 @@ permalink: /kb/152/Q152887/
 	
 	=============================================================================
 	
+
+{% endraw %}

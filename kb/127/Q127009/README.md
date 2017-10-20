@@ -6,6 +6,8 @@ permalink: /kb/127/Q127009/
 
 ## Q127009: How to Position the Insertion Point in a Field on a Form
 
+{% raw %}
+
 	Article: Q127009
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -75,3 +77,5 @@ permalink: /kb/127/Q127009/
 	
 	=============================================================================
 	
+
+{% endraw %}

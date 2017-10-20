@@ -6,6 +6,8 @@ permalink: /kb/035/Q35774/
 
 ## Q35774: INFO: Differences Between PostAppMessage and PostMessage Funcs
 
+{% raw %}
+
 	Article: Q35774
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -166,3 +168,5 @@ permalink: /kb/035/Q35774/
 	
 	=============================================================================
 	
+
+{% endraw %}

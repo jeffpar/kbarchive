@@ -6,6 +6,8 @@ permalink: /kb/152/Q152300/
 
 ## Q152300: XADM: ExportObject in Command-Line Export Options File Only
 
+{% raw %}
+
 	Article: Q152300
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -72,3 +74,5 @@ permalink: /kb/152/Q152300/
 	
 	=============================================================================
 	
+
+{% endraw %}

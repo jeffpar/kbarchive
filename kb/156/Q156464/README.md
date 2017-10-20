@@ -6,6 +6,8 @@ permalink: /kb/156/Q156464/
 
 ## Q156464: Writer 2: Postscript Printing
 
+{% raw %}
+
 	Article: Q156464
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -70,3 +72,5 @@ permalink: /kb/156/Q156464/
 	
 	=============================================================================
 	
+
+{% endraw %}

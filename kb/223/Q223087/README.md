@@ -6,6 +6,8 @@ permalink: /kb/223/Q223087/
 
 ## Q223087: FIX: Accelerator keys Not Handled in ActiveX Control
 
+{% raw %}
+
 	Article: Q223087
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,4.01,4.01 SP1,4.01 SP2,5.0,6.0
@@ -106,3 +108,5 @@ permalink: /kb/223/Q223087/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/288/Q288106/
 
 ## Q288106: HOWTO:Use UDL File for Hierarchical Commands in Data Environment
 
+{% raw %}
+
 	Article: Q288106
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.1,2.1 (GA),2.1 SP1,2.1 SP2,2.5,2.5 SP1,2.6,6.0,6.0 SP3,6.0 SP4
@@ -125,3 +127,5 @@ permalink: /kb/288/Q288106/
 	
 	=============================================================================
 	
+
+{% endraw %}

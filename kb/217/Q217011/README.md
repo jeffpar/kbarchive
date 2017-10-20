@@ -6,6 +6,8 @@ permalink: /kb/217/Q217011/
 
 ## Q217011: HOWTO: Copy a DAO TableDef Including User-Defined Properties
 
+{% raw %}
+
 	Article: Q217011
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:2.0,4.0,5.0,6.0,7.0,97
@@ -218,3 +220,5 @@ permalink: /kb/217/Q217011/
 	
 	=============================================================================
 	
+
+{% endraw %}

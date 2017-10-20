@@ -6,6 +6,8 @@ permalink: /kb/151/Q151638/
 
 ## Q151638: BUG: RECO Is Unrecognized Phrase on VALIDATE DATABASE Command
 
+{% raw %}
+
 	Article: Q151638
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -78,3 +80,5 @@ permalink: /kb/151/Q151638/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171129/
 
 ## Q171129: WD97: Error Message If AutoText String Exceeds 255 Characters
 
+{% raw %}
+
 	Article: Q171129
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -123,3 +125,5 @@ permalink: /kb/171/Q171129/
 	
 	=============================================================================
 	
+
+{% endraw %}

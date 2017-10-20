@@ -6,6 +6,8 @@ permalink: /kb/243/Q243490/
 
 ## Q243490: Asheron's Call: Other Players Cannot See Monster on Your Screen
 
+{% raw %}
+
 	Article: Q243490
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -57,3 +59,5 @@ permalink: /kb/243/Q243490/
 	
 	=============================================================================
 	
+
+{% endraw %}

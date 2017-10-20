@@ -6,6 +6,8 @@ permalink: /kb/149/Q149227/
 
 ## Q149227: XSRV: Using the 1.0b Connection Gateway with Microsoft Exchange
 
+{% raw %}
+
 	Article: Q149227
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/149/Q149227/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/065/Q65014/
 
 ## Q65014: Mail Slots Must Be Active to Support DOS LAN Manager APIs
 
+{% raw %}
+
 	Article: Q65014
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/065/Q65014/
 	
 	=============================================================================
 	
+
+{% endraw %}

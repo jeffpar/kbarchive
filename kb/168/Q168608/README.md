@@ -6,6 +6,8 @@ permalink: /kb/168/Q168608/
 
 ## Q168608: Cheyenne's Ofant.sys Causes Stop 0x0000001e
 
+{% raw %}
+
 	Article: Q168608
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -57,3 +59,5 @@ permalink: /kb/168/Q168608/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125191/
 
 ## Q125191: NETAPI.DLL Failure Code 02 in BOOTLOG.TXT
 
+{% raw %}
+
 	Article: Q125191
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -73,3 +75,5 @@ permalink: /kb/125/Q125191/
 	
 	=============================================================================
 	
+
+{% endraw %}

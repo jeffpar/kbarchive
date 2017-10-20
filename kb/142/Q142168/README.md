@@ -6,6 +6,8 @@ permalink: /kb/142/Q142168/
 
 ## Q142168: PRB: Connectivity Error: Illegal reference in query
 
+{% raw %}
+
 	Article: Q142168
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -83,3 +85,5 @@ permalink: /kb/142/Q142168/
 	
 	=============================================================================
 	
+
+{% endraw %}

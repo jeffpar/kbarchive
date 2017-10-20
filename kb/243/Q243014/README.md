@@ -6,6 +6,8 @@ permalink: /kb/243/Q243014/
 
 ## Q243014: WD97: &quot;Unknown Switch Argument&quot; Opening Danish Word 2000 File
 
+{% raw %}
+
 	Article: Q243014
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -104,3 +106,5 @@ permalink: /kb/243/Q243014/
 	
 	=============================================================================
 	
+
+{% endraw %}

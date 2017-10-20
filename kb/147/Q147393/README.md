@@ -6,6 +6,8 @@ permalink: /kb/147/Q147393/
 
 ## Q147393: HOWTO: Profile an OLE Server or an OLE Control
 
+{% raw %}
+
 	Article: Q147393
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -146,3 +148,5 @@ permalink: /kb/147/Q147393/
 	
 	=============================================================================
 	
+
+{% endraw %}

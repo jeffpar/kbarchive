@@ -6,6 +6,8 @@ permalink: /kb/109/Q109454/
 
 ## Q109454: Writer: Backgrounds Are Truncated on LaserWriter
 
+{% raw %}
+
 	Article: Q109454
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a
@@ -67,3 +69,5 @@ permalink: /kb/109/Q109454/
 	
 	=============================================================================
 	
+
+{% endraw %}

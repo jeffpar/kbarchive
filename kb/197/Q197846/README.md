@@ -6,6 +6,8 @@ permalink: /kb/197/Q197846/
 
 ## Q197846: Printing Multiple Copies of the Same Job Via LPD Broken in SP4
 
+{% raw %}
+
 	Article: Q197846
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -85,3 +87,5 @@ permalink: /kb/197/Q197846/
 	
 	=============================================================================
 	
+
+{% endraw %}

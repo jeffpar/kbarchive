@@ -6,6 +6,8 @@ permalink: /kb/174/Q174403/
 
 ## Q174403: FIX: Unresolved Externals When Building MFC42 and MFCD42xD
 
+{% raw %}
+
 	Article: Q174403
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0sp1,5.0sp2
@@ -110,3 +112,5 @@ permalink: /kb/174/Q174403/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/094/Q94646/
 
 ## Q94646: INFO: Using GetCharABCWidths() to Calculate Text Extents
 
+{% raw %}
+
 	Article: Q94646
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -205,3 +207,5 @@ permalink: /kb/094/Q94646/
 	
 	=============================================================================
 	
+
+{% endraw %}

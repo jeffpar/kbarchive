@@ -6,6 +6,8 @@ permalink: /kb/161/Q161135/
 
 ## Q161135: PPT: Sample Code to Extract Text from an Organization Chart
 
+{% raw %}
+
 	Article: Q161135
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97; :2.0
@@ -324,3 +326,5 @@ permalink: /kb/161/Q161135/
 	
 	=============================================================================
 	
+
+{% endraw %}

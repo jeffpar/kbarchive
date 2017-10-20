@@ -6,6 +6,8 @@ permalink: /kb/048/Q48437/
 
 ## Q48437: View Panning in Flight Simulator Version 4.00
 
+{% raw %}
+
 	Article: Q48437
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -32,3 +34,5 @@ permalink: /kb/048/Q48437/
 	
 	=============================================================================
 	
+
+{% endraw %}

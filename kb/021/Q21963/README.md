@@ -6,6 +6,8 @@ permalink: /kb/021/Q21963/
 
 ## Q21963: ENVIRON Statement Produces &quot;Out of Memory&quot; Error Message
 
+{% raw %}
+
 	Article: Q21963
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -58,3 +60,5 @@ permalink: /kb/021/Q21963/
 	                           ' string.
 	
 	   Note that the MS-DOS environment variable names must be uppercase.
+
+{% endraw %}

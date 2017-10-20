@@ -6,6 +6,8 @@ permalink: /kb/161/Q161208/
 
 ## Q161208: HOWTO: Create a Default Property For a User Control
 
+{% raw %}
+
 	Article: Q161208
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/161/Q161208/
 	
 	=============================================================================
 	
+
+{% endraw %}

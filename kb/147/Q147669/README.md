@@ -6,6 +6,8 @@ permalink: /kb/147/Q147669/
 
 ## Q147669: PRB: SetupWiz Generated Setup Program Fails to Start Correctly
 
+{% raw %}
+
 	Article: Q147669
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -88,3 +90,5 @@ permalink: /kb/147/Q147669/
 	
 	=============================================================================
 	
+
+{% endraw %}

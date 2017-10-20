@@ -6,6 +6,8 @@ permalink: /kb/141/Q141190/
 
 ## Q141190: Disk Administrator Stops When Zip Drive is Present
 
+{% raw %}
+
 	Article: Q141190
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -78,3 +80,5 @@ permalink: /kb/141/Q141190/
 	
 	=============================================================================
 	
+
+{% endraw %}

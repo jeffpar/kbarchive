@@ -6,6 +6,8 @@ permalink: /kb/033/Q33706/
 
 ## Q33706: Sample BASIC Code to Display ROM-BIOS Date for an IBM PC
 
+{% raw %}
+
 	Article: Q33706
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -66,3 +68,5 @@ permalink: /kb/033/Q33706/
 	Versions earlier than 10/27/82, and they don't support hard drives.
 	IBM PC 2 machines are stamped with 64/256K on the motherboard and can
 	optionally support hard drives.
+
+{% endraw %}

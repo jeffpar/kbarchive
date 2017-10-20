@@ -6,6 +6,8 @@ permalink: /kb/241/Q241200/
 
 ## Q241200: Zone Error Message: Failed to Start ZProxy or ZoneClient
 
+{% raw %}
+
 	Article: Q241200
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -107,3 +109,5 @@ permalink: /kb/241/Q241200/
 	
 	=============================================================================
 	
+
+{% endraw %}

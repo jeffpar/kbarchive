@@ -6,6 +6,8 @@ permalink: /kb/108/Q108374/
 
 ## Q108374: SMTP: How to Find Available Memory
 
+{% raw %}
+
 	Article: Q108374
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -52,3 +54,5 @@ permalink: /kb/108/Q108374/
 	
 	=============================================================================
 	
+
+{% endraw %}

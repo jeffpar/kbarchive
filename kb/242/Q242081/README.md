@@ -6,6 +6,8 @@ permalink: /kb/242/Q242081/
 
 ## Q242081: NT 4.0 SP4 causes computer with Adaptec AAA-13x adapter to hang.
 
+{% raw %}
+
 	Article: Q242081
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/242/Q242081/
 	
 	=============================================================================
 	
+
+{% endraw %}

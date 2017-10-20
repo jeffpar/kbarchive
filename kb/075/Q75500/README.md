@@ -6,6 +6,8 @@ permalink: /kb/075/Q75500/
 
 ## Q75500: INFO: Altering Edit Control Strings in Place May Cause UAE
 
+{% raw %}
+
 	Article: Q75500
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -48,3 +50,5 @@ permalink: /kb/075/Q75500/
 	
 	=============================================================================
 	
+
+{% endraw %}

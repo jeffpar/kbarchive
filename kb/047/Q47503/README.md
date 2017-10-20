@@ -6,6 +6,8 @@ permalink: /kb/047/Q47503/
 
 ## Q47503: LINK Environment Variable Ignored When Linking Through CL
 
+{% raw %}
+
 	Article: Q47503
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -30,3 +32,5 @@ permalink: /kb/047/Q47503/
 	
 	The same behavior is seen with the command line compilers from QuickC
 	Version 1.00 and 1.01, but not with QuickC 2.00 or QuickAssembler.
+
+{% endraw %}

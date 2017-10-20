@@ -6,6 +6,8 @@ permalink: /kb/264/Q264471/
 
 ## Q264471: SAMPLE: PageHeap1.exe Finds Heap Corruption and Memory Errors
 
+{% raw %}
+
 	Article: Q264471
 	Product(s): Microsoft C Compiler
 	Version(s): 2000,6.0
@@ -191,3 +193,5 @@ permalink: /kb/264/Q264471/
 	
 	=============================================================================
 	
+
+{% endraw %}

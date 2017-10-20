@@ -6,6 +6,8 @@ permalink: /kb/322/Q322964/
 
 ## Q322964: XADM: An Exchange Server 5.5 Reinstallation Stops Responding
 
+{% raw %}
+
 	Article: Q322964
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,SP2
@@ -74,3 +76,5 @@ permalink: /kb/322/Q322964/
 	
 	=============================================================================
 	
+
+{% endraw %}

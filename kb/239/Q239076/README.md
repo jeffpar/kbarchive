@@ -6,6 +6,8 @@ permalink: /kb/239/Q239076/
 
 ## Q239076: XADM: Notification Body Doesn't Display Complete Path
 
+{% raw %}
+
 	Article: Q239076
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -45,3 +47,5 @@ permalink: /kb/239/Q239076/
 	
 	=============================================================================
 	
+
+{% endraw %}

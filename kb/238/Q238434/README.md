@@ -6,6 +6,8 @@ permalink: /kb/238/Q238434/
 
 ## Q238434: Error Message When Using NTLM Passthrough Authentication
 
+{% raw %}
+
 	Article: Q238434
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP5
@@ -76,3 +78,5 @@ permalink: /kb/238/Q238434/
 	
 	=============================================================================
 	
+
+{% endraw %}

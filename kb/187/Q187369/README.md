@@ -6,6 +6,8 @@ permalink: /kb/187/Q187369/
 
 ## Q187369: SMS: SETLS Stores File Time of Win.ini File
 
+{% raw %}
+
 	Article: Q187369
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -59,3 +61,5 @@ permalink: /kb/187/Q187369/
 	
 	=============================================================================
 	
+
+{% endraw %}

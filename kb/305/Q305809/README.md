@@ -6,6 +6,8 @@ permalink: /kb/305/Q305809/
 
 ## Q305809: Performance Monitor Processor Counter Explanation Is Unclear
 
+{% raw %}
+
 	Article: Q305809
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -46,3 +48,5 @@ permalink: /kb/305/Q305809/
 	
 	=============================================================================
 	
+
+{% endraw %}

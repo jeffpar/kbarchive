@@ -6,6 +6,8 @@ permalink: /kb/220/Q220954/
 
 ## Q220954: Event ID:20073 Attempting RADIUS Authentication on RRAS Server
 
+{% raw %}
+
 	Article: Q220954
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4
@@ -84,3 +86,5 @@ permalink: /kb/220/Q220954/
 	
 	=============================================================================
 	
+
+{% endraw %}

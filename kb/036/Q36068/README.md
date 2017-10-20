@@ -6,6 +6,8 @@ permalink: /kb/036/Q36068/
 
 ## Q36068: INFO: IEEE Floating-Point Representation and MS Languages
 
+{% raw %}
+
 	Article: Q36068
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,1.0a,1.5,1.51,1.52,2.0,2.1,4.0,6.0,6.0a,6.0ax,7.0
@@ -167,3 +169,5 @@ permalink: /kb/036/Q36068/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98987/
 
 ## Q98987: System Hangs (and Other Problems) with I82593.DOS Loaded High
 
+{% raw %}
+
 	Article: Q98987
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1
@@ -56,3 +58,5 @@ permalink: /kb/098/Q98987/
 	
 	=============================================================================
 	
+
+{% endraw %}

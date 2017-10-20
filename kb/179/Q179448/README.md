@@ -6,6 +6,8 @@ permalink: /kb/179/Q179448/
 
 ## Q179448: 6-Day Password Change Notification Cannot Be Changed
 
+{% raw %}
+
 	Article: Q179448
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/179/Q179448/
 	
 	=============================================================================
 	
+
+{% endraw %}

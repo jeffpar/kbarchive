@@ -6,6 +6,8 @@ permalink: /kb/139/Q139638/
 
 ## Q139638: HOWTO: Overload New to Reduce Memory Fragmentation
 
+{% raw %}
+
 	Article: Q139638
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:2.0,2.1,2.2,4.0,5.0;
@@ -175,3 +177,5 @@ permalink: /kb/139/Q139638/
 	
 	=============================================================================
 	
+
+{% endraw %}

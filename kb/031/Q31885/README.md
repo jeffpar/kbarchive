@@ -6,6 +6,8 @@ permalink: /kb/031/Q31885/
 
 ## Q31885: ON &lt;Event&gt; GOSUB Suspended Until INPUT or INPUT&#36; Is Satisfied
 
+{% raw %}
+
 	Article: Q31885
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -138,3 +140,5 @@ permalink: /kb/031/Q31885/
 	   MS-DOS
 	
 	2. Microsoft BASIC Compiler versions 5.35 and 5.36 for MS-DOS
+
+{% endraw %}

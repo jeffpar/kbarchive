@@ -6,6 +6,8 @@ permalink: /kb/064/Q64474/
 
 ## Q64474: Problems with HPPCL Driver Printing Boxes in Windows 3.00
 
+{% raw %}
+
 	Article: Q64474
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/064/Q64474/
 	
 	=============================================================================
 	
+
+{% endraw %}

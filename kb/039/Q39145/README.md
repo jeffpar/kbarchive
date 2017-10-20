@@ -6,6 +6,8 @@ permalink: /kb/039/Q39145/
 
 ## Q39145: QuickC Incorrectly Issues a C4051 Data Conversion Warning
 
+{% raw %}
+
 	Article: Q39145
 	Product(s): See article
 	Version(s): 1.00 1.01
@@ -40,3 +42,5 @@ permalink: /kb/039/Q39145/
 	1.01.
 	
 	This warning is not produced in QuickC Version 2.00.
+
+{% endraw %}

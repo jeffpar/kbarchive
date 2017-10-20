@@ -6,6 +6,8 @@ permalink: /kb/155/Q155417/
 
 ## Q155417: XADM: LoadSim, Microsoft Exchange Server Load Simulation Tool
 
+{% raw %}
+
 	Article: Q155417
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -126,3 +128,5 @@ permalink: /kb/155/Q155417/
 	
 	=============================================================================
 	
+
+{% endraw %}

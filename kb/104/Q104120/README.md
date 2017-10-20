@@ -6,6 +6,8 @@ permalink: /kb/104/Q104120/
 
 ## Q104120: ALT+T Causes Find List to Keep Scrolling
 
+{% raw %}
+
 	Article: Q104120
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -53,3 +55,5 @@ permalink: /kb/104/Q104120/
 	
 	=============================================================================
 	
+
+{% endraw %}

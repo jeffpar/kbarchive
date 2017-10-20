@@ -6,6 +6,8 @@ permalink: /kb/184/Q184831/
 
 ## Q184831: How to Disable the &quot;Logon Using Dial-Up Networking&quot; Option
 
+{% raw %}
+
 	Article: Q184831
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -77,3 +79,5 @@ permalink: /kb/184/Q184831/
 	
 	=============================================================================
 	
+
+{% endraw %}

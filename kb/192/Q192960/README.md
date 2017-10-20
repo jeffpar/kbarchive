@@ -6,6 +6,8 @@ permalink: /kb/192/Q192960/
 
 ## Q192960: PRB: Cannot Release Procedure's FXP if Class Definition in PRG
 
+{% raw %}
+
 	Article: Q192960
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -89,3 +91,5 @@ permalink: /kb/192/Q192960/
 	
 	=============================================================================
 	
+
+{% endraw %}

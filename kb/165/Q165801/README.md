@@ -6,6 +6,8 @@ permalink: /kb/165/Q165801/
 
 ## Q165801: WD97: &quot;Activate As&quot; Word Picture Activates Object as Word Docume
 
+{% raw %}
+
 	Article: Q165801
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -70,3 +72,5 @@ permalink: /kb/165/Q165801/
 	
 	=============================================================================
 	
+
+{% endraw %}

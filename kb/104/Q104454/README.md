@@ -6,6 +6,8 @@ permalink: /kb/104/Q104454/
 
 ## Q104454: Scenes 1.0: May Activate Incorrectly with Mouse QuickStart
 
+{% raw %}
+
 	Article: Q104454
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/104/Q104454/
 	
 	=============================================================================
 	
+
+{% endraw %}

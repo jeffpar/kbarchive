@@ -6,6 +6,8 @@ permalink: /kb/176/Q176391/
 
 ## Q176391: HOWTO: Programmatically Close a Separate Application
 
+{% raw %}
+
 	Article: Q176391
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -188,3 +190,5 @@ permalink: /kb/176/Q176391/
 	
 	=============================================================================
 	
+
+{% endraw %}

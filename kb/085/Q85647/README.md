@@ -6,6 +6,8 @@ permalink: /kb/085/Q85647/
 
 ## Q85647: PC Adm: Err Msg: Notice 56: Error Deleting User Address
 
+{% raw %}
+
 	Article: Q85647
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 
@@ -181,3 +183,5 @@ permalink: /kb/085/Q85647/
 	
 	=============================================================================
 	
+
+{% endraw %}

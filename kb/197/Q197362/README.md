@@ -6,6 +6,8 @@ permalink: /kb/197/Q197362/
 
 ## Q197362: FIX: FormatString Ignored for Fixed Columns in MSHFlexGrid
 
+{% raw %}
+
 	Article: Q197362
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -97,3 +99,5 @@ permalink: /kb/197/Q197362/
 	
 	=============================================================================
 	
+
+{% endraw %}

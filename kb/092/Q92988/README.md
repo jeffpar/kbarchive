@@ -6,6 +6,8 @@ permalink: /kb/092/Q92988/
 
 ## Q92988: Setting a Breakpoint on a Windows API Function
 
+{% raw %}
+
 	Article: Q92988
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.1
@@ -66,3 +68,5 @@ permalink: /kb/092/Q92988/
 	
 	=============================================================================
 	
+
+{% endraw %}

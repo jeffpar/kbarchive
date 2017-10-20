@@ -6,6 +6,8 @@ permalink: /kb/040/Q40235/
 
 ## Q40235: M Hangs if the textarg Given to ArgCompile Is Incomplete
 
+{% raw %}
+
 	Article: Q40235
 	Product(s): See article
 	Version(s): 1.00
@@ -32,3 +34,5 @@ permalink: /kb/040/Q40235/
 	and allocation errors as reported by chkdsk.
 	
 	This problem was not encountered under OS/2.
+
+{% endraw %}

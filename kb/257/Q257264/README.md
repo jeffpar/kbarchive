@@ -6,6 +6,8 @@ permalink: /kb/257/Q257264/
 
 ## Q257264: XFOR: Internet Mail Service NDR &quot;Message Exceeded Size Limit&quot;
 
+{% raw %}
+
 	Article: Q257264
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -98,3 +100,5 @@ permalink: /kb/257/Q257264/
 	
 	=============================================================================
 	
+
+{% endraw %}

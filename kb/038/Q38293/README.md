@@ -6,6 +6,8 @@ permalink: /kb/038/Q38293/
 
 ## Q38293: wait and cwait Are for Protected Mode
 
+{% raw %}
+
 	Article: Q38293
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -30,3 +32,5 @@ permalink: /kb/038/Q38293/
 	
 	For more information, refer to the "Microsoft C 5.1 Optimizing
 	Compiler User's Guide" Update Pages 30 and 48.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184295/
 
 ## Q184295: Compaq System Management Driver 2.05B in Service Pack 4
 
+{% raw %}
+
 	Article: Q184295
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -55,3 +57,5 @@ permalink: /kb/184/Q184295/
 	
 	=============================================================================
 	
+
+{% endraw %}

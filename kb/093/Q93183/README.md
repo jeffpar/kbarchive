@@ -6,6 +6,8 @@ permalink: /kb/093/Q93183/
 
 ## Q93183: SETUP/N Does Not See OEM0000x.INF Files in Shared Directory
 
+{% raw %}
+
 	Article: Q93183
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/093/Q93183/
 	
 	=============================================================================
 	
+
+{% endraw %}

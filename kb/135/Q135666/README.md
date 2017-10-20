@@ -6,6 +6,8 @@ permalink: /kb/135/Q135666/
 
 ## Q135666: FIX: Assertion Failure in CFieldExchange::GetColumnType()
 
+{% raw %}
+
 	Article: Q135666
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0 2.1 2.2 4.0 4.1 4.2
@@ -77,3 +79,5 @@ permalink: /kb/135/Q135666/
 	
 	=============================================================================
 	
+
+{% endraw %}

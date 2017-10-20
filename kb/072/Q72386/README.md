@@ -6,6 +6,8 @@ permalink: /kb/072/Q72386/
 
 ## Q72386: INFO: Background, Foreground, and System Palette Management
 
+{% raw %}
+
 	Article: Q72386
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -95,3 +97,5 @@ permalink: /kb/072/Q72386/
 	
 	=============================================================================
 	
+
+{% endraw %}

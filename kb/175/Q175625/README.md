@@ -6,6 +6,8 @@ permalink: /kb/175/Q175625/
 
 ## Q175625: FILE: TopClose.exe Closes Child Forms of Top-Level Forms
 
+{% raw %}
+
 	Article: Q175625
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -355,3 +357,5 @@ permalink: /kb/175/Q175625/
 	
 	=============================================================================
 	
+
+{% endraw %}

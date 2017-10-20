@@ -6,6 +6,8 @@ permalink: /kb/173/Q173831/
 
 ## Q173831: MS Word 97 Advanced Topics Step by Step Comments and Corrections
 
+{% raw %}
+
 	Article: Q173831
 	Product(s): Microsoft Press
 	Version(s): 
@@ -140,3 +142,5 @@ permalink: /kb/173/Q173831/
 	
 	=============================================================================
 	
+
+{% endraw %}

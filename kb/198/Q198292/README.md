@@ -6,6 +6,8 @@ permalink: /kb/198/Q198292/
 
 ## Q198292: WD97: Default AutoCaption Label for Equation Uses Figure
 
+{% raw %}
+
 	Article: Q198292
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -48,3 +50,5 @@ permalink: /kb/198/Q198292/
 	
 	=============================================================================
 	
+
+{% endraw %}

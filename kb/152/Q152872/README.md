@@ -6,6 +6,8 @@ permalink: /kb/152/Q152872/
 
 ## Q152872: Err Msg: The New Item Could Not be Inserted
 
+{% raw %}
+
 	Article: Q152872
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/152/Q152872/
 	
 	=============================================================================
 	
+
+{% endraw %}

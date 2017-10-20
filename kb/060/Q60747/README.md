@@ -6,6 +6,8 @@ permalink: /kb/060/Q60747/
 
 ## Q60747: Quick Compiler Incorrectly Zero-Extends Ones Complement
 
+{% raw %}
+
 	Article: Q60747
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -48,3 +50,5 @@ permalink: /kb/060/Q60747/
 	
 	  printf("%ld\n",l);
 	}
+
+{% endraw %}

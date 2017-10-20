@@ -6,6 +6,8 @@ permalink: /kb/156/Q156513/
 
 ## Q156513: INFO: Which Visual C++ Files to Add to Source-Code Control
 
+{% raw %}
+
 	Article: Q156513
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0,6.0
@@ -86,3 +88,5 @@ permalink: /kb/156/Q156513/
 	
 	=============================================================================
 	
+
+{% endraw %}

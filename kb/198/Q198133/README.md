@@ -6,6 +6,8 @@ permalink: /kb/198/Q198133/
 
 ## Q198133: Multi-Protocol Router Files Not Included in Service Pack 5
 
+{% raw %}
+
 	Article: Q198133
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:3.51
@@ -56,3 +58,5 @@ permalink: /kb/198/Q198133/
 	
 	=============================================================================
 	
+
+{% endraw %}

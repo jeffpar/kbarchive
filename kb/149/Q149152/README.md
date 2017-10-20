@@ -6,6 +6,8 @@ permalink: /kb/149/Q149152/
 
 ## Q149152: BUG: !MS&#36;ATTRIBUTES in Interface Fails with Free-Form Source
 
+{% raw %}
+
 	Article: Q149152
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -99,3 +101,5 @@ permalink: /kb/149/Q149152/
 	
 	=============================================================================
 	
+
+{% endraw %}

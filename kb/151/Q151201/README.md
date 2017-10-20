@@ -6,6 +6,8 @@ permalink: /kb/151/Q151201/
 
 ## Q151201: Unbind Hold Causes TN3270 Client 505 Error
 
+{% raw %}
+
 	Article: Q151201
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -92,3 +94,5 @@ permalink: /kb/151/Q151201/
 	
 	=============================================================================
 	
+
+{% endraw %}

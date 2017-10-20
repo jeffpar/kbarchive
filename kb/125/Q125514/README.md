@@ -6,6 +6,8 @@ permalink: /kb/125/Q125514/
 
 ## Q125514: TCP/IP-32 Client Cannot Obtain DHCP Lease
 
+{% raw %}
+
 	Article: Q125514
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11; winnt:3.5; :3.11a
@@ -56,3 +58,5 @@ permalink: /kb/125/Q125514/
 	
 	=============================================================================
 	
+
+{% endraw %}

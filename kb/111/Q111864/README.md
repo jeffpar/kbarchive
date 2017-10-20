@@ -6,6 +6,8 @@ permalink: /kb/111/Q111864/
 
 ## Q111864: BUG: GP Fault When Drawing on a Memory-Based DC
 
+{% raw %}
+
 	Article: Q111864
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -95,3 +97,5 @@ permalink: /kb/111/Q111864/
 	
 	=============================================================================
 	
+
+{% endraw %}

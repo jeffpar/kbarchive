@@ -6,6 +6,8 @@ permalink: /kb/248/Q248725/
 
 ## Q248725: XADM: Installing Exchange 5.5 on Windows 2000 May Not Work
 
+{% raw %}
+
 	Article: Q248725
 	Product(s): Microsoft Exchange
 	Version(s): 2000,5.5
@@ -61,3 +63,5 @@ permalink: /kb/248/Q248725/
 	
 	=============================================================================
 	
+
+{% endraw %}

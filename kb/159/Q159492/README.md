@@ -6,6 +6,8 @@ permalink: /kb/159/Q159492/
 
 ## Q159492: PC Card Device Not Enumerated When Reinserted
 
+{% raw %}
+
 	Article: Q159492
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0
@@ -61,3 +63,5 @@ permalink: /kb/159/Q159492/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190567/
 
 ## Q190567: BUG: GotFocus() Sets Commandbutton Default to Initial Setting
 
+{% raw %}
+
 	Article: Q190567
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -226,3 +228,5 @@ permalink: /kb/190/Q190567/
 	
 	=============================================================================
 	
+
+{% endraw %}

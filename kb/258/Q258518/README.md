@@ -6,6 +6,8 @@ permalink: /kb/258/Q258518/
 
 ## Q258518: RPC Unavailable Error Appears When You Try to Access a Cluster S
 
+{% raw %}
+
 	Article: Q258518
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -91,3 +93,5 @@ permalink: /kb/258/Q258518/
 	
 	=============================================================================
 	
+
+{% endraw %}

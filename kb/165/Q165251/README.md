@@ -6,6 +6,8 @@ permalink: /kb/165/Q165251/
 
 ## Q165251: WD97: Acceptable Values of wdLineWidth Constant (in wdLineStyle)
 
+{% raw %}
+
 	Article: Q165251
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -96,3 +98,5 @@ permalink: /kb/165/Q165251/
 	
 	=============================================================================
 	
+
+{% endraw %}

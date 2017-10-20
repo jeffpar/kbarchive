@@ -6,6 +6,8 @@ permalink: /kb/180/Q180978/
 
 ## Q180978: SMS: Security Considerations for SMS Service Accounts
 
+{% raw %}
+
 	Article: Q180978
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -78,3 +80,5 @@ permalink: /kb/180/Q180978/
 	
 	=============================================================================
 	
+
+{% endraw %}

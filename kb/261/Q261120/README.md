@@ -6,6 +6,8 @@ permalink: /kb/261/Q261120/
 
 ## Q261120: XCLN: Outlook Users Cannot Create Top-Level Public Folders
 
+{% raw %}
+
 	Article: Q261120
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:; winnt:5.5; :
@@ -72,3 +74,5 @@ permalink: /kb/261/Q261120/
 	
 	=============================================================================
 	
+
+{% endraw %}

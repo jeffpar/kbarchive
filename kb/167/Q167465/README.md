@@ -6,6 +6,8 @@ permalink: /kb/167/Q167465/
 
 ## Q167465: WD97: Inserting a Graphic Over Hyperlink Retains Hyperlink Style
 
+{% raw %}
+
 	Article: Q167465
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97; winnt:3.51
@@ -60,3 +62,5 @@ permalink: /kb/167/Q167465/
 	
 	=============================================================================
 	
+
+{% endraw %}

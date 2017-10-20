@@ -6,6 +6,8 @@ permalink: /kb/084/Q84184/
 
 ## Q84184: Printing on Unsupported UNIX-Based Networks (Windows)
 
+{% raw %}
+
 	Article: Q84184
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -93,3 +95,5 @@ permalink: /kb/084/Q84184/
 	
 	=============================================================================
 	
+
+{% endraw %}

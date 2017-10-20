@@ -6,6 +6,8 @@ permalink: /kb/191/Q191586/
 
 ## Q191586: BUG: Database Property in Connection Dialog Has no Effect
 
+{% raw %}
+
 	Article: Q191586
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -66,3 +68,5 @@ permalink: /kb/191/Q191586/
 	
 	=============================================================================
 	
+
+{% endraw %}

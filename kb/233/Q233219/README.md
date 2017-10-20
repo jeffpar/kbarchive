@@ -6,6 +6,8 @@ permalink: /kb/233/Q233219/
 
 ## Q233219: XFOR: Self-Registration of Inetcomm.dll Fails
 
+{% raw %}
+
 	Article: Q233219
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -70,3 +72,5 @@ permalink: /kb/233/Q233219/
 	
 	=============================================================================
 	
+
+{% endraw %}

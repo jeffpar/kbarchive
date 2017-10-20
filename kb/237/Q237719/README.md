@@ -6,6 +6,8 @@ permalink: /kb/237/Q237719/
 
 ## Q237719: NFL Fever 2000: Stops Responding When You Start Program
 
+{% raw %}
+
 	Article: Q237719
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -61,3 +63,5 @@ permalink: /kb/237/Q237719/
 	
 	=============================================================================
 	
+
+{% endraw %}

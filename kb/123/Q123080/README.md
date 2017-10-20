@@ -6,6 +6,8 @@ permalink: /kb/123/Q123080/
 
 ## Q123080: Cinemania 95: GP Fault with S3645K Video Driver
 
+{% raw %}
+
 	Article: Q123080
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -80,3 +82,5 @@ permalink: /kb/123/Q123080/
 	
 	=============================================================================
 	
+
+{% endraw %}

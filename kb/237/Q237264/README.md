@@ -6,6 +6,8 @@ permalink: /kb/237/Q237264/
 
 ## Q237264: Encarta Encyclopedia 2000: Setup Stops Responding
 
+{% raw %}
+
 	Article: Q237264
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/237/Q237264/
 	
 	=============================================================================
 	
+
+{% endraw %}

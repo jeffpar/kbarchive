@@ -6,6 +6,8 @@ permalink: /kb/138/Q138877/
 
 ## Q138877: RAS Authentication Retry Dialog Box Skipped
 
+{% raw %}
+
 	Article: Q138877
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -62,3 +64,5 @@ permalink: /kb/138/Q138877/
 	
 	=============================================================================
 	
+
+{% endraw %}

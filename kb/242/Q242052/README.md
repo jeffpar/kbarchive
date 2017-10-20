@@ -6,6 +6,8 @@ permalink: /kb/242/Q242052/
 
 ## Q242052: Cannot Use Point and Print with OEM Windows 95 Printer Drivers
 
+{% raw %}
+
 	Article: Q242052
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -49,3 +51,5 @@ permalink: /kb/242/Q242052/
 	
 	=============================================================================
 	
+
+{% endraw %}

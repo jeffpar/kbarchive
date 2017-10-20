@@ -6,6 +6,8 @@ permalink: /kb/086/Q86964/
 
 ## Q86964: X400: Transport Classes Supported for X.400 Gateway
 
+{% raw %}
+
 	Article: Q86964
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -39,3 +41,5 @@ permalink: /kb/086/Q86964/
 	
 	=============================================================================
 	
+
+{% endraw %}

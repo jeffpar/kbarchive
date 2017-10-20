@@ -6,6 +6,8 @@ permalink: /kb/146/Q146597/
 
 ## Q146597: XCLN: Open Copy of Message Doesn't Close When Source Deleted
 
+{% raw %}
+
 	Article: Q146597
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -47,3 +49,5 @@ permalink: /kb/146/Q146597/
 	
 	=============================================================================
 	
+
+{% endraw %}

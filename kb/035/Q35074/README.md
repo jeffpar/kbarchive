@@ -6,6 +6,8 @@ permalink: /kb/035/Q35074/
 
 ## Q35074: Landing at Livermore Airport Causes &quot;Splash&quot; Message
 
+{% raw %}
+
 	Article: Q35074
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -35,3 +37,5 @@ permalink: /kb/035/Q35074/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131523/
 
 ## Q131523: PC Win: Return Receipt Interpretability with Foreign Language
 
+{% raw %}
+
 	Article: Q131523
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b
@@ -84,3 +86,5 @@ permalink: /kb/131/Q131523/
 	
 	=============================================================================
 	
+
+{% endraw %}

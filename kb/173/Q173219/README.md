@@ -6,6 +6,8 @@ permalink: /kb/173/Q173219/
 
 ## Q173219: Error Message Installing Adobe PhotoShop 4.0.1 in Windows 95
 
+{% raw %}
+
 	Article: Q173219
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -68,3 +70,5 @@ permalink: /kb/173/Q173219/
 	
 	=============================================================================
 	
+
+{% endraw %}

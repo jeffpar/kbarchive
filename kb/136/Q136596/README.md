@@ -6,6 +6,8 @@ permalink: /kb/136/Q136596/
 
 ## Q136596: Curves And Colors Screen Saver Takes Long Time to Clear Screen
 
+{% raw %}
+
 	Article: Q136596
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/136/Q136596/
 	
 	=============================================================================
 	
+
+{% endraw %}

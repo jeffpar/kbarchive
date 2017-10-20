@@ -6,6 +6,8 @@ permalink: /kb/041/Q41590/
 
 ## Q41590: QuickC 2.00 README.DOC: Example Program GRAPHIC.C
 
+{% raw %}
+
 	Article: Q41590
 	Product(s): See article
 	Version(s): 2.00
@@ -29,3 +31,5 @@ permalink: /kb/041/Q41590/
 	
 	The GRAPHIC.C program in on-line help already contains these
 	corrections, but you may want to correct the printed listing, too.
+
+{% endraw %}

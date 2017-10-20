@@ -6,6 +6,8 @@ permalink: /kb/142/Q142647/
 
 ## Q142647: Callback Field for RAS May Not Be Viewable From Rasadmin.exe
 
+{% raw %}
+
 	Article: Q142647
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -55,3 +57,5 @@ permalink: /kb/142/Q142647/
 	
 	=============================================================================
 	
+
+{% endraw %}

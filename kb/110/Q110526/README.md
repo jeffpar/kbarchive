@@ -6,6 +6,8 @@ permalink: /kb/110/Q110526/
 
 ## Q110526: BUG: Edit Region with Three Lines Doesn't Have Scroll Bar
 
+{% raw %}
+
 	Article: Q110526
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.6a,3.0b
@@ -91,3 +93,5 @@ permalink: /kb/110/Q110526/
 	
 	=============================================================================
 	
+
+{% endraw %}

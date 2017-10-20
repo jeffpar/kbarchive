@@ -6,6 +6,8 @@ permalink: /kb/254/Q254548/
 
 ## Q254548: XCLN: Connecting Windows CE Handheld PCs to Exchange Server
 
+{% raw %}
+
 	Article: Q254548
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2.0,3.0,3.0 Professional Edition,5.0,5.5; winnt:4.0,5.0,5.5
@@ -162,3 +164,5 @@ permalink: /kb/254/Q254548/
 	
 	=============================================================================
 	
+
+{% endraw %}

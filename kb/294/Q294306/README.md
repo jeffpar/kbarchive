@@ -6,6 +6,8 @@ permalink: /kb/294/Q294306/
 
 ## Q294306: Windows NT 4.0 May Hang During Process Shutdown
 
+{% raw %}
+
 	Article: Q294306
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -91,3 +93,5 @@ permalink: /kb/294/Q294306/
 	
 	=============================================================================
 	
+
+{% endraw %}

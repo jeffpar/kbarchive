@@ -6,6 +6,8 @@ permalink: /kb/239/Q239071/
 
 ## Q239071: XADM: Installing Exchange Server Mailbox Manager on a BDC
 
+{% raw %}
+
 	Article: Q239071
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP3
@@ -54,3 +56,5 @@ permalink: /kb/239/Q239071/
 	
 	=============================================================================
 	
+
+{% endraw %}

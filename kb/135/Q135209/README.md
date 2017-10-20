@@ -6,6 +6,8 @@ permalink: /kb/135/Q135209/
 
 ## Q135209: &quot;USS Ticonderoga&quot; Does Not Run with Compaq Qvision Triton
 
+{% raw %}
+
 	Article: Q135209
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -66,3 +68,5 @@ permalink: /kb/135/Q135209/
 	
 	=============================================================================
 	
+
+{% endraw %}

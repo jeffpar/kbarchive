@@ -6,6 +6,8 @@ permalink: /kb/181/Q181921/
 
 ## Q181921: XADM: Sending Encrypted Mail to Users with Different Encryption
 
+{% raw %}
+
 	Article: Q181921
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/181/Q181921/
 	
 	=============================================================================
 	
+
+{% endraw %}

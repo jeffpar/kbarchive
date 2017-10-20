@@ -6,6 +6,8 @@ permalink: /kb/253/Q253647/
 
 ## Q253647: SMS: Logon Server Manager Does Not Remove Non-Existent Domain
 
+{% raw %}
+
 	Article: Q253647
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -63,3 +65,5 @@ permalink: /kb/253/Q253647/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138023/
 
 ## Q138023: Windows 3.x Control Panel Icons Appear in Windows 95
 
+{% raw %}
+
 	Article: Q138023
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -56,3 +58,5 @@ permalink: /kb/138/Q138023/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247736/
 
 ## Q247736: Fighter Ace II: Plane and Ground Textures Are Not Displayed
 
+{% raw %}
+
 	Article: Q247736
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/247/Q247736/
 	
 	=============================================================================
 	
+
+{% endraw %}

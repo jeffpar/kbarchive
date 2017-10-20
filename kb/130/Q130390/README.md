@@ -6,6 +6,8 @@ permalink: /kb/130/Q130390/
 
 ## Q130390: How to Size Controls Using the Visual Class Designer
 
+{% raw %}
+
 	Article: Q130390
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -74,3 +76,5 @@ permalink: /kb/130/Q130390/
 	
 	=============================================================================
 	
+
+{% endraw %}

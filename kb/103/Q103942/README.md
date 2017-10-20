@@ -6,6 +6,8 @@ permalink: /kb/103/Q103942/
 
 ## Q103942: SNA Server Identifies Netflex Adapter as Ethernet
 
+{% raw %}
+
 	Article: Q103942
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1
@@ -85,3 +87,5 @@ permalink: /kb/103/Q103942/
 	
 	=============================================================================
 	
+
+{% endraw %}

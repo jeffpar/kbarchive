@@ -6,6 +6,8 @@ permalink: /kb/166/Q166617/
 
 ## Q166617: XCLN: GPF in MSSPC16.DLL in Spanish Schedule+
 
+{% raw %}
+
 	Article: Q166617
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:7.0
@@ -74,3 +76,5 @@ permalink: /kb/166/Q166617/
 	
 	=============================================================================
 	
+
+{% endraw %}

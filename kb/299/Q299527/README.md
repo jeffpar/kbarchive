@@ -6,6 +6,8 @@ permalink: /kb/299/Q299527/
 
 ## Q299527: PRB: &quot;Error in Loading DLL&quot; Error If You Add PDW as VB Component
 
+{% raw %}
+
 	Article: Q299527
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -92,3 +94,5 @@ permalink: /kb/299/Q299527/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176643/
 
 ## Q176643: HOWTO: Find Multiple Occurrences of a String in a RichTextBox
 
+{% raw %}
+
 	Article: Q176643
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -174,3 +176,5 @@ permalink: /kb/176/Q176643/
 	
 	=============================================================================
 	
+
+{% endraw %}

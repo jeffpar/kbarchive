@@ -6,6 +6,8 @@ permalink: /kb/121/Q121230/
 
 ## Q121230: Maximizer for Windows Cannot Find Databases
 
+{% raw %}
+
 	Article: Q121230
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/121/Q121230/
 	
 	=============================================================================
 	
+
+{% endraw %}

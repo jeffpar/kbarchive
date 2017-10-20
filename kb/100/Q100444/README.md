@@ -6,6 +6,8 @@ permalink: /kb/100/Q100444/
 
 ## Q100444: How To Programmatically Embed and Link Part of a File
 
+{% raw %}
+
 	Article: Q100444
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6x,3.0
@@ -102,3 +104,5 @@ permalink: /kb/100/Q100444/
 	
 	=============================================================================
 	
+
+{% endraw %}

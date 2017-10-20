@@ -6,6 +6,8 @@ permalink: /kb/269/Q269269/
 
 ## Q269269: How to Use the TakeOwn Utility to Manage Shares in Windows NT 4
 
+{% raw %}
+
 	Article: Q269269
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a,4.5
@@ -70,3 +72,5 @@ permalink: /kb/269/Q269269/
 	
 	=============================================================================
 	
+
+{% endraw %}

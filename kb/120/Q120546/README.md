@@ -6,6 +6,8 @@ permalink: /kb/120/Q120546/
 
 ## Q120546: Artist: Saved Documents Are Black
 
+{% raw %}
+
 	Article: Q120546
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -124,3 +126,5 @@ permalink: /kb/120/Q120546/
 	
 	=============================================================================
 	
+
+{% endraw %}

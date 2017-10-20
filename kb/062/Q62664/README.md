@@ -6,6 +6,8 @@ permalink: /kb/062/Q62664/
 
 ## Q62664: C1001: Internal Compiler Error: '../grammar.c', Line 140
 
+{% raw %}
+
 	Article: Q62664
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -82,3 +84,5 @@ permalink: /kb/062/Q62664/
 	4. Initialize the current_page variable.
 	
 	5. Compile with the /qc option to run the QuickC Compiler.
+
+{% endraw %}

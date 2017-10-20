@@ -6,6 +6,8 @@ permalink: /kb/081/Q81283/
 
 ## Q81283: Replacement Utilities for MS-DOS FORMAT
 
+{% raw %}
+
 	Article: Q81283
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:1.x,2.x,3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -70,3 +72,5 @@ permalink: /kb/081/Q81283/
 	
 	=============================================================================
 	
+
+{% endraw %}

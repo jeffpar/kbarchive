@@ -6,6 +6,8 @@ permalink: /kb/160/Q160650/
 
 ## Q160650: Blue Screen When Closing Kernel Mode Handles from User Mode
 
+{% raw %}
+
 	Article: Q160650
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/160/Q160650/
 	
 	=============================================================================
 	
+
+{% endraw %}

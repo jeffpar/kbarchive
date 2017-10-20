@@ -6,6 +6,8 @@ permalink: /kb/193/Q193862/
 
 ## Q193862: XIMS: Messages Sit in Inbound Awaiting Delivery Queue
 
+{% raw %}
+
 	Article: Q193862
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -68,3 +70,5 @@ permalink: /kb/193/Q193862/
 	
 	=============================================================================
 	
+
+{% endraw %}

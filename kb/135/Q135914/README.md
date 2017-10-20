@@ -6,6 +6,8 @@ permalink: /kb/135/Q135914/
 
 ## Q135914: PRB: SHOW WINDOW ALL May Cause Empty Browse Window to Appear
 
+{% raw %}
+
 	Article: Q135914
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -75,3 +77,5 @@ permalink: /kb/135/Q135914/
 	
 	=============================================================================
 	
+
+{% endraw %}

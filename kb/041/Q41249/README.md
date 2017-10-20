@@ -6,6 +6,8 @@ permalink: /kb/041/Q41249/
 
 ## Q41249: QuickC 2.00 README.DOC: ESC Key Does Not Stop Linker
 
+{% raw %}
+
 	Article: Q41249
 	Product(s): See article
 	Version(s): 2.00
@@ -28,3 +30,5 @@ permalink: /kb/041/Q41249/
 	If you are using the debugger and running a program that expects
 	keyboard input, pressing either CTRL+C or CTRL+BREAK and then ENTER
 	allows you to exit.
+
+{% endraw %}

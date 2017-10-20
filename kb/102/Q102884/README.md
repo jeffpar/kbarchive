@@ -6,6 +6,8 @@ permalink: /kb/102/Q102884/
 
 ## Q102884: Migrating Windows 3.1 Groups After Installation
 
+{% raw %}
+
 	Article: Q102884
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -66,3 +68,5 @@ permalink: /kb/102/Q102884/
 	
 	=============================================================================
 	
+
+{% endraw %}

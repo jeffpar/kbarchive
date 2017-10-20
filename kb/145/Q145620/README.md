@@ -6,6 +6,8 @@ permalink: /kb/145/Q145620/
 
 ## Q145620: PRB: Appearance of ComboBox Control Is Always Three-Dimensional
 
+{% raw %}
+
 	Article: Q145620
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -66,3 +68,5 @@ permalink: /kb/145/Q145620/
 	
 	=============================================================================
 	
+
+{% endraw %}

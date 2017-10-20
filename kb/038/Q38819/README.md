@@ -6,6 +6,8 @@ permalink: /kb/038/Q38819/
 
 ## Q38819: Error L2041 Stack Plus Data Exceeds 64K
 
+{% raw %}
+
 	Article: Q38819
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -49,3 +51,5 @@ permalink: /kb/038/Q38819/
 	   /Gt compilation option to lower the threshhold.
 	
 	3. Use the FAR keyword to move data out of DGROUP.
+
+{% endraw %}

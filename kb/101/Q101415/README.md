@@ -6,6 +6,8 @@ permalink: /kb/101/Q101415/
 
 ## Q101415: DOCERR: How CN_RECEIVE Events Are Generated
 
+{% raw %}
+
 	Article: Q101415
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -99,3 +101,5 @@ permalink: /kb/101/Q101415/
 	
 	=============================================================================
 	
+
+{% endraw %}

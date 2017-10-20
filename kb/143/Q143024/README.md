@@ -6,6 +6,8 @@ permalink: /kb/143/Q143024/
 
 ## Q143024: PPT7: Files Installed by PowerPoint Viewer for Windows 95
 
+{% raw %}
+
 	Article: Q143024
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 7.0
@@ -74,3 +76,5 @@ permalink: /kb/143/Q143024/
 	
 	=============================================================================
 	
+
+{% endraw %}

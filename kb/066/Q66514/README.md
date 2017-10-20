@@ -6,6 +6,8 @@ permalink: /kb/066/Q66514/
 
 ## Q66514: Unable to Create a File Larger Than 32MB with DOS 4.x
 
+{% raw %}
+
 	Article: Q66514
 	Product(s): See article
 	Version(s): 6.00 6.00a
@@ -33,3 +35,5 @@ permalink: /kb/066/Q66514/
 	PATCH32M can be found in the Software/Data Library by searching for
 	the keyword PATCH32M, the Q number of this article, or S12506.
 	PATCH32M was archived using the PKware file-compression utility.
+
+{% endraw %}

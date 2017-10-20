@@ -6,6 +6,8 @@ permalink: /kb/156/Q156960/
 
 ## Q156960: SMS: Collected Files Do Not Show as a UNC in Administrator
 
+{% raw %}
+
 	Article: Q156960
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -51,3 +53,5 @@ permalink: /kb/156/Q156960/
 	
 	=============================================================================
 	
+
+{% endraw %}

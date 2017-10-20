@@ -6,6 +6,8 @@ permalink: /kb/233/Q233852/
 
 ## Q233852: Import COBOL Wizard Inappropriately Flags COBOL Syntax Error
 
+{% raw %}
+
 	Article: Q233852
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0SP2
@@ -66,3 +68,5 @@ permalink: /kb/233/Q233852/
 	
 	=============================================================================
 	
+
+{% endraw %}

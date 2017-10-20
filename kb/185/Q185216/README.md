@@ -6,6 +6,8 @@ permalink: /kb/185/Q185216/
 
 ## Q185216: XGEN: Explanation of Common Network Mail Abuse Phrases
 
+{% raw %}
+
 	Article: Q185216
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -105,3 +107,5 @@ permalink: /kb/185/Q185216/
 	
 	=============================================================================
 	
+
+{% endraw %}

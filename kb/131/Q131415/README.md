@@ -6,6 +6,8 @@ permalink: /kb/131/Q131415/
 
 ## Q131415: Multimedia Composer Titles May Stop Responding on Exit
 
+{% raw %}
+
 	Article: Q131415
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,1.0a
@@ -97,3 +99,5 @@ permalink: /kb/131/Q131415/
 	
 	=============================================================================
 	
+
+{% endraw %}

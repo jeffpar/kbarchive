@@ -6,6 +6,8 @@ permalink: /kb/185/Q185752/
 
 ## Q185752: MSCS Service Fails to Start After Installation
 
+{% raw %}
+
 	Article: Q185752
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -76,3 +78,5 @@ permalink: /kb/185/Q185752/
 	
 	=============================================================================
 	
+
+{% endraw %}

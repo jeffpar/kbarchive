@@ -6,6 +6,8 @@ permalink: /kb/206/Q206904/
 
 ## Q206904: BUG: Copying the Tab Control Does Not Display All Child Controls
 
+{% raw %}
+
 	Article: Q206904
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -107,3 +109,5 @@ permalink: /kb/206/Q206904/
 	
 	=============================================================================
 	
+
+{% endraw %}

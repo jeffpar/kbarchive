@@ -6,6 +6,8 @@ permalink: /kb/154/Q154301/
 
 ## Q154301: XCON: MTA X.400 Connector Problems on Slow Links
 
+{% raw %}
+
 	Article: Q154301
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -64,3 +66,5 @@ permalink: /kb/154/Q154301/
 	
 	=============================================================================
 	
+
+{% endraw %}

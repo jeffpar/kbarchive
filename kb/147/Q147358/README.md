@@ -6,6 +6,8 @@ permalink: /kb/147/Q147358/
 
 ## Q147358: Translators Available in Schedule+
 
+{% raw %}
+
 	Article: Q147358
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:3.x,4.0,7.0,95
@@ -55,3 +57,5 @@ permalink: /kb/147/Q147358/
 	
 	=============================================================================
 	
+
+{% endraw %}

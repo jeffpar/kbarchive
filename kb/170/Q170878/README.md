@@ -6,6 +6,8 @@ permalink: /kb/170/Q170878/
 
 ## Q170878: WD97: Template Menu Customization Lost Opening in Word 97
 
+{% raw %}
+
 	Article: Q170878
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -69,3 +71,5 @@ permalink: /kb/170/Q170878/
 	
 	=============================================================================
 	
+
+{% endraw %}

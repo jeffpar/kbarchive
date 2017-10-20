@@ -6,6 +6,8 @@ permalink: /kb/128/Q128719/
 
 ## Q128719: PRB: &quot;Table or Row Buffering Requires that SET ...&quot; Error
 
+{% raw %}
+
 	Article: Q128719
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -77,3 +79,5 @@ permalink: /kb/128/Q128719/
 	
 	=============================================================================
 	
+
+{% endraw %}

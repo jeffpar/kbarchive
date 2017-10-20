@@ -6,6 +6,8 @@ permalink: /kb/125/Q125485/
 
 ## Q125485: View Drop Down Menu in File Manager Has Non-Applicable Choices
 
+{% raw %}
+
 	Article: Q125485
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/125/Q125485/
 	
 	=============================================================================
 	
+
+{% endraw %}

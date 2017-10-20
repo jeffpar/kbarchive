@@ -6,6 +6,8 @@ permalink: /kb/237/Q237174/
 
 ## Q237174: XIMS: IMAPISession::OpenMsgStore Leaks Approximately 40-60 Bytes
 
+{% raw %}
+
 	Article: Q237174
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:; winnt:5.5
@@ -63,3 +65,5 @@ permalink: /kb/237/Q237174/
 	
 	=============================================================================
 	
+
+{% endraw %}

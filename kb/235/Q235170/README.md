@@ -6,6 +6,8 @@ permalink: /kb/235/Q235170/
 
 ## Q235170: SMS: Admin Console Performance Degraded on Multihomed Computers
 
+{% raw %}
+
 	Article: Q235170
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -46,3 +48,5 @@ permalink: /kb/235/Q235170/
 	
 	=============================================================================
 	
+
+{% endraw %}

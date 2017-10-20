@@ -6,6 +6,8 @@ permalink: /kb/182/Q182960/
 
 ## Q182960: XADM: Using EDBUTIL to Determine Which Logs Have Been Committed
 
+{% raw %}
+
 	Article: Q182960
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -77,3 +79,5 @@ permalink: /kb/182/Q182960/
 	
 	=============================================================================
 	
+
+{% endraw %}

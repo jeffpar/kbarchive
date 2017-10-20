@@ -6,6 +6,8 @@ permalink: /kb/162/Q162235/
 
 ## Q162235: WD97: How to Add a Portrait Page Number to a Landscape Page
 
+{% raw %}
+
 	Article: Q162235
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -144,3 +146,5 @@ permalink: /kb/162/Q162235/
 	
 	=============================================================================
 	
+
+{% endraw %}

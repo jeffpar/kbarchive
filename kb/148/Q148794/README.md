@@ -6,6 +6,8 @@ permalink: /kb/148/Q148794/
 
 ## Q148794: Gardening: Unable to Enlarge Pictures Using Keyboard Keys
 
+{% raw %}
+
 	Article: Q148794
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/148/Q148794/
 	
 	=============================================================================
 	
+
+{% endraw %}

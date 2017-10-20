@@ -6,6 +6,8 @@ permalink: /kb/197/Q197128/
 
 ## Q197128: BUG: CausesValidation Property Does Not Trigger Validate Event
 
+{% raw %}
+
 	Article: Q197128
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -99,3 +101,5 @@ permalink: /kb/197/Q197128/
 	
 	=============================================================================
 	
+
+{% endraw %}

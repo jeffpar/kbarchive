@@ -6,6 +6,8 @@ permalink: /kb/040/Q40549/
 
 ## Q40549: QB.EXE May Overwrite File Allocation Table If Floppy Switched
 
+{% raw %}
+
 	Article: Q40549
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -64,3 +66,5 @@ permalink: /kb/040/Q40549/
 	FOR i = 1 TO 10000
 	    PRINT #1, i
 	NEXT
+
+{% endraw %}

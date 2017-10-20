@@ -6,6 +6,8 @@ permalink: /kb/104/Q104733/
 
 ## Q104733: ScanDisk /CHECKONLY Mode on Third-Party Compressed Disks
 
+{% raw %}
+
 	Article: Q104733
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -74,3 +76,5 @@ permalink: /kb/104/Q104733/
 	
 	=============================================================================
 	
+
+{% endraw %}

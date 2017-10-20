@@ -6,6 +6,8 @@ permalink: /kb/103/Q103936/
 
 ## Q103936: Err Msg: MSPUB Caused an Exception in the Win16 Subsystem
 
+{% raw %}
+
 	Article: Q103936
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -87,3 +89,5 @@ permalink: /kb/103/Q103936/
 	
 	=============================================================================
 	
+
+{% endraw %}

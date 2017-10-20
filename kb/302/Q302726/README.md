@@ -6,6 +6,8 @@ permalink: /kb/302/Q302726/
 
 ## Q302726: &quot;Unable to process request&quot; Error When Using &quot;Forgot Your Passwo
 
+{% raw %}
+
 	Article: Q302726
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -54,3 +56,5 @@ permalink: /kb/302/Q302726/
 	
 	=============================================================================
 	
+
+{% endraw %}

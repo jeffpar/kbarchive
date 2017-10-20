@@ -6,6 +6,8 @@ permalink: /kb/221/Q221701/
 
 ## Q221701: FIX: MouseUp Event Does Not Fire on Contained Objects
 
+{% raw %}
+
 	Article: Q221701
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -98,3 +100,5 @@ permalink: /kb/221/Q221701/
 	
 	=============================================================================
 	
+
+{% endraw %}

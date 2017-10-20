@@ -6,6 +6,8 @@ permalink: /kb/185/Q185528/
 
 ## Q185528: WD97: Can't Change Mirror Margins Option by Section
 
+{% raw %}
+
 	Article: Q185528
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/185/Q185528/
 	
 	=============================================================================
 	
+
+{% endraw %}

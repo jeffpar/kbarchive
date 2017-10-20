@@ -6,6 +6,8 @@ permalink: /kb/201/Q201958/
 
 ## Q201958: DOC: DataGrid Object Code Example Does Not Work
 
+{% raw %}
+
 	Article: Q201958
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -78,3 +80,5 @@ permalink: /kb/201/Q201958/
 	
 	=============================================================================
 	
+
+{% endraw %}

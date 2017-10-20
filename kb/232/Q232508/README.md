@@ -6,6 +6,8 @@ permalink: /kb/232/Q232508/
 
 ## Q232508: SMSINST: SMS Installer Incorrectly Draws Dialog Boxes
 
+{% raw %}
+
 	Article: Q232508
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0
@@ -48,3 +50,5 @@ permalink: /kb/232/Q232508/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/036/Q36947/
 
 ## Q36947: _Settexwindow() and Scrolling
 
+{% raw %}
+
 	Article: Q36947
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -70,3 +72,5 @@ permalink: /kb/036/Q36947/
 	        _outtext ("This will appear on the last line (line 14)...") ;
 	        _settextposition (14,1) ;       /* set cursor to last line.*/
 	        _outtext ("This will over-write, not scroll.") ;
+
+{% endraw %}

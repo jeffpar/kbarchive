@@ -6,6 +6,8 @@ permalink: /kb/130/Q130756/
 
 ## Q130756: PC Adm: Err Msg: Notice 28 Mailbox Recovered
 
+{% raw %}
+
 	Article: Q130756
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0a,3.2,3.2a
@@ -52,3 +54,5 @@ permalink: /kb/130/Q130756/
 	
 	=============================================================================
 	
+
+{% endraw %}

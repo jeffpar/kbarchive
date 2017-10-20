@@ -6,6 +6,8 @@ permalink: /kb/150/Q150691/
 
 ## Q150691: Complete Gardening Message: Unable To Find Bookmarks
 
+{% raw %}
+
 	Article: Q150691
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -56,3 +58,5 @@ permalink: /kb/150/Q150691/
 	
 	=============================================================================
 	
+
+{% endraw %}

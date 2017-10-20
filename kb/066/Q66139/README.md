@@ -6,6 +6,8 @@ permalink: /kb/066/Q66139/
 
 ## Q66139: ISAMIO /E Cannot Extract Aggregate Types from ISAM Database
 
+{% raw %}
+
 	Article: Q66139
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.10
@@ -172,3 +174,5 @@ permalink: /kb/066/Q66139/
 	NEXT
 	CLOSE
 	END
+
+{% endraw %}

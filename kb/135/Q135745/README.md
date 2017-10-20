@@ -6,6 +6,8 @@ permalink: /kb/135/Q135745/
 
 ## Q135745: PPT7: Objects Displayed in Grayscale in Black &amp; White View
 
+{% raw %}
+
 	Article: Q135745
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -73,3 +75,5 @@ permalink: /kb/135/Q135745/
 	
 	=============================================================================
 	
+
+{% endraw %}

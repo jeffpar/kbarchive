@@ -6,6 +6,8 @@ permalink: /kb/114/Q114245/
 
 ## Q114245: BUG: Can Not Do Literal Update of Memo Fields Beyond 255 Chars
 
+{% raw %}
+
 	Article: Q114245
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -67,3 +69,5 @@ permalink: /kb/114/Q114245/
 	
 	=============================================================================
 	
+
+{% endraw %}

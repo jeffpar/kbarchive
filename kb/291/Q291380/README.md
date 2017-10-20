@@ -6,6 +6,8 @@ permalink: /kb/291/Q291380/
 
 ## Q291380: FIX: Redefinition Errors When You Compile an IDL File
 
+{% raw %}
+
 	Article: Q291380
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -115,3 +117,5 @@ permalink: /kb/291/Q291380/
 	
 	=============================================================================
 	
+
+{% endraw %}

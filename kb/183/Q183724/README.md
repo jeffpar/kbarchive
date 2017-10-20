@@ -6,6 +6,8 @@ permalink: /kb/183/Q183724/
 
 ## Q183724: Err Msg: The Template File Cannot Be Found in the Location...
 
+{% raw %}
+
 	Article: Q183724
 	Product(s): Internet Information Server
 	Version(s): WINNT:1.1,2.0
@@ -47,3 +49,5 @@ permalink: /kb/183/Q183724/
 	
 	=============================================================================
 	
+
+{% endraw %}

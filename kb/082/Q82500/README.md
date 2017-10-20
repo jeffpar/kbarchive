@@ -6,6 +6,8 @@ permalink: /kb/082/Q82500/
 
 ## Q82500: TAPCIS Timing Problem While Running in the Background
 
+{% raw %}
+
 	Article: Q82500
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -38,3 +40,5 @@ permalink: /kb/082/Q82500/
 	
 	=============================================================================
 	
+
+{% endraw %}

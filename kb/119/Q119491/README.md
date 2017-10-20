@@ -6,6 +6,8 @@ permalink: /kb/119/Q119491/
 
 ## Q119491: File Manager Displays Deleted Partitions
 
+{% raw %}
+
 	Article: Q119491
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/119/Q119491/
 	
 	=============================================================================
 	
+
+{% endraw %}

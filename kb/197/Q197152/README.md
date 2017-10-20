@@ -6,6 +6,8 @@ permalink: /kb/197/Q197152/
 
 ## Q197152: WD97: Picture Editor Items May Not Appear in Actual Document
 
+{% raw %}
+
 	Article: Q197152
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/197/Q197152/
 	
 	=============================================================================
 	
+
+{% endraw %}

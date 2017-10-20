@@ -6,6 +6,8 @@ permalink: /kb/216/Q216902/
 
 ## Q216902: DirectX: Files That Are Updated When You Install DirectX 6.1
 
+{% raw %}
+
 	Article: Q216902
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -106,3 +108,5 @@ permalink: /kb/216/Q216902/
 	
 	=============================================================================
 	
+
+{% endraw %}

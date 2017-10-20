@@ -6,6 +6,8 @@ permalink: /kb/112/Q112878/
 
 ## Q112878: PC WSPlus: Sched. Dist. Doesn't Propagate Free and Busy Times
 
+{% raw %}
+
 	Article: Q112878
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 1.0,1.0a
@@ -72,3 +74,5 @@ permalink: /kb/112/Q112878/
 	
 	=============================================================================
 	
+
+{% endraw %}

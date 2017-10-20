@@ -6,6 +6,8 @@ permalink: /kb/061/Q61187/
 
 ## Q61187: C 6.00 README: Differences Between C 5.10 and 6.00
 
+{% raw %}
+
 	Article: Q61187
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -22,3 +24,5 @@ permalink: /kb/061/Q61187/
 	For a complete discussion of the differences between Microsoft C
 	Versions 5.10 and 6.00, see Appendix B of "Advanced Programming
 	Techniques."
+
+{% endraw %}

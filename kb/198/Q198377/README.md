@@ -6,6 +6,8 @@ permalink: /kb/198/Q198377/
 
 ## Q198377: WD97: &quot;Float Over Text&quot; Object Converts with Extra Para Mark
 
+{% raw %}
+
 	Article: Q198377
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/198/Q198377/
 	
 	=============================================================================
 	
+
+{% endraw %}

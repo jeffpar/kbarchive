@@ -6,6 +6,8 @@ permalink: /kb/105/Q105100/
 
 ## Q105100: Very Large File Prevent Completion of DoubleSpace Uncompress
 
+{% raw %}
+
 	Article: Q105100
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -62,3 +64,5 @@ permalink: /kb/105/Q105100/
 	
 	=============================================================================
 	
+
+{% endraw %}

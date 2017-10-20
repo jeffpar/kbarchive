@@ -6,6 +6,8 @@ permalink: /kb/088/Q88985/
 
 ## Q88985: Converting a Numeric Value to a String
 
+{% raw %}
+
 	Article: Q88985
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:1.21,2.1
@@ -70,3 +72,5 @@ permalink: /kb/088/Q88985/
 	
 	=============================================================================
 	
+
+{% endraw %}

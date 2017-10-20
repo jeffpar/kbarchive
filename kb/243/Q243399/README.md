@@ -6,6 +6,8 @@ permalink: /kb/243/Q243399/
 
 ## Q243399: FIX: .FRM files Not Converted with MODIFY REPORT Command
 
+{% raw %}
+
 	Article: Q243399
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -72,3 +74,5 @@ permalink: /kb/243/Q243399/
 	
 	=============================================================================
 	
+
+{% endraw %}

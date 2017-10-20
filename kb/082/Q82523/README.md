@@ -6,6 +6,8 @@ permalink: /kb/082/Q82523/
 
 ## Q82523: Character Map Displays FaceLift Fonts Incorrectly
 
+{% raw %}
+
 	Article: Q82523
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -42,3 +44,5 @@ permalink: /kb/082/Q82523/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104248/
 
 ## Q104248: HOW TO: Use #pragma init_seg to Control Static Construction
 
+{% raw %}
+
 	Article: Q104248
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,2.1,4.0,5.0,6.0
@@ -155,3 +157,5 @@ permalink: /kb/104/Q104248/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/114/Q114038/
 
 ## Q114038: Using ShellExecute as an Alternative to ExecProgram
 
+{% raw %}
+
 	Article: Q114038
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -125,3 +127,5 @@ permalink: /kb/114/Q114038/
 	
 	=============================================================================
 	
+
+{% endraw %}

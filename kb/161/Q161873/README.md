@@ -6,6 +6,8 @@ permalink: /kb/161/Q161873/
 
 ## Q161873: HOWTO: Mark MFC Controls Safe for Scripting/Initialization
 
+{% raw %}
+
 	Article: Q161873
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.01,4.2,5.0,6.0
@@ -150,9 +152,9 @@ permalink: /kb/161/Q161873/
 	  Define the GUID associated with the safety component categories:
 	
 	        const CATID CATID_SafeForScripting     =
-	        {0x7dd95801,0x9882,0x11cf,{0x9f,0xa9,0x00,0xaa,0x00,0x6c,0x42,0xc4} };
+	        {0x7dd95801,0x9882,0x11cf,{0x9f,0xa9,0x00,0xaa,0x00,0x6c,0x42,0xc4}};
 	        const CATID CATID_SafeForInitializing  =
-	        {0x7dd95802,0x9882,0x11cf,{0x9f,0xa9,0x00,0xaa,0x00,0x6c,0x42,0xc4} };
+	        {0x7dd95802,0x9882,0x11cf,{0x9f,0xa9,0x00,0xaa,0x00,0x6c,0x42,0xc4}};
 	
 	  Define the GUID associated with your control. For simplicity, you can borrow
 	  the GUID from the IMPLEMENT_OLECREATE_EX macro in the main .cpp file for the
@@ -238,3 +240,5 @@ permalink: /kb/161/Q161873/
 	
 	=============================================================================
 	
+
+{% endraw %}

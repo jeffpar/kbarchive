@@ -6,6 +6,8 @@ permalink: /kb/178/Q178698/
 
 ## Q178698: XADM: Calendar Reminders Not Functioning After Move Mailbox
 
+{% raw %}
+
 	Article: Q178698
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -140,3 +142,5 @@ permalink: /kb/178/Q178698/
 	
 	=============================================================================
 	
+
+{% endraw %}

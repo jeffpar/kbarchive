@@ -6,6 +6,8 @@ permalink: /kb/099/Q99921/
 
 ## Q99921: HOWTO: Obtain Network User IDs from Within FoxPro
 
+{% raw %}
+
 	Article: Q99921
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/099/Q99921/
 	
 	=============================================================================
 	
+
+{% endraw %}

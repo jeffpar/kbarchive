@@ -6,6 +6,8 @@ permalink: /kb/152/Q152868/
 
 ## Q152868: XADM: Max Logging for Replication Messages Causes Crash
 
+{% raw %}
+
 	Article: Q152868
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -45,3 +47,5 @@ permalink: /kb/152/Q152868/
 	
 	=============================================================================
 	
+
+{% endraw %}

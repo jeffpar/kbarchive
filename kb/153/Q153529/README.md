@@ -6,6 +6,8 @@ permalink: /kb/153/Q153529/
 
 ## Q153529: Underscore in Domain Name Causes Validation Errors
 
+{% raw %}
+
 	Article: Q153529
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2,3.5,3.51,6.0,6.5
@@ -74,3 +76,5 @@ permalink: /kb/153/Q153529/
 	
 	=============================================================================
 	
+
+{% endraw %}

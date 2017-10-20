@@ -6,6 +6,8 @@ permalink: /kb/170/Q170515/
 
 ## Q170515: FIX: RTTI and Incremental Link Options Incorrectly Disabled
 
+{% raw %}
+
 	Article: Q170515
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -62,3 +64,5 @@ permalink: /kb/170/Q170515/
 	
 	=============================================================================
 	
+
+{% endraw %}

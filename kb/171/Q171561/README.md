@@ -6,6 +6,8 @@ permalink: /kb/171/Q171561/
 
 ## Q171561: Inside COM: CD-ROM: Problems Compiling Tangram Source Code
 
+{% raw %}
+
 	Article: Q171561
 	Product(s): Microsoft Press
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/171/Q171561/
 	
 	=============================================================================
 	
+
+{% endraw %}

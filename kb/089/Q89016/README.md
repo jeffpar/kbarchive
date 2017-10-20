@@ -6,6 +6,8 @@ permalink: /kb/089/Q89016/
 
 ## Q89016: Apple LaserWriter Requires ROM Revision 2.0 or Later
 
+{% raw %}
+
 	Article: Q89016
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -41,3 +43,5 @@ permalink: /kb/089/Q89016/
 	
 	=============================================================================
 	
+
+{% endraw %}

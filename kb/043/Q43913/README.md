@@ -6,6 +6,8 @@ permalink: /kb/043/Q43913/
 
 ## Q43913: C: Finding the Length of Double Precision Decimals
 
+{% raw %}
+
 	Article: Q43913
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -50,3 +52,5 @@ permalink: /kb/043/Q43913/
 	    dec_pos == 5
 	    places_after == (9 - 5 - 1) == 3
 	    places_before == (5 - 1) == 4
+
+{% endraw %}

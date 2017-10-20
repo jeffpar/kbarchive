@@ -6,6 +6,8 @@ permalink: /kb/195/Q195992/
 
 ## Q195992: WD97: Purpose of Square Bullets Displayed in Left Margin
 
+{% raw %}
+
 	Article: Q195992
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -65,3 +67,5 @@ permalink: /kb/195/Q195992/
 	
 	=============================================================================
 	
+
+{% endraw %}

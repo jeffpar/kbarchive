@@ -6,6 +6,8 @@ permalink: /kb/062/Q62469/
 
 ## Q62469: WD97: Index Field &#92;E or &#92;L Switch Limited to Five Characters
 
+{% raw %}
+
 	Article: Q62469
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -49,3 +51,5 @@ permalink: /kb/062/Q62469/
 	
 	=============================================================================
 	
+
+{% endraw %}

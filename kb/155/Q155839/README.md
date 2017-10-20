@@ -6,6 +6,8 @@ permalink: /kb/155/Q155839/
 
 ## Q155839: XFOR: IMC has Problems with Mail Sent from Eudora
 
+{% raw %}
+
 	Article: Q155839
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/155/Q155839/
 	
 	=============================================================================
 	
+
+{% endraw %}

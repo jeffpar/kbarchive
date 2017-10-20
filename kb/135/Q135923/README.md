@@ -6,6 +6,8 @@ permalink: /kb/135/Q135923/
 
 ## Q135923: ES688 Sound Chip Driver Available for Toshiba Notebook Computers
 
+{% raw %}
+
 	Article: Q135923
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -62,3 +64,5 @@ permalink: /kb/135/Q135923/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128722/
 
 ## Q128722: Windows Hangs After Installing TCP/IP with WDCDRV.386
 
+{% raw %}
+
 	Article: Q128722
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -89,3 +91,5 @@ permalink: /kb/128/Q128722/
 	
 	=============================================================================
 	
+
+{% endraw %}

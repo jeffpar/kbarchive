@@ -6,6 +6,8 @@ permalink: /kb/238/Q238406/
 
 ## Q238406: PRB: Resetting DataCombo RowSource Resets BoundColumn Property
 
+{% raw %}
+
 	Article: Q238406
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0,6.0 SP3,6.0 SP5
@@ -118,3 +120,5 @@ permalink: /kb/238/Q238406/
 	
 	=============================================================================
 	
+
+{% endraw %}

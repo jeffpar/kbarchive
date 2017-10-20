@@ -6,6 +6,8 @@ permalink: /kb/178/Q178096/
 
 ## Q178096: XCLN: Outlook Client Crashes Accessing Restricted DL
 
+{% raw %}
+
 	Article: Q178096
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:8.0; winnt:5.5; :8.03
@@ -53,3 +55,5 @@ permalink: /kb/178/Q178096/
 	
 	=============================================================================
 	
+
+{% endraw %}

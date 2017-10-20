@@ -6,6 +6,8 @@ permalink: /kb/248/Q248817/
 
 ## Q248817: Bookshelf 2000: Error Message When Using QuickSynonym in Word
 
+{% raw %}
+
 	Article: Q248817
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2000
@@ -50,3 +52,5 @@ permalink: /kb/248/Q248817/
 	
 	=============================================================================
 	
+
+{% endraw %}

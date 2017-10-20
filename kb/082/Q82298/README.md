@@ -6,6 +6,8 @@ permalink: /kb/082/Q82298/
 
 ## Q82298: Windows 3.1 Standard Mode and the VCPI
 
+{% raw %}
+
 	Article: Q82298
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -115,3 +117,5 @@ permalink: /kb/082/Q82298/
 	
 	=============================================================================
 	
+
+{% endraw %}

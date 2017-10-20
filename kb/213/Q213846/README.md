@@ -6,6 +6,8 @@ permalink: /kb/213/Q213846/
 
 ## Q213846: INFO: Deploy Database Applications with the PDW
 
+{% raw %}
+
 	Article: Q213846
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -243,3 +245,5 @@ permalink: /kb/213/Q213846/
 	
 	=============================================================================
 	
+
+{% endraw %}

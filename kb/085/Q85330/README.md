@@ -6,6 +6,8 @@ permalink: /kb/085/Q85330/
 
 ## Q85330: BUG: GetModuleFileName() Returns Relative File Path
 
+{% raw %}
+
 	Article: Q85330
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -69,3 +71,5 @@ permalink: /kb/085/Q85330/
 	
 	=============================================================================
 	
+
+{% endraw %}

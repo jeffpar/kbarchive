@@ -6,6 +6,8 @@ permalink: /kb/112/Q112740/
 
 ## Q112740: Encarta Err Msg: Could Not Write to File Named CTL3D.DLL
 
+{% raw %}
+
 	Article: Q112740
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1994 edition
@@ -117,3 +119,5 @@ permalink: /kb/112/Q112740/
 	
 	=============================================================================
 	
+
+{% endraw %}

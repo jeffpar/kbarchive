@@ -6,6 +6,8 @@ permalink: /kb/064/Q64078/
 
 ## Q64078: RightJus.exe Right Justifies Numbers in List Box
 
+{% raw %}
+
 	Article: Q64078
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -87,3 +89,5 @@ permalink: /kb/064/Q64078/
 	
 	=============================================================================
 	
+
+{% endraw %}

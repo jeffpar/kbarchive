@@ -6,6 +6,8 @@ permalink: /kb/199/Q199397/
 
 ## Q199397: XFOR: POP3 Reply Address Contains Numerous Invalid Addresses
 
+{% raw %}
+
 	Article: Q199397
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -57,3 +59,5 @@ permalink: /kb/199/Q199397/
 	
 	=============================================================================
 	
+
+{% endraw %}

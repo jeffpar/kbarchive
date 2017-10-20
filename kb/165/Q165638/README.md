@@ -6,6 +6,8 @@ permalink: /kb/165/Q165638/
 
 ## Q165638: HOWTO: Print Two Reports in One Duplexed Report
 
+{% raw %}
+
 	Article: Q165638
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -230,3 +232,5 @@ permalink: /kb/165/Q165638/
 	
 	=============================================================================
 	
+
+{% endraw %}

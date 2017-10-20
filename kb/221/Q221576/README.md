@@ -6,6 +6,8 @@ permalink: /kb/221/Q221576/
 
 ## Q221576: INFO: How the Fast Get Operation Works in Visual SourceSafe
 
+{% raw %}
+
 	Article: Q221576
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -68,3 +70,5 @@ permalink: /kb/221/Q221576/
 	
 	=============================================================================
 	
+
+{% endraw %}

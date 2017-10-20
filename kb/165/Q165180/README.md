@@ -6,6 +6,8 @@ permalink: /kb/165/Q165180/
 
 ## Q165180: How to Create a Virtual Server
 
+{% raw %}
+
 	Article: Q165180
 	Product(s): Internet Information Server
 	Version(s): WinNT:3.0
@@ -108,3 +110,5 @@ permalink: /kb/165/Q165180/
 	
 	=============================================================================
 	
+
+{% endraw %}

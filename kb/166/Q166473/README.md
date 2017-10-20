@@ -6,6 +6,8 @@ permalink: /kb/166/Q166473/
 
 ## Q166473: PRB: CScrollView Scroll Range Limited to 32K
 
+{% raw %}
+
 	Article: Q166473
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/166/Q166473/
 	
 	=============================================================================
 	
+
+{% endraw %}

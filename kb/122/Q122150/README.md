@@ -6,6 +6,8 @@ permalink: /kb/122/Q122150/
 
 ## Q122150: Password Validation to NT Using ODI Drivers
 
+{% raw %}
+
 	Article: Q122150
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11; winnt:3.1,3.5
@@ -83,3 +85,5 @@ permalink: /kb/122/Q122150/
 	
 	=============================================================================
 	
+
+{% endraw %}

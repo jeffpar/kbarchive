@@ -6,6 +6,8 @@ permalink: /kb/278/Q278523/
 
 ## Q278523: XADM: Exchange 2000 Setup Fails and Security Vulnerability
 
+{% raw %}
+
 	Article: Q278523
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -221,3 +223,5 @@ permalink: /kb/278/Q278523/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161450/
 
 ## Q161450: Not All Bytes Returned Using Adobe Acrobat w/ IIS 2.0
 
+{% raw %}
+
 	Article: Q161450
 	Product(s): Internet Information Server
 	Version(s): 2.00
@@ -58,3 +60,5 @@ permalink: /kb/161/Q161450/
 	
 	=============================================================================
 	
+
+{% endraw %}

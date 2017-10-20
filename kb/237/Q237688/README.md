@@ -6,6 +6,8 @@ permalink: /kb/237/Q237688/
 
 ## Q237688: HOWTO: Using getsockopt() and setsockopt() in Visual Basic
 
+{% raw %}
+
 	Article: Q237688
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -213,3 +215,5 @@ permalink: /kb/237/Q237688/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170158/
 
 ## Q170158: INFO: VB 6.0 Readme Part 7: Error Message Issues
 
+{% raw %}
+
 	Article: Q170158
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -150,3 +152,5 @@ permalink: /kb/170/Q170158/
 	
 	=============================================================================
 	
+
+{% endraw %}

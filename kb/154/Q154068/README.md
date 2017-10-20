@@ -6,6 +6,8 @@ permalink: /kb/154/Q154068/
 
 ## Q154068: Mastering Exchange Development: Windows 95 Registry Entries
 
+{% raw %}
+
 	Article: Q154068
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0; WINDOWS:95
@@ -91,3 +93,5 @@ permalink: /kb/154/Q154068/
 	
 	=============================================================================
 	
+
+{% endraw %}

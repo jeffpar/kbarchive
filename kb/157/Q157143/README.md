@@ -6,6 +6,8 @@ permalink: /kb/157/Q157143/
 
 ## Q157143: Encarta 97 Err Msg: Insufficient Memory/Not Enough Free Memory
 
+{% raw %}
+
 	Article: Q157143
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.1,3.11
@@ -113,3 +115,5 @@ permalink: /kb/157/Q157143/
 	
 	=============================================================================
 	
+
+{% endraw %}

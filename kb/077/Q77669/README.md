@@ -6,6 +6,8 @@ permalink: /kb/077/Q77669/
 
 ## Q77669: PC OS2: Install Fails If Windows Ported Application Is Active
 
+{% raw %}
+
 	Article: Q77669
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0
@@ -51,3 +53,5 @@ permalink: /kb/077/Q77669/
 	
 	=============================================================================
 	
+
+{% endraw %}

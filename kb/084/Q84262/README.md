@@ -6,6 +6,8 @@ permalink: /kb/084/Q84262/
 
 ## Q84262: Undocumented Keyboard Commands in Beethoven
 
+{% raw %}
+
 	Article: Q84262
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a
@@ -54,3 +56,5 @@ permalink: /kb/084/Q84262/
 	
 	=============================================================================
 	
+
+{% endraw %}

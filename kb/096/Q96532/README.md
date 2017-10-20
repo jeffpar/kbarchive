@@ -6,6 +6,8 @@ permalink: /kb/096/Q96532/
 
 ## Q96532: PC WRmt: Installing Over Another Copy of Windows Mail Client
 
+{% raw %}
+
 	Article: Q96532
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -37,3 +39,5 @@ permalink: /kb/096/Q96532/
 	
 	=============================================================================
 	
+
+{% endraw %}

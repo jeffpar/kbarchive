@@ -6,6 +6,8 @@ permalink: /kb/190/Q190553/
 
 ## Q190553: INFO: Do Not Use VB Color Constants in DHTML Page Designer
 
+{% raw %}
+
 	Article: Q190553
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -63,3 +65,5 @@ permalink: /kb/190/Q190553/
 	
 	=============================================================================
 	
+
+{% endraw %}

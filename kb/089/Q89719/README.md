@@ -6,6 +6,8 @@ permalink: /kb/089/Q89719/
 
 ## Q89719: WFWG Server Cannot Share Virtual Drives
 
+{% raw %}
+
 	Article: Q89719
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -104,3 +106,5 @@ permalink: /kb/089/Q89719/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146404/
 
 ## Q146404: Only Text Can Be Pasted into a Meeting Request
 
+{% raw %}
+
 	Article: Q146404
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -41,3 +43,5 @@ permalink: /kb/146/Q146404/
 	
 	=============================================================================
 	
+
+{% endraw %}

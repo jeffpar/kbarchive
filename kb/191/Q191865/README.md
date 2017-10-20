@@ -6,6 +6,8 @@ permalink: /kb/191/Q191865/
 
 ## Q191865: Loop in COMTI After CICS ABEND During Send Processing
 
+{% raw %}
+
 	Article: Q191865
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,1.0 SP1,4.0,4.0 SP1
@@ -142,3 +144,5 @@ permalink: /kb/191/Q191865/
 	
 	=============================================================================
 	
+
+{% endraw %}

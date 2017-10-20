@@ -6,6 +6,8 @@ permalink: /kb/133/Q133277/
 
 ## Q133277: Windows 95/98: How to Copy a File
 
+{% raw %}
+
 	Article: Q133277
 	Product(s): Microsoft Home Miscellaneous Products
 	Version(s): WINDOWS:95
@@ -66,3 +68,5 @@ permalink: /kb/133/Q133277/
 	
 	=============================================================================
 	
+
+{% endraw %}

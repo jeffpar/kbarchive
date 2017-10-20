@@ -6,6 +6,8 @@ permalink: /kb/190/Q190536/
 
 ## Q190536: FIX: Invalid Page Fault in Msvcrt.dll
 
+{% raw %}
+
 	Article: Q190536
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -107,3 +109,5 @@ permalink: /kb/190/Q190536/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/105/Q105060/
 
 ## Q105060: Cannot Access Floppy Disk with MS-DOS-Based Lotus 1-2-3
 
+{% raw %}
+
 	Article: Q105060
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.22
@@ -54,3 +56,5 @@ permalink: /kb/105/Q105060/
 	
 	=============================================================================
 	
+
+{% endraw %}

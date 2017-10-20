@@ -6,6 +6,8 @@ permalink: /kb/118/Q118857/
 
 ## Q118857: FileReadOperations/Sec in PerfMon Returns Bad Values
 
+{% raw %}
+
 	Article: Q118857
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/118/Q118857/
 	
 	=============================================================================
 	
+
+{% endraw %}

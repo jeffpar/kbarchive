@@ -6,6 +6,8 @@ permalink: /kb/140/Q140669/
 
 ## Q140669: FIX: CSingleLock: Bogus Assert in CSingleLock::CSingleLock
 
+{% raw %}
+
 	Article: Q140669
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/140/Q140669/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169102/
 
 ## Q169102: BUG: REQUERY() Problem with Private Datasessions Sharing a Table
 
+{% raw %}
+
 	Article: Q169102
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0 5.0a
@@ -110,3 +112,5 @@ permalink: /kb/169/Q169102/
 	
 	=============================================================================
 	
+
+{% endraw %}

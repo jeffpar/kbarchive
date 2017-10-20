@@ -6,6 +6,8 @@ permalink: /kb/129/Q129426/
 
 ## Q129426: RAS Error 652 Using MultiTech MT2834 Modem
 
+{% raw %}
+
 	Article: Q129426
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -57,3 +59,5 @@ permalink: /kb/129/Q129426/
 	
 	=============================================================================
 	
+
+{% endraw %}

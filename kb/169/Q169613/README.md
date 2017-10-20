@@ -6,6 +6,8 @@ permalink: /kb/169/Q169613/
 
 ## Q169613: FPNW Service Stops Suddenly in WinNT 3.51 &amp; WinNT 4.0
 
+{% raw %}
+
 	Article: Q169613
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -87,3 +89,5 @@ permalink: /kb/169/Q169613/
 	
 	=============================================================================
 	
+
+{% endraw %}

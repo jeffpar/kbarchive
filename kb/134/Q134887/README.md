@@ -6,6 +6,8 @@ permalink: /kb/134/Q134887/
 
 ## Q134887: Encarta '95: No Scroll Bars in Some Interactivities
 
+{% raw %}
+
 	Article: Q134887
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1995 edition
@@ -56,3 +58,5 @@ permalink: /kb/134/Q134887/
 	
 	=============================================================================
 	
+
+{% endraw %}

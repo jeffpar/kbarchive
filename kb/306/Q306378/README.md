@@ -6,6 +6,8 @@ permalink: /kb/306/Q306378/
 
 ## Q306378: SNMP sends traps from last bound IP address on interface
 
+{% raw %}
+
 	Article: Q306378
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -102,3 +104,5 @@ permalink: /kb/306/Q306378/
 	
 	=============================================================================
 	
+
+{% endraw %}

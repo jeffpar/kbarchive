@@ -6,6 +6,8 @@ permalink: /kb/107/Q107164/
 
 ## Q107164: PRB: .FLI and .FLC Files Don't Play
 
+{% raw %}
+
 	Article: Q107164
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -60,3 +62,5 @@ permalink: /kb/107/Q107164/
 	
 	=============================================================================
 	
+
+{% endraw %}

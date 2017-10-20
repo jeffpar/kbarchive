@@ -6,6 +6,8 @@ permalink: /kb/104/Q104053/
 
 ## Q104053: Difference Between COPY TO ARRAY and SELECT INTO ARRAY
 
+{% raw %}
+
 	Article: Q104053
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
@@ -85,3 +87,5 @@ permalink: /kb/104/Q104053/
 	
 	=============================================================================
 	
+
+{% endraw %}

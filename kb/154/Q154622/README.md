@@ -6,6 +6,8 @@ permalink: /kb/154/Q154622/
 
 ## Q154622: Bookshelf '95: Program Hangs Printing to Epson Stylus Color II
 
+{% raw %}
+
 	Article: Q154622
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -74,3 +76,5 @@ permalink: /kb/154/Q154622/
 	
 	=============================================================================
 	
+
+{% endraw %}

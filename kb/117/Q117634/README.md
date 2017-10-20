@@ -6,6 +6,8 @@ permalink: /kb/117/Q117634/
 
 ## Q117634: Baseball 1994: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q117634
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -330,3 +332,5 @@ permalink: /kb/117/Q117634/
 	
 	=============================================================================
 	
+
+{% endraw %}

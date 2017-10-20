@@ -6,6 +6,8 @@ permalink: /kb/190/Q190156/
 
 ## Q190156: Callback User Interface Allows a Blank Phone Number
 
+{% raw %}
+
 	Article: Q190156
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -42,3 +44,5 @@ permalink: /kb/190/Q190156/
 	
 	=============================================================================
 	
+
+{% endraw %}

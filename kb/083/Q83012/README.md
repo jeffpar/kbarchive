@@ -6,6 +6,8 @@ permalink: /kb/083/Q83012/
 
 ## Q83012: Using Auto-Initialize DMA Under Windows
 
+{% raw %}
+
 	Article: Q83012
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -97,3 +99,5 @@ permalink: /kb/083/Q83012/
 	
 	=============================================================================
 	
+
+{% endraw %}

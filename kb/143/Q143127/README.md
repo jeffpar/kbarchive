@@ -6,6 +6,8 @@ permalink: /kb/143/Q143127/
 
 ## Q143127: BOOTP Relay Agents Fail Using Multiple Logical IP Subnets
 
+{% raw %}
+
 	Article: Q143127
 	Product(s): Microsoft Windows NT
 	Version(s): 3.11 3.5 3.51 95 4.0
@@ -68,3 +70,5 @@ permalink: /kb/143/Q143127/
 	
 	=============================================================================
 	
+
+{% endraw %}

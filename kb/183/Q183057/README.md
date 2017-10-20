@@ -6,6 +6,8 @@ permalink: /kb/183/Q183057/
 
 ## Q183057: XADM: Private Information Store Has High Disk Size Item Numbers
 
+{% raw %}
+
 	Article: Q183057
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -105,3 +107,5 @@ permalink: /kb/183/Q183057/
 	
 	=============================================================================
 	
+
+{% endraw %}

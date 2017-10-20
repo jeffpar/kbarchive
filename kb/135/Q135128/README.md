@@ -6,6 +6,8 @@ permalink: /kb/135/Q135128/
 
 ## Q135128: New Option Name Appears as &#42;&#42;iinvalid&#42;&#42; in DHCP Manager
 
+{% raw %}
+
 	Article: Q135128
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -49,3 +51,5 @@ permalink: /kb/135/Q135128/
 	
 	=============================================================================
 	
+
+{% endraw %}

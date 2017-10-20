@@ -6,6 +6,8 @@ permalink: /kb/073/Q73729/
 
 ## Q73729: Using an Expanded Memory Board with EMM386.EXE
 
+{% raw %}
+
 	Article: Q73729
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0; WINDOWS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/073/Q73729/
 	
 	=============================================================================
 	
+
+{% endraw %}

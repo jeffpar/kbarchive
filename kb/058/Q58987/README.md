@@ -6,6 +6,8 @@ permalink: /kb/058/Q58987/
 
 ## Q58987: Pointer Arithmetic Wraps Around Segment Ends
 
+{% raw %}
+
 	Article: Q58987
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -55,3 +57,5 @@ permalink: /kb/058/Q58987/
 	 ptr++;
 	 printf ("\nSegment is %u, offset is %u\n", FP_SEG(ptr), FP_OFF(ptr));
 	}
+
+{% endraw %}

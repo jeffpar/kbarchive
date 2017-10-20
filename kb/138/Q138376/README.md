@@ -6,6 +6,8 @@ permalink: /kb/138/Q138376/
 
 ## Q138376: BUG: NODEFAULT Is Ignored in Text Box KeyPress Event Code
 
+{% raw %}
+
 	Article: Q138376
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -90,3 +92,5 @@ permalink: /kb/138/Q138376/
 	
 	=============================================================================
 	
+
+{% endraw %}

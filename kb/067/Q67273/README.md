@@ -6,6 +6,8 @@ permalink: /kb/067/Q67273/
 
 ## Q67273: Error in Installation Manual for bounds-error() Routine
 
+{% raw %}
+
 	Article: Q67273
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -58,3 +60,5 @@ permalink: /kb/067/Q67273/
 	{
 	   bounds_error();
 	}
+
+{% endraw %}

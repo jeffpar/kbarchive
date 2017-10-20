@@ -6,6 +6,8 @@ permalink: /kb/190/Q190451/
 
 ## Q190451: BUG: Exiting VB While T-SQL Debugger Is Running Causes Hang
 
+{% raw %}
+
 	Article: Q190451
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/190/Q190451/
 	
 	=============================================================================
 	
+
+{% endraw %}

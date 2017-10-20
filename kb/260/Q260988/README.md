@@ -6,6 +6,8 @@ permalink: /kb/260/Q260988/
 
 ## Q260988: Capture RE Fails When You Use TCP/IP MS LINK Component
 
+{% raw %}
+
 	Article: Q260988
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -80,3 +82,5 @@ permalink: /kb/260/Q260988/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/293/Q293866/
 
 ## Q293866: &quot;Access Denied&quot; Err Msg If Windows 9x Prints to Network Printer
 
+{% raw %}
+
 	Article: Q293866
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -199,3 +201,5 @@ permalink: /kb/293/Q293866/
 	
 	=============================================================================
 	
+
+{% endraw %}

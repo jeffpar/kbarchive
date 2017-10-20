@@ -6,6 +6,8 @@ permalink: /kb/032/Q32149/
 
 ## Q32149: &quot;Duplicate Definition&quot; in QB.EXE; &quot;Equals Missing&quot; in BC.EXE
 
+{% raw %}
+
 	Article: Q32149
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -46,3 +48,5 @@ permalink: /kb/032/Q32149/
 	
 	   a = 1
 	   a a
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/237/Q237729/
 
 ## Q237729: NFL Fever: Only One of Two Installed Video Adapters Is Listed
 
+{% raw %}
+
 	Article: Q237729
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/237/Q237729/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129081/
 
 ## Q129081: Setup Does Not Prompt to Create Emergency Startup Disk
 
+{% raw %}
+
 	Article: Q129081
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -64,3 +66,5 @@ permalink: /kb/129/Q129081/
 	
 	=============================================================================
 	
+
+{% endraw %}

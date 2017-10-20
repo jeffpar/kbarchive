@@ -6,6 +6,8 @@ permalink: /kb/131/Q131117/
 
 ## Q131117: PC NTMMTA: Err Msg: Could Not Start the Mail External...
 
+{% raw %}
+
 	Article: Q131117
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -89,3 +91,5 @@ permalink: /kb/131/Q131117/
 	
 	=============================================================================
 	
+
+{% endraw %}

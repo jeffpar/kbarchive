@@ -6,6 +6,8 @@ permalink: /kb/106/Q106018/
 
 ## Q106018: BUG: SetPixel() Doesn't Work Properly on a PS Printer
 
+{% raw %}
+
 	Article: Q106018
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -124,3 +126,5 @@ permalink: /kb/106/Q106018/
 	
 	=============================================================================
 	
+
+{% endraw %}

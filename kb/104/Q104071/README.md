@@ -6,6 +6,8 @@ permalink: /kb/104/Q104071/
 
 ## Q104071: Scenes 1.0: Dissolve Transition Fails on First Picture
 
+{% raw %}
+
 	Article: Q104071
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -44,3 +46,5 @@ permalink: /kb/104/Q104071/
 	
 	=============================================================================
 	
+
+{% endraw %}

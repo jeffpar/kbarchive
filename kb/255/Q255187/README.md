@@ -6,6 +6,8 @@ permalink: /kb/255/Q255187/
 
 ## Q255187: Migrating a Print Server Between Windows NT 4.0 Server Computers
 
+{% raw %}
+
 	Article: Q255187
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/255/Q255187/
 	
 	=============================================================================
 	
+
+{% endraw %}

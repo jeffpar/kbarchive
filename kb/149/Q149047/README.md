@@ -6,6 +6,8 @@ permalink: /kb/149/Q149047/
 
 ## Q149047: How to Specify Informational Text for VB4 OLE Servers
 
+{% raw %}
+
 	Article: Q149047
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -162,3 +164,5 @@ permalink: /kb/149/Q149047/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118792/
 
 ## Q118792: Help Button Covers Close Button on the Title Bar
 
+{% raw %}
+
 	Article: Q118792
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -72,3 +74,5 @@ permalink: /kb/118/Q118792/
 	
 	=============================================================================
 	
+
+{% endraw %}

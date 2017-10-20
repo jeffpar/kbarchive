@@ -6,6 +6,8 @@ permalink: /kb/192/Q192239/
 
 ## Q192239: Postmaster Messages Display Incorrect Date After 2000
 
+{% raw %}
+
 	Article: Q192239
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.x,3.0,3.2,3.5
@@ -68,3 +70,5 @@ permalink: /kb/192/Q192239/
 	
 	=============================================================================
 	
+
+{% endraw %}

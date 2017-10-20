@@ -6,6 +6,8 @@ permalink: /kb/198/Q198042/
 
 ## Q198042: WD97: Spelling and Grammar Checkers Do Not Flag Single Letters
 
+{% raw %}
+
 	Article: Q198042
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -62,3 +64,5 @@ permalink: /kb/198/Q198042/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86684/
 
 ## Q86684: Patch Map Doesn't Work in Media Player
 
+{% raw %}
+
 	Article: Q86684
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/086/Q86684/
 	
 	=============================================================================
 	
+
+{% endraw %}

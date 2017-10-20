@@ -6,6 +6,8 @@ permalink: /kb/145/Q145592/
 
 ## Q145592: I/O Channel Ready Settings on the Intel EtherExpress 16
 
+{% raw %}
+
 	Article: Q145592
 	Product(s): Microsoft Windows NT
 	Version(s): 3.11 3.50 3.51
@@ -139,3 +141,5 @@ permalink: /kb/145/Q145592/
 	
 	=============================================================================
 	
+
+{% endraw %}

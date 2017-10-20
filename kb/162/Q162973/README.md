@@ -6,6 +6,8 @@ permalink: /kb/162/Q162973/
 
 ## Q162973: ODE97: Changing the Application Name Does Not Change Folder Name
 
+{% raw %}
+
 	Article: Q162973
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -104,3 +106,5 @@ permalink: /kb/162/Q162973/
 	
 	=============================================================================
 	
+
+{% endraw %}

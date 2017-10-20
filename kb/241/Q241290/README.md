@@ -6,6 +6,8 @@ permalink: /kb/241/Q241290/
 
 ## Q241290: Can't Install Windows NT to Compaq 6000 Computer 1/29/99 BIOS
 
+{% raw %}
+
 	Article: Q241290
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/241/Q241290/
 	
 	=============================================================================
 	
+
+{% endraw %}

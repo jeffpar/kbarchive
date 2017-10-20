@@ -6,6 +6,8 @@ permalink: /kb/244/Q244960/
 
 ## Q244960: FIX: Analyze and DDUPD Return &quot;Out of Memory&quot;
 
+{% raw %}
+
 	Article: Q244960
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -118,3 +120,5 @@ permalink: /kb/244/Q244960/
 	
 	=============================================================================
 	
+
+{% endraw %}

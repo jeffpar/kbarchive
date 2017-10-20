@@ -6,6 +6,8 @@ permalink: /kb/118/Q118891/
 
 ## Q118891: Installing and Using the Debugging Version of Windows
 
+{% raw %}
+
 	Article: Q118891
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -113,3 +115,5 @@ permalink: /kb/118/Q118891/
 	
 	=============================================================================
 	
+
+{% endraw %}

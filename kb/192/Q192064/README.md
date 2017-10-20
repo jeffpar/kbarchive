@@ -6,6 +6,8 @@ permalink: /kb/192/Q192064/
 
 ## Q192064: Using LMHOSTS to Locate Multiple Preferred Logon Servers
 
+{% raw %}
+
 	Article: Q192064
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -83,3 +85,5 @@ permalink: /kb/192/Q192064/
 	
 	=============================================================================
 	
+
+{% endraw %}

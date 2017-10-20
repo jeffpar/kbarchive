@@ -6,6 +6,8 @@ permalink: /kb/165/Q165326/
 
 ## Q165326: Application Exception in Snaprint.exe When Stopping Printer
 
+{% raw %}
+
 	Article: Q165326
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -100,3 +102,5 @@ permalink: /kb/165/Q165326/
 	
 	=============================================================================
 	
+
+{% endraw %}

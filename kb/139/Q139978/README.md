@@ -6,6 +6,8 @@ permalink: /kb/139/Q139978/
 
 ## Q139978: TN3270 Server Can Incorrectly Terminate a Session
 
+{% raw %}
+
 	Article: Q139978
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -79,3 +81,5 @@ permalink: /kb/139/Q139978/
 	
 	=============================================================================
 	
+
+{% endraw %}

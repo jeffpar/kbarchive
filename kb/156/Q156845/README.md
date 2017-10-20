@@ -6,6 +6,8 @@ permalink: /kb/156/Q156845/
 
 ## Q156845: XCLN: Errors During Load when Compiling Form
 
+{% raw %}
+
 	Article: Q156845
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -69,3 +71,5 @@ permalink: /kb/156/Q156845/
 	
 	=============================================================================
 	
+
+{% endraw %}

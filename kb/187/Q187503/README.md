@@ -6,6 +6,8 @@ permalink: /kb/187/Q187503/
 
 ## Q187503: Very Long URL Passed to ASP May Cause Access Violation
 
+{% raw %}
+
 	Article: Q187503
 	Product(s): Internet Information Server
 	Version(s): 3.0
@@ -60,3 +62,5 @@ permalink: /kb/187/Q187503/
 	
 	=============================================================================
 	
+
+{% endraw %}

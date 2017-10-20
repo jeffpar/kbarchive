@@ -6,6 +6,8 @@ permalink: /kb/042/Q42857/
 
 ## Q42857: C Escape Sequence Like &quot;&#92;n&quot; Doesn't Function When Passed to C
 
+{% raw %}
+
 	Article: Q42857
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -40,3 +42,5 @@ permalink: /kb/042/Q42857/
 	CALL CROUTINE(SADD(FORMAT$),LEN(FORMAT$)
 	
 	This passes the carriage return/linefeed sequence to the C function.
+
+{% endraw %}

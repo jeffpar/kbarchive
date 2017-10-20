@@ -6,6 +6,8 @@ permalink: /kb/274/Q274350/
 
 ## Q274350: Crimson Skies: Known Video Issues in Crimson Skies
 
+{% raw %}
+
 	Article: Q274350
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -339,3 +341,5 @@ permalink: /kb/274/Q274350/
 	
 	=============================================================================
 	
+
+{% endraw %}

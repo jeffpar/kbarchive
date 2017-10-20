@@ -6,6 +6,8 @@ permalink: /kb/235/Q235169/
 
 ## Q235169: Reducing SMS Accounts Required for Installation on Large Domains
 
+{% raw %}
+
 	Article: Q235169
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -135,3 +137,5 @@ permalink: /kb/235/Q235169/
 	
 	=============================================================================
 	
+
+{% endraw %}

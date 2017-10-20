@@ -6,6 +6,8 @@ permalink: /kb/196/Q196694/
 
 ## Q196694: Cannot Start Windows NT on Computer with IBM ServRaid Adapter
 
+{% raw %}
+
 	Article: Q196694
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/196/Q196694/
 	
 	=============================================================================
 	
+
+{% endraw %}

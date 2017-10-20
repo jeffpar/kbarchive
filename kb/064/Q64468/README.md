@@ -6,6 +6,8 @@ permalink: /kb/064/Q64468/
 
 ## Q64468: Unassociated Data Files Cannot Be Dragged from File Manager
 
+{% raw %}
+
 	Article: Q64468
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/064/Q64468/
 	
 	=============================================================================
 	
+
+{% endraw %}

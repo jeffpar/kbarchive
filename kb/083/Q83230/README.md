@@ -6,6 +6,8 @@ permalink: /kb/083/Q83230/
 
 ## Q83230: Determining the Default EXETYPE Value in Microsoft LINK
 
+{% raw %}
+
 	Article: Q83230
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/083/Q83230/
 	
 	=============================================================================
 	
+
+{% endraw %}

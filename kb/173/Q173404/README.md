@@ -6,6 +6,8 @@ permalink: /kb/173/Q173404/
 
 ## Q173404: WD97: General Information About Cross-reference Fields
 
+{% raw %}
+
 	Article: Q173404
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -329,3 +331,5 @@ permalink: /kb/173/Q173404/
 	
 	=============================================================================
 	
+
+{% endraw %}

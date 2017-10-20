@@ -6,6 +6,8 @@ permalink: /kb/130/Q130700/
 
 ## Q130700: PC Mac: Err Msg: The Preference File Could Not Be Found...
 
+{% raw %}
+
 	Article: Q130700
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -125,3 +127,5 @@ permalink: /kb/130/Q130700/
 	
 	=============================================================================
 	
+
+{% endraw %}

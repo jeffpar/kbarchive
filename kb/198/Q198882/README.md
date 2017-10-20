@@ -6,6 +6,8 @@ permalink: /kb/198/Q198882/
 
 ## Q198882: Script Debugger Is Not Unicode Compatible
 
+{% raw %}
+
 	Article: Q198882
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -50,3 +52,5 @@ permalink: /kb/198/Q198882/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/240/Q240348/
 
 ## Q240348: All Programs May Not Be Displayed in Add/Remove Programs Tool
 
+{% raw %}
+
 	Article: Q240348
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/240/Q240348/
 	
 	=============================================================================
 	
+
+{% endraw %}

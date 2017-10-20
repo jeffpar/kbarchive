@@ -6,6 +6,8 @@ permalink: /kb/222/Q222840/
 
 ## Q222840: Unnecessary Delay in WINS Query
 
+{% raw %}
+
 	Article: Q222840
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -81,3 +83,5 @@ permalink: /kb/222/Q222840/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/207/Q207931/
 
 ## Q207931: HOWTO: Pass Arrays Between Visual Basic and C
 
+{% raw %}
+
 	Article: Q207931
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -506,3 +508,5 @@ permalink: /kb/207/Q207931/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87378/
 
 ## Q87378: PC DB: ATT Directory Structure
 
+{% raw %}
+
 	Article: Q87378
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.2
@@ -55,3 +57,5 @@ permalink: /kb/087/Q87378/
 	
 	=============================================================================
 	
+
+{% endraw %}

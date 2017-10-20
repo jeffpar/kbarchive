@@ -6,6 +6,8 @@ permalink: /kb/316/Q316055/
 
 ## Q316055: Password Synchronization from UNIX Does Not Work with Yppasswd
 
+{% raw %}
+
 	Article: Q316055
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0
@@ -67,3 +69,5 @@ permalink: /kb/316/Q316055/
 	
 	=============================================================================
 	
+
+{% endraw %}

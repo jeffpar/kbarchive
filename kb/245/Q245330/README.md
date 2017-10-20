@@ -6,6 +6,8 @@ permalink: /kb/245/Q245330/
 
 ## Q245330: XADM: Information Store Stops Responding With Autoforward Rule
 
+{% raw %}
+
 	Article: Q245330
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -83,3 +85,5 @@ permalink: /kb/245/Q245330/
 	
 	=============================================================================
 	
+
+{% endraw %}

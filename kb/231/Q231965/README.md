@@ -6,6 +6,8 @@ permalink: /kb/231/Q231965/
 
 ## Q231965: PPTP Performance Problems After Applying SP4
 
+{% raw %}
+
 	Article: Q231965
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -88,3 +90,5 @@ permalink: /kb/231/Q231965/
 	
 	=============================================================================
 	
+
+{% endraw %}

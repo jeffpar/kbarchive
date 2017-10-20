@@ -6,6 +6,8 @@ permalink: /kb/260/Q260369/
 
 ## Q260369: PRB: Err Msg &quot;Can't Load DLL '?????L?' &quot; Running Deployed App
 
+{% raw %}
+
 	Article: Q260369
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -69,3 +71,5 @@ permalink: /kb/260/Q260369/
 	
 	=============================================================================
 	
+
+{% endraw %}

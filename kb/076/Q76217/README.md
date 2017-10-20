@@ -6,6 +6,8 @@ permalink: /kb/076/Q76217/
 
 ## Q76217: FIX: Nested Structures May Hang Macro Assembler 6.0
 
+{% raw %}
+
 	Article: Q76217
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -87,3 +89,5 @@ permalink: /kb/076/Q76217/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170128/
 
 ## Q170128: HOWTO: Programmatically Create Large Tables for Testing Purposes
 
+{% raw %}
+
 	Article: Q170128
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/170/Q170128/
 	
 	=============================================================================
 	
+
+{% endraw %}

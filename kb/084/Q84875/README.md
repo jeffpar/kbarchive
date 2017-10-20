@@ -6,6 +6,8 @@ permalink: /kb/084/Q84875/
 
 ## Q84875: Remote-Boot PROM Information
 
+{% raw %}
+
 	Article: Q84875
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/084/Q84875/
 	
 	=============================================================================
 	
+
+{% endraw %}

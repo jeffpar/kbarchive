@@ -6,6 +6,8 @@ permalink: /kb/161/Q161357/
 
 ## Q161357: FIX: MediaView 1.41 Control Causes Unusual Behavior with Form
 
+{% raw %}
+
 	Article: Q161357
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -72,3 +74,5 @@ permalink: /kb/161/Q161357/
 	
 	=============================================================================
 	
+
+{% endraw %}

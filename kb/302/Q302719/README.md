@@ -6,6 +6,8 @@ permalink: /kb/302/Q302719/
 
 ## Q302719: New Password Not Accepted In &quot;Add New User&quot; Or &quot;Offline E-mail&quot;
 
+{% raw %}
+
 	Article: Q302719
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -65,3 +67,5 @@ permalink: /kb/302/Q302719/
 	
 	=============================================================================
 	
+
+{% endraw %}

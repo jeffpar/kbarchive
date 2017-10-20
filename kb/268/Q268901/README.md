@@ -6,6 +6,8 @@ permalink: /kb/268/Q268901/
 
 ## Q268901: HOWTO: Save a File from Visual C++ in UNIX Format
 
+{% raw %}
+
 	Article: Q268901
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -214,3 +216,5 @@ permalink: /kb/268/Q268901/
 	
 	=============================================================================
 	
+
+{% endraw %}

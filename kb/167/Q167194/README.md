@@ -6,6 +6,8 @@ permalink: /kb/167/Q167194/
 
 ## Q167194: XADM: Could Not Modify the DL Membership of Object
 
+{% raw %}
+
 	Article: Q167194
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -67,3 +69,5 @@ permalink: /kb/167/Q167194/
 	
 	=============================================================================
 	
+
+{% endraw %}

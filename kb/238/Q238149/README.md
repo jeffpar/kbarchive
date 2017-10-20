@@ -6,6 +6,8 @@ permalink: /kb/238/Q238149/
 
 ## Q238149: How to Add a Carriage Return to the Legal Notice Text
 
+{% raw %}
+
 	Article: Q238149
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -101,3 +103,5 @@ permalink: /kb/238/Q238149/
 	
 	=============================================================================
 	
+
+{% endraw %}

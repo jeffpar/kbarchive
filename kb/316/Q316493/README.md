@@ -6,6 +6,8 @@ permalink: /kb/316/Q316493/
 
 ## Q316493: Zoo Tycoon Err Msg: &quot;Z00demo.exe has encountered a problem...&quot;
 
+{% raw %}
+
 	Article: Q316493
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/316/Q316493/
 	
 	=============================================================================
 	
+
+{% endraw %}

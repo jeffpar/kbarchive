@@ -6,6 +6,8 @@ permalink: /kb/169/Q169939/
 
 ## Q169939: WD97: JPN: Word 95 Document May Not Convert Correctly
 
+{% raw %}
+
 	Article: Q169939
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -58,3 +60,5 @@ permalink: /kb/169/Q169939/
 	
 	=============================================================================
 	
+
+{% endraw %}

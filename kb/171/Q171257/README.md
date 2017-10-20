@@ -6,6 +6,8 @@ permalink: /kb/171/Q171257/
 
 ## Q171257: Assignment of LUs to Null Subnet (0.0.0.0) Not Fully Supported
 
+{% raw %}
+
 	Article: Q171257
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -66,3 +68,5 @@ permalink: /kb/171/Q171257/
 	
 	=============================================================================
 	
+
+{% endraw %}

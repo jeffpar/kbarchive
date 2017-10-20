@@ -6,6 +6,8 @@ permalink: /kb/075/Q75093/
 
 ## Q75093: Cannot Load DOS High on Wyse 286 Machines with Daughter Boards
 
+{% raw %}
+
 	Article: Q75093
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -34,3 +36,5 @@ permalink: /kb/075/Q75093/
 	
 	=============================================================================
 	
+
+{% endraw %}

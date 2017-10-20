@@ -6,6 +6,8 @@ permalink: /kb/276/Q276560/
 
 ## Q276560: BUG: CompilerError with Left Function When Devshl.dll Referenced
 
+{% raw %}
+
 	Article: Q276560
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -92,3 +94,5 @@ permalink: /kb/276/Q276560/
 	
 	=============================================================================
 	
+
+{% endraw %}

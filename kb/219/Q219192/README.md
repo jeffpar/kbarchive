@@ -6,6 +6,8 @@ permalink: /kb/219/Q219192/
 
 ## Q219192: FP: Publishing to UNIX May Produce Broken Hyperlinks
 
+{% raw %}
+
 	Article: Q219192
 	Product(s): Word Front Page
 	Version(s): 
@@ -299,3 +301,5 @@ permalink: /kb/219/Q219192/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242868/
 
 ## Q242868: AoE II: Graphic Issues or Pointer Disappears
 
+{% raw %}
+
 	Article: Q242868
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -77,3 +79,5 @@ permalink: /kb/242/Q242868/
 	
 	=============================================================================
 	
+
+{% endraw %}

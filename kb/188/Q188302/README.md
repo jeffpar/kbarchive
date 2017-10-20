@@ -6,6 +6,8 @@ permalink: /kb/188/Q188302/
 
 ## Q188302: XADM: Clean Mailbox Command Cannot Delete Based on Date Received
 
+{% raw %}
+
 	Article: Q188302
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -81,3 +83,5 @@ permalink: /kb/188/Q188302/
 	
 	=============================================================================
 	
+
+{% endraw %}

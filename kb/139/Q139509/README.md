@@ -6,6 +6,8 @@ permalink: /kb/139/Q139509/
 
 ## Q139509: RUI Application Does Not See STSN.REQ
 
+{% raw %}
+
 	Article: Q139509
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11
@@ -65,3 +67,5 @@ permalink: /kb/139/Q139509/
 	
 	=============================================================================
 	
+
+{% endraw %}

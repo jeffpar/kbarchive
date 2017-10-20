@@ -6,6 +6,8 @@ permalink: /kb/127/Q127038/
 
 ## Q127038: FIX: CString::Format Gives Assertion Failed, Access Violation
 
+{% raw %}
+
 	Article: Q127038
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1
@@ -315,3 +317,5 @@ permalink: /kb/127/Q127038/
 	
 	=============================================================================
 	
+
+{% endraw %}

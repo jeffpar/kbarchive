@@ -6,6 +6,8 @@ permalink: /kb/146/Q146423/
 
 ## Q146423: How to Change the .BMP Picture On a Command Button at Run Time
 
+{% raw %}
+
 	Article: Q146423
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -81,3 +83,5 @@ permalink: /kb/146/Q146423/
 	
 	=============================================================================
 	
+
+{% endraw %}

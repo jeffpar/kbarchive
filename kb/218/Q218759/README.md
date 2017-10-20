@@ -6,6 +6,8 @@ permalink: /kb/218/Q218759/
 
 ## Q218759: HOWTO: Display an Image in a Command Button
 
+{% raw %}
+
 	Article: Q218759
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -42,3 +44,5 @@ permalink: /kb/218/Q218759/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117882/
 
 ## Q117882: Baskerville Old Face &amp; New Caledonia Are Not Spaced Correctly
 
+{% raw %}
+
 	Article: Q117882
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/117/Q117882/
 	
 	=============================================================================
 	
+
+{% endraw %}

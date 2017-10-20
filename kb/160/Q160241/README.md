@@ -6,6 +6,8 @@ permalink: /kb/160/Q160241/
 
 ## Q160241: WD97: Page Break Deleted After Drawing Table
 
+{% raw %}
+
 	Article: Q160241
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -51,3 +53,5 @@ permalink: /kb/160/Q160241/
 	
 	=============================================================================
 	
+
+{% endraw %}

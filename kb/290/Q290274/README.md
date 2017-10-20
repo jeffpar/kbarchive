@@ -6,6 +6,8 @@ permalink: /kb/290/Q290274/
 
 ## Q290274: SMS: Window Drag Operation Slow After You Enable Acceleration
 
+{% raw %}
+
 	Article: Q290274
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -71,3 +73,5 @@ permalink: /kb/290/Q290274/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/201/Q201111/
 
 ## Q201111: XFOR: Linkini.hlp Contains Information for Exchconn.ini file
 
+{% raw %}
+
 	Article: Q201111
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -48,3 +50,5 @@ permalink: /kb/201/Q201111/
 	
 	=============================================================================
 	
+
+{% endraw %}

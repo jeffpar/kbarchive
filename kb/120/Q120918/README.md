@@ -6,6 +6,8 @@ permalink: /kb/120/Q120918/
 
 ## Q120918: INFO: Visual C++ Vers 2.0 README, Part 2 Development Environment
 
+{% raw %}
+
 	Article: Q120918
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -149,3 +151,5 @@ permalink: /kb/120/Q120918/
 	
 	=============================================================================
 	
+
+{% endraw %}

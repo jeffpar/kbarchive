@@ -6,6 +6,8 @@ permalink: /kb/222/Q222095/
 
 ## Q222095: Terminal Server Deletes Novell Search Drives
 
+{% raw %}
+
 	Article: Q222095
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/222/Q222095/
 	
 	=============================================================================
 	
+
+{% endraw %}

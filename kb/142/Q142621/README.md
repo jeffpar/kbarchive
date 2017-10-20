@@ -6,6 +6,8 @@ permalink: /kb/142/Q142621/
 
 ## Q142621: OS/2 Application Does Not Return DosReadQueue Properly
 
+{% raw %}
+
 	Article: Q142621
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -65,3 +67,5 @@ permalink: /kb/142/Q142621/
 	
 	=============================================================================
 	
+
+{% endraw %}

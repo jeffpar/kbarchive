@@ -6,6 +6,8 @@ permalink: /kb/233/Q233082/
 
 ## Q233082: Windows Terminal Server Clients May Randomly Hang for 35 Seconds
 
+{% raw %}
+
 	Article: Q233082
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -116,3 +118,5 @@ permalink: /kb/233/Q233082/
 	
 	=============================================================================
 	
+
+{% endraw %}

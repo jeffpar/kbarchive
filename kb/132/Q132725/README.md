@@ -6,6 +6,8 @@ permalink: /kb/132/Q132725/
 
 ## Q132725: FIX: The Breakpoint &quot;{,&lt;filename&gt;,} .&lt;line&gt;&quot; cannot be set
 
+{% raw %}
+
 	Article: Q132725
 	Product(s): Microsoft C Compiler
 	Version(s): 2.00 2.10 2.20 4.00
@@ -71,3 +73,5 @@ permalink: /kb/132/Q132725/
 	
 	=============================================================================
 	
+
+{% endraw %}

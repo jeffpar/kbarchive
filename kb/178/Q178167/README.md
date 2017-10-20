@@ -6,6 +6,8 @@ permalink: /kb/178/Q178167/
 
 ## Q178167: FIX: GeoFacts Sample Causes Automation Error on NT
 
+{% raw %}
+
 	Article: Q178167
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0
@@ -97,3 +99,5 @@ permalink: /kb/178/Q178167/
 	
 	=============================================================================
 	
+
+{% endraw %}

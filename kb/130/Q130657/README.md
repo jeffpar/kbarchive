@@ -6,6 +6,8 @@ permalink: /kb/130/Q130657/
 
 ## Q130657: HOWTO: Change the Font of Menu Items
 
+{% raw %}
+
 	Article: Q130657
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -65,3 +67,5 @@ permalink: /kb/130/Q130657/
 	
 	=============================================================================
 	
+
+{% endraw %}

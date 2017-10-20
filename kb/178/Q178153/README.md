@@ -6,6 +6,8 @@ permalink: /kb/178/Q178153/
 
 ## Q178153: Multimedia: Only Administrator Can Install Program Under NT 4.0
 
+{% raw %}
+
 	Article: Q178153
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0; winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/178/Q178153/
 	
 	=============================================================================
 	
+
+{% endraw %}

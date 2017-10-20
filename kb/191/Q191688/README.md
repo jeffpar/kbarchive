@@ -6,6 +6,8 @@ permalink: /kb/191/Q191688/
 
 ## Q191688: intraNetWare Client Does Not Synchronize Windows 95 Password
 
+{% raw %}
+
 	Article: Q191688
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.51,4.0
@@ -80,3 +82,5 @@ permalink: /kb/191/Q191688/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/320/Q320152/
 
 ## Q320152: INFO: Resources for InstallShield Express for VFP
 
+{% raw %}
+
 	Article: Q320152
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,5.0,6.0,7.0
@@ -109,3 +111,5 @@ permalink: /kb/320/Q320152/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130461/
 
 ## Q130461: New Header Structure for Tables in Visual FoxPro
 
+{% raw %}
+
 	Article: Q130461
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -75,3 +77,5 @@ permalink: /kb/130/Q130461/
 	
 	=============================================================================
 	
+
+{% endraw %}

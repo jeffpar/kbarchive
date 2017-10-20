@@ -6,6 +6,8 @@ permalink: /kb/189/Q189134/
 
 ## Q189134: HOWTO: Raise an Error in Visual Basic From Your C DLL
 
+{% raw %}
+
 	Article: Q189134
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0; winnt:5.0
@@ -344,3 +346,5 @@ permalink: /kb/189/Q189134/
 	
 	=============================================================================
 	
+
+{% endraw %}

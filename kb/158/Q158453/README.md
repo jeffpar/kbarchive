@@ -6,6 +6,8 @@ permalink: /kb/158/Q158453/
 
 ## Q158453: How to Enable Remoteboot on a Client's Hard Disk
 
+{% raw %}
+
 	Article: Q158453
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -87,3 +89,5 @@ permalink: /kb/158/Q158453/
 	
 	=============================================================================
 	
+
+{% endraw %}

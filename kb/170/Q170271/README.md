@@ -6,6 +6,8 @@ permalink: /kb/170/Q170271/
 
 ## Q170271: Description of Zero Admin Kit for Windows NT Workstation 4.0
 
+{% raw %}
+
 	Article: Q170271
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:1.0
@@ -157,3 +159,5 @@ permalink: /kb/170/Q170271/
 	
 	=============================================================================
 	
+
+{% endraw %}

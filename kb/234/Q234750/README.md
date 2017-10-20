@@ -6,6 +6,8 @@ permalink: /kb/234/Q234750/
 
 ## Q234750: SMS: Pentium Processor Speed Incorrectly Reported
 
+{% raw %}
+
 	Article: Q234750
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -137,3 +139,5 @@ permalink: /kb/234/Q234750/
 	
 	=============================================================================
 	
+
+{% endraw %}

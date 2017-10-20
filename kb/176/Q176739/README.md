@@ -6,6 +6,8 @@ permalink: /kb/176/Q176739/
 
 ## Q176739: XFOR: IMS Uses Incorrect 'Reply To' Address
 
+{% raw %}
+
 	Article: Q176739
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -67,3 +69,5 @@ permalink: /kb/176/Q176739/
 	
 	=============================================================================
 	
+
+{% endraw %}

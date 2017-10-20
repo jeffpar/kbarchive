@@ -6,6 +6,8 @@ permalink: /kb/294/Q294672/
 
 ## Q294672: Flight Sims: Does Not Detect Joystick in Windows 2000/XP
 
+{% raw %}
+
 	Article: Q294672
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -118,3 +120,5 @@ permalink: /kb/294/Q294672/
 	
 	=============================================================================
 	
+
+{% endraw %}

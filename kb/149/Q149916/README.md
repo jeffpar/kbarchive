@@ -6,6 +6,8 @@ permalink: /kb/149/Q149916/
 
 ## Q149916: NWConv Does Not Convert Volumes Greater than 4 GB
 
+{% raw %}
+
 	Article: Q149916
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -51,3 +53,5 @@ permalink: /kb/149/Q149916/
 	
 	=============================================================================
 	
+
+{% endraw %}

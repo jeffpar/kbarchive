@@ -6,6 +6,8 @@ permalink: /kb/150/Q150572/
 
 ## Q150572: FIX: Error C1001: _asm Instruction Accessing Stack Using &#91;ebp&#93;
 
+{% raw %}
+
 	Article: Q150572
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,4.2,5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/150/Q150572/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/050/Q50821/
 
 ## Q50821: Windows Write 3.0 Cannot Search for &quot;?&quot;
 
+{% raw %}
+
 	Article: Q50821
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a
@@ -36,3 +38,5 @@ permalink: /kb/050/Q50821/
 	
 	=============================================================================
 	
+
+{% endraw %}

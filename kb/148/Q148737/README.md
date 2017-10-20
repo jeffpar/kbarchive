@@ -6,6 +6,8 @@ permalink: /kb/148/Q148737/
 
 ## Q148737: Cannot Install Network Monitor Components During Batch Setup
 
+{% raw %}
+
 	Article: Q148737
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/148/Q148737/
 	
 	=============================================================================
 	
+
+{% endraw %}

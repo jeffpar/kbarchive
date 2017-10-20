@@ -6,6 +6,8 @@ permalink: /kb/050/Q50146/
 
 ## Q50146: Mac Wkst Srv: Installer on Server Disk Not Install Workstation
 
+{% raw %}
+
 	Article: Q50146
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -40,3 +42,5 @@ permalink: /kb/050/Q50146/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140612/
 
 ## Q140612: BUG: Buglist for Visual Basic 4.0 for Windows as of 01-May-1996
 
+{% raw %}
+
 	Article: Q140612
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -379,3 +381,5 @@ permalink: /kb/140/Q140612/
 	
 	=============================================================================
 	
+
+{% endraw %}

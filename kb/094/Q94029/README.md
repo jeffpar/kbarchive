@@ -6,6 +6,8 @@ permalink: /kb/094/Q94029/
 
 ## Q94029: TrueType Font Pack 2 for Windows v.1 Disks (5.25 &quot;, 1.2 MB)
 
+{% raw %}
+
 	Article: Q94029
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -205,3 +207,5 @@ permalink: /kb/094/Q94029/
 	
 	=============================================================================
 	
+
+{% endraw %}

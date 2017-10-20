@@ -6,6 +6,8 @@ permalink: /kb/086/Q86639/
 
 ## Q86639: Norton Smartcan Beeps When Windows Deletes Files
 
+{% raw %}
+
 	Article: Q86639
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -81,3 +83,5 @@ permalink: /kb/086/Q86639/
 	
 	=============================================================================
 	
+
+{% endraw %}

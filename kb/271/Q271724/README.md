@@ -6,6 +6,8 @@ permalink: /kb/271/Q271724/
 
 ## Q271724: SMS May Time Out Attempting a PDC/BDC Resynchronization
 
+{% raw %}
+
 	Article: Q271724
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3
@@ -124,3 +126,5 @@ permalink: /kb/271/Q271724/
 	
 	=============================================================================
 	
+
+{% endraw %}

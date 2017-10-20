@@ -6,6 +6,8 @@ permalink: /kb/077/Q77778/
 
 ## Q77778: BTRIEVE Versions 5.1 and Later Compatible with MS-DOS 5.x/6.x
 
+{% raw %}
+
 	Article: Q77778
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:
@@ -51,3 +53,5 @@ permalink: /kb/077/Q77778/
 	
 	=============================================================================
 	
+
+{% endraw %}

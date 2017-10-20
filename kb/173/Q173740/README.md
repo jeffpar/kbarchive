@@ -6,6 +6,8 @@ permalink: /kb/173/Q173740/
 
 ## Q173740: DOC: Diagrams Blacked Out in OLE-DB Docs Shipped with VC++
 
+{% raw %}
+
 	Article: Q173740
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -67,3 +69,5 @@ permalink: /kb/173/Q173740/
 	
 	=============================================================================
 	
+
+{% endraw %}

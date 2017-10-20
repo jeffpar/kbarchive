@@ -6,6 +6,8 @@ permalink: /kb/038/Q38205/
 
 ## Q38205: Capabilities of Real Mode CodeView and the 386
 
+{% raw %}
+
 	Article: Q38205
 	Product(s): See article
 	Version(s): 2.00
@@ -39,3 +41,5 @@ permalink: /kb/038/Q38205/
 	6. CodeView cannot trace to protected mode and back to real mode.
 	
 	7. CodeView does not handle traces in protected mode.
+
+{% endraw %}

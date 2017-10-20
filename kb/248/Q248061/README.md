@@ -6,6 +6,8 @@ permalink: /kb/248/Q248061/
 
 ## Q248061: Err Msg: HTTP 414 - Request - URI Too Long
 
+{% raw %}
+
 	Article: Q248061
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -56,3 +58,5 @@ permalink: /kb/248/Q248061/
 	
 	=============================================================================
 	
+
+{% endraw %}

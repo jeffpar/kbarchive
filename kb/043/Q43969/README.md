@@ -6,6 +6,8 @@ permalink: /kb/043/Q43969/
 
 ## Q43969: Verifying That Microsoft Mouse Works at MS-DOS Level
 
+{% raw %}
+
 	Article: Q43969
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:1.x,2.x,3.0,3.0a,3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/043/Q43969/
 	
 	=============================================================================
 	
+
+{% endraw %}

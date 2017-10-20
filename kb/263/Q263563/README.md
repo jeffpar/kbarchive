@@ -6,6 +6,8 @@ permalink: /kb/263/Q263563/
 
 ## Q263563: XCON: Domain Defined Attributes Value Is Not Displayed in NDR
 
+{% raw %}
+
 	Article: Q263563
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -71,3 +73,5 @@ permalink: /kb/263/Q263563/
 	
 	=============================================================================
 	
+
+{% endraw %}

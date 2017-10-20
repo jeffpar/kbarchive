@@ -6,6 +6,8 @@ permalink: /kb/270/Q270243/
 
 ## Q270243: Age of Empires: First Punic War Campaign Quits Unexpectedly
 
+{% raw %}
+
 	Article: Q270243
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -70,3 +72,5 @@ permalink: /kb/270/Q270243/
 	
 	=============================================================================
 	
+
+{% endraw %}

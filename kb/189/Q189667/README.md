@@ -6,6 +6,8 @@ permalink: /kb/189/Q189667/
 
 ## Q189667: HOWTO: List the Drives in a System Using the FileSystemObject
 
+{% raw %}
+
 	Article: Q189667
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -171,3 +173,5 @@ permalink: /kb/189/Q189667/
 	
 	=============================================================================
 	
+
+{% endraw %}

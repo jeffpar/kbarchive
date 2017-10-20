@@ -6,6 +6,8 @@ permalink: /kb/066/Q66085/
 
 ## Q66085: Dictful Error in Freedom of Press with Windows 3.0
 
+{% raw %}
+
 	Article: Q66085
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -71,3 +73,5 @@ permalink: /kb/066/Q66085/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/250/Q250412/
 
 ## Q250412: SMS: Cannot Select Query Result Format
 
+{% raw %}
+
 	Article: Q250412
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -54,3 +56,5 @@ permalink: /kb/250/Q250412/
 	
 	=============================================================================
 	
+
+{% endraw %}

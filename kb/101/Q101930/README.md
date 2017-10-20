@@ -6,6 +6,8 @@ permalink: /kb/101/Q101930/
 
 ## Q101930: Methods and Reasons for Renaming a Bid for a Boot Drive
 
+{% raw %}
+
 	Article: Q101930
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/101/Q101930/
 	
 	=============================================================================
 	
+
+{% endraw %}

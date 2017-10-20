@@ -6,6 +6,8 @@ permalink: /kb/166/Q166392/
 
 ## Q166392: HOWTO: Use &quot;DSN-Less&quot; ODBC Connections with RDO
 
+{% raw %}
+
 	Article: Q166392
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -141,3 +143,5 @@ permalink: /kb/166/Q166392/
 	
 	=============================================================================
 	
+
+{% endraw %}

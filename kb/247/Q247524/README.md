@@ -6,6 +6,8 @@ permalink: /kb/247/Q247524/
 
 ## Q247524: XFOR: Determining Which Files to Modify for Dirsync with Notes
 
+{% raw %}
+
 	Article: Q247524
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -93,3 +95,5 @@ permalink: /kb/247/Q247524/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140344/
 
 ## Q140344: WD97: How to Convert Data in One Column to a Table for Merging
 
+{% raw %}
+
 	Article: Q140344
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -200,3 +202,5 @@ permalink: /kb/140/Q140344/
 	
 	=============================================================================
 	
+
+{% endraw %}

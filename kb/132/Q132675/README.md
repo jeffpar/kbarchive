@@ -6,6 +6,8 @@ permalink: /kb/132/Q132675/
 
 ## Q132675: PRB: Error C2039: OnInitDialog is Not a Member of CFormView
 
+{% raw %}
+
 	Article: Q132675
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,4.0,5.0
@@ -68,3 +70,5 @@ permalink: /kb/132/Q132675/
 	
 	=============================================================================
 	
+
+{% endraw %}

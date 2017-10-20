@@ -6,6 +6,8 @@ permalink: /kb/165/Q165600/
 
 ## Q165600: WD97: No Error Inserting Invalid Picture Via Macro
 
+{% raw %}
+
 	Article: Q165600
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -45,3 +47,5 @@ permalink: /kb/165/Q165600/
 	
 	=============================================================================
 	
+
+{% endraw %}

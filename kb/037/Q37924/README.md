@@ -6,6 +6,8 @@ permalink: /kb/037/Q37924/
 
 ## Q37924: Mac DOS: Description of the TOPS FlashCard for the PC
 
+{% raw %}
+
 	Article: Q37924
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.0,3.1
@@ -107,3 +109,5 @@ permalink: /kb/037/Q37924/
 	
 	=============================================================================
 	
+
+{% endraw %}

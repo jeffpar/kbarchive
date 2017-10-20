@@ -6,6 +6,8 @@ permalink: /kb/132/Q132609/
 
 ## Q132609: &quot;Error 58&quot; with Server-Based Windows 95 Setup
 
+{% raw %}
+
 	Article: Q132609
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/132/Q132609/
 	
 	=============================================================================
 	
+
+{% endraw %}

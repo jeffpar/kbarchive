@@ -6,6 +6,8 @@ permalink: /kb/170/Q170071/
 
 ## Q170071: Invokable TP Timeout May Occur With Non-queued Operation
 
+{% raw %}
+
 	Article: Q170071
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0
@@ -101,3 +103,5 @@ permalink: /kb/170/Q170071/
 	
 	=============================================================================
 	
+
+{% endraw %}

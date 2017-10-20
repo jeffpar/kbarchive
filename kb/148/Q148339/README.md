@@ -6,6 +6,8 @@ permalink: /kb/148/Q148339/
 
 ## Q148339: XADM: How to Import Multiple SMTP Addresses
 
+{% raw %}
+
 	Article: Q148339
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -49,3 +51,5 @@ permalink: /kb/148/Q148339/
 	
 	=============================================================================
 	
+
+{% endraw %}

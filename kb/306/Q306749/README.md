@@ -6,6 +6,8 @@ permalink: /kb/306/Q306749/
 
 ## Q306749: ENC2002: ShockWave Script Error When You Double-Click Back
 
+{% raw %}
+
 	Article: Q306749
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -83,3 +85,5 @@ permalink: /kb/306/Q306749/
 	
 	=============================================================================
 	
+
+{% endraw %}

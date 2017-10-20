@@ -6,6 +6,8 @@ permalink: /kb/101/Q101875/
 
 ## Q101875: How to Enable ANSI.SYS in a Command Window
 
+{% raw %}
+
 	Article: Q101875
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.1,3.5,3.51,4.0
@@ -60,3 +62,5 @@ permalink: /kb/101/Q101875/
 	
 	=============================================================================
 	
+
+{% endraw %}

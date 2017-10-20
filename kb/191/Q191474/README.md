@@ -6,6 +6,8 @@ permalink: /kb/191/Q191474/
 
 ## Q191474: HOWTO: Create a Generic Error Handler for your Application
 
+{% raw %}
+
 	Article: Q191474
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -166,3 +168,5 @@ permalink: /kb/191/Q191474/
 	
 	=============================================================================
 	
+
+{% endraw %}

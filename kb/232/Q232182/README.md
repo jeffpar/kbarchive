@@ -6,6 +6,8 @@ permalink: /kb/232/Q232182/
 
 ## Q232182: XCON: MTA Problems w/High Network Use on Low Bandwidth WAN Link
 
+{% raw %}
+
 	Article: Q232182
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -95,3 +97,5 @@ permalink: /kb/232/Q232182/
 	
 	=============================================================================
 	
+
+{% endraw %}

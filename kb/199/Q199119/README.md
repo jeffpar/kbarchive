@@ -6,6 +6,8 @@ permalink: /kb/199/Q199119/
 
 ## Q199119: XFOR: SSL Connection to NNTP May Result in Unstable Store
 
+{% raw %}
+
 	Article: Q199119
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -91,3 +93,5 @@ permalink: /kb/199/Q199119/
 	
 	=============================================================================
 	
+
+{% endraw %}

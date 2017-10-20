@@ -6,6 +6,8 @@ permalink: /kb/138/Q138611/
 
 ## Q138611: Stopping SNA Server Causes Application Exception in SNALINK.EXE
 
+{% raw %}
+
 	Article: Q138611
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -87,3 +89,5 @@ permalink: /kb/138/Q138611/
 	
 	=============================================================================
 	
+
+{% endraw %}

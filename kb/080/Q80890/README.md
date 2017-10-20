@@ -6,6 +6,8 @@ permalink: /kb/080/Q80890/
 
 ## Q80890: Drives Inaccessible After Upgrading from Compaq DOS
 
+{% raw %}
+
 	Article: Q80890
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -78,3 +80,5 @@ permalink: /kb/080/Q80890/
 	
 	=============================================================================
 	
+
+{% endraw %}

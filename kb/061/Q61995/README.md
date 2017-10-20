@@ -6,6 +6,8 @@ permalink: /kb/061/Q61995/
 
 ## Q61995: Updating the File System in MS-DOS Shell
 
+{% raw %}
+
 	Article: Q61995
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.0,4.01,5.0
@@ -52,3 +54,5 @@ permalink: /kb/061/Q61995/
 	
 	=============================================================================
 	
+
+{% endraw %}

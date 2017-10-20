@@ -6,6 +6,8 @@ permalink: /kb/198/Q198663/
 
 ## Q198663: BUG: Closesocket() on a Duplicated Socket Fails to Clean Up
 
+{% raw %}
+
 	Article: Q198663
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95,98
@@ -75,3 +77,5 @@ permalink: /kb/198/Q198663/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/305/Q305302/
 
 ## Q305302: ENC2002: Changes to Dictionary, Thesaurus, and QuickShelf
 
+{% raw %}
+
 	Article: Q305302
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -145,3 +147,5 @@ permalink: /kb/305/Q305302/
 	
 	=============================================================================
 	
+
+{% endraw %}

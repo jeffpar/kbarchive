@@ -6,6 +6,8 @@ permalink: /kb/141/Q141829/
 
 ## Q141829: PRB: Error Running Windows NT Cmd.exe in Windows 95
 
+{% raw %}
+
 	Article: Q141829
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 | 4.0
@@ -60,3 +62,5 @@ permalink: /kb/141/Q141829/
 	
 	=============================================================================
 	
+
+{% endraw %}

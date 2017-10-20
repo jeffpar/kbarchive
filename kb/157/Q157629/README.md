@@ -6,6 +6,8 @@ permalink: /kb/157/Q157629/
 
 ## Q157629: HOWTO: Change the Default Source of Printer Programmatically
 
+{% raw %}
+
 	Article: Q157629
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -291,3 +293,5 @@ permalink: /kb/157/Q157629/
 	
 	=============================================================================
 	
+
+{% endraw %}

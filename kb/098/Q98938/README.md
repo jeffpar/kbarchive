@@ -6,6 +6,8 @@ permalink: /kb/098/Q98938/
 
 ## Q98938: Description of JezzBall
 
+{% raw %}
+
 	Article: Q98938
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -75,3 +77,5 @@ permalink: /kb/098/Q98938/
 	
 	=============================================================================
 	
+
+{% endraw %}

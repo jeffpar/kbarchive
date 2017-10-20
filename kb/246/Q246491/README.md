@@ -6,6 +6,8 @@ permalink: /kb/246/Q246491/
 
 ## Q246491: 'No Access' When Printing to LPT1 or LPT2 Port on HP4000 Printer
 
+{% raw %}
+
 	Article: Q246491
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/246/Q246491/
 	
 	=============================================================================
 	
+
+{% endraw %}

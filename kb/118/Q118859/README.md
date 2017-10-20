@@ -6,6 +6,8 @@ permalink: /kb/118/Q118859/
 
 ## Q118859: MHS: Correct Addressing format to DaVinci Email via MHS
 
+{% raw %}
+
 	Article: Q118859
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/118/Q118859/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/038/Q38733/
 
 ## Q38733: Overflow in Integer Math Expressions Not Checked
 
+{% raw %}
+
 	Article: Q38733
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10  | 5.10
@@ -54,3 +56,5 @@ permalink: /kb/038/Q38733/
 	math will be done using 32-bit arithmetic. The product is large enough
 	to handle the multiplication, so the correct result of 70,000 is
 	generated.
+
+{% endraw %}

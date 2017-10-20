@@ -6,6 +6,8 @@ permalink: /kb/238/Q238280/
 
 ## Q238280: XCLN: Out of Office Assistant is Missing from Tools Menu
 
+{% raw %}
+
 	Article: Q238280
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,97,98
@@ -94,3 +96,5 @@ permalink: /kb/238/Q238280/
 	
 	=============================================================================
 	
+
+{% endraw %}

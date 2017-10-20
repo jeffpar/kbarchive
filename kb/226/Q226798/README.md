@@ -6,6 +6,8 @@ permalink: /kb/226/Q226798/
 
 ## Q226798: Desktop Icons Are Rearranged After You Install Windows NT SP4
 
+{% raw %}
+
 	Article: Q226798
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5
@@ -76,3 +78,5 @@ permalink: /kb/226/Q226798/
 	
 	=============================================================================
 	
+
+{% endraw %}

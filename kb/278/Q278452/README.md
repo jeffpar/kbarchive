@@ -6,6 +6,8 @@ permalink: /kb/278/Q278452/
 
 ## Q278452: PRB: Visual C++ 6.0 Break Command Failed
 
+{% raw %}
+
 	Article: Q278452
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -123,3 +125,5 @@ permalink: /kb/278/Q278452/
 	
 	=============================================================================
 	
+
+{% endraw %}

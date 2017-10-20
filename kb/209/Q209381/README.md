@@ -6,6 +6,8 @@ permalink: /kb/209/Q209381/
 
 ## Q209381: Err Msg: OleMainThreadWndName:mtx.exe- Unable to locate DLL
 
+{% raw %}
+
 	Article: Q209381
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/209/Q209381/
 	
 	=============================================================================
 	
+
+{% endraw %}

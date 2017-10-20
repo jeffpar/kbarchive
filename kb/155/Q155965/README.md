@@ -6,6 +6,8 @@ permalink: /kb/155/Q155965/
 
 ## Q155965: WD97: CTRL+Z UNDO Will Not Work In Form Control Tools
 
+{% raw %}
+
 	Article: Q155965
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/155/Q155965/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96368/
 
 ## Q96368: How to Encrypt a Program with a Password
 
+{% raw %}
+
 	Article: Q96368
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -84,3 +86,5 @@ permalink: /kb/096/Q96368/
 	
 	=============================================================================
 	
+
+{% endraw %}

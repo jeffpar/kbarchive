@@ -6,6 +6,8 @@ permalink: /kb/305/Q305299/
 
 ## Q305299: ENC: Dictionary Opens When You Click in Restricted Areas
 
+{% raw %}
+
 	Article: Q305299
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -69,3 +71,5 @@ permalink: /kb/305/Q305299/
 	
 	=============================================================================
 	
+
+{% endraw %}

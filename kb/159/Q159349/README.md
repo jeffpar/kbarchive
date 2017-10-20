@@ -6,6 +6,8 @@ permalink: /kb/159/Q159349/
 
 ## Q159349: Resume On Ring Not Implemented for PC Card Modems
 
+{% raw %}
+
 	Article: Q159349
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0
@@ -72,3 +74,5 @@ permalink: /kb/159/Q159349/
 	
 	=============================================================================
 	
+
+{% endraw %}

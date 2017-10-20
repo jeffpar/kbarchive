@@ -6,6 +6,8 @@ permalink: /kb/320/Q320675/
 
 ## Q320675: Event ID 3 Logged After You Restrict Access to LogFiles Folder
 
+{% raw %}
+
 	Article: Q320675
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -102,3 +104,5 @@ permalink: /kb/320/Q320675/
 	
 	=============================================================================
 	
+
+{% endraw %}

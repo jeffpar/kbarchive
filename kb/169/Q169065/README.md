@@ -6,6 +6,8 @@ permalink: /kb/169/Q169065/
 
 ## Q169065: FIX: RichText Control Displays Line Draw Characters Incorrectly
 
+{% raw %}
+
 	Article: Q169065
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0
@@ -106,3 +108,5 @@ permalink: /kb/169/Q169065/
 	
 	=============================================================================
 	
+
+{% endraw %}

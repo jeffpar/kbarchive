@@ -6,6 +6,8 @@ permalink: /kb/272/Q272659/
 
 ## Q272659: XFOR: Could Not Load Some Objects Using Application Connector
 
+{% raw %}
+
 	Article: Q272659
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -58,3 +60,5 @@ permalink: /kb/272/Q272659/
 	
 	=============================================================================
 	
+
+{% endraw %}

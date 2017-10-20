@@ -6,6 +6,8 @@ permalink: /kb/309/Q309128/
 
 ## Q309128: MechWarrior 4: Err Msg Connecting to Multiplayer Game
 
+{% raw %}
+
 	Article: Q309128
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/309/Q309128/
 	
 	=============================================================================
 	
+
+{% endraw %}

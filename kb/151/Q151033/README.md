@@ -6,6 +6,8 @@ permalink: /kb/151/Q151033/
 
 ## Q151033: FIX: Using CMultiLock Class Can Cause a Memory Leak
 
+{% raw %}
+
 	Article: Q151033
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -90,3 +92,5 @@ permalink: /kb/151/Q151033/
 	
 	=============================================================================
 	
+
+{% endraw %}

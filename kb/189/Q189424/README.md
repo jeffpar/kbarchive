@@ -6,6 +6,8 @@ permalink: /kb/189/Q189424/
 
 ## Q189424: BUG: No Warning, Recordset Row Count Not Equal Length-specifier
 
+{% raw %}
+
 	Article: Q189424
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -59,3 +61,5 @@ permalink: /kb/189/Q189424/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158038/
 
 ## Q158038: STL Sample for the stack::operation
 
+{% raw %}
+
 	Article: Q158038
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -211,3 +213,5 @@ permalink: /kb/158/Q158038/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185934/
 
 ## Q185934: XCON: Exchange Server MTA Always Uses RTSE Window Size 3
 
+{% raw %}
+
 	Article: Q185934
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -84,3 +86,5 @@ permalink: /kb/185/Q185934/
 	
 	=============================================================================
 	
+
+{% endraw %}

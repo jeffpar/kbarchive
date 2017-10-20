@@ -6,6 +6,8 @@ permalink: /kb/145/Q145851/
 
 ## Q145851: Pregnancy: Keyboard Shortcuts
 
+{% raw %}
+
 	Article: Q145851
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -326,3 +328,5 @@ permalink: /kb/145/Q145851/
 	
 	=============================================================================
 	
+
+{% endraw %}

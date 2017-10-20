@@ -6,6 +6,8 @@ permalink: /kb/048/Q48733/
 
 ## Q48733: Control Panel Missing with Faxit for Windows
 
+{% raw %}
+
 	Article: Q48733
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/048/Q48733/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137968/
 
 ## Q137968: Perfmon and Network Monitor Counters Show Incorrect Values
 
+{% raw %}
+
 	Article: Q137968
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,3.5,3.51
@@ -85,3 +87,5 @@ permalink: /kb/137/Q137968/
 	
 	=============================================================================
 	
+
+{% endraw %}

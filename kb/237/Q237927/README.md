@@ -6,6 +6,8 @@ permalink: /kb/237/Q237927/
 
 ## Q237927: XIMS: Messages Sent to Encapsulated SMTP Address Are Rerouted
 
+{% raw %}
+
 	Article: Q237927
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -115,3 +117,5 @@ permalink: /kb/237/Q237927/
 	
 	=============================================================================
 	
+
+{% endraw %}

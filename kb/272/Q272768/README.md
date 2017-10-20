@@ -6,6 +6,8 @@ permalink: /kb/272/Q272768/
 
 ## Q272768: Objects from Active Directory are Ignored When Running the AD MA
 
+{% raw %}
+
 	Article: Q272768
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2
@@ -161,3 +163,5 @@ permalink: /kb/272/Q272768/
 	
 	=============================================================================
 	
+
+{% endraw %}

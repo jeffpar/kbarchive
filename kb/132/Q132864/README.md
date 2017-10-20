@@ -6,6 +6,8 @@ permalink: /kb/132/Q132864/
 
 ## Q132864: FIX: SET CENTURY OFF Turns 02/29/2000 into Invalid Date
 
+{% raw %}
+
 	Article: Q132864
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -71,3 +73,5 @@ permalink: /kb/132/Q132864/
 	
 	=============================================================================
 	
+
+{% endraw %}

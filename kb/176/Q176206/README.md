@@ -6,6 +6,8 @@ permalink: /kb/176/Q176206/
 
 ## Q176206: Cannot Log On to Local Subnet with Windows 95 Client
 
+{% raw %}
+
 	Article: Q176206
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT:3.5,3.51,4.0;Windows:95
@@ -59,3 +61,5 @@ permalink: /kb/176/Q176206/
 	
 	=============================================================================
 	
+
+{% endraw %}

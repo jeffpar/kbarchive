@@ -6,6 +6,8 @@ permalink: /kb/074/Q74221/
 
 ## Q74221: FIX: COMM Directive Produces Error If Count Field Not Specified
 
+{% raw %}
+
 	Article: Q74221
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -99,3 +101,5 @@ permalink: /kb/074/Q74221/
 	
 	=============================================================================
 	
+
+{% endraw %}

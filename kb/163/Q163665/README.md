@@ -6,6 +6,8 @@ permalink: /kb/163/Q163665/
 
 ## Q163665: FP: General File Transfer Error -3 Installing FrontPage
 
+{% raw %}
+
 	Article: Q163665
 	Product(s): Word Front Page
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/163/Q163665/
 	
 	=============================================================================
 	
+
+{% endraw %}

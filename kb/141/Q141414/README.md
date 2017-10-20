@@ -6,6 +6,8 @@ permalink: /kb/141/Q141414/
 
 ## Q141414: HOWTO: Enumerate OLE and VB Controls from an OLE Control
 
+{% raw %}
+
 	Article: Q141414
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.1,2.2,4.0,5.0,6.0
@@ -199,3 +201,5 @@ permalink: /kb/141/Q141414/
 	
 	=============================================================================
 	
+
+{% endraw %}

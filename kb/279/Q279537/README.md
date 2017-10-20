@@ -6,6 +6,8 @@ permalink: /kb/279/Q279537/
 
 ## Q279537: XCON: Post-Service Pack 3 MTA Bindback String Changes
 
+{% raw %}
+
 	Article: Q279537
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP4
@@ -104,3 +106,5 @@ permalink: /kb/279/Q279537/
 	
 	=============================================================================
 	
+
+{% endraw %}

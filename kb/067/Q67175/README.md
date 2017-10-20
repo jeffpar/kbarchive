@@ -6,6 +6,8 @@ permalink: /kb/067/Q67175/
 
 ## Q67175: OS/2 LAN Manager: Last Logon Information Sometimes Incorrect
 
+{% raw %}
+
 	Article: Q67175
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/067/Q67175/
 	
 	=============================================================================
 	
+
+{% endraw %}

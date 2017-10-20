@@ -6,6 +6,8 @@ permalink: /kb/237/Q237566/
 
 ## Q237566: %HOMEPATH%, %HOMESHARE%, and %HOMEDRIVE% Resolved Incorrectly
 
+{% raw %}
+
 	Article: Q237566
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -70,3 +72,5 @@ permalink: /kb/237/Q237566/
 	
 	=============================================================================
 	
+
+{% endraw %}

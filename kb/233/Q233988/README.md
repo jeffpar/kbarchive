@@ -6,6 +6,8 @@ permalink: /kb/233/Q233988/
 
 ## Q233988: WD97: Word Hangs with DocProperty &quot;Characters&quot; Field in Header
 
+{% raw %}
+
 	Article: Q233988
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/233/Q233988/
 	
 	=============================================================================
 	
+
+{% endraw %}

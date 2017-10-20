@@ -6,6 +6,8 @@ permalink: /kb/299/Q299520/
 
 ## Q299520: How to Determine the Cipher Suite for the Server and Client
 
+{% raw %}
+
 	Article: Q299520
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -150,3 +152,5 @@ permalink: /kb/299/Q299520/
 	
 	=============================================================================
 	
+
+{% endraw %}

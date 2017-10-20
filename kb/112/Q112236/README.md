@@ -6,6 +6,8 @@ permalink: /kb/112/Q112236/
 
 ## Q112236: FaxDrv: WinWord Graphics Elongated by FAX Printer Driver
 
+{% raw %}
+
 	Article: Q112236
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0a
@@ -45,3 +47,5 @@ permalink: /kb/112/Q112236/
 	
 	=============================================================================
 	
+
+{% endraw %}

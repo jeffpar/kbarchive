@@ -6,6 +6,8 @@ permalink: /kb/226/Q226535/
 
 ## Q226535: Access Denied if Roaming Profile Is Saved to a NetWare Server
 
+{% raw %}
+
 	Article: Q226535
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -101,3 +103,5 @@ permalink: /kb/226/Q226535/
 	
 	=============================================================================
 	
+
+{% endraw %}

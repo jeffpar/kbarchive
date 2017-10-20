@@ -6,6 +6,8 @@ permalink: /kb/031/Q31986/
 
 ## Q31986: Maximum Number of Libraries LINK Supports
 
+{% raw %}
+
 	Article: Q31986
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/031/Q31986/
 	
 	=============================================================================
 	
+
+{% endraw %}

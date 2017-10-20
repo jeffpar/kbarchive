@@ -6,6 +6,8 @@ permalink: /kb/102/Q102155/
 
 ## Q102155: DOC: BN_DISABLE and BN_DOUBLECLICKED Documented Incorrectly
 
+{% raw %}
+
 	Article: Q102155
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,4.1
@@ -41,3 +43,5 @@ permalink: /kb/102/Q102155/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234832/
 
 ## Q234832: MOD2000: Inconsistent Menu Behavior Using Check Out from VBA
 
+{% raw %}
+
 	Article: Q234832
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/234/Q234832/
 	
 	=============================================================================
 	
+
+{% endraw %}

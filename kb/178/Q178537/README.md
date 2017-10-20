@@ -6,6 +6,8 @@ permalink: /kb/178/Q178537/
 
 ## Q178537: XCON: NDR and Event ID 3150 When Sending to PAB Entry
 
+{% raw %}
+
 	Article: Q178537
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/178/Q178537/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/280/Q280300/
 
 ## Q280300: BUG: WithEvents Causes Events Not to Fire from WebClass
 
+{% raw %}
+
 	Article: Q280300
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -76,3 +78,5 @@ permalink: /kb/280/Q280300/
 	
 	=============================================================================
 	
+
+{% endraw %}

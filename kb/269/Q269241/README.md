@@ -6,6 +6,8 @@ permalink: /kb/269/Q269241/
 
 ## Q269241: Anonymous FTP Fails with Password Synchronization Enabled
 
+{% raw %}
+
 	Article: Q269241
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/269/Q269241/
 	
 	=============================================================================
 	
+
+{% endraw %}

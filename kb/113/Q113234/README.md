@@ -6,6 +6,8 @@ permalink: /kb/113/Q113234/
 
 ## Q113234: Windows Hangs with SMC Ethernet 16 Elite Ultra 16T Adapter
 
+{% raw %}
+
 	Article: Q113234
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -79,3 +81,5 @@ permalink: /kb/113/Q113234/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/221/Q221696/
 
 ## Q221696: FIX: C00000FD Fatal Error Docking Toolbar in Rare Circumstance
 
+{% raw %}
+
 	Article: Q221696
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -137,3 +139,5 @@ permalink: /kb/221/Q221696/
 	
 	=============================================================================
 	
+
+{% endraw %}

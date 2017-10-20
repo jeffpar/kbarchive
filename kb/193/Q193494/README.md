@@ -6,6 +6,8 @@ permalink: /kb/193/Q193494/
 
 ## Q193494: Fatal Exception Error Message in VXD VMCPD(01)
 
+{% raw %}
+
 	Article: Q193494
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -67,3 +69,5 @@ permalink: /kb/193/Q193494/
 	
 	=============================================================================
 	
+
+{% endraw %}

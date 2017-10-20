@@ -6,6 +6,8 @@ permalink: /kb/066/Q66170/
 
 ## Q66170: DOCERR: Repeat Prefix (REP) Documentation Error
 
+{% raw %}
+
 	Article: Q66170
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1
@@ -87,3 +89,5 @@ permalink: /kb/066/Q66170/
 	
 	=============================================================================
 	
+
+{% endraw %}

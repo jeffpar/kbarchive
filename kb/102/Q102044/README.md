@@ -6,6 +6,8 @@ permalink: /kb/102/Q102044/
 
 ## Q102044: Bringing Up a Windows NT Advanced Server in a TCP/IP WAN
 
+{% raw %}
+
 	Article: Q102044
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -72,3 +74,5 @@ permalink: /kb/102/Q102044/
 	
 	=============================================================================
 	
+
+{% endraw %}

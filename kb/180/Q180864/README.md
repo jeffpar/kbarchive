@@ -6,6 +6,8 @@ permalink: /kb/180/Q180864/
 
 ## Q180864: Print Sessions Stop with Host Print Service
 
+{% raw %}
+
 	Article: Q180864
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -196,3 +198,5 @@ permalink: /kb/180/Q180864/
 	
 	=============================================================================
 	
+
+{% endraw %}

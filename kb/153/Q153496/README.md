@@ -6,6 +6,8 @@ permalink: /kb/153/Q153496/
 
 ## Q153496: Error Loading Windows NT Service Packs on RISC Platforms
 
+{% raw %}
+
 	Article: Q153496
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -71,3 +73,5 @@ permalink: /kb/153/Q153496/
 	
 	=============================================================================
 	
+
+{% endraw %}

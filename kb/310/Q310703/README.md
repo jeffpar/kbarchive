@@ -6,6 +6,8 @@ permalink: /kb/310/Q310703/
 
 ## Q310703: Security Roll-Up Fix Q299444 May Cause Lexmark Printers to Hang
 
+{% raw %}
+
 	Article: Q310703
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -148,3 +150,5 @@ permalink: /kb/310/Q310703/
 	
 	=============================================================================
 	
+
+{% endraw %}

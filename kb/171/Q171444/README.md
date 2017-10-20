@@ -6,6 +6,8 @@ permalink: /kb/171/Q171444/
 
 ## Q171444: Removing Windows NT from a Windows 95/98 Dual-Boot Installation
 
+{% raw %}
+
 	Article: Q171444
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2000,95; winnt:4.0
@@ -98,3 +100,5 @@ permalink: /kb/171/Q171444/
 	
 	=============================================================================
 	
+
+{% endraw %}

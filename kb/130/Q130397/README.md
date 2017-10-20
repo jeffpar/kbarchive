@@ -6,6 +6,8 @@ permalink: /kb/130/Q130397/
 
 ## Q130397: PC MMTA: Digiboard Error Messages
 
+{% raw %}
+
 	Article: Q130397
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -81,3 +83,5 @@ permalink: /kb/130/Q130397/
 	
 	=============================================================================
 	
+
+{% endraw %}

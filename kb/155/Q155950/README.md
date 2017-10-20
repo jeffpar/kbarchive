@@ -6,6 +6,8 @@ permalink: /kb/155/Q155950/
 
 ## Q155950: WD97: Document Map Width Not Retained
 
+{% raw %}
+
 	Article: Q155950
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/155/Q155950/
 	
 	=============================================================================
 	
+
+{% endraw %}

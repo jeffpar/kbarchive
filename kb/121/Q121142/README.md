@@ -6,6 +6,8 @@ permalink: /kb/121/Q121142/
 
 ## Q121142: Files Installed Using Save Loading Time Option
 
+{% raw %}
+
 	Article: Q121142
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0a
@@ -705,3 +707,5 @@ permalink: /kb/121/Q121142/
 	
 	=============================================================================
 	
+
+{% endraw %}

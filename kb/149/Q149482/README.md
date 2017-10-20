@@ -6,6 +6,8 @@ permalink: /kb/149/Q149482/
 
 ## Q149482: BUG: MSDEV Does Not Report Error When It Cannot Find Make File
 
+{% raw %}
+
 	Article: Q149482
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -51,3 +53,5 @@ permalink: /kb/149/Q149482/
 	
 	=============================================================================
 	
+
+{% endraw %}

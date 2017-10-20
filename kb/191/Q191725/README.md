@@ -6,6 +6,8 @@ permalink: /kb/191/Q191725/
 
 ## Q191725: Err Msg: Insufficient Conventional Memory to Run Windows
 
+{% raw %}
+
 	Article: Q191725
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -67,3 +69,5 @@ permalink: /kb/191/Q191725/
 	
 	=============================================================================
 	
+
+{% endraw %}

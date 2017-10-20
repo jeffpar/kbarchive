@@ -6,6 +6,8 @@ permalink: /kb/121/Q121050/
 
 ## Q121050: How to Automate Logon Procedures for Windows NT Mail
 
+{% raw %}
+
 	Article: Q121050
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/121/Q121050/
 	
 	=============================================================================
 	
+
+{% endraw %}

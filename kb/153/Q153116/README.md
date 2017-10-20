@@ -6,6 +6,8 @@ permalink: /kb/153/Q153116/
 
 ## Q153116: BUG: Support Library Creates Files with Creator of FOXX
 
+{% raw %}
+
 	Article: Q153116
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -149,3 +151,5 @@ permalink: /kb/153/Q153116/
 	
 	=============================================================================
 	
+
+{% endraw %}

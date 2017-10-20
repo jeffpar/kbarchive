@@ -6,6 +6,8 @@ permalink: /kb/165/Q165076/
 
 ## Q165076: INFO: LNK2001 on CRT Symbols in ATL Release Build
 
+{% raw %}
+
 	Article: Q165076
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,3.0
@@ -66,3 +68,5 @@ permalink: /kb/165/Q165076/
 	
 	=============================================================================
 	
+
+{% endraw %}

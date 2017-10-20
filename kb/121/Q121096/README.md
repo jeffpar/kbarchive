@@ -6,6 +6,8 @@ permalink: /kb/121/Q121096/
 
 ## Q121096: BUG: Wrong Menu with Maximized MDI Child and No Control Box
 
+{% raw %}
+
 	Article: Q121096
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,3.0
@@ -90,3 +92,5 @@ permalink: /kb/121/Q121096/
 	
 	=============================================================================
 	
+
+{% endraw %}

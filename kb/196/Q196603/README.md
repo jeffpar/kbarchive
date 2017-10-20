@@ -6,6 +6,8 @@ permalink: /kb/196/Q196603/
 
 ## Q196603: Repair Windows NT After Installation of Service Pack 4 and Later
 
+{% raw %}
+
 	Article: Q196603
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -233,3 +235,5 @@ permalink: /kb/196/Q196603/
 	
 	=============================================================================
 	
+
+{% endraw %}

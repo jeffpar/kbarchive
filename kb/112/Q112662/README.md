@@ -6,6 +6,8 @@ permalink: /kb/112/Q112662/
 
 ## Q112662: Golf Causes General Protection Fault with Imaginaria
 
+{% raw %}
+
 	Article: Q112662
 	Product(s): Microsoft Home Games
 	Version(s): 1.00
@@ -87,3 +89,5 @@ permalink: /kb/112/Q112662/
 	
 	=============================================================================
 	
+
+{% endraw %}

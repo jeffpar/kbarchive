@@ -6,6 +6,8 @@ permalink: /kb/073/Q73736/
 
 ## Q73736: Effects of FDISK on Boot Record, Root Directory, and FATs
 
+{% raw %}
+
 	Article: Q73736
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -98,3 +100,5 @@ permalink: /kb/073/Q73736/
 	
 	=============================================================================
 	
+
+{% endraw %}

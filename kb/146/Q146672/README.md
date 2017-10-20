@@ -6,6 +6,8 @@ permalink: /kb/146/Q146672/
 
 ## Q146672: XCLN: Unable to Open Forms Because Files are Missing
 
+{% raw %}
+
 	Article: Q146672
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :
@@ -112,3 +114,5 @@ permalink: /kb/146/Q146672/
 	
 	=============================================================================
 	
+
+{% endraw %}

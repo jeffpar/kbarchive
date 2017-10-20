@@ -6,6 +6,8 @@ permalink: /kb/231/Q231571/
 
 ## Q231571: Err Msg: STOP 0x00000050 Occurs with HP Color LaserJet 5/5M
 
+{% raw %}
+
 	Article: Q231571
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP3,4.0 SP4
@@ -69,3 +71,5 @@ permalink: /kb/231/Q231571/
 	
 	=============================================================================
 	
+
+{% endraw %}

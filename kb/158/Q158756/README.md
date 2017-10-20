@@ -6,6 +6,8 @@ permalink: /kb/158/Q158756/
 
 ## Q158756: BUG: Double Data Type Does Not Display Small Values Correctly
 
+{% raw %}
+
 	Article: Q158756
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -81,3 +83,5 @@ permalink: /kb/158/Q158756/
 	
 	=============================================================================
 	
+
+{% endraw %}

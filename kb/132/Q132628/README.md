@@ -6,6 +6,8 @@ permalink: /kb/132/Q132628/
 
 ## Q132628: Resolution Change Does Not Realign Microsoft Office Toolbar
 
+{% raw %}
+
 	Article: Q132628
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/132/Q132628/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104485/
 
 ## Q104485: PC Ext: Err Msg: Error 21 Missing Routing File
 
+{% raw %}
+
 	Article: Q104485
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -53,3 +55,5 @@ permalink: /kb/104/Q104485/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194752/
 
 ## Q194752: Golf 98/99: Distances Are Not Measured in Expected Units
 
+{% raw %}
+
 	Article: Q194752
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -61,3 +63,5 @@ permalink: /kb/194/Q194752/
 	
 	=============================================================================
 	
+
+{% endraw %}

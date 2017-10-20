@@ -6,6 +6,8 @@ permalink: /kb/170/Q170154/
 
 ## Q170154: INFO: VB 6.0 Readme Part 10: Extensibility Issues
 
+{% raw %}
+
 	Article: Q170154
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -227,3 +229,5 @@ permalink: /kb/170/Q170154/
 	
 	=============================================================================
 	
+
+{% endraw %}

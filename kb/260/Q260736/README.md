@@ -6,6 +6,8 @@ permalink: /kb/260/Q260736/
 
 ## Q260736: StarLancer: How to Play the Game in Greyscale Mode
 
+{% raw %}
+
 	Article: Q260736
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/260/Q260736/
 	
 	=============================================================================
 	
+
+{% endraw %}

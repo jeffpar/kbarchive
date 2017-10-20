@@ -6,6 +6,8 @@ permalink: /kb/146/Q146905/
 
 ## Q146905: Remote Pipe DosWaitNmPipe to OS/2 Subsystem Gives Error 123
 
+{% raw %}
+
 	Article: Q146905
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:3.5,3.51
@@ -58,3 +60,5 @@ permalink: /kb/146/Q146905/
 	
 	=============================================================================
 	
+
+{% endraw %}

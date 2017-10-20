@@ -6,6 +6,8 @@ permalink: /kb/161/Q161897/
 
 ## Q161897: FIX: Uninstalling Distributed Setup Removes OCX Licenses
 
+{% raw %}
+
 	Article: Q161897
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -96,3 +98,5 @@ permalink: /kb/161/Q161897/
 	
 	=============================================================================
 	
+
+{% endraw %}

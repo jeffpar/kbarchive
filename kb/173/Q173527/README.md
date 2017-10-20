@@ -6,6 +6,8 @@ permalink: /kb/173/Q173527/
 
 ## Q173527: Automating PPTP Connection Via ISP Connection
 
+{% raw %}
+
 	Article: Q173527
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/173/Q173527/
 	
 	=============================================================================
 	
+
+{% endraw %}

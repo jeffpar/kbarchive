@@ -6,6 +6,8 @@ permalink: /kb/191/Q191285/
 
 ## Q191285: Services for Macintosh Index Corruption on Large Volumes
 
+{% raw %}
+
 	Article: Q191285
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/191/Q191285/
 	
 	=============================================================================
 	
+
+{% endraw %}

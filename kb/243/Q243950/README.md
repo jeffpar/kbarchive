@@ -6,6 +6,8 @@ permalink: /kb/243/Q243950/
 
 ## Q243950: High CPU Utilization in Store.exe
 
+{% raw %}
+
 	Article: Q243950
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP5,5.5 SP2
@@ -72,3 +74,5 @@ permalink: /kb/243/Q243950/
 	
 	=============================================================================
 	
+
+{% endraw %}

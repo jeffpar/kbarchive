@@ -6,6 +6,8 @@ permalink: /kb/159/Q159197/
 
 ## Q159197: XADM: Controlling Folder Index Aging
 
+{% raw %}
+
 	Article: Q159197
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -199,3 +201,5 @@ permalink: /kb/159/Q159197/
 	
 	=============================================================================
 	
+
+{% endraw %}

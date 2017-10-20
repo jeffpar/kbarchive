@@ -6,6 +6,8 @@ permalink: /kb/123/Q123490/
 
 ## Q123490: DocErr in WFWG 3.11 SETUP.TXT Mentions TIGA Drivers
 
+{% raw %}
+
 	Article: Q123490
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/123/Q123490/
 	
 	=============================================================================
 	
+
+{% endraw %}

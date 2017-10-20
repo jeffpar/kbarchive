@@ -6,6 +6,8 @@ permalink: /kb/182/Q182508/
 
 ## Q182508: XADM: How to Delete a User Using a .csv File Import
 
+{% raw %}
+
 	Article: Q182508
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -55,3 +57,5 @@ permalink: /kb/182/Q182508/
 	
 	=============================================================================
 	
+
+{% endraw %}

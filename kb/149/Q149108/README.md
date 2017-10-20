@@ -6,6 +6,8 @@ permalink: /kb/149/Q149108/
 
 ## Q149108: BUG: Command Group Class Button Movements Not Inherited
 
+{% raw %}
+
 	Article: Q149108
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -91,3 +93,5 @@ permalink: /kb/149/Q149108/
 	
 	=============================================================================
 	
+
+{% endraw %}

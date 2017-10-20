@@ -6,6 +6,8 @@ permalink: /kb/075/Q75742/
 
 ## Q75742: Display Driver Compatibility
 
+{% raw %}
+
 	Article: Q75742
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1,3.11
@@ -74,3 +76,5 @@ permalink: /kb/075/Q75742/
 	
 	=============================================================================
 	
+
+{% endraw %}

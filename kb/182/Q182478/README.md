@@ -6,6 +6,8 @@ permalink: /kb/182/Q182478/
 
 ## Q182478: XADM: Information Store Crashes Attempting to Deliver Message
 
+{% raw %}
+
 	Article: Q182478
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,4.0 SP3,5.0,5.5
@@ -114,3 +116,5 @@ permalink: /kb/182/Q182478/
 	
 	=============================================================================
 	
+
+{% endraw %}

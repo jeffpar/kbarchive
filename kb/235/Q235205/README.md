@@ -6,6 +6,8 @@ permalink: /kb/235/Q235205/
 
 ## Q235205: Advertised Program Does Not Run with 10003 Status Message
 
+{% raw %}
+
 	Article: Q235205
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -99,3 +101,5 @@ permalink: /kb/235/Q235205/
 	
 	=============================================================================
 	
+
+{% endraw %}

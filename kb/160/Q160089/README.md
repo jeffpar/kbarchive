@@ -6,6 +6,8 @@ permalink: /kb/160/Q160089/
 
 ## Q160089: PRB: 16-bit Help Window Title Has Wrong Character
 
+{% raw %}
+
 	Article: Q160089
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -63,3 +65,5 @@ permalink: /kb/160/Q160089/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/037/Q37344/
 
 ## Q37344: How to Use Extended/Expanded Memory RAMDrive for Data Storage
 
+{% raw %}
+
 	Article: Q37344
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -116,3 +118,5 @@ permalink: /kb/037/Q37344/
 	SUB PutData (I AS INTEGER, MyData AS UserSpec)
 	    PUT #15, I, MyData
 	END SUB
+
+{% endraw %}

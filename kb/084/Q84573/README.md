@@ -6,6 +6,8 @@ permalink: /kb/084/Q84573/
 
 ## Q84573: Epson ESC/P2 Incorrectly Advances User Defined Paper Size
 
+{% raw %}
+
 	Article: Q84573
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -53,3 +55,5 @@ permalink: /kb/084/Q84573/
 	
 	=============================================================================
 	
+
+{% endraw %}

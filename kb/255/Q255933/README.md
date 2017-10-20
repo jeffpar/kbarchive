@@ -6,6 +6,8 @@ permalink: /kb/255/Q255933/
 
 ## Q255933: SMS: User Must Log on for Win 9x to Run Mandatory Assignment
 
+{% raw %}
+
 	Article: Q255933
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -69,3 +71,5 @@ permalink: /kb/255/Q255933/
 	
 	=============================================================================
 	
+
+{% endraw %}

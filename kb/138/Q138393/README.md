@@ -6,6 +6,8 @@ permalink: /kb/138/Q138393/
 
 ## Q138393: Clipart Gallery: Can Only Add One Picture at a Time on Win NT
 
+{% raw %}
+
 	Article: Q138393
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,7.0,97; :2.0; Win95:7.0; winnt:3.51
@@ -60,3 +62,5 @@ permalink: /kb/138/Q138393/
 	
 	=============================================================================
 	
+
+{% endraw %}

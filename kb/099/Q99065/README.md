@@ -6,6 +6,8 @@ permalink: /kb/099/Q99065/
 
 ## Q99065: Using REXX System and Miscellaneous Commands
 
+{% raw %}
+
 	Article: Q99065
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -192,3 +194,5 @@ permalink: /kb/099/Q99065/
 	
 	=============================================================================
 	
+
+{% endraw %}

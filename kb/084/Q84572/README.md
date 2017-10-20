@@ -6,6 +6,8 @@ permalink: /kb/084/Q84572/
 
 ## Q84572: Red Vertical Lines Through Icons Caused by Sound Drivers
 
+{% raw %}
+
 	Article: Q84572
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -41,3 +43,5 @@ permalink: /kb/084/Q84572/
 	
 	=============================================================================
 	
+
+{% endraw %}

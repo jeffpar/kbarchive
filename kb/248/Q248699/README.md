@@ -6,6 +6,8 @@ permalink: /kb/248/Q248699/
 
 ## Q248699: Iomega Tools Causes Blank File Name When Renaming Files
 
+{% raw %}
+
 	Article: Q248699
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/248/Q248699/
 	
 	=============================================================================
 	
+
+{% endraw %}

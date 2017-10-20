@@ -6,6 +6,8 @@ permalink: /kb/321/Q321079/
 
 ## Q321079: SNABase Service May Not Start Properly with Events 561 and 624
 
+{% raw %}
+
 	Article: Q321079
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -120,3 +122,5 @@ permalink: /kb/321/Q321079/
 	
 	=============================================================================
 	
+
+{% endraw %}

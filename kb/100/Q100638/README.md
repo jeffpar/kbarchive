@@ -6,6 +6,8 @@ permalink: /kb/100/Q100638/
 
 ## Q100638: Cross-Platform Application Development in Windows NT
 
+{% raw %}
+
 	Article: Q100638
 	Product(s): Microsoft C Compiler
 	Version(s): 1.00 2.00 2.10 4.00
@@ -70,3 +72,5 @@ permalink: /kb/100/Q100638/
 	
 	=============================================================================
 	
+
+{% endraw %}

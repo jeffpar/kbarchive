@@ -6,6 +6,8 @@ permalink: /kb/093/Q93263/
 
 ## Q93263: Using the Tandem TTE Under Windows 3.1
 
+{% raw %}
+
 	Article: Q93263
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/093/Q93263/
 	
 	=============================================================================
 	
+
+{% endraw %}

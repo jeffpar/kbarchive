@@ -6,6 +6,8 @@ permalink: /kb/191/Q191858/
 
 ## Q191858: BUG: Changing Appearance Property Reduces ListBox Height
 
+{% raw %}
+
 	Article: Q191858
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/191/Q191858/
 	
 	=============================================================================
 	
+
+{% endraw %}

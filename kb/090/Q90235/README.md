@@ -6,6 +6,8 @@ permalink: /kb/090/Q90235/
 
 ## Q90235: Pop-up Message Halts Printing and Causes Bad Print Jobs
 
+{% raw %}
+
 	Article: Q90235
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1; :1.0
@@ -36,3 +38,5 @@ permalink: /kb/090/Q90235/
 	
 	=============================================================================
 	
+
+{% endraw %}

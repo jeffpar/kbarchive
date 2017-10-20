@@ -6,6 +6,8 @@ permalink: /kb/180/Q180574/
 
 ## Q180574: Client Fails if WNAP Started Using /User: and /Pwd: Options
 
+{% raw %}
+
 	Article: Q180574
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1,3.0 SP2
@@ -77,3 +79,5 @@ permalink: /kb/180/Q180574/
 	
 	=============================================================================
 	
+
+{% endraw %}

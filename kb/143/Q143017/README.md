@@ -6,6 +6,8 @@ permalink: /kb/143/Q143017/
 
 ## Q143017: PPT7: New Window Opened When Inserted Object Activated
 
+{% raw %}
+
 	Article: Q143017
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -50,3 +52,5 @@ permalink: /kb/143/Q143017/
 	
 	=============================================================================
 	
+
+{% endraw %}

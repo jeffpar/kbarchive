@@ -6,6 +6,8 @@ permalink: /kb/185/Q185355/
 
 ## Q185355: Printers Folder Displays Printer Error When Printer Is Busy
 
+{% raw %}
+
 	Article: Q185355
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -69,3 +71,5 @@ permalink: /kb/185/Q185355/
 	
 	=============================================================================
 	
+
+{% endraw %}

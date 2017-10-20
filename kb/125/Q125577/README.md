@@ -6,6 +6,8 @@ permalink: /kb/125/Q125577/
 
 ## Q125577: PC WSPlus: Schedule Access Library GP Faults
 
+{% raw %}
+
 	Article: Q125577
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0a
@@ -87,3 +89,5 @@ permalink: /kb/125/Q125577/
 	
 	=============================================================================
 	
+
+{% endraw %}

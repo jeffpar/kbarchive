@@ -6,6 +6,8 @@ permalink: /kb/131/Q131475/
 
 ## Q131475: Use #INCLUDE to Add Header Files to a Visual FoxPro Proj
 
+{% raw %}
+
 	Article: Q131475
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -189,3 +191,5 @@ permalink: /kb/131/Q131475/
 	
 	=============================================================================
 	
+
+{% endraw %}

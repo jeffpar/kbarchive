@@ -6,6 +6,8 @@ permalink: /kb/122/Q122266/
 
 ## Q122266: BUG: Line Number Information Incorrect with /DEBUGTYPE:both
 
+{% raw %}
+
 	Article: Q122266
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -96,3 +98,5 @@ permalink: /kb/122/Q122266/
 	
 	=============================================================================
 	
+
+{% endraw %}

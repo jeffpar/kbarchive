@@ -6,6 +6,8 @@ permalink: /kb/096/Q96936/
 
 ## Q96936: LABEL Truncates Multiple Spaces in Disk Label
 
+{% raw %}
+
 	Article: Q96936
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -49,3 +51,5 @@ permalink: /kb/096/Q96936/
 	
 	=============================================================================
 	
+
+{% endraw %}

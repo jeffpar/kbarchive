@@ -6,6 +6,8 @@ permalink: /kb/239/Q239919/
 
 ## Q239919: Handle Leak in SnaBase When SNA API DLL Is Loaded/Unloaded
 
+{% raw %}
+
 	Article: Q239919
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
@@ -71,3 +73,5 @@ permalink: /kb/239/Q239919/
 	
 	=============================================================================
 	
+
+{% endraw %}

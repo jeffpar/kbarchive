@@ -6,6 +6,8 @@ permalink: /kb/083/Q83819/
 
 ## Q83819: Express Setup Does Not Update MSNET.DRV
 
+{% raw %}
+
 	Article: Q83819
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/083/Q83819/
 	
 	=============================================================================
 	
+
+{% endraw %}

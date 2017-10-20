@@ -6,6 +6,8 @@ permalink: /kb/170/Q170006/
 
 ## Q170006: XCON: Event 9234 Reports Sockets Error 10038
 
+{% raw %}
+
 	Article: Q170006
 	Product(s): Microsoft Exchange
 	Version(s): 4.0, 50., 5.5
@@ -57,3 +59,5 @@ permalink: /kb/170/Q170006/
 	
 	=============================================================================
 	
+
+{% endraw %}

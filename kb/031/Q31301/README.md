@@ -6,6 +6,8 @@ permalink: /kb/031/Q31301/
 
 ## Q31301: Subscript Out of Range Can Hang .EXE without /d Debug Option
 
+{% raw %}
+
 	Article: Q31301
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -45,3 +47,5 @@ permalink: /kb/031/Q31301/
 	FOR i% = 0 TO 10
 	LSET x$(i%) = "fld " + STR$(i%): PRINT x$(i%)
 	NEXT i%
+
+{% endraw %}

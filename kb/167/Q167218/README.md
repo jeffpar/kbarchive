@@ -6,6 +6,8 @@ permalink: /kb/167/Q167218/
 
 ## Q167218: WD97: IPF Updating Field w/ Dollartext Switch, Spanish Language
 
+{% raw %}
+
 	Article: Q167218
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:7.0,7.0a,97
@@ -124,3 +126,5 @@ permalink: /kb/167/Q167218/
 	
 	=============================================================================
 	
+
+{% endraw %}

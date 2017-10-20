@@ -6,6 +6,8 @@ permalink: /kb/174/Q174746/
 
 ## Q174746: XADM: Err Msg: Unexpected NT API Error: 0xC000000D
 
+{% raw %}
+
 	Article: Q174746
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -76,3 +78,5 @@ permalink: /kb/174/Q174746/
 	
 	=============================================================================
 	
+
+{% endraw %}

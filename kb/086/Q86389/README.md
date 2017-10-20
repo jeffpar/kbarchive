@@ -6,6 +6,8 @@ permalink: /kb/086/Q86389/
 
 ## Q86389: PC Win: Err Msg: The Folder Conversion Program...
 
+{% raw %}
+
 	Article: Q86389
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -51,3 +53,5 @@ permalink: /kb/086/Q86389/
 	
 	=============================================================================
 	
+
+{% endraw %}

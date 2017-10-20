@@ -6,6 +6,8 @@ permalink: /kb/084/Q84649/
 
 ## Q84649: Characters in Menus and Dialog Boxes Corrupt or Truncated
 
+{% raw %}
+
 	Article: Q84649
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/084/Q84649/
 	
 	=============================================================================
 	
+
+{% endraw %}

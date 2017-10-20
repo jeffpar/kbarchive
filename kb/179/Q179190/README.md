@@ -6,6 +6,8 @@ permalink: /kb/179/Q179190/
 
 ## Q179190: NWRDR May Send Excessive GetNearestServer Requests
 
+{% raw %}
+
 	Article: Q179190
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -103,3 +105,5 @@ permalink: /kb/179/Q179190/
 	
 	=============================================================================
 	
+
+{% endraw %}

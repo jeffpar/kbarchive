@@ -6,6 +6,8 @@ permalink: /kb/163/Q163201/
 
 ## Q163201: XCLN: Illegal Operation Err Msg When Form Minimized
 
+{% raw %}
+
 	Article: Q163201
 	Product(s): Microsoft Exchange
 	Version(s): Win95:4.0
@@ -45,3 +47,5 @@ permalink: /kb/163/Q163201/
 	
 	=============================================================================
 	
+
+{% endraw %}

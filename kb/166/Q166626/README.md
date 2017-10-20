@@ -6,6 +6,8 @@ permalink: /kb/166/Q166626/
 
 ## Q166626: XADM: Thai Character Set Enabled in Exchange 5.0 SP1
 
+{% raw %}
+
 	Article: Q166626
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -52,3 +54,5 @@ permalink: /kb/166/Q166626/
 	
 	=============================================================================
 	
+
+{% endraw %}

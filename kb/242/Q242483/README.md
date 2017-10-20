@@ -6,6 +6,8 @@ permalink: /kb/242/Q242483/
 
 ## Q242483: FIX: Error 486 or 482 Occurs When Using PrintForm
 
+{% raw %}
+
 	Article: Q242483
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -219,3 +221,5 @@ permalink: /kb/242/Q242483/
 	
 	=============================================================================
 	
+
+{% endraw %}

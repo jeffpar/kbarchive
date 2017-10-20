@@ -6,6 +6,8 @@ permalink: /kb/150/Q150616/
 
 ## Q150616: BUG: Nmake Does Not Build Subproject of Type Makefile
 
+{% raw %}
+
 	Article: Q150616
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00 4.10 4.20
@@ -142,3 +144,5 @@ permalink: /kb/150/Q150616/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99710/
 
 ## Q99710: Four HP Printer Problems Associated with LAN Manager
 
+{% raw %}
+
 	Article: Q99710
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -172,3 +174,5 @@ permalink: /kb/099/Q99710/
 	
 	=============================================================================
 	
+
+{% endraw %}

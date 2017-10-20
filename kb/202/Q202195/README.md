@@ -6,6 +6,8 @@ permalink: /kb/202/Q202195/
 
 ## Q202195: SNMP OID for Logical Disk instance Name Returns Wrong Value
 
+{% raw %}
+
 	Article: Q202195
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -126,3 +128,5 @@ permalink: /kb/202/Q202195/
 	
 	=============================================================================
 	
+
+{% endraw %}

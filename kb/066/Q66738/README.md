@@ -6,6 +6,8 @@ permalink: /kb/066/Q66738/
 
 ## Q66738: PRB: Unpredictable Results When &gt;1 va_arg() in Parameter List
 
+{% raw %}
+
 	Article: Q66738
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,2.1,4.0,5.0,6.0
@@ -142,3 +144,5 @@ permalink: /kb/066/Q66738/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99259/
 
 ## Q99259: Workgroup Connections Version 1.0 Disk Directory Listing
 
+{% raw %}
+
 	Article: Q99259
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0
@@ -91,3 +93,5 @@ permalink: /kb/099/Q99259/
 	
 	=============================================================================
 	
+
+{% endraw %}

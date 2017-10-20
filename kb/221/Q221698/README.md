@@ -6,6 +6,8 @@ permalink: /kb/221/Q221698/
 
 ## Q221698: FIX: Project Manager Not Refreshed Correctly After Build
 
+{% raw %}
+
 	Article: Q221698
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -75,3 +77,5 @@ permalink: /kb/221/Q221698/
 	
 	=============================================================================
 	
+
+{% endraw %}

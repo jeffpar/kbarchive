@@ -6,6 +6,8 @@ permalink: /kb/191/Q191594/
 
 ## Q191594: XCON: Site Connector Not Usable Through a Firewall
 
+{% raw %}
+
 	Article: Q191594
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -73,3 +75,5 @@ permalink: /kb/191/Q191594/
 	
 	=============================================================================
 	
+
+{% endraw %}

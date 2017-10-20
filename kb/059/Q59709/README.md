@@ -6,6 +6,8 @@ permalink: /kb/059/Q59709/
 
 ## Q59709: Cutting Large Image in Real Mode Windows 3.0 Paintbrush
 
+{% raw %}
+
 	Article: Q59709
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -48,3 +50,5 @@ permalink: /kb/059/Q59709/
 	
 	=============================================================================
 	
+
+{% endraw %}

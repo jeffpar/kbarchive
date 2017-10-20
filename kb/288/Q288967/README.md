@@ -6,6 +6,8 @@ permalink: /kb/288/Q288967/
 
 ## Q288967: XFOR: DocLinks That Point to Lotus Notes (Domino) R5 UNIX Hosts
 
+{% raw %}
+
 	Article: Q288967
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -118,3 +120,5 @@ permalink: /kb/288/Q288967/
 	
 	=============================================================================
 	
+
+{% endraw %}

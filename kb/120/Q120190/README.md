@@ -6,6 +6,8 @@ permalink: /kb/120/Q120190/
 
 ## Q120190: BUG: ON KEY LABEL RIGHTMOUSE WAIT WINDOW &quot;Text&quot; Malfunctions
 
+{% raw %}
+
 	Article: Q120190
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.6x; WINDOWS:2.5x,2.6x,3.0,5.0,5.0a,6.0
@@ -73,3 +75,5 @@ permalink: /kb/120/Q120190/
 	
 	=============================================================================
 	
+
+{% endraw %}

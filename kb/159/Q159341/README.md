@@ -6,6 +6,8 @@ permalink: /kb/159/Q159341/
 
 ## Q159341: WD97: International Fonts Do Not Appear in Font List
 
+{% raw %}
+
 	Article: Q159341
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -134,3 +136,5 @@ permalink: /kb/159/Q159341/
 	
 	=============================================================================
 	
+
+{% endraw %}

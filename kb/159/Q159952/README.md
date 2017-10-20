@@ -6,6 +6,8 @@ permalink: /kb/159/Q159952/
 
 ## Q159952: SMS: &quot;Please Insert Diskette in Drive&quot; Message
 
+{% raw %}
+
 	Article: Q159952
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,1.2 SP1,1.2 SP2,1.2 SP3,95
@@ -75,3 +77,5 @@ permalink: /kb/159/Q159952/
 	
 	=============================================================================
 	
+
+{% endraw %}

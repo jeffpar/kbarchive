@@ -6,6 +6,8 @@ permalink: /kb/149/Q149922/
 
 ## Q149922: Error Message: Unable to Parse Setup Parameters
 
+{% raw %}
+
 	Article: Q149922
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -47,3 +49,5 @@ permalink: /kb/149/Q149922/
 	
 	=============================================================================
 	
+
+{% endraw %}

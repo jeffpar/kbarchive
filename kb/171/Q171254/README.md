@@ -6,6 +6,8 @@ permalink: /kb/171/Q171254/
 
 ## Q171254: Information about Uninstalling TAPI 2.1 In Windows NT 4.0
 
+{% raw %}
+
 	Article: Q171254
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/171/Q171254/
 	
 	=============================================================================
 	
+
+{% endraw %}

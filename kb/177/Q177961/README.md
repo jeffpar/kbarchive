@@ -6,6 +6,8 @@ permalink: /kb/177/Q177961/
 
 ## Q177961: XFOR: Fail to Decode Inbound Messages with 1522 UTF Encoding
 
+{% raw %}
+
 	Article: Q177961
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -62,3 +64,5 @@ permalink: /kb/177/Q177961/
 	
 	=============================================================================
 	
+
+{% endraw %}

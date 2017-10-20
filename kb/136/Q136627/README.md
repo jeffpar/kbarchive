@@ -6,6 +6,8 @@ permalink: /kb/136/Q136627/
 
 ## Q136627: Layered Drivers Never See WINSOCK IRPs for the TCP/IP Device
 
+{% raw %}
+
 	Article: Q136627
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -80,3 +82,5 @@ permalink: /kb/136/Q136627/
 	
 	=============================================================================
 	
+
+{% endraw %}

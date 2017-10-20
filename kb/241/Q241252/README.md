@@ -6,6 +6,8 @@ permalink: /kb/241/Q241252/
 
 ## Q241252: VPN Tunnels - PPTP Protocol Packet Description and Use
 
+{% raw %}
+
 	Article: Q241252
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -146,3 +148,5 @@ permalink: /kb/241/Q241252/
 	
 	=============================================================================
 	
+
+{% endraw %}

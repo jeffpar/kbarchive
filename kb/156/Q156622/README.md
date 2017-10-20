@@ -6,6 +6,8 @@ permalink: /kb/156/Q156622/
 
 ## Q156622: Replacing NBA Players on Team Removes Them from Database
 
+{% raw %}
+
 	Article: Q156622
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -47,3 +49,5 @@ permalink: /kb/156/Q156622/
 	
 	=============================================================================
 	
+
+{% endraw %}

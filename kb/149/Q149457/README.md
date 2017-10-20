@@ -6,6 +6,8 @@ permalink: /kb/149/Q149457/
 
 ## Q149457: On-line Help Unavailable for Attachmate SDLC Cards in Setup
 
+{% raw %}
+
 	Article: Q149457
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -56,3 +58,5 @@ permalink: /kb/149/Q149457/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/279/Q279456/
 
 ## Q279456: MSN Companion e-mail indicator light does not turn on
 
+{% raw %}
+
 	Article: Q279456
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -67,3 +69,5 @@ permalink: /kb/279/Q279456/
 	
 	=============================================================================
 	
+
+{% endraw %}

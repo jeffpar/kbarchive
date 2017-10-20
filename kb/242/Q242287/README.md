@@ -6,6 +6,8 @@ permalink: /kb/242/Q242287/
 
 ## Q242287: XFOR: NDR Returned for SMTP Recipient Through Notes Connector
 
+{% raw %}
+
 	Article: Q242287
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -75,3 +77,5 @@ permalink: /kb/242/Q242287/
 	
 	=============================================================================
 	
+
+{% endraw %}

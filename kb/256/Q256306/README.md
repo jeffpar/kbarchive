@@ -6,6 +6,8 @@ permalink: /kb/256/Q256306/
 
 ## Q256306: Windows NT Backup Does Not Work with Seagate Scorpion 40 DAT
 
+{% raw %}
+
 	Article: Q256306
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -94,3 +96,5 @@ permalink: /kb/256/Q256306/
 	
 	=============================================================================
 	
+
+{% endraw %}

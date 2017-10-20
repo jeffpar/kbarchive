@@ -6,6 +6,8 @@ permalink: /kb/307/Q307822/
 
 ## Q307822: COMTI NewRecordset Method Fails With Error -2147417851
 
+{% raw %}
+
 	Article: Q307822
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/307/Q307822/
 	
 	=============================================================================
 	
+
+{% endraw %}

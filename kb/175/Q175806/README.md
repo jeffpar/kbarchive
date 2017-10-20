@@ -6,6 +6,8 @@ permalink: /kb/175/Q175806/
 
 ## Q175806: How to Remove IntranetWare Client for Windows NT
 
+{% raw %}
+
 	Article: Q175806
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -111,3 +113,5 @@ permalink: /kb/175/Q175806/
 	
 	=============================================================================
 	
+
+{% endraw %}

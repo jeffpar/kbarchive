@@ -6,6 +6,8 @@ permalink: /kb/141/Q141914/
 
 ## Q141914: PRB: Record Number is Not Refreshed in Status Bar
 
+{% raw %}
+
 	Article: Q141914
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -88,3 +90,5 @@ permalink: /kb/141/Q141914/
 	
 	=============================================================================
 	
+
+{% endraw %}

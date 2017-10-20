@@ -6,6 +6,8 @@ permalink: /kb/164/Q164224/
 
 ## Q164224: Inserting PC Card in Dock with CardBus Card May Cause Reboot
 
+{% raw %}
+
 	Article: Q164224
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -65,3 +67,5 @@ permalink: /kb/164/Q164224/
 	
 	=============================================================================
 	
+
+{% endraw %}

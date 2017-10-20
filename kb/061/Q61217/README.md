@@ -6,6 +6,8 @@ permalink: /kb/061/Q61217/
 
 ## Q61217: C 6.00 README: Customizing PWB Program Lists
 
+{% raw %}
+
 	Article: Q61217
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -29,3 +31,5 @@ permalink: /kb/061/Q61217/
 	
 	For more information, consult the online help for the Make menu's Set
 	Program List command.
+
+{% endraw %}

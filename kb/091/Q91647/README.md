@@ -6,6 +6,8 @@ permalink: /kb/091/Q91647/
 
 ## Q91647: PC Win: Err Msg: There Is Not Enough Memory or System Resources
 
+{% raw %}
+
 	Article: Q91647
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -54,3 +56,5 @@ permalink: /kb/091/Q91647/
 	
 	=============================================================================
 	
+
+{% endraw %}

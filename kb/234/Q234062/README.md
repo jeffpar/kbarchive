@@ -6,6 +6,8 @@ permalink: /kb/234/Q234062/
 
 ## Q234062: INF: Determine Conversation State in CICS After SYNCPOINT
 
+{% raw %}
+
 	Article: Q234062
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0SP2
@@ -81,3 +83,5 @@ permalink: /kb/234/Q234062/
 	
 	=============================================================================
 	
+
+{% endraw %}

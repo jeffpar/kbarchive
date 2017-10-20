@@ -6,6 +6,8 @@ permalink: /kb/245/Q245580/
 
 ## Q245580: SMS: Client Connection Account Lockouts on Secondary Site
 
+{% raw %}
+
 	Article: Q245580
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP1
@@ -80,3 +82,5 @@ permalink: /kb/245/Q245580/
 	
 	=============================================================================
 	
+
+{% endraw %}

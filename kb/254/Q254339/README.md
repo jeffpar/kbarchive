@@ -6,6 +6,8 @@ permalink: /kb/254/Q254339/
 
 ## Q254339: HOWTO: Use FlashWindowEx to Notify a User from VB
 
+{% raw %}
+
 	Article: Q254339
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -133,3 +135,5 @@ permalink: /kb/254/Q254339/
 	
 	=============================================================================
 	
+
+{% endraw %}

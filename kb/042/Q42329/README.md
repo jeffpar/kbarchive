@@ -6,6 +6,8 @@ permalink: /kb/042/Q42329/
 
 ## Q42329: PRINT SPC(80) Statement May Not Wrap to the Next Line
 
+{% raw %}
+
 	Article: Q42329
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -49,3 +51,5 @@ permalink: /kb/042/Q42329/
 	line wrap, when given the space (Hex 20) character. Note that the
 	SPACE$() function overwrites any screen information that comes in its
 	path with the new SPACE$() character.
+
+{% endraw %}

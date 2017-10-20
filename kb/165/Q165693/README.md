@@ -6,6 +6,8 @@ permalink: /kb/165/Q165693/
 
 ## Q165693: INFO: Visual C++ 5.0 Readme, SQL and SQL Debugging
 
+{% raw %}
+
 	Article: Q165693
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -168,3 +170,5 @@ permalink: /kb/165/Q165693/
 	
 	=============================================================================
 	
+
+{% endraw %}

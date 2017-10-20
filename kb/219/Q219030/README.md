@@ -6,6 +6,8 @@ permalink: /kb/219/Q219030/
 
 ## Q219030: XFOR: Parsing Problem with LinkAge and cc:Mail Connector
 
+{% raw %}
+
 	Article: Q219030
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.2
@@ -83,3 +85,5 @@ permalink: /kb/219/Q219030/
 	
 	=============================================================================
 	
+
+{% endraw %}

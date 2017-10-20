@@ -6,6 +6,8 @@ permalink: /kb/031/Q31531/
 
 ## Q31531: MASM 5.10 EXT.DOC: FileLength - Returns Number of Lines in Fil
 
+{% raw %}
+
 	Article: Q31531
 	Product(s): See article
 	Version(s): 5.10   |
@@ -30,3 +32,5 @@ permalink: /kb/031/Q31531/
 	 */
 	LINE pascal FileLength (pFile)
 	PFILE pFile;
+
+{% endraw %}

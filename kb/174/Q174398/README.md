@@ -6,6 +6,8 @@ permalink: /kb/174/Q174398/
 
 ## Q174398: How to Force Time Synchronization Between Cluster Nodes
 
+{% raw %}
+
 	Article: Q174398
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/174/Q174398/
 	
 	=============================================================================
 	
+
+{% endraw %}

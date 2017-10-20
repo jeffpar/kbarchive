@@ -6,6 +6,8 @@ permalink: /kb/131/Q131075/
 
 ## Q131075: Mac Wkst: Default User Preferences
 
+{% raw %}
+
 	Article: Q131075
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -37,3 +39,5 @@ permalink: /kb/131/Q131075/
 	
 	=============================================================================
 	
+
+{% endraw %}

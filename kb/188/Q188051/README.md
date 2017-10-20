@@ -6,6 +6,8 @@ permalink: /kb/188/Q188051/
 
 ## Q188051: SMS: Delmif.exe Syntax, Description, and Usage
 
+{% raw %}
+
 	Article: Q188051
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -125,3 +127,5 @@ permalink: /kb/188/Q188051/
 	
 	=============================================================================
 	
+
+{% endraw %}

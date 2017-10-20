@@ -6,6 +6,8 @@ permalink: /kb/205/Q205994/
 
 ## Q205994: Renewing IP Lease From DHCP Server Logs Off Novell Server
 
+{% raw %}
+
 	Article: Q205994
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -83,3 +85,5 @@ permalink: /kb/205/Q205994/
 	
 	=============================================================================
 	
+
+{% endraw %}

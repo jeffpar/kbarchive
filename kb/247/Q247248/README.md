@@ -6,6 +6,8 @@ permalink: /kb/247/Q247248/
 
 ## Q247248: PRB: BuffDirty and the Class Browser
 
+{% raw %}
+
 	Article: Q247248
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a,6.0
@@ -73,3 +75,5 @@ permalink: /kb/247/Q247248/
 	
 	=============================================================================
 	
+
+{% endraw %}

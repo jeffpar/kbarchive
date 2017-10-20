@@ -6,6 +6,8 @@ permalink: /kb/279/Q279141/
 
 ## Q279141: FIX: Repeatedly Calling Create Class in Application Causes Error
 
+{% raw %}
+
 	Article: Q279141
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -60,3 +62,5 @@ permalink: /kb/279/Q279141/
 	
 	=============================================================================
 	
+
+{% endraw %}

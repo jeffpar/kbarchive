@@ -6,6 +6,8 @@ permalink: /kb/176/Q176113/
 
 ## Q176113: BUG: Set-Cookie Is Ignored in CGI When Combined With Location
 
+{% raw %}
+
 	Article: Q176113
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0,4.0,5.0
@@ -128,3 +130,5 @@ permalink: /kb/176/Q176113/
 	
 	=============================================================================
 	
+
+{% endraw %}

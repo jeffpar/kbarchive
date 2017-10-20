@@ -6,6 +6,8 @@ permalink: /kb/142/Q142653/
 
 ## Q142653: STOP Message Occurs Calling GetThreadContext/SetThreadContext
 
+{% raw %}
+
 	Article: Q142653
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/142/Q142653/
 	
 	=============================================================================
 	
+
+{% endraw %}

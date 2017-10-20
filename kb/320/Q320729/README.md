@@ -6,6 +6,8 @@ permalink: /kb/320/Q320729/
 
 ## Q320729: Network+ Certification Training Kit Comments And Corrections
 
+{% raw %}
+
 	Article: Q320729
 	Product(s): Microsoft Press
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/320/Q320729/
 	
 	=============================================================================
 	
+
+{% endraw %}

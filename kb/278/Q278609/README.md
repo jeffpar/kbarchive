@@ -6,6 +6,8 @@ permalink: /kb/278/Q278609/
 
 ## Q278609: SMS: Can't Modify Distribution Points for Packages from Parent
 
+{% raw %}
+
 	Article: Q278609
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -90,3 +92,5 @@ permalink: /kb/278/Q278609/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/039/Q39501/
 
 ## Q39501: Simple Example Using _bios_serialcom()
 
+{% raw %}
+
 	Article: Q39501
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -117,3 +119,5 @@ permalink: /kb/039/Q39501/
 	
 	=============================================================================
 	
+
+{% endraw %}

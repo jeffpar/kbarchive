@@ -6,6 +6,8 @@ permalink: /kb/172/Q172384/
 
 ## Q172384: WINS Database Displays Hyphens Instead of NetBIOS Suffix
 
+{% raw %}
+
 	Article: Q172384
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -76,3 +78,5 @@ permalink: /kb/172/Q172384/
 	
 	=============================================================================
 	
+
+{% endraw %}

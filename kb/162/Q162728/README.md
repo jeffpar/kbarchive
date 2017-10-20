@@ -6,6 +6,8 @@ permalink: /kb/162/Q162728/
 
 ## Q162728: SMS: Remote Chat Only Works One-Way with Windows NT Clients
 
+{% raw %}
+
 	Article: Q162728
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -50,3 +52,5 @@ permalink: /kb/162/Q162728/
 	
 	=============================================================================
 	
+
+{% endraw %}

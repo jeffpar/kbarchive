@@ -6,6 +6,8 @@ permalink: /kb/187/Q187686/
 
 ## Q187686: LookupAccountSid Causes Access Violation on Multihomed System
 
+{% raw %}
+
 	Article: Q187686
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/187/Q187686/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/042/Q42561/
 
 ## Q42561: SAMPLE.TXT Not Distributed with QuickC 2.00
 
+{% raw %}
+
 	Article: Q42561
 	Product(s): See article
 	Version(s): 2.00
@@ -18,3 +20,5 @@ permalink: /kb/042/Q42561/
 	included on the QuickC distribution disks.
 	
 	SAMPLE.TXT was not included in QuickC Version 2.00.
+
+{% endraw %}

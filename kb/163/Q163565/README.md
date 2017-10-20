@@ -6,6 +6,8 @@ permalink: /kb/163/Q163565/
 
 ## Q163565: XCLN: Fax Recipients' Information does not Appear on Cover Sheet
 
+{% raw %}
+
 	Article: Q163565
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -59,3 +61,5 @@ permalink: /kb/163/Q163565/
 	
 	=============================================================================
 	
+
+{% endraw %}

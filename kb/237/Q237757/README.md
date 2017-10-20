@@ -6,6 +6,8 @@ permalink: /kb/237/Q237757/
 
 ## Q237757: INFO: Leaking Handles When Creating COM Objects
 
+{% raw %}
+
 	Article: Q237757
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -114,3 +116,5 @@ permalink: /kb/237/Q237757/
 	
 	=============================================================================
 	
+
+{% endraw %}

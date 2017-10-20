@@ -6,6 +6,8 @@ permalink: /kb/161/Q161343/
 
 ## Q161343: HOWTO: Create a New Contact in Schedule Plus from Visual Basic
 
+{% raw %}
+
 	Article: Q161343
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -68,3 +70,5 @@ permalink: /kb/161/Q161343/
 	
 	=============================================================================
 	
+
+{% endraw %}

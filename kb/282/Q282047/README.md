@@ -6,6 +6,8 @@ permalink: /kb/282/Q282047/
 
 ## Q282047: PRB: Printing Reports Causes Exception C0000005 Error
 
+{% raw %}
+
 	Article: Q282047
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0,7.0
@@ -70,3 +72,5 @@ permalink: /kb/282/Q282047/
 	
 	=============================================================================
 	
+
+{% endraw %}

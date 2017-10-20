@@ -6,6 +6,8 @@ permalink: /kb/068/Q68110/
 
 ## Q68110: I/O Addresses for the Microsoft Mouse
 
+{% raw %}
+
 	Article: Q68110
 	Product(s): See article
 	Version(s): 1.00
@@ -54,3 +56,5 @@ permalink: /kb/068/Q68110/
 	No other peripheral device, such as a modem or printer, may share the
 	same I/O address with the mouse or the mouse may not function
 	correctly.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163649/
 
 ## Q163649: WD97: Mailing Label Wizard Prints Only in Column 1
 
+{% raw %}
+
 	Article: Q163649
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -55,3 +57,5 @@ permalink: /kb/163/Q163649/
 	
 	=============================================================================
 	
+
+{% endraw %}

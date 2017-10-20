@@ -6,6 +6,8 @@ permalink: /kb/155/Q155564/
 
 ## Q155564: EXPAND Command Does Not Recognize Path with Spaces
 
+{% raw %}
+
 	Article: Q155564
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -49,3 +51,5 @@ permalink: /kb/155/Q155564/
 	
 	=============================================================================
 	
+
+{% endraw %}

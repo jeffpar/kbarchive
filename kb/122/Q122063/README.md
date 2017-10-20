@@ -6,6 +6,8 @@ permalink: /kb/122/Q122063/
 
 ## Q122063: Explorer ErrMsg: Cannot Rename (or Find) the Specified File...
 
+{% raw %}
+
 	Article: Q122063
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -57,3 +59,5 @@ permalink: /kb/122/Q122063/
 	
 	=============================================================================
 	
+
+{% endraw %}

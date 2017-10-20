@@ -6,6 +6,8 @@ permalink: /kb/136/Q136211/
 
 ## Q136211: PRB: SETUP.APP Creates Disk Image too Large for a Floppy Disk
 
+{% raw %}
+
 	Article: Q136211
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -63,3 +65,5 @@ permalink: /kb/136/Q136211/
 	
 	=============================================================================
 	
+
+{% endraw %}

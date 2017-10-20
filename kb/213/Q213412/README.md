@@ -6,6 +6,8 @@ permalink: /kb/213/Q213412/
 
 ## Q213412: CFS: Map Orientation Is Fixed to the North at High Altitudes
 
+{% raw %}
+
 	Article: Q213412
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -56,3 +58,5 @@ permalink: /kb/213/Q213412/
 	
 	=============================================================================
 	
+
+{% endraw %}

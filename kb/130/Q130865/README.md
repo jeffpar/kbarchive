@@ -6,6 +6,8 @@ permalink: /kb/130/Q130865/
 
 ## Q130865: How to Place Totals on Report's Last Page in Page Footer
 
+{% raw %}
+
 	Article: Q130865
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50x 2.60 2.60a 3.00 | 2.50x 2.
@@ -134,3 +136,5 @@ permalink: /kb/130/Q130865/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174186/
 
 ## Q174186: Files the Setup Wizard Installs
 
+{% raw %}
+
 	Article: Q174186
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -63,3 +65,5 @@ permalink: /kb/174/Q174186/
 	
 	=============================================================================
 	
+
+{% endraw %}

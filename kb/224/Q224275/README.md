@@ -6,6 +6,8 @@ permalink: /kb/224/Q224275/
 
 ## Q224275: S&amp;T 2000: Cannot Enter Latitude and Longitude in All Formats
 
+{% raw %}
+
 	Article: Q224275
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -53,3 +55,5 @@ permalink: /kb/224/Q224275/
 	
 	=============================================================================
 	
+
+{% endraw %}

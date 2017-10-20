@@ -6,6 +6,8 @@ permalink: /kb/163/Q163268/
 
 ## Q163268: PPT: Sample Code to Change the Zoom Percentage
 
+{% raw %}
+
 	Article: Q163268
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -150,3 +152,5 @@ permalink: /kb/163/Q163268/
 	
 	=============================================================================
 	
+
+{% endraw %}

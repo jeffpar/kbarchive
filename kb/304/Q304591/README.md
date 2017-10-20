@@ -6,6 +6,8 @@ permalink: /kb/304/Q304591/
 
 ## Q304591: SMS: Mouse and Keyboard May Not Work in Remote Control Session
 
+{% raw %}
+
 	Article: Q304591
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP3
@@ -62,3 +64,5 @@ permalink: /kb/304/Q304591/
 	
 	=============================================================================
 	
+
+{% endraw %}

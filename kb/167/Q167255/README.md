@@ -6,6 +6,8 @@ permalink: /kb/167/Q167255/
 
 ## Q167255: WD97: HTML Tags Nested Incorrectly After Saving Word 97 File
 
+{% raw %}
+
 	Article: Q167255
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -124,3 +126,5 @@ permalink: /kb/167/Q167255/
 	
 	=============================================================================
 	
+
+{% endraw %}

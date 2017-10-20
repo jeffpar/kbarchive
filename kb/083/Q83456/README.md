@@ -6,6 +6,8 @@ permalink: /kb/083/Q83456/
 
 ## Q83456: Introduction to STRICT and Message Crackers
 
+{% raw %}
+
 	Article: Q83456
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -419,3 +421,5 @@ permalink: /kb/083/Q83456/
 	
 	=============================================================================
 	
+
+{% endraw %}

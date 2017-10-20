@@ -6,6 +6,8 @@ permalink: /kb/246/Q246706/
 
 ## Q246706: Errors Generated if TCP/IP DDM Server on AS/400 Not Started
 
+{% raw %}
+
 	Article: Q246706
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0 SP3
@@ -111,3 +113,5 @@ permalink: /kb/246/Q246706/
 	
 	=============================================================================
 	
+
+{% endraw %}

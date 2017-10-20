@@ -6,6 +6,8 @@ permalink: /kb/127/Q127946/
 
 ## Q127946: SCOPY in Resource Kit 3.1 Changes Time and Date Stamp
 
+{% raw %}
+
 	Article: Q127946
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -51,3 +53,5 @@ permalink: /kb/127/Q127946/
 	
 	=============================================================================
 	
+
+{% endraw %}

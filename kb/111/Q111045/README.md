@@ -6,6 +6,8 @@ permalink: /kb/111/Q111045/
 
 ## Q111045: Boot Partition Size Limit with Compaq SmartSCSI Controller
 
+{% raw %}
+
 	Article: Q111045
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5
@@ -65,3 +67,5 @@ permalink: /kb/111/Q111045/
 	
 	=============================================================================
 	
+
+{% endraw %}

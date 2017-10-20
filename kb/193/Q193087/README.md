@@ -6,6 +6,8 @@ permalink: /kb/193/Q193087/
 
 ## Q193087: BUG: Cannot Run a Compiled ActiveX DLL From IE
 
+{% raw %}
+
 	Article: Q193087
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,5.5,6.0
@@ -108,3 +110,5 @@ permalink: /kb/193/Q193087/
 	
 	=============================================================================
 	
+
+{% endraw %}

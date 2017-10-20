@@ -6,6 +6,8 @@ permalink: /kb/135/Q135909/
 
 ## Q135909: Flight Simulator Display Options
 
+{% raw %}
+
 	Article: Q135909
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0,5.0a,5.1
@@ -195,3 +197,5 @@ permalink: /kb/135/Q135909/
 	
 	=============================================================================
 	
+
+{% endraw %}

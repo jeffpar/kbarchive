@@ -6,6 +6,8 @@ permalink: /kb/138/Q138366/
 
 ## Q138366: Event ID 10 Appears When Using Simple TCP/IP Services
 
+{% raw %}
+
 	Article: Q138366
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -60,3 +62,5 @@ permalink: /kb/138/Q138366/
 	
 	=============================================================================
 	
+
+{% endraw %}

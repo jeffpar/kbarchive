@@ -6,6 +6,8 @@ permalink: /kb/129/Q129516/
 
 ## Q129516: Exclusive Mode Mouse Setting Prevents Resizing a Window
 
+{% raw %}
+
 	Article: Q129516
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -86,3 +88,5 @@ permalink: /kb/129/Q129516/
 	
 	=============================================================================
 	
+
+{% endraw %}

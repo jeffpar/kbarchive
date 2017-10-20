@@ -6,6 +6,8 @@ permalink: /kb/110/Q110180/
 
 ## Q110180: BUG: GP Fault in LoadLibrary() with C++ DLL
 
+{% raw %}
+
 	Article: Q110180
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -75,3 +77,5 @@ permalink: /kb/110/Q110180/
 	
 	=============================================================================
 	
+
+{% endraw %}

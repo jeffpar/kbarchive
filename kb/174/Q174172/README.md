@@ -6,6 +6,8 @@ permalink: /kb/174/Q174172/
 
 ## Q174172: XADM: ErrMsg: An Unknown, Unexpected Error Has Occurred
 
+{% raw %}
+
 	Article: Q174172
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/174/Q174172/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99286/
 
 ## Q99286: Extract Does Not Save Multiple Files
 
+{% raw %}
+
 	Article: Q99286
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/099/Q99286/
 	
 	=============================================================================
 	
+
+{% endraw %}

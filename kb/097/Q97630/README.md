@@ -6,6 +6,8 @@ permalink: /kb/097/Q97630/
 
 ## Q97630: Using the Report Writer with ImageWriter or LaserWriter
 
+{% raw %}
+
 	Article: Q97630
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -62,3 +64,5 @@ permalink: /kb/097/Q97630/
 	
 	=============================================================================
 	
+
+{% endraw %}

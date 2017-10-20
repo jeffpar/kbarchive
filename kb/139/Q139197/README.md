@@ -6,6 +6,8 @@ permalink: /kb/139/Q139197/
 
 ## Q139197: BUG: Screen Does Not Repaint in Windows 95
 
+{% raw %}
+
 	Article: Q139197
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -53,3 +55,5 @@ permalink: /kb/139/Q139197/
 	
 	=============================================================================
 	
+
+{% endraw %}

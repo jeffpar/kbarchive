@@ -6,6 +6,8 @@ permalink: /kb/126/Q126027/
 
 ## Q126027: SMS Inventory Processor: Compilation Error on Dell Computers
 
+{% raw %}
+
 	Article: Q126027
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -49,3 +51,5 @@ permalink: /kb/126/Q126027/
 	
 	=============================================================================
 	
+
+{% endraw %}

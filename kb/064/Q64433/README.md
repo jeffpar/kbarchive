@@ -6,6 +6,8 @@ permalink: /kb/064/Q64433/
 
 ## Q64433: Can't Resize a Window with a Macro in PWB
 
+{% raw %}
+
 	Article: Q64433
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -63,3 +65,5 @@ permalink: /kb/064/Q64433/
 	
 	=============================================================================
 	
+
+{% endraw %}

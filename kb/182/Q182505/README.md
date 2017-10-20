@@ -6,6 +6,8 @@ permalink: /kb/182/Q182505/
 
 ## Q182505: XADM: Memory Usage of Store.exe Is Higher in Exchange 5.5
 
+{% raw %}
+
 	Article: Q182505
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -55,3 +57,5 @@ permalink: /kb/182/Q182505/
 	
 	=============================================================================
 	
+
+{% endraw %}

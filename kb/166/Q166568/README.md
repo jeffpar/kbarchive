@@ -6,6 +6,8 @@ permalink: /kb/166/Q166568/
 
 ## Q166568: XCLN: Message Created Using MAPI Cannot Be Opened
 
+{% raw %}
+
 	Article: Q166568
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -54,3 +56,5 @@ permalink: /kb/166/Q166568/
 	
 	=============================================================================
 	
+
+{% endraw %}

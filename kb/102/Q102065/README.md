@@ -6,6 +6,8 @@ permalink: /kb/102/Q102065/
 
 ## Q102065: NET3100 Actually Indicates Physical Network Problem
 
+{% raw %}
+
 	Article: Q102065
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -27,3 +29,5 @@ permalink: /kb/102/Q102065/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185792/
 
 ## Q185792: Shared Printers Are Unavailable After a Server Restart
 
+{% raw %}
+
 	Article: Q185792
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -75,3 +77,5 @@ permalink: /kb/185/Q185792/
 	
 	=============================================================================
 	
+
+{% endraw %}

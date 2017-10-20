@@ -6,6 +6,8 @@ permalink: /kb/122/Q122174/
 
 ## Q122174: Err Msg: MEFLIB.DLL Is Not a Valid NT Image File
 
+{% raw %}
+
 	Article: Q122174
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/122/Q122174/
 	
 	=============================================================================
 	
+
+{% endraw %}

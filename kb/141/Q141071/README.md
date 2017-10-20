@@ -6,6 +6,8 @@ permalink: /kb/141/Q141071/
 
 ## Q141071: PRB: Can't Receive Data When Using MSCOMM.OCX Control
 
+{% raw %}
+
 	Article: Q141071
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -69,3 +71,5 @@ permalink: /kb/141/Q141071/
 	
 	=============================================================================
 	
+
+{% endraw %}

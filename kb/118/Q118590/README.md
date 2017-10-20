@@ -6,6 +6,8 @@ permalink: /kb/118/Q118590/
 
 ## Q118590: How to Capture or Create a Palette from an AVI File
 
+{% raw %}
+
 	Article: Q118590
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:1.0,1.1
@@ -50,3 +52,5 @@ permalink: /kb/118/Q118590/
 	
 	=============================================================================
 	
+
+{% endraw %}

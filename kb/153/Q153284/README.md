@@ -6,6 +6,8 @@ permalink: /kb/153/Q153284/
 
 ## Q153284: INFO: Limitations of IntelliSense in Visual C++ 6.0
 
+{% raw %}
+
 	Article: Q153284
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -80,3 +82,5 @@ permalink: /kb/153/Q153284/
 	
 	=============================================================================
 	
+
+{% endraw %}

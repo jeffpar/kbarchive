@@ -6,6 +6,8 @@ permalink: /kb/175/Q175276/
 
 ## Q175276: Licensing Policy Implementation with MSCS
 
+{% raw %}
+
 	Article: Q175276
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -124,3 +126,5 @@ permalink: /kb/175/Q175276/
 	
 	=============================================================================
 	
+
+{% endraw %}

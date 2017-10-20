@@ -6,6 +6,8 @@ permalink: /kb/177/Q177093/
 
 ## Q177093: FPNW Service Fails to Start
 
+{% raw %}
+
 	Article: Q177093
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.00
@@ -62,3 +64,5 @@ permalink: /kb/177/Q177093/
 	
 	=============================================================================
 	
+
+{% endraw %}

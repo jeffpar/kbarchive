@@ -6,6 +6,8 @@ permalink: /kb/198/Q198126/
 
 ## Q198126: WD97: Table of Contents Wraps in Online Layout View
 
+{% raw %}
+
 	Article: Q198126
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -104,3 +106,5 @@ permalink: /kb/198/Q198126/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/116/Q116297/
 
 ## Q116297: Mac Bookshelf: Can't Play MIDI Sounds or Audio Pronunciations
 
+{% raw %}
+
 	Article: Q116297
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994, 1995, 96-97 editions
@@ -49,3 +51,5 @@ permalink: /kb/116/Q116297/
 	
 	=============================================================================
 	
+
+{% endraw %}

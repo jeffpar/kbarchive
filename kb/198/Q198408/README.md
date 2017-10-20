@@ -6,6 +6,8 @@ permalink: /kb/198/Q198408/
 
 ## Q198408: Microsoft DNS Server Registry Parameters, Part 1 of 3
 
+{% raw %}
+
 	Article: Q198408
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -440,3 +442,5 @@ permalink: /kb/198/Q198408/
 	
 	=============================================================================
 	
+
+{% endraw %}

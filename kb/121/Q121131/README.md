@@ -6,6 +6,8 @@ permalink: /kb/121/Q121131/
 
 ## Q121131: PC MAPI: MAPI_NEW_SESSION Fails to Log in a New Session
 
+{% raw %}
+
 	Article: Q121131
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -55,3 +57,5 @@ permalink: /kb/121/Q121131/
 	
 	=============================================================================
 	
+
+{% endraw %}

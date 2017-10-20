@@ -6,6 +6,8 @@ permalink: /kb/183/Q183904/
 
 ## Q183904: XCLN: How to Delete All MAPI Profiles for a User
 
+{% raw %}
+
 	Article: Q183904
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; winnt:4.0,5.0,5.5; :8.0,8.01,8.02,8.03
@@ -82,3 +84,5 @@ permalink: /kb/183/Q183904/
 	
 	=============================================================================
 	
+
+{% endraw %}

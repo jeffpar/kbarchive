@@ -6,6 +6,8 @@ permalink: /kb/165/Q165740/
 
 ## Q165740: WD97: Cross-Reference to ListNum Field Is Incomplete
 
+{% raw %}
+
 	Article: Q165740
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -140,3 +142,5 @@ permalink: /kb/165/Q165740/
 	
 	=============================================================================
 	
+
+{% endraw %}

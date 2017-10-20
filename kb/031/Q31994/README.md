@@ -6,6 +6,8 @@ permalink: /kb/031/Q31994/
 
 ## Q31994: How Overlays Are Set Up By the Linker
 
+{% raw %}
+
 	Article: Q31994
 	Product(s): See article
 	Version(s): 3.x 4.06 4.07 5.01.20 5.01.21 5.03
@@ -48,3 +50,5 @@ permalink: /kb/031/Q31994/
 	A more detailed description of the overlay manager can be found on
 	Page 715 of the "MS-DOS Encyclopedia," "Article 20: The Microsoft
 	Object Linker."
+
+{% endraw %}

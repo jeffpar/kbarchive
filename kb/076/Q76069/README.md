@@ -6,6 +6,8 @@ permalink: /kb/076/Q76069/
 
 ## Q76069: PRB: Help File Missing Green Text Using WACOM Tablet
 
+{% raw %}
+
 	Article: Q76069
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -57,3 +59,5 @@ permalink: /kb/076/Q76069/
 	
 	=============================================================================
 	
+
+{% endraw %}

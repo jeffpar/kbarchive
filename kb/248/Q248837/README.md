@@ -6,6 +6,8 @@ permalink: /kb/248/Q248837/
 
 ## Q248837: FIX: AV in VBA6.DLL During Compilation When Using SP3 Version
 
+{% raw %}
+
 	Article: Q248837
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -146,3 +148,5 @@ permalink: /kb/248/Q248837/
 	
 	=============================================================================
 	
+
+{% endraw %}

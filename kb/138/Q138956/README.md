@@ -6,6 +6,8 @@ permalink: /kb/138/Q138956/
 
 ## Q138956: Adaptec 2742 Controller Fails with Second SCSI Host Adapter
 
+{% raw %}
+
 	Article: Q138956
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51
@@ -53,3 +55,5 @@ permalink: /kb/138/Q138956/
 	
 	=============================================================================
 	
+
+{% endraw %}

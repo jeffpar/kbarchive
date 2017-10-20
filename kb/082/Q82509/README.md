@@ -6,6 +6,8 @@ permalink: /kb/082/Q82509/
 
 ## Q82509: Standard Mode May Require Increased File Handles
 
+{% raw %}
+
 	Article: Q82509
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/082/Q82509/
 	
 	=============================================================================
 	
+
+{% endraw %}

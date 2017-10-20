@@ -6,6 +6,8 @@ permalink: /kb/123/Q123376/
 
 ## Q123376: PC DB: 2.1 Admin Address List Limited to 32,768 Addresses
 
+{% raw %}
+
 	Article: Q123376
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2a
@@ -63,3 +65,5 @@ permalink: /kb/123/Q123376/
 	
 	=============================================================================
 	
+
+{% endraw %}

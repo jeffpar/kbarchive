@@ -6,6 +6,8 @@ permalink: /kb/103/Q103856/
 
 ## Q103856: SubVBX.exe - Subclassing VBX Controls with MFC 2.0
 
+{% raw %}
+
 	Article: Q103856
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -86,3 +88,5 @@ permalink: /kb/103/Q103856/
 	
 	=============================================================================
 	
+
+{% endraw %}

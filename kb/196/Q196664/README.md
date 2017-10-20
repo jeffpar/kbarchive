@@ -6,6 +6,8 @@ permalink: /kb/196/Q196664/
 
 ## Q196664: XCON: MAD Consumes 100% CPU While Recalculating Routing
 
+{% raw %}
+
 	Article: Q196664
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -82,3 +84,5 @@ permalink: /kb/196/Q196664/
 	
 	=============================================================================
 	
+
+{% endraw %}

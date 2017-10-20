@@ -6,6 +6,8 @@ permalink: /kb/130/Q130037/
 
 ## Q130037: PC Win: Err Msg: Personal Address List Groups Cannot Be Added
 
+{% raw %}
+
 	Article: Q130037
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b,3.2,3.2a
@@ -87,3 +89,5 @@ permalink: /kb/130/Q130037/
 	
 	=============================================================================
 	
+
+{% endraw %}

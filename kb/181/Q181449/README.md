@@ -6,6 +6,8 @@ permalink: /kb/181/Q181449/
 
 ## Q181449: XADM: Error -1022 When Starting the Information Store
 
+{% raw %}
+
 	Article: Q181449
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -99,3 +101,5 @@ permalink: /kb/181/Q181449/
 	
 	=============================================================================
 	
+
+{% endraw %}

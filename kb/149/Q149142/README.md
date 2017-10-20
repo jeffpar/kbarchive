@@ -6,6 +6,8 @@ permalink: /kb/149/Q149142/
 
 ## Q149142: Dummy.txt File Left After Removing Windows 95 Service Pack 1
 
+{% raw %}
+
 	Article: Q149142
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -45,3 +47,5 @@ permalink: /kb/149/Q149142/
 	
 	=============================================================================
 	
+
+{% endraw %}

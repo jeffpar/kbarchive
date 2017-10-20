@@ -6,6 +6,8 @@ permalink: /kb/185/Q185637/
 
 ## Q185637: HOWTO: Use APIs to Check, Enable, or Disable Full Window Drag
 
+{% raw %}
+
 	Article: Q185637
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -170,3 +172,5 @@ permalink: /kb/185/Q185637/
 	
 	=============================================================================
 	
+
+{% endraw %}

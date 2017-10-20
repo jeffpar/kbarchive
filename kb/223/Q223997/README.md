@@ -6,6 +6,8 @@ permalink: /kb/223/Q223997/
 
 ## Q223997: Logon Attempt Does Not Work on New Installation of Windows NT
 
+{% raw %}
+
 	Article: Q223997
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -181,3 +183,5 @@ permalink: /kb/223/Q223997/
 	
 	=============================================================================
 	
+
+{% endraw %}

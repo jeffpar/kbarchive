@@ -6,6 +6,8 @@ permalink: /kb/140/Q140558/
 
 ## Q140558: Deleting Files on Samba Servers May Delete Local Files Instead
 
+{% raw %}
+
 	Article: Q140558
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -103,3 +105,5 @@ permalink: /kb/140/Q140558/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166394/
 
 ## Q166394: HOWTO: Implement a Linked List in Visual Basic
 
+{% raw %}
+
 	Article: Q166394
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -165,3 +167,5 @@ permalink: /kb/166/Q166394/
 	
 	=============================================================================
 	
+
+{% endraw %}

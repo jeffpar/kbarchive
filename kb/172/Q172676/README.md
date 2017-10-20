@@ -6,6 +6,8 @@ permalink: /kb/172/Q172676/
 
 ## Q172676: PRB: Autolist Feature Breaks When Project Cannot Compile
 
+{% raw %}
+
 	Article: Q172676
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -118,3 +120,5 @@ permalink: /kb/172/Q172676/
 	
 	=============================================================================
 	
+
+{% endraw %}

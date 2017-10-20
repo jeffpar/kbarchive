@@ -6,6 +6,8 @@ permalink: /kb/034/Q34923/
 
 ## Q34923: Corrections to the _setbkcolor Example
 
+{% raw %}
+
 	Article: Q34923
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -61,3 +63,5 @@ permalink: /kb/034/Q34923/
 	      _outtext("    hello    \n");
 	    }
 	}
+
+{% endraw %}

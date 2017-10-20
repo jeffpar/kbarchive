@@ -6,6 +6,8 @@ permalink: /kb/089/Q89997/
 
 ## Q89997: Changes to Wrong File when Switching Tasks in Quick Recorder
 
+{% raw %}
+
 	Article: Q89997
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/089/Q89997/
 	
 	=============================================================================
 	
+
+{% endraw %}

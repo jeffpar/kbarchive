@@ -6,6 +6,8 @@ permalink: /kb/176/Q176560/
 
 ## Q176560: How to Create an Inetnews.log File for Outlook Express
 
+{% raw %}
+
 	Article: Q176560
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6,4.0,5,5.0
@@ -74,3 +76,5 @@ permalink: /kb/176/Q176560/
 	
 	=============================================================================
 	
+
+{% endraw %}

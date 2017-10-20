@@ -6,6 +6,8 @@ permalink: /kb/319/Q319241/
 
 ## Q319241: Streets and Trips 2002: Route Does Not Appear on the Pocket PC
 
+{% raw %}
+
 	Article: Q319241
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -108,3 +110,5 @@ permalink: /kb/319/Q319241/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157593/
 
 ## Q157593: STL Sample for map::max_size, clear, erase, size Functions
 
+{% raw %}
+
 	Article: Q157593
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -223,3 +225,5 @@ permalink: /kb/157/Q157593/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/314/Q314629/
 
 ## Q314629: FIX: Object Referenced by Property with ASSIGN Cannot Be Closed
 
+{% raw %}
+
 	Article: Q314629
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -86,3 +88,5 @@ permalink: /kb/314/Q314629/
 	
 	=============================================================================
 	
+
+{% endraw %}

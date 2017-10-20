@@ -6,6 +6,8 @@ permalink: /kb/063/Q63589/
 
 ## Q63589: Non-Windows Applications Difficult to Read on Monochrome VGA
 
+{% raw %}
+
 	Article: Q63589
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -51,3 +53,5 @@ permalink: /kb/063/Q63589/
 	
 	=============================================================================
 	
+
+{% endraw %}

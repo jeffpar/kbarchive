@@ -6,6 +6,8 @@ permalink: /kb/158/Q158729/
 
 ## Q158729: Characters Converted by Httpodbc.dll
 
+{% raw %}
+
 	Article: Q158729
 	Product(s): Internet Information Server
 	Version(s): 2.0
@@ -53,3 +55,5 @@ permalink: /kb/158/Q158729/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/090/Q90489/
 
 ## Q90489: WinLogin 1.0 File List with Expanded Filenames/Sizes
 
+{% raw %}
+
 	Article: Q90489
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -87,3 +89,5 @@ permalink: /kb/090/Q90489/
 	
 	=============================================================================
 	
+
+{% endraw %}

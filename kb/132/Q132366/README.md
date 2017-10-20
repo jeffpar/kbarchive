@@ -6,6 +6,8 @@ permalink: /kb/132/Q132366/
 
 ## Q132366: PRB: Unexpected SelStart Property Behavior in Grid's Textbox
 
+{% raw %}
+
 	Article: Q132366
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -108,3 +110,5 @@ permalink: /kb/132/Q132366/
 	
 	=============================================================================
 	
+
+{% endraw %}

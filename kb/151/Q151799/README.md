@@ -6,6 +6,8 @@ permalink: /kb/151/Q151799/
 
 ## Q151799: HOWTO: Use the Animated Copy Functions in Windows 95/98/Me
 
+{% raw %}
+
 	Article: Q151799
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -321,3 +323,5 @@ permalink: /kb/151/Q151799/
 	
 	=============================================================================
 	
+
+{% endraw %}

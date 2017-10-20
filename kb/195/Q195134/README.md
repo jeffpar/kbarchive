@@ -6,6 +6,8 @@ permalink: /kb/195/Q195134/
 
 ## Q195134: WD97: Can't Remove Footnote Separator from Master Document
 
+{% raw %}
+
 	Article: Q195134
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -50,3 +52,5 @@ permalink: /kb/195/Q195134/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/275/Q275885/
 
 ## Q275885: XADM: Backup Over Network Won't Work w. 15-Char. Computer Name
 
+{% raw %}
+
 	Article: Q275885
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -101,3 +103,5 @@ permalink: /kb/275/Q275885/
 	
 	=============================================================================
 	
+
+{% endraw %}

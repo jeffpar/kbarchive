@@ -6,6 +6,8 @@ permalink: /kb/200/Q200759/
 
 ## Q200759: SMS: IBM Thinkpad Video Driver Causes GPF in Sms.exe
 
+{% raw %}
+
 	Article: Q200759
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -70,3 +72,5 @@ permalink: /kb/200/Q200759/
 	
 	=============================================================================
 	
+
+{% endraw %}

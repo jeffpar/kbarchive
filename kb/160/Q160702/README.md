@@ -6,6 +6,8 @@ permalink: /kb/160/Q160702/
 
 ## Q160702: Event 2006 Errors in Xcopy from WinNT 4.0 to OS/2 3.0 Client
 
+{% raw %}
+
 	Article: Q160702
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -59,3 +61,5 @@ permalink: /kb/160/Q160702/
 	
 	=============================================================================
 	
+
+{% endraw %}

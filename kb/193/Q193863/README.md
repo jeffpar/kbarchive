@@ -6,6 +6,8 @@ permalink: /kb/193/Q193863/
 
 ## Q193863: XIMS: No Inbound SMTP Mail Because of NAT to Exchange Server
 
+{% raw %}
+
 	Article: Q193863
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -73,3 +75,5 @@ permalink: /kb/193/Q193863/
 	
 	=============================================================================
 	
+
+{% endraw %}

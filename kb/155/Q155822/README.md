@@ -6,6 +6,8 @@ permalink: /kb/155/Q155822/
 
 ## Q155822: WD97: &quot;Float Over Text&quot; Check Box Checked If Paste Link Selected
 
+{% raw %}
+
 	Article: Q155822
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/155/Q155822/
 	
 	=============================================================================
 	
+
+{% endraw %}

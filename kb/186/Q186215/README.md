@@ -6,6 +6,8 @@ permalink: /kb/186/Q186215/
 
 ## Q186215: XADM: Cleanup of Items Past Retention Triggers Read Receipts
 
+{% raw %}
+
 	Article: Q186215
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -63,3 +65,5 @@ permalink: /kb/186/Q186215/
 	
 	=============================================================================
 	
+
+{% endraw %}

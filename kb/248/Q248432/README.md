@@ -6,6 +6,8 @@ permalink: /kb/248/Q248432/
 
 ## Q248432: Inventory Based on String Occurrence in File Does Not Find Match
 
+{% raw %}
+
 	Article: Q248432
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2 SP4
@@ -67,3 +69,5 @@ permalink: /kb/248/Q248432/
 	
 	=============================================================================
 	
+
+{% endraw %}

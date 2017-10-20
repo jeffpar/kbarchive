@@ -6,6 +6,8 @@ permalink: /kb/119/Q119247/
 
 ## Q119247: WFWG: Pause and Resume Events Are Not Logged
 
+{% raw %}
+
 	Article: Q119247
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -48,3 +50,5 @@ permalink: /kb/119/Q119247/
 	
 	=============================================================================
 	
+
+{% endraw %}

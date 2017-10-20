@@ -6,6 +6,8 @@ permalink: /kb/170/Q170278/
 
 ## Q170278: Demand-dial Connection Fails with Event 20050
 
+{% raw %}
+
 	Article: Q170278
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/170/Q170278/
 	
 	=============================================================================
 	
+
+{% endraw %}

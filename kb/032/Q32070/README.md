@@ -6,6 +6,8 @@ permalink: /kb/032/Q32070/
 
 ## Q32070: D1001 &quot;Could Not Execute C2.EXE&quot; with DOS Version 2.10
 
+{% raw %}
+
 	Article: Q32070
 	Product(s): See article
 	Version(s): 5.10
@@ -27,3 +29,5 @@ permalink: /kb/032/Q32070/
 	4. DOS and COMMAND.COM are incompatible. If their version numbers
 	   are different, the compiler might not be able to open the
 	   intermediate file in the TMP directory.
+
+{% endraw %}

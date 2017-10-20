@@ -6,6 +6,8 @@ permalink: /kb/152/Q152314/
 
 ## Q152314: Mac Bookshelf 96-97: About Box Shows Odd Hard Disk Space Info
 
+{% raw %}
+
 	Article: Q152314
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -47,3 +49,5 @@ permalink: /kb/152/Q152314/
 	
 	=============================================================================
 	
+
+{% endraw %}

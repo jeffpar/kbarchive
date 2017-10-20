@@ -6,6 +6,8 @@ permalink: /kb/146/Q146464/
 
 ## Q146464: XCLN: Err Msg: Unable to Obtain a Valid...Revocation List
 
+{% raw %}
+
 	Article: Q146464
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -52,3 +54,5 @@ permalink: /kb/146/Q146464/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/223/Q223408/
 
 ## Q223408: Scheduled Logoff Fails on Locked Workstation If Screen Saver On
 
+{% raw %}
+
 	Article: Q223408
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -88,3 +90,5 @@ permalink: /kb/223/Q223408/
 	
 	=============================================================================
 	
+
+{% endraw %}

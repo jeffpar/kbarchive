@@ -6,6 +6,8 @@ permalink: /kb/174/Q174927/
 
 ## Q174927: Error Message During Setup of Noncritical Changes
 
+{% raw %}
+
 	Article: Q174927
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -99,3 +101,5 @@ permalink: /kb/174/Q174927/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/302/Q302570/
 
 ## Q302570: HOW TO: Configure Custom Error Messaging for Your Web Site
 
+{% raw %}
+
 	Article: Q302570
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -131,3 +133,5 @@ permalink: /kb/302/Q302570/
 	
 	=============================================================================
 	
+
+{% endraw %}

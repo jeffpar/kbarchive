@@ -6,6 +6,8 @@ permalink: /kb/123/Q123739/
 
 ## Q123739: Updated AMI BIOS Needed for Large IDE Drives and 64+ MB Memory
 
+{% raw %}
+
 	Article: Q123739
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.5
@@ -44,3 +46,5 @@ permalink: /kb/123/Q123739/
 	
 	=============================================================================
 	
+
+{% endraw %}

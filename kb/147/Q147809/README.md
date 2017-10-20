@@ -6,6 +6,8 @@ permalink: /kb/147/Q147809/
 
 ## Q147809: HOWTO: Create a Setup-Like Status Bar in Visual Basic
 
+{% raw %}
+
 	Article: Q147809
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -140,3 +142,5 @@ permalink: /kb/147/Q147809/
 	
 	=============================================================================
 	
+
+{% endraw %}

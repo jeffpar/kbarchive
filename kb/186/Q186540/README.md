@@ -6,6 +6,8 @@ permalink: /kb/186/Q186540/
 
 ## Q186540: Terminal Server Error Messages: 2300 to 2399
 
+{% raw %}
+
 	Article: Q186540
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -557,3 +559,5 @@ permalink: /kb/186/Q186540/
 	
 	=============================================================================
 	
+
+{% endraw %}

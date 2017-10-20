@@ -6,6 +6,8 @@ permalink: /kb/193/Q193263/
 
 ## Q193263: XFOR: Transcription DLL Changes Not Maintained After Restart
 
+{% raw %}
+
 	Article: Q193263
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -75,3 +77,5 @@ permalink: /kb/193/Q193263/
 	
 	=============================================================================
 	
+
+{% endraw %}

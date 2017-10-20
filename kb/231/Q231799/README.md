@@ -6,6 +6,8 @@ permalink: /kb/231/Q231799/
 
 ## Q231799: XCON: MIME Messages Sent Using Outlook Express Receive an NDR
 
+{% raw %}
+
 	Article: Q231799
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -119,3 +121,5 @@ permalink: /kb/231/Q231799/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184980/
 
 ## Q184980: WD97: File Send To Sends Attachments Only as Word Documents
 
+{% raw %}
+
 	Article: Q184980
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -48,3 +50,5 @@ permalink: /kb/184/Q184980/
 	
 	=============================================================================
 	
+
+{% endraw %}

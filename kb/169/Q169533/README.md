@@ -6,6 +6,8 @@ permalink: /kb/169/Q169533/
 
 ## Q169533: WD97: Language Format Is Not Applied to All Parts of a Document
 
+{% raw %}
+
 	Article: Q169533
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -96,3 +98,5 @@ permalink: /kb/169/Q169533/
 	
 	=============================================================================
 	
+
+{% endraw %}

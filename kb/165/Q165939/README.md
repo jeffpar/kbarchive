@@ -6,6 +6,8 @@ permalink: /kb/165/Q165939/
 
 ## Q165939: 3270 LUs May Now Be Assigned to TCP/IP Addresses
 
+{% raw %}
+
 	Article: Q165939
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -104,3 +106,5 @@ permalink: /kb/165/Q165939/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/024/Q24636/
 
 ## Q24636: Pasting Formatted Text from Write to Paintbrush
 
+{% raw %}
+
 	Article: Q24636
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/024/Q24636/
 	
 	=============================================================================
 	
+
+{% endraw %}

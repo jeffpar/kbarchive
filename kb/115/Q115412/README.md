@@ -6,6 +6,8 @@ permalink: /kb/115/Q115412/
 
 ## Q115412: WD97: How to Change the Page Size to A4 for Custom Labels
 
+{% raw %}
+
 	Article: Q115412
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -60,3 +62,5 @@ permalink: /kb/115/Q115412/
 	
 	=============================================================================
 	
+
+{% endraw %}

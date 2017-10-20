@@ -6,6 +6,8 @@ permalink: /kb/194/Q194201/
 
 ## Q194201: BUG: ASCII 159 Appears With ! Text Box Format and Function Keys
 
+{% raw %}
+
 	Article: Q194201
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0,7.0
@@ -233,3 +235,5 @@ permalink: /kb/194/Q194201/
 	
 	=============================================================================
 	
+
+{% endraw %}

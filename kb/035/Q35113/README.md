@@ -6,6 +6,8 @@ permalink: /kb/035/Q35113/
 
 ## Q35113: FIX: Nested Dups in Structure Cause Recursive Loop
 
+{% raw %}
+
 	Article: Q35113
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a
@@ -72,3 +74,5 @@ permalink: /kb/035/Q35113/
 	
 	=============================================================================
 	
+
+{% endraw %}

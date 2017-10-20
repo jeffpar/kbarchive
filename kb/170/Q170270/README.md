@@ -6,6 +6,8 @@ permalink: /kb/170/Q170270/
 
 ## Q170270: Availability of ZAK for Windows NT Workstation 4.0
 
+{% raw %}
+
 	Article: Q170270
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0
@@ -47,3 +49,5 @@ permalink: /kb/170/Q170270/
 	
 	=============================================================================
 	
+
+{% endraw %}

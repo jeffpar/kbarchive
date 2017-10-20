@@ -6,6 +6,8 @@ permalink: /kb/213/Q213196/
 
 ## Q213196: SMS: Software Metering Client Suspends Metering on Client
 
+{% raw %}
+
 	Article: Q213196
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -50,3 +52,5 @@ permalink: /kb/213/Q213196/
 	
 	=============================================================================
 	
+
+{% endraw %}

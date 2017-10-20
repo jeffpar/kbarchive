@@ -6,6 +6,8 @@ permalink: /kb/041/Q41198/
 
 ## Q41198: How ungetch() Works with getch() and getche()
 
+{% raw %}
+
 	Article: Q41198
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -32,3 +34,5 @@ permalink: /kb/041/Q41198/
 	Note: This BIOS function does not exist on many machines -- be sure to
 	check the machine you're running on before you try to use this
 	function.
+
+{% endraw %}

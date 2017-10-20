@@ -6,6 +6,8 @@ permalink: /kb/200/Q200079/
 
 ## Q200079: XADM: Event ID 2247 Directory Name Object Allocation Failed
 
+{% raw %}
+
 	Article: Q200079
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -114,3 +116,5 @@ permalink: /kb/200/Q200079/
 	
 	=============================================================================
 	
+
+{% endraw %}

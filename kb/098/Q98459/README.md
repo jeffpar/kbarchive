@@ -6,6 +6,8 @@ permalink: /kb/098/Q98459/
 
 ## Q98459: Determining Which Files to Back Up When You Use DoubleSpace
 
+{% raw %}
+
 	Article: Q98459
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -51,3 +53,5 @@ permalink: /kb/098/Q98459/
 	
 	=============================================================================
 	
+
+{% endraw %}

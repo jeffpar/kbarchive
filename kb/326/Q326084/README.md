@@ -6,6 +6,8 @@ permalink: /kb/326/Q326084/
 
 ## Q326084: BUG: Print Server Translates EBCDIC Chars Under 0x40 to Spaces
 
+{% raw %}
+
 	Article: Q326084
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -152,3 +154,5 @@ permalink: /kb/326/Q326084/
 	
 	=============================================================================
 	
+
+{% endraw %}

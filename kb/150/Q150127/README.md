@@ -6,6 +6,8 @@ permalink: /kb/150/Q150127/
 
 ## Q150127: BUG: PEEKCHARQQ Fails in QuickWin or Standard Graphics Program
 
+{% raw %}
+
 	Article: Q150127
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,4.0
@@ -89,3 +91,5 @@ permalink: /kb/150/Q150127/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/072/Q72187/
 
 ## Q72187: Error Removing SUBSTed Directories
 
+{% raw %}
+
 	Article: Q72187
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.0
@@ -76,3 +78,5 @@ permalink: /kb/072/Q72187/
 	
 	=============================================================================
 	
+
+{% endraw %}

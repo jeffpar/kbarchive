@@ -6,6 +6,8 @@ permalink: /kb/196/Q196857/
 
 ## Q196857: WD97: First Page Prints on Back of Last Page with Duplex
 
+{% raw %}
+
 	Article: Q196857
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/196/Q196857/
 	
 	=============================================================================
 	
+
+{% endraw %}

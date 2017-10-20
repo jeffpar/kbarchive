@@ -6,6 +6,8 @@ permalink: /kb/124/Q124120/
 
 ## Q124120: Event Log Service Fails to Start Due to Event Log Corruption
 
+{% raw %}
+
 	Article: Q124120
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/124/Q124120/
 	
 	=============================================================================
 	
+
+{% endraw %}

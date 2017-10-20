@@ -6,6 +6,8 @@ permalink: /kb/271/Q271818/
 
 ## Q271818: Configuring Windows 2000 Indexing Service to Use the Neutral Wor
 
+{% raw %}
+
 	Article: Q271818
 	Product(s): Internet Information Server
 	Version(s): ; WINDOWS:2000
@@ -103,3 +105,5 @@ permalink: /kb/271/Q271818/
 	
 	=============================================================================
 	
+
+{% endraw %}

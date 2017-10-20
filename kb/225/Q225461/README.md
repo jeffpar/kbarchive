@@ -6,6 +6,8 @@ permalink: /kb/225/Q225461/
 
 ## Q225461: Outlook Contacts Are Not Accessible from Fax Send Utility on SBS
 
+{% raw %}
+
 	Article: Q225461
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -59,3 +61,5 @@ permalink: /kb/225/Q225461/
 	
 	=============================================================================
 	
+
+{% endraw %}

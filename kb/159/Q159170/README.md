@@ -6,6 +6,8 @@ permalink: /kb/159/Q159170/
 
 ## Q159170: XADM: Calling HRBackupGetDatabaseNames Returns Invalid Parameter
 
+{% raw %}
+
 	Article: Q159170
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/159/Q159170/
 	
 	=============================================================================
 	
+
+{% endraw %}

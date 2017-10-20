@@ -6,6 +6,8 @@ permalink: /kb/229/Q229857/
 
 ## Q229857: SMS: Identical Site Names on Multiple Sites Can Cause Problems
 
+{% raw %}
+
 	Article: Q229857
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -48,3 +50,5 @@ permalink: /kb/229/Q229857/
 	
 	=============================================================================
 	
+
+{% endraw %}

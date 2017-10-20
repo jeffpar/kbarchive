@@ -6,6 +6,8 @@ permalink: /kb/051/Q51866/
 
 ## Q51866: _PG_CHART Fails to Graph Some Y-Axis Categories
 
+{% raw %}
+
 	Article: Q51866
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -73,3 +75,5 @@ permalink: /kb/051/Q51866/
 	
 	Microsoft is researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

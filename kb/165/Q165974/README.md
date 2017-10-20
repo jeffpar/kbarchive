@@ -6,6 +6,8 @@ permalink: /kb/165/Q165974/
 
 ## Q165974: PRB: Cannot Install CSNW with &quot;Attended=Yes&quot; in Unattend.txt Fil
 
+{% raw %}
+
 	Article: Q165974
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/165/Q165974/
 	
 	=============================================================================
 	
+
+{% endraw %}

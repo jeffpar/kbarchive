@@ -6,6 +6,8 @@ permalink: /kb/244/Q244524/
 
 ## Q244524: XADM: How to Configure the Exchange Online Defragmentation Time
 
+{% raw %}
+
 	Article: Q244524
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -92,3 +94,5 @@ permalink: /kb/244/Q244524/
 	
 	=============================================================================
 	
+
+{% endraw %}

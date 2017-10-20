@@ -6,6 +6,8 @@ permalink: /kb/190/Q190507/
 
 ## Q190507: BUG: No Incompatibility Error When Interface Changes
 
+{% raw %}
+
 	Article: Q190507
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -116,3 +118,5 @@ permalink: /kb/190/Q190507/
 	
 	=============================================================================
 	
+
+{% endraw %}

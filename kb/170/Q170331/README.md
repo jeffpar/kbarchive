@@ -6,6 +6,8 @@ permalink: /kb/170/Q170331/
 
 ## Q170331: Automatic Dialog Box Appears During ZAK Setup
 
+{% raw %}
+
 	Article: Q170331
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0
@@ -56,3 +58,5 @@ permalink: /kb/170/Q170331/
 	
 	=============================================================================
 	
+
+{% endraw %}

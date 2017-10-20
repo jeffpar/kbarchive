@@ -6,6 +6,8 @@ permalink: /kb/223/Q223065/
 
 ## Q223065: FIX: Button Parameter of DataGrid MouseUp Event Always Equals 0
 
+{% raw %}
+
 	Article: Q223065
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -165,3 +167,5 @@ permalink: /kb/223/Q223065/
 	
 	=============================================================================
 	
+
+{% endraw %}

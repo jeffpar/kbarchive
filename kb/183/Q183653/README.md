@@ -6,6 +6,8 @@ permalink: /kb/183/Q183653/
 
 ## Q183653: Client Authentication Fails Connecting to Netscape Server
 
+{% raw %}
+
 	Article: Q183653
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -73,3 +75,5 @@ permalink: /kb/183/Q183653/
 	
 	=============================================================================
 	
+
+{% endraw %}

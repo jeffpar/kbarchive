@@ -6,6 +6,8 @@ permalink: /kb/141/Q141198/
 
 ## Q141198: Bookshelf 1994: Problems Printing Maps to the HP DeskJet 1200c
 
+{% raw %}
+
 	Article: Q141198
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -82,3 +84,5 @@ permalink: /kb/141/Q141198/
 	
 	=============================================================================
 	
+
+{% endraw %}

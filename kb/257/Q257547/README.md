@@ -6,6 +6,8 @@ permalink: /kb/257/Q257547/
 
 ## Q257547: Event ID 204 in Event Log and ASP Response Is Not Returned
 
+{% raw %}
+
 	Article: Q257547
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -70,3 +72,5 @@ permalink: /kb/257/Q257547/
 	
 	=============================================================================
 	
+
+{% endraw %}

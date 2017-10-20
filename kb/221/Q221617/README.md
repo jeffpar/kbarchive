@@ -6,6 +6,8 @@ permalink: /kb/221/Q221617/
 
 ## Q221617: FIX: C0000005 Fatal Error After Frequent Use of CHRTRAN()
 
+{% raw %}
+
 	Article: Q221617
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -87,3 +89,5 @@ permalink: /kb/221/Q221617/
 	
 	=============================================================================
 	
+
+{% endraw %}

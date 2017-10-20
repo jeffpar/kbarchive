@@ -6,6 +6,8 @@ permalink: /kb/238/Q238380/
 
 ## Q238380: Windows NT 4.0 Sometimes Hangs at Shutdown
 
+{% raw %}
+
 	Article: Q238380
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/238/Q238380/
 	
 	=============================================================================
 	
+
+{% endraw %}

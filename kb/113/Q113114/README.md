@@ -6,6 +6,8 @@ permalink: /kb/113/Q113114/
 
 ## Q113114: BUG: App Studio GP Faults in RCDLL.DLL When Opening a .RC file
 
+{% raw %}
+
 	Article: Q113114
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/113/Q113114/
 	
 	=============================================================================
 	
+
+{% endraw %}

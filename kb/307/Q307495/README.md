@@ -6,6 +6,8 @@ permalink: /kb/307/Q307495/
 
 ## Q307495: PRB: Error 0x80004005 When You Try to Register a WebClass DLL
 
+{% raw %}
+
 	Article: Q307495
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -89,3 +91,5 @@ permalink: /kb/307/Q307495/
 	
 	=============================================================================
 	
+
+{% endraw %}

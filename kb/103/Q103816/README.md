@@ -6,6 +6,8 @@ permalink: /kb/103/Q103816/
 
 ## Q103816: Err Msg Swapping Disk on Floptical Drive: Invalid Disk...
 
+{% raw %}
+
 	Article: Q103816
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21
@@ -61,3 +63,5 @@ permalink: /kb/103/Q103816/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186084/
 
 ## Q186084: HOWTO: Use the _arraylib Class from _utility Class Library
 
+{% raw %}
+
 	Article: Q186084
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -205,3 +207,5 @@ permalink: /kb/186/Q186084/
 	
 	=============================================================================
 	
+
+{% endraw %}

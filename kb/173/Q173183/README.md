@@ -6,6 +6,8 @@ permalink: /kb/173/Q173183/
 
 ## Q173183: Grpcpy.doc Contains Editing Marks Making It Difficult to Read
 
+{% raw %}
+
 	Article: Q173183
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -58,3 +60,5 @@ permalink: /kb/173/Q173183/
 	
 	=============================================================================
 	
+
+{% endraw %}

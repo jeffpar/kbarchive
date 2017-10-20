@@ -6,6 +6,8 @@ permalink: /kb/193/Q193094/
 
 ## Q193094: PRB: DataGrid or DbGrid May Not Display Data
 
+{% raw %}
+
 	Article: Q193094
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -107,3 +109,5 @@ permalink: /kb/193/Q193094/
 	
 	=============================================================================
 	
+
+{% endraw %}

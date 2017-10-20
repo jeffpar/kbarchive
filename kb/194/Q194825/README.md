@@ -6,6 +6,8 @@ permalink: /kb/194/Q194825/
 
 ## Q194825: Remove Personalized Settings for Users Running Terminal Server
 
+{% raw %}
+
 	Article: Q194825
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:4.0,4.01; winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/194/Q194825/
 	
 	=============================================================================
 	
+
+{% endraw %}

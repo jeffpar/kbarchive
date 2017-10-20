@@ -6,6 +6,8 @@ permalink: /kb/134/Q134891/
 
 ## Q134891: BUG: DEFINE POPUP PROMPT Can Cause Visual FoxPro to Quit
 
+{% raw %}
+
 	Article: Q134891
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -59,3 +61,5 @@ permalink: /kb/134/Q134891/
 	
 	=============================================================================
 	
+
+{% endraw %}

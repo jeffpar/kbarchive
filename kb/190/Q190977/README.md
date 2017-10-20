@@ -6,6 +6,8 @@ permalink: /kb/190/Q190977/
 
 ## Q190977: BUG: Custom AppWizard Generates Incorrect Toolbars and Bitmaps
 
+{% raw %}
+
 	Article: Q190977
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -208,3 +210,5 @@ permalink: /kb/190/Q190977/
 	
 	=============================================================================
 	
+
+{% endraw %}

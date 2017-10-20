@@ -6,6 +6,8 @@ permalink: /kb/149/Q149856/
 
 ## Q149856: BUG: Embedding a String Using the /V Compiler Option Fails
 
+{% raw %}
+
 	Article: Q149856
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -70,3 +72,5 @@ permalink: /kb/149/Q149856/
 	
 	=============================================================================
 	
+
+{% endraw %}

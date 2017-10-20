@@ -6,6 +6,8 @@ permalink: /kb/171/Q171527/
 
 ## Q171527: FIX: Causing a ListView Control to Paint Causes an IPF
 
+{% raw %}
+
 	Article: Q171527
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -91,3 +93,5 @@ permalink: /kb/171/Q171527/
 	
 	=============================================================================
 	
+
+{% endraw %}

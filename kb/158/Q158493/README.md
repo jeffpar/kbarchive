@@ -6,6 +6,8 @@ permalink: /kb/158/Q158493/
 
 ## Q158493: WD97: Wizard Vanishes When Run from Banyan Vines Server
 
+{% raw %}
+
 	Article: Q158493
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -58,3 +60,5 @@ permalink: /kb/158/Q158493/
 	
 	=============================================================================
 	
+
+{% endraw %}

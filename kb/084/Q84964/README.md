@@ -6,6 +6,8 @@ permalink: /kb/084/Q84964/
 
 ## Q84964: Bringing a Card to the Front in the Cardfile Program
 
+{% raw %}
+
 	Article: Q84964
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1
@@ -58,3 +60,5 @@ permalink: /kb/084/Q84964/
 	
 	=============================================================================
 	
+
+{% endraw %}

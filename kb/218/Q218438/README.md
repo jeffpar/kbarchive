@@ -6,6 +6,8 @@ permalink: /kb/218/Q218438/
 
 ## Q218438: COPY Command Doesn't Work Correctly with More Than 255 Files
 
+{% raw %}
+
 	Article: Q218438
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:2.11
@@ -45,3 +47,5 @@ permalink: /kb/218/Q218438/
 	
 	=============================================================================
 	
+
+{% endraw %}

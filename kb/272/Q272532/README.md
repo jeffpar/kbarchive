@@ -6,6 +6,8 @@ permalink: /kb/272/Q272532/
 
 ## Q272532: PRB: DatePicker Value Is Incorrect When You Enter Invalid Date
 
+{% raw %}
+
 	Article: Q272532
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -112,3 +114,5 @@ permalink: /kb/272/Q272532/
 	
 	=============================================================================
 	
+
+{% endraw %}

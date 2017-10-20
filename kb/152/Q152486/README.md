@@ -6,6 +6,8 @@ permalink: /kb/152/Q152486/
 
 ## Q152486: Resolving PC Card Problems on Toshiba 400 Notebook Computers
 
+{% raw %}
+
 	Article: Q152486
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -69,3 +71,5 @@ permalink: /kb/152/Q152486/
 	
 	=============================================================================
 	
+
+{% endraw %}

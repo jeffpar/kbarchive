@@ -6,6 +6,8 @@ permalink: /kb/122/Q122184/
 
 ## Q122184: FIX: CFormView Does Not Change Child Positions on WM_MDINEXT
 
+{% raw %}
+
 	Article: Q122184
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0
@@ -134,3 +136,5 @@ permalink: /kb/122/Q122184/
 	
 	=============================================================================
 	
+
+{% endraw %}

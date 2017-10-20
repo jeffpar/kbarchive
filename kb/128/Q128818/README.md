@@ -6,6 +6,8 @@ permalink: /kb/128/Q128818/
 
 ## Q128818: Windows NT 3.5 Fails to Upgrade AST Manhatten with MYLEX DAC
 
+{% raw %}
+
 	Article: Q128818
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/128/Q128818/
 	
 	=============================================================================
 	
+
+{% endraw %}

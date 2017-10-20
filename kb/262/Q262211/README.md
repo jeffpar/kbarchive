@@ -6,6 +6,8 @@ permalink: /kb/262/Q262211/
 
 ## Q262211: XCON: How to Manually Flush MTA Distribution List Cache
 
+{% raw %}
+
 	Article: Q262211
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.0 SP1,5.0 SP2,5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -124,3 +126,5 @@ permalink: /kb/262/Q262211/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182035/
 
 ## Q182035: XCLN: How to Set Up Windows 95 Roving Users with Profgen.exe
 
+{% raw %}
+
 	Article: Q182035
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -138,3 +140,5 @@ permalink: /kb/182/Q182035/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162681/
 
 ## Q162681: Unexpected Result in NCB Callname After Canceling a Listen
 
+{% raw %}
+
 	Article: Q162681
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:3.5 3.51 4.0
@@ -57,3 +59,5 @@ permalink: /kb/162/Q162681/
 	
 	=============================================================================
 	
+
+{% endraw %}

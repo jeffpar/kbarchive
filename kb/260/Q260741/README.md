@@ -6,6 +6,8 @@ permalink: /kb/260/Q260741/
 
 ## Q260741: XFOR: Internet Mail Service Won't Deliver to Others w. 552 Code
 
+{% raw %}
+
 	Article: Q260741
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -61,3 +63,5 @@ permalink: /kb/260/Q260741/
 	
 	=============================================================================
 	
+
+{% endraw %}

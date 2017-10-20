@@ -6,6 +6,8 @@ permalink: /kb/021/Q21844/
 
 ## Q21844: Integer Overflow Handling in Compiler Differs from Interpreter
 
+{% raw %}
+
 	Article: Q21844
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -56,3 +58,5 @@ permalink: /kb/021/Q21844/
 	run time to convert 130*I% to a single-precision constant to avoid
 	integer overflow. The disadvantage of dynamic handling is the slower
 	speed of the interpreters when compared with the compiler.
+
+{% endraw %}

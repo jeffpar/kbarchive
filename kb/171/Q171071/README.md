@@ -6,6 +6,8 @@ permalink: /kb/171/Q171071/
 
 ## Q171071: WD97: Extended Characters Improperly Converted in ASCII RTF File
 
+{% raw %}
+
 	Article: Q171071
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -95,3 +97,5 @@ permalink: /kb/171/Q171071/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168946/
 
 ## Q168946: Puzzle Collection: Error Message Received When Hard Disk is Full
 
+{% raw %}
+
 	Article: Q168946
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -55,3 +57,5 @@ permalink: /kb/168/Q168946/
 	
 	=============================================================================
 	
+
+{% endraw %}

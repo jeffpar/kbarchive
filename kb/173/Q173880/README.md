@@ -6,6 +6,8 @@ permalink: /kb/173/Q173880/
 
 ## Q173880: BUG: Page Down/Page Up Keys Do Not Clear READ MODAL in VFP5
 
+{% raw %}
+
 	Article: Q173880
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -74,3 +76,5 @@ permalink: /kb/173/Q173880/
 	
 	=============================================================================
 	
+
+{% endraw %}

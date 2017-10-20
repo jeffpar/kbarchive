@@ -6,6 +6,8 @@ permalink: /kb/262/Q262954/
 
 ## Q262954: HOWTO: Create a Resizeable Dialog Box with Scroll Bars
 
+{% raw %}
+
 	Article: Q262954
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0,6.0
@@ -162,3 +164,5 @@ permalink: /kb/262/Q262954/
 	
 	=============================================================================
 	
+
+{% endraw %}

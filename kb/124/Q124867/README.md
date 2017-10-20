@@ -6,6 +6,8 @@ permalink: /kb/124/Q124867/
 
 ## Q124867: Frank Lloyd Wright: Does Not Run on Windows NT
 
+{% raw %}
+
 	Article: Q124867
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/124/Q124867/
 	
 	=============================================================================
 	
+
+{% endraw %}

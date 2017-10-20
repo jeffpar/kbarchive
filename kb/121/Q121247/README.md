@@ -6,6 +6,8 @@ permalink: /kb/121/Q121247/
 
 ## Q121247: Pressing F3 in Help Doesn't Exit DriveSpace Conversion
 
+{% raw %}
+
 	Article: Q121247
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -56,3 +58,5 @@ permalink: /kb/121/Q121247/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/303/Q303222/
 
 ## Q303222: No Horizontal Scroll Bar At The Bottom Of The MSN Explorer Windo
 
+{% raw %}
+
 	Article: Q303222
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -56,3 +58,5 @@ permalink: /kb/303/Q303222/
 	
 	=============================================================================
 	
+
+{% endraw %}

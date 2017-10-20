@@ -6,6 +6,8 @@ permalink: /kb/118/Q118674/
 
 ## Q118674: Gtwy: Gateway Connectivity Information
 
+{% raw %}
+
 	Article: Q118674
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -105,3 +107,5 @@ permalink: /kb/118/Q118674/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/223/Q223047/
 
 ## Q223047: XCLN: AutoArchive Settings Do Not Work For Additional Mailboxes
 
+{% raw %}
+
 	Article: Q223047
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -54,3 +56,5 @@ permalink: /kb/223/Q223047/
 	
 	=============================================================================
 	
+
+{% endraw %}

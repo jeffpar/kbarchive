@@ -6,6 +6,8 @@ permalink: /kb/096/Q96455/
 
 ## Q96455: PC Win: Mail Useful Life Cannot Be Configured by User
 
+{% raw %}
+
 	Article: Q96455
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -48,3 +50,5 @@ permalink: /kb/096/Q96455/
 	
 	=============================================================================
 	
+
+{% endraw %}

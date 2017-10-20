@@ -6,6 +6,8 @@ permalink: /kb/194/Q194831/
 
 ## Q194831: SP4 Cluster Shares Must Be Reset to Recognize Added Subdirectori
 
+{% raw %}
+
 	Article: Q194831
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -81,3 +83,5 @@ permalink: /kb/194/Q194831/
 	
 	=============================================================================
 	
+
+{% endraw %}

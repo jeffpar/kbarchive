@@ -6,6 +6,8 @@ permalink: /kb/126/Q126977/
 
 ## Q126977: Audit Policy Not Replicating Correctly to BDC
 
+{% raw %}
+
 	Article: Q126977
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -59,3 +61,5 @@ permalink: /kb/126/Q126977/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/080/Q80119/
 
 ## Q80119: FIX: ALIGN Immediately After INCLUDE Generates L1101
 
+{% raw %}
+
 	Article: Q80119
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0
@@ -80,3 +82,5 @@ permalink: /kb/080/Q80119/
 	
 	=============================================================================
 	
+
+{% endraw %}

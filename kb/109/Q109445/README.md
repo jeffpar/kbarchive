@@ -6,6 +6,8 @@ permalink: /kb/109/Q109445/
 
 ## Q109445: CONN: Schedule+ for Windows Cannot Save File Attachments
 
+{% raw %}
+
 	Article: Q109445
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -54,3 +56,5 @@ permalink: /kb/109/Q109445/
 	
 	=============================================================================
 	
+
+{% endraw %}

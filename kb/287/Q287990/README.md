@@ -6,6 +6,8 @@ permalink: /kb/287/Q287990/
 
 ## Q287990: SMS: Large .tmp File Created When You Install SMS Client
 
+{% raw %}
+
 	Article: Q287990
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -163,3 +165,5 @@ permalink: /kb/287/Q287990/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155253/
 
 ## Q155253: Improper NTFS Permissions May Result in IIS Failure
 
+{% raw %}
+
 	Article: Q155253
 	Product(s): Internet Information Server
 	Version(s): 1.0 2.0 3.0
@@ -84,3 +86,5 @@ permalink: /kb/155/Q155253/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/249/Q249144/
 
 ## Q249144: HOWTO: Identify the CE Device Connected to the Desktop Machine
 
+{% raw %}
+
 	Article: Q249144
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.11,2.12,3.0,5.0,6.0
@@ -222,3 +224,5 @@ permalink: /kb/249/Q249144/
 	
 	=============================================================================
 	
+
+{% endraw %}

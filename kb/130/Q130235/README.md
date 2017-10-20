@@ -6,6 +6,8 @@ permalink: /kb/130/Q130235/
 
 ## Q130235: Windows 95 Detects Disabled Network Card
 
+{% raw %}
+
 	Article: Q130235
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/130/Q130235/
 	
 	=============================================================================
 	
+
+{% endraw %}

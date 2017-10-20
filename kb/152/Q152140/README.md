@@ -6,6 +6,8 @@ permalink: /kb/152/Q152140/
 
 ## Q152140: Fatal Exception When Logging on to NetWare from Windows95 Client
 
+{% raw %}
+
 	Article: Q152140
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:95; winnt:1.0,1.1,1.2,2.0,2.0 SP1
@@ -55,3 +57,5 @@ permalink: /kb/152/Q152140/
 	
 	=============================================================================
 	
+
+{% endraw %}

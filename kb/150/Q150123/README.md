@@ -6,6 +6,8 @@ permalink: /kb/150/Q150123/
 
 ## Q150123: Migrated Schedule+ 1.0 Users Are Prompted for Password
 
+{% raw %}
+
 	Article: Q150123
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -59,3 +61,5 @@ permalink: /kb/150/Q150123/
 	
 	=============================================================================
 	
+
+{% endraw %}

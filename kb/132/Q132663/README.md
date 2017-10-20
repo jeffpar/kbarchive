@@ -6,6 +6,8 @@ permalink: /kb/132/Q132663/
 
 ## Q132663: Windows 95 Hangs When You Start It Again After Setup
 
+{% raw %}
+
 	Article: Q132663
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/132/Q132663/
 	
 	=============================================================================
 	
+
+{% endraw %}

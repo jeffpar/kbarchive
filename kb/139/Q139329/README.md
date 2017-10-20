@@ -6,6 +6,8 @@ permalink: /kb/139/Q139329/
 
 ## Q139329: Windows NT LUA Application Hangs After 32767 SLI_SEND Commands
 
+{% raw %}
+
 	Article: Q139329
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -76,3 +78,5 @@ permalink: /kb/139/Q139329/
 	
 	=============================================================================
 	
+
+{% endraw %}

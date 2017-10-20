@@ -6,6 +6,8 @@ permalink: /kb/173/Q173962/
 
 ## Q173962: Anonymous Acct. Not Created When Windows NT 4.0 &amp; IIS Are on BDC
 
+{% raw %}
+
 	Article: Q173962
 	Product(s): Internet Information Server
 	Version(s): WinNT:1.0,2.0,3.0
@@ -53,3 +55,5 @@ permalink: /kb/173/Q173962/
 	
 	=============================================================================
 	
+
+{% endraw %}

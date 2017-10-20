@@ -6,6 +6,8 @@ permalink: /kb/046/Q46980/
 
 ## Q46980: CALL INTERRUPT Example to Get Disk Drive Capacity &amp; Free Space
 
+{% raw %}
+
 	Article: Q46980
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -150,3 +152,5 @@ permalink: /kb/046/Q46980/
 	PRINT "            ==========="
 	PRINT USING "Available = ###,###,###"; Available&
 	END
+
+{% endraw %}

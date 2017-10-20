@@ -6,6 +6,8 @@ permalink: /kb/318/Q318492/
 
 ## Q318492: XADM: &quot;Access Denied&quot; Err Msg Occurs Starting Exchange Admin
 
+{% raw %}
+
 	Article: Q318492
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -94,3 +96,5 @@ permalink: /kb/318/Q318492/
 	
 	=============================================================================
 	
+
+{% endraw %}

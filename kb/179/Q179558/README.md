@@ -6,6 +6,8 @@ permalink: /kb/179/Q179558/
 
 ## Q179558: WD97: Tab Stop Count Returns Incorrect Count
 
+{% raw %}
+
 	Article: Q179558
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -115,3 +117,5 @@ permalink: /kb/179/Q179558/
 	
 	=============================================================================
 	
+
+{% endraw %}

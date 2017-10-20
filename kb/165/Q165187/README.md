@@ -6,6 +6,8 @@ permalink: /kb/165/Q165187/
 
 ## Q165187: WD97: No Dialog With WordBasic.Dialog.ToolsOptionsGrammar
 
+{% raw %}
+
 	Article: Q165187
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -104,3 +106,5 @@ permalink: /kb/165/Q165187/
 	
 	=============================================================================
 	
+
+{% endraw %}

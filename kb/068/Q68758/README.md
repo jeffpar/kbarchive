@@ -6,6 +6,8 @@ permalink: /kb/068/Q68758/
 
 ## Q68758: Problems with Canon LBP-8II Driver in Windows 3.0
 
+{% raw %}
+
 	Article: Q68758
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -44,3 +46,5 @@ permalink: /kb/068/Q68758/
 	
 	=============================================================================
 	
+
+{% endraw %}

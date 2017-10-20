@@ -6,6 +6,8 @@ permalink: /kb/199/Q199261/
 
 ## Q199261: SMS: Advertisements to Users and User Groups
 
+{% raw %}
+
 	Article: Q199261
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -102,3 +104,5 @@ permalink: /kb/199/Q199261/
 	
 	=============================================================================
 	
+
+{% endraw %}

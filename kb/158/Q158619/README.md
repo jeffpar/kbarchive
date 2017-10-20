@@ -6,6 +6,8 @@ permalink: /kb/158/Q158619/
 
 ## Q158619: INFO: STL Sample for the Vector Class Using the operat
 
+{% raw %}
+
 	Article: Q158619
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -186,3 +188,5 @@ permalink: /kb/158/Q158619/
 	
 	=============================================================================
 	
+
+{% endraw %}

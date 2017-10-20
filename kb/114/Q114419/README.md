@@ -6,6 +6,8 @@ permalink: /kb/114/Q114419/
 
 ## Q114419: Cannot Find DC with Multiple Installations on Single Computer
 
+{% raw %}
+
 	Article: Q114419
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -65,3 +67,5 @@ permalink: /kb/114/Q114419/
 	
 	=============================================================================
 	
+
+{% endraw %}

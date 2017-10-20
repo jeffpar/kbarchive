@@ -6,6 +6,8 @@ permalink: /kb/198/Q198508/
 
 ## Q198508: HOWTO: Insert and Format a Picture in Word 97 w/ OLE Automation
 
+{% raw %}
+
 	Article: Q198508
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a,6.0
@@ -121,3 +123,5 @@ permalink: /kb/198/Q198508/
 	
 	=============================================================================
 	
+
+{% endraw %}

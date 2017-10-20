@@ -6,6 +6,8 @@ permalink: /kb/101/Q101264/
 
 ## Q101264: Assembling Code Developed for MASM 5.x with MASM 6.x
 
+{% raw %}
+
 	Article: Q101264
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -133,3 +135,5 @@ permalink: /kb/101/Q101264/
 	
 	=============================================================================
 	
+
+{% endraw %}

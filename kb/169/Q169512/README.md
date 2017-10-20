@@ -6,6 +6,8 @@ permalink: /kb/169/Q169512/
 
 ## Q169512: PRB: Controls Show on All Pages in Tabbed Dialog Control
 
+{% raw %}
+
 	Article: Q169512
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0 5.0a
@@ -145,3 +147,5 @@ permalink: /kb/169/Q169512/
 	
 	=============================================================================
 	
+
+{% endraw %}

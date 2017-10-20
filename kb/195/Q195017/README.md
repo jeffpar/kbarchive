@@ -6,6 +6,8 @@ permalink: /kb/195/Q195017/
 
 ## Q195017: FIX: Memory Leak in Microsoft Access ODBC Driver in MDAC 2.0
 
+{% raw %}
+
 	Article: Q195017
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0,2.1 SP2,2.5,3.5
@@ -84,3 +86,5 @@ permalink: /kb/195/Q195017/
 	
 	=============================================================================
 	
+
+{% endraw %}

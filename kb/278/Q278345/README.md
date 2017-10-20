@@ -6,6 +6,8 @@ permalink: /kb/278/Q278345/
 
 ## Q278345: Competing Changes to SMSCliToknAcct&amp; During Clisvc Startup
 
+{% raw %}
+
 	Article: Q278345
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3
@@ -83,3 +85,5 @@ permalink: /kb/278/Q278345/
 	
 	=============================================================================
 	
+
+{% endraw %}

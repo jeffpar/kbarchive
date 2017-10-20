@@ -6,6 +6,8 @@ permalink: /kb/259/Q259634/
 
 ## Q259634: XADM: How to Obtain Correct Size of the Exchange Server Database
 
+{% raw %}
+
 	Article: Q259634
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -63,3 +65,5 @@ permalink: /kb/259/Q259634/
 	
 	=============================================================================
 	
+
+{% endraw %}

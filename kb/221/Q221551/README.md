@@ -6,6 +6,8 @@ permalink: /kb/221/Q221551/
 
 ## Q221551: XFOR: Fixed Length RFT Attachments Incorrectly Changed by OVVM
 
+{% raw %}
+
 	Article: Q221551
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -80,3 +82,5 @@ permalink: /kb/221/Q221551/
 	
 	=============================================================================
 	
+
+{% endraw %}

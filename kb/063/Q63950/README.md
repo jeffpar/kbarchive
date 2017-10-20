@@ -6,6 +6,8 @@ permalink: /kb/063/Q63950/
 
 ## Q63950: Creating a Compile Window Macro for the M Editor Version 1.02
 
+{% raw %}
+
 	Article: Q63950
 	Product(s): See article
 	Version(s): 1.02   | 1.02
@@ -59,3 +61,5 @@ permalink: /kb/063/Q63950/
 	
 	Error messages will now be displayed in the compile window when
 	running a compilation or invoking a utility.
+
+{% endraw %}

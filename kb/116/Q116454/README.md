@@ -6,6 +6,8 @@ permalink: /kb/116/Q116454/
 
 ## Q116454: HP 1200c and 300 XL Require &quot;Print TrueType As Graphics&quot;
 
+{% raw %}
+
 	Article: Q116454
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -70,3 +72,5 @@ permalink: /kb/116/Q116454/
 	
 	=============================================================================
 	
+
+{% endraw %}

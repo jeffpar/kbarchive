@@ -6,6 +6,8 @@ permalink: /kb/198/Q198928/
 
 ## Q198928: PRB: MSDN Library g_ccolCollection.Open Error During Setup
 
+{% raw %}
+
 	Article: Q198928
 	Product(s): Microsoft Developer Network
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/198/Q198928/
 	
 	=============================================================================
 	
+
+{% endraw %}

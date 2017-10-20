@@ -6,6 +6,8 @@ permalink: /kb/125/Q125243/
 
 ## Q125243: Adding Non-SCSI CD-ROM Drivers After Installing Windows NT
 
+{% raw %}
+
 	Article: Q125243
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -116,3 +118,5 @@ permalink: /kb/125/Q125243/
 	
 	=============================================================================
 	
+
+{% endraw %}

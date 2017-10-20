@@ -6,6 +6,8 @@ permalink: /kb/266/Q266620/
 
 ## Q266620: Age of Empires II: The Age of Kings: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q266620
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -73,3 +75,5 @@ permalink: /kb/266/Q266620/
 	
 	=============================================================================
 	
+
+{% endraw %}

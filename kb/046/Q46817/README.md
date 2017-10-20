@@ -6,6 +6,8 @@ permalink: /kb/046/Q46817/
 
 ## Q46817: Getting High-Intensity Background Color in SCREEN 0
 
+{% raw %}
+
 	Article: Q46817
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -82,3 +84,5 @@ permalink: /kb/046/Q46817/
 	CALL interrupt(&H10, InReg,OutReg) 'characters will have a
 	                                   'high-intensity background.
 	END
+
+{% endraw %}

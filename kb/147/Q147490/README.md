@@ -6,6 +6,8 @@ permalink: /kb/147/Q147490/
 
 ## Q147490: How to Import a 1.0 Cal File Into 7.0
 
+{% raw %}
+
 	Article: Q147490
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:3.x,4.0,7.0,95
@@ -70,3 +72,5 @@ permalink: /kb/147/Q147490/
 	
 	=============================================================================
 	
+
+{% endraw %}

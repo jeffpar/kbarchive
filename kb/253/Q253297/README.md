@@ -6,6 +6,8 @@ permalink: /kb/253/Q253297/
 
 ## Q253297: XADM: Discussion of Public Folders and Temporary Replicas
 
+{% raw %}
+
 	Article: Q253297
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -172,3 +174,5 @@ permalink: /kb/253/Q253297/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/093/Q93206/
 
 ## Q93206: PostScript EPS Files Are Device Independent
 
+{% raw %}
+
 	Article: Q93206
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -71,3 +73,5 @@ permalink: /kb/093/Q93206/
 	
 	=============================================================================
 	
+
+{% endraw %}

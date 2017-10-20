@@ -6,6 +6,8 @@ permalink: /kb/146/Q146567/
 
 ## Q146567: XFOR: Messages with Long Addresses Are Not Delivered
 
+{% raw %}
+
 	Article: Q146567
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/146/Q146567/
 	
 	=============================================================================
 	
+
+{% endraw %}

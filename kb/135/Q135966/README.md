@@ -6,6 +6,8 @@ permalink: /kb/135/Q135966/
 
 ## Q135966: &quot;A DLL Initialization Routine Failed&quot; Setting Up MS Plus!
 
+{% raw %}
+
 	Article: Q135966
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -74,3 +76,5 @@ permalink: /kb/135/Q135966/
 	
 	=============================================================================
 	
+
+{% endraw %}

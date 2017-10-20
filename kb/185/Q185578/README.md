@@ -6,6 +6,8 @@ permalink: /kb/185/Q185578/
 
 ## Q185578: XADM: Error Message &quot;Custom Attribute (N) Is Unknown&quot;
 
+{% raw %}
+
 	Article: Q185578
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -62,3 +64,5 @@ permalink: /kb/185/Q185578/
 	
 	=============================================================================
 	
+
+{% endraw %}

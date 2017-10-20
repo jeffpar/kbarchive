@@ -6,6 +6,8 @@ permalink: /kb/145/Q145878/
 
 ## Q145878: Partial Internet Information Server Components Installed
 
+{% raw %}
+
 	Article: Q145878
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -39,3 +41,5 @@ permalink: /kb/145/Q145878/
 	
 	=============================================================================
 	
+
+{% endraw %}

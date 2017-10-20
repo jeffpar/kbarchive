@@ -6,6 +6,8 @@ permalink: /kb/123/Q123765/
 
 ## Q123765: The WINNT.SIF File Created by WINNT and WINNT32
 
+{% raw %}
+
 	Article: Q123765
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -62,3 +64,5 @@ permalink: /kb/123/Q123765/
 	
 	=============================================================================
 	
+
+{% endraw %}

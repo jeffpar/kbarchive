@@ -6,6 +6,8 @@ permalink: /kb/176/Q176164/
 
 ## Q176164: FIX: Optional Argument Default Value Breaks Binary Compatibility
 
+{% raw %}
+
 	Article: Q176164
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -101,3 +103,5 @@ permalink: /kb/176/Q176164/
 	
 	=============================================================================
 	
+
+{% endraw %}

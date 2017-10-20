@@ -6,6 +6,8 @@ permalink: /kb/032/Q32498/
 
 ## Q32498: &quot;No Symbolic Information&quot; Debugging QuickBASIC with CodeView
 
+{% raw %}
+
 	Article: Q32498
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -48,3 +50,5 @@ permalink: /kb/032/Q32498/
 	MS-DOS Version 3.21, the linker gives no error (even though it doesn't
 	support /CO), but CodeView gives you the "No Symbolic Information"
 	error.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126450/
 
 ## Q126450: Lemmings 3: Error 55.53: Unable to Calibrate Timer
 
+{% raw %}
+
 	Article: Q126450
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -67,3 +69,5 @@ permalink: /kb/126/Q126450/
 	
 	=============================================================================
 	
+
+{% endraw %}

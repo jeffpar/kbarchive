@@ -6,6 +6,8 @@ permalink: /kb/131/Q131440/
 
 ## Q131440: Mac Encarta 1995: Fonts Not Installed to Non-Startup Drive
 
+{% raw %}
+
 	Article: Q131440
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -52,3 +54,5 @@ permalink: /kb/131/Q131440/
 	
 	=============================================================================
 	
+
+{% endraw %}

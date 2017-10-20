@@ -6,6 +6,8 @@ permalink: /kb/256/Q256865/
 
 ## Q256865: XFOR: Entire GroupWise Distribution List Listed in the To Box
 
+{% raw %}
+
 	Article: Q256865
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -73,3 +75,5 @@ permalink: /kb/256/Q256865/
 	
 	=============================================================================
 	
+
+{% endraw %}

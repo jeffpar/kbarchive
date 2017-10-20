@@ -6,6 +6,8 @@ permalink: /kb/132/Q132158/
 
 ## Q132158: Third Port Detected with CMD PCI Dual Port IDE Controller
 
+{% raw %}
+
 	Article: Q132158
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/132/Q132158/
 	
 	=============================================================================
 	
+
+{% endraw %}

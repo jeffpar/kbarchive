@@ -6,6 +6,8 @@ permalink: /kb/030/Q30674/
 
 ## Q30674: Hercules SCREEN: PAINT Overspills Window after VIEW and CIRCLE
 
+{% raw %}
+
 	Article: Q30674
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -31,3 +33,5 @@ permalink: /kb/030/Q30674/
 	   CIRCLE (100, 100), 50
 	   'PAINT (95, 95) This correctly gives quarter-disk.
 	   PAINT(96,96) 'Incorrectly gives rectangle
+
+{% endraw %}

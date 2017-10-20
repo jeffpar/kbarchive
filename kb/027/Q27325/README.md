@@ -6,6 +6,8 @@ permalink: /kb/027/Q27325/
 
 ## Q27325: Example Passing Near Numeric Variables between BASIC and C
 
+{% raw %}
+
 	Article: Q27325
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -77,3 +79,5 @@ permalink: /kb/027/Q27325/
 	     LONG     32769
 	     FLOAT    123.311996
 	     DOUBLE   129381.333000
+
+{% endraw %}

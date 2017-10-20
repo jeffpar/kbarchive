@@ -6,6 +6,8 @@ permalink: /kb/249/Q249841/
 
 ## Q249841: INFO: How Win9x DS Client Uses AD Site Information
 
+{% raw %}
+
 	Article: Q249841
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -132,3 +134,5 @@ permalink: /kb/249/Q249841/
 	
 	=============================================================================
 	
+
+{% endraw %}

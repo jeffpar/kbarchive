@@ -6,6 +6,8 @@ permalink: /kb/192/Q192765/
 
 ## Q192765: STOP 0x0000000A on SMP Computers
 
+{% raw %}
+
 	Article: Q192765
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/192/Q192765/
 	
 	=============================================================================
 	
+
+{% endraw %}

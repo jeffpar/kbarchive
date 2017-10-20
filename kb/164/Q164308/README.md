@@ -6,6 +6,8 @@ permalink: /kb/164/Q164308/
 
 ## Q164308: Windows NT 4.0 Clients May Refresh WINS Entries Frequently
 
+{% raw %}
+
 	Article: Q164308
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -86,3 +88,5 @@ permalink: /kb/164/Q164308/
 	
 	=============================================================================
 	
+
+{% endraw %}

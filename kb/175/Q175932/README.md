@@ -6,6 +6,8 @@ permalink: /kb/175/Q175932/
 
 ## Q175932: Could Not Load Ntkrnlmp.exe. The Error Code Is 4
 
+{% raw %}
+
 	Article: Q175932
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -68,3 +70,5 @@ permalink: /kb/175/Q175932/
 	
 	=============================================================================
 	
+
+{% endraw %}

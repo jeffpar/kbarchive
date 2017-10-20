@@ -6,6 +6,8 @@ permalink: /kb/184/Q184417/
 
 ## Q184417: MSN Icon Remains on Taskbar When You Quit MSN Program Viewer
 
+{% raw %}
+
 	Article: Q184417
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -95,3 +97,5 @@ permalink: /kb/184/Q184417/
 	
 	=============================================================================
 	
+
+{% endraw %}

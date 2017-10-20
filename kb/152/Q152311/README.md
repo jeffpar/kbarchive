@@ -6,6 +6,8 @@ permalink: /kb/152/Q152311/
 
 ## Q152311: INF: How to Get Text with Colored Background on HP Color Print
 
+{% raw %}
+
 	Article: Q152311
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -64,3 +66,5 @@ permalink: /kb/152/Q152311/
 	
 	=============================================================================
 	
+
+{% endraw %}

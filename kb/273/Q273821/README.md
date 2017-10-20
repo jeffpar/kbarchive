@@ -6,6 +6,8 @@ permalink: /kb/273/Q273821/
 
 ## Q273821: HOWTO: Programmatically Set Parameter Values for Command Object
 
+{% raw %}
+
 	Article: Q273821
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -96,3 +98,5 @@ permalink: /kb/273/Q273821/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263612/
 
 ## Q263612: PRB: Unable to Add a Performance Counter on Windows 2000
 
+{% raw %}
+
 	Article: Q263612
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/263/Q263612/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/100/Q100776/
 
 ## Q100776: PRB: Using Windows NT PDK Header Files in Visual C++
 
+{% raw %}
+
 	Article: Q100776
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,4.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/100/Q100776/
 	
 	=============================================================================
 	
+
+{% endraw %}

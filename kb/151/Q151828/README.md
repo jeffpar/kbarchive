@@ -6,6 +6,8 @@ permalink: /kb/151/Q151828/
 
 ## Q151828: Automap Streets: Locator Box Missing from Overview Window
 
+{% raw %}
+
 	Article: Q151828
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:4.0
@@ -65,3 +67,5 @@ permalink: /kb/151/Q151828/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/258/Q258251/
 
 ## Q258251: Allegiance: Pointing Device Does Not Function Properly
 
+{% raw %}
+
 	Article: Q258251
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -48,3 +50,5 @@ permalink: /kb/258/Q258251/
 	
 	=============================================================================
 	
+
+{% endraw %}

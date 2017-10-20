@@ -6,6 +6,8 @@ permalink: /kb/138/Q138657/
 
 ## Q138657: PRB: AutoForm and AutoReport Tools on Toolbar Don't Work
 
+{% raw %}
+
 	Article: Q138657
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -76,3 +78,5 @@ permalink: /kb/138/Q138657/
 	
 	=============================================================================
 	
+
+{% endraw %}

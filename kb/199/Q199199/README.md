@@ -6,6 +6,8 @@ permalink: /kb/199/Q199199/
 
 ## Q199199: SMS: Cannot Change the Name of a Program in SMS 2.0
 
+{% raw %}
+
 	Article: Q199199
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -72,3 +74,5 @@ permalink: /kb/199/Q199199/
 	
 	=============================================================================
 	
+
+{% endraw %}

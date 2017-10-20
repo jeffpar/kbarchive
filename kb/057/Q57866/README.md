@@ -6,6 +6,8 @@ permalink: /kb/057/Q57866/
 
 ## Q57866: BASIC PDS 7.00 Supports Short-Circuit Boolean Expressions
 
+{% raw %}
+
 	Article: Q57866
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -116,3 +118,5 @@ permalink: /kb/057/Q57866/
 	   LOCATE 11, 10
 	   PRINT "This compiler does not support short-circuit Booleans"
 	   RESUME terminate     ' End the program.
+
+{% endraw %}

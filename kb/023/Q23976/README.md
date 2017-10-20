@@ -6,6 +6,8 @@ permalink: /kb/023/Q23976/
 
 ## Q23976: Sending Output to a Printer
 
+{% raw %}
+
 	Article: Q23976
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,1.5,5.1,6.0,6.0a,6.0ax; MS-DOS:7.0; winnt:1.0,2.0,4.0
@@ -90,3 +92,5 @@ permalink: /kb/023/Q23976/
 	
 	=============================================================================
 	
+
+{% endraw %}

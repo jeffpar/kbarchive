@@ -6,6 +6,8 @@ permalink: /kb/105/Q105934/
 
 ## Q105934: FORTRAN PowerStation ERRORS.TXT
 
+{% raw %}
+
 	Article: Q105934
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -432,3 +434,5 @@ permalink: /kb/105/Q105934/
 	
 	=============================================================================
 	
+
+{% endraw %}

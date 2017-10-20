@@ -6,6 +6,8 @@ permalink: /kb/143/Q143129/
 
 ## Q143129: Location of Windows NT Server Tools for Windows 95
 
+{% raw %}
+
 	Article: Q143129
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:3.5,3.51; :
@@ -44,3 +46,5 @@ permalink: /kb/143/Q143129/
 	
 	=============================================================================
 	
+
+{% endraw %}

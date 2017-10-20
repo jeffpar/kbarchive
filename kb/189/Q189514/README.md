@@ -6,6 +6,8 @@ permalink: /kb/189/Q189514/
 
 ## Q189514: Multicast Settings Are Not Displayed
 
+{% raw %}
+
 	Article: Q189514
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.52,2.6
@@ -52,3 +54,5 @@ permalink: /kb/189/Q189514/
 	
 	=============================================================================
 	
+
+{% endraw %}

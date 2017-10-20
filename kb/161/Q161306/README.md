@@ -6,6 +6,8 @@ permalink: /kb/161/Q161306/
 
 ## Q161306: INFO: App.LogEvent Only Logs in Compiled Applications
 
+{% raw %}
+
 	Article: Q161306
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -131,3 +133,5 @@ permalink: /kb/161/Q161306/
 	
 	=============================================================================
 	
+
+{% endraw %}

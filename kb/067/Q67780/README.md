@@ -6,6 +6,8 @@ permalink: /kb/067/Q67780/
 
 ## Q67780: BUG: PWB May Record Incorrect Paths for Dependencies in Makefile
 
+{% raw %}
+
 	Article: Q67780
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -73,3 +75,5 @@ permalink: /kb/067/Q67780/
 	
 	=============================================================================
 	
+
+{% endraw %}

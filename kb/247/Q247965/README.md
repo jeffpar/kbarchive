@@ -6,6 +6,8 @@ permalink: /kb/247/Q247965/
 
 ## Q247965: Windows 95 Hangs on Reboot with CardBus Card Installed
 
+{% raw %}
+
 	Article: Q247965
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -84,3 +86,5 @@ permalink: /kb/247/Q247965/
 	
 	=============================================================================
 	
+
+{% endraw %}

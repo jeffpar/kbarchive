@@ -6,6 +6,8 @@ permalink: /kb/142/Q142974/
 
 ## Q142974: Views.exe - One-To-Many Form Using a Parameterized View
 
+{% raw %}
+
 	Article: Q142974
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -61,3 +63,5 @@ permalink: /kb/142/Q142974/
 	
 	=============================================================================
 	
+
+{% endraw %}

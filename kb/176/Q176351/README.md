@@ -6,6 +6,8 @@ permalink: /kb/176/Q176351/
 
 ## Q176351: BUG: Referenced Project Causes &quot;Failed to Reload the Project&quot;
 
+{% raw %}
+
 	Article: Q176351
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/176/Q176351/
 	
 	=============================================================================
 	
+
+{% endraw %}

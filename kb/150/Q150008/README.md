@@ -6,6 +6,8 @@ permalink: /kb/150/Q150008/
 
 ## Q150008: DOS Applications Receive Wrong Error Code in FPNW
 
+{% raw %}
+
 	Article: Q150008
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -58,3 +60,5 @@ permalink: /kb/150/Q150008/
 	
 	=============================================================================
 	
+
+{% endraw %}

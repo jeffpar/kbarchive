@@ -6,6 +6,8 @@ permalink: /kb/299/Q299815/
 
 ## Q299815: Train Simulator: Clicking Cancel Turns Off Keyboard Assignment
 
+{% raw %}
+
 	Article: Q299815
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -44,3 +46,5 @@ permalink: /kb/299/Q299815/
 	
 	=============================================================================
 	
+
+{% endraw %}

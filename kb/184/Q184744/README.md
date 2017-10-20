@@ -6,6 +6,8 @@ permalink: /kb/184/Q184744/
 
 ## Q184744: DHCP Server Leaks Registry Quota on Alpha Version of Windows NT
 
+{% raw %}
+
 	Article: Q184744
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/184/Q184744/
 	
 	=============================================================================
 	
+
+{% endraw %}

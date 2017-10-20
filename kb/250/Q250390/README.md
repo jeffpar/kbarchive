@@ -6,6 +6,8 @@ permalink: /kb/250/Q250390/
 
 ## Q250390: Programs Cannot Print or Access Violations After Applying SP5
 
+{% raw %}
+
 	Article: Q250390
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP5
@@ -120,3 +122,5 @@ permalink: /kb/250/Q250390/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184718/
 
 ## Q184718: XADM: Text Attachments Modified for Internet Mail
 
+{% raw %}
+
 	Article: Q184718
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -90,3 +92,5 @@ permalink: /kb/184/Q184718/
 	
 	=============================================================================
 	
+
+{% endraw %}

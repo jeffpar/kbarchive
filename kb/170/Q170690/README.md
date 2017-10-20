@@ -6,6 +6,8 @@ permalink: /kb/170/Q170690/
 
 ## Q170690: Wire Fault When Configuring Compaq NetFlex-3 NIC
 
+{% raw %}
+
 	Article: Q170690
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -105,3 +107,5 @@ permalink: /kb/170/Q170690/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150680/
 
 ## Q150680: FP: FrontPage Times Out While Trying to Connect to Server
 
+{% raw %}
+
 	Article: Q150680
 	Product(s): Word Front Page
 	Version(s): 1.0,1.1
@@ -81,3 +83,5 @@ permalink: /kb/150/Q150680/
 	
 	=============================================================================
 	
+
+{% endraw %}

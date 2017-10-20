@@ -6,6 +6,8 @@ permalink: /kb/121/Q121349/
 
 ## Q121349: EGA3.CPI File Not Included with MS-DOS 6.22 Upgrade 720K Disks
 
+{% raw %}
+
 	Article: Q121349
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -71,3 +73,5 @@ permalink: /kb/121/Q121349/
 	
 	=============================================================================
 	
+
+{% endraw %}

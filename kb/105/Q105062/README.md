@@ -6,6 +6,8 @@ permalink: /kb/105/Q105062/
 
 ## Q105062: MS-DOS Err Msg with DiscTec: Unrecoverable Disk Error
 
+{% raw %}
+
 	Article: Q105062
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -58,3 +60,5 @@ permalink: /kb/105/Q105062/
 	
 	=============================================================================
 	
+
+{% endraw %}

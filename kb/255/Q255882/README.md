@@ -6,6 +6,8 @@ permalink: /kb/255/Q255882/
 
 ## Q255882: XFOR: Migrating Double-Byte Character Set Messages from cc:Mail
 
+{% raw %}
+
 	Article: Q255882
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -53,3 +55,5 @@ permalink: /kb/255/Q255882/
 	
 	=============================================================================
 	
+
+{% endraw %}

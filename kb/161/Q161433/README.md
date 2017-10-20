@@ -6,6 +6,8 @@ permalink: /kb/161/Q161433/
 
 ## Q161433: Golf 3.0 Low-Res Courses Message When Starting New Game
 
+{% raw %}
+
 	Article: Q161433
 	Product(s): Microsoft Home Games
 	Version(s): 3.0
@@ -78,3 +80,5 @@ permalink: /kb/161/Q161433/
 	
 	=============================================================================
 	
+
+{% endraw %}

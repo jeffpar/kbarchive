@@ -6,6 +6,8 @@ permalink: /kb/232/Q232307/
 
 ## Q232307: XFOR: How to One-off a SNADS Address
 
+{% raw %}
+
 	Article: Q232307
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -55,3 +57,5 @@ permalink: /kb/232/Q232307/
 	
 	=============================================================================
 	
+
+{% endraw %}

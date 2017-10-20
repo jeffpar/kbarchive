@@ -6,6 +6,8 @@ permalink: /kb/143/Q143352/
 
 ## Q143352: FIX: C2988 on Conversion Operator Between Two Template Classes
 
+{% raw %}
+
 	Article: Q143352
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -112,3 +114,5 @@ permalink: /kb/143/Q143352/
 	
 	=============================================================================
 	
+
+{% endraw %}

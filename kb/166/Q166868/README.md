@@ -6,6 +6,8 @@ permalink: /kb/166/Q166868/
 
 ## Q166868: WD97: Properties (Summary Info) Comments in Wrong Format/Missing
 
+{% raw %}
+
 	Article: Q166868
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:6.0,6.0a,6.0c,7.0,7.0a,97
@@ -115,3 +117,5 @@ permalink: /kb/166/Q166868/
 	
 	=============================================================================
 	
+
+{% endraw %}

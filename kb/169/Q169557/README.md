@@ -6,6 +6,8 @@ permalink: /kb/169/Q169557/
 
 ## Q169557: SMS: Remote Chat Session Closes Unexpectedly
 
+{% raw %}
+
 	Article: Q169557
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -48,3 +50,5 @@ permalink: /kb/169/Q169557/
 	
 	=============================================================================
 	
+
+{% endraw %}

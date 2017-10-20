@@ -6,6 +6,8 @@ permalink: /kb/134/Q134790/
 
 ## Q134790: How to Add Code to Wizard-Generated Command Buttons
 
+{% raw %}
+
 	Article: Q134790
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00    | 3.00b
@@ -81,3 +83,5 @@ permalink: /kb/134/Q134790/
 	
 	=============================================================================
 	
+
+{% endraw %}

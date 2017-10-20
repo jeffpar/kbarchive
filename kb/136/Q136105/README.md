@@ -6,6 +6,8 @@ permalink: /kb/136/Q136105/
 
 ## Q136105: No Network Access After First Boot on EISA Computer
 
+{% raw %}
+
 	Article: Q136105
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/136/Q136105/
 	
 	=============================================================================
 	
+
+{% endraw %}

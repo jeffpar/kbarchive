@@ -6,6 +6,8 @@ permalink: /kb/087/Q87274/
 
 ## Q87274: Function of the &#91;RenFiles&#93; Section of SETUP.INF File
 
+{% raw %}
+
 	Article: Q87274
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -82,3 +84,5 @@ permalink: /kb/087/Q87274/
 	
 	=============================================================================
 	
+
+{% endraw %}

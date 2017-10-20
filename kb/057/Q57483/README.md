@@ -6,6 +6,8 @@ permalink: /kb/057/Q57483/
 
 ## Q57483: The Suffix &quot;F&quot; or &quot;f&quot; Causes a Syntax Error for Floats
 
+{% raw %}
+
 	Article: Q57483
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -36,3 +38,5 @@ permalink: /kb/057/Q57483/
 	and "f" are used to force a variable to be a float instead of a
 	double. However, the suffix alone is not enough and the decimal point
 	or "e" notation is required.
+
+{% endraw %}

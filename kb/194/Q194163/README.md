@@ -6,6 +6,8 @@ permalink: /kb/194/Q194163/
 
 ## Q194163: E-mail Sent Using MSN Is Not Delivered
 
+{% raw %}
+
 	Article: Q194163
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -92,3 +94,5 @@ permalink: /kb/194/Q194163/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/271/Q271776/
 
 ## Q271776: HOWTO: Create MSDN Library Shared Install Point on the Network
 
+{% raw %}
+
 	Article: Q271776
 	Product(s): Microsoft Developer Network
 	Version(s): 
@@ -96,3 +98,5 @@ permalink: /kb/271/Q271776/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/289/Q289865/
 
 ## Q289865: XADM: Crash in store!CmcvtrBptExternal&#95;&#95;hrCheckIntlShCut
 
+{% raw %}
+
 	Article: Q289865
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -115,3 +117,5 @@ permalink: /kb/289/Q289865/
 	
 	=============================================================================
 	
+
+{% endraw %}

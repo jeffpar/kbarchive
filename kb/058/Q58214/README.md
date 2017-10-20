@@ -6,6 +6,8 @@ permalink: /kb/058/Q58214/
 
 ## Q58214: Error 53 (&quot;File Not Found&quot;) Using FILES &quot;filespec&quot; Statement
 
+{% raw %}
+
 	Article: Q58214
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -69,3 +71,5 @@ permalink: /kb/058/Q58214/
 	   30 END
 	   999  IF ERR = 53 THEN PRINT "Error 53 was trapped. File not found."
 	   1000 RESUME NEXT
+
+{% endraw %}

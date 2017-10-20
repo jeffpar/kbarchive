@@ -6,6 +6,8 @@ permalink: /kb/313/Q313130/
 
 ## Q313130: HOWTO: Retrieve @@IDENTITY Value Using JDBC
 
+{% raw %}
+
 	Article: Q313130
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 
@@ -207,3 +209,5 @@ permalink: /kb/313/Q313130/
 	
 	=============================================================================
 	
+
+{% endraw %}

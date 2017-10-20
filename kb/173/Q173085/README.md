@@ -6,6 +6,8 @@ permalink: /kb/173/Q173085/
 
 ## Q173085: HOWTO: Create a Process for Reading and Writing to a Pipe
 
+{% raw %}
+
 	Article: Q173085
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -192,3 +194,5 @@ permalink: /kb/173/Q173085/
 	
 	=============================================================================
 	
+
+{% endraw %}

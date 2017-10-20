@@ -6,6 +6,8 @@ permalink: /kb/118/Q118359/
 
 ## Q118359: Mac Srv: Mail Data Files Can Increase in Size Quickly
 
+{% raw %}
+
 	Article: Q118359
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -80,3 +82,5 @@ permalink: /kb/118/Q118359/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197397/
 
 ## Q197397: XFOR: cc:Mail Migration from Command Line May Give False Errors
 
+{% raw %}
+
 	Article: Q197397
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -53,3 +55,5 @@ permalink: /kb/197/Q197397/
 	
 	=============================================================================
 	
+
+{% endraw %}

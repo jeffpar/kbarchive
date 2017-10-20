@@ -6,6 +6,8 @@ permalink: /kb/069/Q69843/
 
 ## Q69843: Windows Err Msgs: Lotus 1-2-3 Version 3.1 and Windows
 
+{% raw %}
+
 	Article: Q69843
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a,3.1,3.11
@@ -130,3 +132,5 @@ permalink: /kb/069/Q69843/
 	
 	=============================================================================
 	
+
+{% endraw %}

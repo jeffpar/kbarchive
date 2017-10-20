@@ -6,6 +6,8 @@ permalink: /kb/137/Q137153/
 
 ## Q137153: Problem Using Mach32 ISA Display Adapter on PCI Bus
 
+{% raw %}
+
 	Article: Q137153
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/137/Q137153/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152436/
 
 ## Q152436: XADM: How to Create Exchange Templates
 
+{% raw %}
+
 	Article: Q152436
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -98,3 +100,5 @@ permalink: /kb/152/Q152436/
 	
 	=============================================================================
 	
+
+{% endraw %}

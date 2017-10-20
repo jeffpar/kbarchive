@@ -6,6 +6,8 @@ permalink: /kb/156/Q156118/
 
 ## Q156118: Marbles Trial Version: Overview, Setup, and Game Tips
 
+{% raw %}
+
 	Article: Q156118
 	Product(s): Microsoft Home Kids Products
 	Version(s): Trial Version
@@ -203,3 +205,5 @@ permalink: /kb/156/Q156118/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141894/
 
 ## Q141894: Cinemania 1996 for the Macintosh System Requirements
 
+{% raw %}
+
 	Article: Q141894
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -58,3 +60,5 @@ permalink: /kb/141/Q141894/
 	
 	=============================================================================
 	
+
+{% endraw %}

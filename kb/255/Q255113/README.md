@@ -6,6 +6,8 @@ permalink: /kb/255/Q255113/
 
 ## Q255113: Roaming Profiles May Not Synchronize Correctly in Windows
 
+{% raw %}
+
 	Article: Q255113
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -69,3 +71,5 @@ permalink: /kb/255/Q255113/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139453/
 
 ## Q139453: NET TIME Does Not Report Correct Remote Time in Windows NT
 
+{% raw %}
+
 	Article: Q139453
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -55,3 +57,5 @@ permalink: /kb/139/Q139453/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122515/
 
 ## Q122515: Notepad ErrMsg Points to Control Panel for Configuring Printer
 
+{% raw %}
+
 	Article: Q122515
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -56,3 +58,5 @@ permalink: /kb/122/Q122515/
 	
 	=============================================================================
 	
+
+{% endraw %}

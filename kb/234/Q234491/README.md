@@ -6,6 +6,8 @@ permalink: /kb/234/Q234491/
 
 ## Q234491: XFOR: Configuring Notes Application Connector as WinNT Service
 
+{% raw %}
+
 	Article: Q234491
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -69,3 +71,5 @@ permalink: /kb/234/Q234491/
 	
 	=============================================================================
 	
+
+{% endraw %}

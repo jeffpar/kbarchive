@@ -6,6 +6,8 @@ permalink: /kb/197/Q197156/
 
 ## Q197156: Cannot Add New Modem or View Existing Modem Properties
 
+{% raw %}
+
 	Article: Q197156
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/197/Q197156/
 	
 	=============================================================================
 	
+
+{% endraw %}

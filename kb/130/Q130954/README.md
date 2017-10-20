@@ -6,6 +6,8 @@ permalink: /kb/130/Q130954/
 
 ## Q130954: BUG: 'Out of String Space' Error Returned by the Access Driver
 
+{% raw %}
+
 	Article: Q130954
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -81,3 +83,5 @@ permalink: /kb/130/Q130954/
 	
 	=============================================================================
 	
+
+{% endraw %}

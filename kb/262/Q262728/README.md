@@ -6,6 +6,8 @@ permalink: /kb/262/Q262728/
 
 ## Q262728: XFOR: Inbody Addressing Doesn't Work aft. Moving SNADS Connector
 
+{% raw %}
+
 	Article: Q262728
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -60,3 +62,5 @@ permalink: /kb/262/Q262728/
 	
 	=============================================================================
 	
+
+{% endraw %}

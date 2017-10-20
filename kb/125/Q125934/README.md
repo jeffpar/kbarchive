@@ -6,6 +6,8 @@ permalink: /kb/125/Q125934/
 
 ## Q125934: PATCH.EXE Fails When Launched by PCMSVC32.EXE
 
+{% raw %}
+
 	Article: Q125934
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -153,3 +155,5 @@ permalink: /kb/125/Q125934/
 	
 	=============================================================================
 	
+
+{% endraw %}

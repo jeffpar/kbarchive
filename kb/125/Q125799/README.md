@@ -6,6 +6,8 @@ permalink: /kb/125/Q125799/
 
 ## Q125799: FIX: C2443 Using Structure Member Operand in _asm Block
 
+{% raw %}
+
 	Article: Q125799
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0,4.1,4.2,5.0
@@ -92,3 +94,5 @@ permalink: /kb/125/Q125799/
 	
 	=============================================================================
 	
+
+{% endraw %}

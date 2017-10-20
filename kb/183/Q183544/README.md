@@ -6,6 +6,8 @@ permalink: /kb/183/Q183544/
 
 ## Q183544: HOWTO: Call CLSID And ProgID Related COM APIs in Visual Basic
 
+{% raw %}
+
 	Article: Q183544
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -196,3 +198,5 @@ permalink: /kb/183/Q183544/
 	
 	=============================================================================
 	
+
+{% endraw %}

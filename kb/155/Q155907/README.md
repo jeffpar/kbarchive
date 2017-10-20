@@ -6,6 +6,8 @@ permalink: /kb/155/Q155907/
 
 ## Q155907: XCLN: Exchange 16-bit Client on SFS Creates Drive Mapping
 
+{% raw %}
+
 	Article: Q155907
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -41,3 +43,5 @@ permalink: /kb/155/Q155907/
 	
 	=============================================================================
 	
+
+{% endraw %}

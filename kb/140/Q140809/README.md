@@ -6,6 +6,8 @@ permalink: /kb/140/Q140809/
 
 ## Q140809: FAQ.HLP Help File: Error in Steps to Deploy Windows 95
 
+{% raw %}
+
 	Article: Q140809
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -49,3 +51,5 @@ permalink: /kb/140/Q140809/
 	
 	=============================================================================
 	
+
+{% endraw %}

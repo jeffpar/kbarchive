@@ -6,6 +6,8 @@ permalink: /kb/183/Q183385/
 
 ## Q183385: WD97: No Insertion Point Deleting Text Box from Header/Footer
 
+{% raw %}
+
 	Article: Q183385
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -51,3 +53,5 @@ permalink: /kb/183/Q183385/
 	
 	=============================================================================
 	
+
+{% endraw %}

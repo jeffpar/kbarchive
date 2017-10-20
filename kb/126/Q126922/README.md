@@ -6,6 +6,8 @@ permalink: /kb/126/Q126922/
 
 ## Q126922: PC Win: Err Msg: Mailbox Name or Password Is Incorrect
 
+{% raw %}
+
 	Article: Q126922
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -73,3 +75,5 @@ permalink: /kb/126/Q126922/
 	
 	=============================================================================
 	
+
+{% endraw %}

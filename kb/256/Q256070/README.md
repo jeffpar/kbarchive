@@ -6,6 +6,8 @@ permalink: /kb/256/Q256070/
 
 ## Q256070: Deciding Whether to Upgrade from Windows 95/98 to Windows 2000
 
+{% raw %}
+
 	Article: Q256070
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000
@@ -158,3 +160,5 @@ permalink: /kb/256/Q256070/
 	
 	=============================================================================
 	
+
+{% endraw %}

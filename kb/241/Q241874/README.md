@@ -6,6 +6,8 @@ permalink: /kb/241/Q241874/
 
 ## Q241874: XCON: MIXER is Triggered Only for Transiting Mail
 
+{% raw %}
+
 	Article: Q241874
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -53,3 +55,5 @@ permalink: /kb/241/Q241874/
 	
 	=============================================================================
 	
+
+{% endraw %}

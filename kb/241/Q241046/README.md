@@ -6,6 +6,8 @@ permalink: /kb/241/Q241046/
 
 ## Q241046: Cannot Create a Memory.dmp File on Computers with over 4 GB RAM
 
+{% raw %}
+
 	Article: Q241046
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -72,3 +74,5 @@ permalink: /kb/241/Q241046/
 	
 	=============================================================================
 	
+
+{% endraw %}

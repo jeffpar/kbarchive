@@ -6,6 +6,8 @@ permalink: /kb/027/Q27087/
 
 ## Q27087: File: Paste Command Is Dimmed After a Copy
 
+{% raw %}
+
 	Article: Q27087
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/027/Q27087/
 	
 	=============================================================================
 	
+
+{% endraw %}

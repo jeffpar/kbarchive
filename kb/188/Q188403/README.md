@@ -6,6 +6,8 @@ permalink: /kb/188/Q188403/
 
 ## Q188403: HOWTO: Modify Report Fields Programmatically
 
+{% raw %}
+
 	Article: Q188403
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a
@@ -142,3 +144,5 @@ permalink: /kb/188/Q188403/
 	
 	=============================================================================
 	
+
+{% endraw %}

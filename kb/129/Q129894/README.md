@@ -6,6 +6,8 @@ permalink: /kb/129/Q129894/
 
 ## Q129894: PRB: Can't Get Tabstrip Control to Support Hot-Key Activation
 
+{% raw %}
+
 	Article: Q129894
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -92,3 +94,5 @@ permalink: /kb/129/Q129894/
 	
 	=============================================================================
 	
+
+{% endraw %}

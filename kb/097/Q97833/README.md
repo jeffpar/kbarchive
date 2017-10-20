@@ -6,6 +6,8 @@ permalink: /kb/097/Q97833/
 
 ## Q97833: Restoring Previous Version of MS-DOS After Uninstall Fails
 
+{% raw %}
+
 	Article: Q97833
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -143,3 +145,5 @@ permalink: /kb/097/Q97833/
 	
 	=============================================================================
 	
+
+{% endraw %}

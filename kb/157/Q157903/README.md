@@ -6,6 +6,8 @@ permalink: /kb/157/Q157903/
 
 ## Q157903: FIX: Changes Lost When Changing Variable During Debugging
 
+{% raw %}
+
 	Article: Q157903
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.2
@@ -80,3 +82,5 @@ permalink: /kb/157/Q157903/
 	
 	=============================================================================
 	
+
+{% endraw %}

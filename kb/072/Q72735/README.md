@@ -6,6 +6,8 @@ permalink: /kb/072/Q72735/
 
 ## Q72735: Loading SMARTDRV.SYS High with Adaptec Controller Hangs System
 
+{% raw %}
+
 	Article: Q72735
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:
@@ -44,3 +46,5 @@ permalink: /kb/072/Q72735/
 	
 	=============================================================================
 	
+
+{% endraw %}

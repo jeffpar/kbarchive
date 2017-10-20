@@ -6,6 +6,8 @@ permalink: /kb/271/Q271374/
 
 ## Q271374: Windows NT 4.0 SP6 Clients Contact the PDC Every 21 Minutes
 
+{% raw %}
+
 	Article: Q271374
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6,4.0 SP6a
@@ -111,3 +113,5 @@ permalink: /kb/271/Q271374/
 	
 	=============================================================================
 	
+
+{% endraw %}

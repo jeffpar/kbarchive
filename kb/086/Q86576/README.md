@@ -6,6 +6,8 @@ permalink: /kb/086/Q86576/
 
 ## Q86576: The Number Nine Graphics Card and Windows 3.1
 
+{% raw %}
+
 	Article: Q86576
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11,95
@@ -61,3 +63,5 @@ permalink: /kb/086/Q86576/
 	
 	=============================================================================
 	
+
+{% endraw %}

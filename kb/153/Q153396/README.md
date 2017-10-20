@@ -6,6 +6,8 @@ permalink: /kb/153/Q153396/
 
 ## Q153396: SMS Administrator Unable to Display Properties of Two NICs
 
+{% raw %}
+
 	Article: Q153396
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -62,3 +64,5 @@ permalink: /kb/153/Q153396/
 	
 	=============================================================================
 	
+
+{% endraw %}

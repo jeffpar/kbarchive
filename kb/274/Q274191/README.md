@@ -6,6 +6,8 @@ permalink: /kb/274/Q274191/
 
 ## Q274191: Router Service Hangs When Removing the Last OSPF NBMA Neighbor
 
+{% raw %}
+
 	Article: Q274191
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -79,3 +81,5 @@ permalink: /kb/274/Q274191/
 	
 	=============================================================================
 	
+
+{% endraw %}

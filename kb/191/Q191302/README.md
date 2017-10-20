@@ -6,6 +6,8 @@ permalink: /kb/191/Q191302/
 
 ## Q191302: SMS: Rservice.exe Does Not List Total Failures Correctly
 
+{% raw %}
+
 	Article: Q191302
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -52,3 +54,5 @@ permalink: /kb/191/Q191302/
 	
 	=============================================================================
 	
+
+{% endraw %}

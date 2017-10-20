@@ -6,6 +6,8 @@ permalink: /kb/154/Q154077/
 
 ## Q154077: Windows NT 4.0 Explorer Displays Incorrect File Size
 
+{% raw %}
+
 	Article: Q154077
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -54,3 +56,5 @@ permalink: /kb/154/Q154077/
 	
 	=============================================================================
 	
+
+{% endraw %}

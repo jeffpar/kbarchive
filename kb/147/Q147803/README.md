@@ -6,6 +6,8 @@ permalink: /kb/147/Q147803/
 
 ## Q147803: HOWTO: Dynamically Create Excel 5.0 Charts in OLE 2.0 Control
 
+{% raw %}
+
 	Article: Q147803
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -358,3 +360,5 @@ permalink: /kb/147/Q147803/
 	
 	=============================================================================
 	
+
+{% endraw %}

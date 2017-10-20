@@ -6,6 +6,8 @@ permalink: /kb/304/Q304634/
 
 ## Q304634: SMS: How to Set SQL Server 7.0 Compatibility Levels for SMS 2.0
 
+{% raw %}
+
 	Article: Q304634
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -70,3 +72,5 @@ permalink: /kb/304/Q304634/
 	
 	=============================================================================
 	
+
+{% endraw %}

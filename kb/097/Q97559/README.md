@@ -6,6 +6,8 @@ permalink: /kb/097/Q97559/
 
 ## Q97559: How Remote Access Service Processes Datagram Traffic
 
+{% raw %}
+
 	Article: Q97559
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -227,3 +229,5 @@ permalink: /kb/097/Q97559/
 	
 	=============================================================================
 	
+
+{% endraw %}

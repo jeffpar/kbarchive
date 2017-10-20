@@ -6,6 +6,8 @@ permalink: /kb/146/Q146458/
 
 ## Q146458: XCLN: Cannot Drag Messages to a Window on Taskbar
 
+{% raw %}
+
 	Article: Q146458
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -61,3 +63,5 @@ permalink: /kb/146/Q146458/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177372/
 
 ## Q177372: HOWTO: Obtain Physical &amp; Virtual Memory with API Function Call
 
+{% raw %}
+
 	Article: Q177372
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -171,3 +173,5 @@ permalink: /kb/177/Q177372/
 	
 	=============================================================================
 	
+
+{% endraw %}

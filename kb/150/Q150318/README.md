@@ -6,6 +6,8 @@ permalink: /kb/150/Q150318/
 
 ## Q150318: Bookshelf '96-'97: Maximizing Or Moving Window Causes Hang
 
+{% raw %}
+
 	Article: Q150318
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -65,3 +67,5 @@ permalink: /kb/150/Q150318/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172644/
 
 ## Q172644: SNA Manager User Name Column Does Not Sort Alphabetically
 
+{% raw %}
+
 	Article: Q172644
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -62,3 +64,5 @@ permalink: /kb/172/Q172644/
 	
 	=============================================================================
 	
+
+{% endraw %}

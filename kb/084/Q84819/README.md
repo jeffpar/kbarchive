@@ -6,6 +6,8 @@ permalink: /kb/084/Q84819/
 
 ## Q84819: GP Fault in Solitaire with SizeIt Application
 
+{% raw %}
+
 	Article: Q84819
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/084/Q84819/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156697/
 
 ## Q156697: How to Update Permissions for User Profiles
 
+{% raw %}
+
 	Article: Q156697
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -122,3 +124,5 @@ permalink: /kb/156/Q156697/
 	
 	=============================================================================
 	
+
+{% endraw %}

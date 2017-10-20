@@ -6,6 +6,8 @@ permalink: /kb/152/Q152195/
 
 ## Q152195: Shortcut Keys Do Not Select Microsoft Word
 
+{% raw %}
+
 	Article: Q152195
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -51,3 +53,5 @@ permalink: /kb/152/Q152195/
 	
 	=============================================================================
 	
+
+{% endraw %}

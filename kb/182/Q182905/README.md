@@ -6,6 +6,8 @@ permalink: /kb/182/Q182905/
 
 ## Q182905: XADM: How to Add Members to Distribution List Using CSV File
 
+{% raw %}
+
 	Article: Q182905
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/182/Q182905/
 	
 	=============================================================================
 	
+
+{% endraw %}

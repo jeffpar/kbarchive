@@ -6,6 +6,8 @@ permalink: /kb/242/Q242516/
 
 ## Q242516: Age of Empires II: Screen Turns Black After Opening Movie
 
+{% raw %}
+
 	Article: Q242516
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0; :
@@ -90,3 +92,5 @@ permalink: /kb/242/Q242516/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156402/
 
 ## Q156402: SMS: PCM Looks in Wrong Path for Default Distribution Server
 
+{% raw %}
+
 	Article: Q156402
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -72,3 +74,5 @@ permalink: /kb/156/Q156402/
 	
 	=============================================================================
 	
+
+{% endraw %}

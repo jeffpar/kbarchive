@@ -6,6 +6,8 @@ permalink: /kb/194/Q194066/
 
 ## Q194066: Multimedia: Excessive Processor Usage When Programs Are Running
 
+{% raw %}
+
 	Article: Q194066
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/194/Q194066/
 	
 	=============================================================================
 	
+
+{% endraw %}

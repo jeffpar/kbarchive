@@ -6,6 +6,8 @@ permalink: /kb/259/Q259089/
 
 ## Q259089: Allegiance: Unable to Find a Private Allegiance Server LAN Game
 
+{% raw %}
+
 	Article: Q259089
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -129,3 +131,5 @@ permalink: /kb/259/Q259089/
 	
 	=============================================================================
 	
+
+{% endraw %}

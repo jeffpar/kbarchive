@@ -6,6 +6,8 @@ permalink: /kb/080/Q80887/
 
 ## Q80887: Chgaccl.exe Switches Between Accelerator Tables in App
 
+{% raw %}
+
 	Article: Q80887
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -75,3 +77,5 @@ permalink: /kb/080/Q80887/
 	
 	=============================================================================
 	
+
+{% endraw %}

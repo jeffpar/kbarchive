@@ -6,6 +6,8 @@ permalink: /kb/299/Q299360/
 
 ## Q299360: FP: Include Component, Shared Borders Incorrect on UNIX
 
+{% raw %}
+
 	Article: Q299360
 	Product(s): Word Front Page
 	Version(s): 
@@ -147,3 +149,5 @@ permalink: /kb/299/Q299360/
 	
 	=============================================================================
 	
+
+{% endraw %}

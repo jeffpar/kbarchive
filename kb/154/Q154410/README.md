@@ -6,6 +6,8 @@ permalink: /kb/154/Q154410/
 
 ## Q154410: New WINS Registry Entries In Windows NT 4.0
 
+{% raw %}
+
 	Article: Q154410
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -123,3 +125,5 @@ permalink: /kb/154/Q154410/
 	
 	=============================================================================
 	
+
+{% endraw %}

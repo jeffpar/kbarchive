@@ -6,6 +6,8 @@ permalink: /kb/217/Q217199/
 
 ## Q217199: Static WINS Entries Cause the Network Name to Go Offline
 
+{% raw %}
+
 	Article: Q217199
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -72,3 +74,5 @@ permalink: /kb/217/Q217199/
 	
 	=============================================================================
 	
+
+{% endraw %}

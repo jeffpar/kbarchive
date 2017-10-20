@@ -6,6 +6,8 @@ permalink: /kb/134/Q134711/
 
 ## Q134711: X-Tree Gold for Windows 4.0 Produces GP Fault
 
+{% raw %}
+
 	Article: Q134711
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -57,3 +59,5 @@ permalink: /kb/134/Q134711/
 	
 	=============================================================================
 	
+
+{% endraw %}

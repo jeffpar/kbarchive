@@ -6,6 +6,8 @@ permalink: /kb/145/Q145955/
 
 ## Q145955: Overlapping Appointments Cause Synchronization Error
 
+{% raw %}
+
 	Article: Q145955
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -66,3 +68,5 @@ permalink: /kb/145/Q145955/
 	
 	=============================================================================
 	
+
+{% endraw %}

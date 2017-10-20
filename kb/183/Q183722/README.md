@@ -6,6 +6,8 @@ permalink: /kb/183/Q183722/
 
 ## Q183722: Password Synchronization and Local User Accounts Information
 
+{% raw %}
+
 	Article: Q183722
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -39,3 +41,5 @@ permalink: /kb/183/Q183722/
 	
 	=============================================================================
 	
+
+{% endraw %}

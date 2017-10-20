@@ -6,6 +6,8 @@ permalink: /kb/136/Q136009/
 
 ## Q136009: PC NTMMTA: Err Msg: ...Invalid Service Account &#91;1057&#93;
 
+{% raw %}
+
 	Article: Q136009
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -54,3 +56,5 @@ permalink: /kb/136/Q136009/
 	
 	=============================================================================
 	
+
+{% endraw %}

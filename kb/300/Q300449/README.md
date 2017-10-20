@@ -6,6 +6,8 @@ permalink: /kb/300/Q300449/
 
 ## Q300449: FP: Form Fields Aren't Reset When You Go Back to the Form
 
+{% raw %}
+
 	Article: Q300449
 	Product(s): Word Front Page
 	Version(s): 
@@ -116,3 +118,5 @@ permalink: /kb/300/Q300449/
 	
 	=============================================================================
 	
+
+{% endraw %}

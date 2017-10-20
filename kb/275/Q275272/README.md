@@ -6,6 +6,8 @@ permalink: /kb/275/Q275272/
 
 ## Q275272: XFOR: Event 56106 Occurs When Using SNADS or PROFS Connectors
 
+{% raw %}
+
 	Article: Q275272
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP3
@@ -82,3 +84,5 @@ permalink: /kb/275/Q275272/
 	
 	=============================================================================
 	
+
+{% endraw %}

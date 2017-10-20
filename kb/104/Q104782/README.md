@@ -6,6 +6,8 @@ permalink: /kb/104/Q104782/
 
 ## Q104782: MS-DOS 6.2 MEM Displays Invalid Numbers with Qemm 7.01
 
+{% raw %}
+
 	Article: Q104782
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -62,3 +64,5 @@ permalink: /kb/104/Q104782/
 	
 	=============================================================================
 	
+
+{% endraw %}

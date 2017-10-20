@@ -6,6 +6,8 @@ permalink: /kb/149/Q149411/
 
 ## Q149411: Using Append.exe with Windows 95
 
+{% raw %}
+
 	Article: Q149411
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -57,3 +59,5 @@ permalink: /kb/149/Q149411/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82136/
 
 ## Q82136: Troubleshooting Communications Under Windows 3.0
 
+{% raw %}
+
 	Article: Q82136
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -143,3 +145,5 @@ permalink: /kb/082/Q82136/
 	
 	=============================================================================
 	
+
+{% endraw %}

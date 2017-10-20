@@ -6,6 +6,8 @@ permalink: /kb/158/Q158742/
 
 ## Q158742: Cannot Open Halmps.dll
 
+{% raw %}
+
 	Article: Q158742
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -67,3 +69,5 @@ permalink: /kb/158/Q158742/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183210/
 
 ## Q183210: PRB: Flicker in ATL Controls When Resized
 
+{% raw %}
+
 	Article: Q183210
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,3.0,4.2,5.0,6.0
@@ -51,7 +53,7 @@ permalink: /kb/183/Q183210/
 	
 	  static CWndClassInfo& GetWndClassInfo()
 	  {
-	     static CWndClassInfo wc = { { sizeof(WNDCLASSEX), 0, StartWindowProc,
+	     static CWndClassInfo wc = {{ sizeof(WNDCLASSEX), 0, StartWindowProc,
 	     0, 0, 0, 0, 0, (HBRUSH)(COLOR_WINDOW+1), 0, "MyControlClass", 0 },
 	     NULL, NULL, IDC_ARROW, TRUE, 0, _T("")};
 	     return wc;
@@ -79,3 +81,5 @@ permalink: /kb/183/Q183210/
 	
 	=============================================================================
 	
+
+{% endraw %}

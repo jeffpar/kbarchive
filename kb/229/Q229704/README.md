@@ -6,6 +6,8 @@ permalink: /kb/229/Q229704/
 
 ## Q229704: IIS 4.0 Supports HTTP 1.1 File Download Resume Capability
 
+{% raw %}
+
 	Article: Q229704
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/229/Q229704/
 	
 	=============================================================================
 	
+
+{% endraw %}

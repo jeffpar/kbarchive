@@ -6,6 +6,8 @@ permalink: /kb/192/Q192497/
 
 ## Q192497: SMS: Custom MIF Has Incorrect Format or Illegal Values for Time
 
+{% raw %}
+
 	Article: Q192497
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -73,3 +75,5 @@ permalink: /kb/192/Q192497/
 	
 	=============================================================================
 	
+
+{% endraw %}

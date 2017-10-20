@@ -6,6 +6,8 @@ permalink: /kb/244/Q244039/
 
 ## Q244039: 3270 Applet Does Not Support Multiple Connected Sessions
 
+{% raw %}
+
 	Article: Q244039
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,3.0 U.S. SP1,3.0 U.S. SP2,4.0,4.0 SP1,4.0 S
@@ -52,3 +54,5 @@ permalink: /kb/244/Q244039/
 	
 	=============================================================================
 	
+
+{% endraw %}

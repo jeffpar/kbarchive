@@ -6,6 +6,8 @@ permalink: /kb/131/Q131615/
 
 ## Q131615: Windows NT Backup Does Not Support Special-Character Filenames
 
+{% raw %}
+
 	Article: Q131615
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/131/Q131615/
 	
 	=============================================================================
 	
+
+{% endraw %}

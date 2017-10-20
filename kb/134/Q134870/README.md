@@ -6,6 +6,8 @@ permalink: /kb/134/Q134870/
 
 ## Q134870: PPT7: Illegal Operation Error Saving File as PowerPoint 4.0
 
+{% raw %}
+
 	Article: Q134870
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -64,3 +66,5 @@ permalink: /kb/134/Q134870/
 	
 	=============================================================================
 	
+
+{% endraw %}

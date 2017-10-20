@@ -6,6 +6,8 @@ permalink: /kb/086/Q86001/
 
 ## Q86001: PC Win: Horizontal Scroll Bar Blocks Bottom Line
 
+{% raw %}
+
 	Article: Q86001
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -41,3 +43,5 @@ permalink: /kb/086/Q86001/
 	
 	=============================================================================
 	
+
+{% endraw %}

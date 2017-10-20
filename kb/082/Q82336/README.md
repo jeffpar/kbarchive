@@ -6,6 +6,8 @@ permalink: /kb/082/Q82336/
 
 ## Q82336: Windows 3.1: Okidata OL-400/800 Font Cards Not Supported
 
+{% raw %}
+
 	Article: Q82336
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -39,3 +41,5 @@ permalink: /kb/082/Q82336/
 	
 	=============================================================================
 	
+
+{% endraw %}

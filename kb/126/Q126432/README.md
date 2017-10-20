@@ -6,6 +6,8 @@ permalink: /kb/126/Q126432/
 
 ## Q126432: SNA Server Windows Client Memory Tuning
 
+{% raw %}
+
 	Article: Q126432
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -119,3 +121,5 @@ permalink: /kb/126/Q126432/
 	
 	=============================================================================
 	
+
+{% endraw %}

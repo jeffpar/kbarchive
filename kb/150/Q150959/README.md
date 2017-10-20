@@ -6,6 +6,8 @@ permalink: /kb/150/Q150959/
 
 ## Q150959: Preventing Repeated APPC Session Activation Failures Event 18
 
+{% raw %}
+
 	Article: Q150959
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -77,3 +79,5 @@ permalink: /kb/150/Q150959/
 	
 	=============================================================================
 	
+
+{% endraw %}

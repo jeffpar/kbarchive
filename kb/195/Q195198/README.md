@@ -6,6 +6,8 @@ permalink: /kb/195/Q195198/
 
 ## Q195198: WD97: How to Create an F4/F7 Hanging Indent Paragraph
 
+{% raw %}
+
 	Article: Q195198
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -139,3 +141,5 @@ permalink: /kb/195/Q195198/
 	
 	=============================================================================
 	
+
+{% endraw %}

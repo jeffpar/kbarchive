@@ -6,6 +6,8 @@ permalink: /kb/250/Q250837/
 
 ## Q250837: AOE: Age Of Empires Update Is Available
 
+{% raw %}
+
 	Article: Q250837
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -139,3 +141,5 @@ permalink: /kb/250/Q250837/
 	
 	=============================================================================
 	
+
+{% endraw %}

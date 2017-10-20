@@ -6,6 +6,8 @@ permalink: /kb/161/Q161634/
 
 ## Q161634: INF: Connection Pooling Requires Same Henv and Driver
 
+{% raw %}
+
 	Article: Q161634
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.0
@@ -69,3 +71,5 @@ permalink: /kb/161/Q161634/
 	
 	=============================================================================
 	
+
+{% endraw %}

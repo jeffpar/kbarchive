@@ -6,6 +6,8 @@ permalink: /kb/075/Q75095/
 
 ## Q75095: CLS Does Not Clear Screen on AT&amp;T 6300
 
+{% raw %}
+
 	Article: Q75095
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -83,3 +85,5 @@ permalink: /kb/075/Q75095/
 	
 	=============================================================================
 	
+
+{% endraw %}

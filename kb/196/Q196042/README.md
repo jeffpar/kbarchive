@@ -6,6 +6,8 @@ permalink: /kb/196/Q196042/
 
 ## Q196042: WD97: Can't Insert Address with Netscape Communicator Installed
 
+{% raw %}
+
 	Article: Q196042
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/196/Q196042/
 	
 	=============================================================================
 	
+
+{% endraw %}

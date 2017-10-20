@@ -6,6 +6,8 @@ permalink: /kb/166/Q166603/
 
 ## Q166603: XFOR: Messages Rejected by X400 System
 
+{% raw %}
+
 	Article: Q166603
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -71,3 +73,5 @@ permalink: /kb/166/Q166603/
 	
 	=============================================================================
 	
+
+{% endraw %}

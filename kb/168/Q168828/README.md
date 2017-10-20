@@ -6,6 +6,8 @@ permalink: /kb/168/Q168828/
 
 ## Q168828: PRB: Gauge Control Fill Area Flickers
 
+{% raw %}
+
 	Article: Q168828
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -80,3 +82,5 @@ permalink: /kb/168/Q168828/
 	
 	=============================================================================
 	
+
+{% endraw %}

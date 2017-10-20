@@ -6,6 +6,8 @@ permalink: /kb/240/Q240026/
 
 ## Q240026: Problems with &quot;Run Only Allowed Windows Applications&quot; Policy
 
+{% raw %}
+
 	Article: Q240026
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; Win2000:95
@@ -136,3 +138,5 @@ permalink: /kb/240/Q240026/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87032/
 
 ## Q87032: SMTP: Admin Options to Be Configured
 
+{% raw %}
+
 	Article: Q87032
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -47,3 +49,5 @@ permalink: /kb/087/Q87032/
 	
 	=============================================================================
 	
+
+{% endraw %}

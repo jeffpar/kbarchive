@@ -6,6 +6,8 @@ permalink: /kb/077/Q77260/
 
 ## Q77260: Mixed FORTRAN/C with OS/2 DLLs: Example, Restrictions
 
+{% raw %}
+
 	Article: Q77260
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.1
@@ -184,3 +186,5 @@ permalink: /kb/077/Q77260/
 	
 	=============================================================================
 	
+
+{% endraw %}

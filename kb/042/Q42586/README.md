@@ -6,6 +6,8 @@ permalink: /kb/042/Q42586/
 
 ## Q42586: Variable with Periods in COMMON Block Can Cause Problems
 
+{% raw %}
+
 	Article: Q42586
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -78,3 +80,5 @@ permalink: /kb/042/Q42586/
 	
 	PRINT UBOUND(c), c(3)
 	END
+
+{% endraw %}

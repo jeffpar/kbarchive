@@ -6,6 +6,8 @@ permalink: /kb/171/Q171675/
 
 ## Q171675: FP: Socket Code 13101 Error Opening, Creating New Web
 
+{% raw %}
+
 	Article: Q171675
 	Product(s): Word Front Page
 	Version(s): 1.0,6.0
@@ -127,3 +129,5 @@ permalink: /kb/171/Q171675/
 	
 	=============================================================================
 	
+
+{% endraw %}

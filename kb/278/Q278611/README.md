@@ -6,6 +6,8 @@ permalink: /kb/278/Q278611/
 
 ## Q278611: PRB: Sheridan Command Button Click Event Raised in WhatsThisMode
 
+{% raw %}
+
 	Article: Q278611
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -107,3 +109,5 @@ permalink: /kb/278/Q278611/
 	
 	=============================================================================
 	
+
+{% endraw %}

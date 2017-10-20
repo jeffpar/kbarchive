@@ -6,6 +6,8 @@ permalink: /kb/297/Q297112/
 
 ## Q297112: BUG: VB Compiler Pads Embedded Resources with NULLs
 
+{% raw %}
+
 	Article: Q297112
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -134,3 +136,5 @@ permalink: /kb/297/Q297112/
 	
 	=============================================================================
 	
+
+{% endraw %}

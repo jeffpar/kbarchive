@@ -6,6 +6,8 @@ permalink: /kb/112/Q112173/
 
 ## Q112173: PC WSPlus: Drag &amp; Drop Schedule+ Reassigns Appointment Times
 
+{% raw %}
+
 	Article: Q112173
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -56,3 +58,5 @@ permalink: /kb/112/Q112173/
 	
 	=============================================================================
 	
+
+{% endraw %}

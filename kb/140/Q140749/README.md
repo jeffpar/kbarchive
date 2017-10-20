@@ -6,6 +6,8 @@ permalink: /kb/140/Q140749/
 
 ## Q140749: Error Message: Error Starting Comctl32.dll
 
+{% raw %}
+
 	Article: Q140749
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -154,3 +156,5 @@ permalink: /kb/140/Q140749/
 	
 	=============================================================================
 	
+
+{% endraw %}

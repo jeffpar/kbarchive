@@ -6,6 +6,8 @@ permalink: /kb/140/Q140554/
 
 ## Q140554: SNA Server Pool Limit Extended to 10,000.
 
+{% raw %}
+
 	Article: Q140554
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -49,3 +51,5 @@ permalink: /kb/140/Q140554/
 	
 	=============================================================================
 	
+
+{% endraw %}

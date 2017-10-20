@@ -6,6 +6,8 @@ permalink: /kb/185/Q185707/
 
 ## Q185707: Allow Assignment of an LU to a User and Workstation
 
+{% raw %}
+
 	Article: Q185707
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -78,3 +80,5 @@ permalink: /kb/185/Q185707/
 	
 	=============================================================================
 	
+
+{% endraw %}

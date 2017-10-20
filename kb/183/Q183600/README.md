@@ -6,6 +6,8 @@ permalink: /kb/183/Q183600/
 
 ## Q183600: AOE Err Msg: DirectX 5.0 Is Required to Run This Game
 
+{% raw %}
+
 	Article: Q183600
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -67,3 +69,5 @@ permalink: /kb/183/Q183600/
 	
 	=============================================================================
 	
+
+{% endraw %}

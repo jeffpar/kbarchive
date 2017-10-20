@@ -6,6 +6,8 @@ permalink: /kb/155/Q155856/
 
 ## Q155856: PRB: Stored Procedure PRINT Output May Be Truncated
 
+{% raw %}
+
 	Article: Q155856
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -74,3 +76,5 @@ permalink: /kb/155/Q155856/
 	
 	=============================================================================
 	
+
+{% endraw %}

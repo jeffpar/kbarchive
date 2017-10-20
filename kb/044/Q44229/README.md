@@ -6,6 +6,8 @@ permalink: /kb/044/Q44229/
 
 ## Q44229: PRINT Statements in Manual Okay without Semicolons
 
+{% raw %}
+
 	Article: Q44229
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -33,3 +35,5 @@ permalink: /kb/044/Q44229/
 	
 	This is not a documentation error, but rather demonstrates some of the
 	syntax versatility of Microsoft BASIC languages.
+
+{% endraw %}

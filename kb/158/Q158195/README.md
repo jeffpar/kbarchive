@@ -6,6 +6,8 @@ permalink: /kb/158/Q158195/
 
 ## Q158195: Time Zone Editor Available on OEM Service Release 2 CD-ROM
 
+{% raw %}
+
 	Article: Q158195
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -120,3 +122,5 @@ permalink: /kb/158/Q158195/
 	
 	=============================================================================
 	
+
+{% endraw %}

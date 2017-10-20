@@ -6,6 +6,8 @@ permalink: /kb/050/Q50741/
 
 ## Q50741: Failure to Load Resources When All File Handles Are Used
 
+{% raw %}
+
 	Article: Q50741
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -54,3 +56,5 @@ permalink: /kb/050/Q50741/
 	
 	=============================================================================
 	
+
+{% endraw %}

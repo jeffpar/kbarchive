@@ -6,6 +6,8 @@ permalink: /kb/113/Q113101/
 
 ## Q113101: Bookshelf: QuickShelf Toolbar Overlaps Last Setup Screen
 
+{% raw %}
+
 	Article: Q113101
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -39,3 +41,5 @@ permalink: /kb/113/Q113101/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161491/
 
 ## Q161491: XCLN: Mac Screen Shot Attachment Won't Open on Windows Client
 
+{% raw %}
+
 	Article: Q161491
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -108,3 +110,5 @@ permalink: /kb/161/Q161491/
 	
 	=============================================================================
 	
+
+{% endraw %}

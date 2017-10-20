@@ -6,6 +6,8 @@ permalink: /kb/118/Q118301/
 
 ## Q118301: Online Help Incorrectly Refers to &quot;Creator File Types&quot;
 
+{% raw %}
+
 	Article: Q118301
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c
@@ -54,3 +56,5 @@ permalink: /kb/118/Q118301/
 	
 	=============================================================================
 	
+
+{% endraw %}

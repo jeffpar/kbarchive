@@ -6,6 +6,8 @@ permalink: /kb/100/Q100941/
 
 ## Q100941: How Setup Determines Where to Place SETVER.EXE in CONFIG.SYS
 
+{% raw %}
+
 	Article: Q100941
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -49,3 +51,5 @@ permalink: /kb/100/Q100941/
 	
 	=============================================================================
 	
+
+{% endraw %}

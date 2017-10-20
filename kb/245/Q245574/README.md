@@ -6,6 +6,8 @@ permalink: /kb/245/Q245574/
 
 ## Q245574: HOWTO: Configure REMOTE_HOST to Perform Reverse DNS Lookup IIS
 
+{% raw %}
+
 	Article: Q245574
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -153,3 +155,5 @@ permalink: /kb/245/Q245574/
 	
 	=============================================================================
 	
+
+{% endraw %}

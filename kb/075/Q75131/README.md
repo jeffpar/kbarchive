@@ -6,6 +6,8 @@ permalink: /kb/075/Q75131/
 
 ## Q75131: Standard Floppy Disk Formats Supported by MS-DOS
 
+{% raw %}
+
 	Article: Q75131
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:1.x,2.x,3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -193,3 +195,5 @@ permalink: /kb/075/Q75131/
 	
 	=============================================================================
 	
+
+{% endraw %}

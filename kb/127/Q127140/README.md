@@ -6,6 +6,8 @@ permalink: /kb/127/Q127140/
 
 ## Q127140: Hardware Detection Hangs with Relialogic SCSI Card Installed
 
+{% raw %}
+
 	Article: Q127140
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/127/Q127140/
 	
 	=============================================================================
 	
+
+{% endraw %}

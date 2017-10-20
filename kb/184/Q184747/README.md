@@ -6,6 +6,8 @@ permalink: /kb/184/Q184747/
 
 ## Q184747: INFO: Event Logging in Visual Basic
 
+{% raw %}
+
 	Article: Q184747
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -122,3 +124,5 @@ permalink: /kb/184/Q184747/
 	
 	=============================================================================
 	
+
+{% endraw %}

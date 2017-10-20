@@ -6,6 +6,8 @@ permalink: /kb/142/Q142202/
 
 ## Q142202: HOWTO: Create a Progress Bar on the Status Bar
 
+{% raw %}
+
 	Article: Q142202
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,5.0,6.0
@@ -81,3 +83,5 @@ permalink: /kb/142/Q142202/
 	
 	=============================================================================
 	
+
+{% endraw %}

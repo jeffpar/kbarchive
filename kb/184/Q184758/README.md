@@ -6,6 +6,8 @@ permalink: /kb/184/Q184758/
 
 ## Q184758: STOP 0x78 When NonPagedPoolSize &gt; 7/8 of Physical Memory
 
+{% raw %}
+
 	Article: Q184758
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -88,3 +90,5 @@ permalink: /kb/184/Q184758/
 	
 	=============================================================================
 	
+
+{% endraw %}

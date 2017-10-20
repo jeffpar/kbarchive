@@ -6,6 +6,8 @@ permalink: /kb/123/Q123878/
 
 ## Q123878: Orphan Machine Inventory, Ghost Sites, and Domains
 
+{% raw %}
+
 	Article: Q123878
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -79,3 +81,5 @@ permalink: /kb/123/Q123878/
 	
 	=============================================================================
 	
+
+{% endraw %}

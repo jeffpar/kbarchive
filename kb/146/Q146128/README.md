@@ -6,6 +6,8 @@ permalink: /kb/146/Q146128/
 
 ## Q146128: XADM: Cannot Disable Proxy Address Generators
 
+{% raw %}
+
 	Article: Q146128
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/146/Q146128/
 	
 	=============================================================================
 	
+
+{% endraw %}

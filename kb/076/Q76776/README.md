@@ -6,6 +6,8 @@ permalink: /kb/076/Q76776/
 
 ## Q76776: README.TXT: Running Specific Non-Windows Applications
 
+{% raw %}
+
 	Article: Q76776
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0
@@ -111,3 +113,5 @@ permalink: /kb/076/Q76776/
 	
 	=============================================================================
 	
+
+{% endraw %}

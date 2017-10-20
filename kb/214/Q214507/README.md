@@ -6,6 +6,8 @@ permalink: /kb/214/Q214507/
 
 ## Q214507: Multiple NFS Shares Can Be Mounted as a Single Drive Mapping
 
+{% raw %}
+
 	Article: Q214507
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/214/Q214507/
 	
 	=============================================================================
 	
+
+{% endraw %}

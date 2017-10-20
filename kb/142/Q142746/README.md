@@ -6,6 +6,8 @@ permalink: /kb/142/Q142746/
 
 ## Q142746: How to Set Up and Administer a Microsoft Mail Post Office
 
+{% raw %}
+
 	Article: Q142746
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 4.0
@@ -127,3 +129,5 @@ permalink: /kb/142/Q142746/
 	
 	=============================================================================
 	
+
+{% endraw %}

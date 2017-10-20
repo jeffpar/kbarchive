@@ -6,6 +6,8 @@ permalink: /kb/250/Q250669/
 
 ## Q250669: PRB: Wizard Causes &quot;Variable Not Found&quot;  When Adding Record
 
+{% raw %}
+
 	Article: Q250669
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -111,3 +113,5 @@ permalink: /kb/250/Q250669/
 	
 	=============================================================================
 	
+
+{% endraw %}

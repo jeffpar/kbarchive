@@ -6,6 +6,8 @@ permalink: /kb/131/Q131842/
 
 ## Q131842: Error Code Not Displayed When MAP Command Fails
 
+{% raw %}
+
 	Article: Q131842
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -50,3 +52,5 @@ permalink: /kb/131/Q131842/
 	
 	=============================================================================
 	
+
+{% endraw %}

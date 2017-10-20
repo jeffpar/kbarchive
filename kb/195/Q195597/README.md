@@ -6,6 +6,8 @@ permalink: /kb/195/Q195597/
 
 ## Q195597: WD97: Column Selection Lost After Formatting Characters
 
+{% raw %}
+
 	Article: Q195597
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -49,3 +51,5 @@ permalink: /kb/195/Q195597/
 	
 	=============================================================================
 	
+
+{% endraw %}

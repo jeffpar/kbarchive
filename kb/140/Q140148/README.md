@@ -6,6 +6,8 @@ permalink: /kb/140/Q140148/
 
 ## Q140148: Logon Name Removed After Running Audit Package
 
+{% raw %}
+
 	Article: Q140148
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -43,3 +45,5 @@ permalink: /kb/140/Q140148/
 	
 	=============================================================================
 	
+
+{% endraw %}

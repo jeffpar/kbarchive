@@ -6,6 +6,8 @@ permalink: /kb/166/Q166484/
 
 ## Q166484: SNA Server 3.0 Hangs in Stopping Status on Windows NT 4.0 SP3
 
+{% raw %}
+
 	Article: Q166484
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0; winnt:4.0 SP3
@@ -67,3 +69,5 @@ permalink: /kb/166/Q166484/
 	
 	=============================================================================
 	
+
+{% endraw %}

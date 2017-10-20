@@ -6,6 +6,8 @@ permalink: /kb/182/Q182354/
 
 ## Q182354: PRB: Jet Text IISAM Driver Drops Leading Spaces
 
+{% raw %}
+
 	Article: Q182354
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97
@@ -114,3 +116,5 @@ permalink: /kb/182/Q182354/
 	
 	=============================================================================
 	
+
+{% endraw %}

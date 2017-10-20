@@ -6,6 +6,8 @@ permalink: /kb/279/Q279135/
 
 ## Q279135: FIX: Stored Proc Used w/ SQLEXEC Embeds NULL as Last Char
 
+{% raw %}
+
 	Article: Q279135
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -83,3 +85,5 @@ permalink: /kb/279/Q279135/
 	
 	=============================================================================
 	
+
+{% endraw %}

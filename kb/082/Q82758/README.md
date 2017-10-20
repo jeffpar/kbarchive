@@ -6,6 +6,8 @@ permalink: /kb/082/Q82758/
 
 ## Q82758: What Disk to Install for HP DeskJet 500C
 
+{% raw %}
+
 	Article: Q82758
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/082/Q82758/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150585/
 
 ## Q150585: Pregnancy and Child Care: Limits of the Back Feature
 
+{% raw %}
+
 	Article: Q150585
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -46,3 +48,5 @@ permalink: /kb/150/Q150585/
 	
 	=============================================================================
 	
+
+{% endraw %}

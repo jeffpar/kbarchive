@@ -6,6 +6,8 @@ permalink: /kb/256/Q256066/
 
 ## Q256066: HOWTO: Use the StatusBar ActiveX Control in Visual FoxPro
 
+{% raw %}
+
 	Article: Q256066
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -97,3 +99,5 @@ permalink: /kb/256/Q256066/
 	
 	=============================================================================
 	
+
+{% endraw %}

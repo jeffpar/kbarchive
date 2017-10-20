@@ -6,6 +6,8 @@ permalink: /kb/173/Q173820/
 
 ## Q173820: WD97: Double-Clicking Document Icon Does Not Open Document
 
+{% raw %}
+
 	Article: Q173820
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -152,3 +154,5 @@ permalink: /kb/173/Q173820/
 	
 	=============================================================================
 	
+
+{% endraw %}

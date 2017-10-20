@@ -6,6 +6,8 @@ permalink: /kb/223/Q223003/
 
 ## Q223003: XFOR: OLE Objects Sent From GroupWise To Exchange Are Lost
 
+{% raw %}
+
 	Article: Q223003
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -52,3 +54,5 @@ permalink: /kb/223/Q223003/
 	
 	=============================================================================
 	
+
+{% endraw %}

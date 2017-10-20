@@ -6,6 +6,8 @@ permalink: /kb/199/Q199233/
 
 ## Q199233: How to Use DHTML with ASP and Long SQL Queries
 
+{% raw %}
+
 	Article: Q199233
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0,4.0
@@ -104,3 +106,5 @@ permalink: /kb/199/Q199233/
 	
 	=============================================================================
 	
+
+{% endraw %}

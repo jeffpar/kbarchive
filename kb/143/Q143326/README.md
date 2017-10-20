@@ -6,6 +6,8 @@ permalink: /kb/143/Q143326/
 
 ## Q143326: Windows 95 Non-DMF Floppy Disk Directory Listing (1 of 3)
 
+{% raw %}
+
 	Article: Q143326
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -496,3 +498,5 @@ permalink: /kb/143/Q143326/
 	
 	=============================================================================
 	
+
+{% endraw %}

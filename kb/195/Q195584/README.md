@@ -6,6 +6,8 @@ permalink: /kb/195/Q195584/
 
 ## Q195584: PRB: Create New Catalog Shows the Name of the Catalog and Path
 
+{% raw %}
+
 	Article: Q195584
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -88,3 +90,5 @@ permalink: /kb/195/Q195584/
 	
 	=============================================================================
 	
+
+{% endraw %}

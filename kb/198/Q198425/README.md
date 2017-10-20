@@ -6,6 +6,8 @@ permalink: /kb/198/Q198425/
 
 ## Q198425: PRB: GetLineFromChar Method Does Not Function in VFP 5.0
 
+{% raw %}
+
 	Article: Q198425
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -92,3 +94,5 @@ permalink: /kb/198/Q198425/
 	
 	=============================================================================
 	
+
+{% endraw %}

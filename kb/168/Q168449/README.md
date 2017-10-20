@@ -6,6 +6,8 @@ permalink: /kb/168/Q168449/
 
 ## Q168449: PRB: Use of Data-Bound Controls Is Version Dependent
 
+{% raw %}
+
 	Article: Q168449
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2 4.20b 5.0
@@ -98,3 +100,5 @@ permalink: /kb/168/Q168449/
 	
 	=============================================================================
 	
+
+{% endraw %}

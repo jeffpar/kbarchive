@@ -6,6 +6,8 @@ permalink: /kb/136/Q136748/
 
 ## Q136748: PPT7: Unable to Link Only a Portion of a Presentation
 
+{% raw %}
+
 	Article: Q136748
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -74,3 +76,5 @@ permalink: /kb/136/Q136748/
 	
 	=============================================================================
 	
+
+{% endraw %}

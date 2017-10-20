@@ -6,6 +6,8 @@ permalink: /kb/100/Q100852/
 
 ## Q100852: Can't Delete Setup Filename with MWBACKUP
 
+{% raw %}
+
 	Article: Q100852
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -48,3 +50,5 @@ permalink: /kb/100/Q100852/
 	
 	=============================================================================
 	
+
+{% endraw %}

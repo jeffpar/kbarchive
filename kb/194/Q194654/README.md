@@ -6,6 +6,8 @@ permalink: /kb/194/Q194654/
 
 ## Q194654: PRB: DBGrid Control Not Fully Functional in VC++
 
+{% raw %}
+
 	Article: Q194654
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:4.0,5.0,6.0
@@ -58,3 +60,5 @@ permalink: /kb/194/Q194654/
 	
 	=============================================================================
 	
+
+{% endraw %}

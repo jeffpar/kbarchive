@@ -6,6 +6,8 @@ permalink: /kb/196/Q196024/
 
 ## Q196024: BUG: Microsoft Date Time Picker Control Causes Exception Error
 
+{% raw %}
+
 	Article: Q196024
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -94,3 +96,5 @@ permalink: /kb/196/Q196024/
 	
 	=============================================================================
 	
+
+{% endraw %}

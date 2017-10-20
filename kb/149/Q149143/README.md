@@ -6,6 +6,8 @@ permalink: /kb/149/Q149143/
 
 ## Q149143: BUG: FOR3852 and FOR1768 Caused by Space Before !MS&#36;FREEFORM
 
+{% raw %}
+
 	Article: Q149143
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/149/Q149143/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263714/
 
 ## Q263714: XCON: MTA Doesn't Reroute Mail Queued for Internet Mail Service
 
+{% raw %}
+
 	Article: Q263714
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/263/Q263714/
 	
 	=============================================================================
 	
+
+{% endraw %}

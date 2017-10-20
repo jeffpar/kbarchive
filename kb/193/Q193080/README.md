@@ -6,6 +6,8 @@ permalink: /kb/193/Q193080/
 
 ## Q193080: HOWTO: Determine Operating System Regional Setting Language ID
 
+{% raw %}
+
 	Article: Q193080
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -161,3 +163,5 @@ permalink: /kb/193/Q193080/
 	
 	=============================================================================
 	
+
+{% endraw %}

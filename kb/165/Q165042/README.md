@@ -6,6 +6,8 @@ permalink: /kb/165/Q165042/
 
 ## Q165042: Regdel.exe Cannot Delete Values, Can Only Delete Keys
 
+{% raw %}
+
 	Article: Q165042
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0; :
@@ -80,3 +82,5 @@ permalink: /kb/165/Q165042/
 	
 	=============================================================================
 	
+
+{% endraw %}

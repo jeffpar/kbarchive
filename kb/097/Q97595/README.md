@@ -6,6 +6,8 @@ permalink: /kb/097/Q97595/
 
 ## Q97595: MS-DOS 6.0 and 6.2: PATH Not Limited to 128 Characters
 
+{% raw %}
+
 	Article: Q97595
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -101,3 +103,5 @@ permalink: /kb/097/Q97595/
 	
 	=============================================================================
 	
+
+{% endraw %}

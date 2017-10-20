@@ -6,6 +6,8 @@ permalink: /kb/082/Q82767/
 
 ## Q82767: Relay Gold 5.0 May Cause a GP Fault with Windows 3.1
 
+{% raw %}
+
 	Article: Q82767
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/082/Q82767/
 	
 	=============================================================================
 	
+
+{% endraw %}

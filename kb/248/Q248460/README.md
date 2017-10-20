@@ -6,6 +6,8 @@ permalink: /kb/248/Q248460/
 
 ## Q248460: XCLN: E-mail Doesn't Display &quot;.doc&quot; when Word Is Editor
 
+{% raw %}
+
 	Article: Q248460
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,97,98
@@ -54,3 +56,5 @@ permalink: /kb/248/Q248460/
 	
 	=============================================================================
 	
+
+{% endraw %}

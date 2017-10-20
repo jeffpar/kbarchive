@@ -6,6 +6,8 @@ permalink: /kb/166/Q166281/
 
 ## Q166281: HOWTO: Create and Implement a UserConnection
 
+{% raw %}
+
 	Article: Q166281
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0;
@@ -154,3 +156,5 @@ permalink: /kb/166/Q166281/
 	
 	=============================================================================
 	
+
+{% endraw %}

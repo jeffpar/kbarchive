@@ -6,6 +6,8 @@ permalink: /kb/195/Q195037/
 
 ## Q195037: XFOR: Exchange Server NNTP Event ID 11214
 
+{% raw %}
+
 	Article: Q195037
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -76,3 +78,5 @@ permalink: /kb/195/Q195037/
 	
 	=============================================================================
 	
+
+{% endraw %}

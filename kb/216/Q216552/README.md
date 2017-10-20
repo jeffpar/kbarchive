@@ -6,6 +6,8 @@ permalink: /kb/216/Q216552/
 
 ## Q216552: SMS: SMSRUN Hangs at 90% CPU While IE Setup Is Running
 
+{% raw %}
+
 	Article: Q216552
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -116,3 +118,5 @@ permalink: /kb/216/Q216552/
 	
 	=============================================================================
 	
+
+{% endraw %}

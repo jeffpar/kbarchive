@@ -6,6 +6,8 @@ permalink: /kb/136/Q136518/
 
 ## Q136518: PC Gen: What's New in Mail for PC Networks Version 3.5
 
+{% raw %}
+
 	Article: Q136518
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -210,3 +212,5 @@ permalink: /kb/136/Q136518/
 	
 	=============================================================================
 	
+
+{% endraw %}

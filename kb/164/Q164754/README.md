@@ -6,6 +6,8 @@ permalink: /kb/164/Q164754/
 
 ## Q164754: Program Groups Not Created on Windows 95 or Windows NT 4.0
 
+{% raw %}
+
 	Article: Q164754
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -85,3 +87,5 @@ permalink: /kb/164/Q164754/
 	
 	=============================================================================
 	
+
+{% endraw %}

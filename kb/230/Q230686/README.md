@@ -6,6 +6,8 @@ permalink: /kb/230/Q230686/
 
 ## Q230686: Print Server Doesn't Support Print Filter DLL for APPC Printing
 
+{% raw %}
+
 	Article: Q230686
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
@@ -51,3 +53,5 @@ permalink: /kb/230/Q230686/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263067/
 
 ## Q263067: XCLN: Outlook 98 Word Attach. Garbled w. Public Folder Contact
 
+{% raw %}
+
 	Article: Q263067
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:
@@ -80,3 +82,5 @@ permalink: /kb/263/Q263067/
 	
 	=============================================================================
 	
+
+{% endraw %}

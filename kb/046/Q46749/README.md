@@ -6,6 +6,8 @@ permalink: /kb/046/Q46749/
 
 ## Q46749: Some Causes of Differences in Floating-Point Results
 
+{% raw %}
+
 	Article: Q46749
 	Product(s): See article
 	Version(s): 5.10
@@ -97,3 +99,5 @@ permalink: /kb/046/Q46749/
 	 product1 = 7.711824142152130e-283
 	
 	 product2 = 0.000000000000000e+000
+
+{% endraw %}

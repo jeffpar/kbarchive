@@ -6,6 +6,8 @@ permalink: /kb/311/Q311184/
 
 ## Q311184: HOW TO: Perform Security Planning for IIS 5.0
 
+{% raw %}
+
 	Article: Q311184
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -120,3 +122,5 @@ permalink: /kb/311/Q311184/
 	
 	=============================================================================
 	
+
+{% endraw %}

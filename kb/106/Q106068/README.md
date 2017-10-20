@@ -6,6 +6,8 @@ permalink: /kb/106/Q106068/
 
 ## Q106068: PC MAPI: Compose Requires Compose and Read Values Set to 1
 
+{% raw %}
+
 	Article: Q106068
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/106/Q106068/
 	
 	=============================================================================
 	
+
+{% endraw %}

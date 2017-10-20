@@ -6,6 +6,8 @@ permalink: /kb/122/Q122219/
 
 ## Q122219: INFO: CWnd::OnCommand() Parameters Documented Incorrectly
 
+{% raw %}
+
 	Article: Q122219
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -79,3 +81,5 @@ permalink: /kb/122/Q122219/
 	
 	=============================================================================
 	
+
+{% endraw %}

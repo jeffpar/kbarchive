@@ -6,6 +6,8 @@ permalink: /kb/172/Q172612/
 
 ## Q172612: SMSINST: SMS Installer Does Not Create Mscreate.dir File
 
+{% raw %}
+
 	Article: Q172612
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,97
@@ -51,3 +53,5 @@ permalink: /kb/172/Q172612/
 	
 	=============================================================================
 	
+
+{% endraw %}

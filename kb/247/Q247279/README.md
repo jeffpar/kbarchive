@@ -6,6 +6,8 @@ permalink: /kb/247/Q247279/
 
 ## Q247279: XADM: How to Rebuild a Deleted Organizational Forms Library
 
+{% raw %}
+
 	Article: Q247279
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -164,3 +166,5 @@ permalink: /kb/247/Q247279/
 	
 	=============================================================================
 	
+
+{% endraw %}

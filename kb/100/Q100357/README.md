@@ -6,6 +6,8 @@ permalink: /kb/100/Q100357/
 
 ## Q100357: SAMPLE: Xtenaccl.exe - Accelerators for File Manager Extensions
 
+{% raw %}
+
 	Article: Q100357
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -69,3 +71,5 @@ permalink: /kb/100/Q100357/
 	
 	=============================================================================
 	
+
+{% endraw %}

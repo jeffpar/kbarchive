@@ -6,6 +6,8 @@ permalink: /kb/169/Q169134/
 
 ## Q169134: SMSINST: &quot;Please Enter a Positive Integer&quot; Error
 
+{% raw %}
+
 	Article: Q169134
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0; winnt:1.2
@@ -52,3 +54,5 @@ permalink: /kb/169/Q169134/
 	
 	=============================================================================
 	
+
+{% endraw %}

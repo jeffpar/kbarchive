@@ -6,6 +6,8 @@ permalink: /kb/176/Q176170/
 
 ## Q176170: XADM: Single Instance Ratio Counter Indicates Value Less Than 1
 
+{% raw %}
+
 	Article: Q176170
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -50,3 +52,5 @@ permalink: /kb/176/Q176170/
 	
 	=============================================================================
 	
+
+{% endraw %}

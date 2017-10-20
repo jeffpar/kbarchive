@@ -6,6 +6,8 @@ permalink: /kb/304/Q304961/
 
 ## Q304961: SMS: Remote Client Installation on BDC Generates Error 1326
 
+{% raw %}
+
 	Article: Q304961
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -100,3 +102,5 @@ permalink: /kb/304/Q304961/
 	
 	=============================================================================
 	
+
+{% endraw %}

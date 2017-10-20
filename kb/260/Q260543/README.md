@@ -6,6 +6,8 @@ permalink: /kb/260/Q260543/
 
 ## Q260543: Streets &amp; Trips: Georgia Highway Exits Are Incorrectly Numbered
 
+{% raw %}
+
 	Article: Q260543
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:; :
@@ -70,3 +72,5 @@ permalink: /kb/260/Q260543/
 	
 	=============================================================================
 	
+
+{% endraw %}

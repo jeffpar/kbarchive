@@ -6,6 +6,8 @@ permalink: /kb/190/Q190433/
 
 ## Q190433: XWEB: Err Msg: Current Password Is About to Expire in 0 Days
 
+{% raw %}
+
 	Article: Q190433
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -102,3 +104,5 @@ permalink: /kb/190/Q190433/
 	
 	=============================================================================
 	
+
+{% endraw %}

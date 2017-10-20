@@ -6,6 +6,8 @@ permalink: /kb/128/Q128383/
 
 ## Q128383: ADT2: Updated ADT License Agreement Available
 
+{% raw %}
+
 	Article: Q128383
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -57,3 +59,5 @@ permalink: /kb/128/Q128383/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/059/Q59696/
 
 ## Q59696: Write Not Printing Graphics in Draft Mode
 
+{% raw %}
+
 	Article: Q59696
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -32,3 +34,5 @@ permalink: /kb/059/Q59696/
 	
 	=============================================================================
 	
+
+{% endraw %}

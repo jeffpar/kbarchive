@@ -6,6 +6,8 @@ permalink: /kb/140/Q140836/
 
 ## Q140836: Windows 95 AFTP Client Reports WINAPPC.DLL is Corrupt
 
+{% raw %}
+
 	Article: Q140836
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -70,3 +72,5 @@ permalink: /kb/140/Q140836/
 	
 	=============================================================================
 	
+
+{% endraw %}

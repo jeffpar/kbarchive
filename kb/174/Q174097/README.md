@@ -6,6 +6,8 @@ permalink: /kb/174/Q174097/
 
 ## Q174097: Specifying What Software Types Web Sites Can Download and Run
 
+{% raw %}
+
 	Article: Q174097
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5 (OEM Release),3.01,3.02,95
@@ -96,3 +98,5 @@ permalink: /kb/174/Q174097/
 	
 	=============================================================================
 	
+
+{% endraw %}

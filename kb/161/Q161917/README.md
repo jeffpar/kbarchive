@@ -6,6 +6,8 @@ permalink: /kb/161/Q161917/
 
 ## Q161917: Printing Italics to a LexMark Printer Produces Incorrect Output
 
+{% raw %}
+
 	Article: Q161917
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/161/Q161917/
 	
 	=============================================================================
 	
+
+{% endraw %}

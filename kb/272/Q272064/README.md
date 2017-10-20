@@ -6,6 +6,8 @@ permalink: /kb/272/Q272064/
 
 ## Q272064: XCON: Dynamic RAS Connection Hangs Up Before Transferring Mail
 
+{% raw %}
+
 	Article: Q272064
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -50,3 +52,5 @@ permalink: /kb/272/Q272064/
 	
 	=============================================================================
 	
+
+{% endraw %}

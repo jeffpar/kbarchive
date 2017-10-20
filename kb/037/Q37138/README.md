@@ -6,6 +6,8 @@ permalink: /kb/037/Q37138/
 
 ## Q37138: Journal.exe Contains Windows Journal Hooks Source Code
 
+{% raw %}
+
 	Article: Q37138
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -69,3 +71,5 @@ permalink: /kb/037/Q37138/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/072/Q72391/
 
 ## Q72391: BUG: Cannot Open MASM 6.0 Sample Programs from PWB Online Help
 
+{% raw %}
+
 	Article: Q72391
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,1.1,2.0,2.1.49
@@ -102,3 +104,5 @@ permalink: /kb/072/Q72391/
 	
 	=============================================================================
 	
+
+{% endraw %}

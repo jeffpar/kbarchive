@@ -6,6 +6,8 @@ permalink: /kb/107/Q107637/
 
 ## Q107637: Problem Accessing SNA Server from Windows NT RAS Client
 
+{% raw %}
+
 	Article: Q107637
 	Product(s): Microsoft SNA Server
 	Version(s): 2.0,2.1,2.11,3.0,3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -125,3 +127,5 @@ permalink: /kb/107/Q107637/
 	
 	=============================================================================
 	
+
+{% endraw %}

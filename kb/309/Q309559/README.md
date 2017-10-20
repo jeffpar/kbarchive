@@ -6,6 +6,8 @@ permalink: /kb/309/Q309559/
 
 ## Q309559: MechWarrior 4: Err Msg: Setup Has Detected Beta or Test Version
 
+{% raw %}
+
 	Article: Q309559
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/309/Q309559/
 	
 	=============================================================================
 	
+
+{% endraw %}

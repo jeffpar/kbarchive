@@ -6,6 +6,8 @@ permalink: /kb/081/Q81651/
 
 ## Q81651: Running Microsoft Chart 3.0 in Standard-Mode Windows
 
+{% raw %}
+
 	Article: Q81651
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/081/Q81651/
 	
 	=============================================================================
 	
+
+{% endraw %}

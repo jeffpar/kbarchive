@@ -6,6 +6,8 @@ permalink: /kb/259/Q259062/
 
 ## Q259062: Contents Are Lost Saving Management Agent Scripts or Templates
 
+{% raw %}
+
 	Article: Q259062
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -93,3 +95,5 @@ permalink: /kb/259/Q259062/
 	
 	=============================================================================
 	
+
+{% endraw %}

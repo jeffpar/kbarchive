@@ -6,6 +6,8 @@ permalink: /kb/139/Q139302/
 
 ## Q139302: Installing Novell GroupWise Overwrites Mapi.dll File
 
+{% raw %}
+
 	Article: Q139302
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -63,3 +65,5 @@ permalink: /kb/139/Q139302/
 	
 	=============================================================================
 	
+
+{% endraw %}

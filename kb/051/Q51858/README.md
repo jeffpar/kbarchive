@@ -6,6 +6,8 @@ permalink: /kb/051/Q51858/
 
 ## Q51858: Complete Listing of SCREEN Modes for Compiled BASIC
 
+{% raw %}
+
 	Article: Q51858
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -174,3 +176,5 @@ permalink: /kb/051/Q51858/
 	*  Assignment of up to 256K colors to up to 16 attributes.
 	*  Note: This mode offers the best resolution with most colors
 	   available at that resolution.
+
+{% endraw %}

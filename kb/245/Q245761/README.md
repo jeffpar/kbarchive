@@ -6,6 +6,8 @@ permalink: /kb/245/Q245761/
 
 ## Q245761: PRB: False Report of Trojan Horse Virus in Colchng.Exe
 
+{% raw %}
+
 	Article: Q245761
 	Product(s): Microsoft Developer Network
 	Version(s): WINDOWS:October 99
@@ -67,3 +69,5 @@ permalink: /kb/245/Q245761/
 	
 	=============================================================================
 	
+
+{% endraw %}

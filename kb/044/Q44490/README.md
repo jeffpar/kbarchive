@@ -6,6 +6,8 @@ permalink: /kb/044/Q44490/
 
 ## Q44490: Current Statement Color Defaults to Green on Blue with /NOHI
 
+{% raw %}
+
 	Article: Q44490
 	Product(s): See article
 	Version(s): 4.50
@@ -45,3 +47,5 @@ permalink: /kb/044/Q44490/
 	The /NOHI switch is only available in the QB.EXE environment of
 	QuickBASIC 4.50 and the QBX.EXE environment of Microsoft BASIC PDS
 	7.00.
+
+{% endraw %}

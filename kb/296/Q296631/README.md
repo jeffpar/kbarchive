@@ -6,6 +6,8 @@ permalink: /kb/296/Q296631/
 
 ## Q296631: FP: Access Is Denied When Submitting a Form
 
+{% raw %}
+
 	Article: Q296631
 	Product(s): Word Front Page
 	Version(s): 
@@ -131,3 +133,5 @@ permalink: /kb/296/Q296631/
 	
 	=============================================================================
 	
+
+{% endraw %}

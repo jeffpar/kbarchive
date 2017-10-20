@@ -6,6 +6,8 @@ permalink: /kb/188/Q188061/
 
 ## Q188061: SMS: Unable to Inventory Software with Year 2000
 
+{% raw %}
+
 	Article: Q188061
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -119,3 +121,5 @@ permalink: /kb/188/Q188061/
 	
 	=============================================================================
 	
+
+{% endraw %}

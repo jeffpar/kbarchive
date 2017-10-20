@@ -6,6 +6,8 @@ permalink: /kb/184/Q184966/
 
 ## Q184966: Golf 98/99: High-Resolution Golf Courses Require 16-bit Color
 
+{% raw %}
+
 	Article: Q184966
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/184/Q184966/
 	
 	=============================================================================
 	
+
+{% endraw %}

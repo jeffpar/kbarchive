@@ -6,6 +6,8 @@ permalink: /kb/179/Q179269/
 
 ## Q179269: HOWTO: Use Source Profiler to Profile Dynamic-Link Libraries
 
+{% raw %}
+
 	Article: Q179269
 	Product(s): Microsoft Programming Utilities
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.0a,4.1,4.2,4.2b,5.0,6.0
@@ -155,3 +157,5 @@ permalink: /kb/179/Q179269/
 	
 	=============================================================================
 	
+
+{% endraw %}

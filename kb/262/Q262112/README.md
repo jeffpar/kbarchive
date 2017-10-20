@@ -6,6 +6,8 @@ permalink: /kb/262/Q262112/
 
 ## Q262112: XCON: How Exchange Server Routes One-Off Messages Internally
 
+{% raw %}
+
 	Article: Q262112
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -70,3 +72,5 @@ permalink: /kb/262/Q262112/
 	
 	=============================================================================
 	
+
+{% endraw %}

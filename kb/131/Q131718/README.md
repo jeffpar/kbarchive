@@ -6,6 +6,8 @@ permalink: /kb/131/Q131718/
 
 ## Q131718: CD-ROM Optimization Settings Available Without Drive Installed
 
+{% raw %}
+
 	Article: Q131718
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -51,3 +53,5 @@ permalink: /kb/131/Q131718/
 	
 	=============================================================================
 	
+
+{% endraw %}

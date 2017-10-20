@@ -6,6 +6,8 @@ permalink: /kb/234/Q234157/
 
 ## Q234157: XCON: Explanation of Fields on X.400 Connector Override Tab
 
+{% raw %}
+
 	Article: Q234157
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -145,3 +147,5 @@ permalink: /kb/234/Q234157/
 	
 	=============================================================================
 	
+
+{% endraw %}

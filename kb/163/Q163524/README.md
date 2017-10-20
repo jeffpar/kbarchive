@@ -6,6 +6,8 @@ permalink: /kb/163/Q163524/
 
 ## Q163524: How to Import an LMHOSTS File into the WINS Database
 
+{% raw %}
+
 	Article: Q163524
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -58,3 +60,5 @@ permalink: /kb/163/Q163524/
 	
 	=============================================================================
 	
+
+{% endraw %}

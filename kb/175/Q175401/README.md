@@ -6,6 +6,8 @@ permalink: /kb/175/Q175401/
 
 ## Q175401: Age Of Empires: Game Hangs with Sound Blaster AWE 64
 
+{% raw %}
+
 	Article: Q175401
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -88,3 +90,5 @@ permalink: /kb/175/Q175401/
 	
 	=============================================================================
 	
+
+{% endraw %}

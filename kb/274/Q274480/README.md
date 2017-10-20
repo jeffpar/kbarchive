@@ -6,6 +6,8 @@ permalink: /kb/274/Q274480/
 
 ## Q274480: XADM: Duplicate Object Created When Replicating Objects from Exc
 
+{% raw %}
+
 	Article: Q274480
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -87,3 +89,5 @@ permalink: /kb/274/Q274480/
 	
 	=============================================================================
 	
+
+{% endraw %}

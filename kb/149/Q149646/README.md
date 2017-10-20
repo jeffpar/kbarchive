@@ -6,6 +6,8 @@ permalink: /kb/149/Q149646/
 
 ## Q149646: No DTMF Tones on Presario While Using Speaker Phone
 
+{% raw %}
+
 	Article: Q149646
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -49,3 +51,5 @@ permalink: /kb/149/Q149646/
 	
 	=============================================================================
 	
+
+{% endraw %}

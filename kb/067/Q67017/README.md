@@ -6,6 +6,8 @@ permalink: /kb/067/Q67017/
 
 ## Q67017: Fontware Installation Kit Did Not Complete All Phases
 
+{% raw %}
+
 	Article: Q67017
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -51,3 +53,5 @@ permalink: /kb/067/Q67017/
 	
 	=============================================================================
 	
+
+{% endraw %}

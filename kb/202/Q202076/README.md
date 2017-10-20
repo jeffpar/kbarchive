@@ -6,6 +6,8 @@ permalink: /kb/202/Q202076/
 
 ## Q202076: SMS: Query Value Operators for SMS 2.0
 
+{% raw %}
+
 	Article: Q202076
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -66,3 +68,5 @@ permalink: /kb/202/Q202076/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119240/
 
 ## Q119240: PC DirSync: Err Msg: Error 46 No Fullname
 
+{% raw %}
+
 	Article: Q119240
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a,3.2
@@ -65,3 +67,5 @@ permalink: /kb/119/Q119240/
 	
 	=============================================================================
 	
+
+{% endraw %}

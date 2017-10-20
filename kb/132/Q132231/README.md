@@ -6,6 +6,8 @@ permalink: /kb/132/Q132231/
 
 ## Q132231: INFO: Connection Properties You Can Access with SQLGETPROP()
 
+{% raw %}
+
 	Article: Q132231
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0
@@ -148,3 +150,5 @@ permalink: /kb/132/Q132231/
 	
 	=============================================================================
 	
+
+{% endraw %}

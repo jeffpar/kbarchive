@@ -6,6 +6,8 @@ permalink: /kb/258/Q258668/
 
 ## Q258668: FULL STOP Key on German Keyboard Layout Displays Comma Instead
 
+{% raw %}
+
 	Article: Q258668
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -57,3 +59,5 @@ permalink: /kb/258/Q258668/
 	
 	=============================================================================
 	
+
+{% endraw %}

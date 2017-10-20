@@ -6,6 +6,8 @@ permalink: /kb/130/Q130275/
 
 ## Q130275: How to Implement OLE Custom Control Context Sensitive Help
 
+{% raw %}
+
 	Article: Q130275
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0
@@ -68,7 +70,7 @@ permalink: /kb/130/Q130275/
 	              properties:
 	           // NOTE - ClassWizard will maintain property information here.
 	           //    Use extreme caution when editing this section.
-	           //{ {AFX_ODL_PROP(CGENERICCtrl)
+	           //{{AFX_ODL_PROP(CGENERICCtrl)
 	              [id(3), helpcontext(50)] GenericShapeConstants
 	                                                            GenericShape;
 	              [id(1), helpcontext(60)] OLE_COLOR FlashColor;
@@ -92,7 +94,7 @@ permalink: /kb/130/Q130275/
 	                                                            Enabled;
 	              [id(2)] MousePointerConstants MousePointer;
 	              [id(10)] IPictureDisp* MouseIcon;
-	          //} }AFX_ODL_PROP
+	          //}}AFX_ODL_PROP
 	
 	To specify the help topic ID for a control event, add the helpcontext attribute
 	to the event declaration in the event list. The following code demonstrates a
@@ -108,12 +110,12 @@ permalink: /kb/130/Q130275/
 	              methods:
 	              // NOTE - ClassWizard will maintain event information here.
 	              //    Use extreme caution when editing this section.
-	              //{ {AFX_ODL_EVENT(CGENERICCtrl)
+	              //{{AFX_ODL_EVENT(CGENERICCtrl)
 	              [id(1), helpcontext(70)] void ClickIn(float* X, float* Y,
 	
 	       BSTR* Caption);
 	              [id(2), helpcontext(80)] void ClickOut();
-	              //} }AFX_ODL_EVENT
+	              //}}AFX_ODL_EVENT
 	  };
 	
 	Additional query words: 2.00 OCX
@@ -125,3 +127,5 @@ permalink: /kb/130/Q130275/
 	
 	=============================================================================
 	
+
+{% endraw %}

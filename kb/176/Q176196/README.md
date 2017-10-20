@@ -6,6 +6,8 @@ permalink: /kb/176/Q176196/
 
 ## Q176196: XADM: Some Mailboxes Not Included in Directory Synchronization
 
+{% raw %}
+
 	Article: Q176196
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -58,3 +60,5 @@ permalink: /kb/176/Q176196/
 	
 	=============================================================================
 	
+
+{% endraw %}

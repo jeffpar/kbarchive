@@ -6,6 +6,8 @@ permalink: /kb/254/Q254613/
 
 ## Q254613: Error Message: HTTP/1.0 Invalid Application Name
 
+{% raw %}
+
 	Article: Q254613
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -85,3 +87,5 @@ permalink: /kb/254/Q254613/
 	
 	=============================================================================
 	
+
+{% endraw %}

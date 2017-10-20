@@ -6,6 +6,8 @@ permalink: /kb/233/Q233059/
 
 ## Q233059: Error Message When Attempting to Create a Folder NTFS Partition
 
+{% raw %}
+
 	Article: Q233059
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -147,3 +149,5 @@ permalink: /kb/233/Q233059/
 	
 	=============================================================================
 	
+
+{% endraw %}

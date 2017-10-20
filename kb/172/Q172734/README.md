@@ -6,6 +6,8 @@ permalink: /kb/172/Q172734/
 
 ## Q172734: Static Mappings Have No NetBIOS Suffix in WINS Manager
 
+{% raw %}
+
 	Article: Q172734
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -69,3 +71,5 @@ permalink: /kb/172/Q172734/
 	
 	=============================================================================
 	
+
+{% endraw %}

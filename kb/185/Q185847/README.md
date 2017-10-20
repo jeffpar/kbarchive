@@ -6,6 +6,8 @@ permalink: /kb/185/Q185847/
 
 ## Q185847: XFOR: Message Conversion Fails If Fixed Font Setting Is Enabled
 
+{% raw %}
+
 	Article: Q185847
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -68,3 +70,5 @@ permalink: /kb/185/Q185847/
 	
 	=============================================================================
 	
+
+{% endraw %}

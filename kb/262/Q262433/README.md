@@ -6,6 +6,8 @@ permalink: /kb/262/Q262433/
 
 ## Q262433: XADM: Error Message: Event ID 1043 Source MSExchangeDS
 
+{% raw %}
+
 	Article: Q262433
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -87,3 +89,5 @@ permalink: /kb/262/Q262433/
 	
 	=============================================================================
 	
+
+{% endraw %}

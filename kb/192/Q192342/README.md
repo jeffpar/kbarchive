@@ -6,6 +6,8 @@ permalink: /kb/192/Q192342/
 
 ## Q192342: HOWTO: Locate Files Cited by the Coverage Profiler Help Topic
 
+{% raw %}
+
 	Article: Q192342
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -103,3 +105,5 @@ permalink: /kb/192/Q192342/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194744/
 
 ## Q194744: Netscape Navigator Stops Responding Over SSL Connection
 
+{% raw %}
+
 	Article: Q194744
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/194/Q194744/
 	
 	=============================================================================
 	
+
+{% endraw %}

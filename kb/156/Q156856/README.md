@@ -6,6 +6,8 @@ permalink: /kb/156/Q156856/
 
 ## Q156856: XFOR: MSMail and HMail 3.5 PO Migration to Exchange Server
 
+{% raw %}
+
 	Article: Q156856
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.5; winnt:4.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/156/Q156856/
 	
 	=============================================================================
 	
+
+{% endraw %}

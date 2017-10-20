@@ -6,6 +6,8 @@ permalink: /kb/132/Q132836/
 
 ## Q132836: Windows 95 Does Not Auto-Detect Some EISA Cards
 
+{% raw %}
+
 	Article: Q132836
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/132/Q132836/
 	
 	=============================================================================
 	
+
+{% endraw %}

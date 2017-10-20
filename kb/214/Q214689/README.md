@@ -6,6 +6,8 @@ permalink: /kb/214/Q214689/
 
 ## Q214689: XADM: Assert Failure Occurs When Information Store is Stopped
 
+{% raw %}
+
 	Article: Q214689
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -71,3 +73,5 @@ permalink: /kb/214/Q214689/
 	
 	=============================================================================
 	
+
+{% endraw %}

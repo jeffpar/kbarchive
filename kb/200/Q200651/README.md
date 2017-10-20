@@ -6,6 +6,8 @@ permalink: /kb/200/Q200651/
 
 ## Q200651: XIMS: Exchange Server and POP3: Top 10 Issues and Solutions
 
+{% raw %}
+
 	Article: Q200651
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -93,3 +95,5 @@ permalink: /kb/200/Q200651/
 	
 	=============================================================================
 	
+
+{% endraw %}

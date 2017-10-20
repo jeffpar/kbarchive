@@ -6,6 +6,8 @@ permalink: /kb/146/Q146157/
 
 ## Q146157: XFOR: Should Have Exclusive Access to Port 25
 
+{% raw %}
+
 	Article: Q146157
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/146/Q146157/
 	
 	=============================================================================
 	
+
+{% endraw %}

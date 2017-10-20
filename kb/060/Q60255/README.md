@@ -6,6 +6,8 @@ permalink: /kb/060/Q60255/
 
 ## Q60255: &#95;&#95;STDC&#95;&#95; Is Undefined If Microsoft Extensions Are Allowed
 
+{% raw %}
+
 	Article: Q60255
 	Product(s): See article
 	Version(s): 2.50 2.51
@@ -28,3 +30,5 @@ permalink: /kb/060/Q60255/
 	#ifdef __STDC__
 	  void foo_bar (void);
 	#endif
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/041/Q41531/
 
 ## Q41531: How to Calculate Absolute Address; DEF SEG and PEEK Example
 
+{% raw %}
+
 	Article: Q41531
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -90,3 +92,5 @@ permalink: /kb/041/Q41531/
 	segment address 1 digit to the left in hexadecimal notation (i.e.,
 	multiply by 16 decimal, or 10 hex) and then add to the offset: 40 hex
 	times 10 hex equals 400 hex, which is added to 17 Hex.
+
+{% endraw %}

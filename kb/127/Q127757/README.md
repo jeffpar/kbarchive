@@ -6,6 +6,8 @@ permalink: /kb/127/Q127757/
 
 ## Q127757: Automap Streets: Recovering Maps from the Backup Disk
 
+{% raw %}
+
 	Article: Q127757
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:1.0,1.01
@@ -75,3 +77,5 @@ permalink: /kb/127/Q127757/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85994/
 
 ## Q85994: Patch Available for BlueMAX 6.x Drivers on PS/2
 
+{% raw %}
+
 	Article: Q85994
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/085/Q85994/
 	
 	=============================================================================
 	
+
+{% endraw %}

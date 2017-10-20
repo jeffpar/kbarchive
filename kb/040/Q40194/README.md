@@ -6,6 +6,8 @@ permalink: /kb/040/Q40194/
 
 ## Q40194: QuickC 2.00 Libraries Incompatible with Windows SDK 2.10
 
+{% raw %}
+
 	Article: Q40194
 	Product(s): See article
 	Version(s): 2.00
@@ -41,3 +43,5 @@ permalink: /kb/040/Q40194/
 	Support at (206) 454-2030 to obtain the current corrected patch:
 	
 	   L2029: Unresolved external: '__aDBswpchk'
+
+{% endraw %}

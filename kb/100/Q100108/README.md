@@ -6,6 +6,8 @@ permalink: /kb/100/Q100108/
 
 ## Q100108: Overview of FAT, HPFS, and NTFS File Systems
 
+{% raw %}
+
 	Article: Q100108
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:
@@ -400,3 +402,5 @@ permalink: /kb/100/Q100108/
 	
 	=============================================================================
 	
+
+{% endraw %}

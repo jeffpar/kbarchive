@@ -6,6 +6,8 @@ permalink: /kb/098/Q98904/
 
 ## Q98904: Power and Advanced Power Management May Suspend Defrag Process
 
+{% raw %}
+
 	Article: Q98904
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -48,3 +50,5 @@ permalink: /kb/098/Q98904/
 	
 	=============================================================================
 	
+
+{% endraw %}

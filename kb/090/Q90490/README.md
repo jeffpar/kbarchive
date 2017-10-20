@@ -6,6 +6,8 @@ permalink: /kb/090/Q90490/
 
 ## Q90490: WFWG Err Msg: An Error Occurred While Trying to Reconnect...
 
+{% raw %}
+
 	Article: Q90490
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/090/Q90490/
 	
 	=============================================================================
 	
+
+{% endraw %}

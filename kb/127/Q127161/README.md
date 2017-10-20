@@ -6,6 +6,8 @@ permalink: /kb/127/Q127161/
 
 ## Q127161: Unable to Connect to Apple Printer Shares
 
+{% raw %}
+
 	Article: Q127161
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -56,3 +58,5 @@ permalink: /kb/127/Q127161/
 	
 	=============================================================================
 	
+
+{% endraw %}

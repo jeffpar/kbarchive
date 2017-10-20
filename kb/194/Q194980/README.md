@@ -6,6 +6,8 @@ permalink: /kb/194/Q194980/
 
 ## Q194980: PRB: Form Close Fails if Control Bound to RDC is Dirty
 
+{% raw %}
+
 	Article: Q194980
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -130,3 +132,5 @@ permalink: /kb/194/Q194980/
 	
 	=============================================================================
 	
+
+{% endraw %}

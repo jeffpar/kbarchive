@@ -6,6 +6,8 @@ permalink: /kb/177/Q177052/
 
 ## Q177052: WD97: Application Error Printing from Shortcut Menu in Explorer
 
+{% raw %}
+
 	Article: Q177052
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -121,3 +123,5 @@ permalink: /kb/177/Q177052/
 	
 	=============================================================================
 	
+
+{% endraw %}

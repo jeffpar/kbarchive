@@ -6,6 +6,8 @@ permalink: /kb/151/Q151896/
 
 ## Q151896: Automap Streets: Only One Go To Pointer to City Name Allowed
 
+{% raw %}
+
 	Article: Q151896
 	Product(s): Microsoft Automap
 	Version(s): 4.0
@@ -57,3 +59,5 @@ permalink: /kb/151/Q151896/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129049/
 
 ## Q129049: How to Perform 10-Digit Dialing in Windows 95 and Windows NT
 
+{% raw %}
+
 	Article: Q129049
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95; winnt:4.0
@@ -198,3 +200,5 @@ permalink: /kb/129/Q129049/
 	
 	=============================================================================
 	
+
+{% endraw %}

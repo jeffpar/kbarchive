@@ -6,6 +6,8 @@ permalink: /kb/092/Q92881/
 
 ## Q92881: Installing WFWG over IBM Lan Server Causes Netbind Error
 
+{% raw %}
+
 	Article: Q92881
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/092/Q92881/
 	
 	=============================================================================
 	
+
+{% endraw %}

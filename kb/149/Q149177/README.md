@@ -6,6 +6,8 @@ permalink: /kb/149/Q149177/
 
 ## Q149177: Adaptec 2940 Series 1.2x BIOS Rev Adapters Fail on NT 3.51
 
+{% raw %}
+
 	Article: Q149177
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51
@@ -92,3 +94,5 @@ permalink: /kb/149/Q149177/
 	
 	=============================================================================
 	
+
+{% endraw %}

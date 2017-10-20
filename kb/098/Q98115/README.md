@@ -6,6 +6,8 @@ permalink: /kb/098/Q98115/
 
 ## Q98115: Microsoft Backup Doesn't Work on Panasonic Notebook Computers
 
+{% raw %}
+
 	Article: Q98115
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -57,3 +59,5 @@ permalink: /kb/098/Q98115/
 	
 	=============================================================================
 	
+
+{% endraw %}

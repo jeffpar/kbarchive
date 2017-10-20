@@ -6,6 +6,8 @@ permalink: /kb/195/Q195485/
 
 ## Q195485: WD97: How to Create Ruling Lines or Blank Underlines in Word
 
+{% raw %}
+
 	Article: Q195485
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -171,3 +173,5 @@ permalink: /kb/195/Q195485/
 	
 	=============================================================================
 	
+
+{% endraw %}

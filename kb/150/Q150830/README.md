@@ -6,6 +6,8 @@ permalink: /kb/150/Q150830/
 
 ## Q150830: More Than One Export Server May Cause Replication To Fail
 
+{% raw %}
+
 	Article: Q150830
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -50,3 +52,5 @@ permalink: /kb/150/Q150830/
 	
 	=============================================================================
 	
+
+{% endraw %}

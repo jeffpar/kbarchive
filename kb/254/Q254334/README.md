@@ -6,6 +6,8 @@ permalink: /kb/254/Q254334/
 
 ## Q254334: XCON: MTA Stops in EMSMTA!o4puinqh After Dereferencing a Pointer
 
+{% raw %}
+
 	Article: Q254334
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -61,3 +63,5 @@ permalink: /kb/254/Q254334/
 	
 	=============================================================================
 	
+
+{% endraw %}

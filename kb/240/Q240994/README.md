@@ -6,6 +6,8 @@ permalink: /kb/240/Q240994/
 
 ## Q240994: Roaming Profile Permissions Not Inherited on Server
 
+{% raw %}
+
 	Article: Q240994
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/240/Q240994/
 	
 	=============================================================================
 	
+
+{% endraw %}

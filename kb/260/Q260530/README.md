@@ -6,6 +6,8 @@ permalink: /kb/260/Q260530/
 
 ## Q260530: SMS: Collection Properties Comment Box Allows 130 Characters
 
+{% raw %}
+
 	Article: Q260530
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -49,3 +51,5 @@ permalink: /kb/260/Q260530/
 	
 	=============================================================================
 	
+
+{% endraw %}

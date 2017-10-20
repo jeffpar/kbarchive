@@ -6,6 +6,8 @@ permalink: /kb/259/Q259035/
 
 ## Q259035: PRB: GetChunk/AppendChunk Methods Are Not Clearly Explained
 
+{% raw %}
+
 	Article: Q259035
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:3.51,3.6
@@ -62,3 +64,5 @@ permalink: /kb/259/Q259035/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/265/Q265686/
 
 ## Q265686: IPCONFIG Returns &quot;Fatal Error: Inconsistent Registry Contents&quot;
 
+{% raw %}
+
 	Article: Q265686
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/265/Q265686/
 	
 	=============================================================================
 	
+
+{% endraw %}

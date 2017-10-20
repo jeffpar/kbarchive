@@ -6,6 +6,8 @@ permalink: /kb/098/Q98479/
 
 ## Q98479: DOC: CHKBOOK.CLW File Documents ExtraDDX Lines Incorrectly
 
+{% raw %}
+
 	Article: Q98479
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -75,3 +77,5 @@ permalink: /kb/098/Q98479/
 	
 	=============================================================================
 	
+
+{% endraw %}

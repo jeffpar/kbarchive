@@ -6,6 +6,8 @@ permalink: /kb/297/Q297309/
 
 ## Q297309: ADDUSERS.EXE Does Not Add Accounts and Does Not Return Error
 
+{% raw %}
+
 	Article: Q297309
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/297/Q297309/
 	
 	=============================================================================
 	
+
+{% endraw %}

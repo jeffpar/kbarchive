@@ -6,6 +6,8 @@ permalink: /kb/130/Q130992/
 
 ## Q130992: PRB: GETFILE() Caption Limited to 9 Characters in Windows 95
 
+{% raw %}
+
 	Article: Q130992
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6x,3.0
@@ -64,3 +66,5 @@ permalink: /kb/130/Q130992/
 	
 	=============================================================================
 	
+
+{% endraw %}

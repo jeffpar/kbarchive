@@ -6,6 +6,8 @@ permalink: /kb/151/Q151736/
 
 ## Q151736: No Message Displayed If Mailbox Temporarily Unavailable
 
+{% raw %}
+
 	Article: Q151736
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0
@@ -47,3 +49,5 @@ permalink: /kb/151/Q151736/
 	
 	=============================================================================
 	
+
+{% endraw %}

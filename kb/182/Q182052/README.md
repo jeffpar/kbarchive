@@ -6,6 +6,8 @@ permalink: /kb/182/Q182052/
 
 ## Q182052: SMS: Program Group Control Causes Intermittent Dr. Watson Errors
 
+{% raw %}
+
 	Article: Q182052
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -59,3 +61,5 @@ permalink: /kb/182/Q182052/
 	
 	=============================================================================
 	
+
+{% endraw %}

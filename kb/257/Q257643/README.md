@@ -6,6 +6,8 @@ permalink: /kb/257/Q257643/
 
 ## Q257643: WD97: Spelling, Grammar Not Available in Word Running on Win2000
 
+{% raw %}
+
 	Article: Q257643
 	Product(s): Word 97 for Windows
 	Version(s): 2000
@@ -108,3 +110,5 @@ permalink: /kb/257/Q257643/
 	
 	=============================================================================
 	
+
+{% endraw %}

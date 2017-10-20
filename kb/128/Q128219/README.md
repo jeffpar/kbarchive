@@ -6,6 +6,8 @@ permalink: /kb/128/Q128219/
 
 ## Q128219: PC Win: Importing PROFS Nicknames Displays Incorrect Templates
 
+{% raw %}
+
 	Article: Q128219
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2a
@@ -88,3 +90,5 @@ permalink: /kb/128/Q128219/
 	
 	=============================================================================
 	
+
+{% endraw %}

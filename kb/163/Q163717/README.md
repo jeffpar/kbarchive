@@ -6,6 +6,8 @@ permalink: /kb/163/Q163717/
 
 ## Q163717: ODE97: ODE Slider Control Is Not Displayed as Expected in Previe
 
+{% raw %}
+
 	Article: Q163717
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:97
@@ -102,3 +104,5 @@ permalink: /kb/163/Q163717/
 	
 	=============================================================================
 	
+
+{% endraw %}

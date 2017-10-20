@@ -6,6 +6,8 @@ permalink: /kb/136/Q136107/
 
 ## Q136107: TC4045 Token Ring Adapter Detected But Does Not Work
 
+{% raw %}
+
 	Article: Q136107
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/136/Q136107/
 	
 	=============================================================================
 	
+
+{% endraw %}

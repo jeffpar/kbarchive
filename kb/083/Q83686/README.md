@@ -6,6 +6,8 @@ permalink: /kb/083/Q83686/
 
 ## Q83686: Beethoven Err Msg: This File May Not Play Correctly...
 
+{% raw %}
+
 	Article: Q83686
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a
@@ -54,3 +56,5 @@ permalink: /kb/083/Q83686/
 	
 	=============================================================================
 	
+
+{% endraw %}

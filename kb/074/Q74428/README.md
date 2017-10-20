@@ -6,6 +6,8 @@ permalink: /kb/074/Q74428/
 
 ## Q74428: Golden Bow VOpt Requires Version 3.0x for MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q74428
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -50,3 +52,5 @@ permalink: /kb/074/Q74428/
 	
 	=============================================================================
 	
+
+{% endraw %}

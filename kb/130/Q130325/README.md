@@ -6,6 +6,8 @@ permalink: /kb/130/Q130325/
 
 ## Q130325: PRB: Cannot Add Methods to Objects at Design Time
 
+{% raw %}
+
 	Article: Q130325
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/130/Q130325/
 	
 	=============================================================================
 	
+
+{% endraw %}

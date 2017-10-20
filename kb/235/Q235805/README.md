@@ -6,6 +6,8 @@ permalink: /kb/235/Q235805/
 
 ## Q235805: SMS: Package Job Status Not Reported From 1.2 Child to Parent
 
+{% raw %}
+
 	Article: Q235805
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -68,3 +70,5 @@ permalink: /kb/235/Q235805/
 	
 	=============================================================================
 	
+
+{% endraw %}

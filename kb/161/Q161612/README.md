@@ -6,6 +6,8 @@ permalink: /kb/161/Q161612/
 
 ## Q161612: WD97: Letter Wizard Replaces Merge Field with AutoTextList
 
+{% raw %}
+
 	Article: Q161612
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -129,3 +131,5 @@ permalink: /kb/161/Q161612/
 	
 	=============================================================================
 	
+
+{% endraw %}

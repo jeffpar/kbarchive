@@ -6,6 +6,8 @@ permalink: /kb/194/Q194815/
 
 ## Q194815: Combat Flight Simulator: How to Start Your Aircraft Engines
 
+{% raw %}
+
 	Article: Q194815
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -114,3 +116,5 @@ permalink: /kb/194/Q194815/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194842/
 
 ## Q194842: BUG: Custom AppWizard Lacks Toolbar Templates for Standard Steps
 
+{% raw %}
+
 	Article: Q194842
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -143,3 +145,5 @@ permalink: /kb/194/Q194842/
 	
 	=============================================================================
 	
+
+{% endraw %}

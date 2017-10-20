@@ -6,6 +6,8 @@ permalink: /kb/068/Q68732/
 
 ## Q68732: Emulation Modes for Radio Shack Tandy Printers
 
+{% raw %}
+
 	Article: Q68732
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/068/Q68732/
 	
 	=============================================================================
 	
+
+{% endraw %}

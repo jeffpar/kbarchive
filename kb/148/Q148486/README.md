@@ -6,6 +6,8 @@ permalink: /kb/148/Q148486/
 
 ## Q148486: Bookshelf 96-97: Playing Sounds Close the China Fact Box
 
+{% raw %}
+
 	Article: Q148486
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -47,3 +49,5 @@ permalink: /kb/148/Q148486/
 	
 	=============================================================================
 	
+
+{% endraw %}

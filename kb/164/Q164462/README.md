@@ -6,6 +6,8 @@ permalink: /kb/164/Q164462/
 
 ## Q164462: Conner 4mm DAT Tape Devices Fail After About 30 Seconds
 
+{% raw %}
+
 	Article: Q164462
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/164/Q164462/
 	
 	=============================================================================
 	
+
+{% endraw %}

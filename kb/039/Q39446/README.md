@@ -6,6 +6,8 @@ permalink: /kb/039/Q39446/
 
 ## Q39446: Division Operators &quot;/&quot; with .186, .286, and .386
 
+{% raw %}
+
 	Article: Q39446
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1
@@ -69,3 +71,5 @@ permalink: /kb/039/Q39446/
 	
 	=============================================================================
 	
+
+{% endraw %}

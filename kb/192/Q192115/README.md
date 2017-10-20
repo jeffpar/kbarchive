@@ -6,6 +6,8 @@ permalink: /kb/192/Q192115/
 
 ## Q192115: XADM: Event ID 1026: Invalid Argument in MTSID
 
+{% raw %}
+
 	Article: Q192115
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -89,3 +91,5 @@ permalink: /kb/192/Q192115/
 	
 	=============================================================================
 	
+
+{% endraw %}

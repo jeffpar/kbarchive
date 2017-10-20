@@ -6,6 +6,8 @@ permalink: /kb/118/Q118396/
 
 ## Q118396: PRB: putchar Fails in C Code Called from FORTRAN Application
 
+{% raw %}
+
 	Article: Q118396
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,4.0
@@ -100,3 +102,5 @@ permalink: /kb/118/Q118396/
 	
 	=============================================================================
 	
+
+{% endraw %}

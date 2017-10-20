@@ -6,6 +6,8 @@ permalink: /kb/214/Q214623/
 
 ## Q214623: PRB: Some SET CENTURY Options May Not Prevent Four Digit Dates
 
+{% raw %}
+
 	Article: Q214623
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0b,5.0,5.0a,6.0
@@ -122,3 +124,5 @@ permalink: /kb/214/Q214623/
 	
 	=============================================================================
 	
+
+{% endraw %}

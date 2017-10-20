@@ -6,6 +6,8 @@ permalink: /kb/096/Q96956/
 
 ## Q96956: MS-DOS 6 Err Msg: The MS-DOS Setup Was Not Completed...
 
+{% raw %}
+
 	Article: Q96956
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -57,3 +59,5 @@ permalink: /kb/096/Q96956/
 	
 	=============================================================================
 	
+
+{% endraw %}

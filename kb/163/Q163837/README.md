@@ -6,6 +6,8 @@ permalink: /kb/163/Q163837/
 
 ## Q163837: SNMP Query to Windows NT Returns Same Value for NTS and NTW
 
+{% raw %}
+
 	Article: Q163837
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -82,3 +84,5 @@ permalink: /kb/163/Q163837/
 	
 	=============================================================================
 	
+
+{% endraw %}

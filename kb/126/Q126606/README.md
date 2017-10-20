@@ -6,6 +6,8 @@ permalink: /kb/126/Q126606/
 
 ## Q126606: INFO: Accessing CREATE_DB, REPAIR_DB, and COMPACT_DB
 
+{% raw %}
+
 	Article: Q126606
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0,3.0,3.5
@@ -141,3 +143,5 @@ permalink: /kb/126/Q126606/
 	
 	=============================================================================
 	
+
+{% endraw %}

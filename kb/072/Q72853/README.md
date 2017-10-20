@@ -6,6 +6,8 @@ permalink: /kb/072/Q72853/
 
 ## Q72853: BUG: H2INC Produces Garbage/GP Faults w/ Some Function Typedefs
 
+{% raw %}
+
 	Article: Q72853
 	Product(s): Microsoft C Compiler
 	Version(s): OS/2:1.0; winnt:1.0
@@ -81,3 +83,5 @@ permalink: /kb/072/Q72853/
 	
 	=============================================================================
 	
+
+{% endraw %}

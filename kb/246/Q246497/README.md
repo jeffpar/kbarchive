@@ -6,6 +6,8 @@ permalink: /kb/246/Q246497/
 
 ## Q246497: RAS Clients Cannot Resolve NetBIOS Names
 
+{% raw %}
+
 	Article: Q246497
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/246/Q246497/
 	
 	=============================================================================
 	
+
+{% endraw %}

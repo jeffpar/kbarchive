@@ -6,6 +6,8 @@ permalink: /kb/148/Q148497/
 
 ## Q148497: Computer Is Not Suspended When an MS-DOS Session Is Active
 
+{% raw %}
+
 	Article: Q148497
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -52,3 +54,5 @@ permalink: /kb/148/Q148497/
 	
 	=============================================================================
 	
+
+{% endraw %}

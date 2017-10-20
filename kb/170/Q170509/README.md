@@ -6,6 +6,8 @@ permalink: /kb/170/Q170509/
 
 ## Q170509: Memory Leak in SERVICES.EXE Causes Performance Degradation
 
+{% raw %}
+
 	Article: Q170509
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -89,3 +91,5 @@ permalink: /kb/170/Q170509/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149055/
 
 ## Q149055: PRB: Jet Doesn't Support QueryDefs on a Non-Attached ODBC Table
 
+{% raw %}
+
 	Article: Q149055
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,6.0
@@ -151,3 +153,5 @@ permalink: /kb/149/Q149055/
 	
 	=============================================================================
 	
+
+{% endraw %}

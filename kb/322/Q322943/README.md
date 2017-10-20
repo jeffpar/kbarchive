@@ -6,6 +6,8 @@ permalink: /kb/322/Q322943/
 
 ## Q322943: Configure Server Extensions Option Is Missing
 
+{% raw %}
+
 	Article: Q322943
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -74,3 +76,5 @@ permalink: /kb/322/Q322943/
 	
 	=============================================================================
 	
+
+{% endraw %}

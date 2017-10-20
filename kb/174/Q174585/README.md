@@ -6,6 +6,8 @@ permalink: /kb/174/Q174585/
 
 ## Q174585: SMS: Remote Control Using IPX Fails After Exiting Windows
 
+{% raw %}
+
 	Article: Q174585
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0; winnt:1.0,1.1,1.2
@@ -60,3 +62,5 @@ permalink: /kb/174/Q174585/
 	
 	=============================================================================
 	
+
+{% endraw %}

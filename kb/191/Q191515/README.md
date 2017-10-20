@@ -6,6 +6,8 @@ permalink: /kb/191/Q191515/
 
 ## Q191515: BUG: AbsolutePosition Property Returns Different Results
 
+{% raw %}
+
 	Article: Q191515
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5,5.0,6.0,Build 2.573.2927
@@ -122,3 +124,5 @@ permalink: /kb/191/Q191515/
 	
 	=============================================================================
 	
+
+{% endraw %}

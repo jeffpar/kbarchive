@@ -6,6 +6,8 @@ permalink: /kb/168/Q168898/
 
 ## Q168898: PRB: Wizstyle Add Button Does Not Add Child Record
 
+{% raw %}
+
 	Article: Q168898
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -125,3 +127,5 @@ permalink: /kb/168/Q168898/
 	
 	=============================================================================
 	
+
+{% endraw %}

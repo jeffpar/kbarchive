@@ -6,6 +6,8 @@ permalink: /kb/177/Q177071/
 
 ## Q177071: OFF97: IPF Quitting with File Containing Long Property Strings
 
+{% raw %}
+
 	Article: Q177071
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -135,3 +137,5 @@ permalink: /kb/177/Q177071/
 	
 	=============================================================================
 	
+
+{% endraw %}

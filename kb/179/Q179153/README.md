@@ -6,6 +6,8 @@ permalink: /kb/179/Q179153/
 
 ## Q179153: XADM: NDR Not Sent If Allow Rich Text Option Is Selected
 
+{% raw %}
+
 	Article: Q179153
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -68,3 +70,5 @@ permalink: /kb/179/Q179153/
 	
 	=============================================================================
 	
+
+{% endraw %}

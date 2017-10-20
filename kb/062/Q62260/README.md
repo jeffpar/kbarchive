@@ -6,6 +6,8 @@ permalink: /kb/062/Q62260/
 
 ## Q62260: TSCNIOxx.OBJ Stub Files Remove Screen 0 Page-Switching
 
+{% raw %}
+
 	Article: Q62260
 	Product(s): See article
 	Version(s): 7.00
@@ -46,3 +48,5 @@ permalink: /kb/062/Q62260/
 	   SCREEN 0, , 1, 1        'This line will generate the Feature.
 	                           'Removed error because it tries to switch
 	                           'pages in Text mode.
+
+{% endraw %}

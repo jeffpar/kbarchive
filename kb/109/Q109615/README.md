@@ -6,6 +6,8 @@ permalink: /kb/109/Q109615/
 
 ## Q109615: SMTP: Return-Receipt-To Field Is Nonstandard
 
+{% raw %}
+
 	Article: Q109615
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -42,3 +44,5 @@ permalink: /kb/109/Q109615/
 	
 	=============================================================================
 	
+
+{% endraw %}

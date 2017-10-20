@@ -6,6 +6,8 @@ permalink: /kb/186/Q186771/
 
 ## Q186771: Err Msg: Windows Could Not Combine VxDs into a Monolithic...
 
+{% raw %}
+
 	Article: Q186771
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -183,3 +185,5 @@ permalink: /kb/186/Q186771/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137018/
 
 ## Q137018: Availability of C2 Security Compliant Windows NT
 
+{% raw %}
+
 	Article: Q137018
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,4.0
@@ -69,3 +71,5 @@ permalink: /kb/137/Q137018/
 	
 	=============================================================================
 	
+
+{% endraw %}

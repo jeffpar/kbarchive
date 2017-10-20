@@ -6,6 +6,8 @@ permalink: /kb/029/Q29845/
 
 ## Q29845: C 5.10 MTDYNA.DOC: Matrix of Components
 
+{% raw %}
+
 	Article: Q29845
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -58,3 +60,5 @@ permalink: /kb/029/Q29845/
 	.h         \INCLUDE         \INCLUDE\MT       \INCLUDE         \INCLUDE\MT
 	
 	DLL        Not defined      Not defined       Not defined      Defined
+
+{% endraw %}

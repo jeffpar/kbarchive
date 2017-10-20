@@ -6,6 +6,8 @@ permalink: /kb/148/Q148495/
 
 ## Q148495: PRB: Tool Tips Stop Showing After WM_xBUTTONDOWN
 
+{% raw %}
+
 	Article: Q148495
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.1,2.2,4.0,4.1
@@ -146,3 +148,5 @@ permalink: /kb/148/Q148495/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/044/Q44160/
 
 ## Q44160: How to Debug Large QuickC 2.00 Program Inside the Environment
 
+{% raw %}
+
 	Article: Q44160
 	Product(s): See article
 	Version(s): 2.00
@@ -37,3 +39,5 @@ permalink: /kb/044/Q44160/
 	Note: To turn off debug information, go to the Options-Make menu and
 	select the release flags. Do not try to turn off debugging information
 	by selecting line numbers only in the compiler flags.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/121/Q121689/
 
 ## Q121689: TCP/IP Help File States Incorrect Definition for LPQ
 
+{% raw %}
+
 	Article: Q121689
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/121/Q121689/
 	
 	=============================================================================
 	
+
+{% endraw %}

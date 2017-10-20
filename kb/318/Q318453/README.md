@@ -6,6 +6,8 @@ permalink: /kb/318/Q318453/
 
 ## Q318453: PRB: Create a Shared Install Point for MSDN
 
+{% raw %}
+
 	Article: Q318453
 	Product(s): Microsoft Developer Network
 	Version(s): 
@@ -125,3 +127,5 @@ permalink: /kb/318/Q318453/
 	
 	=============================================================================
 	
+
+{% endraw %}

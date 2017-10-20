@@ -6,6 +6,8 @@ permalink: /kb/192/Q192639/
 
 ## Q192639: HOWTO: Use PDW to Deploy Using the FTP Web Publishing Method
 
+{% raw %}
+
 	Article: Q192639
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -117,3 +119,5 @@ permalink: /kb/192/Q192639/
 	
 	=============================================================================
 	
+
+{% endraw %}

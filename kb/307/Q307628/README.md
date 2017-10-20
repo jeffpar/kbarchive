@@ -6,6 +6,8 @@ permalink: /kb/307/Q307628/
 
 ## Q307628: XFOR: Routing to Multiple Domains with a Single SMTP Proxy Addr
 
+{% raw %}
+
 	Article: Q307628
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -128,3 +130,5 @@ permalink: /kb/307/Q307628/
 	
 	=============================================================================
 	
+
+{% endraw %}

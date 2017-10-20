@@ -6,6 +6,8 @@ permalink: /kb/139/Q139988/
 
 ## Q139988: Maximum for Compression Agent UltraPack Setting is 999 Days
 
+{% raw %}
+
 	Article: Q139988
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -54,3 +56,5 @@ permalink: /kb/139/Q139988/
 	
 	=============================================================================
 	
+
+{% endraw %}

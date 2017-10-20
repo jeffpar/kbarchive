@@ -6,6 +6,8 @@ permalink: /kb/200/Q200915/
 
 ## Q200915: WD97: ErrMsg: Do You Want to Revert to the Saved &lt;File Name&gt;?
 
+{% raw %}
+
 	Article: Q200915
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -227,3 +229,5 @@ permalink: /kb/200/Q200915/
 	
 	=============================================================================
 	
+
+{% endraw %}

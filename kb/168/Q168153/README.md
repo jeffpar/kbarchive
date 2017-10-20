@@ -6,6 +6,8 @@ permalink: /kb/168/Q168153/
 
 ## Q168153: FIX: DBGrid Bound to RDC Displays a Single Row After MoveLast
 
+{% raw %}
+
 	Article: Q168153
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0 97
@@ -49,3 +51,5 @@ permalink: /kb/168/Q168153/
 	
 	=============================================================================
 	
+
+{% endraw %}

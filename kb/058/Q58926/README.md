@@ -6,6 +6,8 @@ permalink: /kb/058/Q58926/
 
 ## Q58926: Array Storage DGROUP vs. Far Heap Differs in .EXE vs. QB.EXE
 
+{% raw %}
+
 	Article: Q58926
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -73,3 +75,5 @@ permalink: /kb/058/Q58926/
 	REM $DYNAMIC
 	DIM ar3(100) AS INTEGER
 	PRINT VARSEG(s$), VARSEG(ar1(0)), VARSEG(ar2(0)), VARSEG(ar3(0))
+
+{% endraw %}

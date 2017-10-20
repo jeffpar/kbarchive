@@ -6,6 +6,8 @@ permalink: /kb/100/Q100382/
 
 ## Q100382: Doc Err: Invalid Manual Reference to Character Map Help Topic
 
+{% raw %}
+
 	Article: Q100382
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/100/Q100382/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130515/
 
 ## Q130515: NetBIOS Parameter Ignored in Windows NT Mail
 
+{% raw %}
+
 	Article: Q130515
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5
@@ -74,3 +76,5 @@ permalink: /kb/130/Q130515/
 	
 	=============================================================================
 	
+
+{% endraw %}

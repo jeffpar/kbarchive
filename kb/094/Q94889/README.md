@@ -6,6 +6,8 @@ permalink: /kb/094/Q94889/
 
 ## Q94889: SMC Microchannel Adapter Works with SMC EtherCard Driver
 
+{% raw %}
+
 	Article: Q94889
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/094/Q94889/
 	
 	=============================================================================
 	
+
+{% endraw %}

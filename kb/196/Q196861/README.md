@@ -6,6 +6,8 @@ permalink: /kb/196/Q196861/
 
 ## Q196861: WD97:Numbering Displays in Outline View with Show Formatting Off
 
+{% raw %}
+
 	Article: Q196861
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -44,3 +46,5 @@ permalink: /kb/196/Q196861/
 	
 	=============================================================================
 	
+
+{% endraw %}

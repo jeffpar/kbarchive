@@ -6,6 +6,8 @@ permalink: /kb/185/Q185223/
 
 ## Q185223: HOW TO: Manually Uninstall Visual Basic CE Programs
 
+{% raw %}
+
 	Article: Q185223
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -256,3 +258,5 @@ permalink: /kb/185/Q185223/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/296/Q296385/
 
 ## Q296385: SMS: Delay When You Try to Delete Collections
 
+{% raw %}
+
 	Article: Q296385
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -62,3 +64,5 @@ permalink: /kb/296/Q296385/
 	
 	=============================================================================
 	
+
+{% endraw %}

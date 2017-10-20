@@ -6,6 +6,8 @@ permalink: /kb/070/Q70767/
 
 ## Q70767: Zeos Machines Hang on Windows 3.0 Disk 2
 
+{% raw %}
+
 	Article: Q70767
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/070/Q70767/
 	
 	=============================================================================
 	
+
+{% endraw %}

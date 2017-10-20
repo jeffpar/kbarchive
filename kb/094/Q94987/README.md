@@ -6,6 +6,8 @@ permalink: /kb/094/Q94987/
 
 ## Q94987: Golf Hangs Using 16-Bit MediaVision Sound Drivers
 
+{% raw %}
+
 	Article: Q94987
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/094/Q94987/
 	
 	=============================================================================
 	
+
+{% endraw %}

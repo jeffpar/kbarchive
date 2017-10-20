@@ -6,6 +6,8 @@ permalink: /kb/083/Q83824/
 
 ## Q83824: SoundBlaster MCV Sound Card Not Supported by Windows 3.1
 
+{% raw %}
+
 	Article: Q83824
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/083/Q83824/
 	
 	=============================================================================
 	
+
+{% endraw %}

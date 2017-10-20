@@ -6,6 +6,8 @@ permalink: /kb/224/Q224982/
 
 ## Q224982: Err: STOP 0x0000001e {0xc000005, 0xa1000aa7, 0x0, 0x00440194}
 
+{% raw %}
+
 	Article: Q224982
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4
@@ -113,3 +115,5 @@ permalink: /kb/224/Q224982/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165928/
 
 ## Q165928: WD97: Range.Text Length Includes &quot;End Of Cell&quot; for Table Cell
 
+{% raw %}
+
 	Article: Q165928
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -141,3 +143,5 @@ permalink: /kb/165/Q165928/
 	
 	=============================================================================
 	
+
+{% endraw %}

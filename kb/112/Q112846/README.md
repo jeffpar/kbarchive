@@ -6,6 +6,8 @@ permalink: /kb/112/Q112846/
 
 ## Q112846: WFWG 3.11 Disk 7 Directory Listing (5.25 Inch, 1.2 MB)
 
+{% raw %}
+
 	Article: Q112846
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -119,3 +121,5 @@ permalink: /kb/112/Q112846/
 	
 	=============================================================================
 	
+
+{% endraw %}

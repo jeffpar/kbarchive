@@ -6,6 +6,8 @@ permalink: /kb/239/Q239119/
 
 ## Q239119: BUG: FDISK Reports Incorrect Disk Capacity for PCMCIA ATA Drives
 
+{% raw %}
+
 	Article: Q239119
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -55,3 +57,5 @@ permalink: /kb/239/Q239119/
 	
 	=============================================================================
 	
+
+{% endraw %}

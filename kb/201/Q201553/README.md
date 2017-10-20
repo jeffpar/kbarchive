@@ -6,6 +6,8 @@ permalink: /kb/201/Q201553/
 
 ## Q201553: HOWTO: Disable the Window Close Button in an MDI Application
 
+{% raw %}
+
 	Article: Q201553
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -81,3 +83,5 @@ permalink: /kb/201/Q201553/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137097/
 
 ## Q137097: HOWTO: Implement a Real-Time Application Using OLE
 
+{% raw %}
+
 	Article: Q137097
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -105,3 +107,5 @@ permalink: /kb/137/Q137097/
 	
 	=============================================================================
 	
+
+{% endraw %}

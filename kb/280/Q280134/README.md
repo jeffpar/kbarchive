@@ -6,6 +6,8 @@ permalink: /kb/280/Q280134/
 
 ## Q280134: PRB: Error When You Create SQL Server TEMP Tables Using RDO
 
+{% raw %}
+
 	Article: Q280134
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0,6.0 SP3,6.0 SP4,6.5,6.5 Service Pack 1 and later,7.0,7.0 Service Pack 1,7.
@@ -144,3 +146,5 @@ permalink: /kb/280/Q280134/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130743/
 
 ## Q130743: Setup Does Not Detect IBM Token Ring 16/4 on IBM Aptiva
 
+{% raw %}
+
 	Article: Q130743
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -61,3 +63,5 @@ permalink: /kb/130/Q130743/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/265/Q265271/
 
 ## Q265271: Error Message Appears When Using Iomega Zip Drive
 
+{% raw %}
+
 	Article: Q265271
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -81,3 +83,5 @@ permalink: /kb/265/Q265271/
 	
 	=============================================================================
 	
+
+{% endraw %}

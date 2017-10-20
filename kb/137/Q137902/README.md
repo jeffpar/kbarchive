@@ -6,6 +6,8 @@ permalink: /kb/137/Q137902/
 
 ## Q137902: SNASERVR.EXE Traps When it Receives an Illegal SIGNAL Command
 
+{% raw %}
+
 	Article: Q137902
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -91,3 +93,5 @@ permalink: /kb/137/Q137902/
 	
 	=============================================================================
 	
+
+{% endraw %}

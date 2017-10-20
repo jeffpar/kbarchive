@@ -6,6 +6,8 @@ permalink: /kb/130/Q130369/
 
 ## Q130369: Cannot See Highlight in Menus After Upgrade
 
+{% raw %}
+
 	Article: Q130369
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/130/Q130369/
 	
 	=============================================================================
 	
+
+{% endraw %}

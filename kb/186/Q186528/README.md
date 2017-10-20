@@ -6,6 +6,8 @@ permalink: /kb/186/Q186528/
 
 ## Q186528: Document Window Problem in 16-Bit Internet Explorer 3.x
 
+{% raw %}
+
 	Article: Q186528
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -109,3 +111,5 @@ permalink: /kb/186/Q186528/
 	
 	=============================================================================
 	
+
+{% endraw %}

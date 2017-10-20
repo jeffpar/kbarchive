@@ -6,6 +6,8 @@ permalink: /kb/130/Q130393/
 
 ## Q130393: Writer/Artist: Colored Squares Appear Around Some Objects
 
+{% raw %}
+
 	Article: Q130393
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -77,3 +79,5 @@ permalink: /kb/130/Q130393/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/310/Q310649/
 
 ## Q310649: ISAPI DLLs Built w/ MFC Static Library Vulnerable to DoS Attacks
 
+{% raw %}
+
 	Article: Q310649
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -103,3 +105,5 @@ permalink: /kb/310/Q310649/
 	
 	=============================================================================
 	
+
+{% endraw %}

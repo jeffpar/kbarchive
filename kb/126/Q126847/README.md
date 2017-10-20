@@ -6,6 +6,8 @@ permalink: /kb/126/Q126847/
 
 ## Q126847: How to Change the Title for an MS-DOS-Based Application
 
+{% raw %}
+
 	Article: Q126847
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -51,3 +53,5 @@ permalink: /kb/126/Q126847/
 	
 	=============================================================================
 	
+
+{% endraw %}

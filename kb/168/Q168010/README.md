@@ -6,6 +6,8 @@ permalink: /kb/168/Q168010/
 
 ## Q168010: FIX: /Od May Generate Destructor for Unconstructed Temp Object
 
+{% raw %}
+
 	Article: Q168010
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -93,3 +95,5 @@ permalink: /kb/168/Q168010/
 	
 	=============================================================================
 	
+
+{% endraw %}

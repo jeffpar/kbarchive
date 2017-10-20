@@ -6,6 +6,8 @@ permalink: /kb/193/Q193639/
 
 ## Q193639: XFOR: Internet Mail Service Stops with Event Log Error 4116
 
+{% raw %}
+
 	Article: Q193639
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -104,3 +106,5 @@ permalink: /kb/193/Q193639/
 	
 	=============================================================================
 	
+
+{% endraw %}

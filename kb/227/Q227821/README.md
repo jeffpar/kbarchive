@@ -6,6 +6,8 @@ permalink: /kb/227/Q227821/
 
 ## Q227821: Blue Screen STOP Error When Connecting to UNIX Server Volume
 
+{% raw %}
+
 	Article: Q227821
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/227/Q227821/
 	
 	=============================================================================
 	
+
+{% endraw %}

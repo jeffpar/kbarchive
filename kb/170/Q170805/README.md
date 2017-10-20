@@ -6,6 +6,8 @@ permalink: /kb/170/Q170805/
 
 ## Q170805: Files and Folders Not Removed After Canceling ZAK Setup
 
+{% raw %}
+
 	Article: Q170805
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0
@@ -49,3 +51,5 @@ permalink: /kb/170/Q170805/
 	
 	=============================================================================
 	
+
+{% endraw %}

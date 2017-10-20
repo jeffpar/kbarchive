@@ -6,6 +6,8 @@ permalink: /kb/170/Q170830/
 
 ## Q170830: Learn Java Now Overwrites Later Version Of Internet Explorer
 
+{% raw %}
+
 	Article: Q170830
 	Product(s): Microsoft Press
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/170/Q170830/
 	
 	=============================================================================
 	
+
+{% endraw %}

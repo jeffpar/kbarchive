@@ -6,6 +6,8 @@ permalink: /kb/164/Q164962/
 
 ## Q164962: Added Support for the Character Mapping Section of the PDF File
 
+{% raw %}
+
 	Article: Q164962
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -90,3 +92,5 @@ permalink: /kb/164/Q164962/
 	
 	=============================================================================
 	
+
+{% endraw %}

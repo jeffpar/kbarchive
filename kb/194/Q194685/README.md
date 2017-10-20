@@ -6,6 +6,8 @@ permalink: /kb/194/Q194685/
 
 ## Q194685: X400: Foreign System Ends Connection before Message Is Sent
 
+{% raw %}
+
 	Article: Q194685
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -85,3 +87,5 @@ permalink: /kb/194/Q194685/
 	
 	=============================================================================
 	
+
+{% endraw %}

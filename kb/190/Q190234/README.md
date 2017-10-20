@@ -6,6 +6,8 @@ permalink: /kb/190/Q190234/
 
 ## Q190234: PRB: How to Modify the Personal Directory for All New Users
 
+{% raw %}
+
 	Article: Q190234
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -165,3 +167,5 @@ permalink: /kb/190/Q190234/
 	
 	=============================================================================
 	
+
+{% endraw %}

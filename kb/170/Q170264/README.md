@@ -6,6 +6,8 @@ permalink: /kb/170/Q170264/
 
 ## Q170264: Office 97 Programs Do Not Expand Environment Variables
 
+{% raw %}
+
 	Article: Q170264
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:
@@ -63,3 +65,5 @@ permalink: /kb/170/Q170264/
 	
 	=============================================================================
 	
+
+{% endraw %}

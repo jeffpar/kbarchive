@@ -6,6 +6,8 @@ permalink: /kb/059/Q59671/
 
 ## Q59671: Incorrect Pages in HPPCL Duplex Mode
 
+{% raw %}
+
 	Article: Q59671
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -43,3 +45,5 @@ permalink: /kb/059/Q59671/
 	
 	=============================================================================
 	
+
+{% endraw %}

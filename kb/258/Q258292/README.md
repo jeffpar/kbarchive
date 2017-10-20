@@ -6,6 +6,8 @@ permalink: /kb/258/Q258292/
 
 ## Q258292: XIMS: How to Disable Support for ETRN
 
+{% raw %}
+
 	Article: Q258292
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -90,3 +92,5 @@ permalink: /kb/258/Q258292/
 	
 	=============================================================================
 	
+
+{% endraw %}

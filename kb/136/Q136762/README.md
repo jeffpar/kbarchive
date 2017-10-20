@@ -6,6 +6,8 @@ permalink: /kb/136/Q136762/
 
 ## Q136762: BETA: Windows NT Shell Technology Preview Beta Available
 
+{% raw %}
+
 	Article: Q136762
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -53,3 +55,5 @@ permalink: /kb/136/Q136762/
 	
 	=============================================================================
 	
+
+{% endraw %}

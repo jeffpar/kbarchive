@@ -6,6 +6,8 @@ permalink: /kb/123/Q123474/
 
 ## Q123474: HOWTO: Logon With a Name Other than the System Logon
 
+{% raw %}
+
 	Article: Q123474
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/123/Q123474/
 	
 	=============================================================================
 	
+
+{% endraw %}

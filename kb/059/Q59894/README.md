@@ -6,6 +6,8 @@ permalink: /kb/059/Q59894/
 
 ## Q59894: Linker Error L2013 May Be a Result of a Problem in MASM 5.10
 
+{% raw %}
+
 	Article: Q59894
 	Product(s): See article
 	Version(s): 3.x 4.06 4.07 5.01.21 5.02 5.03 5.05
@@ -29,3 +31,5 @@ permalink: /kb/059/Q59894/
 	
 	The easiest workaround is to break up the duplication(s) into smaller
 	parts.
+
+{% endraw %}

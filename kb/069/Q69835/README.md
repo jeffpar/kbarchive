@@ -6,6 +6,8 @@ permalink: /kb/069/Q69835/
 
 ## Q69835: Epson Equity III Does Not Run Standard Mode
 
+{% raw %}
+
 	Article: Q69835
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/069/Q69835/
 	
 	=============================================================================
 	
+
+{% endraw %}

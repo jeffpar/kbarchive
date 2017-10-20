@@ -6,6 +6,8 @@ permalink: /kb/168/Q168231/
 
 ## Q168231: System Policies Are Not Applied in Windows NT
 
+{% raw %}
+
 	Article: Q168231
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -90,3 +92,5 @@ permalink: /kb/168/Q168231/
 	
 	=============================================================================
 	
+
+{% endraw %}

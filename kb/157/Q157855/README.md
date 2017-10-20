@@ -6,6 +6,8 @@ permalink: /kb/157/Q157855/
 
 ## Q157855: PRB: AfterRowColChange Event Code Does Not Enable Grid Cell
 
+{% raw %}
+
 	Article: Q157855
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -97,3 +99,5 @@ permalink: /kb/157/Q157855/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242551/
 
 ## Q242551: Err Msg: Setup Has Determined That Your Original Install Path...
 
+{% raw %}
+
 	Article: Q242551
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -66,3 +68,5 @@ permalink: /kb/242/Q242551/
 	
 	=============================================================================
 	
+
+{% endraw %}

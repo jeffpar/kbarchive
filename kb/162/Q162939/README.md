@@ -6,6 +6,8 @@ permalink: /kb/162/Q162939/
 
 ## Q162939: WD97: Cancel Action Doesn't Function in Converted Macro
 
+{% raw %}
+
 	Article: Q162939
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -139,3 +141,5 @@ permalink: /kb/162/Q162939/
 	
 	=============================================================================
 	
+
+{% endraw %}

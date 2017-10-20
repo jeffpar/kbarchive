@@ -6,6 +6,8 @@ permalink: /kb/084/Q84354/
 
 ## Q84354: Cannot Find DOS Application when Executed from Windows 3.1
 
+{% raw %}
+
 	Article: Q84354
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -71,3 +73,5 @@ permalink: /kb/084/Q84354/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163295/
 
 ## Q163295: XCON: MTA Events 2219, 2206, and 2207 (MTACHECK)
 
+{% raw %}
+
 	Article: Q163295
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -74,3 +76,5 @@ permalink: /kb/163/Q163295/
 	
 	=============================================================================
 	
+
+{% endraw %}

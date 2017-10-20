@@ -6,6 +6,8 @@ permalink: /kb/117/Q117385/
 
 ## Q117385: FIX: printf Does Not Recognize &quot;&#92;n&#92;r&quot; when Using Conversion
 
+{% raw %}
+
 	Article: Q117385
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -70,3 +72,5 @@ permalink: /kb/117/Q117385/
 	
 	=============================================================================
 	
+
+{% endraw %}

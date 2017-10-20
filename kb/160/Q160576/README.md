@@ -6,6 +6,8 @@ permalink: /kb/160/Q160576/
 
 ## Q160576: 3270 Sessions Unexpectedly Return to SSCP Screen
 
+{% raw %}
+
 	Article: Q160576
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -109,3 +111,5 @@ permalink: /kb/160/Q160576/
 	
 	=============================================================================
 	
+
+{% endraw %}

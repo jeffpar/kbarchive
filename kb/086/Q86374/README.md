@@ -6,6 +6,8 @@ permalink: /kb/086/Q86374/
 
 ## Q86374: PC DOS Mac: Running 3.0 Clients Against Older Postoffices
 
+{% raw %}
+
 	Article: Q86374
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a
@@ -58,3 +60,5 @@ permalink: /kb/086/Q86374/
 	
 	=============================================================================
 	
+
+{% endraw %}

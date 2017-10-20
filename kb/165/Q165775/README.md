@@ -6,6 +6,8 @@ permalink: /kb/165/Q165775/
 
 ## Q165775: HOWTO: Set up a Visual FoxPro Internet Server
 
+{% raw %}
+
 	Article: Q165775
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,5.0,5.0a,6.0
@@ -122,3 +124,5 @@ permalink: /kb/165/Q165775/
 	
 	=============================================================================
 	
+
+{% endraw %}

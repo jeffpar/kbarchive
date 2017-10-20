@@ -6,6 +6,8 @@ permalink: /kb/247/Q247327/
 
 ## Q247327: Cannot Start Cluster Administrator After Adding Resources
 
+{% raw %}
+
 	Article: Q247327
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -107,3 +109,5 @@ permalink: /kb/247/Q247327/
 	
 	=============================================================================
 	
+
+{% endraw %}

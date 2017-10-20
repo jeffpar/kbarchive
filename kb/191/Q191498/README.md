@@ -6,6 +6,8 @@ permalink: /kb/191/Q191498/
 
 ## Q191498: INFO: Where to Find the Class Browser Source Code Files
 
+{% raw %}
+
 	Article: Q191498
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -284,3 +286,5 @@ permalink: /kb/191/Q191498/
 	
 	=============================================================================
 	
+
+{% endraw %}

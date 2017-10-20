@@ -6,6 +6,8 @@ permalink: /kb/073/Q73710/
 
 ## Q73710: Multiple Instances of MS-DOS Shell Version 5.0 or Later
 
+{% raw %}
+
 	Article: Q73710
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -78,3 +80,5 @@ permalink: /kb/073/Q73710/
 	
 	=============================================================================
 	
+
+{% endraw %}

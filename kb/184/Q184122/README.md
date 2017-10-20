@@ -6,6 +6,8 @@ permalink: /kb/184/Q184122/
 
 ## Q184122: Remote APPC LU Aliases Do Not Appear in 5250 Applet
 
+{% raw %}
+
 	Article: Q184122
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,4.0
@@ -69,3 +71,5 @@ permalink: /kb/184/Q184122/
 	
 	=============================================================================
 	
+
+{% endraw %}

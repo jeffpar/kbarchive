@@ -6,6 +6,8 @@ permalink: /kb/151/Q151978/
 
 ## Q151978: XADM: EcPropSize-MAPI_E_NOT_ENOUGH_MEMORY Reported by ISINTEG
 
+{% raw %}
+
 	Article: Q151978
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:97; winnt:4.0,5.0
@@ -85,3 +87,5 @@ permalink: /kb/151/Q151978/
 	
 	=============================================================================
 	
+
+{% endraw %}

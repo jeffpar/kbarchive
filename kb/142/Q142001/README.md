@@ -6,6 +6,8 @@ permalink: /kb/142/Q142001/
 
 ## Q142001: FAQ: SQL Queries in Visual Basic
 
+{% raw %}
+
 	Article: Q142001
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -180,3 +182,5 @@ permalink: /kb/142/Q142001/
 	
 	=============================================================================
 	
+
+{% endraw %}

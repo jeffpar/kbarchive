@@ -6,6 +6,8 @@ permalink: /kb/174/Q174174/
 
 ## Q174174: XADM: Incorrect Error Message When Configuring MSMAIL Connector
 
+{% raw %}
+
 	Article: Q174174
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/174/Q174174/
 	
 	=============================================================================
 	
+
+{% endraw %}

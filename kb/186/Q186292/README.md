@@ -6,6 +6,8 @@ permalink: /kb/186/Q186292/
 
 ## Q186292: XADM: Database Size Increases Even Though Free Space Available
 
+{% raw %}
+
 	Article: Q186292
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -61,3 +63,5 @@ permalink: /kb/186/Q186292/
 	
 	=============================================================================
 	
+
+{% endraw %}

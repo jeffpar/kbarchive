@@ -6,6 +6,8 @@ permalink: /kb/130/Q130029/
 
 ## Q130029: Error Message: The Emergency Repair Disk Is Full
 
+{% raw %}
+
 	Article: Q130029
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0,4.5
@@ -124,3 +126,5 @@ permalink: /kb/130/Q130029/
 	
 	=============================================================================
 	
+
+{% endraw %}

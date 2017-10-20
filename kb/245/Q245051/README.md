@@ -6,6 +6,8 @@ permalink: /kb/245/Q245051/
 
 ## Q245051: Updated Collections Go to Every Child Site with New Child Site
 
+{% raw %}
+
 	Article: Q245051
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -95,3 +97,5 @@ permalink: /kb/245/Q245051/
 	
 	=============================================================================
 	
+
+{% endraw %}

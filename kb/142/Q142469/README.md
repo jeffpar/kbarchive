@@ -6,6 +6,8 @@ permalink: /kb/142/Q142469/
 
 ## Q142469: BUG: DBCombo Dropdown List Detaches While Dragging Parent Form
 
+{% raw %}
+
 	Article: Q142469
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,95
@@ -88,3 +90,5 @@ permalink: /kb/142/Q142469/
 	
 	=============================================================================
 	
+
+{% endraw %}

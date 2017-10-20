@@ -6,6 +6,8 @@ permalink: /kb/170/Q170160/
 
 ## Q170160: INFO: VB 6.0 Readme Part 5: Samples Issues
 
+{% raw %}
+
 	Article: Q170160
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -222,3 +224,5 @@ permalink: /kb/170/Q170160/
 	
 	=============================================================================
 	
+
+{% endraw %}

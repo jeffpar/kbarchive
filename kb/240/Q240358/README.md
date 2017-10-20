@@ -6,6 +6,8 @@ permalink: /kb/240/Q240358/
 
 ## Q240358: Ntmarta.dll File in German SP5 Has Conflicting Base Address
 
+{% raw %}
+
 	Article: Q240358
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP5
@@ -94,3 +96,5 @@ permalink: /kb/240/Q240358/
 	
 	=============================================================================
 	
+
+{% endraw %}

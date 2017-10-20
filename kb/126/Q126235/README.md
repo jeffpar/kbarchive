@@ -6,6 +6,8 @@ permalink: /kb/126/Q126235/
 
 ## Q126235: Flight Simulator: Fatal Error on DX/4 and OverDrive Processors
 
+{% raw %}
+
 	Article: Q126235
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -87,3 +89,5 @@ permalink: /kb/126/Q126235/
 	
 	=============================================================================
 	
+
+{% endraw %}

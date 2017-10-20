@@ -6,6 +6,8 @@ permalink: /kb/120/Q120607/
 
 ## Q120607: Cannot Browse If No SMB Server Exists in Your Workgroup
 
+{% raw %}
+
 	Article: Q120607
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -62,3 +64,5 @@ permalink: /kb/120/Q120607/
 	
 	=============================================================================
 	
+
+{% endraw %}

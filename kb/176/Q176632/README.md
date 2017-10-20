@@ -6,6 +6,8 @@ permalink: /kb/176/Q176632/
 
 ## Q176632: FIX: MSChart Legend Text Gets Truncated
 
+{% raw %}
+
 	Article: Q176632
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/176/Q176632/
 	
 	=============================================================================
 	
+
+{% endraw %}

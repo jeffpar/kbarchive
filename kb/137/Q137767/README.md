@@ -6,6 +6,8 @@ permalink: /kb/137/Q137767/
 
 ## Q137767: Streets 4.0: Blue Labels Obscured By Coastline
 
+{% raw %}
+
 	Article: Q137767
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/137/Q137767/
 	
 	=============================================================================
 	
+
+{% endraw %}

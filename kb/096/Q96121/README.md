@@ -6,6 +6,8 @@ permalink: /kb/096/Q96121/
 
 ## Q96121: How to Configure MSDLC Transport on WfW 3.1 Client
 
+{% raw %}
+
 	Article: Q96121
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/096/Q96121/
 	
 	=============================================================================
 	
+
+{% endraw %}

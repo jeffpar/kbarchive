@@ -6,6 +6,8 @@ permalink: /kb/149/Q149515/
 
 ## Q149515: DOC: GetProcAddress Does Not Support Ordinal Symbols
 
+{% raw %}
+
 	Article: Q149515
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:4.0
@@ -44,3 +46,5 @@ permalink: /kb/149/Q149515/
 	
 	=============================================================================
 	
+
+{% endraw %}

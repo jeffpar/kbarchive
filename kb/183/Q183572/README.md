@@ -6,6 +6,8 @@ permalink: /kb/183/Q183572/
 
 ## Q183572: BUG: ADO Definedsize Values Incorrect for Certain Data Types
 
+{% raw %}
+
 	Article: Q183572
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -60,3 +62,5 @@ permalink: /kb/183/Q183572/
 	
 	=============================================================================
 	
+
+{% endraw %}

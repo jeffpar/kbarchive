@@ -6,6 +6,8 @@ permalink: /kb/168/Q168305/
 
 ## Q168305: MSN Does Not Recognize the Creatix ISDN Card
 
+{% raw %}
+
 	Article: Q168305
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5
@@ -97,3 +99,5 @@ permalink: /kb/168/Q168305/
 	
 	=============================================================================
 	
+
+{% endraw %}

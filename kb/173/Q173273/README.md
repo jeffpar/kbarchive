@@ -6,6 +6,8 @@ permalink: /kb/173/Q173273/
 
 ## Q173273: XADM: Dr Watson Access Violation in Admin.exe
 
+{% raw %}
+
 	Article: Q173273
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -62,3 +64,5 @@ permalink: /kb/173/Q173273/
 	
 	=============================================================================
 	
+
+{% endraw %}

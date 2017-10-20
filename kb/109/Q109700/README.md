@@ -6,6 +6,8 @@ permalink: /kb/109/Q109700/
 
 ## Q109700: CONN: MACGATE.EXE Does Not Accept -BR Command-Line Option
 
+{% raw %}
+
 	Article: Q109700
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -64,3 +66,5 @@ permalink: /kb/109/Q109700/
 	
 	=============================================================================
 	
+
+{% endraw %}

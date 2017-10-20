@@ -6,6 +6,8 @@ permalink: /kb/043/Q43401/
 
 ## Q43401: How to Test for an Error When Using _bios_serialcom Service
 
+{% raw %}
+
 	Article: Q43401
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -48,3 +50,5 @@ permalink: /kb/043/Q43401/
 	
 	This information is explained on Page 431 of "Advanced MS-DOS" by
 	Ray Duncan.
+
+{% endraw %}

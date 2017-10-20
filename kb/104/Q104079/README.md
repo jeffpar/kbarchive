@@ -6,6 +6,8 @@ permalink: /kb/104/Q104079/
 
 ## Q104079: PC Adm: Err Msg: Notice 27: Disk Directory Full/Error Writing
 
+{% raw %}
+
 	Article: Q104079
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -58,3 +60,5 @@ permalink: /kb/104/Q104079/
 	
 	=============================================================================
 	
+
+{% endraw %}

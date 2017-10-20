@@ -6,6 +6,8 @@ permalink: /kb/104/Q104219/
 
 ## Q104219: XTree Gold Slow Screen Redraw Under Windows NT
 
+{% raw %}
+
 	Article: Q104219
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -64,3 +66,5 @@ permalink: /kb/104/Q104219/
 	
 	=============================================================================
 	
+
+{% endraw %}

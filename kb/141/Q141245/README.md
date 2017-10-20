@@ -6,6 +6,8 @@ permalink: /kb/141/Q141245/
 
 ## Q141245: Logon Delay Using TCP/IP with LMHOSTS or DNS
 
+{% raw %}
+
 	Article: Q141245
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -76,3 +78,5 @@ permalink: /kb/141/Q141245/
 	
 	=============================================================================
 	
+
+{% endraw %}

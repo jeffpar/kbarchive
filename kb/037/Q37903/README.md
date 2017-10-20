@@ -6,6 +6,8 @@ permalink: /kb/037/Q37903/
 
 ## Q37903: ON TIMER GOSUB; ON PLAY Time Increments Smaller Than 1 Second
 
+{% raw %}
+
 	Article: Q37903
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -148,3 +150,5 @@ permalink: /kb/037/Q37903/
 	
 	      PLAY "MB N0"       'create a new "song".
 	RETURN
+
+{% endraw %}

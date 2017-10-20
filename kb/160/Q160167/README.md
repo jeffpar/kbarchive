@@ -6,6 +6,8 @@ permalink: /kb/160/Q160167/
 
 ## Q160167: NBA Full Court: Incorrect 256 Color Error Message During Setup
 
+{% raw %}
+
 	Article: Q160167
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -67,3 +69,5 @@ permalink: /kb/160/Q160167/
 	
 	=============================================================================
 	
+
+{% endraw %}

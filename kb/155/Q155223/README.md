@@ -6,6 +6,8 @@ permalink: /kb/155/Q155223/
 
 ## Q155223: Encarta 96: Contents of the July 1996 Yearbook Update
 
+{% raw %}
+
 	Article: Q155223
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :1996 edition
@@ -143,3 +145,5 @@ permalink: /kb/155/Q155223/
 	
 	=============================================================================
 	
+
+{% endraw %}

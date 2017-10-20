@@ -6,6 +6,8 @@ permalink: /kb/131/Q131191/
 
 ## Q131191: Cannot Run The Microsoft Network from Server
 
+{% raw %}
+
 	Article: Q131191
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5
@@ -46,3 +48,5 @@ permalink: /kb/131/Q131191/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173000/
 
 ## Q173000: Moving Files on Macintosh Volume Causes Stop 0x0000001E
 
+{% raw %}
+
 	Article: Q173000
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -67,3 +69,5 @@ permalink: /kb/173/Q173000/
 	
 	=============================================================================
 	
+
+{% endraw %}

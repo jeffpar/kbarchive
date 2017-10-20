@@ -6,6 +6,8 @@ permalink: /kb/180/Q180211/
 
 ## Q180211: BUG: Synonyms Do Not Work with Oracle Stored Procedures
 
+{% raw %}
+
 	Article: Q180211
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.1,2.5,2.6,2.7,Build 2.573.2927,Build 2.573.3513,Build 2.573.3711,Build 2.573.4202,Bu
@@ -55,3 +57,5 @@ permalink: /kb/180/Q180211/
 	
 	=============================================================================
 	
+
+{% endraw %}

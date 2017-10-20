@@ -6,6 +6,8 @@ permalink: /kb/168/Q168347/
 
 ## Q168347: XADM: New Mailbox Attribute in Exchange Server 5.0 and 5.5
 
+{% raw %}
+
 	Article: Q168347
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -128,3 +130,5 @@ permalink: /kb/168/Q168347/
 	
 	=============================================================================
 	
+
+{% endraw %}

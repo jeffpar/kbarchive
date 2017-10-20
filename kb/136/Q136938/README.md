@@ -6,6 +6,8 @@ permalink: /kb/136/Q136938/
 
 ## Q136938: Missing Third-Party Compression Driver in MS-DOS Mode
 
+{% raw %}
+
 	Article: Q136938
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/136/Q136938/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150352/
 
 ## Q150352: MSB Earth: Other Program Windows Are Resized After Using MSB
 
+{% raw %}
+
 	Article: Q150352
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,95
@@ -74,3 +76,5 @@ permalink: /kb/150/Q150352/
 	
 	=============================================================================
 	
+
+{% endraw %}

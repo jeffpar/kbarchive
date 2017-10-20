@@ -6,6 +6,8 @@ permalink: /kb/110/Q110572/
 
 ## Q110572: Deleting Fax from Outbox Does Not Remove It from the Queue
 
+{% raw %}
+
 	Article: Q110572
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -43,3 +45,5 @@ permalink: /kb/110/Q110572/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/240/Q240401/
 
 ## Q240401: BUG:Repeatedly Opening &amp; Closing Recordset Increase Connections
 
+{% raw %}
+
 	Article: Q240401
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -128,3 +130,5 @@ permalink: /kb/240/Q240401/
 	
 	=============================================================================
 	
+
+{% endraw %}

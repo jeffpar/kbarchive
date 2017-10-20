@@ -6,6 +6,8 @@ permalink: /kb/168/Q168420/
 
 ## Q168420: FIX: NMAKE Build Fails When Intermediate Dir Starts with ..&#92;
 
+{% raw %}
+
 	Article: Q168420
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -79,3 +81,5 @@ permalink: /kb/168/Q168420/
 	
 	=============================================================================
 	
+
+{% endraw %}

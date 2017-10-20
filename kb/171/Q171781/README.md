@@ -6,6 +6,8 @@ permalink: /kb/171/Q171781/
 
 ## Q171781: DNS Server Fails to Start Due to Unavailable RPC Server Error
 
+{% raw %}
+
 	Article: Q171781
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -116,3 +118,5 @@ permalink: /kb/171/Q171781/
 	
 	=============================================================================
 	
+
+{% endraw %}

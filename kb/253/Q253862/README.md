@@ -6,6 +6,8 @@ permalink: /kb/253/Q253862/
 
 ## Q253862: Error Messages When MMS Database Directory Size Reaches Limit
 
+{% raw %}
+
 	Article: Q253862
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,2.1
@@ -75,3 +77,5 @@ permalink: /kb/253/Q253862/
 	
 	=============================================================================
 	
+
+{% endraw %}

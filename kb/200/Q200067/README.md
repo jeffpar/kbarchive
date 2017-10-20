@@ -6,6 +6,8 @@ permalink: /kb/200/Q200067/
 
 ## Q200067: Server-Side Session Variables Do Not Work in Internet Explorer
 
+{% raw %}
+
 	Article: Q200067
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:4.0,4.01; winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/200/Q200067/
 	
 	=============================================================================
 	
+
+{% endraw %}

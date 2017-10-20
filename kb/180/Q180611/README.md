@@ -6,6 +6,8 @@ permalink: /kb/180/Q180611/
 
 ## Q180611: PRB: Cannot Set Default Value for Access (Jet) Text Fields
 
+{% raw %}
+
 	Article: Q180611
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -142,3 +144,5 @@ permalink: /kb/180/Q180611/
 	
 	=============================================================================
 	
+
+{% endraw %}

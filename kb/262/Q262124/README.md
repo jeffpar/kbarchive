@@ -6,6 +6,8 @@ permalink: /kb/262/Q262124/
 
 ## Q262124: XCON: Message Loop to SMTP Custom Recipient Over X.400 Connector
 
+{% raw %}
+
 	Article: Q262124
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -104,3 +106,5 @@ permalink: /kb/262/Q262124/
 	
 	=============================================================================
 	
+
+{% endraw %}

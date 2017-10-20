@@ -6,6 +6,8 @@ permalink: /kb/058/Q58175/
 
 ## Q58175: BASIC PDS 7.00 List of Stub Files for Linking Smaller .EXE's
 
+{% raw %}
+
 	Article: Q58175
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -112,3 +114,5 @@ permalink: /kb/058/Q58175/
 	                      special treatment of control characters. The
 	                      TSCNIOxx stub files cannot be used with any of
 	                      the other graphics stub files.
+
+{% endraw %}

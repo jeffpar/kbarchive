@@ -6,6 +6,8 @@ permalink: /kb/086/Q86921/
 
 ## Q86921: Tap and Tap-and-Hold Pointer Events
 
+{% raw %}
+
 	Article: Q86921
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -85,3 +87,5 @@ permalink: /kb/086/Q86921/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123393/
 
 ## Q123393: Type 1 Font (ZapfDingbats) Displays Different Font in Write
 
+{% raw %}
+
 	Article: Q123393
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/123/Q123393/
 	
 	=============================================================================
 	
+
+{% endraw %}

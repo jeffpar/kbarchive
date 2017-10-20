@@ -6,6 +6,8 @@ permalink: /kb/158/Q158641/
 
 ## Q158641: WD97: Watermark Causes Uneven Spacing in Online Layout View
 
+{% raw %}
+
 	Article: Q158641
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -78,3 +80,5 @@ permalink: /kb/158/Q158641/
 	
 	=============================================================================
 	
+
+{% endraw %}

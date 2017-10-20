@@ -6,6 +6,8 @@ permalink: /kb/216/Q216205/
 
 ## Q216205: PRB: &quot;Error 481: Invalid Picture&quot; Error Viewing BMP File
 
+{% raw %}
+
 	Article: Q216205
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -122,3 +124,5 @@ permalink: /kb/216/Q216205/
 	
 	=============================================================================
 	
+
+{% endraw %}

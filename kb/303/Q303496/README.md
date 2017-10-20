@@ -6,6 +6,8 @@ permalink: /kb/303/Q303496/
 
 ## Q303496: Err Msg: Microsoft Train Simulator Has Encountered a Problem ...
 
+{% raw %}
+
 	Article: Q303496
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -241,3 +243,5 @@ permalink: /kb/303/Q303496/
 	
 	=============================================================================
 	
+
+{% endraw %}

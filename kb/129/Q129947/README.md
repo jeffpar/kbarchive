@@ -6,6 +6,8 @@ permalink: /kb/129/Q129947/
 
 ## Q129947: INFO: Win32 Replacement for the hmemcpy Function
 
+{% raw %}
+
 	Article: Q129947
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -99,3 +101,5 @@ permalink: /kb/129/Q129947/
 	
 	=============================================================================
 	
+
+{% endraw %}

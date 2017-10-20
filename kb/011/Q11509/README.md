@@ -6,6 +6,8 @@ permalink: /kb/011/Q11509/
 
 ## Q11509: Definition of Different Types of Libraries in Windows
 
+{% raw %}
+
 	Article: Q11509
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -59,3 +61,5 @@ permalink: /kb/011/Q11509/
 	
 	=============================================================================
 	
+
+{% endraw %}

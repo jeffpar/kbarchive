@@ -6,6 +6,8 @@ permalink: /kb/303/Q303912/
 
 ## Q303912: MechCommander 2.0: Err Msg: STOP Error -3 UnCompressing File
 
+{% raw %}
+
 	Article: Q303912
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -114,3 +116,5 @@ permalink: /kb/303/Q303912/
 	
 	=============================================================================
 	
+
+{% endraw %}

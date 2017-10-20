@@ -6,6 +6,8 @@ permalink: /kb/197/Q197849/
 
 ## Q197849: WD97: How to Open the Last Document Edited When You Start Word
 
+{% raw %}
+
 	Article: Q197849
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/197/Q197849/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/090/Q90373/
 
 ## Q90373: ClipBook Viewer: Start Application on Connect
 
+{% raw %}
+
 	Article: Q90373
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/090/Q90373/
 	
 	=============================================================================
 	
+
+{% endraw %}

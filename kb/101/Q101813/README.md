@@ -6,6 +6,8 @@ permalink: /kb/101/Q101813/
 
 ## Q101813: Why AutoCAD 386 Doesn't Work with Windows NT
 
+{% raw %}
+
 	Article: Q101813
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -81,3 +83,5 @@ permalink: /kb/101/Q101813/
 	
 	=============================================================================
 	
+
+{% endraw %}

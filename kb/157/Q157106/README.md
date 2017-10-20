@@ -6,6 +6,8 @@ permalink: /kb/157/Q157106/
 
 ## Q157106: WD97: ErrMsg: Word Could Not Open &lt;File Name.doc&gt; as a Data ...
 
+{% raw %}
+
 	Article: Q157106
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/157/Q157106/
 	
 	=============================================================================
 	
+
+{% endraw %}

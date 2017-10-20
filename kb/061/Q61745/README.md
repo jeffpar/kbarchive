@@ -6,6 +6,8 @@ permalink: /kb/061/Q61745/
 
 ## Q61745: Windows 3.0 Disk Directories (3.5 Inch, 720K)
 
+{% raw %}
+
 	Article: Q61745
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0
@@ -413,3 +415,5 @@ permalink: /kb/061/Q61745/
 	
 	=============================================================================
 	
+
+{% endraw %}

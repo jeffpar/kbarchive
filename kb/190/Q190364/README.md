@@ -6,6 +6,8 @@ permalink: /kb/190/Q190364/
 
 ## Q190364: File Searching Limited to 16,000 on FPNW Volumes
 
+{% raw %}
+
 	Article: Q190364
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -51,3 +53,5 @@ permalink: /kb/190/Q190364/
 	
 	=============================================================================
 	
+
+{% endraw %}

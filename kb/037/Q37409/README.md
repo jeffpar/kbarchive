@@ -6,6 +6,8 @@ permalink: /kb/037/Q37409/
 
 ## Q37409: Using .. in QB.EXE Open File Dialog Doesn't Change Directory
 
+{% raw %}
+
 	Article: Q37409
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -41,3 +43,5 @@ permalink: /kb/037/Q37409/
 	
 	4. Press a direction key to highlight the .. option, then press the
 	   ENTER key.
+
+{% endraw %}

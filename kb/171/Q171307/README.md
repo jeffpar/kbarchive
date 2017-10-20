@@ -6,6 +6,8 @@ permalink: /kb/171/Q171307/
 
 ## Q171307: How to Disable SAP Broadcast for RPC Service
 
+{% raw %}
+
 	Article: Q171307
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -153,3 +155,5 @@ permalink: /kb/171/Q171307/
 	
 	=============================================================================
 	
+
+{% endraw %}

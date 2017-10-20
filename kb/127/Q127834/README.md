@@ -6,6 +6,8 @@ permalink: /kb/127/Q127834/
 
 ## Q127834: UNCONF: USR Courier HST Dual Standard Modem Disconnects
 
+{% raw %}
+
 	Article: Q127834
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 Edition
@@ -55,3 +57,5 @@ permalink: /kb/127/Q127834/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/113/Q113239/
 
 ## Q113239: X.25 Support with Windows for Workgroups 3.11 RAS
 
+{% raw %}
+
 	Article: Q113239
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -101,3 +103,5 @@ permalink: /kb/113/Q113239/
 	
 	=============================================================================
 	
+
+{% endraw %}

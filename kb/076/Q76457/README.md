@@ -6,6 +6,8 @@ permalink: /kb/076/Q76457/
 
 ## Q76457: Colorado Tape Backup Boards FC10, TC15, and MS-DOS
 
+{% raw %}
+
 	Article: Q76457
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -61,3 +63,5 @@ permalink: /kb/076/Q76457/
 	
 	=============================================================================
 	
+
+{% endraw %}

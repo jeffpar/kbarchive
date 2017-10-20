@@ -6,6 +6,8 @@ permalink: /kb/049/Q49808/
 
 ## Q49808: MS-DOS FORMAT &quot;/1&quot; Switch Should Not Be Used on 1.2 MB Drive
 
+{% raw %}
+
 	Article: Q49808
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -41,3 +43,5 @@ permalink: /kb/049/Q49808/
 	
 	=============================================================================
 	
+
+{% endraw %}

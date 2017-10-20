@@ -6,6 +6,8 @@ permalink: /kb/140/Q140024/
 
 ## Q140024: FIX: Tools Won't Run If There's a Space in the Path
 
+{% raw %}
+
 	Article: Q140024
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -64,3 +66,5 @@ permalink: /kb/140/Q140024/
 	
 	=============================================================================
 	
+
+{% endraw %}

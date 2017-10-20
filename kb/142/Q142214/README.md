@@ -6,6 +6,8 @@ permalink: /kb/142/Q142214/
 
 ## Q142214: FIX: RELEASE Releases All Local Variables with Identical Names
 
+{% raw %}
+
 	Article: Q142214
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -89,3 +91,5 @@ permalink: /kb/142/Q142214/
 	
 	=============================================================================
 	
+
+{% endraw %}

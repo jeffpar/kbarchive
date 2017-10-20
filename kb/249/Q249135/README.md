@@ -6,6 +6,8 @@ permalink: /kb/249/Q249135/
 
 ## Q249135: Cannot Apply 56-Bit SP6/6a to 128-Bit Windows NT 4.0
 
+{% raw %}
+
 	Article: Q249135
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/249/Q249135/
 	
 	=============================================================================
 	
+
+{% endraw %}

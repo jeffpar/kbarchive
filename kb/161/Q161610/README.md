@@ -6,6 +6,8 @@ permalink: /kb/161/Q161610/
 
 ## Q161610: PRB: SSARC/SSRESTOR Change 4.0 Database to 4.0a/5.0 Format
 
+{% raw %}
+
 	Article: Q161610
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/161/Q161610/
 	
 	=============================================================================
 	
+
+{% endraw %}

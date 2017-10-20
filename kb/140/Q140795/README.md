@@ -6,6 +6,8 @@ permalink: /kb/140/Q140795/
 
 ## Q140795: Bookshelf 95: Upgrading Doesn't Remove Older Versions
 
+{% raw %}
+
 	Article: Q140795
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -161,3 +163,5 @@ permalink: /kb/140/Q140795/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140225/
 
 ## Q140225: PRB: Error &quot;File Does Not Exist&quot; When Appending from a Cursor
 
+{% raw %}
+
 	Article: Q140225
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -74,3 +76,5 @@ permalink: /kb/140/Q140225/
 	
 	=============================================================================
 	
+
+{% endraw %}

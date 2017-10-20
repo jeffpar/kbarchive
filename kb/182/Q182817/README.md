@@ -6,6 +6,8 @@ permalink: /kb/182/Q182817/
 
 ## Q182817: CSNW: Unable to Rename File on NetWare Server
 
+{% raw %}
+
 	Article: Q182817
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/182/Q182817/
 	
 	=============================================================================
 	
+
+{% endraw %}

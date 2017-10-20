@@ -6,6 +6,8 @@ permalink: /kb/072/Q72568/
 
 ## Q72568: Using Third Party Disk Partitioning Software with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q72568
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -65,3 +67,5 @@ permalink: /kb/072/Q72568/
 	
 	=============================================================================
 	
+
+{% endraw %}

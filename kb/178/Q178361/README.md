@@ -6,6 +6,8 @@ permalink: /kb/178/Q178361/
 
 ## Q178361: Error Message: That Password Is Incorrect
 
+{% raw %}
+
 	Article: Q178361
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:4.0,4.01,95
@@ -87,3 +89,5 @@ permalink: /kb/178/Q178361/
 	
 	=============================================================================
 	
+
+{% endraw %}

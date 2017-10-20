@@ -6,6 +6,8 @@ permalink: /kb/150/Q150789/
 
 ## Q150789: FIX: DFX_Bool Calls Default() with AFX_RFX_LONGBINARY
 
+{% raw %}
+
 	Article: Q150789
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1; :
@@ -129,3 +131,5 @@ permalink: /kb/150/Q150789/
 	
 	=============================================================================
 	
+
+{% endraw %}

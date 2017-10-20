@@ -6,6 +6,8 @@ permalink: /kb/084/Q84256/
 
 ## Q84256: How Program Shortcut Keys Work in Windows 3.1
 
+{% raw %}
+
 	Article: Q84256
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -102,3 +104,5 @@ permalink: /kb/084/Q84256/
 	
 	=============================================================================
 	
+
+{% endraw %}

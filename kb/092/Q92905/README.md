@@ -6,6 +6,8 @@ permalink: /kb/092/Q92905/
 
 ## Q92905: DlgTab.exe - Infinite Loop Moving Through Dialog Ctrl
 
+{% raw %}
+
 	Article: Q92905
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -245,3 +247,5 @@ permalink: /kb/092/Q92905/
 	
 	=============================================================================
 	
+
+{% endraw %}

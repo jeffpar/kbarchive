@@ -6,6 +6,8 @@ permalink: /kb/138/Q138724/
 
 ## Q138724: Notes on Installing SNA Server on Citrix's OEM version of WinNT
 
+{% raw %}
+
 	Article: Q138724
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0
@@ -208,3 +210,5 @@ permalink: /kb/138/Q138724/
 	
 	=============================================================================
 	
+
+{% endraw %}

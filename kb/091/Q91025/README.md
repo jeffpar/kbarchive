@@ -6,6 +6,8 @@ permalink: /kb/091/Q91025/
 
 ## Q91025: Creating Help Files Compatible with Windows 3.0 and 3.1
 
+{% raw %}
+
 	Article: Q91025
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -77,3 +79,5 @@ permalink: /kb/091/Q91025/
 	
 	=============================================================================
 	
+
+{% endraw %}

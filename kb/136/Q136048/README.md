@@ -6,6 +6,8 @@ permalink: /kb/136/Q136048/
 
 ## Q136048: PC Gen: Running GIMPORT.EXE on Windows NT
 
+{% raw %}
+
 	Article: Q136048
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -74,3 +76,5 @@ permalink: /kb/136/Q136048/
 	
 	=============================================================================
 	
+
+{% endraw %}

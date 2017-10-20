@@ -6,6 +6,8 @@ permalink: /kb/057/Q57501/
 
 ## Q57501: QBX May Incorrectly Parse Array Element in User-Defined TYPE
 
+{% raw %}
+
 	Article: Q57501
 	Product(s): See article
 	Version(s): 7.00
@@ -40,3 +42,5 @@ permalink: /kb/057/Q57501/
 	
 	This problem relates only to QBX.EXE and does not relate to the BC.EXE
 	compiler in BASIC 7.00.
+
+{% endraw %}

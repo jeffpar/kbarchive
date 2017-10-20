@@ -6,6 +6,8 @@ permalink: /kb/251/Q251070/
 
 ## Q251070: SMS: Copylog.tcf Does Not Show Site that Updated Logon Point
 
+{% raw %}
+
 	Article: Q251070
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -213,3 +215,5 @@ permalink: /kb/251/Q251070/
 	
 	=============================================================================
 	
+
+{% endraw %}

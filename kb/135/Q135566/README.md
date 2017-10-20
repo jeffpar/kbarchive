@@ -6,6 +6,8 @@ permalink: /kb/135/Q135566/
 
 ## Q135566: FIX: GATHER FROM Command Checks Lock Status of Table
 
+{% raw %}
+
 	Article: Q135566
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -99,3 +101,5 @@ permalink: /kb/135/Q135566/
 	
 	=============================================================================
 	
+
+{% endraw %}

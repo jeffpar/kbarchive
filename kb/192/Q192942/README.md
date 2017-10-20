@@ -6,6 +6,8 @@ permalink: /kb/192/Q192942/
 
 ## Q192942: FIX: Call to CWnd::MoveWindow Causes Stack Overflow
 
+{% raw %}
+
 	Article: Q192942
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -95,3 +97,5 @@ permalink: /kb/192/Q192942/
 	
 	=============================================================================
 	
+
+{% endraw %}

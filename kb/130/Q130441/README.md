@@ -6,6 +6,8 @@ permalink: /kb/130/Q130441/
 
 ## Q130441: Error Remotely Controlling WFW Computer Using 256 Colors
 
+{% raw %}
+
 	Article: Q130441
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -54,3 +56,5 @@ permalink: /kb/130/Q130441/
 	
 	=============================================================================
 	
+
+{% endraw %}

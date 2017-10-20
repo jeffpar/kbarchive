@@ -6,6 +6,8 @@ permalink: /kb/242/Q242577/
 
 ## Q242577: PRB: Update Command UI Handlers Do Not Work Properly on Dialogs
 
+{% raw %}
+
 	Article: Q242577
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -59,7 +61,7 @@ permalink: /kb/242/Q242577/
 	1. Add an ON_WM_INITMENUPOPUP entry to the message map:
 	
 	  BEGIN_MESSAGE_MAP(CTestDlg, CDialog)
-	  	//} }AFX_MSG_MAP
+	  	//}}AFX_MSG_MAP
 	
 	  	ON_WM_INITMENUPOPUP()
 	  END_MESSAGE_MAP()
@@ -222,3 +224,5 @@ permalink: /kb/242/Q242577/
 	
 	=============================================================================
 	
+
+{% endraw %}

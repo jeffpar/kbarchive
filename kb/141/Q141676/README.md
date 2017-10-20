@@ -6,6 +6,8 @@ permalink: /kb/141/Q141676/
 
 ## Q141676: PRB: &quot;No PARAMETER statement is found&quot; When Running Own Wizard
 
+{% raw %}
+
 	Article: Q141676
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -93,3 +95,5 @@ permalink: /kb/141/Q141676/
 	
 	=============================================================================
 	
+
+{% endraw %}

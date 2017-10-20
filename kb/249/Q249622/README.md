@@ -6,6 +6,8 @@ permalink: /kb/249/Q249622/
 
 ## Q249622: PRB: WhatsThisHelp Does Not Work on Objects in a Grid
 
+{% raw %}
+
 	Article: Q249622
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -104,3 +106,5 @@ permalink: /kb/249/Q249622/
 	
 	=============================================================================
 	
+
+{% endraw %}

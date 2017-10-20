@@ -6,6 +6,8 @@ permalink: /kb/132/Q132398/
 
 ## Q132398: HOWTO: Use Bookmarks with the MFC ODBC Database Classes
 
+{% raw %}
+
 	Article: Q132398
 	Product(s): Microsoft C Compiler
 	Version(s): 1.52,2.1,2.2,4.0,5.0,6.0
@@ -249,3 +251,5 @@ permalink: /kb/132/Q132398/
 	
 	=============================================================================
 	
+
+{% endraw %}

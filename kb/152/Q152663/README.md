@@ -6,6 +6,8 @@ permalink: /kb/152/Q152663/
 
 ## Q152663: Monthly View Print Out Will Not Wrap Appointment Text
 
+{% raw %}
+
 	Article: Q152663
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -57,3 +59,5 @@ permalink: /kb/152/Q152663/
 	
 	=============================================================================
 	
+
+{% endraw %}

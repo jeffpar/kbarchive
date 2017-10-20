@@ -6,6 +6,8 @@ permalink: /kb/156/Q156144/
 
 ## Q156144: Full Court Press: Enhancing Performance
 
+{% raw %}
+
 	Article: Q156144
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/156/Q156144/
 	
 	=============================================================================
 	
+
+{% endraw %}

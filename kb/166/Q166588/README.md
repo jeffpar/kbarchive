@@ -6,6 +6,8 @@ permalink: /kb/166/Q166588/
 
 ## Q166588: XCON: MTA Work Queue Backlog When Restrictions Used with DL
 
+{% raw %}
+
 	Article: Q166588
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -61,3 +63,5 @@ permalink: /kb/166/Q166588/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141411/
 
 ## Q141411: Bookshelf 1995: Spell Check Does Not Seem to Function
 
+{% raw %}
+
 	Article: Q141411
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition; WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/141/Q141411/
 	
 	=============================================================================
 	
+
+{% endraw %}

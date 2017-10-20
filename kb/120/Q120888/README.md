@@ -6,6 +6,8 @@ permalink: /kb/120/Q120888/
 
 ## Q120888: FIX: Assertion Fails When Use RFX_Text() w/ SQL_VARCHAR Column
 
+{% raw %}
+
 	Article: Q120888
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -87,3 +89,5 @@ permalink: /kb/120/Q120888/
 	
 	=============================================================================
 	
+
+{% endraw %}

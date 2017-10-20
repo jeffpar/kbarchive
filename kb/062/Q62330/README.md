@@ -6,6 +6,8 @@ permalink: /kb/062/Q62330/
 
 ## Q62330: Cannot Reverse Mouse Buttons in PWB Versions 1.0 and 1.1
 
+{% raw %}
+
 	Article: Q62330
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -37,3 +39,5 @@ permalink: /kb/062/Q62330/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186455/
 
 ## Q186455: Mgmtapi.dll Opens Trap Socket in Exclusive Mode
 
+{% raw %}
+
 	Article: Q186455
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/186/Q186455/
 	
 	=============================================================================
 	
+
+{% endraw %}

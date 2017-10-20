@@ -6,6 +6,8 @@ permalink: /kb/147/Q147580/
 
 ## Q147580: Member ID Appears Twice in Chat Member List
 
+{% raw %}
+
 	Article: Q147580
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5
@@ -48,3 +50,5 @@ permalink: /kb/147/Q147580/
 	
 	=============================================================================
 	
+
+{% endraw %}

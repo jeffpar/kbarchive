@@ -6,6 +6,8 @@ permalink: /kb/096/Q96645/
 
 ## Q96645: PC DOS: 3.0 MS-DOS Workstation Update Disk 1 &#91;3.5, 720K&#93;
 
+{% raw %}
+
 	Article: Q96645
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -80,3 +82,5 @@ permalink: /kb/096/Q96645/
 	
 	=============================================================================
 	
+
+{% endraw %}

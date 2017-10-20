@@ -6,6 +6,8 @@ permalink: /kb/148/Q148602/
 
 ## Q148602: Running SNA Server 2.11 on the Windows NT 4.0
 
+{% raw %}
+
 	Article: Q148602
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11
@@ -122,3 +124,5 @@ permalink: /kb/148/Q148602/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/277/Q277993/
 
 ## Q277993: FIX: ActualSize Property of the ADODB Recordset Returns -1
 
+{% raw %}
+
 	Article: Q277993
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.6,6.0
@@ -102,3 +104,5 @@ permalink: /kb/277/Q277993/
 	
 	=============================================================================
 	
+
+{% endraw %}

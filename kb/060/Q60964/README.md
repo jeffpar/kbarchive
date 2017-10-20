@@ -6,6 +6,8 @@ permalink: /kb/060/Q60964/
 
 ## Q60964: NO87 Environment Variable Echoed to Screen When Run
 
+{% raw %}
+
 	Article: Q60964
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -39,3 +41,5 @@ permalink: /kb/060/Q60964/
 	
 	Then run QB (or QBX). The word "OFF" will be displayed on the next
 	line.
+
+{% endraw %}

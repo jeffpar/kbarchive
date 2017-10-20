@@ -6,6 +6,8 @@ permalink: /kb/154/Q154816/
 
 ## Q154816: HOWTO: Determine if DBCombo MatchEntry Property is Read-only
 
+{% raw %}
+
 	Article: Q154816
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -54,3 +56,5 @@ permalink: /kb/154/Q154816/
 	
 	=============================================================================
 	
+
+{% endraw %}

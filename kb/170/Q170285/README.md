@@ -6,6 +6,8 @@ permalink: /kb/170/Q170285/
 
 ## Q170285: SNA Server APPC Activation Fails With Event 18, Sense = 0877000E
 
+{% raw %}
+
 	Article: Q170285
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0
@@ -114,3 +116,5 @@ permalink: /kb/170/Q170285/
 	
 	=============================================================================
 	
+
+{% endraw %}

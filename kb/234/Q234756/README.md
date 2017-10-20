@@ -6,6 +6,8 @@ permalink: /kb/234/Q234756/
 
 ## Q234756: HOWTO: Pack a Table Through the Visual FoxPro ODBC Driver
 
+{% raw %}
+
 	Article: Q234756
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 6.0
@@ -152,3 +154,5 @@ permalink: /kb/234/Q234756/
 	
 	=============================================================================
 	
+
+{% endraw %}

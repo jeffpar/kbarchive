@@ -6,6 +6,8 @@ permalink: /kb/031/Q31541/
 
 ## Q31541: MASM 5.10 EXT.DOC: SetKey - Associates Editor Function w/Key
 
+{% raw %}
+
 	Article: Q31541
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -33,3 +35,5 @@ permalink: /kb/031/Q31541/
 	 */
 	flagType pascal SetKey (pFunction, pKey)
 	char far *pFunction, *pKey;
+
+{% endraw %}

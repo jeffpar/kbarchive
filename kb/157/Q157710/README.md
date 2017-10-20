@@ -6,6 +6,8 @@ permalink: /kb/157/Q157710/
 
 ## Q157710: XCLN: CHT Default Font Incorrect
 
+{% raw %}
+
 	Article: Q157710
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -55,3 +57,5 @@ permalink: /kb/157/Q157710/
 	
 	=============================================================================
 	
+
+{% endraw %}

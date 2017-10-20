@@ -6,6 +6,8 @@ permalink: /kb/150/Q150181/
 
 ## Q150181: BUG: Spin Control Does Not Obey Move Method
 
+{% raw %}
+
 	Article: Q150181
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -91,3 +93,5 @@ permalink: /kb/150/Q150181/
 	
 	=============================================================================
 	
+
+{% endraw %}

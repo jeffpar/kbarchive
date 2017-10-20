@@ -6,6 +6,8 @@ permalink: /kb/277/Q277831/
 
 ## Q277831: XFOR: The Microsoft Mail Connector (PC) MTA Does Not Send NDRs
 
+{% raw %}
+
 	Article: Q277831
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -163,3 +165,5 @@ permalink: /kb/277/Q277831/
 	
 	=============================================================================
 	
+
+{% endraw %}

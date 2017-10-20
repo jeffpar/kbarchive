@@ -6,6 +6,8 @@ permalink: /kb/140/Q140592/
 
 ## Q140592: HOWTO: Implement Per-Property Browsing for a Custom Property
 
+{% raw %}
+
 	Article: Q140592
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,5.0,6.0
@@ -152,3 +154,5 @@ permalink: /kb/140/Q140592/
 	
 	=============================================================================
 	
+
+{% endraw %}

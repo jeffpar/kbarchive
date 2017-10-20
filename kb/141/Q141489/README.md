@@ -6,6 +6,8 @@ permalink: /kb/141/Q141489/
 
 ## Q141489: INFO: Deriving an OLE Control from a Base Control
 
+{% raw %}
+
 	Article: Q141489
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -144,8 +146,8 @@ permalink: /kb/141/Q141489/
 	  message map was removed:
 	
 	        BEGIN_MESSAGE_MAP(CBaseShapeCtrl, COleControl)
-	          //{ {AFX_MSG_MAP(CBaseShapeCtrl)
-	          //} }AFX_MSG_MAP
+	          //{{AFX_MSG_MAP(CBaseShapeCtrl)
+	          //}}AFX_MSG_MAP
 	          //ON_OLEVERB(AFX_IDS_VERB_PROPERTIES, OnProperties)
 	        END_MESSAGE_MAP()
 	
@@ -249,13 +251,13 @@ permalink: /kb/141/Q141489/
 	       properties:
 	         // NOTE - ClassWizard will maintain property information here.
 	         //    Use extreme caution when editing this section.
-	         //{ {AFX_ODL_PROP(CCircleCtrl)
+	         //{{AFX_ODL_PROP(CCircleCtrl)
 	         [id(65537)] OLE_COLOR FillColor;
 	         [id(65538)] OLE_COLOR LineColor;
 	         [id(65539)] short LineWidth;
 	         [id(1)] boolean CircleShape;
 	         [id(2)] short CircleOffset;
-	         //} }AFX_ODL_PROP
+	         //}}AFX_ODL_PROP
 	         ...
 	
 	The FillColor, LineColor, and LineWidth properties implemented in the base class
@@ -281,12 +283,12 @@ permalink: /kb/141/Q141489/
 	       methods:
 	         // NOTE - ClassWizard will maintain event information here.
 	         //    Use extreme caution when editing this section.
-	         //{ {AFX_ODL_EVENT(CCircleCtrl)
+	         //{{AFX_ODL_EVENT(CCircleCtrl)
 	         [id(1)] void BaseEvent1(long lParam);
 	         [id(2)] void BaseEvent2(BSTR pszString);
 	         [id(3)] void CircleEvent1(long lParam);
 	         [id(4)] void CircleEvent2(long lParam);
-	         //} }AFX_ODL_EVENT
+	         //}}AFX_ODL_EVENT
 	     };
 	
 	Manually updating the DISPIDs can be problematic because ClassWizard may get
@@ -310,7 +312,7 @@ permalink: /kb/141/Q141489/
 	     // Dispatch and event IDs
 	     public:
 	       enum {
-	       //{ {AFX_DISP_ID(CCircleCtrl)
+	       //{{AFX_DISP_ID(CCircleCtrl)
 	       //dispidFillColor   = 65537L,
 	       //dispidLineColor   = 65538L,
 	       //dispidLineWidth   = 65539L,
@@ -326,7 +328,7 @@ permalink: /kb/141/Q141489/
 	       //eventidBaseEvent2 = 2L,
 	       eventidCircleEvent1 = 3L,
 	       eventidCircleEvent2 = 4L,
-	       //} }AFX_DISP_ID
+	       //}}AFX_DISP_ID
 	     };
 	
 	SHAPES is based on a ControlWizard generated OLE control. Files included with the
@@ -356,3 +358,5 @@ permalink: /kb/141/Q141489/
 	
 	=============================================================================
 	
+
+{% endraw %}

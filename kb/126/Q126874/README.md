@@ -6,6 +6,8 @@ permalink: /kb/126/Q126874/
 
 ## Q126874: PRB: Modal Dialog Box Prevents Calls to PreTranslateMessage
 
+{% raw %}
+
 	Article: Q126874
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -194,3 +196,5 @@ permalink: /kb/126/Q126874/
 	
 	=============================================================================
 	
+
+{% endraw %}

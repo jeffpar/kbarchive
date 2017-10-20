@@ -6,6 +6,8 @@ permalink: /kb/153/Q153549/
 
 ## Q153549: BUG: DataControl Doesn't Send Notifications at Design Time
 
+{% raw %}
+
 	Article: Q153549
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -70,3 +72,5 @@ permalink: /kb/153/Q153549/
 	
 	=============================================================================
 	
+
+{% endraw %}

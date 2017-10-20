@@ -6,6 +6,8 @@ permalink: /kb/140/Q140080/
 
 ## Q140080: Err Msg: A Set of Folders Could Not Be Opened
 
+{% raw %}
+
 	Article: Q140080
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -57,3 +59,5 @@ permalink: /kb/140/Q140080/
 	
 	=============================================================================
 	
+
+{% endraw %}

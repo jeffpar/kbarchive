@@ -6,6 +6,8 @@ permalink: /kb/130/Q130996/
 
 ## Q130996: PRB: &quot;Save As&quot; Directory Isn't the Same as Default Directory
 
+{% raw %}
+
 	Article: Q130996
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -74,3 +76,5 @@ permalink: /kb/130/Q130996/
 	
 	=============================================================================
 	
+
+{% endraw %}

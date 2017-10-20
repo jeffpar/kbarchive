@@ -6,6 +6,8 @@ permalink: /kb/139/Q139733/
 
 ## Q139733: Windows NT 3.5x Setup Troubleshooting Guide
 
+{% raw %}
+
 	Article: Q139733
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -949,3 +951,5 @@ permalink: /kb/139/Q139733/
 	
 	=============================================================================
 	
+
+{% endraw %}

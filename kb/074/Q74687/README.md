@@ -6,6 +6,8 @@ permalink: /kb/074/Q74687/
 
 ## Q74687: Notepad Err Msg: File Is Empty and Will Be Deleted...
 
+{% raw %}
+
 	Article: Q74687
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -36,3 +38,5 @@ permalink: /kb/074/Q74687/
 	
 	=============================================================================
 	
+
+{% endraw %}

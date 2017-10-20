@@ -6,6 +6,8 @@ permalink: /kb/173/Q173706/
 
 ## Q173706: XADM: Performance Optimizer Sets Store Threads Differently
 
+{% raw %}
+
 	Article: Q173706
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -48,3 +50,5 @@ permalink: /kb/173/Q173706/
 	
 	=============================================================================
 	
+
+{% endraw %}

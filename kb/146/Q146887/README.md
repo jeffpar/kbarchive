@@ -6,6 +6,8 @@ permalink: /kb/146/Q146887/
 
 ## Q146887: Repairing Windows NT After the Application of Service Pack 3
 
+{% raw %}
+
 	Article: Q146887
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -203,3 +205,5 @@ permalink: /kb/146/Q146887/
 	
 	=============================================================================
 	
+
+{% endraw %}

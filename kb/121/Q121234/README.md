@@ -6,6 +6,8 @@ permalink: /kb/121/Q121234/
 
 ## Q121234: Running Macintosh Installer from a Package Subfolder
 
+{% raw %}
+
 	Article: Q121234
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -62,3 +64,5 @@ permalink: /kb/121/Q121234/
 	
 	=============================================================================
 	
+
+{% endraw %}

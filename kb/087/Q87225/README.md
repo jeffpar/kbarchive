@@ -6,6 +6,8 @@ permalink: /kb/087/Q87225/
 
 ## Q87225: SYSTEM.INI Settings Required for Windows Pen Extensions
 
+{% raw %}
+
 	Article: Q87225
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -99,3 +101,5 @@ permalink: /kb/087/Q87225/
 	
 	=============================================================================
 	
+
+{% endraw %}

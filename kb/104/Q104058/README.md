@@ -6,6 +6,8 @@ permalink: /kb/104/Q104058/
 
 ## Q104058: PC WSPlus: Date Bold When Viewing Other's Appointment Book
 
+{% raw %}
+
 	Article: Q104058
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -59,3 +61,5 @@ permalink: /kb/104/Q104058/
 	
 	=============================================================================
 	
+
+{% endraw %}

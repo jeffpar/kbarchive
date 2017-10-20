@@ -6,6 +6,8 @@ permalink: /kb/154/Q154946/
 
 ## Q154946: Bugcheck 93 in the RDR
 
+{% raw %}
+
 	Article: Q154946
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -120,3 +122,5 @@ permalink: /kb/154/Q154946/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107597/
 
 ## Q107597: Windows for Workgroups Protocol Limits
 
+{% raw %}
+
 	Article: Q107597
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/107/Q107597/
 	
 	=============================================================================
 	
+
+{% endraw %}

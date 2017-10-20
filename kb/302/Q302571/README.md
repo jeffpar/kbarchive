@@ -6,6 +6,8 @@ permalink: /kb/302/Q302571/
 
 ## Q302571: Printer Only Prints One Page
 
+{% raw %}
+
 	Article: Q302571
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -44,3 +46,5 @@ permalink: /kb/302/Q302571/
 	
 	=============================================================================
 	
+
+{% endraw %}

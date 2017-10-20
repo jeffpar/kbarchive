@@ -6,6 +6,8 @@ permalink: /kb/121/Q121003/
 
 ## Q121003: WINS Behavior on a Multihomed System
 
+{% raw %}
+
 	Article: Q121003
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -61,3 +63,5 @@ permalink: /kb/121/Q121003/
 	
 	=============================================================================
 	
+
+{% endraw %}

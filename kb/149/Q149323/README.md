@@ -6,6 +6,8 @@ permalink: /kb/149/Q149323/
 
 ## Q149323: BUG: Treeview Root Property Returns Reference to First Node
 
+{% raw %}
+
 	Article: Q149323
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -107,3 +109,5 @@ permalink: /kb/149/Q149323/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150567/
 
 ## Q150567: Btrieve Clients May Fail to Connect to Servers Running RAS, IPX/
 
+{% raw %}
+
 	Article: Q150567
 	Product(s): Microsoft Windows NT
 	Version(s): 3.11,3.5,3.51
@@ -94,3 +96,5 @@ permalink: /kb/150/Q150567/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/315/Q315095/
 
 ## Q315095: FIX: WMI Queries Stop Responding on Host Integration Server 2000
 
+{% raw %}
+
 	Article: Q315095
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/315/Q315095/
 	
 	=============================================================================
 	
+
+{% endraw %}

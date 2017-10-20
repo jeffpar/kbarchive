@@ -6,6 +6,8 @@ permalink: /kb/186/Q186402/
 
 ## Q186402: PRB: Err &quot;User Admin Not Found&quot; When You Log On to VSS Database
 
+{% raw %}
+
 	Article: Q186402
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,4.0a,5.0
@@ -54,3 +56,5 @@ permalink: /kb/186/Q186402/
 	
 	=============================================================================
 	
+
+{% endraw %}

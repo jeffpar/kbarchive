@@ -6,6 +6,8 @@ permalink: /kb/163/Q163508/
 
 ## Q163508: STOP 0xA in Ntfs.sys During Reboot
 
+{% raw %}
+
 	Article: Q163508
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:3.5,3.51,4.0
@@ -126,3 +128,5 @@ permalink: /kb/163/Q163508/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/046/Q46448/
 
 ## Q46448: Capabilities and Limits of the /R switch on 80386 Machines
 
+{% raw %}
+
 	Article: Q46448
 	Product(s): See article
 	Version(s): 2.20 2.30 2.35 3.00 | 2.20 2.30 2.35 3.00
@@ -28,3 +30,5 @@ permalink: /kb/046/Q46448/
 	these registers. Specifying any combination of tracepoints greater
 	than 16 bytes will require CodeView to use software tracepoints rather
 	than the debug registers and all performance gains will be lost.
+
+{% endraw %}

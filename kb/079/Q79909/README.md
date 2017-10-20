@@ -6,6 +6,8 @@ permalink: /kb/079/Q79909/
 
 ## Q79909: Entertainment Pack Volumes 2 and 3 Setup Hangs in Real Mode
 
+{% raw %}
+
 	Article: Q79909
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/079/Q79909/
 	
 	=============================================================================
 	
+
+{% endraw %}

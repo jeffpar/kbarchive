@@ -6,6 +6,8 @@ permalink: /kb/194/Q194974/
 
 ## Q194974: BUG: Visual Modeler 2.0 Reverse Engineering Error
 
+{% raw %}
+
 	Article: Q194974
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -85,3 +87,5 @@ permalink: /kb/194/Q194974/
 	
 	=============================================================================
 	
+
+{% endraw %}

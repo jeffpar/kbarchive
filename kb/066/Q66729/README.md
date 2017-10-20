@@ -6,6 +6,8 @@ permalink: /kb/066/Q66729/
 
 ## Q66729: Lotus 3.0 Does Not Run Under Windows 3.0 in Enhanced Mode
 
+{% raw %}
+
 	Article: Q66729
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/066/Q66729/
 	
 	=============================================================================
 	
+
+{% endraw %}

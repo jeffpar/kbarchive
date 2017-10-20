@@ -6,6 +6,8 @@ permalink: /kb/076/Q76504/
 
 ## Q76504: Static Variables Declared in MASM Routines Called from C
 
+{% raw %}
+
 	Article: Q76504
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.0,5.10,6.0,6.0a,6.0b
@@ -79,3 +81,5 @@ permalink: /kb/076/Q76504/
 	
 	=============================================================================
 	
+
+{% endraw %}

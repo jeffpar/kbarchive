@@ -6,6 +6,8 @@ permalink: /kb/150/Q150158/
 
 ## Q150158: NTFS: Directory Changes Reported to LMREPL Erroneously
 
+{% raw %}
+
 	Article: Q150158
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -59,3 +61,5 @@ permalink: /kb/150/Q150158/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119206/
 
 ## Q119206: Using WM_COMMNOTIFY in an MFC Application
 
+{% raw %}
+
 	Article: Q119206
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -39,18 +41,18 @@ permalink: /kb/119/Q119206/
 	
 	        // In the class header file,
 	        // generated message map functions protected:
-	        //{ {AFX_MSG(CMfccommView)
+	        //{{AFX_MSG(CMfccommView)
 	             afx_msg LRESULT OnCommNotify(WPARAM wParam, LPARAM lParam);
 	             <other handlers>
-	        //} }AFX_MSG
+	        //}}AFX_MSG
 	        DECLARE_MESSAGE_MAP()
 	
 	        // In the source file defining the class:
 	        BEGIN_MESSAGE_MAP(CMfccommView, CView)
-	             //{ {AFX_MSG_MAP(CMfccommView)
+	             //{{AFX_MSG_MAP(CMfccommView)
 	             ON_MESSAGE(WM_COMMNOTIFY, OnCommNotify)
 	             <other mappings>
-	             //} }AFX_MSG_MAP
+	             //}}AFX_MSG_MAP
 	        END_MESSAGE_MAP()
 	
 	2. Write the handler procedure OnCommNotify() to trap the CN_EVENT, CN_RECEIVE,
@@ -82,3 +84,5 @@ permalink: /kb/119/Q119206/
 	
 	=============================================================================
 	
+
+{% endraw %}

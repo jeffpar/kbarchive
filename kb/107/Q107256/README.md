@@ -6,6 +6,8 @@ permalink: /kb/107/Q107256/
 
 ## Q107256: Defragmenting Stacker-Compressed Drive Before Deleting Files
 
+{% raw %}
+
 	Article: Q107256
 	Product(s): Microsoft Disk Operating System
 	Version(s): 6.2
@@ -82,3 +84,5 @@ permalink: /kb/107/Q107256/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/240/Q240924/
 
 ## Q240924: BUG: TreeView Node Tooltips Flash if Displayed from Modal Window
 
+{% raw %}
+
 	Article: Q240924
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -192,3 +194,5 @@ permalink: /kb/240/Q240924/
 	
 	=============================================================================
 	
+
+{% endraw %}

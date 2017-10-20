@@ -6,6 +6,8 @@ permalink: /kb/134/Q134669/
 
 ## Q134669: PC Gen: 3.5 Mail for PC Networks Disks 1-4 &#91;3.5&#93;
 
+{% raw %}
+
 	Article: Q134669
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -256,3 +258,5 @@ permalink: /kb/134/Q134669/
 	
 	=============================================================================
 	
+
+{% endraw %}

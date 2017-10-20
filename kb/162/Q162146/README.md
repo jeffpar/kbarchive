@@ -6,6 +6,8 @@ permalink: /kb/162/Q162146/
 
 ## Q162146: FP: Checked Out Files Aren't Published to Server
 
+{% raw %}
+
 	Article: Q162146
 	Product(s): Word Front Page
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/162/Q162146/
 	
 	=============================================================================
 	
+
+{% endraw %}

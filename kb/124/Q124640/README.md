@@ -6,6 +6,8 @@ permalink: /kb/124/Q124640/
 
 ## Q124640: Windows NT 3.5 Setup Err Msg: Setup has recognized the...
 
+{% raw %}
+
 	Article: Q124640
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/124/Q124640/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/058/Q58732/
 
 ## Q58732: QB 4.50 Parameter Passed to Separate Module Shows as Garbage
 
+{% raw %}
+
 	Article: Q58732
 	Product(s): See article
 	Version(s): 4.50
@@ -94,3 +96,5 @@ permalink: /kb/058/Q58732/
 	
 	Another workaround is to pass variables through a COMMON SHARED
 	statement instead of a parameter list.
+
+{% endraw %}

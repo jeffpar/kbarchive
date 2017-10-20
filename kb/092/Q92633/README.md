@@ -6,6 +6,8 @@ permalink: /kb/092/Q92633/
 
 ## Q92633: Windows Err Msg: This File Is on a Network Drive with...
 
+{% raw %}
+
 	Article: Q92633
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11,95; winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/092/Q92633/
 	
 	=============================================================================
 	
+
+{% endraw %}

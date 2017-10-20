@@ -6,6 +6,8 @@ permalink: /kb/166/Q166166/
 
 ## Q166166: WinNT Err: NTBACKUP Fails Due to Lack of Permissions
 
+{% raw %}
+
 	Article: Q166166
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/166/Q166166/
 	
 	=============================================================================
 	
+
+{% endraw %}

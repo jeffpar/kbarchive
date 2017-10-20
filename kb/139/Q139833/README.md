@@ -6,6 +6,8 @@ permalink: /kb/139/Q139833/
 
 ## Q139833: Multimedia: No Icons or Groups Created in Program Manager
 
+{% raw %}
+
 	Article: Q139833
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -167,3 +169,5 @@ permalink: /kb/139/Q139833/
 	
 	=============================================================================
 	
+
+{% endraw %}

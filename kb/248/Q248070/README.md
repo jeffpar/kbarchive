@@ -6,6 +6,8 @@ permalink: /kb/248/Q248070/
 
 ## Q248070: BUG: VBCE: Clicking ComboBox May Trigger Command Click Event
 
+{% raw %}
+
 	Article: Q248070
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.11,3.0
@@ -82,3 +84,5 @@ permalink: /kb/248/Q248070/
 	
 	=============================================================================
 	
+
+{% endraw %}

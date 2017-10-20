@@ -6,6 +6,8 @@ permalink: /kb/032/Q32655/
 
 ## Q32655: DIR Does Not Work with ANSI Escape Sequence ESC&#91;nh
 
+{% raw %}
+
 	Article: Q32655
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.3,4.x,5.0,5.0a,6.0,6.2,6.21,6.22
@@ -59,3 +61,5 @@ permalink: /kb/032/Q32655/
 	
 	=============================================================================
 	
+
+{% endraw %}

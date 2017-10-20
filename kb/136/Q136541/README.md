@@ -6,6 +6,8 @@ permalink: /kb/136/Q136541/
 
 ## Q136541: PRB: Visual SourceSafe Books Online Help Viewer Crashes
 
+{% raw %}
+
 	Article: Q136541
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/136/Q136541/
 	
 	=============================================================================
 	
+
+{% endraw %}

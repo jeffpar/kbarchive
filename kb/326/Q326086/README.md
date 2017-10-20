@@ -6,6 +6,8 @@ permalink: /kb/326/Q326086/
 
 ## Q326086: HOW TO: Isolate Web Applications into Their Own Process
 
+{% raw %}
+
 	Article: Q326086
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -150,3 +152,5 @@ permalink: /kb/326/Q326086/
 	
 	=============================================================================
 	
+
+{% endraw %}

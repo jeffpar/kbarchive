@@ -6,6 +6,8 @@ permalink: /kb/137/Q137529/
 
 ## Q137529: Cannot Use DriveSpace to Compress a Substituted Drive
 
+{% raw %}
+
 	Article: Q137529
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -42,3 +44,5 @@ permalink: /kb/137/Q137529/
 	
 	=============================================================================
 	
+
+{% endraw %}

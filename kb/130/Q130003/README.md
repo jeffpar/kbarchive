@@ -6,6 +6,8 @@ permalink: /kb/130/Q130003/
 
 ## Q130003: Windows NT Redirector Does Not Handle Invalid TID Properly
 
+{% raw %}
+
 	Article: Q130003
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -62,3 +64,5 @@ permalink: /kb/130/Q130003/
 	
 	=============================================================================
 	
+
+{% endraw %}

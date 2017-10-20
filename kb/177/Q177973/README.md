@@ -6,6 +6,8 @@ permalink: /kb/177/Q177973/
 
 ## Q177973: XADM: AutoReply Attributes Do Not Affect Out Of Office Option
 
+{% raw %}
+
 	Article: Q177973
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/177/Q177973/
 	
 	=============================================================================
 	
+
+{% endraw %}

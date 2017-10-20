@@ -6,6 +6,8 @@ permalink: /kb/217/Q217057/
 
 ## Q217057: Unable to Bring New Network Name Resource On Line
 
+{% raw %}
+
 	Article: Q217057
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:
@@ -63,3 +65,5 @@ permalink: /kb/217/Q217057/
 	
 	=============================================================================
 	
+
+{% endraw %}

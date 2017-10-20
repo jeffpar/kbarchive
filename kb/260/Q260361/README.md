@@ -6,6 +6,8 @@ permalink: /kb/260/Q260361/
 
 ## Q260361: TCP/IP Protocol Is Missing from Network Tool in Control Panel
 
+{% raw %}
+
 	Article: Q260361
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/260/Q260361/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/228/Q228859/
 
 ## Q228859: FIX: GDI Resource Leak Using Checkboxes in Treeview Control
 
+{% raw %}
+
 	Article: Q228859
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -122,3 +124,5 @@ permalink: /kb/228/Q228859/
 	
 	=============================================================================
 	
+
+{% endraw %}

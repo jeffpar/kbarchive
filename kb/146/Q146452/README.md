@@ -6,6 +6,8 @@ permalink: /kb/146/Q146452/
 
 ## Q146452: Go To: on Contact Tab Not Work Until Sort Contacts
 
+{% raw %}
+
 	Article: Q146452
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -46,3 +48,5 @@ permalink: /kb/146/Q146452/
 	
 	=============================================================================
 	
+
+{% endraw %}

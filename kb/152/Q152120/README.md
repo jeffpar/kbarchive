@@ -6,6 +6,8 @@ permalink: /kb/152/Q152120/
 
 ## Q152120: XCLN: Copying Profile Passes Along Schedule+ Access
 
+{% raw %}
+
 	Article: Q152120
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:4.0,7.0; Win95:4.0
@@ -44,3 +46,5 @@ permalink: /kb/152/Q152120/
 	
 	=============================================================================
 	
+
+{% endraw %}

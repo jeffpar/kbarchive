@@ -6,6 +6,8 @@ permalink: /kb/308/Q308190/
 
 ## Q308190: DOC: AspLCID and LogExtFileHost Info Not in IIS Documentation
 
+{% raw %}
+
 	Article: Q308190
 	Product(s): Internet Information Server
 	Version(s): 
@@ -136,3 +138,5 @@ permalink: /kb/308/Q308190/
 	
 	=============================================================================
 	
+
+{% endraw %}

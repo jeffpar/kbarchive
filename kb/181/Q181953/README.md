@@ -6,6 +6,8 @@ permalink: /kb/181/Q181953/
 
 ## Q181953: Sending RTF with Attachment as MIME Loses Attachment
 
+{% raw %}
+
 	Article: Q181953
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -72,3 +74,5 @@ permalink: /kb/181/Q181953/
 	
 	=============================================================================
 	
+
+{% endraw %}

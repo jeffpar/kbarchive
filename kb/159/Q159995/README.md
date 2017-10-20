@@ -6,6 +6,8 @@ permalink: /kb/159/Q159995/
 
 ## Q159995: Windows NT Does Not Detect Previous WinNT 3.5x Install
 
+{% raw %}
+
 	Article: Q159995
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -119,3 +121,5 @@ permalink: /kb/159/Q159995/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/072/Q72015/
 
 ## Q72015: Redirection of PRINT Does Not Redirect All Error Messages
 
+{% raw %}
+
 	Article: Q72015
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.x,6.0,6.2,6.21,6.22
@@ -86,3 +88,5 @@ permalink: /kb/072/Q72015/
 	
 	=============================================================================
 	
+
+{% endraw %}

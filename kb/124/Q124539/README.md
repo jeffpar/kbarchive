@@ -6,6 +6,8 @@ permalink: /kb/124/Q124539/
 
 ## Q124539: How to Delete Multiple Shortcuts Simultaneously
 
+{% raw %}
+
 	Article: Q124539
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -53,3 +55,5 @@ permalink: /kb/124/Q124539/
 	
 	=============================================================================
 	
+
+{% endraw %}

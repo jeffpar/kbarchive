@@ -6,6 +6,8 @@ permalink: /kb/143/Q143384/
 
 ## Q143384: XCLN: PST Compaction Settings in the MSPST.INI
 
+{% raw %}
+
 	Article: Q143384
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -89,3 +91,5 @@ permalink: /kb/143/Q143384/
 	
 	=============================================================================
 	
+
+{% endraw %}

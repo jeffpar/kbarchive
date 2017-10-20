@@ -6,6 +6,8 @@ permalink: /kb/254/Q254976/
 
 ## Q254976: XCON: MIXER Does Not Map SMTP Subdomains to Organizational Units
 
+{% raw %}
+
 	Article: Q254976
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -75,3 +77,5 @@ permalink: /kb/254/Q254976/
 	
 	=============================================================================
 	
+
+{% endraw %}

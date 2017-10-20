@@ -6,6 +6,8 @@ permalink: /kb/235/Q235121/
 
 ## Q235121: Performance Optimizing Network Shares
 
+{% raw %}
+
 	Article: Q235121
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/235/Q235121/
 	
 	=============================================================================
 	
+
+{% endraw %}

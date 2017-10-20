@@ -6,6 +6,8 @@ permalink: /kb/316/Q316443/
 
 ## Q316443: FIX: Exception Error when Using Period in EDITSOURCE Syntax
 
+{% raw %}
+
 	Article: Q316443
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -67,3 +69,5 @@ permalink: /kb/316/Q316443/
 	
 	=============================================================================
 	
+
+{% endraw %}

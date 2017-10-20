@@ -6,6 +6,8 @@ permalink: /kb/181/Q181932/
 
 ## Q181932: INFO: Limits on Text in CEditView and CEdit
 
+{% raw %}
+
 	Article: Q181932
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:4.0,4.0a,4.1,4.2,4.2b,5.0,6.0
@@ -105,3 +107,5 @@ permalink: /kb/181/Q181932/
 	
 	=============================================================================
 	
+
+{% endraw %}

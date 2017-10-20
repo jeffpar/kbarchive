@@ -6,6 +6,8 @@ permalink: /kb/131/Q131081/
 
 ## Q131081: How to Set Object's BackColor to Button Face's BackColor
 
+{% raw %}
+
 	Article: Q131081
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -111,3 +113,5 @@ permalink: /kb/131/Q131081/
 	
 	=============================================================================
 	
+
+{% endraw %}

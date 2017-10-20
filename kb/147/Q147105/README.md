@@ -6,6 +6,8 @@ permalink: /kb/147/Q147105/
 
 ## Q147105: XCLN: GAL Is Lost If the Exchange Server Is Shut Down
 
+{% raw %}
+
 	Article: Q147105
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -59,3 +61,5 @@ permalink: /kb/147/Q147105/
 	
 	=============================================================================
 	
+
+{% endraw %}

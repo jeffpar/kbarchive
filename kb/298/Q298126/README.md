@@ -6,6 +6,8 @@ permalink: /kb/298/Q298126/
 
 ## Q298126: PRB: MFC Vertical Toolbar Buttons Missing After Customization
 
+{% raw %}
+
 	Article: Q298126
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -189,3 +191,5 @@ permalink: /kb/298/Q298126/
 	
 	=============================================================================
 	
+
+{% endraw %}

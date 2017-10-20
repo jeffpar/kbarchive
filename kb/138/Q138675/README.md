@@ -6,6 +6,8 @@ permalink: /kb/138/Q138675/
 
 ## Q138675: How to Create Raised Text Boxes in Visual FoxPro
 
+{% raw %}
+
 	Article: Q138675
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -81,3 +83,5 @@ permalink: /kb/138/Q138675/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/217/Q217103/
 
 ## Q217103: How to Write a Robots.txt File
 
+{% raw %}
+
 	Article: Q217103
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0,3.0,4.0,5.0
@@ -137,3 +139,5 @@ permalink: /kb/217/Q217103/
 	
 	=============================================================================
 	
+
+{% endraw %}

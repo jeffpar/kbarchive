@@ -6,6 +6,8 @@ permalink: /kb/173/Q173202/
 
 ## Q173202: 1B Record Missing in WINS Manager with View Filtered for Domain
 
+{% raw %}
+
 	Article: Q173202
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -79,3 +81,5 @@ permalink: /kb/173/Q173202/
 	
 	=============================================================================
 	
+
+{% endraw %}

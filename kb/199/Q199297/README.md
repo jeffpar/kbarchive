@@ -6,6 +6,8 @@ permalink: /kb/199/Q199297/
 
 ## Q199297: XCLN: How to Stop Publishing Free and Busy Times in Outlook
 
+{% raw %}
+
 	Article: Q199297
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -68,3 +70,5 @@ permalink: /kb/199/Q199297/
 	
 	=============================================================================
 	
+
+{% endraw %}

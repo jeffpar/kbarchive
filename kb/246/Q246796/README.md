@@ -6,6 +6,8 @@ permalink: /kb/246/Q246796/
 
 ## Q246796: STOP 0x01e Error Occurs with pcANYWHERE and Compaq Surveyor
 
+{% raw %}
+
 	Article: Q246796
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -50,3 +52,5 @@ permalink: /kb/246/Q246796/
 	
 	=============================================================================
 	
+
+{% endraw %}

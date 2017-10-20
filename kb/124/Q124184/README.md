@@ -6,6 +6,8 @@ permalink: /kb/124/Q124184/
 
 ## Q124184: Service Running as System Account Fails Accessing Network
 
+{% raw %}
+
 	Article: Q124184
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,4.0
@@ -137,3 +139,5 @@ permalink: /kb/124/Q124184/
 	
 	=============================================================================
 	
+
+{% endraw %}

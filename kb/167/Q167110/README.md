@@ -6,6 +6,8 @@ permalink: /kb/167/Q167110/
 
 ## Q167110: WinNT Err. Msg: Stop 0x1E in Fpnwsrv.sys
 
+{% raw %}
+
 	Article: Q167110
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -68,3 +70,5 @@ permalink: /kb/167/Q167110/
 	
 	=============================================================================
 	
+
+{% endraw %}

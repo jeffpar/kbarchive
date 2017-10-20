@@ -6,6 +6,8 @@ permalink: /kb/264/Q264446/
 
 ## Q264446: XADM: Installation Folder Is the Same After Upgrade
 
+{% raw %}
+
 	Article: Q264446
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -43,3 +45,5 @@ permalink: /kb/264/Q264446/
 	
 	=============================================================================
 	
+
+{% endraw %}

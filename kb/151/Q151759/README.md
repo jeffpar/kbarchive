@@ -6,6 +6,8 @@ permalink: /kb/151/Q151759/
 
 ## Q151759: DOCERR: Find/Load FoxTools API Library Wrong in FoxTools.hlp
 
+{% raw %}
+
 	Article: Q151759
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -66,3 +68,5 @@ permalink: /kb/151/Q151759/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135108/
 
 ## Q135108: PC NTMMTA: DocErr: Incorrect Version of Windows NT for Setup
 
+{% raw %}
+
 	Article: Q135108
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -49,3 +51,5 @@ permalink: /kb/135/Q135108/
 	
 	=============================================================================
 	
+
+{% endraw %}

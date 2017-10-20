@@ -6,6 +6,8 @@ permalink: /kb/252/Q252340/
 
 ## Q252340: How to Create and Start a Service on a Remote Computer
 
+{% raw %}
+
 	Article: Q252340
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.51 (all service packs),4.0,4.0 SP4,4.0 SP5
@@ -69,3 +71,5 @@ permalink: /kb/252/Q252340/
 	
 	=============================================================================
 	
+
+{% endraw %}

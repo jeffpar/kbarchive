@@ -6,6 +6,8 @@ permalink: /kb/152/Q152960/
 
 ## Q152960: XADM: Reassigning Site Roles after Removing the First Server
 
+{% raw %}
+
 	Article: Q152960
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -453,3 +455,5 @@ permalink: /kb/152/Q152960/
 	
 	=============================================================================
 	
+
+{% endraw %}

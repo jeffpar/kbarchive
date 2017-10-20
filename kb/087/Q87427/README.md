@@ -6,6 +6,8 @@ permalink: /kb/087/Q87427/
 
 ## Q87427: PROFS: How VM Addresses Are Added to Postoffice Address List
 
+{% raw %}
+
 	Article: Q87427
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -52,3 +54,5 @@ permalink: /kb/087/Q87427/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/021/Q21987/
 
 ## Q21987: ON KEY Trap Fails If CAPS/NUM LOCK Active; Need Separate KEY
 
+{% raw %}
+
 	Article: Q21987
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -73,3 +75,5 @@ permalink: /kb/021/Q21987/
 	The keyboard flag &H64 above reflects the sum of &H40 (for CAPS LOCK
 	active), &H20 (for NUM LOCK active), and &H04 (the keyboard flag for
 	CTRL).
+
+{% endraw %}

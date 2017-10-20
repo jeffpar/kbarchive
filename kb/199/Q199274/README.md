@@ -6,6 +6,8 @@ permalink: /kb/199/Q199274/
 
 ## Q199274: XCON: Event 13005 During POP3 Logon
 
+{% raw %}
+
 	Article: Q199274
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,8.0,8.01,8.02,8.03,8.5; winnt:5.0,5.5
@@ -87,3 +89,5 @@ permalink: /kb/199/Q199274/
 	
 	=============================================================================
 	
+
+{% endraw %}

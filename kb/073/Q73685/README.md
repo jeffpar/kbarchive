@@ -6,6 +6,8 @@ permalink: /kb/073/Q73685/
 
 ## Q73685: BUG: Preprocessor Program Invocation Gets Wrong Return Value NMK
 
+{% raw %}
+
 	Article: Q73685
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.11
@@ -117,3 +119,5 @@ permalink: /kb/073/Q73685/
 	
 	=============================================================================
 	
+
+{% endraw %}

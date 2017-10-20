@@ -6,6 +6,8 @@ permalink: /kb/153/Q153697/
 
 ## Q153697: Installing Office 95 with resource kit utility CPS
 
+{% raw %}
+
 	Article: Q153697
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51; :3.51
@@ -86,3 +88,5 @@ permalink: /kb/153/Q153697/
 	
 	=============================================================================
 	
+
+{% endraw %}

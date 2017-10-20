@@ -6,6 +6,8 @@ permalink: /kb/166/Q166831/
 
 ## Q166831: How to Query MS Access Database Located on NetWare Server
 
+{% raw %}
+
 	Article: Q166831
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0; :1.0
@@ -54,3 +56,5 @@ permalink: /kb/166/Q166831/
 	
 	=============================================================================
 	
+
+{% endraw %}

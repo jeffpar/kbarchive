@@ -6,6 +6,8 @@ permalink: /kb/187/Q187518/
 
 ## Q187518: Apps Using Beep API on Multiprocessor Systems May Crash
 
+{% raw %}
+
 	Article: Q187518
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/187/Q187518/
 	
 	=============================================================================
 	
+
+{% endraw %}

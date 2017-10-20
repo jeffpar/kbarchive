@@ -6,6 +6,8 @@ permalink: /kb/180/Q180497/
 
 ## Q180497: PRB: Formset with Modal Windows Containing OCX Hangs VFP
 
+{% raw %}
+
 	Article: Q180497
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -83,3 +85,5 @@ permalink: /kb/180/Q180497/
 	
 	=============================================================================
 	
+
+{% endraw %}

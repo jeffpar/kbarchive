@@ -6,6 +6,8 @@ permalink: /kb/068/Q68025/
 
 ## Q68025: &quot;Feature Removed&quot; Using WIDTH &quot;LPT1:&quot;,wdth% and BC /Fs in 7.00
 
+{% raw %}
+
 	Article: Q68025
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -42,3 +44,5 @@ permalink: /kb/068/Q68025/
 	read as follows:
 	
 	   WIDTH LPRINT wdth%
+
+{% endraw %}

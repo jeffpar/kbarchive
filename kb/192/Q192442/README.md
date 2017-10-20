@@ -6,6 +6,8 @@ permalink: /kb/192/Q192442/
 
 ## Q192442: Err Msg: Cannot Establish Modem Connection
 
+{% raw %}
+
 	Article: Q192442
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6
@@ -89,3 +91,5 @@ permalink: /kb/192/Q192442/
 	
 	=============================================================================
 	
+
+{% endraw %}

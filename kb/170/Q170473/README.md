@@ -6,6 +6,8 @@ permalink: /kb/170/Q170473/
 
 ## Q170473: XCON: MTA Error 2194, Usually After Recovery
 
+{% raw %}
+
 	Article: Q170473
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0 5.5
@@ -69,3 +71,5 @@ permalink: /kb/170/Q170473/
 	
 	=============================================================================
 	
+
+{% endraw %}

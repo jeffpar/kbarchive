@@ -6,6 +6,8 @@ permalink: /kb/164/Q164350/
 
 ## Q164350: NEC IDE CD-ROM Drive CDR-1400C Cannot Play Audio CDs
 
+{% raw %}
+
 	Article: Q164350
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -47,3 +49,5 @@ permalink: /kb/164/Q164350/
 	
 	=============================================================================
 	
+
+{% endraw %}

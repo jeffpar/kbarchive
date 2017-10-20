@@ -6,6 +6,8 @@ permalink: /kb/199/Q199435/
 
 ## Q199435: SMS: Keywords List for Searching
 
+{% raw %}
+
 	Article: Q199435
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2,2.0
@@ -189,3 +191,5 @@ permalink: /kb/199/Q199435/
 	
 	=============================================================================
 	
+
+{% endraw %}

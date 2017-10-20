@@ -6,6 +6,8 @@ permalink: /kb/186/Q186852/
 
 ## Q186852: WD97:Heading Styles Reset After Applying Heading Level Numbering
 
+{% raw %}
+
 	Article: Q186852
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -50,3 +52,5 @@ permalink: /kb/186/Q186852/
 	
 	=============================================================================
 	
+
+{% endraw %}

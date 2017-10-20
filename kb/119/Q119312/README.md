@@ -6,6 +6,8 @@ permalink: /kb/119/Q119312/
 
 ## Q119312: Saved Search Uses @ as Replacement for &#42; in Filename
 
+{% raw %}
+
 	Article: Q119312
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 4.0
@@ -46,3 +48,5 @@ permalink: /kb/119/Q119312/
 	
 	=============================================================================
 	
+
+{% endraw %}

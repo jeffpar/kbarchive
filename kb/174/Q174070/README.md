@@ -6,6 +6,8 @@ permalink: /kb/174/Q174070/
 
 ## Q174070: Registry Replication in Microsoft Cluster Server
 
+{% raw %}
+
 	Article: Q174070
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/174/Q174070/
 	
 	=============================================================================
 	
+
+{% endraw %}

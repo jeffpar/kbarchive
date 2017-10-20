@@ -6,6 +6,8 @@ permalink: /kb/175/Q175845/
 
 ## Q175845: XFOR: Attachment Icon Changes When Forwarding Msg to Notes
 
+{% raw %}
+
 	Article: Q175845
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -54,3 +56,5 @@ permalink: /kb/175/Q175845/
 	
 	=============================================================================
 	
+
+{% endraw %}

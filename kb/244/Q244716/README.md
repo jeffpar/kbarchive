@@ -6,6 +6,8 @@ permalink: /kb/244/Q244716/
 
 ## Q244716: FS 2000: Pointing Device Does Not Function on Second Monitor
 
+{% raw %}
+
 	Article: Q244716
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -69,3 +71,5 @@ permalink: /kb/244/Q244716/
 	
 	=============================================================================
 	
+
+{% endraw %}

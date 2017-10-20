@@ -6,6 +6,8 @@ permalink: /kb/253/Q253546/
 
 ## Q253546: XADM: Auto Reply Rules Stop After Upgrade to Exchange Server 5.5
 
+{% raw %}
+
 	Article: Q253546
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -70,3 +72,5 @@ permalink: /kb/253/Q253546/
 	
 	=============================================================================
 	
+
+{% endraw %}

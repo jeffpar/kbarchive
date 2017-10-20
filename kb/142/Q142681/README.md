@@ -6,6 +6,8 @@ permalink: /kb/142/Q142681/
 
 ## Q142681: IDC Script Fails to Connect to Database
 
+{% raw %}
+
 	Article: Q142681
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0
@@ -71,3 +73,5 @@ permalink: /kb/142/Q142681/
 	
 	=============================================================================
 	
+
+{% endraw %}

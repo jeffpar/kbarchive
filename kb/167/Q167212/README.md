@@ -6,6 +6,8 @@ permalink: /kb/167/Q167212/
 
 ## Q167212: Supported PCMCIA Mode on Toshiba Tecra 700 Series
 
+{% raw %}
+
 	Article: Q167212
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/167/Q167212/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/105/Q105609/
 
 ## Q105609: MS-DOS 6.2 Step-Up (BBS) SETUP.BAT File
 
+{% raw %}
+
 	Article: Q105609
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -238,3 +240,5 @@ permalink: /kb/105/Q105609/
 	
 	=============================================================================
 	
+
+{% endraw %}

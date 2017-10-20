@@ -6,6 +6,8 @@ permalink: /kb/262/Q262989/
 
 ## Q262989: XFOR: Lotus cc:Mail Migration Event 1030 Error Message
 
+{% raw %}
+
 	Article: Q262989
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -78,3 +80,5 @@ permalink: /kb/262/Q262989/
 	
 	=============================================================================
 	
+
+{% endraw %}

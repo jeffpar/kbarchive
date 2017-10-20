@@ -6,6 +6,8 @@ permalink: /kb/159/Q159189/
 
 ## Q159189: XFOR: DXA Drops Transaction if X400 DDA Value Contains a Slash
 
+{% raw %}
+
 	Article: Q159189
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -108,3 +110,5 @@ permalink: /kb/159/Q159189/
 	
 	=============================================================================
 	
+
+{% endraw %}

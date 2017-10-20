@@ -6,6 +6,8 @@ permalink: /kb/069/Q69099/
 
 ## Q69099: Setup Detects Incorrect Keyboard
 
+{% raw %}
+
 	Article: Q69099
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/069/Q69099/
 	
 	=============================================================================
 	
+
+{% endraw %}

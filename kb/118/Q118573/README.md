@@ -6,6 +6,8 @@ permalink: /kb/118/Q118573/
 
 ## Q118573: Ancient Lands: GP Fault with Windows Sound System
 
+{% raw %}
+
 	Article: Q118573
 	Product(s): Miscellaneous Windows Products
 	Version(s): 2.00
@@ -63,3 +65,5 @@ permalink: /kb/118/Q118573/
 	
 	=============================================================================
 	
+
+{% endraw %}

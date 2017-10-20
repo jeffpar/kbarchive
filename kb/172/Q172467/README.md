@@ -6,6 +6,8 @@ permalink: /kb/172/Q172467/
 
 ## Q172467: WIN95 Error Message: You are Not Allowed To Log On at This Time
 
+{% raw %}
+
 	Article: Q172467
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -75,3 +77,5 @@ permalink: /kb/172/Q172467/
 	
 	=============================================================================
 	
+
+{% endraw %}

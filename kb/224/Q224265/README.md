@@ -6,6 +6,8 @@ permalink: /kb/224/Q224265/
 
 ## Q224265: Expedia Streets and Trips 2000: Stops Responding When You Print
 
+{% raw %}
+
 	Article: Q224265
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -79,3 +81,5 @@ permalink: /kb/224/Q224265/
 	
 	=============================================================================
 	
+
+{% endraw %}

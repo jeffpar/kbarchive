@@ -6,6 +6,8 @@ permalink: /kb/108/Q108648/
 
 ## Q108648: Macintosh Locks Up When Changing Zones with SP2
 
+{% raw %}
+
 	Article: Q108648
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -58,3 +60,5 @@ permalink: /kb/108/Q108648/
 	
 	=============================================================================
 	
+
+{% endraw %}

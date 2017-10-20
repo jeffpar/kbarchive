@@ -6,6 +6,8 @@ permalink: /kb/266/Q266038/
 
 ## Q266038: BB2001: Cannot Start Program After You Enable 3D Acceleration
 
+{% raw %}
+
 	Article: Q266038
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -93,3 +95,5 @@ permalink: /kb/266/Q266038/
 	
 	=============================================================================
 	
+
+{% endraw %}

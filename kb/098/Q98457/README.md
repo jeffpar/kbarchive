@@ -6,6 +6,8 @@ permalink: /kb/098/Q98457/
 
 ## Q98457: Using VSAFE and Vsafe Manager (MWAVTSR.EXE) with Windows
 
+{% raw %}
+
 	Article: Q98457
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -56,3 +58,5 @@ permalink: /kb/098/Q98457/
 	
 	=============================================================================
 	
+
+{% endraw %}

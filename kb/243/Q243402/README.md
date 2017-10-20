@@ -6,6 +6,8 @@ permalink: /kb/243/Q243402/
 
 ## Q243402: XCON: Exchange Server MTA Event ID 9280
 
+{% raw %}
+
 	Article: Q243402
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -68,3 +70,5 @@ permalink: /kb/243/Q243402/
 	
 	=============================================================================
 	
+
+{% endraw %}

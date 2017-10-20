@@ -6,6 +6,8 @@ permalink: /kb/234/Q234576/
 
 ## Q234576: BUG: VBCE Winsock Control Might Not Receive Binary Data
 
+{% raw %}
+
 	Article: Q234576
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -103,3 +105,5 @@ permalink: /kb/234/Q234576/
 	
 	=============================================================================
 	
+
+{% endraw %}

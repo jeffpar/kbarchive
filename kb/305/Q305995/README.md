@@ -6,6 +6,8 @@ permalink: /kb/305/Q305995/
 
 ## Q305995: PRB: Error When You Connect to a Jet Database on a Novell Server
 
+{% raw %}
+
 	Article: Q305995
 	Product(s): Microsoft C Compiler
 	Version(s): 3.51,3.6
@@ -143,3 +145,5 @@ permalink: /kb/305/Q305995/
 	
 	=============================================================================
 	
+
+{% endraw %}

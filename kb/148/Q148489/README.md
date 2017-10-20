@@ -6,6 +6,8 @@ permalink: /kb/148/Q148489/
 
 ## Q148489: MPI: HOW &amp; WHY WINDOWS 95 Corrections and Comments
 
+{% raw %}
+
 	Article: Q148489
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -153,3 +155,5 @@ permalink: /kb/148/Q148489/
 	
 	=============================================================================
 	
+
+{% endraw %}

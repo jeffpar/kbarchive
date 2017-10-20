@@ -6,6 +6,8 @@ permalink: /kb/165/Q165201/
 
 ## Q165201: TN5250 DEC Alpha Fails When Client Request Unsupported Options
 
+{% raw %}
+
 	Article: Q165201
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -70,3 +72,5 @@ permalink: /kb/165/Q165201/
 	
 	=============================================================================
 	
+
+{% endraw %}

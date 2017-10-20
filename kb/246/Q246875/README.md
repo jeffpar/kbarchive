@@ -6,6 +6,8 @@ permalink: /kb/246/Q246875/
 
 ## Q246875: HOWTO: Visual SourceSafe 6.0 Installation From Visual Basic 6.0
 
+{% raw %}
+
 	Article: Q246875
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -93,3 +95,5 @@ permalink: /kb/246/Q246875/
 	
 	=============================================================================
 	
+
+{% endraw %}

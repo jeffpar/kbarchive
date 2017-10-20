@@ -6,6 +6,8 @@ permalink: /kb/105/Q105362/
 
 ## Q105362: PROFS: Setup For Cross Calendaring in XA Systems and RSCS
 
+{% raw %}
+
 	Article: Q105362
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.4
@@ -65,3 +67,5 @@ permalink: /kb/105/Q105362/
 	
 	=============================================================================
 	
+
+{% endraw %}

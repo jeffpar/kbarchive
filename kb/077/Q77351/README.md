@@ -6,6 +6,8 @@ permalink: /kb/077/Q77351/
 
 ## Q77351: Samsung S-5200 Requires HIMEM /MACHINE:12
 
+{% raw %}
+
 	Article: Q77351
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -55,3 +57,5 @@ permalink: /kb/077/Q77351/
 	
 	=============================================================================
 	
+
+{% endraw %}

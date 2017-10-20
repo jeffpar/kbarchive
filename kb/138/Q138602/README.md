@@ -6,6 +6,8 @@ permalink: /kb/138/Q138602/
 
 ## Q138602: ListBox Scroll Behavior Depends on Physical Dimensions
 
+{% raw %}
+
 	Article: Q138602
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -103,3 +105,5 @@ permalink: /kb/138/Q138602/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/083/Q83998/
 
 ## Q83998: PRB: PrintDlg() Returns PDERR_NODEVICES w/ HP DeskJet
 
+{% raw %}
+
 	Article: Q83998
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -77,3 +79,5 @@ permalink: /kb/083/Q83998/
 	
 	=============================================================================
 	
+
+{% endraw %}

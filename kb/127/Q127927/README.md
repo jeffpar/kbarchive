@@ -6,6 +6,8 @@ permalink: /kb/127/Q127927/
 
 ## Q127927: Application Error Running MorningStar Software
 
+{% raw %}
+
 	Article: Q127927
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/127/Q127927/
 	
 	=============================================================================
 	
+
+{% endraw %}

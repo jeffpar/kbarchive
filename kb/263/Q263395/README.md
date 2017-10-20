@@ -6,6 +6,8 @@ permalink: /kb/263/Q263395/
 
 ## Q263395: SMS: LSM Prevents Senior Site Logic from Being Transferred
 
+{% raw %}
+
 	Article: Q263395
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -66,3 +68,5 @@ permalink: /kb/263/Q263395/
 	
 	=============================================================================
 	
+
+{% endraw %}

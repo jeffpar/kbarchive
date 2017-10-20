@@ -6,6 +6,8 @@ permalink: /kb/247/Q247176/
 
 ## Q247176: XCLN: Sent Time Info Incorrect for Delayed Delivery Messages
 
+{% raw %}
+
 	Article: Q247176
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,97,98
@@ -56,3 +58,5 @@ permalink: /kb/247/Q247176/
 	
 	=============================================================================
 	
+
+{% endraw %}

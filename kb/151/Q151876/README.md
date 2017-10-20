@@ -6,6 +6,8 @@ permalink: /kb/151/Q151876/
 
 ## Q151876: Windows 95 Remote Boot Setup Crashes during Adapter
 
+{% raw %}
+
 	Article: Q151876
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.5,3.51
@@ -48,3 +50,5 @@ permalink: /kb/151/Q151876/
 	
 	=============================================================================
 	
+
+{% endraw %}

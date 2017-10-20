@@ -6,6 +6,8 @@ permalink: /kb/219/Q219019/
 
 ## Q219019: Offline Operation of Custom Shared Start Menu System Policy
 
+{% raw %}
+
 	Article: Q219019
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -153,3 +155,5 @@ permalink: /kb/219/Q219019/
 	
 	=============================================================================
 	
+
+{% endraw %}

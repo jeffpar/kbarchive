@@ -6,6 +6,8 @@ permalink: /kb/176/Q176681/
 
 ## Q176681: XGEN: Description of Microsoft Exchange Server 5.5
 
+{% raw %}
+
 	Article: Q176681
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -119,3 +121,5 @@ permalink: /kb/176/Q176681/
 	
 	=============================================================================
 	
+
+{% endraw %}

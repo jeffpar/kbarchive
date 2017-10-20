@@ -6,6 +6,8 @@ permalink: /kb/128/Q128914/
 
 ## Q128914: Quick Windows Viewer Loses Text During Windows Remote Control
 
+{% raw %}
+
 	Article: Q128914
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -50,3 +52,5 @@ permalink: /kb/128/Q128914/
 	
 	=============================================================================
 	
+
+{% endraw %}

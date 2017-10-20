@@ -6,6 +6,8 @@ permalink: /kb/186/Q186435/
 
 ## Q186435: WD97: Formatting Lost, Symbols Appear When Opening Document
 
+{% raw %}
+
 	Article: Q186435
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -64,3 +66,5 @@ permalink: /kb/186/Q186435/
 	
 	=============================================================================
 	
+
+{% endraw %}

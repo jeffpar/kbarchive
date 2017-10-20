@@ -6,6 +6,8 @@ permalink: /kb/119/Q119828/
 
 ## Q119828: PC WSPlus: Standalone Install Login Name Shouldn't Have Spaces
 
+{% raw %}
+
 	Article: Q119828
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -90,3 +92,5 @@ permalink: /kb/119/Q119828/
 	
 	=============================================================================
 	
+
+{% endraw %}

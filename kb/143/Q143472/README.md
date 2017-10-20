@@ -6,6 +6,8 @@ permalink: /kb/143/Q143472/
 
 ## Q143472: FPNW Blue Screens Accessing or Creating Folders with Long Paths
 
+{% raw %}
+
 	Article: Q143472
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -79,3 +81,5 @@ permalink: /kb/143/Q143472/
 	
 	=============================================================================
 	
+
+{% endraw %}

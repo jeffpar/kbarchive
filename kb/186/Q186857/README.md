@@ -6,6 +6,8 @@ permalink: /kb/186/Q186857/
 
 ## Q186857: Encarta: Error Message When You Attempt to View Collage
 
+{% raw %}
+
 	Article: Q186857
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -93,3 +95,5 @@ permalink: /kb/186/Q186857/
 	
 	=============================================================================
 	
+
+{% endraw %}

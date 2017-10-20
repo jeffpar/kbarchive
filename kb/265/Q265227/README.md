@@ -6,6 +6,8 @@ permalink: /kb/265/Q265227/
 
 ## Q265227: XADM: Setup Won't Work w. &quot;The Required Privilege...&quot; Err. Mssg.
 
+{% raw %}
+
 	Article: Q265227
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -63,3 +65,5 @@ permalink: /kb/265/Q265227/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198310/
 
 ## Q198310: WD97: Title Bar Displays HTML Title Instead of File Name
 
+{% raw %}
+
 	Article: Q198310
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -52,3 +54,5 @@ permalink: /kb/198/Q198310/
 	
 	=============================================================================
 	
+
+{% endraw %}

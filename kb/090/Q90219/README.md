@@ -6,6 +6,8 @@ permalink: /kb/090/Q90219/
 
 ## Q90219: Cannot Edit OLE Object Linked to Another Computer
 
+{% raw %}
+
 	Article: Q90219
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -63,3 +65,5 @@ permalink: /kb/090/Q90219/
 	
 	=============================================================================
 	
+
+{% endraw %}

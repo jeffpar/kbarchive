@@ -6,6 +6,8 @@ permalink: /kb/141/Q141357/
 
 ## Q141357: BUG: WM_MOUSEMOVE Messages Returned Out of Sequence
 
+{% raw %}
+
 	Article: Q141357
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:2.0,4.0
@@ -129,3 +131,5 @@ permalink: /kb/141/Q141357/
 	
 	=============================================================================
 	
+
+{% endraw %}

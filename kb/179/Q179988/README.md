@@ -6,6 +6,8 @@ permalink: /kb/179/Q179988/
 
 ## Q179988: FIX: Problem with ListView's ColumnHeader Width Property
 
+{% raw %}
+
 	Article: Q179988
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -135,3 +137,5 @@ permalink: /kb/179/Q179988/
 	
 	=============================================================================
 	
+
+{% endraw %}

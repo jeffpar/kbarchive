@@ -6,6 +6,8 @@ permalink: /kb/197/Q197226/
 
 ## Q197226: WD97: How to Close an InputBox&#36;() Dialog Box Using Keystrokes
 
+{% raw %}
+
 	Article: Q197226
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -49,3 +51,5 @@ permalink: /kb/197/Q197226/
 	
 	=============================================================================
 	
+
+{% endraw %}

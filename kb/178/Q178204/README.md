@@ -6,6 +6,8 @@ permalink: /kb/178/Q178204/
 
 ## Q178204: XCON: MTA Using 100% CPU on Receiving Message
 
+{% raw %}
+
 	Article: Q178204
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -110,3 +112,5 @@ permalink: /kb/178/Q178204/
 	
 	=============================================================================
 	
+
+{% endraw %}

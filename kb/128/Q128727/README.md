@@ -6,6 +6,8 @@ permalink: /kb/128/Q128727/
 
 ## Q128727: How to Copy an Existing Class Without a Subclass
 
+{% raw %}
+
 	Article: Q128727
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/128/Q128727/
 	
 	=============================================================================
 	
+
+{% endraw %}

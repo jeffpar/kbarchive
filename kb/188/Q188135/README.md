@@ -6,6 +6,8 @@ permalink: /kb/188/Q188135/
 
 ## Q188135: Description of Windows Script Host (WSH)
 
+{% raw %}
+
 	Article: Q188135
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0,2.1,2.5
@@ -142,3 +144,5 @@ permalink: /kb/188/Q188135/
 	
 	=============================================================================
 	
+
+{% endraw %}

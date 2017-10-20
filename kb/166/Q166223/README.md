@@ -6,6 +6,8 @@ permalink: /kb/166/Q166223/
 
 ## Q166223: SNA Server 3.0 Snabase Fails Unexpectedly with Access Violation
 
+{% raw %}
+
 	Article: Q166223
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -68,3 +70,5 @@ permalink: /kb/166/Q166223/
 	
 	=============================================================================
 	
+
+{% endraw %}

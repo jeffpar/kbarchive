@@ -6,6 +6,8 @@ permalink: /kb/134/Q134374/
 
 ## Q134374: Misleading Message for Properties in Favorite Places
 
+{% raw %}
+
 	Article: Q134374
 	Product(s): The Microsoft Network
 	Version(s): 1.00 1.05 1.2 1.3
@@ -42,3 +44,5 @@ permalink: /kb/134/Q134374/
 	
 	=============================================================================
 	
+
+{% endraw %}

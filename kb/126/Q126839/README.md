@@ -6,6 +6,8 @@ permalink: /kb/126/Q126839/
 
 ## Q126839: HOWTO: Create Special Effects in a Grid
 
+{% raw %}
+
 	Article: Q126839
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -99,3 +101,5 @@ permalink: /kb/126/Q126839/
 	
 	=============================================================================
 	
+
+{% endraw %}

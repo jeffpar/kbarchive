@@ -6,6 +6,8 @@ permalink: /kb/077/Q77707/
 
 ## Q77707: Turbo XT BIOS, Floppy Drives, and MS-DOS 3.3 and Later
 
+{% raw %}
+
 	Article: Q77707
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -36,3 +38,5 @@ permalink: /kb/077/Q77707/
 	
 	=============================================================================
 	
+
+{% endraw %}

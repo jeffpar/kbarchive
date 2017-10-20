@@ -6,6 +6,8 @@ permalink: /kb/074/Q74638/
 
 ## Q74638: Using Keystrokes in MS-DOS 5.0 or Later Shell
 
+{% raw %}
+
 	Article: Q74638
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -118,3 +120,5 @@ permalink: /kb/074/Q74638/
 	
 	=============================================================================
 	
+
+{% endraw %}

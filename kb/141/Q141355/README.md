@@ -6,6 +6,8 @@ permalink: /kb/141/Q141355/
 
 ## Q141355: FIX: Copy/Paste Causes GP Fault w/Worksheet Created by COPY TO
 
+{% raw %}
+
 	Article: Q141355
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -111,3 +113,5 @@ permalink: /kb/141/Q141355/
 	
 	=============================================================================
 	
+
+{% endraw %}

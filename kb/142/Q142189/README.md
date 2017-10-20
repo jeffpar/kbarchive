@@ -6,6 +6,8 @@ permalink: /kb/142/Q142189/
 
 ## Q142189: Using the UNDELETE Command in Windows 95
 
+{% raw %}
+
 	Article: Q142189
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -75,3 +77,5 @@ permalink: /kb/142/Q142189/
 	
 	=============================================================================
 	
+
+{% endraw %}

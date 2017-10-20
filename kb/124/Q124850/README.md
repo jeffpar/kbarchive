@@ -6,6 +6,8 @@ permalink: /kb/124/Q124850/
 
 ## Q124850: Writer: How to Decode a Document with a Password
 
+{% raw %}
+
 	Article: Q124850
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
@@ -58,3 +60,5 @@ permalink: /kb/124/Q124850/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/057/Q57938/
 
 ## Q57938: fread() Can Fail When Return Code for fseek() Is Ignored
 
+{% raw %}
+
 	Article: Q57938
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -64,3 +66,5 @@ permalink: /kb/057/Q57938/
 	library source code and modify fseek() to set _cnt to 0 (zero) if an
 	error occurs. Also, whenever _cnt is set to 0, stream->_ptr should be
 	set to stream->_base.
+
+{% endraw %}

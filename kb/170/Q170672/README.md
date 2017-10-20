@@ -6,6 +6,8 @@ permalink: /kb/170/Q170672/
 
 ## Q170672: Config File Security does not Display Correct Domain Name
 
+{% raw %}
+
 	Article: Q170672
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1
@@ -63,3 +65,5 @@ permalink: /kb/170/Q170672/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/315/Q315725/
 
 ## Q315725: HOW TO: Determine If Screen Saver Is Running by Using VB 6.0
 
+{% raw %}
+
 	Article: Q315725
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -177,3 +179,5 @@ permalink: /kb/315/Q315725/
 	
 	=============================================================================
 	
+
+{% endraw %}

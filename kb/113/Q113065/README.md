@@ -6,6 +6,8 @@ permalink: /kb/113/Q113065/
 
 ## Q113065: PRB: Extra Copies of Function Added to Library
 
+{% raw %}
+
 	Article: Q113065
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0 2.0 5.0
@@ -114,3 +116,5 @@ permalink: /kb/113/Q113065/
 	
 	=============================================================================
 	
+
+{% endraw %}

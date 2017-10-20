@@ -6,6 +6,8 @@ permalink: /kb/242/Q242007/
 
 ## Q242007: BUG: RasDial() Function Fails to Dial Multilink Entries
 
+{% raw %}
+
 	Article: Q242007
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -85,3 +87,5 @@ permalink: /kb/242/Q242007/
 	
 	=============================================================================
 	
+
+{% endraw %}

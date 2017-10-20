@@ -6,6 +6,8 @@ permalink: /kb/194/Q194819/
 
 ## Q194819: PC DirSync: Import Hangs when Processing Srvtrans.glb
 
+{% raw %}
+
 	Article: Q194819
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -91,3 +93,5 @@ permalink: /kb/194/Q194819/
 	
 	=============================================================================
 	
+
+{% endraw %}

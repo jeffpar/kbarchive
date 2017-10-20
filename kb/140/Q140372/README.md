@@ -6,6 +6,8 @@ permalink: /kb/140/Q140372/
 
 ## Q140372: Direct Disk Access Disabled to Protect Long File Names
 
+{% raw %}
+
 	Article: Q140372
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.51
@@ -95,3 +97,5 @@ permalink: /kb/140/Q140372/
 	
 	=============================================================================
 	
+
+{% endraw %}

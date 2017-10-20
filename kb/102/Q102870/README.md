@@ -6,6 +6,8 @@ permalink: /kb/102/Q102870/
 
 ## Q102870: Reading the Boot Sector of a Drive
 
+{% raw %}
+
 	Article: Q102870
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -116,3 +118,5 @@ permalink: /kb/102/Q102870/
 	
 	=============================================================================
 	
+
+{% endraw %}

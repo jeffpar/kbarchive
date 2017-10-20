@@ -6,6 +6,8 @@ permalink: /kb/137/Q137152/
 
 ## Q137152: Canon BubbleJet on ECP Port Prints Partial Page
 
+{% raw %}
+
 	Article: Q137152
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -123,3 +125,5 @@ permalink: /kb/137/Q137152/
 	
 	=============================================================================
 	
+
+{% endraw %}

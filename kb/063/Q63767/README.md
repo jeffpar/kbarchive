@@ -6,6 +6,8 @@ permalink: /kb/063/Q63767/
 
 ## Q63767: Screen Fonts Mapping Incorrectly in Windows 3.0
 
+{% raw %}
+
 	Article: Q63767
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a
@@ -61,3 +63,5 @@ permalink: /kb/063/Q63767/
 	
 	=============================================================================
 	
+
+{% endraw %}

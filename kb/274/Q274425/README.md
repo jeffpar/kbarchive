@@ -6,6 +6,8 @@ permalink: /kb/274/Q274425/
 
 ## Q274425: Visual Basic Design Patterns Comments and Corrections
 
+{% raw %}
+
 	Article: Q274425
 	Product(s): Microsoft Press
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/274/Q274425/
 	
 	=============================================================================
 	
+
+{% endraw %}

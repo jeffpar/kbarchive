@@ -6,6 +6,8 @@ permalink: /kb/264/Q264748/
 
 ## Q264748: FP98: &quot;Server Failed to Load Application&quot; Error
 
+{% raw %}
+
 	Article: Q264748
 	Product(s): Word Front Page
 	Version(s): 4.0
@@ -107,3 +109,5 @@ permalink: /kb/264/Q264748/
 	
 	=============================================================================
 	
+
+{% endraw %}

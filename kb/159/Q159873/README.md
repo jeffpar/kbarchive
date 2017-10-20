@@ -6,6 +6,8 @@ permalink: /kb/159/Q159873/
 
 ## Q159873: Err Msg: SPOOL32 Caused a Stack Fault in Module SPOOLSS.DLL...
 
+{% raw %}
+
 	Article: Q159873
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/159/Q159873/
 	
 	=============================================================================
 	
+
+{% endraw %}

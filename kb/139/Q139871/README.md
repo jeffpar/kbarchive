@@ -6,6 +6,8 @@ permalink: /kb/139/Q139871/
 
 ## Q139871: FIX: Error C2371 on Struct Typedef that Does Not Have a Tag
 
+{% raw %}
+
 	Article: Q139871
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,4.1,4.2
@@ -82,3 +84,5 @@ permalink: /kb/139/Q139871/
 	
 	=============================================================================
 	
+
+{% endraw %}

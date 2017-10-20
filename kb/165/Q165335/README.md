@@ -6,6 +6,8 @@ permalink: /kb/165/Q165335/
 
 ## Q165335: Active Server Pages: Progressive Memory Leak
 
+{% raw %}
+
 	Article: Q165335
 	Product(s): Internet Information Server
 	Version(s): 3.0
@@ -90,3 +92,5 @@ permalink: /kb/165/Q165335/
 	
 	=============================================================================
 	
+
+{% endraw %}

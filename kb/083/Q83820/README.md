@@ -6,6 +6,8 @@ permalink: /kb/083/Q83820/
 
 ## Q83820: Using CD-ROM Extensions with Windows Permanent Swap Files
 
+{% raw %}
+
 	Article: Q83820
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -111,3 +113,5 @@ permalink: /kb/083/Q83820/
 	
 	=============================================================================
 	
+
+{% endraw %}

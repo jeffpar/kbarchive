@@ -6,6 +6,8 @@ permalink: /kb/155/Q155571/
 
 ## Q155571: Can Install Incompatible Program Using the .inf File
 
+{% raw %}
+
 	Article: Q155571
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/155/Q155571/
 	
 	=============================================================================
 	
+
+{% endraw %}

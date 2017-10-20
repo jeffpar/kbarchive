@@ -6,6 +6,8 @@ permalink: /kb/044/Q44560/
 
 ## Q44560: More Information on Using _setfont in QuickC
 
+{% raw %}
+
 	Article: Q44560
 	Product(s): See article
 	Version(s): 2.00
@@ -57,3 +59,5 @@ permalink: /kb/044/Q44560/
 	  _unregisterfonts();
 	  _setvideomode(_DEFAULTMODE);
 	}
+
+{% endraw %}

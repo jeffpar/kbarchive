@@ -6,6 +6,8 @@ permalink: /kb/238/Q238188/
 
 ## Q238188: BUG: Branching a file gives &quot;A more recent version is checked ou
 
+{% raw %}
+
 	Article: Q238188
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/238/Q238188/
 	
 	=============================================================================
 	
+
+{% endraw %}

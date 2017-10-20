@@ -6,6 +6,8 @@ permalink: /kb/190/Q190004/
 
 ## Q190004: Error 403.7 or &quot;Connection to Server Could Not Be Established&quot;
 
+{% raw %}
+
 	Article: Q190004
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/190/Q190004/
 	
 	=============================================================================
 	
+
+{% endraw %}

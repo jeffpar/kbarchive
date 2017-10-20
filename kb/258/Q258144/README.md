@@ -6,6 +6,8 @@ permalink: /kb/258/Q258144/
 
 ## Q258144: HOWTO: Get a List of All Pinned Files from OLE Automation in VB
 
+{% raw %}
+
 	Article: Q258144
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -195,3 +197,5 @@ permalink: /kb/258/Q258144/
 	
 	=============================================================================
 	
+
+{% endraw %}

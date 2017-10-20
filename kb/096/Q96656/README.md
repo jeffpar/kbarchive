@@ -6,6 +6,8 @@ permalink: /kb/096/Q96656/
 
 ## Q96656: 3COM: Starting Gateway with PO1/NET1 Documented Incorrectly
 
+{% raw %}
+
 	Article: Q96656
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -52,3 +54,5 @@ permalink: /kb/096/Q96656/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/077/Q77279/
 
 ## Q77279: Print Using Printer Resolution with Paintbrush
 
+{% raw %}
+
 	Article: Q77279
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -76,3 +78,5 @@ permalink: /kb/077/Q77279/
 	
 	=============================================================================
 	
+
+{% endraw %}

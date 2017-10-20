@@ -6,6 +6,8 @@ permalink: /kb/214/Q214783/
 
 ## Q214783: Iissync.exe Fails with Error Code 64
 
+{% raw %}
+
 	Article: Q214783
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -68,3 +70,5 @@ permalink: /kb/214/Q214783/
 	
 	=============================================================================
 	
+
+{% endraw %}

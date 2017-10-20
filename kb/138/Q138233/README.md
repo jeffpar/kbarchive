@@ -6,6 +6,8 @@ permalink: /kb/138/Q138233/
 
 ## Q138233: FIX: Memory Leak When Scroll Database Designer in Windows 95
 
+{% raw %}
+
 	Article: Q138233
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -78,3 +80,5 @@ permalink: /kb/138/Q138233/
 	
 	=============================================================================
 	
+
+{% endraw %}

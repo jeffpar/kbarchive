@@ -6,6 +6,8 @@ permalink: /kb/043/Q43063/
 
 ## Q43063: Calls Stack Is Sometimes Incomplete
 
+{% raw %}
+
 	Article: Q43063
 	Product(s): See article
 	Version(s): 2.00
@@ -81,3 +83,5 @@ permalink: /kb/043/Q43063/
 	
 	   This is once again incorrect. Between B() and main(), A() should be
 	   listed.
+
+{% endraw %}

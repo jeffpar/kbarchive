@@ -6,6 +6,8 @@ permalink: /kb/191/Q191387/
 
 ## Q191387: Unable to Run 16-bit Apps If FILES= Is Greater Than 255
 
+{% raw %}
+
 	Article: Q191387
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/191/Q191387/
 	
 	=============================================================================
 	
+
+{% endraw %}

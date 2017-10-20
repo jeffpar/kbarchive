@@ -6,6 +6,8 @@ permalink: /kb/220/Q220159/
 
 ## Q220159: Disabling the MSDOS and WOWEXEC Subsystems on Terminal Server
 
+{% raw %}
+
 	Article: Q220159
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/220/Q220159/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/072/Q72700/
 
 ## Q72700: FIX: MASM 6.0 May Parse a Comment as a Conditional Directive
 
+{% raw %}
+
 	Article: Q72700
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0
@@ -120,3 +122,5 @@ permalink: /kb/072/Q72700/
 	
 	=============================================================================
 	
+
+{% endraw %}

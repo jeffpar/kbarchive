@@ -6,6 +6,8 @@ permalink: /kb/045/Q45464/
 
 ## Q45464: Lack of Memory Can Cause pg_chartscatter to Fail
 
+{% raw %}
+
 	Article: Q45464
 	Product(s): See article
 	Version(s): 2.00
@@ -26,3 +28,5 @@ permalink: /kb/045/Q45464/
 	try executing outside of the QuickC 2.00 environment. This method
 	should free up enough memory for the functions to operate. Another way
 	to free up memory is to turn debug information off.
+
+{% endraw %}

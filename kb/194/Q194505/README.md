@@ -6,6 +6,8 @@ permalink: /kb/194/Q194505/
 
 ## Q194505: XADM: NDR When Message Contains 8-Bit Subject
 
+{% raw %}
+
 	Article: Q194505
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1
@@ -73,3 +75,5 @@ permalink: /kb/194/Q194505/
 	
 	=============================================================================
 	
+
+{% endraw %}

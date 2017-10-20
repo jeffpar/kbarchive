@@ -6,6 +6,8 @@ permalink: /kb/113/Q113383/
 
 ## Q113383: X400: Non-Delivery and Confirmed-Delivery Notification
 
+{% raw %}
+
 	Article: Q113383
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0,3.2
@@ -46,3 +48,5 @@ permalink: /kb/113/Q113383/
 	
 	=============================================================================
 	
+
+{% endraw %}

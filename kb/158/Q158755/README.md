@@ -6,6 +6,8 @@ permalink: /kb/158/Q158755/
 
 ## Q158755: FIX: CLEAR ALL with Object References Causes Page Fault
 
+{% raw %}
+
 	Article: Q158755
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -76,3 +78,5 @@ permalink: /kb/158/Q158755/
 	
 	=============================================================================
 	
+
+{% endraw %}

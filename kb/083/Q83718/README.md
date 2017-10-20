@@ -6,6 +6,8 @@ permalink: /kb/083/Q83718/
 
 ## Q83718: Brother HL-8e Prints TrueType Incorrectly in Landscape
 
+{% raw %}
+
 	Article: Q83718
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -91,3 +93,5 @@ permalink: /kb/083/Q83718/
 	
 	=============================================================================
 	
+
+{% endraw %}

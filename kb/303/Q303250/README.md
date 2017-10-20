@@ -6,6 +6,8 @@ permalink: /kb/303/Q303250/
 
 ## Q303250: XADM: Command Line Directory Export Does Not Succeed
 
+{% raw %}
+
 	Article: Q303250
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -76,3 +78,5 @@ permalink: /kb/303/Q303250/
 	
 	=============================================================================
 	
+
+{% endraw %}

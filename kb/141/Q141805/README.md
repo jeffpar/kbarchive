@@ -6,6 +6,8 @@ permalink: /kb/141/Q141805/
 
 ## Q141805: FIX: 'Unknown member' Error Loading Form
 
+{% raw %}
+
 	Article: Q141805
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b
@@ -104,3 +106,5 @@ permalink: /kb/141/Q141805/
 	
 	=============================================================================
 	
+
+{% endraw %}

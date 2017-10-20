@@ -6,6 +6,8 @@ permalink: /kb/221/Q221710/
 
 ## Q221710: FIX: Component Gallery Dynamic Folder for Web View Won't Refresh
 
+{% raw %}
+
 	Article: Q221710
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -80,3 +82,5 @@ permalink: /kb/221/Q221710/
 	
 	=============================================================================
 	
+
+{% endraw %}

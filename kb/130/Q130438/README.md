@@ -6,6 +6,8 @@ permalink: /kb/130/Q130438/
 
 ## Q130438: BUG: Program Crashes When Memo Field Mapped to CLongBinary
 
+{% raw %}
+
 	Article: Q130438
 	Product(s): Microsoft C Compiler
 	Version(s): 1.52 | 2.10
@@ -67,3 +69,5 @@ permalink: /kb/130/Q130438/
 	
 	=============================================================================
 	
+
+{% endraw %}

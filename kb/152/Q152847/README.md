@@ -6,6 +6,8 @@ permalink: /kb/152/Q152847/
 
 ## Q152847: Error 736 When Connecting to a Windows NT Server Via TCP/IP
 
+{% raw %}
+
 	Article: Q152847
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -68,3 +70,5 @@ permalink: /kb/152/Q152847/
 	
 	=============================================================================
 	
+
+{% endraw %}

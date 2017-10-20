@@ -6,6 +6,8 @@ permalink: /kb/281/Q281562/
 
 ## Q281562: A New Systems Management Server Installation Does Not Work
 
+{% raw %}
+
 	Article: Q281562
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -90,3 +92,5 @@ permalink: /kb/281/Q281562/
 	
 	=============================================================================
 	
+
+{% endraw %}

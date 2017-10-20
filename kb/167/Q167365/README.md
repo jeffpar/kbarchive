@@ -6,6 +6,8 @@ permalink: /kb/167/Q167365/
 
 ## Q167365: The Order That WINS Returns 1Ch Entries
 
+{% raw %}
+
 	Article: Q167365
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -42,3 +44,5 @@ permalink: /kb/167/Q167365/
 	
 	=============================================================================
 	
+
+{% endraw %}

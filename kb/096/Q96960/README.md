@@ -6,6 +6,8 @@ permalink: /kb/096/Q96960/
 
 ## Q96960: MS-DOS Shell Clock Does Not Update When POWER Is Running
 
+{% raw %}
+
 	Article: Q96960
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -52,3 +54,5 @@ permalink: /kb/096/Q96960/
 	
 	=============================================================================
 	
+
+{% endraw %}

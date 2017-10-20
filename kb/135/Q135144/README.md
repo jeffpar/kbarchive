@@ -6,6 +6,8 @@ permalink: /kb/135/Q135144/
 
 ## Q135144: System Hang Closing MS-DOS Session with Active Network Request
 
+{% raw %}
+
 	Article: Q135144
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/135/Q135144/
 	
 	=============================================================================
 	
+
+{% endraw %}

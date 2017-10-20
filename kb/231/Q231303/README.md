@@ -6,6 +6,8 @@ permalink: /kb/231/Q231303/
 
 ## Q231303: XFOR: New Internet Mail Service Feature for Setting Size Limit
 
+{% raw %}
+
 	Article: Q231303
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -87,3 +89,5 @@ permalink: /kb/231/Q231303/
 	
 	=============================================================================
 	
+
+{% endraw %}

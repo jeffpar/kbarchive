@@ -6,6 +6,8 @@ permalink: /kb/140/Q140813/
 
 ## Q140813: Windows Fails w/ Black Screen After Upgrade from SMS 1.0 to 1.1
 
+{% raw %}
+
 	Article: Q140813
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -55,3 +57,5 @@ permalink: /kb/140/Q140813/
 	
 	=============================================================================
 	
+
+{% endraw %}

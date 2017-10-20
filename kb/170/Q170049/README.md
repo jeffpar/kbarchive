@@ -6,6 +6,8 @@ permalink: /kb/170/Q170049/
 
 ## Q170049: XCLN: Exchange Client Cannot Change Password Under OS/2 3.x
 
+{% raw %}
+
 	Article: Q170049
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -52,3 +54,5 @@ permalink: /kb/170/Q170049/
 	
 	=============================================================================
 	
+
+{% endraw %}

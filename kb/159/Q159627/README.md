@@ -6,6 +6,8 @@ permalink: /kb/159/Q159627/
 
 ## Q159627: TN5250 Clients Cannot Connect to a Specific AS/400
 
+{% raw %}
+
 	Article: Q159627
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -68,3 +70,5 @@ permalink: /kb/159/Q159627/
 	
 	=============================================================================
 	
+
+{% endraw %}

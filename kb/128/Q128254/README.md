@@ -6,6 +6,8 @@ permalink: /kb/128/Q128254/
 
 ## Q128254: Stop Msg: C0000218 &quot;Unknown Hard Error&quot; When Registry is Overrun
 
+{% raw %}
+
 	Article: Q128254
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/128/Q128254/
 	
 	=============================================================================
 	
+
+{% endraw %}

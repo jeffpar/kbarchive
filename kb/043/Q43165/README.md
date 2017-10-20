@@ -6,6 +6,8 @@ permalink: /kb/043/Q43165/
 
 ## Q43165: LINK: Creating and Accessing _edata and _end
 
+{% raw %}
+
 	Article: Q43165
 	Product(s): See article
 	Version(s): 3.X 4.06 | 5.01.20 5.01.21
@@ -35,3 +37,5 @@ permalink: /kb/043/Q43165/
 	Note: The segment BSS referred to in this article actually includes
 	the segment C_COMMON. However in a map file created by LINK, BSS and
 	C_COMMON are listed as two separate segments.
+
+{% endraw %}

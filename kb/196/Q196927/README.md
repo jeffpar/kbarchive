@@ -6,6 +6,8 @@ permalink: /kb/196/Q196927/
 
 ## Q196927: XIMS: Configuring a Single Domain w/ Connected Sites via IMS
 
+{% raw %}
+
 	Article: Q196927
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -270,3 +272,5 @@ permalink: /kb/196/Q196927/
 	
 	=============================================================================
 	
+
+{% endraw %}

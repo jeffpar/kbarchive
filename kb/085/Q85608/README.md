@@ -6,6 +6,8 @@ permalink: /kb/085/Q85608/
 
 ## Q85608: FAX: Typical Support Issues
 
+{% raw %}
+
 	Article: Q85608
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -89,3 +91,5 @@ permalink: /kb/085/Q85608/
 	
 	=============================================================================
 	
+
+{% endraw %}

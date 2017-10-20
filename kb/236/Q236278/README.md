@@ -6,6 +6,8 @@ permalink: /kb/236/Q236278/
 
 ## Q236278: Computer Starts with Error 162 or Has Accelerated System Clock
 
+{% raw %}
+
 	Article: Q236278
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.1,3.5,3.51,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6
@@ -74,3 +76,5 @@ permalink: /kb/236/Q236278/
 	
 	=============================================================================
 	
+
+{% endraw %}

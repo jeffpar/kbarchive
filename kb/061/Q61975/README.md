@@ -6,6 +6,8 @@ permalink: /kb/061/Q61975/
 
 ## Q61975: Odd Size Structures &gt; 10 Bytes Passed Incorrectly If Packed
 
+{% raw %}
+
 	Article: Q61975
 	Product(s): See article
 	Version(s): 6.00    | 6.00
@@ -63,3 +65,5 @@ permalink: /kb/061/Q61975/
 	Msg = 0123456789
 	Msg = 0123456789
 	trashme= (char) or 0(hex)
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231488/
 
 ## Q231488: XADM: Public Folder Object Is Not Found in the Directory
 
+{% raw %}
+
 	Article: Q231488
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -97,3 +99,5 @@ permalink: /kb/231/Q231488/
 	
 	=============================================================================
 	
+
+{% endraw %}

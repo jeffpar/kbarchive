@@ -6,6 +6,8 @@ permalink: /kb/095/Q95599/
 
 ## Q95599: DblSpace Err Msg: DoubleSpace Cannot Convert Your...
 
+{% raw %}
+
 	Article: Q95599
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2
@@ -59,3 +61,5 @@ permalink: /kb/095/Q95599/
 	
 	=============================================================================
 	
+
+{% endraw %}

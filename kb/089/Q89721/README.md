@@ -6,6 +6,8 @@ permalink: /kb/089/Q89721/
 
 ## Q89721: Setup Rebuilds Default Group &amp; Program Information Files
 
+{% raw %}
+
 	Article: Q89721
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -80,3 +82,5 @@ permalink: /kb/089/Q89721/
 	
 	=============================================================================
 	
+
+{% endraw %}

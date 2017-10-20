@@ -6,6 +6,8 @@ permalink: /kb/178/Q178080/
 
 ## Q178080: WD97: WordPerfect File Contains Garbled Text If Opened in Word
 
+{% raw %}
+
 	Article: Q178080
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -163,3 +165,5 @@ permalink: /kb/178/Q178080/
 	
 	=============================================================================
 	
+
+{% endraw %}

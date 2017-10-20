@@ -6,6 +6,8 @@ permalink: /kb/067/Q67381/
 
 ## Q67381: Deleting Files Based on Creation Date
 
+{% raw %}
+
 	Article: Q67381
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.20,3.21,3.30,3.30a,4.0,4.01,5.0,5.0a
@@ -61,3 +63,5 @@ permalink: /kb/067/Q67381/
 	
 	=============================================================================
 	
+
+{% endraw %}

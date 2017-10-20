@@ -6,6 +6,8 @@ permalink: /kb/186/Q186716/
 
 ## Q186716: WD97: Not Asked to Save Data Source Closing Mail Merge Document
 
+{% raw %}
+
 	Article: Q186716
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -102,3 +104,5 @@ permalink: /kb/186/Q186716/
 	
 	=============================================================================
 	
+
+{% endraw %}

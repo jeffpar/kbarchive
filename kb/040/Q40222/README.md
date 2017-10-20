@@ -6,6 +6,8 @@ permalink: /kb/040/Q40222/
 
 ## Q40222: CTRL+INS Fails after Initial Use on Some Clones
 
+{% raw %}
+
 	Article: Q40222
 	Product(s): See article
 	Version(s): 2.00
@@ -69,3 +71,5 @@ permalink: /kb/040/Q40222/
 	key is currently held down, is not being cleared. When this bit is
 	set, the BIOS does not put a character in the keyboard queue when it
 	sees the INS key go down (so that the INS key does not autorepeat).
+
+{% endraw %}

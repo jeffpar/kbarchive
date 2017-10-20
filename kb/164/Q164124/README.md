@@ -6,6 +6,8 @@ permalink: /kb/164/Q164124/
 
 ## Q164124: Exchange MTA: Page File Bytes Grows Indefinitely in Perfmon
 
+{% raw %}
+
 	Article: Q164124
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:4.0
@@ -88,3 +90,5 @@ permalink: /kb/164/Q164124/
 	
 	=============================================================================
 	
+
+{% endraw %}

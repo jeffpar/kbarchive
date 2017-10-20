@@ -6,6 +6,8 @@ permalink: /kb/061/Q61619/
 
 ## Q61619: /MAKE Option Is Invalid with NMAKE
 
+{% raw %}
+
 	Article: Q61619
 	Product(s): See article
 	Version(s): 1.11   | 1.11
@@ -28,3 +30,5 @@ permalink: /kb/061/Q61619/
 	For more information about the differences between MAKE and NMAKE, see
 	Section 6.9 of the "Microsoft C Advanced Programming Techniques"
 	manual for version 6.00.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158306/
 
 ## Q158306: FIX: &quot;LDR: Dll &#42;.dll Base 10000000 Relocated...&quot; Error
 
+{% raw %}
+
 	Article: Q158306
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2
@@ -79,3 +81,5 @@ permalink: /kb/158/Q158306/
 	
 	=============================================================================
 	
+
+{% endraw %}

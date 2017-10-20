@@ -6,6 +6,8 @@ permalink: /kb/164/Q164925/
 
 ## Q164925: Non-paged Pool Leak in Ftdisk.sys
 
+{% raw %}
+
 	Article: Q164925
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -60,3 +62,5 @@ permalink: /kb/164/Q164925/
 	
 	=============================================================================
 	
+
+{% endraw %}

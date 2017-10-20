@@ -6,6 +6,8 @@ permalink: /kb/084/Q84739/
 
 ## Q84739: Mac Fax: FaxINIT Versions
 
+{% raw %}
+
 	Article: Q84739
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -44,3 +46,5 @@ permalink: /kb/084/Q84739/
 	
 	=============================================================================
 	
+
+{% endraw %}

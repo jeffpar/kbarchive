@@ -6,6 +6,8 @@ permalink: /kb/138/Q138616/
 
 ## Q138616: PRB: Displayed Value Changes If Press TAB to Move into TextBox
 
+{% raw %}
+
 	Article: Q138616
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -148,3 +150,5 @@ permalink: /kb/138/Q138616/
 	
 	=============================================================================
 	
+
+{% endraw %}

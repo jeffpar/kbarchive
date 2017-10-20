@@ -6,6 +6,8 @@ permalink: /kb/146/Q146314/
 
 ## Q146314: Recur Task Continues if No End Date and No Auto-done Selected
 
+{% raw %}
+
 	Article: Q146314
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -44,3 +46,5 @@ permalink: /kb/146/Q146314/
 	
 	=============================================================================
 	
+
+{% endraw %}

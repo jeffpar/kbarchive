@@ -6,6 +6,8 @@ permalink: /kb/196/Q196782/
 
 ## Q196782: BUG: WizardBar Can't Delete Functions That Return void
 
+{% raw %}
+
 	Article: Q196782
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -98,3 +100,5 @@ permalink: /kb/196/Q196782/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216711/
 
 ## Q216711: After SDLC Outage, SNA Server Takes 5-10 Seconds to Recover
 
+{% raw %}
+
 	Article: Q216711
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
@@ -115,3 +117,5 @@ permalink: /kb/216/Q216711/
 	
 	=============================================================================
 	
+
+{% endraw %}

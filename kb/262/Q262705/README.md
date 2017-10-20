@@ -6,6 +6,8 @@ permalink: /kb/262/Q262705/
 
 ## Q262705: Cluster Administrator Rejects Trusted Domain SIDs as Local SIDs
 
+{% raw %}
+
 	Article: Q262705
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -101,3 +103,5 @@ permalink: /kb/262/Q262705/
 	
 	=============================================================================
 	
+
+{% endraw %}

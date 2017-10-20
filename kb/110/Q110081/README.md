@@ -6,6 +6,8 @@ permalink: /kb/110/Q110081/
 
 ## Q110081: Asimov: Bullet Back Button Returns to Wrong Screen
 
+{% raw %}
+
 	Article: Q110081
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -42,3 +44,5 @@ permalink: /kb/110/Q110081/
 	
 	=============================================================================
 	
+
+{% endraw %}

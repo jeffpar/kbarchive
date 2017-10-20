@@ -6,6 +6,8 @@ permalink: /kb/173/Q173282/
 
 ## Q173282: SMS: 'Stack Fault' Error Occurs with PCM Service
 
+{% raw %}
+
 	Article: Q173282
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0; winnt:1.2
@@ -68,3 +70,5 @@ permalink: /kb/173/Q173282/
 	
 	=============================================================================
 	
+
+{% endraw %}

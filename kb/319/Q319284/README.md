@@ -6,6 +6,8 @@ permalink: /kb/319/Q319284/
 
 ## Q319284: Record Count Reset When END TRANSACTION Run Against Remote View
 
+{% raw %}
+
 	Article: Q319284
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -153,3 +155,5 @@ permalink: /kb/319/Q319284/
 	
 	=============================================================================
 	
+
+{% endraw %}

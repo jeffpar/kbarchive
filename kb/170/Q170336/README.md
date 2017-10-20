@@ -6,6 +6,8 @@ permalink: /kb/170/Q170336/
 
 ## Q170336: Network Error (1222): Unable to Browse the Network
 
+{% raw %}
+
 	Article: Q170336
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -104,3 +106,5 @@ permalink: /kb/170/Q170336/
 	
 	=============================================================================
 	
+
+{% endraw %}

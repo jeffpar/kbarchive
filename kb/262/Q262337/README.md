@@ -6,6 +6,8 @@ permalink: /kb/262/Q262337/
 
 ## Q262337: XADM: &quot;Unknown Failure&quot; Error Message when You Run Exmerge
 
+{% raw %}
+
 	Article: Q262337
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -51,3 +53,5 @@ permalink: /kb/262/Q262337/
 	
 	=============================================================================
 	
+
+{% endraw %}

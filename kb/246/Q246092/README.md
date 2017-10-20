@@ -6,6 +6,8 @@ permalink: /kb/246/Q246092/
 
 ## Q246092: XADM: How to Modify Outlook LDAP for Foreign Systems
 
+{% raw %}
+
 	Article: Q246092
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -95,3 +97,5 @@ permalink: /kb/246/Q246092/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191660/
 
 ## Q191660: Err Msg: Could Not Find Any 3D Acceleration Hardware...
 
+{% raw %}
+
 	Article: Q191660
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -283,3 +285,5 @@ permalink: /kb/191/Q191660/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188341/
 
 ## Q188341: XFOR: AUTH/EHLO Commands Cause Internet Mail Service to Stop
 
+{% raw %}
+
 	Article: Q188341
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -80,3 +82,5 @@ permalink: /kb/188/Q188341/
 	
 	=============================================================================
 	
+
+{% endraw %}

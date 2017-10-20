@@ -6,6 +6,8 @@ permalink: /kb/157/Q157775/
 
 ## Q157775: WD97: Can't Save Version for Read-Only Document
 
+{% raw %}
+
 	Article: Q157775
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -64,3 +66,5 @@ permalink: /kb/157/Q157775/
 	
 	=============================================================================
 	
+
+{% endraw %}

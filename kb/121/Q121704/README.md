@@ -6,6 +6,8 @@ permalink: /kb/121/Q121704/
 
 ## Q121704: Unable to Close the Migration Tool for Netware
 
+{% raw %}
+
 	Article: Q121704
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/121/Q121704/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/287/Q287542/
 
 ## Q287542: SLI Application Fails With LUA_REQUIRED_FIELD_MISSING Error
 
+{% raw %}
+
 	Article: Q287542
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP2,4.0 SP3,4.0 SP4
@@ -191,3 +193,5 @@ permalink: /kb/287/Q287542/
 	
 	=============================================================================
 	
+
+{% endraw %}

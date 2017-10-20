@@ -6,6 +6,8 @@ permalink: /kb/305/Q305189/
 
 ## Q305189: Preproduction Passport Registration Page Does Not Work Correctly
 
+{% raw %}
+
 	Article: Q305189
 	Product(s): Microsoft Developer Network
 	Version(s): 2.0
@@ -64,3 +66,5 @@ permalink: /kb/305/Q305189/
 	
 	=============================================================================
 	
+
+{% endraw %}

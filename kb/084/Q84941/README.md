@@ -6,6 +6,8 @@ permalink: /kb/084/Q84941/
 
 ## Q84941: Abnormal FORMAT Termination Yields Invalid Media
 
+{% raw %}
+
 	Article: Q84941
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -64,3 +66,5 @@ permalink: /kb/084/Q84941/
 	
 	=============================================================================
 	
+
+{% endraw %}

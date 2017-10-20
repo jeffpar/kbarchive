@@ -6,6 +6,8 @@ permalink: /kb/220/Q220971/
 
 ## Q220971: SAMPLE: VSSAddin.exe Notifies Administrator of SourceSafe Events
 
+{% raw %}
+
 	Article: Q220971
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -171,3 +173,5 @@ permalink: /kb/220/Q220971/
 	
 	=============================================================================
 	
+
+{% endraw %}

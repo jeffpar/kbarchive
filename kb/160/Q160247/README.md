@@ -6,6 +6,8 @@ permalink: /kb/160/Q160247/
 
 ## Q160247: Using Large Fonts Causes MSN Display Problems
 
+{% raw %}
+
 	Article: Q160247
 	Product(s): The Microsoft Network
 	Version(s): 2.51,2.6,5.0,5.1,5.2
@@ -61,3 +63,5 @@ permalink: /kb/160/Q160247/
 	
 	=============================================================================
 	
+
+{% endraw %}

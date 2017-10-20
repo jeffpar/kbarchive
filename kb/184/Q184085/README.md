@@ -6,6 +6,8 @@ permalink: /kb/184/Q184085/
 
 ## Q184085: Year 2000 Resources Available from Microsoft
 
+{% raw %}
+
 	Article: Q184085
 	Product(s): Microsoft Product Support Information
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/184/Q184085/
 	
 	=============================================================================
 	
+
+{% endraw %}

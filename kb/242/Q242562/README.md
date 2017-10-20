@@ -6,6 +6,8 @@ permalink: /kb/242/Q242562/
 
 ## Q242562: Microsoft BackOffice 4.5 Resource Kit Comments and Corrections
 
+{% raw %}
+
 	Article: Q242562
 	Product(s): Microsoft Press
 	Version(s): 
@@ -115,3 +117,5 @@ permalink: /kb/242/Q242562/
 	
 	=============================================================================
 	
+
+{% endraw %}

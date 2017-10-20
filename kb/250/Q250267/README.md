@@ -6,6 +6,8 @@ permalink: /kb/250/Q250267/
 
 ## Q250267: Cannot Resolve Groups When Files Move Between Windows NT Servers
 
+{% raw %}
+
 	Article: Q250267
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -99,3 +101,5 @@ permalink: /kb/250/Q250267/
 	
 	=============================================================================
 	
+
+{% endraw %}

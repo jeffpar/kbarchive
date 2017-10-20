@@ -6,6 +6,8 @@ permalink: /kb/159/Q159804/
 
 ## Q159804: Toolbar or Color Palette Not Visible in Paint
 
+{% raw %}
+
 	Article: Q159804
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -102,3 +104,5 @@ permalink: /kb/159/Q159804/
 	
 	=============================================================================
 	
+
+{% endraw %}

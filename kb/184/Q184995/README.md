@@ -6,6 +6,8 @@ permalink: /kb/184/Q184995/
 
 ## Q184995: XCON: Lotus SoftSwitch X.4 Rejects MAPI Attachments
 
+{% raw %}
+
 	Article: Q184995
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -77,3 +79,5 @@ permalink: /kb/184/Q184995/
 	
 	=============================================================================
 	
+
+{% endraw %}

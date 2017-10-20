@@ -6,6 +6,8 @@ permalink: /kb/114/Q114349/
 
 ## Q114349: File and Dir. Names with Caps Show Both 8.3 and Long Filenames
 
+{% raw %}
+
 	Article: Q114349
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -54,3 +56,5 @@ permalink: /kb/114/Q114349/
 	
 	=============================================================================
 	
+
+{% endraw %}

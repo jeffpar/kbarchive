@@ -6,6 +6,8 @@ permalink: /kb/037/Q37926/
 
 ## Q37926: Mac DOS: Using the MS-DOS PRINT Command with Mail
 
+{% raw %}
+
 	Article: Q37926
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.0,3.1
@@ -58,3 +60,5 @@ permalink: /kb/037/Q37926/
 	
 	=============================================================================
 	
+
+{% endraw %}

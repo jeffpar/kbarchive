@@ -6,6 +6,8 @@ permalink: /kb/142/Q142880/
 
 ## Q142880: NetBT Fails to Bind to a Large Number of IP Addresses
 
+{% raw %}
+
 	Article: Q142880
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -59,3 +61,5 @@ permalink: /kb/142/Q142880/
 	
 	=============================================================================
 	
+
+{% endraw %}

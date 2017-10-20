@@ -6,6 +6,8 @@ permalink: /kb/183/Q183470/
 
 ## Q183470: PRB: Unattended Setup Does Not Install Windows Messaging
 
+{% raw %}
+
 	Article: Q183470
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/183/Q183470/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175632/
 
 ## Q175632: How to Send an E-mail Message to MSN Member Support
 
+{% raw %}
+
 	Article: Q175632
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5
@@ -87,3 +89,5 @@ permalink: /kb/175/Q175632/
 	
 	=============================================================================
 	
+
+{% endraw %}

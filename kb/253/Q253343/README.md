@@ -6,6 +6,8 @@ permalink: /kb/253/Q253343/
 
 ## Q253343: Slow Performance Running WINS Server
 
+{% raw %}
+
 	Article: Q253343
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/253/Q253343/
 	
 	=============================================================================
 	
+
+{% endraw %}

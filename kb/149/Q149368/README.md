@@ -6,6 +6,8 @@ permalink: /kb/149/Q149368/
 
 ## Q149368: PC Rmt: Err Msg: ProcessRecvMail, fp_read Fails. Out of Memory
 
+{% raw %}
+
 	Article: Q149368
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -60,3 +62,5 @@ permalink: /kb/149/Q149368/
 	
 	=============================================================================
 	
+
+{% endraw %}

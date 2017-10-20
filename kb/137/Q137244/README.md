@@ -6,6 +6,8 @@ permalink: /kb/137/Q137244/
 
 ## Q137244: No LANtastic Network Access After Using Network Troubleshooter
 
+{% raw %}
+
 	Article: Q137244
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -64,3 +66,5 @@ permalink: /kb/137/Q137244/
 	
 	=============================================================================
 	
+
+{% endraw %}

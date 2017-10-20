@@ -6,6 +6,8 @@ permalink: /kb/163/Q163887/
 
 ## Q163887: Zone: System Requirements
 
+{% raw %}
+
 	Article: Q163887
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/163/Q163887/
 	
 	=============================================================================
 	
+
+{% endraw %}

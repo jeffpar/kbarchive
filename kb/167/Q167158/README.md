@@ -6,6 +6,8 @@ permalink: /kb/167/Q167158/
 
 ## Q167158: HOWTO: Package MFC Controls for Use Over the Internet
 
+{% raw %}
+
 	Article: Q167158
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,4.0,4.1,4.2,5,5.0,5.5,6,6.0
@@ -302,3 +304,5 @@ permalink: /kb/167/Q167158/
 	
 	=============================================================================
 	
+
+{% endraw %}

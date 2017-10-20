@@ -6,6 +6,8 @@ permalink: /kb/258/Q258162/
 
 ## Q258162: SMS: High Number of SMS 1.2 Child Sites May Create a Backlog
 
+{% raw %}
+
 	Article: Q258162
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -85,3 +87,5 @@ permalink: /kb/258/Q258162/
 	
 	=============================================================================
 	
+
+{% endraw %}

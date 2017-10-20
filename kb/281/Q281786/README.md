@@ -6,6 +6,8 @@ permalink: /kb/281/Q281786/
 
 ## Q281786: Plus! Game Pack: Players Voices Pause During Game Play
 
+{% raw %}
+
 	Article: Q281786
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -54,3 +56,5 @@ permalink: /kb/281/Q281786/
 	
 	=============================================================================
 	
+
+{% endraw %}

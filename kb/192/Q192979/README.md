@@ -6,6 +6,8 @@ permalink: /kb/192/Q192979/
 
 ## Q192979: PRB: VFPODBC Driver Ignores Path in DSN When Executing SQL
 
+{% raw %}
+
 	Article: Q192979
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -87,3 +89,5 @@ permalink: /kb/192/Q192979/
 	
 	=============================================================================
 	
+
+{% endraw %}

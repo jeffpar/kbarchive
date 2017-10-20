@@ -6,6 +6,8 @@ permalink: /kb/234/Q234351/
 
 ## Q234351: Memory Leak When Performance Counters Are Not Available
 
+{% raw %}
+
 	Article: Q234351
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -125,3 +127,5 @@ permalink: /kb/234/Q234351/
 	
 	=============================================================================
 	
+
+{% endraw %}

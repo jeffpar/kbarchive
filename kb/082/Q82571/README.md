@@ -6,6 +6,8 @@ permalink: /kb/082/Q82571/
 
 ## Q82571: IdleWild Loses all Screen Savers Except Blackness
 
+{% raw %}
+
 	Article: Q82571
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -39,3 +41,5 @@ permalink: /kb/082/Q82571/
 	
 	=============================================================================
 	
+
+{% endraw %}

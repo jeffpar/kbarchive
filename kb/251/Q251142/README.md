@@ -6,6 +6,8 @@ permalink: /kb/251/Q251142/
 
 ## Q251142: Flight Simulator 2000: Unable to Send ATC Text Message
 
+{% raw %}
+
 	Article: Q251142
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -57,3 +59,5 @@ permalink: /kb/251/Q251142/
 	
 	=============================================================================
 	
+
+{% endraw %}

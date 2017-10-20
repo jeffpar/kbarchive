@@ -6,6 +6,8 @@ permalink: /kb/231/Q231536/
 
 ## Q231536: MapPoint 2000: Unable to Save More than One Map to Floppy Disk
 
+{% raw %}
+
 	Article: Q231536
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/231/Q231536/
 	
 	=============================================================================
 	
+
+{% endraw %}

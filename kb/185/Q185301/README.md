@@ -6,6 +6,8 @@ permalink: /kb/185/Q185301/
 
 ## Q185301: &quot;None of the Above&quot; Hardware Profile Resets Device Configuration
 
+{% raw %}
+
 	Article: Q185301
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1.0,2.0,2.1,2.5
@@ -107,3 +109,5 @@ permalink: /kb/185/Q185301/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/276/Q276038/
 
 ## Q276038: Encarta 2001 DVD: Menus and Pinpointer Are Not on Home Screen
 
+{% raw %}
+
 	Article: Q276038
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/276/Q276038/
 	
 	=============================================================================
 	
+
+{% endraw %}

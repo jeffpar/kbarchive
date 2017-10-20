@@ -6,6 +6,8 @@ permalink: /kb/281/Q281424/
 
 ## Q281424: FIX: Bad Code Is Generated with /Og Enabled
 
+{% raw %}
+
 	Article: Q281424
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0sp4
@@ -142,3 +144,5 @@ permalink: /kb/281/Q281424/
 	
 	=============================================================================
 	
+
+{% endraw %}

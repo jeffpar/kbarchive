@@ -6,6 +6,8 @@ permalink: /kb/274/Q274011/
 
 ## Q274011: BUG: SET(&quot;FILTER&quot;) Converts Dates to Current Date Format
 
+{% raw %}
+
 	Article: Q274011
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -99,3 +101,5 @@ permalink: /kb/274/Q274011/
 	
 	=============================================================================
 	
+
+{% endraw %}

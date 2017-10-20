@@ -6,6 +6,8 @@ permalink: /kb/167/Q167360/
 
 ## Q167360: SMS: Network Monitor - Print Advanced Should Use Radio Buttons
 
+{% raw %}
+
 	Article: Q167360
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -45,3 +47,5 @@ permalink: /kb/167/Q167360/
 	
 	=============================================================================
 	
+
+{% endraw %}

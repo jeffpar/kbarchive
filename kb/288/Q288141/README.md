@@ -6,6 +6,8 @@ permalink: /kb/288/Q288141/
 
 ## Q288141: PRB: Access Driver Window Doesn't Appear for System or User DSN
 
+{% raw %}
+
 	Article: Q288141
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5,2.6,2000,2000 SP1,4.0
@@ -88,3 +90,5 @@ permalink: /kb/288/Q288141/
 	
 	=============================================================================
 	
+
+{% endraw %}

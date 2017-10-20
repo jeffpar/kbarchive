@@ -6,6 +6,8 @@ permalink: /kb/162/Q162925/
 
 ## Q162925: ADT/ODE: Setup Does Not Create Certain Shortcuts
 
+{% raw %}
+
 	Article: Q162925
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -101,3 +103,5 @@ permalink: /kb/162/Q162925/
 	
 	=============================================================================
 	
+
+{% endraw %}

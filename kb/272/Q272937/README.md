@@ -6,6 +6,8 @@ permalink: /kb/272/Q272937/
 
 ## Q272937: SMS: Administrator Console Does Not Connect to Windows NT 4.0 Si
 
+{% raw %}
+
 	Article: Q272937
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -80,3 +82,5 @@ permalink: /kb/272/Q272937/
 	
 	=============================================================================
 	
+
+{% endraw %}

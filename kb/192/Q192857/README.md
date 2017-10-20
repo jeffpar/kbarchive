@@ -6,6 +6,8 @@ permalink: /kb/192/Q192857/
 
 ## Q192857: HOWTO: Use Index Files with Offline Views
 
+{% raw %}
+
 	Article: Q192857
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,5.0,5.0a,6.0
@@ -135,3 +137,5 @@ permalink: /kb/192/Q192857/
 	
 	=============================================================================
 	
+
+{% endraw %}

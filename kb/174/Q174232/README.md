@@ -6,6 +6,8 @@ permalink: /kb/174/Q174232/
 
 ## Q174232: Stop 0x0000000A in Atapi.sys (Post SP2) with DMA Enabled
 
+{% raw %}
+
 	Article: Q174232
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -73,3 +75,5 @@ permalink: /kb/174/Q174232/
 	
 	=============================================================================
 	
+
+{% endraw %}

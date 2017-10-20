@@ -6,6 +6,8 @@ permalink: /kb/245/Q245742/
 
 ## Q245742: XCON: MTA Stops Responding--Access Violation e0020004
 
+{% raw %}
+
 	Article: Q245742
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -74,3 +76,5 @@ permalink: /kb/245/Q245742/
 	
 	=============================================================================
 	
+
+{% endraw %}

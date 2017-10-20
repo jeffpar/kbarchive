@@ -6,6 +6,8 @@ permalink: /kb/149/Q149878/
 
 ## Q149878: Protocol Does Not Bind to Token Ring Network Card
 
+{% raw %}
+
 	Article: Q149878
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -58,3 +60,5 @@ permalink: /kb/149/Q149878/
 	
 	=============================================================================
 	
+
+{% endraw %}

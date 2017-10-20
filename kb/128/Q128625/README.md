@@ -6,6 +6,8 @@ permalink: /kb/128/Q128625/
 
 ## Q128625: Information About The Microsoft Network Icon
 
+{% raw %}
+
 	Article: Q128625
 	Product(s): The Microsoft Network
 	Version(s): 2.6,5.0,5.1,5.2
@@ -49,3 +51,5 @@ permalink: /kb/128/Q128625/
 	
 	=============================================================================
 	
+
+{% endraw %}

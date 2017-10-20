@@ -6,6 +6,8 @@ permalink: /kb/170/Q170002/
 
 ## Q170002: XCLN: Exchange Client Cannot Send Attachments on Citrix WinFrame
 
+{% raw %}
+
 	Article: Q170002
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -87,3 +89,5 @@ permalink: /kb/170/Q170002/
 	
 	=============================================================================
 	
+
+{% endraw %}

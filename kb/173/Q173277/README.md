@@ -6,6 +6,8 @@ permalink: /kb/173/Q173277/
 
 ## Q173277: No Memory.dmp File Created with RAM Above 1.7 GB
 
+{% raw %}
+
 	Article: Q173277
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -93,3 +95,5 @@ permalink: /kb/173/Q173277/
 	
 	=============================================================================
 	
+
+{% endraw %}

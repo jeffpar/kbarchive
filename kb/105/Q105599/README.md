@@ -6,6 +6,8 @@ permalink: /kb/105/Q105599/
 
 ## Q105599: How to Search for Character Strings Using RQBE
 
+{% raw %}
+
 	Article: Q105599
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
@@ -67,3 +69,5 @@ permalink: /kb/105/Q105599/
 	
 	=============================================================================
 	
+
+{% endraw %}

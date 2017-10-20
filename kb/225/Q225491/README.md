@@ -6,6 +6,8 @@ permalink: /kb/225/Q225491/
 
 ## Q225491: RRAS Server Does Not Send FramedIPAddress in RADIUS Packet
 
+{% raw %}
+
 	Article: Q225491
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -87,3 +89,5 @@ permalink: /kb/225/Q225491/
 	
 	=============================================================================
 	
+
+{% endraw %}

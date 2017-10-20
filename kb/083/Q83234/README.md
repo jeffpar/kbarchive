@@ -6,6 +6,8 @@ permalink: /kb/083/Q83234/
 
 ## Q83234: MDIRest.exe Saves and Restores Window Size &amp; Position
 
+{% raw %}
+
 	Article: Q83234
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -84,3 +86,5 @@ permalink: /kb/083/Q83234/
 	
 	=============================================================================
 	
+
+{% endraw %}

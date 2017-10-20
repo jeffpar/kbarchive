@@ -6,6 +6,8 @@ permalink: /kb/207/Q207807/
 
 ## Q207807: Custom Date Properties in Microsoft Word Document Do Not Display
 
+{% raw %}
+
 	Article: Q207807
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/207/Q207807/
 	
 	=============================================================================
 	
+
+{% endraw %}

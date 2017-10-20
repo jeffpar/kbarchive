@@ -6,6 +6,8 @@ permalink: /kb/122/Q122749/
 
 ## Q122749: Arcade for Macintosh: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q122749
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0
@@ -48,3 +50,5 @@ permalink: /kb/122/Q122749/
 	
 	=============================================================================
 	
+
+{% endraw %}

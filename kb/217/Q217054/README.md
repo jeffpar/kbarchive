@@ -6,6 +6,8 @@ permalink: /kb/217/Q217054/
 
 ## Q217054: Revenge of Arcade: Cannot Start Games from Executable Files
 
+{% raw %}
+
 	Article: Q217054
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -75,3 +77,5 @@ permalink: /kb/217/Q217054/
 	
 	=============================================================================
 	
+
+{% endraw %}

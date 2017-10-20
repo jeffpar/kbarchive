@@ -6,6 +6,8 @@ permalink: /kb/242/Q242089/
 
 ## Q242089: New Application Installation Programs Will Not Run
 
+{% raw %}
+
 	Article: Q242089
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -122,3 +124,5 @@ permalink: /kb/242/Q242089/
 	
 	=============================================================================
 	
+
+{% endraw %}

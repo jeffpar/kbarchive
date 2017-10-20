@@ -6,6 +6,8 @@ permalink: /kb/088/Q88667/
 
 ## Q88667: Creating a Running Calculation Using the Report Writer
 
+{% raw %}
+
 	Article: Q88667
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
@@ -70,3 +72,5 @@ permalink: /kb/088/Q88667/
 	
 	=============================================================================
 	
+
+{% endraw %}

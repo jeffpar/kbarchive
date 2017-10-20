@@ -6,6 +6,8 @@ permalink: /kb/087/Q87213/
 
 ## Q87213: PROFS: What Is HUB Mail, and What Are Its Advantages?
 
+{% raw %}
+
 	Article: Q87213
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -67,3 +69,5 @@ permalink: /kb/087/Q87213/
 	
 	=============================================================================
 	
+
+{% endraw %}

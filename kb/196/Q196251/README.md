@@ -6,6 +6,8 @@ permalink: /kb/196/Q196251/
 
 ## Q196251: XFOR: 1007 Character Limit for &quot;Message of the Day&quot; in Web Admin
 
+{% raw %}
+
 	Article: Q196251
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -46,3 +48,5 @@ permalink: /kb/196/Q196251/
 	
 	=============================================================================
 	
+
+{% endraw %}

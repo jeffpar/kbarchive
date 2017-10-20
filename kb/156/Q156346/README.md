@@ -6,6 +6,8 @@ permalink: /kb/156/Q156346/
 
 ## Q156346: INFO: STL Sample for the iter_swap Function
 
+{% raw %}
+
 	Article: Q156346
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -181,3 +183,5 @@ permalink: /kb/156/Q156346/
 	
 	=============================================================================
 	
+
+{% endraw %}

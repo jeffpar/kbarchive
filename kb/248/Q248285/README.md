@@ -6,6 +6,8 @@ permalink: /kb/248/Q248285/
 
 ## Q248285: FIX: Cannot Edit UserControl When You Host Another UserControl
 
+{% raw %}
+
 	Article: Q248285
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -114,3 +116,5 @@ permalink: /kb/248/Q248285/
 	
 	=============================================================================
 	
+
+{% endraw %}

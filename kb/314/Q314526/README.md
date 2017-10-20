@@ -6,6 +6,8 @@ permalink: /kb/314/Q314526/
 
 ## Q314526: Club Encarta: Web Site Does Not Fully Load
 
+{% raw %}
+
 	Article: Q314526
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -121,3 +123,5 @@ permalink: /kb/314/Q314526/
 	
 	=============================================================================
 	
+
+{% endraw %}

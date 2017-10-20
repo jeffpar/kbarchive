@@ -6,6 +6,8 @@ permalink: /kb/242/Q242904/
 
 ## Q242904: Age of Empires II: How to Troubleshoot Multiplayer Game Problems
 
+{% raw %}
+
 	Article: Q242904
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -364,3 +366,5 @@ permalink: /kb/242/Q242904/
 	
 	=============================================================================
 	
+
+{% endraw %}

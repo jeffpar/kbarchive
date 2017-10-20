@@ -6,6 +6,8 @@ permalink: /kb/133/Q133470/
 
 ## Q133470: PRB: Cannot Modify Table Structure After Using SQL SELECT
 
+{% raw %}
+
 	Article: Q133470
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -86,3 +88,5 @@ permalink: /kb/133/Q133470/
 	
 	=============================================================================
 	
+
+{% endraw %}

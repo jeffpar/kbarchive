@@ -6,6 +6,8 @@ permalink: /kb/201/Q201357/
 
 ## Q201357: ODE97: Can't Write to Wininet.dll or Urlmon.dll During Install
 
+{% raw %}
+
 	Article: Q201357
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:97
@@ -108,3 +110,5 @@ permalink: /kb/201/Q201357/
 	
 	=============================================================================
 	
+
+{% endraw %}

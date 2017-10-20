@@ -6,6 +6,8 @@ permalink: /kb/279/Q279448/
 
 ## Q279448: MSN Companion address book is blank and old entries are missing
 
+{% raw %}
+
 	Article: Q279448
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -51,3 +53,5 @@ permalink: /kb/279/Q279448/
 	
 	=============================================================================
 	
+
+{% endraw %}

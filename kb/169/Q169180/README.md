@@ -6,6 +6,8 @@ permalink: /kb/169/Q169180/
 
 ## Q169180: FP97: Setup Requires 2-4 MB More Free Disk Space than Indicated
 
+{% raw %}
+
 	Article: Q169180
 	Product(s): Word Front Page
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/169/Q169180/
 	
 	=============================================================================
 	
+
+{% endraw %}

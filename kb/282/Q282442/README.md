@@ -6,6 +6,8 @@ permalink: /kb/282/Q282442/
 
 ## Q282442: XADM: Error Message Occurs When You Run Offline Defragmentation
 
+{% raw %}
+
 	Article: Q282442
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.5
@@ -116,3 +118,5 @@ permalink: /kb/282/Q282442/
 	
 	=============================================================================
 	
+
+{% endraw %}

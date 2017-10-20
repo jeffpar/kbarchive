@@ -6,6 +6,8 @@ permalink: /kb/133/Q133084/
 
 ## Q133084: &quot;PowerPoint Is Not Responding...&quot; When Closing Windows 95
 
+{% raw %}
+
 	Article: Q133084
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -71,3 +73,5 @@ permalink: /kb/133/Q133084/
 	
 	=============================================================================
 	
+
+{% endraw %}

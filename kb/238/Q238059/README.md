@@ -6,6 +6,8 @@ permalink: /kb/238/Q238059/
 
 ## Q238059: Encarta Dictionary Err Msg: Cannot Find the File...
 
+{% raw %}
+
 	Article: Q238059
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -86,3 +88,5 @@ permalink: /kb/238/Q238059/
 	
 	=============================================================================
 	
+
+{% endraw %}

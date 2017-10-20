@@ -6,6 +6,8 @@ permalink: /kb/243/Q243187/
 
 ## Q243187: XFOR: Dirsync Errors Between Exchange Server and Lotus Notes
 
+{% raw %}
+
 	Article: Q243187
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/243/Q243187/
 	
 	=============================================================================
 	
+
+{% endraw %}

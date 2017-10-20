@@ -6,6 +6,8 @@ permalink: /kb/256/Q256086/
 
 ## Q256086: Allegiance: Limits to the Allow Friendly Fire Option
 
+{% raw %}
+
 	Article: Q256086
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -39,3 +41,5 @@ permalink: /kb/256/Q256086/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159035/
 
 ## Q159035: SMC 8016 PC Card May Not Work with NEC Versa 6000H/IBM 760ED
 
+{% raw %}
+
 	Article: Q159035
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -55,3 +57,5 @@ permalink: /kb/159/Q159035/
 	
 	=============================================================================
 	
+
+{% endraw %}

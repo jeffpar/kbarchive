@@ -6,6 +6,8 @@ permalink: /kb/099/Q99335/
 
 ## Q99335: PRB: Error in the THSAMPLE Sample Application
 
+{% raw %}
+
 	Article: Q99335
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -72,3 +74,5 @@ permalink: /kb/099/Q99335/
 	
 	=============================================================================
 	
+
+{% endraw %}

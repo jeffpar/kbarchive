@@ -6,6 +6,8 @@ permalink: /kb/196/Q196241/
 
 ## Q196241: Event ID 205 Does Not Include Source SAP Information
 
+{% raw %}
+
 	Article: Q196241
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -87,3 +89,5 @@ permalink: /kb/196/Q196241/
 	
 	=============================================================================
 	
+
+{% endraw %}

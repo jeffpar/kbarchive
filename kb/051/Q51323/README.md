@@ -6,6 +6,8 @@ permalink: /kb/051/Q51323/
 
 ## Q51323: Using CodeView to Create Disassembled Program Listings
 
+{% raw %}
+
 	Article: Q51323
 	Product(s): See article
 	Version(s): 2.20 2.30 | 2.20 2.30
@@ -37,3 +39,5 @@ permalink: /kb/051/Q51323/
 	of programs that were not created with a Microsoft compiler. Please
 	also note that you cannot create assembly listings of instructions
 	other than 8086 instructions.
+
+{% endraw %}

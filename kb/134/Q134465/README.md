@@ -6,6 +6,8 @@ permalink: /kb/134/Q134465/
 
 ## Q134465: PRB: &quot;File Access Denied&quot; Using Grid or AutoFormat Builders
 
+{% raw %}
+
 	Article: Q134465
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -119,3 +121,5 @@ permalink: /kb/134/Q134465/
 	
 	=============================================================================
 	
+
+{% endraw %}

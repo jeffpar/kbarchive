@@ -6,6 +6,8 @@ permalink: /kb/142/Q142052/
 
 ## Q142052: RAS Clients Using TCP/IP Can Access All Subnets But Their Own
 
+{% raw %}
+
 	Article: Q142052
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:3.5,3.51,4.0
@@ -135,3 +137,5 @@ permalink: /kb/142/Q142052/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168771/
 
 ## Q168771: XFOR: Read Receipt From MSMail Does Not Contain Subject Line
 
+{% raw %}
+
 	Article: Q168771
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -56,3 +58,5 @@ permalink: /kb/168/Q168771/
 	
 	=============================================================================
 	
+
+{% endraw %}

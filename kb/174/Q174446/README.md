@@ -6,6 +6,8 @@ permalink: /kb/174/Q174446/
 
 ## Q174446: Fax Appears in Sent Items Folder But Fax Is Not Sent
 
+{% raw %}
+
 	Article: Q174446
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:1.0
@@ -54,3 +56,5 @@ permalink: /kb/174/Q174446/
 	
 	=============================================================================
 	
+
+{% endraw %}

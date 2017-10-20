@@ -6,6 +6,8 @@ permalink: /kb/147/Q147220/
 
 ## Q147220: STOP 0x0000000A Attempting To Write to NetWare 3.11 Server
 
+{% raw %}
+
 	Article: Q147220
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -63,3 +65,5 @@ permalink: /kb/147/Q147220/
 	
 	=============================================================================
 	
+
+{% endraw %}

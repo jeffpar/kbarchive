@@ -6,6 +6,8 @@ permalink: /kb/166/Q166602/
 
 ## Q166602: XCON: MTA Only Allows 64 TCP/IP or TP4 Connections
 
+{% raw %}
+
 	Article: Q166602
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -101,3 +103,5 @@ permalink: /kb/166/Q166602/
 	
 	=============================================================================
 	
+
+{% endraw %}

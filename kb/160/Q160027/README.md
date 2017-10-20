@@ -6,6 +6,8 @@ permalink: /kb/160/Q160027/
 
 ## Q160027: XCLN: Folder Icon Does Not Change To Briefcase
 
+{% raw %}
+
 	Article: Q160027
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -59,3 +61,5 @@ permalink: /kb/160/Q160027/
 	
 	=============================================================================
 	
+
+{% endraw %}

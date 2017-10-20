@@ -6,6 +6,8 @@ permalink: /kb/153/Q153743/
 
 ## Q153743: Joining a Domain During Automated Setup Fails
 
+{% raw %}
+
 	Article: Q153743
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -79,3 +81,5 @@ permalink: /kb/153/Q153743/
 	
 	=============================================================================
 	
+
+{% endraw %}

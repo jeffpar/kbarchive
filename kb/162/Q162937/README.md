@@ -6,6 +6,8 @@ permalink: /kb/162/Q162937/
 
 ## Q162937: WD97: Compile Error Passing Function Call
 
+{% raw %}
+
 	Article: Q162937
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -134,3 +136,5 @@ permalink: /kb/162/Q162937/
 	
 	=============================================================================
 	
+
+{% endraw %}

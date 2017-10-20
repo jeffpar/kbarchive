@@ -6,6 +6,8 @@ permalink: /kb/127/Q127941/
 
 ## Q127941: How to Create and Manipulate Multiple-Column List Boxes
 
+{% raw %}
+
 	Article: Q127941
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -109,3 +111,5 @@ permalink: /kb/127/Q127941/
 	
 	=============================================================================
 	
+
+{% endraw %}

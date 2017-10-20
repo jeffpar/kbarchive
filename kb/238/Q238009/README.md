@@ -6,6 +6,8 @@ permalink: /kb/238/Q238009/
 
 ## Q238009: Loss of Connection with Node Persists Until Node Is Restarted
 
+{% raw %}
+
 	Article: Q238009
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -107,3 +109,5 @@ permalink: /kb/238/Q238009/
 	
 	=============================================================================
 	
+
+{% endraw %}

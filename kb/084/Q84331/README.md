@@ -6,6 +6,8 @@ permalink: /kb/084/Q84331/
 
 ## Q84331: BUG: Incorrect Jump to ERR Label in Windows DLLs
 
+{% raw %}
+
 	Article: Q84331
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.1
@@ -139,3 +141,5 @@ permalink: /kb/084/Q84331/
 	
 	=============================================================================
 	
+
+{% endraw %}

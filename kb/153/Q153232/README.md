@@ -6,6 +6,8 @@ permalink: /kb/153/Q153232/
 
 ## Q153232: Driver for Use with Wangtek 5100 Tape Drive
 
+{% raw %}
+
 	Article: Q153232
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -53,3 +55,5 @@ permalink: /kb/153/Q153232/
 	
 	=============================================================================
 	
+
+{% endraw %}

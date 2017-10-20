@@ -6,6 +6,8 @@ permalink: /kb/160/Q160712/
 
 ## Q160712: CD Audio MMSystem Error Accessing CD Audio from Wrong Drive
 
+{% raw %}
+
 	Article: Q160712
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,95; winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/160/Q160712/
 	
 	=============================================================================
 	
+
+{% endraw %}

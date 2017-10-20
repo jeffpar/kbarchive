@@ -6,6 +6,8 @@ permalink: /kb/087/Q87196/
 
 ## Q87196: PROFS: Host Access Software Compatible with Gateway
 
+{% raw %}
+
 	Article: Q87196
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -39,3 +41,5 @@ permalink: /kb/087/Q87196/
 	
 	=============================================================================
 	
+
+{% endraw %}

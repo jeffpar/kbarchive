@@ -6,6 +6,8 @@ permalink: /kb/130/Q130072/
 
 ## Q130072: Net Watcher Shows Users Without Access Rights as Connected
 
+{% raw %}
+
 	Article: Q130072
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/130/Q130072/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150943/
 
 ## Q150943: PRB: Disk or Network Error When Trying to Run Database App
 
+{% raw %}
+
 	Article: Q150943
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -87,3 +89,5 @@ permalink: /kb/150/Q150943/
 	
 	=============================================================================
 	
+
+{% endraw %}

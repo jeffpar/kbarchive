@@ -6,6 +6,8 @@ permalink: /kb/146/Q146446/
 
 ## Q146446: PRB: ClassWizard Doesn't Support Property Change Notifications
 
+{% raw %}
+
 	Article: Q146446
 	Product(s): Microsoft C Compiler
 	Version(s): Winnet:4.0,5.0,6.0
@@ -55,8 +57,8 @@ permalink: /kb/146/Q146446/
 	  2. In the .cpp file of your Main Dialog Class, add the following:
 	
 	        BEGIN_EVENTSINK_MAP(COleCntrDlg, CDialog)
-	          //{ {AFX_EVENTSINK_MAP(COleCntrDlg)
-	          //} }AFX_EVENTSINK_MAP
+	          //{{AFX_EVENTSINK_MAP(COleCntrDlg)
+	          //}}AFX_EVENTSINK_MAP
 	        END_EVENTSINK_MAP()
 	
 	     In the this event sink map, COleCntrDlg is the name of your main dialog
@@ -137,3 +139,5 @@ permalink: /kb/146/Q146446/
 	
 	=============================================================================
 	
+
+{% endraw %}

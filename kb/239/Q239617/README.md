@@ -6,6 +6,8 @@ permalink: /kb/239/Q239617/
 
 ## Q239617: Encarta World Atlas 2000: Installation Is Very Slow
 
+{% raw %}
+
 	Article: Q239617
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -86,3 +88,5 @@ permalink: /kb/239/Q239617/
 	
 	=============================================================================
 	
+
+{% endraw %}

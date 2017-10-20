@@ -6,6 +6,8 @@ permalink: /kb/104/Q104297/
 
 ## Q104297: PC Win: Err Msg: A Message Could Not Be Copied
 
+{% raw %}
+
 	Article: Q104297
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -48,3 +50,5 @@ permalink: /kb/104/Q104297/
 	
 	=============================================================================
 	
+
+{% endraw %}

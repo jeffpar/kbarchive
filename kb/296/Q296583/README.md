@@ -6,6 +6,8 @@ permalink: /kb/296/Q296583/
 
 ## Q296583: FP98: FrontPage Server Extensions Do Not Work As Expected
 
+{% raw %}
+
 	Article: Q296583
 	Product(s): Word Front Page
 	Version(s): 4.0
@@ -278,3 +280,5 @@ permalink: /kb/296/Q296583/
 	
 	=============================================================================
 	
+
+{% endraw %}

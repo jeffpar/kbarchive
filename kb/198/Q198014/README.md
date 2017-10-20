@@ -6,6 +6,8 @@ permalink: /kb/198/Q198014/
 
 ## Q198014: XFOR: Troubleshooting GroupWise 5.x Migration Problems
 
+{% raw %}
+
 	Article: Q198014
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -87,3 +89,5 @@ permalink: /kb/198/Q198014/
 	
 	=============================================================================
 	
+
+{% endraw %}

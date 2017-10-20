@@ -6,6 +6,8 @@ permalink: /kb/099/Q99251/
 
 ## Q99251: FILE: VBRUN300.EXE Resolves GP Fault in KRNL286
 
+{% raw %}
+
 	Article: Q99251
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:3.0
@@ -126,3 +128,5 @@ permalink: /kb/099/Q99251/
 	
 	=============================================================================
 	
+
+{% endraw %}

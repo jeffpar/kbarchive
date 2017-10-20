@@ -6,6 +6,8 @@ permalink: /kb/196/Q196186/
 
 ## Q196186: XADM: Move Server Fails if IP Address Used to Join Another Site
 
+{% raw %}
+
 	Article: Q196186
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -55,3 +57,5 @@ permalink: /kb/196/Q196186/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67005/
 
 ## Q67005: OS/2 Graphics Functions May Fail on 8514/A Display Adapter
 
+{% raw %}
+
 	Article: Q67005
 	Product(s): See article
 	Version(s): 6.00 6.00a
@@ -36,3 +38,5 @@ permalink: /kb/067/Q67005/
 	
 	Microsoft has confirmed this to be a problem in C version 6.00. This
 	problem has been corrected in C version 6.00a.
+
+{% endraw %}

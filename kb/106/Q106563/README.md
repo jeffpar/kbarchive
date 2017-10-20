@@ -6,6 +6,8 @@ permalink: /kb/106/Q106563/
 
 ## Q106563: FIX: Unary Minus and Mixed Complex&#42;16 with Complex&#42;8
 
+{% raw %}
+
 	Article: Q106563
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -74,3 +76,5 @@ permalink: /kb/106/Q106563/
 	
 	=============================================================================
 	
+
+{% endraw %}

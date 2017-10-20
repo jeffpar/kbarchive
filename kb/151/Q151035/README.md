@@ -6,6 +6,8 @@ permalink: /kb/151/Q151035/
 
 ## Q151035: Encarta 96-97: Minimize Pinpointer Preference Not Functioning
 
+{% raw %}
+
 	Article: Q151035
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :1996 edition
@@ -72,3 +74,5 @@ permalink: /kb/151/Q151035/
 	
 	=============================================================================
 	
+
+{% endraw %}

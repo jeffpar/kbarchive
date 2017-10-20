@@ -6,6 +6,8 @@ permalink: /kb/067/Q67758/
 
 ## Q67758: PRB: MASM Err Msg: Unable to Open Input File: options.asm
 
+{% raw %}
+
 	Article: Q67758
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -74,3 +76,5 @@ permalink: /kb/067/Q67758/
 	
 	=============================================================================
 	
+
+{% endraw %}

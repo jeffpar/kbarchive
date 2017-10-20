@@ -6,6 +6,8 @@ permalink: /kb/183/Q183778/
 
 ## Q183778: XCLN: ALT+TAB Shows Two ODK Icons
 
+{% raw %}
+
 	Article: Q183778
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:98
@@ -48,3 +50,5 @@ permalink: /kb/183/Q183778/
 	
 	=============================================================================
 	
+
+{% endraw %}

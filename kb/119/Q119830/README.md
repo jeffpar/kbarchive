@@ -6,6 +6,8 @@ permalink: /kb/119/Q119830/
 
 ## Q119830: Err Msg: Unable to Start DDE Communications with Program Manager
 
+{% raw %}
+
 	Article: Q119830
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -83,3 +85,5 @@ permalink: /kb/119/Q119830/
 	
 	=============================================================================
 	
+
+{% endraw %}

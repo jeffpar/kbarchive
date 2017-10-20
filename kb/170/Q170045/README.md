@@ -6,6 +6,8 @@ permalink: /kb/170/Q170045/
 
 ## Q170045: Index Server META Tag Sample Incorrect Shows Close Comment Tag
 
+{% raw %}
+
 	Article: Q170045
 	Product(s): Internet Information Server
 	Version(s): WINNT: 1.1
@@ -65,3 +67,5 @@ permalink: /kb/170/Q170045/
 	
 	=============================================================================
 	
+
+{% endraw %}

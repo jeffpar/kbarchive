@@ -6,6 +6,8 @@ permalink: /kb/194/Q194615/
 
 ## Q194615: FIX: Project Deletes Precompiled Header Created by Other Project
 
+{% raw %}
+
 	Article: Q194615
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -184,3 +186,5 @@ permalink: /kb/194/Q194615/
 	
 	=============================================================================
 	
+
+{% endraw %}

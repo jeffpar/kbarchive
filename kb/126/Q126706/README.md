@@ -6,6 +6,8 @@ permalink: /kb/126/Q126706/
 
 ## Q126706: Err Msg: MSMAIL Caused a GP Fault in Module MSSFS.DLL
 
+{% raw %}
+
 	Article: Q126706
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -62,3 +64,5 @@ permalink: /kb/126/Q126706/
 	
 	=============================================================================
 	
+
+{% endraw %}

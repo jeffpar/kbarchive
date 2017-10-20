@@ -6,6 +6,8 @@ permalink: /kb/034/Q34472/
 
 ## Q34472: MASM 5.10 MACRO.DOC: Drive Control
 
+{% raw %}
+
 	Article: Q34472
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -46,3 +48,5 @@ permalink: /kb/034/Q34472/
 	                CX          = Bytes per sector
 	                DX          = Clusters per drive
 	Registers used: AX, BX, CX, and DX
+
+{% endraw %}

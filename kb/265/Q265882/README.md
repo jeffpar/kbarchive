@@ -6,6 +6,8 @@ permalink: /kb/265/Q265882/
 
 ## Q265882: SMS: CCM Does Not Append .ccr to Client Configuration Request
 
+{% raw %}
+
 	Article: Q265882
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,2.0,2.0 SP1,2.0 SP2
@@ -100,3 +102,5 @@ permalink: /kb/265/Q265882/
 	
 	=============================================================================
 	
+
+{% endraw %}

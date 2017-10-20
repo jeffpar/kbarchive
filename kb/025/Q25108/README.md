@@ -6,6 +6,8 @@ permalink: /kb/025/Q25108/
 
 ## Q25108: Using LIB to Combine Two Libraries
 
+{% raw %}
+
 	Article: Q25108
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.0,3.04,3.07,3.08,3.1,3.11,3.14,3.17,3.2,3.20.010,3.31,3.4; OS/2:3.11,3.14,3.17
@@ -46,3 +48,5 @@ permalink: /kb/025/Q25108/
 	
 	=============================================================================
 	
+
+{% endraw %}

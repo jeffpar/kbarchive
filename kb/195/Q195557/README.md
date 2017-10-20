@@ -6,6 +6,8 @@ permalink: /kb/195/Q195557/
 
 ## Q195557: IntelliPoint: Tips.exe Causes Access Violation in Windows NT
 
+{% raw %}
+
 	Article: Q195557
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:2.0,2.1,2.2,2.2a
@@ -71,3 +73,5 @@ permalink: /kb/195/Q195557/
 	
 	=============================================================================
 	
+
+{% endraw %}

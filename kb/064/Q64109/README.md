@@ -6,6 +6,8 @@ permalink: /kb/064/Q64109/
 
 ## Q64109: 7.0 Manual Correction for BASIC Calling C Passing a Far String
 
+{% raw %}
+
 	Article: Q64109
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -53,3 +55,5 @@ permalink: /kb/064/Q64109/
 	For more information on passing parameters between BASIC and C, query
 	in the Knowledge Base or in the Software/Data Library on the word
 	BAS2C.
+
+{% endraw %}

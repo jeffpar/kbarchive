@@ -6,6 +6,8 @@ permalink: /kb/066/Q66247/
 
 ## Q66247: MENUITEMTEMPLATE Structure Is Documented Incorrectly
 
+{% raw %}
+
 	Article: Q66247
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -123,3 +125,5 @@ permalink: /kb/066/Q66247/
 	
 	=============================================================================
 	
+
+{% endraw %}

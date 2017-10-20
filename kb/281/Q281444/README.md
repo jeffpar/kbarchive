@@ -6,6 +6,8 @@ permalink: /kb/281/Q281444/
 
 ## Q281444: How to use Instant Messaging with MSN Companion
 
+{% raw %}
+
 	Article: Q281444
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -67,3 +69,5 @@ permalink: /kb/281/Q281444/
 	
 	=============================================================================
 	
+
+{% endraw %}

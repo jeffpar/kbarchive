@@ -6,6 +6,8 @@ permalink: /kb/050/Q50116/
 
 ## Q50116: Fscanf() and White-Space Characters
 
+{% raw %}
+
 	Article: Q50116
 	Product(s): See article
 	Version(s): 5.00 5.10  |  5.10
@@ -55,3 +57,5 @@ permalink: /kb/050/Q50116/
 	
 	      fgets( line, MAX_LINE_SIZE, stream );
 	            sscanf( line, "%d", &INT);
+
+{% endraw %}

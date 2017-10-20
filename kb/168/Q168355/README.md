@@ -6,6 +6,8 @@ permalink: /kb/168/Q168355/
 
 ## Q168355: Kids: Error Message When Copying Clipart from Picture Picker
 
+{% raw %}
+
 	Article: Q168355
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,2.0
@@ -67,3 +69,5 @@ permalink: /kb/168/Q168355/
 	
 	=============================================================================
 	
+
+{% endraw %}

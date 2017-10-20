@@ -6,6 +6,8 @@ permalink: /kb/239/Q239575/
 
 ## Q239575: Err Msg: STOP: 0X00002B PANIC_STACK_SWITCH
 
+{% raw %}
+
 	Article: Q239575
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -83,3 +85,5 @@ permalink: /kb/239/Q239575/
 	
 	=============================================================================
 	
+
+{% endraw %}

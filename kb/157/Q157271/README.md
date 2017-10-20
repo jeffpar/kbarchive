@@ -6,6 +6,8 @@ permalink: /kb/157/Q157271/
 
 ## Q157271: How to Set Up the 3Com Impact for Single-Channel ISDN
 
+{% raw %}
+
 	Article: Q157271
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5
@@ -74,3 +76,5 @@ permalink: /kb/157/Q157271/
 	
 	=============================================================================
 	
+
+{% endraw %}

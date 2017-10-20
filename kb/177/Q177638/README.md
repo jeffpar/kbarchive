@@ -6,6 +6,8 @@ permalink: /kb/177/Q177638/
 
 ## Q177638: BUG: Upgrading Exchange to 5.5 Causes Reference Problems in VB
 
+{% raw %}
+
 	Article: Q177638
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -55,3 +57,5 @@ permalink: /kb/177/Q177638/
 	
 	=============================================================================
 	
+
+{% endraw %}

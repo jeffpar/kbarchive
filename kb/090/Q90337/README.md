@@ -6,6 +6,8 @@ permalink: /kb/090/Q90337/
 
 ## Q90337: Where Windows for Workgroups Setup Places Network Files
 
+{% raw %}
+
 	Article: Q90337
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -76,3 +78,5 @@ permalink: /kb/090/Q90337/
 	
 	=============================================================================
 	
+
+{% endraw %}

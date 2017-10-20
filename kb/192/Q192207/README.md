@@ -6,6 +6,8 @@ permalink: /kb/192/Q192207/
 
 ## Q192207: BUG: Setting Visible Property Fails on Menu for ActiveX Control
 
+{% raw %}
+
 	Article: Q192207
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/192/Q192207/
 	
 	=============================================================================
 	
+
+{% endraw %}

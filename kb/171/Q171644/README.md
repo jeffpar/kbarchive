@@ -6,6 +6,8 @@ permalink: /kb/171/Q171644/
 
 ## Q171644: BUG: Reporting Progress Template Not On Practice Disk For PowerP
 
+{% raw %}
+
 	Article: Q171644
 	Product(s): Microsoft Press
 	Version(s): 
@@ -92,3 +94,5 @@ permalink: /kb/171/Q171644/
 	
 	=============================================================================
 	
+
+{% endraw %}

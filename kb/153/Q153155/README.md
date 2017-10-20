@@ -6,6 +6,8 @@ permalink: /kb/153/Q153155/
 
 ## Q153155: How To Use New Undocumented Foxtools Function JustCSName()
 
+{% raw %}
+
 	Article: Q153155
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -81,3 +83,5 @@ permalink: /kb/153/Q153155/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135552/
 
 ## Q135552: SNA Server Administrator Does Not Expose Administrator APIs
 
+{% raw %}
+
 	Article: Q135552
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -44,3 +46,5 @@ permalink: /kb/135/Q135552/
 	
 	=============================================================================
 	
+
+{% endraw %}

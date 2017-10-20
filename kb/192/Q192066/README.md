@@ -6,6 +6,8 @@ permalink: /kb/192/Q192066/
 
 ## Q192066: XADM: Event Service with Internet Explorer 4.01 Hangs NT Shell
 
+{% raw %}
+
 	Article: Q192066
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -70,3 +72,5 @@ permalink: /kb/192/Q192066/
 	
 	=============================================================================
 	
+
+{% endraw %}

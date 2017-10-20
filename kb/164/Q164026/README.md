@@ -6,6 +6,8 @@ permalink: /kb/164/Q164026/
 
 ## Q164026: FPNW Version 3.51 Will Not Run on NT Server 4.0
 
+{% raw %}
+
 	Article: Q164026
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -63,3 +65,5 @@ permalink: /kb/164/Q164026/
 	
 	=============================================================================
 	
+
+{% endraw %}

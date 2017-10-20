@@ -6,6 +6,8 @@ permalink: /kb/108/Q108286/
 
 ## Q108286: FIX: Incorrect F2560 with Adjustable Sized Arrays and /4Yb
 
+{% raw %}
+
 	Article: Q108286
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -75,3 +77,5 @@ permalink: /kb/108/Q108286/
 	
 	=============================================================================
 	
+
+{% endraw %}

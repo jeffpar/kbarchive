@@ -6,6 +6,8 @@ permalink: /kb/184/Q184578/
 
 ## Q184578: XADM: Online Backup Fails to Remove Log Files
 
+{% raw %}
+
 	Article: Q184578
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -72,3 +74,5 @@ permalink: /kb/184/Q184578/
 	
 	=============================================================================
 	
+
+{% endraw %}

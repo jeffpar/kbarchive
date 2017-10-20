@@ -6,6 +6,8 @@ permalink: /kb/186/Q186501/
 
 ## Q186501: Enabling Auto Admin Logon on the Terminal Server Console
 
+{% raw %}
+
 	Article: Q186501
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/186/Q186501/
 	
 	=============================================================================
 	
+
+{% endraw %}

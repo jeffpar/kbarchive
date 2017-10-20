@@ -6,6 +6,8 @@ permalink: /kb/196/Q196796/
 
 ## Q196796: FIX: ClassWizard Unable to Create Files for New Class
 
+{% raw %}
+
 	Article: Q196796
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -109,3 +111,5 @@ permalink: /kb/196/Q196796/
 	
 	=============================================================================
 	
+
+{% endraw %}

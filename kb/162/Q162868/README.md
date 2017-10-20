@@ -6,6 +6,8 @@ permalink: /kb/162/Q162868/
 
 ## Q162868: WinNT 4.0 DNS Only Binds to a Maximum of 15 IP Addresses
 
+{% raw %}
+
 	Article: Q162868
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -74,3 +76,5 @@ permalink: /kb/162/Q162868/
 	
 	=============================================================================
 	
+
+{% endraw %}

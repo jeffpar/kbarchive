@@ -6,6 +6,8 @@ permalink: /kb/174/Q174430/
 
 ## Q174430: Kids Plus!: Play It and Talk It Missing Required .DLLs
 
+{% raw %}
+
 	Article: Q174430
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -114,3 +116,5 @@ permalink: /kb/174/Q174430/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134576/
 
 ## Q134576: PostScript Errors Printing with Bitstream Facelift 2.0
 
+{% raw %}
+
 	Article: Q134576
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/134/Q134576/
 	
 	=============================================================================
 	
+
+{% endraw %}

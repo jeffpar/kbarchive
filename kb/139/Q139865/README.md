@@ -6,6 +6,8 @@ permalink: /kb/139/Q139865/
 
 ## Q139865: FIX: Programmatic Change in Grid Does Not Update ControlSource
 
+{% raw %}
+
 	Article: Q139865
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 5.00
@@ -85,3 +87,5 @@ permalink: /kb/139/Q139865/
 	
 	=============================================================================
 	
+
+{% endraw %}

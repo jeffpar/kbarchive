@@ -6,6 +6,8 @@ permalink: /kb/110/Q110547/
 
 ## Q110547: Flight Simulator: Error Code (02)
 
+{% raw %}
+
 	Article: Q110547
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -61,3 +63,5 @@ permalink: /kb/110/Q110547/
 	
 	=============================================================================
 	
+
+{% endraw %}

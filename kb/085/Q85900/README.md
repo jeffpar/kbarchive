@@ -6,6 +6,8 @@ permalink: /kb/085/Q85900/
 
 ## Q85900: Attributes Step is Incorrect in Windows/MS-DOS 5.0 Guide
 
+{% raw %}
+
 	Article: Q85900
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/085/Q85900/
 	
 	=============================================================================
 	
+
+{% endraw %}

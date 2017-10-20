@@ -6,6 +6,8 @@ permalink: /kb/115/Q115364/
 
 ## Q115364: X400: Comma Before Final Term Omitted by Display Format
 
+{% raw %}
+
 	Article: Q115364
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -40,3 +42,5 @@ permalink: /kb/115/Q115364/
 	
 	=============================================================================
 	
+
+{% endraw %}

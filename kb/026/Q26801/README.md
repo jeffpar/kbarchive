@@ -6,6 +6,8 @@ permalink: /kb/026/Q26801/
 
 ## Q26801: FIX: Byte Order Incorrect in Listing File For Doublewords
 
+{% raw %}
+
 	Article: Q26801
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0
@@ -59,3 +61,5 @@ permalink: /kb/026/Q26801/
 	
 	=============================================================================
 	
+
+{% endraw %}

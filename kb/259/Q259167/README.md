@@ -6,6 +6,8 @@ permalink: /kb/259/Q259167/
 
 ## Q259167: Program Receives &quot;File Is Corrupt or Unreadable&quot; Error Message
 
+{% raw %}
+
 	Article: Q259167
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -94,3 +96,5 @@ permalink: /kb/259/Q259167/
 	
 	=============================================================================
 	
+
+{% endraw %}

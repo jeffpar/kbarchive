@@ -6,6 +6,8 @@ permalink: /kb/185/Q185098/
 
 ## Q185098: XADM: AV in Dsamain.exe When Expanding or Scrolling Objects
 
+{% raw %}
+
 	Article: Q185098
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -76,3 +78,5 @@ permalink: /kb/185/Q185098/
 	
 	=============================================================================
 	
+
+{% endraw %}

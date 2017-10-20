@@ -6,6 +6,8 @@ permalink: /kb/158/Q158647/
 
 ## Q158647: SMS: Autostarting Remote Control Option Behavior
 
+{% raw %}
+
 	Article: Q158647
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -58,3 +60,5 @@ permalink: /kb/158/Q158647/
 	
 	=============================================================================
 	
+
+{% endraw %}

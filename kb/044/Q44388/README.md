@@ -6,6 +6,8 @@ permalink: /kb/044/Q44388/
 
 ## Q44388: How to Use the ERROUT Utility
 
+{% raw %}
+
 	Article: Q44388
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -50,3 +52,5 @@ permalink: /kb/044/Q44388/
 	printer, use the following commands:
 	
 	   cl test.c > PRN
+
+{% endraw %}

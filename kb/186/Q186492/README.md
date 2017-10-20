@@ -6,6 +6,8 @@ permalink: /kb/186/Q186492/
 
 ## Q186492: Preventing Unnecessary Registry Growth in Terminal Server
 
+{% raw %}
+
 	Article: Q186492
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -84,3 +86,5 @@ permalink: /kb/186/Q186492/
 	
 	=============================================================================
 	
+
+{% endraw %}

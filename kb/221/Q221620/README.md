@@ -6,6 +6,8 @@ permalink: /kb/221/Q221620/
 
 ## Q221620: FIX: FFCs - _GraphByRecord in _utility.vcx_Should Show Name
 
+{% raw %}
+
 	Article: Q221620
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -71,3 +73,5 @@ permalink: /kb/221/Q221620/
 	
 	=============================================================================
 	
+
+{% endraw %}

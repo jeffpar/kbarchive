@@ -6,6 +6,8 @@ permalink: /kb/177/Q177960/
 
 ## Q177960: Bookshelf 98: Bookshelf Daily Displays Empty Dialog Box
 
+{% raw %}
+
 	Article: Q177960
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -160,3 +162,5 @@ permalink: /kb/177/Q177960/
 	
 	=============================================================================
 	
+
+{% endraw %}

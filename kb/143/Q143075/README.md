@@ -6,6 +6,8 @@ permalink: /kb/143/Q143075/
 
 ## Q143075: FIX: Error When Attempting to Rename Class in Class Browser
 
+{% raw %}
+
 	Article: Q143075
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -91,3 +93,5 @@ permalink: /kb/143/Q143075/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124412/
 
 ## Q124412: Complete Basketball: Low Memory Issues
 
+{% raw %}
+
 	Article: Q124412
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): '94-'95 edition
@@ -85,3 +87,5 @@ permalink: /kb/124/Q124412/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/258/Q258947/
 
 ## Q258947: WD97: List Item Format Is Not Carried to Next List Item
 
+{% raw %}
+
 	Article: Q258947
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -93,3 +95,5 @@ permalink: /kb/258/Q258947/
 	
 	=============================================================================
 	
+
+{% endraw %}

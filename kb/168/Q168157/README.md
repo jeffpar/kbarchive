@@ -6,6 +6,8 @@ permalink: /kb/168/Q168157/
 
 ## Q168157: FIX: Problems Binding Multiple Controls to RDC 2.0
 
+{% raw %}
+
 	Article: Q168157
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0 97
@@ -50,3 +52,5 @@ permalink: /kb/168/Q168157/
 	
 	=============================================================================
 	
+
+{% endraw %}

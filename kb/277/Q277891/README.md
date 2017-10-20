@@ -6,6 +6,8 @@ permalink: /kb/277/Q277891/
 
 ## Q277891: How to Renew Certificates That Are Used with IIS 5.0
 
+{% raw %}
+
 	Article: Q277891
 	Product(s): Internet Information Server
 	Version(s): 2.0,5.0
@@ -158,3 +160,5 @@ permalink: /kb/277/Q277891/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136980/
 
 ## Q136980: FIX: Entering Validation Rule in Table Designer Causes Error
 
+{% raw %}
+
 	Article: Q136980
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -94,3 +96,5 @@ permalink: /kb/136/Q136980/
 	
 	=============================================================================
 	
+
+{% endraw %}

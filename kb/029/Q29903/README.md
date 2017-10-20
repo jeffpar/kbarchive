@@ -6,6 +6,8 @@ permalink: /kb/029/Q29903/
 
 ## Q29903: C 5.10 UTILITY.DOC: Microsoft Pascal Programs
 
+{% raw %}
+
 	Article: Q29903
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -30,3 +32,5 @@ permalink: /kb/029/Q29903/
 	rather than
 	
 	PAS1 /Zi TEST;
+
+{% endraw %}

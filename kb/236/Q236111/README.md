@@ -6,6 +6,8 @@ permalink: /kb/236/Q236111/
 
 ## Q236111: XCLN: Client Cannot Change Windows NT or Windows 2000 Password
 
+{% raw %}
+
 	Article: Q236111
 	Product(s): Microsoft Exchange
 	Version(s): 2000,4.0,5.0,8.0,8.1,8.2
@@ -167,3 +169,5 @@ permalink: /kb/236/Q236111/
 	
 	=============================================================================
 	
+
+{% endraw %}

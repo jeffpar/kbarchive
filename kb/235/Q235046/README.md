@@ -6,6 +6,8 @@ permalink: /kb/235/Q235046/
 
 ## Q235046: Microsoft Publisher 2000 Step by Step Comments and Corrections
 
+{% raw %}
+
 	Article: Q235046
 	Product(s): Microsoft Press
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/235/Q235046/
 	
 	=============================================================================
 	
+
+{% endraw %}

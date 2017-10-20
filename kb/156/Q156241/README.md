@@ -6,6 +6,8 @@ permalink: /kb/156/Q156241/
 
 ## Q156241: HOWTO: Use the New AutoVerbMenu Property of OLE Controls
 
+{% raw %}
+
 	Article: Q156241
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -69,3 +71,5 @@ permalink: /kb/156/Q156241/
 	
 	=============================================================================
 	
+
+{% endraw %}

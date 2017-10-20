@@ -6,6 +6,8 @@ permalink: /kb/063/Q63541/
 
 ## Q63541: Passing Structures to OS/2 LAN Manager Remote API Calls
 
+{% raw %}
+
 	Article: Q63541
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/063/Q63541/
 	
 	=============================================================================
 	
+
+{% endraw %}

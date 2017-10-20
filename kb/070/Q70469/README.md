@@ -6,6 +6,8 @@ permalink: /kb/070/Q70469/
 
 ## Q70469: Incompatible Windows 3.0 ATI Video Drivers
 
+{% raw %}
+
 	Article: Q70469
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -61,3 +63,5 @@ permalink: /kb/070/Q70469/
 	
 	=============================================================================
 	
+
+{% endraw %}

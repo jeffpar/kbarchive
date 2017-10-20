@@ -6,6 +6,8 @@ permalink: /kb/191/Q191138/
 
 ## Q191138: How to Install the NTOP on Cluster Server
 
+{% raw %}
+
 	Article: Q191138
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -306,3 +308,5 @@ permalink: /kb/191/Q191138/
 	
 	=============================================================================
 	
+
+{% endraw %}

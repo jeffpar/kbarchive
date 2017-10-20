@@ -6,6 +6,8 @@ permalink: /kb/138/Q138865/
 
 ## Q138865: PRB: Resource Editor Shows Top-Level Menu Items as PopUp Menus
 
+{% raw %}
+
 	Article: Q138865
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 5.0 6.0
@@ -70,3 +72,5 @@ permalink: /kb/138/Q138865/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87547/
 
 ## Q87547: BUG: Warning Level Disabled After Selecting Processor
 
+{% raw %}
+
 	Article: Q87547
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:2.0,2.1.49
@@ -64,3 +66,5 @@ permalink: /kb/087/Q87547/
 	
 	=============================================================================
 	
+
+{% endraw %}

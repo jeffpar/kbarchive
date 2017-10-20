@@ -6,6 +6,8 @@ permalink: /kb/147/Q147451/
 
 ## Q147451: Limit on Number of Macintosh Shares You Can Create
 
+{% raw %}
+
 	Article: Q147451
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -50,3 +52,5 @@ permalink: /kb/147/Q147451/
 	
 	=============================================================================
 	
+
+{% endraw %}

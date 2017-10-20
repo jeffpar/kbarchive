@@ -6,6 +6,8 @@ permalink: /kb/265/Q265623/
 
 ## Q265623: WD97: Embedded Document's Custom/Built-in Properties Lost
 
+{% raw %}
+
 	Article: Q265623
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/265/Q265623/
 	
 	=============================================================================
 	
+
+{% endraw %}

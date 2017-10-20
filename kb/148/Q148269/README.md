@@ -6,6 +6,8 @@ permalink: /kb/148/Q148269/
 
 ## Q148269: Encarta: Video Not Updated When Changing Views
 
+{% raw %}
+
 	Article: Q148269
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition,1996 edition
@@ -57,3 +59,5 @@ permalink: /kb/148/Q148269/
 	
 	=============================================================================
 	
+
+{% endraw %}

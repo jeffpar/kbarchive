@@ -6,6 +6,8 @@ permalink: /kb/163/Q163874/
 
 ## Q163874: Pressing CTRL+ALT+DEL When Logging On Can Cause Blue Screen
 
+{% raw %}
+
 	Article: Q163874
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/163/Q163874/
 	
 	=============================================================================
 	
+
+{% endraw %}

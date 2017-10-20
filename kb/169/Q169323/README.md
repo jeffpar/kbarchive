@@ -6,6 +6,8 @@ permalink: /kb/169/Q169323/
 
 ## Q169323: XADM: Cannot Insert an Attachment from a Client
 
+{% raw %}
+
 	Article: Q169323
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -75,3 +77,5 @@ permalink: /kb/169/Q169323/
 	
 	=============================================================================
 	
+
+{% endraw %}

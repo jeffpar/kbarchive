@@ -6,6 +6,8 @@ permalink: /kb/027/Q27857/
 
 ## Q27857: Old LINKer &quot;Unrecognized Switch Error: 'EX'&quot; when &quot;Make EXE&quot;
 
+{% raw %}
+
 	Article: Q27857
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -48,3 +50,5 @@ permalink: /kb/027/Q27857/
 	versions of the linker from the machine or modify the DOS path
 	statement so that the correct version of the linker is the first one
 	found.
+
+{% endraw %}

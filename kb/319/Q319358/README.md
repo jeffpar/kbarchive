@@ -6,6 +6,8 @@ permalink: /kb/319/Q319358/
 
 ## Q319358: The Focus Rectangle Does Not Move As Expected
 
+{% raw %}
+
 	Article: Q319358
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -96,3 +98,5 @@ permalink: /kb/319/Q319358/
 	
 	=============================================================================
 	
+
+{% endraw %}

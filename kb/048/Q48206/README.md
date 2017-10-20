@@ -6,6 +6,8 @@ permalink: /kb/048/Q48206/
 
 ## Q48206: Example of C Functions Returning Numeric Types to BASIC
 
+{% raw %}
+
 	Article: Q48206
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -76,3 +78,5 @@ permalink: /kb/048/Q48206/
 	   Integer:  32767
 	   Long   :  32769
 	   Double :  129381.123
+
+{% endraw %}

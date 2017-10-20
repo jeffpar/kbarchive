@@ -6,6 +6,8 @@ permalink: /kb/136/Q136694/
 
 ## Q136694: Memory Management in Visual FoxPro
 
+{% raw %}
+
 	Article: Q136694
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/136/Q136694/
 	
 	=============================================================================
 	
+
+{% endraw %}

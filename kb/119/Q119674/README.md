@@ -6,6 +6,8 @@ permalink: /kb/119/Q119674/
 
 ## Q119674: Windows Err Msg: WDCTRL Validation Failed at Phase &lt;x, x&gt;
 
+{% raw %}
+
 	Article: Q119674
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -79,3 +81,5 @@ permalink: /kb/119/Q119674/
 	
 	=============================================================================
 	
+
+{% endraw %}

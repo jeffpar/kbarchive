@@ -6,6 +6,8 @@ permalink: /kb/049/Q49376/
 
 ## Q49376: COM Port Time-Out Halts Redirection of CVP to Remote Terminal
 
+{% raw %}
+
 	Article: Q49376
 	Product(s): See article
 	Version(s): 2.20 2.30
@@ -45,3 +47,5 @@ permalink: /kb/049/Q49376/
 	only way to regain control is to enter CTRL+C at the PC keyboard,
 	which ends the redirection. At that point, you could enter "=COM1"
 	again on the PC keyboard to restart the redirection if you so desired.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138505/
 
 ## Q138505: HOWTO: Add Context-Sensitive Help Button to Win 95 Dialog Boxes
 
+{% raw %}
+
 	Article: Q138505
 	Product(s): Microsoft C Compiler
 	Version(s): 2.1,2.2,4.0,4.1,5.0,6.0
@@ -80,3 +82,5 @@ permalink: /kb/138/Q138505/
 	
 	=============================================================================
 	
+
+{% endraw %}

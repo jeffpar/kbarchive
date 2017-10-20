@@ -6,6 +6,8 @@ permalink: /kb/107/Q107347/
 
 ## Q107347: Network Card Drivers That Must Load in Conventional Memory
 
+{% raw %}
+
 	Article: Q107347
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -54,3 +56,5 @@ permalink: /kb/107/Q107347/
 	
 	=============================================================================
 	
+
+{% endraw %}

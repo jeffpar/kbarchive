@@ -6,6 +6,8 @@ permalink: /kb/146/Q146455/
 
 ## Q146455: XADM: Generated SMTP Addresses for Duplicate Mailboxes
 
+{% raw %}
+
 	Article: Q146455
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/146/Q146455/
 	
 	=============================================================================
 	
+
+{% endraw %}

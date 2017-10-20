@@ -6,6 +6,8 @@ permalink: /kb/122/Q122216/
 
 ## Q122216: FIX: Errors When Spaces Used in Resource File Specification
 
+{% raw %}
+
 	Article: Q122216
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -57,3 +59,5 @@ permalink: /kb/122/Q122216/
 	
 	=============================================================================
 	
+
+{% endraw %}

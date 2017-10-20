@@ -6,6 +6,8 @@ permalink: /kb/140/Q140299/
 
 ## Q140299: FIX: Pressing ESC Key in Properties Window Causes Error
 
+{% raw %}
+
 	Article: Q140299
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/140/Q140299/
 	
 	=============================================================================
 	
+
+{% endraw %}

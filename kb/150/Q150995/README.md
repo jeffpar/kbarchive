@@ -6,6 +6,8 @@ permalink: /kb/150/Q150995/
 
 ## Q150995: How to set User Manager Settings for Multiple Users
 
+{% raw %}
+
 	Article: Q150995
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -75,3 +77,5 @@ permalink: /kb/150/Q150995/
 	
 	=============================================================================
 	
+
+{% endraw %}

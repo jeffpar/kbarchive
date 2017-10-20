@@ -6,6 +6,8 @@ permalink: /kb/179/Q179435/
 
 ## Q179435: WD97: Error: &quot;Cannot Access the File&quot; After File Closed (ODMA)
 
+{% raw %}
+
 	Article: Q179435
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -87,3 +89,5 @@ permalink: /kb/179/Q179435/
 	
 	=============================================================================
 	
+
+{% endraw %}

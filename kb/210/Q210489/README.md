@@ -6,6 +6,8 @@ permalink: /kb/210/Q210489/
 
 ## Q210489: Golf 99 Err Msg: ...Exception 10h in Module Msvbvm50.dll
 
+{% raw %}
+
 	Article: Q210489
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -75,3 +77,5 @@ permalink: /kb/210/Q210489/
 	
 	=============================================================================
 	
+
+{% endraw %}

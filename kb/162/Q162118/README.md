@@ -6,6 +6,8 @@ permalink: /kb/162/Q162118/
 
 ## Q162118: WD97: Closing Document Window Does Not Close VB Editor
 
+{% raw %}
+
 	Article: Q162118
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -51,3 +53,5 @@ permalink: /kb/162/Q162118/
 	
 	=============================================================================
 	
+
+{% endraw %}

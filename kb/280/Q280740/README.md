@@ -6,6 +6,8 @@ permalink: /kb/280/Q280740/
 
 ## Q280740: Issues Associated with the SNA Server/HIS 2000 Web Client
 
+{% raw %}
+
 	Article: Q280740
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -106,3 +108,5 @@ permalink: /kb/280/Q280740/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234350/
 
 ## Q234350: XFOR: Cannot Send Message with Brackets in Subject to cc:Mail
 
+{% raw %}
+
 	Article: Q234350
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -79,3 +81,5 @@ permalink: /kb/234/Q234350/
 	
 	=============================================================================
 	
+
+{% endraw %}

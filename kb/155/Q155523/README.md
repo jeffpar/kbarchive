@@ -6,6 +6,8 @@ permalink: /kb/155/Q155523/
 
 ## Q155523: Netlogon Stops Reponding or Records Event ID 5703
 
+{% raw %}
+
 	Article: Q155523
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -60,3 +62,5 @@ permalink: /kb/155/Q155523/
 	
 	=============================================================================
 	
+
+{% endraw %}

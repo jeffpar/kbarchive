@@ -6,6 +6,8 @@ permalink: /kb/084/Q84207/
 
 ## Q84207: Small Gaps Appear in Output When Printing to an Epson LQ-2250
 
+{% raw %}
+
 	Article: Q84207
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/084/Q84207/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/249/Q249647/
 
 ## Q249647: IGMP Incorrectly Sends Membership Packets to Several Groups
 
+{% raw %}
+
 	Article: Q249647
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; Win2000:95
@@ -101,3 +103,5 @@ permalink: /kb/249/Q249647/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/228/Q228503/
 
 ## Q228503: Err 1215 When IMS Transaction Program Name is All Numeric Chars.
 
+{% raw %}
+
 	Article: Q228503
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0SP2
@@ -84,3 +86,5 @@ permalink: /kb/228/Q228503/
 	
 	=============================================================================
 	
+
+{% endraw %}

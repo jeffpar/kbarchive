@@ -6,6 +6,8 @@ permalink: /kb/099/Q99855/
 
 ## Q99855: SMTP: Err Msg: 503 Bad Command Sequence
 
+{% raw %}
+
 	Article: Q99855
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -49,3 +51,5 @@ permalink: /kb/099/Q99855/
 	
 	=============================================================================
 	
+
+{% endraw %}

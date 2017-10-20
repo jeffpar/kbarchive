@@ -6,6 +6,8 @@ permalink: /kb/160/Q160478/
 
 ## Q160478: Encarta 97: Copying Climate Charts Cuts Off Decimal Amounts
 
+{% raw %}
+
 	Article: Q160478
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -44,3 +46,5 @@ permalink: /kb/160/Q160478/
 	
 	=============================================================================
 	
+
+{% endraw %}

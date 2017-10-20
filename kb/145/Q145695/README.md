@@ -6,6 +6,8 @@ permalink: /kb/145/Q145695/
 
 ## Q145695: PRB: Error Converting String to Numeric Value e When Using &quot;%&quot;
 
+{% raw %}
+
 	Article: Q145695
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/145/Q145695/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153100/
 
 ## Q153100: Pager Notification Not Supported with Some Voice Modems
 
+{% raw %}
+
 	Article: Q153100
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -89,3 +91,5 @@ permalink: /kb/153/Q153100/
 	
 	=============================================================================
 	
+
+{% endraw %}

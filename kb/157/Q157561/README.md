@@ -6,6 +6,8 @@ permalink: /kb/157/Q157561/
 
 ## Q157561: STL Sample for the Predicate Version of the merge Function
 
+{% raw %}
+
 	Article: Q157561
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -210,3 +212,5 @@ permalink: /kb/157/Q157561/
 	
 	=============================================================================
 	
+
+{% endraw %}

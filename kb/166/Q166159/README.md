@@ -6,6 +6,8 @@ permalink: /kb/166/Q166159/
 
 ## Q166159: NetBIOS Connections from a Multihomed Computer
 
+{% raw %}
+
 	Article: Q166159
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -115,3 +117,5 @@ permalink: /kb/166/Q166159/
 	
 	=============================================================================
 	
+
+{% endraw %}

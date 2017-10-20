@@ -6,6 +6,8 @@ permalink: /kb/181/Q181024/
 
 ## Q181024: DHCP Event ID 1002: DHCP Received an Unknown Option...
 
+{% raw %}
+
 	Article: Q181024
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -130,3 +132,5 @@ permalink: /kb/181/Q181024/
 	
 	=============================================================================
 	
+
+{% endraw %}

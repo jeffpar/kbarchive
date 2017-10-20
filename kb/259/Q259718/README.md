@@ -6,6 +6,8 @@ permalink: /kb/259/Q259718/
 
 ## Q259718: Windows 2000 Resource Kit Setup Hangs
 
+{% raw %}
+
 	Article: Q259718
 	Product(s): Microsoft Press
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/259/Q259718/
 	
 	=============================================================================
 	
+
+{% endraw %}

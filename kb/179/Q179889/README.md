@@ -6,6 +6,8 @@ permalink: /kb/179/Q179889/
 
 ## Q179889: Close Combat II/III Err Msg: Cannot Open File for Streaming
 
+{% raw %}
+
 	Article: Q179889
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -108,3 +110,5 @@ permalink: /kb/179/Q179889/
 	
 	=============================================================================
 	
+
+{% endraw %}

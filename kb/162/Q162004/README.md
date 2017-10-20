@@ -6,6 +6,8 @@ permalink: /kb/162/Q162004/
 
 ## Q162004: Setwiz5.exe the Updated VFP 5.0 for Windows Setup Wizard
 
+{% raw %}
+
 	Article: Q162004
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -151,3 +153,5 @@ permalink: /kb/162/Q162004/
 	
 	=============================================================================
 	
+
+{% endraw %}

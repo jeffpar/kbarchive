@@ -6,6 +6,8 @@ permalink: /kb/177/Q177664/
 
 ## Q177664: Stop 0x0000000A in Netbt.sys When Shutting Down
 
+{% raw %}
+
 	Article: Q177664
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -68,3 +70,5 @@ permalink: /kb/177/Q177664/
 	
 	=============================================================================
 	
+
+{% endraw %}

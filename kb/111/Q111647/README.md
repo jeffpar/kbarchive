@@ -6,6 +6,8 @@ permalink: /kb/111/Q111647/
 
 ## Q111647: BUG: LB_SETTOPINDEX Does Not Conform to Documentation
 
+{% raw %}
+
 	Article: Q111647
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -43,3 +45,5 @@ permalink: /kb/111/Q111647/
 	
 	=============================================================================
 	
+
+{% endraw %}

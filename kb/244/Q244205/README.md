@@ -6,6 +6,8 @@ permalink: /kb/244/Q244205/
 
 ## Q244205: WD97: FileName Code Does Not Resolve Mapped NetWare Server Path
 
+{% raw %}
+
 	Article: Q244205
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -84,3 +86,5 @@ permalink: /kb/244/Q244205/
 	
 	=============================================================================
 	
+
+{% endraw %}

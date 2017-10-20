@@ -6,6 +6,8 @@ permalink: /kb/073/Q73320/
 
 ## Q73320: GW-BASIC/BASICA Keywords Not Supported in QBasic
 
+{% raw %}
+
 	Article: Q73320
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -121,3 +123,5 @@ permalink: /kb/073/Q73320/
 	
 	=============================================================================
 	
+
+{% endraw %}

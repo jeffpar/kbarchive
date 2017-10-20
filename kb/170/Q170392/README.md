@@ -6,6 +6,8 @@ permalink: /kb/170/Q170392/
 
 ## Q170392: PRB: SYS(17) Function Returns Incorrect Processor Type
 
+{% raw %}
+
 	Article: Q170392
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -86,3 +88,5 @@ permalink: /kb/170/Q170392/
 	
 	=============================================================================
 	
+
+{% endraw %}

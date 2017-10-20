@@ -6,6 +6,8 @@ permalink: /kb/184/Q184531/
 
 ## Q184531: XADM: Custom Recipient SMTP Address May Not Change Properly
 
+{% raw %}
+
 	Article: Q184531
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -120,3 +122,5 @@ permalink: /kb/184/Q184531/
 	
 	=============================================================================
 	
+
+{% endraw %}

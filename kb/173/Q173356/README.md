@@ -6,6 +6,8 @@ permalink: /kb/173/Q173356/
 
 ## Q173356: XCLN: Protecting an OST File
 
+{% raw %}
+
 	Article: Q173356
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -65,3 +67,5 @@ permalink: /kb/173/Q173356/
 	
 	=============================================================================
 	
+
+{% endraw %}

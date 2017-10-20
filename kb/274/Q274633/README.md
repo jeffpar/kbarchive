@@ -6,6 +6,8 @@ permalink: /kb/274/Q274633/
 
 ## Q274633: MSN Explorer Not Readable With ZoomText Screen Reader
 
+{% raw %}
+
 	Article: Q274633
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -65,3 +67,5 @@ permalink: /kb/274/Q274633/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/200/Q200775/
 
 ## Q200775: Routing Problems After Installing Checkpoint Firewall 1
 
+{% raw %}
+
 	Article: Q200775
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/200/Q200775/
 	
 	=============================================================================
 	
+
+{% endraw %}

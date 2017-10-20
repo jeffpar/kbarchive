@@ -6,6 +6,8 @@ permalink: /kb/165/Q165662/
 
 ## Q165662: LUA LUs Not Allocated from Pools in Order of Their LU Number
 
+{% raw %}
+
 	Article: Q165662
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/165/Q165662/
 	
 	=============================================================================
 	
+
+{% endraw %}

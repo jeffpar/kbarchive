@@ -6,6 +6,8 @@ permalink: /kb/318/Q318963/
 
 ## Q318963: How To Access The Apple System Profiler
 
+{% raw %}
+
 	Article: Q318963
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/318/Q318963/
 	
 	=============================================================================
 	
+
+{% endraw %}

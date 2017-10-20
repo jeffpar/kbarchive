@@ -6,6 +6,8 @@ permalink: /kb/126/Q126569/
 
 ## Q126569: Error Message: &quot;VNETSUP: Error 6102&quot;
 
+{% raw %}
+
 	Article: Q126569
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/126/Q126569/
 	
 	=============================================================================
 	
+
+{% endraw %}

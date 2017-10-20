@@ -6,6 +6,8 @@ permalink: /kb/137/Q137866/
 
 ## Q137866: PC NTMMTA: Err Msg: Drive Is Either Local, Used or Greater...
 
+{% raw %}
+
 	Article: Q137866
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -165,3 +167,5 @@ permalink: /kb/137/Q137866/
 	
 	=============================================================================
 	
+
+{% endraw %}

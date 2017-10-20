@@ -6,6 +6,8 @@ permalink: /kb/199/Q199236/
 
 ## Q199236: INFO: Extended Hercules Checking and Accelerated Mode
 
+{% raw %}
+
 	Article: Q199236
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -57,3 +59,5 @@ permalink: /kb/199/Q199236/
 	
 	=============================================================================
 	
+
+{% endraw %}

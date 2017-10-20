@@ -6,6 +6,8 @@ permalink: /kb/268/Q268119/
 
 ## Q268119: Windows 2000 Core Requirements Training Kit Comments and Correct
 
+{% raw %}
+
 	Article: Q268119
 	Product(s): Microsoft Press
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/268/Q268119/
 	
 	=============================================================================
 	
+
+{% endraw %}

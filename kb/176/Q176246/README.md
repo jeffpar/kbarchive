@@ -6,6 +6,8 @@ permalink: /kb/176/Q176246/
 
 ## Q176246: XWEB: Unexpected Behavior when Accessing Outlook Web Access
 
+{% raw %}
+
 	Article: Q176246
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -62,3 +64,5 @@ permalink: /kb/176/Q176246/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107574/
 
 ## Q107574: Err Msg: Error Loading PROTMAN.DOS After Using SETUP /H
 
+{% raw %}
+
 	Article: Q107574
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -58,3 +60,5 @@ permalink: /kb/107/Q107574/
 	
 	=============================================================================
 	
+
+{% endraw %}

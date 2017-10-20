@@ -6,6 +6,8 @@ permalink: /kb/091/Q91128/
 
 ## Q91128: Lotus 1-2-3 for Windows GP Faults when Server Connection Lost
 
+{% raw %}
+
 	Article: Q91128
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -44,3 +46,5 @@ permalink: /kb/091/Q91128/
 	
 	=============================================================================
 	
+
+{% endraw %}

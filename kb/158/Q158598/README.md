@@ -6,6 +6,8 @@ permalink: /kb/158/Q158598/
 
 ## Q158598: Mac Encarta 97: Readme.txt: Video and Sound Issues
 
+{% raw %}
+
 	Article: Q158598
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -92,3 +94,5 @@ permalink: /kb/158/Q158598/
 	
 	=============================================================================
 	
+
+{% endraw %}

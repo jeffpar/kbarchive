@@ -6,6 +6,8 @@ permalink: /kb/116/Q116379/
 
 ## Q116379: Resource Creator &amp; List of File Types for FoxPro for Mac
 
+{% raw %}
+
 	Article: Q116379
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c
@@ -89,3 +91,5 @@ permalink: /kb/116/Q116379/
 	
 	=============================================================================
 	
+
+{% endraw %}

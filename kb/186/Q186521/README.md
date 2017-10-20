@@ -6,6 +6,8 @@ permalink: /kb/186/Q186521/
 
 ## Q186521: Why Terminal Server Users Should Have New Home Directories
 
+{% raw %}
+
 	Article: Q186521
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -80,3 +82,5 @@ permalink: /kb/186/Q186521/
 	
 	=============================================================================
 	
+
+{% endraw %}

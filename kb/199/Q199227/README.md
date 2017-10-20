@@ -6,6 +6,8 @@ permalink: /kb/199/Q199227/
 
 ## Q199227: SMS: Functions of Migrat1x.exe?
 
+{% raw %}
+
 	Article: Q199227
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -73,3 +75,5 @@ permalink: /kb/199/Q199227/
 	
 	=============================================================================
 	
+
+{% endraw %}

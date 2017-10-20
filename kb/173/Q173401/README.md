@@ -6,6 +6,8 @@ permalink: /kb/173/Q173401/
 
 ## Q173401: Netscape Navigator Starts When You View Internet Newsgroups
 
+{% raw %}
+
 	Article: Q173401
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0,2.5,2.51,4.0
@@ -94,3 +96,5 @@ permalink: /kb/173/Q173401/
 	
 	=============================================================================
 	
+
+{% endraw %}

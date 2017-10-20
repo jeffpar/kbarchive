@@ -6,6 +6,8 @@ permalink: /kb/126/Q126016/
 
 ## Q126016: Multimedia: Wave Error Messages Under Windows NT 3.5
 
+{% raw %}
+
 	Article: Q126016
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0; :1994 edition,1994-1995 edition,1995 edition; winnt:3.5
@@ -113,3 +115,5 @@ permalink: /kb/126/Q126016/
 	
 	=============================================================================
 	
+
+{% endraw %}

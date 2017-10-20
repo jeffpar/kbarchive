@@ -6,6 +6,8 @@ permalink: /kb/271/Q271834/
 
 ## Q271834: Cannot Display Some Hong Kong Supplementary Characters
 
+{% raw %}
+
 	Article: Q271834
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,4.0
@@ -152,3 +154,5 @@ permalink: /kb/271/Q271834/
 	
 	=============================================================================
 	
+
+{% endraw %}

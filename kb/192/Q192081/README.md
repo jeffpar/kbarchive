@@ -6,6 +6,8 @@ permalink: /kb/192/Q192081/
 
 ## Q192081: PRB: Printing Report from Preview Window Causes Nesting Error
 
+{% raw %}
+
 	Article: Q192081
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -76,3 +78,5 @@ permalink: /kb/192/Q192081/
 	
 	=============================================================================
 	
+
+{% endraw %}

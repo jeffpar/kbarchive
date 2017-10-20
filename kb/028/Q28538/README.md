@@ -6,6 +6,8 @@ permalink: /kb/028/Q28538/
 
 ## Q28538: Bus Mouse Jumper Settings J2, J3, and J4
 
+{% raw %}
+
 	Article: Q28538
 	Product(s): See article
 	Version(s): 1.00
@@ -38,3 +40,5 @@ permalink: /kb/028/Q28538/
 	and an IBM PC AT usually has interrupt five available.
 	   Refer to Page 6 of your "Microsoft Mouse User's Guide" for more
 	information.
+
+{% endraw %}

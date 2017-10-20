@@ -6,6 +6,8 @@ permalink: /kb/234/Q234387/
 
 ## Q234387: XCON: Hole in Web 3 Connector w. GroupWise 5.5 Internet Agent
 
+{% raw %}
+
 	Article: Q234387
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -57,3 +59,5 @@ permalink: /kb/234/Q234387/
 	
 	=============================================================================
 	
+
+{% endraw %}

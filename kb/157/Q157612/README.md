@@ -6,6 +6,8 @@ permalink: /kb/157/Q157612/
 
 ## Q157612: WD97: No Warning When You Edit EPS Image (Image Converted)
 
+{% raw %}
+
 	Article: Q157612
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -62,3 +64,5 @@ permalink: /kb/157/Q157612/
 	
 	=============================================================================
 	
+
+{% endraw %}

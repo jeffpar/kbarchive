@@ -6,6 +6,8 @@ permalink: /kb/182/Q182967/
 
 ## Q182967: Windows 95 Year 2000 Problems with DATE and DIR Commands
 
+{% raw %}
+
 	Article: Q182967
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -64,3 +66,5 @@ permalink: /kb/182/Q182967/
 	
 	=============================================================================
 	
+
+{% endraw %}

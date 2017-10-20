@@ -6,6 +6,8 @@ permalink: /kb/158/Q158199/
 
 ## Q158199: STL Sample for the string::operator== Function
 
+{% raw %}
+
 	Article: Q158199
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -192,3 +194,5 @@ permalink: /kb/158/Q158199/
 	
 	=============================================================================
 	
+
+{% endraw %}

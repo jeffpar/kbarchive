@@ -6,6 +6,8 @@ permalink: /kb/068/Q68974/
 
 ## Q68974: Mac Form: Field w/o Scroll Bars Limited to 256 Characters
 
+{% raw %}
+
 	Article: Q68974
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -38,3 +40,5 @@ permalink: /kb/068/Q68974/
 	
 	=============================================================================
 	
+
+{% endraw %}

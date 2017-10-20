@@ -6,6 +6,8 @@ permalink: /kb/156/Q156992/
 
 ## Q156992: INFO: STL Sample for the Predicate Version of max_element Functi
 
+{% raw %}
+
 	Article: Q156992
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -160,3 +162,5 @@ permalink: /kb/156/Q156992/
 	
 	=============================================================================
 	
+
+{% endraw %}

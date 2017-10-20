@@ -6,6 +6,8 @@ permalink: /kb/189/Q189808/
 
 ## Q189808: PRB: UpDown Control May Not Increment As Expected
 
+{% raw %}
+
 	Article: Q189808
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/189/Q189808/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187393/
 
 ## Q187393: BUG: &quot;Error in Assignment&quot; Accessing BLOB Data in FoxPro DB
 
+{% raw %}
+
 	Article: Q187393
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.0,4.0,5.0
@@ -119,3 +121,5 @@ permalink: /kb/187/Q187393/
 	
 	=============================================================================
 	
+
+{% endraw %}

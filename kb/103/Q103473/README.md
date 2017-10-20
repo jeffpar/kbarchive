@@ -6,6 +6,8 @@ permalink: /kb/103/Q103473/
 
 ## Q103473: SFM: MacFile Menu Not Displayed if NTAS Drive Letter Changes
 
+{% raw %}
+
 	Article: Q103473
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -72,3 +74,5 @@ permalink: /kb/103/Q103473/
 	
 	=============================================================================
 	
+
+{% endraw %}

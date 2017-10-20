@@ -6,6 +6,8 @@ permalink: /kb/140/Q140284/
 
 ## Q140284: Bidirectional Printers Supported in Windows 95
 
+{% raw %}
+
 	Article: Q140284
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -94,3 +96,5 @@ permalink: /kb/140/Q140284/
 	
 	=============================================================================
 	
+
+{% endraw %}

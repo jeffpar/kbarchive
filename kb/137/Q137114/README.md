@@ -6,6 +6,8 @@ permalink: /kb/137/Q137114/
 
 ## Q137114: Can't Access Compact Disc If Wrong Speed Set in Windows 95
 
+{% raw %}
+
 	Article: Q137114
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0 on CD-ROM,4.2-CD,4.3-CD,7.0; :2.0 on CD-ROM,2.0a on CD-ROM; Win95:7.0
@@ -88,3 +90,5 @@ permalink: /kb/137/Q137114/
 	
 	=============================================================================
 	
+
+{% endraw %}

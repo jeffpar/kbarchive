@@ -6,6 +6,8 @@ permalink: /kb/182/Q182280/
 
 ## Q182280: XADM: Store Crashes After Upgrade to 5.0 SP2 on Windows NT 3.51
 
+{% raw %}
+
 	Article: Q182280
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -113,3 +115,5 @@ permalink: /kb/182/Q182280/
 	
 	=============================================================================
 	
+
+{% endraw %}

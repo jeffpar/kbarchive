@@ -6,6 +6,8 @@ permalink: /kb/156/Q156742/
 
 ## Q156742: INFO: STL Sample for the replace_copy Function
 
+{% raw %}
+
 	Article: Q156742
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -191,3 +193,5 @@ permalink: /kb/156/Q156742/
 	
 	=============================================================================
 	
+
+{% endraw %}

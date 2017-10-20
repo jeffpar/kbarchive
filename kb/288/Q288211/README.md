@@ -6,6 +6,8 @@ permalink: /kb/288/Q288211/
 
 ## Q288211: XFOR: Addresses for Migrated GroupWise Mail May Appear Truncated
 
+{% raw %}
+
 	Article: Q288211
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -75,3 +77,5 @@ permalink: /kb/288/Q288211/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126552/
 
 ## Q126552: INF: Performance Considerations with the ODBC Access 2.0 Drive
 
+{% raw %}
+
 	Article: Q126552
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -233,3 +235,5 @@ permalink: /kb/126/Q126552/
 	
 	=============================================================================
 	
+
+{% endraw %}

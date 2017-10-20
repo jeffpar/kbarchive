@@ -6,6 +6,8 @@ permalink: /kb/126/Q126890/
 
 ## Q126890: PC WSPlus: Schedule+ Does Not Remember Print Margin Units
 
+{% raw %}
+
 	Article: Q126890
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -42,3 +44,5 @@ permalink: /kb/126/Q126890/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153025/
 
 ## Q153025: FIX: Microsoft Excel 95 Doesn't Respond Correctly to GetObject
 
+{% raw %}
+
 	Article: Q153025
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,7.0
@@ -126,3 +128,5 @@ permalink: /kb/153/Q153025/
 	
 	=============================================================================
 	
+
+{% endraw %}

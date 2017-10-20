@@ -6,6 +6,8 @@ permalink: /kb/134/Q134536/
 
 ## Q134536: APM 1.0 Systems May Not Save and Restore All Hardware States
 
+{% raw %}
+
 	Article: Q134536
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/134/Q134536/
 	
 	=============================================================================
 	
+
+{% endraw %}

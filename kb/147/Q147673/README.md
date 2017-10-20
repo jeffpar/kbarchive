@@ -6,6 +6,8 @@ permalink: /kb/147/Q147673/
 
 ## Q147673: HOWTO: Determine Selected Control from Array of Option Buttons
 
+{% raw %}
+
 	Article: Q147673
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/147/Q147673/
 	
 	=============================================================================
 	
+
+{% endraw %}

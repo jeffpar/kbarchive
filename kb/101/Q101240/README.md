@@ -6,6 +6,8 @@ permalink: /kb/101/Q101240/
 
 ## Q101240: DBLSPACE Msg: Drive X Already Has an Estimated Compression...
 
+{% raw %}
+
 	Article: Q101240
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -62,3 +64,5 @@ permalink: /kb/101/Q101240/
 	
 	=============================================================================
 	
+
+{% endraw %}

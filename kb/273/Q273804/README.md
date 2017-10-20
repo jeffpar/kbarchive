@@ -6,6 +6,8 @@ permalink: /kb/273/Q273804/
 
 ## Q273804: SMS Supports Windows Millennium Edition as a Client Platform
 
+{% raw %}
+
 	Article: Q273804
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -41,3 +43,5 @@ permalink: /kb/273/Q273804/
 	
 	=============================================================================
 	
+
+{% endraw %}

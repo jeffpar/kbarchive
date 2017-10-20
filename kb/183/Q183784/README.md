@@ -6,6 +6,8 @@ permalink: /kb/183/Q183784/
 
 ## Q183784: FP: How to Use Hidden Fields in a Form With FrontPage
 
+{% raw %}
+
 	Article: Q183784
 	Product(s): Word Front Page
 	Version(s): MACINTOSH:1.0; WINDOWS:1.1,97
@@ -131,3 +133,5 @@ permalink: /kb/183/Q183784/
 	
 	=============================================================================
 	
+
+{% endraw %}

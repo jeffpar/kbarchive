@@ -6,6 +6,8 @@ permalink: /kb/172/Q172256/
 
 ## Q172256: FIX: RISC: CByte Doesn't Fail on Negative Values in Native Exe
 
+{% raw %}
+
 	Article: Q172256
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97
@@ -68,3 +70,5 @@ permalink: /kb/172/Q172256/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/200/Q200586/
 
 ## Q200586: SMS: RC Being Accessed Icon Appears Inappropriately
 
+{% raw %}
+
 	Article: Q200586
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -62,3 +64,5 @@ permalink: /kb/200/Q200586/
 	
 	=============================================================================
 	
+
+{% endraw %}

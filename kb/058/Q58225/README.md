@@ -6,6 +6,8 @@ permalink: /kb/058/Q58225/
 
 ## Q58225: &quot;Packed File Corrupt&quot; Error
 
+{% raw %}
+
 	Article: Q58225
 	Product(s): See article
 	Version(s): 3.x 4.x
@@ -58,3 +60,5 @@ permalink: /kb/058/Q58225/
 	manual or online help shipped with your particular version of the
 	compiler or assembler.
 	Additional reference words: b_quickbasic o_msdos h_mouse h_mspbrush
+
+{% endraw %}

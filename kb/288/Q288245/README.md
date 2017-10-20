@@ -6,6 +6,8 @@ permalink: /kb/288/Q288245/
 
 ## Q288245: PRB: Global.asa Does Not Fire from Personal Web Server
 
+{% raw %}
+
 	Article: Q288245
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,6.0
@@ -86,3 +88,5 @@ permalink: /kb/288/Q288245/
 	
 	=============================================================================
 	
+
+{% endraw %}

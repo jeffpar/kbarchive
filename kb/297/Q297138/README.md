@@ -6,6 +6,8 @@ permalink: /kb/297/Q297138/
 
 ## Q297138: Cannot Open The Phone Book File In MSN Explorer
 
+{% raw %}
+
 	Article: Q297138
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -86,3 +88,5 @@ permalink: /kb/297/Q297138/
 	
 	=============================================================================
 	
+
+{% endraw %}

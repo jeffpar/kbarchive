@@ -6,6 +6,8 @@ permalink: /kb/131/Q131533/
 
 ## Q131533: How to Modify the Win.ini File in Windows 95/98
 
+{% raw %}
+
 	Article: Q131533
 	Product(s): Microsoft Home Miscellaneous Products
 	Version(s): WINDOWS:95
@@ -65,3 +67,5 @@ permalink: /kb/131/Q131533/
 	
 	=============================================================================
 	
+
+{% endraw %}

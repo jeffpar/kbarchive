@@ -6,6 +6,8 @@ permalink: /kb/139/Q139028/
 
 ## Q139028: FIX: Incomplete pragma Directive May Cause C1001 Error
 
+{% raw %}
+
 	Article: Q139028
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -109,3 +111,5 @@ permalink: /kb/139/Q139028/
 	
 	=============================================================================
 	
+
+{% endraw %}

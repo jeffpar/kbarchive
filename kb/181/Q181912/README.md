@@ -6,6 +6,8 @@ permalink: /kb/181/Q181912/
 
 ## Q181912: PRB: FlexGrid Control Does Not Highlight Whole Row
 
+{% raw %}
+
 	Article: Q181912
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -88,3 +90,5 @@ permalink: /kb/181/Q181912/
 	
 	=============================================================================
 	
+
+{% endraw %}

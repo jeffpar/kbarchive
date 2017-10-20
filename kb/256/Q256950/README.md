@@ -6,6 +6,8 @@ permalink: /kb/256/Q256950/
 
 ## Q256950: SMS: Cannot Schedule Crystal Report on Windows 2000 Server
 
+{% raw %}
+
 	Article: Q256950
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -64,3 +66,5 @@ permalink: /kb/256/Q256950/
 	
 	=============================================================================
 	
+
+{% endraw %}

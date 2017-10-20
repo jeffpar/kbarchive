@@ -6,6 +6,8 @@ permalink: /kb/174/Q174241/
 
 ## Q174241: MSN Setup Stops Responding While Downloading Components
 
+{% raw %}
+
 	Article: Q174241
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5
@@ -94,3 +96,5 @@ permalink: /kb/174/Q174241/
 	
 	=============================================================================
 	
+
+{% endraw %}

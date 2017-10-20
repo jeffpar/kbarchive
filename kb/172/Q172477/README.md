@@ -6,6 +6,8 @@ permalink: /kb/172/Q172477/
 
 ## Q172477: DNS Manager Hangs While Displaying Zone Information
 
+{% raw %}
+
 	Article: Q172477
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/172/Q172477/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186908/
 
 ## Q186908: HOWTO: Determine When Your Application Gains or Loses Focus
 
+{% raw %}
+
 	Article: Q186908
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -153,3 +155,5 @@ permalink: /kb/186/Q186908/
 	
 	=============================================================================
 	
+
+{% endraw %}

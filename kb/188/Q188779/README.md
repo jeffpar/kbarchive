@@ -6,6 +6,8 @@ permalink: /kb/188/Q188779/
 
 ## Q188779: SMS: Inventory Fails to Properly Identify 400 MHz Processors
 
+{% raw %}
+
 	Article: Q188779
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -93,3 +95,5 @@ permalink: /kb/188/Q188779/
 	
 	=============================================================================
 	
+
+{% endraw %}

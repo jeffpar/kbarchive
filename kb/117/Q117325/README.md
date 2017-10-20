@@ -6,6 +6,8 @@ permalink: /kb/117/Q117325/
 
 ## Q117325: C++ Tutorial Removed from Visual C++ Product
 
+{% raw %}
+
 	Article: Q117325
 	Product(s): Microsoft C Compiler
 	Version(s): 1.00 1.50 | 1.00 2.00 4.00
@@ -45,3 +47,5 @@ permalink: /kb/117/Q117325/
 	
 	=============================================================================
 	
+
+{% endraw %}

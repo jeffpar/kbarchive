@@ -6,6 +6,8 @@ permalink: /kb/178/Q178355/
 
 ## Q178355: WD97: How to Simulate a Vertical Text Flip for a &quot;Tent&quot; Page
 
+{% raw %}
+
 	Article: Q178355
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/178/Q178355/
 	
 	=============================================================================
 	
+
+{% endraw %}

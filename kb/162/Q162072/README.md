@@ -6,6 +6,8 @@ permalink: /kb/162/Q162072/
 
 ## Q162072: FIX: SELECT - SQL from Table with 252 Fields Causes Page Fault
 
+{% raw %}
+
 	Article: Q162072
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -89,3 +91,5 @@ permalink: /kb/162/Q162072/
 	
 	=============================================================================
 	
+
+{% endraw %}

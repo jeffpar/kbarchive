@@ -6,6 +6,8 @@ permalink: /kb/142/Q142110/
 
 ## Q142110: MSB: ErrMsg: Not Enough Printer Memory on HPDJ 1200C
 
+{% raw %}
+
 	Article: Q142110
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/142/Q142110/
 	
 	=============================================================================
 	
+
+{% endraw %}

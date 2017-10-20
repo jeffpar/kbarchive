@@ -6,6 +6,8 @@ permalink: /kb/155/Q155509/
 
 ## Q155509: XADM: Restore Exchange When Site or Organization Name Is Unknown
 
+{% raw %}
+
 	Article: Q155509
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -215,3 +217,5 @@ permalink: /kb/155/Q155509/
 	
 	=============================================================================
 	
+
+{% endraw %}

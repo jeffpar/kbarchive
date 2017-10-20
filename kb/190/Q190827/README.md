@@ -6,6 +6,8 @@ permalink: /kb/190/Q190827/
 
 ## Q190827: Unable to View Windows 95/98 Server from Windows NT
 
+{% raw %}
+
 	Article: Q190827
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.51,4.0
@@ -91,3 +93,5 @@ permalink: /kb/190/Q190827/
 	
 	=============================================================================
 	
+
+{% endraw %}

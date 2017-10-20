@@ -6,6 +6,8 @@ permalink: /kb/319/Q319795/
 
 ## Q319795: PRB: Run-Time Error Occurs on Open of Encarta Interactivities
 
+{% raw %}
+
 	Article: Q319795
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -108,3 +110,5 @@ permalink: /kb/319/Q319795/
 	
 	=============================================================================
 	
+
+{% endraw %}

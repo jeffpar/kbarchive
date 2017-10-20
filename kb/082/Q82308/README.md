@@ -6,6 +6,8 @@ permalink: /kb/082/Q82308/
 
 ## Q82308: Using SMARTDrive 4.0 with QuarterDecks DesqView
 
+{% raw %}
+
 	Article: Q82308
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -34,3 +36,5 @@ permalink: /kb/082/Q82308/
 	
 	=============================================================================
 	
+
+{% endraw %}

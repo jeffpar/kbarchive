@@ -6,6 +6,8 @@ permalink: /kb/158/Q158292/
 
 ## Q158292: SMS: Using Policies May Cause SMS Setup to Fail
 
+{% raw %}
+
 	Article: Q158292
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -84,3 +86,5 @@ permalink: /kb/158/Q158292/
 	
 	=============================================================================
 	
+
+{% endraw %}

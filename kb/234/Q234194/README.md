@@ -6,6 +6,8 @@ permalink: /kb/234/Q234194/
 
 ## Q234194: BUG: Conflicting Versions of MFC Stop Responding Upon Shutdown
 
+{% raw %}
+
 	Article: Q234194
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.0a,4.1,4.2,4.2b,5.0,5.0sp1,5.0sp2,5.0sp3
@@ -178,3 +180,5 @@ permalink: /kb/234/Q234194/
 	
 	=============================================================================
 	
+
+{% endraw %}

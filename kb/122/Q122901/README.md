@@ -6,6 +6,8 @@ permalink: /kb/122/Q122901/
 
 ## Q122901: Datarace RediModem Modem Error from RAS
 
+{% raw %}
+
 	Article: Q122901
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/122/Q122901/
 	
 	=============================================================================
 	
+
+{% endraw %}

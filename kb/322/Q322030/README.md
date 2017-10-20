@@ -6,6 +6,8 @@ permalink: /kb/322/Q322030/
 
 ## Q322030: How To Add A Web-based Hotmail E-mail Account To Outlook Express
 
+{% raw %}
+
 	Article: Q322030
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/322/Q322030/
 	
 	=============================================================================
 	
+
+{% endraw %}

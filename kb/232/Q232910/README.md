@@ -6,6 +6,8 @@ permalink: /kb/232/Q232910/
 
 ## Q232910: Error 1044 When Attempting to Create a New Cluster
 
+{% raw %}
+
 	Article: Q232910
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -50,3 +52,5 @@ permalink: /kb/232/Q232910/
 	
 	=============================================================================
 	
+
+{% endraw %}

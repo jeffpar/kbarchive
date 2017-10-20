@@ -6,6 +6,8 @@ permalink: /kb/168/Q168369/
 
 ## Q168369: Kids Plus: No Sound After Installing Microsoft Plus! For Kids
 
+{% raw %}
+
 	Article: Q168369
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -83,3 +85,5 @@ permalink: /kb/168/Q168369/
 	
 	=============================================================================
 	
+
+{% endraw %}

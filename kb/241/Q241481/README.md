@@ -6,6 +6,8 @@ permalink: /kb/241/Q241481/
 
 ## Q241481: BUG: Internal Protection Fault When Using Format Function
 
+{% raw %}
+
 	Article: Q241481
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -91,3 +93,5 @@ permalink: /kb/241/Q241481/
 	
 	=============================================================================
 	
+
+{% endraw %}

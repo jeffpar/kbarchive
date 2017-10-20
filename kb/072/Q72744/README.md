@@ -6,6 +6,8 @@ permalink: /kb/072/Q72744/
 
 ## Q72744: Determining That SHARE Is Loaded Under Microsoft Windows
 
+{% raw %}
+
 	Article: Q72744
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -72,3 +74,5 @@ permalink: /kb/072/Q72744/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/109/Q109481/
 
 ## Q109481: How to Strip Linefeeds from Exported (.TXT) Files
 
+{% raw %}
+
 	Article: Q109481
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5,3.0b
@@ -49,3 +51,5 @@ permalink: /kb/109/Q109481/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172705/
 
 ## Q172705: Explorer Access Violates When Viewing a File's Properties
 
+{% raw %}
+
 	Article: Q172705
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/172/Q172705/
 	
 	=============================================================================
 	
+
+{% endraw %}

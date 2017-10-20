@@ -6,6 +6,8 @@ permalink: /kb/153/Q153815/
 
 ## Q153815: XCLN: Exchange Client Cannot Send Mail Across Router
 
+{% raw %}
+
 	Article: Q153815
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -68,3 +70,5 @@ permalink: /kb/153/Q153815/
 	
 	=============================================================================
 	
+
+{% endraw %}

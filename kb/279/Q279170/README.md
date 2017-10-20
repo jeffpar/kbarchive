@@ -6,6 +6,8 @@ permalink: /kb/279/Q279170/
 
 ## Q279170: Problem with Command-Line FTP Client and Long File Names
 
+{% raw %}
+
 	Article: Q279170
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -53,3 +55,5 @@ permalink: /kb/279/Q279170/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130373/
 
 ## Q130373: Obtaining Package ID from Within a Microsoft Test Script
 
+{% raw %}
+
 	Article: Q130373
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -42,3 +44,5 @@ permalink: /kb/130/Q130373/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/057/Q57343/
 
 ## Q57343: SCREEN Statement Correction for SCREEN 3 and 4 in PDS 7.00
 
+{% raw %}
+
 	Article: Q57343
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -40,3 +42,5 @@ permalink: /kb/057/Q57343/
 	   - 80 x 25 text format, 8 x 16 character box
 	   - 1 of 16 colors assigned as the foreground color (selected by
 	     the COLOR statement); background is fixed at black
+
+{% endraw %}

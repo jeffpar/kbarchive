@@ -6,6 +6,8 @@ permalink: /kb/199/Q199320/
 
 ## Q199320: DNS Forwarders Disappear Even with SP3 Applied
 
+{% raw %}
+
 	Article: Q199320
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/199/Q199320/
 	
 	=============================================================================
 	
+
+{% endraw %}

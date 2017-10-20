@@ -6,6 +6,8 @@ permalink: /kb/143/Q143140/
 
 ## Q143140: Using Ipxroute to Determine IPX Address and Computer Name
 
+{% raw %}
+
 	Article: Q143140
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -61,3 +63,5 @@ permalink: /kb/143/Q143140/
 	
 	=============================================================================
 	
+
+{% endraw %}

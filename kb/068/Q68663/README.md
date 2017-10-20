@@ -6,6 +6,8 @@ permalink: /kb/068/Q68663/
 
 ## Q68663: Passing BASIC Numeric Arrays from BASIC to C and Back to BASIC
 
+{% raw %}
+
 	Article: Q68663
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -156,3 +158,5 @@ permalink: /kb/068/Q68663/
 	 Modified Last Array Elements
 	
 	  3             4.45          30.303        445
+
+{% endraw %}

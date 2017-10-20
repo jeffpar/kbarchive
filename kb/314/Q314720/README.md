@@ -6,6 +6,8 @@ permalink: /kb/314/Q314720/
 
 ## Q314720: INFO: Windows XP Includes a New Version of Msvbvm60.DLL
 
+{% raw %}
+
 	Article: Q314720
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -79,3 +81,5 @@ permalink: /kb/314/Q314720/
 	
 	=============================================================================
 	
+
+{% endraw %}

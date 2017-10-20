@@ -6,6 +6,8 @@ permalink: /kb/187/Q187907/
 
 ## Q187907: BUG: SDI Form Fails to Get Focus With _Screen.Visible=.F.
 
+{% raw %}
+
 	Article: Q187907
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -74,3 +76,5 @@ permalink: /kb/187/Q187907/
 	
 	=============================================================================
 	
+
+{% endraw %}

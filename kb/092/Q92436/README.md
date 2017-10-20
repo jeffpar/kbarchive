@@ -6,6 +6,8 @@ permalink: /kb/092/Q92436/
 
 ## Q92436: SAMPLE: Demonstration of Using _fmalloc
 
+{% raw %}
+
 	Article: Q92436
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -69,3 +71,5 @@ permalink: /kb/092/Q92436/
 	
 	=============================================================================
 	
+
+{% endraw %}

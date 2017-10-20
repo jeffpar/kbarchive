@@ -6,6 +6,8 @@ permalink: /kb/156/Q156561/
 
 ## Q156561: Error: Data Misalignment in MapiServ.exe
 
+{% raw %}
+
 	Article: Q156561
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.51
@@ -53,3 +55,5 @@ permalink: /kb/156/Q156561/
 	
 	=============================================================================
 	
+
+{% endraw %}

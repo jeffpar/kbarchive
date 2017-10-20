@@ -6,6 +6,8 @@ permalink: /kb/174/Q174038/
 
 ## Q174038: XWEB: Tentative and Accepted Meeting Icons Identical in OWA
 
+{% raw %}
+
 	Article: Q174038
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -52,3 +54,5 @@ permalink: /kb/174/Q174038/
 	
 	=============================================================================
 	
+
+{% endraw %}

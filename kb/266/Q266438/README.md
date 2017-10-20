@@ -6,6 +6,8 @@ permalink: /kb/266/Q266438/
 
 ## Q266438: SMS: How to Query - IP Subnets in Systems Management Server 2.0
 
+{% raw %}
+
 	Article: Q266438
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -74,3 +76,5 @@ permalink: /kb/266/Q266438/
 	
 	=============================================================================
 	
+
+{% endraw %}

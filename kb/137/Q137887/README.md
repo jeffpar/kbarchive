@@ -6,6 +6,8 @@ permalink: /kb/137/Q137887/
 
 ## Q137887: Fury Err Msg: The Fury3 CD Is Not Correctly Inserted
 
+{% raw %}
+
 	Article: Q137887
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -71,3 +73,5 @@ permalink: /kb/137/Q137887/
 	
 	=============================================================================
 	
+
+{% endraw %}

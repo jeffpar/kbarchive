@@ -6,6 +6,8 @@ permalink: /kb/074/Q74048/
 
 ## Q74048: Running Excel 2.1 with Run-time Windows and MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q74048
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -67,3 +69,5 @@ permalink: /kb/074/Q74048/
 	
 	=============================================================================
 	
+
+{% endraw %}

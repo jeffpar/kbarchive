@@ -6,6 +6,8 @@ permalink: /kb/100/Q100194/
 
 ## Q100194: PRB: Some ATI Video Drivers Hang When Using MSOUTLIN.VBX
 
+{% raw %}
+
 	Article: Q100194
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -52,3 +54,5 @@ permalink: /kb/100/Q100194/
 	
 	=============================================================================
 	
+
+{% endraw %}

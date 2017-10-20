@@ -6,6 +6,8 @@ permalink: /kb/146/Q146398/
 
 ## Q146398: XCLN: PAB with .MMF Extension Is Not Recognized
 
+{% raw %}
+
 	Article: Q146398
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -58,3 +60,5 @@ permalink: /kb/146/Q146398/
 	
 	=============================================================================
 	
+
+{% endraw %}

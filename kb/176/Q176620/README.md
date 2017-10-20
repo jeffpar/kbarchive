@@ -6,6 +6,8 @@ permalink: /kb/176/Q176620/
 
 ## Q176620: WD97: Incorrect Result with Quotation Marks in Conditional Merge
 
+{% raw %}
+
 	Article: Q176620
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -94,3 +96,5 @@ permalink: /kb/176/Q176620/
 	
 	=============================================================================
 	
+
+{% endraw %}

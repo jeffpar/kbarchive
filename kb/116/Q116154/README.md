@@ -6,6 +6,8 @@ permalink: /kb/116/Q116154/
 
 ## Q116154: Source File Attribute Changes When Copying in Real Mode
 
+{% raw %}
+
 	Article: Q116154
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -54,3 +56,5 @@ permalink: /kb/116/Q116154/
 	
 	=============================================================================
 	
+
+{% endraw %}

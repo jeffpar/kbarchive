@@ -6,6 +6,8 @@ permalink: /kb/267/Q267869/
 
 ## Q267869: Windows NT 4.0 SP 6 May Make Empty Folder Structure C:&#92;Inetpub
 
+{% raw %}
+
 	Article: Q267869
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/267/Q267869/
 	
 	=============================================================================
 	
+
+{% endraw %}

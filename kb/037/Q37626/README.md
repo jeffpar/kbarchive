@@ -6,6 +6,8 @@ permalink: /kb/037/Q37626/
 
 ## Q37626: _malloc Should Be malloc in Reference Manual
 
+{% raw %}
+
 	Article: Q37626
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -23,3 +25,5 @@ permalink: /kb/037/Q37626/
 	It should state the following:
 	
 	   The malloc and _nmalloc functions...
+
+{% endraw %}

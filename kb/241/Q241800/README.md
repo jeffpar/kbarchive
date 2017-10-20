@@ -6,6 +6,8 @@ permalink: /kb/241/Q241800/
 
 ## Q241800: &quot;STOP&quot; Error Message When Using Solstice 3.2
 
+{% raw %}
+
 	Article: Q241800
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/241/Q241800/
 	
 	=============================================================================
 	
+
+{% endraw %}

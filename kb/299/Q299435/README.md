@@ -6,6 +6,8 @@ permalink: /kb/299/Q299435/
 
 ## Q299435: Cannot Run SMS Service Manager After You Apply a Hotfix
 
+{% raw %}
+
 	Article: Q299435
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3
@@ -138,3 +140,5 @@ permalink: /kb/299/Q299435/
 	
 	=============================================================================
 	
+
+{% endraw %}

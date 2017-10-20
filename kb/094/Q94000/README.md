@@ -6,6 +6,8 @@ permalink: /kb/094/Q94000/
 
 ## Q94000: TrueType Font Pack 2 for Windows v.1 Disks (3.5 Inch, 1.44 MB)
 
+{% raw %}
+
 	Article: Q94000
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -196,3 +198,5 @@ permalink: /kb/094/Q94000/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248698/
 
 ## Q248698: MPRSHUT.EXE - DLL Initialization Message During Shutdown
 
+{% raw %}
+
 	Article: Q248698
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/248/Q248698/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178329/
 
 ## Q178329: Generated COBOL Data-Names Not Accessible in COBOL Program
 
+{% raw %}
+
 	Article: Q178329
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0
@@ -108,3 +110,5 @@ permalink: /kb/178/Q178329/
 	
 	=============================================================================
 	
+
+{% endraw %}

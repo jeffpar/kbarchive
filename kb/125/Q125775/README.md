@@ -6,6 +6,8 @@ permalink: /kb/125/Q125775/
 
 ## Q125775: Cannot Print Definitions from TechNet CD Glossary
 
+{% raw %}
+
 	Article: Q125775
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): February 1995 edition,January 1995  edition
@@ -66,3 +68,5 @@ permalink: /kb/125/Q125775/
 	
 	=============================================================================
 	
+
+{% endraw %}

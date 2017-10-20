@@ -6,6 +6,8 @@ permalink: /kb/167/Q167219/
 
 ## Q167219: WD97: Word Hangs When You Open Version of Protected Document
 
+{% raw %}
+
 	Article: Q167219
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -84,3 +86,5 @@ permalink: /kb/167/Q167219/
 	
 	=============================================================================
 	
+
+{% endraw %}

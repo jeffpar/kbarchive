@@ -6,6 +6,8 @@ permalink: /kb/245/Q245594/
 
 ## Q245594: How to Reinstall BackOffice 4.5 Suite Components
 
+{% raw %}
+
 	Article: Q245594
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -75,3 +77,5 @@ permalink: /kb/245/Q245594/
 	
 	=============================================================================
 	
+
+{% endraw %}

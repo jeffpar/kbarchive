@@ -6,6 +6,8 @@ permalink: /kb/042/Q42474/
 
 ## Q42474: &quot;Array Not Defined&quot;; Must DIMension Array Above Its First Use
 
+{% raw %}
+
 	Article: Q42474
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -44,3 +46,5 @@ permalink: /kb/042/Q42474/
 	If the array is declared as dynamic by a COMMON statement, the error
 	does not occur. Placing the statement COMMON letterWidth!() after the
 	DEFINT A-Z line eliminates the error.
+
+{% endraw %}

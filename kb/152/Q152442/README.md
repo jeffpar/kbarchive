@@ -6,6 +6,8 @@ permalink: /kb/152/Q152442/
 
 ## Q152442: XADM: How to Populate the Display Name for the SA
 
+{% raw %}
+
 	Article: Q152442
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/152/Q152442/
 	
 	=============================================================================
 	
+
+{% endraw %}

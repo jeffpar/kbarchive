@@ -6,6 +6,8 @@ permalink: /kb/197/Q197471/
 
 ## Q197471: WD97: Options That Are Unavailable in Print Preview
 
+{% raw %}
+
 	Article: Q197471
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -70,3 +72,5 @@ permalink: /kb/197/Q197471/
 	
 	=============================================================================
 	
+
+{% endraw %}

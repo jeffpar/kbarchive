@@ -6,6 +6,8 @@ permalink: /kb/184/Q184143/
 
 ## Q184143: WD97: Some Characters Missing/Cut Off When Displayed on Screen
 
+{% raw %}
+
 	Article: Q184143
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -216,3 +218,5 @@ permalink: /kb/184/Q184143/
 	
 	=============================================================================
 	
+
+{% endraw %}

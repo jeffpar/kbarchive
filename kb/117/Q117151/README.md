@@ -6,6 +6,8 @@ permalink: /kb/117/Q117151/
 
 ## Q117151: BUG: Conditional Breakpoints On Double Variables Fail
 
+{% raw %}
+
 	Article: Q117151
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.1
@@ -85,3 +87,5 @@ permalink: /kb/117/Q117151/
 	
 	=============================================================================
 	
+
+{% endraw %}

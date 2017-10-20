@@ -6,6 +6,8 @@ permalink: /kb/146/Q146677/
 
 ## Q146677: Host Names Beginning With Digits Not Accepted in IMC
 
+{% raw %}
+
 	Article: Q146677
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -78,3 +80,5 @@ permalink: /kb/146/Q146677/
 	
 	=============================================================================
 	
+
+{% endraw %}

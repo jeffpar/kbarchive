@@ -6,6 +6,8 @@ permalink: /kb/198/Q198469/
 
 ## Q198469: XCLN: How to Rename the Inbox in Outlook
 
+{% raw %}
+
 	Article: Q198469
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,95,98; :8.01,8.02,8.03
@@ -69,3 +71,5 @@ permalink: /kb/198/Q198469/
 	
 	=============================================================================
 	
+
+{% endraw %}

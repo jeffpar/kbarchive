@@ -6,6 +6,8 @@ permalink: /kb/179/Q179839/
 
 ## Q179839: Encarta Virtual Globe: Pointer Jumps to Random Places on Screen
 
+{% raw %}
+
 	Article: Q179839
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -104,3 +106,5 @@ permalink: /kb/179/Q179839/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/063/Q63279/
 
 ## Q63279: Using the Clipper Program with Windows
 
+{% raw %}
+
 	Article: Q63279
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a
@@ -57,3 +59,5 @@ permalink: /kb/063/Q63279/
 	
 	=============================================================================
 	
+
+{% endraw %}

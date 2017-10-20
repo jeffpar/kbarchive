@@ -6,6 +6,8 @@ permalink: /kb/102/Q102534/
 
 ## Q102534: Disabled Servers Not Dimmed in Server Manager
 
+{% raw %}
+
 	Article: Q102534
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -60,3 +62,5 @@ permalink: /kb/102/Q102534/
 	
 	=============================================================================
 	
+
+{% endraw %}

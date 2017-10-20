@@ -6,6 +6,8 @@ permalink: /kb/185/Q185791/
 
 ## Q185791: STOP on DEC Miata and Rawhide Platforms Using Graphics Tablet
 
+{% raw %}
+
 	Article: Q185791
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0,4.0a
@@ -61,3 +63,5 @@ permalink: /kb/185/Q185791/
 	
 	=============================================================================
 	
+
+{% endraw %}

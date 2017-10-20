@@ -6,6 +6,8 @@ permalink: /kb/110/Q110194/
 
 ## Q110194: Kids: HP DeskJet 500/550C Omits Patterns
 
+{% raw %}
+
 	Article: Q110194
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a,3.0; :2.0
@@ -59,3 +61,5 @@ permalink: /kb/110/Q110194/
 	
 	=============================================================================
 	
+
+{% endraw %}

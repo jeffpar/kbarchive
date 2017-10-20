@@ -6,6 +6,8 @@ permalink: /kb/191/Q191003/
 
 ## Q191003: How to Use an Emergency Repair Disk with an Alpha-Based Computer
 
+{% raw %}
+
 	Article: Q191003
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -117,3 +119,5 @@ permalink: /kb/191/Q191003/
 	
 	=============================================================================
 	
+
+{% endraw %}

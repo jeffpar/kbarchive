@@ -6,6 +6,8 @@ permalink: /kb/176/Q176627/
 
 ## Q176627: XADM: Information Store Stops Unexpectedly
 
+{% raw %}
+
 	Article: Q176627
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -57,3 +59,5 @@ permalink: /kb/176/Q176627/
 	
 	=============================================================================
 	
+
+{% endraw %}

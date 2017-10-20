@@ -6,6 +6,8 @@ permalink: /kb/132/Q132848/
 
 ## Q132848: Dec Venturis PCI or ISAPNP Adapter Problems in Windows 95
 
+{% raw %}
+
 	Article: Q132848
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/132/Q132848/
 	
 	=============================================================================
 	
+
+{% endraw %}

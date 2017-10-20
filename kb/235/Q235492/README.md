@@ -6,6 +6,8 @@ permalink: /kb/235/Q235492/
 
 ## Q235492: RIP and OSPF Do Not Start Dial On Demand Connections
 
+{% raw %}
+
 	Article: Q235492
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -87,3 +89,5 @@ permalink: /kb/235/Q235492/
 	
 	=============================================================================
 	
+
+{% endraw %}

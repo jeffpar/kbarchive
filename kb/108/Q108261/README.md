@@ -6,6 +6,8 @@ permalink: /kb/108/Q108261/
 
 ## Q108261: Windows NT Hangs on Shutdown with Certain PCMCIA Devices
 
+{% raw %}
+
 	Article: Q108261
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -65,3 +67,5 @@ permalink: /kb/108/Q108261/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/226/Q226137/
 
 ## Q226137: XADM: Push Notifications Generated &amp; Skipped/Second in PerfMon
 
+{% raw %}
+
 	Article: Q226137
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -54,3 +56,5 @@ permalink: /kb/226/Q226137/
 	
 	=============================================================================
 	
+
+{% endraw %}

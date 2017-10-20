@@ -6,6 +6,8 @@ permalink: /kb/140/Q140482/
 
 ## Q140482: PPT7: Help Index Shows What's New in Word 95 Topic
 
+{% raw %}
+
 	Article: Q140482
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -67,3 +69,5 @@ permalink: /kb/140/Q140482/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173501/
 
 ## Q173501: WD97: Linked Picture Missing When Word 6.0/95 Document Reopened
 
+{% raw %}
+
 	Article: Q173501
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97; :Service Release 1 (SR-1)
@@ -172,3 +174,5 @@ permalink: /kb/173/Q173501/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157636/
 
 ## Q157636: HOWTO: Set Up Source Code Control with Visual SourceSafe
 
+{% raw %}
+
 	Article: Q157636
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -126,3 +128,5 @@ permalink: /kb/157/Q157636/
 	
 	=============================================================================
 	
+
+{% endraw %}

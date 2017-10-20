@@ -6,6 +6,8 @@ permalink: /kb/058/Q58790/
 
 ## Q58790: Limits for Nesting Arrays in TYPE Statements in BASIC 7.00
 
+{% raw %}
+
 	Article: Q58790
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -95,3 +97,5 @@ permalink: /kb/058/Q58790/
 	END TYPE
 	
 	DIM temp(100) as test238
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/076/Q76780/
 
 ## Q76780: README.TXT: General Notes About Applications
 
+{% raw %}
+
 	Article: Q76780
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.0
@@ -205,3 +207,5 @@ permalink: /kb/076/Q76780/
 	
 	=============================================================================
 	
+
+{% endraw %}

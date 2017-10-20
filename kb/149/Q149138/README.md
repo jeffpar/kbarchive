@@ -6,6 +6,8 @@ permalink: /kb/149/Q149138/
 
 ## Q149138: BUG: F6804 or F6511 Error with Spaces in Namelist Input File
 
+{% raw %}
+
 	Article: Q149138
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -100,3 +102,5 @@ permalink: /kb/149/Q149138/
 	
 	=============================================================================
 	
+
+{% endraw %}

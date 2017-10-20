@@ -6,6 +6,8 @@ permalink: /kb/171/Q171515/
 
 ## Q171515: FIX: Crash on Customization of Design Environment Menus
 
+{% raw %}
+
 	Article: Q171515
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -109,3 +111,5 @@ permalink: /kb/171/Q171515/
 	
 	=============================================================================
 	
+
+{% endraw %}

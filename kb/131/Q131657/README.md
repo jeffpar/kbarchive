@@ -6,6 +6,8 @@ permalink: /kb/131/Q131657/
 
 ## Q131657: Mac Encarta 95: Computer Hangs While Playing Video
 
+{% raw %}
+
 	Article: Q131657
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -51,3 +53,5 @@ permalink: /kb/131/Q131657/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170260/
 
 ## Q170260: MSB Rainforest: Areas to Click in Each Scene and Where You Go
 
+{% raw %}
+
 	Article: Q170260
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -168,3 +170,5 @@ permalink: /kb/170/Q170260/
 	
 	=============================================================================
 	
+
+{% endraw %}

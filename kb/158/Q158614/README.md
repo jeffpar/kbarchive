@@ -6,6 +6,8 @@ permalink: /kb/158/Q158614/
 
 ## Q158614: INFO: STL Sample for the Vector Class Using the operator== Funct
 
+{% raw %}
+
 	Article: Q158614
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -150,3 +152,5 @@ permalink: /kb/158/Q158614/
 	
 	=============================================================================
 	
+
+{% endraw %}

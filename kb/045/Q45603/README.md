@@ -6,6 +6,8 @@ permalink: /kb/045/Q45603/
 
 ## Q45603: Font Files Cannot Be Broken Apart
 
+{% raw %}
+
 	Article: Q45603
 	Product(s): See article
 	Version(s): 2.00
@@ -18,3 +20,5 @@ permalink: /kb/045/Q45603/
 	one particular font size from the file to create a single-size font
 	file. To work around this, you must create your own font
 	file via the use of the Windows font editor.
+
+{% endraw %}

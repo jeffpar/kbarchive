@@ -6,6 +6,8 @@ permalink: /kb/161/Q161948/
 
 ## Q161948: XCON: MTA NDRs Messages with Headers in P2 Part of Message
 
+{% raw %}
+
 	Article: Q161948
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/161/Q161948/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171491/
 
 ## Q171491: FIX: Mouse Button Value Is Always 4 in MouseUp Event of SSTab
 
+{% raw %}
+
 	Article: Q171491
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -99,3 +101,5 @@ permalink: /kb/171/Q171491/
 	
 	=============================================================================
 	
+
+{% endraw %}

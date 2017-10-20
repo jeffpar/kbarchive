@@ -6,6 +6,8 @@ permalink: /kb/081/Q81709/
 
 ## Q81709: Windows: Description of NEC P3200 Printer Driver, Emulation
 
+{% raw %}
+
 	Article: Q81709
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -44,3 +46,5 @@ permalink: /kb/081/Q81709/
 	
 	=============================================================================
 	
+
+{% endraw %}

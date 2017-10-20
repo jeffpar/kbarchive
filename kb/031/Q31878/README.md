@@ -6,6 +6,8 @@ permalink: /kb/031/Q31878/
 
 ## Q31878: Simplified Language for Compilers' Run-Time License Agreement
 
+{% raw %}
+
 	Article: Q31878
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -56,3 +58,5 @@ permalink: /kb/031/Q31878/
 	If you are interested in receiving a complete copy of the latest
 	run-time license agreement, contact the Microsoft Information Center
 	by calling (800) 426-9400 or (206) 882-8088.
+
+{% endraw %}

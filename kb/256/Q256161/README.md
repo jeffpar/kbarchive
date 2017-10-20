@@ -6,6 +6,8 @@ permalink: /kb/256/Q256161/
 
 ## Q256161: HOWTO: Get PCMCIA Socket Information
 
+{% raw %}
+
 	Article: Q256161
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -200,3 +202,5 @@ permalink: /kb/256/Q256161/
 	
 	=============================================================================
 	
+
+{% endraw %}

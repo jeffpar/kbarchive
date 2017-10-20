@@ -6,6 +6,8 @@ permalink: /kb/124/Q124122/
 
 ## Q124122: File Manager: Association Fails if Path to Command Has Spaces
 
+{% raw %}
+
 	Article: Q124122
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/124/Q124122/
 	
 	=============================================================================
 	
+
+{% endraw %}

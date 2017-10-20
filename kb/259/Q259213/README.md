@@ -6,6 +6,8 @@ permalink: /kb/259/Q259213/
 
 ## Q259213: XCLN: Journaling Configured, No Data in Outlook 97 &amp; Outlook 98
 
+{% raw %}
+
 	Article: Q259213
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:; :
@@ -90,3 +92,5 @@ permalink: /kb/259/Q259213/
 	
 	=============================================================================
 	
+
+{% endraw %}

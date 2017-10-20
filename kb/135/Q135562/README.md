@@ -6,6 +6,8 @@ permalink: /kb/135/Q135562/
 
 ## Q135562: FIX: Delete Trigger Fires Out of Order
 
+{% raw %}
+
 	Article: Q135562
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -148,3 +150,5 @@ permalink: /kb/135/Q135562/
 	
 	=============================================================================
 	
+
+{% endraw %}

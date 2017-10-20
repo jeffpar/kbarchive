@@ -6,6 +6,8 @@ permalink: /kb/129/Q129400/
 
 ## Q129400: FREE TABLE Command Removes Table from Corrupted Database
 
+{% raw %}
+
 	Article: Q129400
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -105,3 +107,5 @@ permalink: /kb/129/Q129400/
 	
 	=============================================================================
 	
+
+{% endraw %}

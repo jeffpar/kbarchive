@@ -6,6 +6,8 @@ permalink: /kb/258/Q258623/
 
 ## Q258623: Baseball 2001: Textures Turn White After You Change Resolution
 
+{% raw %}
+
 	Article: Q258623
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -61,3 +63,5 @@ permalink: /kb/258/Q258623/
 	
 	=============================================================================
 	
+
+{% endraw %}

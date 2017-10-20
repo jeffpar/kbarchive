@@ -6,6 +6,8 @@ permalink: /kb/127/Q127844/
 
 ## Q127844: PRB: Object that Received the Destroy Not Released
 
+{% raw %}
+
 	Article: Q127844
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/127/Q127844/
 	
 	=============================================================================
 	
+
+{% endraw %}

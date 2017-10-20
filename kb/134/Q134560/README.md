@@ -6,6 +6,8 @@ permalink: /kb/134/Q134560/
 
 ## Q134560: Newly Formatted Drive Does Not Support Long Filenames
 
+{% raw %}
+
 	Article: Q134560
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -86,3 +88,5 @@ permalink: /kb/134/Q134560/
 	
 	=============================================================================
 	
+
+{% endraw %}

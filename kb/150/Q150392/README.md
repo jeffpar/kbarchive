@@ -6,6 +6,8 @@ permalink: /kb/150/Q150392/
 
 ## Q150392: PRB: LoadLibrary &amp; FreeLibrary on MFC Regular DLL Leak Memory
 
+{% raw %}
+
 	Article: Q150392
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -195,3 +197,5 @@ permalink: /kb/150/Q150392/
 	
 	=============================================================================
 	
+
+{% endraw %}

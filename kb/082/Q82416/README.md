@@ -6,6 +6,8 @@ permalink: /kb/082/Q82416/
 
 ## Q82416: Characters Stretched on UPC/EAN Cartridge
 
+{% raw %}
+
 	Article: Q82416
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -44,3 +46,5 @@ permalink: /kb/082/Q82416/
 	
 	=============================================================================
 	
+
+{% endraw %}

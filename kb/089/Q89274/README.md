@@ -6,6 +6,8 @@ permalink: /kb/089/Q89274/
 
 ## Q89274: Running IBM PC LAN with Windows 3.0 and 3.1
 
+{% raw %}
+
 	Article: Q89274
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -94,3 +96,5 @@ permalink: /kb/089/Q89274/
 	
 	=============================================================================
 	
+
+{% endraw %}

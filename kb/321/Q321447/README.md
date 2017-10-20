@@ -6,6 +6,8 @@ permalink: /kb/321/Q321447/
 
 ## Q321447: Event ID 201:  No License Was Available
 
+{% raw %}
+
 	Article: Q321447
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -104,3 +106,5 @@ permalink: /kb/321/Q321447/
 	
 	=============================================================================
 	
+
+{% endraw %}

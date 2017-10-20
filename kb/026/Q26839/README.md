@@ -6,6 +6,8 @@ permalink: /kb/026/Q26839/
 
 ## Q26839: PRB: &quot;AT&quot; Combine Types
 
+{% raw %}
+
 	Article: Q26839
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a
@@ -69,3 +71,5 @@ permalink: /kb/026/Q26839/
 	
 	=============================================================================
 	
+
+{% endraw %}

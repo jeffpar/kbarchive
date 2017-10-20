@@ -6,6 +6,8 @@ permalink: /kb/118/Q118779/
 
 ## Q118779: Calling Microsoft Excel Macro from FoxPro for Macintosh
 
+{% raw %}
+
 	Article: Q118779
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -105,3 +107,5 @@ permalink: /kb/118/Q118779/
 	
 	=============================================================================
 	
+
+{% endraw %}

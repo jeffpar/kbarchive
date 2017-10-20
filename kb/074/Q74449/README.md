@@ -6,6 +6,8 @@ permalink: /kb/074/Q74449/
 
 ## Q74449: DOSSHELL.INI and Password Encryption
 
+{% raw %}
+
 	Article: Q74449
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -82,3 +84,5 @@ permalink: /kb/074/Q74449/
 	
 	=============================================================================
 	
+
+{% endraw %}

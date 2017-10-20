@@ -6,6 +6,8 @@ permalink: /kb/169/Q169681/
 
 ## Q169681: XCON: IMS Stops with Access Violation When Using Imcext.dll
 
+{% raw %}
+
 	Article: Q169681
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -83,3 +85,5 @@ permalink: /kb/169/Q169681/
 	
 	=============================================================================
 	
+
+{% endraw %}

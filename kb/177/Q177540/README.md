@@ -6,6 +6,8 @@ permalink: /kb/177/Q177540/
 
 ## Q177540: BUG: ODBC Trace Fails with Traditional Chinese version of VFP5
 
+{% raw %}
+
 	Article: Q177540
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,5.0,5.0a
@@ -72,3 +74,5 @@ permalink: /kb/177/Q177540/
 	
 	=============================================================================
 	
+
+{% endraw %}

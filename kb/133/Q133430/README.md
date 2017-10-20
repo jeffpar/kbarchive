@@ -6,6 +6,8 @@ permalink: /kb/133/Q133430/
 
 ## Q133430: CONN: Macintosh Desktop Database and Mail Performance
 
+{% raw %}
+
 	Article: Q133430
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.0,3.2
@@ -124,3 +126,5 @@ permalink: /kb/133/Q133430/
 	
 	=============================================================================
 	
+
+{% endraw %}

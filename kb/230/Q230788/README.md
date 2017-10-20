@@ -6,6 +6,8 @@ permalink: /kb/230/Q230788/
 
 ## Q230788: XADM: Using DSEXPORT to Obtain MTA Configuration Information
 
+{% raw %}
+
 	Article: Q230788
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -112,3 +114,5 @@ permalink: /kb/230/Q230788/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164852/
 
 ## Q164852: XCON: Attachments from HP OpenDesk May Not Open
 
+{% raw %}
+
 	Article: Q164852
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -135,3 +137,5 @@ permalink: /kb/164/Q164852/
 	
 	=============================================================================
 	
+
+{% endraw %}

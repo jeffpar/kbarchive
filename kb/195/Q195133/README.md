@@ -6,6 +6,8 @@ permalink: /kb/195/Q195133/
 
 ## Q195133: WD97: How to Replace Bold, Italic, or Underline Formatting
 
+{% raw %}
+
 	Article: Q195133
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -122,3 +124,5 @@ permalink: /kb/195/Q195133/
 	
 	=============================================================================
 	
+
+{% endraw %}

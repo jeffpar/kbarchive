@@ -6,6 +6,8 @@ permalink: /kb/299/Q299736/
 
 ## Q299736: Train Simulator: Vehicles Do Not Have Operating Headlamps
 
+{% raw %}
+
 	Article: Q299736
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -42,3 +44,5 @@ permalink: /kb/299/Q299736/
 	
 	=============================================================================
 	
+
+{% endraw %}

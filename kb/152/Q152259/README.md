@@ -6,6 +6,8 @@ permalink: /kb/152/Q152259/
 
 ## Q152259: HOWTO: Sync the StatusBar Text with the ToolTip Text
 
+{% raw %}
+
 	Article: Q152259
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -134,3 +136,5 @@ permalink: /kb/152/Q152259/
 	
 	=============================================================================
 	
+
+{% endraw %}

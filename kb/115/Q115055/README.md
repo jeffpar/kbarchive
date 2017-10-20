@@ -6,6 +6,8 @@ permalink: /kb/115/Q115055/
 
 ## Q115055: Function to Calculate Elapsed or Accumulated Time
 
+{% raw %}
+
 	Article: Q115055
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c; MS-DOS:1.02,2.0,2.5,2.5a,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0
@@ -142,3 +144,5 @@ permalink: /kb/115/Q115055/
 	
 	=============================================================================
 	
+
+{% endraw %}

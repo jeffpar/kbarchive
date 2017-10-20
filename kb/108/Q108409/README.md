@@ -6,6 +6,8 @@ permalink: /kb/108/Q108409/
 
 ## Q108409: BUG: Access Violation/Hang on Divide by Zero with Intrinsic
 
+{% raw %}
+
 	Article: Q108409
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -102,3 +104,5 @@ permalink: /kb/108/Q108409/
 	
 	=============================================================================
 	
+
+{% endraw %}

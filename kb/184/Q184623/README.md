@@ -6,6 +6,8 @@ permalink: /kb/184/Q184623/
 
 ## Q184623: XFOR: Keeping Notes Users and Groups Out of Dirsync
 
+{% raw %}
+
 	Article: Q184623
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:3.2,5.5
@@ -74,3 +76,5 @@ permalink: /kb/184/Q184623/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178398/
 
 ## Q178398: SssccSP2.exe: &quot;The Database is Unavailable...&quot; When Opening Proj
 
+{% raw %}
+
 	Article: Q178398
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0
@@ -181,3 +183,5 @@ permalink: /kb/178/Q178398/
 	
 	=============================================================================
 	
+
+{% endraw %}

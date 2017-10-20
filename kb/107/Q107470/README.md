@@ -6,6 +6,8 @@ permalink: /kb/107/Q107470/
 
 ## Q107470: Meaning of WFWShell Line in the SYSTEM.INI File
 
+{% raw %}
+
 	Article: Q107470
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -36,3 +38,5 @@ permalink: /kb/107/Q107470/
 	
 	=============================================================================
 	
+
+{% endraw %}

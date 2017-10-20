@@ -6,6 +6,8 @@ permalink: /kb/087/Q87461/
 
 ## Q87461: ErrMsg Installing Third-Party Applications: Isdel Not Launched
 
+{% raw %}
+
 	Article: Q87461
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -79,3 +81,5 @@ permalink: /kb/087/Q87461/
 	
 	=============================================================================
 	
+
+{% endraw %}

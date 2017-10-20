@@ -6,6 +6,8 @@ permalink: /kb/091/Q91678/
 
 ## Q91678: Read Fault Errors Accessing BackPack Drive in Windows
 
+{% raw %}
+
 	Article: Q91678
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11,6.0
@@ -78,3 +80,5 @@ permalink: /kb/091/Q91678/
 	
 	=============================================================================
 	
+
+{% endraw %}

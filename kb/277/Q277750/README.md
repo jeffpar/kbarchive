@@ -6,6 +6,8 @@ permalink: /kb/277/Q277750/
 
 ## Q277750: HOWTO: Set a Pushpin in MapPoint 2001 with the VB OLE Control
 
+{% raw %}
+
 	Article: Q277750
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -97,3 +99,5 @@ permalink: /kb/277/Q277750/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147352/
 
 ## Q147352: XCLN: Creating Default User Profiles
 
+{% raw %}
+
 	Article: Q147352
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -102,3 +104,5 @@ permalink: /kb/147/Q147352/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/303/Q303766/
 
 ## Q303766: Passport Custom Setup Components Disk Allocation Does Not Add Up
 
+{% raw %}
+
 	Article: Q303766
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4,1.99
@@ -49,3 +51,5 @@ permalink: /kb/303/Q303766/
 	
 	=============================================================================
 	
+
+{% endraw %}

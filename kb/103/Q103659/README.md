@@ -6,6 +6,8 @@ permalink: /kb/103/Q103659/
 
 ## Q103659: Setup Hangs While Inspecting Hardware; How to Use NTDETECT.COM
 
+{% raw %}
+
 	Article: Q103659
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -76,3 +78,5 @@ permalink: /kb/103/Q103659/
 	
 	=============================================================================
 	
+
+{% endraw %}

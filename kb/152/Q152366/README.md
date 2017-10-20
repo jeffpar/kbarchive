@@ -6,6 +6,8 @@ permalink: /kb/152/Q152366/
 
 ## Q152366: How To Add Calculator, Calendar, Puzzle, Filer to System Menu
 
+{% raw %}
+
 	Article: Q152366
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b
@@ -56,3 +58,5 @@ permalink: /kb/152/Q152366/
 	
 	=============================================================================
 	
+
+{% endraw %}

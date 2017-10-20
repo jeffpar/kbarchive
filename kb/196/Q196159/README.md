@@ -6,6 +6,8 @@ permalink: /kb/196/Q196159/
 
 ## Q196159: XADM: Event 1002 Starting the DS after Failing to Move a Server
 
+{% raw %}
+
 	Article: Q196159
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1
@@ -85,3 +87,5 @@ permalink: /kb/196/Q196159/
 	
 	=============================================================================
 	
+
+{% endraw %}

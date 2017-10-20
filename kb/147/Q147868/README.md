@@ -6,6 +6,8 @@ permalink: /kb/147/Q147868/
 
 ## Q147868: MSB Human: Launch MIDI Mapper Does Not Work
 
+{% raw %}
+
 	Article: Q147868
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a; WINDOWS:95
@@ -51,3 +53,5 @@ permalink: /kb/147/Q147868/
 	
 	=============================================================================
 	
+
+{% endraw %}

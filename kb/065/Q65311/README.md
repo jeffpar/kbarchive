@@ -6,6 +6,8 @@ permalink: /kb/065/Q65311/
 
 ## Q65311: Compiling C 5.10 Code with C 6.00 Can Cause Stack Overflow
 
+{% raw %}
+
 	Article: Q65311
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -18,3 +20,5 @@ permalink: /kb/065/Q65311/
 	space under C 5.10 will cause a stack overflow when compiled with C
 	6.00. This problem can be resolved by increasing the stack space by
 	using the /F compile option or the /ST linker option.
+
+{% endraw %}

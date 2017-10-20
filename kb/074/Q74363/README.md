@@ -6,6 +6,8 @@ permalink: /kb/074/Q74363/
 
 ## Q74363: PRB: Fatal Exit 0x00FF or 0xD000: MakeProcInstance Fails
 
+{% raw %}
+
 	Article: Q74363
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -56,3 +58,5 @@ permalink: /kb/074/Q74363/
 	
 	=============================================================================
 	
+
+{% endraw %}

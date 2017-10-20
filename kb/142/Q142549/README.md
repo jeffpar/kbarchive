@@ -6,6 +6,8 @@ permalink: /kb/142/Q142549/
 
 ## Q142549: How to Troubleshoot VFP OLE Memory Errors in 16-bit Windows
 
+{% raw %}
+
 	Article: Q142549
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -117,3 +119,5 @@ permalink: /kb/142/Q142549/
 	
 	=============================================================================
 	
+
+{% endraw %}

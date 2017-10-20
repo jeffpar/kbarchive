@@ -6,6 +6,8 @@ permalink: /kb/190/Q190967/
 
 ## Q190967: BUG: Changing Implemented Class Does Not Give Compatibility Erro
 
+{% raw %}
+
 	Article: Q190967
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/190/Q190967/
 	
 	=============================================================================
 	
+
+{% endraw %}

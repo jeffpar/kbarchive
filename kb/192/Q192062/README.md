@@ -6,6 +6,8 @@ permalink: /kb/192/Q192062/
 
 ## Q192062: CC: A Bridge Too Far Err Msg: Out of Command Data Space
 
+{% raw %}
+
 	Article: Q192062
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -83,3 +85,5 @@ permalink: /kb/192/Q192062/
 	
 	=============================================================================
 	
+
+{% endraw %}

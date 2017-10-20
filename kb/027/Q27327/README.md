@@ -6,6 +6,8 @@ permalink: /kb/027/Q27327/
 
 ## Q27327: Passing COMMON Variables from BASIC to C by Far Reference
 
+{% raw %}
+
 	Article: Q27327
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -64,3 +66,5 @@ permalink: /kb/027/Q27327/
 	Element1 = 23
 	Element2 = DATE : 02-02-1988
 	Element3 = 309.029999
+
+{% endraw %}

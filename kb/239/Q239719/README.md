@@ -6,6 +6,8 @@ permalink: /kb/239/Q239719/
 
 ## Q239719: INFO: Support Limits of MS Oracle ODBC Driver/OLEDB Provider
 
+{% raw %}
+
 	Article: Q239719
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.0,2.1,Build 2.573.2927,Build 2.573.3513,Build 2.573.3711,Build 2.573.4202
@@ -71,3 +73,5 @@ permalink: /kb/239/Q239719/
 	
 	=============================================================================
 	
+
+{% endraw %}

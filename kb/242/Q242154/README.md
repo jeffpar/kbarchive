@@ -6,6 +6,8 @@ permalink: /kb/242/Q242154/
 
 ## Q242154: Server Does Not Start with Stop c0000221 Error Message
 
+{% raw %}
+
 	Article: Q242154
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/242/Q242154/
 	
 	=============================================================================
 	
+
+{% endraw %}

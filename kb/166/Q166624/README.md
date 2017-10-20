@@ -6,6 +6,8 @@ permalink: /kb/166/Q166624/
 
 ## Q166624: XADM: Upgrading Active Server Page Scripts
 
+{% raw %}
+
 	Article: Q166624
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -53,3 +55,5 @@ permalink: /kb/166/Q166624/
 	
 	=============================================================================
 	
+
+{% endraw %}

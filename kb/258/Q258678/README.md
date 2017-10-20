@@ -6,6 +6,8 @@ permalink: /kb/258/Q258678/
 
 ## Q258678: XFOR: NDR Sending Mail To User Migrated From Lotus Notes
 
+{% raw %}
+
 	Article: Q258678
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -72,3 +74,5 @@ permalink: /kb/258/Q258678/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151176/
 
 ## Q151176: Policy Registry Entries (Default User)
 
+{% raw %}
+
 	Article: Q151176
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -135,3 +137,5 @@ permalink: /kb/151/Q151176/
 	
 	=============================================================================
 	
+
+{% endraw %}

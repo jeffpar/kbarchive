@@ -6,6 +6,8 @@ permalink: /kb/154/Q154809/
 
 ## Q154809: Error Changing Password with Multiple Network User Names
 
+{% raw %}
+
 	Article: Q154809
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -95,3 +97,5 @@ permalink: /kb/154/Q154809/
 	
 	=============================================================================
 	
+
+{% endraw %}

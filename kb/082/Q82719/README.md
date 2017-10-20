@@ -6,6 +6,8 @@ permalink: /kb/082/Q82719/
 
 ## Q82719: Windows 3.1 and NDW Do Not Agree on Free File Space
 
+{% raw %}
+
 	Article: Q82719
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/082/Q82719/
 	
 	=============================================================================
 	
+
+{% endraw %}

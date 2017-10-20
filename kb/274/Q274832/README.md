@@ -6,6 +6,8 @@ permalink: /kb/274/Q274832/
 
 ## Q274832: XGEN: Bugs Fixed in Exchange Server 5.5 Service Pack 4 (Part 1)
 
+{% raw %}
+
 	Article: Q274832
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP4
@@ -495,3 +497,5 @@ permalink: /kb/274/Q274832/
 	
 	=============================================================================
 	
+
+{% endraw %}

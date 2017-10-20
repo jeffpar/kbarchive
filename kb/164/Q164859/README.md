@@ -6,6 +6,8 @@ permalink: /kb/164/Q164859/
 
 ## Q164859: XFOR: Macintosh Attachments Over IMC Are Named Message.txt
 
+{% raw %}
+
 	Article: Q164859
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/164/Q164859/
 	
 	=============================================================================
 	
+
+{% endraw %}

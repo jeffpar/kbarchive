@@ -6,6 +6,8 @@ permalink: /kb/194/Q194146/
 
 ## Q194146: SMS: Scandinavian SQL Server Sort Orders Cause Inventory Probs.
 
+{% raw %}
+
 	Article: Q194146
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -140,3 +142,5 @@ permalink: /kb/194/Q194146/
 	
 	=============================================================================
 	
+
+{% endraw %}

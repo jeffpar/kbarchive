@@ -6,6 +6,8 @@ permalink: /kb/141/Q141000/
 
 ## Q141000: Multimedia: Black Screen or No Sound When Starting Program
 
+{% raw %}
+
 	Article: Q141000
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995
@@ -74,3 +76,5 @@ permalink: /kb/141/Q141000/
 	
 	=============================================================================
 	
+
+{% endraw %}

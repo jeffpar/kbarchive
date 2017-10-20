@@ -6,6 +6,8 @@ permalink: /kb/163/Q163805/
 
 ## Q163805: Comparison of Bookshelf 1996-97 with Bookshelf Basics
 
+{% raw %}
+
 	Article: Q163805
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/163/Q163805/
 	
 	=============================================================================
 	
+
+{% endraw %}

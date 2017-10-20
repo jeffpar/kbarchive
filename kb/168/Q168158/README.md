@@ -6,6 +6,8 @@ permalink: /kb/168/Q168158/
 
 ## Q168158: FIX: Can't Close Resultset if DBGrid Bound to RDC
 
+{% raw %}
+
 	Article: Q168158
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0 97
@@ -52,3 +54,5 @@ permalink: /kb/168/Q168158/
 	
 	=============================================================================
 	
+
+{% endraw %}

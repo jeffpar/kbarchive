@@ -6,6 +6,8 @@ permalink: /kb/192/Q192748/
 
 ## Q192748: XADM: Admin Program Quits Unexpectedly When Creating Newsfeed
 
+{% raw %}
+
 	Article: Q192748
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1
@@ -72,3 +74,5 @@ permalink: /kb/192/Q192748/
 	
 	=============================================================================
 	
+
+{% endraw %}

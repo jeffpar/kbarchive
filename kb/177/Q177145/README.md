@@ -6,6 +6,8 @@ permalink: /kb/177/Q177145/
 
 ## Q177145: PRB: Error Changing DynamicCurrentControl of Grid Column
 
+{% raw %}
+
 	Article: Q177145
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -80,3 +82,5 @@ permalink: /kb/177/Q177145/
 	
 	=============================================================================
 	
+
+{% endraw %}

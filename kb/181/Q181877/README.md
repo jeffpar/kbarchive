@@ -6,6 +6,8 @@ permalink: /kb/181/Q181877/
 
 ## Q181877: FIX: UserControl Not Printing Correctly From Access
 
+{% raw %}
+
 	Article: Q181877
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/181/Q181877/
 	
 	=============================================================================
 	
+
+{% endraw %}

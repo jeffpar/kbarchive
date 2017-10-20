@@ -6,6 +6,8 @@ permalink: /kb/085/Q85510/
 
 ## Q85510: CodeView Does Not Use Default Arguments for Functions
 
+{% raw %}
+
 	Article: Q85510
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.05,4.1
@@ -80,3 +82,5 @@ permalink: /kb/085/Q85510/
 	
 	=============================================================================
 	
+
+{% endraw %}

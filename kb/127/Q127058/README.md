@@ -6,6 +6,8 @@ permalink: /kb/127/Q127058/
 
 ## Q127058: Cannot Use Novell Network After Upgrading Compaq DOS
 
+{% raw %}
+
 	Article: Q127058
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/127/Q127058/
 	
 	=============================================================================
 	
+
+{% endraw %}

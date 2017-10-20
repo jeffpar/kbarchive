@@ -6,6 +6,8 @@ permalink: /kb/136/Q136335/
 
 ## Q136335: Active Event Logging Server Becomes Slow, Exhausts Paged Pool
 
+{% raw %}
+
 	Article: Q136335
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -64,3 +66,5 @@ permalink: /kb/136/Q136335/
 	
 	=============================================================================
 	
+
+{% endraw %}

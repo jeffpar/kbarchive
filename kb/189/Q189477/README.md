@@ -6,6 +6,8 @@ permalink: /kb/189/Q189477/
 
 ## Q189477: Linkutil.exe May Display Link Service Properties Incorrectly
 
+{% raw %}
+
 	Article: Q189477
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -62,3 +64,5 @@ permalink: /kb/189/Q189477/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/255/Q255687/
 
 ## Q255687: INFO: Support Guidelines for the System Stress Utility
 
+{% raw %}
+
 	Article: Q255687
 	Product(s): Microsoft Developer Network
 	Version(s): winnt:
@@ -60,3 +62,5 @@ permalink: /kb/255/Q255687/
 	
 	=============================================================================
 	
+
+{% endraw %}

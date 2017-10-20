@@ -6,6 +6,8 @@ permalink: /kb/134/Q134554/
 
 ## Q134554: cc:Mobile Hangs After Editing Modem Information
 
+{% raw %}
+
 	Article: Q134554
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -50,3 +52,5 @@ permalink: /kb/134/Q134554/
 	
 	=============================================================================
 	
+
+{% endraw %}

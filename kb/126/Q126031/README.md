@@ -6,6 +6,8 @@ permalink: /kb/126/Q126031/
 
 ## Q126031: PRB: Repeated Blank Screens During Build Process in VC++
 
+{% raw %}
+
 	Article: Q126031
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -204,3 +206,5 @@ permalink: /kb/126/Q126031/
 	
 	=============================================================================
 	
+
+{% endraw %}

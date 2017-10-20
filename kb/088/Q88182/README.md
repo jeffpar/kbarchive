@@ -6,6 +6,8 @@ permalink: /kb/088/Q88182/
 
 ## Q88182: Windows: PC Complete Scanner May Not Release COM Port
 
+{% raw %}
+
 	Article: Q88182
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -74,3 +76,5 @@ permalink: /kb/088/Q88182/
 	
 	=============================================================================
 	
+
+{% endraw %}

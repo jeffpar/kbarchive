@@ -6,6 +6,8 @@ permalink: /kb/123/Q123695/
 
 ## Q123695: Cirrus Logic Card w/ 5402 Chip Set Does Not Work w/ 256 Colors
 
+{% raw %}
+
 	Article: Q123695
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -34,3 +36,5 @@ permalink: /kb/123/Q123695/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/074/Q74907/
 
 ## Q74907: North/East Boundaries and Center Location of Flight Sim World
 
+{% raw %}
+
 	Article: Q74907
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/074/Q74907/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/030/Q30811/
 
 ## Q30811: MASM 5.10 OS2.DOC: OS/2 Call Summary - National Lang. Support
 
+{% raw %}
+
 	Article: Q30811
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -42,3 +44,5 @@ permalink: /kb/030/Q30811/
 	
 	   @DosSetCp - Sets the code page
 	   Parameters - CodePage:W, Reserved:W
+
+{% endraw %}

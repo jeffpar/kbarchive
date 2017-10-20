@@ -6,6 +6,8 @@ permalink: /kb/199/Q199070/
 
 ## Q199070: DOC: RDO UpdateCriteria Documentation Incorrect
 
+{% raw %}
+
 	Article: Q199070
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -139,3 +141,5 @@ permalink: /kb/199/Q199070/
 	
 	=============================================================================
 	
+
+{% endraw %}

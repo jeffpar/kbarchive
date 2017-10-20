@@ -6,6 +6,8 @@ permalink: /kb/174/Q174224/
 
 ## Q174224: Description of Domain Name System (DNS)
 
+{% raw %}
+
 	Article: Q174224
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 1.3,2.0,2.5,4.0,95
@@ -68,3 +70,5 @@ permalink: /kb/174/Q174224/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/034/Q34921/
 
 ## Q34921: INFO: jmp_buf Pointer Type is &quot;void &#42;&quot;
 
+{% raw %}
+
 	Article: Q34921
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,2.1,4.0
@@ -113,3 +115,5 @@ permalink: /kb/034/Q34921/
 	
 	=============================================================================
 	
+
+{% endraw %}

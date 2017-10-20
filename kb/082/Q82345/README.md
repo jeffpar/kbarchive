@@ -6,6 +6,8 @@ permalink: /kb/082/Q82345/
 
 ## Q82345: Visual Basic Does Not Show Icons when Making .EXE File
 
+{% raw %}
+
 	Article: Q82345
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/082/Q82345/
 	
 	=============================================================================
 	
+
+{% endraw %}

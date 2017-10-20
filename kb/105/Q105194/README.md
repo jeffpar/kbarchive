@@ -6,6 +6,8 @@ permalink: /kb/105/Q105194/
 
 ## Q105194: How to Enable Automatic Logon to a RAS Server
 
+{% raw %}
+
 	Article: Q105194
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.1,3.51,4.0; :3.1
@@ -68,3 +70,5 @@ permalink: /kb/105/Q105194/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180193/
 
 ## Q180193: FIX: DAO Oracle and the NUMBER Datatype
 
+{% raw %}
+
 	Article: Q180193
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.1,5.0,6.0,Build 2.573.4202
@@ -103,3 +105,5 @@ permalink: /kb/180/Q180193/
 	
 	=============================================================================
 	
+
+{% endraw %}

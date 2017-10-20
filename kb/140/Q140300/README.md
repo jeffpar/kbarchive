@@ -6,6 +6,8 @@ permalink: /kb/140/Q140300/
 
 ## Q140300: FIX: SQL SELECT Returns Different Results Using the Same Data
 
+{% raw %}
+
 	Article: Q140300
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -82,3 +84,5 @@ permalink: /kb/140/Q140300/
 	
 	=============================================================================
 	
+
+{% endraw %}

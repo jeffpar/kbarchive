@@ -6,6 +6,8 @@ permalink: /kb/131/Q131337/
 
 ## Q131337: STOP Msg: 0x0000007B w/ Quantum Empire Drive and Adaptec 2940
 
+{% raw %}
+
 	Article: Q131337
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -66,3 +68,5 @@ permalink: /kb/131/Q131337/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135904/
 
 ## Q135904: PRB: Can't Define Text Object ControlSource Property in a Grid
 
+{% raw %}
+
 	Article: Q135904
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -76,3 +78,5 @@ permalink: /kb/135/Q135904/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130720/
 
 ## Q130720: MS-DOS-Based Programs Do Not Use Entire Screen
 
+{% raw %}
+
 	Article: Q130720
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/130/Q130720/
 	
 	=============================================================================
 	
+
+{% endraw %}

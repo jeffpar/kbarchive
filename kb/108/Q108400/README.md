@@ -6,6 +6,8 @@ permalink: /kb/108/Q108400/
 
 ## Q108400: Art Gallery: Quick Keys &amp; Mouse Invoke &quot;Go Back&quot; Differently
 
+{% raw %}
+
 	Article: Q108400
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -63,3 +65,5 @@ permalink: /kb/108/Q108400/
 	
 	=============================================================================
 	
+
+{% endraw %}

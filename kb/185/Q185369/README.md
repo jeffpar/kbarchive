@@ -6,6 +6,8 @@ permalink: /kb/185/Q185369/
 
 ## Q185369: CART Precision Racing Update Available
 
+{% raw %}
+
 	Article: Q185369
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/185/Q185369/
 	
 	=============================================================================
 	
+
+{% endraw %}

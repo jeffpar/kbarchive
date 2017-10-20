@@ -6,6 +6,8 @@ permalink: /kb/037/Q37638/
 
 ## Q37638: Unassigning Assigned Disk Drives in MS-DOS
 
+{% raw %}
+
 	Article: Q37638
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x
@@ -52,3 +54,5 @@ permalink: /kb/037/Q37638/
 	
 	=============================================================================
 	
+
+{% endraw %}

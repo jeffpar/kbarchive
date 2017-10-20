@@ -6,6 +6,8 @@ permalink: /kb/184/Q184412/
 
 ## Q184412: FP: How to Find a Web Presence Provider for Your FrontPage Web
 
+{% raw %}
+
 	Article: Q184412
 	Product(s): Word Front Page
 	Version(s): 1.0,1.1
@@ -77,3 +79,5 @@ permalink: /kb/184/Q184412/
 	
 	=============================================================================
 	
+
+{% endraw %}

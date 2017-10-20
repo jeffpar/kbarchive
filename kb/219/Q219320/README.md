@@ -6,6 +6,8 @@ permalink: /kb/219/Q219320/
 
 ## Q219320: Unexpected Print Results When Printer Is Turned On After Startup
 
+{% raw %}
+
 	Article: Q219320
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a,4.5
@@ -67,3 +69,5 @@ permalink: /kb/219/Q219320/
 	
 	=============================================================================
 	
+
+{% endraw %}

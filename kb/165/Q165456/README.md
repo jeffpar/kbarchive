@@ -6,6 +6,8 @@ permalink: /kb/165/Q165456/
 
 ## Q165456: STOP 0x0000000A in Ntoskrnl.exe
 
+{% raw %}
+
 	Article: Q165456
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/165/Q165456/
 	
 	=============================================================================
 	
+
+{% endraw %}

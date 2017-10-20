@@ -6,6 +6,8 @@ permalink: /kb/178/Q178339/
 
 ## Q178339: FS98/2000: Helicopter Controls for the Bell 206B JetRanger III
 
+{% raw %}
+
 	Article: Q178339
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -143,3 +145,5 @@ permalink: /kb/178/Q178339/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86303/
 
 ## Q86303: Media Player Err Msg: There Are No MIDI Devices Installed
 
+{% raw %}
+
 	Article: Q86303
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -70,3 +72,5 @@ permalink: /kb/086/Q86303/
 	
 	=============================================================================
 	
+
+{% endraw %}

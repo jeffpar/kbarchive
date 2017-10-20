@@ -6,6 +6,8 @@ permalink: /kb/180/Q180523/
 
 ## Q180523: Ifilttst.exe &amp; Ifilttst.ini Files Missing from IFilter Document
 
+{% raw %}
+
 	Article: Q180523
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/180/Q180523/
 	
 	=============================================================================
 	
+
+{% endraw %}

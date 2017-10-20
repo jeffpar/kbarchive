@@ -6,6 +6,8 @@ permalink: /kb/178/Q178717/
 
 ## Q178717: INF: Excel ODBC Driver and Text ODBC Driver Notes
 
+{% raw %}
+
 	Article: Q178717
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.0
@@ -123,3 +125,5 @@ permalink: /kb/178/Q178717/
 	
 	=============================================================================
 	
+
+{% endraw %}

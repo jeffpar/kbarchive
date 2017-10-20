@@ -6,6 +6,8 @@ permalink: /kb/274/Q274499/
 
 ## Q274499: Error Message Is Generated When Starting Account Joiner Utility
 
+{% raw %}
+
 	Article: Q274499
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,2.2
@@ -56,3 +58,5 @@ permalink: /kb/274/Q274499/
 	
 	=============================================================================
 	
+
+{% endraw %}

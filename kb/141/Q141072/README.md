@@ -6,6 +6,8 @@ permalink: /kb/141/Q141072/
 
 ## Q141072: How To Size a Picture Box Dynamically to Fit an AVI Image
 
+{% raw %}
+
 	Article: Q141072
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -136,3 +138,5 @@ permalink: /kb/141/Q141072/
 	
 	=============================================================================
 	
+
+{% endraw %}

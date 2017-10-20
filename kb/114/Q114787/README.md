@@ -6,6 +6,8 @@ permalink: /kb/114/Q114787/
 
 ## Q114787: HOWTO: Execute a Stored Procedure on SQL Server
 
+{% raw %}
+
 	Article: Q114787
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,2.5a,2.5b,2.6,3.0,5.0,6.0
@@ -203,3 +205,5 @@ permalink: /kb/114/Q114787/
 	
 	=============================================================================
 	
+
+{% endraw %}

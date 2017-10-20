@@ -6,6 +6,8 @@ permalink: /kb/115/Q115203/
 
 ## Q115203: MS-DOS Setup Deletes 3 Files from &#92;DOS on Stacker Host Drive
 
+{% raw %}
+
 	Article: Q115203
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -58,3 +60,5 @@ permalink: /kb/115/Q115203/
 	
 	=============================================================================
 	
+
+{% endraw %}

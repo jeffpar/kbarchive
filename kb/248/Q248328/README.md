@@ -6,6 +6,8 @@ permalink: /kb/248/Q248328/
 
 ## Q248328: Fighter Ace II: Ground Textures Appear Coarse or Blocky
 
+{% raw %}
+
 	Article: Q248328
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/248/Q248328/
 	
 	=============================================================================
 	
+
+{% endraw %}

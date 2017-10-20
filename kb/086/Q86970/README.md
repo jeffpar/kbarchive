@@ -6,6 +6,8 @@ permalink: /kb/086/Q86970/
 
 ## Q86970: X400: Testing X.25 Line/Null Modem Connection Between 2 MTAs
 
+{% raw %}
+
 	Article: Q86970
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -44,3 +46,5 @@ permalink: /kb/086/Q86970/
 	
 	=============================================================================
 	
+
+{% endraw %}

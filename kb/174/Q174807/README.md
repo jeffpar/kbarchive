@@ -6,6 +6,8 @@ permalink: /kb/174/Q174807/
 
 ## Q174807: HOWTO: Edit the SQL Statement of a Remote or Local View
 
+{% raw %}
+
 	Article: Q174807
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -119,3 +121,5 @@ permalink: /kb/174/Q174807/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174530/
 
 ## Q174530: FIX: TABLEREVERT() with Table Buffering Results in Page Fault
 
+{% raw %}
+
 	Article: Q174530
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0b
@@ -164,3 +166,5 @@ permalink: /kb/174/Q174530/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112890/
 
 ## Q112890: PC WSPlus: Cursor Jumps to Beginning of Line Often
 
+{% raw %}
+
 	Article: Q112890
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -56,3 +58,5 @@ permalink: /kb/112/Q112890/
 	
 	=============================================================================
 	
+
+{% endraw %}

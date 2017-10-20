@@ -6,6 +6,8 @@ permalink: /kb/233/Q233490/
 
 ## Q233490: Access Violation When Using Multi-Protocol Router Function Calls
 
+{% raw %}
+
 	Article: Q233490
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.5
@@ -67,3 +69,5 @@ permalink: /kb/233/Q233490/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152090/
 
 ## Q152090: Automap: Search Can't Find Specific Locations in Windows 95
 
+{% raw %}
+
 	Article: Q152090
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -164,3 +166,5 @@ permalink: /kb/152/Q152090/
 	
 	=============================================================================
 	
+
+{% endraw %}

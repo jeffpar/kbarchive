@@ -6,6 +6,8 @@ permalink: /kb/191/Q191121/
 
 ## Q191121: DOC: CreateObject Documentation Using Servername Argument
 
+{% raw %}
+
 	Article: Q191121
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -64,3 +66,5 @@ permalink: /kb/191/Q191121/
 	
 	=============================================================================
 	
+
+{% endraw %}

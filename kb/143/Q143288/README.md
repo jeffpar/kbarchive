@@ -6,6 +6,8 @@ permalink: /kb/143/Q143288/
 
 ## Q143288: Streets 4.0:Save Settings Prompt Doesn't Save New Zoom Setting
 
+{% raw %}
+
 	Article: Q143288
 	Product(s): Microsoft Automap
 	Version(s): 4.00
@@ -46,3 +48,5 @@ permalink: /kb/143/Q143288/
 	
 	=============================================================================
 	
+
+{% endraw %}

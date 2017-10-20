@@ -6,6 +6,8 @@ permalink: /kb/173/Q173976/
 
 ## Q173976: ADT/ODE: &quot;Help Workshop Is Out of Memory&quot; Error with Compression
 
+{% raw %}
+
 	Article: Q173976
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): ; WINDOWS:7.0
@@ -117,3 +119,5 @@ permalink: /kb/173/Q173976/
 	
 	=============================================================================
 	
+
+{% endraw %}

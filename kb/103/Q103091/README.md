@@ -6,6 +6,8 @@ permalink: /kb/103/Q103091/
 
 ## Q103091: PRB: FoxBASE+ Fails to Send CHR(0) to Printer
 
+{% raw %}
+
 	Article: Q103091
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -80,3 +82,5 @@ permalink: /kb/103/Q103091/
 	
 	=============================================================================
 	
+
+{% endraw %}

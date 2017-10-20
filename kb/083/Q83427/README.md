@@ -6,6 +6,8 @@ permalink: /kb/083/Q83427/
 
 ## Q83427: Reinstalling Windows Printer Drivers with 3.1=YES
 
+{% raw %}
+
 	Article: Q83427
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -76,3 +78,5 @@ permalink: /kb/083/Q83427/
 	
 	=============================================================================
 	
+
+{% endraw %}

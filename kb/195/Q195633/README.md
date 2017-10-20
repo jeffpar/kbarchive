@@ -6,6 +6,8 @@ permalink: /kb/195/Q195633/
 
 ## Q195633: FIX: Save Dynamic View Causes Subscript Outside Defined Range
 
+{% raw %}
+
 	Article: Q195633
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -74,3 +76,5 @@ permalink: /kb/195/Q195633/
 	
 	=============================================================================
 	
+
+{% endraw %}

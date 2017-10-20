@@ -6,6 +6,8 @@ permalink: /kb/183/Q183549/
 
 ## Q183549: DBCS Parameters Not Allowed When Importing COBOL
 
+{% raw %}
+
 	Article: Q183549
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -74,3 +76,5 @@ permalink: /kb/183/Q183549/
 	
 	=============================================================================
 	
+
+{% endraw %}

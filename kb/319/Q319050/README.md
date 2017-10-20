@@ -6,6 +6,8 @@ permalink: /kb/319/Q319050/
 
 ## Q319050: How To Modify Member Settings In MSN Internet Access For Macinto
 
+{% raw %}
+
 	Article: Q319050
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/319/Q319050/
 	
 	=============================================================================
 	
+
+{% endraw %}

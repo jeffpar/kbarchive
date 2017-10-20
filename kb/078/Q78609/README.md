@@ -6,6 +6,8 @@ permalink: /kb/078/Q78609/
 
 ## Q78609: Troubleshooting HIMEM.SYS
 
+{% raw %}
+
 	Article: Q78609
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -65,3 +67,5 @@ permalink: /kb/078/Q78609/
 	
 	=============================================================================
 	
+
+{% endraw %}

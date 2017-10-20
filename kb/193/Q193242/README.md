@@ -6,6 +6,8 @@ permalink: /kb/193/Q193242/
 
 ## Q193242: Windows Hangs at Logo Screen After Attaching External Device
 
+{% raw %}
+
 	Article: Q193242
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000,3.51,4.0
@@ -64,3 +66,5 @@ permalink: /kb/193/Q193242/
 	
 	=============================================================================
 	
+
+{% endraw %}

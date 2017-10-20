@@ -6,6 +6,8 @@ permalink: /kb/183/Q183825/
 
 ## Q183825: XCLN: GPF Viewing Multiple Schedules, Leaving Schedule+ Running
 
+{% raw %}
+
 	Article: Q183825
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0a; winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/183/Q183825/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159129/
 
 ## Q159129: OpenGL Access Violation with Invalid OpenGL Context
 
+{% raw %}
+
 	Article: Q159129
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/159/Q159129/
 	
 	=============================================================================
 	
+
+{% endraw %}

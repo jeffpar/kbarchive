@@ -6,6 +6,8 @@ permalink: /kb/153/Q153407/
 
 ## Q153407: SMS: Inventory Does Not Collect Windows NT Service Pack Versions
 
+{% raw %}
+
 	Article: Q153407
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -63,3 +65,5 @@ permalink: /kb/153/Q153407/
 	
 	=============================================================================
 	
+
+{% endraw %}

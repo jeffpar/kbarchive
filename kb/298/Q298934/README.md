@@ -6,6 +6,8 @@ permalink: /kb/298/Q298934/
 
 ## Q298934: Automap: &quot;Find&quot; Operations Are Unavailable
 
+{% raw %}
+
 	Article: Q298934
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -69,3 +71,5 @@ permalink: /kb/298/Q298934/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246795/
 
 ## Q246795: XCLN: Automatic Name Checking Stops on Some Outlook Clients
 
+{% raw %}
+
 	Article: Q246795
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:; winnt:5.5; :
@@ -68,3 +70,5 @@ permalink: /kb/246/Q246795/
 	
 	=============================================================================
 	
+
+{% endraw %}

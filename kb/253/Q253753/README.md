@@ -6,6 +6,8 @@ permalink: /kb/253/Q253753/
 
 ## Q253753: Logon Attempt Does Not Work with New Windows NT Terminal Server
 
+{% raw %}
+
 	Article: Q253753
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -135,3 +137,5 @@ permalink: /kb/253/Q253753/
 	
 	=============================================================================
 	
+
+{% endraw %}

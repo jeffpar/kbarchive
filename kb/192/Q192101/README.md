@@ -6,6 +6,8 @@ permalink: /kb/192/Q192101/
 
 ## Q192101: DOC: Incorrect Documentation for PCMCIA Ethernet Debugging
 
+{% raw %}
+
 	Article: Q192101
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:
@@ -55,3 +57,5 @@ permalink: /kb/192/Q192101/
 	
 	=============================================================================
 	
+
+{% endraw %}

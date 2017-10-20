@@ -6,6 +6,8 @@ permalink: /kb/233/Q233276/
 
 ## Q233276: XCLN: Message Sent Times Inaccurately Match the Received Times
 
+{% raw %}
+
 	Article: Q233276
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,4.0,5.0; :
@@ -65,3 +67,5 @@ permalink: /kb/233/Q233276/
 	
 	=============================================================================
 	
+
+{% endraw %}

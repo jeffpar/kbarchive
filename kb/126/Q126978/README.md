@@ -6,6 +6,8 @@ permalink: /kb/126/Q126978/
 
 ## Q126978: IBM Token Ring /A Adapter Fails To Start in Windows NT 3.5
 
+{% raw %}
+
 	Article: Q126978
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/126/Q126978/
 	
 	=============================================================================
 	
+
+{% endraw %}

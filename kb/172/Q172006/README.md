@@ -6,6 +6,8 @@ permalink: /kb/172/Q172006/
 
 ## Q172006: Writer 2: How to Access the User's Guide Located on the CD
 
+{% raw %}
+
 	Article: Q172006
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -55,3 +57,5 @@ permalink: /kb/172/Q172006/
 	
 	=============================================================================
 	
+
+{% endraw %}

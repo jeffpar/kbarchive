@@ -6,6 +6,8 @@ permalink: /kb/090/Q90386/
 
 ## Q90386: After WFWG Setup, Microsoft C7 Compiler Doesn't Work
 
+{% raw %}
+
 	Article: Q90386
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -67,3 +69,5 @@ permalink: /kb/090/Q90386/
 	
 	=============================================================================
 	
+
+{% endraw %}

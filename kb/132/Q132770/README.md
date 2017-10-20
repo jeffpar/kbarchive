@@ -6,6 +6,8 @@ permalink: /kb/132/Q132770/
 
 ## Q132770: Duplicate SCSI Device Entries Appear in Device Manager
 
+{% raw %}
+
 	Article: Q132770
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/132/Q132770/
 	
 	=============================================================================
 	
+
+{% endraw %}

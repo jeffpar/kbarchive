@@ -6,6 +6,8 @@ permalink: /kb/306/Q306747/
 
 ## Q306747: ENC: How to Obtain Free Membership to Encarta Online Deluxe
 
+{% raw %}
+
 	Article: Q306747
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -127,3 +129,5 @@ permalink: /kb/306/Q306747/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/249/Q249151/
 
 ## Q249151: SMS: Getsfwr.exe Does Not Report the File Date During Inventory
 
+{% raw %}
+
 	Article: Q249151
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -97,3 +99,5 @@ permalink: /kb/249/Q249151/
 	
 	=============================================================================
 	
+
+{% endraw %}

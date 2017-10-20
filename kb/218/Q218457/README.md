@@ -6,6 +6,8 @@ permalink: /kb/218/Q218457/
 
 ## Q218457: BUG: Custom Expression Builder Crashes Query and View Designers
 
+{% raw %}
+
 	Article: Q218457
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -110,3 +112,5 @@ permalink: /kb/218/Q218457/
 	
 	=============================================================================
 	
+
+{% endraw %}

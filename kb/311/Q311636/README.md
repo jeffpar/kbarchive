@@ -6,6 +6,8 @@ permalink: /kb/311/Q311636/
 
 ## Q311636: VDIR that Points to Non-English Dir on English OS Does Not Work
 
+{% raw %}
+
 	Article: Q311636
 	Product(s): Internet Information Server
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/311/Q311636/
 	
 	=============================================================================
 	
+
+{% endraw %}

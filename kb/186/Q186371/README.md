@@ -6,6 +6,8 @@ permalink: /kb/186/Q186371/
 
 ## Q186371: SP3 &amp; Later Have Limited PPP MD5-CHAP Authenticator Support
 
+{% raw %}
+
 	Article: Q186371
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP3,4.0 SP4
@@ -67,3 +69,5 @@ permalink: /kb/186/Q186371/
 	
 	=============================================================================
 	
+
+{% endraw %}

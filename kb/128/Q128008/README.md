@@ -6,6 +6,8 @@ permalink: /kb/128/Q128008/
 
 ## Q128008: RAS: Connecting Using IPXCP Drops Local Netware Session
 
+{% raw %}
+
 	Article: Q128008
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -84,3 +86,5 @@ permalink: /kb/128/Q128008/
 	
 	=============================================================================
 	
+
+{% endraw %}

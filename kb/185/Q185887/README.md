@@ -6,6 +6,8 @@ permalink: /kb/185/Q185887/
 
 ## Q185887: DOC: Incomplete Documentation for SelPrint Method
 
+{% raw %}
+
 	Article: Q185887
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/185/Q185887/
 	
 	=============================================================================
 	
+
+{% endraw %}

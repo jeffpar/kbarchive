@@ -6,6 +6,8 @@ permalink: /kb/140/Q140051/
 
 ## Q140051: Run Command On Workstation Job Doesn't Refresh....
 
+{% raw %}
+
 	Article: Q140051
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -64,3 +66,5 @@ permalink: /kb/140/Q140051/
 	
 	=============================================================================
 	
+
+{% endraw %}

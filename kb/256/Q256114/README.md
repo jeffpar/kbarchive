@@ -6,6 +6,8 @@ permalink: /kb/256/Q256114/
 
 ## Q256114: XIMS: Access Violation at CMtsOutQueue::LoadCachedDetailInfo
 
+{% raw %}
+
 	Article: Q256114
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -65,3 +67,5 @@ permalink: /kb/256/Q256114/
 	
 	=============================================================================
 	
+
+{% endraw %}

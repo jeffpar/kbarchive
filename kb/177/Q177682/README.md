@@ -6,6 +6,8 @@ permalink: /kb/177/Q177682/
 
 ## Q177682: Images Not Displayed Correctly After Installing Service Pack 3
 
+{% raw %}
+
 	Article: Q177682
 	Product(s): Microsoft Windows NT
 	Version(s): 4.00
@@ -74,3 +76,5 @@ permalink: /kb/177/Q177682/
 	
 	=============================================================================
 	
+
+{% endraw %}

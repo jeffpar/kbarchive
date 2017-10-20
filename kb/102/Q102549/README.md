@@ -6,6 +6,8 @@ permalink: /kb/102/Q102549/
 
 ## Q102549: BUG: DDESPY GP Faults Upon Return of CBR_BLOCK
 
+{% raw %}
+
 	Article: Q102549
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -78,3 +80,5 @@ permalink: /kb/102/Q102549/
 	
 	=============================================================================
 	
+
+{% endraw %}

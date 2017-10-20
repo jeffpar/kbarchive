@@ -6,6 +6,8 @@ permalink: /kb/214/Q214942/
 
 ## Q214942: SMS: WQL Queries Fail When Using Datetime in the Format 19981201
 
+{% raw %}
+
 	Article: Q214942
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -94,3 +96,5 @@ permalink: /kb/214/Q214942/
 	
 	=============================================================================
 	
+
+{% endraw %}

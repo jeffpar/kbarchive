@@ -6,6 +6,8 @@ permalink: /kb/184/Q184717/
 
 ## Q184717: AspEnableParentPaths MetaBase Property Should Be Set To False
 
+{% raw %}
+
 	Article: Q184717
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -84,3 +86,5 @@ permalink: /kb/184/Q184717/
 	
 	=============================================================================
 	
+
+{% endraw %}

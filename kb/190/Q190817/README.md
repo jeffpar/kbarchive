@@ -6,6 +6,8 @@ permalink: /kb/190/Q190817/
 
 ## Q190817: HOWTO: Use CREATE FORM ... AS Class FROM Classlib Syntax
 
+{% raw %}
+
 	Article: Q190817
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -81,3 +83,5 @@ permalink: /kb/190/Q190817/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196775/
 
 ## Q196775: PRB: TreeView SelectedItem Property Does Not Return Correct Node
 
+{% raw %}
+
 	Article: Q196775
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -125,3 +127,5 @@ permalink: /kb/196/Q196775/
 	
 	=============================================================================
 	
+
+{% endraw %}

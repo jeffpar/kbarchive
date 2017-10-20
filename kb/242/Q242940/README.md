@@ -6,6 +6,8 @@ permalink: /kb/242/Q242940/
 
 ## Q242940: SAMPLE: MDLLWiz.exe: A Migration DLL AppWizard for Visual C++
 
+{% raw %}
+
 	Article: Q242940
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; winnt:5.0,6.0
@@ -94,3 +96,5 @@ permalink: /kb/242/Q242940/
 	
 	=============================================================================
 	
+
+{% endraw %}

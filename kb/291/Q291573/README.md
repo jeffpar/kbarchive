@@ -6,6 +6,8 @@ permalink: /kb/291/Q291573/
 
 ## Q291573: HOWTO: Use Visual Basic to List Active Logical Drives
 
+{% raw %}
+
 	Article: Q291573
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -158,3 +160,5 @@ permalink: /kb/291/Q291573/
 	
 	=============================================================================
 	
+
+{% endraw %}

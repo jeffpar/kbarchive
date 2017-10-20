@@ -6,6 +6,8 @@ permalink: /kb/221/Q221542/
 
 ## Q221542: HOWTO: Change Time Zone Information Using Visual Basic
 
+{% raw %}
+
 	Article: Q221542
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -377,3 +379,5 @@ permalink: /kb/221/Q221542/
 	
 	=============================================================================
 	
+
+{% endraw %}

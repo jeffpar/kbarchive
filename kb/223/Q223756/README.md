@@ -6,6 +6,8 @@ permalink: /kb/223/Q223756/
 
 ## Q223756: IRDP Client Support Added to Windows NT 4.0
 
+{% raw %}
+
 	Article: Q223756
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -178,3 +180,5 @@ permalink: /kb/223/Q223756/
 	
 	=============================================================================
 	
+
+{% endraw %}

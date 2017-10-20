@@ -6,6 +6,8 @@ permalink: /kb/314/Q314701/
 
 ## Q314701: ENC: How to Install Previous Version of Encarta
 
+{% raw %}
+
 	Article: Q314701
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -81,3 +83,5 @@ permalink: /kb/314/Q314701/
 	
 	=============================================================================
 	
+
+{% endraw %}

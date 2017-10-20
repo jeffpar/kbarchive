@@ -6,6 +6,8 @@ permalink: /kb/153/Q153819/
 
 ## Q153819: SMS PCM: &quot;General File Transfer Error&quot; Distributing Netscape
 
+{% raw %}
+
 	Article: Q153819
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -50,3 +52,5 @@ permalink: /kb/153/Q153819/
 	
 	=============================================================================
 	
+
+{% endraw %}

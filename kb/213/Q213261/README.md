@@ -6,6 +6,8 @@ permalink: /kb/213/Q213261/
 
 ## Q213261: SMS: Software Metering Usage Is Not Reported for Some Clients
 
+{% raw %}
+
 	Article: Q213261
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -68,3 +70,5 @@ permalink: /kb/213/Q213261/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182434/
 
 ## Q182434: PRB: ActiveX Control's Stock Error Event Uses SCODE Value
 
+{% raw %}
+
 	Article: Q182434
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0,6.0
@@ -72,7 +74,7 @@ permalink: /kb/182/Q182434/
 	     // CMyTestDlg is a test container (a dialog-based application)
 	     // written in Visual C++.
 	     BEGIN_EVENTSINK_MAP(CMyTestDlg, CDialog)
-	     //{ {AFX_EVENTSINK_MAP(CMyTestDlg)
+	     //{{AFX_EVENTSINK_MAP(CMyTestDlg)
 	     ON_EVENT(CMyTestDlg,
 	         IDC_OLECTRL1CTRL1,
 	         -608 /* Error */,
@@ -84,7 +86,7 @@ permalink: /kb/182/Q182434/
 	         VTS_BSTR
 	         VTS_I4
 	         VTS_PBOOL)
-	     //} }AFX_EVENTSINK_MAP
+	     //}}AFX_EVENTSINK_MAP
 	     END_EVENTSINK_MAP()
 	     // OnErrorOleCtrl1 is the event handler for the Stock Error event of the
 	     // ActiveX control.
@@ -114,3 +116,5 @@ permalink: /kb/182/Q182434/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179131/
 
 ## Q179131: Files Saved in the Temporary Folder on a ZAK Client Workstation
 
+{% raw %}
+
 	Article: Q179131
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -83,3 +85,5 @@ permalink: /kb/179/Q179131/
 	
 	=============================================================================
 	
+
+{% endraw %}

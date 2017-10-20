@@ -6,6 +6,8 @@ permalink: /kb/151/Q151087/
 
 ## Q151087: Mastering Visual C++: Page Fault While Running Lab Exercise
 
+{% raw %}
+
 	Article: Q151087
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0,1.0a
@@ -62,3 +64,5 @@ permalink: /kb/151/Q151087/
 	
 	=============================================================================
 	
+
+{% endraw %}

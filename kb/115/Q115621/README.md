@@ -6,6 +6,8 @@ permalink: /kb/115/Q115621/
 
 ## Q115621: Err Msg: 32-Bit File System Cannot Be Used When DoubleSpace...
 
+{% raw %}
+
 	Article: Q115621
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.11,6.0
@@ -95,3 +97,5 @@ permalink: /kb/115/Q115621/
 	
 	=============================================================================
 	
+
+{% endraw %}

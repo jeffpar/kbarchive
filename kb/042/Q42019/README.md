@@ -6,6 +6,8 @@ permalink: /kb/042/Q42019/
 
 ## Q42019: PRB: Missing Closing &quot;)&quot; in Macro Causes Unexpected EOF
 
+{% raw %}
+
 	Article: Q42019
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0 6.0a 6.0ax 7.0 1.0 1.5 2.0 2
@@ -86,3 +88,5 @@ permalink: /kb/042/Q42019/
 	
 	=============================================================================
 	
+
+{% endraw %}

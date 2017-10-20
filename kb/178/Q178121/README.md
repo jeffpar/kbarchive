@@ -6,6 +6,8 @@ permalink: /kb/178/Q178121/
 
 ## Q178121: WD97: No Password Prompt for &quot;Modify&quot; in Mail Client
 
+{% raw %}
+
 	Article: Q178121
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -81,3 +83,5 @@ permalink: /kb/178/Q178121/
 	
 	=============================================================================
 	
+
+{% endraw %}

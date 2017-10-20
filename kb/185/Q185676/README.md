@@ -6,6 +6,8 @@ permalink: /kb/185/Q185676/
 
 ## Q185676: FEEDIGNOREINITIAL Option Not Working in Snaprint
 
+{% raw %}
+
 	Article: Q185676
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 SP2,3.0 SP3,4.0
@@ -129,3 +131,5 @@ permalink: /kb/185/Q185676/
 	
 	=============================================================================
 	
+
+{% endraw %}

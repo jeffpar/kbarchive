@@ -6,6 +6,8 @@ permalink: /kb/058/Q58026/
 
 ## Q58026: No QB Error Message If File Listed in .MAK File Does Not Exist
 
+{% raw %}
+
 	Article: Q58026
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -35,3 +37,5 @@ permalink: /kb/058/Q58026/
 	The QuickBASIC environment automatically creates a .MAK file for
 	multiple-module (multiply-loaded-source file) programs when you choose
 	the Save All command from the File menu.
+
+{% endraw %}

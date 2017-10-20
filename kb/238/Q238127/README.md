@@ -6,6 +6,8 @@ permalink: /kb/238/Q238127/
 
 ## Q238127: SMS: SMS_NT_LOGON_DISCOVERY_AGENT May Experience Logon Problems
 
+{% raw %}
+
 	Article: Q238127
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -62,3 +64,5 @@ permalink: /kb/238/Q238127/
 	
 	=============================================================================
 	
+
+{% endraw %}

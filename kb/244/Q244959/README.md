@@ -6,6 +6,8 @@ permalink: /kb/244/Q244959/
 
 ## Q244959: Error Message Refreshing Report in SMS Administrator Console
 
+{% raw %}
+
 	Article: Q244959
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -65,3 +67,5 @@ permalink: /kb/244/Q244959/
 	
 	=============================================================================
 	
+
+{% endraw %}

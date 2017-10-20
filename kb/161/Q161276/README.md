@@ -6,6 +6,8 @@ permalink: /kb/161/Q161276/
 
 ## Q161276: Error Message Installing GSNW in a NetWare 4.x Environment
 
+{% raw %}
+
 	Article: Q161276
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -105,3 +107,5 @@ permalink: /kb/161/Q161276/
 	
 	=============================================================================
 	
+
+{% endraw %}

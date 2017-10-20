@@ -6,6 +6,8 @@ permalink: /kb/135/Q135049/
 
 ## Q135049: FIX: Rebuilding .CLW File Does Not Restore Link to ODL File
 
+{% raw %}
+
 	Article: Q135049
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1
@@ -85,3 +87,5 @@ permalink: /kb/135/Q135049/
 	
 	=============================================================================
 	
+
+{% endraw %}

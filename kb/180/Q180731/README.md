@@ -6,6 +6,8 @@ permalink: /kb/180/Q180731/
 
 ## Q180731: How to Print to an HP JetDirect Printer by Means of LPR
 
+{% raw %}
+
 	Article: Q180731
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -123,3 +125,5 @@ permalink: /kb/180/Q180731/
 	
 	=============================================================================
 	
+
+{% endraw %}

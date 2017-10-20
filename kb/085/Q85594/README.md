@@ -6,6 +6,8 @@ permalink: /kb/085/Q85594/
 
 ## Q85594: Application Cannot Clear the Windows Help History List
 
+{% raw %}
+
 	Article: Q85594
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -44,3 +46,5 @@ permalink: /kb/085/Q85594/
 	
 	=============================================================================
 	
+
+{% endraw %}

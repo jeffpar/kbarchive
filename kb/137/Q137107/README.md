@@ -6,6 +6,8 @@ permalink: /kb/137/Q137107/
 
 ## Q137107: Questions and Answers About Newsgroups on MSN
 
+{% raw %}
+
 	Article: Q137107
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -99,3 +101,5 @@ permalink: /kb/137/Q137107/
 	
 	=============================================================================
 	
+
+{% endraw %}

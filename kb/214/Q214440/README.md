@@ -6,6 +6,8 @@ permalink: /kb/214/Q214440/
 
 ## Q214440: Terminal Server STOP 0xA When Remote Clients Log Off
 
+{% raw %}
+
 	Article: Q214440
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/214/Q214440/
 	
 	=============================================================================
 	
+
+{% endraw %}

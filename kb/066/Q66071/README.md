@@ -6,6 +6,8 @@ permalink: /kb/066/Q66071/
 
 ## Q66071: Don't Run Windows 3.0 with Amdek DOS Version 3.21
 
+{% raw %}
+
 	Article: Q66071
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -43,3 +45,5 @@ permalink: /kb/066/Q66071/
 	
 	=============================================================================
 	
+
+{% endraw %}

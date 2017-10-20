@@ -6,6 +6,8 @@ permalink: /kb/309/Q309563/
 
 ## Q309563: Games: Game Stops Responding a Few Minutes Into Play
 
+{% raw %}
+
 	Article: Q309563
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/309/Q309563/
 	
 	=============================================================================
 	
+
+{% endraw %}

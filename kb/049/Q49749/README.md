@@ -6,6 +6,8 @@ permalink: /kb/049/Q49749/
 
 ## Q49749: NetWkstaSetUid() Returns ERROR_INVALID_PARAMETER in Error
 
+{% raw %}
+
 	Article: Q49749
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -37,3 +39,5 @@ permalink: /kb/049/Q49749/
 	
 	=============================================================================
 	
+
+{% endraw %}

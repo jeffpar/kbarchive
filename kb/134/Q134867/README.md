@@ -6,6 +6,8 @@ permalink: /kb/134/Q134867/
 
 ## Q134867: &quot;Cannot Find File&quot; When Object Clicked to Run Interactively
 
+{% raw %}
+
 	Article: Q134867
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -69,3 +71,5 @@ permalink: /kb/134/Q134867/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135842/
 
 ## Q135842: DOC: SQL Statement Disagrees with Text Description
 
+{% raw %}
+
 	Article: Q135842
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/135/Q135842/
 	
 	=============================================================================
 	
+
+{% endraw %}

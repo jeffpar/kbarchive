@@ -6,6 +6,8 @@ permalink: /kb/301/Q301428/
 
 ## Q301428: Troubleshooting Outlook Web Access from an IIS Perspective
 
+{% raw %}
+
 	Article: Q301428
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -217,3 +219,5 @@ permalink: /kb/301/Q301428/
 	
 	=============================================================================
 	
+
+{% endraw %}

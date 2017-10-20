@@ -6,6 +6,8 @@ permalink: /kb/084/Q84144/
 
 ## Q84144: CodeView 3.05 Won't Start with Windows 3.1
 
+{% raw %}
+
 	Article: Q84144
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/084/Q84144/
 	
 	=============================================================================
 	
+
+{% endraw %}

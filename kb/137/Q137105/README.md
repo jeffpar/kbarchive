@@ -6,6 +6,8 @@ permalink: /kb/137/Q137105/
 
 ## Q137105: Size Limits for Sending and Receiving MSN E-mail
 
+{% raw %}
+
 	Article: Q137105
 	Product(s): The Microsoft Network
 	Version(s): 2.5,2.51,2.52,2.6,5.0
@@ -66,3 +68,5 @@ permalink: /kb/137/Q137105/
 	
 	=============================================================================
 	
+
+{% endraw %}

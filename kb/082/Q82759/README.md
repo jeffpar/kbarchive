@@ -6,6 +6,8 @@ permalink: /kb/082/Q82759/
 
 ## Q82759: Use Printer Drivers Provided with Windows 3.1
 
+{% raw %}
+
 	Article: Q82759
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -40,3 +42,5 @@ permalink: /kb/082/Q82759/
 	
 	=============================================================================
 	
+
+{% endraw %}

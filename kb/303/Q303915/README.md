@@ -6,6 +6,8 @@ permalink: /kb/303/Q303915/
 
 ## Q303915: MechCommander 2.0: Image Extends Beyond Monitor Borders
 
+{% raw %}
+
 	Article: Q303915
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -122,3 +124,5 @@ permalink: /kb/303/Q303915/
 	
 	=============================================================================
 	
+
+{% endraw %}

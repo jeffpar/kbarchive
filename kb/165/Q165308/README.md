@@ -6,6 +6,8 @@ permalink: /kb/165/Q165308/
 
 ## Q165308: FIX: Left Outer Join with &quot;WHERE NOT IN&quot; Clause Incorrect
 
+{% raw %}
+
 	Article: Q165308
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -95,3 +97,5 @@ permalink: /kb/165/Q165308/
 	
 	=============================================================================
 	
+
+{% endraw %}

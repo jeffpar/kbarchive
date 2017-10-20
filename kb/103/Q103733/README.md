@@ -6,6 +6,8 @@ permalink: /kb/103/Q103733/
 
 ## Q103733: Error Messages or Hangs Using 3Com EtherLink III (3C509)
 
+{% raw %}
+
 	Article: Q103733
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -88,3 +90,5 @@ permalink: /kb/103/Q103733/
 	
 	=============================================================================
 	
+
+{% endraw %}

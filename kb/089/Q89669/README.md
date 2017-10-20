@@ -6,6 +6,8 @@ permalink: /kb/089/Q89669/
 
 ## Q89669: FoxBASE+ Configuration and Capacity
 
+{% raw %}
+
 	Article: Q89669
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -71,3 +73,5 @@ permalink: /kb/089/Q89669/
 	
 	=============================================================================
 	
+
+{% endraw %}

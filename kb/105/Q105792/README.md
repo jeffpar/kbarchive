@@ -6,6 +6,8 @@ permalink: /kb/105/Q105792/
 
 ## Q105792: Machine Hangs Using HIMEM /TESTMEM
 
+{% raw %}
+
 	Article: Q105792
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22; WINDOWS:3.11
@@ -47,3 +49,5 @@ permalink: /kb/105/Q105792/
 	
 	=============================================================================
 	
+
+{% endraw %}

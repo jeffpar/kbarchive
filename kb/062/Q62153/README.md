@@ -6,6 +6,8 @@ permalink: /kb/062/Q62153/
 
 ## Q62153: Schweizer 2-32 Sailplane Performance Specifications
 
+{% raw %}
+
 	Article: Q62153
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -39,3 +41,5 @@ permalink: /kb/062/Q62153/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/278/Q278020/
 
 ## Q278020: Visual C++ 6.0 Programmer's Guide Comments and Corrections
 
+{% raw %}
+
 	Article: Q278020
 	Product(s): Microsoft Press
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/278/Q278020/
 	
 	=============================================================================
 	
+
+{% endraw %}

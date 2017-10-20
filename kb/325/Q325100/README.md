@@ -6,6 +6,8 @@ permalink: /kb/325/Q325100/
 
 ## Q325100: Games: Error Message Received When You Try to Install a Game
 
+{% raw %}
+
 	Article: Q325100
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -235,3 +237,5 @@ permalink: /kb/325/Q325100/
 	
 	=============================================================================
 	
+
+{% endraw %}

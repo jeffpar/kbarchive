@@ -6,6 +6,8 @@ permalink: /kb/275/Q275558/
 
 ## Q275558: WD97: Runtime Error '4198' Running Macro to Paste Excel Object
 
+{% raw %}
+
 	Article: Q275558
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/275/Q275558/
 	
 	=============================================================================
 	
+
+{% endraw %}

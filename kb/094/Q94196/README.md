@@ -6,6 +6,8 @@ permalink: /kb/094/Q94196/
 
 ## Q94196: Reinstalling Windows Without Losing Settings
 
+{% raw %}
+
 	Article: Q94196
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -141,3 +143,5 @@ permalink: /kb/094/Q94196/
 	
 	=============================================================================
 	
+
+{% endraw %}

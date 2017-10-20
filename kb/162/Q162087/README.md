@@ -6,6 +6,8 @@ permalink: /kb/162/Q162087/
 
 ## Q162087: XCLN: Schedule + Meeting Wizard Won't Auto Pick Locations
 
+{% raw %}
+
 	Article: Q162087
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -70,3 +72,5 @@ permalink: /kb/162/Q162087/
 	
 	=============================================================================
 	
+
+{% endraw %}

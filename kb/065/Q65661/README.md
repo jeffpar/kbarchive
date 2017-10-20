@@ -6,6 +6,8 @@ permalink: /kb/065/Q65661/
 
 ## Q65661: Changing Color of Selected Text in Help and Windows
 
+{% raw %}
+
 	Article: Q65661
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -90,3 +92,5 @@ permalink: /kb/065/Q65661/
 	
 	=============================================================================
 	
+
+{% endraw %}

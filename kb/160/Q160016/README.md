@@ -6,6 +6,8 @@ permalink: /kb/160/Q160016/
 
 ## Q160016: Parity Errors with DirectX Video Drivers
 
+{% raw %}
+
 	Article: Q160016
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -76,3 +78,5 @@ permalink: /kb/160/Q160016/
 	
 	=============================================================================
 	
+
+{% endraw %}

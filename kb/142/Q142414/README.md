@@ -6,6 +6,8 @@ permalink: /kb/142/Q142414/
 
 ## Q142414: PC Win: Err Msg: Address Is No Longer Valid. User or PO...
 
+{% raw %}
+
 	Article: Q142414
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -60,3 +62,5 @@ permalink: /kb/142/Q142414/
 	
 	=============================================================================
 	
+
+{% endraw %}

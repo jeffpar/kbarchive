@@ -6,6 +6,8 @@ permalink: /kb/150/Q150137/
 
 ## Q150137: BUG: T Edit Descriptor Fails to TAB Backward
 
+{% raw %}
+
 	Article: Q150137
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a,4.0
@@ -76,3 +78,5 @@ permalink: /kb/150/Q150137/
 	
 	=============================================================================
 	
+
+{% endraw %}

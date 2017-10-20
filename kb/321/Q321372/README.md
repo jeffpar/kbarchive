@@ -6,6 +6,8 @@ permalink: /kb/321/Q321372/
 
 ## Q321372: SMS: SMS SP3 Support of  Windows XP Professional
 
+{% raw %}
+
 	Article: Q321372
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -133,3 +135,5 @@ permalink: /kb/321/Q321372/
 	
 	=============================================================================
 	
+
+{% endraw %}

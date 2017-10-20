@@ -6,6 +6,8 @@ permalink: /kb/269/Q269058/
 
 ## Q269058: Baseball 2001: Cannot Remove Custom Free Agents
 
+{% raw %}
+
 	Article: Q269058
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -42,3 +44,5 @@ permalink: /kb/269/Q269058/
 	
 	=============================================================================
 	
+
+{% endraw %}

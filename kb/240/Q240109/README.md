@@ -6,6 +6,8 @@ permalink: /kb/240/Q240109/
 
 ## Q240109: NBA Inside Drive 2000: Statistics Not Calculated Accurately
 
+{% raw %}
+
 	Article: Q240109
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -41,3 +43,5 @@ permalink: /kb/240/Q240109/
 	
 	=============================================================================
 	
+
+{% endraw %}

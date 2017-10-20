@@ -6,6 +6,8 @@ permalink: /kb/168/Q168969/
 
 ## Q168969: Cannot Install WinNT Server Tools While File Manager Is Running
 
+{% raw %}
+
 	Article: Q168969
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -81,3 +83,5 @@ permalink: /kb/168/Q168969/
 	
 	=============================================================================
 	
+
+{% endraw %}

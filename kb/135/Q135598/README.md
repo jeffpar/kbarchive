@@ -6,6 +6,8 @@ permalink: /kb/135/Q135598/
 
 ## Q135598: Forcibly Disconnect Remote Users Option May Not Work Correctly
 
+{% raw %}
+
 	Article: Q135598
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -49,3 +51,5 @@ permalink: /kb/135/Q135598/
 	
 	=============================================================================
 	
+
+{% endraw %}

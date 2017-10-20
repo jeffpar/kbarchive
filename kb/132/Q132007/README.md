@@ -6,6 +6,8 @@ permalink: /kb/132/Q132007/
 
 ## Q132007: Problem Copying Wingdings from Character Map to Wordpad
 
+{% raw %}
+
 	Article: Q132007
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -46,3 +48,5 @@ permalink: /kb/132/Q132007/
 	
 	=============================================================================
 	
+
+{% endraw %}

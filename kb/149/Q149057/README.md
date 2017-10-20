@@ -6,6 +6,8 @@ permalink: /kb/149/Q149057/
 
 ## Q149057: INFO: Understanding Dynamic Resultset Cursors -RDO
 
+{% raw %}
+
 	Article: Q149057
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -139,3 +141,5 @@ permalink: /kb/149/Q149057/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185471/
 
 ## Q185471: Monster Truck Madness 2: List of Enhancement (Cheat) Codes
 
+{% raw %}
+
 	Article: Q185471
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -104,3 +106,5 @@ permalink: /kb/185/Q185471/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241553/
 
 ## Q241553: XFOR: Migrated Msg Not Delivered for Migrated cc:Mail User
 
+{% raw %}
+
 	Article: Q241553
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -63,3 +65,5 @@ permalink: /kb/241/Q241553/
 	
 	=============================================================================
 	
+
+{% endraw %}

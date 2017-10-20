@@ -6,6 +6,8 @@ permalink: /kb/264/Q264484/
 
 ## Q264484: Word Tables Not Indexed Correctly When Adjacent Cells Have Digit
 
+{% raw %}
+
 	Article: Q264484
 	Product(s): Internet Information Server
 	Version(s): 2.0,2000
@@ -125,3 +127,5 @@ permalink: /kb/264/Q264484/
 	
 	=============================================================================
 	
+
+{% endraw %}

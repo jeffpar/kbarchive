@@ -6,6 +6,8 @@ permalink: /kb/073/Q73314/
 
 ## Q73314: CTRL+PRINT SCREEN Causes ANSI Escape Sequences to Print
 
+{% raw %}
+
 	Article: Q73314
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0,6.0,6.2,6.21,6.22
@@ -55,3 +57,5 @@ permalink: /kb/073/Q73314/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178439/
 
 ## Q178439: MS Windows NT Tech Support Training Comments and Corrections
 
+{% raw %}
+
 	Article: Q178439
 	Product(s): Microsoft Press
 	Version(s): 
@@ -144,3 +146,5 @@ permalink: /kb/178/Q178439/
 	
 	=============================================================================
 	
+
+{% endraw %}

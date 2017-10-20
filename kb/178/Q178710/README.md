@@ -6,6 +6,8 @@ permalink: /kb/178/Q178710/
 
 ## Q178710: FS98: Patch Set 1.0 Is Available to Correct Known Issues
 
+{% raw %}
+
 	Article: Q178710
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -61,3 +63,5 @@ permalink: /kb/178/Q178710/
 	
 	=============================================================================
 	
+
+{% endraw %}

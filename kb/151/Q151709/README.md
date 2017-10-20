@@ -6,6 +6,8 @@ permalink: /kb/151/Q151709/
 
 ## Q151709: NT Server Manager Can Lock LAN Manager Server
 
+{% raw %}
+
 	Article: Q151709
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2b,3.5,3.51
@@ -42,3 +44,5 @@ permalink: /kb/151/Q151709/
 	
 	=============================================================================
 	
+
+{% endraw %}

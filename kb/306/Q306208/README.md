@@ -6,6 +6,8 @@ permalink: /kb/306/Q306208/
 
 ## Q306208: BUG: SAK: German SAK Has Incorrect Version Number
 
+{% raw %}
+
 	Article: Q306208
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -47,3 +49,5 @@ permalink: /kb/306/Q306208/
 	
 	=============================================================================
 	
+
+{% endraw %}

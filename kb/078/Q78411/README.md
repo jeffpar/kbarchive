@@ -6,6 +6,8 @@ permalink: /kb/078/Q78411/
 
 ## Q78411: Restoring MS-DOS Editor to the MS-DOS Shell Main Program List
 
+{% raw %}
+
 	Article: Q78411
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -77,3 +79,5 @@ permalink: /kb/078/Q78411/
 	
 	=============================================================================
 	
+
+{% endraw %}

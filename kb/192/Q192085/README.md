@@ -6,6 +6,8 @@ permalink: /kb/192/Q192085/
 
 ## Q192085: MHS: Incorrect Date Recorded in Sent.log and Recv.log Files
 
+{% raw %}
+
 	Article: Q192085
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -71,3 +73,5 @@ permalink: /kb/192/Q192085/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130904/
 
 ## Q130904: 32-bit DLL Call From MSMAIL32 to MAPILogon Fails
 
+{% raw %}
+
 	Article: Q130904
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.0,3.2; winnt:3.5
@@ -57,3 +59,5 @@ permalink: /kb/130/Q130904/
 	
 	=============================================================================
 	
+
+{% endraw %}

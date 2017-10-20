@@ -6,6 +6,8 @@ permalink: /kb/131/Q131251/
 
 ## Q131251: PPT: How to Automatically Number Lists in PowerPoint
 
+{% raw %}
+
 	Article: Q131251
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,4.0a,4.0c,7.0
@@ -70,3 +72,5 @@ permalink: /kb/131/Q131251/
 	
 	=============================================================================
 	
+
+{% endraw %}

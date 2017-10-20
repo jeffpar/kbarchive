@@ -6,6 +6,8 @@ permalink: /kb/141/Q141809/
 
 ## Q141809: BUG: 2nd Insert Statement Fails On a Recreated Table in Excel
 
+{% raw %}
+
 	Article: Q141809
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.40
@@ -89,3 +91,5 @@ permalink: /kb/141/Q141809/
 	
 	=============================================================================
 	
+
+{% endraw %}

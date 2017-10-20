@@ -6,6 +6,8 @@ permalink: /kb/141/Q141794/
 
 ## Q141794: BUG: UNLOCK Command Commits Changes to Row-Buffered Records
 
+{% raw %}
+
 	Article: Q141794
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS: 3.0b,5.0,6.0
@@ -105,3 +107,5 @@ permalink: /kb/141/Q141794/
 	
 	=============================================================================
 	
+
+{% endraw %}

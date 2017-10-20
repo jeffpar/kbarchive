@@ -6,6 +6,8 @@ permalink: /kb/147/Q147426/
 
 ## Q147426: PRB: DoSuperclassPaint Calls WM_PRINT for Windows 95
 
+{% raw %}
+
 	Article: Q147426
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -61,3 +63,5 @@ permalink: /kb/147/Q147426/
 	
 	=============================================================================
 	
+
+{% endraw %}

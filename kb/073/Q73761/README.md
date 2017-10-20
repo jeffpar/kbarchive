@@ -6,6 +6,8 @@ permalink: /kb/073/Q73761/
 
 ## Q73761: Mac Util: Dial-in Utility ReadMe File
 
+{% raw %}
+
 	Article: Q73761
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0
@@ -155,3 +157,5 @@ permalink: /kb/073/Q73761/
 	
 	=============================================================================
 	
+
+{% endraw %}

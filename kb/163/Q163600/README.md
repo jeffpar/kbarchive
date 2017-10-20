@@ -6,6 +6,8 @@ permalink: /kb/163/Q163600/
 
 ## Q163600: WD97: Unable to Connect to Web with Browse Web Art Command
 
+{% raw %}
+
 	Article: Q163600
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/163/Q163600/
 	
 	=============================================================================
 	
+
+{% endraw %}

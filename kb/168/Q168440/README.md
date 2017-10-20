@@ -6,6 +6,8 @@ permalink: /kb/168/Q168440/
 
 ## Q168440: FIX: Stream Operator &lt;&lt; Cannot Handle &#95;&#95;int64 Type
 
+{% raw %}
+
 	Article: Q168440
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -93,3 +95,5 @@ permalink: /kb/168/Q168440/
 	
 	=============================================================================
 	
+
+{% endraw %}

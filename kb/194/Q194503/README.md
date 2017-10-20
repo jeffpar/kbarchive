@@ -6,6 +6,8 @@ permalink: /kb/194/Q194503/
 
 ## Q194503: PRB: VFP6/VSS6 File Could Not Be Mapped to SourceSafe Project
 
+{% raw %}
+
 	Article: Q194503
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -96,3 +98,5 @@ permalink: /kb/194/Q194503/
 	
 	=============================================================================
 	
+
+{% endraw %}

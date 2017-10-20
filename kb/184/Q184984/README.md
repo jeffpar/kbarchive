@@ -6,6 +6,8 @@ permalink: /kb/184/Q184984/
 
 ## Q184984: WD97: Password Not Saved Calling wdDialogFileSaveAs Dialog Box
 
+{% raw %}
+
 	Article: Q184984
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -123,3 +125,5 @@ permalink: /kb/184/Q184984/
 	
 	=============================================================================
 	
+
+{% endraw %}

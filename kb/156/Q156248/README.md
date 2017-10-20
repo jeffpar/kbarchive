@@ -6,6 +6,8 @@ permalink: /kb/156/Q156248/
 
 ## Q156248: Hellbender: Connection Failed Error in Network Game
 
+{% raw %}
+
 	Article: Q156248
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/156/Q156248/
 	
 	=============================================================================
 	
+
+{% endraw %}

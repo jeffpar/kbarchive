@@ -6,6 +6,8 @@ permalink: /kb/174/Q174032/
 
 ## Q174032: XWEB: Recurrence Tab not Available for Non-Recurring Appointment
 
+{% raw %}
+
 	Article: Q174032
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -58,3 +60,5 @@ permalink: /kb/174/Q174032/
 	
 	=============================================================================
 	
+
+{% endraw %}

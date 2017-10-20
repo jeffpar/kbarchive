@@ -6,6 +6,8 @@ permalink: /kb/112/Q112059/
 
 ## Q112059: DOCERR: Cannot Break on Condition in PowerStation Debugger
 
+{% raw %}
+
 	Article: Q112059
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -58,3 +60,5 @@ permalink: /kb/112/Q112059/
 	
 	=============================================================================
 	
+
+{% endraw %}

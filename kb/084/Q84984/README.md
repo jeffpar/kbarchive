@@ -6,6 +6,8 @@ permalink: /kb/084/Q84984/
 
 ## Q84984: DOC: List of Functions That Are Valid in Metafiles
 
+{% raw %}
+
 	Article: Q84984
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -109,3 +111,5 @@ permalink: /kb/084/Q84984/
 	
 	=============================================================================
 	
+
+{% endraw %}

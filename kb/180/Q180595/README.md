@@ -6,6 +6,8 @@ permalink: /kb/180/Q180595/
 
 ## Q180595: XFOR: Folder Unread Message Count Shows 4294967294
 
+{% raw %}
+
 	Article: Q180595
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -48,3 +50,5 @@ permalink: /kb/180/Q180595/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141985/
 
 ## Q141985: Download of Time to Timex Watch Is Incorrect
 
+{% raw %}
+
 	Article: Q141985
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0,97,98; Win95:7.0
@@ -55,3 +57,5 @@ permalink: /kb/141/Q141985/
 	
 	=============================================================================
 	
+
+{% endraw %}

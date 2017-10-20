@@ -6,6 +6,8 @@ permalink: /kb/157/Q157628/
 
 ## Q157628: PRB:Double Quotes in Remote View Filter Expression Cause Error
 
+{% raw %}
+
 	Article: Q157628
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,5.0,6.0
@@ -108,3 +110,5 @@ permalink: /kb/157/Q157628/
 	
 	=============================================================================
 	
+
+{% endraw %}

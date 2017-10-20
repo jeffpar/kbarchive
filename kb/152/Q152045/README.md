@@ -6,6 +6,8 @@ permalink: /kb/152/Q152045/
 
 ## Q152045: &quot;Use Mappings in file&quot; Check Box Grayed Out
 
+{% raw %}
+
 	Article: Q152045
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -60,3 +62,5 @@ permalink: /kb/152/Q152045/
 	
 	=============================================================================
 	
+
+{% endraw %}

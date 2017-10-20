@@ -6,6 +6,8 @@ permalink: /kb/130/Q130146/
 
 ## Q130146: How to Create a Scrolling Field in a BROWSE Window
 
+{% raw %}
+
 	Article: Q130146
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -84,3 +86,5 @@ permalink: /kb/130/Q130146/
 	
 	=============================================================================
 	
+
+{% endraw %}

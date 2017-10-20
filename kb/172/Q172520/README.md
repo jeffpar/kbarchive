@@ -6,6 +6,8 @@ permalink: /kb/172/Q172520/
 
 ## Q172520: Access Denied Error When Trying to Access a Shared CD-ROM
 
+{% raw %}
+
 	Article: Q172520
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -131,3 +133,5 @@ permalink: /kb/172/Q172520/
 	
 	=============================================================================
 	
+
+{% endraw %}

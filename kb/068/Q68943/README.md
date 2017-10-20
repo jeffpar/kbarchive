@@ -6,6 +6,8 @@ permalink: /kb/068/Q68943/
 
 ## Q68943: calloc() Can Return a Pointer to a Zero Length Block of Memory
 
+{% raw %}
+
 	Article: Q68943
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -51,3 +53,5 @@ permalink: /kb/068/Q68943/
 	
 	   Foo points to a block 0 bytes long.
 	   Goo points to a block 0 bytes long.
+
+{% endraw %}

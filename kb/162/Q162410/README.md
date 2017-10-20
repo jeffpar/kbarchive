@@ -6,6 +6,8 @@ permalink: /kb/162/Q162410/
 
 ## Q162410: FIX: Report Page Headers Print on Summary Page
 
+{% raw %}
+
 	Article: Q162410
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -67,3 +69,5 @@ permalink: /kb/162/Q162410/
 	
 	=============================================================================
 	
+
+{% endraw %}

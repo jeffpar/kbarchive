@@ -6,6 +6,8 @@ permalink: /kb/074/Q74180/
 
 ## Q74180: MS-DOS: Compaq Plasma Display Requires MONO.INI File
 
+{% raw %}
+
 	Article: Q74180
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -67,3 +69,5 @@ permalink: /kb/074/Q74180/
 	
 	=============================================================================
 	
+
+{% endraw %}

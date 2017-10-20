@@ -6,6 +6,8 @@ permalink: /kb/082/Q82390/
 
 ## Q82390: File Manager Fails Root Directory Searches with DEC Pathworks
 
+{% raw %}
+
 	Article: Q82390
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/082/Q82390/
 	
 	=============================================================================
 	
+
+{% endraw %}

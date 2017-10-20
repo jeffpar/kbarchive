@@ -6,6 +6,8 @@ permalink: /kb/245/Q245006/
 
 ## Q245006: Error 1219 After WNetCancelConnection2
 
+{% raw %}
+
 	Article: Q245006
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -98,3 +100,5 @@ permalink: /kb/245/Q245006/
 	
 	=============================================================================
 	
+
+{% endraw %}

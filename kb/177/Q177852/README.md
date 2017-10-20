@@ -6,6 +6,8 @@ permalink: /kb/177/Q177852/
 
 ## Q177852: FIX: VFP5.0a under Japanese OS Causes DBC Characters Problems
 
+{% raw %}
+
 	Article: Q177852
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a
@@ -65,3 +67,5 @@ permalink: /kb/177/Q177852/
 	
 	=============================================================================
 	
+
+{% endraw %}

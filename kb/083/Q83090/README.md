@@ -6,6 +6,8 @@ permalink: /kb/083/Q83090/
 
 ## Q83090: BUG: LIB Corrupts Import Library Extended Dictionary
 
+{% raw %}
+
 	Article: Q83090
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.17,3.18,3.2,3.31,3.4; OS/2:3.17,3.18
@@ -70,3 +72,5 @@ permalink: /kb/083/Q83090/
 	
 	=============================================================================
 	
+
+{% endraw %}

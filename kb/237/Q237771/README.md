@@ -6,6 +6,8 @@ permalink: /kb/237/Q237771/
 
 ## Q237771: FIX: Events Fail in ATL Containers if Enum Used as Parameter
 
+{% raw %}
+
 	Article: Q237771
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -121,3 +123,5 @@ permalink: /kb/237/Q237771/
 	
 	=============================================================================
 	
+
+{% endraw %}

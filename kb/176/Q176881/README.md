@@ -6,6 +6,8 @@ permalink: /kb/176/Q176881/
 
 ## Q176881: WD97: Err Msg: &quot;Fields Are Nested Too Deeply&quot; in Mail Merge
 
+{% raw %}
+
 	Article: Q176881
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -110,3 +112,5 @@ permalink: /kb/176/Q176881/
 	
 	=============================================================================
 	
+
+{% endraw %}

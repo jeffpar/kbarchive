@@ -6,6 +6,8 @@ permalink: /kb/142/Q142400/
 
 ## Q142400: Encarta 96: National Anthem Play Button Unavailable
 
+{% raw %}
+
 	Article: Q142400
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -63,3 +65,5 @@ permalink: /kb/142/Q142400/
 	
 	=============================================================================
 	
+
+{% endraw %}

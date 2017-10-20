@@ -6,6 +6,8 @@ permalink: /kb/170/Q170236/
 
 ## Q170236: FP: Text Boxes in Table Cells Don't Increment
 
+{% raw %}
+
 	Article: Q170236
 	Product(s): Word Front Page
 	Version(s): windows:97
@@ -76,3 +78,5 @@ permalink: /kb/170/Q170236/
 	
 	=============================================================================
 	
+
+{% endraw %}

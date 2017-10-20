@@ -6,6 +6,8 @@ permalink: /kb/187/Q187430/
 
 ## Q187430: Client Setup Requires License That Is Already Installed
 
+{% raw %}
+
 	Article: Q187430
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -51,3 +53,5 @@ permalink: /kb/187/Q187430/
 	
 	=============================================================================
 	
+
+{% endraw %}

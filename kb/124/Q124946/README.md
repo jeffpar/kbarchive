@@ -6,6 +6,8 @@ permalink: /kb/124/Q124946/
 
 ## Q124946: Error: Macintosh Has Virtual Memory Enabled
 
+{% raw %}
+
 	Article: Q124946
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1994 edition
@@ -50,3 +52,5 @@ permalink: /kb/124/Q124946/
 	
 	=============================================================================
 	
+
+{% endraw %}

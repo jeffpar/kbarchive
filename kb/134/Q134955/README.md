@@ -6,6 +6,8 @@ permalink: /kb/134/Q134955/
 
 ## Q134955: SETUP.EXE Not Installed During Network Monitor Installation
 
+{% raw %}
+
 	Article: Q134955
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -53,3 +55,5 @@ permalink: /kb/134/Q134955/
 	
 	=============================================================================
 	
+
+{% endraw %}

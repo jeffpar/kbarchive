@@ -6,6 +6,8 @@ permalink: /kb/234/Q234220/
 
 ## Q234220: Cannot Dual Boot Windows 95/98 and Windows NT on HP 6330
 
+{% raw %}
+
 	Article: Q234220
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/234/Q234220/
 	
 	=============================================================================
 	
+
+{% endraw %}

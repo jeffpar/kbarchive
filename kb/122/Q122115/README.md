@@ -6,6 +6,8 @@ permalink: /kb/122/Q122115/
 
 ## Q122115: MSB: Theme Song Lyrics
 
+{% raw %}
+
 	Article: Q122115
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0; WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/122/Q122115/
 	
 	=============================================================================
 	
+
+{% endraw %}

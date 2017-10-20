@@ -6,6 +6,8 @@ permalink: /kb/150/Q150317/
 
 ## Q150317: Memory Leak Using Compaq Insight Agents with SCSI Tape Drives
 
+{% raw %}
+
 	Article: Q150317
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -91,3 +93,5 @@ permalink: /kb/150/Q150317/
 	
 	=============================================================================
 	
+
+{% endraw %}

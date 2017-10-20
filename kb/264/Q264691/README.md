@@ -6,6 +6,8 @@ permalink: /kb/264/Q264691/
 
 ## Q264691: Creating OLE DB Connection String for Access Database from ASP
 
+{% raw %}
+
 	Article: Q264691
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -178,3 +180,5 @@ permalink: /kb/264/Q264691/
 	
 	=============================================================================
 	
+
+{% endraw %}

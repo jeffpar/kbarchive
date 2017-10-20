@@ -6,6 +6,8 @@ permalink: /kb/110/Q110125/
 
 ## Q110125: &quot;Volume&quot; and &quot;Drive&quot; Synonymous in Dialog Boxes &amp; Manuals
 
+{% raw %}
+
 	Article: Q110125
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -36,3 +38,5 @@ permalink: /kb/110/Q110125/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/093/Q93093/
 
 ## Q93093: BUG: Memory Use Greater With DPMI Memory Than VCPI or XMS
 
+{% raw %}
+
 	Article: Q93093
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.05,4.1
@@ -55,3 +57,5 @@ permalink: /kb/093/Q93093/
 	
 	=============================================================================
 	
+
+{% endraw %}

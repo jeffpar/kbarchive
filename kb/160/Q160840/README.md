@@ -6,6 +6,8 @@ permalink: /kb/160/Q160840/
 
 ## Q160840: Sharing Violation When Accessing User Profiles
 
+{% raw %}
+
 	Article: Q160840
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -60,3 +62,5 @@ permalink: /kb/160/Q160840/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143179/
 
 ## Q143179: Internet Information Server FTP Server Service Fails to Start
 
+{% raw %}
+
 	Article: Q143179
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -64,3 +66,5 @@ permalink: /kb/143/Q143179/
 	
 	=============================================================================
 	
+
+{% endraw %}

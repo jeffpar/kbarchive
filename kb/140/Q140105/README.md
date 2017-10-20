@@ -6,6 +6,8 @@ permalink: /kb/140/Q140105/
 
 ## Q140105: PRB: Assertion While Switching Property Pages in OLE Control
 
+{% raw %}
+
 	Article: Q140105
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0
@@ -75,3 +77,5 @@ permalink: /kb/140/Q140105/
 	
 	=============================================================================
 	
+
+{% endraw %}

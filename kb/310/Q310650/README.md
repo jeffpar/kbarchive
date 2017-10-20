@@ -6,6 +6,8 @@ permalink: /kb/310/Q310650/
 
 ## Q310650: Known Issues w/ Visual Basic T-SQL Debugger and SQL Server 2000
 
+{% raw %}
+
 	Article: Q310650
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -105,3 +107,5 @@ permalink: /kb/310/Q310650/
 	
 	=============================================================================
 	
+
+{% endraw %}

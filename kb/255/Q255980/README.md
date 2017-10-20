@@ -6,6 +6,8 @@ permalink: /kb/255/Q255980/
 
 ## Q255980: SMS: Incorrect Domain or Computer Name Added as a Logon Point
 
+{% raw %}
+
 	Article: Q255980
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -85,3 +87,5 @@ permalink: /kb/255/Q255980/
 	
 	=============================================================================
 	
+
+{% endraw %}

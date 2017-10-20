@@ -6,6 +6,8 @@ permalink: /kb/165/Q165068/
 
 ## Q165068: PRB: INDEX ON with Variable Length Tag May Behave Differently
 
+{% raw %}
+
 	Article: Q165068
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -110,3 +112,5 @@ permalink: /kb/165/Q165068/
 	
 	=============================================================================
 	
+
+{% endraw %}

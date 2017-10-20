@@ -6,6 +6,8 @@ permalink: /kb/150/Q150126/
 
 ## Q150126: BUG: FOR4280 Warning Given for Unused Result Variables
 
+{% raw %}
+
 	Article: Q150126
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/150/Q150126/
 	
 	=============================================================================
 	
+
+{% endraw %}

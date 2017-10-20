@@ -6,6 +6,8 @@ permalink: /kb/231/Q231554/
 
 ## Q231554: MapPoint: Stops Responding When You Map Shaded Area Map
 
+{% raw %}
+
 	Article: Q231554
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:; :
@@ -67,3 +69,5 @@ permalink: /kb/231/Q231554/
 	
 	=============================================================================
 	
+
+{% endraw %}

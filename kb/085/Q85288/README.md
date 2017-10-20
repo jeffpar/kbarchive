@@ -6,6 +6,8 @@ permalink: /kb/085/Q85288/
 
 ## Q85288: Disk Controllers that Are Compatible with 32-Bit Disk Access
 
+{% raw %}
+
 	Article: Q85288
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -70,3 +72,5 @@ permalink: /kb/085/Q85288/
 	
 	=============================================================================
 	
+
+{% endraw %}

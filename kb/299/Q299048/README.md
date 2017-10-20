@@ -6,6 +6,8 @@ permalink: /kb/299/Q299048/
 
 ## Q299048: MapPoint 2002: &quot;Unable to Locate &#91;CD-ROM Drive&#93;&quot; Err Msg
 
+{% raw %}
+
 	Article: Q299048
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -107,3 +109,5 @@ permalink: /kb/299/Q299048/
 	
 	=============================================================================
 	
+
+{% endraw %}

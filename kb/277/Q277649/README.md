@@ -6,6 +6,8 @@ permalink: /kb/277/Q277649/
 
 ## Q277649: DirectX: Screen Flickers When You Start a Program
 
+{% raw %}
+
 	Article: Q277649
 	Product(s): Microsoft Home Games
 	Version(s): 2000,95
@@ -68,3 +70,5 @@ permalink: /kb/277/Q277649/
 	
 	=============================================================================
 	
+
+{% endraw %}

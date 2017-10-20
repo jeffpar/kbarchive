@@ -6,6 +6,8 @@ permalink: /kb/035/Q35533/
 
 ## Q35533: &quot;Unable to Open Swapping File c:&#92;temp&#92;m-0029.vm&quot;
 
+{% raw %}
+
 	Article: Q35533
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -40,3 +42,5 @@ permalink: /kb/035/Q35533/
 	exist, or if extra characters were included after the "p" in "c:\temp"
 	such as a space or a semicolon, the swapping file will not be created
 	and the error above will be generated.
+
+{% endraw %}

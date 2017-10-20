@@ -6,6 +6,8 @@ permalink: /kb/124/Q124552/
 
 ## Q124552: User Account Limitation
 
+{% raw %}
+
 	Article: Q124552
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -50,3 +52,5 @@ permalink: /kb/124/Q124552/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/225/Q225333/
 
 ## Q225333: FIX: Clussvc.exe Hits 100% CPU Utilization Doing Group Failover
 
+{% raw %}
+
 	Article: Q225333
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/225/Q225333/
 	
 	=============================================================================
 	
+
+{% endraw %}

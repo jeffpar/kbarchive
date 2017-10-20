@@ -6,6 +6,8 @@ permalink: /kb/191/Q191761/
 
 ## Q191761: PRB: Error In VFP When Help File 'Topics Found' Dialog Displays
 
+{% raw %}
+
 	Article: Q191761
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -74,3 +76,5 @@ permalink: /kb/191/Q191761/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/034/Q34142/
 
 ## Q34142: PRB: Link Error L1073: &quot;File-segment Limit Exceeded&quot;
 
+{% raw %}
+
 	Article: Q34142
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.x,5.01.20,5.01.21,5.03,5.05,5.1,5.13,5.15,5.3,5.31.009,5.50,5.60
@@ -56,3 +58,5 @@ permalink: /kb/034/Q34142/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/309/Q309414/
 
 ## Q309414: SNACFG Fails to Create Host Security Domain If HS Groups Exist
 
+{% raw %}
+
 	Article: Q309414
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP3,4.0 SP4
@@ -92,3 +94,5 @@ permalink: /kb/309/Q309414/
 	
 	=============================================================================
 	
+
+{% endraw %}

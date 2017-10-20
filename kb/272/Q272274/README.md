@@ -6,6 +6,8 @@ permalink: /kb/272/Q272274/
 
 ## Q272274: XADM: Information Store Stops Responding on PUSH_NOTIFY Function
 
+{% raw %}
+
 	Article: Q272274
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -113,3 +115,5 @@ permalink: /kb/272/Q272274/
 	
 	=============================================================================
 	
+
+{% endraw %}

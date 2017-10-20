@@ -6,6 +6,8 @@ permalink: /kb/057/Q57671/
 
 ## Q57671: Using DIR&#36; to Load Directory Listing into Array in BASIC 7.00
 
+{% raw %}
+
 	Article: Q57671
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -60,3 +62,5 @@ permalink: /kb/057/Q57671/
 	    Counter = Counter + 1
 	  LOOP WHILE Counter <= NumFiles AND NOT Finished
 	END IF
+
+{% endraw %}

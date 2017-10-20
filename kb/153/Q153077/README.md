@@ -6,6 +6,8 @@ permalink: /kb/153/Q153077/
 
 ## Q153077: LAN Manager and WinNT Servers Running Remoteboot Cannot Coexist
 
+{% raw %}
+
 	Article: Q153077
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.5,3.51; :2.2b,2.2c
@@ -84,3 +86,5 @@ permalink: /kb/153/Q153077/
 	
 	=============================================================================
 	
+
+{% endraw %}

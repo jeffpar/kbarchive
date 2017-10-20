@@ -6,6 +6,8 @@ permalink: /kb/104/Q104363/
 
 ## Q104363: PC Forms: MAPI_FAILURE Forwarding from Shared Folder
 
+{% raw %}
+
 	Article: Q104363
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -61,3 +63,5 @@ permalink: /kb/104/Q104363/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197409/
 
 ## Q197409: Encarta: How to Recover Integrated Yearbook Update Files
 
+{% raw %}
+
 	Article: Q197409
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -134,3 +136,5 @@ permalink: /kb/197/Q197409/
 	
 	=============================================================================
 	
+
+{% endraw %}

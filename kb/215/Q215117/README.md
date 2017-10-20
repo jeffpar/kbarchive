@@ -6,6 +6,8 @@ permalink: /kb/215/Q215117/
 
 ## Q215117: SMS: Long File Names Foil Packages Sent to NetWare Points
 
+{% raw %}
+
 	Article: Q215117
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -88,3 +90,5 @@ permalink: /kb/215/Q215117/
 	
 	=============================================================================
 	
+
+{% endraw %}

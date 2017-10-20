@@ -6,6 +6,8 @@ permalink: /kb/089/Q89023/
 
 ## Q89023: WRK Err: Vector Fonts Can Print on Dot-Matrix Printer
 
+{% raw %}
+
 	Article: Q89023
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -40,3 +42,5 @@ permalink: /kb/089/Q89023/
 	
 	=============================================================================
 	
+
+{% endraw %}

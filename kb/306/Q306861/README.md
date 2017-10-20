@@ -6,6 +6,8 @@ permalink: /kb/306/Q306861/
 
 ## Q306861: How to Connect to a Remote Server Using Remote Access
 
+{% raw %}
+
 	Article: Q306861
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/306/Q306861/
 	
 	=============================================================================
 	
+
+{% endraw %}

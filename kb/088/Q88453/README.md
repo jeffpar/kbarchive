@@ -6,6 +6,8 @@ permalink: /kb/088/Q88453/
 
 ## Q88453: Right Column of Score Card Is Clipped on Diconix Printers
 
+{% raw %}
+
 	Article: Q88453
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/088/Q88453/
 	
 	=============================================================================
 	
+
+{% endraw %}

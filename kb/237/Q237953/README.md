@@ -6,6 +6,8 @@ permalink: /kb/237/Q237953/
 
 ## Q237953: XADM: Erroneous -1018 Error Returned During Online Backup
 
+{% raw %}
+
 	Article: Q237953
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -100,3 +102,5 @@ permalink: /kb/237/Q237953/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145774/
 
 ## Q145774: HTML File Fails to Open from File Manager
 
+{% raw %}
+
 	Article: Q145774
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -73,3 +75,5 @@ permalink: /kb/145/Q145774/
 	
 	=============================================================================
 	
+
+{% endraw %}

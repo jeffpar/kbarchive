@@ -6,6 +6,8 @@ permalink: /kb/312/Q312883/
 
 ## Q312883: You Cannot Change the &quot;Cache ISAPI Applications&quot; Property
 
+{% raw %}
+
 	Article: Q312883
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -86,3 +88,5 @@ permalink: /kb/312/Q312883/
 	
 	=============================================================================
 	
+
+{% endraw %}

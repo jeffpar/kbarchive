@@ -6,6 +6,8 @@ permalink: /kb/168/Q168390/
 
 ## Q168390: Add/Remove Programs Tool Responds Slowly
 
+{% raw %}
+
 	Article: Q168390
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/168/Q168390/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/064/Q64032/
 
 ## Q64032: DOCERR: NMAKE Predefined Macro &#36;(@D) Has Same Value As &#36;@
 
+{% raw %}
+
 	Article: Q64032
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.11; OS/2:1.11
@@ -71,3 +73,5 @@ permalink: /kb/064/Q64032/
 	
 	=============================================================================
 	
+
+{% endraw %}

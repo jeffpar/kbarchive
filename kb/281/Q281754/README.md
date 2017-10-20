@@ -6,6 +6,8 @@ permalink: /kb/281/Q281754/
 
 ## Q281754: SMS: Distribution Points Updated When Opening Package Properties
 
+{% raw %}
+
 	Article: Q281754
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -98,3 +100,5 @@ permalink: /kb/281/Q281754/
 	
 	=============================================================================
 	
+
+{% endraw %}

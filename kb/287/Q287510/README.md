@@ -6,6 +6,8 @@ permalink: /kb/287/Q287510/
 
 ## Q287510: Combat Flight Simulator 2: Game Controller Forces Do Not Work
 
+{% raw %}
+
 	Article: Q287510
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -75,3 +77,5 @@ permalink: /kb/287/Q287510/
 	
 	=============================================================================
 	
+
+{% endraw %}

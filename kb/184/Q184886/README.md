@@ -6,6 +6,8 @@ permalink: /kb/184/Q184886/
 
 ## Q184886: CICS RE: CICS ABEND AZCE When LU 6.2 Message &gt; 32767 Bytes
 
+{% raw %}
+
 	Article: Q184886
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -160,3 +162,5 @@ permalink: /kb/184/Q184886/
 	
 	=============================================================================
 	
+
+{% endraw %}

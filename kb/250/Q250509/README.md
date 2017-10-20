@@ -6,6 +6,8 @@ permalink: /kb/250/Q250509/
 
 ## Q250509: XADM: Using Userdump.exe to Capture State of Information Store
 
+{% raw %}
+
 	Article: Q250509
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -185,3 +187,5 @@ permalink: /kb/250/Q250509/
 	
 	=============================================================================
 	
+
+{% endraw %}

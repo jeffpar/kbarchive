@@ -6,6 +6,8 @@ permalink: /kb/169/Q169209/
 
 ## Q169209: Some Mouse Options Not Available When Using IntelliPoint
 
+{% raw %}
+
 	Article: Q169209
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0 2.0 3.51 4.0
@@ -68,3 +70,5 @@ permalink: /kb/169/Q169209/
 	
 	=============================================================================
 	
+
+{% endraw %}

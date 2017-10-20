@@ -6,6 +6,8 @@ permalink: /kb/131/Q131424/
 
 ## Q131424: PC NTMMTA: Advantages of Running EXTERNAL.EXE as a Service
 
+{% raw %}
+
 	Article: Q131424
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -54,3 +56,5 @@ permalink: /kb/131/Q131424/
 	
 	=============================================================================
 	
+
+{% endraw %}

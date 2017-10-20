@@ -6,6 +6,8 @@ permalink: /kb/240/Q240233/
 
 ## Q240233: XCLN: Local Free-Busy Cache Not Updated When Using AutoAccept
 
+{% raw %}
+
 	Article: Q240233
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:; winnt:5.5,5.5 SP2; :8.03,8.04
@@ -122,3 +124,5 @@ permalink: /kb/240/Q240233/
 	
 	=============================================================================
 	
+
+{% endraw %}

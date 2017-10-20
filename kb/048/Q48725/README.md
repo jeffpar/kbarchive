@@ -6,6 +6,8 @@ permalink: /kb/048/Q48725/
 
 ## Q48725: &quot;Illegal Number&quot; Using -2147483648&amp; in Long Integer Notation
 
+{% raw %}
+
 	Article: Q48725
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -49,3 +51,5 @@ permalink: /kb/048/Q48725/
 	   A& = (-2147483647& - 1&)
 	or
 	   A& = -2147483648#
+
+{% endraw %}

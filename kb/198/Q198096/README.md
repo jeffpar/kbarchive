@@ -6,6 +6,8 @@ permalink: /kb/198/Q198096/
 
 ## Q198096: WD97: Grammatical Errors Not Found in Headers, Footers, Comments
 
+{% raw %}
+
 	Article: Q198096
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/198/Q198096/
 	
 	=============================================================================
 	
+
+{% endraw %}

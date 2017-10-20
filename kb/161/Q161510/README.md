@@ -6,6 +6,8 @@ permalink: /kb/161/Q161510/
 
 ## Q161510: Floppy Not Detected on Ascentia 910N Laptop
 
+{% raw %}
+
 	Article: Q161510
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -68,3 +70,5 @@ permalink: /kb/161/Q161510/
 	
 	=============================================================================
 	
+
+{% endraw %}

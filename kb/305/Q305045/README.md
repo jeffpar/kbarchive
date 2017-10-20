@@ -6,6 +6,8 @@ permalink: /kb/305/Q305045/
 
 ## Q305045: PRB: Messagebox() or Inputbox() Fails to Time Out
 
+{% raw %}
+
 	Article: Q305045
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -64,3 +66,5 @@ permalink: /kb/305/Q305045/
 	
 	=============================================================================
 	
+
+{% endraw %}

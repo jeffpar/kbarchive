@@ -6,6 +6,8 @@ permalink: /kb/319/Q319846/
 
 ## Q319846: XCON: MTA Logs Event ID 2050 or 2051 Err Messages on DMS Server
 
+{% raw %}
+
 	Article: Q319846
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -129,3 +131,5 @@ permalink: /kb/319/Q319846/
 	
 	=============================================================================
 	
+
+{% endraw %}

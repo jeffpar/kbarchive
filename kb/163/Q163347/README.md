@@ -6,6 +6,8 @@ permalink: /kb/163/Q163347/
 
 ## Q163347: PRB: Project Created but No Objects If Add to VSS Is Canceled
 
+{% raw %}
+
 	Article: Q163347
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:97
@@ -110,3 +112,5 @@ permalink: /kb/163/Q163347/
 	
 	=============================================================================
 	
+
+{% endraw %}

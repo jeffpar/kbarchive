@@ -6,6 +6,8 @@ permalink: /kb/083/Q83783/
 
 ## Q83783: Adding Sound Functions and a Sound Icon to Control Panel
 
+{% raw %}
+
 	Article: Q83783
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -67,3 +69,5 @@ permalink: /kb/083/Q83783/
 	
 	=============================================================================
 	
+
+{% endraw %}

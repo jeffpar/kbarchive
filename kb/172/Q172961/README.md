@@ -6,6 +6,8 @@ permalink: /kb/172/Q172961/
 
 ## Q172961: WD97: Items Missing from Recently Used File List
 
+{% raw %}
+
 	Article: Q172961
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -85,3 +87,5 @@ permalink: /kb/172/Q172961/
 	
 	=============================================================================
 	
+
+{% endraw %}

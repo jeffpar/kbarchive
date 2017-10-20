@@ -6,6 +6,8 @@ permalink: /kb/090/Q90064/
 
 ## Q90064: PPT: Cannot Find/Replace Quotation Marks or Apostrophe
 
+{% raw %}
+
 	Article: Q90064
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,7.0
@@ -93,3 +95,5 @@ permalink: /kb/090/Q90064/
 	
 	=============================================================================
 	
+
+{% endraw %}

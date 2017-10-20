@@ -6,6 +6,8 @@ permalink: /kb/200/Q200597/
 
 ## Q200597: BUG: Debugger Cannot Step Out of Recursive Function
 
+{% raw %}
+
 	Article: Q200597
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -59,3 +61,5 @@ permalink: /kb/200/Q200597/
 	
 	=============================================================================
 	
+
+{% endraw %}

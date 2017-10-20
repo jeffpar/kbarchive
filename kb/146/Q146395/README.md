@@ -6,6 +6,8 @@ permalink: /kb/146/Q146395/
 
 ## Q146395: XCLN: Some Inbox Rules will not Fire on Bcc'd Mail
 
+{% raw %}
+
 	Article: Q146395
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -58,3 +60,5 @@ permalink: /kb/146/Q146395/
 	
 	=============================================================================
 	
+
+{% endraw %}

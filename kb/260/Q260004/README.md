@@ -6,6 +6,8 @@ permalink: /kb/260/Q260004/
 
 ## Q260004: StarLancer: Throttle Control on SideWinder Joystick Is Disabled
 
+{% raw %}
+
 	Article: Q260004
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -48,3 +50,5 @@ permalink: /kb/260/Q260004/
 	
 	=============================================================================
 	
+
+{% endraw %}

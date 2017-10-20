@@ -6,6 +6,8 @@ permalink: /kb/175/Q175796/
 
 ## Q175796: HP LaserJet 5Si MX May Repeatedly Print the First Page
 
+{% raw %}
+
 	Article: Q175796
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -116,3 +118,5 @@ permalink: /kb/175/Q175796/
 	
 	=============================================================================
 	
+
+{% endraw %}

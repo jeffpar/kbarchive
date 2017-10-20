@@ -6,6 +6,8 @@ permalink: /kb/148/Q148379/
 
 ## Q148379: XCON: MTA Object Not Showing Up in Administrator Program
 
+{% raw %}
+
 	Article: Q148379
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -42,3 +44,5 @@ permalink: /kb/148/Q148379/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155662/
 
 ## Q155662: Monster Truck Madness: Audio Troubleshooting
 
+{% raw %}
+
 	Article: Q155662
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -144,3 +146,5 @@ permalink: /kb/155/Q155662/
 	
 	=============================================================================
 	
+
+{% endraw %}

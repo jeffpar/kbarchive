@@ -6,6 +6,8 @@ permalink: /kb/123/Q123613/
 
 ## Q123613: FAX: Faxes Print on Every Other Page with Size A4 Paper
 
+{% raw %}
+
 	Article: Q123613
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.0a,3.2
@@ -49,3 +51,5 @@ permalink: /kb/123/Q123613/
 	
 	=============================================================================
 	
+
+{% endraw %}

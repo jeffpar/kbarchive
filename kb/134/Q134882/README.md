@@ -6,6 +6,8 @@ permalink: /kb/134/Q134882/
 
 ## Q134882: DOCERR: Incorrect Code Sample Coordinating Toolbars and Forms
 
+{% raw %}
+
 	Article: Q134882
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -49,3 +51,5 @@ permalink: /kb/134/Q134882/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/091/Q91197/
 
 ## Q91197: How To: Troubleshooting a Network DDE Link with WFWG
 
+{% raw %}
+
 	Article: Q91197
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -85,3 +87,5 @@ permalink: /kb/091/Q91197/
 	
 	=============================================================================
 	
+
+{% endraw %}

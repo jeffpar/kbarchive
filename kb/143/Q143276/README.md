@@ -6,6 +6,8 @@ permalink: /kb/143/Q143276/
 
 ## Q143276: DriveSpace Reboot Fails When Compressing Large Hard Disk
 
+{% raw %}
+
 	Article: Q143276
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -54,3 +56,5 @@ permalink: /kb/143/Q143276/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/032/Q32832/
 
 ## Q32832: DOCERR: New Command-Line Option for MASM 5.1: /LA
 
+{% raw %}
+
 	Article: Q32832
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -68,3 +70,5 @@ permalink: /kb/032/Q32832/
 	
 	=============================================================================
 	
+
+{% endraw %}

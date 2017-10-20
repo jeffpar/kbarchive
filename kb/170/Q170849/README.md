@@ -6,6 +6,8 @@ permalink: /kb/170/Q170849/
 
 ## Q170849: Restore of WINS Database to a Different Server Fails
 
+{% raw %}
+
 	Article: Q170849
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -91,3 +93,5 @@ permalink: /kb/170/Q170849/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164585/
 
 ## Q164585: FIX: VSS Log Files Not Deleted Correctly on NetWare
 
+{% raw %}
+
 	Article: Q164585
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,4.0a
@@ -102,3 +104,5 @@ permalink: /kb/164/Q164585/
 	
 	=============================================================================
 	
+
+{% endraw %}

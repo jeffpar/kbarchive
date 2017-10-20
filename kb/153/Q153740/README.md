@@ -6,6 +6,8 @@ permalink: /kb/153/Q153740/
 
 ## Q153740: Debugging WINS Server Service Event ID 4179
 
+{% raw %}
+
 	Article: Q153740
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -55,3 +57,5 @@ permalink: /kb/153/Q153740/
 	
 	=============================================================================
 	
+
+{% endraw %}

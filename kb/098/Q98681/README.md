@@ -6,6 +6,8 @@ permalink: /kb/098/Q98681/
 
 ## Q98681: SAMPLE: VIEW Demonstrates Drawing Ink at a Slower Rate
 
+{% raw %}
+
 	Article: Q98681
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -81,3 +83,5 @@ permalink: /kb/098/Q98681/
 	
 	=============================================================================
 	
+
+{% endraw %}

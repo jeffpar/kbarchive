@@ -6,6 +6,8 @@ permalink: /kb/322/Q322360/
 
 ## Q322360: List of UNIX Platforms on Which Passport Is Supported
 
+{% raw %}
+
 	Article: Q322360
 	Product(s): Microsoft Developer Network
 	Version(s): 1.1,1.4
@@ -74,3 +76,5 @@ permalink: /kb/322/Q322360/
 	
 	=============================================================================
 	
+
+{% endraw %}

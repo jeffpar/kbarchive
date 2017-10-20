@@ -6,6 +6,8 @@ permalink: /kb/179/Q179017/
 
 ## Q179017: How to Migrate an Existing SNA Server to a New Hardware Platform
 
+{% raw %}
+
 	Article: Q179017
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -86,3 +88,5 @@ permalink: /kb/179/Q179017/
 	
 	=============================================================================
 	
+
+{% endraw %}

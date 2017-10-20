@@ -6,6 +6,8 @@ permalink: /kb/126/Q126752/
 
 ## Q126752: DCs Fail to Synchronize or Validate Users Over NWLINK
 
+{% raw %}
+
 	Article: Q126752
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -82,3 +84,5 @@ permalink: /kb/126/Q126752/
 	
 	=============================================================================
 	
+
+{% endraw %}

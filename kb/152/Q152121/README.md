@@ -6,6 +6,8 @@ permalink: /kb/152/Q152121/
 
 ## Q152121: Windows NT Logon to NetWare Is Slow &amp; Causes Event 8007 Errors
 
+{% raw %}
+
 	Article: Q152121
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -116,3 +118,5 @@ permalink: /kb/152/Q152121/
 	
 	=============================================================================
 	
+
+{% endraw %}

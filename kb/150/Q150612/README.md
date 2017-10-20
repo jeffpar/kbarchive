@@ -6,6 +6,8 @@ permalink: /kb/150/Q150612/
 
 ## Q150612: Deleting the Schedule+ Data From the Exchange Server
 
+{% raw %}
+
 	Article: Q150612
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 4.0,7.0
@@ -83,3 +85,5 @@ permalink: /kb/150/Q150612/
 	
 	=============================================================================
 	
+
+{% endraw %}

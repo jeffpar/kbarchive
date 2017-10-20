@@ -6,6 +6,8 @@ permalink: /kb/183/Q183416/
 
 ## Q183416: WD97: Envelope Prints Blank After Upgrading to SR-1
 
+{% raw %}
+
 	Article: Q183416
 	Product(s): Word 97 for Windows
 	Version(s): Service Release 1 (SR-1)
@@ -79,3 +81,5 @@ permalink: /kb/183/Q183416/
 	
 	=============================================================================
 	
+
+{% endraw %}

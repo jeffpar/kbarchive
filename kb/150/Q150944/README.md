@@ -6,6 +6,8 @@ permalink: /kb/150/Q150944/
 
 ## Q150944: How to Improve Performance in Fury3
 
+{% raw %}
+
 	Article: Q150944
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -70,3 +72,5 @@ permalink: /kb/150/Q150944/
 	
 	=============================================================================
 	
+
+{% endraw %}

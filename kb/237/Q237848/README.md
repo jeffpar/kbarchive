@@ -6,6 +6,8 @@ permalink: /kb/237/Q237848/
 
 ## Q237848: WD97: File Not Registered in ROT After Being Opened in ODMA
 
+{% raw %}
+
 	Article: Q237848
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -72,3 +74,5 @@ permalink: /kb/237/Q237848/
 	
 	=============================================================================
 	
+
+{% endraw %}

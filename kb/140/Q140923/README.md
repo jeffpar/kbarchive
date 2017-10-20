@@ -6,6 +6,8 @@ permalink: /kb/140/Q140923/
 
 ## Q140923: SMS Windows NT Client Terminates Due to Heap Error
 
+{% raw %}
+
 	Article: Q140923
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -56,3 +58,5 @@ permalink: /kb/140/Q140923/
 	
 	=============================================================================
 	
+
+{% endraw %}

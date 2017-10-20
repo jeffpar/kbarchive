@@ -6,6 +6,8 @@ permalink: /kb/113/Q113123/
 
 ## Q113123: Bookshelf: Button Turned Back on Appears at End of Bar
 
+{% raw %}
+
 	Article: Q113123
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,1995 edition
@@ -77,3 +79,5 @@ permalink: /kb/113/Q113123/
 	
 	=============================================================================
 	
+
+{% endraw %}

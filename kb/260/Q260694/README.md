@@ -6,6 +6,8 @@ permalink: /kb/260/Q260694/
 
 ## Q260694: Description of the MaxClientRequestBuffer Registry Value
 
+{% raw %}
+
 	Article: Q260694
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -139,3 +141,5 @@ permalink: /kb/260/Q260694/
 	
 	=============================================================================
 	
+
+{% endraw %}

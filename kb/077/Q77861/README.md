@@ -6,6 +6,8 @@ permalink: /kb/077/Q77861/
 
 ## Q77861: Control Panel's Sound Won't Play Certain Wave Files
 
+{% raw %}
+
 	Article: Q77861
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.0
@@ -70,3 +72,5 @@ permalink: /kb/077/Q77861/
 	
 	=============================================================================
 	
+
+{% endraw %}

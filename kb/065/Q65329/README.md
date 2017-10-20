@@ -6,6 +6,8 @@ permalink: /kb/065/Q65329/
 
 ## Q65329: QC 2.0x Incorrectly Stores Uninitialized Global Data in DGROUP
 
+{% raw %}
+
 	Article: Q65329
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -34,3 +36,5 @@ permalink: /kb/065/Q65329/
 	
 	Microsoft has confirmed this to be a problem with QuickC version 2.00.
 	This problem was corrected with QuickC versions 2.50 and 2.51.
+
+{% endraw %}

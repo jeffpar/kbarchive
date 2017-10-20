@@ -6,6 +6,8 @@ permalink: /kb/133/Q133009/
 
 ## Q133009: Bookshelf: Copy to Word Function Causes GP Fault
 
+{% raw %}
+
 	Article: Q133009
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -110,3 +112,5 @@ permalink: /kb/133/Q133009/
 	
 	=============================================================================
 	
+
+{% endraw %}

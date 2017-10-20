@@ -6,6 +6,8 @@ permalink: /kb/087/Q87977/
 
 ## Q87977: AS/400 Folders Not Recognized in Windows 3.1 386-Enhanced Mode
 
+{% raw %}
+
 	Article: Q87977
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -76,3 +78,5 @@ permalink: /kb/087/Q87977/
 	
 	=============================================================================
 	
+
+{% endraw %}

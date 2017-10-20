@@ -6,6 +6,8 @@ permalink: /kb/106/Q106373/
 
 ## Q106373: Troubleshooting Event Log Error Messages 11 and 12
 
+{% raw %}
+
 	Article: Q106373
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51
@@ -77,3 +79,5 @@ permalink: /kb/106/Q106373/
 	
 	=============================================================================
 	
+
+{% endraw %}

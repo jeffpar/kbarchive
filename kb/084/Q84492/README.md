@@ -6,6 +6,8 @@ permalink: /kb/084/Q84492/
 
 ## Q84492: Setup Error If SYSTEM Subdirectory Exists on Workstation
 
+{% raw %}
+
 	Article: Q84492
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -71,3 +73,5 @@ permalink: /kb/084/Q84492/
 	
 	=============================================================================
 	
+
+{% endraw %}

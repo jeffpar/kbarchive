@@ -6,6 +6,8 @@ permalink: /kb/139/Q139308/
 
 ## Q139308: How to Simulate a Spinner Control for Character Values
 
+{% raw %}
+
 	Article: Q139308
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -183,3 +185,5 @@ permalink: /kb/139/Q139308/
 	
 	=============================================================================
 	
+
+{% endraw %}

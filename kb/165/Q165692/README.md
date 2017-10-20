@@ -6,6 +6,8 @@ permalink: /kb/165/Q165692/
 
 ## Q165692: INFO: Visual C++ 5.0 Readme, OLE DB SDK Issues
 
+{% raw %}
+
 	Article: Q165692
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -87,3 +89,5 @@ permalink: /kb/165/Q165692/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188420/
 
 ## Q188420: XADM: Adding Recipients To a Form May Change Display Name
 
+{% raw %}
+
 	Article: Q188420
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -72,3 +74,5 @@ permalink: /kb/188/Q188420/
 	
 	=============================================================================
 	
+
+{% endraw %}

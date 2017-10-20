@@ -6,6 +6,8 @@ permalink: /kb/223/Q223025/
 
 ## Q223025: HOWTO: Call GetNetworkParams/GetAdaptersInfo From Visual Basic
 
+{% raw %}
+
 	Article: Q223025
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2000,4.0,5.0,6.0
@@ -334,3 +336,5 @@ permalink: /kb/223/Q223025/
 	
 	=============================================================================
 	
+
+{% endraw %}

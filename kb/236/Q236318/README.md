@@ -6,6 +6,8 @@ permalink: /kb/236/Q236318/
 
 ## Q236318: Server Connection Account Created in Same Domain as Site Server
 
+{% raw %}
+
 	Article: Q236318
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -67,3 +69,5 @@ permalink: /kb/236/Q236318/
 	
 	=============================================================================
 	
+
+{% endraw %}

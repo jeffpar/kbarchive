@@ -6,6 +6,8 @@ permalink: /kb/257/Q257791/
 
 ## Q257791: FIX: VB Crashes While Trying to Compile/Link the Program
 
+{% raw %}
+
 	Article: Q257791
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -58,3 +60,5 @@ permalink: /kb/257/Q257791/
 	
 	=============================================================================
 	
+
+{% endraw %}

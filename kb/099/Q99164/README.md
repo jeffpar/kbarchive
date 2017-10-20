@@ -6,6 +6,8 @@ permalink: /kb/099/Q99164/
 
 ## Q99164: Mac Srv: Serial Numbers in Retail and Upgrade Servers
 
+{% raw %}
+
 	Article: Q99164
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1,3.1a
@@ -72,3 +74,5 @@ permalink: /kb/099/Q99164/
 	
 	=============================================================================
 	
+
+{% endraw %}

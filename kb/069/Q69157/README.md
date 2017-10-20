@@ -6,6 +6,8 @@ permalink: /kb/069/Q69157/
 
 ## Q69157: Bad Values When QLB Function Used as SUB Parameter
 
+{% raw %}
+
 	Article: Q69157
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -72,3 +74,5 @@ permalink: /kb/069/Q69157/
 	SUB foo (a!, b!)
 	    PRINT a!; b!
 	END SUB
+
+{% endraw %}

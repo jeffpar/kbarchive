@@ -6,6 +6,8 @@ permalink: /kb/106/Q106161/
 
 ## Q106161: How to Convert Screen Object Positions Between Platforms
 
+{% raw %}
+
 	Article: Q106161
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
@@ -82,3 +84,5 @@ permalink: /kb/106/Q106161/
 	
 	=============================================================================
 	
+
+{% endraw %}

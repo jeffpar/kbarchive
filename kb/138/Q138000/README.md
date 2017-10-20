@@ -6,6 +6,8 @@ permalink: /kb/138/Q138000/
 
 ## Q138000: Error Connecting to an Attachmate Gateway with a Cisco Router
 
+{% raw %}
+
 	Article: Q138000
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/138/Q138000/
 	
 	=============================================================================
 	
+
+{% endraw %}

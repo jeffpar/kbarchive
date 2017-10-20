@@ -6,6 +6,8 @@ permalink: /kb/135/Q135400/
 
 ## Q135400: FIX: Unallocated Handle When Deleting Zero Value of a Grid
 
+{% raw %}
+
 	Article: Q135400
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/135/Q135400/
 	
 	=============================================================================
 	
+
+{% endraw %}

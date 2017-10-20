@@ -6,6 +6,8 @@ permalink: /kb/205/Q205681/
 
 ## Q205681: FIX: Operator ++ In Return Statement May Cause Access Violation
 
+{% raw %}
+
 	Article: Q205681
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -127,3 +129,5 @@ permalink: /kb/205/Q205681/
 	
 	=============================================================================
 	
+
+{% endraw %}

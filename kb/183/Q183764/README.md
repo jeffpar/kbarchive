@@ -6,6 +6,8 @@ permalink: /kb/183/Q183764/
 
 ## Q183764: XCLN: Mailto: URL Appears in E-mail Message
 
+{% raw %}
+
 	Article: Q183764
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03; WINDOWS:4.0,5.0
@@ -77,3 +79,5 @@ permalink: /kb/183/Q183764/
 	
 	=============================================================================
 	
+
+{% endraw %}

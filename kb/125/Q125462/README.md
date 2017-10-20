@@ -6,6 +6,8 @@ permalink: /kb/125/Q125462/
 
 ## Q125462: How to Dial Number in the Same Area Code as Long Distance
 
+{% raw %}
+
 	Article: Q125462
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5
@@ -51,3 +53,5 @@ permalink: /kb/125/Q125462/
 	
 	=============================================================================
 	
+
+{% endraw %}

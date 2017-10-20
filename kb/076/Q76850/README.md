@@ -6,6 +6,8 @@ permalink: /kb/076/Q76850/
 
 ## Q76850: README.TXT: Using HIMEM.SYS
 
+{% raw %}
+
 	Article: Q76850
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0
@@ -87,3 +89,5 @@ permalink: /kb/076/Q76850/
 	
 	=============================================================================
 	
+
+{% endraw %}

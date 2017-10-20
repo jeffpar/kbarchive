@@ -6,6 +6,8 @@ permalink: /kb/191/Q191896/
 
 ## Q191896: Printing to NT LPD Server from SUN OS 4.1.4 May Not Process C/R
 
+{% raw %}
+
 	Article: Q191896
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/191/Q191896/
 	
 	=============================================================================
 	
+
+{% endraw %}

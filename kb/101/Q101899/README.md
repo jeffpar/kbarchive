@@ -6,6 +6,8 @@ permalink: /kb/101/Q101899/
 
 ## Q101899: Recreating the Windows NT Mail Postoffice
 
+{% raw %}
+
 	Article: Q101899
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -158,3 +160,5 @@ permalink: /kb/101/Q101899/
 	
 	=============================================================================
 	
+
+{% endraw %}

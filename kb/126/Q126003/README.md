@@ -6,6 +6,8 @@ permalink: /kb/126/Q126003/
 
 ## Q126003: Writer/Artist: Keyboard Shortcuts
 
+{% raw %}
+
 	Article: Q126003
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
@@ -58,3 +60,5 @@ permalink: /kb/126/Q126003/
 	
 	=============================================================================
 	
+
+{% endraw %}

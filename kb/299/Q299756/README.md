@@ -6,6 +6,8 @@ permalink: /kb/299/Q299756/
 
 ## Q299756: Train Simulator: Sound Cuts Off Suddenly as Trains Pass
 
+{% raw %}
+
 	Article: Q299756
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -42,3 +44,5 @@ permalink: /kb/299/Q299756/
 	
 	=============================================================================
 	
+
+{% endraw %}

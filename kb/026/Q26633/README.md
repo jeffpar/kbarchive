@@ -6,6 +6,8 @@ permalink: /kb/026/Q26633/
 
 ## Q26633: Make .EXE Option Cannot Find .LIB If Not in Current Directory
 
+{% raw %}
+
 	Article: Q26633
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -58,3 +60,5 @@ permalink: /kb/026/Q26633/
 	4. Choose Make EXE File from the Run menu. QuickBASIC will put the
 	   QB.LIB file in the incorrect spot in the link step. (Press F4 as a
 	   toggle to see the DOS output window.)
+
+{% endraw %}

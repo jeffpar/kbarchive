@@ -6,6 +6,8 @@ permalink: /kb/142/Q142013/
 
 ## Q142013: Adaptec AHA2940 Related Problems
 
+{% raw %}
+
 	Article: Q142013
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -61,3 +63,5 @@ permalink: /kb/142/Q142013/
 	
 	=============================================================================
 	
+
+{% endraw %}

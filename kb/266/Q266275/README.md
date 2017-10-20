@@ -6,6 +6,8 @@ permalink: /kb/266/Q266275/
 
 ## Q266275: HIS 2000 Client LU6.2 Load Balancing Across SNA Server Services
 
+{% raw %}
+
 	Article: Q266275
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -100,3 +102,5 @@ permalink: /kb/266/Q266275/
 	
 	=============================================================================
 	
+
+{% endraw %}

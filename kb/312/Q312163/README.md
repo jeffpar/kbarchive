@@ -6,6 +6,8 @@ permalink: /kb/312/Q312163/
 
 ## Q312163: DBCS TrueType Characters Are Garbled
 
+{% raw %}
+
 	Article: Q312163
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6,4.0 SP6a
@@ -96,3 +98,5 @@ permalink: /kb/312/Q312163/
 	
 	=============================================================================
 	
+
+{% endraw %}

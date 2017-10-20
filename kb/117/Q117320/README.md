@@ -6,6 +6,8 @@ permalink: /kb/117/Q117320/
 
 ## Q117320: How to Programatically Terminate an MFC Application
 
+{% raw %}
+
 	Article: Q117320
 	Product(s): Microsoft C Compiler
 	Version(s): 1.00 1.50 1.51 1.52 | 1.00 2.00
@@ -70,3 +72,5 @@ permalink: /kb/117/Q117320/
 	
 	=============================================================================
 	
+
+{% endraw %}

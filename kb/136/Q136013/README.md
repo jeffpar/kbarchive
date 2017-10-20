@@ -6,6 +6,8 @@ permalink: /kb/136/Q136013/
 
 ## Q136013: Minitel Emulation in HyperTerminal
 
+{% raw %}
+
 	Article: Q136013
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/136/Q136013/
 	
 	=============================================================================
 	
+
+{% endraw %}

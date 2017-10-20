@@ -6,6 +6,8 @@ permalink: /kb/271/Q271793/
 
 ## Q271793: DFS Version 4.1 Causes &quot;Failed to Create Volume&quot; Error Message
 
+{% raw %}
+
 	Article: Q271793
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -58,3 +60,5 @@ permalink: /kb/271/Q271793/
 	
 	=============================================================================
 	
+
+{% endraw %}

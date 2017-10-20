@@ -6,6 +6,8 @@ permalink: /kb/314/Q314818/
 
 ## Q314818: FIX: Error Assigning MSSOAP Connector.OutPutStream to Variable
 
+{% raw %}
+
 	Article: Q314818
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -83,3 +85,5 @@ permalink: /kb/314/Q314818/
 	
 	=============================================================================
 	
+
+{% endraw %}

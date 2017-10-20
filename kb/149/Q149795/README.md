@@ -6,6 +6,8 @@ permalink: /kb/149/Q149795/
 
 ## Q149795: Explorapedia People: Installs Visual FoxPro
 
+{% raw %}
+
 	Article: Q149795
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -47,3 +49,5 @@ permalink: /kb/149/Q149795/
 	
 	=============================================================================
 	
+
+{% endraw %}

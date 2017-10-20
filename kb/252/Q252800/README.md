@@ -6,6 +6,8 @@ permalink: /kb/252/Q252800/
 
 ## Q252800: XCLN: Meeting Request Goes to Former Delegate
 
+{% raw %}
+
 	Article: Q252800
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 7.0,7.0a,7.5
@@ -100,3 +102,5 @@ permalink: /kb/252/Q252800/
 	
 	=============================================================================
 	
+
+{% endraw %}

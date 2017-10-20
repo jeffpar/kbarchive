@@ -6,6 +6,8 @@ permalink: /kb/106/Q106365/
 
 ## Q106365: Positions of Minimized Icons Are Not Saved in File Manager
 
+{% raw %}
+
 	Article: Q106365
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -52,3 +54,5 @@ permalink: /kb/106/Q106365/
 	
 	=============================================================================
 	
+
+{% endraw %}

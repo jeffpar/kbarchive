@@ -6,6 +6,8 @@ permalink: /kb/257/Q257703/
 
 ## Q257703: FIX: ListView Control Still Active After Opening Modal Form
 
+{% raw %}
+
 	Article: Q257703
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -106,3 +108,5 @@ permalink: /kb/257/Q257703/
 	
 	=============================================================================
 	
+
+{% endraw %}

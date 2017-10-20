@@ -6,6 +6,8 @@ permalink: /kb/113/Q113452/
 
 ## Q113452: PC Adm: Files Written to Remote User Data Disk
 
+{% raw %}
+
 	Article: Q113452
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -46,3 +48,5 @@ permalink: /kb/113/Q113452/
 	
 	=============================================================================
 	
+
+{% endraw %}

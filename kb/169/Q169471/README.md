@@ -6,6 +6,8 @@ permalink: /kb/169/Q169471/
 
 ## Q169471: BUG: SET CENTURY OFF is Ignored if Date is Over Year 2000
 
+{% raw %}
+
 	Article: Q169471
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a
@@ -76,3 +78,5 @@ permalink: /kb/169/Q169471/
 	
 	=============================================================================
 	
+
+{% endraw %}

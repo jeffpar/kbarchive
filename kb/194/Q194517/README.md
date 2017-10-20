@@ -6,6 +6,8 @@ permalink: /kb/194/Q194517/
 
 ## Q194517: HOWTO: Use Creatable ADO Recordsets in Visual FoxPro
 
+{% raw %}
+
 	Article: Q194517
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.1 SP2,2.6,6.0
@@ -91,3 +93,5 @@ permalink: /kb/194/Q194517/
 	
 	=============================================================================
 	
+
+{% endraw %}

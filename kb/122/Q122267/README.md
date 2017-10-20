@@ -6,6 +6,8 @@ permalink: /kb/122/Q122267/
 
 ## Q122267: BUG: C2511 Error on Member Function with Unknown Parameter
 
+{% raw %}
+
 	Article: Q122267
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,2.0
@@ -102,3 +104,5 @@ permalink: /kb/122/Q122267/
 	
 	=============================================================================
 	
+
+{% endraw %}

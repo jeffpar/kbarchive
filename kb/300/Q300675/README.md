@@ -6,6 +6,8 @@ permalink: /kb/300/Q300675/
 
 ## Q300675: HOW TO: Create a Metabase Backup by Using IIS in Windows NT
 
+{% raw %}
+
 	Article: Q300675
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -106,3 +108,5 @@ permalink: /kb/300/Q300675/
 	
 	=============================================================================
 	
+
+{% endraw %}

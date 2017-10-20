@@ -6,6 +6,8 @@ permalink: /kb/161/Q161529/
 
 ## Q161529: Starts Here Err Msg: You Do Not Have Enough Disk Space...
 
+{% raw %}
+
 	Article: Q161529
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/161/Q161529/
 	
 	=============================================================================
 	
+
+{% endraw %}

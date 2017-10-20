@@ -6,6 +6,8 @@ permalink: /kb/169/Q169519/
 
 ## Q169519: XADM: Exchange 5.5 Remove All Option Removes Database Files
 
+{% raw %}
+
 	Article: Q169519
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -44,3 +46,5 @@ permalink: /kb/169/Q169519/
 	
 	=============================================================================
 	
+
+{% endraw %}

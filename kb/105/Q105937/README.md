@@ -6,6 +6,8 @@ permalink: /kb/105/Q105937/
 
 ## Q105937: FIX: /4Ys or &#36;STRICT on Character Functions Causes F2368
 
+{% raw %}
+
 	Article: Q105937
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -74,3 +76,5 @@ permalink: /kb/105/Q105937/
 	
 	=============================================================================
 	
+
+{% endraw %}

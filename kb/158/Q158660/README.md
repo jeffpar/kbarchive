@@ -6,6 +6,8 @@ permalink: /kb/158/Q158660/
 
 ## Q158660: LEARN JAVA NOW Corrections and Comments
 
+{% raw %}
+
 	Article: Q158660
 	Product(s): Microsoft Press
 	Version(s): 
@@ -244,3 +246,5 @@ permalink: /kb/158/Q158660/
 	
 	=============================================================================
 	
+
+{% endraw %}

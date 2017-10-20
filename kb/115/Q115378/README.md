@@ -6,6 +6,8 @@ permalink: /kb/115/Q115378/
 
 ## Q115378: PC Tools 9.0 Cannot Recognize DriveSpace Format; Use ScanDisk
 
+{% raw %}
+
 	Article: Q115378
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -52,3 +54,5 @@ permalink: /kb/115/Q115378/
 	
 	=============================================================================
 	
+
+{% endraw %}

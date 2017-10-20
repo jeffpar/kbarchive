@@ -6,6 +6,8 @@ permalink: /kb/112/Q112491/
 
 ## Q112491: Multimedia: Secondary Window on Top When Schubert Is Restored
 
+{% raw %}
+
 	Article: Q112491
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/112/Q112491/
 	
 	=============================================================================
 	
+
+{% endraw %}

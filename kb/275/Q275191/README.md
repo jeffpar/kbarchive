@@ -6,6 +6,8 @@ permalink: /kb/275/Q275191/
 
 ## Q275191: SMS: Corrupted Raw File Is Created After Hardware Inventory
 
+{% raw %}
+
 	Article: Q275191
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -102,3 +104,5 @@ permalink: /kb/275/Q275191/
 	
 	=============================================================================
 	
+
+{% endraw %}

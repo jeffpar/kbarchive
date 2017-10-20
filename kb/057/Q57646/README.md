@@ -6,6 +6,8 @@ permalink: /kb/057/Q57646/
 
 ## Q57646: Use STACK, Not FRE(&quot;), with QBX.EXE or /Fs in BASIC 7.00
 
+{% raw %}
+
 	Article: Q57646
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -38,3 +40,5 @@ permalink: /kb/057/Q57646/
 	For more information on the many changes in the FRE() function in
 	regard to far strings, refer to Pages 140-142 of the "Microsoft BASIC
 	7.0: Language Reference" manual.
+
+{% endraw %}

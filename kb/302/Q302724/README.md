@@ -6,6 +6,8 @@ permalink: /kb/302/Q302724/
 
 ## Q302724: Windows XP Guest Profile Cannot Sign In To MSN Explorer 6.1 Afte
 
+{% raw %}
+
 	Article: Q302724
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -52,3 +54,5 @@ permalink: /kb/302/Q302724/
 	
 	=============================================================================
 	
+
+{% endraw %}

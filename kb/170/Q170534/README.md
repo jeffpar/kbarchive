@@ -6,6 +6,8 @@ permalink: /kb/170/Q170534/
 
 ## Q170534: Microsoft FTP Client Echoes Gateway Password on the Screen
 
+{% raw %}
+
 	Article: Q170534
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/170/Q170534/
 	
 	=============================================================================
 	
+
+{% endraw %}

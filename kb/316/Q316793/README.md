@@ -6,6 +6,8 @@ permalink: /kb/316/Q316793/
 
 ## Q316793: IIS5: Greenland Not Displayed As Option in Certificate Wizard
 
+{% raw %}
+
 	Article: Q316793
 	Product(s): Internet Information Server
 	Version(s): 2000,2000 SP1,2000 SP2,5.0
@@ -83,3 +85,5 @@ permalink: /kb/316/Q316793/
 	
 	=============================================================================
 	
+
+{% endraw %}

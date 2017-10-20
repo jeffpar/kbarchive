@@ -6,6 +6,8 @@ permalink: /kb/143/Q143474/
 
 ## Q143474: Restricting Information Available to Anonymous Logon Users
 
+{% raw %}
+
 	Article: Q143474
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0 SP3
@@ -184,3 +186,5 @@ permalink: /kb/143/Q143474/
 	
 	=============================================================================
 	
+
+{% endraw %}

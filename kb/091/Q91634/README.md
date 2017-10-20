@@ -6,6 +6,8 @@ permalink: /kb/091/Q91634/
 
 ## Q91634: Using RAMDrive to Speed Up MS-DOS Task Swapper
 
+{% raw %}
+
 	Article: Q91634
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -92,3 +94,5 @@ permalink: /kb/091/Q91634/
 	
 	=============================================================================
 	
+
+{% endraw %}

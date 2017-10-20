@@ -6,6 +6,8 @@ permalink: /kb/143/Q143275/
 
 ## Q143275: BUG: GP Fault with DBCombo and Sheridan 3D Control
 
+{% raw %}
+
 	Article: Q143275
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -66,3 +68,5 @@ permalink: /kb/143/Q143275/
 	
 	=============================================================================
 	
+
+{% endraw %}

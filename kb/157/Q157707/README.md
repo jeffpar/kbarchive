@@ -6,6 +6,8 @@ permalink: /kb/157/Q157707/
 
 ## Q157707: XFOR: The IMC Does Not Dial on Weekends
 
+{% raw %}
+
 	Article: Q157707
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/157/Q157707/
 	
 	=============================================================================
 	
+
+{% endraw %}

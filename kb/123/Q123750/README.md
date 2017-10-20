@@ -6,6 +6,8 @@ permalink: /kb/123/Q123750/
 
 ## Q123750: Debugging Windows NT Setup STOP Screens
 
+{% raw %}
+
 	Article: Q123750
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -160,3 +162,5 @@ permalink: /kb/123/Q123750/
 	
 	=============================================================================
 	
+
+{% endraw %}

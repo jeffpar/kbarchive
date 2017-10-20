@@ -6,6 +6,8 @@ permalink: /kb/236/Q236166/
 
 ## Q236166: Using NET STOP and NET START Commands with IIS Services
 
+{% raw %}
+
 	Article: Q236166
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -104,3 +106,5 @@ permalink: /kb/236/Q236166/
 	
 	=============================================================================
 	
+
+{% endraw %}

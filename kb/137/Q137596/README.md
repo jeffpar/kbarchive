@@ -6,6 +6,8 @@ permalink: /kb/137/Q137596/
 
 ## Q137596: PPT7: Can't Print Multiple Copies to HP DeskJet Printer
 
+{% raw %}
+
 	Article: Q137596
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -67,3 +69,5 @@ permalink: /kb/137/Q137596/
 	
 	=============================================================================
 	
+
+{% endraw %}

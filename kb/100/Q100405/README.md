@@ -6,6 +6,8 @@ permalink: /kb/100/Q100405/
 
 ## Q100405: Microsoft Undelete for Windows Fails to Find Deleted Files
 
+{% raw %}
+
 	Article: Q100405
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -40,3 +42,5 @@ permalink: /kb/100/Q100405/
 	
 	=============================================================================
 	
+
+{% endraw %}

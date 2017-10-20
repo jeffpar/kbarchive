@@ -6,6 +6,8 @@ permalink: /kb/214/Q214680/
 
 ## Q214680: Cluster Setup Does Not Recognize Disk with over 3 Logical Drives
 
+{% raw %}
+
 	Article: Q214680
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/214/Q214680/
 	
 	=============================================================================
 	
+
+{% endraw %}

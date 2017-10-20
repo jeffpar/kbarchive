@@ -6,6 +6,8 @@ permalink: /kb/159/Q159153/
 
 ## Q159153: Error Messages While Backing Up to Some Floppy Disk Drives
 
+{% raw %}
+
 	Article: Q159153
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1.0,2.0,2.1,2.5
@@ -78,3 +80,5 @@ permalink: /kb/159/Q159153/
 	
 	=============================================================================
 	
+
+{% endraw %}

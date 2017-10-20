@@ -6,6 +6,8 @@ permalink: /kb/026/Q26015/
 
 ## Q26015: &quot;Type Mismatch&quot; in Editor Changing Size of Array in COMMON
 
+{% raw %}
+
 	Article: Q26015
 	Product(s): See article
 	Version(s): 4.00
@@ -28,3 +30,5 @@ permalink: /kb/026/Q26015/
 	
 	Microsoft has confirmed this to be a problem in Version 4.00. This
 	problem is corrected in QuickBASIC Versions 4.00b and 4.50.
+
+{% endraw %}

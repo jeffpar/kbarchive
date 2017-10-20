@@ -6,6 +6,8 @@ permalink: /kb/284/Q284195/
 
 ## Q284195: Encarta 99: Cannot Use Research Organizer on Windows 2000
 
+{% raw %}
+
 	Article: Q284195
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,2000
@@ -59,3 +61,5 @@ permalink: /kb/284/Q284195/
 	
 	=============================================================================
 	
+
+{% endraw %}

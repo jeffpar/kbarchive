@@ -6,6 +6,8 @@ permalink: /kb/195/Q195519/
 
 ## Q195519: XADM: How to Recover When the Transaction Log Drive Fails
 
+{% raw %}
+
 	Article: Q195519
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:4.0,5.0,5.5
@@ -121,3 +123,5 @@ permalink: /kb/195/Q195519/
 	
 	=============================================================================
 	
+
+{% endraw %}

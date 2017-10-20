@@ -6,6 +6,8 @@ permalink: /kb/139/Q139049/
 
 ## Q139049: How to Make Combo or List Boxes Hold More than 255 Characters
 
+{% raw %}
+
 	Article: Q139049
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -81,3 +83,5 @@ permalink: /kb/139/Q139049/
 	
 	=============================================================================
 	
+
+{% endraw %}

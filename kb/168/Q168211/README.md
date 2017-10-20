@@ -6,6 +6,8 @@ permalink: /kb/168/Q168211/
 
 ## Q168211: XFOR: How To Modify CC:Mail Connector Polling Frequency
 
+{% raw %}
+
 	Article: Q168211
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -109,3 +111,5 @@ permalink: /kb/168/Q168211/
 	
 	=============================================================================
 	
+
+{% endraw %}

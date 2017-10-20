@@ -6,6 +6,8 @@ permalink: /kb/096/Q96307/
 
 ## Q96307: Mac SMI: MapiSaveMail Is Not Supported
 
+{% raw %}
+
 	Article: Q96307
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -43,3 +45,5 @@ permalink: /kb/096/Q96307/
 	
 	=============================================================================
 	
+
+{% endraw %}

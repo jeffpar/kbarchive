@@ -6,6 +6,8 @@ permalink: /kb/128/Q128958/
 
 ## Q128958: Mac Wkst: Using Mail Notifier and Novell NetWare 4.1
 
+{% raw %}
+
 	Article: Q128958
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/128/Q128958/
 	
 	=============================================================================
 	
+
+{% endraw %}

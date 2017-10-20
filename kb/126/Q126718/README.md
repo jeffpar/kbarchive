@@ -6,6 +6,8 @@ permalink: /kb/126/Q126718/
 
 ## Q126718: PC Ext: Using External with Novell and Windows NT Postoffices
 
+{% raw %}
+
 	Article: Q126718
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2,3.2a
@@ -104,3 +106,5 @@ permalink: /kb/126/Q126718/
 	
 	=============================================================================
 	
+
+{% endraw %}

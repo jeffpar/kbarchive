@@ -6,6 +6,8 @@ permalink: /kb/165/Q165976/
 
 ## Q165976: WD97: DefaultBorderColorIndex Does Not Apply Color First Time
 
+{% raw %}
+
 	Article: Q165976
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -110,3 +112,5 @@ permalink: /kb/165/Q165976/
 	
 	=============================================================================
 	
+
+{% endraw %}

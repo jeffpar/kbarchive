@@ -6,6 +6,8 @@ permalink: /kb/082/Q82068/
 
 ## Q82068: PC Win: Err Msg: A Message Could Not Be Opened
 
+{% raw %}
+
 	Article: Q82068
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -49,3 +51,5 @@ permalink: /kb/082/Q82068/
 	
 	=============================================================================
 	
+
+{% endraw %}

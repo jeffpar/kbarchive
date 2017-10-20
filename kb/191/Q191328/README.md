@@ -6,6 +6,8 @@ permalink: /kb/191/Q191328/
 
 ## Q191328: SMS: Service Account Does Not Have Rights on Member Server
 
+{% raw %}
+
 	Article: Q191328
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -67,3 +69,5 @@ permalink: /kb/191/Q191328/
 	
 	=============================================================================
 	
+
+{% endraw %}

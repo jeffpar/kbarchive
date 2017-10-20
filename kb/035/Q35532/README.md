@@ -6,6 +6,8 @@ permalink: /kb/035/Q35532/
 
 ## Q35532: Saving Files Under a Different Name
 
+{% raw %}
+
 	Article: Q35532
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -25,3 +27,5 @@ permalink: /kb/035/Q35532/
 	
 	   Arg Arg textarg Setfile, where textarg is the filename you wish to
 	   save the file under.
+
+{% endraw %}

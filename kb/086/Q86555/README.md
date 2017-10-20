@@ -6,6 +6,8 @@ permalink: /kb/086/Q86555/
 
 ## Q86555: MHS: Versions of MHS Supported by the Gateway to MHS
 
+{% raw %}
+
 	Article: Q86555
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/086/Q86555/
 	
 	=============================================================================
 	
+
+{% endraw %}

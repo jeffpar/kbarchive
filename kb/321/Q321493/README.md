@@ -6,6 +6,8 @@ permalink: /kb/321/Q321493/
 
 ## Q321493: FP: Err Msg: PivotTable List Could Not Connect to Data Source
 
+{% raw %}
+
 	Article: Q321493
 	Product(s): Word Front Page
 	Version(s): 
@@ -201,3 +203,5 @@ permalink: /kb/321/Q321493/
 	
 	=============================================================================
 	
+
+{% endraw %}

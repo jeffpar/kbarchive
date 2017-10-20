@@ -6,6 +6,8 @@ permalink: /kb/163/Q163490/
 
 ## Q163490: WD97: How to Rename, Copy, or Delete a Macro
 
+{% raw %}
+
 	Article: Q163490
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -154,3 +156,5 @@ permalink: /kb/163/Q163490/
 	
 	=============================================================================
 	
+
+{% endraw %}

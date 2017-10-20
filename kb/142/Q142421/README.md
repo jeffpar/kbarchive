@@ -6,6 +6,8 @@ permalink: /kb/142/Q142421/
 
 ## Q142421: FIX: D2004 Caused by /Tp or /Tc Option in Visual C++ 4.0
 
+{% raw %}
+
 	Article: Q142421
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -77,3 +79,5 @@ permalink: /kb/142/Q142421/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/257/Q257262/
 
 ## Q257262: SMS: Subfolders Under CAP Share Folder Are Not Created
 
+{% raw %}
+
 	Article: Q257262
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -88,3 +90,5 @@ permalink: /kb/257/Q257262/
 	
 	=============================================================================
 	
+
+{% endraw %}

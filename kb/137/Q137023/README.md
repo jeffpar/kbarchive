@@ -6,6 +6,8 @@ permalink: /kb/137/Q137023/
 
 ## Q137023: PRB: Can't See Changed Data If Update VB 3.0 DB App to VB 4.0
 
+{% raw %}
+
 	Article: Q137023
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0,4.0
@@ -118,3 +120,5 @@ permalink: /kb/137/Q137023/
 	
 	=============================================================================
 	
+
+{% endraw %}

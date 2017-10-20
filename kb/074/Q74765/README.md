@@ -6,6 +6,8 @@ permalink: /kb/074/Q74765/
 
 ## Q74765: Corruption of the SETVER Table
 
+{% raw %}
+
 	Article: Q74765
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -56,3 +58,5 @@ permalink: /kb/074/Q74765/
 	
 	=============================================================================
 	
+
+{% endraw %}

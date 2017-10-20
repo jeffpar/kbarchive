@@ -6,6 +6,8 @@ permalink: /kb/077/Q77542/
 
 ## Q77542: Norton Speed Disk Not Compatible with SMARTDrive
 
+{% raw %}
+
 	Article: Q77542
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -58,3 +60,5 @@ permalink: /kb/077/Q77542/
 	
 	=============================================================================
 	
+
+{% endraw %}

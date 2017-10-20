@@ -6,6 +6,8 @@ permalink: /kb/157/Q157077/
 
 ## Q157077: Netstat Slow to List Large Numbers of Connections
 
+{% raw %}
+
 	Article: Q157077
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/157/Q157077/
 	
 	=============================================================================
 	
+
+{% endraw %}

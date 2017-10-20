@@ -6,6 +6,8 @@ permalink: /kb/266/Q266083/
 
 ## Q266083: How to Migrate Objects from One Domain to Another Domain
 
+{% raw %}
+
 	Article: Q266083
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -187,3 +189,5 @@ permalink: /kb/266/Q266083/
 	
 	=============================================================================
 	
+
+{% endraw %}

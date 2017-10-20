@@ -6,6 +6,8 @@ permalink: /kb/125/Q125307/
 
 ## Q125307: EPP and ECP Bi-Directional Port Support
 
+{% raw %}
+
 	Article: Q125307
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -37,3 +39,5 @@ permalink: /kb/125/Q125307/
 	
 	=============================================================================
 	
+
+{% endraw %}

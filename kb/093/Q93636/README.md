@@ -6,6 +6,8 @@ permalink: /kb/093/Q93636/
 
 ## Q93636: ERR: &quot;Incorrect Results&quot; When Using SET EXACT in FoxBASE+/Mac
 
+{% raw %}
+
 	Article: Q93636
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -59,3 +61,5 @@ permalink: /kb/093/Q93636/
 	
 	=============================================================================
 	
+
+{% endraw %}

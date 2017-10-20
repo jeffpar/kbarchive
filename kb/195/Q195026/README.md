@@ -6,6 +6,8 @@ permalink: /kb/195/Q195026/
 
 ## Q195026: FIX: Links Are Not Updated After Renaming a Project
 
+{% raw %}
+
 	Article: Q195026
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0
@@ -116,3 +118,5 @@ permalink: /kb/195/Q195026/
 	
 	=============================================================================
 	
+
+{% endraw %}

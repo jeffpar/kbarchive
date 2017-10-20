@@ -6,6 +6,8 @@ permalink: /kb/185/Q185684/
 
 ## Q185684: WD97: Wrong Calculation Result with Bookmarks in Table
 
+{% raw %}
+
 	Article: Q185684
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -100,3 +102,5 @@ permalink: /kb/185/Q185684/
 	
 	=============================================================================
 	
+
+{% endraw %}

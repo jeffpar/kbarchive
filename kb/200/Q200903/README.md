@@ -6,6 +6,8 @@ permalink: /kb/200/Q200903/
 
 ## Q200903: FP98: Allow Scripts or Programs to be run is Unavailable
 
+{% raw %}
+
 	Article: Q200903
 	Product(s): Word Front Page
 	Version(s): WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/200/Q200903/
 	
 	=============================================================================
 	
+
+{% endraw %}

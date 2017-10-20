@@ -6,6 +6,8 @@ permalink: /kb/156/Q156641/
 
 ## Q156641: BUG: GETCOLOR Function Does Not Return Focus to Custom Color
 
+{% raw %}
+
 	Article: Q156641
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/156/Q156641/
 	
 	=============================================================================
 	
+
+{% endraw %}

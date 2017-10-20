@@ -6,6 +6,8 @@ permalink: /kb/146/Q146749/
 
 ## Q146749: Meeting Wizard: Planner Shows Incorrect Color
 
+{% raw %}
+
 	Article: Q146749
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0,7.0a
@@ -46,3 +48,5 @@ permalink: /kb/146/Q146749/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139989/
 
 ## Q139989: MS Backup Status Bar Is Too Small to Display Errors Found
 
+{% raw %}
+
 	Article: Q139989
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -76,3 +78,5 @@ permalink: /kb/139/Q139989/
 	
 	=============================================================================
 	
+
+{% endraw %}

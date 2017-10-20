@@ -6,6 +6,8 @@ permalink: /kb/272/Q272327/
 
 ## Q272327: Cluster Admin Stops Responding When Renaming File Share Name
 
+{% raw %}
+
 	Article: Q272327
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -66,3 +68,5 @@ permalink: /kb/272/Q272327/
 	
 	=============================================================================
 	
+
+{% endraw %}

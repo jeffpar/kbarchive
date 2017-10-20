@@ -6,6 +6,8 @@ permalink: /kb/083/Q83401/
 
 ## Q83401: Using Windows 3.1 with Qualitas 386MAX or BlueMAX
 
+{% raw %}
+
 	Article: Q83401
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -149,3 +151,5 @@ permalink: /kb/083/Q83401/
 	
 	=============================================================================
 	
+
+{% endraw %}

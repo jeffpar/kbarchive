@@ -6,6 +6,8 @@ permalink: /kb/231/Q231595/
 
 ## Q231595: Midtown Madness: How to Improve Game Performance
 
+{% raw %}
+
 	Article: Q231595
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -131,3 +133,5 @@ permalink: /kb/231/Q231595/
 	
 	=============================================================================
 	
+
+{% endraw %}

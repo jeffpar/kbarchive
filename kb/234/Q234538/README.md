@@ -6,6 +6,8 @@ permalink: /kb/234/Q234538/
 
 ## Q234538: New Cryptographic APIs Need Backwards Compatibility
 
+{% raw %}
+
 	Article: Q234538
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/234/Q234538/
 	
 	=============================================================================
 	
+
+{% endraw %}

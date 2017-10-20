@@ -6,6 +6,8 @@ permalink: /kb/058/Q58563/
 
 ## Q58563: 7.10 Correction Passing Far Variable-String Array to MASM
 
+{% raw %}
+
 	Article: Q58563
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -150,3 +152,5 @@ permalink: /kb/058/Q58563/
 	   ccc
 	   bb
 	   a
+
+{% endraw %}

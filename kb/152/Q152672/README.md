@@ -6,6 +6,8 @@ permalink: /kb/152/Q152672/
 
 ## Q152672: XFOR: No Macintosh File Support in the IMC
 
+{% raw %}
+
 	Article: Q152672
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/152/Q152672/
 	
 	=============================================================================
 	
+
+{% endraw %}

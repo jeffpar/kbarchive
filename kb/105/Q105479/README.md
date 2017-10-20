@@ -6,6 +6,8 @@ permalink: /kb/105/Q105479/
 
 ## Q105479: Windows NT Advanced Server 3.5 Inch Disk Contents (511)
 
+{% raw %}
+
 	Article: Q105479
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10
@@ -1450,3 +1452,5 @@ permalink: /kb/105/Q105479/
 	
 	=============================================================================
 	
+
+{% endraw %}

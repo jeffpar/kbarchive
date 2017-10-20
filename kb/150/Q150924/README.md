@@ -6,6 +6,8 @@ permalink: /kb/150/Q150924/
 
 ## Q150924: PPT: Version 4.0 Clip Art Not Added to ClipArt Gallery 2.0/3.0
 
+{% raw %}
+
 	Article: Q150924
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -170,3 +172,5 @@ permalink: /kb/150/Q150924/
 	
 	=============================================================================
 	
+
+{% endraw %}

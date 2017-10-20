@@ -6,6 +6,8 @@ permalink: /kb/065/Q65068/
 
 ## Q65068: Mac Hyp: Error in Documentation for getMessageList
 
+{% raw %}
+
 	Article: Q65068
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0
@@ -55,3 +57,5 @@ permalink: /kb/065/Q65068/
 	
 	=============================================================================
 	
+
+{% endraw %}

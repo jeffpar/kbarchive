@@ -6,6 +6,8 @@ permalink: /kb/168/Q168749/
 
 ## Q168749: HOWTO: Print the Contents of the MS Chart Control
 
+{% raw %}
+
 	Article: Q168749
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -75,3 +77,5 @@ permalink: /kb/168/Q168749/
 	
 	=============================================================================
 	
+
+{% endraw %}

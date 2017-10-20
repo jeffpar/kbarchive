@@ -6,6 +6,8 @@ permalink: /kb/216/Q216229/
 
 ## Q216229: 64-bit Devices Not Correctly Reported
 
+{% raw %}
+
 	Article: Q216229
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -117,3 +119,5 @@ permalink: /kb/216/Q216229/
 	
 	=============================================================================
 	
+
+{% endraw %}

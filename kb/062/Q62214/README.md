@@ -6,6 +6,8 @@ permalink: /kb/062/Q62214/
 
 ## Q62214: Calling API Function to Get All Available Drives
 
+{% raw %}
+
 	Article: Q62214
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -107,3 +109,5 @@ permalink: /kb/062/Q62214/
 	END IF
 	
 	END
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186081/
 
 ## Q186081: STOP 0x0000000A When Restoring Tape
 
+{% raw %}
+
 	Article: Q186081
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/186/Q186081/
 	
 	=============================================================================
 	
+
+{% endraw %}

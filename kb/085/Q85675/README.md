@@ -6,6 +6,8 @@ permalink: /kb/085/Q85675/
 
 ## Q85675: DOCERR: Windows Help Macros Limited to 512 Characters
 
+{% raw %}
+
 	Article: Q85675
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -52,3 +54,5 @@ permalink: /kb/085/Q85675/
 	
 	=============================================================================
 	
+
+{% endraw %}

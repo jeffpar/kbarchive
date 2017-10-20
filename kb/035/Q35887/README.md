@@ -6,6 +6,8 @@ permalink: /kb/035/Q35887/
 
 ## Q35887: BC.EXE &quot;Internal Error&quot; Using GOTO 0; Don't Use Linenumber 0
 
+{% raw %}
+
 	Article: Q35887
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -35,3 +37,5 @@ permalink: /kb/035/Q35887/
 	GOTO 0
 	PRINT "NOT PRINTED"
 	0 PRINT "Don't you agree?"
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185382/
 
 ## Q185382: How to Manually Stop or Start the Inetinfo Process
 
+{% raw %}
+
 	Article: Q185382
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/185/Q185382/
 	
 	=============================================================================
 	
+
+{% endraw %}

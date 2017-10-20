@@ -6,6 +6,8 @@ permalink: /kb/149/Q149182/
 
 ## Q149182: DOCERR: NewIndex Property of Lists Doesn't Work as Documented
 
+{% raw %}
+
 	Article: Q149182
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -103,3 +105,5 @@ permalink: /kb/149/Q149182/
 	
 	=============================================================================
 	
+
+{% endraw %}

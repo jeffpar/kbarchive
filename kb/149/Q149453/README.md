@@ -6,6 +6,8 @@ permalink: /kb/149/Q149453/
 
 ## Q149453: Qualifier 11 Using DFT Link Service
 
+{% raw %}
+
 	Article: Q149453
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -71,3 +73,5 @@ permalink: /kb/149/Q149453/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87197/
 
 ## Q87197: PROFS: Steps That Must Be Completed to Install PROFS Gateway
 
+{% raw %}
+
 	Article: Q87197
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -61,3 +63,5 @@ permalink: /kb/087/Q87197/
 	
 	=============================================================================
 	
+
+{% endraw %}

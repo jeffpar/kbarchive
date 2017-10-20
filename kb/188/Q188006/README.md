@@ -6,6 +6,8 @@ permalink: /kb/188/Q188006/
 
 ## Q188006: BUG: EditCopy Incorrectly Copies Series Edge/Line Color of Chart
 
+{% raw %}
+
 	Article: Q188006
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -135,3 +137,5 @@ permalink: /kb/188/Q188006/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199171/
 
 ## Q199171: XFOR: Notes Custom Recipients Not Synchronized w/out Domain Name
 
+{% raw %}
+
 	Article: Q199171
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -65,3 +67,5 @@ permalink: /kb/199/Q199171/
 	
 	=============================================================================
 	
+
+{% endraw %}

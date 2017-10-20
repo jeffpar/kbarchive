@@ -6,6 +6,8 @@ permalink: /kb/076/Q76783/
 
 ## Q76783: README.TXT: General Notes About Hardware
 
+{% raw %}
+
 	Article: Q76783
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.0
@@ -456,3 +458,5 @@ permalink: /kb/076/Q76783/
 	
 	=============================================================================
 	
+
+{% endraw %}

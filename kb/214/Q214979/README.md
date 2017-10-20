@@ -6,6 +6,8 @@ permalink: /kb/214/Q214979/
 
 ## Q214979: SMS: Service Manager Does Not Connect to Secondary Site Servers
 
+{% raw %}
+
 	Article: Q214979
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -90,3 +92,5 @@ permalink: /kb/214/Q214979/
 	
 	=============================================================================
 	
+
+{% endraw %}

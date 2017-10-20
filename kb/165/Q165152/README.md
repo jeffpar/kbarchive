@@ -6,6 +6,8 @@ permalink: /kb/165/Q165152/
 
 ## Q165152: Error Message: User32.dll Was Relocated in Memory...
 
+{% raw %}
+
 	Article: Q165152
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -119,3 +121,5 @@ permalink: /kb/165/Q165152/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139693/
 
 ## Q139693: FIX: Assertion Failed, Line 505 of Sockcore.cpp
 
+{% raw %}
+
 	Article: Q139693
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.1,2.2
@@ -101,3 +103,5 @@ permalink: /kb/139/Q139693/
 	
 	=============================================================================
 	
+
+{% endraw %}

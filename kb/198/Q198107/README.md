@@ -6,6 +6,8 @@ permalink: /kb/198/Q198107/
 
 ## Q198107: XGEN: Fixes in Ol98qfe.exe that Shipped w/Exchange 5.5 SP1
 
+{% raw %}
+
 	Article: Q198107
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -83,3 +85,5 @@ permalink: /kb/198/Q198107/
 	
 	=============================================================================
 	
+
+{% endraw %}

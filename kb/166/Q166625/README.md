@@ -6,6 +6,8 @@ permalink: /kb/166/Q166625/
 
 ## Q166625: Host Print Service Stops Responding After Invalid SCS Code
 
+{% raw %}
+
 	Article: Q166625
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -96,3 +98,5 @@ permalink: /kb/166/Q166625/
 	
 	=============================================================================
 	
+
+{% endraw %}

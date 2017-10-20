@@ -6,6 +6,8 @@ permalink: /kb/162/Q162511/
 
 ## Q162511: Calling CMSPTR over Thunking DLLs Causes Access Violation
 
+{% raw %}
+
 	Article: Q162511
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -73,3 +75,5 @@ permalink: /kb/162/Q162511/
 	
 	=============================================================================
 	
+
+{% endraw %}

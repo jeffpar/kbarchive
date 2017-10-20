@@ -6,6 +6,8 @@ permalink: /kb/250/Q250640/
 
 ## Q250640: PRB: GetChunk Ignores Offset if Memo Field Included in GROUP BY
 
+{% raw %}
+
 	Article: Q250640
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -123,3 +125,5 @@ permalink: /kb/250/Q250640/
 	
 	=============================================================================
 	
+
+{% endraw %}

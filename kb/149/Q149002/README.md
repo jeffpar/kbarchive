@@ -6,6 +6,8 @@ permalink: /kb/149/Q149002/
 
 ## Q149002: BUG: Visual Basic Project Window Not Displaying Project Files
 
+{% raw %}
+
 	Article: Q149002
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -76,3 +78,5 @@ permalink: /kb/149/Q149002/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184505/
 
 ## Q184505: CPI-C Accept_Conversation (cmaccp) Does Not Block As Expected
 
+{% raw %}
+
 	Article: Q184505
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -61,3 +63,5 @@ permalink: /kb/184/Q184505/
 	
 	=============================================================================
 	
+
+{% endraw %}

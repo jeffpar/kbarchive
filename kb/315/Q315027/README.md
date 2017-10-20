@@ -6,6 +6,8 @@ permalink: /kb/315/Q315027/
 
 ## Q315027: Windows NT 4.0 May Hang After Applying the SRP
 
+{% raw %}
+
 	Article: Q315027
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -146,3 +148,5 @@ permalink: /kb/315/Q315027/
 	
 	=============================================================================
 	
+
+{% endraw %}

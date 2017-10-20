@@ -6,6 +6,8 @@ permalink: /kb/180/Q180454/
 
 ## Q180454: Fonts Installed by Encarta 98 Encyclopedia for Windows
 
+{% raw %}
+
 	Article: Q180454
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:98
@@ -56,3 +58,5 @@ permalink: /kb/180/Q180454/
 	
 	=============================================================================
 	
+
+{% endraw %}

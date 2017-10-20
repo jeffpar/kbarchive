@@ -6,6 +6,8 @@ permalink: /kb/084/Q84636/
 
 ## Q84636: Terminal Changes Filename to Have &quot;TRM&quot; Extension
 
+{% raw %}
+
 	Article: Q84636
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -36,3 +38,5 @@ permalink: /kb/084/Q84636/
 	
 	=============================================================================
 	
+
+{% endraw %}

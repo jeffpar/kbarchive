@@ -6,6 +6,8 @@ permalink: /kb/149/Q149517/
 
 ## Q149517: BUG: /Ox and /4Ya Options Together Cause Incorrect Results
 
+{% raw %}
+
 	Article: Q149517
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -88,3 +90,5 @@ permalink: /kb/149/Q149517/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/225/Q225384/
 
 ## Q225384: SBS: Fax Does Not Use Second Modem When the First One Is Busy
 
+{% raw %}
+
 	Article: Q225384
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a,4.5
@@ -65,3 +67,5 @@ permalink: /kb/225/Q225384/
 	
 	=============================================================================
 	
+
+{% endraw %}

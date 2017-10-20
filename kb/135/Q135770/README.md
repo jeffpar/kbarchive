@@ -6,6 +6,8 @@ permalink: /kb/135/Q135770/
 
 ## Q135770: Empty History Record Appears when Viewing Client Package Group
 
+{% raw %}
+
 	Article: Q135770
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -44,3 +46,5 @@ permalink: /kb/135/Q135770/
 	
 	=============================================================================
 	
+
+{% endraw %}

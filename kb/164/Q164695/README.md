@@ -6,6 +6,8 @@ permalink: /kb/164/Q164695/
 
 ## Q164695: XFOR: CCMC Stops Responding
 
+{% raw %}
+
 	Article: Q164695
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -89,3 +91,5 @@ permalink: /kb/164/Q164695/
 	
 	=============================================================================
 	
+
+{% endraw %}

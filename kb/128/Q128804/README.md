@@ -6,6 +6,8 @@ permalink: /kb/128/Q128804/
 
 ## Q128804: XGA/1 or XGA/2 Video Adapter Cannot Play Full-Screen .AVI File
 
+{% raw %}
+
 	Article: Q128804
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/128/Q128804/
 	
 	=============================================================================
 	
+
+{% endraw %}

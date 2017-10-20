@@ -6,6 +6,8 @@ permalink: /kb/188/Q188646/
 
 ## Q188646: XADM: Unable to Back Up Exchange Server 5.5 with Event ID 105
 
+{% raw %}
+
 	Article: Q188646
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -132,3 +134,5 @@ permalink: /kb/188/Q188646/
 	
 	=============================================================================
 	
+
+{% endraw %}

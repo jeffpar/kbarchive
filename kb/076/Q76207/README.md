@@ -6,6 +6,8 @@ permalink: /kb/076/Q76207/
 
 ## Q76207: Preserving Compaq DOS Keyboard Click Feature
 
+{% raw %}
+
 	Article: Q76207
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -59,3 +61,5 @@ permalink: /kb/076/Q76207/
 	
 	=============================================================================
 	
+
+{% endraw %}

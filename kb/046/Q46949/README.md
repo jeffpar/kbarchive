@@ -6,6 +6,8 @@ permalink: /kb/046/Q46949/
 
 ## Q46949: Using CodeView /2, Hercules Graphics Cards and Libraries
 
+{% raw %}
+
 	Article: Q46949
 	Product(s): Microsoft Programming Utilities
 	Version(s): 2.2,3.0,3.05,3.06,3.07,3.11,3.14,4.0,4.01,4.05,4.1
@@ -56,3 +58,5 @@ permalink: /kb/046/Q46949/
 	
 	=============================================================================
 	
+
+{% endraw %}

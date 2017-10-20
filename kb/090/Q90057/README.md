@@ -6,6 +6,8 @@ permalink: /kb/090/Q90057/
 
 ## Q90057: Microsoft-Supplied Monospaced TrueType Fonts
 
+{% raw %}
+
 	Article: Q90057
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/090/Q90057/
 	
 	=============================================================================
 	
+
+{% endraw %}

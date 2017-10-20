@@ -6,6 +6,8 @@ permalink: /kb/076/Q76103/
 
 ## Q76103: HOWTO: Guidelines for Allocating Instance (Per-Window) Data
 
+{% raw %}
+
 	Article: Q76103
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -289,3 +291,5 @@ permalink: /kb/076/Q76103/
 	
 	=============================================================================
 	
+
+{% endraw %}

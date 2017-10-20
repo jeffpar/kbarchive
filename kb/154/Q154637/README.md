@@ -6,6 +6,8 @@ permalink: /kb/154/Q154637/
 
 ## Q154637: Computer Hangs with Mitsumi CD-ROM Drive
 
+{% raw %}
+
 	Article: Q154637
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -48,3 +50,5 @@ permalink: /kb/154/Q154637/
 	
 	=============================================================================
 	
+
+{% endraw %}

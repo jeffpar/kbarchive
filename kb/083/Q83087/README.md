@@ -6,6 +6,8 @@ permalink: /kb/083/Q83087/
 
 ## Q83087: FIX: MASM Moves Segment Register w/out Generating Error
 
+{% raw %}
+
 	Article: Q83087
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.1a
@@ -75,3 +77,5 @@ permalink: /kb/083/Q83087/
 	
 	=============================================================================
 	
+
+{% endraw %}

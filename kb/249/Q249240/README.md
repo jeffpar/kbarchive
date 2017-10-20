@@ -6,6 +6,8 @@ permalink: /kb/249/Q249240/
 
 ## Q249240: Soccer 2000 Err Msg: Does Not Support This Resolution Mode...
 
+{% raw %}
+
 	Article: Q249240
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -88,3 +90,5 @@ permalink: /kb/249/Q249240/
 	
 	=============================================================================
 	
+
+{% endraw %}

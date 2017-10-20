@@ -6,6 +6,8 @@ permalink: /kb/275/Q275494/
 
 ## Q275494: PRB: IIS 4.0 Userdump Generates a Memory Dump w/ Remote PerfMon
 
+{% raw %}
+
 	Article: Q275494
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -78,3 +80,5 @@ permalink: /kb/275/Q275494/
 	
 	=============================================================================
 	
+
+{% endraw %}

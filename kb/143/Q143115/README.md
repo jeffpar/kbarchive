@@ -6,6 +6,8 @@ permalink: /kb/143/Q143115/
 
 ## Q143115: FIX: Choose Function Incorrectly Uses Option Base Setting
 
+{% raw %}
+
 	Article: Q143115
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -97,3 +99,5 @@ permalink: /kb/143/Q143115/
 	
 	=============================================================================
 	
+
+{% endraw %}

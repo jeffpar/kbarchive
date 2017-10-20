@@ -6,6 +6,8 @@ permalink: /kb/061/Q61872/
 
 ## Q61872: DosDevIOCtl() Category 5 Subfunction 66H Fails with C 6.00 API
 
+{% raw %}
+
 	Article: Q61872
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -73,3 +75,5 @@ permalink: /kb/061/Q61872/
 	Microsoft has confirmed this to be a problem with C versions 6.00 and
 	6.00a. We are researching the problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

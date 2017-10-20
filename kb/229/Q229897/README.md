@@ -6,6 +6,8 @@ permalink: /kb/229/Q229897/
 
 ## Q229897: Preventing WINS Static Record Replication
 
+{% raw %}
+
 	Article: Q229897
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -100,3 +102,5 @@ permalink: /kb/229/Q229897/
 	
 	=============================================================================
 	
+
+{% endraw %}

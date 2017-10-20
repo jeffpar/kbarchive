@@ -6,6 +6,8 @@ permalink: /kb/247/Q247093/
 
 ## Q247093: Backup and Recovery Guidelines for Index Server Catalog
 
+{% raw %}
+
 	Article: Q247093
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,1.1,2.0
@@ -123,3 +125,5 @@ permalink: /kb/247/Q247093/
 	
 	=============================================================================
 	
+
+{% endraw %}

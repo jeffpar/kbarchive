@@ -6,6 +6,8 @@ permalink: /kb/156/Q156617/
 
 ## Q156617: MSB Earth: Location of Rocks
 
+{% raw %}
+
 	Article: Q156617
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -284,3 +286,5 @@ permalink: /kb/156/Q156617/
 	
 	=============================================================================
 	
+
+{% endraw %}

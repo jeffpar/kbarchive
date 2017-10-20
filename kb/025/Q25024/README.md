@@ -6,6 +6,8 @@ permalink: /kb/025/Q25024/
 
 ## Q25024: Difference Between Minimum Load Size and Minimum Allocation
 
+{% raw %}
+
 	Article: Q25024
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10 6.00 6.00a
@@ -27,3 +29,5 @@ permalink: /kb/025/Q25024/
 	which the program can be loaded. For example, if the minimum load size
 	is 0, the program will be loaded at the highest possible location in
 	memory.
+
+{% endraw %}

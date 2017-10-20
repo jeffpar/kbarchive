@@ -6,6 +6,8 @@ permalink: /kb/132/Q132803/
 
 ## Q132803: Difficulty Installing System Shock
 
+{% raw %}
+
 	Article: Q132803
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -55,3 +57,5 @@ permalink: /kb/132/Q132803/
 	
 	=============================================================================
 	
+
+{% endraw %}

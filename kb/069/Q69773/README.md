@@ -6,6 +6,8 @@ permalink: /kb/069/Q69773/
 
 ## Q69773: PC DB: Backing Up a Mail Database
 
+{% raw %}
+
 	Article: Q69773
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0
@@ -56,3 +58,5 @@ permalink: /kb/069/Q69773/
 	
 	=============================================================================
 	
+
+{% endraw %}

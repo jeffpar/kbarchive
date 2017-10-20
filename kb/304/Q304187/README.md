@@ -6,6 +6,8 @@ permalink: /kb/304/Q304187/
 
 ## Q304187: Cannot Select Mapped Drives on the Home Directory Tab
 
+{% raw %}
+
 	Article: Q304187
 	Product(s): Internet Information Server
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/304/Q304187/
 	
 	=============================================================================
 	
+
+{% endraw %}

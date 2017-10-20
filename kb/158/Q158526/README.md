@@ -6,6 +6,8 @@ permalink: /kb/158/Q158526/
 
 ## Q158526: XADM: .Pat Files in Mdbdata and Dsadata Directories
 
+{% raw %}
+
 	Article: Q158526
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/158/Q158526/
 	
 	=============================================================================
 	
+
+{% endraw %}

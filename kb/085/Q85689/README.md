@@ -6,6 +6,8 @@ permalink: /kb/085/Q85689/
 
 ## Q85689: About Program Manager's Kilobyte Reading Is Wrong
 
+{% raw %}
+
 	Article: Q85689
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -45,3 +47,5 @@ permalink: /kb/085/Q85689/
 	
 	=============================================================================
 	
+
+{% endraw %}

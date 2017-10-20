@@ -6,6 +6,8 @@ permalink: /kb/041/Q41371/
 
 ## Q41371: Removing CodeView Information from .LIBs and .EXEs
 
+{% raw %}
+
 	Article: Q41371
 	Product(s): See article
 	Version(s): 2.20   | 2.20
@@ -27,3 +29,5 @@ permalink: /kb/041/Q41371/
 	The only way to remove CodeView information from a library is to
 	recompile the source modules and use the LIB utility to rebuild the
 	library.
+
+{% endraw %}

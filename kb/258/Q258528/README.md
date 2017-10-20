@@ -6,6 +6,8 @@ permalink: /kb/258/Q258528/
 
 ## Q258528: HOWTO: Read a REG_MULTI_SZ From the Registry
 
+{% raw %}
+
 	Article: Q258528
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -203,3 +205,5 @@ permalink: /kb/258/Q258528/
 	
 	=============================================================================
 	
+
+{% endraw %}

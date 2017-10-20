@@ -6,6 +6,8 @@ permalink: /kb/259/Q259077/
 
 ## Q259077: XCLN: Information About .ost File Synchronization Sizes
 
+{% raw %}
+
 	Article: Q259077
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -157,3 +159,5 @@ permalink: /kb/259/Q259077/
 	
 	=============================================================================
 	
+
+{% endraw %}

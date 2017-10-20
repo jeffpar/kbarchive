@@ -6,6 +6,8 @@ permalink: /kb/111/Q111467/
 
 ## Q111467: Error 6101 &amp; 6102: The String Specified by the Workgroup...
 
+{% raw %}
+
 	Article: Q111467
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:95
@@ -108,3 +110,5 @@ permalink: /kb/111/Q111467/
 	
 	=============================================================================
 	
+
+{% endraw %}

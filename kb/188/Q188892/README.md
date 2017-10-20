@@ -6,6 +6,8 @@ permalink: /kb/188/Q188892/
 
 ## Q188892: How to Use EVTSCAN with Netmon Tracing to Capture Event 23s
 
+{% raw %}
+
 	Article: Q188892
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -148,3 +150,5 @@ permalink: /kb/188/Q188892/
 	
 	=============================================================================
 	
+
+{% endraw %}

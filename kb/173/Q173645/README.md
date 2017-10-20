@@ -6,6 +6,8 @@ permalink: /kb/173/Q173645/
 
 ## Q173645: FIX: Access Violation in MSDAER.DLL with _com_error Exceptions
 
+{% raw %}
+
 	Article: Q173645
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:5.0
@@ -88,3 +90,5 @@ permalink: /kb/173/Q173645/
 	
 	=============================================================================
 	
+
+{% endraw %}

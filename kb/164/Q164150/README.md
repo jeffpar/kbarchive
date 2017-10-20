@@ -6,6 +6,8 @@ permalink: /kb/164/Q164150/
 
 ## Q164150: DOC: C4237 Online Help Contains Wrong Information on &quot;bool&quot;
 
+{% raw %}
+
 	Article: Q164150
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2
@@ -93,3 +95,5 @@ permalink: /kb/164/Q164150/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248748/
 
 ## Q248748: Fighter Ace II: Error Messages When You Attempt to Start Game
 
+{% raw %}
+
 	Article: Q248748
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/248/Q248748/
 	
 	=============================================================================
 	
+
+{% endraw %}

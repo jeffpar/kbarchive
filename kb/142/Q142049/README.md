@@ -6,6 +6,8 @@ permalink: /kb/142/Q142049/
 
 ## Q142049: File Manager Displays Incorrect Users with File Open
 
+{% raw %}
+
 	Article: Q142049
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -57,3 +59,5 @@ permalink: /kb/142/Q142049/
 	
 	=============================================================================
 	
+
+{% endraw %}

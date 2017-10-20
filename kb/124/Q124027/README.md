@@ -6,6 +6,8 @@ permalink: /kb/124/Q124027/
 
 ## Q124027: Changing Focus from QuickWin Using the Windows API
 
+{% raw %}
+
 	Article: Q124027
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.1
@@ -93,3 +95,5 @@ permalink: /kb/124/Q124027/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/090/Q90789/
 
 ## Q90789: Packing List: Windows 3.1 SDK Part 5 (3.5-Inch Disks)
 
+{% raw %}
+
 	Article: Q90789
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -106,3 +108,5 @@ permalink: /kb/090/Q90789/
 	
 	=============================================================================
 	
+
+{% endraw %}

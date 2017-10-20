@@ -6,6 +6,8 @@ permalink: /kb/029/Q29466/
 
 ## Q29466: Leading Edge Model D Error &quot;Unexpected SW Interrupt 33&quot;
 
+{% raw %}
+
 	Article: Q29466
 	Product(s): See article
 	Version(s): 6.x 1.00
@@ -18,3 +20,5 @@ permalink: /kb/029/Q29466/
 	   You usually can continue after this error message has appeared by
 	typing C to continue. For a patch, call Leading Edge technical support
 	at (617) 821-4300.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/259/Q259112/
 
 ## Q259112: XWEB: Error Message Occurs When You Download Attachments
 
+{% raw %}
+
 	Article: Q259112
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -69,3 +71,5 @@ permalink: /kb/259/Q259112/
 	
 	=============================================================================
 	
+
+{% endraw %}

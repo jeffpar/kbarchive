@@ -6,6 +6,8 @@ permalink: /kb/265/Q265798/
 
 ## Q265798: HOW TO: Change the Cursor in an eMbedded Visual Basic Applicatio
 
+{% raw %}
+
 	Article: Q265798
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -104,3 +106,5 @@ permalink: /kb/265/Q265798/
 	
 	=============================================================================
 	
+
+{% endraw %}

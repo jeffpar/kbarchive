@@ -6,6 +6,8 @@ permalink: /kb/230/Q230671/
 
 ## Q230671: PRB: AV When Saving Workspace with more than 4096 Source/Header
 
+{% raw %}
+
 	Article: Q230671
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -68,3 +70,5 @@ permalink: /kb/230/Q230671/
 	
 	=============================================================================
 	
+
+{% endraw %}

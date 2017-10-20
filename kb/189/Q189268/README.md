@@ -6,6 +6,8 @@ permalink: /kb/189/Q189268/
 
 ## Q189268: XADM: Encrypted Message Unreadable When TNEF Is Turned On
 
+{% raw %}
+
 	Article: Q189268
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -74,3 +76,5 @@ permalink: /kb/189/Q189268/
 	
 	=============================================================================
 	
+
+{% endraw %}

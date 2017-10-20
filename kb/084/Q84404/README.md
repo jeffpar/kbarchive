@@ -6,6 +6,8 @@ permalink: /kb/084/Q84404/
 
 ## Q84404: Windows 3.1 Disk Directories (3.5 Inch, 720K)
 
+{% raw %}
+
 	Article: Q84404
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -630,3 +632,5 @@ permalink: /kb/084/Q84404/
 	
 	=============================================================================
 	
+
+{% endraw %}

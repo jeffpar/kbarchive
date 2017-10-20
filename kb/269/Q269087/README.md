@@ -6,6 +6,8 @@ permalink: /kb/269/Q269087/
 
 ## Q269087: XWEB: LoadLibrary Error Occurs When Registering CDO Files
 
+{% raw %}
+
 	Article: Q269087
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -57,3 +59,5 @@ permalink: /kb/269/Q269087/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186726/
 
 ## Q186726: Error 80004005 Occurs When Retrieving Data from SQL Server
 
+{% raw %}
+
 	Article: Q186726
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0,6.5
@@ -64,3 +66,5 @@ permalink: /kb/186/Q186726/
 	
 	=============================================================================
 	
+
+{% endraw %}

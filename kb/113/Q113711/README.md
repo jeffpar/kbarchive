@@ -6,6 +6,8 @@ permalink: /kb/113/Q113711/
 
 ## Q113711: WSS Err Msg: The Device Is Being Used by Another Application
 
+{% raw %}
+
 	Article: Q113711
 	Product(s): Miscellaneous Windows Products
 	Version(s): 2.0
@@ -55,3 +57,5 @@ permalink: /kb/113/Q113711/
 	
 	=============================================================================
 	
+
+{% endraw %}

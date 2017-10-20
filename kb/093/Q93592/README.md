@@ -6,6 +6,8 @@ permalink: /kb/093/Q93592/
 
 ## Q93592: Correcting Illegal Directory Names With DELTREE and MOVE
 
+{% raw %}
+
 	Article: Q93592
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -63,3 +65,5 @@ permalink: /kb/093/Q93592/
 	
 	=============================================================================
 	
+
+{% endraw %}

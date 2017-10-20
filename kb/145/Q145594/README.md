@@ -6,6 +6,8 @@ permalink: /kb/145/Q145594/
 
 ## Q145594: How to Use the FPNWAUTH.EXE Utility
 
+{% raw %}
+
 	Article: Q145594
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -100,3 +102,5 @@ permalink: /kb/145/Q145594/
 	
 	=============================================================================
 	
+
+{% endraw %}

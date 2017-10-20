@@ -6,6 +6,8 @@ permalink: /kb/181/Q181683/
 
 ## Q181683: Project SBS Page xxii: Setup Directions Do Not Work
 
+{% raw %}
+
 	Article: Q181683
 	Product(s): Microsoft Press
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/181/Q181683/
 	
 	=============================================================================
 	
+
+{% endraw %}

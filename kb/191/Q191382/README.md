@@ -6,6 +6,8 @@ permalink: /kb/191/Q191382/
 
 ## Q191382: Error Message: This Program Can No Longer Run
 
+{% raw %}
+
 	Article: Q191382
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:1.0
@@ -103,3 +105,5 @@ permalink: /kb/191/Q191382/
 	
 	=============================================================================
 	
+
+{% endraw %}

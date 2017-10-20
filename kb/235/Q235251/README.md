@@ -6,6 +6,8 @@ permalink: /kb/235/Q235251/
 
 ## Q235251: Programming Microsoft Visual InterDev 6.0 Comments and Correctio
 
+{% raw %}
+
 	Article: Q235251
 	Product(s): Microsoft Press
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/235/Q235251/
 	
 	=============================================================================
 	
+
+{% endraw %}

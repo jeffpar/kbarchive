@@ -6,6 +6,8 @@ permalink: /kb/060/Q60252/
 
 ## Q60252: INFO: Initializing Bitfields as Integers in C
 
+{% raw %}
+
 	Article: Q60252
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -127,3 +129,5 @@ permalink: /kb/060/Q60252/
 	
 	=============================================================================
 	
+
+{% endraw %}

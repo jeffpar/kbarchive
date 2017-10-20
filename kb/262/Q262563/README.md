@@ -6,6 +6,8 @@ permalink: /kb/262/Q262563/
 
 ## Q262563: Schedule+ User Sees ??? for User's Free/Busy Data
 
+{% raw %}
+
 	Article: Q262563
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 7.0,7.0a,7.5
@@ -99,3 +101,5 @@ permalink: /kb/262/Q262563/
 	
 	=============================================================================
 	
+
+{% endraw %}

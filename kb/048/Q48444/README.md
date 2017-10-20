@@ -6,6 +6,8 @@ permalink: /kb/048/Q48444/
 
 ## Q48444: The Interrupt Attribute Pushes Registers on the Stack
 
+{% raw %}
+
 	Article: Q48444
 	Product(s): See article
 	Version(s): 5.10
@@ -58,3 +60,5 @@ permalink: /kb/048/Q48444/
 	        pusha              ; This pushes all general purpose registers
 	        push    ds         ; for the 80186 processors and above.
 	        push    es
+
+{% endraw %}

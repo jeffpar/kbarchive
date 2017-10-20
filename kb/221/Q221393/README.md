@@ -6,6 +6,8 @@ permalink: /kb/221/Q221393/
 
 ## Q221393: XADM: Exchange 5.5 SP Setup Incomplete on Cluster Server
 
+{% raw %}
+
 	Article: Q221393
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -72,3 +74,5 @@ permalink: /kb/221/Q221393/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195908/
 
 ## Q195908: XADM: Backout of Upgrade Causes Replication to Fail
 
+{% raw %}
+
 	Article: Q195908
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -125,3 +127,5 @@ permalink: /kb/195/Q195908/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131947/
 
 ## Q131947: DOC: CDC::GetWindow() Is Documented but Not Available
 
+{% raw %}
+
 	Article: Q131947
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.0a,4.1,4.2,4.2b,5.0,5.0sp1,5.0sp2,5.0sp3,6.0; :
@@ -49,3 +51,5 @@ permalink: /kb/131/Q131947/
 	
 	=============================================================================
 	
+
+{% endraw %}

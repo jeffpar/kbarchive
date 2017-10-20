@@ -6,6 +6,8 @@ permalink: /kb/085/Q85639/
 
 ## Q85639: Manual Feed Selection Not Working in the QMS PS2200
 
+{% raw %}
+
 	Article: Q85639
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -59,3 +61,5 @@ permalink: /kb/085/Q85639/
 	
 	=============================================================================
 	
+
+{% endraw %}

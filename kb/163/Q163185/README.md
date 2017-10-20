@@ -6,6 +6,8 @@ permalink: /kb/163/Q163185/
 
 ## Q163185: PRB: Error with FILTER or WHERE Including This or Thisform
 
+{% raw %}
+
 	Article: Q163185
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0 3.0b 5.0 6.0
@@ -269,3 +271,5 @@ permalink: /kb/163/Q163185/
 	
 	=============================================================================
 	
+
+{% endraw %}

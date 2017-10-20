@@ -6,6 +6,8 @@ permalink: /kb/136/Q136805/
 
 ## Q136805: XCLN: Cannot Move Folder to Folder in Message Window
 
+{% raw %}
+
 	Article: Q136805
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -53,3 +55,5 @@ permalink: /kb/136/Q136805/
 	
 	=============================================================================
 	
+
+{% endraw %}

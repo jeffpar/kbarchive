@@ -6,6 +6,8 @@ permalink: /kb/110/Q110263/
 
 ## Q110263: Asimov: Buttons Don't Appear to be Active in 16-Color Mode
 
+{% raw %}
+
 	Article: Q110263
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -42,3 +44,5 @@ permalink: /kb/110/Q110263/
 	
 	=============================================================================
 	
+
+{% endraw %}

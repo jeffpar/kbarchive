@@ -6,6 +6,8 @@ permalink: /kb/136/Q136055/
 
 ## Q136055: PC Ext: Windows 95 Inbox to Use an External Delivery Agent
 
+{% raw %}
+
 	Article: Q136055
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -65,3 +67,5 @@ permalink: /kb/136/Q136055/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/276/Q276222/
 
 ## Q276222: XCON: MTA Terminates in OTPMRALT() Due to Bad ECBindex
 
+{% raw %}
+
 	Article: Q276222
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3,5.5 SP4
@@ -132,3 +134,5 @@ permalink: /kb/276/Q276222/
 	
 	=============================================================================
 	
+
+{% endraw %}

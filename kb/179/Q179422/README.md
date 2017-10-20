@@ -6,6 +6,8 @@ permalink: /kb/179/Q179422/
 
 ## Q179422: WD97: MS LineDraw Font Not Usable in Word
 
+{% raw %}
+
 	Article: Q179422
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/179/Q179422/
 	
 	=============================================================================
 	
+
+{% endraw %}

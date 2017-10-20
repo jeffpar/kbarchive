@@ -6,6 +6,8 @@ permalink: /kb/161/Q161161/
 
 ## Q161161: HOWTO: Search a ListBox Control Quickly
 
+{% raw %}
+
 	Article: Q161161
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/161/Q161161/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246752/
 
 ## Q246752: Admin&#36; and IPC&#36; Shares Missing at Domain Controller Startup
 
+{% raw %}
+
 	Article: Q246752
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/246/Q246752/
 	
 	=============================================================================
 	
+
+{% endraw %}

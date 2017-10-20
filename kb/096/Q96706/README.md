@@ -6,6 +6,8 @@ permalink: /kb/096/Q96706/
 
 ## Q96706: Mouse Doesn't Work with MS-DOS Shell
 
+{% raw %}
+
 	Article: Q96706
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -366,3 +368,5 @@ permalink: /kb/096/Q96706/
 	
 	=============================================================================
 	
+
+{% endraw %}

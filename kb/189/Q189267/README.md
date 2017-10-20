@@ -6,6 +6,8 @@ permalink: /kb/189/Q189267/
 
 ## Q189267: Multimedia: Program Hangs or Error Message When Starting
 
+{% raw %}
+
 	Article: Q189267
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -129,3 +131,5 @@ permalink: /kb/189/Q189267/
 	
 	=============================================================================
 	
+
+{% endraw %}

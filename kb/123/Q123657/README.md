@@ -6,6 +6,8 @@ permalink: /kb/123/Q123657/
 
 ## Q123657: BUG: 16-bit ODBC Driver Setup Fails Due to Missing ODBC32.DLL
 
+{% raw %}
+
 	Article: Q123657
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -70,3 +72,5 @@ permalink: /kb/123/Q123657/
 	
 	=============================================================================
 	
+
+{% endraw %}

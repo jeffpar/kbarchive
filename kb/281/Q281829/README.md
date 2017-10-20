@@ -6,6 +6,8 @@ permalink: /kb/281/Q281829/
 
 ## Q281829: How to Obtain and Install Systems Management Server 2.0 SP3
 
+{% raw %}
+
 	Article: Q281829
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -152,3 +154,5 @@ permalink: /kb/281/Q281829/
 	
 	=============================================================================
 	
+
+{% endraw %}

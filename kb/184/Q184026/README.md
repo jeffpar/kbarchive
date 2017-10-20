@@ -6,6 +6,8 @@ permalink: /kb/184/Q184026/
 
 ## Q184026: NetDDE Causes Dr. Watson When Closing Incomplete Connections
 
+{% raw %}
+
 	Article: Q184026
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/184/Q184026/
 	
 	=============================================================================
 	
+
+{% endraw %}

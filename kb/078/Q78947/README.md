@@ -6,6 +6,8 @@ permalink: /kb/078/Q78947/
 
 ## Q78947: Flight Sim: Screen Flashes on Stormy ILS Approach to Oakland
 
+{% raw %}
+
 	Article: Q78947
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -32,3 +34,5 @@ permalink: /kb/078/Q78947/
 	
 	=============================================================================
 	
+
+{% endraw %}

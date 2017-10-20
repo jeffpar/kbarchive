@@ -6,6 +6,8 @@ permalink: /kb/271/Q271929/
 
 ## Q271929: SS3:Referring URLs in Usage Analysis Truncated to 100 Characters
 
+{% raw %}
+
 	Article: Q271929
 	Product(s): Internet Information Server
 	Version(s): 3.0
@@ -49,3 +51,5 @@ permalink: /kb/271/Q271929/
 	
 	=============================================================================
 	
+
+{% endraw %}

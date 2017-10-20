@@ -6,6 +6,8 @@ permalink: /kb/048/Q48204/
 
 ## Q48204: Linker Can Indiscriminately Bind Different Types
 
+{% raw %}
+
 	Article: Q48204
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.x,2.x,3.x,4.x,5.01,5.02,5.03,5.05,5.1,5.11,5.13,5.15,5.3,5.31.009,5.5
@@ -65,3 +67,5 @@ permalink: /kb/048/Q48204/
 	
 	=============================================================================
 	
+
+{% endraw %}

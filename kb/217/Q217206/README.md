@@ -6,6 +6,8 @@ permalink: /kb/217/Q217206/
 
 ## Q217206: PhoneSelectExtVersion Is Not Called When phoneOpen Is Called
 
+{% raw %}
+
 	Article: Q217206
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/217/Q217206/
 	
 	=============================================================================
 	
+
+{% endraw %}

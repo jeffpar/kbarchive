@@ -6,6 +6,8 @@ permalink: /kb/278/Q278614/
 
 ## Q278614: XADM: Event 8285 When Replicating Mailboxes from Exch5.5 to AD
 
+{% raw %}
+
 	Article: Q278614
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -81,3 +83,5 @@ permalink: /kb/278/Q278614/
 	
 	=============================================================================
 	
+
+{% endraw %}

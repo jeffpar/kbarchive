@@ -6,6 +6,8 @@ permalink: /kb/111/Q111463/
 
 ## Q111463: Err Msg on TI 4000 with DOS 6 BATTERY.PRO &amp; 32-Bit Disk Access
 
+{% raw %}
+
 	Article: Q111463
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -70,3 +72,5 @@ permalink: /kb/111/Q111463/
 	
 	=============================================================================
 	
+
+{% endraw %}

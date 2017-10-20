@@ -6,6 +6,8 @@ permalink: /kb/117/Q117354/
 
 ## Q117354: Distributing Help Files for FoxPro for the Macintosh
 
+{% raw %}
+
 	Article: Q117354
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; :2.5b,2.5c
@@ -72,3 +74,5 @@ permalink: /kb/117/Q117354/
 	
 	=============================================================================
 	
+
+{% endraw %}

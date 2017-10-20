@@ -6,6 +6,8 @@ permalink: /kb/167/Q167699/
 
 ## Q167699: Underlining of Hyperlinks Unavailable in Windows Messaging
 
+{% raw %}
+
 	Article: Q167699
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,95
@@ -51,3 +53,5 @@ permalink: /kb/167/Q167699/
 	
 	=============================================================================
 	
+
+{% endraw %}

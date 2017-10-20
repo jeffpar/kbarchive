@@ -6,6 +6,8 @@ permalink: /kb/185/Q185865/
 
 ## Q185865: FIX: Printing Reports in Loop Hangs Visual FoxPro
 
+{% raw %}
+
 	Article: Q185865
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -122,3 +124,5 @@ permalink: /kb/185/Q185865/
 	
 	=============================================================================
 	
+
+{% endraw %}

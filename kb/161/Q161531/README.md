@@ -6,6 +6,8 @@ permalink: /kb/161/Q161531/
 
 ## Q161531: Wine Guide 2.0: Blank Box on Printout When Printing Contents
 
+{% raw %}
+
 	Article: Q161531
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2.0
@@ -55,3 +57,5 @@ permalink: /kb/161/Q161531/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149858/
 
 ## Q149858: Help Annotation Marks Not Saved On RISC Computers
 
+{% raw %}
+
 	Article: Q149858
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -50,3 +52,5 @@ permalink: /kb/149/Q149858/
 	
 	=============================================================================
 	
+
+{% endraw %}

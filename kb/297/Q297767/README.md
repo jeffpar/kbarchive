@@ -6,6 +6,8 @@ permalink: /kb/297/Q297767/
 
 ## Q297767: FIX: Strings Stored in MEM Files Limited To 64K
 
+{% raw %}
+
 	Article: Q297767
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -77,3 +79,5 @@ permalink: /kb/297/Q297767/
 	
 	=============================================================================
 	
+
+{% endraw %}

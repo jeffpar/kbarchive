@@ -6,6 +6,8 @@ permalink: /kb/281/Q281329/
 
 ## Q281329: MechWarrior 4: Auto Torso Centering Feature May Not Engage
 
+{% raw %}
+
 	Article: Q281329
 	Product(s): Microsoft Home Games
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/281/Q281329/
 	
 	=============================================================================
 	
+
+{% endraw %}

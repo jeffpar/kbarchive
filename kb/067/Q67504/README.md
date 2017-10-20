@@ -6,6 +6,8 @@ permalink: /kb/067/Q67504/
 
 ## Q67504: Windows and Epson MX-80, FX-80, RX-80, MX-100
 
+{% raw %}
+
 	Article: Q67504
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/067/Q67504/
 	
 	=============================================================================
 	
+
+{% endraw %}

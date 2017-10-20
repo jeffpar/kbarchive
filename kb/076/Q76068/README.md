@@ -6,6 +6,8 @@ permalink: /kb/076/Q76068/
 
 ## Q76068: PRB: Pen Cursor Does Not Appear When Tablet Used
 
+{% raw %}
+
 	Article: Q76068
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -66,3 +68,5 @@ permalink: /kb/076/Q76068/
 	
 	=============================================================================
 	
+
+{% endraw %}

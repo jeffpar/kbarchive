@@ -6,6 +6,8 @@ permalink: /kb/141/Q141425/
 
 ## Q141425: FIX: Toolbar Events Fire Differently When Using Dock Method
 
+{% raw %}
+
 	Article: Q141425
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -122,3 +124,5 @@ permalink: /kb/141/Q141425/
 	
 	=============================================================================
 	
+
+{% endraw %}

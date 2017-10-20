@@ -6,6 +6,8 @@ permalink: /kb/322/Q322829/
 
 ## Q322829: XADM: Internet Mail Service Does Not Start Successfully
 
+{% raw %}
+
 	Article: Q322829
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -269,3 +271,5 @@ permalink: /kb/322/Q322829/
 	
 	=============================================================================
 	
+
+{% endraw %}

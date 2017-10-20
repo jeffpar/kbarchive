@@ -6,6 +6,8 @@ permalink: /kb/173/Q173189/
 
 ## Q173189: Personal Web Server Setup Cannot Copy Files
 
+{% raw %}
+
 	Article: Q173189
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:1.0,1.0a
@@ -82,3 +84,5 @@ permalink: /kb/173/Q173189/
 	
 	=============================================================================
 	
+
+{% endraw %}

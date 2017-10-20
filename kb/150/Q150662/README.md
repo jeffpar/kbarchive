@@ -6,6 +6,8 @@ permalink: /kb/150/Q150662/
 
 ## Q150662: Mastering Access Programming: Contents of README.TXT
 
+{% raw %}
+
 	Article: Q150662
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0,1.0a
@@ -46,3 +48,5 @@ permalink: /kb/150/Q150662/
 	
 	=============================================================================
 	
+
+{% endraw %}

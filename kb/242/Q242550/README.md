@@ -6,6 +6,8 @@ permalink: /kb/242/Q242550/
 
 ## Q242550: INFO: Required System Files for WebClasses (IIS Applications)
 
+{% raw %}
+
 	Article: Q242550
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,6.0
@@ -85,3 +87,5 @@ permalink: /kb/242/Q242550/
 	
 	=============================================================================
 	
+
+{% endraw %}

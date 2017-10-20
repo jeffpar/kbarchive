@@ -6,6 +6,8 @@ permalink: /kb/027/Q27799/
 
 ## Q27799: BC.EXE /T (Terse) Suppresses Warning Messages
 
+{% raw %}
+
 	Article: Q27799
 	Product(s): See article
 	Version(s): 4.00b 4.50
@@ -55,3 +57,5 @@ permalink: /kb/027/Q27799/
 	choose Make EXE File in the QuickBASIC QB.EXE editor provided with
 	Microsoft BASIC Compiler Versions 6.00 and 6.00b, and in the QBX.EXE
 	editor provided with Microsoft BASIC PDS Version 7.00.
+
+{% endraw %}

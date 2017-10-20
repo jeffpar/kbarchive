@@ -6,6 +6,8 @@ permalink: /kb/194/Q194434/
 
 ## Q194434: HOWTO: Using the Setup Wizard in Visual FoxPro 6.0
 
+{% raw %}
+
 	Article: Q194434
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,6.0
@@ -374,3 +376,5 @@ permalink: /kb/194/Q194434/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67862/
 
 ## Q67862: Running MSETUP from Drive B
 
+{% raw %}
+
 	Article: Q67862
 	Product(s): See article
 	Version(s): 1.00
@@ -21,3 +23,5 @@ permalink: /kb/067/Q67862/
 	
 	at the C:\DOS> prompt. Then, run MSETUP from drive B. After rebooting
 	the system, the drives will return to their normal configuration.
+
+{% endraw %}

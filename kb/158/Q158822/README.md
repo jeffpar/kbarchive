@@ -6,6 +6,8 @@ permalink: /kb/158/Q158822/
 
 ## Q158822: PRB: ADDOBJECT Gives &quot;A member object...already exists&quot; Error
 
+{% raw %}
+
 	Article: Q158822
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -80,3 +82,5 @@ permalink: /kb/158/Q158822/
 	
 	=============================================================================
 	
+
+{% endraw %}

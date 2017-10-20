@@ -6,6 +6,8 @@ permalink: /kb/126/Q126822/
 
 ## Q126822: Kids: Program Group and/or Icons Disappear in TabWorks
 
+{% raw %}
+
 	Article: Q126822
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,3.x
@@ -103,3 +105,5 @@ permalink: /kb/126/Q126822/
 	
 	=============================================================================
 	
+
+{% endraw %}

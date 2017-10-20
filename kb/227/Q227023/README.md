@@ -6,6 +6,8 @@ permalink: /kb/227/Q227023/
 
 ## Q227023: SMS: DBCS Server Names Are Not Supported
 
+{% raw %}
+
 	Article: Q227023
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -69,3 +71,5 @@ permalink: /kb/227/Q227023/
 	
 	=============================================================================
 	
+
+{% endraw %}

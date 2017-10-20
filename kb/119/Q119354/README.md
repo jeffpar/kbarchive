@@ -6,6 +6,8 @@ permalink: /kb/119/Q119354/
 
 ## Q119354: How to Group Child Records in a Report Detail Band
 
+{% raw %}
+
 	Article: Q119354
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x 2.60 3.00| 2.00 2.5x 2.60 |
@@ -183,3 +185,5 @@ permalink: /kb/119/Q119354/
 	
 	=============================================================================
 	
+
+{% endraw %}

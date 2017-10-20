@@ -6,6 +6,8 @@ permalink: /kb/079/Q79648/
 
 ## Q79648: The Complete Scanner Does Not Work Properly in Enhanced Mode
 
+{% raw %}
+
 	Article: Q79648
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -67,3 +69,5 @@ permalink: /kb/079/Q79648/
 	
 	=============================================================================
 	
+
+{% endraw %}

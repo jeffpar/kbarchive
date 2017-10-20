@@ -6,6 +6,8 @@ permalink: /kb/137/Q137820/
 
 ## Q137820: Microsoft Plus! Readme.txt File Contents (2 of 2)
 
+{% raw %}
+
 	Article: Q137820
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -314,3 +316,5 @@ permalink: /kb/137/Q137820/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111814/
 
 ## Q111814: HOWTO: Get the Current Document in an MDI Application
 
+{% raw %}
+
 	Article: Q111814
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -65,3 +67,5 @@ permalink: /kb/111/Q111814/
 	
 	=============================================================================
 	
+
+{% endraw %}

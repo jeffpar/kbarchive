@@ -6,6 +6,8 @@ permalink: /kb/066/Q66530/
 
 ## Q66530: SYS.COM Requirements in MS-DOS versions 2.0-6.0
 
+{% raw %}
+
 	Article: Q66530
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:2.x,3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -134,3 +136,5 @@ permalink: /kb/066/Q66530/
 	
 	=============================================================================
 	
+
+{% endraw %}

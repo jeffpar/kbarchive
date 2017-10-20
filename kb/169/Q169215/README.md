@@ -6,6 +6,8 @@ permalink: /kb/169/Q169215/
 
 ## Q169215: Remote Administration of Routing &amp; Remote Access
 
+{% raw %}
+
 	Article: Q169215
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -79,3 +81,5 @@ permalink: /kb/169/Q169215/
 	
 	=============================================================================
 	
+
+{% endraw %}

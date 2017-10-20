@@ -6,6 +6,8 @@ permalink: /kb/189/Q189489/
 
 ## Q189489: FIX: Binary Compatibility Broken When Adding Events
 
+{% raw %}
+
 	Article: Q189489
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -77,3 +79,5 @@ permalink: /kb/189/Q189489/
 	
 	=============================================================================
 	
+
+{% endraw %}

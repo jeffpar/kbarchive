@@ -6,6 +6,8 @@ permalink: /kb/314/Q314342/
 
 ## Q314342: SMS: Advertisements May Not Run If the Screen Saver Runs
 
+{% raw %}
+
 	Article: Q314342
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -151,3 +153,5 @@ permalink: /kb/314/Q314342/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/026/Q26653/
 
 ## Q26653: BUG: Inconsistent Case Conventions in Equate @Filename
 
+{% raw %}
+
 	Article: Q26653
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1
@@ -51,3 +53,5 @@ permalink: /kb/026/Q26653/
 	
 	=============================================================================
 	
+
+{% endraw %}

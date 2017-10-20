@@ -6,6 +6,8 @@ permalink: /kb/090/Q90571/
 
 ## Q90571: Applications That Require SETVER.EXE for MS-DOS 6.0 or 6.2
 
+{% raw %}
+
 	Article: Q90571
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -225,3 +227,5 @@ permalink: /kb/090/Q90571/
 	
 	=============================================================================
 	
+
+{% endraw %}

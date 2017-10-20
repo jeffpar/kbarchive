@@ -6,6 +6,8 @@ permalink: /kb/106/Q106043/
 
 ## Q106043: Windows for Workgroups 3.11 Hangs with 09-07-93 EXP16ODI.COM
 
+{% raw %}
+
 	Article: Q106043
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -49,3 +51,5 @@ permalink: /kb/106/Q106043/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178122/
 
 ## Q178122: XFOR: Lsccmmex.exe Causes AV Processing Inbound cc:Mail
 
+{% raw %}
+
 	Article: Q178122
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.2; winnt:4.0,5.0,5.5
@@ -140,3 +142,5 @@ permalink: /kb/178/Q178122/
 	
 	=============================================================================
 	
+
+{% endraw %}

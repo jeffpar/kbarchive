@@ -6,6 +6,8 @@ permalink: /kb/118/Q118309/
 
 ## Q118309: CONN: Mail Conn 3.2 Installer Incompatible with PowerTalk
 
+{% raw %}
+
 	Article: Q118309
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.1c,3.1d
@@ -54,3 +56,5 @@ permalink: /kb/118/Q118309/
 	
 	=============================================================================
 	
+
+{% endraw %}

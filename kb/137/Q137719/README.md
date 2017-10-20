@@ -6,6 +6,8 @@ permalink: /kb/137/Q137719/
 
 ## Q137719: Program Manager Disappears After Running XTree Uninstall
 
+{% raw %}
+
 	Article: Q137719
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/137/Q137719/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146379/
 
 ## Q146379: All Day Check Box Inconsistent in Recurring Appointments
 
+{% raw %}
+
 	Article: Q146379
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -42,3 +44,5 @@ permalink: /kb/146/Q146379/
 	
 	=============================================================================
 	
+
+{% endraw %}

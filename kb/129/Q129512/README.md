@@ -6,6 +6,8 @@ permalink: /kb/129/Q129512/
 
 ## Q129512: How to Programatically List .VCX File's Class Definitions
 
+{% raw %}
+
 	Article: Q129512
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -105,3 +107,5 @@ permalink: /kb/129/Q129512/
 	
 	=============================================================================
 	
+
+{% endraw %}

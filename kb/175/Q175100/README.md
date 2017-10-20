@@ -6,6 +6,8 @@ permalink: /kb/175/Q175100/
 
 ## Q175100: XADM: Unexpected Error 0xc0040000 Upgrading to Exchange 5.5
 
+{% raw %}
+
 	Article: Q175100
 	Product(s): Microsoft Exchange
 	Version(s): 5.0 SP2,5.5
@@ -64,3 +66,5 @@ permalink: /kb/175/Q175100/
 	
 	=============================================================================
 	
+
+{% endraw %}

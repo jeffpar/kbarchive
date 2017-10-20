@@ -6,6 +6,8 @@ permalink: /kb/239/Q239482/
 
 ## Q239482: ACC2000: Jet 4.0 Expression Can Execute Unsafe VBA Functions
 
+{% raw %}
+
 	Article: Q239482
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 4.0
@@ -175,3 +177,5 @@ permalink: /kb/239/Q239482/
 	
 	=============================================================================
 	
+
+{% endraw %}

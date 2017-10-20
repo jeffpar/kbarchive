@@ -6,6 +6,8 @@ permalink: /kb/216/Q216860/
 
 ## Q216860: PRB: Chat Server Hangs When Extension Filter Is Installed
 
+{% raw %}
+
 	Article: Q216860
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -130,3 +132,5 @@ permalink: /kb/216/Q216860/
 	
 	=============================================================================
 	
+
+{% endraw %}

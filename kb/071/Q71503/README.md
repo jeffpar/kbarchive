@@ -6,6 +6,8 @@ permalink: /kb/071/Q71503/
 
 ## Q71503: Using CorelDRAW! with a Plotter Prints One Copy Only
 
+{% raw %}
+
 	Article: Q71503
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -43,3 +45,5 @@ permalink: /kb/071/Q71503/
 	
 	=============================================================================
 	
+
+{% endraw %}

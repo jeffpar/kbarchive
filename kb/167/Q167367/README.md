@@ -6,6 +6,8 @@ permalink: /kb/167/Q167367/
 
 ## Q167367: XFOR: Routing Exchange DXA Updates Over SNADS Backbone
 
+{% raw %}
+
 	Article: Q167367
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.2; winnt:4.0,5.0,5.5
@@ -43,3 +45,5 @@ permalink: /kb/167/Q167367/
 	
 	=============================================================================
 	
+
+{% endraw %}

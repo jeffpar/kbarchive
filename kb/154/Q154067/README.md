@@ -6,6 +6,8 @@ permalink: /kb/154/Q154067/
 
 ## Q154067: System Error: The WIN 16 SubSystem Was Unable to Allocate Memory
 
+{% raw %}
+
 	Article: Q154067
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -58,3 +60,5 @@ permalink: /kb/154/Q154067/
 	
 	=============================================================================
 	
+
+{% endraw %}

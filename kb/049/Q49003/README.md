@@ -6,6 +6,8 @@ permalink: /kb/049/Q49003/
 
 ## Q49003: Operation of InPort Chip Versions 1.00 and 1.10 Versus 1.20
 
+{% raw %}
+
 	Article: Q49003
 	Product(s): See article
 	Version(s): 1.00 1.10 1.20
@@ -20,3 +22,5 @@ permalink: /kb/049/Q49003/
 	Version 1.20 of the InPort Chip operates in the data interrupt mode
 	(mouse service routine interrupt occurs whenever mouse data is
 	present).
+
+{% endraw %}

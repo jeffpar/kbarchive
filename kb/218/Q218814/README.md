@@ -6,6 +6,8 @@ permalink: /kb/218/Q218814/
 
 ## Q218814: DNS Server Logs Event 7062: &quot;DNS Server Encountered a Packet...&quot;
 
+{% raw %}
+
 	Article: Q218814
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -162,3 +164,5 @@ permalink: /kb/218/Q218814/
 	
 	=============================================================================
 	
+
+{% endraw %}

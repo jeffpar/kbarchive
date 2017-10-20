@@ -6,6 +6,8 @@ permalink: /kb/118/Q118572/
 
 ## Q118572: Ancient Lands: Index Always Comes Up On Letter A
 
+{% raw %}
+
 	Article: Q118572
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -40,3 +42,5 @@ permalink: /kb/118/Q118572/
 	
 	=============================================================================
 	
+
+{% endraw %}

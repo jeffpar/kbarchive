@@ -6,6 +6,8 @@ permalink: /kb/189/Q189492/
 
 ## Q189492: XFOR: IMCEASMTP-swadmin+40corporate+2ecom@&#42; in NDR Message
 
+{% raw %}
+
 	Article: Q189492
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -102,3 +104,5 @@ permalink: /kb/189/Q189492/
 	
 	=============================================================================
 	
+
+{% endraw %}

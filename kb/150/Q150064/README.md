@@ -6,6 +6,8 @@ permalink: /kb/150/Q150064/
 
 ## Q150064: HOWTO: Branch to a Specific Version of a Project
 
+{% raw %}
+
 	Article: Q150064
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/150/Q150064/
 	
 	=============================================================================
 	
+
+{% endraw %}

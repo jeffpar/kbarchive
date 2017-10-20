@@ -6,6 +6,8 @@ permalink: /kb/121/Q121653/
 
 ## Q121653: SCANDSKW Err Msg: This Program Requires Microsoft Windows
 
+{% raw %}
+
 	Article: Q121653
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -83,3 +85,5 @@ permalink: /kb/121/Q121653/
 	
 	=============================================================================
 	
+
+{% endraw %}

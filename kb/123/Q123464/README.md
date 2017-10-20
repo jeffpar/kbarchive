@@ -6,6 +6,8 @@ permalink: /kb/123/Q123464/
 
 ## Q123464: Obtaining Visual C++ 2.0 Run-Time Library Source Code
 
+{% raw %}
+
 	Article: Q123464
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -75,3 +77,5 @@ permalink: /kb/123/Q123464/
 	
 	=============================================================================
 	
+
+{% endraw %}

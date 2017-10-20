@@ -6,6 +6,8 @@ permalink: /kb/122/Q122365/
 
 ## Q122365: Installing a New Driver After Updating with a U.S. Service Pack
 
+{% raw %}
+
 	Article: Q122365
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/122/Q122365/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190519/
 
 ## Q190519: BUG: UserControl Causes VB IDE to Crash on Shutdown
 
+{% raw %}
+
 	Article: Q190519
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -115,3 +117,5 @@ permalink: /kb/190/Q190519/
 	
 	=============================================================================
 	
+
+{% endraw %}

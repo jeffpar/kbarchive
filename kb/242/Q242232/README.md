@@ -6,6 +6,8 @@ permalink: /kb/242/Q242232/
 
 ## Q242232: XFOR: Exchange Connector for Novell GroupWise Event 6067
 
+{% raw %}
+
 	Article: Q242232
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -57,3 +59,5 @@ permalink: /kb/242/Q242232/
 	
 	=============================================================================
 	
+
+{% endraw %}

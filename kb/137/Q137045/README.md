@@ -6,6 +6,8 @@ permalink: /kb/137/Q137045/
 
 ## Q137045: X400: Using a 3Com Etherlink II Network Card for TP4/CLNS
 
+{% raw %}
+
 	Article: Q137045
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -45,3 +47,5 @@ permalink: /kb/137/Q137045/
 	
 	=============================================================================
 	
+
+{% endraw %}

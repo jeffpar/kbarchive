@@ -6,6 +6,8 @@ permalink: /kb/105/Q105925/
 
 ## Q105925: MS-DOS-Based Applications on Compaq 4/33 Prolinea
 
+{% raw %}
+
 	Article: Q105925
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.22
@@ -61,3 +63,5 @@ permalink: /kb/105/Q105925/
 	
 	=============================================================================
 	
+
+{% endraw %}

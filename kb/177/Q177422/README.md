@@ -6,6 +6,8 @@ permalink: /kb/177/Q177422/
 
 ## Q177422: BUG: Invalid Directory Path Encountered During Install
 
+{% raw %}
+
 	Article: Q177422
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0,2.0
@@ -71,3 +73,5 @@ permalink: /kb/177/Q177422/
 	
 	=============================================================================
 	
+
+{% endraw %}

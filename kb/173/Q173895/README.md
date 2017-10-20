@@ -6,6 +6,8 @@ permalink: /kb/173/Q173895/
 
 ## Q173895: XFOR: Migration Process is Faster on an Intel Processor
 
+{% raw %}
+
 	Article: Q173895
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -47,3 +49,5 @@ permalink: /kb/173/Q173895/
 	
 	=============================================================================
 	
+
+{% endraw %}

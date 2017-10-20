@@ -6,6 +6,8 @@ permalink: /kb/259/Q259994/
 
 ## Q259994: StarLancer: Description of Multiplayer Games
 
+{% raw %}
+
 	Article: Q259994
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -129,3 +131,5 @@ permalink: /kb/259/Q259994/
 	
 	=============================================================================
 	
+
+{% endraw %}

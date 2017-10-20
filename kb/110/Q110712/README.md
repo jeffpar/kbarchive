@@ -6,6 +6,8 @@ permalink: /kb/110/Q110712/
 
 ## Q110712: ScanDisk Err Msg on System with Hard Card: ScanDisk Found...
 
+{% raw %}
+
 	Article: Q110712
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -73,3 +75,5 @@ permalink: /kb/110/Q110712/
 	
 	=============================================================================
 	
+
+{% endraw %}

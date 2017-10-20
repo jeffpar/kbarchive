@@ -6,6 +6,8 @@ permalink: /kb/231/Q231313/
 
 ## Q231313: Screensaver Does Not Work After 14 Times on WTS Client
 
+{% raw %}
+
 	Article: Q231313
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -56,3 +58,5 @@ permalink: /kb/231/Q231313/
 	
 	=============================================================================
 	
+
+{% endraw %}

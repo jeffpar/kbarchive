@@ -6,6 +6,8 @@ permalink: /kb/190/Q190142/
 
 ## Q190142: FTP Deadlocks Under Heavy Load
 
+{% raw %}
+
 	Article: Q190142
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/190/Q190142/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180028/
 
 ## Q180028: PRB: DBC With Stored Procedure Produces Error When Opened
 
+{% raw %}
+
 	Article: Q180028
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -166,3 +168,5 @@ permalink: /kb/180/Q180028/
 	
 	=============================================================================
 	
+
+{% endraw %}

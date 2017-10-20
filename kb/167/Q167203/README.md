@@ -6,6 +6,8 @@ permalink: /kb/167/Q167203/
 
 ## Q167203: XADM: Directory Import Error - Event ID 286
 
+{% raw %}
+
 	Article: Q167203
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -66,3 +68,5 @@ permalink: /kb/167/Q167203/
 	
 	=============================================================================
 	
+
+{% endraw %}

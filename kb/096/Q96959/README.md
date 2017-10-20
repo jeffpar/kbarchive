@@ -6,6 +6,8 @@ permalink: /kb/096/Q96959/
 
 ## Q96959: MS-DOS 6 Upgrade Supplemental Disks NET.TXT File
 
+{% raw %}
+
 	Article: Q96959
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -345,3 +347,5 @@ permalink: /kb/096/Q96959/
 	
 	=============================================================================
 	
+
+{% endraw %}

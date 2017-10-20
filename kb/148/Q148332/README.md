@@ -6,6 +6,8 @@ permalink: /kb/148/Q148332/
 
 ## Q148332: BUG: GRID: SET RELATION TO Does Not Break Relation Properly
 
+{% raw %}
+
 	Article: Q148332
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS: 3.0,3.0b,5.0,5.0a,6.0
@@ -137,3 +139,5 @@ permalink: /kb/148/Q148332/
 	
 	=============================================================================
 	
+
+{% endraw %}

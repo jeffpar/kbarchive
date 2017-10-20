@@ -6,6 +6,8 @@ permalink: /kb/122/Q122990/
 
 ## Q122990: AppStart Doesn't Change Cursor to Hourglass
 
+{% raw %}
+
 	Article: Q122990
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -57,3 +59,5 @@ permalink: /kb/122/Q122990/
 	
 	=============================================================================
 	
+
+{% endraw %}

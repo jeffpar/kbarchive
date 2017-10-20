@@ -6,6 +6,8 @@ permalink: /kb/182/Q182042/
 
 ## Q182042: FIX: time() Function Overcompensates for Daylight Savings Time
 
+{% raw %}
+
 	Article: Q182042
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:4.0,4.0a,4.1,4.2,4.2b
@@ -131,3 +133,5 @@ permalink: /kb/182/Q182042/
 	
 	=============================================================================
 	
+
+{% endraw %}

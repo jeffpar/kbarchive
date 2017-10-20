@@ -6,6 +6,8 @@ permalink: /kb/130/Q130985/
 
 ## Q130985: Server Properties Returns Inconsistent Number of Connections
 
+{% raw %}
+
 	Article: Q130985
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -58,3 +60,5 @@ permalink: /kb/130/Q130985/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149112/
 
 ## Q149112: Some Image Maps Do Not Work with IIS
 
+{% raw %}
+
 	Article: Q149112
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -74,3 +76,5 @@ permalink: /kb/149/Q149112/
 	
 	=============================================================================
 	
+
+{% endraw %}

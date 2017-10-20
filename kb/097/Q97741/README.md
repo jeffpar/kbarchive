@@ -6,6 +6,8 @@ permalink: /kb/097/Q97741/
 
 ## Q97741: Optimizing DoubleSpace on Your Computer
 
+{% raw %}
+
 	Article: Q97741
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22; WINDOWS:95
@@ -320,3 +322,5 @@ permalink: /kb/097/Q97741/
 	
 	=============================================================================
 	
+
+{% endraw %}

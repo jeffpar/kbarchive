@@ -6,6 +6,8 @@ permalink: /kb/165/Q165093/
 
 ## Q165093: XCON: MTA: Content Conversion Error 260 (Event ID 210)
 
+{% raw %}
+
 	Article: Q165093
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -74,3 +76,5 @@ permalink: /kb/165/Q165093/
 	
 	=============================================================================
 	
+
+{% endraw %}

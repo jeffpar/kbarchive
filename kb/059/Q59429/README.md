@@ -6,6 +6,8 @@ permalink: /kb/059/Q59429/
 
 ## Q59429: QB.EXE/QBX.EXE &quot;Identifier Too Long&quot; Using User-Defined TYPE
 
+{% raw %}
+
 	Article: Q59429
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10
@@ -71,3 +73,5 @@ permalink: /kb/059/Q59429/
 	'If you make "thisisatest" an array instead of a single type
 	'variable the problem is eliminated.
 	thisisatest(1).thisisatesttoobutthisistoolong = 10
+
+{% endraw %}

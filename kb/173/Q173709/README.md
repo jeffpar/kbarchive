@@ -6,6 +6,8 @@ permalink: /kb/173/Q173709/
 
 ## Q173709: Header.exe Lists Microsoft Outlook 97 Constants
 
+{% raw %}
+
 	Article: Q173709
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -80,3 +82,5 @@ permalink: /kb/173/Q173709/
 	
 	=============================================================================
 	
+
+{% endraw %}

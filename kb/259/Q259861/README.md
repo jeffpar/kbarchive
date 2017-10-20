@@ -6,6 +6,8 @@ permalink: /kb/259/Q259861/
 
 ## Q259861: SMS: Queries Do Not Show Results without Class Rights
 
+{% raw %}
+
 	Article: Q259861
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -95,3 +97,5 @@ permalink: /kb/259/Q259861/
 	
 	=============================================================================
 	
+
+{% endraw %}

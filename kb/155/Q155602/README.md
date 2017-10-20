@@ -6,6 +6,8 @@ permalink: /kb/155/Q155602/
 
 ## Q155602: WINIPCFG Command-Line Switches May Not Work
 
+{% raw %}
+
 	Article: Q155602
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/155/Q155602/
 	
 	=============================================================================
 	
+
+{% endraw %}

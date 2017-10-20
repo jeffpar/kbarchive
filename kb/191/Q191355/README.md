@@ -6,6 +6,8 @@ permalink: /kb/191/Q191355/
 
 ## Q191355: FIX: ATL Doesn't Call InitCommonControls in ActiveX Control
 
+{% raw %}
+
 	Article: Q191355
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.0,2.1
@@ -119,3 +121,5 @@ permalink: /kb/191/Q191355/
 	
 	=============================================================================
 	
+
+{% endraw %}

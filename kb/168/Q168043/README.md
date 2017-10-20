@@ -6,6 +6,8 @@ permalink: /kb/168/Q168043/
 
 ## Q168043: FIX: Grid is Empty with Incorrect Column ControlSource
 
+{% raw %}
+
 	Article: Q168043
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0 5.0a
@@ -84,3 +86,5 @@ permalink: /kb/168/Q168043/
 	
 	=============================================================================
 	
+
+{% endraw %}

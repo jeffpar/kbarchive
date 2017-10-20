@@ -6,6 +6,8 @@ permalink: /kb/245/Q245700/
 
 ## Q245700: Software Inventory Does Not Report All Files
 
+{% raw %}
+
 	Article: Q245700
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -69,3 +71,5 @@ permalink: /kb/245/Q245700/
 	
 	=============================================================================
 	
+
+{% endraw %}

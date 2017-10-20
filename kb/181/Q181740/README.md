@@ -6,6 +6,8 @@ permalink: /kb/181/Q181740/
 
 ## Q181740: SNA Windows NT/Windows 95 Client Fails When Using Quiet Install
 
+{% raw %}
+
 	Article: Q181740
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -55,3 +57,5 @@ permalink: /kb/181/Q181740/
 	
 	=============================================================================
 	
+
+{% endraw %}

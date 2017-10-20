@@ -6,6 +6,8 @@ permalink: /kb/090/Q90925/
 
 ## Q90925: Mail Message File Size in Windows for Workgroups
 
+{% raw %}
+
 	Article: Q90925
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :3.0
@@ -55,3 +57,5 @@ permalink: /kb/090/Q90925/
 	
 	=============================================================================
 	
+
+{% endraw %}

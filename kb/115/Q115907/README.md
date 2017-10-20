@@ -6,6 +6,8 @@ permalink: /kb/115/Q115907/
 
 ## Q115907: INF: ODBC Stored Procedures odbc#userid######## on SQL Server
 
+{% raw %}
+
 	Article: Q115907
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -99,3 +101,5 @@ permalink: /kb/115/Q115907/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182902/
 
 ## Q182902: XADM: How To Set Up Container Level Search Control
 
+{% raw %}
+
 	Article: Q182902
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -107,3 +109,5 @@ permalink: /kb/182/Q182902/
 	
 	=============================================================================
 	
+
+{% endraw %}

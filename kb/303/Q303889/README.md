@@ -6,6 +6,8 @@ permalink: /kb/303/Q303889/
 
 ## Q303889: MX Record Failover Does Not Occur When 4xx Error Occurs
 
+{% raw %}
+
 	Article: Q303889
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000,2000 SP1,2000 SP2
@@ -72,3 +74,5 @@ permalink: /kb/303/Q303889/
 	
 	=============================================================================
 	
+
+{% endraw %}

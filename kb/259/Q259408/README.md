@@ -6,6 +6,8 @@ permalink: /kb/259/Q259408/
 
 ## Q259408: SMS: Threshold Settings for Sitestat Lost When CAP Unavailable
 
+{% raw %}
+
 	Article: Q259408
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -65,3 +67,5 @@ permalink: /kb/259/Q259408/
 	
 	=============================================================================
 	
+
+{% endraw %}

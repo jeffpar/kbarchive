@@ -6,6 +6,8 @@ permalink: /kb/146/Q146447/
 
 ## Q146447: FIX: BreakPoints not hit for long file name DLL/EXE
 
+{% raw %}
+
 	Article: Q146447
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -71,3 +73,5 @@ permalink: /kb/146/Q146447/
 	
 	=============================================================================
 	
+
+{% endraw %}

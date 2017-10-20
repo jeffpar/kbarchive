@@ -6,6 +6,8 @@ permalink: /kb/150/Q150648/
 
 ## Q150648: HOWTO: Resolve Files Checked Out by an Unavailable User
 
+{% raw %}
+
 	Article: Q150648
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/150/Q150648/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180545/
 
 ## Q180545: Error Message: The Server on Which the Printer Resides...
 
+{% raw %}
+
 	Article: Q180545
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -73,3 +75,5 @@ permalink: /kb/180/Q180545/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165252/
 
 ## Q165252: WD97: Setting Default Border Via Macro Not Reflected In Dialog
 
+{% raw %}
+
 	Article: Q165252
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -140,3 +142,5 @@ permalink: /kb/165/Q165252/
 	
 	=============================================================================
 	
+
+{% endraw %}

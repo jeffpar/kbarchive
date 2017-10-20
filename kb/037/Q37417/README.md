@@ -6,6 +6,8 @@ permalink: /kb/037/Q37417/
 
 ## Q37417: SHELL Statement Loses Current Data in Serial Port Input Buffer
 
+{% raw %}
+
 	Article: Q37417
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -64,3 +66,5 @@ permalink: /kb/037/Q37417/
 	   SHELL "dir"
 	   PRINT "Size of buffer after SHELL statement: ", LOC(1)
 	   CLOSE
+
+{% endraw %}

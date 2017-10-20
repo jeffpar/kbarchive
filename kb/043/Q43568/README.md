@@ -6,6 +6,8 @@ permalink: /kb/043/Q43568/
 
 ## Q43568: Program That Returns the Address of an Interrupt Vector
 
+{% raw %}
+
 	Article: Q43568
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -59,3 +61,5 @@ permalink: /kb/043/Q43568/
 	LOOP
 	DEF SEG
 	CLS
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/110/Q110742/
 
 ## Q110742: Faxes from Server Are Sent Before Faxes from Other Machines
 
+{% raw %}
+
 	Article: Q110742
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -44,3 +46,5 @@ permalink: /kb/110/Q110742/
 	
 	=============================================================================
 	
+
+{% endraw %}

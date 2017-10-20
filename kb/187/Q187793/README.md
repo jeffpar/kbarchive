@@ -6,6 +6,8 @@ permalink: /kb/187/Q187793/
 
 ## Q187793: Addition of New LAN Interface in RRAS Causes Event Message
 
+{% raw %}
+
 	Article: Q187793
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -100,3 +102,5 @@ permalink: /kb/187/Q187793/
 	
 	=============================================================================
 	
+
+{% endraw %}

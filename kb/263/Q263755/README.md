@@ -6,6 +6,8 @@ permalink: /kb/263/Q263755/
 
 ## Q263755: XFOR: Lotus Notes Command-Line Migration Instructions Incomplete
 
+{% raw %}
+
 	Article: Q263755
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1,5.5 SP2,5.5 SP3
@@ -133,3 +135,5 @@ permalink: /kb/263/Q263755/
 	
 	=============================================================================
 	
+
+{% endraw %}

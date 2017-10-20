@@ -6,6 +6,8 @@ permalink: /kb/173/Q173382/
 
 ## Q173382: XWEB: Outlook Web Access Screen Hard to Read in 16-Color Mode
 
+{% raw %}
+
 	Article: Q173382
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -48,3 +50,5 @@ permalink: /kb/173/Q173382/
 	
 	=============================================================================
 	
+
+{% endraw %}

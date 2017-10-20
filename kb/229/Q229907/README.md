@@ -6,6 +6,8 @@ permalink: /kb/229/Q229907/
 
 ## Q229907: MCSE Readiness Review--Exam 70-087: Comments and Corrections
 
+{% raw %}
+
 	Article: Q229907
 	Product(s): Microsoft Press
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/229/Q229907/
 	
 	=============================================================================
 	
+
+{% endraw %}

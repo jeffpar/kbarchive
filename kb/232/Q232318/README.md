@@ -6,6 +6,8 @@ permalink: /kb/232/Q232318/
 
 ## Q232318: XFOR: How To One-off Address a Message to PROFS
 
+{% raw %}
+
 	Article: Q232318
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -55,3 +57,5 @@ permalink: /kb/232/Q232318/
 	
 	=============================================================================
 	
+
+{% endraw %}

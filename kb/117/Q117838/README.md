@@ -6,6 +6,8 @@ permalink: /kb/117/Q117838/
 
 ## Q117838: FIX: SETUP.EXE Does Not Check for Available Disk Space
 
+{% raw %}
+
 	Article: Q117838
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x,2.6x
@@ -109,3 +111,5 @@ permalink: /kb/117/Q117838/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/064/Q64445/
 
 ## Q64445: How to Order the DPMI or VCPI Specification
 
+{% raw %}
+
 	Article: Q64445
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -72,3 +74,5 @@ permalink: /kb/064/Q64445/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235657/
 
 ## Q235657: Form Feed at End of LU3 Print Job Causes Blank Pages
 
+{% raw %}
+
 	Article: Q235657
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
@@ -81,3 +83,5 @@ permalink: /kb/235/Q235657/
 	
 	=============================================================================
 	
+
+{% endraw %}

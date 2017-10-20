@@ -6,6 +6,8 @@ permalink: /kb/251/Q251759/
 
 ## Q251759: XADM: Exchange Server Mailbox Attributes Override Windows 2000
 
+{% raw %}
+
 	Article: Q251759
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; winnt:5.5
@@ -64,3 +66,5 @@ permalink: /kb/251/Q251759/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216877/
 
 ## Q216877: CFS: Cannot Hear Radio Communications When You Fly a Mission
 
+{% raw %}
+
 	Article: Q216877
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -121,3 +123,5 @@ permalink: /kb/216/Q216877/
 	
 	=============================================================================
 	
+
+{% endraw %}

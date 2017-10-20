@@ -6,6 +6,8 @@ permalink: /kb/101/Q101445/
 
 ## Q101445: Mac Wkst: Enclosed Documents Become Unlocked
 
+{% raw %}
+
 	Article: Q101445
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1,3.1a,3.1c,3.1d
@@ -48,3 +50,5 @@ permalink: /kb/101/Q101445/
 	
 	=============================================================================
 	
+
+{% endraw %}

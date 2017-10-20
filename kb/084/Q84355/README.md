@@ -6,6 +6,8 @@ permalink: /kb/084/Q84355/
 
 ## Q84355: PC Paintbrush 4 Plus Err Msg: Can't Init Virtual Memory
 
+{% raw %}
+
 	Article: Q84355
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/084/Q84355/
 	
 	=============================================================================
 	
+
+{% endraw %}

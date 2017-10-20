@@ -6,6 +6,8 @@ permalink: /kb/193/Q193102/
 
 ## Q193102: FIX: Assert in Appui1.cpp Line 215 in MFC SDI/MDI Application
 
+{% raw %}
+
 	Article: Q193102
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -153,3 +155,5 @@ permalink: /kb/193/Q193102/
 	
 	=============================================================================
 	
+
+{% endraw %}

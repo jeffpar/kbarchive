@@ -6,6 +6,8 @@ permalink: /kb/041/Q41611/
 
 ## Q41611: No Default Extension for a Linker Response File
 
+{% raw %}
+
 	Article: Q41611
 	Product(s): See article
 	Version(s): 3.55 3.60 3.61 3.64 3.65  | 5.01.21 5.01.21
@@ -19,3 +21,5 @@ permalink: /kb/041/Q41611/
 	
 	This information also applies to the Microsoft Segmented-Executable
 	Linker.
+
+{% endraw %}

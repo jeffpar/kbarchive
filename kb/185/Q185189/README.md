@@ -6,6 +6,8 @@ permalink: /kb/185/Q185189/
 
 ## Q185189: Golf 98/99: Sound Problems if You Remove CD-ROM During Game Play
 
+{% raw %}
+
 	Article: Q185189
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -78,3 +80,5 @@ permalink: /kb/185/Q185189/
 	
 	=============================================================================
 	
+
+{% endraw %}

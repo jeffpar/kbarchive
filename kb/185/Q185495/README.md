@@ -6,6 +6,8 @@ permalink: /kb/185/Q185495/
 
 ## Q185495: Error Selecting Link for Online Documentation
 
+{% raw %}
+
 	Article: Q185495
 	Product(s): Internet Information Server
 	Version(s): winnt:
@@ -79,3 +81,5 @@ permalink: /kb/185/Q185495/
 	
 	=============================================================================
 	
+
+{% endraw %}

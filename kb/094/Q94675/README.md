@@ -6,6 +6,8 @@ permalink: /kb/094/Q94675/
 
 ## Q94675: HPPCL5E: Horizontal and Vertical Lines Appear Through Image
 
+{% raw %}
+
 	Article: Q94675
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/094/Q94675/
 	
 	=============================================================================
 	
+
+{% endraw %}

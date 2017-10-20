@@ -6,6 +6,8 @@ permalink: /kb/074/Q74641/
 
 ## Q74641: Required Mouse Drivers for MS-DOS 5.0 or 6.0 Shell
 
+{% raw %}
+
 	Article: Q74641
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -104,3 +106,5 @@ permalink: /kb/074/Q74641/
 	
 	=============================================================================
 	
+
+{% endraw %}

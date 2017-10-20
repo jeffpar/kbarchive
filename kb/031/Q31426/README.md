@@ -6,6 +6,8 @@ permalink: /kb/031/Q31426/
 
 ## Q31426: &quot;Duplicate Definition&quot; on STATIC Array in Second CALL to SUB
 
+{% raw %}
+
 	Article: Q31426
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -68,3 +70,5 @@ permalink: /kb/031/Q31426/
 	END IF
 	print "continuing on"
 	END SUB
+
+{% endraw %}

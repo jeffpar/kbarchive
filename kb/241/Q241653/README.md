@@ -6,6 +6,8 @@ permalink: /kb/241/Q241653/
 
 ## Q241653: Auditing Changes in SCM Not Reflected in User Manager Policies
 
+{% raw %}
+
 	Article: Q241653
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -102,3 +104,5 @@ permalink: /kb/241/Q241653/
 	
 	=============================================================================
 	
+
+{% endraw %}

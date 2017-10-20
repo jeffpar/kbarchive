@@ -6,6 +6,8 @@ permalink: /kb/153/Q153011/
 
 ## Q153011: XFOR: How To Register an Internet Domain Name
 
+{% raw %}
+
 	Article: Q153011
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -82,3 +84,5 @@ permalink: /kb/153/Q153011/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/011/Q11979/
 
 ## Q11979: How Windows Resolves Far Calls When Movable Flag Is Used
 
+{% raw %}
+
 	Article: Q11979
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -81,3 +83,5 @@ permalink: /kb/011/Q11979/
 	
 	=============================================================================
 	
+
+{% endraw %}

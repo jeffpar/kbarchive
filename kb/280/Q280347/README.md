@@ -6,6 +6,8 @@ permalink: /kb/280/Q280347/
 
 ## Q280347: XCON: MTA Journaling Does Not Work on Certain Days
 
+{% raw %}
+
 	Article: Q280347
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP4
@@ -130,3 +132,5 @@ permalink: /kb/280/Q280347/
 	
 	=============================================================================
 	
+
+{% endraw %}

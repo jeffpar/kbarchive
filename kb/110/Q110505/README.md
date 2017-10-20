@@ -6,6 +6,8 @@ permalink: /kb/110/Q110505/
 
 ## Q110505: PRB: Setting First Pane of CStatusBar
 
+{% raw %}
+
 	Article: Q110505
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0,4.1,4.2,5.0
@@ -78,9 +80,9 @@ permalink: /kb/110/Q110505/
 	3. Add a message map entry for the function in the .CPP file, as follows:
 	
 	        BEGIN_MESSAGE_MAP(CMyStat, CStatusBar)
-	           //{ {AFX_MSG_MAP(CMyStat)
+	           //{{AFX_MSG_MAP(CMyStat)
 	           // NOTE: ClassWizard will add and remove mapping macros here.
-	           //} }AFX_MSG_MAP
+	           //}}AFX_MSG_MAP
 	           ON_MESSAGE( WM_SETTEXT, OnSetText )
 	        END_MESSAGE_MAP()
 	
@@ -124,3 +126,5 @@ permalink: /kb/110/Q110505/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/283/Q283897/
 
 ## Q283897: Developing XML Solutions Comments and Corrections
 
+{% raw %}
+
 	Article: Q283897
 	Product(s): Microsoft Press
 	Version(s): 
@@ -113,3 +115,5 @@ permalink: /kb/283/Q283897/
 	
 	=============================================================================
 	
+
+{% endraw %}

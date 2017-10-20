@@ -6,6 +6,8 @@ permalink: /kb/193/Q193256/
 
 ## Q193256: XADM: Euro Displayed Incorrectly After MIME Conversion
 
+{% raw %}
+
 	Article: Q193256
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.0 SP1,5.0 SP2,5.5,5.5 SP1,5.5 SP2
@@ -161,3 +163,5 @@ permalink: /kb/193/Q193256/
 	
 	=============================================================================
 	
+
+{% endraw %}

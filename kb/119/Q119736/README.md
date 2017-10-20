@@ -6,6 +6,8 @@ permalink: /kb/119/Q119736/
 
 ## Q119736: How to Implement the BackColor Property in VBX Custom Control
 
+{% raw %}
+
 	Article: Q119736
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -149,3 +151,5 @@ permalink: /kb/119/Q119736/
 	
 	=============================================================================
 	
+
+{% endraw %}

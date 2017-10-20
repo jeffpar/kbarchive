@@ -6,6 +6,8 @@ permalink: /kb/172/Q172102/
 
 ## Q172102: How to Remove Cached Entries from Address Box in Program Viewer
 
+{% raw %}
+
 	Article: Q172102
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5,95
@@ -61,3 +63,5 @@ permalink: /kb/172/Q172102/
 	
 	=============================================================================
 	
+
+{% endraw %}

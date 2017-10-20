@@ -6,6 +6,8 @@ permalink: /kb/164/Q164025/
 
 ## Q164025: Error Message When Installing Client Services for NetWare
 
+{% raw %}
+
 	Article: Q164025
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:3.51 4.0
@@ -74,3 +76,5 @@ permalink: /kb/164/Q164025/
 	
 	=============================================================================
 	
+
+{% endraw %}

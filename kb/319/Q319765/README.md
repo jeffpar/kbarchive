@@ -6,6 +6,8 @@ permalink: /kb/319/Q319765/
 
 ## Q319765: Zoo Tycoon: How to Change to a 3D Mouse Cursor
 
+{% raw %}
+
 	Article: Q319765
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/319/Q319765/
 	
 	=============================================================================
 	
+
+{% endraw %}

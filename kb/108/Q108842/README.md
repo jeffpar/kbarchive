@@ -6,6 +6,8 @@ permalink: /kb/108/Q108842/
 
 ## Q108842: PC MAPI: Using Simple MAPI on Windows NT and NTAS
 
+{% raw %}
+
 	Article: Q108842
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0,3.0b,3.2
@@ -54,3 +56,5 @@ permalink: /kb/108/Q108842/
 	
 	=============================================================================
 	
+
+{% endraw %}

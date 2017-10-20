@@ -6,6 +6,8 @@ permalink: /kb/167/Q167833/
 
 ## Q167833: TCP/IP Connection Disconnected After Inactive Period
 
+{% raw %}
+
 	Article: Q167833
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -89,3 +91,5 @@ permalink: /kb/167/Q167833/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/284/Q284984/
 
 ## Q284984: Event ID 115 When Attempting to Connect to Web Site Using HTTPS
 
+{% raw %}
+
 	Article: Q284984
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -152,3 +154,5 @@ permalink: /kb/284/Q284984/
 	
 	=============================================================================
 	
+
+{% endraw %}

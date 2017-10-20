@@ -6,6 +6,8 @@ permalink: /kb/090/Q90325/
 
 ## Q90325: Intel EtherExpress (EE) 16 Network Card Configuration
 
+{% raw %}
+
 	Article: Q90325
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/090/Q90325/
 	
 	=============================================================================
 	
+
+{% endraw %}

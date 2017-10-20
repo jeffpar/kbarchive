@@ -6,6 +6,8 @@ permalink: /kb/248/Q248781/
 
 ## Q248781: XADM: Mailbox Manager Installation Err Msg: Insufficient Drive..
 
+{% raw %}
+
 	Article: Q248781
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -70,3 +72,5 @@ permalink: /kb/248/Q248781/
 	
 	=============================================================================
 	
+
+{% endraw %}

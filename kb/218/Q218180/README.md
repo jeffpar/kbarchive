@@ -6,6 +6,8 @@ permalink: /kb/218/Q218180/
 
 ## Q218180: Internet Information Server Returns IP Address in HTTP Header
 
+{% raw %}
+
 	Article: Q218180
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -185,3 +187,5 @@ permalink: /kb/218/Q218180/
 	
 	=============================================================================
 	
+
+{% endraw %}

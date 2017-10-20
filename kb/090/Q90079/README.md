@@ -6,6 +6,8 @@ permalink: /kb/090/Q90079/
 
 ## Q90079: Setting Up Vi-Spy with Windows 3.1
 
+{% raw %}
+
 	Article: Q90079
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/090/Q90079/
 	
 	=============================================================================
 	
+
+{% endraw %}

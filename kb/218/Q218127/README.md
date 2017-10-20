@@ -6,6 +6,8 @@ permalink: /kb/218/Q218127/
 
 ## Q218127: Migrate User Wizard Does Not Configure Internet Connectivity
 
+{% raw %}
+
 	Article: Q218127
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.5
@@ -89,3 +91,5 @@ permalink: /kb/218/Q218127/
 	
 	=============================================================================
 	
+
+{% endraw %}

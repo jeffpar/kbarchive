@@ -6,6 +6,8 @@ permalink: /kb/235/Q235483/
 
 ## Q235483: XFOR: Adding Secondary SMTP Proxy Address for GroupWise Dirsync
 
+{% raw %}
+
 	Article: Q235483
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -87,3 +89,5 @@ permalink: /kb/235/Q235483/
 	
 	=============================================================================
 	
+
+{% endraw %}

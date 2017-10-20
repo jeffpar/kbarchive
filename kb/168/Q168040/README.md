@@ -6,6 +6,8 @@ permalink: /kb/168/Q168040/
 
 ## Q168040: BUG: Insert Object from File Dialog Box Shows Hidden Files
 
+{% raw %}
+
 	Article: Q168040
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -64,3 +66,5 @@ permalink: /kb/168/Q168040/
 	
 	=============================================================================
 	
+
+{% endraw %}

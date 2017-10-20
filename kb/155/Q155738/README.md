@@ -6,6 +6,8 @@ permalink: /kb/155/Q155738/
 
 ## Q155738: Application Coding Error Results in Error 10038 (WSAENOTSOCK)
 
+{% raw %}
+
 	Article: Q155738
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -60,3 +62,5 @@ permalink: /kb/155/Q155738/
 	
 	=============================================================================
 	
+
+{% endraw %}

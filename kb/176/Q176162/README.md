@@ -6,6 +6,8 @@ permalink: /kb/176/Q176162/
 
 ## Q176162: BUG: Resource Loss with VB4 16-Bit OLE Container in Windows 3.11
 
+{% raw %}
+
 	Article: Q176162
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -74,3 +76,5 @@ permalink: /kb/176/Q176162/
 	
 	=============================================================================
 	
+
+{% endraw %}

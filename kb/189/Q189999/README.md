@@ -6,6 +6,8 @@ permalink: /kb/189/Q189999/
 
 ## Q189999: XADM: BCC Recipients Are Visible in an Embedded Message
 
+{% raw %}
+
 	Article: Q189999
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0; WINDOWS:5.0,8.0; winnt:5.0,5.5
@@ -97,3 +99,5 @@ permalink: /kb/189/Q189999/
 	
 	=============================================================================
 	
+
+{% endraw %}

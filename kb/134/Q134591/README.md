@@ -6,6 +6,8 @@ permalink: /kb/134/Q134591/
 
 ## Q134591: Games Using the PC Speaker May Run Slowly or Hang
 
+{% raw %}
+
 	Article: Q134591
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/134/Q134591/
 	
 	=============================================================================
 	
+
+{% endraw %}

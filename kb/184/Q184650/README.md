@@ -6,6 +6,8 @@ permalink: /kb/184/Q184650/
 
 ## Q184650: INFO: What Language Features does VB have that VBCE/eVB Do Not
 
+{% raw %}
+
 	Article: Q184650
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0,5.0,6.0
@@ -167,3 +169,5 @@ permalink: /kb/184/Q184650/
 	
 	=============================================================================
 	
+
+{% endraw %}

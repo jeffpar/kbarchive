@@ -6,6 +6,8 @@ permalink: /kb/022/Q22286/
 
 ## Q22286: No More Than 255 Modules May Be Placed in Overlays
 
+{% raw %}
+
 	Article: Q22286
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10 6.00 6.00a
@@ -28,3 +30,5 @@ permalink: /kb/022/Q22286/
 	
 	There is a limit of 255 code segments that can be overlayed. Segments
 	beyond this limit are put in the root.
+
+{% endraw %}

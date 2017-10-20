@@ -6,6 +6,8 @@ permalink: /kb/154/Q154536/
 
 ## Q154536: SMS: Remote Control &quot;Permission Required&quot; Behavior
 
+{% raw %}
+
 	Article: Q154536
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -51,3 +53,5 @@ permalink: /kb/154/Q154536/
 	
 	=============================================================================
 	
+
+{% endraw %}

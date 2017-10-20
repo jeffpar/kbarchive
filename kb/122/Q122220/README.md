@@ -6,6 +6,8 @@ permalink: /kb/122/Q122220/
 
 ## Q122220: FIX: Return Value Not Ignored with NMAKE's Dash (-) Command
 
+{% raw %}
+
 	Article: Q122220
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,1.5,1.51,2.0
@@ -77,3 +79,5 @@ permalink: /kb/122/Q122220/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179199/
 
 ## Q179199: BUG: Grid Based on .QPR File Appears Blank in Visual FoxPro 5.0
 
+{% raw %}
+
 	Article: Q179199
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -79,3 +81,5 @@ permalink: /kb/179/Q179199/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185992/
 
 ## Q185992: PRB: &quot;Wrong Version Of Run-Time DLL&quot; When Starting Application
 
+{% raw %}
+
 	Article: Q185992
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -123,3 +125,5 @@ permalink: /kb/185/Q185992/
 	
 	=============================================================================
 	
+
+{% endraw %}

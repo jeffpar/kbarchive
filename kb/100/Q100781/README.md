@@ -6,6 +6,8 @@ permalink: /kb/100/Q100781/
 
 ## Q100781: INFO: Developer Services Offers Solution Provider Packages
 
+{% raw %}
+
 	Article: Q100781
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -55,3 +57,5 @@ permalink: /kb/100/Q100781/
 	
 	=============================================================================
 	
+
+{% endraw %}

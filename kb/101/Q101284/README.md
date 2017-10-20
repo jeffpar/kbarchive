@@ -6,6 +6,8 @@ permalink: /kb/101/Q101284/
 
 ## Q101284: Lucid Lightning Disk-Caching Software and SMARTDrive 4.x
 
+{% raw %}
+
 	Article: Q101284
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/101/Q101284/
 	
 	=============================================================================
 	
+
+{% endraw %}

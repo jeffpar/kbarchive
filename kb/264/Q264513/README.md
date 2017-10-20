@@ -6,6 +6,8 @@ permalink: /kb/264/Q264513/
 
 ## Q264513: Games Err Msg: Setup Encountered a Disk Error While Writing...
 
+{% raw %}
+
 	Article: Q264513
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -139,3 +141,5 @@ permalink: /kb/264/Q264513/
 	
 	=============================================================================
 	
+
+{% endraw %}

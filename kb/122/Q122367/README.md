@@ -6,6 +6,8 @@ permalink: /kb/122/Q122367/
 
 ## Q122367: Resizing Telnet Window with Full Drag Enabled Is Jerky
 
+{% raw %}
+
 	Article: Q122367
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/122/Q122367/
 	
 	=============================================================================
 	
+
+{% endraw %}

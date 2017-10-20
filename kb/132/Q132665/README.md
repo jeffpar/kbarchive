@@ -6,6 +6,8 @@ permalink: /kb/132/Q132665/
 
 ## Q132665: Cannot Run External Programs from NetWare Login Script
 
+{% raw %}
+
 	Article: Q132665
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/132/Q132665/
 	
 	=============================================================================
 	
+
+{% endraw %}

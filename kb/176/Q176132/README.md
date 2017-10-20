@@ -6,6 +6,8 @@ permalink: /kb/176/Q176132/
 
 ## Q176132: XCON: Signed Message in DMS MTA Not Converted
 
+{% raw %}
+
 	Article: Q176132
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -71,3 +73,5 @@ permalink: /kb/176/Q176132/
 	
 	=============================================================================
 	
+
+{% endraw %}

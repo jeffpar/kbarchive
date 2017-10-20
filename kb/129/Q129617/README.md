@@ -6,6 +6,8 @@ permalink: /kb/129/Q129617/
 
 ## Q129617: FIX: Destructor Called on Non Constructed Temporary
 
+{% raw %}
+
 	Article: Q129617
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1
@@ -172,3 +174,5 @@ permalink: /kb/129/Q129617/
 	
 	=============================================================================
 	
+
+{% endraw %}

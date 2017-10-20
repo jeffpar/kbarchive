@@ -6,6 +6,8 @@ permalink: /kb/143/Q143329/
 
 ## Q143329: Serial Mouse Does Not Work on a DEC Alpha Computer
 
+{% raw %}
+
 	Article: Q143329
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -80,3 +82,5 @@ permalink: /kb/143/Q143329/
 	
 	=============================================================================
 	
+
+{% endraw %}

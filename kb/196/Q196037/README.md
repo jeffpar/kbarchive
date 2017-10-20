@@ -6,6 +6,8 @@ permalink: /kb/196/Q196037/
 
 ## Q196037: AFTP Server Displays Incorrect Date for Files after 1999
 
+{% raw %}
+
 	Article: Q196037
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -57,3 +59,5 @@ permalink: /kb/196/Q196037/
 	
 	=============================================================================
 	
+
+{% endraw %}

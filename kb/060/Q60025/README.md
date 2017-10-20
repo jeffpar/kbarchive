@@ -6,6 +6,8 @@ permalink: /kb/060/Q60025/
 
 ## Q60025: Mac Form: Removing a Custom Form on a Mail Server
 
+{% raw %}
+
 	Article: Q60025
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -58,3 +60,5 @@ permalink: /kb/060/Q60025/
 	
 	=============================================================================
 	
+
+{% endraw %}

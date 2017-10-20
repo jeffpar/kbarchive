@@ -6,6 +6,8 @@ permalink: /kb/169/Q169279/
 
 ## Q169279: ACC97: Error in Documenter If Object Can't Be Checked Out
 
+{% raw %}
+
 	Article: Q169279
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,97
@@ -81,3 +83,5 @@ permalink: /kb/169/Q169279/
 	
 	=============================================================================
 	
+
+{% endraw %}

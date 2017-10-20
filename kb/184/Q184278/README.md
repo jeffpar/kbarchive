@@ -6,6 +6,8 @@ permalink: /kb/184/Q184278/
 
 ## Q184278: Server in One Domain May Disconnect Client in Another Domain
 
+{% raw %}
+
 	Article: Q184278
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/184/Q184278/
 	
 	=============================================================================
 	
+
+{% endraw %}

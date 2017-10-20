@@ -6,6 +6,8 @@ permalink: /kb/100/Q100953/
 
 ## Q100953: Inaccuracies in DoubleSpace Manager Change Size Screen
 
+{% raw %}
+
 	Article: Q100953
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -68,3 +70,5 @@ permalink: /kb/100/Q100953/
 	
 	=============================================================================
 	
+
+{% endraw %}

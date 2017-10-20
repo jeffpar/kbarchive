@@ -6,6 +6,8 @@ permalink: /kb/167/Q167015/
 
 ## Q167015: Lexmark Optra Ep Shows Duplex Option and Memory Available
 
+{% raw %}
+
 	Article: Q167015
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -54,3 +56,5 @@ permalink: /kb/167/Q167015/
 	
 	=============================================================================
 	
+
+{% endraw %}

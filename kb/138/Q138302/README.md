@@ -6,6 +6,8 @@ permalink: /kb/138/Q138302/
 
 ## Q138302: Deinstall of SMS on Macintosh Client Does Not Remove SMS Dir.
 
+{% raw %}
+
 	Article: Q138302
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -42,3 +44,5 @@ permalink: /kb/138/Q138302/
 	
 	=============================================================================
 	
+
+{% endraw %}

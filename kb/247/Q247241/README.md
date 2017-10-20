@@ -6,6 +6,8 @@ permalink: /kb/247/Q247241/
 
 ## Q247241: WhatsThisHelp.exe: Implement HTMLHelp &amp; WhatsThisHelp
 
+{% raw %}
+
 	Article: Q247241
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -269,3 +271,5 @@ permalink: /kb/247/Q247241/
 	
 	=============================================================================
 	
+
+{% endraw %}

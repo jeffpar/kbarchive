@@ -6,6 +6,8 @@ permalink: /kb/138/Q138240/
 
 ## Q138240: Powerpoint Quick Preview Launch Generates Error Using Appstart
 
+{% raw %}
+
 	Article: Q138240
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -48,3 +50,5 @@ permalink: /kb/138/Q138240/
 	
 	=============================================================================
 	
+
+{% endraw %}

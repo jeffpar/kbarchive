@@ -6,6 +6,8 @@ permalink: /kb/247/Q247761/
 
 ## Q247761: XCLN: Read Notifications Don't Appear on Outlook Tracking Tab
 
+{% raw %}
+
 	Article: Q247761
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,97,98; winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -95,3 +97,5 @@ permalink: /kb/247/Q247761/
 	
 	=============================================================================
 	
+
+{% endraw %}

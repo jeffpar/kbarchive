@@ -6,6 +6,8 @@ permalink: /kb/153/Q153604/
 
 ## Q153604: PGC Gives User Group Error If Out of Memory
 
+{% raw %}
+
 	Article: Q153604
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -52,3 +54,5 @@ permalink: /kb/153/Q153604/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137096/
 
 ## Q137096: PRB: Type Mismatch When Passing Variants to Word Using OLE
 
+{% raw %}
+
 	Article: Q137096
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -98,3 +100,5 @@ permalink: /kb/137/Q137096/
 	
 	=============================================================================
 	
+
+{% endraw %}

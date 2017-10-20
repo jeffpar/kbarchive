@@ -6,6 +6,8 @@ permalink: /kb/141/Q141194/
 
 ## Q141194: Cannot Reply By E-mail To Messages With Brackets In Address
 
+{% raw %}
+
 	Article: Q141194
 	Product(s): The Microsoft Network
 	Version(s): 1.0,1.05,1.2,1.3,2.0,2.5,2.6
@@ -54,3 +56,5 @@ permalink: /kb/141/Q141194/
 	
 	=============================================================================
 	
+
+{% endraw %}

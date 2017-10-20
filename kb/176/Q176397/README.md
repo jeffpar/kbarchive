@@ -6,6 +6,8 @@ permalink: /kb/176/Q176397/
 
 ## Q176397: XFOR: Access Violation Migrating Messages from SFS Postoffice
 
+{% raw %}
+
 	Article: Q176397
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -78,3 +80,5 @@ permalink: /kb/176/Q176397/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167996/
 
 ## Q167996: FIX: /Og Causes Invalid Double Result Returned from Function
 
+{% raw %}
+
 	Article: Q167996
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -82,3 +84,5 @@ permalink: /kb/167/Q167996/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/133/Q133035/
 
 ## Q133035: Diamond Sonic Sound LX Card Does Not Seem to Work
 
+{% raw %}
+
 	Article: Q133035
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/133/Q133035/
 	
 	=============================================================================
 	
+
+{% endraw %}

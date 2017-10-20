@@ -6,6 +6,8 @@ permalink: /kb/029/Q29842/
 
 ## Q29842: C 5.10 MTDYNA.DOC: Component Files of MTDYNA Libraries
 
+{% raw %}
+
 	Article: Q29842
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -46,3 +48,5 @@ permalink: /kb/029/Q29842/
 	
 	   MKMTDLL.CMD        OS/2 batch file for creating multiple-thread
 	                      dynamic-link library.
+
+{% endraw %}

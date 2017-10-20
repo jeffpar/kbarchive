@@ -6,6 +6,8 @@ permalink: /kb/104/Q104917/
 
 ## Q104917: PRB: Help Compiler Causes Fatal Exit or Other System Failure
 
+{% raw %}
+
 	Article: Q104917
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -78,3 +80,5 @@ permalink: /kb/104/Q104917/
 	
 	=============================================================================
 	
+
+{% endraw %}

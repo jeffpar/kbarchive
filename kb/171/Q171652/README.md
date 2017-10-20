@@ -6,6 +6,8 @@ permalink: /kb/171/Q171652/
 
 ## Q171652: HOWTO: Retrieve Individual Bytes from a Multi-Byte Type in VB
 
+{% raw %}
+
 	Article: Q171652
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,7.0
@@ -104,3 +106,5 @@ permalink: /kb/171/Q171652/
 	
 	=============================================================================
 	
+
+{% endraw %}

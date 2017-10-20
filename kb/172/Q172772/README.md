@@ -6,6 +6,8 @@ permalink: /kb/172/Q172772/
 
 ## Q172772: Err Msg: Msnviewr Caused a Stack Fault in Module Kernel32.dll
 
+{% raw %}
+
 	Article: Q172772
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5
@@ -55,3 +57,5 @@ permalink: /kb/172/Q172772/
 	
 	=============================================================================
 	
+
+{% endraw %}

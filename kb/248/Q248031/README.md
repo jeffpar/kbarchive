@@ -6,6 +6,8 @@ permalink: /kb/248/Q248031/
 
 ## Q248031: Err Msg: HTTP 403.17 - Forbidden: Client Certificate Has Expired
 
+{% raw %}
+
 	Article: Q248031
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -71,3 +73,5 @@ permalink: /kb/248/Q248031/
 	
 	=============================================================================
 	
+
+{% endraw %}

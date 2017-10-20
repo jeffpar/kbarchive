@@ -6,6 +6,8 @@ permalink: /kb/212/Q212919/
 
 ## Q212919: SMS: Adding an MMC Snap-In Using SMS Installer
 
+{% raw %}
+
 	Article: Q212919
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -76,3 +78,5 @@ permalink: /kb/212/Q212919/
 	
 	=============================================================================
 	
+
+{% endraw %}

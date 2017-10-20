@@ -6,6 +6,8 @@ permalink: /kb/131/Q131616/
 
 ## Q131616: Windows NT Backup Restore Err Msg : Unable to Create File Links
 
+{% raw %}
+
 	Article: Q131616
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51
@@ -47,3 +49,5 @@ permalink: /kb/131/Q131616/
 	
 	=============================================================================
 	
+
+{% endraw %}

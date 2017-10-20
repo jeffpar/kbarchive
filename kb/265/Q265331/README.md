@@ -6,6 +6,8 @@ permalink: /kb/265/Q265331/
 
 ## Q265331: HOWTO: Read a REG_EXPAND_SZ Value From the Registry
 
+{% raw %}
+
 	Article: Q265331
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -210,3 +212,5 @@ permalink: /kb/265/Q265331/
 	
 	=============================================================================
 	
+
+{% endraw %}

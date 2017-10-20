@@ -6,6 +6,8 @@ permalink: /kb/104/Q104996/
 
 ## Q104996: Divide By Zero Error with MS-DOS FORMAT Command
 
+{% raw %}
+
 	Article: Q104996
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -47,3 +49,5 @@ permalink: /kb/104/Q104996/
 	
 	=============================================================================
 	
+
+{% endraw %}

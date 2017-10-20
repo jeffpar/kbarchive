@@ -6,6 +6,8 @@ permalink: /kb/137/Q137340/
 
 ## Q137340: Err Msg: The File C:&#92;W95undo.dat Is Missing or Invalid
 
+{% raw %}
+
 	Article: Q137340
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -69,3 +71,5 @@ permalink: /kb/137/Q137340/
 	
 	=============================================================================
 	
+
+{% endraw %}

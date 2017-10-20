@@ -6,6 +6,8 @@ permalink: /kb/199/Q199048/
 
 ## Q199048: FS98 Err Msg: General Protection Fault in Module Unknown
 
+{% raw %}
+
 	Article: Q199048
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -115,3 +117,5 @@ permalink: /kb/199/Q199048/
 	
 	=============================================================================
 	
+
+{% endraw %}

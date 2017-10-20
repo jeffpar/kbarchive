@@ -6,6 +6,8 @@ permalink: /kb/196/Q196000/
 
 ## Q196000: SNA Print Server Rejects FMH-1 With Sense Code 1005
 
+{% raw %}
+
 	Article: Q196000
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -83,3 +85,5 @@ permalink: /kb/196/Q196000/
 	
 	=============================================================================
 	
+
+{% endraw %}

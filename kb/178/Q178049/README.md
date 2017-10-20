@@ -6,6 +6,8 @@ permalink: /kb/178/Q178049/
 
 ## Q178049: Encarta 98 Err Msg: Error Registering the OCX...
 
+{% raw %}
+
 	Article: Q178049
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -217,3 +219,5 @@ permalink: /kb/178/Q178049/
 	
 	=============================================================================
 	
+
+{% endraw %}

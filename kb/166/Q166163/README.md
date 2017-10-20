@@ -6,6 +6,8 @@ permalink: /kb/166/Q166163/
 
 ## Q166163: XCLN: Err Msg: No Transport Provider Was Available
 
+{% raw %}
+
 	Article: Q166163
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0; Win95:4.0;WINDOWS:4.0
@@ -165,3 +167,5 @@ permalink: /kb/166/Q166163/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/091/Q91679/
 
 ## Q91679: Terminal: Sending Incoming Text Data to a Text File
 
+{% raw %}
+
 	Article: Q91679
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -88,3 +90,5 @@ permalink: /kb/091/Q91679/
 	
 	=============================================================================
 	
+
+{% endraw %}

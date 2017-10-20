@@ -6,6 +6,8 @@ permalink: /kb/113/Q113413/
 
 ## Q113413: Windows 3.11 Upgrade Removes User Information
 
+{% raw %}
+
 	Article: Q113413
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -85,3 +87,5 @@ permalink: /kb/113/Q113413/
 	
 	=============================================================================
 	
+
+{% endraw %}

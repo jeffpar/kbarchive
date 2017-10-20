@@ -6,6 +6,8 @@ permalink: /kb/242/Q242767/
 
 ## Q242767: INFO: Deploying WebClasses with PDW
 
+{% raw %}
+
 	Article: Q242767
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -144,3 +146,5 @@ permalink: /kb/242/Q242767/
 	
 	=============================================================================
 	
+
+{% endraw %}

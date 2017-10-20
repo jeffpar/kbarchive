@@ -6,6 +6,8 @@ permalink: /kb/093/Q93921/
 
 ## Q93921: PRB: SDK INSTALL Having Problems Opening INSTALL.INF
 
+{% raw %}
+
 	Article: Q93921
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -57,3 +59,5 @@ permalink: /kb/093/Q93921/
 	
 	=============================================================================
 	
+
+{% endraw %}

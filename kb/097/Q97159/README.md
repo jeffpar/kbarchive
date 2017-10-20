@@ -6,6 +6,8 @@ permalink: /kb/097/Q97159/
 
 ## Q97159: READKEY() Doesn't Work with CTRL+PAGE UP &amp; CTRL+PAGE DOWN
 
+{% raw %}
+
 	Article: Q97159
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -45,3 +47,5 @@ permalink: /kb/097/Q97159/
 	
 	=============================================================================
 	
+
+{% endraw %}

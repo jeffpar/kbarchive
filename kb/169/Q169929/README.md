@@ -6,6 +6,8 @@ permalink: /kb/169/Q169929/
 
 ## Q169929: WD97: Captions Update to Zero If Grouped with Objects
 
+{% raw %}
+
 	Article: Q169929
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -92,3 +94,5 @@ permalink: /kb/169/Q169929/
 	
 	=============================================================================
 	
+
+{% endraw %}

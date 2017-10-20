@@ -6,6 +6,8 @@ permalink: /kb/142/Q142990/
 
 ## Q142990: Cannot Connect to MSN After Installing Canon BubbleJet
 
+{% raw %}
+
 	Article: Q142990
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5
@@ -80,3 +82,5 @@ permalink: /kb/142/Q142990/
 	
 	=============================================================================
 	
+
+{% endraw %}

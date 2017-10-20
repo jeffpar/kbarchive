@@ -6,6 +6,8 @@ permalink: /kb/222/Q222538/
 
 ## Q222538: XFOR:API Gateway Logs Unknown Keyword Errors on Free Busy Search
 
+{% raw %}
+
 	Article: Q222538
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -138,3 +140,5 @@ permalink: /kb/222/Q222538/
 	
 	=============================================================================
 	
+
+{% endraw %}

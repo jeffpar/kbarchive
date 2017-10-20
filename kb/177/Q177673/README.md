@@ -6,6 +6,8 @@ permalink: /kb/177/Q177673/
 
 ## Q177673: XADM: Incoming PF Replication Message Causes Events in App Log
 
+{% raw %}
+
 	Article: Q177673
 	Product(s): Microsoft Exchange
 	Version(s): Windows:5.0
@@ -85,3 +87,5 @@ permalink: /kb/177/Q177673/
 	
 	=============================================================================
 	
+
+{% endraw %}

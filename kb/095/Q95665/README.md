@@ -6,6 +6,8 @@ permalink: /kb/095/Q95665/
 
 ## Q95665: How to Use the UPDATE Command
 
+{% raw %}
+
 	Article: Q95665
 	Product(s): Microsoft FoxPro
 	Version(s): 2.1,3.0,6.0
@@ -75,3 +77,5 @@ permalink: /kb/095/Q95665/
 	
 	=============================================================================
 	
+
+{% endraw %}

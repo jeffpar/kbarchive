@@ -6,6 +6,8 @@ permalink: /kb/286/Q286766/
 
 ## Q286766: PRB: Unable to Change Location of MSDN Library After Install
 
+{% raw %}
+
 	Article: Q286766
 	Product(s): Microsoft Developer Network
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/286/Q286766/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/038/Q38139/
 
 ## Q38139: Hewlett-Packard Font Cartridges &quot;H&quot; through &quot;P&quot; Description
 
+{% raw %}
+
 	Article: Q38139
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): 
@@ -101,3 +103,5 @@ permalink: /kb/038/Q38139/
 	
 	=============================================================================
 	
+
+{% endraw %}

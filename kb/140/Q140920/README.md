@@ -6,6 +6,8 @@ permalink: /kb/140/Q140920/
 
 ## Q140920: SMS ErrMsg: Package Command Manager Is Unable to Install...
 
+{% raw %}
+
 	Article: Q140920
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.1
@@ -73,3 +75,5 @@ permalink: /kb/140/Q140920/
 	
 	=============================================================================
 	
+
+{% endraw %}

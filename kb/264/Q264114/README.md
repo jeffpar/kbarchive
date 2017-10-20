@@ -6,6 +6,8 @@ permalink: /kb/264/Q264114/
 
 ## Q264114: PRB: VBCE -  Error Message &quot;INSTWZRD Encountered a Fatal Error&quot;
 
+{% raw %}
+
 	Article: Q264114
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -111,3 +113,5 @@ permalink: /kb/264/Q264114/
 	
 	=============================================================================
 	
+
+{% endraw %}

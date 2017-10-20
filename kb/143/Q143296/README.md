@@ -6,6 +6,8 @@ permalink: /kb/143/Q143296/
 
 ## Q143296: FIX: NODEFAULT in Page's Deactivate Event Activates Wrong Tab
 
+{% raw %}
+
 	Article: Q143296
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -101,3 +103,5 @@ permalink: /kb/143/Q143296/
 	
 	=============================================================================
 	
+
+{% endraw %}

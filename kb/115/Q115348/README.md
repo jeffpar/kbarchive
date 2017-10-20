@@ -6,6 +6,8 @@ permalink: /kb/115/Q115348/
 
 ## Q115348: X400: MTA Not Found Error Message
 
+{% raw %}
+
 	Article: Q115348
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -46,3 +48,5 @@ permalink: /kb/115/Q115348/
 	
 	=============================================================================
 	
+
+{% endraw %}

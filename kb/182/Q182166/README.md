@@ -6,6 +6,8 @@ permalink: /kb/182/Q182166/
 
 ## Q182166: XFOR: Extra Designators in Korean ISO-2022-KR Encoded Messages
 
+{% raw %}
+
 	Article: Q182166
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0 SP4
@@ -54,3 +56,5 @@ permalink: /kb/182/Q182166/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152719/
 
 ## Q152719: WAN and Trust: Traffic on the Wire
 
+{% raw %}
+
 	Article: Q152719
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -211,3 +213,5 @@ permalink: /kb/152/Q152719/
 	
 	=============================================================================
 	
+
+{% endraw %}

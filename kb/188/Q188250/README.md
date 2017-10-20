@@ -6,6 +6,8 @@ permalink: /kb/188/Q188250/
 
 ## Q188250: XFOR: IRIX Netscape POP3/IMAP4 Client Cannot Submit SMTP Mail
 
+{% raw %}
+
 	Article: Q188250
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -119,3 +121,5 @@ permalink: /kb/188/Q188250/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167254/
 
 ## Q167254: WD97: Invalid Page Fault Applying Font Animation to Footer Text
 
+{% raw %}
+
 	Article: Q167254
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -69,3 +71,5 @@ permalink: /kb/167/Q167254/
 	
 	=============================================================================
 	
+
+{% endraw %}

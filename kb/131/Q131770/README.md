@@ -6,6 +6,8 @@ permalink: /kb/131/Q131770/
 
 ## Q131770: PDC Not Listed in Server Manager After Changing Computer Name
 
+{% raw %}
+
 	Article: Q131770
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -51,3 +53,5 @@ permalink: /kb/131/Q131770/
 	
 	=============================================================================
 	
+
+{% endraw %}

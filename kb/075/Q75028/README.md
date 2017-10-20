@@ -6,6 +6,8 @@ permalink: /kb/075/Q75028/
 
 ## Q75028: Novell RPRINTER 1.21 Is Windows 3.0 Compatible
 
+{% raw %}
+
 	Article: Q75028
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -82,3 +84,5 @@ permalink: /kb/075/Q75028/
 	
 	=============================================================================
 	
+
+{% endraw %}

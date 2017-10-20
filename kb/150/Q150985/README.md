@@ -6,6 +6,8 @@ permalink: /kb/150/Q150985/
 
 ## Q150985: World Atlas: Summary of Printing Capabilities
 
+{% raw %}
+
 	Article: Q150985
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/150/Q150985/
 	
 	=============================================================================
 	
+
+{% endraw %}

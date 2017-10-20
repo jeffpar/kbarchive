@@ -6,6 +6,8 @@ permalink: /kb/141/Q141632/
 
 ## Q141632: PRB: GETPEM Function Doesn't Work on Object Contained in Class
 
+{% raw %}
+
 	Article: Q141632
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b
@@ -118,3 +120,5 @@ permalink: /kb/141/Q141632/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66874/
 
 ## Q66874: Description of Golf in Windows Entertainment Pack
 
+{% raw %}
+
 	Article: Q66874
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/066/Q66874/
 	
 	=============================================================================
 	
+
+{% endraw %}

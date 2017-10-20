@@ -6,6 +6,8 @@ permalink: /kb/170/Q170971/
 
 ## Q170971: WD97: Link to Floating Picture Lost When Document Saved as 6.0/9
 
+{% raw %}
+
 	Article: Q170971
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -97,3 +99,5 @@ permalink: /kb/170/Q170971/
 	
 	=============================================================================
 	
+
+{% endraw %}

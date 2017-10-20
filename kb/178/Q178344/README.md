@@ -6,6 +6,8 @@ permalink: /kb/178/Q178344/
 
 ## Q178344: XADM: IS Uses 100% of CPU and Generates Access Violation
 
+{% raw %}
+
 	Article: Q178344
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -101,3 +103,5 @@ permalink: /kb/178/Q178344/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97843/
 
 ## Q97843: Addicons Adds Program Groups and Icons to Program Manager
 
+{% raw %}
+
 	Article: Q97843
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/097/Q97843/
 	
 	=============================================================================
 	
+
+{% endraw %}

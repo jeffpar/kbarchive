@@ -6,6 +6,8 @@ permalink: /kb/135/Q135136/
 
 ## Q135136: Enabling APM Support After Windows 95 Setup
 
+{% raw %}
+
 	Article: Q135136
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -73,3 +75,5 @@ permalink: /kb/135/Q135136/
 	
 	=============================================================================
 	
+
+{% endraw %}

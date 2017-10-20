@@ -6,6 +6,8 @@ permalink: /kb/135/Q135912/
 
 ## Q135912: PRB: Wrong Resources Loaded by Resource Editor or AppStudio
 
+{% raw %}
+
 	Article: Q135912
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,5.0,6.0
@@ -159,3 +161,5 @@ permalink: /kb/135/Q135912/
 	
 	=============================================================================
 	
+
+{% endraw %}

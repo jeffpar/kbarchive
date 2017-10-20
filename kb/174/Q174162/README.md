@@ -6,6 +6,8 @@ permalink: /kb/174/Q174162/
 
 ## Q174162: WD97: Windows NT 4.0: Saving the AutoRecovery File Is Postponed
 
+{% raw %}
+
 	Article: Q174162
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -154,3 +156,5 @@ permalink: /kb/174/Q174162/
 	
 	=============================================================================
 	
+
+{% endraw %}

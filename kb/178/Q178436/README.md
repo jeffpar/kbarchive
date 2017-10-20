@@ -6,6 +6,8 @@ permalink: /kb/178/Q178436/
 
 ## Q178436: XFOR: Looping Messages over Internet Mail Service Site Connector
 
+{% raw %}
+
 	Article: Q178436
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -133,3 +135,5 @@ permalink: /kb/178/Q178436/
 	
 	=============================================================================
 	
+
+{% endraw %}

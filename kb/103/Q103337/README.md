@@ -6,6 +6,8 @@ permalink: /kb/103/Q103337/
 
 ## Q103337: EdtInfo.exe Retrieves Text Box Status w/Win Messages
 
+{% raw %}
+
 	Article: Q103337
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -81,3 +83,5 @@ permalink: /kb/103/Q103337/
 	
 	=============================================================================
 	
+
+{% endraw %}

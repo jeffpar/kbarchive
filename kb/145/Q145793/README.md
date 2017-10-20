@@ -6,6 +6,8 @@ permalink: /kb/145/Q145793/
 
 ## Q145793: SUR and 16-bit Clients Must Run Separate Versions of TEST
 
+{% raw %}
+
 	Article: Q145793
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2,3.5,3.51,4.0
@@ -48,3 +50,5 @@ permalink: /kb/145/Q145793/
 	
 	=============================================================================
 	
+
+{% endraw %}

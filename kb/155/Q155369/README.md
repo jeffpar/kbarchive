@@ -6,6 +6,8 @@ permalink: /kb/155/Q155369/
 
 ## Q155369: Error Formatting Seagate Drive Using Adaptec Controller
 
+{% raw %}
+
 	Article: Q155369
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -49,3 +51,5 @@ permalink: /kb/155/Q155369/
 	
 	=============================================================================
 	
+
+{% endraw %}

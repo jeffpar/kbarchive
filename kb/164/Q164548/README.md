@@ -6,6 +6,8 @@ permalink: /kb/164/Q164548/
 
 ## Q164548: WD97: NumPages Field Not Updated When You Open File
 
+{% raw %}
+
 	Article: Q164548
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -150,3 +152,5 @@ permalink: /kb/164/Q164548/
 	
 	=============================================================================
 	
+
+{% endraw %}

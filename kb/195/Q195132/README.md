@@ -6,6 +6,8 @@ permalink: /kb/195/Q195132/
 
 ## Q195132: WD97: {EQ &#92;X()} Field Converts to {EMBED EQUATION.2} Field
 
+{% raw %}
+
 	Article: Q195132
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -90,3 +92,5 @@ permalink: /kb/195/Q195132/
 	
 	=============================================================================
 	
+
+{% endraw %}

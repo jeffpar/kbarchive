@@ -6,6 +6,8 @@ permalink: /kb/159/Q159820/
 
 ## Q159820: XGEN: How to Obtain Exchange Server 5.0 U.S. Service Pack 1
 
+{% raw %}
+
 	Article: Q159820
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -130,3 +132,5 @@ permalink: /kb/159/Q159820/
 	
 	=============================================================================
 	
+
+{% endraw %}

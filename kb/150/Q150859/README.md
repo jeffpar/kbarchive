@@ -6,6 +6,8 @@ permalink: /kb/150/Q150859/
 
 ## Q150859: Using SMSLS.INI to Map Domains Fails on SMS1.1J
 
+{% raw %}
+
 	Article: Q150859
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -66,3 +68,5 @@ permalink: /kb/150/Q150859/
 	
 	=============================================================================
 	
+
+{% endraw %}

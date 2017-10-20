@@ -6,6 +6,8 @@ permalink: /kb/189/Q189932/
 
 ## Q189932: WD97: Merge To Electronic Fax Option Missing
 
+{% raw %}
+
 	Article: Q189932
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -92,3 +94,5 @@ permalink: /kb/189/Q189932/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156441/
 
 ## Q156441: NetBIOS Applications Stop Receiving Data Running on TCP/IP 32
 
+{% raw %}
+
 	Article: Q156441
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/156/Q156441/
 	
 	=============================================================================
 	
+
+{% endraw %}

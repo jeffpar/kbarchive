@@ -6,6 +6,8 @@ permalink: /kb/153/Q153125/
 
 ## Q153125: BUG: Printer Object Font Information is Lost After Printing
 
+{% raw %}
+
 	Article: Q153125
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -130,3 +132,5 @@ permalink: /kb/153/Q153125/
 	
 	=============================================================================
 	
+
+{% endraw %}

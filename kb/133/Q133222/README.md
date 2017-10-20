@@ -6,6 +6,8 @@ permalink: /kb/133/Q133222/
 
 ## Q133222: Zypcom Z34-sx v.34 Modem Does Not Work as Class 1 Fax
 
+{% raw %}
+
 	Article: Q133222
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -46,3 +48,5 @@ permalink: /kb/133/Q133222/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/289/Q289793/
 
 ## Q289793: HOWTO: Dynamically Populate a Group Data Report in Visual Basic
 
+{% raw %}
+
 	Article: Q289793
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0,6.0 SP3,6.0 SP4
@@ -148,3 +150,5 @@ permalink: /kb/289/Q289793/
 	
 	=============================================================================
 	
+
+{% endraw %}

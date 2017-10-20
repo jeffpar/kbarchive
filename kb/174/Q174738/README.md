@@ -6,6 +6,8 @@ permalink: /kb/174/Q174738/
 
 ## Q174738: XFOR: Migrated Users Assigned Random PST Password
 
+{% raw %}
+
 	Article: Q174738
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -61,3 +63,5 @@ permalink: /kb/174/Q174738/
 	
 	=============================================================================
 	
+
+{% endraw %}

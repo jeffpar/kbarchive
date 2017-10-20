@@ -6,6 +6,8 @@ permalink: /kb/185/Q185627/
 
 ## Q185627: FIX:Component Gallery Delete Gives 'Unknown Member oFolder Error
 
+{% raw %}
+
 	Article: Q185627
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -106,3 +108,5 @@ permalink: /kb/185/Q185627/
 	
 	=============================================================================
 	
+
+{% endraw %}

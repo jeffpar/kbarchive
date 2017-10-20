@@ -6,6 +6,8 @@ permalink: /kb/268/Q268908/
 
 ## Q268908: PRB: Error Message &quot;Variable 'APP_CLASSNAME' Is Not Found&quot;
 
+{% raw %}
+
 	Article: Q268908
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -79,3 +81,5 @@ permalink: /kb/268/Q268908/
 	
 	=============================================================================
 	
+
+{% endraw %}

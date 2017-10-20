@@ -6,6 +6,8 @@ permalink: /kb/127/Q127733/
 
 ## Q127733: SMTP: Err Msg: 134 Error Accessing SMTP Configuration File
 
+{% raw %}
+
 	Article: Q127733
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -52,3 +54,5 @@ permalink: /kb/127/Q127733/
 	
 	=============================================================================
 	
+
+{% endraw %}

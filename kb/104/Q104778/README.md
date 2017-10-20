@@ -6,6 +6,8 @@ permalink: /kb/104/Q104778/
 
 ## Q104778: DblSpace Err Msg: An Unrecognized Error Has Occurred During...
 
+{% raw %}
+
 	Article: Q104778
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -62,3 +64,5 @@ permalink: /kb/104/Q104778/
 	
 	=============================================================================
 	
+
+{% endraw %}

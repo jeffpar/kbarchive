@@ -6,6 +6,8 @@ permalink: /kb/140/Q140957/
 
 ## Q140957: XFOR: X.400 Message from Third Party Gateway Causes Event ID 940
 
+{% raw %}
+
 	Article: Q140957
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -54,3 +56,5 @@ permalink: /kb/140/Q140957/
 	
 	=============================================================================
 	
+
+{% endraw %}

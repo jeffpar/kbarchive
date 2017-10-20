@@ -6,6 +6,8 @@ permalink: /kb/089/Q89368/
 
 ## Q89368: PC Gen: 3.0 Working Model Runs Only on Windows 3.1
 
+{% raw %}
+
 	Article: Q89368
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -43,3 +45,5 @@ permalink: /kb/089/Q89368/
 	
 	=============================================================================
 	
+
+{% endraw %}

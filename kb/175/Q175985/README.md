@@ -6,6 +6,8 @@ permalink: /kb/175/Q175985/
 
 ## Q175985: FIX: Installing DAO SDK Outside of &#92;DEVSTUDIO May Cause Problems
 
+{% raw %}
+
 	Article: Q175985
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:3.5,5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/175/Q175985/
 	
 	=============================================================================
 	
+
+{% endraw %}

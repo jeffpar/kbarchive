@@ -6,6 +6,8 @@ permalink: /kb/146/Q146866/
 
 ## Q146866: PRB: Type Indexes in .PDB Files Are Limited
 
+{% raw %}
+
 	Article: Q146866
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -86,3 +88,5 @@ permalink: /kb/146/Q146866/
 	
 	=============================================================================
 	
+
+{% endraw %}

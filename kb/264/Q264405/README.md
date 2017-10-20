@@ -6,6 +6,8 @@ permalink: /kb/264/Q264405/
 
 ## Q264405: PRB: Out of Memory Error Adding GIF Files to RichTextBox Control
 
+{% raw %}
+
 	Article: Q264405
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -147,3 +149,5 @@ permalink: /kb/264/Q264405/
 	
 	=============================================================================
 	
+
+{% endraw %}

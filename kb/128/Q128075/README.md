@@ -6,6 +6,8 @@ permalink: /kb/128/Q128075/
 
 ## Q128075: PRB: Grid Does Not Respond to the Click or Dblclick Events
 
+{% raw %}
+
 	Article: Q128075
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -99,3 +101,5 @@ permalink: /kb/128/Q128075/
 	
 	=============================================================================
 	
+
+{% endraw %}

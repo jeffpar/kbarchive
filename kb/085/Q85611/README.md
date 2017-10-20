@@ -6,6 +6,8 @@ permalink: /kb/085/Q85611/
 
 ## Q85611: FAX: Changes Summary
 
+{% raw %}
+
 	Article: Q85611
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -43,3 +45,5 @@ permalink: /kb/085/Q85611/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160229/
 
 ## Q160229: FP: New File Name Not Reflected in FrontPage Editor
 
+{% raw %}
+
 	Article: Q160229
 	Product(s): Word Front Page
 	Version(s): 1.0
@@ -84,3 +86,5 @@ permalink: /kb/160/Q160229/
 	
 	=============================================================================
 	
+
+{% endraw %}

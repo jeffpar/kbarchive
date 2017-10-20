@@ -6,6 +6,8 @@ permalink: /kb/263/Q263064/
 
 ## Q263064: XADM: Blackberry Service Stops If Exchange Server Comp. Offline
 
+{% raw %}
+
 	Article: Q263064
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -99,3 +101,5 @@ permalink: /kb/263/Q263064/
 	
 	=============================================================================
 	
+
+{% endraw %}

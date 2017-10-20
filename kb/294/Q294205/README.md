@@ -6,6 +6,8 @@ permalink: /kb/294/Q294205/
 
 ## Q294205: Additional SNA Services Not Functional After Restoring Com.cfg
 
+{% raw %}
+
 	Article: Q294205
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -69,3 +71,5 @@ permalink: /kb/294/Q294205/
 	
 	=============================================================================
 	
+
+{% endraw %}

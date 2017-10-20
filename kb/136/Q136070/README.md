@@ -6,6 +6,8 @@ permalink: /kb/136/Q136070/
 
 ## Q136070: DOC: Incorrect Examples on Pages 69-75 of Developer's Guide
 
+{% raw %}
+
 	Article: Q136070
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -116,3 +118,5 @@ permalink: /kb/136/Q136070/
 	
 	=============================================================================
 	
+
+{% endraw %}

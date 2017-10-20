@@ -6,6 +6,8 @@ permalink: /kb/108/Q108291/
 
 ## Q108291: FIX: Cannot Add New Member Variables with VIEWEX Sample
 
+{% raw %}
+
 	Article: Q108291
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0
@@ -45,10 +47,10 @@ permalink: /kb/108/Q108291/
 	
 	     // Form Data
 	     public:
-	        //{ {AFX_DATA(CInputView)
+	        //{{AFX_DATA(CInputView)
 	        CString m_strData;
 	        int     m_iColor;
-	        //} }AFX_DATA
+	        //}}AFX_DATA
 	
 	This section of code is missing a line that Class Wizard needs in order to
 	identify the controls available to set up as edit variables. This line is the
@@ -60,12 +62,12 @@ permalink: /kb/108/Q108291/
 	
 	Modify the above code as follows:
 	
-	     //{ {AFX_DATA(CInputView)
+	     //{{AFX_DATA(CInputView)
 	     enum { IDD = IDD_INPUTFORM };
 	     CString m_strData;
 	     int     m_iColor;
-	     //} }AFX_DATA
-	     //{ { AFX_DATA(CInputView
+	     //}}AFX_DATA
+	     //{{ AFX_DATA(CInputView
 	
 	This will work around the problem. With such an enum line, Class Wizard is able
 	to determine the dialog box template to examine for available controls.
@@ -88,3 +90,5 @@ permalink: /kb/108/Q108291/
 	
 	=============================================================================
 	
+
+{% endraw %}

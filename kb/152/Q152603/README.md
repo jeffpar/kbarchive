@@ -6,6 +6,8 @@ permalink: /kb/152/Q152603/
 
 ## Q152603: FIX: Masked Edit Tab Order Incorrect If Visible Property FALSE
 
+{% raw %}
+
 	Article: Q152603
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -102,3 +104,5 @@ permalink: /kb/152/Q152603/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/079/Q79067/
 
 ## Q79067: FIX: A2029 Incorrectly Generated If Operand = &#91;ebx&#93;&#91;ebx&#93;
 
+{% raw %}
+
 	Article: Q79067
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0
@@ -79,3 +81,5 @@ permalink: /kb/079/Q79067/
 	
 	=============================================================================
 	
+
+{% endraw %}

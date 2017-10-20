@@ -6,6 +6,8 @@ permalink: /kb/092/Q92540/
 
 ## Q92540: Is DdePostAdvise Synchronous?
 
+{% raw %}
+
 	Article: Q92540
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -64,3 +66,5 @@ permalink: /kb/092/Q92540/
 	
 	=============================================================================
 	
+
+{% endraw %}

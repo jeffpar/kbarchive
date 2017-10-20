@@ -6,6 +6,8 @@ permalink: /kb/257/Q257375/
 
 ## Q257375: FP: How to Create and Center a Background Image (Watermark)
 
+{% raw %}
+
 	Article: Q257375
 	Product(s): Word Front Page
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/257/Q257375/
 	
 	=============================================================================
 	
+
+{% endraw %}

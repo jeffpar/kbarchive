@@ -6,6 +6,8 @@ permalink: /kb/048/Q48037/
 
 ## Q48037: Mac Wkst: Selecting Mail Recipients
 
+{% raw %}
+
 	Article: Q48037
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.0a,3.0b,3.1,3.1a,3.1c
@@ -66,3 +68,5 @@ permalink: /kb/048/Q48037/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198369/
 
 ## Q198369: WD97: How to Turn Off Some of the Office Assistant Tips
 
+{% raw %}
+
 	Article: Q198369
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -93,3 +95,5 @@ permalink: /kb/198/Q198369/
 	
 	=============================================================================
 	
+
+{% endraw %}

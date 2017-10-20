@@ -6,6 +6,8 @@ permalink: /kb/245/Q245101/
 
 ## Q245101: SMS: LSM Is Case Sensitive When Comparing Domain Names
 
+{% raw %}
+
 	Article: Q245101
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -102,3 +104,5 @@ permalink: /kb/245/Q245101/
 	
 	=============================================================================
 	
+
+{% endraw %}

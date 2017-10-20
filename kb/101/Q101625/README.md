@@ -6,6 +6,8 @@ permalink: /kb/101/Q101625/
 
 ## Q101625: ORACLE.TXT for Visual Basic Version 3.0 Users
 
+{% raw %}
+
 	Article: Q101625
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/101/Q101625/
 	
 	=============================================================================
 	
+
+{% endraw %}

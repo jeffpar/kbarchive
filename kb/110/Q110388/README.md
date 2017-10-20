@@ -6,6 +6,8 @@ permalink: /kb/110/Q110388/
 
 ## Q110388: Mac OOF: Using the Valid Thru: Field in the OOF Form
 
+{% raw %}
+
 	Article: Q110388
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1d
@@ -54,3 +56,5 @@ permalink: /kb/110/Q110388/
 	
 	=============================================================================
 	
+
+{% endraw %}

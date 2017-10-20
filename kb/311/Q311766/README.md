@@ -6,6 +6,8 @@ permalink: /kb/311/Q311766/
 
 ## Q311766: HOW TO: Troubleshoot &quot;HTTP 500 - Internal Server Error&quot; Message
 
+{% raw %}
+
 	Article: Q311766
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -381,3 +383,5 @@ permalink: /kb/311/Q311766/
 	
 	=============================================================================
 	
+
+{% endraw %}

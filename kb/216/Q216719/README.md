@@ -6,6 +6,8 @@ permalink: /kb/216/Q216719/
 
 ## Q216719: Internet Explorer Stops Responding When Connecting to SSL-Enable
 
+{% raw %}
+
 	Article: Q216719
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -62,3 +64,5 @@ permalink: /kb/216/Q216719/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123392/
 
 ## Q123392: Input Method Editor (IME) in Japanese Windows 3.1
 
+{% raw %}
+
 	Article: Q123392
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -96,3 +98,5 @@ permalink: /kb/123/Q123392/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156127/
 
 ## Q156127: MSB Dinosaurs: Canceling Setup Leaves Microsoft Kids Folder
 
+{% raw %}
+
 	Article: Q156127
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -41,3 +43,5 @@ permalink: /kb/156/Q156127/
 	
 	=============================================================================
 	
+
+{% endraw %}

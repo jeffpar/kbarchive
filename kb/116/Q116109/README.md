@@ -6,6 +6,8 @@ permalink: /kb/116/Q116109/
 
 ## Q116109: Problems Using 1.0 Version of NDIS 2.0 Network Card Driver
 
+{% raw %}
+
 	Article: Q116109
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :2.2
@@ -61,3 +63,5 @@ permalink: /kb/116/Q116109/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164933/
 
 ## Q164933: How to Allow Poolmon.exe to Run by Setting GlobalFlag Value
 
+{% raw %}
+
 	Article: Q164933
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -134,3 +136,5 @@ permalink: /kb/164/Q164933/
 	
 	=============================================================================
 	
+
+{% endraw %}

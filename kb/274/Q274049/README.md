@@ -6,6 +6,8 @@ permalink: /kb/274/Q274049/
 
 ## Q274049: Encarta: Recording Problems When Two Sound Cards Are Installed
 
+{% raw %}
+
 	Article: Q274049
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -178,3 +180,5 @@ permalink: /kb/274/Q274049/
 	
 	=============================================================================
 	
+
+{% endraw %}

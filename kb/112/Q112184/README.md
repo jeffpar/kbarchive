@@ -6,6 +6,8 @@ permalink: /kb/112/Q112184/
 
 ## Q112184: Printing Screen Snapshots in FoxPro for Macintosh
 
+{% raw %}
+
 	Article: Q112184
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -65,3 +67,5 @@ permalink: /kb/112/Q112184/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182580/
 
 ## Q182580: HOWTO: Set Up a Quick Menu for an ActiveDoc App
 
+{% raw %}
+
 	Article: Q182580
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -184,3 +186,5 @@ permalink: /kb/182/Q182580/
 	
 	=============================================================================
 	
+
+{% endraw %}

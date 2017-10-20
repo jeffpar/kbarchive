@@ -6,6 +6,8 @@ permalink: /kb/129/Q129933/
 
 ## Q129933: PRB: Comparing Bookmarks Generates Type Mismatch Error
 
+{% raw %}
+
 	Article: Q129933
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -114,3 +116,5 @@ permalink: /kb/129/Q129933/
 	
 	=============================================================================
 	
+
+{% endraw %}

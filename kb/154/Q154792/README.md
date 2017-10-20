@@ -6,6 +6,8 @@ permalink: /kb/154/Q154792/
 
 ## Q154792: XGEN: Exchange and Schedule+ White Papers and Their Locations
 
+{% raw %}
+
 	Article: Q154792
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,7.0,97,98; winnt:4.0,5.0,5.5
@@ -148,3 +150,5 @@ permalink: /kb/154/Q154792/
 	
 	=============================================================================
 	
+
+{% endraw %}

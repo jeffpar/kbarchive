@@ -6,6 +6,8 @@ permalink: /kb/192/Q192647/
 
 ## Q192647: INFO: Visual Basic Reserves OCX Resource IDs Starting at 30000
 
+{% raw %}
+
 	Article: Q192647
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -59,3 +61,5 @@ permalink: /kb/192/Q192647/
 	
 	=============================================================================
 	
+
+{% endraw %}

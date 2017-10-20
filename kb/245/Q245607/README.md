@@ -6,6 +6,8 @@ permalink: /kb/245/Q245607/
 
 ## Q245607: Terminal Server Edition Issues in a Domain Environment
 
+{% raw %}
+
 	Article: Q245607
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -420,3 +422,5 @@ permalink: /kb/245/Q245607/
 	
 	=============================================================================
 	
+
+{% endraw %}

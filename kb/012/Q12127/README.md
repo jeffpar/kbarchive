@@ -6,6 +6,8 @@ permalink: /kb/012/Q12127/
 
 ## Q12127: Use the signal() Function to Trap Floating-Point Exceptions
 
+{% raw %}
+
 	Article: Q12127
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10 6.00 6.00a | 5.10 6.00 6.00a
@@ -25,3 +27,5 @@ permalink: /kb/012/Q12127/
 	
 	For more information on the signal() function, see the run-time
 	library reference or the online help that accompanies your compiler.
+
+{% endraw %}

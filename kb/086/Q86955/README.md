@@ -6,6 +6,8 @@ permalink: /kb/086/Q86955/
 
 ## Q86955: 3COM: What the Gateway Does
 
+{% raw %}
+
 	Article: Q86955
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -54,3 +56,5 @@ permalink: /kb/086/Q86955/
 	
 	=============================================================================
 	
+
+{% endraw %}

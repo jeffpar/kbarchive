@@ -6,6 +6,8 @@ permalink: /kb/172/Q172953/
 
 ## Q172953: How to Install and Configure Microsoft DNS Server
 
+{% raw %}
+
 	Article: Q172953
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a
@@ -275,3 +277,5 @@ permalink: /kb/172/Q172953/
 	
 	=============================================================================
 	
+
+{% endraw %}

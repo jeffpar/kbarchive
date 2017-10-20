@@ -6,6 +6,8 @@ permalink: /kb/135/Q135103/
 
 ## Q135103: Description of &quot;&#42;DisplayFallback=&quot; Entry in System.ini File
 
+{% raw %}
+
 	Article: Q135103
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/135/Q135103/
 	
 	=============================================================================
 	
+
+{% endraw %}

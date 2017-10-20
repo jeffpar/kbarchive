@@ -6,6 +6,8 @@ permalink: /kb/148/Q148958/
 
 ## Q148958: DCA X.25 Link Service Problem in SNA Server Setup
 
+{% raw %}
+
 	Article: Q148958
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -51,3 +53,5 @@ permalink: /kb/148/Q148958/
 	
 	=============================================================================
 	
+
+{% endraw %}

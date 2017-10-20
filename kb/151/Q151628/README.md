@@ -6,6 +6,8 @@ permalink: /kb/151/Q151628/
 
 ## Q151628: TN3270E May Get Unexpected Application Exception Violations
 
+{% raw %}
+
 	Article: Q151628
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -68,3 +70,5 @@ permalink: /kb/151/Q151628/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171523/
 
 ## Q171523: FIX: Reference to Missing Member in Enum Definition Causes Crash
 
+{% raw %}
+
 	Article: Q171523
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -95,3 +97,5 @@ permalink: /kb/171/Q171523/
 	
 	=============================================================================
 	
+
+{% endraw %}

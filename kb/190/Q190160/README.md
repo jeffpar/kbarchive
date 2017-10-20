@@ -6,6 +6,8 @@ permalink: /kb/190/Q190160/
 
 ## Q190160: Select &amp; International Versions of Terminal Server Deployment
 
+{% raw %}
+
 	Article: Q190160
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -38,3 +40,5 @@ permalink: /kb/190/Q190160/
 	
 	=============================================================================
 	
+
+{% endraw %}

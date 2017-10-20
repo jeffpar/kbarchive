@@ -6,6 +6,8 @@ permalink: /kb/255/Q255158/
 
 ## Q255158: Cannot Start WordPad Maximized by Double-Clicking .wri/.doc File
 
+{% raw %}
+
 	Article: Q255158
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/255/Q255158/
 	
 	=============================================================================
 	
+
+{% endraw %}

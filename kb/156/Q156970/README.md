@@ -6,6 +6,8 @@ permalink: /kb/156/Q156970/
 
 ## Q156970: XADM: Improving Performance with Public Folder Views
 
+{% raw %}
+
 	Article: Q156970
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -116,3 +118,5 @@ permalink: /kb/156/Q156970/
 	
 	=============================================================================
 	
+
+{% endraw %}

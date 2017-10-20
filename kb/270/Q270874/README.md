@@ -6,6 +6,8 @@ permalink: /kb/270/Q270874/
 
 ## Q270874: ELL Err Msg: Encarta &lt;Language&gt; Cannot Find the Software...
 
+{% raw %}
+
 	Article: Q270874
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -364,3 +366,5 @@ permalink: /kb/270/Q270874/
 	
 	=============================================================================
 	
+
+{% endraw %}

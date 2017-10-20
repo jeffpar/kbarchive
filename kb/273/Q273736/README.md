@@ -6,6 +6,8 @@ permalink: /kb/273/Q273736/
 
 ## Q273736: XFOR: GroupWise Calendar Connector Event ID 5016
 
+{% raw %}
+
 	Article: Q273736
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -76,3 +78,5 @@ permalink: /kb/273/Q273736/
 	
 	=============================================================================
 	
+
+{% endraw %}

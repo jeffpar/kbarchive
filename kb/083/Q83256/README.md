@@ -6,6 +6,8 @@ permalink: /kb/083/Q83256/
 
 ## Q83256: Productivity Pack 3.1 Directory Listings (3.5 720K)
 
+{% raw %}
+
 	Article: Q83256
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -87,3 +89,5 @@ permalink: /kb/083/Q83256/
 	
 	=============================================================================
 	
+
+{% endraw %}

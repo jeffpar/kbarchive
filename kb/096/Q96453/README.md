@@ -6,6 +6,8 @@ permalink: /kb/096/Q96453/
 
 ## Q96453: Mac Wkst: Installation Program Cannot Find Needed Files
 
+{% raw %}
+
 	Article: Q96453
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -69,3 +71,5 @@ permalink: /kb/096/Q96453/
 	
 	=============================================================================
 	
+
+{% endraw %}

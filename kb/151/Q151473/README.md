@@ -6,6 +6,8 @@ permalink: /kb/151/Q151473/
 
 ## Q151473: XFOR: MSMI Crashes Starting a New Thread, Reads a Null Pointer
 
+{% raw %}
+
 	Article: Q151473
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -80,3 +82,5 @@ permalink: /kb/151/Q151473/
 	
 	=============================================================================
 	
+
+{% endraw %}

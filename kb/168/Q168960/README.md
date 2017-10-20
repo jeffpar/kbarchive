@@ -6,6 +6,8 @@ permalink: /kb/168/Q168960/
 
 ## Q168960: Err Msg: An Error Occurred Accessing the Security-Settings File
 
+{% raw %}
+
 	Article: Q168960
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0
@@ -62,3 +64,5 @@ permalink: /kb/168/Q168960/
 	
 	=============================================================================
 	
+
+{% endraw %}

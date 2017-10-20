@@ -6,6 +6,8 @@ permalink: /kb/191/Q191551/
 
 ## Q191551: BUG: CtlPlus Sample Fails to Load
 
+{% raw %}
+
 	Article: Q191551
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -95,3 +97,5 @@ permalink: /kb/191/Q191551/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143391/
 
 ## Q143391: PC Mac: Err Msg: Could Not Create Preferences File...
 
+{% raw %}
+
 	Article: Q143391
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0x
@@ -64,3 +66,5 @@ permalink: /kb/143/Q143391/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/060/Q60267/
 
 ## Q60267: FIX: Error A2057 With DOS.INC, .386, and MASM 5.1 or 5.1a
 
+{% raw %}
+
 	Article: Q60267
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -84,3 +86,5 @@ permalink: /kb/060/Q60267/
 	
 	=============================================================================
 	
+
+{% endraw %}

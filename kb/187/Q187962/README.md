@@ -6,6 +6,8 @@ permalink: /kb/187/Q187962/
 
 ## Q187962: HOWTO: Add Images to the CE ImageList Control
 
+{% raw %}
+
 	Article: Q187962
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -115,3 +117,5 @@ permalink: /kb/187/Q187962/
 	
 	=============================================================================
 	
+
+{% endraw %}

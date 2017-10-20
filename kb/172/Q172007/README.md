@@ -6,6 +6,8 @@ permalink: /kb/172/Q172007/
 
 ## Q172007: MSB Rainforest: Hangs When Exiting the Driver's License Screen
 
+{% raw %}
+
 	Article: Q172007
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/172/Q172007/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132779/
 
 ## Q132779: Horizontal Strip Running Across the Screen
 
+{% raw %}
+
 	Article: Q132779
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/132/Q132779/
 	
 	=============================================================================
 	
+
+{% endraw %}

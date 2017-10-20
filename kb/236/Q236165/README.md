@@ -6,6 +6,8 @@ permalink: /kb/236/Q236165/
 
 ## Q236165: Calling 2-Digit Carrier Codes in Brazil
 
+{% raw %}
+
 	Article: Q236165
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -197,3 +199,5 @@ permalink: /kb/236/Q236165/
 	
 	=============================================================================
 	
+
+{% endraw %}

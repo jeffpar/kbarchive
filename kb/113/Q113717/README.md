@@ -6,6 +6,8 @@ permalink: /kb/113/Q113717/
 
 ## Q113717: Err Msg: Mviewer2 Caused a GP Fault in CNMNIA94.DLL
 
+{% raw %}
+
 	Article: Q113717
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 editions
@@ -76,3 +78,5 @@ permalink: /kb/113/Q113717/
 	
 	=============================================================================
 	
+
+{% endraw %}

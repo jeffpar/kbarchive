@@ -6,6 +6,8 @@ permalink: /kb/126/Q126722/
 
 ## Q126722: Using Floptical Disk Drives with Windows 95
 
+{% raw %}
+
 	Article: Q126722
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/126/Q126722/
 	
 	=============================================================================
 	
+
+{% endraw %}

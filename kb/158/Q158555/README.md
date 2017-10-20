@@ -6,6 +6,8 @@ permalink: /kb/158/Q158555/
 
 ## Q158555: Encarta 97: Windows 3.1x Won't Restart After Installation
 
+{% raw %}
+
 	Article: Q158555
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/158/Q158555/
 	
 	=============================================================================
 	
+
+{% endraw %}

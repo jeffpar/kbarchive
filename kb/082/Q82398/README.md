@@ -6,6 +6,8 @@ permalink: /kb/082/Q82398/
 
 ## Q82398: SHIFT+Double-Click Starting AmiPro 2.0 can Cause Error
 
+{% raw %}
+
 	Article: Q82398
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/082/Q82398/
 	
 	=============================================================================
 	
+
+{% endraw %}

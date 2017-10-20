@@ -6,6 +6,8 @@ permalink: /kb/075/Q75276/
 
 ## Q75276: OFFSET Always Returns the END of a Segment Name
 
+{% raw %}
+
 	Article: Q75276
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -73,3 +75,5 @@ permalink: /kb/075/Q75276/
 	
 	=============================================================================
 	
+
+{% endraw %}

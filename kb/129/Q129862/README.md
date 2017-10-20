@@ -6,6 +6,8 @@ permalink: /kb/129/Q129862/
 
 ## Q129862: Project Manager Stores &amp; Activates Files from Other Apps
 
+{% raw %}
+
 	Article: Q129862
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -46,3 +48,5 @@ permalink: /kb/129/Q129862/
 	
 	=============================================================================
 	
+
+{% endraw %}

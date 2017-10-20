@@ -6,6 +6,8 @@ permalink: /kb/161/Q161359/
 
 ## Q161359: PRB: Class Names in VFP 5.0 are Case Sensitive
 
+{% raw %}
+
 	Article: Q161359
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,6.0; :3.0
@@ -82,3 +84,5 @@ permalink: /kb/161/Q161359/
 	
 	=============================================================================
 	
+
+{% endraw %}

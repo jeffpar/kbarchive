@@ -6,6 +6,8 @@ permalink: /kb/090/Q90333/
 
 ## Q90333: Screen Momentarily Garbled at Windows for Workgroups Startup
 
+{% raw %}
+
 	Article: Q90333
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/090/Q90333/
 	
 	=============================================================================
 	
+
+{% endraw %}

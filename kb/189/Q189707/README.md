@@ -6,6 +6,8 @@ permalink: /kb/189/Q189707/
 
 ## Q189707: PRB: &quot;Help not available&quot; Viewing TypeLib in Class Browser
 
+{% raw %}
+
 	Article: Q189707
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -66,3 +68,5 @@ permalink: /kb/189/Q189707/
 	
 	=============================================================================
 	
+
+{% endraw %}

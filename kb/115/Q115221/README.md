@@ -6,6 +6,8 @@ permalink: /kb/115/Q115221/
 
 ## Q115221: PRB: SET SKIP OF MENU _MSYSMENU .T. Not Disabling System Menu
 
+{% raw %}
+
 	Article: Q115221
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -62,3 +64,5 @@ permalink: /kb/115/Q115221/
 	
 	=============================================================================
 	
+
+{% endraw %}

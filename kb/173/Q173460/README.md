@@ -6,6 +6,8 @@ permalink: /kb/173/Q173460/
 
 ## Q173460: WD97: Word Hangs If Assistant Options Change When Editing Object
 
+{% raw %}
+
 	Article: Q173460
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/173/Q173460/
 	
 	=============================================================================
 	
+
+{% endraw %}

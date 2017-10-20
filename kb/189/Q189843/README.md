@@ -6,6 +6,8 @@ permalink: /kb/189/Q189843/
 
 ## Q189843: XCLN: Err Msg: ActiveEx Unable to Register Itself In System Regi
 
+{% raw %}
+
 	Article: Q189843
 	Product(s): Microsoft Exchange
 	Version(s): 8.03; WINDOWS:
@@ -63,3 +65,5 @@ permalink: /kb/189/Q189843/
 	
 	=============================================================================
 	
+
+{% endraw %}

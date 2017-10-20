@@ -6,6 +6,8 @@ permalink: /kb/189/Q189849/
 
 ## Q189849: Setting up Windows 98 Client on SBS May Result in GP Fault
 
+{% raw %}
+
 	Article: Q189849
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT:4.0,4.0a;Windows:98
@@ -121,3 +123,5 @@ permalink: /kb/189/Q189849/
 	
 	=============================================================================
 	
+
+{% endraw %}

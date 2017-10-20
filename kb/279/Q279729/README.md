@@ -6,6 +6,8 @@ permalink: /kb/279/Q279729/
 
 ## Q279729: Web Pages Not Serving from IIS
 
+{% raw %}
+
 	Article: Q279729
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0
@@ -185,3 +187,5 @@ permalink: /kb/279/Q279729/
 	
 	=============================================================================
 	
+
+{% endraw %}

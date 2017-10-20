@@ -6,6 +6,8 @@ permalink: /kb/186/Q186148/
 
 ## Q186148: PRB: Error 32002 Working with Attachments in MAPI Controls
 
+{% raw %}
+
 	Article: Q186148
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -95,3 +97,5 @@ permalink: /kb/186/Q186148/
 	
 	=============================================================================
 	
+
+{% endraw %}

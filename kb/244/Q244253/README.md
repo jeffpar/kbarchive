@@ -6,6 +6,8 @@ permalink: /kb/244/Q244253/
 
 ## Q244253: XFOR: No Mail Flow from GroupWise to Exchange - Event ID 6087
 
+{% raw %}
+
 	Article: Q244253
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -98,3 +100,5 @@ permalink: /kb/244/Q244253/
 	
 	=============================================================================
 	
+
+{% endraw %}

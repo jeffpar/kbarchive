@@ -6,6 +6,8 @@ permalink: /kb/163/Q163281/
 
 ## Q163281: XADM: Setting Advanced Security on a Second Computer
 
+{% raw %}
+
 	Article: Q163281
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0
@@ -48,3 +50,5 @@ permalink: /kb/163/Q163281/
 	
 	=============================================================================
 	
+
+{% endraw %}

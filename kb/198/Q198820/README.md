@@ -6,6 +6,8 @@ permalink: /kb/198/Q198820/
 
 ## Q198820: XIMS: Incorrectly Formatted Channel Names Will Not Be Transcribe
 
+{% raw %}
+
 	Article: Q198820
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1
@@ -56,3 +58,5 @@ permalink: /kb/198/Q198820/
 	
 	=============================================================================
 	
+
+{% endraw %}

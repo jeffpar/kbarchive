@@ -6,6 +6,8 @@ permalink: /kb/262/Q262893/
 
 ## Q262893: SCM-Set ACLs Are Not Propagated More Than Two Levels Down
 
+{% raw %}
+
 	Article: Q262893
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6a
@@ -82,3 +84,5 @@ permalink: /kb/262/Q262893/
 	
 	=============================================================================
 	
+
+{% endraw %}

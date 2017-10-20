@@ -6,6 +6,8 @@ permalink: /kb/028/Q28150/
 
 ## Q28150: RND and RANDOMIZE Alternatives for Generating Random Numbers
 
+{% raw %}
+
 	Article: Q28150
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -123,3 +125,5 @@ permalink: /kb/028/Q28150/
 	    x = result * 500   ' Assumes screen mode <= 500 pixels wide.
 	    PSET (x, y)   ' PSET requires a graphics screen mode.
 	    RETURN
+
+{% endraw %}

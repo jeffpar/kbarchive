@@ -6,6 +6,8 @@ permalink: /kb/187/Q187982/
 
 ## Q187982: HOWTO: Change Default Properties for Genhtml
 
+{% raw %}
+
 	Article: Q187982
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -66,3 +68,5 @@ permalink: /kb/187/Q187982/
 	
 	=============================================================================
 	
+
+{% endraw %}

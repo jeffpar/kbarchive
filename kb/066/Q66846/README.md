@@ -6,6 +6,8 @@ permalink: /kb/066/Q66846/
 
 ## Q66846: ASD: Wind/Speed Indicator on 747 Enhanced Panel
 
+{% raw %}
+
 	Article: Q66846
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -39,3 +41,5 @@ permalink: /kb/066/Q66846/
 	
 	=============================================================================
 	
+
+{% endraw %}

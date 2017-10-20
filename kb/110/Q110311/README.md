@@ -6,6 +6,8 @@ permalink: /kb/110/Q110311/
 
 ## Q110311: Reserving 0.0 MB on a RAM Drive with DoubleSpace
 
+{% raw %}
+
 	Article: Q110311
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -70,3 +72,5 @@ permalink: /kb/110/Q110311/
 	
 	=============================================================================
 	
+
+{% endraw %}

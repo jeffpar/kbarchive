@@ -6,6 +6,8 @@ permalink: /kb/179/Q179415/
 
 ## Q179415: Multimedia: Program Cannot Find or Recognize Update Files
 
+{% raw %}
+
 	Article: Q179415
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -124,3 +126,5 @@ permalink: /kb/179/Q179415/
 	
 	=============================================================================
 	
+
+{% endraw %}

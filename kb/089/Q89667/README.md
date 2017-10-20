@@ -6,6 +6,8 @@ permalink: /kb/089/Q89667/
 
 ## Q89667: Ringing the System Bell in FoxBASE and FoxBASE+
 
+{% raw %}
+
 	Article: Q89667
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1,2.17
@@ -39,3 +41,5 @@ permalink: /kb/089/Q89667/
 	
 	=============================================================================
 	
+
+{% endraw %}

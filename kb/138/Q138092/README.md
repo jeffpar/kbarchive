@@ -6,6 +6,8 @@ permalink: /kb/138/Q138092/
 
 ## Q138092: PRB: &quot;Alias Not Found&quot; When Verifying an Expression
 
+{% raw %}
+
 	Article: Q138092
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -46,3 +48,5 @@ permalink: /kb/138/Q138092/
 	
 	=============================================================================
 	
+
+{% endraw %}

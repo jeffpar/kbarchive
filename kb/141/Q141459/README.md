@@ -6,6 +6,8 @@ permalink: /kb/141/Q141459/
 
 ## Q141459: PRB: Can't Export from Static Libraries w/_declspec(dllexport)
 
+{% raw %}
+
 	Article: Q141459
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,2.0,2.1,2.2,4.0,5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/141/Q141459/
 	
 	=============================================================================
 	
+
+{% endraw %}

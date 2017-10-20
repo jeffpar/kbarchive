@@ -6,6 +6,8 @@ permalink: /kb/147/Q147661/
 
 ## Q147661: MSMail32 Message With Hyphens Results In Access Violation
 
+{% raw %}
+
 	Article: Q147661
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -51,3 +53,5 @@ permalink: /kb/147/Q147661/
 	
 	=============================================================================
 	
+
+{% endraw %}

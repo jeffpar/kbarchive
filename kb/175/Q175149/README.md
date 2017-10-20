@@ -6,6 +6,8 @@ permalink: /kb/175/Q175149/
 
 ## Q175149: Bookshelf 98: Invalid Page Fault Viewing 360-Degree Views
 
+{% raw %}
+
 	Article: Q175149
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -84,3 +86,5 @@ permalink: /kb/175/Q175149/
 	
 	=============================================================================
 	
+
+{% endraw %}

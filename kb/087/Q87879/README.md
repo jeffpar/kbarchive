@@ -6,6 +6,8 @@ permalink: /kb/087/Q87879/
 
 ## Q87879: Compatible Networks for WinLogin 1.0
 
+{% raw %}
+
 	Article: Q87879
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -52,3 +54,5 @@ permalink: /kb/087/Q87879/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191096/
 
 ## Q191096: PRB: Multiple &quot;System Files Are Out of Date&quot; Errors
 
+{% raw %}
+
 	Article: Q191096
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -181,3 +183,5 @@ permalink: /kb/191/Q191096/
 	
 	=============================================================================
 	
+
+{% endraw %}

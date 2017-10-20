@@ -6,6 +6,8 @@ permalink: /kb/120/Q120942/
 
 ## Q120942: Command Line Does Not Update Print Manager
 
+{% raw %}
+
 	Article: Q120942
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -62,3 +64,5 @@ permalink: /kb/120/Q120942/
 	
 	=============================================================================
 	
+
+{% endraw %}

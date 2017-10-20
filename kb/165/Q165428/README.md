@@ -6,6 +6,8 @@ permalink: /kb/165/Q165428/
 
 ## Q165428: LU3 Printers Do Not Translate Control Characters Correctly
 
+{% raw %}
+
 	Article: Q165428
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -90,3 +92,5 @@ permalink: /kb/165/Q165428/
 	
 	=============================================================================
 	
+
+{% endraw %}

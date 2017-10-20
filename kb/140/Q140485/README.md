@@ -6,6 +6,8 @@ permalink: /kb/140/Q140485/
 
 ## Q140485: INFO: Exporting PASCAL-Like Symbols in 32-Bit DLLs
 
+{% raw %}
+
 	Article: Q140485
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:2.0,2.1,2.2,4.0,5.0;
@@ -118,3 +120,5 @@ permalink: /kb/140/Q140485/
 	
 	=============================================================================
 	
+
+{% endraw %}

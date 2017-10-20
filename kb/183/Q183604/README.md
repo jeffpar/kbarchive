@@ -6,6 +6,8 @@ permalink: /kb/183/Q183604/
 
 ## Q183604: XCON: MTA Stops Unexpectedly Shortly After You Restart It
 
+{% raw %}
+
 	Article: Q183604
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -47,3 +49,5 @@ permalink: /kb/183/Q183604/
 	
 	=============================================================================
 	
+
+{% endraw %}

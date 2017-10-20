@@ -6,6 +6,8 @@ permalink: /kb/234/Q234315/
 
 ## Q234315: Excel 2000 At at Glance Comments and Corrections
 
+{% raw %}
+
 	Article: Q234315
 	Product(s): Microsoft Press
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/234/Q234315/
 	
 	=============================================================================
 	
+
+{% endraw %}

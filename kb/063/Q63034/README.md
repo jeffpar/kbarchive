@@ -6,6 +6,8 @@ permalink: /kb/063/Q63034/
 
 ## Q63034: Windows 3.0 and the NEC Multispeed 80286
 
+{% raw %}
+
 	Article: Q63034
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -50,3 +52,5 @@ permalink: /kb/063/Q63034/
 	
 	=============================================================================
 	
+
+{% endraw %}

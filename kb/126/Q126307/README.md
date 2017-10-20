@@ -6,6 +6,8 @@ permalink: /kb/126/Q126307/
 
 ## Q126307: F4 Boot Feature Does Not Work Correctly with SuperStore 2.04
 
+{% raw %}
+
 	Article: Q126307
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -47,3 +49,5 @@ permalink: /kb/126/Q126307/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184816/
 
 ## Q184816: Run-time Error '52' Trying to Open Component Library
 
+{% raw %}
+
 	Article: Q184816
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -71,3 +73,5 @@ permalink: /kb/184/Q184816/
 	
 	=============================================================================
 	
+
+{% endraw %}

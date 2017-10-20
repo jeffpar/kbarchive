@@ -6,6 +6,8 @@ permalink: /kb/166/Q166837/
 
 ## Q166837: SMS: Incorrect Remote Control Permissions Dialog Box
 
+{% raw %}
+
 	Article: Q166837
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -67,3 +69,5 @@ permalink: /kb/166/Q166837/
 	
 	=============================================================================
 	
+
+{% endraw %}

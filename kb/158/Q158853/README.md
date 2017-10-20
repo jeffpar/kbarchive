@@ -6,6 +6,8 @@ permalink: /kb/158/Q158853/
 
 ## Q158853: Errors Using IBM Anti-Virus with FAT32 File System
 
+{% raw %}
+
 	Article: Q158853
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1,2.5
@@ -63,3 +65,5 @@ permalink: /kb/158/Q158853/
 	
 	=============================================================================
 	
+
+{% endraw %}

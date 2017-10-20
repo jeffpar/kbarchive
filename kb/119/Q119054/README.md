@@ -6,6 +6,8 @@ permalink: /kb/119/Q119054/
 
 ## Q119054: PROFS: The Meaning of the {future date} in VMGATE.LOG
 
+{% raw %}
+
 	Article: Q119054
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -50,3 +52,5 @@ permalink: /kb/119/Q119054/
 	
 	=============================================================================
 	
+
+{% endraw %}

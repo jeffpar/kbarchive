@@ -6,6 +6,8 @@ permalink: /kb/097/Q97690/
 
 ## Q97690: Compaq RUNHI Command Causes Problems with MS-DOS 6 Setup
 
+{% raw %}
+
 	Article: Q97690
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -54,3 +56,5 @@ permalink: /kb/097/Q97690/
 	
 	=============================================================================
 	
+
+{% endraw %}

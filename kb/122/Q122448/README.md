@@ -6,6 +6,8 @@ permalink: /kb/122/Q122448/
 
 ## Q122448: Unable to Run Windows Sockets Utilities with TCP/IP-32
 
+{% raw %}
+
 	Article: Q122448
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:
@@ -51,3 +53,5 @@ permalink: /kb/122/Q122448/
 	
 	=============================================================================
 	
+
+{% endraw %}

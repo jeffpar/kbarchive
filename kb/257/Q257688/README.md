@@ -6,6 +6,8 @@ permalink: /kb/257/Q257688/
 
 ## Q257688: FIX: Printer Object Fails to Track Default Printer
 
+{% raw %}
+
 	Article: Q257688
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -184,3 +186,5 @@ permalink: /kb/257/Q257688/
 	
 	=============================================================================
 	
+
+{% endraw %}

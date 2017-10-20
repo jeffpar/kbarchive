@@ -6,6 +6,8 @@ permalink: /kb/149/Q149616/
 
 ## Q149616: FIX: Developer Studio May Hang When Debug Session Starts/Ends
 
+{% raw %}
+
 	Article: Q149616
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00
@@ -101,3 +103,5 @@ permalink: /kb/149/Q149616/
 	
 	=============================================================================
 	
+
+{% endraw %}

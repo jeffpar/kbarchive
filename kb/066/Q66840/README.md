@@ -6,6 +6,8 @@ permalink: /kb/066/Q66840/
 
 ## Q66840: ASD: Spot Plane View Is Too Close to 747
 
+{% raw %}
+
 	Article: Q66840
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -35,3 +37,5 @@ permalink: /kb/066/Q66840/
 	
 	=============================================================================
 	
+
+{% endraw %}

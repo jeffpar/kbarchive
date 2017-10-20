@@ -6,6 +6,8 @@ permalink: /kb/230/Q230014/
 
 ## Q230014: RRAS Does Not Report Domain Name for Users in Accounting Packets
 
+{% raw %}
+
 	Article: Q230014
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/230/Q230014/
 	
 	=============================================================================
 	
+
+{% endraw %}

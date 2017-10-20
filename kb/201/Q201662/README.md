@@ -6,6 +6,8 @@ permalink: /kb/201/Q201662/
 
 ## Q201662: XADM: Exchange Event Service w. Internet Explorer 4.01 Hangs
 
+{% raw %}
+
 	Article: Q201662
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0 SP3,5.5
@@ -74,3 +76,5 @@ permalink: /kb/201/Q201662/
 	
 	=============================================================================
 	
+
+{% endraw %}

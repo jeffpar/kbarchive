@@ -6,6 +6,8 @@ permalink: /kb/103/Q103544/
 
 ## Q103544: DIR /C Fails to Report File Compression Ratio
 
+{% raw %}
+
 	Article: Q103544
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -55,3 +57,5 @@ permalink: /kb/103/Q103544/
 	
 	=============================================================================
 	
+
+{% endraw %}

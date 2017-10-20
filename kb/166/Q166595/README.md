@@ -6,6 +6,8 @@ permalink: /kb/166/Q166595/
 
 ## Q166595: XFOR: Japanese Web Client Messages Corrupted When Posted
 
+{% raw %}
+
 	Article: Q166595
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -49,3 +51,5 @@ permalink: /kb/166/Q166595/
 	
 	=============================================================================
 	
+
+{% endraw %}

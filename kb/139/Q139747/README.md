@@ -6,6 +6,8 @@ permalink: /kb/139/Q139747/
 
 ## Q139747: MS-DOS-Based Program Reports Not Enough NetWare Server Space
 
+{% raw %}
+
 	Article: Q139747
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/139/Q139747/
 	
 	=============================================================================
 	
+
+{% endraw %}

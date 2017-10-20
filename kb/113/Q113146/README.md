@@ -6,6 +6,8 @@ permalink: /kb/113/Q113146/
 
 ## Q113146: BUG: Some API's May Return SQL_ERROR: SQLSTATE S0001
 
+{% raw %}
+
 	Article: Q113146
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -73,3 +75,5 @@ permalink: /kb/113/Q113146/
 	
 	=============================================================================
 	
+
+{% endraw %}

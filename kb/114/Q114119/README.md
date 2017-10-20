@@ -6,6 +6,8 @@ permalink: /kb/114/Q114119/
 
 ## Q114119: PC Gen: Application Notes and Replacement Files for PC Mail
 
+{% raw %}
+
 	Article: Q114119
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0,2.x,3.0,3.2
@@ -346,3 +348,5 @@ permalink: /kb/114/Q114119/
 	
 	=============================================================================
 	
+
+{% endraw %}

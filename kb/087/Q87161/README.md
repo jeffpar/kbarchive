@@ -6,6 +6,8 @@ permalink: /kb/087/Q87161/
 
 ## Q87161: Mac Wkst: How to Invoke Offline Operation
 
+{% raw %}
+
 	Article: Q87161
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -50,3 +52,5 @@ permalink: /kb/087/Q87161/
 	
 	=============================================================================
 	
+
+{% endraw %}

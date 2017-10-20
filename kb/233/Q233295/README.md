@@ -6,6 +6,8 @@ permalink: /kb/233/Q233295/
 
 ## Q233295: XADM: Error -1206 Starting Database
 
+{% raw %}
+
 	Article: Q233295
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -64,3 +66,5 @@ permalink: /kb/233/Q233295/
 	
 	=============================================================================
 	
+
+{% endraw %}

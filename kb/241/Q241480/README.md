@@ -6,6 +6,8 @@ permalink: /kb/241/Q241480/
 
 ## Q241480: Resource Leaks Through Iphlpapi.dll in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q241480
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/241/Q241480/
 	
 	=============================================================================
 	
+
+{% endraw %}

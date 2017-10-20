@@ -6,6 +6,8 @@ permalink: /kb/151/Q151517/
 
 ## Q151517: Stop: Common Dialog Error 0x00A When Printing From Notepad
 
+{% raw %}
+
 	Article: Q151517
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -56,3 +58,5 @@ permalink: /kb/151/Q151517/
 	
 	=============================================================================
 	
+
+{% endraw %}

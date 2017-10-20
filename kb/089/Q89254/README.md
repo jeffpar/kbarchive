@@ -6,6 +6,8 @@ permalink: /kb/089/Q89254/
 
 ## Q89254: TrueType Fonts Default to Courier When Printing
 
+{% raw %}
+
 	Article: Q89254
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -61,3 +63,5 @@ permalink: /kb/089/Q89254/
 	
 	=============================================================================
 	
+
+{% endraw %}

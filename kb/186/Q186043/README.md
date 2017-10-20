@@ -6,6 +6,8 @@ permalink: /kb/186/Q186043/
 
 ## Q186043: XCON: ECB Usage Count Events Appear with Large Directories
 
+{% raw %}
+
 	Article: Q186043
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -57,3 +59,5 @@ permalink: /kb/186/Q186043/
 	
 	=============================================================================
 	
+
+{% endraw %}

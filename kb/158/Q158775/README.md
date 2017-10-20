@@ -6,6 +6,8 @@ permalink: /kb/158/Q158775/
 
 ## Q158775: 3270 Emulator Fails To Enforce SNA User/Group Assignments
 
+{% raw %}
+
 	Article: Q158775
 	Product(s): Microsoft SNA Server
 	Version(s): 2.0,2.1,2.11,3.0,4.0
@@ -127,3 +129,5 @@ permalink: /kb/158/Q158775/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85663/
 
 ## Q85663: Description of Windows for Pen Computing Pens
 
+{% raw %}
+
 	Article: Q85663
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0,1.0a; WINDOWS:3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/085/Q85663/
 	
 	=============================================================================
 	
+
+{% endraw %}

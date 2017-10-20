@@ -6,6 +6,8 @@ permalink: /kb/199/Q199907/
 
 ## Q199907: DOC: Debugger.Evaluate Method Doesn't Evaluate Functions
 
+{% raw %}
+
 	Article: Q199907
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0,97
@@ -67,3 +69,5 @@ permalink: /kb/199/Q199907/
 	
 	=============================================================================
 	
+
+{% endraw %}

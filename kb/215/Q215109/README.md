@@ -6,6 +6,8 @@ permalink: /kb/215/Q215109/
 
 ## Q215109: Express Setup Repeatedly Prompts You to Swap SQL and SMS CD-ROMs
 
+{% raw %}
+
 	Article: Q215109
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -72,3 +74,5 @@ permalink: /kb/215/Q215109/
 	
 	=============================================================================
 	
+
+{% endraw %}

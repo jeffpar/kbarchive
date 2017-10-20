@@ -6,6 +6,8 @@ permalink: /kb/263/Q263287/
 
 ## Q263287: VFP6 Sample: Sets Print Options Without Printer Prompt Command
 
+{% raw %}
+
 	Article: Q263287
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -146,3 +148,5 @@ permalink: /kb/263/Q263287/
 	
 	=============================================================================
 	
+
+{% endraw %}

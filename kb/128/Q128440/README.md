@@ -6,6 +6,8 @@ permalink: /kb/128/Q128440/
 
 ## Q128440: MHS: Long User Names Conflict with -SF Switch
 
+{% raw %}
+
 	Article: Q128440
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -48,3 +50,5 @@ permalink: /kb/128/Q128440/
 	
 	=============================================================================
 	
+
+{% endraw %}

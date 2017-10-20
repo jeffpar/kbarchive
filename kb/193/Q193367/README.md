@@ -6,6 +6,8 @@ permalink: /kb/193/Q193367/
 
 ## Q193367: FIX: Access Violation in MSVBVM50 When Passing a Variant Array
 
+{% raw %}
+
 	Article: Q193367
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -174,3 +176,5 @@ permalink: /kb/193/Q193367/
 	
 	=============================================================================
 	
+
+{% endraw %}

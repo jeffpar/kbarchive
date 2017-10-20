@@ -6,6 +6,8 @@ permalink: /kb/167/Q167010/
 
 ## Q167010: Access Violation in Cmd.exe When Processing Batch File Script
 
+{% raw %}
+
 	Article: Q167010
 	Product(s): Microsoft Windows NT
 	Version(s): 4.00
@@ -62,3 +64,5 @@ permalink: /kb/167/Q167010/
 	
 	=============================================================================
 	
+
+{% endraw %}

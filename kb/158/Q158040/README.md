@@ -6,6 +6,8 @@ permalink: /kb/158/Q158040/
 
 ## Q158040: STL Sample for the stack::top and stack::empty Functions
 
+{% raw %}
+
 	Article: Q158040
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -165,3 +167,5 @@ permalink: /kb/158/Q158040/
 	
 	=============================================================================
 	
+
+{% endraw %}

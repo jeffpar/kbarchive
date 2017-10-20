@@ -6,6 +6,8 @@ permalink: /kb/108/Q108171/
 
 ## Q108171: Restoring Default FoxPro 1.02 Resource File Color Sets
 
+{% raw %}
+
 	Article: Q108171
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:1.02
@@ -89,3 +91,5 @@ permalink: /kb/108/Q108171/
 	
 	=============================================================================
 	
+
+{% endraw %}

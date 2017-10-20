@@ -6,6 +6,8 @@ permalink: /kb/139/Q139318/
 
 ## Q139318: 1996 Encarta World Atlas: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q139318
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996
@@ -220,3 +222,5 @@ permalink: /kb/139/Q139318/
 	
 	=============================================================================
 	
+
+{% endraw %}

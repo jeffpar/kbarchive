@@ -6,6 +6,8 @@ permalink: /kb/219/Q219283/
 
 ## Q219283: Using MS-CHAP with RADIUS Authentication
 
+{% raw %}
+
 	Article: Q219283
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -88,3 +90,5 @@ permalink: /kb/219/Q219283/
 	
 	=============================================================================
 	
+
+{% endraw %}

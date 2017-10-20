@@ -6,6 +6,8 @@ permalink: /kb/250/Q250918/
 
 ## Q250918: FS2000: Flight Restarts When You Change Waypoints During Flight
 
+{% raw %}
+
 	Article: Q250918
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -77,3 +79,5 @@ permalink: /kb/250/Q250918/
 	
 	=============================================================================
 	
+
+{% endraw %}

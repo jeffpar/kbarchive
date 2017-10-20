@@ -6,6 +6,8 @@ permalink: /kb/160/Q160916/
 
 ## Q160916: HOWTO: Ensure Form Uses Tables from Correct .dbc File Location
 
+{% raw %}
+
 	Article: Q160916
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -78,3 +80,5 @@ permalink: /kb/160/Q160916/
 	
 	=============================================================================
 	
+
+{% endraw %}

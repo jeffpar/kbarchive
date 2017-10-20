@@ -6,6 +6,8 @@ permalink: /kb/253/Q253755/
 
 ## Q253755: XFOR: Migration Wizard for Notes Skips All Documents View Items
 
+{% raw %}
+
 	Article: Q253755
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -61,3 +63,5 @@ permalink: /kb/253/Q253755/
 	
 	=============================================================================
 	
+
+{% endraw %}

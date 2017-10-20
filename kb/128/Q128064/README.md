@@ -6,6 +6,8 @@ permalink: /kb/128/Q128064/
 
 ## Q128064: Data Loader Fails to Recover Partial Inventory Transfer
 
+{% raw %}
+
 	Article: Q128064
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -43,3 +45,5 @@ permalink: /kb/128/Q128064/
 	
 	=============================================================================
 	
+
+{% endraw %}

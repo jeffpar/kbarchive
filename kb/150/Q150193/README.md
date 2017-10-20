@@ -6,6 +6,8 @@ permalink: /kb/150/Q150193/
 
 ## Q150193: BUG: Visible Property of Sheridan Command Button May Not Work
 
+{% raw %}
+
 	Article: Q150193
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -126,3 +128,5 @@ permalink: /kb/150/Q150193/
 	
 	=============================================================================
 	
+
+{% endraw %}

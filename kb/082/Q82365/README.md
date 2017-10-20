@@ -6,6 +6,8 @@ permalink: /kb/082/Q82365/
 
 ## Q82365: Norton Desktop v1.0 Conflicts with SoundBlaster
 
+{% raw %}
+
 	Article: Q82365
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/082/Q82365/
 	
 	=============================================================================
 	
+
+{% endraw %}

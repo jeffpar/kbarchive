@@ -6,6 +6,8 @@ permalink: /kb/136/Q136334/
 
 ## Q136334: Access Violation in LSASS.EXE During User Password Change
 
+{% raw %}
+
 	Article: Q136334
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -63,3 +65,5 @@ permalink: /kb/136/Q136334/
 	
 	=============================================================================
 	
+
+{% endraw %}

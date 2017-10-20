@@ -6,6 +6,8 @@ permalink: /kb/194/Q194108/
 
 ## Q194108: Research Organizer 99: Program Hangs When You Paste Text
 
+{% raw %}
+
 	Article: Q194108
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,95
@@ -84,3 +86,5 @@ permalink: /kb/194/Q194108/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/037/Q37566/
 
 ## Q37566: CodeView Unexpectedly Exits to DOS
 
+{% raw %}
+
 	Article: Q37566
 	Product(s): See article
 	Version(s): 2.10 2.20
@@ -23,3 +25,5 @@ permalink: /kb/037/Q37566/
 	is printed, but then over written before most people can see it.
 	
 	The solution is to make sure files are set to 20 in CONFIG.SYS.
+
+{% endraw %}

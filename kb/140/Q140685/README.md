@@ -6,6 +6,8 @@ permalink: /kb/140/Q140685/
 
 ## Q140685: MAC Clients Get Access Denied on Newly Created Folders
 
+{% raw %}
+
 	Article: Q140685
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -72,3 +74,5 @@ permalink: /kb/140/Q140685/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170280/
 
 ## Q170280: XADM: Upgrading From Exchange Standard Edition to the Enterprise
 
+{% raw %}
+
 	Article: Q170280
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -47,3 +49,5 @@ permalink: /kb/170/Q170280/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145882/
 
 ## Q145882: STOP 0x3f and Events 1001 and 2021 Appear On Heavily Used IIS
 
+{% raw %}
+
 	Article: Q145882
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -89,3 +91,5 @@ permalink: /kb/145/Q145882/
 	
 	=============================================================================
 	
+
+{% endraw %}

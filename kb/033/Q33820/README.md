@@ -6,6 +6,8 @@ permalink: /kb/033/Q33820/
 
 ## Q33820: FS: Napa County Airport Is Not Visible
 
+{% raw %}
+
 	Article: Q33820
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:3.0,4.0
@@ -45,3 +47,5 @@ permalink: /kb/033/Q33820/
 	
 	=============================================================================
 	
+
+{% endraw %}

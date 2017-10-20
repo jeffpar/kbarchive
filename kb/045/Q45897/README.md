@@ -6,6 +6,8 @@ permalink: /kb/045/Q45897/
 
 ## Q45897: How to Make QuickBASIC 4.50 Recognize Custom Help Files
 
+{% raw %}
+
 	Article: Q45897
 	Product(s): See article
 	Version(s): 4.50
@@ -63,3 +65,5 @@ permalink: /kb/045/Q45897/
 	
 	For more information about running HELPMAKE, please refer to Chapter 8
 	of the "Microsoft QuickC Tool Kit" manual for Version 2.0.
+
+{% endraw %}

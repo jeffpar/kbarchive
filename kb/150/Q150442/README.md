@@ -6,6 +6,8 @@ permalink: /kb/150/Q150442/
 
 ## Q150442: XCLN: Cancel After Adding Service, Installs But Not Configured
 
+{% raw %}
+
 	Article: Q150442
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -67,3 +69,5 @@ permalink: /kb/150/Q150442/
 	
 	=============================================================================
 	
+
+{% endraw %}

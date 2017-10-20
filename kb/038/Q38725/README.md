@@ -6,6 +6,8 @@ permalink: /kb/038/Q38725/
 
 ## Q38725: Why Unitialized Global Variables Don't Appear in C 5.10
 
+{% raw %}
+
 	Article: Q38725
 	Product(s): See article
 	Version(s): 3.65
@@ -85,3 +87,5 @@ permalink: /kb/038/Q38725/
 	Note: this behavior is the result of doing something we ask you not to
 	do; namely, putting communal data in a library. Data intended to be
 	placed in a library must be initialized.
+
+{% endraw %}

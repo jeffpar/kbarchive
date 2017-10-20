@@ -6,6 +6,8 @@ permalink: /kb/191/Q191453/
 
 ## Q191453: BUG: Conversion from OS/390 PACKED to DECIMAL and NUMERIC Fails
 
+{% raw %}
+
 	Article: Q191453
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0 SP1
@@ -79,3 +81,5 @@ permalink: /kb/191/Q191453/
 	
 	=============================================================================
 	
+
+{% endraw %}

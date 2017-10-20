@@ -6,6 +6,8 @@ permalink: /kb/159/Q159755/
 
 ## Q159755: FIX: REPORT FORM TO PRINT PROMPT with Landscape FRX Broken
 
+{% raw %}
+
 	Article: Q159755
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -111,3 +113,5 @@ permalink: /kb/159/Q159755/
 	
 	=============================================================================
 	
+
+{% endraw %}

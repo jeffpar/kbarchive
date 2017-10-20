@@ -6,6 +6,8 @@ permalink: /kb/086/Q86477/
 
 ## Q86477: How to Specify a Full Path in the ExecProgram Macro
 
+{% raw %}
+
 	Article: Q86477
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 3.0,3.1,3.51,4.0
@@ -65,3 +67,5 @@ permalink: /kb/086/Q86477/
 	
 	=============================================================================
 	
+
+{% endraw %}

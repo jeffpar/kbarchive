@@ -6,6 +6,8 @@ permalink: /kb/111/Q111579/
 
 ## Q111579: BUG: Rotated TrueType Font Repaints Many Times
 
+{% raw %}
+
 	Article: Q111579
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -46,3 +48,5 @@ permalink: /kb/111/Q111579/
 	
 	=============================================================================
 	
+
+{% endraw %}

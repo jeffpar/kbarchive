@@ -6,6 +6,8 @@ permalink: /kb/289/Q289495/
 
 ## Q289495: XADM: Pfadmin Version 1.30 Error Messages
 
+{% raw %}
+
 	Article: Q289495
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -73,3 +75,5 @@ permalink: /kb/289/Q289495/
 	
 	=============================================================================
 	
+
+{% endraw %}

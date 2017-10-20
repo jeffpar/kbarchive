@@ -6,6 +6,8 @@ permalink: /kb/147/Q147422/
 
 ## Q147422: Multimedia Err Msg: Not Enough Memory to Start Program
 
+{% raw %}
+
 	Article: Q147422
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,95
@@ -90,3 +92,5 @@ permalink: /kb/147/Q147422/
 	
 	=============================================================================
 	
+
+{% endraw %}

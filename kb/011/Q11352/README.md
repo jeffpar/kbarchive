@@ -6,6 +6,8 @@ permalink: /kb/011/Q11352/
 
 ## Q11352: SAMPLE: IconLib.exe-Using DLLs to Share Menus and Resources
 
+{% raw %}
+
 	Article: Q11352
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -66,3 +68,5 @@ permalink: /kb/011/Q11352/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176561/
 
 ## Q176561: PRB: Passing Timestamp Parameter Using User Connection Designer
 
+{% raw %}
+
 	Article: Q176561
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -154,3 +156,5 @@ permalink: /kb/176/Q176561/
 	
 	=============================================================================
 	
+
+{% endraw %}

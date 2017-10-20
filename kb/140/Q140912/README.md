@@ -6,6 +6,8 @@ permalink: /kb/140/Q140912/
 
 ## Q140912: How to Install Printer Drivers for Different Processor Types
 
+{% raw %}
+
 	Article: Q140912
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -61,3 +63,5 @@ permalink: /kb/140/Q140912/
 	
 	=============================================================================
 	
+
+{% endraw %}

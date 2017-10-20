@@ -6,6 +6,8 @@ permalink: /kb/173/Q173191/
 
 ## Q173191: Inserting an Excel Worksheet Object May Fail Under Windows NT
 
+{% raw %}
+
 	Article: Q173191
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -133,3 +135,5 @@ permalink: /kb/173/Q173191/
 	
 	=============================================================================
 	
+
+{% endraw %}

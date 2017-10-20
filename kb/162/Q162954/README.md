@@ -6,6 +6,8 @@ permalink: /kb/162/Q162954/
 
 ## Q162954: WD97: Formatting Not Retained for Blank Table Cells in HTML
 
+{% raw %}
+
 	Article: Q162954
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -53,3 +55,5 @@ permalink: /kb/162/Q162954/
 	
 	=============================================================================
 	
+
+{% endraw %}

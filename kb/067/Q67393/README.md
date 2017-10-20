@@ -6,6 +6,8 @@ permalink: /kb/067/Q67393/
 
 ## Q67393: Error in C and QuickC Example Program: BESSEL.C
 
+{% raw %}
+
 	Article: Q67393
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -35,3 +37,5 @@ permalink: /kb/067/Q67393/
 	
 	Microsoft QuickC
 	=============================================================================
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163104/
 
 ## Q163104: ODE97: Setup Wizard: Prompts Users to Change Version Number
 
+{% raw %}
+
 	Article: Q163104
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:97
@@ -71,3 +73,5 @@ permalink: /kb/163/Q163104/
 	
 	=============================================================================
 	
+
+{% endraw %}

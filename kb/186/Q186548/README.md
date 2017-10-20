@@ -6,6 +6,8 @@ permalink: /kb/186/Q186548/
 
 ## Q186548: Terminal Server Error Messages: 3900 to 7999
 
+{% raw %}
+
 	Article: Q186548
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -805,3 +807,5 @@ permalink: /kb/186/Q186548/
 	
 	=============================================================================
 	
+
+{% endraw %}

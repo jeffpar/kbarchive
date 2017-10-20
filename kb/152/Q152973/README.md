@@ -6,6 +6,8 @@ permalink: /kb/152/Q152973/
 
 ## Q152973: Setprop.exe Show How to Add Properties at Run Time
 
+{% raw %}
+
 	Article: Q152973
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0b,6.0
@@ -68,3 +70,5 @@ permalink: /kb/152/Q152973/
 	
 	=============================================================================
 	
+
+{% endraw %}

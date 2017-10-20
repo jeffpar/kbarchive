@@ -6,6 +6,8 @@ permalink: /kb/170/Q170007/
 
 ## Q170007: XCON: 9224 Sockets Error 10053 Connecting to a Retix 1.41 MTA
 
+{% raw %}
+
 	Article: Q170007
 	Product(s): Microsoft Exchange
 	Version(s): 1.00
@@ -54,3 +56,5 @@ permalink: /kb/170/Q170007/
 	
 	=============================================================================
 	
+
+{% endraw %}

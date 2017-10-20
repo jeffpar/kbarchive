@@ -6,6 +6,8 @@ permalink: /kb/146/Q146325/
 
 ## Q146325: XADM: Field Alignment Ignored if Entry Type is not Text
 
+{% raw %}
+
 	Article: Q146325
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -58,3 +60,5 @@ permalink: /kb/146/Q146325/
 	
 	=============================================================================
 	
+
+{% endraw %}

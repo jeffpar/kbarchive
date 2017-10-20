@@ -6,6 +6,8 @@ permalink: /kb/299/Q299732/
 
 ## Q299732: Train Simulator: Route Editor Hangs w/Desktop Resolution Change
 
+{% raw %}
+
 	Article: Q299732
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -41,3 +43,5 @@ permalink: /kb/299/Q299732/
 	
 	=============================================================================
 	
+
+{% endraw %}

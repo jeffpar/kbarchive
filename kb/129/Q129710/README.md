@@ -6,6 +6,8 @@ permalink: /kb/129/Q129710/
 
 ## Q129710: PRB: Visual FoxPro Setup Problems with Disk 2
 
+{% raw %}
+
 	Article: Q129710
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -285,3 +287,5 @@ permalink: /kb/129/Q129710/
 	
 	=============================================================================
 	
+
+{% endraw %}

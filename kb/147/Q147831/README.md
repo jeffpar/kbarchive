@@ -6,6 +6,8 @@ permalink: /kb/147/Q147831/
 
 ## Q147831: How to Install Old MS-DOS Tools in Windows 95
 
+{% raw %}
+
 	Article: Q147831
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -108,3 +110,5 @@ permalink: /kb/147/Q147831/
 	
 	=============================================================================
 	
+
+{% endraw %}

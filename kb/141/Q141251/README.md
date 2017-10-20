@@ -6,6 +6,8 @@ permalink: /kb/141/Q141251/
 
 ## Q141251: Mac Encarta 1995: Further Readings Do Not Copy or Print
 
+{% raw %}
+
 	Article: Q141251
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -71,3 +73,5 @@ permalink: /kb/141/Q141251/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136351/
 
 ## Q136351: CG: ClipArt Gallery Shows Extensions Even if They Are Hidden
 
+{% raw %}
+
 	Article: Q136351
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 2.0,3.0; WINDOWS:3.0,7.0,97; Win95:7.0
@@ -58,3 +60,5 @@ permalink: /kb/136/Q136351/
 	
 	=============================================================================
 	
+
+{% endraw %}

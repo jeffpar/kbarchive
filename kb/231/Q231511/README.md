@@ -6,6 +6,8 @@ permalink: /kb/231/Q231511/
 
 ## Q231511: MapPoint 2000: Currency Data Is Not Sorted Properly
 
+{% raw %}
+
 	Article: Q231511
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -66,3 +68,5 @@ permalink: /kb/231/Q231511/
 	
 	=============================================================================
 	
+
+{% endraw %}

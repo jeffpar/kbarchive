@@ -6,6 +6,8 @@ permalink: /kb/190/Q190410/
 
 ## Q190410: PRB: Error Assigning Non-Opened Recordset to ADODC
 
+{% raw %}
+
 	Article: Q190410
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.5,2.6,6.0
@@ -86,3 +88,5 @@ permalink: /kb/190/Q190410/
 	
 	=============================================================================
 	
+
+{% endraw %}

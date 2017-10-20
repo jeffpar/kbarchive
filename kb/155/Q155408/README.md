@@ -6,6 +6,8 @@ permalink: /kb/155/Q155408/
 
 ## Q155408: Oleaut32.dll Overwritten When Applying Service Packs 1-4
 
+{% raw %}
+
 	Article: Q155408
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -76,3 +78,5 @@ permalink: /kb/155/Q155408/
 	
 	=============================================================================
 	
+
+{% endraw %}

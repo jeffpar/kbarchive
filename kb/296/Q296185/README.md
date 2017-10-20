@@ -6,6 +6,8 @@ permalink: /kb/296/Q296185/
 
 ## Q296185: Patch Available for New Variant of &quot;Malformed Hit-Highlighting&quot;
 
+{% raw %}
+
 	Article: Q296185
 	Product(s): Internet Information Server
 	Version(s): 2.0
@@ -148,3 +150,5 @@ permalink: /kb/296/Q296185/
 	
 	=============================================================================
 	
+
+{% endraw %}

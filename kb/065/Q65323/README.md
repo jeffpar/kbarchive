@@ -6,6 +6,8 @@ permalink: /kb/065/Q65323/
 
 ## Q65323: BASIC Program to Read COBOL BCD (COMP-3) Numbers
 
+{% raw %}
+
 	Article: Q65323
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10 | 6.00 6.00b 7.00 7.10
@@ -191,3 +193,5 @@ permalink: /kb/065/Q65323/
 	
 	      *   Close the COMP-3 file and end.
 	          CLOSE BCDFile.
+
+{% endraw %}

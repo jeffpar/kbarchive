@@ -6,6 +6,8 @@ permalink: /kb/163/Q163246/
 
 ## Q163246: BUG: Visual FoxPro Loses Graphing When Office 97 Removed
 
+{% raw %}
+
 	Article: Q163246
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b 5.00 6.00
@@ -109,3 +111,5 @@ permalink: /kb/163/Q163246/
 	
 	=============================================================================
 	
+
+{% endraw %}

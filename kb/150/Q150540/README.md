@@ -6,6 +6,8 @@ permalink: /kb/150/Q150540/
 
 ## Q150540: FPNW on Domain Must be Installed on PDC
 
+{% raw %}
+
 	Article: Q150540
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -59,3 +61,5 @@ permalink: /kb/150/Q150540/
 	
 	=============================================================================
 	
+
+{% endraw %}

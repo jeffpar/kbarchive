@@ -6,6 +6,8 @@ permalink: /kb/107/Q107055/
 
 ## Q107055: CD Sampler: No Support for XGA
 
+{% raw %}
+
 	Article: Q107055
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): Fall 1993 edition
@@ -65,3 +67,5 @@ permalink: /kb/107/Q107055/
 	
 	=============================================================================
 	
+
+{% endraw %}

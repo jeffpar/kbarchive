@@ -6,6 +6,8 @@ permalink: /kb/099/Q99197/
 
 ## Q99197: Model 95 Traps with Trap00D, Trap00C, Duplicate Name etc.
 
+{% raw %}
+
 	Article: Q99197
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/099/Q99197/
 	
 	=============================================================================
 	
+
+{% endraw %}

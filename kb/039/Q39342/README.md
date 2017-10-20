@@ -6,6 +6,8 @@ permalink: /kb/039/Q39342/
 
 ## Q39342: How to Solve Common QuickBASIC Communications Port Problems
 
+{% raw %}
+
 	Article: Q39342
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -175,3 +177,5 @@ permalink: /kb/039/Q39342/
 	   "8088 Assembler Language Programming: The IBM PC" Second Edition by
 	   Willen & Krantz, published by Howard W. Sams & Co. (1983, 1984).
 	   Pages 92-93, and Chapter 7 (Pages 166 to 188).
+
+{% endraw %}

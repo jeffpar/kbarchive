@@ -6,6 +6,8 @@ permalink: /kb/157/Q157032/
 
 ## Q157032: Services for Macintosh May Cause STOP 0x0A During High Load
 
+{% raw %}
+
 	Article: Q157032
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -69,3 +71,5 @@ permalink: /kb/157/Q157032/
 	
 	=============================================================================
 	
+
+{% endraw %}

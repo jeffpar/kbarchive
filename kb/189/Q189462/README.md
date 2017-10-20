@@ -6,6 +6,8 @@ permalink: /kb/189/Q189462/
 
 ## Q189462: Only Partial Pages Displayed or Error &quot;The Connection Was Reset&quot;
 
+{% raw %}
+
 	Article: Q189462
 	Product(s): Internet Information Server
 	Version(s): WINNT:3.0
@@ -63,3 +65,5 @@ permalink: /kb/189/Q189462/
 	
 	=============================================================================
 	
+
+{% endraw %}

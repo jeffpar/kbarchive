@@ -6,6 +6,8 @@ permalink: /kb/164/Q164855/
 
 ## Q164855: XCON: Japanese Exchange May Show a Subject Line of ????????
 
+{% raw %}
+
 	Article: Q164855
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -55,3 +57,5 @@ permalink: /kb/164/Q164855/
 	
 	=============================================================================
 	
+
+{% endraw %}

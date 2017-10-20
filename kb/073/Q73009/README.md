@@ -6,6 +6,8 @@ permalink: /kb/073/Q73009/
 
 ## Q73009: Panasonic KX-P1124 Produces Poor Prints in IBM Emulation
 
+{% raw %}
+
 	Article: Q73009
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -53,3 +55,5 @@ permalink: /kb/073/Q73009/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161410/
 
 ## Q161410: How to Set Up a Private Network Over the Internet Using PPTP
 
+{% raw %}
+
 	Article: Q161410
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/161/Q161410/
 	
 	=============================================================================
 	
+
+{% endraw %}

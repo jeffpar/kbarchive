@@ -6,6 +6,8 @@ permalink: /kb/164/Q164741/
 
 ## Q164741: PRB: Form Cannot Find Stored Procedure via Data Environment
 
+{% raw %}
+
 	Article: Q164741
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0b 5.0 5.0a 6.0
@@ -77,3 +79,5 @@ permalink: /kb/164/Q164741/
 	
 	=============================================================================
 	
+
+{% endraw %}

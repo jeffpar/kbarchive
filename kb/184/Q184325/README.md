@@ -6,6 +6,8 @@ permalink: /kb/184/Q184325/
 
 ## Q184325: XWEB: All Day Event Appears As Two Days Using OWA
 
+{% raw %}
+
 	Article: Q184325
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5; winnt:5.5 SP1
@@ -53,3 +55,5 @@ permalink: /kb/184/Q184325/
 	
 	=============================================================================
 	
+
+{% endraw %}

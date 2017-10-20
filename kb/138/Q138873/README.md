@@ -6,6 +6,8 @@ permalink: /kb/138/Q138873/
 
 ## Q138873: BUG: Window Colors Cannot Be Customized from Developer Studio
 
+{% raw %}
+
 	Article: Q138873
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -91,3 +93,5 @@ permalink: /kb/138/Q138873/
 	
 	=============================================================================
 	
+
+{% endraw %}

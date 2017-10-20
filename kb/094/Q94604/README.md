@@ -6,6 +6,8 @@ permalink: /kb/094/Q94604/
 
 ## Q94604: Incorrect SMARTDrive BufferSize Setting Hangs System
 
+{% raw %}
+
 	Article: Q94604
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -76,3 +78,5 @@ permalink: /kb/094/Q94604/
 	
 	=============================================================================
 	
+
+{% endraw %}

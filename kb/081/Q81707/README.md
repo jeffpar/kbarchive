@@ -6,6 +6,8 @@ permalink: /kb/081/Q81707/
 
 ## Q81707: INFO: WM_CTLCOLOR Processing for Combo Boxes of all Styles
 
+{% raw %}
+
 	Article: Q81707
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -108,3 +110,5 @@ permalink: /kb/081/Q81707/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/260/Q260203/
 
 ## Q260203: SMS: NetWare Client 4.7 Redirector May Cause Problems in Windows
 
+{% raw %}
+
 	Article: Q260203
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP2
@@ -139,3 +141,5 @@ permalink: /kb/260/Q260203/
 	
 	=============================================================================
 	
+
+{% endraw %}

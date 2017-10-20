@@ -6,6 +6,8 @@ permalink: /kb/315/Q315454/
 
 ## Q315454: FP: Error 0178: 80070005 When You Attempt to Connect to Database
 
+{% raw %}
+
 	Article: Q315454
 	Product(s): Word Front Page
 	Version(s): 
@@ -100,3 +102,5 @@ permalink: /kb/315/Q315454/
 	
 	=============================================================================
 	
+
+{% endraw %}

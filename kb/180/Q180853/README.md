@@ -6,6 +6,8 @@ permalink: /kb/180/Q180853/
 
 ## Q180853: PRB: Stored Procedure Fails if Rights Are Revoked and Regranted
 
+{% raw %}
+
 	Article: Q180853
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.0,2.1,2.5,2.6,Build 2.573.4403,Build 2.73.7283.01,Build 2.73.7283.03
@@ -87,3 +89,5 @@ permalink: /kb/180/Q180853/
 	
 	=============================================================================
 	
+
+{% endraw %}

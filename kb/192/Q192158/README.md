@@ -6,6 +6,8 @@ permalink: /kb/192/Q192158/
 
 ## Q192158: Y2K: NTMMTA Dirsync Process Incorrectly Logs Dates Beyond 1999
 
+{% raw %}
+
 	Article: Q192158
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -78,3 +80,5 @@ permalink: /kb/192/Q192158/
 	
 	=============================================================================
 	
+
+{% endraw %}

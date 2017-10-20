@@ -6,6 +6,8 @@ permalink: /kb/115/Q115871/
 
 ## Q115871: Quitting a PM Application with End Task Generates Dialog Box
 
+{% raw %}
+
 	Article: Q115871
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -60,3 +62,5 @@ permalink: /kb/115/Q115871/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132116/
 
 ## Q132116: FIX: CheckAutoCenter May Return TRUE with DS_ABSALIGN
 
+{% raw %}
+
 	Article: Q132116
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -71,3 +73,5 @@ permalink: /kb/132/Q132116/
 	
 	=============================================================================
 	
+
+{% endraw %}

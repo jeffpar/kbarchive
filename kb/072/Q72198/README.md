@@ -6,6 +6,8 @@ permalink: /kb/072/Q72198/
 
 ## Q72198: MS-DOS 5 Contents (3.5-Inch Disk Set)
 
+{% raw %}
+
 	Article: Q72198
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -162,3 +164,5 @@ permalink: /kb/072/Q72198/
 	
 	=============================================================================
 	
+
+{% endraw %}

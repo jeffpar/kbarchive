@@ -6,6 +6,8 @@ permalink: /kb/172/Q172410/
 
 ## Q172410: Mac Bookshelf 98: Power Mac Version of Product Not Installed
 
+{% raw %}
+
 	Article: Q172410
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -96,3 +98,5 @@ permalink: /kb/172/Q172410/
 	
 	=============================================================================
 	
+
+{% endraw %}

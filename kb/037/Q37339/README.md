@@ -6,6 +6,8 @@ permalink: /kb/037/Q37339/
 
 ## Q37339: A Single-Precision Number as a File Number Causes &quot;Overflow&quot;
 
+{% raw %}
+
 	Article: Q37339
 	Product(s): See article
 	Version(s): 6.00 6.00b | 6.00 6.00b
@@ -51,3 +53,5 @@ permalink: /kb/037/Q37339/
 	           size%(f) = LOF(f) / 256
 	           id$(f) = fid$
 	   END SUB
+
+{% endraw %}

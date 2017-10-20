@@ -6,6 +6,8 @@ permalink: /kb/115/Q115246/
 
 ## Q115246: Mac MSPlus: Schedule+ Does Not Propagate Old Data
 
+{% raw %}
+
 	Article: Q115246
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.0
@@ -39,3 +41,5 @@ permalink: /kb/115/Q115246/
 	
 	=============================================================================
 	
+
+{% endraw %}

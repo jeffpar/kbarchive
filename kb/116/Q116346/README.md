@@ -6,6 +6,8 @@ permalink: /kb/116/Q116346/
 
 ## Q116346: Bookshelf: Pressing OPTION Key Makes No Difference
 
+{% raw %}
+
 	Article: Q116346
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -42,3 +44,5 @@ permalink: /kb/116/Q116346/
 	
 	=============================================================================
 	
+
+{% endraw %}

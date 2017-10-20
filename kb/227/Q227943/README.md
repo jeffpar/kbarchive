@@ -6,6 +6,8 @@ permalink: /kb/227/Q227943/
 
 ## Q227943: How IIS Handles Reverse Lookup Failures
 
+{% raw %}
+
 	Article: Q227943
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -45,3 +47,5 @@ permalink: /kb/227/Q227943/
 	
 	=============================================================================
 	
+
+{% endraw %}

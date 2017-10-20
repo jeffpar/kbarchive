@@ -6,6 +6,8 @@ permalink: /kb/065/Q65544/
 
 ## Q65544: C1001: Internal Compiler Error: @(#)grammar.c:1.138, Line 164
 
+{% raw %}
+
 	Article: Q65544
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -44,3 +46,5 @@ permalink: /kb/065/Q65544/
 	Microsoft has confirmed this to be a problem with the C compiler
 	version 6.00. We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

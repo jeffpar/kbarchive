@@ -6,6 +6,8 @@ permalink: /kb/193/Q193859/
 
 ## Q193859: XFOR: How to Dump LDE WorkQueue Using SQL
 
+{% raw %}
+
 	Article: Q193859
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.2
@@ -63,3 +65,5 @@ permalink: /kb/193/Q193859/
 	
 	=============================================================================
 	
+
+{% endraw %}

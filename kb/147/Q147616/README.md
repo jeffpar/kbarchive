@@ -6,6 +6,8 @@ permalink: /kb/147/Q147616/
 
 ## Q147616: Current History Registry Key Is Not Updated Properly
 
+{% raw %}
+
 	Article: Q147616
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -73,3 +75,5 @@ permalink: /kb/147/Q147616/
 	
 	=============================================================================
 	
+
+{% endraw %}

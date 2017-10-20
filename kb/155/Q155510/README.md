@@ -6,6 +6,8 @@ permalink: /kb/155/Q155510/
 
 ## Q155510: XCLN: Empty the 'Deleted Items' Folder Option doesn't Work
 
+{% raw %}
+
 	Article: Q155510
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -49,3 +51,5 @@ permalink: /kb/155/Q155510/
 	
 	=============================================================================
 	
+
+{% endraw %}

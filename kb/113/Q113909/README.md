@@ -6,6 +6,8 @@ permalink: /kb/113/Q113909/
 
 ## Q113909: NTBACKUP Creates Additional Backup Set Description File
 
+{% raw %}
+
 	Article: Q113909
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -67,3 +69,5 @@ permalink: /kb/113/Q113909/
 	
 	=============================================================================
 	
+
+{% endraw %}

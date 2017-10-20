@@ -6,6 +6,8 @@ permalink: /kb/239/Q239861/
 
 ## Q239861: SNA Server Host Print Service Supports 1,024 3270 Print Sessions
 
+{% raw %}
+
 	Article: Q239861
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
@@ -157,3 +159,5 @@ permalink: /kb/239/Q239861/
 	
 	=============================================================================
 	
+
+{% endraw %}

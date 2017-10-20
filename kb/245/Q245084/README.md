@@ -6,6 +6,8 @@ permalink: /kb/245/Q245084/
 
 ## Q245084: Data Is Invalid When Setting Replication Properties
 
+{% raw %}
+
 	Article: Q245084
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -97,3 +99,5 @@ permalink: /kb/245/Q245084/
 	
 	=============================================================================
 	
+
+{% endraw %}

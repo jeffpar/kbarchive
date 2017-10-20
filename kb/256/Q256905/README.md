@@ -6,6 +6,8 @@ permalink: /kb/256/Q256905/
 
 ## Q256905: Resync Request Files Accumulate on Site Server and CAP
 
+{% raw %}
+
 	Article: Q256905
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -58,3 +60,5 @@ permalink: /kb/256/Q256905/
 	
 	=============================================================================
 	
+
+{% endraw %}

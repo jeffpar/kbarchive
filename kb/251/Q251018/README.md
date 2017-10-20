@@ -6,6 +6,8 @@ permalink: /kb/251/Q251018/
 
 ## Q251018: XFOR: Configure Migration with cc:Mail 32-bit Executables
 
+{% raw %}
+
 	Article: Q251018
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -79,3 +81,5 @@ permalink: /kb/251/Q251018/
 	
 	=============================================================================
 	
+
+{% endraw %}

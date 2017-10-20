@@ -6,6 +6,8 @@ permalink: /kb/166/Q166021/
 
 ## Q166021: Plus! For Kids: Protect It Cannot Disable Main System Icons
 
+{% raw %}
+
 	Article: Q166021
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.00
@@ -54,3 +56,5 @@ permalink: /kb/166/Q166021/
 	
 	=============================================================================
 	
+
+{% endraw %}

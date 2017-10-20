@@ -6,6 +6,8 @@ permalink: /kb/246/Q246873/
 
 ## Q246873: INFO: Visual SourceSafe 6.0 Installation From Visual Studio 6.0
 
+{% raw %}
+
 	Article: Q246873
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -122,3 +124,5 @@ permalink: /kb/246/Q246873/
 	
 	=============================================================================
 	
+
+{% endraw %}

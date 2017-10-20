@@ -6,6 +6,8 @@ permalink: /kb/137/Q137958/
 
 ## Q137958: Bookshelf '95 editions: Daily Dialog Settings are Saved on ESC
 
+{% raw %}
+
 	Article: Q137958
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition; WINDOWS:
@@ -49,3 +51,5 @@ permalink: /kb/137/Q137958/
 	
 	=============================================================================
 	
+
+{% endraw %}

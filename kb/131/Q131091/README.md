@@ -6,6 +6,8 @@ permalink: /kb/131/Q131091/
 
 ## Q131091: Microsoft Systems Journal: July 1995
 
+{% raw %}
+
 	Article: Q131091
 	Product(s): Miscrosoft Systems Journal
 	Version(s): for July 1995
@@ -110,3 +112,5 @@ permalink: /kb/131/Q131091/
 	
 	=============================================================================
 	
+
+{% endraw %}

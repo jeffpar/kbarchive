@@ -6,6 +6,8 @@ permalink: /kb/083/Q83054/
 
 ## Q83054: SYSINI.WRI from Windows 3.1
 
+{% raw %}
+
 	Article: Q83054
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -708,3 +710,5 @@ permalink: /kb/083/Q83054/
 	
 	=============================================================================
 	
+
+{% endraw %}

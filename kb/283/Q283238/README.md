@@ -6,6 +6,8 @@ permalink: /kb/283/Q283238/
 
 ## Q283238: XADM: Exchange Server 5.5 Post-SP4 Message Transfer Agent Fixes
 
+{% raw %}
+
 	Article: Q283238
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -160,3 +162,5 @@ permalink: /kb/283/Q283238/
 	
 	=============================================================================
 	
+
+{% endraw %}

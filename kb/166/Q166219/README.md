@@ -6,6 +6,8 @@ permalink: /kb/166/Q166219/
 
 ## Q166219: Script Selection in Printer Properties Doesn't Take Effect
 
+{% raw %}
+
 	Article: Q166219
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -53,3 +55,5 @@ permalink: /kb/166/Q166219/
 	
 	=============================================================================
 	
+
+{% endraw %}

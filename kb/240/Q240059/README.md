@@ -6,6 +6,8 @@ permalink: /kb/240/Q240059/
 
 ## Q240059: Split Horizon with Poison Reverse Causes Incorrect RIP Updates
 
+{% raw %}
+
 	Article: Q240059
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP5
@@ -107,3 +109,5 @@ permalink: /kb/240/Q240059/
 	
 	=============================================================================
 	
+
+{% endraw %}

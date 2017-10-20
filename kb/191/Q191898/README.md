@@ -6,6 +6,8 @@ permalink: /kb/191/Q191898/
 
 ## Q191898: BUG: Windowless TextBox Contents Highlighted After Drag &amp; Drop
 
+{% raw %}
+
 	Article: Q191898
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/191/Q191898/
 	
 	=============================================================================
 	
+
+{% endraw %}

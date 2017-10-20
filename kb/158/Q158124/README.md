@@ -6,6 +6,8 @@ permalink: /kb/158/Q158124/
 
 ## Q158124: XCLN: ShivaRemote with Exchange - RAS Considerations
 
+{% raw %}
+
 	Article: Q158124
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -148,3 +150,5 @@ permalink: /kb/158/Q158124/
 	
 	=============================================================================
 	
+
+{% endraw %}

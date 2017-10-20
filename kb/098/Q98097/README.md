@@ -6,6 +6,8 @@ permalink: /kb/098/Q98097/
 
 ## Q98097: Mac Bkup: Retrospect Remote May Corrupt Server Data File
 
+{% raw %}
+
 	Article: Q98097
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -80,3 +82,5 @@ permalink: /kb/098/Q98097/
 	
 	=============================================================================
 	
+
+{% endraw %}

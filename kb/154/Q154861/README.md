@@ -6,6 +6,8 @@ permalink: /kb/154/Q154861/
 
 ## Q154861: Scheduler Start of a Job Takes One Second Per Computer
 
+{% raw %}
+
 	Article: Q154861
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -49,3 +51,5 @@ permalink: /kb/154/Q154861/
 	
 	=============================================================================
 	
+
+{% endraw %}

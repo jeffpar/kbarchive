@@ -6,6 +6,8 @@ permalink: /kb/132/Q132106/
 
 ## Q132106: Mac Encarta 95: Jewel Box Text Has Wrong Close Button Location
 
+{% raw %}
+
 	Article: Q132106
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -47,3 +49,5 @@ permalink: /kb/132/Q132106/
 	
 	=============================================================================
 	
+
+{% endraw %}

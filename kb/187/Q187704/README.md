@@ -6,6 +6,8 @@ permalink: /kb/187/Q187704/
 
 ## Q187704: Server Lockup Receiving Pop-up Messages with Backup Exec
 
+{% raw %}
+
 	Article: Q187704
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0a
@@ -106,3 +108,5 @@ permalink: /kb/187/Q187704/
 	
 	=============================================================================
 	
+
+{% endraw %}

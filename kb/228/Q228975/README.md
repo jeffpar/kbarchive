@@ -6,6 +6,8 @@ permalink: /kb/228/Q228975/
 
 ## Q228975: Midtown Madness: Prompted to Verify Connection to the Internet
 
+{% raw %}
+
 	Article: Q228975
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/228/Q228975/
 	
 	=============================================================================
 	
+
+{% endraw %}

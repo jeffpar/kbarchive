@@ -6,6 +6,8 @@ permalink: /kb/139/Q139439/
 
 ## Q139439: Bookshelf 95: Copy to Excel Command Does not Work
 
+{% raw %}
+
 	Article: Q139439
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; Win95:7.0
@@ -56,3 +58,5 @@ permalink: /kb/139/Q139439/
 	
 	=============================================================================
 	
+
+{% endraw %}

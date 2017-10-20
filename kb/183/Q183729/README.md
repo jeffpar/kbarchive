@@ -6,6 +6,8 @@ permalink: /kb/183/Q183729/
 
 ## Q183729: Valid User Needed for Remote Administration Using HTMLA
 
+{% raw %}
+
 	Article: Q183729
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -46,3 +48,5 @@ permalink: /kb/183/Q183729/
 	
 	=============================================================================
 	
+
+{% endraw %}

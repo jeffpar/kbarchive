@@ -6,6 +6,8 @@ permalink: /kb/167/Q167191/
 
 ## Q167191: PRB: &quot;Variable 'X' not found&quot; in a Visual FoxPro Menu
 
+{% raw %}
+
 	Article: Q167191
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -90,3 +92,5 @@ permalink: /kb/167/Q167191/
 	
 	=============================================================================
 	
+
+{% endraw %}

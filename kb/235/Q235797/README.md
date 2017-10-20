@@ -6,6 +6,8 @@ permalink: /kb/235/Q235797/
 
 ## Q235797: SMS: Client Logon Scripts Do Not Function over a RAS Link
 
+{% raw %}
+
 	Article: Q235797
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -63,3 +65,5 @@ permalink: /kb/235/Q235797/
 	
 	=============================================================================
 	
+
+{% endraw %}

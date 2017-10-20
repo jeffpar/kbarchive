@@ -6,6 +6,8 @@ permalink: /kb/118/Q118954/
 
 ## Q118954: System Hangs When Accessing Sound Card Controlled CD-ROM Drive
 
+{% raw %}
+
 	Article: Q118954
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/118/Q118954/
 	
 	=============================================================================
 	
+
+{% endraw %}

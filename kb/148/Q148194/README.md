@@ -6,6 +6,8 @@ permalink: /kb/148/Q148194/
 
 ## Q148194: Complete Gardening: Readme.wri Contents
 
+{% raw %}
+
 	Article: Q148194
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -469,3 +471,5 @@ permalink: /kb/148/Q148194/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164179/
 
 ## Q164179: Writer: Black Splotches when Printing to Canon BJC 600/620
 
+{% raw %}
+
 	Article: Q164179
 	Product(s): Microsoft Home Kids Products
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/164/Q164179/
 	
 	=============================================================================
 	
+
+{% endraw %}

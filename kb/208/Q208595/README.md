@@ -6,6 +6,8 @@ permalink: /kb/208/Q208595/
 
 ## Q208595: VBCE: Resetting Toolbars in the IDE Can Cause Application Error
 
+{% raw %}
+
 	Article: Q208595
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/208/Q208595/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185734/
 
 ## Q185734: DNS Server Access Violation in Dns!sendNbstatResponse Routine
 
+{% raw %}
+
 	Article: Q185734
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/185/Q185734/
 	
 	=============================================================================
 	
+
+{% endraw %}

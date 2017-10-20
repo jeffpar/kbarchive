@@ -6,6 +6,8 @@ permalink: /kb/171/Q171253/
 
 ## Q171253: Twinax Connections Fail
 
+{% raw %}
+
 	Article: Q171253
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -151,3 +153,5 @@ permalink: /kb/171/Q171253/
 	
 	=============================================================================
 	
+
+{% endraw %}

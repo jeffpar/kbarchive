@@ -6,6 +6,8 @@ permalink: /kb/170/Q170161/
 
 ## Q170161: INFO: VB 6.0 Readme Part 4: Language Issues
 
+{% raw %}
+
 	Article: Q170161
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -141,3 +143,5 @@ permalink: /kb/170/Q170161/
 	
 	=============================================================================
 	
+
+{% endraw %}

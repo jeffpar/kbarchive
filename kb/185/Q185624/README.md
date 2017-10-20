@@ -6,6 +6,8 @@ permalink: /kb/185/Q185624/
 
 ## Q185624: Calls to NtQueryVolumeInformationFile May Cause Stop 0x0000001E
 
+{% raw %}
+
 	Article: Q185624
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/185/Q185624/
 	
 	=============================================================================
 	
+
+{% endraw %}

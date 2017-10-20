@@ -6,6 +6,8 @@ permalink: /kb/125/Q125245/
 
 ## Q125245: PC Adm: Postoffice Diagnostics Utility Version 3.2.1
 
+{% raw %}
+
 	Article: Q125245
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1,3.0,3.2,3.2a
@@ -190,3 +192,5 @@ permalink: /kb/125/Q125245/
 	
 	=============================================================================
 	
+
+{% endraw %}

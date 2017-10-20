@@ -6,6 +6,8 @@ permalink: /kb/086/Q86537/
 
 ## Q86537: PC Adm: How to Move Mail User from One Postoffice to Another
 
+{% raw %}
+
 	Article: Q86537
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -124,3 +126,5 @@ permalink: /kb/086/Q86537/
 	
 	=============================================================================
 	
+
+{% endraw %}

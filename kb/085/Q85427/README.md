@@ -6,6 +6,8 @@ permalink: /kb/085/Q85427/
 
 ## Q85427: WININI.WRI: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2
 
+{% raw %}
+
 	Article: Q85427
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -398,3 +400,5 @@ permalink: /kb/085/Q85427/
 	
 	=============================================================================
 	
+
+{% endraw %}

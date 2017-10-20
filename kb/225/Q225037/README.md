@@ -6,6 +6,8 @@ permalink: /kb/225/Q225037/
 
 ## Q225037: List of Bugs Fixed in Windows NT 4.0 Service Pack 5
 
+{% raw %}
+
 	Article: Q225037
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -211,3 +213,5 @@ permalink: /kb/225/Q225037/
 	
 	=============================================================================
 	
+
+{% endraw %}

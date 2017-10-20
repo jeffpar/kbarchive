@@ -6,6 +6,8 @@ permalink: /kb/110/Q110023/
 
 ## Q110023: GP Fault When Playing Multiple AVI Files
 
+{% raw %}
+
 	Article: Q110023
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 1.1
@@ -61,3 +63,5 @@ permalink: /kb/110/Q110023/
 	
 	=============================================================================
 	
+
+{% endraw %}

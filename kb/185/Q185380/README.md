@@ -6,6 +6,8 @@ permalink: /kb/185/Q185380/
 
 ## Q185380: &quot;Directory Listing Denied&quot; When Browsing a Web Site
 
+{% raw %}
+
 	Article: Q185380
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -65,3 +67,5 @@ permalink: /kb/185/Q185380/
 	
 	=============================================================================
 	
+
+{% endraw %}

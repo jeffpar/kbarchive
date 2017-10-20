@@ -6,6 +6,8 @@ permalink: /kb/236/Q236785/
 
 ## Q236785: TN3270 Client Sessions Fail with sec_rc=0x00000320 (LUA_BRACKET)
 
+{% raw %}
+
 	Article: Q236785
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
@@ -92,3 +94,5 @@ permalink: /kb/236/Q236785/
 	
 	=============================================================================
 	
+
+{% endraw %}

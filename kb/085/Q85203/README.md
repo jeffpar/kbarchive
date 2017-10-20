@@ -6,6 +6,8 @@ permalink: /kb/085/Q85203/
 
 ## Q85203: SAMPLE: StatBar.exe Demonstrates Window Status Bar
 
+{% raw %}
+
 	Article: Q85203
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -63,3 +65,5 @@ permalink: /kb/085/Q85203/
 	
 	=============================================================================
 	
+
+{% endraw %}

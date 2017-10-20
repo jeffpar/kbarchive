@@ -6,6 +6,8 @@ permalink: /kb/105/Q105107/
 
 ## Q105107: PC Win: Missing _MSSETUP.EXE Causes Setup to Abort
 
+{% raw %}
+
 	Article: Q105107
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -71,3 +73,5 @@ permalink: /kb/105/Q105107/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140580/
 
 ## Q140580: PRB: Invalid SORTWORK Setting Causes Error in Some Wizards
 
+{% raw %}
+
 	Article: Q140580
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -77,3 +79,5 @@ permalink: /kb/140/Q140580/
 	
 	=============================================================================
 	
+
+{% endraw %}

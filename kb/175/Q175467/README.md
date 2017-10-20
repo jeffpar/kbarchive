@@ -6,6 +6,8 @@ permalink: /kb/175/Q175467/
 
 ## Q175467: Bookshelf: Can't Install on Workstation from Network Drive
 
+{% raw %}
+
 	Article: Q175467
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/175/Q175467/
 	
 	=============================================================================
 	
+
+{% endraw %}

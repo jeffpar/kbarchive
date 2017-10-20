@@ -6,6 +6,8 @@ permalink: /kb/130/Q130106/
 
 ## Q130106: WORD DEV KIT: 2nd Ed (Version 6.0) Corrections and Comments
 
+{% raw %}
+
 	Article: Q130106
 	Product(s): Microsoft Press
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/130/Q130106/
 	
 	=============================================================================
 	
+
+{% endraw %}

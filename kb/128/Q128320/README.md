@@ -6,6 +6,8 @@ permalink: /kb/128/Q128320/
 
 ## Q128320: Mac MSPlus: Viewing Other Users' Appointments
 
+{% raw %}
+
 	Article: Q128320
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 1.0a
@@ -53,3 +55,5 @@ permalink: /kb/128/Q128320/
 	
 	=============================================================================
 	
+
+{% endraw %}

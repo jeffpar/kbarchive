@@ -6,6 +6,8 @@ permalink: /kb/309/Q309295/
 
 ## Q309295: Microsoft DB2OLEDB Provider Stops Responding Under Stress
 
+{% raw %}
+
 	Article: Q309295
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/309/Q309295/
 	
 	=============================================================================
 	
+
+{% endraw %}

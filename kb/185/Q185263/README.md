@@ -6,6 +6,8 @@ permalink: /kb/185/Q185263/
 
 ## Q185263: FIX: Keyboard &quot;{PAUSE KEY}&quot; Command Hangs Visual FoxPro
 
+{% raw %}
+
 	Article: Q185263
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -69,3 +71,5 @@ permalink: /kb/185/Q185263/
 	
 	=============================================================================
 	
+
+{% endraw %}

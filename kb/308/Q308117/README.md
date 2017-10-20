@@ -6,6 +6,8 @@ permalink: /kb/308/Q308117/
 
 ## Q308117: Games: Error Message: Ddraw.dll Cannot Start
 
+{% raw %}
+
 	Article: Q308117
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -140,3 +142,5 @@ permalink: /kb/308/Q308117/
 	
 	=============================================================================
 	
+
+{% endraw %}

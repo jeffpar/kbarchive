@@ -6,6 +6,8 @@ permalink: /kb/149/Q149608/
 
 ## Q149608: BUG: Valid Method Does Not Fire in Combo Box
 
+{% raw %}
+
 	Article: Q149608
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS: 3.0,3.0b,5.0,5.0a,6.0
@@ -70,3 +72,5 @@ permalink: /kb/149/Q149608/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82386/
 
 ## Q82386: Using Turbo Pascal with Windows
 
+{% raw %}
+
 	Article: Q82386
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/082/Q82386/
 	
 	=============================================================================
 	
+
+{% endraw %}

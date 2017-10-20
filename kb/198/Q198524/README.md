@@ -6,6 +6,8 @@ permalink: /kb/198/Q198524/
 
 ## Q198524: Large Ntbootdd.sys File May Cause Problems
 
+{% raw %}
+
 	Article: Q198524
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/198/Q198524/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/116/Q116439/
 
 ## Q116439: BUG: NMAKE Gives Incorrect Line Number for Include File Error
 
+{% raw %}
+
 	Article: Q116439
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.01,1.11,1.12,1.13,1.2,1.3,1.4; OS/2:1.01,1.11,1.12,1.21
@@ -68,3 +70,5 @@ permalink: /kb/116/Q116439/
 	
 	=============================================================================
 	
+
+{% endraw %}

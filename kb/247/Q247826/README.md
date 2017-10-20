@@ -6,6 +6,8 @@ permalink: /kb/247/Q247826/
 
 ## Q247826: BUG: Using a QoS Socket with AcceptEx
 
+{% raw %}
+
 	Article: Q247826
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -97,3 +99,5 @@ permalink: /kb/247/Q247826/
 	
 	=============================================================================
 	
+
+{% endraw %}

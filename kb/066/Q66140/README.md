@@ -6,6 +6,8 @@ permalink: /kb/066/Q66140/
 
 ## Q66140: How to Change User Interface Global CONSTants in GENERAL.BI
 
+{% raw %}
+
 	Article: Q66140
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -80,3 +82,5 @@ permalink: /kb/066/Q66140/
 	MAXBUTTON, MAXEDITFIELD, and MAXHOTSPOT. For a description of these
 	constants, see page 533 of the "Microsoft BASIC 7.0: BASIC Language
 	Reference."
+
+{% endraw %}

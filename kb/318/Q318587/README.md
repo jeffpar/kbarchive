@@ -6,6 +6,8 @@ permalink: /kb/318/Q318587/
 
 ## Q318587: Windows NT Server 4.0, Terminal Server Edition SRP Release Notes
 
+{% raw %}
+
 	Article: Q318587
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6
@@ -83,3 +85,5 @@ permalink: /kb/318/Q318587/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104060/
 
 ## Q104060: PC WSPlus: Alarm Pop-Up Dialog Box Is Not Pen Aware
 
+{% raw %}
+
 	Article: Q104060
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -51,3 +53,5 @@ permalink: /kb/104/Q104060/
 	
 	=============================================================================
 	
+
+{% endraw %}

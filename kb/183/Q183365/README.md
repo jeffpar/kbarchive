@@ -6,6 +6,8 @@ permalink: /kb/183/Q183365/
 
 ## Q183365: DRW98: Text in Draw Object Appears Crushed/Overlapping
 
+{% raw %}
+
 	Article: Q183365
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:98
@@ -56,3 +58,5 @@ permalink: /kb/183/Q183365/
 	
 	=============================================================================
 	
+
+{% endraw %}

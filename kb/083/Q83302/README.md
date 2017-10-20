@@ -6,6 +6,8 @@ permalink: /kb/083/Q83302/
 
 ## Q83302: HOWTO: Use the WM_GETDLGCODE Message
 
+{% raw %}
+
 	Article: Q83302
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -221,3 +223,5 @@ permalink: /kb/083/Q83302/
 	
 	=============================================================================
 	
+
+{% endraw %}

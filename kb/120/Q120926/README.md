@@ -6,6 +6,8 @@ permalink: /kb/120/Q120926/
 
 ## Q120926: Visual C++ Vers 2.0 README.WRI, Part 10 Miscellaneous Notes
 
+{% raw %}
+
 	Article: Q120926
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0
@@ -171,3 +173,5 @@ permalink: /kb/120/Q120926/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/296/Q296698/
 
 ## Q296698: FP: Error Message: The Server Could Not Complete Your Request
 
+{% raw %}
+
 	Article: Q296698
 	Product(s): Word Front Page
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/296/Q296698/
 	
 	=============================================================================
 	
+
+{% endraw %}

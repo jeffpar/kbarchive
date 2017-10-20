@@ -6,6 +6,8 @@ permalink: /kb/191/Q191463/
 
 ## Q191463: PRB: Cannot Create Control Array in VB6 DHTML Application
 
+{% raw %}
+
 	Article: Q191463
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -73,3 +75,5 @@ permalink: /kb/191/Q191463/
 	
 	=============================================================================
 	
+
+{% endraw %}

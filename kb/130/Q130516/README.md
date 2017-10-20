@@ -6,6 +6,8 @@ permalink: /kb/130/Q130516/
 
 ## Q130516: How to Modify the Autoexec.bat in Windows 95
 
+{% raw %}
+
 	Article: Q130516
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -69,3 +71,5 @@ permalink: /kb/130/Q130516/
 	
 	=============================================================================
 	
+
+{% endraw %}

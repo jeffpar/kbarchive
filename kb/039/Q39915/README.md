@@ -6,6 +6,8 @@ permalink: /kb/039/Q39915/
 
 ## Q39915: Misleading Information about Linker Options with /link
 
+{% raw %}
+
 	Article: Q39915
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -27,3 +29,5 @@ permalink: /kb/039/Q39915/
 	to pass to the link command line, the /link compile option can be
 	used. The linker option can be given after /link option on the CL
 	command line.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182107/
 
 ## Q182107: XADM: Store Shuts Down When Replicating Public Folders
 
+{% raw %}
+
 	Article: Q182107
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -79,3 +81,5 @@ permalink: /kb/182/Q182107/
 	
 	=============================================================================
 	
+
+{% endraw %}

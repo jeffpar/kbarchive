@@ -6,6 +6,8 @@ permalink: /kb/135/Q135565/
 
 ## Q135565: PRB: HIDE WINDOW ALL Command Affects User-Defined Toolbars
 
+{% raw %}
+
 	Article: Q135565
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -119,3 +121,5 @@ permalink: /kb/135/Q135565/
 	
 	=============================================================================
 	
+
+{% endraw %}

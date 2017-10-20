@@ -6,6 +6,8 @@ permalink: /kb/224/Q224438/
 
 ## Q224438: XADM: Some Information Store Counters Not Updated Properly
 
+{% raw %}
+
 	Article: Q224438
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -90,3 +92,5 @@ permalink: /kb/224/Q224438/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/244/Q244636/
 
 ## Q244636: Intermittent Delays or Missing Domain Option in Logon
 
+{% raw %}
+
 	Article: Q244636
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6
@@ -109,3 +111,5 @@ permalink: /kb/244/Q244636/
 	
 	=============================================================================
 	
+
+{% endraw %}

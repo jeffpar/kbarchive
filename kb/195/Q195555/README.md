@@ -6,6 +6,8 @@ permalink: /kb/195/Q195555/
 
 ## Q195555: Bookshelf: How to Turn Off Sounds and Visual Effects
 
+{% raw %}
+
 	Article: Q195555
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -124,3 +126,5 @@ permalink: /kb/195/Q195555/
 	
 	=============================================================================
 	
+
+{% endraw %}

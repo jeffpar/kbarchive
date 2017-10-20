@@ -6,6 +6,8 @@ permalink: /kb/244/Q244516/
 
 ## Q244516: WD97: Word Stops When Using VBA to Check List Format Properties
 
+{% raw %}
+
 	Article: Q244516
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/244/Q244516/
 	
 	=============================================================================
 	
+
+{% endraw %}

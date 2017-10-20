@@ -6,6 +6,8 @@ permalink: /kb/038/Q38279/
 
 ## Q38279: Long-Integer Array May Give Zero Unless Compiled /d (Debug)
 
+{% raw %}
+
 	Article: Q38279
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -82,3 +84,5 @@ permalink: /kb/038/Q38279/
 	  NVal(i) = NNum(i) / DTemp
 	  PRINT NVal(i); NVal(0); NVal(1); NVal(2)
 	NEXT
+
+{% endraw %}

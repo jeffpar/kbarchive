@@ -6,6 +6,8 @@ permalink: /kb/134/Q134390/
 
 ## Q134390: Windows NT Backup: Cannot Eject Write Protected Tape
 
+{% raw %}
+
 	Article: Q134390
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/134/Q134390/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142262/
 
 ## Q142262: XCLN: Display of Public Folder Summary Causes Error
 
+{% raw %}
+
 	Article: Q142262
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/142/Q142262/
 	
 	=============================================================================
 	
+
+{% endraw %}

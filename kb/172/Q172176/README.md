@@ -6,6 +6,8 @@ permalink: /kb/172/Q172176/
 
 ## Q172176: WD97:How to Sort Files in the File Open and Save As Dialog Boxes
 
+{% raw %}
+
 	Article: Q172176
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -69,3 +71,5 @@ permalink: /kb/172/Q172176/
 	
 	=============================================================================
 	
+
+{% endraw %}

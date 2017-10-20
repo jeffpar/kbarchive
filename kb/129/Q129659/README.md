@@ -6,6 +6,8 @@ permalink: /kb/129/Q129659/
 
 ## Q129659: Wrong Port for PCMCIA Modem Shown in Modem Properties
 
+{% raw %}
+
 	Article: Q129659
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -52,3 +54,5 @@ permalink: /kb/129/Q129659/
 	
 	=============================================================================
 	
+
+{% endraw %}

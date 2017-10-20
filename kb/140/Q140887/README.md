@@ -6,6 +6,8 @@ permalink: /kb/140/Q140887/
 
 ## Q140887: VB Grid Custom Control: Text Limited to 255 Characters
 
+{% raw %}
+
 	Article: Q140887
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -41,3 +43,5 @@ permalink: /kb/140/Q140887/
 	
 	=============================================================================
 	
+
+{% endraw %}

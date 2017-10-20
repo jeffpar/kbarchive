@@ -6,6 +6,8 @@ permalink: /kb/097/Q97489/
 
 ## Q97489: MS-DOS Err Msg: Error Updating Version Table in MSDOS.SYS
 
+{% raw %}
+
 	Article: Q97489
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -47,3 +49,5 @@ permalink: /kb/097/Q97489/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131648/
 
 ## Q131648: Description of Percent Complete Values in Disk Defragmenter
 
+{% raw %}
+
 	Article: Q131648
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/131/Q131648/
 	
 	=============================================================================
 	
+
+{% endraw %}

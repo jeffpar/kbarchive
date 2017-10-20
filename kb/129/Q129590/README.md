@@ -6,6 +6,8 @@ permalink: /kb/129/Q129590/
 
 ## Q129590: Multimedia Strauss: BETA Misprinted Under Copyright Text
 
+{% raw %}
+
 	Article: Q129590
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -44,3 +46,5 @@ permalink: /kb/129/Q129590/
 	
 	=============================================================================
 	
+
+{% endraw %}

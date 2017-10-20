@@ -6,6 +6,8 @@ permalink: /kb/149/Q149262/
 
 ## Q149262: XCLN: Rights to Folder Require Reviewer Rights on Mailbox
 
+{% raw %}
+
 	Article: Q149262
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -61,3 +63,5 @@ permalink: /kb/149/Q149262/
 	
 	=============================================================================
 	
+
+{% endraw %}

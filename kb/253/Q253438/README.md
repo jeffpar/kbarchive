@@ -6,6 +6,8 @@ permalink: /kb/253/Q253438/
 
 ## Q253438: Access Violation While Trying to Display File Properties
 
+{% raw %}
+
 	Article: Q253438
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/253/Q253438/
 	
 	=============================================================================
 	
+
+{% endraw %}

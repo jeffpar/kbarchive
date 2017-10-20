@@ -6,6 +6,8 @@ permalink: /kb/231/Q231934/
 
 ## Q231934: Cannot Connect to a Local Share Using Cached Credentials
 
+{% raw %}
+
 	Article: Q231934
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5
@@ -126,3 +128,5 @@ permalink: /kb/231/Q231934/
 	
 	=============================================================================
 	
+
+{% endraw %}

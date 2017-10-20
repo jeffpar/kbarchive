@@ -6,6 +6,8 @@ permalink: /kb/155/Q155545/
 
 ## Q155545: XGEN: First Customer Contact Form for Exchange
 
+{% raw %}
+
 	Article: Q155545
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -100,3 +102,5 @@ permalink: /kb/155/Q155545/
 	
 	=============================================================================
 	
+
+{% endraw %}

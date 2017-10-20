@@ -6,6 +6,8 @@ permalink: /kb/160/Q160137/
 
 ## Q160137: Invalid DNS Server Address Slows Name Resolution on RAS Client
 
+{% raw %}
+
 	Article: Q160137
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.51,4.0
@@ -96,3 +98,5 @@ permalink: /kb/160/Q160137/
 	
 	=============================================================================
 	
+
+{% endraw %}

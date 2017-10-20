@@ -6,6 +6,8 @@ permalink: /kb/031/Q31532/
 
 ## Q31532: MASM 5.10 EXT.DOC: GetCursor - Returns Current Cursor Position
 
+{% raw %}
+
 	Article: Q31532
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -31,3 +33,5 @@ permalink: /kb/031/Q31532/
 	void pascal GetCursor (px, py);
 	COL  far *px;
 	LINE far *py;
+
+{% endraw %}

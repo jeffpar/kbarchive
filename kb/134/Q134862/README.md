@@ -6,6 +6,8 @@ permalink: /kb/134/Q134862/
 
 ## Q134862: Compressed Drive Not Mounted When Windows 95 Restarts
 
+{% raw %}
+
 	Article: Q134862
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -66,3 +68,5 @@ permalink: /kb/134/Q134862/
 	
 	=============================================================================
 	
+
+{% endraw %}

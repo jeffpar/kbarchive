@@ -6,6 +6,8 @@ permalink: /kb/132/Q132064/
 
 ## Q132064: REGEDIT May Not Be Able to Import Registry with Large Keys
 
+{% raw %}
+
 	Article: Q132064
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -79,3 +81,5 @@ permalink: /kb/132/Q132064/
 	
 	=============================================================================
 	
+
+{% endraw %}

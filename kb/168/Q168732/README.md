@@ -6,6 +6,8 @@ permalink: /kb/168/Q168732/
 
 ## Q168732: WD97: Clicking UNC Hyperlink to HTML File Starts Web Browser
 
+{% raw %}
+
 	Article: Q168732
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/168/Q168732/
 	
 	=============================================================================
 	
+
+{% endraw %}

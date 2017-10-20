@@ -6,6 +6,8 @@ permalink: /kb/237/Q237517/
 
 ## Q237517: Err Msg: Enc2000 Caused a Stack Fault in Module Kernel32.dll
 
+{% raw %}
+
 	Article: Q237517
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/237/Q237517/
 	
 	=============================================================================
 	
+
+{% endraw %}

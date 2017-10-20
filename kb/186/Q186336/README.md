@@ -6,6 +6,8 @@ permalink: /kb/186/Q186336/
 
 ## Q186336: INFO: Unattend.txt Options That Are Used During an Unattended Up
 
+{% raw %}
+
 	Article: Q186336
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/186/Q186336/
 	
 	=============================================================================
 	
+
+{% endraw %}

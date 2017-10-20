@@ -6,6 +6,8 @@ permalink: /kb/149/Q149672/
 
 ## Q149672: PCMSVC32 Reports Incorrect Job Status for Completed Jobs
 
+{% raw %}
+
 	Article: Q149672
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -61,3 +63,5 @@ permalink: /kb/149/Q149672/
 	
 	=============================================================================
 	
+
+{% endraw %}

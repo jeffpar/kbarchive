@@ -6,6 +6,8 @@ permalink: /kb/120/Q120358/
 
 ## Q120358: Volume Label Lost/Changed After Opening Properties Dialog Box
 
+{% raw %}
+
 	Article: Q120358
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 4.0
@@ -47,3 +49,5 @@ permalink: /kb/120/Q120358/
 	
 	=============================================================================
 	
+
+{% endraw %}

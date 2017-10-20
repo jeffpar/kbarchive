@@ -6,6 +6,8 @@ permalink: /kb/128/Q128250/
 
 ## Q128250: Correct Wallpaper Not Displayed on Remote Workstation
 
+{% raw %}
+
 	Article: Q128250
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -70,3 +72,5 @@ permalink: /kb/128/Q128250/
 	
 	=============================================================================
 	
+
+{% endraw %}

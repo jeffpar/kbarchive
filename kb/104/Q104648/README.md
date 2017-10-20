@@ -6,6 +6,8 @@ permalink: /kb/104/Q104648/
 
 ## Q104648: BUG: NMAKE /V Option Does Not Work in Versions 1.2 and Later
 
+{% raw %}
+
 	Article: Q104648
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.2
@@ -71,3 +73,5 @@ permalink: /kb/104/Q104648/
 	
 	=============================================================================
 	
+
+{% endraw %}

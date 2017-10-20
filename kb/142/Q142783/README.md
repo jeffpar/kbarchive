@@ -6,6 +6,8 @@ permalink: /kb/142/Q142783/
 
 ## Q142783: XCLN: Toolbar Buttons Require Mouse Click to Show Status
 
+{% raw %}
+
 	Article: Q142783
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -44,3 +46,5 @@ permalink: /kb/142/Q142783/
 	
 	=============================================================================
 	
+
+{% endraw %}

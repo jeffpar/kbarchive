@@ -6,6 +6,8 @@ permalink: /kb/081/Q81284/
 
 ## Q81284: Windows Does Not Load With Intel 386 SnapIn
 
+{% raw %}
+
 	Article: Q81284
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -102,3 +104,5 @@ permalink: /kb/081/Q81284/
 	
 	=============================================================================
 	
+
+{% endraw %}

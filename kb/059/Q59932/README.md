@@ -6,6 +6,8 @@ permalink: /kb/059/Q59932/
 
 ## Q59932: Which Mouse Menus Work with Which Version of Lotus
 
+{% raw %}
+
 	Article: Q59932
 	Product(s): See article
 	Version(s): 1.00
@@ -54,3 +56,5 @@ permalink: /kb/059/Q59932/
 	Moving the mouse changes the highlighted command. The right mouse
 	button acts as an ENTER key. Clicking both buttons will return the
 	mouse to the spreadsheet.
+
+{% endraw %}

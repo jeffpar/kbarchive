@@ -6,6 +6,8 @@ permalink: /kb/126/Q126253/
 
 ## Q126253: Scenes 1.0: After Dark 3.0 Causes GP Fault
 
+{% raw %}
+
 	Article: Q126253
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -70,3 +72,5 @@ permalink: /kb/126/Q126253/
 	
 	=============================================================================
 	
+
+{% endraw %}

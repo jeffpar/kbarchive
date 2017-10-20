@@ -6,6 +6,8 @@ permalink: /kb/107/Q107382/
 
 ## Q107382: SNA Server Application Exception
 
+{% raw %}
+
 	Article: Q107382
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -66,3 +68,5 @@ permalink: /kb/107/Q107382/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184320/
 
 ## Q184320: Using PATH_INFO and PATH_TRANSLATED from CGI Applications
 
+{% raw %}
+
 	Article: Q184320
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -76,3 +78,5 @@ permalink: /kb/184/Q184320/
 	
 	=============================================================================
 	
+
+{% endraw %}

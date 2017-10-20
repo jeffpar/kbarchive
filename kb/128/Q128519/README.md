@@ -6,6 +6,8 @@ permalink: /kb/128/Q128519/
 
 ## Q128519: PC Forms: Err Msg: Bad Command Line (on Delivery)
 
+{% raw %}
+
 	Article: Q128519
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0
@@ -112,3 +114,5 @@ permalink: /kb/128/Q128519/
 	
 	=============================================================================
 	
+
+{% endraw %}

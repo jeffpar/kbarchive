@@ -6,6 +6,8 @@ permalink: /kb/321/Q321101/
 
 ## Q321101: COMTI Does Not Support EZACICSE Security Exit as Supplied by IBM
 
+{% raw %}
+
 	Article: Q321101
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -138,3 +140,5 @@ permalink: /kb/321/Q321101/
 	
 	=============================================================================
 	
+
+{% endraw %}

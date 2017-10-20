@@ -6,6 +6,8 @@ permalink: /kb/163/Q163324/
 
 ## Q163324: XCON: Application Protocol Data Unit (APDU) Logs (BF0.LOG)
 
+{% raw %}
+
 	Article: Q163324
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/163/Q163324/
 	
 	=============================================================================
 	
+
+{% endraw %}

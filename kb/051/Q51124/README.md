@@ -6,6 +6,8 @@ permalink: /kb/051/Q51124/
 
 ## Q51124: _arc() Generates Run-Time Error R6003
 
+{% raw %}
+
 	Article: Q51124
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -49,3 +51,5 @@ permalink: /kb/051/Q51124/
 	Microsoft has confirmed this to be a problem in QuickC Versions 2.00
 	and 2.01 and in C Version 5.10. We are researching this problem and
 	will post new information here as it becomes available.
+
+{% endraw %}

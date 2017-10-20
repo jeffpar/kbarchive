@@ -6,6 +6,8 @@ permalink: /kb/279/Q279617/
 
 ## Q279617: MechWarrior 4 Err Msg: Failed To Create Texture...
 
+{% raw %}
+
 	Article: Q279617
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/279/Q279617/
 	
 	=============================================================================
 	
+
+{% endraw %}

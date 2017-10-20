@@ -6,6 +6,8 @@ permalink: /kb/099/Q99483/
 
 ## Q99483: Identical Cards on Server Cause SYS0052 Duplicate Name
 
+{% raw %}
+
 	Article: Q99483
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/099/Q99483/
 	
 	=============================================================================
 	
+
+{% endraw %}

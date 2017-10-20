@@ -6,6 +6,8 @@ permalink: /kb/036/Q36695/
 
 ## Q36695: Warning C4000 Unknown Warning
 
+{% raw %}
+
 	Article: Q36695
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -36,3 +38,5 @@ permalink: /kb/036/Q36695/
 	Please include the smallest possible example of source code which
 	demonstrates the problem when sending the Software Problem Report to
 	Microsoft.
+
+{% endraw %}

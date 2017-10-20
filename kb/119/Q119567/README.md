@@ -6,6 +6,8 @@ permalink: /kb/119/Q119567/
 
 ## Q119567: Cannot Distribute Access 2.0 ODBC Driver with ADT Apps
 
+{% raw %}
+
 	Article: Q119567
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0,97
@@ -54,3 +56,5 @@ permalink: /kb/119/Q119567/
 	
 	=============================================================================
 	
+
+{% endraw %}

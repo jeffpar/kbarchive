@@ -6,6 +6,8 @@ permalink: /kb/255/Q255844/
 
 ## Q255844: Default Document Is Not Compressed When Compression Is Enabled
 
+{% raw %}
+
 	Article: Q255844
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -62,3 +64,5 @@ permalink: /kb/255/Q255844/
 	
 	=============================================================================
 	
+
+{% endraw %}

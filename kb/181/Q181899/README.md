@@ -6,6 +6,8 @@ permalink: /kb/181/Q181899/
 
 ## Q181899: PRB: Multiple E-mail Attachments Cause Error with MSMAPI OCX
 
+{% raw %}
+
 	Article: Q181899
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -143,3 +145,5 @@ permalink: /kb/181/Q181899/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131561/
 
 ## Q131561: Matching User ID and Passwords in WinNT and LAN Manager Domains
 
+{% raw %}
+
 	Article: Q131561
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.5
@@ -60,3 +62,5 @@ permalink: /kb/131/Q131561/
 	
 	=============================================================================
 	
+
+{% endraw %}

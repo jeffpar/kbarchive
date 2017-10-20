@@ -6,6 +6,8 @@ permalink: /kb/152/Q152554/
 
 ## Q152554: XADM: Viewing Event Viewer Files On Other Computers
 
+{% raw %}
+
 	Article: Q152554
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -69,3 +71,5 @@ permalink: /kb/152/Q152554/
 	
 	=============================================================================
 	
+
+{% endraw %}

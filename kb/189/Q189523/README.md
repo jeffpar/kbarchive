@@ -6,6 +6,8 @@ permalink: /kb/189/Q189523/
 
 ## Q189523: Virtual Globe 98 Prompts You to Disconnect from the Internet
 
+{% raw %}
+
 	Article: Q189523
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:1998
@@ -74,3 +76,5 @@ permalink: /kb/189/Q189523/
 	
 	=============================================================================
 	
+
+{% endraw %}

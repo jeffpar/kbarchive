@@ -6,6 +6,8 @@ permalink: /kb/246/Q246838/
 
 ## Q246838: Dr. Watson Error Message When You Start the Spooler Service
 
+{% raw %}
+
 	Article: Q246838
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -151,3 +153,5 @@ permalink: /kb/246/Q246838/
 	
 	=============================================================================
 	
+
+{% endraw %}

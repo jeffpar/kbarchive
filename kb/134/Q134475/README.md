@@ -6,6 +6,8 @@ permalink: /kb/134/Q134475/
 
 ## Q134475: PCI Device Status Shows Error Code 29
 
+{% raw %}
+
 	Article: Q134475
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -83,3 +85,5 @@ permalink: /kb/134/Q134475/
 	
 	=============================================================================
 	
+
+{% endraw %}

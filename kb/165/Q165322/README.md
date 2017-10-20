@@ -6,6 +6,8 @@ permalink: /kb/165/Q165322/
 
 ## Q165322: XCLN: ComboBox Value Is Not Saved Correctly
 
+{% raw %}
+
 	Article: Q165322
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; Win95:4.0,5.0
@@ -51,3 +53,5 @@ permalink: /kb/165/Q165322/
 	
 	=============================================================================
 	
+
+{% endraw %}

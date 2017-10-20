@@ -6,6 +6,8 @@ permalink: /kb/172/Q172596/
 
 ## Q172596: Clip.exe Not Compatible wth Notepad
 
+{% raw %}
+
 	Article: Q172596
 	Product(s): Microsoft Press
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/172/Q172596/
 	
 	=============================================================================
 	
+
+{% endraw %}

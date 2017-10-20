@@ -6,6 +6,8 @@ permalink: /kb/275/Q275742/
 
 ## Q275742: SMS: How to Increase the Size of the SMS Provider Log File
 
+{% raw %}
+
 	Article: Q275742
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -84,3 +86,5 @@ permalink: /kb/275/Q275742/
 	
 	=============================================================================
 	
+
+{% endraw %}

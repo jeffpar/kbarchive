@@ -6,6 +6,8 @@ permalink: /kb/261/Q261083/
 
 ## Q261083: MCM2: Cannot Switch Game Controller During Game Play
 
+{% raw %}
+
 	Article: Q261083
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -51,3 +53,5 @@ permalink: /kb/261/Q261083/
 	
 	=============================================================================
 	
+
+{% endraw %}

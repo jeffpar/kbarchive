@@ -6,6 +6,8 @@ permalink: /kb/147/Q147862/
 
 ## Q147862: MSB Ocean: Listing of Files Installed in Windows
 
+{% raw %}
+
 	Article: Q147862
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -225,3 +227,5 @@ permalink: /kb/147/Q147862/
 	
 	=============================================================================
 	
+
+{% endraw %}

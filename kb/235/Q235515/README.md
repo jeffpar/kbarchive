@@ -6,6 +6,8 @@ permalink: /kb/235/Q235515/
 
 ## Q235515: FIX: Calling IDBInfo::GetKeywords() Causes AV w/ OLE DB Provider
 
+{% raw %}
+
 	Article: Q235515
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.0,2.1,3.5,3.51,3.6,3.7
@@ -66,3 +68,5 @@ permalink: /kb/235/Q235515/
 	
 	=============================================================================
 	
+
+{% endraw %}

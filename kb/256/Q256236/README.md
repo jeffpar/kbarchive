@@ -6,6 +6,8 @@ permalink: /kb/256/Q256236/
 
 ## Q256236: SYSDIFF.INF: Not Included With Resource Kit
 
+{% raw %}
+
 	Article: Q256236
 	Product(s): Microsoft Press
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/256/Q256236/
 	
 	=============================================================================
 	
+
+{% endraw %}

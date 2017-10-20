@@ -6,6 +6,8 @@ permalink: /kb/150/Q150705/
 
 ## Q150705: Using VB4DLL.TXT File to Develop DLLs for Visual Basic
 
+{% raw %}
+
 	Article: Q150705
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -83,3 +85,5 @@ permalink: /kb/150/Q150705/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/106/Q106167/
 
 ## Q106167: Err Msg: Not Enough Server Storage is Available...
 
+{% raw %}
+
 	Article: Q106167
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -96,3 +98,5 @@ permalink: /kb/106/Q106167/
 	
 	=============================================================================
 	
+
+{% endraw %}

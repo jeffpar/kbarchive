@@ -6,6 +6,8 @@ permalink: /kb/196/Q196305/
 
 ## Q196305: XFOR: Error Installing Notes, SNADS, OVVM, GroupWise Connector
 
+{% raw %}
+
 	Article: Q196305
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -104,3 +106,5 @@ permalink: /kb/196/Q196305/
 	
 	=============================================================================
 	
+
+{% endraw %}

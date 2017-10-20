@@ -6,6 +6,8 @@ permalink: /kb/115/Q115192/
 
 ## Q115192: ADT2: Error in Help Files for Custom Control Refresh Method
 
+{% raw %}
+
 	Article: Q115192
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -74,3 +76,5 @@ permalink: /kb/115/Q115192/
 	
 	=============================================================================
 	
+
+{% endraw %}

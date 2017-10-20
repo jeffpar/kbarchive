@@ -6,6 +6,8 @@ permalink: /kb/089/Q89191/
 
 ## Q89191: File Manager Displaying Garbled Information
 
+{% raw %}
+
 	Article: Q89191
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/089/Q89191/
 	
 	=============================================================================
 	
+
+{% endraw %}

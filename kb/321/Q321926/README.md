@@ -6,6 +6,8 @@ permalink: /kb/321/Q321926/
 
 ## Q321926: Security Override Fails If UserID or Password Is Longer than 10
 
+{% raw %}
+
 	Article: Q321926
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/321/Q321926/
 	
 	=============================================================================
 	
+
+{% endraw %}

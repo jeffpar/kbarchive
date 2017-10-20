@@ -6,6 +6,8 @@ permalink: /kb/117/Q117197/
 
 ## Q117197: PC Adm: Deleting Users w/IMPORT Leaves Orphaned Folders, .IDXs
 
+{% raw %}
+
 	Article: Q117197
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -49,3 +51,5 @@ permalink: /kb/117/Q117197/
 	
 	=============================================================================
 	
+
+{% endraw %}

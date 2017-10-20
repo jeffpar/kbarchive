@@ -6,6 +6,8 @@ permalink: /kb/247/Q247293/
 
 ## Q247293: SMS: Server Discovery DDRs Flood Sites
 
+{% raw %}
+
 	Article: Q247293
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -70,3 +72,5 @@ permalink: /kb/247/Q247293/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164262/
 
 ## Q164262: Windows Explorer Refresh Changes Current Selection
 
+{% raw %}
+
 	Article: Q164262
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -50,3 +52,5 @@ permalink: /kb/164/Q164262/
 	
 	=============================================================================
 	
+
+{% endraw %}

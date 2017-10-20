@@ -6,6 +6,8 @@ permalink: /kb/165/Q165402/
 
 ## Q165402: Windows 95 Update to Encrypt Passwords in Memory
 
+{% raw %}
+
 	Article: Q165402
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -219,3 +221,5 @@ permalink: /kb/165/Q165402/
 	
 	=============================================================================
 	
+
+{% endraw %}

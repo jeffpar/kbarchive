@@ -6,6 +6,8 @@ permalink: /kb/152/Q152922/
 
 ## Q152922: XGEN: SMTP Addresses Don't Extract from MAC Mail to Exchange PAB
 
+{% raw %}
+
 	Article: Q152922
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/152/Q152922/
 	
 	=============================================================================
 	
+
+{% endraw %}

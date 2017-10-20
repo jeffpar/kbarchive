@@ -6,6 +6,8 @@ permalink: /kb/178/Q178354/
 
 ## Q178354: INFO: How Setup Wizard and PDW Use Dependency Files
 
+{% raw %}
+
 	Article: Q178354
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -359,3 +361,5 @@ permalink: /kb/178/Q178354/
 	
 	=============================================================================
 	
+
+{% endraw %}

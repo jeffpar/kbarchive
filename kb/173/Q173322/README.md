@@ -6,6 +6,8 @@ permalink: /kb/173/Q173322/
 
 ## Q173322: How to Disable Autochk During a Windows NT Reboot
 
+{% raw %}
+
 	Article: Q173322
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/173/Q173322/
 	
 	=============================================================================
 	
+
+{% endraw %}

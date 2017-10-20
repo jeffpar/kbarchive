@@ -6,6 +6,8 @@ permalink: /kb/140/Q140526/
 
 ## Q140526: WinRUICleanup Sets Incorrect Return Code
 
+{% raw %}
+
 	Article: Q140526
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -66,3 +68,5 @@ permalink: /kb/140/Q140526/
 	
 	=============================================================================
 	
+
+{% endraw %}

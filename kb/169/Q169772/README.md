@@ -6,6 +6,8 @@ permalink: /kb/169/Q169772/
 
 ## Q169772: PRB: VB5 .OCX Property Missing from VB4 Properties Window
 
+{% raw %}
+
 	Article: Q169772
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -122,3 +124,5 @@ permalink: /kb/169/Q169772/
 	
 	=============================================================================
 	
+
+{% endraw %}

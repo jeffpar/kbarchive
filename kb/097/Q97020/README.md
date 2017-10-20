@@ -6,6 +6,8 @@ permalink: /kb/097/Q97020/
 
 ## Q97020: OS_VERSION Points to Incorrect COMMAND.COM on Novell
 
+{% raw %}
+
 	Article: Q97020
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -88,3 +90,5 @@ permalink: /kb/097/Q97020/
 	
 	=============================================================================
 	
+
+{% endraw %}

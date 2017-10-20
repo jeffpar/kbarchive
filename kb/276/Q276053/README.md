@@ -6,6 +6,8 @@ permalink: /kb/276/Q276053/
 
 ## Q276053: 5250 Applet Uses Wrong Conversion Table for Host Code Page 870
 
+{% raw %}
+
 	Article: Q276053
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -77,3 +79,5 @@ permalink: /kb/276/Q276053/
 	
 	=============================================================================
 	
+
+{% endraw %}

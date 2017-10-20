@@ -6,6 +6,8 @@ permalink: /kb/194/Q194910/
 
 ## Q194910: FIX: Cannot Set ImageList for ImageCombo at Design on MDIForm
 
+{% raw %}
+
 	Article: Q194910
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -122,3 +124,5 @@ permalink: /kb/194/Q194910/
 	
 	=============================================================================
 	
+
+{% endraw %}

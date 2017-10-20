@@ -6,6 +6,8 @@ permalink: /kb/143/Q143177/
 
 ## Q143177: FTP Server MIB Definitions
 
+{% raw %}
+
 	Article: Q143177
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -95,3 +97,5 @@ permalink: /kb/143/Q143177/
 	
 	=============================================================================
 	
+
+{% endraw %}

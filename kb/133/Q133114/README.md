@@ -6,6 +6,8 @@ permalink: /kb/133/Q133114/
 
 ## Q133114: No Files Found Accessing NetWare Shares from WFW Through GSNW
 
+{% raw %}
+
 	Article: Q133114
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11; winnt:3.5,3.51
@@ -61,3 +63,5 @@ permalink: /kb/133/Q133114/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182882/
 
 ## Q182882: Upgrading SNA 3.0 To 4.0 May Cause Failure On Mfc42u.dll File
 
+{% raw %}
+
 	Article: Q182882
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -50,3 +52,5 @@ permalink: /kb/182/Q182882/
 	
 	=============================================================================
 	
+
+{% endraw %}

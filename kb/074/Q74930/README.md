@@ -6,6 +6,8 @@ permalink: /kb/074/Q74930/
 
 ## Q74930: America Online AOL Command Hangs with MS-DOS 5 and later
 
+{% raw %}
+
 	Article: Q74930
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -62,3 +64,5 @@ permalink: /kb/074/Q74930/
 	
 	=============================================================================
 	
+
+{% endraw %}

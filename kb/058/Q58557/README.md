@@ -6,6 +6,8 @@ permalink: /kb/058/Q58557/
 
 ## Q58557: Mac Hyp: GetHandle Gets a Handle to a Resource from a Message
 
+{% raw %}
+
 	Article: Q58557
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -55,3 +57,5 @@ permalink: /kb/058/Q58557/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167808/
 
 ## Q167808: SMS: Unable to Install or Verify NetWare Logon Servers
 
+{% raw %}
+
 	Article: Q167808
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -110,3 +112,5 @@ permalink: /kb/167/Q167808/
 	
 	=============================================================================
 	
+
+{% endraw %}

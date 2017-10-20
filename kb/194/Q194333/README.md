@@ -6,6 +6,8 @@ permalink: /kb/194/Q194333/
 
 ## Q194333: Event ID 2510: Unable to Map Error Code 1909
 
+{% raw %}
+
 	Article: Q194333
 	Product(s): Microsoft Windows NT
 	Version(s): Windows:95,98;WinNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/194/Q194333/
 	
 	=============================================================================
 	
+
+{% endraw %}

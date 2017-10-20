@@ -6,6 +6,8 @@ permalink: /kb/129/Q129262/
 
 ## Q129262: Fax Transmissions Fail with DSI Scout Plus Fax/Modem
 
+{% raw %}
+
 	Article: Q129262
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/129/Q129262/
 	
 	=============================================================================
 	
+
+{% endraw %}

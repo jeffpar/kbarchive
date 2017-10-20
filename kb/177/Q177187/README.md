@@ -6,6 +6,8 @@ permalink: /kb/177/Q177187/
 
 ## Q177187: BUG: Stored Procedures Cannot Process NULL Parameters from VB
 
+{% raw %}
+
 	Article: Q177187
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -144,3 +146,5 @@ permalink: /kb/177/Q177187/
 	
 	=============================================================================
 	
+
+{% endraw %}

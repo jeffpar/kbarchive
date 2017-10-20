@@ -6,6 +6,8 @@ permalink: /kb/155/Q155292/
 
 ## Q155292: FIX: Destructor Not Called When DEBUG_NEW Is Defined
 
+{% raw %}
+
 	Article: Q155292
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0
@@ -117,3 +119,5 @@ permalink: /kb/155/Q155292/
 	
 	=============================================================================
 	
+
+{% endraw %}

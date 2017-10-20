@@ -6,6 +6,8 @@ permalink: /kb/150/Q150108/
 
 ## Q150108: User in 15 or More Groups Can't Connect to RCMD Service
 
+{% raw %}
+
 	Article: Q150108
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -75,3 +77,5 @@ permalink: /kb/150/Q150108/
 	
 	=============================================================================
 	
+
+{% endraw %}

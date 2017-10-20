@@ -6,6 +6,8 @@ permalink: /kb/036/Q36901/
 
 ## Q36901: Numerical Calculations and Loops Are Faster with Integers
 
+{% raw %}
+
 	Article: Q36901
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -55,3 +57,5 @@ permalink: /kb/036/Q36901/
 	x3 = TIMER
 	PRINT "default loop ="; x2 - x1
 	PRINT "integer loop  ="; x3 - x2
+
+{% endraw %}

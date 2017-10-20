@@ -6,6 +6,8 @@ permalink: /kb/157/Q157117/
 
 ## Q157117: RegSaveKey Returns Error 112
 
+{% raw %}
+
 	Article: Q157117
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -53,3 +55,5 @@ permalink: /kb/157/Q157117/
 	
 	=============================================================================
 	
+
+{% endraw %}

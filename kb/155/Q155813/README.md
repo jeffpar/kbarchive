@@ -6,6 +6,8 @@ permalink: /kb/155/Q155813/
 
 ## Q155813: XADM: Simplified Chinese MS Mail Connector Corrupts Messages
 
+{% raw %}
+
 	Article: Q155813
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/155/Q155813/
 	
 	=============================================================================
 	
+
+{% endraw %}

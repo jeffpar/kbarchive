@@ -6,6 +6,8 @@ permalink: /kb/130/Q130939/
 
 ## Q130939: Allowing Macintosh Connection to LAN Manager BDC as Guest
 
+{% raw %}
+
 	Article: Q130939
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -64,3 +66,5 @@ permalink: /kb/130/Q130939/
 	
 	=============================================================================
 	
+
+{% endraw %}

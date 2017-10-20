@@ -6,6 +6,8 @@ permalink: /kb/224/Q224514/
 
 ## Q224514: SBS Err Msg: No Email Profile Was Found for the Current User...
 
+{% raw %}
+
 	Article: Q224514
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a
@@ -60,3 +62,5 @@ permalink: /kb/224/Q224514/
 	
 	=============================================================================
 	
+
+{% endraw %}

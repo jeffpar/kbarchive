@@ -6,6 +6,8 @@ permalink: /kb/124/Q124796/
 
 ## Q124796: DHCP Client Does Not Support Domain Name Option
 
+{% raw %}
+
 	Article: Q124796
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -46,3 +48,5 @@ permalink: /kb/124/Q124796/
 	
 	=============================================================================
 	
+
+{% endraw %}

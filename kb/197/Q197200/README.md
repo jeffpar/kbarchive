@@ -6,6 +6,8 @@ permalink: /kb/197/Q197200/
 
 ## Q197200: WD97: &quot;Shrink to Fit&quot; Repaginates Document Several Times
 
+{% raw %}
+
 	Article: Q197200
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -52,3 +54,5 @@ permalink: /kb/197/Q197200/
 	
 	=============================================================================
 	
+
+{% endraw %}

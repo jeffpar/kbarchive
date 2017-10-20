@@ -6,6 +6,8 @@ permalink: /kb/117/Q117509/
 
 ## Q117509: Windows 95 Setup Err Msg: The Path Is Invalid
 
+{% raw %}
+
 	Article: Q117509
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -67,3 +69,5 @@ permalink: /kb/117/Q117509/
 	
 	=============================================================================
 	
+
+{% endraw %}

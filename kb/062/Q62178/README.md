@@ -6,6 +6,8 @@ permalink: /kb/062/Q62178/
 
 ## Q62178: L2025: B&#36;VWINI, B&#36;GRPRST, Symbols Multiply Defined
 
+{% raw %}
+
 	Article: Q62178
 	Product(s): See article
 	Version(s): 6.00
@@ -35,3 +37,5 @@ permalink: /kb/062/Q62178/
 	
 	Microsoft has confirmed this to be a problem in C version 6.00. This
 	problem was corrected in C version 6.00a.
+
+{% endraw %}

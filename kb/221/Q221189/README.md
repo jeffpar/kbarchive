@@ -6,6 +6,8 @@ permalink: /kb/221/Q221189/
 
 ## Q221189: HOWTO: Retrieve a Resultset from Oracle Stored Procedures
 
+{% raw %}
+
 	Article: Q221189
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -203,3 +205,5 @@ permalink: /kb/221/Q221189/
 	
 	=============================================================================
 	
+
+{% endraw %}

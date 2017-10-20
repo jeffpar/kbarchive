@@ -6,6 +6,8 @@ permalink: /kb/118/Q118461/
 
 ## Q118461: Ancient Lands: TROUBLE.TXT Contents
 
+{% raw %}
+
 	Article: Q118461
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -320,3 +322,5 @@ permalink: /kb/118/Q118461/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66858/
 
 ## Q66858: IdleWild Drop Out Screen Saver and Radius Two-Page Display
 
+{% raw %}
+
 	Article: Q66858
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -32,3 +34,5 @@ permalink: /kb/066/Q66858/
 	
 	=============================================================================
 	
+
+{% endraw %}

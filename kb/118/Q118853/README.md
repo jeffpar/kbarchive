@@ -6,6 +6,8 @@ permalink: /kb/118/Q118853/
 
 ## Q118853: PC Mac: Incorrect Extended Characters Displayed in Templates
 
+{% raw %}
+
 	Article: Q118853
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -72,3 +74,5 @@ permalink: /kb/118/Q118853/
 	
 	=============================================================================
 	
+
+{% endraw %}

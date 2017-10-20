@@ -6,6 +6,8 @@ permalink: /kb/142/Q142037/
 
 ## Q142037: SNA Server Fails to Release Memory in SNA TCP/IP Interface DLL
 
+{% raw %}
+
 	Article: Q142037
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11
@@ -120,3 +122,5 @@ permalink: /kb/142/Q142037/
 	
 	=============================================================================
 	
+
+{% endraw %}

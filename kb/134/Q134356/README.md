@@ -6,6 +6,8 @@ permalink: /kb/134/Q134356/
 
 ## Q134356: Error Message: General Failure in Microsoft Transport
 
+{% raw %}
+
 	Article: Q134356
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/134/Q134356/
 	
 	=============================================================================
 	
+
+{% endraw %}

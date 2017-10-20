@@ -6,6 +6,8 @@ permalink: /kb/155/Q155190/
 
 ## Q155190: PRB: Functions of the VC++ WPL May Not Respond as Expected
 
+{% raw %}
+
 	Article: Q155190
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -61,3 +63,5 @@ permalink: /kb/155/Q155190/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/114/Q114980/
 
 ## Q114980: FIX: Disabled DDX Radio Button Causes Infinite Loop
 
+{% raw %}
+
 	Article: Q114980
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0
@@ -122,15 +124,15 @@ permalink: /kb/114/Q114980/
 	
 	Remember to replace the following lines in your CDialog::DoDataExchange():
 	
-	        //{ {AFX_DATA_MAP(CMyDialog)
+	        //{{AFX_DATA_MAP(CMyDialog)
 	        DDX_Radio(pDX, IDC_RADIO1, m_iRadio);
-	        //} }AFX_DATA_MAP
+	        //}}AFX_DATA_MAP
 	
 	with:
 	
-	        //{ {AFX_DATA_MAP(CMyDialog)
+	        //{{AFX_DATA_MAP(CMyDialog)
 	        DDX_MyRadio(pDX, IDC_RADIO1, m_iRadio);
-	        //} }AFX_DATA_MAP
+	        //}}AFX_DATA_MAP
 	
 	Additional query words: 1.00 1.50 2.00 2.10 2.50 hang kbSweptVC600
 	
@@ -143,3 +145,5 @@ permalink: /kb/114/Q114980/
 	
 	=============================================================================
 	
+
+{% endraw %}

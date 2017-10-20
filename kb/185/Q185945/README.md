@@ -6,6 +6,8 @@ permalink: /kb/185/Q185945/
 
 ## Q185945: AV in win32k!HMMarkObjectDestroy in Japanese and Korean WinNT
 
+{% raw %}
+
 	Article: Q185945
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -104,3 +106,5 @@ permalink: /kb/185/Q185945/
 	
 	=============================================================================
 	
+
+{% endraw %}

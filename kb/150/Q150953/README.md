@@ -6,6 +6,8 @@ permalink: /kb/150/Q150953/
 
 ## Q150953: Nwuser.exe Send Function Truncates Messages to 38 Characters
 
+{% raw %}
+
 	Article: Q150953
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -119,3 +121,5 @@ permalink: /kb/150/Q150953/
 	
 	=============================================================================
 	
+
+{% endraw %}

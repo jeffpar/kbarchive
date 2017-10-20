@@ -6,6 +6,8 @@ permalink: /kb/130/Q130943/
 
 ## Q130943: Cannot Connect to NCP Server Without SAP Advertising Enabled
 
+{% raw %}
+
 	Article: Q130943
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): Win2000:95; winnt:3.51,4.0
@@ -120,3 +122,5 @@ permalink: /kb/130/Q130943/
 	
 	=============================================================================
 	
+
+{% endraw %}

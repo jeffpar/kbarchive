@@ -6,6 +6,8 @@ permalink: /kb/067/Q67703/
 
 ## Q67703: Setup Does Not Detect That Windows 3.0 Is Already Installed
 
+{% raw %}
+
 	Article: Q67703
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -49,3 +51,5 @@ permalink: /kb/067/Q67703/
 	
 	=============================================================================
 	
+
+{% endraw %}

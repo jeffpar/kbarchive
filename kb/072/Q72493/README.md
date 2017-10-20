@@ -6,6 +6,8 @@ permalink: /kb/072/Q72493/
 
 ## Q72493: BUG: Complex Graphics Image Partially Printed
 
+{% raw %}
+
 	Article: Q72493
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -59,3 +61,5 @@ permalink: /kb/072/Q72493/
 	
 	=============================================================================
 	
+
+{% endraw %}

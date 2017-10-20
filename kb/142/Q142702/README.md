@@ -6,6 +6,8 @@ permalink: /kb/142/Q142702/
 
 ## Q142702: IIS Err Msg: Authentication Is Required For This Document
 
+{% raw %}
+
 	Article: Q142702
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/142/Q142702/
 	
 	=============================================================================
 	
+
+{% endraw %}

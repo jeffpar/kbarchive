@@ -6,6 +6,8 @@ permalink: /kb/112/Q112665/
 
 ## Q112665: UPDATE.EXE Starts Setup Help If Space Exists in Directory Path
 
+{% raw %}
+
 	Article: Q112665
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5
@@ -68,3 +70,5 @@ permalink: /kb/112/Q112665/
 	
 	=============================================================================
 	
+
+{% endraw %}

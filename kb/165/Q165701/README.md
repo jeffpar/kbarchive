@@ -6,6 +6,8 @@ permalink: /kb/165/Q165701/
 
 ## Q165701: Exiting Manager Causes Access Violation If No Servers Running
 
+{% raw %}
+
 	Article: Q165701
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/165/Q165701/
 	
 	=============================================================================
 	
+
+{% endraw %}

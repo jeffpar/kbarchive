@@ -6,6 +6,8 @@ permalink: /kb/109/Q109254/
 
 ## Q109254: CONN: Guest Access to the MACGATE Volume Not Recommended
 
+{% raw %}
+
 	Article: Q109254
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -44,3 +46,5 @@ permalink: /kb/109/Q109254/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163643/
 
 ## Q163643: XFOR: Notifications not Delivered to Public Folder
 
+{% raw %}
+
 	Article: Q163643
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -44,3 +46,5 @@ permalink: /kb/163/Q163643/
 	
 	=============================================================================
 	
+
+{% endraw %}

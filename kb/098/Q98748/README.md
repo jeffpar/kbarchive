@@ -6,6 +6,8 @@ permalink: /kb/098/Q98748/
 
 ## Q98748: How to Use the GETDIR() Function in FoxPro 2.5 and Later
 
+{% raw %}
+
 	Article: Q98748
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.5,2.5a; WINDOWS:2.5,2.5a,3.0,3.0b,5.0,5.0a,6.0
@@ -66,3 +68,5 @@ permalink: /kb/098/Q98748/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/221/Q221774/
 
 ## Q221774: Combat FS: Crosshairs Turn Black or Appear as a Black Box
 
+{% raw %}
+
 	Article: Q221774
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -74,3 +76,5 @@ permalink: /kb/221/Q221774/
 	
 	=============================================================================
 	
+
+{% endraw %}

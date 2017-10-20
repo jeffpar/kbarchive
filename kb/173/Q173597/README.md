@@ -6,6 +6,8 @@ permalink: /kb/173/Q173597/
 
 ## Q173597: XCLN: Migrating PAB Entries From Microsoft
 
+{% raw %}
+
 	Article: Q173597
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5; :8.0,8.01,8.02,8.03
@@ -70,3 +72,5 @@ permalink: /kb/173/Q173597/
 	
 	=============================================================================
 	
+
+{% endraw %}

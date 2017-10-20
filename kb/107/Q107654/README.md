@@ -6,6 +6,8 @@ permalink: /kb/107/Q107654/
 
 ## Q107654: Writer: Gray and Light Blue Text Don't Print on Epson
 
+{% raw %}
+
 	Article: Q107654
 	Product(s): Microsoft Home Kids Products
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/107/Q107654/
 	
 	=============================================================================
 	
+
+{% endraw %}

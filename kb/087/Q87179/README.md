@@ -6,6 +6,8 @@ permalink: /kb/087/Q87179/
 
 ## Q87179: PROFS: Command-Line Options to Solve Gateway Problems
 
+{% raw %}
+
 	Article: Q87179
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -121,3 +123,5 @@ permalink: /kb/087/Q87179/
 	
 	=============================================================================
 	
+
+{% endraw %}

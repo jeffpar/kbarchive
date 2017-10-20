@@ -6,6 +6,8 @@ permalink: /kb/038/Q38806/
 
 ## Q38806: Error L2002 Fixup Overflow Near Number...
 
+{% raw %}
+
 	Article: Q38806
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -78,3 +80,5 @@ permalink: /kb/038/Q38806/
 	Using the linker switch /CO twice can cause this. For example, when
 	LINK is invoked with /CO when a LINK environment variable is also set
 	to /CO, then this situation results.
+
+{% endraw %}

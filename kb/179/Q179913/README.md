@@ -6,6 +6,8 @@ permalink: /kb/179/Q179913/
 
 ## Q179913: PRB: Unexpected Behavior with FoxPro 2.x Database Using DBCombo
 
+{% raw %}
+
 	Article: Q179913
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -107,3 +109,5 @@ permalink: /kb/179/Q179913/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185933/
 
 ## Q185933: XADM: Directory Service May Stop Unexpectedly During Exception H
 
+{% raw %}
+
 	Article: Q185933
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -109,3 +111,5 @@ permalink: /kb/185/Q185933/
 	
 	=============================================================================
 	
+
+{% endraw %}

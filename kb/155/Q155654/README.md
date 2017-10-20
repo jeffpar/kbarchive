@@ -6,6 +6,8 @@ permalink: /kb/155/Q155654/
 
 ## Q155654: Monster Trucks: Cannot Switch to Full Screen When Running Word
 
+{% raw %}
+
 	Article: Q155654
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -54,3 +56,5 @@ permalink: /kb/155/Q155654/
 	
 	=============================================================================
 	
+
+{% endraw %}

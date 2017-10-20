@@ -6,6 +6,8 @@ permalink: /kb/198/Q198538/
 
 ## Q198538: DocMgrEx.exe Assoc Multiple File Extensions w/1 Doc Type
 
+{% raw %}
+
 	Article: Q198538
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -126,3 +128,5 @@ permalink: /kb/198/Q198538/
 	
 	=============================================================================
 	
+
+{% endraw %}

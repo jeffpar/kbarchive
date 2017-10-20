@@ -6,6 +6,8 @@ permalink: /kb/103/Q103217/
 
 ## Q103217: SAMPLE: Synchronizing Applications with CD Audio
 
+{% raw %}
+
 	Article: Q103217
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -86,3 +88,5 @@ permalink: /kb/103/Q103217/
 	
 	=============================================================================
 	
+
+{% endraw %}

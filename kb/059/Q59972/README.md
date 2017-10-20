@@ -6,6 +6,8 @@ permalink: /kb/059/Q59972/
 
 ## Q59972: Mac Hyp: Getting a Macintosh Resource from a Message
 
+{% raw %}
+
 	Article: Q59972
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -56,3 +58,5 @@ permalink: /kb/059/Q59972/
 	
 	=============================================================================
 	
+
+{% endraw %}

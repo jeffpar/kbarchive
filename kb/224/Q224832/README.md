@@ -6,6 +6,8 @@ permalink: /kb/224/Q224832/
 
 ## Q224832: Error Message: Unable to Display Find Tab (177)
 
+{% raw %}
+
 	Article: Q224832
 	Product(s): Microsoft Windows NT
 	Version(s): 2,2.1,2.5,4.0 SP4
@@ -84,3 +86,5 @@ permalink: /kb/224/Q224832/
 	
 	=============================================================================
 	
+
+{% endraw %}

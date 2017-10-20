@@ -6,6 +6,8 @@ permalink: /kb/074/Q74695/
 
 ## Q74695: AdMenu.exe Adds Items to Sys Menus of All Applications
 
+{% raw %}
+
 	Article: Q74695
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -72,3 +74,5 @@ permalink: /kb/074/Q74695/
 	
 	=============================================================================
 	
+
+{% endraw %}

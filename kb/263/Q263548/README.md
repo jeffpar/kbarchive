@@ -6,6 +6,8 @@ permalink: /kb/263/Q263548/
 
 ## Q263548: XADM: Event ID 1016 and 1002 Occurs When Directory Service Fails
 
+{% raw %}
+
 	Article: Q263548
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -88,3 +90,5 @@ permalink: /kb/263/Q263548/
 	
 	=============================================================================
 	
+
+{% endraw %}

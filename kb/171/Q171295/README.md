@@ -6,6 +6,8 @@ permalink: /kb/171/Q171295/
 
 ## Q171295: Fault Tolerant Systems May Encounter Problems with WinNT SP3
 
+{% raw %}
+
 	Article: Q171295
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -118,3 +120,5 @@ permalink: /kb/171/Q171295/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195235/
 
 ## Q195235: BUG: Caret Disappears After Tabbing From a Windowless TextBox
 
+{% raw %}
+
 	Article: Q195235
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -97,3 +99,5 @@ permalink: /kb/195/Q195235/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84183/
 
 ## Q84183: Error Code 3 Logging into LAN Manager 2.0 in Windows
 
+{% raw %}
+
 	Article: Q84183
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/084/Q84183/
 	
 	=============================================================================
 	
+
+{% endraw %}

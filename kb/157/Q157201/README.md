@@ -6,6 +6,8 @@ permalink: /kb/157/Q157201/
 
 ## Q157201: WD97: Word 97 RTF Document Opens Blank in WordPerfect 6.x
 
+{% raw %}
+
 	Article: Q157201
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -91,3 +93,5 @@ permalink: /kb/157/Q157201/
 	
 	=============================================================================
 	
+
+{% endraw %}

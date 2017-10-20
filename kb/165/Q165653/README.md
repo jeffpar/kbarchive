@@ -6,6 +6,8 @@ permalink: /kb/165/Q165653/
 
 ## Q165653: Cannot Open Pipe for NetMN (Access Denied)
 
+{% raw %}
+
 	Article: Q165653
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/165/Q165653/
 	
 	=============================================================================
 	
+
+{% endraw %}

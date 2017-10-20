@@ -6,6 +6,8 @@ permalink: /kb/048/Q48479/
 
 ## Q48479: Correction for BASIC Calling POWER2, &quot;Mixed-Language&quot;: Page 81
 
+{% raw %}
+
 	Article: Q48479
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -47,3 +49,5 @@ permalink: /kb/048/Q48479/
 	
 	The assembly language routine on Page 82 is correct and returns the
 	expected values when you add the above DECLARE in the BASIC code.
+
+{% endraw %}

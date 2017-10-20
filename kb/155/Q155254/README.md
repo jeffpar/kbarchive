@@ -6,6 +6,8 @@ permalink: /kb/155/Q155254/
 
 ## Q155254: Creating a Unique Default Home Page in a Different Directory
 
+{% raw %}
+
 	Article: Q155254
 	Product(s): Internet Information Server
 	Version(s): 1.0 2.0
@@ -64,3 +66,5 @@ permalink: /kb/155/Q155254/
 	
 	=============================================================================
 	
+
+{% endraw %}

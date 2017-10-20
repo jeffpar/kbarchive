@@ -6,6 +6,8 @@ permalink: /kb/058/Q58258/
 
 ## Q58258: Windows Err Msg: This is Not a Valid Help File
 
+{% raw %}
+
 	Article: Q58258
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/058/Q58258/
 	
 	=============================================================================
 	
+
+{% endraw %}

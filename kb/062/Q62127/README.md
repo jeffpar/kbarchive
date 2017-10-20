@@ -6,6 +6,8 @@ permalink: /kb/062/Q62127/
 
 ## Q62127: Mac Hyp: Retrieving Data from a MessageList
 
+{% raw %}
+
 	Article: Q62127
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0
@@ -86,3 +88,5 @@ permalink: /kb/062/Q62127/
 	
 	=============================================================================
 	
+
+{% endraw %}

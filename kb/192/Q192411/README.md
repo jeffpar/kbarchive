@@ -6,6 +6,8 @@ permalink: /kb/192/Q192411/
 
 ## Q192411: Error 605: Cannot Set Port Information
 
+{% raw %}
+
 	Article: Q192411
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6
@@ -83,3 +85,5 @@ permalink: /kb/192/Q192411/
 	
 	=============================================================================
 	
+
+{% endraw %}

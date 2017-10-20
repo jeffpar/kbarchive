@@ -6,6 +6,8 @@ permalink: /kb/305/Q305996/
 
 ## Q305996: MSN Broadband DSL:  How To Determine The Version Of Windows
 
+{% raw %}
+
 	Article: Q305996
 	Product(s): The Microsoft Network
 	Version(s): 4.0
@@ -84,3 +86,5 @@ permalink: /kb/305/Q305996/
 	
 	=============================================================================
 	
+
+{% endraw %}

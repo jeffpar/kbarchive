@@ -6,6 +6,8 @@ permalink: /kb/152/Q152097/
 
 ## Q152097: FP: Files in Discussion Web Are Overwritten
 
+{% raw %}
+
 	Article: Q152097
 	Product(s): Word Front Page
 	Version(s): windows:1.1,97
@@ -69,3 +71,5 @@ permalink: /kb/152/Q152097/
 	
 	=============================================================================
 	
+
+{% endraw %}

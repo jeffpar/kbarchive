@@ -6,6 +6,8 @@ permalink: /kb/168/Q168546/
 
 ## Q168546: Access Violation May Occur After Upgrading to 3.0 SP1
 
+{% raw %}
+
 	Article: Q168546
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -97,3 +99,5 @@ permalink: /kb/168/Q168546/
 	
 	=============================================================================
 	
+
+{% endraw %}

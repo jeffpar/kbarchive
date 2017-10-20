@@ -6,6 +6,8 @@ permalink: /kb/227/Q227025/
 
 ## Q227025: SMS: Windows 2000 Client Is Not Installed with Encrypted Folder
 
+{% raw %}
+
 	Article: Q227025
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -94,3 +96,5 @@ permalink: /kb/227/Q227025/
 	
 	=============================================================================
 	
+
+{% endraw %}

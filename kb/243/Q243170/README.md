@@ -6,6 +6,8 @@ permalink: /kb/243/Q243170/
 
 ## Q243170: Asheron's Call: Text in the Chat Box Contains Unexpected Charact
 
+{% raw %}
+
 	Article: Q243170
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -87,3 +89,5 @@ permalink: /kb/243/Q243170/
 	
 	=============================================================================
 	
+
+{% endraw %}

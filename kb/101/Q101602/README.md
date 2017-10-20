@@ -6,6 +6,8 @@ permalink: /kb/101/Q101602/
 
 ## Q101602: Configuring Windows NT for Replication
 
+{% raw %}
+
 	Article: Q101602
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -203,3 +205,5 @@ permalink: /kb/101/Q101602/
 	
 	=============================================================================
 	
+
+{% endraw %}

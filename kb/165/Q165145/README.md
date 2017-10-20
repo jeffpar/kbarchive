@@ -6,6 +6,8 @@ permalink: /kb/165/Q165145/
 
 ## Q165145: SMS: An Exception 0E Has Occurred at 0028:3204F83 in VxD
 
+{% raw %}
+
 	Article: Q165145
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -72,3 +74,5 @@ permalink: /kb/165/Q165145/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181798/
 
 ## Q181798: XADM: Online Restore May Not Replay Log Files
 
+{% raw %}
+
 	Article: Q181798
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/181/Q181798/
 	
 	=============================================================================
 	
+
+{% endraw %}

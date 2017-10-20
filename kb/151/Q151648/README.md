@@ -6,6 +6,8 @@ permalink: /kb/151/Q151648/
 
 ## Q151648: Future Date Causes Access Violations in SMS Services
 
+{% raw %}
+
 	Article: Q151648
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2,2.0
@@ -64,3 +66,5 @@ permalink: /kb/151/Q151648/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136066/
 
 ## Q136066: PC MAPI: Files Required to Access a Mail for PC Networks PO
 
+{% raw %}
+
 	Article: Q136066
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -64,3 +66,5 @@ permalink: /kb/136/Q136066/
 	
 	=============================================================================
 	
+
+{% endraw %}

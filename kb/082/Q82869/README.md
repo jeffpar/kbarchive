@@ -6,6 +6,8 @@ permalink: /kb/082/Q82869/
 
 ## Q82869: GP Fault in HPPCL5A.DRV Using ATM and Carbon Copy for Windows
 
+{% raw %}
+
 	Article: Q82869
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/082/Q82869/
 	
 	=============================================================================
 	
+
+{% endraw %}

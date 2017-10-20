@@ -6,6 +6,8 @@ permalink: /kb/080/Q80174/
 
 ## Q80174: Cardfile Err Msg: No Modem Connected
 
+{% raw %}
+
 	Article: Q80174
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/080/Q80174/
 	
 	=============================================================================
 	
+
+{% endraw %}

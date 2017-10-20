@@ -6,6 +6,8 @@ permalink: /kb/176/Q176184/
 
 ## Q176184: XFOR: Message Format Differs Between POP and MAPI Clients
 
+{% raw %}
+
 	Article: Q176184
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -63,3 +65,5 @@ permalink: /kb/176/Q176184/
 	
 	=============================================================================
 	
+
+{% endraw %}

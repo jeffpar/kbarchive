@@ -6,6 +6,8 @@ permalink: /kb/299/Q299742/
 
 ## Q299742: Train Simulator: Map Goes Black When You Change Resolution
 
+{% raw %}
+
 	Article: Q299742
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -57,3 +59,5 @@ permalink: /kb/299/Q299742/
 	
 	=============================================================================
 	
+
+{% endraw %}

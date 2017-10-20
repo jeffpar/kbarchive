@@ -6,6 +6,8 @@ permalink: /kb/242/Q242958/
 
 ## Q242958: BETA-HOWTO: Forcing Display of Migration DLL's Incompatible Mess
 
+{% raw %}
+
 	Article: Q242958
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95
@@ -73,3 +75,5 @@ permalink: /kb/242/Q242958/
 	
 	=============================================================================
 	
+
+{% endraw %}

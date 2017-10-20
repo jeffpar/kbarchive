@@ -6,6 +6,8 @@ permalink: /kb/131/Q131000/
 
 ## Q131000: FIX: Application Error If /Og &amp; Virtual Operator Call in Loop
 
+{% raw %}
+
 	Article: Q131000
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -102,3 +104,5 @@ permalink: /kb/131/Q131000/
 	
 	=============================================================================
 	
+
+{% endraw %}

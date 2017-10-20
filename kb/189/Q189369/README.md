@@ -6,6 +6,8 @@ permalink: /kb/189/Q189369/
 
 ## Q189369: Using CD-ROM Drive at MS-DOS Prompt to Reinstall Windows 95
 
+{% raw %}
+
 	Article: Q189369
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -116,3 +118,5 @@ permalink: /kb/189/Q189369/
 	
 	=============================================================================
 	
+
+{% endraw %}

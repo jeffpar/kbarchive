@@ -6,6 +6,8 @@ permalink: /kb/098/Q98933/
 
 ## Q98933: Description of TetraVex
 
+{% raw %}
+
 	Article: Q98933
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -72,3 +74,5 @@ permalink: /kb/098/Q98933/
 	
 	=============================================================================
 	
+
+{% endraw %}

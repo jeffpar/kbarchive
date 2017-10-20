@@ -6,6 +6,8 @@ permalink: /kb/158/Q158456/
 
 ## Q158456: Hardware Requirements for Remote Boot of Windows NT 4.0
 
+{% raw %}
+
 	Article: Q158456
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -78,3 +80,5 @@ permalink: /kb/158/Q158456/
 	
 	=============================================================================
 	
+
+{% endraw %}

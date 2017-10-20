@@ -6,6 +6,8 @@ permalink: /kb/182/Q182963/
 
 ## Q182963: XADM: How to Compare USNs for Intrasite Replication
 
+{% raw %}
+
 	Article: Q182963
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -106,3 +108,5 @@ permalink: /kb/182/Q182963/
 	
 	=============================================================================
 	
+
+{% endraw %}

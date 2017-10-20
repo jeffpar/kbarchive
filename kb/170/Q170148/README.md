@@ -6,6 +6,8 @@ permalink: /kb/170/Q170148/
 
 ## Q170148: FIX: Cannot Trap Error Number 1884 on Form
 
+{% raw %}
+
 	Article: Q170148
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0 3.0b 5.0 5.0a
@@ -102,3 +104,5 @@ permalink: /kb/170/Q170148/
 	
 	=============================================================================
 	
+
+{% endraw %}

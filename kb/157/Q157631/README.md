@@ -6,6 +6,8 @@ permalink: /kb/157/Q157631/
 
 ## Q157631: XFOR: Cannot Import Bulletin Board Information from cc:Mail
 
+{% raw %}
+
 	Article: Q157631
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -92,3 +94,5 @@ permalink: /kb/157/Q157631/
 	
 	=============================================================================
 	
+
+{% endraw %}

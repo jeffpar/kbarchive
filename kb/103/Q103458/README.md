@@ -6,6 +6,8 @@ permalink: /kb/103/Q103458/
 
 ## Q103458: PC OS2: No Check for Disk Space Before Install
 
+{% raw %}
+
 	Article: Q103458
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -65,3 +67,5 @@ permalink: /kb/103/Q103458/
 	
 	=============================================================================
 	
+
+{% endraw %}

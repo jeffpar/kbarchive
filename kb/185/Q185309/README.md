@@ -6,6 +6,8 @@ permalink: /kb/185/Q185309/
 
 ## Q185309: WD97: Fatal Exception Connecting to a Novell Drive in Word
 
+{% raw %}
+
 	Article: Q185309
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/185/Q185309/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193820/
 
 ## Q193820: How to Move a WINS Database to Another Server
 
+{% raw %}
+
 	Article: Q193820
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -197,3 +199,5 @@ permalink: /kb/193/Q193820/
 	
 	=============================================================================
 	
+
+{% endraw %}

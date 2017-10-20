@@ -6,6 +6,8 @@ permalink: /kb/156/Q156528/
 
 ## Q156528: Selecting Shortcut in Online Viewer Opens Different Shortcut
 
+{% raw %}
+
 	Article: Q156528
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3
@@ -42,3 +44,5 @@ permalink: /kb/156/Q156528/
 	
 	=============================================================================
 	
+
+{% endraw %}

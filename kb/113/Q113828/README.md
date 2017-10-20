@@ -6,6 +6,8 @@ permalink: /kb/113/Q113828/
 
 ## Q113828: Sound System: Sound Blaster 16 Doesn't Play CD Audio
 
+{% raw %}
+
 	Article: Q113828
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/113/Q113828/
 	
 	=============================================================================
 	
+
+{% endraw %}

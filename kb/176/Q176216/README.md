@@ -6,6 +6,8 @@ permalink: /kb/176/Q176216/
 
 ## Q176216: WD97: Cannot Undo Automatic Field Updates
 
+{% raw %}
+
 	Article: Q176216
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/176/Q176216/
 	
 	=============================================================================
 	
+
+{% endraw %}

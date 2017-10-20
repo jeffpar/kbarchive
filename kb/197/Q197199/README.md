@@ -6,6 +6,8 @@ permalink: /kb/197/Q197199/
 
 ## Q197199: WD97: Word 6.0 Document Objects Cropped When Embedded/Pasted
 
+{% raw %}
+
 	Article: Q197199
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/197/Q197199/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175810/
 
 ## Q175810: XADM: Upgrade to Exchange Server 5.0 Takes a Long Time
 
+{% raw %}
+
 	Article: Q175810
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -58,3 +60,5 @@ permalink: /kb/175/Q175810/
 	
 	=============================================================================
 	
+
+{% endraw %}

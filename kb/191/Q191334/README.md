@@ -6,6 +6,8 @@ permalink: /kb/191/Q191334/
 
 ## Q191334: SMS: Windows NT Remote Control Agent Stops Responding on Restart
 
+{% raw %}
+
 	Article: Q191334
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,3.51
@@ -47,3 +49,5 @@ permalink: /kb/191/Q191334/
 	
 	=============================================================================
 	
+
+{% endraw %}

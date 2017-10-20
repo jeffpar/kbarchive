@@ -6,6 +6,8 @@ permalink: /kb/173/Q173566/
 
 ## Q173566: Multimedia: How to Temporarily Disable Your Sound Card
 
+{% raw %}
+
 	Article: Q173566
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,1.0a; :
@@ -97,3 +99,5 @@ permalink: /kb/173/Q173566/
 	
 	=============================================================================
 	
+
+{% endraw %}

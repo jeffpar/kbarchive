@@ -6,6 +6,8 @@ permalink: /kb/121/Q121316/
 
 ## Q121316: PC Forms: Err Msg: &quot;Invalid Message&quot; When Reading an E-Form
 
+{% raw %}
+
 	Article: Q121316
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -57,3 +59,5 @@ permalink: /kb/121/Q121316/
 	
 	=============================================================================
 	
+
+{% endraw %}

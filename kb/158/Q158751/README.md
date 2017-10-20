@@ -6,6 +6,8 @@ permalink: /kb/158/Q158751/
 
 ## Q158751: Printing Problems Caused By Fax Software
 
+{% raw %}
+
 	Article: Q158751
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -95,3 +97,5 @@ permalink: /kb/158/Q158751/
 	
 	=============================================================================
 	
+
+{% endraw %}

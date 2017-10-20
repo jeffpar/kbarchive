@@ -6,6 +6,8 @@ permalink: /kb/140/Q140447/
 
 ## Q140447: PC MAPI: Sample VB Code to Send a Message
 
+{% raw %}
+
 	Article: Q140447
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.5
@@ -141,3 +143,5 @@ permalink: /kb/140/Q140447/
 	
 	=============================================================================
 	
+
+{% endraw %}

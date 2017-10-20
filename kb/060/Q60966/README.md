@@ -6,6 +6,8 @@ permalink: /kb/060/Q60966/
 
 ## Q60966: QB.EXE and QBX.EXE Erase Line If You Type STRIG ON
 
+{% raw %}
+
 	Article: Q60966
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -38,3 +40,5 @@ permalink: /kb/060/Q60966/
 	
 	   Before Line
 	   After Line
+
+{% endraw %}

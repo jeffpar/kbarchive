@@ -6,6 +6,8 @@ permalink: /kb/257/Q257540/
 
 ## Q257540: DCOM Program Does Not Work After Suspend or Docking Change
 
+{% raw %}
+
 	Article: Q257540
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -158,3 +160,5 @@ permalink: /kb/257/Q257540/
 	
 	=============================================================================
 	
+
+{% endraw %}

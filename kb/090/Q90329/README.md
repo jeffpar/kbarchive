@@ -6,6 +6,8 @@ permalink: /kb/090/Q90329/
 
 ## Q90329: Cannot Assign Local Drives to Network Drive in File Manager
 
+{% raw %}
+
 	Article: Q90329
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -37,3 +39,5 @@ permalink: /kb/090/Q90329/
 	
 	=============================================================================
 	
+
+{% endraw %}

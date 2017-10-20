@@ -6,6 +6,8 @@ permalink: /kb/142/Q142395/
 
 ## Q142395: CommandButton FontSize Can Affect Button Size
 
+{% raw %}
+
 	Article: Q142395
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -60,3 +62,5 @@ permalink: /kb/142/Q142395/
 	
 	=============================================================================
 	
+
+{% endraw %}

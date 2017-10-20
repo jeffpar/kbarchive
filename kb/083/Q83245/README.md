@@ -6,6 +6,8 @@ permalink: /kb/083/Q83245/
 
 ## Q83245: New Features in Windows 3.1
 
+{% raw %}
+
 	Article: Q83245
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1
@@ -411,3 +413,5 @@ permalink: /kb/083/Q83245/
 	
 	=============================================================================
 	
+
+{% endraw %}

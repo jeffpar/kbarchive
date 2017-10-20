@@ -6,6 +6,8 @@ permalink: /kb/096/Q96562/
 
 ## Q96562: Running Windows 3.1 with Advanced Power Management Systems
 
+{% raw %}
+
 	Article: Q96562
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/096/Q96562/
 	
 	=============================================================================
 	
+
+{% endraw %}

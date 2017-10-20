@@ -6,6 +6,8 @@ permalink: /kb/149/Q149050/
 
 ## Q149050: HOWTO: Change Add-In Manager Description for Add-Ins
 
+{% raw %}
+
 	Article: Q149050
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/149/Q149050/
 	
 	=============================================================================
 	
+
+{% endraw %}

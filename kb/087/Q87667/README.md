@@ -6,6 +6,8 @@ permalink: /kb/087/Q87667/
 
 ## Q87667: Network Comm. Across Router Using PC-TCP and LAN Manager
 
+{% raw %}
+
 	Article: Q87667
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/087/Q87667/
 	
 	=============================================================================
 	
+
+{% endraw %}

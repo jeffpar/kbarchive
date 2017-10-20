@@ -6,6 +6,8 @@ permalink: /kb/064/Q64570/
 
 ## Q64570: Windows 3.0 Enhanced Mode Virtual Machine and Fastopen, Share
 
+{% raw %}
+
 	Article: Q64570
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -42,3 +44,5 @@ permalink: /kb/064/Q64570/
 	
 	=============================================================================
 	
+
+{% endraw %}

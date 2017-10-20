@@ -6,6 +6,8 @@ permalink: /kb/251/Q251203/
 
 ## Q251203: PRB: DAO OpenRecordset Hangs if Table/Index Name Over 63 Chars
 
+{% raw %}
+
 	Article: Q251203
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -134,3 +136,5 @@ permalink: /kb/251/Q251203/
 	
 	=============================================================================
 	
+
+{% endraw %}

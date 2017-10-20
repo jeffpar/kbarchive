@@ -6,6 +6,8 @@ permalink: /kb/109/Q109989/
 
 ## Q109989: PROFS: Location Field in Meeting Request Dropped
 
+{% raw %}
+
 	Article: Q109989
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.4
@@ -56,3 +58,5 @@ permalink: /kb/109/Q109989/
 	
 	=============================================================================
 	
+
+{% endraw %}

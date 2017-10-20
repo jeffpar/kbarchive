@@ -6,6 +6,8 @@ permalink: /kb/216/Q216550/
 
 ## Q216550: XFOR: Meetings Can't Be Used Between French Exchange &amp; PROFS
 
+{% raw %}
+
 	Article: Q216550
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -96,3 +98,5 @@ permalink: /kb/216/Q216550/
 	
 	=============================================================================
 	
+
+{% endraw %}

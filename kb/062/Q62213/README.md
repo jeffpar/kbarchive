@@ -6,6 +6,8 @@ permalink: /kb/062/Q62213/
 
 ## Q62213: How to Get the Current Drive with Microsoft BASIC
 
+{% raw %}
+
 	Article: Q62213
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -55,3 +57,5 @@ permalink: /kb/062/Q62213/
 	   PRINT "The current drive is "; CHR$((Regs.ax AND &HFF) + 65)
 	
 	   END
+
+{% endraw %}

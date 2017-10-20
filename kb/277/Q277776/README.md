@@ -6,6 +6,8 @@ permalink: /kb/277/Q277776/
 
 ## Q277776: Services Access Violation Because of Heap Damage
 
+{% raw %}
+
 	Article: Q277776
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -94,3 +96,5 @@ permalink: /kb/277/Q277776/
 	
 	=============================================================================
 	
+
+{% endraw %}

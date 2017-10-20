@@ -6,6 +6,8 @@ permalink: /kb/164/Q164028/
 
 ## Q164028: XCON: Setting up an X.400 Connector to MSMail X400 Gtwy over TP4
 
+{% raw %}
+
 	Article: Q164028
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -118,3 +120,5 @@ permalink: /kb/164/Q164028/
 	
 	=============================================================================
 	
+
+{% endraw %}

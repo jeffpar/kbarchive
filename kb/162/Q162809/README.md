@@ -6,6 +6,8 @@ permalink: /kb/162/Q162809/
 
 ## Q162809: How to Make a Hands-Free Dial-Up Connection in Windows 95
 
+{% raw %}
+
 	Article: Q162809
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -68,3 +70,5 @@ permalink: /kb/162/Q162809/
 	
 	=============================================================================
 	
+
+{% endraw %}

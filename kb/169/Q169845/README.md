@@ -6,6 +6,8 @@ permalink: /kb/169/Q169845/
 
 ## Q169845: XFOR: Changing InOutThreads does not Affect IMS Performance
 
+{% raw %}
+
 	Article: Q169845
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -52,3 +54,5 @@ permalink: /kb/169/Q169845/
 	
 	=============================================================================
 	
+
+{% endraw %}

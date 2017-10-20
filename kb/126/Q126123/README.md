@@ -6,6 +6,8 @@ permalink: /kb/126/Q126123/
 
 ## Q126123: MS WIN 32 PROG REF, Vol 2: Corrections and Comments
 
+{% raw %}
+
 	Article: Q126123
 	Product(s): Microsoft Press
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/126/Q126123/
 	
 	=============================================================================
 	
+
+{% endraw %}

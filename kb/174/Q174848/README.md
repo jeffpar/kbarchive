@@ -6,6 +6,8 @@ permalink: /kb/174/Q174848/
 
 ## Q174848: Problems Changing Player Preferences In Golf 3.0
 
+{% raw %}
+
 	Article: Q174848
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/174/Q174848/
 	
 	=============================================================================
 	
+
+{% endraw %}

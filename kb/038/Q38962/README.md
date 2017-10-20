@@ -6,6 +6,8 @@ permalink: /kb/038/Q38962/
 
 ## Q38962: Can't Highlight on PS/2 Model 60 If Sidekick Is Resident
 
+{% raw %}
+
 	Article: Q38962
 	Product(s): See article
 	Version(s): 4.50
@@ -37,3 +39,5 @@ permalink: /kb/038/Q38962/
 	4.00b, and the QBX.EXE editor in Microsoft BASIC Professional
 	Development System (PDS) Version 7.00 work without problems when
 	SideKick is in memory.
+
+{% endraw %}

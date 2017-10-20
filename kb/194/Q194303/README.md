@@ -6,6 +6,8 @@ permalink: /kb/194/Q194303/
 
 ## Q194303: New Features Available in Windows NT 4.0 Service Pack 4
 
+{% raw %}
+
 	Article: Q194303
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -180,3 +182,5 @@ permalink: /kb/194/Q194303/
 	
 	=============================================================================
 	
+
+{% endraw %}

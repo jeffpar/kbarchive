@@ -6,6 +6,8 @@ permalink: /kb/193/Q193848/
 
 ## Q193848: PPT: PowerPoint Presentation Cloning Add-in Available
 
+{% raw %}
+
 	Article: Q193848
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:2000,97
@@ -83,3 +85,5 @@ permalink: /kb/193/Q193848/
 	
 	=============================================================================
 	
+
+{% endraw %}

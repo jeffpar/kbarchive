@@ -6,6 +6,8 @@ permalink: /kb/086/Q86837/
 
 ## Q86837: POINTER.EXE 8.1 May Slow Windows Applications
 
+{% raw %}
+
 	Article: Q86837
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -37,3 +39,5 @@ permalink: /kb/086/Q86837/
 	
 	=============================================================================
 	
+
+{% endraw %}

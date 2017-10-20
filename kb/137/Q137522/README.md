@@ -6,6 +6,8 @@ permalink: /kb/137/Q137522/
 
 ## Q137522: FPNW Keeps Directory Handles Open, Preventing Deletion
 
+{% raw %}
+
 	Article: Q137522
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -93,3 +95,5 @@ permalink: /kb/137/Q137522/
 	
 	=============================================================================
 	
+
+{% endraw %}

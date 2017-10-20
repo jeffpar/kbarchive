@@ -6,6 +6,8 @@ permalink: /kb/299/Q299753/
 
 ## Q299753: Train Simulator: Fatal Exception When You Start Train Simulator
 
+{% raw %}
+
 	Article: Q299753
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -61,3 +63,5 @@ permalink: /kb/299/Q299753/
 	
 	=============================================================================
 	
+
+{% endraw %}

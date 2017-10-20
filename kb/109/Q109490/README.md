@@ -6,6 +6,8 @@ permalink: /kb/109/Q109490/
 
 ## Q109490: PC Tools RAMBOOST.EXE Generates Unsupported DOS Version Error
 
+{% raw %}
+
 	Article: Q109490
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -45,3 +47,5 @@ permalink: /kb/109/Q109490/
 	
 	=============================================================================
 	
+
+{% endraw %}

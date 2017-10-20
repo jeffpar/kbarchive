@@ -6,6 +6,8 @@ permalink: /kb/155/Q155941/
 
 ## Q155941: Phonebook Entry Is Not Updated After Changing Modem
 
+{% raw %}
+
 	Article: Q155941
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -81,3 +83,5 @@ permalink: /kb/155/Q155941/
 	
 	=============================================================================
 	
+
+{% endraw %}

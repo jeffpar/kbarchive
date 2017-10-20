@@ -6,6 +6,8 @@ permalink: /kb/132/Q132396/
 
 ## Q132396: FIX: Error C2065: 'DDX_FieldCBIndex' : undeclared identifier
 
+{% raw %}
+
 	Article: Q132396
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -32,9 +34,9 @@ permalink: /kb/132/Q132396/
 	     void CMyRecordView::DoDataExchange(CDataExchange* pDX)
 	     {
 	        ...
-	        //{ {AFX_DATA_MAP(CMyRecordView)
+	        //{{AFX_DATA_MAP(CMyRecordView)
 	        DDX_FieldCBIndex(pDX, IDC_COMBO1, m_pSet->m_id, m_pSet);
-	        //} }AFX_DATA_MAP
+	        //}}AFX_DATA_MAP
 	     }
 	
 	When compiling the program, the compiler gives you the following compiler error:
@@ -106,3 +108,5 @@ permalink: /kb/132/Q132396/
 	
 	=============================================================================
 	
+
+{% endraw %}

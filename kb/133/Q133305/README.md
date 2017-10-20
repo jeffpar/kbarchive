@@ -6,6 +6,8 @@ permalink: /kb/133/Q133305/
 
 ## Q133305: Installing a LAN Manager MS-DOS Client Over the Network
 
+{% raw %}
+
 	Article: Q133305
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2b,2.2c,3.1; winnt:3.5,3.51
@@ -72,3 +74,5 @@ permalink: /kb/133/Q133305/
 	
 	=============================================================================
 	
+
+{% endraw %}

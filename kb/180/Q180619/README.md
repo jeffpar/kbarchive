@@ -6,6 +6,8 @@ permalink: /kb/180/Q180619/
 
 ## Q180619: SNA Server Stops After Logging Event 684 and 685.
 
+{% raw %}
+
 	Article: Q180619
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -74,3 +76,5 @@ permalink: /kb/180/Q180619/
 	
 	=============================================================================
 	
+
+{% endraw %}

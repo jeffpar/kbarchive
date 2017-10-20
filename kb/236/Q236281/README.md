@@ -6,6 +6,8 @@ permalink: /kb/236/Q236281/
 
 ## Q236281: FIX: An Error Occurs While Registering the File Expsrv.dll
 
+{% raw %}
+
 	Article: Q236281
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -99,3 +101,5 @@ permalink: /kb/236/Q236281/
 	
 	=============================================================================
 	
+
+{% endraw %}

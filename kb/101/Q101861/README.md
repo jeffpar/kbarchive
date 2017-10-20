@@ -6,6 +6,8 @@ permalink: /kb/101/Q101861/
 
 ## Q101861: Hard Disk Errors 67 and 69
 
+{% raw %}
+
 	Article: Q101861
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/101/Q101861/
 	
 	=============================================================================
 	
+
+{% endraw %}

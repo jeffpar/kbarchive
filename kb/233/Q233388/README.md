@@ -6,6 +6,8 @@ permalink: /kb/233/Q233388/
 
 ## Q233388: SNA Server 3.0 Service Pack 4 Fix List
 
+{% raw %}
+
 	Article: Q233388
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0SP4
@@ -180,3 +182,5 @@ permalink: /kb/233/Q233388/
 	
 	=============================================================================
 	
+
+{% endraw %}

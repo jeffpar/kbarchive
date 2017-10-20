@@ -6,6 +6,8 @@ permalink: /kb/244/Q244413/
 
 ## Q244413: XFOR: Can't Reply to E-mail from MEMO
 
+{% raw %}
+
 	Article: Q244413
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -70,3 +72,5 @@ permalink: /kb/244/Q244413/
 	
 	=============================================================================
 	
+
+{% endraw %}

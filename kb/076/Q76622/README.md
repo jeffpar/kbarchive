@@ -6,6 +6,8 @@ permalink: /kb/076/Q76622/
 
 ## Q76622: FORMAT Parameters Versus DRIVPARM/DRIVER.SYS
 
+{% raw %}
+
 	Article: Q76622
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -78,3 +80,5 @@ permalink: /kb/076/Q76622/
 	
 	=============================================================================
 	
+
+{% endraw %}

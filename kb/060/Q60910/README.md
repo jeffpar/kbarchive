@@ -6,6 +6,8 @@ permalink: /kb/060/Q60910/
 
 ## Q60910: _ERESNOCOLOR Should Be Typed M/G, Not M/T
 
+{% raw %}
+
 	Article: Q60910
 	Product(s): See article
 	Version(s): 5.10 6.00 | 5.10 6.00
@@ -34,3 +36,5 @@ permalink: /kb/060/Q60910/
 	  getch();
 	  _setvideomode(_DEFAULTMODE);
 	 }
+
+{% endraw %}

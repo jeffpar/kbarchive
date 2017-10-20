@@ -6,6 +6,8 @@ permalink: /kb/225/Q225497/
 
 ## Q225497: PRB: Windows 95 May Fail to Boot Due to I/O Subsystem Failure
 
+{% raw %}
+
 	Article: Q225497
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -73,3 +75,5 @@ permalink: /kb/225/Q225497/
 	
 	=============================================================================
 	
+
+{% endraw %}

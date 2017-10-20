@@ -6,6 +6,8 @@ permalink: /kb/153/Q153240/
 
 ## Q153240: Office95 Fails to Report in Inventory
 
+{% raw %}
+
 	Article: Q153240
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -50,3 +52,5 @@ permalink: /kb/153/Q153240/
 	
 	=============================================================================
 	
+
+{% endraw %}

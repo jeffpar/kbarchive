@@ -6,6 +6,8 @@ permalink: /kb/120/Q120440/
 
 ## Q120440: Cannot Insert Paintbrush OLE Object into SQLWindows on RISC
 
+{% raw %}
+
 	Article: Q120440
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/120/Q120440/
 	
 	=============================================================================
 	
+
+{% endraw %}

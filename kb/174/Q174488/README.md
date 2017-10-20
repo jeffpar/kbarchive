@@ -6,6 +6,8 @@ permalink: /kb/174/Q174488/
 
 ## Q174488: PRB: App Generates Run-Time Error 3633 When Run on New Machine
 
+{% raw %}
+
 	Article: Q174488
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -115,3 +117,5 @@ permalink: /kb/174/Q174488/
 	
 	=============================================================================
 	
+
+{% endraw %}

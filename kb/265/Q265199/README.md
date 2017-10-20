@@ -6,6 +6,8 @@ permalink: /kb/265/Q265199/
 
 ## Q265199: SNA LU6.2 Session May Incorrectly Display &#91;Not In Use&#93;
 
+{% raw %}
+
 	Article: Q265199
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3; :
@@ -71,3 +73,5 @@ permalink: /kb/265/Q265199/
 	
 	=============================================================================
 	
+
+{% endraw %}

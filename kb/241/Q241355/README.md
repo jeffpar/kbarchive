@@ -6,6 +6,8 @@ permalink: /kb/241/Q241355/
 
 ## Q241355: HOWTO: Edit and Tab with the MSFlexGrid Control
 
+{% raw %}
+
 	Article: Q241355
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -137,3 +139,5 @@ permalink: /kb/241/Q241355/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151227/
 
 ## Q151227: IBM CA/400 ODBC Driver Result in Communication Link Failure
 
+{% raw %}
+
 	Article: Q151227
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -194,3 +196,5 @@ permalink: /kb/151/Q151227/
 	
 	=============================================================================
 	
+
+{% endraw %}

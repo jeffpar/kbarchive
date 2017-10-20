@@ -6,6 +6,8 @@ permalink: /kb/241/Q241855/
 
 ## Q241855: XADM: Information Store Does Not Start with Event ID 145
 
+{% raw %}
+
 	Article: Q241855
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -84,3 +86,5 @@ permalink: /kb/241/Q241855/
 	
 	=============================================================================
 	
+
+{% endraw %}

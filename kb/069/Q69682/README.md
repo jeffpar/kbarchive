@@ -6,6 +6,8 @@ permalink: /kb/069/Q69682/
 
 ## Q69682: Dell Keyboard Controller Version B50 in Standard and Enhanced
 
+{% raw %}
+
 	Article: Q69682
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -59,3 +61,5 @@ permalink: /kb/069/Q69682/
 	
 	=============================================================================
 	
+
+{% endraw %}

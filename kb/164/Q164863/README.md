@@ -6,6 +6,8 @@ permalink: /kb/164/Q164863/
 
 ## Q164863: XFOR: Setting the MSMI to Send SNADS Address as Reply-To
 
+{% raw %}
+
 	Article: Q164863
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -144,3 +146,5 @@ permalink: /kb/164/Q164863/
 	
 	=============================================================================
 	
+
+{% endraw %}

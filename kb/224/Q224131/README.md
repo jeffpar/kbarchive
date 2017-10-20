@@ -6,6 +6,8 @@ permalink: /kb/224/Q224131/
 
 ## Q224131: Network Switch w/ Full-Duplex Incompatible w/ Half-Duplex NICs
 
+{% raw %}
+
 	Article: Q224131
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -107,3 +109,5 @@ permalink: /kb/224/Q224131/
 	
 	=============================================================================
 	
+
+{% endraw %}

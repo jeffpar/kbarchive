@@ -6,6 +6,8 @@ permalink: /kb/125/Q125020/
 
 ## Q125020: NetBIOS SEND WAIT Call Returns Before RECEIVE is Sent
 
+{% raw %}
+
 	Article: Q125020
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/125/Q125020/
 	
 	=============================================================================
 	
+
+{% endraw %}

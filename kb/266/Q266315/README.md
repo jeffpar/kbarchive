@@ -6,6 +6,8 @@ permalink: /kb/266/Q266315/
 
 ## Q266315: Memory Dump Is Not Written Correctly with No Entry in Event Log
 
+{% raw %}
+
 	Article: Q266315
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -74,3 +76,5 @@ permalink: /kb/266/Q266315/
 	
 	=============================================================================
 	
+
+{% endraw %}

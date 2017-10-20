@@ -6,6 +6,8 @@ permalink: /kb/177/Q177376/
 
 ## Q177376: Bookshelf 98: Unable to Cancel Installation
 
+{% raw %}
+
 	Article: Q177376
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -57,3 +59,5 @@ permalink: /kb/177/Q177376/
 	
 	=============================================================================
 	
+
+{% endraw %}

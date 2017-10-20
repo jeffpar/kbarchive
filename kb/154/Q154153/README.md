@@ -6,6 +6,8 @@ permalink: /kb/154/Q154153/
 
 ## Q154153: SMS 1.2 Allows SNMP Setup of SMS 1.1 Child Sites
 
+{% raw %}
+
 	Article: Q154153
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -45,3 +47,5 @@ permalink: /kb/154/Q154153/
 	
 	=============================================================================
 	
+
+{% endraw %}

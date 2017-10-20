@@ -6,6 +6,8 @@ permalink: /kb/161/Q161941/
 
 ## Q161941: XADM: Corrupt Page Causes Edbutil to Receive an Access Violation
 
+{% raw %}
+
 	Article: Q161941
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -121,3 +123,5 @@ permalink: /kb/161/Q161941/
 	
 	=============================================================================
 	
+
+{% endraw %}

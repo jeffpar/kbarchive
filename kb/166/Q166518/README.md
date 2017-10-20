@@ -6,6 +6,8 @@ permalink: /kb/166/Q166518/
 
 ## Q166518: XADM: New Public Folder Created by INS Defaults to US ASCII
 
+{% raw %}
+
 	Article: Q166518
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -56,3 +58,5 @@ permalink: /kb/166/Q166518/
 	
 	=============================================================================
 	
+
+{% endraw %}

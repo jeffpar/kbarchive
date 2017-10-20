@@ -6,6 +6,8 @@ permalink: /kb/190/Q190729/
 
 ## Q190729: XADM: How to Enter a Company Name for a Distribution List
 
+{% raw %}
+
 	Article: Q190729
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -56,3 +58,5 @@ permalink: /kb/190/Q190729/
 	
 	=============================================================================
 	
+
+{% endraw %}

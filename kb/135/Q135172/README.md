@@ -6,6 +6,8 @@ permalink: /kb/135/Q135172/
 
 ## Q135172: CableTron T2015 Token Ring Adapter Fails on 4 Mbps Ring Speed
 
+{% raw %}
+
 	Article: Q135172
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -59,3 +61,5 @@ permalink: /kb/135/Q135172/
 	
 	=============================================================================
 	
+
+{% endraw %}

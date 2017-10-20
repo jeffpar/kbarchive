@@ -6,6 +6,8 @@ permalink: /kb/143/Q143071/
 
 ## Q143071: FIX: CPropertySheet::DoModal() or Create() Causes an Exception
 
+{% raw %}
+
 	Article: Q143071
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -102,3 +104,5 @@ permalink: /kb/143/Q143071/
 	
 	=============================================================================
 	
+
+{% endraw %}

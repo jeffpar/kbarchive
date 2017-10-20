@@ -6,6 +6,8 @@ permalink: /kb/082/Q82790/
 
 ## Q82790: SYSTEM.INI's NetDMASize= Switch and NetBIOS
 
+{% raw %}
+
 	Article: Q82790
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/082/Q82790/
 	
 	=============================================================================
 	
+
+{% endraw %}

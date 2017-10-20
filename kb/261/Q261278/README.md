@@ -6,6 +6,8 @@ permalink: /kb/261/Q261278/
 
 ## Q261278: Terminal Server Ignores NumberOfRings Parameter
 
+{% raw %}
+
 	Article: Q261278
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6
@@ -108,3 +110,5 @@ permalink: /kb/261/Q261278/
 	
 	=============================================================================
 	
+
+{% endraw %}

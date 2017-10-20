@@ -6,6 +6,8 @@ permalink: /kb/150/Q150282/
 
 ## Q150282: NT 3.x Video and Print Drivers Not Compatible with NT 4.0
 
+{% raw %}
+
 	Article: Q150282
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51 4.0
@@ -61,3 +63,5 @@ permalink: /kb/150/Q150282/
 	
 	=============================================================================
 	
+
+{% endraw %}

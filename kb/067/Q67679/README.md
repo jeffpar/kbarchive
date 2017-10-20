@@ -6,6 +6,8 @@ permalink: /kb/067/Q67679/
 
 ## Q67679: Mac Wkst: 2.00 Voice Form and the Macinstosh LC and IIsi
 
+{% raw %}
+
 	Article: Q67679
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -38,3 +40,5 @@ permalink: /kb/067/Q67679/
 	
 	=============================================================================
 	
+
+{% endraw %}

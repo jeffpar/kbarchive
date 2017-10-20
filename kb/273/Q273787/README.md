@@ -6,6 +6,8 @@ permalink: /kb/273/Q273787/
 
 ## Q273787: Err Msg: YIKES! Midtown Madness 2 Was Not Properly Shut Down...
 
+{% raw %}
+
 	Article: Q273787
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -201,3 +203,5 @@ permalink: /kb/273/Q273787/
 	
 	=============================================================================
 	
+
+{% endraw %}

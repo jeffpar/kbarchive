@@ -6,6 +6,8 @@ permalink: /kb/037/Q37897/
 
 ## Q37897: INPUT Statement Removes Unquoted Leading &amp; Trailing Spaces
 
+{% raw %}
+
 	Article: Q37897
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -56,3 +58,5 @@ permalink: /kb/037/Q37897/
 	' double quotation marks to make them significant: "    test    "
 	' or else use LINE INPUT:
 	LINE INPUT X$
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168906/
 
 ## Q168906: XCON: Setting up Advanced Logging on Exchange 5.0 and 5.5 MTAs
 
+{% raw %}
+
 	Article: Q168906
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -87,3 +89,5 @@ permalink: /kb/168/Q168906/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/040/Q40631/
 
 ## Q40631: QB.EXE 4.x Won't Trace or Single Step through KEY Routine
 
+{% raw %}
+
 	Article: Q40631
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -67,3 +69,5 @@ permalink: /kb/040/Q40631/
 	                   'or trace through this routine.
 	   PRINT "inside key routine 2"
 	   RETURN
+
+{% endraw %}

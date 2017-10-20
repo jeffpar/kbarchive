@@ -6,6 +6,8 @@ permalink: /kb/142/Q142299/
 
 ## Q142299: &quot;Out of Memory&quot; or Garbled Sound Playing MIDI File
 
+{% raw %}
+
 	Article: Q142299
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -45,3 +47,5 @@ permalink: /kb/142/Q142299/
 	
 	=============================================================================
 	
+
+{% endraw %}

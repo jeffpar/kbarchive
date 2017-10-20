@@ -6,6 +6,8 @@ permalink: /kb/041/Q41043/
 
 ## Q41043: No Warning If GET or SEEK Past End of Random File; Use EOF(n)
 
+{% raw %}
+
 	Article: Q41043
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -84,3 +86,5 @@ permalink: /kb/041/Q41043/
 	   PRINT i, x$
 	LOOP
 	CLOSE
+
+{% endraw %}

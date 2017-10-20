@@ -6,6 +6,8 @@ permalink: /kb/112/Q112914/
 
 ## Q112914: VB 3: PC WFW: Prompt for Network and Postoffice Name
 
+{% raw %}
+
 	Article: Q112914
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -66,3 +68,5 @@ permalink: /kb/112/Q112914/
 	
 	=============================================================================
 	
+
+{% endraw %}

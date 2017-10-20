@@ -6,6 +6,8 @@ permalink: /kb/269/Q269868/
 
 ## Q269868: How to Bypass the Authentication Prompt When You Use OWA
 
+{% raw %}
+
 	Article: Q269868
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0,5.5
@@ -121,3 +123,5 @@ permalink: /kb/269/Q269868/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190120/
 
 ## Q190120: XFOR: Unable to Complete Setup of IMC from Disk
 
+{% raw %}
+
 	Article: Q190120
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/190/Q190120/
 	
 	=============================================================================
 	
+
+{% endraw %}

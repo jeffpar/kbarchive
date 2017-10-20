@@ -6,6 +6,8 @@ permalink: /kb/147/Q147221/
 
 ## Q147221: Sockets Application Can Cause STOP 0x0000000A
 
+{% raw %}
+
 	Article: Q147221
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -55,3 +57,5 @@ permalink: /kb/147/Q147221/
 	
 	=============================================================================
 	
+
+{% endraw %}

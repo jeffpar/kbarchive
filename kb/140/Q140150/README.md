@@ -6,6 +6,8 @@ permalink: /kb/140/Q140150/
 
 ## Q140150: Hourglass Fails To Appear On Server During Remote Control Sessio
 
+{% raw %}
+
 	Article: Q140150
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -42,3 +44,5 @@ permalink: /kb/140/Q140150/
 	
 	=============================================================================
 	
+
+{% endraw %}

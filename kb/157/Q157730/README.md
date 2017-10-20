@@ -6,6 +6,8 @@ permalink: /kb/157/Q157730/
 
 ## Q157730: Determining DirectX Version Using the DirectX Diagnostic Tool
 
+{% raw %}
+
 	Article: Q157730
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/157/Q157730/
 	
 	=============================================================================
 	
+
+{% endraw %}

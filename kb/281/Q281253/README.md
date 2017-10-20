@@ -6,6 +6,8 @@ permalink: /kb/281/Q281253/
 
 ## Q281253: File Change Notifications Are Lost When Content Is on UNC Share
 
+{% raw %}
+
 	Article: Q281253
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -392,3 +394,5 @@ permalink: /kb/281/Q281253/
 	
 	=============================================================================
 	
+
+{% endraw %}

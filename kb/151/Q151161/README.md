@@ -6,6 +6,8 @@ permalink: /kb/151/Q151161/
 
 ## Q151161: PRB: Case Sensitivity Problem With RDO
 
+{% raw %}
+
 	Article: Q151161
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -114,3 +116,5 @@ permalink: /kb/151/Q151161/
 	
 	=============================================================================
 	
+
+{% endraw %}

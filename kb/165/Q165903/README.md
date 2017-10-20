@@ -6,6 +6,8 @@ permalink: /kb/165/Q165903/
 
 ## Q165903: PPT: Sample VB Code to Turn Bullets On or Off
 
+{% raw %}
+
 	Article: Q165903
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -135,3 +137,5 @@ permalink: /kb/165/Q165903/
 	
 	=============================================================================
 	
+
+{% endraw %}

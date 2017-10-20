@@ -6,6 +6,8 @@ permalink: /kb/026/Q26605/
 
 ## Q26605: BC.EXE &quot;Line Too Long&quot; for Source Lines of 256+ Characters
 
+{% raw %}
+
 	Article: Q26605
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -64,3 +66,5 @@ permalink: /kb/026/Q26605/
 	12345678901234567890123456789012345678901234567890"
 	
 	PRINT A$
+
+{% endraw %}

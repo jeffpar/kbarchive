@@ -6,6 +6,8 @@ permalink: /kb/284/Q284285/
 
 ## Q284285: HOW TO: Use Wfetch.exe to Troubleshoot HTTP Connections
 
+{% raw %}
+
 	Article: Q284285
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0
@@ -194,3 +196,5 @@ permalink: /kb/284/Q284285/
 	
 	=============================================================================
 	
+
+{% endraw %}

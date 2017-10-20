@@ -6,6 +6,8 @@ permalink: /kb/075/Q75629/
 
 ## Q75629: HOWTO: Ending the Windows Session from an Application
 
+{% raw %}
+
 	Article: Q75629
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -67,3 +69,5 @@ permalink: /kb/075/Q75629/
 	
 	=============================================================================
 	
+
+{% endraw %}

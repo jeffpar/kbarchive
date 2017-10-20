@@ -6,6 +6,8 @@ permalink: /kb/142/Q142576/
 
 ## Q142576: Date Set to Year Later Than 2038 Can Cause Problems
 
+{% raw %}
+
 	Article: Q142576
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.01,95; winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/142/Q142576/
 	
 	=============================================================================
 	
+
+{% endraw %}

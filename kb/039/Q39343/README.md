@@ -6,6 +6,8 @@ permalink: /kb/039/Q39343/
 
 ## Q39343: Sizeof an Undeclared Struct Causes Violation in OS/2
 
+{% raw %}
+
 	Article: Q39343
 	Product(s): See article
 	Version(s): 5.10
@@ -40,3 +42,5 @@ permalink: /kb/039/Q39343/
 	
 	  /* size = sizeof (struct q_blok) ;    Corrected code.             */
 	}
+
+{% endraw %}

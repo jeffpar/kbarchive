@@ -6,6 +6,8 @@ permalink: /kb/135/Q135158/
 
 ## Q135158: Titanium Seal Menu Program Does Not Run Properly
 
+{% raw %}
+
 	Article: Q135158
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -68,3 +70,5 @@ permalink: /kb/135/Q135158/
 	
 	=============================================================================
 	
+
+{% endraw %}

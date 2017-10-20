@@ -6,6 +6,8 @@ permalink: /kb/080/Q80553/
 
 ## Q80553: ExpEdit.exe Changes Size of an Edit Control
 
+{% raw %}
+
 	Article: Q80553
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -100,3 +102,5 @@ permalink: /kb/080/Q80553/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139093/
 
 ## Q139093: Encarta 1996: Computer Hangs When Playing Video Clips
 
+{% raw %}
+
 	Article: Q139093
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996
@@ -73,3 +75,5 @@ permalink: /kb/139/Q139093/
 	
 	=============================================================================
 	
+
+{% endraw %}

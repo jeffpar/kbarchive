@@ -6,6 +6,8 @@ permalink: /kb/107/Q107697/
 
 ## Q107697: BUG: Sharing IRQ with COM1 Causes System to Reboot
 
+{% raw %}
+
 	Article: Q107697
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.1
@@ -85,3 +87,5 @@ permalink: /kb/107/Q107697/
 	
 	=============================================================================
 	
+
+{% endraw %}

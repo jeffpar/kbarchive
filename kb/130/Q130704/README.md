@@ -6,6 +6,8 @@ permalink: /kb/130/Q130704/
 
 ## Q130704: PC Win: &quot;Remember Password&quot; Option of WFW Mail Client
 
+{% raw %}
+
 	Article: Q130704
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -133,3 +135,5 @@ permalink: /kb/130/Q130704/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96502/
 
 ## Q96502: PC WSPlus: Resynchronizing Schedule+ After Network Name Change
 
+{% raw %}
+
 	Article: Q96502
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -61,3 +63,5 @@ permalink: /kb/096/Q96502/
 	
 	=============================================================================
 	
+
+{% endraw %}

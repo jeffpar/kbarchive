@@ -6,6 +6,8 @@ permalink: /kb/188/Q188832/
 
 ## Q188832: Intel VTune 3.0 Fails with Windows NT 4.0 Option Pack
 
+{% raw %}
+
 	Article: Q188832
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -74,3 +76,5 @@ permalink: /kb/188/Q188832/
 	
 	=============================================================================
 	
+
+{% endraw %}

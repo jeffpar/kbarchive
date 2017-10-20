@@ -6,6 +6,8 @@ permalink: /kb/155/Q155789/
 
 ## Q155789: XADM: Removing Replication Connector Removes Replicated Info.
 
+{% raw %}
+
 	Article: Q155789
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/155/Q155789/
 	
 	=============================================================================
 	
+
+{% endraw %}

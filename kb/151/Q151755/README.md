@@ -6,6 +6,8 @@ permalink: /kb/151/Q151755/
 
 ## Q151755: Spindate.exe - DateTime Spinner Class Example
 
+{% raw %}
+
 	Article: Q151755
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -81,3 +83,5 @@ permalink: /kb/151/Q151755/
 	
 	=============================================================================
 	
+
+{% endraw %}

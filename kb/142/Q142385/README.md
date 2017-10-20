@@ -6,6 +6,8 @@ permalink: /kb/142/Q142385/
 
 ## Q142385: FIX: Using CString::operator+= May Cause an Access Violation
 
+{% raw %}
+
 	Article: Q142385
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/142/Q142385/
 	
 	=============================================================================
 	
+
+{% endraw %}

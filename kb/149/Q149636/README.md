@@ -6,6 +6,8 @@ permalink: /kb/149/Q149636/
 
 ## Q149636: XCLN: Public Folder Favorites do not Show Subfolders
 
+{% raw %}
+
 	Article: Q149636
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -63,3 +65,5 @@ permalink: /kb/149/Q149636/
 	
 	=============================================================================
 	
+
+{% endraw %}

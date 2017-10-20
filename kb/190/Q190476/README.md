@@ -6,6 +6,8 @@ permalink: /kb/190/Q190476/
 
 ## Q190476: BUG: License Not Included with ActiveX Control Distribution
 
+{% raw %}
+
 	Article: Q190476
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -58,3 +60,5 @@ permalink: /kb/190/Q190476/
 	
 	=============================================================================
 	
+
+{% endraw %}

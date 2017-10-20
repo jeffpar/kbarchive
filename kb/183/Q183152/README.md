@@ -6,6 +6,8 @@ permalink: /kb/183/Q183152/
 
 ## Q183152: XCLN: OWA Error Message: Failed to Send This Item
 
+{% raw %}
+
 	Article: Q183152
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -62,3 +64,5 @@ permalink: /kb/183/Q183152/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86951/
 
 ## Q86951: 3COM: Errors During Installation
 
+{% raw %}
+
 	Article: Q86951
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/086/Q86951/
 	
 	=============================================================================
 	
+
+{% endraw %}

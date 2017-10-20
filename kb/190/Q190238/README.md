@@ -6,6 +6,8 @@ permalink: /kb/190/Q190238/
 
 ## Q190238: BUG: AddProperty Fails With Initial Value of Type Currency
 
+{% raw %}
+
 	Article: Q190238
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -98,3 +100,5 @@ permalink: /kb/190/Q190238/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/220/Q220042/
 
 ## Q220042: XCLN: Message Incorrectly Marked as Replied To or Forwarded
 
+{% raw %}
+
 	Article: Q220042
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -47,3 +49,5 @@ permalink: /kb/220/Q220042/
 	
 	=============================================================================
 	
+
+{% endraw %}

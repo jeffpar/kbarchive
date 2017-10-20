@@ -6,6 +6,8 @@ permalink: /kb/107/Q107465/
 
 ## Q107465: FIX: ClassWizard Floating-Point Parsing Errors
 
+{% raw %}
+
 	Article: Q107465
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0
@@ -79,3 +81,5 @@ permalink: /kb/107/Q107465/
 	
 	=============================================================================
 	
+
+{% endraw %}

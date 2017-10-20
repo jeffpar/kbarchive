@@ -6,6 +6,8 @@ permalink: /kb/166/Q166785/
 
 ## Q166785: WD97: Cannot Undo Resizing of ActiveX Controls
 
+{% raw %}
+
 	Article: Q166785
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/166/Q166785/
 	
 	=============================================================================
 	
+
+{% endraw %}

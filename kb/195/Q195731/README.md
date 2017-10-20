@@ -6,6 +6,8 @@ permalink: /kb/195/Q195731/
 
 ## Q195731: XCON: MTA Stops and Numerous Events Appear in Event Log
 
+{% raw %}
+
 	Article: Q195731
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -95,3 +97,5 @@ permalink: /kb/195/Q195731/
 	
 	=============================================================================
 	
+
+{% endraw %}

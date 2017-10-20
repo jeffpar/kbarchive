@@ -6,6 +6,8 @@ permalink: /kb/205/Q205402/
 
 ## Q205402: FIX: ClassView Doesn't Show Derived Classes in Embedded Namespac
 
+{% raw %}
+
 	Article: Q205402
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -87,3 +89,5 @@ permalink: /kb/205/Q205402/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85344/
 
 ## Q85344: FAX: Questions That Need to Be Answered During Installation
 
+{% raw %}
+
 	Article: Q85344
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -49,3 +51,5 @@ permalink: /kb/085/Q85344/
 	
 	=============================================================================
 	
+
+{% endraw %}

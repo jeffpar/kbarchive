@@ -6,6 +6,8 @@ permalink: /kb/159/Q159172/
 
 ## Q159172: XCON: Attachments from Wang Office are Losing Filenames
 
+{% raw %}
+
 	Article: Q159172
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/159/Q159172/
 	
 	=============================================================================
 	
+
+{% endraw %}

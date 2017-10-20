@@ -6,6 +6,8 @@ permalink: /kb/178/Q178202/
 
 ## Q178202: Fix for Loss of Data Records or Partial Records Written to Disk
 
+{% raw %}
+
 	Article: Q178202
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.0,4.0
@@ -85,3 +87,5 @@ permalink: /kb/178/Q178202/
 	
 	=============================================================================
 	
+
+{% endraw %}

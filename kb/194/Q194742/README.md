@@ -6,6 +6,8 @@ permalink: /kb/194/Q194742/
 
 ## Q194742: XFOR: Internet Mail Service Support for user@&#91;IP Address&#93; Format
 
+{% raw %}
+
 	Article: Q194742
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -84,3 +86,5 @@ permalink: /kb/194/Q194742/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/268/Q268825/
 
 ## Q268825: 'Unable to Initialize KRNL32.EXE' Error Message
 
+{% raw %}
+
 	Article: Q268825
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/268/Q268825/
 	
 	=============================================================================
 	
+
+{% endraw %}

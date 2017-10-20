@@ -6,6 +6,8 @@ permalink: /kb/141/Q141440/
 
 ## Q141440: PRB: Paste Link Fails in Microsoft Excel
 
+{% raw %}
+
 	Article: Q141440
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -98,3 +100,5 @@ permalink: /kb/141/Q141440/
 	
 	=============================================================================
 	
+
+{% endraw %}

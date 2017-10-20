@@ -6,6 +6,8 @@ permalink: /kb/240/Q240140/
 
 ## Q240140: Incorrect Domain Logon List After Moving Users to New Domain
 
+{% raw %}
+
 	Article: Q240140
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/240/Q240140/
 	
 	=============================================================================
 	
+
+{% endraw %}

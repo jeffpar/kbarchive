@@ -6,6 +6,8 @@ permalink: /kb/254/Q254264/
 
 ## Q254264: XADM: Autoforwarding Rule to a Deleted Custom Recipient NDRs
 
+{% raw %}
+
 	Article: Q254264
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -87,3 +89,5 @@ permalink: /kb/254/Q254264/
 	
 	=============================================================================
 	
+
+{% endraw %}

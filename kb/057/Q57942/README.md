@@ -6,6 +6,8 @@ permalink: /kb/057/Q57942/
 
 ## Q57942: PRB: UNKNOWN WARNING May Result from Corrupt Error Message File
 
+{% raw %}
+
 	Article: Q57942
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,6.0,6.0a,6.0ax
@@ -78,3 +80,5 @@ permalink: /kb/057/Q57942/
 	
 	=============================================================================
 	
+
+{% endraw %}

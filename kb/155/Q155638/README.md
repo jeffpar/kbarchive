@@ -6,6 +6,8 @@ permalink: /kb/155/Q155638/
 
 ## Q155638: Monster Truck Madness: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q155638
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/155/Q155638/
 	
 	=============================================================================
 	
+
+{% endraw %}

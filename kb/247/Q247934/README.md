@@ -6,6 +6,8 @@ permalink: /kb/247/Q247934/
 
 ## Q247934: XADM: Events 1000 and 4096 Starting InterOrg Sync Tool
 
+{% raw %}
+
 	Article: Q247934
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -77,3 +79,5 @@ permalink: /kb/247/Q247934/
 	
 	=============================================================================
 	
+
+{% endraw %}

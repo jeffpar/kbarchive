@@ -6,6 +6,8 @@ permalink: /kb/195/Q195894/
 
 ## Q195894: XADM: Access Violation While Processing Long DBCS BinHex Files
 
+{% raw %}
+
 	Article: Q195894
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -73,3 +75,5 @@ permalink: /kb/195/Q195894/
 	
 	=============================================================================
 	
+
+{% endraw %}

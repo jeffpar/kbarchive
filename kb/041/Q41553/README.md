@@ -6,6 +6,8 @@ permalink: /kb/041/Q41553/
 
 ## Q41553: scanf, sscanf, fscanf Fail on the Regular Expression
 
+{% raw %}
+
 	Article: Q41553
 	Product(s): See article
 	Version(s): 2.00
@@ -55,3 +57,5 @@ permalink: /kb/041/Q41553/
 	
 	Note: The format string "%9s" is not adequate because it stops
 	scanning when white space is encountered.
+
+{% endraw %}

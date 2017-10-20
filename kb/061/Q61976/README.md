@@ -6,6 +6,8 @@ permalink: /kb/061/Q61976/
 
 ## Q61976: -Gi with Certain Optimizations Creates No .MDT File
 
+{% raw %}
+
 	Article: Q61976
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -22,3 +24,5 @@ permalink: /kb/061/Q61976/
 	
 	This behavior is by design and is due to code generation differences,
 	which the .MDT file cannot track from compilation to compilation.
+
+{% endraw %}

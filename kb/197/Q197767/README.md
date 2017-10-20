@@ -6,6 +6,8 @@ permalink: /kb/197/Q197767/
 
 ## Q197767: WD97: Inserting Caption into Paragraph Applies Caption Style
 
+{% raw %}
+
 	Article: Q197767
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -54,3 +56,5 @@ permalink: /kb/197/Q197767/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132623/
 
 ## Q132623: Mixer Does Not Work After Upgrading to Windows 95
 
+{% raw %}
+
 	Article: Q132623
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/132/Q132623/
 	
 	=============================================================================
 	
+
+{% endraw %}

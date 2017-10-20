@@ -6,6 +6,8 @@ permalink: /kb/202/Q202052/
 
 ## Q202052: 3Dlabs Permedia 2 Video Drivers Cause Problems Under SP4
 
+{% raw %}
+
 	Article: Q202052
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/202/Q202052/
 	
 	=============================================================================
 	
+
+{% endraw %}

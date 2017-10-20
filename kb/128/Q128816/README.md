@@ -6,6 +6,8 @@ permalink: /kb/128/Q128816/
 
 ## Q128816: PRB: Cannot Access MAPI Under Win32s
 
+{% raw %}
+
 	Article: Q128816
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -65,3 +67,5 @@ permalink: /kb/128/Q128816/
 	
 	=============================================================================
 	
+
+{% endraw %}

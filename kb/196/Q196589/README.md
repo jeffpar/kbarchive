@@ -6,6 +6,8 @@ permalink: /kb/196/Q196589/
 
 ## Q196589: Extended Characters are Displayed Incorrectly in Convlog.exe
 
+{% raw %}
+
 	Article: Q196589
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -56,3 +58,5 @@ permalink: /kb/196/Q196589/
 	
 	=============================================================================
 	
+
+{% endraw %}

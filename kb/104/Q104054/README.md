@@ -6,6 +6,8 @@ permalink: /kb/104/Q104054/
 
 ## Q104054: PRB: Calling Screen from Another Without Jumping a READ Level
 
+{% raw %}
+
 	Article: Q104054
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.5x,2.6,2.6a; WINDOWS:2.5x,2.6,2.6a,3.0
@@ -128,3 +130,5 @@ permalink: /kb/104/Q104054/
 	
 	=============================================================================
 	
+
+{% endraw %}

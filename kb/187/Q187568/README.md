@@ -6,6 +6,8 @@ permalink: /kb/187/Q187568/
 
 ## Q187568: HOWTO: Create Your Own Bitmap Object Class
 
+{% raw %}
+
 	Article: Q187568
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -480,3 +482,5 @@ permalink: /kb/187/Q187568/
 	
 	=============================================================================
 	
+
+{% endraw %}

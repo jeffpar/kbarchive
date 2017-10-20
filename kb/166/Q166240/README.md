@@ -6,6 +6,8 @@ permalink: /kb/166/Q166240/
 
 ## Q166240: TEST_RTS_AND_POST Doesn't Return After Host or LAN Failure
 
+{% raw %}
+
 	Article: Q166240
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -72,3 +74,5 @@ permalink: /kb/166/Q166240/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145816/
 
 ## Q145816: How to Access Report's Data Environment While the Report Runs
 
+{% raw %}
+
 	Article: Q145816
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -84,3 +86,5 @@ permalink: /kb/145/Q145816/
 	
 	=============================================================================
 	
+
+{% endraw %}

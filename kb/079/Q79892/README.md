@@ -6,6 +6,8 @@ permalink: /kb/079/Q79892/
 
 ## Q79892: MS-DOS LABEL Command May Truncate Spaces
 
+{% raw %}
+
 	Article: Q79892
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -75,3 +77,5 @@ permalink: /kb/079/Q79892/
 	
 	=============================================================================
 	
+
+{% endraw %}

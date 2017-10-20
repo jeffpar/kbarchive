@@ -6,6 +6,8 @@ permalink: /kb/257/Q257558/
 
 ## Q257558: Microsoft Help Desk for Microsoft Office 2000 Comments and Corre
 
+{% raw %}
+
 	Article: Q257558
 	Product(s): Microsoft Press
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/257/Q257558/
 	
 	=============================================================================
 	
+
+{% endraw %}

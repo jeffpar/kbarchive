@@ -6,6 +6,8 @@ permalink: /kb/031/Q31571/
 
 ## Q31571: INKEY&#36; Cannot Input Bytes for CTRL-BREAK Keystroke
 
+{% raw %}
+
 	Article: Q31571
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -30,3 +32,5 @@ permalink: /kb/031/Q31571/
 	
 	3. Page 218 of "Microsoft BASIC Compiler Version 6.00 for MS OS/2 and
 	   MS-DOS: BASIC Language Reference"
+
+{% endraw %}

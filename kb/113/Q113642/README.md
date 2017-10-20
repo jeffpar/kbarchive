@@ -6,6 +6,8 @@ permalink: /kb/113/Q113642/
 
 ## Q113642: README.TXT: Microsoft MS-DOS 6.21 Upgrade (Part 2 of 3)
 
+{% raw %}
+
 	Article: Q113642
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.21
@@ -661,3 +663,5 @@ permalink: /kb/113/Q113642/
 	
 	=============================================================================
 	
+
+{% endraw %}

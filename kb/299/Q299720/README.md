@@ -6,6 +6,8 @@ permalink: /kb/299/Q299720/
 
 ## Q299720: MapPoint 2002: Contents of the Readme.wri File
 
+{% raw %}
+
 	Article: Q299720
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -266,3 +268,5 @@ permalink: /kb/299/Q299720/
 	
 	=============================================================================
 	
+
+{% endraw %}

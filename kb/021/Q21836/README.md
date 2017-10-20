@@ -6,6 +6,8 @@ permalink: /kb/021/Q21836/
 
 ## Q21836: Length of Strings, String Descriptors in Compiler, Interpreter
 
+{% raw %}
+
 	Article: Q21836
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -29,3 +31,5 @@ permalink: /kb/021/Q21836/
 	string descriptors, with 1 byte of length followed by 2 bytes of
 	address. String variables may contain up to 255 characters in GW-BASIC
 	and IBM BASICA.
+
+{% endraw %}

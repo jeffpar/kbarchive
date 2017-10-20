@@ -6,6 +6,8 @@ permalink: /kb/085/Q85486/
 
 ## Q85486: CTRL+ALT+DEL Requires Reboot in Windows Version 3.1
 
+{% raw %}
+
 	Article: Q85486
 	Product(s): Microsoft Programming Utilities
 	Version(s): 3.07,4.0,4.01,4.1
@@ -41,3 +43,5 @@ permalink: /kb/085/Q85486/
 	
 	=============================================================================
 	
+
+{% endraw %}

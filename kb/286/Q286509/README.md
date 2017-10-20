@@ -6,6 +6,8 @@ permalink: /kb/286/Q286509/
 
 ## Q286509: Error Message: No GPS Device Found on This Machine...
 
+{% raw %}
+
 	Article: Q286509
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -364,3 +366,5 @@ permalink: /kb/286/Q286509/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176688/
 
 ## Q176688: WD97: Recorded Macro to Insert AutoText from Add-in Fails
 
+{% raw %}
+
 	Article: Q176688
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -106,3 +108,5 @@ permalink: /kb/176/Q176688/
 	
 	=============================================================================
 	
+
+{% endraw %}

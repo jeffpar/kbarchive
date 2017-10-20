@@ -6,6 +6,8 @@ permalink: /kb/090/Q90549/
 
 ## Q90549: Novell NETX.COM May Reset System Time
 
+{% raw %}
+
 	Article: Q90549
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -87,3 +89,5 @@ permalink: /kb/090/Q90549/
 	
 	=============================================================================
 	
+
+{% endraw %}

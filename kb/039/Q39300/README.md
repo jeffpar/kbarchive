@@ -6,6 +6,8 @@ permalink: /kb/039/Q39300/
 
 ## Q39300: Mac DOS: No Error Message if Invalid Value in MAIL.INI
 
+{% raw %}
+
 	Article: Q39300
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.37
@@ -53,3 +55,5 @@ permalink: /kb/039/Q39300/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/080/Q80155/
 
 ## Q80155: PaintJet Printing May Default to LPT1 with Other Port Selected
 
+{% raw %}
+
 	Article: Q80155
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -63,3 +65,5 @@ permalink: /kb/080/Q80155/
 	
 	=============================================================================
 	
+
+{% endraw %}

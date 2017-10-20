@@ -6,6 +6,8 @@ permalink: /kb/177/Q177983/
 
 ## Q177983: Stop 0xA in Netbt.sys with Greater Than 64 Adapters
 
+{% raw %}
+
 	Article: Q177983
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -75,3 +77,5 @@ permalink: /kb/177/Q177983/
 	
 	=============================================================================
 	
+
+{% endraw %}

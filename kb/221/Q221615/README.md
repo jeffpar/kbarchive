@@ -6,6 +6,8 @@ permalink: /kb/221/Q221615/
 
 ## Q221615: FIX: Form Wizard Error # 11 in AddDetail with Long Table Name
 
+{% raw %}
+
 	Article: Q221615
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -77,3 +79,5 @@ permalink: /kb/221/Q221615/
 	
 	=============================================================================
 	
+
+{% endraw %}

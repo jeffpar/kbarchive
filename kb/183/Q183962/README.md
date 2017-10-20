@@ -6,6 +6,8 @@ permalink: /kb/183/Q183962/
 
 ## Q183962: WD97: Box Border Produces Unexpected Results
 
+{% raw %}
+
 	Article: Q183962
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -93,3 +95,5 @@ permalink: /kb/183/Q183962/
 	
 	=============================================================================
 	
+
+{% endraw %}

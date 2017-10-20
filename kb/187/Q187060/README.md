@@ -6,6 +6,8 @@ permalink: /kb/187/Q187060/
 
 ## Q187060: Printer Test Page Says Windows NT
 
+{% raw %}
+
 	Article: Q187060
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -45,3 +47,5 @@ permalink: /kb/187/Q187060/
 	
 	=============================================================================
 	
+
+{% endraw %}

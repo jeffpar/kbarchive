@@ -6,6 +6,8 @@ permalink: /kb/086/Q86531/
 
 ## Q86531: Only One or Two Icons in Control Panel
 
+{% raw %}
+
 	Article: Q86531
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -71,3 +73,5 @@ permalink: /kb/086/Q86531/
 	
 	=============================================================================
 	
+
+{% endraw %}

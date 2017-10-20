@@ -6,6 +6,8 @@ permalink: /kb/141/Q141705/
 
 ## Q141705: How to Set Up Directory Annotation for Internet Server FTP
 
+{% raw %}
+
 	Article: Q141705
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0,3.0,4.0
@@ -88,3 +90,5 @@ permalink: /kb/141/Q141705/
 	
 	=============================================================================
 	
+
+{% endraw %}

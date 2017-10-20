@@ -6,6 +6,8 @@ permalink: /kb/191/Q191912/
 
 ## Q191912: FIX: Constituent Control Validate Event Can Fail on UserControl
 
+{% raw %}
+
 	Article: Q191912
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -149,3 +151,5 @@ permalink: /kb/191/Q191912/
 	
 	=============================================================================
 	
+
+{% endraw %}

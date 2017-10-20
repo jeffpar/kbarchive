@@ -6,6 +6,8 @@ permalink: /kb/118/Q118360/
 
 ## Q118360: HP ColorSmart Not Directly Supported in Windows NT
 
+{% raw %}
+
 	Article: Q118360
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -46,3 +48,5 @@ permalink: /kb/118/Q118360/
 	
 	=============================================================================
 	
+
+{% endraw %}

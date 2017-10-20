@@ -6,6 +6,8 @@ permalink: /kb/168/Q168733/
 
 ## Q168733: WD97: Template Layout Changes When Opened in Word
 
+{% raw %}
+
 	Article: Q168733
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -78,3 +80,5 @@ permalink: /kb/168/Q168733/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129938/
 
 ## Q129938: PRB: Moving Off 'Sub' Doesn't Create 'End Sub'
 
+{% raw %}
+
 	Article: Q129938
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -111,3 +113,5 @@ permalink: /kb/129/Q129938/
 	
 	=============================================================================
 	
+
+{% endraw %}

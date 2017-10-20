@@ -6,6 +6,8 @@ permalink: /kb/257/Q257607/
 
 ## Q257607: Programming Applications for Microsoft Windows Comments and Corr
 
+{% raw %}
+
 	Article: Q257607
 	Product(s): Microsoft Press
 	Version(s): 
@@ -260,3 +262,5 @@ permalink: /kb/257/Q257607/
 	
 	=============================================================================
 	
+
+{% endraw %}

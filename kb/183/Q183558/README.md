@@ -6,6 +6,8 @@ permalink: /kb/183/Q183558/
 
 ## Q183558: Conformance to ADO 2.0 and OLE DB 2.0
 
+{% raw %}
+
 	Article: Q183558
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -144,3 +146,5 @@ permalink: /kb/183/Q183558/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119253/
 
 ## Q119253: ATT: ADPROC.EXE Allows AT&amp;Tand SMTP Gateways to Coexist
 
+{% raw %}
+
 	Article: Q119253
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0,1.1
@@ -39,3 +41,5 @@ permalink: /kb/119/Q119253/
 	
 	=============================================================================
 	
+
+{% endraw %}

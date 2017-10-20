@@ -6,6 +6,8 @@ permalink: /kb/119/Q119872/
 
 ## Q119872: PRB: Error A2032 Using Indexed Addressing
 
+{% raw %}
+
 	Article: Q119872
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -74,3 +76,5 @@ permalink: /kb/119/Q119872/
 	
 	=============================================================================
 	
+
+{% endraw %}

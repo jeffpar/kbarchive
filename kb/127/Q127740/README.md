@@ -6,6 +6,8 @@ permalink: /kb/127/Q127740/
 
 ## Q127740: Eicon WAN Services V3R2 Problems with SNA Server
 
+{% raw %}
+
 	Article: Q127740
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1
@@ -62,3 +64,5 @@ permalink: /kb/127/Q127740/
 	
 	=============================================================================
 	
+
+{% endraw %}

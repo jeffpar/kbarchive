@@ -6,6 +6,8 @@ permalink: /kb/215/Q215411/
 
 ## Q215411: BUG: VBCE: Some MessageBox Options Not Implemented
 
+{% raw %}
+
 	Article: Q215411
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -70,3 +72,5 @@ permalink: /kb/215/Q215411/
 	
 	=============================================================================
 	
+
+{% endraw %}

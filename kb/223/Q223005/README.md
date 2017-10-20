@@ -6,6 +6,8 @@ permalink: /kb/223/Q223005/
 
 ## Q223005: XFOR: RTF Information Lost When Sent Through GroupWise Connector
 
+{% raw %}
+
 	Article: Q223005
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -52,3 +54,5 @@ permalink: /kb/223/Q223005/
 	
 	=============================================================================
 	
+
+{% endraw %}

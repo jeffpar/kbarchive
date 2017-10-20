@@ -6,6 +6,8 @@ permalink: /kb/042/Q42598/
 
 ## Q42598: RDFILE.C And WRFILE.C Are Incorrect in QuickC's On-Line Help
 
+{% raw %}
+
 	Article: Q42598
 	Product(s): See article
 	Version(s): 2.00
@@ -43,3 +45,5 @@ permalink: /kb/042/Q42598/
 	   c:\\testfile.asc
 	
 	Now the file will compile, link, and run correctly.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/212/Q212943/
 
 ## Q212943: SMS: Alpha Versions Not Listed Under Product Compliance
 
+{% raw %}
+
 	Article: Q212943
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -61,3 +63,5 @@ permalink: /kb/212/Q212943/
 	
 	=============================================================================
 	
+
+{% endraw %}

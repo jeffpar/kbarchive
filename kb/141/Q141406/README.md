@@ -6,6 +6,8 @@ permalink: /kb/141/Q141406/
 
 ## Q141406: Dangerous Creatures: WindowShade Causes Screen Redraw Problem
 
+{% raw %}
+
 	Article: Q141406
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -65,3 +67,5 @@ permalink: /kb/141/Q141406/
 	
 	=============================================================================
 	
+
+{% endraw %}

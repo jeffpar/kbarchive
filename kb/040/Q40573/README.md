@@ -6,6 +6,8 @@ permalink: /kb/040/Q40573/
 
 ## Q40573: Problems with Using the Digital Output of a VGA Adapter
 
+{% raw %}
+
 	Article: Q40573
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -40,3 +42,5 @@ permalink: /kb/040/Q40573/
 	of a VGA adapter is a non-standard hardware configuration (the digital
 	output of a VGA graphics adapter is non-standard). The behavior of a
 	non-standard hardware configuration is unpredictable.
+
+{% endraw %}

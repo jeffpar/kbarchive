@@ -6,6 +6,8 @@ permalink: /kb/105/Q105163/
 
 ## Q105163: PC WSPlus: How to Change User Name Displayed on the Desktop
 
+{% raw %}
+
 	Article: Q105163
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -75,3 +77,5 @@ permalink: /kb/105/Q105163/
 	
 	=============================================================================
 	
+
+{% endraw %}

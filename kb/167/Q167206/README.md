@@ -6,6 +6,8 @@ permalink: /kb/167/Q167206/
 
 ## Q167206: XFOR: Extension LSQVIEW Could Not Be Loaded
 
+{% raw %}
+
 	Article: Q167206
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.2; winnt:4.0,5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/167/Q167206/
 	
 	=============================================================================
 	
+
+{% endraw %}

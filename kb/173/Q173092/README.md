@@ -6,6 +6,8 @@ permalink: /kb/173/Q173092/
 
 ## Q173092: FIX: /Og Causes C1001 Traversing Non-Trivial List of Pointers
 
+{% raw %}
+
 	Article: Q173092
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0
@@ -98,3 +100,5 @@ permalink: /kb/173/Q173092/
 	
 	=============================================================================
 	
+
+{% endraw %}

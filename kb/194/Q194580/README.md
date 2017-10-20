@@ -6,6 +6,8 @@ permalink: /kb/194/Q194580/
 
 ## Q194580: HOWTO: Print a Composite Image From a RichTextBox
 
+{% raw %}
+
 	Article: Q194580
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -122,3 +124,5 @@ permalink: /kb/194/Q194580/
 	
 	=============================================================================
 	
+
+{% endraw %}

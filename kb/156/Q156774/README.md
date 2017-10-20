@@ -6,6 +6,8 @@ permalink: /kb/156/Q156774/
 
 ## Q156774: PRB: Cannot Find Setup.exe Error Installing to NT 4.0
 
+{% raw %}
+
 	Article: Q156774
 	Product(s): Microsoft FoxPro
 	Version(s): 5.00
@@ -105,3 +107,5 @@ permalink: /kb/156/Q156774/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248142/
 
 ## Q248142: Default System Date Behavior in Windows NT 4.0 and Windows 2000
 
+{% raw %}
+
 	Article: Q248142
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -66,3 +68,5 @@ permalink: /kb/248/Q248142/
 	
 	=============================================================================
 	
+
+{% endraw %}

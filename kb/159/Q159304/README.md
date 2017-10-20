@@ -6,6 +6,8 @@ permalink: /kb/159/Q159304/
 
 ## Q159304: XADM: Quoted-Printable Is Used in Mixed DBCS/SBCS Messages
 
+{% raw %}
+
 	Article: Q159304
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -57,3 +59,5 @@ permalink: /kb/159/Q159304/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/059/Q59765/
 
 ## Q59765: ISAMCVT.EXE Fails to Convert db/LIB File, Try Packing First
 
+{% raw %}
+
 	Article: Q59765
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,7.0
@@ -59,3 +61,5 @@ permalink: /kb/059/Q59765/
 	
 	=============================================================================
 	
+
+{% endraw %}

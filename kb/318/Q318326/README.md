@@ -6,6 +6,8 @@ permalink: /kb/318/Q318326/
 
 ## Q318326: INFO: Index Server: Docs That Are Supported by Office Filter
 
+{% raw %}
+
 	Article: Q318326
 	Product(s): Internet Information Server
 	Version(s): 2.0,3.0
@@ -68,3 +70,5 @@ permalink: /kb/318/Q318326/
 	
 	=============================================================================
 	
+
+{% endraw %}

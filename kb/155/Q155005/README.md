@@ -6,6 +6,8 @@ permalink: /kb/155/Q155005/
 
 ## Q155005: DOC: COleDateTime No Longer Accepts 2-Digit Years
 
+{% raw %}
+
 	Article: Q155005
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2
@@ -61,3 +63,5 @@ permalink: /kb/155/Q155005/
 	
 	=============================================================================
 	
+
+{% endraw %}

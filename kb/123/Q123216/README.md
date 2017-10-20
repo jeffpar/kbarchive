@@ -6,6 +6,8 @@ permalink: /kb/123/Q123216/
 
 ## Q123216: Keyboard Interface Not Available for MS-DOS Based Applications
 
+{% raw %}
+
 	Article: Q123216
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50
@@ -58,3 +60,5 @@ permalink: /kb/123/Q123216/
 	
 	=============================================================================
 	
+
+{% endraw %}

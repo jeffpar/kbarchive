@@ -6,6 +6,8 @@ permalink: /kb/222/Q222160/
 
 ## Q222160: Security Configuration Editor Has Several UI-Related Problems
 
+{% raw %}
+
 	Article: Q222160
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -100,3 +102,5 @@ permalink: /kb/222/Q222160/
 	
 	=============================================================================
 	
+
+{% endraw %}

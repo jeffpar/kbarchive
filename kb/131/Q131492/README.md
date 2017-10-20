@@ -6,6 +6,8 @@ permalink: /kb/131/Q131492/
 
 ## Q131492: Recurring Appointment Dialog Box: ALT+Y Doesn't Work
 
+{% raw %}
+
 	Article: Q131492
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -42,3 +44,5 @@ permalink: /kb/131/Q131492/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183559/
 
 ## Q183559: IDBSchemaRowset::GetSchemas Returns No Information
 
+{% raw %}
+
 	Article: Q183559
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -56,3 +58,5 @@ permalink: /kb/183/Q183559/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145669/
 
 ## Q145669: INFO: A Comparison of Visual C++ Products
 
+{% raw %}
+
 	Article: Q145669
 	Product(s): Microsoft C Compiler
 	Version(s): WIN3X:1.0,1.5,1.51,1.52;WINNT:1.0,2.0;
@@ -200,3 +202,5 @@ permalink: /kb/145/Q145669/
 	
 	=============================================================================
 	
+
+{% endraw %}

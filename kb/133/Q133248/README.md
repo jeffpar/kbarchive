@@ -6,6 +6,8 @@ permalink: /kb/133/Q133248/
 
 ## Q133248: Microsoft Plus! for Windows 95 Questions and Answers
 
+{% raw %}
+
 	Article: Q133248
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -150,3 +152,5 @@ permalink: /kb/133/Q133248/
 	
 	=============================================================================
 	
+
+{% endraw %}

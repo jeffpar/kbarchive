@@ -6,6 +6,8 @@ permalink: /kb/063/Q63273/
 
 ## Q63273: Editing Before First Line in Procedure Can Cause QB Problems
 
+{% raw %}
+
 	Article: Q63273
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -58,3 +60,5 @@ permalink: /kb/063/Q63273/
 	To edit more easily before the first line in a SUB or FUNCTION, you
 	can save the file in text format and use a different editor or word
 	processor to edit the code.
+
+{% endraw %}

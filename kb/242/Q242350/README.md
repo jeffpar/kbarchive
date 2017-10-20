@@ -6,6 +6,8 @@ permalink: /kb/242/Q242350/
 
 ## Q242350: SQL Server 7.0 Administrator's Companion Comments and Correction
 
+{% raw %}
+
 	Article: Q242350
 	Product(s): Microsoft Press
 	Version(s): 
@@ -129,3 +131,5 @@ permalink: /kb/242/Q242350/
 	
 	=============================================================================
 	
+
+{% endraw %}

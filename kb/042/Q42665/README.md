@@ -6,6 +6,8 @@ permalink: /kb/042/Q42665/
 
 ## Q42665: &quot;Bad Record Length&quot; GET#n,,x&#36; Variable-Length String from File
 
+{% raw %}
+
 	Article: Q42665
 	Product(s): See article
 	Version(s): 4.00b 4.50
@@ -77,3 +79,5 @@ permalink: /kb/042/Q42665/
 	  PRINT VarString$
 	NEXT i
 	CLOSE #1
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/262/Q262215/
 
 ## Q262215: XCON: Simple Mail Transfer Protocol Messages Received with Empty
 
+{% raw %}
+
 	Article: Q262215
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.0 SP1,5.0 SP2,5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -68,3 +70,5 @@ permalink: /kb/262/Q262215/
 	
 	=============================================================================
 	
+
+{% endraw %}

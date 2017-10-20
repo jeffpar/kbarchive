@@ -6,6 +6,8 @@ permalink: /kb/223/Q223259/
 
 ## Q223259: How To Install FTP from NTOP on Microsoft Cluster Server 1.0
 
+{% raw %}
+
 	Article: Q223259
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/223/Q223259/
 	
 	=============================================================================
 	
+
+{% endraw %}

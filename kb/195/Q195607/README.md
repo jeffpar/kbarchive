@@ -6,6 +6,8 @@ permalink: /kb/195/Q195607/
 
 ## Q195607: WD97: How to List All Built-in Styles Using Formatting Toolbar
 
+{% raw %}
+
 	Article: Q195607
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -54,3 +56,5 @@ permalink: /kb/195/Q195607/
 	
 	=============================================================================
 	
+
+{% endraw %}

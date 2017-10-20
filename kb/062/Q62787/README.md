@@ -6,6 +6,8 @@ permalink: /kb/062/Q62787/
 
 ## Q62787: PageMaker Versions Compatible with Windows 3.0 and 3.1
 
+{% raw %}
+
 	Article: Q62787
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/062/Q62787/
 	
 	=============================================================================
 	
+
+{% endraw %}

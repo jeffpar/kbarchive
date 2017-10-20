@@ -6,6 +6,8 @@ permalink: /kb/281/Q281415/
 
 ## Q281415: Systems Management Server Performance Monitor Objects Missing
 
+{% raw %}
+
 	Article: Q281415
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -82,3 +84,5 @@ permalink: /kb/281/Q281415/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/076/Q76523/
 
 ## Q76523: PC Shell Requires LOADFIX with MS-DOS in the HMA
 
+{% raw %}
+
 	Article: Q76523
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -52,3 +54,5 @@ permalink: /kb/076/Q76523/
 	
 	=============================================================================
 	
+
+{% endraw %}

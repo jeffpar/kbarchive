@@ -6,6 +6,8 @@ permalink: /kb/199/Q199682/
 
 ## Q199682: PRB: ATL Object Wizard Cannot Add ATL Object to Existing File
 
+{% raw %}
+
 	Article: Q199682
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -85,3 +87,5 @@ permalink: /kb/199/Q199682/
 	
 	=============================================================================
 	
+
+{% endraw %}

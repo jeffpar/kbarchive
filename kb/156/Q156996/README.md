@@ -6,6 +6,8 @@ permalink: /kb/156/Q156996/
 
 ## Q156996: XFOR: Postoffice Lists Disappearing from GAL
 
+{% raw %}
+
 	Article: Q156996
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -138,3 +140,5 @@ permalink: /kb/156/Q156996/
 	
 	=============================================================================
 	
+
+{% endraw %}

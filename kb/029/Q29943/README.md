@@ -6,6 +6,8 @@ permalink: /kb/029/Q29943/
 
 ## Q29943: SCREEN Function Gives COLOR Attribute; Foreground, Background
 
+{% raw %}
+
 	Article: Q29943
 	Product(s): See article
 	Version(s): 1.00 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -64,3 +66,5 @@ permalink: /kb/029/Q29943/
 	X% = X% AND &H7F          ' Makes sure blinking bit (bit 8) is off.
 	PRINT "Foreground: "; X% MOD 16
 	PRINT "Background: "; X% \ 16
+
+{% endraw %}

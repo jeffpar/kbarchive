@@ -6,6 +6,8 @@ permalink: /kb/099/Q99201/
 
 ## Q99201: PC Forms: Installing Forms Designer on Shared Windows or Mail
 
+{% raw %}
+
 	Article: Q99201
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2,3.2a,3.5
@@ -92,3 +94,5 @@ permalink: /kb/099/Q99201/
 	
 	=============================================================================
 	
+
+{% endraw %}

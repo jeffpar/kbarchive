@@ -6,6 +6,8 @@ permalink: /kb/256/Q256934/
 
 ## Q256934: S&amp;T 2000 Error Message: Cannot Launch Main Application
 
+{% raw %}
+
 	Article: Q256934
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -114,3 +116,5 @@ permalink: /kb/256/Q256934/
 	
 	=============================================================================
 	
+
+{% endraw %}

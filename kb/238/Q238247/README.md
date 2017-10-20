@@ -6,6 +6,8 @@ permalink: /kb/238/Q238247/
 
 ## Q238247: SMS: Invdos.exe Does Not Compensate for Change of Month
 
+{% raw %}
+
 	Article: Q238247
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -96,3 +98,5 @@ permalink: /kb/238/Q238247/
 	
 	=============================================================================
 	
+
+{% endraw %}

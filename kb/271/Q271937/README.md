@@ -6,6 +6,8 @@ permalink: /kb/271/Q271937/
 
 ## Q271937: SMS: Systems Management Server 2.0 Support of SQL Server 2000
 
+{% raw %}
+
 	Article: Q271937
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -51,3 +53,5 @@ permalink: /kb/271/Q271937/
 	
 	=============================================================================
 	
+
+{% endraw %}

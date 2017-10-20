@@ -6,6 +6,8 @@ permalink: /kb/230/Q230211/
 
 ## Q230211: Tdpipe.sys Symbols Are Missing in Terminal Server Service Pack 4
 
+{% raw %}
+
 	Article: Q230211
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -56,3 +58,5 @@ permalink: /kb/230/Q230211/
 	
 	=============================================================================
 	
+
+{% endraw %}

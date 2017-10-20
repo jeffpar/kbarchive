@@ -6,6 +6,8 @@ permalink: /kb/248/Q248348/
 
 ## Q248348: PRB: SaveSetting and GetSetting Are Not Available in VB WebClass
 
+{% raw %}
+
 	Article: Q248348
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -103,3 +105,5 @@ permalink: /kb/248/Q248348/
 	
 	=============================================================================
 	
+
+{% endraw %}

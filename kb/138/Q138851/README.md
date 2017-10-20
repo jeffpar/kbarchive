@@ -6,6 +6,8 @@ permalink: /kb/138/Q138851/
 
 ## Q138851: PRB: SQL-SELECT INTO TABLE Creates Free Table Not DB Table
 
+{% raw %}
+
 	Article: Q138851
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -50,3 +52,5 @@ permalink: /kb/138/Q138851/
 	
 	=============================================================================
 	
+
+{% endraw %}

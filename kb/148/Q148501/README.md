@@ -6,6 +6,8 @@ permalink: /kb/148/Q148501/
 
 ## Q148501: Preventing PCI Resource Conflicts on Intel-Based Computers
 
+{% raw %}
+
 	Article: Q148501
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -112,3 +114,5 @@ permalink: /kb/148/Q148501/
 	
 	=============================================================================
 	
+
+{% endraw %}

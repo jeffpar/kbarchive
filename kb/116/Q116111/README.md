@@ -6,6 +6,8 @@ permalink: /kb/116/Q116111/
 
 ## Q116111: Parallel and Printing Problems After Upgrading to WFWG 3.11
 
+{% raw %}
+
 	Article: Q116111
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -62,3 +64,5 @@ permalink: /kb/116/Q116111/
 	
 	=============================================================================
 	
+
+{% endraw %}

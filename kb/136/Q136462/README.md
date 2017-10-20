@@ -6,6 +6,8 @@ permalink: /kb/136/Q136462/
 
 ## Q136462: SMC WD800x Network Adapter Settings Not Detected
 
+{% raw %}
+
 	Article: Q136462
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/136/Q136462/
 	
 	=============================================================================
 	
+
+{% endraw %}

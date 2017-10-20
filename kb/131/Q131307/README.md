@@ -6,6 +6,8 @@ permalink: /kb/131/Q131307/
 
 ## Q131307: Unable to Find File Name with Extended-ASCII Characters in NTFS
 
+{% raw %}
+
 	Article: Q131307
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/131/Q131307/
 	
 	=============================================================================
 	
+
+{% endraw %}

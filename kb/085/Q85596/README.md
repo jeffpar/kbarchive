@@ -6,6 +6,8 @@ permalink: /kb/085/Q85596/
 
 ## Q85596: BUG: SETCOLORTABLE Escape Disables Dithering
 
+{% raw %}
+
 	Article: Q85596
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -74,3 +76,5 @@ permalink: /kb/085/Q85596/
 	
 	=============================================================================
 	
+
+{% endraw %}

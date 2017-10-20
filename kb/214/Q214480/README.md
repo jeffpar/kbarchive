@@ -6,6 +6,8 @@ permalink: /kb/214/Q214480/
 
 ## Q214480: Err Msg: Incorrect Password or Unknown Username
 
+{% raw %}
+
 	Article: Q214480
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/214/Q214480/
 	
 	=============================================================================
 	
+
+{% endraw %}

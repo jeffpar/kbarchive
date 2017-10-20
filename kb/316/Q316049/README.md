@@ -6,6 +6,8 @@ permalink: /kb/316/Q316049/
 
 ## Q316049: PRB: Default Image Error When You Start Pocket PC 2002 Emulation
 
+{% raw %}
+
 	Article: Q316049
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0
@@ -57,3 +59,5 @@ permalink: /kb/316/Q316049/
 	
 	=============================================================================
 	
+
+{% endraw %}

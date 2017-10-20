@@ -6,6 +6,8 @@ permalink: /kb/190/Q190265/
 
 ## Q190265: HOWTO: Find the Day that Daylight Savings Time Occurs
 
+{% raw %}
+
 	Article: Q190265
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,2.6a,3.0; WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0,3.0b,5.0,5.0a,6.0
@@ -107,3 +109,5 @@ permalink: /kb/190/Q190265/
 	
 	=============================================================================
 	
+
+{% endraw %}

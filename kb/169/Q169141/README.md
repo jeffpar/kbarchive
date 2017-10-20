@@ -6,6 +6,8 @@ permalink: /kb/169/Q169141/
 
 ## Q169141: NetBIOS and Hostname Resolution for MS-Client and LM 2.2c
 
+{% raw %}
+
 	Article: Q169141
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2c 3.0
@@ -69,3 +71,5 @@ permalink: /kb/169/Q169141/
 	
 	=============================================================================
 	
+
+{% endraw %}

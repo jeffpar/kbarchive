@@ -6,6 +6,8 @@ permalink: /kb/085/Q85003/
 
 ## Q85003: Character Map Does Not Show Italic or Bold Fonts
 
+{% raw %}
+
 	Article: Q85003
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/085/Q85003/
 	
 	=============================================================================
 	
+
+{% endraw %}

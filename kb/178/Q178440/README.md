@@ -6,6 +6,8 @@ permalink: /kb/178/Q178440/
 
 ## Q178440: SMS Training: Smartest.exe Returns Error Or Has No Questions
 
+{% raw %}
+
 	Article: Q178440
 	Product(s): Microsoft Press
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/178/Q178440/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/308/Q308659/
 
 ## Q308659: SMS: CTRL+N Closes SMS Administrator Console
 
+{% raw %}
+
 	Article: Q308659
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -48,3 +50,5 @@ permalink: /kb/308/Q308659/
 	
 	=============================================================================
 	
+
+{% endraw %}

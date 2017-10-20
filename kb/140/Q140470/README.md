@@ -6,6 +6,8 @@ permalink: /kb/140/Q140470/
 
 ## Q140470: WD97: Saving Document as HTML Causes Table Formatting Changes
 
+{% raw %}
+
 	Article: Q140470
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/140/Q140470/
 	
 	=============================================================================
 	
+
+{% endraw %}

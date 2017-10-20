@@ -6,6 +6,8 @@ permalink: /kb/145/Q145923/
 
 ## Q145923: XADM: How to Send Mail with the &quot;Anonymous&quot; Sender Name
 
+{% raw %}
+
 	Article: Q145923
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -89,3 +91,5 @@ permalink: /kb/145/Q145923/
 	
 	=============================================================================
 	
+
+{% endraw %}

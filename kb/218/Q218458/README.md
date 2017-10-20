@@ -6,6 +6,8 @@ permalink: /kb/218/Q218458/
 
 ## Q218458: Err Msg: CoGetClassObject, 0x80080005 Server Execution Failed
 
+{% raw %}
+
 	Article: Q218458
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -141,3 +143,5 @@ permalink: /kb/218/Q218458/
 	
 	=============================================================================
 	
+
+{% endraw %}

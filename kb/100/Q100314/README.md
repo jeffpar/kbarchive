@@ -6,6 +6,8 @@ permalink: /kb/100/Q100314/
 
 ## Q100314: PRB: SDK Install Makes Microsoft Tools Group Unavailable
 
+{% raw %}
+
 	Article: Q100314
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -75,3 +77,5 @@ permalink: /kb/100/Q100314/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/077/Q77698/
 
 ## Q77698: How to Determine if Multimedia Windows Is Running
 
+{% raw %}
+
 	Article: Q77698
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0
@@ -50,3 +52,5 @@ permalink: /kb/077/Q77698/
 	
 	=============================================================================
 	
+
+{% endraw %}

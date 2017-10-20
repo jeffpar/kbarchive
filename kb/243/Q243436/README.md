@@ -6,6 +6,8 @@ permalink: /kb/243/Q243436/
 
 ## Q243436: DHCP Audit Log Reports Wrong Address for BAD_ADDRESS Entry
 
+{% raw %}
+
 	Article: Q243436
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/243/Q243436/
 	
 	=============================================================================
 	
+
+{% endraw %}

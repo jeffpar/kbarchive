@@ -6,6 +6,8 @@ permalink: /kb/096/Q96501/
 
 ## Q96501: PC Win: Incorrect Unread Message Count
 
+{% raw %}
+
 	Article: Q96501
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b
@@ -67,3 +69,5 @@ permalink: /kb/096/Q96501/
 	
 	=============================================================================
 	
+
+{% endraw %}

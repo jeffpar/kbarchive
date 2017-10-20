@@ -6,6 +6,8 @@ permalink: /kb/196/Q196417/
 
 ## Q196417: XADM: Move Server Performance Issue in Large Configurations
 
+{% raw %}
+
 	Article: Q196417
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -51,3 +53,5 @@ permalink: /kb/196/Q196417/
 	
 	=============================================================================
 	
+
+{% endraw %}

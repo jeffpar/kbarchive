@@ -6,6 +6,8 @@ permalink: /kb/146/Q146615/
 
 ## Q146615: MAC Bookshelf 1995: Bookshelf 1995 Edition Readme Contents
 
+{% raw %}
+
 	Article: Q146615
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -428,3 +430,5 @@ permalink: /kb/146/Q146615/
 	
 	=============================================================================
 	
+
+{% endraw %}

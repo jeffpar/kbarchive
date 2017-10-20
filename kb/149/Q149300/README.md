@@ -6,6 +6,8 @@ permalink: /kb/149/Q149300/
 
 ## Q149300: How to Use ToolTips w/ Objects that Do/Do Not Have ToolTipText
 
+{% raw %}
+
 	Article: Q149300
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -82,3 +84,5 @@ permalink: /kb/149/Q149300/
 	
 	=============================================================================
 	
+
+{% endraw %}

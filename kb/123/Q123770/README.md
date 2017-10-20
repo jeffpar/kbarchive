@@ -6,6 +6,8 @@ permalink: /kb/123/Q123770/
 
 ## Q123770: SETLS32 Fails To Remap Windows NT Clients
 
+{% raw %}
+
 	Article: Q123770
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -60,3 +62,5 @@ permalink: /kb/123/Q123770/
 	
 	=============================================================================
 	
+
+{% endraw %}

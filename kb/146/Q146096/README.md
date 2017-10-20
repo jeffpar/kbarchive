@@ -6,6 +6,8 @@ permalink: /kb/146/Q146096/
 
 ## Q146096: XCLN: Hidden Groups in Attendees List Not Invited to Meeting
 
+{% raw %}
+
 	Article: Q146096
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -81,3 +83,5 @@ permalink: /kb/146/Q146096/
 	
 	=============================================================================
 	
+
+{% endraw %}

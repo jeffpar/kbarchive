@@ -6,6 +6,8 @@ permalink: /kb/243/Q243759/
 
 ## Q243759: XCON: MTA May Stop on 9405 Errors with Access Violation
 
+{% raw %}
+
 	Article: Q243759
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -66,3 +68,5 @@ permalink: /kb/243/Q243759/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/288/Q288405/
 
 ## Q288405: How to Debug Index Server
 
+{% raw %}
+
 	Article: Q288405
 	Product(s): Internet Information Server
 	Version(s): 2.0
@@ -68,3 +70,5 @@ permalink: /kb/288/Q288405/
 	
 	=============================================================================
 	
+
+{% endraw %}

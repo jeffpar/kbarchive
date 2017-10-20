@@ -6,6 +6,8 @@ permalink: /kb/073/Q73357/
 
 ## Q73357: Dithered Text in Windows
 
+{% raw %}
+
 	Article: Q73357
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -83,3 +85,5 @@ permalink: /kb/073/Q73357/
 	
 	=============================================================================
 	
+
+{% endraw %}

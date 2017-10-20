@@ -6,6 +6,8 @@ permalink: /kb/085/Q85366/
 
 ## Q85366: Maintenance Mode Windows Setup Doesn't Run from Inside Windows
 
+{% raw %}
+
 	Article: Q85366
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/085/Q85366/
 	
 	=============================================================================
 	
+
+{% endraw %}

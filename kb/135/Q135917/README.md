@@ -6,6 +6,8 @@ permalink: /kb/135/Q135917/
 
 ## Q135917: Cannot Connect to Novell Drive - Account is Locked Out
 
+{% raw %}
+
 	Article: Q135917
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -72,3 +74,5 @@ permalink: /kb/135/Q135917/
 	
 	=============================================================================
 	
+
+{% endraw %}

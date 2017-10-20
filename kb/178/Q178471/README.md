@@ -6,6 +6,8 @@ permalink: /kb/178/Q178471/
 
 ## Q178471: STOP 0XA Caused by Race Condition in VDM and Process Delete
 
+{% raw %}
+
 	Article: Q178471
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/178/Q178471/
 	
 	=============================================================================
 	
+
+{% endraw %}

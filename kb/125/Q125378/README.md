@@ -6,6 +6,8 @@ permalink: /kb/125/Q125378/
 
 ## Q125378: FoxPro Advisor Magazine Articles June 1994
 
+{% raw %}
+
 	Article: Q125378
 	Product(s): Microsoft FoxPro
 	Version(s): 2.60a
@@ -84,3 +86,5 @@ permalink: /kb/125/Q125378/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176217/
 
 ## Q176217: PRB: Mastering VB 5.0 Err Msg: The Version of ActiveMovie...
 
+{% raw %}
+
 	Article: Q176217
 	Product(s): Microsoft Mastering Series
 	Version(s): WINDOWS:
@@ -101,3 +103,5 @@ permalink: /kb/176/Q176217/
 	
 	=============================================================================
 	
+
+{% endraw %}

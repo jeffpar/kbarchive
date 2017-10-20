@@ -6,6 +6,8 @@ permalink: /kb/130/Q130977/
 
 ## Q130977: Windows 95 Explorer GP Faults during Remote Control
 
+{% raw %}
+
 	Article: Q130977
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:95; winnt:1.1
@@ -49,3 +51,5 @@ permalink: /kb/130/Q130977/
 	
 	=============================================================================
 	
+
+{% endraw %}

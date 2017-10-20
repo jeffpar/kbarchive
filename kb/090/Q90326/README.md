@@ -6,6 +6,8 @@ permalink: /kb/090/Q90326/
 
 ## Q90326: Schedule+ Err Msg: Schedule Transport DLL Does Not Support...
 
+{% raw %}
+
 	Article: Q90326
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:1.0,3.1,3.11
@@ -86,3 +88,5 @@ permalink: /kb/090/Q90326/
 	
 	=============================================================================
 	
+
+{% endraw %}

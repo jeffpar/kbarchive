@@ -6,6 +6,8 @@ permalink: /kb/175/Q175141/
 
 ## Q175141: Cluster Service Ignores Network Cards
 
+{% raw %}
+
 	Article: Q175141
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/175/Q175141/
 	
 	=============================================================================
 	
+
+{% endraw %}

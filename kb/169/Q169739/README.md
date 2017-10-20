@@ -6,6 +6,8 @@ permalink: /kb/169/Q169739/
 
 ## Q169739: WD97: Error Message on Clicking Help Button for Convert to Frame
 
+{% raw %}
+
 	Article: Q169739
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -62,3 +64,5 @@ permalink: /kb/169/Q169739/
 	
 	=============================================================================
 	
+
+{% endraw %}

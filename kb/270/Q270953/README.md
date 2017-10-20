@@ -6,6 +6,8 @@ permalink: /kb/270/Q270953/
 
 ## Q270953: EWA2001 Err Msg: Unable to Run Encarta with Low System Resources
 
+{% raw %}
+
 	Article: Q270953
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/270/Q270953/
 	
 	=============================================================================
 	
+
+{% endraw %}

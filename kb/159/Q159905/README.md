@@ -6,6 +6,8 @@ permalink: /kb/159/Q159905/
 
 ## Q159905: Some Mouse Pointers Disappear After Installing Microsoft Plus!
 
+{% raw %}
+
 	Article: Q159905
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/159/Q159905/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143423/
 
 ## Q143423: DOCERR: Columns Collection Does Not Have a Font Property
 
+{% raw %}
+
 	Article: Q143423
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -62,3 +64,5 @@ permalink: /kb/143/Q143423/
 	
 	=============================================================================
 	
+
+{% endraw %}

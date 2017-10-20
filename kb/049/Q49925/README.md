@@ -6,6 +6,8 @@ permalink: /kb/049/Q49925/
 
 ## Q49925: CHAIN or RUN from Quick Library Can Hang QuickBASIC Editor
 
+{% raw %}
+
 	Article: Q49925
 	Product(s): See article
 	Version(s): 4.00b 4.50
@@ -80,3 +82,5 @@ permalink: /kb/049/Q49925/
 	   '       ** Leave this as source code **
 	   PRINT "In Program 2"
 	   END
+
+{% endraw %}

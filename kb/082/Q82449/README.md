@@ -6,6 +6,8 @@ permalink: /kb/082/Q82449/
 
 ## Q82449: FujiGolf GP Faults When Icon Is Dropped on Application Window
 
+{% raw %}
+
 	Article: Q82449
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/082/Q82449/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196675/
 
 ## Q196675: WD97: How to Apply Shading to Words Instead of Paragraphs
 
+{% raw %}
+
 	Article: Q196675
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -60,3 +62,5 @@ permalink: /kb/196/Q196675/
 	
 	=============================================================================
 	
+
+{% endraw %}

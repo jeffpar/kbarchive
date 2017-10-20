@@ -6,6 +6,8 @@ permalink: /kb/127/Q127135/
 
 ## Q127135: Setup Error 402 with Ositech PCMCIA Network Card
 
+{% raw %}
+
 	Article: Q127135
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -63,3 +65,5 @@ permalink: /kb/127/Q127135/
 	
 	=============================================================================
 	
+
+{% endraw %}

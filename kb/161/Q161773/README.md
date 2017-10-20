@@ -6,6 +6,8 @@ permalink: /kb/161/Q161773/
 
 ## Q161773: IBM Client Access/95 Setup Stops Responding
 
+{% raw %}
+
 	Article: Q161773
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -75,3 +77,5 @@ permalink: /kb/161/Q161773/
 	
 	=============================================================================
 	
+
+{% endraw %}

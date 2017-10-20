@@ -6,6 +6,8 @@ permalink: /kb/229/Q229272/
 
 ## Q229272: FIX: Datacombo Returns -2147217848 (80040e4e) Change Canceled
 
+{% raw %}
+
 	Article: Q229272
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.1,2.5,6.0
@@ -150,3 +152,5 @@ permalink: /kb/229/Q229272/
 	
 	=============================================================================
 	
+
+{% endraw %}

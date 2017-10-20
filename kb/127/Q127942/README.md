@@ -6,6 +6,8 @@ permalink: /kb/127/Q127942/
 
 ## Q127942: How to Place a Timer in the Main Window
 
+{% raw %}
+
 	Article: Q127942
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -93,3 +95,5 @@ permalink: /kb/127/Q127942/
 	
 	=============================================================================
 	
+
+{% endraw %}

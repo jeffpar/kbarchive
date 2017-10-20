@@ -6,6 +6,8 @@ permalink: /kb/118/Q118381/
 
 ## Q118381: Making and Running APING/APINGD Samples
 
+{% raw %}
+
 	Article: Q118381
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.11,3.0,4.0
@@ -135,3 +137,5 @@ permalink: /kb/118/Q118381/
 	
 	=============================================================================
 	
+
+{% endraw %}

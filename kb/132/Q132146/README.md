@@ -6,6 +6,8 @@ permalink: /kb/132/Q132146/
 
 ## Q132146: Dogs: Movies Choppy with Some Video Drivers
 
+{% raw %}
+
 	Article: Q132146
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -65,3 +67,5 @@ permalink: /kb/132/Q132146/
 	
 	=============================================================================
 	
+
+{% endraw %}

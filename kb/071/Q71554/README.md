@@ -6,6 +6,8 @@ permalink: /kb/071/Q71554/
 
 ## Q71554: BUG: Bad Results Displayed by CodeView for Huge COMMON Blocks
 
+{% raw %}
+
 	Article: Q71554
 	Product(s): Microsoft Programming Utilities
 	Version(s): 2.3,3.0,3.11
@@ -99,3 +101,5 @@ permalink: /kb/071/Q71554/
 	
 	=============================================================================
 	
+
+{% endraw %}

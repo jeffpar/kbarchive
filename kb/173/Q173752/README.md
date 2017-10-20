@@ -6,6 +6,8 @@ permalink: /kb/173/Q173752/
 
 ## Q173752: WinNT ERR: Access Denied with User Manager
 
+{% raw %}
+
 	Article: Q173752
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/173/Q173752/
 	
 	=============================================================================
 	
+
+{% endraw %}

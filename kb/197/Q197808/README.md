@@ -6,6 +6,8 @@ permalink: /kb/197/Q197808/
 
 ## Q197808: Domain Trust Relationship Cannot be Created
 
+{% raw %}
+
 	Article: Q197808
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0,4.5
@@ -66,3 +68,5 @@ permalink: /kb/197/Q197808/
 	
 	=============================================================================
 	
+
+{% endraw %}

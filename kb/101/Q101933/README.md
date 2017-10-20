@@ -6,6 +6,8 @@ permalink: /kb/101/Q101933/
 
 ## Q101933: PC DirSync: Import Accepts All External Address Lists
 
+{% raw %}
+
 	Article: Q101933
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a,3.2
@@ -59,3 +61,5 @@ permalink: /kb/101/Q101933/
 	
 	=============================================================================
 	
+
+{% endraw %}

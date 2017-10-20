@@ -6,6 +6,8 @@ permalink: /kb/251/Q251024/
 
 ## Q251024: BUG: Converting VFP3 Project with Form Activates the Debugger
 
+{% raw %}
+
 	Article: Q251024
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -79,3 +81,5 @@ permalink: /kb/251/Q251024/
 	
 	=============================================================================
 	
+
+{% endraw %}

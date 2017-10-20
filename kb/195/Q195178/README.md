@@ -6,6 +6,8 @@ permalink: /kb/195/Q195178/
 
 ## Q195178: INFO: Setting the IPX Internal Network Number During Unattended
 
+{% raw %}
+
 	Article: Q195178
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -110,3 +112,5 @@ permalink: /kb/195/Q195178/
 	
 	=============================================================================
 	
+
+{% endraw %}

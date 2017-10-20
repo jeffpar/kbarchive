@@ -6,6 +6,8 @@ permalink: /kb/260/Q260567/
 
 ## Q260567: BUG: LNK2019 When Building For Pocket PC Emulation
 
+{% raw %}
+
 	Article: Q260567
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0
@@ -82,3 +84,5 @@ permalink: /kb/260/Q260567/
 	
 	=============================================================================
 	
+
+{% endraw %}

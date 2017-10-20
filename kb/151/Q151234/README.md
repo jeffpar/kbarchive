@@ -6,6 +6,8 @@ permalink: /kb/151/Q151234/
 
 ## Q151234: Packets Misrouted on RAS Client w/Multiple Outbound Connection
 
+{% raw %}
+
 	Article: Q151234
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -89,3 +91,5 @@ permalink: /kb/151/Q151234/
 	
 	=============================================================================
 	
+
+{% endraw %}

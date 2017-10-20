@@ -6,6 +6,8 @@ permalink: /kb/217/Q217160/
 
 ## Q217160: XADM: Read Receipt Is Not Sent or To Line Is Blank
 
+{% raw %}
+
 	Article: Q217160
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -118,3 +120,5 @@ permalink: /kb/217/Q217160/
 	
 	=============================================================================
 	
+
+{% endraw %}

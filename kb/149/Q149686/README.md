@@ -6,6 +6,8 @@ permalink: /kb/149/Q149686/
 
 ## Q149686: Cannot Navigate from Online Viewer Titles at 2400 bps
 
+{% raw %}
+
 	Article: Q149686
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -49,3 +51,5 @@ permalink: /kb/149/Q149686/
 	
 	=============================================================================
 	
+
+{% endraw %}

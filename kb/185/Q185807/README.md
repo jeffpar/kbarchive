@@ -6,6 +6,8 @@ permalink: /kb/185/Q185807/
 
 ## Q185807: SMS: &quot;Unable to Load Resource DLL&quot; Starting Database Mgr Tool
 
+{% raw %}
+
 	Article: Q185807
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -92,3 +94,5 @@ permalink: /kb/185/Q185807/
 	
 	=============================================================================
 	
+
+{% endraw %}

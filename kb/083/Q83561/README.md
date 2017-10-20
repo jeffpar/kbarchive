@@ -6,6 +6,8 @@ permalink: /kb/083/Q83561/
 
 ## Q83561: Using Setup /C During Setup of Windows 3.1
 
+{% raw %}
+
 	Article: Q83561
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/083/Q83561/
 	
 	=============================================================================
 	
+
+{% endraw %}

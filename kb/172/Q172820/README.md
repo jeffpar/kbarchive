@@ -6,6 +6,8 @@ permalink: /kb/172/Q172820/
 
 ## Q172820: WD97: E-mail Client Is Unable to Use WordMail as Editor
 
+{% raw %}
+
 	Article: Q172820
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97; winnt:4.0,5.5
@@ -88,3 +90,5 @@ permalink: /kb/172/Q172820/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/215/Q215106/
 
 ## Q215106: SMS: Windows 3.1 Error After Uninstalling Remote Tool
 
+{% raw %}
+
 	Article: Q215106
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -72,3 +74,5 @@ permalink: /kb/215/Q215106/
 	
 	=============================================================================
 	
+
+{% endraw %}

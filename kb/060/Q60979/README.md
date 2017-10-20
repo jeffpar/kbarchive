@@ -6,6 +6,8 @@ permalink: /kb/060/Q60979/
 
 ## Q60979: Flight Simulator: Two or More Players in Multiplayer Mode
 
+{% raw %}
+
 	Article: Q60979
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/060/Q60979/
 	
 	=============================================================================
 	
+
+{% endraw %}

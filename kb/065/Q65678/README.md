@@ -6,6 +6,8 @@ permalink: /kb/065/Q65678/
 
 ## Q65678: Running the WordPerfect Tutorial from an Icon with Windows
 
+{% raw %}
+
 	Article: Q65678
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -72,3 +74,5 @@ permalink: /kb/065/Q65678/
 	
 	=============================================================================
 	
+
+{% endraw %}

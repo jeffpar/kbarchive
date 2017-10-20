@@ -6,6 +6,8 @@ permalink: /kb/139/Q139592/
 
 ## Q139592: Prompted for Password When Connecting to Windows NT
 
+{% raw %}
+
 	Article: Q139592
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; Win2000:95; winnt:4.0; :
@@ -122,3 +124,5 @@ permalink: /kb/139/Q139592/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/116/Q116460/
 
 ## Q116460: BUG: Debugging With Mono And VGA Can Cause Screen Corruption
 
+{% raw %}
+
 	Article: Q116460
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -143,3 +145,5 @@ permalink: /kb/116/Q116460/
 	
 	=============================================================================
 	
+
+{% endraw %}

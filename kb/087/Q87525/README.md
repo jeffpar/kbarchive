@@ -6,6 +6,8 @@ permalink: /kb/087/Q87525/
 
 ## Q87525: HOW TO: Obtain a Copy of the VESA SVGA Standard
 
+{% raw %}
+
 	Article: Q87525
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,4.1,5.0
@@ -55,3 +57,5 @@ permalink: /kb/087/Q87525/
 	
 	=============================================================================
 	
+
+{% endraw %}

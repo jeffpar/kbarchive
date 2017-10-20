@@ -6,6 +6,8 @@ permalink: /kb/046/Q46919/
 
 ## Q46919: MASM ALIGN Directive May Not Work Properly
 
+{% raw %}
+
 	Article: Q46919
 	Product(s): See article
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/046/Q46919/
 	
 	Microsoft is researching this problem and will post new information as
 	it becomes available.
+
+{% endraw %}

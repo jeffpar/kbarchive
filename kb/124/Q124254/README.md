@@ -6,6 +6,8 @@ permalink: /kb/124/Q124254/
 
 ## Q124254: README.JPN for Japan Scenery Add-On
 
+{% raw %}
+
 	Article: Q124254
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -315,3 +317,5 @@ permalink: /kb/124/Q124254/
 	
 	=============================================================================
 	
+
+{% endraw %}

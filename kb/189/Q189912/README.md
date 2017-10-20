@@ -6,6 +6,8 @@ permalink: /kb/189/Q189912/
 
 ## Q189912: BUG: RELEASE CLASSLIB in App or EXE Requires Use of ALIAS
 
+{% raw %}
+
 	Article: Q189912
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -67,3 +69,5 @@ permalink: /kb/189/Q189912/
 	
 	=============================================================================
 	
+
+{% endraw %}

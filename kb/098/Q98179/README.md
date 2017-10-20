@@ -6,6 +6,8 @@ permalink: /kb/098/Q98179/
 
 ## Q98179: Err Msg: You Started MemMaker with the /SESSION Switch...
 
+{% raw %}
+
 	Article: Q98179
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -80,3 +82,5 @@ permalink: /kb/098/Q98179/
 	
 	=============================================================================
 	
+
+{% endraw %}

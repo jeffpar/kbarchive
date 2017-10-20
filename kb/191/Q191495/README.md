@@ -6,6 +6,8 @@ permalink: /kb/191/Q191495/
 
 ## Q191495: BUG: VC++ Tools with Long File Name (LFN) Parameters Fail on NT
 
+{% raw %}
+
 	Article: Q191495
 	Product(s): Microsoft C Compiler
 	Version(s): 2000,3.5,3.51,4.0,5.0,6.0
@@ -183,3 +185,5 @@ permalink: /kb/191/Q191495/
 	
 	=============================================================================
 	
+
+{% endraw %}

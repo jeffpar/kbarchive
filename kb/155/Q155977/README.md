@@ -6,6 +6,8 @@ permalink: /kb/155/Q155977/
 
 ## Q155977: WD97: How to Install More Templates and Wizards
 
+{% raw %}
+
 	Article: Q155977
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -122,3 +124,5 @@ permalink: /kb/155/Q155977/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/260/Q260732/
 
 ## Q260732: StarLancer: Textures in the Cockpit Flash or Flicker
 
+{% raw %}
+
 	Article: Q260732
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -61,3 +63,5 @@ permalink: /kb/260/Q260732/
 	
 	=============================================================================
 	
+
+{% endraw %}

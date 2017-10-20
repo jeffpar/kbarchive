@@ -6,6 +6,8 @@ permalink: /kb/097/Q97075/
 
 ## Q97075: PC WRmt: Cannot Switch Tasks While Mail Waits for Retry Count
 
+{% raw %}
+
 	Article: Q97075
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -44,3 +46,5 @@ permalink: /kb/097/Q97075/
 	
 	=============================================================================
 	
+
+{% endraw %}

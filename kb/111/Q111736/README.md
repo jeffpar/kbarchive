@@ -6,6 +6,8 @@ permalink: /kb/111/Q111736/
 
 ## Q111736: Printing Postscript from Project, Task Bars Shaded or Darkened
 
+{% raw %}
+
 	Article: Q111736
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -47,3 +49,5 @@ permalink: /kb/111/Q111736/
 	
 	=============================================================================
 	
+
+{% endraw %}

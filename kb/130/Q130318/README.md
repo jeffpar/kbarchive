@@ -6,6 +6,8 @@ permalink: /kb/130/Q130318/
 
 ## Q130318: PC Win WRmt: Err Msg: Mail Driver Could Not Be Deactivated...
 
+{% raw %}
+
 	Article: Q130318
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -101,3 +103,5 @@ permalink: /kb/130/Q130318/
 	
 	=============================================================================
 	
+
+{% endraw %}

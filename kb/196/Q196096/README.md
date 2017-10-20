@@ -6,6 +6,8 @@ permalink: /kb/196/Q196096/
 
 ## Q196096: Client Application Can Use a Modem on SBS for Incoming Calls
 
+{% raw %}
+
 	Article: Q196096
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.0,4.0a,4.5
@@ -96,3 +98,5 @@ permalink: /kb/196/Q196096/
 	
 	=============================================================================
 	
+
+{% endraw %}

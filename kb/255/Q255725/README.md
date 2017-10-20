@@ -6,6 +6,8 @@ permalink: /kb/255/Q255725/
 
 ## Q255725: PRB: Error Message Accessing Objects Added to Visual FoxPro COM
 
+{% raw %}
+
 	Article: Q255725
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -108,3 +110,5 @@ permalink: /kb/255/Q255725/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157756/
 
 ## Q157756: Remote Control Problem with Matrox MGA Millennium PowerDesk
 
+{% raw %}
+
 	Article: Q157756
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -65,3 +67,5 @@ permalink: /kb/157/Q157756/
 	
 	=============================================================================
 	
+
+{% endraw %}

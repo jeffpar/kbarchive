@@ -6,6 +6,8 @@ permalink: /kb/022/Q22331/
 
 ## Q22331: &quot;Invalid Object Module&quot; Usually Caused by Old Version of LINK
 
+{% raw %}
+
 	Article: Q22331
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10 6.00 6.00a
@@ -66,3 +68,5 @@ permalink: /kb/022/Q22331/
 	specified in the PATH. Therefore, it is highly recommended that you
 	repeat the version number test from within your work directory once
 	you have implemented one of these solutions.
+
+{% endraw %}

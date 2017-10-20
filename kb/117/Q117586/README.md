@@ -6,6 +6,8 @@ permalink: /kb/117/Q117586/
 
 ## Q117586: FIX: &quot;Cannot Activate OLE Server&quot;; Graphic Doesn't Print
 
+{% raw %}
+
 	Article: Q117586
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x 2.6x
@@ -86,3 +88,5 @@ permalink: /kb/117/Q117586/
 	
 	=============================================================================
 	
+
+{% endraw %}

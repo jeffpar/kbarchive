@@ -6,6 +6,8 @@ permalink: /kb/294/Q294833/
 
 ## Q294833: ASP Script Cannot Use Type Libraries with UTF8 Codepage
 
+{% raw %}
+
 	Article: Q294833
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -136,3 +138,5 @@ permalink: /kb/294/Q294833/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/240/Q240641/
 
 ## Q240641: World Atlas 2000: Media Viewer Opens When You Draw a Zoom Box
 
+{% raw %}
+
 	Article: Q240641
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -86,3 +88,5 @@ permalink: /kb/240/Q240641/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199247/
 
 ## Q199247: XCON: Lsdxamex.exe Application Error Running LDE 3.2 Dirsync
 
+{% raw %}
+
 	Article: Q199247
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.2; winnt:5.5
@@ -72,3 +74,5 @@ permalink: /kb/199/Q199247/
 	
 	=============================================================================
 	
+
+{% endraw %}

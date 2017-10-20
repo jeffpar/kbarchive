@@ -6,6 +6,8 @@ permalink: /kb/140/Q140820/
 
 ## Q140820: Wrong Info in &quot;Select Client/Server Protocols&quot; Dialog
 
+{% raw %}
+
 	Article: Q140820
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -106,3 +108,5 @@ permalink: /kb/140/Q140820/
 	
 	=============================================================================
 	
+
+{% endraw %}

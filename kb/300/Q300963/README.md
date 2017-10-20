@@ -6,6 +6,8 @@ permalink: /kb/300/Q300963/
 
 ## Q300963: Games: Description of Error Reporting Tool
 
+{% raw %}
+
 	Article: Q300963
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -80,3 +82,5 @@ permalink: /kb/300/Q300963/
 	
 	=============================================================================
 	
+
+{% endraw %}

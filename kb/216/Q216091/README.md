@@ -6,6 +6,8 @@ permalink: /kb/216/Q216091/
 
 ## Q216091: GetHostByName() Returns IP Address of Disabled Interface
 
+{% raw %}
+
 	Article: Q216091
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -83,3 +85,5 @@ permalink: /kb/216/Q216091/
 	
 	=============================================================================
 	
+
+{% endraw %}

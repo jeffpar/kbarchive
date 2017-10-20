@@ -6,6 +6,8 @@ permalink: /kb/192/Q192087/
 
 ## Q192087: Error Code 0xc9ef18 or 0x120ef18 When Installing SBS
 
+{% raw %}
+
 	Article: Q192087
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0,4.0a
@@ -88,3 +90,5 @@ permalink: /kb/192/Q192087/
 	
 	=============================================================================
 	
+
+{% endraw %}

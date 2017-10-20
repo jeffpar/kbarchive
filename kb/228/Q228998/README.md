@@ -6,6 +6,8 @@ permalink: /kb/228/Q228998/
 
 ## Q228998: XADM: Trailing Space in Domain Name Allows Incorrect Mail Route
 
+{% raw %}
+
 	Article: Q228998
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -73,3 +75,5 @@ permalink: /kb/228/Q228998/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167252/
 
 ## Q167252: Windows 95 Stops Responding When PC Cillin 95 Starts
 
+{% raw %}
+
 	Article: Q167252
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -67,3 +69,5 @@ permalink: /kb/167/Q167252/
 	
 	=============================================================================
 	
+
+{% endraw %}

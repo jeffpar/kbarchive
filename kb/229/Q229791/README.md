@@ -6,6 +6,8 @@ permalink: /kb/229/Q229791/
 
 ## Q229791: XADM: Internet Newsgroup Folder Gets Replicated Automatically
 
+{% raw %}
+
 	Article: Q229791
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -102,3 +104,5 @@ permalink: /kb/229/Q229791/
 	
 	=============================================================================
 	
+
+{% endraw %}

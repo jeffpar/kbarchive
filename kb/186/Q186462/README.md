@@ -6,6 +6,8 @@ permalink: /kb/186/Q186462/
 
 ## Q186462: DHCPLOC Should Not Be Run from DHCP Servers
 
+{% raw %}
+
 	Article: Q186462
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -57,3 +59,5 @@ permalink: /kb/186/Q186462/
 	
 	=============================================================================
 	
+
+{% endraw %}

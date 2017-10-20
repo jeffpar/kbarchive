@@ -6,6 +6,8 @@ permalink: /kb/131/Q131898/
 
 ## Q131898: Fortran PowerStation Graphics Apps on Windows 95
 
+{% raw %}
+
 	Article: Q131898
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -97,3 +99,5 @@ permalink: /kb/131/Q131898/
 	
 	=============================================================================
 	
+
+{% endraw %}

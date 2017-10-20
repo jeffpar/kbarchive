@@ -6,6 +6,8 @@ permalink: /kb/198/Q198306/
 
 ## Q198306: FS98/2000: Flight Simulator Starts Minimized
 
+{% raw %}
+
 	Article: Q198306
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -83,3 +85,5 @@ permalink: /kb/198/Q198306/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/021/Q21902/
 
 ## Q21902: SHELL Can Give &quot;Out of Memory&quot; Error or Fragment Memory
 
+{% raw %}
+
 	Article: Q21902
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -45,3 +47,5 @@ permalink: /kb/021/Q21902/
 	Shell from the File menu. Examples of TSR programs are MSHERC.COM
 	(from QuickBASIC 4.50) and QBHERC.COM (from QuickBASIC 4.00/4.00b and
 	the BASIC compiler 6.00/6.00b).
+
+{% endraw %}

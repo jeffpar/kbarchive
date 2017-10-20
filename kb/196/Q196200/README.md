@@ -6,6 +6,8 @@ permalink: /kb/196/Q196200/
 
 ## Q196200: XWEB: CDO Does Incorrect Time Zone Correction
 
+{% raw %}
+
 	Article: Q196200
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -75,3 +77,5 @@ permalink: /kb/196/Q196200/
 	
 	=============================================================================
 	
+
+{% endraw %}

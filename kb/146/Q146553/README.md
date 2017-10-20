@@ -6,6 +6,8 @@ permalink: /kb/146/Q146553/
 
 ## Q146553: Other Systems Options Unavailable When Export
 
+{% raw %}
+
 	Article: Q146553
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -42,3 +44,5 @@ permalink: /kb/146/Q146553/
 	
 	=============================================================================
 	
+
+{% endraw %}

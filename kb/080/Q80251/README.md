@@ -6,6 +6,8 @@ permalink: /kb/080/Q80251/
 
 ## Q80251: PC Gen: Contents of Modem Script File BUSY.MDM
 
+{% raw %}
+
 	Article: Q80251
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e
@@ -80,3 +82,5 @@ permalink: /kb/080/Q80251/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/260/Q260230/
 
 ## Q260230: XADM: Error 4294966090 When Starting Information Store
 
+{% raw %}
+
 	Article: Q260230
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -98,3 +100,5 @@ permalink: /kb/260/Q260230/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66974/
 
 ## Q66974: WD97: Using the ASK Field with the IF Field in Word
 
+{% raw %}
+
 	Article: Q66974
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -39,7 +41,7 @@ permalink: /kb/066/Q66974/
 	
 	  {ASK Married "Are you married?" \*Firstcap}
 	  {ASK SpouseName {IF Married = "Yes" "What is your Spouse's Name?"
-	  "Type 'none'"} }
+	  "Type 'none'"}}
 	  {REF Married}
 	  {REF SpouseName}
 	
@@ -71,3 +73,5 @@ permalink: /kb/066/Q66974/
 	
 	=============================================================================
 	
+
+{% endraw %}

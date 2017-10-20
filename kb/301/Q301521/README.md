@@ -6,6 +6,8 @@ permalink: /kb/301/Q301521/
 
 ## Q301521: MSN Explorer Hangs When Outlook XP Requests Data From The Server
 
+{% raw %}
+
 	Article: Q301521
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -48,3 +50,5 @@ permalink: /kb/301/Q301521/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158404/
 
 ## Q158404: PRB: Cannot Start VFP from Run Open Line If Space in Path
 
+{% raw %}
+
 	Article: Q158404
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/158/Q158404/
 	
 	=============================================================================
 	
+
+{% endraw %}

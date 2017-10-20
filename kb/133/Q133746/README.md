@@ -6,6 +6,8 @@ permalink: /kb/133/Q133746/
 
 ## Q133746: Flight Simulator for MS-DOS: New Features in Version 5.1
 
+{% raw %}
+
 	Article: Q133746
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.1
@@ -101,3 +103,5 @@ permalink: /kb/133/Q133746/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/057/Q57385/
 
 ## Q57385: INT86OLD &amp; INT86XOLD Not in QB 4.50 or BASIC 7.00 Help, Manual
 
+{% raw %}
+
 	Article: Q57385
 	Product(s): See article
 	Version(s): 4.50
@@ -142,3 +144,5 @@ permalink: /kb/057/Q57385/
 	INARY%(AX) = &H3E00               'DOS function to close a file.
 	CALL INT86OLD(&H21,INARY%(),OUTARY%())
 	                                  'Perform the close.
+
+{% endraw %}

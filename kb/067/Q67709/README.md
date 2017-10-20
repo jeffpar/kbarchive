@@ -6,6 +6,8 @@ permalink: /kb/067/Q67709/
 
 ## Q67709: System Bitmaps Available Through LoadBitmap() Data
 
+{% raw %}
+
 	Article: Q67709
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 
@@ -210,3 +212,5 @@ permalink: /kb/067/Q67709/
 	
 	=============================================================================
 	
+
+{% endraw %}

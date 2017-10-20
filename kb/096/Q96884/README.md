@@ -6,6 +6,8 @@ permalink: /kb/096/Q96884/
 
 ## Q96884: PC Win: Can't Repair MMF on Novell Without File Scan Privilege
 
+{% raw %}
+
 	Article: Q96884
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b,3.2
@@ -62,3 +64,5 @@ permalink: /kb/096/Q96884/
 	
 	=============================================================================
 	
+
+{% endraw %}

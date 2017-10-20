@@ -6,6 +6,8 @@ permalink: /kb/175/Q175201/
 
 ## Q175201: UNCONF: MSB ErrMsg: Error 99 Starting Magic School Bus Programs
 
+{% raw %}
+
 	Article: Q175201
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -110,3 +112,5 @@ permalink: /kb/175/Q175201/
 	
 	=============================================================================
 	
+
+{% endraw %}

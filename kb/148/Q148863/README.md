@@ -6,6 +6,8 @@ permalink: /kb/148/Q148863/
 
 ## Q148863: Error Message: The System Has Detected a Conflict...
 
+{% raw %}
+
 	Article: Q148863
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -66,3 +68,5 @@ permalink: /kb/148/Q148863/
 	
 	=============================================================================
 	
+
+{% endraw %}

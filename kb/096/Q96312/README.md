@@ -6,6 +6,8 @@ permalink: /kb/096/Q96312/
 
 ## Q96312: SAMPLE: Windows Application to Unload DLLs from Memory
 
+{% raw %}
+
 	Article: Q96312
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -92,3 +94,5 @@ permalink: /kb/096/Q96312/
 	
 	=============================================================================
 	
+
+{% endraw %}

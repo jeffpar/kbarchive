@@ -6,6 +6,8 @@ permalink: /kb/129/Q129852/
 
 ## Q129852: PRB: GetActiveWindow Behaves Differently Under Windows NT
 
+{% raw %}
+
 	Article: Q129852
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -133,3 +135,5 @@ permalink: /kb/129/Q129852/
 	
 	=============================================================================
 	
+
+{% endraw %}

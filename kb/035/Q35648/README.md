@@ -6,6 +6,8 @@ permalink: /kb/035/Q35648/
 
 ## Q35648: None Assignment Must Be Lowercase
 
+{% raw %}
+
 	Article: Q35648
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -20,3 +22,5 @@ permalink: /kb/035/Q35648/
 	Backup:None (capitol N) in the TOOLS.INI file.
 	
 	The correct form is backup:none
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/236/Q236599/
 
 ## Q236599: Win32 SLI Application Ends Unexpectedly with No Errors
 
+{% raw %}
+
 	Article: Q236599
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2
@@ -74,3 +76,5 @@ permalink: /kb/236/Q236599/
 	
 	=============================================================================
 	
+
+{% endraw %}

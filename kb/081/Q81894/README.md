@@ -6,6 +6,8 @@ permalink: /kb/081/Q81894/
 
 ## Q81894: FIX: MASM Allows Alignments &gt; Segment Alignment
 
+{% raw %}
+
 	Article: Q81894
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -96,3 +98,5 @@ permalink: /kb/081/Q81894/
 	
 	=============================================================================
 	
+
+{% endraw %}

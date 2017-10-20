@@ -6,6 +6,8 @@ permalink: /kb/130/Q130940/
 
 ## Q130940: Inventory Update Reporting Interval
 
+{% raw %}
+
 	Article: Q130940
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -63,3 +65,5 @@ permalink: /kb/130/Q130940/
 	
 	=============================================================================
 	
+
+{% endraw %}

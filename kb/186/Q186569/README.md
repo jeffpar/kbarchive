@@ -6,6 +6,8 @@ permalink: /kb/186/Q186569/
 
 ## Q186569: Security Configuration in Terminal Server
 
+{% raw %}
+
 	Article: Q186569
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -84,3 +86,5 @@ permalink: /kb/186/Q186569/
 	
 	=============================================================================
 	
+
+{% endraw %}

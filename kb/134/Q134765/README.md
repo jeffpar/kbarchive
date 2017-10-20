@@ -6,6 +6,8 @@ permalink: /kb/134/Q134765/
 
 ## Q134765: Unknown Software Exception When Application Calls OpenGL
 
+{% raw %}
+
 	Article: Q134765
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/134/Q134765/
 	
 	=============================================================================
 	
+
+{% endraw %}

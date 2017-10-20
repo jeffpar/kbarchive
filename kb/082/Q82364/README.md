@@ -6,6 +6,8 @@ permalink: /kb/082/Q82364/
 
 ## Q82364: Long Pause During File Open with CD-ROM Drive
 
+{% raw %}
+
 	Article: Q82364
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/082/Q82364/
 	
 	=============================================================================
 	
+
+{% endraw %}

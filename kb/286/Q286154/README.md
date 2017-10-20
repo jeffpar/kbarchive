@@ -6,6 +6,8 @@ permalink: /kb/286/Q286154/
 
 ## Q286154: Newsgroup Changes Do Not Take Effect Until Restart NNTP Service
 
+{% raw %}
+
 	Article: Q286154
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -70,3 +72,5 @@ permalink: /kb/286/Q286154/
 	
 	=============================================================================
 	
+
+{% endraw %}

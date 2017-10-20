@@ -6,6 +6,8 @@ permalink: /kb/168/Q168384/
 
 ## Q168384: PRB: C2248: No Access for Friend Class in a Template Class
 
+{% raw %}
+
 	Article: Q168384
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -103,3 +105,5 @@ permalink: /kb/168/Q168384/
 	
 	=============================================================================
 	
+
+{% endraw %}

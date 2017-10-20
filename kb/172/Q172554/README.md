@@ -6,6 +6,8 @@ permalink: /kb/172/Q172554/
 
 ## Q172554: WinNT Err: Stop 0xA in Netbt.sys on Windows NT 3.51
 
+{% raw %}
+
 	Article: Q172554
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -64,3 +66,5 @@ permalink: /kb/172/Q172554/
 	
 	=============================================================================
 	
+
+{% endraw %}

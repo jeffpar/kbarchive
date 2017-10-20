@@ -6,6 +6,8 @@ permalink: /kb/120/Q120396/
 
 ## Q120396: PRB: Image Functions Fail with Image Outside of Viewport
 
+{% raw %}
+
 	Article: Q120396
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0a
@@ -88,3 +90,5 @@ permalink: /kb/120/Q120396/
 	
 	=============================================================================
 	
+
+{% endraw %}

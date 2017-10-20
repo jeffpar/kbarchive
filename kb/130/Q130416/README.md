@@ -6,6 +6,8 @@ permalink: /kb/130/Q130416/
 
 ## Q130416: List of and Location of Files Installed by Arcade 1.0
 
+{% raw %}
+
 	Article: Q130416
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -70,3 +72,5 @@ permalink: /kb/130/Q130416/
 	
 	=============================================================================
 	
+
+{% endraw %}

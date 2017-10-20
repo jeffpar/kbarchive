@@ -6,6 +6,8 @@ permalink: /kb/271/Q271524/
 
 ## Q271524: PRB: Oracle Synonyms Associated with Database Links Not Listed
 
+{% raw %}
+
 	Article: Q271524
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.0,2.1,2.5,2.6,2.7,Build 2.573.2927,Build 2.573.3513,Build 2.573.3711,Build 2.573.420
@@ -108,3 +110,5 @@ permalink: /kb/271/Q271524/
 	
 	=============================================================================
 	
+
+{% endraw %}

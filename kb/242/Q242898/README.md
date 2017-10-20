@@ -6,6 +6,8 @@ permalink: /kb/242/Q242898/
 
 ## Q242898: IIS Log File Naming Syntax
 
+{% raw %}
+
 	Article: Q242898
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -110,3 +112,5 @@ permalink: /kb/242/Q242898/
 	
 	=============================================================================
 	
+
+{% endraw %}

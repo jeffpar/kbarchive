@@ -6,6 +6,8 @@ permalink: /kb/199/Q199835/
 
 ## Q199835: ERD Recovery Process Halted - Insert Compaq SSD in Drive A
 
+{% raw %}
+
 	Article: Q199835
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -117,3 +119,5 @@ permalink: /kb/199/Q199835/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150281/
 
 ## Q150281: Unexplained DHCP Broadcasts Using Windows NT and RAS
 
+{% raw %}
+
 	Article: Q150281
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51 4.0
@@ -101,3 +103,5 @@ permalink: /kb/150/Q150281/
 	
 	=============================================================================
 	
+
+{% endraw %}

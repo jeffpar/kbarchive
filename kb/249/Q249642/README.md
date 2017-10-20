@@ -6,6 +6,8 @@ permalink: /kb/249/Q249642/
 
 ## Q249642: Golf 1999 Error Message: Run Time Error '11' Division by Zero
 
+{% raw %}
+
 	Article: Q249642
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -121,3 +123,5 @@ permalink: /kb/249/Q249642/
 	
 	=============================================================================
 	
+
+{% endraw %}

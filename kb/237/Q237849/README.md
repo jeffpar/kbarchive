@@ -6,6 +6,8 @@ permalink: /kb/237/Q237849/
 
 ## Q237849: FIPS 140-1 Validation for Cryptographic Service Providers
 
+{% raw %}
+
 	Article: Q237849
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP5
@@ -117,3 +119,5 @@ permalink: /kb/237/Q237849/
 	
 	=============================================================================
 	
+
+{% endraw %}

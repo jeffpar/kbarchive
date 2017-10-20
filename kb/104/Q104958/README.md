@@ -6,6 +6,8 @@ permalink: /kb/104/Q104958/
 
 ## Q104958: BUG: Oracle Driver Errors on Delimited Column Names
 
+{% raw %}
+
 	Article: Q104958
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/104/Q104958/
 	
 	=============================================================================
 	
+
+{% endraw %}

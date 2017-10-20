@@ -6,6 +6,8 @@ permalink: /kb/285/Q285987/
 
 ## Q285987: WD97: Picture or Object Does Not Appear in Word Document
 
+{% raw %}
+
 	Article: Q285987
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -162,3 +164,5 @@ permalink: /kb/285/Q285987/
 	
 	=============================================================================
 	
+
+{% endraw %}

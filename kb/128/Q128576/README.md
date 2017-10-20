@@ -6,6 +6,8 @@ permalink: /kb/128/Q128576/
 
 ## Q128576: PC WSPlus: Schedule+ Access Library Error Codes
 
+{% raw %}
+
 	Article: Q128576
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -82,3 +84,5 @@ permalink: /kb/128/Q128576/
 	
 	=============================================================================
 	
+
+{% endraw %}

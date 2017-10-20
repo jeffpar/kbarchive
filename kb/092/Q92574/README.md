@@ -6,6 +6,8 @@ permalink: /kb/092/Q92574/
 
 ## Q92574: NULL Character Causes Loss of Data in INI Files
 
+{% raw %}
+
 	Article: Q92574
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -73,3 +75,5 @@ permalink: /kb/092/Q92574/
 	
 	=============================================================================
 	
+
+{% endraw %}

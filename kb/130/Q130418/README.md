@@ -6,6 +6,8 @@ permalink: /kb/130/Q130418/
 
 ## Q130418: Write Caching on Boot Floppy Drive Causes WINNT.EXE to Fail
 
+{% raw %}
+
 	Article: Q130418
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/130/Q130418/
 	
 	=============================================================================
 	
+
+{% endraw %}

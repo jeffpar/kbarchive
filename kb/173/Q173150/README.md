@@ -6,6 +6,8 @@ permalink: /kb/173/Q173150/
 
 ## Q173150: WD97: Hyperlink to Anchor or Bookmark Goes to Top of Document
 
+{% raw %}
+
 	Article: Q173150
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -109,3 +111,5 @@ permalink: /kb/173/Q173150/
 	
 	=============================================================================
 	
+
+{% endraw %}

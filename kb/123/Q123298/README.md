@@ -6,6 +6,8 @@ permalink: /kb/123/Q123298/
 
 ## Q123298: RAS Errors 611 and 720 With PPP or SLIP
 
+{% raw %}
+
 	Article: Q123298
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.5,3.51,4.0
@@ -104,3 +106,5 @@ permalink: /kb/123/Q123298/
 	
 	=============================================================================
 	
+
+{% endraw %}

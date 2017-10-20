@@ -6,6 +6,8 @@ permalink: /kb/200/Q200967/
 
 ## Q200967: SMS: How to T-shoot Advertisements That Are Not Seen by Clients
 
+{% raw %}
+
 	Article: Q200967
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -100,3 +102,5 @@ permalink: /kb/200/Q200967/
 	
 	=============================================================================
 	
+
+{% endraw %}

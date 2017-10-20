@@ -6,6 +6,8 @@ permalink: /kb/190/Q190512/
 
 ## Q190512: HOWTO: Read Extender Properties from a UserControl
 
+{% raw %}
+
 	Article: Q190512
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/190/Q190512/
 	
 	=============================================================================
 	
+
+{% endraw %}

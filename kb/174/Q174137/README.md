@@ -6,6 +6,8 @@ permalink: /kb/174/Q174137/
 
 ## Q174137: Unable to Navigate Using Program Viewer in MSN
 
+{% raw %}
+
 	Article: Q174137
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -83,3 +85,5 @@ permalink: /kb/174/Q174137/
 	
 	=============================================================================
 	
+
+{% endraw %}

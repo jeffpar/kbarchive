@@ -6,6 +6,8 @@ permalink: /kb/090/Q90679/
 
 ## Q90679: PC Gen: Differences Among Mail Versions 3.0, 3.0a, and 3.0b
 
+{% raw %}
+
 	Article: Q90679
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -81,3 +83,5 @@ permalink: /kb/090/Q90679/
 	
 	=============================================================================
 	
+
+{% endraw %}

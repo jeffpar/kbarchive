@@ -6,6 +6,8 @@ permalink: /kb/165/Q165231/
 
 ## Q165231: WD97: Fax Wizard Leaves .tmp Files Behind
 
+{% raw %}
+
 	Article: Q165231
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -118,3 +120,5 @@ permalink: /kb/165/Q165231/
 	
 	=============================================================================
 	
+
+{% endraw %}

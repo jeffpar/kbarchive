@@ -6,6 +6,8 @@ permalink: /kb/028/Q28030/
 
 ## Q28030: QB Fast Load Format Source Code Cannot Be Used in MS CodeView
 
+{% raw %}
+
 	Article: Q28030
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10 | 6.00 6.00b 7.00 7.10
@@ -28,3 +30,5 @@ permalink: /kb/028/Q28030/
 	1. BC filename /Zi [other switches]
 	
 	2. LINK filename /Co [other switches]
+
+{% endraw %}

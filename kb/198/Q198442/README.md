@@ -6,6 +6,8 @@ permalink: /kb/198/Q198442/
 
 ## Q198442: XWEB: Chinese CHS and CHT Cannot Exist on Same OWA Server
 
+{% raw %}
+
 	Article: Q198442
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -63,3 +65,5 @@ permalink: /kb/198/Q198442/
 	
 	=============================================================================
 	
+
+{% endraw %}

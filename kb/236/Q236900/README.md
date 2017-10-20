@@ -6,6 +6,8 @@ permalink: /kb/236/Q236900/
 
 ## Q236900: XFOR: Notes Connector Corrupts Information During Dirsync
 
+{% raw %}
+
 	Article: Q236900
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -76,3 +78,5 @@ permalink: /kb/236/Q236900/
 	
 	=============================================================================
 	
+
+{% endraw %}

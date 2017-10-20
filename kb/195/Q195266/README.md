@@ -6,6 +6,8 @@ permalink: /kb/195/Q195266/
 
 ## Q195266: Microsoft Windows 98 Starts Here Comments and Corrections
 
+{% raw %}
+
 	Article: Q195266
 	Product(s): Microsoft Press
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/195/Q195266/
 	
 	=============================================================================
 	
+
+{% endraw %}

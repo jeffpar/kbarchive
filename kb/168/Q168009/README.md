@@ -6,6 +6,8 @@ permalink: /kb/168/Q168009/
 
 ## Q168009: FIX: Smartptr Property in Interface Causes C2512 Error
 
+{% raw %}
+
 	Article: Q168009
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -168,3 +170,5 @@ permalink: /kb/168/Q168009/
 	
 	=============================================================================
 	
+
+{% endraw %}

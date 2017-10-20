@@ -6,6 +6,8 @@ permalink: /kb/084/Q84000/
 
 ## Q84000: Obtaining a Virtual Device (VxD) ID Number
 
+{% raw %}
+
 	Article: Q84000
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -128,3 +130,5 @@ permalink: /kb/084/Q84000/
 	
 	=============================================================================
 	
+
+{% endraw %}

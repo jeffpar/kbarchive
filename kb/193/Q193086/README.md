@@ -6,6 +6,8 @@ permalink: /kb/193/Q193086/
 
 ## Q193086: Bookshelf 98 Err Msg: An Error Occurred While Attempting...
 
+{% raw %}
+
 	Article: Q193086
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -146,3 +148,5 @@ permalink: /kb/193/Q193086/
 	
 	=============================================================================
 	
+
+{% endraw %}

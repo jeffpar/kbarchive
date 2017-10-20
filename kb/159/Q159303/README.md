@@ -6,6 +6,8 @@ permalink: /kb/159/Q159303/
 
 ## Q159303: XCON: Message Sent Without Message Body Text is not Delivered
 
+{% raw %}
+
 	Article: Q159303
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/159/Q159303/
 	
 	=============================================================================
 	
+
+{% endraw %}

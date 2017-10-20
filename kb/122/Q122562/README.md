@@ -6,6 +6,8 @@ permalink: /kb/122/Q122562/
 
 ## Q122562: DOC: _set_se_translator and set_terminate Help Info Incorrect
 
+{% raw %}
+
 	Article: Q122562
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -64,3 +66,5 @@ permalink: /kb/122/Q122562/
 	
 	=============================================================================
 	
+
+{% endraw %}

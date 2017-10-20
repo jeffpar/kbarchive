@@ -6,6 +6,8 @@ permalink: /kb/069/Q69538/
 
 ## Q69538: C Compiler May Give Wrong Line Number for a C2125 Error
 
+{% raw %}
+
 	Article: Q69538
 	Product(s): See article
 	Version(s): 5.10 6.00 6.00a | 5.10 6.00 6.00a
@@ -56,3 +58,5 @@ permalink: /kb/069/Q69538/
 	void main(void)
 	{                    /* Error message refers to this line (7) */
 	}
+
+{% endraw %}

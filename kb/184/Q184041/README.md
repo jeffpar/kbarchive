@@ -6,6 +6,8 @@ permalink: /kb/184/Q184041/
 
 ## Q184041: WD97: Macro to Add, Delete, Find Hidden/Non-Hidden Bookmarks
 
+{% raw %}
+
 	Article: Q184041
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -119,3 +121,5 @@ permalink: /kb/184/Q184041/
 	
 	=============================================================================
 	
+
+{% endraw %}

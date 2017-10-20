@@ -6,6 +6,8 @@ permalink: /kb/082/Q82076/
 
 ## Q82076: DataVal.exe Demonstrates Edit Control Validation
 
+{% raw %}
+
 	Article: Q82076
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -67,3 +69,5 @@ permalink: /kb/082/Q82076/
 	
 	=============================================================================
 	
+
+{% endraw %}

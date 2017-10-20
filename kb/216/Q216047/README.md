@@ -6,6 +6,8 @@ permalink: /kb/216/Q216047/
 
 ## Q216047: Activating Numerous DLC Connections Results in Inactive LUs
 
+{% raw %}
+
 	Article: Q216047
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
@@ -154,3 +156,5 @@ permalink: /kb/216/Q216047/
 	
 	=============================================================================
 	
+
+{% endraw %}

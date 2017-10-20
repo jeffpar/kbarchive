@@ -6,6 +6,8 @@ permalink: /kb/145/Q145700/
 
 ## Q145700: HOWTO: How the Server Use Is Determined by OLE
 
+{% raw %}
+
 	Article: Q145700
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/145/Q145700/
 	
 	=============================================================================
 	
+
+{% endraw %}

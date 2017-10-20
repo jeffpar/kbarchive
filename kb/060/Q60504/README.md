@@ -6,6 +6,8 @@ permalink: /kb/060/Q60504/
 
 ## Q60504: Can't Disable Communications Server Error Dialog Boxes
 
+{% raw %}
+
 	Article: Q60504
 	Product(s): Microsoft LAN Manager
 	Version(s): 1.0
@@ -64,3 +66,5 @@ permalink: /kb/060/Q60504/
 	
 	=============================================================================
 	
+
+{% endraw %}

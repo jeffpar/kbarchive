@@ -6,6 +6,8 @@ permalink: /kb/124/Q124802/
 
 ## Q124802: CONN: CNU Err Msg: No Gateway Driver Loaded
 
+{% raw %}
+
 	Article: Q124802
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.2
@@ -70,3 +72,5 @@ permalink: /kb/124/Q124802/
 	
 	=============================================================================
 	
+
+{% endraw %}

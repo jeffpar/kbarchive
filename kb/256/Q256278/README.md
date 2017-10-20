@@ -6,6 +6,8 @@ permalink: /kb/256/Q256278/
 
 ## Q256278: &quot;Setup Could Not Modify the Registry&quot; During Index Server Setup
 
+{% raw %}
+
 	Article: Q256278
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0
@@ -67,3 +69,5 @@ permalink: /kb/256/Q256278/
 	
 	=============================================================================
 	
+
+{% endraw %}

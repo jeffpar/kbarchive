@@ -6,6 +6,8 @@ permalink: /kb/168/Q168804/
 
 ## Q168804: WD97: Operating Parameter Limitations and Specifications
 
+{% raw %}
+
 	Article: Q168804
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -177,3 +179,5 @@ permalink: /kb/168/Q168804/
 	
 	=============================================================================
 	
+
+{% endraw %}

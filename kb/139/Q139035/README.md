@@ -6,6 +6,8 @@ permalink: /kb/139/Q139035/
 
 ## Q139035: TN3270 Service Is Enhanced to TN3270E in SNA Server
 
+{% raw %}
+
 	Article: Q139035
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11,3.0,4.0
@@ -78,3 +80,5 @@ permalink: /kb/139/Q139035/
 	
 	=============================================================================
 	
+
+{% endraw %}

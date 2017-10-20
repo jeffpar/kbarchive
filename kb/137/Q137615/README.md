@@ -6,6 +6,8 @@ permalink: /kb/137/Q137615/
 
 ## Q137615: Shutting Down Windows 95 Cancels Print Job Without Warning
 
+{% raw %}
+
 	Article: Q137615
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/137/Q137615/
 	
 	=============================================================================
 	
+
+{% endraw %}

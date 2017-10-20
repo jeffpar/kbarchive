@@ -6,6 +6,8 @@ permalink: /kb/259/Q259428/
 
 ## Q259428: Manipulating Removable-Media Partitions Depletes Drive Letters
 
+{% raw %}
+
 	Article: Q259428
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP6a
@@ -86,3 +88,5 @@ permalink: /kb/259/Q259428/
 	
 	=============================================================================
 	
+
+{% endraw %}

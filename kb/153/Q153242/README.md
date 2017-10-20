@@ -6,6 +6,8 @@ permalink: /kb/153/Q153242/
 
 ## Q153242: Net Use /Home Fails with 13 Character Domain Controller
 
+{% raw %}
+
 	Article: Q153242
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:
@@ -63,3 +65,5 @@ permalink: /kb/153/Q153242/
 	
 	=============================================================================
 	
+
+{% endraw %}

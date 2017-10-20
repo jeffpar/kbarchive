@@ -6,6 +6,8 @@ permalink: /kb/317/Q317645/
 
 ## Q317645: MTM2: Game Controller Not Detected with Game
 
+{% raw %}
+
 	Article: Q317645
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -109,3 +111,5 @@ permalink: /kb/317/Q317645/
 	
 	=============================================================================
 	
+
+{% endraw %}

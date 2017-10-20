@@ -6,6 +6,8 @@ permalink: /kb/193/Q193831/
 
 ## Q193831: Compiling Large ASP Pages Can Take 100% of CPU Time
 
+{% raw %}
+
 	Article: Q193831
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -87,3 +89,5 @@ permalink: /kb/193/Q193831/
 	
 	=============================================================================
 	
+
+{% endraw %}

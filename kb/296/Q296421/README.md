@@ -6,6 +6,8 @@ permalink: /kb/296/Q296421/
 
 ## Q296421: Schedule+ 7.x Hangs at Start After Selecting Group Mode
 
+{% raw %}
+
 	Article: Q296421
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 7.x
@@ -95,3 +97,5 @@ permalink: /kb/296/Q296421/
 	
 	=============================================================================
 	
+
+{% endraw %}

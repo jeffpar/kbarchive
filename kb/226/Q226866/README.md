@@ -6,6 +6,8 @@ permalink: /kb/226/Q226866/
 
 ## Q226866: SMS: SMSMAN32 Does Not Find SMSLOGON Point on First Attempt
 
+{% raw %}
+
 	Article: Q226866
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -78,3 +80,5 @@ permalink: /kb/226/Q226866/
 	
 	=============================================================================
 	
+
+{% endraw %}

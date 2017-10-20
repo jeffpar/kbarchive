@@ -6,6 +6,8 @@ permalink: /kb/254/Q254532/
 
 ## Q254532: SMS 1.2 Support Fixes for Windows 2000
 
+{% raw %}
+
 	Article: Q254532
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -258,3 +260,5 @@ permalink: /kb/254/Q254532/
 	
 	=============================================================================
 	
+
+{% endraw %}

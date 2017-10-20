@@ -6,6 +6,8 @@ permalink: /kb/112/Q112612/
 
 ## Q112612: Problems Sending Mail After Installing AWFAX
 
+{% raw %}
+
 	Article: Q112612
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -109,3 +111,5 @@ permalink: /kb/112/Q112612/
 	
 	=============================================================================
 	
+
+{% endraw %}

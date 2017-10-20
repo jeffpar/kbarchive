@@ -6,6 +6,8 @@ permalink: /kb/181/Q181794/
 
 ## Q181794: Stop 0x00000050 Caused by Remotely Possible Software
 
+{% raw %}
+
 	Article: Q181794
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/181/Q181794/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193265/
 
 ## Q193265: PRB: VB Doesn't Generate Compile Error for Misspelled Methods
 
+{% raw %}
+
 	Article: Q193265
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/193/Q193265/
 	
 	=============================================================================
 	
+
+{% endraw %}

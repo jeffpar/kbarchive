@@ -6,6 +6,8 @@ permalink: /kb/193/Q193114/
 
 ## Q193114: XCLN: How To Generate A User-Specific Profile w/ IExpress &amp; ODK
 
+{% raw %}
+
 	Article: Q193114
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,98
@@ -256,3 +258,5 @@ permalink: /kb/193/Q193114/
 	
 	=============================================================================
 	
+
+{% endraw %}

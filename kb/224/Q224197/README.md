@@ -6,6 +6,8 @@ permalink: /kb/224/Q224197/
 
 ## Q224197: Cliex32.dll Error 126 Error Message When You Run Smsman.exe
 
+{% raw %}
+
 	Article: Q224197
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -66,3 +68,5 @@ permalink: /kb/224/Q224197/
 	
 	=============================================================================
 	
+
+{% endraw %}

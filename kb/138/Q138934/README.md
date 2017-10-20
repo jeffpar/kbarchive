@@ -6,6 +6,8 @@ permalink: /kb/138/Q138934/
 
 ## Q138934: Chips and Technologies CT-65545 Does Not Run 256 Color Video
 
+{% raw %}
+
 	Article: Q138934
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -50,3 +52,5 @@ permalink: /kb/138/Q138934/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196856/
 
 ## Q196856: WD97: Part of Table Missing; Table Prints over Text
 
+{% raw %}
+
 	Article: Q196856
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -66,3 +68,5 @@ permalink: /kb/196/Q196856/
 	
 	=============================================================================
 	
+
+{% endraw %}

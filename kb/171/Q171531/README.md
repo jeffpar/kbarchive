@@ -6,6 +6,8 @@ permalink: /kb/171/Q171531/
 
 ## Q171531: FIX: IPF When Changing Project Name with Binary Compatibility
 
+{% raw %}
+
 	Article: Q171531
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -107,3 +109,5 @@ permalink: /kb/171/Q171531/
 	
 	=============================================================================
 	
+
+{% endraw %}

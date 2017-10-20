@@ -6,6 +6,8 @@ permalink: /kb/135/Q135028/
 
 ## Q135028: PC DirSync: CTRL+C Displayed But Ignored in IMPORT and REQMAIN
 
+{% raw %}
+
 	Article: Q135028
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a,3.2,3.2a,3.5
@@ -54,3 +56,5 @@ permalink: /kb/135/Q135028/
 	
 	=============================================================================
 	
+
+{% endraw %}

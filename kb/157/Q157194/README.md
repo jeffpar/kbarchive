@@ -6,6 +6,8 @@ permalink: /kb/157/Q157194/
 
 ## Q157194: PRB: TYPE Function Does Not Indicate Character(Binary)
 
+{% raw %}
+
 	Article: Q157194
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -119,3 +121,5 @@ permalink: /kb/157/Q157194/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96284/
 
 ## Q96284: FoxUSER File Contents
 
+{% raw %}
+
 	Article: Q96284
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -83,3 +85,5 @@ permalink: /kb/096/Q96284/
 	
 	=============================================================================
 	
+
+{% endraw %}

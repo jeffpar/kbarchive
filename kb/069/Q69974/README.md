@@ -6,6 +6,8 @@ permalink: /kb/069/Q69974/
 
 ## Q69974: Information Regarding Buffered I/O and MSCDEX
 
+{% raw %}
+
 	Article: Q69974
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0
@@ -54,3 +56,5 @@ permalink: /kb/069/Q69974/
 	
 	=============================================================================
 	
+
+{% endraw %}

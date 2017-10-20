@@ -6,6 +6,8 @@ permalink: /kb/067/Q67339/
 
 ## Q67339: Serial Mouse with Timeline
 
+{% raw %}
+
 	Article: Q67339
 	Product(s): See article
 	Version(s): 1.00
@@ -18,3 +20,5 @@ permalink: /kb/067/Q67339/
 	invoking MOUSE.SYS in the CONFIG.SYS file. Symantec Corporation
 	technical support confirms that the Microsoft Mouse will not work
 	correctly with Timeline if you use the MOUSE.COM driver file.
+
+{% endraw %}

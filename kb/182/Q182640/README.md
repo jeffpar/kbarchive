@@ -6,6 +6,8 @@ permalink: /kb/182/Q182640/
 
 ## Q182640: Application Exception in Snaservr.exe in Function SNPUPUTI
 
+{% raw %}
+
 	Article: Q182640
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -119,3 +121,5 @@ permalink: /kb/182/Q182640/
 	
 	=============================================================================
 	
+
+{% endraw %}

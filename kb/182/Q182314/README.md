@@ -6,6 +6,8 @@ permalink: /kb/182/Q182314/
 
 ## Q182314: XADM: DBCS Becomes &quot;?&quot; When You Click &quot;Save Window Contents&quot;
 
+{% raw %}
+
 	Article: Q182314
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -59,3 +61,5 @@ permalink: /kb/182/Q182314/
 	
 	=============================================================================
 	
+
+{% endraw %}

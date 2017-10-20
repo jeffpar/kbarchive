@@ -6,6 +6,8 @@ permalink: /kb/141/Q141979/
 
 ## Q141979: Cannot Print to Legal Paper on HP LJ IIP/IIIP with PostScript
 
+{% raw %}
+
 	Article: Q141979
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11,95
@@ -63,3 +65,5 @@ permalink: /kb/141/Q141979/
 	
 	=============================================================================
 	
+
+{% endraw %}

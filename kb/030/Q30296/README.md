@@ -6,6 +6,8 @@ permalink: /kb/030/Q30296/
 
 ## Q30296: When Can a Call to GlobalLock() Fail?
 
+{% raw %}
+
 	Article: Q30296
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -46,3 +48,5 @@ permalink: /kb/030/Q30296/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190934/
 
 ## Q190934: FIX: Degree of Derived Table Error When Updating Oracle Data
 
+{% raw %}
+
 	Article: Q190934
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): Build 2.73.7269,Build 2.73.7283.01,Build 2.73.7283.03,Build 2.73.7356
@@ -138,3 +140,5 @@ permalink: /kb/190/Q190934/
 	
 	=============================================================================
 	
+
+{% endraw %}

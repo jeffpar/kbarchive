@@ -6,6 +6,8 @@ permalink: /kb/187/Q187801/
 
 ## Q187801: File Descriptions for RRAS and the RRAS Service Pack
 
+{% raw %}
+
 	Article: Q187801
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -732,3 +734,5 @@ permalink: /kb/187/Q187801/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195347/
 
 ## Q195347: Cannot Download Large E-mail Messages Using MSN Account
 
+{% raw %}
+
 	Article: Q195347
 	Product(s): The Microsoft Network
 	Version(s): 2.5,2.51,2.52,2.6,5.0
@@ -90,3 +92,5 @@ permalink: /kb/195/Q195347/
 	
 	=============================================================================
 	
+
+{% endraw %}

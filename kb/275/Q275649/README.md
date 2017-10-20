@@ -6,6 +6,8 @@ permalink: /kb/275/Q275649/
 
 ## Q275649: SAMPLE: ChrtSmpl.exe Demonstrates Use of the VB 6.0 MSChart Ctrl
 
+{% raw %}
+
 	Article: Q275649
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -132,3 +134,5 @@ permalink: /kb/275/Q275649/
 	
 	=============================================================================
 	
+
+{% endraw %}

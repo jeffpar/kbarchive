@@ -6,6 +6,8 @@ permalink: /kb/120/Q120044/
 
 ## Q120044: BUG: Access ODBC: SQLGetInfo(SQL_NON_NULLABLE_COLUMNS)
 
+{% raw %}
+
 	Article: Q120044
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/120/Q120044/
 	
 	=============================================================================
 	
+
+{% endraw %}

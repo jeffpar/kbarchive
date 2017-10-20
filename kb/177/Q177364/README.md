@@ -6,6 +6,8 @@ permalink: /kb/177/Q177364/
 
 ## Q177364: IntelliMouse Wheel Stops Working After Installing Service Pack 3
 
+{% raw %}
+
 	Article: Q177364
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -76,3 +78,5 @@ permalink: /kb/177/Q177364/
 	
 	=============================================================================
 	
+
+{% endraw %}

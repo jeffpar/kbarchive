@@ -6,6 +6,8 @@ permalink: /kb/030/Q30534/
 
 ## Q30534: M.EXE C Extensions Documented in UTILITY.DOC, Not README.DOC
 
+{% raw %}
+
 	Article: Q30534
 	Product(s): See article
 	Version(s): 1.00
@@ -23,3 +25,5 @@ permalink: /kb/030/Q30534/
 	
 	   Contrary to the above manual statement, C extensions are documented
 	in UTILITY.DOC on the release disk, not in the README.DOC.
+
+{% endraw %}

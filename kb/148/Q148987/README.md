@@ -6,6 +6,8 @@ permalink: /kb/148/Q148987/
 
 ## Q148987: Err Msg: &quot;NETBIOS AddName Failure&quot;
 
+{% raw %}
+
 	Article: Q148987
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -38,3 +40,5 @@ permalink: /kb/148/Q148987/
 	
 	=============================================================================
 	
+
+{% endraw %}

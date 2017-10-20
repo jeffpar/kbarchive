@@ -6,6 +6,8 @@ permalink: /kb/131/Q131145/
 
 ## Q131145: How to Add Properties/Methods to a Button in Button Group
 
+{% raw %}
+
 	Article: Q131145
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -82,3 +84,5 @@ permalink: /kb/131/Q131145/
 	
 	=============================================================================
 	
+
+{% endraw %}

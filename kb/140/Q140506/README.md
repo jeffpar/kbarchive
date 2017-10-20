@@ -6,6 +6,8 @@ permalink: /kb/140/Q140506/
 
 ## Q140506: Print Jobs Sent to SFM Printer Hang in Spooler After Printing
 
+{% raw %}
+
 	Article: Q140506
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -79,3 +81,5 @@ permalink: /kb/140/Q140506/
 	
 	=============================================================================
 	
+
+{% endraw %}

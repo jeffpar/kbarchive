@@ -6,6 +6,8 @@ permalink: /kb/170/Q170886/
 
 ## Q170886: WD97: Smart Quotes Incorrect When Language Is Set to French
 
+{% raw %}
+
 	Article: Q170886
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -117,3 +119,5 @@ permalink: /kb/170/Q170886/
 	
 	=============================================================================
 	
+
+{% endraw %}

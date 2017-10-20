@@ -6,6 +6,8 @@ permalink: /kb/065/Q65175/
 
 ## Q65175: Double Disk by Vertisoft Systems Needs Update to 2.14b
 
+{% raw %}
+
 	Article: Q65175
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -45,3 +47,5 @@ permalink: /kb/065/Q65175/
 	
 	=============================================================================
 	
+
+{% endraw %}

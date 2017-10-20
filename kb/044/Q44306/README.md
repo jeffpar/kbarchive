@@ -6,6 +6,8 @@ permalink: /kb/044/Q44306/
 
 ## Q44306: Method for Clearing GOSUB...RETURN Subroutine Stack in BASIC
 
+{% raw %}
+
 	Article: Q44306
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -48,3 +50,5 @@ permalink: /kb/044/Q44306/
 	Note: This method will not work with the SUB...END SUB subprogram
 	procedure. A SUB...END SUB procedure should always be exited with
 	either an EXIT SUB or an END SUB statement.
+
+{% endraw %}

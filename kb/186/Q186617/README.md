@@ -6,6 +6,8 @@ permalink: /kb/186/Q186617/
 
 ## Q186617: Error 204: Terminal Server Client TCP Port error
 
+{% raw %}
+
 	Article: Q186617
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/186/Q186617/
 	
 	=============================================================================
 	
+
+{% endraw %}

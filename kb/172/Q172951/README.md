@@ -6,6 +6,8 @@ permalink: /kb/172/Q172951/
 
 ## Q172951: How to Recover from a Corrupted Quorum Log
 
+{% raw %}
+
 	Article: Q172951
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -84,3 +86,5 @@ permalink: /kb/172/Q172951/
 	
 	=============================================================================
 	
+
+{% endraw %}

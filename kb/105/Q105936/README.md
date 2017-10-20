@@ -6,6 +6,8 @@ permalink: /kb/105/Q105936/
 
 ## Q105936: FIX: Debugger displays Floating Point Notation for REALs
 
+{% raw %}
+
 	Article: Q105936
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -72,3 +74,5 @@ permalink: /kb/105/Q105936/
 	
 	=============================================================================
 	
+
+{% endraw %}

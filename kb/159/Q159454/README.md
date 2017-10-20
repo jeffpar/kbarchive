@@ -6,6 +6,8 @@ permalink: /kb/159/Q159454/
 
 ## Q159454: How to Determine a Server Down (Sev A) Situation for IIS
 
+{% raw %}
+
 	Article: Q159454
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0
@@ -67,3 +69,5 @@ permalink: /kb/159/Q159454/
 	
 	=============================================================================
 	
+
+{% endraw %}

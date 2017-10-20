@@ -6,6 +6,8 @@ permalink: /kb/193/Q193219/
 
 ## Q193219: Member Server Role Cannot Be Changed to Domain Controller
 
+{% raw %}
+
 	Article: Q193219
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -115,3 +117,5 @@ permalink: /kb/193/Q193219/
 	
 	=============================================================================
 	
+
+{% endraw %}

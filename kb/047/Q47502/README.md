@@ -6,6 +6,8 @@ permalink: /kb/047/Q47502/
 
 ## Q47502: QuickC Can Dimension Arrays Only Up to 0xFFFF Bytes
 
+{% raw %}
+
 	Article: Q47502
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -47,3 +49,5 @@ permalink: /kb/047/Q47502/
 	
 	Microsoft is researching this problem and will post new information as
 	it becomes available.
+
+{% endraw %}

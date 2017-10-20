@@ -6,6 +6,8 @@ permalink: /kb/271/Q271706/
 
 ## Q271706: XCON: Embedded MSP4 Message in a P772 Message Downgraded to MSP3
 
+{% raw %}
+
 	Article: Q271706
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -59,3 +61,5 @@ permalink: /kb/271/Q271706/
 	
 	=============================================================================
 	
+
+{% endraw %}

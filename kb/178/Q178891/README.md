@@ -6,6 +6,8 @@ permalink: /kb/178/Q178891/
 
 ## Q178891: XADM: Incorrect Message When Issue Warning Limit Is Reached
 
+{% raw %}
+
 	Article: Q178891
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -68,3 +70,5 @@ permalink: /kb/178/Q178891/
 	
 	=============================================================================
 	
+
+{% endraw %}

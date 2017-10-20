@@ -6,6 +6,8 @@ permalink: /kb/110/Q110438/
 
 ## Q110438: Data in Cache Not Written to Disk with VSafe and SMARTDrive
 
+{% raw %}
+
 	Article: Q110438
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -62,3 +64,5 @@ permalink: /kb/110/Q110438/
 	
 	=============================================================================
 	
+
+{% endraw %}

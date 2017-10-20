@@ -6,6 +6,8 @@ permalink: /kb/194/Q194198/
 
 ## Q194198: FIX: Setup Wizard Does Not Print All Reports
 
+{% raw %}
+
 	Article: Q194198
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -88,3 +90,5 @@ permalink: /kb/194/Q194198/
 	
 	=============================================================================
 	
+
+{% endraw %}

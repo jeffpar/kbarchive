@@ -6,6 +6,8 @@ permalink: /kb/148/Q148828/
 
 ## Q148828: Err Msg: Dlchlp.exe Is Required to Support 16-Bit Applications
 
+{% raw %}
+
 	Article: Q148828
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -69,3 +71,5 @@ permalink: /kb/148/Q148828/
 	
 	=============================================================================
 	
+
+{% endraw %}

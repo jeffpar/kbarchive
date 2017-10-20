@@ -6,6 +6,8 @@ permalink: /kb/127/Q127872/
 
 ## Q127872: APM Does Not Function with NDIS 2 Adapter Driver
 
+{% raw %}
+
 	Article: Q127872
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/127/Q127872/
 	
 	=============================================================================
 	
+
+{% endraw %}

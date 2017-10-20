@@ -6,6 +6,8 @@ permalink: /kb/057/Q57670/
 
 ## Q57670: LOCATE Doesn't Turn Off Cursor After INTERRUPT Loads User Font
 
+{% raw %}
+
 	Article: Q57670
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -93,3 +95,5 @@ permalink: /kb/057/Q57670/
 	Regs.AX = &H100   'Function 1.
 	Regs.CX = &H2000
 	CALL InterruptX(&H10, Regs, Regs)   'Cursor will turn off.
+
+{% endraw %}

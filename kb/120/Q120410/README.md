@@ -6,6 +6,8 @@ permalink: /kb/120/Q120410/
 
 ## Q120410: PPT: Narrowest Line Style Prints Thicker than Expected
 
+{% raw %}
+
 	Article: Q120410
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 3.0,3.0a,3.0b,4.0,4.0a,4.0c,7.0
@@ -88,3 +90,5 @@ permalink: /kb/120/Q120410/
 	
 	=============================================================================
 	
+
+{% endraw %}

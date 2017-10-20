@@ -6,6 +6,8 @@ permalink: /kb/194/Q194221/
 
 ## Q194221: HOWTO: Use the UniformAxis Property to Control Chart Scaling
 
+{% raw %}
+
 	Article: Q194221
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -81,3 +83,5 @@ permalink: /kb/194/Q194221/
 	
 	=============================================================================
 	
+
+{% endraw %}

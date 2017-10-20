@@ -6,6 +6,8 @@ permalink: /kb/180/Q180728/
 
 ## Q180728: SNA Manager Traps When Assigning Multiple LUs to a Workstation
 
+{% raw %}
+
 	Article: Q180728
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -75,3 +77,5 @@ permalink: /kb/180/Q180728/
 	
 	=============================================================================
 	
+
+{% endraw %}

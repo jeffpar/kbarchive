@@ -6,6 +6,8 @@ permalink: /kb/191/Q191264/
 
 ## Q191264: WD97: How to Use the Outlook Express Address Book in Mail Merge
 
+{% raw %}
+
 	Article: Q191264
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:4.0,97
@@ -110,3 +112,5 @@ permalink: /kb/191/Q191264/
 	
 	=============================================================================
 	
+
+{% endraw %}

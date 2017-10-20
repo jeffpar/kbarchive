@@ -6,6 +6,8 @@ permalink: /kb/085/Q85921/
 
 ## Q85921: Numonics 5860 Requires Xon/Xoff Flow Control
 
+{% raw %}
+
 	Article: Q85921
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -58,3 +60,5 @@ permalink: /kb/085/Q85921/
 	
 	=============================================================================
 	
+
+{% endraw %}

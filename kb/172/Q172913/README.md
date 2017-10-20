@@ -6,6 +6,8 @@ permalink: /kb/172/Q172913/
 
 ## Q172913: Server Stops with STOP 0xA in Ibmsync.sys Driver Under Stress
 
+{% raw %}
+
 	Article: Q172913
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1
@@ -142,3 +144,5 @@ permalink: /kb/172/Q172913/
 	
 	=============================================================================
 	
+
+{% endraw %}

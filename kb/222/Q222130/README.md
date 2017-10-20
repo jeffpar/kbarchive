@@ -6,6 +6,8 @@ permalink: /kb/222/Q222130/
 
 ## Q222130: PRB: Short Filename Autogeneration fails on WIn95 and Win95
 
+{% raw %}
+
 	Article: Q222130
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -138,3 +140,5 @@ permalink: /kb/222/Q222130/
 	
 	=============================================================================
 	
+
+{% endraw %}

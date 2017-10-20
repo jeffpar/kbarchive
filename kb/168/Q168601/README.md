@@ -6,6 +6,8 @@ permalink: /kb/168/Q168601/
 
 ## Q168601: SMSINST: Dialog Boxes Are Sized by the First Dialog Box
 
+{% raw %}
+
 	Article: Q168601
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0; winnt:1.2
@@ -52,3 +54,5 @@ permalink: /kb/168/Q168601/
 	
 	=============================================================================
 	
+
+{% endraw %}

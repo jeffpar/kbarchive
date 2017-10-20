@@ -6,6 +6,8 @@ permalink: /kb/168/Q168015/
 
 ## Q168015: Files Not Replaced When Running Emergency Repair on X86 Intel
 
+{% raw %}
+
 	Article: Q168015
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -88,3 +90,5 @@ permalink: /kb/168/Q168015/
 	
 	=============================================================================
 	
+
+{% endraw %}

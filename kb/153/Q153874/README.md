@@ -6,6 +6,8 @@ permalink: /kb/153/Q153874/
 
 ## Q153874: PRB: Setup Error 992 Object 243 When Installing on Win95
 
+{% raw %}
+
 	Article: Q153874
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -100,3 +102,5 @@ permalink: /kb/153/Q153874/
 	
 	=============================================================================
 	
+
+{% endraw %}

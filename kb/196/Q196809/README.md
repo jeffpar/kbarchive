@@ -6,6 +6,8 @@ permalink: /kb/196/Q196809/
 
 ## Q196809: PRB: CompactDatabase Method Requires Locale to Convert 2.0 MDB
 
+{% raw %}
+
 	Article: Q196809
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -131,3 +133,5 @@ permalink: /kb/196/Q196809/
 	
 	=============================================================================
 	
+
+{% endraw %}

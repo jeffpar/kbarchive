@@ -6,6 +6,8 @@ permalink: /kb/240/Q240306/
 
 ## Q240306: BUG: MSDN Library Setup Error in the Registration Database
 
+{% raw %}
+
 	Article: Q240306
 	Product(s): Microsoft Developer Network
 	Version(s): WINDOWS:; winnt:
@@ -75,3 +77,5 @@ permalink: /kb/240/Q240306/
 	
 	=============================================================================
 	
+
+{% endraw %}

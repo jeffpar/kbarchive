@@ -6,6 +6,8 @@ permalink: /kb/181/Q181976/
 
 ## Q181976: Windows 95 Client Fails to Connect After Forced Password Change
 
+{% raw %}
+
 	Article: Q181976
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -75,3 +77,5 @@ permalink: /kb/181/Q181976/
 	
 	=============================================================================
 	
+
+{% endraw %}

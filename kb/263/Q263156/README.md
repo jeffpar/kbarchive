@@ -6,6 +6,8 @@ permalink: /kb/263/Q263156/
 
 ## Q263156: SNA Server Event IDs 4, 13, and 38 Message Sequence Errors
 
+{% raw %}
+
 	Article: Q263156
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 (all SP),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -139,3 +141,5 @@ permalink: /kb/263/Q263156/
 	
 	=============================================================================
 	
+
+{% endraw %}

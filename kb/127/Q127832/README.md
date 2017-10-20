@@ -6,6 +6,8 @@ permalink: /kb/127/Q127832/
 
 ## Q127832: Unable to Set Permissions on LAN Manager Shared Directory
 
+{% raw %}
+
 	Article: Q127832
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2,3.11,3.5
@@ -51,3 +53,5 @@ permalink: /kb/127/Q127832/
 	
 	=============================================================================
 	
+
+{% endraw %}

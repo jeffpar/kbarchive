@@ -6,6 +6,8 @@ permalink: /kb/130/Q130019/
 
 ## Q130019: XCLN: No Separator Added When You Drag/Drop Names
 
+{% raw %}
+
 	Article: Q130019
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -47,3 +49,5 @@ permalink: /kb/130/Q130019/
 	
 	=============================================================================
 	
+
+{% endraw %}

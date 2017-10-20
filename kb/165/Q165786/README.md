@@ -6,6 +6,8 @@ permalink: /kb/165/Q165786/
 
 ## Q165786: SMS: Program Group Control Stops Responding on Win16 Clients
 
+{% raw %}
+
 	Article: Q165786
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -84,3 +86,5 @@ permalink: /kb/165/Q165786/
 	
 	=============================================================================
 	
+
+{% endraw %}

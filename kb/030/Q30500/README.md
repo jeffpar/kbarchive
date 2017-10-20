@@ -6,6 +6,8 @@ permalink: /kb/030/Q30500/
 
 ## Q30500: Segment Relative Versus Group Relative
 
+{% raw %}
+
 	Article: Q30500
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -66,3 +68,5 @@ permalink: /kb/030/Q30500/
 	
 	=============================================================================
 	
+
+{% endraw %}

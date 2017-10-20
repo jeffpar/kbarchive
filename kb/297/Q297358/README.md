@@ -6,6 +6,8 @@ permalink: /kb/297/Q297358/
 
 ## Q297358: Mac Outlook Err Msg About MS OLE Base Library
 
+{% raw %}
+
 	Article: Q297358
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.1,8.2,8.2.1,8.2.2
@@ -64,3 +66,5 @@ permalink: /kb/297/Q297358/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/289/Q289474/
 
 ## Q289474: Academic Learning Series Windows 2000 Server Comments and Correc
 
+{% raw %}
+
 	Article: Q289474
 	Product(s): Microsoft Press
 	Version(s): 
@@ -1126,3 +1128,5 @@ permalink: /kb/289/Q289474/
 	
 	=============================================================================
 	
+
+{% endraw %}

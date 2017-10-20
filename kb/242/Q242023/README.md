@@ -6,6 +6,8 @@ permalink: /kb/242/Q242023/
 
 ## Q242023: ICA Clients Over Dial-Up Link Unexpectedly Disconnect
 
+{% raw %}
+
 	Article: Q242023
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -90,3 +92,5 @@ permalink: /kb/242/Q242023/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128919/
 
 ## Q128919: Resources for Disabled Devices Not Freed Up
 
+{% raw %}
+
 	Article: Q128919
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/128/Q128919/
 	
 	=============================================================================
 	
+
+{% endraw %}

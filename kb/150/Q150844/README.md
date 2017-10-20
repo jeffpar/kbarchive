@@ -6,6 +6,8 @@ permalink: /kb/150/Q150844/
 
 ## Q150844: NetWare Client Buffer-Size Limitation of FPNW Sent Messages
 
+{% raw %}
+
 	Article: Q150844
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -50,3 +52,5 @@ permalink: /kb/150/Q150844/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148376/
 
 ## Q148376: NetSoft NS/Router Not Working After SNA Server 2.11 SP1
 
+{% raw %}
+
 	Article: Q148376
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -72,3 +74,5 @@ permalink: /kb/148/Q148376/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246766/
 
 ## Q246766: Executable File Does Not Run from Command Prompt in Windows NT
 
+{% raw %}
+
 	Article: Q246766
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/246/Q246766/
 	
 	=============================================================================
 	
+
+{% endraw %}

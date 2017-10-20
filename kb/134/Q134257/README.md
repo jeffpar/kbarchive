@@ -6,6 +6,8 @@ permalink: /kb/134/Q134257/
 
 ## Q134257: PRB: Pressing DOWN ARROW in Property List Causes Win32s Error
 
+{% raw %}
+
 	Article: Q134257
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -91,3 +93,5 @@ permalink: /kb/134/Q134257/
 	
 	=============================================================================
 	
+
+{% endraw %}

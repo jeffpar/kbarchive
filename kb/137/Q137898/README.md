@@ -6,6 +6,8 @@ permalink: /kb/137/Q137898/
 
 ## Q137898: PRB: Visual Basic 4.0 Can't Interpret SCODE Parameter
 
+{% raw %}
+
 	Article: Q137898
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -82,3 +84,5 @@ permalink: /kb/137/Q137898/
 	
 	=============================================================================
 	
+
+{% endraw %}

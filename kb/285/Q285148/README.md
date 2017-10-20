@@ -6,6 +6,8 @@ permalink: /kb/285/Q285148/
 
 ## Q285148: Event ID 637 Is Logged Stating that a User Removed Another User
 
+{% raw %}
+
 	Article: Q285148
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/285/Q285148/
 	
 	=============================================================================
 	
+
+{% endraw %}

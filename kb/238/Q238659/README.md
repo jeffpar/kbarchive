@@ -6,6 +6,8 @@ permalink: /kb/238/Q238659/
 
 ## Q238659: PRB: Modifying Class Library Causes Error Message in VFP 6.0
 
+{% raw %}
+
 	Article: Q238659
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -92,3 +94,5 @@ permalink: /kb/238/Q238659/
 	
 	=============================================================================
 	
+
+{% endraw %}

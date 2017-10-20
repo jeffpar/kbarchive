@@ -6,6 +6,8 @@ permalink: /kb/232/Q232579/
 
 ## Q232579: XCON: Wrong Encoding of Extended Characters
 
+{% raw %}
+
 	Article: Q232579
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -101,3 +103,5 @@ permalink: /kb/232/Q232579/
 	
 	=============================================================================
 	
+
+{% endraw %}

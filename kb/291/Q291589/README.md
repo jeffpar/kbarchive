@@ -6,6 +6,8 @@ permalink: /kb/291/Q291589/
 
 ## Q291589: IIS 4: ErrMsg: &quot;Could Not Start Service. 0006 Handle Is Invalid&quot;
 
+{% raw %}
+
 	Article: Q291589
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -68,3 +70,5 @@ permalink: /kb/291/Q291589/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82228/
 
 ## Q82228: Use of TimerCriticalSection= in 386 Enhanced Mode Windows
 
+{% raw %}
+
 	Article: Q82228
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.1
@@ -70,3 +72,5 @@ permalink: /kb/082/Q82228/
 	
 	=============================================================================
 	
+
+{% endraw %}

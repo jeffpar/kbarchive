@@ -6,6 +6,8 @@ permalink: /kb/200/Q200259/
 
 ## Q200259: XCON: Event ID 9156 from the Exchange Server 5.5 MTA
 
+{% raw %}
+
 	Article: Q200259
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -118,3 +120,5 @@ permalink: /kb/200/Q200259/
 	
 	=============================================================================
 	
+
+{% endraw %}

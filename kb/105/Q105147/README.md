@@ -6,6 +6,8 @@ permalink: /kb/105/Q105147/
 
 ## Q105147: PRB: Double-Clicking a Word Selects Trailing Space
 
+{% raw %}
+
 	Article: Q105147
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -42,3 +44,5 @@ permalink: /kb/105/Q105147/
 	
 	=============================================================================
 	
+
+{% endraw %}

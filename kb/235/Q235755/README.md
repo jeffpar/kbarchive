@@ -6,6 +6,8 @@ permalink: /kb/235/Q235755/
 
 ## Q235755: SMS: SNMP Agent May Leak Memory When Queried
 
+{% raw %}
+
 	Article: Q235755
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -66,3 +68,5 @@ permalink: /kb/235/Q235755/
 	
 	=============================================================================
 	
+
+{% endraw %}

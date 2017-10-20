@@ -6,6 +6,8 @@ permalink: /kb/193/Q193866/
 
 ## Q193866: HOWTO: Use the VB 6.0 DataEnvironment with Parameterized Queries
 
+{% raw %}
+
 	Article: Q193866
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -148,3 +150,5 @@ permalink: /kb/193/Q193866/
 	
 	=============================================================================
 	
+
+{% endraw %}

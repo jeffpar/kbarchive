@@ -6,6 +6,8 @@ permalink: /kb/216/Q216336/
 
 ## Q216336: BUG: ARM Compiler Generates Bad Code for Structure Assignment
 
+{% raw %}
+
 	Article: Q216336
 	Product(s): Microsoft C Compiler
 	Version(s): N\A:2.11; WINDOWS:
@@ -82,3 +84,5 @@ permalink: /kb/216/Q216336/
 	
 	=============================================================================
 	
+
+{% endraw %}

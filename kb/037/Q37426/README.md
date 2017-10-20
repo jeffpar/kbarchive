@@ -6,6 +6,8 @@ permalink: /kb/037/Q37426/
 
 ## Q37426: Sample Program That Makes OS/2 Function Call DosMove
 
+{% raw %}
+
 	Article: Q37426
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -44,3 +46,5 @@ permalink: /kb/037/Q37426/
 	  Print UCASE$(f1$)" ===> " UCASE$(f2$)
 	END IF
 	END
+
+{% endraw %}

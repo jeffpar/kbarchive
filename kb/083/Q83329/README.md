@@ -6,6 +6,8 @@ permalink: /kb/083/Q83329/
 
 ## Q83329: GP Faults when Printing over Banyan Vines 4.11
 
+{% raw %}
+
 	Article: Q83329
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -37,3 +39,5 @@ permalink: /kb/083/Q83329/
 	
 	=============================================================================
 	
+
+{% endraw %}

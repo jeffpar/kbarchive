@@ -6,6 +6,8 @@ permalink: /kb/169/Q169620/
 
 ## Q169620: Err Msg: Accessing CD-ROM Drive: D:&#92; Is Not Accessible
 
+{% raw %}
+
 	Article: Q169620
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -103,3 +105,5 @@ permalink: /kb/169/Q169620/
 	
 	=============================================================================
 	
+
+{% endraw %}

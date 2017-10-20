@@ -6,6 +6,8 @@ permalink: /kb/133/Q133432/
 
 ## Q133432: PRB: Fonts Inconsistent Using Dialog Editor on Windows NT 3.51
 
+{% raw %}
+
 	Article: Q133432
 	Product(s): Microsoft C Compiler
 	Version(s): 2.00 2.10 2.20
@@ -69,3 +71,5 @@ permalink: /kb/133/Q133432/
 	
 	=============================================================================
 	
+
+{% endraw %}

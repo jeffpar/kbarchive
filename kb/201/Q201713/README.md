@@ -6,6 +6,8 @@ permalink: /kb/201/Q201713/
 
 ## Q201713: SMS: Error Message on Child Site During Upgrade of Parent
 
+{% raw %}
+
 	Article: Q201713
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -71,3 +73,5 @@ permalink: /kb/201/Q201713/
 	
 	=============================================================================
 	
+
+{% endraw %}

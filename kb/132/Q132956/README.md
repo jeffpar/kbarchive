@@ -6,6 +6,8 @@ permalink: /kb/132/Q132956/
 
 ## Q132956: PC WRmt: Run w/ Megahertz EM114t Modem/Ethernet PCMCIA Card
 
+{% raw %}
+
 	Article: Q132956
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -113,3 +115,5 @@ permalink: /kb/132/Q132956/
 	
 	=============================================================================
 	
+
+{% endraw %}

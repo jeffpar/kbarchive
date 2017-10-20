@@ -6,6 +6,8 @@ permalink: /kb/241/Q241963/
 
 ## Q241963: INFO: SourceSafe Integration Changes with 2000 Server Extensions
 
+{% raw %}
+
 	Article: Q241963
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/241/Q241963/
 	
 	=============================================================================
 	
+
+{% endraw %}

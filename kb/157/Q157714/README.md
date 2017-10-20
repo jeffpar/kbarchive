@@ -6,6 +6,8 @@ permalink: /kb/157/Q157714/
 
 ## Q157714: INFO: How SourceSafe Stores Log Files
 
+{% raw %}
+
 	Article: Q157714
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -114,3 +116,5 @@ permalink: /kb/157/Q157714/
 	
 	=============================================================================
 	
+
+{% endraw %}

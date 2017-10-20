@@ -6,6 +6,8 @@ permalink: /kb/198/Q198476/
 
 ## Q198476: XCLN: Exchange Client BackOffice Resource Kit (BORK) Tools
 
+{% raw %}
+
 	Article: Q198476
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,8.01,8.02,8.03,95,98; WINDOWS:
@@ -140,3 +142,5 @@ permalink: /kb/198/Q198476/
 	
 	=============================================================================
 	
+
+{% endraw %}

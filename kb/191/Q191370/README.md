@@ -6,6 +6,8 @@ permalink: /kb/191/Q191370/
 
 ## Q191370: Slow Network Performance with Terminal Server
 
+{% raw %}
+
 	Article: Q191370
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -126,3 +128,5 @@ permalink: /kb/191/Q191370/
 	
 	=============================================================================
 	
+
+{% endraw %}

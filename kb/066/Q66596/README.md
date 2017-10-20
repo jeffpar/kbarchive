@@ -6,6 +6,8 @@ permalink: /kb/066/Q66596/
 
 ## Q66596: Installing MS-DOS with Incorrect Disks for Drive A
 
+{% raw %}
+
 	Article: Q66596
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -125,3 +127,5 @@ permalink: /kb/066/Q66596/
 	
 	=============================================================================
 	
+
+{% endraw %}

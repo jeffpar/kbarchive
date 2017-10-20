@@ -6,6 +6,8 @@ permalink: /kb/281/Q281785/
 
 ## Q281785: Golf 2001: Game Hangs If You Decline EULA
 
+{% raw %}
+
 	Article: Q281785
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -70,3 +72,5 @@ permalink: /kb/281/Q281785/
 	
 	=============================================================================
 	
+
+{% endraw %}

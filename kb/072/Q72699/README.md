@@ -6,6 +6,8 @@ permalink: /kb/072/Q72699/
 
 ## Q72699: PRB: U1033 from Space After NMAKE Line Continuation Character
 
+{% raw %}
+
 	Article: Q72699
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.01,1.1,1.11,1.12,1.13,1.2,1.3,1.4; NT:1.4,1.5; OS/2:1.01,1.11,1.12,1.13,1.21
@@ -69,3 +71,5 @@ permalink: /kb/072/Q72699/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125016/
 
 ## Q125016: Why SMS Creates Macintosh Volumes for Shared Applications
 
+{% raw %}
+
 	Article: Q125016
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -51,3 +53,5 @@ permalink: /kb/125/Q125016/
 	
 	=============================================================================
 	
+
+{% endraw %}

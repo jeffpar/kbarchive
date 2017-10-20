@@ -6,6 +6,8 @@ permalink: /kb/082/Q82437/
 
 ## Q82437: Using Norton Desktop as Windows Shell
 
+{% raw %}
+
 	Article: Q82437
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/082/Q82437/
 	
 	=============================================================================
 	
+
+{% endraw %}

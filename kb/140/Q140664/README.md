@@ -6,6 +6,8 @@ permalink: /kb/140/Q140664/
 
 ## Q140664: Macintosh Multimedia: Troubleshooting Sound Problems
 
+{% raw %}
+
 	Article: Q140664
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a
@@ -151,3 +153,5 @@ permalink: /kb/140/Q140664/
 	
 	=============================================================================
 	
+
+{% endraw %}

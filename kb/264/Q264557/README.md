@@ -6,6 +6,8 @@ permalink: /kb/264/Q264557/
 
 ## Q264557: XFOR: Internet Mail Service Routes SMTP Mssgs for Other Domains
 
+{% raw %}
+
 	Article: Q264557
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -65,3 +67,5 @@ permalink: /kb/264/Q264557/
 	
 	=============================================================================
 	
+
+{% endraw %}

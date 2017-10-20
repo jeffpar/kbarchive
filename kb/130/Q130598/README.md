@@ -6,6 +6,8 @@ permalink: /kb/130/Q130598/
 
 ## Q130598: Cannot Create Folder or 8.3 Filename in All Upper Case
 
+{% raw %}
+
 	Article: Q130598
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 4.0
@@ -113,3 +115,5 @@ permalink: /kb/130/Q130598/
 	
 	=============================================================================
 	
+
+{% endraw %}

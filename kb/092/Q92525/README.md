@@ -6,6 +6,8 @@ permalink: /kb/092/Q92525/
 
 ## Q92525: Using the Setup Toolkit Function StampResource()
 
+{% raw %}
+
 	Article: Q92525
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -131,3 +133,5 @@ permalink: /kb/092/Q92525/
 	
 	=============================================================================
 	
+
+{% endraw %}

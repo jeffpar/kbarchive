@@ -6,6 +6,8 @@ permalink: /kb/216/Q216159/
 
 ## Q216159: Dr Watson Starting TS License Service with Error 3221487623
 
+{% raw %}
+
 	Article: Q216159
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -114,3 +116,5 @@ permalink: /kb/216/Q216159/
 	
 	=============================================================================
 	
+
+{% endraw %}

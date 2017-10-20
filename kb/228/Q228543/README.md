@@ -6,6 +6,8 @@ permalink: /kb/228/Q228543/
 
 ## Q228543: Policy Editor Does Not Read SNMP Communities Correctly
 
+{% raw %}
+
 	Article: Q228543
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -98,3 +100,5 @@ permalink: /kb/228/Q228543/
 	
 	=============================================================================
 	
+
+{% endraw %}

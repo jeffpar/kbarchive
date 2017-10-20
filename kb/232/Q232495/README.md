@@ -6,6 +6,8 @@ permalink: /kb/232/Q232495/
 
 ## Q232495: XFOR:Important Files When Relocating OV/VM Connector to another
 
+{% raw %}
+
 	Article: Q232495
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -60,3 +62,5 @@ permalink: /kb/232/Q232495/
 	
 	=============================================================================
 	
+
+{% endraw %}

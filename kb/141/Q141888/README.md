@@ -6,6 +6,8 @@ permalink: /kb/141/Q141888/
 
 ## Q141888: Blocks32: Demonstrates CRectTracker Class
 
+{% raw %}
+
 	Article: Q141888
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/141/Q141888/
 	
 	=============================================================================
 	
+
+{% endraw %}

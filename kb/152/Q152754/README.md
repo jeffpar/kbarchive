@@ -6,6 +6,8 @@ permalink: /kb/152/Q152754/
 
 ## Q152754: FIX: Controls Change Tabs if Sheridan Tab Control is Resized
 
+{% raw %}
+
 	Article: Q152754
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -87,3 +89,5 @@ permalink: /kb/152/Q152754/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/110/Q110548/
 
 ## Q110548: No Full Screen External View for View 2
 
+{% raw %}
+
 	Article: Q110548
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -49,3 +51,5 @@ permalink: /kb/110/Q110548/
 	
 	=============================================================================
 	
+
+{% endraw %}

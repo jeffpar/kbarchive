@@ -6,6 +6,8 @@ permalink: /kb/266/Q266205/
 
 ## Q266205: XFOR: Delivery and Read Receipts Are Not Received
 
+{% raw %}
+
 	Article: Q266205
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -63,3 +65,5 @@ permalink: /kb/266/Q266205/
 	
 	=============================================================================
 	
+
+{% endraw %}

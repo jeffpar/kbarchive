@@ -6,6 +6,8 @@ permalink: /kb/315/Q315111/
 
 ## Q315111: Encarta 2002/2003: Error Reading from File ... DWINTL
 
+{% raw %}
+
 	Article: Q315111
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -242,3 +244,5 @@ permalink: /kb/315/Q315111/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166991/
 
 ## Q166991: OS/2 Error 1588444941 When Starting OS/2 App as a Service
 
+{% raw %}
+
 	Article: Q166991
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -69,3 +71,5 @@ permalink: /kb/166/Q166991/
 	
 	=============================================================================
 	
+
+{% endraw %}

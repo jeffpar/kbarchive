@@ -6,6 +6,8 @@ permalink: /kb/168/Q168189/
 
 ## Q168189: XADM: Unable to Extract Windows NT Account List
 
+{% raw %}
+
 	Article: Q168189
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -67,3 +69,5 @@ permalink: /kb/168/Q168189/
 	
 	=============================================================================
 	
+
+{% endraw %}

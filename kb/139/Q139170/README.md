@@ -6,6 +6,8 @@ permalink: /kb/139/Q139170/
 
 ## Q139170: Event ID 5002 Appears Using Banyan Vines Client and IBMTOK
 
+{% raw %}
+
 	Article: Q139170
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -72,3 +74,5 @@ permalink: /kb/139/Q139170/
 	
 	=============================================================================
 	
+
+{% endraw %}

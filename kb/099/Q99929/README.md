@@ -6,6 +6,8 @@ permalink: /kb/099/Q99929/
 
 ## Q99929: PC WRmt: Connection Time-Outs
 
+{% raw %}
+
 	Article: Q99929
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/099/Q99929/
 	
 	=============================================================================
 	
+
+{% endraw %}

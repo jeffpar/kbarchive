@@ -6,6 +6,8 @@ permalink: /kb/164/Q164733/
 
 ## Q164733: PPT7: Embedded Word Tables Show Unequal Borders
 
+{% raw %}
+
 	Article: Q164733
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0,7.0a
@@ -79,3 +81,5 @@ permalink: /kb/164/Q164733/
 	
 	=============================================================================
 	
+
+{% endraw %}

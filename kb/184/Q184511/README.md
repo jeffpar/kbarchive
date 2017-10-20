@@ -6,6 +6,8 @@ permalink: /kb/184/Q184511/
 
 ## Q184511: DOC: Append Instructions for DAO TableDef Incorrect
 
+{% raw %}
+
 	Article: Q184511
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:4.0
@@ -103,3 +105,5 @@ permalink: /kb/184/Q184511/
 	
 	=============================================================================
 	
+
+{% endraw %}

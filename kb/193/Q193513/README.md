@@ -6,6 +6,8 @@ permalink: /kb/193/Q193513/
 
 ## Q193513: BUG: Breakpoints Not Hit in ATL MMC Snap-In
 
+{% raw %}
+
 	Article: Q193513
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -132,3 +134,5 @@ permalink: /kb/193/Q193513/
 	
 	=============================================================================
 	
+
+{% endraw %}

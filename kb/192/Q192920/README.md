@@ -6,6 +6,8 @@ permalink: /kb/192/Q192920/
 
 ## Q192920: SMS: Site Attachment Fails When Adding Custom Architectures
 
+{% raw %}
+
 	Article: Q192920
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -106,3 +108,5 @@ permalink: /kb/192/Q192920/
 	
 	=============================================================================
 	
+
+{% endraw %}

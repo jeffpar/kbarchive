@@ -6,6 +6,8 @@ permalink: /kb/274/Q274806/
 
 ## Q274806: Browser Loops When User Password Expires
 
+{% raw %}
+
 	Article: Q274806
 	Product(s): Internet Information Server
 	Version(s): 2.0,5.0
@@ -90,3 +92,5 @@ permalink: /kb/274/Q274806/
 	
 	=============================================================================
 	
+
+{% endraw %}

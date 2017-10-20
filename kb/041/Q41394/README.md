@@ -6,6 +6,8 @@ permalink: /kb/041/Q41394/
 
 ## Q41394: Saving Source with Error in SUB Statement Reloads Incorrectly
 
+{% raw %}
+
 	Article: Q41394
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -40,3 +42,5 @@ permalink: /kb/041/Q41394/
 	Versions 6.00 and 6.00b for MS-DOS, and to the QBX.EXE environment
 	that comes with Microsoft BASIC PDS Version 7.00 for MS-DOS. This
 	behavior is a design limitation of these environments.
+
+{% endraw %}

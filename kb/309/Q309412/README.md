@@ -6,6 +6,8 @@ permalink: /kb/309/Q309412/
 
 ## Q309412: Services for UNIX 2.0 Redirector Not Working After Upgrade to XP
 
+{% raw %}
+
 	Article: Q309412
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -95,3 +97,5 @@ permalink: /kb/309/Q309412/
 	
 	=============================================================================
 	
+
+{% endraw %}

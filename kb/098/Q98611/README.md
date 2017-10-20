@@ -6,6 +6,8 @@ permalink: /kb/098/Q98611/
 
 ## Q98611: PC WSPlus: Changing the Calendar Font Color in Schedule+
 
+{% raw %}
+
 	Article: Q98611
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -41,3 +43,5 @@ permalink: /kb/098/Q98611/
 	
 	=============================================================================
 	
+
+{% endraw %}

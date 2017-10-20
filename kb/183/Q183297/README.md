@@ -6,6 +6,8 @@ permalink: /kb/183/Q183297/
 
 ## Q183297: HOWTO: Retrieving Multiple Resultsets with Varying Columns
 
+{% raw %}
+
 	Article: Q183297
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:5.0,5.0sp1,5.0sp2,5.0sp3
@@ -169,3 +171,5 @@ permalink: /kb/183/Q183297/
 	
 	=============================================================================
 	
+
+{% endraw %}

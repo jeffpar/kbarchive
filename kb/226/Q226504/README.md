@@ -6,6 +6,8 @@ permalink: /kb/226/Q226504/
 
 ## Q226504: SMS: APM Does Not Execute the Correct Number of Advertisements
 
+{% raw %}
+
 	Article: Q226504
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -90,3 +92,5 @@ permalink: /kb/226/Q226504/
 	
 	=============================================================================
 	
+
+{% endraw %}

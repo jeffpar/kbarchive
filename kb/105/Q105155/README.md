@@ -6,6 +6,8 @@ permalink: /kb/105/Q105155/
 
 ## Q105155: Explanation of Seed Router Roles in AppleTalk Internets
 
+{% raw %}
+
 	Article: Q105155
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/105/Q105155/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231844/
 
 ## Q231844: HOWTO: Detect If an Application Has Stopped Responding
 
+{% raw %}
+
 	Article: Q231844
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.01,4.01 SP1,4.01 SP2,5,5.0,5.5,6.0
@@ -147,3 +149,5 @@ permalink: /kb/231/Q231844/
 	
 	=============================================================================
 	
+
+{% endraw %}

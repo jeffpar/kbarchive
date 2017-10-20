@@ -6,6 +6,8 @@ permalink: /kb/184/Q184621/
 
 ## Q184621: XGEN: GWRESET Utility
 
+{% raw %}
+
 	Article: Q184621
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -96,3 +98,5 @@ permalink: /kb/184/Q184621/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153082/
 
 ## Q153082: Garbled Text on Dell Computers with S3 Chip Set
 
+{% raw %}
+
 	Article: Q153082
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -56,3 +58,5 @@ permalink: /kb/153/Q153082/
 	
 	=============================================================================
 	
+
+{% endraw %}

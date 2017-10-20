@@ -6,6 +6,8 @@ permalink: /kb/299/Q299761/
 
 ## Q299761: Train Simulator: Known Issues with Editing Tools
 
+{% raw %}
+
 	Article: Q299761
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -134,3 +136,5 @@ permalink: /kb/299/Q299761/
 	
 	=============================================================================
 	
+
+{% endraw %}

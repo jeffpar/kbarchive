@@ -6,6 +6,8 @@ permalink: /kb/199/Q199516/
 
 ## Q199516: HOWTO: Set Default Values for ActiveX Control Stock Properties
 
+{% raw %}
+
 	Article: Q199516
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,4.0,4.1,4.2,5.0,6.0
@@ -198,3 +200,5 @@ permalink: /kb/199/Q199516/
 	
 	=============================================================================
 	
+
+{% endraw %}

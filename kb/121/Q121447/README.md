@@ -6,6 +6,8 @@ permalink: /kb/121/Q121447/
 
 ## Q121447: Writer: DocErr: How to Get to Control Room (Adult Mode)
 
+{% raw %}
+
 	Article: Q121447
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1
@@ -40,3 +42,5 @@ permalink: /kb/121/Q121447/
 	
 	=============================================================================
 	
+
+{% endraw %}

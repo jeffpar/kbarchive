@@ -6,6 +6,8 @@ permalink: /kb/082/Q82304/
 
 ## Q82304: PC OS2: Incorrect Minimize/Maximize Buttons
 
+{% raw %}
+
 	Article: Q82304
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -43,3 +45,5 @@ permalink: /kb/082/Q82304/
 	
 	=============================================================================
 	
+
+{% endraw %}

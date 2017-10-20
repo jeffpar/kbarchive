@@ -6,6 +6,8 @@ permalink: /kb/161/Q161568/
 
 ## Q161568: Desktop Themes from Resource Kit Produces Dr. Watson Error
 
+{% raw %}
+
 	Article: Q161568
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -95,3 +97,5 @@ permalink: /kb/161/Q161568/
 	
 	=============================================================================
 	
+
+{% endraw %}

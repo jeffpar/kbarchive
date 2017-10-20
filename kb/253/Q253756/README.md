@@ -6,6 +6,8 @@ permalink: /kb/253/Q253756/
 
 ## Q253756: Availability of Universal Serial Bus Support in Windows 95
 
+{% raw %}
+
 	Article: Q253756
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -124,3 +126,5 @@ permalink: /kb/253/Q253756/
 	
 	=============================================================================
 	
+
+{% endraw %}

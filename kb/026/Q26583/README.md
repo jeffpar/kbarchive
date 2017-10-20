@@ -6,6 +6,8 @@ permalink: /kb/026/Q26583/
 
 ## Q26583: DOCERR: @DataSize Misspelled
 
+{% raw %}
+
 	Article: Q26583
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1
@@ -40,3 +42,5 @@ permalink: /kb/026/Q26583/
 	
 	=============================================================================
 	
+
+{% endraw %}

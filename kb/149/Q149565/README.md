@@ -6,6 +6,8 @@ permalink: /kb/149/Q149565/
 
 ## Q149565: PRB: Unable to Load Control from C:&#92;Path&#92;File.ocx
 
+{% raw %}
+
 	Article: Q149565
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -100,3 +102,5 @@ permalink: /kb/149/Q149565/
 	
 	=============================================================================
 	
+
+{% endraw %}

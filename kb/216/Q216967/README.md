@@ -6,6 +6,8 @@ permalink: /kb/216/Q216967/
 
 ## Q216967: Disclaimer For COMTI Host Sample Code Included in SNA 4.0 SP2.
 
+{% raw %}
+
 	Article: Q216967
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0SP2
@@ -52,3 +54,5 @@ permalink: /kb/216/Q216967/
 	
 	=============================================================================
 	
+
+{% endraw %}

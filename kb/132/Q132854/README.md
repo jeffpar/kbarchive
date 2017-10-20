@@ -6,6 +6,8 @@ permalink: /kb/132/Q132854/
 
 ## Q132854: Mac Srv: Group Propagation Problem with Nested Groups
 
+{% raw %}
+
 	Article: Q132854
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1d
@@ -69,3 +71,5 @@ permalink: /kb/132/Q132854/
 	
 	=============================================================================
 	
+
+{% endraw %}

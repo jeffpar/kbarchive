@@ -6,6 +6,8 @@ permalink: /kb/077/Q77586/
 
 ## Q77586: PRB: Custom Command-Line Options Disappear
 
+{% raw %}
+
 	Article: Q77586
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/077/Q77586/
 	
 	=============================================================================
 	
+
+{% endraw %}

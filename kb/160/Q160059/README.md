@@ -6,6 +6,8 @@ permalink: /kb/160/Q160059/
 
 ## Q160059: WD97: Macros to Move to Beginning, End of Paragraph
 
+{% raw %}
+
 	Article: Q160059
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -115,3 +117,5 @@ permalink: /kb/160/Q160059/
 	
 	=============================================================================
 	
+
+{% endraw %}

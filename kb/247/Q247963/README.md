@@ -6,6 +6,8 @@ permalink: /kb/247/Q247963/
 
 ## Q247963: HOWTO: Activate the PsPC Keyboard from a VBCE/eVB Application
 
+{% raw %}
+
 	Article: Q247963
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.11,3.0
@@ -91,3 +93,5 @@ permalink: /kb/247/Q247963/
 	
 	=============================================================================
 	
+
+{% endraw %}

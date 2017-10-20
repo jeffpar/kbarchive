@@ -6,6 +6,8 @@ permalink: /kb/115/Q115494/
 
 ## Q115494: SMTP: Troubleshooting the SMTP Gateway
 
+{% raw %}
+
 	Article: Q115494
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -45,3 +47,5 @@ permalink: /kb/115/Q115494/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/027/Q27128/
 
 ## Q27128: Cannot Debug Code in Overlays in Small or Compact Model
 
+{% raw %}
+
 	Article: Q27128
 	Product(s): See article
 	Version(s): 2.10 2.20 2.30
@@ -27,3 +29,5 @@ permalink: /kb/027/Q27128/
 	is only one code segment, which cannot be overlaid. The main module is
 	always resident and cannot be overlaid. You must use the compile
 	option /AH, /AL, or /AM.
+
+{% endraw %}

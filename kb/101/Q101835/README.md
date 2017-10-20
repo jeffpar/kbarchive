@@ -6,6 +6,8 @@ permalink: /kb/101/Q101835/
 
 ## Q101835: Mac Srv: New Server in Site Automatically Becomes Access
 
+{% raw %}
+
 	Article: Q101835
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -45,3 +47,5 @@ permalink: /kb/101/Q101835/
 	
 	=============================================================================
 	
+
+{% endraw %}

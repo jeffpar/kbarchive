@@ -6,6 +6,8 @@ permalink: /kb/142/Q142557/
 
 ## Q142557: Internet Information Server Performance Logging to Disk vs. ODBC
 
+{% raw %}
+
 	Article: Q142557
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0,3.0,4.0
@@ -59,3 +61,5 @@ permalink: /kb/142/Q142557/
 	
 	=============================================================================
 	
+
+{% endraw %}

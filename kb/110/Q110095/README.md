@@ -6,6 +6,8 @@ permalink: /kb/110/Q110095/
 
 ## Q110095: PC Forms: Err Msg: &quot;Invalid Column Value&quot; Using Grid Control
 
+{% raw %}
+
 	Article: Q110095
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -95,3 +97,5 @@ permalink: /kb/110/Q110095/
 	
 	=============================================================================
 	
+
+{% endraw %}

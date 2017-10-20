@@ -6,6 +6,8 @@ permalink: /kb/047/Q47105/
 
 ## Q47105: Best to Avoid C Run-Time Library Routines in TSRs
 
+{% raw %}
+
 	Article: Q47105
 	Product(s): See article
 	Version(s): 5.10
@@ -66,3 +68,5 @@ permalink: /kb/047/Q47105/
 	
 	The "MS-DOS Encyclopedia" (published by Microsoft Press) is an
 	excellent source of information about writing TSRs.
+
+{% endraw %}

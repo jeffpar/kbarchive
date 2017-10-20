@@ -6,6 +6,8 @@ permalink: /kb/304/Q304016/
 
 ## Q304016: SMS: Software Inventory Scans Drive M on Exchange 2000
 
+{% raw %}
+
 	Article: Q304016
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -135,3 +137,5 @@ permalink: /kb/304/Q304016/
 	
 	=============================================================================
 	
+
+{% endraw %}

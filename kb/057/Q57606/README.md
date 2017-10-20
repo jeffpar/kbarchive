@@ -6,6 +6,8 @@ permalink: /kb/057/Q57606/
 
 ## Q57606: Mouse and Token Ring Conflict
 
+{% raw %}
+
 	Article: Q57606
 	Product(s): See article
 	Version(s): 7.00
@@ -18,3 +20,5 @@ permalink: /kb/057/Q57606/
 	
 	It has been reported that if the mouse driver was loaded after the
 	three drivers that are needed for Token Ring, both will work properly.
+
+{% endraw %}

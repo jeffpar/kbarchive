@@ -6,6 +6,8 @@ permalink: /kb/199/Q199255/
 
 ## Q199255: Exchange Server Training Comments and Corrections
 
+{% raw %}
+
 	Article: Q199255
 	Product(s): Microsoft Press
 	Version(s): 
@@ -314,3 +316,5 @@ permalink: /kb/199/Q199255/
 	
 	=============================================================================
 	
+
+{% endraw %}

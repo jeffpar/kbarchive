@@ -6,6 +6,8 @@ permalink: /kb/150/Q150194/
 
 ## Q150194: BUG: OLE Container Launches Word When Resized
 
+{% raw %}
+
 	Article: Q150194
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -72,3 +74,5 @@ permalink: /kb/150/Q150194/
 	
 	=============================================================================
 	
+
+{% endraw %}

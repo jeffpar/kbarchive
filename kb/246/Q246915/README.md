@@ -6,6 +6,8 @@ permalink: /kb/246/Q246915/
 
 ## Q246915: Using &lt;% %&gt; Instead of &lt;SCRIPT&gt; Tags Affects Processing Order
 
+{% raw %}
+
 	Article: Q246915
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -126,3 +128,5 @@ permalink: /kb/246/Q246915/
 	
 	=============================================================================
 	
+
+{% endraw %}

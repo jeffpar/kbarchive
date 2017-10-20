@@ -6,6 +6,8 @@ permalink: /kb/184/Q184051/
 
 ## Q184051: XFOR: Queued Message Waiting for ETRN Never Expires
 
+{% raw %}
+
 	Article: Q184051
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -82,3 +84,5 @@ permalink: /kb/184/Q184051/
 	
 	=============================================================================
 	
+
+{% endraw %}

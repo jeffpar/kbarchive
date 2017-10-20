@@ -6,6 +6,8 @@ permalink: /kb/072/Q72850/
 
 ## Q72850: Installation Notes for the Source Profiler Version 1.0
 
+{% raw %}
+
 	Article: Q72850
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/072/Q72850/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153568/
 
 ## Q153568: HOWTO: Optimize Remote OLE Automation Performance
 
+{% raw %}
+
 	Article: Q153568
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/153/Q153568/
 	
 	=============================================================================
 	
+
+{% endraw %}

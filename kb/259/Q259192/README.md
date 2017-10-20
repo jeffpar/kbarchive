@@ -6,6 +6,8 @@ permalink: /kb/259/Q259192/
 
 ## Q259192: PRB: Updating a Table with DTOC() in an Index Using ODBC
 
+{% raw %}
+
 	Article: Q259192
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -201,3 +203,5 @@ permalink: /kb/259/Q259192/
 	
 	=============================================================================
 	
+
+{% endraw %}

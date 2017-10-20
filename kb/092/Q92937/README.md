@@ -6,6 +6,8 @@ permalink: /kb/092/Q92937/
 
 ## Q92937: PC Tools Drivers May Cause Windows to Stop Responding (Hang)
 
+{% raw %}
+
 	Article: Q92937
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -75,3 +77,5 @@ permalink: /kb/092/Q92937/
 	
 	=============================================================================
 	
+
+{% endraw %}

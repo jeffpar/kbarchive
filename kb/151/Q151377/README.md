@@ -6,6 +6,8 @@ permalink: /kb/151/Q151377/
 
 ## Q151377: Incorrect Path for UINFO.XNF in Administrator's Guide
 
+{% raw %}
+
 	Article: Q151377
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -57,3 +59,5 @@ permalink: /kb/151/Q151377/
 	
 	=============================================================================
 	
+
+{% endraw %}

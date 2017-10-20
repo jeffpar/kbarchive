@@ -6,6 +6,8 @@ permalink: /kb/113/Q113812/
 
 ## Q113812: HOWTO: Create a Menu with a Variable Pad
 
+{% raw %}
+
 	Article: Q113812
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0,5.0,6.0
@@ -242,3 +244,5 @@ permalink: /kb/113/Q113812/
 	
 	=============================================================================
 	
+
+{% endraw %}

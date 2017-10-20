@@ -6,6 +6,8 @@ permalink: /kb/304/Q304291/
 
 ## Q304291: Intermittent Blue-Screen Error Messages in Terminal Server
 
+{% raw %}
+
 	Article: Q304291
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -60,3 +62,5 @@ permalink: /kb/304/Q304291/
 	
 	=============================================================================
 	
+
+{% endraw %}

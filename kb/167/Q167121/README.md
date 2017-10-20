@@ -6,6 +6,8 @@ permalink: /kb/167/Q167121/
 
 ## Q167121: FILE: COMCTLZP.EXE: Comctl32.ocx Updated to Version 5.00.3828
 
+{% raw %}
+
 	Article: Q167121
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,97; winnt:5.0
@@ -145,3 +147,5 @@ permalink: /kb/167/Q167121/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/075/Q75463/
 
 ## Q75463: Plus Hardcard II Drivers and MS-DOS 5.x
 
+{% raw %}
+
 	Article: Q75463
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a; WINDOWS:3.0,3.0a,3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/075/Q75463/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134894/
 
 ## Q134894: LaserWave Futura 16 Sound Card Detected Incorrectly
 
+{% raw %}
+
 	Article: Q134894
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/134/Q134894/
 	
 	=============================================================================
 	
+
+{% endraw %}

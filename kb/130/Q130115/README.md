@@ -6,6 +6,8 @@ permalink: /kb/130/Q130115/
 
 ## Q130115: PC Adm: Err Msg: Notice 163 Failed to Complete Deinstallation
 
+{% raw %}
+
 	Article: Q130115
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -47,3 +49,5 @@ permalink: /kb/130/Q130115/
 	
 	=============================================================================
 	
+
+{% endraw %}

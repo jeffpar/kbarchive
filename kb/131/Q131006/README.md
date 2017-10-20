@@ -6,6 +6,8 @@ permalink: /kb/131/Q131006/
 
 ## Q131006: PRB: Dr Watson Won't Log Stack Symbols in Visual C++ App
 
+{% raw %}
+
 	Article: Q131006
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,3.1,3.5,3.51,4.0,5.0,6.0
@@ -85,3 +87,5 @@ permalink: /kb/131/Q131006/
 	
 	=============================================================================
 	
+
+{% endraw %}

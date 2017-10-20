@@ -6,6 +6,8 @@ permalink: /kb/200/Q200278/
 
 ## Q200278: XFOR: Messages in Draft Folder Lose Draft Flag after Migration
 
+{% raw %}
+
 	Article: Q200278
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -44,3 +46,5 @@ permalink: /kb/200/Q200278/
 	
 	=============================================================================
 	
+
+{% endraw %}

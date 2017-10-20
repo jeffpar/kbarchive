@@ -6,6 +6,8 @@ permalink: /kb/177/Q177614/
 
 ## Q177614: What Is the Game Compatible Audio Device?
 
+{% raw %}
+
 	Article: Q177614
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:95
@@ -83,3 +85,5 @@ permalink: /kb/177/Q177614/
 	
 	=============================================================================
 	
+
+{% endraw %}

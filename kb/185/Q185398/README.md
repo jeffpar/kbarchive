@@ -6,6 +6,8 @@ permalink: /kb/185/Q185398/
 
 ## Q185398: WD97: How to Modify a Calculation Field to Appear Blank
 
+{% raw %}
+
 	Article: Q185398
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -142,3 +144,5 @@ permalink: /kb/185/Q185398/
 	
 	=============================================================================
 	
+
+{% endraw %}

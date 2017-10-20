@@ -6,6 +6,8 @@ permalink: /kb/151/Q151062/
 
 ## Q151062: Upgrading Existing Operating Systems to Windows 95
 
+{% raw %}
+
 	Article: Q151062
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -93,3 +95,5 @@ permalink: /kb/151/Q151062/
 	
 	=============================================================================
 	
+
+{% endraw %}

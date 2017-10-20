@@ -6,6 +6,8 @@ permalink: /kb/228/Q228475/
 
 ## Q228475: XFOR: Event ID 115 Error Starting SMTP Relay Host Service
 
+{% raw %}
+
 	Article: Q228475
 	Product(s): Internet Information Server
 	Version(s): winnt:
@@ -67,3 +69,5 @@ permalink: /kb/228/Q228475/
 	
 	=============================================================================
 	
+
+{% endraw %}

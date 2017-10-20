@@ -6,6 +6,8 @@ permalink: /kb/036/Q36722/
 
 ## Q36722: Warning C4037 'identifier' : Formal Parameters Ignored
 
+{% raw %}
+
 	Article: Q36722
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -40,3 +42,5 @@ permalink: /kb/036/Q36722/
 	example as follows:
 	
 	int *f (int a, int b, int c) ;
+
+{% endraw %}

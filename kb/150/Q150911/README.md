@@ -6,6 +6,8 @@ permalink: /kb/150/Q150911/
 
 ## Q150911: CACLS Output Cannot Be Redirected
 
+{% raw %}
+
 	Article: Q150911
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP5,4.0 SP2
@@ -79,3 +81,5 @@ permalink: /kb/150/Q150911/
 	
 	=============================================================================
 	
+
+{% endraw %}

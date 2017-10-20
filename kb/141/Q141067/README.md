@@ -6,6 +6,8 @@ permalink: /kb/141/Q141067/
 
 ## Q141067: PC WSPlus: Description of Offline and Online Merging
 
+{% raw %}
+
 	Article: Q141067
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -97,3 +99,5 @@ permalink: /kb/141/Q141067/
 	
 	=============================================================================
 	
+
+{% endraw %}

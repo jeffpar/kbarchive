@@ -6,6 +6,8 @@ permalink: /kb/130/Q130343/
 
 ## Q130343: Reserved Color Schemes in Visual FoxPro Now Include 15
 
+{% raw %}
+
 	Article: Q130343
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/130/Q130343/
 	
 	=============================================================================
 	
+
+{% endraw %}

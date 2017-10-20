@@ -6,6 +6,8 @@ permalink: /kb/063/Q63704/
 
 ## Q63704: Library Sizes for QuickC 2.50
 
+{% raw %}
+
 	Article: Q63704
 	Product(s): See article
 	Version(s): 2.50 2.51
@@ -30,3 +32,5 @@ permalink: /kb/063/Q63704/
 	   MLIBC7.LIB    238921      327969       379395
 	   CLIBC7.LIB    243565      332613       384039
 	   LLIBC7.LIB    247149      336197       387111
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131748/
 
 ## Q131748: Setup Hangs Accessing CD-ROM Drive with CD17F14A.SYS
 
+{% raw %}
+
 	Article: Q131748
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/131/Q131748/
 	
 	=============================================================================
 	
+
+{% endraw %}

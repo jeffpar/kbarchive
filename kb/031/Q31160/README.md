@@ -6,6 +6,8 @@ permalink: /kb/031/Q31160/
 
 ## Q31160: POINT(0) and POINT(1) Problem after VIEW and WINDOW
 
+{% raw %}
+
 	Article: Q31160
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -88,3 +90,5 @@ permalink: /kb/031/Q31160/
 	DO: LOOP UNTIL INKEY$ <> ""
 	SCREEN 0
 	END
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/232/Q232340/
 
 ## Q232340: Zone Err Msg: Failed to Download &lt;Filename&gt;
 
+{% raw %}
+
 	Article: Q232340
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -258,3 +260,5 @@ permalink: /kb/232/Q232340/
 	
 	=============================================================================
 	
+
+{% endraw %}

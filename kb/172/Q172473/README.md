@@ -6,6 +6,8 @@ permalink: /kb/172/Q172473/
 
 ## Q172473: Disk Defragmenter or ScanDisk Loops Continuously
 
+{% raw %}
+
 	Article: Q172473
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -63,3 +65,5 @@ permalink: /kb/172/Q172473/
 	
 	=============================================================================
 	
+
+{% endraw %}

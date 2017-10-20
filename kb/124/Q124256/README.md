@@ -6,6 +6,8 @@ permalink: /kb/124/Q124256/
 
 ## Q124256: README.DOC for Paris Scenery Add-On
 
+{% raw %}
+
 	Article: Q124256
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -60,3 +62,5 @@ permalink: /kb/124/Q124256/
 	
 	=============================================================================
 	
+
+{% endraw %}

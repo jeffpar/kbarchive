@@ -6,6 +6,8 @@ permalink: /kb/174/Q174096/
 
 ## Q174096: Error Message: Cannot Find Ftcolor.exe
 
+{% raw %}
+
 	Article: Q174096
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -60,3 +62,5 @@ permalink: /kb/174/Q174096/
 	
 	=============================================================================
 	
+
+{% endraw %}

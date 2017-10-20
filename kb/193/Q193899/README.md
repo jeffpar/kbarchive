@@ -6,6 +6,8 @@ permalink: /kb/193/Q193899/
 
 ## Q193899: Event ID 1008, 4005 with Missing TCP/IP Performance Counters
 
+{% raw %}
+
 	Article: Q193899
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -78,3 +80,5 @@ permalink: /kb/193/Q193899/
 	
 	=============================================================================
 	
+
+{% endraw %}

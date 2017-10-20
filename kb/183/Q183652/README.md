@@ -6,6 +6,8 @@ permalink: /kb/183/Q183652/
 
 ## Q183652: Access Violation When More Than 200 Adapters Are Installed
 
+{% raw %}
+
 	Article: Q183652
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/183/Q183652/
 	
 	=============================================================================
 	
+
+{% endraw %}

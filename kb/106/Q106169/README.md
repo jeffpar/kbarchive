@@ -6,6 +6,8 @@ permalink: /kb/106/Q106169/
 
 ## Q106169: Windows NT and HP LAN Manager/X Version 1.4 Interoperability
 
+{% raw %}
+
 	Article: Q106169
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -133,3 +135,5 @@ permalink: /kb/106/Q106169/
 	
 	=============================================================================
 	
+
+{% endraw %}

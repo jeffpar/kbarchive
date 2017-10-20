@@ -6,6 +6,8 @@ permalink: /kb/103/Q103725/
 
 ## Q103725: HOWTO: Pass Common C Types to MASM by Reference
 
+{% raw %}
+
 	Article: Q103725
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0,7.0
@@ -168,3 +170,5 @@ permalink: /kb/103/Q103725/
 	
 	=============================================================================
 	
+
+{% endraw %}

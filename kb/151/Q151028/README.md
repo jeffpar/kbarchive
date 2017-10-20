@@ -6,6 +6,8 @@ permalink: /kb/151/Q151028/
 
 ## Q151028: Microsoft Exchange Returns Microsoft Mail as Undeliverable
 
+{% raw %}
+
 	Article: Q151028
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -79,3 +81,5 @@ permalink: /kb/151/Q151028/
 	
 	=============================================================================
 	
+
+{% endraw %}

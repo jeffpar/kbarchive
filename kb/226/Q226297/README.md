@@ -6,6 +6,8 @@ permalink: /kb/226/Q226297/
 
 ## Q226297: SMS: How Remote Tools Locates a Client and Establishes a Session
 
+{% raw %}
+
 	Article: Q226297
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -60,3 +62,5 @@ permalink: /kb/226/Q226297/
 	
 	=============================================================================
 	
+
+{% endraw %}

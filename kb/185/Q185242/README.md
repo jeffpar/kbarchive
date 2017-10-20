@@ -6,6 +6,8 @@ permalink: /kb/185/Q185242/
 
 ## Q185242: PRB: Data Not Updated with ToolBar Navigation
 
+{% raw %}
+
 	Article: Q185242
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -196,3 +198,5 @@ permalink: /kb/185/Q185242/
 	
 	=============================================================================
 	
+
+{% endraw %}

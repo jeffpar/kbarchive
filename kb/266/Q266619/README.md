@@ -6,6 +6,8 @@ permalink: /kb/266/Q266619/
 
 ## Q266619: Combat Flight Simulator: Engines Shut Down Unexpectedly
 
+{% raw %}
+
 	Article: Q266619
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -54,3 +56,5 @@ permalink: /kb/266/Q266619/
 	
 	=============================================================================
 	
+
+{% endraw %}

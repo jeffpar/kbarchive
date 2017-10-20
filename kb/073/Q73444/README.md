@@ -6,6 +6,8 @@ permalink: /kb/073/Q73444/
 
 ## Q73444: Using DiskLock PC with MS-DOS 5.x or 6.x
 
+{% raw %}
+
 	Article: Q73444
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2
@@ -88,3 +90,5 @@ permalink: /kb/073/Q73444/
 	
 	=============================================================================
 	
+
+{% endraw %}

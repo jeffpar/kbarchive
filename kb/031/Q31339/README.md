@@ -6,6 +6,8 @@ permalink: /kb/031/Q31339/
 
 ## Q31339: How to Extract .OBJ Routines from .LIB Files Using LIB.EXE
 
+{% raw %}
+
 	Article: Q31339
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -69,3 +71,5 @@ permalink: /kb/031/Q31339/
 	Versions 4.00 and later; however, it is not provided with QuickBASIC
 	Versions 3.00 and earlier versions. LIB.EXE is also provided with the
 	Microsoft Macro Assembler.
+
+{% endraw %}

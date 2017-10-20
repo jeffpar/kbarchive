@@ -6,6 +6,8 @@ permalink: /kb/264/Q264858/
 
 ## Q264858: StarLancer: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q264858
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -77,3 +79,5 @@ permalink: /kb/264/Q264858/
 	
 	=============================================================================
 	
+
+{% endraw %}

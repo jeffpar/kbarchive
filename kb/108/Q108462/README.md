@@ -6,6 +6,8 @@ permalink: /kb/108/Q108462/
 
 ## Q108462: FIX: Concatenation in Parentheses Produces Blank Output
 
+{% raw %}
+
 	Article: Q108462
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -75,3 +77,5 @@ permalink: /kb/108/Q108462/
 	
 	=============================================================================
 	
+
+{% endraw %}

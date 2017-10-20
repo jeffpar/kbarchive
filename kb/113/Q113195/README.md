@@ -6,6 +6,8 @@ permalink: /kb/113/Q113195/
 
 ## Q113195: Adaptec 274x Series SCSI Adapters
 
+{% raw %}
+
 	Article: Q113195
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -74,3 +76,5 @@ permalink: /kb/113/Q113195/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189242/
 
 ## Q189242: XWEB: OWA Displays Personal Calendar Instead of Shared Calendar
 
+{% raw %}
+
 	Article: Q189242
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -51,3 +53,5 @@ permalink: /kb/189/Q189242/
 	
 	=============================================================================
 	
+
+{% endraw %}

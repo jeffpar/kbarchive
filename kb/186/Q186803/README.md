@@ -6,6 +6,8 @@ permalink: /kb/186/Q186803/
 
 ## Q186803: Browsing Folders with Script-Mapped Extensions Returns Errors
 
+{% raw %}
+
 	Article: Q186803
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -93,3 +95,5 @@ permalink: /kb/186/Q186803/
 	
 	=============================================================================
 	
+
+{% endraw %}

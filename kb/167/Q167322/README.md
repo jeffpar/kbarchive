@@ -6,6 +6,8 @@ permalink: /kb/167/Q167322/
 
 ## Q167322: PRB: Cannot Load Een0swt.dll When Installing Visual C++ 4.x
 
+{% raw %}
+
 	Article: Q167322
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -59,3 +61,5 @@ permalink: /kb/167/Q167322/
 	
 	=============================================================================
 	
+
+{% endraw %}

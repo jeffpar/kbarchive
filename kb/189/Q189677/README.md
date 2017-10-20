@@ -6,6 +6,8 @@ permalink: /kb/189/Q189677/
 
 ## Q189677: HOWTO: Execute Multiple SQL Action Queries to Oracle Using RDO
 
+{% raw %}
+
 	Article: Q189677
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -165,3 +167,5 @@ permalink: /kb/189/Q189677/
 	
 	=============================================================================
 	
+
+{% endraw %}

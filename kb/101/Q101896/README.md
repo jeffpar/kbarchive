@@ -6,6 +6,8 @@ permalink: /kb/101/Q101896/
 
 ## Q101896: Err Msg: Server Manager -- Access is Denied
 
+{% raw %}
+
 	Article: Q101896
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -55,3 +57,5 @@ permalink: /kb/101/Q101896/
 	
 	=============================================================================
 	
+
+{% endraw %}

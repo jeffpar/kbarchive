@@ -6,6 +6,8 @@ permalink: /kb/172/Q172872/
 
 ## Q172872: SMS: Application Group or Icons Not Created in WinNT 3.51 w/PCM
 
+{% raw %}
+
 	Article: Q172872
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0; winnt:1.2
@@ -107,3 +109,5 @@ permalink: /kb/172/Q172872/
 	
 	=============================================================================
 	
+
+{% endraw %}

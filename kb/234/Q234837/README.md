@@ -6,6 +6,8 @@ permalink: /kb/234/Q234837/
 
 ## Q234837: MOD2000: Renamed Objects Lose Connection to VSS
 
+{% raw %}
+
 	Article: Q234837
 	Product(s): Microsoft SourceSafe
 	Version(s): ; WINDOWS:6.0
@@ -112,3 +114,5 @@ permalink: /kb/234/Q234837/
 	
 	=============================================================================
 	
+
+{% endraw %}

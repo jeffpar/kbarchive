@@ -6,6 +6,8 @@ permalink: /kb/149/Q149823/
 
 ## Q149823: 3D Movie Maker: ErrMsg: You Do Not Have a Multimedia Driver
 
+{% raw %}
+
 	Article: Q149823
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.00
@@ -89,3 +91,5 @@ permalink: /kb/149/Q149823/
 	
 	=============================================================================
 	
+
+{% endraw %}

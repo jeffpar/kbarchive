@@ -6,6 +6,8 @@ permalink: /kb/086/Q86969/
 
 ## Q86969: X400: How to Test X.25 Connection Before X.400 Installation
 
+{% raw %}
+
 	Article: Q86969
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -45,3 +47,5 @@ permalink: /kb/086/Q86969/
 	
 	=============================================================================
 	
+
+{% endraw %}

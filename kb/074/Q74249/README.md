@@ -6,6 +6,8 @@ permalink: /kb/074/Q74249/
 
 ## Q74249: Gateway Ethernet Card I/O Address Settings with Windows
 
+{% raw %}
+
 	Article: Q74249
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -61,3 +63,5 @@ permalink: /kb/074/Q74249/
 	
 	=============================================================================
 	
+
+{% endraw %}

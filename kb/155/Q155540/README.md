@@ -6,6 +6,8 @@ permalink: /kb/155/Q155540/
 
 ## Q155540: Copying File Returns File Not Found Instead of Invalid Path
 
+{% raw %}
+
 	Article: Q155540
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -49,3 +51,5 @@ permalink: /kb/155/Q155540/
 	
 	=============================================================================
 	
+
+{% endraw %}

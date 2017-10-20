@@ -6,6 +6,8 @@ permalink: /kb/067/Q67612/
 
 ## Q67612: Bad Code Generated for Function Returning _self Based Pointer
 
+{% raw %}
+
 	Article: Q67612
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -35,3 +37,5 @@ permalink: /kb/067/Q67612/
 	{
 	   return(pfoo->pbs);
 	}
+
+{% endraw %}

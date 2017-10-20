@@ -6,6 +6,8 @@ permalink: /kb/154/Q154413/
 
 ## Q154413: Changing Maximum Number of Users on an FPNW Server
 
+{% raw %}
+
 	Article: Q154413
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -64,3 +66,5 @@ permalink: /kb/154/Q154413/
 	
 	=============================================================================
 	
+
+{% endraw %}

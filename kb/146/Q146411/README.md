@@ -6,6 +6,8 @@ permalink: /kb/146/Q146411/
 
 ## Q146411: Error Creating Msbatch.inf File Using Netsetup.exe
 
+{% raw %}
+
 	Article: Q146411
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/146/Q146411/
 	
 	=============================================================================
 	
+
+{% endraw %}

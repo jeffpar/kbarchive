@@ -6,6 +6,8 @@ permalink: /kb/141/Q141970/
 
 ## Q141970: XCON: Exchange Unresponsive If Message Subject Has 0xD
 
+{% raw %}
+
 	Article: Q141970
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -53,3 +55,5 @@ permalink: /kb/141/Q141970/
 	
 	=============================================================================
 	
+
+{% endraw %}

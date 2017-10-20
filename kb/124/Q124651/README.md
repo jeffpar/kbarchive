@@ -6,6 +6,8 @@ permalink: /kb/124/Q124651/
 
 ## Q124651: Err Msg: No Domain Server Was Available to Validate Your...
 
+{% raw %}
+
 	Article: Q124651
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:
@@ -68,3 +70,5 @@ permalink: /kb/124/Q124651/
 	
 	=============================================================================
 	
+
+{% endraw %}

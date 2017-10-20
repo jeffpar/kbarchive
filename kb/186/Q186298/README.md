@@ -6,6 +6,8 @@ permalink: /kb/186/Q186298/
 
 ## Q186298: HOWTO: Get the HRESULT From a COM Object
 
+{% raw %}
+
 	Article: Q186298
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -98,3 +100,5 @@ permalink: /kb/186/Q186298/
 	
 	=============================================================================
 	
+
+{% endraw %}

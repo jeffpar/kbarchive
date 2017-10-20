@@ -6,6 +6,8 @@ permalink: /kb/156/Q156958/
 
 ## Q156958: Serial Service Won't Stop with Serial Printer Installed
 
+{% raw %}
+
 	Article: Q156958
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/156/Q156958/
 	
 	=============================================================================
 	
+
+{% endraw %}

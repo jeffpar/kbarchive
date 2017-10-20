@@ -6,6 +6,8 @@ permalink: /kb/305/Q305581/
 
 ## Q305581: Golfer Animations Run Too Fast
 
+{% raw %}
+
 	Article: Q305581
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -92,3 +94,5 @@ permalink: /kb/305/Q305581/
 	
 	=============================================================================
 	
+
+{% endraw %}

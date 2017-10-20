@@ -6,6 +6,8 @@ permalink: /kb/273/Q273573/
 
 ## Q273573: IISADMPWD Password Change Pages Fail to Change Passwords
 
+{% raw %}
+
 	Article: Q273573
 	Product(s): Internet Information Server
 	Version(s): 4.0,5,5.01,5.5
@@ -92,3 +94,5 @@ permalink: /kb/273/Q273573/
 	
 	=============================================================================
 	
+
+{% endraw %}

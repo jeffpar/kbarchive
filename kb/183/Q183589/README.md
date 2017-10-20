@@ -6,6 +6,8 @@ permalink: /kb/183/Q183589/
 
 ## Q183589: XFOR: Custom Recipients Do Not Appear After Dirsync
 
+{% raw %}
+
 	Article: Q183589
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -54,3 +56,5 @@ permalink: /kb/183/Q183589/
 	
 	=============================================================================
 	
+
+{% endraw %}

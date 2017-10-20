@@ -6,6 +6,8 @@ permalink: /kb/142/Q142983/
 
 ## Q142983: &quot;Error Loading SETUPX.DLL&quot; Error Msg Running Netsetup.exe
 
+{% raw %}
+
 	Article: Q142983
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -62,3 +64,5 @@ permalink: /kb/142/Q142983/
 	
 	=============================================================================
 	
+
+{% endraw %}

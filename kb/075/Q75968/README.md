@@ -6,6 +6,8 @@ permalink: /kb/075/Q75968/
 
 ## Q75968: DOCERR: Errors in MASM 6.0 &quot;Installing and Using...&quot; Manual
 
+{% raw %}
+
 	Article: Q75968
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -57,3 +59,5 @@ permalink: /kb/075/Q75968/
 	
 	=============================================================================
 	
+
+{% endraw %}

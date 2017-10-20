@@ -6,6 +6,8 @@ permalink: /kb/166/Q166157/
 
 ## Q166157: ERD Err: &quot;The following value in the setup information file&quot;
 
+{% raw %}
+
 	Article: Q166157
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -82,3 +84,5 @@ permalink: /kb/166/Q166157/
 	
 	=============================================================================
 	
+
+{% endraw %}

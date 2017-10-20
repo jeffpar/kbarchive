@@ -6,6 +6,8 @@ permalink: /kb/190/Q190371/
 
 ## Q190371: HOWTO: Use Bound Controls with an ADO Recordset
 
+{% raw %}
+
 	Article: Q190371
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.5,2.6,6.0
@@ -88,3 +90,5 @@ permalink: /kb/190/Q190371/
 	
 	=============================================================================
 	
+
+{% endraw %}

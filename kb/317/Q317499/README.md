@@ -6,6 +6,8 @@ permalink: /kb/317/Q317499/
 
 ## Q317499: BUG: Mouse Clicks Do Not Work on a Scrollable SDI Form
 
+{% raw %}
+
 	Article: Q317499
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0,7.0
@@ -300,3 +302,5 @@ permalink: /kb/317/Q317499/
 	
 	=============================================================================
 	
+
+{% endraw %}

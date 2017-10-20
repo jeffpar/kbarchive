@@ -6,6 +6,8 @@ permalink: /kb/043/Q43901/
 
 ## Q43901: Multiple CASE ELSE Allowed in QB.EXE; Causes Compile Errors
 
+{% raw %}
+
 	Article: Q43901
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -56,3 +58,5 @@ permalink: /kb/043/Q43901/
 	    PRINT "OTHER 2"
 	END SELECT              'This line causes "END SELECT without SELECT"
 	LOOP UNTIL x = 0
+
+{% endraw %}

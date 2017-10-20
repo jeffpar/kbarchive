@@ -6,6 +6,8 @@ permalink: /kb/040/Q40810/
 
 ## Q40810: _edata and _end Are Defined by LINK
 
+{% raw %}
+
 	Article: Q40810
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -35,3 +37,5 @@ permalink: /kb/040/Q40810/
 	These two symbols can be found in the startup source code file
 	CRT0.ASM. The startup source code is included in the Microsoft C
 	Optimizing Compiler for Versions 5.00 and 5.10.
+
+{% endraw %}

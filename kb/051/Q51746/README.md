@@ -6,6 +6,8 @@ permalink: /kb/051/Q51746/
 
 ## Q51746: Locals Can Be Viewed Only When Compiling with CodeView Info
 
+{% raw %}
+
 	Article: Q51746
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -43,3 +45,5 @@ permalink: /kb/051/Q51746/
 	
 	   printf( "This is a test...\n" );
 	}
+
+{% endraw %}

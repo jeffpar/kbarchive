@@ -6,6 +6,8 @@ permalink: /kb/105/Q105162/
 
 ## Q105162: PC Win: MIME Currently Not Supported
 
+{% raw %}
+
 	Article: Q105162
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -31,3 +33,5 @@ permalink: /kb/105/Q105162/
 	
 	=============================================================================
 	
+
+{% endraw %}

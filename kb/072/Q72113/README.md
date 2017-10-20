@@ -6,6 +6,8 @@ permalink: /kb/072/Q72113/
 
 ## Q72113: Differences Between DOSSHELL.COM and DOSSHELL.EXE
 
+{% raw %}
+
 	Article: Q72113
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -62,3 +64,5 @@ permalink: /kb/072/Q72113/
 	
 	=============================================================================
 	
+
+{% endraw %}

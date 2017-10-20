@@ -6,6 +6,8 @@ permalink: /kb/192/Q192678/
 
 ## Q192678: Add/Remove TS Client Requires Original Installation Point
 
+{% raw %}
+
 	Article: Q192678
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -84,3 +86,5 @@ permalink: /kb/192/Q192678/
 	
 	=============================================================================
 	
+
+{% endraw %}

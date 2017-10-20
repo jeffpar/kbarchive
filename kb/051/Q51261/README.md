@@ -6,6 +6,8 @@ permalink: /kb/051/Q51261/
 
 ## Q51261: Mac Srv: Server Can't Be Loaded if File Is Locked
 
+{% raw %}
+
 	Article: Q51261
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b
@@ -54,3 +56,5 @@ permalink: /kb/051/Q51261/
 	
 	=============================================================================
 	
+
+{% endraw %}

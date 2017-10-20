@@ -6,6 +6,8 @@ permalink: /kb/171/Q171484/
 
 ## Q171484: FIX: Code Module Window Displayed Transparently in SDI
 
+{% raw %}
+
 	Article: Q171484
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -81,3 +83,5 @@ permalink: /kb/171/Q171484/
 	
 	=============================================================================
 	
+
+{% endraw %}

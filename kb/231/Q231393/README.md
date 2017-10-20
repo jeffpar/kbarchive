@@ -6,6 +6,8 @@ permalink: /kb/231/Q231393/
 
 ## Q231393: BUG: Using DCOM with an Active Document
 
+{% raw %}
+
 	Article: Q231393
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -118,3 +120,5 @@ permalink: /kb/231/Q231393/
 	
 	=============================================================================
 	
+
+{% endraw %}

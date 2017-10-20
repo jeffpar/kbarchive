@@ -6,6 +6,8 @@ permalink: /kb/230/Q230173/
 
 ## Q230173: Windows 98/95 Year 2000 Update May Not Update Vdhcp.386 File
 
+{% raw %}
+
 	Article: Q230173
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -114,3 +116,5 @@ permalink: /kb/230/Q230173/
 	
 	=============================================================================
 	
+
+{% endraw %}

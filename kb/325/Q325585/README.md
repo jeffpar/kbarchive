@@ -6,6 +6,8 @@ permalink: /kb/325/Q325585/
 
 ## Q325585: SMS: Software Inventory May Be Discarded from Offline Clients
 
+{% raw %}
+
 	Article: Q325585
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3,2.0 SP4
@@ -71,3 +73,5 @@ permalink: /kb/325/Q325585/
 	
 	=============================================================================
 	
+
+{% endraw %}

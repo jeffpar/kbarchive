@@ -6,6 +6,8 @@ permalink: /kb/136/Q136855/
 
 ## Q136855: When to Use Buffering, Referential Integrity, and Triggers
 
+{% raw %}
+
 	Article: Q136855
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 | 3.00b
@@ -89,3 +91,5 @@ permalink: /kb/136/Q136855/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191277/
 
 ## Q191277: PRB: VARTYPE() Function Returns Data Type Mismatch Error
 
+{% raw %}
+
 	Article: Q191277
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -70,3 +72,5 @@ permalink: /kb/191/Q191277/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96620/
 
 ## Q96620: Obtaining Security Certification Specifications
 
+{% raw %}
+
 	Article: Q96620
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -31,3 +33,5 @@ permalink: /kb/096/Q96620/
 	
 	=============================================================================
 	
+
+{% endraw %}

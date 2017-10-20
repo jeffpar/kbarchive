@@ -6,6 +6,8 @@ permalink: /kb/069/Q69386/
 
 ## Q69386: Avoiding Split Print Jobs on Banyan Vines and Windows 3.0
 
+{% raw %}
+
 	Article: Q69386
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/069/Q69386/
 	
 	=============================================================================
 	
+
+{% endraw %}

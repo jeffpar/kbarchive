@@ -6,6 +6,8 @@ permalink: /kb/186/Q186714/
 
 ## Q186714: XCON: Cannot Configure MTA to Provide Adequate Message Control
 
+{% raw %}
+
 	Article: Q186714
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -199,3 +201,5 @@ permalink: /kb/186/Q186714/
 	
 	=============================================================================
 	
+
+{% endraw %}

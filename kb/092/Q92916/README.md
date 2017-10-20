@@ -6,6 +6,8 @@ permalink: /kb/092/Q92916/
 
 ## Q92916: UB Cards Not Initialized If Memory Window Is Not Excluded
 
+{% raw %}
+
 	Article: Q92916
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -71,3 +73,5 @@ permalink: /kb/092/Q92916/
 	
 	=============================================================================
 	
+
+{% endraw %}

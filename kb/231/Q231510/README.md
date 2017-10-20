@@ -6,6 +6,8 @@ permalink: /kb/231/Q231510/
 
 ## Q231510: MapPoint 2000: Unable to Install from Novell NetWare File Server
 
+{% raw %}
+
 	Article: Q231510
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -58,3 +60,5 @@ permalink: /kb/231/Q231510/
 	
 	=============================================================================
 	
+
+{% endraw %}

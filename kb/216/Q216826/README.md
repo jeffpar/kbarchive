@@ -6,6 +6,8 @@ permalink: /kb/216/Q216826/
 
 ## Q216826: SMSINST: How to Create a Silent Uninstall for SMS Installer Prog
 
+{% raw %}
+
 	Article: Q216826
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0; winnt:2.0
@@ -96,3 +98,5 @@ permalink: /kb/216/Q216826/
 	
 	=============================================================================
 	
+
+{% endraw %}

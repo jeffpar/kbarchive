@@ -6,6 +6,8 @@ permalink: /kb/179/Q179807/
 
 ## Q179807: Prompted to Install Printer During Msbatch.inf Setup
 
+{% raw %}
+
 	Article: Q179807
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -70,3 +72,5 @@ permalink: /kb/179/Q179807/
 	
 	=============================================================================
 	
+
+{% endraw %}

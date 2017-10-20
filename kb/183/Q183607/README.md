@@ -6,6 +6,8 @@ permalink: /kb/183/Q183607/
 
 ## Q183607: HOWTO: Configure DCOM for Visual Basic Using DCOMCNFG.EXE
 
+{% raw %}
+
 	Article: Q183607
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -175,3 +177,5 @@ permalink: /kb/183/Q183607/
 	
 	=============================================================================
 	
+
+{% endraw %}

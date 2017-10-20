@@ -6,6 +6,8 @@ permalink: /kb/050/Q50496/
 
 ## Q50496: The 37th Call Added to the Calls Menu Corrupts CodeView Screen
 
+{% raw %}
+
 	Article: Q50496
 	Product(s): See article
 	Version(s): 2.20   | 2.20
@@ -32,3 +34,5 @@ permalink: /kb/050/Q50496/
 	
 	Microsoft has confirmed this to be a problem with CodeView Version
 	2.20. This problem was corrected in Version 2.30.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171860/
 
 ## Q171860: Duplicate IP Address in RAS Pool Causes Event ID 20050
 
+{% raw %}
+
 	Article: Q171860
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -99,3 +101,5 @@ permalink: /kb/171/Q171860/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193787/
 
 ## Q193787: Memory Leaks on HP NetServers Running HP TopTools v3.11
 
+{% raw %}
+
 	Article: Q193787
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -51,3 +53,5 @@ permalink: /kb/193/Q193787/
 	
 	=============================================================================
 	
+
+{% endraw %}

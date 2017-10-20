@@ -6,6 +6,8 @@ permalink: /kb/088/Q88414/
 
 ## Q88414: How to Maximize Setup Toolkit Window
 
+{% raw %}
+
 	Article: Q88414
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -62,3 +64,5 @@ permalink: /kb/088/Q88414/
 	
 	=============================================================================
 	
+
+{% endraw %}

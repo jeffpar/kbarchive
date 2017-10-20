@@ -6,6 +6,8 @@ permalink: /kb/200/Q200059/
 
 ## Q200059: XFOR: IMC Generates NDR with Mail From: &lt;&gt;
 
+{% raw %}
+
 	Article: Q200059
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -43,3 +45,5 @@ permalink: /kb/200/Q200059/
 	
 	=============================================================================
 	
+
+{% endraw %}

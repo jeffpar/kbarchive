@@ -6,6 +6,8 @@ permalink: /kb/120/Q120267/
 
 ## Q120267: Space Simulator Err Msg: Adlib Board Not found!
 
+{% raw %}
+
 	Article: Q120267
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/120/Q120267/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132292/
 
 ## Q132292: At Work Fax Queue Limit
 
+{% raw %}
+
 	Article: Q132292
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -63,3 +65,5 @@ permalink: /kb/132/Q132292/
 	
 	=============================================================================
 	
+
+{% endraw %}

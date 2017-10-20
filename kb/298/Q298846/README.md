@@ -6,6 +6,8 @@ permalink: /kb/298/Q298846/
 
 ## Q298846: Installation of Office XP May Disable Help in Other Programs
 
+{% raw %}
+
 	Article: Q298846
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -58,3 +60,5 @@ permalink: /kb/298/Q298846/
 	
 	=============================================================================
 	
+
+{% endraw %}

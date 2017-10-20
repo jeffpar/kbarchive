@@ -6,6 +6,8 @@ permalink: /kb/181/Q181650/
 
 ## Q181650: Context_rundown Called in RPC Server When RPC Client Idles
 
+{% raw %}
+
 	Article: Q181650
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -61,3 +63,5 @@ permalink: /kb/181/Q181650/
 	
 	=============================================================================
 	
+
+{% endraw %}

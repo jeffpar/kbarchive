@@ -6,6 +6,8 @@ permalink: /kb/109/Q109860/
 
 ## Q109860: Flight Simulator: Engine Sound Audible After Engine Turned Off
 
+{% raw %}
+
 	Article: Q109860
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -44,3 +46,5 @@ permalink: /kb/109/Q109860/
 	
 	=============================================================================
 	
+
+{% endraw %}

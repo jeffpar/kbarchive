@@ -6,6 +6,8 @@ permalink: /kb/045/Q45903/
 
 ## Q45903: chdir() Description Incorrect in Manual and On-Line Help
 
+{% raw %}
+
 	Article: Q45903
 	Product(s): See article
 	Version(s): 2.00
@@ -36,3 +38,5 @@ permalink: /kb/045/Q45903/
 	
 	This description needs another backslash (\) and quotes around the
 	directory.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/035/Q35279/
 
 ## Q35279: Sample Program That Makes MS OS/2 Call to DosQFileMode
 
+{% raw %}
+
 	Article: Q35279
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -33,3 +35,5 @@ permalink: /kb/035/Q35279/
 	else
 	  print "Attribute Number is ";hex$(attr%)
 	end if
+
+{% endraw %}

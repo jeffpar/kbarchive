@@ -6,6 +6,8 @@ permalink: /kb/099/Q99334/
 
 ## Q99334: DOCERR: Metafile Terminator Record Not Documented
 
+{% raw %}
+
 	Article: Q99334
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -50,3 +52,5 @@ permalink: /kb/099/Q99334/
 	
 	=============================================================================
 	
+
+{% endraw %}

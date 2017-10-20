@@ -6,6 +6,8 @@ permalink: /kb/214/Q214869/
 
 ## Q214869: SMS: Requirements for Integrating Novell Netware with SMS 2.0
 
+{% raw %}
+
 	Article: Q214869
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -120,3 +122,5 @@ permalink: /kb/214/Q214869/
 	
 	=============================================================================
 	
+
+{% endraw %}

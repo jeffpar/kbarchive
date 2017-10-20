@@ -6,6 +6,8 @@ permalink: /kb/084/Q84191/
 
 ## Q84191: Proton.exe Uses DPMI Host for MS-DOS Protected Mode Apps
 
+{% raw %}
+
 	Article: Q84191
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -61,3 +63,5 @@ permalink: /kb/084/Q84191/
 	
 	=============================================================================
 	
+
+{% endraw %}

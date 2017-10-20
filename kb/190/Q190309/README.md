@@ -6,6 +6,8 @@ permalink: /kb/190/Q190309/
 
 ## Q190309: BUG: Treeview Display Corrupted with DragMode=Automatic
 
+{% raw %}
+
 	Article: Q190309
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -86,3 +88,5 @@ permalink: /kb/190/Q190309/
 	
 	=============================================================================
 	
+
+{% endraw %}

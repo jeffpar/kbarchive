@@ -6,6 +6,8 @@ permalink: /kb/196/Q196333/
 
 ## Q196333: PRB: Not Null Field Returns Error Using VFPODBC SQL Insert
 
+{% raw %}
+
 	Article: Q196333
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,3.0,3.0b,5.0,5.0a,6.0
@@ -166,3 +168,5 @@ permalink: /kb/196/Q196333/
 	
 	=============================================================================
 	
+
+{% endraw %}

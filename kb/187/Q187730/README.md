@@ -6,6 +6,8 @@ permalink: /kb/187/Q187730/
 
 ## Q187730: Cannot Delete the Testdir.tmp File on a Shared NTFS Volume
 
+{% raw %}
+
 	Article: Q187730
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/187/Q187730/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/218/Q218880/
 
 ## Q218880: ASP Request.BinaryRead Method Causes 100% CPU Utilization
 
+{% raw %}
+
 	Article: Q218880
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -93,3 +95,5 @@ permalink: /kb/218/Q218880/
 	
 	=============================================================================
 	
+
+{% endraw %}

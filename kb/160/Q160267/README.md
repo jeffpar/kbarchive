@@ -6,6 +6,8 @@ permalink: /kb/160/Q160267/
 
 ## Q160267: Error When Xcopying from Lan Manager Server
 
+{% raw %}
+
 	Article: Q160267
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0 2.2
@@ -63,3 +65,5 @@ permalink: /kb/160/Q160267/
 	
 	=============================================================================
 	
+
+{% endraw %}

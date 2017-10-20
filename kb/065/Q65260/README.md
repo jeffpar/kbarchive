@@ -6,6 +6,8 @@ permalink: /kb/065/Q65260/
 
 ## Q65260: INFO: The Windows Developer's Notes
 
+{% raw %}
+
 	Article: Q65260
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -105,3 +107,5 @@ permalink: /kb/065/Q65260/
 	
 	=============================================================================
 	
+
+{% endraw %}

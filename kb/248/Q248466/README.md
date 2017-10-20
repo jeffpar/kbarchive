@@ -6,6 +6,8 @@ permalink: /kb/248/Q248466/
 
 ## Q248466: INFO: File Checked Out in Working Directory May Not by Replaced
 
+{% raw %}
+
 	Article: Q248466
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -62,3 +64,5 @@ permalink: /kb/248/Q248466/
 	
 	=============================================================================
 	
+
+{% endraw %}

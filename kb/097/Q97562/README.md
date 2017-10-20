@@ -6,6 +6,8 @@ permalink: /kb/097/Q97562/
 
 ## Q97562: Setup Error Using Stacker versions 2.x, 3.x and Swapped Drives
 
+{% raw %}
+
 	Article: Q97562
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -58,3 +60,5 @@ permalink: /kb/097/Q97562/
 	
 	=============================================================================
 	
+
+{% endraw %}

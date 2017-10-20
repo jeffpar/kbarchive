@@ -6,6 +6,8 @@ permalink: /kb/168/Q168753/
 
 ## Q168753: XADM: Microsoft Exchange Roles, Rights, and Permissions
 
+{% raw %}
+
 	Article: Q168753
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -170,3 +172,5 @@ permalink: /kb/168/Q168753/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/254/Q254961/
 
 ## Q254961: INFO:Recommendations for Use of Windows 2000 Traffic Control API
 
+{% raw %}
+
 	Article: Q254961
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -128,3 +130,5 @@ permalink: /kb/254/Q254961/
 	
 	=============================================================================
 	
+
+{% endraw %}

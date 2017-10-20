@@ -6,6 +6,8 @@ permalink: /kb/189/Q189240/
 
 ## Q189240: Baseball 3D: ATI Rage Video Driver Update Available
 
+{% raw %}
+
 	Article: Q189240
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -69,3 +71,5 @@ permalink: /kb/189/Q189240/
 	
 	=============================================================================
 	
+
+{% endraw %}

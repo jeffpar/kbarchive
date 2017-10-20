@@ -6,6 +6,8 @@ permalink: /kb/167/Q167044/
 
 ## Q167044: Request From Perfmon Counter Can Cause Excessive Page Faults
 
+{% raw %}
+
 	Article: Q167044
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/167/Q167044/
 	
 	=============================================================================
 	
+
+{% endraw %}

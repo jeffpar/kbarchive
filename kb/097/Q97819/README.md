@@ -6,6 +6,8 @@ permalink: /kb/097/Q97819/
 
 ## Q97819: Ambiguous References to Sector One and Sector Zero
 
+{% raw %}
+
 	Article: Q97819
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5
@@ -79,3 +81,5 @@ permalink: /kb/097/Q97819/
 	
 	=============================================================================
 	
+
+{% endraw %}

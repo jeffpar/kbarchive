@@ -6,6 +6,8 @@ permalink: /kb/071/Q71617/
 
 ## Q71617: Taipei Is Unreadable in 1024 x 768 Resolution
 
+{% raw %}
+
 	Article: Q71617
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -36,3 +38,5 @@ permalink: /kb/071/Q71617/
 	
 	=============================================================================
 	
+
+{% endraw %}

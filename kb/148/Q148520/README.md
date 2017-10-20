@@ -6,6 +6,8 @@ permalink: /kb/148/Q148520/
 
 ## Q148520: XCLN: Creating Roving Users on MS-DOS Client
 
+{% raw %}
+
 	Article: Q148520
 	Product(s): Microsoft Exchange
 	Version(s): MS-DOS:4.0,5.0
@@ -77,3 +79,5 @@ permalink: /kb/148/Q148520/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/262/Q262572/
 
 ## Q262572: BUG: FormSet from Functional Conversion Closes Unexpectedly
 
+{% raw %}
+
 	Article: Q262572
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -144,3 +146,5 @@ permalink: /kb/262/Q262572/
 	
 	=============================================================================
 	
+
+{% endraw %}

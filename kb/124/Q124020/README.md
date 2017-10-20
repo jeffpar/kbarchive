@@ -6,6 +6,8 @@ permalink: /kb/124/Q124020/
 
 ## Q124020: Composers: Backdrop Bitmap Looks Ugly After Closing Dialog Box
 
+{% raw %}
+
 	Article: Q124020
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.1; WINDOWS:1.0
@@ -45,3 +47,5 @@ permalink: /kb/124/Q124020/
 	
 	=============================================================================
 	
+
+{% endraw %}

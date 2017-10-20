@@ -6,6 +6,8 @@ permalink: /kb/155/Q155245/
 
 ## Q155245: Dial-Up Networking Error 87 If Foreign Access Number Chosen
 
+{% raw %}
+
 	Article: Q155245
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -72,3 +74,5 @@ permalink: /kb/155/Q155245/
 	
 	=============================================================================
 	
+
+{% endraw %}

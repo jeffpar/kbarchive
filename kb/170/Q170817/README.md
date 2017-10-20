@@ -6,6 +6,8 @@ permalink: /kb/170/Q170817/
 
 ## Q170817: Windows NT Causes APC Smart UPS Battery to Discharge
 
+{% raw %}
+
 	Article: Q170817
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -109,3 +111,5 @@ permalink: /kb/170/Q170817/
 	
 	=============================================================================
 	
+
+{% endraw %}

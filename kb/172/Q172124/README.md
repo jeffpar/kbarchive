@@ -6,6 +6,8 @@ permalink: /kb/172/Q172124/
 
 ## Q172124: Poledit.exe Not Updated During WinNT SP3 Installation
 
+{% raw %}
+
 	Article: Q172124
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -82,3 +84,5 @@ permalink: /kb/172/Q172124/
 	
 	=============================================================================
 	
+
+{% endraw %}

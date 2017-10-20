@@ -6,6 +6,8 @@ permalink: /kb/174/Q174263/
 
 ## Q174263: MP Tutor Preschool &amp; Kindergarten: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q174263
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -103,3 +105,5 @@ permalink: /kb/174/Q174263/
 	
 	=============================================================================
 	
+
+{% endraw %}

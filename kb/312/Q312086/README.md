@@ -6,6 +6,8 @@ permalink: /kb/312/Q312086/
 
 ## Q312086: Indexing Service Office Filter Cannot Process Trademark Symbol
 
+{% raw %}
+
 	Article: Q312086
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,SP2
@@ -128,3 +130,5 @@ permalink: /kb/312/Q312086/
 	
 	=============================================================================
 	
+
+{% endraw %}

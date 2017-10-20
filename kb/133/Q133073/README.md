@@ -6,6 +6,8 @@ permalink: /kb/133/Q133073/
 
 ## Q133073: Err Msg: Sound Recorder Cannot Record or Play Back...
 
+{% raw %}
+
 	Article: Q133073
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -71,3 +73,5 @@ permalink: /kb/133/Q133073/
 	
 	=============================================================================
 	
+
+{% endraw %}

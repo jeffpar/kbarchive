@@ -6,6 +6,8 @@ permalink: /kb/221/Q221541/
 
 ## Q221541: FIX: Failed to Mark Safe for Scripting Using Visual Basic PDW
 
+{% raw %}
+
 	Article: Q221541
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -176,3 +178,5 @@ permalink: /kb/221/Q221541/
 	
 	=============================================================================
 	
+
+{% endraw %}

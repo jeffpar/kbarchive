@@ -6,6 +6,8 @@ permalink: /kb/170/Q170391/
 
 ## Q170391: MTG: System Time Advances One Day When You Run Mail's EXTERNAL
 
+{% raw %}
+
 	Article: Q170391
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.1,3.2,3.5
@@ -81,3 +83,5 @@ permalink: /kb/170/Q170391/
 	
 	=============================================================================
 	
+
+{% endraw %}

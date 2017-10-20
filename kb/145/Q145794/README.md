@@ -6,6 +6,8 @@ permalink: /kb/145/Q145794/
 
 ## Q145794: XADM: 1993 Private Extension Support on Per-Message Envelope
 
+{% raw %}
+
 	Article: Q145794
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/145/Q145794/
 	
 	=============================================================================
 	
+
+{% endraw %}

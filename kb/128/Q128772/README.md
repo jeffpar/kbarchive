@@ -6,6 +6,8 @@ permalink: /kb/128/Q128772/
 
 ## Q128772: PRB: Tools Options Does Not Reset Buffering for Current Table
 
+{% raw %}
+
 	Article: Q128772
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -53,3 +55,5 @@ permalink: /kb/128/Q128772/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141834/
 
 ## Q141834: HOWTO: Change Icon or Bitmap of CListCtrl Item When Selected
 
+{% raw %}
+
 	Article: Q141834
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,5.0,6.0
@@ -45,9 +47,9 @@ permalink: /kb/141/Q141834/
 	-----------
 	
 	     BEGIN_MESSAGE_MAP(CTestView, CView)
-	        //{ {AFX_MSG_MAP(CTestView)
+	        //{{AFX_MSG_MAP(CTestView)
 	        ON_WM_CREATE()
-	        //} }AFX_MSG_MAP
+	        //}}AFX_MSG_MAP
 	        ON_NOTIFY (LVN_GETDISPINFO, IDI_LIST, OnGetDispInfo)
 	     END_MESSAGE_MAP()
 	
@@ -120,3 +122,5 @@ permalink: /kb/141/Q141834/
 	
 	=============================================================================
 	
+
+{% endraw %}

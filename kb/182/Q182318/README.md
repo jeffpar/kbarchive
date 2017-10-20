@@ -6,6 +6,8 @@ permalink: /kb/182/Q182318/
 
 ## Q182318: XCON: Mad.exe Reaches 100% After You Recalculate Routing
 
+{% raw %}
+
 	Article: Q182318
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -61,3 +63,5 @@ permalink: /kb/182/Q182318/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124742/
 
 ## Q124742: Unable to Start 16-bit Applications in Separate Memory Space
 
+{% raw %}
+
 	Article: Q124742
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/124/Q124742/
 	
 	=============================================================================
 	
+
+{% endraw %}

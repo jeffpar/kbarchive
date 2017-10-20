@@ -6,6 +6,8 @@ permalink: /kb/196/Q196708/
 
 ## Q196708: INFO: Files Remaining in NT&#92;SYSTEM32 Folder After VFP6 Removal
 
+{% raw %}
+
 	Article: Q196708
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -129,3 +131,5 @@ permalink: /kb/196/Q196708/
 	
 	=============================================================================
 	
+
+{% endraw %}

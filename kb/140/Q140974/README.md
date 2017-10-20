@@ -6,6 +6,8 @@ permalink: /kb/140/Q140974/
 
 ## Q140974: XCON: HP Openmail Messages with FTBP Attachments NDR
 
+{% raw %}
+
 	Article: Q140974
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -53,3 +55,5 @@ permalink: /kb/140/Q140974/
 	
 	=============================================================================
 	
+
+{% endraw %}

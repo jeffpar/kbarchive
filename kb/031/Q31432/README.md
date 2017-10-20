@@ -6,6 +6,8 @@ permalink: /kb/031/Q31432/
 
 ## Q31432: Communications &quot;Device Timeout&quot;: Increase CS and DS Time Limit
 
+{% raw %}
+
 	Article: Q31432
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -25,3 +27,5 @@ permalink: /kb/031/Q31432/
 	Send or Data Set Ready are not detected after two seconds:
 	
 	   OPEN "COM1:9600,N,8,1,CS2000,DS2000" AS #1
+
+{% endraw %}

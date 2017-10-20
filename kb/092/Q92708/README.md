@@ -6,6 +6,8 @@ permalink: /kb/092/Q92708/
 
 ## Q92708: WFWG Err Msg: &quot;Extended Error 65&quot; or &quot;File Manager Cannot...&quot;
 
+{% raw %}
+
 	Article: Q92708
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/092/Q92708/
 	
 	=============================================================================
 	
+
+{% endraw %}

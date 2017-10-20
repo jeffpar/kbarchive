@@ -6,6 +6,8 @@ permalink: /kb/165/Q165927/
 
 ## Q165927: WD97: BreakLink Method Deletes Object Reference
 
+{% raw %}
+
 	Article: Q165927
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -120,3 +122,5 @@ permalink: /kb/165/Q165927/
 	
 	=============================================================================
 	
+
+{% endraw %}

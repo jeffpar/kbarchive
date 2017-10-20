@@ -6,6 +6,8 @@ permalink: /kb/085/Q85322/
 
 ## Q85322: Genius 1000 Requires Updated ROM and G2BIOS.SYS 1.5 or Later
 
+{% raw %}
+
 	Article: Q85322
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/085/Q85322/
 	
 	=============================================================================
 	
+
+{% endraw %}

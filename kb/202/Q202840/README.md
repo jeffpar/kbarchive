@@ -6,6 +6,8 @@ permalink: /kb/202/Q202840/
 
 ## Q202840: Client Connected to Ethernet Switch May Receive Logon Errors
 
+{% raw %}
+
 	Article: Q202840
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.5,3.51,4.0
@@ -117,3 +119,5 @@ permalink: /kb/202/Q202840/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/303/Q303874/
 
 ## Q303874: Primary Domain Controller May Leak Memory in Lsass.exe
 
+{% raw %}
+
 	Article: Q303874
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -80,3 +82,5 @@ permalink: /kb/303/Q303874/
 	
 	=============================================================================
 	
+
+{% endraw %}

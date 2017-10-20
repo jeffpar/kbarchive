@@ -6,6 +6,8 @@ permalink: /kb/264/Q264421/
 
 ## Q264421: BUG: Application Error Closing Form with Graphics in RichTextBox
 
+{% raw %}
+
 	Article: Q264421
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -110,3 +112,5 @@ permalink: /kb/264/Q264421/
 	
 	=============================================================================
 	
+
+{% endraw %}

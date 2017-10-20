@@ -6,6 +6,8 @@ permalink: /kb/120/Q120745/
 
 ## Q120745: DELL Omniplex: SONY CD-ROM Fails to Initialize
 
+{% raw %}
+
 	Article: Q120745
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/120/Q120745/
 	
 	=============================================================================
 	
+
+{% endraw %}

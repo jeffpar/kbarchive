@@ -6,6 +6,8 @@ permalink: /kb/063/Q63665/
 
 ## Q63665: Using HIMEM.SYS 2.60 with Dell 286-Based Machines
 
+{% raw %}
+
 	Article: Q63665
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -51,3 +53,5 @@ permalink: /kb/063/Q63665/
 	
 	=============================================================================
 	
+
+{% endraw %}

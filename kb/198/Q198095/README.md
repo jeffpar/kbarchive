@@ -6,6 +6,8 @@ permalink: /kb/198/Q198095/
 
 ## Q198095: Combat Flight Simulator: Game Controller Does Not Work Properly
 
+{% raw %}
+
 	Article: Q198095
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -112,3 +114,5 @@ permalink: /kb/198/Q198095/
 	
 	=============================================================================
 	
+
+{% endraw %}

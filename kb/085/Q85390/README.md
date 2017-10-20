@@ -6,6 +6,8 @@ permalink: /kb/085/Q85390/
 
 ## Q85390: Mouse Pointer Lost Switching from MS-DOS-Based Application
 
+{% raw %}
+
 	Article: Q85390
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/085/Q85390/
 	
 	=============================================================================
 	
+
+{% endraw %}

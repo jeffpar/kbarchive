@@ -6,6 +6,8 @@ permalink: /kb/130/Q130038/
 
 ## Q130038: PC Win: Unable to Sign Out After File Send in Office App.
 
+{% raw %}
+
 	Article: Q130038
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -82,3 +84,5 @@ permalink: /kb/130/Q130038/
 	
 	=============================================================================
 	
+
+{% endraw %}

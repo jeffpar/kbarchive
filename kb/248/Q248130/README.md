@@ -6,6 +6,8 @@ permalink: /kb/248/Q248130/
 
 ## Q248130: FILE: AutoSave.exe Provides AutoSave for Visual C++
 
+{% raw %}
+
 	Article: Q248130
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -148,3 +150,5 @@ permalink: /kb/248/Q248130/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/319/Q319056/
 
 ## Q319056: How To Set MSN.com As The Default Home And Search Page In Macint
 
+{% raw %}
+
 	Article: Q319056
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/319/Q319056/
 	
 	=============================================================================
 	
+
+{% endraw %}

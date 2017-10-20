@@ -6,6 +6,8 @@ permalink: /kb/150/Q150297/
 
 ## Q150297: Directory Replication Stop Messages
 
+{% raw %}
+
 	Article: Q150297
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -74,3 +76,5 @@ permalink: /kb/150/Q150297/
 	
 	=============================================================================
 	
+
+{% endraw %}

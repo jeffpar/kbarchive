@@ -6,6 +6,8 @@ permalink: /kb/155/Q155961/
 
 ## Q155961: WD97: ListNum Field Not Converted Saving to Word 6.0/95
 
+{% raw %}
+
 	Article: Q155961
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/155/Q155961/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/323/Q323570/
 
 ## Q323570: MSN Explorer remains in High Contrast after changing the Appeara
 
+{% raw %}
+
 	Article: Q323570
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -76,3 +78,5 @@ permalink: /kb/323/Q323570/
 	
 	=============================================================================
 	
+
+{% endraw %}

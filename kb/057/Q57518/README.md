@@ -6,6 +6,8 @@ permalink: /kb/057/Q57518/
 
 ## Q57518: Flight Simulator: Blank Screen on NEC ProSpeed 386
 
+{% raw %}
+
 	Article: Q57518
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/057/Q57518/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/093/Q93132/
 
 ## Q93132: PC WSPlus: Err Msg: Can't Find SCHDMSG.DLL
 
+{% raw %}
+
 	Article: Q93132
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/093/Q93132/
 	
 	=============================================================================
 	
+
+{% endraw %}

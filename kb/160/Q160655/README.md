@@ -6,6 +6,8 @@ permalink: /kb/160/Q160655/
 
 ## Q160655: Dumpchk is Version Specific in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q160655
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -86,3 +88,5 @@ permalink: /kb/160/Q160655/
 	
 	=============================================================================
 	
+
+{% endraw %}

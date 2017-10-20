@@ -6,6 +6,8 @@ permalink: /kb/072/Q72929/
 
 ## Q72929: Windows Resource Kit HDC Memory Viewer and Windows 3.0
 
+{% raw %}
+
 	Article: Q72929
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -78,3 +80,5 @@ permalink: /kb/072/Q72929/
 	
 	=============================================================================
 	
+
+{% endraw %}

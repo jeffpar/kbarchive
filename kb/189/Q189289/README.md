@@ -6,6 +6,8 @@ permalink: /kb/189/Q189289/
 
 ## Q189289: XADM: Reinstall of Exchange Server Fails
 
+{% raw %}
+
 	Article: Q189289
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -66,3 +68,5 @@ permalink: /kb/189/Q189289/
 	
 	=============================================================================
 	
+
+{% endraw %}

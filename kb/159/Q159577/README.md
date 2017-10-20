@@ -6,6 +6,8 @@ permalink: /kb/159/Q159577/
 
 ## Q159577: No Warning Displayed When Restarting Shared Printer
 
+{% raw %}
+
 	Article: Q159577
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -52,3 +54,5 @@ permalink: /kb/159/Q159577/
 	
 	=============================================================================
 	
+
+{% endraw %}

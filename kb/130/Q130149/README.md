@@ -6,6 +6,8 @@ permalink: /kb/130/Q130149/
 
 ## Q130149: WD97: Memory Error When Document Saved in Word 95 Format
 
+{% raw %}
+
 	Article: Q130149
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -85,3 +87,5 @@ permalink: /kb/130/Q130149/
 	
 	=============================================================================
 	
+
+{% endraw %}

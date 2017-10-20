@@ -6,6 +6,8 @@ permalink: /kb/105/Q105566/
 
 ## Q105566: Gtwy: Exit Codes for Gateway MTA Versions 3.0 and Later
 
+{% raw %}
+
 	Article: Q105566
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:
@@ -46,3 +48,5 @@ permalink: /kb/105/Q105566/
 	
 	=============================================================================
 	
+
+{% endraw %}

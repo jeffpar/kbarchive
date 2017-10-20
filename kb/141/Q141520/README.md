@@ -6,6 +6,8 @@ permalink: /kb/141/Q141520/
 
 ## Q141520: Generic Text Driver Prints Control Characters and Blank Lines
 
+{% raw %}
+
 	Article: Q141520
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -54,3 +56,5 @@ permalink: /kb/141/Q141520/
 	
 	=============================================================================
 	
+
+{% endraw %}

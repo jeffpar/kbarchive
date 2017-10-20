@@ -6,6 +6,8 @@ permalink: /kb/323/Q323652/
 
 ## Q323652: SMS: Clients Not Installed for Non-English SMS 2.0 SP4 Servers
 
+{% raw %}
+
 	Article: Q323652
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP4
@@ -395,3 +397,5 @@ permalink: /kb/323/Q323652/
 	
 	=============================================================================
 	
+
+{% endraw %}

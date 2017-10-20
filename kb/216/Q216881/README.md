@@ -6,6 +6,8 @@ permalink: /kb/216/Q216881/
 
 ## Q216881: Line Added to Autoexec.bat on Client Cannot Be Truncated
 
+{% raw %}
+
 	Article: Q216881
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -70,3 +72,5 @@ permalink: /kb/216/Q216881/
 	
 	=============================================================================
 	
+
+{% endraw %}

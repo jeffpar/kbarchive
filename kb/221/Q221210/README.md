@@ -6,6 +6,8 @@ permalink: /kb/221/Q221210/
 
 ## Q221210: Browsing with a Multihomed PDC
 
+{% raw %}
+
 	Article: Q221210
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -83,3 +85,5 @@ permalink: /kb/221/Q221210/
 	
 	=============================================================================
 	
+
+{% endraw %}

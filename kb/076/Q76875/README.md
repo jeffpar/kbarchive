@@ -6,6 +6,8 @@ permalink: /kb/076/Q76875/
 
 ## Q76875: Audio Option and Windows with Multimedia Extensions Setup
 
+{% raw %}
+
 	Article: Q76875
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0
@@ -61,3 +63,5 @@ permalink: /kb/076/Q76875/
 	
 	=============================================================================
 	
+
+{% endraw %}

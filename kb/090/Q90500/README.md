@@ -6,6 +6,8 @@ permalink: /kb/090/Q90500/
 
 ## Q90500: BUG: Makefile based on PWB Library Template Not Valid
 
+{% raw %}
+
 	Article: Q90500
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:2.1.49
@@ -113,3 +115,5 @@ permalink: /kb/090/Q90500/
 	
 	=============================================================================
 	
+
+{% endraw %}

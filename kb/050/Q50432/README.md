@@ -6,6 +6,8 @@ permalink: /kb/050/Q50432/
 
 ## Q50432: Mac Hyp: Write-Protected Stacks in HyperCard
 
+{% raw %}
+
 	Article: Q50432
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -72,3 +74,5 @@ permalink: /kb/050/Q50432/
 	
 	=============================================================================
 	
+
+{% endraw %}

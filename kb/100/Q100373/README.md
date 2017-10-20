@@ -6,6 +6,8 @@ permalink: /kb/100/Q100373/
 
 ## Q100373: BootSafe Warning with DoubleSpace: Partition / Boot Sector...
 
+{% raw %}
+
 	Article: Q100373
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -65,3 +67,5 @@ permalink: /kb/100/Q100373/
 	
 	=============================================================================
 	
+
+{% endraw %}

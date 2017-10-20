@@ -6,6 +6,8 @@ permalink: /kb/161/Q161162/
 
 ## Q161162: Application Error When Opening a File in Office 95
 
+{% raw %}
+
 	Article: Q161162
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/161/Q161162/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/320/Q320402/
 
 ## Q320402: Microsoft Visual C# .NET (Core Reference) Comments and Correctio
 
+{% raw %}
+
 	Article: Q320402
 	Product(s): Microsoft Press
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/320/Q320402/
 	
 	=============================================================================
 	
+
+{% endraw %}

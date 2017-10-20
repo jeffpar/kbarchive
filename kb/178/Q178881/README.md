@@ -6,6 +6,8 @@ permalink: /kb/178/Q178881/
 
 ## Q178881: BUG: MSChart Control Can't Plot Data Points &gt;15 Decimal Places
 
+{% raw %}
+
 	Article: Q178881
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -127,3 +129,5 @@ permalink: /kb/178/Q178881/
 	
 	=============================================================================
 	
+
+{% endraw %}

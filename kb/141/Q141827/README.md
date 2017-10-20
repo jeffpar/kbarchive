@@ -6,6 +6,8 @@ permalink: /kb/141/Q141827/
 
 ## Q141827: How to Install Chat in Windows 95
 
+{% raw %}
+
 	Article: Q141827
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -68,3 +70,5 @@ permalink: /kb/141/Q141827/
 	
 	=============================================================================
 	
+
+{% endraw %}

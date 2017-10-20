@@ -6,6 +6,8 @@ permalink: /kb/305/Q305821/
 
 ## Q305821: ENC2002: Minimum System Requirements for Encarta
 
+{% raw %}
+
 	Article: Q305821
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -100,3 +102,5 @@ permalink: /kb/305/Q305821/
 	
 	=============================================================================
 	
+
+{% endraw %}

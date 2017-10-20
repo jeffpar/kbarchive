@@ -6,6 +6,8 @@ permalink: /kb/158/Q158949/
 
 ## Q158949: Lexmark Monitor Reports Only Printer Error
 
+{% raw %}
+
 	Article: Q158949
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -46,3 +48,5 @@ permalink: /kb/158/Q158949/
 	
 	=============================================================================
 	
+
+{% endraw %}

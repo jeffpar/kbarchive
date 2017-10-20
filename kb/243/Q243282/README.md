@@ -6,6 +6,8 @@ permalink: /kb/243/Q243282/
 
 ## Q243282: Find Tools Locates Files with a Time Stamp of a Future Date
 
+{% raw %}
+
 	Article: Q243282
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -44,3 +46,5 @@ permalink: /kb/243/Q243282/
 	
 	=============================================================================
 	
+
+{% endraw %}

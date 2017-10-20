@@ -6,6 +6,8 @@ permalink: /kb/243/Q243228/
 
 ## Q243228: Asheron's Call: Action Does Not Occur When Using Key Combination
 
+{% raw %}
+
 	Article: Q243228
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -57,3 +59,5 @@ permalink: /kb/243/Q243228/
 	
 	=============================================================================
 	
+
+{% endraw %}

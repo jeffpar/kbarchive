@@ -6,6 +6,8 @@ permalink: /kb/130/Q130861/
 
 ## Q130861: IBM SNA Formats Bit Ordering is Opposite of Intel Convention
 
+{% raw %}
+
 	Article: Q130861
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -72,3 +74,5 @@ permalink: /kb/130/Q130861/
 	
 	=============================================================================
 	
+
+{% endraw %}

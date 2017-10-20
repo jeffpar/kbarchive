@@ -6,6 +6,8 @@ permalink: /kb/085/Q85410/
 
 ## Q85410: MS-DOS 5.0a Upgrade README.TXT: Memory Management
 
+{% raw %}
+
 	Article: Q85410
 	Product(s): Microsoft Disk Operating System
 	Version(s): 5.0a
@@ -81,3 +83,5 @@ permalink: /kb/085/Q85410/
 	
 	=============================================================================
 	
+
+{% endraw %}

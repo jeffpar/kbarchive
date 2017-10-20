@@ -6,6 +6,8 @@ permalink: /kb/157/Q157171/
 
 ## Q157171: Complex Filled Shapes Near Bottom of Page Print Incorrectly
 
+{% raw %}
+
 	Article: Q157171
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -90,3 +92,5 @@ permalink: /kb/157/Q157171/
 	
 	=============================================================================
 	
+
+{% endraw %}

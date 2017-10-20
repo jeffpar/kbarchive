@@ -6,6 +6,8 @@ permalink: /kb/145/Q145679/
 
 ## Q145679: HOWTO: Use the Registry API to Save and Retrieve Setting
 
+{% raw %}
+
 	Article: Q145679
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -375,3 +377,5 @@ permalink: /kb/145/Q145679/
 	
 	=============================================================================
 	
+
+{% endraw %}

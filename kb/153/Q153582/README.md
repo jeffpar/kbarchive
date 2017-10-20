@@ -6,6 +6,8 @@ permalink: /kb/153/Q153582/
 
 ## Q153582: How to Get Container hWnd from Windowless Custom OLE Control
 
+{% raw %}
+
 	Article: Q153582
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -170,3 +172,5 @@ permalink: /kb/153/Q153582/
 	
 	=============================================================================
 	
+
+{% endraw %}

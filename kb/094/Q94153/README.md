@@ -6,6 +6,8 @@ permalink: /kb/094/Q94153/
 
 ## Q94153: HPPCL5E: Wrong Colors with Adobe Type Manager
 
+{% raw %}
+
 	Article: Q94153
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/094/Q94153/
 	
 	=============================================================================
 	
+
+{% endraw %}

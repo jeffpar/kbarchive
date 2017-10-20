@@ -6,6 +6,8 @@ permalink: /kb/167/Q167259/
 
 ## Q167259: WD97: Error in Recorded Macro Using Previous/Next Row Commands
 
+{% raw %}
+
 	Article: Q167259
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -153,3 +155,5 @@ permalink: /kb/167/Q167259/
 	
 	=============================================================================
 	
+
+{% endraw %}

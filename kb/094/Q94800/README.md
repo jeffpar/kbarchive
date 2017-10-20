@@ -6,6 +6,8 @@ permalink: /kb/094/Q94800/
 
 ## Q94800: WSS Voice Pilot Deactivated When Playing Waveform (.WAV) Files
 
+{% raw %}
+
 	Article: Q94800
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.00
@@ -91,3 +93,5 @@ permalink: /kb/094/Q94800/
 	
 	=============================================================================
 	
+
+{% endraw %}

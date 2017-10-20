@@ -6,6 +6,8 @@ permalink: /kb/216/Q216715/
 
 ## Q216715: FIX: Bad Code Generated in ?: Operator Converting Class Types
 
+{% raw %}
+
 	Article: Q216715
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -87,3 +89,5 @@ permalink: /kb/216/Q216715/
 	
 	=============================================================================
 	
+
+{% endraw %}

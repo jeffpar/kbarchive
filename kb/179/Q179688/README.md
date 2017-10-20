@@ -6,6 +6,8 @@ permalink: /kb/179/Q179688/
 
 ## Q179688: FIX: ATL Servers Do Not Unregister Their Type Library
 
+{% raw %}
+
 	Article: Q179688
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.0,2.1
@@ -148,3 +150,5 @@ permalink: /kb/179/Q179688/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145671/
 
 ## Q145671: How to Uninstall Microsoft Pregnancy and Child Care Program
 
+{% raw %}
+
 	Article: Q145671
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -75,3 +77,5 @@ permalink: /kb/145/Q145671/
 	
 	=============================================================================
 	
+
+{% endraw %}

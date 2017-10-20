@@ -6,6 +6,8 @@ permalink: /kb/138/Q138605/
 
 ## Q138605: Faxes Use Network Fax Server's Dialing Properties
 
+{% raw %}
+
 	Article: Q138605
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/138/Q138605/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169017/
 
 ## Q169017: Information on Groups &amp; Resources Using Cluster Server
 
+{% raw %}
+
 	Article: Q169017
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/169/Q169017/
 	
 	=============================================================================
 	
+
+{% endraw %}

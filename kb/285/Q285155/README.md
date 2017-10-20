@@ -6,6 +6,8 @@ permalink: /kb/285/Q285155/
 
 ## Q285155: Academic Learning Series Microsoft Windows 2000 Active Director
 
+{% raw %}
+
 	Article: Q285155
 	Product(s): Microsoft Press
 	Version(s): 
@@ -580,3 +582,5 @@ permalink: /kb/285/Q285155/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180416/
 
 ## Q180416: APPC or CPI-C TPs May Fail When Using Dependent LU 6.2 Sessions
 
+{% raw %}
+
 	Article: Q180416
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 U.S. SP1,3.0 U.S. SP2,4.0
@@ -81,3 +83,5 @@ permalink: /kb/180/Q180416/
 	
 	=============================================================================
 	
+
+{% endraw %}

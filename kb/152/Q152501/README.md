@@ -6,6 +6,8 @@ permalink: /kb/152/Q152501/
 
 ## Q152501: XADM: Problem When Creating Multiple SMTP Proxy Addresses
 
+{% raw %}
+
 	Article: Q152501
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/152/Q152501/
 	
 	=============================================================================
 	
+
+{% endraw %}

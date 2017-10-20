@@ -6,6 +6,8 @@ permalink: /kb/086/Q86445/
 
 ## Q86445: PPT: Equivalent Values for Genigraphics Colors: CMYK
 
+{% raw %}
+
 	Article: Q86445
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:2.0,2.01,3.0,4.0; WINDOWS:2.0,3.0,4.0,4.0a,4.0c,7.0
@@ -183,3 +185,5 @@ permalink: /kb/086/Q86445/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/289/Q289498/
 
 ## Q289498: PRB: Form Cannot Get Focus After Using SetParent to Move Control
 
+{% raw %}
+
 	Article: Q289498
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -139,3 +141,5 @@ permalink: /kb/289/Q289498/
 	
 	=============================================================================
 	
+
+{% endraw %}

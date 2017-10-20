@@ -6,6 +6,8 @@ permalink: /kb/067/Q67274/
 
 ## Q67274: REsearch() Function Prototype Not Found in EXT.H Header File
 
+{% raw %}
+
 	Article: Q67274
 	Product(s): See article
 	Version(s): 1.00 1.10 | 1.00 1.10
@@ -26,3 +28,5 @@ permalink: /kb/067/Q67274/
 	Microsoft has confirmed this to be a problem in PWB versions 1.00 and
 	1.10. We are researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

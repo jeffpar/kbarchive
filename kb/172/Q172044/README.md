@@ -6,6 +6,8 @@ permalink: /kb/172/Q172044/
 
 ## Q172044: WD97: Wordmail Options Not on Exchange Compose Menu
 
+{% raw %}
+
 	Article: Q172044
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -172,3 +174,5 @@ permalink: /kb/172/Q172044/
 	
 	=============================================================================
 	
+
+{% endraw %}

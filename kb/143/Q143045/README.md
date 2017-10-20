@@ -6,6 +6,8 @@ permalink: /kb/143/Q143045/
 
 ## Q143045: HOWTO: Use SetCapture and WindowFromPoint to Select a Window
 
+{% raw %}
+
 	Article: Q143045
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -298,3 +300,5 @@ permalink: /kb/143/Q143045/
 	
 	=============================================================================
 	
+
+{% endraw %}

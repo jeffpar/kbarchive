@@ -6,6 +6,8 @@ permalink: /kb/195/Q195999/
 
 ## Q195999: &#91;MC_&#93;ALLOCATE Contention Winner Request Never Completes
 
+{% raw %}
+
 	Article: Q195999
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -110,3 +112,5 @@ permalink: /kb/195/Q195999/
 	
 	=============================================================================
 	
+
+{% endraw %}

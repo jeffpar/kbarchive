@@ -6,6 +6,8 @@ permalink: /kb/226/Q226475/
 
 ## Q226475: Setup Choices Vary Depending on Previous Installation of IIS/NTO
 
+{% raw %}
+
 	Article: Q226475
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -81,3 +83,5 @@ permalink: /kb/226/Q226475/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179156/
 
 ## Q179156: Updated TCP/IP Printing Options for Windows NT 4.0 SP3 and Later
 
+{% raw %}
+
 	Article: Q179156
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -250,3 +252,5 @@ permalink: /kb/179/Q179156/
 	
 	=============================================================================
 	
+
+{% endraw %}

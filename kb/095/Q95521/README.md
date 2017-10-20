@@ -6,6 +6,8 @@ permalink: /kb/095/Q95521/
 
 ## Q95521: CONN: WA0728: Troubleshooting the Mail Connection Gateway
 
+{% raw %}
+
 	Article: Q95521
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.0b
@@ -615,3 +617,5 @@ permalink: /kb/095/Q95521/
 	
 	=============================================================================
 	
+
+{% endraw %}

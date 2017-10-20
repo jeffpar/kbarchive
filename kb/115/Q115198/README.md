@@ -6,6 +6,8 @@ permalink: /kb/115/Q115198/
 
 ## Q115198: Err Msg with DoubleTools: DriveSpace Couldn't Mount Drive...
 
+{% raw %}
+
 	Article: Q115198
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -46,3 +48,5 @@ permalink: /kb/115/Q115198/
 	
 	=============================================================================
 	
+
+{% endraw %}

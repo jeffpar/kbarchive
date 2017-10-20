@@ -6,6 +6,8 @@ permalink: /kb/096/Q96361/
 
 ## Q96361: PRB: @ ... SAY MEMO Prints Word &quot;Memo&quot;
 
+{% raw %}
+
 	Article: Q96361
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -63,3 +65,5 @@ permalink: /kb/096/Q96361/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/039/Q39527/
 
 ## Q39527: DOCERR: DUP Is a Reserved Word in MASM
 
+{% raw %}
+
 	Article: Q39527
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:
@@ -39,3 +41,5 @@ permalink: /kb/039/Q39527/
 	
 	=============================================================================
 	
+
+{% endraw %}

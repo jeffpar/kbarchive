@@ -6,6 +6,8 @@ permalink: /kb/173/Q173059/
 
 ## Q173059: Security Events Are Not Logged During Audit
 
+{% raw %}
+
 	Article: Q173059
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -85,3 +87,5 @@ permalink: /kb/173/Q173059/
 	
 	=============================================================================
 	
+
+{% endraw %}

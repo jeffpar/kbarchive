@@ -6,6 +6,8 @@ permalink: /kb/151/Q151769/
 
 ## Q151769: FIX: Random Character in Wait Window After Set Default Options
 
+{% raw %}
+
 	Article: Q151769
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,5.0,5.0a
@@ -72,3 +74,5 @@ permalink: /kb/151/Q151769/
 	
 	=============================================================================
 	
+
+{% endraw %}

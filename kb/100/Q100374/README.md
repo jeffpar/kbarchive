@@ -6,6 +6,8 @@ permalink: /kb/100/Q100374/
 
 ## Q100374: Drive Is No Longer Bootable After Restoring Root Directory
 
+{% raw %}
+
 	Article: Q100374
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22; WINDOWS:95
@@ -137,3 +139,5 @@ permalink: /kb/100/Q100374/
 	
 	=============================================================================
 	
+
+{% endraw %}

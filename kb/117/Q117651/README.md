@@ -6,6 +6,8 @@ permalink: /kb/117/Q117651/
 
 ## Q117651: PC Forms: Err Msg: Invalid Package When Sending an E-Form
 
+{% raw %}
+
 	Article: Q117651
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -65,3 +67,5 @@ permalink: /kb/117/Q117651/
 	
 	=============================================================================
 	
+
+{% endraw %}

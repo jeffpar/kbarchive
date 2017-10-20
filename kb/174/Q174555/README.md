@@ -6,6 +6,8 @@ permalink: /kb/174/Q174555/
 
 ## Q174555: STOP 0x0000001E When IIS Service Is Stopped
 
+{% raw %}
+
 	Article: Q174555
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -69,3 +71,5 @@ permalink: /kb/174/Q174555/
 	
 	=============================================================================
 	
+
+{% endraw %}

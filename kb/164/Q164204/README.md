@@ -6,6 +6,8 @@ permalink: /kb/164/Q164204/
 
 ## Q164204: SMS: PC Memory Reported Incorrectly for Windows 3.x Clients
 
+{% raw %}
+
 	Article: Q164204
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:3.1,3.11; winnt:1.0,1.1,1.2
@@ -84,3 +86,5 @@ permalink: /kb/164/Q164204/
 	
 	=============================================================================
 	
+
+{% endraw %}

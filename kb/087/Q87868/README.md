@@ -6,6 +6,8 @@ permalink: /kb/087/Q87868/
 
 ## Q87868: Copy Picture and Copy Audio Unavailable After Search
 
+{% raw %}
+
 	Article: Q87868
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1992 edition
@@ -62,3 +64,5 @@ permalink: /kb/087/Q87868/
 	
 	=============================================================================
 	
+
+{% endraw %}

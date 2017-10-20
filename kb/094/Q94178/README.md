@@ -6,6 +6,8 @@ permalink: /kb/094/Q94178/
 
 ## Q94178: PC WFW: Differences Between Win for Workgroups Mail &amp; PC Mail
 
+{% raw %}
+
 	Article: Q94178
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.1,3.11,3.2
@@ -78,3 +80,5 @@ permalink: /kb/094/Q94178/
 	
 	=============================================================================
 	
+
+{% endraw %}

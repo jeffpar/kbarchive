@@ -6,6 +6,8 @@ permalink: /kb/231/Q231807/
 
 ## Q231807: WD97: Wildcard Calculates Search and Replace Text Improperly
 
+{% raw %}
+
 	Article: Q231807
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -77,3 +79,5 @@ permalink: /kb/231/Q231807/
 	
 	=============================================================================
 	
+
+{% endraw %}

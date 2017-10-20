@@ -6,6 +6,8 @@ permalink: /kb/171/Q171764/
 
 ## Q171764: SMS: PCMMAC Doesn't Open When a New Package Is Offered
 
+{% raw %}
+
 	Article: Q171764
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -47,3 +49,5 @@ permalink: /kb/171/Q171764/
 	
 	=============================================================================
 	
+
+{% endraw %}

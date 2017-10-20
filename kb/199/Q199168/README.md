@@ -6,6 +6,8 @@ permalink: /kb/199/Q199168/
 
 ## Q199168: System Cannot Log You On - c0000017
 
+{% raw %}
+
 	Article: Q199168
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -96,3 +98,5 @@ permalink: /kb/199/Q199168/
 	
 	=============================================================================
 	
+
+{% endraw %}

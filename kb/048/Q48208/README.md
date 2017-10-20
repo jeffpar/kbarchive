@@ -6,6 +6,8 @@ permalink: /kb/048/Q48208/
 
 ## Q48208: Example Passing char from C to BASIC
 
+{% raw %}
+
 	Article: Q48208
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -77,3 +79,5 @@ permalink: /kb/048/Q48208/
 	
 	   A
 	   1
+
+{% endraw %}

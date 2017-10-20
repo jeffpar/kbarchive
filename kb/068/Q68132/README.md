@@ -6,6 +6,8 @@ permalink: /kb/068/Q68132/
 
 ## Q68132: WordPerfect 5.1 Mouse Support Under Windows 3.0 Enhanced Mode
 
+{% raw %}
+
 	Article: Q68132
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -62,3 +64,5 @@ permalink: /kb/068/Q68132/
 	
 	=============================================================================
 	
+
+{% endraw %}

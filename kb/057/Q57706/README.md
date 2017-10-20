@@ -6,6 +6,8 @@ permalink: /kb/057/Q57706/
 
 ## Q57706: LINK Uses Library Sequence to Resolve External References
 
+{% raw %}
+
 	Article: Q57706
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:2.x,3.x,4.x,5.0x,5.1x,5.2x,5.3x,5.5,5.6; OS/2:5.0x,5.1,5.11,5.13,5.15
@@ -100,3 +102,5 @@ permalink: /kb/057/Q57706/
 	
 	=============================================================================
 	
+
+{% endraw %}

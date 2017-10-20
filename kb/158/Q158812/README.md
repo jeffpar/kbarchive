@@ -6,6 +6,8 @@ permalink: /kb/158/Q158812/
 
 ## Q158812: XFOR: ErrMsg: Postoffice NETWORK/PO Could Not Be Modified
 
+{% raw %}
+
 	Article: Q158812
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -79,3 +81,5 @@ permalink: /kb/158/Q158812/
 	
 	=============================================================================
 	
+
+{% endraw %}

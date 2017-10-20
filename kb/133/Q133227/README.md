@@ -6,6 +6,8 @@ permalink: /kb/133/Q133227/
 
 ## Q133227: PPT7: Presentation Conference Doesn't End for Audience Member
 
+{% raw %}
+
 	Article: Q133227
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -45,3 +47,5 @@ permalink: /kb/133/Q133227/
 	
 	=============================================================================
 	
+
+{% endraw %}

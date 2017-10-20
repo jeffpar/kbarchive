@@ -6,6 +6,8 @@ permalink: /kb/160/Q160493/
 
 ## Q160493: Nwlnkrip Data Structures Corrupt when Using Demand Dial NIC
 
+{% raw %}
+
 	Article: Q160493
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -59,3 +61,5 @@ permalink: /kb/160/Q160493/
 	
 	=============================================================================
 	
+
+{% endraw %}

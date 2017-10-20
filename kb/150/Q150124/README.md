@@ -6,6 +6,8 @@ permalink: /kb/150/Q150124/
 
 ## Q150124: Cannot Access CD-ROM After Installing SP4
 
+{% raw %}
+
 	Article: Q150124
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -64,3 +66,5 @@ permalink: /kb/150/Q150124/
 	
 	=============================================================================
 	
+
+{% endraw %}

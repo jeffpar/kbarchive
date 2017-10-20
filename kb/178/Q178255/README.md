@@ -6,6 +6,8 @@ permalink: /kb/178/Q178255/
 
 ## Q178255: SNA Server May Fail to Log Event 624 and Create Snadump.log
 
+{% raw %}
+
 	Article: Q178255
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -61,3 +63,5 @@ permalink: /kb/178/Q178255/
 	
 	=============================================================================
 	
+
+{% endraw %}

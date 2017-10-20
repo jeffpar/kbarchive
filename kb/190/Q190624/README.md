@@ -6,6 +6,8 @@ permalink: /kb/190/Q190624/
 
 ## Q190624: PRB: SYS(2018) May Return More Than the Message Parameter
 
+{% raw %}
+
 	Article: Q190624
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -109,3 +111,5 @@ permalink: /kb/190/Q190624/
 	
 	=============================================================================
 	
+
+{% endraw %}

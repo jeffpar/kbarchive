@@ -6,6 +6,8 @@ permalink: /kb/131/Q131181/
 
 ## Q131181: How to Manage the Exiting Process with QueryUnLoad Event
 
+{% raw %}
+
 	Article: Q131181
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -98,3 +100,5 @@ permalink: /kb/131/Q131181/
 	
 	=============================================================================
 	
+
+{% endraw %}

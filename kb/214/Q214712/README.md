@@ -6,6 +6,8 @@ permalink: /kb/214/Q214712/
 
 ## Q214712: XWEB: MMP Files are Locked and Cannot be Deleted
 
+{% raw %}
+
 	Article: Q214712
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -68,3 +70,5 @@ permalink: /kb/214/Q214712/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159972/
 
 ## Q159972: WinNT 4.0 May Not Return Valid Response for SMB Search Command
 
+{% raw %}
+
 	Article: Q159972
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/159/Q159972/
 	
 	=============================================================================
 	
+
+{% endraw %}

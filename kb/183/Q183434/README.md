@@ -6,6 +6,8 @@ permalink: /kb/183/Q183434/
 
 ## Q183434: HOWTO: Use HTML Help API in a Visual Basic Application
 
+{% raw %}
+
 	Article: Q183434
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -99,3 +101,5 @@ permalink: /kb/183/Q183434/
 	
 	=============================================================================
 	
+
+{% endraw %}

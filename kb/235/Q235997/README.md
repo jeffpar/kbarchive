@@ -6,6 +6,8 @@ permalink: /kb/235/Q235997/
 
 ## Q235997: SSIExecDisable Does Not Work after Applying Windows NT SP4
 
+{% raw %}
+
 	Article: Q235997
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/235/Q235997/
 	
 	=============================================================================
 	
+
+{% endraw %}

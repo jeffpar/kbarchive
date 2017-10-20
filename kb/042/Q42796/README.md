@@ -6,6 +6,8 @@ permalink: /kb/042/Q42796/
 
 ## Q42796: Background Colors Limited to 0 Through 7 in Text Mode
 
+{% raw %}
+
 	Article: Q42796
 	Product(s): See article
 	Version(s): 5.10
@@ -44,3 +46,5 @@ permalink: /kb/042/Q42796/
 	bit becomes a background intensity bit. See your hardware technical
 	reference or the "Programmer's Guide to PC and PS/2 Video Systems"
 	(Richard Wilton, Microsoft Press) for more information.
+
+{% endraw %}

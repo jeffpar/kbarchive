@@ -6,6 +6,8 @@ permalink: /kb/149/Q149447/
 
 ## Q149447: XADM: How to Perform a Directory Export of the GAL
 
+{% raw %}
+
 	Article: Q149447
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/149/Q149447/
 	
 	=============================================================================
 	
+
+{% endraw %}

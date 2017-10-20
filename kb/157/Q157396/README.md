@@ -6,6 +6,8 @@ permalink: /kb/157/Q157396/
 
 ## Q157396: WD97: WordPerfect Help Topic Incomplete, Truncated
 
+{% raw %}
+
 	Article: Q157396
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/157/Q157396/
 	
 	=============================================================================
 	
+
+{% endraw %}

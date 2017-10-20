@@ -6,6 +6,8 @@ permalink: /kb/193/Q193357/
 
 ## Q193357: City Symbol Used for Country in &quot;Name That Place&quot; Game
 
+{% raw %}
+
 	Article: Q193357
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -45,3 +47,5 @@ permalink: /kb/193/Q193357/
 	
 	=============================================================================
 	
+
+{% endraw %}

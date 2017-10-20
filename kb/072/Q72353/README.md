@@ -6,6 +6,8 @@ permalink: /kb/072/Q72353/
 
 ## Q72353: Problem Printing with Windows on IBM ProPrinter X24e/XL24e
 
+{% raw %}
+
 	Article: Q72353
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -88,3 +90,5 @@ permalink: /kb/072/Q72353/
 	
 	=============================================================================
 	
+
+{% endraw %}

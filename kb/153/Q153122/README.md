@@ -6,6 +6,8 @@ permalink: /kb/153/Q153122/
 
 ## Q153122: TrueImage Errors When Printing from a Macintosh
 
+{% raw %}
+
 	Article: Q153122
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -61,3 +63,5 @@ permalink: /kb/153/Q153122/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68081/
 
 ## Q68081: Creating a Single Import Library for Multiple DLLs
 
+{% raw %}
+
 	Article: Q68081
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -105,3 +107,5 @@ permalink: /kb/068/Q68081/
 	
 	=============================================================================
 	
+
+{% endraw %}

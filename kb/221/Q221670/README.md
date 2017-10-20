@@ -6,6 +6,8 @@ permalink: /kb/221/Q221670/
 
 ## Q221670: FIX:Multiselect Fails in Class Designer for Objects on PageFrame
 
+{% raw %}
+
 	Article: Q221670
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -69,3 +71,5 @@ permalink: /kb/221/Q221670/
 	
 	=============================================================================
 	
+
+{% endraw %}

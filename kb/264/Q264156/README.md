@@ -6,6 +6,8 @@ permalink: /kb/264/Q264156/
 
 ## Q264156: INFO: Including RC File in Another RC File w/ Different CodePage
 
+{% raw %}
+
 	Article: Q264156
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/264/Q264156/
 	
 	=============================================================================
 	
+
+{% endraw %}

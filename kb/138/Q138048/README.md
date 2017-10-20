@@ -6,6 +6,8 @@ permalink: /kb/138/Q138048/
 
 ## Q138048: Server Name Not Displayed in Login Dialog Box
 
+{% raw %}
+
 	Article: Q138048
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -68,3 +70,5 @@ permalink: /kb/138/Q138048/
 	
 	=============================================================================
 	
+
+{% endraw %}

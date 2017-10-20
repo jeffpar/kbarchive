@@ -6,6 +6,8 @@ permalink: /kb/179/Q179757/
 
 ## Q179757: PRB: &quot;Set Next Statement&quot; Does Not Work During SQL Debugging
 
+{% raw %}
+
 	Article: Q179757
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.2
@@ -53,3 +55,5 @@ permalink: /kb/179/Q179757/
 	
 	=============================================================================
 	
+
+{% endraw %}

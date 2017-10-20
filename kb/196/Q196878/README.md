@@ -6,6 +6,8 @@ permalink: /kb/196/Q196878/
 
 ## Q196878: WD97: AutoCorrect Doesn't Replace with Mixed Case
 
+{% raw %}
+
 	Article: Q196878
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/196/Q196878/
 	
 	=============================================================================
 	
+
+{% endraw %}

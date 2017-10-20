@@ -6,6 +6,8 @@ permalink: /kb/164/Q164661/
 
 ## Q164661: SNA Server 3.0 Config Tool Incorrectly Sets Client Transports
 
+{% raw %}
+
 	Article: Q164661
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -113,3 +115,5 @@ permalink: /kb/164/Q164661/
 	
 	=============================================================================
 	
+
+{% endraw %}

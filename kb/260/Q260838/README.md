@@ -6,6 +6,8 @@ permalink: /kb/260/Q260838/
 
 ## Q260838: MS00-031: IIS Stops Servicing HTR Requests
 
+{% raw %}
+
 	Article: Q260838
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -246,3 +248,5 @@ permalink: /kb/260/Q260838/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158477/
 
 ## Q158477: WD97: Object Deleted When You Run Letter Wizard
 
+{% raw %}
+
 	Article: Q158477
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -84,3 +86,5 @@ permalink: /kb/158/Q158477/
 	
 	=============================================================================
 	
+
+{% endraw %}

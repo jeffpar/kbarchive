@@ -6,6 +6,8 @@ permalink: /kb/074/Q74509/
 
 ## Q74509: DlgIcons.exe Dynamically Changes Icons in Modal Dialog
 
+{% raw %}
+
 	Article: Q74509
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -57,3 +59,5 @@ permalink: /kb/074/Q74509/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155857/
 
 ## Q155857: Windows 95 Multiple Provider Router and Network Call Order
 
+{% raw %}
+
 	Article: Q155857
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -83,3 +85,5 @@ permalink: /kb/155/Q155857/
 	
 	=============================================================================
 	
+
+{% endraw %}

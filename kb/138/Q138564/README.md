@@ -6,6 +6,8 @@ permalink: /kb/138/Q138564/
 
 ## Q138564: PRB: Windows 95 Common Controls Not Supported by Ctl3d32.dll
 
+{% raw %}
+
 	Article: Q138564
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -156,3 +158,5 @@ permalink: /kb/138/Q138564/
 	
 	=============================================================================
 	
+
+{% endraw %}

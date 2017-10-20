@@ -6,6 +6,8 @@ permalink: /kb/126/Q126701/
 
 ## Q126701: RAS: Use Cached Credentials to Log On to a Different Domain
 
+{% raw %}
+
 	Article: Q126701
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 4.0
@@ -58,3 +60,5 @@ permalink: /kb/126/Q126701/
 	
 	=============================================================================
 	
+
+{% endraw %}

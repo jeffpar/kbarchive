@@ -6,6 +6,8 @@ permalink: /kb/149/Q149532/
 
 ## Q149532: Windows NT Clients Run Out of Ports
 
+{% raw %}
+
 	Article: Q149532
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -104,3 +106,5 @@ permalink: /kb/149/Q149532/
 	
 	=============================================================================
 	
+
+{% endraw %}

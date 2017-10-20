@@ -6,6 +6,8 @@ permalink: /kb/235/Q235355/
 
 ## Q235355: PRB: CMonthCalCtl::GetCurSel(CTime) Returns Wrong Value
 
+{% raw %}
+
 	Article: Q235355
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -68,3 +70,5 @@ permalink: /kb/235/Q235355/
 	
 	=============================================================================
 	
+
+{% endraw %}

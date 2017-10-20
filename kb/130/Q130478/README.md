@@ -6,6 +6,8 @@ permalink: /kb/130/Q130478/
 
 ## Q130478: Reconcile Feature Fixes Inconsistent IP Addresses
 
+{% raw %}
+
 	Article: Q130478
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -46,3 +48,5 @@ permalink: /kb/130/Q130478/
 	
 	=============================================================================
 	
+
+{% endraw %}

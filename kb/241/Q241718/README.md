@@ -6,6 +6,8 @@ permalink: /kb/241/Q241718/
 
 ## Q241718: HOWTO: Convert a DBTIMESTAMP into a DATE
 
+{% raw %}
+
 	Article: Q241718
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.2,5.0,6.0
@@ -148,3 +150,5 @@ permalink: /kb/241/Q241718/
 	
 	=============================================================================
 	
+
+{% endraw %}

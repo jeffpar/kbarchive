@@ -6,6 +6,8 @@ permalink: /kb/171/Q171058/
 
 ## Q171058: INFO: Microsoft Sponsored IIS NNTP Newsgroups
 
+{% raw %}
+
 	Article: Q171058
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0,3.0,4.0,5.0
@@ -77,3 +79,5 @@ permalink: /kb/171/Q171058/
 	
 	=============================================================================
 	
+
+{% endraw %}

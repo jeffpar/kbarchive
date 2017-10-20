@@ -6,6 +6,8 @@ permalink: /kb/066/Q66740/
 
 ## Q66740: BUG: CTRL+NUM/ May Be Read as CTRL+/ in MS-DOS with NUM LOCK On
 
+{% raw %}
+
 	Article: Q66740
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -72,3 +74,5 @@ permalink: /kb/066/Q66740/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187746/
 
 ## Q187746: BUG: ERROR MESSAGE() Function with ODBC Connection Causes Error
 
+{% raw %}
+
 	Article: Q187746
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,5.0,5.0a
@@ -75,3 +77,5 @@ permalink: /kb/187/Q187746/
 	
 	=============================================================================
 	
+
+{% endraw %}

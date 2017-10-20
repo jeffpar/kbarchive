@@ -6,6 +6,8 @@ permalink: /kb/169/Q169146/
 
 ## Q169146: Error Message When Running Network Monitor
 
+{% raw %}
+
 	Article: Q169146
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -70,3 +72,5 @@ permalink: /kb/169/Q169146/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168101/
 
 ## Q168101: WD97: AutoComplete Suggests Incorrect Date
 
+{% raw %}
+
 	Article: Q168101
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -81,3 +83,5 @@ permalink: /kb/168/Q168101/
 	
 	=============================================================================
 	
+
+{% endraw %}

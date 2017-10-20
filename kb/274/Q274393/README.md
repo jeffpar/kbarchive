@@ -6,6 +6,8 @@ permalink: /kb/274/Q274393/
 
 ## Q274393: XFOR: Event 10023 &quot;Invalid Container Specified in Control File&quot;
 
+{% raw %}
+
 	Article: Q274393
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -66,3 +68,5 @@ permalink: /kb/274/Q274393/
 	
 	=============================================================================
 	
+
+{% endraw %}

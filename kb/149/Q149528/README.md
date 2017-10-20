@@ -6,6 +6,8 @@ permalink: /kb/149/Q149528/
 
 ## Q149528: FTP Client Uses Only One IP Address on Multihomed Workstations
 
+{% raw %}
+
 	Article: Q149528
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -65,3 +67,5 @@ permalink: /kb/149/Q149528/
 	
 	=============================================================================
 	
+
+{% endraw %}

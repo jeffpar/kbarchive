@@ -6,6 +6,8 @@ permalink: /kb/142/Q142860/
 
 ## Q142860: Unattended Setup of Internet Information Server
 
+{% raw %}
+
 	Article: Q142860
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -61,3 +63,5 @@ permalink: /kb/142/Q142860/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123369/
 
 ## Q123369: Adding a Pure LAN Manager Domain to SMS
 
+{% raw %}
+
 	Article: Q123369
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -57,3 +59,5 @@ permalink: /kb/123/Q123369/
 	
 	=============================================================================
 	
+
+{% endraw %}

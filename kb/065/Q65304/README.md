@@ -6,6 +6,8 @@ permalink: /kb/065/Q65304/
 
 ## Q65304: INFO: C2059, C2065, C2143 May Be Caused by Not Including Header
 
+{% raw %}
+
 	Article: Q65304
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,2.1,4.0,5.0,6.0
@@ -86,3 +88,5 @@ permalink: /kb/065/Q65304/
 	
 	=============================================================================
 	
+
+{% endraw %}

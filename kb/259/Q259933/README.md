@@ -6,6 +6,8 @@ permalink: /kb/259/Q259933/
 
 ## Q259933: HOWTO: Use an MSChart Control with Visual FoxPro
 
+{% raw %}
+
 	Article: Q259933
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -155,3 +157,5 @@ permalink: /kb/259/Q259933/
 	
 	=============================================================================
 	
+
+{% endraw %}

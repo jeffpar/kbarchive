@@ -6,6 +6,8 @@ permalink: /kb/174/Q174151/
 
 ## Q174151: XADM: No Way to Split System Mail and User Mail Paths with Admin
 
+{% raw %}
+
 	Article: Q174151
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -51,3 +53,5 @@ permalink: /kb/174/Q174151/
 	
 	=============================================================================
 	
+
+{% endraw %}

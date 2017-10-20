@@ -6,6 +6,8 @@ permalink: /kb/049/Q49571/
 
 ## Q49571: typedefs Not Allowed for Function Definitions
 
+{% raw %}
+
 	Article: Q49571
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -43,3 +45,5 @@ permalink: /kb/049/Q49571/
 	Microsoft has confirmed this to be a problem with C Version 5.10. We
 	are researching this problem and will post new information as it
 	becomes available.
+
+{% endraw %}

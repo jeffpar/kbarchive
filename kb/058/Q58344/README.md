@@ -6,6 +6,8 @@ permalink: /kb/058/Q58344/
 
 ## Q58344: Windows 3.0 SYSTEM.INI &#91;standard&#93; Section
 
+{% raw %}
+
 	Article: Q58344
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -72,3 +74,5 @@ permalink: /kb/058/Q58344/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/050/Q50004/
 
 ## Q50004: Example of Saving Numeric Array to Disk Using BLOAD and BSAVE
 
+{% raw %}
+
 	Article: Q50004
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -70,3 +72,5 @@ permalink: /kb/050/Q50004/
 	 6  7  8  9  10  11  12  13  14
 	 7  8  9  10  11  12  13  14  15
 	 8  9  10  11  12  13  14  15  16
+
+{% endraw %}

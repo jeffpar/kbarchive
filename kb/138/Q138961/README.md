@@ -6,6 +6,8 @@ permalink: /kb/138/Q138961/
 
 ## Q138961: BUG: Only One File Extension Honored in Parameter of GETFILE()
 
+{% raw %}
+
 	Article: Q138961
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -65,3 +67,5 @@ permalink: /kb/138/Q138961/
 	
 	=============================================================================
 	
+
+{% endraw %}

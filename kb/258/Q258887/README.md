@@ -6,6 +6,8 @@ permalink: /kb/258/Q258887/
 
 ## Q258887: Err Msg: Error 26151. Installation of Telnet Client Failed
 
+{% raw %}
+
 	Article: Q258887
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:
@@ -68,3 +70,5 @@ permalink: /kb/258/Q258887/
 	
 	=============================================================================
 	
+
+{% endraw %}

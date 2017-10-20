@@ -6,6 +6,8 @@ permalink: /kb/137/Q137974/
 
 ## Q137974: How to Set Up User Profiles with the Microsoft Service for NDS
 
+{% raw %}
+
 	Article: Q137974
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/137/Q137974/
 	
 	=============================================================================
 	
+
+{% endraw %}

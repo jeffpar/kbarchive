@@ -6,6 +6,8 @@ permalink: /kb/237/Q237918/
 
 ## Q237918: WD97: How to Clear the Poppy Macro Virus
 
+{% raw %}
+
 	Article: Q237918
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -141,3 +143,5 @@ permalink: /kb/237/Q237918/
 	
 	=============================================================================
 	
+
+{% endraw %}

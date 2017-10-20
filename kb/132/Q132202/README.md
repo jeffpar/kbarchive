@@ -6,6 +6,8 @@ permalink: /kb/132/Q132202/
 
 ## Q132202: Audio CD Incorrectly Identified as Program CD-ROM
 
+{% raw %}
+
 	Article: Q132202
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/132/Q132202/
 	
 	=============================================================================
 	
+
+{% endraw %}

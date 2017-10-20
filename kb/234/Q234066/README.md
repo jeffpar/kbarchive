@@ -6,6 +6,8 @@ permalink: /kb/234/Q234066/
 
 ## Q234066: Can't Select Group Item for User Defined Type/Recordset
 
+{% raw %}
+
 	Article: Q234066
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0SP2
@@ -52,3 +54,5 @@ permalink: /kb/234/Q234066/
 	
 	=============================================================================
 	
+
+{% endraw %}

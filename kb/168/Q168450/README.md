@@ -6,6 +6,8 @@ permalink: /kb/168/Q168450/
 
 ## Q168450: XCLN: Changing the AutoSignature Default Location
 
+{% raw %}
+
 	Article: Q168450
 	Product(s): Microsoft Exchange
 	Version(s): Windows:5.0
@@ -102,3 +104,5 @@ permalink: /kb/168/Q168450/
 	
 	=============================================================================
 	
+
+{% endraw %}

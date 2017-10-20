@@ -6,6 +6,8 @@ permalink: /kb/140/Q140948/
 
 ## Q140948: XADM: Reply Rule Disabled When Deliver to Public Folder Via IMC
 
+{% raw %}
+
 	Article: Q140948
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/140/Q140948/
 	
 	=============================================================================
 	
+
+{% endraw %}

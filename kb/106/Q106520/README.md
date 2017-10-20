@@ -6,6 +6,8 @@ permalink: /kb/106/Q106520/
 
 ## Q106520: FIX: /Ge Fails to Detect Stack Overflow
 
+{% raw %}
+
 	Article: Q106520
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -95,3 +97,5 @@ permalink: /kb/106/Q106520/
 	
 	=============================================================================
 	
+
+{% endraw %}

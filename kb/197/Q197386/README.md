@@ -6,6 +6,8 @@ permalink: /kb/197/Q197386/
 
 ## Q197386: Random STOPs Using Cirrus Logic Display Adapters &amp; pcANYWHERE
 
+{% raw %}
+
 	Article: Q197386
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/197/Q197386/
 	
 	=============================================================================
 	
+
+{% endraw %}

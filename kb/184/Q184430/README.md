@@ -6,6 +6,8 @@ permalink: /kb/184/Q184430/
 
 ## Q184430: WD97: Displaying Modeless Dialog Box in Binder Activates Word
 
+{% raw %}
+
 	Article: Q184430
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -80,3 +82,5 @@ permalink: /kb/184/Q184430/
 	
 	=============================================================================
 	
+
+{% endraw %}

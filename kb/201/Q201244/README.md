@@ -6,6 +6,8 @@ permalink: /kb/201/Q201244/
 
 ## Q201244: XWEB: Browser Shuts Down Trying to Open a Link to a Deleted Item
 
+{% raw %}
+
 	Article: Q201244
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -69,3 +71,5 @@ permalink: /kb/201/Q201244/
 	
 	=============================================================================
 	
+
+{% endraw %}

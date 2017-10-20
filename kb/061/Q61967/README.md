@@ -6,6 +6,8 @@ permalink: /kb/061/Q61967/
 
 ## Q61967: Using /help Option with RM.EXE Displays EXP.EXE Online Help
 
+{% raw %}
+
 	Article: Q61967
 	Product(s): See article
 	Version(s): 1.01   | 1.01
@@ -38,3 +40,5 @@ permalink: /kb/061/Q61967/
 	   (PWB) by selecting "Miscellaneous" on the main Help Contents screen
 	   (in the box titled Microsoft Utilities), and then selecting "RM
 	   Command" from the submenu.
+
+{% endraw %}

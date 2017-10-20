@@ -6,6 +6,8 @@ permalink: /kb/178/Q178007/
 
 ## Q178007: Encarta 98: Clicking Home Screen Title Does Not Open Feature
 
+{% raw %}
+
 	Article: Q178007
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -127,3 +129,5 @@ permalink: /kb/178/Q178007/
 	
 	=============================================================================
 	
+
+{% endraw %}

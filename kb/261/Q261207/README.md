@@ -6,6 +6,8 @@ permalink: /kb/261/Q261207/
 
 ## Q261207: XCLN: Information about the Large Message Rule in Outlook 2000
 
+{% raw %}
+
 	Article: Q261207
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:9.0; :
@@ -107,3 +109,5 @@ permalink: /kb/261/Q261207/
 	
 	=============================================================================
 	
+
+{% endraw %}

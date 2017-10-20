@@ -6,6 +6,8 @@ permalink: /kb/104/Q104003/
 
 ## Q104003: Hang If Eject CD While Program Is Running
 
+{% raw %}
+
 	Article: Q104003
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -54,3 +56,5 @@ permalink: /kb/104/Q104003/
 	
 	=============================================================================
 	
+
+{% endraw %}

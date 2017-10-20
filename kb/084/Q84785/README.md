@@ -6,6 +6,8 @@ permalink: /kb/084/Q84785/
 
 ## Q84785: IBM PS/2 Model 55SX Hangs at Start Up with Windows 3.1
 
+{% raw %}
+
 	Article: Q84785
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/084/Q84785/
 	
 	=============================================================================
 	
+
+{% endraw %}

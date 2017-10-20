@@ -6,6 +6,8 @@ permalink: /kb/119/Q119490/
 
 ## Q119490: Checking Crashdump File for Corruption
 
+{% raw %}
+
 	Article: Q119490
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -94,3 +96,5 @@ permalink: /kb/119/Q119490/
 	
 	=============================================================================
 	
+
+{% endraw %}

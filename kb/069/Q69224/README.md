@@ -6,6 +6,8 @@ permalink: /kb/069/Q69224/
 
 ## Q69224: C1001: Internal Compiler Error: regMD.c, Lines 3881 and 3837
 
+{% raw %}
+
 	Article: Q69224
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -41,3 +43,5 @@ permalink: /kb/069/Q69224/
 	
 	   j = 8 * strlen(string);
 	}
+
+{% endraw %}

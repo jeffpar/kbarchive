@@ -6,6 +6,8 @@ permalink: /kb/174/Q174659/
 
 ## Q174659: Start Button, Taskbar, and Desktop Icons Missing After Logon
 
+{% raw %}
+
 	Article: Q174659
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/174/Q174659/
 	
 	=============================================================================
 	
+
+{% endraw %}

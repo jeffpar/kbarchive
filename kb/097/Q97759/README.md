@@ -6,6 +6,8 @@ permalink: /kb/097/Q97759/
 
 ## Q97759: Starting Heap Walker Results in a GP Fault
 
+{% raw %}
+
 	Article: Q97759
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -89,3 +91,5 @@ permalink: /kb/097/Q97759/
 	
 	=============================================================================
 	
+
+{% endraw %}

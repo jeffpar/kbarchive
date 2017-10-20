@@ -6,6 +6,8 @@ permalink: /kb/158/Q158841/
 
 ## Q158841: Cannot Choose Icons in Executable File
 
+{% raw %}
+
 	Article: Q158841
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -56,3 +58,5 @@ permalink: /kb/158/Q158841/
 	
 	=============================================================================
 	
+
+{% endraw %}

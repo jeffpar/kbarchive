@@ -6,6 +6,8 @@ permalink: /kb/138/Q138408/
 
 ## Q138408: Err Msg: DriveSpace Could Not Mount Drive 'X'...
 
+{% raw %}
+
 	Article: Q138408
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/138/Q138408/
 	
 	=============================================================================
 	
+
+{% endraw %}

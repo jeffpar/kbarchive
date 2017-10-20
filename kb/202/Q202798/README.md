@@ -6,6 +6,8 @@ permalink: /kb/202/Q202798/
 
 ## Q202798: PRB: Browser Stops When Calling a Desktop Application from ASP
 
+{% raw %}
+
 	Article: Q202798
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,4.0
@@ -123,3 +125,5 @@ permalink: /kb/202/Q202798/
 	
 	=============================================================================
 	
+
+{% endraw %}

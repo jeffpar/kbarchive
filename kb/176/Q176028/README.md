@@ -6,6 +6,8 @@ permalink: /kb/176/Q176028/
 
 ## Q176028: Adding NetBIOS over IPX Support to Network Client 3.0
 
+{% raw %}
+
 	Article: Q176028
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -78,3 +80,5 @@ permalink: /kb/176/Q176028/
 	
 	=============================================================================
 	
+
+{% endraw %}

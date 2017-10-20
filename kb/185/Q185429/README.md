@@ -6,6 +6,8 @@ permalink: /kb/185/Q185429/
 
 ## Q185429: WD97: Link to Excel Worksheet Object Not Updated Automatically
 
+{% raw %}
+
 	Article: Q185429
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -98,3 +100,5 @@ permalink: /kb/185/Q185429/
 	
 	=============================================================================
 	
+
+{% endraw %}

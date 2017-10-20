@@ -6,6 +6,8 @@ permalink: /kb/070/Q70058/
 
 ## Q70058: Only Spaces May Separate Additional Libraries in PWB
 
+{% raw %}
+
 	Article: Q70058
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -87,3 +89,5 @@ permalink: /kb/070/Q70058/
 	
 	=============================================================================
 	
+
+{% endraw %}

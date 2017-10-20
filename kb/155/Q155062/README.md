@@ -6,6 +6,8 @@ permalink: /kb/155/Q155062/
 
 ## Q155062: PPT7: Information About Compadre for PowerPoint 95
 
+{% raw %}
+
 	Article: Q155062
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -47,3 +49,5 @@ permalink: /kb/155/Q155062/
 	
 	=============================================================================
 	
+
+{% endraw %}

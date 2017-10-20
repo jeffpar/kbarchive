@@ -6,6 +6,8 @@ permalink: /kb/148/Q148905/
 
 ## Q148905: Return of Arcade: Registration Entries Made by Setup
 
+{% raw %}
+
 	Article: Q148905
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -52,3 +54,5 @@ permalink: /kb/148/Q148905/
 	
 	=============================================================================
 	
+
+{% endraw %}

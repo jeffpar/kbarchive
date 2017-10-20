@@ -6,6 +6,8 @@ permalink: /kb/270/Q270865/
 
 ## Q270865: Microsoft Reader: Distorted Graphics or Text in the Program
 
+{% raw %}
+
 	Article: Q270865
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -155,3 +157,5 @@ permalink: /kb/270/Q270865/
 	
 	=============================================================================
 	
+
+{% endraw %}

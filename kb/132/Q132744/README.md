@@ -6,6 +6,8 @@ permalink: /kb/132/Q132744/
 
 ## Q132744: PC Gen: Description of Mail Integrity Check MAILINT.EXE
 
+{% raw %}
+
 	Article: Q132744
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -200,3 +202,5 @@ permalink: /kb/132/Q132744/
 	
 	=============================================================================
 	
+
+{% endraw %}

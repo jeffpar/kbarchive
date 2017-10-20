@@ -6,6 +6,8 @@ permalink: /kb/133/Q133736/
 
 ## Q133736: PPT7: Error Message: L.ppt - Sorry, the File Cannot Be Found
 
+{% raw %}
+
 	Article: Q133736
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -78,3 +80,5 @@ permalink: /kb/133/Q133736/
 	
 	=============================================================================
 	
+
+{% endraw %}

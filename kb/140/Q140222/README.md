@@ -6,6 +6,8 @@ permalink: /kb/140/Q140222/
 
 ## Q140222: PRB: Cannot Use _PBPAGE or _PEPAGE to Control Pages for Report
 
+{% raw %}
+
 	Article: Q140222
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/140/Q140222/
 	
 	=============================================================================
 	
+
+{% endraw %}

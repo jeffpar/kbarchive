@@ -6,6 +6,8 @@ permalink: /kb/275/Q275479/
 
 ## Q275479: Access Violation in 5250 Application While in TN5250 Mode
 
+{% raw %}
+
 	Article: Q275479
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -112,3 +114,5 @@ permalink: /kb/275/Q275479/
 	
 	=============================================================================
 	
+
+{% endraw %}

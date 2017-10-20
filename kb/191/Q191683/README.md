@@ -6,6 +6,8 @@ permalink: /kb/191/Q191683/
 
 ## Q191683: BUG: @...GET Does Not Display the Complete Century Date
 
+{% raw %}
+
 	Article: Q191683
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -80,3 +82,5 @@ permalink: /kb/191/Q191683/
 	
 	=============================================================================
 	
+
+{% endraw %}

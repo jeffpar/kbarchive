@@ -6,6 +6,8 @@ permalink: /kb/157/Q157608/
 
 ## Q157608: User Migration Fails If Only the &quot;Everyone&quot; Group Exists
 
+{% raw %}
+
 	Article: Q157608
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -56,3 +58,5 @@ permalink: /kb/157/Q157608/
 	
 	=============================================================================
 	
+
+{% endraw %}

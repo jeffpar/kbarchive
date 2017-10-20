@@ -6,6 +6,8 @@ permalink: /kb/142/Q142868/
 
 ## Q142868: IIS: Authentication and Security Features
 
+{% raw %}
+
 	Article: Q142868
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0,3.0
@@ -294,3 +296,5 @@ permalink: /kb/142/Q142868/
 	
 	=============================================================================
 	
+
+{% endraw %}

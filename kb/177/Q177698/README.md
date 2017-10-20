@@ -6,6 +6,8 @@ permalink: /kb/177/Q177698/
 
 ## Q177698: HOWTO: Call WNetConnectionDialog1 and WNetDisconnectDialog1
 
+{% raw %}
+
 	Article: Q177698
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2000,3.51,4.0,5.0,6.0
@@ -193,3 +195,5 @@ permalink: /kb/177/Q177698/
 	
 	=============================================================================
 	
+
+{% endraw %}

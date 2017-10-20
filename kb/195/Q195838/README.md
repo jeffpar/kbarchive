@@ -6,6 +6,8 @@ permalink: /kb/195/Q195838/
 
 ## Q195838: PRB: Cut, Copy, and Paste Unavailable in Text Annotation Menu
 
+{% raw %}
+
 	Article: Q195838
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -86,3 +88,5 @@ permalink: /kb/195/Q195838/
 	
 	=============================================================================
 	
+
+{% endraw %}

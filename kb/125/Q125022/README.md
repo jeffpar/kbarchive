@@ -6,6 +6,8 @@ permalink: /kb/125/Q125022/
 
 ## Q125022: MS EXCEL 5 FOR WINDOWS STEP BY STEP: 3rd Edition Corrections
 
+{% raw %}
+
 	Article: Q125022
 	Product(s): Microsoft Press
 	Version(s): 
@@ -288,3 +290,5 @@ permalink: /kb/125/Q125022/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/043/Q43691/
 
 ## Q43691: ENVIRON Sets Environment Variables Used by SHELL in QuickBASIC
 
+{% raw %}
+
 	Article: Q43691
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -70,3 +72,5 @@ permalink: /kb/043/Q43691/
 	PRINT : PRINT
 	SHELL "set"   ' prints the environment table in BASIC's child process
 	END
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/260/Q260526/
 
 ## Q260526: PRB: Using TOP Clause Returns No Data from SQL 7.0/2000 Table
 
+{% raw %}
+
 	Article: Q260526
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -99,3 +101,5 @@ permalink: /kb/260/Q260526/
 	
 	=============================================================================
 	
+
+{% endraw %}

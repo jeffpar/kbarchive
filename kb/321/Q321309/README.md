@@ -6,6 +6,8 @@ permalink: /kb/321/Q321309/
 
 ## Q321309: MS02-019: Security Vulnerabilities in Internet Explorer
 
+{% raw %}
+
 	Article: Q321309
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 1.0,2001,4.0,5,5.02,98
@@ -104,3 +106,5 @@ permalink: /kb/321/Q321309/
 	
 	=============================================================================
 	
+
+{% endraw %}

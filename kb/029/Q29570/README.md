@@ -6,6 +6,8 @@ permalink: /kb/029/Q29570/
 
 ## Q29570: PRB: Error &quot;constant expected&quot; with ORG Directive
 
+{% raw %}
+
 	Article: Q29570
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b
@@ -77,3 +79,5 @@ permalink: /kb/029/Q29570/
 	
 	=============================================================================
 	
+
+{% endraw %}

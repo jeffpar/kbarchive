@@ -6,6 +6,8 @@ permalink: /kb/177/Q177386/
 
 ## Q177386: Cannot Use Certain GPS Receivers with Automap/Expedia
 
+{% raw %}
+
 	Article: Q177386
 	Product(s): Microsoft Automap
 	Version(s): 1.0,5.0
@@ -102,3 +104,5 @@ permalink: /kb/177/Q177386/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195751/
 
 ## Q195751: Encarta: Selecting Special Character Disables Read Aloud Feature
 
+{% raw %}
+
 	Article: Q195751
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -71,3 +73,5 @@ permalink: /kb/195/Q195751/
 	
 	=============================================================================
 	
+
+{% endraw %}

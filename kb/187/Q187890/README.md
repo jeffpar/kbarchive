@@ -6,6 +6,8 @@ permalink: /kb/187/Q187890/
 
 ## Q187890: WD97: Confirm Data Source Dialog Box Not Accessible in VBA
 
+{% raw %}
+
 	Article: Q187890
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -59,3 +61,5 @@ permalink: /kb/187/Q187890/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/022/Q22019/
 
 ## Q22019: XON/XOFF Communications Protocol Not Supported in QuickBASIC
 
+{% raw %}
+
 	Article: Q22019
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -67,3 +69,5 @@ permalink: /kb/022/Q22019/
 	starts or stops communications, such a program is unlikely to be as
 	reliable as the XON/XOFF handshaking that is built into dedicated
 	commercial communications software or hardware packages.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/088/Q88983/
 
 ## Q88983: Approximating the Size of a .DBF File in FoxBASE+
 
+{% raw %}
+
 	Article: Q88983
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:1.21,2.1
@@ -43,3 +45,5 @@ permalink: /kb/088/Q88983/
 	
 	=============================================================================
 	
+
+{% endraw %}

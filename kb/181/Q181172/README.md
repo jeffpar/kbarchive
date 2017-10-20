@@ -6,6 +6,8 @@ permalink: /kb/181/Q181172/
 
 ## Q181172: WD97: How to Clear the Undo Stack
 
+{% raw %}
+
 	Article: Q181172
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -107,3 +109,5 @@ permalink: /kb/181/Q181172/
 	
 	=============================================================================
 	
+
+{% endraw %}

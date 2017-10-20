@@ -6,6 +6,8 @@ permalink: /kb/065/Q65923/
 
 ## Q65923: Interrupt to Get QB/QBX Invocation Command Line; vs. COMMAND&#36;
 
+{% raw %}
+
 	Article: Q65923
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10
@@ -98,3 +100,5 @@ permalink: /kb/065/Q65923/
 	then the program will print the following:
 	
 	   ARG1 ARG2
+
+{% endraw %}

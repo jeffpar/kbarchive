@@ -6,6 +6,8 @@ permalink: /kb/139/Q139840/
 
 ## Q139840: Users Logging Into FPNW are Not Ask to Change Their Password
 
+{% raw %}
+
 	Article: Q139840
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -58,3 +60,5 @@ permalink: /kb/139/Q139840/
 	
 	=============================================================================
 	
+
+{% endraw %}

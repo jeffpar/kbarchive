@@ -6,6 +6,8 @@ permalink: /kb/083/Q83851/
 
 ## Q83851: SLEEP.SYS 3.1 Required for APM on AST Laptops
 
+{% raw %}
+
 	Article: Q83851
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/083/Q83851/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150134/
 
 ## Q150134: BUG: FOR4165 Warning Underflow of Smallest Positive REAL&#42;8
 
+{% raw %}
+
 	Article: Q150134
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/150/Q150134/
 	
 	=============================================================================
 	
+
+{% endraw %}

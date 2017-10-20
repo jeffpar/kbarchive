@@ -6,6 +6,8 @@ permalink: /kb/295/Q295157/
 
 ## Q295157: Preinst.exe and Delgrp.exe Utilities May Return Errors on SQL 2K
 
+{% raw %}
+
 	Article: Q295157
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,2.0
@@ -86,3 +88,5 @@ permalink: /kb/295/Q295157/
 	
 	=============================================================================
 	
+
+{% endraw %}

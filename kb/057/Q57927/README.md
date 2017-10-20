@@ -6,6 +6,8 @@ permalink: /kb/057/Q57927/
 
 ## Q57927: BASIC Does Not Support 8514 VGA Text Modes in OS/2
 
+{% raw %}
+
 	Article: Q57927
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -36,3 +38,5 @@ permalink: /kb/057/Q57927/
 	
 	   BC /LP /O TEST.BAS;
 	   LINK TEST;
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/229/Q229293/
 
 ## Q229293: User Manager crashes when users are members of many global group
 
+{% raw %}
+
 	Article: Q229293
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -68,3 +70,5 @@ permalink: /kb/229/Q229293/
 	
 	=============================================================================
 	
+
+{% endraw %}

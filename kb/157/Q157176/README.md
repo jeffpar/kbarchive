@@ -6,6 +6,8 @@ permalink: /kb/157/Q157176/
 
 ## Q157176: XCLN: Using Auto Accept Meeting Requests / Auto Remove
 
+{% raw %}
+
 	Article: Q157176
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -71,3 +73,5 @@ permalink: /kb/157/Q157176/
 	
 	=============================================================================
 	
+
+{% endraw %}

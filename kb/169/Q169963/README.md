@@ -6,6 +6,8 @@ permalink: /kb/169/Q169963/
 
 ## Q169963: OFF97: Copy To from Bookshelf Starts Program Not Binder
 
+{% raw %}
+
 	Article: Q169963
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:97
@@ -103,3 +105,5 @@ permalink: /kb/169/Q169963/
 	
 	=============================================================================
 	
+
+{% endraw %}

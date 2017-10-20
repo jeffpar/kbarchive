@@ -6,6 +6,8 @@ permalink: /kb/179/Q179287/
 
 ## Q179287: FIX: Insufficient Memory in Visual FoxPro on Fast Computers
 
+{% raw %}
+
 	Article: Q179287
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -190,3 +192,5 @@ permalink: /kb/179/Q179287/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151803/
 
 ## Q151803: XADM: Setting Up Receive-Only Mailboxes
 
+{% raw %}
+
 	Article: Q151803
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -62,3 +64,5 @@ permalink: /kb/151/Q151803/
 	
 	=============================================================================
 	
+
+{% endraw %}

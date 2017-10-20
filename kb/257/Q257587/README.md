@@ -6,6 +6,8 @@ permalink: /kb/257/Q257587/
 
 ## Q257587: Description of Server Authentication Process During SSLHandshake
 
+{% raw %}
+
 	Article: Q257587
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -103,3 +105,5 @@ permalink: /kb/257/Q257587/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198641/
 
 ## Q198641: SMS: Netware Redirector Causes Message During SMS 2.0 Setup
 
+{% raw %}
+
 	Article: Q198641
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -70,3 +72,5 @@ permalink: /kb/198/Q198641/
 	
 	=============================================================================
 	
+
+{% endraw %}

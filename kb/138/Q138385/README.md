@@ -6,6 +6,8 @@ permalink: /kb/138/Q138385/
 
 ## Q138385: INFO: Visual SourceSafe Shortcut Keys
 
+{% raw %}
+
 	Article: Q138385
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -94,3 +96,5 @@ permalink: /kb/138/Q138385/
 	
 	=============================================================================
 	
+
+{% endraw %}

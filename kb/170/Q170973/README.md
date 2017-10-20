@@ -6,6 +6,8 @@ permalink: /kb/170/Q170973/
 
 ## Q170973: Finding the Number of Active Users Per Server
 
+{% raw %}
+
 	Article: Q170973
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -52,3 +54,5 @@ permalink: /kb/170/Q170973/
 	
 	=============================================================================
 	
+
+{% endraw %}

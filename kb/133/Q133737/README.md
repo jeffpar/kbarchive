@@ -6,6 +6,8 @@ permalink: /kb/133/Q133737/
 
 ## Q133737: OLE Objects Don't Update with New Color Scheme
 
+{% raw %}
+
 	Article: Q133737
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -78,3 +80,5 @@ permalink: /kb/133/Q133737/
 	
 	=============================================================================
 	
+
+{% endraw %}

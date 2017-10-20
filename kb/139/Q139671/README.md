@@ -6,6 +6,8 @@ permalink: /kb/139/Q139671/
 
 ## Q139671: Error Message: EMM386 Has Detected Error #6
 
+{% raw %}
+
 	Article: Q139671
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -56,3 +58,5 @@ permalink: /kb/139/Q139671/
 	
 	=============================================================================
 	
+
+{% endraw %}

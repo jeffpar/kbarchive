@@ -6,6 +6,8 @@ permalink: /kb/198/Q198789/
 
 ## Q198789: XADM: How to Install, Configure, and Use the InterOrg Tool
 
+{% raw %}
+
 	Article: Q198789
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -334,3 +336,5 @@ permalink: /kb/198/Q198789/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/294/Q294319/
 
 ## Q294319: Microsoft SQL Server 7.0 Performance Tuning Technical Reference
 
+{% raw %}
+
 	Article: Q294319
 	Product(s): Microsoft Press
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/294/Q294319/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/321/Q321168/
 
 ## Q321168: SMS: Advertisements for a User or User Group Can Run Again
 
+{% raw %}
+
 	Article: Q321168
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3,2.0 SP4
@@ -232,3 +234,5 @@ permalink: /kb/321/Q321168/
 	
 	=============================================================================
 	
+
+{% endraw %}

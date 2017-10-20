@@ -6,6 +6,8 @@ permalink: /kb/163/Q163702/
 
 ## Q163702: XCLN: Unable to Save Sent Time and Expiration Properties
 
+{% raw %}
+
 	Article: Q163702
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -46,3 +48,5 @@ permalink: /kb/163/Q163702/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138973/
 
 ## Q138973: PRB: AppWizard Projects Always Added to Component Gallery
 
+{% raw %}
+
 	Article: Q138973
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -95,3 +97,5 @@ permalink: /kb/138/Q138973/
 	
 	=============================================================================
 	
+
+{% endraw %}

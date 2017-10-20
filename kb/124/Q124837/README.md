@@ -6,6 +6,8 @@ permalink: /kb/124/Q124837/
 
 ## Q124837: Connecting to a Remote Network Monitor Agent Across a Router
 
+{% raw %}
+
 	Article: Q124837
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1,1.2,2.0,2.0 SP1,2.0 SP2,4.0
@@ -110,3 +112,5 @@ permalink: /kb/124/Q124837/
 	
 	=============================================================================
 	
+
+{% endraw %}

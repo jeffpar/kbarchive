@@ -6,6 +6,8 @@ permalink: /kb/326/Q326089/
 
 ## Q326089: HOW TO: Enable Kerberos on a Non-DC for IIS Web Applications
 
+{% raw %}
+
 	Article: Q326089
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -122,3 +124,5 @@ permalink: /kb/326/Q326089/
 	
 	=============================================================================
 	
+
+{% endraw %}

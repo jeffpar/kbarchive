@@ -6,6 +6,8 @@ permalink: /kb/222/Q222953/
 
 ## Q222953: Problem When Uninstalling Service Pack 3 on Localized Windows NT
 
+{% raw %}
+
 	Article: Q222953
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:4.01,4.01 Service Pack 1; winnt:4.0 SP3
@@ -63,3 +65,5 @@ permalink: /kb/222/Q222953/
 	
 	=============================================================================
 	
+
+{% endraw %}

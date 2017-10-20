@@ -6,6 +6,8 @@ permalink: /kb/279/Q279501/
 
 ## Q279501: WD97: Err Msg When You Scroll in Document That Contains Table
 
+{% raw %}
+
 	Article: Q279501
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/279/Q279501/
 	
 	=============================================================================
 	
+
+{% endraw %}

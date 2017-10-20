@@ -6,6 +6,8 @@ permalink: /kb/166/Q166018/
 
 ## Q166018: WD97: Newsletter Wizard Creates Extra Blank Page
 
+{% raw %}
+
 	Article: Q166018
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -59,3 +61,5 @@ permalink: /kb/166/Q166018/
 	
 	=============================================================================
 	
+
+{% endraw %}

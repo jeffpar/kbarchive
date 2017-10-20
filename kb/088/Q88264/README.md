@@ -6,6 +6,8 @@ permalink: /kb/088/Q88264/
 
 ## Q88264: Dell 433DE Requires 1.00 A07 BIOS for More than 16 MB
 
+{% raw %}
+
 	Article: Q88264
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/088/Q88264/
 	
 	=============================================================================
 	
+
+{% endraw %}

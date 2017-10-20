@@ -6,6 +6,8 @@ permalink: /kb/124/Q124727/
 
 ## Q124727: How to Program DMA for Linear Addresses under Windows
 
+{% raw %}
+
 	Article: Q124727
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,3.11
@@ -70,3 +72,5 @@ permalink: /kb/124/Q124727/
 	
 	=============================================================================
 	
+
+{% endraw %}

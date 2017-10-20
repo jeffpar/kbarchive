@@ -6,6 +6,8 @@ permalink: /kb/045/Q45946/
 
 ## Q45946: Unresolved Externals Using OS/2 Functions and INCL_NOCOMMON
 
+{% raw %}
+
 	Article: Q45946
 	Product(s): See article
 	Version(s): 5.10
@@ -46,3 +48,5 @@ permalink: /kb/045/Q45946/
 	
 	A comprehensive listing of these manifest constants can be found in
 	the "Microsoft OS/2 Programmer's Reference," Volume #1, Pages 41-44.
+
+{% endraw %}

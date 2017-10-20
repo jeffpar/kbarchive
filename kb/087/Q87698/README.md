@@ -6,6 +6,8 @@ permalink: /kb/087/Q87698/
 
 ## Q87698: PRB: &quot;Feature Not Available&quot; Error in Distribution Version
 
+{% raw %}
+
 	Article: Q87698
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,3.0
@@ -49,3 +51,5 @@ permalink: /kb/087/Q87698/
 	
 	=============================================================================
 	
+
+{% endraw %}

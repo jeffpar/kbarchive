@@ -6,6 +6,8 @@ permalink: /kb/276/Q276460/
 
 ## Q276460: Internal Record Error Opening HIS 2000 Com.cfg with SNA 4.0
 
+{% raw %}
+
 	Article: Q276460
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -69,3 +71,5 @@ permalink: /kb/276/Q276460/
 	
 	=============================================================================
 	
+
+{% endraw %}

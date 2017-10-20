@@ -6,6 +6,8 @@ permalink: /kb/189/Q189501/
 
 ## Q189501: X.25 PU Passthrough Drops Transmission Header
 
+{% raw %}
+
 	Article: Q189501
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -56,3 +58,5 @@ permalink: /kb/189/Q189501/
 	
 	=============================================================================
 	
+
+{% endraw %}

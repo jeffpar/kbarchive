@@ -6,6 +6,8 @@ permalink: /kb/237/Q237262/
 
 ## Q237262: Encarta 2000: Introductory Audio Is Broken Up or Choppy
 
+{% raw %}
+
 	Article: Q237262
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/237/Q237262/
 	
 	=============================================================================
 	
+
+{% endraw %}

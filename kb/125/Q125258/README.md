@@ -6,6 +6,8 @@ permalink: /kb/125/Q125258/
 
 ## Q125258: Pending Local Print Jobs May Disappear After Reboot of Server
 
+{% raw %}
+
 	Article: Q125258
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/125/Q125258/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/266/Q266782/
 
 ## Q266782: Access Violation Error Message in Cluster.exe Moving Groups
 
+{% raw %}
+
 	Article: Q266782
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -84,3 +86,5 @@ permalink: /kb/266/Q266782/
 	
 	=============================================================================
 	
+
+{% endraw %}

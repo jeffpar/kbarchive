@@ -6,6 +6,8 @@ permalink: /kb/032/Q32866/
 
 ## Q32866: Entering and Displaying Control Characters in TELNET or EDLIN
 
+{% raw %}
+
 	Article: Q32866
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:2.x3.x,4.x,5.x
@@ -88,3 +90,5 @@ permalink: /kb/032/Q32866/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/057/Q57367/
 
 ## Q57367: COMMON SHARED Must Be in Order in User Interface Toolbox
 
+{% raw %}
+
 	Article: Q57367
 	Product(s): See article
 	Version(s): 7.00
@@ -84,3 +86,5 @@ permalink: /kb/057/Q57367/
 	
 	   MenuInit
 	   WindowInit
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97716/
 
 ## Q97716: FltSim: Gravis MouseStick Doesn't Work Correctly
 
+{% raw %}
+
 	Article: Q97716
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:4.0
@@ -61,3 +63,5 @@ permalink: /kb/097/Q97716/
 	
 	=============================================================================
 	
+
+{% endraw %}

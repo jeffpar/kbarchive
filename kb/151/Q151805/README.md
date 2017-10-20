@@ -6,6 +6,8 @@ permalink: /kb/151/Q151805/
 
 ## Q151805: Files Appear Twice in the Recycle Bin
 
+{% raw %}
+
 	Article: Q151805
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -48,3 +50,5 @@ permalink: /kb/151/Q151805/
 	
 	=============================================================================
 	
+
+{% endraw %}

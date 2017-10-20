@@ -6,6 +6,8 @@ permalink: /kb/236/Q236036/
 
 ## Q236036: SMS: NetDisc Fails to Discover Static IP Addresses Reserved and
 
+{% raw %}
+
 	Article: Q236036
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -73,3 +75,5 @@ permalink: /kb/236/Q236036/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/040/Q40184/
 
 ## Q40184: NMAKE Builds Only the First Target in Makefile
 
+{% raw %}
+
 	Article: Q40184
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/040/Q40184/
 	
 	=============================================================================
 	
+
+{% endraw %}

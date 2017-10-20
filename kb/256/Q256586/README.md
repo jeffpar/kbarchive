@@ -6,6 +6,8 @@ permalink: /kb/256/Q256586/
 
 ## Q256586: SMS: Backup May Delete Contents of Target Folder
 
+{% raw %}
+
 	Article: Q256586
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -69,3 +71,5 @@ permalink: /kb/256/Q256586/
 	
 	=============================================================================
 	
+
+{% endraw %}

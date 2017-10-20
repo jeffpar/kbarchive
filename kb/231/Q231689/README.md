@@ -6,6 +6,8 @@ permalink: /kb/231/Q231689/
 
 ## Q231689: BUG: Moving Controls on a Form Triggers Form_MouseMove Event
 
+{% raw %}
+
 	Article: Q231689
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -117,3 +119,5 @@ permalink: /kb/231/Q231689/
 	
 	=============================================================================
 	
+
+{% endraw %}

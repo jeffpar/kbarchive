@@ -6,6 +6,8 @@ permalink: /kb/129/Q129805/
 
 ## Q129805: Artist: Pictures Print Black &amp; White, Not Grayscale or Color
 
+{% raw %}
+
 	Article: Q129805
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -96,3 +98,5 @@ permalink: /kb/129/Q129805/
 	
 	=============================================================================
 	
+
+{% endraw %}

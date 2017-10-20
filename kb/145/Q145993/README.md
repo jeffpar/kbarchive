@@ -6,6 +6,8 @@ permalink: /kb/145/Q145993/
 
 ## Q145993: BUG: Crystal Reports AppWizard Disables Multi-Language Support
 
+{% raw %}
+
 	Article: Q145993
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -72,3 +74,5 @@ permalink: /kb/145/Q145993/
 	
 	=============================================================================
 	
+
+{% endraw %}

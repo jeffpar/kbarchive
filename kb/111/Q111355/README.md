@@ -6,6 +6,8 @@ permalink: /kb/111/Q111355/
 
 ## Q111355: Repair /S Prompts for Old Emergency Repair Disk
 
+{% raw %}
+
 	Article: Q111355
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -54,3 +56,5 @@ permalink: /kb/111/Q111355/
 	
 	=============================================================================
 	
+
+{% endraw %}

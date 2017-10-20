@@ -6,6 +6,8 @@ permalink: /kb/167/Q167617/
 
 ## Q167617: WD97: Table Borders Misaligned When Printed to 9-Pin Printer
 
+{% raw %}
+
 	Article: Q167617
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -274,3 +276,5 @@ permalink: /kb/167/Q167617/
 	
 	=============================================================================
 	
+
+{% endraw %}

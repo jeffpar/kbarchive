@@ -6,6 +6,8 @@ permalink: /kb/168/Q168475/
 
 ## Q168475: How to Create a Base Profile for All Users
 
+{% raw %}
+
 	Article: Q168475
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -88,3 +90,5 @@ permalink: /kb/168/Q168475/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134717/
 
 ## Q134717: SMS: Query Results Display Only First Data Record
 
+{% raw %}
+
 	Article: Q134717
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -71,3 +73,5 @@ permalink: /kb/134/Q134717/
 	
 	=============================================================================
 	
+
+{% endraw %}

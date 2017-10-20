@@ -6,6 +6,8 @@ permalink: /kb/217/Q217176/
 
 ## Q217176: HOWTO: Display and Use the OLE Insert Object Dialog Box in VB
 
+{% raw %}
+
 	Article: Q217176
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -213,3 +215,5 @@ permalink: /kb/217/Q217176/
 	
 	=============================================================================
 	
+
+{% endraw %}

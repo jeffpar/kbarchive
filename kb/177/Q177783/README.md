@@ -6,6 +6,8 @@ permalink: /kb/177/Q177783/
 
 ## Q177783: XADM: Temp Files Remain After OAB Generation Fails
 
+{% raw %}
+
 	Article: Q177783
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -82,3 +84,5 @@ permalink: /kb/177/Q177783/
 	
 	=============================================================================
 	
+
+{% endraw %}

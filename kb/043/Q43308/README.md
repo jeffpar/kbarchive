@@ -6,6 +6,8 @@ permalink: /kb/043/Q43308/
 
 ## Q43308: Differences among QuickBASIC Versions 2.00, 3.00, 4.00, 4.50
 
+{% raw %}
+
 	Article: Q43308
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -134,3 +136,5 @@ permalink: /kb/043/Q43308/
 	separate directories. QuickBASIC searches the correct directory after
 	you set the new default search path. You can set default paths for
 	executable, include, library, and help files.
+
+{% endraw %}

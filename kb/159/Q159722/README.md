@@ -6,6 +6,8 @@ permalink: /kb/159/Q159722/
 
 ## Q159722: Err Msg: The User Has Not Been Granted the Requested Logon...
 
+{% raw %}
+
 	Article: Q159722
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -50,3 +52,5 @@ permalink: /kb/159/Q159722/
 	
 	=============================================================================
 	
+
+{% endraw %}

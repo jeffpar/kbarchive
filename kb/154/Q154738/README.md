@@ -6,6 +6,8 @@ permalink: /kb/154/Q154738/
 
 ## Q154738: &quot;Connect Network Drive&quot; Caches First Credentials Supplied
 
+{% raw %}
+
 	Article: Q154738
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -81,3 +83,5 @@ permalink: /kb/154/Q154738/
 	
 	=============================================================================
 	
+
+{% endraw %}

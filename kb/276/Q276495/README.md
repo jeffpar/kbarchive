@@ -6,6 +6,8 @@ permalink: /kb/276/Q276495/
 
 ## Q276495: SMS: RC Disabled When Client Upgraded During Move
 
+{% raw %}
+
 	Article: Q276495
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -79,3 +81,5 @@ permalink: /kb/276/Q276495/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/316/Q316011/
 
 ## Q316011: HOW TO: Programmatically Add Meta Information to All Pages
 
+{% raw %}
+
 	Article: Q316011
 	Product(s): Word Front Page
 	Version(s): 
@@ -381,3 +383,5 @@ permalink: /kb/316/Q316011/
 	
 	=============================================================================
 	
+
+{% endraw %}

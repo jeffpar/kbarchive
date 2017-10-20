@@ -6,6 +6,8 @@ permalink: /kb/155/Q155302/
 
 ## Q155302: XCON: Event Error 3120: A Resource Limit has Been Reached
 
+{% raw %}
+
 	Article: Q155302
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -86,3 +88,5 @@ permalink: /kb/155/Q155302/
 	
 	=============================================================================
 	
+
+{% endraw %}

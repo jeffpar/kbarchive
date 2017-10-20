@@ -6,6 +6,8 @@ permalink: /kb/197/Q197806/
 
 ## Q197806: &quot;Ordinal Not Found&quot; Error While Installing on NT-Based Computer
 
+{% raw %}
+
 	Article: Q197806
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -59,3 +61,5 @@ permalink: /kb/197/Q197806/
 	
 	=============================================================================
 	
+
+{% endraw %}

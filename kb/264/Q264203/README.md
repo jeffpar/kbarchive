@@ -6,6 +6,8 @@ permalink: /kb/264/Q264203/
 
 ## Q264203: Enumdisk1.exe: Enumdisk Sample for Enumerating Disk Devices
 
+{% raw %}
+
 	Article: Q264203
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:
@@ -148,3 +150,5 @@ permalink: /kb/264/Q264203/
 	
 	=============================================================================
 	
+
+{% endraw %}

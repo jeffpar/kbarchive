@@ -6,6 +6,8 @@ permalink: /kb/131/Q131994/
 
 ## Q131994: HOWTO: How to Use MFC to Step Through Child Windows of the MDICl
 
+{% raw %}
+
 	Article: Q131994
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -192,3 +194,5 @@ permalink: /kb/131/Q131994/
 	
 	=============================================================================
 	
+
+{% endraw %}

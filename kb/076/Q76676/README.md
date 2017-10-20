@@ -6,6 +6,8 @@ permalink: /kb/076/Q76676/
 
 ## Q76676: Differences Between Task Handles and Instance Handles
 
+{% raw %}
+
 	Article: Q76676
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -68,3 +70,5 @@ permalink: /kb/076/Q76676/
 	
 	=============================================================================
 	
+
+{% endraw %}

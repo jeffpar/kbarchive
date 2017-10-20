@@ -6,6 +6,8 @@ permalink: /kb/108/Q108067/
 
 ## Q108067: PC DirSync: Requestor Inactive for Longer Than Update Window
 
+{% raw %}
+
 	Article: Q108067
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a,3.2,3.5
@@ -84,3 +86,5 @@ permalink: /kb/108/Q108067/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150451/
 
 ## Q150451: Network Drive Buttons Missing from Windows Explorer Toolbar
 
+{% raw %}
+
 	Article: Q150451
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -78,3 +80,5 @@ permalink: /kb/150/Q150451/
 	
 	=============================================================================
 	
+
+{% endraw %}

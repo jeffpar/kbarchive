@@ -6,6 +6,8 @@ permalink: /kb/163/Q163389/
 
 ## Q163389: &quot;Error Reading Disk...&quot; Unpacking Multi-Disk Pack And Go File
 
+{% raw %}
+
 	Article: Q163389
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -79,3 +81,5 @@ permalink: /kb/163/Q163389/
 	
 	=============================================================================
 	
+
+{% endraw %}

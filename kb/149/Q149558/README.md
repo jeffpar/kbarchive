@@ -6,6 +6,8 @@ permalink: /kb/149/Q149558/
 
 ## Q149558: HOWTO: Create an .MDB File for Microsoft Access Databases
 
+{% raw %}
+
 	Article: Q149558
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,3.5,3.51,3.6
@@ -124,3 +126,5 @@ permalink: /kb/149/Q149558/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/095/Q95103/
 
 ## Q95103: QBasic Supports Only COM1 and COM2
 
+{% raw %}
+
 	Article: Q95103
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -53,3 +55,5 @@ permalink: /kb/095/Q95103/
 	
 	=============================================================================
 	
+
+{% endraw %}

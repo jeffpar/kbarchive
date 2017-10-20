@@ -6,6 +6,8 @@ permalink: /kb/074/Q74941/
 
 ## Q74941: Determining Free Memory in Windows Enhanced Mode
 
+{% raw %}
+
 	Article: Q74941
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -99,3 +101,5 @@ permalink: /kb/074/Q74941/
 	
 	=============================================================================
 	
+
+{% endraw %}

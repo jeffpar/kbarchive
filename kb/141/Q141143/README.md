@@ -6,6 +6,8 @@ permalink: /kb/141/Q141143/
 
 ## Q141143: How to Determine the Active &amp; Previously Active Forms
 
+{% raw %}
+
 	Article: Q141143
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -91,3 +93,5 @@ permalink: /kb/141/Q141143/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87668/
 
 ## Q87668: FoxBASE+ Error Messages: A - E
 
+{% raw %}
+
 	Article: Q87668
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.17
@@ -109,3 +111,5 @@ permalink: /kb/087/Q87668/
 	
 	=============================================================================
 	
+
+{% endraw %}

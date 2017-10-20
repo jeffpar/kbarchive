@@ -6,6 +6,8 @@ permalink: /kb/233/Q233464/
 
 ## Q233464: Business Planner: Keyboard Commands Do Not Function
 
+{% raw %}
+
 	Article: Q233464
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -63,3 +65,5 @@ permalink: /kb/233/Q233464/
 	
 	=============================================================================
 	
+
+{% endraw %}

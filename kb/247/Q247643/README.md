@@ -6,6 +6,8 @@ permalink: /kb/247/Q247643/
 
 ## Q247643: HTTP/1.1 Error 501 - Not Implemented
 
+{% raw %}
+
 	Article: Q247643
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -90,3 +92,5 @@ permalink: /kb/247/Q247643/
 	
 	=============================================================================
 	
+
+{% endraw %}

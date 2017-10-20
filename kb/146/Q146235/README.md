@@ -6,6 +6,8 @@ permalink: /kb/146/Q146235/
 
 ## Q146235: Panasonic CR-562 CD-ROM Drive Has Multiple Icons
 
+{% raw %}
+
 	Article: Q146235
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -50,3 +52,5 @@ permalink: /kb/146/Q146235/
 	
 	=============================================================================
 	
+
+{% endraw %}

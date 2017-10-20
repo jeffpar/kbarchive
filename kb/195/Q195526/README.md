@@ -6,6 +6,8 @@ permalink: /kb/195/Q195526/
 
 ## Q195526: HOWTO: Retrieve Primary Keys for SQL Server Tables
 
+{% raw %}
+
 	Article: Q195526
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0
@@ -144,3 +146,5 @@ permalink: /kb/195/Q195526/
 	
 	=============================================================================
 	
+
+{% endraw %}

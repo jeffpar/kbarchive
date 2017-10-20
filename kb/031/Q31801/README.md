@@ -6,6 +6,8 @@ permalink: /kb/031/Q31801/
 
 ## Q31801: Editor Utilities DOS Version 2.x and 8086/8 Corrections
 
+{% raw %}
+
 	Article: Q31801
 	Product(s): See article
 	Version(s): 1.00
@@ -32,3 +34,5 @@ permalink: /kb/031/Q31801/
 	
 	This application note can be obtained by calling Microsoft Product
 	Support Services at (206) 454-2030.
+
+{% endraw %}

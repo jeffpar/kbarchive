@@ -6,6 +6,8 @@ permalink: /kb/187/Q187144/
 
 ## Q187144: Options Set in Outlook Are Not Used from the Send To Menu
 
+{% raw %}
+
 	Article: Q187144
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -42,3 +44,5 @@ permalink: /kb/187/Q187144/
 	
 	=============================================================================
 	
+
+{% endraw %}

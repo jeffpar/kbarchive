@@ -6,6 +6,8 @@ permalink: /kb/258/Q258958/
 
 ## Q258958: XADM: Move Server Wizard Won't Update Mailbox Folder Permissions
 
+{% raw %}
+
 	Article: Q258958
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2,5.5 SP3
@@ -108,3 +110,5 @@ permalink: /kb/258/Q258958/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66843/
 
 ## Q66843: ASD: 747 Panel Checklist Is Stuck on an Action
 
+{% raw %}
+
 	Article: Q66843
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/066/Q66843/
 	
 	=============================================================================
 	
+
+{% endraw %}

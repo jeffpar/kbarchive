@@ -6,6 +6,8 @@ permalink: /kb/137/Q137061/
 
 ## Q137061: DOCERR: DO FORM LINKED Clause Does Not Require a Variable
 
+{% raw %}
+
 	Article: Q137061
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -49,3 +51,5 @@ permalink: /kb/137/Q137061/
 	
 	=============================================================================
 	
+
+{% endraw %}

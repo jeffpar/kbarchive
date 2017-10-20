@@ -6,6 +6,8 @@ permalink: /kb/067/Q67878/
 
 ## Q67878: .EXE Header Must Be Marked for OS/2 Long Filename Support
 
+{% raw %}
+
 	Article: Q67878
 	Product(s): See article
 	Version(s): 6.00 6.00a
@@ -30,3 +32,5 @@ permalink: /kb/067/Q67878/
 	   specifying the optional attribute <NEWFILES>:
 	
 	      NAME [appname] [apptype] NEWFILES
+
+{% endraw %}

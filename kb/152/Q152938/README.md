@@ -6,6 +6,8 @@ permalink: /kb/152/Q152938/
 
 ## Q152938: XADM: Checking Knowledge Consistency Msg Freezes at 33 Percent
 
+{% raw %}
+
 	Article: Q152938
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/152/Q152938/
 	
 	=============================================================================
 	
+
+{% endraw %}

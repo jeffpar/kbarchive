@@ -6,6 +6,8 @@ permalink: /kb/187/Q187619/
 
 ## Q187619: AFC Programmer's Guide Comments and Corrections
 
+{% raw %}
+
 	Article: Q187619
 	Product(s): Microsoft Press
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/187/Q187619/
 	
 	=============================================================================
 	
+
+{% endraw %}

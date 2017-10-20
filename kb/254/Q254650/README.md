@@ -6,6 +6,8 @@ permalink: /kb/254/Q254650/
 
 ## Q254650: HTML Documents Tagged for Robot Exclusion Appear in Query Result
 
+{% raw %}
+
 	Article: Q254650
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:; winnt:2.0
@@ -74,3 +76,5 @@ permalink: /kb/254/Q254650/
 	
 	=============================================================================
 	
+
+{% endraw %}

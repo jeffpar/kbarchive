@@ -6,6 +6,8 @@ permalink: /kb/159/Q159212/
 
 ## Q159212: Office 95 Used on Windows NT or Windows 95 with Profiles
 
+{% raw %}
+
 	Article: Q159212
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:7.0,95; winnt:3.51,4.0
@@ -227,3 +229,5 @@ permalink: /kb/159/Q159212/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179934/
 
 ## Q179934: WD97: How to View Multiple Pages Using Zoom on a Toolbar
 
+{% raw %}
+
 	Article: Q179934
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -125,3 +127,5 @@ permalink: /kb/179/Q179934/
 	
 	=============================================================================
 	
+
+{% endraw %}

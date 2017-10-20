@@ -6,6 +6,8 @@ permalink: /kb/121/Q121395/
 
 ## Q121395: Running NetBEUI in Real Mode with WFW 3.11
 
+{% raw %}
+
 	Article: Q121395
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11; WINDOWS:3.11
@@ -57,3 +59,5 @@ permalink: /kb/121/Q121395/
 	
 	=============================================================================
 	
+
+{% endraw %}

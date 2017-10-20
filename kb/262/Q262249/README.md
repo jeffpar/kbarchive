@@ -6,6 +6,8 @@ permalink: /kb/262/Q262249/
 
 ## Q262249: StarLancer: Cannot Play Game in Direct 3-D Render Mode
 
+{% raw %}
+
 	Article: Q262249
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -62,3 +64,5 @@ permalink: /kb/262/Q262249/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/305/Q305746/
 
 ## Q305746: BUG: &quot;Access Denied&quot; Err Msg w/DCOM Activation for ATL Servers
 
+{% raw %}
+
 	Article: Q305746
 	Product(s): Microsoft Programming Utilities
 	Version(s): 2000,4.0
@@ -92,3 +94,5 @@ permalink: /kb/305/Q305746/
 	
 	=============================================================================
 	
+
+{% endraw %}

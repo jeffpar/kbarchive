@@ -6,6 +6,8 @@ permalink: /kb/189/Q189653/
 
 ## Q189653: XWEB:  OWA Directory Listing Denied Error
 
+{% raw %}
+
 	Article: Q189653
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -111,3 +113,5 @@ permalink: /kb/189/Q189653/
 	
 	=============================================================================
 	
+
+{% endraw %}

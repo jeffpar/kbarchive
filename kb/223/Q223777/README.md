@@ -6,6 +6,8 @@ permalink: /kb/223/Q223777/
 
 ## Q223777: XCLN: Voting Buttons Disappear when Sending Message to CR
 
+{% raw %}
+
 	Article: Q223777
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -62,3 +64,5 @@ permalink: /kb/223/Q223777/
 	
 	=============================================================================
 	
+
+{% endraw %}

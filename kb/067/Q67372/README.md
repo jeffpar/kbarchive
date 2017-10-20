@@ -6,6 +6,8 @@ permalink: /kb/067/Q67372/
 
 ## Q67372: Recursive CALL in 7.0 .EXE Forgets Parent's Passed Near String
 
+{% raw %}
+
 	Article: Q67372
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -49,3 +51,5 @@ permalink: /kb/067/Q67372/
 	      >B               >B
 	      >B               >B
 	      >                >A
+
+{% endraw %}

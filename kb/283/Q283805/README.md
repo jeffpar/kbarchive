@@ -6,6 +6,8 @@ permalink: /kb/283/Q283805/
 
 ## Q283805: Err Msg: You Do Not Have Appropriate Permission to Perform...
 
+{% raw %}
+
 	Article: Q283805
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/283/Q283805/
 	
 	=============================================================================
 	
+
+{% endraw %}

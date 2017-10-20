@@ -6,6 +6,8 @@ permalink: /kb/135/Q135330/
 
 ## Q135330: FIX: StatusBarText Does Not Change with SetFocus Method
 
+{% raw %}
+
 	Article: Q135330
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -75,3 +77,5 @@ permalink: /kb/135/Q135330/
 	
 	=============================================================================
 	
+
+{% endraw %}

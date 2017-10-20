@@ -6,6 +6,8 @@ permalink: /kb/166/Q166561/
 
 ## Q166561: XFOR: CCMC Not Handling Bad Messages Correctly
 
+{% raw %}
+
 	Article: Q166561
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -58,3 +60,5 @@ permalink: /kb/166/Q166561/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196242/
 
 ## Q196242: SNA Print Server May Leak Memory
 
+{% raw %}
+
 	Article: Q196242
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,4.0
@@ -78,3 +80,5 @@ permalink: /kb/196/Q196242/
 	
 	=============================================================================
 	
+
+{% endraw %}

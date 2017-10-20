@@ -6,6 +6,8 @@ permalink: /kb/176/Q176038/
 
 ## Q176038: XCLN: Attachments Show {EMBED Unknown} Instead of Icon
 
+{% raw %}
+
 	Article: Q176038
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -99,3 +101,5 @@ permalink: /kb/176/Q176038/
 	
 	=============================================================================
 	
+
+{% endraw %}

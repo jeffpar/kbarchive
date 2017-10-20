@@ -6,6 +6,8 @@ permalink: /kb/023/Q23867/
 
 ## Q23867: Sending 1Ah to a Printer Requires Setting &quot;Raw&quot; Mode
 
+{% raw %}
+
 	Article: Q23867
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10 6.00 6.00a
@@ -51,3 +53,5 @@ permalink: /kb/023/Q23867/
 	   outregs.x.ax = 0x4401;
 	   int86(0x21, &outregs, &inregs);
 	}
+
+{% endraw %}

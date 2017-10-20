@@ -6,6 +6,8 @@ permalink: /kb/184/Q184512/
 
 ## Q184512: SMS: Despooler Refreshes Every File in Package Directory
 
+{% raw %}
+
 	Article: Q184512
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -66,3 +68,5 @@ permalink: /kb/184/Q184512/
 	
 	=============================================================================
 	
+
+{% endraw %}

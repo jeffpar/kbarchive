@@ -6,6 +6,8 @@ permalink: /kb/136/Q136786/
 
 ## Q136786: XCON: IMC Sends NDR and OOF Messages to Bulk Mailing Lists
 
+{% raw %}
+
 	Article: Q136786
 	Product(s): Microsoft Exchange
 	Version(s): 4.00
@@ -52,3 +54,5 @@ permalink: /kb/136/Q136786/
 	
 	=============================================================================
 	
+
+{% endraw %}

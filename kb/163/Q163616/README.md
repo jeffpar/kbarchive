@@ -6,6 +6,8 @@ permalink: /kb/163/Q163616/
 
 ## Q163616: Cannot Unlock Workstation If Password Change Cancelled
 
+{% raw %}
+
 	Article: Q163616
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/163/Q163616/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/275/Q275714/
 
 ## Q275714: XADM: Information Store Stops with Multipart or Mixed Message
 
+{% raw %}
+
 	Article: Q275714
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -145,3 +147,5 @@ permalink: /kb/275/Q275714/
 	
 	=============================================================================
 	
+
+{% endraw %}

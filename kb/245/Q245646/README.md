@@ -6,6 +6,8 @@ permalink: /kb/245/Q245646/
 
 ## Q245646: DNS Stops Responding to UDP Name Queries
 
+{% raw %}
+
 	Article: Q245646
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/245/Q245646/
 	
 	=============================================================================
 	
+
+{% endraw %}

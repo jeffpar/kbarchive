@@ -6,6 +6,8 @@ permalink: /kb/064/Q64498/
 
 ## Q64498: How to Define a String Array in FIELDs in a FOR...NEXT Loop
 
+{% raw %}
+
 	Article: Q64498
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -82,3 +84,5 @@ permalink: /kb/064/Q64498/
 	Knowledge Base using the following words:
 	
 	   RANDOM and BINARY and PUT and Array and TYPE
+
+{% endraw %}

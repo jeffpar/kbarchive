@@ -6,6 +6,8 @@ permalink: /kb/175/Q175510/
 
 ## Q175510: SAMPLE: VB5DCOM.EXE: Using Callbacks and WithEvents with DCOM
 
+{% raw %}
+
 	Article: Q175510
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -113,3 +115,5 @@ permalink: /kb/175/Q175510/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235779/
 
 ## Q235779: SMS: SMSMAN Does Not Automatically Detect Server
 
+{% raw %}
+
 	Article: Q235779
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -63,3 +65,5 @@ permalink: /kb/235/Q235779/
 	
 	=============================================================================
 	
+
+{% endraw %}

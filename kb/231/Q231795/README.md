@@ -6,6 +6,8 @@ permalink: /kb/231/Q231795/
 
 ## Q231795: How to Automatically Close a NetBIOS Session
 
+{% raw %}
+
 	Article: Q231795
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/231/Q231795/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/044/Q44130/
 
 ## Q44130: Modifications for an Existing Make File Used with MAKE
 
+{% raw %}
+
 	Article: Q44130
 	Product(s): See article
 	Version(s): 1.00   | 1.10
@@ -52,3 +54,5 @@ permalink: /kb/044/Q44130/
 	
 	Without the pseudotarget, NMAKE tests only the first descriptor block
 	and ignores any following descriptor block.
+
+{% endraw %}

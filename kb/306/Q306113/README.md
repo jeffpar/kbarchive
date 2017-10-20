@@ -6,6 +6,8 @@ permalink: /kb/306/Q306113/
 
 ## Q306113: PRB: Temp Folder with System Attribute Causes Errors in VFP
 
+{% raw %}
+
 	Article: Q306113
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0,7.0
@@ -90,3 +92,5 @@ permalink: /kb/306/Q306113/
 	
 	=============================================================================
 	
+
+{% endraw %}

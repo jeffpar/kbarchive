@@ -6,6 +6,8 @@ permalink: /kb/298/Q298798/
 
 ## Q298798: BUG: Drag-and-Drop w/ Left Mouse Button Does Not Work on Win2K
 
+{% raw %}
+
 	Article: Q298798
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -108,3 +110,5 @@ permalink: /kb/298/Q298798/
 	
 	=============================================================================
 	
+
+{% endraw %}

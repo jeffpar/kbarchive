@@ -6,6 +6,8 @@ permalink: /kb/074/Q74788/
 
 ## Q74788: Using Near and Far Pointers with C Run-Time Functions
 
+{% raw %}
+
 	Article: Q74788
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -97,3 +99,5 @@ permalink: /kb/074/Q74788/
 	
 	=============================================================================
 	
+
+{% endraw %}

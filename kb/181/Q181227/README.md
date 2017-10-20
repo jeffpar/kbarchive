@@ -6,6 +6,8 @@ permalink: /kb/181/Q181227/
 
 ## Q181227: FP: Invalid Page URL Error Saving Page in FrontPage Editor
 
+{% raw %}
+
 	Article: Q181227
 	Product(s): Word Front Page
 	Version(s): WINDOWS:1.1,97
@@ -79,3 +81,5 @@ permalink: /kb/181/Q181227/
 	
 	=============================================================================
 	
+
+{% endraw %}

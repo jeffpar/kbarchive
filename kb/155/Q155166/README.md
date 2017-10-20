@@ -6,6 +6,8 @@ permalink: /kb/155/Q155166/
 
 ## Q155166: Fonts That Do Not Change After Reapplying Slide Master
 
+{% raw %}
+
 	Article: Q155166
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,7.0
@@ -63,3 +65,5 @@ permalink: /kb/155/Q155166/
 	
 	=============================================================================
 	
+
+{% endraw %}

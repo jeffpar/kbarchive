@@ -6,6 +6,8 @@ permalink: /kb/131/Q131917/
 
 ## Q131917: PC Win: Alternatives to CHKMMF
 
+{% raw %}
+
 	Article: Q131917
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -61,3 +63,5 @@ permalink: /kb/131/Q131917/
 	
 	=============================================================================
 	
+
+{% endraw %}

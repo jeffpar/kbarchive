@@ -6,6 +6,8 @@ permalink: /kb/140/Q140295/
 
 ## Q140295: How to Replace a Grid Cell's Value with Previous Cell's Value
 
+{% raw %}
+
 	Article: Q140295
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -82,3 +84,5 @@ permalink: /kb/140/Q140295/
 	
 	=============================================================================
 	
+
+{% endraw %}

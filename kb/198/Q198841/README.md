@@ -6,6 +6,8 @@ permalink: /kb/198/Q198841/
 
 ## Q198841: XFOR: Store Notification for CALCON May Stop
 
+{% raw %}
+
 	Article: Q198841
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2,5.5 SP3
@@ -83,3 +85,5 @@ permalink: /kb/198/Q198841/
 	
 	=============================================================================
 	
+
+{% endraw %}

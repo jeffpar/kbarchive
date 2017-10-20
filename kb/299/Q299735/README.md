@@ -6,6 +6,8 @@ permalink: /kb/299/Q299735/
 
 ## Q299735: Train Simulator: Numeric Keypad Commands Do Not Work as Expected
 
+{% raw %}
+
 	Article: Q299735
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -47,3 +49,5 @@ permalink: /kb/299/Q299735/
 	
 	=============================================================================
 	
+
+{% endraw %}

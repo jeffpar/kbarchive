@@ -6,6 +6,8 @@ permalink: /kb/192/Q192783/
 
 ## Q192783: BUG: PDW Does Not Include CLSID in Default HTML Page for IE 3.X
 
+{% raw %}
+
 	Article: Q192783
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -123,3 +125,5 @@ permalink: /kb/192/Q192783/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/081/Q81645/
 
 ## Q81645: BlueMAX Install May Hang System with Windows 3.1
 
+{% raw %}
+
 	Article: Q81645
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -81,3 +83,5 @@ permalink: /kb/081/Q81645/
 	
 	=============================================================================
 	
+
+{% endraw %}

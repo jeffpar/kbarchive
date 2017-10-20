@@ -6,6 +6,8 @@ permalink: /kb/194/Q194669/
 
 ## Q194669: HOWTO: Retrieve Extended Stored Procedures from SQL Server
 
+{% raw %}
+
 	Article: Q194669
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -85,3 +87,5 @@ permalink: /kb/194/Q194669/
 	
 	=============================================================================
 	
+
+{% endraw %}

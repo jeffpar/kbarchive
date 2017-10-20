@@ -6,6 +6,8 @@ permalink: /kb/152/Q152792/
 
 ## Q152792: FIX: Multiple ActiveX Control Containers Under Win32s Problems
 
+{% raw %}
+
 	Article: Q152792
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -72,3 +74,5 @@ permalink: /kb/152/Q152792/
 	
 	=============================================================================
 	
+
+{% endraw %}

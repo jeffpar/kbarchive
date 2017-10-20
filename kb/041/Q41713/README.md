@@ -6,6 +6,8 @@ permalink: /kb/041/Q41713/
 
 ## Q41713: Watching a Character Array in QuickC Version 2.00
 
+{% raw %}
+
 	Article: Q41713
 	Product(s): See article
 	Version(s): 2.00
@@ -74,3 +76,5 @@ permalink: /kb/041/Q41713/
 	{
 	    strcpy( array1, "Array1" );
 	}
+
+{% endraw %}

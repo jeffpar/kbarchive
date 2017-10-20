@@ -6,6 +6,8 @@ permalink: /kb/138/Q138044/
 
 ## Q138044: How to Add an Existing Form to a FormSet
 
+{% raw %}
+
 	Article: Q138044
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/138/Q138044/
 	
 	=============================================================================
 	
+
+{% endraw %}

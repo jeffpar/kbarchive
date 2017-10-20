@@ -6,6 +6,8 @@ permalink: /kb/137/Q137869/
 
 ## Q137869: Error Message: System Error - Network Error on Drive &lt;X&gt;
 
+{% raw %}
+
 	Article: Q137869
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -66,3 +68,5 @@ permalink: /kb/137/Q137869/
 	
 	=============================================================================
 	
+
+{% endraw %}

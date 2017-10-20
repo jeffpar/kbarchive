@@ -6,6 +6,8 @@ permalink: /kb/234/Q234542/
 
 ## Q234542: SMTP and NNTP Are Updated with New Files by SP5
 
+{% raw %}
+
 	Article: Q234542
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -97,3 +99,5 @@ permalink: /kb/234/Q234542/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198362/
 
 ## Q198362: WD97: New Menu on Custom Toolbar Fails If Copied to Template
 
+{% raw %}
+
 	Article: Q198362
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/198/Q198362/
 	
 	=============================================================================
 	
+
+{% endraw %}

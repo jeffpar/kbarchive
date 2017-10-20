@@ -6,6 +6,8 @@ permalink: /kb/122/Q122497/
 
 ## Q122497: Closing a Folder Before Setup Is Complete Hangs Computer
 
+{% raw %}
+
 	Article: Q122497
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/122/Q122497/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164432/
 
 ## Q164432: Accented Greek Characters Are Not Being Created
 
+{% raw %}
+
 	Article: Q164432
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/164/Q164432/
 	
 	=============================================================================
 	
+
+{% endraw %}

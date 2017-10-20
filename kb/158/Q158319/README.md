@@ -6,6 +6,8 @@ permalink: /kb/158/Q158319/
 
 ## Q158319: FIX: Printing from Report Designer Gets Error Message in VFP 5
 
+{% raw %}
+
 	Article: Q158319
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -72,3 +74,5 @@ permalink: /kb/158/Q158319/
 	
 	=============================================================================
 	
+
+{% endraw %}

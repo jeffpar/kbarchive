@@ -6,6 +6,8 @@ permalink: /kb/076/Q76760/
 
 ## Q76760: Productivity Pack: &#91;COLORS&#93; DimmedText= Does Not Work
 
+{% raw %}
+
 	Article: Q76760
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -57,3 +59,5 @@ permalink: /kb/076/Q76760/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146530/
 
 ## Q146530: XCLN: Modified OLE Obj. Reverts to Original After Copied
 
+{% raw %}
+
 	Article: Q146530
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -46,3 +48,5 @@ permalink: /kb/146/Q146530/
 	
 	=============================================================================
 	
+
+{% endraw %}

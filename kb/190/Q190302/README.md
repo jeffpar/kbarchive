@@ -6,6 +6,8 @@ permalink: /kb/190/Q190302/
 
 ## Q190302: SMS: Remote Control Does Not Log Security to the Event Log
 
+{% raw %}
+
 	Article: Q190302
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -63,3 +65,5 @@ permalink: /kb/190/Q190302/
 	
 	=============================================================================
 	
+
+{% endraw %}

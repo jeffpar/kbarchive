@@ -6,6 +6,8 @@ permalink: /kb/194/Q194741/
 
 ## Q194741: StarQuest ODBC Sessions Through SNA Server Fail When Using IIS
 
+{% raw %}
+
 	Article: Q194741
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP1
@@ -95,3 +97,5 @@ permalink: /kb/194/Q194741/
 	
 	=============================================================================
 	
+
+{% endraw %}

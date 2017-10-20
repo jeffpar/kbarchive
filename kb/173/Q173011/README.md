@@ -6,6 +6,8 @@ permalink: /kb/173/Q173011/
 
 ## Q173011: HOWTO: Add and Remove Network Connections
 
+{% raw %}
+
 	Article: Q173011
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -192,3 +194,5 @@ permalink: /kb/173/Q173011/
 	
 	=============================================================================
 	
+
+{% endraw %}

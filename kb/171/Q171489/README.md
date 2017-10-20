@@ -6,6 +6,8 @@ permalink: /kb/171/Q171489/
 
 ## Q171489: FIX: Use of Implements and Public Constants Crashes Compiler
 
+{% raw %}
+
 	Article: Q171489
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -130,3 +132,5 @@ permalink: /kb/171/Q171489/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163256/
 
 ## Q163256: WD97: Updated WBODBC Files Available
 
+{% raw %}
+
 	Article: Q163256
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -89,3 +91,5 @@ permalink: /kb/163/Q163256/
 	
 	=============================================================================
 	
+
+{% endraw %}

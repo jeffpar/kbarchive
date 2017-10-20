@@ -6,6 +6,8 @@ permalink: /kb/139/Q139167/
 
 ## Q139167: System Agent Icon Does Not Appear on Taskbar
 
+{% raw %}
+
 	Article: Q139167
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -70,3 +72,5 @@ permalink: /kb/139/Q139167/
 	
 	=============================================================================
 	
+
+{% endraw %}

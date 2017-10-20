@@ -6,6 +6,8 @@ permalink: /kb/045/Q45183/
 
 ## Q45183: Incorrect Handling of SP Can Cause CodeView to Corrupt Stack
 
+{% raw %}
+
 	Article: Q45183
 	Product(s): See article
 	Version(s): 2.20 2.30 | 2.20 2.30
@@ -23,3 +25,5 @@ permalink: /kb/045/Q45183/
 	would still have to increment the stack pointer to keep your program
 	from overwriting your variables when you make a call, or with any
 	operation that pushes values on the stack.
+
+{% endraw %}

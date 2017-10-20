@@ -6,6 +6,8 @@ permalink: /kb/246/Q246049/
 
 ## Q246049: Streets &amp; Trips 2000 Err Msg: This Program Can No Longer Run
 
+{% raw %}
+
 	Article: Q246049
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -134,3 +136,5 @@ permalink: /kb/246/Q246049/
 	
 	=============================================================================
 	
+
+{% endraw %}

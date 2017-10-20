@@ -6,6 +6,8 @@ permalink: /kb/151/Q151362/
 
 ## Q151362: Rcmd.exe Err Msg: Failed to Connect Error 1326
 
+{% raw %}
+
 	Article: Q151362
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -63,3 +65,5 @@ permalink: /kb/151/Q151362/
 	
 	=============================================================================
 	
+
+{% endraw %}

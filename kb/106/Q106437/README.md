@@ -6,6 +6,8 @@ permalink: /kb/106/Q106437/
 
 ## Q106437: The F1 Key in Chat and NetWatcher May Not Open Help
 
+{% raw %}
+
 	Article: Q106437
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/106/Q106437/
 	
 	=============================================================================
 	
+
+{% endraw %}

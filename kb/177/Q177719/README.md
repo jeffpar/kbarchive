@@ -6,6 +6,8 @@ permalink: /kb/177/Q177719/
 
 ## Q177719: How to Identify Winsock 2.0 Run-Time Components for Windows 95
 
+{% raw %}
+
 	Article: Q177719
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95
@@ -126,3 +128,5 @@ permalink: /kb/177/Q177719/
 	
 	=============================================================================
 	
+
+{% endraw %}

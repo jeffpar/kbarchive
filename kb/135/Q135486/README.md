@@ -6,6 +6,8 @@ permalink: /kb/135/Q135486/
 
 ## Q135486: PC DirSync: Err Msg: Fatal 39 Error Generating TID
 
+{% raw %}
+
 	Article: Q135486
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -65,3 +67,5 @@ permalink: /kb/135/Q135486/
 	
 	=============================================================================
 	
+
+{% endraw %}

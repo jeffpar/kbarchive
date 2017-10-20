@@ -6,6 +6,8 @@ permalink: /kb/166/Q166057/
 
 ## Q166057: WV: &quot;What's This?&quot; Doesn't Present Word Viewer Help
 
+{% raw %}
+
 	Article: Q166057
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -57,3 +59,5 @@ permalink: /kb/166/Q166057/
 	
 	=============================================================================
 	
+
+{% endraw %}

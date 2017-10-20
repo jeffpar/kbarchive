@@ -6,6 +6,8 @@ permalink: /kb/134/Q134654/
 
 ## Q134654: Macintosh Client Error Attempting to Log On to Windows NT
 
+{% raw %}
+
 	Article: Q134654
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -67,3 +69,5 @@ permalink: /kb/134/Q134654/
 	
 	=============================================================================
 	
+
+{% endraw %}

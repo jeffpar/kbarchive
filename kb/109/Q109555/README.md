@@ -6,6 +6,8 @@ permalink: /kb/109/Q109555/
 
 ## Q109555: Virtual Circuit Error 3193
 
+{% raw %}
+
 	Article: Q109555
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -84,3 +86,5 @@ permalink: /kb/109/Q109555/
 	
 	=============================================================================
 	
+
+{% endraw %}

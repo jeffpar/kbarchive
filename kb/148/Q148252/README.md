@@ -6,6 +6,8 @@ permalink: /kb/148/Q148252/
 
 ## Q148252: Bookshelf 94: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q148252
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -59,3 +61,5 @@ permalink: /kb/148/Q148252/
 	
 	=============================================================================
 	
+
+{% endraw %}

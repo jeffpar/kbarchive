@@ -6,6 +6,8 @@ permalink: /kb/247/Q247905/
 
 ## Q247905: Bookshelf 98 Mac: Hangs When Click Bookshelf Icon on Menu Bar
 
+{% raw %}
+
 	Article: Q247905
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -67,3 +69,5 @@ permalink: /kb/247/Q247905/
 	
 	=============================================================================
 	
+
+{% endraw %}

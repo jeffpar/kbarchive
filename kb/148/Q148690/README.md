@@ -6,6 +6,8 @@ permalink: /kb/148/Q148690/
 
 ## Q148690: SMS: Windows NT 3.51 Service Pack 4 PDF Availability
 
+{% raw %}
+
 	Article: Q148690
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -68,3 +70,5 @@ permalink: /kb/148/Q148690/
 	
 	=============================================================================
 	
+
+{% endraw %}

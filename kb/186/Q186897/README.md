@@ -6,6 +6,8 @@ permalink: /kb/186/Q186897/
 
 ## Q186897: PRB: &quot;Failure Writing to the System Registry&quot; Error Message
 
+{% raw %}
+
 	Article: Q186897
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -108,3 +110,5 @@ permalink: /kb/186/Q186897/
 	
 	=============================================================================
 	
+
+{% endraw %}

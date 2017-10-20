@@ -6,6 +6,8 @@ permalink: /kb/139/Q139299/
 
 ## Q139299: FIX: Ampersand (&amp;) Appears as Underscore (_) in the Explorer
 
+{% raw %}
+
 	Article: Q139299
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0
@@ -87,3 +89,5 @@ permalink: /kb/139/Q139299/
 	
 	=============================================================================
 	
+
+{% endraw %}

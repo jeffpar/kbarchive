@@ -6,6 +6,8 @@ permalink: /kb/140/Q140353/
 
 ## Q140353: BUG: KeyAscii Behavior Different with DBCombo Control
 
+{% raw %}
+
 	Article: Q140353
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -108,3 +110,5 @@ permalink: /kb/140/Q140353/
 	
 	=============================================================================
 	
+
+{% endraw %}

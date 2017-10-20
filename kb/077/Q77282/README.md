@@ -6,6 +6,8 @@ permalink: /kb/077/Q77282/
 
 ## Q77282: Bit2Mono.exe Changes Color Bitmaps to Monochrome
 
+{% raw %}
+
 	Article: Q77282
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 
@@ -311,3 +313,5 @@ permalink: /kb/077/Q77282/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/040/Q40218/
 
 ## Q40218: Shelling to DOS Produces &quot;Out of Memory&quot; Message
 
+{% raw %}
+
 	Article: Q40218
 	Product(s): See article
 	Version(s): 2.00
@@ -20,3 +22,5 @@ permalink: /kb/040/Q40218/
 	"Out of Memory." This message means that there was not enough memory
 	to spawn command.com; it does not necessarily mean that QuickC itself
 	is out of memory.
+
+{% endraw %}

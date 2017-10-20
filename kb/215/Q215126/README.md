@@ -6,6 +6,8 @@ permalink: /kb/215/Q215126/
 
 ## Q215126: SMS: &quot;Status Message Queries&quot; Displays Values Instead of Names
 
+{% raw %}
+
 	Article: Q215126
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -60,3 +62,5 @@ permalink: /kb/215/Q215126/
 	
 	=============================================================================
 	
+
+{% endraw %}

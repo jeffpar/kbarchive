@@ -6,6 +6,8 @@ permalink: /kb/039/Q39976/
 
 ## Q39976: Dynamic Allocation for Two Dimensional Arrays
 
+{% raw %}
+
 	Article: Q39976
 	Product(s): See article
 	Version(s): 4.00 5.x | 5.10
@@ -97,3 +99,5 @@ permalink: /kb/039/Q39976/
 	    for (i = 1; i < dim_one; i++) {
 	        array[i] = (array[0] + (i * dim_two));
 	    }
+
+{% endraw %}

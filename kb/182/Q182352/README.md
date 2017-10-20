@@ -6,6 +6,8 @@ permalink: /kb/182/Q182352/
 
 ## Q182352: PRB: Windows Common Control Keys are Case-Sensitive
 
+{% raw %}
+
 	Article: Q182352
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/182/Q182352/
 	
 	=============================================================================
 	
+
+{% endraw %}

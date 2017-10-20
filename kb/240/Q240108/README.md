@@ -6,6 +6,8 @@ permalink: /kb/240/Q240108/
 
 ## Q240108: Backup Host Security Cache Deleted on Exit
 
+{% raw %}
+
 	Article: Q240108
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2
@@ -149,3 +151,5 @@ permalink: /kb/240/Q240108/
 	
 	=============================================================================
 	
+
+{% endraw %}

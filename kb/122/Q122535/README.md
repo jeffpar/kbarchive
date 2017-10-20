@@ -6,6 +6,8 @@ permalink: /kb/122/Q122535/
 
 ## Q122535: Arcade for Macintosh: No Sound Playback or Playback Distorted
 
+{% raw %}
+
 	Article: Q122535
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0
@@ -77,3 +79,5 @@ permalink: /kb/122/Q122535/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129800/
 
 ## Q129800: PRB: VB/VB Apps Won't Run if Windows NT OLE Service Stopped
 
+{% raw %}
+
 	Article: Q129800
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0; winnt:3.51
@@ -111,3 +113,5 @@ permalink: /kb/129/Q129800/
 	
 	=============================================================================
 	
+
+{% endraw %}

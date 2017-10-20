@@ -6,6 +6,8 @@ permalink: /kb/314/Q314596/
 
 ## Q314596: S&amp;T 2002: Schools Are Not Displayed on Map
 
+{% raw %}
+
 	Article: Q314596
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -109,3 +111,5 @@ permalink: /kb/314/Q314596/
 	
 	=============================================================================
 	
+
+{% endraw %}

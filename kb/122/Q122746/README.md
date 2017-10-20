@@ -6,6 +6,8 @@ permalink: /kb/122/Q122746/
 
 ## Q122746: BUG: BUILD APP Fails If Program Name Has No Extension
 
+{% raw %}
+
 	Article: Q122746
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -66,3 +68,5 @@ permalink: /kb/122/Q122746/
 	
 	=============================================================================
 	
+
+{% endraw %}

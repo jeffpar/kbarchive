@@ -6,6 +6,8 @@ permalink: /kb/139/Q139319/
 
 ## Q139319: Mac Encarta: Animations Play with Faded or Unusual Colors
 
+{% raw %}
+
 	Article: Q139319
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994, 1995, 1996, 1997 editions
@@ -63,3 +65,5 @@ permalink: /kb/139/Q139319/
 	
 	=============================================================================
 	
+
+{% endraw %}

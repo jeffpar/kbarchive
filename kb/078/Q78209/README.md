@@ -6,6 +6,8 @@ permalink: /kb/078/Q78209/
 
 ## Q78209: An Overview of the Netlogon Service and How It Works
 
+{% raw %}
+
 	Article: Q78209
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/078/Q78209/
 	
 	=============================================================================
 	
+
+{% endraw %}

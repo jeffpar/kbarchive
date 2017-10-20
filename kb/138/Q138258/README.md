@@ -6,6 +6,8 @@ permalink: /kb/138/Q138258/
 
 ## Q138258: Windows NT Debug Symbol Setup Information
 
+{% raw %}
+
 	Article: Q138258
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -396,3 +398,5 @@ permalink: /kb/138/Q138258/
 	
 	=============================================================================
 	
+
+{% endraw %}

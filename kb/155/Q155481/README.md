@@ -6,6 +6,8 @@ permalink: /kb/155/Q155481/
 
 ## Q155481: PPT: Only True Harvard Graphics for MS-DOS File Imported
 
+{% raw %}
+
 	Article: Q155481
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -65,3 +67,5 @@ permalink: /kb/155/Q155481/
 	
 	=============================================================================
 	
+
+{% endraw %}

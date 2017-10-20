@@ -6,6 +6,8 @@ permalink: /kb/132/Q132809/
 
 ## Q132809: Clicking Suspend on Compaq Desktop Does Not Suspend Computer
 
+{% raw %}
+
 	Article: Q132809
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -59,3 +61,5 @@ permalink: /kb/132/Q132809/
 	
 	=============================================================================
 	
+
+{% endraw %}

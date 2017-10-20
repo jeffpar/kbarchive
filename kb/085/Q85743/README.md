@@ -6,6 +6,8 @@ permalink: /kb/085/Q85743/
 
 ## Q85743: FIX: Error L1057 Generated When Assembling with /Zi
 
+{% raw %}
+
 	Article: Q85743
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -140,3 +142,5 @@ permalink: /kb/085/Q85743/
 	
 	=============================================================================
 	
+
+{% endraw %}

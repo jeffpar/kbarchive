@@ -6,6 +6,8 @@ permalink: /kb/191/Q191908/
 
 ## Q191908: MHS: MHS Gateway Computer Problems Beginning With the Year 2000
 
+{% raw %}
+
 	Article: Q191908
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -49,3 +51,5 @@ permalink: /kb/191/Q191908/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176406/
 
 ## Q176406: SmartLabs Workshop Not Compatible With Internet Explorer 4.0
 
+{% raw %}
+
 	Article: Q176406
 	Product(s): Microsoft Press
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/176/Q176406/
 	
 	=============================================================================
 	
+
+{% endraw %}

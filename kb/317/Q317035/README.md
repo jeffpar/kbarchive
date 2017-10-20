@@ -6,6 +6,8 @@ permalink: /kb/317/Q317035/
 
 ## Q317035: MS02-018: Patch for Cross-Site Scripting in Redirect Response
 
+{% raw %}
+
 	Article: Q317035
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -148,3 +150,5 @@ permalink: /kb/317/Q317035/
 	
 	=============================================================================
 	
+
+{% endraw %}

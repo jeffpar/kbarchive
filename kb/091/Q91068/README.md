@@ -6,6 +6,8 @@ permalink: /kb/091/Q91068/
 
 ## Q91068: After Installing Novell Netware Support, NET.CFG Ignored
 
+{% raw %}
+
 	Article: Q91068
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -57,3 +59,5 @@ permalink: /kb/091/Q91068/
 	
 	=============================================================================
 	
+
+{% endraw %}

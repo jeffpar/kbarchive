@@ -6,6 +6,8 @@ permalink: /kb/131/Q131404/
 
 ## Q131404: Err Msg: Cannot Find the File RNETWORK.GLB on the Server
 
+{% raw %}
+
 	Article: Q131404
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/131/Q131404/
 	
 	=============================================================================
 	
+
+{% endraw %}

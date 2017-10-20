@@ -6,6 +6,8 @@ permalink: /kb/126/Q126310/
 
 ## Q126310: Error Attempting to Paste Into ClipBook Viewer
 
+{% raw %}
+
 	Article: Q126310
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -54,3 +56,5 @@ permalink: /kb/126/Q126310/
 	
 	=============================================================================
 	
+
+{% endraw %}

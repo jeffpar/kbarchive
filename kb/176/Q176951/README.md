@@ -6,6 +6,8 @@ permalink: /kb/176/Q176951/
 
 ## Q176951: HOWTO: Use Events to Generate Asynchronous Callbacks
 
+{% raw %}
+
 	Article: Q176951
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -161,3 +163,5 @@ permalink: /kb/176/Q176951/
 	
 	=============================================================================
 	
+
+{% endraw %}

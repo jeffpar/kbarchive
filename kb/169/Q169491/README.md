@@ -6,6 +6,8 @@ permalink: /kb/169/Q169491/
 
 ## Q169491: SMSINST: How Status MIFs Work with the SMS Installer
 
+{% raw %}
+
 	Article: Q169491
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0; winnt:1.2
@@ -187,3 +189,5 @@ permalink: /kb/169/Q169491/
 	
 	=============================================================================
 	
+
+{% endraw %}

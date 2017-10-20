@@ -6,6 +6,8 @@ permalink: /kb/197/Q197869/
 
 ## Q197869: XCLN: Routing Restrictions Require SMTP Authentication
 
+{% raw %}
+
 	Article: Q197869
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,4.01; winnt:5.5; :8.0,8.01,8.02,8.03
@@ -133,3 +135,5 @@ permalink: /kb/197/Q197869/
 	
 	=============================================================================
 	
+
+{% endraw %}

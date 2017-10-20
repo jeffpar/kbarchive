@@ -6,6 +6,8 @@ permalink: /kb/128/Q128724/
 
 ## Q128724: Unable to stop more than 13 services
 
+{% raw %}
+
 	Article: Q128724
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -51,3 +53,5 @@ permalink: /kb/128/Q128724/
 	
 	=============================================================================
 	
+
+{% endraw %}

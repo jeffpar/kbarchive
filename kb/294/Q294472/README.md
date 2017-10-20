@@ -6,6 +6,8 @@ permalink: /kb/294/Q294472/
 
 ## Q294472: MS99-057: Index Server Search Function Contains Unchecked Buffer
 
+{% raw %}
+
 	Article: Q294472
 	Product(s): Internet Information Server
 	Version(s): 2.0
@@ -119,3 +121,5 @@ permalink: /kb/294/Q294472/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169645/
 
 ## Q169645: XCON: MTA Event ID 9996 Occurs
 
+{% raw %}
+
 	Article: Q169645
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/169/Q169645/
 	
 	=============================================================================
 	
+
+{% endraw %}

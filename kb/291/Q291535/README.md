@@ -6,6 +6,8 @@ permalink: /kb/291/Q291535/
 
 ## Q291535: HOWTO: Find Installed Modems with Visual FoxPro
 
+{% raw %}
+
 	Article: Q291535
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -385,3 +387,5 @@ permalink: /kb/291/Q291535/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112089/
 
 ## Q112089: Print Manager Does Not Allow the Movement of Documents
 
+{% raw %}
+
 	Article: Q112089
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -54,3 +56,5 @@ permalink: /kb/112/Q112089/
 	
 	=============================================================================
 	
+
+{% endraw %}

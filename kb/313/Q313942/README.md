@@ -6,6 +6,8 @@ permalink: /kb/313/Q313942/
 
 ## Q313942: MechWarrior 4: &quot;Address 0x00000040&quot; Err Msg Playing Mission
 
+{% raw %}
+
 	Article: Q313942
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/313/Q313942/
 	
 	=============================================================================
 	
+
+{% endraw %}

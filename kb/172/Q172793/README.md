@@ -6,6 +6,8 @@ permalink: /kb/172/Q172793/
 
 ## Q172793: Cannot Establish Initial Connection to MSN
 
+{% raw %}
+
 	Article: Q172793
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -57,3 +59,5 @@ permalink: /kb/172/Q172793/
 	
 	=============================================================================
 	
+
+{% endraw %}

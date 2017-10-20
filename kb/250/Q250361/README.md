@@ -6,6 +6,8 @@ permalink: /kb/250/Q250361/
 
 ## Q250361: XFOR: Blank Outlook Contacts from Migrated cc:Mail DB8 PAB
 
+{% raw %}
+
 	Article: Q250361
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -88,3 +90,5 @@ permalink: /kb/250/Q250361/
 	
 	=============================================================================
 	
+
+{% endraw %}

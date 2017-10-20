@@ -6,6 +6,8 @@ permalink: /kb/129/Q129987/
 
 ## Q129987: HPMON Stops Working After Upgrading Multiple-NIC Computers
 
+{% raw %}
+
 	Article: Q129987
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -101,3 +103,5 @@ permalink: /kb/129/Q129987/
 	
 	=============================================================================
 	
+
+{% endraw %}

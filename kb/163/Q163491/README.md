@@ -6,6 +6,8 @@ permalink: /kb/163/Q163491/
 
 ## Q163491: WD97:Can't Assign an Array to Explicitly Declared Array Variable
 
+{% raw %}
+
 	Article: Q163491
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -105,3 +107,5 @@ permalink: /kb/163/Q163491/
 	
 	=============================================================================
 	
+
+{% endraw %}

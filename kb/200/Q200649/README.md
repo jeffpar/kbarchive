@@ -6,6 +6,8 @@ permalink: /kb/200/Q200649/
 
 ## Q200649: HOWTO: Use LZCopy to Copy Files
 
+{% raw %}
+
 	Article: Q200649
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -137,3 +139,5 @@ permalink: /kb/200/Q200649/
 	
 	=============================================================================
 	
+
+{% endraw %}

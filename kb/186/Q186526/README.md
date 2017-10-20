@@ -6,6 +6,8 @@ permalink: /kb/186/Q186526/
 
 ## Q186526: Terminal Server Commands: KILL
 
+{% raw %}
+
 	Article: Q186526
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -96,3 +98,5 @@ permalink: /kb/186/Q186526/
 	
 	=============================================================================
 	
+
+{% endraw %}

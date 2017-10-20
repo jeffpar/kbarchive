@@ -6,6 +6,8 @@ permalink: /kb/183/Q183566/
 
 ## Q183566: Error Message: &quot;Record Not Found&quot; for Certain Dates
 
+{% raw %}
+
 	Article: Q183566
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -56,3 +58,5 @@ permalink: /kb/183/Q183566/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160986/
 
 ## Q160986: SMS: Dosetup.exe Fails with &quot;Runs with UNC Name&quot; Option Enabled
 
+{% raw %}
+
 	Article: Q160986
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -71,3 +73,5 @@ permalink: /kb/160/Q160986/
 	
 	=============================================================================
 	
+
+{% endraw %}

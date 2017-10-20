@@ -6,6 +6,8 @@ permalink: /kb/160/Q160074/
 
 ## Q160074: SetFieldNull Asserts or Crashes When Called for Parameter
 
+{% raw %}
+
 	Article: Q160074
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2
@@ -103,3 +105,5 @@ permalink: /kb/160/Q160074/
 	
 	=============================================================================
 	
+
+{% endraw %}

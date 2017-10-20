@@ -6,6 +6,8 @@ permalink: /kb/141/Q141793/
 
 ## Q141793: PRB: Disk Size Reported By Compaq Differs from Windows NT
 
+{% raw %}
+
 	Article: Q141793
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -73,3 +75,5 @@ permalink: /kb/141/Q141793/
 	
 	=============================================================================
 	
+
+{% endraw %}

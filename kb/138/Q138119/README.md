@@ -6,6 +6,8 @@ permalink: /kb/138/Q138119/
 
 ## Q138119: Windows 95 Readme.txt File in Drivers&#92;Other&#92;Creative&#92;Sb16-awe
 
+{% raw %}
+
 	Article: Q138119
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/138/Q138119/
 	
 	=============================================================================
 	
+
+{% endraw %}

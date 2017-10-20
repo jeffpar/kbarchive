@@ -6,6 +6,8 @@ permalink: /kb/289/Q289490/
 
 ## Q289490: SMS: Contents of the SMS Site Backup Utility
 
+{% raw %}
+
 	Article: Q289490
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -115,3 +117,5 @@ permalink: /kb/289/Q289490/
 	
 	=============================================================================
 	
+
+{% endraw %}

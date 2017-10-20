@@ -6,6 +6,8 @@ permalink: /kb/067/Q67252/
 
 ## Q67252: Documentation Error in APT and Tiny Model Link Line Example
 
+{% raw %}
+
 	Article: Q67252
 	Product(s): See article
 	Version(s): 6.00 6.00a
@@ -45,3 +47,5 @@ permalink: /kb/067/Q67252/
 	
 	As stated above, this documentation error is noted in the README.DOC
 	shipped with C version 6.00.
+
+{% endraw %}

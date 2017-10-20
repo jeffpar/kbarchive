@@ -6,6 +6,8 @@ permalink: /kb/117/Q117934/
 
 ## Q117934: Mac Encarta 94: Small White Spots Appear on Grayscale Printout
 
+{% raw %}
+
 	Article: Q117934
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -52,3 +54,5 @@ permalink: /kb/117/Q117934/
 	
 	=============================================================================
 	
+
+{% endraw %}

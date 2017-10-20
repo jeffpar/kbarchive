@@ -6,6 +6,8 @@ permalink: /kb/106/Q106140/
 
 ## Q106140: Cannot Run 32-Bit File Access with NE2000 ODI Driver
 
+{% raw %}
+
 	Article: Q106140
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -53,3 +55,5 @@ permalink: /kb/106/Q106140/
 	
 	=============================================================================
 	
+
+{% endraw %}

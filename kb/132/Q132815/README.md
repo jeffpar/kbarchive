@@ -6,6 +6,8 @@ permalink: /kb/132/Q132815/
 
 ## Q132815: Server-Based Setup Crashes After Setting Up Hardware
 
+{% raw %}
+
 	Article: Q132815
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -53,3 +55,5 @@ permalink: /kb/132/Q132815/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/217/Q217023/
 
 ## Q217023: Event ID 5701 Starting Netlogon on Domain Controller
 
+{% raw %}
+
 	Article: Q217023
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/217/Q217023/
 	
 	=============================================================================
 	
+
+{% endraw %}

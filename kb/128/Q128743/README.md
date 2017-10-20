@@ -6,6 +6,8 @@ permalink: /kb/128/Q128743/
 
 ## Q128743: PC Win WRmt: Asterisk Appears in From Field When View Message
 
+{% raw %}
+
 	Article: Q128743
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b,3.2,3.2a
@@ -43,3 +45,5 @@ permalink: /kb/128/Q128743/
 	
 	=============================================================================
 	
+
+{% endraw %}

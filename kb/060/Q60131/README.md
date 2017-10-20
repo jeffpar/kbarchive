@@ -6,6 +6,8 @@ permalink: /kb/060/Q60131/
 
 ## Q60131: Problem with MID&#36; Statement and MID&#36; Function in QBX.EXE
 
+{% raw %}
+
 	Article: Q60131
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -46,3 +48,5 @@ permalink: /kb/060/Q60131/
 	
 	Note: The first MID$ occurrence above is the MID$ statement, and the
 	second occurrence is the MID$ function.
+
+{% endraw %}

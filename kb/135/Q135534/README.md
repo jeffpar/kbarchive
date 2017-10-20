@@ -6,6 +6,8 @@ permalink: /kb/135/Q135534/
 
 ## Q135534: Adding Media Vision ProAudio Spectrum Decreases Performance
 
+{% raw %}
+
 	Article: Q135534
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/135/Q135534/
 	
 	=============================================================================
 	
+
+{% endraw %}

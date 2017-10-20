@@ -6,6 +6,8 @@ permalink: /kb/151/Q151070/
 
 ## Q151070: FIX: DYNAMIC_DOWNCAST &amp; STATIC_DOWNCAST Causes Stack Overflow
 
+{% raw %}
+
 	Article: Q151070
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.1
@@ -77,3 +79,5 @@ permalink: /kb/151/Q151070/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241060/
 
 ## Q241060: Err Msg: The Certificate Server Did Not Start: Unable To...
 
+{% raw %}
+
 	Article: Q241060
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/241/Q241060/
 	
 	=============================================================================
 	
+
+{% endraw %}

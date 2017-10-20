@@ -6,6 +6,8 @@ permalink: /kb/224/Q224261/
 
 ## Q224261: Streets and Trips 2000: Label Disappears When You Find Address
 
+{% raw %}
+
 	Article: Q224261
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -55,3 +57,5 @@ permalink: /kb/224/Q224261/
 	
 	=============================================================================
 	
+
+{% endraw %}

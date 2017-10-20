@@ -6,6 +6,8 @@ permalink: /kb/187/Q187362/
 
 ## Q187362: SMS: Database Maintenance Technical Paper Available
 
+{% raw %}
+
 	Article: Q187362
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -60,3 +62,5 @@ permalink: /kb/187/Q187362/
 	
 	=============================================================================
 	
+
+{% endraw %}

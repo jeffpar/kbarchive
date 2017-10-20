@@ -6,6 +6,8 @@ permalink: /kb/092/Q92871/
 
 ## Q92871: File Manager: Can't Redirect Local Drives; Use Net Redirector
 
+{% raw %}
+
 	Article: Q92871
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -39,3 +41,5 @@ permalink: /kb/092/Q92871/
 	
 	=============================================================================
 	
+
+{% endraw %}

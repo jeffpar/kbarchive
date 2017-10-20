@@ -6,6 +6,8 @@ permalink: /kb/156/Q156202/
 
 ## Q156202: Problems Changing Mouse in Windows NT with IntelliPoint 2.0
 
+{% raw %}
+
 	Article: Q156202
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0 3.51 4.0
@@ -188,3 +190,5 @@ permalink: /kb/156/Q156202/
 	
 	=============================================================================
 	
+
+{% endraw %}

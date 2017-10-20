@@ -6,6 +6,8 @@ permalink: /kb/163/Q163158/
 
 ## Q163158: WD97: Calculate On Exit Doesn't Function for Calculation
 
+{% raw %}
+
 	Article: Q163158
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -62,3 +64,5 @@ permalink: /kb/163/Q163158/
 	
 	=============================================================================
 	
+
+{% endraw %}

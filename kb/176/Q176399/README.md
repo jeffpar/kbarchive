@@ -6,6 +6,8 @@ permalink: /kb/176/Q176399/
 
 ## Q176399: PRB: OLE Automation Error - 2147418107 (80010005)
 
+{% raw %}
+
 	Article: Q176399
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -199,3 +201,5 @@ permalink: /kb/176/Q176399/
 	
 	=============================================================================
 	
+
+{% endraw %}

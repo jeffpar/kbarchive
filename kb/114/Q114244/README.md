@@ -6,6 +6,8 @@ permalink: /kb/114/Q114244/
 
 ## Q114244: Unable to Upgrade Service Pack 2 On Magneto Optical Drives
 
+{% raw %}
+
 	Article: Q114244
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -58,3 +60,5 @@ permalink: /kb/114/Q114244/
 	
 	=============================================================================
 	
+
+{% endraw %}

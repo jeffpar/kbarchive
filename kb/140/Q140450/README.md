@@ -6,6 +6,8 @@ permalink: /kb/140/Q140450/
 
 ## Q140450: FIX: &quot;Failed to (or don't know how to) build&quot; Warning
 
+{% raw %}
+
 	Article: Q140450
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -70,3 +72,5 @@ permalink: /kb/140/Q140450/
 	
 	=============================================================================
 	
+
+{% endraw %}

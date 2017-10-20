@@ -6,6 +6,8 @@ permalink: /kb/150/Q150577/
 
 ## Q150577: ARP Request for Nonlocal Target Hosts on Same Physical Net
 
+{% raw %}
+
 	Article: Q150577
 	Product(s): Microsoft Windows NT
 	Version(s): 3.11 3.50 3.51
@@ -59,3 +61,5 @@ permalink: /kb/150/Q150577/
 	
 	=============================================================================
 	
+
+{% endraw %}

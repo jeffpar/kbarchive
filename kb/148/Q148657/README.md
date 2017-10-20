@@ -6,6 +6,8 @@ permalink: /kb/148/Q148657/
 
 ## Q148657: Err Msg: &quot;The network name was deleted&quot; w/ DIR in Batch File
 
+{% raw %}
+
 	Article: Q148657
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -73,3 +75,5 @@ permalink: /kb/148/Q148657/
 	
 	=============================================================================
 	
+
+{% endraw %}

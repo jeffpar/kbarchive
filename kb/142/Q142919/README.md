@@ -6,6 +6,8 @@ permalink: /kb/142/Q142919/
 
 ## Q142919: Error Message: ID Number DRVSPACE125
 
+{% raw %}
+
 	Article: Q142919
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -70,3 +72,5 @@ permalink: /kb/142/Q142919/
 	
 	=============================================================================
 	
+
+{% endraw %}

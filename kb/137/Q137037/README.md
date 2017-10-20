@@ -6,6 +6,8 @@ permalink: /kb/137/Q137037/
 
 ## Q137037: BUG: Cell Data Disappears in DBGrid with NumberFormat Set
 
+{% raw %}
+
 	Article: Q137037
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -96,3 +98,5 @@ permalink: /kb/137/Q137037/
 	
 	=============================================================================
 	
+
+{% endraw %}

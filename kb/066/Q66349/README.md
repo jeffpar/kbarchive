@@ -6,6 +6,8 @@ permalink: /kb/066/Q66349/
 
 ## Q66349: Windows Entertainment Pack Disk Labels Incorrect
 
+{% raw %}
+
 	Article: Q66349
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -38,3 +40,5 @@ permalink: /kb/066/Q66349/
 	
 	=============================================================================
 	
+
+{% endraw %}

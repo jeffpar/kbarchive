@@ -6,6 +6,8 @@ permalink: /kb/135/Q135246/
 
 ## Q135246: Mastering Microsoft Visual FoxPro Description and Support
 
+{% raw %}
+
 	Article: Q135246
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b |3.00b
@@ -203,3 +205,5 @@ permalink: /kb/135/Q135246/
 	
 	=============================================================================
 	
+
+{% endraw %}

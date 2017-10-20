@@ -6,6 +6,8 @@ permalink: /kb/241/Q241863/
 
 ## Q241863: Lexmark 4226 Model 302 Printer Driver Included in Service Pack 6
 
+{% raw %}
+
 	Article: Q241863
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP6
@@ -81,3 +83,5 @@ permalink: /kb/241/Q241863/
 	
 	=============================================================================
 	
+
+{% endraw %}

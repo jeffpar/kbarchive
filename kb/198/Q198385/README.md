@@ -6,6 +6,8 @@ permalink: /kb/198/Q198385/
 
 ## Q198385: PRB: Error Running Setup Wizard under Apple OS 8.5
 
+{% raw %}
+
 	Article: Q198385
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -82,3 +84,5 @@ permalink: /kb/198/Q198385/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/287/Q287594/
 
 ## Q287594: W3SVC Log Reflects Wrong Size with SF_NOTIFY_SEND_RAW_DATA Flag
 
+{% raw %}
+
 	Article: Q287594
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -84,3 +86,5 @@ permalink: /kb/287/Q287594/
 	
 	=============================================================================
 	
+
+{% endraw %}

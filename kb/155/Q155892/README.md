@@ -6,6 +6,8 @@ permalink: /kb/155/Q155892/
 
 ## Q155892: Windows NT Boot Problem: Kernel File Is Missing From the Disk
 
+{% raw %}
+
 	Article: Q155892
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -115,3 +117,5 @@ permalink: /kb/155/Q155892/
 	
 	=============================================================================
 	
+
+{% endraw %}

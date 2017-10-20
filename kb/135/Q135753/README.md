@@ -6,6 +6,8 @@ permalink: /kb/135/Q135753/
 
 ## Q135753: Implications of Using NULL in Data Validation Rules
 
+{% raw %}
+
 	Article: Q135753
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/135/Q135753/
 	
 	=============================================================================
 	
+
+{% endraw %}

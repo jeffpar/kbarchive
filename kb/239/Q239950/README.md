@@ -6,6 +6,8 @@ permalink: /kb/239/Q239950/
 
 ## Q239950: WINS Architecture and Capacity Planning White Paper Available
 
+{% raw %}
+
 	Article: Q239950
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/239/Q239950/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/295/Q295084/
 
 ## Q295084: SMS: Program Does Not Run if User Is Not Logged On
 
+{% raw %}
+
 	Article: Q295084
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -88,3 +90,5 @@ permalink: /kb/295/Q295084/
 	
 	=============================================================================
 	
+
+{% endraw %}

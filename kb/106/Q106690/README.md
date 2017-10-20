@@ -6,6 +6,8 @@ permalink: /kb/106/Q106690/
 
 ## Q106690: Function for Returning a Julian Date in FoxPro
 
+{% raw %}
+
 	Article: Q106690
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a,2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
@@ -76,3 +78,5 @@ permalink: /kb/106/Q106690/
 	
 	=============================================================================
 	
+
+{% endraw %}

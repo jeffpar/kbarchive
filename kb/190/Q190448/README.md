@@ -6,6 +6,8 @@ permalink: /kb/190/Q190448/
 
 ## Q190448: HOWTO: Save Properties Added with AddProperty()
 
+{% raw %}
+
 	Article: Q190448
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -225,3 +227,5 @@ permalink: /kb/190/Q190448/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99496/
 
 ## Q99496: Golf Doesn't Keep High Scores
 
+{% raw %}
+
 	Article: Q99496
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -69,3 +71,5 @@ permalink: /kb/099/Q99496/
 	
 	=============================================================================
 	
+
+{% endraw %}

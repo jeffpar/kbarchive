@@ -6,6 +6,8 @@ permalink: /kb/132/Q132726/
 
 ## Q132726: How to Enumerate and Open All Tables in a Database Container
 
+{% raw %}
+
 	Article: Q132726
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/132/Q132726/
 	
 	=============================================================================
 	
+
+{% endraw %}

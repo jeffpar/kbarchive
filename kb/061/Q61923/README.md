@@ -6,6 +6,8 @@ permalink: /kb/061/Q61923/
 
 ## Q61923: Adding a New Logbook Entry Requires Flying for 6 Minutes
 
+{% raw %}
+
 	Article: Q61923
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -28,3 +30,5 @@ permalink: /kb/061/Q61923/
 	
 	=============================================================================
 	
+
+{% endraw %}

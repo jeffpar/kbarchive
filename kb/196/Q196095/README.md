@@ -6,6 +6,8 @@ permalink: /kb/196/Q196095/
 
 ## Q196095: PRB: SBS Client Installation Does Not Continue After Restart
 
+{% raw %}
+
 	Article: Q196095
 	Product(s): Microsoft Windows NT
 	Version(s): Windows:95,98;WinNT:4.0,4.0a
@@ -79,3 +81,5 @@ permalink: /kb/196/Q196095/
 	
 	=============================================================================
 	
+
+{% endraw %}

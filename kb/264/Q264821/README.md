@@ -6,6 +6,8 @@ permalink: /kb/264/Q264821/
 
 ## Q264821: Grown-Up's Guide to Computing Comments and Corrections
 
+{% raw %}
+
 	Article: Q264821
 	Product(s): Microsoft Press
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/264/Q264821/
 	
 	=============================================================================
 	
+
+{% endraw %}

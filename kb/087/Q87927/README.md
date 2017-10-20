@@ -6,6 +6,8 @@ permalink: /kb/087/Q87927/
 
 ## Q87927: FIX: Breakpoints, Watches Not Restored with Dual Monitor
 
+{% raw %}
+
 	Article: Q87927
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.05
@@ -73,3 +75,5 @@ permalink: /kb/087/Q87927/
 	
 	=============================================================================
 	
+
+{% endraw %}

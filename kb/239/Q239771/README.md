@@ -6,6 +6,8 @@ permalink: /kb/239/Q239771/
 
 ## Q239771: HOWTO: Return Oracle Stored Procedure Resultset to ADO Recordset
 
+{% raw %}
+
 	Article: Q239771
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -267,3 +269,5 @@ permalink: /kb/239/Q239771/
 	
 	=============================================================================
 	
+
+{% endraw %}

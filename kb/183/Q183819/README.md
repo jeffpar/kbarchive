@@ -6,6 +6,8 @@ permalink: /kb/183/Q183819/
 
 ## Q183819: DCOM over HTTP Method Calls May Hang for up to 15 Minutes
 
+{% raw %}
+
 	Article: Q183819
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/183/Q183819/
 	
 	=============================================================================
 	
+
+{% endraw %}

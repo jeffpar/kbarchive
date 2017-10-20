@@ -6,6 +6,8 @@ permalink: /kb/071/Q71737/
 
 ## Q71737: Aldus PageMaker version 4.0 and Bitstream Facelift
 
+{% raw %}
+
 	Article: Q71737
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -47,3 +49,5 @@ permalink: /kb/071/Q71737/
 	
 	=============================================================================
 	
+
+{% endraw %}

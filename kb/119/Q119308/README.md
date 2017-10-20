@@ -6,6 +6,8 @@ permalink: /kb/119/Q119308/
 
 ## Q119308: PROFS: Gateway Export Generates Two Notes to PROFS/OV UserID
 
+{% raw %}
+
 	Article: Q119308
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2,3.3
@@ -51,3 +53,5 @@ permalink: /kb/119/Q119308/
 	
 	=============================================================================
 	
+
+{% endraw %}

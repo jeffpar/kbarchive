@@ -6,6 +6,8 @@ permalink: /kb/258/Q258985/
 
 ## Q258985: How to Turn Off The Microsoft Network 5.x
 
+{% raw %}
+
 	Article: Q258985
 	Product(s): The Microsoft Network
 	Version(s): 5.0,5.1,5.2,5.3
@@ -67,3 +69,5 @@ permalink: /kb/258/Q258985/
 	
 	=============================================================================
 	
+
+{% endraw %}

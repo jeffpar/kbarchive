@@ -6,6 +6,8 @@ permalink: /kb/184/Q184538/
 
 ## Q184538: Error Message: A Controller for This Domain Could Not Be Found
 
+{% raw %}
+
 	Article: Q184538
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -78,3 +80,5 @@ permalink: /kb/184/Q184538/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/057/Q57512/
 
 ## Q57512: Cannot Print Source Code If Notepad or Errors Window Active
 
+{% raw %}
+
 	Article: Q57512
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -32,3 +34,5 @@ permalink: /kb/057/Q57512/
 	no errors in the Error window, two lines of the source code will be
 	printed. If there are errors in the window, QuickC will print lines of
 	source code equal to the number of errors plus one.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123689/
 
 ## Q123689: PRB: F2347 or F2201 Error When Function Is Not Typed
 
+{% raw %}
+
 	Article: Q123689
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a,4.0,5.1
@@ -111,3 +113,5 @@ permalink: /kb/123/Q123689/
 	
 	=============================================================================
 	
+
+{% endraw %}

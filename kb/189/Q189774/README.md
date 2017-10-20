@@ -6,6 +6,8 @@ permalink: /kb/189/Q189774/
 
 ## Q189774: BUG: Repeated Outputs to _SCREEN Distorts _SCREEN.Picture
 
+{% raw %}
+
 	Article: Q189774
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -67,3 +69,5 @@ permalink: /kb/189/Q189774/
 	
 	=============================================================================
 	
+
+{% endraw %}

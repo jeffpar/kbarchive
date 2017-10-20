@@ -6,6 +6,8 @@ permalink: /kb/162/Q162554/
 
 ## Q162554: BUG: MODIFY COMMAND GETFILE() Creates a New File
 
+{% raw %}
+
 	Article: Q162554
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -70,3 +72,5 @@ permalink: /kb/162/Q162554/
 	
 	=============================================================================
 	
+
+{% endraw %}

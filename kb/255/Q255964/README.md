@@ -6,6 +6,8 @@ permalink: /kb/255/Q255964/
 
 ## Q255964: Allegiance: Incorrectly Prompted to Click the Launch Button
 
+{% raw %}
+
 	Article: Q255964
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -42,3 +44,5 @@ permalink: /kb/255/Q255964/
 	
 	=============================================================================
 	
+
+{% endraw %}

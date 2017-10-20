@@ -6,6 +6,8 @@ permalink: /kb/202/Q202258/
 
 ## Q202258: XADM: The System Cannot Find the Path Specified - ID No: 0cx0020
 
+{% raw %}
+
 	Article: Q202258
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -97,3 +99,5 @@ permalink: /kb/202/Q202258/
 	
 	=============================================================================
 	
+
+{% endraw %}

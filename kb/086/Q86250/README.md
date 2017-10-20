@@ -6,6 +6,8 @@ permalink: /kb/086/Q86250/
 
 ## Q86250: Calendar's Alarm May Not Interrupt Screen Saver
 
+{% raw %}
+
 	Article: Q86250
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/086/Q86250/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99177/
 
 ## Q99177: Bookshelf: QuicKeys Dialog Box Does Not Include OK and Cancel
 
+{% raw %}
+
 	Article: Q99177
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1993 edition
@@ -38,3 +40,5 @@ permalink: /kb/099/Q99177/
 	
 	=============================================================================
 	
+
+{% endraw %}

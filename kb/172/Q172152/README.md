@@ -6,6 +6,8 @@ permalink: /kb/172/Q172152/
 
 ## Q172152: Unable to read the Appletalk Registry Section
 
+{% raw %}
+
 	Article: Q172152
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -75,3 +77,5 @@ permalink: /kb/172/Q172152/
 	
 	=============================================================================
 	
+
+{% endraw %}

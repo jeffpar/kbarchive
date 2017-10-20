@@ -6,6 +6,8 @@ permalink: /kb/169/Q169111/
 
 ## Q169111: PRB: Error Performing DODEFAULT Function on Base Class Method
 
+{% raw %}
+
 	Article: Q169111
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -154,3 +156,5 @@ permalink: /kb/169/Q169111/
 	
 	=============================================================================
 	
+
+{% endraw %}

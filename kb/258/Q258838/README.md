@@ -6,6 +6,8 @@ permalink: /kb/258/Q258838/
 
 ## Q258838: Dial-Up Networking Automatic Redial May Stop After 15 Attempts
 
+{% raw %}
+
 	Article: Q258838
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:4.0
@@ -88,3 +90,5 @@ permalink: /kb/258/Q258838/
 	
 	=============================================================================
 	
+
+{% endraw %}

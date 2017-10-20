@@ -6,6 +6,8 @@ permalink: /kb/232/Q232654/
 
 ## Q232654: BUG:CommonDialog FilterIndex Always Returns Default Filter Index
 
+{% raw %}
+
 	Article: Q232654
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0,2.11,3.0
@@ -90,3 +92,5 @@ permalink: /kb/232/Q232654/
 	
 	=============================================================================
 	
+
+{% endraw %}

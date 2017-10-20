@@ -6,6 +6,8 @@ permalink: /kb/136/Q136641/
 
 ## Q136641: PRB: Spell Checking Edit Box Contents Does Not Work
 
+{% raw %}
+
 	Article: Q136641
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -94,3 +96,5 @@ permalink: /kb/136/Q136641/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199250/
 
 ## Q199250: SMS: Version 1.2 to 2.0 Secondary Site Upgrade Options
 
+{% raw %}
+
 	Article: Q199250
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -78,3 +80,5 @@ permalink: /kb/199/Q199250/
 	
 	=============================================================================
 	
+
+{% endraw %}

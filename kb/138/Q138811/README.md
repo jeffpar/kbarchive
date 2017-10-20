@@ -6,6 +6,8 @@ permalink: /kb/138/Q138811/
 
 ## Q138811: Cannot Add RAS ISDN Ports in Control Panel
 
+{% raw %}
+
 	Article: Q138811
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -71,3 +73,5 @@ permalink: /kb/138/Q138811/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/270/Q270823/
 
 ## Q270823: ELL: Dictation Score Incorrect When You Return to Previous Level
 
+{% raw %}
+
 	Article: Q270823
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/270/Q270823/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/223/Q223306/
 
 ## Q223306: XCLN: 5.5 SP1 ODK Installs Outlook 98 w/128-bit Encryption
 
+{% raw %}
+
 	Article: Q223306
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:98
@@ -135,3 +137,5 @@ permalink: /kb/223/Q223306/
 	
 	=============================================================================
 	
+
+{% endraw %}

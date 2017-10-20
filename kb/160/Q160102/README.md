@@ -6,6 +6,8 @@ permalink: /kb/160/Q160102/
 
 ## Q160102: NBA Full Court Press Err Msg: Cannot Initialize Sound System
 
+{% raw %}
+
 	Article: Q160102
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -234,3 +236,5 @@ permalink: /kb/160/Q160102/
 	
 	=============================================================================
 	
+
+{% endraw %}

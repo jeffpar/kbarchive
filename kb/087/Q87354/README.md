@@ -6,6 +6,8 @@ permalink: /kb/087/Q87354/
 
 ## Q87354: Intel SatisFAXtion File CASMGR.EXE May Cause Windows to Hang
 
+{% raw %}
+
 	Article: Q87354
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/087/Q87354/
 	
 	=============================================================================
 	
+
+{% endraw %}

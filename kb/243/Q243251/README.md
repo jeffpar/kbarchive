@@ -6,6 +6,8 @@ permalink: /kb/243/Q243251/
 
 ## Q243251: Missing Password-Protected Screen Saver Leaves Computer Unlocked
 
+{% raw %}
+
 	Article: Q243251
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -119,3 +121,5 @@ permalink: /kb/243/Q243251/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174790/
 
 ## Q174790: IIS Hangs When Querying a FoxPro Database w/ ASP or IDC/HTX
 
+{% raw %}
+
 	Article: Q174790
 	Product(s): Internet Information Server
 	Version(s): 2.00 3.00
@@ -114,3 +116,5 @@ permalink: /kb/174/Q174790/
 	
 	=============================================================================
 	
+
+{% endraw %}

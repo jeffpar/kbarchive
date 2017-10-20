@@ -6,6 +6,8 @@ permalink: /kb/120/Q120203/
 
 ## Q120203: Bookshelf 1994: Numbers in Tables Overlap
 
+{% raw %}
+
 	Article: Q120203
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -65,3 +67,5 @@ permalink: /kb/120/Q120203/
 	
 	=============================================================================
 	
+
+{% endraw %}

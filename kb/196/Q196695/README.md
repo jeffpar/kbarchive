@@ -6,6 +6,8 @@ permalink: /kb/196/Q196695/
 
 ## Q196695: Cannot Log On to NetWare 5 Directory Services Tree Using CSNW
 
+{% raw %}
+
 	Article: Q196695
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/196/Q196695/
 	
 	=============================================================================
 	
+
+{% endraw %}

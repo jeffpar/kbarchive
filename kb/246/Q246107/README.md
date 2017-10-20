@@ -6,6 +6,8 @@ permalink: /kb/246/Q246107/
 
 ## Q246107: WINAT Returns Error When Current Day Is Sunday
 
+{% raw %}
+
 	Article: Q246107
 	Product(s): Microsoft Press
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/246/Q246107/
 	
 	=============================================================================
 	
+
+{% endraw %}

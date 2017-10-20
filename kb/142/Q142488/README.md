@@ -6,6 +6,8 @@ permalink: /kb/142/Q142488/
 
 ## Q142488: Games Err Msg: Model Read Hose
 
+{% raw %}
+
 	Article: Q142488
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/142/Q142488/
 	
 	=============================================================================
 	
+
+{% endraw %}

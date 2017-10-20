@@ -6,6 +6,8 @@ permalink: /kb/140/Q140391/
 
 ## Q140391: NT3.51 SP2 Driver Conflict w/ Diamond Viper PCI and Video Spigot
 
+{% raw %}
+
 	Article: Q140391
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP2
@@ -57,3 +59,5 @@ permalink: /kb/140/Q140391/
 	
 	=============================================================================
 	
+
+{% endraw %}

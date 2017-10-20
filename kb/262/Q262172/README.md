@@ -6,6 +6,8 @@ permalink: /kb/262/Q262172/
 
 ## Q262172: Allegiance: Uncontrollable Roll When Using Throttle on Joystick
 
+{% raw %}
+
 	Article: Q262172
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -87,3 +89,5 @@ permalink: /kb/262/Q262172/
 	
 	=============================================================================
 	
+
+{% endraw %}

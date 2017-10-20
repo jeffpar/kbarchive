@@ -6,6 +6,8 @@ permalink: /kb/282/Q282816/
 
 ## Q282816: HOWTO: Remove a Visual Basic Project from Visual SourceSafe
 
+{% raw %}
+
 	Article: Q282816
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -52,3 +54,5 @@ permalink: /kb/282/Q282816/
 	
 	=============================================================================
 	
+
+{% endraw %}

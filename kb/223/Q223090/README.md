@@ -6,6 +6,8 @@ permalink: /kb/223/Q223090/
 
 ## Q223090: FIX: UserControl on Active Desktop Causes AV Shutdown
 
+{% raw %}
+
 	Article: Q223090
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/223/Q223090/
 	
 	=============================================================================
 	
+
+{% endraw %}

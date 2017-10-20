@@ -6,6 +6,8 @@ permalink: /kb/045/Q45555/
 
 ## Q45555: QuickC 2.00 Debugger Does Not Display Bit Fields.
 
+{% raw %}
+
 	Article: Q45555
 	Product(s): See article
 	Version(s): 2.00
@@ -34,3 +36,5 @@ permalink: /kb/045/Q45555/
 	
 	To workaround this to take the address of the structure, and then
 	watch the memory contents at that address.
+
+{% endraw %}

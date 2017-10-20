@@ -6,6 +6,8 @@ permalink: /kb/159/Q159257/
 
 ## Q159257: Spike's World: Why Doesn't Chat Work?
 
+{% raw %}
+
 	Article: Q159257
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -48,3 +50,5 @@ permalink: /kb/159/Q159257/
 	
 	=============================================================================
 	
+
+{% endraw %}

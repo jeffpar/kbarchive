@@ -6,6 +6,8 @@ permalink: /kb/124/Q124303/
 
 ## Q124303: Windows NT LPD Service Requires One Control File Per Data File
 
+{% raw %}
+
 	Article: Q124303
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -67,3 +69,5 @@ permalink: /kb/124/Q124303/
 	
 	=============================================================================
 	
+
+{% endraw %}

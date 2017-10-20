@@ -6,6 +6,8 @@ permalink: /kb/131/Q131245/
 
 ## Q131245: Setting Up The Microsoft Network on a Second Computer
 
+{% raw %}
+
 	Article: Q131245
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5
@@ -86,3 +88,5 @@ permalink: /kb/131/Q131245/
 	
 	=============================================================================
 	
+
+{% endraw %}

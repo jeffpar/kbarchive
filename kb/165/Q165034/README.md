@@ -6,6 +6,8 @@ permalink: /kb/165/Q165034/
 
 ## Q165034: ODE97: Using Undo Create to Delete Page Removes Tab Control
 
+{% raw %}
+
 	Article: Q165034
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:97
@@ -92,3 +94,5 @@ permalink: /kb/165/Q165034/
 	
 	=============================================================================
 	
+
+{% endraw %}

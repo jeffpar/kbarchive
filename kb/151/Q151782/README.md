@@ -6,6 +6,8 @@ permalink: /kb/151/Q151782/
 
 ## Q151782: XFOR: Dirsync Modifies Causing Names to Disappear from Exchange
 
+{% raw %}
+
 	Article: Q151782
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -94,3 +96,5 @@ permalink: /kb/151/Q151782/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126577/
 
 ## Q126577: SMS Modifies Application INI Files
 
+{% raw %}
+
 	Article: Q126577
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -64,3 +66,5 @@ permalink: /kb/126/Q126577/
 	
 	=============================================================================
 	
+
+{% endraw %}

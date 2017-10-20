@@ -6,6 +6,8 @@ permalink: /kb/173/Q173173/
 
 ## Q173173: SNA Manage Agent Traps After Saving Configuration Change
 
+{% raw %}
+
 	Article: Q173173
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -128,3 +130,5 @@ permalink: /kb/173/Q173173/
 	
 	=============================================================================
 	
+
+{% endraw %}

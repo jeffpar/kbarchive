@@ -6,6 +6,8 @@ permalink: /kb/194/Q194113/
 
 ## Q194113: ErrMsg: Microsoft Internet Explorer 4.0 Setup - Some Services...
 
+{% raw %}
+
 	Article: Q194113
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:4.01,4.01 Service Pack 1,4.01 Service Pack 2; winnt:4.0 SP4
@@ -61,3 +63,5 @@ permalink: /kb/194/Q194113/
 	
 	=============================================================================
 	
+
+{% endraw %}

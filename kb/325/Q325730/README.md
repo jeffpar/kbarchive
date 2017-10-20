@@ -6,6 +6,8 @@ permalink: /kb/325/Q325730/
 
 ## Q325730: Games: &quot;Stop&quot; Error Message That References Nv4_disp.dll
 
+{% raw %}
+
 	Article: Q325730
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -174,3 +176,5 @@ permalink: /kb/325/Q325730/
 	
 	=============================================================================
 	
+
+{% endraw %}

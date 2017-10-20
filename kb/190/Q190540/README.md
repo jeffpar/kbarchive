@@ -6,6 +6,8 @@ permalink: /kb/190/Q190540/
 
 ## Q190540: FIX: SELECT-SQL with Subselects in WHERE Clause Stops VFP
 
+{% raw %}
+
 	Article: Q190540
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -114,3 +116,5 @@ permalink: /kb/190/Q190540/
 	
 	=============================================================================
 	
+
+{% endraw %}

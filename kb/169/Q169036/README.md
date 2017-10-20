@@ -6,6 +6,8 @@ permalink: /kb/169/Q169036/
 
 ## Q169036: Puzzle: Unable to Start a Puzzle Collection Game or Uninstall
 
+{% raw %}
+
 	Article: Q169036
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:; :
@@ -78,3 +80,5 @@ permalink: /kb/169/Q169036/
 	
 	=============================================================================
 	
+
+{% endraw %}

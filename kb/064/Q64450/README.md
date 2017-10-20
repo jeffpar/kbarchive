@@ -6,6 +6,8 @@ permalink: /kb/064/Q64450/
 
 ## Q64450: Flight Simulator: Demo Recording in Multiplayer Mode
 
+{% raw %}
+
 	Article: Q64450
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/064/Q64450/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166754/
 
 ## Q166754: Encarta 97: Insufficient Memory/Not Enough Free Memory
 
+{% raw %}
+
 	Article: Q166754
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997
@@ -213,3 +215,5 @@ permalink: /kb/166/Q166754/
 	
 	=============================================================================
 	
+
+{% endraw %}

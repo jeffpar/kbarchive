@@ -6,6 +6,8 @@ permalink: /kb/205/Q205027/
 
 ## Q205027: Dead Gateway Detection with RRAS and Demand Dial Connections
 
+{% raw %}
+
 	Article: Q205027
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -155,3 +157,5 @@ permalink: /kb/205/Q205027/
 	
 	=============================================================================
 	
+
+{% endraw %}

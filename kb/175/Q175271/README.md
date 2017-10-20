@@ -6,6 +6,8 @@ permalink: /kb/175/Q175271/
 
 ## Q175271: SNA 3.0 SP2 Hang or Access Violation in SNA Server or SnaBase
 
+{% raw %}
+
 	Article: Q175271
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP2
@@ -86,3 +88,5 @@ permalink: /kb/175/Q175271/
 	
 	=============================================================================
 	
+
+{% endraw %}

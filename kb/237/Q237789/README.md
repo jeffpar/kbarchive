@@ -6,6 +6,8 @@ permalink: /kb/237/Q237789/
 
 ## Q237789: INFO: Windows 2000 Registry Entries Are Not Expanded
 
+{% raw %}
+
 	Article: Q237789
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -61,3 +63,5 @@ permalink: /kb/237/Q237789/
 	
 	=============================================================================
 	
+
+{% endraw %}

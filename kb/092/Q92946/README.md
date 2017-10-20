@@ -6,6 +6,8 @@ permalink: /kb/092/Q92946/
 
 ## Q92946: Bookshelf Button on Toolbar Appears as a Piggy Bank
 
+{% raw %}
+
 	Article: Q92946
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1992 edition,1993 edition; WINDOWS:2.0a-CD,2.0c-CD
@@ -75,3 +77,5 @@ permalink: /kb/092/Q92946/
 	
 	=============================================================================
 	
+
+{% endraw %}

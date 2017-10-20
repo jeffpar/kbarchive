@@ -6,6 +6,8 @@ permalink: /kb/075/Q75356/
 
 ## Q75356: AT Gigafile Disk Driver Does Not Work with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q75356
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -66,3 +68,5 @@ permalink: /kb/075/Q75356/
 	
 	=============================================================================
 	
+
+{% endraw %}

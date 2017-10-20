@@ -6,6 +6,8 @@ permalink: /kb/297/Q297265/
 
 ## Q297265: INFO: All Bound IP Addresses Don't Appear in MMC Drop-Down List
 
+{% raw %}
+
 	Article: Q297265
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -55,3 +57,5 @@ permalink: /kb/297/Q297265/
 	
 	=============================================================================
 	
+
+{% endraw %}

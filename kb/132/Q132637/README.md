@@ -6,6 +6,8 @@ permalink: /kb/132/Q132637/
 
 ## Q132637: MORE Program Does Not Support Long Filenames
 
+{% raw %}
+
 	Article: Q132637
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/132/Q132637/
 	
 	=============================================================================
 	
+
+{% endraw %}

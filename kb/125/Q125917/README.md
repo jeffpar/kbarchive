@@ -6,6 +6,8 @@ permalink: /kb/125/Q125917/
 
 ## Q125917: PC DirSync: Err Msg: Error 156 Invalid Dirsync Password
 
+{% raw %}
+
 	Article: Q125917
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -66,3 +68,5 @@ permalink: /kb/125/Q125917/
 	
 	=============================================================================
 	
+
+{% endraw %}

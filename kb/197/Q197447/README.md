@@ -6,6 +6,8 @@ permalink: /kb/197/Q197447/
 
 ## Q197447: %Username% Resolved in GUI but Not at Command Line
 
+{% raw %}
+
 	Article: Q197447
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -47,3 +49,5 @@ permalink: /kb/197/Q197447/
 	
 	=============================================================================
 	
+
+{% endraw %}

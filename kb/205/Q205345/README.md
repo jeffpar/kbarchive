@@ -6,6 +6,8 @@ permalink: /kb/205/Q205345/
 
 ## Q205345: CMD.exe Err w/ Path or File Name Exceeding Max_Path / 256 Char's
 
+{% raw %}
+
 	Article: Q205345
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.5
@@ -83,3 +85,5 @@ permalink: /kb/205/Q205345/
 	
 	=============================================================================
 	
+
+{% endraw %}

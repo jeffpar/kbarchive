@@ -6,6 +6,8 @@ permalink: /kb/189/Q189590/
 
 ## Q189590: SMSINST: Uninstal.exe Does Not Find Install.log File
 
+{% raw %}
+
 	Article: Q189590
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/189/Q189590/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161494/
 
 ## Q161494: D-LINK DE-220 ISA Ethernet Adapter .inf File Does Not Work
 
+{% raw %}
+
 	Article: Q161494
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -50,3 +52,5 @@ permalink: /kb/161/Q161494/
 	
 	=============================================================================
 	
+
+{% endraw %}

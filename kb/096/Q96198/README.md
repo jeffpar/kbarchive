@@ -6,6 +6,8 @@ permalink: /kb/096/Q96198/
 
 ## Q96198: TCP/IP PROTOCOL.INI Documentation Updates and Corrections
 
+{% raw %}
+
 	Article: Q96198
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -134,3 +136,5 @@ permalink: /kb/096/Q96198/
 	
 	=============================================================================
 	
+
+{% endraw %}

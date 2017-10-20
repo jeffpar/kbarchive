@@ -6,6 +6,8 @@ permalink: /kb/238/Q238255/
 
 ## Q238255: HOWTO: Install VSS to a Novell NetWare Server
 
+{% raw %}
+
 	Article: Q238255
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/238/Q238255/
 	
 	=============================================================================
 	
+
+{% endraw %}

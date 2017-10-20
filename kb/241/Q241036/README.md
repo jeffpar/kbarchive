@@ -6,6 +6,8 @@ permalink: /kb/241/Q241036/
 
 ## Q241036: Mastering Enterprise Development Using VB 6.0 Corrections
 
+{% raw %}
+
 	Article: Q241036
 	Product(s): Microsoft Press
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/241/Q241036/
 	
 	=============================================================================
 	
+
+{% endraw %}

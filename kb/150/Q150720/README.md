@@ -6,6 +6,8 @@ permalink: /kb/150/Q150720/
 
 ## Q150720: Macintosh Multimedia: Cannot Access Program Guide
 
+{% raw %}
+
 	Article: Q150720
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/150/Q150720/
 	
 	=============================================================================
 	
+
+{% endraw %}

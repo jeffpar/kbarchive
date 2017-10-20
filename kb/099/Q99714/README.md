@@ -6,6 +6,8 @@ permalink: /kb/099/Q99714/
 
 ## Q99714: MHS: Connecting Microsoft Mail to cc:Mail
 
+{% raw %}
+
 	Article: Q99714
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -83,3 +85,5 @@ permalink: /kb/099/Q99714/
 	
 	=============================================================================
 	
+
+{% endraw %}

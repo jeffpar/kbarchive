@@ -6,6 +6,8 @@ permalink: /kb/138/Q138518/
 
 ## Q138518: How to Pass a Point Structure to the Windows API by Value
 
+{% raw %}
+
 	Article: Q138518
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -122,3 +124,5 @@ permalink: /kb/138/Q138518/
 	
 	=============================================================================
 	
+
+{% endraw %}

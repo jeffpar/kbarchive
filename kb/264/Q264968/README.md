@@ -6,6 +6,8 @@ permalink: /kb/264/Q264968/
 
 ## Q264968: Files without Extensions are Mapped to Application/Octet-Stream
 
+{% raw %}
+
 	Article: Q264968
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -89,3 +91,5 @@ permalink: /kb/264/Q264968/
 	
 	=============================================================================
 	
+
+{% endraw %}

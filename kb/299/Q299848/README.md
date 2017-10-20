@@ -6,6 +6,8 @@ permalink: /kb/299/Q299848/
 
 ## Q299848: HOWTO: Insert Code at Cursor/Selection Position from an Add-In
 
+{% raw %}
+
 	Article: Q299848
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -149,3 +151,5 @@ permalink: /kb/299/Q299848/
 	
 	=============================================================================
 	
+
+{% endraw %}

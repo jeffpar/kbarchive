@@ -6,6 +6,8 @@ permalink: /kb/142/Q142714/
 
 ## Q142714: RAS Does Not Hang Up Immediately If Usernames Are Different
 
+{% raw %}
+
 	Article: Q142714
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -54,3 +56,5 @@ permalink: /kb/142/Q142714/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182758/
 
 ## Q182758: XCON: X.25 Cards Supported Through Direct Hardware Interface
 
+{% raw %}
+
 	Article: Q182758
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -68,3 +70,5 @@ permalink: /kb/182/Q182758/
 	
 	=============================================================================
 	
+
+{% endraw %}

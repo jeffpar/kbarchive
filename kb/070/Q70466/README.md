@@ -6,6 +6,8 @@ permalink: /kb/070/Q70466/
 
 ## Q70466: Video Display Problem on Epson 386SX and 286 Laptops
 
+{% raw %}
+
 	Article: Q70466
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/070/Q70466/
 	
 	=============================================================================
 	
+
+{% endraw %}

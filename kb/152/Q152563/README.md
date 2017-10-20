@@ -6,6 +6,8 @@ permalink: /kb/152/Q152563/
 
 ## Q152563: How to Back Up and Restore Files with Microsoft Backup
 
+{% raw %}
+
 	Article: Q152563
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -113,3 +115,5 @@ permalink: /kb/152/Q152563/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/271/Q271071/
 
 ## Q271071: Minimum NTFS Permissions Required for IIS 5.0 to Work
 
+{% raw %}
+
 	Article: Q271071
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -235,3 +237,5 @@ permalink: /kb/271/Q271071/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143190/
 
 ## Q143190: Internet Service Manager Fails to Connect to IIS Over Internet
 
+{% raw %}
+
 	Article: Q143190
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -57,3 +59,5 @@ permalink: /kb/143/Q143190/
 	
 	=============================================================================
 	
+
+{% endraw %}

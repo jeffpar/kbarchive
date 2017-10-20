@@ -6,6 +6,8 @@ permalink: /kb/172/Q172224/
 
 ## Q172224: PDLSVC: Application Terminates Attaching To Many Servers
 
+{% raw %}
+
 	Article: Q172224
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/172/Q172224/
 	
 	=============================================================================
 	
+
+{% endraw %}

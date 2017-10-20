@@ -6,6 +6,8 @@ permalink: /kb/315/Q315834/
 
 ## Q315834: SMS: Remote Control Events Not Listed in Security Event Log
 
+{% raw %}
+
 	Article: Q315834
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -59,3 +61,5 @@ permalink: /kb/315/Q315834/
 	
 	=============================================================================
 	
+
+{% endraw %}

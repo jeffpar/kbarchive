@@ -6,6 +6,8 @@ permalink: /kb/166/Q166083/
 
 ## Q166083: INF: How to Enable Connection Pooling in an OLE DB Application
 
+{% raw %}
+
 	Article: Q166083
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.1,3.0
@@ -84,3 +86,5 @@ permalink: /kb/166/Q166083/
 	
 	=============================================================================
 	
+
+{% endraw %}

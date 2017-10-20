@@ -6,6 +6,8 @@ permalink: /kb/101/Q101142/
 
 ## Q101142: PC Forms: Compatibility with Windows NT Mail32
 
+{% raw %}
+
 	Article: Q101142
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0
@@ -87,3 +89,5 @@ permalink: /kb/101/Q101142/
 	
 	=============================================================================
 	
+
+{% endraw %}

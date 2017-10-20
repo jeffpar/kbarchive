@@ -6,6 +6,8 @@ permalink: /kb/186/Q186597/
 
 ## Q186597: Registering OCX and DLL files as System Globals
 
+{% raw %}
+
 	Article: Q186597
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/186/Q186597/
 	
 	=============================================================================
 	
+
+{% endraw %}

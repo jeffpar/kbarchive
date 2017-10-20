@@ -6,6 +6,8 @@ permalink: /kb/251/Q251301/
 
 ## Q251301: ErrMsg: Error Occurred Getting Driver List from Inf File
 
+{% raw %}
+
 	Article: Q251301
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/251/Q251301/
 	
 	=============================================================================
 	
+
+{% endraw %}

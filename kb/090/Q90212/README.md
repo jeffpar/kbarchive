@@ -6,6 +6,8 @@ permalink: /kb/090/Q90212/
 
 ## Q90212: PROTOCOL.INI File Open Failure with Stacker
 
+{% raw %}
+
 	Article: Q90212
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1; :1.0
@@ -51,3 +53,5 @@ permalink: /kb/090/Q90212/
 	
 	=============================================================================
 	
+
+{% endraw %}

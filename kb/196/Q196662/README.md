@@ -6,6 +6,8 @@ permalink: /kb/196/Q196662/
 
 ## Q196662: Window Settings for Folders on the Desktop Are Not Retained
 
+{% raw %}
+
 	Article: Q196662
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/196/Q196662/
 	
 	=============================================================================
 	
+
+{% endraw %}

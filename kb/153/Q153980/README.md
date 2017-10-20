@@ -6,6 +6,8 @@ permalink: /kb/153/Q153980/
 
 ## Q153980: Madge Smart Ringnode 16/4 Does Not Work on Shared Installation
 
+{% raw %}
+
 	Article: Q153980
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/153/Q153980/
 	
 	=============================================================================
 	
+
+{% endraw %}

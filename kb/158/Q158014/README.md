@@ -6,6 +6,8 @@ permalink: /kb/158/Q158014/
 
 ## Q158014: XCLN: Seven Habits Commands Not Available on Tools Menu
 
+{% raw %}
+
 	Article: Q158014
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; winnt:3.51,4.0
@@ -108,3 +110,5 @@ permalink: /kb/158/Q158014/
 	
 	=============================================================================
 	
+
+{% endraw %}

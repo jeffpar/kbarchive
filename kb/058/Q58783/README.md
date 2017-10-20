@@ -6,6 +6,8 @@ permalink: /kb/058/Q58783/
 
 ## Q58783: Backing Up QuickC Files in the Editor
 
+{% raw %}
+
 	Article: Q58783
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -62,3 +64,5 @@ permalink: /kb/058/Q58783/
 	Utility.Backup Routine menu option, the file in the current screen
 	group will be saved with an extension of BAK. You can modify this
 	behavior by changing the BACK.BAT batch file to fit your needs.
+
+{% endraw %}

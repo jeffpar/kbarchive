@@ -6,6 +6,8 @@ permalink: /kb/065/Q65077/
 
 ## Q65077: Using the Micro Display Systems Monitor with Windows
 
+{% raw %}
+
 	Article: Q65077
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/065/Q65077/
 	
 	=============================================================================
 	
+
+{% endraw %}

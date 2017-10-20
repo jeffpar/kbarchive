@@ -6,6 +6,8 @@ permalink: /kb/087/Q87015/
 
 ## Q87015: INFO: C2466 Error When Allocating an Array of Length 0
 
+{% raw %}
+
 	Article: Q87015
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52
@@ -53,3 +55,5 @@ permalink: /kb/087/Q87015/
 	
 	=============================================================================
 	
+
+{% endraw %}

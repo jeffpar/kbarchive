@@ -6,6 +6,8 @@ permalink: /kb/129/Q129898/
 
 ## Q129898: PRB: Naming Conflicts Between Variables and Objects
 
+{% raw %}
+
 	Article: Q129898
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -136,3 +138,5 @@ permalink: /kb/129/Q129898/
 	
 	=============================================================================
 	
+
+{% endraw %}

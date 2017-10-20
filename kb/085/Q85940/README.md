@@ -6,6 +6,8 @@ permalink: /kb/085/Q85940/
 
 ## Q85940: SYSADMIN.WRI Not Included with Windows &amp; MS-DOS 5 for IBM PS/2
 
+{% raw %}
+
 	Article: Q85940
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/085/Q85940/
 	
 	=============================================================================
 	
+
+{% endraw %}

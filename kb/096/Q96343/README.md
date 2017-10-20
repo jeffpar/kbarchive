@@ -6,6 +6,8 @@ permalink: /kb/096/Q96343/
 
 ## Q96343: Usage of PAGENO() Function in FoxBASE+/Mac
 
+{% raw %}
+
 	Article: Q96343
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -43,3 +45,5 @@ permalink: /kb/096/Q96343/
 	
 	=============================================================================
 	
+
+{% endraw %}

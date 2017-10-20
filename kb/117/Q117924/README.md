@@ -6,6 +6,8 @@ permalink: /kb/117/Q117924/
 
 ## Q117924: Clipper Err Msg: ERROR: Invalid Extended Handle 65535...
 
+{% raw %}
+
 	Article: Q117924
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/117/Q117924/
 	
 	=============================================================================
 	
+
+{% endraw %}

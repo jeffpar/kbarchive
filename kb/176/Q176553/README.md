@@ -6,6 +6,8 @@ permalink: /kb/176/Q176553/
 
 ## Q176553: INFO: Database Architecture Changes in 4.0, 4.0a, and 5.0
 
+{% raw %}
+
 	Article: Q176553
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0
@@ -61,3 +63,5 @@ permalink: /kb/176/Q176553/
 	
 	=============================================================================
 	
+
+{% endraw %}

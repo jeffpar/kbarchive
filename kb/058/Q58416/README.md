@@ -6,6 +6,8 @@ permalink: /kb/058/Q58416/
 
 ## Q58416: KEYB &quot;/ID:nnn&quot; Enhanced Keyboard Parameter Information
 
+{% raw %}
+
 	Article: Q58416
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.01,5.0,5.0a
@@ -59,3 +61,5 @@ permalink: /kb/058/Q58416/
 	
 	=============================================================================
 	
+
+{% endraw %}

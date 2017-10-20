@@ -6,6 +6,8 @@ permalink: /kb/147/Q147133/
 
 ## Q147133: How to Set a Fax Modem to Answer Calls Automatically
 
+{% raw %}
+
 	Article: Q147133
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -57,3 +59,5 @@ permalink: /kb/147/Q147133/
 	
 	=============================================================================
 	
+
+{% endraw %}

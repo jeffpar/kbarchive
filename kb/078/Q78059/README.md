@@ -6,6 +6,8 @@ permalink: /kb/078/Q78059/
 
 ## Q78059: Bookshelf Will Run Without Multimedia Extensions
 
+{% raw %}
+
 	Article: Q78059
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1991 edition; WINDOWS:3.0,3.0a,3.1
@@ -37,3 +39,5 @@ permalink: /kb/078/Q78059/
 	
 	=============================================================================
 	
+
+{% endraw %}

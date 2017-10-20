@@ -6,6 +6,8 @@ permalink: /kb/164/Q164426/
 
 ## Q164426: CompuServe Mail Service Does Not Accept Your Name
 
+{% raw %}
+
 	Article: Q164426
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -57,3 +59,5 @@ permalink: /kb/164/Q164426/
 	
 	=============================================================================
 	
+
+{% endraw %}

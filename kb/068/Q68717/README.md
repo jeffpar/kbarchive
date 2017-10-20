@@ -6,6 +6,8 @@ permalink: /kb/068/Q68717/
 
 ## Q68717: ASD: Scenery Library Menu Is Blank or Corrupted
 
+{% raw %}
+
 	Article: Q68717
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/068/Q68717/
 	
 	=============================================================================
 	
+
+{% endraw %}

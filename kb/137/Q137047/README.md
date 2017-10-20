@@ -6,6 +6,8 @@ permalink: /kb/137/Q137047/
 
 ## Q137047: Windows 95 System Check Tool
 
+{% raw %}
+
 	Article: Q137047
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -147,3 +149,5 @@ permalink: /kb/137/Q137047/
 	
 	=============================================================================
 	
+
+{% endraw %}

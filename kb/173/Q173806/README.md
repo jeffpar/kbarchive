@@ -6,6 +6,8 @@ permalink: /kb/173/Q173806/
 
 ## Q173806: XCLN: MS Fax and Exchange Run Slowly in Same Profile
 
+{% raw %}
+
 	Article: Q173806
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -52,3 +54,5 @@ permalink: /kb/173/Q173806/
 	
 	=============================================================================
 	
+
+{% endraw %}

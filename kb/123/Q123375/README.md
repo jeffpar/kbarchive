@@ -6,6 +6,8 @@ permalink: /kb/123/Q123375/
 
 ## Q123375: Mac Form: Text in Field Truncated After Install
 
+{% raw %}
+
 	Article: Q123375
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -72,3 +74,5 @@ permalink: /kb/123/Q123375/
 	
 	=============================================================================
 	
+
+{% endraw %}

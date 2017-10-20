@@ -6,6 +6,8 @@ permalink: /kb/134/Q134881/
 
 ## Q134881: FIX: WAIT WINDOW AT Clause Puts WAIT WINDOW on Windows Desktop
 
+{% raw %}
+
 	Article: Q134881
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -84,3 +86,5 @@ permalink: /kb/134/Q134881/
 	
 	=============================================================================
 	
+
+{% endraw %}

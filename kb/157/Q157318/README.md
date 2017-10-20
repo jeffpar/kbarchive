@@ -6,6 +6,8 @@ permalink: /kb/157/Q157318/
 
 ## Q157318: DOCERR: Function Key Information Incorrect in VFP 5.0 Help
 
+{% raw %}
+
 	Article: Q157318
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -78,3 +80,5 @@ permalink: /kb/157/Q157318/
 	
 	=============================================================================
 	
+
+{% endraw %}

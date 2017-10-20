@@ -6,6 +6,8 @@ permalink: /kb/246/Q246602/
 
 ## Q246602: XADM: Pfadmin Won't Work with Err. Mssg.: OpenAddressBook Failed
 
+{% raw %}
+
 	Article: Q246602
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -93,3 +95,5 @@ permalink: /kb/246/Q246602/
 	
 	=============================================================================
 	
+
+{% endraw %}

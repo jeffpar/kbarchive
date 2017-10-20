@@ -6,6 +6,8 @@ permalink: /kb/240/Q240344/
 
 ## Q240344: SMS: Clients Do Not Report Advertisement Status
 
+{% raw %}
+
 	Article: Q240344
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -61,3 +63,5 @@ permalink: /kb/240/Q240344/
 	
 	=============================================================================
 	
+
+{% endraw %}

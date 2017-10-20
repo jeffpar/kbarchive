@@ -6,6 +6,8 @@ permalink: /kb/024/Q24696/
 
 ## Q24696: Maximum Number of Defined Macros Allowed in TOOLS.INI File
 
+{% raw %}
+
 	Article: Q24696
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -19,3 +21,5 @@ permalink: /kb/024/Q24696/
 	
 	Response:
 	   The maximum number of defined macros allowed is 1024.
+
+{% endraw %}

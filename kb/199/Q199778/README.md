@@ -6,6 +6,8 @@ permalink: /kb/199/Q199778/
 
 ## Q199778: DOC: Help File Has Incomplete List of Collate Sequences
 
+{% raw %}
+
 	Article: Q199778
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -130,3 +132,5 @@ permalink: /kb/199/Q199778/
 	
 	=============================================================================
 	
+
+{% endraw %}

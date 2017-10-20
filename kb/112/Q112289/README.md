@@ -6,6 +6,8 @@ permalink: /kb/112/Q112289/
 
 ## Q112289: PC DOS: Notice 20 Error When Printing May Be Due to SHARE.EXE
 
+{% raw %}
+
 	Article: Q112289
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1x
@@ -55,3 +57,5 @@ permalink: /kb/112/Q112289/
 	
 	=============================================================================
 	
+
+{% endraw %}

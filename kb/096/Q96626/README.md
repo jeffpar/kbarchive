@@ -6,6 +6,8 @@ permalink: /kb/096/Q96626/
 
 ## Q96626: Uninstall Does Not Remove DEFAULT.&#42;, DOSBACK.&#42; and .INI Files
 
+{% raw %}
+
 	Article: Q96626
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -37,3 +39,5 @@ permalink: /kb/096/Q96626/
 	
 	=============================================================================
 	
+
+{% endraw %}

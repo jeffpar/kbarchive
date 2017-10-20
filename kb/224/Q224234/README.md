@@ -6,6 +6,8 @@ permalink: /kb/224/Q224234/
 
 ## Q224234: Streets &amp; Trips 2000 Err Msg: The Selected Area Is Too Large...
 
+{% raw %}
+
 	Article: Q224234
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:2.5
@@ -51,3 +53,5 @@ permalink: /kb/224/Q224234/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/069/Q69048/
 
 ## Q69048: Amdek Keyboard Problems Selecting Text in QB.EXE/QBX.EXE
 
+{% raw %}
+
 	Article: Q69048
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -42,3 +44,5 @@ permalink: /kb/069/Q69048/
 	   SHIFT+CTRL+RIGHT ARROW  SHIFT+CTRL+F        Select one word right
 	   SHIFT+PGUP              SHIFT+CTRL+R        Select one screen up
 	   SHIFT+PGDN              SHIFT+CTRL+C        Select one screen down
+
+{% endraw %}

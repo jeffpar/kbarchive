@@ -6,6 +6,8 @@ permalink: /kb/308/Q308175/
 
 ## Q308175: DOC: Broken Links in ASP Help Files
 
+{% raw %}
+
 	Article: Q308175
 	Product(s): Internet Information Server
 	Version(s): 
@@ -694,3 +696,5 @@ permalink: /kb/308/Q308175/
 	
 	=============================================================================
 	
+
+{% endraw %}

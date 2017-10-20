@@ -6,6 +6,8 @@ permalink: /kb/151/Q151677/
 
 ## Q151677: NWLink SPX Ignores Allocation Number Sent By Peer
 
+{% raw %}
+
 	Article: Q151677
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP3
@@ -111,3 +113,5 @@ permalink: /kb/151/Q151677/
 	
 	=============================================================================
 	
+
+{% endraw %}

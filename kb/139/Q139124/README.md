@@ -6,6 +6,8 @@ permalink: /kb/139/Q139124/
 
 ## Q139124: Uplodprf Aborts When Copying CPL.CFG
 
+{% raw %}
+
 	Article: Q139124
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -68,3 +70,5 @@ permalink: /kb/139/Q139124/
 	
 	=============================================================================
 	
+
+{% endraw %}

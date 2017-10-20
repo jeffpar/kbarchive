@@ -6,6 +6,8 @@ permalink: /kb/159/Q159941/
 
 ## Q159941: WD97: General Information About &quot;Auto&quot; Features in Word 97
 
+{% raw %}
+
 	Article: Q159941
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -197,3 +199,5 @@ permalink: /kb/159/Q159941/
 	
 	=============================================================================
 	
+
+{% endraw %}

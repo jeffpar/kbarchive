@@ -6,6 +6,8 @@ permalink: /kb/217/Q217185/
 
 ## Q217185: FIX: IRowsetImpl::GetData() Does Not Handle Nulls Correctly
 
+{% raw %}
+
 	Article: Q217185
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -143,3 +145,5 @@ permalink: /kb/217/Q217185/
 	
 	=============================================================================
 	
+
+{% endraw %}

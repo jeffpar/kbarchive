@@ -6,6 +6,8 @@ permalink: /kb/272/Q272187/
 
 ## Q272187: XADM: Error Message When Viewing the Organization Forms Library
 
+{% raw %}
+
 	Article: Q272187
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -110,3 +112,5 @@ permalink: /kb/272/Q272187/
 	
 	=============================================================================
 	
+
+{% endraw %}

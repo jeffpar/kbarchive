@@ -6,6 +6,8 @@ permalink: /kb/176/Q176680/
 
 ## Q176680: XFOR: Embedded Cc: Line is Interpreted as Cc: Line for Forwards
 
+{% raw %}
+
 	Article: Q176680
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -50,3 +52,5 @@ permalink: /kb/176/Q176680/
 	
 	=============================================================================
 	
+
+{% endraw %}

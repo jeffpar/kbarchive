@@ -6,6 +6,8 @@ permalink: /kb/164/Q164181/
 
 ## Q164181: XCLN: How to Send a Form as a Text Only Message
 
+{% raw %}
+
 	Article: Q164181
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; Win95:4.0,5.0
@@ -79,3 +81,5 @@ permalink: /kb/164/Q164181/
 	
 	=============================================================================
 	
+
+{% endraw %}

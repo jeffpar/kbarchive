@@ -6,6 +6,8 @@ permalink: /kb/273/Q273907/
 
 ## Q273907: XCON: Restrictions Aren't Always Checked for Alternate Recipient
 
+{% raw %}
+
 	Article: Q273907
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -49,3 +51,5 @@ permalink: /kb/273/Q273907/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138016/
 
 ## Q138016: TN3270 Init Status Delay Timer
 
+{% raw %}
+
 	Article: Q138016
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0,4.0
@@ -137,3 +139,5 @@ permalink: /kb/138/Q138016/
 	
 	=============================================================================
 	
+
+{% endraw %}

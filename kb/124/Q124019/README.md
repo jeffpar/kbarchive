@@ -6,6 +6,8 @@ permalink: /kb/124/Q124019/
 
 ## Q124019: Basketball and Encarta: GPF in WSSSBPRO.DRV
 
+{% raw %}
+
 	Article: Q124019
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994-1995 edition,1995 edition,2.0,2.0a; WINDOWS:
@@ -61,3 +63,5 @@ permalink: /kb/124/Q124019/
 	
 	=============================================================================
 	
+
+{% endraw %}

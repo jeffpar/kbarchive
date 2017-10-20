@@ -6,6 +6,8 @@ permalink: /kb/134/Q134495/
 
 ## Q134495: Title Bar Appears at the Bottom of a Window
 
+{% raw %}
+
 	Article: Q134495
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -47,3 +49,5 @@ permalink: /kb/134/Q134495/
 	
 	=============================================================================
 	
+
+{% endraw %}

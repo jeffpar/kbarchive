@@ -6,6 +6,8 @@ permalink: /kb/086/Q86089/
 
 ## Q86089: PC WSPlus: Add Gateway Brings Up All Gateways
 
+{% raw %}
+
 	Article: Q86089
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -43,3 +45,5 @@ permalink: /kb/086/Q86089/
 	
 	=============================================================================
 	
+
+{% endraw %}

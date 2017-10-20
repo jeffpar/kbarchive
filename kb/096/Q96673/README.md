@@ -6,6 +6,8 @@ permalink: /kb/096/Q96673/
 
 ## Q96673: Error Messages When Saving Changes to REGEDIT.EXE
 
+{% raw %}
+
 	Article: Q96673
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -87,3 +89,5 @@ permalink: /kb/096/Q96673/
 	
 	=============================================================================
 	
+
+{% endraw %}

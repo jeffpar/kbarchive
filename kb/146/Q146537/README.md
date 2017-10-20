@@ -6,6 +6,8 @@ permalink: /kb/146/Q146537/
 
 ## Q146537: XADM: DSA Queues: Too Many Initial Synchronizes at Startup
 
+{% raw %}
+
 	Article: Q146537
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/146/Q146537/
 	
 	=============================================================================
 	
+
+{% endraw %}

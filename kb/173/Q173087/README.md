@@ -6,6 +6,8 @@ permalink: /kb/173/Q173087/
 
 ## Q173087: Classic and New MSN Icons Appear on Desktop
 
+{% raw %}
+
 	Article: Q173087
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -68,3 +70,5 @@ permalink: /kb/173/Q173087/
 	
 	=============================================================================
 	
+
+{% endraw %}

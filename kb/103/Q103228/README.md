@@ -6,6 +6,8 @@ permalink: /kb/103/Q103228/
 
 ## Q103228: SAMPLE: NetBones.exe Demonstrates DDE Comm. Over Network
 
+{% raw %}
+
 	Article: Q103228
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -61,3 +63,5 @@ permalink: /kb/103/Q103228/
 	
 	=============================================================================
 	
+
+{% endraw %}

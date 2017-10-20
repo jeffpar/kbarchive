@@ -6,6 +6,8 @@ permalink: /kb/094/Q94655/
 
 ## Q94655: Using the HP 27247A Network Interface Card with WFWG
 
+{% raw %}
+
 	Article: Q94655
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -101,3 +103,5 @@ permalink: /kb/094/Q94655/
 	
 	=============================================================================
 	
+
+{% endraw %}

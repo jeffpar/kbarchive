@@ -6,6 +6,8 @@ permalink: /kb/068/Q68959/
 
 ## Q68959: NEC Mouse Port, Lotus 3.1, and Microsoft Serial Mouse
 
+{% raw %}
+
 	Article: Q68959
 	Product(s): See article
 	Version(s): 1.00
@@ -29,3 +31,5 @@ permalink: /kb/068/Q68959/
 	
 	Microsoft Programmer's Work Bench [Development Environment]
 	=============================================================================
+
+{% endraw %}

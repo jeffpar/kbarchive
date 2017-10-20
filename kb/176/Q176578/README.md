@@ -6,6 +6,8 @@ permalink: /kb/176/Q176578/
 
 ## Q176578: FIX: &quot;Base table fields&quot; Error When Running a View
 
+{% raw %}
+
 	Article: Q176578
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a
@@ -107,3 +109,5 @@ permalink: /kb/176/Q176578/
 	
 	=============================================================================
 	
+
+{% endraw %}

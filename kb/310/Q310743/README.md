@@ -6,6 +6,8 @@ permalink: /kb/310/Q310743/
 
 ## Q310743: IIS Error Files Are Not Installed Once They Have Been Deleted
 
+{% raw %}
+
 	Article: Q310743
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -44,3 +46,5 @@ permalink: /kb/310/Q310743/
 	
 	=============================================================================
 	
+
+{% endraw %}

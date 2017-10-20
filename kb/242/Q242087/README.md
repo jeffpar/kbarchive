@@ -6,6 +6,8 @@ permalink: /kb/242/Q242087/
 
 ## Q242087: How to Prevent My Briefcase from Appearing for New Users
 
+{% raw %}
+
 	Article: Q242087
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/242/Q242087/
 	
 	=============================================================================
 	
+
+{% endraw %}

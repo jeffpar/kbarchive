@@ -6,6 +6,8 @@ permalink: /kb/189/Q189725/
 
 ## Q189725: BUG: GETFONT Causes Error on Empty Fontname
 
+{% raw %}
+
 	Article: Q189725
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -64,3 +66,5 @@ permalink: /kb/189/Q189725/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164573/
 
 ## Q164573: SNA Manager Traps When Deleting Symbolic Destination Name
 
+{% raw %}
+
 	Article: Q164573
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -83,3 +85,5 @@ permalink: /kb/164/Q164573/
 	
 	=============================================================================
 	
+
+{% endraw %}

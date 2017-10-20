@@ -6,6 +6,8 @@ permalink: /kb/145/Q145608/
 
 ## Q145608: PRB: Remote View of 2.x Table Changes Numeric Field Data Type
 
+{% raw %}
+
 	Article: Q145608
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -90,3 +92,5 @@ permalink: /kb/145/Q145608/
 	
 	=============================================================================
 	
+
+{% endraw %}

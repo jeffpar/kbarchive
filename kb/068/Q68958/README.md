@@ -6,6 +6,8 @@ permalink: /kb/068/Q68958/
 
 ## Q68958: Using MSMENU.COM with ACT! version 2.0
 
+{% raw %}
+
 	Article: Q68958
 	Product(s): See article
 	Version(s): 1.00
@@ -53,3 +55,5 @@ permalink: /kb/068/Q68958/
 	manufactured by a vendor independent of Microsoft; we make no
 	warranty, implied or otherwise, regarding this product's performance
 	or reliability.
+
+{% endraw %}

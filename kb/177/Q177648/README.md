@@ -6,6 +6,8 @@ permalink: /kb/177/Q177648/
 
 ## Q177648: RAS Error: TCP/IP CP Reported Error 733: The PPP Control...
 
+{% raw %}
+
 	Article: Q177648
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -76,3 +78,5 @@ permalink: /kb/177/Q177648/
 	
 	=============================================================================
 	
+
+{% endraw %}

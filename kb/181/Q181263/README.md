@@ -6,6 +6,8 @@ permalink: /kb/181/Q181263/
 
 ## Q181263: XCON: Exchange Sends Message Without Valid O/R Address
 
+{% raw %}
+
 	Article: Q181263
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -139,3 +141,5 @@ permalink: /kb/181/Q181263/
 	
 	=============================================================================
 	
+
+{% endraw %}

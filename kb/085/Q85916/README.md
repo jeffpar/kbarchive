@@ -6,6 +6,8 @@ permalink: /kb/085/Q85916/
 
 ## Q85916: Using UNC Redirection in the WIN.INI &#91;Ports&#93; Section
 
+{% raw %}
+
 	Article: Q85916
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -85,3 +87,5 @@ permalink: /kb/085/Q85916/
 	
 	=============================================================================
 	
+
+{% endraw %}

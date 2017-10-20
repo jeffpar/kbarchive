@@ -6,6 +6,8 @@ permalink: /kb/248/Q248240/
 
 ## Q248240: BUG: Using SourceSafe in Multiple Time Zones
 
+{% raw %}
+
 	Article: Q248240
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -90,3 +92,5 @@ permalink: /kb/248/Q248240/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/028/Q28046/
 
 ## Q28046: WIDTH Resets Colors to Black, White in 4.00, 4.00b
 
+{% raw %}
+
 	Article: Q28046
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -34,3 +36,5 @@ permalink: /kb/028/Q28046/
 	   CLS
 	   INPUT a$
 	   end
+
+{% endraw %}

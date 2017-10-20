@@ -6,6 +6,8 @@ permalink: /kb/084/Q84127/
 
 ## Q84127: DOCERR: &quot;SDK No Longer Provides C Run-time Libraries&quot; Note
 
+{% raw %}
+
 	Article: Q84127
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -48,3 +50,5 @@ permalink: /kb/084/Q84127/
 	
 	=============================================================================
 	
+
+{% endraw %}

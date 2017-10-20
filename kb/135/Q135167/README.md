@@ -6,6 +6,8 @@ permalink: /kb/135/Q135167/
 
 ## Q135167: INCLUDE/DISPLAY Login Script Commands Do Not Accept UNC Paths
 
+{% raw %}
+
 	Article: Q135167
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/135/Q135167/
 	
 	=============================================================================
 	
+
+{% endraw %}

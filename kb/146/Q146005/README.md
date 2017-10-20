@@ -6,6 +6,8 @@ permalink: /kb/146/Q146005/
 
 ## Q146005: Optimizing Windows NT for Performance
 
+{% raw %}
+
 	Article: Q146005
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:3.5,3.51,4.0
@@ -246,3 +248,5 @@ permalink: /kb/146/Q146005/
 	
 	=============================================================================
 	
+
+{% endraw %}

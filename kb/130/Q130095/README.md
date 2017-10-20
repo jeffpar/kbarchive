@@ -6,6 +6,8 @@ permalink: /kb/130/Q130095/
 
 ## Q130095: Repeated Beeps During Windows 95 Start with ReelMagic Card
 
+{% raw %}
+
 	Article: Q130095
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/130/Q130095/
 	
 	=============================================================================
 	
+
+{% endraw %}

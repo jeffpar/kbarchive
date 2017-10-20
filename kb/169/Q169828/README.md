@@ -6,6 +6,8 @@ permalink: /kb/169/Q169828/
 
 ## Q169828: FP: TAB Key Doesn't Work As Expected in FrontPage Editor
 
+{% raw %}
+
 	Article: Q169828
 	Product(s): Word Front Page
 	Version(s): windows:97
@@ -71,3 +73,5 @@ permalink: /kb/169/Q169828/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/034/Q34248/
 
 ## Q34248: Flight Simulator: Automatic Scenery Not Loading
 
+{% raw %}
+
 	Article: Q34248
 	Product(s): Microsoft Home Games
 	Version(s): 3.00 4.00
@@ -51,3 +53,5 @@ permalink: /kb/034/Q34248/
 	
 	=============================================================================
 	
+
+{% endraw %}

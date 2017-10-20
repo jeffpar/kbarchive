@@ -6,6 +6,8 @@ permalink: /kb/230/Q230165/
 
 ## Q230165: Terminal Server User's Home Directory Is Not Set Correctly
 
+{% raw %}
+
 	Article: Q230165
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/230/Q230165/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169405/
 
 ## Q169405: XFOR: Novell GroupWise Shared Code Directory Was Not Found
 
+{% raw %}
+
 	Article: Q169405
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -74,3 +76,5 @@ permalink: /kb/169/Q169405/
 	
 	=============================================================================
 	
+
+{% endraw %}

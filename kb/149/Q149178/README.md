@@ -6,6 +6,8 @@ permalink: /kb/149/Q149178/
 
 ## Q149178: SMS: Upgrading SQL Server Used for an SMS Database
 
+{% raw %}
+
 	Article: Q149178
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,4.21a,6.0
@@ -69,3 +71,5 @@ permalink: /kb/149/Q149178/
 	
 	=============================================================================
 	
+
+{% endraw %}

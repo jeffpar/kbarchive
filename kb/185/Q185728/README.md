@@ -6,6 +6,8 @@ permalink: /kb/185/Q185728/
 
 ## Q185728: MFCSocs.exe Avoids Two Common MFC Socket Mistakes
 
+{% raw %}
+
 	Article: Q185728
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -136,3 +138,5 @@ permalink: /kb/185/Q185728/
 	
 	=============================================================================
 	
+
+{% endraw %}

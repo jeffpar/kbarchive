@@ -6,6 +6,8 @@ permalink: /kb/184/Q184760/
 
 ## Q184760: Error: &quot;CreateIISPackage or DeleteIISPackage, 0x8008005&quot;
 
+{% raw %}
+
 	Article: Q184760
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -81,3 +83,5 @@ permalink: /kb/184/Q184760/
 	
 	=============================================================================
 	
+
+{% endraw %}

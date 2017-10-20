@@ -6,6 +6,8 @@ permalink: /kb/224/Q224345/
 
 ## Q224345: Spooler Service May Leak Private Bytes Closing a Remote Printer
 
+{% raw %}
+
 	Article: Q224345
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/224/Q224345/
 	
 	=============================================================================
 	
+
+{% endraw %}

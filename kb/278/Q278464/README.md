@@ -6,6 +6,8 @@ permalink: /kb/278/Q278464/
 
 ## Q278464: XADM: Changing the Exchange Server Database Paths on a Cluster
 
+{% raw %}
+
 	Article: Q278464
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.5
@@ -105,3 +107,5 @@ permalink: /kb/278/Q278464/
 	
 	=============================================================================
 	
+
+{% endraw %}

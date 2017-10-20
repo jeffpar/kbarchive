@@ -6,6 +6,8 @@ permalink: /kb/300/Q300417/
 
 ## Q300417: Older Navigator Browsers and HTTP Proxy Tunneling
 
+{% raw %}
+
 	Article: Q300417
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -50,3 +52,5 @@ permalink: /kb/300/Q300417/
 	
 	=============================================================================
 	
+
+{% endraw %}

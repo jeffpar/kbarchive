@@ -6,6 +6,8 @@ permalink: /kb/180/Q180152/
 
 ## Q180152: HOWTO: Print from an Active Document Server
 
+{% raw %}
+
 	Article: Q180152
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0, 6.0
@@ -77,3 +79,5 @@ permalink: /kb/180/Q180152/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154855/
 
 ## Q154855: System Reserved Partitions on PowerPCs
 
+{% raw %}
+
 	Article: Q154855
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -53,3 +55,5 @@ permalink: /kb/154/Q154855/
 	
 	=============================================================================
 	
+
+{% endraw %}

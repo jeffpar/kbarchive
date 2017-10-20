@@ -6,6 +6,8 @@ permalink: /kb/246/Q246339/
 
 ## Q246339: XADM: Host Address in Admin.exe Indicates Blank IP Addresss
 
+{% raw %}
+
 	Article: Q246339
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0 SP1,5.0 SP2,5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -51,3 +53,5 @@ permalink: /kb/246/Q246339/
 	
 	=============================================================================
 	
+
+{% endraw %}

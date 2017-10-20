@@ -6,6 +6,8 @@ permalink: /kb/067/Q67033/
 
 ## Q67033: C1001: Internal Compiler Error: @(#)grammer.c:1.138, Line 164
 
+{% raw %}
+
 	Article: Q67033
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -47,3 +49,5 @@ permalink: /kb/067/Q67033/
 	Microsoft has confirmed this to be a problem in C versions 6.00 and
 	6.00a. We are researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

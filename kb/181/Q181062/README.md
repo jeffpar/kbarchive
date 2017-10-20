@@ -6,6 +6,8 @@ permalink: /kb/181/Q181062/
 
 ## Q181062: WD97: Cannot Change Default Field Names in Mail Merge Helper
 
+{% raw %}
+
 	Article: Q181062
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -105,3 +107,5 @@ permalink: /kb/181/Q181062/
 	
 	=============================================================================
 	
+
+{% endraw %}

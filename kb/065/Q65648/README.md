@@ -6,6 +6,8 @@ permalink: /kb/065/Q65648/
 
 ## Q65648: Some Windows 3.00 Fonts Don't Work with QuickC
 
+{% raw %}
+
 	Article: Q65648
 	Product(s): See article
 	Version(s): 2.00 2.01 2.50 2.51
@@ -50,3 +52,5 @@ permalink: /kb/065/Q65648/
 	Microsoft has confirmed this to be a problem with QuickC versions 2.50
 	and 2.51. We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

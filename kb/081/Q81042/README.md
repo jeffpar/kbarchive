@@ -6,6 +6,8 @@ permalink: /kb/081/Q81042/
 
 ## Q81042: Terminal: Cannot Save Files with MS-DOS Device Driver Names
 
+{% raw %}
+
 	Article: Q81042
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -50,3 +52,5 @@ permalink: /kb/081/Q81042/
 	
 	=============================================================================
 	
+
+{% endraw %}

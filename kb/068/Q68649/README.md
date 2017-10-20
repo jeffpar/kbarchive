@@ -6,6 +6,8 @@ permalink: /kb/068/Q68649/
 
 ## Q68649: Troubleshooting Windows 3.0 Standard Mode Problems
 
+{% raw %}
+
 	Article: Q68649
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -102,3 +104,5 @@ permalink: /kb/068/Q68649/
 	
 	=============================================================================
 	
+
+{% endraw %}

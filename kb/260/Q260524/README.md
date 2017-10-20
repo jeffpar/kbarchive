@@ -6,6 +6,8 @@ permalink: /kb/260/Q260524/
 
 ## Q260524: Error Message Running Exchange MAPI MA to Discover Mailbox
 
+{% raw %}
+
 	Article: Q260524
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -106,3 +108,5 @@ permalink: /kb/260/Q260524/
 	
 	=============================================================================
 	
+
+{% endraw %}

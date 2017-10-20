@@ -6,6 +6,8 @@ permalink: /kb/253/Q253785/
 
 ## Q253785: PRB: Error When Setting DateTimePicker Control Programmatically
 
+{% raw %}
+
 	Article: Q253785
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -189,3 +191,5 @@ permalink: /kb/253/Q253785/
 	
 	=============================================================================
 	
+
+{% endraw %}

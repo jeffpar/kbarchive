@@ -6,6 +6,8 @@ permalink: /kb/262/Q262011/
 
 ## Q262011: Allegiance: Stand-Alone Server Is Not Updated Automatically
 
+{% raw %}
+
 	Article: Q262011
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -61,3 +63,5 @@ permalink: /kb/262/Q262011/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/222/Q222906/
 
 ## Q222906: XADM: Advanced Security Enrollment Welcome Message is Wrong
 
+{% raw %}
+
 	Article: Q222906
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -93,3 +95,5 @@ permalink: /kb/222/Q222906/
 	
 	=============================================================================
 	
+
+{% endraw %}

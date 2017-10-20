@@ -6,6 +6,8 @@ permalink: /kb/047/Q47563/
 
 ## Q47563: CTRL+A and CTRL+B Bytes Stripped from String Constants in .EXE
 
+{% raw %}
+
 	Article: Q47563
 	Product(s): See article
 	Version(s): 4.50
@@ -60,3 +62,5 @@ permalink: /kb/047/Q47563/
 	   b1$ = CHR$(2)
 	   PRINT a1$, CHR$(1), LEN(a1$)   ' Works fine in .EXE
 	   PRINT b1$, CHR$(2), LEN(b1$)   ' Works fine in .EXE
+
+{% endraw %}

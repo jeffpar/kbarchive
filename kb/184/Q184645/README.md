@@ -6,6 +6,8 @@ permalink: /kb/184/Q184645/
 
 ## Q184645: HOWTO: Create Lightweight Controls with Visual Basic 6.0
 
+{% raw %}
+
 	Article: Q184645
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -318,3 +320,5 @@ permalink: /kb/184/Q184645/
 	
 	=============================================================================
 	
+
+{% endraw %}

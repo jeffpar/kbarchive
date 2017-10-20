@@ -6,6 +6,8 @@ permalink: /kb/268/Q268822/
 
 ## Q268822: XWEB: Redirecting http://&lt;servername&gt;/exchange Users to https://
 
+{% raw %}
+
 	Article: Q268822
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -86,3 +88,5 @@ permalink: /kb/268/Q268822/
 	
 	=============================================================================
 	
+
+{% endraw %}

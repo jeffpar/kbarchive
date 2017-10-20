@@ -6,6 +6,8 @@ permalink: /kb/164/Q164362/
 
 ## Q164362: Removing a Printer in Print Manager Does Not Remove All Entries
 
+{% raw %}
+
 	Article: Q164362
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:3.51 4.0
@@ -54,3 +56,5 @@ permalink: /kb/164/Q164362/
 	
 	=============================================================================
 	
+
+{% endraw %}

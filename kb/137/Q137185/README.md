@@ -6,6 +6,8 @@ permalink: /kb/137/Q137185/
 
 ## Q137185: Julia Child: Tip Popup Text Prints Small
 
+{% raw %}
+
 	Article: Q137185
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/137/Q137185/
 	
 	=============================================================================
 	
+
+{% endraw %}

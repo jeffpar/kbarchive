@@ -6,6 +6,8 @@ permalink: /kb/255/Q255888/
 
 ## Q255888: XFOR: Migration from MS Mail to Exchange Server Does Not Work
 
+{% raw %}
+
 	Article: Q255888
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.2,3.2a,3.5; winnt:5.0,5.5
@@ -78,3 +80,5 @@ permalink: /kb/255/Q255888/
 	
 	=============================================================================
 	
+
+{% endraw %}

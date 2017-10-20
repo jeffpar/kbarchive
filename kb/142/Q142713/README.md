@@ -6,6 +6,8 @@ permalink: /kb/142/Q142713/
 
 ## Q142713: IIS v1.0 May Fail on Windows NT Shell Technology Preview/Update
 
+{% raw %}
+
 	Article: Q142713
 	Product(s): Internet Information Server
 	Version(s): 1.00
@@ -44,3 +46,5 @@ permalink: /kb/142/Q142713/
 	
 	=============================================================================
 	
+
+{% endraw %}

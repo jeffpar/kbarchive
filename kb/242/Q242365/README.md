@@ -6,6 +6,8 @@ permalink: /kb/242/Q242365/
 
 ## Q242365: XADM: How to Install Mailbox Manager for SP3 from the FTP Site
 
+{% raw %}
+
 	Article: Q242365
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -43,3 +45,5 @@ permalink: /kb/242/Q242365/
 	
 	=============================================================================
 	
+
+{% endraw %}

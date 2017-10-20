@@ -6,6 +6,8 @@ permalink: /kb/077/Q77450/
 
 ## Q77450: 84-Key Keyboard Support for Special Character Set (Code Page)
 
+{% raw %}
+
 	Article: Q77450
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -63,3 +65,5 @@ permalink: /kb/077/Q77450/
 	
 	=============================================================================
 	
+
+{% endraw %}

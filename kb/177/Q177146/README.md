@@ -6,6 +6,8 @@ permalink: /kb/177/Q177146/
 
 ## Q177146: HOWTO: Read and Change the System Date with API Functions
 
+{% raw %}
+
 	Article: Q177146
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -150,3 +152,5 @@ permalink: /kb/177/Q177146/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152009/
 
 ## Q152009: Handling LUA RUI_WRITE Completion Delays
 
+{% raw %}
+
 	Article: Q152009
 	Product(s): Microsoft SNA Server
 	Version(s): 2.0,2.1,2.11,3.0
@@ -60,3 +62,5 @@ permalink: /kb/152/Q152009/
 	
 	=============================================================================
 	
+
+{% endraw %}

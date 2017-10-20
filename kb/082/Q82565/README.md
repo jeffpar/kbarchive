@@ -6,6 +6,8 @@ permalink: /kb/082/Q82565/
 
 ## Q82565: Quicken Loses Focus on Start with SHELL=NDW
 
+{% raw %}
+
 	Article: Q82565
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/082/Q82565/
 	
 	=============================================================================
 	
+
+{% endraw %}

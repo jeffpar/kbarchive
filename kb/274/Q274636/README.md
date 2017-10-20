@@ -6,6 +6,8 @@ permalink: /kb/274/Q274636/
 
 ## Q274636: CFS2: SideWinder Game Voice Host Cannot Start a Multiplayer Game
 
+{% raw %}
+
 	Article: Q274636
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/274/Q274636/
 	
 	=============================================================================
 	
+
+{% endraw %}

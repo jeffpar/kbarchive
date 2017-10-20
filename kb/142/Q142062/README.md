@@ -6,6 +6,8 @@ permalink: /kb/142/Q142062/
 
 ## Q142062: Unable to Run Win16 Sockets Application under Windows 3.1
 
+{% raw %}
+
 	Article: Q142062
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.0
@@ -55,3 +57,5 @@ permalink: /kb/142/Q142062/
 	
 	=============================================================================
 	
+
+{% endraw %}

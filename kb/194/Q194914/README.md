@@ -6,6 +6,8 @@ permalink: /kb/194/Q194914/
 
 ## Q194914: HOWTO: Minimize All Windows From Visual Basic
 
+{% raw %}
+
 	Article: Q194914
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -83,3 +85,5 @@ permalink: /kb/194/Q194914/
 	
 	=============================================================================
 	
+
+{% endraw %}

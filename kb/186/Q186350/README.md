@@ -6,6 +6,8 @@ permalink: /kb/186/Q186350/
 
 ## Q186350: DirectX: List of Files Installed by the DirectX 5.2 Update File
 
+{% raw %}
+
 	Article: Q186350
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:95
@@ -320,3 +322,5 @@ permalink: /kb/186/Q186350/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/036/Q36613/
 
 ## Q36613: 43- and 50-Line Modes
 
+{% raw %}
+
 	Article: Q36613
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -19,3 +21,5 @@ permalink: /kb/036/Q36613/
 	does NOT include the dialog and status display lines. Thus, to use 43
 	lines of text you must set height=41; to use 50 lines you must set
 	height=48.
+
+{% endraw %}

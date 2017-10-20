@@ -6,6 +6,8 @@ permalink: /kb/192/Q192189/
 
 ## Q192189: XADM: Database Does Not Shrink after Several Mailbox Deletions
 
+{% raw %}
+
 	Article: Q192189
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -54,3 +56,5 @@ permalink: /kb/192/Q192189/
 	
 	=============================================================================
 	
+
+{% endraw %}

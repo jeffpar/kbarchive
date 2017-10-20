@@ -6,6 +6,8 @@ permalink: /kb/156/Q156061/
 
 ## Q156061: HOWTO: Use the FoxPro SQLPrepare() Function
 
+{% raw %}
+
 	Article: Q156061
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,5.0,6.0
@@ -46,3 +48,5 @@ permalink: /kb/156/Q156061/
 	
 	=============================================================================
 	
+
+{% endraw %}

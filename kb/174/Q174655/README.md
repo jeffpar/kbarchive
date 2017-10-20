@@ -6,6 +6,8 @@ permalink: /kb/174/Q174655/
 
 ## Q174655: PRB: File DSN and DSN-Less Connections May Fail w/Localized ODBC
 
+{% raw %}
+
 	Article: Q174655
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.0
@@ -131,3 +133,5 @@ permalink: /kb/174/Q174655/
 	
 	=============================================================================
 	
+
+{% endraw %}

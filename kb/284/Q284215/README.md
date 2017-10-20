@@ -6,6 +6,8 @@ permalink: /kb/284/Q284215/
 
 ## Q284215: Non-Paged Pool Leak in TimerQueue Active List Cleanup
 
+{% raw %}
+
 	Article: Q284215
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -97,3 +99,5 @@ permalink: /kb/284/Q284215/
 	
 	=============================================================================
 	
+
+{% endraw %}

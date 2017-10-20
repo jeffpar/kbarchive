@@ -6,6 +6,8 @@ permalink: /kb/234/Q234801/
 
 ## Q234801: DirectX 6.1 Err Msg: Could Not Get Extra DirectMusic Info...
 
+{% raw %}
+
 	Article: Q234801
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:95
@@ -95,3 +97,5 @@ permalink: /kb/234/Q234801/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181564/
 
 ## Q181564: Encarta Virtual Globe Requires Internet Explorer 3.02 or Later
 
+{% raw %}
+
 	Article: Q181564
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -49,3 +51,5 @@ permalink: /kb/181/Q181564/
 	
 	=============================================================================
 	
+
+{% endraw %}

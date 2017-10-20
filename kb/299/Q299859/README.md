@@ -6,6 +6,8 @@ permalink: /kb/299/Q299859/
 
 ## Q299859: Cannot Find Product Key for Installing the Passport SDK
 
+{% raw %}
+
 	Article: Q299859
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3
@@ -66,3 +68,5 @@ permalink: /kb/299/Q299859/
 	
 	=============================================================================
 	
+
+{% endraw %}

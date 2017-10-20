@@ -6,6 +6,8 @@ permalink: /kb/163/Q163005/
 
 ## Q163005: Compaq Advanced Network Control Utility Fails w/ WinNT 4.0 SP2
 
+{% raw %}
+
 	Article: Q163005
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP2
@@ -82,3 +84,5 @@ permalink: /kb/163/Q163005/
 	
 	=============================================================================
 	
+
+{% endraw %}

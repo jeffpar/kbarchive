@@ -6,6 +6,8 @@ permalink: /kb/191/Q191701/
 
 ## Q191701: PRB: Comments Echo to Command Window w/ SourceSafe Integration
 
+{% raw %}
+
 	Article: Q191701
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -66,3 +68,5 @@ permalink: /kb/191/Q191701/
 	
 	=============================================================================
 	
+
+{% endraw %}

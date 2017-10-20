@@ -6,6 +6,8 @@ permalink: /kb/131/Q131496/
 
 ## Q131496: DEC Etherworks Turbo /TP Not Detected During Setup
 
+{% raw %}
+
 	Article: Q131496
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/131/Q131496/
 	
 	=============================================================================
 	
+
+{% endraw %}

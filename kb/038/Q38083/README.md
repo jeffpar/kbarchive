@@ -6,6 +6,8 @@ permalink: /kb/038/Q38083/
 
 ## Q38083: Mac DOS: DayStar LocalTalk PC Interface Board
 
+{% raw %}
+
 	Article: Q38083
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.0
@@ -82,3 +84,5 @@ permalink: /kb/038/Q38083/
 	
 	=============================================================================
 	
+
+{% endraw %}

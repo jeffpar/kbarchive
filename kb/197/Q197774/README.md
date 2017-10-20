@@ -6,6 +6,8 @@ permalink: /kb/197/Q197774/
 
 ## Q197774: Err Msg: This Program Is Set to Run in MS-DOS Mode...
 
+{% raw %}
+
 	Article: Q197774
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,2.0
@@ -98,3 +100,5 @@ permalink: /kb/197/Q197774/
 	
 	=============================================================================
 	
+
+{% endraw %}

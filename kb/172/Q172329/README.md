@@ -6,6 +6,8 @@ permalink: /kb/172/Q172329/
 
 ## Q172329: PRB: Error 459 Trying to Use Alternate Object Interface
 
+{% raw %}
+
 	Article: Q172329
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -117,3 +119,5 @@ permalink: /kb/172/Q172329/
 	
 	=============================================================================
 	
+
+{% endraw %}

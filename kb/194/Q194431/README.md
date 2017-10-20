@@ -6,6 +6,8 @@ permalink: /kb/194/Q194431/
 
 ## Q194431: Applications May Be Able to &quot;Listen&quot; on TCP or UDP Ports
 
+{% raw %}
+
 	Article: Q194431
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/194/Q194431/
 	
 	=============================================================================
 	
+
+{% endraw %}

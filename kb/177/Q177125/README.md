@@ -6,6 +6,8 @@ permalink: /kb/177/Q177125/
 
 ## Q177125: User Cannot Log On to LAN Because of RAS Logon Failures
 
+{% raw %}
+
 	Article: Q177125
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -116,3 +118,5 @@ permalink: /kb/177/Q177125/
 	
 	=============================================================================
 	
+
+{% endraw %}

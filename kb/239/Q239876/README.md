@@ -6,6 +6,8 @@ permalink: /kb/239/Q239876/
 
 ## Q239876: NFL Fever 2000: Main Screen Is Not Centered on Your Monitor
 
+{% raw %}
+
 	Article: Q239876
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -67,3 +69,5 @@ permalink: /kb/239/Q239876/
 	
 	=============================================================================
 	
+
+{% endraw %}

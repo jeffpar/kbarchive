@@ -6,6 +6,8 @@ permalink: /kb/246/Q246124/
 
 ## Q246124: MS-DOS 6.22 Year 2000 Information
 
+{% raw %}
+
 	Article: Q246124
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -37,3 +39,5 @@ permalink: /kb/246/Q246124/
 	
 	=============================================================================
 	
+
+{% endraw %}

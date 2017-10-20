@@ -6,6 +6,8 @@ permalink: /kb/103/Q103877/
 
 ## Q103877: DBLSPACE.LOG May Point to Hidden Directory or File
 
+{% raw %}
+
 	Article: Q103877
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -89,3 +91,5 @@ permalink: /kb/103/Q103877/
 	
 	=============================================================================
 	
+
+{% endraw %}

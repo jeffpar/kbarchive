@@ -6,6 +6,8 @@ permalink: /kb/132/Q132720/
 
 ## Q132720: SNA Server CPIC Allocate Error 20 (CM_PRODUCT_SPECIFIC_ERROR)
 
+{% raw %}
+
 	Article: Q132720
 	Product(s): Microsoft SNA Server
 	Version(s): 2.0,2.1,2.11,2.11 SP1,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1,4.0 SP2
@@ -196,3 +198,5 @@ permalink: /kb/132/Q132720/
 	
 	=============================================================================
 	
+
+{% endraw %}

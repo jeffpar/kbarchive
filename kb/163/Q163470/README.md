@@ -6,6 +6,8 @@ permalink: /kb/163/Q163470/
 
 ## Q163470: PATCH: Foxtools.hqx Upgrade to Prevent Setup Wizard Errors
 
+{% raw %}
+
 	Article: Q163470
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -80,3 +82,5 @@ permalink: /kb/163/Q163470/
 	
 	=============================================================================
 	
+
+{% endraw %}

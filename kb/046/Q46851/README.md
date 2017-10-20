@@ -6,6 +6,8 @@ permalink: /kb/046/Q46851/
 
 ## Q46851: Calling C Function That Uses getenv() Doesn't Work
 
+{% raw %}
+
 	Article: Q46851
 	Product(s): See article
 	Version(s): 4.50
@@ -53,3 +55,5 @@ permalink: /kb/046/Q46851/
 	  temp = getenv( "PATH" );
 	  printf( "Path: %s\nenviron: %x\n", temp, environ );
 	}
+
+{% endraw %}

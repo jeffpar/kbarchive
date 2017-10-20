@@ -6,6 +6,8 @@ permalink: /kb/104/Q104637/
 
 ## Q104637: HOWTO: Trap Arrow Keys in an Edit Control of a Dialog Box
 
+{% raw %}
+
 	Article: Q104637
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -126,3 +128,5 @@ permalink: /kb/104/Q104637/
 	
 	=============================================================================
 	
+
+{% endraw %}

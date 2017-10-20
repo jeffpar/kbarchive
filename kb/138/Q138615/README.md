@@ -6,6 +6,8 @@ permalink: /kb/138/Q138615/
 
 ## Q138615: PRB: Formset Forms Don't Switch If Chosen in Properties Window
 
+{% raw %}
+
 	Article: Q138615
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -72,3 +74,5 @@ permalink: /kb/138/Q138615/
 	
 	=============================================================================
 	
+
+{% endraw %}

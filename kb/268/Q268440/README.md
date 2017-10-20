@@ -6,6 +6,8 @@ permalink: /kb/268/Q268440/
 
 ## Q268440: INFO: MAPI Is Not Suitable for HTML Messages
 
+{% raw %}
+
 	Article: Q268440
 	Product(s): Microsoft Exchange
 	Version(s): 1.0,1.1,1.2,1.21,5.5
@@ -92,3 +94,5 @@ permalink: /kb/268/Q268440/
 	
 	=============================================================================
 	
+
+{% endraw %}

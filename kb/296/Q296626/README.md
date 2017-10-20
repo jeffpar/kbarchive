@@ -6,6 +6,8 @@ permalink: /kb/296/Q296626/
 
 ## Q296626: ASP0201: Invalid Default Script Language
 
+{% raw %}
+
 	Article: Q296626
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -73,3 +75,5 @@ permalink: /kb/296/Q296626/
 	
 	=============================================================================
 	
+
+{% endraw %}

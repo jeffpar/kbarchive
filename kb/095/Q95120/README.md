@@ -6,6 +6,8 @@ permalink: /kb/095/Q95120/
 
 ## Q95120: Using the Intel EtherExpress 16 MCA with WFWG 3.1
 
+{% raw %}
+
 	Article: Q95120
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -85,3 +87,5 @@ permalink: /kb/095/Q95120/
 	
 	=============================================================================
 	
+
+{% endraw %}

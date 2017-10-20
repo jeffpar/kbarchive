@@ -6,6 +6,8 @@ permalink: /kb/260/Q260557/
 
 ## Q260557: Microsoft Mail Password Recovery
 
+{% raw %}
+
 	Article: Q260557
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.0,2.0a,2.1,2.1a,2.1b,2.1c,2.1d,2.1e,2.1x,2.x,3.0,3.0a,3.0b,3.1,3.1a,3.2
@@ -37,3 +39,5 @@ permalink: /kb/260/Q260557/
 	
 	=============================================================================
 	
+
+{% endraw %}

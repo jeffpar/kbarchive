@@ -6,6 +6,8 @@ permalink: /kb/077/Q77930/
 
 ## Q77930: INFO: Modifying the System Menu of an MDI Child Window
 
+{% raw %}
+
 	Article: Q77930
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -95,3 +97,5 @@ permalink: /kb/077/Q77930/
 	
 	=============================================================================
 	
+
+{% endraw %}

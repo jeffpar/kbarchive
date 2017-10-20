@@ -6,6 +6,8 @@ permalink: /kb/171/Q171832/
 
 ## Q171832: FIX: Statement Builder Can Cause the Object Browser to Crash
 
+{% raw %}
+
 	Article: Q171832
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -62,3 +64,5 @@ permalink: /kb/171/Q171832/
 	
 	=============================================================================
 	
+
+{% endraw %}

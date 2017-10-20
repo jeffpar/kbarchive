@@ -6,6 +6,8 @@ permalink: /kb/153/Q153028/
 
 ## Q153028: XADM: How to Export Multiple (Secondary) E-mail Addresses
 
+{% raw %}
+
 	Article: Q153028
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -82,3 +84,5 @@ permalink: /kb/153/Q153028/
 	
 	=============================================================================
 	
+
+{% endraw %}

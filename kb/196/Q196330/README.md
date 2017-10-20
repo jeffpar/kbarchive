@@ -6,6 +6,8 @@ permalink: /kb/196/Q196330/
 
 ## Q196330: STOP 0x0000001E May Occur in Win32k.sys Under Stress
 
+{% raw %}
+
 	Article: Q196330
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -106,3 +108,5 @@ permalink: /kb/196/Q196330/
 	
 	=============================================================================
 	
+
+{% endraw %}

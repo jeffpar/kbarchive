@@ -6,6 +6,8 @@ permalink: /kb/089/Q89266/
 
 ## Q89266: Drawing a Box and Filling it with the CHR(177) Character
 
+{% raw %}
+
 	Article: Q89266
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -35,3 +37,5 @@ permalink: /kb/089/Q89266/
 	
 	=============================================================================
 	
+
+{% endraw %}

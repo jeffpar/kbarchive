@@ -6,6 +6,8 @@ permalink: /kb/045/Q45497/
 
 ## Q45497: How to Trap CTRL+C
 
+{% raw %}
+
 	Article: Q45497
 	Product(s): See article
 	Version(s): 5.10
@@ -37,3 +39,5 @@ permalink: /kb/045/Q45497/
 	
 	   CTRL.C - Code example for trapping the CTRL+C and CTRL+BREAK
 	   key combinations
+
+{% endraw %}

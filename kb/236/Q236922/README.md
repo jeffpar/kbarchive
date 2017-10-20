@@ -6,6 +6,8 @@ permalink: /kb/236/Q236922/
 
 ## Q236922: Event 201 Errors Logged Even When Licenses Are Available
 
+{% raw %}
+
 	Article: Q236922
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -78,3 +80,5 @@ permalink: /kb/236/Q236922/
 	
 	=============================================================================
 	
+
+{% endraw %}

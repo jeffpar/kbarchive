@@ -6,6 +6,8 @@ permalink: /kb/177/Q177290/
 
 ## Q177290: Configuring Internal DNS Server When Using Proxy Server
 
+{% raw %}
+
 	Article: Q177290
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -84,3 +86,5 @@ permalink: /kb/177/Q177290/
 	
 	=============================================================================
 	
+
+{% endraw %}

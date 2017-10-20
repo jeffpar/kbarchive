@@ -6,6 +6,8 @@ permalink: /kb/136/Q136651/
 
 ## Q136651: Shutdown Hangs After &quot;Please Wait While...&quot; Screen
 
+{% raw %}
+
 	Article: Q136651
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -64,3 +66,5 @@ permalink: /kb/136/Q136651/
 	
 	=============================================================================
 	
+
+{% endraw %}

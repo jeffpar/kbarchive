@@ -6,6 +6,8 @@ permalink: /kb/148/Q148205/
 
 ## Q148205: Frequently Asked Questions About Using V-Chat
 
+{% raw %}
+
 	Article: Q148205
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -87,3 +89,5 @@ permalink: /kb/148/Q148205/
 	
 	=============================================================================
 	
+
+{% endraw %}

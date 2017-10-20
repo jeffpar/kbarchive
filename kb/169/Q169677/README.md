@@ -6,6 +6,8 @@ permalink: /kb/169/Q169677/
 
 ## Q169677: XFOR: DXA Reports 249 Error with Error -1201
 
+{% raw %}
+
 	Article: Q169677
 	Product(s): Microsoft Exchange
 	Version(s): 5.00
@@ -103,3 +105,5 @@ permalink: /kb/169/Q169677/
 	
 	=============================================================================
 	
+
+{% endraw %}

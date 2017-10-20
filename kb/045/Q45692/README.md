@@ -6,6 +6,8 @@ permalink: /kb/045/Q45692/
 
 ## Q45692: Getting an Application Ready for Retail Release
 
+{% raw %}
+
 	Article: Q45692
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -90,3 +92,5 @@ permalink: /kb/045/Q45692/
 	
 	=============================================================================
 	
+
+{% endraw %}

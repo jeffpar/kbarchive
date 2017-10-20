@@ -6,6 +6,8 @@ permalink: /kb/047/Q47972/
 
 ## Q47972: FIX: F1001: srclist.c:1.59, Line 1153, Invalid COMMON in SAVE
 
+{% raw %}
+
 	Article: Q47972
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0,4.01,4.1,5.0
@@ -80,3 +82,5 @@ permalink: /kb/047/Q47972/
 	
 	=============================================================================
 	
+
+{% endraw %}

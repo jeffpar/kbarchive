@@ -6,6 +6,8 @@ permalink: /kb/182/Q182521/
 
 ## Q182521: XADM: AV Using Directory Import to Delete Windows NT Accounts
 
+{% raw %}
+
 	Article: Q182521
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -57,3 +59,5 @@ permalink: /kb/182/Q182521/
 	
 	=============================================================================
 	
+
+{% endraw %}

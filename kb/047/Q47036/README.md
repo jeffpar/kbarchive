@@ -6,6 +6,8 @@ permalink: /kb/047/Q47036/
 
 ## Q47036: /CP:X Is Not Valid When Linking Protected-Mode Programs
 
+{% raw %}
+
 	Article: Q47036
 	Product(s): See article
 	Version(s): 5.01.21 | 5.01.21
@@ -47,3 +49,5 @@ permalink: /kb/047/Q47036/
 	Protected-mode applications are not given a 64K default data segment;
 	they are only allocated the space that they need. This is documented
 	on Page 33 of the same section and manual listed above.
+
+{% endraw %}

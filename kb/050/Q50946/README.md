@@ -6,6 +6,8 @@ permalink: /kb/050/Q50946/
 
 ## Q50946: Can't Directly Delete a Record from a BASIC Random Access File
 
+{% raw %}
+
 	Article: Q50946
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -59,3 +61,5 @@ permalink: /kb/050/Q50946/
 	32K chunks, new space will only be gained if a block of 32K can be
 	removed. To gain this space you must run ISAMPACK.EXE. ISAM file
 	support is available for MS-DOS only.
+
+{% endraw %}

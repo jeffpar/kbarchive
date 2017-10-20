@@ -6,6 +6,8 @@ permalink: /kb/122/Q122133/
 
 ## Q122133: Err Msg: Unable to Locate Mass Storage Device
 
+{% raw %}
+
 	Article: Q122133
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/122/Q122133/
 	
 	=============================================================================
 	
+
+{% endraw %}

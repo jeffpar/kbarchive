@@ -6,6 +6,8 @@ permalink: /kb/168/Q168444/
 
 ## Q168444: Windows 95 Setup Problems with Plug and Play Program Active
 
+{% raw %}
+
 	Article: Q168444
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -70,3 +72,5 @@ permalink: /kb/168/Q168444/
 	
 	=============================================================================
 	
+
+{% endraw %}

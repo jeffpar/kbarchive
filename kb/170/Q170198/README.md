@@ -6,6 +6,8 @@ permalink: /kb/170/Q170198/
 
 ## Q170198: HOWTO: STL Sample for gslice::(length, start, stride) Functions
 
+{% raw %}
+
 	Article: Q170198
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0,6.0
@@ -215,3 +217,5 @@ permalink: /kb/170/Q170198/
 	
 	=============================================================================
 	
+
+{% endraw %}

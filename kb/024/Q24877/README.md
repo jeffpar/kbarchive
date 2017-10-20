@@ -6,6 +6,8 @@ permalink: /kb/024/Q24877/
 
 ## Q24877: &quot;?CANNOT DISPLAY&quot; Error Not Documented in CodeView Documents
 
+{% raw %}
+
 	Article: Q24877
 	Product(s): See article
 	Version(s): 2.00 2.10 2.20 2.30 | 2.20 2.30
@@ -26,3 +28,5 @@ permalink: /kb/024/Q24877/
 	The "?CANNOT DISPLAY" error message will be displayed in cases where
 	the expression evaluator cannot return a value, such as a function
 	returning void.
+
+{% endraw %}

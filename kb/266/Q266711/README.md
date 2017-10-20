@@ -6,6 +6,8 @@ permalink: /kb/266/Q266711/
 
 ## Q266711: XFOR: CCMC Can't Route Mail with Headers Larger Than 4 KB
 
+{% raw %}
+
 	Article: Q266711
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -107,3 +109,5 @@ permalink: /kb/266/Q266711/
 	
 	=============================================================================
 	
+
+{% endraw %}

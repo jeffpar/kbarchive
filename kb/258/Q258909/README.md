@@ -6,6 +6,8 @@ permalink: /kb/258/Q258909/
 
 ## Q258909: Err Msg: NBA2000 Caused a General Protection Fault in Module...
 
+{% raw %}
+
 	Article: Q258909
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -63,3 +65,5 @@ permalink: /kb/258/Q258909/
 	
 	=============================================================================
 	
+
+{% endraw %}

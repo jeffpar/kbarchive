@@ -6,6 +6,8 @@ permalink: /kb/320/Q320020/
 
 ## Q320020: Dungeon Siege: Network Ports Required for Multiplayer Game
 
+{% raw %}
+
 	Article: Q320020
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -70,3 +72,5 @@ permalink: /kb/320/Q320020/
 	
 	=============================================================================
 	
+
+{% endraw %}

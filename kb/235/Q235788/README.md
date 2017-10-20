@@ -6,6 +6,8 @@ permalink: /kb/235/Q235788/
 
 ## Q235788: SMS: Distribution Mgr Process PKG File and Update Distribution
 
+{% raw %}
+
 	Article: Q235788
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -73,3 +75,5 @@ permalink: /kb/235/Q235788/
 	
 	=============================================================================
 	
+
+{% endraw %}

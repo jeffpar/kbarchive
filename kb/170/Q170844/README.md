@@ -6,6 +6,8 @@ permalink: /kb/170/Q170844/
 
 ## Q170844: Msbatch.inf Parameters: Installing PCMCIA Network Adapter Driver
 
+{% raw %}
+
 	Article: Q170844
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -154,3 +156,5 @@ permalink: /kb/170/Q170844/
 	
 	=============================================================================
 	
+
+{% endraw %}

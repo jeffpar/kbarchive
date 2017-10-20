@@ -6,6 +6,8 @@ permalink: /kb/153/Q153205/
 
 ## Q153205: Limit to Site Does Not Work if You Distribute to a Site Group
 
+{% raw %}
+
 	Article: Q153205
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -48,3 +50,5 @@ permalink: /kb/153/Q153205/
 	
 	=============================================================================
 	
+
+{% endraw %}

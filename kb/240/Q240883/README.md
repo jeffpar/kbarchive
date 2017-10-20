@@ -6,6 +6,8 @@ permalink: /kb/240/Q240883/
 
 ## Q240883: Shadow Folders Are Not Updated When You Use Mapped Drives
 
+{% raw %}
+
 	Article: Q240883
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/240/Q240883/
 	
 	=============================================================================
 	
+
+{% endraw %}

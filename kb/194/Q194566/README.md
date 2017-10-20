@@ -6,6 +6,8 @@ permalink: /kb/194/Q194566/
 
 ## Q194566: WD97: WordPerfect 5.x File Appears Corrupt When Opened in Word
 
+{% raw %}
+
 	Article: Q194566
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -107,3 +109,5 @@ permalink: /kb/194/Q194566/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170758/
 
 ## Q170758: XADM: Delivery Restrictions for Custom Recipients Fail
 
+{% raw %}
+
 	Article: Q170758
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.0 SP1
@@ -53,3 +55,5 @@ permalink: /kb/170/Q170758/
 	
 	=============================================================================
 	
+
+{% endraw %}

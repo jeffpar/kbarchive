@@ -6,6 +6,8 @@ permalink: /kb/163/Q163008/
 
 ## Q163008: APPC Application Fails After SP1 Applied to SNA NT Client
 
+{% raw %}
+
 	Article: Q163008
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1
@@ -67,3 +69,5 @@ permalink: /kb/163/Q163008/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/270/Q270780/
 
 ## Q270780: ELL: Virtual Challenge Stops Responding When You Press Reset
 
+{% raw %}
+
 	Article: Q270780
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/270/Q270780/
 	
 	=============================================================================
 	
+
+{% endraw %}

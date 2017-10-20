@@ -6,6 +6,8 @@ permalink: /kb/129/Q129795/
 
 ## Q129795: PRB: Excel Doesn't Use Container's Name for Embedded Objects
 
+{% raw %}
+
 	Article: Q129795
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -73,3 +75,5 @@ permalink: /kb/129/Q129795/
 	
 	=============================================================================
 	
+
+{% endraw %}

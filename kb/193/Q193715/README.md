@@ -6,6 +6,8 @@ permalink: /kb/193/Q193715/
 
 ## Q193715: WD97: Unable to Open Data Source Using MS Query
 
+{% raw %}
+
 	Article: Q193715
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -164,3 +166,5 @@ permalink: /kb/193/Q193715/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/307/Q307032/
 
 ## Q307032: Encarta 2001: Speech Incompatibility Warning During Installation
 
+{% raw %}
+
 	Article: Q307032
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/307/Q307032/
 	
 	=============================================================================
 	
+
+{% endraw %}

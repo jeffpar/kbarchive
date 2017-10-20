@@ -6,6 +6,8 @@ permalink: /kb/083/Q83514/
 
 ## Q83514: Windows Err Msg: Inadequate DPMI Server
 
+{% raw %}
+
 	Article: Q83514
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/083/Q83514/
 	
 	=============================================================================
 	
+
+{% endraw %}

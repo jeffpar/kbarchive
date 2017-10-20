@@ -6,6 +6,8 @@ permalink: /kb/316/Q316772/
 
 ## Q316772: XADM: Cluster Registry Checkpoint Event ID 1024 Err Mssg Logged
 
+{% raw %}
+
 	Article: Q316772
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.5
@@ -93,3 +95,5 @@ permalink: /kb/316/Q316772/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147938/
 
 ## Q147938: RDO: Getting Data from Temp Tables Created by Stored Procedure
 
+{% raw %}
+
 	Article: Q147938
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -161,3 +163,5 @@ permalink: /kb/147/Q147938/
 	
 	=============================================================================
 	
+
+{% endraw %}

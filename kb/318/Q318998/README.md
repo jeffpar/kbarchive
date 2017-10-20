@@ -6,6 +6,8 @@ permalink: /kb/318/Q318998/
 
 ## Q318998: How To Empty The Cache In Internet Explorer 5.x
 
+{% raw %}
+
 	Article: Q318998
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/318/Q318998/
 	
 	=============================================================================
 	
+
+{% endraw %}

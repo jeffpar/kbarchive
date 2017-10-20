@@ -6,6 +6,8 @@ permalink: /kb/135/Q135621/
 
 ## Q135621: NetWare Transaction Tracking System (TTS) Not Detected
 
+{% raw %}
+
 	Article: Q135621
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -68,3 +70,5 @@ permalink: /kb/135/Q135621/
 	
 	=============================================================================
 	
+
+{% endraw %}

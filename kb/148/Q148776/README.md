@@ -6,6 +6,8 @@ permalink: /kb/148/Q148776/
 
 ## Q148776: How to Use the New API Functions in Visual FoxPro Version 3.0b
 
+{% raw %}
+
 	Article: Q148776
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,6.0
@@ -301,3 +303,5 @@ permalink: /kb/148/Q148776/
 	
 	=============================================================================
 	
+
+{% endraw %}

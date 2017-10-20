@@ -6,6 +6,8 @@ permalink: /kb/253/Q253904/
 
 ## Q253904: FS2000: The Transponder and ATC Features
 
+{% raw %}
+
 	Article: Q253904
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -136,3 +138,5 @@ permalink: /kb/253/Q253904/
 	
 	=============================================================================
 	
+
+{% endraw %}

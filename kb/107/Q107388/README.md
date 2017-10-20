@@ -6,6 +6,8 @@ permalink: /kb/107/Q107388/
 
 ## Q107388: Flight Simulator: Select SC1 File Button Not Visible
 
+{% raw %}
+
 	Article: Q107388
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -50,3 +52,5 @@ permalink: /kb/107/Q107388/
 	
 	=============================================================================
 	
+
+{% endraw %}

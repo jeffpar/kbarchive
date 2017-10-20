@@ -6,6 +6,8 @@ permalink: /kb/172/Q172930/
 
 ## Q172930: Removing Bypass Traverse Checking Causes Copy to Drop Streams
 
+{% raw %}
+
 	Article: Q172930
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -74,3 +76,5 @@ permalink: /kb/172/Q172930/
 	
 	=============================================================================
 	
+
+{% endraw %}

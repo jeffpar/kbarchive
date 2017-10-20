@@ -6,6 +6,8 @@ permalink: /kb/134/Q134585/
 
 ## Q134585: Terminal Window Displays Random Characters During Logon
 
+{% raw %}
+
 	Article: Q134585
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -47,3 +49,5 @@ permalink: /kb/134/Q134585/
 	
 	=============================================================================
 	
+
+{% endraw %}

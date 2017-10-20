@@ -6,6 +6,8 @@ permalink: /kb/307/Q307750/
 
 ## Q307750: End-User Client Does Not Connect After Configuration Change
 
+{% raw %}
+
 	Article: Q307750
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -104,3 +106,5 @@ permalink: /kb/307/Q307750/
 	
 	=============================================================================
 	
+
+{% endraw %}

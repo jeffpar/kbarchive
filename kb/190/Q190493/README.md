@@ -6,6 +6,8 @@ permalink: /kb/190/Q190493/
 
 ## Q190493: FIX: &quot;Locate File&quot; Message When Running a PDW Setup App
 
+{% raw %}
+
 	Article: Q190493
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -69,3 +71,5 @@ permalink: /kb/190/Q190493/
 	
 	=============================================================================
 	
+
+{% endraw %}

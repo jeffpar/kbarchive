@@ -6,6 +6,8 @@ permalink: /kb/257/Q257799/
 
 ## Q257799: SMS: How to Use Heartbeat Discovery
 
+{% raw %}
+
 	Article: Q257799
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -96,3 +98,5 @@ permalink: /kb/257/Q257799/
 	
 	=============================================================================
 	
+
+{% endraw %}

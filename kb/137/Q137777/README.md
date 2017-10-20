@@ -6,6 +6,8 @@ permalink: /kb/137/Q137777/
 
 ## Q137777: PRB: Memo Field Contents Not Shown in the Debug Window
 
+{% raw %}
+
 	Article: Q137777
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -52,3 +54,5 @@ permalink: /kb/137/Q137777/
 	
 	=============================================================================
 	
+
+{% endraw %}

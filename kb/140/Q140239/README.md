@@ -6,6 +6,8 @@ permalink: /kb/140/Q140239/
 
 ## Q140239: SMODE Tool Does Not Affect Client for NetWare Networks
 
+{% raw %}
+
 	Article: Q140239
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -75,3 +77,5 @@ permalink: /kb/140/Q140239/
 	
 	=============================================================================
 	
+
+{% endraw %}

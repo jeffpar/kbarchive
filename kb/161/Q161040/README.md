@@ -6,6 +6,8 @@ permalink: /kb/161/Q161040/
 
 ## Q161040: Host Initiated BIND Is Rejected with A BIND -RSP (Sense=0815)
 
+{% raw %}
+
 	Article: Q161040
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -96,3 +98,5 @@ permalink: /kb/161/Q161040/
 	
 	=============================================================================
 	
+
+{% endraw %}

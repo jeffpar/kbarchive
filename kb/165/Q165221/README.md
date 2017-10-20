@@ -6,6 +6,8 @@ permalink: /kb/165/Q165221/
 
 ## Q165221: 3270 Applet Displays a Message if Preferred LU Not Available
 
+{% raw %}
+
 	Article: Q165221
 	Product(s): Microsoft SNA Server
 	Version(s): winnt:3.0
@@ -57,3 +59,5 @@ permalink: /kb/165/Q165221/
 	
 	=============================================================================
 	
+
+{% endraw %}

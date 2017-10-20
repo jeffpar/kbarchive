@@ -6,6 +6,8 @@ permalink: /kb/112/Q112275/
 
 ## Q112275: Mac Wkst: Address Error at _CopyRgn
 
+{% raw %}
+
 	Article: Q112275
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.1
@@ -54,3 +56,5 @@ permalink: /kb/112/Q112275/
 	
 	=============================================================================
 	
+
+{% endraw %}

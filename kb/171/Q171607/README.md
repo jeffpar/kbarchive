@@ -6,6 +6,8 @@ permalink: /kb/171/Q171607/
 
 ## Q171607: WD97: Borders Print Poorly with Hewlett-Packard 820Cse
 
+{% raw %}
+
 	Article: Q171607
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -60,3 +62,5 @@ permalink: /kb/171/Q171607/
 	
 	=============================================================================
 	
+
+{% endraw %}

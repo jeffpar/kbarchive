@@ -6,6 +6,8 @@ permalink: /kb/131/Q131953/
 
 ## Q131953: Flight Simulator 5.1: Disk 4 (Setup) Contents (3.5 1.44 MB)
 
+{% raw %}
+
 	Article: Q131953
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.1
@@ -49,3 +51,5 @@ permalink: /kb/131/Q131953/
 	
 	=============================================================================
 	
+
+{% endraw %}

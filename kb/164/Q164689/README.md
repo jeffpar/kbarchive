@@ -6,6 +6,8 @@ permalink: /kb/164/Q164689/
 
 ## Q164689: Can't Create Pushpin with Insufficient Disk Space
 
+{% raw %}
+
 	Article: Q164689
 	Product(s): Microsoft Automap
 	Version(s): 5.0
@@ -56,3 +58,5 @@ permalink: /kb/164/Q164689/
 	
 	=============================================================================
 	
+
+{% endraw %}

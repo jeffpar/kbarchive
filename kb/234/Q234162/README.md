@@ -6,6 +6,8 @@ permalink: /kb/234/Q234162/
 
 ## Q234162: SMS: Remote Control May Not Work If User Name Contains a Space
 
+{% raw %}
+
 	Article: Q234162
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -63,3 +65,5 @@ permalink: /kb/234/Q234162/
 	
 	=============================================================================
 	
+
+{% endraw %}

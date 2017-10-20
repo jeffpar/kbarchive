@@ -6,6 +6,8 @@ permalink: /kb/064/Q64521/
 
 ## Q64521: Heap Management and Why malloc() May GP Fault in OS/2
 
+{% raw %}
+
 	Article: Q64521
 	Product(s): See article
 	Version(s): 5.10 6.00
@@ -166,3 +168,5 @@ permalink: /kb/064/Q64521/
 	good debugging plan to check the heap with these functions before each
 	new malloc() call, until the heap-damaging area of the code is
 	isolated.
+
+{% endraw %}

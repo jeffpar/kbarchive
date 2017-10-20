@@ -6,6 +6,8 @@ permalink: /kb/188/Q188012/
 
 ## Q188012: WD97: Rows or Columns Missing from Pasted Microsoft Excel Sheet
 
+{% raw %}
+
 	Article: Q188012
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/188/Q188012/
 	
 	=============================================================================
 	
+
+{% endraw %}

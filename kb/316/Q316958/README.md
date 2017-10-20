@@ -6,6 +6,8 @@ permalink: /kb/316/Q316958/
 
 ## Q316958: Flight Simulator 2002: Blank Screen Starting Flight Simulator
 
+{% raw %}
+
 	Article: Q316958
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -246,3 +248,5 @@ permalink: /kb/316/Q316958/
 	
 	=============================================================================
 	
+
+{% endraw %}

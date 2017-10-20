@@ -6,6 +6,8 @@ permalink: /kb/166/Q166541/
 
 ## Q166541: XADM: Random Access Violation in Store.exe (Edb.dll)
 
+{% raw %}
+
 	Article: Q166541
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -141,3 +143,5 @@ permalink: /kb/166/Q166541/
 	
 	=============================================================================
 	
+
+{% endraw %}

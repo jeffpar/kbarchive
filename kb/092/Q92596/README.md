@@ -6,6 +6,8 @@ permalink: /kb/092/Q92596/
 
 ## Q92596: WFWG Upgrade Can't Find Windows When Automated Setup is Used
 
+{% raw %}
+
 	Article: Q92596
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -56,3 +58,5 @@ permalink: /kb/092/Q92596/
 	
 	=============================================================================
 	
+
+{% endraw %}

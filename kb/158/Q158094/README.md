@@ -6,6 +6,8 @@ permalink: /kb/158/Q158094/
 
 ## Q158094: Do Not Run System Agent While Playing GEX
 
+{% raw %}
+
 	Article: Q158094
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/158/Q158094/
 	
 	=============================================================================
 	
+
+{% endraw %}

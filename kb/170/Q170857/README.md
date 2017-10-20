@@ -6,6 +6,8 @@ permalink: /kb/170/Q170857/
 
 ## Q170857: Error Message: HTTP/1.0 403 Access Forbidden
 
+{% raw %}
+
 	Article: Q170857
 	Product(s): Internet Information Server
 	Version(s): WinNT:2.0,3.0
@@ -54,3 +56,5 @@ permalink: /kb/170/Q170857/
 	
 	=============================================================================
 	
+
+{% endraw %}

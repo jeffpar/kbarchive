@@ -6,6 +6,8 @@ permalink: /kb/137/Q137286/
 
 ## Q137286: Printer Cartridge Fonts Not Available to Applications
 
+{% raw %}
+
 	Article: Q137286
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -46,3 +48,5 @@ permalink: /kb/137/Q137286/
 	
 	=============================================================================
 	
+
+{% endraw %}

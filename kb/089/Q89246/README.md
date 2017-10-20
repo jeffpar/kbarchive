@@ -6,6 +6,8 @@ permalink: /kb/089/Q89246/
 
 ## Q89246: Windows Err Msg: Unable to Connect to a Network Drive
 
+{% raw %}
+
 	Article: Q89246
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/089/Q89246/
 	
 	=============================================================================
 	
+
+{% endraw %}

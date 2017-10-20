@@ -6,6 +6,8 @@ permalink: /kb/174/Q174169/
 
 ## Q174169: XADM: WinNT Accounts for CRs Cannot Be Deleted with Bulk Import
 
+{% raw %}
+
 	Article: Q174169
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -46,3 +48,5 @@ permalink: /kb/174/Q174169/
 	
 	=============================================================================
 	
+
+{% endraw %}

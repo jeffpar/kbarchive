@@ -6,6 +6,8 @@ permalink: /kb/165/Q165853/
 
 ## Q165853: SNA Server Eval and SNA Workstation Show Wrong Splash Screen
 
+{% raw %}
+
 	Article: Q165853
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/165/Q165853/
 	
 	=============================================================================
 	
+
+{% endraw %}

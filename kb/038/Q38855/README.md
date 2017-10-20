@@ -6,6 +6,8 @@ permalink: /kb/038/Q38855/
 
 ## Q38855: Use of CRLF.EXE
 
+{% raw %}
+
 	Article: Q38855
 	Product(s): See article
 	Version(s): 2.00
@@ -39,3 +41,5 @@ permalink: /kb/038/Q38855/
 	<ascii> is given as 0, control characters will be removed rather than
 	translated. If /c is not given, the program will prompt for
 	translation characters.
+
+{% endraw %}

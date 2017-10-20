@@ -6,6 +6,8 @@ permalink: /kb/170/Q170808/
 
 ## Q170808: Net.exe Duplicate Name Error 52 with Multihomed Computer
 
+{% raw %}
+
 	Article: Q170808
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51 4.00 95 3.11
@@ -56,3 +58,5 @@ permalink: /kb/170/Q170808/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/030/Q30828/
 
 ## Q30828: Tags Let You Use the Same TOOLS.INI File for M and MEP
 
+{% raw %}
+
 	Article: Q30828
 	Product(s): See article
 	Version(s): 1.00
@@ -59,3 +61,5 @@ permalink: /kb/030/Q30828/
 	5.10, MASM Version 5.10, FORTRAN Version 4.10, PASCAL Version 4.10,
 	and BASCOM Version 6.00. Under DOS, this information is displayed with
 	the DOS VER command.
+
+{% endraw %}

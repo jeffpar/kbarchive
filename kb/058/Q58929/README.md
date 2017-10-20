@@ -6,6 +6,8 @@ permalink: /kb/058/Q58929/
 
 ## Q58929: BIND Error &quot;Import By Ordinal Not Defined: DOSCALLS.5&quot;
 
+{% raw %}
+
 	Article: Q58929
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -38,3 +40,5 @@ permalink: /kb/058/Q58929/
 	OS2.LIB. For example:
 	
 	   BIND hello.exe c:\c510\lib\doscalls.lib -o hellob.exe
+
+{% endraw %}

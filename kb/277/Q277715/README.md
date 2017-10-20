@@ -6,6 +6,8 @@ permalink: /kb/277/Q277715/
 
 ## Q277715: BUG: ExitWindowsEx Function Fails to Shut Down the System
 
+{% raw %}
+
 	Article: Q277715
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6,4.0 SP6a
@@ -60,3 +62,5 @@ permalink: /kb/277/Q277715/
 	
 	=============================================================================
 	
+
+{% endraw %}

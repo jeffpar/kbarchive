@@ -6,6 +6,8 @@ permalink: /kb/149/Q149673/
 
 ## Q149673: Unexpected Reinstallation of SMS Client with a New SMSID
 
+{% raw %}
+
 	Article: Q149673
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -56,3 +58,5 @@ permalink: /kb/149/Q149673/
 	
 	=============================================================================
 	
+
+{% endraw %}

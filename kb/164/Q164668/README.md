@@ -6,6 +6,8 @@ permalink: /kb/164/Q164668/
 
 ## Q164668: FIX: Small Portion of Win32 Documentation Missing From VCEE 4.2
 
+{% raw %}
+
 	Article: Q164668
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.2
@@ -62,3 +64,5 @@ permalink: /kb/164/Q164668/
 	
 	=============================================================================
 	
+
+{% endraw %}

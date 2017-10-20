@@ -6,6 +6,8 @@ permalink: /kb/168/Q168367/
 
 ## Q168367: XADM: Error Creating New Address
 
+{% raw %}
+
 	Article: Q168367
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -87,3 +89,5 @@ permalink: /kb/168/Q168367/
 	
 	=============================================================================
 	
+
+{% endraw %}

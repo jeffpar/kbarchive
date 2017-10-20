@@ -6,6 +6,8 @@ permalink: /kb/111/Q111945/
 
 ## Q111945: X400: Err Msg: Incoming Invalid SPDU on Connection X:
 
+{% raw %}
+
 	Article: Q111945
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -43,3 +45,5 @@ permalink: /kb/111/Q111945/
 	
 	=============================================================================
 	
+
+{% endraw %}

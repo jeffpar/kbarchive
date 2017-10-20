@@ -6,6 +6,8 @@ permalink: /kb/131/Q131785/
 
 ## Q131785: Cannot Find Home Directory Share on Windows NT Server
 
+{% raw %}
+
 	Article: Q131785
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -47,3 +49,5 @@ permalink: /kb/131/Q131785/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245120/
 
 ## Q245120: &quot;STOP 0x0000003F&quot; When NAI Antivirus Software Is Installed
 
+{% raw %}
+
 	Article: Q245120
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/245/Q245120/
 	
 	=============================================================================
 	
+
+{% endraw %}

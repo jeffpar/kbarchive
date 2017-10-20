@@ -6,6 +6,8 @@ permalink: /kb/189/Q189682/
 
 ## Q189682: HOWTO: Bind a DataList or DataCombo to a Recordset at Run-Time
 
+{% raw %}
+
 	Article: Q189682
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/189/Q189682/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143380/
 
 ## Q143380: XGEN: Exchange Server Services and Their Dependencies
 
+{% raw %}
+
 	Article: Q143380
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -91,3 +93,5 @@ permalink: /kb/143/Q143380/
 	
 	=============================================================================
 	
+
+{% endraw %}

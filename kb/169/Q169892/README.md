@@ -6,6 +6,8 @@ permalink: /kb/169/Q169892/
 
 ## Q169892: Host Print Transform Can Now Be Configured by SNA Server
 
+{% raw %}
+
 	Article: Q169892
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -362,3 +364,5 @@ permalink: /kb/169/Q169892/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/223/Q223080/
 
 ## Q223080: FIX: ADODC Errors When RecordSet Property is set to NULL
 
+{% raw %}
+
 	Article: Q223080
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -97,3 +99,5 @@ permalink: /kb/223/Q223080/
 	
 	=============================================================================
 	
+
+{% endraw %}

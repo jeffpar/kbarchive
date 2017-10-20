@@ -6,6 +6,8 @@ permalink: /kb/094/Q94342/
 
 ## Q94342: Alternative to List Prompt Files Option in .SCX
 
+{% raw %}
+
 	Article: Q94342
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
@@ -83,3 +85,5 @@ permalink: /kb/094/Q94342/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190411/
 
 ## Q190411: HOWTO: Bind a DataReport To an ADO Recordset at Run Time
 
+{% raw %}
+
 	Article: Q190411
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.5,2.6,6.0
@@ -160,3 +162,5 @@ permalink: /kb/190/Q190411/
 	
 	=============================================================================
 	
+
+{% endraw %}

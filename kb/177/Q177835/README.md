@@ -6,6 +6,8 @@ permalink: /kb/177/Q177835/
 
 ## Q177835: XFOR: Extended Characters on Addresses Are Not Recognized
 
+{% raw %}
+
 	Article: Q177835
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -51,3 +53,5 @@ permalink: /kb/177/Q177835/
 	
 	=============================================================================
 	
+
+{% endraw %}

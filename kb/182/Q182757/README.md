@@ -6,6 +6,8 @@ permalink: /kb/182/Q182757/
 
 ## Q182757: WD97: Tables Appear Incomplete in File Open Preview
 
+{% raw %}
+
 	Article: Q182757
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/182/Q182757/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197845/
 
 ## Q197845: COMPAQ Server with System Disk on SMART-2 Array May Hang
 
+{% raw %}
+
 	Article: Q197845
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/197/Q197845/
 	
 	=============================================================================
 	
+
+{% endraw %}

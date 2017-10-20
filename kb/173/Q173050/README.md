@@ -6,6 +6,8 @@ permalink: /kb/173/Q173050/
 
 ## Q173050: ODBCTXT.EXE: ODBC API Declare Statements Text File
 
+{% raw %}
+
 	Article: Q173050
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -60,3 +62,5 @@ permalink: /kb/173/Q173050/
 	
 	=============================================================================
 	
+
+{% endraw %}

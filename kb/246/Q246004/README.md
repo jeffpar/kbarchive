@@ -6,6 +6,8 @@ permalink: /kb/246/Q246004/
 
 ## Q246004: 5250 and 3270 Applets Do Not Find SNA Server
 
+{% raw %}
+
 	Article: Q246004
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 (all SP),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -69,3 +71,5 @@ permalink: /kb/246/Q246004/
 	
 	=============================================================================
 	
+
+{% endraw %}

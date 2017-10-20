@@ -6,6 +6,8 @@ permalink: /kb/184/Q184891/
 
 ## Q184891: Server.HTMLEncode Garbles Extended Characters
 
+{% raw %}
+
 	Article: Q184891
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -83,3 +85,5 @@ permalink: /kb/184/Q184891/
 	
 	=============================================================================
 	
+
+{% endraw %}

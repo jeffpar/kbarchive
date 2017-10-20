@@ -6,6 +6,8 @@ permalink: /kb/171/Q171646/
 
 ## Q171646: Access 97 Step by Step Corrections and Comments
 
+{% raw %}
+
 	Article: Q171646
 	Product(s): Microsoft Press
 	Version(s): 
@@ -508,3 +510,5 @@ permalink: /kb/171/Q171646/
 	
 	=============================================================================
 	
+
+{% endraw %}

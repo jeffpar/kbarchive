@@ -6,6 +6,8 @@ permalink: /kb/138/Q138363/
 
 ## Q138363: Err Msg: The Registration Wizard Was Unable to Locate...
 
+{% raw %}
+
 	Article: Q138363
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -67,3 +69,5 @@ permalink: /kb/138/Q138363/
 	
 	=============================================================================
 	
+
+{% endraw %}

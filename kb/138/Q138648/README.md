@@ -6,6 +6,8 @@ permalink: /kb/138/Q138648/
 
 ## Q138648: CLEAR ALL Command Releases Objects Added to _SCREEN
 
+{% raw %}
+
 	Article: Q138648
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -48,3 +50,5 @@ permalink: /kb/138/Q138648/
 	
 	=============================================================================
 	
+
+{% endraw %}

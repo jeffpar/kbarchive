@@ -6,6 +6,8 @@ permalink: /kb/176/Q176031/
 
 ## Q176031: STOP 0x0000003F Caused by Fpnwsrv.sys
 
+{% raw %}
+
 	Article: Q176031
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -79,3 +81,5 @@ permalink: /kb/176/Q176031/
 	
 	=============================================================================
 	
+
+{% endraw %}

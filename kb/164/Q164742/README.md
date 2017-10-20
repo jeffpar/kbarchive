@@ -6,6 +6,8 @@ permalink: /kb/164/Q164742/
 
 ## Q164742: PRB: Error Message Cannot Load 32-bit DLL
 
+{% raw %}
+
 	Article: Q164742
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0 3.0b 5.0 6.0
@@ -76,3 +78,5 @@ permalink: /kb/164/Q164742/
 	
 	=============================================================================
 	
+
+{% endraw %}

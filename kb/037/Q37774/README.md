@@ -6,6 +6,8 @@ permalink: /kb/037/Q37774/
 
 ## Q37774: &quot;Hit Any Key...&quot; If CHAIN or RUN from Error Handler; BC /O
 
+{% raw %}
+
 	Article: Q37774
 	Product(s): See article
 	Version(s): 4.00b 4.50
@@ -53,3 +55,5 @@ permalink: /kb/037/Q37774/
 	leave:
 	   CHAIN "a"
 	   stop
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/274/Q274149/
 
 ## Q274149: Cookies Are Not Marked as Secure in IIS
 
+{% raw %}
+
 	Article: Q274149
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -223,3 +225,5 @@ permalink: /kb/274/Q274149/
 	
 	=============================================================================
 	
+
+{% endraw %}

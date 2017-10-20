@@ -6,6 +6,8 @@ permalink: /kb/243/Q243852/
 
 ## Q243852: &quot;STOP 0x00000024&quot; Error Message with Double-Take Software
 
+{% raw %}
+
 	Article: Q243852
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -67,3 +69,5 @@ permalink: /kb/243/Q243852/
 	
 	=============================================================================
 	
+
+{% endraw %}

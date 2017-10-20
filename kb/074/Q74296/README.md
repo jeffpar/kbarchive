@@ -6,6 +6,8 @@ permalink: /kb/074/Q74296/
 
 ## Q74296: EDLIN Saves a Backup File when editing; EDIT Does Not
 
+{% raw %}
+
 	Article: Q74296
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -52,3 +54,5 @@ permalink: /kb/074/Q74296/
 	
 	=============================================================================
 	
+
+{% endraw %}

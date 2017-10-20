@@ -6,6 +6,8 @@ permalink: /kb/131/Q131265/
 
 ## Q131265: Use Exclamation Mark (!) Notation for Precise Referencing
 
+{% raw %}
+
 	Article: Q131265
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -97,3 +99,5 @@ permalink: /kb/131/Q131265/
 	
 	=============================================================================
 	
+
+{% endraw %}

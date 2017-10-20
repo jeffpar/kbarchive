@@ -6,6 +6,8 @@ permalink: /kb/165/Q165256/
 
 ## Q165256: WD97: Numbering Gallery Retains Custom Scheme After Exiting
 
+{% raw %}
+
 	Article: Q165256
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -100,3 +102,5 @@ permalink: /kb/165/Q165256/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98260/
 
 ## Q98260: PC WFW: 3.0b Server Version Disk 1 &#91;3.5, 720K&#93;
 
+{% raw %}
+
 	Article: Q98260
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -95,3 +97,5 @@ permalink: /kb/098/Q98260/
 	
 	=============================================================================
 	
+
+{% endraw %}

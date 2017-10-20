@@ -6,6 +6,8 @@ permalink: /kb/037/Q37932/
 
 ## Q37932: Mac DOS: System Requirements for Microsoft Mail (MS-DOS Client)
 
+{% raw %}
+
 	Article: Q37932
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.0,3.1
@@ -69,3 +71,5 @@ permalink: /kb/037/Q37932/
 	
 	=============================================================================
 	
+
+{% endraw %}

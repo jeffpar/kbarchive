@@ -6,6 +6,8 @@ permalink: /kb/293/Q293653/
 
 ## Q293653: BUG: Access ODBC Driver Incorrectly Maps Unicode Datatypes
 
+{% raw %}
+
 	Article: Q293653
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 4.0
@@ -73,3 +75,5 @@ permalink: /kb/293/Q293653/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/083/Q83993/
 
 ## Q83993: PRB: No Files Copied Installing Windows SDK 3.1
 
+{% raw %}
+
 	Article: Q83993
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -60,3 +62,5 @@ permalink: /kb/083/Q83993/
 	
 	=============================================================================
 	
+
+{% endraw %}

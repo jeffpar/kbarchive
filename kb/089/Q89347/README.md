@@ -6,6 +6,8 @@ permalink: /kb/089/Q89347/
 
 ## Q89347: Selecting Multiple Directories in File Manager
 
+{% raw %}
+
 	Article: Q89347
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -79,3 +81,5 @@ permalink: /kb/089/Q89347/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124919/
 
 ## Q124919: RAS Event 20026: Remote Access Server Security Failure
 
+{% raw %}
+
 	Article: Q124919
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,4.0
@@ -74,3 +76,5 @@ permalink: /kb/124/Q124919/
 	
 	=============================================================================
 	
+
+{% endraw %}

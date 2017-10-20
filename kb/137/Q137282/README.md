@@ -6,6 +6,8 @@ permalink: /kb/137/Q137282/
 
 ## Q137282: Cinemania: Listmaker Does Not Remember Specific Printer
 
+{% raw %}
+
 	Article: Q137282
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -42,3 +44,5 @@ permalink: /kb/137/Q137282/
 	
 	=============================================================================
 	
+
+{% endraw %}

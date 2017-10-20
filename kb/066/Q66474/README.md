@@ -6,6 +6,8 @@ permalink: /kb/066/Q66474/
 
 ## Q66474: Documentation Error: Extmake Syntax for %&#124;partsF Incorrect
 
+{% raw %}
+
 	Article: Q66474
 	Product(s): See article
 	Version(s): 1.11   | 1.11
@@ -66,3 +68,5 @@ permalink: /kb/066/Q66474/
 	
 	   sample.obj: sample.c
 	        cl /c %s
+
+{% endraw %}

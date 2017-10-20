@@ -6,6 +6,8 @@ permalink: /kb/195/Q195027/
 
 ## Q195027: STOP 0xC000021A in Winlogon Caused by PCAnywhere
 
+{% raw %}
+
 	Article: Q195027
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -189,3 +191,5 @@ permalink: /kb/195/Q195027/
 	
 	=============================================================================
 	
+
+{% endraw %}

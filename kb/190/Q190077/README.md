@@ -6,6 +6,8 @@ permalink: /kb/190/Q190077/
 
 ## Q190077: HOWTO: Set Number of .CAB's in Setup.lst After Repackaging
 
+{% raw %}
+
 	Article: Q190077
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -70,3 +72,5 @@ permalink: /kb/190/Q190077/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/106/Q106229/
 
 ## Q106229: MemMaker .STS Err Msg (Adaptec 1742A SCSI / ASPIEDOS.SYS)
 
+{% raw %}
+
 	Article: Q106229
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -50,3 +52,5 @@ permalink: /kb/106/Q106229/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/201/Q201644/
 
 ## Q201644: SMS: SMSTrace Fails To Open SMSPROV.LOG and BOOTSTRAP.LOG
 
+{% raw %}
+
 	Article: Q201644
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -55,3 +57,5 @@ permalink: /kb/201/Q201644/
 	
 	=============================================================================
 	
+
+{% endraw %}

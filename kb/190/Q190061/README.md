@@ -6,6 +6,8 @@ permalink: /kb/190/Q190061/
 
 ## Q190061: BUG: SCC Error Occurs When Opening a VSS5 Project Under VSS
 
+{% raw %}
+
 	Article: Q190061
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -67,3 +69,5 @@ permalink: /kb/190/Q190061/
 	
 	=============================================================================
 	
+
+{% endraw %}

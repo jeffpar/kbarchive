@@ -6,6 +6,8 @@ permalink: /kb/159/Q159073/
 
 ## Q159073: Screen Corruption on Dell Laptops Using Cirrus Video
 
+{% raw %}
+
 	Article: Q159073
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/159/Q159073/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104898/
 
 ## Q104898: FIX: ICHAR Fails If the Argument Is a Character Function
 
+{% raw %}
+
 	Article: Q104898
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -81,3 +83,5 @@ permalink: /kb/104/Q104898/
 	
 	=============================================================================
 	
+
+{% endraw %}

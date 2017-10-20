@@ -6,6 +6,8 @@ permalink: /kb/147/Q147113/
 
 ## Q147113: XADM: Spaces Not Allowed in Some X.400 Entry Fields
 
+{% raw %}
+
 	Article: Q147113
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/147/Q147113/
 	
 	=============================================================================
 	
+
+{% endraw %}

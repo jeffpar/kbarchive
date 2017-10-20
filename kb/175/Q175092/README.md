@@ -6,6 +6,8 @@ permalink: /kb/175/Q175092/
 
 ## Q175092: 0E Exception in VNETBIOS if NetBIOS Commands Are Issued Quickly
 
+{% raw %}
+
 	Article: Q175092
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/175/Q175092/
 	
 	=============================================================================
 	
+
+{% endraw %}

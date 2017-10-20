@@ -6,6 +6,8 @@ permalink: /kb/085/Q85355/
 
 ## Q85355: FAX: Parameters Required in the PROFILE.GLB File
 
+{% raw %}
+
 	Article: Q85355
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -52,3 +54,5 @@ permalink: /kb/085/Q85355/
 	
 	=============================================================================
 	
+
+{% endraw %}

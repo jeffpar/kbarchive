@@ -6,6 +6,8 @@ permalink: /kb/246/Q246331/
 
 ## Q246331: SMS: CRC Checking and Installation of Client-Side Hotfixes
 
+{% raw %}
+
 	Article: Q246331
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -167,3 +169,5 @@ permalink: /kb/246/Q246331/
 	
 	=============================================================================
 	
+
+{% endraw %}

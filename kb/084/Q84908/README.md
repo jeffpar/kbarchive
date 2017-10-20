@@ -6,6 +6,8 @@ permalink: /kb/084/Q84908/
 
 ## Q84908: Calculator Does Not Display Zeroes When Entering Decimals
 
+{% raw %}
+
 	Article: Q84908
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/084/Q84908/
 	
 	=============================================================================
 	
+
+{% endraw %}

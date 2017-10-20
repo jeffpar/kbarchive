@@ -6,6 +6,8 @@ permalink: /kb/177/Q177599/
 
 ## Q177599: XFOR: SNADS and PROFS Connectors Do Not Convert Note Objects
 
+{% raw %}
+
 	Article: Q177599
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -51,3 +53,5 @@ permalink: /kb/177/Q177599/
 	
 	=============================================================================
 	
+
+{% endraw %}

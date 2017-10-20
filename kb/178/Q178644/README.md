@@ -6,6 +6,8 @@ permalink: /kb/178/Q178644/
 
 ## Q178644: DirectX: Cannot Uninstall or Remove DirectX
 
+{% raw %}
+
 	Article: Q178644
 	Product(s): Microsoft Home Games
 	Version(s): 95
@@ -78,3 +80,5 @@ permalink: /kb/178/Q178644/
 	
 	=============================================================================
 	
+
+{% endraw %}

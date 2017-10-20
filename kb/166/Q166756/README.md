@@ -6,6 +6,8 @@ permalink: /kb/166/Q166756/
 
 ## Q166756: FIX: Error in Requery When Set Null Date Parameter to Not Null
 
+{% raw %}
+
 	Article: Q166756
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -126,3 +128,5 @@ permalink: /kb/166/Q166756/
 	
 	=============================================================================
 	
+
+{% endraw %}

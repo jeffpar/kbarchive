@@ -6,6 +6,8 @@ permalink: /kb/238/Q238507/
 
 ## Q238507: XCON: Exchange Server MTA MIXER Mapping Tables
 
+{% raw %}
+
 	Article: Q238507
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -99,3 +101,5 @@ permalink: /kb/238/Q238507/
 	
 	=============================================================================
 	
+
+{% endraw %}

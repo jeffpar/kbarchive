@@ -6,6 +6,8 @@ permalink: /kb/181/Q181743/
 
 ## Q181743: Error Message 426 Trying to Retrieve File from FTP Server
 
+{% raw %}
+
 	Article: Q181743
 	Product(s): Internet Information Server
 	Version(s): WinNT:4.0
@@ -91,3 +93,5 @@ permalink: /kb/181/Q181743/
 	
 	=============================================================================
 	
+
+{% endraw %}

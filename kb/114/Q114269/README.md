@@ -6,6 +6,8 @@ permalink: /kb/114/Q114269/
 
 ## Q114269: PRB: &quot;Overwrite Invalid FoxUser File...&quot; Each Time Fox Starts
 
+{% raw %}
+
 	Article: Q114269
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6,2.6a; WINDOWS:2.5x,2.6,2.6a,3.0
@@ -88,3 +90,5 @@ permalink: /kb/114/Q114269/
 	
 	=============================================================================
 	
+
+{% endraw %}

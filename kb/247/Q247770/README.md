@@ -6,6 +6,8 @@ permalink: /kb/247/Q247770/
 
 ## Q247770: XADM: DS Does Not Start After Error 1507 with Event ID 1002
 
+{% raw %}
+
 	Article: Q247770
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -79,3 +81,5 @@ permalink: /kb/247/Q247770/
 	
 	=============================================================================
 	
+
+{% endraw %}

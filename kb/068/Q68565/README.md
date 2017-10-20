@@ -6,6 +6,8 @@ permalink: /kb/068/Q68565/
 
 ## Q68565: Creating Dynamic-Linked Libraries Without Data Segments
 
+{% raw %}
+
 	Article: Q68565
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -130,3 +132,5 @@ permalink: /kb/068/Q68565/
 	
 	=============================================================================
 	
+
+{% endraw %}

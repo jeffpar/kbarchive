@@ -6,6 +6,8 @@ permalink: /kb/131/Q131407/
 
 ## Q131407: Check for Long File Names in Windows 3.x w/ Visual FoxPro
 
+{% raw %}
+
 	Article: Q131407
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -98,3 +100,5 @@ permalink: /kb/131/Q131407/
 	
 	=============================================================================
 	
+
+{% endraw %}

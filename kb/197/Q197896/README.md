@@ -6,6 +6,8 @@ permalink: /kb/197/Q197896/
 
 ## Q197896: Uptomp.exe Requires Access to the Txtsetup.sif File
 
+{% raw %}
+
 	Article: Q197896
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -98,3 +100,5 @@ permalink: /kb/197/Q197896/
 	
 	=============================================================================
 	
+
+{% endraw %}

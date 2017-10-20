@@ -6,6 +6,8 @@ permalink: /kb/112/Q112010/
 
 ## Q112010: FIX: Access Violation on READ of Exported COMMON Array
 
+{% raw %}
+
 	Article: Q112010
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -91,3 +93,5 @@ permalink: /kb/112/Q112010/
 	
 	=============================================================================
 	
+
+{% endraw %}

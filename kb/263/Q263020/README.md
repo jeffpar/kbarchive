@@ -6,6 +6,8 @@ permalink: /kb/263/Q263020/
 
 ## Q263020: WD97: Word Crashes When You View Form Field Properties
 
+{% raw %}
+
 	Article: Q263020
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -118,3 +120,5 @@ permalink: /kb/263/Q263020/
 	
 	=============================================================================
 	
+
+{% endraw %}

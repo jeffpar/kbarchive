@@ -6,6 +6,8 @@ permalink: /kb/195/Q195171/
 
 ## Q195171: XADM: Invalid Fetch Command Causes Information Store to Stop
 
+{% raw %}
+
 	Article: Q195171
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1
@@ -70,3 +72,5 @@ permalink: /kb/195/Q195171/
 	
 	=============================================================================
 	
+
+{% endraw %}

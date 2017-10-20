@@ -6,6 +6,8 @@ permalink: /kb/067/Q67205/
 
 ## Q67205: DRAW Statement to Erase or Redraw Image May Not Work Correctly
 
+{% raw %}
+
 	Article: Q67205
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -64,3 +66,5 @@ permalink: /kb/067/Q67205/
 	or the problem will not occur.
 	
 	Additional reference words: buglist3.00 buglist2.01 buglist2.00
+
+{% endraw %}

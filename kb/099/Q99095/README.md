@@ -6,6 +6,8 @@ permalink: /kb/099/Q99095/
 
 ## Q99095: How to Reset a Database Field to a Null Value in FoxPro
 
+{% raw %}
+
 	Article: Q99095
 	Product(s): Microsoft FoxPro
 	Version(s): 2.00 2.50 2.50a 2.50b 2.60 | 2.5
@@ -158,3 +160,5 @@ permalink: /kb/099/Q99095/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/032/Q32265/
 
 ## Q32265: CHAIN Statement in Compiled BASIC Not Supported by CodeView
 
+{% raw %}
+
 	Article: Q32265
 	Product(s): See article
 	Version(s): 2.20
@@ -22,3 +24,5 @@ permalink: /kb/032/Q32265/
 	execute correctly, unless you execute them separately in CodeView.
 	   This information applies to QuickBASIC Versions 4.00 and 4.00b,
 	and the Microsoft BASIC Compiler Version 6.00 for MS-DOS and OS/2.
+
+{% endraw %}

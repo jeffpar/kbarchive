@@ -6,6 +6,8 @@ permalink: /kb/186/Q186689/
 
 ## Q186689: XCLN: Reminders Do Not Start for Items in Public Folders
 
+{% raw %}
+
 	Article: Q186689
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03; WINDOWS:
@@ -50,3 +52,5 @@ permalink: /kb/186/Q186689/
 	
 	=============================================================================
 	
+
+{% endraw %}

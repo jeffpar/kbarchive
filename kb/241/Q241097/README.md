@@ -6,6 +6,8 @@ permalink: /kb/241/Q241097/
 
 ## Q241097: FIX: TreeView Tooltips Do Not Appear on Windows NT
 
+{% raw %}
+
 	Article: Q241097
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -222,3 +224,5 @@ permalink: /kb/241/Q241097/
 	
 	=============================================================================
 	
+
+{% endraw %}

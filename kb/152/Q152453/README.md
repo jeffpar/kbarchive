@@ -6,6 +6,8 @@ permalink: /kb/152/Q152453/
 
 ## Q152453: Directhosting Affects Powerbuilder Query Performance
 
+{% raw %}
+
 	Article: Q152453
 	Product(s): Microsoft Windows NT
 	Version(s): 3.11 3.51 95
@@ -98,3 +100,5 @@ permalink: /kb/152/Q152453/
 	
 	=============================================================================
 	
+
+{% endraw %}

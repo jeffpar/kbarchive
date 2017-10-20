@@ -6,6 +6,8 @@ permalink: /kb/151/Q151883/
 
 ## Q151883: How to Tell Which COMPAQ SSD You Are Using w/ Windows NT
 
+{% raw %}
+
 	Article: Q151883
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -89,3 +91,5 @@ permalink: /kb/151/Q151883/
 	
 	=============================================================================
 	
+
+{% endraw %}

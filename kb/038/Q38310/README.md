@@ -6,6 +6,8 @@ permalink: /kb/038/Q38310/
 
 ## Q38310: Moving to the Beginning of the Line with Microsoft Editor
 
+{% raw %}
+
 	Article: Q38310
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -28,3 +30,5 @@ permalink: /kb/038/Q38310/
 	Meta Begline (F9 HOME in the standard configuration) will do it. If
 	you'd like it on one key, you can assign the functions to a key using
 	the macro facility.
+
+{% endraw %}

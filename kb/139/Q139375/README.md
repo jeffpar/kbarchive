@@ -6,6 +6,8 @@ permalink: /kb/139/Q139375/
 
 ## Q139375: Dependent LU 6.2 Configuration for SNA Server
 
+{% raw %}
+
 	Article: Q139375
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -79,3 +81,5 @@ permalink: /kb/139/Q139375/
 	
 	=============================================================================
 	
+
+{% endraw %}

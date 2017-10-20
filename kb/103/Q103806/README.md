@@ -6,6 +6,8 @@ permalink: /kb/103/Q103806/
 
 ## Q103806: PRB: C2642 Error When Adding Message Handler
 
+{% raw %}
+
 	Article: Q103806
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -131,3 +133,5 @@ permalink: /kb/103/Q103806/
 	
 	=============================================================================
 	
+
+{% endraw %}

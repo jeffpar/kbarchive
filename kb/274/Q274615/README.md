@@ -6,6 +6,8 @@ permalink: /kb/274/Q274615/
 
 ## Q274615: CFS2: Other Players Cannot Find Your Multiplayer Session
 
+{% raw %}
+
 	Article: Q274615
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -99,3 +101,5 @@ permalink: /kb/274/Q274615/
 	
 	=============================================================================
 	
+
+{% endraw %}

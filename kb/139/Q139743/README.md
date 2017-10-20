@@ -6,6 +6,8 @@ permalink: /kb/139/Q139743/
 
 ## Q139743: DriveSpace Error 395 or 312 When Resizing Removable Media
 
+{% raw %}
+
 	Article: Q139743
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -82,3 +84,5 @@ permalink: /kb/139/Q139743/
 	
 	=============================================================================
 	
+
+{% endraw %}

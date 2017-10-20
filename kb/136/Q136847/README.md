@@ -6,6 +6,8 @@ permalink: /kb/136/Q136847/
 
 ## Q136847: PRB: Class Browser Shortcut Keys Interfere with VFP Shortcuts
 
+{% raw %}
+
 	Article: Q136847
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -48,3 +50,5 @@ permalink: /kb/136/Q136847/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/259/Q259000/
 
 ## Q259000: PRB: Space in CREATE FROM Field Name Causes Error
 
+{% raw %}
+
 	Article: Q259000
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -86,3 +88,5 @@ permalink: /kb/259/Q259000/
 	
 	=============================================================================
 	
+
+{% endraw %}

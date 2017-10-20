@@ -6,6 +6,8 @@ permalink: /kb/170/Q170126/
 
 ## Q170126: FIX: Using the SelPrint Method of the Rich Text Control
 
+{% raw %}
+
 	Article: Q170126
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,95
@@ -150,3 +152,5 @@ permalink: /kb/170/Q170126/
 	
 	=============================================================================
 	
+
+{% endraw %}

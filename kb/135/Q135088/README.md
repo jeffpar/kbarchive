@@ -6,6 +6,8 @@ permalink: /kb/135/Q135088/
 
 ## Q135088: Typing Full Path and Filename Causes Inventory Rule to Fail
 
+{% raw %}
+
 	Article: Q135088
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -62,3 +64,5 @@ permalink: /kb/135/Q135088/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138713/
 
 ## Q138713: Err Msg: Driver Entry Point Not Found After Service Pack Upgrade
 
+{% raw %}
+
 	Article: Q138713
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -97,3 +99,5 @@ permalink: /kb/138/Q138713/
 	
 	=============================================================================
 	
+
+{% endraw %}

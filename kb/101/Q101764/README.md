@@ -6,6 +6,8 @@ permalink: /kb/101/Q101764/
 
 ## Q101764: Scenes: Communication Programs May Fail
 
+{% raw %}
+
 	Article: Q101764
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,2.0
@@ -68,3 +70,5 @@ permalink: /kb/101/Q101764/
 	
 	=============================================================================
 	
+
+{% endraw %}

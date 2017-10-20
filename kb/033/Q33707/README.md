@@ -6,6 +6,8 @@ permalink: /kb/033/Q33707/
 
 ## Q33707: &quot;Error R6000: Stack Overflow&quot; in Non-Stand-Alone Program
 
+{% raw %}
+
 	Article: Q33707
 	Product(s): See article
 	Version(s): 4.00b 4.50
@@ -34,3 +36,5 @@ permalink: /kb/033/Q33707/
 	stand-alone and non-stand-alone programs with QuickBASIC Version 4.50.
 	
 	This problem does not occur in QuickBASIC Versions 4.00 or earlier.
+
+{% endraw %}

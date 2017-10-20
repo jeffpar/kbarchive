@@ -6,6 +6,8 @@ permalink: /kb/128/Q128599/
 
 ## Q128599: FIX: More Than 65536 Export Entries May Cause LNK2001 Errors
 
+{% raw %}
+
 	Article: Q128599
 	Product(s): Microsoft C Compiler
 	Version(s): 2.00 2.10
@@ -164,3 +166,5 @@ permalink: /kb/128/Q128599/
 	
 	=============================================================================
 	
+
+{% endraw %}

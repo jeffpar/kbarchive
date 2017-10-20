@@ -6,6 +6,8 @@ permalink: /kb/076/Q76950/
 
 ## Q76950: BUG: PWB May Hang If &lt;ASSIGN&gt; Pseudofile Not Closed
 
+{% raw %}
+
 	Article: Q76950
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.1
@@ -84,3 +86,5 @@ permalink: /kb/076/Q76950/
 	
 	=============================================================================
 	
+
+{% endraw %}

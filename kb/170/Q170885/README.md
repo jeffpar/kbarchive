@@ -6,6 +6,8 @@ permalink: /kb/170/Q170885/
 
 ## Q170885: WD97: How to Install Additional Fonts from the ValuPack Folder
 
+{% raw %}
+
 	Article: Q170885
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -122,3 +124,5 @@ permalink: /kb/170/Q170885/
 	
 	=============================================================================
 	
+
+{% endraw %}

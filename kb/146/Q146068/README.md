@@ -6,6 +6,8 @@ permalink: /kb/146/Q146068/
 
 ## Q146068: XCLN: Display Bug with OLE Objects Causes Size Change
 
+{% raw %}
+
 	Article: Q146068
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -38,3 +40,5 @@ permalink: /kb/146/Q146068/
 	
 	=============================================================================
 	
+
+{% endraw %}

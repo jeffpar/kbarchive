@@ -6,6 +6,8 @@ permalink: /kb/164/Q164058/
 
 ## Q164058: Passing Procedure Arguments in Visual Basic for Applications
 
+{% raw %}
+
 	Article: Q164058
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -232,3 +234,5 @@ permalink: /kb/164/Q164058/
 	
 	=============================================================================
 	
+
+{% endraw %}

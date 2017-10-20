@@ -6,6 +6,8 @@ permalink: /kb/232/Q232511/
 
 ## Q232511: Client Dialup, Authentication, Browsing Using TCPIP, IPX/SPX
 
+{% raw %}
+
 	Article: Q232511
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:4.0
@@ -651,3 +653,5 @@ permalink: /kb/232/Q232511/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199006/
 
 ## Q199006: BUG: Issuing PACK &lt;table name&gt; Causes Fatal Error
 
+{% raw %}
+
 	Article: Q199006
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -70,3 +72,5 @@ permalink: /kb/199/Q199006/
 	
 	=============================================================================
 	
+
+{% endraw %}

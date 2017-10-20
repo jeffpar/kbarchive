@@ -6,6 +6,8 @@ permalink: /kb/197/Q197139/
 
 ## Q197139: WD97: Heading 1 Style Starts with &quot;2&quot; When Numbered
 
+{% raw %}
+
 	Article: Q197139
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -94,3 +96,5 @@ permalink: /kb/197/Q197139/
 	
 	=============================================================================
 	
+
+{% endraw %}

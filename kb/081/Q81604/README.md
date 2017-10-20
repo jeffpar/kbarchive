@@ -6,6 +6,8 @@ permalink: /kb/081/Q81604/
 
 ## Q81604: Novell Err Msg: Invalid COMMAND.COM After Windows Exit
 
+{% raw %}
+
 	Article: Q81604
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -114,3 +116,5 @@ permalink: /kb/081/Q81604/
 	
 	=============================================================================
 	
+
+{% endraw %}

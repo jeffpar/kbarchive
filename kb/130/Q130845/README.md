@@ -6,6 +6,8 @@ permalink: /kb/130/Q130845/
 
 ## Q130845: FAX: Intel SatisFAXtion 200 No Longer Sold by Intel
 
+{% raw %}
+
 	Article: Q130845
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -36,3 +38,5 @@ permalink: /kb/130/Q130845/
 	
 	=============================================================================
 	
+
+{% endraw %}

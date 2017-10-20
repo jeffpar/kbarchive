@@ -6,6 +6,8 @@ permalink: /kb/087/Q87339/
 
 ## Q87339: Specify Correct Display Installing Chinese Windows 3.0
 
+{% raw %}
+
 	Article: Q87339
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 3.0
@@ -42,3 +44,5 @@ permalink: /kb/087/Q87339/
 	
 	=============================================================================
 	
+
+{% endraw %}

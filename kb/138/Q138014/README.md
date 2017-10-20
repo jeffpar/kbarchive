@@ -6,6 +6,8 @@ permalink: /kb/138/Q138014/
 
 ## Q138014: File May Be Truncated to Zero Bytes When Copied Onto Itself
 
+{% raw %}
+
 	Article: Q138014
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -137,3 +139,5 @@ permalink: /kb/138/Q138014/
 	
 	=============================================================================
 	
+
+{% endraw %}

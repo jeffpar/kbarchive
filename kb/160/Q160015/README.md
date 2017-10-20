@@ -6,6 +6,8 @@ permalink: /kb/160/Q160015/
 
 ## Q160015: 2D Vector Performance on WinNT 4.0 Slower Than on 3.51
 
+{% raw %}
+
 	Article: Q160015
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/160/Q160015/
 	
 	=============================================================================
 	
+
+{% endraw %}

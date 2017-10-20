@@ -6,6 +6,8 @@ permalink: /kb/200/Q200211/
 
 ## Q200211: DUN Clients Do Not Receive DNS Domain Name over RAS/RRAS
 
+{% raw %}
+
 	Article: Q200211
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95,98; winnt:4.0
@@ -81,3 +83,5 @@ permalink: /kb/200/Q200211/
 	
 	=============================================================================
 	
+
+{% endraw %}

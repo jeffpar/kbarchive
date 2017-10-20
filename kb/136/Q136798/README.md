@@ -6,6 +6,8 @@ permalink: /kb/136/Q136798/
 
 ## Q136798: Versions of CTL3D32 Included with Visual C++ Version 2.x
 
+{% raw %}
+
 	Article: Q136798
 	Product(s): Microsoft C Compiler
 	Version(s): 2.00 2.10 2.20
@@ -78,3 +80,5 @@ permalink: /kb/136/Q136798/
 	
 	=============================================================================
 	
+
+{% endraw %}

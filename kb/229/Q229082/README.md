@@ -6,6 +6,8 @@ permalink: /kb/229/Q229082/
 
 ## Q229082: Password Synchronization Using Rlogin May Not Work with UNIX
 
+{% raw %}
+
 	Article: Q229082
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/229/Q229082/
 	
 	=============================================================================
 	
+
+{% endraw %}

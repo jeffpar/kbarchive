@@ -6,6 +6,8 @@ permalink: /kb/127/Q127003/
 
 ## Q127003: PC Ext: Mailbox Name Truncated in CALLIN.LOG
 
+{% raw %}
+
 	Article: Q127003
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -54,3 +56,5 @@ permalink: /kb/127/Q127003/
 	
 	=============================================================================
 	
+
+{% endraw %}

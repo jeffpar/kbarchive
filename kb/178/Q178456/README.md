@@ -6,6 +6,8 @@ permalink: /kb/178/Q178456/
 
 ## Q178456: SAMPLE: Volume.exe: Set Volume Control Levels Using Visual Basic
 
+{% raw %}
+
 	Article: Q178456
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -459,3 +461,5 @@ permalink: /kb/178/Q178456/
 	
 	=============================================================================
 	
+
+{% endraw %}

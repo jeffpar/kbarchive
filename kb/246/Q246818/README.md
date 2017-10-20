@@ -6,6 +6,8 @@ permalink: /kb/246/Q246818/
 
 ## Q246818: Windows 95 Does Not Support Hard Disks Larger Than 32 GB
 
+{% raw %}
+
 	Article: Q246818
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -55,3 +57,5 @@ permalink: /kb/246/Q246818/
 	
 	=============================================================================
 	
+
+{% endraw %}

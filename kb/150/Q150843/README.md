@@ -6,6 +6,8 @@ permalink: /kb/150/Q150843/
 
 ## Q150843: FPNW: Event IDs 2635 and 2748
 
+{% raw %}
+
 	Article: Q150843
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -48,3 +50,5 @@ permalink: /kb/150/Q150843/
 	
 	=============================================================================
 	
+
+{% endraw %}

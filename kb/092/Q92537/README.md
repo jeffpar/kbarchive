@@ -6,6 +6,8 @@ permalink: /kb/092/Q92537/
 
 ## Q92537: SAMPLE: Windows Application Produces Stack Trace
 
+{% raw %}
+
 	Article: Q92537
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -89,3 +91,5 @@ permalink: /kb/092/Q92537/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134241/
 
 ## Q134241: PCI Bus Incorrectly Detected on IBM ValuePoint DX4-100
 
+{% raw %}
+
 	Article: Q134241
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/134/Q134241/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/264/Q264226/
 
 ## Q264226: XCLN: No Entries in Directory Service Match LDAP Query Search
 
+{% raw %}
+
 	Article: Q264226
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5; winnt:5.5
@@ -98,3 +100,5 @@ permalink: /kb/264/Q264226/
 	
 	=============================================================================
 	
+
+{% endraw %}

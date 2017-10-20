@@ -6,6 +6,8 @@ permalink: /kb/193/Q193355/
 
 ## Q193355: SMS: Status MIF Creator - Ismif16.exe
 
+{% raw %}
+
 	Article: Q193355
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -74,3 +76,5 @@ permalink: /kb/193/Q193355/
 	
 	=============================================================================
 	
+
+{% endraw %}

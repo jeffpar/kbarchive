@@ -6,6 +6,8 @@ permalink: /kb/137/Q137824/
 
 ## Q137824: &quot;Invalid Vxd&quot; Error Message Starting Windows 95
 
+{% raw %}
+
 	Article: Q137824
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -78,3 +80,5 @@ permalink: /kb/137/Q137824/
 	
 	=============================================================================
 	
+
+{% endraw %}

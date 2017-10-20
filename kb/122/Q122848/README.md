@@ -6,6 +6,8 @@ permalink: /kb/122/Q122848/
 
 ## Q122848: PRB: #pragma code_seg() Affects Compiler-Generated Functions
 
+{% raw %}
+
 	Article: Q122848
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,2.1,4.0,5.0
@@ -90,3 +92,5 @@ permalink: /kb/122/Q122848/
 	
 	=============================================================================
 	
+
+{% endraw %}

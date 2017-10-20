@@ -6,6 +6,8 @@ permalink: /kb/134/Q134645/
 
 ## Q134645: Mac Bookshelf 1995: Words from WordPerfect not Found
 
+{% raw %}
+
 	Article: Q134645
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -62,3 +64,5 @@ permalink: /kb/134/Q134645/
 	
 	=============================================================================
 	
+
+{% endraw %}

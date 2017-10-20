@@ -6,6 +6,8 @@ permalink: /kb/194/Q194203/
 
 ## Q194203: ASCII and Hex Representation of NetBIOS Names
 
+{% raw %}
+
 	Article: Q194203
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): Windows:95,98;WinNT:4.0
@@ -139,3 +141,5 @@ permalink: /kb/194/Q194203/
 	
 	=============================================================================
 	
+
+{% endraw %}

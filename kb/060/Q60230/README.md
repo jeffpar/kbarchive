@@ -6,6 +6,8 @@ permalink: /kb/060/Q60230/
 
 ## Q60230: How MS-DOS Communicates with Serial Ports
 
+{% raw %}
+
 	Article: Q60230
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.3,3.3a,4.0,4.01,5.0
@@ -67,3 +69,5 @@ permalink: /kb/060/Q60230/
 	
 	=============================================================================
 	
+
+{% endraw %}

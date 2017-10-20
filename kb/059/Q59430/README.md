@@ -6,6 +6,8 @@ permalink: /kb/059/Q59430/
 
 ## Q59430: 3 Cases Where DIR&#36; Gives &quot;Illegal Function Call&quot; in BASIC 7.00
 
+{% raw %}
+
 	Article: Q59430
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -71,3 +73,5 @@ permalink: /kb/059/Q59430/
 	   PRINT DIR$       ' If this line is left here, it will cause the error
 	                    ' "Illegal Function Call" to occur.
 	   END
+
+{% endraw %}

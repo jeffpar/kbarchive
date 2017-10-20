@@ -6,6 +6,8 @@ permalink: /kb/320/Q320196/
 
 ## Q320196: Flight Simulator 2002: No Landing Lights or Virtual Cockpit
 
+{% raw %}
+
 	Article: Q320196
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/320/Q320196/
 	
 	=============================================================================
 	
+
+{% endraw %}

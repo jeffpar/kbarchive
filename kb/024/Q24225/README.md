@@ -6,6 +6,8 @@ permalink: /kb/024/Q24225/
 
 ## Q24225: The Difference Among Watch, Watchpoint, and Tracepoint
 
+{% raw %}
+
 	Article: Q24225
 	Product(s): See article
 	Version(s): 1.00 1.10 2.00 2.10 2.20 2.30 | 2.20 2.30
@@ -56,3 +58,5 @@ permalink: /kb/024/Q24225/
 	Note: the "monitoring" described above is done in only window mode. If
 	sequential mode is being used, you must use the Watch List command to
 	see the values of any of the three types of watch statements.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155962/
 
 ## Q155962: WD97: Some Features Disabled After Setup
 
+{% raw %}
+
 	Article: Q155962
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -60,3 +62,5 @@ permalink: /kb/155/Q155962/
 	
 	=============================================================================
 	
+
+{% endraw %}

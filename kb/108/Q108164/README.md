@@ -6,6 +6,8 @@ permalink: /kb/108/Q108164/
 
 ## Q108164: PRB: RQBE Not Generating FROM Clause When .QPR Table Missing
 
+{% raw %}
+
 	Article: Q108164
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.5,2.5a,2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
@@ -91,3 +93,5 @@ permalink: /kb/108/Q108164/
 	
 	=============================================================================
 	
+
+{% endraw %}

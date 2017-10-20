@@ -6,6 +6,8 @@ permalink: /kb/103/Q103811/
 
 ## Q103811: How Windows NT Constructs the supported Network Adapter List
 
+{% raw %}
+
 	Article: Q103811
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -84,3 +86,5 @@ permalink: /kb/103/Q103811/
 	
 	=============================================================================
 	
+
+{% endraw %}

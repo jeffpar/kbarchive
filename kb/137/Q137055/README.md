@@ -6,6 +6,8 @@ permalink: /kb/137/Q137055/
 
 ## Q137055: PPT7: PowerPoint Presentation Conferencing Fails
 
+{% raw %}
+
 	Article: Q137055
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -97,3 +99,5 @@ permalink: /kb/137/Q137055/
 	
 	=============================================================================
 	
+
+{% endraw %}

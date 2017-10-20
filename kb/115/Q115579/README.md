@@ -6,6 +6,8 @@ permalink: /kb/115/Q115579/
 
 ## Q115579: Err Msg: STOP 0x0000006B PROCESS1_INITIALIZATION_FAILED
 
+{% raw %}
+
 	Article: Q115579
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -77,3 +79,5 @@ permalink: /kb/115/Q115579/
 	
 	=============================================================================
 	
+
+{% endraw %}

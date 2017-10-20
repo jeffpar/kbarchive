@@ -6,6 +6,8 @@ permalink: /kb/151/Q151464/
 
 ## Q151464: Mastering Microsoft Exchange Development: System Requirements
 
+{% raw %}
+
 	Article: Q151464
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -59,3 +61,5 @@ permalink: /kb/151/Q151464/
 	
 	=============================================================================
 	
+
+{% endraw %}

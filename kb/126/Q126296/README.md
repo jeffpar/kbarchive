@@ -6,6 +6,8 @@ permalink: /kb/126/Q126296/
 
 ## Q126296: OEM ATI Drivers Available for Windows NT 3.5
 
+{% raw %}
+
 	Article: Q126296
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -63,3 +65,5 @@ permalink: /kb/126/Q126296/
 	
 	=============================================================================
 	
+
+{% endraw %}

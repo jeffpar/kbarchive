@@ -6,6 +6,8 @@ permalink: /kb/132/Q132652/
 
 ## Q132652: Pressing ESC Key May Cause Garbled Startup Screen
 
+{% raw %}
+
 	Article: Q132652
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/132/Q132652/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177416/
 
 ## Q177416: XFOR: No Help File in Exchange Notes Connector
 
+{% raw %}
+
 	Article: Q177416
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -46,3 +48,5 @@ permalink: /kb/177/Q177416/
 	
 	=============================================================================
 	
+
+{% endraw %}

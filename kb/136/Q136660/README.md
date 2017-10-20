@@ -6,6 +6,8 @@ permalink: /kb/136/Q136660/
 
 ## Q136660: Windows Software Compatibility List
 
+{% raw %}
+
 	Article: Q136660
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:4.0; :
@@ -55,3 +57,5 @@ permalink: /kb/136/Q136660/
 	
 	=============================================================================
 	
+
+{% endraw %}

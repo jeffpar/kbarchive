@@ -6,6 +6,8 @@ permalink: /kb/128/Q128350/
 
 ## Q128350: Configuring Network Client for Validation Across Routers
 
+{% raw %}
+
 	Article: Q128350
 	Product(s): Microsoft Windows NT
 	Version(s): 3.00 3.50
@@ -51,3 +53,5 @@ permalink: /kb/128/Q128350/
 	
 	=============================================================================
 	
+
+{% endraw %}

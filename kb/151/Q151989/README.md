@@ -6,6 +6,8 @@ permalink: /kb/151/Q151989/
 
 ## Q151989: List of Documentation Errors in Pan Chinese WinNT Start Here
 
+{% raw %}
+
 	Article: Q151989
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/151/Q151989/
 	
 	=============================================================================
 	
+
+{% endraw %}

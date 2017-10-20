@@ -6,6 +6,8 @@ permalink: /kb/299/Q299274/
 
 ## Q299274: INFO: CoFreeUnusedLibrariesEx Platform Requirements
 
+{% raw %}
+
 	Article: Q299274
 	Product(s): Microsoft Programming Utilities
 	Version(s): 2000,4.0
@@ -56,3 +58,5 @@ permalink: /kb/299/Q299274/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165922/
 
 ## Q165922: WD97: Converting ActiveX to Picture Causes Invalid Page Fault
 
+{% raw %}
+
 	Article: Q165922
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/165/Q165922/
 	
 	=============================================================================
 	
+
+{% endraw %}

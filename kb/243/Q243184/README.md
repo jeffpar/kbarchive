@@ -6,6 +6,8 @@ permalink: /kb/243/Q243184/
 
 ## Q243184: XFOR: Lotus cc:Mail Usernames Added to Bcc Line If in DL
 
+{% raw %}
+
 	Article: Q243184
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -51,3 +53,5 @@ permalink: /kb/243/Q243184/
 	
 	=============================================================================
 	
+
+{% endraw %}

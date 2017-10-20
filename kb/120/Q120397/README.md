@@ -6,6 +6,8 @@ permalink: /kb/120/Q120397/
 
 ## Q120397: Use atof or atoi Functions to Convert from Char Strings
 
+{% raw %}
+
 	Article: Q120397
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a,4.0
@@ -93,3 +95,5 @@ permalink: /kb/120/Q120397/
 	
 	=============================================================================
 	
+
+{% endraw %}

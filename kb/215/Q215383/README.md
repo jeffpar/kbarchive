@@ -6,6 +6,8 @@ permalink: /kb/215/Q215383/
 
 ## Q215383: How to Ensure Windows Integrated Logons in IIS 5.0
 
+{% raw %}
+
 	Article: Q215383
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -89,3 +91,5 @@ permalink: /kb/215/Q215383/
 	
 	=============================================================================
 	
+
+{% endraw %}

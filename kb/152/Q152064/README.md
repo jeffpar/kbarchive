@@ -6,6 +6,8 @@ permalink: /kb/152/Q152064/
 
 ## Q152064: How to Install an Internal Modem in Windows 95
 
+{% raw %}
+
 	Article: Q152064
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -181,3 +183,5 @@ permalink: /kb/152/Q152064/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248691/
 
 ## Q248691: INFO: DDUPD Takes Data Folder Rather Than Srcsafe.ini on Command
 
+{% raw %}
+
 	Article: Q248691
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -57,3 +59,5 @@ permalink: /kb/248/Q248691/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171479/
 
 ## Q171479: FIX: Mod 0 Causes an IPF or Access Violation
 
+{% raw %}
+
 	Article: Q171479
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -84,3 +86,5 @@ permalink: /kb/171/Q171479/
 	
 	=============================================================================
 	
+
+{% endraw %}

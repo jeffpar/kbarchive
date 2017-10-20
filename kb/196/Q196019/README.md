@@ -6,6 +6,8 @@ permalink: /kb/196/Q196019/
 
 ## Q196019: Adding Windows NT 4.0 Computers to Domain Before Sysprep
 
+{% raw %}
+
 	Article: Q196019
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -91,3 +93,5 @@ permalink: /kb/196/Q196019/
 	
 	=============================================================================
 	
+
+{% endraw %}

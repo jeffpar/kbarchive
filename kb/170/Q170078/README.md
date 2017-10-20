@@ -6,6 +6,8 @@ permalink: /kb/170/Q170078/
 
 ## Q170078: ErrMsg: The Security Information for &lt;path&gt; Is Not Standard...
 
+{% raw %}
+
 	Article: Q170078
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -80,3 +82,5 @@ permalink: /kb/170/Q170078/
 	
 	=============================================================================
 	
+
+{% endraw %}

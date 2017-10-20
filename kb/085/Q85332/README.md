@@ -6,6 +6,8 @@ permalink: /kb/085/Q85332/
 
 ## Q85332: PS/2 Mouse Not Working in Enhanced Mode on Mitac Computer
 
+{% raw %}
+
 	Article: Q85332
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -42,3 +44,5 @@ permalink: /kb/085/Q85332/
 	
 	=============================================================================
 	
+
+{% endraw %}

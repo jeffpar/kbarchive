@@ -6,6 +6,8 @@ permalink: /kb/097/Q97606/
 
 ## Q97606: MSAV Err Msg Under Windows 3.0 Real Mode: MWAVABSI.DLL Error
 
+{% raw %}
+
 	Article: Q97606
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.0,3.0a,3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/097/Q97606/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131126/
 
 ## Q131126: Wine Guide: Cannot Print More Than 99 Copies of Wine Selector
 
+{% raw %}
+
 	Article: Q131126
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,1.0a,2.0
@@ -52,3 +54,5 @@ permalink: /kb/131/Q131126/
 	
 	=============================================================================
 	
+
+{% endraw %}

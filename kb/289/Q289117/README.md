@@ -6,6 +6,8 @@ permalink: /kb/289/Q289117/
 
 ## Q289117: SQL Server Account Information Missing From Accounts Tab
 
+{% raw %}
+
 	Article: Q289117
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -70,3 +72,5 @@ permalink: /kb/289/Q289117/
 	
 	=============================================================================
 	
+
+{% endraw %}

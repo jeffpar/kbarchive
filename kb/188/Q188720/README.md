@@ -6,6 +6,8 @@ permalink: /kb/188/Q188720/
 
 ## Q188720: PRB: Error Executing ~vcecho!Compiling
 
+{% raw %}
+
 	Article: Q188720
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0
@@ -138,3 +140,5 @@ permalink: /kb/188/Q188720/
 	
 	=============================================================================
 	
+
+{% endraw %}

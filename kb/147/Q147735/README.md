@@ -6,6 +6,8 @@ permalink: /kb/147/Q147735/
 
 ## Q147735: FIX: ClassWizard Quits If Class Twice Derived from CRecord
 
+{% raw %}
+
 	Article: Q147735
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -43,11 +45,11 @@ permalink: /kb/147/Q147735/
 	Leave occurrences of CRecordset in the ClassWizard comments. Particularly, don't
 	change:
 	
-	     //{ {AFX_FIELD(CRecordset2, CRecordset)
+	     //{{AFX_FIELD(CRecordset2, CRecordset)
 	
 	to:
 	
-	     //{ {AFX_FIELD(CRecordset2, CRecordset1)
+	     //{{AFX_FIELD(CRecordset2, CRecordset1)
 	
 	STATUS
 	======
@@ -67,3 +69,5 @@ permalink: /kb/147/Q147735/
 	
 	=============================================================================
 	
+
+{% endraw %}

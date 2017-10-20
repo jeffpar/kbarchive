@@ -6,6 +6,8 @@ permalink: /kb/141/Q141874/
 
 ## Q141874: WD97: Some Contact List Fields Not Available to Word
 
+{% raw %}
+
 	Article: Q141874
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -180,3 +182,5 @@ permalink: /kb/141/Q141874/
 	
 	=============================================================================
 	
+
+{% endraw %}

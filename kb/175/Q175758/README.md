@@ -6,6 +6,8 @@ permalink: /kb/175/Q175758/
 
 ## Q175758: HOWTO: Trap Visual SourceSafe OLE Errors
 
+{% raw %}
+
 	Article: Q175758
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -129,3 +131,5 @@ permalink: /kb/175/Q175758/
 	
 	=============================================================================
 	
+
+{% endraw %}

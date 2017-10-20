@@ -6,6 +6,8 @@ permalink: /kb/192/Q192669/
 
 ## Q192669: Pagefile Set Incorrectly on Computers with &gt;2049 MB RAM
 
+{% raw %}
+
 	Article: Q192669
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/192/Q192669/
 	
 	=============================================================================
 	
+
+{% endraw %}

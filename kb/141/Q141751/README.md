@@ -6,6 +6,8 @@ permalink: /kb/141/Q141751/
 
 ## Q141751: Adding Control Bars to Dialog Boxes in MFC
 
+{% raw %}
+
 	Article: Q141751
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -174,3 +176,5 @@ permalink: /kb/141/Q141751/
 	
 	=============================================================================
 	
+
+{% endraw %}

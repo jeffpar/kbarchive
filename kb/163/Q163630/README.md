@@ -6,6 +6,8 @@ permalink: /kb/163/Q163630/
 
 ## Q163630: Output on a Tektronix 300i Printer is Less Clear In WinNT 4.0
 
+{% raw %}
+
 	Article: Q163630
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/163/Q163630/
 	
 	=============================================================================
 	
+
+{% endraw %}

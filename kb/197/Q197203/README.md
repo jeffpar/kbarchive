@@ -6,6 +6,8 @@ permalink: /kb/197/Q197203/
 
 ## Q197203: WD97: Can't Recover Password-Protected Document If Password Lost
 
+{% raw %}
+
 	Article: Q197203
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -50,3 +52,5 @@ permalink: /kb/197/Q197203/
 	
 	=============================================================================
 	
+
+{% endraw %}

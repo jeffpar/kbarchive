@@ -6,6 +6,8 @@ permalink: /kb/158/Q158529/
 
 ## Q158529: XCON: DS_E_Communications_Problem with Link Monitor
 
+{% raw %}
+
 	Article: Q158529
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -64,3 +66,5 @@ permalink: /kb/158/Q158529/
 	
 	=============================================================================
 	
+
+{% endraw %}

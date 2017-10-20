@@ -6,6 +6,8 @@ permalink: /kb/142/Q142595/
 
 ## Q142595: Using a Generic Logon with SBS Shared Installation
 
+{% raw %}
+
 	Article: Q142595
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95
@@ -70,3 +72,5 @@ permalink: /kb/142/Q142595/
 	
 	=============================================================================
 	
+
+{% endraw %}

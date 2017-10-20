@@ -6,6 +6,8 @@ permalink: /kb/177/Q177258/
 
 ## Q177258: WWW Service Stops Responding When You Stop Web Site in MMC
 
+{% raw %}
+
 	Article: Q177258
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/177/Q177258/
 	
 	=============================================================================
 	
+
+{% endraw %}

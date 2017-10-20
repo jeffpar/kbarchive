@@ -6,6 +6,8 @@ permalink: /kb/189/Q189320/
 
 ## Q189320: Persistent Dial on Demand Connection Fails After 20 Minutes
 
+{% raw %}
+
 	Article: Q189320
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -93,3 +95,5 @@ permalink: /kb/189/Q189320/
 	
 	=============================================================================
 	
+
+{% endraw %}

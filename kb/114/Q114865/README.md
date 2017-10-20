@@ -6,6 +6,8 @@ permalink: /kb/114/Q114865/
 
 ## Q114865: BUG: HEADING Clause on the REPORT FORM Does Not Align Properly
 
+{% raw %}
+
 	Article: Q114865
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6x,3.0,5.0,5.0a,6.0
@@ -90,3 +92,5 @@ permalink: /kb/114/Q114865/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157935/
 
 ## Q157935: WD97: Keyboard Shortcuts for Word 97
 
+{% raw %}
+
 	Article: Q157935
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -591,3 +593,5 @@ permalink: /kb/157/Q157935/
 	
 	=============================================================================
 	
+
+{% endraw %}

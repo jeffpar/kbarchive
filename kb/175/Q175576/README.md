@@ -6,6 +6,8 @@ permalink: /kb/175/Q175576/
 
 ## Q175576: MSN 2.51 Retail Release Uninstal.txt File Contents
 
+{% raw %}
+
 	Article: Q175576
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.51
@@ -76,3 +78,5 @@ permalink: /kb/175/Q175576/
 	
 	=============================================================================
 	
+
+{% endraw %}

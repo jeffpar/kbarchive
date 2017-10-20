@@ -6,6 +6,8 @@ permalink: /kb/117/Q117898/
 
 ## Q117898: Drag &amp; Drop of Word 6.0 Icon Fails to Open Document on Desktop
 
+{% raw %}
+
 	Article: Q117898
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -54,3 +56,5 @@ permalink: /kb/117/Q117898/
 	
 	=============================================================================
 	
+
+{% endraw %}

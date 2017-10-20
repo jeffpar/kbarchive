@@ -6,6 +6,8 @@ permalink: /kb/124/Q124566/
 
 ## Q124566: Recovering from &quot;SYSTEM Hive Corruption&quot; on Dual-Boot Computers
 
+{% raw %}
+
 	Article: Q124566
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/124/Q124566/
 	
 	=============================================================================
 	
+
+{% endraw %}

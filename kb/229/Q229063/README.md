@@ -6,6 +6,8 @@ permalink: /kb/229/Q229063/
 
 ## Q229063: BUG:GetDayBold Event Not Working as Expected w/MonthView Control
 
+{% raw %}
+
 	Article: Q229063
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -84,3 +86,5 @@ permalink: /kb/229/Q229063/
 	
 	=============================================================================
 	
+
+{% endraw %}

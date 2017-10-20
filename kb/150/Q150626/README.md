@@ -6,6 +6,8 @@ permalink: /kb/150/Q150626/
 
 ## Q150626: Mac Bookshelf 1996-97: Items Installed by an Easy Install
 
+{% raw %}
+
 	Article: Q150626
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -82,3 +84,5 @@ permalink: /kb/150/Q150626/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216684/
 
 ## Q216684: Error Message: The System Is Not Fully Installed
 
+{% raw %}
+
 	Article: Q216684
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -120,3 +122,5 @@ permalink: /kb/216/Q216684/
 	
 	=============================================================================
 	
+
+{% endraw %}

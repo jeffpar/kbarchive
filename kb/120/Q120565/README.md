@@ -6,6 +6,8 @@ permalink: /kb/120/Q120565/
 
 ## Q120565: How to Read Text Mode Screen of MS-DOS Session in Windows
 
+{% raw %}
+
 	Article: Q120565
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.1
@@ -122,3 +124,5 @@ permalink: /kb/120/Q120565/
 	
 	=============================================================================
 	
+
+{% endraw %}

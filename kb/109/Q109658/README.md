@@ -6,6 +6,8 @@ permalink: /kb/109/Q109658/
 
 ## Q109658: Asimov: No Sound Included with QuickTime Movies
 
+{% raw %}
+
 	Article: Q109658
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -70,3 +72,5 @@ permalink: /kb/109/Q109658/
 	
 	=============================================================================
 	
+
+{% endraw %}

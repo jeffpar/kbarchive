@@ -6,6 +6,8 @@ permalink: /kb/172/Q172046/
 
 ## Q172046: XCLN: Patch for Outlook Deployment Kit on April Select CD
 
+{% raw %}
+
 	Article: Q172046
 	Product(s): Microsoft Exchange
 	Version(s): 98
@@ -128,3 +130,5 @@ permalink: /kb/172/Q172046/
 	
 	=============================================================================
 	
+
+{% endraw %}

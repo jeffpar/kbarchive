@@ -6,6 +6,8 @@ permalink: /kb/181/Q181277/
 
 ## Q181277: AtlSink Uses ATL to Create a Dispinterface Sink
 
+{% raw %}
+
 	Article: Q181277
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,3.0,4.2b,5.0,6.0
@@ -304,3 +306,5 @@ permalink: /kb/181/Q181277/
 	
 	=============================================================================
 	
+
+{% endraw %}

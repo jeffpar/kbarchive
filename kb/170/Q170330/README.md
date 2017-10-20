@@ -6,6 +6,8 @@ permalink: /kb/170/Q170330/
 
 ## Q170330: HOTFIX /V Command Returns Errors
 
+{% raw %}
+
 	Article: Q170330
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/170/Q170330/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85452/
 
 ## Q85452: Windows Err Msg: Error Loading SYSTEM.DRV
 
+{% raw %}
+
 	Article: Q85452
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11,95
@@ -69,3 +71,5 @@ permalink: /kb/085/Q85452/
 	
 	=============================================================================
 	
+
+{% endraw %}

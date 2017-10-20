@@ -6,6 +6,8 @@ permalink: /kb/104/Q104210/
 
 ## Q104210: Encarta: Setup Hangs on NEC CD-ROM Drive
 
+{% raw %}
+
 	Article: Q104210
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -69,3 +71,5 @@ permalink: /kb/104/Q104210/
 	
 	=============================================================================
 	
+
+{% endraw %}

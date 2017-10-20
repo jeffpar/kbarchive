@@ -6,6 +6,8 @@ permalink: /kb/134/Q134425/
 
 ## Q134425: Event ID 7000: %1 Not A Valid Windows NT Application
 
+{% raw %}
+
 	Article: Q134425
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -112,3 +114,5 @@ permalink: /kb/134/Q134425/
 	
 	=============================================================================
 	
+
+{% endraw %}

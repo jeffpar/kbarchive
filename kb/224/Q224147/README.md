@@ -6,6 +6,8 @@ permalink: /kb/224/Q224147/
 
 ## Q224147: How to Reset Permissions Using FrontPage 98 Server Extensions
 
+{% raw %}
+
 	Article: Q224147
 	Product(s): Word Front Page
 	Version(s): WINDOWS:
@@ -103,3 +105,5 @@ permalink: /kb/224/Q224147/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/268/Q268720/
 
 ## Q268720: AoE II Expansion: Invalid Page Fault in Age2x_1.exe
 
+{% raw %}
+
 	Article: Q268720
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -72,3 +74,5 @@ permalink: /kb/268/Q268720/
 	
 	=============================================================================
 	
+
+{% endraw %}

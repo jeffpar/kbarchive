@@ -6,6 +6,8 @@ permalink: /kb/183/Q183581/
 
 ## Q183581: Out of Virtual Memory Messages During Windows NT Installation
 
+{% raw %}
+
 	Article: Q183581
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/183/Q183581/
 	
 	=============================================================================
 	
+
+{% endraw %}

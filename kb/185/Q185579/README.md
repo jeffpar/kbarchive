@@ -6,6 +6,8 @@ permalink: /kb/185/Q185579/
 
 ## Q185579: XADM: Duplicating a Mailbox That Belongs to DL in Another Site
 
+{% raw %}
+
 	Article: Q185579
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -71,3 +73,5 @@ permalink: /kb/185/Q185579/
 	
 	=============================================================================
 	
+
+{% endraw %}

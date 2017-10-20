@@ -6,6 +6,8 @@ permalink: /kb/167/Q167872/
 
 ## Q167872: 1.44-MB Media DriveSpace Upgrade in 120-MB Floptical Drive
 
+{% raw %}
+
 	Article: Q167872
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -101,3 +103,5 @@ permalink: /kb/167/Q167872/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184242/
 
 ## Q184242: WinSock 2.0 Installer for Windows 95 (Ws2setup.exe) Update
 
+{% raw %}
+
 	Article: Q184242
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -94,3 +96,5 @@ permalink: /kb/184/Q184242/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150826/
 
 ## Q150826: Batch File to Display IIS Environment Variables from Browser
 
+{% raw %}
+
 	Article: Q150826
 	Product(s): Internet Information Server
 	Version(s): 1.0 3.5 3.51
@@ -59,3 +61,5 @@ permalink: /kb/150/Q150826/
 	
 	=============================================================================
 	
+
+{% endraw %}

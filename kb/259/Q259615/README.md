@@ -6,6 +6,8 @@ permalink: /kb/259/Q259615/
 
 ## Q259615: PRB: &quot;Access Denied&quot; When You Configure Identity of COM Server
 
+{% raw %}
+
 	Article: Q259615
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0
@@ -97,3 +99,5 @@ permalink: /kb/259/Q259615/
 	
 	=============================================================================
 	
+
+{% endraw %}

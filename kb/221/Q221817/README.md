@@ -6,6 +6,8 @@ permalink: /kb/221/Q221817/
 
 ## Q221817: DirectX: Game Stops Responding (Hangs) or Quits Unexpectedly
 
+{% raw %}
+
 	Article: Q221817
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,2.0
@@ -139,3 +141,5 @@ permalink: /kb/221/Q221817/
 	
 	=============================================================================
 	
+
+{% endraw %}

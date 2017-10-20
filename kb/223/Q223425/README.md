@@ -6,6 +6,8 @@ permalink: /kb/223/Q223425/
 
 ## Q223425: PRB: I-Beam Cursor Doesn't Appear When Adding New Record in Grid
 
+{% raw %}
+
 	Article: Q223425
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -88,3 +90,5 @@ permalink: /kb/223/Q223425/
 	
 	=============================================================================
 	
+
+{% endraw %}

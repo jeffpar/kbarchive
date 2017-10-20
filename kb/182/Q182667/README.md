@@ -6,6 +6,8 @@ permalink: /kb/182/Q182667/
 
 ## Q182667: Cannot Use Return Value as OCCURS DEPENDING ON Index
 
+{% raw %}
+
 	Article: Q182667
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -66,3 +68,5 @@ permalink: /kb/182/Q182667/
 	
 	=============================================================================
 	
+
+{% endraw %}

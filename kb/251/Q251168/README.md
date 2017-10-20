@@ -6,6 +6,8 @@ permalink: /kb/251/Q251168/
 
 ## Q251168: XCLN: Meeting Request Generates NDR for a Recipient Not Invited
 
+{% raw %}
+
 	Article: Q251168
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; :
@@ -84,3 +86,5 @@ permalink: /kb/251/Q251168/
 	
 	=============================================================================
 	
+
+{% endraw %}

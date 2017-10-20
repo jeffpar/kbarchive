@@ -6,6 +6,8 @@ permalink: /kb/071/Q71704/
 
 ## Q71704: MS-DOS: Reasons for A20 Line Switching
 
+{% raw %}
+
 	Article: Q71704
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -51,3 +53,5 @@ permalink: /kb/071/Q71704/
 	
 	=============================================================================
 	
+
+{% endraw %}

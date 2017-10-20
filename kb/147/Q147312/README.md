@@ -6,6 +6,8 @@ permalink: /kb/147/Q147312/
 
 ## Q147312: PRB: Error Importing Control into Component Gallery
 
+{% raw %}
+
 	Article: Q147312
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/147/Q147312/
 	
 	=============================================================================
 	
+
+{% endraw %}

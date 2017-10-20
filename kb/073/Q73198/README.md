@@ -6,6 +6,8 @@ permalink: /kb/073/Q73198/
 
 ## Q73198: Ontrack Disk Manager Support for MS-DOS Partitions
 
+{% raw %}
+
 	Article: Q73198
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x
@@ -78,3 +80,5 @@ permalink: /kb/073/Q73198/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/274/Q274104/
 
 ## Q274104: Metal Gear Solid: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q274104
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/274/Q274104/
 	
 	=============================================================================
 	
+
+{% endraw %}

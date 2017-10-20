@@ -6,6 +6,8 @@ permalink: /kb/139/Q139896/
 
 ## Q139896: IPX Type 0x14 Packets Propagated Even if Disabled
 
+{% raw %}
+
 	Article: Q139896
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -75,3 +77,5 @@ permalink: /kb/139/Q139896/
 	
 	=============================================================================
 	
+
+{% endraw %}

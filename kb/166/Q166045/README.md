@@ -6,6 +6,8 @@ permalink: /kb/166/Q166045/
 
 ## Q166045: XFOR: cc:Mail Connector Event ID 70
 
+{% raw %}
+
 	Article: Q166045
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -131,3 +133,5 @@ permalink: /kb/166/Q166045/
 	
 	=============================================================================
 	
+
+{% endraw %}

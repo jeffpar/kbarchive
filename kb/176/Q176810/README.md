@@ -6,6 +6,8 @@ permalink: /kb/176/Q176810/
 
 ## Q176810: HOWTO: Manually Modify and Rebuild CAB Files
 
+{% raw %}
+
 	Article: Q176810
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -184,3 +186,5 @@ permalink: /kb/176/Q176810/
 	
 	=============================================================================
 	
+
+{% endraw %}

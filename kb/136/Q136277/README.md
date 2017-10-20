@@ -6,6 +6,8 @@ permalink: /kb/136/Q136277/
 
 ## Q136277: FIX: FormCount Property Does Not Count Toolbars in a Form Set
 
+{% raw %}
+
 	Article: Q136277
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -116,3 +118,5 @@ permalink: /kb/136/Q136277/
 	
 	=============================================================================
 	
+
+{% endraw %}

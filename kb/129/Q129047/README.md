@@ -6,6 +6,8 @@ permalink: /kb/129/Q129047/
 
 ## Q129047: Synchronizing DNS Information in Registry with Boot Files
 
+{% raw %}
+
 	Article: Q129047
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -101,3 +103,5 @@ permalink: /kb/129/Q129047/
 	
 	=============================================================================
 	
+
+{% endraw %}

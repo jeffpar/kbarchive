@@ -6,6 +6,8 @@ permalink: /kb/148/Q148616/
 
 ## Q148616: FIX: DisplayAsDefault Ambient Property Not Updated for Control
 
+{% raw %}
+
 	Article: Q148616
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -99,3 +101,5 @@ permalink: /kb/148/Q148616/
 	
 	=============================================================================
 	
+
+{% endraw %}

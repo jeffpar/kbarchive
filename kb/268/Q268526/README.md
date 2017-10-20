@@ -6,6 +6,8 @@ permalink: /kb/268/Q268526/
 
 ## Q268526: Buffer Limit Exceeded Importing Exchange Groups in Metadirectory
 
+{% raw %}
+
 	Article: Q268526
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -120,3 +122,5 @@ permalink: /kb/268/Q268526/
 	
 	=============================================================================
 	
+
+{% endraw %}

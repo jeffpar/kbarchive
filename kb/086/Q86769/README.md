@@ -6,6 +6,8 @@ permalink: /kb/086/Q86769/
 
 ## Q86769: HP Font Files Created When Printing to File
 
+{% raw %}
+
 	Article: Q86769
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -53,3 +55,5 @@ permalink: /kb/086/Q86769/
 	
 	=============================================================================
 	
+
+{% endraw %}

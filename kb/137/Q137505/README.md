@@ -6,6 +6,8 @@ permalink: /kb/137/Q137505/
 
 ## Q137505: IBM 16/4 Auto Token Ring Adapter Driver Causes Event ID 7000
 
+{% raw %}
+
 	Article: Q137505
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -89,3 +91,5 @@ permalink: /kb/137/Q137505/
 	
 	=============================================================================
 	
+
+{% endraw %}

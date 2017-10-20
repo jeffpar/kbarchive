@@ -6,6 +6,8 @@ permalink: /kb/106/Q106516/
 
 ## Q106516: Writer: Watch Cursor Appears Repeatedly When Typing
 
+{% raw %}
+
 	Article: Q106516
 	Product(s): Microsoft Home Kids Products
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/106/Q106516/
 	
 	=============================================================================
 	
+
+{% endraw %}

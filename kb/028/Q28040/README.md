@@ -6,6 +6,8 @@ permalink: /kb/028/Q28040/
 
 ## Q28040: Problems with VGA Modes on COMPAQ VGC Board &amp; Video Seven VGA
 
+{% raw %}
+
 	Article: Q28040
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -86,3 +88,5 @@ permalink: /kb/028/Q28040/
 	
 	CALL interruptx(&H10, inregs, outregs)
 	PRINT "THE COLORS ARE NOW CORRECT (red on green)"
+
+{% endraw %}

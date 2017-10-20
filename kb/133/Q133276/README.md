@@ -6,6 +6,8 @@ permalink: /kb/133/Q133276/
 
 ## Q133276: FIX: ClassWizard Generates Incorrect UDN_DELTAPOS Handler
 
+{% raw %}
+
 	Article: Q133276
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -79,3 +81,5 @@ permalink: /kb/133/Q133276/
 	
 	=============================================================================
 	
+
+{% endraw %}

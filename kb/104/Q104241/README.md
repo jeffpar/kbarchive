@@ -6,6 +6,8 @@ permalink: /kb/104/Q104241/
 
 ## Q104241: PRB: Missing Menu IDs from ClassWizard &quot;Object IDs&quot; Window
 
+{% raw %}
+
 	Article: Q104241
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -80,3 +82,5 @@ permalink: /kb/104/Q104241/
 	
 	=============================================================================
 	
+
+{% endraw %}

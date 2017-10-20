@@ -6,6 +6,8 @@ permalink: /kb/169/Q169896/
 
 ## Q169896: Network DDE Application Will Not Connect Via Network DDE
 
+{% raw %}
+
 	Article: Q169896
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11,95; winnt:3.5,3.51,4.0
@@ -152,3 +154,5 @@ permalink: /kb/169/Q169896/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/200/Q200490/
 
 ## Q200490: XADM: Installing Exchange Server 5.5 SP1 on a Cluster
 
+{% raw %}
+
 	Article: Q200490
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1
@@ -69,3 +71,5 @@ permalink: /kb/200/Q200490/
 	
 	=============================================================================
 	
+
+{% endraw %}

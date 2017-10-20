@@ -6,6 +6,8 @@ permalink: /kb/129/Q129084/
 
 ## Q129084: WRITE.EXE Does Not Save the Current Font Setting
 
+{% raw %}
+
 	Article: Q129084
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/129/Q129084/
 	
 	=============================================================================
 	
+
+{% endraw %}

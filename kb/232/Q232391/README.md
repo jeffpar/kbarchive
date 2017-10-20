@@ -6,6 +6,8 @@ permalink: /kb/232/Q232391/
 
 ## Q232391: XADM: Duplicate Messages Received When Message Sent to Large DL
 
+{% raw %}
+
 	Article: Q232391
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -141,3 +143,5 @@ permalink: /kb/232/Q232391/
 	
 	=============================================================================
 	
+
+{% endraw %}

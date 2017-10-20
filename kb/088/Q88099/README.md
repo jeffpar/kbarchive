@@ -6,6 +6,8 @@ permalink: /kb/088/Q88099/
 
 ## Q88099: INI File Sizes Become 0 Bytes After Starting WinLogin
 
+{% raw %}
+
 	Article: Q88099
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -56,3 +58,5 @@ permalink: /kb/088/Q88099/
 	
 	=============================================================================
 	
+
+{% endraw %}

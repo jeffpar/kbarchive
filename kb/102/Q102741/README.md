@@ -6,6 +6,8 @@ permalink: /kb/102/Q102741/
 
 ## Q102741: Windows NT Guest Account vs. Macintosh Guest Account
 
+{% raw %}
+
 	Article: Q102741
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -85,3 +87,5 @@ permalink: /kb/102/Q102741/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/316/Q316318/
 
 ## Q316318: HOWTO: Use NetQueryDisplayInformation() in Visual Basic
 
+{% raw %}
+
 	Article: Q316318
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -295,3 +297,5 @@ permalink: /kb/316/Q316318/
 	
 	=============================================================================
 	
+
+{% endraw %}

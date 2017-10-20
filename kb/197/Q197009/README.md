@@ -6,6 +6,8 @@ permalink: /kb/197/Q197009/
 
 ## Q197009: WD97: Tabs and Paragraph Commands Unavailable in Some Views
 
+{% raw %}
+
 	Article: Q197009
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -69,3 +71,5 @@ permalink: /kb/197/Q197009/
 	
 	=============================================================================
 	
+
+{% endraw %}

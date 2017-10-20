@@ -6,6 +6,8 @@ permalink: /kb/217/Q217180/
 
 ## Q217180: HOWTO: Delete and Re-Register TypeLib GUID for ActiveX Control
 
+{% raw %}
+
 	Article: Q217180
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -118,3 +120,5 @@ permalink: /kb/217/Q217180/
 	
 	=============================================================================
 	
+
+{% endraw %}

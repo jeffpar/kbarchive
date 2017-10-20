@@ -6,6 +6,8 @@ permalink: /kb/097/Q97697/
 
 ## Q97697: Generic/Text Only: Can't Use Null Character in Escape Sequence
 
+{% raw %}
+
 	Article: Q97697
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/097/Q97697/
 	
 	=============================================================================
 	
+
+{% endraw %}

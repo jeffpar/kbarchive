@@ -6,6 +6,8 @@ permalink: /kb/162/Q162444/
 
 ## Q162444: FIX: Unable to Load Installable ISAM Error in Visual FoxPro 5
 
+{% raw %}
+
 	Article: Q162444
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,5.0
@@ -91,3 +93,5 @@ permalink: /kb/162/Q162444/
 	
 	=============================================================================
 	
+
+{% endraw %}

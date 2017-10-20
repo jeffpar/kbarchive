@@ -6,6 +6,8 @@ permalink: /kb/156/Q156232/
 
 ## Q156232: SMS: Clicking &quot;Identify Network Monitor Users&quot; Causes GP Fault
 
+{% raw %}
+
 	Article: Q156232
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -47,3 +49,5 @@ permalink: /kb/156/Q156232/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159763/
 
 ## Q159763: Starting an MS-DOS Prompt Restarts Computer in MS-DOS Mode
 
+{% raw %}
+
 	Article: Q159763
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/159/Q159763/
 	
 	=============================================================================
 	
+
+{% endraw %}

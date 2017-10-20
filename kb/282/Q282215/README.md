@@ -6,6 +6,8 @@ permalink: /kb/282/Q282215/
 
 ## Q282215: Stop 0x0000001E When You Use User Mode Print Drivers to Print
 
+{% raw %}
+
 	Article: Q282215
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -95,3 +97,5 @@ permalink: /kb/282/Q282215/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196724/
 
 ## Q196724: WD97: Change Case Does Not Apply Formatting to Merge Results
 
+{% raw %}
+
 	Article: Q196724
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -89,3 +91,5 @@ permalink: /kb/196/Q196724/
 	
 	=============================================================================
 	
+
+{% endraw %}

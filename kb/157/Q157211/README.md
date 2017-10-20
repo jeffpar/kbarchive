@@ -6,6 +6,8 @@ permalink: /kb/157/Q157211/
 
 ## Q157211: SMS: INVWIN32 Does Not Always Detect Network Card(s)
 
+{% raw %}
+
 	Article: Q157211
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -59,3 +61,5 @@ permalink: /kb/157/Q157211/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/227/Q227205/
 
 ## Q227205: Baseball 2000: Pointer Flickers When You View Player's Guide
 
+{% raw %}
+
 	Article: Q227205
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -63,3 +65,5 @@ permalink: /kb/227/Q227205/
 	
 	=============================================================================
 	
+
+{% endraw %}

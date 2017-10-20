@@ -6,6 +6,8 @@ permalink: /kb/318/Q318848/
 
 ## Q318848: Flight Simulator 2002: How to Find the Handbooks
 
+{% raw %}
+
 	Article: Q318848
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/318/Q318848/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241166/
 
 ## Q241166: NBA Inside Drive 2000: Names or Positions Not Displayed Properly
 
+{% raw %}
+
 	Article: Q241166
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/241/Q241166/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/268/Q268127/
 
 ## Q268127: TN3270 LUs Must Be Pooled Across Multiple Nodes or Connections
 
+{% raw %}
+
 	Article: Q268127
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3; :
@@ -121,3 +123,5 @@ permalink: /kb/268/Q268127/
 	
 	=============================================================================
 	
+
+{% endraw %}

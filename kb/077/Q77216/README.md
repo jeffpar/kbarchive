@@ -6,6 +6,8 @@ permalink: /kb/077/Q77216/
 
 ## Q77216: Unable to Edit Shell Program with 23 Character Title
 
+{% raw %}
+
 	Article: Q77216
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -62,3 +64,5 @@ permalink: /kb/077/Q77216/
 	
 	=============================================================================
 	
+
+{% endraw %}

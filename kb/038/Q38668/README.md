@@ -6,6 +6,8 @@ permalink: /kb/038/Q38668/
 
 ## Q38668: Mac DOS: Using Microsoft Mail with Windows/386
 
+{% raw %}
+
 	Article: Q38668
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.37,2.0,3.0
@@ -65,3 +67,5 @@ permalink: /kb/038/Q38668/
 	
 	=============================================================================
 	
+
+{% endraw %}

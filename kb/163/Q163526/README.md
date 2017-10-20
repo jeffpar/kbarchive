@@ -6,6 +6,8 @@ permalink: /kb/163/Q163526/
 
 ## Q163526: SMS: Polycenter/Assetworks and SMS Support Policy
 
+{% raw %}
+
 	Article: Q163526
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -51,3 +53,5 @@ permalink: /kb/163/Q163526/
 	
 	=============================================================================
 	
+
+{% endraw %}

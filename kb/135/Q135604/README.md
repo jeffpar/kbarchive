@@ -6,6 +6,8 @@ permalink: /kb/135/Q135604/
 
 ## Q135604: DIR /O:N /S Does Not Sort Directory Names in Alphanumeric Order
 
+{% raw %}
+
 	Article: Q135604
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -86,3 +88,5 @@ permalink: /kb/135/Q135604/
 	
 	=============================================================================
 	
+
+{% endraw %}

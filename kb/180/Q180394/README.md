@@ -6,6 +6,8 @@ permalink: /kb/180/Q180394/
 
 ## Q180394: Incomplete Destination Selection: Please Enter Table Name
 
+{% raw %}
+
 	Article: Q180394
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0
@@ -82,3 +84,5 @@ permalink: /kb/180/Q180394/
 	
 	=============================================================================
 	
+
+{% endraw %}

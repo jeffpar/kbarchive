@@ -6,6 +6,8 @@ permalink: /kb/159/Q159907/
 
 ## Q159907: PRB: Missing Window Buttons if Form ControlBox Property False
 
+{% raw %}
+
 	Article: Q159907
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -93,3 +95,5 @@ permalink: /kb/159/Q159907/
 	
 	=============================================================================
 	
+
+{% endraw %}

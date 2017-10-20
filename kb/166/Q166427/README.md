@@ -6,6 +6,8 @@ permalink: /kb/166/Q166427/
 
 ## Q166427: How to Set System Locale in Multiple User Profile Environments
 
+{% raw %}
+
 	Article: Q166427
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -82,3 +84,5 @@ permalink: /kb/166/Q166427/
 	
 	=============================================================================
 	
+
+{% endraw %}

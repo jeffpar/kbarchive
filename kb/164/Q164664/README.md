@@ -6,6 +6,8 @@ permalink: /kb/164/Q164664/
 
 ## Q164664: DEC Celebris 590 with Buslogic KT-946C May Hang
 
+{% raw %}
+
 	Article: Q164664
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/164/Q164664/
 	
 	=============================================================================
 	
+
+{% endraw %}

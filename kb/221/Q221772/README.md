@@ -6,6 +6,8 @@ permalink: /kb/221/Q221772/
 
 ## Q221772: &quot;SNABase not started&quot; if SNA Client for Windows NT is installed
 
+{% raw %}
+
 	Article: Q221772
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
@@ -71,3 +73,5 @@ permalink: /kb/221/Q221772/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/264/Q264490/
 
 ## Q264490: XCLN: Calendar Events in Appear to be 2 Hours Off
 
+{% raw %}
+
 	Article: Q264490
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03,8.04,8.5,SR-1 Enterprise Update
@@ -61,3 +63,5 @@ permalink: /kb/264/Q264490/
 	
 	=============================================================================
 	
+
+{% endraw %}

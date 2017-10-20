@@ -6,6 +6,8 @@ permalink: /kb/198/Q198850/
 
 ## Q198850: Uninstalled Modem Remains in Fax Server Registry Settings
 
+{% raw %}
+
 	Article: Q198850
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a,4.5
@@ -90,3 +92,5 @@ permalink: /kb/198/Q198850/
 	
 	=============================================================================
 	
+
+{% endraw %}

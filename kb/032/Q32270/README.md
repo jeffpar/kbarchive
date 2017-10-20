@@ -6,6 +6,8 @@ permalink: /kb/032/Q32270/
 
 ## Q32270: COMMON Variable Has Different Value with .EXE Versus QB.EXE
 
+{% raw %}
+
 	Article: Q32270
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -46,3 +48,5 @@ permalink: /kb/032/Q32270/
 	This problem occurs because QB.EXE works on the premise that you
 	really wanted the variable A in COMMON to be an integer instead of
 	single precision.
+
+{% endraw %}

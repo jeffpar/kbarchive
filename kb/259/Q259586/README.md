@@ -6,6 +6,8 @@ permalink: /kb/259/Q259586/
 
 ## Q259586: SMS: SNMP Trap Filter Also Reports SQL Server Traps
 
+{% raw %}
+
 	Article: Q259586
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,1.2 SP1,1.2 SP2,1.2 SP3,1.2 SP4,2.0,2.0 SP1,2.0 SP2
@@ -58,3 +60,5 @@ permalink: /kb/259/Q259586/
 	
 	=============================================================================
 	
+
+{% endraw %}

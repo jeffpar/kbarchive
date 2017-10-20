@@ -6,6 +6,8 @@ permalink: /kb/133/Q133232/
 
 ## Q133232: Dogs: Pressing Enter in Find List Doesn't Jump to Page
 
+{% raw %}
+
 	Article: Q133232
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/133/Q133232/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164234/
 
 ## Q164234: WD97: How to Break Out of an Infinite Macro Loop
 
+{% raw %}
+
 	Article: Q164234
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -89,3 +91,5 @@ permalink: /kb/164/Q164234/
 	
 	=============================================================================
 	
+
+{% endraw %}

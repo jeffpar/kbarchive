@@ -6,6 +6,8 @@ permalink: /kb/165/Q165876/
 
 ## Q165876: SMS: How to Restart a &quot;Deinstalled&quot; Primary Site
 
+{% raw %}
+
 	Article: Q165876
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.1,1.2
@@ -86,3 +88,5 @@ permalink: /kb/165/Q165876/
 	
 	=============================================================================
 	
+
+{% endraw %}

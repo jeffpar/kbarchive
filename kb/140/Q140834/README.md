@@ -6,6 +6,8 @@ permalink: /kb/140/Q140834/
 
 ## Q140834: Username/Password Support in SNA Server Win95 Client Registry
 
+{% raw %}
+
 	Article: Q140834
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,3.0
@@ -128,3 +130,5 @@ permalink: /kb/140/Q140834/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120746/
 
 ## Q120746: Default Disk Letters Incorrectly Listed During Installation
 
+{% raw %}
+
 	Article: Q120746
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/120/Q120746/
 	
 	=============================================================================
 	
+
+{% endraw %}

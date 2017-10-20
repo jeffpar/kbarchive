@@ -6,6 +6,8 @@ permalink: /kb/297/Q297839/
 
 ## Q297839: FIX: TYPE() of Combo/List Box Value May Crash VFP
 
+{% raw %}
+
 	Article: Q297839
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -83,3 +85,5 @@ permalink: /kb/297/Q297839/
 	
 	=============================================================================
 	
+
+{% endraw %}

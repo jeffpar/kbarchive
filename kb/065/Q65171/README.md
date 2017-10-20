@@ -6,6 +6,8 @@ permalink: /kb/065/Q65171/
 
 ## Q65171: COMPAQ Keyboard Utilities May Disable Mouse in Windows 3.0
 
+{% raw %}
+
 	Article: Q65171
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/065/Q65171/
 	
 	=============================================================================
 	
+
+{% endraw %}

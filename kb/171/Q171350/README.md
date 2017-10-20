@@ -6,6 +6,8 @@ permalink: /kb/171/Q171350/
 
 ## Q171350: BUG: Analyze Always Updates aaaaaaaa.cnt
 
+{% raw %}
+
 	Article: Q171350
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/171/Q171350/
 	
 	=============================================================================
 	
+
+{% endraw %}

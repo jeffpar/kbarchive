@@ -6,6 +6,8 @@ permalink: /kb/148/Q148516/
 
 ## Q148516: WINNTP.EXE Fails If Windows 95 Boot Sector Is Installed
 
+{% raw %}
+
 	Article: Q148516
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -102,3 +104,5 @@ permalink: /kb/148/Q148516/
 	
 	=============================================================================
 	
+
+{% endraw %}

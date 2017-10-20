@@ -6,6 +6,8 @@ permalink: /kb/152/Q152829/
 
 ## Q152829: Custom Voice Command Applies to Wrong Program
 
+{% raw %}
+
 	Article: Q152829
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -71,3 +73,5 @@ permalink: /kb/152/Q152829/
 	
 	=============================================================================
 	
+
+{% endraw %}

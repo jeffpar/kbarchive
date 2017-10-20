@@ -6,6 +6,8 @@ permalink: /kb/117/Q117595/
 
 ## Q117595: INFO: Operating System Changes with System 7.1.2 and Power Mac
 
+{% raw %}
+
 	Article: Q117595
 	Product(s): Microsoft FoxPro
 	Version(s): 2.01,2.5b,2.5c,3.0b
@@ -83,3 +85,5 @@ permalink: /kb/117/Q117595/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181527/
 
 ## Q181527: WD97: Macro to Find Automatic (Soft) Page Breaks
 
+{% raw %}
+
 	Article: Q181527
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -156,3 +158,5 @@ permalink: /kb/181/Q181527/
 	
 	=============================================================================
 	
+
+{% endraw %}

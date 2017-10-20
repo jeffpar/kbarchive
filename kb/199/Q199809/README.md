@@ -6,6 +6,8 @@ permalink: /kb/199/Q199809/
 
 ## Q199809: INFO: How VB Interprets Numbers, Constants and Numeric Types
 
+{% raw %}
+
 	Article: Q199809
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -119,3 +121,5 @@ permalink: /kb/199/Q199809/
 	
 	=============================================================================
 	
+
+{% endraw %}

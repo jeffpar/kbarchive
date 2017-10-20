@@ -6,6 +6,8 @@ permalink: /kb/187/Q187856/
 
 ## Q187856: Limit SSL Message Size to 16 KB for Netscape
 
+{% raw %}
+
 	Article: Q187856
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0,4.0
@@ -73,3 +75,5 @@ permalink: /kb/187/Q187856/
 	
 	=============================================================================
 	
+
+{% endraw %}

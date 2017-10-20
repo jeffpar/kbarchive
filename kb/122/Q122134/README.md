@@ -6,6 +6,8 @@ permalink: /kb/122/Q122134/
 
 ## Q122134: Cannot Use Leading Spaces in a String for an Inventory Rule
 
+{% raw %}
+
 	Article: Q122134
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -73,3 +75,5 @@ permalink: /kb/122/Q122134/
 	
 	=============================================================================
 	
+
+{% endraw %}

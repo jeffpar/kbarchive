@@ -6,6 +6,8 @@ permalink: /kb/049/Q49377/
 
 ## Q49377: CVP 2.30 Does Not Allow Pathnames for DLLs Specified with /L
 
+{% raw %}
+
 	Article: Q49377
 	Product(s): See article
 	Version(s): 2.30
@@ -67,3 +69,5 @@ permalink: /kb/049/Q49377/
 	following words:
 	
 	   CodeView DLL debugging and libpath
+
+{% endraw %}

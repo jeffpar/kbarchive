@@ -6,6 +6,8 @@ permalink: /kb/148/Q148341/
 
 ## Q148341: Do-it-Yourself Guide: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q148341
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.00
@@ -59,3 +61,5 @@ permalink: /kb/148/Q148341/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136377/
 
 ## Q136377: Invalid RawWorkItems Calculated on Some MP Computers
 
+{% raw %}
+
 	Article: Q136377
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -82,3 +84,5 @@ permalink: /kb/136/Q136377/
 	
 	=============================================================================
 	
+
+{% endraw %}

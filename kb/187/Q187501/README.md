@@ -6,6 +6,8 @@ permalink: /kb/187/Q187501/
 
 ## Q187501: Different Directory Types That Can Be Added To a Catalog
 
+{% raw %}
+
 	Article: Q187501
 	Product(s): Internet Information Server
 	Version(s): WINNT:2.0
@@ -46,3 +48,5 @@ permalink: /kb/187/Q187501/
 	
 	=============================================================================
 	
+
+{% endraw %}

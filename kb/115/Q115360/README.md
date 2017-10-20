@@ -6,6 +6,8 @@ permalink: /kb/115/Q115360/
 
 ## Q115360: X400: Cursor Stays in First Column of Route Table
 
+{% raw %}
+
 	Article: Q115360
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -55,3 +57,5 @@ permalink: /kb/115/Q115360/
 	
 	=============================================================================
 	
+
+{% endraw %}

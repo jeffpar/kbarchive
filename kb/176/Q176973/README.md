@@ -6,6 +6,8 @@ permalink: /kb/176/Q176973/
 
 ## Q176973: Stop 0x0000000A in Netbt.sys on BDC When WINS Server Shuts Down
 
+{% raw %}
+
 	Article: Q176973
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -74,3 +76,5 @@ permalink: /kb/176/Q176973/
 	
 	=============================================================================
 	
+
+{% endraw %}

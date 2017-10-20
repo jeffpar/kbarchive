@@ -6,6 +6,8 @@ permalink: /kb/155/Q155684/
 
 ## Q155684: XFOR: IMC Support for VRFY Command
 
+{% raw %}
+
 	Article: Q155684
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0 SP2
@@ -54,3 +56,5 @@ permalink: /kb/155/Q155684/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/269/Q269196/
 
 ## Q269196: How to Move a Cluster Server from One Domain to Another
 
+{% raw %}
+
 	Article: Q269196
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -173,3 +175,5 @@ permalink: /kb/269/Q269196/
 	
 	=============================================================================
 	
+
+{% endraw %}

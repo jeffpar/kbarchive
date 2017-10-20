@@ -6,6 +6,8 @@ permalink: /kb/114/Q114194/
 
 ## Q114194: PRB: Cannot Access Selected Table
 
+{% raw %}
+
 	Article: Q114194
 	Product(s): Microsoft FoxPro
 	Version(s): 2.60 3.00 | 2.60
@@ -102,3 +104,5 @@ permalink: /kb/114/Q114194/
 	
 	=============================================================================
 	
+
+{% endraw %}

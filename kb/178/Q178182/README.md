@@ -6,6 +6,8 @@ permalink: /kb/178/Q178182/
 
 ## Q178182: Encarta 97 Err Msg: The Registration Wizard Cannot Run...
 
+{% raw %}
+
 	Article: Q178182
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -133,3 +135,5 @@ permalink: /kb/178/Q178182/
 	
 	=============================================================================
 	
+
+{% endraw %}

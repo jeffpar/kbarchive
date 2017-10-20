@@ -6,6 +6,8 @@ permalink: /kb/142/Q142593/
 
 ## Q142593: FIX: Header Files Not Excluded from Project Directory
 
+{% raw %}
+
 	Article: Q142593
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -54,3 +56,5 @@ permalink: /kb/142/Q142593/
 	
 	=============================================================================
 	
+
+{% endraw %}

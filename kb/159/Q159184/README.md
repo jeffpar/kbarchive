@@ -6,6 +6,8 @@ permalink: /kb/159/Q159184/
 
 ## Q159184: XADM: No Messages from MTA with High Directory Service Activity
 
+{% raw %}
+
 	Article: Q159184
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -137,3 +139,5 @@ permalink: /kb/159/Q159184/
 	
 	=============================================================================
 	
+
+{% endraw %}

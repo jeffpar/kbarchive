@@ -6,6 +6,8 @@ permalink: /kb/140/Q140559/
 
 ## Q140559: PPT: File Size Differs Between Macintosh and Windows Versions
 
+{% raw %}
+
 	Article: Q140559
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:3.0,4.0; WINDOWS:3.0,4.0,7.0
@@ -59,3 +61,5 @@ permalink: /kb/140/Q140559/
 	
 	=============================================================================
 	
+
+{% endraw %}

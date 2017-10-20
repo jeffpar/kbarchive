@@ -6,6 +6,8 @@ permalink: /kb/181/Q181624/
 
 ## Q181624: LPR Port No Longer Appears as an Available Printer Port
 
+{% raw %}
+
 	Article: Q181624
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -109,3 +111,5 @@ permalink: /kb/181/Q181624/
 	
 	=============================================================================
 	
+
+{% endraw %}

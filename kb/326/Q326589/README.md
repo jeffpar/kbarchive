@@ -6,6 +6,8 @@ permalink: /kb/326/Q326589/
 
 ## Q326589: SMS: How to Control SMS_EXECUTIVE Threads w/out SMS Service Mgr
 
+{% raw %}
+
 	Article: Q326589
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -80,3 +82,5 @@ permalink: /kb/326/Q326589/
 	
 	=============================================================================
 	
+
+{% endraw %}

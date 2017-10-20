@@ -6,6 +6,8 @@ permalink: /kb/058/Q58733/
 
 ## Q58733: BASIC 7.00 Can Assign an Array to an Array If in a TYPE
 
+{% raw %}
+
 	Article: Q58733
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -90,3 +92,5 @@ permalink: /kb/058/Q58733/
 	     PRINT var2.array1(i);
 	   NEXT
 	   CLOSE
+
+{% endraw %}

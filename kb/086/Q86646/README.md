@@ -6,6 +6,8 @@ permalink: /kb/086/Q86646/
 
 ## Q86646: How to Restore Backed-up Files to a Different Directory
 
+{% raw %}
+
 	Article: Q86646
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.3,3.30a,4.x,5.0,5.0a,6.0,6.2,6.21,6.22
@@ -102,3 +104,5 @@ permalink: /kb/086/Q86646/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246277/
 
 ## Q246277: XADM: Cannot Restore Exchange Server 5.5 with Seagate BackupExec
 
+{% raw %}
+
 	Article: Q246277
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -58,3 +60,5 @@ permalink: /kb/246/Q246277/
 	
 	=============================================================================
 	
+
+{% endraw %}

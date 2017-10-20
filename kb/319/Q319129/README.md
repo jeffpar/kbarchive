@@ -6,6 +6,8 @@ permalink: /kb/319/Q319129/
 
 ## Q319129: Event Error After You Apply the Microsoft BIOS3 Y2K Update
 
+{% raw %}
+
 	Article: Q319129
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -88,3 +90,5 @@ permalink: /kb/319/Q319129/
 	
 	=============================================================================
 	
+
+{% endraw %}

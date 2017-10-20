@@ -6,6 +6,8 @@ permalink: /kb/100/Q100343/
 
 ## Q100343: MS-DOS Editor Does Not Print to Laser Printer
 
+{% raw %}
+
 	Article: Q100343
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -48,3 +50,5 @@ permalink: /kb/100/Q100343/
 	
 	=============================================================================
 	
+
+{% endraw %}

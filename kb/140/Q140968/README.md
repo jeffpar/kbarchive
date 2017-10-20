@@ -6,6 +6,8 @@ permalink: /kb/140/Q140968/
 
 ## Q140968: How to Search SNA Server Articles by KB Subcategories
 
+{% raw %}
+
 	Article: Q140968
 	Product(s): Microsoft SNA Server
 	Version(s): 2.0,2.1,2.11,2.11 SP1,3.0,4.0
@@ -101,3 +103,5 @@ permalink: /kb/140/Q140968/
 	
 	=============================================================================
 	
+
+{% endraw %}

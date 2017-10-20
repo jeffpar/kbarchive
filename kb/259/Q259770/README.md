@@ -6,6 +6,8 @@ permalink: /kb/259/Q259770/
 
 ## Q259770: Baseball 2001 Err Msg: ...Invalid Page Fault in Graphics.dll
 
+{% raw %}
+
 	Article: Q259770
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -201,3 +203,5 @@ permalink: /kb/259/Q259770/
 	
 	=============================================================================
 	
+
+{% endraw %}

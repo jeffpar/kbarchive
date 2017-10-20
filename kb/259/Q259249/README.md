@@ -6,6 +6,8 @@ permalink: /kb/259/Q259249/
 
 ## Q259249: SMS: DDM Merges DDRs from Shared Docking Station Environment
 
+{% raw %}
+
 	Article: Q259249
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -69,3 +71,5 @@ permalink: /kb/259/Q259249/
 	
 	=============================================================================
 	
+
+{% endraw %}

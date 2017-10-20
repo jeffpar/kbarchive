@@ -6,6 +6,8 @@ permalink: /kb/032/Q32324/
 
 ## Q32324: C 5.00 and 5.10 putenv() Example Program Missing Backslashes
 
+{% raw %}
+
 	Article: Q32324
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -25,3 +27,5 @@ permalink: /kb/032/Q32324/
 	The corrected line (with escaped backslashes) should read as follows:
 	
 	   if (putenv("PATH=a:\\bin;b:\\tmp") == 1)
+
+{% endraw %}

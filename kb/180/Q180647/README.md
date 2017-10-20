@@ -6,6 +6,8 @@ permalink: /kb/180/Q180647/
 
 ## Q180647: Disabling WinNT 3.51 Video Drivers to Enable Unattend Install
 
+{% raw %}
+
 	Article: Q180647
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -102,3 +104,5 @@ permalink: /kb/180/Q180647/
 	
 	=============================================================================
 	
+
+{% endraw %}

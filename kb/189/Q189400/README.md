@@ -6,6 +6,8 @@ permalink: /kb/189/Q189400/
 
 ## Q189400: BUG: VBComponents Add Method Cannot Add a Form
 
+{% raw %}
+
 	Article: Q189400
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -121,3 +123,5 @@ permalink: /kb/189/Q189400/
 	
 	=============================================================================
 	
+
+{% endraw %}

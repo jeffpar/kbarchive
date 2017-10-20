@@ -6,6 +6,8 @@ permalink: /kb/068/Q68748/
 
 ## Q68748: Set Up IBM DOS LAN Requester as LAN Manager 2.0 Enhanced
 
+{% raw %}
+
 	Article: Q68748
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -64,3 +66,5 @@ permalink: /kb/068/Q68748/
 	
 	=============================================================================
 	
+
+{% endraw %}

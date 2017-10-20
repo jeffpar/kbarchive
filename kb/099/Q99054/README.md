@@ -6,6 +6,8 @@ permalink: /kb/099/Q99054/
 
 ## Q99054: Mac Wkst: Message Was Sent Using a Custom Form
 
+{% raw %}
+
 	Article: Q99054
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -65,3 +67,5 @@ permalink: /kb/099/Q99054/
 	
 	=============================================================================
 	
+
+{% endraw %}

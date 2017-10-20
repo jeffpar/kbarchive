@@ -6,6 +6,8 @@ permalink: /kb/173/Q173529/
 
 ## Q173529: Using Batch Files to Automate Networking Tasks
 
+{% raw %}
+
 	Article: Q173529
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -173,3 +175,5 @@ permalink: /kb/173/Q173529/
 	
 	=============================================================================
 	
+
+{% endraw %}

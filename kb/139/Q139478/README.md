@@ -6,6 +6,8 @@ permalink: /kb/139/Q139478/
 
 ## Q139478: INFO: _heapwalk() Does Not Work On Win32s
 
+{% raw %}
+
 	Article: Q139478
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -36,3 +38,5 @@ permalink: /kb/139/Q139478/
 	
 	=============================================================================
 	
+
+{% endraw %}

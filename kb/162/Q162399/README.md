@@ -6,6 +6,8 @@ permalink: /kb/162/Q162399/
 
 ## Q162399: WD97: Unexpected Name in &quot;File Name&quot; Box After Macro Change
 
+{% raw %}
+
 	Article: Q162399
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -122,3 +124,5 @@ permalink: /kb/162/Q162399/
 	
 	=============================================================================
 	
+
+{% endraw %}

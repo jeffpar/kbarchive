@@ -6,6 +6,8 @@ permalink: /kb/252/Q252174/
 
 ## Q252174: IISAdmin Fails to Start When the Metabase Is Too Large
 
+{% raw %}
+
 	Article: Q252174
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -127,3 +129,5 @@ permalink: /kb/252/Q252174/
 	
 	=============================================================================
 	
+
+{% endraw %}

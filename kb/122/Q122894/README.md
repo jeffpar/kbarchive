@@ -6,6 +6,8 @@ permalink: /kb/122/Q122894/
 
 ## Q122894: Help Button Not Functional in Network Section of Control Panel
 
+{% raw %}
+
 	Article: Q122894
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/122/Q122894/
 	
 	=============================================================================
 	
+
+{% endraw %}

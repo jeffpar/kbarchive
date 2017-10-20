@@ -6,6 +6,8 @@ permalink: /kb/126/Q126058/
 
 ## Q126058: Err Msg: Cannot Create C:&#92;AUTOMAP&#92;USERDATA&#92;USA.MAP
 
+{% raw %}
+
 	Article: Q126058
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/126/Q126058/
 	
 	=============================================================================
 	
+
+{% endraw %}

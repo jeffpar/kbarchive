@@ -6,6 +6,8 @@ permalink: /kb/185/Q185833/
 
 ## Q185833: Memory Leak in Rasman.exe on Compaq Systems
 
+{% raw %}
+
 	Article: Q185833
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/185/Q185833/
 	
 	=============================================================================
 	
+
+{% endraw %}

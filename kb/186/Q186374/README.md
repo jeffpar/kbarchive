@@ -6,6 +6,8 @@ permalink: /kb/186/Q186374/
 
 ## Q186374: Enable Auditing of Microsoft Windows NT Server Password Registry
 
+{% raw %}
+
 	Article: Q186374
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -144,3 +146,5 @@ permalink: /kb/186/Q186374/
 	
 	=============================================================================
 	
+
+{% endraw %}

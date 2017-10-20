@@ -6,6 +6,8 @@ permalink: /kb/308/Q308176/
 
 ## Q308176: BUG: SSI #EXEC CMD Directive Does Not Work in IIS 5.1
 
+{% raw %}
+
 	Article: Q308176
 	Product(s): Internet Information Server
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/308/Q308176/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138693/
 
 ## Q138693: FIX: Error Opening .Bsc File from MRU List
 
+{% raw %}
+
 	Article: Q138693
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -78,3 +80,5 @@ permalink: /kb/138/Q138693/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/027/Q27139/
 
 ## Q27139: WIDTH Over 255 Not Trapped as Error in Version 4.00 Editor
 
+{% raw %}
+
 	Article: Q27139
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -38,3 +40,5 @@ permalink: /kb/027/Q27139/
 	a = 400
 	width #1, a   ' If 400 is used instead of "a", the error is correctly
 	              ' flagged when compiled with BC.EXE.
+
+{% endraw %}

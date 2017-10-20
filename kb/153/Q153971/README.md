@@ -6,6 +6,8 @@ permalink: /kb/153/Q153971/
 
 ## Q153971: Golf Err Msg: Setup Does Not Support Your Type of Computer
 
+{% raw %}
+
 	Article: Q153971
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -48,3 +50,5 @@ permalink: /kb/153/Q153971/
 	
 	=============================================================================
 	
+
+{% endraw %}

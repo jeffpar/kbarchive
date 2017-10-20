@@ -6,6 +6,8 @@ permalink: /kb/235/Q235607/
 
 ## Q235607: XADM: HTML in Subject Field Is Not Converted Properly
 
+{% raw %}
+
 	Article: Q235607
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -95,3 +97,5 @@ permalink: /kb/235/Q235607/
 	
 	=============================================================================
 	
+
+{% endraw %}

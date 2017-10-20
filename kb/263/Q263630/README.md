@@ -6,6 +6,8 @@ permalink: /kb/263/Q263630/
 
 ## Q263630: BUG: C2143 Referencing Class Template from Another Namespace
 
+{% raw %}
+
 	Article: Q263630
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -74,3 +76,5 @@ permalink: /kb/263/Q263630/
 	
 	=============================================================================
 	
+
+{% endraw %}

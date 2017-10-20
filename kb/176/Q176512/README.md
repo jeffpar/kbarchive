@@ -6,6 +6,8 @@ permalink: /kb/176/Q176512/
 
 ## Q176512: RRAS Event ID 20050: The User Domain&#92;User Connected to...
 
+{% raw %}
+
 	Article: Q176512
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): Win2000:95; winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/176/Q176512/
 	
 	=============================================================================
 	
+
+{% endraw %}

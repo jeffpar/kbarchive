@@ -6,6 +6,8 @@ permalink: /kb/164/Q164162/
 
 ## Q164162: Adding a Full Screen Feature to an MFC Application
 
+{% raw %}
+
 	Article: Q164162
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -163,3 +165,5 @@ permalink: /kb/164/Q164162/
 	
 	=============================================================================
 	
+
+{% endraw %}

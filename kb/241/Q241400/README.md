@@ -6,6 +6,8 @@ permalink: /kb/241/Q241400/
 
 ## Q241400: IAS Hangs When Configured as RADIUS Client for Windows 2000
 
+{% raw %}
+
 	Article: Q241400
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP5
@@ -108,3 +110,5 @@ permalink: /kb/241/Q241400/
 	
 	=============================================================================
 	
+
+{% endraw %}

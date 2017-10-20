@@ -6,6 +6,8 @@ permalink: /kb/253/Q253198/
 
 ## Q253198: Asterisk Before Preferred NetWare Server May Cause Problems
 
+{% raw %}
+
 	Article: Q253198
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP5,4.0 SP6a
@@ -86,3 +88,5 @@ permalink: /kb/253/Q253198/
 	
 	=============================================================================
 	
+
+{% endraw %}

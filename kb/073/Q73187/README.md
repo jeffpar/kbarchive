@@ -6,6 +6,8 @@ permalink: /kb/073/Q73187/
 
 ## Q73187: Using Huge Memory Model and Huge Arrays in MASM
 
+{% raw %}
+
 	Article: Q73187
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.0,5.10,5.10a,6.0,6.0a,6.0b
@@ -239,3 +241,5 @@ permalink: /kb/073/Q73187/
 	
 	=============================================================================
 	
+
+{% endraw %}

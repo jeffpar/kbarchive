@@ -6,6 +6,8 @@ permalink: /kb/193/Q193399/
 
 ## Q193399: BUG: TabStrip Loses Selection When Placement Property is Changed
 
+{% raw %}
+
 	Article: Q193399
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -106,3 +108,5 @@ permalink: /kb/193/Q193399/
 	
 	=============================================================================
 	
+
+{% endraw %}

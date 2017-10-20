@@ -6,6 +6,8 @@ permalink: /kb/230/Q230489/
 
 ## Q230489: HOWTO: Annotate Image with Text Using ImageEdit Control
 
+{% raw %}
+
 	Article: Q230489
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/230/Q230489/
 	
 	=============================================================================
 	
+
+{% endraw %}

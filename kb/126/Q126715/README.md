@@ -6,6 +6,8 @@ permalink: /kb/126/Q126715/
 
 ## Q126715: INVDOS Does Not Detect NEC 3x CDROM drives
 
+{% raw %}
+
 	Article: Q126715
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -44,3 +46,5 @@ permalink: /kb/126/Q126715/
 	
 	=============================================================================
 	
+
+{% endraw %}

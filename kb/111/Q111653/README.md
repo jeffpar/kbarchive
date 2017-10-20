@@ -6,6 +6,8 @@ permalink: /kb/111/Q111653/
 
 ## Q111653: BUG: Printer Driver Receives &quot;bigfonts&quot; When Not Supported
 
+{% raw %}
+
 	Article: Q111653
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -57,3 +59,5 @@ permalink: /kb/111/Q111653/
 	
 	=============================================================================
 	
+
+{% endraw %}

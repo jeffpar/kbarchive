@@ -6,6 +6,8 @@ permalink: /kb/170/Q170643/
 
 ## Q170643: Maximizing Routing Performance with Netflex-3 Network Adapter
 
+{% raw %}
+
 	Article: Q170643
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -107,3 +109,5 @@ permalink: /kb/170/Q170643/
 	
 	=============================================================================
 	
+
+{% endraw %}

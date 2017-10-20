@@ -6,6 +6,8 @@ permalink: /kb/098/Q98252/
 
 ## Q98252: PC WFW: 3.0 MS-DOS-Based Workstation Disk 1 &#91;3.5&#93;
 
+{% raw %}
+
 	Article: Q98252
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -74,3 +76,5 @@ permalink: /kb/098/Q98252/
 	
 	=============================================================================
 	
+
+{% endraw %}

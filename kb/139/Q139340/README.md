@@ -6,6 +6,8 @@ permalink: /kb/139/Q139340/
 
 ## Q139340: How to Enable Debug Message Output During Setup
 
+{% raw %}
+
 	Article: Q139340
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -77,3 +79,5 @@ permalink: /kb/139/Q139340/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118611/
 
 ## Q118611: INFO: SetMessageQueue Used in MFC WinMain
 
+{% raw %}
+
 	Article: Q118611
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1
@@ -68,3 +70,5 @@ permalink: /kb/118/Q118611/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192065/
 
 ## Q192065: XADM: High CPU Usage by STORE Displaying a Folder View
 
+{% raw %}
+
 	Article: Q192065
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -89,3 +91,5 @@ permalink: /kb/192/Q192065/
 	
 	=============================================================================
 	
+
+{% endraw %}

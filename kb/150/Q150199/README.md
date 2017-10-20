@@ -6,6 +6,8 @@ permalink: /kb/150/Q150199/
 
 ## Q150199: DOC: ThreadingModel Is Not a Subkey
 
+{% raw %}
+
 	Article: Q150199
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,4.1,4.2
@@ -95,3 +97,5 @@ permalink: /kb/150/Q150199/
 	
 	=============================================================================
 	
+
+{% endraw %}

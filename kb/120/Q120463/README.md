@@ -6,6 +6,8 @@ permalink: /kb/120/Q120463/
 
 ## Q120463: Scenes 2.0: Causes Divide by Zero Error Under Windows NT
 
+{% raw %}
+
 	Article: Q120463
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 2.00
@@ -55,3 +57,5 @@ permalink: /kb/120/Q120463/
 	
 	=============================================================================
 	
+
+{% endraw %}

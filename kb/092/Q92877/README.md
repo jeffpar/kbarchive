@@ -6,6 +6,8 @@ permalink: /kb/092/Q92877/
 
 ## Q92877: WFWG May Hang If TCP/IP Hasn't Registered at Logon Time
 
+{% raw %}
+
 	Article: Q92877
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -74,3 +76,5 @@ permalink: /kb/092/Q92877/
 	
 	=============================================================================
 	
+
+{% endraw %}

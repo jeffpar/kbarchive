@@ -6,6 +6,8 @@ permalink: /kb/141/Q141931/
 
 ## Q141931: INFO: Limitations of the Visual Basic 4.0 Add-In Object Model
 
+{% raw %}
+
 	Article: Q141931
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -121,3 +123,5 @@ permalink: /kb/141/Q141931/
 	
 	=============================================================================
 	
+
+{% endraw %}

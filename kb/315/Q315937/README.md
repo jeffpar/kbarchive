@@ -6,6 +6,8 @@ permalink: /kb/315/Q315937/
 
 ## Q315937: HOW TO: Trap Stack Overflow in a Visual C++ Application
 
+{% raw %}
+
 	Article: Q315937
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -290,3 +292,5 @@ permalink: /kb/315/Q315937/
 	
 	=============================================================================
 	
+
+{% endraw %}

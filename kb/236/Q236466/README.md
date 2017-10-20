@@ -6,6 +6,8 @@ permalink: /kb/236/Q236466/
 
 ## Q236466: Computer Hangs After Installing Checked Service Pack 5
 
+{% raw %}
+
 	Article: Q236466
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP5
@@ -105,3 +107,5 @@ permalink: /kb/236/Q236466/
 	
 	=============================================================================
 	
+
+{% endraw %}

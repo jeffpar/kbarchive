@@ -6,6 +6,8 @@ permalink: /kb/070/Q70045/
 
 ## Q70045: PROGMAN.INI &#91;GROUPS&#93; Section Requires Sequential Order
 
+{% raw %}
+
 	Article: Q70045
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -88,3 +90,5 @@ permalink: /kb/070/Q70045/
 	
 	=============================================================================
 	
+
+{% endraw %}

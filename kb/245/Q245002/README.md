@@ -6,6 +6,8 @@ permalink: /kb/245/Q245002/
 
 ## Q245002: BUG: CFileDialog Causes Help Window to Appear on WinCE 2.11
 
+{% raw %}
+
 	Article: Q245002
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -198,3 +200,5 @@ permalink: /kb/245/Q245002/
 	
 	=============================================================================
 	
+
+{% endraw %}

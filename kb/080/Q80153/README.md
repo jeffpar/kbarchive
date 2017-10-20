@@ -6,6 +6,8 @@ permalink: /kb/080/Q80153/
 
 ## Q80153: How to Change Windows System Font
 
+{% raw %}
+
 	Article: Q80153
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/080/Q80153/
 	
 	=============================================================================
 	
+
+{% endraw %}

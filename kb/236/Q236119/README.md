@@ -6,6 +6,8 @@ permalink: /kb/236/Q236119/
 
 ## Q236119: FIX: Optimization Causes Code Error In Conditional Statement
 
+{% raw %}
+
 	Article: Q236119
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -115,3 +117,5 @@ permalink: /kb/236/Q236119/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118968/
 
 ## Q118968: SMTP: RFC822 Header Fields Used by the Gateway
 
+{% raw %}
+
 	Article: Q118968
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -46,3 +48,5 @@ permalink: /kb/118/Q118968/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/244/Q244155/
 
 ## Q244155: RRAS Does Not Use Layered Drivers Between Ndiswan and Wanarp
 
+{% raw %}
+
 	Article: Q244155
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP6
@@ -78,3 +80,5 @@ permalink: /kb/244/Q244155/
 	
 	=============================================================================
 	
+
+{% endraw %}

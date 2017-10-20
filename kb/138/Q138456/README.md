@@ -6,6 +6,8 @@ permalink: /kb/138/Q138456/
 
 ## Q138456: HOWTO: Use Visual FoxPro Builders
 
+{% raw %}
+
 	Article: Q138456
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -106,3 +108,5 @@ permalink: /kb/138/Q138456/
 	
 	=============================================================================
 	
+
+{% endraw %}

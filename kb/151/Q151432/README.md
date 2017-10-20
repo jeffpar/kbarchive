@@ -6,6 +6,8 @@ permalink: /kb/151/Q151432/
 
 ## Q151432: Invalid File Handle with SP4 Nwrdr.sys
 
+{% raw %}
+
 	Article: Q151432
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -83,3 +85,5 @@ permalink: /kb/151/Q151432/
 	
 	=============================================================================
 	
+
+{% endraw %}

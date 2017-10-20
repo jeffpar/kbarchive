@@ -6,6 +6,8 @@ permalink: /kb/133/Q133102/
 
 ## Q133102: FORTRAN PowerStation 32 README.TXT: Installation
 
+{% raw %}
+
 	Article: Q133102
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -127,3 +129,5 @@ permalink: /kb/133/Q133102/
 	
 	=============================================================================
 	
+
+{% endraw %}

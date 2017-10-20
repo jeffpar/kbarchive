@@ -6,6 +6,8 @@ permalink: /kb/299/Q299712/
 
 ## Q299712: Click Events Are Fired Twice in eVB Applications
 
+{% raw %}
+
 	Article: Q299712
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -117,3 +119,5 @@ permalink: /kb/299/Q299712/
 	
 	=============================================================================
 	
+
+{% endraw %}

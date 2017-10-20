@@ -6,6 +6,8 @@ permalink: /kb/096/Q96658/
 
 ## Q96658: PROFS: VM Host Screen Keyboard Locks Up
 
+{% raw %}
+
 	Article: Q96658
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1b,3.0
@@ -60,3 +62,5 @@ permalink: /kb/096/Q96658/
 	
 	=============================================================================
 	
+
+{% endraw %}

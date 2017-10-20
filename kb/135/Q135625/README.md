@@ -6,6 +6,8 @@ permalink: /kb/135/Q135625/
 
 ## Q135625: BUG: Grid Valid Event Fires Before Grid Control Valid Fires
 
+{% raw %}
+
 	Article: Q135625
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -68,3 +70,5 @@ permalink: /kb/135/Q135625/
 	
 	=============================================================================
 	
+
+{% endraw %}

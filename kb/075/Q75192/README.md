@@ -6,6 +6,8 @@ permalink: /kb/075/Q75192/
 
 ## Q75192: Zenith Multiboot Option and MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q75192
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -62,3 +64,5 @@ permalink: /kb/075/Q75192/
 	
 	=============================================================================
 	
+
+{% endraw %}

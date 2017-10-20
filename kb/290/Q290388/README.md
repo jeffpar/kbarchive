@@ -6,6 +6,8 @@ permalink: /kb/290/Q290388/
 
 ## Q290388: HOW TO: Determine if a VeriSign SGC Is Being Used on a Web Site
 
+{% raw %}
+
 	Article: Q290388
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -85,3 +87,5 @@ permalink: /kb/290/Q290388/
 	
 	=============================================================================
 	
+
+{% endraw %}

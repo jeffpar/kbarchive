@@ -6,6 +6,8 @@ permalink: /kb/068/Q68114/
 
 ## Q68114: INFO: Using a Fixed-Pitch Font as the System Default
 
+{% raw %}
+
 	Article: Q68114
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -58,3 +60,5 @@ permalink: /kb/068/Q68114/
 	
 	=============================================================================
 	
+
+{% endraw %}

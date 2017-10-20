@@ -6,6 +6,8 @@ permalink: /kb/172/Q172578/
 
 ## Q172578: HOWTO: Change the SQL Password Using RDO
 
+{% raw %}
+
 	Article: Q172578
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -176,3 +178,5 @@ permalink: /kb/172/Q172578/
 	
 	=============================================================================
 	
+
+{% endraw %}

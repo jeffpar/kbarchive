@@ -6,6 +6,8 @@ permalink: /kb/262/Q262789/
 
 ## Q262789: INFO: New SYS(2800) Function Improves Magnifier Accessibility
 
+{% raw %}
+
 	Article: Q262789
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -78,3 +80,5 @@ permalink: /kb/262/Q262789/
 	
 	=============================================================================
 	
+
+{% endraw %}

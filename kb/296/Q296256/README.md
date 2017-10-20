@@ -6,6 +6,8 @@ permalink: /kb/296/Q296256/
 
 ## Q296256: SMS: Online Resources for the Seagate Crystal Reports Tool
 
+{% raw %}
+
 	Article: Q296256
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -133,3 +135,5 @@ permalink: /kb/296/Q296256/
 	
 	=============================================================================
 	
+
+{% endraw %}

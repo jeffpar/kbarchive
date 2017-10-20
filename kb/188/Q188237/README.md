@@ -6,6 +6,8 @@ permalink: /kb/188/Q188237/
 
 ## Q188237: Pac-Man and Ms. Pac-Man: No Bonus Lives After 10,000 Points
 
+{% raw %}
+
 	Article: Q188237
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -45,3 +47,5 @@ permalink: /kb/188/Q188237/
 	
 	=============================================================================
 	
+
+{% endraw %}

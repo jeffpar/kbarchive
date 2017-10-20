@@ -6,6 +6,8 @@ permalink: /kb/299/Q299306/
 
 ## Q299306: Client Browser Returns to Site w/ f=6 Attached to Query String
 
+{% raw %}
+
 	Article: Q299306
 	Product(s): Microsoft Developer Network
 	Version(s): 1.4
@@ -61,3 +63,5 @@ permalink: /kb/299/Q299306/
 	
 	=============================================================================
 	
+
+{% endraw %}

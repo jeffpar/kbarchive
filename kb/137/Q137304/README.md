@@ -6,6 +6,8 @@ permalink: /kb/137/Q137304/
 
 ## Q137304: Garbled Text Setting up MSN Using Remote Control
 
+{% raw %}
+
 	Article: Q137304
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -46,3 +48,5 @@ permalink: /kb/137/Q137304/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147055/
 
 ## Q147055: XCLN: Reply to a Posted Message Does Not Retain the Subject
 
+{% raw %}
+
 	Article: Q147055
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -45,3 +47,5 @@ permalink: /kb/147/Q147055/
 	
 	=============================================================================
 	
+
+{% endraw %}

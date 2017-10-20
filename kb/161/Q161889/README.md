@@ -6,6 +6,8 @@ permalink: /kb/161/Q161889/
 
 ## Q161889: XCLN: OST and PST Quick Reference
 
+{% raw %}
+
 	Article: Q161889
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -171,3 +173,5 @@ permalink: /kb/161/Q161889/
 	
 	=============================================================================
 	
+
+{% endraw %}

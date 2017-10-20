@@ -6,6 +6,8 @@ permalink: /kb/246/Q246273/
 
 ## Q246273: XCLN: Poor Performance Starting Outlook over PPTP Connection
 
+{% raw %}
+
 	Article: Q246273
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -90,3 +92,5 @@ permalink: /kb/246/Q246273/
 	
 	=============================================================================
 	
+
+{% endraw %}

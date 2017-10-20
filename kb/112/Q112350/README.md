@@ -6,6 +6,8 @@ permalink: /kb/112/Q112350/
 
 ## Q112350: Pause Key Combination Doesn't Work in FoxPro for Mac
 
+{% raw %}
+
 	Article: Q112350
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -36,3 +38,5 @@ permalink: /kb/112/Q112350/
 	
 	=============================================================================
 	
+
+{% endraw %}

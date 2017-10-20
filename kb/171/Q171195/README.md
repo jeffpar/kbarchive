@@ -6,6 +6,8 @@ permalink: /kb/171/Q171195/
 
 ## Q171195: &quot;Fatal Exception&quot; Error Suspending and Resuming with MSDLC32
 
+{% raw %}
+
 	Article: Q171195
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -105,3 +107,5 @@ permalink: /kb/171/Q171195/
 	
 	=============================================================================
 	
+
+{% endraw %}

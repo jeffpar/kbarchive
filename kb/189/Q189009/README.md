@@ -6,6 +6,8 @@ permalink: /kb/189/Q189009/
 
 ## Q189009: DHCP Reservations Show an Expiration Date
 
+{% raw %}
+
 	Article: Q189009
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -104,3 +106,5 @@ permalink: /kb/189/Q189009/
 	
 	=============================================================================
 	
+
+{% endraw %}

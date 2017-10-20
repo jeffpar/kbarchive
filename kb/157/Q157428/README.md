@@ -6,6 +6,8 @@ permalink: /kb/157/Q157428/
 
 ## Q157428: XCLN: Err Msg: Cannot Find the Exchng.hlp File
 
+{% raw %}
+
 	Article: Q157428
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -56,3 +58,5 @@ permalink: /kb/157/Q157428/
 	
 	=============================================================================
 	
+
+{% endraw %}

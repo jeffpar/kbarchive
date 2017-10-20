@@ -6,6 +6,8 @@ permalink: /kb/176/Q176202/
 
 ## Q176202: How to Troubleshoot WINS Event IDs 4261 and 4262
 
+{% raw %}
+
 	Article: Q176202
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -152,3 +154,5 @@ permalink: /kb/176/Q176202/
 	
 	=============================================================================
 	
+
+{% endraw %}

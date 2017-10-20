@@ -6,6 +6,8 @@ permalink: /kb/223/Q223281/
 
 ## Q223281: Alternate File Names Are Not Supported in NetWare Redirector
 
+{% raw %}
+
 	Article: Q223281
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -126,3 +128,5 @@ permalink: /kb/223/Q223281/
 	
 	=============================================================================
 	
+
+{% endraw %}

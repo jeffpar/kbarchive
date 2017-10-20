@@ -6,6 +6,8 @@ permalink: /kb/105/Q105933/
 
 ## Q105933: FORTRAN PowerStation ADDENDA.TXT
 
+{% raw %}
+
 	Article: Q105933
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -289,3 +291,5 @@ permalink: /kb/105/Q105933/
 	
 	=============================================================================
 	
+
+{% endraw %}

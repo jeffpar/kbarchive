@@ -6,6 +6,8 @@ permalink: /kb/166/Q166158/
 
 ## Q166158: Access Violation Occurs in SPOOLSS.EXE
 
+{% raw %}
+
 	Article: Q166158
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -101,3 +103,5 @@ permalink: /kb/166/Q166158/
 	
 	=============================================================================
 	
+
+{% endraw %}

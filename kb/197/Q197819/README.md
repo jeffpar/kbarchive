@@ -6,6 +6,8 @@ permalink: /kb/197/Q197819/
 
 ## Q197819: How to Add Tools to the Internet Service Manager Menu
 
+{% raw %}
+
 	Article: Q197819
 	Product(s): Internet Information Server
 	Version(s): WINNT:1.0,2.0,3.0,4.0
@@ -94,3 +96,5 @@ permalink: /kb/197/Q197819/
 	
 	=============================================================================
 	
+
+{% endraw %}

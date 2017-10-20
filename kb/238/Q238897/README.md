@@ -6,6 +6,8 @@ permalink: /kb/238/Q238897/
 
 ## Q238897: HOWTO: Preset the Win CE Computer Name
 
+{% raw %}
+
 	Article: Q238897
 	Product(s): Microsoft C Compiler
 	Version(s): N\A:2.11,2.12; WINDOWS:
@@ -60,3 +62,5 @@ permalink: /kb/238/Q238897/
 	
 	=============================================================================
 	
+
+{% endraw %}

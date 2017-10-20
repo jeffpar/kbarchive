@@ -6,6 +6,8 @@ permalink: /kb/066/Q66048/
 
 ## Q66048: Removing MS-DOS Shell from MS-DOS 5.x or 6.0
 
+{% raw %}
+
 	Article: Q66048
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -42,3 +44,5 @@ permalink: /kb/066/Q66048/
 	
 	=============================================================================
 	
+
+{% endraw %}

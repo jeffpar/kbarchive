@@ -6,6 +6,8 @@ permalink: /kb/140/Q140576/
 
 ## Q140576: FIX: Backslash Alone in Menu Causes &quot;Illegal Operation&quot; Error
 
+{% raw %}
+
 	Article: Q140576
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -72,3 +74,5 @@ permalink: /kb/140/Q140576/
 	
 	=============================================================================
 	
+
+{% endraw %}

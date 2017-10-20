@@ -6,6 +6,8 @@ permalink: /kb/112/Q112893/
 
 ## Q112893: PC Forms: Multiple Forms in a Single Executable File
 
+{% raw %}
+
 	Article: Q112893
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/112/Q112893/
 	
 	=============================================================================
 	
+
+{% endraw %}

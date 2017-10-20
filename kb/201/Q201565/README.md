@@ -6,6 +6,8 @@ permalink: /kb/201/Q201565/
 
 ## Q201565: PRB: Visual Basic Read-only .exp/.lib Files Cause Compile Error
 
+{% raw %}
+
 	Article: Q201565
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -122,3 +124,5 @@ permalink: /kb/201/Q201565/
 	
 	=============================================================================
 	
+
+{% endraw %}

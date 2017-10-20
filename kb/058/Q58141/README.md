@@ -6,6 +6,8 @@ permalink: /kb/058/Q58141/
 
 ## Q58141: Computer Viruses Can Increase .COM and .EXE File Sizes
 
+{% raw %}
+
 	Article: Q58141
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -40,3 +42,5 @@ permalink: /kb/058/Q58141/
 	
 	=============================================================================
 	
+
+{% endraw %}

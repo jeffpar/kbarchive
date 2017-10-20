@@ -6,6 +6,8 @@ permalink: /kb/090/Q90564/
 
 ## Q90564: MS-DOS Err Msg: DoubleSpace Cannot Defragment Because...
 
+{% raw %}
+
 	Article: Q90564
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2
@@ -45,3 +47,5 @@ permalink: /kb/090/Q90564/
 	
 	=============================================================================
 	
+
+{% endraw %}

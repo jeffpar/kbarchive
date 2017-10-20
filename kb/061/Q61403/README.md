@@ -6,6 +6,8 @@ permalink: /kb/061/Q61403/
 
 ## Q61403: LPRINT Followed by BLOAD or BSAVE Gives &quot;File Already Open&quot;
 
+{% raw %}
+
 	Article: Q61403
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -49,3 +51,5 @@ permalink: /kb/061/Q61403/
 	   DEF SEG = &HB800
 	   BLOAD "picture", 0        '**file already open error occurs here
 	   DEF SEG
+
+{% endraw %}

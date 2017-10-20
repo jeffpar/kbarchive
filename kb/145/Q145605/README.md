@@ -6,6 +6,8 @@ permalink: /kb/145/Q145605/
 
 ## Q145605: HOWTO: Modify the Results of the MDY() Function
 
+{% raw %}
+
 	Article: Q145605
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a; WINDOWS:3.0,3.0b
@@ -68,3 +70,5 @@ permalink: /kb/145/Q145605/
 	
 	=============================================================================
 	
+
+{% endraw %}

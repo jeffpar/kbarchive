@@ -6,6 +6,8 @@ permalink: /kb/163/Q163714/
 
 ## Q163714: ATDISK Finds the Same Disk Twice on SunDisk PCMCIA ATA Adapter
 
+{% raw %}
+
 	Article: Q163714
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/163/Q163714/
 	
 	=============================================================================
 	
+
+{% endraw %}

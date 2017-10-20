@@ -6,6 +6,8 @@ permalink: /kb/125/Q125968/
 
 ## Q125968: Notepad Reduced to Icon in Productivity Pack Demonstration
 
+{% raw %}
+
 	Article: Q125968
 	Product(s): Microsoft Programming Utilities
 	Version(s): 3.1
@@ -74,3 +76,5 @@ permalink: /kb/125/Q125968/
 	
 	=============================================================================
 	
+
+{% endraw %}

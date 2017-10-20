@@ -6,6 +6,8 @@ permalink: /kb/140/Q140891/
 
 ## Q140891: Remote Shutdown May Fail
 
+{% raw %}
+
 	Article: Q140891
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -62,3 +64,5 @@ permalink: /kb/140/Q140891/
 	
 	=============================================================================
 	
+
+{% endraw %}

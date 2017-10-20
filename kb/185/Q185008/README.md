@@ -6,6 +6,8 @@ permalink: /kb/185/Q185008/
 
 ## Q185008: XADM: Err. Msg.: Information Store Fails to Start with Error 429
 
+{% raw %}
+
 	Article: Q185008
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -86,3 +88,5 @@ permalink: /kb/185/Q185008/
 	
 	=============================================================================
 	
+
+{% endraw %}

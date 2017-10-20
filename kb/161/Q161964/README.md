@@ -6,6 +6,8 @@ permalink: /kb/161/Q161964/
 
 ## Q161964: FP: Permissions Not Retained When Web Is Renamed
 
+{% raw %}
+
 	Article: Q161964
 	Product(s): Word Front Page
 	Version(s): windows:1.1,97
@@ -69,3 +71,5 @@ permalink: /kb/161/Q161964/
 	
 	=============================================================================
 	
+
+{% endraw %}

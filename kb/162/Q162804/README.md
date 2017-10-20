@@ -6,6 +6,8 @@ permalink: /kb/162/Q162804/
 
 ## Q162804: STOP 0x00000079 After Applying Windows NT 4.0 Post-SP2 KRNL Fix
 
+{% raw %}
+
 	Article: Q162804
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -117,3 +119,5 @@ permalink: /kb/162/Q162804/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241556/
 
 ## Q241556: XADM: OpenMsgStore Function Is Not Thread Safe
 
+{% raw %}
+
 	Article: Q241556
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -62,3 +64,5 @@ permalink: /kb/241/Q241556/
 	
 	=============================================================================
 	
+
+{% endraw %}

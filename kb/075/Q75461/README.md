@@ -6,6 +6,8 @@ permalink: /kb/075/Q75461/
 
 ## Q75461: Sperry XDISK.SYS Is Incompatible with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q75461
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -64,3 +66,5 @@ permalink: /kb/075/Q75461/
 	
 	=============================================================================
 	
+
+{% endraw %}

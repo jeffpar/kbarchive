@@ -6,6 +6,8 @@ permalink: /kb/085/Q85067/
 
 ## Q85067: Data World NB325 Cannot Run MS-DOS Prompt in Enhanced Mode
 
+{% raw %}
+
 	Article: Q85067
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/085/Q85067/
 	
 	=============================================================================
 	
+
+{% endraw %}

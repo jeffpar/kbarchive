@@ -6,6 +6,8 @@ permalink: /kb/173/Q173797/
 
 ## Q173797: Toshiba 300CT Laptop Computer Uses a Windows Modem
 
+{% raw %}
+
 	Article: Q173797
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -46,3 +48,5 @@ permalink: /kb/173/Q173797/
 	
 	=============================================================================
 	
+
+{% endraw %}

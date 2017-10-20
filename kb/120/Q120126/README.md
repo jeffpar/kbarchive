@@ -6,6 +6,8 @@ permalink: /kb/120/Q120126/
 
 ## Q120126: PowerPoint Cannot Locate Its Spelling Checker
 
+{% raw %}
+
 	Article: Q120126
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -186,3 +188,5 @@ permalink: /kb/120/Q120126/
 	
 	=============================================================================
 	
+
+{% endraw %}

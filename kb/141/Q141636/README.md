@@ -6,6 +6,8 @@ permalink: /kb/141/Q141636/
 
 ## Q141636: How to Set Up a Grid as a Destination for Drag and Drop
 
+{% raw %}
+
 	Article: Q141636
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -149,3 +151,5 @@ permalink: /kb/141/Q141636/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/274/Q274398/
 
 ## Q274398: MSN Companion Entries Missing in Address Book
 
+{% raw %}
+
 	Article: Q274398
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -64,3 +66,5 @@ permalink: /kb/274/Q274398/
 	
 	=============================================================================
 	
+
+{% endraw %}

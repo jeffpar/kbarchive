@@ -6,6 +6,8 @@ permalink: /kb/171/Q171647/
 
 ## Q171647: Office 97 Books Incompatible with Office 95 Products
 
+{% raw %}
+
 	Article: Q171647
 	Product(s): Microsoft Press
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/171/Q171647/
 	
 	=============================================================================
 	
+
+{% endraw %}

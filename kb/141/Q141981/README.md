@@ -6,6 +6,8 @@ permalink: /kb/141/Q141981/
 
 ## Q141981: SMTP: How to Identify if ADPROC.EXE Has Replaced SMTPGET.EXE
 
+{% raw %}
+
 	Article: Q141981
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0; :1.0
@@ -71,3 +73,5 @@ permalink: /kb/141/Q141981/
 	
 	=============================================================================
 	
+
+{% endraw %}

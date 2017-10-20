@@ -6,6 +6,8 @@ permalink: /kb/092/Q92758/
 
 ## Q92758: Setup: Files and Directories Changed During Installation
 
+{% raw %}
+
 	Article: Q92758
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -111,3 +113,5 @@ permalink: /kb/092/Q92758/
 	
 	=============================================================================
 	
+
+{% endraw %}

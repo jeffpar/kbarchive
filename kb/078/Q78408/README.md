@@ -6,6 +6,8 @@ permalink: /kb/078/Q78408/
 
 ## Q78408: Erratic Behavior with MS-DOS 5.0 and Phillips BIOS
 
+{% raw %}
+
 	Article: Q78408
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -69,3 +71,5 @@ permalink: /kb/078/Q78408/
 	
 	=============================================================================
 	
+
+{% endraw %}

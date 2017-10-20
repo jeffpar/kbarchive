@@ -6,6 +6,8 @@ permalink: /kb/107/Q107178/
 
 ## Q107178: Flight Simulator: Cannot Maximize Forward View
 
+{% raw %}
+
 	Article: Q107178
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -45,3 +47,5 @@ permalink: /kb/107/Q107178/
 	
 	=============================================================================
 	
+
+{% endraw %}

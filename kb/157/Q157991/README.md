@@ -6,6 +6,8 @@ permalink: /kb/157/Q157991/
 
 ## Q157991: WD97: How to Install Missing Clipart and Clipart Extra
 
+{% raw %}
+
 	Article: Q157991
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -150,3 +152,5 @@ permalink: /kb/157/Q157991/
 	
 	=============================================================================
 	
+
+{% endraw %}

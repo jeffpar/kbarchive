@@ -6,6 +6,8 @@ permalink: /kb/249/Q249291/
 
 ## Q249291: BUG: Dialog Editor Doesn't Permit a Taskbar Icon if Titlebar Off
 
+{% raw %}
+
 	Article: Q249291
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -158,3 +160,5 @@ permalink: /kb/249/Q249291/
 	
 	=============================================================================
 	
+
+{% endraw %}

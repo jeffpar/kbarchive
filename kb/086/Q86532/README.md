@@ -6,6 +6,8 @@ permalink: /kb/086/Q86532/
 
 ## Q86532: Canon LBP-8 II Printer Err Msg: 21 Complex Data
 
+{% raw %}
+
 	Article: Q86532
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/086/Q86532/
 	
 	=============================================================================
 	
+
+{% endraw %}

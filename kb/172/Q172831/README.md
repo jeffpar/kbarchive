@@ -6,6 +6,8 @@ permalink: /kb/172/Q172831/
 
 ## Q172831: TimeServ Uses 100% of System Resources
 
+{% raw %}
+
 	Article: Q172831
 	Product(s): Microsoft Press
 	Version(s): 3.51
@@ -115,3 +117,5 @@ permalink: /kb/172/Q172831/
 	
 	=============================================================================
 	
+
+{% endraw %}

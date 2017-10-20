@@ -6,6 +6,8 @@ permalink: /kb/325/Q325932/
 
 ## Q325932: Encarta: How to Copy the Encarta CD-ROM to the Hard Disk
 
+{% raw %}
+
 	Article: Q325932
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -121,3 +123,5 @@ permalink: /kb/325/Q325932/
 	
 	=============================================================================
 	
+
+{% endraw %}

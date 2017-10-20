@@ -6,6 +6,8 @@ permalink: /kb/261/Q261059/
 
 ## Q261059: MCM2: Force Feedback Effects Are Lost During Game Play
 
+{% raw %}
+
 	Article: Q261059
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -46,3 +48,5 @@ permalink: /kb/261/Q261059/
 	
 	=============================================================================
 	
+
+{% endraw %}

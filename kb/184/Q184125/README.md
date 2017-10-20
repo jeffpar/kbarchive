@@ -6,6 +6,8 @@ permalink: /kb/184/Q184125/
 
 ## Q184125: Setup Computer Wizard Does Not Set Up Printer for Client
 
+{% raw %}
+
 	Article: Q184125
 	Product(s): Microsoft Windows NT
 	Version(s): Windows:4.0,4.0a,95; WinNT:4.0
@@ -73,3 +75,5 @@ permalink: /kb/184/Q184125/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/114/Q114480/
 
 ## Q114480: BUG: SET COMPATIBLE or Catalog Manager Changes MEMOWIDTH to 80
 
+{% raw %}
+
 	Article: Q114480
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.6,2.6a; WINDOWS:2.6,2.6a,3.0,3.0b,5.0,5.0a,6.0
@@ -90,3 +92,5 @@ permalink: /kb/114/Q114480/
 	
 	=============================================================================
 	
+
+{% endraw %}

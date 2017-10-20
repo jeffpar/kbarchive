@@ -6,6 +6,8 @@ permalink: /kb/130/Q130991/
 
 ## Q130991: HOWTO: Send a Windows Print File to the Printer
 
+{% raw %}
+
 	Article: Q130991
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/130/Q130991/
 	
 	=============================================================================
 	
+
+{% endraw %}

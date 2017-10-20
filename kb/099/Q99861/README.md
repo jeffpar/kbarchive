@@ -6,6 +6,8 @@ permalink: /kb/099/Q99861/
 
 ## Q99861: PRB: Using SetCommState() to Toggle DTR/RTS for Flow Control
 
+{% raw %}
+
 	Article: Q99861
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/099/Q99861/
 	
 	=============================================================================
 	
+
+{% endraw %}

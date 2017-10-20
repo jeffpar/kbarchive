@@ -6,6 +6,8 @@ permalink: /kb/057/Q57975/
 
 ## Q57975: Joystick Does Not Function with Tandy 1000 SL, TX
 
+{% raw %}
+
 	Article: Q57975
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -34,3 +36,5 @@ permalink: /kb/057/Q57975/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98871/
 
 ## Q98871: PRB: Using HSZ in AFXEXT.H and DDEML.H
 
+{% raw %}
+
 	Article: Q98871
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -60,3 +62,5 @@ permalink: /kb/098/Q98871/
 	
 	=============================================================================
 	
+
+{% endraw %}

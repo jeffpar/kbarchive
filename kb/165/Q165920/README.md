@@ -6,6 +6,8 @@ permalink: /kb/165/Q165920/
 
 ## Q165920: PRB: Correct Usage of &quot;&amp;&quot; and &quot;AND&quot; in Visual Basic
 
+{% raw %}
+
 	Article: Q165920
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -80,3 +82,5 @@ permalink: /kb/165/Q165920/
 	
 	=============================================================================
 	
+
+{% endraw %}

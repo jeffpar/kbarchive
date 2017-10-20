@@ -6,6 +6,8 @@ permalink: /kb/113/Q113834/
 
 ## Q113834: Err Msg on System Without Windows: Setup Has Not Found...
 
+{% raw %}
+
 	Article: Q113834
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.21
@@ -55,3 +57,5 @@ permalink: /kb/113/Q113834/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/083/Q83325/
 
 ## Q83325: SMARTDrive and 32-Bit Disk Access
 
+{% raw %}
+
 	Article: Q83325
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -757,3 +759,5 @@ permalink: /kb/083/Q83325/
 	
 	=============================================================================
 	
+
+{% endraw %}

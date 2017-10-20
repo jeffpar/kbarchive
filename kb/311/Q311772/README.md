@@ -6,6 +6,8 @@ permalink: /kb/311/Q311772/
 
 ## Q311772: Encarta Online Deluxe: Description of Encarta Online Deluxe
 
+{% raw %}
+
 	Article: Q311772
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -121,3 +123,5 @@ permalink: /kb/311/Q311772/
 	
 	=============================================================================
 	
+
+{% endraw %}

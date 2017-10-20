@@ -6,6 +6,8 @@ permalink: /kb/231/Q231609/
 
 ## Q231609: Requesting ASP File May Cause 404 Error
 
+{% raw %}
+
 	Article: Q231609
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -157,3 +159,5 @@ permalink: /kb/231/Q231609/
 	
 	=============================================================================
 	
+
+{% endraw %}

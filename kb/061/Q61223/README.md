@@ -6,6 +6,8 @@ permalink: /kb/061/Q61223/
 
 ## Q61223: C 6.00 README: Don't Use CTRL+BREAK When Debug History On
 
+{% raw %}
+
 	Article: Q61223
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -26,3 +28,5 @@ permalink: /kb/061/Q61223/
 	  If you do press CTRL+BREAK while debug history is on, do not try to
 	  reuse the files containing the debug history information (.CVH or
 	  .CVI files).
+
+{% endraw %}

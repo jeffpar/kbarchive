@@ -6,6 +6,8 @@ permalink: /kb/086/Q86440/
 
 ## Q86440: Protocol Independence of RAS
 
+{% raw %}
+
 	Article: Q86440
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/086/Q86440/
 	
 	=============================================================================
 	
+
+{% endraw %}

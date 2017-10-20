@@ -6,6 +6,8 @@ permalink: /kb/128/Q128142/
 
 ## Q128142: Systems with SMC NICs Hang When Using SMCMAC.DOS of NCADMIN
 
+{% raw %}
+
 	Article: Q128142
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -115,3 +117,5 @@ permalink: /kb/128/Q128142/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194131/
 
 ## Q194131: XFOR: Disabling Inbound ESMTP Advertisement
 
+{% raw %}
+
 	Article: Q194131
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -91,3 +93,5 @@ permalink: /kb/194/Q194131/
 	
 	=============================================================================
 	
+
+{% endraw %}

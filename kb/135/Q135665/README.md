@@ -6,6 +6,8 @@ permalink: /kb/135/Q135665/
 
 ## Q135665: Connection Established in MS-DOS Session Is Not Reconnected
 
+{% raw %}
+
 	Article: Q135665
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/135/Q135665/
 	
 	=============================================================================
 	
+
+{% endraw %}

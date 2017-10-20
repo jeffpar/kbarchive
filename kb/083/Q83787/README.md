@@ -6,6 +6,8 @@ permalink: /kb/083/Q83787/
 
 ## Q83787: Troubleshooting Duplicate COMx Ports on Multi-I/O Boards
 
+{% raw %}
+
 	Article: Q83787
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -79,3 +81,5 @@ permalink: /kb/083/Q83787/
 	
 	=============================================================================
 	
+
+{% endraw %}

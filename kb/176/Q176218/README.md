@@ -6,6 +6,8 @@ permalink: /kb/176/Q176218/
 
 ## Q176218: WD: Grammar Checker Change Button Unavailable (Dimmed)
 
+{% raw %}
+
 	Article: Q176218
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -54,3 +56,5 @@ permalink: /kb/176/Q176218/
 	
 	=============================================================================
 	
+
+{% endraw %}

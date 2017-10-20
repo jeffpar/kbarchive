@@ -6,6 +6,8 @@ permalink: /kb/135/Q135646/
 
 ## Q135646: Err Msg: Could Not Locate a Time-Server
 
+{% raw %}
+
 	Article: Q135646
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:3.5,3.51,4.0
@@ -91,3 +93,5 @@ permalink: /kb/135/Q135646/
 	
 	=============================================================================
 	
+
+{% endraw %}

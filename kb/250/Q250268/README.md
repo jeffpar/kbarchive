@@ -6,6 +6,8 @@ permalink: /kb/250/Q250268/
 
 ## Q250268: Domain Name Server Generates Event ID 156
 
+{% raw %}
+
 	Article: Q250268
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/250/Q250268/
 	
 	=============================================================================
 	
+
+{% endraw %}

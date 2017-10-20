@@ -6,6 +6,8 @@ permalink: /kb/164/Q164196/
 
 ## Q164196: Kids Plus!: Desktop Icons do not Change with Different Users
 
+{% raw %}
+
 	Article: Q164196
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -114,3 +116,5 @@ permalink: /kb/164/Q164196/
 	
 	=============================================================================
 	
+
+{% endraw %}

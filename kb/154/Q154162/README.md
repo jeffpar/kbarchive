@@ -6,6 +6,8 @@ permalink: /kb/154/Q154162/
 
 ## Q154162: Memory Leak in Perfmon.exe Occurs Monitoring WINS Counters
 
+{% raw %}
+
 	Article: Q154162
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/154/Q154162/
 	
 	=============================================================================
 	
+
+{% endraw %}

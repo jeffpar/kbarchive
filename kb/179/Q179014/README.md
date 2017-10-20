@@ -6,6 +6,8 @@ permalink: /kb/179/Q179014/
 
 ## Q179014: XFOR: Characters Are Stripped on Fixed File Sent from PROFS
 
+{% raw %}
+
 	Article: Q179014
 	Product(s): Microsoft Exchange
 	Version(s): 3.2,5.5
@@ -75,3 +77,5 @@ permalink: /kb/179/Q179014/
 	
 	=============================================================================
 	
+
+{% endraw %}

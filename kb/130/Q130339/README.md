@@ -6,6 +6,8 @@ permalink: /kb/130/Q130339/
 
 ## Q130339: IBMODISH.COM Causes Windows 95 to Exit at Startup
 
+{% raw %}
+
 	Article: Q130339
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -59,3 +61,5 @@ permalink: /kb/130/Q130339/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216775/
 
 ## Q216775: SBS: Console User List Empty When Trying to Manage Users
 
+{% raw %}
+
 	Article: Q216775
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a
@@ -118,3 +120,5 @@ permalink: /kb/216/Q216775/
 	
 	=============================================================================
 	
+
+{% endraw %}

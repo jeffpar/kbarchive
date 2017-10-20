@@ -6,6 +6,8 @@ permalink: /kb/164/Q164136/
 
 ## Q164136: XCON: MSMail Read Receipts Missing Subject: and To: Information
 
+{% raw %}
+
 	Article: Q164136
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -95,3 +97,5 @@ permalink: /kb/164/Q164136/
 	
 	=============================================================================
 	
+
+{% endraw %}

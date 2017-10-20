@@ -6,6 +6,8 @@ permalink: /kb/263/Q263735/
 
 ## Q263735: Incorrect Content Rating PICS Date When Time Zone Is East of GMT
 
+{% raw %}
+
 	Article: Q263735
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.01
@@ -65,3 +67,5 @@ permalink: /kb/263/Q263735/
 	
 	=============================================================================
 	
+
+{% endraw %}

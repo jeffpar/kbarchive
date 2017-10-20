@@ -6,6 +6,8 @@ permalink: /kb/184/Q184901/
 
 ## Q184901: ASP Searches Return Documents from Non-indexed Directories
 
+{% raw %}
+
 	Article: Q184901
 	Product(s): Internet Information Server
 	Version(s): WINNT:2.0
@@ -60,3 +62,5 @@ permalink: /kb/184/Q184901/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/077/Q77369/
 
 ## Q77369: Automatically Loading MIRROR High
 
+{% raw %}
+
 	Article: Q77369
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -66,3 +68,5 @@ permalink: /kb/077/Q77369/
 	
 	=============================================================================
 	
+
+{% endraw %}

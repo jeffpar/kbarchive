@@ -6,6 +6,8 @@ permalink: /kb/141/Q141525/
 
 ## Q141525: PRB: DataSessionID Property Does Not Appear on Property Sheet
 
+{% raw %}
+
 	Article: Q141525
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -68,3 +70,5 @@ permalink: /kb/141/Q141525/
 	
 	=============================================================================
 	
+
+{% endraw %}

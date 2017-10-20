@@ -6,6 +6,8 @@ permalink: /kb/085/Q85650/
 
 ## Q85650: PC MAPI: MAPI_GUARANTEE_FIFO Incorrectly Defined
 
+{% raw %}
+
 	Article: Q85650
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -39,3 +41,5 @@ permalink: /kb/085/Q85650/
 	
 	=============================================================================
 	
+
+{% endraw %}

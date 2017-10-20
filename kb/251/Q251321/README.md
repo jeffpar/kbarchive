@@ -6,6 +6,8 @@ permalink: /kb/251/Q251321/
 
 ## Q251321: BUG: ScrollBar Controls Exhibit Paint Problems In Change Event
 
+{% raw %}
+
 	Article: Q251321
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -101,3 +103,5 @@ permalink: /kb/251/Q251321/
 	
 	=============================================================================
 	
+
+{% endraw %}

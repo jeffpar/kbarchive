@@ -6,6 +6,8 @@ permalink: /kb/165/Q165039/
 
 ## Q165039: ODE97: MSDN Sampler Prompts to Create Shortcut on WIN NT 3.51
 
+{% raw %}
+
 	Article: Q165039
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/165/Q165039/
 	
 	=============================================================================
 	
+
+{% endraw %}

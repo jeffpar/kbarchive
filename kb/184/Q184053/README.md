@@ -6,6 +6,8 @@ permalink: /kb/184/Q184053/
 
 ## Q184053: XCON: Fax from Lotus Fax Server to Exchange Is Not Readable
 
+{% raw %}
+
 	Article: Q184053
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/184/Q184053/
 	
 	=============================================================================
 	
+
+{% endraw %}

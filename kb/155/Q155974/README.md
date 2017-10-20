@@ -6,6 +6,8 @@ permalink: /kb/155/Q155974/
 
 ## Q155974: Hardware Profiles Have an Empty Description Line
 
+{% raw %}
+
 	Article: Q155974
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/155/Q155974/
 	
 	=============================================================================
 	
+
+{% endraw %}

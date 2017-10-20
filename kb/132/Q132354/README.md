@@ -6,6 +6,8 @@ permalink: /kb/132/Q132354/
 
 ## Q132354: PRB: Grid ActiveRow Mark Is Not Visible After Refreshing Grid
 
+{% raw %}
+
 	Article: Q132354
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -106,3 +108,5 @@ permalink: /kb/132/Q132354/
 	
 	=============================================================================
 	
+
+{% endraw %}

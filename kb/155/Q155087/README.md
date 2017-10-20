@@ -6,6 +6,8 @@ permalink: /kb/155/Q155087/
 
 ## Q155087: PRB: Script Error: Expected &quot;End&quot; but Found Unknown Token
 
+{% raw %}
+
 	Article: Q155087
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -97,3 +99,5 @@ permalink: /kb/155/Q155087/
 	
 	=============================================================================
 	
+
+{% endraw %}

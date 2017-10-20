@@ -6,6 +6,8 @@ permalink: /kb/170/Q170577/
 
 ## Q170577: MDG: Private Folders in MMF named Orphan Folder #n
 
+{% raw %}
+
 	Article: Q170577
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -54,3 +56,5 @@ permalink: /kb/170/Q170577/
 	
 	=============================================================================
 	
+
+{% endraw %}

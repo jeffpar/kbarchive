@@ -6,6 +6,8 @@ permalink: /kb/145/Q145789/
 
 ## Q145789: XCLN: Boldon James MAPI X.500 Address Book Client Service Crash
 
+{% raw %}
+
 	Article: Q145789
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -74,3 +76,5 @@ permalink: /kb/145/Q145789/
 	
 	=============================================================================
 	
+
+{% endraw %}

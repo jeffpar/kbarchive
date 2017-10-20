@@ -6,6 +6,8 @@ permalink: /kb/135/Q135559/
 
 ## Q135559: PPT: Using Colors in PowerPoint
 
+{% raw %}
+
 	Article: Q135559
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,4.0,4.0a,4.0c,7.0
@@ -67,3 +69,5 @@ permalink: /kb/135/Q135559/
 	
 	=============================================================================
 	
+
+{% endraw %}

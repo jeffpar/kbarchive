@@ -6,6 +6,8 @@ permalink: /kb/182/Q182051/
 
 ## Q182051: XADM: Cannot Move E-form Message From Public Folder to Mailbox
 
+{% raw %}
+
 	Article: Q182051
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -96,3 +98,5 @@ permalink: /kb/182/Q182051/
 	
 	=============================================================================
 	
+
+{% endraw %}

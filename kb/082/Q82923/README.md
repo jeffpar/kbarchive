@@ -6,6 +6,8 @@ permalink: /kb/082/Q82923/
 
 ## Q82923: Methods to Detect a Boot-Sector Virus
 
+{% raw %}
+
 	Article: Q82923
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -79,3 +81,5 @@ permalink: /kb/082/Q82923/
 	
 	=============================================================================
 	
+
+{% endraw %}

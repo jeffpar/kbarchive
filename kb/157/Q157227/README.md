@@ -6,6 +6,8 @@ permalink: /kb/157/Q157227/
 
 ## Q157227: WD97: Page Border Not Visible Inserted in Normal, Outline Views
 
+{% raw %}
+
 	Article: Q157227
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -47,3 +49,5 @@ permalink: /kb/157/Q157227/
 	
 	=============================================================================
 	
+
+{% endraw %}

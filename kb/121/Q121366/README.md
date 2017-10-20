@@ -6,6 +6,8 @@ permalink: /kb/121/Q121366/
 
 ## Q121366: INFO: PDB and DBG Files - What They Are and How They Work
 
+{% raw %}
+
 	Article: Q121366
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,4.0,5.0,6.0
@@ -193,3 +195,5 @@ permalink: /kb/121/Q121366/
 	
 	=============================================================================
 	
+
+{% endraw %}

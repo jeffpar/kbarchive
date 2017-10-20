@@ -6,6 +6,8 @@ permalink: /kb/172/Q172471/
 
 ## Q172471: Request Definite Response Doesn't Signal When Job Sent
 
+{% raw %}
+
 	Article: Q172471
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -50,3 +52,5 @@ permalink: /kb/172/Q172471/
 	
 	=============================================================================
 	
+
+{% endraw %}

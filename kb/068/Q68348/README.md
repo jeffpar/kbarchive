@@ -6,6 +6,8 @@ permalink: /kb/068/Q68348/
 
 ## Q68348: Changing Display Colors on Toshiba Laptops Using VCHAD.EXE
 
+{% raw %}
+
 	Article: Q68348
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -94,3 +96,5 @@ permalink: /kb/068/Q68348/
 	
 	=============================================================================
 	
+
+{% endraw %}

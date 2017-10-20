@@ -6,6 +6,8 @@ permalink: /kb/217/Q217182/
 
 ## Q217182: FIX: Descriptions Aren't Added to Registry with DECLARE_REGISTRY
 
+{% raw %}
+
 	Article: Q217182
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -88,3 +90,5 @@ permalink: /kb/217/Q217182/
 	
 	=============================================================================
 	
+
+{% endraw %}

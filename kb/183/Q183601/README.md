@@ -6,6 +6,8 @@ permalink: /kb/183/Q183601/
 
 ## Q183601: Slow Links Are Not Detected Between a Workstation and a Server
 
+{% raw %}
+
 	Article: Q183601
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/183/Q183601/
 	
 	=============================================================================
 	
+
+{% endraw %}

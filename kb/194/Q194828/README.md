@@ -6,6 +6,8 @@ permalink: /kb/194/Q194828/
 
 ## Q194828: Combat Flight Simulator: Cannot Open Dialog Boxes in Program
 
+{% raw %}
+
 	Article: Q194828
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -110,3 +112,5 @@ permalink: /kb/194/Q194828/
 	
 	=============================================================================
 	
+
+{% endraw %}

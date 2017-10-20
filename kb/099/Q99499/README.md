@@ -6,6 +6,8 @@ permalink: /kb/099/Q99499/
 
 ## Q99499: DBLSPACE.EXE Modifies the DBLSPACE.INI Settings
 
+{% raw %}
+
 	Article: Q99499
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -85,3 +87,5 @@ permalink: /kb/099/Q99499/
 	
 	=============================================================================
 	
+
+{% endraw %}

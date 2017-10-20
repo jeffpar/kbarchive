@@ -6,6 +6,8 @@ permalink: /kb/097/Q97066/
 
 ## Q97066: HOWTO: Index a Combined Date and Character Field
 
+{% raw %}
+
 	Article: Q97066
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5; MS-DOS:2.0,2.5; WINDOWS:2.0,2.5,3.0,5.0,6.0
@@ -57,3 +59,5 @@ permalink: /kb/097/Q97066/
 	
 	=============================================================================
 	
+
+{% endraw %}

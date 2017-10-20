@@ -6,6 +6,8 @@ permalink: /kb/139/Q139873/
 
 ## Q139873: PRB: Import Wizard's Scan Option Doesn't Scan Beyond Record 50
 
+{% raw %}
+
 	Article: Q139873
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -129,3 +131,5 @@ permalink: /kb/139/Q139873/
 	
 	=============================================================================
 	
+
+{% endraw %}

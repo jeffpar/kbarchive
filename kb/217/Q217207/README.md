@@ -6,6 +6,8 @@ permalink: /kb/217/Q217207/
 
 ## Q217207: Type of Service Octet in IP Header Not Initialized on Alpha
 
+{% raw %}
+
 	Article: Q217207
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4
@@ -86,3 +88,5 @@ permalink: /kb/217/Q217207/
 	
 	=============================================================================
 	
+
+{% endraw %}

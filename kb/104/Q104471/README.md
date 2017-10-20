@@ -6,6 +6,8 @@ permalink: /kb/104/Q104471/
 
 ## Q104471: ERR: Not Enough Room for Scroll Bars
 
+{% raw %}
+
 	Article: Q104471
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -71,3 +73,5 @@ permalink: /kb/104/Q104471/
 	
 	=============================================================================
 	
+
+{% endraw %}

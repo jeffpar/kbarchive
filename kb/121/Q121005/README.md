@@ -6,6 +6,8 @@ permalink: /kb/121/Q121005/
 
 ## Q121005: DHCP Options Supported by Clients
 
+{% raw %}
+
 	Article: Q121005
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -151,3 +153,5 @@ permalink: /kb/121/Q121005/
 	
 	=============================================================================
 	
+
+{% endraw %}

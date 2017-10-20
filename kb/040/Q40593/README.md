@@ -6,6 +6,8 @@ permalink: /kb/040/Q40593/
 
 ## Q40593: INFO: Misspelling &quot;Default&quot; Gives No Error
 
+{% raw %}
+
 	Article: Q40593
 	Product(s): Microsoft C Compiler
 	Version(s): MS- DOS:6.0,6.00a,6.00ax,7.0;OS/2:6.0,6.00a;WIN3X:1.0,1.5,1.51;WINNT:1.0,2.0,2. 1,4.0,5
@@ -49,3 +51,5 @@ permalink: /kb/040/Q40593/
 	
 	=============================================================================
 	
+
+{% endraw %}

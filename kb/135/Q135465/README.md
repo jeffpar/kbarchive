@@ -6,6 +6,8 @@ permalink: /kb/135/Q135465/
 
 ## Q135465: README.TXT: Microsoft Network Client version 3.0
 
+{% raw %}
+
 	Article: Q135465
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0
@@ -497,3 +499,5 @@ permalink: /kb/135/Q135465/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150434/
 
 ## Q150434: PRB: Field Width Increases When Use Visual FoxPro ODBC Driver
 
+{% raw %}
+
 	Article: Q150434
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -69,3 +71,5 @@ permalink: /kb/150/Q150434/
 	
 	=============================================================================
 	
+
+{% endraw %}

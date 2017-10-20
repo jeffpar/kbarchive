@@ -6,6 +6,8 @@ permalink: /kb/314/Q314220/
 
 ## Q314220: Microsoft Visual C# .NET Step by Step Comments and Corrections
 
+{% raw %}
+
 	Article: Q314220
 	Product(s): Microsoft Press
 	Version(s): 
@@ -613,3 +615,5 @@ permalink: /kb/314/Q314220/
 	
 	=============================================================================
 	
+
+{% endraw %}

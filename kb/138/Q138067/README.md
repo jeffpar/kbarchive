@@ -6,6 +6,8 @@ permalink: /kb/138/Q138067/
 
 ## Q138067: HOWTO: Hide the Automation Manager
 
+{% raw %}
+
 	Article: Q138067
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/138/Q138067/
 	
 	=============================================================================
 	
+
+{% endraw %}

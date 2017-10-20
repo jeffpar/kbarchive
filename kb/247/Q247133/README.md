@@ -6,6 +6,8 @@ permalink: /kb/247/Q247133/
 
 ## Q247133: XCON: List of KB Articles on MTA Concepts and Troubleshooting
 
+{% raw %}
+
 	Article: Q247133
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -132,3 +134,5 @@ permalink: /kb/247/Q247133/
 	
 	=============================================================================
 	
+
+{% endraw %}

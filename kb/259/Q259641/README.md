@@ -6,6 +6,8 @@ permalink: /kb/259/Q259641/
 
 ## Q259641: Wang Image Edit Control May Not Work During Copy and Paste Opera
 
+{% raw %}
+
 	Article: Q259641
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -90,3 +92,5 @@ permalink: /kb/259/Q259641/
 	
 	=============================================================================
 	
+
+{% endraw %}

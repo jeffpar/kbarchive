@@ -6,6 +6,8 @@ permalink: /kb/199/Q199047/
 
 ## Q199047: Cannot Start Program When NetMeeting Is Running
 
+{% raw %}
+
 	Article: Q199047
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -85,3 +87,5 @@ permalink: /kb/199/Q199047/
 	
 	=============================================================================
 	
+
+{% endraw %}

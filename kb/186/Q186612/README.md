@@ -6,6 +6,8 @@ permalink: /kb/186/Q186612/
 
 ## Q186612: Use Installation Mode to Install New Drivers on Terminal Server
 
+{% raw %}
+
 	Article: Q186612
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/186/Q186612/
 	
 	=============================================================================
 	
+
+{% endraw %}

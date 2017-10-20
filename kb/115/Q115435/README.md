@@ -6,6 +6,8 @@ permalink: /kb/115/Q115435/
 
 ## Q115435: DriveSpace Help Refers to MS-DOS 6 Backup and &quot;User's Guide&quot;
 
+{% raw %}
+
 	Article: Q115435
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -37,3 +39,5 @@ permalink: /kb/115/Q115435/
 	
 	=============================================================================
 	
+
+{% endraw %}

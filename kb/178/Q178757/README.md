@@ -6,6 +6,8 @@ permalink: /kb/178/Q178757/
 
 ## Q178757: XADM: Store Logs Error 1203 When You Delete a Mailbox
 
+{% raw %}
+
 	Article: Q178757
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -75,3 +77,5 @@ permalink: /kb/178/Q178757/
 	
 	=============================================================================
 	
+
+{% endraw %}

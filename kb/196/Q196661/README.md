@@ -6,6 +6,8 @@ permalink: /kb/196/Q196661/
 
 ## Q196661: Windows NT 4.0 Does Not Support Universal Serial Bus
 
+{% raw %}
+
 	Article: Q196661
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -60,3 +62,5 @@ permalink: /kb/196/Q196661/
 	
 	=============================================================================
 	
+
+{% endraw %}

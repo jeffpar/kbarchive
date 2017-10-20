@@ -6,6 +6,8 @@ permalink: /kb/115/Q115932/
 
 ## Q115932: Class 2.0 Modems Unsupported with At Work PC Fax
 
+{% raw %}
+
 	Article: Q115932
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -76,3 +78,5 @@ permalink: /kb/115/Q115932/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137447/
 
 ## Q137447: Form Wizard Default Settings
 
+{% raw %}
+
 	Article: Q137447
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -87,3 +89,5 @@ permalink: /kb/137/Q137447/
 	
 	=============================================================================
 	
+
+{% endraw %}

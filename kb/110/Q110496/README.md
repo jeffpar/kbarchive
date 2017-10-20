@@ -6,6 +6,8 @@ permalink: /kb/110/Q110496/
 
 ## Q110496: PC Gen: PODIAG.EXE Creates New REQTRANS.GLB Using REQCONF.GLB
 
+{% raw %}
+
 	Article: Q110496
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -65,3 +67,5 @@ permalink: /kb/110/Q110496/
 	
 	=============================================================================
 	
+
+{% endraw %}

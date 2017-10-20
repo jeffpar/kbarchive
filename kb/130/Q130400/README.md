@@ -6,6 +6,8 @@ permalink: /kb/130/Q130400/
 
 ## Q130400: How to Change The Default Protocol in Windows NT
 
+{% raw %}
+
 	Article: Q130400
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -63,3 +65,5 @@ permalink: /kb/130/Q130400/
 	
 	=============================================================================
 	
+
+{% endraw %}

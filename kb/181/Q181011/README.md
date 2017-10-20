@@ -6,6 +6,8 @@ permalink: /kb/181/Q181011/
 
 ## Q181011: Appearance of CICS Abend Information in SNA Server Traces
 
+{% raw %}
+
 	Article: Q181011
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -192,3 +194,5 @@ permalink: /kb/181/Q181011/
 	
 	=============================================================================
 	
+
+{% endraw %}

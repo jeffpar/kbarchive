@@ -6,6 +6,8 @@ permalink: /kb/187/Q187908/
 
 ## Q187908: HOWTO: Use COMRETURNERROR() Function in a OLE Server
 
+{% raw %}
+
 	Article: Q187908
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -110,3 +112,5 @@ permalink: /kb/187/Q187908/
 	
 	=============================================================================
 	
+
+{% endraw %}

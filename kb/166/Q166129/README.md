@@ -6,6 +6,8 @@ permalink: /kb/166/Q166129/
 
 ## Q166129: HOWTO: Print Directly to a Non-Default Printer in MFC
 
+{% raw %}
+
 	Article: Q166129
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -254,3 +256,5 @@ permalink: /kb/166/Q166129/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157475/
 
 ## Q157475: Access Denied When Trying to Add ACL Entries
 
+{% raw %}
+
 	Article: Q157475
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -121,3 +123,5 @@ permalink: /kb/157/Q157475/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/050/Q50229/
 
 ## Q50229: BASIC Can't Use Microsoft Windows SDK to Make Applications
 
+{% raw %}
+
 	Article: Q50229
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -55,3 +57,5 @@ permalink: /kb/050/Q50229/
 	Base using the following words:
 	
 	   OS/2 and presentation and manager and BASIC and 6.00b
+
+{% endraw %}

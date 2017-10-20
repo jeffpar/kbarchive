@@ -6,6 +6,8 @@ permalink: /kb/222/Q222819/
 
 ## Q222819: Terminal Server Clock Does Not Reflect Client Time Zone Setting
 
+{% raw %}
+
 	Article: Q222819
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -49,3 +51,5 @@ permalink: /kb/222/Q222819/
 	
 	=============================================================================
 	
+
+{% endraw %}

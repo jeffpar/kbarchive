@@ -6,6 +6,8 @@ permalink: /kb/306/Q306295/
 
 ## Q306295: Microsoft Visio Version 2002 Step by Step Comments and Correctio
 
+{% raw %}
+
 	Article: Q306295
 	Product(s): Microsoft Press
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/306/Q306295/
 	
 	=============================================================================
 	
+
+{% endraw %}

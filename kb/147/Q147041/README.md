@@ -6,6 +6,8 @@ permalink: /kb/147/Q147041/
 
 ## Q147041: PC Win: Sending to a Large Distribution List Fails
 
+{% raw %}
+
 	Article: Q147041
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -63,3 +65,5 @@ permalink: /kb/147/Q147041/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131605/
 
 ## Q131605: Windows NT Help Shows Incorrect Default Log Setting
 
+{% raw %}
+
 	Article: Q131605
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/131/Q131605/
 	
 	=============================================================================
 	
+
+{% endraw %}

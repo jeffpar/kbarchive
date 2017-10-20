@@ -6,6 +6,8 @@ permalink: /kb/189/Q189304/
 
 ## Q189304: SMS: Windows NT Processor Speed Is Incorrectly Reported
 
+{% raw %}
+
 	Article: Q189304
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -52,3 +54,5 @@ permalink: /kb/189/Q189304/
 	
 	=============================================================================
 	
+
+{% endraw %}

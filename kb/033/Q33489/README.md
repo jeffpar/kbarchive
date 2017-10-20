@@ -6,6 +6,8 @@ permalink: /kb/033/Q33489/
 
 ## Q33489: QB 4.00b UPDATE.DOC: Adds SLEEP Statement to Suspend
 
+{% raw %}
+
 	Article: Q33489
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -65,3 +67,5 @@ permalink: /kb/033/Q33489/
 	   PRINT "Taking a twenty-second timeout..."
 	   SLEEP 20
 	   PRINT "Play ball!"
+
+{% endraw %}

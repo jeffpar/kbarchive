@@ -6,6 +6,8 @@ permalink: /kb/131/Q131001/
 
 ## Q131001: No Start Menu Icons After Installing Borland C++ 4.02
 
+{% raw %}
+
 	Article: Q131001
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -61,3 +63,5 @@ permalink: /kb/131/Q131001/
 	
 	=============================================================================
 	
+
+{% endraw %}

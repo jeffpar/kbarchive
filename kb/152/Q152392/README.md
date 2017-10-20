@@ -6,6 +6,8 @@ permalink: /kb/152/Q152392/
 
 ## Q152392: PRB: Component Gallery Unable to Import OLE Control
 
+{% raw %}
+
 	Article: Q152392
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,5.0,6.0
@@ -104,3 +106,5 @@ permalink: /kb/152/Q152392/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156747/
 
 ## Q156747: INFO: STL Sample for the reverse Function
 
+{% raw %}
+
 	Article: Q156747
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -169,3 +171,5 @@ permalink: /kb/156/Q156747/
 	
 	=============================================================================
 	
+
+{% endraw %}

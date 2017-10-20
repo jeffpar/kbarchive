@@ -6,6 +6,8 @@ permalink: /kb/270/Q270637/
 
 ## Q270637: &quot;Stop 1E&quot; When Using the Japanese Version of IBM Netfinity
 
+{% raw %}
+
 	Article: Q270637
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6,4.0 SP6a
@@ -94,3 +96,5 @@ permalink: /kb/270/Q270637/
 	
 	=============================================================================
 	
+
+{% endraw %}

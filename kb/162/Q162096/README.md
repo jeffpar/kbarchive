@@ -6,6 +6,8 @@ permalink: /kb/162/Q162096/
 
 ## Q162096: Drivers Fail to Load When I/O Address Is Above 0xFFF
 
+{% raw %}
+
 	Article: Q162096
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -55,3 +57,5 @@ permalink: /kb/162/Q162096/
 	
 	=============================================================================
 	
+
+{% endraw %}

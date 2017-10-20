@@ -6,6 +6,8 @@ permalink: /kb/021/Q21899/
 
 ## Q21899: CALL ABSOLUTE &quot;Unresolved Subprogram Reference,&quot; &quot;Not Defined&quot;
 
+{% raw %}
+
 	Article: Q21899
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -65,3 +67,5 @@ permalink: /kb/021/Q21899/
 	
 	      QB test.bas;
 	      LINK test.OBJ+ABSOLUTE.OBJ;
+
+{% endraw %}

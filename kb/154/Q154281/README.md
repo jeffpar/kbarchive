@@ -6,6 +6,8 @@ permalink: /kb/154/Q154281/
 
 ## Q154281: Microsoft Plus! Logo Screen Does Not Appear at Startup
 
+{% raw %}
+
 	Article: Q154281
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/154/Q154281/
 	
 	=============================================================================
 	
+
+{% endraw %}

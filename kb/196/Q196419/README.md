@@ -6,6 +6,8 @@ permalink: /kb/196/Q196419/
 
 ## Q196419: XADM: Move Server Dialog Box is Misleading
 
+{% raw %}
+
 	Article: Q196419
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -48,3 +50,5 @@ permalink: /kb/196/Q196419/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/271/Q271498/
 
 ## Q271498: Golf 2001: Problems When You Use Password Protected Screen Saver
 
+{% raw %}
+
 	Article: Q271498
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/271/Q271498/
 	
 	=============================================================================
 	
+
+{% endraw %}

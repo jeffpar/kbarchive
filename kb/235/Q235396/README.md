@@ -6,6 +6,8 @@ permalink: /kb/235/Q235396/
 
 ## Q235396: XADM: How to Determine the First Exchange Server in the Site
 
+{% raw %}
+
 	Article: Q235396
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -81,3 +83,5 @@ permalink: /kb/235/Q235396/
 	
 	=============================================================================
 	
+
+{% endraw %}

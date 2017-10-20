@@ -6,6 +6,8 @@ permalink: /kb/156/Q156731/
 
 ## Q156731: Windows NT Err. Msg: Stop 0x00000019 in NTFS
 
+{% raw %}
+
 	Article: Q156731
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -54,3 +56,5 @@ permalink: /kb/156/Q156731/
 	
 	=============================================================================
 	
+
+{% endraw %}

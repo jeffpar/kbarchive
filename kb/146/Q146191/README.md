@@ -6,6 +6,8 @@ permalink: /kb/146/Q146191/
 
 ## Q146191: Access Denied Error Copying File Over RAS
 
+{% raw %}
+
 	Article: Q146191
 	Product(s): Microsoft Windows NT
 	Version(s): Windows:3.11;WinNT:3.5,3.51
@@ -76,3 +78,5 @@ permalink: /kb/146/Q146191/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/257/Q257524/
 
 ## Q257524: FIX:Adding Items to ListView Control Results inIPF onWin95/98/Me
 
+{% raw %}
+
 	Article: Q257524
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -149,3 +151,5 @@ permalink: /kb/257/Q257524/
 	
 	=============================================================================
 	
+
+{% endraw %}

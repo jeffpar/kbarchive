@@ -6,6 +6,8 @@ permalink: /kb/126/Q126579/
 
 ## Q126579: Files Active After Termination of Recursive Batch File
 
+{% raw %}
+
 	Article: Q126579
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/126/Q126579/
 	
 	=============================================================================
 	
+
+{% endraw %}

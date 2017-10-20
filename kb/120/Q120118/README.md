@@ -6,6 +6,8 @@ permalink: /kb/120/Q120118/
 
 ## Q120118: WinLAN Network Overview
 
+{% raw %}
+
 	Article: Q120118
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11; :3.11
@@ -86,3 +88,5 @@ permalink: /kb/120/Q120118/
 	
 	=============================================================================
 	
+
+{% endraw %}

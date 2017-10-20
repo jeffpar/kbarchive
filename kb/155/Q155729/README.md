@@ -6,6 +6,8 @@ permalink: /kb/155/Q155729/
 
 ## Q155729: SCSI Devices May Not Be Enumerated Correctly
 
+{% raw %}
+
 	Article: Q155729
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/155/Q155729/
 	
 	=============================================================================
 	
+
+{% endraw %}

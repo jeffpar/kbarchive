@@ -6,6 +6,8 @@ permalink: /kb/194/Q194936/
 
 ## Q194936: ATAPI CD-ROM Changer Miniport Driver Is Not Properly Supported
 
+{% raw %}
+
 	Article: Q194936
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -85,3 +87,5 @@ permalink: /kb/194/Q194936/
 	
 	=============================================================================
 	
+
+{% endraw %}

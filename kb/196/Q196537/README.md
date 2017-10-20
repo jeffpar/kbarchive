@@ -6,6 +6,8 @@ permalink: /kb/196/Q196537/
 
 ## Q196537: PC MMTA: External Doesn't Automatically Restart with &gt; 4 GB Vol
 
+{% raw %}
+
 	Article: Q196537
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -59,3 +61,5 @@ permalink: /kb/196/Q196537/
 	
 	=============================================================================
 	
+
+{% endraw %}

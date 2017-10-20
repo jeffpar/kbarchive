@@ -6,6 +6,8 @@ permalink: /kb/195/Q195749/
 
 ## Q195749: Word 97 Err Msg: Word Cannot Find or Run the Application
 
+{% raw %}
+
 	Article: Q195749
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:97
@@ -64,3 +66,5 @@ permalink: /kb/195/Q195749/
 	
 	=============================================================================
 	
+
+{% endraw %}

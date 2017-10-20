@@ -6,6 +6,8 @@ permalink: /kb/190/Q190461/
 
 ## Q190461: BUG: ADIR() with V Attribute May Return Empty String
 
+{% raw %}
+
 	Article: Q190461
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -75,3 +77,5 @@ permalink: /kb/190/Q190461/
 	
 	=============================================================================
 	
+
+{% endraw %}

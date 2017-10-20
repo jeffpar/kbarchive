@@ -6,6 +6,8 @@ permalink: /kb/249/Q249650/
 
 ## Q249650: Error Message While Installing Year 2000 Resource CD-ROM
 
+{% raw %}
+
 	Article: Q249650
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -78,3 +80,5 @@ permalink: /kb/249/Q249650/
 	
 	=============================================================================
 	
+
+{% endraw %}

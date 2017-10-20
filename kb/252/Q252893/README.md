@@ -6,6 +6,8 @@ permalink: /kb/252/Q252893/
 
 ## Q252893: XCLN: Error Message When Opening an Outlook Calendar Folder
 
+{% raw %}
+
 	Article: Q252893
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/252/Q252893/
 	
 	=============================================================================
 	
+
+{% endraw %}

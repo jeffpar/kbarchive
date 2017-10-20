@@ -6,6 +6,8 @@ permalink: /kb/078/Q78451/
 
 ## Q78451: INFO: Detecting EGA.SYS
 
+{% raw %}
+
 	Article: Q78451
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -57,3 +59,5 @@ permalink: /kb/078/Q78451/
 	
 	=============================================================================
 	
+
+{% endraw %}

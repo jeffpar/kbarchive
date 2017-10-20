@@ -6,6 +6,8 @@ permalink: /kb/150/Q150438/
 
 ## Q150438: XFOR: MS Mail Template Information is not Migrated
 
+{% raw %}
+
 	Article: Q150438
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/150/Q150438/
 	
 	=============================================================================
 	
+
+{% endraw %}

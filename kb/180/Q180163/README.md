@@ -6,6 +6,8 @@ permalink: /kb/180/Q180163/
 
 ## Q180163: INI/CFG Files Corruption w/ Windows NT 4.0, Terminal Server
 
+{% raw %}
+
 	Article: Q180163
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/180/Q180163/
 	
 	=============================================================================
 	
+
+{% endraw %}

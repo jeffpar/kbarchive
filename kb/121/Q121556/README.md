@@ -6,6 +6,8 @@ permalink: /kb/121/Q121556/
 
 ## Q121556: PRB: Breakpoints Won't Work - 12 Reasons Why
 
+{% raw %}
+
 	Article: Q121556
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,4.0,5.0,6.0
@@ -292,3 +294,5 @@ permalink: /kb/121/Q121556/
 	
 	=============================================================================
 	
+
+{% endraw %}

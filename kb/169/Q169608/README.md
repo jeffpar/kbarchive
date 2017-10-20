@@ -6,6 +6,8 @@ permalink: /kb/169/Q169608/
 
 ## Q169608: Occasional File Corruption When Using Unbuffered I/O
 
+{% raw %}
+
 	Article: Q169608
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -98,3 +100,5 @@ permalink: /kb/169/Q169608/
 	
 	=============================================================================
 	
+
+{% endraw %}

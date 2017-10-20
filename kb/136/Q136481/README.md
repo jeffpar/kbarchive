@@ -6,6 +6,8 @@ permalink: /kb/136/Q136481/
 
 ## Q136481: INF: Running ODBC Applications as Windows NT Services
 
+{% raw %}
+
 	Article: Q136481
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.5
@@ -88,3 +90,5 @@ permalink: /kb/136/Q136481/
 	
 	=============================================================================
 	
+
+{% endraw %}

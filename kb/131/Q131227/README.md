@@ -6,6 +6,8 @@ permalink: /kb/131/Q131227/
 
 ## Q131227: Why HyperTerminal Connectoid File Sizes May Vary
 
+{% raw %}
+
 	Article: Q131227
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -63,3 +65,5 @@ permalink: /kb/131/Q131227/
 	
 	=============================================================================
 	
+
+{% endraw %}

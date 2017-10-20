@@ -6,6 +6,8 @@ permalink: /kb/138/Q138520/
 
 ## Q138520: HOWTO: Use an Ampersand (&amp;) to Suppress Sign Extension
 
+{% raw %}
+
 	Article: Q138520
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -68,3 +70,5 @@ permalink: /kb/138/Q138520/
 	
 	=============================================================================
 	
+
+{% endraw %}

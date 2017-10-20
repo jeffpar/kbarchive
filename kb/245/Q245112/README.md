@@ -6,6 +6,8 @@ permalink: /kb/245/Q245112/
 
 ## Q245112: Windows NT Server with SofTrack Workstation Metering Hangs.
 
+{% raw %}
+
 	Article: Q245112
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/245/Q245112/
 	
 	=============================================================================
 	
+
+{% endraw %}

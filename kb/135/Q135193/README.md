@@ -6,6 +6,8 @@ permalink: /kb/135/Q135193/
 
 ## Q135193: Q&amp;E Version 2.6.2 Causes Lost Network Functionality
 
+{% raw %}
+
 	Article: Q135193
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/135/Q135193/
 	
 	=============================================================================
 	
+
+{% endraw %}

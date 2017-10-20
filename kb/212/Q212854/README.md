@@ -6,6 +6,8 @@ permalink: /kb/212/Q212854/
 
 ## Q212854: SMSINST: Overwritten Files Are Not Restored During Uninstall
 
+{% raw %}
+
 	Article: Q212854
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -60,3 +62,5 @@ permalink: /kb/212/Q212854/
 	
 	=============================================================================
 	
+
+{% endraw %}

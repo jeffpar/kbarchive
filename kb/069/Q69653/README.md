@@ -6,6 +6,8 @@ permalink: /kb/069/Q69653/
 
 ## Q69653: IdleWild Does Not Blank the Screen
 
+{% raw %}
+
 	Article: Q69653
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -60,3 +62,5 @@ permalink: /kb/069/Q69653/
 	
 	=============================================================================
 	
+
+{% endraw %}

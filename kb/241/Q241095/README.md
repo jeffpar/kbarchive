@@ -6,6 +6,8 @@ permalink: /kb/241/Q241095/
 
 ## Q241095: MP2000 Err Msg: Cannot Establish DDE Communication with Desktop
 
+{% raw %}
+
 	Article: Q241095
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/241/Q241095/
 	
 	=============================================================================
 	
+
+{% endraw %}

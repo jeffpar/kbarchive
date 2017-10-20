@@ -6,6 +6,8 @@ permalink: /kb/160/Q160734/
 
 ## Q160734: WD97: Errors When Using ODBC to Insert Microsoft Excel Worksheet
 
+{% raw %}
+
 	Article: Q160734
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -113,3 +115,5 @@ permalink: /kb/160/Q160734/
 	
 	=============================================================================
 	
+
+{% endraw %}

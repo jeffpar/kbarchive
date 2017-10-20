@@ -6,6 +6,8 @@ permalink: /kb/266/Q266285/
 
 ## Q266285: Cannot Use SQL Server with Certificate Server 1.0
 
+{% raw %}
+
 	Article: Q266285
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -65,3 +67,5 @@ permalink: /kb/266/Q266285/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195244/
 
 ## Q195244: Excel Files for Macintosh Locked by Index Server
 
+{% raw %}
+
 	Article: Q195244
 	Product(s): Internet Information Server
 	Version(s): WINNT:2.0
@@ -72,3 +74,5 @@ permalink: /kb/195/Q195244/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168260/
 
 ## Q168260: Private Byte Memory Leak in Rpcss.exe
 
+{% raw %}
+
 	Article: Q168260
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -67,3 +69,5 @@ permalink: /kb/168/Q168260/
 	
 	=============================================================================
 	
+
+{% endraw %}

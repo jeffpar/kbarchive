@@ -6,6 +6,8 @@ permalink: /kb/084/Q84860/
 
 ## Q84860: Windows Err Msgs from Bad SYSTEM.INI Headings
 
+{% raw %}
+
 	Article: Q84860
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/084/Q84860/
 	
 	=============================================================================
 	
+
+{% endraw %}

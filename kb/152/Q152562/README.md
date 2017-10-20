@@ -6,6 +6,8 @@ permalink: /kb/152/Q152562/
 
 ## Q152562: How to Use Windows 95 to Connect Computers on a Network
 
+{% raw %}
+
 	Article: Q152562
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -194,3 +196,5 @@ permalink: /kb/152/Q152562/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194792/
 
 ## Q194792: HOWTO: Retrieve Values in SQL Server Stored Procedures with ADO
 
+{% raw %}
+
 	Article: Q194792
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.1 SP2,2.5,2.6,2.7,5.0,6.0
@@ -371,3 +373,5 @@ permalink: /kb/194/Q194792/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199267/
 
 ## Q199267: SMS: SMS 1.2 and SMS 2.0 Logon Scripts Coexistence
 
+{% raw %}
+
 	Article: Q199267
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -98,3 +100,5 @@ permalink: /kb/199/Q199267/
 	
 	=============================================================================
 	
+
+{% endraw %}

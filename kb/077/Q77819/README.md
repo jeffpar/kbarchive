@@ -6,6 +6,8 @@ permalink: /kb/077/Q77819/
 
 ## Q77819: My Computer Hangs When Using MS-DOS Shell Task Swapper
 
+{% raw %}
+
 	Article: Q77819
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0
@@ -124,3 +126,5 @@ permalink: /kb/077/Q77819/
 	
 	=============================================================================
 	
+
+{% endraw %}

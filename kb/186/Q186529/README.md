@@ -6,6 +6,8 @@ permalink: /kb/186/Q186529/
 
 ## Q186529: Local Policy Does Not Permit You to Log On Interactively
 
+{% raw %}
+
 	Article: Q186529
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/186/Q186529/
 	
 	=============================================================================
 	
+
+{% endraw %}

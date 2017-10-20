@@ -6,6 +6,8 @@ permalink: /kb/191/Q191172/
 
 ## Q191172: FIX: Performance Degradation with Repeated SQL SELECTs
 
+{% raw %}
+
 	Article: Q191172
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -145,3 +147,5 @@ permalink: /kb/191/Q191172/
 	
 	=============================================================================
 	
+
+{% endraw %}

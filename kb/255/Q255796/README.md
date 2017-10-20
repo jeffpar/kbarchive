@@ -6,6 +6,8 @@ permalink: /kb/255/Q255796/
 
 ## Q255796: Updating a Management Agent's Templates from Its Working Folder
 
+{% raw %}
+
 	Article: Q255796
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,2.2,2.2 SP1
@@ -85,3 +87,5 @@ permalink: /kb/255/Q255796/
 	
 	=============================================================================
 	
+
+{% endraw %}

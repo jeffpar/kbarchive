@@ -6,6 +6,8 @@ permalink: /kb/097/Q97447/
 
 ## Q97447: NETLOGON Fails with Valid Directory, Correct Permissions
 
+{% raw %}
+
 	Article: Q97447
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/097/Q97447/
 	
 	=============================================================================
 	
+
+{% endraw %}

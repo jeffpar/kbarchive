@@ -6,6 +6,8 @@ permalink: /kb/159/Q159470/
 
 ## Q159470: FIX: SQLDescribeCol &amp; SQLColAttributes Give Wrong Nullability
 
+{% raw %}
+
 	Article: Q159470
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.65; winnt:6.5
@@ -62,3 +64,5 @@ permalink: /kb/159/Q159470/
 	
 	=============================================================================
 	
+
+{% endraw %}

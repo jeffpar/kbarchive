@@ -6,6 +6,8 @@ permalink: /kb/169/Q169175/
 
 ## Q169175: FP: How to Create a Frameset Using the FrontPage Frames Wizard
 
+{% raw %}
+
 	Article: Q169175
 	Product(s): Word Front Page
 	Version(s): 1.1
@@ -74,3 +76,5 @@ permalink: /kb/169/Q169175/
 	
 	=============================================================================
 	
+
+{% endraw %}

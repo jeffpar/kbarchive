@@ -6,6 +6,8 @@ permalink: /kb/116/Q116338/
 
 ## Q116338: PRB: Problem Entering Footnotes in Word for Windows 6.0
 
+{% raw %}
+
 	Article: Q116338
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -72,3 +74,5 @@ permalink: /kb/116/Q116338/
 	
 	=============================================================================
 	
+
+{% endraw %}

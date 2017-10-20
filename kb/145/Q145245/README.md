@@ -6,6 +6,8 @@ permalink: /kb/145/Q145245/
 
 ## Q145245: WD97: How to Convert Adobe Acrobat Reader (&#42;.pdf) Files
 
+{% raw %}
+
 	Article: Q145245
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -134,3 +136,5 @@ permalink: /kb/145/Q145245/
 	
 	=============================================================================
 	
+
+{% endraw %}

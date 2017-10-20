@@ -6,6 +6,8 @@ permalink: /kb/177/Q177394/
 
 ## Q177394: HOWTO: Troubleshoot Run-Time Error '429' in DCOM Applications
 
+{% raw %}
+
 	Article: Q177394
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -188,3 +190,5 @@ permalink: /kb/177/Q177394/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183547/
 
 ## Q183547: Friendship Tutorial: Runtime Error 1738 Using Playback
 
+{% raw %}
+
 	Article: Q183547
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -70,3 +72,5 @@ permalink: /kb/183/Q183547/
 	
 	=============================================================================
 	
+
+{% endraw %}

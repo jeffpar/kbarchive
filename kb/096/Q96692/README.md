@@ -6,6 +6,8 @@ permalink: /kb/096/Q96692/
 
 ## Q96692: PC WRmt: Some View Menu Items Do Not Have Short-Cut Keys
 
+{% raw %}
+
 	Article: Q96692
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -37,3 +39,5 @@ permalink: /kb/096/Q96692/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/281/Q281882/
 
 ## Q281882: WD97: Err Msg: WINWORD Caused a GPF in HPFWIN02.DLL
 
+{% raw %}
+
 	Article: Q281882
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -167,3 +169,5 @@ permalink: /kb/281/Q281882/
 	
 	=============================================================================
 	
+
+{% endraw %}

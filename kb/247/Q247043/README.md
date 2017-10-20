@@ -6,6 +6,8 @@ permalink: /kb/247/Q247043/
 
 ## Q247043: FS2000 Err Msg: Invalid Page Fault in Module Kernel32.dll
 
+{% raw %}
+
 	Article: Q247043
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -155,3 +157,5 @@ permalink: /kb/247/Q247043/
 	
 	=============================================================================
 	
+
+{% endraw %}

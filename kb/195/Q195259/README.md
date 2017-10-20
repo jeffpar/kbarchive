@@ -6,6 +6,8 @@ permalink: /kb/195/Q195259/
 
 ## Q195259: FTP Site Mapped to a Remote Share May Have Access Problems
 
+{% raw %}
+
 	Article: Q195259
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/195/Q195259/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85534/
 
 ## Q85534: Changes Made in the Second Release of Windows 3.1 WRK
 
+{% raw %}
+
 	Article: Q85534
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/085/Q85534/
 	
 	=============================================================================
 	
+
+{% endraw %}

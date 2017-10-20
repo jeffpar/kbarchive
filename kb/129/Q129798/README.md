@@ -6,6 +6,8 @@ permalink: /kb/129/Q129798/
 
 ## Q129798: How to Display a Task Modal Dialog from a 32-Bit DLL
 
+{% raw %}
+
 	Article: Q129798
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -117,3 +119,5 @@ permalink: /kb/129/Q129798/
 	
 	=============================================================================
 	
+
+{% endraw %}

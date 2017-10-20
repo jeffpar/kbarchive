@@ -6,6 +6,8 @@ permalink: /kb/089/Q89959/
 
 ## Q89959: Music Box Titles List Box Does Not Close with ESC Key
 
+{% raw %}
+
 	Article: Q89959
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/089/Q89959/
 	
 	=============================================================================
 	
+
+{% endraw %}

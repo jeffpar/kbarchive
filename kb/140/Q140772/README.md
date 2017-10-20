@@ -6,6 +6,8 @@ permalink: /kb/140/Q140772/
 
 ## Q140772: Some Desktop Themes Interfere with Online Viewer Text
 
+{% raw %}
+
 	Article: Q140772
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,95
@@ -43,3 +45,5 @@ permalink: /kb/140/Q140772/
 	
 	=============================================================================
 	
+
+{% endraw %}

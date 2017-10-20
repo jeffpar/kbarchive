@@ -6,6 +6,8 @@ permalink: /kb/081/Q81795/
 
 ## Q81795: CodeView Prior to 3.14 May Cause Data Loss with SMARTDrive 4.0
 
+{% raw %}
+
 	Article: Q81795
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/081/Q81795/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/251/Q251099/
 
 ## Q251099: Slow Performance in License Metering Administration Tool
 
+{% raw %}
+
 	Article: Q251099
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -56,3 +58,5 @@ permalink: /kb/251/Q251099/
 	
 	=============================================================================
 	
+
+{% endraw %}

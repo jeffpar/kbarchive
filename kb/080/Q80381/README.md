@@ -6,6 +6,8 @@ permalink: /kb/080/Q80381/
 
 ## Q80381: Relative Addresses (Relocatables) and the Minus Operator
 
+{% raw %}
+
 	Article: Q80381
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b
@@ -90,3 +92,5 @@ permalink: /kb/080/Q80381/
 	
 	=============================================================================
 	
+
+{% endraw %}

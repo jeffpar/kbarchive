@@ -6,6 +6,8 @@ permalink: /kb/252/Q252636/
 
 ## Q252636: Allegiance: Sphere Around Object Is Opaque
 
+{% raw %}
+
 	Article: Q252636
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -49,3 +51,5 @@ permalink: /kb/252/Q252636/
 	
 	=============================================================================
 	
+
+{% endraw %}

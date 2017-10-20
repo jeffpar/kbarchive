@@ -6,6 +6,8 @@ permalink: /kb/076/Q76553/
 
 ## Q76553: FIX: Can't Have Menu with No Caption Bar/Buttons/Control Box
 
+{% raw %}
+
 	Article: Q76553
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0,4.0
@@ -91,3 +93,5 @@ permalink: /kb/076/Q76553/
 	
 	=============================================================================
 	
+
+{% endraw %}

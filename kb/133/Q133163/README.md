@@ -6,6 +6,8 @@ permalink: /kb/133/Q133163/
 
 ## Q133163: HOWTO: Control Printer Attributes for a Report at Run Time
 
+{% raw %}
+
 	Article: Q133163
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -160,3 +162,5 @@ permalink: /kb/133/Q133163/
 	
 	=============================================================================
 	
+
+{% endraw %}

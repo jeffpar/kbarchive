@@ -6,6 +6,8 @@ permalink: /kb/223/Q223173/
 
 ## Q223173: Bookshelf 2000: What's New in Bookshelf 2000
 
+{% raw %}
+
 	Article: Q223173
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -79,3 +81,5 @@ permalink: /kb/223/Q223173/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/033/Q33736/
 
 ## Q33736: CHAIN, RUN, and KILL Statements Do Not Use MS-DOS Search PATH
 
+{% raw %}
+
 	Article: Q33736
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -50,3 +52,5 @@ permalink: /kb/033/Q33736/
 	RUN statement in the program source code, the program will have to be
 	recompiled if the CHAINed or RUN program is moved to a different disk
 	and/or directory.
+
+{% endraw %}

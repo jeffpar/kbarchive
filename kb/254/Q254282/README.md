@@ -6,6 +6,8 @@ permalink: /kb/254/Q254282/
 
 ## Q254282: XIMS: Memory Leak in MMC and ChatCommand Object of Chat Server
 
+{% raw %}
+
 	Article: Q254282
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -62,3 +64,5 @@ permalink: /kb/254/Q254282/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234974/
 
 ## Q234974: PRB: Error C0042116: The Web Server Is Not Responding
 
+{% raw %}
+
 	Article: Q234974
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -117,3 +119,5 @@ permalink: /kb/234/Q234974/
 	
 	=============================================================================
 	
+
+{% endraw %}

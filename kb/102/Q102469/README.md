@@ -6,6 +6,8 @@ permalink: /kb/102/Q102469/
 
 ## Q102469: How to Display Network Registry Parameters
 
+{% raw %}
+
 	Article: Q102469
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.51 4.0
@@ -165,3 +167,5 @@ permalink: /kb/102/Q102469/
 	
 	=============================================================================
 	
+
+{% endraw %}

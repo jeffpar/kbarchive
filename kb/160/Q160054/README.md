@@ -6,6 +6,8 @@ permalink: /kb/160/Q160054/
 
 ## Q160054: File Manager Will Not Browse Below the NetWare Volume
 
+{% raw %}
+
 	Article: Q160054
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -51,3 +53,5 @@ permalink: /kb/160/Q160054/
 	
 	=============================================================================
 	
+
+{% endraw %}

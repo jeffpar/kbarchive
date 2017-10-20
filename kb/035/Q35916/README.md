@@ -6,6 +6,8 @@ permalink: /kb/035/Q35916/
 
 ## Q35916: Second ATIS Frequency for Oakland International Airport
 
+{% raw %}
+
 	Article: Q35916
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -27,3 +29,5 @@ permalink: /kb/035/Q35916/
 	
 	=============================================================================
 	
+
+{% endraw %}

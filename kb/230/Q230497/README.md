@@ -6,6 +6,8 @@ permalink: /kb/230/Q230497/
 
 ## Q230497: XCON: MTA Sends NDR: Message Transfer Service Congestion
 
+{% raw %}
+
 	Article: Q230497
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -121,3 +123,5 @@ permalink: /kb/230/Q230497/
 	
 	=============================================================================
 	
+
+{% endraw %}

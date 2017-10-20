@@ -6,6 +6,8 @@ permalink: /kb/107/Q107095/
 
 ## Q107095: PROFS: Incorrect Time and Date Stamp on Gateway Mail
 
+{% raw %}
+
 	Article: Q107095
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.1,3.2,3.3,3.4
@@ -45,3 +47,5 @@ permalink: /kb/107/Q107095/
 	
 	=============================================================================
 	
+
+{% endraw %}

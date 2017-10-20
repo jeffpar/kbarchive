@@ -6,6 +6,8 @@ permalink: /kb/277/Q277563/
 
 ## Q277563: XADM: Can't Use Addr Templ Offline w/o Address Type Matching RDN
 
+{% raw %}
+
 	Article: Q277563
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -65,3 +67,5 @@ permalink: /kb/277/Q277563/
 	
 	=============================================================================
 	
+
+{% endraw %}

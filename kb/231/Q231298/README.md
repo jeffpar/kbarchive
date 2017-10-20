@@ -6,6 +6,8 @@ permalink: /kb/231/Q231298/
 
 ## Q231298: HOWTO: Use SetWaitableTimer With Visual Basic
 
+{% raw %}
+
 	Article: Q231298
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -254,3 +256,5 @@ permalink: /kb/231/Q231298/
 	
 	=============================================================================
 	
+
+{% endraw %}

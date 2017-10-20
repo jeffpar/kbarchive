@@ -6,6 +6,8 @@ permalink: /kb/244/Q244244/
 
 ## Q244244: XADM: Can't Install Service Packs on Exchange 5.5 SE in Cluster
 
+{% raw %}
+
 	Article: Q244244
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -53,3 +55,5 @@ permalink: /kb/244/Q244244/
 	
 	=============================================================================
 	
+
+{% endraw %}

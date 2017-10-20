@@ -6,6 +6,8 @@ permalink: /kb/301/Q301478/
 
 ## Q301478: Broadband: OOBE with V2.0
 
+{% raw %}
+
 	Article: Q301478
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -54,3 +56,5 @@ permalink: /kb/301/Q301478/
 	
 	=============================================================================
 	
+
+{% endraw %}

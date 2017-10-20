@@ -6,6 +6,8 @@ permalink: /kb/115/Q115064/
 
 ## Q115064: Encarta: Screen Corruption with Diamond Viper Using VGA Driver
 
+{% raw %}
+
 	Article: Q115064
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 editions,1995 editions; WINDOWS:
@@ -59,3 +61,5 @@ permalink: /kb/115/Q115064/
 	
 	=============================================================================
 	
+
+{% endraw %}

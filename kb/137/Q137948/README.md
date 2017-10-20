@@ -6,6 +6,8 @@ permalink: /kb/137/Q137948/
 
 ## Q137948: FIX: Report Writer Left-Aligns Numeric Fields Added w/ Toolbar
 
+{% raw %}
+
 	Article: Q137948
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -103,3 +105,5 @@ permalink: /kb/137/Q137948/
 	
 	=============================================================================
 	
+
+{% endraw %}

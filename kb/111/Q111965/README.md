@@ -6,6 +6,8 @@ permalink: /kb/111/Q111965/
 
 ## Q111965: MS-DOS 6 Upgrade Setup /M Erroneously Updates SYSTEM.INI
 
+{% raw %}
+
 	Article: Q111965
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -74,3 +76,5 @@ permalink: /kb/111/Q111965/
 	
 	=============================================================================
 	
+
+{% endraw %}

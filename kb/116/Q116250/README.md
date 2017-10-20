@@ -6,6 +6,8 @@ permalink: /kb/116/Q116250/
 
 ## Q116250: Windows 95 Err Msg: Registry File Was Not Found
 
+{% raw %}
+
 	Article: Q116250
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/116/Q116250/
 	
 	=============================================================================
 	
+
+{% endraw %}

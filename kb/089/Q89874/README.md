@@ -6,6 +6,8 @@ permalink: /kb/089/Q89874/
 
 ## Q89874: MIDIMAP.CFG Is Replaced During Windows Sound System Setup
 
+{% raw %}
+
 	Article: Q89874
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/089/Q89874/
 	
 	=============================================================================
 	
+
+{% endraw %}

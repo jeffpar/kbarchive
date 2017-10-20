@@ -6,6 +6,8 @@ permalink: /kb/135/Q135207/
 
 ## Q135207: Setup Hangs During Hardware Detection on IBM ThinkPad
 
+{% raw %}
+
 	Article: Q135207
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/135/Q135207/
 	
 	=============================================================================
 	
+
+{% endraw %}

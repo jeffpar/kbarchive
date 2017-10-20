@@ -6,6 +6,8 @@ permalink: /kb/128/Q128352/
 
 ## Q128352: Print Job to LPR Printer Does Not Print
 
+{% raw %}
+
 	Article: Q128352
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -75,3 +77,5 @@ permalink: /kb/128/Q128352/
 	
 	=============================================================================
 	
+
+{% endraw %}

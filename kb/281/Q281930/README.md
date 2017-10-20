@@ -6,6 +6,8 @@ permalink: /kb/281/Q281930/
 
 ## Q281930: SMS: ODP Schedule Times Are Reset to One-Hour Default
 
+{% raw %}
+
 	Article: Q281930
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3
@@ -72,3 +74,5 @@ permalink: /kb/281/Q281930/
 	
 	=============================================================================
 	
+
+{% endraw %}

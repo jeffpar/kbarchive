@@ -6,6 +6,8 @@ permalink: /kb/177/Q177429/
 
 ## Q177429: INFO: Examples of DUMPBIN Output
 
+{% raw %}
+
 	Article: Q177429
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2,4.2b,5.0,5.0sp1,5.0sp2,6.0
@@ -340,3 +342,5 @@ permalink: /kb/177/Q177429/
 	
 	=============================================================================
 	
+
+{% endraw %}

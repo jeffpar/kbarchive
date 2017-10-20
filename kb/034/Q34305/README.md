@@ -6,6 +6,8 @@ permalink: /kb/034/Q34305/
 
 ## Q34305: Path Strings Need Double Backslashes or fopen/open Fails
 
+{% raw %}
+
 	Article: Q34305
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10 | 5.10
@@ -46,3 +48,5 @@ permalink: /kb/034/Q34305/
 	spawnlpe, spawnv, spawnve, spawnvp, spawnvpe, system, _dos_creat,
 	_dos_creatnew, _dos_findfirst, _dos_getfileattr, _dos_open,
 	_dos_setfileattr, utime, putenv, _searchenv
+
+{% endraw %}

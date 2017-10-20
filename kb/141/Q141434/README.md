@@ -6,6 +6,8 @@ permalink: /kb/141/Q141434/
 
 ## Q141434: Encarta 96 and Windows 3.1: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q141434
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.1,3.11,95
@@ -229,3 +231,5 @@ permalink: /kb/141/Q141434/
 	
 	=============================================================================
 	
+
+{% endraw %}

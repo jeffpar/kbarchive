@@ -6,6 +6,8 @@ permalink: /kb/049/Q49391/
 
 ## Q49391: Example of Passing Array of BASIC String Descriptors to MASM
 
+{% raw %}
+
 	Article: Q49391
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -133,3 +135,5 @@ permalink: /kb/049/Q49391/
 	
 	   FIRST STRING
 	   SECOND STRING
+
+{% endraw %}

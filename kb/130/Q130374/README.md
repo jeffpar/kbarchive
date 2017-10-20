@@ -6,6 +6,8 @@ permalink: /kb/130/Q130374/
 
 ## Q130374: Incorrect System BIOS Information in Windows NT Diag. Report
 
+{% raw %}
+
 	Article: Q130374
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/130/Q130374/
 	
 	=============================================================================
 	
+
+{% endraw %}

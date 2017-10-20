@@ -6,6 +6,8 @@ permalink: /kb/189/Q189612/
 
 ## Q189612: Access Violation Occurs in Windows NT Explorer (Explorer.exe)
 
+{% raw %}
+
 	Article: Q189612
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -161,3 +163,5 @@ permalink: /kb/189/Q189612/
 	
 	=============================================================================
 	
+
+{% endraw %}

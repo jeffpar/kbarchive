@@ -6,6 +6,8 @@ permalink: /kb/213/Q213346/
 
 ## Q213346: SMS:  Some Buttons Disabled in Collections Resource Dialog Box
 
+{% raw %}
+
 	Article: Q213346
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -52,3 +54,5 @@ permalink: /kb/213/Q213346/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123880/
 
 ## Q123880: Stop 7B with NCR53c710 SCSI Adapter and DEC 3107 or DEC 3210
 
+{% raw %}
+
 	Article: Q123880
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -66,3 +68,5 @@ permalink: /kb/123/Q123880/
 	
 	=============================================================================
 	
+
+{% endraw %}

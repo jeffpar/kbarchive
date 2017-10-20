@@ -6,6 +6,8 @@ permalink: /kb/225/Q225261/
 
 ## Q225261: Error Line Number Returned By Snacfg.exe May Be Incorrect
 
+{% raw %}
+
 	Article: Q225261
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0SP1,4.0SP2
@@ -73,3 +75,5 @@ permalink: /kb/225/Q225261/
 	
 	=============================================================================
 	
+
+{% endraw %}

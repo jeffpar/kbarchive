@@ -6,6 +6,8 @@ permalink: /kb/199/Q199747/
 
 ## Q199747: SMS: Registry Errors on Software Metering Clients
 
+{% raw %}
+
 	Article: Q199747
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -109,3 +111,5 @@ permalink: /kb/199/Q199747/
 	
 	=============================================================================
 	
+
+{% endraw %}

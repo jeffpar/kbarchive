@@ -6,6 +6,8 @@ permalink: /kb/115/Q115319/
 
 ## Q115319: CONN: Proxy list Contains Local Postoffice Addresses
 
+{% raw %}
+
 	Article: Q115319
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -116,3 +118,5 @@ permalink: /kb/115/Q115319/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124263/
 
 ## Q124263: Macintosh RAS Options with Windows NT Server 3.5
 
+{% raw %}
+
 	Article: Q124263
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -60,3 +62,5 @@ permalink: /kb/124/Q124263/
 	
 	=============================================================================
 	
+
+{% endraw %}

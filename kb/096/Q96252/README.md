@@ -6,6 +6,8 @@ permalink: /kb/096/Q96252/
 
 ## Q96252: Mac Srv: Unable to Start Server as Application
 
+{% raw %}
+
 	Article: Q96252
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -46,3 +48,5 @@ permalink: /kb/096/Q96252/
 	
 	=============================================================================
 	
+
+{% endraw %}

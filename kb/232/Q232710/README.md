@@ -6,6 +6,8 @@ permalink: /kb/232/Q232710/
 
 ## Q232710: Privileges not Assigned if Two Users Start with Same Substring
 
+{% raw %}
+
 	Article: Q232710
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -91,3 +93,5 @@ permalink: /kb/232/Q232710/
 	
 	=============================================================================
 	
+
+{% endraw %}

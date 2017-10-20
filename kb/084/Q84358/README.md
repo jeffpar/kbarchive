@@ -6,6 +6,8 @@ permalink: /kb/084/Q84358/
 
 ## Q84358: Write Err Msg: Problem with Object/Link
 
+{% raw %}
+
 	Article: Q84358
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -74,3 +76,5 @@ permalink: /kb/084/Q84358/
 	
 	=============================================================================
 	
+
+{% endraw %}

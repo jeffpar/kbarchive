@@ -6,6 +6,8 @@ permalink: /kb/162/Q162851/
 
 ## Q162851: ACC97: &quot;Couldn't find object&quot; Error Checking Out Table/Query
 
+{% raw %}
+
 	Article: Q162851
 	Product(s): Microsoft SourceSafe
 	Version(s): 97
@@ -102,3 +104,5 @@ permalink: /kb/162/Q162851/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158086/
 
 ## Q158086: STL Sample for the list::back, list::front Functions
 
+{% raw %}
+
 	Article: Q158086
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -146,3 +148,5 @@ permalink: /kb/158/Q158086/
 	
 	=============================================================================
 	
+
+{% endraw %}

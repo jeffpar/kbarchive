@@ -6,6 +6,8 @@ permalink: /kb/177/Q177251/
 
 ## Q177251: XADM: Disabling PF Replication Status Messages on IS Startup
 
+{% raw %}
+
 	Article: Q177251
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0 5.5
@@ -203,3 +205,5 @@ permalink: /kb/177/Q177251/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134239/
 
 ## Q134239: Leading Zero Not Shown While Changing Time
 
+{% raw %}
+
 	Article: Q134239
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/134/Q134239/
 	
 	=============================================================================
 	
+
+{% endraw %}

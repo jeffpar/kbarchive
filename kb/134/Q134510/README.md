@@ -6,6 +6,8 @@ permalink: /kb/134/Q134510/
 
 ## Q134510: ScanDisk States That Compression Ratio Is Too High
 
+{% raw %}
+
 	Article: Q134510
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/134/Q134510/
 	
 	=============================================================================
 	
+
+{% endraw %}

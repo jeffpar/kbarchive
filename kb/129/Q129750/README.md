@@ -6,6 +6,8 @@ permalink: /kb/129/Q129750/
 
 ## Q129750: Using the 3C501 Network Adapter with WFWG
 
+{% raw %}
+
 	Article: Q129750
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -85,3 +87,5 @@ permalink: /kb/129/Q129750/
 	
 	=============================================================================
 	
+
+{% endraw %}

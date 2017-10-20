@@ -6,6 +6,8 @@ permalink: /kb/132/Q132851/
 
 ## Q132851: Printing in PCL Mode from Adobe Illustrator Causes GP Fault
 
+{% raw %}
+
 	Article: Q132851
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/132/Q132851/
 	
 	=============================================================================
 	
+
+{% endraw %}

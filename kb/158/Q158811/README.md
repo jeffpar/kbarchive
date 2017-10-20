@@ -6,6 +6,8 @@ permalink: /kb/158/Q158811/
 
 ## Q158811: Some Exchange Objects Cannot be Added to Performance Data Log
 
+{% raw %}
+
 	Article: Q158811
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 4.0
@@ -58,3 +60,5 @@ permalink: /kb/158/Q158811/
 	
 	=============================================================================
 	
+
+{% endraw %}

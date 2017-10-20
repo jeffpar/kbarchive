@@ -6,6 +6,8 @@ permalink: /kb/159/Q159758/
 
 ## Q159758: WD97: Caption Text Shifted Right or Missing from Caption Box
 
+{% raw %}
+
 	Article: Q159758
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/159/Q159758/
 	
 	=============================================================================
 	
+
+{% endraw %}

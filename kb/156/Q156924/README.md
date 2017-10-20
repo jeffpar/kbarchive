@@ -6,6 +6,8 @@ permalink: /kb/156/Q156924/
 
 ## Q156924: PRB: Menu with Internal Names in SDI Form Changes System Menu
 
+{% raw %}
+
 	Article: Q156924
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -150,3 +152,5 @@ permalink: /kb/156/Q156924/
 	
 	=============================================================================
 	
+
+{% endraw %}

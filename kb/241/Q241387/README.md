@@ -6,6 +6,8 @@ permalink: /kb/241/Q241387/
 
 ## Q241387: Err Msg: STOP 0x0000001E: KMODE_EXCEPTION_NOT_HANDLED
 
+{% raw %}
+
 	Article: Q241387
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5
@@ -112,3 +114,5 @@ permalink: /kb/241/Q241387/
 	
 	=============================================================================
 	
+
+{% endraw %}

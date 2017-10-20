@@ -6,6 +6,8 @@ permalink: /kb/061/Q61214/
 
 ## Q61214: C 6.00 README: PWB: Use %s, Not %S, for Run.Customize Argument
 
+{% raw %}
+
 	Article: Q61214
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -24,3 +26,5 @@ permalink: /kb/061/Q61214/
 	Run menu you can specify %S in the Argument box to get the name of the
 	current file. However, to specify the current file as an argument, you
 	must use %s (lowercase s).
+
+{% endraw %}

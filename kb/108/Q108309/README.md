@@ -6,6 +6,8 @@ permalink: /kb/108/Q108309/
 
 ## Q108309: FIX: Posting WM_COMMNOTIFY Messages May Fail
 
+{% raw %}
+
 	Article: Q108309
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.1
@@ -71,3 +73,5 @@ permalink: /kb/108/Q108309/
 	
 	=============================================================================
 	
+
+{% endraw %}

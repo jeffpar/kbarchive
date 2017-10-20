@@ -6,6 +6,8 @@ permalink: /kb/173/Q173289/
 
 ## Q173289: WD97: Graphic Does Not Appear or Print in a Master Document
 
+{% raw %}
+
 	Article: Q173289
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -91,3 +93,5 @@ permalink: /kb/173/Q173289/
 	
 	=============================================================================
 	
+
+{% endraw %}

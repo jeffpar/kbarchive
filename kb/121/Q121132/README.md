@@ -6,6 +6,8 @@ permalink: /kb/121/Q121132/
 
 ## Q121132: MSACM 2.0: Compressed Audio Will Not Play
 
+{% raw %}
+
 	Article: Q121132
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a,1996 edition,2.0,3.0,3.0a,3.1,3.11
@@ -149,3 +151,5 @@ permalink: /kb/121/Q121132/
 	
 	=============================================================================
 	
+
+{% endraw %}

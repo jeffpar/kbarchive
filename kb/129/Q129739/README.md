@@ -6,6 +6,8 @@ permalink: /kb/129/Q129739/
 
 ## Q129739: How to Determine If VB 4.0 App Was Launched as OLE Server
 
+{% raw %}
+
 	Article: Q129739
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/129/Q129739/
 	
 	=============================================================================
 	
+
+{% endraw %}

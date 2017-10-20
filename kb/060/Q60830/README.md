@@ -6,6 +6,8 @@ permalink: /kb/060/Q60830/
 
 ## Q60830: Always Use Latest Version of HIMEM and Other Memory Utilities
 
+{% raw %}
+
 	Article: Q60830
 	Product(s): See article
 	Version(s): 2.50 2.60
@@ -35,3 +37,5 @@ permalink: /kb/060/Q60830/
 	RAMDRIVE.SYS, SMARTDRV.SYS, etc.) be installed. Tools such as CodeView
 	and the Programmer's WorkBench (PWB) depend on features that are
 	available only in the latest versions.
+
+{% endraw %}

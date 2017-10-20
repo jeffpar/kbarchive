@@ -6,6 +6,8 @@ permalink: /kb/221/Q221745/
 
 ## Q221745: FIX: C0000005 Fatal Error Using GETPEM() in Loop with Debugger
 
+{% raw %}
+
 	Article: Q221745
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -102,3 +104,5 @@ permalink: /kb/221/Q221745/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149849/
 
 ## Q149849: FIX: Report Writer Incorrectly Numbers Pages of Report
 
+{% raw %}
+
 	Article: Q149849
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -89,3 +91,5 @@ permalink: /kb/149/Q149849/
 	
 	=============================================================================
 	
+
+{% endraw %}

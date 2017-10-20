@@ -6,6 +6,8 @@ permalink: /kb/178/Q178161/
 
 ## Q178161: Unable to Send Private Message to Exchange Recipient
 
+{% raw %}
+
 	Article: Q178161
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -69,3 +71,5 @@ permalink: /kb/178/Q178161/
 	
 	=============================================================================
 	
+
+{% endraw %}

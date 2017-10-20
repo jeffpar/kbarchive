@@ -6,6 +6,8 @@ permalink: /kb/294/Q294939/
 
 ## Q294939: &quot;No More Local Devices&quot; Error Message When You Advertise
 
+{% raw %}
+
 	Article: Q294939
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3
@@ -126,3 +128,5 @@ permalink: /kb/294/Q294939/
 	
 	=============================================================================
 	
+
+{% endraw %}

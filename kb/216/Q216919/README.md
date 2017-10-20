@@ -6,6 +6,8 @@ permalink: /kb/216/Q216919/
 
 ## Q216919: Flight Simulator 95/98: Game Controller Does Not Appear in List
 
+{% raw %}
+
 	Article: Q216919
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/216/Q216919/
 	
 	=============================================================================
 	
+
+{% endraw %}

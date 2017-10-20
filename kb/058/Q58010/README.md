@@ -6,6 +6,8 @@ permalink: /kb/058/Q58010/
 
 ## Q58010: WDEB386 Debugger's Use of COM Port
 
+{% raw %}
+
 	Article: Q58010
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -52,3 +54,5 @@ permalink: /kb/058/Q58010/
 	
 	=============================================================================
 	
+
+{% endraw %}

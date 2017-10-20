@@ -6,6 +6,8 @@ permalink: /kb/269/Q269559/
 
 ## Q269559: Error Message Occurs When Installing Network Monitor 2.0
 
+{% raw %}
+
 	Article: Q269559
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -56,3 +58,5 @@ permalink: /kb/269/Q269559/
 	
 	=============================================================================
 	
+
+{% endraw %}

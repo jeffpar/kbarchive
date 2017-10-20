@@ -6,6 +6,8 @@ permalink: /kb/068/Q68803/
 
 ## Q68803: DCA IRMA Boards and E78PLUS Software with Windows 3.0
 
+{% raw %}
+
 	Article: Q68803
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -61,3 +63,5 @@ permalink: /kb/068/Q68803/
 	
 	=============================================================================
 	
+
+{% endraw %}

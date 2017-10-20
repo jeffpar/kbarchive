@@ -6,6 +6,8 @@ permalink: /kb/306/Q306308/
 
 ## Q306308: XADM: IMS Doesn't Start When Limiting Logons to the IS
 
+{% raw %}
+
 	Article: Q306308
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -128,3 +130,5 @@ permalink: /kb/306/Q306308/
 	
 	=============================================================================
 	
+
+{% endraw %}

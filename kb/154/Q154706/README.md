@@ -6,6 +6,8 @@ permalink: /kb/154/Q154706/
 
 ## Q154706: GSNW Should Not Be Able to Be Removed While DSMN Is Installed
 
+{% raw %}
+
 	Article: Q154706
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -52,3 +54,5 @@ permalink: /kb/154/Q154706/
 	
 	=============================================================================
 	
+
+{% endraw %}

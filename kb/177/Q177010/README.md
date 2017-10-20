@@ -6,6 +6,8 @@ permalink: /kb/177/Q177010/
 
 ## Q177010: Age of Empires: Black Screen When You Start the Game
 
+{% raw %}
+
 	Article: Q177010
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -82,3 +84,5 @@ permalink: /kb/177/Q177010/
 	
 	=============================================================================
 	
+
+{% endraw %}

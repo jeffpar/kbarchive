@@ -6,6 +6,8 @@ permalink: /kb/145/Q145621/
 
 ## Q145621: Banner Settings Not Saved for Captured NDS Printer with MSNDS
 
+{% raw %}
+
 	Article: Q145621
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/145/Q145621/
 	
 	=============================================================================
 	
+
+{% endraw %}

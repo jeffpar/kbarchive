@@ -6,6 +6,8 @@ permalink: /kb/188/Q188906/
 
 ## Q188906: PRB: No Command Line Equivalent for Move...File
 
+{% raw %}
+
 	Article: Q188906
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -69,3 +71,5 @@ permalink: /kb/188/Q188906/
 	
 	=============================================================================
 	
+
+{% endraw %}

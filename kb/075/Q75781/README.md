@@ -6,6 +6,8 @@ permalink: /kb/075/Q75781/
 
 ## Q75781: Dithered Colored Text Can be Drawn in Paintbrush
 
+{% raw %}
+
 	Article: Q75781
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -35,3 +37,5 @@ permalink: /kb/075/Q75781/
 	
 	=============================================================================
 	
+
+{% endraw %}

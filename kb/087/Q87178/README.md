@@ -6,6 +6,8 @@ permalink: /kb/087/Q87178/
 
 ## Q87178: PROFS: Information Required to Troubleshoot LAN-Side Problems
 
+{% raw %}
+
 	Article: Q87178
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -63,3 +65,5 @@ permalink: /kb/087/Q87178/
 	
 	=============================================================================
 	
+
+{% endraw %}

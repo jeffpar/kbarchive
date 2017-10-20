@@ -6,6 +6,8 @@ permalink: /kb/190/Q190182/
 
 ## Q190182: Baseball 3D: How to Optimize Graphics and Game Performance
 
+{% raw %}
+
 	Article: Q190182
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -132,3 +134,5 @@ permalink: /kb/190/Q190182/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123733/
 
 ## Q123733: MSB Solar: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q123733
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -95,3 +97,5 @@ permalink: /kb/123/Q123733/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180940/
 
 ## Q180940: Unable to Use Host Print Transform After Applying SP2
 
+{% raw %}
+
 	Article: Q180940
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP2
@@ -56,3 +58,5 @@ permalink: /kb/180/Q180940/
 	
 	=============================================================================
 	
+
+{% endraw %}

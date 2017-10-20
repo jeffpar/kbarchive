@@ -6,6 +6,8 @@ permalink: /kb/167/Q167885/
 
 ## Q167885: WD97: ODMA: File Open Dialog May Display Behind Application
 
+{% raw %}
+
 	Article: Q167885
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97; winnt:3.51,4.0
@@ -76,3 +78,5 @@ permalink: /kb/167/Q167885/
 	
 	=============================================================================
 	
+
+{% endraw %}

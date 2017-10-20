@@ -6,6 +6,8 @@ permalink: /kb/262/Q262439/
 
 ## Q262439: XADM: Indexes Rebuilt Twice or More After NT Upgrade
 
+{% raw %}
+
 	Article: Q262439
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -74,3 +76,5 @@ permalink: /kb/262/Q262439/
 	
 	=============================================================================
 	
+
+{% endraw %}

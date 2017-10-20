@@ -6,6 +6,8 @@ permalink: /kb/077/Q77768/
 
 ## Q77768: Leading Edge Memory Test Diagnostic May Cause System Hangs
 
+{% raw %}
+
 	Article: Q77768
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -63,3 +65,5 @@ permalink: /kb/077/Q77768/
 	
 	=============================================================================
 	
+
+{% endraw %}

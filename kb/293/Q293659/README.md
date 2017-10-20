@@ -6,6 +6,8 @@ permalink: /kb/293/Q293659/
 
 ## Q293659: BUG: SQL Server ODBC Driver Incorrectly Maps Unicode Datatypes
 
+{% raw %}
+
 	Article: Q293659
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.1,2.1 (GA),2.1 SP1,2.1 SP2,2.5,2.5 SP1,2.6,2000.80.194,3.5,3.6,3.7
@@ -158,3 +160,5 @@ permalink: /kb/293/Q293659/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137112/
 
 ## Q137112: Select Drive Button Available with Only One Compressed Drive
 
+{% raw %}
+
 	Article: Q137112
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -73,3 +75,5 @@ permalink: /kb/137/Q137112/
 	
 	=============================================================================
 	
+
+{% endraw %}

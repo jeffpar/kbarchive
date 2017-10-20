@@ -6,6 +6,8 @@ permalink: /kb/073/Q73666/
 
 ## Q73666: WINMEM32 Not Version Dependent
 
+{% raw %}
+
 	Article: Q73666
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -47,3 +49,5 @@ permalink: /kb/073/Q73666/
 	
 	=============================================================================
 	
+
+{% endraw %}

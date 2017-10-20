@@ -6,6 +6,8 @@ permalink: /kb/082/Q82498/
 
 ## Q82498: Windows Setup Fails If No WIN.INI or SYSTEM.INI
 
+{% raw %}
+
 	Article: Q82498
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/082/Q82498/
 	
 	=============================================================================
 	
+
+{% endraw %}

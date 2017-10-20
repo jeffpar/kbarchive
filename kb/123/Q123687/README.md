@@ -6,6 +6,8 @@ permalink: /kb/123/Q123687/
 
 ## Q123687: Enabling CTRL+C and CTRL+BREAK by Using PeekcharQQ
 
+{% raw %}
+
 	Article: Q123687
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -70,3 +72,5 @@ permalink: /kb/123/Q123687/
 	
 	=============================================================================
 	
+
+{% endraw %}

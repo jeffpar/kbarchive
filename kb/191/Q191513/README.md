@@ -6,6 +6,8 @@ permalink: /kb/191/Q191513/
 
 ## Q191513: BUG: T-SQL Debugger Not Invoked Calling Second Stored Procedure
 
+{% raw %}
+
 	Article: Q191513
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.1 SP2,2.5,2.6,6.0
@@ -164,3 +166,5 @@ permalink: /kb/191/Q191513/
 	
 	=============================================================================
 	
+
+{% endraw %}

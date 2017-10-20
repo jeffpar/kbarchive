@@ -6,6 +6,8 @@ permalink: /kb/267/Q267266/
 
 ## Q267266: FS98: Flight Simulator Stops Responding While You Fly
 
+{% raw %}
+
 	Article: Q267266
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -85,3 +87,5 @@ permalink: /kb/267/Q267266/
 	
 	=============================================================================
 	
+
+{% endraw %}

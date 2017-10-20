@@ -6,6 +6,8 @@ permalink: /kb/075/Q75787/
 
 ## Q75787: MS-DOS 5.0 and IBM AT with BIOS dated 1/10/84
 
+{% raw %}
+
 	Article: Q75787
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -63,3 +65,5 @@ permalink: /kb/075/Q75787/
 	
 	=============================================================================
 	
+
+{% endraw %}

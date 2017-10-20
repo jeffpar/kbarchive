@@ -6,6 +6,8 @@ permalink: /kb/169/Q169019/
 
 ## Q169019: XWEB: Dates Displayed in MM/DD/YY Instead of DD/MM/YY
 
+{% raw %}
+
 	Article: Q169019
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -53,3 +55,5 @@ permalink: /kb/169/Q169019/
 	
 	=============================================================================
 	
+
+{% endraw %}

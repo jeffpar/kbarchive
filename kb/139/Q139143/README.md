@@ -6,6 +6,8 @@ permalink: /kb/139/Q139143/
 
 ## Q139143: INFO: Reference List of KB Articles about the Help Compiler
 
+{% raw %}
+
 	Article: Q139143
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -184,3 +186,5 @@ permalink: /kb/139/Q139143/
 	
 	=============================================================================
 	
+
+{% endraw %}

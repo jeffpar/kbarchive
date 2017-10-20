@@ -6,6 +6,8 @@ permalink: /kb/198/Q198510/
 
 ## Q198510: Broadcast Messages Blocked by OLE Threads
 
+{% raw %}
+
 	Article: Q198510
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/198/Q198510/
 	
 	=============================================================================
 	
+
+{% endraw %}

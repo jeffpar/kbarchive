@@ -6,6 +6,8 @@ permalink: /kb/100/Q100381/
 
 ## Q100381: How to Use Keystrokes to Insert Special Characters
 
+{% raw %}
+
 	Article: Q100381
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/100/Q100381/
 	
 	=============================================================================
 	
+
+{% endraw %}

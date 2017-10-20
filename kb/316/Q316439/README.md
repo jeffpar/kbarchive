@@ -6,6 +6,8 @@ permalink: /kb/316/Q316439/
 
 ## Q316439: FIX: XMLToCursor Error Messages with More Than 128 Columns
 
+{% raw %}
+
 	Article: Q316439
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -91,3 +93,5 @@ permalink: /kb/316/Q316439/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184286/
 
 ## Q184286: BUG: Enumerated Type Parameters Break Binary Compatibility
 
+{% raw %}
+
 	Article: Q184286
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -145,3 +147,5 @@ permalink: /kb/184/Q184286/
 	
 	=============================================================================
 	
+
+{% endraw %}

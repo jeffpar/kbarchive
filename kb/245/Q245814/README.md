@@ -6,6 +6,8 @@ permalink: /kb/245/Q245814/
 
 ## Q245814: Interix Software Development Kit Libraries
 
+{% raw %}
+
 	Article: Q245814
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2.1,2.2.2,2.2.3,2.2.4
@@ -67,3 +69,5 @@ permalink: /kb/245/Q245814/
 	
 	=============================================================================
 	
+
+{% endraw %}

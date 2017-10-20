@@ -6,6 +6,8 @@ permalink: /kb/176/Q176319/
 
 ## Q176319: Docfile Standard Marshalling Returns 0x800706f4
 
+{% raw %}
+
 	Article: Q176319
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/176/Q176319/
 	
 	=============================================================================
 	
+
+{% endraw %}

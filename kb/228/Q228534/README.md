@@ -6,6 +6,8 @@ permalink: /kb/228/Q228534/
 
 ## Q228534: XFOR: DBCS Attachment Name Disappears When Sending a Mail by Mea
 
+{% raw %}
+
 	Article: Q228534
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -76,3 +78,5 @@ permalink: /kb/228/Q228534/
 	
 	=============================================================================
 	
+
+{% endraw %}

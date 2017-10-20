@@ -6,6 +6,8 @@ permalink: /kb/190/Q190758/
 
 ## Q190758: BUG: Recalculate Links Does Not Update File Version Number
 
+{% raw %}
+
 	Article: Q190758
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -64,3 +66,5 @@ permalink: /kb/190/Q190758/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150333/
 
 ## Q150333: Will Not Print Projects Without Assigned Tasks
 
+{% raw %}
+
 	Article: Q150333
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -41,3 +43,5 @@ permalink: /kb/150/Q150333/
 	
 	=============================================================================
 	
+
+{% endraw %}

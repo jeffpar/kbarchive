@@ -6,6 +6,8 @@ permalink: /kb/118/Q118498/
 
 ## Q118498: Session Error 2574 in 3270 Applet
 
+{% raw %}
+
 	Article: Q118498
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
@@ -54,3 +56,5 @@ permalink: /kb/118/Q118498/
 	
 	=============================================================================
 	
+
+{% endraw %}

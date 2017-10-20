@@ -6,6 +6,8 @@ permalink: /kb/066/Q66989/
 
 ## Q66989: KbHook.exe Demos Keyboard Hook Function Keyboard Filter
 
+{% raw %}
+
 	Article: Q66989
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -82,3 +84,5 @@ permalink: /kb/066/Q66989/
 	
 	=============================================================================
 	
+
+{% endraw %}

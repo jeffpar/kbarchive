@@ -6,6 +6,8 @@ permalink: /kb/169/Q169220/
 
 ## Q169220: Hellbender Trial Version Is Available
 
+{% raw %}
+
 	Article: Q169220
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -58,3 +60,5 @@ permalink: /kb/169/Q169220/
 	
 	=============================================================================
 	
+
+{% endraw %}

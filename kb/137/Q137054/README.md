@@ -6,6 +6,8 @@ permalink: /kb/137/Q137054/
 
 ## Q137054: PPT7: How to Copy Multiple Slides into a Word Document.
 
+{% raw %}
+
 	Article: Q137054
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -68,3 +70,5 @@ permalink: /kb/137/Q137054/
 	
 	=============================================================================
 	
+
+{% endraw %}

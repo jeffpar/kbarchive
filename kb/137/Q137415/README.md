@@ -6,6 +6,8 @@ permalink: /kb/137/Q137415/
 
 ## Q137415: Baseball 1995: Cursor Changes to Hand When Scrolling Text
 
+{% raw %}
+
 	Article: Q137415
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -44,3 +46,5 @@ permalink: /kb/137/Q137415/
 	
 	=============================================================================
 	
+
+{% endraw %}

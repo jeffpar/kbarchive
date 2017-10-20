@@ -6,6 +6,8 @@ permalink: /kb/302/Q302579/
 
 ## Q302579: SMS: An Installation Displays No Feedback on the Screen
 
+{% raw %}
+
 	Article: Q302579
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -58,3 +60,5 @@ permalink: /kb/302/Q302579/
 	
 	=============================================================================
 	
+
+{% endraw %}

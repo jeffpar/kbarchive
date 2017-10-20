@@ -6,6 +6,8 @@ permalink: /kb/098/Q98842/
 
 ## Q98842: Resize Err Msg Occurs When Running DoubleSpace from Drive A
 
+{% raw %}
+
 	Article: Q98842
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -96,3 +98,5 @@ permalink: /kb/098/Q98842/
 	
 	=============================================================================
 	
+
+{% endraw %}

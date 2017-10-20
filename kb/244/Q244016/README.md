@@ -6,6 +6,8 @@ permalink: /kb/244/Q244016/
 
 ## Q244016: HOWTO: Back Up a Visual SourceSafe Database
 
+{% raw %}
+
 	Article: Q244016
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -59,3 +61,5 @@ permalink: /kb/244/Q244016/
 	
 	=============================================================================
 	
+
+{% endraw %}

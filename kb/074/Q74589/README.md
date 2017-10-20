@@ -6,6 +6,8 @@ permalink: /kb/074/Q74589/
 
 ## Q74589: Hidden System Files and MS-DOS 5 and Later Upgrade
 
+{% raw %}
+
 	Article: Q74589
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -48,3 +50,5 @@ permalink: /kb/074/Q74589/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150421/
 
 ## Q150421: BUG: Cannot Change DBCS Font Size When Printing
 
+{% raw %}
+
 	Article: Q150421
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,95
@@ -97,3 +99,5 @@ permalink: /kb/150/Q150421/
 	
 	=============================================================================
 	
+
+{% endraw %}

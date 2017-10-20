@@ -6,6 +6,8 @@ permalink: /kb/166/Q166834/
 
 ## Q166834: Lost Record Locks from MS-DOS-based Program to NetWare Server
 
+{% raw %}
+
 	Article: Q166834
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/166/Q166834/
 	
 	=============================================================================
 	
+
+{% endraw %}

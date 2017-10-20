@@ -6,6 +6,8 @@ permalink: /kb/100/Q100541/
 
 ## Q100541: Transferring a LAN Manager Server to a High-end Machine
 
+{% raw %}
+
 	Article: Q100541
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/100/Q100541/
 	
 	=============================================================================
 	
+
+{% endraw %}

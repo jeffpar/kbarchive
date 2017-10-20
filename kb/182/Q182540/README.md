@@ -6,6 +6,8 @@ permalink: /kb/182/Q182540/
 
 ## Q182540: WinNT x86 MPS HAL Can Fail To Map System Relative IRQs
 
+{% raw %}
+
 	Article: Q182540
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -86,3 +88,5 @@ permalink: /kb/182/Q182540/
 	
 	=============================================================================
 	
+
+{% endraw %}

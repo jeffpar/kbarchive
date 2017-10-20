@@ -6,6 +6,8 @@ permalink: /kb/085/Q85426/
 
 ## Q85426: SYSINI.WRI: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2
 
+{% raw %}
+
 	Article: Q85426
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -626,3 +628,5 @@ permalink: /kb/085/Q85426/
 	
 	=============================================================================
 	
+
+{% endraw %}

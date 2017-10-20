@@ -6,6 +6,8 @@ permalink: /kb/162/Q162923/
 
 ## Q162923: WinNT Err: User Cannot Be Authenticated on Server
 
+{% raw %}
+
 	Article: Q162923
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51,4.0;Win95
@@ -71,3 +73,5 @@ permalink: /kb/162/Q162923/
 	
 	=============================================================================
 	
+
+{% endraw %}

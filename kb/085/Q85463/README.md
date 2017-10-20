@@ -6,6 +6,8 @@ permalink: /kb/085/Q85463/
 
 ## Q85463: GP Fault with Packaged WAV in Word for Windows
 
+{% raw %}
+
 	Article: Q85463
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/085/Q85463/
 	
 	=============================================================================
 	
+
+{% endraw %}

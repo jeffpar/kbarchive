@@ -6,6 +6,8 @@ permalink: /kb/129/Q129661/
 
 ## Q129661: Fax Cover Page Editor Cannot Undo Multiple Text Entries
 
+{% raw %}
+
 	Article: Q129661
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -46,3 +48,5 @@ permalink: /kb/129/Q129661/
 	
 	=============================================================================
 	
+
+{% endraw %}

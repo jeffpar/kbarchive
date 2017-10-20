@@ -6,6 +6,8 @@ permalink: /kb/171/Q171148/
 
 ## Q171148: Automating Detection of Logon Failures In a Windows NT Domain
 
+{% raw %}
+
 	Article: Q171148
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -96,3 +98,5 @@ permalink: /kb/171/Q171148/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138971/
 
 ## Q138971: BUG: Default Dialog-Based Application Doesn't Work in Win32s
 
+{% raw %}
+
 	Article: Q138971
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -100,3 +102,5 @@ permalink: /kb/138/Q138971/
 	
 	=============================================================================
 	
+
+{% endraw %}

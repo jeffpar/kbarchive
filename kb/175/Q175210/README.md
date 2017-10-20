@@ -6,6 +6,8 @@ permalink: /kb/175/Q175210/
 
 ## Q175210: FP: Search Finds No Documents if Title Length &gt; 254 Characters
 
+{% raw %}
+
 	Article: Q175210
 	Product(s): Word Front Page
 	Version(s): MACINTOSH:1.0; WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/175/Q175210/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/253/Q253716/
 
 ## Q253716: Event ID 8020: DSMN Cannot Synchronize Users on a NetWare Server
 
+{% raw %}
+
 	Article: Q253716
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/253/Q253716/
 	
 	=============================================================================
 	
+
+{% endraw %}

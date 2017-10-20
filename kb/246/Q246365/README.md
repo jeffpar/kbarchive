@@ -6,6 +6,8 @@ permalink: /kb/246/Q246365/
 
 ## Q246365: Cannot View the Exit Status of an Interix Process from Win32
 
+{% raw %}
+
 	Article: Q246365
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2.1,2.2.2,2.2.3,2.2.4
@@ -47,3 +49,5 @@ permalink: /kb/246/Q246365/
 	
 	=============================================================================
 	
+
+{% endraw %}

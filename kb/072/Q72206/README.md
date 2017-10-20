@@ -6,6 +6,8 @@ permalink: /kb/072/Q72206/
 
 ## Q72206: LAN Enhanced DOS Printer Message Not Displayed
 
+{% raw %}
+
 	Article: Q72206
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/072/Q72206/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/232/Q232176/
 
 ## Q232176: Adding Multilingual Support Removes the Euro Fonts
 
+{% raw %}
+
 	Article: Q232176
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -50,3 +52,5 @@ permalink: /kb/232/Q232176/
 	
 	=============================================================================
 	
+
+{% endraw %}

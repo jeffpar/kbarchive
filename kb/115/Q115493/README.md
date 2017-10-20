@@ -6,6 +6,8 @@ permalink: /kb/115/Q115493/
 
 ## Q115493: SMTP: How SMTPGATE Processes Incoming SMTP Messages
 
+{% raw %}
+
 	Article: Q115493
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/115/Q115493/
 	
 	=============================================================================
 	
+
+{% endraw %}

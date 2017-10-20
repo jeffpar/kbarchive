@@ -6,6 +6,8 @@ permalink: /kb/170/Q170732/
 
 ## Q170732: WD97: Macro to Count Number of Document Paragraphs and Lines
 
+{% raw %}
+
 	Article: Q170732
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -96,3 +98,5 @@ permalink: /kb/170/Q170732/
 	
 	=============================================================================
 	
+
+{% endraw %}

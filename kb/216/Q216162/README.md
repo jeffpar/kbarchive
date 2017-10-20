@@ -6,6 +6,8 @@ permalink: /kb/216/Q216162/
 
 ## Q216162: XFOR: Exchange IMS Can Suppress Generation of a Delivery Receipt
 
+{% raw %}
+
 	Article: Q216162
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -107,3 +109,5 @@ permalink: /kb/216/Q216162/
 	
 	=============================================================================
 	
+
+{% endraw %}

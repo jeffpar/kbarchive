@@ -6,6 +6,8 @@ permalink: /kb/158/Q158034/
 
 ## Q158034: GEX: Troubleshooting Game Pad or Joystick Problems
 
+{% raw %}
+
 	Article: Q158034
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -79,3 +81,5 @@ permalink: /kb/158/Q158034/
 	
 	=============================================================================
 	
+
+{% endraw %}

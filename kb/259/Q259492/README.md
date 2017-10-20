@@ -6,6 +6,8 @@ permalink: /kb/259/Q259492/
 
 ## Q259492: HOWTO:Use DBPROP_SERVERDATAONINSERT to Retrieve Identity Value
 
+{% raw %}
+
 	Article: Q259492
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.5,2.6,3.0,6.0,7.0,7.01
@@ -174,3 +176,5 @@ permalink: /kb/259/Q259492/
 	
 	=============================================================================
 	
+
+{% endraw %}

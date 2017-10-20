@@ -6,6 +6,8 @@ permalink: /kb/173/Q173513/
 
 ## Q173513: BUG: Open/Close CRecordset Repeatedly Results in AV
 
+{% raw %}
+
 	Article: Q173513
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/173/Q173513/
 	
 	=============================================================================
 	
+
+{% endraw %}

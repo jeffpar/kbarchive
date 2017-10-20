@@ -6,6 +6,8 @@ permalink: /kb/131/Q131787/
 
 ## Q131787: SLI_OPEN Hang When Inappropriate LUA_INIT_TYPE is Used
 
+{% raw %}
+
 	Article: Q131787
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -92,3 +94,5 @@ permalink: /kb/131/Q131787/
 	
 	=============================================================================
 	
+
+{% endraw %}

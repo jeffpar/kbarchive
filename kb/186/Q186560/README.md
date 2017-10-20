@@ -6,6 +6,8 @@ permalink: /kb/186/Q186560/
 
 ## Q186560: Using DOSKBD to Modify MS-DOS Keyboard Polling Detection
 
+{% raw %}
+
 	Article: Q186560
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -310,3 +312,5 @@ permalink: /kb/186/Q186560/
 	
 	=============================================================================
 	
+
+{% endraw %}

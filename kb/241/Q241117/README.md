@@ -6,6 +6,8 @@ permalink: /kb/241/Q241117/
 
 ## Q241117: XFOR: Exchange Server 5.5 DXA Returns DS_E_BAD_ARGUMENT
 
+{% raw %}
+
 	Article: Q241117
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -68,3 +70,5 @@ permalink: /kb/241/Q241117/
 	
 	=============================================================================
 	
+
+{% endraw %}

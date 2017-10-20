@@ -6,6 +6,8 @@ permalink: /kb/259/Q259163/
 
 ## Q259163: XADM: Cannot Open Attachments If Virus Scanning Is Enabled
 
+{% raw %}
+
 	Article: Q259163
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -80,3 +82,5 @@ permalink: /kb/259/Q259163/
 	
 	=============================================================================
 	
+
+{% endraw %}

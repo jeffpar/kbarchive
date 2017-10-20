@@ -6,6 +6,8 @@ permalink: /kb/282/Q282877/
 
 ## Q282877: Testing the CPI-C Sample Programs
 
+{% raw %}
+
 	Article: Q282877
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -142,3 +144,5 @@ permalink: /kb/282/Q282877/
 	
 	=============================================================================
 	
+
+{% endraw %}

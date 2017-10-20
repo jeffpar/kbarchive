@@ -6,6 +6,8 @@ permalink: /kb/134/Q134753/
 
 ## Q134753: PC Gen: README.TXT: Mail 3.5 Diagnostics Utility
 
+{% raw %}
+
 	Article: Q134753
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -283,3 +285,5 @@ permalink: /kb/134/Q134753/
 	
 	=============================================================================
 	
+
+{% endraw %}

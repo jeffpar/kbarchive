@@ -6,6 +6,8 @@ permalink: /kb/177/Q177262/
 
 ## Q177262: FS98: List of Video Codecs Installed by the Indeo4 Setup Program
 
+{% raw %}
+
 	Article: Q177262
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -51,3 +53,5 @@ permalink: /kb/177/Q177262/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/243/Q243953/
 
 ## Q243953: HOWTO: Limit 32-bit Applications to One Instance Using C++
 
+{% raw %}
+
 	Article: Q243953
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -188,3 +190,5 @@ permalink: /kb/243/Q243953/
 	
 	=============================================================================
 	
+
+{% endraw %}

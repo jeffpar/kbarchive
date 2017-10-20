@@ -6,6 +6,8 @@ permalink: /kb/039/Q39531/
 
 ## Q39531: How ROM BIOS Disk Limitation of 1024 Cylinders Affects MS-DOS
 
+{% raw %}
+
 	Article: Q39531
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:2.x,3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -67,3 +69,5 @@ permalink: /kb/039/Q39531/
 	
 	=============================================================================
 	
+
+{% endraw %}

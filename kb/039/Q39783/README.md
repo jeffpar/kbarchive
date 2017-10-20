@@ -6,6 +6,8 @@ permalink: /kb/039/Q39783/
 
 ## Q39783: Example of Using Formatting with _outtext
 
+{% raw %}
+
 	Article: Q39783
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -52,3 +54,5 @@ permalink: /kb/039/Q39783/
 	   _outtext (buffer);
 	   return (retval);
 	 }
+
+{% endraw %}

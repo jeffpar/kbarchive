@@ -6,6 +6,8 @@ permalink: /kb/130/Q130737/
 
 ## Q130737: Missing Characters Printing From Access 2.0 in Windows NT
 
+{% raw %}
+
 	Article: Q130737
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/130/Q130737/
 	
 	=============================================================================
 	
+
+{% endraw %}

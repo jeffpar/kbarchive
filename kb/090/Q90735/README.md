@@ -6,6 +6,8 @@ permalink: /kb/090/Q90735/
 
 ## Q90735: BUG: PR2404 Error w/ QSORT.MAK Sample for C under MS-DOS
 
+{% raw %}
+
 	Article: Q90735
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:2.0,2.1.49
@@ -63,3 +65,5 @@ permalink: /kb/090/Q90735/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182227/
 
 ## Q182227: DNS Server Does Not Check for Delegations Before Forwarding
 
+{% raw %}
+
 	Article: Q182227
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/182/Q182227/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174793/
 
 ## Q174793: SMS: SETLS Domain Enumeration Using Smsls.ini and Win.ini
 
+{% raw %}
+
 	Article: Q174793
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -96,3 +98,5 @@ permalink: /kb/174/Q174793/
 	
 	=============================================================================
 	
+
+{% endraw %}

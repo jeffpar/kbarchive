@@ -6,6 +6,8 @@ permalink: /kb/139/Q139414/
 
 ## Q139414: Bad IP Address When Using HOSTS or LMHOSTS
 
+{% raw %}
+
 	Article: Q139414
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.11,3.5,3.51,4.0
@@ -62,3 +64,5 @@ permalink: /kb/139/Q139414/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/262/Q262878/
 
 ## Q262878: FIX: Fatal Exception with Large Number of Variables or Objects
 
+{% raw %}
+
 	Article: Q262878
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -127,3 +129,5 @@ permalink: /kb/262/Q262878/
 	
 	=============================================================================
 	
+
+{% endraw %}

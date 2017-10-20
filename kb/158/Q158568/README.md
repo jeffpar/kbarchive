@@ -6,6 +6,8 @@ permalink: /kb/158/Q158568/
 
 ## Q158568: Installing Retired or Third-Party SCSI Drivers During Setup
 
+{% raw %}
+
 	Article: Q158568
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -153,3 +155,5 @@ permalink: /kb/158/Q158568/
 	
 	=============================================================================
 	
+
+{% endraw %}

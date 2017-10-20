@@ -6,6 +6,8 @@ permalink: /kb/186/Q186541/
 
 ## Q186541: Terminal Server Error Messages: 2400 to 2499
 
+{% raw %}
+
 	Article: Q186541
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -432,3 +434,5 @@ permalink: /kb/186/Q186541/
 	
 	=============================================================================
 	
+
+{% endraw %}

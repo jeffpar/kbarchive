@@ -6,6 +6,8 @@ permalink: /kb/140/Q140480/
 
 ## Q140480: PPT7: Run-Time Error 6 Using the Genigraphics Wizard
 
+{% raw %}
+
 	Article: Q140480
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -108,3 +110,5 @@ permalink: /kb/140/Q140480/
 	
 	=============================================================================
 	
+
+{% endraw %}

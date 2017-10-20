@@ -6,6 +6,8 @@ permalink: /kb/084/Q84880/
 
 ## Q84880: Troubleshooting Tips for &quot;Wrong Disc in the CD-ROM&quot; Error
 
+{% raw %}
+
 	Article: Q84880
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -99,3 +101,5 @@ permalink: /kb/084/Q84880/
 	
 	=============================================================================
 	
+
+{% endraw %}

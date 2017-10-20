@@ -6,6 +6,8 @@ permalink: /kb/177/Q177655/
 
 ## Q177655: Negative Values in Performance Monitor Data
 
+{% raw %}
+
 	Article: Q177655
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -123,3 +125,5 @@ permalink: /kb/177/Q177655/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177472/
 
 ## Q177472: QuickTime Not Listed in Add/Remove Programs Under Windows NT 4.0
 
+{% raw %}
+
 	Article: Q177472
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; WINNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/177/Q177472/
 	
 	=============================================================================
 	
+
+{% endraw %}

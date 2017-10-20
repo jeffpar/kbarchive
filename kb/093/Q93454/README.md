@@ -6,6 +6,8 @@ permalink: /kb/093/Q93454/
 
 ## Q93454: SETUP.TXT from Windows for Workgroups Version 3.1 (Part A)
 
+{% raw %}
+
 	Article: Q93454
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -577,3 +579,5 @@ permalink: /kb/093/Q93454/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187674/
 
 ## Q187674: HOWTO: Find Undocumented Constants Used by Windows API Functions
 
+{% raw %}
+
 	Article: Q187674
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -141,3 +143,5 @@ permalink: /kb/187/Q187674/
 	
 	=============================================================================
 	
+
+{% endraw %}

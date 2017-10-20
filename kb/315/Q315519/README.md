@@ -6,6 +6,8 @@ permalink: /kb/315/Q315519/
 
 ## Q315519: HOW TO: Write a Simple Active Accessibility Client by Using VB
 
+{% raw %}
+
 	Article: Q315519
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -271,3 +273,5 @@ permalink: /kb/315/Q315519/
 	
 	=============================================================================
 	
+
+{% endraw %}

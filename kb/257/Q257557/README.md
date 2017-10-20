@@ -6,6 +6,8 @@ permalink: /kb/257/Q257557/
 
 ## Q257557: Microsoft Liquid Motion by Design Comments and Corrections
 
+{% raw %}
+
 	Article: Q257557
 	Product(s): Microsoft Press
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/257/Q257557/
 	
 	=============================================================================
 	
+
+{% endraw %}

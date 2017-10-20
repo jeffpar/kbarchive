@@ -6,6 +6,8 @@ permalink: /kb/163/Q163762/
 
 ## Q163762: XCLN: Run Time Error 5 Occurs When Using EFD Tab Field
 
+{% raw %}
+
 	Article: Q163762
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; Win95:4.0,5.0
@@ -48,3 +50,5 @@ permalink: /kb/163/Q163762/
 	
 	=============================================================================
 	
+
+{% endraw %}

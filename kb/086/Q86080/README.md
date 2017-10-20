@@ -6,6 +6,8 @@ permalink: /kb/086/Q86080/
 
 ## Q86080: Porting Windows Help Source Files from Version 3.0 to 3.1
 
+{% raw %}
+
 	Article: Q86080
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -63,3 +65,5 @@ permalink: /kb/086/Q86080/
 	
 	=============================================================================
 	
+
+{% endraw %}

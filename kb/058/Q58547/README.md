@@ -6,6 +6,8 @@ permalink: /kb/058/Q58547/
 
 ## Q58547: LIM 4.0 Expanded Memory Boards/Drivers for BASIC 7.00
 
+{% raw %}
+
 	Article: Q58547
 	Product(s): See article
 	Version(s): 7.00
@@ -132,3 +134,5 @@ permalink: /kb/058/Q58547/
 	
 	   Pages 25-68 of "MS-DOS Extensions: Programmer's Quick Reference,"
 	   by Ray Duncan (Microsoft Press, 1989).
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168920/
 
 ## Q168920: Disabling Documents Folder on the Start Menu
 
+{% raw %}
+
 	Article: Q168920
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -146,3 +148,5 @@ permalink: /kb/168/Q168920/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/073/Q73681/
 
 ## Q73681: DDE.exe Demonstrates Dynamic-Data Exchange (DDE)
 
+{% raw %}
+
 	Article: Q73681
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -81,3 +83,5 @@ permalink: /kb/073/Q73681/
 	
 	=============================================================================
 	
+
+{% endraw %}

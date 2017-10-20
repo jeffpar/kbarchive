@@ -6,6 +6,8 @@ permalink: /kb/091/Q91023/
 
 ## Q91023: Minidriver Dump() and BlockOut() Callbacks
 
+{% raw %}
+
 	Article: Q91023
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.1
@@ -56,3 +58,5 @@ permalink: /kb/091/Q91023/
 	
 	=============================================================================
 	
+
+{% endraw %}

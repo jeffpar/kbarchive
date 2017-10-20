@@ -6,6 +6,8 @@ permalink: /kb/096/Q96879/
 
 ## Q96879: Cannot Print Color Image from Paintbrush to DeskJet 550C
 
+{% raw %}
+
 	Article: Q96879
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/096/Q96879/
 	
 	=============================================================================
 	
+
+{% endraw %}

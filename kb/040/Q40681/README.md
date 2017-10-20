@@ -6,6 +6,8 @@ permalink: /kb/040/Q40681/
 
 ## Q40681: M.TMP Reset When Window Closed
 
+{% raw %}
+
 	Article: Q40681
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -30,3 +32,5 @@ permalink: /kb/040/Q40681/
 	Microsoft has confirmed this to be a problem in Version 1.00. We are
 	researching this problem and will post new information as it becomes
 	available.
+
+{% endraw %}

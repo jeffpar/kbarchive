@@ -6,6 +6,8 @@ permalink: /kb/182/Q182904/
 
 ## Q182904: XADM: How to Set Up a Moderated Public Folder
 
+{% raw %}
+
 	Article: Q182904
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -81,3 +83,5 @@ permalink: /kb/182/Q182904/
 	
 	=============================================================================
 	
+
+{% endraw %}

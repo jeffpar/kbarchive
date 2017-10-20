@@ -6,6 +6,8 @@ permalink: /kb/122/Q122170/
 
 ## Q122170: FIX: Cannot Set Breakpoint if Project Contains &#92;C++&#92; in Path
 
+{% raw %}
+
 	Article: Q122170
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -80,3 +82,5 @@ permalink: /kb/122/Q122170/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167732/
 
 ## Q167732: Stack Fault Creating Shortcut in Spanish OSR2
 
+{% raw %}
+
 	Article: Q167732
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -68,3 +70,5 @@ permalink: /kb/167/Q167732/
 	
 	=============================================================================
 	
+
+{% endraw %}

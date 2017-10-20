@@ -6,6 +6,8 @@ permalink: /kb/106/Q106154/
 
 ## Q106154: Microsoft Delete Tracker Cannot Undelete Zero-Byte Files
 
+{% raw %}
+
 	Article: Q106154
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -57,3 +59,5 @@ permalink: /kb/106/Q106154/
 	
 	=============================================================================
 	
+
+{% endraw %}

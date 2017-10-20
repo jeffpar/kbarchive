@@ -6,6 +6,8 @@ permalink: /kb/191/Q191767/
 
 ## Q191767: LogicalDisk Partition Missing in Performance Monitor
 
+{% raw %}
+
 	Article: Q191767
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/191/Q191767/
 	
 	=============================================================================
 	
+
+{% endraw %}

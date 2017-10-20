@@ -6,6 +6,8 @@ permalink: /kb/155/Q155137/
 
 ## Q155137: XFOR: Messages Not Deleted from IMC Inbound Queue
 
+{% raw %}
+
 	Article: Q155137
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/155/Q155137/
 	
 	=============================================================================
 	
+
+{% endraw %}

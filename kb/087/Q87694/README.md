@@ -6,6 +6,8 @@ permalink: /kb/087/Q87694/
 
 ## Q87694: PRB: Menu Appears, Then Application Exits to Operating System
 
+{% raw %}
+
 	Article: Q87694
 	Product(s): Microsoft FoxPro
 	Version(s): 2.00 2.5x 2.6x | 2.5x 2.6x 3.00
@@ -101,3 +103,5 @@ permalink: /kb/087/Q87694/
 	
 	=============================================================================
 	
+
+{% endraw %}

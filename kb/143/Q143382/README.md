@@ -6,6 +6,8 @@ permalink: /kb/143/Q143382/
 
 ## Q143382: XCLN: Rule Moving Messages to Public Folder Does Not Work
 
+{% raw %}
+
 	Article: Q143382
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -86,3 +88,5 @@ permalink: /kb/143/Q143382/
 	
 	=============================================================================
 	
+
+{% endraw %}

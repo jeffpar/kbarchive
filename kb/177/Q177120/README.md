@@ -6,6 +6,8 @@ permalink: /kb/177/Q177120/
 
 ## Q177120: Boot Method Option Does Not Exist as Stated in DNS Manager Help
 
+{% raw %}
+
 	Article: Q177120
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -91,3 +93,5 @@ permalink: /kb/177/Q177120/
 	
 	=============================================================================
 	
+
+{% endraw %}

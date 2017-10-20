@@ -6,6 +6,8 @@ permalink: /kb/222/Q222527/
 
 ## Q222527: HOWTO: Launch ActiveSync from a Visual Basic CE 6.0 Application
 
+{% raw %}
+
 	Article: Q222527
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0
@@ -91,3 +93,5 @@ permalink: /kb/222/Q222527/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129797/
 
 ## Q129797: HOWTO: Launch a Win32 Application from Visual Basic
 
+{% raw %}
+
 	Article: Q129797
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -234,3 +236,5 @@ permalink: /kb/129/Q129797/
 	
 	=============================================================================
 	
+
+{% endraw %}

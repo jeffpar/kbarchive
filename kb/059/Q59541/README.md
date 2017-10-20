@@ -6,6 +6,8 @@ permalink: /kb/059/Q59541/
 
 ## Q59541: How to Determine the Operating System Mode and Version
 
+{% raw %}
+
 	Article: Q59541
 	Product(s): See article
 	Version(s): 4.x 5.00 5.10 6.00 | 5.10 6.00
@@ -79,3 +81,5 @@ permalink: /kb/059/Q59541/
 	      printf ("\nOS/2 version %d.%d\n",
 	                ((int)_osmajor)/10, (int)_osminor );
 	}
+
+{% endraw %}

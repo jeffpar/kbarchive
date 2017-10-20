@@ -6,6 +6,8 @@ permalink: /kb/115/Q115281/
 
 ## Q115281: Renaming Files Over Network Causes Out of Memory Error
 
+{% raw %}
+
 	Article: Q115281
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -59,3 +61,5 @@ permalink: /kb/115/Q115281/
 	
 	=============================================================================
 	
+
+{% endraw %}

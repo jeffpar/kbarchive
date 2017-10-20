@@ -6,6 +6,8 @@ permalink: /kb/249/Q249112/
 
 ## Q249112: XFOR: Filter Rule Ignored by Directory Synchronization Process
 
+{% raw %}
+
 	Article: Q249112
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -80,3 +82,5 @@ permalink: /kb/249/Q249112/
 	
 	=============================================================================
 	
+
+{% endraw %}

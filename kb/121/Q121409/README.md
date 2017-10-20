@@ -6,6 +6,8 @@ permalink: /kb/121/Q121409/
 
 ## Q121409: WGAO for MS-DOS 3COM EtherLink III Driver Shows Extra Setting
 
+{% raw %}
+
 	Article: Q121409
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): MS-DOS:3.11
@@ -49,3 +51,5 @@ permalink: /kb/121/Q121409/
 	
 	=============================================================================
 	
+
+{% endraw %}

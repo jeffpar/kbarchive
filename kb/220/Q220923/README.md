@@ -6,6 +6,8 @@ permalink: /kb/220/Q220923/
 
 ## Q220923: XCLN: ODKLang Tool Fails During Package Creation
 
+{% raw %}
+
 	Article: Q220923
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:98
@@ -99,3 +101,5 @@ permalink: /kb/220/Q220923/
 	
 	=============================================================================
 	
+
+{% endraw %}

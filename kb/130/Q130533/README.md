@@ -6,6 +6,8 @@ permalink: /kb/130/Q130533/
 
 ## Q130533: Using Previous Windows Communications Switches in Windows 95
 
+{% raw %}
+
 	Article: Q130533
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -60,3 +62,5 @@ permalink: /kb/130/Q130533/
 	
 	=============================================================================
 	
+
+{% endraw %}

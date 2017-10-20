@@ -6,6 +6,8 @@ permalink: /kb/095/Q95871/
 
 ## Q95871: Display Dims on Leading Edge Laptops with Phoenix BIOS
 
+{% raw %}
+
 	Article: Q95871
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/095/Q95871/
 	
 	=============================================================================
 	
+
+{% endraw %}

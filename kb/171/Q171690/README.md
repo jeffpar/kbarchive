@@ -6,6 +6,8 @@ permalink: /kb/171/Q171690/
 
 ## Q171690: WD97: Text and Images in CorelDRAW Graphic Appear Overlaid
 
+{% raw %}
+
 	Article: Q171690
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -105,3 +107,5 @@ permalink: /kb/171/Q171690/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/065/Q65924/
 
 ## Q65924: How to Get Absolute Address of String Variable in BASIC
 
+{% raw %}
+
 	Article: Q65924
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -159,3 +161,5 @@ permalink: /kb/065/Q65924/
 	the offset to the absolute byte location of the segment, as follows:
 	
 	   &h12340 plus &h4321 equals &h13661
+
+{% endraw %}

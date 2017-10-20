@@ -6,6 +6,8 @@ permalink: /kb/134/Q134305/
 
 ## Q134305: PRB: Invalid DragIcon Property Is Ignored
 
+{% raw %}
+
 	Article: Q134305
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -76,3 +78,5 @@ permalink: /kb/134/Q134305/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/116/Q116235/
 
 ## Q116235: INFO: FoxPro Can Use SQL pass-through commands and ODBC
 
+{% raw %}
+
 	Article: Q116235
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.5b,2.6,3.0,5.0,6.0; :
@@ -124,3 +126,5 @@ permalink: /kb/116/Q116235/
 	
 	=============================================================================
 	
+
+{% endraw %}

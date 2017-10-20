@@ -6,6 +6,8 @@ permalink: /kb/270/Q270999/
 
 ## Q270999: Encarta 2001: Web Links Do Not Respond
 
+{% raw %}
+
 	Article: Q270999
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/270/Q270999/
 	
 	=============================================================================
 	
+
+{% endraw %}

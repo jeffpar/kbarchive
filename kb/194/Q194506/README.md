@@ -6,6 +6,8 @@ permalink: /kb/194/Q194506/
 
 ## Q194506: XADM: Deadlock While Purging Unused Indices
 
+{% raw %}
+
 	Article: Q194506
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -66,3 +68,5 @@ permalink: /kb/194/Q194506/
 	
 	=============================================================================
 	
+
+{% endraw %}

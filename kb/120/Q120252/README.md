@@ -6,6 +6,8 @@ permalink: /kb/120/Q120252/
 
 ## Q120252: PRB: Viewer Title Setup Error in INICM.C Line 185
 
+{% raw %}
+
 	Article: Q120252
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -55,3 +57,5 @@ permalink: /kb/120/Q120252/
 	
 	=============================================================================
 	
+
+{% endraw %}

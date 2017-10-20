@@ -6,6 +6,8 @@ permalink: /kb/295/Q295628/
 
 ## Q295628: Understanding Active Directory Services Comments and Corrections
 
+{% raw %}
+
 	Article: Q295628
 	Product(s): Microsoft Press
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/295/Q295628/
 	
 	=============================================================================
 	
+
+{% endraw %}

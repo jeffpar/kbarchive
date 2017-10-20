@@ -6,6 +6,8 @@ permalink: /kb/087/Q87045/
 
 ## Q87045: SMTP: What the Gateway to SMTP Does
 
+{% raw %}
+
 	Article: Q87045
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -49,3 +51,5 @@ permalink: /kb/087/Q87045/
 	
 	=============================================================================
 	
+
+{% endraw %}

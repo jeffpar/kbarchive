@@ -6,6 +6,8 @@ permalink: /kb/123/Q123428/
 
 ## Q123428: RASPHONE.HLP Err Msg: Help Is Not Available for this Request
 
+{% raw %}
+
 	Article: Q123428
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -54,3 +56,5 @@ permalink: /kb/123/Q123428/
 	
 	=============================================================================
 	
+
+{% endraw %}

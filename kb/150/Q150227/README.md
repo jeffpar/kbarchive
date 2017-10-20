@@ -6,6 +6,8 @@ permalink: /kb/150/Q150227/
 
 ## Q150227: BUG: Control Loses Focus When Another Window is Activated
 
+{% raw %}
+
 	Article: Q150227
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/150/Q150227/
 	
 	=============================================================================
 	
+
+{% endraw %}

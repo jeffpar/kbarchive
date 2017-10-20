@@ -6,6 +6,8 @@ permalink: /kb/156/Q156654/
 
 ## Q156654: How to Disable the Installation of Exchange During Setup
 
+{% raw %}
+
 	Article: Q156654
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -87,3 +89,5 @@ permalink: /kb/156/Q156654/
 	
 	=============================================================================
 	
+
+{% endraw %}

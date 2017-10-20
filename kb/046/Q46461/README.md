@@ -6,6 +6,8 @@ permalink: /kb/046/Q46461/
 
 ## Q46461: Mouse Performance between Serial and Bus Mouse
 
+{% raw %}
+
 	Article: Q46461
 	Product(s): See article
 	Version(s): 1.x 2.x 3.x 4.x 5.x 6.x 1.00 1.01
@@ -28,3 +30,5 @@ permalink: /kb/046/Q46461/
 	The bus mouse is not event driven. When you neither move the mouse nor
 	press a button, the mouse interrupts the CPU at either the default (30
 	Hz) or at the user-defined rate (50, 100, or 200 Hz).
+
+{% endraw %}

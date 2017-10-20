@@ -6,6 +6,8 @@ permalink: /kb/124/Q124898/
 
 ## Q124898: FIX: SQLAllocConnect in Console App. Causes Access Violation
 
+{% raw %}
+
 	Article: Q124898
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -49,3 +51,5 @@ permalink: /kb/124/Q124898/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248726/
 
 ## Q248726: XADM: Installing Exchange 5.5 on Windows 2000 Causes Error Msg.
 
+{% raw %}
+
 	Article: Q248726
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -64,3 +66,5 @@ permalink: /kb/248/Q248726/
 	
 	=============================================================================
 	
+
+{% endraw %}

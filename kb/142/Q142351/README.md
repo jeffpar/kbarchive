@@ -6,6 +6,8 @@ permalink: /kb/142/Q142351/
 
 ## Q142351: Visual FoxPro 3.0b General Information
 
+{% raw %}
+
 	Article: Q142351
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00b
@@ -97,3 +99,5 @@ permalink: /kb/142/Q142351/
 	
 	=============================================================================
 	
+
+{% endraw %}

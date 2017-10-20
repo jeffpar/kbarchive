@@ -6,6 +6,8 @@ permalink: /kb/281/Q281479/
 
 ## Q281479: User Wants To Use MSN Companion To Visit Chat Rooms
 
+{% raw %}
+
 	Article: Q281479
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -54,3 +56,5 @@ permalink: /kb/281/Q281479/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129802/
 
 ## Q129802: PRB: Can't Have Fixed Length Strings &gt;32K in 32-bit Windows
 
+{% raw %}
+
 	Article: Q129802
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -81,3 +83,5 @@ permalink: /kb/129/Q129802/
 	
 	=============================================================================
 	
+
+{% endraw %}

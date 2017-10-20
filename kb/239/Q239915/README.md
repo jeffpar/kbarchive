@@ -6,6 +6,8 @@ permalink: /kb/239/Q239915/
 
 ## Q239915: SMS: &quot;Insert Disk in Drive A:&quot; Message During Hardware Inventory
 
+{% raw %}
+
 	Article: Q239915
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -144,3 +146,5 @@ permalink: /kb/239/Q239915/
 	
 	=============================================================================
 	
+
+{% endraw %}

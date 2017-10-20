@@ -6,6 +6,8 @@ permalink: /kb/086/Q86551/
 
 ## Q86551: MHS: Definition of Gateway
 
+{% raw %}
+
 	Article: Q86551
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/086/Q86551/
 	
 	=============================================================================
 	
+
+{% endraw %}

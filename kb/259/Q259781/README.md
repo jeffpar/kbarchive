@@ -6,6 +6,8 @@ permalink: /kb/259/Q259781/
 
 ## Q259781: SMS: SMS Site Server Upgrade Resets Registry Permissions
 
+{% raw %}
+
 	Article: Q259781
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP2
@@ -109,3 +111,5 @@ permalink: /kb/259/Q259781/
 	
 	=============================================================================
 	
+
+{% endraw %}

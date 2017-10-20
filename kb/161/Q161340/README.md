@@ -6,6 +6,8 @@ permalink: /kb/161/Q161340/
 
 ## Q161340: RAS Error 692 with IBM MWave Modem and Logon Using DUN
 
+{% raw %}
+
 	Article: Q161340
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -60,3 +62,5 @@ permalink: /kb/161/Q161340/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68284/
 
 ## Q68284: Distorted Mouse Pointer with 8515 Monitor and 8514/A
 
+{% raw %}
+
 	Article: Q68284
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -51,3 +53,5 @@ permalink: /kb/068/Q68284/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177675/
 
 ## Q177675: SMS: Inventory Based on String Value at Offset Incorrect
 
+{% raw %}
+
 	Article: Q177675
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -93,3 +95,5 @@ permalink: /kb/177/Q177675/
 	
 	=============================================================================
 	
+
+{% endraw %}

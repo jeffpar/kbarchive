@@ -6,6 +6,8 @@ permalink: /kb/064/Q64181/
 
 ## Q64181: _getlogcoord() Now _getviewcoord() in Microsoft C 6.00
 
+{% raw %}
+
 	Article: Q64181
 	Product(s): See article
 	Version(s): 6.00
@@ -20,3 +22,5 @@ permalink: /kb/064/Q64181/
 	to the original routine supporting window coordinate translation, in
 	addition to the standard logical coordinate translation. This is one
 	reason the name was changed between versions.
+
+{% endraw %}

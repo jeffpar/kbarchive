@@ -6,6 +6,8 @@ permalink: /kb/273/Q273602/
 
 ## Q273602: Golf 2001: Icon Remains on Taskbar When You Connect to the Zone
 
+{% raw %}
+
 	Article: Q273602
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/273/Q273602/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/240/Q240811/
 
 ## Q240811: VBScript Access Violates When Using Nested VBS Classes in ASP
 
+{% raw %}
+
 	Article: Q240811
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -53,3 +55,5 @@ permalink: /kb/240/Q240811/
 	
 	=============================================================================
 	
+
+{% endraw %}

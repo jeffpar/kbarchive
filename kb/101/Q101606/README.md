@@ -6,6 +6,8 @@ permalink: /kb/101/Q101606/
 
 ## Q101606: PC Adm: Data Disk Not Updated After Regenerate
 
+{% raw %}
+
 	Article: Q101606
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a
@@ -58,3 +60,5 @@ permalink: /kb/101/Q101606/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/059/Q59407/
 
 ## Q59407: PRB: Inaccurate Representation of Large Double Values
 
+{% raw %}
+
 	Article: Q59407
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -87,3 +89,5 @@ permalink: /kb/059/Q59407/
 	
 	=============================================================================
 	
+
+{% endraw %}

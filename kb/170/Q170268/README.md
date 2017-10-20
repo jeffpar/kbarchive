@@ -6,6 +6,8 @@ permalink: /kb/170/Q170268/
 
 ## Q170268: WD97: Invalid Page Fault Pasting Object from PowerPoint 97
 
+{% raw %}
+
 	Article: Q170268
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/170/Q170268/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/048/Q48757/
 
 ## Q48757: Cannot See Other Player's Smoke in Multiplayer Mode
 
+{% raw %}
+
 	Article: Q48757
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/048/Q48757/
 	
 	=============================================================================
 	
+
+{% endraw %}

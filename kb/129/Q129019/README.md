@@ -6,6 +6,8 @@ permalink: /kb/129/Q129019/
 
 ## Q129019: 500 Nations: TROUBLE.TXT Contents
 
+{% raw %}
+
 	Article: Q129019
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -212,3 +214,5 @@ permalink: /kb/129/Q129019/
 	
 	=============================================================================
 	
+
+{% endraw %}

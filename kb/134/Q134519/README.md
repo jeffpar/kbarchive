@@ -6,6 +6,8 @@ permalink: /kb/134/Q134519/
 
 ## Q134519: Adjusting Color Intensity in Picture Publisher Has no Effect
 
+{% raw %}
+
 	Article: Q134519
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -46,3 +48,5 @@ permalink: /kb/134/Q134519/
 	
 	=============================================================================
 	
+
+{% endraw %}

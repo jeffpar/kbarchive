@@ -6,6 +6,8 @@ permalink: /kb/268/Q268380/
 
 ## Q268380: XADM: Store Crashes When RTF Is Enabled over the IMAP4 Protocol
 
+{% raw %}
+
 	Article: Q268380
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -128,3 +130,5 @@ permalink: /kb/268/Q268380/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154719/
 
 ## Q154719: XCON: MTA: Line Wrap When Using ISO 6937 Bodypart
 
+{% raw %}
+
 	Article: Q154719
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -101,3 +103,5 @@ permalink: /kb/154/Q154719/
 	
 	=============================================================================
 	
+
+{% endraw %}

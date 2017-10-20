@@ -6,6 +6,8 @@ permalink: /kb/172/Q172438/
 
 ## Q172438: How to View Connection Status Information on MSN
 
+{% raw %}
+
 	Article: Q172438
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -55,3 +57,5 @@ permalink: /kb/172/Q172438/
 	
 	=============================================================================
 	
+
+{% endraw %}

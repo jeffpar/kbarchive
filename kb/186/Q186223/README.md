@@ -6,6 +6,8 @@ permalink: /kb/186/Q186223/
 
 ## Q186223: OL97: Formatting Toolbar on the View Menu is Unavailable
 
+{% raw %}
+
 	Article: Q186223
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0
@@ -73,3 +75,5 @@ permalink: /kb/186/Q186223/
 	
 	=============================================================================
 	
+
+{% endraw %}

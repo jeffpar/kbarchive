@@ -6,6 +6,8 @@ permalink: /kb/122/Q122959/
 
 ## Q122959: Bus-Mastering SCSI Controller Problem with Etherlink 16/16TP
 
+{% raw %}
+
 	Article: Q122959
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -67,3 +69,5 @@ permalink: /kb/122/Q122959/
 	
 	=============================================================================
 	
+
+{% endraw %}

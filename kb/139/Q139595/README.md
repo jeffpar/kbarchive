@@ -6,6 +6,8 @@ permalink: /kb/139/Q139595/
 
 ## Q139595: DDM x'2124' Error When Selecting ODBC Data Source
 
+{% raw %}
+
 	Article: Q139595
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0
@@ -74,3 +76,5 @@ permalink: /kb/139/Q139595/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158576/
 
 ## Q158576: STL Sample for the set::find Function
 
+{% raw %}
+
 	Article: Q158576
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -155,3 +157,5 @@ permalink: /kb/158/Q158576/
 	
 	=============================================================================
 	
+
+{% endraw %}

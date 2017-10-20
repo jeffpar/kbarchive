@@ -6,6 +6,8 @@ permalink: /kb/221/Q221578/
 
 ## Q221578: HOWTO: Play Unix Audio Files (.AU) From Visual Basic
 
+{% raw %}
+
 	Article: Q221578
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -90,3 +92,5 @@ permalink: /kb/221/Q221578/
 	
 	=============================================================================
 	
+
+{% endraw %}

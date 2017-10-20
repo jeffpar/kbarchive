@@ -6,6 +6,8 @@ permalink: /kb/266/Q266062/
 
 ## Q266062: VFP6 Sample: Distributes VFP 6.0 SP3 Run Time w/Active Document
 
+{% raw %}
+
 	Article: Q266062
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -85,3 +87,5 @@ permalink: /kb/266/Q266062/
 	
 	=============================================================================
 	
+
+{% endraw %}

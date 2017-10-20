@@ -6,6 +6,8 @@ permalink: /kb/176/Q176979/
 
 ## Q176979: Event 2000 Errors with STATUS_DELETE_PENDING Status
 
+{% raw %}
+
 	Article: Q176979
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): Win95;WinNT:3.5,3.51,4.0
@@ -66,3 +68,5 @@ permalink: /kb/176/Q176979/
 	
 	=============================================================================
 	
+
+{% endraw %}

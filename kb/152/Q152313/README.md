@@ -6,6 +6,8 @@ permalink: /kb/152/Q152313/
 
 ## Q152313: XADM: Using the AT Backup Command with Microsoft Exchange
 
+{% raw %}
+
 	Article: Q152313
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -142,3 +144,5 @@ permalink: /kb/152/Q152313/
 	
 	=============================================================================
 	
+
+{% endraw %}

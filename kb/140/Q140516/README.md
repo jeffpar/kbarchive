@@ -6,6 +6,8 @@ permalink: /kb/140/Q140516/
 
 ## Q140516: FIX: Storing Array Elements Causes GP Fault
 
+{% raw %}
+
 	Article: Q140516
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -110,3 +112,5 @@ permalink: /kb/140/Q140516/
 	
 	=============================================================================
 	
+
+{% endraw %}

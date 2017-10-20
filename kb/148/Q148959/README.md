@@ -6,6 +6,8 @@ permalink: /kb/148/Q148959/
 
 ## Q148959: WINSLI32.DLL Access Violation with Visual C++ Debugger
 
+{% raw %}
+
 	Article: Q148959
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -63,3 +65,5 @@ permalink: /kb/148/Q148959/
 	
 	=============================================================================
 	
+
+{% endraw %}

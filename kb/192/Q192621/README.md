@@ -6,6 +6,8 @@ permalink: /kb/192/Q192621/
 
 ## Q192621: DOC: CUSTOMWZ Sample Is Actually Custom AppWizard Code
 
+{% raw %}
+
 	Article: Q192621
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -62,3 +64,5 @@ permalink: /kb/192/Q192621/
 	
 	=============================================================================
 	
+
+{% endraw %}

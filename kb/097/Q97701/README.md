@@ -6,6 +6,8 @@ permalink: /kb/097/Q97701/
 
 ## Q97701: VidEdit: Indeo Supports 24-Bit Color Only
 
+{% raw %}
+
 	Article: Q97701
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/097/Q97701/
 	
 	=============================================================================
 	
+
+{% endraw %}

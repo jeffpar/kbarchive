@@ -6,6 +6,8 @@ permalink: /kb/318/Q318704/
 
 ## Q318704: FIX: Fatal Exception Error When You Use CreateObjectEx() with Ex
 
+{% raw %}
+
 	Article: Q318704
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -90,3 +92,5 @@ permalink: /kb/318/Q318704/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/271/Q271847/
 
 ## Q271847: XADM: Backup Stops with Event ID 105 and Error 1808
 
+{% raw %}
+
 	Article: Q271847
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -97,3 +99,5 @@ permalink: /kb/271/Q271847/
 	
 	=============================================================================
 	
+
+{% endraw %}

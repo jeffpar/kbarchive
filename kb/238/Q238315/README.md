@@ -6,6 +6,8 @@ permalink: /kb/238/Q238315/
 
 ## Q238315: SMS: How to Use SMS 1.2 and  2.0 to Deploy Windows NT 4.0 SP6a
 
+{% raw %}
+
 	Article: Q238315
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,2.0
@@ -205,3 +207,5 @@ permalink: /kb/238/Q238315/
 	
 	=============================================================================
 	
+
+{% endraw %}

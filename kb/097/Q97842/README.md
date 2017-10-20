@@ -6,6 +6,8 @@ permalink: /kb/097/Q97842/
 
 ## Q97842: Terminal Emulators to Run 3270-Based Graphics
 
+{% raw %}
+
 	Article: Q97842
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -27,3 +29,5 @@ permalink: /kb/097/Q97842/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195197/
 
 ## Q195197: WD97: &quot;Feed From Envelope&quot; Option Reset Under Windows NT 3.51
 
+{% raw %}
+
 	Article: Q195197
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/195/Q195197/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128146/
 
 ## Q128146: WFW Client Hangs Saving to Windows NT 3.5 Share
 
+{% raw %}
+
 	Article: Q128146
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -52,3 +54,5 @@ permalink: /kb/128/Q128146/
 	
 	=============================================================================
 	
+
+{% endraw %}

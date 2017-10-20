@@ -6,6 +6,8 @@ permalink: /kb/145/Q145933/
 
 ## Q145933: XGEN: X.400 &quot;OR Attribute Name&quot; Length Values
 
+{% raw %}
+
 	Article: Q145933
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -49,3 +51,5 @@ permalink: /kb/145/Q145933/
 	
 	=============================================================================
 	
+
+{% endraw %}

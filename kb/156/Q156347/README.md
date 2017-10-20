@@ -6,6 +6,8 @@ permalink: /kb/156/Q156347/
 
 ## Q156347: INFO: STL Sample for the generate_n Function
 
+{% raw %}
+
 	Article: Q156347
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -187,3 +189,5 @@ permalink: /kb/156/Q156347/
 	
 	=============================================================================
 	
+
+{% endraw %}

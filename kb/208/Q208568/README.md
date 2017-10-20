@@ -6,6 +6,8 @@ permalink: /kb/208/Q208568/
 
 ## Q208568: HOWTO: Access Pocket Outlook Objects from VBCE
 
+{% raw %}
+
 	Article: Q208568
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.01
@@ -709,3 +711,5 @@ permalink: /kb/208/Q208568/
 	
 	=============================================================================
 	
+
+{% endraw %}

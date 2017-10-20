@@ -6,6 +6,8 @@ permalink: /kb/274/Q274097/
 
 ## Q274097: Crimson Skies: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q274097
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/274/Q274097/
 	
 	=============================================================================
 	
+
+{% endraw %}

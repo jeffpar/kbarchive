@@ -6,6 +6,8 @@ permalink: /kb/041/Q41699/
 
 ## Q41699: Filenames Starting with &quot;-&quot; Cause ILINK Errors
 
+{% raw %}
+
 	Article: Q41699
 	Product(s): See article
 	Version(s): 2.00
@@ -22,3 +24,5 @@ permalink: /kb/041/Q41699/
 	filename as the beginning of a switch argument. A filename with a dash
 	in the middle of it avoids the problem because ILINK interprets the
 	entire filename as a single argument.
+
+{% endraw %}

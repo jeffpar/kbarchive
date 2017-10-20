@@ -6,6 +6,8 @@ permalink: /kb/128/Q128918/
 
 ## Q128918: Device Manager Lists Unknown Hardware
 
+{% raw %}
+
 	Article: Q128918
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -47,3 +49,5 @@ permalink: /kb/128/Q128918/
 	
 	=============================================================================
 	
+
+{% endraw %}

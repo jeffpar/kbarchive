@@ -6,6 +6,8 @@ permalink: /kb/170/Q170355/
 
 ## Q170355: New Tools Included with Zero Administration Kit
 
+{% raw %}
+
 	Article: Q170355
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0
@@ -71,3 +73,5 @@ permalink: /kb/170/Q170355/
 	
 	=============================================================================
 	
+
+{% endraw %}

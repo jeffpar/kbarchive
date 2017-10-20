@@ -6,6 +6,8 @@ permalink: /kb/174/Q174026/
 
 ## Q174026: ODE: How to Use the ProgressBar ActiveX Control
 
+{% raw %}
+
 	Article: Q174026
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -232,3 +234,5 @@ permalink: /kb/174/Q174026/
 	
 	=============================================================================
 	
+
+{% endraw %}

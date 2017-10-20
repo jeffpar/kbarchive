@@ -6,6 +6,8 @@ permalink: /kb/253/Q253584/
 
 ## Q253584: How to Prevent an MA from Writing to the Transaction Stack
 
+{% raw %}
+
 	Article: Q253584
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -58,3 +60,5 @@ permalink: /kb/253/Q253584/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66395/
 
 ## Q66395: Windows-Based Application Installation Sample Code
 
+{% raw %}
+
 	Article: Q66395
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -308,3 +310,5 @@ permalink: /kb/066/Q66395/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176498/
 
 ## Q176498: System Event Log Fills with WINS Event IDs 4125 and 4141
 
+{% raw %}
+
 	Article: Q176498
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/176/Q176498/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165533/
 
 ## Q165533: General Sysdiff Troubleshooting Tips
 
+{% raw %}
+
 	Article: Q165533
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -176,3 +178,5 @@ permalink: /kb/165/Q165533/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99733/
 
 ## Q99733: Mac Multimedia: Program Can Run Two Instances Simultaneously
 
+{% raw %}
+
 	Article: Q99733
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a,1993, 1994, 1995, 1996-1997 editions,2.0
@@ -53,3 +55,5 @@ permalink: /kb/099/Q99733/
 	
 	=============================================================================
 	
+
+{% endraw %}

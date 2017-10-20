@@ -6,6 +6,8 @@ permalink: /kb/152/Q152897/
 
 ## Q152897: XCON: POP-4 State Checks (4282, 4283, 4284, 4287)
 
+{% raw %}
+
 	Article: Q152897
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -78,3 +80,5 @@ permalink: /kb/152/Q152897/
 	
 	=============================================================================
 	
+
+{% endraw %}

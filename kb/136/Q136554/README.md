@@ -6,6 +6,8 @@ permalink: /kb/136/Q136554/
 
 ## Q136554: Cannot Use APM with NEC Image P90 and Matrox MGA PCI Adapter
 
+{% raw %}
+
 	Article: Q136554
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/136/Q136554/
 	
 	=============================================================================
 	
+
+{% endraw %}

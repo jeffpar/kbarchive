@@ -6,6 +6,8 @@ permalink: /kb/274/Q274626/
 
 ## Q274626: Combat Flight Simulator 2: IME Toolbar May Not Be Displayed
 
+{% raw %}
+
 	Article: Q274626
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -53,3 +55,5 @@ permalink: /kb/274/Q274626/
 	
 	=============================================================================
 	
+
+{% endraw %}

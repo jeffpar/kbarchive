@@ -6,6 +6,8 @@ permalink: /kb/172/Q172925/
 
 ## Q172925: INFO: Security Issues with Objects in ASP and ISAPI Extensions
 
+{% raw %}
+
 	Article: Q172925
 	Product(s): Internet Information Server
 	Version(s): WINDOWS NT:2.0,3.0
@@ -162,3 +164,5 @@ permalink: /kb/172/Q172925/
 	
 	=============================================================================
 	
+
+{% endraw %}

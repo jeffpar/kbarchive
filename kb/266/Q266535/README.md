@@ -6,6 +6,8 @@ permalink: /kb/266/Q266535/
 
 ## Q266535: Encarta Researcher: Cannot Start Program on Dual Boot Computer
 
+{% raw %}
+
 	Article: Q266535
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/266/Q266535/
 	
 	=============================================================================
 	
+
+{% endraw %}

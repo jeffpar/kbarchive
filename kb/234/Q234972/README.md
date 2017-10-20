@@ -6,6 +6,8 @@ permalink: /kb/234/Q234972/
 
 ## Q234972: PRB: Error 40042119: There Is No PostInfo File On The Server
 
+{% raw %}
+
 	Article: Q234972
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -103,3 +105,5 @@ permalink: /kb/234/Q234972/
 	
 	=============================================================================
 	
+
+{% endraw %}

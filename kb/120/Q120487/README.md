@@ -6,6 +6,8 @@ permalink: /kb/120/Q120487/
 
 ## Q120487: RAS-Connected BDCs/PDC's: Full_Sync Replication Times
 
+{% raw %}
+
 	Article: Q120487
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -106,3 +108,5 @@ permalink: /kb/120/Q120487/
 	
 	=============================================================================
 	
+
+{% endraw %}

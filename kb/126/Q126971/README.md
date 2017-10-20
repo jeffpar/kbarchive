@@ -6,6 +6,8 @@ permalink: /kb/126/Q126971/
 
 ## Q126971: PC Win: Recipients Removed from Mail Message
 
+{% raw %}
+
 	Article: Q126971
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -52,3 +54,5 @@ permalink: /kb/126/Q126971/
 	
 	=============================================================================
 	
+
+{% endraw %}

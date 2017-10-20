@@ -6,6 +6,8 @@ permalink: /kb/167/Q167326/
 
 ## Q167326: FIX: Intrinsic Version of strcmp May Return Incorrect Result
 
+{% raw %}
+
 	Article: Q167326
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -94,3 +96,5 @@ permalink: /kb/167/Q167326/
 	
 	=============================================================================
 	
+
+{% endraw %}

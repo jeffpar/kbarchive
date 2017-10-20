@@ -6,6 +6,8 @@ permalink: /kb/151/Q151472/
 
 ## Q151472: TCP&#92;IP-32B Using DHCP and M-Node Does Not Register All Names
 
+{% raw %}
+
 	Article: Q151472
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:; winnt:3.5,3.51
@@ -61,3 +63,5 @@ permalink: /kb/151/Q151472/
 	
 	=============================================================================
 	
+
+{% endraw %}

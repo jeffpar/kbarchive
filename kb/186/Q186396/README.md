@@ -6,6 +6,8 @@ permalink: /kb/186/Q186396/
 
 ## Q186396: SMS: MIF File Renamer - Mifname.exe
 
+{% raw %}
+
 	Article: Q186396
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -66,3 +68,5 @@ permalink: /kb/186/Q186396/
 	
 	=============================================================================
 	
+
+{% endraw %}

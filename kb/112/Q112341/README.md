@@ -6,6 +6,8 @@ permalink: /kb/112/Q112341/
 
 ## Q112341: FIX: LOC Fails on Double COMPLEX Structure Element
 
+{% raw %}
+
 	Article: Q112341
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -73,3 +75,5 @@ permalink: /kb/112/Q112341/
 	
 	=============================================================================
 	
+
+{% endraw %}

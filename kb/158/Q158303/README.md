@@ -6,6 +6,8 @@ permalink: /kb/158/Q158303/
 
 ## Q158303: PC Win: HMail Client Freezes When Sending to Large Group Alias
 
+{% raw %}
+
 	Article: Q158303
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.5
@@ -50,3 +52,5 @@ permalink: /kb/158/Q158303/
 	
 	=============================================================================
 	
+
+{% endraw %}

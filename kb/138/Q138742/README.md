@@ -6,6 +6,8 @@ permalink: /kb/138/Q138742/
 
 ## Q138742: NetWare Drive Mappings Lost After Resuming from Suspended Mode
 
+{% raw %}
+
 	Article: Q138742
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -56,3 +58,5 @@ permalink: /kb/138/Q138742/
 	
 	=============================================================================
 	
+
+{% endraw %}

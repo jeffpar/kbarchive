@@ -6,6 +6,8 @@ permalink: /kb/259/Q259816/
 
 ## Q259816: Changes in How SMS Logon Server Manager Handles Inactive Sites
 
+{% raw %}
+
 	Article: Q259816
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -95,3 +97,5 @@ permalink: /kb/259/Q259816/
 	
 	=============================================================================
 	
+
+{% endraw %}

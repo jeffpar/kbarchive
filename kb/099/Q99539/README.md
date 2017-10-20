@@ -6,6 +6,8 @@ permalink: /kb/099/Q99539/
 
 ## Q99539: Third-Party Books on FoxBASE+/Mac
 
+{% raw %}
+
 	Article: Q99539
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -49,3 +51,5 @@ permalink: /kb/099/Q99539/
 	
 	=============================================================================
 	
+
+{% endraw %}

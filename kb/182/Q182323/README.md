@@ -6,6 +6,8 @@ permalink: /kb/182/Q182323/
 
 ## Q182323: BUG: ClassView Add... Errors with Read-Only Project Files
 
+{% raw %}
+
 	Article: Q182323
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -114,3 +116,5 @@ permalink: /kb/182/Q182323/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131338/
 
 ## Q131338: FIXLIST.TXT for SMS 1.1 Service Pack 1
 
+{% raw %}
+
 	Article: Q131338
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -87,3 +89,5 @@ permalink: /kb/131/Q131338/
 	
 	=============================================================================
 	
+
+{% endraw %}

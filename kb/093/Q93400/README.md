@@ -6,6 +6,8 @@ permalink: /kb/093/Q93400/
 
 ## Q93400: Microsoft Language Utility Version History
 
+{% raw %}
+
 	Article: Q93400
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,1.11,1.13,1.2,1.3,1.4,1.5,1.6,2.5,3.0,3.1,3.14,3.17,3.18,3.2,3.20.010,3.31,3.4,4.0
@@ -112,3 +114,5 @@ permalink: /kb/093/Q93400/
 	
 	=============================================================================
 	
+
+{% endraw %}

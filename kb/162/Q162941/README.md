@@ -6,6 +6,8 @@ permalink: /kb/162/Q162941/
 
 ## Q162941: Flight Simulator 95: Missing Boeing 737-400 Adventure
 
+{% raw %}
+
 	Article: Q162941
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -52,3 +54,5 @@ permalink: /kb/162/Q162941/
 	
 	=============================================================================
 	
+
+{% endraw %}

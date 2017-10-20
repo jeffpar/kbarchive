@@ -6,6 +6,8 @@ permalink: /kb/233/Q233196/
 
 ## Q233196: RRAS VPN Demand Dial Router Connection May Be Delayed
 
+{% raw %}
+
 	Article: Q233196
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/233/Q233196/
 	
 	=============================================================================
 	
+
+{% endraw %}

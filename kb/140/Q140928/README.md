@@ -6,6 +6,8 @@ permalink: /kb/140/Q140928/
 
 ## Q140928: WINST Files Corrupted, Contain Previously Canceled Job Requests
 
+{% raw %}
+
 	Article: Q140928
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -45,3 +47,5 @@ permalink: /kb/140/Q140928/
 	
 	=============================================================================
 	
+
+{% endraw %}

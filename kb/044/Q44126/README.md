@@ -6,6 +6,8 @@ permalink: /kb/044/Q44126/
 
 ## Q44126: Finding the COM1: Serial Port on a PC/XT/AT Machine
 
+{% raw %}
+
 	Article: Q44126
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -30,3 +32,5 @@ permalink: /kb/044/Q44126/
 	install, but the mouse might not function properly.
 	
 	COM3: and COM4: is not supported by the mouse driver.
+
+{% endraw %}

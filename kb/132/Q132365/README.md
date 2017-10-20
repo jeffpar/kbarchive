@@ -6,6 +6,8 @@ permalink: /kb/132/Q132365/
 
 ## Q132365: PRB: Phantom Grid Column Displayed After Moving to Last Column
 
+{% raw %}
+
 	Article: Q132365
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -81,3 +83,5 @@ permalink: /kb/132/Q132365/
 	
 	=============================================================================
 	
+
+{% endraw %}

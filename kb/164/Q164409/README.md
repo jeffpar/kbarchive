@@ -6,6 +6,8 @@ permalink: /kb/164/Q164409/
 
 ## Q164409: Stop 0x0000000A in Tcpip.sys Caused by Invalid Fragment Bit
 
+{% raw %}
+
 	Article: Q164409
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -78,3 +80,5 @@ permalink: /kb/164/Q164409/
 	
 	=============================================================================
 	
+
+{% endraw %}

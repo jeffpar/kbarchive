@@ -6,6 +6,8 @@ permalink: /kb/148/Q148284/
 
 ## Q148284: XCON: When and How to Use the Mtacheck Utility
 
+{% raw %}
+
 	Article: Q148284
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/148/Q148284/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/223/Q223101/
 
 ## Q223101: FIX: WriteProperties Event Executes at Wrong Time
 
+{% raw %}
+
 	Article: Q223101
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -130,3 +132,5 @@ permalink: /kb/223/Q223101/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138912/
 
 ## Q138912: Cannot Run Windows 95 Setup on Invisible Net Network
 
+{% raw %}
+
 	Article: Q138912
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/138/Q138912/
 	
 	=============================================================================
 	
+
+{% endraw %}

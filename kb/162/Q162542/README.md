@@ -6,6 +6,8 @@ permalink: /kb/162/Q162542/
 
 ## Q162542: New Ping Tool Prevents Hanging Other TCP/IP Stacks
 
+{% raw %}
+
 	Article: Q162542
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -80,3 +82,5 @@ permalink: /kb/162/Q162542/
 	
 	=============================================================================
 	
+
+{% endraw %}

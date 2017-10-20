@@ -6,6 +6,8 @@ permalink: /kb/132/Q132522/
 
 ## Q132522: Quick Directory Replication Troubleshooting Tip
 
+{% raw %}
+
 	Article: Q132522
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/132/Q132522/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/108/Q108469/
 
 ## Q108469: VB 3.0 DATACONS.TXT: Const Constant Values for Data Access
 
+{% raw %}
+
 	Article: Q108469
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -146,3 +148,5 @@ permalink: /kb/108/Q108469/
 	
 	=============================================================================
 	
+
+{% endraw %}

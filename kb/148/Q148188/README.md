@@ -6,6 +6,8 @@ permalink: /kb/148/Q148188/
 
 ## Q148188: Internet Information Server Security .CMD /.BAT Patch
 
+{% raw %}
+
 	Article: Q148188
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -151,3 +153,5 @@ permalink: /kb/148/Q148188/
 	
 	=============================================================================
 	
+
+{% endraw %}

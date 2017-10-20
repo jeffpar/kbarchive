@@ -6,6 +6,8 @@ permalink: /kb/161/Q161048/
 
 ## Q161048: SNA Server Cannot Find the Share COMCFG or file COM.CFG
 
+{% raw %}
+
 	Article: Q161048
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -56,3 +58,5 @@ permalink: /kb/161/Q161048/
 	
 	=============================================================================
 	
+
+{% endraw %}

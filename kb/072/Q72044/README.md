@@ -6,6 +6,8 @@ permalink: /kb/072/Q72044/
 
 ## Q72044: Deleting Files with Stacker Installed
 
+{% raw %}
+
 	Article: Q72044
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -64,3 +66,5 @@ permalink: /kb/072/Q72044/
 	
 	=============================================================================
 	
+
+{% endraw %}

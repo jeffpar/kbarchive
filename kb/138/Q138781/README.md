@@ -6,6 +6,8 @@ permalink: /kb/138/Q138781/
 
 ## Q138781: How to Call a Windows Help Search Macro by Using Code
 
+{% raw %}
+
 	Article: Q138781
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -88,3 +90,5 @@ permalink: /kb/138/Q138781/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/026/Q26088/
 
 ## Q26088: No Cursor Displayed in Graphics SCREENs 1, 2, 3, 7 through 13
 
+{% raw %}
+
 	Article: Q26088
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -77,3 +79,5 @@ permalink: /kb/026/Q26088/
 	  END IF
 	END IF
 	WEND
+
+{% endraw %}

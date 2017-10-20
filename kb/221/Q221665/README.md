@@ -6,6 +6,8 @@ permalink: /kb/221/Q221665/
 
 ## Q221665: FIX:C0000005 Fatal Error w/Invalid Form Included in File Syntax
 
+{% raw %}
+
 	Article: Q221665
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -95,3 +97,5 @@ permalink: /kb/221/Q221665/
 	
 	=============================================================================
 	
+
+{% endraw %}

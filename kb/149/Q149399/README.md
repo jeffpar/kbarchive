@@ -6,6 +6,8 @@ permalink: /kb/149/Q149399/
 
 ## Q149399: Multiple IP Addresses on a Single NIC
 
+{% raw %}
+
 	Article: Q149399
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -97,3 +99,5 @@ permalink: /kb/149/Q149399/
 	
 	=============================================================================
 	
+
+{% endraw %}

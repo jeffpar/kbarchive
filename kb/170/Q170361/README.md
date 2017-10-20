@@ -6,6 +6,8 @@ permalink: /kb/170/Q170361/
 
 ## Q170361: XADM: Troubleshooting a Rapidly Growing Information Store
 
+{% raw %}
+
 	Article: Q170361
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -129,3 +131,5 @@ permalink: /kb/170/Q170361/
 	
 	=============================================================================
 	
+
+{% endraw %}

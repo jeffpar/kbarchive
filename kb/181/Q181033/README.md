@@ -6,6 +6,8 @@ permalink: /kb/181/Q181033/
 
 ## Q181033: BUG: Access Keys for UserControl Do Not Work in MFC Dialog
 
+{% raw %}
+
 	Article: Q181033
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -90,3 +92,5 @@ permalink: /kb/181/Q181033/
 	
 	=============================================================================
 	
+
+{% endraw %}

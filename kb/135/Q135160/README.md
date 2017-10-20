@@ -6,6 +6,8 @@ permalink: /kb/135/Q135160/
 
 ## Q135160: Desktop Pythonizer Does Not Change Wallpaper
 
+{% raw %}
+
 	Article: Q135160
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/135/Q135160/
 	
 	=============================================================================
 	
+
+{% endraw %}

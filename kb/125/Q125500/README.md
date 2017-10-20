@@ -6,6 +6,8 @@ permalink: /kb/125/Q125500/
 
 ## Q125500: Program Item Changes for Programs in Directory with Spaces
 
+{% raw %}
+
 	Article: Q125500
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/125/Q125500/
 	
 	=============================================================================
 	
+
+{% endraw %}

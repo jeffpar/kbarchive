@@ -6,6 +6,8 @@ permalink: /kb/176/Q176020/
 
 ## Q176020: SNA Server Starts Slowly When Configured with 15000 3270 LUs
 
+{% raw %}
+
 	Article: Q176020
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -57,3 +59,5 @@ permalink: /kb/176/Q176020/
 	
 	=============================================================================
 	
+
+{% endraw %}

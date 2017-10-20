@@ -6,6 +6,8 @@ permalink: /kb/147/Q147146/
 
 ## Q147146: XCLN: Win: Encrypted Messages Do Not Display Attachment Icon
 
+{% raw %}
+
 	Article: Q147146
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -48,3 +50,5 @@ permalink: /kb/147/Q147146/
 	
 	=============================================================================
 	
+
+{% endraw %}

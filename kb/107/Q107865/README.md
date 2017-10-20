@@ -6,6 +6,8 @@ permalink: /kb/107/Q107865/
 
 ## Q107865: Preventing Windows NT Clients from Installing SNA Admin
 
+{% raw %}
+
 	Article: Q107865
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0
@@ -67,3 +69,5 @@ permalink: /kb/107/Q107865/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187921/
 
 ## Q187921: XADM: Body Part Not Mapped in Multipart/Alternative Message
 
+{% raw %}
+
 	Article: Q187921
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -55,3 +57,5 @@ permalink: /kb/187/Q187921/
 	
 	=============================================================================
 	
+
+{% endraw %}

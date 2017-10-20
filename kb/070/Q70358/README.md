@@ -6,6 +6,8 @@ permalink: /kb/070/Q70358/
 
 ## Q70358: BUG: Num of Help Topic Lines May Cause Trash or GP Fault in QH
 
+{% raw %}
+
 	Article: Q70358
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.7,1.83; OS/2:1.6,1.7,1.83
@@ -85,3 +87,5 @@ permalink: /kb/070/Q70358/
 	
 	=============================================================================
 	
+
+{% endraw %}

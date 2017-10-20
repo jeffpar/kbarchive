@@ -6,6 +6,8 @@ permalink: /kb/109/Q109880/
 
 ## Q109880: FIX: Incorrect &#36;DEBUG Reference to Include File
 
+{% raw %}
+
 	Article: Q109880
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -84,3 +86,5 @@ permalink: /kb/109/Q109880/
 	
 	=============================================================================
 	
+
+{% endraw %}

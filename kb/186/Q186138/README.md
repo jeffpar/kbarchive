@@ -6,6 +6,8 @@ permalink: /kb/186/Q186138/
 
 ## Q186138: HOWTO: Wrap Remote Views into One SQL Transaction
 
+{% raw %}
+
 	Article: Q186138
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -98,3 +100,5 @@ permalink: /kb/186/Q186138/
 	
 	=============================================================================
 	
+
+{% endraw %}

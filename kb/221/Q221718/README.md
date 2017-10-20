@@ -6,6 +6,8 @@ permalink: /kb/221/Q221718/
 
 ## Q221718: FIX:C0000005 Fatal Error Saving FormSet After Add Cancel in DE
 
+{% raw %}
+
 	Article: Q221718
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -77,3 +79,5 @@ permalink: /kb/221/Q221718/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129568/
 
 ## Q129568: PC WSPlus: Schedule+ Libraries Won't Work on 32 Bit Schedule+
 
+{% raw %}
+
 	Article: Q129568
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -56,3 +58,5 @@ permalink: /kb/129/Q129568/
 	
 	=============================================================================
 	
+
+{% endraw %}

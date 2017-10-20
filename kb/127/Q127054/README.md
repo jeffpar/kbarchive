@@ -6,6 +6,8 @@ permalink: /kb/127/Q127054/
 
 ## Q127054: Loopback Functionality Does Not Work with Miniport Drivers
 
+{% raw %}
+
 	Article: Q127054
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/127/Q127054/
 	
 	=============================================================================
 	
+
+{% endraw %}

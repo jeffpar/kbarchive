@@ -6,6 +6,8 @@ permalink: /kb/158/Q158636/
 
 ## Q158636: STOP 0x1E in Win32k.sys Upgrading from WinNT 3.51 to WinNT 4.0
 
+{% raw %}
+
 	Article: Q158636
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -82,3 +84,5 @@ permalink: /kb/158/Q158636/
 	
 	=============================================================================
 	
+
+{% endraw %}

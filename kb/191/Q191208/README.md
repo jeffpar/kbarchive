@@ -6,6 +6,8 @@ permalink: /kb/191/Q191208/
 
 ## Q191208: DOCERR: Manage Documents Security Permission &amp; Printer Actions
 
+{% raw %}
+
 	Article: Q191208
 	Product(s): Microsoft Windows NT
 	Version(s): Windows:4.0,4.0a;WinNT:4.0
@@ -50,3 +52,5 @@ permalink: /kb/191/Q191208/
 	
 	=============================================================================
 	
+
+{% endraw %}

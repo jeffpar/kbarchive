@@ -6,6 +6,8 @@ permalink: /kb/313/Q313145/
 
 ## Q313145: HIS 2000: COMTI Enhanced to Allow DNS Names for TCP/IP RE
 
+{% raw %}
+
 	Article: Q313145
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP2,4.0 SP3,4.0 SP4
@@ -102,3 +104,5 @@ permalink: /kb/313/Q313145/
 	
 	=============================================================================
 	
+
+{% endraw %}

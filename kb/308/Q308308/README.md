@@ -6,6 +6,8 @@ permalink: /kb/308/Q308308/
 
 ## Q308308: Designing Solutions with COM+ Technologies Comments and Correcti
 
+{% raw %}
+
 	Article: Q308308
 	Product(s): Microsoft Press
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/308/Q308308/
 	
 	=============================================================================
 	
+
+{% endraw %}

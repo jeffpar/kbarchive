@@ -6,6 +6,8 @@ permalink: /kb/153/Q153880/
 
 ## Q153880: INFO: Visigenic Oracle Driver and Visual C++ Enterprise Edition
 
+{% raw %}
+
 	Article: Q153880
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -46,3 +48,5 @@ permalink: /kb/153/Q153880/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/258/Q258721/
 
 ## Q258721: HTTP Compression Will Not Work with URLs that Include a &quot;/&quot;
 
+{% raw %}
+
 	Article: Q258721
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -70,3 +72,5 @@ permalink: /kb/258/Q258721/
 	
 	=============================================================================
 	
+
+{% endraw %}

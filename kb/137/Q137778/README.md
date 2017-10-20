@@ -6,6 +6,8 @@ permalink: /kb/137/Q137778/
 
 ## Q137778: Setup Fails or Data Corruption Occurs w/ Conner CFP1060S Drive
 
+{% raw %}
+
 	Article: Q137778
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51 4.00
@@ -68,3 +70,5 @@ permalink: /kb/137/Q137778/
 	
 	=============================================================================
 	
+
+{% endraw %}

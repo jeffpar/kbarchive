@@ -6,6 +6,8 @@ permalink: /kb/166/Q166499/
 
 ## Q166499: XFOR: NDR from cc:Mail w/ &quot;Header Buffer Full&quot; Message
 
+{% raw %}
+
 	Article: Q166499
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -64,3 +66,5 @@ permalink: /kb/166/Q166499/
 	
 	=============================================================================
 	
+
+{% endraw %}

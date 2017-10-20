@@ -6,6 +6,8 @@ permalink: /kb/083/Q83956/
 
 ## Q83956: Write Does Not Double-Space Fonts That Are 22 Points or Larger
 
+{% raw %}
+
 	Article: Q83956
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -41,3 +43,5 @@ permalink: /kb/083/Q83956/
 	
 	=============================================================================
 	
+
+{% endraw %}

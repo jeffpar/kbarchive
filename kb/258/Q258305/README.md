@@ -6,6 +6,8 @@ permalink: /kb/258/Q258305/
 
 ## Q258305: Print Server Scalability Limit Due to Synchronization Contention
 
+{% raw %}
+
 	Article: Q258305
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/258/Q258305/
 	
 	=============================================================================
 	
+
+{% endraw %}

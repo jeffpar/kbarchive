@@ -6,6 +6,8 @@ permalink: /kb/248/Q248421/
 
 ## Q248421: Fighter Ace II: Textures Are Translucent and Appear Blue
 
+{% raw %}
+
 	Article: Q248421
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/248/Q248421/
 	
 	=============================================================================
 	
+
+{% endraw %}

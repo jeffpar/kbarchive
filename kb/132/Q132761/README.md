@@ -6,6 +6,8 @@ permalink: /kb/132/Q132761/
 
 ## Q132761: Text of Error Message for Deleting a File That Is in Use
 
+{% raw %}
+
 	Article: Q132761
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/132/Q132761/
 	
 	=============================================================================
 	
+
+{% endraw %}

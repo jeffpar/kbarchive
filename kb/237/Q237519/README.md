@@ -6,6 +6,8 @@ permalink: /kb/237/Q237519/
 
 ## Q237519: Encarta 2000: Prompted to Insert CD-ROM When Using CD Changer
 
+{% raw %}
+
 	Article: Q237519
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/237/Q237519/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/314/Q314932/
 
 ## Q314932: HOW TO: Create an FTP Folder with Read Access but Not List Acces
 
+{% raw %}
+
 	Article: Q314932
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -95,3 +97,5 @@ permalink: /kb/314/Q314932/
 	
 	=============================================================================
 	
+
+{% endraw %}

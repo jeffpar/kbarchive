@@ -6,6 +6,8 @@ permalink: /kb/231/Q231883/
 
 ## Q231883: SMS: Provider Is Unable to Connect to SQL Server
 
+{% raw %}
+
 	Article: Q231883
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -119,3 +121,5 @@ permalink: /kb/231/Q231883/
 	
 	=============================================================================
 	
+
+{% endraw %}

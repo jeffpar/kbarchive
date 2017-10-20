@@ -6,6 +6,8 @@ permalink: /kb/154/Q154749/
 
 ## Q154749: Get_LUA_Return_Code Not Defined in WINSLI32.DLL File
 
+{% raw %}
+
 	Article: Q154749
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -56,3 +58,5 @@ permalink: /kb/154/Q154749/
 	
 	=============================================================================
 	
+
+{% endraw %}

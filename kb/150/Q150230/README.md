@@ -6,6 +6,8 @@ permalink: /kb/150/Q150230/
 
 ## Q150230: FIX: &quot;Function call on Left-hand side of assignment...&quot; Error
 
+{% raw %}
+
 	Article: Q150230
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -81,3 +83,5 @@ permalink: /kb/150/Q150230/
 	
 	=============================================================================
 	
+
+{% endraw %}

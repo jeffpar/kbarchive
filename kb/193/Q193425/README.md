@@ -6,6 +6,8 @@ permalink: /kb/193/Q193425/
 
 ## Q193425: Comprehensive Map Style Is Displayed When You Exit Game
 
+{% raw %}
+
 	Article: Q193425
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -52,3 +54,5 @@ permalink: /kb/193/Q193425/
 	
 	=============================================================================
 	
+
+{% endraw %}

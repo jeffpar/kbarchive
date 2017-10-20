@@ -6,6 +6,8 @@ permalink: /kb/267/Q267633/
 
 ## Q267633: &quot;Modification Error&quot; Message Displayed When Creating MAs
 
+{% raw %}
+
 	Article: Q267633
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -84,3 +86,5 @@ permalink: /kb/267/Q267633/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145942/
 
 ## Q145942: Two Scroll Bars Appear in Internet Service Manager
 
+{% raw %}
+
 	Article: Q145942
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -49,3 +51,5 @@ permalink: /kb/145/Q145942/
 	
 	=============================================================================
 	
+
+{% endraw %}

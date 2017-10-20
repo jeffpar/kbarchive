@@ -6,6 +6,8 @@ permalink: /kb/257/Q257707/
 
 ## Q257707: FIX: Recordset Not Updated After Invoking the Move Method
 
+{% raw %}
+
 	Article: Q257707
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -142,3 +144,5 @@ permalink: /kb/257/Q257707/
 	
 	=============================================================================
 	
+
+{% endraw %}

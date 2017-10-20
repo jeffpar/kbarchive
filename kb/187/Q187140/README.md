@@ -6,6 +6,8 @@ permalink: /kb/187/Q187140/
 
 ## Q187140: Client Num Lock Key Is Not Turned On by Keybd_event Function
 
+{% raw %}
+
 	Article: Q187140
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -49,3 +51,5 @@ permalink: /kb/187/Q187140/
 	
 	=============================================================================
 	
+
+{% endraw %}

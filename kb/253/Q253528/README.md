@@ -6,6 +6,8 @@ permalink: /kb/253/Q253528/
 
 ## Q253528: Using the &#36;Search() Function in a Management Agent of MMS
 
+{% raw %}
+
 	Article: Q253528
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -68,3 +70,5 @@ permalink: /kb/253/Q253528/
 	
 	=============================================================================
 	
+
+{% endraw %}

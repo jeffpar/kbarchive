@@ -6,6 +6,8 @@ permalink: /kb/026/Q26710/
 
 ## Q26710: BC.EXE &quot;Internal Error&quot; Long-Integer Arrays; OK /D or QB.EXE
 
+{% raw %}
+
 	Article: Q26710
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -49,3 +51,5 @@ permalink: /kb/026/Q26710/
 	     BlobPrX&(BBno%) = BlobPrX&(BBno%) + ABS(TransMap%(PrNo%) -
 	          BlobUp%(BBno%)) + ABS(TransMap%(PrNo% + 1) - BlobDn%(BBno%))
 	END SUB
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/063/Q63146/
 
 ## Q63146: NMAKE Always Evaluates Expressions in Square Brackets &quot;&#91;&#93;&quot;
 
+{% raw %}
+
 	Article: Q63146
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.1,1.11,1.12,1.13,1.2,1.3,1.4; NT:1.4,1.5; OS/2:1.01,1.11,1.12,1.13,1.21
@@ -57,3 +59,5 @@ permalink: /kb/063/Q63146/
 	
 	=============================================================================
 	
+
+{% endraw %}

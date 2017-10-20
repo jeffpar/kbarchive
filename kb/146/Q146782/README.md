@@ -6,6 +6,8 @@ permalink: /kb/146/Q146782/
 
 ## Q146782: XFOR: Blank Space in Subject Line Not Retained Over IMC
 
+{% raw %}
+
 	Article: Q146782
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -45,3 +47,5 @@ permalink: /kb/146/Q146782/
 	
 	=============================================================================
 	
+
+{% endraw %}

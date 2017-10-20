@@ -6,6 +6,8 @@ permalink: /kb/192/Q192732/
 
 ## Q192732: PC-cillin on Win95 Causes Srv Event 2000
 
+{% raw %}
+
 	Article: Q192732
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -47,3 +49,5 @@ permalink: /kb/192/Q192732/
 	
 	=============================================================================
 	
+
+{% endraw %}

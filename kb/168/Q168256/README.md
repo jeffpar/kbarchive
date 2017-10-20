@@ -6,6 +6,8 @@ permalink: /kb/168/Q168256/
 
 ## Q168256: HOWTO: Programmatically Launch Dial-Up Networking Connection
 
+{% raw %}
+
 	Article: Q168256
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -97,3 +99,5 @@ permalink: /kb/168/Q168256/
 	
 	=============================================================================
 	
+
+{% endraw %}

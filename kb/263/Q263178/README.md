@@ -6,6 +6,8 @@ permalink: /kb/263/Q263178/
 
 ## Q263178: Err Msg: CAPI: The Install Failed. Rsabase.dll Doesn't Match
 
+{% raw %}
+
 	Article: Q263178
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/263/Q263178/
 	
 	=============================================================================
 	
+
+{% endraw %}

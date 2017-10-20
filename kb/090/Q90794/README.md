@@ -6,6 +6,8 @@ permalink: /kb/090/Q90794/
 
 ## Q90794: SMARTDRV.EXE Hangs After CTRL+ALT+DEL
 
+{% raw %}
+
 	Article: Q90794
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/090/Q90794/
 	
 	=============================================================================
 	
+
+{% endraw %}

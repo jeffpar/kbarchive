@@ -6,6 +6,8 @@ permalink: /kb/151/Q151961/
 
 ## Q151961: Err Msg: Errors Occurred During this Operation...
 
+{% raw %}
+
 	Article: Q151961
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -69,3 +71,5 @@ permalink: /kb/151/Q151961/
 	
 	=============================================================================
 	
+
+{% endraw %}

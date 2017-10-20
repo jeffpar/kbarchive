@@ -6,6 +6,8 @@ permalink: /kb/125/Q125732/
 
 ## Q125732: Cursor Created by User or ODBC Has EXCLUSIVE Status
 
+{% raw %}
+
 	Article: Q125732
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.6a; WINDOWS:2.6a,3.0
@@ -72,3 +74,5 @@ permalink: /kb/125/Q125732/
 	
 	=============================================================================
 	
+
+{% endraw %}

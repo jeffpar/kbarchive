@@ -6,6 +6,8 @@ permalink: /kb/186/Q186794/
 
 ## Q186794: Remote Admin with MMC Causes Error: Unable to Enumerate Files
 
+{% raw %}
+
 	Article: Q186794
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -52,3 +54,5 @@ permalink: /kb/186/Q186794/
 	
 	=============================================================================
 	
+
+{% endraw %}

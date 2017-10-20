@@ -6,6 +6,8 @@ permalink: /kb/173/Q173692/
 
 ## Q173692: XADM: Event 1016 When You Open Mailbox or Schedule
 
+{% raw %}
+
 	Article: Q173692
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/173/Q173692/
 	
 	=============================================================================
 	
+
+{% endraw %}

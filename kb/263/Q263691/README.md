@@ -6,6 +6,8 @@ permalink: /kb/263/Q263691/
 
 ## Q263691: Environment Variables in TrustedDriverPath Are Not Resolved
 
+{% raw %}
+
 	Article: Q263691
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP5,4.0 SP6
@@ -88,3 +90,5 @@ permalink: /kb/263/Q263691/
 	
 	=============================================================================
 	
+
+{% endraw %}

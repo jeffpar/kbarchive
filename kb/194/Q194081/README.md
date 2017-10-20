@@ -6,6 +6,8 @@ permalink: /kb/194/Q194081/
 
 ## Q194081: Unable to Cancel TEST_RTS_AND_POST if Verb Issued Synchronously
 
+{% raw %}
+
 	Article: Q194081
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -75,3 +77,5 @@ permalink: /kb/194/Q194081/
 	
 	=============================================================================
 	
+
+{% endraw %}

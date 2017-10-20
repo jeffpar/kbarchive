@@ -6,6 +6,8 @@ permalink: /kb/157/Q157222/
 
 ## Q157222: STL Sample for the lower_bound Function
 
+{% raw %}
+
 	Article: Q157222
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -152,3 +154,5 @@ permalink: /kb/157/Q157222/
 	
 	=============================================================================
 	
+
+{% endraw %}

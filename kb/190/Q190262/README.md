@@ -6,6 +6,8 @@ permalink: /kb/190/Q190262/
 
 ## Q190262: PRB: ISMOUSE Function Always Returns .T. in Windows 95 &amp; 98
 
+{% raw %}
+
 	Article: Q190262
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -80,3 +82,5 @@ permalink: /kb/190/Q190262/
 	
 	=============================================================================
 	
+
+{% endraw %}

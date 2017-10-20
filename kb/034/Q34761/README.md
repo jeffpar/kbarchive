@@ -6,6 +6,8 @@ permalink: /kb/034/Q34761/
 
 ## Q34761: Regarding the Use of Undocumented MS-DOS Features
 
+{% raw %}
+
 	Article: Q34761
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:2.x,3.x,4.x,5.0,5.0a,6.0,6.2,6.21,6.22
@@ -41,3 +43,5 @@ permalink: /kb/034/Q34761/
 	
 	=============================================================================
 	
+
+{% endraw %}

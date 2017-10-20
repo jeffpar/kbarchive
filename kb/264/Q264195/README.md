@@ -6,6 +6,8 @@ permalink: /kb/264/Q264195/
 
 ## Q264195: Memory Problems with Certain Models of Dell Laptop Computers
 
+{% raw %}
+
 	Article: Q264195
 	Product(s): Microsoft Windows NT
 	Version(s): ; WINDOWS:2000; winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/264/Q264195/
 	
 	=============================================================================
 	
+
+{% endraw %}

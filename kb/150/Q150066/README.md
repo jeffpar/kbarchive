@@ -6,6 +6,8 @@ permalink: /kb/150/Q150066/
 
 ## Q150066: Simultaneous PGC Config. and Login Script Execution Errors
 
+{% raw %}
+
 	Article: Q150066
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -72,3 +74,5 @@ permalink: /kb/150/Q150066/
 	
 	=============================================================================
 	
+
+{% endraw %}

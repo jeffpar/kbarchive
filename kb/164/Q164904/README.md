@@ -6,6 +6,8 @@ permalink: /kb/164/Q164904/
 
 ## Q164904: Stop 0x0000000A in NETBT.SYS After Applying Service Pack 2
 
+{% raw %}
+
 	Article: Q164904
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/164/Q164904/
 	
 	=============================================================================
 	
+
+{% endraw %}

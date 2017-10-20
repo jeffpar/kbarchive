@@ -6,6 +6,8 @@ permalink: /kb/174/Q174528/
 
 ## Q174528: DOC ERR: Creating a New Debugging Information File
 
+{% raw %}
+
 	Article: Q174528
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/174/Q174528/
 	
 	=============================================================================
 	
+
+{% endraw %}

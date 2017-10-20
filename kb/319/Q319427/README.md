@@ -6,6 +6,8 @@ permalink: /kb/319/Q319427/
 
 ## Q319427: SMS: File Time Stamp Is Changed During Software Distribution
 
+{% raw %}
+
 	Article: Q319427
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -157,3 +159,5 @@ permalink: /kb/319/Q319427/
 	
 	=============================================================================
 	
+
+{% endraw %}

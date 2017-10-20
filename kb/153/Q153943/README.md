@@ -6,6 +6,8 @@ permalink: /kb/153/Q153943/
 
 ## Q153943: Password Changed by Mac User not Synchronized with FPNW
 
+{% raw %}
+
 	Article: Q153943
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -64,3 +66,5 @@ permalink: /kb/153/Q153943/
 	
 	=============================================================================
 	
+
+{% endraw %}

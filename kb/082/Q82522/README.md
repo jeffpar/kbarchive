@@ -6,6 +6,8 @@ permalink: /kb/082/Q82522/
 
 ## Q82522: PageMaker 4.0 and General Protection Faults
 
+{% raw %}
+
 	Article: Q82522
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -126,3 +128,5 @@ permalink: /kb/082/Q82522/
 	
 	=============================================================================
 	
+
+{% endraw %}

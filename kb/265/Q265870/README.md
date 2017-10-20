@@ -6,6 +6,8 @@ permalink: /kb/265/Q265870/
 
 ## Q265870: XADM: Error Message: The Command Lodctr Dsactrs.ini Failed...
 
+{% raw %}
+
 	Article: Q265870
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -95,3 +97,5 @@ permalink: /kb/265/Q265870/
 	
 	=============================================================================
 	
+
+{% endraw %}

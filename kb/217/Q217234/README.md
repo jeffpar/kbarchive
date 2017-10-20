@@ -6,6 +6,8 @@ permalink: /kb/217/Q217234/
 
 ## Q217234: Games: Slow Direct3D Game Performance with AMD K6-2 Processor
 
+{% raw %}
+
 	Article: Q217234
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -132,3 +134,5 @@ permalink: /kb/217/Q217234/
 	
 	=============================================================================
 	
+
+{% endraw %}

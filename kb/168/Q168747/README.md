@@ -6,6 +6,8 @@ permalink: /kb/168/Q168747/
 
 ## Q168747: Update to Windows 95 TCP/IP to Address Out-of-Band Issue
 
+{% raw %}
+
 	Article: Q168747
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -108,3 +110,5 @@ permalink: /kb/168/Q168747/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148745/
 
 ## Q148745: PRB: DAO Can't Be Used in an ISAPI DLL
 
+{% raw %}
+
 	Article: Q148745
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1
@@ -79,3 +81,5 @@ permalink: /kb/148/Q148745/
 	
 	=============================================================================
 	
+
+{% endraw %}

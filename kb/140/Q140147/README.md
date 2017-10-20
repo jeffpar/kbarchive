@@ -6,6 +6,8 @@ permalink: /kb/140/Q140147/
 
 ## Q140147: Windows NT Server 3.51 is inventoried as Windows NT Server 3.5
 
+{% raw %}
+
 	Article: Q140147
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -43,3 +45,5 @@ permalink: /kb/140/Q140147/
 	
 	=============================================================================
 	
+
+{% endraw %}

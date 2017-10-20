@@ -6,6 +6,8 @@ permalink: /kb/100/Q100634/
 
 ## Q100634: HOWTO: Specify Shared and Nonshared Data in a DLL
 
+{% raw %}
+
 	Article: Q100634
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -122,3 +124,5 @@ permalink: /kb/100/Q100634/
 	
 	=============================================================================
 	
+
+{% endraw %}

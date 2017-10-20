@@ -6,6 +6,8 @@ permalink: /kb/181/Q181807/
 
 ## Q181807: WD97: OLE Objects Appear Distorted When Saved as HTML
 
+{% raw %}
+
 	Article: Q181807
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -87,3 +89,5 @@ permalink: /kb/181/Q181807/
 	
 	=============================================================================
 	
+
+{% endraw %}

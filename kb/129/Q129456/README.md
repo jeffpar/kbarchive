@@ -6,6 +6,8 @@ permalink: /kb/129/Q129456/
 
 ## Q129456: PC MMTA: Err Msg: Mail Bag Is Locked by: F:P1&#92;&lt;hex&gt;.0LK
 
+{% raw %}
+
 	Article: Q129456
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -61,3 +63,5 @@ permalink: /kb/129/Q129456/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135703/
 
 ## Q135703: PC Win: Changing the Default Directory for Saving Attachments
 
+{% raw %}
+
 	Article: Q135703
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2,3.2a,3.5
@@ -58,3 +60,5 @@ permalink: /kb/135/Q135703/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/290/Q290884/
 
 ## Q290884: HOWTO: Determine Which Application Is Running in COM+ or MTS
 
+{% raw %}
+
 	Article: Q290884
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -109,3 +111,5 @@ permalink: /kb/290/Q290884/
 	
 	=============================================================================
 	
+
+{% endraw %}

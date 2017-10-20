@@ -6,6 +6,8 @@ permalink: /kb/077/Q77402/
 
 ## Q77402: INFO: Do Not Call the Display Driver Directly
 
+{% raw %}
+
 	Article: Q77402
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:
@@ -64,3 +66,5 @@ permalink: /kb/077/Q77402/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148751/
 
 ## Q148751: FIX: COleDateTimeSpan Returns Incorrect Value
 
+{% raw %}
+
 	Article: Q148751
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -195,3 +197,5 @@ permalink: /kb/148/Q148751/
 	
 	=============================================================================
 	
+
+{% endraw %}

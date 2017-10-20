@@ -6,6 +6,8 @@ permalink: /kb/139/Q139603/
 
 ## Q139603: PRB: C2061 Errors When Compiling for Macintosh Target
 
+{% raw %}
+
 	Article: Q139603
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:2.0
@@ -80,3 +82,5 @@ permalink: /kb/139/Q139603/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/058/Q58122/
 
 ## Q58122: CHAIN Line-Number Option Is in BASICA, Not in QuickBASIC
 
+{% raw %}
+
 	Article: Q58122
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -43,3 +45,5 @@ permalink: /kb/058/Q58122/
 	   beginning of the chained-to program. Thus, a chained-to program
 	   that chains back to a carelessly written chaining program can cause
 	   an endless loop.
+
+{% endraw %}

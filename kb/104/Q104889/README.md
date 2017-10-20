@@ -6,6 +6,8 @@ permalink: /kb/104/Q104889/
 
 ## Q104889: DoubleSpace Doesn't Support Logical Drive B on Single Floppy
 
+{% raw %}
+
 	Article: Q104889
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -51,3 +53,5 @@ permalink: /kb/104/Q104889/
 	
 	=============================================================================
 	
+
+{% endraw %}

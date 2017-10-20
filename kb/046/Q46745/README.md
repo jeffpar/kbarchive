@@ -6,6 +6,8 @@ permalink: /kb/046/Q46745/
 
 ## Q46745: What the /HIGH and /DS Linker Options Do
 
+{% raw %}
+
 	Article: Q46745
 	Product(s): See article
 	Version(s): 3.65
@@ -45,3 +47,5 @@ permalink: /kb/046/Q46745/
 	do, as well as how the loader works, in the "MS-DOS Encyclopedia,"
 	starting on Page 719. (This excellent reference manual is now less
 	expensive and available in paperback).
+
+{% endraw %}

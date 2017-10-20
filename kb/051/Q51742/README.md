@@ -6,6 +6,8 @@ permalink: /kb/051/Q51742/
 
 ## Q51742: Spawned Process Runs Out of Environment Space
 
+{% raw %}
+
 	Article: Q51742
 	Product(s): See article
 	Version(s): 5.10
@@ -88,3 +90,5 @@ permalink: /kb/051/Q51742/
 	Under DOS, the child will get only enough space to hold the current
 	environment variables, while under OS/2, the segment that holds the
 	environment can usually be expanded.
+
+{% endraw %}

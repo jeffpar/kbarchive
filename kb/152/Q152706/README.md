@@ -6,6 +6,8 @@ permalink: /kb/152/Q152706/
 
 ## Q152706: Paul Bunyan: Cannot Skip Through Checkers Instructions
 
+{% raw %}
+
 	Article: Q152706
 	Product(s): Microsoft Home Kids Products
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/152/Q152706/
 	
 	=============================================================================
 	
+
+{% endraw %}

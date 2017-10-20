@@ -6,6 +6,8 @@ permalink: /kb/201/Q201378/
 
 ## Q201378: HOWTO: Remove a Virus From a File in Visual SourceSafe
 
+{% raw %}
+
 	Article: Q201378
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -100,3 +102,5 @@ permalink: /kb/201/Q201378/
 	
 	=============================================================================
 	
+
+{% endraw %}

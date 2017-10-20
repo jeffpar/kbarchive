@@ -6,6 +6,8 @@ permalink: /kb/240/Q240725/
 
 ## Q240725: TPU: &quot;Unable to Load Profile Information&quot; Error Message
 
+{% raw %}
+
 	Article: Q240725
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5; :
@@ -90,3 +92,5 @@ permalink: /kb/240/Q240725/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167951/
 
 ## Q167951: FIX: Autmgr32.exe Fails After Component Download
 
+{% raw %}
+
 	Article: Q167951
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0 97
@@ -59,3 +61,5 @@ permalink: /kb/167/Q167951/
 	
 	=============================================================================
 	
+
+{% endraw %}

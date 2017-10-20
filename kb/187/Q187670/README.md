@@ -6,6 +6,8 @@ permalink: /kb/187/Q187670/
 
 ## Q187670: HOWTO: Use RDO and ODBC Text Driver to Open a Delimited Text
 
+{% raw %}
+
 	Article: Q187670
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -151,3 +153,5 @@ permalink: /kb/187/Q187670/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157664/
 
 ## Q157664: WD97: Picture Deleted When Typing Text into Text Box
 
+{% raw %}
+
 	Article: Q157664
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/157/Q157664/
 	
 	=============================================================================
 	
+
+{% endraw %}

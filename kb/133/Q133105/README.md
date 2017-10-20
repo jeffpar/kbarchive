@@ -6,6 +6,8 @@ permalink: /kb/133/Q133105/
 
 ## Q133105: FORTRAN PowerStation 32 README.TXT: Miscellaneous
 
+{% raw %}
+
 	Article: Q133105
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -213,3 +215,5 @@ permalink: /kb/133/Q133105/
 	
 	=============================================================================
 	
+
+{% endraw %}

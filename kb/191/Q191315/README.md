@@ -6,6 +6,8 @@ permalink: /kb/191/Q191315/
 
 ## Q191315: BUG: ON ERROR Does Not Trap &quot;Alias Not Found&quot; Error
 
+{% raw %}
+
 	Article: Q191315
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a,6.0
@@ -82,3 +84,5 @@ permalink: /kb/191/Q191315/
 	
 	=============================================================================
 	
+
+{% endraw %}

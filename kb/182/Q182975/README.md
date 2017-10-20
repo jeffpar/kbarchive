@@ -6,6 +6,8 @@ permalink: /kb/182/Q182975/
 
 ## Q182975: XCON: X.25 Stack Installed But Unusable
 
+{% raw %}
+
 	Article: Q182975
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -91,3 +93,5 @@ permalink: /kb/182/Q182975/
 	
 	=============================================================================
 	
+
+{% endraw %}

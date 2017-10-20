@@ -6,6 +6,8 @@ permalink: /kb/197/Q197826/
 
 ## Q197826: WD97: Underline Formatting Does Not Appear at End of Line
 
+{% raw %}
+
 	Article: Q197826
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/197/Q197826/
 	
 	=============================================================================
 	
+
+{% endraw %}

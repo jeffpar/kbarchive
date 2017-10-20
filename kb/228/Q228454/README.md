@@ -6,6 +6,8 @@ permalink: /kb/228/Q228454/
 
 ## Q228454: PATCH: ML614.exe 6.14 Patch Available
 
+{% raw %}
+
 	Article: Q228454
 	Product(s): Microsoft Macro Assembler
 	Version(s): winnt:6.11,6.11a,6.11d,6.12,6.13
@@ -105,3 +107,5 @@ permalink: /kb/228/Q228454/
 	
 	=============================================================================
 	
+
+{% endraw %}

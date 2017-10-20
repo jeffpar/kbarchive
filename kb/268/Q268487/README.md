@@ -6,6 +6,8 @@ permalink: /kb/268/Q268487/
 
 ## Q268487: Default Desktop Is Not Displayed For First-time User
 
+{% raw %}
+
 	Article: Q268487
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -72,3 +74,5 @@ permalink: /kb/268/Q268487/
 	
 	=============================================================================
 	
+
+{% endraw %}

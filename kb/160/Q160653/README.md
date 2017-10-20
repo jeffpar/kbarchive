@@ -6,6 +6,8 @@ permalink: /kb/160/Q160653/
 
 ## Q160653: NTFS Fails Assertion Under High Stress During Transfer
 
+{% raw %}
+
 	Article: Q160653
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/160/Q160653/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150276/
 
 ## Q150276: ActiveX Developers Kit CD-ROM SP Hangs Windows NT
 
+{% raw %}
+
 	Article: Q150276
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -84,3 +86,5 @@ permalink: /kb/150/Q150276/
 	
 	=============================================================================
 	
+
+{% endraw %}

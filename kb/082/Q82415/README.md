@@ -6,6 +6,8 @@ permalink: /kb/082/Q82415/
 
 ## Q82415: Banyan VINES Overwrites CMOS Settings
 
+{% raw %}
+
 	Article: Q82415
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:6.0,6.2,6.21; WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/082/Q82415/
 	
 	=============================================================================
 	
+
+{% endraw %}

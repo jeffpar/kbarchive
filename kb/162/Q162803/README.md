@@ -6,6 +6,8 @@ permalink: /kb/162/Q162803/
 
 ## Q162803: Sound Not Functioning on NEC Versa 4050 Notebook with Modem
 
+{% raw %}
+
 	Article: Q162803
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -142,3 +144,5 @@ permalink: /kb/162/Q162803/
 	
 	=============================================================================
 	
+
+{% endraw %}

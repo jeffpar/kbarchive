@@ -6,6 +6,8 @@ permalink: /kb/113/Q113933/
 
 ## Q113933: Disk Striping And Disk Striping With Parity In Windows NT
 
+{% raw %}
+
 	Article: Q113933
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,4.0
@@ -147,3 +149,5 @@ permalink: /kb/113/Q113933/
 	
 	=============================================================================
 	
+
+{% endraw %}

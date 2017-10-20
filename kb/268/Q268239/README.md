@@ -6,6 +6,8 @@ permalink: /kb/268/Q268239/
 
 ## Q268239: BUG: C2084 on Overloading Function Templates
 
+{% raw %}
+
 	Article: Q268239
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -91,3 +93,5 @@ permalink: /kb/268/Q268239/
 	
 	=============================================================================
 	
+
+{% endraw %}

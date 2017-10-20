@@ -6,6 +6,8 @@ permalink: /kb/119/Q119445/
 
 ## Q119445: Syntax for Addressing Faxes Using Microsoft At Work PC Fax
 
+{% raw %}
+
 	Article: Q119445
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -82,3 +84,5 @@ permalink: /kb/119/Q119445/
 	
 	=============================================================================
 	
+
+{% endraw %}

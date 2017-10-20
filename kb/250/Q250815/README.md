@@ -6,6 +6,8 @@ permalink: /kb/250/Q250815/
 
 ## Q250815: Word Not Listed as HTML Editor in Internet Explorer 5.0, 5.01
 
+{% raw %}
+
 	Article: Q250815
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:5,5.01; :2000
@@ -76,3 +78,5 @@ permalink: /kb/250/Q250815/
 	
 	=============================================================================
 	
+
+{% endraw %}

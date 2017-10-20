@@ -6,6 +6,8 @@ permalink: /kb/234/Q234355/
 
 ## Q234355: Access Violation On SBS When Client Attempts an FTP Session
 
+{% raw %}
+
 	Article: Q234355
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -76,3 +78,5 @@ permalink: /kb/234/Q234355/
 	
 	=============================================================================
 	
+
+{% endraw %}

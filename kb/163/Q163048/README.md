@@ -6,6 +6,8 @@ permalink: /kb/163/Q163048/
 
 ## Q163048: Doc Err: Readme.txt on WinNT 4.0 CD Points to Invalid Entries
 
+{% raw %}
+
 	Article: Q163048
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/163/Q163048/
 	
 	=============================================================================
 	
+
+{% endraw %}

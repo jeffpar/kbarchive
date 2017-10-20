@@ -6,6 +6,8 @@ permalink: /kb/160/Q160459/
 
 ## Q160459: DNS Delegations May Fail
 
+{% raw %}
+
 	Article: Q160459
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/160/Q160459/
 	
 	=============================================================================
 	
+
+{% endraw %}

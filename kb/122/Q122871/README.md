@@ -6,6 +6,8 @@ permalink: /kb/122/Q122871/
 
 ## Q122871: Unable to Bind Network Services to Protocols
 
+{% raw %}
+
 	Article: Q122871
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -51,3 +53,5 @@ permalink: /kb/122/Q122871/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182153/
 
 ## Q182153: BUG: Error When Loading Visual Datatools Add-In
 
+{% raw %}
+
 	Article: Q182153
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -120,3 +122,5 @@ permalink: /kb/182/Q182153/
 	
 	=============================================================================
 	
+
+{% endraw %}

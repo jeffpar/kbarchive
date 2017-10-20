@@ -6,6 +6,8 @@ permalink: /kb/199/Q199160/
 
 ## Q199160: Performance Tuning Wins and DHCP
 
+{% raw %}
+
 	Article: Q199160
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -120,3 +122,5 @@ permalink: /kb/199/Q199160/
 	
 	=============================================================================
 	
+
+{% endraw %}

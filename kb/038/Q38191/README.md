@@ -6,6 +6,8 @@ permalink: /kb/038/Q38191/
 
 ## Q38191: P_NOWAIT Is Not Implemented in DOS Version 4.00
 
+{% raw %}
+
 	Article: Q38191
 	Product(s): See article
 	Version(s): 5.00   | 5.10
@@ -29,3 +31,5 @@ permalink: /kb/038/Q38191/
 	Version 4.00 was not intended for general release, but as a platform
 	for specific OEMs to support extended architectures. Therefore, MS-DOS
 	Version 4.00 was released as a special OEM product only.
+
+{% endraw %}

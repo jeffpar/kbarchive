@@ -6,6 +6,8 @@ permalink: /kb/152/Q152899/
 
 ## Q152899: XCON: MTA Crash in RPC Security Processing
 
+{% raw %}
+
 	Article: Q152899
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -46,3 +48,5 @@ permalink: /kb/152/Q152899/
 	
 	=============================================================================
 	
+
+{% endraw %}

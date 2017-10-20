@@ -6,6 +6,8 @@ permalink: /kb/172/Q172446/
 
 ## Q172446: Steps to Take Before Calling Technical Support
 
+{% raw %}
+
 	Article: Q172446
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -175,3 +177,5 @@ permalink: /kb/172/Q172446/
 	
 	=============================================================================
 	
+
+{% endraw %}

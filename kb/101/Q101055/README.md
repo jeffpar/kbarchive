@@ -6,6 +6,8 @@ permalink: /kb/101/Q101055/
 
 ## Q101055: How to Specify Screen Object Colors in FoxPro for Windows
 
+{% raw %}
+
 	Article: Q101055
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6x,3.0
@@ -68,3 +70,5 @@ permalink: /kb/101/Q101055/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248195/
 
 ## Q248195: XFOR: Config. Interoperability w. cc:Mail 8.5 32-bit Executables
 
+{% raw %}
+
 	Article: Q248195
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -71,3 +73,5 @@ permalink: /kb/248/Q248195/
 	
 	=============================================================================
 	
+
+{% endraw %}

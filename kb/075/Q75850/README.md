@@ -6,6 +6,8 @@ permalink: /kb/075/Q75850/
 
 ## Q75850: Using SHIFT+PRINT SCREEN with Setup Video Problems
 
+{% raw %}
+
 	Article: Q75850
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -54,3 +56,5 @@ permalink: /kb/075/Q75850/
 	
 	=============================================================================
 	
+
+{% endraw %}

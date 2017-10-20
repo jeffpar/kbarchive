@@ -6,6 +6,8 @@ permalink: /kb/196/Q196539/
 
 ## Q196539: WD97: How to Add Borders to Calendars Created by Wizard
 
+{% raw %}
+
 	Article: Q196539
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/196/Q196539/
 	
 	=============================================================================
 	
+
+{% endraw %}

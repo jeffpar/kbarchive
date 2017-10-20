@@ -6,6 +6,8 @@ permalink: /kb/141/Q141720/
 
 ## Q141720: Information Regarding Anti-Virus Scanners for Windows 95
 
+{% raw %}
+
 	Article: Q141720
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -72,3 +74,5 @@ permalink: /kb/141/Q141720/
 	
 	=============================================================================
 	
+
+{% endraw %}

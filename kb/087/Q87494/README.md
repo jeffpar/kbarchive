@@ -6,6 +6,8 @@ permalink: /kb/087/Q87494/
 
 ## Q87494: BUG: BitBlt() Bitmap on VGA Display Causes GP Fault
 
+{% raw %}
+
 	Article: Q87494
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -110,3 +112,5 @@ permalink: /kb/087/Q87494/
 	
 	=============================================================================
 	
+
+{% endraw %}

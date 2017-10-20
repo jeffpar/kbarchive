@@ -6,6 +6,8 @@ permalink: /kb/165/Q165030/
 
 ## Q165030: XCON: Sample Configuration between Exchange and MailBus 400
 
+{% raw %}
+
 	Article: Q165030
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0 5.5
@@ -136,3 +138,5 @@ permalink: /kb/165/Q165030/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156851/
 
 ## Q156851: PRB:Run to Cursor and Breakpoints Don't Work After Debug.Break
 
+{% raw %}
+
 	Article: Q156851
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -67,3 +69,5 @@ permalink: /kb/156/Q156851/
 	
 	=============================================================================
 	
+
+{% endraw %}

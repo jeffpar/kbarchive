@@ -6,6 +6,8 @@ permalink: /kb/087/Q87006/
 
 ## Q87006: BUG: Dictionary Receives No DIRQ_SYMBOLGRAPH Message
 
+{% raw %}
+
 	Article: Q87006
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -61,3 +63,5 @@ permalink: /kb/087/Q87006/
 	
 	=============================================================================
 	
+
+{% endraw %}

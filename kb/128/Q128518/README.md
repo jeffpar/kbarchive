@@ -6,6 +6,8 @@ permalink: /kb/128/Q128518/
 
 ## Q128518: PC WSPlus: Cannot Open Appointment Book with View Free/Busy
 
+{% raw %}
+
 	Article: Q128518
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -92,3 +94,5 @@ permalink: /kb/128/Q128518/
 	
 	=============================================================================
 	
+
+{% endraw %}

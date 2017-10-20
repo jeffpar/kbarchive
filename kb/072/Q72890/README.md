@@ -6,6 +6,8 @@ permalink: /kb/072/Q72890/
 
 ## Q72890: Uninstall Hangs at 7% Complete from &quot;Bloody&quot; Virus
 
+{% raw %}
+
 	Article: Q72890
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a
@@ -57,3 +59,5 @@ permalink: /kb/072/Q72890/
 	
 	=============================================================================
 	
+
+{% endraw %}

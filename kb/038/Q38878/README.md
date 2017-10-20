@@ -6,6 +6,8 @@ permalink: /kb/038/Q38878/
 
 ## Q38878: Calling a BIOS Interrupt to Determine the Scan Code of a Key
 
+{% raw %}
+
 	Article: Q38878
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -46,3 +48,5 @@ permalink: /kb/038/Q38878/
 	  PRINT "ASCII is "; outregs.ax AND 255     ' AL
 	LOOP
 	END
+
+{% endraw %}

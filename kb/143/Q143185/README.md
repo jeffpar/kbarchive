@@ -6,6 +6,8 @@ permalink: /kb/143/Q143185/
 
 ## Q143185: Internet Information Server Performance Monitor Counters
 
+{% raw %}
+
 	Article: Q143185
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -138,3 +140,5 @@ permalink: /kb/143/Q143185/
 	
 	=============================================================================
 	
+
+{% endraw %}

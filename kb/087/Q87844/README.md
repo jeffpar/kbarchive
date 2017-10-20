@@ -6,6 +6,8 @@ permalink: /kb/087/Q87844/
 
 ## Q87844: Creating a Bitmap to Be Tiled on the Windows Desktop
 
+{% raw %}
+
 	Article: Q87844
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -127,3 +129,5 @@ permalink: /kb/087/Q87844/
 	
 	=============================================================================
 	
+
+{% endraw %}

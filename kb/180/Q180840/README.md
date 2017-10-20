@@ -6,6 +6,8 @@ permalink: /kb/180/Q180840/
 
 ## Q180840: FIX: Access Violation with SQLConfigDatasource &amp; Oracle Driver
 
+{% raw %}
+
 	Article: Q180840
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0,2.5
@@ -103,3 +105,5 @@ permalink: /kb/180/Q180840/
 	
 	=============================================================================
 	
+
+{% endraw %}

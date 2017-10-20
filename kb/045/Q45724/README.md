@@ -6,6 +6,8 @@ permalink: /kb/045/Q45724/
 
 ## Q45724: Link Error L1005: /PACKCODE: Packing Limit Exceeds 65,536
 
+{% raw %}
+
 	Article: Q45724
 	Product(s): See article
 	Version(s): 3.65
@@ -35,3 +37,5 @@ permalink: /kb/045/Q45724/
 	
 	   The value supplied with the /PACKCODE option exceeds the limit of
 	   65,536 bytes.
+
+{% endraw %}

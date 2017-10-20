@@ -6,6 +6,8 @@ permalink: /kb/122/Q122536/
 
 ## Q122536: Arcade for Macintosh: How to Disable PowerBook Processor Cycling
 
+{% raw %}
+
 	Article: Q122536
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0
@@ -72,3 +74,5 @@ permalink: /kb/122/Q122536/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195205/
 
 ## Q195205: Outlook/Schedule+ Error &quot;req32.cfg could not be opened&quot;
 
+{% raw %}
+
 	Article: Q195205
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0,7.5,97
@@ -72,3 +74,5 @@ permalink: /kb/195/Q195205/
 	
 	=============================================================================
 	
+
+{% endraw %}

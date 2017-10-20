@@ -6,6 +6,8 @@ permalink: /kb/176/Q176502/
 
 ## Q176502: RAS Authentication Rechallenge Resets Compression Flag
 
+{% raw %}
+
 	Article: Q176502
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/176/Q176502/
 	
 	=============================================================================
 	
+
+{% endraw %}

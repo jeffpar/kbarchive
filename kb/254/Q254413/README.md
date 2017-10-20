@@ -6,6 +6,8 @@ permalink: /kb/254/Q254413/
 
 ## Q254413: Streets and Trips: Pushpins Become Invisible When Map Is Shaded
 
+{% raw %}
+
 	Article: Q254413
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/254/Q254413/
 	
 	=============================================================================
 	
+
+{% endraw %}

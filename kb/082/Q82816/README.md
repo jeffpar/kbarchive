@@ -6,6 +6,8 @@ permalink: /kb/082/Q82816/
 
 ## Q82816: User Interface Deviations Among OLE Applications
 
+{% raw %}
+
 	Article: Q82816
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/082/Q82816/
 	
 	=============================================================================
 	
+
+{% endraw %}

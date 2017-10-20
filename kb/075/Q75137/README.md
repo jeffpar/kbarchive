@@ -6,6 +6,8 @@ permalink: /kb/075/Q75137/
 
 ## Q75137: AT&amp;T 6386E Hangs with RAM Option on EMM386
 
+{% raw %}
+
 	Article: Q75137
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -57,3 +59,5 @@ permalink: /kb/075/Q75137/
 	
 	=============================================================================
 	
+
+{% endraw %}

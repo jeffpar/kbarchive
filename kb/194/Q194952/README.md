@@ -6,6 +6,8 @@ permalink: /kb/194/Q194952/
 
 ## Q194952: XADM: Statically Mapped Port Limitations for Exchange Server
 
+{% raw %}
+
 	Article: Q194952
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -73,3 +75,5 @@ permalink: /kb/194/Q194952/
 	
 	=============================================================================
 	
+
+{% endraw %}

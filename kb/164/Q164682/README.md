@@ -6,6 +6,8 @@ permalink: /kb/164/Q164682/
 
 ## Q164682: Dial-Up Networking Prompt Trying to Connect to MSN
 
+{% raw %}
+
 	Article: Q164682
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -61,3 +63,5 @@ permalink: /kb/164/Q164682/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124022/
 
 ## Q124022: PPT: Importing MatLab Graphics into PowerPoint Causes Error
 
+{% raw %}
+
 	Article: Q124022
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -75,3 +77,5 @@ permalink: /kb/124/Q124022/
 	
 	=============================================================================
 	
+
+{% endraw %}

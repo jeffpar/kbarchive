@@ -6,6 +6,8 @@ permalink: /kb/122/Q122218/
 
 ## Q122218: BUG: RFX_DATE() May Use Incorrect Precision Value
 
+{% raw %}
+
 	Article: Q122218
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5,1.51,2.0,2.1,4.0,4.1,4.2,4.2b,5.0,6.0
@@ -73,3 +75,5 @@ permalink: /kb/122/Q122218/
 	
 	=============================================================================
 	
+
+{% endraw %}

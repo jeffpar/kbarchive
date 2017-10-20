@@ -6,6 +6,8 @@ permalink: /kb/042/Q42601/
 
 ## Q42601: CodeView: Watchpoints and Tracepoints with Enumerated Types
 
+{% raw %}
+
 	Article: Q42601
 	Product(s): See article
 	Version(s): 2.20   | 2.20
@@ -53,3 +55,5 @@ permalink: /kb/042/Q42601/
 	tracepoint but will only show "?CANNOT DISPLAY" in the watch window.
 	Going through the right steps will display the current integer value
 	of the variable, as it should.
+
+{% endraw %}

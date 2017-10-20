@@ -6,6 +6,8 @@ permalink: /kb/128/Q128802/
 
 ## Q128802: VGA Cards Not Operational on Secondary PCI Slots
 
+{% raw %}
+
 	Article: Q128802
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/128/Q128802/
 	
 	=============================================================================
 	
+
+{% endraw %}

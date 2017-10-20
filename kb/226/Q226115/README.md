@@ -6,6 +6,8 @@ permalink: /kb/226/Q226115/
 
 ## Q226115: SMS: Prefer Distribution Point Selection Require Path to Package
 
+{% raw %}
+
 	Article: Q226115
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -72,3 +74,5 @@ permalink: /kb/226/Q226115/
 	
 	=============================================================================
 	
+
+{% endraw %}

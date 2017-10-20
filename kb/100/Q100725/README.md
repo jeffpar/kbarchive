@@ -6,6 +6,8 @@ permalink: /kb/100/Q100725/
 
 ## Q100725: PRB: SQL Server Driver GP-Faults with More Than 50 Datatypes
 
+{% raw %}
+
 	Article: Q100725
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/100/Q100725/
 	
 	=============================================================================
 	
+
+{% endraw %}

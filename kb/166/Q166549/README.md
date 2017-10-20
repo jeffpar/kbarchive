@@ -6,6 +6,8 @@ permalink: /kb/166/Q166549/
 
 ## Q166549: XCLN: Can't Access Proptags in Other Propsets Via Fields.Item()
 
+{% raw %}
+
 	Article: Q166549
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -64,3 +66,5 @@ permalink: /kb/166/Q166549/
 	
 	=============================================================================
 	
+
+{% endraw %}

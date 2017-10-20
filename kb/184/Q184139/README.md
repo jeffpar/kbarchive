@@ -6,6 +6,8 @@ permalink: /kb/184/Q184139/
 
 ## Q184139: Stopping RPC Locator Service Causes Error 2186
 
+{% raw %}
+
 	Article: Q184139
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/184/Q184139/
 	
 	=============================================================================
 	
+
+{% endraw %}

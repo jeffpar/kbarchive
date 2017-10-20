@@ -6,6 +6,8 @@ permalink: /kb/123/Q123097/
 
 ## Q123097: Shared Network Printer Driver Is Installed
 
+{% raw %}
+
 	Article: Q123097
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/123/Q123097/
 	
 	=============================================================================
 	
+
+{% endraw %}

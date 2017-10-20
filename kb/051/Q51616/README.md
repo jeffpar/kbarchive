@@ -6,6 +6,8 @@ permalink: /kb/051/Q51616/
 
 ## Q51616: Recursive CL Setting Can Cause D2002 Command-Line Error
 
+{% raw %}
+
 	Article: Q51616
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -35,3 +37,5 @@ permalink: /kb/051/Q51616/
 	
 	   Command line error D2002 : a previously defined model
 	                              specification has been overridden
+
+{% endraw %}

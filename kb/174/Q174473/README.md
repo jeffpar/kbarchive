@@ -6,6 +6,8 @@ permalink: /kb/174/Q174473/
 
 ## Q174473: SMS: Error 122 When Using RSERVICE /CHANGE
 
+{% raw %}
+
 	Article: Q174473
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -86,3 +88,5 @@ permalink: /kb/174/Q174473/
 	
 	=============================================================================
 	
+
+{% endraw %}

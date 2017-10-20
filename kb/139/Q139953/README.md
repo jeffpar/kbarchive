@@ -6,6 +6,8 @@ permalink: /kb/139/Q139953/
 
 ## Q139953: BUG: DATETIME Datatype Rounds Fractions of a Second
 
+{% raw %}
+
 	Article: Q139953
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,5.0a,6.0
@@ -142,3 +144,5 @@ permalink: /kb/139/Q139953/
 	
 	=============================================================================
 	
+
+{% endraw %}

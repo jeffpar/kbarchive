@@ -6,6 +6,8 @@ permalink: /kb/126/Q126714/
 
 ## Q126714: Err Msg: SERVERNT.BMP Is Not A Valid Bitmap Texture...
 
+{% raw %}
+
 	Article: Q126714
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/126/Q126714/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171070/
 
 ## Q171070: SMSINST: May Not Restart System When Run by PCMSVC32
 
+{% raw %}
+
 	Article: Q171070
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0; winnt:1.2
@@ -138,3 +140,5 @@ permalink: /kb/171/Q171070/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172488/
 
 ## Q172488: WD97: Unexpected Results When Clicking Between Text Form Fields
 
+{% raw %}
+
 	Article: Q172488
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -96,3 +98,5 @@ permalink: /kb/172/Q172488/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143358/
 
 ## Q143358: Canon BJC-800 Prints Slowly in Windows 95
 
+{% raw %}
+
 	Article: Q143358
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): WINDOWS:95
@@ -61,3 +63,5 @@ permalink: /kb/143/Q143358/
 	
 	=============================================================================
 	
+
+{% endraw %}

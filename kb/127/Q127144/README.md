@@ -6,6 +6,8 @@ permalink: /kb/127/Q127144/
 
 ## Q127144: Windows NT WinSock Listen (Backlog) Parameter Limit
 
+{% raw %}
+
 	Article: Q127144
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -48,3 +50,5 @@ permalink: /kb/127/Q127144/
 	
 	=============================================================================
 	
+
+{% endraw %}

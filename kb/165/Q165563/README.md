@@ -6,6 +6,8 @@ permalink: /kb/165/Q165563/
 
 ## Q165563: INFO: GetRecordCount May Not Return Correct Number of Records
 
+{% raw %}
+
 	Article: Q165563
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2 5.0 6.0
@@ -60,3 +62,5 @@ permalink: /kb/165/Q165563/
 	
 	=============================================================================
 	
+
+{% endraw %}

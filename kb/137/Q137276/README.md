@@ -6,6 +6,8 @@ permalink: /kb/137/Q137276/
 
 ## Q137276: Cannot Enter Page Breaks in WordPad
 
+{% raw %}
+
 	Article: Q137276
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/137/Q137276/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143405/
 
 ## Q143405: PRB: Arrow Key Doesn't Fire Keypress Tree/Listview Controls
 
+{% raw %}
+
 	Article: Q143405
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -87,3 +89,5 @@ permalink: /kb/143/Q143405/
 	
 	=============================================================================
 	
+
+{% endraw %}

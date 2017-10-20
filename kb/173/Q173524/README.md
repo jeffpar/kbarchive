@@ -6,6 +6,8 @@ permalink: /kb/173/Q173524/
 
 ## Q173524: WINS Pull Partner Start Time Cannot Be Cleared
 
+{% raw %}
+
 	Article: Q173524
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/173/Q173524/
 	
 	=============================================================================
 	
+
+{% endraw %}

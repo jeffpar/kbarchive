@@ -6,6 +6,8 @@ permalink: /kb/160/Q160242/
 
 ## Q160242: WD97: Can't Resize Text Box, Drawing Object in Header, Footer
 
+{% raw %}
+
 	Article: Q160242
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -53,3 +55,5 @@ permalink: /kb/160/Q160242/
 	
 	=============================================================================
 	
+
+{% endraw %}

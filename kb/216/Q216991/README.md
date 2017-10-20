@@ -6,6 +6,8 @@ permalink: /kb/216/Q216991/
 
 ## Q216991: Err Msg: The Service Configuration DLL 'W3pcfg.dll' Failed...
 
+{% raw %}
+
 	Article: Q216991
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,3.0,4.0
@@ -92,3 +94,5 @@ permalink: /kb/216/Q216991/
 	
 	=============================================================================
 	
+
+{% endraw %}

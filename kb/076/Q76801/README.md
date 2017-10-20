@@ -6,6 +6,8 @@ permalink: /kb/076/Q76801/
 
 ## Q76801: SideKick Versions Earlier than 2.0 Conflict with MS-DOS 5/6
 
+{% raw %}
+
 	Article: Q76801
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -56,3 +58,5 @@ permalink: /kb/076/Q76801/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/315/Q315075/
 
 ## Q315075: FIX: Error Clicking in Properties Window After Editing Grid
 
+{% raw %}
+
 	Article: Q315075
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -124,3 +126,5 @@ permalink: /kb/315/Q315075/
 	
 	=============================================================================
 	
+
+{% endraw %}

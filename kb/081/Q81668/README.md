@@ -6,6 +6,8 @@ permalink: /kb/081/Q81668/
 
 ## Q81668: LANTASTI.386 Must Be On PATH= Environment
 
+{% raw %}
+
 	Article: Q81668
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/081/Q81668/
 	
 	=============================================================================
 	
+
+{% endraw %}

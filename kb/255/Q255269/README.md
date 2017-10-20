@@ -6,6 +6,8 @@ permalink: /kb/255/Q255269/
 
 ## Q255269: XADM: POP3, IMAP Clients Can't Authenticate After Dcpromo
 
+{% raw %}
+
 	Article: Q255269
 	Product(s): Microsoft Exchange
 	Version(s): 2000,5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -69,3 +71,5 @@ permalink: /kb/255/Q255269/
 	
 	=============================================================================
 	
+
+{% endraw %}

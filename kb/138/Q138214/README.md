@@ -6,6 +6,8 @@ permalink: /kb/138/Q138214/
 
 ## Q138214: Music Central 96: Contents of Readme.wri
 
+{% raw %}
+
 	Article: Q138214
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -341,3 +343,5 @@ permalink: /kb/138/Q138214/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193358/
 
 ## Q193358: PRB: Books Online Causes an IPF at 00DE:00000003
 
+{% raw %}
+
 	Article: Q193358
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -70,3 +72,5 @@ permalink: /kb/193/Q193358/
 	
 	=============================================================================
 	
+
+{% endraw %}

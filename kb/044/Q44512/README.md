@@ -6,6 +6,8 @@ permalink: /kb/044/Q44512/
 
 ## Q44512: Stack Considerations When Calling Procedures in MASM
 
+{% raw %}
+
 	Article: Q44512
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -25,3 +27,5 @@ permalink: /kb/044/Q44512/
 	in a location other than the stack and then PUSHing it back on before
 	the RET. However, because the results may not be consistent, this
 	workaround is not recommended.
+
+{% endraw %}

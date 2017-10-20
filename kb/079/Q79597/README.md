@@ -6,6 +6,8 @@ permalink: /kb/079/Q79597/
 
 ## Q79597: PRB:Parameter Mismatch Error When Pass Properties by Reference
 
+{% raw %}
+
 	Article: Q79597
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0,3.0
@@ -106,3 +108,5 @@ permalink: /kb/079/Q79597/
 	
 	=============================================================================
 	
+
+{% endraw %}

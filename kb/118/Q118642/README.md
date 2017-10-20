@@ -6,6 +6,8 @@ permalink: /kb/118/Q118642/
 
 ## Q118642: Windows 95 Err Msg: Win32 Exec App Unable to Find...
 
+{% raw %}
+
 	Article: Q118642
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -86,3 +88,5 @@ permalink: /kb/118/Q118642/
 	
 	=============================================================================
 	
+
+{% endraw %}

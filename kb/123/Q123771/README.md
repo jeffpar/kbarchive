@@ -6,6 +6,8 @@ permalink: /kb/123/Q123771/
 
 ## Q123771: SMS Site Configuration Manager Fails to Add Domain/Server
 
+{% raw %}
+
 	Article: Q123771
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -60,3 +62,5 @@ permalink: /kb/123/Q123771/
 	
 	=============================================================================
 	
+
+{% endraw %}

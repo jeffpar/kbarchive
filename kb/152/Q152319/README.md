@@ -6,6 +6,8 @@ permalink: /kb/152/Q152319/
 
 ## Q152319: FIX: ReadString Gives Wrong Result Reading Long Strings
 
+{% raw %}
+
 	Article: Q152319
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -137,3 +139,5 @@ permalink: /kb/152/Q152319/
 	
 	=============================================================================
 	
+
+{% endraw %}

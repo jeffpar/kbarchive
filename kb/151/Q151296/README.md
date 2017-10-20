@@ -6,6 +6,8 @@ permalink: /kb/151/Q151296/
 
 ## Q151296: Top Articles on Windows 95 Communications
 
+{% raw %}
+
 	Article: Q151296
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/151/Q151296/
 	
 	=============================================================================
 	
+
+{% endraw %}

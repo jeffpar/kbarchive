@@ -6,6 +6,8 @@ permalink: /kb/101/Q101177/
 
 ## Q101177: Running PC-NFS 5.0 with Windows for Workgroups
 
+{% raw %}
+
 	Article: Q101177
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -138,3 +140,5 @@ permalink: /kb/101/Q101177/
 	
 	=============================================================================
 	
+
+{% endraw %}

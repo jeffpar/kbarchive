@@ -6,6 +6,8 @@ permalink: /kb/138/Q138269/
 
 ## Q138269: Attachmate Extra! 3270 V4.x Causes Trap in SNA Server Service
 
+{% raw %}
+
 	Article: Q138269
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -104,3 +106,5 @@ permalink: /kb/138/Q138269/
 	
 	=============================================================================
 	
+
+{% endraw %}

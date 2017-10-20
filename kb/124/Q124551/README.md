@@ -6,6 +6,8 @@ permalink: /kb/124/Q124551/
 
 ## Q124551: INFO: Configuring Parsing of the AUTOEXEC.BAT File
 
+{% raw %}
+
 	Article: Q124551
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:3.5,3.51,4.0
@@ -67,3 +69,5 @@ permalink: /kb/124/Q124551/
 	
 	=============================================================================
 	
+
+{% endraw %}

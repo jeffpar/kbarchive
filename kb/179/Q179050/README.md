@@ -6,6 +6,8 @@ permalink: /kb/179/Q179050/
 
 ## Q179050: XADM: WinNT Account Becomes Domain&#92;&#92;User When Output by Export
 
+{% raw %}
+
 	Article: Q179050
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -71,3 +73,5 @@ permalink: /kb/179/Q179050/
 	
 	=============================================================================
 	
+
+{% endraw %}

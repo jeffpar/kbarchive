@@ -6,6 +6,8 @@ permalink: /kb/194/Q194835/
 
 ## Q194835: PRB: Custom AppWizard Creates Defective 2nd-Generation Project
 
+{% raw %}
+
 	Article: Q194835
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0,6.0
@@ -137,3 +139,5 @@ permalink: /kb/194/Q194835/
 	
 	=============================================================================
 	
+
+{% endraw %}

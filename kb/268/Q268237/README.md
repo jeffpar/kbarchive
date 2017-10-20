@@ -6,6 +6,8 @@ permalink: /kb/268/Q268237/
 
 ## Q268237: Excessive Thread Handle Leak Causes &quot;Stop 0x0000003b&quot; Error
 
+{% raw %}
+
 	Article: Q268237
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/268/Q268237/
 	
 	=============================================================================
 	
+
+{% endraw %}

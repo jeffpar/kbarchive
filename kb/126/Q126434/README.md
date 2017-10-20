@@ -6,6 +6,8 @@ permalink: /kb/126/Q126434/
 
 ## Q126434: Configuring a Windows NT User as an SNA Server Administrator
 
+{% raw %}
+
 	Article: Q126434
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,3.0,4.0
@@ -76,3 +78,5 @@ permalink: /kb/126/Q126434/
 	
 	=============================================================================
 	
+
+{% endraw %}

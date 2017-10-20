@@ -6,6 +6,8 @@ permalink: /kb/235/Q235738/
 
 ## Q235738: SMS: Restart Computer Options Fails when Logged on User Doesn't
 
+{% raw %}
+
 	Article: Q235738
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -76,3 +78,5 @@ permalink: /kb/235/Q235738/
 	
 	=============================================================================
 	
+
+{% endraw %}

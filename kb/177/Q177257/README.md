@@ -6,6 +6,8 @@ permalink: /kb/177/Q177257/
 
 ## Q177257: STOP 0x0000000A or Difficulty Recognizing IDE CD-ROM Drives
 
+{% raw %}
+
 	Article: Q177257
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -81,3 +83,5 @@ permalink: /kb/177/Q177257/
 	
 	=============================================================================
 	
+
+{% endraw %}

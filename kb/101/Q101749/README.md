@@ -6,6 +6,8 @@ permalink: /kb/101/Q101749/
 
 ## Q101749: PC Adm: Compression of External Postoffice &amp; Gateway Mailbags
 
+{% raw %}
+
 	Article: Q101749
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -53,3 +55,5 @@ permalink: /kb/101/Q101749/
 	
 	=============================================================================
 	
+
+{% endraw %}

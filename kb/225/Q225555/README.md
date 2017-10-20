@@ -6,6 +6,8 @@ permalink: /kb/225/Q225555/
 
 ## Q225555: User Manager &quot;Save Settings on Exit&quot; Not Working
 
+{% raw %}
+
 	Article: Q225555
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -60,3 +62,5 @@ permalink: /kb/225/Q225555/
 	
 	=============================================================================
 	
+
+{% endraw %}

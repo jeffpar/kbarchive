@@ -6,6 +6,8 @@ permalink: /kb/192/Q192201/
 
 ## Q192201: XCLN: Schedule + 1.0 Will Not Run After 12/31/2019
 
+{% raw %}
+
 	Article: Q192201
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/192/Q192201/
 	
 	=============================================================================
 	
+
+{% endraw %}

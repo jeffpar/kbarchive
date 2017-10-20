@@ -6,6 +6,8 @@ permalink: /kb/078/Q78787/
 
 ## Q78787: Printing Directories from Windows 3.0 and 3.0a
 
+{% raw %}
+
 	Article: Q78787
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/078/Q78787/
 	
 	=============================================================================
 	
+
+{% endraw %}

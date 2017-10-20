@@ -6,6 +6,8 @@ permalink: /kb/076/Q76364/
 
 ## Q76364: BUG: PostScript Driver Version 3.4 Returns Incorrect Page Size
 
+{% raw %}
+
 	Article: Q76364
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -48,3 +50,5 @@ permalink: /kb/076/Q76364/
 	
 	=============================================================================
 	
+
+{% endraw %}

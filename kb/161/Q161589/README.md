@@ -6,6 +6,8 @@ permalink: /kb/161/Q161589/
 
 ## Q161589: DOC: AfxGetStaticModuleState() Causes Errors in an Extension DLL
 
+{% raw %}
+
 	Article: Q161589
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.1
@@ -82,3 +84,5 @@ permalink: /kb/161/Q161589/
 	
 	=============================================================================
 	
+
+{% endraw %}

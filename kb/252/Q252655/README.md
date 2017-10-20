@@ -6,6 +6,8 @@ permalink: /kb/252/Q252655/
 
 ## Q252655: Computer Hangs When You Click Allegiance Zone or Free Zone Game
 
+{% raw %}
+
 	Article: Q252655
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -54,3 +56,5 @@ permalink: /kb/252/Q252655/
 	
 	=============================================================================
 	
+
+{% endraw %}

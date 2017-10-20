@@ -6,6 +6,8 @@ permalink: /kb/169/Q169859/
 
 ## Q169859: XADM: Event ID 1081 and Service Specific Error 0x00000057
 
+{% raw %}
+
 	Article: Q169859
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -105,3 +107,5 @@ permalink: /kb/169/Q169859/
 	
 	=============================================================================
 	
+
+{% endraw %}

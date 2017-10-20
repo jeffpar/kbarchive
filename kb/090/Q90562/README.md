@@ -6,6 +6,8 @@ permalink: /kb/090/Q90562/
 
 ## Q90562: Using OpenDriver() to Communicate Data to Installable Drv
 
+{% raw %}
+
 	Article: Q90562
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -76,3 +78,5 @@ permalink: /kb/090/Q90562/
 	
 	=============================================================================
 	
+
+{% endraw %}

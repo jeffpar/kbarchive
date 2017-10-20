@@ -6,6 +6,8 @@ permalink: /kb/044/Q44564/
 
 ## Q44564: Short Jump to 80 Bytes Forward Generated with C 5.10
 
+{% raw %}
+
 	Article: Q44564
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -43,3 +45,5 @@ permalink: /kb/044/Q44564/
 	  *** 0003d1 2a e4           sub ah,ah
 	  *** 0003d3 e9 62 fe        jmp $L20017
 	                   $FB331:
+
+{% endraw %}

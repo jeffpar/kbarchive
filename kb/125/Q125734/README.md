@@ -6,6 +6,8 @@ permalink: /kb/125/Q125734/
 
 ## Q125734: Word Processor in Encarta Asks for Bookshelf CD
 
+{% raw %}
+
 	Article: Q125734
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1993 edition,1994 edition,1995 edition; WINDOWS:2.0a,2.0b,2.0c,3.1,3.11,6.0
@@ -82,3 +84,5 @@ permalink: /kb/125/Q125734/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82272/
 
 ## Q82272: FORMAT May Allow Access to Unformatted Drives
 
+{% raw %}
+
 	Article: Q82272
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0
@@ -63,3 +65,5 @@ permalink: /kb/082/Q82272/
 	
 	=============================================================================
 	
+
+{% endraw %}

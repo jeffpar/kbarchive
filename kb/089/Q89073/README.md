@@ -6,6 +6,8 @@ permalink: /kb/089/Q89073/
 
 ## Q89073: Windows: CD-ROM Drives and LANMAN10.386
 
+{% raw %}
+
 	Article: Q89073
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/089/Q89073/
 	
 	=============================================================================
 	
+
+{% endraw %}

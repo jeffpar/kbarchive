@@ -6,6 +6,8 @@ permalink: /kb/099/Q99862/
 
 ## Q99862: NetCon.exe - Connect Net Drive - File Manager Extension
 
+{% raw %}
+
 	Article: Q99862
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/099/Q99862/
 	
 	=============================================================================
 	
+
+{% endraw %}

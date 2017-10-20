@@ -6,6 +6,8 @@ permalink: /kb/197/Q197182/
 
 ## Q197182: XFOR: PCMTA Tries to Dial Async Connection for Downstream POs
 
+{% raw %}
+
 	Article: Q197182
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -82,3 +84,5 @@ permalink: /kb/197/Q197182/
 	
 	=============================================================================
 	
+
+{% endraw %}

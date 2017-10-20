@@ -6,6 +6,8 @@ permalink: /kb/152/Q152078/
 
 ## Q152078: Determining the Product Option of a Windows NT Setup
 
+{% raw %}
+
 	Article: Q152078
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -89,3 +91,5 @@ permalink: /kb/152/Q152078/
 	
 	=============================================================================
 	
+
+{% endraw %}

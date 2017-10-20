@@ -6,6 +6,8 @@ permalink: /kb/051/Q51373/
 
 ## Q51373: Mac Form: Grouping Radio Buttons in Custom Form
 
+{% raw %}
+
 	Article: Q51373
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -60,3 +62,5 @@ permalink: /kb/051/Q51373/
 	
 	=============================================================================
 	
+
+{% endraw %}

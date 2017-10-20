@@ -6,6 +6,8 @@ permalink: /kb/061/Q61969/
 
 ## Q61969: Changes to malloc() and the Rover Pointer Behavior in C 6.00
 
+{% raw %}
+
 	Article: Q61969
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -44,3 +46,5 @@ permalink: /kb/061/Q61969/
 	satisfy the request. In C 6.00, the near heap is not checked, so a
 	null pointer is now returned if far memory is not available, even
 	though enough near memory may be free.
+
+{% endraw %}

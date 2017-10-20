@@ -6,6 +6,8 @@ permalink: /kb/105/Q105164/
 
 ## Q105164: Proper Rights for the CAL Subdirectory
 
+{% raw %}
+
 	Article: Q105164
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a,7.0; Win95:7.0
@@ -51,3 +53,5 @@ permalink: /kb/105/Q105164/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174823/
 
 ## Q174823: Cannot Resize Fonts on Web Sites Using MSN or Internet Explorer
 
+{% raw %}
+
 	Article: Q174823
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5
@@ -47,3 +49,5 @@ permalink: /kb/174/Q174823/
 	
 	=============================================================================
 	
+
+{% endraw %}

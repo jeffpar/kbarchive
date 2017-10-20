@@ -6,6 +6,8 @@ permalink: /kb/237/Q237695/
 
 ## Q237695: XFOR: Cannot Send Message Through Microsoft Mail Connector
 
+{% raw %}
+
 	Article: Q237695
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -86,3 +88,5 @@ permalink: /kb/237/Q237695/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/074/Q74846/
 
 ## Q74846: Microsoft's Works 2.0a Does Not Run in a Window
 
+{% raw %}
+
 	Article: Q74846
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/074/Q74846/
 	
 	=============================================================================
 	
+
+{% endraw %}

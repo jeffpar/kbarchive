@@ -6,6 +6,8 @@ permalink: /kb/152/Q152921/
 
 ## Q152921: XFOR: IMC May Cause WorldTalk SMTP/MIME Gateway to Stop
 
+{% raw %}
+
 	Article: Q152921
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/152/Q152921/
 	
 	=============================================================================
 	
+
+{% endraw %}

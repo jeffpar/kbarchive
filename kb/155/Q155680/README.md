@@ -6,6 +6,8 @@ permalink: /kb/155/Q155680/
 
 ## Q155680: SMS: Windows NT Remote Control Registry Parameters Not Updated
 
+{% raw %}
+
 	Article: Q155680
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -74,3 +76,5 @@ permalink: /kb/155/Q155680/
 	
 	=============================================================================
 	
+
+{% endraw %}

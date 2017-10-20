@@ -6,6 +6,8 @@ permalink: /kb/148/Q148948/
 
 ## Q148948: Windir Environment Variable Lost if Batch File Run from &#42;.PIF
 
+{% raw %}
+
 	Article: Q148948
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -45,3 +47,5 @@ permalink: /kb/148/Q148948/
 	
 	=============================================================================
 	
+
+{% endraw %}

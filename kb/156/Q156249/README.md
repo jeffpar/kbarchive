@@ -6,6 +6,8 @@ permalink: /kb/156/Q156249/
 
 ## Q156249: MSB Dinosaurs: Program May Not Start Without CD Audio Device
 
+{% raw %}
+
 	Article: Q156249
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -100,3 +102,5 @@ permalink: /kb/156/Q156249/
 	
 	=============================================================================
 	
+
+{% endraw %}

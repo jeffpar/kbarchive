@@ -6,6 +6,8 @@ permalink: /kb/202/Q202326/
 
 ## Q202326: SMS: HowTo  Determine if a File is &quot;Known&quot; or &quot;Unknown&quot;
 
+{% raw %}
+
 	Article: Q202326
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -54,3 +56,5 @@ permalink: /kb/202/Q202326/
 	
 	=============================================================================
 	
+
+{% endraw %}

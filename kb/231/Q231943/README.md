@@ -6,6 +6,8 @@ permalink: /kb/231/Q231943/
 
 ## Q231943: INFO: Microsoft Data Access Components (MDAC) Release History
 
+{% raw %}
+
 	Article: Q231943
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5,2.6,2.7
@@ -109,3 +111,5 @@ permalink: /kb/231/Q231943/
 	
 	=============================================================================
 	
+
+{% endraw %}

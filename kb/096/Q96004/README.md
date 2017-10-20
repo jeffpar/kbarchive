@@ -6,6 +6,8 @@ permalink: /kb/096/Q96004/
 
 ## Q96004: PC DirSync: Error and Status Msgs #120 - 249
 
+{% raw %}
+
 	Article: Q96004
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -255,3 +257,5 @@ permalink: /kb/096/Q96004/
 	
 	=============================================================================
 	
+
+{% endraw %}

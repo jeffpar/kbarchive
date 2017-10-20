@@ -6,6 +6,8 @@ permalink: /kb/232/Q232068/
 
 ## Q232068: HOW TO: Download, Install, and Remove IIS MetaEdit 2.2 Utility
 
+{% raw %}
+
 	Article: Q232068
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -148,3 +150,5 @@ permalink: /kb/232/Q232068/
 	
 	=============================================================================
 	
+
+{% endraw %}

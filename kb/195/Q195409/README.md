@@ -6,6 +6,8 @@ permalink: /kb/195/Q195409/
 
 ## Q195409: HOWTO: Get Full Path of Item Selected in List Box
 
+{% raw %}
+
 	Article: Q195409
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -70,3 +72,5 @@ permalink: /kb/195/Q195409/
 	
 	=============================================================================
 	
+
+{% endraw %}

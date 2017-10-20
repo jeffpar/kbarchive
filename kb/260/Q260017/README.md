@@ -6,6 +6,8 @@ permalink: /kb/260/Q260017/
 
 ## Q260017: E-Commerce Strategies Comments And Corrections
 
+{% raw %}
+
 	Article: Q260017
 	Product(s): Microsoft Press
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/260/Q260017/
 	
 	=============================================================================
 	
+
+{% endraw %}

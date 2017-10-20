@@ -6,6 +6,8 @@ permalink: /kb/234/Q234560/
 
 ## Q234560: Running Microsoft Word 2000 Comments and Corrections
 
+{% raw %}
+
 	Article: Q234560
 	Product(s): Microsoft Press
 	Version(s): 
@@ -222,3 +224,5 @@ permalink: /kb/234/Q234560/
 	
 	=============================================================================
 	
+
+{% endraw %}

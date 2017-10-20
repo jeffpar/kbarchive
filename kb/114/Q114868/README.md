@@ -6,6 +6,8 @@ permalink: /kb/114/Q114868/
 
 ## Q114868: Error 0126 When You Start the Net2Com Service
 
+{% raw %}
+
 	Article: Q114868
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -81,3 +83,5 @@ permalink: /kb/114/Q114868/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/238/Q238567/
 
 ## Q238567: XCLN: How to Restore the Outlook Icon to the Desktop
 
+{% raw %}
+
 	Article: Q238567
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -101,3 +103,5 @@ permalink: /kb/238/Q238567/
 	
 	=============================================================================
 	
+
+{% endraw %}

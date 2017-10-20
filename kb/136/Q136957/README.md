@@ -6,6 +6,8 @@ permalink: /kb/136/Q136957/
 
 ## Q136957: PC MAPI: How to Find a Currently Logged on User
 
+{% raw %}
+
 	Article: Q136957
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.5
@@ -199,3 +201,5 @@ permalink: /kb/136/Q136957/
 	
 	=============================================================================
 	
+
+{% endraw %}

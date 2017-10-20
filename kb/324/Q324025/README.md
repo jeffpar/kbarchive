@@ -6,6 +6,8 @@ permalink: /kb/324/Q324025/
 
 ## Q324025: XCON: POP3 &amp; IMAP4 Clients Can't Log On, Event ID 13003 Occurs
 
+{% raw %}
+
 	Article: Q324025
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -83,3 +85,5 @@ permalink: /kb/324/Q324025/
 	
 	=============================================================================
 	
+
+{% endraw %}

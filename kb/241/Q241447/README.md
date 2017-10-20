@@ -6,6 +6,8 @@ permalink: /kb/241/Q241447/
 
 ## Q241447: How to Restrict the Use of Certain Ciphers in IIS 5.0
 
+{% raw %}
+
 	Article: Q241447
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -76,3 +78,5 @@ permalink: /kb/241/Q241447/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169295/
 
 ## Q169295: Administration of Legacy RAS Servers from Routing and RAS Admin
 
+{% raw %}
+
 	Article: Q169295
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -45,3 +47,5 @@ permalink: /kb/169/Q169295/
 	
 	=============================================================================
 	
+
+{% endraw %}

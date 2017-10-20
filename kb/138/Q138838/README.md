@@ -6,6 +6,8 @@ permalink: /kb/138/Q138838/
 
 ## Q138838: PPT7: Limitations of the PowerPoint Viewer for Windows 95
 
+{% raw %}
+
 	Article: Q138838
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -75,3 +77,5 @@ permalink: /kb/138/Q138838/
 	
 	=============================================================================
 	
+
+{% endraw %}

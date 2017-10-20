@@ -6,6 +6,8 @@ permalink: /kb/109/Q109117/
 
 ## Q109117: MEM May Not Recognize More Than 16 MB RAM on NCR 4000 Series
 
+{% raw %}
+
 	Article: Q109117
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -65,3 +67,5 @@ permalink: /kb/109/Q109117/
 	
 	=============================================================================
 	
+
+{% endraw %}

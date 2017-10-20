@@ -6,6 +6,8 @@ permalink: /kb/166/Q166181/
 
 ## Q166181: WD97: Can't Insert Page Numbers into WordMail Message
 
+{% raw %}
+
 	Article: Q166181
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -96,3 +98,5 @@ permalink: /kb/166/Q166181/
 	
 	=============================================================================
 	
+
+{% endraw %}

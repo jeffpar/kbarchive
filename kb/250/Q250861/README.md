@@ -6,6 +6,8 @@ permalink: /kb/250/Q250861/
 
 ## Q250861: XCLN: Team Folders Errors When Publishing the Folder to the Web
 
+{% raw %}
+
 	Article: Q250861
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000
@@ -67,3 +69,5 @@ permalink: /kb/250/Q250861/
 	
 	=============================================================================
 	
+
+{% endraw %}

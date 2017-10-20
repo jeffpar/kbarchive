@@ -6,6 +6,8 @@ permalink: /kb/069/Q69159/
 
 ## Q69159: Example of How to Call BASIC SetUEvent from C; ON UEVENT GOSUB
 
+{% raw %}
+
 	Article: Q69159
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10
@@ -103,3 +105,5 @@ permalink: /kb/069/Q69159/
 	{                                       //    when done to avoid
 	    _dos_setvect(0x1C, OldInt);         //    conflicts after exit.
 	}
+
+{% endraw %}

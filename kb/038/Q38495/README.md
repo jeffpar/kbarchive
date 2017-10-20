@@ -6,6 +6,8 @@ permalink: /kb/038/Q38495/
 
 ## Q38495: &quot;Subscript Out of Range&quot; Using Complex Expression with BC /D
 
+{% raw %}
+
 	Article: Q38495
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -44,3 +46,5 @@ permalink: /kb/038/Q38495/
 	  r = SGN(t(b%)) * SQR(ABS(t(b%)))
 	  PRINT r
 	NEXT b%
+
+{% endraw %}

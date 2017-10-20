@@ -6,6 +6,8 @@ permalink: /kb/118/Q118753/
 
 ## Q118753: Remote Administration of DLC Network Printer is Not Available
 
+{% raw %}
+
 	Article: Q118753
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 4.0
@@ -53,3 +55,5 @@ permalink: /kb/118/Q118753/
 	
 	=============================================================================
 	
+
+{% endraw %}

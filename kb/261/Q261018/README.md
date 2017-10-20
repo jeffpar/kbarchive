@@ -6,6 +6,8 @@ permalink: /kb/261/Q261018/
 
 ## Q261018: MCM2: Sounds Are Played If You Turn Off Sound Effects in Game
 
+{% raw %}
+
 	Article: Q261018
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -65,3 +67,5 @@ permalink: /kb/261/Q261018/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187716/
 
 ## Q187716: DOC: Incorrect API Text Viewer Declaration of GetVersionEx API
 
+{% raw %}
+
 	Article: Q187716
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/187/Q187716/
 	
 	=============================================================================
 	
+
+{% endraw %}

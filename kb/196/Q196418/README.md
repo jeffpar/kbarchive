@@ -6,6 +6,8 @@ permalink: /kb/196/Q196418/
 
 ## Q196418: XADM: Move Server Pauses if not Enough Space in Application Log
 
+{% raw %}
+
 	Article: Q196418
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -36,3 +38,5 @@ permalink: /kb/196/Q196418/
 	
 	=============================================================================
 	
+
+{% endraw %}

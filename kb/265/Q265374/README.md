@@ -6,6 +6,8 @@ permalink: /kb/265/Q265374/
 
 ## Q265374: WD97: Post Service Release Fixes for Word 97
 
+{% raw %}
+
 	Article: Q265374
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -509,3 +511,5 @@ permalink: /kb/265/Q265374/
 	
 	=============================================================================
 	
+
+{% endraw %}

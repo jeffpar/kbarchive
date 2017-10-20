@@ -6,6 +6,8 @@ permalink: /kb/125/Q125035/
 
 ## Q125035: Writer: Text Does Not Appear Until Middle of Page
 
+{% raw %}
+
 	Article: Q125035
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a
@@ -78,3 +80,5 @@ permalink: /kb/125/Q125035/
 	
 	=============================================================================
 	
+
+{% endraw %}

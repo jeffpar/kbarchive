@@ -6,6 +6,8 @@ permalink: /kb/173/Q173607/
 
 ## Q173607: Client Not Authenticated by Domain Through RAS Member Server
 
+{% raw %}
+
 	Article: Q173607
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -126,3 +128,5 @@ permalink: /kb/173/Q173607/
 	
 	=============================================================================
 	
+
+{% endraw %}

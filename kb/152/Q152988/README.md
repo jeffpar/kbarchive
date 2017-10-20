@@ -6,6 +6,8 @@ permalink: /kb/152/Q152988/
 
 ## Q152988: Works: Troubleshooting Communications Problems in Windows 95
 
+{% raw %}
+
 	Article: Q152988
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0,2.0a,3.0,3.0a,3.0b,4.0,4.0a,4.5,4.5a
@@ -236,3 +238,5 @@ permalink: /kb/152/Q152988/
 	
 	=============================================================================
 	
+
+{% endraw %}

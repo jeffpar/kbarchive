@@ -6,6 +6,8 @@ permalink: /kb/084/Q84560/
 
 ## Q84560: Mystify Screen Saver Defaults to Polygon 1
 
+{% raw %}
+
 	Article: Q84560
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/084/Q84560/
 	
 	=============================================================================
 	
+
+{% endraw %}

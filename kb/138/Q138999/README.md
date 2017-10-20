@@ -6,6 +6,8 @@ permalink: /kb/138/Q138999/
 
 ## Q138999: How to Display Concatenated Fields in a Text Box
 
+{% raw %}
+
 	Article: Q138999
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -68,3 +70,5 @@ permalink: /kb/138/Q138999/
 	
 	=============================================================================
 	
+
+{% endraw %}

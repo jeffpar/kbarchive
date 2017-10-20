@@ -6,6 +6,8 @@ permalink: /kb/260/Q260215/
 
 ## Q260215: XADM: Setup Fails on Windows 2000 Cluster
 
+{% raw %}
+
 	Article: Q260215
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -63,3 +65,5 @@ permalink: /kb/260/Q260215/
 	
 	=============================================================================
 	
+
+{% endraw %}

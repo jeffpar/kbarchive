@@ -6,6 +6,8 @@ permalink: /kb/191/Q191666/
 
 ## Q191666: Stop 0x00000050 When Printing to HP 5 or 6 Printer w/HP Driver
 
+{% raw %}
+
 	Article: Q191666
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -99,3 +101,5 @@ permalink: /kb/191/Q191666/
 	
 	=============================================================================
 	
+
+{% endraw %}

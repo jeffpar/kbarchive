@@ -6,6 +6,8 @@ permalink: /kb/271/Q271695/
 
 ## Q271695: PRB: Picture in MDI Form Does Not Display
 
+{% raw %}
+
 	Article: Q271695
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -118,3 +120,5 @@ permalink: /kb/271/Q271695/
 	
 	=============================================================================
 	
+
+{% endraw %}

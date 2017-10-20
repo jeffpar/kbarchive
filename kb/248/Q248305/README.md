@@ -6,6 +6,8 @@ permalink: /kb/248/Q248305/
 
 ## Q248305: XCLN: Japanese Characters Appear as Question Marks
 
+{% raw %}
+
 	Article: Q248305
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000
@@ -90,3 +92,5 @@ permalink: /kb/248/Q248305/
 	
 	=============================================================================
 	
+
+{% endraw %}

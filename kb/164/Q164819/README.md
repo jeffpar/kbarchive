@@ -6,6 +6,8 @@ permalink: /kb/164/Q164819/
 
 ## Q164819: FIX: Problems Using Database Classes with Jet 3.0 under NT 4.0
 
+{% raw %}
+
 	Article: Q164819
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.0a,4.1,4.2,4.2b
@@ -74,3 +76,5 @@ permalink: /kb/164/Q164819/
 	
 	=============================================================================
 	
+
+{% endraw %}

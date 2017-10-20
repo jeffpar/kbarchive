@@ -6,6 +6,8 @@ permalink: /kb/216/Q216089/
 
 ## Q216089: HOWTO: Back Up the NT Event Log in Visual Basic
 
+{% raw %}
+
 	Article: Q216089
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -128,3 +130,5 @@ permalink: /kb/216/Q216089/
 	
 	=============================================================================
 	
+
+{% endraw %}

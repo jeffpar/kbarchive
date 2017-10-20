@@ -6,6 +6,8 @@ permalink: /kb/252/Q252990/
 
 ## Q252990: XCLN: No Personal Address Book in List of Services
 
+{% raw %}
+
 	Article: Q252990
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000
@@ -52,3 +54,5 @@ permalink: /kb/252/Q252990/
 	
 	=============================================================================
 	
+
+{% endraw %}

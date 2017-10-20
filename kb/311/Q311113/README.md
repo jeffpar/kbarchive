@@ -6,6 +6,8 @@ permalink: /kb/311/Q311113/
 
 ## Q311113: IIS Lockdown Wizard Undo Doesn't Restore Uninstalled Services
 
+{% raw %}
+
 	Article: Q311113
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -58,3 +60,5 @@ permalink: /kb/311/Q311113/
 	
 	=============================================================================
 	
+
+{% endraw %}

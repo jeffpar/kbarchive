@@ -6,6 +6,8 @@ permalink: /kb/162/Q162624/
 
 ## Q162624: How to Create Multiple Stripe Sets On the Same Disk Array.
 
+{% raw %}
+
 	Article: Q162624
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -94,3 +96,5 @@ permalink: /kb/162/Q162624/
 	
 	=============================================================================
 	
+
+{% endraw %}

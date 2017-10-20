@@ -6,6 +6,8 @@ permalink: /kb/275/Q275588/
 
 ## Q275588: Err Msg: Event ID: 3101 - Unable to Read Control Information...
 
+{% raw %}
+
 	Article: Q275588
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -87,3 +89,5 @@ permalink: /kb/275/Q275588/
 	
 	=============================================================================
 	
+
+{% endraw %}

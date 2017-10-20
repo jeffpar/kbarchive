@@ -6,6 +6,8 @@ permalink: /kb/161/Q161035/
 
 ## Q161035: GetAddressByName API Causes SAP Broadcast
 
+{% raw %}
+
 	Article: Q161035
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -64,3 +66,5 @@ permalink: /kb/161/Q161035/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179564/
 
 ## Q179564: SMS: Admin Lose Mouse/Keyboard Functionality of WinNT Clients
 
+{% raw %}
+
 	Article: Q179564
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -59,3 +61,5 @@ permalink: /kb/179/Q179564/
 	
 	=============================================================================
 	
+
+{% endraw %}

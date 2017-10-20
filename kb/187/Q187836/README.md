@@ -6,6 +6,8 @@ permalink: /kb/187/Q187836/
 
 ## Q187836: XWEB: How to Use Outlook Web Access Web Services &amp; HTML Forms
 
+{% raw %}
+
 	Article: Q187836
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0; WINDOWS:4.0,5.0,5.5,8.0
@@ -96,3 +98,5 @@ permalink: /kb/187/Q187836/
 	
 	=============================================================================
 	
+
+{% endraw %}

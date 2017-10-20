@@ -6,6 +6,8 @@ permalink: /kb/174/Q174909/
 
 ## Q174909: Bookshelf/Dictionary: Cannot Copy Wave Audio (.wav) Sounds
 
+{% raw %}
+
 	Article: Q174909
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -44,3 +46,5 @@ permalink: /kb/174/Q174909/
 	
 	=============================================================================
 	
+
+{% endraw %}

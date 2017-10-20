@@ -6,6 +6,8 @@ permalink: /kb/126/Q126561/
 
 ## Q126561: Printing To An LPR Printer May Be Slow
 
+{% raw %}
+
 	Article: Q126561
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -59,3 +61,5 @@ permalink: /kb/126/Q126561/
 	
 	=============================================================================
 	
+
+{% endraw %}

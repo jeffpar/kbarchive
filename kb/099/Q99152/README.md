@@ -6,6 +6,8 @@ permalink: /kb/099/Q99152/
 
 ## Q99152: PRB: MOVE Application Requires Additional Memory to Load
 
+{% raw %}
+
 	Article: Q99152
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/099/Q99152/
 	
 	=============================================================================
 	
+
+{% endraw %}

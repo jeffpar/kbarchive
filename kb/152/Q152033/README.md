@@ -6,6 +6,8 @@ permalink: /kb/152/Q152033/
 
 ## Q152033: PPT: How to Rotate Clip Images
 
+{% raw %}
+
 	Article: Q152033
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,7.0
@@ -82,3 +84,5 @@ permalink: /kb/152/Q152033/
 	
 	=============================================================================
 	
+
+{% endraw %}

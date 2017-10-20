@@ -6,6 +6,8 @@ permalink: /kb/039/Q39579/
 
 ## Q39579: How to Get an Earlier Version of QuickBASIC for MS-DOS
 
+{% raw %}
+
 	Article: Q39579
 	Product(s): See article
 	Version(s): 2.01 3.00 4.00 4.00b 4.50
@@ -38,3 +40,5 @@ permalink: /kb/039/Q39579/
 	
 	You can also check your local dealer or software discount companies to
 	see if they have any earlier versions.
+
+{% endraw %}

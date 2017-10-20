@@ -6,6 +6,8 @@ permalink: /kb/166/Q166581/
 
 ## Q166581: XADM: Exchange/cc:Mail Dirsync: CR w/ Corrupted Proxy Addresses
 
+{% raw %}
+
 	Article: Q166581
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -109,3 +111,5 @@ permalink: /kb/166/Q166581/
 	
 	=============================================================================
 	
+
+{% endraw %}

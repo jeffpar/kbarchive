@@ -6,6 +6,8 @@ permalink: /kb/186/Q186216/
 
 ## Q186216: XFOR: Date Appended to Attached Files Sent to cc:Mail List
 
+{% raw %}
+
 	Article: Q186216
 	Product(s): Microsoft Exchange
 	Version(s): 5.0 5.5
@@ -79,3 +81,5 @@ permalink: /kb/186/Q186216/
 	
 	=============================================================================
 	
+
+{% endraw %}

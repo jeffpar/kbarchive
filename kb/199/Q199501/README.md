@@ -6,6 +6,8 @@ permalink: /kb/199/Q199501/
 
 ## Q199501: PRB: LNK1555 Errors, and Near Versus Far Data
 
+{% raw %}
+
 	Article: Q199501
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:2.0,4.0,4.0b
@@ -103,3 +105,5 @@ permalink: /kb/199/Q199501/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154722/
 
 ## Q154722: SMS: Administrator and Guest Accounts Are Not Modified
 
+{% raw %}
+
 	Article: Q154722
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1,1.2,2.0
@@ -52,3 +54,5 @@ permalink: /kb/154/Q154722/
 	
 	=============================================================================
 	
+
+{% endraw %}

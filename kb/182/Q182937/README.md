@@ -6,6 +6,8 @@ permalink: /kb/182/Q182937/
 
 ## Q182937: FIX: Files in External Dependencies Folder Don't Persist
 
+{% raw %}
+
 	Article: Q182937
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0
@@ -115,3 +117,5 @@ permalink: /kb/182/Q182937/
 	
 	=============================================================================
 	
+
+{% endraw %}

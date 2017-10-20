@@ -6,6 +6,8 @@ permalink: /kb/143/Q143504/
 
 ## Q143504: PPT7: Translator for Opening PowerPoint 97 Files
 
+{% raw %}
+
 	Article: Q143504
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -49,3 +51,5 @@ permalink: /kb/143/Q143504/
 	
 	=============================================================================
 	
+
+{% endraw %}

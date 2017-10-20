@@ -6,6 +6,8 @@ permalink: /kb/282/Q282275/
 
 ## Q282275: XCON: MTA Stops Unexpectedly in CheckRecipInfo()
 
+{% raw %}
+
 	Article: Q282275
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP4
@@ -135,3 +137,5 @@ permalink: /kb/282/Q282275/
 	
 	=============================================================================
 	
+
+{% endraw %}

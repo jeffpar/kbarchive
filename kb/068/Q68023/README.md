@@ -6,6 +6,8 @@ permalink: /kb/068/Q68023/
 
 ## Q68023: BC &quot;Internal Error&quot; with Array of TYPE Using Array of STRING&#42;1
 
+{% raw %}
+
 	Article: Q68023
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -71,3 +73,5 @@ permalink: /kb/068/Q68023/
 	3. Use STRING * 2 or a longer length.
 	
 	4. Compile with the BC /D option.
+
+{% endraw %}

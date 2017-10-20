@@ -6,6 +6,8 @@ permalink: /kb/235/Q235694/
 
 ## Q235694: FIX: The MSMQ-MQSeries Bridge Overwrites ReplyToQMgr Extension
 
+{% raw %}
+
 	Article: Q235694
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2; winnt:1.0
@@ -62,3 +64,5 @@ permalink: /kb/235/Q235694/
 	
 	=============================================================================
 	
+
+{% endraw %}

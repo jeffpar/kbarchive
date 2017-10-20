@@ -6,6 +6,8 @@ permalink: /kb/139/Q139317/
 
 ## Q139317: Encarta 1996: MSETUP.TXT Contents
 
+{% raw %}
+
 	Article: Q139317
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.x
@@ -98,3 +100,5 @@ permalink: /kb/139/Q139317/
 	
 	=============================================================================
 	
+
+{% endraw %}

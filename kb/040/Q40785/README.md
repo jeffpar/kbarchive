@@ -6,6 +6,8 @@ permalink: /kb/040/Q40785/
 
 ## Q40785: Available Memory in C with More Than 20 Files and PC-DOS 3.30
 
+{% raw %}
+
 	Article: Q40785
 	Product(s): See article
 	Version(s): 5.10
@@ -58,3 +60,5 @@ permalink: /kb/040/Q40785/
 	   else
 	      printf("Memory allocated.\n");
 	}
+
+{% endraw %}

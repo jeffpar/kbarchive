@@ -6,6 +6,8 @@ permalink: /kb/244/Q244889/
 
 ## Q244889: Invalid Page Fault When You Run Flight Simulator
 
+{% raw %}
+
 	Article: Q244889
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -258,3 +260,5 @@ permalink: /kb/244/Q244889/
 	
 	=============================================================================
 	
+
+{% endraw %}

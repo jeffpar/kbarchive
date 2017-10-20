@@ -6,6 +6,8 @@ permalink: /kb/186/Q186482/
 
 ## Q186482: Terminal Server Modifications to NetDDE
 
+{% raw %}
+
 	Article: Q186482
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -46,3 +48,5 @@ permalink: /kb/186/Q186482/
 	
 	=============================================================================
 	
+
+{% endraw %}

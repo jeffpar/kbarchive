@@ -6,6 +6,8 @@ permalink: /kb/235/Q235501/
 
 ## Q235501: XFOR: Zero-Length Attachments Cause Errors in API Gateway
 
+{% raw %}
+
 	Article: Q235501
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -54,3 +56,5 @@ permalink: /kb/235/Q235501/
 	
 	=============================================================================
 	
+
+{% endraw %}

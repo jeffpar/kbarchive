@@ -6,6 +6,8 @@ permalink: /kb/122/Q122566/
 
 ## Q122566: Default Printer Changed to Bootup Value if Spooler Restarted
 
+{% raw %}
+
 	Article: Q122566
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -61,3 +63,5 @@ permalink: /kb/122/Q122566/
 	
 	=============================================================================
 	
+
+{% endraw %}

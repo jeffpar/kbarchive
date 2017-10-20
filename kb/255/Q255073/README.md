@@ -6,6 +6,8 @@ permalink: /kb/255/Q255073/
 
 ## Q255073: XFOR: Event ID 174 from Directory Export Installing Connectors
 
+{% raw %}
+
 	Article: Q255073
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -99,3 +101,5 @@ permalink: /kb/255/Q255073/
 	
 	=============================================================================
 	
+
+{% endraw %}

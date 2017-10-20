@@ -6,6 +6,8 @@ permalink: /kb/133/Q133252/
 
 ## Q133252: Windows NT 3.51 GSNW Help Reports The File Is Corrupted
 
+{% raw %}
+
 	Article: Q133252
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/133/Q133252/
 	
 	=============================================================================
 	
+
+{% endraw %}

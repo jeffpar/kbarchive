@@ -6,6 +6,8 @@ permalink: /kb/182/Q182503/
 
 ## Q182503: XADM: LDAP Displays Directory Name
 
+{% raw %}
+
 	Article: Q182503
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -50,3 +52,5 @@ permalink: /kb/182/Q182503/
 	
 	=============================================================================
 	
+
+{% endraw %}

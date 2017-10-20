@@ -6,6 +6,8 @@ permalink: /kb/100/Q100656/
 
 ## Q100656: &quot;Error Writing to LPT1:&quot; with Lexmark 4037/4039 Under WFWG
 
+{% raw %}
+
 	Article: Q100656
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -90,3 +92,5 @@ permalink: /kb/100/Q100656/
 	
 	=============================================================================
 	
+
+{% endraw %}

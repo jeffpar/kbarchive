@@ -6,6 +6,8 @@ permalink: /kb/141/Q141515/
 
 ## Q141515: Known Issues Concerning Find Feature on The Microsoft Network
 
+{% raw %}
+
 	Article: Q141515
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -112,3 +114,5 @@ permalink: /kb/141/Q141515/
 	
 	=============================================================================
 	
+
+{% endraw %}

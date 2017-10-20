@@ -6,6 +6,8 @@ permalink: /kb/234/Q234835/
 
 ## Q234835: MOD2000: Errors After You Rename Project in VSS Explorer
 
+{% raw %}
+
 	Article: Q234835
 	Product(s): Microsoft SourceSafe
 	Version(s): ; WINDOWS:6.0
@@ -93,3 +95,5 @@ permalink: /kb/234/Q234835/
 	
 	=============================================================================
 	
+
+{% endraw %}

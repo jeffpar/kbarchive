@@ -6,6 +6,8 @@ permalink: /kb/104/Q104819/
 
 ## Q104819: PC Win: Err Msg: Switching Between Private and Shared Folders
 
+{% raw %}
+
 	Article: Q104819
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -58,3 +60,5 @@ permalink: /kb/104/Q104819/
 	
 	=============================================================================
 	
+
+{% endraw %}

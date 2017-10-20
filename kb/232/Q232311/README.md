@@ -6,6 +6,8 @@ permalink: /kb/232/Q232311/
 
 ## Q232311: LPD Job May Cause TCPSVCS to Hang
 
+{% raw %}
+
 	Article: Q232311
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -85,3 +87,5 @@ permalink: /kb/232/Q232311/
 	
 	=============================================================================
 	
+
+{% endraw %}

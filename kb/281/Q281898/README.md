@@ -6,6 +6,8 @@ permalink: /kb/281/Q281898/
 
 ## Q281898: BUG: SQL Statement Missing Integers When Collate Set to Russian
 
+{% raw %}
+
 	Article: Q281898
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -149,3 +151,5 @@ permalink: /kb/281/Q281898/
 	
 	=============================================================================
 	
+
+{% endraw %}

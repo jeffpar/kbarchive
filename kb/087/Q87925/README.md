@@ -6,6 +6,8 @@ permalink: /kb/087/Q87925/
 
 ## Q87925: PRB: Executing CV Results in &quot;Error Executing CV.EXE&quot;
 
+{% raw %}
+
 	Article: Q87925
 	Product(s): Microsoft Programming Utilities
 	Version(s): 3.14,4.0,4.01,4.1
@@ -60,3 +62,5 @@ permalink: /kb/087/Q87925/
 	
 	=============================================================================
 	
+
+{% endraw %}

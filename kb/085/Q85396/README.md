@@ -6,6 +6,8 @@ permalink: /kb/085/Q85396/
 
 ## Q85396: Okidata Microline 93-IBM Improperly Advances Paper Feed
 
+{% raw %}
+
 	Article: Q85396
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -70,3 +72,5 @@ permalink: /kb/085/Q85396/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192700/
 
 ## Q192700: XFOR: cc:Mail Connector Does Not Parse Attachment Name Correctly
 
+{% raw %}
+
 	Article: Q192700
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -106,3 +108,5 @@ permalink: /kb/192/Q192700/
 	
 	=============================================================================
 	
+
+{% endraw %}

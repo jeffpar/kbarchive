@@ -6,6 +6,8 @@ permalink: /kb/156/Q156262/
 
 ## Q156262: Matrox Video Drivers Limited to 640 x 480 Resolution
 
+{% raw %}
+
 	Article: Q156262
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -44,3 +46,5 @@ permalink: /kb/156/Q156262/
 	
 	=============================================================================
 	
+
+{% endraw %}

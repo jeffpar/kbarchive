@@ -6,6 +6,8 @@ permalink: /kb/150/Q150805/
 
 ## Q150805: TN3270 Excluding IP Addresses from the TN3270E Server
 
+{% raw %}
+
 	Article: Q150805
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -45,3 +47,5 @@ permalink: /kb/150/Q150805/
 	
 	=============================================================================
 	
+
+{% endraw %}

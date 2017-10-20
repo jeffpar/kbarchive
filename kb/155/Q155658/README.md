@@ -6,6 +6,8 @@ permalink: /kb/155/Q155658/
 
 ## Q155658: Advanced Power Management (APM) Can Hang Games
 
+{% raw %}
+
 	Article: Q155658
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/155/Q155658/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/222/Q222069/
 
 ## Q222069: IIS 4.0 Requires Username &amp; Password When Using Remote Computer
 
+{% raw %}
+
 	Article: Q222069
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/222/Q222069/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180141/
 
 ## Q180141: XADM: Recurring Address Book Views in Exchange Server
 
+{% raw %}
+
 	Article: Q180141
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -224,3 +226,5 @@ permalink: /kb/180/Q180141/
 	
 	=============================================================================
 	
+
+{% endraw %}

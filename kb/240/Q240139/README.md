@@ -6,6 +6,8 @@ permalink: /kb/240/Q240139/
 
 ## Q240139: Stop 0x0000000A with HP Netserver and HP 10/100 Ethernet Adapter
 
+{% raw %}
+
 	Article: Q240139
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/240/Q240139/
 	
 	=============================================================================
 	
+
+{% endraw %}

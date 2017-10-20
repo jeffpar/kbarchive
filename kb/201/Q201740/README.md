@@ -6,6 +6,8 @@ permalink: /kb/201/Q201740/
 
 ## Q201740: Cannot Create Object Error when Browsing ASP Pages
 
+{% raw %}
+
 	Article: Q201740
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/201/Q201740/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87149/
 
 ## Q87149: Mac Wkst: Connection to a Mail Server While Offline
 
+{% raw %}
+
 	Article: Q87149
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -40,3 +42,5 @@ permalink: /kb/087/Q87149/
 	
 	=============================================================================
 	
+
+{% endraw %}

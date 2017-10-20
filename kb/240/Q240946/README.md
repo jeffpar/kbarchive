@@ -6,6 +6,8 @@ permalink: /kb/240/Q240946/
 
 ## Q240946: BUG: ListView Fails to Raise Mouse Events if MultiSelect = True
 
+{% raw %}
+
 	Article: Q240946
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -193,3 +195,5 @@ permalink: /kb/240/Q240946/
 	
 	=============================================================================
 	
+
+{% endraw %}

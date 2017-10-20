@@ -6,6 +6,8 @@ permalink: /kb/197/Q197410/
 
 ## Q197410: WD97: How to Find Out Which Macro Is Assigned to a Menu Command
 
+{% raw %}
+
 	Article: Q197410
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -88,3 +90,5 @@ permalink: /kb/197/Q197410/
 	
 	=============================================================================
 	
+
+{% endraw %}

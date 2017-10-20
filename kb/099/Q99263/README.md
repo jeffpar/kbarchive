@@ -6,6 +6,8 @@ permalink: /kb/099/Q99263/
 
 ## Q99263: Installing Compaq 32-bit Fast SCSI-2 Drivers
 
+{% raw %}
+
 	Article: Q99263
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -125,3 +127,5 @@ permalink: /kb/099/Q99263/
 	
 	=============================================================================
 	
+
+{% endraw %}

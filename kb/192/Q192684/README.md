@@ -6,6 +6,8 @@ permalink: /kb/192/Q192684/
 
 ## Q192684: XCLN: Spelling Check Before Sending Ignored Sending from Office
 
+{% raw %}
+
 	Article: Q192684
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -54,3 +56,5 @@ permalink: /kb/192/Q192684/
 	
 	=============================================================================
 	
+
+{% endraw %}

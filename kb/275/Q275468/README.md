@@ -6,6 +6,8 @@ permalink: /kb/275/Q275468/
 
 ## Q275468: XCON: Events 9318 and 9322 Are Logged During RPC Communication
 
+{% raw %}
+
 	Article: Q275468
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -79,3 +81,5 @@ permalink: /kb/275/Q275468/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245521/
 
 ## Q245521: French Accented Characters Are Not Displayed in Uppercase
 
+{% raw %}
+
 	Article: Q245521
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/245/Q245521/
 	
 	=============================================================================
 	
+
+{% endraw %}

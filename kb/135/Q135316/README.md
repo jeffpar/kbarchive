@@ -6,6 +6,8 @@ permalink: /kb/135/Q135316/
 
 ## Q135316: Support for Sending User ID on Attach when AP_SAME Specified
 
+{% raw %}
+
 	Article: Q135316
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0
@@ -106,3 +108,5 @@ permalink: /kb/135/Q135316/
 	
 	=============================================================================
 	
+
+{% endraw %}

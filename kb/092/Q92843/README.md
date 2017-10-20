@@ -6,6 +6,8 @@ permalink: /kb/092/Q92843/
 
 ## Q92843: How to Obtain Network Versions of Microsoft Bookshelf
 
+{% raw %}
+
 	Article: Q92843
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/092/Q92843/
 	
 	=============================================================================
 	
+
+{% endraw %}

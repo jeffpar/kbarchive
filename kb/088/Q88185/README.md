@@ -6,6 +6,8 @@ permalink: /kb/088/Q88185/
 
 ## Q88185: WinLogin Version 1.0 Disk (3.5 Inch)
 
+{% raw %}
+
 	Article: Q88185
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -78,3 +80,5 @@ permalink: /kb/088/Q88185/
 	
 	=============================================================================
 	
+
+{% endraw %}

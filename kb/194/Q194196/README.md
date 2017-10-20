@@ -6,6 +6,8 @@ permalink: /kb/194/Q194196/
 
 ## Q194196: FIX: No Help File With Distributed App
 
+{% raw %}
+
 	Article: Q194196
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -133,3 +135,5 @@ permalink: /kb/194/Q194196/
 	
 	=============================================================================
 	
+
+{% endraw %}

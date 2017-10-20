@@ -6,6 +6,8 @@ permalink: /kb/095/Q95470/
 
 ## Q95470: Disabling Peer-To-Peer Network Functionality with WFWG
 
+{% raw %}
+
 	Article: Q95470
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -108,3 +110,5 @@ permalink: /kb/095/Q95470/
 	
 	=============================================================================
 	
+
+{% endraw %}

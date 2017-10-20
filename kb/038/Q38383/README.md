@@ -6,6 +6,8 @@ permalink: /kb/038/Q38383/
 
 ## Q38383: Include Directories Not Searched as Expected
 
+{% raw %}
+
 	Article: Q38383
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -100,3 +102,5 @@ permalink: /kb/038/Q38383/
 	   give the following message:
 	
 	      fatal error C1015:  cannot open include file 'child.h'
+
+{% endraw %}

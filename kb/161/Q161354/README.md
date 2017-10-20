@@ -6,6 +6,8 @@ permalink: /kb/161/Q161354/
 
 ## Q161354: BUG: SQLGetInfo Gives Incorrect Result for SQL_DRIVER_HSTMT
 
+{% raw %}
+
 	Article: Q161354
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/161/Q161354/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125750/
 
 ## Q125750: PRB: Error LNK2001: '_WinMain@16': Unresolved External Symbol
 
+{% raw %}
+
 	Article: Q125750
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,4.0,5.0,6.0
@@ -85,3 +87,5 @@ permalink: /kb/125/Q125750/
 	
 	=============================================================================
 	
+
+{% endraw %}

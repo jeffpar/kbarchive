@@ -6,6 +6,8 @@ permalink: /kb/100/Q100723/
 
 ## Q100723: HP PaintJet XL 300 Driver Limited to Eight Colors
 
+{% raw %}
+
 	Article: Q100723
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -52,3 +54,5 @@ permalink: /kb/100/Q100723/
 	
 	=============================================================================
 	
+
+{% endraw %}

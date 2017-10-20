@@ -6,6 +6,8 @@ permalink: /kb/259/Q259671/
 
 ## Q259671: How to Change the Default Installation Paths for FTP and the Web
 
+{% raw %}
+
 	Article: Q259671
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -111,3 +113,5 @@ permalink: /kb/259/Q259671/
 	
 	=============================================================================
 	
+
+{% endraw %}

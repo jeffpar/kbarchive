@@ -6,6 +6,8 @@ permalink: /kb/129/Q129639/
 
 ## Q129639: Kids: ErrMsg: Insufficient Resources to Run...
 
+{% raw %}
+
 	Article: Q129639
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1
@@ -71,3 +73,5 @@ permalink: /kb/129/Q129639/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187696/
 
 ## Q187696: Changes to Calculator in Service Pack 4
 
+{% raw %}
+
 	Article: Q187696
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -89,3 +91,5 @@ permalink: /kb/187/Q187696/
 	
 	=============================================================================
 	
+
+{% endraw %}

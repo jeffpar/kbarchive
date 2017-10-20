@@ -6,6 +6,8 @@ permalink: /kb/187/Q187621/
 
 ## Q187621: Msvbvm50.dll Missing From Building Applications with Outlook 98
 
+{% raw %}
+
 	Article: Q187621
 	Product(s): Microsoft Press
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/187/Q187621/
 	
 	=============================================================================
 	
+
+{% endraw %}

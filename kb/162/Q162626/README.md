@@ -6,6 +6,8 @@ permalink: /kb/162/Q162626/
 
 ## Q162626: RUI_READ Stops When Processing Buffers Larger Than 3 KB
 
+{% raw %}
+
 	Article: Q162626
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
@@ -80,3 +82,5 @@ permalink: /kb/162/Q162626/
 	
 	=============================================================================
 	
+
+{% endraw %}

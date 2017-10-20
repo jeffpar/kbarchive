@@ -6,6 +6,8 @@ permalink: /kb/151/Q151738/
 
 ## Q151738: Known Issues Concerning E-Mail on MSN
 
+{% raw %}
+
 	Article: Q151738
 	Product(s): The Microsoft Network
 	Version(s): 2.6,5.0,5.1,5.2
@@ -88,3 +90,5 @@ permalink: /kb/151/Q151738/
 	
 	=============================================================================
 	
+
+{% endraw %}

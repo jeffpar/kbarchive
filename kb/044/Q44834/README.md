@@ -6,6 +6,8 @@ permalink: /kb/044/Q44834/
 
 ## Q44834: Software/Hardware Required for Writing Windows Applications
 
+{% raw %}
+
 	Article: Q44834
 	Product(s): See article
 	Version(s): 5.10
@@ -62,3 +64,5 @@ permalink: /kb/044/Q44834/
 	run under DOS but not in the DOS compatibility box. Typing "WIN86"
 	(without the quotation marks) at the DOS prompt (or DOS box) initiates
 	a 80286 (not a 80386) session.
+
+{% endraw %}

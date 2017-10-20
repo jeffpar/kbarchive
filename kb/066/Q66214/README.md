@@ -6,6 +6,8 @@ permalink: /kb/066/Q66214/
 
 ## Q66214: C 5.10 _setlogorg Is Replaced by _setvieworg in C 6.00
 
+{% raw %}
+
 	Article: Q66214
 	Product(s): See article
 	Version(s): 6.00
@@ -38,3 +40,5 @@ permalink: /kb/066/Q66214/
 	{
 	     return(_setvieworg(x, y));
 	}
+
+{% endraw %}

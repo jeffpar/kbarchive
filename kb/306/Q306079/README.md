@@ -6,6 +6,8 @@ permalink: /kb/306/Q306079/
 
 ## Q306079: PRB: SET PROCEDURE TO Causes Unknown Error with FoxPro DLL
 
+{% raw %}
+
 	Article: Q306079
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0,7.0
@@ -93,3 +95,5 @@ permalink: /kb/306/Q306079/
 	
 	=============================================================================
 	
+
+{% endraw %}

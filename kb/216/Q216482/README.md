@@ -6,6 +6,8 @@ permalink: /kb/216/Q216482/
 
 ## Q216482: How to Control the Ciphers for SSL and TLS
 
+{% raw %}
+
 	Article: Q216482
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -83,3 +85,5 @@ permalink: /kb/216/Q216482/
 	
 	=============================================================================
 	
+
+{% endraw %}

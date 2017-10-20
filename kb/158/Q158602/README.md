@@ -6,6 +6,8 @@ permalink: /kb/158/Q158602/
 
 ## Q158602: WD97: Cannot Extend Selection Across Linked Text Boxes
 
+{% raw %}
+
 	Article: Q158602
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -46,3 +48,5 @@ permalink: /kb/158/Q158602/
 	
 	=============================================================================
 	
+
+{% endraw %}

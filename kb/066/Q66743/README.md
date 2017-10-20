@@ -6,6 +6,8 @@ permalink: /kb/066/Q66743/
 
 ## Q66743: GAMESHOP.EXE &quot;Error 05&quot;, Using SET COMSPEC=COMMAND.COM /E:n
 
+{% raw %}
+
 	Article: Q66743
 	Product(s): See article
 	Version(s): 4.50
@@ -61,3 +63,5 @@ permalink: /kb/066/Q66743/
 	GAMESHOP.EXE. You can still run QBI.EXE and run any game you want with
 	no problem. Because GAMESHOP.EXE uses a SHELL to run the games, the
 	invalid COMSPEC variable causes problems.
+
+{% endraw %}

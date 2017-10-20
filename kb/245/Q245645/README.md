@@ -6,6 +6,8 @@ permalink: /kb/245/Q245645/
 
 ## Q245645: XWEB: Exchange Server 5.5 SP 2 OWA Deletes Folder Permanently
 
+{% raw %}
+
 	Article: Q245645
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP2
@@ -59,3 +61,5 @@ permalink: /kb/245/Q245645/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122065/
 
 ## Q122065: WFWG Mail Causes Unexpected Hard Disk Activity
 
+{% raw %}
+
 	Article: Q122065
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -85,3 +87,5 @@ permalink: /kb/122/Q122065/
 	
 	=============================================================================
 	
+
+{% endraw %}

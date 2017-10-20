@@ -6,6 +6,8 @@ permalink: /kb/304/Q304497/
 
 ## Q304497: BUG: _wsetlocale Is Not Threadsafe
 
+{% raw %}
+
 	Article: Q304497
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -86,3 +88,5 @@ permalink: /kb/304/Q304497/
 	
 	=============================================================================
 	
+
+{% endraw %}

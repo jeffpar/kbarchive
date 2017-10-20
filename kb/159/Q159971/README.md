@@ -6,6 +6,8 @@ permalink: /kb/159/Q159971/
 
 ## Q159971: SetTimer() API Causes Memory Leak in the WOW Subsystem
 
+{% raw %}
+
 	Article: Q159971
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/159/Q159971/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/051/Q51723/
 
 ## Q51723: Error U1073 When &quot;.&quot; Used for Path in Inference Rule
 
+{% raw %}
+
 	Article: Q51723
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.01,1.1,1.11,1.12,1.13,1.2,1.3; OS/2:1.01,1.11,1.12,1.13,1.21
@@ -46,3 +48,5 @@ permalink: /kb/051/Q51723/
 	
 	=============================================================================
 	
+
+{% endraw %}

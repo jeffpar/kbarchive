@@ -6,6 +6,8 @@ permalink: /kb/106/Q106426/
 
 ## Q106426: ScanDisk May Perform Surface Scan Under Windows
 
+{% raw %}
+
 	Article: Q106426
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -44,3 +46,5 @@ permalink: /kb/106/Q106426/
 	
 	=============================================================================
 	
+
+{% endraw %}

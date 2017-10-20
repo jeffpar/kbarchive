@@ -6,6 +6,8 @@ permalink: /kb/104/Q104612/
 
 ## Q104612: Arcade: Description of Centipede
 
+{% raw %}
+
 	Article: Q104612
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,2.0
@@ -95,3 +97,5 @@ permalink: /kb/104/Q104612/
 	
 	=============================================================================
 	
+
+{% endraw %}

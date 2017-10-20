@@ -6,6 +6,8 @@ permalink: /kb/196/Q196670/
 
 ## Q196670: XWEB: OWA Causes an Access Violation in MAPI
 
+{% raw %}
+
 	Article: Q196670
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -125,3 +127,5 @@ permalink: /kb/196/Q196670/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/276/Q276522/
 
 ## Q276522: Server Stops TCP Session That Is Waiting on a Zero-Size Window
 
+{% raw %}
+
 	Article: Q276522
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -116,3 +118,5 @@ permalink: /kb/276/Q276522/
 	
 	=============================================================================
 	
+
+{% endraw %}

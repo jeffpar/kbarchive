@@ -6,6 +6,8 @@ permalink: /kb/252/Q252819/
 
 ## Q252819: XFOR: Read Receipt from cc:Mail Loses Content
 
+{% raw %}
+
 	Article: Q252819
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -79,3 +81,5 @@ permalink: /kb/252/Q252819/
 	
 	=============================================================================
 	
+
+{% endraw %}

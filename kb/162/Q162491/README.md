@@ -6,6 +6,8 @@ permalink: /kb/162/Q162491/
 
 ## Q162491: SNA Server Performance Degrades with Event 631 Errors
 
+{% raw %}
+
 	Article: Q162491
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,3.0
@@ -77,3 +79,5 @@ permalink: /kb/162/Q162491/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/090/Q90708/
 
 ## Q90708: WIN.INI Programs= Line, File Extensions, and Execution Order
 
+{% raw %}
+
 	Article: Q90708
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/090/Q90708/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/322/Q322051/
 
 ## Q322051: Programs May Not Connect to Server with Mismatched Security DLLs
 
+{% raw %}
+
 	Article: Q322051
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -136,3 +138,5 @@ permalink: /kb/322/Q322051/
 	
 	=============================================================================
 	
+
+{% endraw %}

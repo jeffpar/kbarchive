@@ -6,6 +6,8 @@ permalink: /kb/085/Q85982/
 
 ## Q85982: TI Microlaser 35 Turbo Won't Print from Selected Paper Tray
 
+{% raw %}
+
 	Article: Q85982
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/085/Q85982/
 	
 	=============================================================================
 	
+
+{% endraw %}

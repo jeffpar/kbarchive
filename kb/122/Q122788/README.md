@@ -6,6 +6,8 @@ permalink: /kb/122/Q122788/
 
 ## Q122788: FIX: Access Violation on MSVC.EXE When Scanning Dependencies
 
+{% raw %}
+
 	Article: Q122788
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -67,3 +69,5 @@ permalink: /kb/122/Q122788/
 	
 	=============================================================================
 	
+
+{% endraw %}

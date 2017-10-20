@@ -6,6 +6,8 @@ permalink: /kb/124/Q124621/
 
 ## Q124621: Scheduled Jobs Cannot Access User Environment Variables
 
+{% raw %}
+
 	Article: Q124621
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -61,3 +63,5 @@ permalink: /kb/124/Q124621/
 	
 	=============================================================================
 	
+
+{% endraw %}

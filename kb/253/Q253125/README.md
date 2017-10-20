@@ -6,6 +6,8 @@ permalink: /kb/253/Q253125/
 
 ## Q253125: RTF Control Can Be Used for Multilanguage Support in FoxPro
 
+{% raw %}
+
 	Article: Q253125
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -114,3 +116,5 @@ permalink: /kb/253/Q253125/
 	
 	=============================================================================
 	
+
+{% endraw %}

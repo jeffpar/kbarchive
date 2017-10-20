@@ -6,6 +6,8 @@ permalink: /kb/218/Q218972/
 
 ## Q218972: SAMPLE: How to Load and Display Graphics Files with LOADPIC.EXE
 
+{% raw %}
+
 	Article: Q218972
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -90,3 +92,5 @@ permalink: /kb/218/Q218972/
 	
 	=============================================================================
 	
+
+{% endraw %}

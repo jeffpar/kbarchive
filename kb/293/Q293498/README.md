@@ -6,6 +6,8 @@ permalink: /kb/293/Q293498/
 
 ## Q293498: The Computer Hangs with a Deadlock in Ndis.sys
 
+{% raw %}
+
 	Article: Q293498
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6a
@@ -84,3 +86,5 @@ permalink: /kb/293/Q293498/
 	
 	=============================================================================
 	
+
+{% endraw %}

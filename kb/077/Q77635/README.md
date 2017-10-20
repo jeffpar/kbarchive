@@ -6,6 +6,8 @@ permalink: /kb/077/Q77635/
 
 ## Q77635: Lotus 1-2-3 Version 3.1 Won't Start
 
+{% raw %}
+
 	Article: Q77635
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -249,3 +251,5 @@ permalink: /kb/077/Q77635/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177659/
 
 ## Q177659: Security Tab Missing in File Properties in Windows NT Explorer
 
+{% raw %}
+
 	Article: Q177659
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/177/Q177659/
 	
 	=============================================================================
 	
+
+{% endraw %}

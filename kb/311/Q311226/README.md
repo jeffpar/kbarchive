@@ -6,6 +6,8 @@ permalink: /kb/311/Q311226/
 
 ## Q311226: EU and Admin Client Traps If OU Name Longer than 64 Characters
 
+{% raw %}
+
 	Article: Q311226
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/311/Q311226/
 	
 	=============================================================================
 	
+
+{% endraw %}

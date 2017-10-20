@@ -6,6 +6,8 @@ permalink: /kb/049/Q49871/
 
 ## Q49871: PRB: Mixing Case of LINK Option Causes Error L1093 or D4002
 
+{% raw %}
+
 	Article: Q49871
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -66,3 +68,5 @@ permalink: /kb/049/Q49871/
 	
 	=============================================================================
 	
+
+{% endraw %}

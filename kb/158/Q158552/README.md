@@ -6,6 +6,8 @@ permalink: /kb/158/Q158552/
 
 ## Q158552: PRB: CPropertySheet::DoModal() or Create() Causes an Exception
 
+{% raw %}
+
 	Article: Q158552
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0,6.0
@@ -127,3 +129,5 @@ permalink: /kb/158/Q158552/
 	
 	=============================================================================
 	
+
+{% endraw %}

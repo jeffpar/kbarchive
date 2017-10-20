@@ -6,6 +6,8 @@ permalink: /kb/244/Q244831/
 
 ## Q244831: XCLN: How to Make Exchange Designer Forms Run on Term Serv
 
+{% raw %}
+
 	Article: Q244831
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0; winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/244/Q244831/
 	
 	=============================================================================
 	
+
+{% endraw %}

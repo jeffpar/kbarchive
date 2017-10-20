@@ -6,6 +6,8 @@ permalink: /kb/170/Q170256/
 
 ## Q170256: TweakUI Menu Speed Setting May Not Work Properly
 
+{% raw %}
+
 	Article: Q170256
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 4.0 95
@@ -72,3 +74,5 @@ permalink: /kb/170/Q170256/
 	
 	=============================================================================
 	
+
+{% endraw %}

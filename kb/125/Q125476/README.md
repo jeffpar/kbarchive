@@ -6,6 +6,8 @@ permalink: /kb/125/Q125476/
 
 ## Q125476: PRB: Error &quot;...MSVCRT20.DLL is not compatible with Win32s&quot;
 
+{% raw %}
+
 	Article: Q125476
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0 2.1 2.2 4.0 4.1
@@ -95,3 +97,5 @@ permalink: /kb/125/Q125476/
 	
 	=============================================================================
 	
+
+{% endraw %}

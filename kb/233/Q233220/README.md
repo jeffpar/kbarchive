@@ -6,6 +6,8 @@ permalink: /kb/233/Q233220/
 
 ## Q233220: STOP 0x1E in Win32k.sys with Many Programs Running
 
+{% raw %}
+
 	Article: Q233220
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -108,3 +110,5 @@ permalink: /kb/233/Q233220/
 	
 	=============================================================================
 	
+
+{% endraw %}

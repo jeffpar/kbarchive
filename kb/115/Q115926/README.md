@@ -6,6 +6,8 @@ permalink: /kb/115/Q115926/
 
 ## Q115926: Network Driver Error 7212 Sharing a Drive in File Manager
 
+{% raw %}
+
 	Article: Q115926
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -77,3 +79,5 @@ permalink: /kb/115/Q115926/
 	
 	=============================================================================
 	
+
+{% endraw %}

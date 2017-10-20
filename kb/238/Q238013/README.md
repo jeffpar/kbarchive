@@ -6,6 +6,8 @@ permalink: /kb/238/Q238013/
 
 ## Q238013: XADM: How to Disable a Mailbox in Exchange Server
 
+{% raw %}
+
 	Article: Q238013
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -74,3 +76,5 @@ permalink: /kb/238/Q238013/
 	
 	=============================================================================
 	
+
+{% endraw %}

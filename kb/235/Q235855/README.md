@@ -6,6 +6,8 @@ permalink: /kb/235/Q235855/
 
 ## Q235855: WD97: Invalid Page Fault in Module Mso97.dll When You Cut Text
 
+{% raw %}
+
 	Article: Q235855
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -85,3 +87,5 @@ permalink: /kb/235/Q235855/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/257/Q257728/
 
 ## Q257728: FIX: Client Winsock Control Doesn't Connect to Server Control
 
+{% raw %}
+
 	Article: Q257728
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -54,3 +56,5 @@ permalink: /kb/257/Q257728/
 	
 	=============================================================================
 	
+
+{% endraw %}

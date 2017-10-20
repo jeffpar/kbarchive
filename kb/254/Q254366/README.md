@@ -6,6 +6,8 @@ permalink: /kb/254/Q254366/
 
 ## Q254366: WD97: Inserted Excel Worksheet Object Too Large for Word Page
 
+{% raw %}
+
 	Article: Q254366
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/254/Q254366/
 	
 	=============================================================================
 	
+
+{% endraw %}

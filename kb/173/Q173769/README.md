@@ -6,6 +6,8 @@ permalink: /kb/173/Q173769/
 
 ## Q173769: FAQ: What Has Been Fixed in Visual FoxPro 5.0a?
 
+{% raw %}
+
 	Article: Q173769
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a
@@ -38,3 +40,5 @@ permalink: /kb/173/Q173769/
 	
 	=============================================================================
 	
+
+{% endraw %}

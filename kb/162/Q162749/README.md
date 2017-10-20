@@ -6,6 +6,8 @@ permalink: /kb/162/Q162749/
 
 ## Q162749: Using AOL's Internet Connection with Windows 3.1 Applications
 
+{% raw %}
+
 	Article: Q162749
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -88,3 +90,5 @@ permalink: /kb/162/Q162749/
 	
 	=============================================================================
 	
+
+{% endraw %}

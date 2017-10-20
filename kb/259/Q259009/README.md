@@ -6,6 +6,8 @@ permalink: /kb/259/Q259009/
 
 ## Q259009: XADM: Is SMTP Address Used by Hidden Recipient or Public Folder
 
+{% raw %}
+
 	Article: Q259009
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -60,3 +62,5 @@ permalink: /kb/259/Q259009/
 	
 	=============================================================================
 	
+
+{% endraw %}

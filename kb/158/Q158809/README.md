@@ -6,6 +6,8 @@ permalink: /kb/158/Q158809/
 
 ## Q158809: XCLN: NDR When Sending or Posting to a Folder
 
+{% raw %}
+
 	Article: Q158809
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -85,3 +87,5 @@ permalink: /kb/158/Q158809/
 	
 	=============================================================================
 	
+
+{% endraw %}

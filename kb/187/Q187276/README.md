@@ -6,6 +6,8 @@ permalink: /kb/187/Q187276/
 
 ## Q187276: XFOR: How the Notes Proxy Generator Works
 
+{% raw %}
+
 	Article: Q187276
 	Product(s): Microsoft Exchange
 	Version(s): 3.2,5.5
@@ -101,3 +103,5 @@ permalink: /kb/187/Q187276/
 	
 	=============================================================================
 	
+
+{% endraw %}

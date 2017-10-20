@@ -6,6 +6,8 @@ permalink: /kb/313/Q313530/
 
 ## Q313530: Microsoft FrontPage 2000 Step by Step Courseware Expert Skills C
 
+{% raw %}
+
 	Article: Q313530
 	Product(s): Microsoft Press
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/313/Q313530/
 	
 	=============================================================================
 	
+
+{% endraw %}

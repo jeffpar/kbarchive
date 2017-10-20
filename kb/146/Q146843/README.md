@@ -6,6 +6,8 @@ permalink: /kb/146/Q146843/
 
 ## Q146843: XCLN: Caption Fields Created in EFD Are Truncated
 
+{% raw %}
+
 	Article: Q146843
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -44,3 +46,5 @@ permalink: /kb/146/Q146843/
 	
 	=============================================================================
 	
+
+{% endraw %}

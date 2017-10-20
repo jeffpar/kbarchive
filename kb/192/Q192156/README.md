@@ -6,6 +6,8 @@ permalink: /kb/192/Q192156/
 
 ## Q192156: Y2K: NTMMTA Incorrectly Logs Dates after 1999
 
+{% raw %}
+
 	Article: Q192156
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -104,3 +106,5 @@ permalink: /kb/192/Q192156/
 	
 	=============================================================================
 	
+
+{% endraw %}

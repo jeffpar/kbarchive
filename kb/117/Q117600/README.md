@@ -6,6 +6,8 @@ permalink: /kb/117/Q117600/
 
 ## Q117600: MS-DOS 6.22 Supplemental Disk: Description &amp; How to Obtain
 
+{% raw %}
+
 	Article: Q117600
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -280,3 +282,5 @@ permalink: /kb/117/Q117600/
 	
 	=============================================================================
 	
+
+{% endraw %}

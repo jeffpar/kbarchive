@@ -6,6 +6,8 @@ permalink: /kb/163/Q163085/
 
 ## Q163085: XCON: MTA Logs Warning Events When Queues Reach Specified Sizes
 
+{% raw %}
+
 	Article: Q163085
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0 SP2,5.5
@@ -171,3 +173,5 @@ permalink: /kb/163/Q163085/
 	
 	=============================================================================
 	
+
+{% endraw %}

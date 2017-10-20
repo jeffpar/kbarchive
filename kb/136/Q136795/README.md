@@ -6,6 +6,8 @@ permalink: /kb/136/Q136795/
 
 ## Q136795: How to Change the Mouse Pointer
 
+{% raw %}
+
 	Article: Q136795
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/136/Q136795/
 	
 	=============================================================================
 	
+
+{% endraw %}

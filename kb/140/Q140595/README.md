@@ -6,6 +6,8 @@ permalink: /kb/140/Q140595/
 
 ## Q140595: DOC: How to Display Tool Tips After Calling EnableToolTips
 
+{% raw %}
+
 	Article: Q140595
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -136,3 +138,5 @@ permalink: /kb/140/Q140595/
 	
 	=============================================================================
 	
+
+{% endraw %}

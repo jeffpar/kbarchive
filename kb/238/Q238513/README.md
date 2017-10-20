@@ -6,6 +6,8 @@ permalink: /kb/238/Q238513/
 
 ## Q238513: PRB: Opening a ComboBox Prevents Timer Event Code from Executing
 
+{% raw %}
+
 	Article: Q238513
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -190,3 +192,5 @@ permalink: /kb/238/Q238513/
 	
 	=============================================================================
 	
+
+{% endraw %}

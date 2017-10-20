@@ -6,6 +6,8 @@ permalink: /kb/124/Q124363/
 
 ## Q124363: BUG: CREATE TABLE and CREATE INDEX Cause Error 42000
 
+{% raw %}
+
 	Article: Q124363
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -77,3 +79,5 @@ permalink: /kb/124/Q124363/
 	
 	=============================================================================
 	
+
+{% endraw %}

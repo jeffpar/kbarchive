@@ -6,6 +6,8 @@ permalink: /kb/186/Q186741/
 
 ## Q186741: XFOR: INS Error Msg.: 502 You Have No Permission to Talk
 
+{% raw %}
+
 	Article: Q186741
 	Product(s): Microsoft Exchange
 	Version(s): Winnt:5.5
@@ -81,3 +83,5 @@ permalink: /kb/186/Q186741/
 	
 	=============================================================================
 	
+
+{% endraw %}

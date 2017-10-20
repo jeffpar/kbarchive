@@ -6,6 +6,8 @@ permalink: /kb/167/Q167005/
 
 ## Q167005: XCLN: Forms Do Not Save Initial Text After Saving
 
+{% raw %}
+
 	Article: Q167005
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; Win95:4.0,5.0
@@ -47,3 +49,5 @@ permalink: /kb/167/Q167005/
 	
 	=============================================================================
 	
+
+{% endraw %}

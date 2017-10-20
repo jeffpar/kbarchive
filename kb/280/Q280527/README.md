@@ -6,6 +6,8 @@ permalink: /kb/280/Q280527/
 
 ## Q280527: XADM: Event 1016 Not Logged When Accessing Other User's Mailbox
 
+{% raw %}
+
 	Article: Q280527
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -54,3 +56,5 @@ permalink: /kb/280/Q280527/
 	
 	=============================================================================
 	
+
+{% endraw %}

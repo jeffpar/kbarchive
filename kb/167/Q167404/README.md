@@ -6,6 +6,8 @@ permalink: /kb/167/Q167404/
 
 ## Q167404: PRB: Problems with ODBC Setup PPC Control Panel
 
+{% raw %}
+
 	Article: Q167404
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:2.5
@@ -127,3 +129,5 @@ permalink: /kb/167/Q167404/
 	
 	=============================================================================
 	
+
+{% endraw %}

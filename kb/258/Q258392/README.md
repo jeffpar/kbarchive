@@ -6,6 +6,8 @@ permalink: /kb/258/Q258392/
 
 ## Q258392: Baseball 2001: Cannot Select Hardware Mode on Gateway Computer
 
+{% raw %}
+
 	Article: Q258392
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -65,3 +67,5 @@ permalink: /kb/258/Q258392/
 	
 	=============================================================================
 	
+
+{% endraw %}

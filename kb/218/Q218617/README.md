@@ -6,6 +6,8 @@ permalink: /kb/218/Q218617/
 
 ## Q218617: How to Troubleshoot CD-ROM or DVD-ROM Read Issues
 
+{% raw %}
+
 	Article: Q218617
 	Product(s): Microsoft Home Miscellaneous Products
 	Version(s): 
@@ -420,3 +422,5 @@ permalink: /kb/218/Q218617/
 	
 	=============================================================================
 	
+
+{% endraw %}

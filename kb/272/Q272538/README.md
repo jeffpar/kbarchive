@@ -6,6 +6,8 @@ permalink: /kb/272/Q272538/
 
 ## Q272538: Summary of Online Help for MSN Companion
 
+{% raw %}
+
 	Article: Q272538
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -57,3 +59,5 @@ permalink: /kb/272/Q272538/
 	
 	=============================================================================
 	
+
+{% endraw %}

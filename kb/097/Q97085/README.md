@@ -6,6 +6,8 @@ permalink: /kb/097/Q97085/
 
 ## Q97085: 3COM: Mail Moves Only in One Direction
 
+{% raw %}
+
 	Article: Q97085
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -67,3 +69,5 @@ permalink: /kb/097/Q97085/
 	
 	=============================================================================
 	
+
+{% endraw %}

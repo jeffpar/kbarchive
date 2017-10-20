@@ -6,6 +6,8 @@ permalink: /kb/237/Q237717/
 
 ## Q237717: NFL Fever 2000: Slow Frame Rate and Poor Graphics Performance
 
+{% raw %}
+
 	Article: Q237717
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -67,3 +69,5 @@ permalink: /kb/237/Q237717/
 	
 	=============================================================================
 	
+
+{% endraw %}

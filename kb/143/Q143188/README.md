@@ -6,6 +6,8 @@ permalink: /kb/143/Q143188/
 
 ## Q143188: Gopher Server Monitor Counters
 
+{% raw %}
+
 	Article: Q143188
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -161,3 +163,5 @@ permalink: /kb/143/Q143188/
 	
 	=============================================================================
 	
+
+{% endraw %}

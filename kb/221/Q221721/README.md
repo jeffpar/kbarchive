@@ -6,6 +6,8 @@ permalink: /kb/221/Q221721/
 
 ## Q221721: FIX: Mismatched Pushjmp/Popjmp With DataToClip( ) On Big Table
 
+{% raw %}
+
 	Article: Q221721
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a,6.0
@@ -101,3 +103,5 @@ permalink: /kb/221/Q221721/
 	
 	=============================================================================
 	
+
+{% endraw %}

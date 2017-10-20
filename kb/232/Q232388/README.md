@@ -6,6 +6,8 @@ permalink: /kb/232/Q232388/
 
 ## Q232388: XCON: MTA Content Conversion Error
 
+{% raw %}
+
 	Article: Q232388
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -101,3 +103,5 @@ permalink: /kb/232/Q232388/
 	
 	=============================================================================
 	
+
+{% endraw %}

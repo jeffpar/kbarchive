@@ -6,6 +6,8 @@ permalink: /kb/148/Q148976/
 
 ## Q148976: Err Msg: STOP 0x0000000A - SPP.SYS
 
+{% raw %}
+
 	Article: Q148976
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -58,3 +60,5 @@ permalink: /kb/148/Q148976/
 	
 	=============================================================================
 	
+
+{% endraw %}

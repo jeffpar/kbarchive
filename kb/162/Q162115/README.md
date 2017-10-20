@@ -6,6 +6,8 @@ permalink: /kb/162/Q162115/
 
 ## Q162115: FIX: &quot;Setup Error 280 Object &lt;n&gt;&quot; with Long File Names
 
+{% raw %}
+
 	Article: Q162115
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS: 5.0
@@ -74,3 +76,5 @@ permalink: /kb/162/Q162115/
 	
 	=============================================================================
 	
+
+{% endraw %}

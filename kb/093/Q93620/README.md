@@ -6,6 +6,8 @@ permalink: /kb/093/Q93620/
 
 ## Q93620: PRB: Cannot Find Transport Program
 
+{% raw %}
+
 	Article: Q93620
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
@@ -98,3 +100,5 @@ permalink: /kb/093/Q93620/
 	
 	=============================================================================
 	
+
+{% endraw %}

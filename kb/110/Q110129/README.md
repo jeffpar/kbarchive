@@ -6,6 +6,8 @@ permalink: /kb/110/Q110129/
 
 ## Q110129: INF: Microsoft ODBC Desktop Database Drivers 1.0 README.TXT
 
+{% raw %}
+
 	Article: Q110129
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -288,3 +290,5 @@ permalink: /kb/110/Q110129/
 	
 	=============================================================================
 	
+
+{% endraw %}

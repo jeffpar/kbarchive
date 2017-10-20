@@ -6,6 +6,8 @@ permalink: /kb/088/Q88467/
 
 ## Q88467: Problems with Some Video Drivers Running at 32,000 Colors
 
+{% raw %}
+
 	Article: Q88467
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -35,3 +37,5 @@ permalink: /kb/088/Q88467/
 	
 	=============================================================================
 	
+
+{% endraw %}

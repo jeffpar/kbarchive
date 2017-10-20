@@ -6,6 +6,8 @@ permalink: /kb/274/Q274183/
 
 ## Q274183: XADM: How to Rename a Public Folder
 
+{% raw %}
+
 	Article: Q274183
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -58,3 +60,5 @@ permalink: /kb/274/Q274183/
 	
 	=============================================================================
 	
+
+{% endraw %}

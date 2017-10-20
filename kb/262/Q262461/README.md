@@ -6,6 +6,8 @@ permalink: /kb/262/Q262461/
 
 ## Q262461: Terminal Server Client Truncates Server Name to 32 Characters
 
+{% raw %}
+
 	Article: Q262461
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/262/Q262461/
 	
 	=============================================================================
 	
+
+{% endraw %}

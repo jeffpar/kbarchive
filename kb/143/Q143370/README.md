@@ -6,6 +6,8 @@ permalink: /kb/143/Q143370/
 
 ## Q143370: Explorapedia Nature: Setup Runs Each Time You Insert the CD
 
+{% raw %}
+
 	Article: Q143370
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.2 (UK only)
@@ -115,3 +117,5 @@ permalink: /kb/143/Q143370/
 	
 	=============================================================================
 	
+
+{% endraw %}

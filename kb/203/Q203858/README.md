@@ -6,6 +6,8 @@ permalink: /kb/203/Q203858/
 
 ## Q203858: HOWTO: Use the HrMailboxLogon Function
 
+{% raw %}
+
 	Article: Q203858
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -101,3 +103,5 @@ permalink: /kb/203/Q203858/
 	
 	=============================================================================
 	
+
+{% endraw %}

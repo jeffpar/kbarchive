@@ -6,6 +6,8 @@ permalink: /kb/182/Q182439/
 
 ## Q182439: How to Disable Start&#92;Help
 
+{% raw %}
+
 	Article: Q182439
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -93,3 +95,5 @@ permalink: /kb/182/Q182439/
 	
 	=============================================================================
 	
+
+{% endraw %}

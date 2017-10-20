@@ -6,6 +6,8 @@ permalink: /kb/141/Q141748/
 
 ## Q141748: Mac Encarta: Older Version of QuickTime Fails to Start
 
+{% raw %}
+
 	Article: Q141748
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,1996 edition,1997 edition
@@ -141,3 +143,5 @@ permalink: /kb/141/Q141748/
 	
 	=============================================================================
 	
+
+{% endraw %}

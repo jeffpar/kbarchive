@@ -6,6 +6,8 @@ permalink: /kb/152/Q152937/
 
 ## Q152937: XADM: Multipart MIME Message with TNEF Causes Store Failure
 
+{% raw %}
+
 	Article: Q152937
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -196,3 +198,5 @@ permalink: /kb/152/Q152937/
 	
 	=============================================================================
 	
+
+{% endraw %}

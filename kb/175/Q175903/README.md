@@ -6,6 +6,8 @@ permalink: /kb/175/Q175903/
 
 ## Q175903: ARI Bit Mismatch
 
+{% raw %}
+
 	Article: Q175903
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11,95; winnt:3.0,3.5,3.51,4.0
@@ -110,3 +112,5 @@ permalink: /kb/175/Q175903/
 	
 	=============================================================================
 	
+
+{% endraw %}

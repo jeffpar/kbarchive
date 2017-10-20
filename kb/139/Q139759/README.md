@@ -6,6 +6,8 @@ permalink: /kb/139/Q139759/
 
 ## Q139759: FIX: CDatabase::ExecuteSQL() Fails with UNICODE Build
 
+{% raw %}
+
 	Article: Q139759
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -95,3 +97,5 @@ permalink: /kb/139/Q139759/
 	
 	=============================================================================
 	
+
+{% endraw %}

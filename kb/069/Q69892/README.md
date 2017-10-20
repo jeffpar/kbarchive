@@ -6,6 +6,8 @@ permalink: /kb/069/Q69892/
 
 ## Q69892: DOCERR: DEF File Exports Statement Documentation Error
 
+{% raw %}
+
 	Article: Q69892
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -51,3 +53,5 @@ permalink: /kb/069/Q69892/
 	
 	=============================================================================
 	
+
+{% endraw %}

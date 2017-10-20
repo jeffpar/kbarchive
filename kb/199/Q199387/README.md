@@ -6,6 +6,8 @@ permalink: /kb/199/Q199387/
 
 ## Q199387: XADM: Replication Stops with Event ID 1188, 1083, and 1059
 
+{% raw %}
+
 	Article: Q199387
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -99,3 +101,5 @@ permalink: /kb/199/Q199387/
 	
 	=============================================================================
 	
+
+{% endraw %}

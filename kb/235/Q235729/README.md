@@ -6,6 +6,8 @@ permalink: /kb/235/Q235729/
 
 ## Q235729: SMS: Silent Unattended Setup for SMS 2.0 Service Packs
 
+{% raw %}
+
 	Article: Q235729
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -53,3 +55,5 @@ permalink: /kb/235/Q235729/
 	
 	=============================================================================
 	
+
+{% endraw %}

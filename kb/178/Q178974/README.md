@@ -6,6 +6,8 @@ permalink: /kb/178/Q178974/
 
 ## Q178974: Encarta: Images Lose Quality when Copied and Pasted
 
+{% raw %}
+
 	Article: Q178974
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -97,3 +99,5 @@ permalink: /kb/178/Q178974/
 	
 	=============================================================================
 	
+
+{% endraw %}

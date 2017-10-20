@@ -6,6 +6,8 @@ permalink: /kb/155/Q155424/
 
 ## Q155424: Windows NT Domain Does Not Accept New Domain Password
 
+{% raw %}
+
 	Article: Q155424
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/155/Q155424/
 	
 	=============================================================================
 	
+
+{% endraw %}

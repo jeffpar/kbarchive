@@ -6,6 +6,8 @@ permalink: /kb/105/Q105232/
 
 ## Q105232: Using RAS 1.1a Client with Workgroup Connection for MS-DOS
 
+{% raw %}
+
 	Article: Q105232
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -68,3 +70,5 @@ permalink: /kb/105/Q105232/
 	
 	=============================================================================
 	
+
+{% endraw %}

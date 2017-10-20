@@ -6,6 +6,8 @@ permalink: /kb/137/Q137178/
 
 ## Q137178: Microsoft Exchange Cannot Open Custom Dictionary
 
+{% raw %}
+
 	Article: Q137178
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -97,3 +99,5 @@ permalink: /kb/137/Q137178/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/071/Q71023/
 
 ## Q71023: Authoring Device-Independent MIDI Files
 
+{% raw %}
+
 	Article: Q71023
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0
@@ -69,3 +71,5 @@ permalink: /kb/071/Q71023/
 	
 	=============================================================================
 	
+
+{% endraw %}

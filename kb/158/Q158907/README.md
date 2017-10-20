@@ -6,6 +6,8 @@ permalink: /kb/158/Q158907/
 
 ## Q158907: Msbatch.inf Parameters: Installing Clipboard Viewer
 
+{% raw %}
+
 	Article: Q158907
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -73,3 +75,5 @@ permalink: /kb/158/Q158907/
 	
 	=============================================================================
 	
+
+{% endraw %}

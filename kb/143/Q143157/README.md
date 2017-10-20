@@ -6,6 +6,8 @@ permalink: /kb/143/Q143157/
 
 ## Q143157: FTP Server Service Does Not Start
 
+{% raw %}
+
 	Article: Q143157
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -61,3 +63,5 @@ permalink: /kb/143/Q143157/
 	
 	=============================================================================
 	
+
+{% endraw %}

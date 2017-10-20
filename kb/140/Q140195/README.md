@@ -6,6 +6,8 @@ permalink: /kb/140/Q140195/
 
 ## Q140195: PRB: The Word &quot;Setup&quot; Is Appended to Application Title
 
+{% raw %}
+
 	Article: Q140195
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/140/Q140195/
 	
 	=============================================================================
 	
+
+{% endraw %}

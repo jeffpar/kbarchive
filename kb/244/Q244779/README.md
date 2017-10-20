@@ -6,6 +6,8 @@ permalink: /kb/244/Q244779/
 
 ## Q244779: HOWTO: Refresh a Parameterized DataReport
 
+{% raw %}
+
 	Article: Q244779
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -99,3 +101,5 @@ permalink: /kb/244/Q244779/
 	
 	=============================================================================
 	
+
+{% endraw %}

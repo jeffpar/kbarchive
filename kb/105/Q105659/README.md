@@ -6,6 +6,8 @@ permalink: /kb/105/Q105659/
 
 ## Q105659: ADT: How to Direct DDE to a Specific Instance of a Server
 
+{% raw %}
+
 	Article: Q105659
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:1.0,1.1,2.0
@@ -167,3 +169,5 @@ permalink: /kb/105/Q105659/
 	
 	=============================================================================
 	
+
+{% endraw %}

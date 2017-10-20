@@ -6,6 +6,8 @@ permalink: /kb/130/Q130290/
 
 ## Q130290: DCA Irma for Macintosh Client Does Not Understand Master Domain
 
+{% raw %}
+
 	Article: Q130290
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -57,3 +59,5 @@ permalink: /kb/130/Q130290/
 	
 	=============================================================================
 	
+
+{% endraw %}

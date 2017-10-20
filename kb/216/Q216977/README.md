@@ -6,6 +6,8 @@ permalink: /kb/216/Q216977/
 
 ## Q216977: FIX: C2233 on User-Defined Type Array Member of Template Class
 
+{% raw %}
+
 	Article: Q216977
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -100,3 +102,5 @@ permalink: /kb/216/Q216977/
 	
 	=============================================================================
 	
+
+{% endraw %}

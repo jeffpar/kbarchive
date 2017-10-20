@@ -6,6 +6,8 @@ permalink: /kb/191/Q191477/
 
 ## Q191477: BUG: Overflow of Number in RowHeight Property Allowed
 
+{% raw %}
+
 	Article: Q191477
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/191/Q191477/
 	
 	=============================================================================
 	
+
+{% endraw %}

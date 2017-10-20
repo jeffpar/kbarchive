@@ -6,6 +6,8 @@ permalink: /kb/237/Q237919/
 
 ## Q237919: XCLN: Newprof Only Supports Variable Names under Windows NT
 
+{% raw %}
+
 	Article: Q237919
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:95,98
@@ -53,3 +55,5 @@ permalink: /kb/237/Q237919/
 	
 	=============================================================================
 	
+
+{% endraw %}

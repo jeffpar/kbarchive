@@ -6,6 +6,8 @@ permalink: /kb/062/Q62231/
 
 ## Q62231: Mac Form: Graphics Not Appearing in Custom Form
 
+{% raw %}
+
 	Article: Q62231
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -46,3 +48,5 @@ permalink: /kb/062/Q62231/
 	
 	=============================================================================
 	
+
+{% endraw %}

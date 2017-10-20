@@ -6,6 +6,8 @@ permalink: /kb/192/Q192775/
 
 ## Q192775: XCLN: Outlook Web Access Cannot Use Contacts in Public Folder
 
+{% raw %}
+
 	Article: Q192775
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -71,3 +73,5 @@ permalink: /kb/192/Q192775/
 	
 	=============================================================================
 	
+
+{% endraw %}

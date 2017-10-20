@@ -6,6 +6,8 @@ permalink: /kb/139/Q139348/
 
 ## Q139348: HOWTO: Set a Filter Using an Item Selected from a Combo Box
 
+{% raw %}
+
 	Article: Q139348
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/139/Q139348/
 	
 	=============================================================================
 	
+
+{% endraw %}

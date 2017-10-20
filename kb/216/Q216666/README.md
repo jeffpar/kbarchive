@@ -6,6 +6,8 @@ permalink: /kb/216/Q216666/
 
 ## Q216666: PRB: DataBound Controls Not Refreshed With DataEnvironment
 
+{% raw %}
+
 	Article: Q216666
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -113,3 +115,5 @@ permalink: /kb/216/Q216666/
 	
 	=============================================================================
 	
+
+{% endraw %}

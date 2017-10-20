@@ -6,6 +6,8 @@ permalink: /kb/163/Q163004/
 
 ## Q163004: &quot;Pack and Go Setup Was Unable to Install...&quot; Trying to Unpack
 
+{% raw %}
+
 	Article: Q163004
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -79,3 +81,5 @@ permalink: /kb/163/Q163004/
 	
 	=============================================================================
 	
+
+{% endraw %}

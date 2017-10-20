@@ -6,6 +6,8 @@ permalink: /kb/059/Q59977/
 
 ## Q59977: Mac Hyp: Using HyperCard Global Variables for Error Checking
 
+{% raw %}
+
 	Article: Q59977
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -62,3 +64,5 @@ permalink: /kb/059/Q59977/
 	
 	=============================================================================
 	
+
+{% endraw %}

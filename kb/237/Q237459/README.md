@@ -6,6 +6,8 @@ permalink: /kb/237/Q237459/
 
 ## Q237459: XCLN: Move Server Wizard Does Not Properly Reset Free/Busy Info
 
+{% raw %}
+
 	Article: Q237459
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -110,3 +112,5 @@ permalink: /kb/237/Q237459/
 	
 	=============================================================================
 	
+
+{% endraw %}

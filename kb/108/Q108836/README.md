@@ -6,6 +6,8 @@ permalink: /kb/108/Q108836/
 
 ## Q108836: PC Gen: PODIAG.INI Entries in &#91;Microsoft Mail PO Diagnostics&#93;
 
+{% raw %}
+
 	Article: Q108836
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -182,3 +184,5 @@ permalink: /kb/108/Q108836/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166194/
 
 ## Q166194: WD97: How To Hide The Full Screen Toolbar Using VB Code
 
+{% raw %}
+
 	Article: Q166194
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -88,3 +90,5 @@ permalink: /kb/166/Q166194/
 	
 	=============================================================================
 	
+
+{% endraw %}

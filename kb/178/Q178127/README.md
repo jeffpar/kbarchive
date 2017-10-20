@@ -6,6 +6,8 @@ permalink: /kb/178/Q178127/
 
 ## Q178127: HOWTO: Adjust RowHeight of MSFlexGrid to Accommodate WordWrap
 
+{% raw %}
+
 	Article: Q178127
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -163,3 +165,5 @@ permalink: /kb/178/Q178127/
 	
 	=============================================================================
 	
+
+{% endraw %}

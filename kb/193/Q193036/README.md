@@ -6,6 +6,8 @@ permalink: /kb/193/Q193036/
 
 ## Q193036: BUG: &quot;On Error Resume Next&quot; Enters Infinite Loop in Native Code
 
+{% raw %}
+
 	Article: Q193036
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -101,3 +103,5 @@ permalink: /kb/193/Q193036/
 	
 	=============================================================================
 	
+
+{% endraw %}

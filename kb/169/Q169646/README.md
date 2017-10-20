@@ -6,6 +6,8 @@ permalink: /kb/169/Q169646/
 
 ## Q169646: XADM: Simeon 4.1.1 Does Not Support Multipart/Related Messages
 
+{% raw %}
+
 	Article: Q169646
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -62,3 +64,5 @@ permalink: /kb/169/Q169646/
 	
 	=============================================================================
 	
+
+{% endraw %}

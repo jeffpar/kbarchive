@@ -6,6 +6,8 @@ permalink: /kb/097/Q97025/
 
 ## Q97025: PC WRmt: Subject-Line Length Limited to 40 Characters
 
+{% raw %}
+
 	Article: Q97025
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -52,3 +54,5 @@ permalink: /kb/097/Q97025/
 	
 	=============================================================================
 	
+
+{% endraw %}

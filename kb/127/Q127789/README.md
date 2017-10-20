@@ -6,6 +6,8 @@ permalink: /kb/127/Q127789/
 
 ## Q127789: LAN Manager Clients Cannot See Windows NT Computers
 
+{% raw %}
+
 	Article: Q127789
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -160,3 +162,5 @@ permalink: /kb/127/Q127789/
 	
 	=============================================================================
 	
+
+{% endraw %}

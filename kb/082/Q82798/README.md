@@ -6,6 +6,8 @@ permalink: /kb/082/Q82798/
 
 ## Q82798: TrueType and Graphics on HP LaserJet Printers
 
+{% raw %}
+
 	Article: Q82798
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/082/Q82798/
 	
 	=============================================================================
 	
+
+{% endraw %}

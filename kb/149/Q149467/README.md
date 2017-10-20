@@ -6,6 +6,8 @@ permalink: /kb/149/Q149467/
 
 ## Q149467: Unable to Install New Software in Windows 95
 
+{% raw %}
+
 	Article: Q149467
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/149/Q149467/
 	
 	=============================================================================
 	
+
+{% endraw %}

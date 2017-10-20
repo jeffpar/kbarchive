@@ -6,6 +6,8 @@ permalink: /kb/027/Q27490/
 
 ## Q27490: FUNCTION Fails to Return Zero by Default When Compiled as .EXE
 
+{% raw %}
+
 	Article: Q27490
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -49,3 +51,5 @@ permalink: /kb/027/Q27490/
 	     ' fun%=0   ' This line can be added as a workaround.
 	   IF i% <= 5 THEN fun% = 99
 	   END FUNCTION
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181547/
 
 ## Q181547: SMS: Office 97 PDF Inventory Properties Are Incorrect
 
+{% raw %}
+
 	Article: Q181547
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -126,3 +128,5 @@ permalink: /kb/181/Q181547/
 	
 	=============================================================================
 	
+
+{% endraw %}

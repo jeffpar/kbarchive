@@ -6,6 +6,8 @@ permalink: /kb/214/Q214598/
 
 ## Q214598: WD97: Merge to Printer Causes &quot;Fields Nested Too Deeply&quot; Error
 
+{% raw %}
+
 	Article: Q214598
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -67,3 +69,5 @@ permalink: /kb/214/Q214598/
 	
 	=============================================================================
 	
+
+{% endraw %}

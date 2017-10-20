@@ -6,6 +6,8 @@ permalink: /kb/257/Q257273/
 
 ## Q257273: Err Msg: Unable to Locate the BackOffice 4.5 Product Directory
 
+{% raw %}
+
 	Article: Q257273
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:4.5
@@ -113,3 +115,5 @@ permalink: /kb/257/Q257273/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195523/
 
 ## Q195523: XFOR: Notes Shortname Field Might Not Be Synchronized
 
+{% raw %}
+
 	Article: Q195523
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -70,3 +72,5 @@ permalink: /kb/195/Q195523/
 	
 	=============================================================================
 	
+
+{% endraw %}

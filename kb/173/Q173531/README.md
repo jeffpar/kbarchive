@@ -6,6 +6,8 @@ permalink: /kb/173/Q173531/
 
 ## Q173531: How to Configure Printers on FPNW to Service Pserver.nlm
 
+{% raw %}
+
 	Article: Q173531
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -224,3 +226,5 @@ permalink: /kb/173/Q173531/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166822/
 
 ## Q166822: Remote Password Change Works Incorrectly to Down-Level Server
 
+{% raw %}
+
 	Article: Q166822
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0; :
@@ -96,3 +98,5 @@ permalink: /kb/166/Q166822/
 	
 	=============================================================================
 	
+
+{% endraw %}

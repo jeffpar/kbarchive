@@ -6,6 +6,8 @@ permalink: /kb/166/Q166323/
 
 ## Q166323: Zone: How to Disable Prompt When You Receive a Cookie
 
+{% raw %}
+
 	Article: Q166323
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -137,3 +139,5 @@ permalink: /kb/166/Q166323/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188222/
 
 ## Q188222: XFOR: Cannot Open SMTP Messages that Contain Attachments
 
+{% raw %}
+
 	Article: Q188222
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -56,3 +58,5 @@ permalink: /kb/188/Q188222/
 	
 	=============================================================================
 	
+
+{% endraw %}

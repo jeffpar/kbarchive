@@ -6,6 +6,8 @@ permalink: /kb/033/Q33488/
 
 ## Q33488: QuickBASIC 4.00b UPDATE.DOC: Adds ON UEVENT to Trap Events
 
+{% raw %}
+
 	Article: Q33488
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -88,3 +90,5 @@ permalink: /kb/033/Q33488/
 	The effect of UEVENT parallels that of other event-trapping
 	statements. For example, UEVENT ON enables a user-defined event trap
 	that you previously set up with an ON UEVENT GOSUB statement.
+
+{% endraw %}

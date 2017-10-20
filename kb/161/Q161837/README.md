@@ -6,6 +6,8 @@ permalink: /kb/161/Q161837/
 
 ## Q161837: HOWTO: Create a DCOM Client/Server Application
 
+{% raw %}
+
 	Article: Q161837
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -553,3 +555,5 @@ permalink: /kb/161/Q161837/
 	
 	=============================================================================
 	
+
+{% endraw %}

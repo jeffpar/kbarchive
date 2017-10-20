@@ -6,6 +6,8 @@ permalink: /kb/026/Q26478/
 
 ## Q26478: DOS APPEND Path Can Affect Make EXE File Command in QB/QBX.EXE
 
+{% raw %}
+
 	Article: Q26478
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -52,3 +54,5 @@ permalink: /kb/026/Q26478/
 	
 	To work around this problem, put BC.EXE in a subdirectory other than
 	the one specified by the DOS APPEND command.
+
+{% endraw %}

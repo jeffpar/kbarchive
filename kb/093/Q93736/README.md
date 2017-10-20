@@ -6,6 +6,8 @@ permalink: /kb/093/Q93736/
 
 ## Q93736: Enabling the Microsoft TCP/IP Protocol with WFWG 3.1
 
+{% raw %}
+
 	Article: Q93736
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:
@@ -264,3 +266,5 @@ permalink: /kb/093/Q93736/
 	
 	=============================================================================
 	
+
+{% endraw %}

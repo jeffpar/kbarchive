@@ -6,6 +6,8 @@ permalink: /kb/176/Q176194/
 
 ## Q176194: XFOR: Messages Fail to Process When No PRMD Defined
 
+{% raw %}
+
 	Article: Q176194
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -60,3 +62,5 @@ permalink: /kb/176/Q176194/
 	
 	=============================================================================
 	
+
+{% endraw %}

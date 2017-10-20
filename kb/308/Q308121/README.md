@@ -6,6 +6,8 @@ permalink: /kb/308/Q308121/
 
 ## Q308121: ELL: Movie Stops on the First Frame
 
+{% raw %}
+
 	Article: Q308121
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -131,3 +133,5 @@ permalink: /kb/308/Q308121/
 	
 	=============================================================================
 	
+
+{% endraw %}

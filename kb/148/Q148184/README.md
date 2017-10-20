@@ -6,6 +6,8 @@ permalink: /kb/148/Q148184/
 
 ## Q148184: BUG: Large Fonts Cause SETFONT() to Fail in Scigraph Demo
 
+{% raw %}
+
 	Article: Q148184
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -101,3 +103,5 @@ permalink: /kb/148/Q148184/
 	
 	=============================================================================
 	
+
+{% endraw %}

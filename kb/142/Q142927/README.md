@@ -6,6 +6,8 @@ permalink: /kb/142/Q142927/
 
 ## Q142927: BUG: First of Two Bound Masked Edit Controls Clears on AddNew
 
+{% raw %}
+
 	Article: Q142927
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -91,3 +93,5 @@ permalink: /kb/142/Q142927/
 	
 	=============================================================================
 	
+
+{% endraw %}

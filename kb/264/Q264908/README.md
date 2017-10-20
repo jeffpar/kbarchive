@@ -6,6 +6,8 @@ permalink: /kb/264/Q264908/
 
 ## Q264908: Err Msg: HTTP 403.15 Forbidden: Client Access Licenses Exceeded
 
+{% raw %}
+
 	Article: Q264908
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -168,3 +170,5 @@ permalink: /kb/264/Q264908/
 	
 	=============================================================================
 	
+
+{% endraw %}

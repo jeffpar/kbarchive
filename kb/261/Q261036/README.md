@@ -6,6 +6,8 @@ permalink: /kb/261/Q261036/
 
 ## Q261036: MCM2: Textures of the Motorcycles and Riders Appear Distorted
 
+{% raw %}
+
 	Article: Q261036
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -78,3 +80,5 @@ permalink: /kb/261/Q261036/
 	
 	=============================================================================
 	
+
+{% endraw %}

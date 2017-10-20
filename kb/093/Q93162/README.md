@@ -6,6 +6,8 @@ permalink: /kb/093/Q93162/
 
 ## Q93162: BUG: Cannot Watch Undimensioned Array
 
+{% raw %}
+
 	Article: Q93162
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.1
@@ -68,3 +70,5 @@ permalink: /kb/093/Q93162/
 	
 	=============================================================================
 	
+
+{% endraw %}

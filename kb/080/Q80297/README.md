@@ -6,6 +6,8 @@ permalink: /kb/080/Q80297/
 
 ## Q80297: FASTOPEN Should Not Be Used with Speed Disk or Compress
 
+{% raw %}
+
 	Article: Q80297
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.01,5.0,6.0,6.2,6.21,6.22
@@ -66,3 +68,5 @@ permalink: /kb/080/Q80297/
 	
 	=============================================================================
 	
+
+{% endraw %}

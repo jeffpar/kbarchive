@@ -6,6 +6,8 @@ permalink: /kb/143/Q143003/
 
 ## Q143003: Description of Microsoft Windows 95 Service Pack 1 Updates
 
+{% raw %}
+
 	Article: Q143003
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -219,3 +221,5 @@ permalink: /kb/143/Q143003/
 	
 	=============================================================================
 	
+
+{% endraw %}

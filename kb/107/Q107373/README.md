@@ -6,6 +6,8 @@ permalink: /kb/107/Q107373/
 
 ## Q107373: WFWG 3.11: Hardware Compatibility List - Computers
 
+{% raw %}
+
 	Article: Q107373
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -549,3 +551,5 @@ permalink: /kb/107/Q107373/
 	
 	=============================================================================
 	
+
+{% endraw %}

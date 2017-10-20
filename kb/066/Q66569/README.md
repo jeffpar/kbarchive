@@ -6,6 +6,8 @@ permalink: /kb/066/Q66569/
 
 ## Q66569: LIB Version 3.17 Available for Increased Library Capacity
 
+{% raw %}
+
 	Article: Q66569
 	Product(s): See article
 	Version(s): 3.17   | 3.17
@@ -47,3 +49,5 @@ permalink: /kb/066/Q66569/
 	previous versions. Any questions concerning the usage, command syntax,
 	or options for this version can be addressed by referring to existing
 	LIB documentation.
+
+{% endraw %}

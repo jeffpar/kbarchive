@@ -6,6 +6,8 @@ permalink: /kb/260/Q260839/
 
 ## Q260839: XADM: Installing DMS ADC Prevents Site Replication
 
+{% raw %}
+
 	Article: Q260839
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -93,3 +95,5 @@ permalink: /kb/260/Q260839/
 	
 	=============================================================================
 	
+
+{% endraw %}

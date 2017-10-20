@@ -6,6 +6,8 @@ permalink: /kb/201/Q201860/
 
 ## Q201860: SMSINST: Installer Uninstall Feature Truncates Registry Values
 
+{% raw %}
+
 	Article: Q201860
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -80,3 +82,5 @@ permalink: /kb/201/Q201860/
 	
 	=============================================================================
 	
+
+{% endraw %}

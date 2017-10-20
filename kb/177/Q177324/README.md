@@ -6,6 +6,8 @@ permalink: /kb/177/Q177324/
 
 ## Q177324: Setting Column Widths in My Computer Details View
 
+{% raw %}
+
 	Article: Q177324
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0;Windows:95
@@ -48,3 +50,5 @@ permalink: /kb/177/Q177324/
 	
 	=============================================================================
 	
+
+{% endraw %}

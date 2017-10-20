@@ -6,6 +6,8 @@ permalink: /kb/118/Q118604/
 
 ## Q118604: WFWG 3.11 NDIS 2 Net Adapter Drivers Not Included in WGAO 3.11
 
+{% raw %}
+
 	Article: Q118604
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): MS-DOS:3.11
@@ -62,3 +64,5 @@ permalink: /kb/118/Q118604/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177996/
 
 ## Q177996: BUG: UserControl Event Is Not Raised from a Modal Form
 
+{% raw %}
+
 	Article: Q177996
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -147,3 +149,5 @@ permalink: /kb/177/Q177996/
 	
 	=============================================================================
 	
+
+{% endraw %}

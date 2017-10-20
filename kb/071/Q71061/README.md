@@ -6,6 +6,8 @@ permalink: /kb/071/Q71061/
 
 ## Q71061: MenuBmp.exe Contains Owner-Draw Menus with Bitmaps
 
+{% raw %}
+
 	Article: Q71061
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -106,3 +108,5 @@ permalink: /kb/071/Q71061/
 	
 	=============================================================================
 	
+
+{% endraw %}

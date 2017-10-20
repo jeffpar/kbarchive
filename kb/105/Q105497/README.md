@@ -6,6 +6,8 @@ permalink: /kb/105/Q105497/
 
 ## Q105497: Directory Picker Sample Using Modified CFileDialog
 
+{% raw %}
+
 	Article: Q105497
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1
@@ -118,3 +120,5 @@ permalink: /kb/105/Q105497/
 	
 	=============================================================================
 	
+
+{% endraw %}

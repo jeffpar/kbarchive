@@ -6,6 +6,8 @@ permalink: /kb/262/Q262093/
 
 ## Q262093: XCLN: Messages Forwarded from Inbox Do Not Appear in Sent Items
 
+{% raw %}
+
 	Article: Q262093
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/262/Q262093/
 	
 	=============================================================================
 	
+
+{% endraw %}

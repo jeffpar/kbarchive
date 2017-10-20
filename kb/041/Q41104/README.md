@@ -6,6 +6,8 @@ permalink: /kb/041/Q41104/
 
 ## Q41104: DOC: Libraries Added by Comment pragma Appear After Default
 
+{% raw %}
+
 	Article: Q41104
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,5.0,6.0
@@ -53,3 +55,5 @@ permalink: /kb/041/Q41104/
 	
 	=============================================================================
 	
+
+{% endraw %}

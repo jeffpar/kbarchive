@@ -6,6 +6,8 @@ permalink: /kb/085/Q85581/
 
 ## Q85581: Rumba 3270 Emulation May Cause GP Faults with Windows 3.1
 
+{% raw %}
+
 	Article: Q85581
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/085/Q85581/
 	
 	=============================================================================
 	
+
+{% endraw %}

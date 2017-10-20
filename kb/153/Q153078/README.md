@@ -6,6 +6,8 @@ permalink: /kb/153/Q153078/
 
 ## Q153078: Err Msg: Your Local Shared Schedule+ File Was Previously...
 
+{% raw %}
+
 	Article: Q153078
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,7.0,95
@@ -68,3 +70,5 @@ permalink: /kb/153/Q153078/
 	
 	=============================================================================
 	
+
+{% endraw %}

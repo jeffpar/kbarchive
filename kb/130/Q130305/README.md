@@ -6,6 +6,8 @@ permalink: /kb/130/Q130305/
 
 ## Q130305: PRB: Error: &quot;The Fields in Table &lt;tablename&gt; Did Not Match...&quot;
 
+{% raw %}
+
 	Article: Q130305
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -123,3 +125,5 @@ permalink: /kb/130/Q130305/
 	
 	=============================================================================
 	
+
+{% endraw %}

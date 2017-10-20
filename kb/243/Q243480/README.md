@@ -6,6 +6,8 @@ permalink: /kb/243/Q243480/
 
 ## Q243480: HOWTO: Changing Background Color of a Dialog Box Using ATL
 
+{% raw %}
+
 	Article: Q243480
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0
@@ -106,3 +108,5 @@ permalink: /kb/243/Q243480/
 	
 	=============================================================================
 	
+
+{% endraw %}

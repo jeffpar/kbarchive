@@ -6,6 +6,8 @@ permalink: /kb/262/Q262635/
 
 ## Q262635: Err: HTTP 403.9 - Access Forbidden: Too Many Users Are Connected
 
+{% raw %}
+
 	Article: Q262635
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -77,3 +79,5 @@ permalink: /kb/262/Q262635/
 	
 	=============================================================================
 	
+
+{% endraw %}

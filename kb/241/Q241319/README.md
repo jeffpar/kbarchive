@@ -6,6 +6,8 @@ permalink: /kb/241/Q241319/
 
 ## Q241319: INDEX: Certain files not showing up in results
 
+{% raw %}
+
 	Article: Q241319
 	Product(s): Internet Information Server
 	Version(s): winnt:1.1,2.0
@@ -76,3 +78,5 @@ permalink: /kb/241/Q241319/
 	
 	=============================================================================
 	
+
+{% endraw %}

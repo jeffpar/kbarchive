@@ -6,6 +6,8 @@ permalink: /kb/059/Q59708/
 
 ## Q59708: Windows 3.0: IBM Proprinter Margin Limitations
 
+{% raw %}
+
 	Article: Q59708
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -33,3 +35,5 @@ permalink: /kb/059/Q59708/
 	
 	=============================================================================
 	
+
+{% endraw %}

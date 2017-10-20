@@ -6,6 +6,8 @@ permalink: /kb/096/Q96490/
 
 ## Q96490: NETWORKS.TXT: MS-DOS 6 Upgrade, 6.2 Upgrade, and 6.2 Step-Up
 
+{% raw %}
+
 	Article: Q96490
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2
@@ -642,3 +644,5 @@ permalink: /kb/096/Q96490/
 	
 	=============================================================================
 	
+
+{% endraw %}

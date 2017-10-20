@@ -6,6 +6,8 @@ permalink: /kb/178/Q178437/
 
 ## Q178437: VB 5.0 Developer's Workshop, 4th Ed. Commments and Corrections
 
+{% raw %}
+
 	Article: Q178437
 	Product(s): Microsoft Press
 	Version(s): 
@@ -125,3 +127,5 @@ permalink: /kb/178/Q178437/
 	
 	=============================================================================
 	
+
+{% endraw %}

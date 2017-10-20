@@ -6,6 +6,8 @@ permalink: /kb/174/Q174419/
 
 ## Q174419: HOWTO: Configure a Subnetted Reverse Lookup Zone on Windows NT
 
+{% raw %}
+
 	Article: Q174419
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -561,3 +563,5 @@ permalink: /kb/174/Q174419/
 	
 	=============================================================================
 	
+
+{% endraw %}

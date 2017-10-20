@@ -6,6 +6,8 @@ permalink: /kb/161/Q161691/
 
 ## Q161691: WD97: Extraneous Characters Returned with ViewFieldCodes On
 
+{% raw %}
+
 	Article: Q161691
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -133,3 +135,5 @@ permalink: /kb/161/Q161691/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/230/Q230602/
 
 ## Q230602: XCON: Site Connectors: Permissions, Trusts, and the Override Tab
 
+{% raw %}
+
 	Article: Q230602
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -89,3 +91,5 @@ permalink: /kb/230/Q230602/
 	
 	=============================================================================
 	
+
+{% endraw %}

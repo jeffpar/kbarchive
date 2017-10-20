@@ -6,6 +6,8 @@ permalink: /kb/090/Q90128/
 
 ## Q90128: Leading Technology PC Partner Requires VGA (Version 3.0)
 
+{% raw %}
+
 	Article: Q90128
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/090/Q90128/
 	
 	=============================================================================
 	
+
+{% endraw %}

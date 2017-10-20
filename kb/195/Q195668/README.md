@@ -6,6 +6,8 @@ permalink: /kb/195/Q195668/
 
 ## Q195668: Windows NT 4.0 Alpha DHCP Servers Ignoring Packets
 
+{% raw %}
+
 	Article: Q195668
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -54,3 +56,5 @@ permalink: /kb/195/Q195668/
 	
 	=============================================================================
 	
+
+{% endraw %}

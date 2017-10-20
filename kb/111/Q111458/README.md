@@ -6,6 +6,8 @@ permalink: /kb/111/Q111458/
 
 ## Q111458: Changing to EGA or Hercules Video Support in WFWG 3.11
 
+{% raw %}
+
 	Article: Q111458
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -80,3 +82,5 @@ permalink: /kb/111/Q111458/
 	
 	=============================================================================
 	
+
+{% endraw %}

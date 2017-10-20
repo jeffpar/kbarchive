@@ -6,6 +6,8 @@ permalink: /kb/023/Q23905/
 
 ## Q23905: Initial Memory Allocation of C Programs
 
+{% raw %}
+
 	Article: Q23905
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10
@@ -34,3 +36,5 @@ permalink: /kb/023/Q23905/
 	Although it is possible, you also may need to make modifications to
 	the start-up code. Be cautious about what functions you use and what
 	DOS functions are called.
+
+{% endraw %}

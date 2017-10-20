@@ -6,6 +6,8 @@ permalink: /kb/096/Q96825/
 
 ## Q96825: DIR and CHKDSK Report Different Amounts of Free Space
 
+{% raw %}
+
 	Article: Q96825
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -61,3 +63,5 @@ permalink: /kb/096/Q96825/
 	
 	=============================================================================
 	
+
+{% endraw %}

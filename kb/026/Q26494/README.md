@@ -6,6 +6,8 @@ permalink: /kb/026/Q26494/
 
 ## Q26494: &quot;Subscript Out of Range&quot; for Array &gt; 128K; Gaps in Far Heap
 
+{% raw %}
+
 	Article: Q26494
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -90,3 +92,5 @@ permalink: /kb/026/Q26494/
 	DIM x(1 TO max)  AS test     ' 453 * (288 + 8) = 134088 bytes used
 	PRINT FRE(-1),"AFTER DIM"
 	END
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175616/
 
 ## Q175616: FIX: Error 438: &quot;Object Doesn't Support This Property or Method&quot;
 
+{% raw %}
+
 	Article: Q175616
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -96,3 +98,5 @@ permalink: /kb/175/Q175616/
 	
 	=============================================================================
 	
+
+{% endraw %}

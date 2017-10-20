@@ -6,6 +6,8 @@ permalink: /kb/105/Q105397/
 
 ## Q105397: Windows NT Advanced Server CD Setup Disk Contents (528)
 
+{% raw %}
+
 	Article: Q105397
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -63,3 +65,5 @@ permalink: /kb/105/Q105397/
 	
 	=============================================================================
 	
+
+{% endraw %}

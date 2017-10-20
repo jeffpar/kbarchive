@@ -6,6 +6,8 @@ permalink: /kb/044/Q44742/
 
 ## Q44742: New Command-Line Options in Qasm
 
+{% raw %}
+
 	Article: Q44742
 	Product(s): See article
 	Version(s): 2.01
@@ -52,3 +54,5 @@ permalink: /kb/044/Q44742/
 	/v        Verbose messages  (was /V)
 	/W[012]   Warning level setting 0, 1, or 2 (was /W[012])
 	/Z[di]    Generate debug information (was /Z[di])
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86027/
 
 ## Q86027: Err Msg: Cannot Start Windows in Standard Mode (Low Memory)
 
+{% raw %}
+
 	Article: Q86027
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/086/Q86027/
 	
 	=============================================================================
 	
+
+{% endraw %}

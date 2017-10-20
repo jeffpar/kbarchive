@@ -6,6 +6,8 @@ permalink: /kb/106/Q106529/
 
 ## Q106529: BUG: GetStrQQ Leaves Characters in Standard Output
 
+{% raw %}
+
 	Article: Q106529
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a,4.0
@@ -95,3 +97,5 @@ permalink: /kb/106/Q106529/
 	
 	=============================================================================
 	
+
+{% endraw %}

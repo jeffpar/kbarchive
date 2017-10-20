@@ -6,6 +6,8 @@ permalink: /kb/157/Q157426/
 
 ## Q157426: XCLN: &quot;All Your Access Permissions Could Not Be Reset...&quot; Err
 
+{% raw %}
+
 	Article: Q157426
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0a
@@ -65,3 +67,5 @@ permalink: /kb/157/Q157426/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/261/Q261186/
 
 ## Q261186: Computer Randomly Plays Classical Music
 
+{% raw %}
+
 	Article: Q261186
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000,4.0
@@ -63,3 +65,5 @@ permalink: /kb/261/Q261186/
 	
 	=============================================================================
 	
+
+{% endraw %}

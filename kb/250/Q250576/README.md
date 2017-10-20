@@ -6,6 +6,8 @@ permalink: /kb/250/Q250576/
 
 ## Q250576: XADM: Error Message While Exmerge Reads Server Recipients List
 
+{% raw %}
+
 	Article: Q250576
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; winnt:4.0,5.0,5.5; :4.0
@@ -65,3 +67,5 @@ permalink: /kb/250/Q250576/
 	
 	=============================================================================
 	
+
+{% endraw %}

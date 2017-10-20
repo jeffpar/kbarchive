@@ -6,6 +6,8 @@ permalink: /kb/108/Q108022/
 
 ## Q108022: Autopilot Flies to the Wrong Station
 
+{% raw %}
+
 	Article: Q108022
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:4.0,4.0a
@@ -77,3 +79,5 @@ permalink: /kb/108/Q108022/
 	
 	=============================================================================
 	
+
+{% endraw %}

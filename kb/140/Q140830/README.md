@@ -6,6 +6,8 @@ permalink: /kb/140/Q140830/
 
 ## Q140830: TN3270 Server Does Not Generate a Dr. Watson Log
 
+{% raw %}
+
 	Article: Q140830
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -66,3 +68,5 @@ permalink: /kb/140/Q140830/
 	
 	=============================================================================
 	
+
+{% endraw %}

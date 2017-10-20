@@ -6,6 +6,8 @@ permalink: /kb/087/Q87932/
 
 ## Q87932: DOCERR: ALIAS Directive Undocumented in MASM 6.0
 
+{% raw %}
+
 	Article: Q87932
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -58,3 +60,5 @@ permalink: /kb/087/Q87932/
 	
 	=============================================================================
 	
+
+{% endraw %}

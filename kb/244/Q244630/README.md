@@ -6,6 +6,8 @@ permalink: /kb/244/Q244630/
 
 ## Q244630: SMS: Site Status Node May Take a Long Time to Open
 
+{% raw %}
+
 	Article: Q244630
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -101,3 +103,5 @@ permalink: /kb/244/Q244630/
 	
 	=============================================================================
 	
+
+{% endraw %}

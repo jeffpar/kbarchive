@@ -6,6 +6,8 @@ permalink: /kb/214/Q214803/
 
 ## Q214803: INFO: System Requirements for Windows CE Toolkit for VB 6.0
 
+{% raw %}
+
 	Article: Q214803
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:1.0
@@ -85,3 +87,5 @@ permalink: /kb/214/Q214803/
 	
 	=============================================================================
 	
+
+{% endraw %}

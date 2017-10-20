@@ -6,6 +6,8 @@ permalink: /kb/259/Q259826/
 
 ## Q259826: Troubleshooting Profile Quota Manager
 
+{% raw %}
+
 	Article: Q259826
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/259/Q259826/
 	
 	=============================================================================
 	
+
+{% endraw %}

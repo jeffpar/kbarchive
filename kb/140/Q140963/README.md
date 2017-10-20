@@ -6,6 +6,8 @@ permalink: /kb/140/Q140963/
 
 ## Q140963: XADM: Error When Deleting a Public Folder Container
 
+{% raw %}
+
 	Article: Q140963
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -85,3 +87,5 @@ permalink: /kb/140/Q140963/
 	
 	=============================================================================
 	
+
+{% endraw %}

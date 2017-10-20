@@ -6,6 +6,8 @@ permalink: /kb/095/Q95808/
 
 ## Q95808: How to Install MS-DOS 6 or 6.2 Upgrade over DR-DOS
 
+{% raw %}
+
 	Article: Q95808
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -249,3 +251,5 @@ permalink: /kb/095/Q95808/
 	
 	=============================================================================
 	
+
+{% endraw %}

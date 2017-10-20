@@ -6,6 +6,8 @@ permalink: /kb/192/Q192402/
 
 ## Q192402: The Plus Tab Is Missing from the Display Properties Dialog Box
 
+{% raw %}
+
 	Article: Q192402
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -47,3 +49,5 @@ permalink: /kb/192/Q192402/
 	
 	=============================================================================
 	
+
+{% endraw %}

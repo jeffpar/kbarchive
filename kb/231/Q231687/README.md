@@ -6,6 +6,8 @@ permalink: /kb/231/Q231687/
 
 ## Q231687: XFOR: Changing GroupWise Users' Display Name in Exchange GAL
 
+{% raw %}
+
 	Article: Q231687
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -92,3 +94,5 @@ permalink: /kb/231/Q231687/
 	
 	=============================================================================
 	
+
+{% endraw %}

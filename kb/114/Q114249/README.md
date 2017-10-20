@@ -6,6 +6,8 @@ permalink: /kb/114/Q114249/
 
 ## Q114249: PRB: NOEDIT Clause of BROWSE Command Ignored in Program Mode
 
+{% raw %}
+
 	Article: Q114249
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b; MS-DOS:2.0,2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0
@@ -72,3 +74,5 @@ permalink: /kb/114/Q114249/
 	
 	=============================================================================
 	
+
+{% endraw %}

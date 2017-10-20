@@ -6,6 +6,8 @@ permalink: /kb/117/Q117602/
 
 ## Q117602: Information About Setting Up WFWG 3.11 and Personal NetWare
 
+{% raw %}
+
 	Article: Q117602
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -44,3 +46,5 @@ permalink: /kb/117/Q117602/
 	
 	=============================================================================
 	
+
+{% endraw %}

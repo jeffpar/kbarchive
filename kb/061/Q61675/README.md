@@ -6,6 +6,8 @@ permalink: /kb/061/Q61675/
 
 ## Q61675: SSEGADD Example Requires Large Model (/AL) for C Routine
 
+{% raw %}
+
 	Article: Q61675
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -41,3 +43,5 @@ permalink: /kb/061/Q61675/
 	segment) and printmessage is accepting a far pointer (segment and
 	offset). If you use the large memory model, printf() expects a far
 	pointer, and the program runs correctly.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/108/Q108500/
 
 ## Q108500: WD97: Envelope Command Fails to Pick Up Print Merge Addrs Fields
 
+{% raw %}
+
 	Article: Q108500
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -78,3 +80,5 @@ permalink: /kb/108/Q108500/
 	
 	=============================================================================
 	
+
+{% endraw %}

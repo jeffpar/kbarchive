@@ -6,6 +6,8 @@ permalink: /kb/141/Q141195/
 
 ## Q141195: Encarta 1996: Selected Text Prints Garbled
 
+{% raw %}
+
 	Article: Q141195
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -48,3 +50,5 @@ permalink: /kb/141/Q141195/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/108/Q108113/
 
 ## Q108113: FIX: MFC DLLs Don't Unregister Window Classes
 
+{% raw %}
+
 	Article: Q108113
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0
@@ -82,3 +84,5 @@ permalink: /kb/108/Q108113/
 	
 	=============================================================================
 	
+
+{% endraw %}

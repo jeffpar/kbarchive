@@ -6,6 +6,8 @@ permalink: /kb/174/Q174932/
 
 ## Q174932: STOP 0x0000000A with Halmps.dll When Restarting
 
+{% raw %}
+
 	Article: Q174932
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/174/Q174932/
 	
 	=============================================================================
 	
+
+{% endraw %}

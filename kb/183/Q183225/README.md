@@ -6,6 +6,8 @@ permalink: /kb/183/Q183225/
 
 ## Q183225: XADM: GPF Occurs on Double-Byte Character Set Server
 
+{% raw %}
+
 	Article: Q183225
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -57,3 +59,5 @@ permalink: /kb/183/Q183225/
 	
 	=============================================================================
 	
+
+{% endraw %}

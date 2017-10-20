@@ -6,6 +6,8 @@ permalink: /kb/242/Q242040/
 
 ## Q242040: PAUSE Key Disables NUM LOCK in Terminal Server Client
 
+{% raw %}
+
 	Article: Q242040
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -86,3 +88,5 @@ permalink: /kb/242/Q242040/
 	
 	=============================================================================
 	
+
+{% endraw %}

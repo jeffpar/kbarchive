@@ -6,6 +6,8 @@ permalink: /kb/087/Q87350/
 
 ## Q87350: BUG: GetGlyphOutline() Returns Partial Glyph
 
+{% raw %}
+
 	Article: Q87350
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -74,3 +76,5 @@ permalink: /kb/087/Q87350/
 	
 	=============================================================================
 	
+
+{% endraw %}

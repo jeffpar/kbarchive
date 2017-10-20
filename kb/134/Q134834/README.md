@@ -6,6 +6,8 @@ permalink: /kb/134/Q134834/
 
 ## Q134834: PRB: SourceSafe Fails with Norton Desktop Version 3.0
 
+{% raw %}
+
 	Article: Q134834
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:3.1
@@ -71,3 +73,5 @@ permalink: /kb/134/Q134834/
 	
 	=============================================================================
 	
+
+{% endraw %}

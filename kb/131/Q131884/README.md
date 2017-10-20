@@ -6,6 +6,8 @@ permalink: /kb/131/Q131884/
 
 ## Q131884: Cannot Restore Minimized NetWare Logon Script Console Window
 
+{% raw %}
+
 	Article: Q131884
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -55,3 +57,5 @@ permalink: /kb/131/Q131884/
 	
 	=============================================================================
 	
+
+{% endraw %}

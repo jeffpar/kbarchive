@@ -6,6 +6,8 @@ permalink: /kb/160/Q160964/
 
 ## Q160964: 0x0000001e When Printing Certain Documents from Windows NT 4.0
 
+{% raw %}
+
 	Article: Q160964
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/160/Q160964/
 	
 	=============================================================================
 	
+
+{% endraw %}

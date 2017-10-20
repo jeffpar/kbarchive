@@ -6,6 +6,8 @@ permalink: /kb/265/Q265324/
 
 ## Q265324: Cannot Mount an NFS Share on a Linux NFS Server
 
+{% raw %}
+
 	Article: Q265324
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -72,3 +74,5 @@ permalink: /kb/265/Q265324/
 	
 	=============================================================================
 	
+
+{% endraw %}

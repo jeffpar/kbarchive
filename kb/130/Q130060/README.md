@@ -6,6 +6,8 @@ permalink: /kb/130/Q130060/
 
 ## Q130060: Chinese Windows 3.1 DBCS Character Code Conversion Utilities
 
+{% raw %}
+
 	Article: Q130060
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -62,3 +64,5 @@ permalink: /kb/130/Q130060/
 	
 	=============================================================================
 	
+
+{% endraw %}

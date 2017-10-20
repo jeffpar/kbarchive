@@ -6,6 +6,8 @@ permalink: /kb/281/Q281313/
 
 ## Q281313: Server for NFS Does Not Recognize Group Membership Changes
 
+{% raw %}
+
 	Article: Q281313
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,4.0
@@ -74,3 +76,5 @@ permalink: /kb/281/Q281313/
 	
 	=============================================================================
 	
+
+{% endraw %}

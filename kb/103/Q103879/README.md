@@ -6,6 +6,8 @@ permalink: /kb/103/Q103879/
 
 ## Q103879: Overview: Read Server Message Block Request and Response
 
+{% raw %}
+
 	Article: Q103879
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/103/Q103879/
 	
 	=============================================================================
 	
+
+{% endraw %}

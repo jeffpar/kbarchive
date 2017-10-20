@@ -6,6 +6,8 @@ permalink: /kb/190/Q190046/
 
 ## Q190046: INFO: VB6 Readme: Part 6 Wizard Issues
 
+{% raw %}
+
 	Article: Q190046
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -565,3 +567,5 @@ permalink: /kb/190/Q190046/
 	
 	=============================================================================
 	
+
+{% endraw %}

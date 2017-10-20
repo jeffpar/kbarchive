@@ -6,6 +6,8 @@ permalink: /kb/237/Q237994/
 
 ## Q237994: INFO: MDAC Upgrade Issues with Access ODBC Driver
 
+{% raw %}
+
 	Article: Q237994
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 4.0
@@ -314,3 +316,5 @@ permalink: /kb/237/Q237994/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171543/
 
 ## Q171543: FIX: _getmbp CRT Function Does Not Return Correct Value
 
+{% raw %}
+
 	Article: Q171543
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0sp1,5.0sp2,97,97sp1,97sp2
@@ -74,3 +76,5 @@ permalink: /kb/171/Q171543/
 	
 	=============================================================================
 	
+
+{% endraw %}

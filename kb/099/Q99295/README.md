@@ -6,6 +6,8 @@ permalink: /kb/099/Q99295/
 
 ## Q99295: Harvard Graphics Load Failure Caused by Set Archive Bit
 
+{% raw %}
+
 	Article: Q99295
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/099/Q99295/
 	
 	=============================================================================
 	
+
+{% endraw %}

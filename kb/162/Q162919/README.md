@@ -6,6 +6,8 @@ permalink: /kb/162/Q162919/
 
 ## Q162919: XFOR: Err Msg: The Network Name Could Not Be Found
 
+{% raw %}
+
 	Article: Q162919
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/162/Q162919/
 	
 	=============================================================================
 	
+
+{% endraw %}

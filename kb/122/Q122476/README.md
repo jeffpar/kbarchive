@@ -6,6 +6,8 @@ permalink: /kb/122/Q122476/
 
 ## Q122476: Cinemania '95: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q122476
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -188,3 +190,5 @@ permalink: /kb/122/Q122476/
 	
 	=============================================================================
 	
+
+{% endraw %}

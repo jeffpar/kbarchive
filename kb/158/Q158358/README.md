@@ -6,6 +6,8 @@ permalink: /kb/158/Q158358/
 
 ## Q158358: Error Level 2 Returned on DELETE Command When No Files Found
 
+{% raw %}
+
 	Article: Q158358
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -46,3 +48,5 @@ permalink: /kb/158/Q158358/
 	
 	=============================================================================
 	
+
+{% endraw %}

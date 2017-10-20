@@ -6,6 +6,8 @@ permalink: /kb/082/Q82341/
 
 ## Q82341: Blank Pages Printing on Kyocera F-1010 Laser Printer
 
+{% raw %}
+
 	Article: Q82341
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/082/Q82341/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168433/
 
 ## Q168433: FIX: Error Using _ttoi64 with Non-Unicode Applications
 
+{% raw %}
+
 	Article: Q168433
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -79,3 +81,5 @@ permalink: /kb/168/Q168433/
 	
 	=============================================================================
 	
+
+{% endraw %}

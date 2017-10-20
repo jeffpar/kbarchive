@@ -6,6 +6,8 @@ permalink: /kb/080/Q80858/
 
 ## Q80858: Disabling Metz File F/X for Windows
 
+{% raw %}
+
 	Article: Q80858
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -62,3 +64,5 @@ permalink: /kb/080/Q80858/
 	
 	=============================================================================
 	
+
+{% endraw %}

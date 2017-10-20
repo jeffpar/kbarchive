@@ -6,6 +6,8 @@ permalink: /kb/040/Q40545/
 
 ## Q40545: ALT+PLUS/EQUALS Doesn't Size QB.EXE 4.50 Window; Must SHIFT
 
+{% raw %}
+
 	Article: Q40545
 	Product(s): See article
 	Version(s): 4.50
@@ -45,3 +47,5 @@ permalink: /kb/040/Q40545/
 	ALT+MINUS will work with either the MINUS on the regular keyboard or
 	the numeric keypad. ALT+PLUS will work only when PLUS is the PLUS key
 	on the numeric keypad.
+
+{% endraw %}

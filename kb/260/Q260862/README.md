@@ -6,6 +6,8 @@ permalink: /kb/260/Q260862/
 
 ## Q260862: StarLancer: Hangs When You Click an Option on the Game Menu
 
+{% raw %}
+
 	Article: Q260862
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -62,3 +64,5 @@ permalink: /kb/260/Q260862/
 	
 	=============================================================================
 	
+
+{% endraw %}

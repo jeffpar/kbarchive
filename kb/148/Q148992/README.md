@@ -6,6 +6,8 @@ permalink: /kb/148/Q148992/
 
 ## Q148992: XADM: Cannot Perform Forklift Upgrade Using UPDATE.EXE
 
+{% raw %}
+
 	Article: Q148992
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -62,3 +64,5 @@ permalink: /kb/148/Q148992/
 	
 	=============================================================================
 	
+
+{% endraw %}

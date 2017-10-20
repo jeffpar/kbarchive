@@ -6,6 +6,8 @@ permalink: /kb/137/Q137718/
 
 ## Q137718: APPCTL /Delete Command Line Option Does Not Work
 
+{% raw %}
+
 	Article: Q137718
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -45,3 +47,5 @@ permalink: /kb/137/Q137718/
 	
 	=============================================================================
 	
+
+{% endraw %}

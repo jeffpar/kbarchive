@@ -6,6 +6,8 @@ permalink: /kb/135/Q135608/
 
 ## Q135608: Creative Labs SoundBlaster 32 and AWE 32 Support in Windows NT
 
+{% raw %}
+
 	Article: Q135608
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/135/Q135608/
 	
 	=============================================================================
 	
+
+{% endraw %}

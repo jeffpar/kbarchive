@@ -6,6 +6,8 @@ permalink: /kb/245/Q245812/
 
 ## Q245812: SMS: Visual C++ 6 Run-Time Libraries Installed with SMS
 
+{% raw %}
+
 	Article: Q245812
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP1
@@ -90,3 +92,5 @@ permalink: /kb/245/Q245812/
 	
 	=============================================================================
 	
+
+{% endraw %}

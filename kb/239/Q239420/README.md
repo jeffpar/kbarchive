@@ -6,6 +6,8 @@ permalink: /kb/239/Q239420/
 
 ## Q239420: XFOR: Mailbox Receives Repeated Copies of Inbound Internet Mess.
 
+{% raw %}
+
 	Article: Q239420
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/239/Q239420/
 	
 	=============================================================================
 	
+
+{% endraw %}

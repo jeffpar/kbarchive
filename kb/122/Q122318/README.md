@@ -6,6 +6,8 @@ permalink: /kb/122/Q122318/
 
 ## Q122318: Using Null Modem for RAS with Third-Party PPP Clients
 
+{% raw %}
+
 	Article: Q122318
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -90,3 +92,5 @@ permalink: /kb/122/Q122318/
 	
 	=============================================================================
 	
+
+{% endraw %}

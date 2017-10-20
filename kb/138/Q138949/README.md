@@ -6,6 +6,8 @@ permalink: /kb/138/Q138949/
 
 ## Q138949: PPT: Shadows Not Printed from Organization Chart 2.0
 
+{% raw %}
+
 	Article: Q138949
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 2.0; MACINTOSH:98; WINDOWS:7.0,97
@@ -78,3 +80,5 @@ permalink: /kb/138/Q138949/
 	
 	=============================================================================
 	
+
+{% endraw %}

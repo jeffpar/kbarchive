@@ -6,6 +6,8 @@ permalink: /kb/068/Q68341/
 
 ## Q68341: Unrecoverable Application Error in Aldus Pagemaker 3.01
 
+{% raw %}
+
 	Article: Q68341
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -57,3 +59,5 @@ permalink: /kb/068/Q68341/
 	
 	=============================================================================
 	
+
+{% endraw %}

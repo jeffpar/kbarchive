@@ -6,6 +6,8 @@ permalink: /kb/252/Q252887/
 
 ## Q252887: BUG: Truncated File Listing with Visual SourceSafe
 
+{% raw %}
+
 	Article: Q252887
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -70,3 +72,5 @@ permalink: /kb/252/Q252887/
 	
 	=============================================================================
 	
+
+{% endraw %}

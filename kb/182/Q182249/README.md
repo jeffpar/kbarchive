@@ -6,6 +6,8 @@ permalink: /kb/182/Q182249/
 
 ## Q182249: FIX: CHRTRAN(), CHRTRANC(), and FULLPATH() May Cause GPF Errors
 
+{% raw %}
+
 	Article: Q182249
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -83,3 +85,5 @@ permalink: /kb/182/Q182249/
 	
 	=============================================================================
 	
+
+{% endraw %}

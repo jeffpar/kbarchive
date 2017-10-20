@@ -6,6 +6,8 @@ permalink: /kb/233/Q233349/
 
 ## Q233349: Cluster Service Issues Event 1015 Every 4 Hours with SP5
 
+{% raw %}
+
 	Article: Q233349
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -100,3 +102,5 @@ permalink: /kb/233/Q233349/
 	
 	=============================================================================
 	
+
+{% endraw %}

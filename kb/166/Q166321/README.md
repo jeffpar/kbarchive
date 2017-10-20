@@ -6,6 +6,8 @@ permalink: /kb/166/Q166321/
 
 ## Q166321: Configuring Maximum IPX Packet Size in Windows 95
 
+{% raw %}
+
 	Article: Q166321
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -116,3 +118,5 @@ permalink: /kb/166/Q166321/
 	
 	=============================================================================
 	
+
+{% endraw %}

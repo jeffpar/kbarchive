@@ -6,6 +6,8 @@ permalink: /kb/153/Q153126/
 
 ## Q153126: AcmeWkSt.exe Does Not Use Existing Installed Directory
 
+{% raw %}
+
 	Article: Q153126
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -56,3 +58,5 @@ permalink: /kb/153/Q153126/
 	
 	=============================================================================
 	
+
+{% endraw %}

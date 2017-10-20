@@ -6,6 +6,8 @@ permalink: /kb/192/Q192471/
 
 ## Q192471: DOCERR: SMS Resource Guide Lists Wrong Option for PREINST
 
+{% raw %}
+
 	Article: Q192471
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -49,3 +51,5 @@ permalink: /kb/192/Q192471/
 	
 	=============================================================================
 	
+
+{% endraw %}

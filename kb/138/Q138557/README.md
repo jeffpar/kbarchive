@@ -6,6 +6,8 @@ permalink: /kb/138/Q138557/
 
 ## Q138557: PRB: Golf 2.0 Overwrites WIN32s Files
 
+{% raw %}
+
 	Article: Q138557
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.0,3.0
@@ -77,3 +79,5 @@ permalink: /kb/138/Q138557/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147836/
 
 ## Q147836: FIX: Debugger Hangs with Huge Executable with Embedded Symbols
 
+{% raw %}
+
 	Article: Q147836
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00
@@ -69,3 +71,5 @@ permalink: /kb/147/Q147836/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111001/
 
 ## Q111001: BUG: PEEKCHARQQ Incorrectly Returning .TRUE.
 
+{% raw %}
+
 	Article: Q111001
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -76,3 +78,5 @@ permalink: /kb/111/Q111001/
 	
 	=============================================================================
 	
+
+{% endraw %}

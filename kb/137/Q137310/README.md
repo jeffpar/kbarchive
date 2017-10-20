@@ -6,6 +6,8 @@ permalink: /kb/137/Q137310/
 
 ## Q137310: Audio CD Not Recognized in IDE CD-ROM Drive
 
+{% raw %}
+
 	Article: Q137310
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -110,3 +112,5 @@ permalink: /kb/137/Q137310/
 	
 	=============================================================================
 	
+
+{% endraw %}

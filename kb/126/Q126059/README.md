@@ -6,6 +6,8 @@ permalink: /kb/126/Q126059/
 
 ## Q126059: Automap Err Msg: Cannot Find VER.DLL
 
+{% raw %}
+
 	Article: Q126059
 	Product(s): Microsoft Automap
 	Version(s): 1.06,1.1,3.0,3.0a
@@ -69,3 +71,5 @@ permalink: /kb/126/Q126059/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185904/
 
 ## Q185904: SMS: New Smstrace Allows Searching and Highlighting of Strings
 
+{% raw %}
+
 	Article: Q185904
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -96,3 +98,5 @@ permalink: /kb/185/Q185904/
 	
 	=============================================================================
 	
+
+{% endraw %}

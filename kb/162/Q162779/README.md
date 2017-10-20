@@ -6,6 +6,8 @@ permalink: /kb/162/Q162779/
 
 ## Q162779: Control Panel Fails to Stop an Already Stopped Service
 
+{% raw %}
+
 	Article: Q162779
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -77,3 +79,5 @@ permalink: /kb/162/Q162779/
 	
 	=============================================================================
 	
+
+{% endraw %}

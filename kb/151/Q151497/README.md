@@ -6,6 +6,8 @@ permalink: /kb/151/Q151497/
 
 ## Q151497: MSB Ocean: Minimum System Requirements for Macintosh
 
+{% raw %}
+
 	Article: Q151497
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0
@@ -63,3 +65,5 @@ permalink: /kb/151/Q151497/
 	
 	=============================================================================
 	
+
+{% endraw %}

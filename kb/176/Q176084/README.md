@@ -6,6 +6,8 @@ permalink: /kb/176/Q176084/
 
 ## Q176084: Cannot connect to Dfs Share Using Fully Qualified Domain Names
 
+{% raw %}
+
 	Article: Q176084
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/176/Q176084/
 	
 	=============================================================================
 	
+
+{% endraw %}

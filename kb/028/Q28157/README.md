@@ -6,6 +6,8 @@ permalink: /kb/028/Q28157/
 
 ## Q28157: Asynchronous SHELL Leaves Cursor Turned Off in New Process
 
+{% raw %}
+
 	Article: Q28157
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -26,3 +28,5 @@ permalink: /kb/028/Q28157/
 	from the screen. If the cursor is explicitly turned on in the main
 	program, there will be a cursor in the (asynchronously) shelled
 	program.
+
+{% endraw %}

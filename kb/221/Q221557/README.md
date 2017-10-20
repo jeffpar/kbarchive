@@ -6,6 +6,8 @@ permalink: /kb/221/Q221557/
 
 ## Q221557: BUG: TreeView: NodeCheck Event Does Not Occur
 
+{% raw %}
+
 	Article: Q221557
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -263,3 +265,5 @@ permalink: /kb/221/Q221557/
 	
 	=============================================================================
 	
+
+{% endraw %}

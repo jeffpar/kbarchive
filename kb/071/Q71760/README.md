@@ -6,6 +6,8 @@ permalink: /kb/071/Q71760/
 
 ## Q71760: Drive and Directory Manipulation in Windows
 
+{% raw %}
+
 	Article: Q71760
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -67,3 +69,5 @@ permalink: /kb/071/Q71760/
 	
 	=============================================================================
 	
+
+{% endraw %}

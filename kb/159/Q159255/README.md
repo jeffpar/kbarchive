@@ -6,6 +6,8 @@ permalink: /kb/159/Q159255/
 
 ## Q159255: Spike's World: How Do I Send Spike E-Mail?
 
+{% raw %}
+
 	Article: Q159255
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -43,3 +45,5 @@ permalink: /kb/159/Q159255/
 	
 	=============================================================================
 	
+
+{% endraw %}

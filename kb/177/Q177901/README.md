@@ -6,6 +6,8 @@ permalink: /kb/177/Q177901/
 
 ## Q177901: Age of Empires: Cannot See Multiplayer Game After Modem Connects
 
+{% raw %}
+
 	Article: Q177901
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -85,3 +87,5 @@ permalink: /kb/177/Q177901/
 	
 	=============================================================================
 	
+
+{% endraw %}

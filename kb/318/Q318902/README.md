@@ -6,6 +6,8 @@ permalink: /kb/318/Q318902/
 
 ## Q318902: FIX: Visual FoxPro 7.0 Quits When You Run a Form with Grid
 
+{% raw %}
+
 	Article: Q318902
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -117,3 +119,5 @@ permalink: /kb/318/Q318902/
 	
 	=============================================================================
 	
+
+{% endraw %}

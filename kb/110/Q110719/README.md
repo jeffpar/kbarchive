@@ -6,6 +6,8 @@ permalink: /kb/110/Q110719/
 
 ## Q110719: PRB: CTime DDX Routine for CRecordView Date Fields
 
+{% raw %}
+
 	Article: Q110719
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0,1.5,1.51,1.52
@@ -116,11 +118,11 @@ permalink: /kb/110/Q110719/
 	     void CMyRecordView::DoDataExchange(CDataExchange* pDX)
 	     {
 	         CRecordView::DoDataExchange(pDX);
-	         //{ {AFX_DATA_MAP(CTranView)
+	         //{{AFX_DATA_MAP(CTranView)
 	
 	         // ... ( class wizard / app wizard generated code )
 	
-	         //} }AFX_DATA_MAP
+	         //}}AFX_DATA_MAP
 	
 	         // Date DDX
 	         DDX_FieldText(pDX, IDC_EDIT_TRAN_DATE, m_pSet->m_Database_Date,
@@ -209,3 +211,5 @@ permalink: /kb/110/Q110719/
 	
 	=============================================================================
 	
+
+{% endraw %}

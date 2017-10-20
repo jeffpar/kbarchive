@@ -6,6 +6,8 @@ permalink: /kb/182/Q182619/
 
 ## Q182619: XCON: MTA Terminates with 9404 Error
 
+{% raw %}
+
 	Article: Q182619
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -87,3 +89,5 @@ permalink: /kb/182/Q182619/
 	
 	=============================================================================
 	
+
+{% endraw %}

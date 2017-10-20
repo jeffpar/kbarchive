@@ -6,6 +6,8 @@ permalink: /kb/157/Q157749/
 
 ## Q157749: WD97: Format Callout Dimmed After Drawing Certain Callouts
 
+{% raw %}
+
 	Article: Q157749
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -114,3 +116,5 @@ permalink: /kb/157/Q157749/
 	
 	=============================================================================
 	
+
+{% endraw %}

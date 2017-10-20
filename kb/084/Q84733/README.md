@@ -6,6 +6,8 @@ permalink: /kb/084/Q84733/
 
 ## Q84733: FIX: Extra Characters Appear Using One-Line Response File
 
+{% raw %}
+
 	Article: Q84733
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:4.x,5.0x,5.1x,5.2,5.2x; OS/2:5.0x,5.1,5.11,5.13,5.15
@@ -76,3 +78,5 @@ permalink: /kb/084/Q84733/
 	
 	=============================================================================
 	
+
+{% endraw %}

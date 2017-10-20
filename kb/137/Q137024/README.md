@@ -6,6 +6,8 @@ permalink: /kb/137/Q137024/
 
 ## Q137024: PRB: Asterisks Don't Hide an RDC Password Set in Design Time
 
+{% raw %}
+
 	Article: Q137024
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -75,3 +77,5 @@ permalink: /kb/137/Q137024/
 	
 	=============================================================================
 	
+
+{% endraw %}

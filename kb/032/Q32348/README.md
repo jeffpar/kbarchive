@@ -6,6 +6,8 @@ permalink: /kb/032/Q32348/
 
 ## Q32348: Incorrect Comment Pragma Example
 
+{% raw %}
+
 	Article: Q32348
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -25,3 +27,5 @@ permalink: /kb/032/Q32348/
 	
 	Note: If the quotation marks are missing, the compiler will issue
 	error C4079.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/069/Q69223/
 
 ## Q69223: Retrieving a Disk's Volume Serial Number from C
 
+{% raw %}
+
 	Article: Q69223
 	Product(s): See article
 	Version(s): 5.10 6.00 6.00a
@@ -119,3 +121,5 @@ permalink: /kb/069/Q69223/
 	                              (unsigned char) bootsector[0x28],
 	                              (unsigned char) bootsector[0x27]);
 	}
+
+{% endraw %}

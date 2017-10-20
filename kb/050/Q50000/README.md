@@ -6,6 +6,8 @@ permalink: /kb/050/Q50000/
 
 ## Q50000: How to Save and Restore the VGA Palette Registers in BASIC
 
+{% raw %}
+
 	Article: Q50000
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -100,3 +102,5 @@ permalink: /kb/050/Q50000/
 	inregsx.dx = VARPTR(colorbuf(0))
 	
 	CALL INTERRUPTX(&H10, inregsx, outregsx)  ' restore palette registers
+
+{% endraw %}

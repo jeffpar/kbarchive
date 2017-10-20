@@ -6,6 +6,8 @@ permalink: /kb/077/Q77052/
 
 ## Q77052: Default Values for Drivers/Commands in CONFIG.SYS
 
+{% raw %}
+
 	Article: Q77052
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -108,3 +110,5 @@ permalink: /kb/077/Q77052/
 	
 	=============================================================================
 	
+
+{% endraw %}

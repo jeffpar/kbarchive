@@ -6,6 +6,8 @@ permalink: /kb/176/Q176966/
 
 ## Q176966: System Policy Editor May Not Disable Slow Link Detection
 
+{% raw %}
+
 	Article: Q176966
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -100,3 +102,5 @@ permalink: /kb/176/Q176966/
 	
 	=============================================================================
 	
+
+{% endraw %}

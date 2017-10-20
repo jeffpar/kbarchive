@@ -6,6 +6,8 @@ permalink: /kb/121/Q121896/
 
 ## Q121896: Writer/Artist: Deleting or Recycling Files
 
+{% raw %}
+
 	Article: Q121896
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
@@ -109,3 +111,5 @@ permalink: /kb/121/Q121896/
 	
 	=============================================================================
 	
+
+{% endraw %}

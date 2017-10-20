@@ -6,6 +6,8 @@ permalink: /kb/163/Q163240/
 
 ## Q163240: STOP 0x0000006B Process1_Initialization_Failed
 
+{% raw %}
+
 	Article: Q163240
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:3.51 4.0
@@ -88,3 +90,5 @@ permalink: /kb/163/Q163240/
 	
 	=============================================================================
 	
+
+{% endraw %}

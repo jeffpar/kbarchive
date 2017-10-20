@@ -6,6 +6,8 @@ permalink: /kb/124/Q124917/
 
 ## Q124917: How Disk Defragmenter Reports Fragmentation
 
+{% raw %}
+
 	Article: Q124917
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/124/Q124917/
 	
 	=============================================================================
 	
+
+{% endraw %}

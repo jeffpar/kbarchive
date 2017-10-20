@@ -6,6 +6,8 @@ permalink: /kb/235/Q235689/
 
 ## Q235689: How to Troubleshoot  7062 Errors Logged in DNS Event Log
 
+{% raw %}
+
 	Article: Q235689
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -159,3 +161,5 @@ permalink: /kb/235/Q235689/
 	
 	=============================================================================
 	
+
+{% endraw %}

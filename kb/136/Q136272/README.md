@@ -6,6 +6,8 @@ permalink: /kb/136/Q136272/
 
 ## Q136272: Cannot Connect to Windows NT 3.1 Computer with IPX/SPX
 
+{% raw %}
+
 	Article: Q136272
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/136/Q136272/
 	
 	=============================================================================
 	
+
+{% endraw %}

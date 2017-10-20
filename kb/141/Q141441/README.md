@@ -6,6 +6,8 @@ permalink: /kb/141/Q141441/
 
 ## Q141441: How to Create Validation Rules on Views
 
+{% raw %}
+
 	Article: Q141441
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -95,3 +97,5 @@ permalink: /kb/141/Q141441/
 	
 	=============================================================================
 	
+
+{% endraw %}

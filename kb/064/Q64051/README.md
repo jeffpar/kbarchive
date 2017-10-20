@@ -6,6 +6,8 @@ permalink: /kb/064/Q64051/
 
 ## Q64051: Stopping Winpopup Can Produce Unpredictable Results
 
+{% raw %}
+
 	Article: Q64051
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/064/Q64051/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192143/
 
 ## Q192143: BUG: Data Control NoMatch Equals True Returns Error
 
+{% raw %}
+
 	Article: Q192143
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -87,3 +89,5 @@ permalink: /kb/192/Q192143/
 	
 	=============================================================================
 	
+
+{% endraw %}

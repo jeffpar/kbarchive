@@ -6,6 +6,8 @@ permalink: /kb/125/Q125573/
 
 ## Q125573: Event Viewer Does Not Report System Log Errors Correctly
 
+{% raw %}
+
 	Article: Q125573
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/125/Q125573/
 	
 	=============================================================================
 	
+
+{% endraw %}

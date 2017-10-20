@@ -6,6 +6,8 @@ permalink: /kb/132/Q132786/
 
 ## Q132786: Known Issues with MS Print Agent for NetWare (MSPSRV)
 
+{% raw %}
+
 	Article: Q132786
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -133,3 +135,5 @@ permalink: /kb/132/Q132786/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67374/
 
 ## Q67374: CIRCLE(x,y),rad,,-0.1,0 Draws Only the Radius in BASIC
 
+{% raw %}
+
 	Article: Q67374
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10
@@ -61,3 +63,5 @@ permalink: /kb/067/Q67374/
 	On the Apple Macintosh, use the following code:
 	
 	CIRCLE (50, 50) 10, ,-0.001, 0
+
+{% endraw %}

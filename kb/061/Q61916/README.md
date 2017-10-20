@@ -6,6 +6,8 @@ permalink: /kb/061/Q61916/
 
 ## Q61916: PPT: How to Create (Format) a Default Presentation
 
+{% raw %}
+
 	Article: Q61916
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,4.0,4.0a,4.0c,7.0
@@ -126,3 +128,5 @@ permalink: /kb/061/Q61916/
 	
 	=============================================================================
 	
+
+{% endraw %}

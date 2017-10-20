@@ -6,6 +6,8 @@ permalink: /kb/073/Q73752/
 
 ## Q73752: FIX: MASM 6.0 Does Not Detect Overflow Initializing Structures
 
+{% raw %}
+
 	Article: Q73752
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -99,3 +101,5 @@ permalink: /kb/073/Q73752/
 	
 	=============================================================================
 	
+
+{% endraw %}

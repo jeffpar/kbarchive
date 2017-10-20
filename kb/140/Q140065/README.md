@@ -6,6 +6,8 @@ permalink: /kb/140/Q140065/
 
 ## Q140065: Multiprocessor Systems Randomly Restart or Stop Responding
 
+{% raw %}
+
 	Article: Q140065
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -66,3 +68,5 @@ permalink: /kb/140/Q140065/
 	
 	=============================================================================
 	
+
+{% endraw %}

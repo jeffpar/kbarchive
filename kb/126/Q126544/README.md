@@ -6,6 +6,8 @@ permalink: /kb/126/Q126544/
 
 ## Q126544: NOINT Virus Causes Unusual Network Error Messages in WFWG
 
+{% raw %}
+
 	Article: Q126544
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -73,3 +75,5 @@ permalink: /kb/126/Q126544/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82616/
 
 ## Q82616: SoundBlaster Pro Card Emits Noise Upon Windows Exit
 
+{% raw %}
+
 	Article: Q82616
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/082/Q82616/
 	
 	=============================================================================
 	
+
+{% endraw %}

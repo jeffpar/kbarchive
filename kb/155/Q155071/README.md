@@ -6,6 +6,8 @@ permalink: /kb/155/Q155071/
 
 ## Q155071: Slide Transition Sounds Lost with 16-Bit Viewer
 
+{% raw %}
+
 	Article: Q155071
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0; :
@@ -90,3 +92,5 @@ permalink: /kb/155/Q155071/
 	
 	=============================================================================
 	
+
+{% endraw %}

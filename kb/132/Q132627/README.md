@@ -6,6 +6,8 @@ permalink: /kb/132/Q132627/
 
 ## Q132627: ScanDisk Reports Invalid Date/Time for Many Files
 
+{% raw %}
+
 	Article: Q132627
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -72,3 +74,5 @@ permalink: /kb/132/Q132627/
 	
 	=============================================================================
 	
+
+{% endraw %}

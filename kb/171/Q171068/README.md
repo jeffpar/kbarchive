@@ -6,6 +6,8 @@ permalink: /kb/171/Q171068/
 
 ## Q171068: WD97: Word Uses 100 Percent of the CPU During Typing
 
+{% raw %}
+
 	Article: Q171068
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -81,3 +83,5 @@ permalink: /kb/171/Q171068/
 	
 	=============================================================================
 	
+
+{% endraw %}

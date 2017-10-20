@@ -6,6 +6,8 @@ permalink: /kb/221/Q221150/
 
 ## Q221150: NET USE to 16 Character Dotted-DNS Name May Fail
 
+{% raw %}
+
 	Article: Q221150
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/221/Q221150/
 	
 	=============================================================================
 	
+
+{% endraw %}

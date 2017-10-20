@@ -6,6 +6,8 @@ permalink: /kb/082/Q82637/
 
 ## Q82637: Using Windows 3.0 Communications Drivers with Windows 3.1
 
+{% raw %}
+
 	Article: Q82637
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -79,3 +81,5 @@ permalink: /kb/082/Q82637/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231542/
 
 ## Q231542: MapPoint 2000: &quot;Send Behind Roads&quot; Command Behaves Unexpectedly
 
+{% raw %}
+
 	Article: Q231542
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -56,3 +58,5 @@ permalink: /kb/231/Q231542/
 	
 	=============================================================================
 	
+
+{% endraw %}

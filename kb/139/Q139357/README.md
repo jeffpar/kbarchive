@@ -6,6 +6,8 @@ permalink: /kb/139/Q139357/
 
 ## Q139357: Some SCSI Disk Drives Generate Unneeded Error Messages
 
+{% raw %}
+
 	Article: Q139357
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5
@@ -110,3 +112,5 @@ permalink: /kb/139/Q139357/
 	
 	=============================================================================
 	
+
+{% endraw %}

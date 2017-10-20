@@ -6,6 +6,8 @@ permalink: /kb/157/Q157596/
 
 ## Q157596: How to Import a BOOTP Database into DHCP
 
+{% raw %}
+
 	Article: Q157596
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -92,3 +94,5 @@ permalink: /kb/157/Q157596/
 	
 	=============================================================================
 	
+
+{% endraw %}

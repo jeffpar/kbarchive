@@ -6,6 +6,8 @@ permalink: /kb/119/Q119724/
 
 ## Q119724: ADT2: Creating Additional ADT Application Program Groups, Items
 
+{% raw %}
+
 	Article: Q119724
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 2.0
@@ -261,3 +263,5 @@ permalink: /kb/119/Q119724/
 	
 	=============================================================================
 	
+
+{% endraw %}

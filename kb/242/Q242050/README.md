@@ -6,6 +6,8 @@ permalink: /kb/242/Q242050/
 
 ## Q242050: Su.exe Version 2.99 Generates LogonUser Error! Error Message
 
+{% raw %}
+
 	Article: Q242050
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -96,3 +98,5 @@ permalink: /kb/242/Q242050/
 	
 	=============================================================================
 	
+
+{% endraw %}

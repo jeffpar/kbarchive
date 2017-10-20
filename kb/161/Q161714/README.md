@@ -6,6 +6,8 @@ permalink: /kb/161/Q161714/
 
 ## Q161714: IPX Doesn't Function Correctly over Token Ring Source Routing
 
+{% raw %}
+
 	Article: Q161714
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/161/Q161714/
 	
 	=============================================================================
 	
+
+{% endraw %}

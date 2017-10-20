@@ -6,6 +6,8 @@ permalink: /kb/160/Q160885/
 
 ## Q160885: GPF in Krnl386 When Using CPIC Thunking DLL on Windows NT
 
+{% raw %}
+
 	Article: Q160885
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,2.11 SP1,3.0
@@ -59,3 +61,5 @@ permalink: /kb/160/Q160885/
 	
 	=============================================================================
 	
+
+{% endraw %}

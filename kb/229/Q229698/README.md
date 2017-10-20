@@ -6,6 +6,8 @@ permalink: /kb/229/Q229698/
 
 ## Q229698: SMS: New Functionality Added to Audit
 
+{% raw %}
+
 	Article: Q229698
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -146,3 +148,5 @@ permalink: /kb/229/Q229698/
 	
 	=============================================================================
 	
+
+{% endraw %}

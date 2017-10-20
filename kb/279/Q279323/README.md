@@ -6,6 +6,8 @@ permalink: /kb/279/Q279323/
 
 ## Q279323: XFOR: How to Forward SMTP Mail to Multiple Hosts
 
+{% raw %}
+
 	Article: Q279323
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -55,3 +57,5 @@ permalink: /kb/279/Q279323/
 	
 	=============================================================================
 	
+
+{% endraw %}

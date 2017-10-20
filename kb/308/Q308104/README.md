@@ -6,6 +6,8 @@ permalink: /kb/308/Q308104/
 
 ## Q308104: MSN Broadband DSL:  Sleep Mode May Cause Loss Of Connection
 
+{% raw %}
+
 	Article: Q308104
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/308/Q308104/
 	
 	=============================================================================
 	
+
+{% endraw %}

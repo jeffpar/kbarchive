@@ -6,6 +6,8 @@ permalink: /kb/133/Q133308/
 
 ## Q133308: PRB: WM_HELP Message Not Received When F1 Pressed on Menu
 
+{% raw %}
+
 	Article: Q133308
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -95,3 +97,5 @@ permalink: /kb/133/Q133308/
 	
 	=============================================================================
 	
+
+{% endraw %}

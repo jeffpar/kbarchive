@@ -6,6 +6,8 @@ permalink: /kb/148/Q148351/
 
 ## Q148351: Multimedia: Some CD-ROM Drives Can't Properly Read Disc
 
+{% raw %}
+
 	Article: Q148351
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 3.11
@@ -418,3 +420,5 @@ permalink: /kb/148/Q148351/
 	
 	=============================================================================
 	
+
+{% endraw %}

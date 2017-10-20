@@ -6,6 +6,8 @@ permalink: /kb/246/Q246164/
 
 ## Q246164: intraNetWare Login Dialog Box Appears During Hardware Inventory
 
+{% raw %}
+
 	Article: Q246164
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -200,3 +202,5 @@ permalink: /kb/246/Q246164/
 	
 	=============================================================================
 	
+
+{% endraw %}

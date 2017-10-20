@@ -6,6 +6,8 @@ permalink: /kb/087/Q87203/
 
 ## Q87203: PROFS: Why the Gateway PC Needs the Correct Date/Time
 
+{% raw %}
+
 	Article: Q87203
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -47,3 +49,5 @@ permalink: /kb/087/Q87203/
 	
 	=============================================================================
 	
+
+{% endraw %}

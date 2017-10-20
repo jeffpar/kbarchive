@@ -6,6 +6,8 @@ permalink: /kb/156/Q156278/
 
 ## Q156278: SMS: Error -39 in File Cpackage.cpp
 
+{% raw %}
+
 	Article: Q156278
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -75,3 +77,5 @@ permalink: /kb/156/Q156278/
 	
 	=============================================================================
 	
+
+{% endraw %}

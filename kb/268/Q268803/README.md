@@ -6,6 +6,8 @@ permalink: /kb/268/Q268803/
 
 ## Q268803: SMS: Problems Upgrading SMS 2.0 to SP2 with the Web Patch
 
+{% raw %}
+
 	Article: Q268803
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -99,3 +101,5 @@ permalink: /kb/268/Q268803/
 	
 	=============================================================================
 	
+
+{% endraw %}

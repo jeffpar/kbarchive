@@ -6,6 +6,8 @@ permalink: /kb/104/Q104274/
 
 ## Q104274: PATCH: Fb386prt.exe FoxBASE+/386 Printing Patch File
 
+{% raw %}
+
 	Article: Q104274
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): 2.1
@@ -57,3 +59,5 @@ permalink: /kb/104/Q104274/
 	
 	=============================================================================
 	
+
+{% endraw %}

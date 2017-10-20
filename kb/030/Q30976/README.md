@@ -6,6 +6,8 @@ permalink: /kb/030/Q30976/
 
 ## Q30976: OS2PATCH for CVP Not Needed in OS/2 Version 1.10.
 
+{% raw %}
+
 	Article: Q30976
 	Product(s): See article
 	Version(s): 2.20 2.30
@@ -23,3 +25,5 @@ permalink: /kb/030/Q30976/
 	OS/2 from.  If it was from us then they need to systems languages
 	support.
 	   Please refer to the file OS2PATCH.DOC for more information.
+
+{% endraw %}

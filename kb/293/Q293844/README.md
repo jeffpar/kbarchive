@@ -6,6 +6,8 @@ permalink: /kb/293/Q293844/
 
 ## Q293844: SMS: Troubleshooting &quot;outstanding devices in our presence&quot; when
 
+{% raw %}
+
 	Article: Q293844
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3
@@ -74,3 +76,5 @@ permalink: /kb/293/Q293844/
 	
 	=============================================================================
 	
+
+{% endraw %}

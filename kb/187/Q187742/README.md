@@ -6,6 +6,8 @@ permalink: /kb/187/Q187742/
 
 ## Q187742: Methods of Setting DHCP Options
 
+{% raw %}
+
 	Article: Q187742
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -95,3 +97,5 @@ permalink: /kb/187/Q187742/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/274/Q274621/
 
 ## Q274621: MSN Explorer Closed Caption Services Not Available
 
+{% raw %}
+
 	Article: Q274621
 	Product(s): The Microsoft Network
 	Version(s): 6.0
@@ -49,3 +51,5 @@ permalink: /kb/274/Q274621/
 	
 	=============================================================================
 	
+
+{% endraw %}

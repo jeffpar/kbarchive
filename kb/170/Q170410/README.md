@@ -6,6 +6,8 @@ permalink: /kb/170/Q170410/
 
 ## Q170410: WD97: ErrMsg Inserting If Then Else Field into Envelope
 
+{% raw %}
+
 	Article: Q170410
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/170/Q170410/
 	
 	=============================================================================
 	
+
+{% endraw %}

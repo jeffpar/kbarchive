@@ -6,6 +6,8 @@ permalink: /kb/172/Q172645/
 
 ## Q172645: Print LU Status Remains Pending If SNAPRINT Fails
 
+{% raw %}
+
 	Article: Q172645
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -72,3 +74,5 @@ permalink: /kb/172/Q172645/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136264/
 
 ## Q136264: PRB: &quot;Record Not Available&quot; When Opening a Table Shared
 
+{% raw %}
+
 	Article: Q136264
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/136/Q136264/
 	
 	=============================================================================
 	
+
+{% endraw %}

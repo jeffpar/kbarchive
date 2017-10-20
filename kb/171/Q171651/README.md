@@ -6,6 +6,8 @@ permalink: /kb/171/Q171651/
 
 ## Q171651: Running a Batch or Command File from Windows NT Explorer Fails
 
+{% raw %}
+
 	Article: Q171651
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/171/Q171651/
 	
 	=============================================================================
 	
+
+{% endraw %}

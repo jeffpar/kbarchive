@@ -6,6 +6,8 @@ permalink: /kb/155/Q155954/
 
 ## Q155954: Lines with Arrowheads Distorted When Pasted into Word
 
+{% raw %}
+
 	Article: Q155954
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -68,3 +70,5 @@ permalink: /kb/155/Q155954/
 	
 	=============================================================================
 	
+
+{% endraw %}

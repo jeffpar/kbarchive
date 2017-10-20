@@ -6,6 +6,8 @@ permalink: /kb/065/Q65449/
 
 ## Q65449: EMM386.SYS &quot;d=48&quot; Parameter Not Required
 
+{% raw %}
+
 	Article: Q65449
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -52,3 +54,5 @@ permalink: /kb/065/Q65449/
 	
 	=============================================================================
 	
+
+{% endraw %}

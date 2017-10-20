@@ -6,6 +6,8 @@ permalink: /kb/022/Q22538/
 
 ## Q22538: Information About Clipping, GetDeviceCaps() and GDI
 
+{% raw %}
+
 	Article: Q22538
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -59,3 +61,5 @@ permalink: /kb/022/Q22538/
 	
 	=============================================================================
 	
+
+{% endraw %}

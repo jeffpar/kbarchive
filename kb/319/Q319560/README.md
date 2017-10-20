@@ -6,6 +6,8 @@ permalink: /kb/319/Q319560/
 
 ## Q319560: Cannot Install IEAK User Rights Deployment Build with MSI 2.0
 
+{% raw %}
+
 	Article: Q319560
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6a
@@ -120,3 +122,5 @@ permalink: /kb/319/Q319560/
 	
 	=============================================================================
 	
+
+{% endraw %}

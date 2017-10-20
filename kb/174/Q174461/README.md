@@ -6,6 +6,8 @@ permalink: /kb/174/Q174461/
 
 ## Q174461: SMS: Remote Control Permissions Window Is Not Displayed
 
+{% raw %}
+
 	Article: Q174461
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -59,3 +61,5 @@ permalink: /kb/174/Q174461/
 	
 	=============================================================================
 	
+
+{% endraw %}

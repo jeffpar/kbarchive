@@ -6,6 +6,8 @@ permalink: /kb/141/Q141682/
 
 ## Q141682: How to Change Memory Allocations for Macintosh Programs
 
+{% raw %}
+
 	Article: Q141682
 	Product(s): Microsoft Tips for the Macintosh System
 	Version(s): MACINTOSH:
@@ -156,3 +158,5 @@ permalink: /kb/141/Q141682/
 	
 	=============================================================================
 	
+
+{% endraw %}

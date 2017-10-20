@@ -6,6 +6,8 @@ permalink: /kb/133/Q133453/
 
 ## Q133453: How to Index an Address Field
 
+{% raw %}
+
 	Article: Q133453
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,2.6a; MS-DOS:2.5,2.5a,2.5b,2.6,2.6a; WINDOWS:2.5,2.5a,2.5b,2.6,2.6a
@@ -111,3 +113,5 @@ permalink: /kb/133/Q133453/
 	
 	=============================================================================
 	
+
+{% endraw %}

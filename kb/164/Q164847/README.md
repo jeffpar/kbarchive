@@ -6,6 +6,8 @@ permalink: /kb/164/Q164847/
 
 ## Q164847: XCON: Win95 Client w/ Mail Service Won't Prompt for RAS Callback
 
+{% raw %}
+
 	Article: Q164847
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/164/Q164847/
 	
 	=============================================================================
 	
+
+{% endraw %}

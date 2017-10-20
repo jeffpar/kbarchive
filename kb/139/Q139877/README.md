@@ -6,6 +6,8 @@ permalink: /kb/139/Q139877/
 
 ## Q139877: &quot;Missing Shared DLLs&quot; When Starting WordPerfect 6.0
 
+{% raw %}
+
 	Article: Q139877
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -88,3 +90,5 @@ permalink: /kb/139/Q139877/
 	
 	=============================================================================
 	
+
+{% endraw %}

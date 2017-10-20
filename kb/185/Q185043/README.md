@@ -6,6 +6,8 @@ permalink: /kb/185/Q185043/
 
 ## Q185043: XADM: How to Re-home Public Folders Using 5.5 Admin Program
 
+{% raw %}
+
 	Article: Q185043
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -184,3 +186,5 @@ permalink: /kb/185/Q185043/
 	
 	=============================================================================
 	
+
+{% endraw %}

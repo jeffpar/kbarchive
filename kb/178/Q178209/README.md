@@ -6,6 +6,8 @@ permalink: /kb/178/Q178209/
 
 ## Q178209: Encarta 97 Err Msg: Math Co-Processor Not Found (Voxware)
 
+{% raw %}
+
 	Article: Q178209
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -92,3 +94,5 @@ permalink: /kb/178/Q178209/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173069/
 
 ## Q173069: WD97: Error Message or IPF Saving to Nearly Full Disk
 
+{% raw %}
+
 	Article: Q173069
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -184,3 +186,5 @@ permalink: /kb/173/Q173069/
 	
 	=============================================================================
 	
+
+{% endraw %}

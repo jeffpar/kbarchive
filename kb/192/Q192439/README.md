@@ -6,6 +6,8 @@ permalink: /kb/192/Q192439/
 
 ## Q192439: SMS: Command Line Smsview.exe Leaves Open Window in Background
 
+{% raw %}
+
 	Article: Q192439
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINNT:1.2
@@ -89,3 +91,5 @@ permalink: /kb/192/Q192439/
 	
 	=============================================================================
 	
+
+{% endraw %}

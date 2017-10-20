@@ -6,6 +6,8 @@ permalink: /kb/073/Q73090/
 
 ## Q73090: &quot;Wrong Disk&quot; Error When Installing MS-DOS
 
+{% raw %}
+
 	Article: Q73090
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -132,3 +134,5 @@ permalink: /kb/073/Q73090/
 	
 	=============================================================================
 	
+
+{% endraw %}

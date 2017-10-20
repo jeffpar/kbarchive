@@ -6,6 +6,8 @@ permalink: /kb/255/Q255179/
 
 ## Q255179: XADM: Exchange Server Setup Stops on Microsoft Terminal Server
 
+{% raw %}
+
 	Article: Q255179
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/255/Q255179/
 	
 	=============================================================================
 	
+
+{% endraw %}

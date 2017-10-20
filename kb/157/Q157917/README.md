@@ -6,6 +6,8 @@ permalink: /kb/157/Q157917/
 
 ## Q157917: SMS: PCM Windows 95 Setup Error: Corrupt CAB File
 
+{% raw %}
+
 	Article: Q157917
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:95; winnt:1.0,1.1,1.2
@@ -64,3 +66,5 @@ permalink: /kb/157/Q157917/
 	
 	=============================================================================
 	
+
+{% endraw %}

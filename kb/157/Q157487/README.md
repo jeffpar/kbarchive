@@ -6,6 +6,8 @@ permalink: /kb/157/Q157487/
 
 ## Q157487: Golf 3.0 and Soccer 1.0: Troubleshooting Sound Problems
 
+{% raw %}
+
 	Article: Q157487
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,3.0
@@ -95,3 +97,5 @@ permalink: /kb/157/Q157487/
 	
 	=============================================================================
 	
+
+{% endraw %}

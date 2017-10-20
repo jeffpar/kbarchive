@@ -6,6 +6,8 @@ permalink: /kb/132/Q132562/
 
 ## Q132562: PC WRmt: Server with Net Name MSG Won't Download Address List
 
+{% raw %}
+
 	Article: Q132562
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -50,3 +52,5 @@ permalink: /kb/132/Q132562/
 	
 	=============================================================================
 	
+
+{% endraw %}

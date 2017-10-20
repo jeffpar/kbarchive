@@ -6,6 +6,8 @@ permalink: /kb/175/Q175754/
 
 ## Q175754: FPNW Event ID 2025 and Packet Spoofing Information
 
+{% raw %}
+
 	Article: Q175754
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -122,3 +124,5 @@ permalink: /kb/175/Q175754/
 	
 	=============================================================================
 	
+
+{% endraw %}

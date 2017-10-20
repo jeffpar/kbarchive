@@ -6,6 +6,8 @@ permalink: /kb/191/Q191104/
 
 ## Q191104: PRB: Drive ListBox Fails to Drop Down with a Small FontSize
 
+{% raw %}
+
 	Article: Q191104
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -81,3 +83,5 @@ permalink: /kb/191/Q191104/
 	
 	=============================================================================
 	
+
+{% endraw %}

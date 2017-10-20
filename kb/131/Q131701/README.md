@@ -6,6 +6,8 @@ permalink: /kb/131/Q131701/
 
 ## Q131701: Systems Management Server Inventory Reports Incorrect CPU Speed
 
+{% raw %}
+
 	Article: Q131701
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -77,3 +79,5 @@ permalink: /kb/131/Q131701/
 	
 	=============================================================================
 	
+
+{% endraw %}

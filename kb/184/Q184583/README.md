@@ -6,6 +6,8 @@ permalink: /kb/184/Q184583/
 
 ## Q184583: XADM: Owner and Permissions on Distribution List Object
 
+{% raw %}
+
 	Article: Q184583
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -80,3 +82,5 @@ permalink: /kb/184/Q184583/
 	
 	=============================================================================
 	
+
+{% endraw %}

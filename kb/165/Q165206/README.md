@@ -6,6 +6,8 @@ permalink: /kb/165/Q165206/
 
 ## Q165206: Installing FPNW on a Standalone Windows NT Server
 
+{% raw %}
+
 	Article: Q165206
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -53,3 +55,5 @@ permalink: /kb/165/Q165206/
 	
 	=============================================================================
 	
+
+{% endraw %}

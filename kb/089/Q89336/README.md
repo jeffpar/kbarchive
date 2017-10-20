@@ -6,6 +6,8 @@ permalink: /kb/089/Q89336/
 
 ## Q89336: &quot;Write Protected Disk&quot; Errors in WinLogin SETUP
 
+{% raw %}
+
 	Article: Q89336
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/089/Q89336/
 	
 	=============================================================================
 	
+
+{% endraw %}

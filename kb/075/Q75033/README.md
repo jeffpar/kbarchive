@@ -6,6 +6,8 @@ permalink: /kb/075/Q75033/
 
 ## Q75033: Microsoft MS-DOS Upgrade Minimum Installation
 
+{% raw %}
+
 	Article: Q75033
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -82,3 +84,5 @@ permalink: /kb/075/Q75033/
 	
 	=============================================================================
 	
+
+{% endraw %}

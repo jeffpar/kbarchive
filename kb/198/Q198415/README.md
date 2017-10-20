@@ -6,6 +6,8 @@ permalink: /kb/198/Q198415/
 
 ## Q198415: XFOR: Disable 8-BIT MIME Support on NT Option Pack SMTP Service
 
+{% raw %}
+
 	Article: Q198415
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -95,3 +97,5 @@ permalink: /kb/198/Q198415/
 	
 	=============================================================================
 	
+
+{% endraw %}

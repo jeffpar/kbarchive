@@ -6,6 +6,8 @@ permalink: /kb/090/Q90930/
 
 ## Q90930: Shared CD-ROM or Floppy Drives Must Contain a Disk At Startup
 
+{% raw %}
+
 	Article: Q90930
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -81,3 +83,5 @@ permalink: /kb/090/Q90930/
 	
 	=============================================================================
 	
+
+{% endraw %}

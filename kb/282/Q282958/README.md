@@ -6,6 +6,8 @@ permalink: /kb/282/Q282958/
 
 ## Q282958: XADM: Information Store Stops Responding in store!EcCAIFromAI
 
+{% raw %}
+
 	Article: Q282958
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -103,3 +105,5 @@ permalink: /kb/282/Q282958/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186481/
 
 ## Q186481: Terminal Server Commands: NDSPSVR
 
+{% raw %}
+
 	Article: Q186481
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -42,3 +44,5 @@ permalink: /kb/186/Q186481/
 	
 	=============================================================================
 	
+
+{% endraw %}

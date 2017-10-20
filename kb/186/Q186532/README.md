@@ -6,6 +6,8 @@ permalink: /kb/186/Q186532/
 
 ## Q186532: Only Administrators Can Connect to Terminal Server
 
+{% raw %}
+
 	Article: Q186532
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -48,3 +50,5 @@ permalink: /kb/186/Q186532/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164386/
 
 ## Q164386: Print Disk Administrator Screen to Record Hard Drive Info
 
+{% raw %}
+
 	Article: Q164386
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -77,3 +79,5 @@ permalink: /kb/164/Q164386/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169745/
 
 ## Q169745: Golf 2.0: PlayerNet Patch Available, Includes Modem Play
 
+{% raw %}
+
 	Article: Q169745
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -58,3 +60,5 @@ permalink: /kb/169/Q169745/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135287/
 
 ## Q135287: BUG: Visual C++ Doesn't Generate Dependencies for .RSC Files
 
+{% raw %}
+
 	Article: Q135287
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:2.0
@@ -87,3 +89,5 @@ permalink: /kb/135/Q135287/
 	
 	=============================================================================
 	
+
+{% endraw %}

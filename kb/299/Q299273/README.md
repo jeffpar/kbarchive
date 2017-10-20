@@ -6,6 +6,8 @@ permalink: /kb/299/Q299273/
 
 ## Q299273: UPN Logon Option Does Not Work After You Apply Fix from MS01-026
 
+{% raw %}
+
 	Article: Q299273
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -147,3 +149,5 @@ permalink: /kb/299/Q299273/
 	
 	=============================================================================
 	
+
+{% endraw %}

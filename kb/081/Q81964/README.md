@@ -6,6 +6,8 @@ permalink: /kb/081/Q81964/
 
 ## Q81964: TSR Fails to Pop Up Under MS-DOS Versions 4.0 and Later
 
+{% raw %}
+
 	Article: Q81964
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.0,5.0a
@@ -72,3 +74,5 @@ permalink: /kb/081/Q81964/
 	
 	=============================================================================
 	
+
+{% endraw %}

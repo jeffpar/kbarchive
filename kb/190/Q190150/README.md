@@ -6,6 +6,8 @@ permalink: /kb/190/Q190150/
 
 ## Q190150: HOWTO: Force Application Setup to Use the Default Directory
 
+{% raw %}
+
 	Article: Q190150
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -77,3 +79,5 @@ permalink: /kb/190/Q190150/
 	
 	=============================================================================
 	
+
+{% endraw %}

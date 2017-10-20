@@ -6,6 +6,8 @@ permalink: /kb/114/Q114338/
 
 ## Q114338: Workgroup Add-On for MS-DOS: Sharing and Loading SMARTDrive
 
+{% raw %}
+
 	Article: Q114338
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): MS-DOS:3.11
@@ -84,3 +86,5 @@ permalink: /kb/114/Q114338/
 	
 	=============================================================================
 	
+
+{% endraw %}

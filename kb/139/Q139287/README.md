@@ -6,6 +6,8 @@ permalink: /kb/139/Q139287/
 
 ## Q139287: Canon Printer Cannot Print Mixed Orientations to FILE: Port
 
+{% raw %}
+
 	Article: Q139287
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -85,3 +87,5 @@ permalink: /kb/139/Q139287/
 	
 	=============================================================================
 	
+
+{% endraw %}

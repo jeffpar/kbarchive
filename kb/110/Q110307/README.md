@@ -6,6 +6,8 @@ permalink: /kb/110/Q110307/
 
 ## Q110307: Function of Page Protection on HP III Printer Driver
 
+{% raw %}
+
 	Article: Q110307
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/110/Q110307/
 	
 	=============================================================================
 	
+
+{% endraw %}

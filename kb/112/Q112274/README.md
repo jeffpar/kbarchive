@@ -6,6 +6,8 @@ permalink: /kb/112/Q112274/
 
 ## Q112274: Mac Srv: Server Connection Log Inconsistent
 
+{% raw %}
+
 	Article: Q112274
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -65,3 +67,5 @@ permalink: /kb/112/Q112274/
 	
 	=============================================================================
 	
+
+{% endraw %}

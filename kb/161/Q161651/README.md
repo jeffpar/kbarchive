@@ -6,6 +6,8 @@ permalink: /kb/161/Q161651/
 
 ## Q161651: SMS: SNMP Event Log Extension Registers Beta Version
 
+{% raw %}
+
 	Article: Q161651
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -53,3 +55,5 @@ permalink: /kb/161/Q161651/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191359/
 
 ## Q191359: SMS: Win95 OpenGL Screen Saver May Cause Computer to Stop
 
+{% raw %}
+
 	Article: Q191359
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -86,3 +88,5 @@ permalink: /kb/191/Q191359/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/287/Q287284/
 
 ## Q287284: LPR Printer Ports Disappear when Spooler Stops and Restarts
 
+{% raw %}
+
 	Article: Q287284
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/287/Q287284/
 	
 	=============================================================================
 	
+
+{% endraw %}

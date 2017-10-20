@@ -6,6 +6,8 @@ permalink: /kb/141/Q141431/
 
 ## Q141431: Bookshelf/Dictionary: Large Tables Are Printed Incorrectly
 
+{% raw %}
+
 	Article: Q141431
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -46,3 +48,5 @@ permalink: /kb/141/Q141431/
 	
 	=============================================================================
 	
+
+{% endraw %}

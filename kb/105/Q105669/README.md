@@ -6,6 +6,8 @@ permalink: /kb/105/Q105669/
 
 ## Q105669: Scenes 1.0: Screen Saver Does Not Activate When Menu Is Active
 
+{% raw %}
+
 	Article: Q105669
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -33,3 +35,5 @@ permalink: /kb/105/Q105669/
 	
 	=============================================================================
 	
+
+{% endraw %}

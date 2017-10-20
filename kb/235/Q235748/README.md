@@ -6,6 +6,8 @@ permalink: /kb/235/Q235748/
 
 ## Q235748: SMS: Options in &quot;Delete Files&quot; Script Item Function Improperly
 
+{% raw %}
+
 	Article: Q235748
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0,2.0; winnt:1.2,2.0
@@ -61,3 +63,5 @@ permalink: /kb/235/Q235748/
 	
 	=============================================================================
 	
+
+{% endraw %}

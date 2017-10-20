@@ -6,6 +6,8 @@ permalink: /kb/186/Q186419/
 
 ## Q186419: SMS Error: Insufficient Privileges to Edit Pending Jobs
 
+{% raw %}
+
 	Article: Q186419
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -55,3 +57,5 @@ permalink: /kb/186/Q186419/
 	
 	=============================================================================
 	
+
+{% endraw %}

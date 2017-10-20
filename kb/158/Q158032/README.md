@@ -6,6 +6,8 @@ permalink: /kb/158/Q158032/
 
 ## Q158032: GEX: Troubleshooting Display Issues
 
+{% raw %}
+
 	Article: Q158032
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -101,3 +103,5 @@ permalink: /kb/158/Q158032/
 	
 	=============================================================================
 	
+
+{% endraw %}

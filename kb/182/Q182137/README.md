@@ -6,6 +6,8 @@ permalink: /kb/182/Q182137/
 
 ## Q182137: PRB: Memory Error with HP LaserJet 4000 TN PCL 5e Driver
 
+{% raw %}
+
 	Article: Q182137
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -85,3 +87,5 @@ permalink: /kb/182/Q182137/
 	
 	=============================================================================
 	
+
+{% endraw %}

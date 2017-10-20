@@ -6,6 +6,8 @@ permalink: /kb/085/Q85022/
 
 ## Q85022: Windows Err Msg: Protected Mode Violation... with DTK 486
 
+{% raw %}
+
 	Article: Q85022
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -58,3 +60,5 @@ permalink: /kb/085/Q85022/
 	
 	=============================================================================
 	
+
+{% endraw %}

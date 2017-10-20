@@ -6,6 +6,8 @@ permalink: /kb/146/Q146190/
 
 ## Q146190: Cut and Paste Available on Wisdom Tab
 
+{% raw %}
+
 	Article: Q146190
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0,95
@@ -46,3 +48,5 @@ permalink: /kb/146/Q146190/
 	
 	=============================================================================
 	
+
+{% endraw %}

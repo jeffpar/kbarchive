@@ -6,6 +6,8 @@ permalink: /kb/074/Q74291/
 
 ## Q74291: INFO: Microsoft Windows Caches Five Display Contexts
 
+{% raw %}
+
 	Article: Q74291
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -56,3 +58,5 @@ permalink: /kb/074/Q74291/
 	
 	=============================================================================
 	
+
+{% endraw %}

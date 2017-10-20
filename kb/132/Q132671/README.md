@@ -6,6 +6,8 @@ permalink: /kb/132/Q132671/
 
 ## Q132671: Printing MS-DOS Applications Causes Windows 95 To Hang
 
+{% raw %}
+
 	Article: Q132671
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -64,3 +66,5 @@ permalink: /kb/132/Q132671/
 	
 	=============================================================================
 	
+
+{% endraw %}

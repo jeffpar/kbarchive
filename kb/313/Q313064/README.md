@@ -6,6 +6,8 @@ permalink: /kb/313/Q313064/
 
 ## Q313064: HOW TO: Monitor Web Server Performance by Using Counter Logs
 
+{% raw %}
+
 	Article: Q313064
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -254,3 +256,5 @@ permalink: /kb/313/Q313064/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248365/
 
 ## Q248365: SMS: Secondary Site Clients Receive Unintended Advertisements
 
+{% raw %}
+
 	Article: Q248365
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -61,3 +63,5 @@ permalink: /kb/248/Q248365/
 	
 	=============================================================================
 	
+
+{% endraw %}

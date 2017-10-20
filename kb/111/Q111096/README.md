@@ -6,6 +6,8 @@ permalink: /kb/111/Q111096/
 
 ## Q111096: BUG: Size of Owner-Draw Drop-Down Combo Box in Dialog Is Wrong
 
+{% raw %}
+
 	Article: Q111096
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -60,3 +62,5 @@ permalink: /kb/111/Q111096/
 	
 	=============================================================================
 	
+
+{% endraw %}

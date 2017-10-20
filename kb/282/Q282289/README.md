@@ -6,6 +6,8 @@ permalink: /kb/282/Q282289/
 
 ## Q282289: SMS: Error Message &quot;Cannot Create Account&quot;  During Site Install
 
+{% raw %}
+
 	Article: Q282289
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -65,3 +67,5 @@ permalink: /kb/282/Q282289/
 	
 	=============================================================================
 	
+
+{% endraw %}

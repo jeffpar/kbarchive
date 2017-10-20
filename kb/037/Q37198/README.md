@@ -6,6 +6,8 @@ permalink: /kb/037/Q37198/
 
 ## Q37198: Setup Won't Accept Drive on Novell Network
 
+{% raw %}
+
 	Article: Q37198
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -25,3 +27,5 @@ permalink: /kb/037/Q37198/
 	installing Microsoft software on their immediate machine and using
 	network drives to store files they have created. This process is
 	allowed.
+
+{% endraw %}

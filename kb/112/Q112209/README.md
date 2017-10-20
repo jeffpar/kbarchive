@@ -6,6 +6,8 @@ permalink: /kb/112/Q112209/
 
 ## Q112209: PC Win: SHARE.EXE Not Added to Floppy Boot Disk
 
+{% raw %}
+
 	Article: Q112209
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -47,3 +49,5 @@ permalink: /kb/112/Q112209/
 	
 	=============================================================================
 	
+
+{% endraw %}

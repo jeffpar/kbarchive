@@ -6,6 +6,8 @@ permalink: /kb/149/Q149136/
 
 ## Q149136: BUG: FOR1252 Error USE of Module in Internal Module Procedure
 
+{% raw %}
+
 	Article: Q149136
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -82,3 +84,5 @@ permalink: /kb/149/Q149136/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/075/Q75001/
 
 ## Q75001: SAMPLE: Parent.exe Uses SetParent to Change Parent of Child
 
+{% raw %}
+
 	Article: Q75001
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -55,3 +57,5 @@ permalink: /kb/075/Q75001/
 	
 	=============================================================================
 	
+
+{% endraw %}

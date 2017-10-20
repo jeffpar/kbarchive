@@ -6,6 +6,8 @@ permalink: /kb/082/Q82856/
 
 ## Q82856: Configuring SMARTDRV.EXE 4.0 DOUBLE_BUFFERING Properly
 
+{% raw %}
+
 	Article: Q82856
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -99,3 +101,5 @@ permalink: /kb/082/Q82856/
 	
 	=============================================================================
 	
+
+{% endraw %}

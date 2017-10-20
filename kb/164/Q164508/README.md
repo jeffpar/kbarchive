@@ -6,6 +6,8 @@ permalink: /kb/164/Q164508/
 
 ## Q164508: XGEN: Exchange Server 4.0 Not Available After May 27 1997
 
+{% raw %}
+
 	Article: Q164508
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -42,3 +44,5 @@ permalink: /kb/164/Q164508/
 	
 	=============================================================================
 	
+
+{% endraw %}

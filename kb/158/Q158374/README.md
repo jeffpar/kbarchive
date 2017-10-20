@@ -6,6 +6,8 @@ permalink: /kb/158/Q158374/
 
 ## Q158374: Hellbender: Viewing Options Available in Different Pilot Views
 
+{% raw %}
+
 	Article: Q158374
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -72,3 +74,5 @@ permalink: /kb/158/Q158374/
 	
 	=============================================================================
 	
+
+{% endraw %}

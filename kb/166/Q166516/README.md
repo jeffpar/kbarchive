@@ -6,6 +6,8 @@ permalink: /kb/166/Q166516/
 
 ## Q166516: XFOR: Message Body Missing or Truncated While Downloading Msg
 
+{% raw %}
+
 	Article: Q166516
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -63,3 +65,5 @@ permalink: /kb/166/Q166516/
 	
 	=============================================================================
 	
+
+{% endraw %}

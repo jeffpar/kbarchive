@@ -6,6 +6,8 @@ permalink: /kb/100/Q100092/
 
 ## Q100092: MS-DOS 6 and 6.2 Boot-Sector Identification Tag Is &quot;MSDOS5.0&quot;
 
+{% raw %}
+
 	Article: Q100092
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -42,3 +44,5 @@ permalink: /kb/100/Q100092/
 	
 	=============================================================================
 	
+
+{% endraw %}

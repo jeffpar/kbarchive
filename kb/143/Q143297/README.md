@@ -6,6 +6,8 @@ permalink: /kb/143/Q143297/
 
 ## Q143297: How to Use OLE Automation with Microsoft Project 4.1
 
+{% raw %}
+
 	Article: Q143297
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -144,3 +146,5 @@ permalink: /kb/143/Q143297/
 	
 	=============================================================================
 	
+
+{% endraw %}

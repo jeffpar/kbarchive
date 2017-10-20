@@ -6,6 +6,8 @@ permalink: /kb/090/Q90192/
 
 ## Q90192: DataProducts LZR 650 Printer Problem with Windows
 
+{% raw %}
+
 	Article: Q90192
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/090/Q90192/
 	
 	=============================================================================
 	
+
+{% endraw %}

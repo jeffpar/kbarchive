@@ -6,6 +6,8 @@ permalink: /kb/146/Q146693/
 
 ## Q146693: XCLN: Importing 3.x Folders Textizes Meeting Requests
 
+{% raw %}
+
 	Article: Q146693
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0; Win95:4.0
@@ -58,3 +60,5 @@ permalink: /kb/146/Q146693/
 	
 	=============================================================================
 	
+
+{% endraw %}

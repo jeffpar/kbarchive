@@ -6,6 +6,8 @@ permalink: /kb/156/Q156260/
 
 ## Q156260: Task Manager Performance Tab Not Displayed Correctly
 
+{% raw %}
+
 	Article: Q156260
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/156/Q156260/
 	
 	=============================================================================
 	
+
+{% endraw %}

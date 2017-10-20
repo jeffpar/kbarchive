@@ -6,6 +6,8 @@ permalink: /kb/137/Q137453/
 
 ## Q137453: Disconnect Option Not Available When Using Remote Mail
 
+{% raw %}
+
 	Article: Q137453
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -49,3 +51,5 @@ permalink: /kb/137/Q137453/
 	
 	=============================================================================
 	
+
+{% endraw %}

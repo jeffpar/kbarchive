@@ -6,6 +6,8 @@ permalink: /kb/106/Q106509/
 
 ## Q106509: PC Adm: Err Msg: Notice 28 Error File Not Accessible
 
+{% raw %}
+
 	Article: Q106509
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.0b,3.2
@@ -52,3 +54,5 @@ permalink: /kb/106/Q106509/
 	
 	=============================================================================
 	
+
+{% endraw %}

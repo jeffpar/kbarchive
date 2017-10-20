@@ -6,6 +6,8 @@ permalink: /kb/042/Q42465/
 
 ## Q42465: CALL ABSOLUTE Hang; Assembly Must Use CB Return Instruction
 
+{% raw %}
+
 	Article: Q42465
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -80,3 +82,5 @@ permalink: /kb/042/Q42465/
 	CALL ABSOLUTE(VARPTR(ASMROUTINE(1)))      ' call routine we poked in
 	DEF SEG
 	END
+
+{% endraw %}

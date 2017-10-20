@@ -6,6 +6,8 @@ permalink: /kb/186/Q186701/
 
 ## Q186701: XWEB: Time and Date of Delivery Missing from Delivery Receipt
 
+{% raw %}
+
 	Article: Q186701
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -56,3 +58,5 @@ permalink: /kb/186/Q186701/
 	
 	=============================================================================
 	
+
+{% endraw %}

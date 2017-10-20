@@ -6,6 +6,8 @@ permalink: /kb/255/Q255556/
 
 ## Q255556: PRB: C2146 Error with Sqloledb.h in Platform SDK
 
+{% raw %}
+
 	Article: Q255556
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -92,3 +94,5 @@ permalink: /kb/255/Q255556/
 	
 	=============================================================================
 	
+
+{% endraw %}

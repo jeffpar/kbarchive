@@ -6,6 +6,8 @@ permalink: /kb/277/Q277725/
 
 ## Q277725: HOWTO: Copy Fields Containing NULL to Text File
 
+{% raw %}
+
 	Article: Q277725
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -130,3 +132,5 @@ permalink: /kb/277/Q277725/
 	
 	=============================================================================
 	
+
+{% endraw %}

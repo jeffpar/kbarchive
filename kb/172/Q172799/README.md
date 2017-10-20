@@ -6,6 +6,8 @@ permalink: /kb/172/Q172799/
 
 ## Q172799: Extra Form Feed Printed With LU3 Print Job
 
+{% raw %}
+
 	Article: Q172799
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -87,3 +89,5 @@ permalink: /kb/172/Q172799/
 	
 	=============================================================================
 	
+
+{% endraw %}

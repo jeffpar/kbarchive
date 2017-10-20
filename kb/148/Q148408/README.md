@@ -6,6 +6,8 @@ permalink: /kb/148/Q148408/
 
 ## Q148408: PRB: When Event Fires Again Upon Leaving a Grid Column
 
+{% raw %}
+
 	Article: Q148408
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -99,3 +101,5 @@ permalink: /kb/148/Q148408/
 	
 	=============================================================================
 	
+
+{% endraw %}

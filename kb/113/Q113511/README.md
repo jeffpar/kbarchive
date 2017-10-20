@@ -6,6 +6,8 @@ permalink: /kb/113/Q113511/
 
 ## Q113511: MSBACKUP Err Msg: Internal Error - Open Failure
 
+{% raw %}
+
 	Article: Q113511
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -56,3 +58,5 @@ permalink: /kb/113/Q113511/
 	
 	=============================================================================
 	
+
+{% endraw %}

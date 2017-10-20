@@ -6,6 +6,8 @@ permalink: /kb/274/Q274177/
 
 ## Q274177: Visual C++ 6.0 Deluxe Learning Edition Comments and Corrections
 
+{% raw %}
+
 	Article: Q274177
 	Product(s): Microsoft Press
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/274/Q274177/
 	
 	=============================================================================
 	
+
+{% endraw %}

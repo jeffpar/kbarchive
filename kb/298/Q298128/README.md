@@ -6,6 +6,8 @@ permalink: /kb/298/Q298128/
 
 ## Q298128: Dcpromo.exe Does Not Work When You Upgrade a BDC
 
+{% raw %}
+
 	Article: Q298128
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,2000 SP2,4.0
@@ -80,3 +82,5 @@ permalink: /kb/298/Q298128/
 	
 	=============================================================================
 	
+
+{% endraw %}

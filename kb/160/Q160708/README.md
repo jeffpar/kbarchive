@@ -6,6 +6,8 @@ permalink: /kb/160/Q160708/
 
 ## Q160708: XCLN: Scanpst Reports Incorrect Values for Folders/Items in File
 
+{% raw %}
+
 	Article: Q160708
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -49,3 +51,5 @@ permalink: /kb/160/Q160708/
 	
 	=============================================================================
 	
+
+{% endraw %}

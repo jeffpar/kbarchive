@@ -6,6 +6,8 @@ permalink: /kb/149/Q149780/
 
 ## Q149780: XFOR: IMC and IMS Do Not Wrap Line Text At Property Page Value
 
+{% raw %}
+
 	Article: Q149780
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -64,3 +66,5 @@ permalink: /kb/149/Q149780/
 	
 	=============================================================================
 	
+
+{% endraw %}

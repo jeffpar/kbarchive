@@ -6,6 +6,8 @@ permalink: /kb/119/Q119060/
 
 ## Q119060: Writer/Artist: Starts in Black and White
 
+{% raw %}
+
 	Article: Q119060
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a
@@ -72,3 +74,5 @@ permalink: /kb/119/Q119060/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194624/
 
 ## Q194624: TN3270 Server Traps When TN3270 Session Load Is Under 30K
 
+{% raw %}
+
 	Article: Q194624
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP1
@@ -69,3 +71,5 @@ permalink: /kb/194/Q194624/
 	
 	=============================================================================
 	
+
+{% endraw %}

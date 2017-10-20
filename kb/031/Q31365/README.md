@@ -6,6 +6,8 @@ permalink: /kb/031/Q31365/
 
 ## Q31365: Instrument Lights, Engines, and Gyroscopes in Reality Mode
 
+{% raw %}
+
 	Article: Q31365
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -35,3 +37,5 @@ permalink: /kb/031/Q31365/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156732/
 
 ## Q156732: HOWTO: Print from the Microsoft WebBrowser Control
 
+{% raw %}
+
 	Article: Q156732
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.01,5.0
@@ -121,3 +123,5 @@ permalink: /kb/156/Q156732/
 	
 	=============================================================================
 	
+
+{% endraw %}

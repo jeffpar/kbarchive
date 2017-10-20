@@ -6,6 +6,8 @@ permalink: /kb/020/Q20315/
 
 ## Q20315: File: Differences Among Versions
 
+{% raw %}
+
 	Article: Q20315
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): 
@@ -100,3 +102,5 @@ permalink: /kb/020/Q20315/
 	
 	=============================================================================
 	
+
+{% endraw %}

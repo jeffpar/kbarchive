@@ -6,6 +6,8 @@ permalink: /kb/151/Q151198/
 
 ## Q151198: XADM: How to Set Up a Search for a Custom Attribute
 
+{% raw %}
+
 	Article: Q151198
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -119,3 +121,5 @@ permalink: /kb/151/Q151198/
 	
 	=============================================================================
 	
+
+{% endraw %}

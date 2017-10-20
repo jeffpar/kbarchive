@@ -6,6 +6,8 @@ permalink: /kb/183/Q183813/
 
 ## Q183813: FIX: Developer Studio Macro Constants Not Defined
 
+{% raw %}
+
 	Article: Q183813
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.0,4.01; winnt:5.0
@@ -159,3 +161,5 @@ permalink: /kb/183/Q183813/
 	
 	=============================================================================
 	
+
+{% endraw %}

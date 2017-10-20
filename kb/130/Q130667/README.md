@@ -6,6 +6,8 @@ permalink: /kb/130/Q130667/
 
 ## Q130667: PRB: F12 Causes Hard-Coded Breakpoint Exception When Debugging
 
+{% raw %}
+
 	Article: Q130667
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS NT:1.0,2.0,2.1,4.0,5.0
@@ -77,3 +79,5 @@ permalink: /kb/130/Q130667/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/249/Q249895/
 
 ## Q249895: XCON: MTA Stops, Event ID 3057 Appears When You Start Store
 
+{% raw %}
+
 	Article: Q249895
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -80,3 +82,5 @@ permalink: /kb/249/Q249895/
 	
 	=============================================================================
 	
+
+{% endraw %}

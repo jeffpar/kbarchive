@@ -6,6 +6,8 @@ permalink: /kb/165/Q165537/
 
 ## Q165537: XCLN: Client Setup Overwrites Localized Version of Ole32.dll
 
+{% raw %}
+
 	Article: Q165537
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -50,3 +52,5 @@ permalink: /kb/165/Q165537/
 	
 	=============================================================================
 	
+
+{% endraw %}

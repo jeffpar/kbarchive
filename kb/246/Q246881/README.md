@@ -6,6 +6,8 @@ permalink: /kb/246/Q246881/
 
 ## Q246881: XIMS: NDR Includes DL Name Rather Than Individual Recipient
 
+{% raw %}
+
 	Article: Q246881
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -73,3 +75,5 @@ permalink: /kb/246/Q246881/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97693/
 
 ## Q97693: INFO: Dynamic Processing of WM_COMMAND Messages
 
+{% raw %}
+
 	Article: Q97693
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -97,3 +99,5 @@ permalink: /kb/097/Q97693/
 	
 	=============================================================================
 	
+
+{% endraw %}

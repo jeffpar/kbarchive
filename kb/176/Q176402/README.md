@@ -6,6 +6,8 @@ permalink: /kb/176/Q176402/
 
 ## Q176402: Introducing Microsoft Windows 98 Comments and Corrections
 
+{% raw %}
+
 	Article: Q176402
 	Product(s): Microsoft Press
 	Version(s): 
@@ -134,3 +136,5 @@ permalink: /kb/176/Q176402/
 	
 	=============================================================================
 	
+
+{% endraw %}

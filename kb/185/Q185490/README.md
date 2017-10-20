@@ -6,6 +6,8 @@ permalink: /kb/185/Q185490/
 
 ## Q185490: Explorer Expands System Drive by Default
 
+{% raw %}
+
 	Article: Q185490
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -75,3 +77,5 @@ permalink: /kb/185/Q185490/
 	
 	=============================================================================
 	
+
+{% endraw %}

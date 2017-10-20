@@ -6,6 +6,8 @@ permalink: /kb/082/Q82348/
 
 ## Q82348: DriverLINX and DriverLINX/VB Problems in Standard Mode
 
+{% raw %}
+
 	Article: Q82348
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/082/Q82348/
 	
 	=============================================================================
 	
+
+{% endraw %}

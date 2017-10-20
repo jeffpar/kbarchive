@@ -6,6 +6,8 @@ permalink: /kb/167/Q167759/
 
 ## Q167759: SMS: IE 3.01 Security Patch Causes SMSRUN16 to Stop Responding
 
+{% raw %}
+
 	Article: Q167759
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.1,1.2
@@ -119,3 +121,5 @@ permalink: /kb/167/Q167759/
 	
 	=============================================================================
 	
+
+{% endraw %}

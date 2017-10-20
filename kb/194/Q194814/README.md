@@ -6,6 +6,8 @@ permalink: /kb/194/Q194814/
 
 ## Q194814: XADM: Server Missing Public IS after Move Server Wizard
 
+{% raw %}
+
 	Article: Q194814
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -76,3 +78,5 @@ permalink: /kb/194/Q194814/
 	
 	=============================================================================
 	
+
+{% endraw %}

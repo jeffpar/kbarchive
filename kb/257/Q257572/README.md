@@ -6,6 +6,8 @@ permalink: /kb/257/Q257572/
 
 ## Q257572: FIX: Err Msg &quot;Missing Dependency Information&quot; with PDW
 
+{% raw %}
+
 	Article: Q257572
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -98,3 +100,5 @@ permalink: /kb/257/Q257572/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152892/
 
 ## Q152892: XADM: Err Msg: Unable to Write Delivery Log
 
+{% raw %}
+
 	Article: Q152892
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -45,3 +47,5 @@ permalink: /kb/152/Q152892/
 	
 	=============================================================================
 	
+
+{% endraw %}

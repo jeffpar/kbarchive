@@ -6,6 +6,8 @@ permalink: /kb/098/Q98745/
 
 ## Q98745: How to Emulate a READ Inside Another READ
 
+{% raw %}
+
 	Article: Q98745
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -123,3 +125,5 @@ permalink: /kb/098/Q98745/
 	
 	=============================================================================
 	
+
+{% endraw %}

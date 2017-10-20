@@ -6,6 +6,8 @@ permalink: /kb/132/Q132712/
 
 ## Q132712: Doc Err: Attachmate Extra for Windows Requires IPXINTFC TSR
 
+{% raw %}
+
 	Article: Q132712
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/132/Q132712/
 	
 	=============================================================================
 	
+
+{% endraw %}

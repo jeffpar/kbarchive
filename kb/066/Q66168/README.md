@@ -6,6 +6,8 @@ permalink: /kb/066/Q66168/
 
 ## Q66168: No CGA Support in Windows Entertainment Pack
 
+{% raw %}
+
 	Article: Q66168
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -27,3 +29,5 @@ permalink: /kb/066/Q66168/
 	
 	=============================================================================
 	
+
+{% endraw %}

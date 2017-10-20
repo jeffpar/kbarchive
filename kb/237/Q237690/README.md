@@ -6,6 +6,8 @@ permalink: /kb/237/Q237690/
 
 ## Q237690: SMS: Err Msg: The Redirector Has Timed Out to &#92;&#92;&lt;SMS Server&gt;
 
+{% raw %}
+
 	Article: Q237690
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -107,3 +109,5 @@ permalink: /kb/237/Q237690/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142179/
 
 ## Q142179: Troubleshooting .avi File Playback Problems in Windows 95
 
+{% raw %}
+
 	Article: Q142179
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -237,3 +239,5 @@ permalink: /kb/142/Q142179/
 	
 	=============================================================================
 	
+
+{% endraw %}

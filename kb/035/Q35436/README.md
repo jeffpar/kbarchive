@@ -6,6 +6,8 @@ permalink: /kb/035/Q35436/
 
 ## Q35436: IBM PC, XT, AT, and PS/2 Error Codes
 
+{% raw %}
+
 	Article: Q35436
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -534,3 +536,5 @@ permalink: /kb/035/Q35436/
 	
 	=============================================================================
 	
+
+{% endraw %}

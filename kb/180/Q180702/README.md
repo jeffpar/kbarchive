@@ -6,6 +6,8 @@ permalink: /kb/180/Q180702/
 
 ## Q180702: Deleting LUA Pool from TN3270 May Delete Pool
 
+{% raw %}
+
 	Article: Q180702
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -56,3 +58,5 @@ permalink: /kb/180/Q180702/
 	
 	=============================================================================
 	
+
+{% endraw %}

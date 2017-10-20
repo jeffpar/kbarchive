@@ -6,6 +6,8 @@ permalink: /kb/191/Q191735/
 
 ## Q191735: PRB: The Jet VBA File Failed to Initialize When Called
 
+{% raw %}
+
 	Article: Q191735
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -90,3 +92,5 @@ permalink: /kb/191/Q191735/
 	
 	=============================================================================
 	
+
+{% endraw %}

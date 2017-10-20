@@ -6,6 +6,8 @@ permalink: /kb/150/Q150467/
 
 ## Q150467: PRB: Modal Form Flickers When Exiting Form with DBGrid Control
 
+{% raw %}
+
 	Article: Q150467
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -100,3 +102,5 @@ permalink: /kb/150/Q150467/
 	
 	=============================================================================
 	
+
+{% endraw %}

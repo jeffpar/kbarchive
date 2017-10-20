@@ -6,6 +6,8 @@ permalink: /kb/142/Q142942/
 
 ## Q142942: IDEA5251/PC Twinax Adapter Does Not Work with Windows NT
 
+{% raw %}
+
 	Article: Q142942
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0
@@ -49,3 +51,5 @@ permalink: /kb/142/Q142942/
 	
 	=============================================================================
 	
+
+{% endraw %}

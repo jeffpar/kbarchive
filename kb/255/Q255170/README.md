@@ -6,6 +6,8 @@ permalink: /kb/255/Q255170/
 
 ## Q255170: SMS: Remote Reboot Fails on Windows 95 at High Resolutions
 
+{% raw %}
+
 	Article: Q255170
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -65,3 +67,5 @@ permalink: /kb/255/Q255170/
 	
 	=============================================================================
 	
+
+{% endraw %}

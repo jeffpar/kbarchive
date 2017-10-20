@@ -6,6 +6,8 @@ permalink: /kb/261/Q261223/
 
 ## Q261223: File Download Dialog Box Appears When You Browse an ASP File
 
+{% raw %}
+
 	Article: Q261223
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -87,3 +89,5 @@ permalink: /kb/261/Q261223/
 	
 	=============================================================================
 	
+
+{% endraw %}

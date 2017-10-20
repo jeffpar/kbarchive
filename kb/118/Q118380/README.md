@@ -6,6 +6,8 @@ permalink: /kb/118/Q118380/
 
 ## Q118380: Windows NT 3.5 and Windows 95 on the Same Computer
 
+{% raw %}
+
 	Article: Q118380
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -73,3 +75,5 @@ permalink: /kb/118/Q118380/
 	
 	=============================================================================
 	
+
+{% endraw %}

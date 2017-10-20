@@ -6,6 +6,8 @@ permalink: /kb/175/Q175866/
 
 ## Q175866: MSN E-mail Notification Message Is Not Updated
 
+{% raw %}
+
 	Article: Q175866
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5
@@ -57,3 +59,5 @@ permalink: /kb/175/Q175866/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169423/
 
 ## Q169423: Return Of Arcade Trial Version Is Available
 
+{% raw %}
+
 	Article: Q169423
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -51,3 +53,5 @@ permalink: /kb/169/Q169423/
 	
 	=============================================================================
 	
+
+{% endraw %}

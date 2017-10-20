@@ -6,6 +6,8 @@ permalink: /kb/128/Q128172/
 
 ## Q128172: PC WSPlus: SPlusReadAppt Fails to Retrieve Creator Information
 
+{% raw %}
+
 	Article: Q128172
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0a
@@ -64,3 +66,5 @@ permalink: /kb/128/Q128172/
 	
 	=============================================================================
 	
+
+{% endraw %}

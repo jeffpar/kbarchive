@@ -6,6 +6,8 @@ permalink: /kb/187/Q187847/
 
 ## Q187847: FP: Explorer Automatically Updates Hyperlinks in Editor
 
+{% raw %}
+
 	Article: Q187847
 	Product(s): Word Front Page
 	Version(s): 1.0
@@ -77,3 +79,5 @@ permalink: /kb/187/Q187847/
 	
 	=============================================================================
 	
+
+{% endraw %}

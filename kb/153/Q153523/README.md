@@ -6,6 +6,8 @@ permalink: /kb/153/Q153523/
 
 ## Q153523: CMINIT May Fail with PRODUCT_SPECIFIC_ERROR(20) After a CMCANC
 
+{% raw %}
+
 	Article: Q153523
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -137,3 +139,5 @@ permalink: /kb/153/Q153523/
 	
 	=============================================================================
 	
+
+{% endraw %}

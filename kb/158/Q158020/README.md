@@ -6,6 +6,8 @@ permalink: /kb/158/Q158020/
 
 ## Q158020: SMS: Error 529 When Installing a Client
 
+{% raw %}
+
 	Article: Q158020
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -105,3 +107,5 @@ permalink: /kb/158/Q158020/
 	
 	=============================================================================
 	
+
+{% endraw %}

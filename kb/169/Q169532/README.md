@@ -6,6 +6,8 @@ permalink: /kb/169/Q169532/
 
 ## Q169532: WD97: Paragraph Borders Displayed Erratically with Objects
 
+{% raw %}
+
 	Article: Q169532
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -75,3 +77,5 @@ permalink: /kb/169/Q169532/
 	
 	=============================================================================
 	
+
+{% endraw %}

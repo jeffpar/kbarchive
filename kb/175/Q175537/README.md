@@ -6,6 +6,8 @@ permalink: /kb/175/Q175537/
 
 ## Q175537: SAMPLE: LED.EXE: Light Emitting Diode Character Display Sample
 
+{% raw %}
+
 	Article: Q175537
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -114,3 +116,5 @@ permalink: /kb/175/Q175537/
 	
 	=============================================================================
 	
+
+{% endraw %}

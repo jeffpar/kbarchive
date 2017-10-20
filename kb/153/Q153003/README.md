@@ -6,6 +6,8 @@ permalink: /kb/153/Q153003/
 
 ## Q153003: How To Perform a Screen Capture Programmatically
 
+{% raw %}
+
 	Article: Q153003
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,6.0
@@ -69,3 +71,5 @@ permalink: /kb/153/Q153003/
 	
 	=============================================================================
 	
+
+{% endraw %}

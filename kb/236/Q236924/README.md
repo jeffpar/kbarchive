@@ -6,6 +6,8 @@ permalink: /kb/236/Q236924/
 
 ## Q236924: MCSE Readiness Review - Exam 70-068 Windows NT Server Enterprise
 
+{% raw %}
+
 	Article: Q236924
 	Product(s): Microsoft Press
 	Version(s): 
@@ -204,3 +206,5 @@ permalink: /kb/236/Q236924/
 	
 	=============================================================================
 	
+
+{% endraw %}

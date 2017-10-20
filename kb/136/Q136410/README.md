@@ -6,6 +6,8 @@ permalink: /kb/136/Q136410/
 
 ## Q136410: BBS Hangs When Show All Messages Option Turned Off
 
+{% raw %}
+
 	Article: Q136410
 	Product(s): The Microsoft Network
 	Version(s): 1.00 1.05 1.2 1.3
@@ -47,3 +49,5 @@ permalink: /kb/136/Q136410/
 	
 	=============================================================================
 	
+
+{% endraw %}

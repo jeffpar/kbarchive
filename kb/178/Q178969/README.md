@@ -6,6 +6,8 @@ permalink: /kb/178/Q178969/
 
 ## Q178969: MS Graph 97: Keyboard Shortcuts for Microsoft Graph 97
 
+{% raw %}
+
 	Article: Q178969
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -299,3 +301,5 @@ permalink: /kb/178/Q178969/
 	
 	=============================================================================
 	
+
+{% endraw %}

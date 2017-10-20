@@ -6,6 +6,8 @@ permalink: /kb/326/Q326001/
 
 ## Q326001: Bicycle Casino: Dealer Misreads Hand, and Losing Hand Wins
 
+{% raw %}
+
 	Article: Q326001
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/326/Q326001/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156490/
 
 ## Q156490: Close Combat: Head-to-Head Play Alert Message
 
+{% raw %}
+
 	Article: Q156490
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -82,3 +84,5 @@ permalink: /kb/156/Q156490/
 	
 	=============================================================================
 	
+
+{% endraw %}

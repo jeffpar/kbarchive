@@ -6,6 +6,8 @@ permalink: /kb/138/Q138415/
 
 ## Q138415: Windows NT Fails to Check for Low Disk Space (No Admin Alerts)
 
+{% raw %}
+
 	Article: Q138415
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -61,3 +63,5 @@ permalink: /kb/138/Q138415/
 	
 	=============================================================================
 	
+
+{% endraw %}

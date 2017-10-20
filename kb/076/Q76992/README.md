@@ -6,6 +6,8 @@ permalink: /kb/076/Q76992/
 
 ## Q76992: International and National Standard Paper Sizes
 
+{% raw %}
+
 	Article: Q76992
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/076/Q76992/
 	
 	=============================================================================
 	
+
+{% endraw %}

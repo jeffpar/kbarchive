@@ -6,6 +6,8 @@ permalink: /kb/195/Q195375/
 
 ## Q195375: FIX: ClassView Can Be Very Slow When Using SourceSafe
 
+{% raw %}
+
 	Article: Q195375
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -74,3 +76,5 @@ permalink: /kb/195/Q195375/
 	
 	=============================================================================
 	
+
+{% endraw %}

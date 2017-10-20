@@ -6,6 +6,8 @@ permalink: /kb/113/Q113189/
 
 ## Q113189: ListDlg.exe Implements a List Box Full of Dialog Boxes
 
+{% raw %}
+
 	Article: Q113189
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -98,3 +100,5 @@ permalink: /kb/113/Q113189/
 	
 	=============================================================================
 	
+
+{% endraw %}

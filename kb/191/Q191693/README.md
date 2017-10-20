@@ -6,6 +6,8 @@ permalink: /kb/191/Q191693/
 
 ## Q191693: BUG: Ambiguous Name Detection for Private Functions Named &quot;Main&quot;
 
+{% raw %}
+
 	Article: Q191693
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/191/Q191693/
 	
 	=============================================================================
 	
+
+{% endraw %}

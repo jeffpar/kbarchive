@@ -6,6 +6,8 @@ permalink: /kb/205/Q205530/
 
 ## Q205530: How to Switch Among Running Programs
 
+{% raw %}
+
 	Article: Q205530
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; winnt:3.5,3.51,4.0
@@ -69,3 +71,5 @@ permalink: /kb/205/Q205530/
 	
 	=============================================================================
 	
+
+{% endraw %}

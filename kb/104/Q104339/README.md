@@ -6,6 +6,8 @@ permalink: /kb/104/Q104339/
 
 ## Q104339: PRB: TableDefs Not Updated When SQL Statement Creates Table
 
+{% raw %}
+
 	Article: Q104339
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -76,3 +78,5 @@ permalink: /kb/104/Q104339/
 	
 	=============================================================================
 	
+
+{% endraw %}

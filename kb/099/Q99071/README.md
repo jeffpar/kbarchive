@@ -6,6 +6,8 @@ permalink: /kb/099/Q99071/
 
 ## Q99071: Err Msg Copying Files to a RAMDrive: Cannot Make Directory...
 
+{% raw %}
+
 	Article: Q99071
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -65,3 +67,5 @@ permalink: /kb/099/Q99071/
 	
 	=============================================================================
 	
+
+{% endraw %}

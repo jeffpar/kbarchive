@@ -6,6 +6,8 @@ permalink: /kb/145/Q145795/
 
 ## Q145795: XCLN: Auto-Word Select Fails to Select with Last Character
 
+{% raw %}
+
 	Article: Q145795
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -45,3 +47,5 @@ permalink: /kb/145/Q145795/
 	
 	=============================================================================
 	
+
+{% endraw %}

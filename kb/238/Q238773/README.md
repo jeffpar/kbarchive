@@ -6,6 +6,8 @@ permalink: /kb/238/Q238773/
 
 ## Q238773: XCLN: How to Export GAL Entries to an Outlook Contacts Folder
 
+{% raw %}
+
 	Article: Q238773
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,97,98; winnt:4.0,5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/238/Q238773/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156358/
 
 ## Q156358: How to Manually Add Support for a Second Processor
 
+{% raw %}
+
 	Article: Q156358
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -158,3 +160,5 @@ permalink: /kb/156/Q156358/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164663/
 
 ## Q164663: Windows NT Client Config Tool Sets Incorrect Registry Entry
 
+{% raw %}
+
 	Article: Q164663
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/164/Q164663/
 	
 	=============================================================================
 	
+
+{% endraw %}

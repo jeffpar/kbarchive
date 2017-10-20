@@ -6,6 +6,8 @@ permalink: /kb/102/Q102694/
 
 ## Q102694: FIX: F1917 Error, Print Logical Expression of COMPLEX Values
 
+{% raw %}
+
 	Article: Q102694
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -89,3 +91,5 @@ permalink: /kb/102/Q102694/
 	
 	=============================================================================
 	
+
+{% endraw %}

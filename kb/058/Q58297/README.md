@@ -6,6 +6,8 @@ permalink: /kb/058/Q58297/
 
 ## Q58297: Qmodem Reboots the Machine in Enhanced Mode
 
+{% raw %}
+
 	Article: Q58297
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/058/Q58297/
 	
 	=============================================================================
 	
+
+{% endraw %}

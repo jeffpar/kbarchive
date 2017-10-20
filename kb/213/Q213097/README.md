@@ -6,6 +6,8 @@ permalink: /kb/213/Q213097/
 
 ## Q213097: SMSINST: Create Shortcut Command Truncates Source Path Directory
 
+{% raw %}
+
 	Article: Q213097
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0,2.0; winnt:1.2,2.0
@@ -50,3 +52,5 @@ permalink: /kb/213/Q213097/
 	
 	=============================================================================
 	
+
+{% endraw %}

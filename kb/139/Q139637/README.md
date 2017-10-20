@@ -6,6 +6,8 @@ permalink: /kb/139/Q139637/
 
 ## Q139637: FIX: Developer Studio Ignores /nologo Linker Setting
 
+{% raw %}
+
 	Article: Q139637
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.1,4.2
@@ -66,3 +68,5 @@ permalink: /kb/139/Q139637/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234497/
 
 ## Q234497: HOW TO: Specify Additional Document Types for HTTP Compression
 
+{% raw %}
+
 	Article: Q234497
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -91,3 +93,5 @@ permalink: /kb/234/Q234497/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157591/
 
 ## Q157591: Golf: Improving Performance on Machines with 8 MB of RAM
 
+{% raw %}
+
 	Article: Q157591
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/157/Q157591/
 	
 	=============================================================================
 	
+
+{% endraw %}

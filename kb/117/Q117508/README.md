@@ -6,6 +6,8 @@ permalink: /kb/117/Q117508/
 
 ## Q117508: Personal ACIS Err Msg: You Still Need to Install the Win32S...
 
+{% raw %}
+
 	Article: Q117508
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/117/Q117508/
 	
 	=============================================================================
 	
+
+{% endraw %}

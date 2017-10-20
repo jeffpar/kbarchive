@@ -6,6 +6,8 @@ permalink: /kb/206/Q206897/
 
 ## Q206897: BUG: Behavior of Lightweight WLVScroll Different from VScrollBar
 
+{% raw %}
+
 	Article: Q206897
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -125,3 +127,5 @@ permalink: /kb/206/Q206897/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124884/
 
 ## Q124884: FIX: ALT+D and SPACE Both Map to Key Code Value of 32
 
+{% raw %}
+
 	Article: Q124884
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.6a; WINDOWS:2.6a,3.0,5.0,5.0a
@@ -71,3 +73,5 @@ permalink: /kb/124/Q124884/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173615/
 
 ## Q173615: Unable to Specify LU Number 1 When Adding Range of 3270 LUs
 
+{% raw %}
+
 	Article: Q173615
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -72,3 +74,5 @@ permalink: /kb/173/Q173615/
 	
 	=============================================================================
 	
+
+{% endraw %}

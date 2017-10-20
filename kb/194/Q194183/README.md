@@ -6,6 +6,8 @@ permalink: /kb/194/Q194183/
 
 ## Q194183: Virtual Globe: Photo Credit Is Truncated When You Copy Picture
 
+{% raw %}
+
 	Article: Q194183
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -53,3 +55,5 @@ permalink: /kb/194/Q194183/
 	
 	=============================================================================
 	
+
+{% endraw %}

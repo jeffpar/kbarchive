@@ -6,6 +6,8 @@ permalink: /kb/235/Q235684/
 
 ## Q235684: SMS: Systems Management Server Software Development Toolkit FAQ
 
+{% raw %}
+
 	Article: Q235684
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -156,3 +158,5 @@ permalink: /kb/235/Q235684/
 	
 	=============================================================================
 	
+
+{% endraw %}

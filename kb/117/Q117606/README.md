@@ -6,6 +6,8 @@ permalink: /kb/117/Q117606/
 
 ## Q117606: MS-DOS 6.2 Directory Listings for the 3.5-Inch 720K Disk Set
 
+{% raw %}
+
 	Article: Q117606
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -240,3 +242,5 @@ permalink: /kb/117/Q117606/
 	
 	=============================================================================
 	
+
+{% endraw %}

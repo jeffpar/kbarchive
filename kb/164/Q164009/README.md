@@ -6,6 +6,8 @@ permalink: /kb/164/Q164009/
 
 ## Q164009: WD97: Paragraph.Border.Linestyle Incorrect After Applying Shadow
 
+{% raw %}
+
 	Article: Q164009
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -100,3 +102,5 @@ permalink: /kb/164/Q164009/
 	
 	=============================================================================
 	
+
+{% endraw %}

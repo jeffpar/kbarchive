@@ -6,6 +6,8 @@ permalink: /kb/262/Q262312/
 
 ## Q262312: Cannot Process More Than 11 Advertisements for the Same Program
 
+{% raw %}
+
 	Article: Q262312
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP2
@@ -82,3 +84,5 @@ permalink: /kb/262/Q262312/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140216/
 
 ## Q140216: Encarta 96 Error Message: Call to Undefined Dynalink
 
+{% raw %}
+
 	Article: Q140216
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.1,3.11
@@ -104,3 +106,5 @@ permalink: /kb/140/Q140216/
 	
 	=============================================================================
 	
+
+{% endraw %}

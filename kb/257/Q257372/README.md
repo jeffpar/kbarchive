@@ -6,6 +6,8 @@ permalink: /kb/257/Q257372/
 
 ## Q257372: XADM: Exchange Server 5.5 Post-SP3 Directory Fixes Available
 
+{% raw %}
+
 	Article: Q257372
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -105,3 +107,5 @@ permalink: /kb/257/Q257372/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191308/
 
 ## Q191308: Access Violation Occurs Converting W3C Log Files
 
+{% raw %}
+
 	Article: Q191308
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/191/Q191308/
 	
 	=============================================================================
 	
+
+{% endraw %}

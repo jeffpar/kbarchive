@@ -6,6 +6,8 @@ permalink: /kb/177/Q177426/
 
 ## Q177426: PRB: CodeView for Windows Does Not Run in Windows 95 and NT
 
+{% raw %}
+
 	Article: Q177426
 	Product(s): Microsoft Macro Assembler
 	Version(s): 1.52,6.11,6.11a,6.11c,6.11d,6.12,6.13,6.14
@@ -97,3 +99,5 @@ permalink: /kb/177/Q177426/
 	
 	=============================================================================
 	
+
+{% endraw %}

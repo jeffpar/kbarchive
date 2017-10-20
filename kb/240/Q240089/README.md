@@ -6,6 +6,8 @@ permalink: /kb/240/Q240089/
 
 ## Q240089: RRAS Port Becomes Unavailable in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q240089
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -88,3 +90,5 @@ permalink: /kb/240/Q240089/
 	
 	=============================================================================
 	
+
+{% endraw %}

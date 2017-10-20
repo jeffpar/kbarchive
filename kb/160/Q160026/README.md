@@ -6,6 +6,8 @@ permalink: /kb/160/Q160026/
 
 ## Q160026: Double-Clicking MSN Icon Displays AT&amp;T Worldnet Sign In Screen
 
+{% raw %}
+
 	Article: Q160026
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0
@@ -55,3 +57,5 @@ permalink: /kb/160/Q160026/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245040/
 
 ## Q245040: How to Restrict Workstation Access to Local Administrators Only.
 
+{% raw %}
+
 	Article: Q245040
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/245/Q245040/
 	
 	=============================================================================
 	
+
+{% endraw %}

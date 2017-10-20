@@ -6,6 +6,8 @@ permalink: /kb/101/Q101094/
 
 ## Q101094: Err Msg: Invalid Catalog Name in Temporary File
 
+{% raw %}
+
 	Article: Q101094
 	Product(s): Microsoft Disk Operating System
 	Version(s): 6.0,6.2,6.22
@@ -42,3 +44,5 @@ permalink: /kb/101/Q101094/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/264/Q264371/
 
 ## Q264371: Viacompact Tool Deletes X500.db File Unexpectedly
 
+{% raw %}
+
 	Article: Q264371
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -60,3 +62,5 @@ permalink: /kb/264/Q264371/
 	
 	=============================================================================
 	
+
+{% endraw %}

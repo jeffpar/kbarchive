@@ -6,6 +6,8 @@ permalink: /kb/241/Q241270/
 
 ## Q241270: PRB: Foreign Connected Network Not Available with MQSeries Bridg
 
+{% raw %}
+
 	Article: Q241270
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/241/Q241270/
 	
 	=============================================================================
 	
+
+{% endraw %}

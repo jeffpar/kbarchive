@@ -6,6 +6,8 @@ permalink: /kb/194/Q194279/
 
 ## Q194279: FP: Cannot Open Pages or Webs After Installing FrontPage
 
+{% raw %}
+
 	Article: Q194279
 	Product(s): Word Front Page
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/194/Q194279/
 	
 	=============================================================================
 	
+
+{% endraw %}

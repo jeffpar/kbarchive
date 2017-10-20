@@ -6,6 +6,8 @@ permalink: /kb/085/Q85907/
 
 ## Q85907: PC Win: Reply Does Not Copy Attachments
 
+{% raw %}
+
 	Article: Q85907
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/085/Q85907/
 	
 	=============================================================================
 	
+
+{% endraw %}

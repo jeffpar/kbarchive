@@ -6,6 +6,8 @@ permalink: /kb/165/Q165814/
 
 ## Q165814: Stop: 0x0000001E When Opening My Computer
 
+{% raw %}
+
 	Article: Q165814
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/165/Q165814/
 	
 	=============================================================================
 	
+
+{% endraw %}

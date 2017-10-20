@@ -6,6 +6,8 @@ permalink: /kb/151/Q151766/
 
 ## Q151766: DOCERR: Mastering Access: Wrong Answer in Self Test
 
+{% raw %}
+
 	Article: Q151766
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0,1.0a
@@ -76,3 +78,5 @@ permalink: /kb/151/Q151766/
 	
 	=============================================================================
 	
+
+{% endraw %}

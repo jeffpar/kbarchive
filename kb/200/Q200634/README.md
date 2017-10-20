@@ -6,6 +6,8 @@ permalink: /kb/200/Q200634/
 
 ## Q200634: SMS: Cancel Button Loops on Software Metering Logon Dialog Box
 
+{% raw %}
+
 	Article: Q200634
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -82,3 +84,5 @@ permalink: /kb/200/Q200634/
 	
 	=============================================================================
 	
+
+{% endraw %}

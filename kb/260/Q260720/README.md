@@ -6,6 +6,8 @@ permalink: /kb/260/Q260720/
 
 ## Q260720: How to Create a Modemlog.txt File
 
+{% raw %}
+
 	Article: Q260720
 	Product(s): Microsoft Home Games
 	Version(s): 1.0; WINDOWS:1.0
@@ -89,3 +91,5 @@ permalink: /kb/260/Q260720/
 	
 	=============================================================================
 	
+
+{% endraw %}

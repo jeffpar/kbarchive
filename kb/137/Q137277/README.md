@@ -6,6 +6,8 @@ permalink: /kb/137/Q137277/
 
 ## Q137277: PPT7: Playlists Don't Work in PowerPoint 7.0
 
+{% raw %}
+
 	Article: Q137277
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -91,3 +93,5 @@ permalink: /kb/137/Q137277/
 	
 	=============================================================================
 	
+
+{% endraw %}

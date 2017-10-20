@@ -6,6 +6,8 @@ permalink: /kb/136/Q136782/
 
 ## Q136782: Unable To Connect To AT&amp;T Advanced Server For UNIX Printer Share
 
+{% raw %}
+
 	Article: Q136782
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/136/Q136782/
 	
 	=============================================================================
 	
+
+{% endraw %}

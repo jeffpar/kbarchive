@@ -6,6 +6,8 @@ permalink: /kb/166/Q166080/
 
 ## Q166080: XFOR: Access Violation During Internet Mail Wizard
 
+{% raw %}
+
 	Article: Q166080
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -78,3 +80,5 @@ permalink: /kb/166/Q166080/
 	
 	=============================================================================
 	
+
+{% endraw %}

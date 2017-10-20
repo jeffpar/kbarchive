@@ -6,6 +6,8 @@ permalink: /kb/161/Q161222/
 
 ## Q161222: PCMCIA Adapter Displayed Incorrectly in Device Manager
 
+{% raw %}
+
 	Article: Q161222
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -53,3 +55,5 @@ permalink: /kb/161/Q161222/
 	
 	=============================================================================
 	
+
+{% endraw %}

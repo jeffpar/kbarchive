@@ -6,6 +6,8 @@ permalink: /kb/027/Q27323/
 
 ## Q27323: Passing BASIC 2-Dimensional Variable-Length String Array to C
 
+{% raw %}
+
 	Article: Q27323
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -77,3 +79,5 @@ permalink: /kb/027/Q27323/
 	  CCCCC    DDDDD    EEEEE    FFFFF    GGGGG
 	  DDDDD    EEEEE    FFFFF    GGGGG    HHHHH
 	  EEEEE    FFFFF    GGGGG    HHHHH    IIIII
+
+{% endraw %}

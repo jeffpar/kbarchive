@@ -6,6 +6,8 @@ permalink: /kb/196/Q196974/
 
 ## Q196974: How to Dial Phone Access Codes with Dial Up Networking
 
+{% raw %}
+
 	Article: Q196974
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:4.0,4.0a,4.5
@@ -122,3 +124,5 @@ permalink: /kb/196/Q196974/
 	
 	=============================================================================
 	
+
+{% endraw %}

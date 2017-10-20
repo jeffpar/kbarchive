@@ -6,6 +6,8 @@ permalink: /kb/082/Q82465/
 
 ## Q82465: STACKS=9,256 with PCKSCRN 1.3 Can Cause System Hangs
 
+{% raw %}
+
 	Article: Q82465
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/082/Q82465/
 	
 	=============================================================================
 	
+
+{% endraw %}

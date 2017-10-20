@@ -6,6 +6,8 @@ permalink: /kb/238/Q238144/
 
 ## Q238144: Client Installation Corrupts Path Statement in Autoexec.bat
 
+{% raw %}
+
 	Article: Q238144
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -118,3 +120,5 @@ permalink: /kb/238/Q238144/
 	
 	=============================================================================
 	
+
+{% endraw %}

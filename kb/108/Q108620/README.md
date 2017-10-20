@@ -6,6 +6,8 @@ permalink: /kb/108/Q108620/
 
 ## Q108620: PRB: Can't Find QuickTime Movie Embedded in General Field
 
+{% raw %}
+
 	Article: Q108620
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -85,3 +87,5 @@ permalink: /kb/108/Q108620/
 	
 	=============================================================================
 	
+
+{% endraw %}

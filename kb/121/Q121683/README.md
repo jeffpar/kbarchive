@@ -6,6 +6,8 @@ permalink: /kb/121/Q121683/
 
 ## Q121683: SMS Site Configuration Manager Internal Error Codes
 
+{% raw %}
+
 	Article: Q121683
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1
@@ -118,3 +120,5 @@ permalink: /kb/121/Q121683/
 	
 	=============================================================================
 	
+
+{% endraw %}

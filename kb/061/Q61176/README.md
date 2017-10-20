@@ -6,6 +6,8 @@ permalink: /kb/061/Q61176/
 
 ## Q61176: File: Footer Cut Off on LaserWriter Using Print Monitor
 
+{% raw %}
+
 	Article: Q61176
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): 
@@ -37,3 +39,5 @@ permalink: /kb/061/Q61176/
 	
 	=============================================================================
 	
+
+{% endraw %}

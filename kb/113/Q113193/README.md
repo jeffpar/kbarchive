@@ -6,6 +6,8 @@ permalink: /kb/113/Q113193/
 
 ## Q113193: PC Adm: Err Msg: Notice 158 Folder in Use... Not Compressed
 
+{% raw %}
+
 	Article: Q113193
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -53,3 +55,5 @@ permalink: /kb/113/Q113193/
 	
 	=============================================================================
 	
+
+{% endraw %}

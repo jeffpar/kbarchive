@@ -6,6 +6,8 @@ permalink: /kb/175/Q175839/
 
 ## Q175839: PPT: Troubleshooting Damaged Presentations on Windows 95
 
+{% raw %}
+
 	Article: Q175839
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -336,3 +338,5 @@ permalink: /kb/175/Q175839/
 	
 	=============================================================================
 	
+
+{% endraw %}

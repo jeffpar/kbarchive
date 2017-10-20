@@ -6,6 +6,8 @@ permalink: /kb/059/Q59139/
 
 ## Q59139: Mac Srv Wkst: Time in Summary Window Displayed in 24-Hr Format
 
+{% raw %}
+
 	Article: Q59139
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -38,3 +40,5 @@ permalink: /kb/059/Q59139/
 	
 	=============================================================================
 	
+
+{% endraw %}

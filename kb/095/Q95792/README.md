@@ -6,6 +6,8 @@ permalink: /kb/095/Q95792/
 
 ## Q95792: Services for Macintosh 1.0a Fix List
 
+{% raw %}
+
 	Article: Q95792
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -181,3 +183,5 @@ permalink: /kb/095/Q95792/
 	
 	=============================================================================
 	
+
+{% endraw %}

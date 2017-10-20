@@ -6,6 +6,8 @@ permalink: /kb/064/Q64566/
 
 ## Q64566: &quot;Cannot Open File current.&#36;&quot; May Mean INIT Incorrect
 
+{% raw %}
+
 	Article: Q64566
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -65,3 +67,5 @@ permalink: /kb/064/Q64566/
 	
 	=============================================================================
 	
+
+{% endraw %}

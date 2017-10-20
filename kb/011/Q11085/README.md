@@ -6,6 +6,8 @@ permalink: /kb/011/Q11085/
 
 ## Q11085: Text Mode Problem with Mouse Version 3.00
 
+{% raw %}
+
 	Article: Q11085
 	Product(s): See article
 	Version(s): 3.00
@@ -31,3 +33,5 @@ permalink: /kb/011/Q11085/
 	Version 4.00 or later, or insert a mouse function 10 call (Set Text
 	Cursor) into the beginning of the application program, with the second
 	parameter (M2%) set to 0 (select software text cursor).
+
+{% endraw %}

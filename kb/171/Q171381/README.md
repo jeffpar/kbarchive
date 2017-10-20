@@ -6,6 +6,8 @@ permalink: /kb/171/Q171381/
 
 ## Q171381: Windows 95 Domain Password Change Doesn't Change Local Password
 
+{% raw %}
+
 	Article: Q171381
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -58,3 +60,5 @@ permalink: /kb/171/Q171381/
 	
 	=============================================================================
 	
+
+{% endraw %}

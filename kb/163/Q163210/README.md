@@ -6,6 +6,8 @@ permalink: /kb/163/Q163210/
 
 ## Q163210: SNA Server Does Not STSN Sequence Numbers On Positive
 
+{% raw %}
+
 	Article: Q163210
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -136,3 +138,5 @@ permalink: /kb/163/Q163210/
 	
 	=============================================================================
 	
+
+{% endraw %}

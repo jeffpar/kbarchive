@@ -6,6 +6,8 @@ permalink: /kb/122/Q122261/
 
 ## Q122261: Err Msg: The Trust Relationship...Could Not Be Verified...
 
+{% raw %}
+
 	Article: Q122261
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -62,3 +64,5 @@ permalink: /kb/122/Q122261/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152871/
 
 ## Q152871: XADM: Restore Re-populates Deleted Folders
 
+{% raw %}
+
 	Article: Q152871
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/152/Q152871/
 	
 	=============================================================================
 	
+
+{% endraw %}

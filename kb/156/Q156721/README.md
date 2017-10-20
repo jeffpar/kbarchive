@@ -6,6 +6,8 @@ permalink: /kb/156/Q156721/
 
 ## Q156721: XCLN: Double-Clicking an Attachment Might Open New Message
 
+{% raw %}
+
 	Article: Q156721
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -74,3 +76,5 @@ permalink: /kb/156/Q156721/
 	
 	=============================================================================
 	
+
+{% endraw %}

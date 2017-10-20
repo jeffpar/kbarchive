@@ -6,6 +6,8 @@ permalink: /kb/177/Q177940/
 
 ## Q177940: Message: Details Are Not Available on This Entry
 
+{% raw %}
+
 	Article: Q177940
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -58,3 +60,5 @@ permalink: /kb/177/Q177940/
 	
 	=============================================================================
 	
+
+{% endraw %}

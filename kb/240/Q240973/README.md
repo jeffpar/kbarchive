@@ -6,6 +6,8 @@ permalink: /kb/240/Q240973/
 
 ## Q240973: Pandora's Box: Taskbar Remains on Screen After You Use ALT+TAB
 
+{% raw %}
+
 	Article: Q240973
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/240/Q240973/
 	
 	=============================================================================
 	
+
+{% endraw %}

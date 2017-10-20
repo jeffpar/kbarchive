@@ -6,6 +6,8 @@ permalink: /kb/192/Q192792/
 
 ## Q192792: XFOR: Server Stops Responding Running a Print Service and INS
 
+{% raw %}
+
 	Article: Q192792
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -77,3 +79,5 @@ permalink: /kb/192/Q192792/
 	
 	=============================================================================
 	
+
+{% endraw %}

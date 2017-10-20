@@ -6,6 +6,8 @@ permalink: /kb/127/Q127858/
 
 ## Q127858: MSB Human: ErrMsg: Wave Error 10 and 7
 
+{% raw %}
+
 	Article: Q127858
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -141,3 +143,5 @@ permalink: /kb/127/Q127858/
 	
 	=============================================================================
 	
+
+{% endraw %}

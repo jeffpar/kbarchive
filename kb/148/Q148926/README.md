@@ -6,6 +6,8 @@ permalink: /kb/148/Q148926/
 
 ## Q148926: Mfc30.dll File Required to Submit E-forms on MSN
 
+{% raw %}
+
 	Article: Q148926
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -60,3 +62,5 @@ permalink: /kb/148/Q148926/
 	
 	=============================================================================
 	
+
+{% endraw %}

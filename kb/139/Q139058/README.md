@@ -6,6 +6,8 @@ permalink: /kb/139/Q139058/
 
 ## Q139058: Battery Shutdown Signal Delayed Using Windows NT UPS Service
 
+{% raw %}
+
 	Article: Q139058
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -116,3 +118,5 @@ permalink: /kb/139/Q139058/
 	
 	=============================================================================
 	
+
+{% endraw %}

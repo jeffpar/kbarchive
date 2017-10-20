@@ -6,6 +6,8 @@ permalink: /kb/036/Q36023/
 
 ## Q36023: &quot;Statement Illegal in TYPE block&quot; Due to Line Identifier
 
+{% raw %}
+
 	Article: Q36023
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -51,3 +53,5 @@ permalink: /kb/036/Q36023/
 	abcd:     quantity   AS INTEGER
 	END TYPE
 	DIM stockrecord AS stockitem
+
+{% endraw %}

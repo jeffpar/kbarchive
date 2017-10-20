@@ -6,6 +6,8 @@ permalink: /kb/157/Q157278/
 
 ## Q157278: Msbatch.inf Parameters: Removing Standard Desktop Icons
 
+{% raw %}
+
 	Article: Q157278
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -90,3 +92,5 @@ permalink: /kb/157/Q157278/
 	
 	=============================================================================
 	
+
+{% endraw %}

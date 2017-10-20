@@ -6,6 +6,8 @@ permalink: /kb/158/Q158980/
 
 ## Q158980: Protocols Major and Minor Version Registry Keys Not Updated
 
+{% raw %}
+
 	Article: Q158980
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -106,3 +108,5 @@ permalink: /kb/158/Q158980/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131346/
 
 ## Q131346: HOWTO: Hide and Restore (Unhide) System Toolbars
 
+{% raw %}
+
 	Article: Q131346
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -119,3 +121,5 @@ permalink: /kb/131/Q131346/
 	
 	=============================================================================
 	
+
+{% endraw %}

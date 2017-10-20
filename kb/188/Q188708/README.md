@@ -6,6 +6,8 @@ permalink: /kb/188/Q188708/
 
 ## Q188708: BUG: Error C1083 Building Large Projects with Browse Info
 
+{% raw %}
+
 	Article: Q188708
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0
@@ -62,3 +64,5 @@ permalink: /kb/188/Q188708/
 	
 	=============================================================================
 	
+
+{% endraw %}

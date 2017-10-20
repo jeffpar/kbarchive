@@ -6,6 +6,8 @@ permalink: /kb/255/Q255035/
 
 ## Q255035: XADM: Recovering Hard Drive Space from Exchange Server Databases
 
+{% raw %}
+
 	Article: Q255035
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -195,3 +197,5 @@ permalink: /kb/255/Q255035/
 	
 	=============================================================================
 	
+
+{% endraw %}

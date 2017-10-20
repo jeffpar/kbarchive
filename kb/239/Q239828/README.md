@@ -6,6 +6,8 @@ permalink: /kb/239/Q239828/
 
 ## Q239828: SMS: Access Violation in SMS_SITE_SYSTEM_STATUS_SUMMARIZER
 
+{% raw %}
+
 	Article: Q239828
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -93,3 +95,5 @@ permalink: /kb/239/Q239828/
 	
 	=============================================================================
 	
+
+{% endraw %}

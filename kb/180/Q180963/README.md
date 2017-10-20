@@ -6,6 +6,8 @@ permalink: /kb/180/Q180963/
 
 ## Q180963: Denial of Service Attack Causes Windows NT Systems to Restart
 
+{% raw %}
+
 	Article: Q180963
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -78,3 +80,5 @@ permalink: /kb/180/Q180963/
 	
 	=============================================================================
 	
+
+{% endraw %}

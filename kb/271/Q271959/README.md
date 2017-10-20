@@ -6,6 +6,8 @@ permalink: /kb/271/Q271959/
 
 ## Q271959: Cannot Resolve SID Because Global Group Name Same As Domain Name
 
+{% raw %}
+
 	Article: Q271959
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,3.51,3.51 SP4,3.51 SP5,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 S
@@ -59,3 +61,5 @@ permalink: /kb/271/Q271959/
 	
 	=============================================================================
 	
+
+{% endraw %}

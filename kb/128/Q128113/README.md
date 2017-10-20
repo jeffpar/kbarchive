@@ -6,6 +6,8 @@ permalink: /kb/128/Q128113/
 
 ## Q128113: FIX: Assertion Failed Line 178 or Line 527 in ARCCORE.CPP
 
+{% raw %}
+
 	Article: Q128113
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -115,3 +117,5 @@ permalink: /kb/128/Q128113/
 	
 	=============================================================================
 	
+
+{% endraw %}

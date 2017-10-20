@@ -6,6 +6,8 @@ permalink: /kb/294/Q294750/
 
 ## Q294750: SMS: Mandatory Assignments Section Is Unavailable
 
+{% raw %}
+
 	Article: Q294750
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -61,3 +63,5 @@ permalink: /kb/294/Q294750/
 	
 	=============================================================================
 	
+
+{% endraw %}

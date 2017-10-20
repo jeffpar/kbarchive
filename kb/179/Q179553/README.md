@@ -6,6 +6,8 @@ permalink: /kb/179/Q179553/
 
 ## Q179553: Access Violation in PolEdit When Defining Allowed Windows Apps
 
+{% raw %}
+
 	Article: Q179553
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -90,3 +92,5 @@ permalink: /kb/179/Q179553/
 	
 	=============================================================================
 	
+
+{% endraw %}

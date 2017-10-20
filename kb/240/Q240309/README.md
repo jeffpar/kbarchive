@@ -6,6 +6,8 @@ permalink: /kb/240/Q240309/
 
 ## Q240309: How to Fully Disable Antivirus Software from Filtering Files
 
+{% raw %}
+
 	Article: Q240309
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -78,3 +80,5 @@ permalink: /kb/240/Q240309/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/258/Q258302/
 
 ## Q258302: XADM: Troubleshooting Refer.mdb File Issues
 
+{% raw %}
+
 	Article: Q258302
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -132,3 +134,5 @@ permalink: /kb/258/Q258302/
 	
 	=============================================================================
 	
+
+{% endraw %}

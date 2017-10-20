@@ -6,6 +6,8 @@ permalink: /kb/077/Q77255/
 
 ## Q77255: INFO: wsprintf() Buffer Limit in Windows
 
+{% raw %}
+
 	Article: Q77255
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -44,3 +46,5 @@ permalink: /kb/077/Q77255/
 	
 	=============================================================================
 	
+
+{% endraw %}

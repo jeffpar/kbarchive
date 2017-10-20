@@ -6,6 +6,8 @@ permalink: /kb/191/Q191341/
 
 ## Q191341: How to Run a Program By Using UNC with Package Command Manager
 
+{% raw %}
+
 	Article: Q191341
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -67,3 +69,5 @@ permalink: /kb/191/Q191341/
 	
 	=============================================================================
 	
+
+{% endraw %}

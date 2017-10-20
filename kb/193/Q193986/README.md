@@ -6,6 +6,8 @@ permalink: /kb/193/Q193986/
 
 ## Q193986: Enable OtherServers Function In The Firewall Environment
 
+{% raw %}
+
 	Article: Q193986
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:
@@ -130,3 +132,5 @@ permalink: /kb/193/Q193986/
 	
 	=============================================================================
 	
+
+{% endraw %}

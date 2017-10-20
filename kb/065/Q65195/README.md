@@ -6,6 +6,8 @@ permalink: /kb/065/Q65195/
 
 ## Q65195: Joystick STICK, STRIG Use BIOS Int 15 Hex, or Direct Hardware
 
+{% raw %}
+
 	Article: Q65195
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -46,3 +48,5 @@ permalink: /kb/065/Q65195/
 	problems, query on the following words:
 	
 	   STRIG and STICK and BIOS
+
+{% endraw %}

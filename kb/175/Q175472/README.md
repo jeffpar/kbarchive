@@ -6,6 +6,8 @@ permalink: /kb/175/Q175472/
 
 ## Q175472: HOWTO: Get Network Adapter Address from Visual Basic
 
+{% raw %}
+
 	Article: Q175472
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -163,3 +165,5 @@ permalink: /kb/175/Q175472/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/037/Q37205/
 
 ## Q37205: Operator sizeof Returns Type size_t, Defined as unsigned int
 
+{% raw %}
+
 	Article: Q37205
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -34,3 +36,5 @@ permalink: /kb/037/Q37205/
 	The "Microsoft C Optimizing Compiler Language Reference" manual
 	describes the sizeof operator on Pages 120-121, section 5.3.4, but
 	does not give the return type.
+
+{% endraw %}

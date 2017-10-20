@@ -6,6 +6,8 @@ permalink: /kb/139/Q139564/
 
 ## Q139564: WD97: How to Disable Word AutoFormat Features
 
+{% raw %}
+
 	Article: Q139564
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -123,3 +125,5 @@ permalink: /kb/139/Q139564/
 	
 	=============================================================================
 	
+
+{% endraw %}

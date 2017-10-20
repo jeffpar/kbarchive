@@ -6,6 +6,8 @@ permalink: /kb/302/Q302439/
 
 ## Q302439: Sending E-mail To Offline Contact In MSN Messenger While Running
 
+{% raw %}
+
 	Article: Q302439
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/302/Q302439/
 	
 	=============================================================================
 	
+
+{% endraw %}

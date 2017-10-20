@@ -6,6 +6,8 @@ permalink: /kb/149/Q149327/
 
 ## Q149327: FIX: C2440 Expanding Template with a Pointer to a Nested Class
 
+{% raw %}
+
 	Article: Q149327
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/149/Q149327/
 	
 	=============================================================================
 	
+
+{% endraw %}

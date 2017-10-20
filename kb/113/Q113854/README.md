@@ -6,6 +6,8 @@ permalink: /kb/113/Q113854/
 
 ## Q113854: PC WRmt: README.TXT: Microsoft Mail Remote for Windows 3.2
 
+{% raw %}
+
 	Article: Q113854
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -522,3 +524,5 @@ permalink: /kb/113/Q113854/
 	
 	=============================================================================
 	
+
+{% endraw %}

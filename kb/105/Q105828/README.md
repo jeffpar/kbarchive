@@ -6,6 +6,8 @@ permalink: /kb/105/Q105828/
 
 ## Q105828: Disks Created by MS-DOS 6.2 Upgrade and Step-Up Setup /F
 
+{% raw %}
+
 	Article: Q105828
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -95,3 +97,5 @@ permalink: /kb/105/Q105828/
 	
 	=============================================================================
 	
+
+{% endraw %}

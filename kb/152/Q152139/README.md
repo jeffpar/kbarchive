@@ -6,6 +6,8 @@ permalink: /kb/152/Q152139/
 
 ## Q152139: BUG: Minimized 16-bit Visual Basic 4.0 App Gives GPF on NT3.51
 
+{% raw %}
+
 	Article: Q152139
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -53,3 +55,5 @@ permalink: /kb/152/Q152139/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164419/
 
 ## Q164419: Error Message: &quot;DirectXSetup failed(). -8&quot;
 
+{% raw %}
+
 	Article: Q164419
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -64,3 +66,5 @@ permalink: /kb/164/Q164419/
 	
 	=============================================================================
 	
+
+{% endraw %}

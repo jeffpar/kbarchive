@@ -6,6 +6,8 @@ permalink: /kb/123/Q123409/
 
 ## Q123409: MSCDEX Does Not Set &quot;Name&quot; of EMS Allocation
 
+{% raw %}
+
 	Article: Q123409
 	Product(s): Microsoft Disk Operating System
 	Version(s): 2.1,2.2,2.21,2.22,2.23
@@ -46,3 +48,5 @@ permalink: /kb/123/Q123409/
 	
 	=============================================================================
 	
+
+{% endraw %}

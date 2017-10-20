@@ -6,6 +6,8 @@ permalink: /kb/119/Q119764/
 
 ## Q119764: Capturing a Palette from an Intel Indeo-Compressed .AVI File
 
+{% raw %}
+
 	Article: Q119764
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:1.0,1.1
@@ -55,3 +57,5 @@ permalink: /kb/119/Q119764/
 	
 	=============================================================================
 	
+
+{% endraw %}

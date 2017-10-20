@@ -6,6 +6,8 @@ permalink: /kb/241/Q241041/
 
 ## Q241041: Enabling NetBT to Open IP Ports Exclusively
 
+{% raw %}
+
 	Article: Q241041
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -201,3 +203,5 @@ permalink: /kb/241/Q241041/
 	
 	=============================================================================
 	
+
+{% endraw %}

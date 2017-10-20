@@ -6,6 +6,8 @@ permalink: /kb/282/Q282780/
 
 ## Q282780: XCON:  MTA Database Format and Structure
 
+{% raw %}
+
 	Article: Q282780
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -275,3 +277,5 @@ permalink: /kb/282/Q282780/
 	
 	=============================================================================
 	
+
+{% endraw %}

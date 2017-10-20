@@ -6,6 +6,8 @@ permalink: /kb/253/Q253233/
 
 ## Q253233: INFO: NdisQueryMapRegisterCount Is Obsolete on Windows 2000
 
+{% raw %}
+
 	Article: Q253233
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -95,3 +97,5 @@ permalink: /kb/253/Q253233/
 	
 	=============================================================================
 	
+
+{% endraw %}

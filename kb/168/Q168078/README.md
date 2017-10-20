@@ -6,6 +6,8 @@ permalink: /kb/168/Q168078/
 
 ## Q168078: FIX: C2784 Instantiating STL Objects with a UDT Parameter
 
+{% raw %}
+
 	Article: Q168078
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -100,3 +102,5 @@ permalink: /kb/168/Q168078/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/116/Q116271/
 
 ## Q116271: HOWTO: Using SET SKIP OF PAD with Custom Menu Pad
 
+{% raw %}
+
 	Article: Q116271
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
@@ -115,3 +117,5 @@ permalink: /kb/116/Q116271/
 	
 	=============================================================================
 	
+
+{% endraw %}

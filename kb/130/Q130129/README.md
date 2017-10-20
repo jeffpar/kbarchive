@@ -6,6 +6,8 @@ permalink: /kb/130/Q130129/
 
 ## Q130129: How to Open a Database or Table in Visual FoxPro
 
+{% raw %}
+
 	Article: Q130129
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -82,3 +84,5 @@ permalink: /kb/130/Q130129/
 	
 	=============================================================================
 	
+
+{% endraw %}

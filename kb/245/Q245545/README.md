@@ -6,6 +6,8 @@ permalink: /kb/245/Q245545/
 
 ## Q245545: XFOR: Notes Connector Error 41220: No Notes Session Open
 
+{% raw %}
+
 	Article: Q245545
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -72,3 +74,5 @@ permalink: /kb/245/Q245545/
 	
 	=============================================================================
 	
+
+{% endraw %}

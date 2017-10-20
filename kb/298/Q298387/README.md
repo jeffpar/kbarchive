@@ -6,6 +6,8 @@ permalink: /kb/298/Q298387/
 
 ## Q298387: Error Message: The Drivers Were Not Successfully Installed
 
+{% raw %}
+
 	Article: Q298387
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -81,3 +83,5 @@ permalink: /kb/298/Q298387/
 	
 	=============================================================================
 	
+
+{% endraw %}

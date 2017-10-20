@@ -6,6 +6,8 @@ permalink: /kb/094/Q94356/
 
 ## Q94356: CMOS Access Causes Some Machines to Hang with EMM386.EXE
 
+{% raw %}
+
 	Article: Q94356
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -76,3 +78,5 @@ permalink: /kb/094/Q94356/
 	
 	=============================================================================
 	
+
+{% endraw %}

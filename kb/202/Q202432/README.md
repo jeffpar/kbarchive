@@ -6,6 +6,8 @@ permalink: /kb/202/Q202432/
 
 ## Q202432: XCLN: EFD Forms Date Fields Don't Work for Years 2000 &amp; Greater
 
+{% raw %}
+
 	Article: Q202432
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,97,98
@@ -103,3 +105,5 @@ permalink: /kb/202/Q202432/
 	
 	=============================================================================
 	
+
+{% endraw %}

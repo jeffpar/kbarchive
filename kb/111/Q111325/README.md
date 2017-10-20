@@ -6,6 +6,8 @@ permalink: /kb/111/Q111325/
 
 ## Q111325: Can't Choose Paper Tray with Postscript Printer Driver
 
+{% raw %}
+
 	Article: Q111325
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.1
@@ -49,3 +51,5 @@ permalink: /kb/111/Q111325/
 	
 	=============================================================================
 	
+
+{% endraw %}

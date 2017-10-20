@@ -6,6 +6,8 @@ permalink: /kb/223/Q223152/
 
 ## Q223152: PRB: Error 0x80004005 Using Comctl32-Based MFC ActiveX Control
 
+{% raw %}
+
 	Article: Q223152
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -121,3 +123,5 @@ permalink: /kb/223/Q223152/
 	
 	=============================================================================
 	
+
+{% endraw %}

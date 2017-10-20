@@ -6,6 +6,8 @@ permalink: /kb/178/Q178304/
 
 ## Q178304: XADM: Directory Takes a Long Time to Start with EventID 1107
 
+{% raw %}
+
 	Article: Q178304
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -71,3 +73,5 @@ permalink: /kb/178/Q178304/
 	
 	=============================================================================
 	
+
+{% endraw %}

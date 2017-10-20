@@ -6,6 +6,8 @@ permalink: /kb/109/Q109523/
 
 ## Q109523: Windows NT Resource Kit Repair Utility Error
 
+{% raw %}
+
 	Article: Q109523
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -62,3 +64,5 @@ permalink: /kb/109/Q109523/
 	
 	=============================================================================
 	
+
+{% endraw %}

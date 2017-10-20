@@ -6,6 +6,8 @@ permalink: /kb/190/Q190124/
 
 ## Q190124: PRB: Can Not Create temp Table Using ODBCdirect
 
+{% raw %}
+
 	Article: Q190124
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -173,3 +175,5 @@ permalink: /kb/190/Q190124/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124838/
 
 ## Q124838: NICs That Work with Network Monitor
 
+{% raw %}
+
 	Article: Q124838
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -80,3 +82,5 @@ permalink: /kb/124/Q124838/
 	
 	=============================================================================
 	
+
+{% endraw %}

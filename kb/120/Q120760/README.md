@@ -6,6 +6,8 @@ permalink: /kb/120/Q120760/
 
 ## Q120760: CA-ABSTRACT Outlines Don't Print to Remote Printers
 
+{% raw %}
+
 	Article: Q120760
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -58,3 +60,5 @@ permalink: /kb/120/Q120760/
 	
 	=============================================================================
 	
+
+{% endraw %}

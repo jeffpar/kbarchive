@@ -6,6 +6,8 @@ permalink: /kb/124/Q124747/
 
 ## Q124747: SFM Err Msg: The Item...Is Missing and Was Probably Deleted...
 
+{% raw %}
+
 	Article: Q124747
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -64,3 +66,5 @@ permalink: /kb/124/Q124747/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87440/
 
 ## Q87440: Money Manager by Expert Software May Cause GP Faults
 
+{% raw %}
+
 	Article: Q87440
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -40,3 +42,5 @@ permalink: /kb/087/Q87440/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/316/Q316205/
 
 ## Q316205: XCON:  How to Block Port 25 Access to an Exchange Server 5.5
 
+{% raw %}
+
 	Article: Q316205
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3,5.5 SP4
@@ -74,3 +76,5 @@ permalink: /kb/316/Q316205/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104212/
 
 ## Q104212: Sound System Err Msg: Cannot Find &quot;&lt;path&gt;&#92;PROOF.XLA&quot;
 
+{% raw %}
+
 	Article: Q104212
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/104/Q104212/
 	
 	=============================================================================
 	
+
+{% endraw %}

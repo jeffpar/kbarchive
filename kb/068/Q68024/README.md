@@ -6,6 +6,8 @@ permalink: /kb/068/Q68024/
 
 ## Q68024: BC.EXE &quot;AS Missing&quot; in TYPE Using Space Between Array and ()
 
+{% raw %}
+
 	Article: Q68024
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -55,3 +57,5 @@ permalink: /kb/068/Q68024/
 	
 	    0 Warning Error(s)
 	    2 Severe  Error(s)
+
+{% endraw %}

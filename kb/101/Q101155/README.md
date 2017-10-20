@@ -6,6 +6,8 @@ permalink: /kb/101/Q101155/
 
 ## Q101155: ERR: A20 Hardware Error with FoxBASE+/386
 
+{% raw %}
+
 	Article: Q101155
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): 2.1
@@ -63,3 +65,5 @@ permalink: /kb/101/Q101155/
 	
 	=============================================================================
 	
+
+{% endraw %}

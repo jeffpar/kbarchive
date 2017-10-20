@@ -6,6 +6,8 @@ permalink: /kb/140/Q140597/
 
 ## Q140597: FIX: Fatal Error LNK1561: Entry Point Must Be Defined
 
+{% raw %}
+
 	Article: Q140597
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2
@@ -66,3 +68,5 @@ permalink: /kb/140/Q140597/
 	
 	=============================================================================
 	
+
+{% endraw %}

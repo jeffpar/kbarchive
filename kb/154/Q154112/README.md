@@ -6,6 +6,8 @@ permalink: /kb/154/Q154112/
 
 ## Q154112: FIX: ClassView Cannot Find Template Member Function Definition
 
+{% raw %}
+
 	Article: Q154112
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,6.0
@@ -124,3 +126,5 @@ permalink: /kb/154/Q154112/
 	
 	=============================================================================
 	
+
+{% endraw %}

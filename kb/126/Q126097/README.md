@@ -6,6 +6,8 @@ permalink: /kb/126/Q126097/
 
 ## Q126097: Shareware Driver Available for Wangtek 6130 and 6200
 
+{% raw %}
+
 	Article: Q126097
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -42,3 +44,5 @@ permalink: /kb/126/Q126097/
 	
 	=============================================================================
 	
+
+{% endraw %}

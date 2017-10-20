@@ -6,6 +6,8 @@ permalink: /kb/132/Q132211/
 
 ## Q132211: PC Win: GOODIES.DLL Fails Without a Tools Menu
 
+{% raw %}
+
 	Article: Q132211
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5; :1.0
@@ -90,3 +92,5 @@ permalink: /kb/132/Q132211/
 	
 	=============================================================================
 	
+
+{% endraw %}

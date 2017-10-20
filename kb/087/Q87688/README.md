@@ -6,6 +6,8 @@ permalink: /kb/087/Q87688/
 
 ## Q87688: PRB: &quot;Not a Database File&quot; Error Using a Database File
 
+{% raw %}
+
 	Article: Q87688
 	Product(s): Microsoft FoxPro
 	Version(s): 2.0,2.5,2.5a,3.0,3.0b,5.0
@@ -115,3 +117,5 @@ permalink: /kb/087/Q87688/
 	
 	=============================================================================
 	
+
+{% endraw %}

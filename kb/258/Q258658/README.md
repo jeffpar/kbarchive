@@ -6,6 +6,8 @@ permalink: /kb/258/Q258658/
 
 ## Q258658: Baseball 2001: Program Does Not Start
 
+{% raw %}
+
 	Article: Q258658
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -63,3 +65,5 @@ permalink: /kb/258/Q258658/
 	
 	=============================================================================
 	
+
+{% endraw %}

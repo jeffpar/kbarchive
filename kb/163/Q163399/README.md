@@ -6,6 +6,8 @@ permalink: /kb/163/Q163399/
 
 ## Q163399: Matrox Millennium PCI Video Card Causes STOP 0X0000000A
 
+{% raw %}
+
 	Article: Q163399
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/163/Q163399/
 	
 	=============================================================================
 	
+
+{% endraw %}

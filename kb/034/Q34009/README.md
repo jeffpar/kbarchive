@@ -6,6 +6,8 @@ permalink: /kb/034/Q34009/
 
 ## Q34009: Jumper Settings for Bus Mouse Used in an XT 286
 
+{% raw %}
+
 	Article: Q34009
 	Product(s): See article
 	Version(s): 1.x 2.x 3.x 4.x 5.x 6.x 1.00
@@ -24,3 +26,5 @@ permalink: /kb/034/Q34009/
 	
 	   As always, be sure that IRQ 5 is not being used for other hardware
 	devices, such as a Bernoulli box, network card, or tape backup.
+
+{% endraw %}

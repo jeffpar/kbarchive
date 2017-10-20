@@ -6,6 +6,8 @@ permalink: /kb/051/Q51078/
 
 ## Q51078: FILECOMPARE Does Not Count Blank Lines
 
+{% raw %}
+
 	Article: Q51078
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.x
@@ -42,3 +44,5 @@ permalink: /kb/051/Q51078/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173284/
 
 ## Q173284: INFO: SNA Server Version Information and Windows NT Dependencies
 
+{% raw %}
+
 	Article: Q173284
 	Product(s): Microsoft SNA Server
 	Version(s): 2.0,2.1,2.11,3.0,4.0
@@ -217,3 +219,5 @@ permalink: /kb/173/Q173284/
 	
 	=============================================================================
 	
+
+{% endraw %}

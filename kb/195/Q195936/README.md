@@ -6,6 +6,8 @@ permalink: /kb/195/Q195936/
 
 ## Q195936: SMS: Pkg. Distribution Fails If Updating of Master Pkg. Fails
 
+{% raw %}
+
 	Article: Q195936
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -90,3 +92,5 @@ permalink: /kb/195/Q195936/
 	
 	=============================================================================
 	
+
+{% endraw %}

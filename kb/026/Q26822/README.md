@@ -6,6 +6,8 @@ permalink: /kb/026/Q26822/
 
 ## Q26822: FIX: Relational Operators Evaluate to Wrong Value
 
+{% raw %}
+
 	Article: Q26822
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a
@@ -84,3 +86,5 @@ permalink: /kb/026/Q26822/
 	
 	=============================================================================
 	
+
+{% endraw %}

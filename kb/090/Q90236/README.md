@@ -6,6 +6,8 @@ permalink: /kb/090/Q90236/
 
 ## Q90236: NET May Not Exit When You Press the Escape Key
 
+{% raw %}
+
 	Article: Q90236
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1; :1.0
@@ -47,3 +49,5 @@ permalink: /kb/090/Q90236/
 	
 	=============================================================================
 	
+
+{% endraw %}

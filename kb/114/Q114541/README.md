@@ -6,6 +6,8 @@ permalink: /kb/114/Q114541/
 
 ## Q114541: TCP/IP-based Applications Hang on Multiprocessor Systems
 
+{% raw %}
+
 	Article: Q114541
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.1; :3.1
@@ -62,3 +64,5 @@ permalink: /kb/114/Q114541/
 	
 	=============================================================================
 	
+
+{% endraw %}

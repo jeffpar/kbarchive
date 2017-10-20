@@ -6,6 +6,8 @@ permalink: /kb/314/Q314597/
 
 ## Q314597: Streets &amp; Trips 2002: Msg About Office XP During Installation
 
+{% raw %}
+
 	Article: Q314597
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -71,3 +73,5 @@ permalink: /kb/314/Q314597/
 	
 	=============================================================================
 	
+
+{% endraw %}

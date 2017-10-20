@@ -6,6 +6,8 @@ permalink: /kb/139/Q139626/
 
 ## Q139626: HOWTO: Drag and Drop Between Two Containers
 
+{% raw %}
+
 	Article: Q139626
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -171,3 +173,5 @@ permalink: /kb/139/Q139626/
 	
 	=============================================================================
 	
+
+{% endraw %}

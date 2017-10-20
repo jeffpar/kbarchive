@@ -6,6 +6,8 @@ permalink: /kb/133/Q133724/
 
 ## Q133724: STOP Message 0x0000001E in NTOskrnl
 
+{% raw %}
+
 	Article: Q133724
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -58,3 +60,5 @@ permalink: /kb/133/Q133724/
 	
 	=============================================================================
 	
+
+{% endraw %}

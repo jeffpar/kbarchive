@@ -6,6 +6,8 @@ permalink: /kb/184/Q184421/
 
 ## Q184421: Err Msg: Your Account Is Already in Use
 
+{% raw %}
+
 	Article: Q184421
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3,2.0
@@ -55,3 +57,5 @@ permalink: /kb/184/Q184421/
 	
 	=============================================================================
 	
+
+{% endraw %}

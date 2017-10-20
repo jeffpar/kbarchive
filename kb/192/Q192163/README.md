@@ -6,6 +6,8 @@ permalink: /kb/192/Q192163/
 
 ## Q192163: &quot;Stop 0x7B&quot; During Hardware Detection Portion of Setup
 
+{% raw %}
+
 	Article: Q192163
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/192/Q192163/
 	
 	=============================================================================
 	
+
+{% endraw %}

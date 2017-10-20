@@ -6,6 +6,8 @@ permalink: /kb/184/Q184828/
 
 ## Q184828: XADM: Store Crash on Security Credentials Check
 
+{% raw %}
+
 	Article: Q184828
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -98,3 +100,5 @@ permalink: /kb/184/Q184828/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199256/
 
 ## Q199256: Networking Essentials Education Edition Comments And Corrections
 
+{% raw %}
+
 	Article: Q199256
 	Product(s): Microsoft Press
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/199/Q199256/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150241/
 
 ## Q150241: SNAADMIN.EXE Application Exception When Deleting Users
 
+{% raw %}
+
 	Article: Q150241
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -82,3 +84,5 @@ permalink: /kb/150/Q150241/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171136/
 
 ## Q171136: ODBC Error Accessing Certificate Server Admin Tools
 
+{% raw %}
+
 	Article: Q171136
 	Product(s): Internet Information Server
 	Version(s): WinNT:1.0,3.0
@@ -44,3 +46,5 @@ permalink: /kb/171/Q171136/
 	
 	=============================================================================
 	
+
+{% endraw %}

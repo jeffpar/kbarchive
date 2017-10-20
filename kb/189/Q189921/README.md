@@ -6,6 +6,8 @@ permalink: /kb/189/Q189921/
 
 ## Q189921: PRB: Mailto: Hyperlink Object Starts Internet Explorer in Error
 
+{% raw %}
+
 	Article: Q189921
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -68,3 +70,5 @@ permalink: /kb/189/Q189921/
 	
 	=============================================================================
 	
+
+{% endraw %}

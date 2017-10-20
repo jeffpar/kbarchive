@@ -6,6 +6,8 @@ permalink: /kb/163/Q163130/
 
 ## Q163130: ODE97: Apply Button Dimmed When Converting Database to Design Ma
 
+{% raw %}
+
 	Article: Q163130
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/163/Q163130/
 	
 	=============================================================================
 	
+
+{% endraw %}

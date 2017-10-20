@@ -6,6 +6,8 @@ permalink: /kb/124/Q124142/
 
 ## Q124142: Registry Editor Hangs When You Select a Key
 
+{% raw %}
+
 	Article: Q124142
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/124/Q124142/
 	
 	=============================================================================
 	
+
+{% endraw %}

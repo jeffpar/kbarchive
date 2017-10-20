@@ -6,6 +6,8 @@ permalink: /kb/269/Q269775/
 
 ## Q269775: SMS: WINNT 4 .0 Clients Can't Run SMS From NetWare Logon Servers
 
+{% raw %}
+
 	Article: Q269775
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -63,3 +65,5 @@ permalink: /kb/269/Q269775/
 	
 	=============================================================================
 	
+
+{% endraw %}

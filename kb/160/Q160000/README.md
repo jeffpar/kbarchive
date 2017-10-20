@@ -6,6 +6,8 @@ permalink: /kb/160/Q160000/
 
 ## Q160000: SMS: Dos4gw.exe Causes Memory Inventory Inaccuracy
 
+{% raw %}
+
 	Article: Q160000
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -108,3 +110,5 @@ permalink: /kb/160/Q160000/
 	
 	=============================================================================
 	
+
+{% endraw %}

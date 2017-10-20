@@ -6,6 +6,8 @@ permalink: /kb/113/Q113294/
 
 ## Q113294: FIX: CFrameWnd::UpdateFrameTitle() Removes Text after Hyphen
 
+{% raw %}
+
 	Article: Q113294
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -87,3 +89,5 @@ permalink: /kb/113/Q113294/
 	
 	=============================================================================
 	
+
+{% endraw %}

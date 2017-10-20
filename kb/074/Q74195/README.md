@@ -6,6 +6,8 @@ permalink: /kb/074/Q74195/
 
 ## Q74195: Can't Install MS-DOS 5.0 Upgrade on Tandon Pac 286
 
+{% raw %}
+
 	Article: Q74195
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -60,3 +62,5 @@ permalink: /kb/074/Q74195/
 	
 	=============================================================================
 	
+
+{% endraw %}

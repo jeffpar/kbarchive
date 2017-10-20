@@ -6,6 +6,8 @@ permalink: /kb/274/Q274687/
 
 ## Q274687: MGS Error Message: Mgsi Executed an Invalid Instruction...
 
+{% raw %}
+
 	Article: Q274687
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/274/Q274687/
 	
 	=============================================================================
 	
+
+{% endraw %}

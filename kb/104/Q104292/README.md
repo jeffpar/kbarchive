@@ -6,6 +6,8 @@ permalink: /kb/104/Q104292/
 
 ## Q104292: How to Identify 128-Bit Windows 95 Dial-Up Networking Client
 
+{% raw %}
+
 	Article: Q104292
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:; Win2000:95
@@ -68,3 +70,5 @@ permalink: /kb/104/Q104292/
 	
 	=============================================================================
 	
+
+{% endraw %}

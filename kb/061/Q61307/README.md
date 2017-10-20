@@ -6,6 +6,8 @@ permalink: /kb/061/Q61307/
 
 ## Q61307: Do Not Start Programmer's WorkBench by Typing PWBED
 
+{% raw %}
+
 	Article: Q61307
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1
@@ -53,3 +55,5 @@ permalink: /kb/061/Q61307/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/250/Q250907/
 
 ## Q250907: XFOR: Cannot Open Internet Mail Service Page with SMTP Error
 
+{% raw %}
+
 	Article: Q250907
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -115,3 +117,5 @@ permalink: /kb/250/Q250907/
 	
 	=============================================================================
 	
+
+{% endraw %}

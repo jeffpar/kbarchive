@@ -6,6 +6,8 @@ permalink: /kb/167/Q167703/
 
 ## Q167703: Canon Bubble Jet BJC-4300 Does Not Support Ledger Paper
 
+{% raw %}
+
 	Article: Q167703
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/167/Q167703/
 	
 	=============================================================================
 	
+
+{% endraw %}

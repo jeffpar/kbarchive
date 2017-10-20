@@ -6,6 +6,8 @@ permalink: /kb/248/Q248034/
 
 ## Q248034: IIS Error: 404.1 Web Site Not Found
 
+{% raw %}
+
 	Article: Q248034
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -65,3 +67,5 @@ permalink: /kb/248/Q248034/
 	
 	=============================================================================
 	
+
+{% endraw %}

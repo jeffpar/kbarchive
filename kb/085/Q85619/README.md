@@ -6,6 +6,8 @@ permalink: /kb/085/Q85619/
 
 ## Q85619: Installing an Application from a Network Drive
 
+{% raw %}
+
 	Article: Q85619
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/085/Q85619/
 	
 	=============================================================================
 	
+
+{% endraw %}

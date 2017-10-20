@@ -6,6 +6,8 @@ permalink: /kb/288/Q288120/
 
 ## Q288120: Combat Flight Simulator: No Bombs or Rockets in Multiplayer Mode
 
+{% raw %}
+
 	Article: Q288120
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -42,3 +44,5 @@ permalink: /kb/288/Q288120/
 	
 	=============================================================================
 	
+
+{% endraw %}

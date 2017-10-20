@@ -6,6 +6,8 @@ permalink: /kb/157/Q157181/
 
 ## Q157181: PC Win: Only Top 80% of Sender's Name Displayed in the Inbox
 
+{% raw %}
+
 	Article: Q157181
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.5
@@ -56,3 +58,5 @@ permalink: /kb/157/Q157181/
 	
 	=============================================================================
 	
+
+{% endraw %}

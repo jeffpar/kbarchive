@@ -6,6 +6,8 @@ permalink: /kb/185/Q185827/
 
 ## Q185827: WD97: Error Message Received on Opening Works 4.x Files
 
+{% raw %}
+
 	Article: Q185827
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -127,3 +129,5 @@ permalink: /kb/185/Q185827/
 	
 	=============================================================================
 	
+
+{% endraw %}

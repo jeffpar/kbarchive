@@ -6,6 +6,8 @@ permalink: /kb/131/Q131771/
 
 ## Q131771: Cannot Change Duplex Printing Mode In Excel (16-Bit)
 
+{% raw %}
+
 	Article: Q131771
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -45,3 +47,5 @@ permalink: /kb/131/Q131771/
 	
 	=============================================================================
 	
+
+{% endraw %}

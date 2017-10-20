@@ -6,6 +6,8 @@ permalink: /kb/186/Q186237/
 
 ## Q186237: WD97: How to Move AutoCorrect Entries Between Computers
 
+{% raw %}
+
 	Article: Q186237
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -294,3 +296,5 @@ permalink: /kb/186/Q186237/
 	
 	=============================================================================
 	
+
+{% endraw %}

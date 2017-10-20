@@ -6,6 +6,8 @@ permalink: /kb/240/Q240352/
 
 ## Q240352: NBA Inside Drive 2000: Screen Resolutions Supported by the Game
 
+{% raw %}
+
 	Article: Q240352
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -51,3 +53,5 @@ permalink: /kb/240/Q240352/
 	
 	=============================================================================
 	
+
+{% endraw %}

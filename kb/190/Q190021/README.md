@@ -6,6 +6,8 @@ permalink: /kb/190/Q190021/
 
 ## Q190021: XADM: Messages Sitting in IMS Inbound Queue Waiting Delivery
 
+{% raw %}
+
 	Article: Q190021
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -91,3 +93,5 @@ permalink: /kb/190/Q190021/
 	
 	=============================================================================
 	
+
+{% endraw %}

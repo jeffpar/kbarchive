@@ -6,6 +6,8 @@ permalink: /kb/202/Q202000/
 
 ## Q202000: SMS: Discovery and Inventory for NetWare Servers in SMS 2.0
 
+{% raw %}
+
 	Article: Q202000
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -55,3 +57,5 @@ permalink: /kb/202/Q202000/
 	
 	=============================================================================
 	
+
+{% endraw %}

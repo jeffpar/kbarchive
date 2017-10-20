@@ -6,6 +6,8 @@ permalink: /kb/136/Q136843/
 
 ## Q136843: Improper Form Feed with Diconix 150 Plus Printer
 
+{% raw %}
+
 	Article: Q136843
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -47,3 +49,5 @@ permalink: /kb/136/Q136843/
 	
 	=============================================================================
 	
+
+{% endraw %}

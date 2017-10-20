@@ -6,6 +6,8 @@ permalink: /kb/221/Q221422/
 
 ## Q221422: XFOR: Incomplete Warning Event During LDAP Migration
 
+{% raw %}
+
 	Article: Q221422
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -50,3 +52,5 @@ permalink: /kb/221/Q221422/
 	
 	=============================================================================
 	
+
+{% endraw %}

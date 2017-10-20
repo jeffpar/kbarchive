@@ -6,6 +6,8 @@ permalink: /kb/085/Q85508/
 
 ## Q85508: PRB: No Warning for INVOKE Between 16-Bit and 32-Bit Segments
 
+{% raw %}
+
 	Article: Q85508
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -114,3 +116,5 @@ permalink: /kb/085/Q85508/
 	
 	=============================================================================
 	
+
+{% endraw %}

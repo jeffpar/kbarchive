@@ -6,6 +6,8 @@ permalink: /kb/229/Q229579/
 
 ## Q229579: PRB: CE ActiveX Control Is Not in List of Insertable Controls
 
+{% raw %}
+
 	Article: Q229579
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -97,3 +99,5 @@ permalink: /kb/229/Q229579/
 	
 	=============================================================================
 	
+
+{% endraw %}

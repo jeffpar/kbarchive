@@ -6,6 +6,8 @@ permalink: /kb/085/Q85163/
 
 ## Q85163: Default CONFIG.SYS and AUTOEXEC.BAT Files
 
+{% raw %}
+
 	Article: Q85163
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/085/Q85163/
 	
 	=============================================================================
 	
+
+{% endraw %}

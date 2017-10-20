@@ -6,6 +6,8 @@ permalink: /kb/083/Q83008/
 
 ## Q83008: XMS Calls Under Windows 3.1
 
+{% raw %}
+
 	Article: Q83008
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -68,3 +70,5 @@ permalink: /kb/083/Q83008/
 	
 	=============================================================================
 	
+
+{% endraw %}

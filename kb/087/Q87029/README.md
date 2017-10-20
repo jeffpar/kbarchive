@@ -6,6 +6,8 @@ permalink: /kb/087/Q87029/
 
 ## Q87029: SMTP: Explanation of TCP/IP
 
+{% raw %}
+
 	Article: Q87029
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -53,3 +55,5 @@ permalink: /kb/087/Q87029/
 	
 	=============================================================================
 	
+
+{% endraw %}

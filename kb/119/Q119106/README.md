@@ -6,6 +6,8 @@ permalink: /kb/119/Q119106/
 
 ## Q119106: WFWG 3.11 Does Not Pass Requests to Novell DOSNP.EXE
 
+{% raw %}
+
 	Article: Q119106
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -80,3 +82,5 @@ permalink: /kb/119/Q119106/
 	
 	=============================================================================
 	
+
+{% endraw %}

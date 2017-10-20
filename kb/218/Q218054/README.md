@@ -6,6 +6,8 @@ permalink: /kb/218/Q218054/
 
 ## Q218054: Cannot Uninstall Site Server if Installed Using BackOffice Setup
 
+{% raw %}
+
 	Article: Q218054
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -47,3 +49,5 @@ permalink: /kb/218/Q218054/
 	
 	=============================================================================
 	
+
+{% endraw %}

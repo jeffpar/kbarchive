@@ -6,6 +6,8 @@ permalink: /kb/257/Q257541/
 
 ## Q257541: HOWTO: Write to the NT Sys Log with the Windows Script Host
 
+{% raw %}
+
 	Article: Q257541
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -152,3 +154,5 @@ permalink: /kb/257/Q257541/
 	
 	=============================================================================
 	
+
+{% endraw %}

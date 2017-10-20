@@ -6,6 +6,8 @@ permalink: /kb/159/Q159239/
 
 ## Q159239: FP: How to Remove a Web from the List of Webs
 
+{% raw %}
+
 	Article: Q159239
 	Product(s): Word Front Page
 	Version(s): ; WINDOWS:1.0,1.1
@@ -93,3 +95,5 @@ permalink: /kb/159/Q159239/
 	
 	=============================================================================
 	
+
+{% endraw %}

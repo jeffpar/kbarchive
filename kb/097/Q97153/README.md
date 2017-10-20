@@ -6,6 +6,8 @@ permalink: /kb/097/Q97153/
 
 ## Q97153: Norton Desktop Unmounts DoubleSpace-compressed Bernoulli Drive
 
+{% raw %}
+
 	Article: Q97153
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:6.0,6.2; WINDOWS:3.0,3.0a,3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/097/Q97153/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160472/
 
 ## Q160472: Print Screen in Windows NT 4.0 Prints Only First Four Lines
 
+{% raw %}
+
 	Article: Q160472
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/160/Q160472/
 	
 	=============================================================================
 	
+
+{% endraw %}

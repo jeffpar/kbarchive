@@ -6,6 +6,8 @@ permalink: /kb/256/Q256123/
 
 ## Q256123: SMSLogonSvc account cannot reliably remain unlocked if password
 
+{% raw %}
+
 	Article: Q256123
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -110,3 +112,5 @@ permalink: /kb/256/Q256123/
 	
 	=============================================================================
 	
+
+{% endraw %}

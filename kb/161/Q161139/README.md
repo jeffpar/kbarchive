@@ -6,6 +6,8 @@ permalink: /kb/161/Q161139/
 
 ## Q161139: PRB: Custom ActiveX Property Sheet Entries Are Not Saved
 
+{% raw %}
+
 	Article: Q161139
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/161/Q161139/
 	
 	=============================================================================
 	
+
+{% endraw %}

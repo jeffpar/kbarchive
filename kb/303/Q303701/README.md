@@ -6,6 +6,8 @@ permalink: /kb/303/Q303701/
 
 ## Q303701: Configuring Incoming/Outgoing Connections for IIS SMTP Server
 
+{% raw %}
+
 	Article: Q303701
 	Product(s): Internet Information Server
 	Version(s): 2000,5.0
@@ -105,3 +107,5 @@ permalink: /kb/303/Q303701/
 	
 	=============================================================================
 	
+
+{% endraw %}

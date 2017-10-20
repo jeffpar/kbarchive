@@ -6,6 +6,8 @@ permalink: /kb/151/Q151645/
 
 ## Q151645: Pregnancy and Child Care: Multiple Radio Buttons Selected
 
+{% raw %}
+
 	Article: Q151645
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -72,3 +74,5 @@ permalink: /kb/151/Q151645/
 	
 	=============================================================================
 	
+
+{% endraw %}

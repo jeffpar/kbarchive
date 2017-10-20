@@ -6,6 +6,8 @@ permalink: /kb/158/Q158838/
 
 ## Q158838: HOWTO: Setup the FOXISAPI Sample on Windows NT 4.0
 
+{% raw %}
+
 	Article: Q158838
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/158/Q158838/
 	
 	=============================================================================
 	
+
+{% endraw %}

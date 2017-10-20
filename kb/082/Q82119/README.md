@@ -6,6 +6,8 @@ permalink: /kb/082/Q82119/
 
 ## Q82119: Problems Running Windows 3.1 Tutorial with EGA Monitor
 
+{% raw %}
+
 	Article: Q82119
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/082/Q82119/
 	
 	=============================================================================
 	
+
+{% endraw %}

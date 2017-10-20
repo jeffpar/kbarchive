@@ -6,6 +6,8 @@ permalink: /kb/161/Q161642/
 
 ## Q161642: Auto Insert Notification May Prevent Automatic Suspend
 
+{% raw %}
+
 	Article: Q161642
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -126,3 +128,5 @@ permalink: /kb/161/Q161642/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164860/
 
 ## Q164860: XFOR: Garbled Attachments Between Exchange 4.0 and 5.0 IMCs
 
+{% raw %}
+
 	Article: Q164860
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -55,3 +57,5 @@ permalink: /kb/164/Q164860/
 	
 	=============================================================================
 	
+
+{% endraw %}

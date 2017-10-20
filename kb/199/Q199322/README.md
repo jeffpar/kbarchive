@@ -6,6 +6,8 @@ permalink: /kb/199/Q199322/
 
 ## Q199322: PRB: OEM to ANSI Translation Fails While Creating New DSN
 
+{% raw %}
+
 	Article: Q199322
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 3.5,3.6
@@ -72,3 +74,5 @@ permalink: /kb/199/Q199322/
 	
 	=============================================================================
 	
+
+{% endraw %}

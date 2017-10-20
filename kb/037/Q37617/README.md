@@ -6,6 +6,8 @@ permalink: /kb/037/Q37617/
 
 ## Q37617: Scan Codes for IBM and Compatible Keyboards
 
+{% raw %}
+
 	Article: Q37617
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10 | 5.10
@@ -125,3 +127,5 @@ permalink: /kb/037/Q37617/
 	                                                PRINT SCR   E0 2A E037
 	
 	(Source : Norton's Guide to the IBM PC and PS/2)
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84883/
 
 ## Q84883: PC OS2: Restarting OS/2 Client Causes Trap 00D Error
 
+{% raw %}
+
 	Article: Q84883
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -49,3 +51,5 @@ permalink: /kb/084/Q84883/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/313/Q313196/
 
 ## Q313196: PRB: SET DATE Resets SelStart Property in Text Boxes
 
+{% raw %}
+
 	Article: Q313196
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0,7.0
@@ -87,3 +89,5 @@ permalink: /kb/313/Q313196/
 	
 	=============================================================================
 	
+
+{% endraw %}

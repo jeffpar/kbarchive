@@ -6,6 +6,8 @@ permalink: /kb/176/Q176219/
 
 ## Q176219: XADM: DXA Objects Do Not Have Support for Hebrew
 
+{% raw %}
+
 	Article: Q176219
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -61,3 +63,5 @@ permalink: /kb/176/Q176219/
 	
 	=============================================================================
 	
+
+{% endraw %}

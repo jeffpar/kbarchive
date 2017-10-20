@@ -6,6 +6,8 @@ permalink: /kb/238/Q238665/
 
 ## Q238665: Errors After Creating/Modifying Application, Directory, or Site
 
+{% raw %}
+
 	Article: Q238665
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -144,3 +146,5 @@ permalink: /kb/238/Q238665/
 	
 	=============================================================================
 	
+
+{% endraw %}

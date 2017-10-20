@@ -6,6 +6,8 @@ permalink: /kb/067/Q67012/
 
 ## Q67012: Windows Err Msg: Warning! Overwriting an Old Copy...
 
+{% raw %}
+
 	Article: Q67012
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/067/Q67012/
 	
 	=============================================================================
 	
+
+{% endraw %}

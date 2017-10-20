@@ -6,6 +6,8 @@ permalink: /kb/084/Q84071/
 
 ## Q84071: SAMPLE: WNBDemo.exe Uses NetBIOS Under Microsoft Windows
 
+{% raw %}
+
 	Article: Q84071
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -147,3 +149,5 @@ permalink: /kb/084/Q84071/
 	
 	=============================================================================
 	
+
+{% endraw %}

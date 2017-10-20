@@ -6,6 +6,8 @@ permalink: /kb/118/Q118554/
 
 ## Q118554: PRB: &quot;SQL Column Not Found&quot; with Macro Substitution in SELECT
 
+{% raw %}
+
 	Article: Q118554
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c; MS-DOS:2.0,2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0
@@ -71,3 +73,5 @@ permalink: /kb/118/Q118554/
 	
 	=============================================================================
 	
+
+{% endraw %}

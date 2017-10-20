@@ -6,6 +6,8 @@ permalink: /kb/097/Q97494/
 
 ## Q97494: Parameter Adjustments that Improve TCP/IP on LAN Man
 
+{% raw %}
+
 	Article: Q97494
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/097/Q97494/
 	
 	=============================================================================
 	
+
+{% endraw %}

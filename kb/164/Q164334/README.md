@@ -6,6 +6,8 @@ permalink: /kb/164/Q164334/
 
 ## Q164334: WD97: Formatting Toolbar Shows Incorrect Text Direction in Table
 
+{% raw %}
+
 	Article: Q164334
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -62,3 +64,5 @@ permalink: /kb/164/Q164334/
 	
 	=============================================================================
 	
+
+{% endraw %}

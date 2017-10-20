@@ -6,6 +6,8 @@ permalink: /kb/248/Q248385/
 
 ## Q248385: XIMS: Netscape 4.7 Does Not Display the Message Body
 
+{% raw %}
+
 	Article: Q248385
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -92,3 +94,5 @@ permalink: /kb/248/Q248385/
 	
 	=============================================================================
 	
+
+{% endraw %}

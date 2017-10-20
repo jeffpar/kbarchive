@@ -6,6 +6,8 @@ permalink: /kb/129/Q129498/
 
 ## Q129498: Mac Wkst: Summary Window Missing Column Headings
 
+{% raw %}
+
 	Article: Q129498
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -49,3 +51,5 @@ permalink: /kb/129/Q129498/
 	
 	=============================================================================
 	
+
+{% endraw %}

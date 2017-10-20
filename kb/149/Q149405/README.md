@@ -6,6 +6,8 @@ permalink: /kb/149/Q149405/
 
 ## Q149405: Real-Mode Compression Driver Not Listed in Memory
 
+{% raw %}
+
 	Article: Q149405
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -48,3 +50,5 @@ permalink: /kb/149/Q149405/
 	
 	=============================================================================
 	
+
+{% endraw %}

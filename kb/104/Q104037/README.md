@@ -6,6 +6,8 @@ permalink: /kb/104/Q104037/
 
 ## Q104037: Microsoft Backup Doesn't Write to Second Disk After Time-Out
 
+{% raw %}
+
 	Article: Q104037
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2
@@ -49,3 +51,5 @@ permalink: /kb/104/Q104037/
 	
 	=============================================================================
 	
+
+{% endraw %}

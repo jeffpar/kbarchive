@@ -6,6 +6,8 @@ permalink: /kb/194/Q194171/
 
 ## Q194171: App Request UDP Only, &quot;Netstat -an&quot; Displays TCP and UDP
 
+{% raw %}
+
 	Article: Q194171
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -56,3 +58,5 @@ permalink: /kb/194/Q194171/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135724/
 
 ## Q135724: Deleted Disk Space Not Released on Converted NTFS Volume
 
+{% raw %}
+
 	Article: Q135724
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/135/Q135724/
 	
 	=============================================================================
 	
+
+{% endraw %}

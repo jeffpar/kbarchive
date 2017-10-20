@@ -6,6 +6,8 @@ permalink: /kb/089/Q89723/
 
 ## Q89723: Zenith 8086/8088 720K Floppy Drive with MS-DOS
 
+{% raw %}
+
 	Article: Q89723
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -64,3 +66,5 @@ permalink: /kb/089/Q89723/
 	
 	=============================================================================
 	
+
+{% endraw %}

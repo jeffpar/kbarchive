@@ -6,6 +6,8 @@ permalink: /kb/058/Q58802/
 
 ## Q58802: _asm Needed for Each Line of Inline Assembly Macros
 
+{% raw %}
+
 	Article: Q58802
 	Product(s): See article
 	Version(s): 2.00
@@ -58,3 +60,5 @@ permalink: /kb/058/Q58802/
 	
 	Note that the first _asm statement before the opening curly brace ({)
 	is not needed.
+
+{% endraw %}

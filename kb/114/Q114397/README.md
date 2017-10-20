@@ -6,6 +6,8 @@ permalink: /kb/114/Q114397/
 
 ## Q114397: Setup Error Message Incorrectly Refers to IOSYS.HDR
 
+{% raw %}
+
 	Article: Q114397
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.21,6.22
@@ -69,3 +71,5 @@ permalink: /kb/114/Q114397/
 	
 	=============================================================================
 	
+
+{% endraw %}

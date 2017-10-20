@@ -6,6 +6,8 @@ permalink: /kb/198/Q198551/
 
 ## Q198551: NSLOOKUP Returns Time-out Error When Query for an MX Record
 
+{% raw %}
+
 	Article: Q198551
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a
@@ -69,3 +71,5 @@ permalink: /kb/198/Q198551/
 	
 	=============================================================================
 	
+
+{% endraw %}

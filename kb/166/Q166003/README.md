@@ -6,6 +6,8 @@ permalink: /kb/166/Q166003/
 
 ## Q166003: How to Grant/Deny Access to a Group of Computers by Network ID
 
+{% raw %}
+
 	Article: Q166003
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,3.0
@@ -69,3 +71,5 @@ permalink: /kb/166/Q166003/
 	
 	=============================================================================
 	
+
+{% endraw %}

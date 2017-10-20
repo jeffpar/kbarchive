@@ -6,6 +6,8 @@ permalink: /kb/148/Q148504/
 
 ## Q148504: FIX: C2371: Cast to Struct Ptr in Default Arg of Class Member
 
+{% raw %}
+
 	Article: Q148504
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -68,3 +70,5 @@ permalink: /kb/148/Q148504/
 	
 	=============================================================================
 	
+
+{% endraw %}

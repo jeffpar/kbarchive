@@ -6,6 +6,8 @@ permalink: /kb/290/Q290620/
 
 ## Q290620: HOWTO: Create an Alert to Automatically Generate a Dump Heap Log
 
+{% raw %}
+
 	Article: Q290620
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -164,3 +166,5 @@ permalink: /kb/290/Q290620/
 	
 	=============================================================================
 	
+
+{% endraw %}

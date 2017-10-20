@@ -6,6 +6,8 @@ permalink: /kb/059/Q59758/
 
 ## Q59758: Single-Line IF...THEN Label, &quot;Syntax Error&quot;; Requires GOTO
 
+{% raw %}
+
 	Article: Q59758
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -66,3 +68,5 @@ permalink: /kb/059/Q59758/
 	
 	   IF 1 = 1 THEN Label      'Should be: IF 1 = 1 THEN GOTO Label
 	   Label: PRINT "Made it!"
+
+{% endraw %}

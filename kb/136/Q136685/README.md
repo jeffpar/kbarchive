@@ -6,6 +6,8 @@ permalink: /kb/136/Q136685/
 
 ## Q136685: Golf 2.0a Registry Entries made by Setup
 
+{% raw %}
+
 	Article: Q136685
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -59,3 +61,5 @@ permalink: /kb/136/Q136685/
 	
 	=============================================================================
 	
+
+{% endraw %}

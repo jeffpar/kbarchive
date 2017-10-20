@@ -6,6 +6,8 @@ permalink: /kb/141/Q141242/
 
 ## Q141242: STOP Msg: 0x0000001E Testing New Fault Tolerance Boot Disk
 
+{% raw %}
+
 	Article: Q141242
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -70,3 +72,5 @@ permalink: /kb/141/Q141242/
 	
 	=============================================================================
 	
+
+{% endraw %}

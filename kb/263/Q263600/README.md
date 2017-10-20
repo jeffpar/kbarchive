@@ -6,6 +6,8 @@ permalink: /kb/263/Q263600/
 
 ## Q263600: BUG: Nested Class Does Not See typedef in the Enclosing Class
 
+{% raw %}
+
 	Article: Q263600
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -103,3 +105,5 @@ permalink: /kb/263/Q263600/
 	
 	=============================================================================
 	
+
+{% endraw %}

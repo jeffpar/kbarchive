@@ -6,6 +6,8 @@ permalink: /kb/121/Q121294/
 
 ## Q121294: Windows 95 Err Msg w/a DISTEC Drive: Missing Operating System
 
+{% raw %}
+
 	Article: Q121294
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/121/Q121294/
 	
 	=============================================================================
 	
+
+{% endraw %}

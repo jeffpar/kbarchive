@@ -6,6 +6,8 @@ permalink: /kb/127/Q127727/
 
 ## Q127727: SMTP: Err Msg: The Following Recipients Could Not Be Reached
 
+{% raw %}
+
 	Article: Q127727
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -49,3 +51,5 @@ permalink: /kb/127/Q127727/
 	
 	=============================================================================
 	
+
+{% endraw %}

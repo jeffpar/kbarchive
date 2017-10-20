@@ -6,6 +6,8 @@ permalink: /kb/248/Q248792/
 
 ## Q248792: Connection Wizard Incorrectly Displays Option for DB2 on VM/VSE
 
+{% raw %}
+
 	Article: Q248792
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0 SP3
@@ -81,3 +83,5 @@ permalink: /kb/248/Q248792/
 	
 	=============================================================================
 	
+
+{% endraw %}

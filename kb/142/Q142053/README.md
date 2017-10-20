@@ -6,6 +6,8 @@ permalink: /kb/142/Q142053/
 
 ## Q142053: How to Create Macintosh Volumes in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q142053
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -70,3 +72,5 @@ permalink: /kb/142/Q142053/
 	
 	=============================================================================
 	
+
+{% endraw %}

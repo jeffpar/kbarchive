@@ -6,6 +6,8 @@ permalink: /kb/304/Q304579/
 
 ## Q304579: &quot;Stop 82&quot; Error Message on a Blue Screen on Terminal Server
 
+{% raw %}
+
 	Article: Q304579
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -77,3 +79,5 @@ permalink: /kb/304/Q304579/
 	
 	=============================================================================
 	
+
+{% endraw %}

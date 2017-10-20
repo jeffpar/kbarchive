@@ -6,6 +6,8 @@ permalink: /kb/081/Q81529/
 
 ## Q81529: Epson Printer Emulation Modes for Windows
 
+{% raw %}
+
 	Article: Q81529
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/081/Q81529/
 	
 	=============================================================================
 	
+
+{% endraw %}

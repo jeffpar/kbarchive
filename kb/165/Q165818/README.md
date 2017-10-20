@@ -6,6 +6,8 @@ permalink: /kb/165/Q165818/
 
 ## Q165818: Truncation of Backup Log In Eastern Europe or Russian NT 4.0
 
+{% raw %}
+
 	Article: Q165818
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/165/Q165818/
 	
 	=============================================================================
 	
+
+{% endraw %}

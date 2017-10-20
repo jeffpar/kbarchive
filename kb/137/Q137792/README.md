@@ -6,6 +6,8 @@ permalink: /kb/137/Q137792/
 
 ## Q137792: SMS: Expand All Only Expands Left Side Of Site Window
 
+{% raw %}
+
 	Article: Q137792
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -42,3 +44,5 @@ permalink: /kb/137/Q137792/
 	
 	=============================================================================
 	
+
+{% endraw %}

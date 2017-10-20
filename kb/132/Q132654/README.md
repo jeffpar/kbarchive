@@ -6,6 +6,8 @@ permalink: /kb/132/Q132654/
 
 ## Q132654: Setup Error Message: You Need to Run Setup from MS-DOS Mode
 
+{% raw %}
+
 	Article: Q132654
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/132/Q132654/
 	
 	=============================================================================
 	
+
+{% endraw %}

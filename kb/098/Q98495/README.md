@@ -6,6 +6,8 @@ permalink: /kb/098/Q98495/
 
 ## Q98495: Windows FTADMIN Generates Error 2140
 
+{% raw %}
+
 	Article: Q98495
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -35,3 +37,5 @@ permalink: /kb/098/Q98495/
 	
 	=============================================================================
 	
+
+{% endraw %}

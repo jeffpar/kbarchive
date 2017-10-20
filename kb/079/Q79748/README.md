@@ -6,6 +6,8 @@ permalink: /kb/079/Q79748/
 
 ## Q79748: Windows 3.0 Accessories Create Files If No Extension Is Given
 
+{% raw %}
+
 	Article: Q79748
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/079/Q79748/
 	
 	=============================================================================
 	
+
+{% endraw %}

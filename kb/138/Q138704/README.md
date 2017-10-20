@@ -6,6 +6,8 @@ permalink: /kb/138/Q138704/
 
 ## Q138704: DOC: GETFILE() Help Topic States DialogCaption Is at Top
 
+{% raw %}
+
 	Article: Q138704
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/138/Q138704/
 	
 	=============================================================================
 	
+
+{% endraw %}

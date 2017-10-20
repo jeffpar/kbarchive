@@ -6,6 +6,8 @@ permalink: /kb/153/Q153332/
 
 ## Q153332: ECHO Command in a Batch File Does Not Echo /Q
 
+{% raw %}
+
 	Article: Q153332
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -66,3 +68,5 @@ permalink: /kb/153/Q153332/
 	
 	=============================================================================
 	
+
+{% endraw %}

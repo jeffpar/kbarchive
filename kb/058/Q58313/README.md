@@ -6,6 +6,8 @@ permalink: /kb/058/Q58313/
 
 ## Q58313: Visual Edge Not Supported in Windows 3.0 or 3.1 HPPCL Driver
 
+{% raw %}
+
 	Article: Q58313
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1
@@ -37,3 +39,5 @@ permalink: /kb/058/Q58313/
 	
 	=============================================================================
 	
+
+{% endraw %}

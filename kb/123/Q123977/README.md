@@ -6,6 +6,8 @@ permalink: /kb/123/Q123977/
 
 ## Q123977: PRB: &quot;Unexpected column data types were returned from query&quot;
 
+{% raw %}
+
 	Article: Q123977
 	Product(s): Microsoft C Compiler
 	Version(s): 1.50 1.51 1.52 | 2.00 2.10
@@ -184,3 +186,5 @@ permalink: /kb/123/Q123977/
 	
 	=============================================================================
 	
+
+{% endraw %}

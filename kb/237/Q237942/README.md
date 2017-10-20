@@ -6,6 +6,8 @@ permalink: /kb/237/Q237942/
 
 ## Q237942: Resolution of Unqualified Host Name May Not Succeed with SP5
 
+{% raw %}
+
 	Article: Q237942
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP5
@@ -100,3 +102,5 @@ permalink: /kb/237/Q237942/
 	
 	=============================================================================
 	
+
+{% endraw %}

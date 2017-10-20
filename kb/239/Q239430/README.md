@@ -6,6 +6,8 @@ permalink: /kb/239/Q239430/
 
 ## Q239430: Bookshelf 98: How to Use Command-Line Switches
 
+{% raw %}
+
 	Article: Q239430
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -103,3 +105,5 @@ permalink: /kb/239/Q239430/
 	
 	=============================================================================
 	
+
+{% endraw %}

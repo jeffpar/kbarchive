@@ -6,6 +6,8 @@ permalink: /kb/264/Q264300/
 
 ## Q264300: Combat FS: Enemy Aircraft in Multiplayer Games Appear Small
 
+{% raw %}
+
 	Article: Q264300
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -77,3 +79,5 @@ permalink: /kb/264/Q264300/
 	
 	=============================================================================
 	
+
+{% endraw %}

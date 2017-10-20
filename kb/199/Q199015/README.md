@@ -6,6 +6,8 @@ permalink: /kb/199/Q199015/
 
 ## Q199015: Encarta Virtual Globe 99 Err Msg: Error Reading CD-ROM
 
+{% raw %}
+
 	Article: Q199015
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/199/Q199015/
 	
 	=============================================================================
 	
+
+{% endraw %}

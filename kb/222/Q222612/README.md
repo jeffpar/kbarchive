@@ -6,6 +6,8 @@ permalink: /kb/222/Q222612/
 
 ## Q222612: SNA Server SCS Print Emulation Enhanced For S/36 Systems
 
+{% raw %}
+
 	Article: Q222612
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0SP2
@@ -84,3 +86,5 @@ permalink: /kb/222/Q222612/
 	
 	=============================================================================
 	
+
+{% endraw %}

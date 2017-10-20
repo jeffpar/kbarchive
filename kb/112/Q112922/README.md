@@ -6,6 +6,8 @@ permalink: /kb/112/Q112922/
 
 ## Q112922: PC Win: Shortcut Key F1 in Export Dialog Invokes Import Help
 
+{% raw %}
+
 	Article: Q112922
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b,3.2
@@ -44,3 +46,5 @@ permalink: /kb/112/Q112922/
 	
 	=============================================================================
 	
+
+{% endraw %}

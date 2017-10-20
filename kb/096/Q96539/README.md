@@ -6,6 +6,8 @@ permalink: /kb/096/Q96539/
 
 ## Q96539: FOXTOOLS.FLL Calls to GetDC, GetDeviceCaps and ReleaseDC
 
+{% raw %}
+
 	Article: Q96539
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x 2.60 2.60a 3.00
@@ -91,3 +93,5 @@ permalink: /kb/096/Q96539/
 	
 	=============================================================================
 	
+
+{% endraw %}

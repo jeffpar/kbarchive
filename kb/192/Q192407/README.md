@@ -6,6 +6,8 @@ permalink: /kb/192/Q192407/
 
 ## Q192407: Caching-Only DNS Server Incorrectly Reports &quot;Name Error&quot;
 
+{% raw %}
+
 	Article: Q192407
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -95,3 +97,5 @@ permalink: /kb/192/Q192407/
 	
 	=============================================================================
 	
+
+{% endraw %}

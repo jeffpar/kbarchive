@@ -6,6 +6,8 @@ permalink: /kb/159/Q159523/
 
 ## Q159523: XCLN: Can't Install SP2 on Windows NT w/out Admin Privileges
 
+{% raw %}
+
 	Article: Q159523
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -56,3 +58,5 @@ permalink: /kb/159/Q159523/
 	
 	=============================================================================
 	
+
+{% endraw %}

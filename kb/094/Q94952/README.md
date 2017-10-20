@@ -6,6 +6,8 @@ permalink: /kb/094/Q94952/
 
 ## Q94952: Linking Windows-Based Applications and DLLs with /NOI
 
+{% raw %}
+
 	Article: Q94952
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -80,3 +82,5 @@ permalink: /kb/094/Q94952/
 	
 	=============================================================================
 	
+
+{% endraw %}

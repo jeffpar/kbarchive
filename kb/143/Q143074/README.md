@@ -6,6 +6,8 @@ permalink: /kb/143/Q143074/
 
 ## Q143074: How to Highlight a Menu Option or Menu Item Programmatically
 
+{% raw %}
+
 	Article: Q143074
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -102,3 +104,5 @@ permalink: /kb/143/Q143074/
 	
 	=============================================================================
 	
+
+{% endraw %}

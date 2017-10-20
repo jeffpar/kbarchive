@@ -6,6 +6,8 @@ permalink: /kb/195/Q195969/
 
 ## Q195969: XFOR:Cannot Specify Domains to Relay to in Internet Mail Service
 
+{% raw %}
+
 	Article: Q195969
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -137,3 +139,5 @@ permalink: /kb/195/Q195969/
 	
 	=============================================================================
 	
+
+{% endraw %}

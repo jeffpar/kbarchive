@@ -6,6 +6,8 @@ permalink: /kb/064/Q64813/
 
 ## Q64813: Excel Displays Printers on None When They Are on a Port
 
+{% raw %}
+
 	Article: Q64813
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -45,3 +47,5 @@ permalink: /kb/064/Q64813/
 	
 	=============================================================================
 	
+
+{% endraw %}

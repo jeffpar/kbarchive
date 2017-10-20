@@ -6,6 +6,8 @@ permalink: /kb/225/Q225140/
 
 ## Q225140: FIX: COleDateTime::operator=(time_t) Breaks If Year Past 1999
 
+{% raw %}
+
 	Article: Q225140
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1
@@ -93,3 +95,5 @@ permalink: /kb/225/Q225140/
 	
 	=============================================================================
 	
+
+{% endraw %}

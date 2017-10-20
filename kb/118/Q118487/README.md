@@ -6,6 +6,8 @@ permalink: /kb/118/Q118487/
 
 ## Q118487: SMTP: Attachments Seem Corrupted or Garbled
 
+{% raw %}
+
 	Article: Q118487
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -114,3 +116,5 @@ permalink: /kb/118/Q118487/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192452/
 
 ## Q192452: SMS: Installer Doesn't Display Custom Dialog Text on Check Box
 
+{% raw %}
+
 	Article: Q192452
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -50,3 +52,5 @@ permalink: /kb/192/Q192452/
 	
 	=============================================================================
 	
+
+{% endraw %}

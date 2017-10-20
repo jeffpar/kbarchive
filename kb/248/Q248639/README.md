@@ -6,6 +6,8 @@ permalink: /kb/248/Q248639/
 
 ## Q248639: Remote Access Service Does Not Start, Errors 7023 and 7001
 
+{% raw %}
+
 	Article: Q248639
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/248/Q248639/
 	
 	=============================================================================
 	
+
+{% endraw %}

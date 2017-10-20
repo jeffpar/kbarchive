@@ -6,6 +6,8 @@ permalink: /kb/256/Q256913/
 
 ## Q256913: SMS: Cannot Connect to SMS Database After Upgrading SMS
 
+{% raw %}
+
 	Article: Q256913
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -95,3 +97,5 @@ permalink: /kb/256/Q256913/
 	
 	=============================================================================
 	
+
+{% endraw %}

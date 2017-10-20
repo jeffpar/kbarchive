@@ -6,6 +6,8 @@ permalink: /kb/163/Q163056/
 
 ## Q163056: ACC97: Access IPF Using Find on Object That Is Checked In
 
+{% raw %}
+
 	Article: Q163056
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:97
@@ -114,3 +116,5 @@ permalink: /kb/163/Q163056/
 	
 	=============================================================================
 	
+
+{% endraw %}

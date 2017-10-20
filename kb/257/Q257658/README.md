@@ -6,6 +6,8 @@ permalink: /kb/257/Q257658/
 
 ## Q257658: BUG: BatchCollisionCount Incorrect After BatchUpdate to SQL 7.0
 
+{% raw %}
+
 	Article: Q257658
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0; winnt:7.0
@@ -115,3 +117,5 @@ permalink: /kb/257/Q257658/
 	
 	=============================================================================
 	
+
+{% endraw %}

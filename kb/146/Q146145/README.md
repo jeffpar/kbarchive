@@ -6,6 +6,8 @@ permalink: /kb/146/Q146145/
 
 ## Q146145: Schedule+ 1.0 Does Not Adjust for Time Zone Differences
 
+{% raw %}
+
 	Article: Q146145
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,7.0
@@ -42,3 +44,5 @@ permalink: /kb/146/Q146145/
 	
 	=============================================================================
 	
+
+{% endraw %}

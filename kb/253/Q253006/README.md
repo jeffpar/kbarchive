@@ -6,6 +6,8 @@ permalink: /kb/253/Q253006/
 
 ## Q253006: Account Joiner Utility Hangs with Application Error Message on S
 
+{% raw %}
+
 	Article: Q253006
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -100,3 +102,5 @@ permalink: /kb/253/Q253006/
 	
 	=============================================================================
 	
+
+{% endraw %}

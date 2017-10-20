@@ -6,6 +6,8 @@ permalink: /kb/183/Q183493/
 
 ## Q183493: Batch File Calling CD Command May Not Run on HPFS
 
+{% raw %}
+
 	Article: Q183493
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -83,3 +85,5 @@ permalink: /kb/183/Q183493/
 	
 	=============================================================================
 	
+
+{% endraw %}

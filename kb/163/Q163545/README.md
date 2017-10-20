@@ -6,6 +6,8 @@ permalink: /kb/163/Q163545/
 
 ## Q163545: FIX: Setup /F Causes Error When Created by Setup Wizard
 
+{% raw %}
+
 	Article: Q163545
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -86,3 +88,5 @@ permalink: /kb/163/Q163545/
 	
 	=============================================================================
 	
+
+{% endraw %}

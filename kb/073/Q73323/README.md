@@ -6,6 +6,8 @@ permalink: /kb/073/Q73323/
 
 ## Q73323: Packard Bell SPEED.COM and MS-DOS 5.0 and Later
 
+{% raw %}
+
 	Article: Q73323
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -55,3 +57,5 @@ permalink: /kb/073/Q73323/
 	
 	=============================================================================
 	
+
+{% endraw %}

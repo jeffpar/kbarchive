@@ -6,6 +6,8 @@ permalink: /kb/119/Q119248/
 
 ## Q119248: FIX: &quot;Error During Compression&quot; Splitting a File a Second Time
 
+{% raw %}
+
 	Article: Q119248
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0; :2.5x,2.6
@@ -76,3 +78,5 @@ permalink: /kb/119/Q119248/
 	
 	=============================================================================
 	
+
+{% endraw %}

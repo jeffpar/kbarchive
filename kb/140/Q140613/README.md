@@ -6,6 +6,8 @@ permalink: /kb/140/Q140613/
 
 ## Q140613: FIX:SQLDISCONNECT() May Cause Exception Error in Visual FoxPro
 
+{% raw %}
+
 	Article: Q140613
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0
@@ -73,3 +75,5 @@ permalink: /kb/140/Q140613/
 	
 	=============================================================================
 	
+
+{% endraw %}

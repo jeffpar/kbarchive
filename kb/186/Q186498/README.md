@@ -6,6 +6,8 @@ permalink: /kb/186/Q186498/
 
 ## Q186498: Terminal Server Application Integration Information
 
+{% raw %}
+
 	Article: Q186498
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -821,3 +823,5 @@ permalink: /kb/186/Q186498/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242276/
 
 ## Q242276: XADM: KM Server with Subordinate CA Displays Error Message
 
+{% raw %}
+
 	Article: Q242276
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -127,3 +129,5 @@ permalink: /kb/242/Q242276/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196222/
 
 ## Q196222: Cannot Log On to Windows NT and NetWare Simultaneously
 
+{% raw %}
+
 	Article: Q196222
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -88,3 +90,5 @@ permalink: /kb/196/Q196222/
 	
 	=============================================================================
 	
+
+{% endraw %}

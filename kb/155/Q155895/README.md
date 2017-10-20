@@ -6,6 +6,8 @@ permalink: /kb/155/Q155895/
 
 ## Q155895: How To Find an Item in a Tree Control Via its Label
 
+{% raw %}
+
 	Article: Q155895
 	Product(s): Microsoft C Compiler
 	Version(s): 2.20 4.00 4.10 4.20
@@ -119,3 +121,5 @@ permalink: /kb/155/Q155895/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193836/
 
 ## Q193836: NET USE Attempt Across Domains Fails Without Name Resolution
 
+{% raw %}
+
 	Article: Q193836
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -117,3 +119,5 @@ permalink: /kb/193/Q193836/
 	
 	=============================================================================
 	
+
+{% endraw %}

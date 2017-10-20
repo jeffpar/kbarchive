@@ -6,6 +6,8 @@ permalink: /kb/153/Q153123/
 
 ## Q153123: How to Enable Eastern Europe Keyboards for MS-DOS Applications
 
+{% raw %}
+
 	Article: Q153123
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -136,3 +138,5 @@ permalink: /kb/153/Q153123/
 	
 	=============================================================================
 	
+
+{% endraw %}

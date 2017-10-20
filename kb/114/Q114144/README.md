@@ -6,6 +6,8 @@ permalink: /kb/114/Q114144/
 
 ## Q114144: BUG: &quot;Alias Not Found&quot; Occurs with Table Used in dBASE Query
 
+{% raw %}
+
 	Article: Q114144
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.6; WINDOWS:2.6,3.0,5.0,5.0a
@@ -58,3 +60,5 @@ permalink: /kb/114/Q114144/
 	
 	=============================================================================
 	
+
+{% endraw %}

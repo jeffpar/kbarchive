@@ -6,6 +6,8 @@ permalink: /kb/165/Q165307/
 
 ## Q165307: BUG: Incorrect WHERE Clause Shows in View Designer
 
+{% raw %}
+
 	Article: Q165307
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -81,3 +83,5 @@ permalink: /kb/165/Q165307/
 	
 	=============================================================================
 	
+
+{% endraw %}

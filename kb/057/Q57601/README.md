@@ -6,6 +6,8 @@ permalink: /kb/057/Q57601/
 
 ## Q57601: Using TAB to Move Whole Blocks of Text in QB.EXE or QBX.EXE
 
+{% raw %}
+
 	Article: Q57601
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -42,3 +44,5 @@ permalink: /kb/057/Q57601/
 	QBX.EXE in Microsoft BASIC PDS Version 7.00 allows you to undo the
 	last 20 edits performed, so in the same situation as above, the text
 	is recoverable by pressing ALT+BACKSPACE several times consecutively.
+
+{% endraw %}

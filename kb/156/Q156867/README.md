@@ -6,6 +6,8 @@ permalink: /kb/156/Q156867/
 
 ## Q156867: PRB: SYS(6) Function Returns Empty String
 
+{% raw %}
+
 	Article: Q156867
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -81,3 +83,5 @@ permalink: /kb/156/Q156867/
 	
 	=============================================================================
 	
+
+{% endraw %}

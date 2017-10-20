@@ -6,6 +6,8 @@ permalink: /kb/066/Q66225/
 
 ## Q66225: Possible Cause of L2029: '&#95;&#95;aDBswpchk': Unresolved External
 
+{% raw %}
+
 	Article: Q66225
 	Product(s): See article
 	Version(s): 6.00
@@ -22,3 +24,5 @@ permalink: /kb/066/Q66225/
 	the sample program TEXT.C from the on-line help.
 	
 	   cl /Lp text.c /link grtextp.lib
+
+{% endraw %}

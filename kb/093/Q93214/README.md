@@ -6,6 +6,8 @@ permalink: /kb/093/Q93214/
 
 ## Q93214: Name Property Cannot Be Set When Using Implicit Property
 
+{% raw %}
+
 	Article: Q93214
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0
@@ -114,3 +116,5 @@ permalink: /kb/093/Q93214/
 	
 	=============================================================================
 	
+
+{% endraw %}

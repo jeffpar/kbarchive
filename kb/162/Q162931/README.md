@@ -6,6 +6,8 @@ permalink: /kb/162/Q162931/
 
 ## Q162931: PRB: SourceSafe Commands not Available for RunCommand Method
 
+{% raw %}
+
 	Article: Q162931
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:97
@@ -69,3 +71,5 @@ permalink: /kb/162/Q162931/
 	
 	=============================================================================
 	
+
+{% endraw %}

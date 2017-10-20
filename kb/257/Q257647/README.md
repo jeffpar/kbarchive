@@ -6,6 +6,8 @@ permalink: /kb/257/Q257647/
 
 ## Q257647: Memory Leak in the Rasapi32 API
 
+{% raw %}
+
 	Article: Q257647
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP6a
@@ -78,3 +80,5 @@ permalink: /kb/257/Q257647/
 	
 	=============================================================================
 	
+
+{% endraw %}

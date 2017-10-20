@@ -6,6 +6,8 @@ permalink: /kb/139/Q139192/
 
 ## Q139192: Julia Child: Only Title and Page Number Print
 
+{% raw %}
+
 	Article: Q139192
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/139/Q139192/
 	
 	=============================================================================
 	
+
+{% endraw %}

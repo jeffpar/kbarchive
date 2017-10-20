@@ -6,6 +6,8 @@ permalink: /kb/125/Q125609/
 
 ## Q125609: Asimov: Installing Dell S3 Version 1.32 Driver
 
+{% raw %}
+
 	Article: Q125609
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -103,3 +105,5 @@ permalink: /kb/125/Q125609/
 	
 	=============================================================================
 	
+
+{% endraw %}

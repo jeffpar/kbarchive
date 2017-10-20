@@ -6,6 +6,8 @@ permalink: /kb/044/Q44410/
 
 ## Q44410: QB.EXE &quot;Not Watchable&quot; Error in SUB for SHARED Watch Variable
 
+{% raw %}
+
 	Article: Q44410
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -25,3 +27,5 @@ permalink: /kb/044/Q44410/
 	This information applies to the QB.EXE environment in QuickBASIC
 	Versions 4.00, 4.00b, and 4.50, and to the QBX.EXE environment of
 	Microsoft BASIC PDS Version 7.00.
+
+{% endraw %}

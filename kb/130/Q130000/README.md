@@ -6,6 +6,8 @@ permalink: /kb/130/Q130000/
 
 ## Q130000: Application Events 2000 &amp; 3001 Appear While Monitoring SFM
 
+{% raw %}
+
 	Article: Q130000
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.5,3.51,4.0,4.5
@@ -82,3 +84,5 @@ permalink: /kb/130/Q130000/
 	
 	=============================================================================
 	
+
+{% endraw %}

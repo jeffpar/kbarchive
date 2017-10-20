@@ -6,6 +6,8 @@ permalink: /kb/268/Q268588/
 
 ## Q268588: Groups Exported to Netscape from MMS Are Not Searchable
 
+{% raw %}
+
 	Article: Q268588
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,2.2
@@ -66,3 +68,5 @@ permalink: /kb/268/Q268588/
 	
 	=============================================================================
 	
+
+{% endraw %}

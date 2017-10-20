@@ -6,6 +6,8 @@ permalink: /kb/080/Q80570/
 
 ## Q80570: Switching from DR-DOS 6.0 to MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q80570
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a
@@ -95,3 +97,5 @@ permalink: /kb/080/Q80570/
 	
 	=============================================================================
 	
+
+{% endraw %}

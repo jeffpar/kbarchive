@@ -6,6 +6,8 @@ permalink: /kb/116/Q116395/
 
 ## Q116395: MS-DOS 6.22 NETWORKS.TXT File
 
+{% raw %}
+
 	Article: Q116395
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -596,3 +598,5 @@ permalink: /kb/116/Q116395/
 	
 	=============================================================================
 	
+
+{% endraw %}

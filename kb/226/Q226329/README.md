@@ -6,6 +6,8 @@ permalink: /kb/226/Q226329/
 
 ## Q226329: XFOR: Connector for Lotus Notes Access Violation in Lsmexout
 
+{% raw %}
+
 	Article: Q226329
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -78,3 +80,5 @@ permalink: /kb/226/Q226329/
 	
 	=============================================================================
 	
+
+{% endraw %}

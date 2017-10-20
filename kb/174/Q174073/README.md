@@ -6,6 +6,8 @@ permalink: /kb/174/Q174073/
 
 ## Q174073: Auditing User Authentication
 
+{% raw %}
+
 	Article: Q174073
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.5,3.51,4.0
@@ -159,3 +161,5 @@ permalink: /kb/174/Q174073/
 	
 	=============================================================================
 	
+
+{% endraw %}

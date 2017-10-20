@@ -6,6 +6,8 @@ permalink: /kb/115/Q115167/
 
 ## Q115167: PC Win: Exporting Folders from Windows Doesn't Check for Space
 
+{% raw %}
+
 	Article: Q115167
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -63,3 +65,5 @@ permalink: /kb/115/Q115167/
 	
 	=============================================================================
 	
+
+{% endraw %}

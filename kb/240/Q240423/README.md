@@ -6,6 +6,8 @@ permalink: /kb/240/Q240423/
 
 ## Q240423: RPC Client Does Not Respond After SAP Name Resolution
 
+{% raw %}
+
 	Article: Q240423
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -101,3 +103,5 @@ permalink: /kb/240/Q240423/
 	
 	=============================================================================
 	
+
+{% endraw %}

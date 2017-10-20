@@ -6,6 +6,8 @@ permalink: /kb/132/Q132845/
 
 ## Q132845: DynaComm Elite 3.51 GP Faults Connecting to Novell SAA Gateway
 
+{% raw %}
+
 	Article: Q132845
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/132/Q132845/
 	
 	=============================================================================
 	
+
+{% endraw %}

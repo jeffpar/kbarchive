@@ -6,6 +6,8 @@ permalink: /kb/125/Q125964/
 
 ## Q125964: Visual C++ Needs Updated Linker for Windows NT 3.5
 
+{% raw %}
+
 	Article: Q125964
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -45,3 +47,5 @@ permalink: /kb/125/Q125964/
 	
 	=============================================================================
 	
+
+{% endraw %}

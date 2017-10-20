@@ -6,6 +6,8 @@ permalink: /kb/178/Q178275/
 
 ## Q178275: PRB: Unattended Installation Using AGP Video Cards
 
+{% raw %}
+
 	Article: Q178275
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -105,3 +107,5 @@ permalink: /kb/178/Q178275/
 	
 	=============================================================================
 	
+
+{% endraw %}

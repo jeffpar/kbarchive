@@ -6,6 +6,8 @@ permalink: /kb/195/Q195293/
 
 ## Q195293: BUG: Code Profiler Add-In Gives Errors With Project Using ADO
 
+{% raw %}
+
 	Article: Q195293
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -64,3 +66,5 @@ permalink: /kb/195/Q195293/
 	
 	=============================================================================
 	
+
+{% endraw %}

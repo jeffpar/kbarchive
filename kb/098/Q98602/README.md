@@ -6,6 +6,8 @@ permalink: /kb/098/Q98602/
 
 ## Q98602: INFO: Adding a CObList Object to Another CObList
 
+{% raw %}
+
 	Article: Q98602
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -63,3 +65,5 @@ permalink: /kb/098/Q98602/
 	
 	=============================================================================
 	
+
+{% endraw %}

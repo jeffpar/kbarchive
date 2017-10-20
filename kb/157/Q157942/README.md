@@ -6,6 +6,8 @@ permalink: /kb/157/Q157942/
 
 ## Q157942: INFO: STL Sample for the sqrt and pow Functions
 
+{% raw %}
+
 	Article: Q157942
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -217,3 +219,5 @@ permalink: /kb/157/Q157942/
 	
 	=============================================================================
 	
+
+{% endraw %}

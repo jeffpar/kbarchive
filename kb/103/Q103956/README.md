@@ -6,6 +6,8 @@ permalink: /kb/103/Q103956/
 
 ## Q103956: How ScanDisk Fixes Bad Sectors
 
+{% raw %}
+
 	Article: Q103956
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -56,3 +58,5 @@ permalink: /kb/103/Q103956/
 	
 	=============================================================================
 	
+
+{% endraw %}

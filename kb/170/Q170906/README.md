@@ -6,6 +6,8 @@ permalink: /kb/170/Q170906/
 
 ## Q170906: WD97: Widow/Orphan Setting Not Preserved Saving As Word 6.0/95
 
+{% raw %}
+
 	Article: Q170906
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -118,3 +120,5 @@ permalink: /kb/170/Q170906/
 	
 	=============================================================================
 	
+
+{% endraw %}

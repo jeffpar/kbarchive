@@ -6,6 +6,8 @@ permalink: /kb/049/Q49313/
 
 ## Q49313: Files, Environment Inaccessible Only While Running under CVP
 
+{% raw %}
+
 	Article: Q49313
 	Product(s): See article
 	Version(s): 2.20
@@ -124,3 +126,5 @@ permalink: /kb/049/Q49313/
 	            fclose (dfile) ;
 	        }
 	    }
+
+{% endraw %}

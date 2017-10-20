@@ -6,6 +6,8 @@ permalink: /kb/175/Q175739/
 
 ## Q175739: XCON: Failure Sending to Mailboxes in Nested Distribution Lists
 
+{% raw %}
+
 	Article: Q175739
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/175/Q175739/
 	
 	=============================================================================
 	
+
+{% endraw %}

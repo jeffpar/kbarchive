@@ -6,6 +6,8 @@ permalink: /kb/128/Q128960/
 
 ## Q128960: Disk Defragmenter Err Msg: Error Defragmenting Drive C
 
+{% raw %}
+
 	Article: Q128960
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/128/Q128960/
 	
 	=============================================================================
 	
+
+{% endraw %}

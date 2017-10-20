@@ -6,6 +6,8 @@ permalink: /kb/156/Q156485/
 
 ## Q156485: WD97: Form Field Command No Longer on the Insert Menu
 
+{% raw %}
+
 	Article: Q156485
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -59,3 +61,5 @@ permalink: /kb/156/Q156485/
 	
 	=============================================================================
 	
+
+{% endraw %}

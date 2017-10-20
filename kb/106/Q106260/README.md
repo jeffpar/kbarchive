@@ -6,6 +6,8 @@ permalink: /kb/106/Q106260/
 
 ## Q106260: PC WSPlus: Adding Sharp Wizard Options
 
+{% raw %}
+
 	Article: Q106260
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0a
@@ -94,3 +96,5 @@ permalink: /kb/106/Q106260/
 	
 	=============================================================================
 	
+
+{% endraw %}

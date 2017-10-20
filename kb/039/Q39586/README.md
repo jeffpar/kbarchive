@@ -6,6 +6,8 @@ permalink: /kb/039/Q39586/
 
 ## Q39586: Forcing FIXSHIFT.COM to Install Using the /I Switch
 
+{% raw %}
+
 	Article: Q39586
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -33,3 +35,5 @@ permalink: /kb/039/Q39586/
 	run FIXSHIFT/I to successfully use SHIFT+INSERT to copy text in the
 	QB.EXE editor. Microsoft has not tested or confirmed this information
 	for the PC Craft Turbo computer -- the information is provided as is.
+
+{% endraw %}

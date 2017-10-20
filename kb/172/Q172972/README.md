@@ -6,6 +6,8 @@ permalink: /kb/172/Q172972/
 
 ## Q172972: XCLN: No Roving or Roaming User Support For Macintosh
 
+{% raw %}
+
 	Article: Q172972
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0,8.1,8.2; WINDOWS:4.0,5.0
@@ -57,3 +59,5 @@ permalink: /kb/172/Q172972/
 	
 	=============================================================================
 	
+
+{% endraw %}

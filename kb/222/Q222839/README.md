@@ -6,6 +6,8 @@ permalink: /kb/222/Q222839/
 
 ## Q222839: XFOR: Migration Wizard Crashes While Importing Data from a GW PO
 
+{% raw %}
+
 	Article: Q222839
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -73,3 +75,5 @@ permalink: /kb/222/Q222839/
 	
 	=============================================================================
 	
+
+{% endraw %}

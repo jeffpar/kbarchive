@@ -6,6 +6,8 @@ permalink: /kb/097/Q97689/
 
 ## Q97689: MS-DOS-Based Program Doesn't Run After Installing DoubleSpace
 
+{% raw %}
+
 	Article: Q97689
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -75,3 +77,5 @@ permalink: /kb/097/Q97689/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/318/Q318420/
 
 ## Q318420: Computer Hangs with a &quot;Stop 0x0000000A&quot; Error in Netbt.sys
 
+{% raw %}
+
 	Article: Q318420
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -84,3 +86,5 @@ permalink: /kb/318/Q318420/
 	
 	=============================================================================
 	
+
+{% endraw %}

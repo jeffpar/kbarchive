@@ -6,6 +6,8 @@ permalink: /kb/081/Q81817/
 
 ## Q81817: SuperStor Changes RAMDrive Letter
 
+{% raw %}
+
 	Article: Q81817
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a
@@ -66,3 +68,5 @@ permalink: /kb/081/Q81817/
 	
 	=============================================================================
 	
+
+{% endraw %}

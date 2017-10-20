@@ -6,6 +6,8 @@ permalink: /kb/157/Q157913/
 
 ## Q157913: Services Set to Interact With Desktop May Fail to Start
 
+{% raw %}
+
 	Article: Q157913
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -100,3 +102,5 @@ permalink: /kb/157/Q157913/
 	
 	=============================================================================
 	
+
+{% endraw %}

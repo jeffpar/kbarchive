@@ -6,6 +6,8 @@ permalink: /kb/132/Q132228/
 
 ## Q132228: Why Combobox Style Properties Have Discontinous Values
 
+{% raw %}
+
 	Article: Q132228
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/132/Q132228/
 	
 	=============================================================================
 	
+
+{% endraw %}

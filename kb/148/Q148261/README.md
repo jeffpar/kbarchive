@@ -6,6 +6,8 @@ permalink: /kb/148/Q148261/
 
 ## Q148261: Printing From Macintosh Clients Causes Events 2011 and 2019
 
+{% raw %}
+
 	Article: Q148261
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -57,3 +59,5 @@ permalink: /kb/148/Q148261/
 	
 	=============================================================================
 	
+
+{% endraw %}

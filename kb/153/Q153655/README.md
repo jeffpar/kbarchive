@@ -6,6 +6,8 @@ permalink: /kb/153/Q153655/
 
 ## Q153655: XGEN: README.TXT: Microsoft Exchange 4.0 U.S. Service Pack 2
 
+{% raw %}
+
 	Article: Q153655
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -869,3 +871,5 @@ permalink: /kb/153/Q153655/
 	
 	=============================================================================
 	
+
+{% endraw %}

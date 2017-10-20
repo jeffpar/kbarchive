@@ -6,6 +6,8 @@ permalink: /kb/091/Q91037/
 
 ## Q91037: PC WFW: Unable to Address External Mail Users
 
+{% raw %}
+
 	Article: Q91037
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/091/Q91037/
 	
 	=============================================================================
 	
+
+{% endraw %}

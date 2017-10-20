@@ -6,6 +6,8 @@ permalink: /kb/146/Q146424/
 
 ## Q146424: PRB: &quot;Entry point GetFreeSystemResources not found&quot; Error
 
+{% raw %}
+
 	Article: Q146424
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -124,3 +126,5 @@ permalink: /kb/146/Q146424/
 	
 	=============================================================================
 	
+
+{% endraw %}

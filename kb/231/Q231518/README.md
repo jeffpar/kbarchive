@@ -6,6 +6,8 @@ permalink: /kb/231/Q231518/
 
 ## Q231518: MP2000: Empty Quotation Marks in Error Message When Linking Data
 
+{% raw %}
+
 	Article: Q231518
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/231/Q231518/
 	
 	=============================================================================
 	
+
+{% endraw %}

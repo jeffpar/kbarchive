@@ -6,6 +6,8 @@ permalink: /kb/195/Q195666/
 
 ## Q195666: XCLN: Macintosh Outlook Ends Unexpectedly with Type 2 Error
 
+{% raw %}
+
 	Article: Q195666
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0
@@ -98,3 +100,5 @@ permalink: /kb/195/Q195666/
 	
 	=============================================================================
 	
+
+{% endraw %}

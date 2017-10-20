@@ -6,6 +6,8 @@ permalink: /kb/192/Q192547/
 
 ## Q192547: WINSADMIN Writes Invalid SP Time to Registry
 
+{% raw %}
+
 	Article: Q192547
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -91,3 +93,5 @@ permalink: /kb/192/Q192547/
 	
 	=============================================================================
 	
+
+{% endraw %}

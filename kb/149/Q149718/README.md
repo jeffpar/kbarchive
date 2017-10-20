@@ -6,6 +6,8 @@ permalink: /kb/149/Q149718/
 
 ## Q149718: How to Change SPIDs in Windows 95
 
+{% raw %}
+
 	Article: Q149718
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -69,3 +71,5 @@ permalink: /kb/149/Q149718/
 	
 	=============================================================================
 	
+
+{% endraw %}

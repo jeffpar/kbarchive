@@ -6,6 +6,8 @@ permalink: /kb/115/Q115085/
 
 ## Q115085: Win32s Files that Must Ship with Win32 Applications
 
+{% raw %}
+
 	Article: Q115085
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0
@@ -95,3 +97,5 @@ permalink: /kb/115/Q115085/
 	
 	=============================================================================
 	
+
+{% endraw %}

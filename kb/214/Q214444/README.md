@@ -6,6 +6,8 @@ permalink: /kb/214/Q214444/
 
 ## Q214444: Delay in Displaying NetWare Server in Network Neighborhood
 
+{% raw %}
+
 	Article: Q214444
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -50,3 +52,5 @@ permalink: /kb/214/Q214444/
 	
 	=============================================================================
 	
+
+{% endraw %}

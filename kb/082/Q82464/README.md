@@ -6,6 +6,8 @@ permalink: /kb/082/Q82464/
 
 ## Q82464: Control Panel Limit of 17 Installed Printer Drivers
 
+{% raw %}
+
 	Article: Q82464
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/082/Q82464/
 	
 	=============================================================================
 	
+
+{% endraw %}

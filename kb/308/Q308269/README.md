@@ -6,6 +6,8 @@ permalink: /kb/308/Q308269/
 
 ## Q308269: SMS: List of Bugs Fixed in Systems Management Server 2.0 SP4
 
+{% raw %}
+
 	Article: Q308269
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -278,3 +280,5 @@ permalink: /kb/308/Q308269/
 	
 	=============================================================================
 	
+
+{% endraw %}

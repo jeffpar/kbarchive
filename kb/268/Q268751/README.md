@@ -6,6 +6,8 @@ permalink: /kb/268/Q268751/
 
 ## Q268751: HOWTO: Create a Common Icon for Accessing Terminal Server
 
+{% raw %}
+
 	Article: Q268751
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -99,3 +101,5 @@ permalink: /kb/268/Q268751/
 	
 	=============================================================================
 	
+
+{% endraw %}

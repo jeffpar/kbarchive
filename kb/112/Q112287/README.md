@@ -6,6 +6,8 @@ permalink: /kb/112/Q112287/
 
 ## Q112287: PC WFW: Err Msg: This PostOffice Cannot Be Updated...
 
+{% raw %}
+
 	Article: Q112287
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0,3.2
@@ -74,3 +76,5 @@ permalink: /kb/112/Q112287/
 	
 	=============================================================================
 	
+
+{% endraw %}

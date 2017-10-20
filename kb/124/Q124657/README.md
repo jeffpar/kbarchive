@@ -6,6 +6,8 @@ permalink: /kb/124/Q124657/
 
 ## Q124657: INF: Text Driver Needs Directory Before Define Format Enabled
 
+{% raw %}
+
 	Article: Q124657
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -70,3 +72,5 @@ permalink: /kb/124/Q124657/
 	
 	=============================================================================
 	
+
+{% endraw %}

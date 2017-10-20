@@ -6,6 +6,8 @@ permalink: /kb/128/Q128588/
 
 ## Q128588: BUG: &quot;?&quot; Command with Function &quot;V1&quot; May Not Display Correctly
 
+{% raw %}
+
 	Article: Q128588
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,5.0a,6.0
@@ -82,3 +84,5 @@ permalink: /kb/128/Q128588/
 	
 	=============================================================================
 	
+
+{% endraw %}

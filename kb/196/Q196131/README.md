@@ -6,6 +6,8 @@ permalink: /kb/196/Q196131/
 
 ## Q196131: BUG: Dynamic Private UserControl Extender Events Do Not Show
 
+{% raw %}
+
 	Article: Q196131
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -142,3 +144,5 @@ permalink: /kb/196/Q196131/
 	
 	=============================================================================
 	
+
+{% endraw %}

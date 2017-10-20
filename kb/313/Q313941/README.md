@@ -6,6 +6,8 @@ permalink: /kb/313/Q313941/
 
 ## Q313941: MechWarrior 4: Err Msg: Access Violation in MW4 0x72446 Mw4.exe
 
+{% raw %}
+
 	Article: Q313941
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -92,3 +94,5 @@ permalink: /kb/313/Q313941/
 	
 	=============================================================================
 	
+
+{% endraw %}

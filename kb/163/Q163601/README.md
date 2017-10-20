@@ -6,6 +6,8 @@ permalink: /kb/163/Q163601/
 
 ## Q163601: WD97: More Cool Stuff Template Refers to Personal Web Server
 
+{% raw %}
+
 	Article: Q163601
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -46,3 +48,5 @@ permalink: /kb/163/Q163601/
 	
 	=============================================================================
 	
+
+{% endraw %}

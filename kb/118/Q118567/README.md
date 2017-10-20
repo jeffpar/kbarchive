@@ -6,6 +6,8 @@ permalink: /kb/118/Q118567/
 
 ## Q118567: X400: Leave TPDU At Optimal (Default) Size of 2048 Bytes
 
+{% raw %}
+
 	Article: Q118567
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -45,3 +47,5 @@ permalink: /kb/118/Q118567/
 	
 	=============================================================================
 	
+
+{% endraw %}

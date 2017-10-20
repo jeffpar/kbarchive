@@ -6,6 +6,8 @@ permalink: /kb/035/Q35964/
 
 ## Q35964: Passing BASIC Dynamic Arrays of Fixed Strings to MASM 5.x
 
+{% raw %}
+
 	Article: Q35964
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -208,3 +210,5 @@ permalink: /kb/035/Q35964/
 	   String 21
 	   String 22
 	   String 23
+
+{% endraw %}

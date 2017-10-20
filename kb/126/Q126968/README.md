@@ -6,6 +6,8 @@ permalink: /kb/126/Q126968/
 
 ## Q126968: Microsoft Systems Journal: April 1995
 
+{% raw %}
+
 	Article: Q126968
 	Product(s): Miscrosoft Systems Journal
 	Version(s): for April 1995
@@ -102,3 +104,5 @@ permalink: /kb/126/Q126968/
 	
 	=============================================================================
 	
+
+{% endraw %}

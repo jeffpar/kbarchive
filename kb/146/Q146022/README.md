@@ -6,6 +6,8 @@ permalink: /kb/146/Q146022/
 
 ## Q146022: HOWTO: Set Up the RichTextBox Control for WYSIWYG Printing
 
+{% raw %}
+
 	Article: Q146022
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -315,3 +317,5 @@ permalink: /kb/146/Q146022/
 	
 	=============================================================================
 	
+
+{% endraw %}

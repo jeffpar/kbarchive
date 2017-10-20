@@ -6,6 +6,8 @@ permalink: /kb/258/Q258634/
 
 ## Q258634: XWEB: Exchange Server 5.5 Post-SP3 CDO Fixes Available
 
+{% raw %}
+
 	Article: Q258634
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -93,3 +95,5 @@ permalink: /kb/258/Q258634/
 	
 	=============================================================================
 	
+
+{% endraw %}

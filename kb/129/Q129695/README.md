@@ -6,6 +6,8 @@ permalink: /kb/129/Q129695/
 
 ## Q129695: FTP Fails with File Names Larger than 72 Characters
 
+{% raw %}
+
 	Article: Q129695
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -50,3 +52,5 @@ permalink: /kb/129/Q129695/
 	
 	=============================================================================
 	
+
+{% endraw %}

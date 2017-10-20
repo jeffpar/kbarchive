@@ -6,6 +6,8 @@ permalink: /kb/128/Q128025/
 
 ## Q128025: Oracle7 for Win32s Hangs When Initializing Database Manager
 
+{% raw %}
+
 	Article: Q128025
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.0,1.1,1.15,1.2,1.25,2.0
@@ -64,3 +66,5 @@ permalink: /kb/128/Q128025/
 	
 	=============================================================================
 	
+
+{% endraw %}

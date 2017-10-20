@@ -6,6 +6,8 @@ permalink: /kb/125/Q125318/
 
 ## Q125318: Default Data Type RAW (FF Auto) Does Not Work Properly
 
+{% raw %}
+
 	Article: Q125318
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -59,3 +61,5 @@ permalink: /kb/125/Q125318/
 	
 	=============================================================================
 	
+
+{% endraw %}

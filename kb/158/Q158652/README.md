@@ -6,6 +6,8 @@ permalink: /kb/158/Q158652/
 
 ## Q158652: Mac Encarta 97: Anthems Do Not Play with Low Memory
 
+{% raw %}
+
 	Article: Q158652
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -72,3 +74,5 @@ permalink: /kb/158/Q158652/
 	
 	=============================================================================
 	
+
+{% endraw %}

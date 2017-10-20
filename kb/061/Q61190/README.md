@@ -6,6 +6,8 @@ permalink: /kb/061/Q61190/
 
 ## Q61190: C 6.00 README: Arithmetic Operations on Signed Short Values
 
+{% raw %}
+
 	Article: Q61190
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -27,3 +29,5 @@ permalink: /kb/061/Q61190/
 	This causes overflow in some instances of constant arithmetic, most
 	noticeably, multiplication. For example, when interpreted as a signed
 	short, 48*1000 results in a value of -15232 rather than 48000.
+
+{% endraw %}

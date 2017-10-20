@@ -6,6 +6,8 @@ permalink: /kb/092/Q92996/
 
 ## Q92996: Local Printer Causes 1st Network Print Job to Disappear
 
+{% raw %}
+
 	Article: Q92996
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/092/Q92996/
 	
 	=============================================================================
 	
+
+{% endraw %}

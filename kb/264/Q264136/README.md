@@ -6,6 +6,8 @@ permalink: /kb/264/Q264136/
 
 ## Q264136: MCM2: &quot;Fatal Exception 0D&quot; Error Message When You Start Program
 
+{% raw %}
+
 	Article: Q264136
 	Product(s): Microsoft Home Games
 	Version(s): 2.0; Win2000:98
@@ -106,3 +108,5 @@ permalink: /kb/264/Q264136/
 	
 	=============================================================================
 	
+
+{% endraw %}

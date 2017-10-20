@@ -6,6 +6,8 @@ permalink: /kb/118/Q118928/
 
 ## Q118928: Mac Srv: Mail Server Disk Caching and Optimizing Performance
 
+{% raw %}
+
 	Article: Q118928
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0
@@ -45,3 +47,5 @@ permalink: /kb/118/Q118928/
 	
 	=============================================================================
 	
+
+{% endraw %}

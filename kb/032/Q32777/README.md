@@ -6,6 +6,8 @@ permalink: /kb/032/Q32777/
 
 ## Q32777: Language Names Used as PUBLIC Symbols Are Not Allowed
 
+{% raw %}
+
 	Article: Q32777
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -77,3 +79,5 @@ permalink: /kb/032/Q32777/
 	
 	=============================================================================
 	
+
+{% endraw %}

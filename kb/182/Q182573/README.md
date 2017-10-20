@@ -6,6 +6,8 @@ permalink: /kb/182/Q182573/
 
 ## Q182573: BUG: Illegal Operation Err Using Richtext Control with Find
 
+{% raw %}
+
 	Article: Q182573
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -101,3 +103,5 @@ permalink: /kb/182/Q182573/
 	
 	=============================================================================
 	
+
+{% endraw %}

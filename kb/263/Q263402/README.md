@@ -6,6 +6,8 @@ permalink: /kb/263/Q263402/
 
 ## Q263402: SMS: Msiexec.exe Cannot Process an MSI File
 
+{% raw %}
+
 	Article: Q263402
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -79,3 +81,5 @@ permalink: /kb/263/Q263402/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179741/
 
 ## Q179741: STOP 0x0A Due to Duplicate Free in Afd.sys
 
+{% raw %}
+
 	Article: Q179741
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -87,3 +89,5 @@ permalink: /kb/179/Q179741/
 	
 	=============================================================================
 	
+
+{% endraw %}

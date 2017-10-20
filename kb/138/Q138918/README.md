@@ -6,6 +6,8 @@ permalink: /kb/138/Q138918/
 
 ## Q138918: How to Make a Modal List Box on a Form
 
+{% raw %}
+
 	Article: Q138918
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -100,3 +102,5 @@ permalink: /kb/138/Q138918/
 	
 	=============================================================================
 	
+
+{% endraw %}

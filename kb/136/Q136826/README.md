@@ -6,6 +6,8 @@ permalink: /kb/136/Q136826/
 
 ## Q136826: FIX: Resuming from a Suspended Form Causes a GP Fault
 
+{% raw %}
+
 	Article: Q136826
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -82,3 +84,5 @@ permalink: /kb/136/Q136826/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/062/Q62812/
 
 ## Q62812: Must Start Program to Use Set Next Statement from Debug Menu
 
+{% raw %}
+
 	Article: Q62812
 	Product(s): See article
 	Version(s): 4.50
@@ -40,3 +42,5 @@ permalink: /kb/062/Q62812/
 	choose Set Next Statement from the Debug menu. That line will be
 	highlighted, showing that it will be the next line to execute when you
 	continue running the program.
+
+{% endraw %}

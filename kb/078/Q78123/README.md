@@ -6,6 +6,8 @@ permalink: /kb/078/Q78123/
 
 ## Q78123: HP PaintJet with MS-DOS GRAPHICS.COM and GRAPHICS.PRO
 
+{% raw %}
+
 	Article: Q78123
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -72,3 +74,5 @@ permalink: /kb/078/Q78123/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124484/
 
 ## Q124484: Error 33: DOSRead and DOSWrite APIs from OS/2 Application
 
+{% raw %}
+
 	Article: Q124484
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/124/Q124484/
 	
 	=============================================================================
 	
+
+{% endraw %}

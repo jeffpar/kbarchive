@@ -6,6 +6,8 @@ permalink: /kb/161/Q161989/
 
 ## Q161989: PPT: Sample VB Code to Retrieve Summary Properties
 
+{% raw %}
+
 	Article: Q161989
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -129,3 +131,5 @@ permalink: /kb/161/Q161989/
 	
 	=============================================================================
 	
+
+{% endraw %}

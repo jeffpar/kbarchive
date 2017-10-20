@@ -6,6 +6,8 @@ permalink: /kb/168/Q168762/
 
 ## Q168762: HOWTO: Fix Index Corruption at Run Time with Visual FoxPro
 
+{% raw %}
+
 	Article: Q168762
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/168/Q168762/
 	
 	=============================================================================
 	
+
+{% endraw %}

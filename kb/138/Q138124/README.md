@@ -6,6 +6,8 @@ permalink: /kb/138/Q138124/
 
 ## Q138124: DHCPADMN.EXE Reports Incorrect Server Configuration
 
+{% raw %}
+
 	Article: Q138124
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -101,3 +103,5 @@ permalink: /kb/138/Q138124/
 	
 	=============================================================================
 	
+
+{% endraw %}

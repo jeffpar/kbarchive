@@ -6,6 +6,8 @@ permalink: /kb/080/Q80843/
 
 ## Q80843: INFO: Possible Causes of Dialog Box Creation Failure
 
+{% raw %}
+
 	Article: Q80843
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -277,3 +279,5 @@ permalink: /kb/080/Q80843/
 	
 	=============================================================================
 	
+
+{% endraw %}

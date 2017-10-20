@@ -6,6 +6,8 @@ permalink: /kb/157/Q157865/
 
 ## Q157865: Hellbender Requires 16 MB of Virtual Memory
 
+{% raw %}
+
 	Article: Q157865
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -85,3 +87,5 @@ permalink: /kb/157/Q157865/
 	
 	=============================================================================
 	
+
+{% endraw %}

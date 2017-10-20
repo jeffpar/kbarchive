@@ -6,6 +6,8 @@ permalink: /kb/151/Q151636/
 
 ## Q151636: BUG: Insert Object of an Imager File Causes Error or Hangs Mac
 
+{% raw %}
+
 	Article: Q151636
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -108,3 +110,5 @@ permalink: /kb/151/Q151636/
 	
 	=============================================================================
 	
+
+{% endraw %}

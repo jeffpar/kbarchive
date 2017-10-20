@@ -6,6 +6,8 @@ permalink: /kb/171/Q171477/
 
 ## Q171477: FIX: Format Menu Options Can Crash Visual Basic 5.0
 
+{% raw %}
+
 	Article: Q171477
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -76,3 +78,5 @@ permalink: /kb/171/Q171477/
 	
 	=============================================================================
 	
+
+{% endraw %}

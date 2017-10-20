@@ -6,6 +6,8 @@ permalink: /kb/272/Q272113/
 
 ## Q272113: XADM: Store Causes AV When Processing Outbound Internet Mail
 
+{% raw %}
+
 	Article: Q272113
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -118,3 +120,5 @@ permalink: /kb/272/Q272113/
 	
 	=============================================================================
 	
+
+{% endraw %}

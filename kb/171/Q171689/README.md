@@ -6,6 +6,8 @@ permalink: /kb/171/Q171689/
 
 ## Q171689: WD97: Mail Merge Main and Data Documents Not Saved in Background
 
+{% raw %}
+
 	Article: Q171689
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -71,3 +73,5 @@ permalink: /kb/171/Q171689/
 	
 	=============================================================================
 	
+
+{% endraw %}

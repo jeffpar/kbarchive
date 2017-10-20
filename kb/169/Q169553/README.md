@@ -6,6 +6,8 @@ permalink: /kb/169/Q169553/
 
 ## Q169553: Allowed Network Protocols Section Missing in Dial-Up Networking
 
+{% raw %}
+
 	Article: Q169553
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -70,3 +72,5 @@ permalink: /kb/169/Q169553/
 	
 	=============================================================================
 	
+
+{% endraw %}

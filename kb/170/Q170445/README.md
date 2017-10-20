@@ -6,6 +6,8 @@ permalink: /kb/170/Q170445/
 
 ## Q170445: XADM: Exchange Server Reboots Frequently
 
+{% raw %}
+
 	Article: Q170445
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -75,3 +77,5 @@ permalink: /kb/170/Q170445/
 	
 	=============================================================================
 	
+
+{% endraw %}

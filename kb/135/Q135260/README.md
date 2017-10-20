@@ -6,6 +6,8 @@ permalink: /kb/135/Q135260/
 
 ## Q135260: Location of the Ppreadme.txt File in PowerPoint 95
 
+{% raw %}
+
 	Article: Q135260
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0; Win95:
@@ -92,3 +94,5 @@ permalink: /kb/135/Q135260/
 	
 	=============================================================================
 	
+
+{% endraw %}

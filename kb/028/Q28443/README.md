@@ -6,6 +6,8 @@ permalink: /kb/028/Q28443/
 
 ## Q28443: Example of Calling OS/2 Function DosRmDir
 
+{% raw %}
+
 	Article: Q28443
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -34,3 +36,5 @@ permalink: /kb/028/Q28443/
 	      print "Directory ";dr$;" was REMOVED"
 	   END IF
 	   END
+
+{% endraw %}

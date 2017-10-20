@@ -6,6 +6,8 @@ permalink: /kb/150/Q150220/
 
 ## Q150220: FIX: Invalid Page Fault or GPF Results When Making an EXE File
 
+{% raw %}
+
 	Article: Q150220
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0;
@@ -79,3 +81,5 @@ permalink: /kb/150/Q150220/
 	
 	=============================================================================
 	
+
+{% endraw %}

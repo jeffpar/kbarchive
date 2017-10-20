@@ -6,6 +6,8 @@ permalink: /kb/248/Q248995/
 
 ## Q248995: SMS: Support for Systems Management Server Queries
 
+{% raw %}
+
 	Article: Q248995
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -59,3 +61,5 @@ permalink: /kb/248/Q248995/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166605/
 
 ## Q166605: XFOR: Reply Message to Internet Will Have Embedded Text Ticked
 
+{% raw %}
+
 	Article: Q166605
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -72,3 +74,5 @@ permalink: /kb/166/Q166605/
 	
 	=============================================================================
 	
+
+{% endraw %}

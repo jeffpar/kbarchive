@@ -6,6 +6,8 @@ permalink: /kb/162/Q162490/
 
 ## Q162490: WD97: How to Access Sample Macros for Word 97
 
+{% raw %}
+
 	Article: Q162490
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -223,3 +225,5 @@ permalink: /kb/162/Q162490/
 	
 	=============================================================================
 	
+
+{% endraw %}

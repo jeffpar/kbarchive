@@ -6,6 +6,8 @@ permalink: /kb/045/Q45680/
 
 ## Q45680: Error C4096: &quot;Unkown Warning&quot; May Be Caused by C1.ERR Omission
 
+{% raw %}
+
 	Article: Q45680
 	Product(s): See article
 	Version(s): 2.01
@@ -38,3 +40,5 @@ permalink: /kb/045/Q45680/
 	
 	This ommission will be corrected in subsequent releases of the
 	QuickAssembler package.
+
+{% endraw %}

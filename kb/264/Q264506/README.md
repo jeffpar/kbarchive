@@ -6,6 +6,8 @@ permalink: /kb/264/Q264506/
 
 ## Q264506: Documentation Error in Install.doc File in Services for UNIX 2.0
 
+{% raw %}
+
 	Article: Q264506
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:
@@ -53,3 +55,5 @@ permalink: /kb/264/Q264506/
 	
 	=============================================================================
 	
+
+{% endraw %}

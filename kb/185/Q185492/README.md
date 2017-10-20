@@ -6,6 +6,8 @@ permalink: /kb/185/Q185492/
 
 ## Q185492: Golf 98/99: &quot;Invalid Page Fault&quot; Err Msg or Hang Starting Game
 
+{% raw %}
+
 	Article: Q185492
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -145,3 +147,5 @@ permalink: /kb/185/Q185492/
 	
 	=============================================================================
 	
+
+{% endraw %}

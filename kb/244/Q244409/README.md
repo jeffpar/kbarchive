@@ -6,6 +6,8 @@ permalink: /kb/244/Q244409/
 
 ## Q244409: Access Account Security on Distribution Points May Be Incorrect
 
+{% raw %}
+
 	Article: Q244409
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -160,3 +162,5 @@ permalink: /kb/244/Q244409/
 	
 	=============================================================================
 	
+
+{% endraw %}

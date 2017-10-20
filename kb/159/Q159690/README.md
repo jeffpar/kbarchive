@@ -6,6 +6,8 @@ permalink: /kb/159/Q159690/
 
 ## Q159690: PRB: Problem Adding Objects Created in VBA to SourceSafe
 
+{% raw %}
+
 	Article: Q159690
 	Product(s): Microsoft SourceSafe
 	Version(s): 97
@@ -118,3 +120,5 @@ permalink: /kb/159/Q159690/
 	
 	=============================================================================
 	
+
+{% endraw %}

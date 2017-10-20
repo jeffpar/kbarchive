@@ -6,6 +6,8 @@ permalink: /kb/064/Q64934/
 
 ## Q64934: An Alternative If ISAMCVT Fails on IBM BASIC 2.0 ISAM Database
 
+{% raw %}
+
 	Article: Q64934
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -200,3 +202,5 @@ permalink: /kb/064/Q64934/
 	      PRINT NewCust.Income
 	      MOVENEXT #2
 	LOOP
+
+{% endraw %}

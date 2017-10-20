@@ -6,6 +6,8 @@ permalink: /kb/264/Q264030/
 
 ## Q264030: ASP Returns &quot;Include File Not Found&quot; for Included Files on UNC
 
+{% raw %}
+
 	Article: Q264030
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -67,3 +69,5 @@ permalink: /kb/264/Q264030/
 	
 	=============================================================================
 	
+
+{% endraw %}

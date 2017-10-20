@@ -6,6 +6,8 @@ permalink: /kb/191/Q191624/
 
 ## Q191624: INFO: Do Visual FoxPro Datasources Work Under MTS?
 
+{% raw %}
+
 	Article: Q191624
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -76,3 +78,5 @@ permalink: /kb/191/Q191624/
 	
 	=============================================================================
 	
+
+{% endraw %}

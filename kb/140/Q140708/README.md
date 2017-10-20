@@ -6,6 +6,8 @@ permalink: /kb/140/Q140708/
 
 ## Q140708: Error Message: Cannot Display This Help File. Try Opening...
 
+{% raw %}
+
 	Article: Q140708
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/140/Q140708/
 	
 	=============================================================================
 	
+
+{% endraw %}

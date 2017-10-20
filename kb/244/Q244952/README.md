@@ -6,6 +6,8 @@ permalink: /kb/244/Q244952/
 
 ## Q244952: Definitions of Latitude and Longitude
 
+{% raw %}
+
 	Article: Q244952
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:; :
@@ -52,3 +54,5 @@ permalink: /kb/244/Q244952/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87222/
 
 ## Q87222: PROFS: DOS Errorlevel Messages
 
+{% raw %}
+
 	Article: Q87222
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -40,3 +42,5 @@ permalink: /kb/087/Q87222/
 	
 	=============================================================================
 	
+
+{% endraw %}

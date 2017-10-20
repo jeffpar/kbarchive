@@ -6,6 +6,8 @@ permalink: /kb/112/Q112183/
 
 ## Q112183: PRB: Copied QuickTime Movie Appears to Play in Fast Forward
 
+{% raw %}
+
 	Article: Q112183
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -124,3 +126,5 @@ permalink: /kb/112/Q112183/
 	
 	=============================================================================
 	
+
+{% endraw %}

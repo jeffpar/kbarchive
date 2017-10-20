@@ -6,6 +6,8 @@ permalink: /kb/142/Q142281/
 
 ## Q142281: How to Display Columns Other than Default in a Combo Box
 
+{% raw %}
+
 	Article: Q142281
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -76,3 +78,5 @@ permalink: /kb/142/Q142281/
 	
 	=============================================================================
 	
+
+{% endraw %}

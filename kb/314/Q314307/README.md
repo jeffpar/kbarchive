@@ -6,6 +6,8 @@ permalink: /kb/314/Q314307/
 
 ## Q314307: HTTP Compression Does Not Work if Extension Has Uppercase Chars
 
+{% raw %}
+
 	Article: Q314307
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -91,3 +93,5 @@ permalink: /kb/314/Q314307/
 	
 	=============================================================================
 	
+
+{% endraw %}

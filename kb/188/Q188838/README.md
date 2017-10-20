@@ -6,6 +6,8 @@ permalink: /kb/188/Q188838/
 
 ## Q188838: Task Manager CPU Usage Only Displays Eight Processors
 
+{% raw %}
+
 	Article: Q188838
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/188/Q188838/
 	
 	=============================================================================
 	
+
+{% endraw %}

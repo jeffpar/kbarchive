@@ -6,6 +6,8 @@ permalink: /kb/165/Q165346/
 
 ## Q165346: FP: Server Side Includes Pose Security Threat W/ Feedback Form
 
+{% raw %}
+
 	Article: Q165346
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.1,97
@@ -102,3 +104,5 @@ permalink: /kb/165/Q165346/
 	
 	=============================================================================
 	
+
+{% endraw %}

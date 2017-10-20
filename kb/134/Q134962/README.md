@@ -6,6 +6,8 @@ permalink: /kb/134/Q134962/
 
 ## Q134962: Performance Problems Using CSNW and GSNW &amp; Netflex Adapter
 
+{% raw %}
+
 	Article: Q134962
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/134/Q134962/
 	
 	=============================================================================
 	
+
+{% endraw %}

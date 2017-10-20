@@ -6,6 +6,8 @@ permalink: /kb/252/Q252413/
 
 ## Q252413: BUG: WinCE CDialogBar Does Not Forward Child Control Messages
 
+{% raw %}
+
 	Article: Q252413
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:6.0
@@ -158,3 +160,5 @@ permalink: /kb/252/Q252413/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189842/
 
 ## Q189842: XCLN: Client Folder Views May Prevent Any Items From Appearing
 
+{% raw %}
+
 	Article: Q189842
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0; WINDOWS:4.0,5.0,8.0; :8.0,8.01,8.02,8.03
@@ -60,3 +62,5 @@ permalink: /kb/189/Q189842/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216237/
 
 ## Q216237: Cluster Server Won't Start If Cluster Log Directory Not Created
 
+{% raw %}
+
 	Article: Q216237
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/216/Q216237/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152764/
 
 ## Q152764: Garbled Characters Appear in Windows NT Print Queue
 
+{% raw %}
+
 	Article: Q152764
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/152/Q152764/
 	
 	=============================================================================
 	
+
+{% endraw %}

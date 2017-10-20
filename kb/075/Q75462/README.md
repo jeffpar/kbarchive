@@ -6,6 +6,8 @@ permalink: /kb/075/Q75462/
 
 ## Q75462: Always Technologies Controller and Syquest Removable Media
 
+{% raw %}
+
 	Article: Q75462
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -48,3 +50,5 @@ permalink: /kb/075/Q75462/
 	
 	=============================================================================
 	
+
+{% endraw %}

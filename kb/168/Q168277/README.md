@@ -6,6 +6,8 @@ permalink: /kb/168/Q168277/
 
 ## Q168277: FIX: Access Violation Running Visual FoxPro on Windows NT 4.0
 
+{% raw %}
+
 	Article: Q168277
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0 5.0a
@@ -88,3 +90,5 @@ permalink: /kb/168/Q168277/
 	
 	=============================================================================
 	
+
+{% endraw %}

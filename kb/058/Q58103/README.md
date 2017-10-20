@@ -6,6 +6,8 @@ permalink: /kb/058/Q58103/
 
 ## Q58103: How to Convert Unsigned Integer from Another Language to BASIC
 
+{% raw %}
+
 	Article: Q58103
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -167,3 +169,5 @@ permalink: /kb/058/Q58103/
 	     PRINT USING "######.##"; seconds#
 	WEND
 	END
+
+{% endraw %}

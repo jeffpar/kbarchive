@@ -6,6 +6,8 @@ permalink: /kb/138/Q138923/
 
 ## Q138923: Partitions Displaying as Unknown in Disk Administrator
 
+{% raw %}
+
 	Article: Q138923
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -59,3 +61,5 @@ permalink: /kb/138/Q138923/
 	
 	=============================================================================
 	
+
+{% endraw %}

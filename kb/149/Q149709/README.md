@@ -6,6 +6,8 @@ permalink: /kb/149/Q149709/
 
 ## Q149709: PRB: Incorrect CListCtrl Painting During Label Editing
 
+{% raw %}
+
 	Article: Q149709
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.1,2.2,4.0,4.1
@@ -89,3 +91,5 @@ permalink: /kb/149/Q149709/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/114/Q114126/
 
 ## Q114126: PC DOS: Mail Does Not Release Memory After Notice 0
 
+{% raw %}
+
 	Article: Q114126
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1c,3.0,3.0b
@@ -54,3 +56,5 @@ permalink: /kb/114/Q114126/
 	
 	=============================================================================
 	
+
+{% endraw %}

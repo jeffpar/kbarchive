@@ -6,6 +6,8 @@ permalink: /kb/186/Q186413/
 
 ## Q186413: SMSINST: Rollback Feature Can Cause an &quot;UNWISE&quot; Error Message
 
+{% raw %}
+
 	Article: Q186413
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/186/Q186413/
 	
 	=============================================================================
 	
+
+{% endraw %}

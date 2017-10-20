@@ -6,6 +6,8 @@ permalink: /kb/249/Q249633/
 
 ## Q249633: Setting a Filter Allows no Real Time Scrolling in Listbox
 
+{% raw %}
+
 	Article: Q249633
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -118,3 +120,5 @@ permalink: /kb/249/Q249633/
 	
 	=============================================================================
 	
+
+{% endraw %}

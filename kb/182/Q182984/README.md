@@ -6,6 +6,8 @@ permalink: /kb/182/Q182984/
 
 ## Q182984: Problems Accessing CompuServe from an IBM ThinkPad Computer
 
+{% raw %}
+
 	Article: Q182984
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -59,3 +61,5 @@ permalink: /kb/182/Q182984/
 	
 	=============================================================================
 	
+
+{% endraw %}

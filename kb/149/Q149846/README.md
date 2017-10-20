@@ -6,6 +6,8 @@ permalink: /kb/149/Q149846/
 
 ## Q149846: RPC Program Fails When Server Run Down Occurs
 
+{% raw %}
+
 	Article: Q149846
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/149/Q149846/
 	
 	=============================================================================
 	
+
+{% endraw %}

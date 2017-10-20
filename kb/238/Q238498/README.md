@@ -6,6 +6,8 @@ permalink: /kb/238/Q238498/
 
 ## Q238498: XFOR: NDR to SMTP Report If Prohibit Receive Enabled
 
+{% raw %}
+
 	Article: Q238498
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -85,3 +87,5 @@ permalink: /kb/238/Q238498/
 	
 	=============================================================================
 	
+
+{% endraw %}

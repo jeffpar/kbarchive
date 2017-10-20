@@ -6,6 +6,8 @@ permalink: /kb/036/Q36900/
 
 ## Q36900: QB.EXE 4.50 ALT+File+Load File Command Doesn't Recognize D Key
 
+{% raw %}
+
 	Article: Q36900
 	Product(s): See article
 	Version(s): 4.50
@@ -37,3 +39,5 @@ permalink: /kb/036/Q36900/
 	
 	Pressing the M or I keys at this point will produce expected results,
 	but pressing the D key will not.
+
+{% endraw %}

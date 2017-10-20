@@ -6,6 +6,8 @@ permalink: /kb/262/Q262468/
 
 ## Q262468: SMS: &quot;Insufficient Rights&quot; Msg During Distribute Software Wizard
 
+{% raw %}
+
 	Article: Q262468
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -80,3 +82,5 @@ permalink: /kb/262/Q262468/
 	
 	=============================================================================
 	
+
+{% endraw %}

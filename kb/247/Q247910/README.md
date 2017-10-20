@@ -6,6 +6,8 @@ permalink: /kb/247/Q247910/
 
 ## Q247910: Windows 95/98/Me RAS Client Cannot Log On to the Domain
 
+{% raw %}
+
 	Article: Q247910
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -80,3 +82,5 @@ permalink: /kb/247/Q247910/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/115/Q115928/
 
 ## Q115928: Changing the Comment in a Workgroup Add-On Machine
 
+{% raw %}
+
 	Article: Q115928
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): MS-DOS:3.11
@@ -49,3 +51,5 @@ permalink: /kb/115/Q115928/
 	
 	=============================================================================
 	
+
+{% endraw %}

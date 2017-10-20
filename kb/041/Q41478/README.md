@@ -6,6 +6,8 @@ permalink: /kb/041/Q41478/
 
 ## Q41478: Library Sizes for QuickC 2.00
 
+{% raw %}
+
 	Article: Q41478
 	Product(s): See article
 	Version(s): 2.00
@@ -34,3 +36,5 @@ permalink: /kb/041/Q41478/
 	of the memory models S, M, C, or L, as follows:
 	
 	   xLIBC.LIB + xLIBFP.LIB + [ EM.LIB | 87.LIB ] + LIBH.LIB
+
+{% endraw %}

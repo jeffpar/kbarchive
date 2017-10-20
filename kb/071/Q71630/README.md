@@ -6,6 +6,8 @@ permalink: /kb/071/Q71630/
 
 ## Q71630: Running an Application May Change MODE Setting of 43 or 50
 
+{% raw %}
+
 	Article: Q71630
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.x,6.0,6.2,6.21,6.22
@@ -67,3 +69,5 @@ permalink: /kb/071/Q71630/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/221/Q221934/
 
 ## Q221934: Err Msg: 530 User &lt;Username&gt; Cannot Log In, Home Directory...
 
+{% raw %}
+
 	Article: Q221934
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/221/Q221934/
 	
 	=============================================================================
 	
+
+{% endraw %}

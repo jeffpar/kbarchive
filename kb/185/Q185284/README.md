@@ -6,6 +6,8 @@ permalink: /kb/185/Q185284/
 
 ## Q185284: FIX: #import Does not Correctly Handle GUID Parameters
 
+{% raw %}
+
 	Article: Q185284
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0
@@ -80,3 +82,5 @@ permalink: /kb/185/Q185284/
 	
 	=============================================================================
 	
+
+{% endraw %}

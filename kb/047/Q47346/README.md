@@ -6,6 +6,8 @@ permalink: /kb/047/Q47346/
 
 ## Q47346: IBM PS/2 Video Problems with QuickBASIC 4.50 Under DOS 4.00
 
+{% raw %}
+
 	Article: Q47346
 	Product(s): See article
 	Version(s): 4.50
@@ -65,3 +67,5 @@ permalink: /kb/047/Q47346/
 	However, you can recover from this problem by either ending the
 	program, returning to the editor, or making the program reinvoke the
 	default screen mode with the WIDTH 80,25 statement.
+
+{% endraw %}

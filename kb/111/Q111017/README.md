@@ -6,6 +6,8 @@ permalink: /kb/111/Q111017/
 
 ## Q111017: PRB: Multiple CEditViews on Document Don't Behave as Expected
 
+{% raw %}
+
 	Article: Q111017
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -68,3 +70,5 @@ permalink: /kb/111/Q111017/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158860/
 
 ## Q158860: Xircom CE2ps Network Card Is Not Detected On Insertion
 
+{% raw %}
+
 	Article: Q158860
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -42,3 +44,5 @@ permalink: /kb/158/Q158860/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/305/Q305786/
 
 ## Q305786: Differences Between the LogoTag and LogoTag2 Methods
 
+{% raw %}
+
 	Article: Q305786
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4,1.99,2.0
@@ -49,3 +51,5 @@ permalink: /kb/305/Q305786/
 	
 	=============================================================================
 	
+
+{% endraw %}

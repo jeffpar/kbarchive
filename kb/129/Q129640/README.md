@@ -6,6 +6,8 @@ permalink: /kb/129/Q129640/
 
 ## Q129640: How to Determine What Relations Exist in a .DBC
 
+{% raw %}
+
 	Article: Q129640
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -76,3 +78,5 @@ permalink: /kb/129/Q129640/
 	
 	=============================================================================
 	
+
+{% endraw %}

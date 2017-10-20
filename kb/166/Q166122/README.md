@@ -6,6 +6,8 @@ permalink: /kb/166/Q166122/
 
 ## Q166122: Mac Encarta 97: Can't Select Text From Right to Left
 
+{% raw %}
+
 	Article: Q166122
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -47,3 +49,5 @@ permalink: /kb/166/Q166122/
 	
 	=============================================================================
 	
+
+{% endraw %}

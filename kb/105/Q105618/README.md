@@ -6,6 +6,8 @@ permalink: /kb/105/Q105618/
 
 ## Q105618: MS-DOS 6.2 Step-Up Directory Listing for 3.5-Inch 1.44 MB Disk
 
+{% raw %}
+
 	Article: Q105618
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -115,3 +117,5 @@ permalink: /kb/105/Q105618/
 	
 	=============================================================================
 	
+
+{% endraw %}

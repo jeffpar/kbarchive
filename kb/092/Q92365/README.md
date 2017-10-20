@@ -6,6 +6,8 @@ permalink: /kb/092/Q92365/
 
 ## Q92365: Using Harvard Graphics with Windows 3.0, 3.0a
 
+{% raw %}
+
 	Article: Q92365
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -95,3 +97,5 @@ permalink: /kb/092/Q92365/
 	
 	=============================================================================
 	
+
+{% endraw %}

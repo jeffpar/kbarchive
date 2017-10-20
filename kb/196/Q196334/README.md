@@ -6,6 +6,8 @@ permalink: /kb/196/Q196334/
 
 ## Q196334: How to Determine If a Hotfix Is Compatible w/ Terminal Server
 
+{% raw %}
+
 	Article: Q196334
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -85,3 +87,5 @@ permalink: /kb/196/Q196334/
 	
 	=============================================================================
 	
+
+{% endraw %}

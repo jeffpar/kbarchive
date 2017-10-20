@@ -6,6 +6,8 @@ permalink: /kb/132/Q132208/
 
 ## Q132208: PC Win: Certain Tab and Hyphen Characters Are Modified
 
+{% raw %}
+
 	Article: Q132208
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -90,3 +92,5 @@ permalink: /kb/132/Q132208/
 	
 	=============================================================================
 	
+
+{% endraw %}

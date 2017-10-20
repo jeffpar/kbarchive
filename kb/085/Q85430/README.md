@@ -6,6 +6,8 @@ permalink: /kb/085/Q85430/
 
 ## Q85430: DOC: Private Data Formats Freed by the Clipboard
 
+{% raw %}
+
 	Article: Q85430
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -57,3 +59,5 @@ permalink: /kb/085/Q85430/
 	
 	=============================================================================
 	
+
+{% endraw %}

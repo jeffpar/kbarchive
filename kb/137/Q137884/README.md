@@ -6,6 +6,8 @@ permalink: /kb/137/Q137884/
 
 ## Q137884: Workgroups and Windows 95 Clients Not Validated with DNS
 
+{% raw %}
+
 	Article: Q137884
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95
@@ -61,3 +63,5 @@ permalink: /kb/137/Q137884/
 	
 	=============================================================================
 	
+
+{% endraw %}

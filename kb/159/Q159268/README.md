@@ -6,6 +6,8 @@ permalink: /kb/159/Q159268/
 
 ## Q159268: How To Create VFP Setup Disks for Both Win3.1 Chinese Versions
 
+{% raw %}
+
 	Article: Q159268
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -56,3 +58,5 @@ permalink: /kb/159/Q159268/
 	
 	=============================================================================
 	
+
+{% endraw %}

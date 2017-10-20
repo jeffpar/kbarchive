@@ -6,6 +6,8 @@ permalink: /kb/028/Q28445/
 
 ## Q28445: Example of Calling OS/2 DosSetFSInfo and DosQFSInfo
 
+{% raw %}
+
 	Article: Q28445
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -185,3 +187,5 @@ permalink: /kb/028/Q28445/
 	      unsigned&=65536+num
 	   END IF
 	END FUNCTION
+
+{% endraw %}

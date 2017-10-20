@@ -6,6 +6,8 @@ permalink: /kb/261/Q261951/
 
 ## Q261951: MSB Bugs: Cannot Print Field Manual at Freshwater Pond
 
+{% raw %}
+
 	Article: Q261951
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS|MACINTOS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/261/Q261951/
 	
 	=============================================================================
 	
+
+{% endraw %}

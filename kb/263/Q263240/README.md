@@ -6,6 +6,8 @@ permalink: /kb/263/Q263240/
 
 ## Q263240: PRB: Tab Disappears from Power Management Properties on IBM Thin
 
+{% raw %}
+
 	Article: Q263240
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -104,3 +106,5 @@ permalink: /kb/263/Q263240/
 	
 	=============================================================================
 	
+
+{% endraw %}

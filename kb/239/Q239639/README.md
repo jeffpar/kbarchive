@@ -6,6 +6,8 @@ permalink: /kb/239/Q239639/
 
 ## Q239639: XADM: How to View Deleted (Tombstoned) Objects
 
+{% raw %}
+
 	Article: Q239639
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -242,3 +244,5 @@ permalink: /kb/239/Q239639/
 	
 	=============================================================================
 	
+
+{% endraw %}

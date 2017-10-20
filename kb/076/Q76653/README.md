@@ -6,6 +6,8 @@ permalink: /kb/076/Q76653/
 
 ## Q76653: Flight Simulator: Scenery Disks for Versions 1.0 and 4.0
 
+{% raw %}
+
 	Article: Q76653
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/076/Q76653/
 	
 	=============================================================================
 	
+
+{% endraw %}

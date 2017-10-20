@@ -6,6 +6,8 @@ permalink: /kb/191/Q191804/
 
 ## Q191804: Cannot Resize MSN Program Viewer at 640 x 480 Screen Resolution
 
+{% raw %}
+
 	Article: Q191804
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -56,3 +58,5 @@ permalink: /kb/191/Q191804/
 	
 	=============================================================================
 	
+
+{% endraw %}

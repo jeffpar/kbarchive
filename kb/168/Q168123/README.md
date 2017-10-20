@@ -6,6 +6,8 @@ permalink: /kb/168/Q168123/
 
 ## Q168123: FIX: CWindow::GetTopLevelWindow() Returns NULL
 
+{% raw %}
+
 	Article: Q168123
 	Product(s): Microsoft C Compiler
 	Version(s): 2.1,3.0
@@ -90,3 +92,5 @@ permalink: /kb/168/Q168123/
 	
 	=============================================================================
 	
+
+{% endraw %}

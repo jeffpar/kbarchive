@@ -6,6 +6,8 @@ permalink: /kb/216/Q216329/
 
 ## Q216329: Cluster Server Log Filling w/ Erroneous Security Descriptor Info
 
+{% raw %}
+
 	Article: Q216329
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4
@@ -77,3 +79,5 @@ permalink: /kb/216/Q216329/
 	
 	=============================================================================
 	
+
+{% endraw %}

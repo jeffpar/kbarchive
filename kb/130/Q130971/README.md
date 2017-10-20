@@ -6,6 +6,8 @@ permalink: /kb/130/Q130971/
 
 ## Q130971: Settings Used in the APPS.INF File
 
+{% raw %}
+
 	Article: Q130971
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/130/Q130971/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/114/Q114498/
 
 ## Q114498: INFO: Transposing First Character w/ Last Character in a Field
 
+{% raw %}
+
 	Article: Q114498
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0,5.0,6.0
@@ -91,3 +93,5 @@ permalink: /kb/114/Q114498/
 	
 	=============================================================================
 	
+
+{% endraw %}

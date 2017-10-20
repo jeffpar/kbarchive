@@ -6,6 +6,8 @@ permalink: /kb/168/Q168602/
 
 ## Q168602: NetWatch May Not Show User Logged On After Applying SP2
 
+{% raw %}
+
 	Article: Q168602
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/168/Q168602/
 	
 	=============================================================================
 	
+
+{% endraw %}

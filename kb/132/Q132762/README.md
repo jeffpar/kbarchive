@@ -6,6 +6,8 @@ permalink: /kb/132/Q132762/
 
 ## Q132762: Format Type Options Are Unavailable
 
+{% raw %}
+
 	Article: Q132762
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/132/Q132762/
 	
 	=============================================================================
 	
+
+{% endraw %}

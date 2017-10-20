@@ -6,6 +6,8 @@ permalink: /kb/258/Q258253/
 
 ## Q258253: XADM: How to Set Up Auto-Naming Guidelines for Administrators
 
+{% raw %}
+
 	Article: Q258253
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -73,3 +75,5 @@ permalink: /kb/258/Q258253/
 	
 	=============================================================================
 	
+
+{% endraw %}

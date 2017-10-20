@@ -6,6 +6,8 @@ permalink: /kb/130/Q130542/
 
 ## Q130542: PCMCIA Modem Fails When Set to Windows NT Default
 
+{% raw %}
+
 	Article: Q130542
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/130/Q130542/
 	
 	=============================================================================
 	
+
+{% endraw %}

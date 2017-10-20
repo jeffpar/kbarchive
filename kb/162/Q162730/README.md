@@ -6,6 +6,8 @@ permalink: /kb/162/Q162730/
 
 ## Q162730: Microsoft Visual C++ Alpha Edition 4.2B Linker 4.20.619
 
+{% raw %}
+
 	Article: Q162730
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.0a
@@ -70,3 +72,5 @@ permalink: /kb/162/Q162730/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241873/
 
 ## Q241873: WD97: Canceling Hyperlink Allows Linked Executable File to Run
 
+{% raw %}
+
 	Article: Q241873
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/241/Q241873/
 	
 	=============================================================================
 	
+
+{% endraw %}

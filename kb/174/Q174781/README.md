@@ -6,6 +6,8 @@ permalink: /kb/174/Q174781/
 
 ## Q174781: Key Storage File Invalid Msg. When Try to Recover a Certificate
 
+{% raw %}
+
 	Article: Q174781
 	Product(s): Internet Information Server
 	Version(s): 3.00
@@ -64,3 +66,5 @@ permalink: /kb/174/Q174781/
 	
 	=============================================================================
 	
+
+{% endraw %}

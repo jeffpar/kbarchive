@@ -6,6 +6,8 @@ permalink: /kb/129/Q129634/
 
 ## Q129634: Jet DB Engines Process 'Data Has Changed' Error Differently
 
+{% raw %}
+
 	Article: Q129634
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -93,3 +95,5 @@ permalink: /kb/129/Q129634/
 	
 	=============================================================================
 	
+
+{% endraw %}

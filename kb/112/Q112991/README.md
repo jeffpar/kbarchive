@@ -6,6 +6,8 @@ permalink: /kb/112/Q112991/
 
 ## Q112991: Printer Pools under Windows NT
 
+{% raw %}
+
 	Article: Q112991
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -95,3 +97,5 @@ permalink: /kb/112/Q112991/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/291/Q291585/
 
 ## Q291585: HOWTO: Create Debug Symbols for a Visual C++ Application
 
+{% raw %}
+
 	Article: Q291585
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -115,3 +117,5 @@ permalink: /kb/291/Q291585/
 	
 	=============================================================================
 	
+
+{% endraw %}

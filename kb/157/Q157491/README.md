@@ -6,6 +6,8 @@ permalink: /kb/157/Q157491/
 
 ## Q157491: IIS Key Manager Only Allows 512-Bit Size Key
 
+{% raw %}
+
 	Article: Q157491
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -53,3 +55,5 @@ permalink: /kb/157/Q157491/
 	
 	=============================================================================
 	
+
+{% endraw %}

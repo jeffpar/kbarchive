@@ -6,6 +6,8 @@ permalink: /kb/140/Q140229/
 
 ## Q140229: PRB: C2027 When Using MFC Templated Collection Classes
 
+{% raw %}
+
 	Article: Q140229
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00
@@ -80,3 +82,5 @@ permalink: /kb/140/Q140229/
 	
 	=============================================================================
 	
+
+{% endraw %}

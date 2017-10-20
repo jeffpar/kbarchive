@@ -6,6 +6,8 @@ permalink: /kb/155/Q155773/
 
 ## Q155773: WD97: Changing Hypertext Display Text Doesn't Change URL
 
+{% raw %}
+
 	Article: Q155773
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -70,3 +72,5 @@ permalink: /kb/155/Q155773/
 	
 	=============================================================================
 	
+
+{% endraw %}

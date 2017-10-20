@@ -6,6 +6,8 @@ permalink: /kb/150/Q150214/
 
 ## Q150214: BUG: Able to Open Multiple Copies of DBGrid Property Page
 
+{% raw %}
+
 	Article: Q150214
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -64,3 +66,5 @@ permalink: /kb/150/Q150214/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/207/Q207416/
 
 ## Q207416: SMS: Distribution Manager Does Not Process a New Package
 
+{% raw %}
+
 	Article: Q207416
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -68,3 +70,5 @@ permalink: /kb/207/Q207416/
 	
 	=============================================================================
 	
+
+{% endraw %}

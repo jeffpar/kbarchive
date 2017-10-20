@@ -6,6 +6,8 @@ permalink: /kb/131/Q131799/
 
 ## Q131799: Writer: CD-ROM: Printing Landscape Mode Documents to Fax
 
+{% raw %}
+
 	Article: Q131799
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.1,1.1a
@@ -102,3 +104,5 @@ permalink: /kb/131/Q131799/
 	
 	=============================================================================
 	
+
+{% endraw %}

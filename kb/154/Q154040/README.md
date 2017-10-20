@@ -6,6 +6,8 @@ permalink: /kb/154/Q154040/
 
 ## Q154040: How To Print Seven Habits Tools Information
 
+{% raw %}
+
 	Article: Q154040
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0, 7.0a
@@ -58,3 +60,5 @@ permalink: /kb/154/Q154040/
 	
 	=============================================================================
 	
+
+{% endraw %}

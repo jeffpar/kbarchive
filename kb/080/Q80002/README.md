@@ -6,6 +6,8 @@ permalink: /kb/080/Q80002/
 
 ## Q80002: Quicken Should Not Be Task Swapped from MS-DOS Shell
 
+{% raw %}
+
 	Article: Q80002
 	Product(s): Microsoft Disk Operating System
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/080/Q80002/
 	
 	=============================================================================
 	
+
+{% endraw %}

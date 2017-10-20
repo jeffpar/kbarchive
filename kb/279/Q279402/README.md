@@ -6,6 +6,8 @@ permalink: /kb/279/Q279402/
 
 ## Q279402: MSN Companion boots to &quot;Your Internet Numbers Have Changed&quot; scre
 
+{% raw %}
+
 	Article: Q279402
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -58,3 +60,5 @@ permalink: /kb/279/Q279402/
 	
 	=============================================================================
 	
+
+{% endraw %}

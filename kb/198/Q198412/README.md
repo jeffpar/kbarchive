@@ -6,6 +6,8 @@ permalink: /kb/198/Q198412/
 
 ## Q198412: Combat FS: Button Does Not Respond When You Press ENTER
 
+{% raw %}
+
 	Article: Q198412
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/198/Q198412/
 	
 	=============================================================================
 	
+
+{% endraw %}

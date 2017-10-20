@@ -6,6 +6,8 @@ permalink: /kb/168/Q168374/
 
 ## Q168374: FIX: C1001 file 'msc1.cpp', line 1188, Using Recursive Namespace
 
+{% raw %}
+
 	Article: Q168374
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -101,3 +103,5 @@ permalink: /kb/168/Q168374/
 	
 	=============================================================================
 	
+
+{% endraw %}

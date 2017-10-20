@@ -6,6 +6,8 @@ permalink: /kb/051/Q51728/
 
 ## Q51728: Manual Correction for MASM Returning Single or Double to BASIC
 
+{% raw %}
+
 	Article: Q51728
 	Product(s): See article
 	Version(s): 5.00   | 5.00
@@ -50,3 +52,5 @@ permalink: /kb/051/Q51728/
 	For a complete guide for passing parameters and invoking functions
 	between BASIC and assembly language, search in the Microsoft Knowledge
 	Base for the following word: BAS2MASM.
+
+{% endraw %}

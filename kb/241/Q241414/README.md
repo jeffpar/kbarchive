@@ -6,6 +6,8 @@ permalink: /kb/241/Q241414/
 
 ## Q241414: NtSetInformationObject() Does Not Check Object Handle in C2SS
 
+{% raw %}
+
 	Article: Q241414
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -99,3 +101,5 @@ permalink: /kb/241/Q241414/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158085/
 
 ## Q158085: STL Sample for the list::assign Functions
 
+{% raw %}
+
 	Article: Q158085
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -159,3 +161,5 @@ permalink: /kb/158/Q158085/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/256/Q256927/
 
 ## Q256927: XCON: Event 1008 Occurs When Internet Mail Service Is Started
 
+{% raw %}
+
 	Article: Q256927
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -80,3 +82,5 @@ permalink: /kb/256/Q256927/
 	
 	=============================================================================
 	
+
+{% endraw %}

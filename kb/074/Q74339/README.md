@@ -6,6 +6,8 @@ permalink: /kb/074/Q74339/
 
 ## Q74339: Hyperdisk Conflicts with SETUP and FORMAT
 
+{% raw %}
+
 	Article: Q74339
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -52,3 +54,5 @@ permalink: /kb/074/Q74339/
 	
 	=============================================================================
 	
+
+{% endraw %}

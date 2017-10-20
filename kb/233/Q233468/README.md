@@ -6,6 +6,8 @@ permalink: /kb/233/Q233468/
 
 ## Q233468: Business Planner: Unable to Open Certain Help Topics
 
+{% raw %}
+
 	Article: Q233468
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -58,3 +60,5 @@ permalink: /kb/233/Q233468/
 	
 	=============================================================================
 	
+
+{% endraw %}

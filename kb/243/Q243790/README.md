@@ -6,6 +6,8 @@ permalink: /kb/243/Q243790/
 
 ## Q243790: Asheron's Call: Screen Turns Black After You Change Resolution
 
+{% raw %}
+
 	Article: Q243790
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -80,3 +82,5 @@ permalink: /kb/243/Q243790/
 	
 	=============================================================================
 	
+
+{% endraw %}

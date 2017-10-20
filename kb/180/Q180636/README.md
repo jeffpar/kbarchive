@@ -6,6 +6,8 @@ permalink: /kb/180/Q180636/
 
 ## Q180636: Can Still Move Up and Down If All LUs Selected for User
 
+{% raw %}
+
 	Article: Q180636
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -46,3 +48,5 @@ permalink: /kb/180/Q180636/
 	
 	=============================================================================
 	
+
+{% endraw %}

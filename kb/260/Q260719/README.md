@@ -6,6 +6,8 @@ permalink: /kb/260/Q260719/
 
 ## Q260719: StarLancer: Quits Unexpectedly When You Start a New Mission
 
+{% raw %}
+
 	Article: Q260719
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -64,3 +66,5 @@ permalink: /kb/260/Q260719/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/206/Q206702/
 
 ## Q206702: WD97: Characters Change to Box Characters Opening Far East File
 
+{% raw %}
+
 	Article: Q206702
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -67,3 +69,5 @@ permalink: /kb/206/Q206702/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130485/
 
 ## Q130485: PRB: Unable to Save Project State Information
 
+{% raw %}
+
 	Article: Q130485
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,4.0
@@ -61,3 +63,5 @@ permalink: /kb/130/Q130485/
 	
 	=============================================================================
 	
+
+{% endraw %}

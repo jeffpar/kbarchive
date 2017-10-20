@@ -6,6 +6,8 @@ permalink: /kb/123/Q123647/
 
 ## Q123647: CACLS Directory Output Defined
 
+{% raw %}
+
 	Article: Q123647
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/123/Q123647/
 	
 	=============================================================================
 	
+
+{% endraw %}

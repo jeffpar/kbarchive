@@ -6,6 +6,8 @@ permalink: /kb/198/Q198759/
 
 ## Q198759: XADM: Move Server Wizard: Exporting Custom Attributes and Values
 
+{% raw %}
+
 	Article: Q198759
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -61,3 +63,5 @@ permalink: /kb/198/Q198759/
 	
 	=============================================================================
 	
+
+{% endraw %}

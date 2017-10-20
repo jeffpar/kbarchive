@@ -6,6 +6,8 @@ permalink: /kb/156/Q156168/
 
 ## Q156168: INFO: Platforms Supported by Visual FoxPro Version 5.0
 
+{% raw %}
+
 	Article: Q156168
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -45,3 +47,5 @@ permalink: /kb/156/Q156168/
 	
 	=============================================================================
 	
+
+{% endraw %}

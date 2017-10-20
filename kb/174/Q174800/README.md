@@ -6,6 +6,8 @@ permalink: /kb/174/Q174800/
 
 ## Q174800: Documentation Location for Routing and Remote Access Service
 
+{% raw %}
+
 	Article: Q174800
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -68,3 +70,5 @@ permalink: /kb/174/Q174800/
 	
 	=============================================================================
 	
+
+{% endraw %}

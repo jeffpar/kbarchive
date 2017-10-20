@@ -6,6 +6,8 @@ permalink: /kb/073/Q73614/
 
 ## Q73614: Video Corruption Can Occur in MS-DOS Shell During Swap
 
+{% raw %}
+
 	Article: Q73614
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -44,3 +46,5 @@ permalink: /kb/073/Q73614/
 	
 	=============================================================================
 	
+
+{% endraw %}

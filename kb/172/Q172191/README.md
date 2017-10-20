@@ -6,6 +6,8 @@ permalink: /kb/172/Q172191/
 
 ## Q172191: Desktop Themes Crashes When JPEG Filter is Used
 
+{% raw %}
+
 	Article: Q172191
 	Product(s): Microsoft Press
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/172/Q172191/
 	
 	=============================================================================
 	
+
+{% endraw %}

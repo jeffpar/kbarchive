@@ -6,6 +6,8 @@ permalink: /kb/029/Q29150/
 
 ## Q29150: Using Full Pathnames to Compile Programs with M or MEP
 
+{% raw %}
+
 	Article: Q29150
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -49,3 +51,5 @@ permalink: /kb/029/Q29150/
 	
 	This combination produces the drive, path, and filename, with the
 	extension .XYZ added to the filename.
+
+{% endraw %}

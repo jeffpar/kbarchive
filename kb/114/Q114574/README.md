@@ -6,6 +6,8 @@ permalink: /kb/114/Q114574/
 
 ## Q114574: Control Panel Serial Port Settings Are for Printing Only
 
+{% raw %}
+
 	Article: Q114574
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -90,3 +92,5 @@ permalink: /kb/114/Q114574/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/121/Q121221/
 
 ## Q121221: Money: Modem Troubleshooting Guide for Windows 3.x
 
+{% raw %}
+
 	Article: Q121221
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.11
@@ -218,3 +220,5 @@ permalink: /kb/121/Q121221/
 	
 	=============================================================================
 	
+
+{% endraw %}

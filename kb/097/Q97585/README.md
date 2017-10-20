@@ -6,6 +6,8 @@ permalink: /kb/097/Q97585/
 
 ## Q97585: Multiple Identical Drive Icons in File Manager
 
+{% raw %}
+
 	Article: Q97585
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11; winnt:3.1
@@ -60,3 +62,5 @@ permalink: /kb/097/Q97585/
 	
 	=============================================================================
 	
+
+{% endraw %}

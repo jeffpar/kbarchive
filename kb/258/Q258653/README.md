@@ -6,6 +6,8 @@ permalink: /kb/258/Q258653/
 
 ## Q258653: Baseball 2001: Graphics Are Redrawn Multiple Times During a Game
 
+{% raw %}
+
 	Article: Q258653
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -64,3 +66,5 @@ permalink: /kb/258/Q258653/
 	
 	=============================================================================
 	
+
+{% endraw %}

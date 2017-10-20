@@ -6,6 +6,8 @@ permalink: /kb/238/Q238606/
 
 ## Q238606: Page Contents Visible For Certain Virtual Directory Name
 
+{% raw %}
+
 	Article: Q238606
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0
@@ -185,3 +187,5 @@ permalink: /kb/238/Q238606/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163563/
 
 ## Q163563: TN3270E Printer Emulators May Have Flow Control Issues
 
+{% raw %}
+
 	Article: Q163563
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -71,3 +73,5 @@ permalink: /kb/163/Q163563/
 	
 	=============================================================================
 	
+
+{% endraw %}

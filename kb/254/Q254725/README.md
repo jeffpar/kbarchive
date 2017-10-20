@@ -6,6 +6,8 @@ permalink: /kb/254/Q254725/
 
 ## Q254725: XCON: (040) and (041) in DDA Addresses Cause NDRs
 
+{% raw %}
+
 	Article: Q254725
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -101,3 +103,5 @@ permalink: /kb/254/Q254725/
 	
 	=============================================================================
 	
+
+{% endraw %}

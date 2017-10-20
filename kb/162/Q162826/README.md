@@ -6,6 +6,8 @@ permalink: /kb/162/Q162826/
 
 ## Q162826: Microsoft Programs Can't Open AOL 3.0 Web Browser
 
+{% raw %}
+
 	Article: Q162826
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -74,3 +76,5 @@ permalink: /kb/162/Q162826/
 	
 	=============================================================================
 	
+
+{% endraw %}

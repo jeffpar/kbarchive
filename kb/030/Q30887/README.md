@@ -6,6 +6,8 @@ permalink: /kb/030/Q30887/
 
 ## Q30887: Accessing MASM Structure Fields in a Multimodule Program
 
+{% raw %}
+
 	Article: Q30887
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,6.0
@@ -103,3 +105,5 @@ permalink: /kb/030/Q30887/
 	
 	=============================================================================
 	
+
+{% endraw %}

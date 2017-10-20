@@ -6,6 +6,8 @@ permalink: /kb/158/Q158772/
 
 ## Q158772: Err Msg: Fltsim95 Caused an Invalid Page Fault in Simsui.dll
 
+{% raw %}
+
 	Article: Q158772
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -146,3 +148,5 @@ permalink: /kb/158/Q158772/
 	
 	=============================================================================
 	
+
+{% endraw %}

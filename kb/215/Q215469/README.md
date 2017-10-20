@@ -6,6 +6,8 @@ permalink: /kb/215/Q215469/
 
 ## Q215469: SMS: Support Options for Crystal Info (Reports)
 
+{% raw %}
+
 	Article: Q215469
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -168,3 +170,5 @@ permalink: /kb/215/Q215469/
 	
 	=============================================================================
 	
+
+{% endraw %}

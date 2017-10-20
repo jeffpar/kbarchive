@@ -6,6 +6,8 @@ permalink: /kb/170/Q170477/
 
 ## Q170477: XADM: The Attribute OBJ-Class Is Unknown
 
+{% raw %}
+
 	Article: Q170477
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -50,3 +52,5 @@ permalink: /kb/170/Q170477/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167635/
 
 ## Q167635: XADM: Error Msg: &lt;File&gt; In Use By Another Application
 
+{% raw %}
+
 	Article: Q167635
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -65,3 +67,5 @@ permalink: /kb/167/Q167635/
 	
 	=============================================================================
 	
+
+{% endraw %}

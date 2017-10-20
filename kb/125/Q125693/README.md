@@ -6,6 +6,8 @@ permalink: /kb/125/Q125693/
 
 ## Q125693: HOWTO: AngleArc in Windows 3.1, Win32s, and Windows 95
 
+{% raw %}
+
 	Article: Q125693
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:1.3,3.1,95; winnt:
@@ -174,3 +176,5 @@ permalink: /kb/125/Q125693/
 	
 	=============================================================================
 	
+
+{% endraw %}

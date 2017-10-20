@@ -6,6 +6,8 @@ permalink: /kb/145/Q145950/
 
 ## Q145950: Setting Up NT On ALR Evolution V ST(e) Causes STOP 0x00000078
 
+{% raw %}
+
 	Article: Q145950
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -115,3 +117,5 @@ permalink: /kb/145/Q145950/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153211/
 
 ## Q153211: Close Combat: Minimum System Requirements for Windows
 
+{% raw %}
+
 	Article: Q153211
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -61,3 +63,5 @@ permalink: /kb/153/Q153211/
 	
 	=============================================================================
 	
+
+{% endraw %}

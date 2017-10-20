@@ -6,6 +6,8 @@ permalink: /kb/188/Q188386/
 
 ## Q188386: XFOR: Error Removing Directory Synchronization Objects
 
+{% raw %}
+
 	Article: Q188386
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -114,3 +116,5 @@ permalink: /kb/188/Q188386/
 	
 	=============================================================================
 	
+
+{% endraw %}

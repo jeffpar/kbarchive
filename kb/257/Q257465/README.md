@@ -6,6 +6,8 @@ permalink: /kb/257/Q257465/
 
 ## Q257465: First Character Typed After Logon Is Ignored in 16-Bit Programs
 
+{% raw %}
+
 	Article: Q257465
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -55,3 +57,5 @@ permalink: /kb/257/Q257465/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86703/
 
 ## Q86703: NEC PCP Emulation-Switching Software and Windows 3.1
 
+{% raw %}
+
 	Article: Q86703
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -69,3 +71,5 @@ permalink: /kb/086/Q86703/
 	
 	=============================================================================
 	
+
+{% endraw %}

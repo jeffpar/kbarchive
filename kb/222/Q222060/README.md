@@ -6,6 +6,8 @@ permalink: /kb/222/Q222060/
 
 ## Q222060: Err Msg: &quot;Error 5: Access denied&quot; When Using PPTP with RAS
 
+{% raw %}
+
 	Article: Q222060
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP3,4.0 SP4
@@ -72,3 +74,5 @@ permalink: /kb/222/Q222060/
 	
 	=============================================================================
 	
+
+{% endraw %}

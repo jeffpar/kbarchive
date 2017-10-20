@@ -6,6 +6,8 @@ permalink: /kb/175/Q175278/
 
 ## Q175278: How to Install Additional Drives on the Shared SCSI Bus
 
+{% raw %}
+
 	Article: Q175278
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -184,3 +186,5 @@ permalink: /kb/175/Q175278/
 	
 	=============================================================================
 	
+
+{% endraw %}

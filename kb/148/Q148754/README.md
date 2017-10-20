@@ -6,6 +6,8 @@ permalink: /kb/148/Q148754/
 
 ## Q148754: File Names Seem to Be Limited to Less Than 255 Characters
 
+{% raw %}
+
 	Article: Q148754
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -116,3 +118,5 @@ permalink: /kb/148/Q148754/
 	
 	=============================================================================
 	
+
+{% endraw %}

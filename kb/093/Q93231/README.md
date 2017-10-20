@@ -6,6 +6,8 @@ permalink: /kb/093/Q93231/
 
 ## Q93231: Joint Data Systems Video BIOS Needs Upgrade
 
+{% raw %}
+
 	Article: Q93231
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/093/Q93231/
 	
 	=============================================================================
 	
+
+{% endraw %}

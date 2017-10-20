@@ -6,6 +6,8 @@ permalink: /kb/171/Q171529/
 
 ## Q171529: FIX: Can't Open a Project Group from the Root Directory
 
+{% raw %}
+
 	Article: Q171529
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -97,3 +99,5 @@ permalink: /kb/171/Q171529/
 	
 	=============================================================================
 	
+
+{% endraw %}

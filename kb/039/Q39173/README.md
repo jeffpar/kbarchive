@@ -6,6 +6,8 @@ permalink: /kb/039/Q39173/
 
 ## Q39173: Exe2bin Will Not Support exe Files Created with dosseg
 
+{% raw %}
+
 	Article: Q39173
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -22,3 +24,5 @@ permalink: /kb/039/Q39173/
 	format is not acceptable to exe2bin. To work around this problem, do
 	not use the dosseg directive when creating an executable to be
 	converted into com format.
+
+{% endraw %}

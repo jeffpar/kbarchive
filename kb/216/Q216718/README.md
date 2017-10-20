@@ -6,6 +6,8 @@ permalink: /kb/216/Q216718/
 
 ## Q216718: FIX: C1001 in 'E:&#92;8168&#92;vc98&#92;p2&#92;src&#92;P2&#92;main.c', With /Zi and Yc
 
+{% raw %}
+
 	Article: Q216718
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -62,3 +64,5 @@ permalink: /kb/216/Q216718/
 	
 	=============================================================================
 	
+
+{% endraw %}

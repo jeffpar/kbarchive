@@ -6,6 +6,8 @@ permalink: /kb/275/Q275030/
 
 ## Q275030: XCON: Exchange Server MTA Does Not Process Accented Characters
 
+{% raw %}
+
 	Article: Q275030
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -92,3 +94,5 @@ permalink: /kb/275/Q275030/
 	
 	=============================================================================
 	
+
+{% endraw %}

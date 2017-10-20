@@ -6,6 +6,8 @@ permalink: /kb/135/Q135290/
 
 ## Q135290: Troubleshooting Application Exception Error in File Manager
 
+{% raw %}
+
 	Article: Q135290
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -87,3 +89,5 @@ permalink: /kb/135/Q135290/
 	
 	=============================================================================
 	
+
+{% endraw %}

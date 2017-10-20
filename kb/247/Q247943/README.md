@@ -6,6 +6,8 @@ permalink: /kb/247/Q247943/
 
 ## Q247943: XCLN: Err Mssg: Outlook Could Not Update Your Local Calendar
 
+{% raw %}
+
 	Article: Q247943
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; winnt:5.5
@@ -66,3 +68,5 @@ permalink: /kb/247/Q247943/
 	
 	=============================================================================
 	
+
+{% endraw %}

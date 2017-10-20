@@ -6,6 +6,8 @@ permalink: /kb/193/Q193333/
 
 ## Q193333: NetMon Fails on Multiprocessor Windows NT Server Under Stress
 
+{% raw %}
+
 	Article: Q193333
 	Product(s): Microsoft Windows NT
 	Version(s): 1.2,4.0,4.0a
@@ -79,3 +81,5 @@ permalink: /kb/193/Q193333/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147514/
 
 ## Q147514: Stopping SNA Server Service Causes Perpetual &quot;Stopping&quot; Status
 
+{% raw %}
+
 	Article: Q147514
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1; winnt:3.51
@@ -72,3 +74,5 @@ permalink: /kb/147/Q147514/
 	
 	=============================================================================
 	
+
+{% endraw %}

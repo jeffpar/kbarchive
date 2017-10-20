@@ -6,6 +6,8 @@ permalink: /kb/131/Q131121/
 
 ## Q131121: Combo Box with RowSourceType of SQL Must Result in Cursor
 
+{% raw %}
+
 	Article: Q131121
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -45,3 +47,5 @@ permalink: /kb/131/Q131121/
 	
 	=============================================================================
 	
+
+{% endraw %}

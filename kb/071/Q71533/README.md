@@ -6,6 +6,8 @@ permalink: /kb/071/Q71533/
 
 ## Q71533: PC Tools 6.0 REBUILD.COM Incompatible with MS-DOS 5.0 and Later
 
+{% raw %}
+
 	Article: Q71533
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -52,3 +54,5 @@ permalink: /kb/071/Q71533/
 	
 	=============================================================================
 	
+
+{% endraw %}

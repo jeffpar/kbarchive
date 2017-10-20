@@ -6,6 +6,8 @@ permalink: /kb/153/Q153202/
 
 ## Q153202: Duplex Printing Causes Problems After Applying SP4
 
+{% raw %}
+
 	Article: Q153202
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP4
@@ -58,3 +60,5 @@ permalink: /kb/153/Q153202/
 	
 	=============================================================================
 	
+
+{% endraw %}

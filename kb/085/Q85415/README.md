@@ -6,6 +6,8 @@ permalink: /kb/085/Q85415/
 
 ## Q85415: PPT: Graphic Formats Supported by PowerPoint
 
+{% raw %}
+
 	Article: Q85415
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,4.0,4.0a,4.0c,7.0
@@ -80,3 +82,5 @@ permalink: /kb/085/Q85415/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148196/
 
 ## Q148196: IBM LANStreamer PCI Token Ring Adapter Identified as Ethernet
 
+{% raw %}
+
 	Article: Q148196
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -64,3 +66,5 @@ permalink: /kb/148/Q148196/
 	
 	=============================================================================
 	
+
+{% endraw %}

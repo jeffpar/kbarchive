@@ -6,6 +6,8 @@ permalink: /kb/149/Q149448/
 
 ## Q149448: Incorrect Node Address In IPX Header Causes Broadcast Storm
 
+{% raw %}
+
 	Article: Q149448
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/149/Q149448/
 	
 	=============================================================================
 	
+
+{% endraw %}

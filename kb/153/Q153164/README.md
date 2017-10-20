@@ -6,6 +6,8 @@ permalink: /kb/153/Q153164/
 
 ## Q153164: MS-DOS Compatibility Mode on National Semiconductor Controller
 
+{% raw %}
+
 	Article: Q153164
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/153/Q153164/
 	
 	=============================================================================
 	
+
+{% endraw %}

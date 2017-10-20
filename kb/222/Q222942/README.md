@@ -6,6 +6,8 @@ permalink: /kb/222/Q222942/
 
 ## Q222942: IBM S/36 Displays &quot;Unexpected Data Received From Printer&quot;
 
+{% raw %}
+
 	Article: Q222942
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0SP1,4.0SP2
@@ -75,3 +77,5 @@ permalink: /kb/222/Q222942/
 	
 	=============================================================================
 	
+
+{% endraw %}

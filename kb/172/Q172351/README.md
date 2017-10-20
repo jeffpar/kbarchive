@@ -6,6 +6,8 @@ permalink: /kb/172/Q172351/
 
 ## Q172351: Option to Change Windows Password Without Password Caching
 
+{% raw %}
+
 	Article: Q172351
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0
@@ -61,3 +63,5 @@ permalink: /kb/172/Q172351/
 	
 	=============================================================================
 	
+
+{% endraw %}

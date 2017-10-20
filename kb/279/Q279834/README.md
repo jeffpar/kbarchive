@@ -6,6 +6,8 @@ permalink: /kb/279/Q279834/
 
 ## Q279834: XCCC: VBScript Error 800A01A8 When Using OWA
 
+{% raw %}
+
 	Article: Q279834
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -77,3 +79,5 @@ permalink: /kb/279/Q279834/
 	
 	=============================================================================
 	
+
+{% endraw %}

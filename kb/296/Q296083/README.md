@@ -6,6 +6,8 @@ permalink: /kb/296/Q296083/
 
 ## Q296083: SNA Server DLC Connection Fails Through Cisco DLSw and VLAN
 
+{% raw %}
+
 	Article: Q296083
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,4.0
@@ -60,3 +62,5 @@ permalink: /kb/296/Q296083/
 	
 	=============================================================================
 	
+
+{% endraw %}

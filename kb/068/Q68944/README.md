@@ -6,6 +6,8 @@ permalink: /kb/068/Q68944/
 
 ## Q68944: Output to stdprn Is in Binary (Untranslated) Mode
 
+{% raw %}
+
 	Article: Q68944
 	Product(s): See article
 	Version(s): 3.x 4.x 5.x 6.00a 6.00 | 5.10 6.00 6.00a
@@ -51,3 +53,5 @@ permalink: /kb/068/Q68944/
 	
 	   fprintf(stdprn, "translated\n");
 	}
+
+{% endraw %}

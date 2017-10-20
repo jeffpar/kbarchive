@@ -6,6 +6,8 @@ permalink: /kb/138/Q138158/
 
 ## Q138158: How to Attach Multiple Files to Microsoft Exchange Messages
 
+{% raw %}
+
 	Article: Q138158
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/138/Q138158/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162439/
 
 ## Q162439: WD97: Unable to Get Count of Table Rows or Columns
 
+{% raw %}
+
 	Article: Q162439
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -116,3 +118,5 @@ permalink: /kb/162/Q162439/
 	
 	=============================================================================
 	
+
+{% endraw %}

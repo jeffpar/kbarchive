@@ -6,6 +6,8 @@ permalink: /kb/268/Q268831/
 
 ## Q268831: XADM: Event 1025, Error 0xfffff9bb
 
+{% raw %}
+
 	Article: Q268831
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -103,3 +105,5 @@ permalink: /kb/268/Q268831/
 	
 	=============================================================================
 	
+
+{% endraw %}

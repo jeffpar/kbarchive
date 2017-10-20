@@ -6,6 +6,8 @@ permalink: /kb/076/Q76242/
 
 ## Q76242: MS-DOS 6.x Setup: Error Renaming Old Utilities
 
+{% raw %}
+
 	Article: Q76242
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -99,3 +101,5 @@ permalink: /kb/076/Q76242/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169695/
 
 ## Q169695: XCON: Invalid Originator Address When Sending to X.400
 
+{% raw %}
+
 	Article: Q169695
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -64,3 +66,5 @@ permalink: /kb/169/Q169695/
 	
 	=============================================================================
 	
+
+{% endraw %}

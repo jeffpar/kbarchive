@@ -6,6 +6,8 @@ permalink: /kb/131/Q131071/
 
 ## Q131071: Virtual Functions &amp; Multiple Inheritance in Visual FoxPro
 
+{% raw %}
+
 	Article: Q131071
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/131/Q131071/
 	
 	=============================================================================
 	
+
+{% endraw %}

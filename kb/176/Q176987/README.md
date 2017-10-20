@@ -6,6 +6,8 @@ permalink: /kb/176/Q176987/
 
 ## Q176987: Remoteboot Client Records Incorrect Timestamp
 
+{% raw %}
+
 	Article: Q176987
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.5,3.51,4.0
@@ -79,3 +81,5 @@ permalink: /kb/176/Q176987/
 	
 	=============================================================================
 	
+
+{% endraw %}

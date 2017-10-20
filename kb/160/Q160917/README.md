@@ -6,6 +6,8 @@ permalink: /kb/160/Q160917/
 
 ## Q160917: FIX: PAGE UP and PAGE DOWN in FormSet with Toolbar Crashes VFP
 
+{% raw %}
+
 	Article: Q160917
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -135,3 +137,5 @@ permalink: /kb/160/Q160917/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168769/
 
 ## Q168769: SMSINST: Registering Third-Party Applications and Controls
 
+{% raw %}
+
 	Article: Q168769
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0; winnt:1.2
@@ -78,3 +80,5 @@ permalink: /kb/168/Q168769/
 	
 	=============================================================================
 	
+
+{% endraw %}

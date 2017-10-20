@@ -6,6 +6,8 @@ permalink: /kb/154/Q154103/
 
 ## Q154103: Cannot Access Shared Folders with CA/400
 
+{% raw %}
+
 	Article: Q154103
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,2.11 SP1
@@ -77,3 +79,5 @@ permalink: /kb/154/Q154103/
 	
 	=============================================================================
 	
+
+{% endraw %}

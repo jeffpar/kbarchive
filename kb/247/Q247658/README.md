@@ -6,6 +6,8 @@ permalink: /kb/247/Q247658/
 
 ## Q247658: HOW TO: Configure SSL Server and Client Cache Elements
 
+{% raw %}
+
 	Article: Q247658
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -127,3 +129,5 @@ permalink: /kb/247/Q247658/
 	
 	=============================================================================
 	
+
+{% endraw %}

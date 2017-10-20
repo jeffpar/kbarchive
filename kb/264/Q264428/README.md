@@ -6,6 +6,8 @@ permalink: /kb/264/Q264428/
 
 ## Q264428: XFOR: Finding Instructions for Exchange PROFS Connector Setup
 
+{% raw %}
+
 	Article: Q264428
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -42,3 +44,5 @@ permalink: /kb/264/Q264428/
 	
 	=============================================================================
 	
+
+{% endraw %}

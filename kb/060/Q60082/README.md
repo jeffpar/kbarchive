@@ -6,6 +6,8 @@ permalink: /kb/060/Q60082/
 
 ## Q60082: Using IBM PC-DOS 4.0 with MS-DOS Hard Disk Partition
 
+{% raw %}
+
 	Article: Q60082
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -75,3 +77,5 @@ permalink: /kb/060/Q60082/
 	
 	=============================================================================
 	
+
+{% endraw %}

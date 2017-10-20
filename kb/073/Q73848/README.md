@@ -6,6 +6,8 @@ permalink: /kb/073/Q73848/
 
 ## Q73848: Time/Date Stamp Workaround for Notepad
 
+{% raw %}
+
 	Article: Q73848
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -59,3 +61,5 @@ permalink: /kb/073/Q73848/
 	
 	=============================================================================
 	
+
+{% endraw %}

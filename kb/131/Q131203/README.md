@@ -6,6 +6,8 @@ permalink: /kb/131/Q131203/
 
 ## Q131203: FIX: Missing '::' in Error C2579 for Ambiguous Overload
 
+{% raw %}
+
 	Article: Q131203
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -94,3 +96,5 @@ permalink: /kb/131/Q131203/
 	
 	=============================================================================
 	
+
+{% endraw %}

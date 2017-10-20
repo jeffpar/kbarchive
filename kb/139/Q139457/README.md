@@ -6,6 +6,8 @@ permalink: /kb/139/Q139457/
 
 ## Q139457: PRB: Error Converting Visual C++ OLE Controls from 2.x to 4.0
 
+{% raw %}
+
 	Article: Q139457
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0; :
@@ -107,3 +109,5 @@ permalink: /kb/139/Q139457/
 	
 	=============================================================================
 	
+
+{% endraw %}

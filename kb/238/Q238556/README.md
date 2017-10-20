@@ -6,6 +6,8 @@ permalink: /kb/238/Q238556/
 
 ## Q238556: HOWTO: Notify Team When Changing Projects Under VSS
 
+{% raw %}
+
 	Article: Q238556
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -186,3 +188,5 @@ permalink: /kb/238/Q238556/
 	
 	=============================================================================
 	
+
+{% endraw %}

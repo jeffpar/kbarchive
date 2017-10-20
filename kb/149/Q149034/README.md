@@ -6,6 +6,8 @@ permalink: /kb/149/Q149034/
 
 ## Q149034: FIX: OLE Control Updated Event Fired in Endless Loop
 
+{% raw %}
+
 	Article: Q149034
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -124,3 +126,5 @@ permalink: /kb/149/Q149034/
 	
 	=============================================================================
 	
+
+{% endraw %}

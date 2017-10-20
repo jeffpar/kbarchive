@@ -6,6 +6,8 @@ permalink: /kb/155/Q155373/
 
 ## Q155373: Compaq Laptops Restart Instead of Powering Down
 
+{% raw %}
+
 	Article: Q155373
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/155/Q155373/
 	
 	=============================================================================
 	
+
+{% endraw %}

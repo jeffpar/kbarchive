@@ -6,6 +6,8 @@ permalink: /kb/179/Q179056/
 
 ## Q179056: XADM: Store Stops While Processing Rule for Client
 
+{% raw %}
+
 	Article: Q179056
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -108,3 +110,5 @@ permalink: /kb/179/Q179056/
 	
 	=============================================================================
 	
+
+{% endraw %}

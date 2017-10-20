@@ -6,6 +6,8 @@ permalink: /kb/111/Q111964/
 
 ## Q111964: WinPopup Sends Global Message to Entire Workgroup in WFWG 3.11
 
+{% raw %}
+
 	Article: Q111964
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:
@@ -40,3 +42,5 @@ permalink: /kb/111/Q111964/
 	
 	=============================================================================
 	
+
+{% endraw %}

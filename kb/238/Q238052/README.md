@@ -6,6 +6,8 @@ permalink: /kb/238/Q238052/
 
 ## Q238052: Encarta 2000: Empty Window Opens When Starting Lesson Collection
 
+{% raw %}
+
 	Article: Q238052
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/238/Q238052/
 	
 	=============================================================================
 	
+
+{% endraw %}

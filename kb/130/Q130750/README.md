@@ -6,6 +6,8 @@ permalink: /kb/130/Q130750/
 
 ## Q130750: PC WRmt: Locked KEY File May Result in Lost Mail
 
+{% raw %}
+
 	Article: Q130750
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -48,3 +50,5 @@ permalink: /kb/130/Q130750/
 	
 	=============================================================================
 	
+
+{% endraw %}

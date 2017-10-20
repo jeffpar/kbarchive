@@ -6,6 +6,8 @@ permalink: /kb/099/Q99284/
 
 ## Q99284: Support Information for Intel Video Capture Cards
 
+{% raw %}
+
 	Article: Q99284
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.00 1.10a 1.10
@@ -48,3 +50,5 @@ permalink: /kb/099/Q99284/
 	
 	=============================================================================
 	
+
+{% endraw %}

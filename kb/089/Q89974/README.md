@@ -6,6 +6,8 @@ permalink: /kb/089/Q89974/
 
 ## Q89974: Setup Detects Incorrect Space Available on WFWG Server
 
+{% raw %}
+
 	Article: Q89974
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/089/Q89974/
 	
 	=============================================================================
 	
+
+{% endraw %}

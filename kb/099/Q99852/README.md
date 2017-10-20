@@ -6,6 +6,8 @@ permalink: /kb/099/Q99852/
 
 ## Q99852: SMTP: Err Msg: ERROR Connect: (121) Network Error
 
+{% raw %}
+
 	Article: Q99852
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -81,3 +83,5 @@ permalink: /kb/099/Q99852/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111682/
 
 ## Q111682: How to Obtain Microsoft DLC and Microsoft TCP/IP
 
+{% raw %}
+
 	Article: Q111682
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -114,3 +116,5 @@ permalink: /kb/111/Q111682/
 	
 	=============================================================================
 	
+
+{% endraw %}

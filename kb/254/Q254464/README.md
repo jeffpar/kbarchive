@@ -6,6 +6,8 @@ permalink: /kb/254/Q254464/
 
 ## Q254464: PRB: Can't Add T-SQL Debugger to the Visual Basic Add-in Manager
 
+{% raw %}
+
 	Article: Q254464
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -89,3 +91,5 @@ permalink: /kb/254/Q254464/
 	
 	=============================================================================
 	
+
+{% endraw %}

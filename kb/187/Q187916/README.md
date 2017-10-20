@@ -6,6 +6,8 @@ permalink: /kb/187/Q187916/
 
 ## Q187916: Game Stops Responding or Quits Unexpectedly
 
+{% raw %}
+
 	Article: Q187916
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -152,3 +154,5 @@ permalink: /kb/187/Q187916/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190197/
 
 ## Q190197: BUG: User Defined Type Not Defined Using Binary Compatibility
 
+{% raw %}
+
 	Article: Q190197
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -111,3 +113,5 @@ permalink: /kb/190/Q190197/
 	
 	=============================================================================
 	
+
+{% endraw %}

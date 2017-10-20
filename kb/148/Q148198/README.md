@@ -6,6 +6,8 @@ permalink: /kb/148/Q148198/
 
 ## Q148198: XADM: Where Newprof.exe Gets the Username
 
+{% raw %}
+
 	Article: Q148198
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -114,3 +116,5 @@ permalink: /kb/148/Q148198/
 	
 	=============================================================================
 	
+
+{% endraw %}

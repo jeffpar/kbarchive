@@ -6,6 +6,8 @@ permalink: /kb/174/Q174871/
 
 ## Q174871: Printer Shares Lost after Changing Server Name
 
+{% raw %}
+
 	Article: Q174871
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -121,3 +123,5 @@ permalink: /kb/174/Q174871/
 	
 	=============================================================================
 	
+
+{% endraw %}

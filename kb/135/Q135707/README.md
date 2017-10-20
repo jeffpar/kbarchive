@@ -6,6 +6,8 @@ permalink: /kb/135/Q135707/
 
 ## Q135707: Programs Run at Priority Level 15 May Cause Computer to Hang
 
+{% raw %}
+
 	Article: Q135707
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/135/Q135707/
 	
 	=============================================================================
 	
+
+{% endraw %}

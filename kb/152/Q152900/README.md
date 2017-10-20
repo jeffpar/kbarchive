@@ -6,6 +6,8 @@ permalink: /kb/152/Q152900/
 
 ## Q152900: XCON: MTA Event Id 248: Too Many ECBs Processed in One Thread
 
+{% raw %}
+
 	Article: Q152900
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/152/Q152900/
 	
 	=============================================================================
 	
+
+{% endraw %}

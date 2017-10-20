@@ -6,6 +6,8 @@ permalink: /kb/067/Q67886/
 
 ## Q67886: VAL() Fails When BASIC 7.10 NOFLTIN.OBJ Stub File Is Linked
 
+{% raw %}
+
 	Article: Q67886
 	Product(s): See article
 	Version(s): 7.10   | 7.10
@@ -33,3 +35,5 @@ permalink: /kb/067/Q67886/
 	
 	   BC STUB.BAS /O;
 	   LINK /NOE STUB.OBJ+NOFLTIN.OBJ;
+
+{% endraw %}

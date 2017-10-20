@@ -6,6 +6,8 @@ permalink: /kb/089/Q89972/
 
 ## Q89972: Sound Finder Does Not Use Uniform Naming Convention
 
+{% raw %}
+
 	Article: Q89972
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/089/Q89972/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139981/
 
 ## Q139981: IBM Model 80 Reboots Starting Windows NT 3.51
 
+{% raw %}
+
 	Article: Q139981
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -77,3 +79,5 @@ permalink: /kb/139/Q139981/
 	
 	=============================================================================
 	
+
+{% endraw %}

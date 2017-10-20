@@ -6,6 +6,8 @@ permalink: /kb/147/Q147706/
 
 ## Q147706: How to Disable LM Authentication on Windows NT
 
+{% raw %}
+
 	Article: Q147706
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.51,4.0
@@ -352,3 +354,5 @@ permalink: /kb/147/Q147706/
 	
 	=============================================================================
 	
+
+{% endraw %}

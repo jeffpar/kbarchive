@@ -6,6 +6,8 @@ permalink: /kb/067/Q67705/
 
 ## Q67705: User's Guide Incorrect on Configuring an 8086 or 8088 System
 
+{% raw %}
+
 	Article: Q67705
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -42,3 +44,5 @@ permalink: /kb/067/Q67705/
 	
 	=============================================================================
 	
+
+{% endraw %}

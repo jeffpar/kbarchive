@@ -6,6 +6,8 @@ permalink: /kb/171/Q171522/
 
 ## Q171522: FIX: Enums in Public Procedures Cause Binary Compatibility Error
 
+{% raw %}
+
 	Article: Q171522
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -97,3 +99,5 @@ permalink: /kb/171/Q171522/
 	
 	=============================================================================
 	
+
+{% endraw %}

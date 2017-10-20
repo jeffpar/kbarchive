@@ -6,6 +6,8 @@ permalink: /kb/236/Q236339/
 
 ## Q236339: Removing Custom DHCP Scope Option Sets Lease Duration to Zero
 
+{% raw %}
+
 	Article: Q236339
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5
@@ -70,3 +72,5 @@ permalink: /kb/236/Q236339/
 	
 	=============================================================================
 	
+
+{% endraw %}

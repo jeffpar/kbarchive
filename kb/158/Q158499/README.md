@@ -6,6 +6,8 @@ permalink: /kb/158/Q158499/
 
 ## Q158499: WD97: Cannot Use ScanProt with Word 97
 
+{% raw %}
+
 	Article: Q158499
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/158/Q158499/
 	
 	=============================================================================
 	
+
+{% endraw %}

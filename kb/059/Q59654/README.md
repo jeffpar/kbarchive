@@ -6,6 +6,8 @@ permalink: /kb/059/Q59654/
 
 ## Q59654: ALT+TAB Six-Second Delay in Real/Standard Modes
 
+{% raw %}
+
 	Article: Q59654
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -57,3 +59,5 @@ permalink: /kb/059/Q59654/
 	
 	=============================================================================
 	
+
+{% endraw %}

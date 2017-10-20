@@ -6,6 +6,8 @@ permalink: /kb/200/Q200380/
 
 ## Q200380: SMS: Y2K Testing on SMS Site Server Causes Problems
 
+{% raw %}
+
 	Article: Q200380
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -50,3 +52,5 @@ permalink: /kb/200/Q200380/
 	
 	=============================================================================
 	
+
+{% endraw %}

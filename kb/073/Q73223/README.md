@@ -6,6 +6,8 @@ permalink: /kb/073/Q73223/
 
 ## Q73223: Group Window Does Not Repaint Properly in Windows 3.0
 
+{% raw %}
+
 	Article: Q73223
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -67,3 +69,5 @@ permalink: /kb/073/Q73223/
 	
 	=============================================================================
 	
+
+{% endraw %}

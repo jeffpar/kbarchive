@@ -6,6 +6,8 @@ permalink: /kb/263/Q263238/
 
 ## Q263238: XFOR: Lotus Notes Connector May Not Work If ID File Has Password
 
+{% raw %}
+
 	Article: Q263238
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -72,3 +74,5 @@ permalink: /kb/263/Q263238/
 	
 	=============================================================================
 	
+
+{% endraw %}

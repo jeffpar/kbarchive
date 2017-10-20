@@ -6,6 +6,8 @@ permalink: /kb/191/Q191620/
 
 ## Q191620: Urban Assault: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q191620
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/191/Q191620/
 	
 	=============================================================================
 	
+
+{% endraw %}

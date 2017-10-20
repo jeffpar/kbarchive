@@ -6,6 +6,8 @@ permalink: /kb/163/Q163086/
 
 ## Q163086: IBM MWave 28800 Modem Does Not Function Properly with RAS
 
+{% raw %}
+
 	Article: Q163086
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:3.5 3.51
@@ -86,3 +88,5 @@ permalink: /kb/163/Q163086/
 	
 	=============================================================================
 	
+
+{% endraw %}

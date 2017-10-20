@@ -6,6 +6,8 @@ permalink: /kb/035/Q35260/
 
 ## Q35260: How to Write Selected Text to a File in M Editor
 
+{% raw %}
+
 	Article: Q35260
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -71,3 +73,5 @@ permalink: /kb/035/Q35260/
 	Enter and assign them as described above. To execute this set of
 	macros, select the text block or stream, execute the first macro, type
 	the desired filename, then execute the second macro.
+
+{% endraw %}

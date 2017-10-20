@@ -6,6 +6,8 @@ permalink: /kb/288/Q288323/
 
 ## Q288323: Web Browsers Receive &quot;HTTP 401.5&quot;  Using NT Challenge/Response
 
+{% raw %}
+
 	Article: Q288323
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/288/Q288323/
 	
 	=============================================================================
 	
+
+{% endraw %}

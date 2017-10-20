@@ -6,6 +6,8 @@ permalink: /kb/099/Q99379/
 
 ## Q99379: Configuring WFWG Workstations Through Novell Router
 
+{% raw %}
+
 	Article: Q99379
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/099/Q99379/
 	
 	=============================================================================
 	
+
+{% endraw %}

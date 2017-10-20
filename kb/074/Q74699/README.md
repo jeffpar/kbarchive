@@ -6,6 +6,8 @@ permalink: /kb/074/Q74699/
 
 ## Q74699: PRB: &quot;Export Not Defined&quot; Linker Message
 
+{% raw %}
+
 	Article: Q74699
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -52,3 +54,5 @@ permalink: /kb/074/Q74699/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188549/
 
 ## Q188549: SMS: Runtime Error R6005/R6009 During Inventory on Win95 Client
 
+{% raw %}
+
 	Article: Q188549
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -93,3 +95,5 @@ permalink: /kb/188/Q188549/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97417/
 
 ## Q97417: CHKDSK Err Msg Without Option to Correct: X Lost Cluster(s)
 
+{% raw %}
+
 	Article: Q97417
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -47,3 +49,5 @@ permalink: /kb/097/Q97417/
 	
 	=============================================================================
 	
+
+{% endraw %}

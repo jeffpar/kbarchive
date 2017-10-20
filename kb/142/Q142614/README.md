@@ -6,6 +6,8 @@ permalink: /kb/142/Q142614/
 
 ## Q142614: Internet Information Server SMTP Gateway Troubleshooting
 
+{% raw %}
+
 	Article: Q142614
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/142/Q142614/
 	
 	=============================================================================
 	
+
+{% endraw %}

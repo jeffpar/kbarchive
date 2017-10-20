@@ -6,6 +6,8 @@ permalink: /kb/115/Q115238/
 
 ## Q115238: HOWTO: Get and Set Diskette Media ID in VB for MS-DOS
 
+{% raw %}
+
 	Article: Q115238
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -102,3 +104,5 @@ permalink: /kb/115/Q115238/
 	
 	=============================================================================
 	
+
+{% endraw %}

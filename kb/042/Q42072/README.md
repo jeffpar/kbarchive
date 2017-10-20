@@ -6,6 +6,8 @@ permalink: /kb/042/Q42072/
 
 ## Q42072: Incorrect Usage of /o Switch in &quot;Peter Norton's Inside OS/2&quot;
 
+{% raw %}
+
 	Article: Q42072
 	Product(s): See article
 	Version(s): 5.10
@@ -24,3 +26,5 @@ permalink: /kb/042/Q42072/
 	This is incorrect. The /o option is an undocumented compiler switch
 	that allows you to name the executable file. It is the same as the /Fe
 	compiler switch.
+
+{% endraw %}

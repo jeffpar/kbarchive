@@ -6,6 +6,8 @@ permalink: /kb/077/Q77988/
 
 ## Q77988: Setup Disables OK Button If Directory Name Has Extension
 
+{% raw %}
+
 	Article: Q77988
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1991 edition
@@ -43,3 +45,5 @@ permalink: /kb/077/Q77988/
 	
 	=============================================================================
 	
+
+{% endraw %}

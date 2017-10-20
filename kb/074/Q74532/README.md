@@ -6,6 +6,8 @@ permalink: /kb/074/Q74532/
 
 ## Q74532: FIX: Near Call Between Segments Within a Group May Fail
 
+{% raw %}
+
 	Article: Q74532
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -116,3 +118,5 @@ permalink: /kb/074/Q74532/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85685/
 
 ## Q85685: MS-DOS Err Msg: Not Ready Reading Drive A
 
+{% raw %}
+
 	Article: Q85685
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -69,3 +71,5 @@ permalink: /kb/085/Q85685/
 	
 	=============================================================================
 	
+
+{% endraw %}

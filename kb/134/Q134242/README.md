@@ -6,6 +6,8 @@ permalink: /kb/134/Q134242/
 
 ## Q134242: FIX: Label Text Box Accepts Too Many Characters Without Error
 
+{% raw %}
+
 	Article: Q134242
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -100,3 +102,5 @@ permalink: /kb/134/Q134242/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129102/
 
 ## Q129102: Recovering Windows NT After a Boot Failure on an NTFS Drive
 
+{% raw %}
+
 	Article: Q129102
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -117,3 +119,5 @@ permalink: /kb/129/Q129102/
 	
 	=============================================================================
 	
+
+{% endraw %}

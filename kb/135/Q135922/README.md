@@ -6,6 +6,8 @@ permalink: /kb/135/Q135922/
 
 ## Q135922: Windows NT Registry Parameters for WINS
 
+{% raw %}
+
 	Article: Q135922
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -402,3 +404,5 @@ permalink: /kb/135/Q135922/
 	
 	=============================================================================
 	
+
+{% endraw %}

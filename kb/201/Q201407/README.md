@@ -6,6 +6,8 @@ permalink: /kb/201/Q201407/
 
 ## Q201407: STOP 0x7B After Applying Service Pack 4 on AST Manhattan
 
+{% raw %}
+
 	Article: Q201407
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a,4.5
@@ -59,3 +61,5 @@ permalink: /kb/201/Q201407/
 	
 	=============================================================================
 	
+
+{% endraw %}

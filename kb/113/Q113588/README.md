@@ -6,6 +6,8 @@ permalink: /kb/113/Q113588/
 
 ## Q113588: FIX: Assertion, VIEWSCRL.CPP, Line 455 with SetScaleToFitSize
 
+{% raw %}
+
 	Article: Q113588
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -90,3 +92,5 @@ permalink: /kb/113/Q113588/
 	
 	=============================================================================
 	
+
+{% endraw %}

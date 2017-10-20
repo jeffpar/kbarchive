@@ -6,6 +6,8 @@ permalink: /kb/140/Q140645/
 
 ## Q140645: WD97: Grammar Checker Runs Continuously (Screen Flickers)
 
+{% raw %}
+
 	Article: Q140645
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -75,3 +77,5 @@ permalink: /kb/140/Q140645/
 	
 	=============================================================================
 	
+
+{% endraw %}

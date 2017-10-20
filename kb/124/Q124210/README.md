@@ -6,6 +6,8 @@ permalink: /kb/124/Q124210/
 
 ## Q124210: Windows Sound System DDK Not Available on MSDN
 
+{% raw %}
+
 	Article: Q124210
 	Product(s): Microsoft Developer Network
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/124/Q124210/
 	
 	=============================================================================
 	
+
+{% endraw %}

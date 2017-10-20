@@ -6,6 +6,8 @@ permalink: /kb/270/Q270760/
 
 ## Q270760: ELL: Program Hangs When You Record in Virtual Challenge
 
+{% raw %}
+
 	Article: Q270760
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/270/Q270760/
 	
 	=============================================================================
 	
+
+{% endraw %}

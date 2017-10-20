@@ -6,6 +6,8 @@ permalink: /kb/150/Q150114/
 
 ## Q150114: XFOR: IMC Doesn't Appear to Use All Mail Exchangers
 
+{% raw %}
+
 	Article: Q150114
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -100,3 +102,5 @@ permalink: /kb/150/Q150114/
 	
 	=============================================================================
 	
+
+{% endraw %}

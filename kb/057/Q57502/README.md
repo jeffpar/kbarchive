@@ -6,6 +6,8 @@ permalink: /kb/057/Q57502/
 
 ## Q57502: LoadFont Function Example Documentation Error in BASIC 7.00
 
+{% raw %}
+
 	Article: Q57502
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -56,3 +58,5 @@ permalink: /kb/057/Q57502/
 	a$ = "Hello world"
 	var1% = OutGText%(100, 100, a$)
 	END
+
+{% endraw %}

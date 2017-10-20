@@ -6,6 +6,8 @@ permalink: /kb/255/Q255650/
 
 ## Q255650: Err Msg: HTTP 500.100 - Internal Server Error - ASP Error
 
+{% raw %}
+
 	Article: Q255650
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -110,3 +112,5 @@ permalink: /kb/255/Q255650/
 	
 	=============================================================================
 	
+
+{% endraw %}

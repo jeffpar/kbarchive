@@ -6,6 +6,8 @@ permalink: /kb/161/Q161832/
 
 ## Q161832: HOWTO: Export an Embedded .bmp Image into a File
 
+{% raw %}
+
 	Article: Q161832
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/161/Q161832/
 	
 	=============================================================================
 	
+
+{% endraw %}

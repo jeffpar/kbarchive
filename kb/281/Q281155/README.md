@@ -6,6 +6,8 @@ permalink: /kb/281/Q281155/
 
 ## Q281155: PRB: HDN_XXX Notifications Incorrectly Generated for CListView
 
+{% raw %}
+
 	Article: Q281155
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -138,3 +140,5 @@ permalink: /kb/281/Q281155/
 	
 	=============================================================================
 	
+
+{% endraw %}

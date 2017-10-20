@@ -6,6 +6,8 @@ permalink: /kb/107/Q107088/
 
 ## Q107088: FaxDrv: Send Fax Command Fails to Install in Word for Windows
 
+{% raw %}
+
 	Article: Q107088
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0a
@@ -76,3 +78,5 @@ permalink: /kb/107/Q107088/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/272/Q272489/
 
 ## Q272489: Plug-ins on MSN Companion
 
+{% raw %}
+
 	Article: Q272489
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -37,3 +39,5 @@ permalink: /kb/272/Q272489/
 	
 	=============================================================================
 	
+
+{% endraw %}

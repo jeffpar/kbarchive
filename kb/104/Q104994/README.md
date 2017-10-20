@@ -6,6 +6,8 @@ permalink: /kb/104/Q104994/
 
 ## Q104994: DBLSPACE /UNCOMPRESS Points to Zero-Byte DBLSPACE.LOG File
 
+{% raw %}
+
 	Article: Q104994
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -61,3 +63,5 @@ permalink: /kb/104/Q104994/
 	
 	=============================================================================
 	
+
+{% endraw %}

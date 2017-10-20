@@ -6,6 +6,8 @@ permalink: /kb/318/Q318225/
 
 ## Q318225: IIS May Return HTTP Status 401 Every 30 Days When Using Kerberos
 
+{% raw %}
+
 	Article: Q318225
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -112,3 +114,5 @@ permalink: /kb/318/Q318225/
 	
 	=============================================================================
 	
+
+{% endraw %}

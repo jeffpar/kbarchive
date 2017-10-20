@@ -6,6 +6,8 @@ permalink: /kb/107/Q107815/
 
 ## Q107815: NET START FULL Invokes Intel SatisFAXtion Fax Popup
 
+{% raw %}
+
 	Article: Q107815
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -59,3 +61,5 @@ permalink: /kb/107/Q107815/
 	
 	=============================================================================
 	
+
+{% endraw %}

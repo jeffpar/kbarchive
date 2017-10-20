@@ -6,6 +6,8 @@ permalink: /kb/064/Q64435/
 
 ## Q64435: PWB Hangs When Run with Some Communication Programs
 
+{% raw %}
+
 	Article: Q64435
 	Product(s): Microsoft Programming Utilities
 	Version(s): OS/2:1.0
@@ -33,3 +35,5 @@ permalink: /kb/064/Q64435/
 	
 	=============================================================================
 	
+
+{% endraw %}

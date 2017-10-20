@@ -6,6 +6,8 @@ permalink: /kb/036/Q36806/
 
 ## Q36806: Softkey String for KEY 10 Has 5-Character Maximum Display
 
+{% raw %}
+
 	Article: Q36806
 	Product(s): See article
 	Version(s): 1.00 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -44,3 +46,5 @@ permalink: /kb/036/Q36806/
 	The following function key labels display on the bottom of the screen:
 	
 	   1      2      3  . . .   8      9ABCDEF10abcde
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165709/
 
 ## Q165709: Error Message from Hotfix.exe: The Fix Is Already Installed
 
+{% raw %}
+
 	Article: Q165709
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -91,3 +93,5 @@ permalink: /kb/165/Q165709/
 	
 	=============================================================================
 	
+
+{% endraw %}

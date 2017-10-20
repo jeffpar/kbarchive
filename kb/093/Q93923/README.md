@@ -6,6 +6,8 @@ permalink: /kb/093/Q93923/
 
 ## Q93923: Error Using LOADHIGH (LH) With Third-Party Shell
 
+{% raw %}
+
 	Article: Q93923
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -62,3 +64,5 @@ permalink: /kb/093/Q93923/
 	
 	=============================================================================
 	
+
+{% endraw %}

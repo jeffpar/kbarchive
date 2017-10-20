@@ -6,6 +6,8 @@ permalink: /kb/131/Q131781/
 
 ## Q131781: Program Items Replaced With Question Marks After Migration
 
+{% raw %}
+
 	Article: Q131781
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -58,3 +60,5 @@ permalink: /kb/131/Q131781/
 	
 	=============================================================================
 	
+
+{% endraw %}

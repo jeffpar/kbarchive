@@ -6,6 +6,8 @@ permalink: /kb/275/Q275566/
 
 ## Q275566: PRB: Default Settings Change When Restarting Visual FoxPro
 
+{% raw %}
+
 	Article: Q275566
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -126,3 +128,5 @@ permalink: /kb/275/Q275566/
 	
 	=============================================================================
 	
+
+{% endraw %}

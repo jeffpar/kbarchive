@@ -6,6 +6,8 @@ permalink: /kb/093/Q93199/
 
 ## Q93199: SAMPLE: ChildMnu.exe Implements a Child Window with Menus
 
+{% raw %}
+
 	Article: Q93199
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -102,3 +104,5 @@ permalink: /kb/093/Q93199/
 	
 	=============================================================================
 	
+
+{% endraw %}

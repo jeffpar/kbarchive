@@ -6,6 +6,8 @@ permalink: /kb/120/Q120531/
 
 ## Q120531: Scenes 2.0: Copy a Collection to Disk Wizard Fails
 
+{% raw %}
+
 	Article: Q120531
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2.0
@@ -45,3 +47,5 @@ permalink: /kb/120/Q120531/
 	
 	=============================================================================
 	
+
+{% endraw %}

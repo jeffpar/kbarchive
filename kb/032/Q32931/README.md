@@ -6,6 +6,8 @@ permalink: /kb/032/Q32931/
 
 ## Q32931: Maze.exe Demonstrates DDE
 
+{% raw %}
+
 	Article: Q32931
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -63,3 +65,5 @@ permalink: /kb/032/Q32931/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/113/Q113257/
 
 ## Q113257: HOWTO: Create New Documents Without CWinApp::OnFileNew
 
+{% raw %}
+
 	Article: Q113257
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0,4.1,4.2,5.0,6.0
@@ -110,3 +112,5 @@ permalink: /kb/113/Q113257/
 	
 	=============================================================================
 	
+
+{% endraw %}

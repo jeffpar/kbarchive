@@ -6,6 +6,8 @@ permalink: /kb/273/Q273500/
 
 ## Q273500: Encarta 2000: Program Installs/Runs Slowly on System w/ Sony DVD
 
+{% raw %}
+
 	Article: Q273500
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0; :
@@ -77,3 +79,5 @@ permalink: /kb/273/Q273500/
 	
 	=============================================================================
 	
+
+{% endraw %}

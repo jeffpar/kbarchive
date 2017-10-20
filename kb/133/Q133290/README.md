@@ -6,6 +6,8 @@ permalink: /kb/133/Q133290/
 
 ## Q133290: Dogs: Control Menu Does Not Appear When Minimized
 
+{% raw %}
+
 	Article: Q133290
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,3.x
@@ -52,3 +54,5 @@ permalink: /kb/133/Q133290/
 	
 	=============================================================================
 	
+
+{% endraw %}

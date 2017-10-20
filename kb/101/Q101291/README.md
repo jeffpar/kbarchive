@@ -6,6 +6,8 @@ permalink: /kb/101/Q101291/
 
 ## Q101291: &quot;Invalid Function&quot; with CallFn() from FoxTools
 
+{% raw %}
+
 	Article: Q101291
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0
@@ -61,3 +63,5 @@ permalink: /kb/101/Q101291/
 	
 	=============================================================================
 	
+
+{% endraw %}

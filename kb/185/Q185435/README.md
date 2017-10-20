@@ -6,6 +6,8 @@ permalink: /kb/185/Q185435/
 
 ## Q185435: How to Establish AFTP Connectivity to an AS/400 or Mainframe
 
+{% raw %}
+
 	Article: Q185435
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -492,3 +494,5 @@ permalink: /kb/185/Q185435/
 	
 	=============================================================================
 	
+
+{% endraw %}

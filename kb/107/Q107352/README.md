@@ -6,6 +6,8 @@ permalink: /kb/107/Q107352/
 
 ## Q107352: CD Sampler: Err Msg: Not Present Fault
 
+{% raw %}
+
 	Article: Q107352
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): Fall 1993 edition
@@ -49,3 +51,5 @@ permalink: /kb/107/Q107352/
 	
 	=============================================================================
 	
+
+{% endraw %}

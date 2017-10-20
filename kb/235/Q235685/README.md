@@ -6,6 +6,8 @@ permalink: /kb/235/Q235685/
 
 ## Q235685: Rule Mapping Incorrectly Deleted
 
+{% raw %}
+
 	Article: Q235685
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/235/Q235685/
 	
 	=============================================================================
 	
+
+{% endraw %}

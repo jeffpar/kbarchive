@@ -6,6 +6,8 @@ permalink: /kb/187/Q187664/
 
 ## Q187664: Install Command Missing from .inf File Context Menu
 
+{% raw %}
+
 	Article: Q187664
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -106,3 +108,5 @@ permalink: /kb/187/Q187664/
 	
 	=============================================================================
 	
+
+{% endraw %}

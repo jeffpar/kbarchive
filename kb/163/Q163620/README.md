@@ -6,6 +6,8 @@ permalink: /kb/163/Q163620/
 
 ## Q163620: STOP 0x50 in Rdr.sys If Pathname Too Long in SMB
 
+{% raw %}
+
 	Article: Q163620
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/163/Q163620/
 	
 	=============================================================================
 	
+
+{% endraw %}

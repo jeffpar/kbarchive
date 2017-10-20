@@ -6,6 +6,8 @@ permalink: /kb/194/Q194962/
 
 ## Q194962: WINS Admin UI Overlaps Fields in Show Mappings Dialog Box
 
+{% raw %}
+
 	Article: Q194962
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/194/Q194962/
 	
 	=============================================================================
 	
+
+{% endraw %}

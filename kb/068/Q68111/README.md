@@ -6,6 +6,8 @@ permalink: /kb/068/Q68111/
 
 ## Q68111: No Mouse with GRDEMO.EXE Sample Program May Cause M6111
 
+{% raw %}
+
 	Article: Q68111
 	Product(s): See article
 	Version(s): 2.50 2.51
@@ -44,3 +46,5 @@ permalink: /kb/068/Q68111/
 	Microsoft has confirmed this to be a problem in QuickC versions 2.50
 	and 2.51. We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

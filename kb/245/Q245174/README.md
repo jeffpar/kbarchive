@@ -6,6 +6,8 @@ permalink: /kb/245/Q245174/
 
 ## Q245174: Account Operators Cannot Administer Certain User Accounts
 
+{% raw %}
+
 	Article: Q245174
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/245/Q245174/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137354/
 
 ## Q137354: Using Enumerated Properties in an OLE Control
 
+{% raw %}
+
 	Article: Q137354
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -87,9 +89,9 @@ permalink: /kb/137/Q137354/
 	    properties:
 	    // NOTE - ClassWizard will maintain property information here.
 	    //    Use extreme caution when editing this section.
-	    //{ {AFX_ODL_PROP(CEnumCtrl)
+	    //{{AFX_ODL_PROP(CEnumCtrl)
 	      [id(1)] enumLineStyle LineStyle;
-	    //} }AFX_ODL_PROP
+	    //}}AFX_ODL_PROP
 	
 	    ...
 	
@@ -143,3 +145,5 @@ permalink: /kb/137/Q137354/
 	
 	=============================================================================
 	
+
+{% endraw %}

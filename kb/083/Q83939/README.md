@@ -6,6 +6,8 @@ permalink: /kb/083/Q83939/
 
 ## Q83939: HOWTO: Print the Image of a Dialog Box
 
+{% raw %}
+
 	Article: Q83939
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -61,3 +63,5 @@ permalink: /kb/083/Q83939/
 	
 	=============================================================================
 	
+
+{% endraw %}

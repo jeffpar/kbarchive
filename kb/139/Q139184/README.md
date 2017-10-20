@@ -6,6 +6,8 @@ permalink: /kb/139/Q139184/
 
 ## Q139184: DOCERR: Picture Property Cannot Be Set to a General Field
 
+{% raw %}
+
 	Article: Q139184
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/139/Q139184/
 	
 	=============================================================================
 	
+
+{% endraw %}

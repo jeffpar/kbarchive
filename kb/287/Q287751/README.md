@@ -6,6 +6,8 @@ permalink: /kb/287/Q287751/
 
 ## Q287751: SNA WMI Provider Doesn't Allow TN Workstation/TNIPID to Be Added
 
+{% raw %}
+
 	Article: Q287751
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/287/Q287751/
 	
 	=============================================================================
 	
+
+{% endraw %}

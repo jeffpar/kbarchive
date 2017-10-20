@@ -6,6 +6,8 @@ permalink: /kb/137/Q137396/
 
 ## Q137396: Unable to Copy Files During Windows NT 3.51 Upgrade
 
+{% raw %}
+
 	Article: Q137396
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -105,3 +107,5 @@ permalink: /kb/137/Q137396/
 	
 	=============================================================================
 	
+
+{% endraw %}

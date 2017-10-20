@@ -6,6 +6,8 @@ permalink: /kb/176/Q176988/
 
 ## Q176988: Programs Folder Empty in Windows NT 4.0 with System Policies
 
+{% raw %}
+
 	Article: Q176988
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -98,3 +100,5 @@ permalink: /kb/176/Q176988/
 	
 	=============================================================================
 	
+
+{% endraw %}

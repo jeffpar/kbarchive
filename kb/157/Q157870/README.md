@@ -6,6 +6,8 @@ permalink: /kb/157/Q157870/
 
 ## Q157870: STL Sample for the next_permutation Function
 
+{% raw %}
+
 	Article: Q157870
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -162,3 +164,5 @@ permalink: /kb/157/Q157870/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/315/Q315611/
 
 ## Q315611: Train Simulator: Err Msg: Full Install Requires 0 MB to Install
 
+{% raw %}
+
 	Article: Q315611
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -120,3 +122,5 @@ permalink: /kb/315/Q315611/
 	
 	=============================================================================
 	
+
+{% endraw %}

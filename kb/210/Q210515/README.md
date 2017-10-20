@@ -6,6 +6,8 @@ permalink: /kb/210/Q210515/
 
 ## Q210515: Golf 99: Distance Displayed on Screen Does Not Match Scorecard
 
+{% raw %}
+
 	Article: Q210515
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -52,3 +54,5 @@ permalink: /kb/210/Q210515/
 	
 	=============================================================================
 	
+
+{% endraw %}

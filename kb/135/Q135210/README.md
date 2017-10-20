@@ -6,6 +6,8 @@ permalink: /kb/135/Q135210/
 
 ## Q135210: Setup May Hang Detecting MV Premium 3-D SCSI Adapter
 
+{% raw %}
+
 	Article: Q135210
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -50,3 +52,5 @@ permalink: /kb/135/Q135210/
 	
 	=============================================================================
 	
+
+{% endraw %}

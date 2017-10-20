@@ -6,6 +6,8 @@ permalink: /kb/112/Q112214/
 
 ## Q112214: Trusting Domain Shows Trust Failure or &quot;Account Unknown&quot;
 
+{% raw %}
+
 	Article: Q112214
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -70,3 +72,5 @@ permalink: /kb/112/Q112214/
 	
 	=============================================================================
 	
+
+{% endraw %}

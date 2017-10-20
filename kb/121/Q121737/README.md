@@ -6,6 +6,8 @@ permalink: /kb/121/Q121737/
 
 ## Q121737: TCP/IP Printing Supports Only Berkeley Style Daemons (RFC1179)
 
+{% raw %}
+
 	Article: Q121737
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.50
@@ -56,3 +58,5 @@ permalink: /kb/121/Q121737/
 	
 	=============================================================================
 	
+
+{% endraw %}

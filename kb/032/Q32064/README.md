@@ -6,6 +6,8 @@ permalink: /kb/032/Q32064/
 
 ## Q32064: Mouse, Windows, Desqview, and HP Drawing Gallery
 
+{% raw %}
+
 	Article: Q32064
 	Product(s): See article
 	Version(s): 6.00 6.10 6.14
@@ -19,3 +21,5 @@ permalink: /kb/032/Q32064/
 	   To correct this problem, modify the PIF file included with the
 	program. Under the Directly Modifies section, select Memory in
 	addition to Screen.
+
+{% endraw %}

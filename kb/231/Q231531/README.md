@@ -6,6 +6,8 @@ permalink: /kb/231/Q231531/
 
 ## Q231531: MapPoint: Cannot Save Map as Web Page to Network Server
 
+{% raw %}
+
 	Article: Q231531
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/231/Q231531/
 	
 	=============================================================================
 	
+
+{% endraw %}

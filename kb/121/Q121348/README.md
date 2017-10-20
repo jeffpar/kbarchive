@@ -6,6 +6,8 @@ permalink: /kb/121/Q121348/
 
 ## Q121348: Err Msg: Cardware Requires 386 Enhanced Mode
 
+{% raw %}
+
 	Article: Q121348
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/121/Q121348/
 	
 	=============================================================================
 	
+
+{% endraw %}

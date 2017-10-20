@@ -6,6 +6,8 @@ permalink: /kb/166/Q166771/
 
 ## Q166771: SMS:  How to Force Site-Wide Client Updates
 
+{% raw %}
+
 	Article: Q166771
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -140,3 +142,5 @@ permalink: /kb/166/Q166771/
 	
 	=============================================================================
 	
+
+{% endraw %}

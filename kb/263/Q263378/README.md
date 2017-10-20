@@ -6,6 +6,8 @@ permalink: /kb/263/Q263378/
 
 ## Q263378: SMS: Software Distribution 'Stop Program' Does Not Work Properly
 
+{% raw %}
+
 	Article: Q263378
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP1,2.0 SP2
@@ -55,3 +57,5 @@ permalink: /kb/263/Q263378/
 	
 	=============================================================================
 	
+
+{% endraw %}

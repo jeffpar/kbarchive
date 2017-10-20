@@ -6,6 +6,8 @@ permalink: /kb/169/Q169873/
 
 ## Q169873: WD97: Object in Header Causes Object in Document to Reposition
 
+{% raw %}
+
 	Article: Q169873
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -64,3 +66,5 @@ permalink: /kb/169/Q169873/
 	
 	=============================================================================
 	
+
+{% endraw %}

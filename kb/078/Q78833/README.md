@@ -6,6 +6,8 @@ permalink: /kb/078/Q78833/
 
 ## Q78833: PC Adm: Summary of Administration Program Error Messages
 
+{% raw %}
+
 	Article: Q78833
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1
@@ -211,3 +213,5 @@ permalink: /kb/078/Q78833/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180620/
 
 ## Q180620: APPC or CPIC Performance Is Degraded When Using Host Security
 
+{% raw %}
+
 	Article: Q180620
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -68,3 +70,5 @@ permalink: /kb/180/Q180620/
 	
 	=============================================================================
 	
+
+{% endraw %}

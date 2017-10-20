@@ -6,6 +6,8 @@ permalink: /kb/250/Q250400/
 
 ## Q250400: XADM: DXANOTES Writes Mail Server Data to the Personal Document
 
+{% raw %}
+
 	Article: Q250400
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -65,3 +67,5 @@ permalink: /kb/250/Q250400/
 	
 	=============================================================================
 	
+
+{% endraw %}

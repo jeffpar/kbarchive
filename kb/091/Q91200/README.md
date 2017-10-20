@@ -6,6 +6,8 @@ permalink: /kb/091/Q91200/
 
 ## Q91200: How To: Setting Up a Resource in Schedule+ with WFWG
 
+{% raw %}
+
 	Article: Q91200
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:1.0,3.1,3.11
@@ -101,3 +103,5 @@ permalink: /kb/091/Q91200/
 	
 	=============================================================================
 	
+
+{% endraw %}

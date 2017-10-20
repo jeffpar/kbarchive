@@ -6,6 +6,8 @@ permalink: /kb/240/Q240331/
 
 ## Q240331: List of Bugs Fixed in Terminal Server Edition Service Pack 5
 
+{% raw %}
+
 	Article: Q240331
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP5
@@ -153,3 +155,5 @@ permalink: /kb/240/Q240331/
 	
 	=============================================================================
 	
+
+{% endraw %}

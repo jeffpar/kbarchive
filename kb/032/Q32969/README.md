@@ -6,6 +6,8 @@ permalink: /kb/032/Q32969/
 
 ## Q32969: Problem Passing Array in COMMON Also in SUB Argument in .QLB
 
+{% raw %}
+
 	Article: Q32969
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -61,3 +63,5 @@ permalink: /kb/032/Q32969/
 	     SUB qstnaire (question$()) STATIC
 	     PRINT question$(i);
 	     END SUB
+
+{% endraw %}

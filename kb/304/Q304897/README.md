@@ -6,6 +6,8 @@ permalink: /kb/304/Q304897/
 
 ## Q304897: XIMS: Microsoft SMTP Servers May Seem to Accept and Relay E-Mail
 
+{% raw %}
+
 	Article: Q304897
 	Product(s): Microsoft Exchange
 	Version(s): 2000,4.0,5.0,5.5,SP1
@@ -329,3 +331,5 @@ permalink: /kb/304/Q304897/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245164/
 
 ## Q245164: Imaging Program May Not Load Some TIFF Files
 
+{% raw %}
+
 	Article: Q245164
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -91,3 +93,5 @@ permalink: /kb/245/Q245164/
 	
 	=============================================================================
 	
+
+{% endraw %}

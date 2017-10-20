@@ -6,6 +6,8 @@ permalink: /kb/173/Q173732/
 
 ## Q173732: PPT7: Text Prints Slanted, Truncated to Tektronix Phaser Printer
 
+{% raw %}
+
 	Article: Q173732
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -59,3 +61,5 @@ permalink: /kb/173/Q173732/
 	
 	=============================================================================
 	
+
+{% endraw %}

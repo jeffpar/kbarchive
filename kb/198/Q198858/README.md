@@ -6,6 +6,8 @@ permalink: /kb/198/Q198858/
 
 ## Q198858: BUG: Cannot Do Inserts to Oracle Tables With Mixed Case Column N
 
+{% raw %}
+
 	Article: Q198858
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -110,3 +112,5 @@ permalink: /kb/198/Q198858/
 	
 	=============================================================================
 	
+
+{% endraw %}

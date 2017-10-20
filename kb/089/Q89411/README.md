@@ -6,6 +6,8 @@ permalink: /kb/089/Q89411/
 
 ## Q89411: PROTMAN.DOS Hangs Computer with DR DOS Version 6.0
 
+{% raw %}
+
 	Article: Q89411
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -71,3 +73,5 @@ permalink: /kb/089/Q89411/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136902/
 
 ## Q136902: HOWTO: Create a 3-D Surface Graph in Visual FoxPro
 
+{% raw %}
+
 	Article: Q136902
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -80,3 +82,5 @@ permalink: /kb/136/Q136902/
 	
 	=============================================================================
 	
+
+{% endraw %}

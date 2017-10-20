@@ -6,6 +6,8 @@ permalink: /kb/175/Q175461/
 
 ## Q175461: Camcorder Files Do Not Play Correctly
 
+{% raw %}
+
 	Article: Q175461
 	Product(s): Microsoft Press
 	Version(s): 
@@ -122,3 +124,5 @@ permalink: /kb/175/Q175461/
 	
 	=============================================================================
 	
+
+{% endraw %}

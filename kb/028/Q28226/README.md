@@ -6,6 +6,8 @@ permalink: /kb/028/Q28226/
 
 ## Q28226: DOCERR: Division Rather than Multiplication
 
+{% raw %}
+
 	Article: Q28226
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a
@@ -38,3 +40,5 @@ permalink: /kb/028/Q28226/
 	
 	=============================================================================
 	
+
+{% endraw %}

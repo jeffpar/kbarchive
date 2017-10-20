@@ -6,6 +6,8 @@ permalink: /kb/217/Q217044/
 
 ## Q217044: SMS: Server Uninstall Doesn't Remove All Components
 
+{% raw %}
+
 	Article: Q217044
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -118,3 +120,5 @@ permalink: /kb/217/Q217044/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181721/
 
 ## Q181721: XCON: Messages Not Delivered Over an Association
 
+{% raw %}
+
 	Article: Q181721
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:4.0,5.0,5.5
@@ -94,3 +96,5 @@ permalink: /kb/181/Q181721/
 	
 	=============================================================================
 	
+
+{% endraw %}

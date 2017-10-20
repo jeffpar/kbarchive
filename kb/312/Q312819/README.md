@@ -6,6 +6,8 @@ permalink: /kb/312/Q312819/
 
 ## Q312819: SNA Server Fails Unexpectedly With Access Violation in S1PUC62
 
+{% raw %}
+
 	Article: Q312819
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0
@@ -148,3 +150,5 @@ permalink: /kb/312/Q312819/
 	
 	=============================================================================
 	
+
+{% endraw %}

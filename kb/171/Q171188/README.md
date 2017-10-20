@@ -6,6 +6,8 @@ permalink: /kb/171/Q171188/
 
 ## Q171188: How To Enable the Slow Network Time Out Value
 
+{% raw %}
+
 	Article: Q171188
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -102,3 +104,5 @@ permalink: /kb/171/Q171188/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194993/
 
 ## Q194993: Calling Card Settings Ignored by Phone Dialer
 
+{% raw %}
+
 	Article: Q194993
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/194/Q194993/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160370/
 
 ## Q160370: Stop Screen 0x00000050 Caused by Fs_rec.sys
 
+{% raw %}
+
 	Article: Q160370
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/160/Q160370/
 	
 	=============================================================================
 	
+
+{% endraw %}

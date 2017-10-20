@@ -6,6 +6,8 @@ permalink: /kb/181/Q181594/
 
 ## Q181594: Windows 95 Can Access Up to Two GB of RAM
 
+{% raw %}
+
 	Article: Q181594
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -41,3 +43,5 @@ permalink: /kb/181/Q181594/
 	
 	=============================================================================
 	
+
+{% endraw %}

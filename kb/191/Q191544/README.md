@@ -6,6 +6,8 @@ permalink: /kb/191/Q191544/
 
 ## Q191544: Urban Assault: Occupied Vehicle Is Not Transported to Next Level
 
+{% raw %}
+
 	Article: Q191544
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/191/Q191544/
 	
 	=============================================================================
 	
+
+{% endraw %}

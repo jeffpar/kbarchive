@@ -6,6 +6,8 @@ permalink: /kb/139/Q139126/
 
 ## Q139126: How To Connect to NetWare Resources through a RAS Connection
 
+{% raw %}
+
 	Article: Q139126
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:; winnt:3.5,3.51
@@ -161,3 +163,5 @@ permalink: /kb/139/Q139126/
 	
 	=============================================================================
 	
+
+{% endraw %}

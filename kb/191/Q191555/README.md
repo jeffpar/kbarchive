@@ -6,6 +6,8 @@ permalink: /kb/191/Q191555/
 
 ## Q191555: Urban Assault: Progress Is Lost When You Click &quot;Last Saved&quot;
 
+{% raw %}
+
 	Article: Q191555
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -56,3 +58,5 @@ permalink: /kb/191/Q191555/
 	
 	=============================================================================
 	
+
+{% endraw %}

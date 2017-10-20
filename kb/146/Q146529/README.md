@@ -6,6 +6,8 @@ permalink: /kb/146/Q146529/
 
 ## Q146529: WD97: High Network Traffic When You Check Spelling (Novell)
 
+{% raw %}
+
 	Article: Q146529
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/146/Q146529/
 	
 	=============================================================================
 	
+
+{% endraw %}

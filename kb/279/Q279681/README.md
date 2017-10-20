@@ -6,6 +6,8 @@ permalink: /kb/279/Q279681/
 
 ## Q279681: How to Force SSL Encryption for an OWA 2000 Client
 
+{% raw %}
+
 	Article: Q279681
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -119,3 +121,5 @@ permalink: /kb/279/Q279681/
 	
 	=============================================================================
 	
+
+{% endraw %}

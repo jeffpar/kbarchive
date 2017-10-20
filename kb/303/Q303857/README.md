@@ -6,6 +6,8 @@ permalink: /kb/303/Q303857/
 
 ## Q303857: Flight Simulator: Can't Add Planes from Combat Flight Simulator
 
+{% raw %}
+
 	Article: Q303857
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -92,3 +94,5 @@ permalink: /kb/303/Q303857/
 	
 	=============================================================================
 	
+
+{% endraw %}

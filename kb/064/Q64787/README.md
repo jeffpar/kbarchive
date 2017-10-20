@@ -6,6 +6,8 @@ permalink: /kb/064/Q64787/
 
 ## Q64787: How to Run QuickBASIC 4.50 on Two Floppy System (No Hard Disk)
 
+{% raw %}
+
 	Article: Q64787
 	Product(s): See article
 	Version(s): 4.50
@@ -226,3 +228,5 @@ permalink: /kb/064/Q64787/
 	
 	Note: COMMAND.COM is the program that processes all command-line
 	arguments that you type in MS-DOS.
+
+{% endraw %}

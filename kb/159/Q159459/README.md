@@ -6,6 +6,8 @@ permalink: /kb/159/Q159459/
 
 ## Q159459: NWCONV Does Not Transfer Queue Operator Group
 
+{% raw %}
+
 	Article: Q159459
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -47,3 +49,5 @@ permalink: /kb/159/Q159459/
 	
 	=============================================================================
 	
+
+{% endraw %}

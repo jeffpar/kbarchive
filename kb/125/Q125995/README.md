@@ -6,6 +6,8 @@ permalink: /kb/125/Q125995/
 
 ## Q125995: Lanman BDC Synchronization Problems in Windows NT Domains
 
+{% raw %}
+
 	Article: Q125995
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2.1,2.1a,2.2x,3.5
@@ -116,3 +118,5 @@ permalink: /kb/125/Q125995/
 	
 	=============================================================================
 	
+
+{% endraw %}

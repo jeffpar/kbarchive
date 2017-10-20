@@ -6,6 +6,8 @@ permalink: /kb/094/Q94867/
 
 ## Q94867: Err Msg after Running MemMaker: Double-Buffering Driver...
 
+{% raw %}
+
 	Article: Q94867
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -63,3 +65,5 @@ permalink: /kb/094/Q94867/
 	
 	=============================================================================
 	
+
+{% endraw %}

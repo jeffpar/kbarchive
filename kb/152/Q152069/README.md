@@ -6,6 +6,8 @@ permalink: /kb/152/Q152069/
 
 ## Q152069: XCLN: Can't Save Multiple Attachments From Exchange
 
+{% raw %}
+
 	Article: Q152069
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -54,3 +56,5 @@ permalink: /kb/152/Q152069/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143137/
 
 ## Q143137: How to temporarily disable logons/connections
 
+{% raw %}
+
 	Article: Q143137
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -44,3 +46,5 @@ permalink: /kb/143/Q143137/
 	
 	=============================================================================
 	
+
+{% endraw %}

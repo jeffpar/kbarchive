@@ -6,6 +6,8 @@ permalink: /kb/193/Q193258/
 
 ## Q193258: XADM: DBCS Text in Bulleted List Not Displayed Properly
 
+{% raw %}
+
 	Article: Q193258
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1
@@ -76,3 +78,5 @@ permalink: /kb/193/Q193258/
 	
 	=============================================================================
 	
+
+{% endraw %}

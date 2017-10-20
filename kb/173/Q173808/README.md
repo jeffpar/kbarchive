@@ -6,6 +6,8 @@ permalink: /kb/173/Q173808/
 
 ## Q173808: XADM: Cannot Log On If Mailbox Name Appears Anonymously
 
+{% raw %}
+
 	Article: Q173808
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -48,3 +50,5 @@ permalink: /kb/173/Q173808/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/115/Q115888/
 
 ## Q115888: How to Force a Hung Macintosh Application to Quit
 
+{% raw %}
+
 	Article: Q115888
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -58,3 +60,5 @@ permalink: /kb/115/Q115888/
 	
 	=============================================================================
 	
+
+{% endraw %}

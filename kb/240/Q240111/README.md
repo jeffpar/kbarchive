@@ -6,6 +6,8 @@ permalink: /kb/240/Q240111/
 
 ## Q240111: NBA Inside Drive 2000: Mouse Pointer Hangs or Is Duplicated
 
+{% raw %}
+
 	Article: Q240111
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/240/Q240111/
 	
 	=============================================================================
 	
+
+{% endraw %}

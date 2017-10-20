@@ -6,6 +6,8 @@ permalink: /kb/062/Q62048/
 
 ## Q62048: Reasons for MS-DOS &quot;File Allocation Table Bad&quot; Error Message
 
+{% raw %}
+
 	Article: Q62048
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x
@@ -51,3 +53,5 @@ permalink: /kb/062/Q62048/
 	
 	=============================================================================
 	
+
+{% endraw %}

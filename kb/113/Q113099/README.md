@@ -6,6 +6,8 @@ permalink: /kb/113/Q113099/
 
 ## Q113099: Bookshelf: Footnotes Not Included When Tables Printed/Copied
 
+{% raw %}
+
 	Article: Q113099
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,1995 edition
@@ -39,3 +41,5 @@ permalink: /kb/113/Q113099/
 	
 	=============================================================================
 	
+
+{% endraw %}

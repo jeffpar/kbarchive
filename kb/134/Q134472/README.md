@@ -6,6 +6,8 @@ permalink: /kb/134/Q134472/
 
 ## Q134472: Device Resources Not Updated with Forced Configuration
 
+{% raw %}
+
 	Article: Q134472
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/134/Q134472/
 	
 	=============================================================================
 	
+
+{% endraw %}

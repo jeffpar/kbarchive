@@ -6,6 +6,8 @@ permalink: /kb/286/Q286216/
 
 ## Q286216: XADM: Error Message When Modifying a Remote Distribution List
 
+{% raw %}
+
 	Article: Q286216
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP4
@@ -89,3 +91,5 @@ permalink: /kb/286/Q286216/
 	
 	=============================================================================
 	
+
+{% endraw %}

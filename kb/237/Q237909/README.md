@@ -6,6 +6,8 @@ permalink: /kb/237/Q237909/
 
 ## Q237909: XADM: Error Listed in Output File for KM Server Bulk Enrollment
 
+{% raw %}
+
 	Article: Q237909
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -67,3 +69,5 @@ permalink: /kb/237/Q237909/
 	
 	=============================================================================
 	
+
+{% endraw %}

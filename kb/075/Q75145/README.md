@@ -6,6 +6,8 @@ permalink: /kb/075/Q75145/
 
 ## Q75145: Using Serial Microsoft Mouse with Bus Mouse Card Installed
 
+{% raw %}
+
 	Article: Q75145
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.20,3.21,3.30,3.30a,4.0,4.01,4.01a,5.0
@@ -39,3 +41,5 @@ permalink: /kb/075/Q75145/
 	
 	=============================================================================
 	
+
+{% endraw %}

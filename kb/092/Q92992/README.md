@@ -6,6 +6,8 @@ permalink: /kb/092/Q92992/
 
 ## Q92992: Thomas Conrad 5043 May Not Emulate NE2000 Properly
 
+{% raw %}
+
 	Article: Q92992
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -74,3 +76,5 @@ permalink: /kb/092/Q92992/
 	
 	=============================================================================
 	
+
+{% endraw %}

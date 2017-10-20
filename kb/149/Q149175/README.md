@@ -6,6 +6,8 @@ permalink: /kb/149/Q149175/
 
 ## Q149175: Font, Cursor, and Redraw Problems with Adobe Type Manager
 
+{% raw %}
+
 	Article: Q149175
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -67,3 +69,5 @@ permalink: /kb/149/Q149175/
 	
 	=============================================================================
 	
+
+{% endraw %}

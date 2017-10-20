@@ -6,6 +6,8 @@ permalink: /kb/163/Q163029/
 
 ## Q163029: FIX: Default Value Does Not Update Table in Local/Remote View
 
+{% raw %}
+
 	Article: Q163029
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0b
@@ -110,3 +112,5 @@ permalink: /kb/163/Q163029/
 	
 	=============================================================================
 	
+
+{% endraw %}

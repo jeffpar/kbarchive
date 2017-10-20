@@ -6,6 +6,8 @@ permalink: /kb/136/Q136336/
 
 ## Q136336: Windows NT Fails Because of an Access Violation in WINLOGON
 
+{% raw %}
+
 	Article: Q136336
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -74,3 +76,5 @@ permalink: /kb/136/Q136336/
 	
 	=============================================================================
 	
+
+{% endraw %}

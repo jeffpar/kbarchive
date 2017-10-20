@@ -6,6 +6,8 @@ permalink: /kb/229/Q229647/
 
 ## Q229647: RPC, RAS, PPTP (40-bit) Encryption Added to Windows NT 4.0 Frenc
 
+{% raw %}
+
 	Article: Q229647
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -101,3 +103,5 @@ permalink: /kb/229/Q229647/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188702/
 
 ## Q188702: Epson Stylus 800 Not Compatible with Epson Stylus COLOR 800
 
+{% raw %}
+
 	Article: Q188702
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a
@@ -45,3 +47,5 @@ permalink: /kb/188/Q188702/
 	
 	=============================================================================
 	
+
+{% endraw %}

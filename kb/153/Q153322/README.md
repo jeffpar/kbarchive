@@ -6,6 +6,8 @@ permalink: /kb/153/Q153322/
 
 ## Q153322: Remote Control GPF Using Adobe ATM Fonts
 
+{% raw %}
+
 	Article: Q153322
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -47,3 +49,5 @@ permalink: /kb/153/Q153322/
 	
 	=============================================================================
 	
+
+{% endraw %}

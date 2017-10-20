@@ -6,6 +6,8 @@ permalink: /kb/090/Q90190/
 
 ## Q90190: Changes Made to SYSTEM.INI by Sound Master II Board
 
+{% raw %}
+
 	Article: Q90190
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -72,3 +74,5 @@ permalink: /kb/090/Q90190/
 	
 	=============================================================================
 	
+
+{% endraw %}

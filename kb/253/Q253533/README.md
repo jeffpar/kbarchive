@@ -6,6 +6,8 @@ permalink: /kb/253/Q253533/
 
 ## Q253533: Using the Person Entry Count to Determine the Number of Users
 
+{% raw %}
+
 	Article: Q253533
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -50,3 +52,5 @@ permalink: /kb/253/Q253533/
 	
 	=============================================================================
 	
+
+{% endraw %}

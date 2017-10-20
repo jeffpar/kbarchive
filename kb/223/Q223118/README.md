@@ -6,6 +6,8 @@ permalink: /kb/223/Q223118/
 
 ## Q223118: FIX: PSET Method Is Slower in Visual Basic 6.0
 
+{% raw %}
+
 	Article: Q223118
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -130,3 +132,5 @@ permalink: /kb/223/Q223118/
 	
 	=============================================================================
 	
+
+{% endraw %}

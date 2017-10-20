@@ -6,6 +6,8 @@ permalink: /kb/087/Q87020/
 
 ## Q87020: INFO: New C++ Type Conversions May Generate C2446 or C2664
 
+{% raw %}
+
 	Article: Q87020
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0
@@ -127,3 +129,5 @@ permalink: /kb/087/Q87020/
 	
 	=============================================================================
 	
+
+{% endraw %}

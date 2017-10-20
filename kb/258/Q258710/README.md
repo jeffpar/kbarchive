@@ -6,6 +6,8 @@ permalink: /kb/258/Q258710/
 
 ## Q258710: World Atlas Err Msg: ...Invalid Page Fault in Kernel32.dll...
 
+{% raw %}
+
 	Article: Q258710
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -119,3 +121,5 @@ permalink: /kb/258/Q258710/
 	
 	=============================================================================
 	
+
+{% endraw %}

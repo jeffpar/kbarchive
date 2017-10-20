@@ -6,6 +6,8 @@ permalink: /kb/050/Q50547/
 
 ## Q50547: White Text Prints in Black
 
+{% raw %}
+
 	Article: Q50547
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -36,3 +38,5 @@ permalink: /kb/050/Q50547/
 	
 	=============================================================================
 	
+
+{% endraw %}

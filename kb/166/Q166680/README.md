@@ -6,6 +6,8 @@ permalink: /kb/166/Q166680/
 
 ## Q166680: PRB: Read-Only Visual SourceSafe User Can Modify Web Projects
 
+{% raw %}
+
 	Article: Q166680
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:1.0,5.0,6.0
@@ -88,3 +90,5 @@ permalink: /kb/166/Q166680/
 	
 	=============================================================================
 	
+
+{% endraw %}

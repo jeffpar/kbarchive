@@ -6,6 +6,8 @@ permalink: /kb/317/Q317902/
 
 ## Q317902: Games: Support for Tools and Third Party Products
 
+{% raw %}
+
 	Article: Q317902
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -122,3 +124,5 @@ permalink: /kb/317/Q317902/
 	
 	=============================================================================
 	
+
+{% endraw %}

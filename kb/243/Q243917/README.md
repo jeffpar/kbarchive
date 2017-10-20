@@ -6,6 +6,8 @@ permalink: /kb/243/Q243917/
 
 ## Q243917: SNA Workstation 4.0 Access Violation When SnaBase Ends
 
+{% raw %}
+
 	Article: Q243917
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -76,3 +78,5 @@ permalink: /kb/243/Q243917/
 	
 	=============================================================================
 	
+
+{% endraw %}

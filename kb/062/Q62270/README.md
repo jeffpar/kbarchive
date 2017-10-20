@@ -6,6 +6,8 @@ permalink: /kb/062/Q62270/
 
 ## Q62270: Problem with SCREEN 0 Paging on CGA in QB.EXE &amp; QBX.EXE
 
+{% raw %}
+
 	Article: Q62270
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -43,3 +45,5 @@ permalink: /kb/062/Q62270/
 	      x = x + 1          ' Press F4 key to view the output screen
 	      IF x = 8 THEN x = 0
 	   LOOP
+
+{% endraw %}

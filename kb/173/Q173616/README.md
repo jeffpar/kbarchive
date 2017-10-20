@@ -6,6 +6,8 @@ permalink: /kb/173/Q173616/
 
 ## Q173616: Update.exe Does Not Copy All Windows 3.x Client Files
 
+{% raw %}
+
 	Article: Q173616
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -138,3 +140,5 @@ permalink: /kb/173/Q173616/
 	
 	=============================================================================
 	
+
+{% endraw %}

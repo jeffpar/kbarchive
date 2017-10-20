@@ -6,6 +6,8 @@ permalink: /kb/179/Q179492/
 
 ## Q179492: PRB: Error Message &quot;MSVBVM50.dll Not Found&quot;
 
+{% raw %}
+
 	Article: Q179492
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -74,3 +76,5 @@ permalink: /kb/179/Q179492/
 	
 	=============================================================================
 	
+
+{% endraw %}

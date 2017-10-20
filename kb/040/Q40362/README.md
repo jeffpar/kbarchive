@@ -6,6 +6,8 @@ permalink: /kb/040/Q40362/
 
 ## Q40362: Programs LINKed with Incorrect Version of LINK.EXE May Hang
 
+{% raw %}
+
 	Article: Q40362
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -24,3 +26,5 @@ permalink: /kb/040/Q40362/
 	This information applies to Microsoft QuickBASIC Versions 4.00, 4.00b,
 	and 4.50, Microsoft BASIC Compiler Versions 6.00 and 6.00b for MS-DOS
 	and MS OS/2, and Microsoft BASIC PDS Version 7.00 for MS-DOS and OS/2.
+
+{% endraw %}

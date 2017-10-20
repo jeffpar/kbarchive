@@ -6,6 +6,8 @@ permalink: /kb/132/Q132658/
 
 ## Q132658: Shortcut to Deleted NetWare File May Open Wrong File
 
+{% raw %}
+
 	Article: Q132658
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -55,3 +57,5 @@ permalink: /kb/132/Q132658/
 	
 	=============================================================================
 	
+
+{% endraw %}

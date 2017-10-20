@@ -6,6 +6,8 @@ permalink: /kb/278/Q278638/
 
 ## Q278638: MSN Companion Web page display and toolbar
 
+{% raw %}
+
 	Article: Q278638
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -70,3 +72,5 @@ permalink: /kb/278/Q278638/
 	
 	=============================================================================
 	
+
+{% endraw %}

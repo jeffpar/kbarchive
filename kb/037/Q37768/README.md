@@ -6,6 +6,8 @@ permalink: /kb/037/Q37768/
 
 ## Q37768: READ/DATA Statement Slower in QB 4.00 &amp; BC 6.00 Than QB 3.00
 
+{% raw %}
+
 	Article: Q37768
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -45,3 +47,5 @@ permalink: /kb/037/Q37768/
 	   extended environment included with Microsoft BASIC PDS Version
 	   7.00, the support is generalized to allow for DATA statements in
 	   Quick libraries.
+
+{% endraw %}

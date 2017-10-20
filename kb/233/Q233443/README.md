@@ -6,6 +6,8 @@ permalink: /kb/233/Q233443/
 
 ## Q233443: Business Planner: Data Is Deleted from Field in Wizard Interview
 
+{% raw %}
+
 	Article: Q233443
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -67,3 +69,5 @@ permalink: /kb/233/Q233443/
 	
 	=============================================================================
 	
+
+{% endraw %}

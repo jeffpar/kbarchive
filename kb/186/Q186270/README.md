@@ -6,6 +6,8 @@ permalink: /kb/186/Q186270/
 
 ## Q186270: BUG: SSTab Control Containing OLE Control May Crash
 
+{% raw %}
+
 	Article: Q186270
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0,97,97sp2,97sp3
@@ -118,3 +120,5 @@ permalink: /kb/186/Q186270/
 	
 	=============================================================================
 	
+
+{% endraw %}

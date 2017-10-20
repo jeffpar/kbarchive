@@ -6,6 +6,8 @@ permalink: /kb/171/Q171255/
 
 ## Q171255: and /Pwd: Parameters Fail In SNA Server 3.0
 
+{% raw %}
+
 	Article: Q171255
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -86,3 +88,5 @@ permalink: /kb/171/Q171255/
 	
 	=============================================================================
 	
+
+{% endraw %}

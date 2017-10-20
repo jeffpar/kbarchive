@@ -6,6 +6,8 @@ permalink: /kb/164/Q164723/
 
 ## Q164723: Blue Screen Stop 0x41 Error MUST_SUCCEED_POOL_EMPTY
 
+{% raw %}
+
 	Article: Q164723
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/164/Q164723/
 	
 	=============================================================================
 	
+
+{% endraw %}

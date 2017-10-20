@@ -6,6 +6,8 @@ permalink: /kb/157/Q157043/
 
 ## Q157043: XADM: Message Rerouted Between Servers and Disappears
 
+{% raw %}
+
 	Article: Q157043
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/157/Q157043/
 	
 	=============================================================================
 	
+
+{% endraw %}

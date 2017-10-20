@@ -6,6 +6,8 @@ permalink: /kb/061/Q61502/
 
 ## Q61502: .MODEL with a Language Makes Procedure Names PUBLIC
 
+{% raw %}
+
 	Article: Q61502
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.1,6.0,6.0a,6.0b
@@ -63,3 +65,5 @@ permalink: /kb/061/Q61502/
 	
 	=============================================================================
 	
+
+{% endraw %}

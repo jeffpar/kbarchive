@@ -6,6 +6,8 @@ permalink: /kb/107/Q107132/
 
 ## Q107132: Windows for Workgroups 3.11 Retail Package Options
 
+{% raw %}
+
 	Article: Q107132
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -65,3 +67,5 @@ permalink: /kb/107/Q107132/
 	
 	=============================================================================
 	
+
+{% endraw %}

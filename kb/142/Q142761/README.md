@@ -6,6 +6,8 @@ permalink: /kb/142/Q142761/
 
 ## Q142761: WD97: Error Message: &quot;...Word Cannot Find Its Data Source...&quot;
 
+{% raw %}
+
 	Article: Q142761
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -133,3 +135,5 @@ permalink: /kb/142/Q142761/
 	
 	=============================================================================
 	
+
+{% endraw %}

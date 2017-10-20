@@ -6,6 +6,8 @@ permalink: /kb/216/Q216986/
 
 ## Q216986: BUG: QueryInterface Returning E_NOINTERFACE
 
+{% raw %}
+
 	Article: Q216986
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -113,3 +115,5 @@ permalink: /kb/216/Q216986/
 	
 	=============================================================================
 	
+
+{% endraw %}

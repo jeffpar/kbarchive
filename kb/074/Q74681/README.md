@@ -6,6 +6,8 @@ permalink: /kb/074/Q74681/
 
 ## Q74681: Printer CPI Files Do Not Support CP 852
 
+{% raw %}
+
 	Article: Q74681
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -53,3 +55,5 @@ permalink: /kb/074/Q74681/
 	
 	=============================================================================
 	
+
+{% endraw %}

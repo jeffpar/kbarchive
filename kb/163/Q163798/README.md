@@ -6,6 +6,8 @@ permalink: /kb/163/Q163798/
 
 ## Q163798: BUG: Spell Checking on Memo Field Causes Error
 
+{% raw %}
+
 	Article: Q163798
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -149,3 +151,5 @@ permalink: /kb/163/Q163798/
 	
 	=============================================================================
 	
+
+{% endraw %}

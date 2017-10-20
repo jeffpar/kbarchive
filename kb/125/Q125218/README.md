@@ -6,6 +6,8 @@ permalink: /kb/125/Q125218/
 
 ## Q125218: Madge Smart 16/4 AT Plus Ringnode Token Ring Adapter Fails
 
+{% raw %}
+
 	Article: Q125218
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/125/Q125218/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245543/
 
 ## Q245543: INFO: ODBC Connection Pooling Counters in Performance Monitor
 
+{% raw %}
+
 	Article: Q245543
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 3.5,3.7,7.0
@@ -70,3 +72,5 @@ permalink: /kb/245/Q245543/
 	
 	=============================================================================
 	
+
+{% endraw %}

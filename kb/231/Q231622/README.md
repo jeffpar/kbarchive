@@ -6,6 +6,8 @@ permalink: /kb/231/Q231622/
 
 ## Q231622: Long Names of Local or Global Groups Truncated
 
+{% raw %}
+
 	Article: Q231622
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/231/Q231622/
 	
 	=============================================================================
 	
+
+{% endraw %}

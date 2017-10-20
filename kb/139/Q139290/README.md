@@ -6,6 +6,8 @@ permalink: /kb/139/Q139290/
 
 ## Q139290: PRB: 32-Bit Cursor Library Creates Temp Files in Current Dir
 
+{% raw %}
+
 	Article: Q139290
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.5
@@ -70,3 +72,5 @@ permalink: /kb/139/Q139290/
 	
 	=============================================================================
 	
+
+{% endraw %}

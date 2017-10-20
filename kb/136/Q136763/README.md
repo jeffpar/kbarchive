@@ -6,6 +6,8 @@ permalink: /kb/136/Q136763/
 
 ## Q136763: HOWTO: Play an AVI File w/ an API Call to 16-bit Mmsystem.dll
 
+{% raw %}
+
 	Article: Q136763
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -149,3 +151,5 @@ permalink: /kb/136/Q136763/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161202/
 
 ## Q161202: PPT: Sample Code to Retrieve or Set Slide Size
 
+{% raw %}
+
 	Article: Q161202
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -129,3 +131,5 @@ permalink: /kb/161/Q161202/
 	
 	=============================================================================
 	
+
+{% endraw %}

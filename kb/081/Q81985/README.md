@@ -6,6 +6,8 @@ permalink: /kb/081/Q81985/
 
 ## Q81985: Sound Recorder Does Not Save As with a Default Extension
 
+{% raw %}
+
 	Article: Q81985
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/081/Q81985/
 	
 	=============================================================================
 	
+
+{% endraw %}

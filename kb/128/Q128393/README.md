@@ -6,6 +6,8 @@ permalink: /kb/128/Q128393/
 
 ## Q128393: How to Create a Private Data Session in a Form
 
+{% raw %}
+
 	Article: Q128393
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -77,3 +79,5 @@ permalink: /kb/128/Q128393/
 	
 	=============================================================================
 	
+
+{% endraw %}

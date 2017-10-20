@@ -6,6 +6,8 @@ permalink: /kb/131/Q131110/
 
 ## Q131110: Writer/Artist: How to Change User Names
 
+{% raw %}
+
 	Article: Q131110
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
@@ -88,3 +90,5 @@ permalink: /kb/131/Q131110/
 	
 	=============================================================================
 	
+
+{% endraw %}

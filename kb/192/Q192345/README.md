@@ -6,6 +6,8 @@ permalink: /kb/192/Q192345/
 
 ## Q192345: FIX: DISPLAY/LIST DLLS NOCONSOLE Echo to Screen
 
+{% raw %}
+
 	Article: Q192345
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -62,3 +64,5 @@ permalink: /kb/192/Q192345/
 	
 	=============================================================================
 	
+
+{% endraw %}

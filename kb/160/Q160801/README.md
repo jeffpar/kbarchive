@@ -6,6 +6,8 @@ permalink: /kb/160/Q160801/
 
 ## Q160801: PPT7: Invisible Shapes Print With Borders in Black and White
 
+{% raw %}
+
 	Article: Q160801
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -101,3 +103,5 @@ permalink: /kb/160/Q160801/
 	
 	=============================================================================
 	
+
+{% endraw %}

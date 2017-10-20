@@ -6,6 +6,8 @@ permalink: /kb/268/Q268509/
 
 ## Q268509: WEP2K: Incorrect Scores Are Displayed for Saved Hearts Game
 
+{% raw %}
+
 	Article: Q268509
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/268/Q268509/
 	
 	=============================================================================
 	
+
+{% endraw %}

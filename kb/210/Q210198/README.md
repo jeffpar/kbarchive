@@ -6,6 +6,8 @@ permalink: /kb/210/Q210198/
 
 ## Q210198: SMS: Triggers Not Being Generated in Specified Inboxes
 
+{% raw %}
+
 	Article: Q210198
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP1,2.0 SP2
@@ -66,3 +68,5 @@ permalink: /kb/210/Q210198/
 	
 	=============================================================================
 	
+
+{% endraw %}

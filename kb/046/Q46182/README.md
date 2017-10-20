@@ -6,6 +6,8 @@ permalink: /kb/046/Q46182/
 
 ## Q46182: ON TIMER Can Wrongly Trigger CALL SETUEVENT, ON UEVENT Trap
 
+{% raw %}
+
 	Article: Q46182
 	Product(s): See article
 	Version(s): 4.00b 4.50
@@ -71,3 +73,5 @@ permalink: /kb/046/Q46182/
 	the following words:
 	
 	   SETUEVENT and buglist4.50
+
+{% endraw %}

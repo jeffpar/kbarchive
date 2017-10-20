@@ -6,6 +6,8 @@ permalink: /kb/124/Q124348/
 
 ## Q124348: FIX: Exiting ON SHUTDOWN Window Disables GET Objects
 
+{% raw %}
+
 	Article: Q124348
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5a,2.5b,2.6,2.6a,3.0
@@ -101,3 +103,5 @@ permalink: /kb/124/Q124348/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84957/
 
 ## Q84957: Media Player Doesn't Return to First Track After Playing CD
 
+{% raw %}
+
 	Article: Q84957
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/084/Q84957/
 	
 	=============================================================================
 	
+
+{% endraw %}

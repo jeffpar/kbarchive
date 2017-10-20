@@ -6,6 +6,8 @@ permalink: /kb/100/Q100794/
 
 ## Q100794: MSBACKUP Fails on DEC or Dell with Logically Swapped Disks
 
+{% raw %}
+
 	Article: Q100794
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -52,3 +54,5 @@ permalink: /kb/100/Q100794/
 	
 	=============================================================================
 	
+
+{% endraw %}

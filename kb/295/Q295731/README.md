@@ -6,6 +6,8 @@ permalink: /kb/295/Q295731/
 
 ## Q295731: XCON:  RPC Fails Between Site Connectors When Servers Use IPX
 
+{% raw %}
+
 	Article: Q295731
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -62,3 +64,5 @@ permalink: /kb/295/Q295731/
 	
 	=============================================================================
 	
+
+{% endraw %}

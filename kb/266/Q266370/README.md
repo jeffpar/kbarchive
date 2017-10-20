@@ -6,6 +6,8 @@ permalink: /kb/266/Q266370/
 
 ## Q266370: PRB: Controls Using FoxFont Unreadable on Arabic or Hebrew
 
+{% raw %}
+
 	Article: Q266370
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -108,3 +110,5 @@ permalink: /kb/266/Q266370/
 	
 	=============================================================================
 	
+
+{% endraw %}

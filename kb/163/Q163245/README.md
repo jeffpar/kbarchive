@@ -6,6 +6,8 @@ permalink: /kb/163/Q163245/
 
 ## Q163245: BUG: StatusBar Ctrl Does Not Show Size Grip in Top-Level Form
 
+{% raw %}
+
 	Article: Q163245
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -62,3 +64,5 @@ permalink: /kb/163/Q163245/
 	
 	=============================================================================
 	
+
+{% endraw %}

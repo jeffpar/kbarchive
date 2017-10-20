@@ -6,6 +6,8 @@ permalink: /kb/064/Q64077/
 
 ## Q64077: QsrtWin.exe Contains QuickSort Sample Code for Windows
 
+{% raw %}
+
 	Article: Q64077
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -52,3 +54,5 @@ permalink: /kb/064/Q64077/
 	
 	=============================================================================
 	
+
+{% endraw %}

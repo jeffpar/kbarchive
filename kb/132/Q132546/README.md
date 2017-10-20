@@ -6,6 +6,8 @@ permalink: /kb/132/Q132546/
 
 ## Q132546: PC WRmt: Mail Remote MSRMTCN.DLL Version 3.2.4013 Update
 
+{% raw %}
+
 	Article: Q132546
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -107,3 +109,5 @@ permalink: /kb/132/Q132546/
 	
 	=============================================================================
 	
+
+{% endraw %}

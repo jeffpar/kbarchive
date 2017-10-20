@@ -6,6 +6,8 @@ permalink: /kb/173/Q173171/
 
 ## Q173171: ODE97: Failed Internet Synchronization Leaves Files on Server
 
+{% raw %}
+
 	Article: Q173171
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:97
@@ -143,3 +145,5 @@ permalink: /kb/173/Q173171/
 	
 	=============================================================================
 	
+
+{% endraw %}

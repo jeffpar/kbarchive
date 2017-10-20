@@ -6,6 +6,8 @@ permalink: /kb/082/Q82524/
 
 ## Q82524: hDC Power Launcher Enhanced Wait Command Hangs
 
+{% raw %}
+
 	Article: Q82524
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/082/Q82524/
 	
 	=============================================================================
 	
+
+{% endraw %}

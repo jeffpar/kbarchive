@@ -6,6 +6,8 @@ permalink: /kb/048/Q48687/
 
 ## Q48687: Invoking M or MEP with the /D Switch Prevents Initialization
 
+{% raw %}
+
 	Article: Q48687
 	Product(s): See article
 	Version(s): 1.00 1.02 | 1.00 1.02
@@ -19,3 +21,5 @@ permalink: /kb/048/Q48687/
 	
 	There is currently no workaround for this designed limitation other
 	than to exit the editor and re-invoke M without using the /D switch.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134492/
 
 ## Q134492: HyperTerminal Connect Option Does Not Connect You to Host
 
+{% raw %}
+
 	Article: Q134492
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/134/Q134492/
 	
 	=============================================================================
 	
+
+{% endraw %}

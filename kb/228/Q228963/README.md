@@ -6,6 +6,8 @@ permalink: /kb/228/Q228963/
 
 ## Q228963: Midtown Madness: Finish Line Does Not Appear in Checkpoint Race
 
+{% raw %}
+
 	Article: Q228963
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/228/Q228963/
 	
 	=============================================================================
 	
+
+{% endraw %}

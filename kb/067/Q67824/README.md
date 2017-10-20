@@ -6,6 +6,8 @@ permalink: /kb/067/Q67824/
 
 ## Q67824: Flight Simulator: Sensitive Stall Warning on Cessna
 
+{% raw %}
+
 	Article: Q67824
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/067/Q67824/
 	
 	=============================================================================
 	
+
+{% endraw %}

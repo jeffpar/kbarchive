@@ -6,6 +6,8 @@ permalink: /kb/247/Q247329/
 
 ## Q247329: Process Generates Stop 0x50 Error Message in ExpCopyProcessInfo
 
+{% raw %}
+
 	Article: Q247329
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -97,3 +99,5 @@ permalink: /kb/247/Q247329/
 	
 	=============================================================================
 	
+
+{% endraw %}

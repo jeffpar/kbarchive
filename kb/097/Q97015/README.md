@@ -6,6 +6,8 @@ permalink: /kb/097/Q97015/
 
 ## Q97015: Setup Does Not Correctly Update Windows .INI Files
 
+{% raw %}
+
 	Article: Q97015
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -65,3 +67,5 @@ permalink: /kb/097/Q97015/
 	
 	=============================================================================
 	
+
+{% endraw %}

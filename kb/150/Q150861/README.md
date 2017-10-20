@@ -6,6 +6,8 @@ permalink: /kb/150/Q150861/
 
 ## Q150861: XADM: Msvcr40d.dll Missing From the Exchange Resource Kit
 
+{% raw %}
+
 	Article: Q150861
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:Part 1
@@ -59,3 +61,5 @@ permalink: /kb/150/Q150861/
 	
 	=============================================================================
 	
+
+{% endraw %}

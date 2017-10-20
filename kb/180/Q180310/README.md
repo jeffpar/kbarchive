@@ -6,6 +6,8 @@ permalink: /kb/180/Q180310/
 
 ## Q180310: XCLN: Outlook Cannot View Replica of Nested Public Folder
 
+{% raw %}
+
 	Article: Q180310
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:8.0; :8.0,8.01,8.02,8.03
@@ -70,3 +72,5 @@ permalink: /kb/180/Q180310/
 	
 	=============================================================================
 	
+
+{% endraw %}

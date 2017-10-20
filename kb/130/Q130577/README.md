@@ -6,6 +6,8 @@ permalink: /kb/130/Q130577/
 
 ## Q130577: PRB: Leading Equals Sign (=) Not Displayed If RowSource Value
 
+{% raw %}
+
 	Article: Q130577
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -94,3 +96,5 @@ permalink: /kb/130/Q130577/
 	
 	=============================================================================
 	
+
+{% endraw %}

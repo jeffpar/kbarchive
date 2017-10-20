@@ -6,6 +6,8 @@ permalink: /kb/190/Q190088/
 
 ## Q190088: BUG: Icon Resource May Not Appear as Expected
 
+{% raw %}
+
 	Article: Q190088
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -89,3 +91,5 @@ permalink: /kb/190/Q190088/
 	
 	=============================================================================
 	
+
+{% endraw %}

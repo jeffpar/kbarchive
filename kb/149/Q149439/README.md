@@ -6,6 +6,8 @@ permalink: /kb/149/Q149439/
 
 ## Q149439: Err Msg: &quot;STOP 0x0000007B&quot; on DEC AXP 2100 Setup
 
+{% raw %}
+
 	Article: Q149439
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -58,3 +60,5 @@ permalink: /kb/149/Q149439/
 	
 	=============================================================================
 	
+
+{% endraw %}

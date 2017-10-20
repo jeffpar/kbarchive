@@ -6,6 +6,8 @@ permalink: /kb/083/Q83832/
 
 ## Q83832: Novell Driver Versions for Windows 3.1
 
+{% raw %}
+
 	Article: Q83832
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -80,3 +82,5 @@ permalink: /kb/083/Q83832/
 	
 	=============================================================================
 	
+
+{% endraw %}

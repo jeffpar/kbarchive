@@ -6,6 +6,8 @@ permalink: /kb/182/Q182381/
 
 ## Q182381: Download File List for Windows Sockets 2.0 Update (Ws2setup.exe)
 
+{% raw %}
+
 	Article: Q182381
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -89,3 +91,5 @@ permalink: /kb/182/Q182381/
 	
 	=============================================================================
 	
+
+{% endraw %}

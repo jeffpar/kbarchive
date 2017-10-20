@@ -6,6 +6,8 @@ permalink: /kb/138/Q138340/
 
 ## Q138340: Trouble Quitting Program Started with AT.EXE Scheduler
 
+{% raw %}
+
 	Article: Q138340
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51
@@ -77,3 +79,5 @@ permalink: /kb/138/Q138340/
 	
 	=============================================================================
 	
+
+{% endraw %}

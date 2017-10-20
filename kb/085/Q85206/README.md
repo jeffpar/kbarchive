@@ -6,6 +6,8 @@ permalink: /kb/085/Q85206/
 
 ## Q85206: Garbage Output on Epson FX-86e When in IBM Emulation Mode
 
+{% raw %}
+
 	Article: Q85206
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/085/Q85206/
 	
 	=============================================================================
 	
+
+{% endraw %}

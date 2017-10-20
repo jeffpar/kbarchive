@@ -6,6 +6,8 @@ permalink: /kb/058/Q58667/
 
 ## Q58667: HOWTO: Redirect stdout to and from a File Using C
 
+{% raw %}
+
 	Article: Q58667
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:5.1,6.0,6.00a,6.00ax,7.0; OS/2:5.1,6.0,6.00a; WINDOWS:1.0,1.5; WINDOWS NT:1.0,2.
@@ -84,3 +86,5 @@ permalink: /kb/058/Q58667/
 	
 	=============================================================================
 	
+
+{% endraw %}

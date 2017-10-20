@@ -6,6 +6,8 @@ permalink: /kb/121/Q121784/
 
 ## Q121784: Additional FTP Server Logging Options (Version 3.5)
 
+{% raw %}
+
 	Article: Q121784
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -96,3 +98,5 @@ permalink: /kb/121/Q121784/
 	
 	=============================================================================
 	
+
+{% endraw %}

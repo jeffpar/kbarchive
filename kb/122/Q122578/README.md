@@ -6,6 +6,8 @@ permalink: /kb/122/Q122578/
 
 ## Q122578: PC NT: 4,292,967,295 File Locks on .MMF and .CAL Files
 
+{% raw %}
+
 	Article: Q122578
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -59,3 +61,5 @@ permalink: /kb/122/Q122578/
 	
 	=============================================================================
 	
+
+{% endraw %}

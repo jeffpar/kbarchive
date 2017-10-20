@@ -6,6 +6,8 @@ permalink: /kb/232/Q232093/
 
 ## Q232093: BUG: Objects Disappear After Being Assigned to Custom Properties
 
+{% raw %}
+
 	Article: Q232093
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -79,3 +81,5 @@ permalink: /kb/232/Q232093/
 	
 	=============================================================================
 	
+
+{% endraw %}

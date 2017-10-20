@@ -6,6 +6,8 @@ permalink: /kb/303/Q303462/
 
 ## Q303462: Access Violation in the SMS_OFFER_STATUS_SUMMARIZER Thread
 
+{% raw %}
+
 	Article: Q303462
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -73,3 +75,5 @@ permalink: /kb/303/Q303462/
 	
 	=============================================================================
 	
+
+{% endraw %}

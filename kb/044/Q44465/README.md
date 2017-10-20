@@ -6,6 +6,8 @@ permalink: /kb/044/Q44465/
 
 ## Q44465: L2025 LINK Error May Be Caused by Conflicting Library Routines
 
+{% raw %}
+
 	Article: Q44465
 	Product(s): See article
 	Version(s): 3.x 4.06 4.07 5.0x 5.10 5.13 | 5.01.21 5.02 5.03 5.10 5.1
@@ -54,3 +56,5 @@ permalink: /kb/044/Q44465/
 	
 	Microsoft `M' Editor
 	=============================================================================
+
+{% endraw %}

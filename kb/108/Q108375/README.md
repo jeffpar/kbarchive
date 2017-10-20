@@ -6,6 +6,8 @@ permalink: /kb/108/Q108375/
 
 ## Q108375: SMTP: How to Start SMTPGET
 
+{% raw %}
+
 	Article: Q108375
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -56,3 +58,5 @@ permalink: /kb/108/Q108375/
 	
 	=============================================================================
 	
+
+{% endraw %}

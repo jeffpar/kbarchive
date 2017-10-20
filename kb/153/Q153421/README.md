@@ -6,6 +6,8 @@ permalink: /kb/153/Q153421/
 
 ## Q153421: V-Chat Folders Created in Transferred Files Folder
 
+{% raw %}
+
 	Article: Q153421
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5,95
@@ -42,3 +44,5 @@ permalink: /kb/153/Q153421/
 	
 	=============================================================================
 	
+
+{% endraw %}

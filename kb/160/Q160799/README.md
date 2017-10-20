@@ -6,6 +6,8 @@ permalink: /kb/160/Q160799/
 
 ## Q160799: XCLN: How to Add the Read Receipt Property in a Folder View
 
+{% raw %}
+
 	Article: Q160799
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02
@@ -131,3 +133,5 @@ permalink: /kb/160/Q160799/
 	
 	=============================================================================
 	
+
+{% endraw %}

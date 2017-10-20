@@ -6,6 +6,8 @@ permalink: /kb/166/Q166090/
 
 ## Q166090: MSN Support in Windows NT
 
+{% raw %}
+
 	Article: Q166090
 	Product(s): The Microsoft Network
 	Version(s): 2.5,2.6,2000,3.5,3.51,4.0,5.0,5.1
@@ -247,3 +249,5 @@ permalink: /kb/166/Q166090/
 	
 	=============================================================================
 	
+
+{% endraw %}

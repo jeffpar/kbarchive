@@ -6,6 +6,8 @@ permalink: /kb/143/Q143261/
 
 ## Q143261: FIX: Error When Referring to Member Object/Collection in OLE DLL
 
+{% raw %}
+
 	Article: Q143261
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -202,3 +204,5 @@ permalink: /kb/143/Q143261/
 	
 	=============================================================================
 	
+
+{% endraw %}

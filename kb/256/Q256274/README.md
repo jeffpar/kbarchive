@@ -6,6 +6,8 @@ permalink: /kb/256/Q256274/
 
 ## Q256274: Index Server Searches Return IDQ Code Instead of Search Results
 
+{% raw %}
+
 	Article: Q256274
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0
@@ -62,3 +64,5 @@ permalink: /kb/256/Q256274/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183578/
 
 ## Q183578: SNA DDM Service Fails to Release Handles
 
+{% raw %}
+
 	Article: Q183578
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -55,3 +57,5 @@ permalink: /kb/183/Q183578/
 	
 	=============================================================================
 	
+
+{% endraw %}

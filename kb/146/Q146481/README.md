@@ -6,6 +6,8 @@ permalink: /kb/146/Q146481/
 
 ## Q146481: XFOR: Certain Fields Are Not Activated After Adding Domain
 
+{% raw %}
+
 	Article: Q146481
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/146/Q146481/
 	
 	=============================================================================
 	
+
+{% endraw %}

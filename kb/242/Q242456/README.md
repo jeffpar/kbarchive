@@ -6,6 +6,8 @@ permalink: /kb/242/Q242456/
 
 ## Q242456: FTP Service Ignores File Names/User Names Beginning with 0xF&#42;
 
+{% raw %}
+
 	Article: Q242456
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -45,3 +47,5 @@ permalink: /kb/242/Q242456/
 	
 	=============================================================================
 	
+
+{% endraw %}

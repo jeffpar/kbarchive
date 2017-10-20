@@ -6,6 +6,8 @@ permalink: /kb/173/Q173535/
 
 ## Q173535: Java Applets do not Refresh Screen Using Matrox Video Card
 
+{% raw %}
+
 	Article: Q173535
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -53,3 +55,5 @@ permalink: /kb/173/Q173535/
 	
 	=============================================================================
 	
+
+{% endraw %}

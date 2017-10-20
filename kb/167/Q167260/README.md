@@ -6,6 +6,8 @@ permalink: /kb/167/Q167260/
 
 ## Q167260: XCLN: How to Use RPCPing to Test RPC Communication
 
+{% raw %}
+
 	Article: Q167260
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -152,3 +154,5 @@ permalink: /kb/167/Q167260/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150335/
 
 ## Q150335: NEC VERSA/P Hangs with Diamond Speedstar 64 Video Adapter
 
+{% raw %}
+
 	Article: Q150335
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -49,3 +51,5 @@ permalink: /kb/150/Q150335/
 	
 	=============================================================================
 	
+
+{% endraw %}

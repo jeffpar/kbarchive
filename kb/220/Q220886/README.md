@@ -6,6 +6,8 @@ permalink: /kb/220/Q220886/
 
 ## Q220886: Active SNA Server Clients Do Not Appear in License Manager
 
+{% raw %}
+
 	Article: Q220886
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
@@ -68,3 +70,5 @@ permalink: /kb/220/Q220886/
 	
 	=============================================================================
 	
+
+{% endraw %}

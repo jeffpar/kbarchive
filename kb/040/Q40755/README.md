@@ -6,6 +6,8 @@ permalink: /kb/040/Q40755/
 
 ## Q40755: Useful Macros for the Microsoft Editor
 
+{% raw %}
+
 	Article: Q40755
 	Product(s): See article
 	Version(s): 1.00    |  1.00
@@ -42,3 +44,5 @@ permalink: /kb/040/Q40755/
 	usemark:=arg "temp"
 	tempmark:alt+t
 	usemark:alt+u
+
+{% endraw %}

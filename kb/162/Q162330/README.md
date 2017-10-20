@@ -6,6 +6,8 @@ permalink: /kb/162/Q162330/
 
 ## Q162330: Err Msg: Windows NT Could Not Start...
 
+{% raw %}
+
 	Article: Q162330
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -88,3 +90,5 @@ permalink: /kb/162/Q162330/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/271/Q271502/
 
 ## Q271502: Golf 2001: Game Quits When You Return to the Game from Desktop
 
+{% raw %}
+
 	Article: Q271502
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/271/Q271502/
 	
 	=============================================================================
 	
+
+{% endraw %}

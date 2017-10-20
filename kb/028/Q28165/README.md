@@ -6,6 +6,8 @@ permalink: /kb/028/Q28165/
 
 ## Q28165: &quot;String Formula Too Complex&quot; with Recursive String Function
 
+{% raw %}
+
 	Article: Q28165
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -46,3 +48,5 @@ permalink: /kb/028/Q28165/
 	
 	   Temp$ = Reverse$(LEFT$(Text$,LEN(Text$)-1))
 	   Reverse$ = RIGHT$(Text$,1) + Temp$
+
+{% endraw %}

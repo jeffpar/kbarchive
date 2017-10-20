@@ -6,6 +6,8 @@ permalink: /kb/189/Q189135/
 
 ## Q189135: Err Msg: You Cannot Save While the File Is in Use by Another...
 
+{% raw %}
+
 	Article: Q189135
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:4.3,6.0; WINNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/189/Q189135/
 	
 	=============================================================================
 	
+
+{% endraw %}

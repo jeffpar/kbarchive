@@ -6,6 +6,8 @@ permalink: /kb/192/Q192012/
 
 ## Q192012: INFO: Troubleshooting Tips for the MSComm Control
 
+{% raw %}
+
 	Article: Q192012
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -145,3 +147,5 @@ permalink: /kb/192/Q192012/
 	
 	=============================================================================
 	
+
+{% endraw %}

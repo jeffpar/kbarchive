@@ -6,6 +6,8 @@ permalink: /kb/161/Q161360/
 
 ## Q161360: DOC: VFP Help Incorrect for ListBox UpClick &amp; DownClick Events
 
+{% raw %}
+
 	Article: Q161360
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -39,3 +41,5 @@ permalink: /kb/161/Q161360/
 	
 	=============================================================================
 	
+
+{% endraw %}

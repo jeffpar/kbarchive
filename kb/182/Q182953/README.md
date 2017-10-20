@@ -6,6 +6,8 @@ permalink: /kb/182/Q182953/
 
 ## Q182953: XCON: MTA Fails to Convert Attachment and Stops Unexpectedly
 
+{% raw %}
+
 	Article: Q182953
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -61,3 +63,5 @@ permalink: /kb/182/Q182953/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/064/Q64792/
 
 ## Q64792: Helpmake Version 1.05 May Not Decode All Formatting
 
+{% raw %}
+
 	Article: Q64792
 	Product(s): See article
 	Version(s): 1.05   | 1.05
@@ -43,3 +45,5 @@ permalink: /kb/064/Q64792/
 	
 	   +------- Browse Menu ---------+
 	   | \aGoto Definition...\v@L8001\v | Finds definition of symbol
+
+{% endraw %}

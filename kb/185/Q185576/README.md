@@ -6,6 +6,8 @@ permalink: /kb/185/Q185576/
 
 ## Q185576: XFOR: Incorrect Help For Internet Mail Service Sub Dialog Box
 
+{% raw %}
+
 	Article: Q185576
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/185/Q185576/
 	
 	=============================================================================
 	
+
+{% endraw %}

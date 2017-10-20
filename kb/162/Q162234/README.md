@@ -6,6 +6,8 @@ permalink: /kb/162/Q162234/
 
 ## Q162234: FP97: ID, Class, Style Attributes Not Retained
 
+{% raw %}
+
 	Article: Q162234
 	Product(s): Word Front Page
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/162/Q162234/
 	
 	=============================================================================
 	
+
+{% endraw %}

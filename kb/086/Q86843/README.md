@@ -6,6 +6,8 @@ permalink: /kb/086/Q86843/
 
 ## Q86843: PC WSPlus: Appending to Existing Archive File
 
+{% raw %}
+
 	Article: Q86843
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -34,3 +36,5 @@ permalink: /kb/086/Q86843/
 	
 	=============================================================================
 	
+
+{% endraw %}

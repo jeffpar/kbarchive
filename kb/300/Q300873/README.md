@@ -6,6 +6,8 @@ permalink: /kb/300/Q300873/
 
 ## Q300873: Office XP Step by Step Interactive Training
 
+{% raw %}
+
 	Article: Q300873
 	Product(s): Microsoft Press
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/300/Q300873/
 	
 	=============================================================================
 	
+
+{% endraw %}

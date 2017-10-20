@@ -6,6 +6,8 @@ permalink: /kb/086/Q86604/
 
 ## Q86604: PC WSPlus: Err Msg: Could Not Open the File Named...
 
+{% raw %}
+
 	Article: Q86604
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -51,3 +53,5 @@ permalink: /kb/086/Q86604/
 	
 	=============================================================================
 	
+
+{% endraw %}

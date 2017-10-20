@@ -6,6 +6,8 @@ permalink: /kb/280/Q280383/
 
 ## Q280383: IIS Security Recommendations When You Use a UNC Share
 
+{% raw %}
+
 	Article: Q280383
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -95,3 +97,5 @@ permalink: /kb/280/Q280383/
 	
 	=============================================================================
 	
+
+{% endraw %}

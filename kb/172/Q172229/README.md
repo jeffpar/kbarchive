@@ -6,6 +6,8 @@ permalink: /kb/172/Q172229/
 
 ## Q172229: Stop 0x00000050 During WinNT 3.51 to 4.0 Upgrade on Compaq
 
+{% raw %}
+
 	Article: Q172229
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -83,3 +85,5 @@ permalink: /kb/172/Q172229/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197294/
 
 ## Q197294: DNS May Return Wrong IP Address When Forwarding Query to WINS
 
+{% raw %}
+
 	Article: Q197294
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -84,3 +86,5 @@ permalink: /kb/197/Q197294/
 	
 	=============================================================================
 	
+
+{% endraw %}

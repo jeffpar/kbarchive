@@ -6,6 +6,8 @@ permalink: /kb/129/Q129833/
 
 ## Q129833: GSNW/CSNW Does Not Support Time Synchronization with NetWare
 
+{% raw %}
+
 	Article: Q129833
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -56,3 +58,5 @@ permalink: /kb/129/Q129833/
 	
 	=============================================================================
 	
+
+{% endraw %}

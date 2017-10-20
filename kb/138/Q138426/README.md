@@ -6,6 +6,8 @@ permalink: /kb/138/Q138426/
 
 ## Q138426: How to Make a Dynamic Rectangle Expand/Shrink to Fit the Data
 
+{% raw %}
+
 	Article: Q138426
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/138/Q138426/
 	
 	=============================================================================
 	
+
+{% endraw %}

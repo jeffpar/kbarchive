@@ -6,6 +6,8 @@ permalink: /kb/149/Q149013/
 
 ## Q149013: XCLN: Schedule+ 1.0a for the Macintosh May Not Display Details
 
+{% raw %}
+
 	Article: Q149013
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:1.0,3.1c; winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/149/Q149013/
 	
 	=============================================================================
 	
+
+{% endraw %}

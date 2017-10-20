@@ -6,6 +6,8 @@ permalink: /kb/275/Q275529/
 
 ## Q275529: Help Information for Printmig.exe Version 2.0
 
+{% raw %}
+
 	Article: Q275529
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -313,3 +315,5 @@ permalink: /kb/275/Q275529/
 	
 	=============================================================================
 	
+
+{% endraw %}

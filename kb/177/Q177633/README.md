@@ -6,6 +6,8 @@ permalink: /kb/177/Q177633/
 
 ## Q177633: How to Connect to MSN from a Foreign Country
 
+{% raw %}
+
 	Article: Q177633
 	Product(s): The Microsoft Network
 	Version(s): 1.0,1.05,1.2,1.3,2.0,2.5,2.51,2.52,2.6,5.0,5.1,5.2,5.3
@@ -130,3 +132,5 @@ permalink: /kb/177/Q177633/
 	
 	=============================================================================
 	
+
+{% endraw %}

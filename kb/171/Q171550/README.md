@@ -6,6 +6,8 @@ permalink: /kb/171/Q171550/
 
 ## Q171550: FIX: Recompiling with SP2 Breaks Binary Compatibility
 
+{% raw %}
+
 	Article: Q171550
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97,97sps
@@ -91,3 +93,5 @@ permalink: /kb/171/Q171550/
 	
 	=============================================================================
 	
+
+{% endraw %}

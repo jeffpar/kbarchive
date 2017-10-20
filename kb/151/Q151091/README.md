@@ -6,6 +6,8 @@ permalink: /kb/151/Q151091/
 
 ## Q151091: Bookshelf '96-'97: Err Msg. with More Than 57 Character Path
 
+{% raw %}
+
 	Article: Q151091
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -54,3 +56,5 @@ permalink: /kb/151/Q151091/
 	
 	=============================================================================
 	
+
+{% endraw %}

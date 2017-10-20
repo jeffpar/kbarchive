@@ -6,6 +6,8 @@ permalink: /kb/163/Q163957/
 
 ## Q163957: FIX: APPEND FROM TYPE SDF Brings in Older Dates Incorrectly
 
+{% raw %}
+
 	Article: Q163957
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -88,3 +90,5 @@ permalink: /kb/163/Q163957/
 	
 	=============================================================================
 	
+
+{% endraw %}

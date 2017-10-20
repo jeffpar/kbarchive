@@ -6,6 +6,8 @@ permalink: /kb/235/Q235153/
 
 ## Q235153: Software Metering Client Agent Is Unable to Activate Retry Mode
 
+{% raw %}
+
 	Article: Q235153
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -71,3 +73,5 @@ permalink: /kb/235/Q235153/
 	
 	=============================================================================
 	
+
+{% endraw %}

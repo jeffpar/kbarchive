@@ -6,6 +6,8 @@ permalink: /kb/141/Q141847/
 
 ## Q141847: PPT7: New Slide Dialog Box (AutoLayout) Does Not Appear
 
+{% raw %}
+
 	Article: Q141847
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -89,3 +91,5 @@ permalink: /kb/141/Q141847/
 	
 	=============================================================================
 	
+
+{% endraw %}

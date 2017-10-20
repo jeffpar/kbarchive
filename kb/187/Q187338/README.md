@@ -6,6 +6,8 @@ permalink: /kb/187/Q187338/
 
 ## Q187338: Windows Hangs During the Logon Process
 
+{% raw %}
+
 	Article: Q187338
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -70,3 +72,5 @@ permalink: /kb/187/Q187338/
 	
 	=============================================================================
 	
+
+{% endraw %}

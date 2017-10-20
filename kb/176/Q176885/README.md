@@ -6,6 +6,8 @@ permalink: /kb/176/Q176885/
 
 ## Q176885: Age of Empires: Multiple Images of Startup Menu
 
+{% raw %}
+
 	Article: Q176885
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/176/Q176885/
 	
 	=============================================================================
 	
+
+{% endraw %}

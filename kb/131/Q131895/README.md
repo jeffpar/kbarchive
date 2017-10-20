@@ -6,6 +6,8 @@ permalink: /kb/131/Q131895/
 
 ## Q131895: SourceSafe Knowledge Base As Help File (June 1995)
 
+{% raw %}
+
 	Article: Q131895
 	Product(s): Microsoft SourceSafe
 	Version(s): MACINTOSH:3.1; MS-DOS:3.1; WINDOWS:3.1; winnt:3.1
@@ -58,3 +60,5 @@ permalink: /kb/131/Q131895/
 	
 	=============================================================================
 	
+
+{% endraw %}

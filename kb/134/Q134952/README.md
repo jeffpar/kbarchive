@@ -6,6 +6,8 @@ permalink: /kb/134/Q134952/
 
 ## Q134952: FFAPI: COURPUT 201: Failure Submitting Message...
 
+{% raw %}
+
 	Article: Q134952
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -172,3 +174,5 @@ permalink: /kb/134/Q134952/
 	
 	=============================================================================
 	
+
+{% endraw %}

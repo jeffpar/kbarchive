@@ -6,6 +6,8 @@ permalink: /kb/069/Q69383/
 
 ## Q69383: CorelDRAW! Font Selection in High Resolution with Windows 3.0
 
+{% raw %}
+
 	Article: Q69383
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -59,3 +61,5 @@ permalink: /kb/069/Q69383/
 	
 	=============================================================================
 	
+
+{% endraw %}

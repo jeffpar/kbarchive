@@ -6,6 +6,8 @@ permalink: /kb/197/Q197302/
 
 ## Q197302: How to Install MS Loopback with Unattended Installations
 
+{% raw %}
+
 	Article: Q197302
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/197/Q197302/
 	
 	=============================================================================
 	
+
+{% endraw %}

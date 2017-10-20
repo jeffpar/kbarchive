@@ -6,6 +6,8 @@ permalink: /kb/110/Q110377/
 
 ## Q110377: Using Windows Sound System 2.0 with Unsupported Card
 
+{% raw %}
+
 	Article: Q110377
 	Product(s): Miscellaneous Windows Products
 	Version(s): 2.0
@@ -218,3 +220,5 @@ permalink: /kb/110/Q110377/
 	
 	=============================================================================
 	
+
+{% endraw %}

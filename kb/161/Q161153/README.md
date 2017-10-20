@@ -6,6 +6,8 @@ permalink: /kb/161/Q161153/
 
 ## Q161153: HOWTO: Use the Assert Method for Debugging
 
+{% raw %}
+
 	Article: Q161153
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/161/Q161153/
 	
 	=============================================================================
 	
+
+{% endraw %}

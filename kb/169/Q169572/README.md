@@ -6,6 +6,8 @@ permalink: /kb/169/Q169572/
 
 ## Q169572: No Speech in Talk It! With Sound Blaster 32 or AWE 64
 
+{% raw %}
+
 	Article: Q169572
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -84,3 +86,5 @@ permalink: /kb/169/Q169572/
 	
 	=============================================================================
 	
+
+{% endraw %}

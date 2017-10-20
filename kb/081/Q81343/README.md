@@ -6,6 +6,8 @@ permalink: /kb/081/Q81343/
 
 ## Q81343: Mac Fax: Err Msg: Unable to Connect to Modem
 
+{% raw %}
+
 	Article: Q81343
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.0a,3.0b,3.1,3.1a,3.1c
@@ -61,3 +63,5 @@ permalink: /kb/081/Q81343/
 	
 	=============================================================================
 	
+
+{% endraw %}

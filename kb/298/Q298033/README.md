@@ -6,6 +6,8 @@ permalink: /kb/298/Q298033/
 
 ## Q298033: SMS: Can't Use Remote Control w. Unsupported Database Collation
 
+{% raw %}
+
 	Article: Q298033
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -70,3 +72,5 @@ permalink: /kb/298/Q298033/
 	
 	=============================================================================
 	
+
+{% endraw %}

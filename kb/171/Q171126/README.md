@@ -6,6 +6,8 @@ permalink: /kb/171/Q171126/
 
 ## Q171126: WD97: Macro to Test for an Existing Macro Name
 
+{% raw %}
+
 	Article: Q171126
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -115,3 +117,5 @@ permalink: /kb/171/Q171126/
 	
 	=============================================================================
 	
+
+{% endraw %}

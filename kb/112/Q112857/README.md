@@ -6,6 +6,8 @@ permalink: /kb/112/Q112857/
 
 ## Q112857: WFWG 3.11: Errors Reinstalling Fonts
 
+{% raw %}
+
 	Article: Q112857
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -68,3 +70,5 @@ permalink: /kb/112/Q112857/
 	
 	=============================================================================
 	
+
+{% endraw %}

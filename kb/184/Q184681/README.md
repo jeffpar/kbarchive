@@ -6,6 +6,8 @@ permalink: /kb/184/Q184681/
 
 ## Q184681: XFOR: Kanji Outlook MS Mail Users Get NDRs Sending to Exchange
 
+{% raw %}
+
 	Article: Q184681
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -131,3 +133,5 @@ permalink: /kb/184/Q184681/
 	
 	=============================================================================
 	
+
+{% endraw %}

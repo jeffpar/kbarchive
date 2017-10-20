@@ -6,6 +6,8 @@ permalink: /kb/221/Q221991/
 
 ## Q221991: Screen Saver Vulnerability Lets User Privileges Be Elevated
 
+{% raw %}
+
 	Article: Q221991
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -95,3 +97,5 @@ permalink: /kb/221/Q221991/
 	
 	=============================================================================
 	
+
+{% endraw %}

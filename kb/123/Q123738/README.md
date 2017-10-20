@@ -6,6 +6,8 @@ permalink: /kb/123/Q123738/
 
 ## Q123738: STOP 0x0000001e Err Msg with NetBEUI Client/Server Applications
 
+{% raw %}
+
 	Article: Q123738
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -50,3 +52,5 @@ permalink: /kb/123/Q123738/
 	
 	=============================================================================
 	
+
+{% endraw %}

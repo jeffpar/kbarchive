@@ -6,6 +6,8 @@ permalink: /kb/173/Q173304/
 
 ## Q173304: XFOR: Exchange IMC Not Consistent in Handling Importance
 
+{% raw %}
+
 	Article: Q173304
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/173/Q173304/
 	
 	=============================================================================
 	
+
+{% endraw %}

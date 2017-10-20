@@ -6,6 +6,8 @@ permalink: /kb/048/Q48422/
 
 ## Q48422: Mac DOS: AppleShare PC and Mail 1.37 Are Not Compatible
 
+{% raw %}
+
 	Article: Q48422
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.37,2.0,3.0,3.0a,3.0b,3.1,3.1a,3.1c
@@ -60,3 +62,5 @@ permalink: /kb/048/Q48422/
 	
 	=============================================================================
 	
+
+{% endraw %}

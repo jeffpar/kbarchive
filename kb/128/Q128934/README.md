@@ -6,6 +6,8 @@ permalink: /kb/128/Q128934/
 
 ## Q128934: LPR Unable to Print to LPD Queue Names with Lowercase Letters
 
+{% raw %}
+
 	Article: Q128934
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -84,3 +86,5 @@ permalink: /kb/128/Q128934/
 	
 	=============================================================================
 	
+
+{% endraw %}

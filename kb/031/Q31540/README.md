@@ -6,6 +6,8 @@ permalink: /kb/031/Q31540/
 
 ## Q31540: MASM 5.10 EXT.DOC: Display - Updates the Physical Display
 
+{% raw %}
+
 	Article: Q31540
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -28,3 +30,5 @@ permalink: /kb/031/Q31540/
 	 * when you have an SWI_SPECIAL function that alters a file directly.
 	 */
 	void pascal Display ()
+
+{% endraw %}

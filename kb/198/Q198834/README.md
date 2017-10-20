@@ -6,6 +6,8 @@ permalink: /kb/198/Q198834/
 
 ## Q198834: PRB: ATL Server with Singleton Object Never Unloads from Memory
 
+{% raw %}
+
 	Article: Q198834
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,5.0,6.0
@@ -116,3 +118,5 @@ permalink: /kb/198/Q198834/
 	
 	=============================================================================
 	
+
+{% endraw %}

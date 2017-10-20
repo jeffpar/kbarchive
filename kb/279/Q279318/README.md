@@ -6,6 +6,8 @@ permalink: /kb/279/Q279318/
 
 ## Q279318: Connectivity: MSN Companion can't authenticate over dialup, gets
 
+{% raw %}
+
 	Article: Q279318
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -97,3 +99,5 @@ permalink: /kb/279/Q279318/
 	
 	=============================================================================
 	
+
+{% endraw %}

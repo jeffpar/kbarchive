@@ -6,6 +6,8 @@ permalink: /kb/243/Q243469/
 
 ## Q243469: Cluster SMB Share Resource Causes Momentary Disconnection
 
+{% raw %}
+
 	Article: Q243469
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5
@@ -108,3 +110,5 @@ permalink: /kb/243/Q243469/
 	
 	=============================================================================
 	
+
+{% endraw %}

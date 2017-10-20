@@ -6,6 +6,8 @@ permalink: /kb/252/Q252460/
 
 ## Q252460: Access Denied Error when Installing SNA Server 4.0 SP3
 
+{% raw %}
+
 	Article: Q252460
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP3
@@ -70,3 +72,5 @@ permalink: /kb/252/Q252460/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142784/
 
 ## Q142784: XCLN: Alert Window Does Not Close After Reading Message
 
+{% raw %}
+
 	Article: Q142784
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -44,3 +46,5 @@ permalink: /kb/142/Q142784/
 	
 	=============================================================================
 	
+
+{% endraw %}

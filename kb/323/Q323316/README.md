@@ -6,6 +6,8 @@ permalink: /kb/323/Q323316/
 
 ## Q323316: HOW TO: Create an IIS Baseline by Using the Active Server Pages
 
+{% raw %}
+
 	Article: Q323316
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -224,3 +226,5 @@ permalink: /kb/323/Q323316/
 	
 	=============================================================================
 	
+
+{% endraw %}

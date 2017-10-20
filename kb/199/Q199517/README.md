@@ -6,6 +6,8 @@ permalink: /kb/199/Q199517/
 
 ## Q199517: PRB: FreeResource Required for Locked Resources on Macintosh
 
+{% raw %}
+
 	Article: Q199517
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:2.0,4.0,4.0b
@@ -55,3 +57,5 @@ permalink: /kb/199/Q199517/
 	
 	=============================================================================
 	
+
+{% endraw %}

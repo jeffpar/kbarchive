@@ -6,6 +6,8 @@ permalink: /kb/257/Q257918/
 
 ## Q257918: PRB: &quot;File is Missing or Invalid&quot; Error Message
 
+{% raw %}
+
 	Article: Q257918
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/257/Q257918/
 	
 	=============================================================================
 	
+
+{% endraw %}

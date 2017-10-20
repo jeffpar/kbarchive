@@ -6,6 +6,8 @@ permalink: /kb/177/Q177643/
 
 ## Q177643: Cyrillic Characters Are Not Displayed Properly in Some Programs
 
+{% raw %}
+
 	Article: Q177643
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -54,3 +56,5 @@ permalink: /kb/177/Q177643/
 	
 	=============================================================================
 	
+
+{% endraw %}

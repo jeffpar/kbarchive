@@ -6,6 +6,8 @@ permalink: /kb/021/Q21911/
 
 ## Q21911: EGA 43-Line Mode Supported in QuickBASIC Version 3.00 Editor
 
+{% raw %}
+
 	Article: Q21911
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -37,3 +39,5 @@ permalink: /kb/021/Q21911/
 	in the README.DOC file for QuickBASIC Version 3.00, in the BASIC
 	language reference for QuickBASIC Versions 4.00, 4.00b, and 4.50, and
 	also in the QB Advisor in Version 4.50.
+
+{% endraw %}

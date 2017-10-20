@@ -6,6 +6,8 @@ permalink: /kb/138/Q138106/
 
 ## Q138106: PRB: Navigation Buttons Font Different from Other Object Fonts
 
+{% raw %}
+
 	Article: Q138106
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/138/Q138106/
 	
 	=============================================================================
 	
+
+{% endraw %}

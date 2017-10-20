@@ -6,6 +6,8 @@ permalink: /kb/258/Q258042/
 
 ## Q258042: PRB: Error Occurs When Binary Output Parameters Are Used
 
+{% raw %}
+
 	Article: Q258042
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a,6.0
@@ -169,3 +171,5 @@ permalink: /kb/258/Q258042/
 	
 	=============================================================================
 	
+
+{% endraw %}

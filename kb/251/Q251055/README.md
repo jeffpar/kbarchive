@@ -6,6 +6,8 @@ permalink: /kb/251/Q251055/
 
 ## Q251055: XADM: Error Message: Account Information Is Bad
 
+{% raw %}
+
 	Article: Q251055
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -61,3 +63,5 @@ permalink: /kb/251/Q251055/
 	
 	=============================================================================
 	
+
+{% endraw %}

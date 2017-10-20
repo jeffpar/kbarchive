@@ -6,6 +6,8 @@ permalink: /kb/221/Q221731/
 
 ## Q221731: FIX: Copy/Paste Allowed With Password Character
 
+{% raw %}
+
 	Article: Q221731
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a,6.0
@@ -74,3 +76,5 @@ permalink: /kb/221/Q221731/
 	
 	=============================================================================
 	
+
+{% endraw %}

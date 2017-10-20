@@ -6,6 +6,8 @@ permalink: /kb/148/Q148425/
 
 ## Q148425: Duplexed Mirror Generation Fails with Insufficient Space
 
+{% raw %}
+
 	Article: Q148425
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -84,3 +86,5 @@ permalink: /kb/148/Q148425/
 	
 	=============================================================================
 	
+
+{% endraw %}

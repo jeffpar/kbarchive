@@ -6,6 +6,8 @@ permalink: /kb/082/Q82911/
 
 ## Q82911: PC OS2: Group Boxes in Options Dialog Are Unavailable
 
+{% raw %}
+
 	Article: Q82911
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -48,3 +50,5 @@ permalink: /kb/082/Q82911/
 	
 	=============================================================================
 	
+
+{% endraw %}

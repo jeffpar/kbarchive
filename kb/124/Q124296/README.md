@@ -6,6 +6,8 @@ permalink: /kb/124/Q124296/
 
 ## Q124296: Admin Scheduled Batch Job Net Use Commands Are Viewable to Users
 
+{% raw %}
+
 	Article: Q124296
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -57,3 +59,5 @@ permalink: /kb/124/Q124296/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231330/
 
 ## Q231330: IBM Client Access Causes STOP 0x0000001e
 
+{% raw %}
+
 	Article: Q231330
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0; winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/231/Q231330/
 	
 	=============================================================================
 	
+
+{% endraw %}

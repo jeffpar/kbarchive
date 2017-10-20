@@ -6,6 +6,8 @@ permalink: /kb/087/Q87470/
 
 ## Q87470: Mac Srv: Version 3.0 Enhancements from Version 3.1 Servers
 
+{% raw %}
+
 	Article: Q87470
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -47,3 +49,5 @@ permalink: /kb/087/Q87470/
 	
 	=============================================================================
 	
+
+{% endraw %}

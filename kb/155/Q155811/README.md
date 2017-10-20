@@ -6,6 +6,8 @@ permalink: /kb/155/Q155811/
 
 ## Q155811: IIS 2.0 Reinstall Option Restores Default Publication Settings
 
+{% raw %}
+
 	Article: Q155811
 	Product(s): Internet Information Server
 	Version(s): 2.0
@@ -51,3 +53,5 @@ permalink: /kb/155/Q155811/
 	
 	=============================================================================
 	
+
+{% endraw %}

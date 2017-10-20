@@ -6,6 +6,8 @@ permalink: /kb/093/Q93653/
 
 ## Q93653: Novell's NETX Reports MS-DOS 6.x as MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q93653
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -65,3 +67,5 @@ permalink: /kb/093/Q93653/
 	
 	=============================================================================
 	
+
+{% endraw %}

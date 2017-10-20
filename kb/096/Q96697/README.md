@@ -6,6 +6,8 @@ permalink: /kb/096/Q96697/
 
 ## Q96697: Using ANSI Characters with the CHOICE Command
 
+{% raw %}
+
 	Article: Q96697
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -79,3 +81,5 @@ permalink: /kb/096/Q96697/
 	
 	=============================================================================
 	
+
+{% endraw %}

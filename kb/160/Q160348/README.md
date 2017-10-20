@@ -6,6 +6,8 @@ permalink: /kb/160/Q160348/
 
 ## Q160348: Index Server Will Not Index for Adobe Acrobat (.PDF) Files
 
+{% raw %}
+
 	Article: Q160348
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,1.1; :
@@ -47,3 +49,5 @@ permalink: /kb/160/Q160348/
 	
 	=============================================================================
 	
+
+{% endraw %}

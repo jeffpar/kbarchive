@@ -6,6 +6,8 @@ permalink: /kb/050/Q50228/
 
 ## Q50228: How to Use CALL INTERRUPTX to Get Name of Current Directory
 
+{% raw %}
+
 	Article: Q50228
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -58,3 +60,5 @@ permalink: /kb/050/Q50228/
 	CLS
 	PRINT "Current Directory = " + RTRIM$(CurrentDirectory)
 	END
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/266/Q266145/
 
 ## Q266145: XCLN: How to Enable Different Reply Addresses
 
+{% raw %}
+
 	Article: Q266145
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -127,3 +129,5 @@ permalink: /kb/266/Q266145/
 	
 	=============================================================================
 	
+
+{% endraw %}

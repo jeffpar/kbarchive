@@ -6,6 +6,8 @@ permalink: /kb/057/Q57641/
 
 ## Q57641: Olivetti Keyboard Mouse Not Detected by Setup
 
+{% raw %}
+
 	Article: Q57641
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -34,3 +36,5 @@ permalink: /kb/057/Q57641/
 	
 	=============================================================================
 	
+
+{% endraw %}

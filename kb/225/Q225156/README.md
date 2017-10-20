@@ -6,6 +6,8 @@ permalink: /kb/225/Q225156/
 
 ## Q225156: Print Server Shows Incorrect Status Starting Large # of Printers
 
+{% raw %}
+
 	Article: Q225156
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0SP1,4.0SP2
@@ -72,3 +74,5 @@ permalink: /kb/225/Q225156/
 	
 	=============================================================================
 	
+
+{% endraw %}

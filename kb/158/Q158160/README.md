@@ -6,6 +6,8 @@ permalink: /kb/158/Q158160/
 
 ## Q158160: PRB: Cloaked Projects are Deployed
 
+{% raw %}
+
 	Article: Q158160
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -61,3 +63,5 @@ permalink: /kb/158/Q158160/
 	
 	=============================================================================
 	
+
+{% endraw %}

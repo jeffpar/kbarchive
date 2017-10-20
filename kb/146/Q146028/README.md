@@ -6,6 +6,8 @@ permalink: /kb/146/Q146028/
 
 ## Q146028: XCLN: Exchange Inbox Can Be Renamed
 
+{% raw %}
+
 	Article: Q146028
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -38,3 +40,5 @@ permalink: /kb/146/Q146028/
 	
 	=============================================================================
 	
+
+{% endraw %}

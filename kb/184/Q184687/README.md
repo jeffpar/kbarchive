@@ -6,6 +6,8 @@ permalink: /kb/184/Q184687/
 
 ## Q184687: INFO: Lightweight Controls in Visual Basic 6.0
 
+{% raw %}
+
 	Article: Q184687
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -168,3 +170,5 @@ permalink: /kb/184/Q184687/
 	
 	=============================================================================
 	
+
+{% endraw %}

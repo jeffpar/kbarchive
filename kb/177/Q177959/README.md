@@ -6,6 +6,8 @@ permalink: /kb/177/Q177959/
 
 ## Q177959: XADM: Information Store Does Not Start, Error -1022
 
+{% raw %}
+
 	Article: Q177959
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -73,3 +75,5 @@ permalink: /kb/177/Q177959/
 	
 	=============================================================================
 	
+
+{% endraw %}

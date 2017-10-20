@@ -6,6 +6,8 @@ permalink: /kb/278/Q278512/
 
 ## Q278512: BUG: Visual FoxPro May Ignore DDE Messages
 
+{% raw %}
+
 	Article: Q278512
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -222,3 +224,5 @@ permalink: /kb/278/Q278512/
 	
 	=============================================================================
 	
+
+{% endraw %}

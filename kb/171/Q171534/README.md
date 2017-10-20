@@ -6,6 +6,8 @@ permalink: /kb/171/Q171534/
 
 ## Q171534: FIX: Source Code Control Integration Holds .dat Files Open
 
+{% raw %}
+
 	Article: Q171534
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,97
@@ -67,3 +69,5 @@ permalink: /kb/171/Q171534/
 	
 	=============================================================================
 	
+
+{% endraw %}

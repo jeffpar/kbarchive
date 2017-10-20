@@ -6,6 +6,8 @@ permalink: /kb/096/Q96714/
 
 ## Q96714: Description of Pipe Dream in the Windows Entertainment Pack
 
+{% raw %}
+
 	Article: Q96714
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -80,3 +82,5 @@ permalink: /kb/096/Q96714/
 	
 	=============================================================================
 	
+
+{% endraw %}

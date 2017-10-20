@@ -6,6 +6,8 @@ permalink: /kb/219/Q219017/
 
 ## Q219017: Win95/98 Server Tools Do Not Show Complete Event ID Description
 
+{% raw %}
+
 	Article: Q219017
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/219/Q219017/
 	
 	=============================================================================
 	
+
+{% endraw %}

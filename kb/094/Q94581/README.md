@@ -6,6 +6,8 @@ permalink: /kb/094/Q94581/
 
 ## Q94581: BUG: Redirected CodeView Output Yields Unexpected Results
 
+{% raw %}
+
 	Article: Q94581
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.05,4.1
@@ -58,3 +60,5 @@ permalink: /kb/094/Q94581/
 	
 	=============================================================================
 	
+
+{% endraw %}

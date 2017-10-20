@@ -6,6 +6,8 @@ permalink: /kb/242/Q242187/
 
 ## Q242187: XCLN: Insufficient Disk Space Error w/Outlook 98 Deployment Kit
 
+{% raw %}
+
 	Article: Q242187
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:98
@@ -64,3 +66,5 @@ permalink: /kb/242/Q242187/
 	
 	=============================================================================
 	
+
+{% endraw %}

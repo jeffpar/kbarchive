@@ -6,6 +6,8 @@ permalink: /kb/132/Q132777/
 
 ## Q132777: Twain32 (for NT) Scanner Driver Does Not Work in Windows 95
 
+{% raw %}
+
 	Article: Q132777
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/132/Q132777/
 	
 	=============================================================================
 	
+
+{% endraw %}

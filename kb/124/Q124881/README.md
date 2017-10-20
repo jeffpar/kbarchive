@@ -6,6 +6,8 @@ permalink: /kb/124/Q124881/
 
 ## Q124881: WFWG Frame Type Default Depends On Installation Source
 
+{% raw %}
+
 	Article: Q124881
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -46,3 +48,5 @@ permalink: /kb/124/Q124881/
 	
 	=============================================================================
 	
+
+{% endraw %}

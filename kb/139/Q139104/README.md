@@ -6,6 +6,8 @@ permalink: /kb/139/Q139104/
 
 ## Q139104: FTP Session Lost Shelling Out Using &quot;!&quot; and CTRL+C Commands
 
+{% raw %}
+
 	Article: Q139104
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -52,3 +54,5 @@ permalink: /kb/139/Q139104/
 	
 	=============================================================================
 	
+
+{% endraw %}

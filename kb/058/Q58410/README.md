@@ -6,6 +6,8 @@ permalink: /kb/058/Q58410/
 
 ## Q58410: BUILDRTM &quot;Unresolved External&quot; Using OVLDOS21.OBJ; Not Allowed
 
+{% raw %}
+
 	Article: Q58410
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -44,3 +46,5 @@ permalink: /kb/058/Q58410/
 	article by querying on the following words:
 	
 	   how and use and LINK and overlays and BASIC and PDS and 7.00
+
+{% endraw %}

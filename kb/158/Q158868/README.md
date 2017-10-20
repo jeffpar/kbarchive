@@ -6,6 +6,8 @@ permalink: /kb/158/Q158868/
 
 ## Q158868: Computer May Not Boot After Canceling Setup During File Copy
 
+{% raw %}
+
 	Article: Q158868
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -84,3 +86,5 @@ permalink: /kb/158/Q158868/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126879/
 
 ## Q126879: Baseball 1995: BS95READ.TXT (Part 3 of 3)
 
+{% raw %}
+
 	Article: Q126879
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -195,3 +197,5 @@ permalink: /kb/126/Q126879/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235766/
 
 ## Q235766: SMS: Admin Console Installation Causes Dr. Watson
 
+{% raw %}
+
 	Article: Q235766
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -65,3 +67,5 @@ permalink: /kb/235/Q235766/
 	
 	=============================================================================
 	
+
+{% endraw %}

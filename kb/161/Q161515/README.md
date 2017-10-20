@@ -6,6 +6,8 @@ permalink: /kb/161/Q161515/
 
 ## Q161515: WD97: Macro Virus Warning Displayed When No Macros Exist in File
 
+{% raw %}
+
 	Article: Q161515
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -164,3 +166,5 @@ permalink: /kb/161/Q161515/
 	
 	=============================================================================
 	
+
+{% endraw %}

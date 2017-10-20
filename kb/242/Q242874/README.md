@@ -6,6 +6,8 @@ permalink: /kb/242/Q242874/
 
 ## Q242874: Age of Empires II: Pointer Blinks on Windows 2000-Based Computer
 
+{% raw %}
+
 	Article: Q242874
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0; :
@@ -72,3 +74,5 @@ permalink: /kb/242/Q242874/
 	
 	=============================================================================
 	
+
+{% endraw %}

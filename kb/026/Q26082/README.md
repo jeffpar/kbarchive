@@ -6,6 +6,8 @@ permalink: /kb/026/Q26082/
 
 ## Q26082: QB87 Hang or Bad Numbers When &quot;Divide By Zero&quot; on PC-DOS 3.20
 
+{% raw %}
+
 	Article: Q26082
 	Product(s): See article
 	Version(s): 3.00
@@ -47,3 +49,5 @@ permalink: /kb/026/Q26082/
 	different MS-DOS 3.20 (not PC-DOS) problem handling coprocessor
 	floating point exceptions. Query in this KnowledgeBase on the
 	following: COPROCESSOR AND 4.00B AND EXCEPTIONS AND PATCH.
+
+{% endraw %}

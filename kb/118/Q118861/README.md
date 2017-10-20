@@ -6,6 +6,8 @@ permalink: /kb/118/Q118861/
 
 ## Q118861: X400: Supported Format for O/R Name Country Code
 
+{% raw %}
+
 	Article: Q118861
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0,3.2
@@ -47,3 +49,5 @@ permalink: /kb/118/Q118861/
 	
 	=============================================================================
 	
+
+{% endraw %}

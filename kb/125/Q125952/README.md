@@ -6,6 +6,8 @@ permalink: /kb/125/Q125952/
 
 ## Q125952: Security Menu in Windows (16-bit) File Manager Not Available
 
+{% raw %}
+
 	Article: Q125952
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11; Win2000:3.1; winnt:3.5,3.51,4.0
@@ -65,3 +67,5 @@ permalink: /kb/125/Q125952/
 	
 	=============================================================================
 	
+
+{% endraw %}

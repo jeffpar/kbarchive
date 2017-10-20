@@ -6,6 +6,8 @@ permalink: /kb/264/Q264663/
 
 ## Q264663: SC.EXE Command Returns Error: ChangeServiceConfig Failed, rc =
 
+{% raw %}
+
 	Article: Q264663
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/264/Q264663/
 	
 	=============================================================================
 	
+
+{% endraw %}

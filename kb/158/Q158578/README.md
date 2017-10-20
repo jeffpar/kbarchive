@@ -6,6 +6,8 @@ permalink: /kb/158/Q158578/
 
 ## Q158578: STL Sample for the set::(rbegin, rend) Functions
 
+{% raw %}
+
 	Article: Q158578
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -148,3 +150,5 @@ permalink: /kb/158/Q158578/
 	
 	=============================================================================
 	
+
+{% endraw %}

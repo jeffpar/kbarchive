@@ -6,6 +6,8 @@ permalink: /kb/196/Q196193/
 
 ## Q196193: PU Passthru Connection Fails To Activate During XID Negotiation
 
+{% raw %}
+
 	Article: Q196193
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP1
@@ -57,3 +59,5 @@ permalink: /kb/196/Q196193/
 	
 	=============================================================================
 	
+
+{% endraw %}

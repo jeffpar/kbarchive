@@ -6,6 +6,8 @@ permalink: /kb/240/Q240789/
 
 ## Q240789: XADM: Directory Service Does Not Start with Error -1911
 
+{% raw %}
+
 	Article: Q240789
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/240/Q240789/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139091/
 
 ## Q139091: FIX: &quot;INDEX Internal Consistency Error&quot; Occurs with SET KEY
 
+{% raw %}
+
 	Article: Q139091
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -119,3 +121,5 @@ permalink: /kb/139/Q139091/
 	
 	=============================================================================
 	
+
+{% endraw %}

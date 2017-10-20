@@ -6,6 +6,8 @@ permalink: /kb/123/Q123876/
 
 ## Q123876: Installed Components for Typical, Compact, or Portable Setup
 
+{% raw %}
+
 	Article: Q123876
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -187,3 +189,5 @@ permalink: /kb/123/Q123876/
 	
 	=============================================================================
 	
+
+{% endraw %}

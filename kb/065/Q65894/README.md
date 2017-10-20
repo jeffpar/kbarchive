@@ -6,6 +6,8 @@ permalink: /kb/065/Q65894/
 
 ## Q65894: Metheus Video Cards and Windows Video Drivers
 
+{% raw %}
+
 	Article: Q65894
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -71,3 +73,5 @@ permalink: /kb/065/Q65894/
 	
 	=============================================================================
 	
+
+{% endraw %}

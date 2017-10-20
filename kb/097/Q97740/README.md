@@ -6,6 +6,8 @@ permalink: /kb/097/Q97740/
 
 ## Q97740: Applications That Don't Run on DoubleSpace-Compressed Drives
 
+{% raw %}
+
 	Article: Q97740
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -205,3 +207,5 @@ permalink: /kb/097/Q97740/
 	
 	=============================================================================
 	
+
+{% endraw %}

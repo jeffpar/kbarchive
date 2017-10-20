@@ -6,6 +6,8 @@ permalink: /kb/162/Q162029/
 
 ## Q162029: Token Leak Caused by LPC Port Connection to DHCP Service
 
+{% raw %}
+
 	Article: Q162029
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -68,3 +70,5 @@ permalink: /kb/162/Q162029/
 	
 	=============================================================================
 	
+
+{% endraw %}

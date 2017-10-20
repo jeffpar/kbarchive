@@ -6,6 +6,8 @@ permalink: /kb/158/Q158392/
 
 ## Q158392: Hellbender and MTM: Screen Goes Black with Hercules Dynamite
 
+{% raw %}
+
 	Article: Q158392
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -82,3 +84,5 @@ permalink: /kb/158/Q158392/
 	
 	=============================================================================
 	
+
+{% endraw %}

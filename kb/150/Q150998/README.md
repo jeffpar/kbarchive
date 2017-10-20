@@ -6,6 +6,8 @@ permalink: /kb/150/Q150998/
 
 ## Q150998: Bookshelf '96-'97: Adjusting QuickShelf Toolbar to Fit Screen
 
+{% raw %}
+
 	Article: Q150998
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -78,3 +80,5 @@ permalink: /kb/150/Q150998/
 	
 	=============================================================================
 	
+
+{% endraw %}

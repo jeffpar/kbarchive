@@ -6,6 +6,8 @@ permalink: /kb/134/Q134889/
 
 ## Q134889: FIX: Filter Is Not Added for Integer Fields in View Wizards
 
+{% raw %}
+
 	Article: Q134889
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -66,3 +68,5 @@ permalink: /kb/134/Q134889/
 	
 	=============================================================================
 	
+
+{% endraw %}

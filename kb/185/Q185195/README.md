@@ -6,6 +6,8 @@ permalink: /kb/185/Q185195/
 
 ## Q185195: How to Use Key and Certificate Backup/Restore Utility
 
+{% raw %}
+
 	Article: Q185195
 	Product(s): Internet Information Server
 	Version(s): 1.0,4.0
@@ -240,3 +242,5 @@ permalink: /kb/185/Q185195/
 	
 	=============================================================================
 	
+
+{% endraw %}

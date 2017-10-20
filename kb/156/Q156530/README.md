@@ -6,6 +6,8 @@ permalink: /kb/156/Q156530/
 
 ## Q156530: Setup Stops When Inspecting Computer Hardware Configuration
 
+{% raw %}
+
 	Article: Q156530
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/156/Q156530/
 	
 	=============================================================================
 	
+
+{% endraw %}

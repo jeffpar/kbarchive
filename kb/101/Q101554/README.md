@@ -6,6 +6,8 @@ permalink: /kb/101/Q101554/
 
 ## Q101554: PC Mac: Err Msg: The Control Panel...Cannot Be Used with...
 
+{% raw %}
+
 	Article: Q101554
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -108,3 +110,5 @@ permalink: /kb/101/Q101554/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178302/
 
 ## Q178302: XADM: Upgrade to Exchange 5.5 Fails If Virus Software Is Enabled
 
+{% raw %}
+
 	Article: Q178302
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -128,3 +130,5 @@ permalink: /kb/178/Q178302/
 	
 	=============================================================================
 	
+
+{% endraw %}

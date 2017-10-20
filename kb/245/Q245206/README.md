@@ -6,6 +6,8 @@ permalink: /kb/245/Q245206/
 
 ## Q245206: Cannot Delete a Partition from a Broken Mirror Set.
 
+{% raw %}
+
 	Article: Q245206
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/245/Q245206/
 	
 	=============================================================================
 	
+
+{% endraw %}

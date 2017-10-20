@@ -6,6 +6,8 @@ permalink: /kb/165/Q165084/
 
 ## Q165084: SNA Server Manager Issues with Workstations
 
+{% raw %}
+
 	Article: Q165084
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -88,3 +90,5 @@ permalink: /kb/165/Q165084/
 	
 	=============================================================================
 	
+
+{% endraw %}

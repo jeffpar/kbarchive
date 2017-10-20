@@ -6,6 +6,8 @@ permalink: /kb/135/Q135695/
 
 ## Q135695: Unclear Error Appears When Saving Notepad File On NTFS Drive
 
+{% raw %}
+
 	Article: Q135695
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/135/Q135695/
 	
 	=============================================================================
 	
+
+{% endraw %}

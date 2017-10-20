@@ -6,6 +6,8 @@ permalink: /kb/200/Q200620/
 
 ## Q200620: SMSINST: Office 4.3 Uninstall Leaves Files and Folders Behind
 
+{% raw %}
+
 	Article: Q200620
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0,2.0
@@ -51,3 +53,5 @@ permalink: /kb/200/Q200620/
 	
 	=============================================================================
 	
+
+{% endraw %}

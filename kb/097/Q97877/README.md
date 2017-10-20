@@ -6,6 +6,8 @@ permalink: /kb/097/Q97877/
 
 ## Q97877: Bookshelf: Pronunciation Key Popup Window Resize
 
+{% raw %}
+
 	Article: Q97877
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1991 edition,1992 edition,1993 edition,2.0
@@ -60,3 +62,5 @@ permalink: /kb/097/Q97877/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196162/
 
 ## Q196162: XADM: Free/Busy Info Doesn't Work After Running Move Server
 
+{% raw %}
+
 	Article: Q196162
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -57,3 +59,5 @@ permalink: /kb/196/Q196162/
 	
 	=============================================================================
 	
+
+{% endraw %}

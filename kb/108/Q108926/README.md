@@ -6,6 +6,8 @@ permalink: /kb/108/Q108926/
 
 ## Q108926: DdeCreateDataHandle() Memory Allocation Granularity DDEML
 
+{% raw %}
+
 	Article: Q108926
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -65,3 +67,5 @@ permalink: /kb/108/Q108926/
 	
 	=============================================================================
 	
+
+{% endraw %}

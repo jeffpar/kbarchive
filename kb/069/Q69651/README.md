@@ -6,6 +6,8 @@ permalink: /kb/069/Q69651/
 
 ## Q69651: Listing of Taipei Winner Messages
 
+{% raw %}
+
 	Article: Q69651
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -108,3 +110,5 @@ permalink: /kb/069/Q69651/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86373/
 
 ## Q86373: PC DOS: New Features in 3.0 Client Utilities
 
+{% raw %}
+
 	Article: Q86373
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -76,3 +78,5 @@ permalink: /kb/086/Q86373/
 	
 	=============================================================================
 	
+
+{% endraw %}

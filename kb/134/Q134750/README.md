@@ -6,6 +6,8 @@ permalink: /kb/134/Q134750/
 
 ## Q134750: Err Msg: SCANDISK Will Work Only with MS-DOS Versions...
 
+{% raw %}
+
 	Article: Q134750
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/134/Q134750/
 	
 	=============================================================================
 	
+
+{% endraw %}

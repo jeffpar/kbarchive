@@ -6,6 +6,8 @@ permalink: /kb/065/Q65241/
 
 ## Q65241: CV Limits Input of Period Character (2Eh) into Memory Window
 
+{% raw %}
+
 	Article: Q65241
 	Product(s): See article
 	Version(s): 3.00 3.10 | 3.00 3.10
@@ -50,3 +52,5 @@ permalink: /kb/065/Q65241/
 	Microsoft has confirmed this to be a problem in CodeView versions 3.00
 	and 3.10. We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

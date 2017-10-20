@@ -6,6 +6,8 @@ permalink: /kb/197/Q197761/
 
 ## Q197761: WD97: View Merged Data Doesn't Suppress Blank Lines
 
+{% raw %}
+
 	Article: Q197761
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/197/Q197761/
 	
 	=============================================================================
 	
+
+{% endraw %}

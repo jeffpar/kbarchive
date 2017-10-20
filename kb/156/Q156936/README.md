@@ -6,6 +6,8 @@ permalink: /kb/156/Q156936/
 
 ## Q156936: Writer 2: How to Edit the Custom Dictionary
 
+{% raw %}
+
 	Article: Q156936
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -56,3 +58,5 @@ permalink: /kb/156/Q156936/
 	
 	=============================================================================
 	
+
+{% endraw %}

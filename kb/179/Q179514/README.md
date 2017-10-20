@@ -6,6 +6,8 @@ permalink: /kb/179/Q179514/
 
 ## Q179514: Display May Not Fill Entire Screen on IBM ThinkPad Computer
 
+{% raw %}
+
 	Article: Q179514
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/179/Q179514/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192252/
 
 ## Q192252: BUG: Menu Accelerators Still Work When Form is Disabled
 
+{% raw %}
+
 	Article: Q192252
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -102,3 +104,5 @@ permalink: /kb/192/Q192252/
 	
 	=============================================================================
 	
+
+{% endraw %}

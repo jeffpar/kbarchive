@@ -6,6 +6,8 @@ permalink: /kb/185/Q185095/
 
 ## Q185095: PPT: Embedding Fonts Not Supported in Macintosh PowerPoint
 
+{% raw %}
+
 	Article: Q185095
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0,98
@@ -45,3 +47,5 @@ permalink: /kb/185/Q185095/
 	
 	=============================================================================
 	
+
+{% endraw %}

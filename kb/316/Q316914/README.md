@@ -6,6 +6,8 @@ permalink: /kb/316/Q316914/
 
 ## Q316914: BUG: Menu Generated With SKIP FOR that Contains .F. Is Missing S
 
+{% raw %}
+
 	Article: Q316914
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0,7.0 SP1
@@ -149,3 +151,5 @@ permalink: /kb/316/Q316914/
 	
 	=============================================================================
 	
+
+{% endraw %}

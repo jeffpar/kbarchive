@@ -6,6 +6,8 @@ permalink: /kb/156/Q156294/
 
 ## Q156294: XCLN: Obtaining the Current User from an EFD Form
 
+{% raw %}
+
 	Article: Q156294
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/156/Q156294/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156187/
 
 ## Q156187: Cannot Locate Readme.doc on MSDN Compact Disc
 
+{% raw %}
+
 	Article: Q156187
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/156/Q156187/
 	
 	=============================================================================
 	
+
+{% endraw %}

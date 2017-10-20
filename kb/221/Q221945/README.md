@@ -6,6 +6,8 @@ permalink: /kb/221/Q221945/
 
 ## Q221945: SMS: Job Status Goes Complete Before Server Processing Completes
 
+{% raw %}
+
 	Article: Q221945
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -110,3 +112,5 @@ permalink: /kb/221/Q221945/
 	
 	=============================================================================
 	
+
+{% endraw %}

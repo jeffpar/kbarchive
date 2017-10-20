@@ -6,6 +6,8 @@ permalink: /kb/035/Q35529/
 
 ## Q35529: Compiling the Program Currently Loaded in Editor
 
+{% raw %}
+
 	Article: Q35529
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -34,3 +36,5 @@ permalink: /kb/035/Q35529/
 	   extmake:c cl /Zi /Od %s
 	
 	The %s will be replaced with the current filename.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176518/
 
 ## Q176518: XCON: Recalculating Routing does not Remove Deleted Routes
 
+{% raw %}
+
 	Article: Q176518
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -89,3 +91,5 @@ permalink: /kb/176/Q176518/
 	
 	=============================================================================
 	
+
+{% endraw %}

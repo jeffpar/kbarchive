@@ -6,6 +6,8 @@ permalink: /kb/175/Q175533/
 
 ## Q175533: BUG: Toolbar Does Not Wrap Correctly
 
+{% raw %}
+
 	Article: Q175533
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -139,3 +141,5 @@ permalink: /kb/175/Q175533/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162833/
 
 ## Q162833: XFOR: Event 283 May Occur When Running the Migration Wizard
 
+{% raw %}
+
 	Article: Q162833
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -80,3 +82,5 @@ permalink: /kb/162/Q162833/
 	
 	=============================================================================
 	
+
+{% endraw %}

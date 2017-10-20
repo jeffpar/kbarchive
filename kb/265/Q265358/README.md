@@ -6,6 +6,8 @@ permalink: /kb/265/Q265358/
 
 ## Q265358: &quot;Site Config Last Checked&quot; Registry Value Is Missing
 
+{% raw %}
+
 	Article: Q265358
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -83,3 +85,5 @@ permalink: /kb/265/Q265358/
 	
 	=============================================================================
 	
+
+{% endraw %}

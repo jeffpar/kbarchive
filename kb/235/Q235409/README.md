@@ -6,6 +6,8 @@ permalink: /kb/235/Q235409/
 
 ## Q235409: SCSI Port Driver Logical Unit Number Count Not Updated Correctly
 
+{% raw %}
+
 	Article: Q235409
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/235/Q235409/
 	
 	=============================================================================
 	
+
+{% endraw %}

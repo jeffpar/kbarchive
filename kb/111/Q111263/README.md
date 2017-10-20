@@ -6,6 +6,8 @@ permalink: /kb/111/Q111263/
 
 ## Q111263: PRB: Causes of DX1020 or R6915 Unhandled Exception Error
 
+{% raw %}
+
 	Article: Q111263
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.0a,1.5,1.51,1.52,6.11,7.0
@@ -92,3 +94,5 @@ permalink: /kb/111/Q111263/
 	
 	=============================================================================
 	
+
+{% endraw %}

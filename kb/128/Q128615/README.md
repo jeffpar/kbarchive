@@ -6,6 +6,8 @@ permalink: /kb/128/Q128615/
 
 ## Q128615: Detection Process Stops at 80 Percent Complete During Setup
 
+{% raw %}
+
 	Article: Q128615
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -75,3 +77,5 @@ permalink: /kb/128/Q128615/
 	
 	=============================================================================
 	
+
+{% endraw %}

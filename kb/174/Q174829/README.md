@@ -6,6 +6,8 @@ permalink: /kb/174/Q174829/
 
 ## Q174829: Restoring the Security Menu in Explorer
 
+{% raw %}
+
 	Article: Q174829
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -51,3 +53,5 @@ permalink: /kb/174/Q174829/
 	
 	=============================================================================
 	
+
+{% endraw %}

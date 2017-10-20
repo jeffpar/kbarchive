@@ -6,6 +6,8 @@ permalink: /kb/201/Q201751/
 
 ## Q201751: SMS: Documentation Error in Administrator's Guide about Hardware
 
+{% raw %}
+
 	Article: Q201751
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -54,3 +56,5 @@ permalink: /kb/201/Q201751/
 	
 	=============================================================================
 	
+
+{% endraw %}

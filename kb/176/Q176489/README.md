@@ -6,6 +6,8 @@ permalink: /kb/176/Q176489/
 
 ## Q176489: XCON: MTA Generates NDRs and Message Loops
 
+{% raw %}
+
 	Article: Q176489
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -82,3 +84,5 @@ permalink: /kb/176/Q176489/
 	
 	=============================================================================
 	
+
+{% endraw %}

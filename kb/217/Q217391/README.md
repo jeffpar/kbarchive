@@ -6,6 +6,8 @@ permalink: /kb/217/Q217391/
 
 ## Q217391: PRB: Excel Does Not Repaint Highlighted Cells Correctly in MFC
 
+{% raw %}
+
 	Article: Q217391
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -149,3 +151,5 @@ permalink: /kb/217/Q217391/
 	
 	=============================================================================
 	
+
+{% endraw %}

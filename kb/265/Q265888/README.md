@@ -6,6 +6,8 @@ permalink: /kb/265/Q265888/
 
 ## Q265888: A+ Certification Training Kit Comments and Corrections
 
+{% raw %}
+
 	Article: Q265888
 	Product(s): Microsoft Press
 	Version(s): 
@@ -223,3 +225,5 @@ permalink: /kb/265/Q265888/
 	
 	=============================================================================
 	
+
+{% endraw %}

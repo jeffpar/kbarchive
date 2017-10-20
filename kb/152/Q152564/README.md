@@ -6,6 +6,8 @@ permalink: /kb/152/Q152564/
 
 ## Q152564: INFO: Visual Basic 4.0 Reading List
 
+{% raw %}
+
 	Article: Q152564
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -206,3 +208,5 @@ permalink: /kb/152/Q152564/
 	
 	=============================================================================
 	
+
+{% endraw %}

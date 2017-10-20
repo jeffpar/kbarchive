@@ -6,6 +6,8 @@ permalink: /kb/130/Q130633/
 
 ## Q130633: Event ID 12042: Internal Server Information...Was Corrupted
 
+{% raw %}
+
 	Article: Q130633
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -63,3 +65,5 @@ permalink: /kb/130/Q130633/
 	
 	=============================================================================
 	
+
+{% endraw %}

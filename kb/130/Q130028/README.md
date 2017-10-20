@@ -6,6 +6,8 @@ permalink: /kb/130/Q130028/
 
 ## Q130028: Windows NT Server Tools on WFW Fails With RPC Error
 
+{% raw %}
+
 	Article: Q130028
 	Product(s): Microsoft Windows NT
 	Version(s): 3.11,3.5
@@ -104,3 +106,5 @@ permalink: /kb/130/Q130028/
 	
 	=============================================================================
 	
+
+{% endraw %}

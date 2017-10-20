@@ -6,6 +6,8 @@ permalink: /kb/076/Q76065/
 
 ## Q76065: Summa Graphics Pointing Devices and MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q76065
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -53,3 +55,5 @@ permalink: /kb/076/Q76065/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/276/Q276364/
 
 ## Q276364: LU-LU Test Fails with Active AS/400 Connection
 
+{% raw %}
+
 	Article: Q276364
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -72,3 +74,5 @@ permalink: /kb/276/Q276364/
 	
 	=============================================================================
 	
+
+{% endraw %}

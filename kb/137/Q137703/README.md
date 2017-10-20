@@ -6,6 +6,8 @@ permalink: /kb/137/Q137703/
 
 ## Q137703: PC WFW: WFWs MSMAIL.EXE Disables Retail Mail's Spell Checking
 
+{% raw %}
+
 	Article: Q137703
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.5
@@ -46,3 +48,5 @@ permalink: /kb/137/Q137703/
 	
 	=============================================================================
 	
+
+{% endraw %}

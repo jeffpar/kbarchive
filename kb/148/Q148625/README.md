@@ -6,6 +6,8 @@ permalink: /kb/148/Q148625/
 
 ## Q148625: BUG: NAMELIST Output Incorrect with Renamed USE Variables
 
+{% raw %}
+
 	Article: Q148625
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -81,3 +83,5 @@ permalink: /kb/148/Q148625/
 	
 	=============================================================================
 	
+
+{% endraw %}

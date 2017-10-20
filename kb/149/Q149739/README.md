@@ -6,6 +6,8 @@ permalink: /kb/149/Q149739/
 
 ## Q149739: BUG: MSRDC32.OCX Not Loaded Through Browse Button
 
+{% raw %}
+
 	Article: Q149739
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -72,3 +74,5 @@ permalink: /kb/149/Q149739/
 	
 	=============================================================================
 	
+
+{% endraw %}

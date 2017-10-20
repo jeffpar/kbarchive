@@ -6,6 +6,8 @@ permalink: /kb/197/Q197891/
 
 ## Q197891: Enumerating the Names of IIS Web Sites Using WSH
 
+{% raw %}
+
 	Article: Q197891
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/197/Q197891/
 	
 	=============================================================================
 	
+
+{% endraw %}

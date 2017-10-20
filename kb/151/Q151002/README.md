@@ -6,6 +6,8 @@ permalink: /kb/151/Q151002/
 
 ## Q151002: FIX: No Response to Natural Keyboard Right-Mouse Button
 
+{% raw %}
+
 	Article: Q151002
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a
@@ -56,3 +58,5 @@ permalink: /kb/151/Q151002/
 	
 	=============================================================================
 	
+
+{% endraw %}

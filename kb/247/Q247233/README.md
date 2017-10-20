@@ -6,6 +6,8 @@ permalink: /kb/247/Q247233/
 
 ## Q247233: WD97: IPF When You Press ENTER in Table or Label Row
 
+{% raw %}
+
 	Article: Q247233
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -96,3 +98,5 @@ permalink: /kb/247/Q247233/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153659/
 
 ## Q153659: SMS: Administrator UI GP Faults During Remote Control Session
 
+{% raw %}
+
 	Article: Q153659
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -43,3 +45,5 @@ permalink: /kb/153/Q153659/
 	
 	=============================================================================
 	
+
+{% endraw %}

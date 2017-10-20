@@ -6,6 +6,8 @@ permalink: /kb/120/Q120422/
 
 ## Q120422: Turbo Pascal has Transparent Installation Screen Backgrounds
 
+{% raw %}
+
 	Article: Q120422
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/120/Q120422/
 	
 	=============================================================================
 	
+
+{% endraw %}

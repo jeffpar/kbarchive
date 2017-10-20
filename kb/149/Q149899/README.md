@@ -6,6 +6,8 @@ permalink: /kb/149/Q149899/
 
 ## Q149899: BUG: Password Property Accepts No More Than 8 Characters
 
+{% raw %}
+
 	Article: Q149899
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -69,3 +71,5 @@ permalink: /kb/149/Q149899/
 	
 	=============================================================================
 	
+
+{% endraw %}

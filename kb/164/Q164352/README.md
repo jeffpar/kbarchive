@@ -6,6 +6,8 @@ permalink: /kb/164/Q164352/
 
 ## Q164352: Stop 0x00000050 in Tcpip.sys Caused by Winsock Applications
 
+{% raw %}
+
 	Article: Q164352
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/164/Q164352/
 	
 	=============================================================================
 	
+
+{% endraw %}

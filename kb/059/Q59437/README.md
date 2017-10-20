@@ -6,6 +6,8 @@ permalink: /kb/059/Q59437/
 
 ## Q59437: fstat() Gets Different Results Under FAT and HPFS
 
+{% raw %}
+
 	Article: Q59437
 	Product(s): See article
 	Version(s): 5.10 6.00 | 5.10 6.00
@@ -31,3 +33,5 @@ permalink: /kb/059/Q59437/
 	fstat() then puts the three values in the fields. The FAT file system
 	does NOT maintain these three values so fstat() returns the same file
 	time in all three variables.
+
+{% endraw %}

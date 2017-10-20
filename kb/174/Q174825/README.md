@@ -6,6 +6,8 @@ permalink: /kb/174/Q174825/
 
 ## Q174825: FIX: Accessing Image Property of PictureBox Diminishes Resources
 
+{% raw %}
+
 	Article: Q174825
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -100,3 +102,5 @@ permalink: /kb/174/Q174825/
 	
 	=============================================================================
 	
+
+{% endraw %}

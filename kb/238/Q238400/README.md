@@ -6,6 +6,8 @@ permalink: /kb/238/Q238400/
 
 ## Q238400: WD97: Unable to Access Spelling Checker Using Terminal Server
 
+{% raw %}
+
 	Article: Q238400
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/238/Q238400/
 	
 	=============================================================================
 	
+
+{% endraw %}

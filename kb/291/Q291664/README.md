@@ -6,6 +6,8 @@ permalink: /kb/291/Q291664/
 
 ## Q291664: HOWTO: Detect Safe Mode Startup with Visual Basic
 
+{% raw %}
+
 	Article: Q291664
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -105,3 +107,5 @@ permalink: /kb/291/Q291664/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131217/
 
 ## Q131217: REPORT FORM Command Uses Temp File for Unsaved Report
 
+{% raw %}
+
 	Article: Q131217
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -48,3 +50,5 @@ permalink: /kb/131/Q131217/
 	
 	=============================================================================
 	
+
+{% endraw %}

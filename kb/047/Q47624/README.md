@@ -6,6 +6,8 @@ permalink: /kb/047/Q47624/
 
 ## Q47624: CodeView Cannot Trace into Single-Line Functions
 
+{% raw %}
+
 	Article: Q47624
 	Product(s): See article
 	Version(s): 2.20 2.30 | 2.20 2.30
@@ -44,3 +46,5 @@ permalink: /kb/047/Q47624/
 	 {
 	   return 1;
 	  }
+
+{% endraw %}

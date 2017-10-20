@@ -6,6 +6,8 @@ permalink: /kb/103/Q103154/
 
 ## Q103154: Nbf Received an Unexpected FRMR Packet in Event Viewer
 
+{% raw %}
+
 	Article: Q103154
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -49,3 +51,5 @@ permalink: /kb/103/Q103154/
 	
 	=============================================================================
 	
+
+{% endraw %}

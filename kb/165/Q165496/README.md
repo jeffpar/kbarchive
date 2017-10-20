@@ -6,6 +6,8 @@ permalink: /kb/165/Q165496/
 
 ## Q165496: INFO: VSS Integration With MS Word and MS Excel
 
+{% raw %}
+
 	Article: Q165496
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0
@@ -125,3 +127,5 @@ permalink: /kb/165/Q165496/
 	
 	=============================================================================
 	
+
+{% endraw %}

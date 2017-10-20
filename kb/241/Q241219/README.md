@@ -6,6 +6,8 @@ permalink: /kb/241/Q241219/
 
 ## Q241219: MS99-036: Unattended Installation File Not Deleted After Setup
 
+{% raw %}
+
 	Article: Q241219
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.5
@@ -95,3 +97,5 @@ permalink: /kb/241/Q241219/
 	
 	=============================================================================
 	
+
+{% endraw %}

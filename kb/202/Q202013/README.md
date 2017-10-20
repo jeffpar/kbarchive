@@ -6,6 +6,8 @@ permalink: /kb/202/Q202013/
 
 ## Q202013: IIS 5.0 Command-Line Syntax for Iisreset.exe
 
+{% raw %}
+
 	Article: Q202013
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -120,3 +122,5 @@ permalink: /kb/202/Q202013/
 	
 	=============================================================================
 	
+
+{% endraw %}

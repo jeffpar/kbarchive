@@ -6,6 +6,8 @@ permalink: /kb/233/Q233460/
 
 ## Q233460: Business Planner: Data in Shared Business Plan Changed or Lost
 
+{% raw %}
+
 	Article: Q233460
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -65,3 +67,5 @@ permalink: /kb/233/Q233460/
 	
 	=============================================================================
 	
+
+{% endraw %}

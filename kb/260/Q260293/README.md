@@ -6,6 +6,8 @@ permalink: /kb/260/Q260293/
 
 ## Q260293: SMS: Advertised Programs Monitor Settings Do Not Take Affect for
 
+{% raw %}
+
 	Article: Q260293
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -65,3 +67,5 @@ permalink: /kb/260/Q260293/
 	
 	=============================================================================
 	
+
+{% endraw %}

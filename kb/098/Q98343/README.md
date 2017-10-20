@@ -6,6 +6,8 @@ permalink: /kb/098/Q98343/
 
 ## Q98343: Creating Colored Hot Spot with no Underline in MM Viewer
 
+{% raw %}
+
 	Article: Q98343
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -49,3 +51,5 @@ permalink: /kb/098/Q98343/
 	
 	=============================================================================
 	
+
+{% endraw %}

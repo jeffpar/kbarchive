@@ -6,6 +6,8 @@ permalink: /kb/224/Q224436/
 
 ## Q224436: OL98: Melissa Macro Virus Alert
 
+{% raw %}
+
 	Article: Q224436
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -229,3 +231,5 @@ permalink: /kb/224/Q224436/
 	
 	=============================================================================
 	
+
+{% endraw %}

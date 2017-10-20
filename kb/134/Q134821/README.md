@@ -6,6 +6,8 @@ permalink: /kb/134/Q134821/
 
 ## Q134821: Microsoft Systems Journal: September 1995
 
+{% raw %}
+
 	Article: Q134821
 	Product(s): Miscrosoft Systems Journal
 	Version(s): for September 1995
@@ -126,3 +128,5 @@ permalink: /kb/134/Q134821/
 	
 	=============================================================================
 	
+
+{% endraw %}

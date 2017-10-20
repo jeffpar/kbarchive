@@ -6,6 +6,8 @@ permalink: /kb/125/Q125651/
 
 ## Q125651: PRB: Update or Delete Record Gives Error: Query is too complex
 
+{% raw %}
+
 	Article: Q125651
 	Product(s): Microsoft C Compiler
 	Version(s): 1.50 1.51 1.52 | 2.00 2.10 4.00
@@ -140,3 +142,5 @@ permalink: /kb/125/Q125651/
 	
 	=============================================================================
 	
+
+{% endraw %}

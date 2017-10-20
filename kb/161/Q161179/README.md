@@ -6,6 +6,8 @@ permalink: /kb/161/Q161179/
 
 ## Q161179: WinSock Zero-Length Packet Not Sent on Network
 
+{% raw %}
+
 	Article: Q161179
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/161/Q161179/
 	
 	=============================================================================
 	
+
+{% endraw %}

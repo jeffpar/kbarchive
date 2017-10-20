@@ -6,6 +6,8 @@ permalink: /kb/178/Q178753/
 
 ## Q178753: FIX: ListView ItemClick Event Executes Multiple Times
 
+{% raw %}
+
 	Article: Q178753
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -113,3 +115,5 @@ permalink: /kb/178/Q178753/
 	
 	=============================================================================
 	
+
+{% endraw %}

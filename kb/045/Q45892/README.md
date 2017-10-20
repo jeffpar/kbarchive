@@ -6,6 +6,8 @@ permalink: /kb/045/Q45892/
 
 ## Q45892: CALL BYVAL &quot;Parameter Type Mismatch&quot; After DECLARE AS ANY
 
+{% raw %}
+
 	Article: Q45892
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -56,3 +58,5 @@ permalink: /kb/045/Q45892/
 	   DECLARE SUB test (BYVAL variable AS INTEGER)
 	   i%=10
 	   CALL test(i%)
+
+{% endraw %}

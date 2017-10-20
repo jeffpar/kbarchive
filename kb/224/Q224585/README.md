@@ -6,6 +6,8 @@ permalink: /kb/224/Q224585/
 
 ## Q224585: TCB Hash Function Modified to Improve Network Performance
 
+{% raw %}
+
 	Article: Q224585
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/224/Q224585/
 	
 	=============================================================================
 	
+
+{% endraw %}

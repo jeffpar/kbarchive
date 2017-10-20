@@ -6,6 +6,8 @@ permalink: /kb/295/Q295565/
 
 ## Q295565: Microsoft Project 2000 Step By Step Comments And Corrections
 
+{% raw %}
+
 	Article: Q295565
 	Product(s): Microsoft Press
 	Version(s): 
@@ -251,3 +253,5 @@ permalink: /kb/295/Q295565/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158867/
 
 ## Q158867: Low Disk Space Dialog Box Displays Incorrect Information
 
+{% raw %}
+
 	Article: Q158867
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -54,3 +56,5 @@ permalink: /kb/158/Q158867/
 	
 	=============================================================================
 	
+
+{% endraw %}

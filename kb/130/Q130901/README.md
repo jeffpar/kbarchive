@@ -6,6 +6,8 @@ permalink: /kb/130/Q130901/
 
 ## Q130901: Frame Corruption in Retransmitted IPX Packet
 
+{% raw %}
+
 	Article: Q130901
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -67,3 +69,5 @@ permalink: /kb/130/Q130901/
 	
 	=============================================================================
 	
+
+{% endraw %}

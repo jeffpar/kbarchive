@@ -6,6 +6,8 @@ permalink: /kb/093/Q93384/
 
 ## Q93384: Device Error Upgrading WFWG Over Windows with Intel Faxability
 
+{% raw %}
+
 	Article: Q93384
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -82,3 +84,5 @@ permalink: /kb/093/Q93384/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68157/
 
 ## Q68157: Gama Fax TSR Program Conflicts with BASIC Keyboard Input
 
+{% raw %}
+
 	Article: Q68157
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -61,3 +63,5 @@ permalink: /kb/068/Q68157/
 	QuickBASIC. If the above configuration does not solve the problem and
 	you need more assistance in configuring the Gama Fax software, contact
 	Gama Link at (408) 744-1430.
+
+{% endraw %}

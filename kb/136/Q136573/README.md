@@ -6,6 +6,8 @@ permalink: /kb/136/Q136573/
 
 ## Q136573: Win32s Requires Virtual Memory
 
+{% raw %}
+
 	Article: Q136573
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -66,3 +68,5 @@ permalink: /kb/136/Q136573/
 	
 	=============================================================================
 	
+
+{% endraw %}

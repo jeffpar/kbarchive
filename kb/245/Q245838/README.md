@@ -6,6 +6,8 @@ permalink: /kb/245/Q245838/
 
 ## Q245838: XADM: How to Stop a Server Monitor from Restarting a Server
 
+{% raw %}
+
 	Article: Q245838
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -90,3 +92,5 @@ permalink: /kb/245/Q245838/
 	
 	=============================================================================
 	
+
+{% endraw %}

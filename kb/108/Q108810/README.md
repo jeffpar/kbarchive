@@ -6,6 +6,8 @@ permalink: /kb/108/Q108810/
 
 ## Q108810: PC MAPI: MAPISaveMail Allows Creation of Invalid Date Message
 
+{% raw %}
+
 	Article: Q108810
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -41,3 +43,5 @@ permalink: /kb/108/Q108810/
 	
 	=============================================================================
 	
+
+{% endraw %}

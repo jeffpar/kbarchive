@@ -6,6 +6,8 @@ permalink: /kb/136/Q136572/
 
 ## Q136572: Golf Setup Message: Some disks may not be required
 
+{% raw %}
+
 	Article: Q136572
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0a,95
@@ -45,3 +47,5 @@ permalink: /kb/136/Q136572/
 	
 	=============================================================================
 	
+
+{% endraw %}

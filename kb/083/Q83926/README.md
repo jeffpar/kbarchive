@@ -6,6 +6,8 @@ permalink: /kb/083/Q83926/
 
 ## Q83926: Windows 3.1 Licensing Policy Allows for One Copy per License
 
+{% raw %}
+
 	Article: Q83926
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/083/Q83926/
 	
 	=============================================================================
 	
+
+{% endraw %}

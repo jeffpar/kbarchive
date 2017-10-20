@@ -6,6 +6,8 @@ permalink: /kb/155/Q155039/
 
 ## Q155039: Foreground Program Unavailable During Scheduled Connection
 
+{% raw %}
+
 	Article: Q155039
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/155/Q155039/
 	
 	=============================================================================
 	
+
+{% endraw %}

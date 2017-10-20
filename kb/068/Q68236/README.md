@@ -6,6 +6,8 @@ permalink: /kb/068/Q68236/
 
 ## Q68236: Can't Use LINK Overlays in a BASIC OS/2 Dual-Mode Application
 
+{% raw %}
+
 	Article: Q68236
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -93,3 +95,5 @@ permalink: /kb/068/Q68236/
 	
 	(A LINK.EXE .DEF file is a module definition file that BASIC can use
 	when linking OS/2 protected-mode programs.)
+
+{% endraw %}

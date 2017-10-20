@@ -6,6 +6,8 @@ permalink: /kb/118/Q118337/
 
 ## Q118337: FIX: &quot;Integer divide by 0&quot; Error Handling
 
+{% raw %}
+
 	Article: Q118337
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -106,3 +108,5 @@ permalink: /kb/118/Q118337/
 	
 	=============================================================================
 	
+
+{% endraw %}

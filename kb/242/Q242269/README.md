@@ -6,6 +6,8 @@ permalink: /kb/242/Q242269/
 
 ## Q242269: XCLN: Moderators don't receive new items posted by some users
 
+{% raw %}
+
 	Article: Q242269
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,4.0,5.0,8.0,98
@@ -73,3 +75,5 @@ permalink: /kb/242/Q242269/
 	
 	=============================================================================
 	
+
+{% endraw %}

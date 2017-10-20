@@ -6,6 +6,8 @@ permalink: /kb/063/Q63596/
 
 ## Q63596: Fact Sheet for IBM's DASDDRVR.SYS and Microsoft Windows 3.0
 
+{% raw %}
+
 	Article: Q63596
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -117,3 +119,5 @@ permalink: /kb/063/Q63596/
 	
 	=============================================================================
 	
+
+{% endraw %}

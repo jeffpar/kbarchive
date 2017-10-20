@@ -6,6 +6,8 @@ permalink: /kb/089/Q89969/
 
 ## Q89969: Slow Startup in Music Box Due to ASPI4DOS.SYS
 
+{% raw %}
+
 	Article: Q89969
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -35,3 +37,5 @@ permalink: /kb/089/Q89969/
 	
 	=============================================================================
 	
+
+{% endraw %}

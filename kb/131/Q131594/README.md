@@ -6,6 +6,8 @@ permalink: /kb/131/Q131594/
 
 ## Q131594: MAC ANCIENT LANDS: Movies Look Hazy and Washed Out
 
+{% raw %}
+
 	Article: Q131594
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -62,3 +64,5 @@ permalink: /kb/131/Q131594/
 	
 	=============================================================================
 	
+
+{% endraw %}

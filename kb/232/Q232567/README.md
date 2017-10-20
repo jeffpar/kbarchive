@@ -6,6 +6,8 @@ permalink: /kb/232/Q232567/
 
 ## Q232567: Error 67 with NET USE Command if FQDN Exceeds 32 Characters
 
+{% raw %}
+
 	Article: Q232567
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -55,3 +57,5 @@ permalink: /kb/232/Q232567/
 	
 	=============================================================================
 	
+
+{% endraw %}

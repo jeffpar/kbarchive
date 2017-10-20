@@ -6,6 +6,8 @@ permalink: /kb/160/Q160968/
 
 ## Q160968: PRB: VB5 Components Distribute Improperly with VB4 Setup Kit
 
+{% raw %}
+
 	Article: Q160968
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -115,3 +117,5 @@ permalink: /kb/160/Q160968/
 	
 	=============================================================================
 	
+
+{% endraw %}

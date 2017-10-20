@@ -6,6 +6,8 @@ permalink: /kb/189/Q189800/
 
 ## Q189800: XCLN: IExpress Does Not Make Self-extracting Files
 
+{% raw %}
+
 	Article: Q189800
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:98
@@ -80,3 +82,5 @@ permalink: /kb/189/Q189800/
 	
 	=============================================================================
 	
+
+{% endraw %}

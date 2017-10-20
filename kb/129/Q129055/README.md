@@ -6,6 +6,8 @@ permalink: /kb/129/Q129055/
 
 ## Q129055: Search Mode Limitation in Client for NetWare Networks
 
+{% raw %}
+
 	Article: Q129055
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -96,3 +98,5 @@ permalink: /kb/129/Q129055/
 	
 	=============================================================================
 	
+
+{% endraw %}

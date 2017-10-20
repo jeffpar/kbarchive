@@ -6,6 +6,8 @@ permalink: /kb/165/Q165459/
 
 ## Q165459: Internal Tracing for 32-bit CPI-C Applications Not Available
 
+{% raw %}
+
 	Article: Q165459
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -66,3 +68,5 @@ permalink: /kb/165/Q165459/
 	
 	=============================================================================
 	
+
+{% endraw %}

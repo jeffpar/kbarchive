@@ -6,6 +6,8 @@ permalink: /kb/262/Q262508/
 
 ## Q262508: BUG: Default Favorites &amp; Shortcuts in Link Folder Not Installed
 
+{% raw %}
+
 	Article: Q262508
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:1.0
@@ -73,3 +75,5 @@ permalink: /kb/262/Q262508/
 	
 	=============================================================================
 	
+
+{% endraw %}

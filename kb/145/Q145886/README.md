@@ -6,6 +6,8 @@ permalink: /kb/145/Q145886/
 
 ## Q145886: How to Distinguish Between SNA Server 2.11 and 2.11 SP1.
 
+{% raw %}
+
 	Article: Q145886
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -91,3 +93,5 @@ permalink: /kb/145/Q145886/
 	
 	=============================================================================
 	
+
+{% endraw %}

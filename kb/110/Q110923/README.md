@@ -6,6 +6,8 @@ permalink: /kb/110/Q110923/
 
 ## Q110923: Specifying Command-Line Parameters for NDIS 2 Drivers
 
+{% raw %}
+
 	Article: Q110923
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -50,3 +52,5 @@ permalink: /kb/110/Q110923/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171825/
 
 ## Q171825: FIX: Tabbing Problems Using ActiveX Document in a Frame
 
+{% raw %}
+
 	Article: Q171825
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -56,3 +58,5 @@ permalink: /kb/171/Q171825/
 	
 	=============================================================================
 	
+
+{% endraw %}

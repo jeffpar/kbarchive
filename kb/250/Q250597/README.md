@@ -6,6 +6,8 @@ permalink: /kb/250/Q250597/
 
 ## Q250597: PRB: Windows 2000 CD Not Found Discover Program Is Started
 
+{% raw %}
+
 	Article: Q250597
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -80,3 +82,5 @@ permalink: /kb/250/Q250597/
 	
 	=============================================================================
 	
+
+{% endraw %}

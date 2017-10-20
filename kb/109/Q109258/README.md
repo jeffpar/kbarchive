@@ -6,6 +6,8 @@ permalink: /kb/109/Q109258/
 
 ## Q109258: CONN: Full Import Removes Manually Entered Recipients
 
+{% raw %}
+
 	Article: Q109258
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -47,3 +49,5 @@ permalink: /kb/109/Q109258/
 	
 	=============================================================================
 	
+
+{% endraw %}

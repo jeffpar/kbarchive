@@ -6,6 +6,8 @@ permalink: /kb/238/Q238743/
 
 ## Q238743: Err Msg: &quot;Setup Needs the File Msie&#42;.exe from CD Internet...&quot;
 
+{% raw %}
+
 	Article: Q238743
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -91,3 +93,5 @@ permalink: /kb/238/Q238743/
 	
 	=============================================================================
 	
+
+{% endraw %}

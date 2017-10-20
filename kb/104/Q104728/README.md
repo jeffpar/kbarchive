@@ -6,6 +6,8 @@ permalink: /kb/104/Q104728/
 
 ## Q104728: DoubleGuard Message Includes &quot;Press Any Key to Continue&quot;
 
+{% raw %}
+
 	Article: Q104728
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -59,3 +61,5 @@ permalink: /kb/104/Q104728/
 	
 	=============================================================================
 	
+
+{% endraw %}

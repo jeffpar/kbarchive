@@ -6,6 +6,8 @@ permalink: /kb/245/Q245184/
 
 ## Q245184: Cannot Run 16-Bit Programs on a Windows NT 4.0-Based Computer.
 
+{% raw %}
+
 	Article: Q245184
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/245/Q245184/
 	
 	=============================================================================
 	
+
+{% endraw %}

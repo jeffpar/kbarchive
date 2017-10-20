@@ -6,6 +6,8 @@ permalink: /kb/151/Q151034/
 
 ## Q151034: PRB: MFC Control Panel Applet Shows ODBC Icon in Control Panel
 
+{% raw %}
+
 	Article: Q151034
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -96,3 +98,5 @@ permalink: /kb/151/Q151034/
 	
 	=============================================================================
 	
+
+{% endraw %}

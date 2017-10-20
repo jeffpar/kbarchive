@@ -6,6 +6,8 @@ permalink: /kb/148/Q148260/
 
 ## Q148260: BUG:RDC.Enabled False at Design Time Resets to True at RunTime
 
+{% raw %}
+
 	Article: Q148260
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -70,3 +72,5 @@ permalink: /kb/148/Q148260/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140917/
 
 ## Q140917: SMS Sender Sets Enormous Estimated Bandwidth in Registry
 
+{% raw %}
+
 	Article: Q140917
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -58,3 +60,5 @@ permalink: /kb/140/Q140917/
 	
 	=============================================================================
 	
+
+{% endraw %}

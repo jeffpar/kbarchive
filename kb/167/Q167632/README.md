@@ -6,6 +6,8 @@ permalink: /kb/167/Q167632/
 
 ## Q167632: MCA Network Adapter Fails After Applying Windows NT 4.0 SP2
 
+{% raw %}
+
 	Article: Q167632
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/167/Q167632/
 	
 	=============================================================================
 	
+
+{% endraw %}

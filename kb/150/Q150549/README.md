@@ -6,6 +6,8 @@ permalink: /kb/150/Q150549/
 
 ## Q150549: PRB: Connecting to Oracle Server Fails with Several Files Open
 
+{% raw %}
+
 	Article: Q150549
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b
@@ -89,3 +91,5 @@ permalink: /kb/150/Q150549/
 	
 	=============================================================================
 	
+
+{% endraw %}

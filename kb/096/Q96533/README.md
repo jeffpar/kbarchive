@@ -6,6 +6,8 @@ permalink: /kb/096/Q96533/
 
 ## Q96533: PC WRmt: Installing Mail Remote from a Network
 
+{% raw %}
+
 	Article: Q96533
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -39,3 +41,5 @@ permalink: /kb/096/Q96533/
 	
 	=============================================================================
 	
+
+{% endraw %}

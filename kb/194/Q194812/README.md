@@ -6,6 +6,8 @@ permalink: /kb/194/Q194812/
 
 ## Q194812: All Users See All Other Users' Auto-Created Printers
 
+{% raw %}
+
 	Article: Q194812
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/194/Q194812/
 	
 	=============================================================================
 	
+
+{% endraw %}

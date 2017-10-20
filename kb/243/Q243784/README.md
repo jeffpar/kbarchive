@@ -6,6 +6,8 @@ permalink: /kb/243/Q243784/
 
 ## Q243784: SNARAS Traces Continually Grow in Size If Left Enabled
 
+{% raw %}
+
 	Article: Q243784
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -64,3 +66,5 @@ permalink: /kb/243/Q243784/
 	
 	=============================================================================
 	
+
+{% endraw %}

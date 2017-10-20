@@ -6,6 +6,8 @@ permalink: /kb/134/Q134298/
 
 ## Q134298: Older Disk Controllers Incompatible with Protected-Mode Driver
 
+{% raw %}
+
 	Article: Q134298
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/134/Q134298/
 	
 	=============================================================================
 	
+
+{% endraw %}

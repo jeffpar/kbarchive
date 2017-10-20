@@ -6,6 +6,8 @@ permalink: /kb/267/Q267908/
 
 ## Q267908: HOWTO: Enumerate the Subkeys of an Open Registry Key
 
+{% raw %}
+
 	Article: Q267908
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -316,3 +318,5 @@ permalink: /kb/267/Q267908/
 	
 	=============================================================================
 	
+
+{% endraw %}

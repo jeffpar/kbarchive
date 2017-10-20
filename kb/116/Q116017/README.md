@@ -6,6 +6,8 @@ permalink: /kb/116/Q116017/
 
 ## Q116017: PRB: ClassWizard Doesn't Support Custom Foreign DDX
 
+{% raw %}
+
 	Article: Q116017
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -58,3 +60,5 @@ permalink: /kb/116/Q116017/
 	
 	=============================================================================
 	
+
+{% endraw %}

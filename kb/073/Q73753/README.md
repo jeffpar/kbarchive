@@ -6,6 +6,8 @@ permalink: /kb/073/Q73753/
 
 ## Q73753: DOCERR: Date Format in Listing File Incorrect in MASM 6.0 Manual
 
+{% raw %}
+
 	Article: Q73753
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -45,3 +47,5 @@ permalink: /kb/073/Q73753/
 	
 	=============================================================================
 	
+
+{% endraw %}

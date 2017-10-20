@@ -6,6 +6,8 @@ permalink: /kb/235/Q235792/
 
 ## Q235792: SMSINST: Long Filename Is Truncated with Version Checking
 
+{% raw %}
+
 	Article: Q235792
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0
@@ -110,3 +112,5 @@ permalink: /kb/235/Q235792/
 	
 	=============================================================================
 	
+
+{% endraw %}

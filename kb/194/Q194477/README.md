@@ -6,6 +6,8 @@ permalink: /kb/194/Q194477/
 
 ## Q194477: File List for Dial-Up Networking 1.3 Upgrade
 
+{% raw %}
+
 	Article: Q194477
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -300,3 +302,5 @@ permalink: /kb/194/Q194477/
 	
 	=============================================================================
 	
+
+{% endraw %}

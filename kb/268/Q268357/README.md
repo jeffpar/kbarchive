@@ -6,6 +6,8 @@ permalink: /kb/268/Q268357/
 
 ## Q268357: XADM: Exchange Clients Seem to Hang When Store Queries Directory
 
+{% raw %}
+
 	Article: Q268357
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -156,3 +158,5 @@ permalink: /kb/268/Q268357/
 	
 	=============================================================================
 	
+
+{% endraw %}

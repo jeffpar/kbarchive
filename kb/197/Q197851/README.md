@@ -6,6 +6,8 @@ permalink: /kb/197/Q197851/
 
 ## Q197851: User May Have Two Passwords After Migration from LAN Manager
 
+{% raw %}
+
 	Article: Q197851
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/197/Q197851/
 	
 	=============================================================================
 	
+
+{% endraw %}

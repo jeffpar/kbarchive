@@ -6,6 +6,8 @@ permalink: /kb/132/Q132334/
 
 ## Q132334: Mac Bookshelf '95: White Lines Appear in Movie Clips
 
+{% raw %}
+
 	Article: Q132334
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -62,3 +64,5 @@ permalink: /kb/132/Q132334/
 	
 	=============================================================================
 	
+
+{% endraw %}

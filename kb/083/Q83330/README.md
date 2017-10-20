@@ -6,6 +6,8 @@ permalink: /kb/083/Q83330/
 
 ## Q83330: System Error with HP NewWave under Windows 3.1
 
+{% raw %}
+
 	Article: Q83330
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -71,3 +73,5 @@ permalink: /kb/083/Q83330/
 	
 	=============================================================================
 	
+
+{% endraw %}

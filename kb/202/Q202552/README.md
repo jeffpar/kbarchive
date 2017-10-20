@@ -6,6 +6,8 @@ permalink: /kb/202/Q202552/
 
 ## Q202552: SMS: Time Synchronizing an SMS Site Server with SQL Server
 
+{% raw %}
+
 	Article: Q202552
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -57,3 +59,5 @@ permalink: /kb/202/Q202552/
 	
 	=============================================================================
 	
+
+{% endraw %}

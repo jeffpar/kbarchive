@@ -6,6 +6,8 @@ permalink: /kb/096/Q96301/
 
 ## Q96301: Creating a Multiple-Page Input Screen Using FoxForm
 
+{% raw %}
+
 	Article: Q96301
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -47,3 +49,5 @@ permalink: /kb/096/Q96301/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168638/
 
 ## Q168638: PPT7: No Action or Interactive Settings for Grouped Shapes
 
+{% raw %}
+
 	Article: Q168638
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -78,3 +80,5 @@ permalink: /kb/168/Q168638/
 	
 	=============================================================================
 	
+
+{% endraw %}

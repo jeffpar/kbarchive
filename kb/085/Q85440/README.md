@@ -6,6 +6,8 @@ permalink: /kb/085/Q85440/
 
 ## Q85440: MOUSEQA.WRI from Windows Resource Kit
 
+{% raw %}
+
 	Article: Q85440
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -239,3 +241,5 @@ permalink: /kb/085/Q85440/
 	
 	=============================================================================
 	
+
+{% endraw %}

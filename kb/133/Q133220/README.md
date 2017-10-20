@@ -6,6 +6,8 @@ permalink: /kb/133/Q133220/
 
 ## Q133220: Setup Does Not Recognize Bootcon Multiple Configurations
 
+{% raw %}
+
 	Article: Q133220
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/133/Q133220/
 	
 	=============================================================================
 	
+
+{% endraw %}

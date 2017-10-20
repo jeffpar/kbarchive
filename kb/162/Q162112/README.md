@@ -6,6 +6,8 @@ permalink: /kb/162/Q162112/
 
 ## Q162112: &quot;Unable to Load the Unicode Font&quot; Opening a File with Notepad
 
+{% raw %}
+
 	Article: Q162112
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:3.51
@@ -48,3 +50,5 @@ permalink: /kb/162/Q162112/
 	
 	=============================================================================
 	
+
+{% endraw %}

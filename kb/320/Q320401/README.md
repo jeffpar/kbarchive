@@ -6,6 +6,8 @@ permalink: /kb/320/Q320401/
 
 ## Q320401: Programming Microsoft Visual Basic .NET (Core Reference) Comment
 
+{% raw %}
+
 	Article: Q320401
 	Product(s): Microsoft Press
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/320/Q320401/
 	
 	=============================================================================
 	
+
+{% endraw %}

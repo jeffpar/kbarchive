@@ -6,6 +6,8 @@ permalink: /kb/252/Q252620/
 
 ## Q252620: Allegiance: Unable to Run Program in a Window
 
+{% raw %}
+
 	Article: Q252620
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -116,3 +118,5 @@ permalink: /kb/252/Q252620/
 	
 	=============================================================================
 	
+
+{% endraw %}

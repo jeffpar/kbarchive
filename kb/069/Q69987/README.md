@@ -6,6 +6,8 @@ permalink: /kb/069/Q69987/
 
 ## Q69987: MASM Optimizations Not Recognized by Some Processors
 
+{% raw %}
+
 	Article: Q69987
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a,6.0,6.0a,6.0b,6.10,6.10a,6.11
@@ -97,3 +99,5 @@ permalink: /kb/069/Q69987/
 	
 	=============================================================================
 	
+
+{% endraw %}

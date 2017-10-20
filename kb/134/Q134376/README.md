@@ -6,6 +6,8 @@ permalink: /kb/134/Q134376/
 
 ## Q134376: PC NTMMTA: Err Msg: Can't Open Service Control Manager...
 
+{% raw %}
+
 	Article: Q134376
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -75,3 +77,5 @@ permalink: /kb/134/Q134376/
 	
 	=============================================================================
 	
+
+{% endraw %}

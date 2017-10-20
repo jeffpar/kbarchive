@@ -6,6 +6,8 @@ permalink: /kb/179/Q179493/
 
 ## Q179493: WD97: Line Pattern Printed Solid If Pasted as Picture or Bitmap
 
+{% raw %}
+
 	Article: Q179493
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -92,3 +94,5 @@ permalink: /kb/179/Q179493/
 	
 	=============================================================================
 	
+
+{% endraw %}

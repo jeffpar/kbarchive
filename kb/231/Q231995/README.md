@@ -6,6 +6,8 @@ permalink: /kb/231/Q231995/
 
 ## Q231995: FIX: Error C2664 and C2582 While Using CArray Class
 
+{% raw %}
+
 	Article: Q231995
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -137,3 +139,5 @@ permalink: /kb/231/Q231995/
 	
 	=============================================================================
 	
+
+{% endraw %}

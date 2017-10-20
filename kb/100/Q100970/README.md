@@ -6,6 +6,8 @@ permalink: /kb/100/Q100970/
 
 ## Q100970: ADT: How to Give Users the Ability to Change Passwords (2.0)
 
+{% raw %}
+
 	Article: Q100970
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:1.1,2.0
@@ -85,3 +87,5 @@ permalink: /kb/100/Q100970/
 	
 	=============================================================================
 	
+
+{% endraw %}

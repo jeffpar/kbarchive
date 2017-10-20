@@ -6,6 +6,8 @@ permalink: /kb/137/Q137111/
 
 ## Q137111: Microsoft Backup Seems to Display Incorrect Information
 
+{% raw %}
+
 	Article: Q137111
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/137/Q137111/
 	
 	=============================================================================
 	
+
+{% endraw %}

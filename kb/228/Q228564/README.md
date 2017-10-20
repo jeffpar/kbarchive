@@ -6,6 +6,8 @@ permalink: /kb/228/Q228564/
 
 ## Q228564: Zone: Computer Is Disconnected from the Internet
 
+{% raw %}
+
 	Article: Q228564
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -121,3 +123,5 @@ permalink: /kb/228/Q228564/
 	
 	=============================================================================
 	
+
+{% endraw %}

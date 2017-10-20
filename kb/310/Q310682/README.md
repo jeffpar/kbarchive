@@ -6,6 +6,8 @@ permalink: /kb/310/Q310682/
 
 ## Q310682: Combat Flight Simulator: Program Quits Unexpectedly
 
+{% raw %}
+
 	Article: Q310682
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -111,3 +113,5 @@ permalink: /kb/310/Q310682/
 	
 	=============================================================================
 	
+
+{% endraw %}

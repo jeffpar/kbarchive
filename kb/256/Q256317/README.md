@@ -6,6 +6,8 @@ permalink: /kb/256/Q256317/
 
 ## Q256317: SMS 1.2 Administrator Loses Package Workstation Command Lines
 
+{% raw %}
+
 	Article: Q256317
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -104,3 +106,5 @@ permalink: /kb/256/Q256317/
 	
 	=============================================================================
 	
+
+{% endraw %}

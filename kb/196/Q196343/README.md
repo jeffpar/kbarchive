@@ -6,6 +6,8 @@ permalink: /kb/196/Q196343/
 
 ## Q196343: XFOR: Extensions for Attachments Handled Incorrectly by SNADS
 
+{% raw %}
+
 	Article: Q196343
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -65,3 +67,5 @@ permalink: /kb/196/Q196343/
 	
 	=============================================================================
 	
+
+{% endraw %}

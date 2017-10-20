@@ -6,6 +6,8 @@ permalink: /kb/325/Q325037/
 
 ## Q325037: Dungeon Siege: Command-Line Switches, Troubleshooting Shortcuts
 
+{% raw %}
+
 	Article: Q325037
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -182,3 +184,5 @@ permalink: /kb/325/Q325037/
 	
 	=============================================================================
 	
+
+{% endraw %}

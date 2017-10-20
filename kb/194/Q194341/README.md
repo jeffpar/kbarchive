@@ -6,6 +6,8 @@ permalink: /kb/194/Q194341/
 
 ## Q194341: Simple TCP/IP Services Can Be Driven to 100% CPU
 
+{% raw %}
+
 	Article: Q194341
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/194/Q194341/
 	
 	=============================================================================
 	
+
+{% endraw %}

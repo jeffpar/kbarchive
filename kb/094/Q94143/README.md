@@ -6,6 +6,8 @@ permalink: /kb/094/Q94143/
 
 ## Q94143: HPPCL5E: Printer Fonts Are Displayed Twice in Font List
 
+{% raw %}
+
 	Article: Q94143
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/094/Q94143/
 	
 	=============================================================================
 	
+
+{% endraw %}

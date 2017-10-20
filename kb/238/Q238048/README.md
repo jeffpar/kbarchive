@@ -6,6 +6,8 @@ permalink: /kb/238/Q238048/
 
 ## Q238048: Encarta Dictionary 2000: Pronunciations Are Not Played
 
+{% raw %}
+
 	Article: Q238048
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -125,3 +127,5 @@ permalink: /kb/238/Q238048/
 	
 	=============================================================================
 	
+
+{% endraw %}

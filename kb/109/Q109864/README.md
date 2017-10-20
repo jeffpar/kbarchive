@@ -6,6 +6,8 @@ permalink: /kb/109/Q109864/
 
 ## Q109864: Writer 1: Text Missing, Jumbled, or Overlapping
 
+{% raw %}
+
 	Article: Q109864
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -88,3 +90,5 @@ permalink: /kb/109/Q109864/
 	
 	=============================================================================
 	
+
+{% endraw %}

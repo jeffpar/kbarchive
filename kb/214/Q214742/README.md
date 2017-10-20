@@ -6,6 +6,8 @@ permalink: /kb/214/Q214742/
 
 ## Q214742: XCLN: Placing Resource Account Aliases in the Resource Box
 
+{% raw %}
+
 	Article: Q214742
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/214/Q214742/
 	
 	=============================================================================
 	
+
+{% endraw %}

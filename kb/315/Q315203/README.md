@@ -6,6 +6,8 @@ permalink: /kb/315/Q315203/
 
 ## Q315203: Flight Simulator 2002: You Keep Failing Check Ride Test
 
+{% raw %}
+
 	Article: Q315203
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/315/Q315203/
 	
 	=============================================================================
 	
+
+{% endraw %}

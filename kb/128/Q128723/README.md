@@ -6,6 +6,8 @@ permalink: /kb/128/Q128723/
 
 ## Q128723: HOWTO: Reference a Time on the Command Line
 
+{% raw %}
+
 	Article: Q128723
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/128/Q128723/
 	
 	=============================================================================
 	
+
+{% endraw %}

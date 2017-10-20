@@ -6,6 +6,8 @@ permalink: /kb/236/Q236952/
 
 ## Q236952: PRB: Sort Order Has Changed with Microsoft Jet Version 4.0
 
+{% raw %}
+
 	Article: Q236952
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.5,2000,4.0
@@ -105,3 +107,5 @@ permalink: /kb/236/Q236952/
 	
 	=============================================================================
 	
+
+{% endraw %}

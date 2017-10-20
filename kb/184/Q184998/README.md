@@ -6,6 +6,8 @@ permalink: /kb/184/Q184998/
 
 ## Q184998: RDR May Read or Write from Wrong File If File Is Memory Mapped
 
+{% raw %}
+
 	Article: Q184998
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -78,3 +80,5 @@ permalink: /kb/184/Q184998/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/276/Q276461/
 
 ## Q276461: Idle time settings in MSN 5.3, how to change or remove
 
+{% raw %}
+
 	Article: Q276461
 	Product(s): The Microsoft Network
 	Version(s): 5.3
@@ -59,3 +61,5 @@ permalink: /kb/276/Q276461/
 	
 	=============================================================================
 	
+
+{% endraw %}

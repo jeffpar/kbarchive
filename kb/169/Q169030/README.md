@@ -6,6 +6,8 @@ permalink: /kb/169/Q169030/
 
 ## Q169030: Uninstalling HP Direct Tape Access Changes System Icons
 
+{% raw %}
+
 	Article: Q169030
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -104,3 +106,5 @@ permalink: /kb/169/Q169030/
 	
 	=============================================================================
 	
+
+{% endraw %}

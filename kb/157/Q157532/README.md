@@ -6,6 +6,8 @@ permalink: /kb/157/Q157532/
 
 ## Q157532: WD97: Invalid Procedure Name Error Creating a New Macro
 
+{% raw %}
+
 	Article: Q157532
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -70,3 +72,5 @@ permalink: /kb/157/Q157532/
 	
 	=============================================================================
 	
+
+{% endraw %}

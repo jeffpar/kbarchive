@@ -6,6 +6,8 @@ permalink: /kb/111/Q111328/
 
 ## Q111328: DosReadMailslot Reads Incorrect Data Under Stress
 
+{% raw %}
+
 	Article: Q111328
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/111/Q111328/
 	
 	=============================================================================
 	
+
+{% endraw %}

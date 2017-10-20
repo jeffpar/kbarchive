@@ -6,6 +6,8 @@ permalink: /kb/059/Q59923/
 
 ## Q59923: Mac Hyp: Addressing Messages to Specified Recipient
 
+{% raw %}
+
 	Article: Q59923
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -63,3 +65,5 @@ permalink: /kb/059/Q59923/
 	
 	=============================================================================
 	
+
+{% endraw %}

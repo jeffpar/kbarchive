@@ -6,6 +6,8 @@ permalink: /kb/082/Q82569/
 
 ## Q82569: Extended Characters in Filenames Under Windows 3.1
 
+{% raw %}
+
 	Article: Q82569
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/082/Q82569/
 	
 	=============================================================================
 	
+
+{% endraw %}

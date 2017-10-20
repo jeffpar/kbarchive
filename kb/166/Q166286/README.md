@@ -6,6 +6,8 @@ permalink: /kb/166/Q166286/
 
 ## Q166286: BUG: Books Online Index Search Field Finds Incorrect Topic
 
+{% raw %}
+
 	Article: Q166286
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -95,3 +97,5 @@ permalink: /kb/166/Q166286/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/254/Q254347/
 
 ## Q254347: Query Extract Tool in Resource Kit Unable to Return Data
 
+{% raw %}
+
 	Article: Q254347
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -66,3 +68,5 @@ permalink: /kb/254/Q254347/
 	
 	=============================================================================
 	
+
+{% endraw %}

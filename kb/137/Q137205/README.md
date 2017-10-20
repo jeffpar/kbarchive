@@ -6,6 +6,8 @@ permalink: /kb/137/Q137205/
 
 ## Q137205: Recurring Meetings Booked Incorrectly in Schedule+ 1.0
 
+{% raw %}
+
 	Article: Q137205
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,7.0; Win95:7.0
@@ -36,3 +38,5 @@ permalink: /kb/137/Q137205/
 	
 	=============================================================================
 	
+
+{% endraw %}

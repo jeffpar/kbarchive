@@ -6,6 +6,8 @@ permalink: /kb/256/Q256245/
 
 ## Q256245: XADM: Mailbox Manager Deletes All Recurring Calendar Items
 
+{% raw %}
+
 	Article: Q256245
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -60,3 +62,5 @@ permalink: /kb/256/Q256245/
 	
 	=============================================================================
 	
+
+{% endraw %}

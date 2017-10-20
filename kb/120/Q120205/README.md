@@ -6,6 +6,8 @@ permalink: /kb/120/Q120205/
 
 ## Q120205: Stravinsky: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q120205
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -270,3 +272,5 @@ permalink: /kb/120/Q120205/
 	
 	=============================================================================
 	
+
+{% endraw %}

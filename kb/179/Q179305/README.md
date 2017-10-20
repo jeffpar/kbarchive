@@ -6,6 +6,8 @@ permalink: /kb/179/Q179305/
 
 ## Q179305: Troubleshooting Async Mail Flow Connection Problems
 
+{% raw %}
+
 	Article: Q179305
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.2a,3.5
@@ -134,3 +136,5 @@ permalink: /kb/179/Q179305/
 	
 	=============================================================================
 	
+
+{% endraw %}

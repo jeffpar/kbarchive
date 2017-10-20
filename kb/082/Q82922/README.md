@@ -6,6 +6,8 @@ permalink: /kb/082/Q82922/
 
 ## Q82922: PC Win: Shared Folder Status Bar Has No Message Count
 
+{% raw %}
+
 	Article: Q82922
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -42,3 +44,5 @@ permalink: /kb/082/Q82922/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/100/Q100032/
 
 ## Q100032: PC WSPlus: Free/Busy Times Are Not Received
 
+{% raw %}
+
 	Article: Q100032
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 1.0,1.0a
@@ -106,3 +108,5 @@ permalink: /kb/100/Q100032/
 	
 	=============================================================================
 	
+
+{% endraw %}

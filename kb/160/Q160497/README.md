@@ -6,6 +6,8 @@ permalink: /kb/160/Q160497/
 
 ## Q160497: Cache File Entries Disappear
 
+{% raw %}
+
 	Article: Q160497
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/160/Q160497/
 	
 	=============================================================================
 	
+
+{% endraw %}

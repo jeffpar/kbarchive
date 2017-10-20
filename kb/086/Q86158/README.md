@@ -6,6 +6,8 @@ permalink: /kb/086/Q86158/
 
 ## Q86158: PROFS: DCA Comm Server and the PROFS Gateway
 
+{% raw %}
+
 	Article: Q86158
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -46,3 +48,5 @@ permalink: /kb/086/Q86158/
 	
 	=============================================================================
 	
+
+{% endraw %}

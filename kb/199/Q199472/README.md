@@ -6,6 +6,8 @@ permalink: /kb/199/Q199472/
 
 ## Q199472: SMS: How to Determine Logon Server Used During Network Logon
 
+{% raw %}
+
 	Article: Q199472
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,2.0
@@ -151,3 +153,5 @@ permalink: /kb/199/Q199472/
 	
 	=============================================================================
 	
+
+{% endraw %}

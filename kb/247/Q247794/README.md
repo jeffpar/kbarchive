@@ -6,6 +6,8 @@ permalink: /kb/247/Q247794/
 
 ## Q247794: Deadlock Condition in License Manager Service
 
+{% raw %}
+
 	Article: Q247794
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -85,3 +87,5 @@ permalink: /kb/247/Q247794/
 	
 	=============================================================================
 	
+
+{% endraw %}

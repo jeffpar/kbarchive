@@ -6,6 +6,8 @@ permalink: /kb/286/Q286435/
 
 ## Q286435: OLMAC: Error Message:  Exceeded the Maximum Amount of Text
 
+{% raw %}
+
 	Article: Q286435
 	Product(s): Microsoft Exchange
 	Version(s): 8.2,8.2.1,8.2.2
@@ -82,3 +84,5 @@ permalink: /kb/286/Q286435/
 	
 	=============================================================================
 	
+
+{% endraw %}

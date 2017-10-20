@@ -6,6 +6,8 @@ permalink: /kb/160/Q160566/
 
 ## Q160566: SMS: PCM Command Line and &quot;Cannot Find File&quot; Error
 
+{% raw %}
+
 	Article: Q160566
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -67,3 +69,5 @@ permalink: /kb/160/Q160566/
 	
 	=============================================================================
 	
+
+{% endraw %}

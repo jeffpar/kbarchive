@@ -6,6 +6,8 @@ permalink: /kb/200/Q200964/
 
 ## Q200964: SMS: Reasons Software Metering Server Fails to Install
 
+{% raw %}
+
 	Article: Q200964
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -70,3 +72,5 @@ permalink: /kb/200/Q200964/
 	
 	=============================================================================
 	
+
+{% endraw %}

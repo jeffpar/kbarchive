@@ -6,6 +6,8 @@ permalink: /kb/159/Q159471/
 
 ## Q159471: WD97: How to Install the Far East Support Files
 
+{% raw %}
+
 	Article: Q159471
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/159/Q159471/
 	
 	=============================================================================
 	
+
+{% endraw %}

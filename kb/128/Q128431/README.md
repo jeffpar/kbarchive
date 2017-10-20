@@ -6,6 +6,8 @@ permalink: /kb/128/Q128431/
 
 ## Q128431: MHS: Err Msg: Gateway Doesn't Support Gateway &quot;{}&quot; Originators
 
+{% raw %}
+
 	Article: Q128431
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -69,3 +71,5 @@ permalink: /kb/128/Q128431/
 	
 	=============================================================================
 	
+
+{% endraw %}

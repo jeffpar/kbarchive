@@ -6,6 +6,8 @@ permalink: /kb/314/Q314271/
 
 ## Q314271: SMS: Windows Explorer May Consume CPU Resources
 
+{% raw %}
+
 	Article: Q314271
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -147,3 +149,5 @@ permalink: /kb/314/Q314271/
 	
 	=============================================================================
 	
+
+{% endraw %}

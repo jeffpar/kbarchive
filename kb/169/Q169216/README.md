@@ -6,6 +6,8 @@ permalink: /kb/169/Q169216/
 
 ## Q169216: Using Winscl.exe to Remove Corrupted WINS Entries by Version ID
 
+{% raw %}
+
 	Article: Q169216
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -163,3 +165,5 @@ permalink: /kb/169/Q169216/
 	
 	=============================================================================
 	
+
+{% endraw %}

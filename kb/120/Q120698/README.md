@@ -6,6 +6,8 @@ permalink: /kb/120/Q120698/
 
 ## Q120698: Space Simulator: Description of Distance Measurement Methods
 
+{% raw %}
+
 	Article: Q120698
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -56,3 +58,5 @@ permalink: /kb/120/Q120698/
 	
 	=============================================================================
 	
+
+{% endraw %}

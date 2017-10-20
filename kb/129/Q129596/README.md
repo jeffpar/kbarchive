@@ -6,6 +6,8 @@ permalink: /kb/129/Q129596/
 
 ## Q129596: PRB: C2517, C2653, or C2600 If Local Struct Contains Class.
 
+{% raw %}
+
 	Article: Q129596
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5,1.51,1.52,2.0,2.1,4.0
@@ -129,3 +131,5 @@ permalink: /kb/129/Q129596/
 	
 	=============================================================================
 	
+
+{% endraw %}

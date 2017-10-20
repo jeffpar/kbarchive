@@ -6,6 +6,8 @@ permalink: /kb/172/Q172339/
 
 ## Q172339: PRB: Explaining &quot;Record is Deleted&quot; Error Accessing ODBC Table
 
+{% raw %}
+
 	Article: Q172339
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -190,3 +192,5 @@ permalink: /kb/172/Q172339/
 	
 	=============================================================================
 	
+
+{% endraw %}

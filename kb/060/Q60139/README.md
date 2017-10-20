@@ -6,6 +6,8 @@ permalink: /kb/060/Q60139/
 
 ## Q60139: LEN Function Returns Wrong Length in LEFT&#36; in OPEN Statement
 
+{% raw %}
+
 	Article: Q60139
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -63,3 +65,5 @@ permalink: /kb/060/Q60139/
 	but the first OPEN actually opens "TEST.12X" because the string length
 	is returned incorrectly and is thus too large. Subtracting 1 from this
 	larger value still leaves the full string to be returned from LEFT$.
+
+{% endraw %}

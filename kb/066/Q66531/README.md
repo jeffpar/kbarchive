@@ -6,6 +6,8 @@ permalink: /kb/066/Q66531/
 
 ## Q66531: Copying from CON to a Subdirectory Doesn't Result in Error
 
+{% raw %}
+
 	Article: Q66531
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:
@@ -68,3 +70,5 @@ permalink: /kb/066/Q66531/
 	
 	=============================================================================
 	
+
+{% endraw %}

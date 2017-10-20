@@ -6,6 +6,8 @@ permalink: /kb/035/Q35537/
 
 ## Q35537: Developing Macros
 
+{% raw %}
+
 	Article: Q35537
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -72,3 +74,5 @@ permalink: /kb/035/Q35537/
 	The final step is to assign the macro to a keystroke, as follows:
 	
 	   Bottom:CTRL+END
+
+{% endraw %}

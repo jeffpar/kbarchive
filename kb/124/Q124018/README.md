@@ -6,6 +6,8 @@ permalink: /kb/124/Q124018/
 
 ## Q124018: Multimedia: Setup Hangs at: &quot;Searching for Installed Components
 
+{% raw %}
+
 	Article: Q124018
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 1995
@@ -65,3 +67,5 @@ permalink: /kb/124/Q124018/
 	
 	=============================================================================
 	
+
+{% endraw %}

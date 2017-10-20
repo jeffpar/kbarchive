@@ -6,6 +6,8 @@ permalink: /kb/102/Q102675/
 
 ## Q102675: FIX: App Studio Changes Control ID to Dialog Box ID
 
+{% raw %}
+
 	Article: Q102675
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/102/Q102675/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132850/
 
 ## Q132850: SoundSentry Does Not Work for MS-DOS Graphics Programs
 
+{% raw %}
+
 	Article: Q132850
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -52,3 +54,5 @@ permalink: /kb/132/Q132850/
 	
 	=============================================================================
 	
+
+{% endraw %}

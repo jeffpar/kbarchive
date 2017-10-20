@@ -6,6 +6,8 @@ permalink: /kb/258/Q258919/
 
 ## Q258919: Description of the Pandora's Box Cheat Code
 
+{% raw %}
+
 	Article: Q258919
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -60,3 +62,5 @@ permalink: /kb/258/Q258919/
 	
 	=============================================================================
 	
+
+{% endraw %}

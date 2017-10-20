@@ -6,6 +6,8 @@ permalink: /kb/107/Q107060/
 
 ## Q107060: Windows NT NBTSTAT -R vs. LAN Manager ADDNAME
 
+{% raw %}
+
 	Article: Q107060
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -60,3 +62,5 @@ permalink: /kb/107/Q107060/
 	
 	=============================================================================
 	
+
+{% endraw %}

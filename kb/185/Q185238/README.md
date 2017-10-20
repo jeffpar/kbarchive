@@ -6,6 +6,8 @@ permalink: /kb/185/Q185238/
 
 ## Q185238: PRB: LostFocus of Textbox Control Has Different Behavior
 
+{% raw %}
+
 	Article: Q185238
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/185/Q185238/
 	
 	=============================================================================
 	
+
+{% endraw %}

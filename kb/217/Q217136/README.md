@@ -6,6 +6,8 @@ permalink: /kb/217/Q217136/
 
 ## Q217136: DNS Converts Host Names to Lowercase
 
+{% raw %}
+
 	Article: Q217136
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -109,3 +111,5 @@ permalink: /kb/217/Q217136/
 	
 	=============================================================================
 	
+
+{% endraw %}

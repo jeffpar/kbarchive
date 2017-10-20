@@ -6,6 +6,8 @@ permalink: /kb/129/Q129603/
 
 ## Q129603: Using Systems Management Server Remote Control over a RAS Server
 
+{% raw %}
+
 	Article: Q129603
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -94,3 +96,5 @@ permalink: /kb/129/Q129603/
 	
 	=============================================================================
 	
+
+{% endraw %}

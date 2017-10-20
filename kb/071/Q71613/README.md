@@ -6,6 +6,8 @@ permalink: /kb/071/Q71613/
 
 ## Q71613: Epson LQ Series Internal ANSI and Windows' ANSI Mismatch
 
+{% raw %}
+
 	Article: Q71613
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -71,3 +73,5 @@ permalink: /kb/071/Q71613/
 	
 	=============================================================================
 	
+
+{% endraw %}

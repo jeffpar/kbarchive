@@ -6,6 +6,8 @@ permalink: /kb/100/Q100397/
 
 ## Q100397: SoundBits: Sounds from Two Schemes Are Merged
 
+{% raw %}
+
 	Article: Q100397
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0; MACINTOSH:1.0
@@ -56,3 +58,5 @@ permalink: /kb/100/Q100397/
 	
 	=============================================================================
 	
+
+{% endraw %}

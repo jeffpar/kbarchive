@@ -6,6 +6,8 @@ permalink: /kb/093/Q93045/
 
 ## Q93045: DSWAP Increases by 16 Bytes Each Time an MS-DOS Program Is Run
 
+{% raw %}
+
 	Article: Q93045
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -40,3 +42,5 @@ permalink: /kb/093/Q93045/
 	
 	=============================================================================
 	
+
+{% endraw %}

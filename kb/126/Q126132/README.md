@@ -6,6 +6,8 @@ permalink: /kb/126/Q126132/
 
 ## Q126132: WINS: Push Notification Sent on Every Registration
 
+{% raw %}
+
 	Article: Q126132
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -56,3 +58,5 @@ permalink: /kb/126/Q126132/
 	
 	=============================================================================
 	
+
+{% endraw %}

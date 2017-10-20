@@ -6,6 +6,8 @@ permalink: /kb/240/Q240365/
 
 ## Q240365: W32time Does Not Clean and Modify Registry After Changing Role
 
+{% raw %}
+
 	Article: Q240365
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -96,3 +98,5 @@ permalink: /kb/240/Q240365/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153635/
 
 ## Q153635: CLI_DOS.EXE Err Msg: Unable to Rename UID File...
 
+{% raw %}
+
 	Article: Q153635
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -55,3 +57,5 @@ permalink: /kb/153/Q153635/
 	
 	=============================================================================
 	
+
+{% endraw %}

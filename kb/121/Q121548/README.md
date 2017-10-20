@@ -6,6 +6,8 @@ permalink: /kb/121/Q121548/
 
 ## Q121548: Problems with Snap To and Focus Enabled with IntelliPoint 1.0
 
+{% raw %}
+
 	Article: Q121548
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0,3.1,3.11
@@ -74,3 +76,5 @@ permalink: /kb/121/Q121548/
 	
 	=============================================================================
 	
+
+{% endraw %}

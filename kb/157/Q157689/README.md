@@ -6,6 +6,8 @@ permalink: /kb/157/Q157689/
 
 ## Q157689: XFOR: Importing Large Numbers of MHS Addresses is Very Slow
 
+{% raw %}
+
 	Article: Q157689
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/157/Q157689/
 	
 	=============================================================================
 	
+
+{% endraw %}

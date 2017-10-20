@@ -6,6 +6,8 @@ permalink: /kb/281/Q281826/
 
 ## Q281826: MapPoint: How to Submit Map Feedback
 
+{% raw %}
+
 	Article: Q281826
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -79,3 +81,5 @@ permalink: /kb/281/Q281826/
 	
 	=============================================================================
 	
+
+{% endraw %}

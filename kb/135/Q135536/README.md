@@ -6,6 +6,8 @@ permalink: /kb/135/Q135536/
 
 ## Q135536: FIX: C2985 Error When Template Class Has Static Data Member
 
+{% raw %}
+
 	Article: Q135536
 	Product(s): Microsoft C Compiler
 	Version(s): 2.00 2.10 2.20
@@ -86,3 +88,5 @@ permalink: /kb/135/Q135536/
 	
 	=============================================================================
 	
+
+{% endraw %}

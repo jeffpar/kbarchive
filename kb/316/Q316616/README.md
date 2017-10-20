@@ -6,6 +6,8 @@ permalink: /kb/316/Q316616/
 
 ## Q316616: &quot;Event ID 4018&quot; Error Message When You Try to Send E-Mail
 
+{% raw %}
+
 	Article: Q316616
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -124,3 +126,5 @@ permalink: /kb/316/Q316616/
 	
 	=============================================================================
 	
+
+{% endraw %}

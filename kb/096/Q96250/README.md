@@ -6,6 +6,8 @@ permalink: /kb/096/Q96250/
 
 ## Q96250: How to Remove DoubleSpace and Preserve Your Files
 
+{% raw %}
+
 	Article: Q96250
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -182,3 +184,5 @@ permalink: /kb/096/Q96250/
 	
 	=============================================================================
 	
+
+{% endraw %}

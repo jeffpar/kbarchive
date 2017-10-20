@@ -6,6 +6,8 @@ permalink: /kb/112/Q112519/
 
 ## Q112519: PRINTSTATUS() Always Returns .T. in FoxPro
 
+{% raw %}
+
 	Article: Q112519
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
@@ -42,3 +44,5 @@ permalink: /kb/112/Q112519/
 	
 	=============================================================================
 	
+
+{% endraw %}

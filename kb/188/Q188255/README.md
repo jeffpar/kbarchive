@@ -6,6 +6,8 @@ permalink: /kb/188/Q188255/
 
 ## Q188255: ArrayCom.exe Passing Array To COM DLL by Reference
 
+{% raw %}
+
 	Article: Q188255
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -193,3 +195,5 @@ permalink: /kb/188/Q188255/
 	
 	=============================================================================
 	
+
+{% endraw %}

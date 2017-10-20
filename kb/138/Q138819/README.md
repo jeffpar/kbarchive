@@ -6,6 +6,8 @@ permalink: /kb/138/Q138819/
 
 ## Q138819: Differences Among Form's Initialize, Load, and Activate Events
 
+{% raw %}
+
 	Article: Q138819
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -109,3 +111,5 @@ permalink: /kb/138/Q138819/
 	
 	=============================================================================
 	
+
+{% endraw %}

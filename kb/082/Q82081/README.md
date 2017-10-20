@@ -6,6 +6,8 @@ permalink: /kb/082/Q82081/
 
 ## Q82081: Cannot Use EMM386.SYS/EMM386.EXE in Standard Mode Windows 3.0
 
+{% raw %}
+
 	Article: Q82081
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -73,3 +75,5 @@ permalink: /kb/082/Q82081/
 	
 	=============================================================================
 	
+
+{% endraw %}

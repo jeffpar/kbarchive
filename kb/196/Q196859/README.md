@@ -6,6 +6,8 @@ permalink: /kb/196/Q196859/
 
 ## Q196859: WD97: Cannot Rename Normal.dot If Word Mail Is Running
 
+{% raw %}
+
 	Article: Q196859
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -59,3 +61,5 @@ permalink: /kb/196/Q196859/
 	
 	=============================================================================
 	
+
+{% endraw %}

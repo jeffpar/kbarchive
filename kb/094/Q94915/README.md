@@ -6,6 +6,8 @@ permalink: /kb/094/Q94915/
 
 ## Q94915: DOCERR: LIB Command Line Documented Incorrectly
 
+{% raw %}
+
 	Article: Q94915
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.2
@@ -52,3 +54,5 @@ permalink: /kb/094/Q94915/
 	
 	=============================================================================
 	
+
+{% endraw %}

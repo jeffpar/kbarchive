@@ -6,6 +6,8 @@ permalink: /kb/146/Q146121/
 
 ## Q146121: Emulation Modes for Raven Printers
 
+{% raw %}
+
 	Article: Q146121
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/146/Q146121/
 	
 	=============================================================================
 	
+
+{% endraw %}

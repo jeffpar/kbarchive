@@ -6,6 +6,8 @@ permalink: /kb/184/Q184668/
 
 ## Q184668: WD97: How to Add Path and File Name to Title Bar of Document
 
+{% raw %}
+
 	Article: Q184668
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -127,3 +129,5 @@ permalink: /kb/184/Q184668/
 	
 	=============================================================================
 	
+
+{% endraw %}

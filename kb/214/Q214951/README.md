@@ -6,6 +6,8 @@ permalink: /kb/214/Q214951/
 
 ## Q214951: SMS: List Items Dimmed with Custom MIF &amp; Two Sets of Parentheses
 
+{% raw %}
+
 	Article: Q214951
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP4
@@ -54,3 +56,5 @@ permalink: /kb/214/Q214951/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/322/Q322982/
 
 ## Q322982: Windows NT 4.0 DFS Stops Working After You Apply Post-SP6a SRP
 
+{% raw %}
+
 	Article: Q322982
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -59,3 +61,5 @@ permalink: /kb/322/Q322982/
 	
 	=============================================================================
 	
+
+{% endraw %}

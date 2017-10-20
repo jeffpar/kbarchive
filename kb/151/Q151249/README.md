@@ -6,6 +6,8 @@ permalink: /kb/151/Q151249/
 
 ## Q151249: XFOR: Contents of Attachments Swapped via MS Mail Connector
 
+{% raw %}
+
 	Article: Q151249
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -57,3 +59,5 @@ permalink: /kb/151/Q151249/
 	
 	=============================================================================
 	
+
+{% endraw %}

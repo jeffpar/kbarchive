@@ -6,6 +6,8 @@ permalink: /kb/059/Q59969/
 
 ## Q59969: Mac Hyp: Releasing Memory Used by Message Reference
 
+{% raw %}
+
 	Article: Q59969
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -49,3 +51,5 @@ permalink: /kb/059/Q59969/
 	
 	=============================================================================
 	
+
+{% endraw %}

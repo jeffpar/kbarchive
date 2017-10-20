@@ -6,6 +6,8 @@ permalink: /kb/195/Q195805/
 
 ## Q195805: XWEB: 24-Hour Clock does not Convert 2359 Hours Correctly in OWA
 
+{% raw %}
+
 	Article: Q195805
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -60,3 +62,5 @@ permalink: /kb/195/Q195805/
 	
 	=============================================================================
 	
+
+{% endraw %}

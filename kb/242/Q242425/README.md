@@ -6,6 +6,8 @@ permalink: /kb/242/Q242425/
 
 ## Q242425: Using Session Objects with Session State Disabled Returns Error
 
+{% raw %}
+
 	Article: Q242425
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -100,3 +102,5 @@ permalink: /kb/242/Q242425/
 	
 	=============================================================================
 	
+
+{% endraw %}

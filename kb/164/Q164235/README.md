@@ -6,6 +6,8 @@ permalink: /kb/164/Q164235/
 
 ## Q164235: WD97: Error - Cyclic References Of Projects Not Allowed
 
+{% raw %}
+
 	Article: Q164235
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -88,3 +90,5 @@ permalink: /kb/164/Q164235/
 	
 	=============================================================================
 	
+
+{% endraw %}

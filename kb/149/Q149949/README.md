@@ -6,6 +6,8 @@ permalink: /kb/149/Q149949/
 
 ## Q149949: Some Browsers May Fail to Connect When IIS Uses SSL
 
+{% raw %}
+
 	Article: Q149949
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -56,3 +58,5 @@ permalink: /kb/149/Q149949/
 	
 	=============================================================================
 	
+
+{% endraw %}

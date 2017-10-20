@@ -6,6 +6,8 @@ permalink: /kb/156/Q156872/
 
 ## Q156872: BUG: Errors Checking In or Out a Custom Resource File (.RES)
 
+{% raw %}
+
 	Article: Q156872
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/156/Q156872/
 	
 	=============================================================================
 	
+
+{% endraw %}

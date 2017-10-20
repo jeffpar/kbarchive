@@ -6,6 +6,8 @@ permalink: /kb/138/Q138152/
 
 ## Q138152: Microsoft Fax May Not Detect Dial Tone
 
+{% raw %}
+
 	Article: Q138152
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/138/Q138152/
 	
 	=============================================================================
 	
+
+{% endraw %}

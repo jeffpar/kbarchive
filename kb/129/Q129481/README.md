@@ -6,6 +6,8 @@ permalink: /kb/129/Q129481/
 
 ## Q129481: Tab Not Saved in Windows NT Cardfile
 
+{% raw %}
+
 	Article: Q129481
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/129/Q129481/
 	
 	=============================================================================
 	
+
+{% endraw %}

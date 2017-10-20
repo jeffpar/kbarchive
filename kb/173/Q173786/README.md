@@ -6,6 +6,8 @@ permalink: /kb/173/Q173786/
 
 ## Q173786: SMS: Error 87 When Using RSERVICE
 
+{% raw %}
+
 	Article: Q173786
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -55,3 +57,5 @@ permalink: /kb/173/Q173786/
 	
 	=============================================================================
 	
+
+{% endraw %}

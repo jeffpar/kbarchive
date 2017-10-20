@@ -6,6 +6,8 @@ permalink: /kb/181/Q181540/
 
 ## Q181540: WD97: Statistics Button Unavailable in File Summary Info Dialog
 
+{% raw %}
+
 	Article: Q181540
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -133,3 +135,5 @@ permalink: /kb/181/Q181540/
 	
 	=============================================================================
 	
+
+{% endraw %}

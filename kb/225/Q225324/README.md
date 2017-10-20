@@ -6,6 +6,8 @@ permalink: /kb/225/Q225324/
 
 ## Q225324: NetBT Clients Can Only Connect if They Are Set to use B-Node
 
+{% raw %}
+
 	Article: Q225324
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -104,3 +106,5 @@ permalink: /kb/225/Q225324/
 	
 	=============================================================================
 	
+
+{% endraw %}

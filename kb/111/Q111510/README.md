@@ -6,6 +6,8 @@ permalink: /kb/111/Q111510/
 
 ## Q111510: PRB: &lt;ExpC3&gt; of PUTFILE() Is Ignored in FoxPro for Macintosh
 
+{% raw %}
+
 	Article: Q111510
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -55,3 +57,5 @@ permalink: /kb/111/Q111510/
 	
 	=============================================================================
 	
+
+{% endraw %}

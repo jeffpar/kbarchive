@@ -6,6 +6,8 @@ permalink: /kb/224/Q224361/
 
 ## Q224361: Cannot Install Reference Suite DVD on Windows 95-Based Computer
 
+{% raw %}
+
 	Article: Q224361
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -75,3 +77,5 @@ permalink: /kb/224/Q224361/
 	
 	=============================================================================
 	
+
+{% endraw %}

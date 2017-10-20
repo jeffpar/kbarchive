@@ -6,6 +6,8 @@ permalink: /kb/057/Q57852/
 
 ## Q57852: LINK /PAC Switch in 6.00/6.00b Is Now /PACKC in BASIC PDS 7.00
 
+{% raw %}
+
 	Article: Q57852
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -43,3 +45,5 @@ permalink: /kb/057/Q57852/
 	another /PACKD, because the switches have similar functions, it is
 	more logical for their abbreviations to have the same first 4 letters
 	("PACK") followed by a distinguishing letter ("C" or "D").
+
+{% endraw %}

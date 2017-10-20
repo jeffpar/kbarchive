@@ -6,6 +6,8 @@ permalink: /kb/216/Q216216/
 
 ## Q216216: DOC: DataGrid SizeMode Incorrectly Documented -dbgNumberOfColumn
 
+{% raw %}
+
 	Article: Q216216
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -41,3 +43,5 @@ permalink: /kb/216/Q216216/
 	
 	=============================================================================
 	
+
+{% endraw %}

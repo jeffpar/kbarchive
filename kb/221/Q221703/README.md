@@ -6,6 +6,8 @@ permalink: /kb/221/Q221703/
 
 ## Q221703: FIX: Component Gallery Does Not Refresh After Changing Property
 
+{% raw %}
+
 	Article: Q221703
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -81,3 +83,5 @@ permalink: /kb/221/Q221703/
 	
 	=============================================================================
 	
+
+{% endraw %}

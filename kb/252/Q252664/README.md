@@ -6,6 +6,8 @@ permalink: /kb/252/Q252664/
 
 ## Q252664: Stop 0x0000000A Error in Tcpip.sys on FTP Server
 
+{% raw %}
+
 	Article: Q252664
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -85,3 +87,5 @@ permalink: /kb/252/Q252664/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134634/
 
 ## Q134634: Microsoft Excel for Windows NT Prints Only One Copy
 
+{% raw %}
+
 	Article: Q134634
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -48,3 +50,5 @@ permalink: /kb/134/Q134634/
 	
 	=============================================================================
 	
+
+{% endraw %}

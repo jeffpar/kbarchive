@@ -6,6 +6,8 @@ permalink: /kb/271/Q271300/
 
 ## Q271300: Microsoft Reader Err Msg: Unhandled Exception 0xC0000005: AV
 
+{% raw %}
+
 	Article: Q271300
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.5
@@ -206,3 +208,5 @@ permalink: /kb/271/Q271300/
 	
 	=============================================================================
 	
+
+{% endraw %}

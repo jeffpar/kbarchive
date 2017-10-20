@@ -6,6 +6,8 @@ permalink: /kb/189/Q189130/
 
 ## Q189130: BUG: VERSION(1) Function Returns Different Format in VFP 6
 
+{% raw %}
+
 	Article: Q189130
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -84,3 +86,5 @@ permalink: /kb/189/Q189130/
 	
 	=============================================================================
 	
+
+{% endraw %}

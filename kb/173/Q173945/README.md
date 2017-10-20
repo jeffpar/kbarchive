@@ -6,6 +6,8 @@ permalink: /kb/173/Q173945/
 
 ## Q173945: How To Install The Windows NT Server 4.0 Evaluation Edition
 
+{% raw %}
+
 	Article: Q173945
 	Product(s): Microsoft Press
 	Version(s): 
@@ -193,3 +195,5 @@ permalink: /kb/173/Q173945/
 	
 	=============================================================================
 	
+
+{% endraw %}

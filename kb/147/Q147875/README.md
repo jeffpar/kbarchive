@@ -6,6 +6,8 @@ permalink: /kb/147/Q147875/
 
 ## Q147875: HOWTO: Use &quot;DSN-Less&quot; ODBC Connections with RDO and DAO
 
+{% raw %}
+
 	Article: Q147875
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:1.5,2.0,2.1,2.5,4.0,5.0,6.0
@@ -134,3 +136,5 @@ permalink: /kb/147/Q147875/
 	
 	=============================================================================
 	
+
+{% endraw %}

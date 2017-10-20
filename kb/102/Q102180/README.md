@@ -6,6 +6,8 @@ permalink: /kb/102/Q102180/
 
 ## Q102180: VB MDI Applications Missing Menu Bar with Windows NT
 
+{% raw %}
+
 	Article: Q102180
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -48,3 +50,5 @@ permalink: /kb/102/Q102180/
 	
 	=============================================================================
 	
+
+{% endraw %}

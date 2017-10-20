@@ -6,6 +6,8 @@ permalink: /kb/185/Q185079/
 
 ## Q185079: Date of File Copied to a Windows NT Server and Back Is Changed
 
+{% raw %}
+
 	Article: Q185079
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.11
@@ -67,3 +69,5 @@ permalink: /kb/185/Q185079/
 	
 	=============================================================================
 	
+
+{% endraw %}

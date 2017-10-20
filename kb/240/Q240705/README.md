@@ -6,6 +6,8 @@ permalink: /kb/240/Q240705/
 
 ## Q240705: Server Size Limits for MSN E-mail Accounts
 
+{% raw %}
+
 	Article: Q240705
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6,4.0,5,5.0
@@ -42,3 +44,5 @@ permalink: /kb/240/Q240705/
 	
 	=============================================================================
 	
+
+{% endraw %}

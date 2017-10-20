@@ -6,6 +6,8 @@ permalink: /kb/160/Q160065/
 
 ## Q160065: FIX: Recurring BROWSE and SEEK Cause FoxPro to Slow Down
 
+{% raw %}
+
 	Article: Q160065
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -65,3 +67,5 @@ permalink: /kb/160/Q160065/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188586/
 
 ## Q188586: HOWTO: Expedite the Visual Basic Support Process
 
+{% raw %}
+
 	Article: Q188586
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -100,3 +102,5 @@ permalink: /kb/188/Q188586/
 	
 	=============================================================================
 	
+
+{% endraw %}

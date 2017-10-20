@@ -6,6 +6,8 @@ permalink: /kb/129/Q129447/
 
 ## Q129447: PRB: Can't Watch Properties or Fields Used in a WITH Statement
 
+{% raw %}
+
 	Article: Q129447
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -83,3 +85,5 @@ permalink: /kb/129/Q129447/
 	
 	=============================================================================
 	
+
+{% endraw %}

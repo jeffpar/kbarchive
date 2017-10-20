@@ -6,6 +6,8 @@ permalink: /kb/113/Q113478/
 
 ## Q113478: README.TXT: Workgroup Add-On for MS-DOS 3.11
 
+{% raw %}
+
 	Article: Q113478
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): MS-DOS:3.11
@@ -397,3 +399,5 @@ permalink: /kb/113/Q113478/
 	
 	=============================================================================
 	
+
+{% endraw %}

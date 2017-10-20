@@ -6,6 +6,8 @@ permalink: /kb/099/Q99328/
 
 ## Q99328: Write Err Msg: Cannot Print Picture. Picture Will Be Ignored.
 
+{% raw %}
+
 	Article: Q99328
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/099/Q99328/
 	
 	=============================================================================
 	
+
+{% endraw %}

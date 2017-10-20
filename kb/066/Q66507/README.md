@@ -6,6 +6,8 @@ permalink: /kb/066/Q66507/
 
 ## Q66507: CodeView Fails to Return Value in ES
 
+{% raw %}
+
 	Article: Q66507
 	Product(s): See article
 	Version(s): 3.00 3.10 3.11
@@ -31,3 +33,5 @@ permalink: /kb/066/Q66507/
 	   _asm mov ah, 0xC0
 	  _asm int 0x15
 	  }
+
+{% endraw %}

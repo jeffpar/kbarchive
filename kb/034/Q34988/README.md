@@ -6,6 +6,8 @@ permalink: /kb/034/Q34988/
 
 ## Q34988: Errors R6012 to R6015 Documented in QuickC 1.01 Guide
 
+{% raw %}
+
 	Article: Q34988
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -66,3 +68,5 @@ permalink: /kb/034/Q34988/
 	within the QuickC environment. However, you cannot run a program
 	created from such object files outside of the QuickC programming
 	environment.
+
+{% endraw %}

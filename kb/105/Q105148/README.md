@@ -6,6 +6,8 @@ permalink: /kb/105/Q105148/
 
 ## Q105148: Golf: Display Driver Causes GOLFMOD3.EXE Error
 
+{% raw %}
+
 	Article: Q105148
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,2.0,3.0
@@ -44,3 +46,5 @@ permalink: /kb/105/Q105148/
 	
 	=============================================================================
 	
+
+{% endraw %}

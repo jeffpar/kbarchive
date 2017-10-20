@@ -6,6 +6,8 @@ permalink: /kb/166/Q166065/
 
 ## Q166065: WV: Cannot Paste to the Desktop Folder from Word Viewer
 
+{% raw %}
+
 	Article: Q166065
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -74,3 +76,5 @@ permalink: /kb/166/Q166065/
 	
 	=============================================================================
 	
+
+{% endraw %}

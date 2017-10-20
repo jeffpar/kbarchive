@@ -6,6 +6,8 @@ permalink: /kb/085/Q85005/
 
 ## Q85005: Wrap Title for Icons Appears to Fail in Windows 3.1
 
+{% raw %}
+
 	Article: Q85005
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/085/Q85005/
 	
 	=============================================================================
 	
+
+{% endraw %}

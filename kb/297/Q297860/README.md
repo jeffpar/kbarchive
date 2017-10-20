@@ -6,6 +6,8 @@ permalink: /kb/297/Q297860/
 
 ## Q297860: MS01-044: IIS 5.0 Security and Post-Windows NT 4.0 SP5 IIS 4.0 P
 
+{% raw %}
+
 	Article: Q297860
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -373,3 +375,5 @@ permalink: /kb/297/Q297860/
 	
 	=============================================================================
 	
+
+{% endraw %}

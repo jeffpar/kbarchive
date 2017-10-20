@@ -6,6 +6,8 @@ permalink: /kb/178/Q178819/
 
 ## Q178819: XCLN: OLE Objects Do Not Display Correctly on Macintosh Clients
 
+{% raw %}
+
 	Article: Q178819
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0 WINDOWS:4.0,5.0
@@ -63,3 +65,5 @@ permalink: /kb/178/Q178819/
 	
 	=============================================================================
 	
+
+{% endraw %}

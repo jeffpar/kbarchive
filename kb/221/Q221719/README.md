@@ -6,6 +6,8 @@ permalink: /kb/221/Q221719/
 
 ## Q221719: FIX: Polish Collate Sequence Not Available in Options Data Tab
 
+{% raw %}
+
 	Article: Q221719
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -118,3 +120,5 @@ permalink: /kb/221/Q221719/
 	
 	=============================================================================
 	
+
+{% endraw %}

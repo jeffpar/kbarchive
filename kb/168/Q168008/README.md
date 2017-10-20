@@ -6,6 +6,8 @@ permalink: /kb/168/Q168008/
 
 ## Q168008: FIX: C2166 Incorrect Type Deduction for Template Parameter
 
+{% raw %}
+
 	Article: Q168008
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -96,3 +98,5 @@ permalink: /kb/168/Q168008/
 	
 	=============================================================================
 	
+
+{% endraw %}

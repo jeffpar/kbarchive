@@ -6,6 +6,8 @@ permalink: /kb/156/Q156553/
 
 ## Q156553: Upgrading WinNT 3.51 to 4.0 w/ NCR/Symbios Logic Controller
 
+{% raw %}
+
 	Article: Q156553
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -68,3 +70,5 @@ permalink: /kb/156/Q156553/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/089/Q89803/
 
 ## Q89803: Windows Err Msg: FILENAME.BMP Cannot Find This File
 
+{% raw %}
+
 	Article: Q89803
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -74,3 +76,5 @@ permalink: /kb/089/Q89803/
 	
 	=============================================================================
 	
+
+{% endraw %}

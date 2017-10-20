@@ -6,6 +6,8 @@ permalink: /kb/171/Q171338/
 
 ## Q171338: SMS: Preparing for a Systems Management Server Upgrade
 
+{% raw %}
+
 	Article: Q171338
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -121,3 +123,5 @@ permalink: /kb/171/Q171338/
 	
 	=============================================================================
 	
+
+{% endraw %}

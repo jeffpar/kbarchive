@@ -6,6 +6,8 @@ permalink: /kb/050/Q50199/
 
 ## Q50199: Black Scenery with Everex EGA in Flight Simulator
 
+{% raw %}
+
 	Article: Q50199
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/050/Q50199/
 	
 	=============================================================================
 	
+
+{% endraw %}

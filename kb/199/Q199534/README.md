@@ -6,6 +6,8 @@ permalink: /kb/199/Q199534/
 
 ## Q199534: XFOR: MS Mail Users Can't Send to Users in Remote Exchange Sites
 
+{% raw %}
+
 	Article: Q199534
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -97,3 +99,5 @@ permalink: /kb/199/Q199534/
 	
 	=============================================================================
 	
+
+{% endraw %}

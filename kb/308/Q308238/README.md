@@ -6,6 +6,8 @@ permalink: /kb/308/Q308238/
 
 ## Q308238: SMS Rchelp.sys File Prevents Chkdsk.exe From Running
 
+{% raw %}
+
 	Article: Q308238
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP2,2.0 SP3
@@ -168,3 +170,5 @@ permalink: /kb/308/Q308238/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68624/
 
 ## Q68624: Profiling Time Between OutputDebugString and FatalExit
 
+{% raw %}
+
 	Article: Q68624
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -93,3 +95,5 @@ permalink: /kb/068/Q68624/
 	
 	=============================================================================
 	
+
+{% endraw %}

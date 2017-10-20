@@ -6,6 +6,8 @@ permalink: /kb/155/Q155018/
 
 ## Q155018: Cannot Join Domain During Setup with Dial-Up Networking
 
+{% raw %}
+
 	Article: Q155018
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -49,3 +51,5 @@ permalink: /kb/155/Q155018/
 	
 	=============================================================================
 	
+
+{% endraw %}

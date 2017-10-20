@@ -6,6 +6,8 @@ permalink: /kb/237/Q237991/
 
 ## Q237991: Front Page 2000 Not Included in SBS 4.5 VUP or Retail
 
+{% raw %}
+
 	Article: Q237991
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -54,3 +56,5 @@ permalink: /kb/237/Q237991/
 	
 	=============================================================================
 	
+
+{% endraw %}

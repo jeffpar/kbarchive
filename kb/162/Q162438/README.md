@@ -6,6 +6,8 @@ permalink: /kb/162/Q162438/
 
 ## Q162438: &quot;STOP 0x50&quot; Accessing Files on Windows NT from Windows 95
 
+{% raw %}
+
 	Article: Q162438
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -66,3 +68,5 @@ permalink: /kb/162/Q162438/
 	
 	=============================================================================
 	
+
+{% endraw %}

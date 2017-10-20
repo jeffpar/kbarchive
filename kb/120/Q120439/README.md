@@ -6,6 +6,8 @@ permalink: /kb/120/Q120439/
 
 ## Q120439: Cannot Insert Excel OLE Object into Packrat on RISC Computer
 
+{% raw %}
+
 	Article: Q120439
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/120/Q120439/
 	
 	=============================================================================
 	
+
+{% endraw %}

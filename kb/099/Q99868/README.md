@@ -6,6 +6,8 @@ permalink: /kb/099/Q99868/
 
 ## Q99868: Installer Reinstalls QuickTime over Same Version
 
+{% raw %}
+
 	Article: Q99868
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -37,3 +39,5 @@ permalink: /kb/099/Q99868/
 	
 	=============================================================================
 	
+
+{% endraw %}

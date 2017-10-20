@@ -6,6 +6,8 @@ permalink: /kb/152/Q152946/
 
 ## Q152946: XADM: Exchange Store Stops Due to Data Corruption
 
+{% raw %}
+
 	Article: Q152946
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -124,3 +126,5 @@ permalink: /kb/152/Q152946/
 	
 	=============================================================================
 	
+
+{% endraw %}

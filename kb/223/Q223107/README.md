@@ -6,6 +6,8 @@ permalink: /kb/223/Q223107/
 
 ## Q223107: FIX: Error Picking Deleted Object From Dropdown List
 
+{% raw %}
+
 	Article: Q223107
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -114,3 +116,5 @@ permalink: /kb/223/Q223107/
 	
 	=============================================================================
 	
+
+{% endraw %}

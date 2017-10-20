@@ -6,6 +6,8 @@ permalink: /kb/153/Q153960/
 
 ## Q153960: XCLN: Can't Drill Down On Distribution List In Schedule+
 
+{% raw %}
+
 	Article: Q153960
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -50,3 +52,5 @@ permalink: /kb/153/Q153960/
 	
 	=============================================================================
 	
+
+{% endraw %}

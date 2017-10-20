@@ -6,6 +6,8 @@ permalink: /kb/195/Q195237/
 
 ## Q195237: LABEL Doc Error in MS Excel 97 Developer's Kit
 
+{% raw %}
+
 	Article: Q195237
 	Product(s): Microsoft Press
 	Version(s): WINDOWS:1.0
@@ -65,3 +67,5 @@ permalink: /kb/195/Q195237/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199958/
 
 ## Q199958: XCON: Configuring the Exchange PROFS Connector Option Tab
 
+{% raw %}
+
 	Article: Q199958
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -83,3 +85,5 @@ permalink: /kb/199/Q199958/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170000/
 
 ## Q170000: SMS: Stop 0E Error on Windows 95 While Running Inventory
 
+{% raw %}
+
 	Article: Q170000
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -69,3 +71,5 @@ permalink: /kb/170/Q170000/
 	
 	=============================================================================
 	
+
+{% endraw %}

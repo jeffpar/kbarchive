@@ -6,6 +6,8 @@ permalink: /kb/058/Q58922/
 
 ## Q58922: Cannot Link PROISAM.LIB or PROISAMD.LIB into Quick Library
 
+{% raw %}
+
 	Article: Q58922
 	Product(s): See article
 	Version(s): 7.00
@@ -35,3 +37,5 @@ permalink: /kb/058/Q58922/
 	DELETETABLE. It contains a restricted version of the OPEN...FOR ISAM
 	statement that opens a database or table but does not create it if it
 	does not already exist.
+
+{% endraw %}

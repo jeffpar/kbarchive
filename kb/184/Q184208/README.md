@@ -6,6 +6,8 @@ permalink: /kb/184/Q184208/
 
 ## Q184208: SMS: RCHELP Service Not Removed If Video Acceleration Disabled
 
+{% raw %}
+
 	Article: Q184208
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP3
@@ -106,3 +108,5 @@ permalink: /kb/184/Q184208/
 	
 	=============================================================================
 	
+
+{% endraw %}

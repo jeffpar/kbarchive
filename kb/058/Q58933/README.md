@@ -6,6 +6,8 @@ permalink: /kb/058/Q58933/
 
 ## Q58933: Cannot Allocate More Than 64K with Calloc()
 
+{% raw %}
+
 	Article: Q58933
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -25,3 +27,5 @@ permalink: /kb/058/Q58933/
 	64K. This is not the case with calloc() -- so one might make the
 	assumption that you COULD allocate more than 64K with calloc(). This
 	is simply not the case.
+
+{% endraw %}

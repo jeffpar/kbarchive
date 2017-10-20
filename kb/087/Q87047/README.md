@@ -6,6 +6,8 @@ permalink: /kb/087/Q87047/
 
 ## Q87047: SMTP: How the SMTP World Communicates with the Gateway
 
+{% raw %}
+
 	Article: Q87047
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -40,3 +42,5 @@ permalink: /kb/087/Q87047/
 	
 	=============================================================================
 	
+
+{% endraw %}

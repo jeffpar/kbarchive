@@ -6,6 +6,8 @@ permalink: /kb/151/Q151288/
 
 ## Q151288: Top Articles on Networking with Windows 95
 
+{% raw %}
+
 	Article: Q151288
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/151/Q151288/
 	
 	=============================================================================
 	
+
+{% endraw %}

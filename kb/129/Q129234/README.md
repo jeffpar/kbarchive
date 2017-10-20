@@ -6,6 +6,8 @@ permalink: /kb/129/Q129234/
 
 ## Q129234: Net Watcher Continues to List Disconnected Client
 
+{% raw %}
+
 	Article: Q129234
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -69,3 +71,5 @@ permalink: /kb/129/Q129234/
 	
 	=============================================================================
 	
+
+{% endraw %}

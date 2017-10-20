@@ -6,6 +6,8 @@ permalink: /kb/287/Q287220/
 
 ## Q287220: Stop Error 0x7B Appears When Starting Windows NT Server 4.0
 
+{% raw %}
+
 	Article: Q287220
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -73,3 +75,5 @@ permalink: /kb/287/Q287220/
 	
 	=============================================================================
 	
+
+{% endraw %}

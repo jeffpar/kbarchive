@@ -6,6 +6,8 @@ permalink: /kb/131/Q131991/
 
 ## Q131991: HOWTO: Change the Mouse Pointer for a Window in MFC
 
+{% raw %}
+
 	Article: Q131991
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
@@ -163,3 +165,5 @@ permalink: /kb/131/Q131991/
 	
 	=============================================================================
 	
+
+{% endraw %}

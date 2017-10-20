@@ -6,6 +6,8 @@ permalink: /kb/240/Q240112/
 
 ## Q240112: NBA 2000: Pointer Is Frozen When Startup Screen Is Displayed
 
+{% raw %}
+
 	Article: Q240112
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/240/Q240112/
 	
 	=============================================================================
 	
+
+{% endraw %}

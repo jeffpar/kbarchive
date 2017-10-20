@@ -6,6 +6,8 @@ permalink: /kb/122/Q122490/
 
 ## Q122490: Macintosh The Ultimate Haunted House - Memory Issues
 
+{% raw %}
+
 	Article: Q122490
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -78,3 +80,5 @@ permalink: /kb/122/Q122490/
 	
 	=============================================================================
 	
+
+{% endraw %}

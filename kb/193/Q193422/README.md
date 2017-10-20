@@ -6,6 +6,8 @@ permalink: /kb/193/Q193422/
 
 ## Q193422: Last Day of the Month Reverts Back to First Day of Same Month
 
+{% raw %}
+
 	Article: Q193422
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -80,3 +82,5 @@ permalink: /kb/193/Q193422/
 	
 	=============================================================================
 	
+
+{% endraw %}

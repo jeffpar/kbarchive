@@ -6,6 +6,8 @@ permalink: /kb/043/Q43809/
 
 ## Q43809: Changes in scanf() and printf() for Long Types in C
 
+{% raw %}
+
 	Article: Q43809
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -39,3 +41,5 @@ permalink: /kb/043/Q43809/
 	long i;
 	scanf( "%ld", &i );
 	printf( "%ld", i );
+
+{% endraw %}

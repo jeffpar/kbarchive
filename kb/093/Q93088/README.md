@@ -6,6 +6,8 @@ permalink: /kb/093/Q93088/
 
 ## Q93088: NCR Wavelan Requires MediaType=Ethernet_II for Novell in WFWG
 
+{% raw %}
+
 	Article: Q93088
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -64,3 +66,5 @@ permalink: /kb/093/Q93088/
 	
 	=============================================================================
 	
+
+{% endraw %}

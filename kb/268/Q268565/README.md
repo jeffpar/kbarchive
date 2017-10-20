@@ -6,6 +6,8 @@ permalink: /kb/268/Q268565/
 
 ## Q268565: XWEB: Contact Created in OWA Can't Be Added As Recipient in OL
 
+{% raw %}
+
 	Article: Q268565
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -70,3 +72,5 @@ permalink: /kb/268/Q268565/
 	
 	=============================================================================
 	
+
+{% endraw %}

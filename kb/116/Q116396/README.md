@@ -6,6 +6,8 @@ permalink: /kb/116/Q116396/
 
 ## Q116396: MS-DOS 6.22 Step-Up Directory Listing 5.25-Inch 1.2 MB Set
 
+{% raw %}
+
 	Article: Q116396
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -195,3 +197,5 @@ permalink: /kb/116/Q116396/
 	
 	=============================================================================
 	
+
+{% endraw %}

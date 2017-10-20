@@ -6,6 +6,8 @@ permalink: /kb/167/Q167017/
 
 ## Q167017: Lexmark Optra L and L Plus Printers Incorrectly Show Middle Tray
 
+{% raw %}
+
 	Article: Q167017
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -48,3 +50,5 @@ permalink: /kb/167/Q167017/
 	
 	=============================================================================
 	
+
+{% endraw %}

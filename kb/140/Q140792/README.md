@@ -6,6 +6,8 @@ permalink: /kb/140/Q140792/
 
 ## Q140792: FIX: CheckBox Control in Grid Cannot Be Set to Read Only
 
+{% raw %}
+
 	Article: Q140792
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0 3.0b
@@ -79,3 +81,5 @@ permalink: /kb/140/Q140792/
 	
 	=============================================================================
 	
+
+{% endraw %}

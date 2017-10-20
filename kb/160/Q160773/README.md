@@ -6,6 +6,8 @@ permalink: /kb/160/Q160773/
 
 ## Q160773: BUG: Derived Group Class Loses Custom Properties
 
+{% raw %}
+
 	Article: Q160773
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -100,3 +102,5 @@ permalink: /kb/160/Q160773/
 	
 	=============================================================================
 	
+
+{% endraw %}

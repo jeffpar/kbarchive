@@ -6,6 +6,8 @@ permalink: /kb/115/Q115438/
 
 ## Q115438: X400: Delivery Fails when Message Has Too Many TO: Recipients
 
+{% raw %}
+
 	Article: Q115438
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.2
@@ -74,3 +76,5 @@ permalink: /kb/115/Q115438/
 	
 	=============================================================================
 	
+
+{% endraw %}

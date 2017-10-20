@@ -6,6 +6,8 @@ permalink: /kb/153/Q153005/
 
 ## Q153005: PRB: Longjmp Inside a _try Block Fails on PowerPC
 
+{% raw %}
+
 	Article: Q153005
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -105,3 +107,5 @@ permalink: /kb/153/Q153005/
 	
 	=============================================================================
 	
+
+{% endraw %}

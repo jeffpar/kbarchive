@@ -6,6 +6,8 @@ permalink: /kb/165/Q165151/
 
 ## Q165151: Help File Terminates Unexpectedly with Error
 
+{% raw %}
+
 	Article: Q165151
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/165/Q165151/
 	
 	=============================================================================
 	
+
+{% endraw %}

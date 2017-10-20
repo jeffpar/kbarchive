@@ -6,6 +6,8 @@ permalink: /kb/238/Q238058/
 
 ## Q238058: Encarta Encyclopedia 2000: Hangs When You Run a Virtual Tour
 
+{% raw %}
+
 	Article: Q238058
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/238/Q238058/
 	
 	=============================================================================
 	
+
+{% endraw %}

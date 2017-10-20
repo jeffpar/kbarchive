@@ -6,6 +6,8 @@ permalink: /kb/131/Q131507/
 
 ## Q131507: PC Mac: Routing Slip and Send Option Unavailable in Word 6.0
 
+{% raw %}
+
 	Article: Q131507
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -45,3 +47,5 @@ permalink: /kb/131/Q131507/
 	
 	=============================================================================
 	
+
+{% endraw %}

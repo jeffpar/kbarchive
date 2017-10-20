@@ -6,6 +6,8 @@ permalink: /kb/170/Q170965/
 
 ## Q170965: SFM Time and Date Stamp Change Copying Between Volumes Locally
 
+{% raw %}
+
 	Article: Q170965
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -110,3 +112,5 @@ permalink: /kb/170/Q170965/
 	
 	=============================================================================
 	
+
+{% endraw %}

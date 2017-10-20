@@ -6,6 +6,8 @@ permalink: /kb/232/Q232242/
 
 ## Q232242: SMS: Audit16 Stops Responding on Removable Media Drive
 
+{% raw %}
+
 	Article: Q232242
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -107,3 +109,5 @@ permalink: /kb/232/Q232242/
 	
 	=============================================================================
 	
+
+{% endraw %}

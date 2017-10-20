@@ -6,6 +6,8 @@ permalink: /kb/185/Q185905/
 
 ## Q185905: XADM: Cannot Display Message with Content-Type Entry That Wraps
 
+{% raw %}
+
 	Article: Q185905
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -77,3 +79,5 @@ permalink: /kb/185/Q185905/
 	
 	=============================================================================
 	
+
+{% endraw %}

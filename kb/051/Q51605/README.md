@@ -6,6 +6,8 @@ permalink: /kb/051/Q51605/
 
 ## Q51605: Example of Gaussian Elimination; Matrix Math in BASIC 7.00
 
+{% raw %}
+
 	Article: Q51605
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -171,3 +173,5 @@ permalink: /kb/051/Q51605/
 	'    x= 1.00000000000001
 	'    y= 2
 	'    z= 3
+
+{% endraw %}

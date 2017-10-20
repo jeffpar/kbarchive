@@ -6,6 +6,8 @@ permalink: /kb/169/Q169561/
 
 ## Q169561: Unable to View Subdirectory if Parent Directory has NO ACCESS
 
+{% raw %}
+
 	Article: Q169561
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -43,3 +45,5 @@ permalink: /kb/169/Q169561/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/205/Q205635/
 
 ## Q205635: HOWTO: Save Bitmap File as OLE Object in Access OLE Object Field
 
+{% raw %}
+
 	Article: Q205635
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -107,3 +109,5 @@ permalink: /kb/205/Q205635/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155508/
 
 ## Q155508: Imagehlp.dll UnDecorateSymbolName Does Not Return Correct Name
 
+{% raw %}
+
 	Article: Q155508
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -48,3 +50,5 @@ permalink: /kb/155/Q155508/
 	
 	=============================================================================
 	
+
+{% endraw %}

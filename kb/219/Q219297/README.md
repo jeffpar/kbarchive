@@ -6,6 +6,8 @@ permalink: /kb/219/Q219297/
 
 ## Q219297: How to Disable the My Briefcase Icon on the Desktop
 
+{% raw %}
+
 	Article: Q219297
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -79,3 +81,5 @@ permalink: /kb/219/Q219297/
 	
 	=============================================================================
 	
+
+{% endraw %}

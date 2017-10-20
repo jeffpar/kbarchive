@@ -6,6 +6,8 @@ permalink: /kb/142/Q142045/
 
 ## Q142045: Remote Control Fails Over IPX Token-Ring Wide Area Network
 
+{% raw %}
+
 	Article: Q142045
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -72,3 +74,5 @@ permalink: /kb/142/Q142045/
 	
 	=============================================================================
 	
+
+{% endraw %}

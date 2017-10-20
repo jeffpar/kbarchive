@@ -6,6 +6,8 @@ permalink: /kb/179/Q179344/
 
 ## Q179344: WD97: GoTo Previous Comment Does Not Go To Correct Comment
 
+{% raw %}
+
 	Article: Q179344
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -66,3 +68,5 @@ permalink: /kb/179/Q179344/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/239/Q239035/
 
 ## Q239035: Err Msg: 550 Directory: Access Denied, Failed to Change Dir
 
+{% raw %}
+
 	Article: Q239035
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -61,3 +63,5 @@ permalink: /kb/239/Q239035/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/049/Q49388/
 
 ## Q49388: Example of Passing Fixed-Length String Between BASIC and MASM
 
+{% raw %}
+
 	Article: Q49388
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -91,3 +93,5 @@ permalink: /kb/049/Q49388/
 	
 	   BASIC String
 	   Assembly String
+
+{% endraw %}

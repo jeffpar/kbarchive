@@ -6,6 +6,8 @@ permalink: /kb/130/Q130160/
 
 ## Q130160: PRB: &quot;Convert.app cannot be run as a standalone program&quot; Error
 
+{% raw %}
+
 	Article: Q130160
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/130/Q130160/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/100/Q100819/
 
 ## Q100819: NET.TXT: Updating LAN Manager 1.x Enhanced Networks
 
+{% raw %}
+
 	Article: Q100819
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -78,3 +80,5 @@ permalink: /kb/100/Q100819/
 	
 	=============================================================================
 	
+
+{% endraw %}

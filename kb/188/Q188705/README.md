@@ -6,6 +6,8 @@ permalink: /kb/188/Q188705/
 
 ## Q188705: WD97: Catalog Merge To Printer Results in Error Message
 
+{% raw %}
+
 	Article: Q188705
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -57,3 +59,5 @@ permalink: /kb/188/Q188705/
 	
 	=============================================================================
 	
+
+{% endraw %}

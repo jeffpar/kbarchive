@@ -6,6 +6,8 @@ permalink: /kb/195/Q195267/
 
 ## Q195267: Access 97 Developer's Handbook Comments and Corrections
 
+{% raw %}
+
 	Article: Q195267
 	Product(s): Microsoft Press
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/195/Q195267/
 	
 	=============================================================================
 	
+
+{% endraw %}

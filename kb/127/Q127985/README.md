@@ -6,6 +6,8 @@ permalink: /kb/127/Q127985/
 
 ## Q127985: Platinum 16 Sound Card Causes GP Fault with a Pentium Processo
 
+{% raw %}
+
 	Article: Q127985
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/127/Q127985/
 	
 	=============================================================================
 	
+
+{% endraw %}

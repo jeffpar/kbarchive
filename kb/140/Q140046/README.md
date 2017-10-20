@@ -6,6 +6,8 @@ permalink: /kb/140/Q140046/
 
 ## Q140046: Master Boot Record Virus Prevents Windows NT From Installing
 
+{% raw %}
+
 	Article: Q140046
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -82,3 +84,5 @@ permalink: /kb/140/Q140046/
 	
 	=============================================================================
 	
+
+{% endraw %}

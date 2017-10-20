@@ -6,6 +6,8 @@ permalink: /kb/128/Q128774/
 
 ## Q128774: Time Zones Not Calculated in Time of Arrival
 
+{% raw %}
+
 	Article: Q128774
 	Product(s): Microsoft Automap
 	Version(s): 3.0,3.02,3.03,3.04,3.05,4.0,5.0
@@ -48,3 +50,5 @@ permalink: /kb/128/Q128774/
 	
 	=============================================================================
 	
+
+{% endraw %}

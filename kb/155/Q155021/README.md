@@ -6,6 +6,8 @@ permalink: /kb/155/Q155021/
 
 ## Q155021: Cannot Cancel Location Information
 
+{% raw %}
+
 	Article: Q155021
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -46,3 +48,5 @@ permalink: /kb/155/Q155021/
 	
 	=============================================================================
 	
+
+{% endraw %}

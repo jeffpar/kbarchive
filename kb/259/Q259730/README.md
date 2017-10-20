@@ -6,6 +6,8 @@ permalink: /kb/259/Q259730/
 
 ## Q259730: XFOR: Use Imsext.dll If Internet Mail Service Used as Relay Host
 
+{% raw %}
+
 	Article: Q259730
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -53,3 +55,5 @@ permalink: /kb/259/Q259730/
 	
 	=============================================================================
 	
+
+{% endraw %}

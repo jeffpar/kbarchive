@@ -6,6 +6,8 @@ permalink: /kb/139/Q139068/
 
 ## Q139068: PC WSPlus: Issues When Multiple Users Have the Same Assistant
 
+{% raw %}
+
 	Article: Q139068
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -57,3 +59,5 @@ permalink: /kb/139/Q139068/
 	
 	=============================================================================
 	
+
+{% endraw %}

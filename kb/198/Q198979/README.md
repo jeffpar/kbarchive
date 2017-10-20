@@ -6,6 +6,8 @@ permalink: /kb/198/Q198979/
 
 ## Q198979: PRB: Mastering Series: 32 KB Limit on Size of a Notebook File
 
+{% raw %}
+
 	Article: Q198979
 	Product(s): Microsoft Mastering Series
 	Version(s): WINDOWS:1.0
@@ -47,3 +49,5 @@ permalink: /kb/198/Q198979/
 	
 	=============================================================================
 	
+
+{% endraw %}

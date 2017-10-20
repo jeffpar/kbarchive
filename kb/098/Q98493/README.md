@@ -6,6 +6,8 @@ permalink: /kb/098/Q98493/
 
 ## Q98493: SYS1733 Error Caused by Hardware Configuration Problems
 
+{% raw %}
+
 	Article: Q98493
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/098/Q98493/
 	
 	=============================================================================
 	
+
+{% endraw %}

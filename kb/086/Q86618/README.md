@@ -6,6 +6,8 @@ permalink: /kb/086/Q86618/
 
 ## Q86618: Printing on 14-by-11-Inch Paper with the NEC Pinwriter P5XL
 
+{% raw %}
+
 	Article: Q86618
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/086/Q86618/
 	
 	=============================================================================
 	
+
+{% endraw %}

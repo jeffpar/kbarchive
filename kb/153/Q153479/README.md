@@ -6,6 +6,8 @@ permalink: /kb/153/Q153479/
 
 ## Q153479: XADM: How to Include the Global Address List in the OAB
 
+{% raw %}
+
 	Article: Q153479
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -90,3 +92,5 @@ permalink: /kb/153/Q153479/
 	
 	=============================================================================
 	
+
+{% endraw %}

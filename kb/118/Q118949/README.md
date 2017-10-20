@@ -6,6 +6,8 @@ permalink: /kb/118/Q118949/
 
 ## Q118949: PC WRmt: Files Placed on the Hard Drive During Installation
 
+{% raw %}
+
 	Article: Q118949
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -178,3 +180,5 @@ permalink: /kb/118/Q118949/
 	
 	=============================================================================
 	
+
+{% endraw %}

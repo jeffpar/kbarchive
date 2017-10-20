@@ -6,6 +6,8 @@ permalink: /kb/138/Q138559/
 
 ## Q138559: How to Append Records to a Grid
 
+{% raw %}
+
 	Article: Q138559
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 | 3.00b
@@ -89,3 +91,5 @@ permalink: /kb/138/Q138559/
 	
 	=============================================================================
 	
+
+{% endraw %}

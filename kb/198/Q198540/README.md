@@ -6,6 +6,8 @@ permalink: /kb/198/Q198540/
 
 ## Q198540: Terminal Server Users Receive Event Log Error 1000 Logging On
 
+{% raw %}
+
 	Article: Q198540
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/198/Q198540/
 	
 	=============================================================================
 	
+
+{% endraw %}

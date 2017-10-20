@@ -6,6 +6,8 @@ permalink: /kb/105/Q105293/
 
 ## Q105293: Calendar: Starting Time Not Displayed in Upper-Left Corner
 
+{% raw %}
+
 	Article: Q105293
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/105/Q105293/
 	
 	=============================================================================
 	
+
+{% endraw %}

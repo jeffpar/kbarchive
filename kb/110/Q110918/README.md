@@ -6,6 +6,8 @@ permalink: /kb/110/Q110918/
 
 ## Q110918: BUG: Graphical Help Redraws Multiple Times
 
+{% raw %}
+
 	Article: Q110918
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -53,3 +55,5 @@ permalink: /kb/110/Q110918/
 	
 	=============================================================================
 	
+
+{% endraw %}

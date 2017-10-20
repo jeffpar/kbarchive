@@ -6,6 +6,8 @@ permalink: /kb/173/Q173459/
 
 ## Q173459: XADM: Search Permission Role not Displayed Correctly in Admin
 
+{% raw %}
+
 	Article: Q173459
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -53,3 +55,5 @@ permalink: /kb/173/Q173459/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132892/
 
 ## Q132892: INFO: SourceSafe Might Modify Some Files
 
+{% raw %}
+
 	Article: Q132892
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/132/Q132892/
 	
 	=============================================================================
 	
+
+{% endraw %}

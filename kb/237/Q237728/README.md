@@ -6,6 +6,8 @@ permalink: /kb/237/Q237728/
 
 ## Q237728: NFL Fever 2000: Cannot Follow Execution of the Flee Flicker Play
 
+{% raw %}
+
 	Article: Q237728
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/237/Q237728/
 	
 	=============================================================================
 	
+
+{% endraw %}

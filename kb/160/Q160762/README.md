@@ -6,6 +6,8 @@ permalink: /kb/160/Q160762/
 
 ## Q160762: PRB: ODBC Call Failed or Error 3146
 
+{% raw %}
+
 	Article: Q160762
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.x, 2.5,  3.0; winnt:4.2x,6.0,6.5
@@ -99,3 +101,5 @@ permalink: /kb/160/Q160762/
 	
 	=============================================================================
 	
+
+{% endraw %}

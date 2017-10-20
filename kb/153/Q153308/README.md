@@ -6,6 +6,8 @@ permalink: /kb/153/Q153308/
 
 ## Q153308: HOWTO: Easily Set Up the Tab Sequence of a Form
 
+{% raw %}
+
 	Article: Q153308
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/153/Q153308/
 	
 	=============================================================================
 	
+
+{% endraw %}

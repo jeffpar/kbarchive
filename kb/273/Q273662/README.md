@@ -6,6 +6,8 @@ permalink: /kb/273/Q273662/
 
 ## Q273662: Incorrect Short File Names Generated in Japanese Windows NT 4.0
 
+{% raw %}
+
 	Article: Q273662
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -85,3 +87,5 @@ permalink: /kb/273/Q273662/
 	
 	=============================================================================
 	
+
+{% endraw %}

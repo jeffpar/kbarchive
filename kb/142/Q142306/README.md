@@ -6,6 +6,8 @@ permalink: /kb/142/Q142306/
 
 ## Q142306: Insufficient memory error executing System icon in Control Panel
 
+{% raw %}
+
 	Article: Q142306
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -54,3 +56,5 @@ permalink: /kb/142/Q142306/
 	
 	=============================================================================
 	
+
+{% endraw %}

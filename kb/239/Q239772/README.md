@@ -6,6 +6,8 @@ permalink: /kb/239/Q239772/
 
 ## Q239772: NFL Fever 2000: Unable to Pause a Game or a Practice
 
+{% raw %}
+
 	Article: Q239772
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/239/Q239772/
 	
 	=============================================================================
 	
+
+{% endraw %}

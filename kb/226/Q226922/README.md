@@ -6,6 +6,8 @@ permalink: /kb/226/Q226922/
 
 ## Q226922: SMS: Client Packages Are Not Re-advertised
 
+{% raw %}
+
 	Article: Q226922
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -63,3 +65,5 @@ permalink: /kb/226/Q226922/
 	
 	=============================================================================
 	
+
+{% endraw %}

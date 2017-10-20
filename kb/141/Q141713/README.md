@@ -6,6 +6,8 @@ permalink: /kb/141/Q141713/
 
 ## Q141713: Mkecr5xx.sys Reports Wrong I/O in Registry for SoundBlaster 16
 
+{% raw %}
+
 	Article: Q141713
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -58,3 +60,5 @@ permalink: /kb/141/Q141713/
 	
 	=============================================================================
 	
+
+{% endraw %}

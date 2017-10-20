@@ -6,6 +6,8 @@ permalink: /kb/323/Q323310/
 
 ## Q323310: A &quot;Stop 0x1e&quot; Error Occurs in NetBT in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q323310
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -88,3 +90,5 @@ permalink: /kb/323/Q323310/
 	
 	=============================================================================
 	
+
+{% endraw %}

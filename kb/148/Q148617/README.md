@@ -6,6 +6,8 @@ permalink: /kb/148/Q148617/
 
 ## Q148617: HOWTO: Speed Up Load Time of OLE Controls
 
+{% raw %}
+
 	Article: Q148617
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/148/Q148617/
 	
 	=============================================================================
 	
+
+{% endraw %}

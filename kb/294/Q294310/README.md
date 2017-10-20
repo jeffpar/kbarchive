@@ -6,6 +6,8 @@ permalink: /kb/294/Q294310/
 
 ## Q294310: Programming Collaborative Web Applications With Exchange 2000 Se
 
+{% raw %}
+
 	Article: Q294310
 	Product(s): Microsoft Press
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/294/Q294310/
 	
 	=============================================================================
 	
+
+{% endraw %}

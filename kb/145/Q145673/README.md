@@ -6,6 +6,8 @@ permalink: /kb/145/Q145673/
 
 ## Q145673: How Much Does Pregnancy and Child Care Cost?
 
+{% raw %}
+
 	Article: Q145673
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -44,3 +46,5 @@ permalink: /kb/145/Q145673/
 	
 	=============================================================================
 	
+
+{% endraw %}

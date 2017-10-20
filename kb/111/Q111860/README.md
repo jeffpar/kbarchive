@@ -6,6 +6,8 @@ permalink: /kb/111/Q111860/
 
 ## Q111860: Gen: Message Gets Carriage Return Entered After 78 Characters
 
+{% raw %}
+
 	Article: Q111860
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.x,3.x; MS-DOS:2.x,3.0,3.x
@@ -54,3 +56,5 @@ permalink: /kb/111/Q111860/
 	
 	=============================================================================
 	
+
+{% endraw %}

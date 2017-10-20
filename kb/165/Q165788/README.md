@@ -6,6 +6,8 @@ permalink: /kb/165/Q165788/
 
 ## Q165788: Cannot Confirm Encryption on Windows Clients
 
+{% raw %}
+
 	Article: Q165788
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/165/Q165788/
 	
 	=============================================================================
 	
+
+{% endraw %}

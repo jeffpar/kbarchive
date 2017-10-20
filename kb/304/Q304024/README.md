@@ -6,6 +6,8 @@ permalink: /kb/304/Q304024/
 
 ## Q304024: XADM: Information Store Stops with Malformed Content-Type
 
+{% raw %}
+
 	Article: Q304024
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -92,3 +94,5 @@ permalink: /kb/304/Q304024/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150548/
 
 ## Q150548: Complete Gardening Err Msg: Out of Memory
 
+{% raw %}
+
 	Article: Q150548
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/150/Q150548/
 	
 	=============================================================================
 	
+
+{% endraw %}

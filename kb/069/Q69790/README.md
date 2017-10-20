@@ -6,6 +6,8 @@ permalink: /kb/069/Q69790/
 
 ## Q69790: ASD: EICAS Section Not Controllable with Mouse
 
+{% raw %}
+
 	Article: Q69790
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/069/Q69790/
 	
 	=============================================================================
 	
+
+{% endraw %}

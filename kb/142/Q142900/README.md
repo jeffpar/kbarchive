@@ -6,6 +6,8 @@ permalink: /kb/142/Q142900/
 
 ## Q142900: How to Print a Document Unattended with System Agent
 
+{% raw %}
+
 	Article: Q142900
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/142/Q142900/
 	
 	=============================================================================
 	
+
+{% endraw %}

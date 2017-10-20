@@ -6,6 +6,8 @@ permalink: /kb/130/Q130277/
 
 ## Q130277: PRB: WPARENT() Gives Error in 3.0 Different from Error in 2.x
 
+{% raw %}
+
 	Article: Q130277
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -68,3 +70,5 @@ permalink: /kb/130/Q130277/
 	
 	=============================================================================
 	
+
+{% endraw %}

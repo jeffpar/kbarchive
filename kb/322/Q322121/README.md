@@ -6,6 +6,8 @@ permalink: /kb/322/Q322121/
 
 ## Q322121: Windows May Drop UDP Packets During a RAS Connection
 
+{% raw %}
+
 	Article: Q322121
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -83,3 +85,5 @@ permalink: /kb/322/Q322121/
 	
 	=============================================================================
 	
+
+{% endraw %}

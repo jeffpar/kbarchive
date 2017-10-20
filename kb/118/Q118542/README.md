@@ -6,6 +6,8 @@ permalink: /kb/118/Q118542/
 
 ## Q118542: Dangerous Creatures: Choosing Back Button Skips a Screen
 
+{% raw %}
+
 	Article: Q118542
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/118/Q118542/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/230/Q230373/
 
 ## Q230373: XIMS: IMAP4 Login to MCIS Fails; Can't Find Mail Account
 
+{% raw %}
+
 	Article: Q230373
 	Product(s): Microsoft Exchange
 	Version(s): winnt:2.0
@@ -86,3 +88,5 @@ permalink: /kb/230/Q230373/
 	
 	=============================================================================
 	
+
+{% endraw %}

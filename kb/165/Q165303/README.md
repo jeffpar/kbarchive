@@ -6,6 +6,8 @@ permalink: /kb/165/Q165303/
 
 ## Q165303: WD97: Unable to Apply Bullets, Numbers (Tracked Changes Enabled)
 
+{% raw %}
+
 	Article: Q165303
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -92,3 +94,5 @@ permalink: /kb/165/Q165303/
 	
 	=============================================================================
 	
+
+{% endraw %}

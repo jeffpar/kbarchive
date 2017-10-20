@@ -6,6 +6,8 @@ permalink: /kb/247/Q247148/
 
 ## Q247148: XADM: Slow Response When Searching on Custom Attributes
 
+{% raw %}
+
 	Article: Q247148
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -121,3 +123,5 @@ permalink: /kb/247/Q247148/
 	
 	=============================================================================
 	
+
+{% endraw %}

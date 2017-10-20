@@ -6,6 +6,8 @@ permalink: /kb/164/Q164927/
 
 ## Q164927: XCLN: Not All Rich Edit Fields Support File Attachments
 
+{% raw %}
+
 	Article: Q164927
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; Win95:4.0,5.0
@@ -65,3 +67,5 @@ permalink: /kb/164/Q164927/
 	
 	=============================================================================
 	
+
+{% endraw %}

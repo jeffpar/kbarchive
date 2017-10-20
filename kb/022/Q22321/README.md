@@ -6,6 +6,8 @@ permalink: /kb/022/Q22321/
 
 ## Q22321: INFO: Common Programming Errors in the C Language
 
+{% raw %}
+
 	Article: Q22321
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -90,3 +92,5 @@ permalink: /kb/022/Q22321/
 	
 	=============================================================================
 	
+
+{% endraw %}

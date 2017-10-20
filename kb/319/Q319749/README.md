@@ -6,6 +6,8 @@ permalink: /kb/319/Q319749/
 
 ## Q319749: XCON: Error 1824 in Exchange Internet Mail Service
 
+{% raw %}
+
 	Article: Q319749
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -115,3 +117,5 @@ permalink: /kb/319/Q319749/
 	
 	=============================================================================
 	
+
+{% endraw %}

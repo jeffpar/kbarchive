@@ -6,6 +6,8 @@ permalink: /kb/139/Q139649/
 
 ## Q139649: Windows NT Service Can't Connect to Network Printer on 3.51
 
+{% raw %}
+
 	Article: Q139649
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -73,3 +75,5 @@ permalink: /kb/139/Q139649/
 	
 	=============================================================================
 	
+
+{% endraw %}

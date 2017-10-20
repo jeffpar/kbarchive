@@ -6,6 +6,8 @@ permalink: /kb/123/Q123982/
 
 ## Q123982: Access Violation in SFMPRINT.EXE with IBM or Lexmark Printer
 
+{% raw %}
+
 	Article: Q123982
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 1.51
@@ -84,3 +86,5 @@ permalink: /kb/123/Q123982/
 	
 	=============================================================================
 	
+
+{% endraw %}

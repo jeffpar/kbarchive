@@ -6,6 +6,8 @@ permalink: /kb/184/Q184739/
 
 ## Q184739: INFO: Where to Obtain the Script Control
 
+{% raw %}
+
 	Article: Q184739
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -112,3 +114,5 @@ permalink: /kb/184/Q184739/
 	
 	=============================================================================
 	
+
+{% endraw %}

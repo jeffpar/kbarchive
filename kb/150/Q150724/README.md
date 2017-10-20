@@ -6,6 +6,8 @@ permalink: /kb/150/Q150724/
 
 ## Q150724: Configuration Settings for Visual FoxPro for Macintosh
 
+{% raw %}
+
 	Article: Q150724
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -85,3 +87,5 @@ permalink: /kb/150/Q150724/
 	
 	=============================================================================
 	
+
+{% endraw %}

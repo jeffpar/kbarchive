@@ -6,6 +6,8 @@ permalink: /kb/197/Q197300/
 
 ## Q197300: WD97: Save As Word 6.0/95 Loses Attached Template
 
+{% raw %}
+
 	Article: Q197300
 	Product(s): Word 97 for Windows
 	Version(s): Service Release 1 (SR-1)
@@ -78,3 +80,5 @@ permalink: /kb/197/Q197300/
 	
 	=============================================================================
 	
+
+{% endraw %}

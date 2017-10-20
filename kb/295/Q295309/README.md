@@ -6,6 +6,8 @@ permalink: /kb/295/Q295309/
 
 ## Q295309: SMS: Data Loader Hangs While Trying to Process MIF Files
 
+{% raw %}
+
 	Article: Q295309
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -74,3 +76,5 @@ permalink: /kb/295/Q295309/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140319/
 
 ## Q140319: FIX: Can't Save 'Assume Project Based on Working Dir' Setting
 
+{% raw %}
+
 	Article: Q140319
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,5.0
@@ -82,3 +84,5 @@ permalink: /kb/140/Q140319/
 	
 	=============================================================================
 	
+
+{% endraw %}

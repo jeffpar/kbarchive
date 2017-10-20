@@ -6,6 +6,8 @@ permalink: /kb/190/Q190260/
 
 ## Q190260: BUG: View Window Responds Incorrectly to Double-Click
 
+{% raw %}
+
 	Article: Q190260
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a,6.0
@@ -80,3 +82,5 @@ permalink: /kb/190/Q190260/
 	
 	=============================================================================
 	
+
+{% endraw %}

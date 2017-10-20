@@ -6,6 +6,8 @@ permalink: /kb/110/Q110250/
 
 ## Q110250: PRB: Compressed Bitmap Display Is Corrupt
 
+{% raw %}
+
 	Article: Q110250
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -56,3 +58,5 @@ permalink: /kb/110/Q110250/
 	
 	=============================================================================
 	
+
+{% endraw %}

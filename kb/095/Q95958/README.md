@@ -6,6 +6,8 @@ permalink: /kb/095/Q95958/
 
 ## Q95958: DoubleSpace: Serious Disk Error Occurred Writing to Drive &lt;x&gt;
 
+{% raw %}
+
 	Article: Q95958
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -61,3 +63,5 @@ permalink: /kb/095/Q95958/
 	
 	=============================================================================
 	
+
+{% endraw %}

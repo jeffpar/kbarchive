@@ -6,6 +6,8 @@ permalink: /kb/135/Q135265/
 
 ## Q135265: How to Use a Combo Box to Filter the Contents of a Grid
 
+{% raw %}
+
 	Article: Q135265
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0
@@ -71,3 +73,5 @@ permalink: /kb/135/Q135265/
 	
 	=============================================================================
 	
+
+{% endraw %}

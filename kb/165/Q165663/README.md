@@ -6,6 +6,8 @@ permalink: /kb/165/Q165663/
 
 ## Q165663: XWEB: Active Server Components Failed to Install Properly
 
+{% raw %}
+
 	Article: Q165663
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -54,3 +56,5 @@ permalink: /kb/165/Q165663/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123391/
 
 ## Q123391: PRB: Random Symbols on Dialog Box in Japanese Windows
 
+{% raw %}
+
 	Article: Q123391
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -54,3 +56,5 @@ permalink: /kb/123/Q123391/
 	
 	=============================================================================
 	
+
+{% endraw %}

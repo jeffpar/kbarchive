@@ -6,6 +6,8 @@ permalink: /kb/142/Q142670/
 
 ## Q142670: WD97: ConvertNumberToText Method Fails
 
+{% raw %}
+
 	Article: Q142670
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/142/Q142670/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119639/
 
 ## Q119639: PC WRmt: Can't Start Mail Remote Automatically w/ AT&amp;T Driver
 
+{% raw %}
+
 	Article: Q119639
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -43,3 +45,5 @@ permalink: /kb/119/Q119639/
 	
 	=============================================================================
 	
+
+{% endraw %}

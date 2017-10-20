@@ -6,6 +6,8 @@ permalink: /kb/135/Q135034/
 
 ## Q135034: SMTP: Postmaster Account Important to Track Mail Errors
 
+{% raw %}
+
 	Article: Q135034
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -49,3 +51,5 @@ permalink: /kb/135/Q135034/
 	
 	=============================================================================
 	
+
+{% endraw %}

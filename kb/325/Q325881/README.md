@@ -6,6 +6,8 @@ permalink: /kb/325/Q325881/
 
 ## Q325881: Asheron's Call: How to Purchase a House in Dark Majesty
 
+{% raw %}
+
 	Article: Q325881
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -79,3 +81,5 @@ permalink: /kb/325/Q325881/
 	
 	=============================================================================
 	
+
+{% endraw %}

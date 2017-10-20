@@ -6,6 +6,8 @@ permalink: /kb/165/Q165912/
 
 ## Q165912: 3270 Applet Resets Session and Returns to Host Signon Screen
 
+{% raw %}
+
 	Article: Q165912
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -72,3 +74,5 @@ permalink: /kb/165/Q165912/
 	
 	=============================================================================
 	
+
+{% endraw %}

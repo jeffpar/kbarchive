@@ -6,6 +6,8 @@ permalink: /kb/081/Q81626/
 
 ## Q81626: Complete Removal of a Windows Printer Driver
 
+{% raw %}
+
 	Article: Q81626
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -249,3 +251,5 @@ permalink: /kb/081/Q81626/
 	
 	=============================================================================
 	
+
+{% endraw %}

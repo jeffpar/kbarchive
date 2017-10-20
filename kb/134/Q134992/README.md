@@ -6,6 +6,8 @@ permalink: /kb/134/Q134992/
 
 ## Q134992: MODE Command: &quot;Printer Output Is Not Being Rerouted&quot;
 
+{% raw %}
+
 	Article: Q134992
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/134/Q134992/
 	
 	=============================================================================
 	
+
+{% endraw %}

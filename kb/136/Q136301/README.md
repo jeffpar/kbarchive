@@ -6,6 +6,8 @@ permalink: /kb/136/Q136301/
 
 ## Q136301: FindFile Utility from Office 4.3 Produces Inaccurate Results
 
+{% raw %}
+
 	Article: Q136301
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/136/Q136301/
 	
 	=============================================================================
 	
+
+{% endraw %}

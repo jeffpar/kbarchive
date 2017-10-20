@@ -6,6 +6,8 @@ permalink: /kb/137/Q137402/
 
 ## Q137402: APM Features May Be Unavailable in Windows 95
 
+{% raw %}
+
 	Article: Q137402
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -114,3 +116,5 @@ permalink: /kb/137/Q137402/
 	
 	=============================================================================
 	
+
+{% endraw %}

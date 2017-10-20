@@ -6,6 +6,8 @@ permalink: /kb/048/Q48686/
 
 ## Q48686: How to Find the Total Stack Size from within a Program
 
+{% raw %}
+
 	Article: Q48686
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -58,3 +60,5 @@ permalink: /kb/048/Q48686/
 	    printf("Total stack size is %u bytes (%x hex bytes)\n",
 	        stksize, stksize);
 	}
+
+{% endraw %}

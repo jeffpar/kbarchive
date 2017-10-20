@@ -6,6 +6,8 @@ permalink: /kb/237/Q237755/
 
 ## Q237755: INF Error Message After Internet Explorer 4.01 SP2 Installation
 
+{% raw %}
+
 	Article: Q237755
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -72,3 +74,5 @@ permalink: /kb/237/Q237755/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137134/
 
 ## Q137134: Corrupt Fonts or Controls in Dialog Boxes
 
+{% raw %}
+
 	Article: Q137134
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/137/Q137134/
 	
 	=============================================================================
 	
+
+{% endraw %}

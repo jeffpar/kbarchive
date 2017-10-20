@@ -6,6 +6,8 @@ permalink: /kb/132/Q132740/
 
 ## Q132740: Incorrect Default Renewal Interval for WINS Server
 
+{% raw %}
+
 	Article: Q132740
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -36,3 +38,5 @@ permalink: /kb/132/Q132740/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193675/
 
 ## Q193675: XWEB: Bad Error Handling in CfolderRender::put_DataSource
 
+{% raw %}
+
 	Article: Q193675
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -120,3 +122,5 @@ permalink: /kb/193/Q193675/
 	
 	=============================================================================
 	
+
+{% endraw %}

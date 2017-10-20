@@ -6,6 +6,8 @@ permalink: /kb/186/Q186756/
 
 ## Q186756: XCON: MTA Associations Fail On MSCS Installation
 
+{% raw %}
+
 	Article: Q186756
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -63,3 +65,5 @@ permalink: /kb/186/Q186756/
 	
 	=============================================================================
 	
+
+{% endraw %}

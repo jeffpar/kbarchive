@@ -6,6 +6,8 @@ permalink: /kb/067/Q67379/
 
 ## Q67379: How to Use CALL INTERRUPT to Detect If SHARE.EXE Is Loaded
 
+{% raw %}
+
 	Article: Q67379
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -54,3 +56,5 @@ permalink: /kb/067/Q67379/
 	   PRINT "SHARE.EXE not installed, O.K. to install"
 	ENDIF
 	END
+
+{% endraw %}

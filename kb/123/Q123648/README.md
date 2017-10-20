@@ -6,6 +6,8 @@ permalink: /kb/123/Q123648/
 
 ## Q123648: Can't Print to HP JetDirect Printers Over DLC w/Intel Flash32
 
+{% raw %}
+
 	Article: Q123648
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -46,3 +48,5 @@ permalink: /kb/123/Q123648/
 	
 	=============================================================================
 	
+
+{% endraw %}

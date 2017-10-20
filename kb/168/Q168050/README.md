@@ -6,6 +6,8 @@ permalink: /kb/168/Q168050/
 
 ## Q168050: Access Violation in Explorer when Viewing &#42;.ht file Properties
 
+{% raw %}
+
 	Article: Q168050
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/168/Q168050/
 	
 	=============================================================================
 	
+
+{% endraw %}

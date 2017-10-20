@@ -6,6 +6,8 @@ permalink: /kb/136/Q136174/
 
 ## Q136174: PPT7: CABfile Contents, Disks 1-6
 
+{% raw %}
+
 	Article: Q136174
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -371,3 +373,5 @@ permalink: /kb/136/Q136174/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159200/
 
 ## Q159200: Setpass.exe May Not Change a NetWare Password
 
+{% raw %}
+
 	Article: Q159200
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:3.51 4.0
@@ -68,3 +70,5 @@ permalink: /kb/159/Q159200/
 	
 	=============================================================================
 	
+
+{% endraw %}

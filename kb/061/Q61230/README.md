@@ -6,6 +6,8 @@ permalink: /kb/061/Q61230/
 
 ## Q61230: C 6.00 README: LINK: The /NOG
 
+{% raw %}
+
 	Article: Q61230
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -25,3 +27,5 @@ permalink: /kb/061/Q61230/
 	and earlier) and early versions of Microsoft language compilers.
 	
 	Note: This option should be used only with assembly-language programs.
+
+{% endraw %}

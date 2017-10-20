@@ -6,6 +6,8 @@ permalink: /kb/246/Q246009/
 
 ## Q246009: Windows NT 4.0 Service Pack 6a Available
 
+{% raw %}
+
 	Article: Q246009
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP6a
@@ -134,3 +136,5 @@ permalink: /kb/246/Q246009/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/307/Q307778/
 
 ## Q307778: SMS: Site Component Manager May Not Be Started After Upgrade
 
+{% raw %}
+
 	Article: Q307778
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -70,3 +72,5 @@ permalink: /kb/307/Q307778/
 	
 	=============================================================================
 	
+
+{% endraw %}

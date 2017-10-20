@@ -6,6 +6,8 @@ permalink: /kb/248/Q248654/
 
 ## Q248654: List of Articles About Windows NT Load Balancing Service
 
+{% raw %}
+
 	Article: Q248654
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -97,3 +99,5 @@ permalink: /kb/248/Q248654/
 	
 	=============================================================================
 	
+
+{% endraw %}

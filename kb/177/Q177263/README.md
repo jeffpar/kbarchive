@@ -6,6 +6,8 @@ permalink: /kb/177/Q177263/
 
 ## Q177263: FS98: Contents of the Intel Indeo4 Readme32.txt File
 
+{% raw %}
+
 	Article: Q177263
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -279,3 +281,5 @@ permalink: /kb/177/Q177263/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/278/Q278427/
 
 ## Q278427: XCLN: Inbox Rule Causes Mailbox to Exceed the Send Limit
 
+{% raw %}
+
 	Article: Q278427
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -107,3 +109,5 @@ permalink: /kb/278/Q278427/
 	
 	=============================================================================
 	
+
+{% endraw %}

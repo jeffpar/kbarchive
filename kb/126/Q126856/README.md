@@ -6,6 +6,8 @@ permalink: /kb/126/Q126856/
 
 ## Q126856: PC Win: Windows Client Loses Access to MMF on LMX Server
 
+{% raw %}
+
 	Article: Q126856
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2,3.2a
@@ -51,3 +53,5 @@ permalink: /kb/126/Q126856/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164121/
 
 ## Q164121: Corel Fonts Unavailable Outside of English Locale
 
+{% raw %}
+
 	Article: Q164121
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/164/Q164121/
 	
 	=============================================================================
 	
+
+{% endraw %}

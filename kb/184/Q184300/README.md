@@ -6,6 +6,8 @@ permalink: /kb/184/Q184300/
 
 ## Q184300: How to Run a Web Site as the User Who Created the Content
 
+{% raw %}
+
 	Article: Q184300
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/184/Q184300/
 	
 	=============================================================================
 	
+
+{% endraw %}

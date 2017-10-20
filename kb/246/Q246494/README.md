@@ -6,6 +6,8 @@ permalink: /kb/246/Q246494/
 
 ## Q246494: Browsing Fails on NT Network with WFW 3.11, Windows 95 Clients
 
+{% raw %}
+
 	Article: Q246494
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:3.11; winnt:3.51,4.0
@@ -149,3 +151,5 @@ permalink: /kb/246/Q246494/
 	
 	=============================================================================
 	
+
+{% endraw %}

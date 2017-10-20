@@ -6,6 +6,8 @@ permalink: /kb/257/Q257460/
 
 ## Q257460: INFO: IPPROTO_IP Level Socket Options - Header and Library Files
 
+{% raw %}
+
 	Article: Q257460
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:95,98,98 Second Edition; winnt:3.51,4.0; :
@@ -200,3 +202,5 @@ permalink: /kb/257/Q257460/
 	
 	=============================================================================
 	
+
+{% endraw %}

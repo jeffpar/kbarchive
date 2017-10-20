@@ -6,6 +6,8 @@ permalink: /kb/280/Q280123/
 
 ## Q280123: Internal NetLib Error When OLE DB Data Source Is Instantiated
 
+{% raw %}
+
 	Article: Q280123
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/280/Q280123/
 	
 	=============================================================================
 	
+
+{% endraw %}

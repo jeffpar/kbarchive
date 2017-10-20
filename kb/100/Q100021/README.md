@@ -6,6 +6,8 @@ permalink: /kb/100/Q100021/
 
 ## Q100021: Unable to Access Compressed Drives Using DBLBOOT.BAT Disk
 
+{% raw %}
+
 	Article: Q100021
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -118,3 +120,5 @@ permalink: /kb/100/Q100021/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189616/
 
 ## Q189616: BUG: DateTimePicker Overrides ALT+F4 Key Combination
 
+{% raw %}
+
 	Article: Q189616
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -89,3 +91,5 @@ permalink: /kb/189/Q189616/
 	
 	=============================================================================
 	
+
+{% endraw %}

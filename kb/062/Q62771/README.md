@@ -6,6 +6,8 @@ permalink: /kb/062/Q62771/
 
 ## Q62771: Record Number for PUT/GET Statement Can Be a Long Integer
 
+{% raw %}
+
 	Article: Q62771
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -51,3 +53,5 @@ permalink: /kb/062/Q62771/
 	Using recordnumber% would suggest that the largest possible record
 	number to be 32,767. Since the largest possible record number is
 	2,147,483,647, the record number should be described as recordnumber&.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146070/
 
 ## Q146070: Eastern Europe System Locale Does Not Change Screen Fonts
 
+{% raw %}
+
 	Article: Q146070
 	Product(s): Microsoft Windows NT
 	Version(s): 4.00
@@ -99,3 +101,5 @@ permalink: /kb/146/Q146070/
 	
 	=============================================================================
 	
+
+{% endraw %}

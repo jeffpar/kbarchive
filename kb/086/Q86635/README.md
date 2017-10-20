@@ -6,6 +6,8 @@ permalink: /kb/086/Q86635/
 
 ## Q86635: Mouse Driver 8.2 Install Doesn't Update Setup Description
 
+{% raw %}
+
 	Article: Q86635
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/086/Q86635/
 	
 	=============================================================================
 	
+
+{% endraw %}

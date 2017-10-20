@@ -6,6 +6,8 @@ permalink: /kb/156/Q156937/
 
 ## Q156937: PRB: Report Wizard Shows Surplus Data Sources for Query
 
+{% raw %}
+
 	Article: Q156937
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -98,3 +100,5 @@ permalink: /kb/156/Q156937/
 	
 	=============================================================================
 	
+
+{% endraw %}

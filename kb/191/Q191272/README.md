@@ -6,6 +6,8 @@ permalink: /kb/191/Q191272/
 
 ## Q191272: HOWTO: A Brief Exploration of the Project Object Model
 
+{% raw %}
+
 	Article: Q191272
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -97,3 +99,5 @@ permalink: /kb/191/Q191272/
 	
 	=============================================================================
 	
+
+{% endraw %}

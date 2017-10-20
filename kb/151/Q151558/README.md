@@ -6,6 +6,8 @@ permalink: /kb/151/Q151558/
 
 ## Q151558: FP: FrontPage Files Remain After Add/Remove or Uninstall
 
+{% raw %}
+
 	Article: Q151558
 	Product(s): Word Front Page
 	Version(s): windows:1.1,97
@@ -97,3 +99,5 @@ permalink: /kb/151/Q151558/
 	
 	=============================================================================
 	
+
+{% endraw %}

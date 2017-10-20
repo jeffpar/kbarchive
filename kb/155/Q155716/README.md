@@ -6,6 +6,8 @@ permalink: /kb/155/Q155716/
 
 ## Q155716: PRB: SQL Single-Stepping Does Not Display Errors as They Occur
 
+{% raw %}
+
 	Article: Q155716
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.2,5.0,6.0
@@ -62,3 +64,5 @@ permalink: /kb/155/Q155716/
 	
 	=============================================================================
 	
+
+{% endraw %}

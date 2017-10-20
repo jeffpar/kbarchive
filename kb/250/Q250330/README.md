@@ -6,6 +6,8 @@ permalink: /kb/250/Q250330/
 
 ## Q250330: XADM: Error 80004005 Installing Mailbox Manager After Restore
 
+{% raw %}
+
 	Article: Q250330
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -82,3 +84,5 @@ permalink: /kb/250/Q250330/
 	
 	=============================================================================
 	
+
+{% endraw %}

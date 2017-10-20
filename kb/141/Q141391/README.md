@@ -6,6 +6,8 @@ permalink: /kb/141/Q141391/
 
 ## Q141391: FIX: GP Fault If Exit Windows 95 w/ Insert Object Dialog Open
 
+{% raw %}
+
 	Article: Q141391
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/141/Q141391/
 	
 	=============================================================================
 	
+
+{% endraw %}

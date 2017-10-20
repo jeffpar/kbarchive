@@ -6,6 +6,8 @@ permalink: /kb/059/Q59584/
 
 ## Q59584: OS/2 Days Seminar: Misc. Communications Server Questions
 
+{% raw %}
+
 	Article: Q59584
 	Product(s): Microsoft LAN Manager
 	Version(s): 1.0
@@ -371,3 +373,5 @@ permalink: /kb/059/Q59584/
 	
 	=============================================================================
 	
+
+{% endraw %}

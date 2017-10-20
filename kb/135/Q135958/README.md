@@ -6,6 +6,8 @@ permalink: /kb/135/Q135958/
 
 ## Q135958: Second Instance of ScanDisk Returns Incorrect Exit Code
 
+{% raw %}
+
 	Article: Q135958
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/135/Q135958/
 	
 	=============================================================================
 	
+
+{% endraw %}

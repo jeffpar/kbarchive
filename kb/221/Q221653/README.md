@@ -6,6 +6,8 @@ permalink: /kb/221/Q221653/
 
 ## Q221653: FIX: APPEND FROM TYPE CSV Does Not Include Extension by Default
 
+{% raw %}
+
 	Article: Q221653
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -79,3 +81,5 @@ permalink: /kb/221/Q221653/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175904/
 
 ## Q175904: BUG: Multiple threads Cause Connection Busy Error in the Driver
 
+{% raw %}
+
 	Article: Q175904
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.5,3.0; winnt:6.5
@@ -56,3 +58,5 @@ permalink: /kb/175/Q175904/
 	
 	=============================================================================
 	
+
+{% endraw %}

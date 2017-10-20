@@ -6,6 +6,8 @@ permalink: /kb/082/Q82202/
 
 ## Q82202: The Right ALT Key and the US-International Keyboard Layout
 
+{% raw %}
+
 	Article: Q82202
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -71,3 +73,5 @@ permalink: /kb/082/Q82202/
 	
 	=============================================================================
 	
+
+{% endraw %}

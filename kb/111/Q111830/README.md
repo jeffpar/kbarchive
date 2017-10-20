@@ -6,6 +6,8 @@ permalink: /kb/111/Q111830/
 
 ## Q111830: Problems Sending Faxes to European Numbers
 
+{% raw %}
+
 	Article: Q111830
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -53,3 +55,5 @@ permalink: /kb/111/Q111830/
 	
 	=============================================================================
 	
+
+{% endraw %}

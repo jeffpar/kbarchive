@@ -6,6 +6,8 @@ permalink: /kb/151/Q151399/
 
 ## Q151399: Using DHCP with FTP Software's OnNet for Windows
 
+{% raw %}
+
 	Article: Q151399
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.1,3.11; winnt:3.5,3.51
@@ -60,3 +62,5 @@ permalink: /kb/151/Q151399/
 	
 	=============================================================================
 	
+
+{% endraw %}

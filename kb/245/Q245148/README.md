@@ -6,6 +6,8 @@ permalink: /kb/245/Q245148/
 
 ## Q245148: After Installing SP6 Windows NT Appears to Hang When You Log Off
 
+{% raw %}
+
 	Article: Q245148
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6
@@ -109,3 +111,5 @@ permalink: /kb/245/Q245148/
 	
 	=============================================================================
 	
+
+{% endraw %}

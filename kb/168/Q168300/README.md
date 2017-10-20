@@ -6,6 +6,8 @@ permalink: /kb/168/Q168300/
 
 ## Q168300: XCLN: Err Msg: Cannot Open Attachment - Format is not Consistent
 
+{% raw %}
+
 	Article: Q168300
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -63,3 +65,5 @@ permalink: /kb/168/Q168300/
 	
 	=============================================================================
 	
+
+{% endraw %}

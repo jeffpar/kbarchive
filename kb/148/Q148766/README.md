@@ -6,6 +6,8 @@ permalink: /kb/148/Q148766/
 
 ## Q148766: Return of Arcade Disk Contents (3.5 inch/1.44 MB DMF)
 
+{% raw %}
+
 	Article: Q148766
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -277,3 +279,5 @@ permalink: /kb/148/Q148766/
 	
 	=============================================================================
 	
+
+{% endraw %}

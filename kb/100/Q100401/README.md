@@ -6,6 +6,8 @@ permalink: /kb/100/Q100401/
 
 ## Q100401: Musical Instruments: Break in Sound if Played after Stopping
 
+{% raw %}
+
 	Article: Q100401
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -50,3 +52,5 @@ permalink: /kb/100/Q100401/
 	
 	=============================================================================
 	
+
+{% endraw %}

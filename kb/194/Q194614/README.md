@@ -6,6 +6,8 @@ permalink: /kb/194/Q194614/
 
 ## Q194614: HOWTO: Avoid Problems Associated with Installing New SDKs
 
+{% raw %}
+
 	Article: Q194614
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:4.0,5.0,6.0
@@ -57,3 +59,5 @@ permalink: /kb/194/Q194614/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/057/Q57926/
 
 ## Q57926: &quot;Subscript out of Range&quot; Long-Integer Array in IF/THEN in 4.50
 
+{% raw %}
+
 	Article: Q57926
 	Product(s): See article
 	Version(s): 4.50
@@ -57,3 +59,5 @@ permalink: /kb/057/Q57926/
 	      a(i&) = -a(i&)
 	
 	   2. a(i&) = -a(i&)
+
+{% endraw %}

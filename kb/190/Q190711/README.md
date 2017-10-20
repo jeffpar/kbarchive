@@ -6,6 +6,8 @@ permalink: /kb/190/Q190711/
 
 ## Q190711: XFOR: DS_E_NO_SUCH_OBJECT Error During DirRep over IMC
 
+{% raw %}
+
 	Article: Q190711
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -132,3 +134,5 @@ permalink: /kb/190/Q190711/
 	
 	=============================================================================
 	
+
+{% endraw %}

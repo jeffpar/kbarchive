@@ -6,6 +6,8 @@ permalink: /kb/027/Q27104/
 
 ## Q27104: DOCERR: LODS Adjusts the SI Register, Not the DI Register
 
+{% raw %}
+
 	Article: Q27104
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a
@@ -37,3 +39,5 @@ permalink: /kb/027/Q27104/
 	
 	=============================================================================
 	
+
+{% endraw %}

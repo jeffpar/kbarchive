@@ -6,6 +6,8 @@ permalink: /kb/163/Q163690/
 
 ## Q163690: XCON: MTA: Content Conversion Error 210 with ISO 6937 Bodypart
 
+{% raw %}
+
 	Article: Q163690
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/163/Q163690/
 	
 	=============================================================================
 	
+
+{% endraw %}

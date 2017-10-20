@@ -6,6 +6,8 @@ permalink: /kb/161/Q161800/
 
 ## Q161800: ADT95: Setup of Custom Application Not Completed Successfully
 
+{% raw %}
+
 	Article: Q161800
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0
@@ -123,3 +125,5 @@ permalink: /kb/161/Q161800/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151274/
 
 ## Q151274: Remote Control GP Faults in IDIS_LM.DLL
 
+{% raw %}
+
 	Article: Q151274
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -42,3 +44,5 @@ permalink: /kb/151/Q151274/
 	
 	=============================================================================
 	
+
+{% endraw %}

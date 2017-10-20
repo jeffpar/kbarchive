@@ -6,6 +6,8 @@ permalink: /kb/170/Q170752/
 
 ## Q170752: PRB: The Internet Transfer Control Causes &quot;Invalid Callee&quot; Error
 
+{% raw %}
+
 	Article: Q170752
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -81,3 +83,5 @@ permalink: /kb/170/Q170752/
 	
 	=============================================================================
 	
+
+{% endraw %}

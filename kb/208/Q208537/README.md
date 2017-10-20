@@ -6,6 +6,8 @@ permalink: /kb/208/Q208537/
 
 ## Q208537: Err Msg: Error in Deskcp16.dll Missing Entry...
 
+{% raw %}
+
 	Article: Q208537
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -71,3 +73,5 @@ permalink: /kb/208/Q208537/
 	
 	=============================================================================
 	
+
+{% endraw %}

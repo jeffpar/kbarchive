@@ -6,6 +6,8 @@ permalink: /kb/142/Q142440/
 
 ## Q142440: Monthly Update Files Integrate Multiple Times
 
+{% raw %}
+
 	Article: Q142440
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -64,3 +66,5 @@ permalink: /kb/142/Q142440/
 	
 	=============================================================================
 	
+
+{% endraw %}

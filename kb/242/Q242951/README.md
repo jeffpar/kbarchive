@@ -6,6 +6,8 @@ permalink: /kb/242/Q242951/
 
 ## Q242951: Software Inventory Does Not Clean Up Orphan Records in Database
 
+{% raw %}
+
 	Article: Q242951
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -72,3 +74,5 @@ permalink: /kb/242/Q242951/
 	
 	=============================================================================
 	
+
+{% endraw %}

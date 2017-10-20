@@ -6,6 +6,8 @@ permalink: /kb/151/Q151398/
 
 ## Q151398: &quot;The handle is invalid&quot; Error Using Server Tools and WFW
 
+{% raw %}
+
 	Article: Q151398
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11; winnt:3.5,3.51
@@ -50,3 +52,5 @@ permalink: /kb/151/Q151398/
 	
 	=============================================================================
 	
+
+{% endraw %}

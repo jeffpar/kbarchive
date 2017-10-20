@@ -6,6 +6,8 @@ permalink: /kb/244/Q244953/
 
 ## Q244953: HOWTO: Implement SourceSafe Integration with FrontPage 2000
 
+{% raw %}
+
 	Article: Q244953
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -48,3 +50,5 @@ permalink: /kb/244/Q244953/
 	
 	=============================================================================
 	
+
+{% endraw %}

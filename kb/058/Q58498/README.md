@@ -6,6 +6,8 @@ permalink: /kb/058/Q58498/
 
 ## Q58498: No Error in QB Using Duplicate Parameter Name in DECLARE
 
+{% raw %}
+
 	Article: Q58498
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -47,3 +49,5 @@ permalink: /kb/058/Q58498/
 	   DECLARE SUB test (a%, a%)   'This line should cause error
 	                         ^ Formal parameters not unique
 	                         ^ Formal parameter specification illegal
+
+{% endraw %}

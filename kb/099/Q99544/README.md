@@ -6,6 +6,8 @@ permalink: /kb/099/Q99544/
 
 ## Q99544: PROPER() (Capitalization) Function for FoxBASE+/Mac
 
+{% raw %}
+
 	Article: Q99544
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -109,3 +111,5 @@ permalink: /kb/099/Q99544/
 	
 	=============================================================================
 	
+
+{% endraw %}

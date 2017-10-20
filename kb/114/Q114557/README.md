@@ -6,6 +6,8 @@ permalink: /kb/114/Q114557/
 
 ## Q114557: Executing Viewer Commands When MCI Finishes Playing
 
+{% raw %}
+
 	Article: Q114557
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/114/Q114557/
 	
 	=============================================================================
 	
+
+{% endraw %}

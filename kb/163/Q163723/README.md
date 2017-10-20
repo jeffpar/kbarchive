@@ -6,6 +6,8 @@ permalink: /kb/163/Q163723/
 
 ## Q163723: KiXtart Error: A Required .dll File, Msvcrt.dll, Not Found
 
+{% raw %}
+
 	Article: Q163723
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT:4.0;Windows:95
@@ -60,3 +62,5 @@ permalink: /kb/163/Q163723/
 	
 	=============================================================================
 	
+
+{% endraw %}

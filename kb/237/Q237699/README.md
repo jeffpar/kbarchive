@@ -6,6 +6,8 @@ permalink: /kb/237/Q237699/
 
 ## Q237699: Error Message: Stop 0x0000000A in ScsiPort.sys on SMP Systems
 
+{% raw %}
+
 	Article: Q237699
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/237/Q237699/
 	
 	=============================================================================
 	
+
+{% endraw %}

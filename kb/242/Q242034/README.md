@@ -6,6 +6,8 @@ permalink: /kb/242/Q242034/
 
 ## Q242034: Error When Printing to Lexmark Optra w/Far East Windows NT SP5
 
+{% raw %}
+
 	Article: Q242034
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP5
@@ -92,3 +94,5 @@ permalink: /kb/242/Q242034/
 	
 	=============================================================================
 	
+
+{% endraw %}

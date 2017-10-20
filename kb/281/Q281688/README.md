@@ -6,6 +6,8 @@ permalink: /kb/281/Q281688/
 
 ## Q281688: Combat Flight Simulator: White Horizontal Flashes
 
+{% raw %}
+
 	Article: Q281688
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -95,3 +97,5 @@ permalink: /kb/281/Q281688/
 	
 	=============================================================================
 	
+
+{% endraw %}

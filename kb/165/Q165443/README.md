@@ -6,6 +6,8 @@ permalink: /kb/165/Q165443/
 
 ## Q165443: NDS Login Script Fails When Checking &quot;If Member Of&quot;
 
+{% raw %}
+
 	Article: Q165443
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/165/Q165443/
 	
 	=============================================================================
 	
+
+{% endraw %}

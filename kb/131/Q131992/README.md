@@ -6,6 +6,8 @@ permalink: /kb/131/Q131992/
 
 ## Q131992: HOWTO: How to Create a Property Sheet That Has Scrolling Tabs in
 
+{% raw %}
+
 	Article: Q131992
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,4.0
@@ -90,3 +92,5 @@ permalink: /kb/131/Q131992/
 	
 	=============================================================================
 	
+
+{% endraw %}

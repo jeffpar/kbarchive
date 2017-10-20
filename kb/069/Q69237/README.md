@@ -6,6 +6,8 @@ permalink: /kb/069/Q69237/
 
 ## Q69237: _bheapseg: Return Value Documented Incorrectly
 
+{% raw %}
+
 	Article: Q69237
 	Product(s): See article
 	Version(s): 6.00 6.00a  | 6.00 6.00a
@@ -31,3 +33,5 @@ permalink: /kb/069/Q69237/
 	function in the "Summary" section, except that it specifies NULLSEG
 	instead of _NULLSEG. The paragraph in the "Description" section titled
 	"Return Value" incorrectly documents the return value as -1.
+
+{% endraw %}

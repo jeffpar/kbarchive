@@ -6,6 +6,8 @@ permalink: /kb/039/Q39916/
 
 ## Q39916: Using _dos_findfirst to Get the Time and Date
 
+{% raw %}
+
 	Article: Q39916
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -85,3 +87,5 @@ permalink: /kb/039/Q39916/
 	
 	For more information on function _dos_findfirst, see "Microsoft C 5.1
 	Optimizing Compiler Run-Time Library Reference," starting on Page 194.
+
+{% endraw %}

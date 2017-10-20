@@ -6,6 +6,8 @@ permalink: /kb/142/Q142615/
 
 ## Q142615: Event Log Service Fails to Check Access to Security Log File
 
+{% raw %}
+
 	Article: Q142615
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -101,3 +103,5 @@ permalink: /kb/142/Q142615/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191437/
 
 ## Q191437: SMS: NULL Data Values Reported Differently by INVDOS &amp; INVWIN32
 
+{% raw %}
+
 	Article: Q191437
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -67,3 +69,5 @@ permalink: /kb/191/Q191437/
 	
 	=============================================================================
 	
+
+{% endraw %}

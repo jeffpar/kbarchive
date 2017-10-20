@@ -6,6 +6,8 @@ permalink: /kb/231/Q231378/
 
 ## Q231378: SMS: Pcmwin32 Exits When It Is Unable to Initialize
 
+{% raw %}
+
 	Article: Q231378
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -111,3 +113,5 @@ permalink: /kb/231/Q231378/
 	
 	=============================================================================
 	
+
+{% endraw %}

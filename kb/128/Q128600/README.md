@@ -6,6 +6,8 @@ permalink: /kb/128/Q128600/
 
 ## Q128600: BUG: Redefinition of Enum Data Type Does Not Cause an Error
 
+{% raw %}
+
 	Article: Q128600
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,4.0,4.1,4.2,5.0,6.0
@@ -78,3 +80,5 @@ permalink: /kb/128/Q128600/
 	
 	=============================================================================
 	
+
+{% endraw %}

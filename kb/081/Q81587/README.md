@@ -6,6 +6,8 @@ permalink: /kb/081/Q81587/
 
 ## Q81587: Windows 3.1 Disk Directories (5.25 Inch)
 
+{% raw %}
+
 	Article: Q81587
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -581,3 +583,5 @@ permalink: /kb/081/Q81587/
 	
 	=============================================================================
 	
+
+{% endraw %}

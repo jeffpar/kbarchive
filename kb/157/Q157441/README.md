@@ -6,6 +6,8 @@ permalink: /kb/157/Q157441/
 
 ## Q157441: BIND Negative Response When Open TSO on a Channel Connection
 
+{% raw %}
+
 	Article: Q157441
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
@@ -176,3 +178,5 @@ permalink: /kb/157/Q157441/
 	
 	=============================================================================
 	
+
+{% endraw %}

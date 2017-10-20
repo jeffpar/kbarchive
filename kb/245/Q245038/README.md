@@ -6,6 +6,8 @@ permalink: /kb/245/Q245038/
 
 ## Q245038: Err Msg: Password on This Account Cannot Be Changed at This...
 
+{% raw %}
+
 	Article: Q245038
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/245/Q245038/
 	
 	=============================================================================
 	
+
+{% endraw %}

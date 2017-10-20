@@ -6,6 +6,8 @@ permalink: /kb/156/Q156145/
 
 ## Q156145: Full Court Press: Setup Notes
 
+{% raw %}
+
 	Article: Q156145
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -51,3 +53,5 @@ permalink: /kb/156/Q156145/
 	
 	=============================================================================
 	
+
+{% endraw %}

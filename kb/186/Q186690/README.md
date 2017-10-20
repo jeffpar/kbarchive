@@ -6,6 +6,8 @@ permalink: /kb/186/Q186690/
 
 ## Q186690: XCLN: Bcc Field Does not Appear when Printing a Message
 
+{% raw %}
+
 	Article: Q186690
 	Product(s): Microsoft Exchange
 	Version(s): 3.1,3.11,4.0,5.0,8.0,8.01,8.02
@@ -46,3 +48,5 @@ permalink: /kb/186/Q186690/
 	
 	=============================================================================
 	
+
+{% endraw %}

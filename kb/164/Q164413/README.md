@@ -6,6 +6,8 @@ permalink: /kb/164/Q164413/
 
 ## Q164413: Problems Changing Appearance Scheme
 
+{% raw %}
+
 	Article: Q164413
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -67,3 +69,5 @@ permalink: /kb/164/Q164413/
 	
 	=============================================================================
 	
+
+{% endraw %}

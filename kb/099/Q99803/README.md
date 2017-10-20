@@ -6,6 +6,8 @@ permalink: /kb/099/Q99803/
 
 ## Q99803: MDIWinMN.exe Customizes MDI Window Menu
 
+{% raw %}
+
 	Article: Q99803
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -106,3 +108,5 @@ permalink: /kb/099/Q99803/
 	
 	=============================================================================
 	
+
+{% endraw %}

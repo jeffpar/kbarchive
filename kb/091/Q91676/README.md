@@ -6,6 +6,8 @@ permalink: /kb/091/Q91676/
 
 ## Q91676: TV Link Video Connection Device
 
+{% raw %}
+
 	Article: Q91676
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/091/Q91676/
 	
 	=============================================================================
 	
+
+{% endraw %}

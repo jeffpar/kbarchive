@@ -6,6 +6,8 @@ permalink: /kb/089/Q89698/
 
 ## Q89698: Windows Err Msg: You Must Have the File WINA20.386...
 
+{% raw %}
+
 	Article: Q89698
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -121,3 +123,5 @@ permalink: /kb/089/Q89698/
 	
 	=============================================================================
 	
+
+{% endraw %}

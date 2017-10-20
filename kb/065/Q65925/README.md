@@ -6,6 +6,8 @@ permalink: /kb/065/Q65925/
 
 ## Q65925: Using OS/2 API Calls for Keyboard Input from BASIC PDS
 
+{% raw %}
+
 	Article: Q65925
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -220,3 +222,5 @@ permalink: /kb/065/Q65925/
 	    PRINT "Logical keyboard could not be opened"
 	END IF
 	END
+
+{% endraw %}

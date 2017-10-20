@@ -6,6 +6,8 @@ permalink: /kb/112/Q112912/
 
 ## Q112912: PC Win: Duplicate Header of WELCOME.GLB Message
 
+{% raw %}
+
 	Article: Q112912
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -48,3 +50,5 @@ permalink: /kb/112/Q112912/
 	
 	=============================================================================
 	
+
+{% endraw %}

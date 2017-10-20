@@ -6,6 +6,8 @@ permalink: /kb/124/Q124872/
 
 ## Q124872: Err Msg: Setup Requires a Local Hard Disk That is Visible
 
+{% raw %}
+
 	Article: Q124872
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/124/Q124872/
 	
 	=============================================================================
 	
+
+{% endraw %}

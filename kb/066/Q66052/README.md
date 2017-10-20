@@ -6,6 +6,8 @@ permalink: /kb/066/Q66052/
 
 ## Q66052: INFO: fflush() &amp; flushall() Do Not Write Data Directly to Disk
 
+{% raw %}
+
 	Article: Q66052
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:6.0,6.00a,6.00ax,7.0; WINDOWS:1.0,1.00a; WINDOWS NT:1.0,2.0,2.1,4.0,5.0
@@ -72,3 +74,5 @@ permalink: /kb/066/Q66052/
 	
 	=============================================================================
 	
+
+{% endraw %}

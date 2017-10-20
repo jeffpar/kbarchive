@@ -6,6 +6,8 @@ permalink: /kb/161/Q161363/
 
 ## Q161363: Installing Crystal Semiconductor CS4232/CS4236 PnP Driver
 
+{% raw %}
+
 	Article: Q161363
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -143,3 +145,5 @@ permalink: /kb/161/Q161363/
 	
 	=============================================================================
 	
+
+{% endraw %}

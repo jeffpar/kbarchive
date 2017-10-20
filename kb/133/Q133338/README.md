@@ -6,6 +6,8 @@ permalink: /kb/133/Q133338/
 
 ## Q133338: Automating DLC Installation
 
+{% raw %}
+
 	Article: Q133338
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -106,3 +108,5 @@ permalink: /kb/133/Q133338/
 	
 	=============================================================================
 	
+
+{% endraw %}

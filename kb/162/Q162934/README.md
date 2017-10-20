@@ -6,6 +6,8 @@ permalink: /kb/162/Q162934/
 
 ## Q162934: ODE97: Setup Wizard Fails to Register New File Name Value
 
+{% raw %}
+
 	Article: Q162934
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/162/Q162934/
 	
 	=============================================================================
 	
+
+{% endraw %}

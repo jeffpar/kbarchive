@@ -6,6 +6,8 @@ permalink: /kb/238/Q238882/
 
 ## Q238882: HOWTO: Know When Your Screen Saver Starts
 
+{% raw %}
+
 	Article: Q238882
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95,98; winnt:4.0
@@ -100,3 +102,5 @@ permalink: /kb/238/Q238882/
 	
 	=============================================================================
 	
+
+{% endraw %}

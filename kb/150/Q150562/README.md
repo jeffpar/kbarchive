@@ -6,6 +6,8 @@ permalink: /kb/150/Q150562/
 
 ## Q150562: Bookshelf 96-97 Scales Incorrectly on PostScript Printer
 
+{% raw %}
+
 	Article: Q150562
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -52,3 +54,5 @@ permalink: /kb/150/Q150562/
 	
 	=============================================================================
 	
+
+{% endraw %}

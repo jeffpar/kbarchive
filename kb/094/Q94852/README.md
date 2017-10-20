@@ -6,6 +6,8 @@ permalink: /kb/094/Q94852/
 
 ## Q94852: Pipe Dream Displays Incorrectly on EGA Systems
 
+{% raw %}
+
 	Article: Q94852
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -46,3 +48,5 @@ permalink: /kb/094/Q94852/
 	
 	=============================================================================
 	
+
+{% endraw %}

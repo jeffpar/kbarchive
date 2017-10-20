@@ -6,6 +6,8 @@ permalink: /kb/124/Q124016/
 
 ## Q124016: Encarta: Hangs on MS Home Screen
 
+{% raw %}
+
 	Article: Q124016
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 1995
@@ -73,3 +75,5 @@ permalink: /kb/124/Q124016/
 	
 	=============================================================================
 	
+
+{% endraw %}

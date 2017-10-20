@@ -6,6 +6,8 @@ permalink: /kb/088/Q88428/
 
 ## Q88428: Issues with Windows 3.0 and 8.0 Mouse Driver
 
+{% raw %}
+
 	Article: Q88428
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -101,3 +103,5 @@ permalink: /kb/088/Q88428/
 	
 	=============================================================================
 	
+
+{% endraw %}

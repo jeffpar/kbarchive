@@ -6,6 +6,8 @@ permalink: /kb/251/Q251059/
 
 ## Q251059: HOWTO: Provide Your Own Window Class Name for an MFC Dialog Box
 
+{% raw %}
+
 	Article: Q251059
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -118,3 +120,5 @@ permalink: /kb/251/Q251059/
 	
 	=============================================================================
 	
+
+{% endraw %}

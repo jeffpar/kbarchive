@@ -6,6 +6,8 @@ permalink: /kb/133/Q133341/
 
 ## Q133341: ACC2: WX1200: Microsoft ADT Custom Controls Service Pack
 
+{% raw %}
+
 	Article: Q133341
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -181,3 +183,5 @@ permalink: /kb/133/Q133341/
 	
 	=============================================================================
 	
+
+{% endraw %}

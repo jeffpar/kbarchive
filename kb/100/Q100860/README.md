@@ -6,6 +6,8 @@ permalink: /kb/100/Q100860/
 
 ## Q100860: OmniBook DoubleSpace Sets Drive E as Host Drive
 
+{% raw %}
+
 	Article: Q100860
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:5.0; WINDOWS:3.1
@@ -51,3 +53,5 @@ permalink: /kb/100/Q100860/
 	
 	=============================================================================
 	
+
+{% endraw %}

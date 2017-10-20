@@ -6,6 +6,8 @@ permalink: /kb/177/Q177444/
 
 ## Q177444: Windows NT Explorer May Not Indicate Status of Shared Folders
 
+{% raw %}
+
 	Article: Q177444
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -50,3 +52,5 @@ permalink: /kb/177/Q177444/
 	
 	=============================================================================
 	
+
+{% endraw %}

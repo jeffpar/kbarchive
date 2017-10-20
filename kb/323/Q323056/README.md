@@ -6,6 +6,8 @@ permalink: /kb/323/Q323056/
 
 ## Q323056: &quot;Error Opening Sub-Domain&quot; Error Message When You Open SNA Manag
 
+{% raw %}
+
 	Article: Q323056
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/323/Q323056/
 	
 	=============================================================================
 	
+
+{% endraw %}

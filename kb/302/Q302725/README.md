@@ -6,6 +6,8 @@ permalink: /kb/302/Q302725/
 
 ## Q302725: &quot;Must restart computer&quot; Message When Signing In To MSN Explorer
 
+{% raw %}
+
 	Article: Q302725
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -39,3 +41,5 @@ permalink: /kb/302/Q302725/
 	
 	=============================================================================
 	
+
+{% endraw %}

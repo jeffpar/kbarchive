@@ -6,6 +6,8 @@ permalink: /kb/199/Q199771/
 
 ## Q199771: XFOR: Event ID 4106 and 4037 When Starting IMS with Dial-up
 
+{% raw %}
+
 	Article: Q199771
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -84,3 +86,5 @@ permalink: /kb/199/Q199771/
 	
 	=============================================================================
 	
+
+{% endraw %}

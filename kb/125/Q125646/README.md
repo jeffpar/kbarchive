@@ -6,6 +6,8 @@ permalink: /kb/125/Q125646/
 
 ## Q125646: Computer with Intel Neptune PCI Chip Hangs on Warm Reboot
 
+{% raw %}
+
 	Article: Q125646
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/125/Q125646/
 	
 	=============================================================================
 	
+
+{% endraw %}

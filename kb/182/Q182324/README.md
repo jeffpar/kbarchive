@@ -6,6 +6,8 @@ permalink: /kb/182/Q182324/
 
 ## Q182324: FIX: Component Gallery Errors with Read-Only Project Files
 
+{% raw %}
+
 	Article: Q182324
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0
@@ -98,3 +100,5 @@ permalink: /kb/182/Q182324/
 	
 	=============================================================================
 	
+
+{% endraw %}

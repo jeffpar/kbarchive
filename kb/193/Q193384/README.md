@@ -6,6 +6,8 @@ permalink: /kb/193/Q193384/
 
 ## Q193384: XGEN: Internet Security &amp; Exchange: Top 5-10 Issues &amp; Solutions
 
+{% raw %}
+
 	Article: Q193384
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -99,3 +101,5 @@ permalink: /kb/193/Q193384/
 	
 	=============================================================================
 	
+
+{% endraw %}

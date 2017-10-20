@@ -6,6 +6,8 @@ permalink: /kb/161/Q161775/
 
 ## Q161775: Problem Starting Two Non-Queued TPs Simultaneously on Win3.x
 
+{% raw %}
+
 	Article: Q161775
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11
@@ -92,3 +94,5 @@ permalink: /kb/161/Q161775/
 	
 	=============================================================================
 	
+
+{% endraw %}

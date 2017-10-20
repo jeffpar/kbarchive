@@ -6,6 +6,8 @@ permalink: /kb/196/Q196239/
 
 ## Q196239: SNA Client for Windows NT Hangs When Receiving PID &gt; '0x8000'
 
+{% raw %}
+
 	Article: Q196239
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,2.11SP1,2.11SP2,3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1
@@ -91,3 +93,5 @@ permalink: /kb/196/Q196239/
 	
 	=============================================================================
 	
+
+{% endraw %}

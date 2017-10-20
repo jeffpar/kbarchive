@@ -6,6 +6,8 @@ permalink: /kb/186/Q186493/
 
 ## Q186493: SAMPLE: LLStream.exe Plays Streaming Audio Files
 
+{% raw %}
+
 	Article: Q186493
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -101,3 +103,5 @@ permalink: /kb/186/Q186493/
 	
 	=============================================================================
 	
+
+{% endraw %}

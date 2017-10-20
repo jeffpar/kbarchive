@@ -6,6 +6,8 @@ permalink: /kb/131/Q131214/
 
 ## Q131214: Windows 95 Hangs at Boot with 386Max and More Than 16 MB RAM
 
+{% raw %}
+
 	Article: Q131214
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/131/Q131214/
 	
 	=============================================================================
 	
+
+{% endraw %}

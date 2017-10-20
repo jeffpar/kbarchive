@@ -6,6 +6,8 @@ permalink: /kb/099/Q99443/
 
 ## Q99443: OS/2 Files Changed Between LAN Man Versions 2.1 and 2.2
 
+{% raw %}
+
 	Article: Q99443
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/099/Q99443/
 	
 	=============================================================================
 	
+
+{% endraw %}

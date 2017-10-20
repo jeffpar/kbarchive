@@ -6,6 +6,8 @@ permalink: /kb/120/Q120098/
 
 ## Q120098: INFO: Two Ways to Search &amp; Remove Characters from a Text String
 
+{% raw %}
+
 	Article: Q120098
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,2.6a; MS-DOS:2.5,2.5a,2.5b,2.6,2.6a; UNIX:2.6; WINDOWS:2.5,2.5a,2.5
@@ -102,3 +104,5 @@ permalink: /kb/120/Q120098/
 	
 	=============================================================================
 	
+
+{% endraw %}

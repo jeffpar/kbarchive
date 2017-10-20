@@ -6,6 +6,8 @@ permalink: /kb/171/Q171448/
 
 ## Q171448: Some SNA Print Service Jobs Print Using Condensed Font
 
+{% raw %}
+
 	Article: Q171448
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -47,3 +49,5 @@ permalink: /kb/171/Q171448/
 	
 	=============================================================================
 	
+
+{% endraw %}

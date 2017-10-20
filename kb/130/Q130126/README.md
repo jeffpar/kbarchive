@@ -6,6 +6,8 @@ permalink: /kb/130/Q130126/
 
 ## Q130126: FIX: Wrong Windows NT &amp; Windows 3.11 versions in System Info
 
+{% raw %}
+
 	Article: Q130126
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b
@@ -94,3 +96,5 @@ permalink: /kb/130/Q130126/
 	
 	=============================================================================
 	
+
+{% endraw %}

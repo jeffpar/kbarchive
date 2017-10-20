@@ -6,6 +6,8 @@ permalink: /kb/175/Q175613/
 
 ## Q175613: FIX: Combo Box ItemTips Prevents Selection and DisplayValue
 
+{% raw %}
+
 	Article: Q175613
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -106,3 +108,5 @@ permalink: /kb/175/Q175613/
 	
 	=============================================================================
 	
+
+{% endraw %}

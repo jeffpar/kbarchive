@@ -6,6 +6,8 @@ permalink: /kb/250/Q250903/
 
 ## Q250903: XADM: 'Fuserext' Error Appears When You Try to Access Mailbox
 
+{% raw %}
+
 	Article: Q250903
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -116,3 +118,5 @@ permalink: /kb/250/Q250903/
 	
 	=============================================================================
 	
+
+{% endraw %}

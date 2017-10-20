@@ -6,6 +6,8 @@ permalink: /kb/164/Q164805/
 
 ## Q164805: XADM: Contents of This Public Folder Currently Unavailable
 
+{% raw %}
+
 	Article: Q164805
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -126,3 +128,5 @@ permalink: /kb/164/Q164805/
 	
 	=============================================================================
 	
+
+{% endraw %}

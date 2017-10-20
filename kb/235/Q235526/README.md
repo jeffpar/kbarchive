@@ -6,6 +6,8 @@ permalink: /kb/235/Q235526/
 
 ## Q235526: Event ID 295 Error Message Importing Foreign Language Templates
 
+{% raw %}
+
 	Article: Q235526
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -80,3 +82,5 @@ permalink: /kb/235/Q235526/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166075/
 
 ## Q166075: SNA Server Manager Disappears
 
+{% raw %}
+
 	Article: Q166075
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -74,3 +76,5 @@ permalink: /kb/166/Q166075/
 	
 	=============================================================================
 	
+
+{% endraw %}

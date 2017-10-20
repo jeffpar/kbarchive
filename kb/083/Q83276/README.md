@@ -6,6 +6,8 @@ permalink: /kb/083/Q83276/
 
 ## Q83276: &quot;Insufficient Conventional Memory&quot; when Starting Windows
 
+{% raw %}
+
 	Article: Q83276
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/083/Q83276/
 	
 	=============================================================================
 	
+
+{% endraw %}

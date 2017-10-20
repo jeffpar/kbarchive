@@ -6,6 +6,8 @@ permalink: /kb/220/Q220615/
 
 ## Q220615: Encarta Err Msg: Cannot Import Uninstal.reg: Error Opening...
 
+{% raw %}
+
 	Article: Q220615
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0; :
@@ -133,3 +135,5 @@ permalink: /kb/220/Q220615/
 	
 	=============================================================================
 	
+
+{% endraw %}

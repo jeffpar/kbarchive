@@ -6,6 +6,8 @@ permalink: /kb/119/Q119595/
 
 ## Q119595: Function Not Supported on This Computer
 
+{% raw %}
+
 	Article: Q119595
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -66,3 +68,5 @@ permalink: /kb/119/Q119595/
 	
 	=============================================================================
 	
+
+{% endraw %}

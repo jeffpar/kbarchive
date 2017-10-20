@@ -6,6 +6,8 @@ permalink: /kb/193/Q193016/
 
 ## Q193016: PRB: Error Compiling VB5 Project Using LPVOID in Type Library
 
+{% raw %}
+
 	Article: Q193016
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -61,3 +63,5 @@ permalink: /kb/193/Q193016/
 	
 	=============================================================================
 	
+
+{% endraw %}

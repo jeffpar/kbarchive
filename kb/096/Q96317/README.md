@@ -6,6 +6,8 @@ permalink: /kb/096/Q96317/
 
 ## Q96317: Description of Microsoft TrueType Master Set Fonts
 
+{% raw %}
+
 	Article: Q96317
 	Product(s): Microsoft Press
 	Version(s): 1.0,7.0,7.1
@@ -194,3 +196,5 @@ permalink: /kb/096/Q96317/
 	
 	=============================================================================
 	
+
+{% endraw %}

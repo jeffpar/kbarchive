@@ -6,6 +6,8 @@ permalink: /kb/174/Q174522/
 
 ## Q174522: BUG: Visual Studio SP2 Setup Updates Two Instances of VFP
 
+{% raw %}
+
 	Article: Q174522
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a; WINNT:97sp2
@@ -73,3 +75,5 @@ permalink: /kb/174/Q174522/
 	
 	=============================================================================
 	
+
+{% endraw %}

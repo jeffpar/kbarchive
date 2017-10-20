@@ -6,6 +6,8 @@ permalink: /kb/166/Q166152/
 
 ## Q166152: XFOR: Extended Chars in Attached Filenames Not Preserved on Mac
 
+{% raw %}
+
 	Article: Q166152
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/166/Q166152/
 	
 	=============================================================================
 	
+
+{% endraw %}

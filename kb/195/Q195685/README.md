@@ -6,6 +6,8 @@ permalink: /kb/195/Q195685/
 
 ## Q195685: Err Msg: Error 709: Cannot Establish the Dial-Up Networking...
 
+{% raw %}
+
 	Article: Q195685
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; WINNT:4.0
@@ -95,3 +97,5 @@ permalink: /kb/195/Q195685/
 	
 	=============================================================================
 	
+
+{% endraw %}

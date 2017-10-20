@@ -6,6 +6,8 @@ permalink: /kb/191/Q191698/
 
 ## Q191698: BUG: View Parameter Cannot Be Removed From Parameters List
 
+{% raw %}
+
 	Article: Q191698
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -81,3 +83,5 @@ permalink: /kb/191/Q191698/
 	
 	=============================================================================
 	
+
+{% endraw %}

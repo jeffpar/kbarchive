@@ -6,6 +6,8 @@ permalink: /kb/151/Q151081/
 
 ## Q151081: BUG: Incorrect Error Message When Setting Read-Only Count Prop
 
+{% raw %}
+
 	Article: Q151081
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/151/Q151081/
 	
 	=============================================================================
 	
+
+{% endraw %}

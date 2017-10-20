@@ -6,6 +6,8 @@ permalink: /kb/159/Q159229/
 
 ## Q159229: S3 Trio64V+ Not Supported on IBM Carolina Computer
 
+{% raw %}
+
 	Article: Q159229
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -58,3 +60,5 @@ permalink: /kb/159/Q159229/
 	
 	=============================================================================
 	
+
+{% endraw %}

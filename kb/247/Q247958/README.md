@@ -6,6 +6,8 @@ permalink: /kb/247/Q247958/
 
 ## Q247958: How to Change the Path Used by the SMTP Service for the NTOP
 
+{% raw %}
+
 	Article: Q247958
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -106,3 +108,5 @@ permalink: /kb/247/Q247958/
 	
 	=============================================================================
 	
+
+{% endraw %}

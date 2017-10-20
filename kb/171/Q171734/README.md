@@ -6,6 +6,8 @@ permalink: /kb/171/Q171734/
 
 ## Q171734: Error Message: The Selected Branch Does Not Exist...
 
+{% raw %}
+
 	Article: Q171734
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; WINDOWS NT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/171/Q171734/
 	
 	=============================================================================
 	
+
+{% endraw %}

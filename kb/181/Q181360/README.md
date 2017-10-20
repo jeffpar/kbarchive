@@ -6,6 +6,8 @@ permalink: /kb/181/Q181360/
 
 ## Q181360: MIDISmpl.exe Demonstrates How To Control MIDI Devices
 
+{% raw %}
+
 	Article: Q181360
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -100,3 +102,5 @@ permalink: /kb/181/Q181360/
 	
 	=============================================================================
 	
+
+{% endraw %}

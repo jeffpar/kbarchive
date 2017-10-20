@@ -6,6 +6,8 @@ permalink: /kb/176/Q176398/
 
 ## Q176398: XADM: User Count Shows 4294962176
 
+{% raw %}
+
 	Article: Q176398
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -58,3 +60,5 @@ permalink: /kb/176/Q176398/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/101/Q101561/
 
 ## Q101561: Defrag Err: Memory Test Failed at Segment &lt;Address&gt;
 
+{% raw %}
+
 	Article: Q101561
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -57,3 +59,5 @@ permalink: /kb/101/Q101561/
 	
 	=============================================================================
 	
+
+{% endraw %}

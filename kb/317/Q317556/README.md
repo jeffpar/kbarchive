@@ -6,6 +6,8 @@ permalink: /kb/317/Q317556/
 
 ## Q317556: Coding Techniques for Microsoft Visual Basic .NET Comments And C
 
+{% raw %}
+
 	Article: Q317556
 	Product(s): Microsoft Press
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/317/Q317556/
 	
 	=============================================================================
 	
+
+{% endraw %}

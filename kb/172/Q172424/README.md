@@ -6,6 +6,8 @@ permalink: /kb/172/Q172424/
 
 ## Q172424: Security Certificate Doesn't Match Internet Address
 
+{% raw %}
+
 	Article: Q172424
 	Product(s): Internet Information Server
 	Version(s): WinNT:1.0
@@ -73,3 +75,5 @@ permalink: /kb/172/Q172424/
 	
 	=============================================================================
 	
+
+{% endraw %}

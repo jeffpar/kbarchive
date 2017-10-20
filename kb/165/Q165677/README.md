@@ -6,6 +6,8 @@ permalink: /kb/165/Q165677/
 
 ## Q165677: WD97: Outlook Item Pasted as Text into Word or WordMail
 
+{% raw %}
+
 	Article: Q165677
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/165/Q165677/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192682/
 
 ## Q192682: BUG: Dynamically-Added OCX Event Parameter Is Not Passed ByRef
 
+{% raw %}
+
 	Article: Q192682
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -126,3 +128,5 @@ permalink: /kb/192/Q192682/
 	
 	=============================================================================
 	
+
+{% endraw %}

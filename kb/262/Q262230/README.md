@@ -6,6 +6,8 @@ permalink: /kb/262/Q262230/
 
 ## Q262230: Microsoft Installer Programs and Systems Management Server 2.0
 
+{% raw %}
+
 	Article: Q262230
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -74,3 +76,5 @@ permalink: /kb/262/Q262230/
 	
 	=============================================================================
 	
+
+{% endraw %}

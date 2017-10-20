@@ -6,6 +6,8 @@ permalink: /kb/190/Q190261/
 
 ## Q190261: BUG: Returning 1 in Check Box Valid Event Skips Next Object
 
+{% raw %}
+
 	Article: Q190261
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a,6.0
@@ -75,3 +77,5 @@ permalink: /kb/190/Q190261/
 	
 	=============================================================================
 	
+
+{% endraw %}

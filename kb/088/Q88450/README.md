@@ -6,6 +6,8 @@ permalink: /kb/088/Q88450/
 
 ## Q88450: Golf: Gender Selected Automatically When Using Keyboard
 
+{% raw %}
+
 	Article: Q88450
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/088/Q88450/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/324/Q324655/
 
 ## Q324655: FP: Err Msg: Error 1904: Setup Cannot Register...Msador15.dll...
 
+{% raw %}
+
 	Article: Q324655
 	Product(s): Word Front Page
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/324/Q324655/
 	
 	=============================================================================
 	
+
+{% endraw %}

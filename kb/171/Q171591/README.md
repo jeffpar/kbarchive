@@ -6,6 +6,8 @@ permalink: /kb/171/Q171591/
 
 ## Q171591: Syntax Examples of WinNT Server Registry Resource Kit Utilities
 
+{% raw %}
+
 	Article: Q171591
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -107,3 +109,5 @@ permalink: /kb/171/Q171591/
 	
 	=============================================================================
 	
+
+{% endraw %}

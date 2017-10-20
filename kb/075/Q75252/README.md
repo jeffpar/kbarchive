@@ -6,6 +6,8 @@ permalink: /kb/075/Q75252/
 
 ## Q75252: Tips on Installing WDEB386
 
+{% raw %}
+
 	Article: Q75252
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -148,3 +150,5 @@ permalink: /kb/075/Q75252/
 	
 	=============================================================================
 	
+
+{% endraw %}

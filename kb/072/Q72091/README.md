@@ -6,6 +6,8 @@ permalink: /kb/072/Q72091/
 
 ## Q72091: MS-DOS 5 Upgrade Contents (3.5-Inch Disk Set)
 
+{% raw %}
+
 	Article: Q72091
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -173,3 +175,5 @@ permalink: /kb/072/Q72091/
 	
 	=============================================================================
 	
+
+{% endraw %}

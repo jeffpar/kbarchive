@@ -6,6 +6,8 @@ permalink: /kb/257/Q257207/
 
 ## Q257207: XFOR: Message ID Tab Is Missing from Message Properties
 
+{% raw %}
+
 	Article: Q257207
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -59,3 +61,5 @@ permalink: /kb/257/Q257207/
 	
 	=============================================================================
 	
+
+{% endraw %}

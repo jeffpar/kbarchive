@@ -6,6 +6,8 @@ permalink: /kb/182/Q182713/
 
 ## Q182713: Multiple Entries in Zone File Cause Memory Leak in Dnsadmin.exe
 
+{% raw %}
+
 	Article: Q182713
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -108,3 +110,5 @@ permalink: /kb/182/Q182713/
 	
 	=============================================================================
 	
+
+{% endraw %}

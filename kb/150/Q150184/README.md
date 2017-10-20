@@ -6,6 +6,8 @@ permalink: /kb/150/Q150184/
 
 ## Q150184: FIX: Unloading a Form After Assigning Text Property Causes GPF
 
+{% raw %}
+
 	Article: Q150184
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -132,3 +134,5 @@ permalink: /kb/150/Q150184/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168578/
 
 ## Q168578: Autostatic Route Updates Fail Over IPX
 
+{% raw %}
+
 	Article: Q168578
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -99,3 +101,5 @@ permalink: /kb/168/Q168578/
 	
 	=============================================================================
 	
+
+{% endraw %}

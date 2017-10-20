@@ -6,6 +6,8 @@ permalink: /kb/273/Q273620/
 
 ## Q273620: How to Optimize Performance in Flight Simulator 98/2000 Games
 
+{% raw %}
+
 	Article: Q273620
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -294,3 +296,5 @@ permalink: /kb/273/Q273620/
 	
 	=============================================================================
 	
+
+{% endraw %}

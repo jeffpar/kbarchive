@@ -6,6 +6,8 @@ permalink: /kb/163/Q163343/
 
 ## Q163343: ACC97: No SourceSafe Symbols in Large Icon View
 
+{% raw %}
+
 	Article: Q163343
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:97
@@ -91,3 +93,5 @@ permalink: /kb/163/Q163343/
 	
 	=============================================================================
 	
+
+{% endraw %}

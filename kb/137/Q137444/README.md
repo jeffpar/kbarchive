@@ -6,6 +6,8 @@ permalink: /kb/137/Q137444/
 
 ## Q137444: How to Use AppSearch to Search for a Specific Application
 
+{% raw %}
+
 	Article: Q137444
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/137/Q137444/
 	
 	=============================================================================
 	
+
+{% endraw %}

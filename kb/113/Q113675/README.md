@@ -6,6 +6,8 @@ permalink: /kb/113/Q113675/
 
 ## Q113675: FIX: App Studio for Windows GP Faults Under Windows NT
 
+{% raw %}
+
 	Article: Q113675
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -52,3 +54,5 @@ permalink: /kb/113/Q113675/
 	
 	=============================================================================
 	
+
+{% endraw %}

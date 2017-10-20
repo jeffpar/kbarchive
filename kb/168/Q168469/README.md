@@ -6,6 +6,8 @@ permalink: /kb/168/Q168469/
 
 ## Q168469: RRAS Upgrade for WinNT Server 4.0 Hotfix Pack 2.0 Release Notes
 
+{% raw %}
+
 	Article: Q168469
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -263,3 +265,5 @@ permalink: /kb/168/Q168469/
 	
 	=============================================================================
 	
+
+{% endraw %}

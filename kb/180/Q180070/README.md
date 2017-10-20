@@ -6,6 +6,8 @@ permalink: /kb/180/Q180070/
 
 ## Q180070: FIX: RESTORE SCREEN Does Not Refresh Form in VFP 5.0
 
+{% raw %}
+
 	Article: Q180070
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -81,3 +83,5 @@ permalink: /kb/180/Q180070/
 	
 	=============================================================================
 	
+
+{% endraw %}

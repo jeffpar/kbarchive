@@ -6,6 +6,8 @@ permalink: /kb/302/Q302765/
 
 ## Q302765: Can't Add Second MSN Internet Access User in MSN Explorer 6.1 on
 
+{% raw %}
+
 	Article: Q302765
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -50,3 +52,5 @@ permalink: /kb/302/Q302765/
 	
 	=============================================================================
 	
+
+{% endraw %}

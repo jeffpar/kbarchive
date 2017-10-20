@@ -6,6 +6,8 @@ permalink: /kb/138/Q138915/
 
 ## Q138915: Listing of Standard Edition files After Installation
 
+{% raw %}
+
 	Article: Q138915
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -790,3 +792,5 @@ permalink: /kb/138/Q138915/
 	
 	=============================================================================
 	
+
+{% endraw %}

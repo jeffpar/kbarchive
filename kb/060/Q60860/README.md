@@ -6,6 +6,8 @@ permalink: /kb/060/Q60860/
 
 ## Q60860: CommandKeySet Subprogram Should Be ShortCutKeySet
 
+{% raw %}
+
 	Article: Q60860
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -19,3 +21,5 @@ permalink: /kb/060/Q60860/
 	
 	This information applies to Microsoft BASIC Professional Development
 	System (PDS) Versions 7.00 and 7.10 for MS-DOS.
+
+{% endraw %}

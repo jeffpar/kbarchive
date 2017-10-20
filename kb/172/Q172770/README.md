@@ -6,6 +6,8 @@ permalink: /kb/172/Q172770/
 
 ## Q172770: Err Msg: Cannot Connect to MAPI Server. Invalid MAPI Server...
 
+{% raw %}
+
 	Article: Q172770
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -76,3 +78,5 @@ permalink: /kb/172/Q172770/
 	
 	=============================================================================
 	
+
+{% endraw %}

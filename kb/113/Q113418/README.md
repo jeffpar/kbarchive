@@ -6,6 +6,8 @@ permalink: /kb/113/Q113418/
 
 ## Q113418: HOW TO: Determine Whether a Drive Is a RAM Drive
 
+{% raw %}
+
 	Article: Q113418
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,2.1,4.0,5.0,6.0
@@ -94,3 +96,5 @@ permalink: /kb/113/Q113418/
 	
 	=============================================================================
 	
+
+{% endraw %}

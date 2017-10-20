@@ -6,6 +6,8 @@ permalink: /kb/157/Q157462/
 
 ## Q157462: RAS Server Routing Client IP Packets Degrades Performance
 
+{% raw %}
+
 	Article: Q157462
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -209,3 +211,5 @@ permalink: /kb/157/Q157462/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193099/
 
 ## Q193099: FIX: CDialog::Create() Returns Incorrect Value Calling EndDialog
 
+{% raw %}
+
 	Article: Q193099
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -180,3 +182,5 @@ permalink: /kb/193/Q193099/
 	
 	=============================================================================
 	
+
+{% endraw %}

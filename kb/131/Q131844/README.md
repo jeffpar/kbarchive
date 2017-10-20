@@ -6,6 +6,8 @@ permalink: /kb/131/Q131844/
 
 ## Q131844: Inconsistent Appointment Creation with Mouse in Planner
 
+{% raw %}
+
 	Article: Q131844
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -65,3 +67,5 @@ permalink: /kb/131/Q131844/
 	
 	=============================================================================
 	
+
+{% endraw %}

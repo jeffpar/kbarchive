@@ -6,6 +6,8 @@ permalink: /kb/267/Q267302/
 
 ## Q267302: Expedia Streets &amp; Trips 2000: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q267302
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -66,3 +68,5 @@ permalink: /kb/267/Q267302/
 	
 	=============================================================================
 	
+
+{% endraw %}

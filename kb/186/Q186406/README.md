@@ -6,6 +6,8 @@ permalink: /kb/186/Q186406/
 
 ## Q186406: SMS: Drive Letter Selection for SMS Client Files Inconsistent
 
+{% raw %}
+
 	Article: Q186406
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -57,3 +59,5 @@ permalink: /kb/186/Q186406/
 	
 	=============================================================================
 	
+
+{% endraw %}

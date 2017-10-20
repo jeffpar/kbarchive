@@ -6,6 +6,8 @@ permalink: /kb/118/Q118610/
 
 ## Q118610: Using CWnd::GetParent in a Dialog Box
 
+{% raw %}
+
 	Article: Q118610
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -68,3 +70,5 @@ permalink: /kb/118/Q118610/
 	
 	=============================================================================
 	
+
+{% endraw %}

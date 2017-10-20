@@ -6,6 +6,8 @@ permalink: /kb/098/Q98555/
 
 ## Q98555: NET MOVE, NET COPY, and File Permissions
 
+{% raw %}
+
 	Article: Q98555
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/098/Q98555/
 	
 	=============================================================================
 	
+
+{% endraw %}

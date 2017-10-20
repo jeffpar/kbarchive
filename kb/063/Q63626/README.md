@@ -6,6 +6,8 @@ permalink: /kb/063/Q63626/
 
 ## Q63626: Flight Simulator: Crash Setting Set to Off with Scenery Disks
 
+{% raw %}
+
 	Article: Q63626
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/063/Q63626/
 	
 	=============================================================================
 	
+
+{% endraw %}

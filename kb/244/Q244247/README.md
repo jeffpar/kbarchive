@@ -6,6 +6,8 @@ permalink: /kb/244/Q244247/
 
 ## Q244247: Age of Empires II: List of Campaigns and Scenarios
 
+{% raw %}
+
 	Article: Q244247
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -94,3 +96,5 @@ permalink: /kb/244/Q244247/
 	
 	=============================================================================
 	
+
+{% endraw %}

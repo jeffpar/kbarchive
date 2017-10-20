@@ -6,6 +6,8 @@ permalink: /kb/299/Q299836/
 
 ## Q299836: FIX: Destroy() Does Not Fire for LOCAL And PRIVATE Objects
 
+{% raw %}
+
 	Article: Q299836
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -76,3 +78,5 @@ permalink: /kb/299/Q299836/
 	
 	=============================================================================
 	
+
+{% endraw %}

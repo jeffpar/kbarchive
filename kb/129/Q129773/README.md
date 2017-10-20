@@ -6,6 +6,8 @@ permalink: /kb/129/Q129773/
 
 ## Q129773: Error Message: LPT&lt;n&gt;: Windows Cannot Write to This File
 
+{% raw %}
+
 	Article: Q129773
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11,3.5
@@ -108,3 +110,5 @@ permalink: /kb/129/Q129773/
 	
 	=============================================================================
 	
+
+{% endraw %}

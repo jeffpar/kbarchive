@@ -6,6 +6,8 @@ permalink: /kb/304/Q304062/
 
 ## Q304062: XGEN: Exchange Server 5.5 Post-SP4 RPC Fixes
 
+{% raw %}
+
 	Article: Q304062
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -142,3 +144,5 @@ permalink: /kb/304/Q304062/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157468/
 
 ## Q157468: HOWTO: Use CompareMemo and Update Memo Fields
 
+{% raw %}
+
 	Article: Q157468
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -53,3 +55,5 @@ permalink: /kb/157/Q157468/
 	
 	=============================================================================
 	
+
+{% endraw %}

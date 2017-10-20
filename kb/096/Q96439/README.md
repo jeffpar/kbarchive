@@ -6,6 +6,8 @@ permalink: /kb/096/Q96439/
 
 ## Q96439: Differences Between LAN Manager 2.2 and 2.2a
 
+{% raw %}
+
 	Article: Q96439
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/096/Q96439/
 	
 	=============================================================================
 	
+
+{% endraw %}

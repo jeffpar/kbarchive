@@ -6,6 +6,8 @@ permalink: /kb/094/Q94753/
 
 ## Q94753: WinLogin: /U:USERNAME Does Not Recognize Spaces
 
+{% raw %}
+
 	Article: Q94753
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -66,3 +68,5 @@ permalink: /kb/094/Q94753/
 	
 	=============================================================================
 	
+
+{% endraw %}

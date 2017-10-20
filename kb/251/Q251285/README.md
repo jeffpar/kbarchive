@@ -6,6 +6,8 @@ permalink: /kb/251/Q251285/
 
 ## Q251285: Err Msg: Setup Step Failed. Unable to Add C:&#92;Program Files...
 
+{% raw %}
+
 	Article: Q251285
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0 SP3
@@ -80,3 +82,5 @@ permalink: /kb/251/Q251285/
 	
 	=============================================================================
 	
+
+{% endraw %}

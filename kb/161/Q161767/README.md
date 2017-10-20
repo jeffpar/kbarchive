@@ -6,6 +6,8 @@ permalink: /kb/161/Q161767/
 
 ## Q161767: Wnap.exe GP Faults During a Windows NT Password Change
 
+{% raw %}
+
 	Article: Q161767
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1,3.0
@@ -91,3 +93,5 @@ permalink: /kb/161/Q161767/
 	
 	=============================================================================
 	
+
+{% endraw %}

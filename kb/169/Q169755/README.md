@@ -6,6 +6,8 @@ permalink: /kb/169/Q169755/
 
 ## Q169755: WD97: Troubleshooting Fax Problems from Word
 
+{% raw %}
+
 	Article: Q169755
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -423,3 +425,5 @@ permalink: /kb/169/Q169755/
 	
 	=============================================================================
 	
+
+{% endraw %}

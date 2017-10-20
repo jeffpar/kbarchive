@@ -6,6 +6,8 @@ permalink: /kb/148/Q148183/
 
 ## Q148183: BUG: FOR2206 Error Illegal Access of Module Member
 
+{% raw %}
+
 	Article: Q148183
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/148/Q148183/
 	
 	=============================================================================
 	
+
+{% endraw %}

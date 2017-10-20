@@ -6,6 +6,8 @@ permalink: /kb/074/Q74634/
 
 ## Q74634: Cannot Modify File Display Options Filename in Shell
 
+{% raw %}
+
 	Article: Q74634
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -41,3 +43,5 @@ permalink: /kb/074/Q74634/
 	
 	=============================================================================
 	
+
+{% endraw %}

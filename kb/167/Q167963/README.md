@@ -6,6 +6,8 @@ permalink: /kb/167/Q167963/
 
 ## Q167963: Installing Program Requiring Specific Drive Letter
 
+{% raw %}
+
 	Article: Q167963
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -92,3 +94,5 @@ permalink: /kb/167/Q167963/
 	
 	=============================================================================
 	
+
+{% endraw %}

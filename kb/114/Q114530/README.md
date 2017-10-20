@@ -6,6 +6,8 @@ permalink: /kb/114/Q114530/
 
 ## Q114530: BUG: DDESPY and Ctrl Key Cause GP Fault in Windows NT
 
+{% raw %}
+
 	Article: Q114530
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:1.5,3.1
@@ -62,3 +64,5 @@ permalink: /kb/114/Q114530/
 	
 	=============================================================================
 	
+
+{% endraw %}

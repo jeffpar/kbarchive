@@ -6,6 +6,8 @@ permalink: /kb/098/Q98616/
 
 ## Q98616: Printing Overlaps .75 Inch to Next Page on Okidata ML 380
 
+{% raw %}
+
 	Article: Q98616
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/098/Q98616/
 	
 	=============================================================================
 	
+
+{% endraw %}

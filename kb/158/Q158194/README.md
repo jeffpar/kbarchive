@@ -6,6 +6,8 @@ permalink: /kb/158/Q158194/
 
 ## Q158194: Windows 95 OEM Service Release 2 CD-ROM Directory (2 of 6)
 
+{% raw %}
+
 	Article: Q158194
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -445,3 +447,5 @@ permalink: /kb/158/Q158194/
 	
 	=============================================================================
 	
+
+{% endraw %}

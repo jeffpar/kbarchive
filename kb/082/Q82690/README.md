@@ -6,6 +6,8 @@ permalink: /kb/082/Q82690/
 
 ## Q82690: Novell IPX 3.1 Required for Windows 3.1 Enhanced Mode
 
+{% raw %}
+
 	Article: Q82690
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -44,3 +46,5 @@ permalink: /kb/082/Q82690/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/094/Q94350/
 
 ## Q94350: FoxPro FONTMETRIC() Function Returns Font Attributes
 
+{% raw %}
+
 	Article: Q94350
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,3.0,5.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/094/Q94350/
 	
 	=============================================================================
 	
+
+{% endraw %}

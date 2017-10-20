@@ -6,6 +6,8 @@ permalink: /kb/096/Q96702/
 
 ## Q96702: Bookshelf 1992: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q96702
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -163,3 +165,5 @@ permalink: /kb/096/Q96702/
 	
 	=============================================================================
 	
+
+{% endraw %}

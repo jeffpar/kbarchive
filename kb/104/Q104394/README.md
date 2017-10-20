@@ -6,6 +6,8 @@ permalink: /kb/104/Q104394/
 
 ## Q104394: Dynamic Data Exchange Interface for Replacement Shells
 
+{% raw %}
+
 	Article: Q104394
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -345,3 +347,5 @@ permalink: /kb/104/Q104394/
 	
 	=============================================================================
 	
+
+{% endraw %}

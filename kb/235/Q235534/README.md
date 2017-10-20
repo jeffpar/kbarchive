@@ -6,6 +6,8 @@ permalink: /kb/235/Q235534/
 
 ## Q235534: XCON: MTA Logs Errors 2124, 2175 on Invalid X.400 Message
 
+{% raw %}
+
 	Article: Q235534
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -139,3 +141,5 @@ permalink: /kb/235/Q235534/
 	
 	=============================================================================
 	
+
+{% endraw %}

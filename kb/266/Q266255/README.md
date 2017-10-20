@@ -6,6 +6,8 @@ permalink: /kb/266/Q266255/
 
 ## Q266255: XCLN: Default .pst File Creation Path Needs to Be Configurable
 
+{% raw %}
+
 	Article: Q266255
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -160,3 +162,5 @@ permalink: /kb/266/Q266255/
 	
 	=============================================================================
 	
+
+{% endraw %}

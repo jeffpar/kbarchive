@@ -6,6 +6,8 @@ permalink: /kb/157/Q157433/
 
 ## Q157433: INFO: STL Sample for the basic_string size and resize Functions
 
+{% raw %}
+
 	Article: Q157433
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -128,3 +130,5 @@ permalink: /kb/157/Q157433/
 	
 	=============================================================================
 	
+
+{% endraw %}

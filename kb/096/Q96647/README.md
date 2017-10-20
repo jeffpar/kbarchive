@@ -6,6 +6,8 @@ permalink: /kb/096/Q96647/
 
 ## Q96647: PC DB: 3.0 Server Update Disk 1 &#91;3.5, 5.25&#93;
 
+{% raw %}
+
 	Article: Q96647
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -100,3 +102,5 @@ permalink: /kb/096/Q96647/
 	
 	=============================================================================
 	
+
+{% endraw %}

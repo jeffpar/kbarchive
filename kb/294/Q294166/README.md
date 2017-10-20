@@ -6,6 +6,8 @@ permalink: /kb/294/Q294166/
 
 ## Q294166: FIX: DataGrid Control Row Property Fails to Update for Last Row
 
+{% raw %}
+
 	Article: Q294166
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0,6.0 SP3,6.0 SP4
@@ -132,3 +134,5 @@ permalink: /kb/294/Q294166/
 	
 	=============================================================================
 	
+
+{% endraw %}

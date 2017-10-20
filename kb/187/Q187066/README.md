@@ -6,6 +6,8 @@ permalink: /kb/187/Q187066/
 
 ## Q187066: Resolution Problem with SYSTRAY on Alpha Platform
 
+{% raw %}
+
 	Article: Q187066
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -46,3 +48,5 @@ permalink: /kb/187/Q187066/
 	
 	=============================================================================
 	
+
+{% endraw %}

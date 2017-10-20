@@ -6,6 +6,8 @@ permalink: /kb/255/Q255918/
 
 ## Q255918: Allegiance: Games List is Unavailable
 
+{% raw %}
+
 	Article: Q255918
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -92,3 +94,5 @@ permalink: /kb/255/Q255918/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187675/
 
 ## Q187675: HOWTO: Copy a String to a Byte Array Without Unicode Conversion
 
+{% raw %}
+
 	Article: Q187675
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/187/Q187675/
 	
 	=============================================================================
 	
+
+{% endraw %}

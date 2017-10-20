@@ -6,6 +6,8 @@ permalink: /kb/221/Q221749/
 
 ## Q221749: FIX: Top Level Forms with Menus Allow Access to Datasession 0
 
+{% raw %}
+
 	Article: Q221749
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -159,3 +161,5 @@ permalink: /kb/221/Q221749/
 	
 	=============================================================================
 	
+
+{% endraw %}

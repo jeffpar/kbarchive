@@ -6,6 +6,8 @@ permalink: /kb/178/Q178538/
 
 ## Q178538: Configuring DRAS with Reserved IP Address for Private Networks
 
+{% raw %}
+
 	Article: Q178538
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -68,3 +70,5 @@ permalink: /kb/178/Q178538/
 	
 	=============================================================================
 	
+
+{% endraw %}

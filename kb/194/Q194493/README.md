@@ -6,6 +6,8 @@ permalink: /kb/194/Q194493/
 
 ## Q194493: WD97: Linefeeds or Line Breaks Become Paragraph Marks
 
+{% raw %}
+
 	Article: Q194493
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -43,3 +45,5 @@ permalink: /kb/194/Q194493/
 	
 	=============================================================================
 	
+
+{% endraw %}

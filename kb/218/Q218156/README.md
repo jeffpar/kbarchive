@@ -6,6 +6,8 @@ permalink: /kb/218/Q218156/
 
 ## Q218156: My Personal Tutor Error Message: Corrupt Files Have Been Found
 
+{% raw %}
+
 	Article: Q218156
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -104,3 +106,5 @@ permalink: /kb/218/Q218156/
 	
 	=============================================================================
 	
+
+{% endraw %}

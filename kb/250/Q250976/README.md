@@ -6,6 +6,8 @@ permalink: /kb/250/Q250976/
 
 ## Q250976: SMS: Software Metering Does Not Use Original Program Name Policy
 
+{% raw %}
+
 	Article: Q250976
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,2.0,2.0 SP1,2.0 SP2
@@ -69,3 +71,5 @@ permalink: /kb/250/Q250976/
 	
 	=============================================================================
 	
+
+{% endraw %}

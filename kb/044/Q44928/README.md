@@ -6,6 +6,8 @@ permalink: /kb/044/Q44928/
 
 ## Q44928: Linker Options /PADDATA and /PADCODE
 
+{% raw %}
+
 	Article: Q44928
 	Product(s): See article
 	Version(s): 4.06
@@ -53,3 +55,5 @@ permalink: /kb/044/Q44928/
 	These two options are documented on Page 64 in the update section of
 	the Microsoft C Optimizing Compiler Version 5.10 "CodeView and
 	Utilities, Microsoft Editor, Mixed-Language Programming Guide" manual.
+
+{% endraw %}

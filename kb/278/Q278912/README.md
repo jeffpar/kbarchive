@@ -6,6 +6,8 @@ permalink: /kb/278/Q278912/
 
 ## Q278912: XWEB: Exchange 5.5 OWA Unable to Open an Exchange 2000 Mailbox
 
+{% raw %}
+
 	Article: Q278912
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -48,3 +50,5 @@ permalink: /kb/278/Q278912/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/105/Q105957/
 
 ## Q105957: PC WRmt: Entering Addresses Directly on the TO: Line
 
+{% raw %}
+
 	Article: Q105957
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -58,3 +60,5 @@ permalink: /kb/105/Q105957/
 	
 	=============================================================================
 	
+
+{% endraw %}

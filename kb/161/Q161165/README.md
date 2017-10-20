@@ -6,6 +6,8 @@ permalink: /kb/161/Q161165/
 
 ## Q161165: Domain User Cannot Add a Local Printer
 
+{% raw %}
+
 	Article: Q161165
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -80,3 +82,5 @@ permalink: /kb/161/Q161165/
 	
 	=============================================================================
 	
+
+{% endraw %}

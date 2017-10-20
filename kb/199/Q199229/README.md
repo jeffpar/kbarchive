@@ -6,6 +6,8 @@ permalink: /kb/199/Q199229/
 
 ## Q199229: SMS: Extending an Existing Architecture Using IDMIFs
 
+{% raw %}
+
 	Article: Q199229
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -220,3 +222,5 @@ permalink: /kb/199/Q199229/
 	
 	=============================================================================
 	
+
+{% endraw %}

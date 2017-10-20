@@ -6,6 +6,8 @@ permalink: /kb/302/Q302994/
 
 ## Q302994: E-mail Folder(s) Appear At www.hotmail.com But Not in MSN Explor
 
+{% raw %}
+
 	Article: Q302994
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -154,3 +156,5 @@ permalink: /kb/302/Q302994/
 	
 	=============================================================================
 	
+
+{% endraw %}

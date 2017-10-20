@@ -6,6 +6,8 @@ permalink: /kb/155/Q155585/
 
 ## Q155585: XADM: Error 1069 When Starting an Exchange Service
 
+{% raw %}
+
 	Article: Q155585
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -88,3 +90,5 @@ permalink: /kb/155/Q155585/
 	
 	=============================================================================
 	
+
+{% endraw %}

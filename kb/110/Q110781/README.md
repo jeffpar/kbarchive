@@ -6,6 +6,8 @@ permalink: /kb/110/Q110781/
 
 ## Q110781: BUG: Window Controls Are Blank When Using Multiple Monitors
 
+{% raw %}
+
 	Article: Q110781
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -58,3 +60,5 @@ permalink: /kb/110/Q110781/
 	
 	=============================================================================
 	
+
+{% endraw %}

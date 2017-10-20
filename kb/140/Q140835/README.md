@@ -6,6 +6,8 @@ permalink: /kb/140/Q140835/
 
 ## Q140835: SNA Server Admin Lists Wrong Dependent APPC LU as &quot;In Session&quot;
 
+{% raw %}
+
 	Article: Q140835
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -70,3 +72,5 @@ permalink: /kb/140/Q140835/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162800/
 
 ## Q162800: Genmenu5.exe Updated VFP 5.0 for Windows GENMENU Program
 
+{% raw %}
+
 	Article: Q162800
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -97,3 +99,5 @@ permalink: /kb/162/Q162800/
 	
 	=============================================================================
 	
+
+{% endraw %}

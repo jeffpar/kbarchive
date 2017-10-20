@@ -6,6 +6,8 @@ permalink: /kb/073/Q73712/
 
 ## Q73712: Running Solomon III Accounting Software with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q73712
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -63,3 +65,5 @@ permalink: /kb/073/Q73712/
 	
 	=============================================================================
 	
+
+{% endraw %}

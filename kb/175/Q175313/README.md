@@ -6,6 +6,8 @@ permalink: /kb/175/Q175313/
 
 ## Q175313: BUG: S1000 Error When Sharing Connection in Multiple Threads
 
+{% raw %}
+
 	Article: Q175313
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.0,3.0,5.0,6.0
@@ -120,3 +122,5 @@ permalink: /kb/175/Q175313/
 	
 	=============================================================================
 	
+
+{% endraw %}

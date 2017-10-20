@@ -6,6 +6,8 @@ permalink: /kb/154/Q154760/
 
 ## Q154760: How to Use the DSMN Utility to Verify Synchronized Passwords
 
+{% raw %}
+
 	Article: Q154760
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -212,3 +214,5 @@ permalink: /kb/154/Q154760/
 	
 	=============================================================================
 	
+
+{% endraw %}

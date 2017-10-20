@@ -6,6 +6,8 @@ permalink: /kb/159/Q159076/
 
 ## Q159076: Windows NT 4.0 May Hang or Crash in Win32k.sys During Setup.
 
+{% raw %}
+
 	Article: Q159076
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/159/Q159076/
 	
 	=============================================================================
 	
+
+{% endraw %}

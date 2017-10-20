@@ -6,6 +6,8 @@ permalink: /kb/072/Q72196/
 
 ## Q72196: Mouse Movement Is Erratic in Dosshell with Windows
 
+{% raw %}
+
 	Article: Q72196
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -66,3 +68,5 @@ permalink: /kb/072/Q72196/
 	
 	=============================================================================
 	
+
+{% endraw %}

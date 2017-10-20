@@ -6,6 +6,8 @@ permalink: /kb/194/Q194893/
 
 ## Q194893: BUG: Help System Closes After Closing Printer Properties Window
 
+{% raw %}
+
 	Article: Q194893
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -103,3 +105,5 @@ permalink: /kb/194/Q194893/
 	
 	=============================================================================
 	
+
+{% endraw %}

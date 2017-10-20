@@ -6,6 +6,8 @@ permalink: /kb/050/Q50694/
 
 ## Q50694: INFO: Evaluation Order of Expression and Function Args Undefined
 
+{% raw %}
+
 	Article: Q50694
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -112,3 +114,5 @@ permalink: /kb/050/Q50694/
 	
 	=============================================================================
 	
+
+{% endraw %}

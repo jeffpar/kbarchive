@@ -6,6 +6,8 @@ permalink: /kb/173/Q173464/
 
 ## Q173464: Expedia Trip Planner 98: Testing CD-ROM Drive for File Access
 
+{% raw %}
+
 	Article: Q173464
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -102,3 +104,5 @@ permalink: /kb/173/Q173464/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181368/
 
 ## Q181368: BUG: UserControl Not Printing Labels Correctly
 
+{% raw %}
+
 	Article: Q181368
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -101,3 +103,5 @@ permalink: /kb/181/Q181368/
 	
 	=============================================================================
 	
+
+{% endraw %}

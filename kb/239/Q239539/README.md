@@ -6,6 +6,8 @@ permalink: /kb/239/Q239539/
 
 ## Q239539: Change the Certificate Validity Period From Default of One Year
 
+{% raw %}
+
 	Article: Q239539
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0,4.0
@@ -62,3 +64,5 @@ permalink: /kb/239/Q239539/
 	
 	=============================================================================
 	
+
+{% endraw %}

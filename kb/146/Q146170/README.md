@@ -6,6 +6,8 @@ permalink: /kb/146/Q146170/
 
 ## Q146170: XCLN: Err Msg: Schedule+ Cannot Find or Run Application
 
+{% raw %}
+
 	Article: Q146170
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0a
@@ -64,3 +66,5 @@ permalink: /kb/146/Q146170/
 	
 	=============================================================================
 	
+
+{% endraw %}

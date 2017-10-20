@@ -6,6 +6,8 @@ permalink: /kb/028/Q28044/
 
 ## Q28044: BC.EXE Cannot Compile ASCII 1 or 2 in Fast Load Format Files
 
+{% raw %}
+
 	Article: Q28044
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -128,3 +130,5 @@ permalink: /kb/028/Q28044/
 	the following:
 	
 	   A$ = CHR$(1) + CHR$(2)
+
+{% endraw %}

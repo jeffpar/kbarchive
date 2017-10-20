@@ -6,6 +6,8 @@ permalink: /kb/190/Q190605/
 
 ## Q190605: PRB: Binding Hierarchical Recordset in Data Environment
 
+{% raw %}
+
 	Article: Q190605
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.5,2.6,2.7,6.0,6.0 SP4
@@ -218,3 +220,5 @@ permalink: /kb/190/Q190605/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/284/Q284716/
 
 ## Q284716: INFO: Browser Shows Err Msg:  Remote Procedure Call Failed
 
+{% raw %}
+
 	Article: Q284716
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -162,3 +164,5 @@ permalink: /kb/284/Q284716/
 	
 	=============================================================================
 	
+
+{% endraw %}

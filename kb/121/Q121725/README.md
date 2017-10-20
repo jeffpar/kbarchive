@@ -6,6 +6,8 @@ permalink: /kb/121/Q121725/
 
 ## Q121725: Alert for &quot;&lt;&quot; Condition Fails to Run Batch File
 
+{% raw %}
+
 	Article: Q121725
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/121/Q121725/
 	
 	=============================================================================
 	
+
+{% endraw %}

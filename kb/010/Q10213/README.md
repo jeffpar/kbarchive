@@ -6,6 +6,8 @@ permalink: /kb/010/Q10213/
 
 ## Q10213: INFO: Window Handles of Global Objects
 
+{% raw %}
+
 	Article: Q10213
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -42,3 +44,5 @@ permalink: /kb/010/Q10213/
 	
 	=============================================================================
 	
+
+{% endraw %}

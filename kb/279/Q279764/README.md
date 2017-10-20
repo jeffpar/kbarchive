@@ -6,6 +6,8 @@ permalink: /kb/279/Q279764/
 
 ## Q279764: PRB: Multiple System Files Errors w/ VB 6.0 App on Windows 2000
 
+{% raw %}
+
 	Article: Q279764
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -106,3 +108,5 @@ permalink: /kb/279/Q279764/
 	
 	=============================================================================
 	
+
+{% endraw %}

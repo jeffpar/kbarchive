@@ -6,6 +6,8 @@ permalink: /kb/207/Q207282/
 
 ## Q207282: PRB: Cannot Use Title Bar to Activate Forms in Converted 2.6 App
 
+{% raw %}
+
 	Article: Q207282
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -108,3 +110,5 @@ permalink: /kb/207/Q207282/
 	
 	=============================================================================
 	
+
+{% endraw %}

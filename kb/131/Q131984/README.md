@@ -6,6 +6,8 @@ permalink: /kb/131/Q131984/
 
 ## Q131984: Windows NT LPR to JetDirect Slower Than HP UX LPR
 
+{% raw %}
+
 	Article: Q131984
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -42,3 +44,5 @@ permalink: /kb/131/Q131984/
 	
 	=============================================================================
 	
+
+{% endraw %}

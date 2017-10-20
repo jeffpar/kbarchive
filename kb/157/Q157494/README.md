@@ -6,6 +6,8 @@ permalink: /kb/157/Q157494/
 
 ## Q157494: PPC 4.0 Cirrus Driver Fails to Redraw &amp; Fill Objects Correctly
 
+{% raw %}
+
 	Article: Q157494
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/157/Q157494/
 	
 	=============================================================================
 	
+
+{% endraw %}

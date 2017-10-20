@@ -6,6 +6,8 @@ permalink: /kb/086/Q86571/
 
 ## Q86571: Earlier Hitachi CD-ROMs May Not Work with Media Player
 
+{% raw %}
+
 	Article: Q86571
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -36,3 +38,5 @@ permalink: /kb/086/Q86571/
 	
 	=============================================================================
 	
+
+{% endraw %}

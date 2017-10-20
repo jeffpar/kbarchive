@@ -6,6 +6,8 @@ permalink: /kb/191/Q191822/
 
 ## Q191822: FTP Service May Cause Deadlock in FTP and Other IIS Services
 
+{% raw %}
+
 	Article: Q191822
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/191/Q191822/
 	
 	=============================================================================
 	
+
+{% endraw %}

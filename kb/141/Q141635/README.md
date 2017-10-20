@@ -6,6 +6,8 @@ permalink: /kb/141/Q141635/
 
 ## Q141635: FIX: ToolTipText Message Blank If Longer Than 50 Characters
 
+{% raw %}
+
 	Article: Q141635
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -76,3 +78,5 @@ permalink: /kb/141/Q141635/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145929/
 
 ## Q145929: PRB: Visual FoxPro Creates Public Variable for ControlSource
 
+{% raw %}
+
 	Article: Q145929
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -94,3 +96,5 @@ permalink: /kb/145/Q145929/
 	
 	=============================================================================
 	
+
+{% endraw %}

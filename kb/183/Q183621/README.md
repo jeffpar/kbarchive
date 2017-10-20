@@ -6,6 +6,8 @@ permalink: /kb/183/Q183621/
 
 ## Q183621: HOWTO: Administer SQL Server Security via RDO and ADO
 
+{% raw %}
+
 	Article: Q183621
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.5,2.0,2.1 SP2,2.5,2.6,5.0,6.0
@@ -140,3 +142,5 @@ permalink: /kb/183/Q183621/
 	
 	=============================================================================
 	
+
+{% endraw %}

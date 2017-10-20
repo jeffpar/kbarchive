@@ -6,6 +6,8 @@ permalink: /kb/180/Q180784/
 
 ## Q180784: Error Message: The File Does Not Exist
 
+{% raw %}
+
 	Article: Q180784
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -88,3 +90,5 @@ permalink: /kb/180/Q180784/
 	
 	=============================================================================
 	
+
+{% endraw %}

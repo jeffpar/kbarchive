@@ -6,6 +6,8 @@ permalink: /kb/159/Q159540/
 
 ## Q159540: SMS: HelpDesk Cannot Reconnect to Windows 95 with Client32
 
+{% raw %}
+
 	Article: Q159540
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -61,3 +63,5 @@ permalink: /kb/159/Q159540/
 	
 	=============================================================================
 	
+
+{% endraw %}

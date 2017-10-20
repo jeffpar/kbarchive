@@ -6,6 +6,8 @@ permalink: /kb/236/Q236616/
 
 ## Q236616: XCLN: The IExpress Deployment Kit ReadMe Text
 
+{% raw %}
+
 	Article: Q236616
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,97,98
@@ -164,3 +166,5 @@ permalink: /kb/236/Q236616/
 	
 	=============================================================================
 	
+
+{% endraw %}

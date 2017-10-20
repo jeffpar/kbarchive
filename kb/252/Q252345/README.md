@@ -6,6 +6,8 @@ permalink: /kb/252/Q252345/
 
 ## Q252345: XADM: Information Store Stops with Access Violation in FEqCAI
 
+{% raw %}
+
 	Article: Q252345
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -94,3 +96,5 @@ permalink: /kb/252/Q252345/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99260/
 
 ## Q99260: PC Forms: Err Msg: Invalid Message
 
+{% raw %}
+
 	Article: Q99260
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -51,3 +53,5 @@ permalink: /kb/099/Q99260/
 	
 	=============================================================================
 	
+
+{% endraw %}

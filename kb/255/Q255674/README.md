@@ -6,6 +6,8 @@ permalink: /kb/255/Q255674/
 
 ## Q255674: Drwtsn32 Does Not Work If User Does Not Have Write Rights
 
+{% raw %}
+
 	Article: Q255674
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -109,3 +111,5 @@ permalink: /kb/255/Q255674/
 	
 	=============================================================================
 	
+
+{% endraw %}

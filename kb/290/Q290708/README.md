@@ -6,6 +6,8 @@ permalink: /kb/290/Q290708/
 
 ## Q290708: PRB: BorderStyle Property May Prevent Taskbar from Appearing
 
+{% raw %}
+
 	Article: Q290708
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -95,3 +97,5 @@ permalink: /kb/290/Q290708/
 	
 	=============================================================================
 	
+
+{% endraw %}

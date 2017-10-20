@@ -6,6 +6,8 @@ permalink: /kb/254/Q254226/
 
 ## Q254226: BUG: Bad Code Generation with Global Optimization
 
+{% raw %}
+
 	Article: Q254226
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -92,3 +94,5 @@ permalink: /kb/254/Q254226/
 	
 	=============================================================================
 	
+
+{% endraw %}

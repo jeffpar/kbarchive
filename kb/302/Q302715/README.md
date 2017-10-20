@@ -6,6 +6,8 @@ permalink: /kb/302/Q302715/
 
 ## Q302715: &quot;Page Cannot Be Displayed&quot; Error When Going Through Signup In MS
 
+{% raw %}
+
 	Article: Q302715
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -49,3 +51,5 @@ permalink: /kb/302/Q302715/
 	
 	=============================================================================
 	
+
+{% endraw %}

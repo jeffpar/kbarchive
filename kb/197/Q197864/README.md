@@ -6,6 +6,8 @@ permalink: /kb/197/Q197864/
 
 ## Q197864: Cannot Ping a WLBS Server from Another WLBS Server
 
+{% raw %}
+
 	Article: Q197864
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/197/Q197864/
 	
 	=============================================================================
 	
+
+{% endraw %}

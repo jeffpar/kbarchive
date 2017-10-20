@@ -6,6 +6,8 @@ permalink: /kb/154/Q154962/
 
 ## Q154962: IIS FTP Server Does Not Use Continuation Character Correctly
 
+{% raw %}
+
 	Article: Q154962
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0
@@ -68,3 +70,5 @@ permalink: /kb/154/Q154962/
 	
 	=============================================================================
 	
+
+{% endraw %}

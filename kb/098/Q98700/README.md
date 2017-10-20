@@ -6,6 +6,8 @@ permalink: /kb/098/Q98700/
 
 ## Q98700: Bit Manipulation in FoxPro for Data Encryption
 
+{% raw %}
+
 	Article: Q98700
 	Product(s): Microsoft FoxPro
 	Version(s): 2.00 2.50 2.50a | 2.50 2.50a 3.0
@@ -74,3 +76,5 @@ permalink: /kb/098/Q98700/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242861/
 
 ## Q242861: XCON: Message Transfer Agent Stops on 9405 Errors
 
+{% raw %}
+
 	Article: Q242861
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -69,3 +71,5 @@ permalink: /kb/242/Q242861/
 	
 	=============================================================================
 	
+
+{% endraw %}

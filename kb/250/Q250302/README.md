@@ -6,6 +6,8 @@ permalink: /kb/250/Q250302/
 
 ## Q250302: XFOR: SMTP Mail Causes Information Store to Stop Responding
 
+{% raw %}
+
 	Article: Q250302
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -105,3 +107,5 @@ permalink: /kb/250/Q250302/
 	
 	=============================================================================
 	
+
+{% endraw %}

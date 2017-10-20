@@ -6,6 +6,8 @@ permalink: /kb/086/Q86874/
 
 ## Q86874: BUG: PrintForm() Does Not Print Ink from Control
 
+{% raw %}
+
 	Article: Q86874
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -56,3 +58,5 @@ permalink: /kb/086/Q86874/
 	
 	=============================================================================
 	
+
+{% endraw %}

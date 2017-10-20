@@ -6,6 +6,8 @@ permalink: /kb/234/Q234971/
 
 ## Q234971: Running Microsoft Access 2000 Comments and Corrections
 
+{% raw %}
+
 	Article: Q234971
 	Product(s): Microsoft Press
 	Version(s): 
@@ -144,3 +146,5 @@ permalink: /kb/234/Q234971/
 	
 	=============================================================================
 	
+
+{% endraw %}

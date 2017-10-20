@@ -6,6 +6,8 @@ permalink: /kb/266/Q266050/
 
 ## Q266050: XADM: Upgrading to Exchange Server 5.5 WP
 
+{% raw %}
+
 	Article: Q266050
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP2
@@ -49,3 +51,5 @@ permalink: /kb/266/Q266050/
 	
 	=============================================================================
 	
+
+{% endraw %}

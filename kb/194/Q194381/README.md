@@ -6,6 +6,8 @@ permalink: /kb/194/Q194381/
 
 ## Q194381: Err Msg: Unknown HTTP Server Type Msiis
 
+{% raw %}
+
 	Article: Q194381
 	Product(s): Word Front Page
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/194/Q194381/
 	
 	=============================================================================
 	
+
+{% endraw %}

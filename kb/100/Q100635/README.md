@@ -6,6 +6,8 @@ permalink: /kb/100/Q100635/
 
 ## Q100635: INFO: Dynamically Loading Dynamic-Link Libraries in Windows NT
 
+{% raw %}
+
 	Article: Q100635
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,4.0,5.0,6.0
@@ -125,3 +127,5 @@ permalink: /kb/100/Q100635/
 	
 	=============================================================================
 	
+
+{% endraw %}

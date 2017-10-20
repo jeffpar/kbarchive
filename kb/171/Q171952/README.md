@@ -6,6 +6,8 @@ permalink: /kb/171/Q171952/
 
 ## Q171952: PRB: MSFlexGrid Doesn't Return All Rows w/UseODBC Data Control
 
+{% raw %}
+
 	Article: Q171952
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -91,3 +93,5 @@ permalink: /kb/171/Q171952/
 	
 	=============================================================================
 	
+
+{% endraw %}

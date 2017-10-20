@@ -6,6 +6,8 @@ permalink: /kb/040/Q40223/
 
 ## Q40223: Logitech Mouse  Driver May Fail in 43/50...Line Mode
 
+{% raw %}
+
 	Article: Q40223
 	Product(s): See article
 	Version(s): 2.00
@@ -25,3 +27,5 @@ permalink: /kb/040/Q40223/
 	If you are having problems with mouse support for high-resolution
 	screens, and you have a Logitech mouse driver, please contact Logitec
 	for an update to the driver software.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/200/Q200781/
 
 ## Q200781: FP: Save Results File Name Is Accessible from HTML Source
 
+{% raw %}
+
 	Article: Q200781
 	Product(s): Word Front Page
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/200/Q200781/
 	
 	=============================================================================
 	
+
+{% endraw %}

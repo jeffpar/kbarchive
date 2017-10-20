@@ -6,6 +6,8 @@ permalink: /kb/125/Q125597/
 
 ## Q125597: SMS Help File (SM32.HLP) Not Installed on Windows 95 Client
 
+{% raw %}
+
 	Article: Q125597
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -42,3 +44,5 @@ permalink: /kb/125/Q125597/
 	
 	=============================================================================
 	
+
+{% endraw %}

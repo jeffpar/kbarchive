@@ -6,6 +6,8 @@ permalink: /kb/149/Q149599/
 
 ## Q149599: PPT7: Internet Assistant Commands Missing, Don't Work
 
+{% raw %}
+
 	Article: Q149599
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 7.0
@@ -83,3 +85,5 @@ permalink: /kb/149/Q149599/
 	
 	=============================================================================
 	
+
+{% endraw %}

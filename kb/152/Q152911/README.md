@@ -6,6 +6,8 @@ permalink: /kb/152/Q152911/
 
 ## Q152911: XADM: FAX Cover Sheet Does Not List Recipients
 
+{% raw %}
+
 	Article: Q152911
 	Product(s): Microsoft Exchange
 	Version(s): MS-DOS:3.2; WINDOWS:3.0,3.2,3.2a,3.5,4.0; winnt:4.0 SP1,4.0 SP2
@@ -67,3 +69,5 @@ permalink: /kb/152/Q152911/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141449/
 
 ## Q141449: BUG: Drag &amp; Drop From DE to Grid Causes Error or FoxPro Quits
 
+{% raw %}
+
 	Article: Q141449
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -97,3 +99,5 @@ permalink: /kb/141/Q141449/
 	
 	=============================================================================
 	
+
+{% endraw %}

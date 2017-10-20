@@ -6,6 +6,8 @@ permalink: /kb/086/Q86493/
 
 ## Q86493: Printing with the Xerox 3700 and Windows 3.1
 
+{% raw %}
+
 	Article: Q86493
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/086/Q86493/
 	
 	=============================================================================
 	
+
+{% endraw %}

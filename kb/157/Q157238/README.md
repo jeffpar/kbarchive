@@ -6,6 +6,8 @@ permalink: /kb/157/Q157238/
 
 ## Q157238: How to Activate Security Event Logging in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q157238
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/157/Q157238/
 	
 	=============================================================================
 	
+
+{% endraw %}

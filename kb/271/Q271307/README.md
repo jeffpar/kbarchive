@@ -6,6 +6,8 @@ permalink: /kb/271/Q271307/
 
 ## Q271307: XWEB: Invalid Calendar Recurrence Causes Looping in Cdo.dll
 
+{% raw %}
+
 	Article: Q271307
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -66,3 +68,5 @@ permalink: /kb/271/Q271307/
 	
 	=============================================================================
 	
+
+{% endraw %}

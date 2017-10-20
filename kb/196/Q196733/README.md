@@ -6,6 +6,8 @@ permalink: /kb/196/Q196733/
 
 ## Q196733: HOWTO: Printing to a AppleShare IP 6.0 Secure Print Queue Fails
 
+{% raw %}
+
 	Article: Q196733
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51,4.0
@@ -98,3 +100,5 @@ permalink: /kb/196/Q196733/
 	
 	=============================================================================
 	
+
+{% endraw %}

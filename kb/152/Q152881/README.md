@@ -6,6 +6,8 @@ permalink: /kb/152/Q152881/
 
 ## Q152881: XCLN: Cannot Send Encrypted Mail to DL with Hidden Recipients
 
+{% raw %}
+
 	Article: Q152881
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -55,3 +57,5 @@ permalink: /kb/152/Q152881/
 	
 	=============================================================================
 	
+
+{% endraw %}

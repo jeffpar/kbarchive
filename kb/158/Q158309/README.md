@@ -6,6 +6,8 @@ permalink: /kb/158/Q158309/
 
 ## Q158309: XFOR: Event ID 178 During Directory Synchronization
 
+{% raw %}
+
 	Article: Q158309
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -89,3 +91,5 @@ permalink: /kb/158/Q158309/
 	
 	=============================================================================
 	
+
+{% endraw %}

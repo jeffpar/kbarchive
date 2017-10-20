@@ -6,6 +6,8 @@ permalink: /kb/194/Q194818/
 
 ## Q194818: XADM: SBS: Event ID 1234 When Starting Exchange Server Services
 
+{% raw %}
+
 	Article: Q194818
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a,5.0,5.5
@@ -66,3 +68,5 @@ permalink: /kb/194/Q194818/
 	
 	=============================================================================
 	
+
+{% endraw %}

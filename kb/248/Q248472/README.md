@@ -6,6 +6,8 @@ permalink: /kb/248/Q248472/
 
 ## Q248472: Training Instructions State That You Are Facing Enemy Planes
 
+{% raw %}
+
 	Article: Q248472
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/248/Q248472/
 	
 	=============================================================================
 	
+
+{% endraw %}

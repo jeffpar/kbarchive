@@ -6,6 +6,8 @@ permalink: /kb/194/Q194619/
 
 ## Q194619: Host Security Group Inadvertently Removed From Start Menu
 
+{% raw %}
+
 	Article: Q194619
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -58,3 +60,5 @@ permalink: /kb/194/Q194619/
 	
 	=============================================================================
 	
+
+{% endraw %}

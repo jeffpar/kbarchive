@@ -6,6 +6,8 @@ permalink: /kb/167/Q167768/
 
 ## Q167768: ODE97: Can't Open RunTime Wrkgadm.exe After Uninstalling Off 97
 
+{% raw %}
+
 	Article: Q167768
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/167/Q167768/
 	
 	=============================================================================
 	
+
+{% endraw %}

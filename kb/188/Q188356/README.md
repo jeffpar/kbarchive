@@ -6,6 +6,8 @@ permalink: /kb/188/Q188356/
 
 ## Q188356: DSMN Synchronization Problem Causes Application Event 8020
 
+{% raw %}
+
 	Article: Q188356
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -92,3 +94,5 @@ permalink: /kb/188/Q188356/
 	
 	=============================================================================
 	
+
+{% endraw %}

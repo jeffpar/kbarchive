@@ -6,6 +6,8 @@ permalink: /kb/146/Q146186/
 
 ## Q146186: XCLN: Delayed Action Message Rules Don't Work With Remote
 
+{% raw %}
+
 	Article: Q146186
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -46,3 +48,5 @@ permalink: /kb/146/Q146186/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177821/
 
 ## Q177821: XCON: Message Transfer Agent Stops Unexpectedly
 
+{% raw %}
+
 	Article: Q177821
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -55,3 +57,5 @@ permalink: /kb/177/Q177821/
 	
 	=============================================================================
 	
+
+{% endraw %}

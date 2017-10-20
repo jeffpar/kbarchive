@@ -6,6 +6,8 @@ permalink: /kb/238/Q238325/
 
 ## Q238325: AC: Unable to Connect to Game Server When Using NAT or ICS
 
+{% raw %}
+
 	Article: Q238325
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -97,3 +99,5 @@ permalink: /kb/238/Q238325/
 	
 	=============================================================================
 	
+
+{% endraw %}

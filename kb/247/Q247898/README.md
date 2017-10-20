@@ -6,6 +6,8 @@ permalink: /kb/247/Q247898/
 
 ## Q247898: Cannot Add LPR Port in Add Printer Wizard on Windows NT 4.0
 
+{% raw %}
+
 	Article: Q247898
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/247/Q247898/
 	
 	=============================================================================
 	
+
+{% endraw %}

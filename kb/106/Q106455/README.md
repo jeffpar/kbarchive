@@ -6,6 +6,8 @@ permalink: /kb/106/Q106455/
 
 ## Q106455: HOWTO: Acquire a List of All CDocument Objects
 
+{% raw %}
+
 	Article: Q106455
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,2.2,4.0
@@ -153,3 +155,5 @@ permalink: /kb/106/Q106455/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/203/Q203492/
 
 ## Q203492: HOWTO: Remove Games from Windows Setup, Add Remove Program
 
+{% raw %}
+
 	Article: Q203492
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95,98,98 Second Edition
@@ -129,3 +131,5 @@ permalink: /kb/203/Q203492/
 	
 	=============================================================================
 	
+
+{% endraw %}

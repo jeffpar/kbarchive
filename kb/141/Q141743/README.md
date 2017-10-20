@@ -6,6 +6,8 @@ permalink: /kb/141/Q141743/
 
 ## Q141743: Mac Art Gallery 1.0: Files Installed During Installation
 
+{% raw %}
+
 	Article: Q141743
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -60,3 +62,5 @@ permalink: /kb/141/Q141743/
 	
 	=============================================================================
 	
+
+{% endraw %}

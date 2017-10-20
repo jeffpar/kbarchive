@@ -6,6 +6,8 @@ permalink: /kb/195/Q195852/
 
 ## Q195852: XFOR: Notification Option Set Incorrectly During Migration
 
+{% raw %}
+
 	Article: Q195852
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -84,3 +86,5 @@ permalink: /kb/195/Q195852/
 	
 	=============================================================================
 	
+
+{% endraw %}

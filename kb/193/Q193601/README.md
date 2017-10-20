@@ -6,6 +6,8 @@ permalink: /kb/193/Q193601/
 
 ## Q193601: Registry Parameters for Windows NT Load Balancing Service
 
+{% raw %}
+
 	Article: Q193601
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0,4.0
@@ -177,3 +179,5 @@ permalink: /kb/193/Q193601/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177278/
 
 ## Q177278: Bookshelf 98: Unable to Open 360 Degree Views
 
+{% raw %}
+
 	Article: Q177278
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -89,3 +91,5 @@ permalink: /kb/177/Q177278/
 	
 	=============================================================================
 	
+
+{% endraw %}

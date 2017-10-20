@@ -6,6 +6,8 @@ permalink: /kb/190/Q190686/
 
 ## Q190686: FIX: ATL Server Registration May Fail for Non-Administrators
 
+{% raw %}
+
 	Article: Q190686
 	Product(s): Microsoft C Compiler
 	Version(s): 2.1,3.0,5.0,6.0
@@ -123,3 +125,5 @@ permalink: /kb/190/Q190686/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151790/
 
 ## Q151790: XFOR: NDR with Diagnostic: 12 Erroneous Content Syntax
 
+{% raw %}
+
 	Article: Q151790
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -67,3 +69,5 @@ permalink: /kb/151/Q151790/
 	
 	=============================================================================
 	
+
+{% endraw %}

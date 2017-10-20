@@ -6,6 +6,8 @@ permalink: /kb/124/Q124382/
 
 ## Q124382: MS-DOS 6.0 Supplemental Files
 
+{% raw %}
+
 	Article: Q124382
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -109,3 +111,5 @@ permalink: /kb/124/Q124382/
 	
 	=============================================================================
 	
+
+{% endraw %}

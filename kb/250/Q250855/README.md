@@ -6,6 +6,8 @@ permalink: /kb/250/Q250855/
 
 ## Q250855: MSB Bugs: How to Obtain the Product Identification Number
 
+{% raw %}
+
 	Article: Q250855
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS|MACINTOS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/250/Q250855/
 	
 	=============================================================================
 	
+
+{% endraw %}

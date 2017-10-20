@@ -6,6 +6,8 @@ permalink: /kb/104/Q104964/
 
 ## Q104964: Games May Hang with Gravis UltraSound Sound Card
 
+{% raw %}
+
 	Article: Q104964
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -84,3 +86,5 @@ permalink: /kb/104/Q104964/
 	
 	=============================================================================
 	
+
+{% endraw %}

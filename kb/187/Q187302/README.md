@@ -6,6 +6,8 @@ permalink: /kb/187/Q187302/
 
 ## Q187302: Stop 0x00000040 in NetBT Protocol
 
+{% raw %}
+
 	Article: Q187302
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/187/Q187302/
 	
 	=============================================================================
 	
+
+{% endraw %}

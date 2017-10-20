@@ -6,6 +6,8 @@ permalink: /kb/151/Q151309/
 
 ## Q151309: Maintenance Manager Copies Files to Root of NetWare Servers
 
+{% raw %}
+
 	Article: Q151309
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -56,3 +58,5 @@ permalink: /kb/151/Q151309/
 	
 	=============================================================================
 	
+
+{% endraw %}

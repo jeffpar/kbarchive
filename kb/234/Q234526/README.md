@@ -6,6 +6,8 @@ permalink: /kb/234/Q234526/
 
 ## Q234526: PRB: Visual SourceSafe 6.0 SP3 Netsetup Installation Problem
 
+{% raw %}
+
 	Article: Q234526
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -205,3 +207,5 @@ permalink: /kb/234/Q234526/
 	
 	=============================================================================
 	
+
+{% endraw %}

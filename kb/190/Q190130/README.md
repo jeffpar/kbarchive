@@ -6,6 +6,8 @@ permalink: /kb/190/Q190130/
 
 ## Q190130: INFO: Description of VB 6.0 Run Time and OLE Automation Files
 
+{% raw %}
+
 	Article: Q190130
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -80,3 +82,5 @@ permalink: /kb/190/Q190130/
 	
 	=============================================================================
 	
+
+{% endraw %}

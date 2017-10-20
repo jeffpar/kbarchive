@@ -6,6 +6,8 @@ permalink: /kb/114/Q114536/
 
 ## Q114536: PRB: C2129 Generated With Forward Reference Used in Prototype
 
+{% raw %}
+
 	Article: Q114536
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,7.0
@@ -83,3 +85,5 @@ permalink: /kb/114/Q114536/
 	
 	=============================================================================
 	
+
+{% endraw %}

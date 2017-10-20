@@ -6,6 +6,8 @@ permalink: /kb/117/Q117724/
 
 ## Q117724: Err Msg: Disk Full &#91;-34&#93; w/Quark Xpress for Macintosh
 
+{% raw %}
+
 	Article: Q117724
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -56,3 +58,5 @@ permalink: /kb/117/Q117724/
 	
 	=============================================================================
 	
+
+{% endraw %}

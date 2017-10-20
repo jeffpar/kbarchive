@@ -6,6 +6,8 @@ permalink: /kb/304/Q304687/
 
 ## Q304687: HOWTO: SSAFE: Select Nondefault Database Location
 
+{% raw %}
+
 	Article: Q304687
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/304/Q304687/
 	
 	=============================================================================
 	
+
+{% endraw %}

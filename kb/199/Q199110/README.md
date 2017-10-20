@@ -6,6 +6,8 @@ permalink: /kb/199/Q199110/
 
 ## Q199110: SMS: How Bandwidth Calculations Differ in SMS 2.0
 
+{% raw %}
+
 	Article: Q199110
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -59,3 +61,5 @@ permalink: /kb/199/Q199110/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170588/
 
 ## Q170588: Snacfg.exe /Addpartner Option Fails in SNA 3.0 SP1
 
+{% raw %}
+
 	Article: Q170588
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -61,3 +63,5 @@ permalink: /kb/170/Q170588/
 	
 	=============================================================================
 	
+
+{% endraw %}

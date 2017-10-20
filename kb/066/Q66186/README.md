@@ -6,6 +6,8 @@ permalink: /kb/066/Q66186/
 
 ## Q66186: Flight Simulator: Coordinates for the Space Needle
 
+{% raw %}
+
 	Article: Q66186
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/066/Q66186/
 	
 	=============================================================================
 	
+
+{% endraw %}

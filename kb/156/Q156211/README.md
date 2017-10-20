@@ -6,6 +6,8 @@ permalink: /kb/156/Q156211/
 
 ## Q156211: Network Virus Checking Programs and Microsoft Windows NT
 
+{% raw %}
+
 	Article: Q156211
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -69,3 +71,5 @@ permalink: /kb/156/Q156211/
 	
 	=============================================================================
 	
+
+{% endraw %}

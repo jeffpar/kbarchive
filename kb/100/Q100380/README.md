@@ -6,6 +6,8 @@ permalink: /kb/100/Q100380/
 
 ## Q100380: Pictures with More than 16 Colors Look Bad in JigSawed
 
+{% raw %}
+
 	Article: Q100380
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -40,3 +42,5 @@ permalink: /kb/100/Q100380/
 	
 	=============================================================================
 	
+
+{% endraw %}

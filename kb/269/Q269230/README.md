@@ -6,6 +6,8 @@ permalink: /kb/269/Q269230/
 
 ## Q269230: WD97: Hard to Control Mouse When You Select Text
 
+{% raw %}
+
 	Article: Q269230
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -116,3 +118,5 @@ permalink: /kb/269/Q269230/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139060/
 
 ## Q139060: Cannot Resolve TCP/IP Names with 32-Bit Programs
 
+{% raw %}
+
 	Article: Q139060
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -129,3 +131,5 @@ permalink: /kb/139/Q139060/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166686/
 
 ## Q166686: English Text in Error Message on Non-English Windows NT
 
+{% raw %}
+
 	Article: Q166686
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/166/Q166686/
 	
 	=============================================================================
 	
+
+{% endraw %}

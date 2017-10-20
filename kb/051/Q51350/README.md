@@ -6,6 +6,8 @@ permalink: /kb/051/Q51350/
 
 ## Q51350: Mac GW: Gateway Recipients Propagate Only to Access Servers
 
+{% raw %}
+
 	Article: Q51350
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -50,3 +52,5 @@ permalink: /kb/051/Q51350/
 	
 	=============================================================================
 	
+
+{% endraw %}

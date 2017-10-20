@@ -6,6 +6,8 @@ permalink: /kb/152/Q152909/
 
 ## Q152909: XCLN: Profiles Not Migrated in Upgrade from Win16 to Win95
 
+{% raw %}
+
 	Article: Q152909
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0; winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/152/Q152909/
 	
 	=============================================================================
 	
+
+{% endraw %}

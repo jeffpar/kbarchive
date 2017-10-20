@@ -6,6 +6,8 @@ permalink: /kb/221/Q221992/
 
 ## Q221992: HOWTO: Add Support for Hosting VBScript to Your MFC Application
 
+{% raw %}
+
 	Article: Q221992
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -359,3 +361,5 @@ permalink: /kb/221/Q221992/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192194/
 
 ## Q192194: Nothing Happens When You Open Display Properties
 
+{% raw %}
+
 	Article: Q192194
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/192/Q192194/
 	
 	=============================================================================
 	
+
+{% endraw %}

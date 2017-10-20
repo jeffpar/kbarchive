@@ -6,6 +6,8 @@ permalink: /kb/182/Q182515/
 
 ## Q182515: XADM: Admin Program Does Not Save Customized Toolbar Changes
 
+{% raw %}
+
 	Article: Q182515
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -53,3 +55,5 @@ permalink: /kb/182/Q182515/
 	
 	=============================================================================
 	
+
+{% endraw %}

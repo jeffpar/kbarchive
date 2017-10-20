@@ -6,6 +6,8 @@ permalink: /kb/108/Q108165/
 
 ## Q108165: PRB: Cannot Read from Drive &lt;Drive Letter&gt;
 
+{% raw %}
+
 	Article: Q108165
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 2.50b 3.00 5.00 | 2.5
@@ -90,3 +92,5 @@ permalink: /kb/108/Q108165/
 	
 	=============================================================================
 	
+
+{% endraw %}

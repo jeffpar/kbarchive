@@ -6,6 +6,8 @@ permalink: /kb/157/Q157136/
 
 ## Q157136: WD97: Clip Gallery Video Displays Control Bar, Becomes Static
 
+{% raw %}
+
 	Article: Q157136
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -64,3 +66,5 @@ permalink: /kb/157/Q157136/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/057/Q57776/
 
 ## Q57776: PLAY and SOUND Click Speaker in QuickBASIC; OUT Clicks Less
 
+{% raw %}
+
 	Article: Q57776
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -69,3 +71,5 @@ permalink: /kb/057/Q57776/
 	NEXT
 	OUT &H61, old.port             ' turn speaker off
 	END
+
+{% endraw %}

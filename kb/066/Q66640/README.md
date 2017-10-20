@@ -6,6 +6,8 @@ permalink: /kb/066/Q66640/
 
 ## Q66640: SAMPLE: Increasing the File Handle Limit with SetHandleCount
 
+{% raw %}
+
 	Article: Q66640
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -97,3 +99,5 @@ permalink: /kb/066/Q66640/
 	
 	=============================================================================
 	
+
+{% endraw %}

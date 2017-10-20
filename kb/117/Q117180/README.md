@@ -6,6 +6,8 @@ permalink: /kb/117/Q117180/
 
 ## Q117180: Mac Cinemania 94: System Stops If Installing Under System 6.0
 
+{% raw %}
+
 	Article: Q117180
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -44,3 +46,5 @@ permalink: /kb/117/Q117180/
 	
 	=============================================================================
 	
+
+{% endraw %}

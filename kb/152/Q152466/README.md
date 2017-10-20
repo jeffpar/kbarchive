@@ -6,6 +6,8 @@ permalink: /kb/152/Q152466/
 
 ## Q152466: SMS: Restoring SMS Services to the Registry
 
+{% raw %}
+
 	Article: Q152466
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -80,3 +82,5 @@ permalink: /kb/152/Q152466/
 	
 	=============================================================================
 	
+
+{% endraw %}

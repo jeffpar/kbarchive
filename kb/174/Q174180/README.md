@@ -6,6 +6,8 @@ permalink: /kb/174/Q174180/
 
 ## Q174180: Err Msg: The Wininet.dll File Is Linked to the Missing Export...
 
+{% raw %}
+
 	Article: Q174180
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,4.0
@@ -127,3 +129,5 @@ permalink: /kb/174/Q174180/
 	
 	=============================================================================
 	
+
+{% endraw %}

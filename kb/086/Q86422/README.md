@@ -6,6 +6,8 @@ permalink: /kb/086/Q86422/
 
 ## Q86422: CalComp Printer Drivers for Windows
 
+{% raw %}
+
 	Article: Q86422
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/086/Q86422/
 	
 	=============================================================================
 	
+
+{% endraw %}

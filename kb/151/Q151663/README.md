@@ -6,6 +6,8 @@ permalink: /kb/151/Q151663/
 
 ## Q151663: PRB: Memory Leak in MFC Using ODBC Oracle Driver on Win 95
 
+{% raw %}
+
 	Article: Q151663
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00 4.10
@@ -100,3 +102,5 @@ permalink: /kb/151/Q151663/
 	
 	=============================================================================
 	
+
+{% endraw %}

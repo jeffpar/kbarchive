@@ -6,6 +6,8 @@ permalink: /kb/169/Q169026/
 
 ## Q169026: Virtual Motion RAS Manager in 4.0 Reskit May Cause Event 4001
 
+{% raw %}
+
 	Article: Q169026
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/169/Q169026/
 	
 	=============================================================================
 	
+
+{% endraw %}

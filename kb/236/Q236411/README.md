@@ -6,6 +6,8 @@ permalink: /kb/236/Q236411/
 
 ## Q236411: DNS Event Log Key Does Not Work as Expected
 
+{% raw %}
+
 	Article: Q236411
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -100,3 +102,5 @@ permalink: /kb/236/Q236411/
 	
 	=============================================================================
 	
+
+{% endraw %}

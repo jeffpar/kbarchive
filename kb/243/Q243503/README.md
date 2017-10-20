@@ -6,6 +6,8 @@ permalink: /kb/243/Q243503/
 
 ## Q243503: FIX: Platform SDK Prevents MFC Projects from Compiling
 
+{% raw %}
+
 	Article: Q243503
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -135,3 +137,5 @@ permalink: /kb/243/Q243503/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/221/Q221154/
 
 ## Q221154: CGI Application Unable to Parse STDIN During Redirection
 
+{% raw %}
+
 	Article: Q221154
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/221/Q221154/
 	
 	=============================================================================
 	
+
+{% endraw %}

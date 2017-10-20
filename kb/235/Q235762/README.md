@@ -6,6 +6,8 @@ permalink: /kb/235/Q235762/
 
 ## Q235762: SMS: NT_Logon_Server_Manager Enumerates All Shares on DCs
 
+{% raw %}
+
 	Article: Q235762
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -73,3 +75,5 @@ permalink: /kb/235/Q235762/
 	
 	=============================================================================
 	
+
+{% endraw %}

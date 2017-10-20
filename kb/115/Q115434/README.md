@@ -6,6 +6,8 @@ permalink: /kb/115/Q115434/
 
 ## Q115434: Setup Does Not Write Files to Automounted Uninstall Disk
 
+{% raw %}
+
 	Article: Q115434
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -42,3 +44,5 @@ permalink: /kb/115/Q115434/
 	
 	=============================================================================
 	
+
+{% endraw %}

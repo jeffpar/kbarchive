@@ -6,6 +6,8 @@ permalink: /kb/065/Q65302/
 
 ## Q65302: Warning C4056: &quot;Overflow in Constant Arithmetic&quot; May Be Wrong
 
+{% raw %}
+
 	Article: Q65302
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -70,3 +72,5 @@ permalink: /kb/065/Q65302/
 	Microsoft has confirmed this to be a problem with C versions 6.00 and
 	6.00a. We are researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

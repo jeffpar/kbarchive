@@ -6,6 +6,8 @@ permalink: /kb/162/Q162620/
 
 ## Q162620: BUG: Setup Incorrectly Prompts to Overwrite Existing Files
 
+{% raw %}
+
 	Article: Q162620
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -139,3 +141,5 @@ permalink: /kb/162/Q162620/
 	
 	=============================================================================
 	
+
+{% endraw %}

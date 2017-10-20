@@ -6,6 +6,8 @@ permalink: /kb/142/Q142628/
 
 ## Q142628: Stop 0x23 Errors in Fastfat.sys
 
+{% raw %}
+
 	Article: Q142628
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -61,3 +63,5 @@ permalink: /kb/142/Q142628/
 	
 	=============================================================================
 	
+
+{% endraw %}

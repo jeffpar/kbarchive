@@ -6,6 +6,8 @@ permalink: /kb/196/Q196844/
 
 ## Q196844: WD97: &quot;Merge to Electronic Fax&quot; Unavailable with Winfax Pro
 
+{% raw %}
+
 	Article: Q196844
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -111,3 +113,5 @@ permalink: /kb/196/Q196844/
 	
 	=============================================================================
 	
+
+{% endraw %}

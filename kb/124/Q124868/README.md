@@ -6,6 +6,8 @@ permalink: /kb/124/Q124868/
 
 ## Q124868: Cinemania 1995: Display Requirements on Box Are Incorrect
 
+{% raw %}
+
 	Article: Q124868
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -70,3 +72,5 @@ permalink: /kb/124/Q124868/
 	
 	=============================================================================
 	
+
+{% endraw %}

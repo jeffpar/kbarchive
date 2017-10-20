@@ -6,6 +6,8 @@ permalink: /kb/100/Q100706/
 
 ## Q100706: SMTP: Err Msg: Read: (52) Network Dropped Connection or Reset
 
+{% raw %}
+
 	Article: Q100706
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -59,3 +61,5 @@ permalink: /kb/100/Q100706/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177722/
 
 ## Q177722: PRB: SQL Server Stores One-Character String with Empty String
 
+{% raw %}
+
 	Article: Q177722
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -126,3 +128,5 @@ permalink: /kb/177/Q177722/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132058/
 
 ## Q132058: PC Win: GP-Fault in DEMILAYR.DLL Caused by Corrupt XTN File
 
+{% raw %}
+
 	Article: Q132058
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -48,3 +50,5 @@ permalink: /kb/132/Q132058/
 	
 	=============================================================================
 	
+
+{% endraw %}

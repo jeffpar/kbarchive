@@ -6,6 +6,8 @@ permalink: /kb/160/Q160670/
 
 ## Q160670: FPSCR is Not Being Saved Across Thread Context Switches
 
+{% raw %}
+
 	Article: Q160670
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/160/Q160670/
 	
 	=============================================================================
 	
+
+{% endraw %}

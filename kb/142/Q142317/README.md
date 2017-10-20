@@ -6,6 +6,8 @@ permalink: /kb/142/Q142317/
 
 ## Q142317: HOWTO: How to Create a Minimized/Maximized MDI Child Window
 
+{% raw %}
+
 	Article: Q142317
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,2.2,4.0
@@ -71,3 +73,5 @@ permalink: /kb/142/Q142317/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/294/Q294549/
 
 ## Q294549: FP: How to Use the Windows Media Player ActiveX Control
 
+{% raw %}
+
 	Article: Q294549
 	Product(s): Word Front Page
 	Version(s): 
@@ -116,3 +118,5 @@ permalink: /kb/294/Q294549/
 	
 	=============================================================================
 	
+
+{% endraw %}

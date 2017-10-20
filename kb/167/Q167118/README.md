@@ -6,6 +6,8 @@ permalink: /kb/167/Q167118/
 
 ## Q167118: Single Line Edit Controls Support the ES_RIGHT Style
 
+{% raw %}
+
 	Article: Q167118
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/167/Q167118/
 	
 	=============================================================================
 	
+
+{% endraw %}

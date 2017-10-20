@@ -6,6 +6,8 @@ permalink: /kb/186/Q186447/
 
 ## Q186447: FP: Image Size Incorrect After Cropping/Enlarging
 
+{% raw %}
+
 	Article: Q186447
 	Product(s): Word Front Page
 	Version(s): MACINTOSH:1.0; WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/186/Q186447/
 	
 	=============================================================================
 	
+
+{% endraw %}

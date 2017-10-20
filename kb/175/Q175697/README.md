@@ -6,6 +6,8 @@ permalink: /kb/175/Q175697/
 
 ## Q175697: XWEB: Read Next Message Arrow Works Incorrectly After Move
 
+{% raw %}
+
 	Article: Q175697
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -51,3 +53,5 @@ permalink: /kb/175/Q175697/
 	
 	=============================================================================
 	
+
+{% endraw %}

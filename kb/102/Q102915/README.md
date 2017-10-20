@@ -6,6 +6,8 @@ permalink: /kb/102/Q102915/
 
 ## Q102915: Scenes 1.0: Scenes Must Have Control of Palette
 
+{% raw %}
+
 	Article: Q102915
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/102/Q102915/
 	
 	=============================================================================
 	
+
+{% endraw %}

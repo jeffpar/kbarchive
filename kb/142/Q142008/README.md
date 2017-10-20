@@ -6,6 +6,8 @@ permalink: /kb/142/Q142008/
 
 ## Q142008: FPNW Options Are Not Available Under User Manager
 
+{% raw %}
+
 	Article: Q142008
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -74,3 +76,5 @@ permalink: /kb/142/Q142008/
 	
 	=============================================================================
 	
+
+{% endraw %}

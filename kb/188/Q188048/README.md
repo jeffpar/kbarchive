@@ -6,6 +6,8 @@ permalink: /kb/188/Q188048/
 
 ## Q188048: SMS: Smsboot.exe Description and Syntax
 
+{% raw %}
+
 	Article: Q188048
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -65,3 +67,5 @@ permalink: /kb/188/Q188048/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149206/
 
 ## Q149206: Networks That Are No Longer Supported with Windows 95
 
+{% raw %}
+
 	Article: Q149206
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -83,3 +85,5 @@ permalink: /kb/149/Q149206/
 	
 	=============================================================================
 	
+
+{% endraw %}

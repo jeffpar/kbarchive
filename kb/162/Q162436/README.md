@@ -6,6 +6,8 @@ permalink: /kb/162/Q162436/
 
 ## Q162436: WD97: Float Over Text Option Unavailable Recording Macro
 
+{% raw %}
+
 	Article: Q162436
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -115,3 +117,5 @@ permalink: /kb/162/Q162436/
 	
 	=============================================================================
 	
+
+{% endraw %}

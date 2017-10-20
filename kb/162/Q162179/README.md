@@ -6,6 +6,8 @@ permalink: /kb/162/Q162179/
 
 ## Q162179: TCP Fast Retransmit and Recovery Added in WinNT 4.0 SP2
 
+{% raw %}
+
 	Article: Q162179
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -141,3 +143,5 @@ permalink: /kb/162/Q162179/
 	
 	=============================================================================
 	
+
+{% endraw %}

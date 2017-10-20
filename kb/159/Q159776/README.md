@@ -6,6 +6,8 @@ permalink: /kb/159/Q159776/
 
 ## Q159776: FIX: VC++ Crash When Adding Test Case Under Source-Code Control
 
+{% raw %}
+
 	Article: Q159776
 	Product(s): Microsoft SourceSafe
 	Version(s): 3.0 4.0 4.1 4.2
@@ -85,3 +87,5 @@ permalink: /kb/159/Q159776/
 	
 	=============================================================================
 	
+
+{% endraw %}

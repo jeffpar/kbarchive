@@ -6,6 +6,8 @@ permalink: /kb/084/Q84323/
 
 ## Q84323: PRB: Unexpected &quot;This Program Requires Microsoft Windows&quot; Msg
 
+{% raw %}
+
 	Article: Q84323
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:5.0x,5.1x,5.2,5.3x,5.5; OS/2:5.0x,5.1,5.11,5.13,5.15
@@ -108,3 +110,5 @@ permalink: /kb/084/Q84323/
 	
 	=============================================================================
 	
+
+{% endraw %}

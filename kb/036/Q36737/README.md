@@ -6,6 +6,8 @@ permalink: /kb/036/Q36737/
 
 ## Q36737: Longer Variable Names Take No Extra Space in .EXE Program
 
+{% raw %}
+
 	Article: Q36737
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -43,3 +45,5 @@ permalink: /kb/036/Q36737/
 	
 	However, within the QB.EXE program development environment, all text
 	in the source file occupies memory, including long variable names.
+
+{% endraw %}

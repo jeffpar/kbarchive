@@ -6,6 +6,8 @@ permalink: /kb/073/Q73184/
 
 ## Q73184: BUG: Crash with frexp() in Small or Medium Model DLL
 
+{% raw %}
+
 	Article: Q73184
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -42,3 +44,5 @@ permalink: /kb/073/Q73184/
 	
 	=============================================================================
 	
+
+{% endraw %}

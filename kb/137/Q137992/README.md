@@ -6,6 +6,8 @@ permalink: /kb/137/Q137992/
 
 ## Q137992: Readme.txt File from Drivers Folder on Windows 95 CD-ROM
 
+{% raw %}
+
 	Article: Q137992
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -135,3 +137,5 @@ permalink: /kb/137/Q137992/
 	
 	=============================================================================
 	
+
+{% endraw %}

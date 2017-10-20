@@ -6,6 +6,8 @@ permalink: /kb/041/Q41673/
 
 ## Q41673: QuickC 2.00 README.DOC: Linking QC 2.00 Programs for Windows
 
+{% raw %}
+
 	Article: Q41673
 	Product(s): See article
 	Version(s): 2.00
@@ -39,3 +41,5 @@ permalink: /kb/041/Q41673/
 	   .DEF file and with the _export keyword in a .C file. It can be
 	   safely ignored. You can eliminate it by removing one or the other
 	   of the export declarations for the name.
+
+{% endraw %}

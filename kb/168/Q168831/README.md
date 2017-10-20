@@ -6,6 +6,8 @@ permalink: /kb/168/Q168831/
 
 ## Q168831: PRB: Older MFC OCX Controls Incompatible with Visual Basic 4.0
 
+{% raw %}
+
 	Article: Q168831
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/168/Q168831/
 	
 	=============================================================================
 	
+
+{% endraw %}

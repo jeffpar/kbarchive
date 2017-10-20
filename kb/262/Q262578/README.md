@@ -6,6 +6,8 @@ permalink: /kb/262/Q262578/
 
 ## Q262578: XADM: Add Move User Event Logging
 
+{% raw %}
+
 	Article: Q262578
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -90,3 +92,5 @@ permalink: /kb/262/Q262578/
 	
 	=============================================================================
 	
+
+{% endraw %}

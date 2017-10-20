@@ -6,6 +6,8 @@ permalink: /kb/257/Q257686/
 
 ## Q257686: FIX: Double-Clicking ListBox Control Causes Invalid Page Fault
 
+{% raw %}
+
 	Article: Q257686
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -159,3 +161,5 @@ permalink: /kb/257/Q257686/
 	
 	=============================================================================
 	
+
+{% endraw %}

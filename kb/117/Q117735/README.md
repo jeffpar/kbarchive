@@ -6,6 +6,8 @@ permalink: /kb/117/Q117735/
 
 ## Q117735: Technical Support for the Chinon CD-ROM Drive
 
+{% raw %}
+
 	Article: Q117735
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5
@@ -59,3 +61,5 @@ permalink: /kb/117/Q117735/
 	
 	=============================================================================
 	
+
+{% endraw %}

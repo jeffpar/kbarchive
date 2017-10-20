@@ -6,6 +6,8 @@ permalink: /kb/043/Q43187/
 
 ## Q43187: Mac Wkst: Diamond Displayed Next to Microsoft Mail DA
 
+{% raw %}
+
 	Article: Q43187
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -44,3 +46,5 @@ permalink: /kb/043/Q43187/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157600/
 
 ## Q157600: Golf: Installation Troubleshooting
 
+{% raw %}
+
 	Article: Q157600
 	Product(s): Microsoft Home Games
 	Version(s): 3.0
@@ -112,3 +114,5 @@ permalink: /kb/157/Q157600/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85652/
 
 ## Q85652: PC MAPI: Alert Displayed with Invalid User Name or Password
 
+{% raw %}
+
 	Article: Q85652
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -42,3 +44,5 @@ permalink: /kb/085/Q85652/
 	
 	=============================================================================
 	
+
+{% endraw %}

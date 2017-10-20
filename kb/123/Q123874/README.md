@@ -6,6 +6,8 @@ permalink: /kb/123/Q123874/
 
 ## Q123874: PRB: Section Names Truncated to Eight Characters When Linked
 
+{% raw %}
+
 	Article: Q123874
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -76,3 +78,5 @@ permalink: /kb/123/Q123874/
 	
 	=============================================================================
 	
+
+{% endraw %}

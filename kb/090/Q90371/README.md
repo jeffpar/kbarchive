@@ -6,6 +6,8 @@ permalink: /kb/090/Q90371/
 
 ## Q90371: NetBIOS Applications and Windows for Workgroups
 
+{% raw %}
+
 	Article: Q90371
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -81,3 +83,5 @@ permalink: /kb/090/Q90371/
 	
 	=============================================================================
 	
+
+{% endraw %}

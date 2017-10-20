@@ -6,6 +6,8 @@ permalink: /kb/219/Q219274/
 
 ## Q219274: Rise of Rome Trial Edition: Cannot Export Punic War Campaign
 
+{% raw %}
+
 	Article: Q219274
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/219/Q219274/
 	
 	=============================================================================
 	
+
+{% endraw %}

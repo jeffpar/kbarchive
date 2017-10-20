@@ -6,6 +6,8 @@ permalink: /kb/138/Q138479/
 
 ## Q138479: INFO: Required Rights for SourceSafe Commands
 
+{% raw %}
+
 	Article: Q138479
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,5.0,6.0
@@ -101,3 +103,5 @@ permalink: /kb/138/Q138479/
 	
 	=============================================================================
 	
+
+{% endraw %}

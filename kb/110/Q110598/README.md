@@ -6,6 +6,8 @@ permalink: /kb/110/Q110598/
 
 ## Q110598: PRB: Spontaneous Assembly and MASM 6.11 Errors
 
+{% raw %}
+
 	Article: Q110598
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.11
@@ -68,3 +70,5 @@ permalink: /kb/110/Q110598/
 	
 	=============================================================================
 	
+
+{% endraw %}

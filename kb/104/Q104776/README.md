@@ -6,6 +6,8 @@ permalink: /kb/104/Q104776/
 
 ## Q104776: BUG: Endless Loop in Code Containing Graphics &amp; Compiled -Ox
 
+{% raw %}
+
 	Article: Q104776
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -80,3 +82,5 @@ permalink: /kb/104/Q104776/
 	
 	=============================================================================
 	
+
+{% endraw %}

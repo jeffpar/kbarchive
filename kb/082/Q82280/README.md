@@ -6,6 +6,8 @@ permalink: /kb/082/Q82280/
 
 ## Q82280: DOCERR: To Debug P-Code, TOOLS.INI Requires MODEL: Not MODEL=
 
+{% raw %}
+
 	Article: Q82280
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01
@@ -71,3 +73,5 @@ permalink: /kb/082/Q82280/
 	
 	=============================================================================
 	
+
+{% endraw %}

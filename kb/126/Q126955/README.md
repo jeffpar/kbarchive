@@ -6,6 +6,8 @@ permalink: /kb/126/Q126955/
 
 ## Q126955: PRB: Where to Put EXTERNAL ARRAY in a Form
 
+{% raw %}
+
 	Article: Q126955
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/126/Q126955/
 	
 	=============================================================================
 	
+
+{% endraw %}

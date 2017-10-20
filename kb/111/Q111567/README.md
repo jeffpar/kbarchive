@@ -6,6 +6,8 @@ permalink: /kb/111/Q111567/
 
 ## Q111567: WFWG Setup with HP Ethertwist Cards: No Network Installed
 
+{% raw %}
+
 	Article: Q111567
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/111/Q111567/
 	
 	=============================================================================
 	
+
+{% endraw %}

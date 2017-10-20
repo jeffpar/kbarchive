@@ -6,6 +6,8 @@ permalink: /kb/065/Q65541/
 
 ## Q65541: How to Interpret 12-Bit FATs
 
+{% raw %}
+
 	Article: Q65541
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -147,3 +149,5 @@ permalink: /kb/065/Q65541/
 	
 	=============================================================================
 	
+
+{% endraw %}

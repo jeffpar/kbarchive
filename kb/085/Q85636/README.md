@@ -6,6 +6,8 @@ permalink: /kb/085/Q85636/
 
 ## Q85636: AMI BIOS POST Beep Codes
 
+{% raw %}
+
 	Article: Q85636
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:1.x,2.x,3.x,4.x,5.x,6.x
@@ -68,3 +70,5 @@ permalink: /kb/085/Q85636/
 	
 	=============================================================================
 	
+
+{% endraw %}

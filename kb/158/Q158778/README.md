@@ -6,6 +6,8 @@ permalink: /kb/158/Q158778/
 
 ## Q158778: Mac Encarta 97: Color Printing Causes Hang with Low Memory
 
+{% raw %}
+
 	Article: Q158778
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -57,3 +59,5 @@ permalink: /kb/158/Q158778/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134372/
 
 ## Q134372: PROFS: Reply All Feature Not Supported
 
+{% raw %}
+
 	Article: Q134372
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0,3.2; WINDOWS:3.2
@@ -61,3 +63,5 @@ permalink: /kb/134/Q134372/
 	
 	=============================================================================
 	
+
+{% endraw %}

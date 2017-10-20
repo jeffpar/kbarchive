@@ -6,6 +6,8 @@ permalink: /kb/151/Q151703/
 
 ## Q151703: FIX: Cannot Print a SourceSafe Report From Windows 95
 
+{% raw %}
+
 	Article: Q151703
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0
@@ -130,3 +132,5 @@ permalink: /kb/151/Q151703/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235687/
 
 ## Q235687: FIX:Error 0xC00E0022 Receiving a Mess per MSMQ-MQSeries Bridge
 
+{% raw %}
+
 	Article: Q235687
 	Product(s): Microsoft SNA Server
 	Version(s): ; WINDOWS:4.0 SP2
@@ -63,3 +65,5 @@ permalink: /kb/235/Q235687/
 	
 	=============================================================================
 	
+
+{% endraw %}

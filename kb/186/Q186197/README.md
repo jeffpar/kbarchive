@@ -6,6 +6,8 @@ permalink: /kb/186/Q186197/
 
 ## Q186197: XCLN: Admin Mode Setup Suggests Exchange as Default Directory
 
+{% raw %}
+
 	Article: Q186197
 	Product(s): Microsoft Exchange
 	Version(s): 8.0
@@ -45,3 +47,5 @@ permalink: /kb/186/Q186197/
 	
 	=============================================================================
 	
+
+{% endraw %}

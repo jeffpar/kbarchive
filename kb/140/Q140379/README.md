@@ -6,6 +6,8 @@ permalink: /kb/140/Q140379/
 
 ## Q140379: MainStream Exabyte Tape Drives Need Firmware Upgrade
 
+{% raw %}
+
 	Article: Q140379
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51
@@ -48,3 +50,5 @@ permalink: /kb/140/Q140379/
 	
 	=============================================================================
 	
+
+{% endraw %}

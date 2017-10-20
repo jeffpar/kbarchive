@@ -6,6 +6,8 @@ permalink: /kb/033/Q33493/
 
 ## Q33493: Ventura Publisher 1.1 Freezes Serial Mouse
 
+{% raw %}
+
 	Article: Q33493
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a
@@ -53,3 +55,5 @@ permalink: /kb/033/Q33493/
 	
 	=============================================================================
 	
+
+{% endraw %}

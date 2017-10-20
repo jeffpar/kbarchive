@@ -6,6 +6,8 @@ permalink: /kb/140/Q140448/
 
 ## Q140448: XADM: Errors Processing Incoming Replication Messages
 
+{% raw %}
+
 	Article: Q140448
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/140/Q140448/
 	
 	=============================================================================
 	
+
+{% endraw %}

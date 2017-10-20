@@ -6,6 +6,8 @@ permalink: /kb/124/Q124733/
 
 ## Q124733: Custom Forms Not Available for Selection in Epson LQ-850
 
+{% raw %}
+
 	Article: Q124733
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -65,3 +67,5 @@ permalink: /kb/124/Q124733/
 	
 	=============================================================================
 	
+
+{% endraw %}

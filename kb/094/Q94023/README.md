@@ -6,6 +6,8 @@ permalink: /kb/094/Q94023/
 
 ## Q94023: MS-DOS Kernel Is Larger Than 60K
 
+{% raw %}
+
 	Article: Q94023
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -66,3 +68,5 @@ permalink: /kb/094/Q94023/
 	
 	=============================================================================
 	
+
+{% endraw %}

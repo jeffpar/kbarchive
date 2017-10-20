@@ -6,6 +6,8 @@ permalink: /kb/095/Q95874/
 
 ## Q95874: WFWG: Network Applications Unable to Find NetBIOS
 
+{% raw %}
+
 	Article: Q95874
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -75,3 +77,5 @@ permalink: /kb/095/Q95874/
 	
 	=============================================================================
 	
+
+{% endraw %}

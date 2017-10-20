@@ -6,6 +6,8 @@ permalink: /kb/135/Q135351/
 
 ## Q135351: PC Forms: MEFPKG.DAT File Size Limited to 64K
 
+{% raw %}
+
 	Article: Q135351
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0
@@ -54,3 +56,5 @@ permalink: /kb/135/Q135351/
 	
 	=============================================================================
 	
+
+{% endraw %}

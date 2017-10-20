@@ -6,6 +6,8 @@ permalink: /kb/221/Q221308/
 
 ## Q221308: NumberOfRings=0 Does Not Work for RRAS Auto-Answer in WinNT4.0
 
+{% raw %}
+
 	Article: Q221308
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/221/Q221308/
 	
 	=============================================================================
 	
+
+{% endraw %}

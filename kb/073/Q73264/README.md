@@ -6,6 +6,8 @@ permalink: /kb/073/Q73264/
 
 ## Q73264: Setup Unable to Upgrade Disk Manager Partitions &gt; 512 MB
 
+{% raw %}
+
 	Article: Q73264
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -53,3 +55,5 @@ permalink: /kb/073/Q73264/
 	
 	=============================================================================
 	
+
+{% endraw %}

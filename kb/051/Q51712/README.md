@@ -6,6 +6,8 @@ permalink: /kb/051/Q51712/
 
 ## Q51712: HOWTO: Use the Token Pasting Operator in Microsoft C
 
+{% raw %}
+
 	Article: Q51712
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:; WINDOWS:1.0,1.5; winnt:1.0,2.0,4.0,5.0,6.0
@@ -127,3 +129,5 @@ permalink: /kb/051/Q51712/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/277/Q277896/
 
 ## Q277896: Transition From MSN E-mail To MSN Explorer E-mail
 
+{% raw %}
+
 	Article: Q277896
 	Product(s): The Microsoft Network
 	Version(s): 5.3,6.0,6.1
@@ -122,3 +124,5 @@ permalink: /kb/277/Q277896/
 	
 	=============================================================================
 	
+
+{% endraw %}

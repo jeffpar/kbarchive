@@ -6,6 +6,8 @@ permalink: /kb/082/Q82718/
 
 ## Q82718: Norton Desktop for Windows Has a Repaint Problem
 
+{% raw %}
+
 	Article: Q82718
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -44,3 +46,5 @@ permalink: /kb/082/Q82718/
 	
 	=============================================================================
 	
+
+{% endraw %}

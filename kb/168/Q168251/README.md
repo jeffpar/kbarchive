@@ -6,6 +6,8 @@ permalink: /kb/168/Q168251/
 
 ## Q168251: FIX: Odbccp32.lib Requires Msvcrt.lib to Compiler
 
+{% raw %}
+
 	Article: Q168251
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.0
@@ -65,3 +67,5 @@ permalink: /kb/168/Q168251/
 	
 	=============================================================================
 	
+
+{% endraw %}

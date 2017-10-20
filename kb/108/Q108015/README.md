@@ -6,6 +6,8 @@ permalink: /kb/108/Q108015/
 
 ## Q108015: MS-DOS 6.0 and 6.2 Setup Move EDIT.BAT to OLD_DOS.1
 
+{% raw %}
+
 	Article: Q108015
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2
@@ -50,3 +52,5 @@ permalink: /kb/108/Q108015/
 	
 	=============================================================================
 	
+
+{% endraw %}

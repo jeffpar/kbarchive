@@ -6,6 +6,8 @@ permalink: /kb/075/Q75689/
 
 ## Q75689: Using Bernoulli Driver Version 7.0 or Later with MS-DOS
 
+{% raw %}
+
 	Article: Q75689
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -65,3 +67,5 @@ permalink: /kb/075/Q75689/
 	
 	=============================================================================
 	
+
+{% endraw %}

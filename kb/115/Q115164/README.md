@@ -6,6 +6,8 @@ permalink: /kb/115/Q115164/
 
 ## Q115164: PC MAPI: Errors When Compiling Sample in Visual Basic
 
+{% raw %}
+
 	Article: Q115164
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b
@@ -78,3 +80,5 @@ permalink: /kb/115/Q115164/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176387/
 
 ## Q176387: Err Msg: You Must Have Cinemania Installed on Your Machine...
 
+{% raw %}
+
 	Article: Q176387
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -77,3 +79,5 @@ permalink: /kb/176/Q176387/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248350/
 
 ## Q248350: Kerberos Authentication Fails after Upgrading from IIS 4.0 to II
 
+{% raw %}
+
 	Article: Q248350
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -114,3 +116,5 @@ permalink: /kb/248/Q248350/
 	
 	=============================================================================
 	
+
+{% endraw %}

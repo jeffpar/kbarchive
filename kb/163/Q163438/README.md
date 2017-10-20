@@ -6,6 +6,8 @@ permalink: /kb/163/Q163438/
 
 ## Q163438: PRB: Warning Message in MS Access After Installing ODE Tools
 
+{% raw %}
+
 	Article: Q163438
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:97
@@ -98,3 +100,5 @@ permalink: /kb/163/Q163438/
 	
 	=============================================================================
 	
+
+{% endraw %}

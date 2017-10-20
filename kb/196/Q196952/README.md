@@ -6,6 +6,8 @@ permalink: /kb/196/Q196952/
 
 ## Q196952: WD97: Word Could Not Re-Establish DDE Connection to MS Excel
 
+{% raw %}
+
 	Article: Q196952
 	Product(s): Word 97 for Windows
 	Version(s): 5.0,7.0,7.0a
@@ -101,3 +103,5 @@ permalink: /kb/196/Q196952/
 	
 	=============================================================================
 	
+
+{% endraw %}

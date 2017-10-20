@@ -6,6 +6,8 @@ permalink: /kb/170/Q170235/
 
 ## Q170235: FP: End User Permissions Are Turned Off on Netscape Server
 
+{% raw %}
+
 	Article: Q170235
 	Product(s): Word Front Page
 	Version(s): ; WINDOWS:1.0,1.0a,1.1
@@ -70,3 +72,5 @@ permalink: /kb/170/Q170235/
 	
 	=============================================================================
 	
+
+{% endraw %}

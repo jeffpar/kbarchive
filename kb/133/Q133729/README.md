@@ -6,6 +6,8 @@ permalink: /kb/133/Q133729/
 
 ## Q133729: Using Microsoft Mouse 9.01 Mouse Manager in Windows 95
 
+{% raw %}
+
 	Article: Q133729
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -77,3 +79,5 @@ permalink: /kb/133/Q133729/
 	
 	=============================================================================
 	
+
+{% endraw %}

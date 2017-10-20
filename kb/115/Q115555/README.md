@@ -6,6 +6,8 @@ permalink: /kb/115/Q115555/
 
 ## Q115555: SMTP: Gateway Screen Border Displays Random Characters
 
+{% raw %}
+
 	Article: Q115555
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/115/Q115555/
 	
 	=============================================================================
 	
+
+{% endraw %}

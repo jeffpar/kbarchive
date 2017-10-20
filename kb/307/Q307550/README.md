@@ -6,6 +6,8 @@ permalink: /kb/307/Q307550/
 
 ## Q307550: INFO: ActiveX Controls Supported by Visual FoxPro 7.0
 
+{% raw %}
+
 	Article: Q307550
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -83,3 +85,5 @@ permalink: /kb/307/Q307550/
 	
 	=============================================================================
 	
+
+{% endraw %}

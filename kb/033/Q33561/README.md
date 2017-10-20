@@ -6,6 +6,8 @@ permalink: /kb/033/Q33561/
 
 ## Q33561: Glockenspiel Turbo Pascal to C Translator Source Code
 
+{% raw %}
+
 	Article: Q33561
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10
@@ -22,3 +24,5 @@ permalink: /kb/033/Q33561/
 	   Dublin 1
 	
 	   011-353-1-364515
+
+{% endraw %}

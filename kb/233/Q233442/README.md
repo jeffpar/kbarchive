@@ -6,6 +6,8 @@ permalink: /kb/233/Q233442/
 
 ## Q233442: Business Planner: Home Page Text Is Displayed with Jagged Edges
 
+{% raw %}
+
 	Article: Q233442
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -59,3 +61,5 @@ permalink: /kb/233/Q233442/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146841/
 
 ## Q146841: XCLN: Extra Mail Traffic Generated
 
+{% raw %}
+
 	Article: Q146841
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -47,3 +49,5 @@ permalink: /kb/146/Q146841/
 	
 	=============================================================================
 	
+
+{% endraw %}

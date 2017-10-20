@@ -6,6 +6,8 @@ permalink: /kb/133/Q133212/
 
 ## Q133212: Description of Microsoft Client for NetWare Networks Features
 
+{% raw %}
+
 	Article: Q133212
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/133/Q133212/
 	
 	=============================================================================
 	
+
+{% endraw %}

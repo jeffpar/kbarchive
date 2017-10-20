@@ -6,6 +6,8 @@ permalink: /kb/245/Q245458/
 
 ## Q245458: XCON: Notes Delegate Cannot See Meetings from Outlook User
 
+{% raw %}
+
 	Article: Q245458
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -68,3 +70,5 @@ permalink: /kb/245/Q245458/
 	
 	=============================================================================
 	
+
+{% endraw %}

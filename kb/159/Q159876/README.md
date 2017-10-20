@@ -6,6 +6,8 @@ permalink: /kb/159/Q159876/
 
 ## Q159876: XADM: Permissions Lost During Move Mailbox Operation
 
+{% raw %}
+
 	Article: Q159876
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -84,3 +86,5 @@ permalink: /kb/159/Q159876/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/313/Q313904/
 
 ## Q313904: SMS: Duplicate Query Names Possible When You Rename a Query
 
+{% raw %}
+
 	Article: Q313904
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -59,3 +61,5 @@ permalink: /kb/313/Q313904/
 	
 	=============================================================================
 	
+
+{% endraw %}

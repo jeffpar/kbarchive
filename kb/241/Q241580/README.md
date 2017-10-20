@@ -6,6 +6,8 @@ permalink: /kb/241/Q241580/
 
 ## Q241580: H/PC Terminal Server Clients Using Too Many Licenses
 
+{% raw %}
+
 	Article: Q241580
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -63,3 +65,5 @@ permalink: /kb/241/Q241580/
 	
 	=============================================================================
 	
+
+{% endraw %}

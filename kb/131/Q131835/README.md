@@ -6,6 +6,8 @@ permalink: /kb/131/Q131835/
 
 ## Q131835: JULIA CHILD: MSETUP.TXT Contents
 
+{% raw %}
+
 	Article: Q131835
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -105,3 +107,5 @@ permalink: /kb/131/Q131835/
 	
 	=============================================================================
 	
+
+{% endraw %}

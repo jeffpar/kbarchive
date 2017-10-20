@@ -6,6 +6,8 @@ permalink: /kb/177/Q177774/
 
 ## Q177774: XADM: Event ID 1171 Occurs When Diagnostics Logging Is Set Too H
 
+{% raw %}
+
 	Article: Q177774
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -55,3 +57,5 @@ permalink: /kb/177/Q177774/
 	
 	=============================================================================
 	
+
+{% endraw %}

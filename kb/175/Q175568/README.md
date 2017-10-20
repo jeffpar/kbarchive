@@ -6,6 +6,8 @@ permalink: /kb/175/Q175568/
 
 ## Q175568: XADM: Pause Option Not Available With Exchange Admin on Cluster
 
+{% raw %}
+
 	Article: Q175568
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -60,3 +62,5 @@ permalink: /kb/175/Q175568/
 	
 	=============================================================================
 	
+
+{% endraw %}

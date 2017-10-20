@@ -6,6 +6,8 @@ permalink: /kb/191/Q191653/
 
 ## Q191653: FP: Link to Bookmark Not Working in Browser
 
+{% raw %}
+
 	Article: Q191653
 	Product(s): Word Front Page
 	Version(s): 1.0
@@ -74,3 +76,5 @@ permalink: /kb/191/Q191653/
 	
 	=============================================================================
 	
+
+{% endraw %}

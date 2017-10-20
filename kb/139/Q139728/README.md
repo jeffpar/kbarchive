@@ -6,6 +6,8 @@ permalink: /kb/139/Q139728/
 
 ## Q139728: Err Msg: EMM386 Has Detected Error #06 in...Address 00B8:0B53
 
+{% raw %}
+
 	Article: Q139728
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -68,3 +70,5 @@ permalink: /kb/139/Q139728/
 	
 	=============================================================================
 	
+
+{% endraw %}

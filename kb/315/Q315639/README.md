@@ -6,6 +6,8 @@ permalink: /kb/315/Q315639/
 
 ## Q315639: BUG: Problems When You Automatically Check Out Files
 
+{% raw %}
+
 	Article: Q315639
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/315/Q315639/
 	
 	=============================================================================
 	
+
+{% endraw %}

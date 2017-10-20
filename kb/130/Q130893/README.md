@@ -6,6 +6,8 @@ permalink: /kb/130/Q130893/
 
 ## Q130893: &quot;Not Recognized&quot; Error Using PKZIP.EXE with Ampersand (&amp;) Switch
 
+{% raw %}
+
 	Article: Q130893
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -67,3 +69,5 @@ permalink: /kb/130/Q130893/
 	
 	=============================================================================
 	
+
+{% endraw %}

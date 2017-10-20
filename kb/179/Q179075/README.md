@@ -6,6 +6,8 @@ permalink: /kb/179/Q179075/
 
 ## Q179075: Flight Simulator: Computer Hangs when Using Virtual Pilot Pro
 
+{% raw %}
+
 	Article: Q179075
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/179/Q179075/
 	
 	=============================================================================
 	
+
+{% endraw %}

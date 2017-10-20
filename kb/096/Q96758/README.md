@@ -6,6 +6,8 @@ permalink: /kb/096/Q96758/
 
 ## Q96758: Using MS-DOS 6 with DNA Lanmarc Network Software
 
+{% raw %}
+
 	Article: Q96758
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -69,3 +71,5 @@ permalink: /kb/096/Q96758/
 	
 	=============================================================================
 	
+
+{% endraw %}

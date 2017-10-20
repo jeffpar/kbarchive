@@ -6,6 +6,8 @@ permalink: /kb/317/Q317519/
 
 ## Q317519: PRB: Incorrect Time and Date in .resx File Added from VS .NET
 
+{% raw %}
+
 	Article: Q317519
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/317/Q317519/
 	
 	=============================================================================
 	
+
+{% endraw %}

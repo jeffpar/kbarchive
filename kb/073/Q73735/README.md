@@ -6,6 +6,8 @@ permalink: /kb/073/Q73735/
 
 ## Q73735: LDRIVE.SYS Incompatible with MS-DOS 5.0 or Later
 
+{% raw %}
+
 	Article: Q73735
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -44,3 +46,5 @@ permalink: /kb/073/Q73735/
 	
 	=============================================================================
 	
+
+{% endraw %}

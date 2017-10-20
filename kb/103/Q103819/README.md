@@ -6,6 +6,8 @@ permalink: /kb/103/Q103819/
 
 ## Q103819: ScanDisk Fails to Remount DoubleSpace-Compressed Drive
 
+{% raw %}
+
 	Article: Q103819
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -49,3 +51,5 @@ permalink: /kb/103/Q103819/
 	
 	=============================================================================
 	
+
+{% endraw %}

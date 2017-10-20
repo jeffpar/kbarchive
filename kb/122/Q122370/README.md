@@ -6,6 +6,8 @@ permalink: /kb/122/Q122370/
 
 ## Q122370: BUG: C2248 When Access Protected Nested Class in Derived Class
 
+{% raw %}
+
 	Article: Q122370
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,2.1,4.0,4.1,4.2,5.0,6.0
@@ -86,3 +88,5 @@ permalink: /kb/122/Q122370/
 	
 	=============================================================================
 	
+
+{% endraw %}

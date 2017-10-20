@@ -6,6 +6,8 @@ permalink: /kb/095/Q95089/
 
 ## Q95089: Tips on Training Voice Pilot
 
+{% raw %}
+
 	Article: Q95089
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/095/Q95089/
 	
 	=============================================================================
 	
+
+{% endraw %}

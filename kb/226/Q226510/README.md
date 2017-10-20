@@ -6,6 +6,8 @@ permalink: /kb/226/Q226510/
 
 ## Q226510: SMS_DISCOVERY_DATA_MANAGER Status &quot;Failed to Enumerate Sites&quot;
 
+{% raw %}
+
 	Article: Q226510
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -103,3 +105,5 @@ permalink: /kb/226/Q226510/
 	
 	=============================================================================
 	
+
+{% endraw %}

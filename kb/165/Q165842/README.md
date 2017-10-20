@@ -6,6 +6,8 @@ permalink: /kb/165/Q165842/
 
 ## Q165842: Opening Manager Takes Long Time with Many LU Pools Configured
 
+{% raw %}
+
 	Article: Q165842
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/165/Q165842/
 	
 	=============================================================================
 	
+
+{% endraw %}

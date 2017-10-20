@@ -6,6 +6,8 @@ permalink: /kb/119/Q119104/
 
 ## Q119104: PPT: Incorrect Title Case Change When Word Contains Apostrophe
 
+{% raw %}
+
 	Article: Q119104
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,4.0a,4.0c,7.0
@@ -75,3 +77,5 @@ permalink: /kb/119/Q119104/
 	
 	=============================================================================
 	
+
+{% endraw %}

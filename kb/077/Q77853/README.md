@@ -6,6 +6,8 @@ permalink: /kb/077/Q77853/
 
 ## Q77853: Older Versions of Disk Manager Do Not Have XBIOS.OVL
 
+{% raw %}
+
 	Article: Q77853
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -72,3 +74,5 @@ permalink: /kb/077/Q77853/
 	
 	=============================================================================
 	
+
+{% endraw %}

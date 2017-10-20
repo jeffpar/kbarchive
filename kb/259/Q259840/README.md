@@ -6,6 +6,8 @@ permalink: /kb/259/Q259840/
 
 ## Q259840: XADM: How to Obtain Move Server Wizard
 
+{% raw %}
+
 	Article: Q259840
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1,5.5 SP2,5.5 SP3
@@ -86,3 +88,5 @@ permalink: /kb/259/Q259840/
 	
 	=============================================================================
 	
+
+{% endraw %}

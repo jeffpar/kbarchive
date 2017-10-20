@@ -6,6 +6,8 @@ permalink: /kb/167/Q167687/
 
 ## Q167687: PAX Command Gives Error &quot;Bad Magic Number&quot;
 
+{% raw %}
+
 	Article: Q167687
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -73,3 +75,5 @@ permalink: /kb/167/Q167687/
 	
 	=============================================================================
 	
+
+{% endraw %}

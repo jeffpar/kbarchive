@@ -6,6 +6,8 @@ permalink: /kb/298/Q298695/
 
 ## Q298695: Commerce Server 2000 Resource Kit Comments and Corrections
 
+{% raw %}
+
 	Article: Q298695
 	Product(s): Microsoft Press
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/298/Q298695/
 	
 	=============================================================================
 	
+
+{% endraw %}

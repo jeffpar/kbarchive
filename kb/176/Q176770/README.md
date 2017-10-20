@@ -6,6 +6,8 @@ permalink: /kb/176/Q176770/
 
 ## Q176770: Error Message: Encarta Encyclopedia Cannot Start...
 
+{% raw %}
+
 	Article: Q176770
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -146,3 +148,5 @@ permalink: /kb/176/Q176770/
 	
 	=============================================================================
 	
+
+{% endraw %}

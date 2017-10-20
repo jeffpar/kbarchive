@@ -6,6 +6,8 @@ permalink: /kb/143/Q143066/
 
 ## Q143066: Dogs: Unable to Run When Using NT Guest Account
 
+{% raw %}
+
 	Article: Q143066
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,1.0a; winnt:3.5,3.51
@@ -61,3 +63,5 @@ permalink: /kb/143/Q143066/
 	
 	=============================================================================
 	
+
+{% endraw %}

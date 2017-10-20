@@ -6,6 +6,8 @@ permalink: /kb/126/Q126395/
 
 ## Q126395: Ways to Increase the Number of AS/400 LU6.2 Sessions
 
+{% raw %}
+
 	Article: Q126395
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -90,3 +92,5 @@ permalink: /kb/126/Q126395/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163412/
 
 ## Q163412: FIX: Web Browser Position is Wrong on Pageframe Page
 
+{% raw %}
+
 	Article: Q163412
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0a 5.0
@@ -118,3 +120,5 @@ permalink: /kb/163/Q163412/
 	
 	=============================================================================
 	
+
+{% endraw %}

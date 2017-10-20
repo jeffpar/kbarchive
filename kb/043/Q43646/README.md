@@ -6,6 +6,8 @@ permalink: /kb/043/Q43646/
 
 ## Q43646: INFO: What Causes the Startup Code to Be Included
 
+{% raw %}
+
 	Article: Q43646
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0,5.0,6.0
@@ -70,3 +72,5 @@ permalink: /kb/043/Q43646/
 	
 	=============================================================================
 	
+
+{% endraw %}

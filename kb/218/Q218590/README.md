@@ -6,6 +6,8 @@ permalink: /kb/218/Q218590/
 
 ## Q218590: INF: Configuring Data Sources for the Microsoft OLE DB Provider
 
+{% raw %}
+
 	Article: Q218590
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -323,3 +325,5 @@ permalink: /kb/218/Q218590/
 	
 	=============================================================================
 	
+
+{% endraw %}

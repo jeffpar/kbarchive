@@ -6,6 +6,8 @@ permalink: /kb/153/Q153629/
 
 ## Q153629: FP: No Prompt for User Name and Password on IIS Web
 
+{% raw %}
+
 	Article: Q153629
 	Product(s): Word Front Page
 	Version(s): ; WINDOWS:1.1
@@ -88,3 +90,5 @@ permalink: /kb/153/Q153629/
 	
 	=============================================================================
 	
+
+{% endraw %}

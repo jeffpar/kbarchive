@@ -6,6 +6,8 @@ permalink: /kb/181/Q181561/
 
 ## Q181561: Windows NT Logon Takes Very Long with SMS and intraNetware
 
+{% raw %}
+
 	Article: Q181561
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -78,3 +80,5 @@ permalink: /kb/181/Q181561/
 	
 	=============================================================================
 	
+
+{% endraw %}

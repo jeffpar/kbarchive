@@ -6,6 +6,8 @@ permalink: /kb/264/Q264635/
 
 ## Q264635: Code Page 932 Translation of Roman Numerals Is Not as Expected
 
+{% raw %}
+
 	Article: Q264635
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),3.0 Japanese,4.0
@@ -60,3 +62,5 @@ permalink: /kb/264/Q264635/
 	
 	=============================================================================
 	
+
+{% endraw %}

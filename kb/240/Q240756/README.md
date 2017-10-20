@@ -6,6 +6,8 @@ permalink: /kb/240/Q240756/
 
 ## Q240756: XCLN: Exmerge Loses Free/Busy Info for Existing Appointments
 
+{% raw %}
+
 	Article: Q240756
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2
@@ -83,3 +85,5 @@ permalink: /kb/240/Q240756/
 	
 	=============================================================================
 	
+
+{% endraw %}

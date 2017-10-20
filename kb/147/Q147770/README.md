@@ -6,6 +6,8 @@ permalink: /kb/147/Q147770/
 
 ## Q147770: Administrator Of Another Windows NT Has Access to NTFS Files
 
+{% raw %}
+
 	Article: Q147770
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -40,3 +42,5 @@ permalink: /kb/147/Q147770/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/254/Q254794/
 
 ## Q254794: FIX: Row in Grid Remains Highlighted After Selecting Another Row
 
+{% raw %}
+
 	Article: Q254794
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -91,3 +93,5 @@ permalink: /kb/254/Q254794/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153020/
 
 ## Q153020: BUG: Setup Wizard Doesn't Register VB OLE DLLs w/ DLL Install
 
+{% raw %}
+
 	Article: Q153020
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -106,3 +108,5 @@ permalink: /kb/153/Q153020/
 	
 	=============================================================================
 	
+
+{% endraw %}

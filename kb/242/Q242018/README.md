@@ -6,6 +6,8 @@ permalink: /kb/242/Q242018/
 
 ## Q242018: HOWTO: Copy a Section of a Bitmap to the Clipboard
 
+{% raw %}
+
 	Article: Q242018
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -147,3 +149,5 @@ permalink: /kb/242/Q242018/
 	
 	=============================================================================
 	
+
+{% endraw %}

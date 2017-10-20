@@ -6,6 +6,8 @@ permalink: /kb/197/Q197500/
 
 ## Q197500: XADM: Tape Backup Program Hangs During Exchange Backup
 
+{% raw %}
+
 	Article: Q197500
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -81,3 +83,5 @@ permalink: /kb/197/Q197500/
 	
 	=============================================================================
 	
+
+{% endraw %}

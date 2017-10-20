@@ -6,6 +6,8 @@ permalink: /kb/058/Q58490/
 
 ## Q58490: Variable Arguments of Type CHAR Incorrectly Retrieved
 
+{% raw %}
+
 	Article: Q58490
 	Product(s): See article
 	Version(s): 5.10 6.00 6.00a | 5.10 6.00 6.00a
@@ -139,3 +141,5 @@ permalink: /kb/058/Q58490/
 	When we force va_start to use a type INT, it moves the frame reference
 	to the correct position, and when we use an INT in va_arg, it forces
 	the frame reference to be incremented by the correct amount.
+
+{% endraw %}

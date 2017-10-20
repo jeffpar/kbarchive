@@ -6,6 +6,8 @@ permalink: /kb/184/Q184798/
 
 ## Q184798: SSL: Connections May Fail Using Online Requested Certificates
 
+{% raw %}
+
 	Article: Q184798
 	Product(s): Internet Information Server
 	Version(s): WINNT:1.0,4.0
@@ -68,3 +70,5 @@ permalink: /kb/184/Q184798/
 	
 	=============================================================================
 	
+
+{% endraw %}

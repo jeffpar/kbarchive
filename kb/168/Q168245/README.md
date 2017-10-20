@@ -6,6 +6,8 @@ permalink: /kb/168/Q168245/
 
 ## Q168245: XFOR: POP3 Clients Unable to Download All Msgs
 
+{% raw %}
+
 	Article: Q168245
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -66,3 +68,5 @@ permalink: /kb/168/Q168245/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154414/
 
 ## Q154414: WINS Default Configuration Value Changes for Windows NT 4.0
 
+{% raw %}
+
 	Article: Q154414
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -44,3 +46,5 @@ permalink: /kb/154/Q154414/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168036/
 
 ## Q168036: Link State Routing Basics
 
+{% raw %}
+
 	Article: Q168036
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/168/Q168036/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145597/
 
 ## Q145597: Print Preview of Access 2.0 Reports Do Not Appear Correctly
 
+{% raw %}
+
 	Article: Q145597
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -50,3 +52,5 @@ permalink: /kb/145/Q145597/
 	
 	=============================================================================
 	
+
+{% endraw %}

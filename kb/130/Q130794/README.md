@@ -6,6 +6,8 @@ permalink: /kb/130/Q130794/
 
 ## Q130794: Emergency Repair Process May Fail &quot;Beyond Repair&quot;
 
+{% raw %}
+
 	Article: Q130794
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51 4.00
@@ -68,3 +70,5 @@ permalink: /kb/130/Q130794/
 	
 	=============================================================================
 	
+
+{% endraw %}

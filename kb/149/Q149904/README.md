@@ -6,6 +6,8 @@ permalink: /kb/149/Q149904/
 
 ## Q149904: Compaq LTE 5100, 5200 Notebooks Stop When Swapping Floppy &amp; CD
 
+{% raw %}
+
 	Article: Q149904
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -60,3 +62,5 @@ permalink: /kb/149/Q149904/
 	
 	=============================================================================
 	
+
+{% endraw %}

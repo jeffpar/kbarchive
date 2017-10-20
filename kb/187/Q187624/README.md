@@ -6,6 +6,8 @@ permalink: /kb/187/Q187624/
 
 ## Q187624: Installing Microsoft Network Monitor on Terminal Server
 
+{% raw %}
+
 	Article: Q187624
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -118,3 +120,5 @@ permalink: /kb/187/Q187624/
 	
 	=============================================================================
 	
+
+{% endraw %}

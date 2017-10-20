@@ -6,6 +6,8 @@ permalink: /kb/038/Q38889/
 
 ## Q38889: LINKer Error with /Q and /E; Can't EXEPACK Quick Library File
 
+{% raw %}
+
 	Article: Q38889
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -23,3 +25,5 @@ permalink: /kb/038/Q38889/
 	BASIC Language Reference" manual, but it is covered on Page 421 of the
 	"Microsoft QuickBASIC 4.5: Programming in BASIC" manual, shipped with
 	QuickBASIC version 4.50.
+
+{% endraw %}

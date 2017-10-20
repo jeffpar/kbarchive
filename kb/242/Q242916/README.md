@@ -6,6 +6,8 @@ permalink: /kb/242/Q242916/
 
 ## Q242916: DCOM May Not Release All Cached Information from RPCSS
 
+{% raw %}
+
 	Article: Q242916
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP3,4.0 SP4,4.0 SP5
@@ -86,3 +88,5 @@ permalink: /kb/242/Q242916/
 	
 	=============================================================================
 	
+
+{% endraw %}

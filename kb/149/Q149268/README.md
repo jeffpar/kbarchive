@@ -6,6 +6,8 @@ permalink: /kb/149/Q149268/
 
 ## Q149268: BUG: Odd Behavior with Modal Dialog/Form in ListView ItemClick
 
+{% raw %}
+
 	Article: Q149268
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -100,3 +102,5 @@ permalink: /kb/149/Q149268/
 	
 	=============================================================================
 	
+
+{% endraw %}

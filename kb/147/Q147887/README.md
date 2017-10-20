@@ -6,6 +6,8 @@ permalink: /kb/147/Q147887/
 
 ## Q147887: HOWTO: Scroll VB Text Box Programmatically and Specify Lines
 
+{% raw %}
+
 	Article: Q147887
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -173,3 +175,5 @@ permalink: /kb/147/Q147887/
 	
 	=============================================================================
 	
+
+{% endraw %}

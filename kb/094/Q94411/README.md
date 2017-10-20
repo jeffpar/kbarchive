@@ -6,6 +6,8 @@ permalink: /kb/094/Q94411/
 
 ## Q94411: MemMaker Doesn't Optimize Batch Files in AUTOEXEC.BAT
 
+{% raw %}
+
 	Article: Q94411
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -67,3 +69,5 @@ permalink: /kb/094/Q94411/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154947/
 
 ## Q154947: XADM: How to Move a Public Folder to Another Site
 
+{% raw %}
+
 	Article: Q154947
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -66,3 +68,5 @@ permalink: /kb/154/Q154947/
 	
 	=============================================================================
 	
+
+{% endraw %}

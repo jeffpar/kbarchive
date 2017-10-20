@@ -6,6 +6,8 @@ permalink: /kb/069/Q69885/
 
 ## Q69885: DOC: SetBkColor() Does Not Support Dithered Colors
 
+{% raw %}
+
 	Article: Q69885
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51
@@ -114,3 +116,5 @@ permalink: /kb/069/Q69885/
 	
 	=============================================================================
 	
+
+{% endraw %}

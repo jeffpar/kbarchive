@@ -6,6 +6,8 @@ permalink: /kb/120/Q120184/
 
 ## Q120184: FIX: Error Message with SAVE SCREEN Command
 
+{% raw %}
+
 	Article: Q120184
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,2.6,3.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/120/Q120184/
 	
 	=============================================================================
 	
+
+{% endraw %}

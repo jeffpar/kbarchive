@@ -6,6 +6,8 @@ permalink: /kb/103/Q103854/
 
 ## Q103854: PROFS: Maximum Mailbag Size Reads 00000000 on Host Access
 
+{% raw %}
+
 	Article: Q103854
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2,3.3,3.4
@@ -53,3 +55,5 @@ permalink: /kb/103/Q103854/
 	
 	=============================================================================
 	
+
+{% endraw %}

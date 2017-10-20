@@ -6,6 +6,8 @@ permalink: /kb/078/Q78154/
 
 ## Q78154: AST Research ASTDSK.DRV with MS-DOS Upgrade
 
+{% raw %}
+
 	Article: Q78154
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.22
@@ -63,3 +65,5 @@ permalink: /kb/078/Q78154/
 	
 	=============================================================================
 	
+
+{% endraw %}

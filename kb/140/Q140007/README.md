@@ -6,6 +6,8 @@ permalink: /kb/140/Q140007/
 
 ## Q140007: WFW Direct Hosting over ODI Drivers Drop Network Connections
 
+{% raw %}
+
 	Article: Q140007
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11; winnt:3.5,3.51
@@ -123,3 +125,5 @@ permalink: /kb/140/Q140007/
 	
 	=============================================================================
 	
+
+{% endraw %}

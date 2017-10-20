@@ -6,6 +6,8 @@ permalink: /kb/324/Q324232/
 
 ## Q324232: IIS Virtual Directories w/ Services for UNIX Do Not Return Files
 
+{% raw %}
+
 	Article: Q324232
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -59,3 +61,5 @@ permalink: /kb/324/Q324232/
 	
 	=============================================================================
 	
+
+{% endraw %}

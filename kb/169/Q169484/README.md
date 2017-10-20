@@ -6,6 +6,8 @@ permalink: /kb/169/Q169484/
 
 ## Q169484: FIX: CString::MakeUpper and MakeLower Don't Work with Some Char
 
+{% raw %}
+
 	Article: Q169484
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -67,3 +69,5 @@ permalink: /kb/169/Q169484/
 	
 	=============================================================================
 	
+
+{% endraw %}

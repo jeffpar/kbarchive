@@ -6,6 +6,8 @@ permalink: /kb/268/Q268977/
 
 ## Q268977: StarLancer: Does Not Recognize Disc 1 After Mission 15
 
+{% raw %}
+
 	Article: Q268977
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -207,3 +209,5 @@ permalink: /kb/268/Q268977/
 	
 	=============================================================================
 	
+
+{% endraw %}

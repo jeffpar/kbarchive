@@ -6,6 +6,8 @@ permalink: /kb/121/Q121011/
 
 ## Q121011: ProofReader Repeats Single Number or Does Not Initiate Volume
 
+{% raw %}
+
 	Article: Q121011
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.00 2.00
@@ -84,3 +86,5 @@ permalink: /kb/121/Q121011/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/240/Q240631/
 
 ## Q240631: World Atlas Err Msg: You Must Have NT SUR 4.0 GOLD to Install...
 
+{% raw %}
+
 	Article: Q240631
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -59,3 +61,5 @@ permalink: /kb/240/Q240631/
 	
 	=============================================================================
 	
+
+{% endraw %}

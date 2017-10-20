@@ -6,6 +6,8 @@ permalink: /kb/195/Q195508/
 
 ## Q195508: Devices Tool Hangs When Clicking HW Profile for I20 Bus Driver
 
+{% raw %}
+
 	Article: Q195508
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/195/Q195508/
 	
 	=============================================================================
 	
+
+{% endraw %}

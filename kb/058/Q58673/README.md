@@ -6,6 +6,8 @@ permalink: /kb/058/Q58673/
 
 ## Q58673: ButtonOpen Incorrectly Handles Button in Resizable Window
 
+{% raw %}
+
 	Article: Q58673
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -155,3 +157,5 @@ permalink: /kb/058/Q58673/
 	buttonType% = 2
 	state% = 1                     'Valid state.
 	CALL ButtonOpen(1, state%, "Foo", 10, 10, 20, 20, buttonType%)
+
+{% endraw %}

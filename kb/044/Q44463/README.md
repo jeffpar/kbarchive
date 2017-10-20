@@ -6,6 +6,8 @@ permalink: /kb/044/Q44463/
 
 ## Q44463: HOWTO: Difference Between Arrays and Pointers in C
 
+{% raw %}
+
 	Article: Q44463
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
@@ -144,3 +146,5 @@ permalink: /kb/044/Q44463/
 	
 	=============================================================================
 	
+
+{% endraw %}

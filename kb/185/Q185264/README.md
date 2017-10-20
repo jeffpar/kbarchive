@@ -6,6 +6,8 @@ permalink: /kb/185/Q185264/
 
 ## Q185264: WD97: Crop Button on Picture Toolbar Unavailable in a Template
 
+{% raw %}
+
 	Article: Q185264
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/185/Q185264/
 	
 	=============================================================================
 	
+
+{% endraw %}

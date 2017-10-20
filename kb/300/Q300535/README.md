@@ -6,6 +6,8 @@ permalink: /kb/300/Q300535/
 
 ## Q300535: Error Message When You Run Internet Mail Connector
 
+{% raw %}
+
 	Article: Q300535
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -66,3 +68,5 @@ permalink: /kb/300/Q300535/
 	
 	=============================================================================
 	
+
+{% endraw %}

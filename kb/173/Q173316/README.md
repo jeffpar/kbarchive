@@ -6,6 +6,8 @@ permalink: /kb/173/Q173316/
 
 ## Q173316: Capture Command Does Not Support /Copies Parameter
 
+{% raw %}
+
 	Article: Q173316
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/173/Q173316/
 	
 	=============================================================================
 	
+
+{% endraw %}

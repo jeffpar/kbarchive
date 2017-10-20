@@ -6,6 +6,8 @@ permalink: /kb/149/Q149402/
 
 ## Q149402: PRB: F1 Key Does Not CLEAR READ in Visual FoxPro for Windows
 
+{% raw %}
+
 	Article: Q149402
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -70,3 +72,5 @@ permalink: /kb/149/Q149402/
 	
 	=============================================================================
 	
+
+{% endraw %}

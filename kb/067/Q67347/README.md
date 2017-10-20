@@ -6,6 +6,8 @@ permalink: /kb/067/Q67347/
 
 ## Q67347: Windows 3.0 Runs in Incorrect Mode from Menu Programs
 
+{% raw %}
+
 	Article: Q67347
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -40,3 +42,5 @@ permalink: /kb/067/Q67347/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/307/Q307766/
 
 ## Q307766: Active Server Pages&#92;Memory Allocated Performance Counter Unavail
 
+{% raw %}
+
 	Article: Q307766
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -46,3 +48,5 @@ permalink: /kb/307/Q307766/
 	
 	=============================================================================
 	
+
+{% endraw %}

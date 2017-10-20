@@ -6,6 +6,8 @@ permalink: /kb/152/Q152845/
 
 ## Q152845: XFOR: Moving Messages Between Folders Fails to Delete Original
 
+{% raw %}
+
 	Article: Q152845
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/152/Q152845/
 	
 	=============================================================================
 	
+
+{% endraw %}

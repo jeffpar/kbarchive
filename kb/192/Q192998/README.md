@@ -6,6 +6,8 @@ permalink: /kb/192/Q192998/
 
 ## Q192998: INFO: VBCE: Differences Between Emulation and the Remote Device
 
+{% raw %}
+
 	Article: Q192998
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -150,3 +152,5 @@ permalink: /kb/192/Q192998/
 	
 	=============================================================================
 	
+
+{% endraw %}

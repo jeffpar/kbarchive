@@ -6,6 +6,8 @@ permalink: /kb/121/Q121946/
 
 ## Q121946: How to Create a Status Bar in Every MDI Child Window
 
+{% raw %}
+
 	Article: Q121946
 	Product(s): Microsoft C Compiler
 	Version(s): 1.00 1.50 1.51 | 1.00 2.00 2.10
@@ -128,3 +130,5 @@ permalink: /kb/121/Q121946/
 	
 	=============================================================================
 	
+
+{% endraw %}

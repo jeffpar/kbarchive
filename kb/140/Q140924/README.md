@@ -6,6 +6,8 @@ permalink: /kb/140/Q140924/
 
 ## Q140924: SMS Senders Stops if Estimated Bandwidth is Set to a High Value
 
+{% raw %}
+
 	Article: Q140924
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -43,3 +45,5 @@ permalink: /kb/140/Q140924/
 	
 	=============================================================================
 	
+
+{% endraw %}

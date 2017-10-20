@@ -6,6 +6,8 @@ permalink: /kb/101/Q101592/
 
 ## Q101592: Support for the AS Clause in RQBE
 
+{% raw %}
+
 	Article: Q101592
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
@@ -43,3 +45,5 @@ permalink: /kb/101/Q101592/
 	
 	=============================================================================
 	
+
+{% endraw %}

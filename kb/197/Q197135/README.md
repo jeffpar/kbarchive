@@ -6,6 +6,8 @@ permalink: /kb/197/Q197135/
 
 ## Q197135: WD97: Bottom of Header/Footer Text Is Truncated
 
+{% raw %}
+
 	Article: Q197135
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -75,3 +77,5 @@ permalink: /kb/197/Q197135/
 	
 	=============================================================================
 	
+
+{% endraw %}

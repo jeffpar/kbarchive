@@ -6,6 +6,8 @@ permalink: /kb/105/Q105671/
 
 ## Q105671: Media Player: CD Audio Device Missing from Device Menu
 
+{% raw %}
+
 	Article: Q105671
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/105/Q105671/
 	
 	=============================================================================
 	
+
+{% endraw %}

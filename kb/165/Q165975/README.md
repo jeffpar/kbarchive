@@ -6,6 +6,8 @@ permalink: /kb/165/Q165975/
 
 ## Q165975: PRB: Line Continuation Character (_) Causes Event Concatenation
 
+{% raw %}
+
 	Article: Q165975
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/165/Q165975/
 	
 	=============================================================================
 	
+
+{% endraw %}

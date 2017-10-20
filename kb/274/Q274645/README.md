@@ -6,6 +6,8 @@ permalink: /kb/274/Q274645/
 
 ## Q274645: MGS: SideWinder Dual Strike Buttons Do Not Function Correctly
 
+{% raw %}
+
 	Article: Q274645
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/274/Q274645/
 	
 	=============================================================================
 	
+
+{% endraw %}

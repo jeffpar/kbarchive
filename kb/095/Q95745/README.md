@@ -6,6 +6,8 @@ permalink: /kb/095/Q95745/
 
 ## Q95745: Err Msg with Iomega: 'MS-DOS 6 Cannot Be Installed...'
 
+{% raw %}
+
 	Article: Q95745
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -51,3 +53,5 @@ permalink: /kb/095/Q95745/
 	
 	=============================================================================
 	
+
+{% endraw %}

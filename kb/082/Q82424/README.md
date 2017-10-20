@@ -6,6 +6,8 @@ permalink: /kb/082/Q82424/
 
 ## Q82424: Seaview 1.0 GP Faults When Using a Cabinet
 
+{% raw %}
+
 	Article: Q82424
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/082/Q82424/
 	
 	=============================================================================
 	
+
+{% endraw %}

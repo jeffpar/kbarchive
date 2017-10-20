@@ -6,6 +6,8 @@ permalink: /kb/242/Q242982/
 
 ## Q242982: PRB: VFP Hangs on Windows 98 When Using Novell NetWare Client
 
+{% raw %}
+
 	Article: Q242982
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -112,3 +114,5 @@ permalink: /kb/242/Q242982/
 	
 	=============================================================================
 	
+
+{% endraw %}

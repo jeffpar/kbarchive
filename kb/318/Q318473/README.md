@@ -6,6 +6,8 @@ permalink: /kb/318/Q318473/
 
 ## Q318473: Verify Settings in Internet Protocol Properties
 
+{% raw %}
+
 	Article: Q318473
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/318/Q318473/
 	
 	=============================================================================
 	
+
+{% endraw %}

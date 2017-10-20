@@ -6,6 +6,8 @@ permalink: /kb/177/Q177247/
 
 ## Q177247: FS98: Engine Noise Continues After You Switch to Map View
 
+{% raw %}
+
 	Article: Q177247
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -50,3 +52,5 @@ permalink: /kb/177/Q177247/
 	
 	=============================================================================
 	
+
+{% endraw %}

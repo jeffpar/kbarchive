@@ -6,6 +6,8 @@ permalink: /kb/191/Q191067/
 
 ## Q191067: SMS: PGC Fails to Configure Apps When Roaming Profiles Are Used
 
+{% raw %}
+
 	Article: Q191067
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -135,3 +137,5 @@ permalink: /kb/191/Q191067/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159162/
 
 ## Q159162: XCON: MSMail Read-Receipts Missing Data Across Organizations
 
+{% raw %}
+
 	Article: Q159162
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.0,3.2,3.2a,3.5; winnt:4.0,5.0,5.5
@@ -72,3 +74,5 @@ permalink: /kb/159/Q159162/
 	
 	=============================================================================
 	
+
+{% endraw %}

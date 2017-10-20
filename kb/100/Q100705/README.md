@@ -6,6 +6,8 @@ permalink: /kb/100/Q100705/
 
 ## Q100705: SMTP: Err Msg: 550 Addressee Unknown
 
+{% raw %}
+
 	Article: Q100705
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -57,3 +59,5 @@ permalink: /kb/100/Q100705/
 	
 	=============================================================================
 	
+
+{% endraw %}

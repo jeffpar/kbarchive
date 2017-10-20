@@ -6,6 +6,8 @@ permalink: /kb/150/Q150470/
 
 ## Q150470: Mac Bookshelf 1996-97: Quickshelf Does not Look up Word
 
+{% raw %}
+
 	Article: Q150470
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition,1996 edition,1996-1997,1997 edition; MACINTOSH:3.0,3.0a
@@ -66,3 +68,5 @@ permalink: /kb/150/Q150470/
 	
 	=============================================================================
 	
+
+{% endraw %}

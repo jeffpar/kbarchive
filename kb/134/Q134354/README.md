@@ -6,6 +6,8 @@ permalink: /kb/134/Q134354/
 
 ## Q134354: Mustek TwainScan CG-8400 Hand Scanner Does Not Work
 
+{% raw %}
+
 	Article: Q134354
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/134/Q134354/
 	
 	=============================================================================
 	
+
+{% endraw %}

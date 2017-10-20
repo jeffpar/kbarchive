@@ -6,6 +6,8 @@ permalink: /kb/242/Q242229/
 
 ## Q242229: HOWTO: Create An OCX View with the MMC Snap-in Designer for VB
 
+{% raw %}
+
 	Article: Q242229
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:1.1,1.2,6.0
@@ -98,3 +100,5 @@ permalink: /kb/242/Q242229/
 	
 	=============================================================================
 	
+
+{% endraw %}

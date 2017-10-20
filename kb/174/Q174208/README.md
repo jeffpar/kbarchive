@@ -6,6 +6,8 @@ permalink: /kb/174/Q174208/
 
 ## Q174208: XWEB: Netscape Macintosh Client Does not Show Folders Properly
 
+{% raw %}
+
 	Article: Q174208
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -46,3 +48,5 @@ permalink: /kb/174/Q174208/
 	
 	=============================================================================
 	
+
+{% endraw %}

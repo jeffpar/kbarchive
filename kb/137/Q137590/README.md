@@ -6,6 +6,8 @@ permalink: /kb/137/Q137590/
 
 ## Q137590: Circled Exclamation Point for IDE Controller with No Device
 
+{% raw %}
+
 	Article: Q137590
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -86,3 +88,5 @@ permalink: /kb/137/Q137590/
 	
 	=============================================================================
 	
+
+{% endraw %}

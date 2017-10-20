@@ -6,6 +6,8 @@ permalink: /kb/276/Q276351/
 
 ## Q276351: Microsoft Casino: Cannot Disable Full Screen Mode
 
+{% raw %}
+
 	Article: Q276351
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -62,3 +64,5 @@ permalink: /kb/276/Q276351/
 	
 	=============================================================================
 	
+
+{% endraw %}

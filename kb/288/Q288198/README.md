@@ -6,6 +6,8 @@ permalink: /kb/288/Q288198/
 
 ## Q288198: Combat Flight Simulator: Error in Quick Combat Help Topic
 
+{% raw %}
+
 	Article: Q288198
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -50,3 +52,5 @@ permalink: /kb/288/Q288198/
 	
 	=============================================================================
 	
+
+{% endraw %}

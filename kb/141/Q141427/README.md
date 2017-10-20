@@ -6,6 +6,8 @@ permalink: /kb/141/Q141427/
 
 ## Q141427: Bookshelf: Custom Installation Option Missing with AutoRun
 
+{% raw %}
+
 	Article: Q141427
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 95
@@ -91,3 +93,5 @@ permalink: /kb/141/Q141427/
 	
 	=============================================================================
 	
+
+{% endraw %}

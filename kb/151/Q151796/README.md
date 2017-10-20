@@ -6,6 +6,8 @@ permalink: /kb/151/Q151796/
 
 ## Q151796: Using Seiko Smart Label Printer Pro with Windows NT
 
+{% raw %}
+
 	Article: Q151796
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -53,3 +55,5 @@ permalink: /kb/151/Q151796/
 	
 	=============================================================================
 	
+
+{% endraw %}

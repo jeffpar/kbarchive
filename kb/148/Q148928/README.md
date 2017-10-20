@@ -6,6 +6,8 @@ permalink: /kb/148/Q148928/
 
 ## Q148928: Microsoft Plus! Inbox Icon Replaced with Standard Inbox Icon
 
+{% raw %}
+
 	Article: Q148928
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -44,3 +46,5 @@ permalink: /kb/148/Q148928/
 	
 	=============================================================================
 	
+
+{% endraw %}

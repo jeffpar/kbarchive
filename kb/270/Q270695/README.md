@@ -6,6 +6,8 @@ permalink: /kb/270/Q270695/
 
 ## Q270695: XADM: MTA Logs Content Conversion Error 4096 for Inbound Message
 
+{% raw %}
+
 	Article: Q270695
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -76,3 +78,5 @@ permalink: /kb/270/Q270695/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155216/
 
 ## Q155216: XADM: How to Move Exchange Server to a New Computer w/ Same Name
 
+{% raw %}
+
 	Article: Q155216
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -274,3 +276,5 @@ permalink: /kb/155/Q155216/
 	
 	=============================================================================
 	
+
+{% endraw %}

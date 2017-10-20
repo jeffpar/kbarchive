@@ -6,6 +6,8 @@ permalink: /kb/198/Q198888/
 
 ## Q198888: Telnet and Browsing to Systems Outside the WLBS Cluster Fail
 
+{% raw %}
+
 	Article: Q198888
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0,4.0
@@ -58,3 +60,5 @@ permalink: /kb/198/Q198888/
 	
 	=============================================================================
 	
+
+{% endraw %}

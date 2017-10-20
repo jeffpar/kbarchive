@@ -6,6 +6,8 @@ permalink: /kb/162/Q162834/
 
 ## Q162834: RRAS Stops Routing After Encountering Zero Checksum
 
+{% raw %}
+
 	Article: Q162834
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/162/Q162834/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182598/
 
 ## Q182598: HOWTO: Implement IObjectSafety in Visual Basic Controls
 
+{% raw %}
+
 	Article: Q182598
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,4.01,4.01 SP1,4.01 SP2,5,5.0,5.01,5.01 SP1,5.5,5.5 Service Pack 1,6.0
@@ -307,3 +309,5 @@ permalink: /kb/182/Q182598/
 	
 	=============================================================================
 	
+
+{% endraw %}

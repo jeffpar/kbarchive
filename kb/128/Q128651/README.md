@@ -6,6 +6,8 @@ permalink: /kb/128/Q128651/
 
 ## Q128651: How to Add Custom Label Sizes to Visual FoxPro
 
+{% raw %}
+
 	Article: Q128651
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -133,3 +135,5 @@ permalink: /kb/128/Q128651/
 	
 	=============================================================================
 	
+
+{% endraw %}

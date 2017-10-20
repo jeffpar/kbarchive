@@ -6,6 +6,8 @@ permalink: /kb/173/Q173274/
 
 ## Q173274: How to Uninstall The Microsoft Network Version 2.5
 
+{% raw %}
+
 	Article: Q173274
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5 (OEM Release)
@@ -96,3 +98,5 @@ permalink: /kb/173/Q173274/
 	
 	=============================================================================
 	
+
+{% endraw %}

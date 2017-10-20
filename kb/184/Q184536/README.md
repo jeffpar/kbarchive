@@ -6,6 +6,8 @@ permalink: /kb/184/Q184536/
 
 ## Q184536: XADM: Removing E-mail Addresses Through Directory Import
 
+{% raw %}
+
 	Article: Q184536
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -111,3 +113,5 @@ permalink: /kb/184/Q184536/
 	
 	=============================================================================
 	
+
+{% endraw %}

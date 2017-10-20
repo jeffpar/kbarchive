@@ -6,6 +6,8 @@ permalink: /kb/045/Q45545/
 
 ## Q45545: QB Debugger Step Problem with Breakpoint in Watched FUNCTION
 
+{% raw %}
+
 	Article: Q45545
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -61,3 +63,5 @@ permalink: /kb/045/Q45545/
 	
 	To work around this problem, Add Watch on x% instead of test%, or
 	remove the breakpoint.
+
+{% endraw %}

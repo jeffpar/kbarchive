@@ -6,6 +6,8 @@ permalink: /kb/316/Q316972/
 
 ## Q316972: Flight Simulator 2002: Flight Does Not Use Default System Time
 
+{% raw %}
+
 	Article: Q316972
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/316/Q316972/
 	
 	=============================================================================
 	
+
+{% endraw %}

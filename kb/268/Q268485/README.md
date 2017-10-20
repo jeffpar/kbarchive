@@ -6,6 +6,8 @@ permalink: /kb/268/Q268485/
 
 ## Q268485: XADM: Directory Import Fails When You Use a Command Line
 
+{% raw %}
+
 	Article: Q268485
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -74,3 +76,5 @@ permalink: /kb/268/Q268485/
 	
 	=============================================================================
 	
+
+{% endraw %}

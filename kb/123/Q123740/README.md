@@ -6,6 +6,8 @@ permalink: /kb/123/Q123740/
 
 ## Q123740: Unexpected Error Accessing MS Mail Postoffice Through GSNW
 
+{% raw %}
+
 	Article: Q123740
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50
@@ -51,3 +53,5 @@ permalink: /kb/123/Q123740/
 	
 	=============================================================================
 	
+
+{% endraw %}

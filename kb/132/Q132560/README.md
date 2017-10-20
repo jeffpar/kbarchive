@@ -6,6 +6,8 @@ permalink: /kb/132/Q132560/
 
 ## Q132560: PC Win: WGPOMGR.DLL Will Not Work with a Standard Postoffice
 
+{% raw %}
+
 	Article: Q132560
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -80,3 +82,5 @@ permalink: /kb/132/Q132560/
 	
 	=============================================================================
 	
+
+{% endraw %}

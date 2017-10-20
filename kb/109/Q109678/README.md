@@ -6,6 +6,8 @@ permalink: /kb/109/Q109678/
 
 ## Q109678: FIX: CodeView/Visual Workbench Can't Watch static const Member
 
+{% raw %}
+
 	Article: Q109678
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,1.5,2.0,4.0,4.01,4.1
@@ -100,3 +102,5 @@ permalink: /kb/109/Q109678/
 	
 	=============================================================================
 	
+
+{% endraw %}

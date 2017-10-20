@@ -6,6 +6,8 @@ permalink: /kb/061/Q61202/
 
 ## Q61202: C 6.00 README: _setfont() Return Value Documented Incorrectly
 
+{% raw %}
+
 	Article: Q61202
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -22,3 +24,5 @@ permalink: /kb/061/Q61202/
 	The return values for _setfont() as described in online help are
 	incorrect. The _setfont() function returns the font index number if
 	successful, or a negative number if unsuccessful.
+
+{% endraw %}

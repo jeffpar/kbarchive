@@ -6,6 +6,8 @@ permalink: /kb/044/Q44925/
 
 ## Q44925: Status Line Input with a Blinking Cursor
 
+{% raw %}
+
 	Article: Q44925
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -157,3 +159,5 @@ permalink: /kb/044/Q44925/
 	
 	    return( r );
 	}
+
+{% endraw %}

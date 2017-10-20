@@ -6,6 +6,8 @@ permalink: /kb/193/Q193323/
 
 ## Q193323: XCON: Eicon X.25 Limited to Control Block Value of 32
 
+{% raw %}
+
 	Article: Q193323
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -106,3 +108,5 @@ permalink: /kb/193/Q193323/
 	
 	=============================================================================
 	
+
+{% endraw %}

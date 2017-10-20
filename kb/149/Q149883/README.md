@@ -6,6 +6,8 @@ permalink: /kb/149/Q149883/
 
 ## Q149883: Problems Installing Windows Sound Driver on Compaq Prolinea
 
+{% raw %}
+
 	Article: Q149883
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -91,3 +93,5 @@ permalink: /kb/149/Q149883/
 	
 	=============================================================================
 	
+
+{% endraw %}

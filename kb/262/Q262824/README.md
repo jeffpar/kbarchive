@@ -6,6 +6,8 @@ permalink: /kb/262/Q262824/
 
 ## Q262824: SMS: A Program May Run Twice Because It Appears in Bold
 
+{% raw %}
+
 	Article: Q262824
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -94,3 +96,5 @@ permalink: /kb/262/Q262824/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/293/Q293836/
 
 ## Q293836: XADM: Information Store Performance Degradation
 
+{% raw %}
+
 	Article: Q293836
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -184,3 +186,5 @@ permalink: /kb/293/Q293836/
 	
 	=============================================================================
 	
+
+{% endraw %}

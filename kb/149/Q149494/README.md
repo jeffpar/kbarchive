@@ -6,6 +6,8 @@ permalink: /kb/149/Q149494/
 
 ## Q149494: SMS Inventory Has a Limit of 16 Environment Variables
 
+{% raw %}
+
 	Article: Q149494
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -50,3 +52,5 @@ permalink: /kb/149/Q149494/
 	
 	=============================================================================
 	
+
+{% endraw %}

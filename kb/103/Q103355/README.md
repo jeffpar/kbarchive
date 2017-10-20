@@ -6,6 +6,8 @@ permalink: /kb/103/Q103355/
 
 ## Q103355: EXPORT/ COPY TO Commands Don't Work with Entire Tables
 
+{% raw %}
+
 	Article: Q103355
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a,2.5b; WINDOWS:2.5,2.5a,2.5b,3.0,3.0b
@@ -75,3 +77,5 @@ permalink: /kb/103/Q103355/
 	
 	=============================================================================
 	
+
+{% endraw %}

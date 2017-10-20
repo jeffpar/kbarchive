@@ -6,6 +6,8 @@ permalink: /kb/137/Q137122/
 
 ## Q137122: FIX: FOPEN() Does Not Search Path Specified by SET PATH
 
+{% raw %}
+
 	Article: Q137122
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -88,3 +90,5 @@ permalink: /kb/137/Q137122/
 	
 	=============================================================================
 	
+
+{% endraw %}

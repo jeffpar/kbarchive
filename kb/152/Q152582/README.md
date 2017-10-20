@@ -6,6 +6,8 @@ permalink: /kb/152/Q152582/
 
 ## Q152582: INFO: What is an FRX file?
 
+{% raw %}
+
 	Article: Q152582
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/152/Q152582/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/306/Q306427/
 
 ## Q306427: DB2OLEDB Provider: AV When Doing INSERT into DB2 Table
 
+{% raw %}
+
 	Article: Q306427
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -115,3 +117,5 @@ permalink: /kb/306/Q306427/
 	
 	=============================================================================
 	
+
+{% endraw %}

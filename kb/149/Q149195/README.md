@@ -6,6 +6,8 @@ permalink: /kb/149/Q149195/
 
 ## Q149195: Err Msg:  Could Not Connect.  Invalid Member ID or Password
 
+{% raw %}
+
 	Article: Q149195
 	Product(s): The Microsoft Network
 	Version(s): 5.0,5.1,5.2
@@ -217,3 +219,5 @@ permalink: /kb/149/Q149195/
 	
 	=============================================================================
 	
+
+{% endraw %}

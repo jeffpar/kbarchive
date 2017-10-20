@@ -6,6 +6,8 @@ permalink: /kb/172/Q172030/
 
 ## Q172030: WinNT Err Msg: Stop 0xA in TCPIP.SYS
 
+{% raw %}
+
 	Article: Q172030
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP5,4.0
@@ -75,3 +77,5 @@ permalink: /kb/172/Q172030/
 	
 	=============================================================================
 	
+
+{% endraw %}

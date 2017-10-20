@@ -6,6 +6,8 @@ permalink: /kb/173/Q173234/
 
 ## Q173234: Troubleshooting: End All Tasks
 
+{% raw %}
+
 	Article: Q173234
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,2.0
@@ -55,3 +57,5 @@ permalink: /kb/173/Q173234/
 	
 	=============================================================================
 	
+
+{% endraw %}

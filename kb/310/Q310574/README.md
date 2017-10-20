@@ -6,6 +6,8 @@ permalink: /kb/310/Q310574/
 
 ## Q310574: MechCommander 2: Game Unexpectedly Quits After CD Verification
 
+{% raw %}
+
 	Article: Q310574
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -113,3 +115,5 @@ permalink: /kb/310/Q310574/
 	
 	=============================================================================
 	
+
+{% endraw %}

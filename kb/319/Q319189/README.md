@@ -6,6 +6,8 @@ permalink: /kb/319/Q319189/
 
 ## Q319189: SMS: Distribution Manager Continuously Processes .pkg Files
 
+{% raw %}
+
 	Article: Q319189
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,2.0
@@ -91,3 +93,5 @@ permalink: /kb/319/Q319189/
 	
 	=============================================================================
 	
+
+{% endraw %}

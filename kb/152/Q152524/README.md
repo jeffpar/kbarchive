@@ -6,6 +6,8 @@ permalink: /kb/152/Q152524/
 
 ## Q152524: XCLN: SNADS Custom Template Information not Displayed
 
+{% raw %}
+
 	Article: Q152524
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -77,3 +79,5 @@ permalink: /kb/152/Q152524/
 	
 	=============================================================================
 	
+
+{% endraw %}

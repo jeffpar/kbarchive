@@ -6,6 +6,8 @@ permalink: /kb/096/Q96427/
 
 ## Q96427: INFO: Detecting Whether a Menu Is Open
 
+{% raw %}
+
 	Article: Q96427
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -61,3 +63,5 @@ permalink: /kb/096/Q96427/
 	
 	=============================================================================
 	
+
+{% endraw %}

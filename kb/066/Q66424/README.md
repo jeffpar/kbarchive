@@ -6,6 +6,8 @@ permalink: /kb/066/Q66424/
 
 ## Q66424: LSET Can Assign One TYPE Variable to a Different TYPE
 
+{% raw %}
+
 	Article: Q66424
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -65,3 +67,5 @@ permalink: /kb/066/Q66424/
 	The output is as follows:
 	
 	   John      Smith
+
+{% endraw %}

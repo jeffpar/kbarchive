@@ -6,6 +6,8 @@ permalink: /kb/191/Q191587/
 
 ## Q191587: HOWTO: Remove a Catalog from Component Gallery View
 
+{% raw %}
+
 	Article: Q191587
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -66,3 +68,5 @@ permalink: /kb/191/Q191587/
 	
 	=============================================================================
 	
+
+{% endraw %}

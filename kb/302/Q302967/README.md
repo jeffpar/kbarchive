@@ -6,6 +6,8 @@ permalink: /kb/302/Q302967/
 
 ## Q302967: SMS: Black Screen May Appear Instead of the Windows Logon Screen
 
+{% raw %}
+
 	Article: Q302967
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3
@@ -74,3 +76,5 @@ permalink: /kb/302/Q302967/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162959/
 
 ## Q162959: PPT: Sample Code to Get PowerPoint's Build Number
 
+{% raw %}
+
 	Article: Q162959
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -111,3 +113,5 @@ permalink: /kb/162/Q162959/
 	
 	=============================================================================
 	
+
+{% endraw %}

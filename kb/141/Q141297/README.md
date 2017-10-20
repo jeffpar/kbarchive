@@ -6,6 +6,8 @@ permalink: /kb/141/Q141297/
 
 ## Q141297: Unable to Print after Installing French Service Pack 2
 
+{% raw %}
+
 	Article: Q141297
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -64,3 +66,5 @@ permalink: /kb/141/Q141297/
 	
 	=============================================================================
 	
+
+{% endraw %}

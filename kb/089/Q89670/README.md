@@ -6,6 +6,8 @@ permalink: /kb/089/Q89670/
 
 ## Q89670: Configuring FoxBASE+ Memory Use in CONFIG.FX
 
+{% raw %}
+
 	Article: Q89670
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -53,3 +55,5 @@ permalink: /kb/089/Q89670/
 	
 	=============================================================================
 	
+
+{% endraw %}

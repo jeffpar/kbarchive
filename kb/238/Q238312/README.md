@@ -6,6 +6,8 @@ permalink: /kb/238/Q238312/
 
 ## Q238312: Fire TabStrip's Click Event When Using Msgbox in BeforeClick
 
+{% raw %}
+
 	Article: Q238312
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -105,3 +107,5 @@ permalink: /kb/238/Q238312/
 	
 	=============================================================================
 	
+
+{% endraw %}

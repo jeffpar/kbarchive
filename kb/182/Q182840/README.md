@@ -6,6 +6,8 @@ permalink: /kb/182/Q182840/
 
 ## Q182840: Net Localgroup Access Violates
 
+{% raw %}
+
 	Article: Q182840
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -79,3 +81,5 @@ permalink: /kb/182/Q182840/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157197/
 
 ## Q157197: WD97: Browse For Folder Dialog Box Behind Conversion Wizard
 
+{% raw %}
+
 	Article: Q157197
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -54,3 +56,5 @@ permalink: /kb/157/Q157197/
 	
 	=============================================================================
 	
+
+{% endraw %}

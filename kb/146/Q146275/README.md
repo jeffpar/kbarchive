@@ -6,6 +6,8 @@ permalink: /kb/146/Q146275/
 
 ## Q146275: XCLN: Unable to Save Changes to Attachment in Private Msg.
 
+{% raw %}
+
 	Article: Q146275
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -50,3 +52,5 @@ permalink: /kb/146/Q146275/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231920/
 
 ## Q231920: How to Filter on TCP Header Information Using Network Monitor
 
+{% raw %}
+
 	Article: Q231920
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:3.11,95,98,98 Second Edition; winnt:3.1,3.5,3.51,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.
@@ -90,3 +92,5 @@ permalink: /kb/231/Q231920/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/106/Q106489/
 
 ## Q106489: No Keyboard Shortcuts in FoxPro for Win Screen Builder
 
+{% raw %}
+
 	Article: Q106489
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.5b,3.0
@@ -42,3 +44,5 @@ permalink: /kb/106/Q106489/
 	
 	=============================================================================
 	
+
+{% endraw %}

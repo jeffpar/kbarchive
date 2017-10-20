@@ -6,6 +6,8 @@ permalink: /kb/198/Q198499/
 
 ## Q198499: XWEB: Post Reply to Custom HTML Form Posts in Web Forms Folder
 
+{% raw %}
+
 	Article: Q198499
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5,5.5SP1
@@ -45,3 +47,5 @@ permalink: /kb/198/Q198499/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/302/Q302480/
 
 ## Q302480: Train Simulator: Err Msg: Train World Initialization Failed
 
+{% raw %}
+
 	Article: Q302480
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -134,3 +136,5 @@ permalink: /kb/302/Q302480/
 	
 	=============================================================================
 	
+
+{% endraw %}

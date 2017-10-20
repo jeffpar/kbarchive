@@ -6,6 +6,8 @@ permalink: /kb/183/Q183518/
 
 ## Q183518: PRB: Cannot Set TabStops in ListBox Using SendMessage API
 
+{% raw %}
+
 	Article: Q183518
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -128,3 +130,5 @@ permalink: /kb/183/Q183518/
 	
 	=============================================================================
 	
+
+{% endraw %}

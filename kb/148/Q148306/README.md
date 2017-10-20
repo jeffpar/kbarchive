@@ -6,6 +6,8 @@ permalink: /kb/148/Q148306/
 
 ## Q148306: Hewlett-Packard DesignJet 750C Prints Text with Gray Background
 
+{% raw %}
+
 	Article: Q148306
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -41,3 +43,5 @@ permalink: /kb/148/Q148306/
 	
 	=============================================================================
 	
+
+{% endraw %}

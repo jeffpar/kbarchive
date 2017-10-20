@@ -6,6 +6,8 @@ permalink: /kb/175/Q175212/
 
 ## Q175212: SAMPLE: CHRTSAMP.EXE Visual Basic 5.0 MSChart Sample
 
+{% raw %}
+
 	Article: Q175212
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -69,3 +71,5 @@ permalink: /kb/175/Q175212/
 	
 	=============================================================================
 	
+
+{% endraw %}

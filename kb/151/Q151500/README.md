@@ -6,6 +6,8 @@ permalink: /kb/151/Q151500/
 
 ## Q151500: FIX: /Og Causes vfptr Initialization Problems
 
+{% raw %}
+
 	Article: Q151500
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2 5.0
@@ -130,3 +132,5 @@ permalink: /kb/151/Q151500/
 	
 	=============================================================================
 	
+
+{% endraw %}

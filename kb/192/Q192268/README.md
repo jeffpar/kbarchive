@@ -6,6 +6,8 @@ permalink: /kb/192/Q192268/
 
 ## Q192268: Err Msg: Cmmgr32.exe Is Linked to Missing Export Advapi32.dll
 
+{% raw %}
+
 	Article: Q192268
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6
@@ -78,3 +80,5 @@ permalink: /kb/192/Q192268/
 	
 	=============================================================================
 	
+
+{% endraw %}

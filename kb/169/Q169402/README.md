@@ -6,6 +6,8 @@ permalink: /kb/169/Q169402/
 
 ## Q169402: FIX: Breakpoints Not Allowed on Certain Valid SQL Statements
 
+{% raw %}
+
 	Article: Q169402
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -62,3 +64,5 @@ permalink: /kb/169/Q169402/
 	
 	=============================================================================
 	
+
+{% endraw %}

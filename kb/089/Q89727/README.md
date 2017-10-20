@@ -6,6 +6,8 @@ permalink: /kb/089/Q89727/
 
 ## Q89727: Using ATTRIB, CHKDSK, or DIR Command to Locate Files
 
+{% raw %}
+
 	Article: Q89727
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:2.x,3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -71,3 +73,5 @@ permalink: /kb/089/Q89727/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172157/
 
 ## Q172157: PRB: Do Not Use SourceSafe When Running SSARC or SSRESTO
 
+{% raw %}
+
 	Article: Q172157
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/172/Q172157/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/260/Q260037/
 
 ## Q260037: XADM: How to Remove a Message from Exchange by Using ExMerge
 
+{% raw %}
+
 	Article: Q260037
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -112,3 +114,5 @@ permalink: /kb/260/Q260037/
 	
 	=============================================================================
 	
+
+{% endraw %}

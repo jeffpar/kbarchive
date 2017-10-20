@@ -6,6 +6,8 @@ permalink: /kb/134/Q134661/
 
 ## Q134661: PDFs Included with Systems Management Server 1.1
 
+{% raw %}
+
 	Article: Q134661
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -92,3 +94,5 @@ permalink: /kb/134/Q134661/
 	
 	=============================================================================
 	
+
+{% endraw %}

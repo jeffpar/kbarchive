@@ -6,6 +6,8 @@ permalink: /kb/281/Q281410/
 
 ## Q281410: Combat Flight Simulator 2: Aircraft Appear Smaller
 
+{% raw %}
+
 	Article: Q281410
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -47,3 +49,5 @@ permalink: /kb/281/Q281410/
 	
 	=============================================================================
 	
+
+{% endraw %}

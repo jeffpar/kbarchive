@@ -6,6 +6,8 @@ permalink: /kb/240/Q240664/
 
 ## Q240664: COM Internet Services Do Not Work Without ProxyOverride Entry
 
+{% raw %}
+
 	Article: Q240664
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -97,3 +99,5 @@ permalink: /kb/240/Q240664/
 	
 	=============================================================================
 	
+
+{% endraw %}

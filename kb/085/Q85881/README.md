@@ -6,6 +6,8 @@ permalink: /kb/085/Q85881/
 
 ## Q85881: PC Win: Sending Objects That Point to a Document
 
+{% raw %}
+
 	Article: Q85881
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -60,3 +62,5 @@ permalink: /kb/085/Q85881/
 	
 	=============================================================================
 	
+
+{% endraw %}

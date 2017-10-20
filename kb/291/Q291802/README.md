@@ -6,6 +6,8 @@ permalink: /kb/291/Q291802/
 
 ## Q291802: System Management Server Training Kit Comments and Corrections
 
+{% raw %}
+
 	Article: Q291802
 	Product(s): Microsoft Press
 	Version(s): 
@@ -109,3 +111,5 @@ permalink: /kb/291/Q291802/
 	
 	=============================================================================
 	
+
+{% endraw %}

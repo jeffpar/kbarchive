@@ -6,6 +6,8 @@ permalink: /kb/118/Q118874/
 
 ## Q118874: Command-Line Options for MVIEWER2.EXE
 
+{% raw %}
+
 	Article: Q118874
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -47,3 +49,5 @@ permalink: /kb/118/Q118874/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193623/
 
 ## Q193623: HOWTO: Determine the Logical Drives on a System
 
+{% raw %}
+
 	Article: Q193623
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -113,3 +115,5 @@ permalink: /kb/193/Q193623/
 	
 	=============================================================================
 	
+
+{% endraw %}

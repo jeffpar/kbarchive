@@ -6,6 +6,8 @@ permalink: /kb/306/Q306876/
 
 ## Q306876: APPC/CPI-C App. Doesn't Use APPC LU With Auto-activated Sessions
 
+{% raw %}
+
 	Article: Q306876
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -218,3 +220,5 @@ permalink: /kb/306/Q306876/
 	
 	=============================================================================
 	
+
+{% endraw %}

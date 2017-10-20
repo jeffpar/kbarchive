@@ -6,6 +6,8 @@ permalink: /kb/081/Q81872/
 
 ## Q81872: Detecting Multimedia Extensions and Drivers
 
+{% raw %}
+
 	Article: Q81872
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0
@@ -66,3 +68,5 @@ permalink: /kb/081/Q81872/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/110/Q110426/
 
 ## Q110426: SMC 661-666 Floppy Controller, Errors Reading Disks
 
+{% raw %}
+
 	Article: Q110426
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -91,3 +93,5 @@ permalink: /kb/110/Q110426/
 	
 	=============================================================================
 	
+
+{% endraw %}

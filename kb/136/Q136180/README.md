@@ -6,6 +6,8 @@ permalink: /kb/136/Q136180/
 
 ## Q136180: Sorry, This Presentation Contains Open Embedded Objects...
 
+{% raw %}
+
 	Article: Q136180
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -53,3 +55,5 @@ permalink: /kb/136/Q136180/
 	
 	=============================================================================
 	
+
+{% endraw %}

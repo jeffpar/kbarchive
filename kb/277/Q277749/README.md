@@ -6,6 +6,8 @@ permalink: /kb/277/Q277749/
 
 ## Q277749: HOWTO: Set a Pushpin in MapPoint 2001 Using Automation
 
+{% raw %}
+
 	Article: Q277749
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -101,3 +103,5 @@ permalink: /kb/277/Q277749/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/074/Q74924/
 
 ## Q74924: A Structure Template Can Be Referenced in a MASM Program
 
+{% raw %}
+
 	Article: Q74924
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.10,5.10a,6.0
@@ -70,3 +72,5 @@ permalink: /kb/074/Q74924/
 	
 	=============================================================================
 	
+
+{% endraw %}

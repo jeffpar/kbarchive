@@ -6,6 +6,8 @@ permalink: /kb/156/Q156733/
 
 ## Q156733: PRB: Error Message with BROWSE and SET FILTER Commands in Form
 
+{% raw %}
+
 	Article: Q156733
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -104,3 +106,5 @@ permalink: /kb/156/Q156733/
 	
 	=============================================================================
 	
+
+{% endraw %}

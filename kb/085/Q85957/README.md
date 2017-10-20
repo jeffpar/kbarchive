@@ -6,6 +6,8 @@ permalink: /kb/085/Q85957/
 
 ## Q85957: BUG: CVW 4.0 May Pause When Stepping Through a Program
 
+{% raw %}
+
 	Article: Q85957
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0
@@ -52,3 +54,5 @@ permalink: /kb/085/Q85957/
 	
 	=============================================================================
 	
+
+{% endraw %}

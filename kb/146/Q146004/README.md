@@ -6,6 +6,8 @@ permalink: /kb/146/Q146004/
 
 ## Q146004: SNMP Counter Values Are Unreliable in SMP Computers
 
+{% raw %}
+
 	Article: Q146004
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.5,3.51,4.0
@@ -74,3 +76,5 @@ permalink: /kb/146/Q146004/
 	
 	=============================================================================
 	
+
+{% endraw %}

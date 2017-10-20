@@ -6,6 +6,8 @@ permalink: /kb/124/Q124859/
 
 ## Q124859: Allowing Non-Administrators to Use the AT command
 
+{% raw %}
+
 	Article: Q124859
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -70,3 +72,5 @@ permalink: /kb/124/Q124859/
 	
 	=============================================================================
 	
+
+{% endraw %}

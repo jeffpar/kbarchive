@@ -6,6 +6,8 @@ permalink: /kb/141/Q141018/
 
 ## Q141018: Rearranging Icons While Renaming File Renames Wrong File
 
+{% raw %}
+
 	Article: Q141018
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -59,3 +61,5 @@ permalink: /kb/141/Q141018/
 	
 	=============================================================================
 	
+
+{% endraw %}

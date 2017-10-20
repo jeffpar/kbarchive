@@ -6,6 +6,8 @@ permalink: /kb/287/Q287152/
 
 ## Q287152: MechWarrior 4: Known Video Issues in MechWarrior 4
 
+{% raw %}
+
 	Article: Q287152
 	Product(s): Microsoft Home Games
 	Version(s): 4.0
@@ -521,3 +523,5 @@ permalink: /kb/287/Q287152/
 	
 	=============================================================================
 	
+
+{% endraw %}

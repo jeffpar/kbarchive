@@ -6,6 +6,8 @@ permalink: /kb/176/Q176455/
 
 ## Q176455: XADM: NDR When Attempting to Send to Large Number of Recipients
 
+{% raw %}
+
 	Article: Q176455
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -64,3 +66,5 @@ permalink: /kb/176/Q176455/
 	
 	=============================================================================
 	
+
+{% endraw %}

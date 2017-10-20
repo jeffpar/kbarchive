@@ -6,6 +6,8 @@ permalink: /kb/097/Q97046/
 
 ## Q97046: PC WRmt: Each Session Overwrites SESSION.LOG File
 
+{% raw %}
+
 	Article: Q97046
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -44,3 +46,5 @@ permalink: /kb/097/Q97046/
 	
 	=============================================================================
 	
+
+{% endraw %}

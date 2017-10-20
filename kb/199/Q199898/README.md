@@ -6,6 +6,8 @@ permalink: /kb/199/Q199898/
 
 ## Q199898: SMS: Disk I/O Error  When Running Reports Using Crystal Info
 
+{% raw %}
+
 	Article: Q199898
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -74,3 +76,5 @@ permalink: /kb/199/Q199898/
 	
 	=============================================================================
 	
+
+{% endraw %}

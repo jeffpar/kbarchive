@@ -6,6 +6,8 @@ permalink: /kb/033/Q33626/
 
 ## Q33626: Assembly Routine Using STD Works in QB 3.00, Not 4.00
 
+{% raw %}
+
 	Article: Q33626
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00B 4.50
@@ -83,3 +85,5 @@ permalink: /kb/033/Q33626/
 	   String: abcdefghijklmnopqrstuvwxyz
 	   abcdefghijklmnopqrstuvwxyz   28
 	   abcdefghijklmnopqrstuvwxyz 26
+
+{% endraw %}

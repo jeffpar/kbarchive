@@ -6,6 +6,8 @@ permalink: /kb/102/Q102629/
 
 ## Q102629: TCP, IP, ICMP, UDP Counters with PERFMON.EXE
 
+{% raw %}
+
 	Article: Q102629
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/102/Q102629/
 	
 	=============================================================================
 	
+
+{% endraw %}

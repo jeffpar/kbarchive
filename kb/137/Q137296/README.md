@@ -6,6 +6,8 @@ permalink: /kb/137/Q137296/
 
 ## Q137296: Adding Additional Logical Print Server Ports for FPNW
 
+{% raw %}
+
 	Article: Q137296
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -72,3 +74,5 @@ permalink: /kb/137/Q137296/
 	
 	=============================================================================
 	
+
+{% endraw %}

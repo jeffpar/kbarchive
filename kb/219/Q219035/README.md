@@ -6,6 +6,8 @@ permalink: /kb/219/Q219035/
 
 ## Q219035: XADM: Backup Event 104 Text is Ambiguous or Incorrect
 
+{% raw %}
+
 	Article: Q219035
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -74,3 +76,5 @@ permalink: /kb/219/Q219035/
 	
 	=============================================================================
 	
+
+{% endraw %}

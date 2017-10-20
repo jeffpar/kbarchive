@@ -6,6 +6,8 @@ permalink: /kb/288/Q288785/
 
 ## Q288785: INFO: Cursor Type Supported by DB2OLEDB Provider
 
+{% raw %}
+
 	Article: Q288785
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP2,4.0 SP3,4.0 SP4
@@ -75,3 +77,5 @@ permalink: /kb/288/Q288785/
 	
 	=============================================================================
 	
+
+{% endraw %}

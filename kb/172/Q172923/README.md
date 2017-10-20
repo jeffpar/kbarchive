@@ -6,6 +6,8 @@ permalink: /kb/172/Q172923/
 
 ## Q172923: FIX: Copy To ... Type SDF Causes Error Message in Visual FoxPro
 
+{% raw %}
+
 	Article: Q172923
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -81,3 +83,5 @@ permalink: /kb/172/Q172923/
 	
 	=============================================================================
 	
+
+{% endraw %}

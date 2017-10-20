@@ -6,6 +6,8 @@ permalink: /kb/264/Q264697/
 
 ## Q264697: SMSINST: Create Service Script Action Doesn't Grant Nec. Right
 
+{% raw %}
+
 	Article: Q264697
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -86,3 +88,5 @@ permalink: /kb/264/Q264697/
 	
 	=============================================================================
 	
+
+{% endraw %}

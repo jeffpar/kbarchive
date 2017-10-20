@@ -6,6 +6,8 @@ permalink: /kb/021/Q21915/
 
 ## Q21915: Beep When Editing INPUT or LINE INPUT Statement Responses
 
+{% raw %}
+
 	Article: Q21915
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -26,3 +28,5 @@ permalink: /kb/021/Q21915/
 	This information applies to Microsoft QuickBASIC 2.00 2.01 3.00 4.00
 	4.00B and 4.50, to Microsoft BASIC Compiler 6.00 and 6.00B, and to
 	Microsoft BASIC PDS Version 7.00 for MS-DOS and MS OS/2.
+
+{% endraw %}

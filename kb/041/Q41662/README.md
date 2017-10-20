@@ -6,6 +6,8 @@ permalink: /kb/041/Q41662/
 
 ## Q41662: QuickC 2.00 README.DOC: Creating a Help Database
 
+{% raw %}
+
 	Article: Q41662
 	Product(s): See article
 	Version(s): 2.00
@@ -32,3 +34,5 @@ permalink: /kb/041/Q41662/
 	QuickC's on-line help system can search up to 10 files. This includes
 	the four standard help files (QC.HLP, OCENV.HLP, ERROR.HLP and
 	GRAPHICS.HLP) and up to six user-defined files.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156253/
 
 ## Q156253: Bunyan: 16-Bit Setup Creates Unused Directories
 
+{% raw %}
+
 	Article: Q156253
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -54,3 +56,5 @@ permalink: /kb/156/Q156253/
 	
 	=============================================================================
 	
+
+{% endraw %}

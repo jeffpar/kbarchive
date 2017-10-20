@@ -6,6 +6,8 @@ permalink: /kb/127/Q127840/
 
 ## Q127840: Info Provided by the Version() Function in Visual FoxPro
 
+{% raw %}
+
 	Article: Q127840
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -52,3 +54,5 @@ permalink: /kb/127/Q127840/
 	
 	=============================================================================
 	
+
+{% endraw %}

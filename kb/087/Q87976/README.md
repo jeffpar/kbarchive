@@ -6,6 +6,8 @@ permalink: /kb/087/Q87976/
 
 ## Q87976: HOWTO: Creating a Foundation Classes Dialog Box with Custom Icon
 
+{% raw %}
+
 	Article: Q87976
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1
@@ -180,3 +182,5 @@ permalink: /kb/087/Q87976/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139757/
 
 ## Q139757: FIX: Upsize Wizard Falsely Creates Timestamp Field on SQL 6.0
 
+{% raw %}
+
 	Article: Q139757
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b
@@ -77,3 +79,5 @@ permalink: /kb/139/Q139757/
 	
 	=============================================================================
 	
+
+{% endraw %}

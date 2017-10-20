@@ -6,6 +6,8 @@ permalink: /kb/189/Q189056/
 
 ## Q189056: BUG: Incorrect Localized Strings Display in the Visual Basic IDE
 
+{% raw %}
+
 	Article: Q189056
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -106,3 +108,5 @@ permalink: /kb/189/Q189056/
 	
 	=============================================================================
 	
+
+{% endraw %}

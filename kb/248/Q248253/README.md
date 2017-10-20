@@ -6,6 +6,8 @@ permalink: /kb/248/Q248253/
 
 ## Q248253: XCON: Deferred Delivery Issues in Exchange Server 5.5 SP3 MTA
 
+{% raw %}
+
 	Article: Q248253
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -159,3 +161,5 @@ permalink: /kb/248/Q248253/
 	
 	=============================================================================
 	
+
+{% endraw %}

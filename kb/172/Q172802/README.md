@@ -6,6 +6,8 @@ permalink: /kb/172/Q172802/
 
 ## Q172802: SNA Server Access Violation in s1pcrefm()
 
+{% raw %}
+
 	Article: Q172802
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1
@@ -125,3 +127,5 @@ permalink: /kb/172/Q172802/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/238/Q238807/
 
 ## Q238807: Err Msg: The Files Necessary to Run Virtual Tours Are Missing...
 
+{% raw %}
+
 	Article: Q238807
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -64,3 +66,5 @@ permalink: /kb/238/Q238807/
 	
 	=============================================================================
 	
+
+{% endraw %}

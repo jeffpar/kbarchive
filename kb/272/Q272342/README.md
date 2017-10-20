@@ -6,6 +6,8 @@ permalink: /kb/272/Q272342/
 
 ## Q272342: Plus! Game Pack: No Game Sounds with Sound Blaster 16 CT 2950
 
+{% raw %}
+
 	Article: Q272342
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0; :
@@ -51,3 +53,5 @@ permalink: /kb/272/Q272342/
 	
 	=============================================================================
 	
+
+{% endraw %}

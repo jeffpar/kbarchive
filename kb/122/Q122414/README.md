@@ -6,6 +6,8 @@ permalink: /kb/122/Q122414/
 
 ## Q122414: RAS: Error 651 with the Evercom 24E+ Modem
 
+{% raw %}
+
 	Article: Q122414
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -55,3 +57,5 @@ permalink: /kb/122/Q122414/
 	
 	=============================================================================
 	
+
+{% endraw %}

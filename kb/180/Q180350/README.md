@@ -6,6 +6,8 @@ permalink: /kb/180/Q180350/
 
 ## Q180350: XADM: Remote Monitoring Increases Open Handles on Server
 
+{% raw %}
+
 	Article: Q180350
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -76,3 +78,5 @@ permalink: /kb/180/Q180350/
 	
 	=============================================================================
 	
+
+{% endraw %}

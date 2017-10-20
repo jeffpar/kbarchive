@@ -6,6 +6,8 @@ permalink: /kb/143/Q143298/
 
 ## Q143298: How to Use Indirect Referencing of Objects Creatively
 
+{% raw %}
+
 	Article: Q143298
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -73,3 +75,5 @@ permalink: /kb/143/Q143298/
 	
 	=============================================================================
 	
+
+{% endraw %}

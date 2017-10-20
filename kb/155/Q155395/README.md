@@ -6,6 +6,8 @@ permalink: /kb/155/Q155395/
 
 ## Q155395: Multiple Instances of Control Panel Tool Started
 
+{% raw %}
+
 	Article: Q155395
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -81,3 +83,5 @@ permalink: /kb/155/Q155395/
 	
 	=============================================================================
 	
+
+{% endraw %}

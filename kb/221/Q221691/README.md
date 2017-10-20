@@ -6,6 +6,8 @@ permalink: /kb/221/Q221691/
 
 ## Q221691: FIX: ADO Reference Keeps Visual FoxPro in Memory after Quitting
 
+{% raw %}
+
 	Article: Q221691
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -66,3 +68,5 @@ permalink: /kb/221/Q221691/
 	
 	=============================================================================
 	
+
+{% endraw %}

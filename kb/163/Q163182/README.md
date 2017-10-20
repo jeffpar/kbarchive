@@ -6,6 +6,8 @@ permalink: /kb/163/Q163182/
 
 ## Q163182: ODE97: ODE Setup Does Not Check for MS Access 97 or Office 97
 
+{% raw %}
+
 	Article: Q163182
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/163/Q163182/
 	
 	=============================================================================
 	
+
+{% endraw %}

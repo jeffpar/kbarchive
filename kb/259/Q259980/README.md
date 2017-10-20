@@ -6,6 +6,8 @@ permalink: /kb/259/Q259980/
 
 ## Q259980: Nwrdr.sys Mishandles an Exception That Can Cause a &quot;Stop&quot; Error
 
+{% raw %}
+
 	Article: Q259980
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP5
@@ -79,3 +81,5 @@ permalink: /kb/259/Q259980/
 	
 	=============================================================================
 	
+
+{% endraw %}

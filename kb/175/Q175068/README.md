@@ -6,6 +6,8 @@ permalink: /kb/175/Q175068/
 
 ## Q175068: Zero Administration Kit Server Setup Does not Finish
 
+{% raw %}
+
 	Article: Q175068
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; WINNT:4.0
@@ -57,3 +59,5 @@ permalink: /kb/175/Q175068/
 	
 	=============================================================================
 	
+
+{% endraw %}

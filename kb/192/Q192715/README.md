@@ -6,6 +6,8 @@ permalink: /kb/192/Q192715/
 
 ## Q192715: XWEB: OWA Default Time Changes Composing New Appointment
 
+{% raw %}
+
 	Article: Q192715
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -41,3 +43,5 @@ permalink: /kb/192/Q192715/
 	
 	=============================================================================
 	
+
+{% endraw %}

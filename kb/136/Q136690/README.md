@@ -6,6 +6,8 @@ permalink: /kb/136/Q136690/
 
 ## Q136690: Firing Sequence of Visual FoxPro Events
 
+{% raw %}
+
 	Article: Q136690
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/136/Q136690/
 	
 	=============================================================================
 	
+
+{% endraw %}

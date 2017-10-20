@@ -6,6 +6,8 @@ permalink: /kb/136/Q136417/
 
 ## Q136417: No Sounds in Da Vinci eMAIL After Restarting Windows 95
 
+{% raw %}
+
 	Article: Q136417
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/136/Q136417/
 	
 	=============================================================================
 	
+
+{% endraw %}

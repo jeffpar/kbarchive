@@ -6,6 +6,8 @@ permalink: /kb/153/Q153586/
 
 ## Q153586: HOWTO: Call C Functions That Use the _cdecl Calling Convention
 
+{% raw %}
+
 	Article: Q153586
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -109,3 +111,5 @@ permalink: /kb/153/Q153586/
 	
 	=============================================================================
 	
+
+{% endraw %}

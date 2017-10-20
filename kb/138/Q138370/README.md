@@ -6,6 +6,8 @@ permalink: /kb/138/Q138370/
 
 ## Q138370: Nonstandard LPT Port Names Disable Access to Shared Printers
 
+{% raw %}
+
 	Article: Q138370
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/138/Q138370/
 	
 	=============================================================================
 	
+
+{% endraw %}

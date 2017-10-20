@@ -6,6 +6,8 @@ permalink: /kb/231/Q231453/
 
 ## Q231453: Internet Explorer 5.0 Fails to Pass Session Variables to IIS
 
+{% raw %}
+
 	Article: Q231453
 	Product(s): Internet Information Server
 	Version(s): 4.0,5
@@ -89,3 +91,5 @@ permalink: /kb/231/Q231453/
 	
 	=============================================================================
 	
+
+{% endraw %}

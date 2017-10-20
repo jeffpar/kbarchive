@@ -6,6 +6,8 @@ permalink: /kb/251/Q251143/
 
 ## Q251143: Problems Installing Proxy Server 2.0 Update in Windows 2000
 
+{% raw %}
+
 	Article: Q251143
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.5
@@ -68,3 +70,5 @@ permalink: /kb/251/Q251143/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/065/Q65122/
 
 ## Q65122: Executable-File Header Format
 
+{% raw %}
+
 	Article: Q65122
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -614,3 +616,5 @@ permalink: /kb/065/Q65122/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132604/
 
 ## Q132604: Cannot Explore Folders in NetHood Folder
 
+{% raw %}
+
 	Article: Q132604
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -42,3 +44,5 @@ permalink: /kb/132/Q132604/
 	
 	=============================================================================
 	
+
+{% endraw %}

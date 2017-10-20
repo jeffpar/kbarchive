@@ -6,6 +6,8 @@ permalink: /kb/196/Q196395/
 
 ## Q196395: XADM: DS_E_UNABLE_TO_PROCEED While Opening Admin Program
 
+{% raw %}
+
 	Article: Q196395
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -48,3 +50,5 @@ permalink: /kb/196/Q196395/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/297/Q297421/
 
 ## Q297421: &quot;Liccheck.exe DLL Initialization Failed&quot; ARCserve Error Message
 
+{% raw %}
+
 	Article: Q297421
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -80,3 +82,5 @@ permalink: /kb/297/Q297421/
 	
 	=============================================================================
 	
+
+{% endraw %}

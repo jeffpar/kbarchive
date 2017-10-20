@@ -6,6 +6,8 @@ permalink: /kb/187/Q187411/
 
 ## Q187411: Some Desktop Icons Cannot Be Moved with Right Mouse Button
 
+{% raw %}
+
 	Article: Q187411
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -55,3 +57,5 @@ permalink: /kb/187/Q187411/
 	
 	=============================================================================
 	
+
+{% endraw %}

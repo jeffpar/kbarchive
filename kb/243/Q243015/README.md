@@ -6,6 +6,8 @@ permalink: /kb/243/Q243015/
 
 ## Q243015: INFO: Migration DLLs Target Only Windows 95/98 Applications
 
+{% raw %}
+
 	Article: Q243015
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/243/Q243015/
 	
 	=============================================================================
 	
+
+{% endraw %}

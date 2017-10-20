@@ -6,6 +6,8 @@ permalink: /kb/068/Q68604/
 
 ## Q68604: Mac Wkst: Mail Recipients on Server List Appear in Italics
 
+{% raw %}
+
 	Article: Q68604
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/068/Q68604/
 	
 	=============================================================================
 	
+
+{% endraw %}

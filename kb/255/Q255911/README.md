@@ -6,6 +6,8 @@ permalink: /kb/255/Q255911/
 
 ## Q255911: INFO: Integrating SourceSafe on Novell w/V InterDev or FrontPage
 
+{% raw %}
+
 	Article: Q255911
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0,98
@@ -80,3 +82,5 @@ permalink: /kb/255/Q255911/
 	
 	=============================================================================
 	
+
+{% endraw %}

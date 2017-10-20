@@ -6,6 +6,8 @@ permalink: /kb/234/Q234483/
 
 ## Q234483: WD97: wdDocumentsPath Constant Returns Current Folder
 
+{% raw %}
+
 	Article: Q234483
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -92,3 +94,5 @@ permalink: /kb/234/Q234483/
 	
 	=============================================================================
 	
+
+{% endraw %}

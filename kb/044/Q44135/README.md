@@ -6,6 +6,8 @@ permalink: /kb/044/Q44135/
 
 ## Q44135: BASIC Program That Passes a STATIC or DYNAMIC Array to MASM
 
+{% raw %}
+
 	Article: Q44135
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -95,3 +97,5 @@ permalink: /kb/044/Q44135/
 	prompt):
 	
 	   MAIN
+
+{% endraw %}

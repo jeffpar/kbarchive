@@ -6,6 +6,8 @@ permalink: /kb/186/Q186682/
 
 ## Q186682: FIX: DBCombo BoundText Incorrect When Setting Text Property
 
+{% raw %}
+
 	Article: Q186682
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/186/Q186682/
 	
 	=============================================================================
 	
+
+{% endraw %}

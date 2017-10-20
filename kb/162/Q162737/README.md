@@ -6,6 +6,8 @@ permalink: /kb/162/Q162737/
 
 ## Q162737: No Plug and Play Detection for Non-DDC Monitors
 
+{% raw %}
+
 	Article: Q162737
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -72,3 +74,5 @@ permalink: /kb/162/Q162737/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/254/Q254570/
 
 ## Q254570: PRB: Transaction Commit Behavior Changes in Oracle ODBC Driver
 
+{% raw %}
+
 	Article: Q254570
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 1.0,Build 2.573.2927,Build 2.573.4403,Build 2.573.6526,Build 2.573.7713.2,Build 2.73.7
@@ -129,3 +131,5 @@ permalink: /kb/254/Q254570/
 	
 	=============================================================================
 	
+
+{% endraw %}

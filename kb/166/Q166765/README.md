@@ -6,6 +6,8 @@ permalink: /kb/166/Q166765/
 
 ## Q166765: SMS: Deploying Packages Successfully with the PCM Service
 
+{% raw %}
+
 	Article: Q166765
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -154,3 +156,5 @@ permalink: /kb/166/Q166765/
 	
 	=============================================================================
 	
+
+{% endraw %}

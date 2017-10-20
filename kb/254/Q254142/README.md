@@ -6,6 +6,8 @@ permalink: /kb/254/Q254142/
 
 ## Q254142: Sending a Large Escape Sequence Causes 100% CPU
 
+{% raw %}
+
 	Article: Q254142
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -271,3 +273,5 @@ permalink: /kb/254/Q254142/
 	
 	=============================================================================
 	
+
+{% endraw %}

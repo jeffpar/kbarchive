@@ -6,6 +6,8 @@ permalink: /kb/149/Q149941/
 
 ## Q149941: Windows Clients Not Able to Browse Remote Workgroups
 
+{% raw %}
+
 	Article: Q149941
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; Win2000:95; winnt:3.5,3.51,4.0; :
@@ -84,3 +86,5 @@ permalink: /kb/149/Q149941/
 	
 	=============================================================================
 	
+
+{% endraw %}

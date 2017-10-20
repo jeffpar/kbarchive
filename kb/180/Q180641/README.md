@@ -6,6 +6,8 @@ permalink: /kb/180/Q180641/
 
 ## Q180641: XCON: cc:Mail Connector NDRs Messages with Unknown Date Format
 
+{% raw %}
+
 	Article: Q180641
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -166,3 +168,5 @@ permalink: /kb/180/Q180641/
 	
 	=============================================================================
 	
+
+{% endraw %}

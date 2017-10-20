@@ -6,6 +6,8 @@ permalink: /kb/129/Q129266/
 
 ## Q129266: DUMPEL.EXE Can Interpret Event Log Hex Data
 
+{% raw %}
+
 	Article: Q129266
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/129/Q129266/
 	
 	=============================================================================
 	
+
+{% endraw %}

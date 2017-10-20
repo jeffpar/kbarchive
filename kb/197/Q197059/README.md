@@ -6,6 +6,8 @@ permalink: /kb/197/Q197059/
 
 ## Q197059: XFOR: POP3 Clients Cannot Log In with CTA via Membership Server
 
+{% raw %}
+
 	Article: Q197059
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0 5.0 5.5
@@ -127,3 +129,5 @@ permalink: /kb/197/Q197059/
 	
 	=============================================================================
 	
+
+{% endraw %}

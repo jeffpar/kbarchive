@@ -6,6 +6,8 @@ permalink: /kb/118/Q118783/
 
 ## Q118783: X400: Windows Client Return Receipt Info Stripped
 
+{% raw %}
+
 	Article: Q118783
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -48,3 +50,5 @@ permalink: /kb/118/Q118783/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155785/
 
 ## Q155785: CG3: Colors Turn to Gray in Thumbnail Images
 
+{% raw %}
+
 	Article: Q155785
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 3.0; WINDOWS:97
@@ -58,3 +60,5 @@ permalink: /kb/155/Q155785/
 	
 	=============================================================================
 	
+
+{% endraw %}

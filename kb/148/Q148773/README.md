@@ -6,6 +6,8 @@ permalink: /kb/148/Q148773/
 
 ## Q148773: White Text Appears Black When Printed from WordPad
 
+{% raw %}
+
 	Article: Q148773
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/148/Q148773/
 	
 	=============================================================================
 	
+
+{% endraw %}

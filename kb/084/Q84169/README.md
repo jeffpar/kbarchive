@@ -6,6 +6,8 @@ permalink: /kb/084/Q84169/
 
 ## Q84169: Changing the Icon Title Size/Font for Windows 3.1
 
+{% raw %}
+
 	Article: Q84169
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -105,3 +107,5 @@ permalink: /kb/084/Q84169/
 	
 	=============================================================================
 	
+
+{% endraw %}

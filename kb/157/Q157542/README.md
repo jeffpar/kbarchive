@@ -6,6 +6,8 @@ permalink: /kb/157/Q157542/
 
 ## Q157542: Private Meetings Not Created as Private on Attendee's Calendar
 
+{% raw %}
+
 	Article: Q157542
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0,7.0a; Win95:7.0
@@ -50,3 +52,5 @@ permalink: /kb/157/Q157542/
 	
 	=============================================================================
 	
+
+{% endraw %}

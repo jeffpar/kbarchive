@@ -6,6 +6,8 @@ permalink: /kb/188/Q188000/
 
 ## Q188000: Cannot Enter Stand-Alone Dieresis Character on Swiss Keyboards
 
+{% raw %}
+
 	Article: Q188000
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/188/Q188000/
 	
 	=============================================================================
 	
+
+{% endraw %}

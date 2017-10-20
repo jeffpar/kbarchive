@@ -6,6 +6,8 @@ permalink: /kb/265/Q265137/
 
 ## Q265137: XFOR: Cannot Install Connector MTA on MS Mail Connector
 
+{% raw %}
+
 	Article: Q265137
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -66,3 +68,5 @@ permalink: /kb/265/Q265137/
 	
 	=============================================================================
 	
+
+{% endraw %}

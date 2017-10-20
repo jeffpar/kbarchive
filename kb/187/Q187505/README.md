@@ -6,6 +6,8 @@ permalink: /kb/187/Q187505/
 
 ## Q187505: Documents May Not Get Indexed Correctly
 
+{% raw %}
+
 	Article: Q187505
 	Product(s): Internet Information Server
 	Version(s): WINNT:1.1,2.0
@@ -48,3 +50,5 @@ permalink: /kb/187/Q187505/
 	
 	=============================================================================
 	
+
+{% endraw %}

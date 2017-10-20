@@ -6,6 +6,8 @@ permalink: /kb/099/Q99713/
 
 ## Q99713: SMTP: How Reply Chooses a From Address
 
+{% raw %}
+
 	Article: Q99713
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -144,3 +146,5 @@ permalink: /kb/099/Q99713/
 	
 	=============================================================================
 	
+
+{% endraw %}

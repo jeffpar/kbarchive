@@ -6,6 +6,8 @@ permalink: /kb/113/Q113345/
 
 ## Q113345: Support for PCI Computers and Peripherals in Windows NT 3.1
 
+{% raw %}
+
 	Article: Q113345
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -84,3 +86,5 @@ permalink: /kb/113/Q113345/
 	
 	=============================================================================
 	
+
+{% endraw %}

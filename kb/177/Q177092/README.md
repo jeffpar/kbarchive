@@ -6,6 +6,8 @@ permalink: /kb/177/Q177092/
 
 ## Q177092: FP: Overview of FrontPage Discussion Web Architecture
 
+{% raw %}
+
 	Article: Q177092
 	Product(s): Word Front Page
 	Version(s): 
@@ -269,3 +271,5 @@ permalink: /kb/177/Q177092/
 	
 	=============================================================================
 	
+
+{% endraw %}

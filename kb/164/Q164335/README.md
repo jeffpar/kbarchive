@@ -6,6 +6,8 @@ permalink: /kb/164/Q164335/
 
 ## Q164335: WD97: &quot;Change Text Direction&quot; Button Shows Incorrect Direction
 
+{% raw %}
+
 	Article: Q164335
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -57,3 +59,5 @@ permalink: /kb/164/Q164335/
 	
 	=============================================================================
 	
+
+{% endraw %}

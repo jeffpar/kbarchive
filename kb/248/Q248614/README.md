@@ -6,6 +6,8 @@ permalink: /kb/248/Q248614/
 
 ## Q248614: Fighter Ace II: Display Is Distorted After an Explosion
 
+{% raw %}
+
 	Article: Q248614
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/248/Q248614/
 	
 	=============================================================================
 	
+
+{% endraw %}

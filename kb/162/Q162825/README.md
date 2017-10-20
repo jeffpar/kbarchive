@@ -6,6 +6,8 @@ permalink: /kb/162/Q162825/
 
 ## Q162825: ACC97: Customizing Command Bar Does Not Prompt for Check-Out
 
+{% raw %}
+
 	Article: Q162825
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0,97
@@ -106,3 +108,5 @@ permalink: /kb/162/Q162825/
 	
 	=============================================================================
 	
+
+{% endraw %}

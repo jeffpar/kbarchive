@@ -6,6 +6,8 @@ permalink: /kb/154/Q154991/
 
 ## Q154991: How to Set Up Dr. Surf to Work with MSN
 
+{% raw %}
+
 	Article: Q154991
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5,2.51,2.52,2.6
@@ -108,3 +110,5 @@ permalink: /kb/154/Q154991/
 	
 	=============================================================================
 	
+
+{% endraw %}

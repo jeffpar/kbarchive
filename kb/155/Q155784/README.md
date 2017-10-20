@@ -6,6 +6,8 @@ permalink: /kb/155/Q155784/
 
 ## Q155784: SourceSafe Alpha/MIPS Files Not on VB Enterprise CD-ROMs
 
+{% raw %}
+
 	Article: Q155784
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a
@@ -54,3 +56,5 @@ permalink: /kb/155/Q155784/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157943/
 
 ## Q157943: PRB: Setup Wizard Error When Installing VFP 5.0 over VFP 3.0
 
+{% raw %}
+
 	Article: Q157943
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -98,3 +100,5 @@ permalink: /kb/157/Q157943/
 	
 	=============================================================================
 	
+
+{% endraw %}

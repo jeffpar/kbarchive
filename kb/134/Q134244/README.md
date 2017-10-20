@@ -6,6 +6,8 @@ permalink: /kb/134/Q134244/
 
 ## Q134244: FIX: Get Displays 0 When ENTER Key Used to Move to Next Get
 
+{% raw %}
+
 	Article: Q134244
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -83,3 +85,5 @@ permalink: /kb/134/Q134244/
 	
 	=============================================================================
 	
+
+{% endraw %}

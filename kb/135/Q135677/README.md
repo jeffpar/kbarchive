@@ -6,6 +6,8 @@ permalink: /kb/135/Q135677/
 
 ## Q135677: FIX: Accessing the Internet via MSN causes a crash in VFP
 
+{% raw %}
+
 	Article: Q135677
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -70,3 +72,5 @@ permalink: /kb/135/Q135677/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68238/
 
 ## Q68238: System Font Too Large After Installing Screen Fonts
 
+{% raw %}
+
 	Article: Q68238
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -64,3 +66,5 @@ permalink: /kb/068/Q68238/
 	
 	=============================================================================
 	
+
+{% endraw %}

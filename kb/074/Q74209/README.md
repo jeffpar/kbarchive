@@ -6,6 +6,8 @@ permalink: /kb/074/Q74209/
 
 ## Q74209: Why MEM /C Does Not Show UMB Information
 
+{% raw %}
+
 	Article: Q74209
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -69,3 +71,5 @@ permalink: /kb/074/Q74209/
 	
 	=============================================================================
 	
+
+{% endraw %}

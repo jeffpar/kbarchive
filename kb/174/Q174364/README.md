@@ -6,6 +6,8 @@ permalink: /kb/174/Q174364/
 
 ## Q174364: FS98: Forces not Felt Immediately when Flying Helicopter
 
+{% raw %}
+
 	Article: Q174364
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -55,3 +57,5 @@ permalink: /kb/174/Q174364/
 	
 	=============================================================================
 	
+
+{% endraw %}

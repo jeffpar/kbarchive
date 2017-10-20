@@ -6,6 +6,8 @@ permalink: /kb/170/Q170959/
 
 ## Q170959: FP: Animation Starts Immediately After Page Opened in Browser
 
+{% raw %}
+
 	Article: Q170959
 	Product(s): Word Front Page
 	Version(s): 1.0
@@ -100,3 +102,5 @@ permalink: /kb/170/Q170959/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128213/
 
 ## Q128213: FIX: C1001 Internal Compiler Error in MAIN.C File Line 374
 
+{% raw %}
+
 	Article: Q128213
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2
@@ -107,3 +109,5 @@ permalink: /kb/128/Q128213/
 	
 	=============================================================================
 	
+
+{% endraw %}

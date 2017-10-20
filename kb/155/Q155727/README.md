@@ -6,6 +6,8 @@ permalink: /kb/155/Q155727/
 
 ## Q155727: XFOR: DirSync Deletes and Modifies Not Being Processed by DXA
 
+{% raw %}
+
 	Article: Q155727
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -99,3 +101,5 @@ permalink: /kb/155/Q155727/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/221/Q221651/
 
 ## Q221651: FIX: FFCs - Error Log Dialog Cuts Off Vertical Scroll Bar
 
+{% raw %}
+
 	Article: Q221651
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -90,3 +92,5 @@ permalink: /kb/221/Q221651/
 	
 	=============================================================================
 	
+
+{% endraw %}

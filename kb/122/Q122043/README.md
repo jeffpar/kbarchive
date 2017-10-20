@@ -6,6 +6,8 @@ permalink: /kb/122/Q122043/
 
 ## Q122043: Err Msg: Access Denied Connecting to NetWare Resource
 
+{% raw %}
+
 	Article: Q122043
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -65,3 +67,5 @@ permalink: /kb/122/Q122043/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/276/Q276338/
 
 ## Q276338: Classic Board Games: Computer Hangs When You Uninstall Program
 
+{% raw %}
+
 	Article: Q276338
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -65,3 +67,5 @@ permalink: /kb/276/Q276338/
 	
 	=============================================================================
 	
+
+{% endraw %}

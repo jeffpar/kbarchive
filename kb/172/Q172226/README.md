@@ -6,6 +6,8 @@ permalink: /kb/172/Q172226/
 
 ## Q172226: SMS: Applying SMS 1.2 SP2 May Overwrite Some SQL Server Files
 
+{% raw %}
+
 	Article: Q172226
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2 SP2
@@ -70,3 +72,5 @@ permalink: /kb/172/Q172226/
 	
 	=============================================================================
 	
+
+{% endraw %}

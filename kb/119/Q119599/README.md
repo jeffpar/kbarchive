@@ -6,6 +6,8 @@ permalink: /kb/119/Q119599/
 
 ## Q119599: Differences Between Using APM 1.0 and APM 1.1
 
+{% raw %}
+
 	Article: Q119599
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/119/Q119599/
 	
 	=============================================================================
 	
+
+{% endraw %}

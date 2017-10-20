@@ -6,6 +6,8 @@ permalink: /kb/167/Q167666/
 
 ## Q167666: SNA TN3270 Access Violation, Event ID 5
 
+{% raw %}
+
 	Article: Q167666
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -180,3 +182,5 @@ permalink: /kb/167/Q167666/
 	
 	=============================================================================
 	
+
+{% endraw %}

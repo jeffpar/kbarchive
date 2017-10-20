@@ -6,6 +6,8 @@ permalink: /kb/081/Q81606/
 
 ## Q81606: Disabling the Startup Group in Windows
 
+{% raw %}
+
 	Article: Q81606
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/081/Q81606/
 	
 	=============================================================================
 	
+
+{% endraw %}

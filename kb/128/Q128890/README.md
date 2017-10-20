@@ -6,6 +6,8 @@ permalink: /kb/128/Q128890/
 
 ## Q128890: How the Import Wizard Determines the Text File Type
 
+{% raw %}
+
 	Article: Q128890
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -88,3 +90,5 @@ permalink: /kb/128/Q128890/
 	
 	=============================================================================
 	
+
+{% endraw %}

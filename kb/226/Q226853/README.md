@@ -6,6 +6,8 @@ permalink: /kb/226/Q226853/
 
 ## Q226853: SMS: Program Assigned to Run at Next Logon Cannot Be Rescheduled
 
+{% raw %}
+
 	Article: Q226853
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -53,3 +55,5 @@ permalink: /kb/226/Q226853/
 	
 	=============================================================================
 	
+
+{% endraw %}

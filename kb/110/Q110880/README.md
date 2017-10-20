@@ -6,6 +6,8 @@ permalink: /kb/110/Q110880/
 
 ## Q110880: Encarta 94: Copyright Information Doesn't Paste Into Write
 
+{% raw %}
+
 	Article: Q110880
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 editions
@@ -39,3 +41,5 @@ permalink: /kb/110/Q110880/
 	
 	=============================================================================
 	
+
+{% endraw %}

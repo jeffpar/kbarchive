@@ -6,6 +6,8 @@ permalink: /kb/051/Q51486/
 
 ## Q51486: Missing Semicolon in Sample Average() Function
 
+{% raw %}
+
 	Article: Q51486
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -20,3 +22,5 @@ permalink: /kb/051/Q51486/
 	
 	Note: There are two average() functions on Page 634, both need a
 	semicolon at the end of the for-loop.
+
+{% endraw %}

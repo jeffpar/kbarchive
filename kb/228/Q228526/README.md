@@ -6,6 +6,8 @@ permalink: /kb/228/Q228526/
 
 ## Q228526: Baseball 2000: Field Radar Is Not Displayed Correctly
 
+{% raw %}
+
 	Article: Q228526
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -73,3 +75,5 @@ permalink: /kb/228/Q228526/
 	
 	=============================================================================
 	
+
+{% endraw %}

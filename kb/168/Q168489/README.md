@@ -6,6 +6,8 @@ permalink: /kb/168/Q168489/
 
 ## Q168489: How to Remove Routing and Remote Access and Install Standard RA
 
+{% raw %}
+
 	Article: Q168489
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a
@@ -80,3 +82,5 @@ permalink: /kb/168/Q168489/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164930/
 
 ## Q164930: XADM: Error 1075 During Setup of Exchange 4.0 on NT 4.0
 
+{% raw %}
+
 	Article: Q164930
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/164/Q164930/
 	
 	=============================================================================
 	
+
+{% endraw %}

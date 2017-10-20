@@ -6,6 +6,8 @@ permalink: /kb/074/Q74288/
 
 ## Q74288: Some Windows Functions Cannot Be Called from LibMain
 
+{% raw %}
+
 	Article: Q74288
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -68,3 +70,5 @@ permalink: /kb/074/Q74288/
 	
 	=============================================================================
 	
+
+{% endraw %}

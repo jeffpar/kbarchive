@@ -6,6 +6,8 @@ permalink: /kb/042/Q42470/
 
 ## Q42470: If BC /O, CHAIN &quot;x.BAS&quot; Fails to Give Run-Time Error and Hangs
 
+{% raw %}
+
 	Article: Q42470
 	Product(s): See article
 	Version(s): 4.50
@@ -67,3 +69,5 @@ permalink: /kb/042/Q42470/
 	   '**************
 	   PRINT "INSIDE PROGRAM #2"
 	   END
+
+{% endraw %}

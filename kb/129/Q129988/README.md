@@ -6,6 +6,8 @@ permalink: /kb/129/Q129988/
 
 ## Q129988: Required Frame Types for NetBEUI and TCP/IP-32 Protocols
 
+{% raw %}
+
 	Article: Q129988
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -74,3 +76,5 @@ permalink: /kb/129/Q129988/
 	
 	=============================================================================
 	
+
+{% endraw %}

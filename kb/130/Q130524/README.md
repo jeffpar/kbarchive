@@ -6,6 +6,8 @@ permalink: /kb/130/Q130524/
 
 ## Q130524: BUG: COPY TO ARRAY Behaves Differently from dBASE
 
+{% raw %}
+
 	Article: Q130524
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -94,3 +96,5 @@ permalink: /kb/130/Q130524/
 	
 	=============================================================================
 	
+
+{% endraw %}

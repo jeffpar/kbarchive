@@ -6,6 +6,8 @@ permalink: /kb/038/Q38023/
 
 ## Q38023: Reading the ESC Key from the Keyboard with _gets
 
+{% raw %}
+
 	Article: Q38023
 	Product(s): See article
 	Version(s): 5.10
@@ -22,3 +24,5 @@ permalink: /kb/038/Q38023/
 	receive the input of the command line until the ENTER key is pressed.
 	Pressing the ESC key clears the keyboard buffer. If you need to accept
 	the ESC key stroke, use the _getc function.
+
+{% endraw %}

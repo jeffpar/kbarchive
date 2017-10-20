@@ -6,6 +6,8 @@ permalink: /kb/242/Q242852/
 
 ## Q242852: FS2000: Flight Simulator 95 Adventures Not Converted Correctly
 
+{% raw %}
+
 	Article: Q242852
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -71,3 +73,5 @@ permalink: /kb/242/Q242852/
 	
 	=============================================================================
 	
+
+{% endraw %}

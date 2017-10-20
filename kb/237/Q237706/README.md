@@ -6,6 +6,8 @@ permalink: /kb/237/Q237706/
 
 ## Q237706: Memory Leak May Lead to Loss of User Profile
 
+{% raw %}
+
 	Article: Q237706
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -88,3 +90,5 @@ permalink: /kb/237/Q237706/
 	
 	=============================================================================
 	
+
+{% endraw %}

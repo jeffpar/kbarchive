@@ -6,6 +6,8 @@ permalink: /kb/186/Q186572/
 
 ## Q186572: Terminal Svr Walkthrough: Startup, Connection, and Application
 
+{% raw %}
+
 	Article: Q186572
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -234,3 +236,5 @@ permalink: /kb/186/Q186572/
 	
 	=============================================================================
 	
+
+{% endraw %}

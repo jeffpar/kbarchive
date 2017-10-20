@@ -6,6 +6,8 @@ permalink: /kb/271/Q271199/
 
 ## Q271199: XADM: Netscape IMAP Clients Can't Deter. Attachment Content Type
 
+{% raw %}
+
 	Article: Q271199
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -93,3 +95,5 @@ permalink: /kb/271/Q271199/
 	
 	=============================================================================
 	
+
+{% endraw %}

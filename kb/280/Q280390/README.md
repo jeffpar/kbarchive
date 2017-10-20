@@ -6,6 +6,8 @@ permalink: /kb/280/Q280390/
 
 ## Q280390: FS2000/2002: How to Record Flight Time in the Logbook
 
+{% raw %}
+
 	Article: Q280390
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -100,3 +102,5 @@ permalink: /kb/280/Q280390/
 	
 	=============================================================================
 	
+
+{% endraw %}

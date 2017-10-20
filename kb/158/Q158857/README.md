@@ -6,6 +6,8 @@ permalink: /kb/158/Q158857/
 
 ## Q158857: PRB: Setup Wizard Restarts Using Template (.vbz) File
 
+{% raw %}
+
 	Article: Q158857
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -82,3 +84,5 @@ permalink: /kb/158/Q158857/
 	
 	=============================================================================
 	
+
+{% endraw %}

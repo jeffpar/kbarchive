@@ -6,6 +6,8 @@ permalink: /kb/170/Q170979/
 
 ## Q170979: FIX: Pragma Pack(pop) Missing from afxdocob.h Header File
 
+{% raw %}
+
 	Article: Q170979
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2
@@ -87,3 +89,5 @@ permalink: /kb/170/Q170979/
 	
 	=============================================================================
 	
+
+{% endraw %}

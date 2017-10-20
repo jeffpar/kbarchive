@@ -6,6 +6,8 @@ permalink: /kb/111/Q111881/
 
 ## Q111881: RAS Err Msg: Error 642: One of Your NetBIOS Names Is...
 
+{% raw %}
+
 	Article: Q111881
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -66,3 +68,5 @@ permalink: /kb/111/Q111881/
 	
 	=============================================================================
 	
+
+{% endraw %}

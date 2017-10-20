@@ -6,6 +6,8 @@ permalink: /kb/302/Q302553/
 
 ## Q302553: Adding A Web Page To Favorites
 
+{% raw %}
+
 	Article: Q302553
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -44,3 +46,5 @@ permalink: /kb/302/Q302553/
 	
 	=============================================================================
 	
+
+{% endraw %}

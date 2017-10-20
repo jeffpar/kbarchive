@@ -6,6 +6,8 @@ permalink: /kb/157/Q157588/
 
 ## Q157588: FIX: SQLDescribeCol Returns Error on Prepared Outer Join
 
+{% raw %}
+
 	Article: Q157588
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.65; winnt:6.5
@@ -58,3 +60,5 @@ permalink: /kb/157/Q157588/
 	
 	=============================================================================
 	
+
+{% endraw %}

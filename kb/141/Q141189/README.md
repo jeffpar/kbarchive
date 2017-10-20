@@ -6,6 +6,8 @@ permalink: /kb/141/Q141189/
 
 ## Q141189: BUG: Wrong Error Code on NetBIOS Call When Using NWNBLNK
 
+{% raw %}
+
 	Article: Q141189
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -62,3 +64,5 @@ permalink: /kb/141/Q141189/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196289/
 
 ## Q196289: PRB: SP3 Clients Cannot Change Passwords - Error C00000BE
 
+{% raw %}
+
 	Article: Q196289
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/196/Q196289/
 	
 	=============================================================================
 	
+
+{% endraw %}

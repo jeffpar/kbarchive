@@ -6,6 +6,8 @@ permalink: /kb/122/Q122323/
 
 ## Q122323: WinNT 3.5 Software Update for the Pentium Floating Point Error
 
+{% raw %}
+
 	Article: Q122323
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -146,3 +148,5 @@ permalink: /kb/122/Q122323/
 	
 	=============================================================================
 	
+
+{% endraw %}

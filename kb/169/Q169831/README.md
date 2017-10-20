@@ -6,6 +6,8 @@ permalink: /kb/169/Q169831/
 
 ## Q169831: PPTP May Fail with Error: Remote PPP Peer is Not Responding
 
+{% raw %}
+
 	Article: Q169831
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -102,3 +104,5 @@ permalink: /kb/169/Q169831/
 	
 	=============================================================================
 	
+
+{% endraw %}

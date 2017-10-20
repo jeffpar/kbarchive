@@ -6,6 +6,8 @@ permalink: /kb/153/Q153075/
 
 ## Q153075: RPL Clients Will Not Boot with a SMC 8432 Adapter
 
+{% raw %}
+
 	Article: Q153075
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.5,3.51; :2.2,2.2c
@@ -118,3 +120,5 @@ permalink: /kb/153/Q153075/
 	
 	=============================================================================
 	
+
+{% endraw %}

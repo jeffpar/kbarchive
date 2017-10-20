@@ -6,6 +6,8 @@ permalink: /kb/214/Q214583/
 
 ## Q214583: Close Combat III: Problems Using AccelStar II 3D Video Adapter
 
+{% raw %}
+
 	Article: Q214583
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -73,3 +75,5 @@ permalink: /kb/214/Q214583/
 	
 	=============================================================================
 	
+
+{% endraw %}

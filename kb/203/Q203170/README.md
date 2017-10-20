@@ -6,6 +6,8 @@ permalink: /kb/203/Q203170/
 
 ## Q203170: XADM: Controlling Public Folder Hierarchy Status Messages
 
+{% raw %}
+
 	Article: Q203170
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -286,3 +288,5 @@ permalink: /kb/203/Q203170/
 	
 	=============================================================================
 	
+
+{% endraw %}

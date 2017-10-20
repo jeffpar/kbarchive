@@ -6,6 +6,8 @@ permalink: /kb/158/Q158219/
 
 ## Q158219: HOWTO: Use SourceSafe Over a RAS or ISDN Connection
 
+{% raw %}
+
 	Article: Q158219
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:3.04,3.1,4.0,4.0a,5.0,6.0
@@ -101,3 +103,5 @@ permalink: /kb/158/Q158219/
 	
 	=============================================================================
 	
+
+{% endraw %}

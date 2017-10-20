@@ -6,6 +6,8 @@ permalink: /kb/240/Q240153/
 
 ## Q240153: XADM: Error 3355443752 Starting Information Store after Restore
 
+{% raw %}
+
 	Article: Q240153
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -95,3 +97,5 @@ permalink: /kb/240/Q240153/
 	
 	=============================================================================
 	
+
+{% endraw %}

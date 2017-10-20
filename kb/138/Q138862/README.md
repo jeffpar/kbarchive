@@ -6,6 +6,8 @@ permalink: /kb/138/Q138862/
 
 ## Q138862: SNA Server 3270 Emulator Session Drops With Event ID 21
 
+{% raw %}
+
 	Article: Q138862
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -71,3 +73,5 @@ permalink: /kb/138/Q138862/
 	
 	=============================================================================
 	
+
+{% endraw %}

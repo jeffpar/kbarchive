@@ -6,6 +6,8 @@ permalink: /kb/265/Q265435/
 
 ## Q265435: WD97: How to Add and Remove Page Numbers
 
+{% raw %}
+
 	Article: Q265435
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -135,3 +137,5 @@ permalink: /kb/265/Q265435/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182610/
 
 ## Q182610: WD97: Err Msg: &quot;Runtime Error&quot; When Creating Form Letter
 
+{% raw %}
+
 	Article: Q182610
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -141,3 +143,5 @@ permalink: /kb/182/Q182610/
 	
 	=============================================================================
 	
+
+{% endraw %}

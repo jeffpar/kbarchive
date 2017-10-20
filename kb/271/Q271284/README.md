@@ -6,6 +6,8 @@ permalink: /kb/271/Q271284/
 
 ## Q271284: HOWTO: Access COM+ Object Constructor String in VB Component
 
+{% raw %}
+
 	Article: Q271284
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.1,2.1 SP1,2.1 SP2,2.5,2.6,5.0,6.0
@@ -194,3 +196,5 @@ permalink: /kb/271/Q271284/
 	
 	=============================================================================
 	
+
+{% endraw %}

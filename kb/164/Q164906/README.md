@@ -6,6 +6,8 @@ permalink: /kb/164/Q164906/
 
 ## Q164906: Host Security Page in SNA Manager Is Unresponsive After Error
 
+{% raw %}
+
 	Article: Q164906
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/164/Q164906/
 	
 	=============================================================================
 	
+
+{% endraw %}

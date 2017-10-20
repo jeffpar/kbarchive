@@ -6,6 +6,8 @@ permalink: /kb/139/Q139155/
 
 ## Q139155: PRB: Current Edit Not Saved with TABLEUPDATE() from Toolbar
 
+{% raw %}
+
 	Article: Q139155
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -118,3 +120,5 @@ permalink: /kb/139/Q139155/
 	
 	=============================================================================
 	
+
+{% endraw %}

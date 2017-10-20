@@ -6,6 +6,8 @@ permalink: /kb/190/Q190673/
 
 ## Q190673: BUG: Flat Scroll Bars in ListView Do Not Work Correctly
 
+{% raw %}
+
 	Article: Q190673
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -122,3 +124,5 @@ permalink: /kb/190/Q190673/
 	
 	=============================================================================
 	
+
+{% endraw %}

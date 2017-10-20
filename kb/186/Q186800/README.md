@@ -6,6 +6,8 @@ permalink: /kb/186/Q186800/
 
 ## Q186800: How Bandwidth Throttling Works in IIS 4.0
 
+{% raw %}
+
 	Article: Q186800
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -81,3 +83,5 @@ permalink: /kb/186/Q186800/
 	
 	=============================================================================
 	
+
+{% endraw %}

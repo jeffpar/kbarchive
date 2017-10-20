@@ -6,6 +6,8 @@ permalink: /kb/164/Q164298/
 
 ## Q164298: Writer 2: How to Preview and Publish Your Web Pages
 
+{% raw %}
+
 	Article: Q164298
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -90,3 +92,5 @@ permalink: /kb/164/Q164298/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170950/
 
 ## Q170950: Intermittent Loss of Connectivity While Using Compaq NetFlex-3
 
+{% raw %}
+
 	Article: Q170950
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -101,3 +103,5 @@ permalink: /kb/170/Q170950/
 	
 	=============================================================================
 	
+
+{% endraw %}

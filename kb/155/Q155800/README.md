@@ -6,6 +6,8 @@ permalink: /kb/155/Q155800/
 
 ## Q155800: WD97: How to Customize, Create, Restore Word Menus/Toolbars
 
+{% raw %}
+
 	Article: Q155800
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -185,3 +187,5 @@ permalink: /kb/155/Q155800/
 	
 	=============================================================================
 	
+
+{% endraw %}

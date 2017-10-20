@@ -6,6 +6,8 @@ permalink: /kb/176/Q176622/
 
 ## Q176622: XADM: User and Group Permissions Granted Automatically
 
+{% raw %}
+
 	Article: Q176622
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -61,3 +63,5 @@ permalink: /kb/176/Q176622/
 	
 	=============================================================================
 	
+
+{% endraw %}

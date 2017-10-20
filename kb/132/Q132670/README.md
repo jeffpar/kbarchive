@@ -6,6 +6,8 @@ permalink: /kb/132/Q132670/
 
 ## Q132670: Creating a Shortcut to a Shared Printer
 
+{% raw %}
+
 	Article: Q132670
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/132/Q132670/
 	
 	=============================================================================
 	
+
+{% endraw %}

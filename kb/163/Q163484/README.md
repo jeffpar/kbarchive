@@ -6,6 +6,8 @@ permalink: /kb/163/Q163484/
 
 ## Q163484: XCLN: Schedule+ Import from Other Systems Gives Error
 
+{% raw %}
+
 	Article: Q163484
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:7.0,7.5
@@ -69,3 +71,5 @@ permalink: /kb/163/Q163484/
 	
 	=============================================================================
 	
+
+{% endraw %}

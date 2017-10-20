@@ -6,6 +6,8 @@ permalink: /kb/257/Q257538/
 
 ## Q257538: XFOR: How to Obtain Additional Information from Internet Mail
 
+{% raw %}
+
 	Article: Q257538
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -124,3 +126,5 @@ permalink: /kb/257/Q257538/
 	
 	=============================================================================
 	
+
+{% endraw %}

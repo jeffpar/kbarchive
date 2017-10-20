@@ -6,6 +6,8 @@ permalink: /kb/137/Q137508/
 
 ## Q137508: Overlapping Appointments Cannot Be Modified
 
+{% raw %}
+
 	Article: Q137508
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -45,3 +47,5 @@ permalink: /kb/137/Q137508/
 	
 	=============================================================================
 	
+
+{% endraw %}

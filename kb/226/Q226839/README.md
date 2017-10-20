@@ -6,6 +6,8 @@ permalink: /kb/226/Q226839/
 
 ## Q226839: SMS: Win 3.x Computers Can't Run Hardware Inventory
 
+{% raw %}
+
 	Article: Q226839
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -60,3 +62,5 @@ permalink: /kb/226/Q226839/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151259/
 
 ## Q151259: New Netlogon Registry Entry for Dialup Routers
 
+{% raw %}
+
 	Article: Q151259
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -95,3 +97,5 @@ permalink: /kb/151/Q151259/
 	
 	=============================================================================
 	
+
+{% endraw %}

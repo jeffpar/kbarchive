@@ -6,6 +6,8 @@ permalink: /kb/186/Q186923/
 
 ## Q186923: XWEB: &quot;Failed to Send Message&quot; Using OWA Client
 
+{% raw %}
+
 	Article: Q186923
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -54,3 +56,5 @@ permalink: /kb/186/Q186923/
 	
 	=============================================================================
 	
+
+{% endraw %}

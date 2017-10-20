@@ -6,6 +6,8 @@ permalink: /kb/167/Q167594/
 
 ## Q167594: FP: How to Redirect a Browser from a List Box Choice
 
+{% raw %}
+
 	Article: Q167594
 	Product(s): Word Front Page
 	Version(s): windows:1.1,97, macintosh:1.0
@@ -211,3 +213,5 @@ permalink: /kb/167/Q167594/
 	
 	=============================================================================
 	
+
+{% endraw %}

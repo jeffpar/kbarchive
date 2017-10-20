@@ -6,6 +6,8 @@ permalink: /kb/193/Q193953/
 
 ## Q193953: PRB: COM .Dll In MTS 'Sharing' Datasessions Between Instances
 
+{% raw %}
+
 	Article: Q193953
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -204,3 +206,5 @@ permalink: /kb/193/Q193953/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156011/
 
 ## Q156011: INFO: Use of the ADMIN Clause with Offline Views
 
+{% raw %}
+
 	Article: Q156011
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -49,3 +51,5 @@ permalink: /kb/156/Q156011/
 	
 	=============================================================================
 	
+
+{% endraw %}

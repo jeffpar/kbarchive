@@ -6,6 +6,8 @@ permalink: /kb/199/Q199116/
 
 ## Q199116: SMS: Software Inventory Will Not Scan for an Individual File
 
+{% raw %}
+
 	Article: Q199116
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -44,3 +46,5 @@ permalink: /kb/199/Q199116/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/308/Q308896/
 
 ## Q308896: PRB: Error in Ss.ini Remotely Accessing Default-Location DB
 
+{% raw %}
+
 	Article: Q308896
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -110,3 +112,5 @@ permalink: /kb/308/Q308896/
 	
 	=============================================================================
 	
+
+{% endraw %}

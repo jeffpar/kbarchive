@@ -6,6 +6,8 @@ permalink: /kb/189/Q189487/
 
 ## Q189487: XWEB: Dr. Watson Opening Welcome to Microsoft Outlook 98! Msg.
 
+{% raw %}
+
 	Article: Q189487
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -67,3 +69,5 @@ permalink: /kb/189/Q189487/
 	
 	=============================================================================
 	
+
+{% endraw %}

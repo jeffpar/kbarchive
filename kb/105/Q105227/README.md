@@ -6,6 +6,8 @@ permalink: /kb/105/Q105227/
 
 ## Q105227: Colors Display Strangely with Dell 16 Color Driver
 
+{% raw %}
+
 	Article: Q105227
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -78,3 +80,5 @@ permalink: /kb/105/Q105227/
 	
 	=============================================================================
 	
+
+{% endraw %}

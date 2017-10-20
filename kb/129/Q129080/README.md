@@ -6,6 +6,8 @@ permalink: /kb/129/Q129080/
 
 ## Q129080: HOWTO: Have Accelerator Keys Support Japanese and US Keyboards
 
+{% raw %}
+
 	Article: Q129080
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -52,3 +54,5 @@ permalink: /kb/129/Q129080/
 	
 	=============================================================================
 	
+
+{% endraw %}

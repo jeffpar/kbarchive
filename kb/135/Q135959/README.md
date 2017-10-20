@@ -6,6 +6,8 @@ permalink: /kb/135/Q135959/
 
 ## Q135959: Theme Not Deleted Using Desktop Themes Tool
 
+{% raw %}
+
 	Article: Q135959
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/135/Q135959/
 	
 	=============================================================================
 	
+
+{% endraw %}

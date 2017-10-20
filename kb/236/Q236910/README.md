@@ -6,6 +6,8 @@ permalink: /kb/236/Q236910/
 
 ## Q236910: XIMS: Cannot Open IMS Dial-Up Connections Tab on Windows 2000
 
+{% raw %}
+
 	Article: Q236910
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; winnt:5.5
@@ -95,3 +97,5 @@ permalink: /kb/236/Q236910/
 	
 	=============================================================================
 	
+
+{% endraw %}

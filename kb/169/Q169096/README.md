@@ -6,6 +6,8 @@ permalink: /kb/169/Q169096/
 
 ## Q169096: FP: FrontPage Ships on Compact Disc Only
 
+{% raw %}
+
 	Article: Q169096
 	Product(s): Word Front Page
 	Version(s): MACINTOSH:1.0
@@ -52,3 +54,5 @@ permalink: /kb/169/Q169096/
 	
 	=============================================================================
 	
+
+{% endraw %}

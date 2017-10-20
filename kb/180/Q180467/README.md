@@ -6,6 +6,8 @@ permalink: /kb/180/Q180467/
 
 ## Q180467: SNA Client Does Not Retry Other Sponsors After Error Response
 
+{% raw %}
+
 	Article: Q180467
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0 SP1,3.0 SP2,4.0
@@ -82,3 +84,5 @@ permalink: /kb/180/Q180467/
 	
 	=============================================================================
 	
+
+{% endraw %}

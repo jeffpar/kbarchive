@@ -6,6 +6,8 @@ permalink: /kb/181/Q181471/
 
 ## Q181471: WD97: How to Reset User Options and Registry Settings
 
+{% raw %}
+
 	Article: Q181471
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -723,3 +725,5 @@ permalink: /kb/181/Q181471/
 	
 	=============================================================================
 	
+
+{% endraw %}

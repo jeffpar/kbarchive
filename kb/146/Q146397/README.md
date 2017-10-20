@@ -6,6 +6,8 @@ permalink: /kb/146/Q146397/
 
 ## Q146397: XCON: Large Number of Messages with Receipts Can Stay in MTA
 
+{% raw %}
+
 	Article: Q146397
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -105,3 +107,5 @@ permalink: /kb/146/Q146397/
 	
 	=============================================================================
 	
+
+{% endraw %}

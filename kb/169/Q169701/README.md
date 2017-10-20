@@ -6,6 +6,8 @@ permalink: /kb/169/Q169701/
 
 ## Q169701: XCON: MTA Terminates Unexpectedly with Event ID 2143
 
+{% raw %}
+
 	Article: Q169701
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0
@@ -147,3 +149,5 @@ permalink: /kb/169/Q169701/
 	
 	=============================================================================
 	
+
+{% endraw %}

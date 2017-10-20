@@ -6,6 +6,8 @@ permalink: /kb/121/Q121889/
 
 ## Q121889: PRB: Error C2858: Command-line Options Inconsistent
 
+{% raw %}
+
 	Article: Q121889
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,4.0,5.0,6.0
@@ -83,3 +85,5 @@ permalink: /kb/121/Q121889/
 	
 	=============================================================================
 	
+
+{% endraw %}

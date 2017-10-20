@@ -6,6 +6,8 @@ permalink: /kb/182/Q182634/
 
 ## Q182634: JCL Present in COBOL Import File Causes Error
 
+{% raw %}
+
 	Article: Q182634
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -63,3 +65,5 @@ permalink: /kb/182/Q182634/
 	
 	=============================================================================
 	
+
+{% endraw %}

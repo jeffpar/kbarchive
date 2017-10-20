@@ -6,6 +6,8 @@ permalink: /kb/080/Q80263/
 
 ## Q80263: PC Gen: Contents of Modem Script File TELEBIT.MDM
 
+{% raw %}
+
 	Article: Q80263
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e
@@ -262,3 +264,5 @@ permalink: /kb/080/Q80263/
 	
 	=============================================================================
 	
+
+{% endraw %}

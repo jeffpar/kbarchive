@@ -6,6 +6,8 @@ permalink: /kb/049/Q49703/
 
 ## Q49703: PROC Directive Requires Language Parameter
 
+{% raw %}
+
 	Article: Q49703
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -37,3 +39,5 @@ permalink: /kb/049/Q49703/
 	Microsoft has confirmed this to be a problem in Macro Assembler
 	Version 5.10. We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

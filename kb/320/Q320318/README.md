@@ -6,6 +6,8 @@ permalink: /kb/320/Q320318/
 
 ## Q320318: PRB: VB Projects Cannot Connect to Relocated VSS Database
 
+{% raw %}
+
 	Article: Q320318
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -118,3 +120,5 @@ permalink: /kb/320/Q320318/
 	
 	=============================================================================
 	
+
+{% endraw %}

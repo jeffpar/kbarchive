@@ -6,6 +6,8 @@ permalink: /kb/173/Q173258/
 
 ## Q173258: Can't Open Setup.exe on Learn VB Now CD-ROM
 
+{% raw %}
+
 	Article: Q173258
 	Product(s): Microsoft Press
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/173/Q173258/
 	
 	=============================================================================
 	
+
+{% endraw %}

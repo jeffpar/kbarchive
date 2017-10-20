@@ -6,6 +6,8 @@ permalink: /kb/230/Q230255/
 
 ## Q230255: SMS: Wuser32 Service Hangs on Windows NT Clients
 
+{% raw %}
+
 	Article: Q230255
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -107,3 +109,5 @@ permalink: /kb/230/Q230255/
 	
 	=============================================================================
 	
+
+{% endraw %}

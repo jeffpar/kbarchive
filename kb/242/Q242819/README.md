@@ -6,6 +6,8 @@ permalink: /kb/242/Q242819/
 
 ## Q242819: Flight Simulator 2000: How to Refuel Your Aircraft
 
+{% raw %}
+
 	Article: Q242819
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -106,3 +108,5 @@ permalink: /kb/242/Q242819/
 	
 	=============================================================================
 	
+
+{% endraw %}

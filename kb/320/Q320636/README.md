@@ -6,6 +6,8 @@ permalink: /kb/320/Q320636/
 
 ## Q320636: XIMS: Transport part in the Internet headers may be absent when
 
+{% raw %}
+
 	Article: Q320636
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -135,3 +137,5 @@ permalink: /kb/320/Q320636/
 	
 	=============================================================================
 	
+
+{% endraw %}

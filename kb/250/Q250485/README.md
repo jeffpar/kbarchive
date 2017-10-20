@@ -6,6 +6,8 @@ permalink: /kb/250/Q250485/
 
 ## Q250485: PRB: Setupmgx.dll Could Not Be Loaded or Corrupt Err Msg
 
+{% raw %}
+
 	Article: Q250485
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -76,3 +78,5 @@ permalink: /kb/250/Q250485/
 	
 	=============================================================================
 	
+
+{% endraw %}

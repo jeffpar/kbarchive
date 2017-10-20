@@ -6,6 +6,8 @@ permalink: /kb/113/Q113283/
 
 ## Q113283: WFWG Err Msg: Schedule+ Has Not Been Installed on Your Mail...
 
+{% raw %}
+
 	Article: Q113283
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/113/Q113283/
 	
 	=============================================================================
 	
+
+{% endraw %}

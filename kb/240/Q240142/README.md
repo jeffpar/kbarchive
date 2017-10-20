@@ -6,6 +6,8 @@ permalink: /kb/240/Q240142/
 
 ## Q240142: How to Prevent User Validation on a Specific Domain Controller
 
+{% raw %}
+
 	Article: Q240142
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/240/Q240142/
 	
 	=============================================================================
 	
+
+{% endraw %}

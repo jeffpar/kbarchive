@@ -6,6 +6,8 @@ permalink: /kb/078/Q78524/
 
 ## Q78524: SMARTDRV.SYS Incompatible with Some Disk Managing Programs
 
+{% raw %}
+
 	Article: Q78524
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -57,3 +59,5 @@ permalink: /kb/078/Q78524/
 	
 	=============================================================================
 	
+
+{% endraw %}

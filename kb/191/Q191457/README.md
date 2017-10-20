@@ -6,6 +6,8 @@ permalink: /kb/191/Q191457/
 
 ## Q191457: PRB: DataEnvironment Recordset Requery Does Not Refresh Controls
 
+{% raw %}
+
 	Article: Q191457
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -173,3 +175,5 @@ permalink: /kb/191/Q191457/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175348/
 
 ## Q175348: Age of Empires: How to Troubleshoot Issues in Multiplayer Games
 
+{% raw %}
+
 	Article: Q175348
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -146,3 +148,5 @@ permalink: /kb/175/Q175348/
 	
 	=============================================================================
 	
+
+{% endraw %}

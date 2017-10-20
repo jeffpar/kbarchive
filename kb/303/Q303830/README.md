@@ -6,6 +6,8 @@ permalink: /kb/303/Q303830/
 
 ## Q303830: BUG: VFP7: Upsize Wizard Fails on Bulk Insert
 
+{% raw %}
+
 	Article: Q303830
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -85,3 +87,5 @@ permalink: /kb/303/Q303830/
 	
 	=============================================================================
 	
+
+{% endraw %}

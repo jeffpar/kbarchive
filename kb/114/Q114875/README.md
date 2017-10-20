@@ -6,6 +6,8 @@ permalink: /kb/114/Q114875/
 
 ## Q114875: BUG: Bad Code for &#95;&#95;fastcall Function Calling an Intrinsic
 
+{% raw %}
+
 	Article: Q114875
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5
@@ -103,3 +105,5 @@ permalink: /kb/114/Q114875/
 	
 	=============================================================================
 	
+
+{% endraw %}

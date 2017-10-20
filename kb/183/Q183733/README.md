@@ -6,6 +6,8 @@ permalink: /kb/183/Q183733/
 
 ## Q183733: Active Log Format Drop-down List Is Not Populated
 
+{% raw %}
+
 	Article: Q183733
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/183/Q183733/
 	
 	=============================================================================
 	
+
+{% endraw %}

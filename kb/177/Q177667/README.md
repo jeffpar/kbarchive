@@ -6,6 +6,8 @@ permalink: /kb/177/Q177667/
 
 ## Q177667: Unable to Transfer Large Files with NICs Using DEC-chipset
 
+{% raw %}
+
 	Article: Q177667
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -51,3 +53,5 @@ permalink: /kb/177/Q177667/
 	
 	=============================================================================
 	
+
+{% endraw %}

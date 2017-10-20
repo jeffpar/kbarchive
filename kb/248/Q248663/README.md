@@ -6,6 +6,8 @@ permalink: /kb/248/Q248663/
 
 ## Q248663: Booting Node may Prevent Running Node from Accessing Quorum Disk
 
+{% raw %}
+
 	Article: Q248663
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -93,3 +95,5 @@ permalink: /kb/248/Q248663/
 	
 	=============================================================================
 	
+
+{% endraw %}

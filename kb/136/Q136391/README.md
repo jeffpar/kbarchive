@@ -6,6 +6,8 @@ permalink: /kb/136/Q136391/
 
 ## Q136391: FIX: MessageBox with NULL Owner and MB_TASKMODAL
 
+{% raw %}
+
 	Article: Q136391
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,4.0,4.1
@@ -92,3 +94,5 @@ permalink: /kb/136/Q136391/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/060/Q60876/
 
 ## Q60876: Installation on Amstrad Requires Motherboard Revision
 
+{% raw %}
+
 	Article: Q60876
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -34,3 +36,5 @@ permalink: /kb/060/Q60876/
 	
 	=============================================================================
 	
+
+{% endraw %}

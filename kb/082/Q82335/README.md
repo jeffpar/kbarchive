@@ -6,6 +6,8 @@ permalink: /kb/082/Q82335/
 
 ## Q82335: DEC Pathworks Has DDE Problems with Wall Data Rumba
 
+{% raw %}
+
 	Article: Q82335
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/082/Q82335/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172450/
 
 ## Q172450: NetDDE Connections Fail When &quot;Logon to&quot; Restrictions Apply
 
+{% raw %}
+
 	Article: Q172450
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -79,3 +81,5 @@ permalink: /kb/172/Q172450/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174027/
 
 ## Q174027: XWEB: Err Msg: Failed to Open This Message
 
+{% raw %}
+
 	Article: Q174027
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -47,3 +49,5 @@ permalink: /kb/174/Q174027/
 	
 	=============================================================================
 	
+
+{% endraw %}

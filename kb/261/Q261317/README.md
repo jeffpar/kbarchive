@@ -6,6 +6,8 @@ permalink: /kb/261/Q261317/
 
 ## Q261317: Deadlock in Ntdll.dll Causes Program to Hang
 
+{% raw %}
+
 	Article: Q261317
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -81,3 +83,5 @@ permalink: /kb/261/Q261317/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/047/Q47334/
 
 ## Q47334: Changing the Automatic Word Wrap Location in Write
 
+{% raw %}
+
 	Article: Q47334
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -71,3 +73,5 @@ permalink: /kb/047/Q47334/
 	
 	=============================================================================
 	
+
+{% endraw %}

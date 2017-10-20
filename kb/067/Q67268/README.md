@@ -6,6 +6,8 @@ permalink: /kb/067/Q67268/
 
 ## Q67268: AST 3G Plus II EGA Video Adapter and Windows 3.0
 
+{% raw %}
+
 	Article: Q67268
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/067/Q67268/
 	
 	=============================================================================
 	
+
+{% endraw %}

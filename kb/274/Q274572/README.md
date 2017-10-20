@@ -6,6 +6,8 @@ permalink: /kb/274/Q274572/
 
 ## Q274572: Crimson Skies Quits to End Menu with ATI Rage 128 Installed
 
+{% raw %}
+
 	Article: Q274572
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/274/Q274572/
 	
 	=============================================================================
 	
+
+{% endraw %}

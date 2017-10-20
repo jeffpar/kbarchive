@@ -6,6 +6,8 @@ permalink: /kb/277/Q277758/
 
 ## Q277758: WP: What Are the Requirements for Express Purchase (EP) Service?
 
+{% raw %}
+
 	Article: Q277758
 	Product(s): Internet Information Server
 	Version(s): 1.3,1.4
@@ -80,3 +82,5 @@ permalink: /kb/277/Q277758/
 	
 	=============================================================================
 	
+
+{% endraw %}

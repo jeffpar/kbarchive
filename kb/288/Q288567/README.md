@@ -6,6 +6,8 @@ permalink: /kb/288/Q288567/
 
 ## Q288567: SMS: Collection Evaluator Does Not Include Subcollection Data
 
+{% raw %}
+
 	Article: Q288567
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3
@@ -137,3 +139,5 @@ permalink: /kb/288/Q288567/
 	
 	=============================================================================
 	
+
+{% endraw %}

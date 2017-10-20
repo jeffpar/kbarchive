@@ -6,6 +6,8 @@ permalink: /kb/309/Q309636/
 
 ## Q309636: Bicycle Games: Known Video Issues
 
+{% raw %}
+
 	Article: Q309636
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -200,3 +202,5 @@ permalink: /kb/309/Q309636/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179187/
 
 ## Q179187: Problems Using TAPI 2.1
 
+{% raw %}
+
 	Article: Q179187
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -81,3 +83,5 @@ permalink: /kb/179/Q179187/
 	
 	=============================================================================
 	
+
+{% endraw %}

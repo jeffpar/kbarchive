@@ -6,6 +6,8 @@ permalink: /kb/162/Q162950/
 
 ## Q162950: XADM: Err Msg When Using Isinteg -Patch: ECBadConfig
 
+{% raw %}
+
 	Article: Q162950
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -47,3 +49,5 @@ permalink: /kb/162/Q162950/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154708/
 
 ## Q154708: XCLN: Inbox Rules Cannot be Modified on Macintosh Client
 
+{% raw %}
+
 	Article: Q154708
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -48,3 +50,5 @@ permalink: /kb/154/Q154708/
 	
 	=============================================================================
 	
+
+{% endraw %}

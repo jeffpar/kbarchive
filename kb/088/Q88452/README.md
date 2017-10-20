@@ -6,6 +6,8 @@ permalink: /kb/088/Q88452/
 
 ## Q88452: Printing Score Card on LaserJet Printer with 512K
 
+{% raw %}
+
 	Article: Q88452
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -27,3 +29,5 @@ permalink: /kb/088/Q88452/
 	
 	=============================================================================
 	
+
+{% endraw %}

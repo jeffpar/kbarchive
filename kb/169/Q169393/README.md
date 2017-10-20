@@ -6,6 +6,8 @@ permalink: /kb/169/Q169393/
 
 ## Q169393: XFOR: Messages Containing Doclinks Are Stuck in Exchange.box
 
+{% raw %}
+
 	Article: Q169393
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.2; winnt:5.0
@@ -56,3 +58,5 @@ permalink: /kb/169/Q169393/
 	
 	=============================================================================
 	
+
+{% endraw %}

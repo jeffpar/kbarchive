@@ -6,6 +6,8 @@ permalink: /kb/164/Q164525/
 
 ## Q164525: PRB: Visual C++ Setup Message From MSDN Universal CD is Wrong
 
+{% raw %}
+
 	Article: Q164525
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -66,3 +68,5 @@ permalink: /kb/164/Q164525/
 	
 	=============================================================================
 	
+
+{% endraw %}

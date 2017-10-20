@@ -6,6 +6,8 @@ permalink: /kb/129/Q129190/
 
 ## Q129190: FIX: SourceSafe Command Line Fails to Create Output File
 
+{% raw %}
+
 	Article: Q129190
 	Product(s): Microsoft SourceSafe
 	Version(s): 3.04 3.10
@@ -49,3 +51,5 @@ permalink: /kb/129/Q129190/
 	
 	=============================================================================
 	
+
+{% endraw %}

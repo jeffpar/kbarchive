@@ -6,6 +6,8 @@ permalink: /kb/111/Q111636/
 
 ## Q111636: Mac Adm GW: Extracting Gateway Format Data
 
+{% raw %}
+
 	Article: Q111636
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1d
@@ -120,3 +122,5 @@ permalink: /kb/111/Q111636/
 	
 	=============================================================================
 	
+
+{% endraw %}

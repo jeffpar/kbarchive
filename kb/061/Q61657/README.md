@@ -6,6 +6,8 @@ permalink: /kb/061/Q61657/
 
 ## Q61657: Setting the Border Color in EGA and VGA with CALL INTERRUPT
 
+{% raw %}
+
 	Article: Q61657
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -56,3 +58,5 @@ permalink: /kb/061/Q61657/
 	                        ' AX
 	   inregs.bx = &H200    ' 2 representing green is put in BH
 	   CALL Interrupt(&H10, inregs, outregs)   ' A green border is produced
+
+{% endraw %}

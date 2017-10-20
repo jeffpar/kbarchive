@@ -6,6 +6,8 @@ permalink: /kb/168/Q168391/
 
 ## Q168391: FP: How to Create a &quot;Back&quot; Button on a Web Page Using VBScript
 
+{% raw %}
+
 	Article: Q168391
 	Product(s): Word Front Page
 	Version(s): 1.1
@@ -80,3 +82,5 @@ permalink: /kb/168/Q168391/
 	
 	=============================================================================
 	
+
+{% endraw %}

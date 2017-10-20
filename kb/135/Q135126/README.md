@@ -6,6 +6,8 @@ permalink: /kb/135/Q135126/
 
 ## Q135126: Server Manager/User Manager for Domains Do Not Run in SMS Admin
 
+{% raw %}
+
 	Article: Q135126
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2,3.5,3.51
@@ -82,3 +84,5 @@ permalink: /kb/135/Q135126/
 	
 	=============================================================================
 	
+
+{% endraw %}

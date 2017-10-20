@@ -6,6 +6,8 @@ permalink: /kb/157/Q157635/
 
 ## Q157635: PRB: COPY FILE &lt;filename&gt; TO LPT1 Causes Invalid Seek Offset
 
+{% raw %}
+
 	Article: Q157635
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a,6.0
@@ -63,3 +65,5 @@ permalink: /kb/157/Q157635/
 	
 	=============================================================================
 	
+
+{% endraw %}

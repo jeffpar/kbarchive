@@ -6,6 +6,8 @@ permalink: /kb/085/Q85185/
 
 ## Q85185: Disabling Setup from Prompting CONFIG.SYS, AUTOEXEC.BAT Save
 
+{% raw %}
+
 	Article: Q85185
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/085/Q85185/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156940/
 
 ## Q156940: Devices Not Detected with Intel 82371SB PIIX3 Controller
 
+{% raw %}
+
 	Article: Q156940
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/156/Q156940/
 	
 	=============================================================================
 	
+
+{% endraw %}

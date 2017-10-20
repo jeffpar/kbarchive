@@ -6,6 +6,8 @@ permalink: /kb/271/Q271181/
 
 ## Q271181: SMS: Interval X Not Found Error in Offersum.log
 
+{% raw %}
+
 	Article: Q271181
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -194,3 +196,5 @@ permalink: /kb/271/Q271181/
 	
 	=============================================================================
 	
+
+{% endraw %}

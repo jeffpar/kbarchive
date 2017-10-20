@@ -6,6 +6,8 @@ permalink: /kb/033/Q33117/
 
 ## Q33117: Mouse and IBM Page Printer Hang System
 
+{% raw %}
+
 	Article: Q33117
 	Product(s): See article
 	Version(s): 6.x 1.00
@@ -32,3 +34,5 @@ permalink: /kb/033/Q33117/
 	
 	   4. Reboot the machine. The mouse now can be used in conjunction
 	      with the Page Printer.
+
+{% endraw %}

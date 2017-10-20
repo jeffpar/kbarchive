@@ -6,6 +6,8 @@ permalink: /kb/175/Q175172/
 
 ## Q175172: XCLN: Unable to Recover Deleted Items from Some Public Folders
 
+{% raw %}
+
 	Article: Q175172
 	Product(s): Microsoft Exchange
 	Version(s): 8.03; WINDOWS:4.0,5.0; winnt:5.5
@@ -51,3 +53,5 @@ permalink: /kb/175/Q175172/
 	
 	=============================================================================
 	
+
+{% endraw %}

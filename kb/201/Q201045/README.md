@@ -6,6 +6,8 @@ permalink: /kb/201/Q201045/
 
 ## Q201045: HOWTO: Add Multiple Window Types to a Non-Document/View MDI App
 
+{% raw %}
+
 	Article: Q201045
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -276,3 +278,5 @@ permalink: /kb/201/Q201045/
 	
 	=============================================================================
 	
+
+{% endraw %}

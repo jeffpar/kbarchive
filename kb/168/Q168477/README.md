@@ -6,6 +6,8 @@ permalink: /kb/168/Q168477/
 
 ## Q168477: &quot;Cannot Access This Folder. Path Is Too Long&quot; Error
 
+{% raw %}
+
 	Article: Q168477
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -68,3 +70,5 @@ permalink: /kb/168/Q168477/
 	
 	=============================================================================
 	
+
+{% endraw %}

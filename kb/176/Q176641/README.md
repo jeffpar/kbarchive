@@ -6,6 +6,8 @@ permalink: /kb/176/Q176641/
 
 ## Q176641: FIX: Do Until Loop Evaluates &quot;True&quot; as -1 Exclusively
 
+{% raw %}
+
 	Article: Q176641
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/176/Q176641/
 	
 	=============================================================================
 	
+
+{% endraw %}

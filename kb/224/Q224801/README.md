@@ -6,6 +6,8 @@ permalink: /kb/224/Q224801/
 
 ## Q224801: Deciphering IISSYNC Status Codes
 
+{% raw %}
+
 	Article: Q224801
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/224/Q224801/
 	
 	=============================================================================
 	
+
+{% endraw %}

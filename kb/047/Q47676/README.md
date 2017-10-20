@@ -6,6 +6,8 @@ permalink: /kb/047/Q47676/
 
 ## Q47676: Tempest-Approved Mouse
 
+{% raw %}
+
 	Article: Q47676
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -21,3 +23,5 @@ permalink: /kb/047/Q47676/
 	used in sensitive or classified areas
 	
 	For more information, contact Steve Rice of QTP at (703) 834-5200.
+
+{% endraw %}

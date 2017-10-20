@@ -6,6 +6,8 @@ permalink: /kb/251/Q251049/
 
 ## Q251049: XFOR: Lotus Notes Dirsync Specification of Read Only Field
 
+{% raw %}
+
 	Article: Q251049
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -88,3 +90,5 @@ permalink: /kb/251/Q251049/
 	
 	=============================================================================
 	
+
+{% endraw %}

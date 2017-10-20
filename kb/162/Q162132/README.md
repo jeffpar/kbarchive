@@ -6,6 +6,8 @@ permalink: /kb/162/Q162132/
 
 ## Q162132: WD97: Run-time error '5880' Saving as HTML from VBA
 
+{% raw %}
+
 	Article: Q162132
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/162/Q162132/
 	
 	=============================================================================
 	
+
+{% endraw %}

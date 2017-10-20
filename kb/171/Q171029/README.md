@@ -6,6 +6,8 @@ permalink: /kb/171/Q171029/
 
 ## Q171029: Error Message: Invalid Page Fault in Module Mcm.dll
 
+{% raw %}
+
 	Article: Q171029
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -70,3 +72,5 @@ permalink: /kb/171/Q171029/
 	
 	=============================================================================
 	
+
+{% endraw %}

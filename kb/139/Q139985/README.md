@@ -6,6 +6,8 @@ permalink: /kb/139/Q139985/
 
 ## Q139985: WINS Client Fails to Reach a Multihomed Server
 
+{% raw %}
+
 	Article: Q139985
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11,95; winnt:3.5,3.51
@@ -99,3 +101,5 @@ permalink: /kb/139/Q139985/
 	
 	=============================================================================
 	
+
+{% endraw %}

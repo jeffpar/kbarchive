@@ -6,6 +6,8 @@ permalink: /kb/150/Q150225/
 
 ## Q150225: BUG: Carriage Return Embedded in Text When MultiLine Toggled
 
+{% raw %}
+
 	Article: Q150225
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/150/Q150225/
 	
 	=============================================================================
 	
+
+{% endraw %}

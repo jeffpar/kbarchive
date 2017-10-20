@@ -6,6 +6,8 @@ permalink: /kb/243/Q243860/
 
 ## Q243860: Flight Simulator 2000: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q243860
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -80,3 +82,5 @@ permalink: /kb/243/Q243860/
 	
 	=============================================================================
 	
+
+{% endraw %}

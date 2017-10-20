@@ -6,6 +6,8 @@ permalink: /kb/291/Q291426/
 
 ## Q291426: Error Messages Appear When User Open Programs on Terminal Server
 
+{% raw %}
+
 	Article: Q291426
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -109,3 +111,5 @@ permalink: /kb/291/Q291426/
 	
 	=============================================================================
 	
+
+{% endraw %}

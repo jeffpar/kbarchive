@@ -6,6 +6,8 @@ permalink: /kb/181/Q181641/
 
 ## Q181641: WD97: How to Create an Exclude Dictionary
 
+{% raw %}
+
 	Article: Q181641
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -147,3 +149,5 @@ permalink: /kb/181/Q181641/
 	
 	=============================================================================
 	
+
+{% endraw %}

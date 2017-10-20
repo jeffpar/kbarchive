@@ -6,6 +6,8 @@ permalink: /kb/163/Q163560/
 
 ## Q163560: SLI_OPEN May Complete in Error with No Host Logon Screen
 
+{% raw %}
+
 	Article: Q163560
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0
@@ -77,3 +79,5 @@ permalink: /kb/163/Q163560/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242250/
 
 ## Q242250: XFOR: Exchange Connectors Require Separate Service Pack Install
 
+{% raw %}
+
 	Article: Q242250
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -87,3 +89,5 @@ permalink: /kb/242/Q242250/
 	
 	=============================================================================
 	
+
+{% endraw %}

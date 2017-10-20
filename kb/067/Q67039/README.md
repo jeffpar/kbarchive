@@ -6,6 +6,8 @@ permalink: /kb/067/Q67039/
 
 ## Q67039: /qc Option Cannot Be Combined with /Ol and register Variables
 
+{% raw %}
+
 	Article: Q67039
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -52,3 +54,5 @@ permalink: /kb/067/Q67039/
 	6.00a and QuickC versions 2.50 and 2.51 (buglist2.50 and buglist2.51).
 	We are researching this problem and will post new information here as
 	it becomes available.
+
+{% endraw %}

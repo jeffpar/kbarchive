@@ -6,6 +6,8 @@ permalink: /kb/252/Q252490/
 
 ## Q252490: HOWTO: Use ADSI to Query the Global Catalog for a UPN
 
+{% raw %}
+
 	Article: Q252490
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,2.5,2000
@@ -292,3 +294,5 @@ permalink: /kb/252/Q252490/
 	
 	=============================================================================
 	
+
+{% endraw %}

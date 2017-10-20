@@ -6,6 +6,8 @@ permalink: /kb/150/Q150325/
 
 ## Q150325: Microsoft Home Products Curriculum Activities
 
+{% raw %}
+
 	Article: Q150325
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a,1.1,1.1a,1.1b,1.1c,2.0,4.0a
@@ -137,3 +139,5 @@ permalink: /kb/150/Q150325/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152544/
 
 ## Q152544: XADM: GWART Shows Site Has Routing to Itself
 
+{% raw %}
+
 	Article: Q152544
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -55,3 +57,5 @@ permalink: /kb/152/Q152544/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193952/
 
 ## Q193952: HOWTO: Troubleshoot to Resolve Suspected Corruption
 
+{% raw %}
+
 	Article: Q193952
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -271,3 +273,5 @@ permalink: /kb/193/Q193952/
 	
 	=============================================================================
 	
+
+{% endraw %}

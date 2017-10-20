@@ -6,6 +6,8 @@ permalink: /kb/156/Q156108/
 
 ## Q156108: Encarta 97: Lookup Reference Fails with Office, Works, Word
 
+{% raw %}
+
 	Article: Q156108
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition; WINDOWS:4.0
@@ -67,3 +69,5 @@ permalink: /kb/156/Q156108/
 	
 	=============================================================================
 	
+
+{% endraw %}

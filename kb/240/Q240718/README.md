@@ -6,6 +6,8 @@ permalink: /kb/240/Q240718/
 
 ## Q240718: Previous OS Disabled by Setup and Is Not Listed on Boot Menu
 
+{% raw %}
+
 	Article: Q240718
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -98,3 +100,5 @@ permalink: /kb/240/Q240718/
 	
 	=============================================================================
 	
+
+{% endraw %}

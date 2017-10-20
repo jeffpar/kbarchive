@@ -6,6 +6,8 @@ permalink: /kb/109/Q109874/
 
 ## Q109874: FIX: Constants Out of Range Not Found by /4Yb
 
+{% raw %}
+
 	Article: Q109874
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -86,3 +88,5 @@ permalink: /kb/109/Q109874/
 	
 	=============================================================================
 	
+
+{% endraw %}

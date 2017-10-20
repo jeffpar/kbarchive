@@ -6,6 +6,8 @@ permalink: /kb/105/Q105433/
 
 ## Q105433: PC WSPlus: Archive Progress Indicator Starts at 50 Percent
 
+{% raw %}
+
 	Article: Q105433
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -50,3 +52,5 @@ permalink: /kb/105/Q105433/
 	
 	=============================================================================
 	
+
+{% endraw %}

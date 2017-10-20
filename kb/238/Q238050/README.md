@@ -6,6 +6,8 @@ permalink: /kb/238/Q238050/
 
 ## Q238050: Encarta Dictionary 2000: Cannot Scroll Using IntelliMouse Wheel
 
+{% raw %}
+
 	Article: Q238050
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -64,3 +66,5 @@ permalink: /kb/238/Q238050/
 	
 	=============================================================================
 	
+
+{% endraw %}

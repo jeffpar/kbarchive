@@ -6,6 +6,8 @@ permalink: /kb/080/Q80863/
 
 ## Q80863: Limiting Simultaneous Users of an Application
 
+{% raw %}
+
 	Article: Q80863
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -169,3 +171,5 @@ permalink: /kb/080/Q80863/
 	
 	=============================================================================
 	
+
+{% endraw %}

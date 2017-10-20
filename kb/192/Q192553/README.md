@@ -6,6 +6,8 @@ permalink: /kb/192/Q192553/
 
 ## Q192553: WD97: Using Keyboard to Move Between Newspaper-Style Columns
 
+{% raw %}
+
 	Article: Q192553
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -84,3 +86,5 @@ permalink: /kb/192/Q192553/
 	
 	=============================================================================
 	
+
+{% endraw %}

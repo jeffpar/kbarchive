@@ -6,6 +6,8 @@ permalink: /kb/247/Q247614/
 
 ## Q247614: XADM: Exchange Administrator Stops When Moving Mailbox
 
+{% raw %}
+
 	Article: Q247614
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -78,3 +80,5 @@ permalink: /kb/247/Q247614/
 	
 	=============================================================================
 	
+
+{% endraw %}

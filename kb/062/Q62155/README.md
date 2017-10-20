@@ -6,6 +6,8 @@ permalink: /kb/062/Q62155/
 
 ## Q62155: Flight Simulator 4.00: Delay When Moving Landing Gear
 
+{% raw %}
+
 	Article: Q62155
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -28,3 +30,5 @@ permalink: /kb/062/Q62155/
 	
 	=============================================================================
 	
+
+{% endraw %}

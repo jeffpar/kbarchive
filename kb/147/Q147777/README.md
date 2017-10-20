@@ -6,6 +6,8 @@ permalink: /kb/147/Q147777/
 
 ## Q147777: 'Print Spooled Jobs First' Option Will Not Stay Selected
 
+{% raw %}
+
 	Article: Q147777
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -60,3 +62,5 @@ permalink: /kb/147/Q147777/
 	
 	=============================================================================
 	
+
+{% endraw %}

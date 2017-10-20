@@ -6,6 +6,8 @@ permalink: /kb/259/Q259726/
 
 ## Q259726: FIX: Debugger Encounters Invisible Breakpoints in Assembly Code
 
+{% raw %}
+
 	Article: Q259726
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -84,3 +86,5 @@ permalink: /kb/259/Q259726/
 	
 	=============================================================================
 	
+
+{% endraw %}

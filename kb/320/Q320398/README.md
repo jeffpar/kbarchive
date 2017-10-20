@@ -6,6 +6,8 @@ permalink: /kb/320/Q320398/
 
 ## Q320398: Programming with Microsoft Visual C++ .NET, Sixth Edition (Core
 
+{% raw %}
+
 	Article: Q320398
 	Product(s): Microsoft Press
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/320/Q320398/
 	
 	=============================================================================
 	
+
+{% endraw %}

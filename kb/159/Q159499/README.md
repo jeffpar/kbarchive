@@ -6,6 +6,8 @@ permalink: /kb/159/Q159499/
 
 ## Q159499: XCLN: Using Microsoft Mail Forms with Exchange
 
+{% raw %}
+
 	Article: Q159499
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -57,3 +59,5 @@ permalink: /kb/159/Q159499/
 	
 	=============================================================================
 	
+
+{% endraw %}

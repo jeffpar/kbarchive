@@ -6,6 +6,8 @@ permalink: /kb/170/Q170919/
 
 ## Q170919: PRB: Error &quot;Record is not Locked&quot; with ComboBox in Grid
 
+{% raw %}
+
 	Article: Q170919
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b
@@ -121,3 +123,5 @@ permalink: /kb/170/Q170919/
 	
 	=============================================================================
 	
+
+{% endraw %}

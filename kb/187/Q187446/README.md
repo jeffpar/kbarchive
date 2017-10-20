@@ -6,6 +6,8 @@ permalink: /kb/187/Q187446/
 
 ## Q187446: Uninstall Routines May Not Complete Successfully for Users
 
+{% raw %}
+
 	Article: Q187446
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -48,3 +50,5 @@ permalink: /kb/187/Q187446/
 	
 	=============================================================================
 	
+
+{% endraw %}

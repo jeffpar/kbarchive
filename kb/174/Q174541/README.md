@@ -6,6 +6,8 @@ permalink: /kb/174/Q174541/
 
 ## Q174541: Publisher 3.0/4.0 Does Not Print Brick or Vertical Line Patterns
 
+{% raw %}
+
 	Article: Q174541
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/174/Q174541/
 	
 	=============================================================================
 	
+
+{% endraw %}

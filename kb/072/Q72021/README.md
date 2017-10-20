@@ -6,6 +6,8 @@ permalink: /kb/072/Q72021/
 
 ## Q72021: INFO: Font Rotation Under Microsoft Windows
 
+{% raw %}
+
 	Article: Q72021
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -79,3 +81,5 @@ permalink: /kb/072/Q72021/
 	
 	=============================================================================
 	
+
+{% endraw %}

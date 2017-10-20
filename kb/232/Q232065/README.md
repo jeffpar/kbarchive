@@ -6,6 +6,8 @@ permalink: /kb/232/Q232065/
 
 ## Q232065: How to Use ASP to Create a DHTML Table of Contents from an INI
 
+{% raw %}
+
 	Article: Q232065
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -182,3 +184,5 @@ permalink: /kb/232/Q232065/
 	
 	=============================================================================
 	
+
+{% endraw %}

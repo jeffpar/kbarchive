@@ -6,6 +6,8 @@ permalink: /kb/165/Q165026/
 
 ## Q165026: NTBackup Cannot Restore Font Files That Are in Use
 
+{% raw %}
+
 	Article: Q165026
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/165/Q165026/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143000/
 
 ## Q143000: PC Ext NTMMTA: Err Msg: &quot;No Answer&quot; Using NULLMODM Script
 
+{% raw %}
+
 	Article: Q143000
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5; WINDOWS:3.0a,3.2,3.2a,3.5
@@ -109,3 +111,5 @@ permalink: /kb/143/Q143000/
 	
 	=============================================================================
 	
+
+{% endraw %}

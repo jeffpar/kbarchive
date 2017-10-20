@@ -6,6 +6,8 @@ permalink: /kb/306/Q306195/
 
 ## Q306195: Event ID 2064 and 2075 After You Apply Windows 2000 Server SP2
 
+{% raw %}
+
 	Article: Q306195
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000 SP2
@@ -117,3 +119,5 @@ permalink: /kb/306/Q306195/
 	
 	=============================================================================
 	
+
+{% endraw %}

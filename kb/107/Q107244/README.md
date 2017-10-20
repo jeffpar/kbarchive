@@ -6,6 +6,8 @@ permalink: /kb/107/Q107244/
 
 ## Q107244: Microsoft Systems Management Server README.TXT (Part 1 of 2)
 
+{% raw %}
+
 	Article: Q107244
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -835,3 +837,5 @@ permalink: /kb/107/Q107244/
 	
 	=============================================================================
 	
+
+{% endraw %}

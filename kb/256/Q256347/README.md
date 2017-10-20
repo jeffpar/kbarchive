@@ -6,6 +6,8 @@ permalink: /kb/256/Q256347/
 
 ## Q256347: PRB: HrGetBackupLogs() Must Not Be Called Before HrBackupClose()
 
+{% raw %}
+
 	Article: Q256347
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.x,5.0,5.0 SP1,5.0 SP2,5.5,5.5 SP1,5
@@ -62,3 +64,5 @@ permalink: /kb/256/Q256347/
 	
 	=============================================================================
 	
+
+{% endraw %}

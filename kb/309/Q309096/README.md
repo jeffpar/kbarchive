@@ -6,6 +6,8 @@ permalink: /kb/309/Q309096/
 
 ## Q309096: MCSE Readiness Review Exam 70-219: Designing a Microsoft Windows
 
+{% raw %}
+
 	Article: Q309096
 	Product(s): Microsoft Press
 	Version(s): 
@@ -111,3 +113,5 @@ permalink: /kb/309/Q309096/
 	
 	=============================================================================
 	
+
+{% endraw %}

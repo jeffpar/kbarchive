@@ -6,6 +6,8 @@ permalink: /kb/111/Q111382/
 
 ## Q111382: Writer/Artist 1: No Sounds with Reveal Sound Card
 
+{% raw %}
+
 	Article: Q111382
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -83,3 +85,5 @@ permalink: /kb/111/Q111382/
 	
 	=============================================================================
 	
+
+{% endraw %}

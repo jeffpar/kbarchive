@@ -6,6 +6,8 @@ permalink: /kb/221/Q221682/
 
 ## Q221682: FIX: Expanding/Collapsing Big Array in Watch/Locals Windows Slow
 
+{% raw %}
+
 	Article: Q221682
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -74,3 +76,5 @@ permalink: /kb/221/Q221682/
 	
 	=============================================================================
 	
+
+{% endraw %}

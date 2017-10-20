@@ -6,6 +6,8 @@ permalink: /kb/086/Q86054/
 
 ## Q86054: How to Determine Amount of Extended Memory with DEBUG
 
+{% raw %}
+
 	Article: Q86054
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -84,3 +86,5 @@ permalink: /kb/086/Q86054/
 	
 	=============================================================================
 	
+
+{% endraw %}

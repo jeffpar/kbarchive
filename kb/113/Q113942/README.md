@@ -6,6 +6,8 @@ permalink: /kb/113/Q113942/
 
 ## Q113942: Converting dBASE Files to FoxPro
 
+{% raw %}
+
 	Article: Q113942
 	Product(s): Microsoft FoxPro
 	Version(s): 2.60 3.00 | 2.60
@@ -252,3 +254,5 @@ permalink: /kb/113/Q113942/
 	
 	=============================================================================
 	
+
+{% endraw %}

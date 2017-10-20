@@ -6,6 +6,8 @@ permalink: /kb/303/Q303978/
 
 ## Q303978: Error: Access Violation in Msppnexus.dll
 
+{% raw %}
+
 	Article: Q303978
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4,1.99
@@ -53,3 +55,5 @@ permalink: /kb/303/Q303978/
 	
 	=============================================================================
 	
+
+{% endraw %}

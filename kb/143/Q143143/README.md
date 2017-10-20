@@ -6,6 +6,8 @@ permalink: /kb/143/Q143143/
 
 ## Q143143: Error Printing From Macintosh to LPT Port of Windows NT Server
 
+{% raw %}
+
 	Article: Q143143
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -63,3 +65,5 @@ permalink: /kb/143/Q143143/
 	
 	=============================================================================
 	
+
+{% endraw %}

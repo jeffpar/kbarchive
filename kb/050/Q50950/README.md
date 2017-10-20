@@ -6,6 +6,8 @@ permalink: /kb/050/Q50950/
 
 ## Q50950: HOWTO: Specify Stack Size (Clarification)
 
+{% raw %}
+
 	Article: Q50950
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -62,3 +64,5 @@ permalink: /kb/050/Q50950/
 	
 	=============================================================================
 	
+
+{% endraw %}

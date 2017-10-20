@@ -6,6 +6,8 @@ permalink: /kb/086/Q86948/
 
 ## Q86948: 3COM: What Retry Mechanism the Gateway Responds To
 
+{% raw %}
+
 	Article: Q86948
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -43,3 +45,5 @@ permalink: /kb/086/Q86948/
 	
 	=============================================================================
 	
+
+{% endraw %}

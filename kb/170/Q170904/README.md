@@ -6,6 +6,8 @@ permalink: /kb/170/Q170904/
 
 ## Q170904: WD97: Inline Picture Inside Text Box Becomes Larger in Word 7.x
 
+{% raw %}
+
 	Article: Q170904
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -126,3 +128,5 @@ permalink: /kb/170/Q170904/
 	
 	=============================================================================
 	
+
+{% endraw %}

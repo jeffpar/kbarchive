@@ -6,6 +6,8 @@ permalink: /kb/218/Q218134/
 
 ## Q218134: Error: SysTray.exe - DLL Initialization Failed After NT SP4 Inst
 
+{% raw %}
+
 	Article: Q218134
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.5
@@ -64,3 +66,5 @@ permalink: /kb/218/Q218134/
 	
 	=============================================================================
 	
+
+{% endraw %}

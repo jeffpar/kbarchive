@@ -6,6 +6,8 @@ permalink: /kb/257/Q257783/
 
 ## Q257783: FIX: Function with Numeric Label May Cause Crash
 
+{% raw %}
+
 	Article: Q257783
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -79,3 +81,5 @@ permalink: /kb/257/Q257783/
 	
 	=============================================================================
 	
+
+{% endraw %}

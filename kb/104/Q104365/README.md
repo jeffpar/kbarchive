@@ -6,6 +6,8 @@ permalink: /kb/104/Q104365/
 
 ## Q104365: PC DOS: Err Msg: Notice 127 Private Folder Index Missing
 
+{% raw %}
+
 	Article: Q104365
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -70,3 +72,5 @@ permalink: /kb/104/Q104365/
 	
 	=============================================================================
 	
+
+{% endraw %}

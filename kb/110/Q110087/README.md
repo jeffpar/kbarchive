@@ -6,6 +6,8 @@ permalink: /kb/110/Q110087/
 
 ## Q110087: BUG: SAVEIMAGE May Cause Error DX1020 in SVGA Display Modes
 
+{% raw %}
+
 	Article: Q110087
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -75,3 +77,5 @@ permalink: /kb/110/Q110087/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/214/Q214795/
 
 ## Q214795: How to Back Up and Restore a Print Server Configuration
 
+{% raw %}
+
 	Article: Q214795
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -177,3 +179,5 @@ permalink: /kb/214/Q214795/
 	
 	=============================================================================
 	
+
+{% endraw %}

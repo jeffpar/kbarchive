@@ -6,6 +6,8 @@ permalink: /kb/110/Q110507/
 
 ## Q110507: HOWTO: Configure ODBC Data Sources on the Fly
 
+{% raw %}
+
 	Article: Q110507
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5,2.0,2.1,2.5,2.6
@@ -204,3 +206,5 @@ permalink: /kb/110/Q110507/
 	
 	=============================================================================
 	
+
+{% endraw %}

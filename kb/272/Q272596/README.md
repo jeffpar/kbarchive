@@ -6,6 +6,8 @@ permalink: /kb/272/Q272596/
 
 ## Q272596: IIS: Enabling HTTP Compression Returns Content with 1997 Date
 
+{% raw %}
+
 	Article: Q272596
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -74,3 +76,5 @@ permalink: /kb/272/Q272596/
 	
 	=============================================================================
 	
+
+{% endraw %}

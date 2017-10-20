@@ -6,6 +6,8 @@ permalink: /kb/182/Q182631/
 
 ## Q182631: INF: Using Alternate Code Page When Creating a Recording File
 
+{% raw %}
+
 	Article: Q182631
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -101,3 +103,5 @@ permalink: /kb/182/Q182631/
 	
 	=============================================================================
 	
+
+{% endraw %}

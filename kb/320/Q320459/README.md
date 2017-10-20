@@ -6,6 +6,8 @@ permalink: /kb/320/Q320459/
 
 ## Q320459: SMS: Advertisements May Run When No User Is Logged On
 
+{% raw %}
+
 	Article: Q320459
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -49,3 +51,5 @@ permalink: /kb/320/Q320459/
 	
 	=============================================================================
 	
+
+{% endraw %}

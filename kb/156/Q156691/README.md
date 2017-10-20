@@ -6,6 +6,8 @@ permalink: /kb/156/Q156691/
 
 ## Q156691: System Attribute Check Box Disabled In Explorer and My Computer
 
+{% raw %}
+
 	Article: Q156691
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -49,3 +51,5 @@ permalink: /kb/156/Q156691/
 	
 	=============================================================================
 	
+
+{% endraw %}

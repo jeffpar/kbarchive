@@ -6,6 +6,8 @@ permalink: /kb/246/Q246830/
 
 ## Q246830: Event ID 60 Occurs after Updating to Windows NT 4.0 SP4 or Later
 
+{% raw %}
+
 	Article: Q246830
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -122,3 +124,5 @@ permalink: /kb/246/Q246830/
 	
 	=============================================================================
 	
+
+{% endraw %}

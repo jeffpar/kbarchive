@@ -6,6 +6,8 @@ permalink: /kb/238/Q238214/
 
 ## Q238214: Asheron's Call: How to Enable or Disable 3D Acceleration
 
+{% raw %}
+
 	Article: Q238214
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/238/Q238214/
 	
 	=============================================================================
 	
+
+{% endraw %}

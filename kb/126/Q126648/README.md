@@ -6,6 +6,8 @@ permalink: /kb/126/Q126648/
 
 ## Q126648: PC Win DOS: How the WINMAIL.DAT File Effects Attachments
 
+{% raw %}
+
 	Article: Q126648
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.2a
@@ -60,3 +62,5 @@ permalink: /kb/126/Q126648/
 	
 	=============================================================================
 	
+
+{% endraw %}

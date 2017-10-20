@@ -6,6 +6,8 @@ permalink: /kb/163/Q163899/
 
 ## Q163899: Client/Server Applications May Fail Using Windows NT3.51 SP5
 
+{% raw %}
+
 	Article: Q163899
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP5,4.0
@@ -62,3 +64,5 @@ permalink: /kb/163/Q163899/
 	
 	=============================================================================
 	
+
+{% endraw %}

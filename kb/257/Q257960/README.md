@@ -6,6 +6,8 @@ permalink: /kb/257/Q257960/
 
 ## Q257960: XCLN: Rules in Outlook Cannot Process Substrings in the Subject
 
+{% raw %}
+
 	Article: Q257960
 	Product(s): Microsoft Exchange
 	Version(s): 8.01,8.02,8.03,8.04; WINDOWS:
@@ -99,3 +101,5 @@ permalink: /kb/257/Q257960/
 	
 	=============================================================================
 	
+
+{% endraw %}

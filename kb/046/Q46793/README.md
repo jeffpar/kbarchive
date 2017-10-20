@@ -6,6 +6,8 @@ permalink: /kb/046/Q46793/
 
 ## Q46793: Bus Mouse and Cipher Tape Drive Card
 
+{% raw %}
+
 	Article: Q46793
 	Product(s): See article
 	Version(s): 1.00
@@ -25,3 +27,5 @@ permalink: /kb/046/Q46793/
 	This problem occurred because the interrupt and primary/secondary
 	jumper settings were wrong. To correct this problem, change J4 to
 	interrupt 2, and J3 to secondary inport.
+
+{% endraw %}

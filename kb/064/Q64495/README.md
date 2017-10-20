@@ -6,6 +6,8 @@ permalink: /kb/064/Q64495/
 
 ## Q64495: ISAMIO.EXE /I Imports ASCII Text File into BASIC ISAM File
 
+{% raw %}
+
 	Article: Q64495
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -209,3 +211,5 @@ permalink: /kb/064/Q64495/
 	For more information on how to use ISAMIO, see Pages 389-391, Chapter
 	10, "ISAM Utilities," of the "Microsoft BASIC 7.0: Programmer's Guide"
 	for versions 7.00 and 7.10.
+
+{% endraw %}

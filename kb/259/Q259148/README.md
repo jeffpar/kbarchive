@@ -6,6 +6,8 @@ permalink: /kb/259/Q259148/
 
 ## Q259148: Random &quot;Access Violation&quot; Error Messages in EnumProtocolsW()
 
+{% raw %}
+
 	Article: Q259148
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -119,3 +121,5 @@ permalink: /kb/259/Q259148/
 	
 	=============================================================================
 	
+
+{% endraw %}

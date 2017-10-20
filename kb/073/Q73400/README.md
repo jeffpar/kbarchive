@@ -6,6 +6,8 @@ permalink: /kb/073/Q73400/
 
 ## Q73400: DOCERR: MASM 6.0 Programmer's Guide Errors: Chapters 11-20
 
+{% raw %}
+
 	Article: Q73400
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -146,3 +148,5 @@ permalink: /kb/073/Q73400/
 	
 	=============================================================================
 	
+
+{% endraw %}

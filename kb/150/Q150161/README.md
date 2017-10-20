@@ -6,6 +6,8 @@ permalink: /kb/150/Q150161/
 
 ## Q150161: XADM: Site Addressing Property Page Apply Button Inactive
 
+{% raw %}
+
 	Article: Q150161
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -43,3 +45,5 @@ permalink: /kb/150/Q150161/
 	
 	=============================================================================
 	
+
+{% endraw %}

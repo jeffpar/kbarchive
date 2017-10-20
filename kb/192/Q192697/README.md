@@ -6,6 +6,8 @@ permalink: /kb/192/Q192697/
 
 ## Q192697: XFOR: cc:Mail Connector Ignores Export Custom Recipients Flag
 
+{% raw %}
+
 	Article: Q192697
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -77,3 +79,5 @@ permalink: /kb/192/Q192697/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/309/Q309150/
 
 ## Q309150: PRB: SNA Server Sends Incorrect Format 3 XID Commands
 
+{% raw %}
+
 	Article: Q309150
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,4.0
@@ -68,3 +70,5 @@ permalink: /kb/309/Q309150/
 	
 	=============================================================================
 	
+
+{% endraw %}

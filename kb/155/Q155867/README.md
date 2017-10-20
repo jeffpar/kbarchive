@@ -6,6 +6,8 @@ permalink: /kb/155/Q155867/
 
 ## Q155867: XADM: Directory Replication Portion of Exchange Setup Fails
 
+{% raw %}
+
 	Article: Q155867
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -66,3 +68,5 @@ permalink: /kb/155/Q155867/
 	
 	=============================================================================
 	
+
+{% endraw %}

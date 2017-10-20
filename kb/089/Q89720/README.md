@@ -6,6 +6,8 @@ permalink: /kb/089/Q89720/
 
 ## Q89720: Delay when Displaying Command Prompt
 
+{% raw %}
+
 	Article: Q89720
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -51,3 +53,5 @@ permalink: /kb/089/Q89720/
 	
 	=============================================================================
 	
+
+{% endraw %}

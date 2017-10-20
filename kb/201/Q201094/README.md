@@ -6,6 +6,8 @@ permalink: /kb/201/Q201094/
 
 ## Q201094: PRB: Error C2259 on &quot;char&quot; Type Redefinition in Visual C++
 
+{% raw %}
+
 	Article: Q201094
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -102,3 +104,5 @@ permalink: /kb/201/Q201094/
 	
 	=============================================================================
 	
+
+{% endraw %}

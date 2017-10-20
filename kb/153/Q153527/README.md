@@ -6,6 +6,8 @@ permalink: /kb/153/Q153527/
 
 ## Q153527: PRB: PRTINFO() Function Returns an Incorrect Value
 
+{% raw %}
+
 	Article: Q153527
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -56,3 +58,5 @@ permalink: /kb/153/Q153527/
 	
 	=============================================================================
 	
+
+{% endraw %}

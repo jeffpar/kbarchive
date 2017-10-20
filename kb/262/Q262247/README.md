@@ -6,6 +6,8 @@ permalink: /kb/262/Q262247/
 
 ## Q262247: Asheron's Call: How to Restore Accidentally Deleted Characters
 
+{% raw %}
+
 	Article: Q262247
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -51,3 +53,5 @@ permalink: /kb/262/Q262247/
 	
 	=============================================================================
 	
+
+{% endraw %}

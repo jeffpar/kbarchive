@@ -6,6 +6,8 @@ permalink: /kb/175/Q175462/
 
 ## Q175462: Status Of Readings On Microsoft Windows And WOSA
 
+{% raw %}
+
 	Article: Q175462
 	Product(s): Microsoft Press
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/175/Q175462/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154129/
 
 ## Q154129: Changing the Root Directory for Windows NT
 
+{% raw %}
+
 	Article: Q154129
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -157,3 +159,5 @@ permalink: /kb/154/Q154129/
 	
 	=============================================================================
 	
+
+{% endraw %}

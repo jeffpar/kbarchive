@@ -6,6 +6,8 @@ permalink: /kb/066/Q66215/
 
 ## Q66215: CV1319 Error May Be Caused by Generic Breakpoints
 
+{% raw %}
+
 	Article: Q66215
 	Product(s): See article
 	Version(s): 3.00   | 3.10
@@ -36,3 +38,5 @@ permalink: /kb/066/Q66215/
 	For example, if the statefileread switch is set to "yes" (the default)
 	and CodeView is invoked with the /TSF option, the CURRENT.STS file
 	will be ignored.
+
+{% endraw %}

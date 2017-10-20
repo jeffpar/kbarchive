@@ -6,6 +6,8 @@ permalink: /kb/129/Q129670/
 
 ## Q129670: GSNW Not Releasing Session to NetWare Server
 
+{% raw %}
+
 	Article: Q129670
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -57,3 +59,5 @@ permalink: /kb/129/Q129670/
 	
 	=============================================================================
 	
+
+{% endraw %}

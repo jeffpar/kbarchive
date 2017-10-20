@@ -6,6 +6,8 @@ permalink: /kb/130/Q130454/
 
 ## Q130454: INFO: .dbf-style Help Font Changed to Microsoft Sans Serif
 
+{% raw %}
+
 	Article: Q130454
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -47,3 +49,5 @@ permalink: /kb/130/Q130454/
 	
 	=============================================================================
 	
+
+{% endraw %}

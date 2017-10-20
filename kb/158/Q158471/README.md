@@ -6,6 +6,8 @@ permalink: /kb/158/Q158471/
 
 ## Q158471: PRB: 'File not found' When Attempting Command Line Check In
 
+{% raw %}
+
 	Article: Q158471
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -127,3 +129,5 @@ permalink: /kb/158/Q158471/
 	
 	=============================================================================
 	
+
+{% endraw %}

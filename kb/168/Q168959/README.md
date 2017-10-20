@@ -6,6 +6,8 @@ permalink: /kb/168/Q168959/
 
 ## Q168959: Puzzle Collection: Description of Installation Types
 
+{% raw %}
+
 	Article: Q168959
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/168/Q168959/
 	
 	=============================================================================
 	
+
+{% endraw %}

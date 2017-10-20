@@ -6,6 +6,8 @@ permalink: /kb/295/Q295714/
 
 ## Q295714: How to Break Down the System Process
 
+{% raw %}
+
 	Article: Q295714
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -84,3 +86,5 @@ permalink: /kb/295/Q295714/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/058/Q58864/
 
 ## Q58864: Using a Macro to Determine the Current Segment
 
+{% raw %}
+
 	Article: Q58864
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -60,3 +62,5 @@ permalink: /kb/058/Q58864/
 	
 	=============================================================================
 	
+
+{% endraw %}

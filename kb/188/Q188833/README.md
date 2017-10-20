@@ -6,6 +6,8 @@ permalink: /kb/188/Q188833/
 
 ## Q188833: XCLN: CDO Only Publishes Three Months of Free/Busy Data
 
+{% raw %}
+
 	Article: Q188833
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -68,3 +70,5 @@ permalink: /kb/188/Q188833/
 	
 	=============================================================================
 	
+
+{% endraw %}

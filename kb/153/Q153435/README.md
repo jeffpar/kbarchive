@@ -6,6 +6,8 @@ permalink: /kb/153/Q153435/
 
 ## Q153435: MSB Earth and Dinosaurs: Mouse Freezes at Corner of Screen
 
+{% raw %}
+
 	Article: Q153435
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,95
@@ -177,3 +179,5 @@ permalink: /kb/153/Q153435/
 	
 	=============================================================================
 	
+
+{% endraw %}

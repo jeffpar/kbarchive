@@ -6,6 +6,8 @@ permalink: /kb/261/Q261062/
 
 ## Q261062: MCM2: Cannot Select Video Adapter When You Use Multiple Monitors
 
+{% raw %}
+
 	Article: Q261062
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -75,3 +77,5 @@ permalink: /kb/261/Q261062/
 	
 	=============================================================================
 	
+
+{% endraw %}

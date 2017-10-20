@@ -6,6 +6,8 @@ permalink: /kb/113/Q113451/
 
 ## Q113451: PC Win: Attachment File Type Menu Has a Fixed Width
 
+{% raw %}
+
 	Article: Q113451
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -41,3 +43,5 @@ permalink: /kb/113/Q113451/
 	
 	=============================================================================
 	
+
+{% endraw %}

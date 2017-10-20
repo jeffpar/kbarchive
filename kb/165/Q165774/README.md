@@ -6,6 +6,8 @@ permalink: /kb/165/Q165774/
 
 ## Q165774: Windows NT Does Not Detect Serial IntelliPoint Mouse
 
+{% raw %}
+
 	Article: Q165774
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/165/Q165774/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172091/
 
 ## Q172091: Mastering Internet Development: Contents of Readme.wri
 
+{% raw %}
+
 	Article: Q172091
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -468,3 +470,5 @@ permalink: /kb/172/Q172091/
 	
 	=============================================================================
 	
+
+{% endraw %}

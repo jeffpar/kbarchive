@@ -6,6 +6,8 @@ permalink: /kb/042/Q42321/
 
 ## Q42321: Syntax Error, Duplicate Definition, Expected:Variable=Express
 
+{% raw %}
+
 	Article: Q42321
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -37,3 +39,5 @@ permalink: /kb/042/Q42321/
 	' PROG #3
 	     x% = 6
 	     bd - 13 = c    ' "Syntax error"
+
+{% endraw %}

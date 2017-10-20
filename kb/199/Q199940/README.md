@@ -6,6 +6,8 @@ permalink: /kb/199/Q199940/
 
 ## Q199940: XADM: Server Monitor Services Not Unique Between Many Monitors
 
+{% raw %}
+
 	Article: Q199940
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -48,3 +50,5 @@ permalink: /kb/199/Q199940/
 	
 	=============================================================================
 	
+
+{% endraw %}

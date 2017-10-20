@@ -6,6 +6,8 @@ permalink: /kb/303/Q303038/
 
 ## Q303038: Links 2001: Err Msg: Links 2001 Cannot Verify Your Disk
 
+{% raw %}
+
 	Article: Q303038
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -147,3 +149,5 @@ permalink: /kb/303/Q303038/
 	
 	=============================================================================
 	
+
+{% endraw %}

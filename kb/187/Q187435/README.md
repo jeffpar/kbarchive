@@ -6,6 +6,8 @@ permalink: /kb/187/Q187435/
 
 ## Q187435: TSCfg Adds RDP Connection Even if Initialization Fails
 
+{% raw %}
+
 	Article: Q187435
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -50,3 +52,5 @@ permalink: /kb/187/Q187435/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185727/
 
 ## Q185727: BUG: closesocket() Fails with 10038 After _open_osfhandle()
 
+{% raw %}
+
 	Article: Q185727
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP3
@@ -70,3 +72,5 @@ permalink: /kb/185/Q185727/
 	
 	=============================================================================
 	
+
+{% endraw %}

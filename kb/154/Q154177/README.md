@@ -6,6 +6,8 @@ permalink: /kb/154/Q154177/
 
 ## Q154177: IBM Model 320 Microchannel Does Not Utilize Multiprocessor
 
+{% raw %}
+
 	Article: Q154177
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -60,3 +62,5 @@ permalink: /kb/154/Q154177/
 	
 	=============================================================================
 	
+
+{% endraw %}

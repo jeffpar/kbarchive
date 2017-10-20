@@ -6,6 +6,8 @@ permalink: /kb/094/Q94164/
 
 ## Q94164: Incorrect Output with HP LaserJet 4 and Windows Accessories
 
+{% raw %}
+
 	Article: Q94164
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/094/Q94164/
 	
 	=============================================================================
 	
+
+{% endraw %}

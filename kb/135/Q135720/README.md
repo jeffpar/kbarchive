@@ -6,6 +6,8 @@ permalink: /kb/135/Q135720/
 
 ## Q135720: PRB: Moving Project in SourceSafe Explorer Causes Error in VB
 
+{% raw %}
+
 	Article: Q135720
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/135/Q135720/
 	
 	=============================================================================
 	
+
+{% endraw %}

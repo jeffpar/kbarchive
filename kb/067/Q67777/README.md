@@ -6,6 +6,8 @@ permalink: /kb/067/Q67777/
 
 ## Q67777: PRB: Inconsistent Error Attempting to Load Nonexistent Extension
 
+{% raw %}
+
 	Article: Q67777
 	Product(s): Microsoft Programming Utilities
 	Version(s): OS/2:1.0,1.1
@@ -56,3 +58,5 @@ permalink: /kb/067/Q67777/
 	
 	=============================================================================
 	
+
+{% endraw %}

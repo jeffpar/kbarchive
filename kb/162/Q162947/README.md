@@ -6,6 +6,8 @@ permalink: /kb/162/Q162947/
 
 ## Q162947: XCLN: Exchange Client Using FTP TCP/IP on Token Ring Network
 
+{% raw %}
+
 	Article: Q162947
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -73,3 +75,5 @@ permalink: /kb/162/Q162947/
 	
 	=============================================================================
 	
+
+{% endraw %}

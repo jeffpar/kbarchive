@@ -6,6 +6,8 @@ permalink: /kb/171/Q171507/
 
 ## Q171507: FIX: VB GPFs When Selecting Align/Lefts from the Format Menu
 
+{% raw %}
+
 	Article: Q171507
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -70,3 +72,5 @@ permalink: /kb/171/Q171507/
 	
 	=============================================================================
 	
+
+{% endraw %}

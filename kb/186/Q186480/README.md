@@ -6,6 +6,8 @@ permalink: /kb/186/Q186480/
 
 ## Q186480: Terminal Server Commands: MSG
 
+{% raw %}
+
 	Article: Q186480
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -124,3 +126,5 @@ permalink: /kb/186/Q186480/
 	
 	=============================================================================
 	
+
+{% endraw %}

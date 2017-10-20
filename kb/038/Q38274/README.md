@@ -6,6 +6,8 @@ permalink: /kb/038/Q38274/
 
 ## Q38274: Single Precision &quot;Overflow&quot; when Nearing Divide By Zero;10E-38
 
+{% raw %}
+
 	Article: Q38274
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -42,3 +44,5 @@ permalink: /kb/038/Q38274/
 	 x# = 1 / 10 ^ n#
 	 PRINT n#, x#
 	NEXT
+
+{% endraw %}

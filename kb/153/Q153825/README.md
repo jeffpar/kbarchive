@@ -6,6 +6,8 @@ permalink: /kb/153/Q153825/
 
 ## Q153825: List of Fixed Bugs in Systems Management Server Version 1.2
 
+{% raw %}
+
 	Article: Q153825
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -150,3 +152,5 @@ permalink: /kb/153/Q153825/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242134/
 
 ## Q242134: Err Msg: Request Is Not Accepted by the Network
 
+{% raw %}
+
 	Article: Q242134
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/242/Q242134/
 	
 	=============================================================================
 	
+
+{% endraw %}

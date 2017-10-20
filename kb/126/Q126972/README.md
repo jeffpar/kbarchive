@@ -6,6 +6,8 @@ permalink: /kb/126/Q126972/
 
 ## Q126972: Control Panel &quot;Don't Load&quot; Feature Does Not Work
 
+{% raw %}
+
 	Article: Q126972
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -115,3 +117,5 @@ permalink: /kb/126/Q126972/
 	
 	=============================================================================
 	
+
+{% endraw %}

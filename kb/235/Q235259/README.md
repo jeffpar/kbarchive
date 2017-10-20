@@ -6,6 +6,8 @@ permalink: /kb/235/Q235259/
 
 ## Q235259: HOWTO: Delete a Database in ATSWeb 2.0
 
+{% raw %}
+
 	Article: Q235259
 	Product(s): Microsoft FoxPro
 	Version(s): 2.0,6.0
@@ -73,3 +75,5 @@ permalink: /kb/235/Q235259/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176743/
 
 ## Q176743: XADM: Help Topic for LDAP Search Options is Incorrect
 
+{% raw %}
+
 	Article: Q176743
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -58,3 +60,5 @@ permalink: /kb/176/Q176743/
 	
 	=============================================================================
 	
+
+{% endraw %}

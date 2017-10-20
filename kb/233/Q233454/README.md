@@ -6,6 +6,8 @@ permalink: /kb/233/Q233454/
 
 ## Q233454: MSBP: Title Disappears When You Select Entire Text of Tip
 
+{% raw %}
+
 	Article: Q233454
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -55,3 +57,5 @@ permalink: /kb/233/Q233454/
 	
 	=============================================================================
 	
+
+{% endraw %}

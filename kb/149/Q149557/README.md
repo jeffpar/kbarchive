@@ -6,6 +6,8 @@ permalink: /kb/149/Q149557/
 
 ## Q149557: 16 Bit Windows Applications Only Scheduled Under System
 
+{% raw %}
+
 	Article: Q149557
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -51,3 +53,5 @@ permalink: /kb/149/Q149557/
 	
 	=============================================================================
 	
+
+{% endraw %}

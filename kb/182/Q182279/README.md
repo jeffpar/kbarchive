@@ -6,6 +6,8 @@ permalink: /kb/182/Q182279/
 
 ## Q182279: XFOR: Incorrect Cc: List When Resending or Forwarding From PROFS
 
+{% raw %}
+
 	Article: Q182279
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -79,3 +81,5 @@ permalink: /kb/182/Q182279/
 	
 	=============================================================================
 	
+
+{% endraw %}

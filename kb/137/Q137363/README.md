@@ -6,6 +6,8 @@ permalink: /kb/137/Q137363/
 
 ## Q137363: Problems with ATI Mach32 Video Adapter on MCA Computer
 
+{% raw %}
+
 	Article: Q137363
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/137/Q137363/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248067/
 
 ## Q248067: XWEB: Isinteg Cannot Fix Warnings if Public Folders Have No MAPI
 
+{% raw %}
+
 	Article: Q248067
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -129,3 +131,5 @@ permalink: /kb/248/Q248067/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154668/
 
 ## Q154668: Computer Hangs Sending Large Print Jobs to WFW 3.11 Server
 
+{% raw %}
+
 	Article: Q154668
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/154/Q154668/
 	
 	=============================================================================
 	
+
+{% endraw %}

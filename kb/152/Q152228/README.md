@@ -6,6 +6,8 @@ permalink: /kb/152/Q152228/
 
 ## Q152228: Office95 Toolbar Auto Hide Inoperative During SMS Remote Control
 
+{% raw %}
+
 	Article: Q152228
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -51,3 +53,5 @@ permalink: /kb/152/Q152228/
 	
 	=============================================================================
 	
+
+{% endraw %}

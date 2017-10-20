@@ -6,6 +6,8 @@ permalink: /kb/062/Q62912/
 
 ## Q62912: Bad Code Generated for Difference Between Huge Pointers
 
+{% raw %}
+
 	Article: Q62912
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -66,3 +68,5 @@ permalink: /kb/062/Q62912/
 	Microsoft has confirmed this to be a problem in C version 6.00. We are
 	researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

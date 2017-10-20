@@ -6,6 +6,8 @@ permalink: /kb/175/Q175311/
 
 ## Q175311: Bookshelf 98: Copyright Information Not Printed with Articles
 
+{% raw %}
+
 	Article: Q175311
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -78,3 +80,5 @@ permalink: /kb/175/Q175311/
 	
 	=============================================================================
 	
+
+{% endraw %}

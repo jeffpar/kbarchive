@@ -6,6 +6,8 @@ permalink: /kb/162/Q162310/
 
 ## Q162310: All Pages Printed in Grayscale to HP DeskJet 600
 
+{% raw %}
+
 	Article: Q162310
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -66,3 +68,5 @@ permalink: /kb/162/Q162310/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/101/Q101070/
 
 ## Q101070: ADK: How to Make Custom Application Name Appear in Task List
 
+{% raw %}
+
 	Article: Q101070
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:1.1
@@ -45,3 +47,5 @@ permalink: /kb/101/Q101070/
 	
 	=============================================================================
 	
+
+{% endraw %}

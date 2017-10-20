@@ -6,6 +6,8 @@ permalink: /kb/194/Q194507/
 
 ## Q194507: Windows NT 4.0 Service Pack 4 Readme.txt File (40-bit)
 
+{% raw %}
+
 	Article: Q194507
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -1533,3 +1535,5 @@ permalink: /kb/194/Q194507/
 	
 	=============================================================================
 	
+
+{% endraw %}

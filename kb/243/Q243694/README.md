@@ -6,6 +6,8 @@ permalink: /kb/243/Q243694/
 
 ## Q243694: Asheron's Call: Play Button Is Unavailable
 
+{% raw %}
+
 	Article: Q243694
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -62,3 +64,5 @@ permalink: /kb/243/Q243694/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/252/Q252624/
 
 ## Q252624: XIMS: Internet Mail w. Illegal X-Mac-Creator Attribute Archived
 
+{% raw %}
+
 	Article: Q252624
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -85,3 +87,5 @@ permalink: /kb/252/Q252624/
 	
 	=============================================================================
 	
+
+{% endraw %}

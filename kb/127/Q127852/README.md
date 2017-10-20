@@ -6,6 +6,8 @@ permalink: /kb/127/Q127852/
 
 ## Q127852: Total Free Space Reported Incorrectly on Drives Larger Than 2 GB
 
+{% raw %}
+
 	Article: Q127852
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -93,3 +95,5 @@ permalink: /kb/127/Q127852/
 	
 	=============================================================================
 	
+
+{% endraw %}

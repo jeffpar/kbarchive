@@ -6,6 +6,8 @@ permalink: /kb/122/Q122390/
 
 ## Q122390: RCONSOLE Not Listing NetWare File Servers
 
+{% raw %}
+
 	Article: Q122390
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -77,3 +79,5 @@ permalink: /kb/122/Q122390/
 	
 	=============================================================================
 	
+
+{% endraw %}

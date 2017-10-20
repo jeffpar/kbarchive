@@ -6,6 +6,8 @@ permalink: /kb/126/Q126639/
 
 ## Q126639: Terminate Viewer Option in Remote Control Agent Does Not Work
 
+{% raw %}
+
 	Article: Q126639
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -43,3 +45,5 @@ permalink: /kb/126/Q126639/
 	
 	=============================================================================
 	
+
+{% endraw %}

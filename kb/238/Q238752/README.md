@@ -6,6 +6,8 @@ permalink: /kb/238/Q238752/
 
 ## Q238752: PRB: SQLConfigDatasource Allows PageTimeout Value of 0
 
+{% raw %}
+
 	Article: Q238752
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 3.0,3.5,3.6,4.0
@@ -96,3 +98,5 @@ permalink: /kb/238/Q238752/
 	
 	=============================================================================
 	
+
+{% endraw %}

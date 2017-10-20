@@ -6,6 +6,8 @@ permalink: /kb/179/Q179722/
 
 ## Q179722: XCLN: Internet User Cannot Display Form Sent via Mail Connector
 
+{% raw %}
+
 	Article: Q179722
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -77,3 +79,5 @@ permalink: /kb/179/Q179722/
 	
 	=============================================================================
 	
+
+{% endraw %}

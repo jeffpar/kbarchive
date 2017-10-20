@@ -6,6 +6,8 @@ permalink: /kb/150/Q150032/
 
 ## Q150032: Shared Application Still Running Error After Logoff
 
+{% raw %}
+
 	Article: Q150032
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -67,3 +69,5 @@ permalink: /kb/150/Q150032/
 	
 	=============================================================================
 	
+
+{% endraw %}

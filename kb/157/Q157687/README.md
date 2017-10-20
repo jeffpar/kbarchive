@@ -6,6 +6,8 @@ permalink: /kb/157/Q157687/
 
 ## Q157687: XCLN: Switching Views on a Replicated Public Folder Fails
 
+{% raw %}
+
 	Article: Q157687
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -60,3 +62,5 @@ permalink: /kb/157/Q157687/
 	
 	=============================================================================
 	
+
+{% endraw %}

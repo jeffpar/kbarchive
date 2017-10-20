@@ -6,6 +6,8 @@ permalink: /kb/124/Q124711/
 
 ## Q124711: Explorapedia: Troubleshooting Sound Problems
 
+{% raw %}
+
 	Article: Q124711
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -89,3 +91,5 @@ permalink: /kb/124/Q124711/
 	
 	=============================================================================
 	
+
+{% endraw %}

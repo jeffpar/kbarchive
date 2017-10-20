@@ -6,6 +6,8 @@ permalink: /kb/107/Q107657/
 
 ## Q107657: Writer: &quot;All Gone&quot; Tool Leaves Only One Page of Card
 
+{% raw %}
+
 	Article: Q107657
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
@@ -48,3 +50,5 @@ permalink: /kb/107/Q107657/
 	
 	=============================================================================
 	
+
+{% endraw %}

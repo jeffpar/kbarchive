@@ -6,6 +6,8 @@ permalink: /kb/087/Q87488/
 
 ## Q87488: X400: Dist_umpdu Routing Failed Error Message
 
+{% raw %}
+
 	Article: Q87488
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -47,3 +49,5 @@ permalink: /kb/087/Q87488/
 	
 	=============================================================================
 	
+
+{% endraw %}

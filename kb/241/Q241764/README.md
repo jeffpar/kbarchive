@@ -6,6 +6,8 @@ permalink: /kb/241/Q241764/
 
 ## Q241764: No Terminal Server Uninstall Compatibility Script for Outlook 98
 
+{% raw %}
+
 	Article: Q241764
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -56,3 +58,5 @@ permalink: /kb/241/Q241764/
 	
 	=============================================================================
 	
+
+{% endraw %}

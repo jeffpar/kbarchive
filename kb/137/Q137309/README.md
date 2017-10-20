@@ -6,6 +6,8 @@ permalink: /kb/137/Q137309/
 
 ## Q137309: Stop Msg: 0x0000003F NO_MORE_SYSTEM_PTEs SNA &amp; TCP/IP Sockets
 
+{% raw %}
+
 	Article: Q137309
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11
@@ -114,3 +116,5 @@ permalink: /kb/137/Q137309/
 	
 	=============================================================================
 	
+
+{% endraw %}

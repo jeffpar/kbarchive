@@ -6,6 +6,8 @@ permalink: /kb/119/Q119360/
 
 ## Q119360: Mac Srv: Group Definition Propagated to Other Mail Servers
 
+{% raw %}
+
 	Article: Q119360
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -45,3 +47,5 @@ permalink: /kb/119/Q119360/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/094/Q94363/
 
 ## Q94363: SMC_ARC.DOS May Result in a POR Failure or Adapter Not Found
 
+{% raw %}
+
 	Article: Q94363
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/094/Q94363/
 	
 	=============================================================================
 	
+
+{% endraw %}

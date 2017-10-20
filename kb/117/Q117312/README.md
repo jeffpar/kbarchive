@@ -6,6 +6,8 @@ permalink: /kb/117/Q117312/
 
 ## Q117312: BUG: GPF When Paging Up To Top, Then Down In Maximized Window
 
+{% raw %}
+
 	Article: Q117312
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/117/Q117312/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155971/
 
 ## Q155971: 32-bit SSEXP.EXE Doesn't Work but 16-bit SSEXP.EXE Does
 
+{% raw %}
+
 	Article: Q155971
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0
@@ -119,3 +121,5 @@ permalink: /kb/155/Q155971/
 	
 	=============================================================================
 	
+
+{% endraw %}

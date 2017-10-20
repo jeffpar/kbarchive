@@ -6,6 +6,8 @@ permalink: /kb/119/Q119870/
 
 ## Q119870: Redirector Uses Core Mode on Large File Transfers
 
+{% raw %}
+
 	Article: Q119870
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -73,3 +75,5 @@ permalink: /kb/119/Q119870/
 	
 	=============================================================================
 	
+
+{% endraw %}

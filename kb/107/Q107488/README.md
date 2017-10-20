@@ -6,6 +6,8 @@ permalink: /kb/107/Q107488/
 
 ## Q107488: Encarta: Animations Fail with ATI Mach 32 and Mach 8 Cards
 
+{% raw %}
+
 	Article: Q107488
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 editions
@@ -84,3 +86,5 @@ permalink: /kb/107/Q107488/
 	
 	=============================================================================
 	
+
+{% endraw %}

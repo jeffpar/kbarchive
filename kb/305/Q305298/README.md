@@ -6,6 +6,8 @@ permalink: /kb/305/Q305298/
 
 ## Q305298: ENC: &quot;Encarta Failed to Connect&quot; Err Msg upon Clicking Link
 
+{% raw %}
+
 	Article: Q305298
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -125,3 +127,5 @@ permalink: /kb/305/Q305298/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142024/
 
 ## Q142024: How to Configure the Windows NT RPC Name Service Provider
 
+{% raw %}
+
 	Article: Q142024
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -62,3 +64,5 @@ permalink: /kb/142/Q142024/
 	
 	=============================================================================
 	
+
+{% endraw %}

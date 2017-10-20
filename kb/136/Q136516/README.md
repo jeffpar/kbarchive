@@ -6,6 +6,8 @@ permalink: /kb/136/Q136516/
 
 ## Q136516: XCLN: Improving Windows Client Startup Times
 
+{% raw %}
+
 	Article: Q136516
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -70,3 +72,5 @@ permalink: /kb/136/Q136516/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/238/Q238875/
 
 ## Q238875: PRB: C2471 or LNK1140 Error with PDB File Limits
 
+{% raw %}
+
 	Article: Q238875
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/238/Q238875/
 	
 	=============================================================================
 	
+
+{% endraw %}

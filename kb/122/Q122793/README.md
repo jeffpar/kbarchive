@@ -6,6 +6,8 @@ permalink: /kb/122/Q122793/
 
 ## Q122793: Err Msg: OS Loader V3.5 Windows NT Could Not Start...
 
+{% raw %}
+
 	Article: Q122793
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -77,3 +79,5 @@ permalink: /kb/122/Q122793/
 	
 	=============================================================================
 	
+
+{% endraw %}

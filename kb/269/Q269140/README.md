@@ -6,6 +6,8 @@ permalink: /kb/269/Q269140/
 
 ## Q269140: My Personal Tutor: How to Remove Names from the Sign-in List
 
+{% raw %}
+
 	Article: Q269140
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -87,3 +89,5 @@ permalink: /kb/269/Q269140/
 	
 	=============================================================================
 	
+
+{% endraw %}

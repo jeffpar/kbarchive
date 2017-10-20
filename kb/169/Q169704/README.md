@@ -6,6 +6,8 @@ permalink: /kb/169/Q169704/
 
 ## Q169704: XADM: Quota Ignored When Rule-Originated Message is Sent
 
+{% raw %}
+
 	Article: Q169704
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -89,3 +91,5 @@ permalink: /kb/169/Q169704/
 	
 	=============================================================================
 	
+
+{% endraw %}

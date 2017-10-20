@@ -6,6 +6,8 @@ permalink: /kb/097/Q97885/
 
 ## Q97885: DoubleSpace, Drive Letters, and Installable Devices
 
+{% raw %}
+
 	Article: Q97885
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -113,3 +115,5 @@ permalink: /kb/097/Q97885/
 	
 	=============================================================================
 	
+
+{% endraw %}

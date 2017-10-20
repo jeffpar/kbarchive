@@ -6,6 +6,8 @@ permalink: /kb/063/Q63197/
 
 ## Q63197: Using PWB with Both BASIC PDS 7.10 and C PDS 6.00
 
+{% raw %}
+
 	Article: Q63197
 	Product(s): See article
 	Version(s): 7.10   | 7.10
@@ -29,3 +31,5 @@ permalink: /kb/063/Q63197/
 	This information applies to Microsoft BASIC Professional Development
 	System (PDS) version 7.10 and to Microsoft C PDS version 6.00 for
 	MS-DOS and MS OS/2.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137972/
 
 ## Q137972: How to Find Which Files Are Referenced as Visual FoxPro Starts
 
+{% raw %}
+
 	Article: Q137972
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/137/Q137972/
 	
 	=============================================================================
 	
+
+{% endraw %}

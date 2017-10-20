@@ -6,6 +6,8 @@ permalink: /kb/240/Q240231/
 
 ## Q240231: Common Dialog Box Does Not Populate Drive Selection Box
 
+{% raw %}
+
 	Article: Q240231
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5
@@ -83,3 +85,5 @@ permalink: /kb/240/Q240231/
 	
 	=============================================================================
 	
+
+{% endraw %}

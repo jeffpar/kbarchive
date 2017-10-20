@@ -6,6 +6,8 @@ permalink: /kb/121/Q121336/
 
 ## Q121336: Mozart Does Not Start, and Returns to Program Manager
 
+{% raw %}
+
 	Article: Q121336
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -118,3 +120,5 @@ permalink: /kb/121/Q121336/
 	
 	=============================================================================
 	
+
+{% endraw %}

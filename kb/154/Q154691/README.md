@@ -6,6 +6,8 @@ permalink: /kb/154/Q154691/
 
 ## Q154691: XCLN: How to Print the Schedule+ Contact List in Two Columns
 
+{% raw %}
+
 	Article: Q154691
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -187,3 +189,5 @@ permalink: /kb/154/Q154691/
 	
 	=============================================================================
 	
+
+{% endraw %}

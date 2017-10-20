@@ -6,6 +6,8 @@ permalink: /kb/178/Q178719/
 
 ## Q178719: HOWTO: Plot X/Y Coordinate Values on a Scatter Chart
 
+{% raw %}
+
 	Article: Q178719
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -115,3 +117,5 @@ permalink: /kb/178/Q178719/
 	
 	=============================================================================
 	
+
+{% endraw %}

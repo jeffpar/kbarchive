@@ -6,6 +6,8 @@ permalink: /kb/184/Q184773/
 
 ## Q184773: XADM: Public Folder Doesn't Follow Replication Schedule
 
+{% raw %}
+
 	Article: Q184773
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -54,3 +56,5 @@ permalink: /kb/184/Q184773/
 	
 	=============================================================================
 	
+
+{% endraw %}

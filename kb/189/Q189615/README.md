@@ -6,6 +6,8 @@ permalink: /kb/189/Q189615/
 
 ## Q189615: Incorrect Server License Setup During Reinstall
 
+{% raw %}
+
 	Article: Q189615
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -66,3 +68,5 @@ permalink: /kb/189/Q189615/
 	
 	=============================================================================
 	
+
+{% endraw %}

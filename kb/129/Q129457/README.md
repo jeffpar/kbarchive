@@ -6,6 +6,8 @@ permalink: /kb/129/Q129457/
 
 ## Q129457: Anonymous Connections May Be Able to Obtain the Password Policy
 
+{% raw %}
+
 	Article: Q129457
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP3
@@ -104,3 +106,5 @@ permalink: /kb/129/Q129457/
 	
 	=============================================================================
 	
+
+{% endraw %}

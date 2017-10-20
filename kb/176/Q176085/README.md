@@ -6,6 +6,8 @@ permalink: /kb/176/Q176085/
 
 ## Q176085: HOWTO: Use the System Tray Directly from Visual Basic
 
+{% raw %}
+
 	Article: Q176085
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -221,3 +223,5 @@ permalink: /kb/176/Q176085/
 	
 	=============================================================================
 	
+
+{% endraw %}

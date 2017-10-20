@@ -6,6 +6,8 @@ permalink: /kb/138/Q138980/
 
 ## Q138980: How to Update Datetime Field from Date &amp; Time Grid Cell Values
 
+{% raw %}
+
 	Article: Q138980
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -170,3 +172,5 @@ permalink: /kb/138/Q138980/
 	
 	=============================================================================
 	
+
+{% endraw %}

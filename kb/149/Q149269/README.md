@@ -6,6 +6,8 @@ permalink: /kb/149/Q149269/
 
 ## Q149269: Printing Using LPR to QMS Printer with a CrownNet Network Card
 
+{% raw %}
+
 	Article: Q149269
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -65,3 +67,5 @@ permalink: /kb/149/Q149269/
 	
 	=============================================================================
 	
+
+{% endraw %}

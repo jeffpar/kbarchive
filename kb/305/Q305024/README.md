@@ -6,6 +6,8 @@ permalink: /kb/305/Q305024/
 
 ## Q305024: PRB: Source Code Control Not Available as Visual Basic Add-In
 
+{% raw %}
+
 	Article: Q305024
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/305/Q305024/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158050/
 
 ## Q158050: Windows NT Does Not Load AHA-3940W SCSI Driver
 
+{% raw %}
+
 	Article: Q158050
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/158/Q158050/
 	
 	=============================================================================
 	
+
+{% endraw %}

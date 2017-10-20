@@ -6,6 +6,8 @@ permalink: /kb/038/Q38032/
 
 ## Q38032: Differences among QuickC Versions 2.00, 1.00, and 1.01
 
+{% raw %}
+
 	Article: Q38032
 	Product(s): See article
 	Version(s): 1.00 1.01 2.00
@@ -104,3 +106,5 @@ permalink: /kb/038/Q38032/
 	    c. In a networking environment, to update the local copy of a
 	       file that is stored on the network whenever the master copy
 	       has changed
+
+{% endraw %}

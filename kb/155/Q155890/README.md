@@ -6,6 +6,8 @@ permalink: /kb/155/Q155890/
 
 ## Q155890: PRB: FoxPro for Mac's Setup Wizard Can't Copy Source Files
 
+{% raw %}
+
 	Article: Q155890
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -90,3 +92,5 @@ permalink: /kb/155/Q155890/
 	
 	=============================================================================
 	
+
+{% endraw %}

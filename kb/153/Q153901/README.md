@@ -6,6 +6,8 @@ permalink: /kb/153/Q153901/
 
 ## Q153901: PRB: #pragma comment(lib...) Can Specify Only Libraries
 
+{% raw %}
+
 	Article: Q153901
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/153/Q153901/
 	
 	=============================================================================
 	
+
+{% endraw %}

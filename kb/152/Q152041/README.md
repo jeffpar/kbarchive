@@ -6,6 +6,8 @@ permalink: /kb/152/Q152041/
 
 ## Q152041: FIX: C1001 Error in 'msc1.cpp' on Template Function Parameter
 
+{% raw %}
+
 	Article: Q152041
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2
@@ -76,3 +78,5 @@ permalink: /kb/152/Q152041/
 	
 	=============================================================================
 	
+
+{% endraw %}

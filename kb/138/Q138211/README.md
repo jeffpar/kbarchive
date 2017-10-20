@@ -6,6 +6,8 @@ permalink: /kb/138/Q138211/
 
 ## Q138211: Bookshelf 1995: Pictures Display an Inverse Image
 
+{% raw %}
+
 	Article: Q138211
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition; WINDOWS:
@@ -51,3 +53,5 @@ permalink: /kb/138/Q138211/
 	
 	=============================================================================
 	
+
+{% endraw %}

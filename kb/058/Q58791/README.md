@@ -6,6 +6,8 @@ permalink: /kb/058/Q58791/
 
 ## Q58791: DATEVALUE# Function in BASIC 7.00 Uses MM-DD-YY, Not DD-MM-YY
 
+{% raw %}
+
 	Article: Q58791
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -75,3 +77,5 @@ permalink: /kb/058/Q58791/
 	   PRINT DateValue#(d$)   ' Prints 32507
 	   d$ = "12/30/88"
 	   PRINT DateValue#(d$)   ' Prints 32507
+
+{% endraw %}

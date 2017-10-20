@@ -6,6 +6,8 @@ permalink: /kb/239/Q239070/
 
 ## Q239070: Print Output Takes More Space After Installing Windows NT SP4
 
+{% raw %}
+
 	Article: Q239070
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -124,3 +126,5 @@ permalink: /kb/239/Q239070/
 	
 	=============================================================================
 	
+
+{% endraw %}

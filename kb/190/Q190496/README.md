@@ -6,6 +6,8 @@ permalink: /kb/190/Q190496/
 
 ## Q190496: PRB: SEEK Finds Old and New Data With Optimistic Buffering
 
+{% raw %}
+
 	Article: Q190496
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -78,3 +80,5 @@ permalink: /kb/190/Q190496/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/295/Q295811/
 
 ## Q295811: XADM: Event 202 Appears on Computer Running Exchange Server 5.5
 
+{% raw %}
+
 	Article: Q295811
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -60,3 +62,5 @@ permalink: /kb/295/Q295811/
 	
 	=============================================================================
 	
+
+{% endraw %}

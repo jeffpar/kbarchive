@@ -6,6 +6,8 @@ permalink: /kb/238/Q238043/
 
 ## Q238043: Encarta 2000: Setup Unexpectedly Removes Virtual Globe 99
 
+{% raw %}
+
 	Article: Q238043
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -55,3 +57,5 @@ permalink: /kb/238/Q238043/
 	
 	=============================================================================
 	
+
+{% endraw %}

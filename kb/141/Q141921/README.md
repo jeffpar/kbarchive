@@ -6,6 +6,8 @@ permalink: /kb/141/Q141921/
 
 ## Q141921: HOWTO: How to Support Two File Extensions per MFC Document Type
 
+{% raw %}
+
 	Article: Q141921
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0
@@ -220,3 +222,5 @@ permalink: /kb/141/Q141921/
 	
 	=============================================================================
 	
+
+{% endraw %}

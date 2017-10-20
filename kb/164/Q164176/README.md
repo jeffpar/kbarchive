@@ -6,6 +6,8 @@ permalink: /kb/164/Q164176/
 
 ## Q164176: Interoperability of WINS and Microsoft DNS
 
+{% raw %}
+
 	Article: Q164176
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/164/Q164176/
 	
 	=============================================================================
 	
+
+{% endraw %}

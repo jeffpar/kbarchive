@@ -6,6 +6,8 @@ permalink: /kb/149/Q149984/
 
 ## Q149984: Accessing Network Drives Created in Services Under Windows NT
 
+{% raw %}
+
 	Article: Q149984
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -108,3 +110,5 @@ permalink: /kb/149/Q149984/
 	
 	=============================================================================
 	
+
+{% endraw %}

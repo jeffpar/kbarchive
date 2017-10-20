@@ -6,6 +6,8 @@ permalink: /kb/136/Q136130/
 
 ## Q136130: ADT: Overview of MS Access Developer's Toolkit (ADT)
 
+{% raw %}
+
 	Article: Q136130
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0
@@ -95,3 +97,5 @@ permalink: /kb/136/Q136130/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140721/
 
 ## Q140721: Error Message: An Exception 00 Has Occurred...
 
+{% raw %}
+
 	Article: Q140721
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -74,3 +76,5 @@ permalink: /kb/140/Q140721/
 	
 	=============================================================================
 	
+
+{% endraw %}

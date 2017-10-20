@@ -6,6 +6,8 @@ permalink: /kb/062/Q62525/
 
 ## Q62525: Mac Wkst: Can't Check Spelling of Mail Messages
 
+{% raw %}
+
 	Article: Q62525
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -58,3 +60,5 @@ permalink: /kb/062/Q62525/
 	
 	=============================================================================
 	
+
+{% endraw %}

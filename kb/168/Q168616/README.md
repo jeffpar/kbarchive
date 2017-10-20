@@ -6,6 +6,8 @@ permalink: /kb/168/Q168616/
 
 ## Q168616: XFOR: Messages in the IMC Outbound Queue Waiting Delivery
 
+{% raw %}
+
 	Article: Q168616
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -79,3 +81,5 @@ permalink: /kb/168/Q168616/
 	
 	=============================================================================
 	
+
+{% endraw %}

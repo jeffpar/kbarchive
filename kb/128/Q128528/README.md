@@ -6,6 +6,8 @@ permalink: /kb/128/Q128528/
 
 ## Q128528: How to Create a Resizeable Grid
 
+{% raw %}
+
 	Article: Q128528
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/128/Q128528/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/323/Q323936/
 
 ## Q323936: Train Simulator: Error Msg: Error Reading Train Database File
 
+{% raw %}
+
 	Article: Q323936
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -105,3 +107,5 @@ permalink: /kb/323/Q323936/
 	
 	=============================================================================
 	
+
+{% endraw %}

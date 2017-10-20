@@ -6,6 +6,8 @@ permalink: /kb/061/Q61203/
 
 ## Q61203: C 6.00 README: fstat() Return Value Improved Under HPFS
 
+{% raw %}
+
 	Article: Q61203
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -29,3 +31,5 @@ permalink: /kb/061/Q61203/
 	the expected values in st_mtime (time the file was last written),
 	st_atime (time the file was last accessed for reading or writing), and
 	st_ctime (time the file was created).
+
+{% endraw %}

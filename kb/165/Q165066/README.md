@@ -6,6 +6,8 @@ permalink: /kb/165/Q165066/
 
 ## Q165066: FIX: Subquery Causes SUM to Return Incorrect Results
 
+{% raw %}
+
 	Article: Q165066
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -119,3 +121,5 @@ permalink: /kb/165/Q165066/
 	
 	=============================================================================
 	
+
+{% endraw %}

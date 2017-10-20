@@ -6,6 +6,8 @@ permalink: /kb/095/Q95553/
 
 ## Q95553: Applications That Require SETVER.EXE to Run with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q95553
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -192,3 +194,5 @@ permalink: /kb/095/Q95553/
 	
 	=============================================================================
 	
+
+{% endraw %}

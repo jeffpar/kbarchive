@@ -6,6 +6,8 @@ permalink: /kb/266/Q266729/
 
 ## Q266729: Netlogon Behavior in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q266729
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -405,3 +407,5 @@ permalink: /kb/266/Q266729/
 	
 	=============================================================================
 	
+
+{% endraw %}

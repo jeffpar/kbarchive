@@ -6,6 +6,8 @@ permalink: /kb/135/Q135077/
 
 ## Q135077: WD97: How to Create a Document Shortcut on Desktop
 
+{% raw %}
+
 	Article: Q135077
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -57,3 +59,5 @@ permalink: /kb/135/Q135077/
 	
 	=============================================================================
 	
+
+{% endraw %}

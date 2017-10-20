@@ -6,6 +6,8 @@ permalink: /kb/119/Q119578/
 
 ## Q119578: PPT: Error 340 Printing CorelDRAW! 4.0 Objects to Genigraphics
 
+{% raw %}
+
 	Article: Q119578
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -78,3 +80,5 @@ permalink: /kb/119/Q119578/
 	
 	=============================================================================
 	
+
+{% endraw %}

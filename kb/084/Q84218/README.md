@@ -6,6 +6,8 @@ permalink: /kb/084/Q84218/
 
 ## Q84218: File Manager Brings over Wrong Hidden Files
 
+{% raw %}
+
 	Article: Q84218
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11,5.0,6.0
@@ -57,3 +59,5 @@ permalink: /kb/084/Q84218/
 	
 	=============================================================================
 	
+
+{% endraw %}

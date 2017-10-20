@@ -6,6 +6,8 @@ permalink: /kb/142/Q142083/
 
 ## Q142083: PRB: Mastering Visual FoxPro: Full-Text Search Internal Error
 
+{% raw %}
+
 	Article: Q142083
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -57,3 +59,5 @@ permalink: /kb/142/Q142083/
 	
 	=============================================================================
 	
+
+{% endraw %}

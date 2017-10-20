@@ -6,6 +6,8 @@ permalink: /kb/201/Q201365/
 
 ## Q201365: WD97: How to Turn Off the Menu Bar Close Window Button
 
+{% raw %}
+
 	Article: Q201365
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/201/Q201365/
 	
 	=============================================================================
 	
+
+{% endraw %}

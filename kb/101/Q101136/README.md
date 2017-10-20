@@ -6,6 +6,8 @@ permalink: /kb/101/Q101136/
 
 ## Q101136: PC Win: Err Msg: The Old Message File Could Not Be Deleted
 
+{% raw %}
+
 	Article: Q101136
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -47,3 +49,5 @@ permalink: /kb/101/Q101136/
 	
 	=============================================================================
 	
+
+{% endraw %}

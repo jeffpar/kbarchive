@@ -6,6 +6,8 @@ permalink: /kb/085/Q85681/
 
 ## Q85681: Future Domain SCSI Host Adapters Do Not Require Double Buffer
 
+{% raw %}
+
 	Article: Q85681
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -65,3 +67,5 @@ permalink: /kb/085/Q85681/
 	
 	=============================================================================
 	
+
+{% endraw %}

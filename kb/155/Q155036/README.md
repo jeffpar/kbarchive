@@ -6,6 +6,8 @@ permalink: /kb/155/Q155036/
 
 ## Q155036: XFOR: IMC: Inbound Messages Queued but Not Processed
 
+{% raw %}
+
 	Article: Q155036
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/155/Q155036/
 	
 	=============================================================================
 	
+
+{% endraw %}

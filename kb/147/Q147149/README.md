@@ -6,6 +6,8 @@ permalink: /kb/147/Q147149/
 
 ## Q147149: HOWTO: Localize Application Resources with Foundation Classes
 
+{% raw %}
+
 	Article: Q147149
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,2.2
@@ -181,3 +183,5 @@ permalink: /kb/147/Q147149/
 	
 	=============================================================================
 	
+
+{% endraw %}

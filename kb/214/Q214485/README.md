@@ -6,6 +6,8 @@ permalink: /kb/214/Q214485/
 
 ## Q214485: SMS: How Senders Interact w/ Inactive or Congested Sites
 
+{% raw %}
+
 	Article: Q214485
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -85,3 +87,5 @@ permalink: /kb/214/Q214485/
 	
 	=============================================================================
 	
+
+{% endraw %}

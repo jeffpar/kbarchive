@@ -6,6 +6,8 @@ permalink: /kb/193/Q193405/
 
 ## Q193405: Err Msg: Event ID 7024: The Task Scheduler Service Terminated...
 
+{% raw %}
+
 	Article: Q193405
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:4.01; WINNT:4.0
@@ -98,3 +100,5 @@ permalink: /kb/193/Q193405/
 	
 	=============================================================================
 	
+
+{% endraw %}

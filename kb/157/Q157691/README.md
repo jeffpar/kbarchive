@@ -6,6 +6,8 @@ permalink: /kb/157/Q157691/
 
 ## Q157691: XADM: TNS Resolution Causes Buffer Overflow
 
+{% raw %}
+
 	Article: Q157691
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/157/Q157691/
 	
 	=============================================================================
 	
+
+{% endraw %}

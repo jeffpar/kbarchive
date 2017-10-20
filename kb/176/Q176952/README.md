@@ -6,6 +6,8 @@ permalink: /kb/176/Q176952/
 
 ## Q176952: XFOR: Store Fails to Deliver Auto-Generated Messages
 
+{% raw %}
+
 	Article: Q176952
 	Product(s): Microsoft Exchange
 	Version(s): 5.0 5.5
@@ -117,3 +119,5 @@ permalink: /kb/176/Q176952/
 	
 	=============================================================================
 	
+
+{% endraw %}

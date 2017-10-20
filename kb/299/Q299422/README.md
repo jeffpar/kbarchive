@@ -6,6 +6,8 @@ permalink: /kb/299/Q299422/
 
 ## Q299422: No Check Mark Next to Site Name When User Signs Out
 
+{% raw %}
+
 	Article: Q299422
 	Product(s): Microsoft Developer Network
 	Version(s): 1.4
@@ -76,3 +78,5 @@ permalink: /kb/299/Q299422/
 	
 	=============================================================================
 	
+
+{% endraw %}

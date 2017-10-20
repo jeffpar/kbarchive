@@ -6,6 +6,8 @@ permalink: /kb/107/Q107187/
 
 ## Q107187: Data Download from CompuServe Stops with OzCIS
 
+{% raw %}
+
 	Article: Q107187
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -53,3 +55,5 @@ permalink: /kb/107/Q107187/
 	
 	=============================================================================
 	
+
+{% endraw %}

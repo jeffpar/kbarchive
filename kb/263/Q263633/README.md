@@ -6,6 +6,8 @@ permalink: /kb/263/Q263633/
 
 ## Q263633: BUG: Error C2946 on Explicit Instantiation of Imported Templates
 
+{% raw %}
+
 	Article: Q263633
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -78,3 +80,5 @@ permalink: /kb/263/Q263633/
 	
 	=============================================================================
 	
+
+{% endraw %}

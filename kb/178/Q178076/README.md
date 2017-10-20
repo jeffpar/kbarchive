@@ -6,6 +6,8 @@ permalink: /kb/178/Q178076/
 
 ## Q178076: HOWTO: Use a PictureBox to Control Orientation Printing a Form
 
+{% raw %}
+
 	Article: Q178076
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -138,3 +140,5 @@ permalink: /kb/178/Q178076/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/094/Q94307/
 
 ## Q94307: FastBack Plus Windows Changes VDMAD.386 to &#42;VDMAD with WFWG
 
+{% raw %}
+
 	Article: Q94307
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -83,3 +85,5 @@ permalink: /kb/094/Q94307/
 	
 	=============================================================================
 	
+
+{% endraw %}

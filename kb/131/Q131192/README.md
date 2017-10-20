@@ -6,6 +6,8 @@ permalink: /kb/131/Q131192/
 
 ## Q131192: Frequently Asked Questions About Bulletin Boards
 
+{% raw %}
+
 	Article: Q131192
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -101,3 +103,5 @@ permalink: /kb/131/Q131192/
 	
 	=============================================================================
 	
+
+{% endraw %}

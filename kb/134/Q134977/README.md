@@ -6,6 +6,8 @@ permalink: /kb/134/Q134977/
 
 ## Q134977: FIX: Error Occurs When Remove Object That Has Pending Code
 
+{% raw %}
+
 	Article: Q134977
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -101,3 +103,5 @@ permalink: /kb/134/Q134977/
 	
 	=============================================================================
 	
+
+{% endraw %}

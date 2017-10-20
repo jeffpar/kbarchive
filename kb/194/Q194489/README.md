@@ -6,6 +6,8 @@ permalink: /kb/194/Q194489/
 
 ## Q194489: WD97: Cannot Create Custom Text Border
 
+{% raw %}
+
 	Article: Q194489
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -118,3 +120,5 @@ permalink: /kb/194/Q194489/
 	
 	=============================================================================
 	
+
+{% endraw %}

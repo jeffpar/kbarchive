@@ -6,6 +6,8 @@ permalink: /kb/156/Q156137/
 
 ## Q156137: FIX: Cannot Set Breakpoint at EXECUTE Statement
 
+{% raw %}
+
 	Article: Q156137
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.2
@@ -57,3 +59,5 @@ permalink: /kb/156/Q156137/
 	
 	=============================================================================
 	
+
+{% endraw %}

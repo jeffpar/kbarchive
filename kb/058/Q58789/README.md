@@ -6,6 +6,8 @@ permalink: /kb/058/Q58789/
 
 ## Q58789: &quot;Input Run-Time Module Path:&quot; Never Found If BRUN45.EXE Typed
 
+{% raw %}
+
 	Article: Q58789
 	Product(s): See article
 	Version(s): 4.50
@@ -43,3 +45,5 @@ permalink: /kb/058/Q58789/
 	the extension .EXE at the end, the prompt is never satisfied (even if
 	you next give the correct path WITHOUT the filename BRUN45.EXE or
 	BRUN45 appended).
+
+{% endraw %}

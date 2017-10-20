@@ -6,6 +6,8 @@ permalink: /kb/252/Q252830/
 
 ## Q252830: XFOR: Exchange Server Connectivity Controller Cannot Be Started
 
+{% raw %}
+
 	Article: Q252830
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -99,3 +101,5 @@ permalink: /kb/252/Q252830/
 	
 	=============================================================================
 	
+
+{% endraw %}

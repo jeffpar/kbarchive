@@ -6,6 +6,8 @@ permalink: /kb/184/Q184056/
 
 ## Q184056: Font Substitution List Is Not Loaded from Vendor PPD File
 
+{% raw %}
+
 	Article: Q184056
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -53,3 +55,5 @@ permalink: /kb/184/Q184056/
 	
 	=============================================================================
 	
+
+{% endraw %}

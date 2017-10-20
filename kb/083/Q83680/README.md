@@ -6,6 +6,8 @@ permalink: /kb/083/Q83680/
 
 ## Q83680: Assigning a Shortcut Key to Program Manager
 
+{% raw %}
+
 	Article: Q83680
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -70,3 +72,5 @@ permalink: /kb/083/Q83680/
 	
 	=============================================================================
 	
+
+{% endraw %}

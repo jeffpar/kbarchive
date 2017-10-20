@@ -6,6 +6,8 @@ permalink: /kb/259/Q259891/
 
 ## Q259891: VFP 6.0 Sample: Using the DateTimePicker's CallBack Field
 
+{% raw %}
+
 	Article: Q259891
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -150,3 +152,5 @@ permalink: /kb/259/Q259891/
 	
 	=============================================================================
 	
+
+{% endraw %}

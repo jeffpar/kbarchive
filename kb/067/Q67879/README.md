@@ -6,6 +6,8 @@ permalink: /kb/067/Q67879/
 
 ## Q67879: INFO: scanf() Format Specifications and Syntax
 
+{% raw %}
+
 	Article: Q67879
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:6.0,6.00a,6.00ax,7.0; OS/2:6.00a,6.0; WINDOWS:1.0,1.5; WINDOWS NT:1.0,2.0,4.0,5.
@@ -96,3 +98,5 @@ permalink: /kb/067/Q67879/
 	
 	=============================================================================
 	
+
+{% endraw %}

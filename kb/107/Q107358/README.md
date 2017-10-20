@@ -6,6 +6,8 @@ permalink: /kb/107/Q107358/
 
 ## Q107358: ICL ErgoPRO DXG/66 &quot;Non-Accessible Boot Device&quot;
 
+{% raw %}
+
 	Article: Q107358
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -65,3 +67,5 @@ permalink: /kb/107/Q107358/
 	
 	=============================================================================
 	
+
+{% endraw %}

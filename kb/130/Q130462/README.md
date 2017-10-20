@@ -6,6 +6,8 @@ permalink: /kb/130/Q130462/
 
 ## Q130462: INFO: Difference Between REQUERY and REFRESH in Visual FoxPro
 
+{% raw %}
+
 	Article: Q130462
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/130/Q130462/
 	
 	=============================================================================
 	
+
+{% endraw %}

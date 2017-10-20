@@ -6,6 +6,8 @@ permalink: /kb/169/Q169497/
 
 ## Q169497: PRB: &quot;Another Application is Currently Using JET File...&quot;
 
+{% raw %}
+
 	Article: Q169497
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2 5.0 6.0
@@ -83,3 +85,5 @@ permalink: /kb/169/Q169497/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141588/
 
 ## Q141588: Services Not Closed Properly During Forced Shutdown
 
+{% raw %}
+
 	Article: Q141588
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -48,3 +50,5 @@ permalink: /kb/141/Q141588/
 	
 	=============================================================================
 	
+
+{% endraw %}

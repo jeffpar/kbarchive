@@ -6,6 +6,8 @@ permalink: /kb/172/Q172980/
 
 ## Q172980: FIX: Compiler Incorrectly Causes Default Constructor Reference
 
+{% raw %}
+
 	Article: Q172980
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0
@@ -87,3 +89,5 @@ permalink: /kb/172/Q172980/
 	
 	=============================================================================
 	
+
+{% endraw %}

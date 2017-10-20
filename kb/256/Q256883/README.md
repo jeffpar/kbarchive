@@ -6,6 +6,8 @@ permalink: /kb/256/Q256883/
 
 ## Q256883: MCSE Training Kit, Upgrading to Microsoftr Windowsr 2000 Comment
 
+{% raw %}
+
 	Article: Q256883
 	Product(s): Microsoft Press
 	Version(s): 
@@ -115,3 +117,5 @@ permalink: /kb/256/Q256883/
 	
 	=============================================================================
 	
+
+{% endraw %}

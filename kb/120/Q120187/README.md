@@ -6,6 +6,8 @@ permalink: /kb/120/Q120187/
 
 ## Q120187: PRB: Query to a Report Causes an Inaccurate Sum or Count
 
+{% raw %}
+
 	Article: Q120187
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6; MS-DOS:2.0,2.5x,2.6,2.6a; UNIX:2.6; WINDOWS:2.5x,2.6,2.6a,3.0
@@ -111,3 +113,5 @@ permalink: /kb/120/Q120187/
 	
 	=============================================================================
 	
+
+{% endraw %}

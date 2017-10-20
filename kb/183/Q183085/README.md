@@ -6,6 +6,8 @@ permalink: /kb/183/Q183085/
 
 ## Q183085: PRB: Parameterized RDO Query Results in Error 40002
 
+{% raw %}
+
 	Article: Q183085
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -115,3 +117,5 @@ permalink: /kb/183/Q183085/
 	
 	=============================================================================
 	
+
+{% endraw %}

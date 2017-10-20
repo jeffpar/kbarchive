@@ -6,6 +6,8 @@ permalink: /kb/158/Q158433/
 
 ## Q158433: Re-creating Admin Shares Causes Exception Error
 
+{% raw %}
+
 	Article: Q158433
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/158/Q158433/
 	
 	=============================================================================
 	
+
+{% endraw %}

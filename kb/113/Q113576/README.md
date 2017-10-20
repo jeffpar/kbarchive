@@ -6,6 +6,8 @@ permalink: /kb/113/Q113576/
 
 ## Q113576: Winsock App's Reject Connection Requests with Reset Frames
 
+{% raw %}
+
 	Article: Q113576
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -94,3 +96,5 @@ permalink: /kb/113/Q113576/
 	
 	=============================================================================
 	
+
+{% endraw %}

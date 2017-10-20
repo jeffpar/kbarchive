@@ -6,6 +6,8 @@ permalink: /kb/194/Q194323/
 
 ## Q194323: PRB: Setting Printer.Font.Size with StdFont Gives Wrong Values
 
+{% raw %}
+
 	Article: Q194323
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -131,3 +133,5 @@ permalink: /kb/194/Q194323/
 	
 	=============================================================================
 	
+
+{% endraw %}

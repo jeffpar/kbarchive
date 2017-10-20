@@ -6,6 +6,8 @@ permalink: /kb/040/Q40590/
 
 ## Q40590: Operator sizeof Returns Type size_t Defined as Unsigned int
 
+{% raw %}
+
 	Article: Q40590
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -25,3 +27,5 @@ permalink: /kb/040/Q40590/
 	
 	The index entry for "size_t type" incorrectly lists Pages 38 and 97;
 	it should say 38 and 98.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161597/
 
 ## Q161597: PPT: Sample Code to Print All Open Presentations
 
+{% raw %}
+
 	Article: Q161597
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -108,3 +110,5 @@ permalink: /kb/161/Q161597/
 	
 	=============================================================================
 	
+
+{% endraw %}

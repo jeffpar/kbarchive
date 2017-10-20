@@ -6,6 +6,8 @@ permalink: /kb/134/Q134632/
 
 ## Q134632: Microsoft Exchange in Windows 95 Questions and Answers
 
+{% raw %}
+
 	Article: Q134632
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -137,3 +139,5 @@ permalink: /kb/134/Q134632/
 	
 	=============================================================================
 	
+
+{% endraw %}

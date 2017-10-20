@@ -6,6 +6,8 @@ permalink: /kb/126/Q126889/
 
 ## Q126889: PC Win SNADS: 10 Character SNADS Gateway-Template Info Only
 
+{% raw %}
+
 	Article: Q126889
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0,3.0b,3.2
@@ -77,3 +79,5 @@ permalink: /kb/126/Q126889/
 	
 	=============================================================================
 	
+
+{% endraw %}

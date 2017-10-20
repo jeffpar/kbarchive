@@ -6,6 +6,8 @@ permalink: /kb/099/Q99396/
 
 ## Q99396: Troubleshooting Tips Updating LM 2.2 for MS-DOS 6.0
 
+{% raw %}
+
 	Article: Q99396
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/099/Q99396/
 	
 	=============================================================================
 	
+
+{% endraw %}

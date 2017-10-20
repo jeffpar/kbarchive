@@ -6,6 +6,8 @@ permalink: /kb/181/Q181964/
 
 ## Q181964: XCLN: Unable to Forward Meeting Requests in MS Mail 3.x
 
+{% raw %}
+
 	Article: Q181964
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03; WINDOWS:1.0,3.2,3.2a,3.5,7.0,7.5; winnt:4.0,5.0,5.5
@@ -85,3 +87,5 @@ permalink: /kb/181/Q181964/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142535/
 
 ## Q142535: MSN Icon Missing from Desktop
 
+{% raw %}
+
 	Article: Q142535
 	Product(s): The Microsoft Network
 	Version(s): 2.5,2.6,5.0,5.1,5.2
@@ -75,3 +77,5 @@ permalink: /kb/142/Q142535/
 	
 	=============================================================================
 	
+
+{% endraw %}

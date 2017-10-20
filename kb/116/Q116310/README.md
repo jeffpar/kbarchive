@@ -6,6 +6,8 @@ permalink: /kb/116/Q116310/
 
 ## Q116310: FIX: Open Listing File in IDE Is Not Reloaded After Compile
 
+{% raw %}
+
 	Article: Q116310
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0
@@ -75,3 +77,5 @@ permalink: /kb/116/Q116310/
 	
 	=============================================================================
 	
+
+{% endraw %}

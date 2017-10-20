@@ -6,6 +6,8 @@ permalink: /kb/074/Q74387/
 
 ## Q74387: Connecting a Tablet to COM2
 
+{% raw %}
+
 	Article: Q74387
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -43,3 +45,5 @@ permalink: /kb/074/Q74387/
 	
 	=============================================================================
 	
+
+{% endraw %}

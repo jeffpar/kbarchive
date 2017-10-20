@@ -6,6 +6,8 @@ permalink: /kb/196/Q196362/
 
 ## Q196362: XFOR: AV in ExchINS with Very Long MessageID
 
+{% raw %}
+
 	Article: Q196362
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -103,3 +105,5 @@ permalink: /kb/196/Q196362/
 	
 	=============================================================================
 	
+
+{% endraw %}

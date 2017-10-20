@@ -6,6 +6,8 @@ permalink: /kb/174/Q174644/
 
 ## Q174644: Perfmon Degrades SNA Server When Many 3270 LUs in Use
 
+{% raw %}
+
 	Article: Q174644
 	Product(s): Microsoft SNA Server
 	Version(s): winnt:2.11 (all SP),3.0 (all SP),4.0
@@ -87,3 +89,5 @@ permalink: /kb/174/Q174644/
 	
 	=============================================================================
 	
+
+{% endraw %}

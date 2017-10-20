@@ -6,6 +6,8 @@ permalink: /kb/138/Q138327/
 
 ## Q138327: WD97: Properties Contents Tab Is Blank
 
+{% raw %}
+
 	Article: Q138327
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -130,3 +132,5 @@ permalink: /kb/138/Q138327/
 	
 	=============================================================================
 	
+
+{% endraw %}

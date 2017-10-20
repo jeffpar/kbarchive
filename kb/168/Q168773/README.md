@@ -6,6 +6,8 @@ permalink: /kb/168/Q168773/
 
 ## Q168773: SMSINST: Changes to Wizard Dialogs Do Not Appear Immediately
 
+{% raw %}
+
 	Article: Q168773
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0; winnt:1.2
@@ -44,3 +46,5 @@ permalink: /kb/168/Q168773/
 	
 	=============================================================================
 	
+
+{% endraw %}

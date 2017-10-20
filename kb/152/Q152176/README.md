@@ -6,6 +6,8 @@ permalink: /kb/152/Q152176/
 
 ## Q152176: Explorapedia: Audio Codecs Used to Play Compressed Audio
 
+{% raw %}
+
 	Article: Q152176
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -80,3 +82,5 @@ permalink: /kb/152/Q152176/
 	
 	=============================================================================
 	
+
+{% endraw %}

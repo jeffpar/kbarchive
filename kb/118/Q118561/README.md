@@ -6,6 +6,8 @@ permalink: /kb/118/Q118561/
 
 ## Q118561: GTWY: EXTERNAL.EXE Doesn't Pick Up Mail from Outgoing Gateway
 
+{% raw %}
+
 	Article: Q118561
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.0b,3.2
@@ -65,3 +67,5 @@ permalink: /kb/118/Q118561/
 	
 	=============================================================================
 	
+
+{% endraw %}

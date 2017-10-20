@@ -6,6 +6,8 @@ permalink: /kb/149/Q149279/
 
 ## Q149279: FIX: Garbage in Input Buffer When InBufferSize &gt; 2048
 
+{% raw %}
+
 	Article: Q149279
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -74,3 +76,5 @@ permalink: /kb/149/Q149279/
 	
 	=============================================================================
 	
+
+{% endraw %}

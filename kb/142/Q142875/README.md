@@ -6,6 +6,8 @@ permalink: /kb/142/Q142875/
 
 ## Q142875: Access Denied After Changing FPNW Accounts From WFW
 
+{% raw %}
+
 	Article: Q142875
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -75,3 +77,5 @@ permalink: /kb/142/Q142875/
 	
 	=============================================================================
 	
+
+{% endraw %}

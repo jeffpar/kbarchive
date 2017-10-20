@@ -6,6 +6,8 @@ permalink: /kb/041/Q41550/
 
 ## Q41550: QuickC 2.00 README.DOC: The LEARN.COM Program
 
+{% raw %}
+
 	Article: Q41550
 	Product(s): See article
 	Version(s): 2.00
@@ -27,3 +29,5 @@ permalink: /kb/041/Q41550/
 	tutorial if the Word directory is first in the path. If this happens
 	to you, either switch to \QC2\TUTORIAL directory and type LEARN, or
 	run the NEW-VARS.BAT batch file.
+
+{% endraw %}

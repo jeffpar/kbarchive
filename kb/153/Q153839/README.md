@@ -6,6 +6,8 @@ permalink: /kb/153/Q153839/
 
 ## Q153839: Tape Backup Restore Fails on Extremely Full Volumes
 
+{% raw %}
+
 	Article: Q153839
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -58,3 +60,5 @@ permalink: /kb/153/Q153839/
 	
 	=============================================================================
 	
+
+{% endraw %}

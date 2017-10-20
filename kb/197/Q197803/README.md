@@ -6,6 +6,8 @@ permalink: /kb/197/Q197803/
 
 ## Q197803: WD97: High Network Traffic When Using Large Tables (Novell)
 
+{% raw %}
+
 	Article: Q197803
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -94,3 +96,5 @@ permalink: /kb/197/Q197803/
 	
 	=============================================================================
 	
+
+{% endraw %}

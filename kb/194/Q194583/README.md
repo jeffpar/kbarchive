@@ -6,6 +6,8 @@ permalink: /kb/194/Q194583/
 
 ## Q194583: XWEB: Cannot Save Message with Right-Click in Outlook Web Client
 
+{% raw %}
+
 	Article: Q194583
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -59,3 +61,5 @@ permalink: /kb/194/Q194583/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198347/
 
 ## Q198347: XGEN: Readme.txt: Microsoft Exchange 5.5 U.S. Service Pack 2
 
+{% raw %}
+
 	Article: Q198347
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -239,3 +241,5 @@ permalink: /kb/198/Q198347/
 	
 	=============================================================================
 	
+
+{% endraw %}

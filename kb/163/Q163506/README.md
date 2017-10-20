@@ -6,6 +6,8 @@ permalink: /kb/163/Q163506/
 
 ## Q163506: HP 4M Plus Printer Fails Printing Duplex When Set at 600 DPI
 
+{% raw %}
+
 	Article: Q163506
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -59,3 +61,5 @@ permalink: /kb/163/Q163506/
 	
 	=============================================================================
 	
+
+{% endraw %}

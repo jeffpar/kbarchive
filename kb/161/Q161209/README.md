@@ -6,6 +6,8 @@ permalink: /kb/161/Q161209/
 
 ## Q161209: PRB: Resizing OCX Does Not Resize Its Component Control(s)
 
+{% raw %}
+
 	Article: Q161209
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -133,3 +135,5 @@ permalink: /kb/161/Q161209/
 	
 	=============================================================================
 	
+
+{% endraw %}

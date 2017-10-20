@@ -6,6 +6,8 @@ permalink: /kb/136/Q136004/
 
 ## Q136004: PC Ext: Inaccurate Non-Delivery Reports or Duplicate Mail
 
+{% raw %}
+
 	Article: Q136004
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -106,3 +108,5 @@ permalink: /kb/136/Q136004/
 	
 	=============================================================================
 	
+
+{% endraw %}

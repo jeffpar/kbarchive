@@ -6,6 +6,8 @@ permalink: /kb/143/Q143473/
 
 ## Q143473: FIX: Unattended Setup Stops Unexpectedly
 
+{% raw %}
+
 	Article: Q143473
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -110,3 +112,5 @@ permalink: /kb/143/Q143473/
 	
 	=============================================================================
 	
+
+{% endraw %}

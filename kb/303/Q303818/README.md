@@ -6,6 +6,8 @@ permalink: /kb/303/Q303818/
 
 ## Q303818: Memory Leak in Rpcss.exe When Freeing ORPC Extends
 
+{% raw %}
+
 	Article: Q303818
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,2000 SP2,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6a
@@ -148,3 +150,5 @@ permalink: /kb/303/Q303818/
 	
 	=============================================================================
 	
+
+{% endraw %}

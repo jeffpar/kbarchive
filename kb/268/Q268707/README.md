@@ -6,6 +6,8 @@ permalink: /kb/268/Q268707/
 
 ## Q268707: Problems Using DPT Adapter Model PM1554U2 with RAID 5
 
+{% raw %}
+
 	Article: Q268707
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/268/Q268707/
 	
 	=============================================================================
 	
+
+{% endraw %}

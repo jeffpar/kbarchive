@@ -6,6 +6,8 @@ permalink: /kb/115/Q115586/
 
 ## Q115586: Writer 1: GPF When Printing in Color to some 9-Pin Printers
 
+{% raw %}
+
 	Article: Q115586
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -98,3 +100,5 @@ permalink: /kb/115/Q115586/
 	
 	=============================================================================
 	
+
+{% endraw %}

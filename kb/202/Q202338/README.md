@@ -6,6 +6,8 @@ permalink: /kb/202/Q202338/
 
 ## Q202338: SMS: Pre-Stage Clients to Avoid Bandwidth Contention in Install
 
+{% raw %}
+
 	Article: Q202338
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -185,3 +187,5 @@ permalink: /kb/202/Q202338/
 	
 	=============================================================================
 	
+
+{% endraw %}
