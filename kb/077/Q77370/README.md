@@ -6,6 +6,8 @@ permalink: /kb/077/Q77370/
 
 ## Q77370: Bookshelf Setup Creates New Program Group Each Time It's Run
 
+{% raw %}
+
 	Article: Q77370
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1991 edition
@@ -40,3 +42,5 @@ permalink: /kb/077/Q77370/
 	
 	=============================================================================
 	
+
+{% endraw %}

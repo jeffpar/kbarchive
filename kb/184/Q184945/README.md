@@ -6,6 +6,8 @@ permalink: /kb/184/Q184945/
 
 ## Q184945: WD97: File &quot;Edited by Another Word Session&quot; Err Msg Truncated
 
+{% raw %}
+
 	Article: Q184945
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -65,3 +67,5 @@ permalink: /kb/184/Q184945/
 	
 	=============================================================================
 	
+
+{% endraw %}

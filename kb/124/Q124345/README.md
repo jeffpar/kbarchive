@@ -6,6 +6,8 @@ permalink: /kb/124/Q124345/
 
 ## Q124345: Updated Calculator Accessory for Windows
 
+{% raw %}
+
 	Article: Q124345
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -128,3 +130,5 @@ permalink: /kb/124/Q124345/
 	
 	=============================================================================
 	
+
+{% endraw %}

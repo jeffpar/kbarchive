@@ -6,6 +6,8 @@ permalink: /kb/194/Q194553/
 
 ## Q194553: First SLI_OPEN is Not Traced When LUA API Tracing Enabled
 
+{% raw %}
+
 	Article: Q194553
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -63,3 +65,5 @@ permalink: /kb/194/Q194553/
 	
 	=============================================================================
 	
+
+{% endraw %}

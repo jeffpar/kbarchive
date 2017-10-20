@@ -6,6 +6,8 @@ permalink: /kb/139/Q139819/
 
 ## Q139819: Missing and Multiple Drive Letters Assigned To Partitions
 
+{% raw %}
+
 	Article: Q139819
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -81,3 +83,5 @@ permalink: /kb/139/Q139819/
 	
 	=============================================================================
 	
+
+{% endraw %}

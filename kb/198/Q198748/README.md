@@ -6,6 +6,8 @@ permalink: /kb/198/Q198748/
 
 ## Q198748: Tutor Err Msg: Out of Memory! Please Close Some Applications...
 
+{% raw %}
+
 	Article: Q198748
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -96,3 +98,5 @@ permalink: /kb/198/Q198748/
 	
 	=============================================================================
 	
+
+{% endraw %}

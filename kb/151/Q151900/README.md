@@ -6,6 +6,8 @@ permalink: /kb/151/Q151900/
 
 ## Q151900: PRB: SeeThru Property of Graph Control Was Not Implemented
 
+{% raw %}
+
 	Article: Q151900
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -59,3 +61,5 @@ permalink: /kb/151/Q151900/
 	
 	=============================================================================
 	
+
+{% endraw %}

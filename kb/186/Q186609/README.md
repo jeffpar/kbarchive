@@ -6,6 +6,8 @@ permalink: /kb/186/Q186609/
 
 ## Q186609: Terminal Server's Application Security
 
+{% raw %}
+
 	Article: Q186609
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -97,3 +99,5 @@ permalink: /kb/186/Q186609/
 	
 	=============================================================================
 	
+
+{% endraw %}

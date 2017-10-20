@@ -6,6 +6,8 @@ permalink: /kb/130/Q130380/
 
 ## Q130380: How to Specify a Value for a Custom Property
 
+{% raw %}
+
 	Article: Q130380
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -43,3 +45,5 @@ permalink: /kb/130/Q130380/
 	
 	=============================================================================
 	
+
+{% endraw %}

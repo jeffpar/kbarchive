@@ -6,6 +6,8 @@ permalink: /kb/075/Q75227/
 
 ## Q75227: Microspeed Trackball Incompatible with MS-DOS Shell
 
+{% raw %}
+
 	Article: Q75227
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -75,3 +77,5 @@ permalink: /kb/075/Q75227/
 	
 	=============================================================================
 	
+
+{% endraw %}

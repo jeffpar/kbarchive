@@ -6,6 +6,8 @@ permalink: /kb/196/Q196465/
 
 ## Q196465: Err Msg: Your Password Must Be at Least 0 Characters Long...
 
+{% raw %}
+
 	Article: Q196465
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -111,3 +113,5 @@ permalink: /kb/196/Q196465/
 	
 	=============================================================================
 	
+
+{% endraw %}

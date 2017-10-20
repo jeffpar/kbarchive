@@ -6,6 +6,8 @@ permalink: /kb/129/Q129219/
 
 ## Q129219: PC-NFSpro 1.1 Not Supported in Windows 95
 
+{% raw %}
+
 	Article: Q129219
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -68,3 +70,5 @@ permalink: /kb/129/Q129219/
 	
 	=============================================================================
 	
+
+{% endraw %}

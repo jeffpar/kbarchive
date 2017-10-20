@@ -6,6 +6,8 @@ permalink: /kb/137/Q137409/
 
 ## Q137409: FIX: Group Name w/ More Than 30 Characters Causes Setup Error
 
+{% raw %}
+
 	Article: Q137409
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -85,3 +87,5 @@ permalink: /kb/137/Q137409/
 	
 	=============================================================================
 	
+
+{% endraw %}

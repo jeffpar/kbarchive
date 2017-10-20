@@ -6,6 +6,8 @@ permalink: /kb/086/Q86993/
 
 ## Q86993: Using WINFILE.INI's LongFileNames= Setting
 
+{% raw %}
+
 	Article: Q86993
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -110,3 +112,5 @@ permalink: /kb/086/Q86993/
 	
 	=============================================================================
 	
+
+{% endraw %}

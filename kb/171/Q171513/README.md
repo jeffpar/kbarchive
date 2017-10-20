@@ -6,6 +6,8 @@ permalink: /kb/171/Q171513/
 
 ## Q171513: FIX: Cannot Drag a Nested UserControl with Automatic DragMode
 
+{% raw %}
+
 	Article: Q171513
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -92,3 +94,5 @@ permalink: /kb/171/Q171513/
 	
 	=============================================================================
 	
+
+{% endraw %}

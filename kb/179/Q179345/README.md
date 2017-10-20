@@ -6,6 +6,8 @@ permalink: /kb/179/Q179345/
 
 ## Q179345: WD97: Comments Pane Doesn't Close When Opened Via Hyperlinks
 
+{% raw %}
+
 	Article: Q179345
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -48,3 +50,5 @@ permalink: /kb/179/Q179345/
 	
 	=============================================================================
 	
+
+{% endraw %}

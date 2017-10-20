@@ -6,6 +6,8 @@ permalink: /kb/160/Q160715/
 
 ## Q160715: Using LUA_correlator Field Causes WNAP to GPF
 
+{% raw %}
+
 	Article: Q160715
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0
@@ -61,3 +63,5 @@ permalink: /kb/160/Q160715/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195546/
 
 ## Q195546: Removal of Multimedia Device May Cause Resource Conflict
 
+{% raw %}
+
 	Article: Q195546
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -50,3 +52,5 @@ permalink: /kb/195/Q195546/
 	
 	=============================================================================
 	
+
+{% endraw %}

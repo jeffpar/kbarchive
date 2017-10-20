@@ -6,6 +6,8 @@ permalink: /kb/145/Q145996/
 
 ## Q145996: FIX: _setmaxstdio Causes Access Violation
 
+{% raw %}
+
 	Article: Q145996
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -82,3 +84,5 @@ permalink: /kb/145/Q145996/
 	
 	=============================================================================
 	
+
+{% endraw %}

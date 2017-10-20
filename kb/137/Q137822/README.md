@@ -6,6 +6,8 @@ permalink: /kb/137/Q137822/
 
 ## Q137822: Printing to a File Initiates the Fax Wizard
 
+{% raw %}
+
 	Article: Q137822
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/137/Q137822/
 	
 	=============================================================================
 	
+
+{% endraw %}

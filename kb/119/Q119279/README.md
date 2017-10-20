@@ -6,6 +6,8 @@ permalink: /kb/119/Q119279/
 
 ## Q119279: FIX: Include Files May Be Incorrectly Added as a Dependency
 
+{% raw %}
+
 	Article: Q119279
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/119/Q119279/
 	
 	=============================================================================
 	
+
+{% endraw %}

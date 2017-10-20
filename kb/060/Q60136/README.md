@@ -6,6 +6,8 @@ permalink: /kb/060/Q60136/
 
 ## Q60136: Near Strings Hotkey in Make EXE Dialog Box Does Not Toggle
 
+{% raw %}
+
 	Article: Q60136
 	Product(s): See article
 	Version(s): 7.00
@@ -29,3 +31,5 @@ permalink: /kb/060/Q60136/
 	environment that comes with Microsoft BASIC Professional Development
 	System (PDS) version 7.00. This problem was corrected in QBX.EXE in
 	BASIC PDS 7.10.
+
+{% endraw %}

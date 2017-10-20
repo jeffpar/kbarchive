@@ -6,6 +6,8 @@ permalink: /kb/199/Q199429/
 
 ## Q199429: XFOR: Err Msg: MSEXIMC.DBG, Generated an Application Error
 
+{% raw %}
+
 	Article: Q199429
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/199/Q199429/
 	
 	=============================================================================
 	
+
+{% endraw %}

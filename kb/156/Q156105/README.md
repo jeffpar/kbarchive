@@ -6,6 +6,8 @@ permalink: /kb/156/Q156105/
 
 ## Q156105: XCLN: Viewing Other Attendees after Accepting Meeting Request
 
+{% raw %}
+
 	Article: Q156105
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -70,3 +72,5 @@ permalink: /kb/156/Q156105/
 	
 	=============================================================================
 	
+
+{% endraw %}

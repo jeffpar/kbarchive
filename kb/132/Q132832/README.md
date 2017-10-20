@@ -6,6 +6,8 @@ permalink: /kb/132/Q132832/
 
 ## Q132832: ScanDisk Out of Memory Error Message
 
+{% raw %}
+
 	Article: Q132832
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/132/Q132832/
 	
 	=============================================================================
 	
+
+{% endraw %}

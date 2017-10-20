@@ -6,6 +6,8 @@ permalink: /kb/084/Q84126/
 
 ## Q84126: Build Numbers of Windows and Windows SDK Must Match
 
+{% raw %}
+
 	Article: Q84126
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -46,3 +48,5 @@ permalink: /kb/084/Q84126/
 	
 	=============================================================================
 	
+
+{% endraw %}

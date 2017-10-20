@@ -6,6 +6,8 @@ permalink: /kb/172/Q172873/
 
 ## Q172873: SMSINST: Messages Not Translated Into Correct Language
 
+{% raw %}
+
 	Article: Q172873
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -85,3 +87,5 @@ permalink: /kb/172/Q172873/
 	
 	=============================================================================
 	
+
+{% endraw %}

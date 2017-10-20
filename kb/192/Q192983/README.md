@@ -6,6 +6,8 @@ permalink: /kb/192/Q192983/
 
 ## Q192983: XCON: Content Conversion Errors on OLE Embedded Objects
 
+{% raw %}
+
 	Article: Q192983
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -190,3 +192,5 @@ permalink: /kb/192/Q192983/
 	
 	=============================================================================
 	
+
+{% endraw %}

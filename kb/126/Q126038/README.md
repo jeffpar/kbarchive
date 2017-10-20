@@ -6,6 +6,8 @@ permalink: /kb/126/Q126038/
 
 ## Q126038: Some Trantor SCSI Devices Not Found by Hardware Detection
 
+{% raw %}
+
 	Article: Q126038
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/126/Q126038/
 	
 	=============================================================================
 	
+
+{% endraw %}

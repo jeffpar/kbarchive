@@ -6,6 +6,8 @@ permalink: /kb/150/Q150506/
 
 ## Q150506: Files and Data Sources Installed by Visual FoxPro ODBC Driver
 
+{% raw %}
+
 	Article: Q150506
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:1.0
@@ -100,3 +102,5 @@ permalink: /kb/150/Q150506/
 	
 	=============================================================================
 	
+
+{% endraw %}

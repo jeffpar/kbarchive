@@ -6,6 +6,8 @@ permalink: /kb/123/Q123147/
 
 ## Q123147: FIX: MFC MDI Application Crashes Under Japanese Windows 3.1
 
+{% raw %}
+
 	Article: Q123147
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,Japanese
@@ -55,3 +57,5 @@ permalink: /kb/123/Q123147/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122328/
 
 ## Q122328: FoxPro Advisor Magazine Articles March 1994
 
+{% raw %}
+
 	Article: Q122328
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x 2.60 2.60a | 2.00 2.5x 2.60
@@ -84,3 +86,5 @@ permalink: /kb/122/Q122328/
 	
 	=============================================================================
 	
+
+{% endraw %}

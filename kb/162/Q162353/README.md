@@ -6,6 +6,8 @@ permalink: /kb/162/Q162353/
 
 ## Q162353: XADM: Restoring an Exchange Directory
 
+{% raw %}
+
 	Article: Q162353
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -145,3 +147,5 @@ permalink: /kb/162/Q162353/
 	
 	=============================================================================
 	
+
+{% endraw %}

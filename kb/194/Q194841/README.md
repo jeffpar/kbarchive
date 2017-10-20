@@ -6,6 +6,8 @@ permalink: /kb/194/Q194841/
 
 ## Q194841: FIX: Editing the IDL File May Cause ClassView Shortcuts to Fail
 
+{% raw %}
+
 	Article: Q194841
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -98,3 +100,5 @@ permalink: /kb/194/Q194841/
 	
 	=============================================================================
 	
+
+{% endraw %}

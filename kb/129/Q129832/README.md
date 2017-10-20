@@ -6,6 +6,8 @@ permalink: /kb/129/Q129832/
 
 ## Q129832: Type 20 Response Packet Causes NetWare 3.12 Server to Fail
 
+{% raw %}
+
 	Article: Q129832
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11; winnt:3.5
@@ -61,3 +63,5 @@ permalink: /kb/129/Q129832/
 	
 	=============================================================================
 	
+
+{% endraw %}

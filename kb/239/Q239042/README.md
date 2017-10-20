@@ -6,6 +6,8 @@ permalink: /kb/239/Q239042/
 
 ## Q239042: Invalid IP Address Entered Using HTML Web Administration Forms
 
+{% raw %}
+
 	Article: Q239042
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -59,3 +61,5 @@ permalink: /kb/239/Q239042/
 	
 	=============================================================================
 	
+
+{% endraw %}

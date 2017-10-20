@@ -6,6 +6,8 @@ permalink: /kb/184/Q184971/
 
 ## Q184971: Outwars: Music Starts and Stops or Music Volume Abruptly Changes
 
+{% raw %}
+
 	Article: Q184971
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -74,3 +76,5 @@ permalink: /kb/184/Q184971/
 	
 	=============================================================================
 	
+
+{% endraw %}

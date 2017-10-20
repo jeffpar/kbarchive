@@ -6,6 +6,8 @@ permalink: /kb/183/Q183754/
 
 ## Q183754: DMM: Cannot Send to Mailing Service
 
+{% raw %}
+
 	Article: Q183754
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -99,3 +101,5 @@ permalink: /kb/183/Q183754/
 	
 	=============================================================================
 	
+
+{% endraw %}

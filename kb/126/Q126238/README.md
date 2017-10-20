@@ -6,6 +6,8 @@ permalink: /kb/126/Q126238/
 
 ## Q126238: Haunted House Icon Changes to Windows Default Icon
 
+{% raw %}
+
 	Article: Q126238
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -65,3 +67,5 @@ permalink: /kb/126/Q126238/
 	
 	=============================================================================
 	
+
+{% endraw %}

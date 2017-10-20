@@ -6,6 +6,8 @@ permalink: /kb/102/Q102893/
 
 ## Q102893: PATCH: FoxPro 2.6a Patch Files for FoxPro 2.6
 
+{% raw %}
+
 	Article: Q102893
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.6; WINDOWS:2.6
@@ -135,3 +137,5 @@ permalink: /kb/102/Q102893/
 	
 	=============================================================================
 	
+
+{% endraw %}

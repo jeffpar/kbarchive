@@ -6,6 +6,8 @@ permalink: /kb/245/Q245471/
 
 ## Q245471: IIS: Error Renaming Virtual Directory Using HTML Administrator
 
+{% raw %}
+
 	Article: Q245471
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -53,3 +55,5 @@ permalink: /kb/245/Q245471/
 	
 	=============================================================================
 	
+
+{% endraw %}

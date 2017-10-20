@@ -6,6 +6,8 @@ permalink: /kb/168/Q168093/
 
 ## Q168093: SMS: Group Class Is Not Re-Created After Being Deleted
 
+{% raw %}
+
 	Article: Q168093
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -80,3 +82,5 @@ permalink: /kb/168/Q168093/
 	
 	=============================================================================
 	
+
+{% endraw %}

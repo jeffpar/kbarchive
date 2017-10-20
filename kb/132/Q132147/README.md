@@ -6,6 +6,8 @@ permalink: /kb/132/Q132147/
 
 ## Q132147: Test To Profile Display Takes Too Much Time
 
+{% raw %}
+
 	Article: Q132147
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -50,3 +52,5 @@ permalink: /kb/132/Q132147/
 	
 	=============================================================================
 	
+
+{% endraw %}

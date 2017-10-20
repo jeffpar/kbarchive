@@ -6,6 +6,8 @@ permalink: /kb/125/Q125749/
 
 ## Q125749: PRB: Cause of the R6025 Run-Time Error
 
+{% raw %}
+
 	Article: Q125749
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0 1.5 1.51 1.52 2.0 2.1 4.0 5.
@@ -122,3 +124,5 @@ permalink: /kb/125/Q125749/
 	
 	=============================================================================
 	
+
+{% endraw %}

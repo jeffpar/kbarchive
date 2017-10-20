@@ -6,6 +6,8 @@ permalink: /kb/170/Q170978/
 
 ## Q170978: PRB: MFC Browser Library (MFC.BSC) Can't Find MFC Source Files
 
+{% raw %}
+
 	Article: Q170978
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -116,3 +118,5 @@ permalink: /kb/170/Q170978/
 	
 	=============================================================================
 	
+
+{% endraw %}

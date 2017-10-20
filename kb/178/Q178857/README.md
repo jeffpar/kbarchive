@@ -6,6 +6,8 @@ permalink: /kb/178/Q178857/
 
 ## Q178857: XADM: Setup.exe Not Found On Premier Select CD-ROM
 
+{% raw %}
+
 	Article: Q178857
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -51,3 +53,5 @@ permalink: /kb/178/Q178857/
 	
 	=============================================================================
 	
+
+{% endraw %}

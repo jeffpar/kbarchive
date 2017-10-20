@@ -6,6 +6,8 @@ permalink: /kb/235/Q235711/
 
 ## Q235711: Fatal Exception 0E When Creating Sub-Folder on an HPFS Volume
 
+{% raw %}
+
 	Article: Q235711
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; Win2000:95
@@ -96,3 +98,5 @@ permalink: /kb/235/Q235711/
 	
 	=============================================================================
 	
+
+{% endraw %}

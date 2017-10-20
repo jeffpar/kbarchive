@@ -6,6 +6,8 @@ permalink: /kb/195/Q195549/
 
 ## Q195549: PRB: Exception When Calling RegisterDevice
 
+{% raw %}
+
 	Article: Q195549
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0
@@ -65,3 +67,5 @@ permalink: /kb/195/Q195549/
 	
 	=============================================================================
 	
+
+{% endraw %}

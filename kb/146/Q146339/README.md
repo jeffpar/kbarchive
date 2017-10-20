@@ -6,6 +6,8 @@ permalink: /kb/146/Q146339/
 
 ## Q146339: Windows 95 Not Mapping to Specified Domain in SMSLS.INI
 
+{% raw %}
+
 	Article: Q146339
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -50,3 +52,5 @@ permalink: /kb/146/Q146339/
 	
 	=============================================================================
 	
+
+{% endraw %}

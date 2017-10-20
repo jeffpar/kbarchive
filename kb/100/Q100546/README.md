@@ -6,6 +6,8 @@ permalink: /kb/100/Q100546/
 
 ## Q100546: MSACM 1.0: Compressed Audio Will Not Play
 
+{% raw %}
+
 	Article: Q100546
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,2.0,3.0,3.0a,3.1,3.11
@@ -114,3 +116,5 @@ permalink: /kb/100/Q100546/
 	
 	=============================================================================
 	
+
+{% endraw %}

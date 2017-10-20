@@ -6,6 +6,8 @@ permalink: /kb/142/Q142572/
 
 ## Q142572: Configuration Backup Tool Does Not Restore All Settings
 
+{% raw %}
+
 	Article: Q142572
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -53,3 +55,5 @@ permalink: /kb/142/Q142572/
 	
 	=============================================================================
 	
+
+{% endraw %}

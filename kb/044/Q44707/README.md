@@ -6,6 +6,8 @@ permalink: /kb/044/Q44707/
 
 ## Q44707: SYS0317 Caused by Running CVP on a DOS Application
 
+{% raw %}
+
 	Article: Q44707
 	Product(s): See article
 	Version(s): 2.20
@@ -20,3 +22,5 @@ permalink: /kb/044/Q44707/
 	   in message file OSO001.MSG
 	
 	The screen is then cleared and the OS/2 prompt returns.
+
+{% endraw %}

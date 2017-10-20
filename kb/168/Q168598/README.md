@@ -6,6 +6,8 @@ permalink: /kb/168/Q168598/
 
 ## Q168598: SMS: NetWare Clients Are Always Verifying Installation
 
+{% raw %}
+
 	Article: Q168598
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -78,3 +80,5 @@ permalink: /kb/168/Q168598/
 	
 	=============================================================================
 	
+
+{% endraw %}

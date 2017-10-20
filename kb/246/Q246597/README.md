@@ -6,6 +6,8 @@ permalink: /kb/246/Q246597/
 
 ## Q246597: XADM: OOF Received for Msg Sent to a DL Configured Not to Send
 
+{% raw %}
+
 	Article: Q246597
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -102,3 +104,5 @@ permalink: /kb/246/Q246597/
 	
 	=============================================================================
 	
+
+{% endraw %}

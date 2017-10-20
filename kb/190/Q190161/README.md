@@ -6,6 +6,8 @@ permalink: /kb/190/Q190161/
 
 ## Q190161: TCP/IP Device Driver Doesn't Remember Endpoint Share Flags
 
+{% raw %}
+
 	Article: Q190161
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -52,3 +54,5 @@ permalink: /kb/190/Q190161/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/039/Q39852/
 
 ## Q39852: Error C2086: Redefinition Caused by Forward Reference
 
+{% raw %}
+
 	Article: Q39852
 	Product(s): See article
 	Version(s): 1.00 1.01 2.00
@@ -88,3 +90,5 @@ permalink: /kb/039/Q39852/
 	unlike C Versions 5.x, and thus deals with it in the manner described.
 	
 	This behavior also applies to QuickC Version 2.00.
+
+{% endraw %}

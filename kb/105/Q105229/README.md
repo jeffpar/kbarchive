@@ -6,6 +6,8 @@ permalink: /kb/105/Q105229/
 
 ## Q105229: Can't Start Some Multimedia Applications Minimized
 
+{% raw %}
+
 	Article: Q105229
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,1997 edition; WINDOWS:1.0,1.0a
@@ -50,3 +52,5 @@ permalink: /kb/105/Q105229/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/229/Q229867/
 
 ## Q229867: Word 97: Security Breach with Word Temp Files, NTFS Permissions
 
+{% raw %}
+
 	Article: Q229867
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/229/Q229867/
 	
 	=============================================================================
 	
+
+{% endraw %}

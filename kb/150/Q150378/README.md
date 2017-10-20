@@ -6,6 +6,8 @@ permalink: /kb/150/Q150378/
 
 ## Q150378: FIX: C1001 if No Template Types in Template Func Arg List
 
+{% raw %}
+
 	Article: Q150378
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2
@@ -75,3 +77,5 @@ permalink: /kb/150/Q150378/
 	
 	=============================================================================
 	
+
+{% endraw %}

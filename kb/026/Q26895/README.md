@@ -6,6 +6,8 @@ permalink: /kb/026/Q26895/
 
 ## Q26895: Using Joystick, STRIG(1) Incorrectly Returns 1, Not -1
 
+{% raw %}
+
 	Article: Q26895
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -34,3 +36,5 @@ permalink: /kb/026/Q26895/
 	   button = strig(1)
 	   print button
 	   goto lp
+
+{% endraw %}

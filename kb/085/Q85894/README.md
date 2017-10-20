@@ -6,6 +6,8 @@ permalink: /kb/085/Q85894/
 
 ## Q85894: Program Icon Disappears from Group on a Read-Only Share
 
+{% raw %}
+
 	Article: Q85894
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -58,3 +60,5 @@ permalink: /kb/085/Q85894/
 	
 	=============================================================================
 	
+
+{% endraw %}

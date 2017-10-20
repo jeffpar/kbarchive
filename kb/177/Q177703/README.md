@@ -6,6 +6,8 @@ permalink: /kb/177/Q177703/
 
 ## Q177703: FIX: Access Violation with Public Enums in UserControl
 
+{% raw %}
+
 	Article: Q177703
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -110,3 +112,5 @@ permalink: /kb/177/Q177703/
 	
 	=============================================================================
 	
+
+{% endraw %}

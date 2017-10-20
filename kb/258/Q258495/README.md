@@ -6,6 +6,8 @@ permalink: /kb/258/Q258495/
 
 ## Q258495: XCLN: Troubleshooting Client Connectivity Using Command Lines
 
+{% raw %}
+
 	Article: Q258495
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,97; :
@@ -219,3 +221,5 @@ permalink: /kb/258/Q258495/
 	
 	=============================================================================
 	
+
+{% endraw %}

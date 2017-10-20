@@ -6,6 +6,8 @@ permalink: /kb/267/Q267283/
 
 ## Q267283: Inetmgr Shows Screen Errors with Virtual Server on Novell Share
 
+{% raw %}
+
 	Article: Q267283
 	Product(s): Internet Information Server
 	Version(s): 2000,5.0
@@ -73,3 +75,5 @@ permalink: /kb/267/Q267283/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183377/
 
 ## Q183377: Official MS HTML Help Authoring Kit Comments and Corrections
 
+{% raw %}
+
 	Article: Q183377
 	Product(s): Microsoft Press
 	Version(s): 
@@ -315,3 +317,5 @@ permalink: /kb/183/Q183377/
 	
 	=============================================================================
 	
+
+{% endraw %}

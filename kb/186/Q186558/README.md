@@ -6,6 +6,8 @@ permalink: /kb/186/Q186558/
 
 ## Q186558: Terminal Server System Font Setting Affects All Clients
 
+{% raw %}
+
 	Article: Q186558
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -57,3 +59,5 @@ permalink: /kb/186/Q186558/
 	
 	=============================================================================
 	
+
+{% endraw %}

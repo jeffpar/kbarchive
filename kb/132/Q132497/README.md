@@ -6,6 +6,8 @@ permalink: /kb/132/Q132497/
 
 ## Q132497: Dogs: Cannot View Images Outside of Dogs
 
+{% raw %}
+
 	Article: Q132497
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -80,3 +82,5 @@ permalink: /kb/132/Q132497/
 	
 	=============================================================================
 	
+
+{% endraw %}

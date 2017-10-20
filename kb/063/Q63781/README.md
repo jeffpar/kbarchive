@@ -6,6 +6,8 @@ permalink: /kb/063/Q63781/
 
 ## Q63781: INKEY&#36; Fails with Various CTRL, ALT Key Combinations QB 4.00
 
+{% raw %}
+
 	Article: Q63781
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -59,3 +61,5 @@ permalink: /kb/063/Q63781/
 	      END SELECT
 	   WEND
 	   END
+
+{% endraw %}

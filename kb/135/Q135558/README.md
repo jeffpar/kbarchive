@@ -6,6 +6,8 @@ permalink: /kb/135/Q135558/
 
 ## Q135558: PPT: Breaking Link to Embedded Object Converts Object to Picture
 
+{% raw %}
+
 	Article: Q135558
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -50,3 +52,5 @@ permalink: /kb/135/Q135558/
 	
 	=============================================================================
 	
+
+{% endraw %}

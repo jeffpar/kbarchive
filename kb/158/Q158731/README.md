@@ -6,6 +6,8 @@ permalink: /kb/158/Q158731/
 
 ## Q158731: XADM: SP3 Update Fails When Running Admin Only
 
+{% raw %}
+
 	Article: Q158731
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/158/Q158731/
 	
 	=============================================================================
 	
+
+{% endraw %}

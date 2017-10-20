@@ -6,6 +6,8 @@ permalink: /kb/150/Q150865/
 
 ## Q150865: IBM Twinax Link Service Install Failure in SNA Server 2.11 SP1
 
+{% raw %}
+
 	Article: Q150865
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -67,3 +69,5 @@ permalink: /kb/150/Q150865/
 	
 	=============================================================================
 	
+
+{% endraw %}

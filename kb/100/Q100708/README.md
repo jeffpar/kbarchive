@@ -6,6 +6,8 @@ permalink: /kb/100/Q100708/
 
 ## Q100708: SMTP: Err Msg: ERROR write: (119) Network Error
 
+{% raw %}
+
 	Article: Q100708
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -47,3 +49,5 @@ permalink: /kb/100/Q100708/
 	
 	=============================================================================
 	
+
+{% endraw %}

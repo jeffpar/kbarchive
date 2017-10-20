@@ -6,6 +6,8 @@ permalink: /kb/172/Q172431/
 
 ## Q172431: How to Re-create a Macintosh Volume
 
+{% raw %}
+
 	Article: Q172431
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -73,3 +75,5 @@ permalink: /kb/172/Q172431/
 	
 	=============================================================================
 	
+
+{% endraw %}

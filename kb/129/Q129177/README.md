@@ -6,6 +6,8 @@ permalink: /kb/129/Q129177/
 
 ## Q129177: 500 Nations: Wallpaper Images Washed-out or Discolored
 
+{% raw %}
+
 	Article: Q129177
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/129/Q129177/
 	
 	=============================================================================
 	
+
+{% endraw %}

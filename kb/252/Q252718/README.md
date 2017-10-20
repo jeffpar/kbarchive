@@ -6,6 +6,8 @@ permalink: /kb/252/Q252718/
 
 ## Q252718: SMS: CCM Avoids Installation Attempts on SP2 Clients
 
+{% raw %}
+
 	Article: Q252718
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -277,3 +279,5 @@ permalink: /kb/252/Q252718/
 	
 	=============================================================================
 	
+
+{% endraw %}

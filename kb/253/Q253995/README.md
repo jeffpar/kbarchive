@@ -6,6 +6,8 @@ permalink: /kb/253/Q253995/
 
 ## Q253995: BUG: Connecting to Emulation Hangs Developer Studio
 
+{% raw %}
+
 	Article: Q253995
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:6.0
@@ -98,3 +100,5 @@ permalink: /kb/253/Q253995/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67485/
 
 ## Q67485: Why locking() May Allow Only Twenty Regions to Be Locked
 
+{% raw %}
+
 	Article: Q67485
 	Product(s): See article
 	Version(s): 4.x 5.x 6.00 6.00a
@@ -22,3 +24,5 @@ permalink: /kb/067/Q67485/
 	number of simultaneous regions that can be locked):
 	
 	   SHARE /L:n
+
+{% endraw %}

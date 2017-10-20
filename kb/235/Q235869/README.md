@@ -6,6 +6,8 @@ permalink: /kb/235/Q235869/
 
 ## Q235869: SMS: How to Use Cliutils.exe to Force Inventory to Occur
 
+{% raw %}
+
 	Article: Q235869
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -64,3 +66,5 @@ permalink: /kb/235/Q235869/
 	
 	=============================================================================
 	
+
+{% endraw %}

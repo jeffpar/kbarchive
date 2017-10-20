@@ -6,6 +6,8 @@ permalink: /kb/135/Q135928/
 
 ## Q135928: Windows NT: 16-bit Calls to NetUserAdd() API Cause GP Fault
 
+{% raw %}
+
 	Article: Q135928
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -59,3 +61,5 @@ permalink: /kb/135/Q135928/
 	
 	=============================================================================
 	
+
+{% endraw %}

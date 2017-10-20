@@ -6,6 +6,8 @@ permalink: /kb/149/Q149131/
 
 ## Q149131: Windows NT FTP Client Creates 0-Byte File
 
+{% raw %}
+
 	Article: Q149131
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -56,3 +58,5 @@ permalink: /kb/149/Q149131/
 	
 	=============================================================================
 	
+
+{% endraw %}

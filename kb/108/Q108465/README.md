@@ -6,6 +6,8 @@ permalink: /kb/108/Q108465/
 
 ## Q108465: Saving Changes to a File on an SFM Volume Fails
 
+{% raw %}
+
 	Article: Q108465
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -66,3 +68,5 @@ permalink: /kb/108/Q108465/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176165/
 
 ## Q176165: XADM: Setup Error Message: This version of setup is older...
 
+{% raw %}
+
 	Article: Q176165
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -49,3 +51,5 @@ permalink: /kb/176/Q176165/
 	
 	=============================================================================
 	
+
+{% endraw %}

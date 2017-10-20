@@ -6,6 +6,8 @@ permalink: /kb/236/Q236871/
 
 ## Q236871: PRB: SQLColumns Return Incorrect BUFFER_LENGTH/CHAR_OCTET_LENGTH
 
+{% raw %}
+
 	Article: Q236871
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.1,2.5,4.0
@@ -88,3 +90,5 @@ permalink: /kb/236/Q236871/
 	
 	=============================================================================
 	
+
+{% endraw %}

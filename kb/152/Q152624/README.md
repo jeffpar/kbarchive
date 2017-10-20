@@ -6,6 +6,8 @@ permalink: /kb/152/Q152624/
 
 ## Q152624: XADM: Err Msg: Event IDs 9297 and 3161
 
+{% raw %}
+
 	Article: Q152624
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,4.5,5.0,5.5
@@ -82,3 +84,5 @@ permalink: /kb/152/Q152624/
 	
 	=============================================================================
 	
+
+{% endraw %}

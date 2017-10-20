@@ -6,6 +6,8 @@ permalink: /kb/093/Q93167/
 
 ## Q93167: MS-DOS Shell Limited to 2000 Tokens
 
+{% raw %}
+
 	Article: Q93167
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0
@@ -84,3 +86,5 @@ permalink: /kb/093/Q93167/
 	
 	=============================================================================
 	
+
+{% endraw %}

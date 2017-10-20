@@ -6,6 +6,8 @@ permalink: /kb/129/Q129858/
 
 ## Q129858: Error C00000BC When Changing Password in Trusted Domain
 
+{% raw %}
+
 	Article: Q129858
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5x
@@ -75,3 +77,5 @@ permalink: /kb/129/Q129858/
 	
 	=============================================================================
 	
+
+{% endraw %}

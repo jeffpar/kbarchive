@@ -6,6 +6,8 @@ permalink: /kb/136/Q136997/
 
 ## Q136997: How to Run a Code Resource from a Visual C++ Application
 
+{% raw %}
+
 	Article: Q136997
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/136/Q136997/
 	
 	=============================================================================
 	
+
+{% endraw %}

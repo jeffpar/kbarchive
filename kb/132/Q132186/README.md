@@ -6,6 +6,8 @@ permalink: /kb/132/Q132186/
 
 ## Q132186: Cannot Install/Upgrade Windows 95 from GUI on IBM Aptiva 710
 
+{% raw %}
+
 	Article: Q132186
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -70,3 +72,5 @@ permalink: /kb/132/Q132186/
 	
 	=============================================================================
 	
+
+{% endraw %}

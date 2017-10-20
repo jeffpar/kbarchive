@@ -6,6 +6,8 @@ permalink: /kb/068/Q68830/
 
 ## Q68830: Maximum Video Resolution for MS-DOS Apps in Windows
 
+{% raw %}
+
 	Article: Q68830
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -61,3 +63,5 @@ permalink: /kb/068/Q68830/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/250/Q250560/
 
 ## Q250560: Terminal Server Hangs While Closing Down a Session
 
+{% raw %}
+
 	Article: Q250560
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/250/Q250560/
 	
 	=============================================================================
 	
+
+{% endraw %}

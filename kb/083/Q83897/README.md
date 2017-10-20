@@ -6,6 +6,8 @@ permalink: /kb/083/Q83897/
 
 ## Q83897: Err Msg: Fatal Disk Error (with HP Advanced Link)
 
+{% raw %}
+
 	Article: Q83897
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/083/Q83897/
 	
 	=============================================================================
 	
+
+{% endraw %}

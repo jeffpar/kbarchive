@@ -6,6 +6,8 @@ permalink: /kb/139/Q139101/
 
 ## Q139101: Sony ATAPI CD-ROM Drive Must Be Master Drive on IDE Adapters
 
+{% raw %}
+
 	Article: Q139101
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -53,3 +55,5 @@ permalink: /kb/139/Q139101/
 	
 	=============================================================================
 	
+
+{% endraw %}

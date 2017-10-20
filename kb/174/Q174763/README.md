@@ -6,6 +6,8 @@ permalink: /kb/174/Q174763/
 
 ## Q174763: XADM: Propagate These Properties... Option Does Not Appear
 
+{% raw %}
+
 	Article: Q174763
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -51,3 +53,5 @@ permalink: /kb/174/Q174763/
 	
 	=============================================================================
 	
+
+{% endraw %}

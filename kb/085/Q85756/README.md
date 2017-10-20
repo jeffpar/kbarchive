@@ -6,6 +6,8 @@ permalink: /kb/085/Q85756/
 
 ## Q85756: ALR Computers Do Not Show Valid BIOS Dates
 
+{% raw %}
+
 	Article: Q85756
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/085/Q85756/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/272/Q272497/
 
 ## Q272497: &quot;Stop 0x0000001E&quot; in Win32k.sys
 
+{% raw %}
+
 	Article: Q272497
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -86,3 +88,5 @@ permalink: /kb/272/Q272497/
 	
 	=============================================================================
 	
+
+{% endraw %}

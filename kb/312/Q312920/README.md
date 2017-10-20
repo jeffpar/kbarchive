@@ -6,6 +6,8 @@ permalink: /kb/312/Q312920/
 
 ## Q312920: CiCatalogFlags Cannot Disable Local NTFS Notifications
 
+{% raw %}
+
 	Article: Q312920
 	Product(s): Internet Information Server
 	Version(s): 2.0,3.0
@@ -66,3 +68,5 @@ permalink: /kb/312/Q312920/
 	
 	=============================================================================
 	
+
+{% endraw %}

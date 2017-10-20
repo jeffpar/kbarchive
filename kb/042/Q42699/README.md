@@ -6,6 +6,8 @@ permalink: /kb/042/Q42699/
 
 ## Q42699: Put COMMAND.COM on Each Disk with Two-Floppy DOS 2.10 System
 
+{% raw %}
+
 	Article: Q42699
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -21,3 +23,5 @@ permalink: /kb/042/Q42699/
 	This information is found in the QuickBASIC Version 4.50 README.DOC
 	file, found on the Utilities 2 disk. This also applies to QuickBASIC
 	Versions 4.00 and 4.00b.
+
+{% endraw %}

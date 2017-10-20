@@ -6,6 +6,8 @@ permalink: /kb/063/Q63660/
 
 ## Q63660: Error D2030 May Hide Other Errors
 
+{% raw %}
+
 	Article: Q63660
 	Product(s): See article
 	Version(s): 6.00
@@ -49,3 +51,5 @@ permalink: /kb/063/Q63660/
 	typedef int FOO ;
 	void funcA( int array[ UNDEFINED_CONST ] ) ;
 	void funcB( void ) ;
+
+{% endraw %}

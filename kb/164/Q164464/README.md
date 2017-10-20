@@ -6,6 +6,8 @@ permalink: /kb/164/Q164464/
 
 ## Q164464: XFOR: Can't Mail to Exchange Account &quot;Admin&quot; from MSMail Client
 
+{% raw %}
+
 	Article: Q164464
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -42,3 +44,5 @@ permalink: /kb/164/Q164464/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242763/
 
 ## Q242763: Age of Empires II: Cannot Name a Saved Game &quot;COMx&quot; or &quot;LPTx&quot;
 
+{% raw %}
+
 	Article: Q242763
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0; :
@@ -64,3 +66,5 @@ permalink: /kb/242/Q242763/
 	
 	=============================================================================
 	
+
+{% endraw %}

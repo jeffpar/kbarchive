@@ -6,6 +6,8 @@ permalink: /kb/177/Q177058/
 
 ## Q177058: PRB: Wizard Generated Form Not Showing Complete Text Box Value
 
+{% raw %}
+
 	Article: Q177058
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -190,3 +192,5 @@ permalink: /kb/177/Q177058/
 	
 	=============================================================================
 	
+
+{% endraw %}

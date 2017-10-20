@@ -6,6 +6,8 @@ permalink: /kb/130/Q130398/
 
 ## Q130398: PC NTMMTA: Err Msg: Unable to Load Unicode Font
 
+{% raw %}
+
 	Article: Q130398
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -52,3 +54,5 @@ permalink: /kb/130/Q130398/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248760/
 
 ## Q248760: FIX: Project Log &lt;physical filename&gt; Share (From Another Proj)
 
+{% raw %}
+
 	Article: Q248760
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -122,3 +124,5 @@ permalink: /kb/248/Q248760/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190209/
 
 ## Q190209: BUG: Seek Returns Unexpected Value When File Opened for Append
 
+{% raw %}
+
 	Article: Q190209
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -126,3 +128,5 @@ permalink: /kb/190/Q190209/
 	
 	=============================================================================
 	
+
+{% endraw %}

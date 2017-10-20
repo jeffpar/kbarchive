@@ -6,6 +6,8 @@ permalink: /kb/102/Q102811/
 
 ## Q102811: WFWG Err Msg: Network Name Was Deleted
 
+{% raw %}
+
 	Article: Q102811
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/102/Q102811/
 	
 	=============================================================================
 	
+
+{% endraw %}

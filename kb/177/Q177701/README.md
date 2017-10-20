@@ -6,6 +6,8 @@ permalink: /kb/177/Q177701/
 
 ## Q177701: Macintosh Version of Internet Explorer Not Included on Disc
 
+{% raw %}
+
 	Article: Q177701
 	Product(s): Microsoft Press
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/177/Q177701/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164882/
 
 ## Q164882: Practical Recommendations for Securing Internet-Connections
 
+{% raw %}
+
 	Article: Q164882
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0,3.0,4.0,5.0
@@ -200,3 +202,5 @@ permalink: /kb/164/Q164882/
 	
 	=============================================================================
 	
+
+{% endraw %}

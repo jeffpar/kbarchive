@@ -6,6 +6,8 @@ permalink: /kb/087/Q87621/
 
 ## Q87621: PC Win: Running Microsoft Mail Windows Client from the Network
 
+{% raw %}
+
 	Article: Q87621
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -271,3 +273,5 @@ permalink: /kb/087/Q87621/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/101/Q101443/
 
 ## Q101443: Mac Srv: Forwarded Message Points to Old Enclosure
 
+{% raw %}
+
 	Article: Q101443
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -41,3 +43,5 @@ permalink: /kb/101/Q101443/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130427/
 
 ## Q130427: A Task's Start Time Cannot Be Changed
 
+{% raw %}
+
 	Article: Q130427
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -37,3 +39,5 @@ permalink: /kb/130/Q130427/
 	
 	=============================================================================
 	
+
+{% endraw %}

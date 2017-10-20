@@ -6,6 +6,8 @@ permalink: /kb/227/Q227812/
 
 ## Q227812: Only TCP/IP Can Be Bound to Virtual Network Adapter in WLBS Host
 
+{% raw %}
+
 	Article: Q227812
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/227/Q227812/
 	
 	=============================================================================
 	
+
+{% endraw %}

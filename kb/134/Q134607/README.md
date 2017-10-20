@@ -6,6 +6,8 @@ permalink: /kb/134/Q134607/
 
 ## Q134607: Error Attempting to Specify a DBCS Security Provider
 
+{% raw %}
+
 	Article: Q134607
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -60,3 +62,5 @@ permalink: /kb/134/Q134607/
 	
 	=============================================================================
 	
+
+{% endraw %}

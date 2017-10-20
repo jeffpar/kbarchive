@@ -6,6 +6,8 @@ permalink: /kb/074/Q74393/
 
 ## Q74393: Future Domain Disk Maestro Version 6.0 with MS-DOS
 
+{% raw %}
+
 	Article: Q74393
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -57,3 +59,5 @@ permalink: /kb/074/Q74393/
 	
 	=============================================================================
 	
+
+{% endraw %}

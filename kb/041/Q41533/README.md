@@ -6,6 +6,8 @@ permalink: /kb/041/Q41533/
 
 ## Q41533: BASIC 7.00 Can Return Exit Code (Error Level) to Batch File
 
+{% raw %}
+
 	Article: Q41533
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -110,3 +112,5 @@ permalink: /kb/041/Q41533/
 	Now run the batch file ERRT.BAT. If the BASIC program cannot find
 	GARBAGE.DAT, ERRT.BAT shows "An error occurred during program
 	running."
+
+{% endraw %}

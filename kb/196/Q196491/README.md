@@ -6,6 +6,8 @@ permalink: /kb/196/Q196491/
 
 ## Q196491: XADM: Attributes Not Available to LDAP Users with Admin Rights
 
+{% raw %}
+
 	Article: Q196491
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -76,3 +78,5 @@ permalink: /kb/196/Q196491/
 	
 	=============================================================================
 	
+
+{% endraw %}

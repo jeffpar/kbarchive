@@ -6,6 +6,8 @@ permalink: /kb/114/Q114256/
 
 ## Q114256: How to Duplicate Varying Number of Labels Per Record
 
+{% raw %}
+
 	Article: Q114256
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0
@@ -126,3 +128,5 @@ permalink: /kb/114/Q114256/
 	
 	=============================================================================
 	
+
+{% endraw %}

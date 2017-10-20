@@ -6,6 +6,8 @@ permalink: /kb/247/Q247621/
 
 ## Q247621: Blue Screen with Garbled Text During Windows NT Installation
 
+{% raw %}
+
 	Article: Q247621
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/247/Q247621/
 	
 	=============================================================================
 	
+
+{% endraw %}

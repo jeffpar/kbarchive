@@ -6,6 +6,8 @@ permalink: /kb/323/Q323732/
 
 ## Q323732: ENSO:XADM: Cannot Access the Public Folder Data
 
+{% raw %}
+
 	Article: Q323732
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -193,3 +195,5 @@ permalink: /kb/323/Q323732/
 	
 	=============================================================================
 	
+
+{% endraw %}

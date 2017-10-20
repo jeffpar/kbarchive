@@ -6,6 +6,8 @@ permalink: /kb/241/Q241040/
 
 ## Q241040: Daylight Saving Time Change Not Applied Immediately
 
+{% raw %}
+
 	Article: Q241040
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -146,3 +148,5 @@ permalink: /kb/241/Q241040/
 	
 	=============================================================================
 	
+
+{% endraw %}

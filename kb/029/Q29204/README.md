@@ -6,6 +6,8 @@ permalink: /kb/029/Q29204/
 
 ## Q29204: Serial Mouse Pin-Outs
 
+{% raw %}
+
 	Article: Q29204
 	Product(s): See article
 	Version(s): 1.00
@@ -38,3 +40,5 @@ permalink: /kb/029/Q29204/
 	   For example, the mouse's RXD should connect to your serial port's
 	RXD and the mouse's TXD should connect to the serial port's TXD. This
 	is true for other functions as well.
+
+{% endraw %}

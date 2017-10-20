@@ -6,6 +6,8 @@ permalink: /kb/150/Q150306/
 
 ## Q150306: Bookshelf 96-97: Poor Performance Even After Reinstalling
 
+{% raw %}
+
 	Article: Q150306
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -72,3 +74,5 @@ permalink: /kb/150/Q150306/
 	
 	=============================================================================
 	
+
+{% endraw %}

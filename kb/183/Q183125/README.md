@@ -6,6 +6,8 @@ permalink: /kb/183/Q183125/
 
 ## Q183125: Shell Doc Property Dialog Custom Date Incorrect after Year 2000
 
+{% raw %}
+
 	Article: Q183125
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -107,3 +109,5 @@ permalink: /kb/183/Q183125/
 	
 	=============================================================================
 	
+
+{% endraw %}

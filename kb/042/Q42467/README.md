@@ -6,6 +6,8 @@ permalink: /kb/042/Q42467/
 
 ## Q42467: If FRE(-2) Returns Small Negative Values, Increase Stack
 
+{% raw %}
+
 	Article: Q42467
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -46,3 +48,5 @@ permalink: /kb/042/Q42467/
 	and 4.50 for MS-DOS, to Microsoft BASIC Compiler Versions 6.00 and
 	6.00b for MS-DOS and MS OS/2, and to Microsoft BASIC PDS Version 7.00
 	for MS-DOS and MS OS/2.
+
+{% endraw %}

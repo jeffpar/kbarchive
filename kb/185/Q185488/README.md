@@ -6,6 +6,8 @@ permalink: /kb/185/Q185488/
 
 ## Q185488: HP Printers May Print Multiple Copies of Jobs or Separator Pages
 
+{% raw %}
+
 	Article: Q185488
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -48,3 +50,5 @@ permalink: /kb/185/Q185488/
 	
 	=============================================================================
 	
+
+{% endraw %}

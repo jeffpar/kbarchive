@@ -6,6 +6,8 @@ permalink: /kb/181/Q181490/
 
 ## Q181490: Causes of Elevated CPU Utilization with TAPI 2.0 and RAS
 
+{% raw %}
+
 	Article: Q181490
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -88,3 +90,5 @@ permalink: /kb/181/Q181490/
 	
 	=============================================================================
 	
+
+{% endraw %}

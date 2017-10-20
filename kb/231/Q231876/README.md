@@ -6,6 +6,8 @@ permalink: /kb/231/Q231876/
 
 ## Q231876: How to Set IIS 4.0 FTP Files to All Lowercase
 
+{% raw %}
+
 	Article: Q231876
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -111,3 +113,5 @@ permalink: /kb/231/Q231876/
 	
 	=============================================================================
 	
+
+{% endraw %}

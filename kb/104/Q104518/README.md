@@ -6,6 +6,8 @@ permalink: /kb/104/Q104518/
 
 ## Q104518: PC Win: Inbox Shadowing Does Not Synchronize Changes
 
+{% raw %}
+
 	Article: Q104518
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -41,3 +43,5 @@ permalink: /kb/104/Q104518/
 	
 	=============================================================================
 	
+
+{% endraw %}

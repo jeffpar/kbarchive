@@ -6,6 +6,8 @@ permalink: /kb/299/Q299074/
 
 ## Q299074: BETA FIX: Blank Reports with High Contrast Color Scheme
 
+{% raw %}
+
 	Article: Q299074
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -98,3 +100,5 @@ permalink: /kb/299/Q299074/
 	
 	=============================================================================
 	
+
+{% endraw %}

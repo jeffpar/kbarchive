@@ -6,6 +6,8 @@ permalink: /kb/147/Q147723/
 
 ## Q147723: Flight Sim 5.x: Troubleshooting Vague Error Messages
 
+{% raw %}
+
 	Article: Q147723
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0,5.1
@@ -87,3 +89,5 @@ permalink: /kb/147/Q147723/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/083/Q83484/
 
 ## Q83484: Windows 3.1 Upgrade: .OS2 Ports Do Not Become .DOS Ports
 
+{% raw %}
+
 	Article: Q83484
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/083/Q83484/
 	
 	=============================================================================
 	
+
+{% endraw %}

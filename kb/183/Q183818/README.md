@@ -6,6 +6,8 @@ permalink: /kb/183/Q183818/
 
 ## Q183818: XCON: MTA Unable to Send Message to Large Number of Recipients
 
+{% raw %}
+
 	Article: Q183818
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -52,3 +54,5 @@ permalink: /kb/183/Q183818/
 	
 	=============================================================================
 	
+
+{% endraw %}

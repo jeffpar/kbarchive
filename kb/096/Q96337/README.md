@@ -6,6 +6,8 @@ permalink: /kb/096/Q96337/
 
 ## Q96337: Setup Fails with Tandy Sensation Shell
 
+{% raw %}
+
 	Article: Q96337
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1991 edition,1992 edition,1993 edition,1994 edition
@@ -79,3 +81,5 @@ permalink: /kb/096/Q96337/
 	
 	=============================================================================
 	
+
+{% endraw %}

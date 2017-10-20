@@ -6,6 +6,8 @@ permalink: /kb/161/Q161228/
 
 ## Q161228: INIT-SELF Retry Functionality for SNA Server
 
+{% raw %}
+
 	Article: Q161228
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0
@@ -82,3 +84,5 @@ permalink: /kb/161/Q161228/
 	
 	=============================================================================
 	
+
+{% endraw %}

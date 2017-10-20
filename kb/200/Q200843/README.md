@@ -6,6 +6,8 @@ permalink: /kb/200/Q200843/
 
 ## Q200843: Unable to Install Windows 95/98 Year 2000 Updates
 
+{% raw %}
+
 	Article: Q200843
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1,2.5
@@ -74,3 +76,5 @@ permalink: /kb/200/Q200843/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/307/Q307975/
 
 ## Q307975: Problems with TrendMicro Interscan Virus Firewall Software
 
+{% raw %}
+
 	Article: Q307975
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6
@@ -69,3 +71,5 @@ permalink: /kb/307/Q307975/
 	
 	=============================================================================
 	
+
+{% endraw %}

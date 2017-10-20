@@ -6,6 +6,8 @@ permalink: /kb/173/Q173667/
 
 ## Q173667: Cannot Use MSN E-mail Service with Pocket Inbox
 
+{% raw %}
+
 	Article: Q173667
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,2.0,2.1,2.12,2.5,2.51,2.52,2.6,3.0 Professional Edition,5.0,5.1
@@ -59,3 +61,5 @@ permalink: /kb/173/Q173667/
 	
 	=============================================================================
 	
+
+{% endraw %}

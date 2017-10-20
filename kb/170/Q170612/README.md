@@ -6,6 +6,8 @@ permalink: /kb/170/Q170612/
 
 ## Q170612: WD97: Macro to Create Table of Contents Entry Automatically
 
+{% raw %}
+
 	Article: Q170612
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -135,3 +137,5 @@ permalink: /kb/170/Q170612/
 	
 	=============================================================================
 	
+
+{% endraw %}

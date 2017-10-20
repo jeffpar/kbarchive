@@ -6,6 +6,8 @@ permalink: /kb/176/Q176730/
 
 ## Q176730: Sound Quality Is Poor When You Enable Hardware Acceleration
 
+{% raw %}
+
 	Article: Q176730
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -155,3 +157,5 @@ permalink: /kb/176/Q176730/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263884/
 
 ## Q263884: SAMPLE: AdoChng.exe Changes Business Object Via ADO Recordset
 
+{% raw %}
+
 	Article: Q263884
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.5,2.7,6.0
@@ -193,3 +195,5 @@ permalink: /kb/263/Q263884/
 	
 	=============================================================================
 	
+
+{% endraw %}

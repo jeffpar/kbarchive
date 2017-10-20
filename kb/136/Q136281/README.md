@@ -6,6 +6,8 @@ permalink: /kb/136/Q136281/
 
 ## Q136281: FIX: GridBuilder Gives Data Type Error After Fields Rearranged
 
+{% raw %}
+
 	Article: Q136281
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -84,3 +86,5 @@ permalink: /kb/136/Q136281/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160321/
 
 ## Q160321: DOC: User Supplied RASAdmin.dll Callbacks Must Use _stdcall
 
+{% raw %}
+
 	Article: Q160321
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:4.2;
@@ -97,3 +99,5 @@ permalink: /kb/160/Q160321/
 	
 	=============================================================================
 	
+
+{% endraw %}

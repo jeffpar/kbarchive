@@ -6,6 +6,8 @@ permalink: /kb/131/Q131497/
 
 ## Q131497: BUG: Error in ELSEIF References Line Number for Matching IF
 
+{% raw %}
+
 	Article: Q131497
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a,5.1
@@ -78,3 +80,5 @@ permalink: /kb/131/Q131497/
 	
 	=============================================================================
 	
+
+{% endraw %}

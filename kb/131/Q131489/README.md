@@ -6,6 +6,8 @@ permalink: /kb/131/Q131489/
 
 ## Q131489: Week Entry in Go To Dialog Allows Week 0 through 99
 
+{% raw %}
+
 	Article: Q131489
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -39,3 +41,5 @@ permalink: /kb/131/Q131489/
 	
 	=============================================================================
 	
+
+{% endraw %}

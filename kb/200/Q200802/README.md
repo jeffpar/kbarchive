@@ -6,6 +6,8 @@ permalink: /kb/200/Q200802/
 
 ## Q200802: SMS: Cannot Connect to SQL Server If Default Protocol Is Changed
 
+{% raw %}
+
 	Article: Q200802
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2,2.0
@@ -117,3 +119,5 @@ permalink: /kb/200/Q200802/
 	
 	=============================================================================
 	
+
+{% endraw %}

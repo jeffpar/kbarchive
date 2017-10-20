@@ -6,6 +6,8 @@ permalink: /kb/160/Q160061/
 
 ## Q160061: PRB: Page Activate Event Does Not Set Focus to Different Page
 
+{% raw %}
+
 	Article: Q160061
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -87,3 +89,5 @@ permalink: /kb/160/Q160061/
 	
 	=============================================================================
 	
+
+{% endraw %}

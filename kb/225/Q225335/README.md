@@ -6,6 +6,8 @@ permalink: /kb/225/Q225335/
 
 ## Q225335: Toshiba Laptop APM Software May Not Function with SP4
 
+{% raw %}
+
 	Article: Q225335
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -57,3 +59,5 @@ permalink: /kb/225/Q225335/
 	
 	=============================================================================
 	
+
+{% endraw %}

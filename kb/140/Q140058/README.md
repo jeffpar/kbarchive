@@ -6,6 +6,8 @@ permalink: /kb/140/Q140058/
 
 ## Q140058: How To Prevent Auditable Activities When Security Log Is Full
 
+{% raw %}
+
 	Article: Q140058
 	Product(s): Microsoft Windows NT
 	Version(s): 3.X,4.00
@@ -91,3 +93,5 @@ permalink: /kb/140/Q140058/
 	
 	=============================================================================
 	
+
+{% endraw %}

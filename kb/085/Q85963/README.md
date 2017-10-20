@@ -6,6 +6,8 @@ permalink: /kb/085/Q85963/
 
 ## Q85963: Lotus 1-2-3 for Windows Allows Spaces in Filenames
 
+{% raw %}
+
 	Article: Q85963
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/085/Q85963/
 	
 	=============================================================================
 	
+
+{% endraw %}

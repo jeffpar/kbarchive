@@ -6,6 +6,8 @@ permalink: /kb/167/Q167387/
 
 ## Q167387: WD97: WordBasic.Files&#36;() Command Adds Quotation Marks to Result
 
+{% raw %}
+
 	Article: Q167387
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -139,3 +141,5 @@ permalink: /kb/167/Q167387/
 	
 	=============================================================================
 	
+
+{% endraw %}

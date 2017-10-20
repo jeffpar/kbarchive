@@ -6,6 +6,8 @@ permalink: /kb/078/Q78290/
 
 ## Q78290: Intel EMM.SYS Dated June 1990 or Later with MS-DOS
 
+{% raw %}
+
 	Article: Q78290
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -52,3 +54,5 @@ permalink: /kb/078/Q78290/
 	
 	=============================================================================
 	
+
+{% endraw %}

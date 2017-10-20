@@ -6,6 +6,8 @@ permalink: /kb/223/Q223044/
 
 ## Q223044: SMS: Remote Control Agent Not Found
 
+{% raw %}
+
 	Article: Q223044
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -65,3 +67,5 @@ permalink: /kb/223/Q223044/
 	
 	=============================================================================
 	
+
+{% endraw %}

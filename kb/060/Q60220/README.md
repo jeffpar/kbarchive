@@ -6,6 +6,8 @@ permalink: /kb/060/Q60220/
 
 ## Q60220: No Space Needed in &quot;/O MY.SRC&quot; in HELPMAKE, Programmer's Guide
 
+{% raw %}
+
 	Article: Q60220
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -29,3 +31,5 @@ permalink: /kb/060/Q60220/
 	
 	This information applies to Microsoft BASIC Professional Development
 	System (PDS) Versions 7.00 and 7.10 for MS-DOS and MS OS/2.
+
+{% endraw %}

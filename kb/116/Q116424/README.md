@@ -6,6 +6,8 @@ permalink: /kb/116/Q116424/
 
 ## Q116424: PPT: Adding the Present It Tool to Word
 
+{% raw %}
+
 	Article: Q116424
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 4.0,4.0c,6.0,6.0a,6.0c,7.0
@@ -117,3 +119,5 @@ permalink: /kb/116/Q116424/
 	
 	=============================================================================
 	
+
+{% endraw %}

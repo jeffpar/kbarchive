@@ -6,6 +6,8 @@ permalink: /kb/091/Q91028/
 
 ## Q91028: TBMI2.COM Removed from AUTOEXEC.BAT in WFWG
 
+{% raw %}
+
 	Article: Q91028
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -37,3 +39,5 @@ permalink: /kb/091/Q91028/
 	
 	=============================================================================
 	
+
+{% endraw %}

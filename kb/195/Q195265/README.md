@@ -6,6 +6,8 @@ permalink: /kb/195/Q195265/
 
 ## Q195265: Microsoft Windows 98 Resource Kit Comments &amp; Corrections
 
+{% raw %}
+
 	Article: Q195265
 	Product(s): Microsoft Press
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/195/Q195265/
 	
 	=============================================================================
 	
+
+{% endraw %}

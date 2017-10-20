@@ -6,6 +6,8 @@ permalink: /kb/179/Q179821/
 
 ## Q179821: How to Delete the MSN Icon on the Desktop
 
+{% raw %}
+
 	Article: Q179821
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5,2.51,2.52,2.6,5.0,5.1,95,98,98 Second Edition
@@ -55,3 +57,5 @@ permalink: /kb/179/Q179821/
 	
 	=============================================================================
 	
+
+{% endraw %}

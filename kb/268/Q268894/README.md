@@ -6,6 +6,8 @@ permalink: /kb/268/Q268894/
 
 ## Q268894: SMS Service Manager Returns Error Message
 
+{% raw %}
+
 	Article: Q268894
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -75,3 +77,5 @@ permalink: /kb/268/Q268894/
 	
 	=============================================================================
 	
+
+{% endraw %}

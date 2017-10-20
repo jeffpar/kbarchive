@@ -6,6 +6,8 @@ permalink: /kb/067/Q67133/
 
 ## Q67133: Arranging Program Manager Group Icons in a Specific Order
 
+{% raw %}
+
 	Article: Q67133
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -105,3 +107,5 @@ permalink: /kb/067/Q67133/
 	
 	=============================================================================
 	
+
+{% endraw %}

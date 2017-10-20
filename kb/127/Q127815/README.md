@@ -6,6 +6,8 @@ permalink: /kb/127/Q127815/
 
 ## Q127815: NWLink IPX Frame Corruption in Token Ring Network
 
+{% raw %}
+
 	Article: Q127815
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -76,3 +78,5 @@ permalink: /kb/127/Q127815/
 	
 	=============================================================================
 	
+
+{% endraw %}

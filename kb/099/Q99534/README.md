@@ -6,6 +6,8 @@ permalink: /kb/099/Q99534/
 
 ## Q99534: AutoCad Overlay Files Must be Local to Work with LAN Man
 
+{% raw %}
+
 	Article: Q99534
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/099/Q99534/
 	
 	=============================================================================
 	
+
+{% endraw %}

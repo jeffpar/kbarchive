@@ -6,6 +6,8 @@ permalink: /kb/237/Q237529/
 
 ## Q237529: Encarta Dictionary: Image Jagged or Blocky When Pasted to Paint
 
+{% raw %}
+
 	Article: Q237529
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -57,3 +59,5 @@ permalink: /kb/237/Q237529/
 	
 	=============================================================================
 	
+
+{% endraw %}

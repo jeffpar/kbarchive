@@ -6,6 +6,8 @@ permalink: /kb/092/Q92401/
 
 ## Q92401: Noise (Hissing) During Playback of Sound Files
 
+{% raw %}
+
 	Article: Q92401
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/092/Q92401/
 	
 	=============================================================================
 	
+
+{% endraw %}

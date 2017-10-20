@@ -6,6 +6,8 @@ permalink: /kb/059/Q59409/
 
 ## Q59409: Trouble with Filenames With a Dollar Sign (&#36;) in Inline Files
 
+{% raw %}
+
 	Article: Q59409
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.01,1.1,1.11,1.12,1.13,1.2,1.3,1.4; OS/2:1.01,1.11,1.12,1.13,1.21
@@ -86,3 +88,5 @@ permalink: /kb/059/Q59409/
 	
 	=============================================================================
 	
+
+{% endraw %}

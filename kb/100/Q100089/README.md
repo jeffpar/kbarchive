@@ -6,6 +6,8 @@ permalink: /kb/100/Q100089/
 
 ## Q100089: Updated MS-AV Files Create CHKLIST.CPS Files, Not .MS Files
 
+{% raw %}
+
 	Article: Q100089
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -41,3 +43,5 @@ permalink: /kb/100/Q100089/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130442/
 
 ## Q130442: PRB: RELEASE LIBRARY Results in &quot;API library not found&quot; Error
 
+{% raw %}
+
 	Article: Q130442
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -76,3 +78,5 @@ permalink: /kb/130/Q130442/
 	
 	=============================================================================
 	
+
+{% endraw %}

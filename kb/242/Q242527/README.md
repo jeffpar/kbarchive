@@ -6,6 +6,8 @@ permalink: /kb/242/Q242527/
 
 ## Q242527: PRB: #import Wrapper Methods May Cause Access Violation
 
+{% raw %}
+
 	Article: Q242527
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -211,3 +213,5 @@ permalink: /kb/242/Q242527/
 	
 	=============================================================================
 	
+
+{% endraw %}

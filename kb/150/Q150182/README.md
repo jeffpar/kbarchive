@@ -6,6 +6,8 @@ permalink: /kb/150/Q150182/
 
 ## Q150182: FIX: A Picture Box Containing Labels May Not Repaint Correctly
 
+{% raw %}
+
 	Article: Q150182
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -74,3 +76,5 @@ permalink: /kb/150/Q150182/
 	
 	=============================================================================
 	
+
+{% endraw %}

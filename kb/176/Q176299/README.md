@@ -6,6 +6,8 @@ permalink: /kb/176/Q176299/
 
 ## Q176299: Bridge Too Far: Location of Product Identification Number (PID)
 
+{% raw %}
+
 	Article: Q176299
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -46,3 +48,5 @@ permalink: /kb/176/Q176299/
 	
 	=============================================================================
 	
+
+{% endraw %}

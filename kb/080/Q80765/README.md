@@ -6,6 +6,8 @@ permalink: /kb/080/Q80765/
 
 ## Q80765: Windows: No Specific Printer Driver for HP Rugged Writer
 
+{% raw %}
+
 	Article: Q80765
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/080/Q80765/
 	
 	=============================================================================
 	
+
+{% endraw %}

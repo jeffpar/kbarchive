@@ -6,6 +6,8 @@ permalink: /kb/176/Q176163/
 
 ## Q176163: XADM: Restart Services Disabled After Performance Optimizer Use
 
+{% raw %}
+
 	Article: Q176163
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -55,3 +57,5 @@ permalink: /kb/176/Q176163/
 	
 	=============================================================================
 	
+
+{% endraw %}

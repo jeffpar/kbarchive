@@ -6,6 +6,8 @@ permalink: /kb/140/Q140940/
 
 ## Q140940: XFOR: IMC: 821 Routing Email Addresses Cause NDRs
 
+{% raw %}
+
 	Article: Q140940
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/140/Q140940/
 	
 	=============================================================================
 	
+
+{% endraw %}

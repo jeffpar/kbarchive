@@ -6,6 +6,8 @@ permalink: /kb/273/Q273607/
 
 ## Q273607: Microsoft Exchange 2000 Server Administrator's Companion Comment
 
+{% raw %}
+
 	Article: Q273607
 	Product(s): Microsoft Press
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/273/Q273607/
 	
 	=============================================================================
 	
+
+{% endraw %}

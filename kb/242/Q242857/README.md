@@ -6,6 +6,8 @@ permalink: /kb/242/Q242857/
 
 ## Q242857: &quot;Operation Could Not Be Completed&quot; Error When Adding Printer
 
+{% raw %}
+
 	Article: Q242857
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/242/Q242857/
 	
 	=============================================================================
 	
+
+{% endraw %}

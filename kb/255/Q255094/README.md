@@ -6,6 +6,8 @@ permalink: /kb/255/Q255094/
 
 ## Q255094: How to Use the SliderBar ActiveX Control in Visual FoxPro
 
+{% raw %}
+
 	Article: Q255094
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -96,3 +98,5 @@ permalink: /kb/255/Q255094/
 	
 	=============================================================================
 	
+
+{% endraw %}

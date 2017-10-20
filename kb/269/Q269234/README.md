@@ -6,6 +6,8 @@ permalink: /kb/269/Q269234/
 
 ## Q269234: XFOR: SNADS Connector Stops Processing Messages
 
+{% raw %}
+
 	Article: Q269234
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -62,3 +64,5 @@ permalink: /kb/269/Q269234/
 	
 	=============================================================================
 	
+
+{% endraw %}

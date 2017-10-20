@@ -6,6 +6,8 @@ permalink: /kb/066/Q66105/
 
 ## Q66105: Code Generation Error with /Gs
 
+{% raw %}
+
 	Article: Q66105
 	Product(s): See article
 	Version(s): 6.00  6.00a | 6.00 6.00a
@@ -89,3 +91,5 @@ permalink: /kb/066/Q66105/
 	Microsoft has confirmed this to be a problem with the C compiler
 	versions 6.00 and 6.00a. We are researching this problem and will post
 	new information here as it becomes available.
+
+{% endraw %}

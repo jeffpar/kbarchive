@@ -6,6 +6,8 @@ permalink: /kb/243/Q243911/
 
 ## Q243911: WD97: Error or Word Quits When Trying to Split Table Cells
 
+{% raw %}
+
 	Article: Q243911
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/243/Q243911/
 	
 	=============================================================================
 	
+
+{% endraw %}

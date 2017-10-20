@@ -6,6 +6,8 @@ permalink: /kb/138/Q138028/
 
 ## Q138028: PPT: Inserted Media Player Object Is Linked, Not Embedded
 
+{% raw %}
+
 	Article: Q138028
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,4.0,7.0
@@ -62,3 +64,5 @@ permalink: /kb/138/Q138028/
 	
 	=============================================================================
 	
+
+{% endraw %}

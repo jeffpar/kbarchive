@@ -6,6 +6,8 @@ permalink: /kb/050/Q50047/
 
 ## Q50047: Mac Wkst: Security for Changing Password
 
+{% raw %}
+
 	Article: Q50047
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -41,3 +43,5 @@ permalink: /kb/050/Q50047/
 	
 	=============================================================================
 	
+
+{% endraw %}

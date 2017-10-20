@@ -6,6 +6,8 @@ permalink: /kb/172/Q172235/
 
 ## Q172235: Extraction Failed-Service Pack Setup Error When Loading SP3
 
+{% raw %}
+
 	Article: Q172235
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -89,3 +91,5 @@ permalink: /kb/172/Q172235/
 	
 	=============================================================================
 	
+
+{% endraw %}

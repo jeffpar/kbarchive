@@ -6,6 +6,8 @@ permalink: /kb/165/Q165077/
 
 ## Q165077: WD97: Clipart Loses Objects in Word Picture Editor
 
+{% raw %}
+
 	Article: Q165077
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/165/Q165077/
 	
 	=============================================================================
 	
+
+{% endraw %}

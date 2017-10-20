@@ -6,6 +6,8 @@ permalink: /kb/147/Q147320/
 
 ## Q147320: World of Flight: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q147320
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/147/Q147320/
 	
 	=============================================================================
 	
+
+{% endraw %}

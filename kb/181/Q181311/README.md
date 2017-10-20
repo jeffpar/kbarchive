@@ -6,6 +6,8 @@ permalink: /kb/181/Q181311/
 
 ## Q181311: Data Corruption Occurs with Record Locking on FPNW Server
 
+{% raw %}
+
 	Article: Q181311
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0;Windows:95
@@ -65,3 +67,5 @@ permalink: /kb/181/Q181311/
 	
 	=============================================================================
 	
+
+{% endraw %}

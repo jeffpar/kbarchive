@@ -6,6 +6,8 @@ permalink: /kb/036/Q36885/
 
 ## Q36885: CVP Accessing I/O Ports
 
+{% raw %}
+
 	Article: Q36885
 	Product(s): See article
 	Version(s): 2.20 2.30
@@ -24,3 +26,5 @@ permalink: /kb/036/Q36885/
 	Microsoft has confirmed this to be a problem in Version 2.20. We are
 	researching this problem and will post new information as it becomes
 	available.
+
+{% endraw %}

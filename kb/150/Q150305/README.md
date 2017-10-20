@@ -6,6 +6,8 @@ permalink: /kb/150/Q150305/
 
 ## Q150305: DEC FDDI Adapters Fail to Respond to Broadcasts
 
+{% raw %}
+
 	Article: Q150305
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -73,3 +75,5 @@ permalink: /kb/150/Q150305/
 	
 	=============================================================================
 	
+
+{% endraw %}

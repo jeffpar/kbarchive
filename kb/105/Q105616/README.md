@@ -6,6 +6,8 @@ permalink: /kb/105/Q105616/
 
 ## Q105616: MS-DOS 6.2 Upgrade Directory Listing for 3.5-Inch 1.44 MB Set
 
+{% raw %}
+
 	Article: Q105616
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -210,3 +212,5 @@ permalink: /kb/105/Q105616/
 	
 	=============================================================================
 	
+
+{% endraw %}

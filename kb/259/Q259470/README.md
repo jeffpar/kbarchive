@@ -6,6 +6,8 @@ permalink: /kb/259/Q259470/
 
 ## Q259470: Practical Standards for Visual Basic Comment and Corrections
 
+{% raw %}
+
 	Article: Q259470
 	Product(s): Microsoft Press
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/259/Q259470/
 	
 	=============================================================================
 	
+
+{% endraw %}

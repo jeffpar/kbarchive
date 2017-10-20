@@ -6,6 +6,8 @@ permalink: /kb/151/Q151784/
 
 ## Q151784: XADM: Err Msg: Originator Does Not Have Permission
 
+{% raw %}
+
 	Article: Q151784
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -86,3 +88,5 @@ permalink: /kb/151/Q151784/
 	
 	=============================================================================
 	
+
+{% endraw %}

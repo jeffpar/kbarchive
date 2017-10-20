@@ -6,6 +6,8 @@ permalink: /kb/152/Q152252/
 
 ## Q152252: HOWTO: How To Get 32-bit Scroll Position During Scroll Messages
 
+{% raw %}
+
 	Article: Q152252
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1
@@ -100,3 +102,5 @@ permalink: /kb/152/Q152252/
 	
 	=============================================================================
 	
+
+{% endraw %}

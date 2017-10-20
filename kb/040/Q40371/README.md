@@ -6,6 +6,8 @@ permalink: /kb/040/Q40371/
 
 ## Q40371: Using Medium and Large Memory FORTRAN Models with BASIC
 
+{% raw %}
+
 	Article: Q40371
 	Product(s): See article
 	Version(s): 4.50
@@ -111,3 +113,5 @@ permalink: /kb/040/Q40371/
 	      CHARACTER*44 STR2  [FAR]
 	      WRITE (*,*) STR1, STR2, STR3, STR4
 	      END
+
+{% endraw %}

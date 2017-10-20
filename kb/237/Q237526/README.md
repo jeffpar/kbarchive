@@ -6,6 +6,8 @@ permalink: /kb/237/Q237526/
 
 ## Q237526: Encarta Dictionary 2000: Office Integration Is Lost
 
+{% raw %}
+
 	Article: Q237526
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -126,3 +128,5 @@ permalink: /kb/237/Q237526/
 	
 	=============================================================================
 	
+
+{% endraw %}

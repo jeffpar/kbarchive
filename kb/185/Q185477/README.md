@@ -6,6 +6,8 @@ permalink: /kb/185/Q185477/
 
 ## Q185477: BUG: ActiveX Control in MDI Child Form Does Not Maintain Focus
 
+{% raw %}
+
 	Article: Q185477
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -105,3 +107,5 @@ permalink: /kb/185/Q185477/
 	
 	=============================================================================
 	
+
+{% endraw %}

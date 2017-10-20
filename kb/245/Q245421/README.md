@@ -6,6 +6,8 @@ permalink: /kb/245/Q245421/
 
 ## Q245421: XCLN: Summary of Nickname Features in Different Outlook Versions
 
+{% raw %}
+
 	Article: Q245421
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,97,98
@@ -201,3 +203,5 @@ permalink: /kb/245/Q245421/
 	
 	=============================================================================
 	
+
+{% endraw %}

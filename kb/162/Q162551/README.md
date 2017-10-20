@@ -6,6 +6,8 @@ permalink: /kb/162/Q162551/
 
 ## Q162551: FIX: TOBROWSER Error when Closing Class Browser Window
 
+{% raw %}
+
 	Article: Q162551
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -71,3 +73,5 @@ permalink: /kb/162/Q162551/
 	
 	=============================================================================
 	
+
+{% endraw %}

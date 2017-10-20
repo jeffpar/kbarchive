@@ -6,6 +6,8 @@ permalink: /kb/133/Q133235/
 
 ## Q133235: Dogs: Text on Screen Is Not Printed
 
+{% raw %}
+
 	Article: Q133235
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/133/Q133235/
 	
 	=============================================================================
 	
+
+{% endraw %}

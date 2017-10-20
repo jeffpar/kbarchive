@@ -6,6 +6,8 @@ permalink: /kb/082/Q82823/
 
 ## Q82823: How Does Cardfile Verify Writes?
 
+{% raw %}
+
 	Article: Q82823
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -75,3 +77,5 @@ permalink: /kb/082/Q82823/
 	
 	=============================================================================
 	
+
+{% endraw %}

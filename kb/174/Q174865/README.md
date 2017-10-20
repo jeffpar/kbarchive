@@ -6,6 +6,8 @@ permalink: /kb/174/Q174865/
 
 ## Q174865: Compressed Read-Only Drive Not Mounted at Startup
 
+{% raw %}
+
 	Article: Q174865
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -64,3 +66,5 @@ permalink: /kb/174/Q174865/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145961/
 
 ## Q145961: XCLN: Err Msg: The Folder Could Not Be Opened...
 
+{% raw %}
+
 	Article: Q145961
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -72,3 +74,5 @@ permalink: /kb/145/Q145961/
 	
 	=============================================================================
 	
+
+{% endraw %}

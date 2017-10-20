@@ -6,6 +6,8 @@ permalink: /kb/315/Q315614/
 
 ## Q315614: Games Err Msg: &quot;Signal Out of Range&quot; or &quot;Out of scan range&quot;
 
+{% raw %}
+
 	Article: Q315614
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -141,3 +143,5 @@ permalink: /kb/315/Q315614/
 	
 	=============================================================================
 	
+
+{% endraw %}

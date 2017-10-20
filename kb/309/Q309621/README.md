@@ -6,6 +6,8 @@ permalink: /kb/309/Q309621/
 
 ## Q309621: PRB: Index Server Cannot Query Documents Over 256 KB
 
+{% raw %}
+
 	Article: Q309621
 	Product(s): Internet Information Server
 	Version(s): 2.0,3.0
@@ -72,3 +74,5 @@ permalink: /kb/309/Q309621/
 	
 	=============================================================================
 	
+
+{% endraw %}

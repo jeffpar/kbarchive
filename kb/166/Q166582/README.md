@@ -6,6 +6,8 @@ permalink: /kb/166/Q166582/
 
 ## Q166582: XCLN: Delegates Stop Receiving Schedule+ Meeting Requests
 
+{% raw %}
+
 	Article: Q166582
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -61,3 +63,5 @@ permalink: /kb/166/Q166582/
 	
 	=============================================================================
 	
+
+{% endraw %}

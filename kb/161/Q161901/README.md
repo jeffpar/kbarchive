@@ -6,6 +6,8 @@ permalink: /kb/161/Q161901/
 
 ## Q161901: BUG: Table Wizard Cannot Overwrite Text File
 
+{% raw %}
+
 	Article: Q161901
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -78,3 +80,5 @@ permalink: /kb/161/Q161901/
 	
 	=============================================================================
 	
+
+{% endraw %}

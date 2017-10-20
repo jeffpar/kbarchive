@@ -6,6 +6,8 @@ permalink: /kb/157/Q157424/
 
 ## Q157424: PRB: Remote View Displays Empty Date Fields with 12/30/1899
 
+{% raw %}
+
 	Article: Q157424
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/157/Q157424/
 	
 	=============================================================================
 	
+
+{% endraw %}

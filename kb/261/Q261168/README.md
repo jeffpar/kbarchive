@@ -6,6 +6,8 @@ permalink: /kb/261/Q261168/
 
 ## Q261168: WD97: Clicking Page Number in TOC Opens Web Toolbar
 
+{% raw %}
+
 	Article: Q261168
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -65,3 +67,5 @@ permalink: /kb/261/Q261168/
 	
 	=============================================================================
 	
+
+{% endraw %}

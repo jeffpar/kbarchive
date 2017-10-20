@@ -6,6 +6,8 @@ permalink: /kb/269/Q269691/
 
 ## Q269691: XADM: How to Remove Public Folders from the Internet Newsgroups
 
+{% raw %}
+
 	Article: Q269691
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -74,3 +76,5 @@ permalink: /kb/269/Q269691/
 	
 	=============================================================================
 	
+
+{% endraw %}

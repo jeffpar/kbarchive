@@ -6,6 +6,8 @@ permalink: /kb/318/Q318995/
 
 ## Q318995: FIX: When You Mix TEXT TO and SET TEXTMERGE Commnds Error Occurs
 
+{% raw %}
+
 	Article: Q318995
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -84,3 +86,5 @@ permalink: /kb/318/Q318995/
 	
 	=============================================================================
 	
+
+{% endraw %}

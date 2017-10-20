@@ -6,6 +6,8 @@ permalink: /kb/177/Q177566/
 
 ## Q177566: Unable to Receive E-mail on The Microsoft Network
 
+{% raw %}
+
 	Article: Q177566
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3,2.0
@@ -55,3 +57,5 @@ permalink: /kb/177/Q177566/
 	
 	=============================================================================
 	
+
+{% endraw %}

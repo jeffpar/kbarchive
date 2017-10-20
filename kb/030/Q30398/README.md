@@ -6,6 +6,8 @@ permalink: /kb/030/Q30398/
 
 ## Q30398: EXTRN Data Items Placed Outside Segment
 
+{% raw %}
+
 	Article: Q30398
 	Product(s): See article
 	Version(s): 5.10
@@ -36,3 +38,5 @@ permalink: /kb/030/Q30398/
 	ASSUME statements), the DS register will be associated with all data
 	items by default because you declared all EXTRN items outside
 	segments.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/225/Q225547/
 
 ## Q225547: Delete Printer and Port Created with HP Internet Printer Connect
 
+{% raw %}
+
 	Article: Q225547
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/225/Q225547/
 	
 	=============================================================================
 	
+
+{% endraw %}

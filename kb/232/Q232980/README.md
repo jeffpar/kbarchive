@@ -6,6 +6,8 @@ permalink: /kb/232/Q232980/
 
 ## Q232980: PRB: Publisher 2000 by Design Comments and Corrections
 
+{% raw %}
+
 	Article: Q232980
 	Product(s): Microsoft Press
 	Version(s): 
@@ -331,3 +333,5 @@ permalink: /kb/232/Q232980/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/057/Q57561/
 
 ## Q57561: Mac DOS: Support for Hercules InColor Graphics Cards
 
+{% raw %}
+
 	Article: Q57561
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.37,2.0,3.0
@@ -51,3 +53,5 @@ permalink: /kb/057/Q57561/
 	
 	=============================================================================
 	
+
+{% endraw %}

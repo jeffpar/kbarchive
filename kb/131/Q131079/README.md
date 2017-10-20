@@ -6,6 +6,8 @@ permalink: /kb/131/Q131079/
 
 ## Q131079: Mac MSPlus: Schedule Information Only Distributed for 3 Months
 
+{% raw %}
+
 	Article: Q131079
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 
@@ -35,3 +37,5 @@ permalink: /kb/131/Q131079/
 	
 	=============================================================================
 	
+
+{% endraw %}

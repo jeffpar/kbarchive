@@ -6,6 +6,8 @@ permalink: /kb/087/Q87257/
 
 ## Q87257: Mac Adm: Network Administrator Program Closes at Startup
 
+{% raw %}
+
 	Article: Q87257
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -46,3 +48,5 @@ permalink: /kb/087/Q87257/
 	
 	=============================================================================
 	
+
+{% endraw %}

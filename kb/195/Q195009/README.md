@@ -6,6 +6,8 @@ permalink: /kb/195/Q195009/
 
 ## Q195009: Application Access Violation or Hang After Applying SP4
 
+{% raw %}
+
 	Article: Q195009
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -122,3 +124,5 @@ permalink: /kb/195/Q195009/
 	
 	=============================================================================
 	
+
+{% endraw %}

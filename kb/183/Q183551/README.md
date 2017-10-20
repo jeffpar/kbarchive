@@ -6,6 +6,8 @@ permalink: /kb/183/Q183551/
 
 ## Q183551: Unable to Locate Host Column Description File
 
+{% raw %}
+
 	Article: Q183551
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -67,3 +69,5 @@ permalink: /kb/183/Q183551/
 	
 	=============================================================================
 	
+
+{% endraw %}

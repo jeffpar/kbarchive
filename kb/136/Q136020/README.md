@@ -6,6 +6,8 @@ permalink: /kb/136/Q136020/
 
 ## Q136020: INFO: Glyphs in Visual C++ with Source Code Control Enabled
 
+{% raw %}
+
 	Article: Q136020
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/136/Q136020/
 	
 	=============================================================================
 	
+
+{% endraw %}

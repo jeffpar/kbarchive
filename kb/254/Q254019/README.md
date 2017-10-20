@@ -6,6 +6,8 @@ permalink: /kb/254/Q254019/
 
 ## Q254019: &quot;Unable to Create Symbolic Link&quot; Error When Installing Modem
 
+{% raw %}
+
 	Article: Q254019
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -94,3 +96,5 @@ permalink: /kb/254/Q254019/
 	
 	=============================================================================
 	
+
+{% endraw %}

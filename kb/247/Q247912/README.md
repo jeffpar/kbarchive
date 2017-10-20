@@ -6,6 +6,8 @@ permalink: /kb/247/Q247912/
 
 ## Q247912: PRB: Property Page of Data-Aware Controls Is Blank w/CRViewer
 
+{% raw %}
+
 	Article: Q247912
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -75,3 +77,5 @@ permalink: /kb/247/Q247912/
 	
 	=============================================================================
 	
+
+{% endraw %}

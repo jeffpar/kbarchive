@@ -6,6 +6,8 @@ permalink: /kb/079/Q79843/
 
 ## Q79843: FIX: SYS1811 or A2087 and A2006 Incorrectly Generated
 
+{% raw %}
+
 	Article: Q79843
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0
@@ -70,3 +72,5 @@ permalink: /kb/079/Q79843/
 	
 	=============================================================================
 	
+
+{% endraw %}

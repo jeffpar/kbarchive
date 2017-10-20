@@ -6,6 +6,8 @@ permalink: /kb/132/Q132877/
 
 ## Q132877: PC NTMMTA: RebootOnCE Does Not Work with NT MMTA
 
+{% raw %}
+
 	Article: Q132877
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -44,3 +46,5 @@ permalink: /kb/132/Q132877/
 	
 	=============================================================================
 	
+
+{% endraw %}

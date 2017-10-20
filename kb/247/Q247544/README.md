@@ -6,6 +6,8 @@ permalink: /kb/247/Q247544/
 
 ## Q247544: Understanding Electronic Commerce Comments and Corrections
 
+{% raw %}
+
 	Article: Q247544
 	Product(s): Microsoft Press
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/247/Q247544/
 	
 	=============================================================================
 	
+
+{% endraw %}

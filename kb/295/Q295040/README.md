@@ -6,6 +6,8 @@ permalink: /kb/295/Q295040/
 
 ## Q295040: SMS: How to Enable SQL Cache Logging in SMS Provider
 
+{% raw %}
+
 	Article: Q295040
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -110,3 +112,5 @@ permalink: /kb/295/Q295040/
 	
 	=============================================================================
 	
+
+{% endraw %}

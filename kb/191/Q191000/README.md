@@ -6,6 +6,8 @@ permalink: /kb/191/Q191000/
 
 ## Q191000: BUG: Unexpected Error Entering Break Mode in Shared Module
 
+{% raw %}
+
 	Article: Q191000
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -115,3 +117,5 @@ permalink: /kb/191/Q191000/
 	
 	=============================================================================
 	
+
+{% endraw %}

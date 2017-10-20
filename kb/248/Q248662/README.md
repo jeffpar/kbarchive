@@ -6,6 +6,8 @@ permalink: /kb/248/Q248662/
 
 ## Q248662: Internet Information Server Help File Does Not Open
 
+{% raw %}
+
 	Article: Q248662
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/248/Q248662/
 	
 	=============================================================================
 	
+
+{% endraw %}

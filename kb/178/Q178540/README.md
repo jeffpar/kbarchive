@@ -6,6 +6,8 @@ permalink: /kb/178/Q178540/
 
 ## Q178540: XCON: Viewing Embedded Message Displays Compose Window
 
+{% raw %}
+
 	Article: Q178540
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -71,3 +73,5 @@ permalink: /kb/178/Q178540/
 	
 	=============================================================================
 	
+
+{% endraw %}

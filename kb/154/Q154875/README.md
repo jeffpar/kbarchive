@@ -6,6 +6,8 @@ permalink: /kb/154/Q154875/
 
 ## Q154875: File &amp; Print Services for NetWare May Stop Intermittently
 
+{% raw %}
+
 	Article: Q154875
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -88,3 +90,5 @@ permalink: /kb/154/Q154875/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170628/
 
 ## Q170628: MTG: MTA Error: Mailbag Truncated by Up_retries
 
+{% raw %}
+
 	Article: Q170628
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -87,3 +89,5 @@ permalink: /kb/170/Q170628/
 	
 	=============================================================================
 	
+
+{% endraw %}

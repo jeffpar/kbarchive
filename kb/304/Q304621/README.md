@@ -6,6 +6,8 @@ permalink: /kb/304/Q304621/
 
 ## Q304621: Read Access to Hidden Files on NTFS Partition Seems to Be Lost
 
+{% raw %}
+
 	Article: Q304621
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,2.1 OEM Only
@@ -79,3 +81,5 @@ permalink: /kb/304/Q304621/
 	
 	=============================================================================
 	
+
+{% endraw %}

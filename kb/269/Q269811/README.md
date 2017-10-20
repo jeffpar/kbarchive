@@ -6,6 +6,8 @@ permalink: /kb/269/Q269811/
 
 ## Q269811: MSB Setup Err Msg: There Isn't Enough Free Space on That Drive
 
+{% raw %}
+
 	Article: Q269811
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -187,3 +189,5 @@ permalink: /kb/269/Q269811/
 	
 	=============================================================================
 	
+
+{% endraw %}

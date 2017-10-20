@@ -6,6 +6,8 @@ permalink: /kb/156/Q156614/
 
 ## Q156614: Writer 2: Print Dialog Incorrectly Indicates 4 Pages to Print
 
+{% raw %}
+
 	Article: Q156614
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -37,3 +39,5 @@ permalink: /kb/156/Q156614/
 	
 	=============================================================================
 	
+
+{% endraw %}

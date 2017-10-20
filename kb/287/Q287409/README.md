@@ -6,6 +6,8 @@ permalink: /kb/287/Q287409/
 
 ## Q287409: Last Hardware Scan Date Is Incremented by One Month
 
+{% raw %}
+
 	Article: Q287409
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -68,3 +70,5 @@ permalink: /kb/287/Q287409/
 	
 	=============================================================================
 	
+
+{% endraw %}

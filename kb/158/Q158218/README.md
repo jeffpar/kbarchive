@@ -6,6 +6,8 @@ permalink: /kb/158/Q158218/
 
 ## Q158218: INFO: Support Options for Visual SourceSafe
 
+{% raw %}
+
 	Article: Q158218
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0,6.0
@@ -176,3 +178,5 @@ permalink: /kb/158/Q158218/
 	
 	=============================================================================
 	
+
+{% endraw %}

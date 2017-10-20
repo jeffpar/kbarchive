@@ -6,6 +6,8 @@ permalink: /kb/160/Q160597/
 
 ## Q160597: Mac Multimedia: Page Setup Option Doesn't Function Properly
 
+{% raw %}
+
 	Article: Q160597
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -51,3 +53,5 @@ permalink: /kb/160/Q160597/
 	
 	=============================================================================
 	
+
+{% endraw %}

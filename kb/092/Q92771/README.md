@@ -6,6 +6,8 @@ permalink: /kb/092/Q92771/
 
 ## Q92771: 3Com EtherLink II Card Not Detected During Setup of WFWG
 
+{% raw %}
+
 	Article: Q92771
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -87,3 +89,5 @@ permalink: /kb/092/Q92771/
 	
 	=============================================================================
 	
+
+{% endraw %}

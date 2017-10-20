@@ -6,6 +6,8 @@ permalink: /kb/171/Q171064/
 
 ## Q171064: FIX: C2512 Instantiating Template in Member Initializer
 
+{% raw %}
+
 	Article: Q171064
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0sp1,5.0sp3
@@ -88,3 +90,5 @@ permalink: /kb/171/Q171064/
 	
 	=============================================================================
 	
+
+{% endraw %}

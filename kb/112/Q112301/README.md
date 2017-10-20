@@ -6,6 +6,8 @@ permalink: /kb/112/Q112301/
 
 ## Q112301: PC Dirsync: Err Msg: File Error Sorting Queue Usrtrans.glb
 
+{% raw %}
+
 	Article: Q112301
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.5
@@ -122,3 +124,5 @@ permalink: /kb/112/Q112301/
 	
 	=============================================================================
 	
+
+{% endraw %}

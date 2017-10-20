@@ -6,6 +6,8 @@ permalink: /kb/124/Q124546/
 
 ## Q124546: Multimedia: Compressed Audio and the Ensoniq Soundscape Card
 
+{% raw %}
+
 	Article: Q124546
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,3.1,3.11
@@ -115,3 +117,5 @@ permalink: /kb/124/Q124546/
 	
 	=============================================================================
 	
+
+{% endraw %}

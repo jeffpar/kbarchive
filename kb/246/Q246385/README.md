@@ -6,6 +6,8 @@ permalink: /kb/246/Q246385/
 
 ## Q246385: XFOR: Directory Entries Not Imported From Novell GroupWise
 
+{% raw %}
+
 	Article: Q246385
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -89,3 +91,5 @@ permalink: /kb/246/Q246385/
 	
 	=============================================================================
 	
+
+{% endraw %}

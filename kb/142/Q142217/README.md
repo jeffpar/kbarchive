@@ -6,6 +6,8 @@ permalink: /kb/142/Q142217/
 
 ## Q142217: Encarta World Atlas 1996: Setup Fails with NexGen CPU
 
+{% raw %}
+
 	Article: Q142217
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996
@@ -117,3 +119,5 @@ permalink: /kb/142/Q142217/
 	
 	=============================================================================
 	
+
+{% endraw %}

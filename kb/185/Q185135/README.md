@@ -6,6 +6,8 @@ permalink: /kb/185/Q185135/
 
 ## Q185135: Zone: Wrong Game Is Displayed When You Click a Game Room Link
 
+{% raw %}
+
 	Article: Q185135
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/185/Q185135/
 	
 	=============================================================================
 	
+
+{% endraw %}

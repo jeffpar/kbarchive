@@ -6,6 +6,8 @@ permalink: /kb/073/Q73580/
 
 ## Q73580: Configuring AutoCAD 386 or AutoCAD Release 11 with MS-DOS
 
+{% raw %}
+
 	Article: Q73580
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -85,3 +87,5 @@ permalink: /kb/073/Q73580/
 	
 	=============================================================================
 	
+
+{% endraw %}

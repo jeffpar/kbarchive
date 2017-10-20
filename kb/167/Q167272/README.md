@@ -6,6 +6,8 @@ permalink: /kb/167/Q167272/
 
 ## Q167272: HP NetServer Running Redundant Power Supply Agent Restarts
 
+{% raw %}
+
 	Article: Q167272
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/167/Q167272/
 	
 	=============================================================================
 	
+
+{% endraw %}

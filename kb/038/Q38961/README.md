@@ -6,6 +6,8 @@ permalink: /kb/038/Q38961/
 
 ## Q38961: &quot;Input Run-Time Module Path:&quot; on DOS 2.10; QuickBASIC 4.50
 
+{% raw %}
+
 	Article: Q38961
 	Product(s): See article
 	Version(s): 4.50
@@ -34,3 +36,5 @@ permalink: /kb/038/Q38961/
 	run-time module in the path, as in the following example:
 	
 	   SET PATH=c:\subdir
+
+{% endraw %}

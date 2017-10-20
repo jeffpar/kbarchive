@@ -6,6 +6,8 @@ permalink: /kb/156/Q156861/
 
 ## Q156861: FP: Words That Are Ignored by the WebBot Search Component
 
+{% raw %}
+
 	Article: Q156861
 	Product(s): Word Front Page
 	Version(s): 1.0,1.1
@@ -445,3 +447,5 @@ permalink: /kb/156/Q156861/
 	
 	=============================================================================
 	
+
+{% endraw %}

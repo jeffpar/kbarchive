@@ -6,6 +6,8 @@ permalink: /kb/065/Q65504/
 
 ## Q65504: BASIC &quot;Statements/Labels Illegal Between SELECT CASE and CASE&quot;
 
+{% raw %}
+
 	Article: Q65504
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -62,3 +64,5 @@ permalink: /kb/065/Q65504/
 	        CASE ELSE
 	           PRINT "RESPONSE OUT OF RANGE"
 	     END SELECT
+
+{% endraw %}

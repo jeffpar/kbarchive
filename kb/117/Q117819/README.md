@@ -6,6 +6,8 @@ permalink: /kb/117/Q117819/
 
 ## Q117819: Mac Cinemania 94: No Sound or Intermittent Sound When Running
 
+{% raw %}
+
 	Article: Q117819
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -61,3 +63,5 @@ permalink: /kb/117/Q117819/
 	
 	=============================================================================
 	
+
+{% endraw %}

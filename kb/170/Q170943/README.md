@@ -6,6 +6,8 @@ permalink: /kb/170/Q170943/
 
 ## Q170943: WD97: Clicking a Suggestion in Spelling And Grammar Causes IPF
 
+{% raw %}
+
 	Article: Q170943
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -64,3 +66,5 @@ permalink: /kb/170/Q170943/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172275/
 
 ## Q172275: FIX: DBCombo's Drop-Down Does Not Work with Mouse in Modal Form
 
+{% raw %}
+
 	Article: Q172275
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -117,3 +119,5 @@ permalink: /kb/172/Q172275/
 	
 	=============================================================================
 	
+
+{% endraw %}

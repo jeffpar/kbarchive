@@ -6,6 +6,8 @@ permalink: /kb/107/Q107501/
 
 ## Q107501: INFO: &#95;&#95;declspec(dllexport) Replaces &#95;&#95;export in 32-Bit VC++
 
+{% raw %}
+
 	Article: Q107501
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS NT:1.0,2.0,4.0,5.0,6.0
@@ -162,3 +164,5 @@ permalink: /kb/107/Q107501/
 	
 	=============================================================================
 	
+
+{% endraw %}

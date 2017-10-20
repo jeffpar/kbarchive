@@ -6,6 +6,8 @@ permalink: /kb/316/Q316746/
 
 ## Q316746: TN3270E Print Jobs Have &quot;Spooling&quot; Status and Do Not Print
 
+{% raw %}
+
 	Article: Q316746
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP3,4.0 SP4
@@ -126,3 +128,5 @@ permalink: /kb/316/Q316746/
 	
 	=============================================================================
 	
+
+{% endraw %}

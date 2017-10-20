@@ -6,6 +6,8 @@ permalink: /kb/187/Q187139/
 
 ## Q187139: Difficult to Determine Who Is Connected to a Terminal Server
 
+{% raw %}
+
 	Article: Q187139
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -51,3 +53,5 @@ permalink: /kb/187/Q187139/
 	
 	=============================================================================
 	
+
+{% endraw %}

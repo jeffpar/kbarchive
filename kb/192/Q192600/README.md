@@ -6,6 +6,8 @@ permalink: /kb/192/Q192600/
 
 ## Q192600: Home Essentials 98 Continually Prompts for Encarta 98 CD-ROM
 
+{% raw %}
+
 	Article: Q192600
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -71,3 +73,5 @@ permalink: /kb/192/Q192600/
 	
 	=============================================================================
 	
+
+{% endraw %}

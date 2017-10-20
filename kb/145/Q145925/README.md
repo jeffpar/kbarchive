@@ -6,6 +6,8 @@ permalink: /kb/145/Q145925/
 
 ## Q145925: Japanese Windows 95 Doesn't Support Console Keisen Ruled Lines
 
+{% raw %}
+
 	Article: Q145925
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 4.0
@@ -52,3 +54,5 @@ permalink: /kb/145/Q145925/
 	
 	=============================================================================
 	
+
+{% endraw %}

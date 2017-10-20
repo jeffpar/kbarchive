@@ -6,6 +6,8 @@ permalink: /kb/291/Q291826/
 
 ## Q291826: PRB: 16-Bit SNA Client Fails Under Windows Millennium Edition
 
+{% raw %}
+
 	Article: Q291826
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -56,3 +58,5 @@ permalink: /kb/291/Q291826/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198605/
 
 ## Q198605: BUG: Find Next Crashes After Closing a Maximized Code Window
 
+{% raw %}
+
 	Article: Q198605
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -105,3 +107,5 @@ permalink: /kb/198/Q198605/
 	
 	=============================================================================
 	
+
+{% endraw %}

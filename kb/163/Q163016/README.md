@@ -6,6 +6,8 @@ permalink: /kb/163/Q163016/
 
 ## Q163016: Access Violation in GetHonestyLicense Using TN3270 Server
 
+{% raw %}
+
 	Article: Q163016
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -59,3 +61,5 @@ permalink: /kb/163/Q163016/
 	
 	=============================================================================
 	
+
+{% endraw %}

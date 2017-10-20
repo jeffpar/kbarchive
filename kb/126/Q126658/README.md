@@ -6,6 +6,8 @@ permalink: /kb/126/Q126658/
 
 ## Q126658: PC MAPI: Sample C Code for MAPIAddress Function Call
 
+{% raw %}
+
 	Article: Q126658
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -75,3 +77,5 @@ permalink: /kb/126/Q126658/
 	
 	=============================================================================
 	
+
+{% endraw %}

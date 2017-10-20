@@ -6,6 +6,8 @@ permalink: /kb/246/Q246836/
 
 ## Q246836: User Manager for Domains and Server Manager Cannot Find PDC
 
+{% raw %}
+
 	Article: Q246836
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -73,3 +75,5 @@ permalink: /kb/246/Q246836/
 	
 	=============================================================================
 	
+
+{% endraw %}

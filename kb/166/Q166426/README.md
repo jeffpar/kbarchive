@@ -6,6 +6,8 @@ permalink: /kb/166/Q166426/
 
 ## Q166426: Internet Explorer in PCWNT Cannot View Chinese BIG5 Characters.
 
+{% raw %}
+
 	Article: Q166426
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -88,3 +90,5 @@ permalink: /kb/166/Q166426/
 	
 	=============================================================================
 	
+
+{% endraw %}

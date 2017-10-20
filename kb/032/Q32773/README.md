@@ -6,6 +6,8 @@ permalink: /kb/032/Q32773/
 
 ## Q32773: LOCAL Directive Incorrect for Large Types
 
+{% raw %}
+
 	Article: Q32773
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -42,3 +44,5 @@ permalink: /kb/032/Q32773/
 	L4......................... TEXT    DWORD PTR [BP]-6
 	L6......................... TEXT    FWORD PTR [BP]-10
 	L8......................... TEXT    QWORD PTR [BP]-16
+
+{% endraw %}

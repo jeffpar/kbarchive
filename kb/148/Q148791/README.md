@@ -6,6 +6,8 @@ permalink: /kb/148/Q148791/
 
 ## Q148791: HOWTO: How to Provide Your Own DllMain in an MFC Regular DLL
 
+{% raw %}
+
 	Article: Q148791
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -193,3 +195,5 @@ permalink: /kb/148/Q148791/
 	
 	=============================================================================
 	
+
+{% endraw %}

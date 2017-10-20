@@ -6,6 +6,8 @@ permalink: /kb/137/Q137001/
 
 ## Q137001: Automatic Mounting in Real Mode Disabled in DriveSpace 3
 
+{% raw %}
+
 	Article: Q137001
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -105,3 +107,5 @@ permalink: /kb/137/Q137001/
 	
 	=============================================================================
 	
+
+{% endraw %}

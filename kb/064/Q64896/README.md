@@ -6,6 +6,8 @@ permalink: /kb/064/Q64896/
 
 ## Q64896: &quot;Statement Unrecognizable&quot; Using &quot;_&quot; in DATA Statement
 
+{% raw %}
+
 	Article: Q64896
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -29,3 +31,5 @@ permalink: /kb/064/Q64896/
 	versions 6.00 and 6.00b for MS-DOS; and to Microsoft BASIC
 	Professional Development System (PDS) versions 7.00 and 7.10 for
 	MS-DOS and MS OS/2.
+
+{% endraw %}

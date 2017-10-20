@@ -6,6 +6,8 @@ permalink: /kb/254/Q254800/
 
 ## Q254800: XADM: Rules Do Not Work When Using Custom Recipient from the GAL
 
+{% raw %}
+
 	Article: Q254800
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -81,3 +83,5 @@ permalink: /kb/254/Q254800/
 	
 	=============================================================================
 	
+
+{% endraw %}

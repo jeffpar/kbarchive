@@ -6,6 +6,8 @@ permalink: /kb/041/Q41649/
 
 ## Q41649: QuickC 2.00 README.DOC: Limits on _asm Identifiers
 
+{% raw %}
+
 	Article: Q41649
 	Product(s): See article
 	Version(s): 2.00
@@ -38,3 +40,5 @@ permalink: /kb/041/Q41649/
 	
 	The variable "word" can be used in the C part of the program, but not
 	within the assembly block.
+
+{% endraw %}

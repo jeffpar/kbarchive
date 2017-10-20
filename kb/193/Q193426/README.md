@@ -6,6 +6,8 @@ permalink: /kb/193/Q193426/
 
 ## Q193426: Virtual Globe: Statistics Are Not Listed in Alphabetical Order
 
+{% raw %}
+
 	Article: Q193426
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -44,3 +46,5 @@ permalink: /kb/193/Q193426/
 	
 	=============================================================================
 	
+
+{% endraw %}

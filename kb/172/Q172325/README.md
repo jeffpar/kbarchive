@@ -6,6 +6,8 @@ permalink: /kb/172/Q172325/
 
 ## Q172325: WD97: Color Pattern Borders Print Incorrectly on Some Printers
 
+{% raw %}
+
 	Article: Q172325
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -97,3 +99,5 @@ permalink: /kb/172/Q172325/
 	
 	=============================================================================
 	
+
+{% endraw %}

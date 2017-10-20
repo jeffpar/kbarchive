@@ -6,6 +6,8 @@ permalink: /kb/173/Q173697/
 
 ## Q173697: WD97: Word Stops Responding When You Mark Index Entries
 
+{% raw %}
+
 	Article: Q173697
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -75,3 +77,5 @@ permalink: /kb/173/Q173697/
 	
 	=============================================================================
 	
+
+{% endraw %}

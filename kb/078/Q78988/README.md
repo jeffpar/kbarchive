@@ -6,6 +6,8 @@ permalink: /kb/078/Q78988/
 
 ## Q78988: Using a Sharp JX Printer with Windows 3.1
 
+{% raw %}
+
 	Article: Q78988
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11,95
@@ -71,3 +73,5 @@ permalink: /kb/078/Q78988/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165047/
 
 ## Q165047: Get_TP_Properties Returns Incorrectly If Conversation Started
 
+{% raw %}
+
 	Article: Q165047
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -63,3 +65,5 @@ permalink: /kb/165/Q165047/
 	
 	=============================================================================
 	
+
+{% endraw %}

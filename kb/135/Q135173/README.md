@@ -6,6 +6,8 @@ permalink: /kb/135/Q135173/
 
 ## Q135173: Cannot See MDI Window Frame When Dragging Window
 
+{% raw %}
+
 	Article: Q135173
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -52,3 +54,5 @@ permalink: /kb/135/Q135173/
 	
 	=============================================================================
 	
+
+{% endraw %}

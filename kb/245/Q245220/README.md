@@ -6,6 +6,8 @@ permalink: /kb/245/Q245220/
 
 ## Q245220: Novell Management Agent Does Not Run with CSNW
 
+{% raw %}
+
 	Article: Q245220
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -67,3 +69,5 @@ permalink: /kb/245/Q245220/
 	
 	=============================================================================
 	
+
+{% endraw %}

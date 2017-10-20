@@ -6,6 +6,8 @@ permalink: /kb/094/Q94412/
 
 ## Q94412: AUTOEXEC File Is Not Processed Running 3rd-Party Shell
 
+{% raw %}
+
 	Article: Q94412
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -46,3 +48,5 @@ permalink: /kb/094/Q94412/
 	
 	=============================================================================
 	
+
+{% endraw %}

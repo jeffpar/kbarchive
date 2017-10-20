@@ -6,6 +6,8 @@ permalink: /kb/148/Q148509/
 
 ## Q148509: PRB: A2108 Error When Using Simplified Segment Directives
 
+{% raw %}
+
 	Article: Q148509
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.1,6.11
@@ -74,3 +76,5 @@ permalink: /kb/148/Q148509/
 	
 	=============================================================================
 	
+
+{% endraw %}

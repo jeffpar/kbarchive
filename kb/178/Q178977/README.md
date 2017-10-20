@@ -6,6 +6,8 @@ permalink: /kb/178/Q178977/
 
 ## Q178977: WD97: Error Message in Print Preview with Excel DDE Data Source
 
+{% raw %}
+
 	Article: Q178977
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -125,3 +127,5 @@ permalink: /kb/178/Q178977/
 	
 	=============================================================================
 	
+
+{% endraw %}

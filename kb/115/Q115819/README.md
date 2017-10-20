@@ -6,6 +6,8 @@ permalink: /kb/115/Q115819/
 
 ## Q115819: QuickShelf: Highlighted Word Not Searched on with NT
 
+{% raw %}
+
 	Article: Q115819
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,1995 edition
@@ -46,3 +48,5 @@ permalink: /kb/115/Q115819/
 	
 	=============================================================================
 	
+
+{% endraw %}

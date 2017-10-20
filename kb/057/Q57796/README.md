@@ -6,6 +6,8 @@ permalink: /kb/057/Q57796/
 
 ## Q57796: QBX.EXE 7.00 Editor Black &amp; White Only on PS/2 Model 60 &amp; 80
 
+{% raw %}
+
 	Article: Q57796
 	Product(s): See article
 	Version(s): 7.00
@@ -57,3 +59,5 @@ permalink: /kb/057/Q57796/
 	
 	4. Unplug the monitor and plug it back into the 8514 card, and correct
 	   color now returns.
+
+{% endraw %}

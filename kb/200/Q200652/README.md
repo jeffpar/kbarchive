@@ -6,6 +6,8 @@ permalink: /kb/200/Q200652/
 
 ## Q200652: SMS:Can't Install SMS 1.2 Administrator w/SMS 2.0 Administrator
 
+{% raw %}
+
 	Article: Q200652
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -66,3 +68,5 @@ permalink: /kb/200/Q200652/
 	
 	=============================================================================
 	
+
+{% endraw %}

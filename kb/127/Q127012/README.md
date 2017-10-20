@@ -6,6 +6,8 @@ permalink: /kb/127/Q127012/
 
 ## Q127012: Cinemania for Windows: Reveal TV 300 Card Jumbles AVI Clips
 
+{% raw %}
+
 	Article: Q127012
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition; WINDOWS:3.x
@@ -78,3 +80,5 @@ permalink: /kb/127/Q127012/
 	
 	=============================================================================
 	
+
+{% endraw %}

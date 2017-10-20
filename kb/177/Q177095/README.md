@@ -6,6 +6,8 @@ permalink: /kb/177/Q177095/
 
 ## Q177095: SAMPLE: SysTray.exe ActiveX Control Adds Icons to Status Area
 
+{% raw %}
+
 	Article: Q177095
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -72,3 +74,5 @@ permalink: /kb/177/Q177095/
 	
 	=============================================================================
 	
+
+{% endraw %}

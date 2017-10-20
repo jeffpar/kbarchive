@@ -6,6 +6,8 @@ permalink: /kb/221/Q221722/
 
 ## Q221722: FIX: C0000005 Fatal Error Using DIRECTORY(&quot;&#92;&#92;&#92;dirname&quot;)
 
+{% raw %}
+
 	Article: Q221722
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -77,3 +79,5 @@ permalink: /kb/221/Q221722/
 	
 	=============================================================================
 	
+
+{% endraw %}

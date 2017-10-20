@@ -6,6 +6,8 @@ permalink: /kb/075/Q75940/
 
 ## Q75940: BUG: VKD_API_Force_Key Can Cause Windows Crash
 
+{% raw %}
+
 	Article: Q75940
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0
@@ -93,3 +95,5 @@ permalink: /kb/075/Q75940/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170416/
 
 ## Q170416: ZAK Users Cannot Shut Down the Workstation
 
+{% raw %}
+
 	Article: Q170416
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0
@@ -46,3 +48,5 @@ permalink: /kb/170/Q170416/
 	
 	=============================================================================
 	
+
+{% endraw %}

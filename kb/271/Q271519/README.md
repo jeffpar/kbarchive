@@ -6,6 +6,8 @@ permalink: /kb/271/Q271519/
 
 ## Q271519: ELL French &amp; Spanish: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q271519
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/271/Q271519/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/279/Q279192/
 
 ## Q279192: FIX: Names.Dat Corruption Is Not Repaired by Analyze Utility
 
+{% raw %}
+
 	Article: Q279192
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -70,3 +72,5 @@ permalink: /kb/279/Q279192/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124648/
 
 ## Q124648: DC21040 Causes Windows NT 3.5 to Stop Responding (Hang)
 
+{% raw %}
+
 	Article: Q124648
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -61,3 +63,5 @@ permalink: /kb/124/Q124648/
 	
 	=============================================================================
 	
+
+{% endraw %}

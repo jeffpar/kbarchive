@@ -6,6 +6,8 @@ permalink: /kb/240/Q240084/
 
 ## Q240084: Asheron's Call: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q240084
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -73,3 +75,5 @@ permalink: /kb/240/Q240084/
 	
 	=============================================================================
 	
+
+{% endraw %}

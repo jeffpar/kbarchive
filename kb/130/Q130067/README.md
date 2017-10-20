@@ -6,6 +6,8 @@ permalink: /kb/130/Q130067/
 
 ## Q130067: PC Ext: Err Msg: Unable to Access :XTN&#92;xxxxxxxx.XTN...
 
+{% raw %}
+
 	Article: Q130067
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -63,3 +65,5 @@ permalink: /kb/130/Q130067/
 	
 	=============================================================================
 	
+
+{% endraw %}

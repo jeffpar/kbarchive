@@ -6,6 +6,8 @@ permalink: /kb/048/Q48743/
 
 ## Q48743: QuickC 2.00 Fails with Self-Relative PATH Variable
 
+{% raw %}
+
 	Article: Q48743
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -68,3 +70,5 @@ permalink: /kb/048/Q48743/
 	QCL                      (Get Microsoft copyright)
 	LINK                       "      "        "
 	NMAKE                      "      "        "
+
+{% endraw %}

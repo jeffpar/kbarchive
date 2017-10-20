@@ -6,6 +6,8 @@ permalink: /kb/170/Q170458/
 
 ## Q170458: Flashing Area Appears on the Desktop on a ZAK Workstation
 
+{% raw %}
+
 	Article: Q170458
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0
@@ -52,3 +54,5 @@ permalink: /kb/170/Q170458/
 	
 	=============================================================================
 	
+
+{% endraw %}

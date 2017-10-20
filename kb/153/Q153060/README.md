@@ -6,6 +6,8 @@ permalink: /kb/153/Q153060/
 
 ## Q153060: XCLN: Undeliverable Msg, Illegally Formatted to: Header Text
 
+{% raw %}
+
 	Article: Q153060
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -76,3 +78,5 @@ permalink: /kb/153/Q153060/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156343/
 
 ## Q156343: PRB: Unknown Member Error Using Thisformset.ActiveControl
 
+{% raw %}
+
 	Article: Q156343
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -102,3 +104,5 @@ permalink: /kb/156/Q156343/
 	
 	=============================================================================
 	
+
+{% endraw %}

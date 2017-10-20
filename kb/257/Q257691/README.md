@@ -6,6 +6,8 @@ permalink: /kb/257/Q257691/
 
 ## Q257691: FIX: Dynamically Loaded UserControl Does Not Send Changes
 
+{% raw %}
+
 	Article: Q257691
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -65,3 +67,5 @@ permalink: /kb/257/Q257691/
 	
 	=============================================================================
 	
+
+{% endraw %}

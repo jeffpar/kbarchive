@@ -6,6 +6,8 @@ permalink: /kb/173/Q173685/
 
 ## Q173685: INFO: Synchronizing Jet Databases Over the Internet
 
+{% raw %}
+
 	Article: Q173685
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -69,3 +71,5 @@ permalink: /kb/173/Q173685/
 	
 	=============================================================================
 	
+
+{% endraw %}

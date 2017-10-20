@@ -6,6 +6,8 @@ permalink: /kb/138/Q138071/
 
 ## Q138071: INFO: Strings Passed to DLLs in Variants Aren't Converted to ANS
 
+{% raw %}
+
 	Article: Q138071
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0
@@ -57,3 +59,5 @@ permalink: /kb/138/Q138071/
 	
 	=============================================================================
 	
+
+{% endraw %}

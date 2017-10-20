@@ -6,6 +6,8 @@ permalink: /kb/113/Q113417/
 
 ## Q113417: INFO: C4097: Typedef-Name X Used as Synonym for Class-Name Z
 
+{% raw %}
+
 	Article: Q113417
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,2.1,2.2,4.0,4.2,5.0
@@ -91,3 +93,5 @@ permalink: /kb/113/Q113417/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155639/
 
 ## Q155639: Monster Truck Madness: Setup Notes and Troubleshooting
 
+{% raw %}
+
 	Article: Q155639
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/155/Q155639/
 	
 	=============================================================================
 	
+
+{% endraw %}

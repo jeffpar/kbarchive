@@ -6,6 +6,8 @@ permalink: /kb/121/Q121528/
 
 ## Q121528: Writer/Artist: True Type Font is Required to Run Programs
 
+{% raw %}
+
 	Article: Q121528
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
@@ -59,3 +61,5 @@ permalink: /kb/121/Q121528/
 	
 	=============================================================================
 	
+
+{% endraw %}

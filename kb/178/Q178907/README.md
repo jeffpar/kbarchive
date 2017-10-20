@@ -6,6 +6,8 @@ permalink: /kb/178/Q178907/
 
 ## Q178907: XADM: Open File Backup Backs Up Inconsistent Exchange Databases
 
+{% raw %}
+
 	Article: Q178907
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -76,3 +78,5 @@ permalink: /kb/178/Q178907/
 	
 	=============================================================================
 	
+
+{% endraw %}

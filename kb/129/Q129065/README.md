@@ -6,6 +6,8 @@ permalink: /kb/129/Q129065/
 
 ## Q129065: PRB: Getsockname() Returns IP Address 0.0.0.0 for UDP
 
+{% raw %}
+
 	Article: Q129065
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.11,4.0; :3.1,3.5
@@ -101,3 +103,5 @@ permalink: /kb/129/Q129065/
 	
 	=============================================================================
 	
+
+{% endraw %}

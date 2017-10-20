@@ -6,6 +6,8 @@ permalink: /kb/135/Q135200/
 
 ## Q135200: Deleting Recycled Folder Does Not Seem to Work
 
+{% raw %}
+
 	Article: Q135200
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/135/Q135200/
 	
 	=============================================================================
 	
+
+{% endraw %}

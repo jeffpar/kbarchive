@@ -6,6 +6,8 @@ permalink: /kb/310/Q310725/
 
 ## Q310725: HOW TO: Run the IIS Lockdown Wizard Unattended in IIS
 
+{% raw %}
+
 	Article: Q310725
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -130,3 +132,5 @@ permalink: /kb/310/Q310725/
 	
 	=============================================================================
 	
+
+{% endraw %}

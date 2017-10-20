@@ -6,6 +6,8 @@ permalink: /kb/162/Q162684/
 
 ## Q162684: FIX: Modal Form Fails to Close with Focus on Check Box
 
+{% raw %}
+
 	Article: Q162684
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0a 3.0b 5.00
@@ -132,3 +134,5 @@ permalink: /kb/162/Q162684/
 	
 	=============================================================================
 	
+
+{% endraw %}

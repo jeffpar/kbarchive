@@ -6,6 +6,8 @@ permalink: /kb/151/Q151986/
 
 ## Q151986: Unable to Remote Control a Client on a Token-Ring Network
 
+{% raw %}
+
 	Article: Q151986
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.1
@@ -61,3 +63,5 @@ permalink: /kb/151/Q151986/
 	
 	=============================================================================
 	
+
+{% endraw %}

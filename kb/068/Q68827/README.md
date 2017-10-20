@@ -6,6 +6,8 @@ permalink: /kb/068/Q68827/
 
 ## Q68827: Updating Cached Private Profiles (.INI Files)
 
+{% raw %}
+
 	Article: Q68827
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -117,3 +119,5 @@ permalink: /kb/068/Q68827/
 	
 	=============================================================================
 	
+
+{% endraw %}

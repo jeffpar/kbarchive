@@ -6,6 +6,8 @@ permalink: /kb/109/Q109501/
 
 ## Q109501: NETWORKS.WRI from Windows for Workgroups 3.11 (Part 2 of 4)
 
+{% raw %}
+
 	Article: Q109501
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -607,3 +609,5 @@ permalink: /kb/109/Q109501/
 	
 	=============================================================================
 	
+
+{% endraw %}

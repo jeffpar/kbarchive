@@ -6,6 +6,8 @@ permalink: /kb/028/Q28905/
 
 ## Q28905: Format for Strings and Longs in RCDATA in RC
 
+{% raw %}
+
 	Article: Q28905
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -74,3 +76,5 @@ permalink: /kb/028/Q28905/
 	
 	=============================================================================
 	
+
+{% endraw %}

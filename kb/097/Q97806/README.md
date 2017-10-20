@@ -6,6 +6,8 @@ permalink: /kb/097/Q97806/
 
 ## Q97806: DoubleSpace Maintenance Program Fails to Modify DBLSPACE.INI
 
+{% raw %}
+
 	Article: Q97806
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -52,3 +54,5 @@ permalink: /kb/097/Q97806/
 	
 	=============================================================================
 	
+
+{% endraw %}

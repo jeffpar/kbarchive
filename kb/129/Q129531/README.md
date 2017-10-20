@@ -6,6 +6,8 @@ permalink: /kb/129/Q129531/
 
 ## Q129531: Windows NT Print Manager and Custom Form Limitations
 
+{% raw %}
+
 	Article: Q129531
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -125,3 +127,5 @@ permalink: /kb/129/Q129531/
 	
 	=============================================================================
 	
+
+{% endraw %}

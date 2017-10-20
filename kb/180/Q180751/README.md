@@ -6,6 +6,8 @@ permalink: /kb/180/Q180751/
 
 ## Q180751: INFO: Error Messages Shared Between VBCE and VBScript
 
+{% raw %}
+
 	Article: Q180751
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -167,3 +169,5 @@ permalink: /kb/180/Q180751/
 	
 	=============================================================================
 	
+
+{% endraw %}

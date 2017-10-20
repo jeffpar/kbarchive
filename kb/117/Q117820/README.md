@@ -6,6 +6,8 @@ permalink: /kb/117/Q117820/
 
 ## Q117820: Mac Cinemania 94: Problems Pressing Keyboard Keys Repeatedly
 
+{% raw %}
+
 	Article: Q117820
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -52,3 +54,5 @@ permalink: /kb/117/Q117820/
 	
 	=============================================================================
 	
+
+{% endraw %}

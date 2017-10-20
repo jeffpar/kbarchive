@@ -6,6 +6,8 @@ permalink: /kb/276/Q276525/
 
 ## Q276525: Your Computer May Stop Responding When You Monitor Open Handles
 
+{% raw %}
+
 	Article: Q276525
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -96,3 +98,5 @@ permalink: /kb/276/Q276525/
 	
 	=============================================================================
 	
+
+{% endraw %}

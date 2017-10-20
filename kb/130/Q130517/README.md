@@ -6,6 +6,8 @@ permalink: /kb/130/Q130517/
 
 ## Q130517: How to Modify Config.sys in Windows 95
 
+{% raw %}
+
 	Article: Q130517
 	Product(s): Microsoft Home Miscellaneous Products
 	Version(s): WINDOWS:95
@@ -64,3 +66,5 @@ permalink: /kb/130/Q130517/
 	
 	=============================================================================
 	
+
+{% endraw %}

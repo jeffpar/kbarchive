@@ -6,6 +6,8 @@ permalink: /kb/217/Q217079/
 
 ## Q217079: Recommended Default Gateway Setting for a Multihomed PPTP Server
 
+{% raw %}
+
 	Article: Q217079
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/217/Q217079/
 	
 	=============================================================================
 	
+
+{% endraw %}

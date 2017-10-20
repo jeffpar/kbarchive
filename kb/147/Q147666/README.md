@@ -6,6 +6,8 @@ permalink: /kb/147/Q147666/
 
 ## Q147666: HOWTO: Set the Column Width of Columns in a ListView Control
 
+{% raw %}
+
 	Article: Q147666
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -204,3 +206,5 @@ permalink: /kb/147/Q147666/
 	
 	=============================================================================
 	
+
+{% endraw %}

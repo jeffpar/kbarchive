@@ -6,6 +6,8 @@ permalink: /kb/182/Q182513/
 
 ## Q182513: XADM: Exchange Server Setup Stops With 0xc002041d
 
+{% raw %}
+
 	Article: Q182513
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -80,3 +82,5 @@ permalink: /kb/182/Q182513/
 	
 	=============================================================================
 	
+
+{% endraw %}

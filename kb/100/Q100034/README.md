@@ -6,6 +6,8 @@ permalink: /kb/100/Q100034/
 
 ## Q100034: MAC Wkst: Pasting Sounds into the Voice Form
 
+{% raw %}
+
 	Article: Q100034
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -54,3 +56,5 @@ permalink: /kb/100/Q100034/
 	
 	=============================================================================
 	
+
+{% endraw %}

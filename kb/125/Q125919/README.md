@@ -6,6 +6,8 @@ permalink: /kb/125/Q125919/
 
 ## Q125919: PC MMTA: Err Msg: Unable To Find File: DYNSCOS2
 
+{% raw %}
+
 	Article: Q125919
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2,3.5
@@ -92,3 +94,5 @@ permalink: /kb/125/Q125919/
 	
 	=============================================================================
 	
+
+{% endraw %}

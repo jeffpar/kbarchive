@@ -6,6 +6,8 @@ permalink: /kb/041/Q41161/
 
 ## Q41161: Mixing Memory Models with QuickC 2.00 and QCL 2.00
 
+{% raw %}
+
 	Article: Q41161
 	Product(s): See article
 	Version(s): 2.00
@@ -43,3 +45,5 @@ permalink: /kb/041/Q41161/
 	Microsoft has confirmed this to be a problem in Version 2.00. We are
 	researching this problem and will post new information as it becomes
 	available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171762/
 
 ## Q171762: Allowing Profile Shortcut Paths To Point To Local Drives
 
+{% raw %}
+
 	Article: Q171762
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -92,3 +94,5 @@ permalink: /kb/171/Q171762/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/116/Q116559/
 
 ## Q116559: PPT7: Can't Open PowerPoint 4.0 Presentation on Windows NT 3.51
 
+{% raw %}
+
 	Article: Q116559
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0; winnt:3.51
@@ -135,3 +137,5 @@ permalink: /kb/116/Q116559/
 	
 	=============================================================================
 	
+
+{% endraw %}

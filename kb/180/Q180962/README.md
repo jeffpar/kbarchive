@@ -6,6 +6,8 @@ permalink: /kb/180/Q180962/
 
 ## Q180962: How to Identify When the System Preparation Tool Is Used
 
+{% raw %}
+
 	Article: Q180962
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -86,3 +88,5 @@ permalink: /kb/180/Q180962/
 	
 	=============================================================================
 	
+
+{% endraw %}

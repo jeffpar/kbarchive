@@ -6,6 +6,8 @@ permalink: /kb/139/Q139508/
 
 ## Q139508: Internet Firewall Support in SNA Server
 
+{% raw %}
+
 	Article: Q139508
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11
@@ -278,3 +280,5 @@ permalink: /kb/139/Q139508/
 	
 	=============================================================================
 	
+
+{% endraw %}

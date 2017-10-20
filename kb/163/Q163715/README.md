@@ -6,6 +6,8 @@ permalink: /kb/163/Q163715/
 
 ## Q163715: ODE97: ODE Help Workshop - Cancel and Close Buttons Fail
 
+{% raw %}
+
 	Article: Q163715
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/163/Q163715/
 	
 	=============================================================================
 	
+
+{% endraw %}

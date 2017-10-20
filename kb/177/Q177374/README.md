@@ -6,6 +6,8 @@ permalink: /kb/177/Q177374/
 
 ## Q177374: XCON: Disable BilateralInformation and IternalTraceInformation
 
+{% raw %}
+
 	Article: Q177374
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -71,3 +73,5 @@ permalink: /kb/177/Q177374/
 	
 	=============================================================================
 	
+
+{% endraw %}

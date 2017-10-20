@@ -6,6 +6,8 @@ permalink: /kb/326/Q326345/
 
 ## Q326345: &quot;Invalid Procedure Call&quot; Err When You Assign User-Defined Type
 
+{% raw %}
+
 	Article: Q326345
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -81,3 +83,5 @@ permalink: /kb/326/Q326345/
 	
 	=============================================================================
 	
+
+{% endraw %}

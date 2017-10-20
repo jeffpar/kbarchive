@@ -6,6 +6,8 @@ permalink: /kb/129/Q129042/
 
 ## Q129042: Alternate Methods of Booting from a Failed Mirror
 
+{% raw %}
+
 	Article: Q129042
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -84,3 +86,5 @@ permalink: /kb/129/Q129042/
 	
 	=============================================================================
 	
+
+{% endraw %}

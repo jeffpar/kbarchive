@@ -6,6 +6,8 @@ permalink: /kb/086/Q86396/
 
 ## Q86396: PC OS2: Many Attachments May Cause Display Problems
 
+{% raw %}
+
 	Article: Q86396
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -44,3 +46,5 @@ permalink: /kb/086/Q86396/
 	
 	=============================================================================
 	
+
+{% endraw %}

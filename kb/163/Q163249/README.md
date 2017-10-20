@@ -6,6 +6,8 @@ permalink: /kb/163/Q163249/
 
 ## Q163249: HOWTO: Use Usercontrolmode with Wizstyle Button Classes in VFP
 
+{% raw %}
+
 	Article: Q163249
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -121,3 +123,5 @@ permalink: /kb/163/Q163249/
 	
 	=============================================================================
 	
+
+{% endraw %}

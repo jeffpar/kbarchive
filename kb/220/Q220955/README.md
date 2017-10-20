@@ -6,6 +6,8 @@ permalink: /kb/220/Q220955/
 
 ## Q220955: Using System Policies to Hide Specific Drive Letters
 
+{% raw %}
+
 	Article: Q220955
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -158,3 +160,5 @@ permalink: /kb/220/Q220955/
 	
 	=============================================================================
 	
+
+{% endraw %}

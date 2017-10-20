@@ -6,6 +6,8 @@ permalink: /kb/205/Q205231/
 
 ## Q205231: FP: How to Search Using LIKE In SQL Statement For ASP
 
+{% raw %}
+
 	Article: Q205231
 	Product(s): Word Front Page
 	Version(s): 
@@ -117,3 +119,5 @@ permalink: /kb/205/Q205231/
 	
 	=============================================================================
 	
+
+{% endraw %}

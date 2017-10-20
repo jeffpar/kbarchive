@@ -6,6 +6,8 @@ permalink: /kb/091/Q91706/
 
 ## Q91706: Panasonic KX-P1091 and Windows
 
+{% raw %}
+
 	Article: Q91706
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/091/Q91706/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197183/
 
 ## Q197183: XFOR: Cisco PIX Software Causes Strange Content in SMTP Msgs
 
+{% raw %}
+
 	Article: Q197183
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -60,3 +62,5 @@ permalink: /kb/197/Q197183/
 	
 	=============================================================================
 	
+
+{% endraw %}

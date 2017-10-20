@@ -6,6 +6,8 @@ permalink: /kb/077/Q77210/
 
 ## Q77210: Loading MS-DOS High on Zenith SuperSport 286 with 1 MB RAM
 
+{% raw %}
+
 	Article: Q77210
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -58,3 +60,5 @@ permalink: /kb/077/Q77210/
 	
 	=============================================================================
 	
+
+{% endraw %}

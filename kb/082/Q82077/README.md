@@ -6,6 +6,8 @@ permalink: /kb/082/Q82077/
 
 ## Q82077: FIFLE: Sample Application Demonstrates Using DDEML
 
+{% raw %}
+
 	Article: Q82077
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -133,3 +135,5 @@ permalink: /kb/082/Q82077/
 	
 	=============================================================================
 	
+
+{% endraw %}

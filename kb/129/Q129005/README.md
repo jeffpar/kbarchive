@@ -6,6 +6,8 @@ permalink: /kb/129/Q129005/
 
 ## Q129005: Sockets Applications Do Not Switch to Second NIC if One
 
+{% raw %}
+
 	Article: Q129005
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/129/Q129005/
 	
 	=============================================================================
 	
+
+{% endraw %}

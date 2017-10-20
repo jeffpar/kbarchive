@@ -6,6 +6,8 @@ permalink: /kb/237/Q237521/
 
 ## Q237521: EWED: Can't Start Reference Suite Program by Clicking Suite Link
 
+{% raw %}
+
 	Article: Q237521
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -77,3 +79,5 @@ permalink: /kb/237/Q237521/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178620/
 
 ## Q178620: XCLN: Client Profile Update Doesn't Update DNS FQDN
 
+{% raw %}
+
 	Article: Q178620
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -111,3 +113,5 @@ permalink: /kb/178/Q178620/
 	
 	=============================================================================
 	
+
+{% endraw %}

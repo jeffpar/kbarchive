@@ -6,6 +6,8 @@ permalink: /kb/167/Q167157/
 
 ## Q167157: Cannot Connect to Netcom
 
+{% raw %}
+
 	Article: Q167157
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -69,3 +71,5 @@ permalink: /kb/167/Q167157/
 	
 	=============================================================================
 	
+
+{% endraw %}

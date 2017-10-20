@@ -6,6 +6,8 @@ permalink: /kb/257/Q257784/
 
 ## Q257784: FIX: ARROW Key Doesn't Work with DBCS on Japanese Windows
 
+{% raw %}
+
 	Article: Q257784
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -96,3 +98,5 @@ permalink: /kb/257/Q257784/
 	
 	=============================================================================
 	
+
+{% endraw %}

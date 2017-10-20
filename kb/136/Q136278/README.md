@@ -6,6 +6,8 @@ permalink: /kb/136/Q136278/
 
 ## Q136278: BUG: Error When Using @ SAY to Play Sounds from General Field
 
+{% raw %}
+
 	Article: Q136278
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -89,3 +91,5 @@ permalink: /kb/136/Q136278/
 	
 	=============================================================================
 	
+
+{% endraw %}

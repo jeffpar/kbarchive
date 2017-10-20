@@ -6,6 +6,8 @@ permalink: /kb/135/Q135299/
 
 ## Q135299: Using MFC OLE Drag and Drop to Drag Text Between Windows
 
+{% raw %}
+
 	Article: Q135299
 	Product(s): Microsoft C Compiler
 	Version(s): 1.50,1.51,1.52,1.52b,2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -164,3 +166,5 @@ permalink: /kb/135/Q135299/
 	
 	=============================================================================
 	
+
+{% endraw %}

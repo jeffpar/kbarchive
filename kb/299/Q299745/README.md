@@ -6,6 +6,8 @@ permalink: /kb/299/Q299745/
 
 ## Q299745: TrainSim: Err &quot;Incompatible sound card&quot; or Sounds Are Not Played
 
+{% raw %}
+
 	Article: Q299745
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -250,3 +252,5 @@ permalink: /kb/299/Q299745/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150195/
 
 ## Q150195: FIX: Hidden MDIChild Form Can Still Be Active Form
 
+{% raw %}
+
 	Article: Q150195
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/150/Q150195/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/243/Q243064/
 
 ## Q243064: Age of Empires II: Duplicate Pages or Missing Pages in Manual
 
+{% raw %}
+
 	Article: Q243064
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -43,3 +45,5 @@ permalink: /kb/243/Q243064/
 	
 	=============================================================================
 	
+
+{% endraw %}

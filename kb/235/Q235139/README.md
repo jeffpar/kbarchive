@@ -6,6 +6,8 @@ permalink: /kb/235/Q235139/
 
 ## Q235139: SMS: Y2K Software Compliance Query Displays Incorrect File Names
 
+{% raw %}
+
 	Article: Q235139
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -53,3 +55,5 @@ permalink: /kb/235/Q235139/
 	
 	=============================================================================
 	
+
+{% endraw %}

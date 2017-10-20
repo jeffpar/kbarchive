@@ -6,6 +6,8 @@ permalink: /kb/186/Q186222/
 
 ## Q186222: BUG: Pasting Metafiles into Office Loses Lines and Box
 
+{% raw %}
+
 	Article: Q186222
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/186/Q186222/
 	
 	=============================================================================
 	
+
+{% endraw %}

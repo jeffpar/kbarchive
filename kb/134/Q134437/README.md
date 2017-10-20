@@ -6,6 +6,8 @@ permalink: /kb/134/Q134437/
 
 ## Q134437: FIX: Report Wizard Preview Error If View Given as Child Table
 
+{% raw %}
+
 	Article: Q134437
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -83,3 +85,5 @@ permalink: /kb/134/Q134437/
 	
 	=============================================================================
 	
+
+{% endraw %}

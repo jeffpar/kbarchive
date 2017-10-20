@@ -6,6 +6,8 @@ permalink: /kb/166/Q166515/
 
 ## Q166515: XADM: Primary SMTP Proxy Not Used for E-mail Address
 
+{% raw %}
+
 	Article: Q166515
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -87,3 +89,5 @@ permalink: /kb/166/Q166515/
 	
 	=============================================================================
 	
+
+{% endraw %}

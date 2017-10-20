@@ -6,6 +6,8 @@ permalink: /kb/062/Q62351/
 
 ## Q62351: Hard Disk Compatibility in Windows 3.0
 
+{% raw %}
+
 	Article: Q62351
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -105,3 +107,5 @@ permalink: /kb/062/Q62351/
 	
 	=============================================================================
 	
+
+{% endraw %}

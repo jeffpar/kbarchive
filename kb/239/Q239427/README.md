@@ -6,6 +6,8 @@ permalink: /kb/239/Q239427/
 
 ## Q239427: XADM: How to Enable Message Journaling in Exchange Server 5.5
 
+{% raw %}
+
 	Article: Q239427
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1,5.5 SP2,5.5 SP3
@@ -255,3 +257,5 @@ permalink: /kb/239/Q239427/
 	
 	=============================================================================
 	
+
+{% endraw %}

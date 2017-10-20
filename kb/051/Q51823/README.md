@@ -6,6 +6,8 @@ permalink: /kb/051/Q51823/
 
 ## Q51823: Flt Sim: Can't Connect with Other User in Multiplayer Mode
 
+{% raw %}
+
 	Article: Q51823
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/051/Q51823/
 	
 	=============================================================================
 	
+
+{% endraw %}

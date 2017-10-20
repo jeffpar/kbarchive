@@ -6,6 +6,8 @@ permalink: /kb/132/Q132669/
 
 ## Q132669: Canon Printers Printing Blue Objects as Purple Objects
 
+{% raw %}
+
 	Article: Q132669
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -60,3 +62,5 @@ permalink: /kb/132/Q132669/
 	
 	=============================================================================
 	
+
+{% endraw %}

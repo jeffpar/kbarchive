@@ -6,6 +6,8 @@ permalink: /kb/138/Q138808/
 
 ## Q138808: PRB: &quot;Error Writing Winspool.drv&quot; During Visual FoxPro Setup
 
+{% raw %}
+
 	Article: Q138808
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -82,3 +84,5 @@ permalink: /kb/138/Q138808/
 	
 	=============================================================================
 	
+
+{% endraw %}

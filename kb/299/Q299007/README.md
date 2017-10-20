@@ -6,6 +6,8 @@ permalink: /kb/299/Q299007/
 
 ## Q299007: Memory Leak Triggering Event to an eMbedded Visual Basic Program
 
+{% raw %}
+
 	Article: Q299007
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,3.0
@@ -121,3 +123,5 @@ permalink: /kb/299/Q299007/
 	
 	=============================================================================
 	
+
+{% endraw %}

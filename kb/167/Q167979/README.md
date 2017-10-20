@@ -6,6 +6,8 @@ permalink: /kb/167/Q167979/
 
 ## Q167979: XFOR: How To Add MS Mail Fax Gateway Service To Exchange
 
+{% raw %}
+
 	Article: Q167979
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -76,3 +78,5 @@ permalink: /kb/167/Q167979/
 	
 	=============================================================================
 	
+
+{% endraw %}

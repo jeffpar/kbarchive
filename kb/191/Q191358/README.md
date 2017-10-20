@@ -6,6 +6,8 @@ permalink: /kb/191/Q191358/
 
 ## Q191358: SMS: Adding Audit.rul/cfg Versioning to SMS Service Packs
 
+{% raw %}
+
 	Article: Q191358
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -43,3 +45,5 @@ permalink: /kb/191/Q191358/
 	
 	=============================================================================
 	
+
+{% endraw %}

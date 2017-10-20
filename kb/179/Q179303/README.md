@@ -6,6 +6,8 @@ permalink: /kb/179/Q179303/
 
 ## Q179303: XADM: Reducing Event Service Firing Delays
 
+{% raw %}
+
 	Article: Q179303
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -84,3 +86,5 @@ permalink: /kb/179/Q179303/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/256/Q256231/
 
 ## Q256231: WD97: Printing Label Ignores Direct Formatting
 
+{% raw %}
+
 	Article: Q256231
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -87,3 +89,5 @@ permalink: /kb/256/Q256231/
 	
 	=============================================================================
 	
+
+{% endraw %}

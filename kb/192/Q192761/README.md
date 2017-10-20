@@ -6,6 +6,8 @@ permalink: /kb/192/Q192761/
 
 ## Q192761: BUG: Startup Program Fails with NOLOGO Switch
 
+{% raw %}
+
 	Article: Q192761
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -73,3 +75,5 @@ permalink: /kb/192/Q192761/
 	
 	=============================================================================
 	
+
+{% endraw %}

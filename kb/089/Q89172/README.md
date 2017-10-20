@@ -6,6 +6,8 @@ permalink: /kb/089/Q89172/
 
 ## Q89172: Banyan Vines 3270 with Windows 3.0 and 3.0a
 
+{% raw %}
+
 	Article: Q89172
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -109,3 +111,5 @@ permalink: /kb/089/Q89172/
 	
 	=============================================================================
 	
+
+{% endraw %}

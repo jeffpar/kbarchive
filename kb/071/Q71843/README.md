@@ -6,6 +6,8 @@ permalink: /kb/071/Q71843/
 
 ## Q71843: MS-DOS Reserved Words in File Manager's File Search Command
 
+{% raw %}
+
 	Article: Q71843
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/071/Q71843/
 	
 	=============================================================================
 	
+
+{% endraw %}

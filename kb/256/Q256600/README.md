@@ -6,6 +6,8 @@ permalink: /kb/256/Q256600/
 
 ## Q256600: FAQ: What to Test for in International and Localized Versions
 
+{% raw %}
+
 	Article: Q256600
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -99,3 +101,5 @@ permalink: /kb/256/Q256600/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134579/
 
 ## Q134579: PCMCIA Devices Stop Working on Compaq Elite Laptop
 
+{% raw %}
+
 	Article: Q134579
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/134/Q134579/
 	
 	=============================================================================
 	
+
+{% endraw %}

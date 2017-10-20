@@ -6,6 +6,8 @@ permalink: /kb/148/Q148485/
 
 ## Q148485: Service Pack 4 Causes Some Installation Programs To Fail
 
+{% raw %}
+
 	Article: Q148485
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP4,4.0
@@ -64,3 +66,5 @@ permalink: /kb/148/Q148485/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189086/
 
 ## Q189086: HOWTO: Create Context-Sensitive HTML Help in a Visual Basic App
 
+{% raw %}
+
 	Article: Q189086
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:1.1,1.3,4.0,5.0
@@ -101,3 +103,5 @@ permalink: /kb/189/Q189086/
 	
 	=============================================================================
 	
+
+{% endraw %}

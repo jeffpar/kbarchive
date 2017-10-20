@@ -6,6 +6,8 @@ permalink: /kb/135/Q135956/
 
 ## Q135956: Check Box Updated Slowly When Upgrading with DriveSpace 3
 
+{% raw %}
+
 	Article: Q135956
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/135/Q135956/
 	
 	=============================================================================
 	
+
+{% endraw %}

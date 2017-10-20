@@ -6,6 +6,8 @@ permalink: /kb/147/Q147736/
 
 ## Q147736: BUG: Dialog Previewer May Incorrectly Draw Caption on Dialogs
 
+{% raw %}
+
 	Article: Q147736
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -66,3 +68,5 @@ permalink: /kb/147/Q147736/
 	
 	=============================================================================
 	
+
+{% endraw %}

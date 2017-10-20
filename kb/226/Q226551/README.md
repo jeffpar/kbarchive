@@ -6,6 +6,8 @@ permalink: /kb/226/Q226551/
 
 ## Q226551: Event Viewer Hangs or Cannot Start After Saving a Filter
 
+{% raw %}
+
 	Article: Q226551
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/226/Q226551/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/064/Q64028/
 
 ## Q64028: Changing Directories in Make Files Not Supported by NMK.COM
 
+{% raw %}
+
 	Article: Q64028
 	Product(s): See article
 	Version(s): 1.11
@@ -51,3 +53,5 @@ permalink: /kb/064/Q64028/
 	
 	cded.obj: cded.mak
 	  copy cded.mak c:\cded.obj
+
+{% endraw %}

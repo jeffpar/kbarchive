@@ -6,6 +6,8 @@ permalink: /kb/194/Q194985/
 
 ## Q194985: Glide API Features Disabled on Video Adapter
 
+{% raw %}
+
 	Article: Q194985
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -79,3 +81,5 @@ permalink: /kb/194/Q194985/
 	
 	=============================================================================
 	
+
+{% endraw %}

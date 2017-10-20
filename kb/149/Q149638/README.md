@@ -6,6 +6,8 @@ permalink: /kb/149/Q149638/
 
 ## Q149638: PRB: Statically linked MFC App Causes Trouble on Win32s
 
+{% raw %}
+
 	Article: Q149638
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -73,3 +75,5 @@ permalink: /kb/149/Q149638/
 	
 	=============================================================================
 	
+
+{% endraw %}

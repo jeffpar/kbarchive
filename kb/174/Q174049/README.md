@@ -6,6 +6,8 @@ permalink: /kb/174/Q174049/
 
 ## Q174049: E-mail Messages May Not Leave the Outbox When Sent
 
+{% raw %}
+
 	Article: Q174049
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5
@@ -59,3 +61,5 @@ permalink: /kb/174/Q174049/
 	
 	=============================================================================
 	
+
+{% endraw %}

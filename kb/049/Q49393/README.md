@@ -6,6 +6,8 @@ permalink: /kb/049/Q49393/
 
 ## Q49393: Example of Passing User-Defined Type from BASIC to MASM (Near)
 
+{% raw %}
+
 	Article: Q49393
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -108,3 +110,5 @@ permalink: /kb/049/Q49393/
 	   Single:    32.10
 	   Double:    12345.67
 	   fixed-length String:  Fixed-length string
+
+{% endraw %}

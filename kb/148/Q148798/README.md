@@ -6,6 +6,8 @@ permalink: /kb/148/Q148798/
 
 ## Q148798: Windows 3.1 &#91;MCI&#93; CD Audio Driver Available
 
+{% raw %}
+
 	Article: Q148798
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,3.1
@@ -61,3 +63,5 @@ permalink: /kb/148/Q148798/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173351/
 
 ## Q173351: BUG: Custom OCX Not Unloaded When Client Application Ends
 
+{% raw %}
+
 	Article: Q173351
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -126,3 +128,5 @@ permalink: /kb/173/Q173351/
 	
 	=============================================================================
 	
+
+{% endraw %}

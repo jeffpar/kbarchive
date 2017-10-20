@@ -6,6 +6,8 @@ permalink: /kb/086/Q86182/
 
 ## Q86182: PC WSPlus: Margins Off When Printing on HP LaserJet III
 
+{% raw %}
+
 	Article: Q86182
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -48,3 +50,5 @@ permalink: /kb/086/Q86182/
 	
 	=============================================================================
 	
+
+{% endraw %}

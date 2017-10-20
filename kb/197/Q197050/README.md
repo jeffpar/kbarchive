@@ -6,6 +6,8 @@ permalink: /kb/197/Q197050/
 
 ## Q197050: FIX: &quot;Version Not Found&quot; Error With Command Line GET
 
+{% raw %}
+
 	Article: Q197050
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -102,3 +104,5 @@ permalink: /kb/197/Q197050/
 	
 	=============================================================================
 	
+
+{% endraw %}

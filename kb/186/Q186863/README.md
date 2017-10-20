@@ -6,6 +6,8 @@ permalink: /kb/186/Q186863/
 
 ## Q186863: XWEB: Unable to Change Password Using OWA
 
+{% raw %}
+
 	Article: Q186863
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5; winnt:4.5,5.5 SP3
@@ -59,3 +61,5 @@ permalink: /kb/186/Q186863/
 	
 	=============================================================================
 	
+
+{% endraw %}

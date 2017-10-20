@@ -6,6 +6,8 @@ permalink: /kb/220/Q220173/
 
 ## Q220173: Err Msg: A Connection with the Server Could Not be Established
 
+{% raw %}
+
 	Article: Q220173
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -88,3 +90,5 @@ permalink: /kb/220/Q220173/
 	
 	=============================================================================
 	
+
+{% endraw %}

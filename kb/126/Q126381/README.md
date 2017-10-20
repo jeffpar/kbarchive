@@ -6,6 +6,8 @@ permalink: /kb/126/Q126381/
 
 ## Q126381: RAM Disk Support in Windows NT
 
+{% raw %}
+
 	Article: Q126381
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50
@@ -55,3 +57,5 @@ permalink: /kb/126/Q126381/
 	
 	=============================================================================
 	
+
+{% endraw %}

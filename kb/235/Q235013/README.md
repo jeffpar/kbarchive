@@ -6,6 +6,8 @@ permalink: /kb/235/Q235013/
 
 ## Q235013: PRB: Mastering Series Needs Installation of Internet Explorer 3
 
+{% raw %}
+
 	Article: Q235013
 	Product(s): Microsoft Mastering Series
 	Version(s): 
@@ -120,3 +122,5 @@ permalink: /kb/235/Q235013/
 	
 	=============================================================================
 	
+
+{% endraw %}

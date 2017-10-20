@@ -6,6 +6,8 @@ permalink: /kb/179/Q179570/
 
 ## Q179570: SQL Server Books Online Does Not Display Properly
 
+{% raw %}
+
 	Article: Q179570
 	Product(s): Microsoft Press
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/179/Q179570/
 	
 	=============================================================================
 	
+
+{% endraw %}

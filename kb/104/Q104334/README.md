@@ -6,6 +6,8 @@ permalink: /kb/104/Q104334/
 
 ## Q104334: BUG: SetDIBitsToDevice Faults on 24-BPP PM-Style DIBs
 
+{% raw %}
+
 	Article: Q104334
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/104/Q104334/
 	
 	=============================================================================
 	
+
+{% endraw %}

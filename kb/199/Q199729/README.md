@@ -6,6 +6,8 @@ permalink: /kb/199/Q199729/
 
 ## Q199729: SMS: Missing Records in WorkstationStatus Table Generate Badmif
 
+{% raw %}
+
 	Article: Q199729
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -74,3 +76,5 @@ permalink: /kb/199/Q199729/
 	
 	=============================================================================
 	
+
+{% endraw %}

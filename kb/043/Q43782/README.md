@@ -6,6 +6,8 @@ permalink: /kb/043/Q43782/
 
 ## Q43782: QB Versus C, Benchmark Time Comparison for Recursive Program
 
+{% raw %}
+
 	Article: Q43782
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -198,3 +200,5 @@ permalink: /kb/043/Q43782/
 	  fcloseall();
 	
 	}
+
+{% endraw %}

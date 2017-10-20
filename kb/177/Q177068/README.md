@@ -6,6 +6,8 @@ permalink: /kb/177/Q177068/
 
 ## Q177068: Flight Simulator 98 Setup Program Does Not Install Any Files
 
+{% raw %}
+
 	Article: Q177068
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -54,3 +56,5 @@ permalink: /kb/177/Q177068/
 	
 	=============================================================================
 	
+
+{% endraw %}

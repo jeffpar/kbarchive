@@ -6,6 +6,8 @@ permalink: /kb/217/Q217063/
 
 ## Q217063: Terminal Server Hangs and Does Not Allow Network Connections
 
+{% raw %}
+
 	Article: Q217063
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/217/Q217063/
 	
 	=============================================================================
 	
+
+{% endraw %}

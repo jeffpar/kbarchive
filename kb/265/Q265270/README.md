@@ -6,6 +6,8 @@ permalink: /kb/265/Q265270/
 
 ## Q265270: SMS: Assigned Programs Are Not Started After SMS Installation
 
+{% raw %}
+
 	Article: Q265270
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -221,3 +223,5 @@ permalink: /kb/265/Q265270/
 	
 	=============================================================================
 	
+
+{% endraw %}

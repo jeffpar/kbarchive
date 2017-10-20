@@ -6,6 +6,8 @@ permalink: /kb/163/Q163699/
 
 ## Q163699: &quot;Disk May be Full&quot; Message When Saving File to a Novell Server
 
+{% raw %}
+
 	Article: Q163699
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.5,3.51,4.0
@@ -65,3 +67,5 @@ permalink: /kb/163/Q163699/
 	
 	=============================================================================
 	
+
+{% endraw %}

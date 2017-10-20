@@ -6,6 +6,8 @@ permalink: /kb/137/Q137451/
 
 ## Q137451: Sound Distortion with Multimedia Programs
 
+{% raw %}
+
 	Article: Q137451
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a,1995-1996 edition,2.0
@@ -145,3 +147,5 @@ permalink: /kb/137/Q137451/
 	
 	=============================================================================
 	
+
+{% endraw %}

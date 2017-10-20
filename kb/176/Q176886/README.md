@@ -6,6 +6,8 @@ permalink: /kb/176/Q176886/
 
 ## Q176886: Age of Empires: Keyboard Stops Responding When You Save a Game
 
+{% raw %}
+
 	Article: Q176886
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,2.0
@@ -90,3 +92,5 @@ permalink: /kb/176/Q176886/
 	
 	=============================================================================
 	
+
+{% endraw %}

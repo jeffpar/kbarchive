@@ -6,6 +6,8 @@ permalink: /kb/041/Q41369/
 
 ## Q41369: Run-Time Library Reference vfprintf Documentation Error
 
+{% raw %}
+
 	Article: Q41369
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -22,3 +24,5 @@ permalink: /kb/041/Q41369/
 	should read
 	
 	   error("Error: line %d, file %s\n", line, filename);
+
+{% endraw %}

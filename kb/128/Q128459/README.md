@@ -6,6 +6,8 @@ permalink: /kb/128/Q128459/
 
 ## Q128459: Capture Does Not Work With HP 10/100 VG ISA NIC
 
+{% raw %}
+
 	Article: Q128459
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/128/Q128459/
 	
 	=============================================================================
 	
+
+{% endraw %}

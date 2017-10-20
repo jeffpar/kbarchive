@@ -6,6 +6,8 @@ permalink: /kb/229/Q229099/
 
 ## Q229099: XFOR: NNTP Does Not Support PULL/POST Feed
 
+{% raw %}
+
 	Article: Q229099
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -57,3 +59,5 @@ permalink: /kb/229/Q229099/
 	
 	=============================================================================
 	
+
+{% endraw %}

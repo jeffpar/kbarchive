@@ -6,6 +6,8 @@ permalink: /kb/195/Q195687/
 
 ## Q195687: WD97: Bookmark at Beginning of Line Is Lost When Copying
 
+{% raw %}
+
 	Article: Q195687
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -58,3 +60,5 @@ permalink: /kb/195/Q195687/
 	
 	=============================================================================
 	
+
+{% endraw %}

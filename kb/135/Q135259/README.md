@@ -6,6 +6,8 @@ permalink: /kb/135/Q135259/
 
 ## Q135259: &quot;More Colors&quot; Color Squares Won't Change from Black or White
 
+{% raw %}
+
 	Article: Q135259
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.1,4.0,4.0a,4.0c,7.0,95; winnt:3.51
@@ -58,3 +60,5 @@ permalink: /kb/135/Q135259/
 	
 	=============================================================================
 	
+
+{% endraw %}

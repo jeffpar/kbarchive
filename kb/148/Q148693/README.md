@@ -6,6 +6,8 @@ permalink: /kb/148/Q148693/
 
 ## Q148693: IPX RAS Clients Unable To View or Access NetBIOS Resources
 
+{% raw %}
+
 	Article: Q148693
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.00
@@ -87,3 +89,5 @@ permalink: /kb/148/Q148693/
 	
 	=============================================================================
 	
+
+{% endraw %}

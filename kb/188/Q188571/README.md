@@ -6,6 +6,8 @@ permalink: /kb/188/Q188571/
 
 ## Q188571: STOP 0x0000000A in Netbt.sys Caused by Invalid DNS Record
 
+{% raw %}
+
 	Article: Q188571
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -68,3 +70,5 @@ permalink: /kb/188/Q188571/
 	
 	=============================================================================
 	
+
+{% endraw %}

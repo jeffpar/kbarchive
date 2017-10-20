@@ -6,6 +6,8 @@ permalink: /kb/196/Q196854/
 
 ## Q196854: WD97: Mark All Button Unavailable in Mark Index Entry Dialog Box
 
+{% raw %}
+
 	Article: Q196854
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -70,3 +72,5 @@ permalink: /kb/196/Q196854/
 	
 	=============================================================================
 	
+
+{% endraw %}

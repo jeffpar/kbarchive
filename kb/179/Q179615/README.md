@@ -6,6 +6,8 @@ permalink: /kb/179/Q179615/
 
 ## Q179615: HOWTO: Specify or Change a Remote Server's Location at Run Time
 
+{% raw %}
+
 	Article: Q179615
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -320,3 +322,5 @@ permalink: /kb/179/Q179615/
 	
 	=============================================================================
 	
+
+{% endraw %}

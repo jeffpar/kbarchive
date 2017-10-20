@@ -6,6 +6,8 @@ permalink: /kb/069/Q69574/
 
 ## Q69574: ANSI.SYS Escape Sequence Documentation Typographical Error
 
+{% raw %}
+
 	Article: Q69574
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.20,3.21,3.3,3.3a,4.0,4.01,5.0
@@ -48,3 +50,5 @@ permalink: /kb/069/Q69574/
 	
 	=============================================================================
 	
+
+{% endraw %}

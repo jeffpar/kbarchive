@@ -6,6 +6,8 @@ permalink: /kb/097/Q97815/
 
 ## Q97815: Lexmark 4033 LAN Connection for Printers Needs IBM DLC
 
+{% raw %}
+
 	Article: Q97815
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/097/Q97815/
 	
 	=============================================================================
 	
+
+{% endraw %}

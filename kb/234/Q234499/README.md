@@ -6,6 +6,8 @@ permalink: /kb/234/Q234499/
 
 ## Q234499: Microsoft Pocket Guide to Access 2000 Comments and Corrections
 
+{% raw %}
+
 	Article: Q234499
 	Product(s): Microsoft Press
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/234/Q234499/
 	
 	=============================================================================
 	
+
+{% endraw %}

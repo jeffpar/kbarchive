@@ -6,6 +6,8 @@ permalink: /kb/229/Q229098/
 
 ## Q229098: AppleTalk Does Not Always Respond to ZIP Queries
 
+{% raw %}
+
 	Article: Q229098
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -99,3 +101,5 @@ permalink: /kb/229/Q229098/
 	
 	=============================================================================
 	
+
+{% endraw %}

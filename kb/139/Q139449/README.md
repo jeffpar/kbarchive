@@ -6,6 +6,8 @@ permalink: /kb/139/Q139449/
 
 ## Q139449: How to Create Individual Home Directories
 
+{% raw %}
+
 	Article: Q139449
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -96,3 +98,5 @@ permalink: /kb/139/Q139449/
 	
 	=============================================================================
 	
+
+{% endraw %}

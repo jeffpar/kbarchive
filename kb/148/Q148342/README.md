@@ -6,6 +6,8 @@ permalink: /kb/148/Q148342/
 
 ## Q148342: Baseball 1994: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q148342
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -62,3 +64,5 @@ permalink: /kb/148/Q148342/
 	
 	=============================================================================
 	
+
+{% endraw %}

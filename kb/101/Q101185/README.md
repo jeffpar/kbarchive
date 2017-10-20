@@ -6,6 +6,8 @@ permalink: /kb/101/Q101185/
 
 ## Q101185: INFO: Using cout in an Application and DLL
 
+{% raw %}
+
 	Article: Q101185
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -51,3 +53,5 @@ permalink: /kb/101/Q101185/
 	
 	=============================================================================
 	
+
+{% endraw %}

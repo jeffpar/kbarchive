@@ -6,6 +6,8 @@ permalink: /kb/157/Q157761/
 
 ## Q157761: HOWTO: Use the ActiveX Control SS Tab Object Properties
 
+{% raw %}
+
 	Article: Q157761
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/157/Q157761/
 	
 	=============================================================================
 	
+
+{% endraw %}

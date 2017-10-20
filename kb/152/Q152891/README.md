@@ -6,6 +6,8 @@ permalink: /kb/152/Q152891/
 
 ## Q152891: XADM: User Notifications of NDRs Contain all Recipients
 
+{% raw %}
+
 	Article: Q152891
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -46,3 +48,5 @@ permalink: /kb/152/Q152891/
 	
 	=============================================================================
 	
+
+{% endraw %}

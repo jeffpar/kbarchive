@@ -6,6 +6,8 @@ permalink: /kb/264/Q264526/
 
 ## Q264526: Snaoledb.dll Init Fails with CoInitializeEx Multithreaded
 
+{% raw %}
+
 	Article: Q264526
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -136,3 +138,5 @@ permalink: /kb/264/Q264526/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159451/
 
 ## Q159451: INFO: Installing LPR Ports with Windows NT 4.0 Unattended Setup
 
+{% raw %}
+
 	Article: Q159451
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -101,3 +103,5 @@ permalink: /kb/159/Q159451/
 	
 	=============================================================================
 	
+
+{% endraw %}

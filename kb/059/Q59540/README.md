@@ -6,6 +6,8 @@ permalink: /kb/059/Q59540/
 
 ## Q59540: &quot;No Symbolic Information&quot; May Be Caused by Wrong Linker
 
+{% raw %}
+
 	Article: Q59540
 	Product(s): Microsoft Programming Utilities
 	Version(s): 2.2,3.0,3.05,3.06,3.07,3.11,3.12,3.14,3.5,4.0,4.01,4.05,4.1
@@ -80,3 +82,5 @@ permalink: /kb/059/Q59540/
 	
 	=============================================================================
 	
+
+{% endraw %}

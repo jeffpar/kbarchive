@@ -6,6 +6,8 @@ permalink: /kb/174/Q174696/
 
 ## Q174696: XGEN: How to Send Files to Microsoft Product Support Services
 
+{% raw %}
+
 	Article: Q174696
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -157,3 +159,5 @@ permalink: /kb/174/Q174696/
 	
 	=============================================================================
 	
+
+{% endraw %}

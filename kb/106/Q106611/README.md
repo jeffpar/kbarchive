@@ -6,6 +6,8 @@ permalink: /kb/106/Q106611/
 
 ## Q106611: CD Sampler: Mouse Pointer Invisible During Demo
 
+{% raw %}
+
 	Article: Q106611
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): Fall 1993 edition
@@ -42,3 +44,5 @@ permalink: /kb/106/Q106611/
 	
 	=============================================================================
 	
+
+{% endraw %}

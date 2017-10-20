@@ -6,6 +6,8 @@ permalink: /kb/083/Q83062/
 
 ## Q83062: NETWORKS.WRI from Windows 3.1
 
+{% raw %}
+
 	Article: Q83062
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -1222,3 +1224,5 @@ permalink: /kb/083/Q83062/
 	
 	=============================================================================
 	
+
+{% endraw %}

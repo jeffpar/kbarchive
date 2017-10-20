@@ -6,6 +6,8 @@ permalink: /kb/118/Q118963/
 
 ## Q118963: WFWG Err Msg: Shell-332-21: Network Server Could Not Be Found
 
+{% raw %}
+
 	Article: Q118963
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -70,3 +72,5 @@ permalink: /kb/118/Q118963/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191256/
 
 ## Q191256: Time-taken Log Field Incorrect When KeepAlive Is Enabled
 
+{% raw %}
+
 	Article: Q191256
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/191/Q191256/
 	
 	=============================================================================
 	
+
+{% endraw %}

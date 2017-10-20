@@ -6,6 +6,8 @@ permalink: /kb/197/Q197041/
 
 ## Q197041: Encarta Encyclopedia 99: Video Clips Are Not Played Smoothly
 
+{% raw %}
+
 	Article: Q197041
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -65,3 +67,5 @@ permalink: /kb/197/Q197041/
 	
 	=============================================================================
 	
+
+{% endraw %}

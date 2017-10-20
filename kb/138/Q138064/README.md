@@ -6,6 +6,8 @@ permalink: /kb/138/Q138064/
 
 ## Q138064: Search Order for OLE Servers
 
+{% raw %}
+
 	Article: Q138064
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -66,3 +68,5 @@ permalink: /kb/138/Q138064/
 	
 	=============================================================================
 	
+
+{% endraw %}

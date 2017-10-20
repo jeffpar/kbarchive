@@ -6,6 +6,8 @@ permalink: /kb/060/Q60333/
 
 ## Q60333: _bios_serialcom() May Not Work at 9600 and 4800
 
+{% raw %}
+
 	Article: Q60333
 	Product(s): See article
 	Version(s): 5.10 6.00
@@ -68,3 +70,5 @@ permalink: /kb/060/Q60333/
 	service routine (ISR) should be written to handle the I/O. More
 	information on this can be found in Article 6, Pages 167-246 of the
 	"MS-DOS Encyclopedia."
+
+{% endraw %}

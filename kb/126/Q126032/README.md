@@ -6,6 +6,8 @@ permalink: /kb/126/Q126032/
 
 ## Q126032: Badly-behaved 16-bit Application Prevents System Shutdown
 
+{% raw %}
+
 	Article: Q126032
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -90,3 +92,5 @@ permalink: /kb/126/Q126032/
 	
 	=============================================================================
 	
+
+{% endraw %}

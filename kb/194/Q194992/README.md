@@ -6,6 +6,8 @@ permalink: /kb/194/Q194992/
 
 ## Q194992: CG3: Clip Gallery Opens Slowly Applying SR-2 Patch
 
+{% raw %}
+
 	Article: Q194992
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/194/Q194992/
 	
 	=============================================================================
 	
+
+{% endraw %}

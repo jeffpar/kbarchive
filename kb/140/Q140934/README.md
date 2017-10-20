@@ -6,6 +6,8 @@ permalink: /kb/140/Q140934/
 
 ## Q140934: XFOR: IMC: NDR is Held Until Timeout Period Expired
 
+{% raw %}
+
 	Article: Q140934
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -59,3 +61,5 @@ permalink: /kb/140/Q140934/
 	
 	=============================================================================
 	
+
+{% endraw %}

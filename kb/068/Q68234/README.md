@@ -6,6 +6,8 @@ permalink: /kb/068/Q68234/
 
 ## Q68234: Recursively Calling NMAKE Using the MAKEFLAGS Macro
 
+{% raw %}
+
 	Article: Q68234
 	Product(s): See article
 	Version(s): 1.11   | 1.11
@@ -29,3 +31,5 @@ permalink: /kb/068/Q68234/
 	command-line switches. The documentation should read:
 	
 	   $(MAKE) -$(MAKEFLAGS)
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/133/Q133357/
 
 ## Q133357: Differences Between Temporary and Permanent Relationships
 
+{% raw %}
+
 	Article: Q133357
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -84,3 +86,5 @@ permalink: /kb/133/Q133357/
 	
 	=============================================================================
 	
+
+{% endraw %}

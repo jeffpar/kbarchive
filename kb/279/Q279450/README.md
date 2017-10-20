@@ -6,6 +6,8 @@ permalink: /kb/279/Q279450/
 
 ## Q279450: MSN Companion supported file formats
 
+{% raw %}
+
 	Article: Q279450
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/279/Q279450/
 	
 	=============================================================================
 	
+
+{% endraw %}

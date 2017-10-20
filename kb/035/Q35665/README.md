@@ -6,6 +6,8 @@ permalink: /kb/035/Q35665/
 
 ## Q35665: INPUT, INKEY&#36;, or INPUT&#36;(n) Don't Accept All ASCII Characters
 
+{% raw %}
+
 	Article: Q35665
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -39,3 +41,5 @@ permalink: /kb/035/Q35665/
 	  IF a$ <> "" THEN PRINT a$;
 	  GOTO CASA
 	END
+
+{% endraw %}

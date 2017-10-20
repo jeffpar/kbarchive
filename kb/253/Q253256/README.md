@@ -6,6 +6,8 @@ permalink: /kb/253/Q253256/
 
 ## Q253256: PPT7: Horizontal or Vertical Guides May Become Unavailable
 
+{% raw %}
+
 	Article: Q253256
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -79,3 +81,5 @@ permalink: /kb/253/Q253256/
 	
 	=============================================================================
 	
+
+{% endraw %}

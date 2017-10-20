@@ -6,6 +6,8 @@ permalink: /kb/182/Q182856/
 
 ## Q182856: &quot;Fatal Exception 0E&quot; Error Message When Ejecting Laptop
 
+{% raw %}
+
 	Article: Q182856
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0,2.1,2.5
@@ -89,3 +91,5 @@ permalink: /kb/182/Q182856/
 	
 	=============================================================================
 	
+
+{% endraw %}

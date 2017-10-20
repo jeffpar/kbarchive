@@ -6,6 +6,8 @@ permalink: /kb/164/Q164250/
 
 ## Q164250: PRB: FoxPro and Mac Lock with ODBC
 
+{% raw %}
+
 	Article: Q164250
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -87,3 +89,5 @@ permalink: /kb/164/Q164250/
 	
 	=============================================================================
 	
+
+{% endraw %}

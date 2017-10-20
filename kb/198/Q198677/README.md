@@ -6,6 +6,8 @@ permalink: /kb/198/Q198677/
 
 ## Q198677: XFOR: Troubleshooting Common Exchange Notes Connector Problems
 
+{% raw %}
+
 	Article: Q198677
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -398,3 +400,5 @@ permalink: /kb/198/Q198677/
 	
 	=============================================================================
 	
+
+{% endraw %}

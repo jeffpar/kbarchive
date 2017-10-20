@@ -6,6 +6,8 @@ permalink: /kb/253/Q253350/
 
 ## Q253350: XCON: Connector for Lotus Notes Performance Monitor Doesn't Work
 
+{% raw %}
+
 	Article: Q253350
 	Product(s): Microsoft Exchange
 	Version(s): 2000,5.5 SP3
@@ -73,3 +75,5 @@ permalink: /kb/253/Q253350/
 	
 	=============================================================================
 	
+
+{% endraw %}

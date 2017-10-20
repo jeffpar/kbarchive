@@ -6,6 +6,8 @@ permalink: /kb/245/Q245703/
 
 ## Q245703: APM Executes Local Program Version If Package Share Unavailable
 
+{% raw %}
+
 	Article: Q245703
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -58,3 +60,5 @@ permalink: /kb/245/Q245703/
 	
 	=============================================================================
 	
+
+{% endraw %}

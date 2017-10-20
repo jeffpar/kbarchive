@@ -6,6 +6,8 @@ permalink: /kb/176/Q176146/
 
 ## Q176146: XCON: X.400 Connector Line-Wrap Cuts Msg Line at 80 Chars
 
+{% raw %}
+
 	Article: Q176146
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -50,3 +52,5 @@ permalink: /kb/176/Q176146/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/229/Q229869/
 
 ## Q229869: WD97: Word Hangs Checking Spelling in Multi-line Form Field
 
+{% raw %}
+
 	Article: Q229869
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -66,3 +68,5 @@ permalink: /kb/229/Q229869/
 	
 	=============================================================================
 	
+
+{% endraw %}

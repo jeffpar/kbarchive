@@ -6,6 +6,8 @@ permalink: /kb/217/Q217437/
 
 ## Q217437: FIX: Visual C++ Debugger Crashes on Breakpoint
 
+{% raw %}
+
 	Article: Q217437
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0,6.0
@@ -62,3 +64,5 @@ permalink: /kb/217/Q217437/
 	
 	=============================================================================
 	
+
+{% endraw %}

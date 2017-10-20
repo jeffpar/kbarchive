@@ -6,6 +6,8 @@ permalink: /kb/167/Q167199/
 
 ## Q167199: HyperTerminal May Drop Characters When Using Z-Modem
 
+{% raw %}
+
 	Article: Q167199
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/167/Q167199/
 	
 	=============================================================================
 	
+
+{% endraw %}

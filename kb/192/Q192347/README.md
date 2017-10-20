@@ -6,6 +6,8 @@ permalink: /kb/192/Q192347/
 
 ## Q192347: PRB: Focus/Activation Problems with MFC Control on VB Forms
 
+{% raw %}
+
 	Article: Q192347
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0; winnt:5.0,6.0
@@ -125,3 +127,5 @@ permalink: /kb/192/Q192347/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172690/
 
 ## Q172690: PRB: LoadPicture() Causes &quot;File Access is Denied&quot; Error
 
+{% raw %}
+
 	Article: Q172690
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -77,3 +79,5 @@ permalink: /kb/172/Q172690/
 	
 	=============================================================================
 	
+
+{% endraw %}

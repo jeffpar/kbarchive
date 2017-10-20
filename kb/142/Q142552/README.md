@@ -6,6 +6,8 @@ permalink: /kb/142/Q142552/
 
 ## Q142552: FIX: OLE Error Playing .WAV Object
 
+{% raw %}
+
 	Article: Q142552
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0 3.0b 5.0 5.0a
@@ -86,3 +88,5 @@ permalink: /kb/142/Q142552/
 	
 	=============================================================================
 	
+
+{% endraw %}

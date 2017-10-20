@@ -6,6 +6,8 @@ permalink: /kb/089/Q89975/
 
 ## Q89975: F1 Key Dysfunctional in Customize Toolbar Dialog Box
 
+{% raw %}
+
 	Article: Q89975
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -42,3 +44,5 @@ permalink: /kb/089/Q89975/
 	
 	=============================================================================
 	
+
+{% endraw %}

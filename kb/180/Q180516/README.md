@@ -6,6 +6,8 @@ permalink: /kb/180/Q180516/
 
 ## Q180516: WD97: Subdocuments Not Saved with Master Document on FTP Server
 
+{% raw %}
+
 	Article: Q180516
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -62,3 +64,5 @@ permalink: /kb/180/Q180516/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164823/
 
 ## Q164823: AFD Executive Worker Thread Causes Excessive Nonpaged Pool Use
 
+{% raw %}
+
 	Article: Q164823
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/164/Q164823/
 	
 	=============================================================================
 	
+
+{% endraw %}

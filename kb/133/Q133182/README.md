@@ -6,6 +6,8 @@ permalink: /kb/133/Q133182/
 
 ## Q133182: CD-ROM Access Slows During Windows NT SDK Setup
 
+{% raw %}
+
 	Article: Q133182
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/133/Q133182/
 	
 	=============================================================================
 	
+
+{% endraw %}

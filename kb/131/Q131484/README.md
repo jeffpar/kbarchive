@@ -6,6 +6,8 @@ permalink: /kb/131/Q131484/
 
 ## Q131484: XCLN: Delete Button in Address Book Displayed As Active
 
+{% raw %}
+
 	Article: Q131484
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -43,3 +45,5 @@ permalink: /kb/131/Q131484/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149783/
 
 ## Q149783: INFO: ISAM Settings and Jet 3.0
 
+{% raw %}
+
 	Article: Q149783
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/149/Q149783/
 	
 	=============================================================================
 	
+
+{% endraw %}

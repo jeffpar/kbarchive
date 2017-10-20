@@ -6,6 +6,8 @@ permalink: /kb/240/Q240106/
 
 ## Q240106: RAS Server Does Not Automatically Disconnect
 
+{% raw %}
+
 	Article: Q240106
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -83,3 +85,5 @@ permalink: /kb/240/Q240106/
 	
 	=============================================================================
 	
+
+{% endraw %}

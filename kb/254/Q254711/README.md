@@ -6,6 +6,8 @@ permalink: /kb/254/Q254711/
 
 ## Q254711: XADM: Certificate Renewal Occurs Right After Clicking Renew All
 
+{% raw %}
+
 	Article: Q254711
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -43,3 +45,5 @@ permalink: /kb/254/Q254711/
 	
 	=============================================================================
 	
+
+{% endraw %}

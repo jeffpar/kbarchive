@@ -6,6 +6,8 @@ permalink: /kb/173/Q173253/
 
 ## Q173253: Visual Basic 5.0 Step by Step Comments and Corrections
 
+{% raw %}
+
 	Article: Q173253
 	Product(s): Microsoft Press
 	Version(s): 
@@ -148,3 +150,5 @@ permalink: /kb/173/Q173253/
 	
 	=============================================================================
 	
+
+{% endraw %}

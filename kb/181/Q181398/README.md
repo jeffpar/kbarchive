@@ -6,6 +6,8 @@ permalink: /kb/181/Q181398/
 
 ## Q181398: WD97: Macro to Remove a Subdirectory in Word for Windows
 
+{% raw %}
+
 	Article: Q181398
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/181/Q181398/
 	
 	=============================================================================
 	
+
+{% endraw %}

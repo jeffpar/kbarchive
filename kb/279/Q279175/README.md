@@ -6,6 +6,8 @@ permalink: /kb/279/Q279175/
 
 ## Q279175: XFOR: Japanese Characters in Subject Line Are Question Marks
 
+{% raw %}
+
 	Article: Q279175
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP2,5.5 SP3,5.5 SP4
@@ -89,3 +91,5 @@ permalink: /kb/279/Q279175/
 	
 	=============================================================================
 	
+
+{% endraw %}

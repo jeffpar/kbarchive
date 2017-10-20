@@ -6,6 +6,8 @@ permalink: /kb/057/Q57642/
 
 ## Q57642: SYSTEM.INI Entries Required for Everex Step 386/25
 
+{% raw %}
+
 	Article: Q57642
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/057/Q57642/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176989/
 
 ## Q176989: Stop: C0000143 Caused by PCAnywhere
 
+{% raw %}
+
 	Article: Q176989
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -130,3 +132,5 @@ permalink: /kb/176/Q176989/
 	
 	=============================================================================
 	
+
+{% endraw %}

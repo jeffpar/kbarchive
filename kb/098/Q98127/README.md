@@ -6,6 +6,8 @@ permalink: /kb/098/Q98127/
 
 ## Q98127: WD97: Error Message: &quot;The Document Template Is Not Valid&quot;
 
+{% raw %}
+
 	Article: Q98127
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/098/Q98127/
 	
 	=============================================================================
 	
+
+{% endraw %}

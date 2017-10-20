@@ -6,6 +6,8 @@ permalink: /kb/264/Q264811/
 
 ## Q264811: SMS: Timestamps Reset When Printing Big Network Monitor Capture
 
+{% raw %}
+
 	Article: Q264811
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -46,3 +48,5 @@ permalink: /kb/264/Q264811/
 	
 	=============================================================================
 	
+
+{% endraw %}

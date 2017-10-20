@@ -6,6 +6,8 @@ permalink: /kb/240/Q240675/
 
 ## Q240675: SMS: IBM Client Access Software May Cause SMS Client to Hang
 
+{% raw %}
+
 	Article: Q240675
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -70,3 +72,5 @@ permalink: /kb/240/Q240675/
 	
 	=============================================================================
 	
+
+{% endraw %}

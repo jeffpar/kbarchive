@@ -6,6 +6,8 @@ permalink: /kb/145/Q145909/
 
 ## Q145909: FPNW: Invalid User Name Consumes a Seat License
 
+{% raw %}
+
 	Article: Q145909
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -57,3 +59,5 @@ permalink: /kb/145/Q145909/
 	
 	=============================================================================
 	
+
+{% endraw %}

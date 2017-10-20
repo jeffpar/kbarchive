@@ -6,6 +6,8 @@ permalink: /kb/157/Q157466/
 
 ## Q157466: WD: WordArt Object Missing, Changes After Conversion
 
+{% raw %}
+
 	Article: Q157466
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:6.0,6.0a,6.0c,7.0,7.0a,97
@@ -54,3 +56,5 @@ permalink: /kb/157/Q157466/
 	
 	=============================================================================
 	
+
+{% endraw %}

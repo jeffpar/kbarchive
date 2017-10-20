@@ -6,6 +6,8 @@ permalink: /kb/084/Q84337/
 
 ## Q84337: PageMaker Version 4.0 F6, F7, F8 Keys Do Not Function
 
+{% raw %}
+
 	Article: Q84337
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/084/Q84337/
 	
 	=============================================================================
 	
+
+{% endraw %}

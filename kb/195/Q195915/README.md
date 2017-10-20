@@ -6,6 +6,8 @@ permalink: /kb/195/Q195915/
 
 ## Q195915: XADM: Missing Address Template Causes Event 1188
 
+{% raw %}
+
 	Article: Q195915
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -95,3 +97,5 @@ permalink: /kb/195/Q195915/
 	
 	=============================================================================
 	
+
+{% endraw %}

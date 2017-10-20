@@ -6,6 +6,8 @@ permalink: /kb/168/Q168140/
 
 ## Q168140: XCON: NDR &quot;Invalid Parameters&quot;
 
+{% raw %}
+
 	Article: Q168140
 	Product(s): Microsoft Exchange
 	Version(s): Windows:4.0
@@ -73,3 +75,5 @@ permalink: /kb/168/Q168140/
 	
 	=============================================================================
 	
+
+{% endraw %}

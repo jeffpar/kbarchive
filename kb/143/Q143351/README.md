@@ -6,6 +6,8 @@ permalink: /kb/143/Q143351/
 
 ## Q143351: How to Check Network Connectivity Using Net Diagnostics
 
+{% raw %}
+
 	Article: Q143351
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -70,3 +72,5 @@ permalink: /kb/143/Q143351/
 	
 	=============================================================================
 	
+
+{% endraw %}

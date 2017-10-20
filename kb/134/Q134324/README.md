@@ -6,6 +6,8 @@ permalink: /kb/134/Q134324/
 
 ## Q134324: File Manager Displays Day And Minutes As &quot;d&quot; and &quot;mm&quot;
 
+{% raw %}
+
 	Article: Q134324
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/134/Q134324/
 	
 	=============================================================================
 	
+
+{% endraw %}

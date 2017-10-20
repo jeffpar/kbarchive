@@ -6,6 +6,8 @@ permalink: /kb/271/Q271824/
 
 ## Q271824: XADM: After Applying Service Pack Rerun Performance Optimizer
 
+{% raw %}
+
 	Article: Q271824
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -61,3 +63,5 @@ permalink: /kb/271/Q271824/
 	
 	=============================================================================
 	
+
+{% endraw %}

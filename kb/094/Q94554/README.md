@@ -6,6 +6,8 @@ permalink: /kb/094/Q94554/
 
 ## Q94554: HIMEM.SYS and EMM386.EXE Are Not Verbose by Default
 
+{% raw %}
+
 	Article: Q94554
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -59,3 +61,5 @@ permalink: /kb/094/Q94554/
 	
 	=============================================================================
 	
+
+{% endraw %}

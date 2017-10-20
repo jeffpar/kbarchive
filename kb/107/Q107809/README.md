@@ -6,6 +6,8 @@ permalink: /kb/107/Q107809/
 
 ## Q107809: RAS May Not Function on a Shared Network Installation
 
+{% raw %}
+
 	Article: Q107809
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -59,3 +61,5 @@ permalink: /kb/107/Q107809/
 	
 	=============================================================================
 	
+
+{% endraw %}

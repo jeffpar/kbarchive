@@ -6,6 +6,8 @@ permalink: /kb/158/Q158186/
 
 ## Q158186: Personal Web Server Does Not Allow FTP Connections
 
+{% raw %}
+
 	Article: Q158186
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:1.0
@@ -117,3 +119,5 @@ permalink: /kb/158/Q158186/
 	
 	=============================================================================
 	
+
+{% endraw %}

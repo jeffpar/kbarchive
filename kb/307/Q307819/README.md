@@ -6,6 +6,8 @@ permalink: /kb/307/Q307819/
 
 ## Q307819: BUG: Problems with Automated Installation of HIS Clients
 
+{% raw %}
+
 	Article: Q307819
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/307/Q307819/
 	
 	=============================================================================
 	
+
+{% endraw %}

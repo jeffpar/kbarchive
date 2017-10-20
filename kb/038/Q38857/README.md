@@ -6,6 +6,8 @@ permalink: /kb/038/Q38857/
 
 ## Q38857: &quot;Invalid Object Module&quot; with Indirection Problem
 
+{% raw %}
+
 	Article: Q38857
 	Product(s): See article
 	Version(s): 1.00 1.01
@@ -52,3 +54,5 @@ permalink: /kb/038/Q38857/
 	char* greeting="hello";
 	
 	The program should then compile and link successfully.
+
+{% endraw %}

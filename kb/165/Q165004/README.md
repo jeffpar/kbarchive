@@ -6,6 +6,8 @@ permalink: /kb/165/Q165004/
 
 ## Q165004: NTVDM Support for Compaq Financial Keyboard Scan Codes
 
+{% raw %}
+
 	Article: Q165004
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/165/Q165004/
 	
 	=============================================================================
 	
+
+{% endraw %}

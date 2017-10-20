@@ -6,6 +6,8 @@ permalink: /kb/185/Q185200/
 
 ## Q185200: How to Share a Common List of Fax Numbers in Exchange
 
+{% raw %}
+
 	Article: Q185200
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a,4.5,5.0,5.5
@@ -106,3 +108,5 @@ permalink: /kb/185/Q185200/
 	
 	=============================================================================
 	
+
+{% endraw %}

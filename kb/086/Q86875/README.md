@@ -6,6 +6,8 @@ permalink: /kb/086/Q86875/
 
 ## Q86875: BUG: Dsklayt2 /W Option Without Disk Number Fails
 
+{% raw %}
+
 	Article: Q86875
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -71,3 +73,5 @@ permalink: /kb/086/Q86875/
 	
 	=============================================================================
 	
+
+{% endraw %}

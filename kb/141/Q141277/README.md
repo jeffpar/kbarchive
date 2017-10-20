@@ -6,6 +6,8 @@ permalink: /kb/141/Q141277/
 
 ## Q141277: HOWTO: Override an Interface in an MFC Application
 
+{% raw %}
+
 	Article: Q141277
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,5.0,6.0
@@ -160,3 +162,5 @@ permalink: /kb/141/Q141277/
 	
 	=============================================================================
 	
+
+{% endraw %}

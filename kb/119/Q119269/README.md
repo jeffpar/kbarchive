@@ -6,6 +6,8 @@ permalink: /kb/119/Q119269/
 
 ## Q119269: Printing to AWFAX Printer Driver Does Not Send Fax
 
+{% raw %}
+
 	Article: Q119269
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:
@@ -54,3 +56,5 @@ permalink: /kb/119/Q119269/
 	
 	=============================================================================
 	
+
+{% endraw %}

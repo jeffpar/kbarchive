@@ -6,6 +6,8 @@ permalink: /kb/086/Q86263/
 
 ## Q86263: Redirecting Debugging Information Under Windows 3.0, 3.1
 
+{% raw %}
+
 	Article: Q86263
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -190,3 +192,5 @@ permalink: /kb/086/Q86263/
 	
 	=============================================================================
 	
+
+{% endraw %}

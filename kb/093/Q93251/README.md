@@ -6,6 +6,8 @@ permalink: /kb/093/Q93251/
 
 ## Q93251: SAMPLE: WinLua.exe LUA API for 16-bit and 32-bit Windows
 
+{% raw %}
+
 	Article: Q93251
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -94,3 +96,5 @@ permalink: /kb/093/Q93251/
 	
 	=============================================================================
 	
+
+{% endraw %}

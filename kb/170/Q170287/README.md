@@ -6,6 +6,8 @@ permalink: /kb/170/Q170287/
 
 ## Q170287: Multi-session SLI Program Stops Receiving Data
 
+{% raw %}
+
 	Article: Q170287
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0
@@ -83,3 +85,5 @@ permalink: /kb/170/Q170287/
 	
 	=============================================================================
 	
+
+{% endraw %}

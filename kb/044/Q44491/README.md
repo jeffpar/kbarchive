@@ -6,6 +6,8 @@ permalink: /kb/044/Q44491/
 
 ## Q44491: Tandy 4000 &quot;Invalid Configuration&quot; after &quot;Disk Not Ready&quot;
 
+{% raw %}
+
 	Article: Q44491
 	Product(s): See article
 	Version(s): 4.50
@@ -29,3 +31,5 @@ permalink: /kb/044/Q44491/
 	correct the problem, open the circuit for pin 34.
 	
 	Microsoft has not confirmed this information.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111652/
 
 ## Q111652: BUG: Edit Controls and WS_CLIPCHILDREN Function Differently
 
+{% raw %}
+
 	Article: Q111652
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -50,3 +52,5 @@ permalink: /kb/111/Q111652/
 	
 	=============================================================================
 	
+
+{% endraw %}

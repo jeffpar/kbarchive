@@ -6,6 +6,8 @@ permalink: /kb/074/Q74985/
 
 ## Q74985: Determining Load Size of Device Drivers or TSRs
 
+{% raw %}
+
 	Article: Q74985
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -159,3 +161,5 @@ permalink: /kb/074/Q74985/
 	
 	=============================================================================
 	
+
+{% endraw %}

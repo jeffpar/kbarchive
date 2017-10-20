@@ -6,6 +6,8 @@ permalink: /kb/255/Q255790/
 
 ## Q255790: HOWTO: Use a DataCombo ActiveX Control in Visual FoxPro
 
+{% raw %}
+
 	Article: Q255790
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -200,3 +202,5 @@ permalink: /kb/255/Q255790/
 	
 	=============================================================================
 	
+
+{% endraw %}

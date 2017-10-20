@@ -6,6 +6,8 @@ permalink: /kb/163/Q163686/
 
 ## Q163686: XADM: What to Do If the Service Account Is Deleted
 
+{% raw %}
+
 	Article: Q163686
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -69,3 +71,5 @@ permalink: /kb/163/Q163686/
 	
 	=============================================================================
 	
+
+{% endraw %}

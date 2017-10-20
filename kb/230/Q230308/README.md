@@ -6,6 +6,8 @@ permalink: /kb/230/Q230308/
 
 ## Q230308: Contents of NNTP Service Release Notes
 
+{% raw %}
+
 	Article: Q230308
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -265,3 +267,5 @@ permalink: /kb/230/Q230308/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157058/
 
 ## Q157058: XADM: MTA Restart Fails and Logs Error 2051
 
+{% raw %}
+
 	Article: Q157058
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/157/Q157058/
 	
 	=============================================================================
 	
+
+{% endraw %}

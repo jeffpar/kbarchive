@@ -6,6 +6,8 @@ permalink: /kb/117/Q117633/
 
 ## Q117633: How Browsing a Wide Area Network Works
 
+{% raw %}
+
 	Article: Q117633
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:3.1,3.5,3.51,4.0; :
@@ -106,3 +108,5 @@ permalink: /kb/117/Q117633/
 	
 	=============================================================================
 	
+
+{% endraw %}

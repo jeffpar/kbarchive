@@ -6,6 +6,8 @@ permalink: /kb/134/Q134526/
 
 ## Q134526: Compaq Deskpro Drive D Unavailable After Installing Windows 95
 
+{% raw %}
+
 	Article: Q134526
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -54,3 +56,5 @@ permalink: /kb/134/Q134526/
 	
 	=============================================================================
 	
+
+{% endraw %}

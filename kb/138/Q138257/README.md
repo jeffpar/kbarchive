@@ -6,6 +6,8 @@ permalink: /kb/138/Q138257/
 
 ## Q138257: Inconsistent Print Results Using HP LaserJet 5L
 
+{% raw %}
+
 	Article: Q138257
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -59,3 +61,5 @@ permalink: /kb/138/Q138257/
 	
 	=============================================================================
 	
+
+{% endraw %}

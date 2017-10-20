@@ -6,6 +6,8 @@ permalink: /kb/216/Q216087/
 
 ## Q216087: PRB: Err &quot;Unable to find Visual Class Library&quot;
 
+{% raw %}
+
 	Article: Q216087
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -91,3 +93,5 @@ permalink: /kb/216/Q216087/
 	
 	=============================================================================
 	
+
+{% endraw %}

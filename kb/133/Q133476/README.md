@@ -6,6 +6,8 @@ permalink: /kb/133/Q133476/
 
 ## Q133476: Windows NT Mail Err Msg: Initialization of the Dynamic Link...
 
+{% raw %}
+
 	Article: Q133476
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/133/Q133476/
 	
 	=============================================================================
 	
+
+{% endraw %}

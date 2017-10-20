@@ -6,6 +6,8 @@ permalink: /kb/201/Q201711/
 
 ## Q201711: SMS: Refresh of Collection Does Not Aways List New Machines
 
+{% raw %}
+
 	Article: Q201711
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -51,3 +53,5 @@ permalink: /kb/201/Q201711/
 	
 	=============================================================================
 	
+
+{% endraw %}

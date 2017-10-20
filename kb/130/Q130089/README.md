@@ -6,6 +6,8 @@ permalink: /kb/130/Q130089/
 
 ## Q130089: FIX: Can't Select Beginning and End Pages in Print Dialog
 
+{% raw %}
+
 	Article: Q130089
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -77,3 +79,5 @@ permalink: /kb/130/Q130089/
 	
 	=============================================================================
 	
+
+{% endraw %}

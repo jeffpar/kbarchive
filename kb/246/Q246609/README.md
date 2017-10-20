@@ -6,6 +6,8 @@ permalink: /kb/246/Q246609/
 
 ## Q246609: HOWTO: Start Internet Explorer and Navigate to a URL Using OLE
 
+{% raw %}
+
 	Article: Q246609
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:4.01,4.01 Service Pack 2,5,5.0a,6.0
@@ -73,3 +75,5 @@ permalink: /kb/246/Q246609/
 	
 	=============================================================================
 	
+
+{% endraw %}

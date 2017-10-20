@@ -6,6 +6,8 @@ permalink: /kb/169/Q169628/
 
 ## Q169628: XCON: MTA May Hang After Running from the Command Line
 
+{% raw %}
+
 	Article: Q169628
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -50,3 +52,5 @@ permalink: /kb/169/Q169628/
 	
 	=============================================================================
 	
+
+{% endraw %}

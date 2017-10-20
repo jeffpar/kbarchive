@@ -6,6 +6,8 @@ permalink: /kb/125/Q125744/
 
 ## Q125744: Cancel Button Does Not Cancel in Telnet
 
+{% raw %}
+
 	Article: Q125744
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -37,3 +39,5 @@ permalink: /kb/125/Q125744/
 	
 	=============================================================================
 	
+
+{% endraw %}

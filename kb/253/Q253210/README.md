@@ -6,6 +6,8 @@ permalink: /kb/253/Q253210/
 
 ## Q253210: XCLN: Error Message: Properties for This Information Service...
 
+{% raw %}
+
 	Article: Q253210
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,98
@@ -63,3 +65,5 @@ permalink: /kb/253/Q253210/
 	
 	=============================================================================
 	
+
+{% endraw %}

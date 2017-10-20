@@ -6,6 +6,8 @@ permalink: /kb/041/Q41664/
 
 ## Q41664: QuickC 2.00 README.DOC: Appendix D, Error-Message Reference
 
+{% raw %}
+
 	Article: Q41664
 	Product(s): See article
 	Version(s): 2.00
@@ -48,3 +50,5 @@ permalink: /kb/041/Q41664/
 	
 	C5.1 users may notice slight changes to these error messages: C2035,
 	C2077, C2095, C2133, C2174, C2182
+
+{% endraw %}

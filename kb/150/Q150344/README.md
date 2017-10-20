@@ -6,6 +6,8 @@ permalink: /kb/150/Q150344/
 
 ## Q150344: MSB Ocean: How to Access All Games from Any Location
 
+{% raw %}
+
 	Article: Q150344
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0; WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/150/Q150344/
 	
 	=============================================================================
 	
+
+{% endraw %}

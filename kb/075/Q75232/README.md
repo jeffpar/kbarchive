@@ -6,6 +6,8 @@ permalink: /kb/075/Q75232/
 
 ## Q75232: Saving Files over the Network on Novell v2.15
 
+{% raw %}
+
 	Article: Q75232
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -54,3 +56,5 @@ permalink: /kb/075/Q75232/
 	
 	=============================================================================
 	
+
+{% endraw %}

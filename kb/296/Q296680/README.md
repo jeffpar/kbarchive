@@ -6,6 +6,8 @@ permalink: /kb/296/Q296680/
 
 ## Q296680: User Accounts Are Not Excluded from Password Synchronization
 
+{% raw %}
+
 	Article: Q296680
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -66,3 +68,5 @@ permalink: /kb/296/Q296680/
 	
 	=============================================================================
 	
+
+{% endraw %}

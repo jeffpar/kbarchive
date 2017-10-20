@@ -6,6 +6,8 @@ permalink: /kb/221/Q221178/
 
 ## Q221178: WD97: Unable to Use Mail Merge with Outlook Address Book
 
+{% raw %}
+
 	Article: Q221178
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -230,3 +232,5 @@ permalink: /kb/221/Q221178/
 	
 	=============================================================================
 	
+
+{% endraw %}

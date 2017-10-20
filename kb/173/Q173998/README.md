@@ -6,6 +6,8 @@ permalink: /kb/173/Q173998/
 
 ## Q173998: Middle East/Thai Windows NT May Print Incorrect Characters
 
+{% raw %}
+
 	Article: Q173998
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/173/Q173998/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168319/
 
 ## Q168319: XADM: No Instances Tab in Public Information Store
 
+{% raw %}
+
 	Article: Q168319
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -43,3 +45,5 @@ permalink: /kb/168/Q168319/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/061/Q61210/
 
 ## Q61210: C 6.00 README: Use Only Alpha Numeric Characters in PWB Build
 
+{% raw %}
+
 	Article: Q61210
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -29,3 +31,5 @@ permalink: /kb/061/Q61210/
 	   a-z
 	
 	No other characters are allowed in a filename extension.
+
+{% endraw %}

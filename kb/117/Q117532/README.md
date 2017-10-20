@@ -6,6 +6,8 @@ permalink: /kb/117/Q117532/
 
 ## Q117532: Password on Macintosh Volume Resets When Server is Rebooted
 
+{% raw %}
+
 	Article: Q117532
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -50,3 +52,5 @@ permalink: /kb/117/Q117532/
 	
 	=============================================================================
 	
+
+{% endraw %}

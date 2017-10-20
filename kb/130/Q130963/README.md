@@ -6,6 +6,8 @@ permalink: /kb/130/Q130963/
 
 ## Q130963: Summary of Network Intermediate Systems
 
+{% raw %}
+
 	Article: Q130963
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/130/Q130963/
 	
 	=============================================================================
 	
+
+{% endraw %}

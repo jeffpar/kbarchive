@@ -6,6 +6,8 @@ permalink: /kb/257/Q257367/
 
 ## Q257367: XCLN: Error Message When You Open a Recurring Appointment
 
+{% raw %}
+
 	Article: Q257367
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/257/Q257367/
 	
 	=============================================================================
 	
+
+{% endraw %}

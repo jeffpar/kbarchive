@@ -6,6 +6,8 @@ permalink: /kb/105/Q105009/
 
 ## Q105009: PRB: &quot;Record out of Range&quot; Error When Modifying Report
 
+{% raw %}
+
 	Article: Q105009
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6x,3.0
@@ -84,3 +86,5 @@ permalink: /kb/105/Q105009/
 	
 	=============================================================================
 	
+
+{% endraw %}

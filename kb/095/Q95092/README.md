@@ -6,6 +6,8 @@ permalink: /kb/095/Q95092/
 
 ## Q95092: EMM386 Err Msg: Unable to Create Page Frame
 
+{% raw %}
+
 	Article: Q95092
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.0,4.01,4.01a,4.0a,5.0,5.0a
@@ -72,3 +74,5 @@ permalink: /kb/095/Q95092/
 	
 	=============================================================================
 	
+
+{% endraw %}

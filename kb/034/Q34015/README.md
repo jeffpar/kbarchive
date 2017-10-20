@@ -6,6 +6,8 @@ permalink: /kb/034/Q34015/
 
 ## Q34015: GOTO a Labeled ELSE Fails in QB.EXE 4.00 and 4.00b Editor
 
+{% raw %}
+
 	Article: Q34015
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -34,3 +36,5 @@ permalink: /kb/034/Q34015/
 	100 ELSE
 	        PRINT " this is after else"
 	END IF
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118330/
 
 ## Q118330: INF: Driver Manager and Cursor Library Compatibility
 
+{% raw %}
+
 	Article: Q118330
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.05,2.0
@@ -62,3 +64,5 @@ permalink: /kb/118/Q118330/
 	
 	=============================================================================
 	
+
+{% endraw %}

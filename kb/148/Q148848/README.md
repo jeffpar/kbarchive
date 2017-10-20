@@ -6,6 +6,8 @@ permalink: /kb/148/Q148848/
 
 ## Q148848: FIX: &quot;Item not found in this collection&quot; Message Box
 
+{% raw %}
+
 	Article: Q148848
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -106,3 +108,5 @@ permalink: /kb/148/Q148848/
 	
 	=============================================================================
 	
+
+{% endraw %}

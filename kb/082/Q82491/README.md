@@ -6,6 +6,8 @@ permalink: /kb/082/Q82491/
 
 ## Q82491: Setup Does Not Delete Windows 3.0 SMARTDRV or EMM386
 
+{% raw %}
+
 	Article: Q82491
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -40,3 +42,5 @@ permalink: /kb/082/Q82491/
 	
 	=============================================================================
 	
+
+{% endraw %}

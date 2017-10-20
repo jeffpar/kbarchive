@@ -6,6 +6,8 @@ permalink: /kb/058/Q58956/
 
 ## Q58956: You Cannot Decompile .EXE or .OBJ Files Back to BASIC Source
 
+{% raw %}
+
 	Article: Q58956
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -50,3 +52,5 @@ permalink: /kb/058/Q58956/
 	BASIC Compiler Versions 6.00 and 6.00b for MS-DOS and MS OS/2, and to
 	Microsoft BASIC Professional Development System (PDS) Version 7.00 for
 	MS-DOS and MS OS/2.
+
+{% endraw %}

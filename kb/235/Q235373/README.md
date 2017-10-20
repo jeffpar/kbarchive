@@ -6,6 +6,8 @@ permalink: /kb/235/Q235373/
 
 ## Q235373: Contents of Service Pack 5 for Windows NT 4.0 (Intel 40-Bit)
 
+{% raw %}
+
 	Article: Q235373
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -1185,3 +1187,5 @@ permalink: /kb/235/Q235373/
 	
 	=============================================================================
 	
+
+{% endraw %}

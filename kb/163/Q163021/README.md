@@ -6,6 +6,8 @@ permalink: /kb/163/Q163021/
 
 ## Q163021: RUI_WRITE Is Rejected with Sense Code 0X'200D'
 
+{% raw %}
+
 	Article: Q163021
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1,3.0
@@ -137,3 +139,5 @@ permalink: /kb/163/Q163021/
 	
 	=============================================================================
 	
+
+{% endraw %}

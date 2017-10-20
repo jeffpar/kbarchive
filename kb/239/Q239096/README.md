@@ -6,6 +6,8 @@ permalink: /kb/239/Q239096/
 
 ## Q239096: PRB: Problems with CoInitializeEx and CDO
 
+{% raw %}
+
 	Article: Q239096
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -123,3 +125,5 @@ permalink: /kb/239/Q239096/
 	
 	=============================================================================
 	
+
+{% endraw %}

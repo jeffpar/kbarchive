@@ -6,6 +6,8 @@ permalink: /kb/119/Q119743/
 
 ## Q119743: Error Attempting to Delete Groups with Member Groups Present
 
+{% raw %}
+
 	Article: Q119743
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -67,3 +69,5 @@ permalink: /kb/119/Q119743/
 	
 	=============================================================================
 	
+
+{% endraw %}

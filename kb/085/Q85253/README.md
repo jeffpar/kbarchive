@@ -6,6 +6,8 @@ permalink: /kb/085/Q85253/
 
 ## Q85253: Radius Video Driver May Cause Incorrect Line Wrapping
 
+{% raw %}
+
 	Article: Q85253
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -70,3 +72,5 @@ permalink: /kb/085/Q85253/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125801/
 
 ## Q125801: Disabling Execute Permission Causes Irrelevant Error Messages
 
+{% raw %}
+
 	Article: Q125801
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/125/Q125801/
 	
 	=============================================================================
 	
+
+{% endraw %}

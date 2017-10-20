@@ -6,6 +6,8 @@ permalink: /kb/140/Q140325/
 
 ## Q140325: How to Determine Loss of Client/Server Connection
 
+{% raw %}
+
 	Article: Q140325
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.5,3.51,4.0
@@ -126,3 +128,5 @@ permalink: /kb/140/Q140325/
 	
 	=============================================================================
 	
+
+{% endraw %}

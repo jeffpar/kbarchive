@@ -6,6 +6,8 @@ permalink: /kb/110/Q110831/
 
 ## Q110831: PPT: Slides Look Bad When Pasted into Other Programs
 
+{% raw %}
+
 	Article: Q110831
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:2.0,2.0e,3.0,4.0,4.0a,4.0c,7.0
@@ -174,3 +176,5 @@ permalink: /kb/110/Q110831/
 	
 	=============================================================================
 	
+
+{% endraw %}

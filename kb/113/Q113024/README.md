@@ -6,6 +6,8 @@ permalink: /kb/113/Q113024/
 
 ## Q113024: PPT: May Have to Scale Cross-Platform Bitmaps for Display
 
+{% raw %}
+
 	Article: Q113024
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:2.0,2.01,3.0,4.0; WINDOWS:2.0,3.0,4.0,4.0a,4.0c,7.0
@@ -90,3 +92,5 @@ permalink: /kb/113/Q113024/
 	
 	=============================================================================
 	
+
+{% endraw %}

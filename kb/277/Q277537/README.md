@@ -6,6 +6,8 @@ permalink: /kb/277/Q277537/
 
 ## Q277537: Error Message When You Open a Notepad File on IBM AS400
 
+{% raw %}
+
 	Article: Q277537
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6
@@ -96,3 +98,5 @@ permalink: /kb/277/Q277537/
 	
 	=============================================================================
 	
+
+{% endraw %}

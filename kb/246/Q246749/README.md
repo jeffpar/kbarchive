@@ -6,6 +6,8 @@ permalink: /kb/246/Q246749/
 
 ## Q246749: SMS: Status Messages in Futureq Folder Are Not Processed
 
+{% raw %}
+
 	Article: Q246749
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -66,3 +68,5 @@ permalink: /kb/246/Q246749/
 	
 	=============================================================================
 	
+
+{% endraw %}

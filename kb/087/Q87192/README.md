@@ -6,6 +6,8 @@ permalink: /kb/087/Q87192/
 
 ## Q87192: PROFS: Hardware and Software Requirements on the LAN
 
+{% raw %}
+
 	Article: Q87192
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -54,3 +56,5 @@ permalink: /kb/087/Q87192/
 	
 	=============================================================================
 	
+
+{% endraw %}

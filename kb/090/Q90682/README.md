@@ -6,6 +6,8 @@ permalink: /kb/090/Q90682/
 
 ## Q90682: COMMAND.COM Corrupted or Missing on a DoubleSpace Drive
 
+{% raw %}
+
 	Article: Q90682
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -54,3 +56,5 @@ permalink: /kb/090/Q90682/
 	
 	=============================================================================
 	
+
+{% endraw %}

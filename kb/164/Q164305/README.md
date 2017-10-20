@@ -6,6 +6,8 @@ permalink: /kb/164/Q164305/
 
 ## Q164305: Performance Problems Using USB Camera
 
+{% raw %}
+
 	Article: Q164305
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.1
@@ -59,3 +61,5 @@ permalink: /kb/164/Q164305/
 	
 	=============================================================================
 	
+
+{% endraw %}

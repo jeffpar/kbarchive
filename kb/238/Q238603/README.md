@@ -6,6 +6,8 @@ permalink: /kb/238/Q238603/
 
 ## Q238603: SMS: RRAS May Not Work with Event 7023 After Installing SMS 2.0
 
+{% raw %}
+
 	Article: Q238603
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -66,3 +68,5 @@ permalink: /kb/238/Q238603/
 	
 	=============================================================================
 	
+
+{% endraw %}

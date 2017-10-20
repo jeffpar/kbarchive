@@ -6,6 +6,8 @@ permalink: /kb/161/Q161373/
 
 ## Q161373: Background Color Changes When Exiting MS-DOS Prompt
 
+{% raw %}
+
 	Article: Q161373
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/161/Q161373/
 	
 	=============================================================================
 	
+
+{% endraw %}

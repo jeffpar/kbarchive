@@ -6,6 +6,8 @@ permalink: /kb/156/Q156440/
 
 ## Q156440: XCON: Message Stuck in MTA When Using RAS Connector
 
+{% raw %}
+
 	Article: Q156440
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/156/Q156440/
 	
 	=============================================================================
 	
+
+{% endraw %}

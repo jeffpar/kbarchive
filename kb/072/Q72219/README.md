@@ -6,6 +6,8 @@ permalink: /kb/072/Q72219/
 
 ## Q72219: INFO: Context-Sensitive Help in a Dialog Box Through F1
 
+{% raw %}
+
 	Article: Q72219
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -178,3 +180,5 @@ permalink: /kb/072/Q72219/
 	
 	=============================================================================
 	
+
+{% endraw %}

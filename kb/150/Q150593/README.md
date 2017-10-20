@@ -6,6 +6,8 @@ permalink: /kb/150/Q150593/
 
 ## Q150593: PRB: Syntax Error When You Modify Local View w/ Reserved Words
 
+{% raw %}
+
 	Article: Q150593
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -91,3 +93,5 @@ permalink: /kb/150/Q150593/
 	
 	=============================================================================
 	
+
+{% endraw %}

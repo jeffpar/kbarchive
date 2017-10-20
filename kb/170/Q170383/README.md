@@ -6,6 +6,8 @@ permalink: /kb/170/Q170383/
 
 ## Q170383: HOWTO: Get Tooltips to Appear when Code in MouseMove
 
+{% raw %}
+
 	Article: Q170383
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -175,3 +177,5 @@ permalink: /kb/170/Q170383/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/276/Q276264/
 
 ## Q276264: Zero Byte Files When You Print to a File w/ ByPass GDI Selected
 
+{% raw %}
+
 	Article: Q276264
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -88,3 +90,5 @@ permalink: /kb/276/Q276264/
 	
 	=============================================================================
 	
+
+{% endraw %}

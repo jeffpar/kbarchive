@@ -6,6 +6,8 @@ permalink: /kb/160/Q160651/
 
 ## Q160651: OpenGL May Cause an Exception 0xc0000090
 
+{% raw %}
+
 	Article: Q160651
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/160/Q160651/
 	
 	=============================================================================
 	
+
+{% endraw %}

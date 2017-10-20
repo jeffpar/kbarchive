@@ -6,6 +6,8 @@ permalink: /kb/184/Q184054/
 
 ## Q184054: XCON: NDR on Message from cc:Mail PO with Friendly Name
 
+{% raw %}
+
 	Article: Q184054
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -56,3 +58,5 @@ permalink: /kb/184/Q184054/
 	
 	=============================================================================
 	
+
+{% endraw %}

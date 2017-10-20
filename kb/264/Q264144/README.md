@@ -6,6 +6,8 @@ permalink: /kb/264/Q264144/
 
 ## Q264144: Starlancer: No Forces on Windows 2000 or Windows XP
 
+{% raw %}
+
 	Article: Q264144
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -60,3 +62,5 @@ permalink: /kb/264/Q264144/
 	
 	=============================================================================
 	
+
+{% endraw %}

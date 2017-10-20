@@ -6,6 +6,8 @@ permalink: /kb/279/Q279236/
 
 ## Q279236: Windows 2000 Performance Tuning Technical Reference Comments and
 
+{% raw %}
+
 	Article: Q279236
 	Product(s): Microsoft Press
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/279/Q279236/
 	
 	=============================================================================
 	
+
+{% endraw %}

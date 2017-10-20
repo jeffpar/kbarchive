@@ -6,6 +6,8 @@ permalink: /kb/068/Q68689/
 
 ## Q68689: Error L2029 with Unresolved Externals in CRTCOM.LIB
 
+{% raw %}
+
 	Article: Q68689
 	Product(s): See article
 	Version(s): 2.51
@@ -34,3 +36,5 @@ permalink: /kb/068/Q68689/
 	
 	Microsoft Programmer's Work Bench [Development Environment]
 	=============================================================================
+
+{% endraw %}

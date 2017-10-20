@@ -6,6 +6,8 @@ permalink: /kb/184/Q184209/
 
 ## Q184209: XADM: Error Msg: JET_errPageNotInitialized When Starting Store
 
+{% raw %}
+
 	Article: Q184209
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -113,3 +115,5 @@ permalink: /kb/184/Q184209/
 	
 	=============================================================================
 	
+
+{% endraw %}

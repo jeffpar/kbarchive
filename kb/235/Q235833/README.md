@@ -6,6 +6,8 @@ permalink: /kb/235/Q235833/
 
 ## Q235833: SMS: Unable to View Status Messages Because of Message Aging
 
+{% raw %}
+
 	Article: Q235833
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -79,3 +81,5 @@ permalink: /kb/235/Q235833/
 	
 	=============================================================================
 	
+
+{% endraw %}

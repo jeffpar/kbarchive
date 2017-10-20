@@ -6,6 +6,8 @@ permalink: /kb/124/Q124643/
 
 ## Q124643: How to Simulate Client-Server Apps w/Apple Events &amp; FoxPro Mac
 
+{% raw %}
+
 	Article: Q124643
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -127,3 +129,5 @@ permalink: /kb/124/Q124643/
 	
 	=============================================================================
 	
+
+{% endraw %}

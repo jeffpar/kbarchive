@@ -6,6 +6,8 @@ permalink: /kb/156/Q156302/
 
 ## Q156302: INFO: STL Sample for the find Function
 
+{% raw %}
+
 	Article: Q156302
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -132,3 +134,5 @@ permalink: /kb/156/Q156302/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/302/Q302785/
 
 ## Q302785: List Of Users Doesn't Display When Setting &quot;Parental Controls&quot; i
 
+{% raw %}
+
 	Article: Q302785
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -55,3 +57,5 @@ permalink: /kb/302/Q302785/
 	
 	=============================================================================
 	
+
+{% endraw %}

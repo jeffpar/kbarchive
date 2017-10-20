@@ -6,6 +6,8 @@ permalink: /kb/132/Q132798/
 
 ## Q132798: Font Assistant Does Not Show All Fonts on Computer
 
+{% raw %}
+
 	Article: Q132798
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/132/Q132798/
 	
 	=============================================================================
 	
+
+{% endraw %}

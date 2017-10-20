@@ -6,6 +6,8 @@ permalink: /kb/184/Q184768/
 
 ## Q184768: XADM: c1030b37 and 2034 Errors When Editing Mailboxes
 
+{% raw %}
+
 	Article: Q184768
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -154,3 +156,5 @@ permalink: /kb/184/Q184768/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/110/Q110308/
 
 ## Q110308: HOWTO: Encrypt a String with Password Security
 
+{% raw %}
+
 	Article: Q110308
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0 5.0
@@ -193,3 +195,5 @@ permalink: /kb/110/Q110308/
 	
 	=============================================================================
 	
+
+{% endraw %}

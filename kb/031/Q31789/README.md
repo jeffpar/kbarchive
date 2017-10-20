@@ -6,6 +6,8 @@ permalink: /kb/031/Q31789/
 
 ## Q31789: Converting Between Decimal, Octal, and Binary Numbers
 
+{% raw %}
+
 	Article: Q31789
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): MS-DOS:1.0; :1.0,1.01,1.02,2.0,2.01,2.1,3.0,3.20,4.0,4.0b,4.5,5.35,5.36,6.0,7.0,7.1
@@ -101,3 +103,5 @@ permalink: /kb/031/Q31789/
 	
 	=============================================================================
 	
+
+{% endraw %}

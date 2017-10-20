@@ -6,6 +6,8 @@ permalink: /kb/171/Q171502/
 
 ## Q171502: FIX: Crash with Watch on UserControl When Stop is Encountered
 
+{% raw %}
+
 	Article: Q171502
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -101,3 +103,5 @@ permalink: /kb/171/Q171502/
 	
 	=============================================================================
 	
+
+{% endraw %}

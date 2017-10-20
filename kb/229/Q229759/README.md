@@ -6,6 +6,8 @@ permalink: /kb/229/Q229759/
 
 ## Q229759: System Command Line Shows the Wrong Date
 
+{% raw %}
+
 	Article: Q229759
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/229/Q229759/
 	
 	=============================================================================
 	
+
+{% endraw %}

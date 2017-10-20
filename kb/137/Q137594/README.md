@@ -6,6 +6,8 @@ permalink: /kb/137/Q137594/
 
 ## Q137594: System Hangs Using EtherExpress PRO/100 in EISA/PCI Computer
 
+{% raw %}
+
 	Article: Q137594
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/137/Q137594/
 	
 	=============================================================================
 	
+
+{% endraw %}

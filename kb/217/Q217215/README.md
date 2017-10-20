@@ -6,6 +6,8 @@ permalink: /kb/217/Q217215/
 
 ## Q217215: XADM: SP2 Update Fails: Procedure Entry Point Error w/Netif.dll
 
+{% raw %}
+
 	Article: Q217215
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -89,3 +91,5 @@ permalink: /kb/217/Q217215/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/043/Q43503/
 
 ## Q43503: Mac Wkst: Changing Automatic Login Setup Preferences
 
+{% raw %}
+
 	Article: Q43503
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0
@@ -77,3 +79,5 @@ permalink: /kb/043/Q43503/
 	
 	=============================================================================
 	
+
+{% endraw %}

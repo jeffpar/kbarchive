@@ -6,6 +6,8 @@ permalink: /kb/039/Q39483/
 
 ## Q39483: Mac DOS: Installing a LocalTalk Compatible Card in an IBM PC/XT
 
+{% raw %}
+
 	Article: Q39483
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.37,2.0,3.0
@@ -78,3 +80,5 @@ permalink: /kb/039/Q39483/
 	
 	=============================================================================
 	
+
+{% endraw %}

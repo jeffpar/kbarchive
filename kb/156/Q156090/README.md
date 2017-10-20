@@ -6,6 +6,8 @@ permalink: /kb/156/Q156090/
 
 ## Q156090: BUG: LOCATE NEXT n or LOCATE REST Fail If Started from BOF
 
+{% raw %}
+
 	Article: Q156090
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6a,3.0,3.0b,5.0,5.0a,6.0
@@ -96,3 +98,5 @@ permalink: /kb/156/Q156090/
 	
 	=============================================================================
 	
+
+{% endraw %}

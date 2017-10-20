@@ -6,6 +6,8 @@ permalink: /kb/327/Q327276/
 
 ## Q327276: Asherons Call: Cannot Connect by Using MSN DSL and Arescom
 
+{% raw %}
+
 	Article: Q327276
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -101,3 +103,5 @@ permalink: /kb/327/Q327276/
 	
 	=============================================================================
 	
+
+{% endraw %}

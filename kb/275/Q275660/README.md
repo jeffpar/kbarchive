@@ -6,6 +6,8 @@ permalink: /kb/275/Q275660/
 
 ## Q275660: Combat Flight Simulator 2: Cannot Open Dialog Boxes
 
+{% raw %}
+
 	Article: Q275660
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -70,3 +72,5 @@ permalink: /kb/275/Q275660/
 	
 	=============================================================================
 	
+
+{% endraw %}

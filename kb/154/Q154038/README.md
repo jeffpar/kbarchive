@@ -6,6 +6,8 @@ permalink: /kb/154/Q154038/
 
 ## Q154038: FPNW Needs GSNW for RPC SAP Services
 
+{% raw %}
+
 	Article: Q154038
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -65,3 +67,5 @@ permalink: /kb/154/Q154038/
 	
 	=============================================================================
 	
+
+{% endraw %}

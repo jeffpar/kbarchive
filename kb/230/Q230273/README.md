@@ -6,6 +6,8 @@ permalink: /kb/230/Q230273/
 
 ## Q230273: XWEB: OWA Creates English Special Folders During Logon
 
+{% raw %}
+
 	Article: Q230273
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -131,3 +133,5 @@ permalink: /kb/230/Q230273/
 	
 	=============================================================================
 	
+
+{% endraw %}

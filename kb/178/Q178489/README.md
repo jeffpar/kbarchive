@@ -6,6 +6,8 @@ permalink: /kb/178/Q178489/
 
 ## Q178489: PRB: Error 53 &quot;File Not Found&quot; When Calling a DLL Function
 
+{% raw %}
+
 	Article: Q178489
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -83,3 +85,5 @@ permalink: /kb/178/Q178489/
 	
 	=============================================================================
 	
+
+{% endraw %}

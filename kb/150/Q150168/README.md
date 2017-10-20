@@ -6,6 +6,8 @@ permalink: /kb/150/Q150168/
 
 ## Q150168: Mastering Access: Setup Program Files Always Installed
 
+{% raw %}
+
 	Article: Q150168
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -52,3 +54,5 @@ permalink: /kb/150/Q150168/
 	
 	=============================================================================
 	
+
+{% endraw %}

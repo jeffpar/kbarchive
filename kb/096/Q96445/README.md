@@ -6,6 +6,8 @@ permalink: /kb/096/Q96445/
 
 ## Q96445: SYSTEM.INI and WIN.INI Entries Made by WSS 1.0x Setup
 
+{% raw %}
+
 	Article: Q96445
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/096/Q96445/
 	
 	=============================================================================
 	
+
+{% endraw %}

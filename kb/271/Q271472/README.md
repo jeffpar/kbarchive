@@ -6,6 +6,8 @@ permalink: /kb/271/Q271472/
 
 ## Q271472: HIS 2000 May Require Restarting Your System after Installation
 
+{% raw %}
+
 	Article: Q271472
 	Product(s): Microsoft SNA Server
 	Version(s): ; WINDOWS:2000,2000 SP1; winnt:4.0 SP6a
@@ -57,3 +59,5 @@ permalink: /kb/271/Q271472/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/258/Q258572/
 
 ## Q258572: Baseball 2001: How to Troubleshoot Game Controller Problems
 
+{% raw %}
+
 	Article: Q258572
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -107,3 +109,5 @@ permalink: /kb/258/Q258572/
 	
 	=============================================================================
 	
+
+{% endraw %}

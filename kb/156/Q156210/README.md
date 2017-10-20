@@ -6,6 +6,8 @@ permalink: /kb/156/Q156210/
 
 ## Q156210: Cannot Expand or Extend the Stripe Set After Creation
 
+{% raw %}
+
 	Article: Q156210
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -48,3 +50,5 @@ permalink: /kb/156/Q156210/
 	
 	=============================================================================
 	
+
+{% endraw %}

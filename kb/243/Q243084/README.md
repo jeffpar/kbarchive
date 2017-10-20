@@ -6,6 +6,8 @@ permalink: /kb/243/Q243084/
 
 ## Q243084: MCSE Readiness Review Exam 70-059 Comments and Corrections
 
+{% raw %}
+
 	Article: Q243084
 	Product(s): Microsoft Press
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/243/Q243084/
 	
 	=============================================================================
 	
+
+{% endraw %}

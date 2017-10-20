@@ -6,6 +6,8 @@ permalink: /kb/244/Q244645/
 
 ## Q244645: User May Get Access Denied Executing a GET from the FTP Prompt
 
+{% raw %}
+
 	Article: Q244645
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/244/Q244645/
 	
 	=============================================================================
 	
+
+{% endraw %}

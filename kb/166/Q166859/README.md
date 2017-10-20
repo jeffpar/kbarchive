@@ -6,6 +6,8 @@ permalink: /kb/166/Q166859/
 
 ## Q166859: PPT: Sample VB Code to Print Current Slide from Slide Show
 
+{% raw %}
+
 	Article: Q166859
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -125,3 +127,5 @@ permalink: /kb/166/Q166859/
 	
 	=============================================================================
 	
+
+{% endraw %}

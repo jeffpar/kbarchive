@@ -6,6 +6,8 @@ permalink: /kb/179/Q179112/
 
 ## Q179112: WD97: Distribute Relative to Page Ignores Landscape Page Setting
 
+{% raw %}
+
 	Article: Q179112
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -150,3 +152,5 @@ permalink: /kb/179/Q179112/
 	
 	=============================================================================
 	
+
+{% endraw %}

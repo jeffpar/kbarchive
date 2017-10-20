@@ -6,6 +6,8 @@ permalink: /kb/225/Q225385/
 
 ## Q225385: New Intranet Kit Calendar Events Not Displayed
 
+{% raw %}
+
 	Article: Q225385
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -53,3 +55,5 @@ permalink: /kb/225/Q225385/
 	
 	=============================================================================
 	
+
+{% endraw %}

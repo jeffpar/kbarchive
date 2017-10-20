@@ -6,6 +6,8 @@ permalink: /kb/175/Q175529/
 
 ## Q175529: Server Service Fails with System Error 8 or System Error 234
 
+{% raw %}
+
 	Article: Q175529
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -108,3 +110,5 @@ permalink: /kb/175/Q175529/
 	
 	=============================================================================
 	
+
+{% endraw %}

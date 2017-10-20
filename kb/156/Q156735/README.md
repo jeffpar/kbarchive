@@ -6,6 +6,8 @@ permalink: /kb/156/Q156735/
 
 ## Q156735: WOW Applications Stack Fault When Launched by a Service
 
+{% raw %}
+
 	Article: Q156735
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/156/Q156735/
 	
 	=============================================================================
 	
+
+{% endraw %}

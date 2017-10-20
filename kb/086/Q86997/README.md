@@ -6,6 +6,8 @@ permalink: /kb/086/Q86997/
 
 ## Q86997: Drivers Available for COMPAQ Q-Vision Video
 
+{% raw %}
+
 	Article: Q86997
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -85,3 +87,5 @@ permalink: /kb/086/Q86997/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124557/
 
 ## Q124557: WordPerfect 6 ErrMsg: The WP Draw Server Could Not Be Launched
 
+{% raw %}
+
 	Article: Q124557
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11,95
@@ -56,3 +58,5 @@ permalink: /kb/124/Q124557/
 	
 	=============================================================================
 	
+
+{% endraw %}

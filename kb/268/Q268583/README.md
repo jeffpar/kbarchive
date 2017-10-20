@@ -6,6 +6,8 @@ permalink: /kb/268/Q268583/
 
 ## Q268583: Plus! Game Pack: Cannot Start Multiplayer Game from the Zone
 
+{% raw %}
+
 	Article: Q268583
 	Product(s): Microsoft Home Games
 	Version(s): ; WINDOWS:
@@ -50,3 +52,5 @@ permalink: /kb/268/Q268583/
 	
 	=============================================================================
 	
+
+{% endraw %}

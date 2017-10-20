@@ -6,6 +6,8 @@ permalink: /kb/137/Q137311/
 
 ## Q137311: VLM Client Generates SetDrivePath Error 85
 
+{% raw %}
+
 	Article: Q137311
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/137/Q137311/
 	
 	=============================================================================
 	
+
+{% endraw %}

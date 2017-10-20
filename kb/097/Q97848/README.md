@@ -6,6 +6,8 @@ permalink: /kb/097/Q97848/
 
 ## Q97848: EZTape Hangs or Generates Error with Compressed Drive
 
+{% raw %}
+
 	Article: Q97848
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -82,3 +84,5 @@ permalink: /kb/097/Q97848/
 	
 	=============================================================================
 	
+
+{% endraw %}

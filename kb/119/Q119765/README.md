@@ -6,6 +6,8 @@ permalink: /kb/119/Q119765/
 
 ## Q119765: INFO: Example DDX Routine for Access Memo Fields
 
+{% raw %}
+
 	Article: Q119765
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5,1.51,1.52,2.0,2.1,4.0,4.1,4.2,5.0,6.0
@@ -83,10 +85,10 @@ permalink: /kb/119/Q119765/
 	     void CSampView::DoDataExchange(CDataExchange* pDX)
 	     {
 	        CRecordView::DoDataExchange(pDX);
-	        //{ {AFX_DATA_MAP(CSampView)
+	        //{{AFX_DATA_MAP(CSampView)
 	        DDX_FieldText(pDX, IDC_EDIT_TITLE, m_pSet->m_strTitle, m_pSet);
 	        DDX_FieldText(pDX, IDC_EDIT_AREA, m_pSet->m_strArea, m_pSet);
-	        //} }AFX_DATA_MAP
+	        //}}AFX_DATA_MAP
 	
 	        DDX_FieldMemo( pDX, IDC_EDIT_MEMO, m_pSet->m_lbMemo, m_pSet );
 	     }
@@ -227,3 +229,5 @@ permalink: /kb/119/Q119765/
 	
 	=============================================================================
 	
+
+{% endraw %}

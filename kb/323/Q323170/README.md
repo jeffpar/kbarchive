@@ -6,6 +6,8 @@ permalink: /kb/323/Q323170/
 
 ## Q323170: HOW TO: Backup, Edit, and Restore the Registry in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q323170
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -170,3 +172,5 @@ permalink: /kb/323/Q323170/
 	
 	=============================================================================
 	
+
+{% endraw %}

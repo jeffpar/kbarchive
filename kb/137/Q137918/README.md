@@ -6,6 +6,8 @@ permalink: /kb/137/Q137918/
 
 ## Q137918: WD97: &quot;Disk Is full...&quot; or &quot;ScanDisk Cannot Check the Drive...&quot;
 
+{% raw %}
+
 	Article: Q137918
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -221,3 +223,5 @@ permalink: /kb/137/Q137918/
 	
 	=============================================================================
 	
+
+{% endraw %}

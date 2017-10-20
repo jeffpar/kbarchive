@@ -6,6 +6,8 @@ permalink: /kb/142/Q142830/
 
 ## Q142830: BUG: Gauge OCX Has Problems with 256-Color Bitmaps
 
+{% raw %}
+
 	Article: Q142830
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -81,3 +83,5 @@ permalink: /kb/142/Q142830/
 	
 	=============================================================================
 	
+
+{% endraw %}

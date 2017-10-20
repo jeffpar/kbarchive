@@ -6,6 +6,8 @@ permalink: /kb/059/Q59123/
 
 ## Q59123: Mac Srv: More Than 32 AppleTalk Nodes May Result in Hang
 
+{% raw %}
+
 	Article: Q59123
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:1.35,1.36,1.37,2.0,2.0a,2.0b,3.0
@@ -45,3 +47,5 @@ permalink: /kb/059/Q59123/
 	
 	=============================================================================
 	
+
+{% endraw %}

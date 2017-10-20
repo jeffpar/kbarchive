@@ -6,6 +6,8 @@ permalink: /kb/065/Q65913/
 
 ## Q65913: PRB: PWB Err Msg: Out of Local Memory. Unable to Recover
 
+{% raw %}
+
 	Article: Q65913
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -54,3 +56,5 @@ permalink: /kb/065/Q65913/
 	
 	=============================================================================
 	
+
+{% endraw %}

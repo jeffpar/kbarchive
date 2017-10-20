@@ -6,6 +6,8 @@ permalink: /kb/289/Q289258/
 
 ## Q289258: XGEN: Exchange Server 5.5 Post-SP4 Internet Mail Service Fixes
 
+{% raw %}
+
 	Article: Q289258
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -86,3 +88,5 @@ permalink: /kb/289/Q289258/
 	
 	=============================================================================
 	
+
+{% endraw %}

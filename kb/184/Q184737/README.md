@@ -6,6 +6,8 @@ permalink: /kb/184/Q184737/
 
 ## Q184737: XADM: Cannot Start Information Store and MTA After Setup /R Usin
 
+{% raw %}
+
 	Article: Q184737
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -61,3 +63,5 @@ permalink: /kb/184/Q184737/
 	
 	=============================================================================
 	
+
+{% endraw %}

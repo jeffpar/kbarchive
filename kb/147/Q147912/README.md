@@ -6,6 +6,8 @@ permalink: /kb/147/Q147912/
 
 ## Q147912: Server Operator Unable to Synchronize Domain Controller
 
+{% raw %}
+
 	Article: Q147912
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -54,3 +56,5 @@ permalink: /kb/147/Q147912/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136888/
 
 ## Q136888: How to Play FreeCell Without a Mouse
 
+{% raw %}
+
 	Article: Q136888
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2000; Win2000:95; winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/136/Q136888/
 	
 	=============================================================================
 	
+
+{% endraw %}

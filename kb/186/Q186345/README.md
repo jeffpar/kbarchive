@@ -6,6 +6,8 @@ permalink: /kb/186/Q186345/
 
 ## Q186345: STOP 0x00000044 When Running Wait.Exe
 
+{% raw %}
+
 	Article: Q186345
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/186/Q186345/
 	
 	=============================================================================
 	
+
+{% endraw %}

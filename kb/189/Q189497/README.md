@@ -6,6 +6,8 @@ permalink: /kb/189/Q189497/
 
 ## Q189497: BUG: Visual C++ Does Not Recognize Animated Cursor Types
 
+{% raw %}
+
 	Article: Q189497
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/189/Q189497/
 	
 	=============================================================================
 	
+
+{% endraw %}

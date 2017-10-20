@@ -6,6 +6,8 @@ permalink: /kb/130/Q130661/
 
 ## Q130661: Windows NT 3.5: STOP 0x0000000a in NETBT.SYS When Memory is Low
 
+{% raw %}
+
 	Article: Q130661
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -67,3 +69,5 @@ permalink: /kb/130/Q130661/
 	
 	=============================================================================
 	
+
+{% endraw %}

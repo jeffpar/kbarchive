@@ -6,6 +6,8 @@ permalink: /kb/274/Q274244/
 
 ## Q274244: SMS: Event to Trap Translator Event Text Truncated
 
+{% raw %}
+
 	Article: Q274244
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -66,3 +68,5 @@ permalink: /kb/274/Q274244/
 	
 	=============================================================================
 	
+
+{% endraw %}

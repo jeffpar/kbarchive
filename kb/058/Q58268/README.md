@@ -6,6 +6,8 @@ permalink: /kb/058/Q58268/
 
 ## Q58268: Using ALT+TAB with Attachmate Extra! (Windows 3.0)
 
+{% raw %}
+
 	Article: Q58268
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -41,3 +43,5 @@ permalink: /kb/058/Q58268/
 	
 	=============================================================================
 	
+
+{% endraw %}

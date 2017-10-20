@@ -6,6 +6,8 @@ permalink: /kb/130/Q130472/
 
 ## Q130472: PRB: Mosaic Setup Can Conflict with Visual C++ Setup
 
+{% raw %}
+
 	Article: Q130472
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5,1.51,1.52,2.0,2.1
@@ -69,3 +71,5 @@ permalink: /kb/130/Q130472/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188535/
 
 ## Q188535: HOWTO: Sharing Data Between Processes Using Memory-Mapped Files
 
+{% raw %}
+
 	Article: Q188535
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -224,3 +226,5 @@ permalink: /kb/188/Q188535/
 	
 	=============================================================================
 	
+
+{% endraw %}

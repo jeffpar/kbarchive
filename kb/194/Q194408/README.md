@@ -6,6 +6,8 @@ permalink: /kb/194/Q194408/
 
 ## Q194408: Virtual Globe 99: Place Name Is Difficult to Read on Printed Map
 
+{% raw %}
+
 	Article: Q194408
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -54,3 +56,5 @@ permalink: /kb/194/Q194408/
 	
 	=============================================================================
 	
+
+{% endraw %}

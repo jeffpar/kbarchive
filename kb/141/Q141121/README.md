@@ -6,6 +6,8 @@ permalink: /kb/141/Q141121/
 
 ## Q141121: Converting FAT to NTFS Fails Using BusLogic Controller
 
+{% raw %}
+
 	Article: Q141121
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -102,3 +104,5 @@ permalink: /kb/141/Q141121/
 	
 	=============================================================================
 	
+
+{% endraw %}

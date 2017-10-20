@@ -6,6 +6,8 @@ permalink: /kb/146/Q146561/
 
 ## Q146561: XCLN: Controls Disappear From Forms Designer Window
 
+{% raw %}
+
 	Article: Q146561
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -53,3 +55,5 @@ permalink: /kb/146/Q146561/
 	
 	=============================================================================
 	
+
+{% endraw %}

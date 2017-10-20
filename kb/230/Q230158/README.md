@@ -6,6 +6,8 @@ permalink: /kb/230/Q230158/
 
 ## Q230158: Err: &quot;The Network Path Was Not Found&quot; When Using Server Manager
 
+{% raw %}
+
 	Article: Q230158
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a,4.5
@@ -61,3 +63,5 @@ permalink: /kb/230/Q230158/
 	
 	=============================================================================
 	
+
+{% endraw %}

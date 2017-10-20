@@ -6,6 +6,8 @@ permalink: /kb/046/Q46381/
 
 ## Q46381: Compiler Options for Intel 80x86 Processors
 
+{% raw %}
+
 	Article: Q46381
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.00 5.10
@@ -41,3 +43,5 @@ permalink: /kb/046/Q46381/
 	Since DOS and existing versions of OS/2 are not 80386 operating
 	systems, Version 5.10 (as well as previous versions) of the C compiler
 	do not offer a /G3 switch for 80386 code generation.
+
+{% endraw %}

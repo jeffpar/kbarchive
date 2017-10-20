@@ -6,6 +6,8 @@ permalink: /kb/168/Q168064/
 
 ## Q168064: PPTP Protocol Not Available on MCA Computers
 
+{% raw %}
+
 	Article: Q168064
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -73,3 +75,5 @@ permalink: /kb/168/Q168064/
 	
 	=============================================================================
 	
+
+{% endraw %}

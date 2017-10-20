@@ -6,6 +6,8 @@ permalink: /kb/114/Q114370/
 
 ## Q114370: WFWG Err Msg: Error 58 on Protocol 0
 
+{% raw %}
+
 	Article: Q114370
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -108,3 +110,5 @@ permalink: /kb/114/Q114370/
 	
 	=============================================================================
 	
+
+{% endraw %}

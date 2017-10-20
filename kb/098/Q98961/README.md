@@ -6,6 +6,8 @@ permalink: /kb/098/Q98961/
 
 ## Q98961: Mac Fax: Compatible Modems
 
+{% raw %}
+
 	Article: Q98961
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0
@@ -48,3 +50,5 @@ permalink: /kb/098/Q98961/
 	
 	=============================================================================
 	
+
+{% endraw %}

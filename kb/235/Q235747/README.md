@@ -6,6 +6,8 @@ permalink: /kb/235/Q235747/
 
 ## Q235747: SMS: Software Metering Tips Nonexistent Check Boxes
 
+{% raw %}
+
 	Article: Q235747
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -63,3 +65,5 @@ permalink: /kb/235/Q235747/
 	
 	=============================================================================
 	
+
+{% endraw %}

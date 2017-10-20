@@ -6,6 +6,8 @@ permalink: /kb/150/Q150417/
 
 ## Q150417: PRB: Read-Only SSTab Does Not Display Child Controls Properly
 
+{% raw %}
+
 	Article: Q150417
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/150/Q150417/
 	
 	=============================================================================
 	
+
+{% endraw %}

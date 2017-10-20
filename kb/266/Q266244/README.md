@@ -6,6 +6,8 @@ permalink: /kb/266/Q266244/
 
 ## Q266244: HOWTO: Create Full-Screen Applications for the PocketPC
 
+{% raw %}
+
 	Article: Q266244
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -206,3 +208,5 @@ permalink: /kb/266/Q266244/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124526/
 
 ## Q124526: HOWTO: Use the Windows Command Line
 
+{% raw %}
+
 	Article: Q124526
 	Product(s): Microsoft SourceSafe
 	Version(s): 3.0X
@@ -44,3 +46,5 @@ permalink: /kb/124/Q124526/
 	
 	=============================================================================
 	
+
+{% endraw %}

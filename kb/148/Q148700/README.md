@@ -6,6 +6,8 @@ permalink: /kb/148/Q148700/
 
 ## Q148700: DRWTSN32.EXE Causes STOP 0x0000001E
 
+{% raw %}
+
 	Article: Q148700
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -65,3 +67,5 @@ permalink: /kb/148/Q148700/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/021/Q21787/
 
 ## Q21787: Communications Device Buffer Size Can Be Set with /C: Switch
 
+{% raw %}
+
 	Article: Q21787
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -30,3 +32,5 @@ permalink: /kb/021/Q21787/
 	
 	In Versions 4.00, 4.00b, and 4.50, you may set the transmission buffer
 	size as well as the receiving buffer size.
+
+{% endraw %}

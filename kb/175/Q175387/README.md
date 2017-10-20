@@ -6,6 +6,8 @@ permalink: /kb/175/Q175387/
 
 ## Q175387: XFOR: LinkAge Directory Exchange Agent or Directory Exchange Man
 
+{% raw %}
+
 	Article: Q175387
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 SP5,5.0,5.5
@@ -99,3 +101,5 @@ permalink: /kb/175/Q175387/
 	
 	=============================================================================
 	
+
+{% endraw %}

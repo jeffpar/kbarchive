@@ -6,6 +6,8 @@ permalink: /kb/087/Q87537/
 
 ## Q87537: PRB: midiInOpen Fails in MIDIMON Sample Application
 
+{% raw %}
+
 	Article: Q87537
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -50,3 +52,5 @@ permalink: /kb/087/Q87537/
 	
 	=============================================================================
 	
+
+{% endraw %}

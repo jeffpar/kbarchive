@@ -6,6 +6,8 @@ permalink: /kb/230/Q230340/
 
 ## Q230340: &quot;PATH Too Long&quot; Error Installing Windows 95/98 Client on WinNT
 
+{% raw %}
+
 	Article: Q230340
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
@@ -127,3 +129,5 @@ permalink: /kb/230/Q230340/
 	
 	=============================================================================
 	
+
+{% endraw %}

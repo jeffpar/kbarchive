@@ -6,6 +6,8 @@ permalink: /kb/142/Q142032/
 
 ## Q142032: PRB: Event Log Does Not Resize Without Clearing
 
+{% raw %}
+
 	Article: Q142032
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -56,3 +58,5 @@ permalink: /kb/142/Q142032/
 	
 	=============================================================================
 	
+
+{% endraw %}

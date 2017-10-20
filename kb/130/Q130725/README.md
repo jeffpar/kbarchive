@@ -6,6 +6,8 @@ permalink: /kb/130/Q130725/
 
 ## Q130725: How to Use the CloneObject Method
 
+{% raw %}
+
 	Article: Q130725
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -116,3 +118,5 @@ permalink: /kb/130/Q130725/
 	
 	=============================================================================
 	
+
+{% endraw %}

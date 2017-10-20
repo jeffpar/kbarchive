@@ -6,6 +6,8 @@ permalink: /kb/156/Q156534/
 
 ## Q156534: INFO: STL Sample for the remove_copy_if Function
 
+{% raw %}
+
 	Article: Q156534
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -195,3 +197,5 @@ permalink: /kb/156/Q156534/
 	
 	=============================================================================
 	
+
+{% endraw %}

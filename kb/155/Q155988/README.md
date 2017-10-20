@@ -6,6 +6,8 @@ permalink: /kb/155/Q155988/
 
 ## Q155988: Connecting to Remote WINS Shows Dimmed Menu Options
 
+{% raw %}
+
 	Article: Q155988
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -46,3 +48,5 @@ permalink: /kb/155/Q155988/
 	
 	=============================================================================
 	
+
+{% endraw %}

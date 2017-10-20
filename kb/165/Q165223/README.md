@@ -6,6 +6,8 @@ permalink: /kb/165/Q165223/
 
 ## Q165223: File Transfer Does Not Convert DBCS Characters Properly
 
+{% raw %}
+
 	Article: Q165223
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/165/Q165223/
 	
 	=============================================================================
 	
+
+{% endraw %}

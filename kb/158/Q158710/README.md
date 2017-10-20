@@ -6,6 +6,8 @@ permalink: /kb/158/Q158710/
 
 ## Q158710: RASDIAL Does Not Redial On Link Failure with RASPHONE Running
 
+{% raw %}
+
 	Article: Q158710
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51
@@ -68,3 +70,5 @@ permalink: /kb/158/Q158710/
 	
 	=============================================================================
 	
+
+{% endraw %}

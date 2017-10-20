@@ -6,6 +6,8 @@ permalink: /kb/105/Q105964/
 
 ## Q105964: PC MAPI: Simple MAPI Common Technical Questions and Answers
 
+{% raw %}
+
 	Article: Q105964
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -128,3 +130,5 @@ permalink: /kb/105/Q105964/
 	
 	=============================================================================
 	
+
+{% endraw %}

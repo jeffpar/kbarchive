@@ -6,6 +6,8 @@ permalink: /kb/193/Q193280/
 
 ## Q193280: SMS: CCM Removes LANDesk Files When Remote Control Isn't Enabled
 
+{% raw %}
+
 	Article: Q193280
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -95,3 +97,5 @@ permalink: /kb/193/Q193280/
 	
 	=============================================================================
 	
+
+{% endraw %}

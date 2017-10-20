@@ -6,6 +6,8 @@ permalink: /kb/173/Q173878/
 
 ## Q173878: PRB: Field Mapping Lost When Project Moved to Different Drive
 
+{% raw %}
+
 	Article: Q173878
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a
@@ -157,3 +159,5 @@ permalink: /kb/173/Q173878/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/272/Q272680/
 
 ## Q272680: SNMP Service Does Not Start or Hangs on Shutdown
 
+{% raw %}
+
 	Article: Q272680
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.2,4.0
@@ -90,3 +92,5 @@ permalink: /kb/272/Q272680/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/035/Q35830/
 
 ## Q35830: No Support for Color Hercules Graphics Adapters in QuickBASIC
 
+{% raw %}
+
 	Article: Q35830
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -28,3 +30,5 @@ permalink: /kb/035/Q35830/
 	with a Hercules color card installed. However, Microsoft has not
 	tested or verified this since QuickBASIC does not officially support
 	Hercules color cards.
+
+{% endraw %}

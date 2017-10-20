@@ -6,6 +6,8 @@ permalink: /kb/039/Q39190/
 
 ## Q39190: BC /A or CodeView Finds Run-Time Error Segment:Offset Address
 
+{% raw %}
+
 	Article: Q39190
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -107,3 +109,5 @@ permalink: /kb/039/Q39190/
 	
 	    0 Warning Error(s)
 	    0 Severe  Error(s)
+
+{% endraw %}

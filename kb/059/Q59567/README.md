@@ -6,6 +6,8 @@ permalink: /kb/059/Q59567/
 
 ## Q59567: FIX: Incorrectly Generated A4100: Impure Memory Reference
 
+{% raw %}
+
 	Article: Q59567
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a
@@ -71,3 +73,5 @@ permalink: /kb/059/Q59567/
 	
 	=============================================================================
 	
+
+{% endraw %}

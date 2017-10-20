@@ -6,6 +6,8 @@ permalink: /kb/167/Q167884/
 
 ## Q167884: WD97: &quot;You Cannot Edit Picture That Is Not Saved&quot; Error Msg
 
+{% raw %}
+
 	Article: Q167884
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -95,3 +97,5 @@ permalink: /kb/167/Q167884/
 	
 	=============================================================================
 	
+
+{% endraw %}

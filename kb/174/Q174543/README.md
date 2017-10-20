@@ -6,6 +6,8 @@ permalink: /kb/174/Q174543/
 
 ## Q174543: Enabling the Shift Lock Feature on Windows NT 4.0
 
+{% raw %}
+
 	Article: Q174543
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -103,3 +105,5 @@ permalink: /kb/174/Q174543/
 	
 	=============================================================================
 	
+
+{% endraw %}

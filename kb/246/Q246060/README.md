@@ -6,6 +6,8 @@ permalink: /kb/246/Q246060/
 
 ## Q246060: MapPoint: How to Create a Map Within an Office 2000 Program
 
+{% raw %}
+
 	Article: Q246060
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:; :
@@ -45,3 +47,5 @@ permalink: /kb/246/Q246060/
 	
 	=============================================================================
 	
+
+{% endraw %}

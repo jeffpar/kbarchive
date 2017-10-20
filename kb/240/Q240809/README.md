@@ -6,6 +6,8 @@ permalink: /kb/240/Q240809/
 
 ## Q240809: HOWTO: Prevent Switch To or Application Busy Message Using OLE
 
+{% raw %}
+
 	Article: Q240809
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a,6.0
@@ -91,3 +93,5 @@ permalink: /kb/240/Q240809/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175355/
 
 ## Q175355: XFOR: T-shoot Exchange Server with Lotus Messaging Web Site
 
+{% raw %}
+
 	Article: Q175355
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -50,3 +52,5 @@ permalink: /kb/175/Q175355/
 	
 	=============================================================================
 	
+
+{% endraw %}

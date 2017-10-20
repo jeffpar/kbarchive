@@ -6,6 +6,8 @@ permalink: /kb/105/Q105929/
 
 ## Q105929: MS-DOS 6.2 Setup Truncates Long Lines in SYSTEM.INI
 
+{% raw %}
+
 	Article: Q105929
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -36,3 +38,5 @@ permalink: /kb/105/Q105929/
 	
 	=============================================================================
 	
+
+{% endraw %}

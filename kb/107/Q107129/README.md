@@ -6,6 +6,8 @@ permalink: /kb/107/Q107129/
 
 ## Q107129: How to Disable 32-Bit File Access or 32-Bit Disk Access
 
+{% raw %}
+
 	Article: Q107129
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -38,3 +40,5 @@ permalink: /kb/107/Q107129/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156707/
 
 ## Q156707: XADM: NDR's Due to Non-Printable Characters in the DDA Value
 
+{% raw %}
+
 	Article: Q156707
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/156/Q156707/
 	
 	=============================================================================
 	
+
+{% endraw %}

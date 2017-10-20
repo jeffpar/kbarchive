@@ -6,6 +6,8 @@ permalink: /kb/063/Q63777/
 
 ## Q63777: EDIT.COM Cannot Find QBASIC.EXE
 
+{% raw %}
+
 	Article: Q63777
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -57,3 +59,5 @@ permalink: /kb/063/Q63777/
 	
 	=============================================================================
 	
+
+{% endraw %}

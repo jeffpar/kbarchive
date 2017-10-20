@@ -6,6 +6,8 @@ permalink: /kb/140/Q140747/
 
 ## Q140747: Error Installing Spanish Keyboard Layouts
 
+{% raw %}
+
 	Article: Q140747
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/140/Q140747/
 	
 	=============================================================================
 	
+
+{% endraw %}

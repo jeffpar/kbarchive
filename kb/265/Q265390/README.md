@@ -6,6 +6,8 @@ permalink: /kb/265/Q265390/
 
 ## Q265390: MapPoint 2001: Error Message When You Open File in the Briefcase
 
+{% raw %}
+
 	Article: Q265390
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -66,3 +68,5 @@ permalink: /kb/265/Q265390/
 	
 	=============================================================================
 	
+
+{% endraw %}

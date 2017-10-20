@@ -6,6 +6,8 @@ permalink: /kb/146/Q146000/
 
 ## Q146000: FIX: C1001 Including Header File in Template Class Definition
 
+{% raw %}
+
 	Article: Q146000
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1
@@ -79,3 +81,5 @@ permalink: /kb/146/Q146000/
 	
 	=============================================================================
 	
+
+{% endraw %}

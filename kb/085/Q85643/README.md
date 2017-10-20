@@ -6,6 +6,8 @@ permalink: /kb/085/Q85643/
 
 ## Q85643: Windows Msg: Your Pop-Up Program Is Ready to Run
 
+{% raw %}
+
 	Article: Q85643
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:95
@@ -83,3 +85,5 @@ permalink: /kb/085/Q85643/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195166/
 
 ## Q195166: NVAlert Service Logs Event 3006(ReadEventLog Returns 122)
 
+{% raw %}
+
 	Article: Q195166
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 SP3,4.0 SP1
@@ -81,3 +83,5 @@ permalink: /kb/195/Q195166/
 	
 	=============================================================================
 	
+
+{% endraw %}

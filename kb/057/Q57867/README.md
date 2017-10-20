@@ -6,6 +6,8 @@ permalink: /kb/057/Q57867/
 
 ## Q57867: system() Call May Cause CodeView to Terminate Process
 
+{% raw %}
+
 	Article: Q57867
 	Product(s): See article
 	Version(s): 2.20 2.30
@@ -46,3 +48,5 @@ permalink: /kb/057/Q57867/
 	        /* This line will never be executed */
 	        printf ("Back from spawn\n");
 	}
+
+{% endraw %}

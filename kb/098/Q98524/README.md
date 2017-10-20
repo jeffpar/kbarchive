@@ -6,6 +6,8 @@ permalink: /kb/098/Q98524/
 
 ## Q98524: HIMEM.SYS Can Access Only 16 Megabytes on an IBM PS/2
 
+{% raw %}
+
 	Article: Q98524
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/098/Q98524/
 	
 	=============================================================================
 	
+
+{% endraw %}

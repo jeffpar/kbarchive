@@ -6,6 +6,8 @@ permalink: /kb/107/Q107666/
 
 ## Q107666: SP2b NTDETECT Doesn't Recognize Submodel Bytes of IBM Thinkpad
 
+{% raw %}
+
 	Article: Q107666
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -59,3 +61,5 @@ permalink: /kb/107/Q107666/
 	
 	=============================================================================
 	
+
+{% endraw %}

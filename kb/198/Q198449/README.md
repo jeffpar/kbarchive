@@ -6,6 +6,8 @@ permalink: /kb/198/Q198449/
 
 ## Q198449: Protocol Field Explanation from KERNROUT PRINT Output
 
+{% raw %}
+
 	Article: Q198449
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/198/Q198449/
 	
 	=============================================================================
 	
+
+{% endraw %}

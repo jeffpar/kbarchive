@@ -6,6 +6,8 @@ permalink: /kb/239/Q239872/
 
 ## Q239872: NBA/NFL 2000: Can Only Play Game in Software Mode
 
+{% raw %}
+
 	Article: Q239872
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/239/Q239872/
 	
 	=============================================================================
 	
+
+{% endraw %}

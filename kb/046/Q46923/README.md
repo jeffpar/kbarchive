@@ -6,6 +6,8 @@ permalink: /kb/046/Q46923/
 
 ## Q46923: Some ASCII Control Characters Incorrect in Programmer's Manual
 
+{% raw %}
+
 	Article: Q46923
 	Product(s): See article
 	Version(s): 1.00
@@ -22,3 +24,5 @@ permalink: /kb/046/Q46923/
 	listed in the table on Page 2-24 because their ASCII values are the
 	same as ASCII codes for backspace, horizontal tab, linefeed, carriage
 	return, and escape, respectively.
+
+{% endraw %}

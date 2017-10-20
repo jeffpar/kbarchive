@@ -6,6 +6,8 @@ permalink: /kb/126/Q126646/
 
 ## Q126646: PRB: Error Msg: LNK2001 on &#95;&#95;beginthreadex and &#95;&#95;endthreadex
 
+{% raw %}
+
 	Article: Q126646
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,4.0,4.1,4.2,5.0,6.0
@@ -127,3 +129,5 @@ permalink: /kb/126/Q126646/
 	
 	=============================================================================
 	
+
+{% endraw %}

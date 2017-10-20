@@ -6,6 +6,8 @@ permalink: /kb/114/Q114177/
 
 ## Q114177: PC Win: Err Msg: Some Names Could Not Be Matched...
 
+{% raw %}
+
 	Article: Q114177
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b
@@ -57,3 +59,5 @@ permalink: /kb/114/Q114177/
 	
 	=============================================================================
 	
+
+{% endraw %}

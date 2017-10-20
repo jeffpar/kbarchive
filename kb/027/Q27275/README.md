@@ -6,6 +6,8 @@ permalink: /kb/027/Q27275/
 
 ## Q27275: IBM Quietwriter Support in Windows
 
+{% raw %}
+
 	Article: Q27275
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/027/Q27275/
 	
 	=============================================================================
 	
+
+{% endraw %}

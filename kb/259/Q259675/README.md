@@ -6,6 +6,8 @@ permalink: /kb/259/Q259675/
 
 ## Q259675: XADM: Isinteg Utility Does Not Correct Mailbox Item Count
 
+{% raw %}
+
 	Article: Q259675
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -123,3 +125,5 @@ permalink: /kb/259/Q259675/
 	
 	=============================================================================
 	
+
+{% endraw %}

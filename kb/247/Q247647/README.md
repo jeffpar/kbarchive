@@ -6,6 +6,8 @@ permalink: /kb/247/Q247647/
 
 ## Q247647: XIMS: Colon in Display Name Causes SMTP: to Be Added to Address
 
+{% raw %}
+
 	Article: Q247647
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2,5.5 SP3
@@ -66,3 +68,5 @@ permalink: /kb/247/Q247647/
 	
 	=============================================================================
 	
+
+{% endraw %}

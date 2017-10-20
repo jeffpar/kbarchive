@@ -6,6 +6,8 @@ permalink: /kb/150/Q150433/
 
 ## Q150433: PRB: 12/30/1899 Appears as a Blank Date in Microsoft Access
 
+{% raw %}
+
 	Article: Q150433
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:1.0
@@ -91,3 +93,5 @@ permalink: /kb/150/Q150433/
 	
 	=============================================================================
 	
+
+{% endraw %}

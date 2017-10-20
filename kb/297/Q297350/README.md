@@ -6,6 +6,8 @@ permalink: /kb/297/Q297350/
 
 ## Q297350: Upgraded Free-To-Paid Hotmail Accounts Unable To Connect Through
 
+{% raw %}
+
 	Article: Q297350
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -55,3 +57,5 @@ permalink: /kb/297/Q297350/
 	
 	=============================================================================
 	
+
+{% endraw %}

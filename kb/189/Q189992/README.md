@@ -6,6 +6,8 @@ permalink: /kb/189/Q189992/
 
 ## Q189992: BUG: Line Displays in Title Bar of MDI Child Form
 
+{% raw %}
+
 	Article: Q189992
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -94,3 +96,5 @@ permalink: /kb/189/Q189992/
 	
 	=============================================================================
 	
+
+{% endraw %}

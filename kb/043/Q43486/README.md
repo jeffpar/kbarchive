@@ -6,6 +6,8 @@ permalink: /kb/043/Q43486/
 
 ## Q43486: C: Automatic Casting from Near Pointer to Far Pointer
 
+{% raw %}
+
 	Article: Q43486
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -39,3 +41,5 @@ permalink: /kb/043/Q43486/
 	void foo (char far * p)
 	{
 	}
+
+{% endraw %}

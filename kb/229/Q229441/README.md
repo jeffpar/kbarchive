@@ -6,6 +6,8 @@ permalink: /kb/229/Q229441/
 
 ## Q229441: Denial of Service Attack with Duplicate Objects Between Sessions
 
+{% raw %}
+
 	Article: Q229441
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/229/Q229441/
 	
 	=============================================================================
 	
+
+{% endraw %}

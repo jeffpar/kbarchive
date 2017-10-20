@@ -6,6 +6,8 @@ permalink: /kb/105/Q105167/
 
 ## Q105167: PC Win: Err Msg: Additional Data... Could Not Be Retrieved
 
+{% raw %}
+
 	Article: Q105167
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -67,3 +69,5 @@ permalink: /kb/105/Q105167/
 	
 	=============================================================================
 	
+
+{% endraw %}

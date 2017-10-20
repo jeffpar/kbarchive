@@ -6,6 +6,8 @@ permalink: /kb/243/Q243597/
 
 ## Q243597: User Account Data Not Updated on Remote Shutdown
 
+{% raw %}
+
 	Article: Q243597
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -81,3 +83,5 @@ permalink: /kb/243/Q243597/
 	
 	=============================================================================
 	
+
+{% endraw %}

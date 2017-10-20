@@ -6,6 +6,8 @@ permalink: /kb/180/Q180638/
 
 ## Q180638: Radius Server Not Logging When Users Connect from RRAS
 
+{% raw %}
+
 	Article: Q180638
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -81,3 +83,5 @@ permalink: /kb/180/Q180638/
 	
 	=============================================================================
 	
+
+{% endraw %}

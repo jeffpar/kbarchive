@@ -6,6 +6,8 @@ permalink: /kb/087/Q87212/
 
 ## Q87212: PROFS: How to Check If Mail Is Queued for the Gateway
 
+{% raw %}
+
 	Article: Q87212
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -43,3 +45,5 @@ permalink: /kb/087/Q87212/
 	
 	=============================================================================
 	
+
+{% endraw %}

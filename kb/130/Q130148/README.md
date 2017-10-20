@@ -6,6 +6,8 @@ permalink: /kb/130/Q130148/
 
 ## Q130148: ODE97: Using the Data Outline ActiveX Control Version 1.2
 
+{% raw %}
+
 	Article: Q130148
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:97
@@ -143,3 +145,5 @@ permalink: /kb/130/Q130148/
 	
 	=============================================================================
 	
+
+{% endraw %}

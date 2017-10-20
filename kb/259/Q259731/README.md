@@ -6,6 +6,8 @@ permalink: /kb/259/Q259731/
 
 ## Q259731: Asheron's Call Err Msg: Subscription Coupon Number Is Not Valid
 
+{% raw %}
+
 	Article: Q259731
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -62,3 +64,5 @@ permalink: /kb/259/Q259731/
 	
 	=============================================================================
 	
+
+{% endraw %}

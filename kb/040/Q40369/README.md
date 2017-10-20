@@ -6,6 +6,8 @@ permalink: /kb/040/Q40369/
 
 ## Q40369: NUM LOCK On; ALT+BACKSPACE Fails on IBM PS/2 Model 50 and 60
 
+{% raw %}
+
 	Article: Q40369
 	Product(s): See article
 	Version(s): 4.50
@@ -28,3 +30,5 @@ permalink: /kb/040/Q40369/
 	Microsoft has confirmed this to be a problem in Version 4.50. We are
 	researching this problem and will post new information as it becomes
 	available.
+
+{% endraw %}

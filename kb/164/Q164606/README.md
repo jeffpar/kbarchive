@@ -6,6 +6,8 @@ permalink: /kb/164/Q164606/
 
 ## Q164606: Deferred Reconnections to Password Shares May Not Work
 
+{% raw %}
+
 	Article: Q164606
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/164/Q164606/
 	
 	=============================================================================
 	
+
+{% endraw %}

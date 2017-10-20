@@ -6,6 +6,8 @@ permalink: /kb/083/Q83170/
 
 ## Q83170: Windows: 3.5-Inch Disks Packaged in Two Separate Bags
 
+{% raw %}
+
 	Article: Q83170
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -37,3 +39,5 @@ permalink: /kb/083/Q83170/
 	
 	=============================================================================
 	
+
+{% endraw %}

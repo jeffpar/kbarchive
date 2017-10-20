@@ -6,6 +6,8 @@ permalink: /kb/180/Q180393/
 
 ## Q180393: High CPU Use if History Log Limit Exceeds Subscription Number
 
+{% raw %}
+
 	Article: Q180393
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0
@@ -63,3 +65,5 @@ permalink: /kb/180/Q180393/
 	
 	=============================================================================
 	
+
+{% endraw %}

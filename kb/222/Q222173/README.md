@@ -6,6 +6,8 @@ permalink: /kb/222/Q222173/
 
 ## Q222173: XADM: Event ID 42, &quot;The database engine found a bad page&quot;
 
+{% raw %}
+
 	Article: Q222173
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -112,3 +114,5 @@ permalink: /kb/222/Q222173/
 	
 	=============================================================================
 	
+
+{% endraw %}

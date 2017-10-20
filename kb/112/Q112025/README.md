@@ -6,6 +6,8 @@ permalink: /kb/112/Q112025/
 
 ## Q112025: Updated VSHARE.386 for Windows/Windows for Workgroups
 
+{% raw %}
+
 	Article: Q112025
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.1,3.11
@@ -111,3 +113,5 @@ permalink: /kb/112/Q112025/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196964/
 
 ## Q196964: WD97: Visual Basic 3.0 Does Not Support Named Arguments
 
+{% raw %}
+
 	Article: Q196964
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:2.0,97
@@ -79,3 +81,5 @@ permalink: /kb/196/Q196964/
 	
 	=============================================================================
 	
+
+{% endraw %}

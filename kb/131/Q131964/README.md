@@ -6,6 +6,8 @@ permalink: /kb/131/Q131964/
 
 ## Q131964: XADM: How to Update a Client Install Share with SP4
 
+{% raw %}
+
 	Article: Q131964
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0 SP2,4.0 SP3
@@ -164,3 +166,5 @@ permalink: /kb/131/Q131964/
 	
 	=============================================================================
 	
+
+{% endraw %}

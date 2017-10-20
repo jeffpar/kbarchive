@@ -6,6 +6,8 @@ permalink: /kb/162/Q162929/
 
 ## Q162929: ACC97: Err Msg: &quot;Could not create a valid file name&quot; in VSS
 
+{% raw %}
+
 	Article: Q162929
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:97
@@ -85,3 +87,5 @@ permalink: /kb/162/Q162929/
 	
 	=============================================================================
 	
+
+{% endraw %}

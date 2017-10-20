@@ -6,6 +6,8 @@ permalink: /kb/172/Q172209/
 
 ## Q172209: Bookshelf: IntelliMouse Features Supported in Some Versions
 
+{% raw %}
+
 	Article: Q172209
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -71,3 +73,5 @@ permalink: /kb/172/Q172209/
 	
 	=============================================================================
 	
+
+{% endraw %}

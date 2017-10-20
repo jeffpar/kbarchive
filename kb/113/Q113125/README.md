@@ -6,6 +6,8 @@ permalink: /kb/113/Q113125/
 
 ## Q113125: DLC Printing Limited to One Network Adapter in Windows NT
 
+{% raw %}
+
 	Article: Q113125
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5
@@ -105,3 +107,5 @@ permalink: /kb/113/Q113125/
 	
 	=============================================================================
 	
+
+{% endraw %}

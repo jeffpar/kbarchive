@@ -6,6 +6,8 @@ permalink: /kb/234/Q234781/
 
 ## Q234781: Universal Data Format File System Not Supported in Windows 95
 
+{% raw %}
+
 	Article: Q234781
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -67,3 +69,5 @@ permalink: /kb/234/Q234781/
 	
 	=============================================================================
 	
+
+{% endraw %}

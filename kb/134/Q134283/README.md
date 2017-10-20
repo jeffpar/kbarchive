@@ -6,6 +6,8 @@ permalink: /kb/134/Q134283/
 
 ## Q134283: FIX: Undocking Toolbar May Disappear When Removed from Dockbar
 
+{% raw %}
+
 	Article: Q134283
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -89,3 +91,5 @@ permalink: /kb/134/Q134283/
 	
 	=============================================================================
 	
+
+{% endraw %}

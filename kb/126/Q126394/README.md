@@ -6,6 +6,8 @@ permalink: /kb/126/Q126394/
 
 ## Q126394: SNA Server Doesn't Include Bundled Support for Windows HLLAPI
 
+{% raw %}
+
 	Article: Q126394
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -58,3 +60,5 @@ permalink: /kb/126/Q126394/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169166/
 
 ## Q169166: WD97: Print To File on Windows May Produce Incorrect Output
 
+{% raw %}
+
 	Article: Q169166
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -129,3 +131,5 @@ permalink: /kb/169/Q169166/
 	
 	=============================================================================
 	
+
+{% endraw %}

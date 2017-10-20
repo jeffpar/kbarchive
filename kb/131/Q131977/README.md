@@ -6,6 +6,8 @@ permalink: /kb/131/Q131977/
 
 ## Q131977: Cannot Install Adaptec SCSI AudioMachine or AudioEdge Card
 
+{% raw %}
+
 	Article: Q131977
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -89,3 +91,5 @@ permalink: /kb/131/Q131977/
 	
 	=============================================================================
 	
+
+{% endraw %}

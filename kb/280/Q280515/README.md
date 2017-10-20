@@ -6,6 +6,8 @@ permalink: /kb/280/Q280515/
 
 ## Q280515: SMS: The Client.lkp File Is Not Updated
 
+{% raw %}
+
 	Article: Q280515
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -71,3 +73,5 @@ permalink: /kb/280/Q280515/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172090/
 
 ## Q172090: ODE97: Filter By Form Not Available in Run-Time Applications
 
+{% raw %}
+
 	Article: Q172090
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:97
@@ -115,3 +117,5 @@ permalink: /kb/172/Q172090/
 	
 	=============================================================================
 	
+
+{% endraw %}

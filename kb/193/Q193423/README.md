@@ -6,6 +6,8 @@ permalink: /kb/193/Q193423/
 
 ## Q193423: XADM: Address Book Views Not Updated After Correct Interval
 
+{% raw %}
+
 	Article: Q193423
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0 5.5
@@ -108,3 +110,5 @@ permalink: /kb/193/Q193423/
 	
 	=============================================================================
 	
+
+{% endraw %}

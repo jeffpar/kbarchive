@@ -6,6 +6,8 @@ permalink: /kb/152/Q152862/
 
 ## Q152862: XADM: Specify Host Dialog in Administrator Reverses Order
 
+{% raw %}
+
 	Article: Q152862
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/152/Q152862/
 	
 	=============================================================================
 	
+
+{% endraw %}

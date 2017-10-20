@@ -6,6 +6,8 @@ permalink: /kb/246/Q246741/
 
 ## Q246741: XADM: Admin Doesn't Export NT Accounts in Multiple Domains
 
+{% raw %}
+
 	Article: Q246741
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -76,3 +78,5 @@ permalink: /kb/246/Q246741/
 	
 	=============================================================================
 	
+
+{% endraw %}

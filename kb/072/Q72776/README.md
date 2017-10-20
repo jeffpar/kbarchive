@@ -6,6 +6,8 @@ permalink: /kb/072/Q72776/
 
 ## Q72776: Mac Wkst: Workstation Installer Can Be Copied to AppleShare Srv
 
+{% raw %}
+
 	Article: Q72776
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -53,3 +55,5 @@ permalink: /kb/072/Q72776/
 	
 	=============================================================================
 	
+
+{% endraw %}

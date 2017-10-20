@@ -6,6 +6,8 @@ permalink: /kb/258/Q258395/
 
 ## Q258395: Baseball 2001: Textures for the Players and Crowd Appear White
 
+{% raw %}
+
 	Article: Q258395
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -85,3 +87,5 @@ permalink: /kb/258/Q258395/
 	
 	=============================================================================
 	
+
+{% endraw %}

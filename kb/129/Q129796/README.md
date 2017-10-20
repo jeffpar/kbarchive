@@ -6,6 +6,8 @@ permalink: /kb/129/Q129796/
 
 ## Q129796: HOWTO: 32-Bit App Can Determine When a Shelled Process Ends
 
+{% raw %}
+
 	Article: Q129796
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,6.0
@@ -206,3 +208,5 @@ permalink: /kb/129/Q129796/
 	
 	=============================================================================
 	
+
+{% endraw %}

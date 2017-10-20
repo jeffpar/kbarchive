@@ -6,6 +6,8 @@ permalink: /kb/073/Q73324/
 
 ## Q73324: Devices/TSRs Do Not Load High with RAM Switch
 
+{% raw %}
+
 	Article: Q73324
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a
@@ -89,3 +91,5 @@ permalink: /kb/073/Q73324/
 	
 	=============================================================================
 	
+
+{% endraw %}

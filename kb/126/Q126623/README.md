@@ -6,6 +6,8 @@ permalink: /kb/126/Q126623/
 
 ## Q126623: DHCP Manager Does Not Display Host Names
 
+{% raw %}
+
 	Article: Q126623
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2c,3.0,3.5
@@ -57,3 +59,5 @@ permalink: /kb/126/Q126623/
 	
 	=============================================================================
 	
+
+{% endraw %}

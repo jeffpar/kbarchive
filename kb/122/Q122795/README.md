@@ -6,6 +6,8 @@ permalink: /kb/122/Q122795/
 
 ## Q122795: BNC Problems with 3C507 and 3C509 NICs
 
+{% raw %}
+
 	Article: Q122795
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/122/Q122795/
 	
 	=============================================================================
 	
+
+{% endraw %}

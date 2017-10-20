@@ -6,6 +6,8 @@ permalink: /kb/315/Q315687/
 
 ## Q315687: XCON: How to Prevent Mail Relay in Exchange 5.5 SP1 or Later
 
+{% raw %}
+
 	Article: Q315687
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -126,3 +128,5 @@ permalink: /kb/315/Q315687/
 	
 	=============================================================================
 	
+
+{% endraw %}

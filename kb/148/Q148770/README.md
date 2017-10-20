@@ -6,6 +6,8 @@ permalink: /kb/148/Q148770/
 
 ## Q148770: PC DirSync: IMPORT -S Hangs Computer During Dir-Sync
 
+{% raw %}
+
 	Article: Q148770
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -100,3 +102,5 @@ permalink: /kb/148/Q148770/
 	
 	=============================================================================
 	
+
+{% endraw %}

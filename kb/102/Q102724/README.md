@@ -6,6 +6,8 @@ permalink: /kb/102/Q102724/
 
 ## Q102724: Remote Access 1.1a COM1 and COM2 Only
 
+{% raw %}
+
 	Article: Q102724
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.1a
@@ -58,3 +60,5 @@ permalink: /kb/102/Q102724/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/224/Q224988/
 
 ## Q224988: FIX: CREATE FROM Command Incorrectly Assumes .dbf Extension
 
+{% raw %}
+
 	Article: Q224988
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -75,3 +77,5 @@ permalink: /kb/224/Q224988/
 	
 	=============================================================================
 	
+
+{% endraw %}

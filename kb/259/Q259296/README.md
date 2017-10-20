@@ -6,6 +6,8 @@ permalink: /kb/259/Q259296/
 
 ## Q259296: HOWTO: Display a Progress Bar in a Status Bar
 
+{% raw %}
+
 	Article: Q259296
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -91,3 +93,5 @@ permalink: /kb/259/Q259296/
 	
 	=============================================================================
 	
+
+{% endraw %}

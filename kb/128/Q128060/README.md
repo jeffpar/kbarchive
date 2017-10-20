@@ -6,6 +6,8 @@ permalink: /kb/128/Q128060/
 
 ## Q128060: PRB: Cannot Open a General Field from a FoxPro 2.x Table
 
+{% raw %}
+
 	Article: Q128060
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6,2.6a,3.0
@@ -68,3 +70,5 @@ permalink: /kb/128/Q128060/
 	
 	=============================================================================
 	
+
+{% endraw %}

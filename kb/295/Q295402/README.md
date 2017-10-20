@@ -6,6 +6,8 @@ permalink: /kb/295/Q295402/
 
 ## Q295402: Error Message: Error 2 Loading Registry Information
 
+{% raw %}
+
 	Article: Q295402
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/295/Q295402/
 	
 	=============================================================================
 	
+
+{% endraw %}

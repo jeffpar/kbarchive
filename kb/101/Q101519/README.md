@@ -6,6 +6,8 @@ permalink: /kb/101/Q101519/
 
 ## Q101519: INF: How to Use SQLDataSources()
 
+{% raw %}
+
 	Article: Q101519
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/101/Q101519/
 	
 	=============================================================================
 	
+
+{% endraw %}

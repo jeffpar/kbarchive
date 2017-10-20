@@ -6,6 +6,8 @@ permalink: /kb/151/Q151690/
 
 ## Q151690: XCLN: What is the 'Custom' Rule Action For?
 
+{% raw %}
+
 	Article: Q151690
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -80,3 +82,5 @@ permalink: /kb/151/Q151690/
 	
 	=============================================================================
 	
+
+{% endraw %}

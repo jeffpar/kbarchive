@@ -6,6 +6,8 @@ permalink: /kb/057/Q57569/
 
 ## Q57569: FltSim: Use Tandy Video Drivers for Panasonic Computers
 
+{% raw %}
+
 	Article: Q57569
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/057/Q57569/
 	
 	=============================================================================
 	
+
+{% endraw %}

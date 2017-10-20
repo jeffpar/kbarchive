@@ -6,6 +6,8 @@ permalink: /kb/186/Q186550/
 
 ## Q186550: Terminal Server Error Messages: 1000 to 1199
 
+{% raw %}
+
 	Article: Q186550
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -544,3 +546,5 @@ permalink: /kb/186/Q186550/
 	
 	=============================================================================
 	
+
+{% endraw %}

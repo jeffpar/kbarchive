@@ -6,6 +6,8 @@ permalink: /kb/134/Q134590/
 
 ## Q134590: NETAPI32 APIs Are Not Supported in Windows 95
 
+{% raw %}
+
 	Article: Q134590
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/134/Q134590/
 	
 	=============================================================================
 	
+
+{% endraw %}

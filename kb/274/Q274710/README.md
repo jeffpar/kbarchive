@@ -6,6 +6,8 @@ permalink: /kb/274/Q274710/
 
 ## Q274710: XGEN: How to Remove Attachments with ExClean
 
+{% raw %}
+
 	Article: Q274710
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -107,3 +109,5 @@ permalink: /kb/274/Q274710/
 	
 	=============================================================================
 	
+
+{% endraw %}

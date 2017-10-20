@@ -6,6 +6,8 @@ permalink: /kb/089/Q89970/
 
 ## Q89970: How to Determine Interrupt, I/O, and DMA Channel Conflicts
 
+{% raw %}
+
 	Article: Q89970
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -176,3 +178,5 @@ permalink: /kb/089/Q89970/
 	
 	=============================================================================
 	
+
+{% endraw %}

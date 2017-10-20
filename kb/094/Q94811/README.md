@@ -6,6 +6,8 @@ permalink: /kb/094/Q94811/
 
 ## Q94811: Common Causes of &quot;Feature Not Available&quot; Error
 
+{% raw %}
+
 	Article: Q94811
 	Product(s): Microsoft FoxPro
 	Version(s): 2.00 2.5x 2.6x | 2.5x 2.6x 3.00
@@ -108,3 +110,5 @@ permalink: /kb/094/Q94811/
 	
 	=============================================================================
 	
+
+{% endraw %}

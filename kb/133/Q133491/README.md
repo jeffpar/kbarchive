@@ -6,6 +6,8 @@ permalink: /kb/133/Q133491/
 
 ## Q133491: How to Add an IDE Drive and Controller to SCSI Windows NT System
 
+{% raw %}
+
 	Article: Q133491
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -123,3 +125,5 @@ permalink: /kb/133/Q133491/
 	
 	=============================================================================
 	
+
+{% endraw %}

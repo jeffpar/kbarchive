@@ -6,6 +6,8 @@ permalink: /kb/131/Q131945/
 
 ## Q131945: FIX: OnFileNameOK Returns 0 if Valid or 1 if Not Valid
 
+{% raw %}
+
 	Article: Q131945
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -65,3 +67,5 @@ permalink: /kb/131/Q131945/
 	
 	=============================================================================
 	
+
+{% endraw %}

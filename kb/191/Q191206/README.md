@@ -6,6 +6,8 @@ permalink: /kb/191/Q191206/
 
 ## Q191206: PRB: Compiler Error Overriding VBA Conversion Functions
 
+{% raw %}
+
 	Article: Q191206
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -61,3 +63,5 @@ permalink: /kb/191/Q191206/
 	
 	=============================================================================
 	
+
+{% endraw %}

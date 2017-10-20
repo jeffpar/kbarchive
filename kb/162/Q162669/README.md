@@ -6,6 +6,8 @@ permalink: /kb/162/Q162669/
 
 ## Q162669: How to Disable PJL Commands for a PostScript Printer Driver
 
+{% raw %}
+
 	Article: Q162669
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -69,3 +71,5 @@ permalink: /kb/162/Q162669/
 	
 	=============================================================================
 	
+
+{% endraw %}

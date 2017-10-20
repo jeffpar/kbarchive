@@ -6,6 +6,8 @@ permalink: /kb/243/Q243922/
 
 ## Q243922: AoE II: Patch Available for &quot;You Are Victorious&quot; Messages
 
+{% raw %}
+
 	Article: Q243922
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -340,3 +342,5 @@ permalink: /kb/243/Q243922/
 	
 	=============================================================================
 	
+
+{% endraw %}

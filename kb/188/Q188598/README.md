@@ -6,6 +6,8 @@ permalink: /kb/188/Q188598/
 
 ## Q188598: Renewing Wins Client Registrations with NBTSTAT -RR
 
+{% raw %}
+
 	Article: Q188598
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/188/Q188598/
 	
 	=============================================================================
 	
+
+{% endraw %}

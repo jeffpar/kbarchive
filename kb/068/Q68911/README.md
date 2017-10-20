@@ -6,6 +6,8 @@ permalink: /kb/068/Q68911/
 
 ## Q68911: Sample Program SAMPLER.C Does Not Work Correctly
 
+{% raw %}
+
 	Article: Q68911
 	Product(s): See article
 	Version(s): 2.50 2.51
@@ -67,3 +69,5 @@ permalink: /kb/068/Q68911/
 	The correct version of SAMPLER.C can be found on page 242 of the
 	"Microsoft C Advanced Programming Techniques" manual that shipped with
 	C versions 6.00 and 6.00a.
+
+{% endraw %}

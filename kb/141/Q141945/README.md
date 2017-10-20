@@ -6,6 +6,8 @@ permalink: /kb/141/Q141945/
 
 ## Q141945: Hewlett-Packard Activity Center Decreases MSN Performance
 
+{% raw %}
+
 	Article: Q141945
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5
@@ -53,3 +55,5 @@ permalink: /kb/141/Q141945/
 	
 	=============================================================================
 	
+
+{% endraw %}

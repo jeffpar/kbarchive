@@ -6,6 +6,8 @@ permalink: /kb/221/Q221207/
 
 ## Q221207: INFO: Getting Visual Basic 4.0 or 5.0 After Purchasing VB 6.0
 
+{% raw %}
+
 	Article: Q221207
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -70,3 +72,5 @@ permalink: /kb/221/Q221207/
 	
 	=============================================================================
 	
+
+{% endraw %}

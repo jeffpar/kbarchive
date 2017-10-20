@@ -6,6 +6,8 @@ permalink: /kb/044/Q44417/
 
 ## Q44417: CALLTREE Ignores Conditional Compilation Statements in Editor
 
+{% raw %}
+
 	Article: Q44417
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -45,3 +47,5 @@ permalink: /kb/044/Q44417/
 	This is a limitation of the utility. CALLTREE is meant to be a
 	general-purpose tool for C and assembly programs, and is not designed
 	to do any parsing or syntax checking.
+
+{% endraw %}

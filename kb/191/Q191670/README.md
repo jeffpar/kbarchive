@@ -6,6 +6,8 @@ permalink: /kb/191/Q191670/
 
 ## Q191670: HOWTO: Suppress Default Pop-up Menu When You Use Custom Menu
 
+{% raw %}
+
 	Article: Q191670
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -129,3 +131,5 @@ permalink: /kb/191/Q191670/
 	
 	=============================================================================
 	
+
+{% endraw %}

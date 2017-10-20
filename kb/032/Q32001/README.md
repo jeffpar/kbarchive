@@ -6,6 +6,8 @@ permalink: /kb/032/Q32001/
 
 ## Q32001: Explanation of a MAP File
 
+{% raw %}
+
 	Article: Q32001
 	Product(s): See article
 	Version(s): 3.x 5.01.20 5.01.21
@@ -29,3 +31,5 @@ permalink: /kb/032/Q32001/
 	compiler to include line numbers in the object file.
 	   Information from the MAP will help you debug your program and
 	understand how the program is loaded into memory.
+
+{% endraw %}

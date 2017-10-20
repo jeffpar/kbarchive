@@ -6,6 +6,8 @@ permalink: /kb/248/Q248661/
 
 ## Q248661: IIS Does Not Start, Dependency Error Message
 
+{% raw %}
+
 	Article: Q248661
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -47,3 +49,5 @@ permalink: /kb/248/Q248661/
 	
 	=============================================================================
 	
+
+{% endraw %}

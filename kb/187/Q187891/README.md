@@ -6,6 +6,8 @@ permalink: /kb/187/Q187891/
 
 ## Q187891: WD97: Spelling Checker Ignores Words in Uppercase Letters
 
+{% raw %}
+
 	Article: Q187891
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/187/Q187891/
 	
 	=============================================================================
 	
+
+{% endraw %}

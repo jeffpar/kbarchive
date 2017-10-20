@@ -6,6 +6,8 @@ permalink: /kb/193/Q193035/
 
 ## Q193035: XFOR: Ability to Restrict Size of Headers Contained in Message
 
+{% raw %}
+
 	Article: Q193035
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -131,3 +133,5 @@ permalink: /kb/193/Q193035/
 	
 	=============================================================================
 	
+
+{% endraw %}

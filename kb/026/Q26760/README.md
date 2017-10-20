@@ -6,6 +6,8 @@ permalink: /kb/026/Q26760/
 
 ## Q26760: PPT: Creating a Labeled Drawing Object
 
+{% raw %}
+
 	Article: Q26760
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,7.0
@@ -50,3 +52,5 @@ permalink: /kb/026/Q26760/
 	
 	=============================================================================
 	
+
+{% endraw %}

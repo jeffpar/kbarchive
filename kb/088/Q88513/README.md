@@ -6,6 +6,8 @@ permalink: /kb/088/Q88513/
 
 ## Q88513: Golf: Cannot Hit Ball More than 80 Yards
 
+{% raw %}
+
 	Article: Q88513
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/088/Q88513/
 	
 	=============================================================================
 	
+
+{% endraw %}

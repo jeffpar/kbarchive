@@ -6,6 +6,8 @@ permalink: /kb/083/Q83585/
 
 ## Q83585: Windows Err Msg: Unable to Initialize Ports (Control Panel)
 
+{% raw %}
+
 	Article: Q83585
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a,3.1,3.11
@@ -84,3 +86,5 @@ permalink: /kb/083/Q83585/
 	
 	=============================================================================
 	
+
+{% endraw %}

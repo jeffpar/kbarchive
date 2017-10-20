@@ -6,6 +6,8 @@ permalink: /kb/105/Q105786/
 
 ## Q105786: SFM: Deleted User Accounts Not Aged Out of Cache
 
+{% raw %}
+
 	Article: Q105786
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -46,3 +48,5 @@ permalink: /kb/105/Q105786/
 	
 	=============================================================================
 	
+
+{% endraw %}

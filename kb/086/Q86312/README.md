@@ -6,6 +6,8 @@ permalink: /kb/086/Q86312/
 
 ## Q86312: Communications Program for the Deaf or Hard of Hearing
 
+{% raw %}
+
 	Article: Q86312
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/086/Q86312/
 	
 	=============================================================================
 	
+
+{% endraw %}

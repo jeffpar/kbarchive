@@ -6,6 +6,8 @@ permalink: /kb/170/Q170526/
 
 ## Q170526: User Settings and Profiles Missing After Full Reinstallation
 
+{% raw %}
+
 	Article: Q170526
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -81,3 +83,5 @@ permalink: /kb/170/Q170526/
 	
 	=============================================================================
 	
+
+{% endraw %}

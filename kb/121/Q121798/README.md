@@ -6,6 +6,8 @@ permalink: /kb/121/Q121798/
 
 ## Q121798: PC Win: Err Msg: You Do Not Have the Proper Access...
 
+{% raw %}
+
 	Article: Q121798
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -75,3 +77,5 @@ permalink: /kb/121/Q121798/
 	
 	=============================================================================
 	
+
+{% endraw %}

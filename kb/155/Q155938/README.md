@@ -6,6 +6,8 @@ permalink: /kb/155/Q155938/
 
 ## Q155938: PRB: SET PRINTER TO Does Not Create File in VFP for Macintosh
 
+{% raw %}
+
 	Article: Q155938
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -101,3 +103,5 @@ permalink: /kb/155/Q155938/
 	
 	=============================================================================
 	
+
+{% endraw %}

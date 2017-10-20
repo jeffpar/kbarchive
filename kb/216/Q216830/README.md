@@ -6,6 +6,8 @@ permalink: /kb/216/Q216830/
 
 ## Q216830: How to View the Contents of a Certificate
 
+{% raw %}
+
 	Article: Q216830
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -147,3 +149,5 @@ permalink: /kb/216/Q216830/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160469/
 
 ## Q160469: Pentium Processors Are Not Detected on Systems Running OS/2
 
+{% raw %}
+
 	Article: Q160469
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -47,3 +49,5 @@ permalink: /kb/160/Q160469/
 	
 	=============================================================================
 	
+
+{% endraw %}

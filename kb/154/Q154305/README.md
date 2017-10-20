@@ -6,6 +6,8 @@ permalink: /kb/154/Q154305/
 
 ## Q154305: Explorapedia Nature: List of Files Installed and Modified
 
+{% raw %}
+
 	Article: Q154305
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.2
@@ -168,3 +170,5 @@ permalink: /kb/154/Q154305/
 	
 	=============================================================================
 	
+
+{% endraw %}

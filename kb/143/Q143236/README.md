@@ -6,6 +6,8 @@ permalink: /kb/143/Q143236/
 
 ## Q143236: XCLN: NT Domain Password Could Not Be Changed
 
+{% raw %}
+
 	Article: Q143236
 	Product(s): Microsoft Exchange
 	Version(s): 4.00
@@ -52,3 +54,5 @@ permalink: /kb/143/Q143236/
 	
 	=============================================================================
 	
+
+{% endraw %}

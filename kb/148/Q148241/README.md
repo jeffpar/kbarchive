@@ -6,6 +6,8 @@ permalink: /kb/148/Q148241/
 
 ## Q148241: RUNNING MS ACCESS FOR WIN 95 Corrections and Comments
 
+{% raw %}
+
 	Article: Q148241
 	Product(s): Microsoft Press
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/148/Q148241/
 	
 	=============================================================================
 	
+
+{% endraw %}

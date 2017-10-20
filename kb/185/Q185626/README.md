@@ -6,6 +6,8 @@ permalink: /kb/185/Q185626/
 
 ## Q185626: BUG: PictureBox Cannot be Made Transparent Using SetWindowLong
 
+{% raw %}
+
 	Article: Q185626
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -97,3 +99,5 @@ permalink: /kb/185/Q185626/
 	
 	=============================================================================
 	
+
+{% endraw %}

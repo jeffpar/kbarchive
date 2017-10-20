@@ -6,6 +6,8 @@ permalink: /kb/047/Q47724/
 
 ## Q47724: INFO: No Network License Agreements on MS Language Products
 
+{% raw %}
+
 	Article: Q47724
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.1,2.2,4.0,4.1,5.0,6.0
@@ -52,3 +54,5 @@ permalink: /kb/047/Q47724/
 	
 	=============================================================================
 	
+
+{% endraw %}

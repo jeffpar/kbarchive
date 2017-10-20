@@ -6,6 +6,8 @@ permalink: /kb/136/Q136061/
 
 ## Q136061: Err Msg: Windows Has Disabled Direct Disk Access to Protect
 
+{% raw %}
+
 	Article: Q136061
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -202,3 +204,5 @@ permalink: /kb/136/Q136061/
 	
 	=============================================================================
 	
+
+{% endraw %}

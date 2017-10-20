@@ -6,6 +6,8 @@ permalink: /kb/030/Q30451/
 
 ## Q30451: How to Print CGA SCREEN 0, 1, or 2 Image to Epson Printer
 
+{% raw %}
+
 	Article: Q30451
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -200,3 +202,5 @@ permalink: /kb/030/Q30451/
 	   b. In 3.00, type the following at the DOS command line:
 	
 	         LINK DUMP2+INT86.OBJ;
+
+{% endraw %}

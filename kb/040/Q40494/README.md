@@ -6,6 +6,8 @@ permalink: /kb/040/Q40494/
 
 ## Q40494: Watching Pointers in QuickC Debugger
 
+{% raw %}
+
 	Article: Q40494
 	Product(s): See article
 	Version(s): 1.00 1.01 2.00
@@ -60,3 +62,5 @@ permalink: /kb/040/Q40494/
 	
 	Casting CHptr to a type other than "char *" (such as "int *")
 	displays the address of the string to which CHptr points.
+
+{% endraw %}

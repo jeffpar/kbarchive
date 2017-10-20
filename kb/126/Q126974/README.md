@@ -6,6 +6,8 @@ permalink: /kb/126/Q126974/
 
 ## Q126974: STOP 0x24 Generated With NTFS
 
+{% raw %}
+
 	Article: Q126974
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/126/Q126974/
 	
 	=============================================================================
 	
+
+{% endraw %}

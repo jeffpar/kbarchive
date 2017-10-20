@@ -6,6 +6,8 @@ permalink: /kb/317/Q317542/
 
 ## Q317542: BUG: Cannot Unbind a Deleted and Destroyed VSS Project
 
+{% raw %}
+
 	Article: Q317542
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/317/Q317542/
 	
 	=============================================================================
 	
+
+{% endraw %}

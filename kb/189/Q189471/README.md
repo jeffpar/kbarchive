@@ -6,6 +6,8 @@ permalink: /kb/189/Q189471/
 
 ## Q189471: WpuOpenCurrentThread Does Not Work
 
+{% raw %}
+
 	Article: Q189471
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/189/Q189471/
 	
 	=============================================================================
 	
+
+{% endraw %}

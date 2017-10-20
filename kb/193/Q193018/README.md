@@ -6,6 +6,8 @@ permalink: /kb/193/Q193018/
 
 ## Q193018: INFO: Java and Visual C++ Cannot Access Hidden VB Interface
 
+{% raw %}
+
 	Article: Q193018
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -61,3 +63,5 @@ permalink: /kb/193/Q193018/
 	
 	=============================================================================
 	
+
+{% endraw %}

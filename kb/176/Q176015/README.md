@@ -6,6 +6,8 @@ permalink: /kb/176/Q176015/
 
 ## Q176015: PRB: Running Sysdiff with Multiple Partitions
 
+{% raw %}
+
 	Article: Q176015
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/176/Q176015/
 	
 	=============================================================================
 	
+
+{% endraw %}

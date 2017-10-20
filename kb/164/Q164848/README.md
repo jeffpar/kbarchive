@@ -6,6 +6,8 @@ permalink: /kb/164/Q164848/
 
 ## Q164848: XCLN: Transmitting Over SPX via Dialup Connection
 
+{% raw %}
+
 	Article: Q164848
 	Product(s): Microsoft Exchange
 	Version(s): 1.00
@@ -79,3 +81,5 @@ permalink: /kb/164/Q164848/
 	
 	=============================================================================
 	
+
+{% endraw %}

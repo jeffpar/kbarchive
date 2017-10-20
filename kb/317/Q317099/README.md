@@ -6,6 +6,8 @@ permalink: /kb/317/Q317099/
 
 ## Q317099: PRB: &quot;550 Quoted Name Does Not Match IP Address&quot; SMTP Error Msg
 
+{% raw %}
+
 	Article: Q317099
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -96,3 +98,5 @@ permalink: /kb/317/Q317099/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161159/
 
 ## Q161159: Internet Explorer Manual Setup Changes PWS Internet Address
 
+{% raw %}
+
 	Article: Q161159
 	Product(s): Internet Information Server
 	Version(s): 1.0,1.0a,2,2.1
@@ -64,3 +66,5 @@ permalink: /kb/161/Q161159/
 	
 	=============================================================================
 	
+
+{% endraw %}

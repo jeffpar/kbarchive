@@ -6,6 +6,8 @@ permalink: /kb/122/Q122568/
 
 ## Q122568: STOP 7B When You Upgrade From Server on COMPAQ DESKPRO
 
+{% raw %}
+
 	Article: Q122568
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/122/Q122568/
 	
 	=============================================================================
 	
+
+{% endraw %}

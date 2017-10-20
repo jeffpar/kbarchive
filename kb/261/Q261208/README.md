@@ -6,6 +6,8 @@ permalink: /kb/261/Q261208/
 
 ## Q261208: StarLancer: Explanation of Missions Described on the Product Box
 
+{% raw %}
+
 	Article: Q261208
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -60,3 +62,5 @@ permalink: /kb/261/Q261208/
 	
 	=============================================================================
 	
+
+{% endraw %}

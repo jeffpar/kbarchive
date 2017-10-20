@@ -6,6 +6,8 @@ permalink: /kb/102/Q102373/
 
 ## Q102373: Token Ring Bridge/Ring Numbering and Routing Avoids Looping
 
+{% raw %}
+
 	Article: Q102373
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/102/Q102373/
 	
 	=============================================================================
 	
+
+{% endraw %}

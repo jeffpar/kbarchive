@@ -6,6 +6,8 @@ permalink: /kb/184/Q184134/
 
 ## Q184134: WD97: Can't Find Non-printing Character with Wildcard Search
 
+{% raw %}
+
 	Article: Q184134
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -43,3 +45,5 @@ permalink: /kb/184/Q184134/
 	
 	=============================================================================
 	
+
+{% endraw %}

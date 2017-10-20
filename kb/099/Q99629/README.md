@@ -6,6 +6,8 @@ permalink: /kb/099/Q99629/
 
 ## Q99629: Values Returned by UDFs Cannot Be Centered in a Report
 
+{% raw %}
+
 	Article: Q99629
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,3.0
@@ -79,3 +81,5 @@ permalink: /kb/099/Q99629/
 	
 	=============================================================================
 	
+
+{% endraw %}

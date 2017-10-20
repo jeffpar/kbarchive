@@ -6,6 +6,8 @@ permalink: /kb/161/Q161867/
 
 ## Q161867: Arrow Keys Not Functioning Properly in the Hardware Profile Menu
 
+{% raw %}
+
 	Article: Q161867
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -57,3 +59,5 @@ permalink: /kb/161/Q161867/
 	
 	=============================================================================
 	
+
+{% endraw %}

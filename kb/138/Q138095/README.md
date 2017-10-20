@@ -6,6 +6,8 @@ permalink: /kb/138/Q138095/
 
 ## Q138095: How to Store the Value of Check Boxes in a Grid to an Array
 
+{% raw %}
+
 	Article: Q138095
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -98,3 +100,5 @@ permalink: /kb/138/Q138095/
 	
 	=============================================================================
 	
+
+{% endraw %}

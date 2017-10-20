@@ -6,6 +6,8 @@ permalink: /kb/246/Q246862/
 
 ## Q246862: How to Install Microsoft Metadirector Services on a Windows 2000
 
+{% raw %}
+
 	Article: Q246862
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1; WINDOWS:2000
@@ -101,3 +103,5 @@ permalink: /kb/246/Q246862/
 	
 	=============================================================================
 	
+
+{% endraw %}

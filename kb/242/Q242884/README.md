@@ -6,6 +6,8 @@ permalink: /kb/242/Q242884/
 
 ## Q242884: Age of Empires II: Frame Rate is Unexpectedly Slow
 
+{% raw %}
+
 	Article: Q242884
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -77,3 +79,5 @@ permalink: /kb/242/Q242884/
 	
 	=============================================================================
 	
+
+{% endraw %}

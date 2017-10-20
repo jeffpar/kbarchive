@@ -6,6 +6,8 @@ permalink: /kb/174/Q174642/
 
 ## Q174642: DCA ISCA SDLC Connections Fail On Pentium Pro Systems
 
+{% raw %}
+
 	Article: Q174642
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1
@@ -103,3 +105,5 @@ permalink: /kb/174/Q174642/
 	
 	=============================================================================
 	
+
+{% endraw %}

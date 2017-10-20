@@ -6,6 +6,8 @@ permalink: /kb/163/Q163025/
 
 ## Q163025: PRB: OLE Error when Inserting OLE Object in VFP for Macintosh
 
+{% raw %}
+
 	Article: Q163025
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -191,3 +193,5 @@ permalink: /kb/163/Q163025/
 	
 	=============================================================================
 	
+
+{% endraw %}

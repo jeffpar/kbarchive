@@ -6,6 +6,8 @@ permalink: /kb/178/Q178448/
 
 ## Q178448: FP98: Can't Change Design-Time Controls Properties After Saving
 
+{% raw %}
+
 	Article: Q178448
 	Product(s): Word Front Page
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/178/Q178448/
 	
 	=============================================================================
 	
+
+{% endraw %}

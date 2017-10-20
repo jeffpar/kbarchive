@@ -6,6 +6,8 @@ permalink: /kb/194/Q194107/
 
 ## Q194107: Cannot Connect to Newsgroups on Msnnews.msn.com News Server
 
+{% raw %}
+
 	Article: Q194107
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5
@@ -69,3 +71,5 @@ permalink: /kb/194/Q194107/
 	
 	=============================================================================
 	
+
+{% endraw %}

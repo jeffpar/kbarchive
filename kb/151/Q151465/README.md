@@ -6,6 +6,8 @@ permalink: /kb/151/Q151465/
 
 ## Q151465: MSB Ocean: How to Determine Which Version You Have
 
+{% raw %}
+
 	Article: Q151465
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0,1.01
@@ -86,3 +88,5 @@ permalink: /kb/151/Q151465/
 	
 	=============================================================================
 	
+
+{% endraw %}

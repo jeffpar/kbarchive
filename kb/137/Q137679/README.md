@@ -6,6 +6,8 @@ permalink: /kb/137/Q137679/
 
 ## Q137679: SMS: CNOTIN.EXE and Direct Architectures
 
+{% raw %}
+
 	Article: Q137679
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -70,3 +72,5 @@ permalink: /kb/137/Q137679/
 	
 	=============================================================================
 	
+
+{% endraw %}

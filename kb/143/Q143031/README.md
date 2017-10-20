@@ -6,6 +6,8 @@ permalink: /kb/143/Q143031/
 
 ## Q143031: Error Starting Mail Server in Windows NT 3.51 Resource Kit
 
+{% raw %}
+
 	Article: Q143031
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -69,3 +71,5 @@ permalink: /kb/143/Q143031/
 	
 	=============================================================================
 	
+
+{% endraw %}

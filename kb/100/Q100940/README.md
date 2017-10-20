@@ -6,6 +6,8 @@ permalink: /kb/100/Q100940/
 
 ## Q100940: 4DOS Causes &quot;Write Protected&quot; Error When Disk Is Full
 
+{% raw %}
+
 	Article: Q100940
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -55,3 +57,5 @@ permalink: /kb/100/Q100940/
 	
 	=============================================================================
 	
+
+{% endraw %}

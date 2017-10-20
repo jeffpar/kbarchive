@@ -6,6 +6,8 @@ permalink: /kb/096/Q96660/
 
 ## Q96660: CIT24US.DRV Version 2.0 Does Not Contain Margins Feature
 
+{% raw %}
+
 	Article: Q96660
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/096/Q96660/
 	
 	=============================================================================
 	
+
+{% endraw %}

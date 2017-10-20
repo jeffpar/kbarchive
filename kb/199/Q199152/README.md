@@ -6,6 +6,8 @@ permalink: /kb/199/Q199152/
 
 ## Q199152: Desktop Icons Do Not Display Correctly in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q199152
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/199/Q199152/
 	
 	=============================================================================
 	
+
+{% endraw %}

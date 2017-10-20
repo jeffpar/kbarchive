@@ -6,6 +6,8 @@ permalink: /kb/087/Q87269/
 
 ## Q87269: Windows Err Msg: Unable to Start Enhanced Mode...Back Fill
 
+{% raw %}
+
 	Article: Q87269
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a,3.1,3.11
@@ -122,3 +124,5 @@ permalink: /kb/087/Q87269/
 	
 	=============================================================================
 	
+
+{% endraw %}

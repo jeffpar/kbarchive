@@ -6,6 +6,8 @@ permalink: /kb/124/Q124721/
 
 ## Q124721: DOC: HELP Does Not Locate New Supported dBASE Commands
 
+{% raw %}
+
 	Article: Q124721
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.6,2.6a
@@ -73,3 +75,5 @@ permalink: /kb/124/Q124721/
 	
 	=============================================================================
 	
+
+{% endraw %}

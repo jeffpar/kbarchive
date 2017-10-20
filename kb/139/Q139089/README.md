@@ -6,6 +6,8 @@ permalink: /kb/139/Q139089/
 
 ## Q139089: PPT7: No Support for Natural Keyboard Application Key
 
+{% raw %}
+
 	Article: Q139089
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -56,3 +58,5 @@ permalink: /kb/139/Q139089/
 	
 	=============================================================================
 	
+
+{% endraw %}

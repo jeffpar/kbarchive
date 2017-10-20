@@ -6,6 +6,8 @@ permalink: /kb/140/Q140488/
 
 ## Q140488: HOWTO: How to Determine the Number of Supported Colors
 
+{% raw %}
+
 	Article: Q140488
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0a,6.0
@@ -124,3 +126,5 @@ permalink: /kb/140/Q140488/
 	
 	=============================================================================
 	
+
+{% endraw %}

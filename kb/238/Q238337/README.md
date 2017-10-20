@@ -6,6 +6,8 @@ permalink: /kb/238/Q238337/
 
 ## Q238337: Browse Button for Home Directory Is Disabled in MMC
 
+{% raw %}
+
 	Article: Q238337
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -51,3 +53,5 @@ permalink: /kb/238/Q238337/
 	
 	=============================================================================
 	
+
+{% endraw %}

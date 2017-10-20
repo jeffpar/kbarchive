@@ -6,6 +6,8 @@ permalink: /kb/164/Q164590/
 
 ## Q164590: Branch Servers Using DLS Cannot Communicate Through Firewalls
 
+{% raw %}
+
 	Article: Q164590
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0
@@ -174,3 +176,5 @@ permalink: /kb/164/Q164590/
 	
 	=============================================================================
 	
+
+{% endraw %}

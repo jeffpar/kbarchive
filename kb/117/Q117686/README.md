@@ -6,6 +6,8 @@ permalink: /kb/117/Q117686/
 
 ## Q117686: DOC: CDC::SelectObject, CDC::SelectStockObject Return
 
+{% raw %}
+
 	Article: Q117686
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0
@@ -80,3 +82,5 @@ permalink: /kb/117/Q117686/
 	
 	=============================================================================
 	
+
+{% endraw %}

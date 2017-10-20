@@ -6,6 +6,8 @@ permalink: /kb/262/Q262869/
 
 ## Q262869: MapPoint 2001: Space Requirements for System Hard Disk
 
+{% raw %}
+
 	Article: Q262869
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/262/Q262869/
 	
 	=============================================================================
 	
+
+{% endraw %}

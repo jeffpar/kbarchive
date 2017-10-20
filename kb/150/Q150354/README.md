@@ -6,6 +6,8 @@ permalink: /kb/150/Q150354/
 
 ## Q150354: Bookshelf '95 Does Not Start in Office 95 Trial Kit
 
+{% raw %}
+
 	Article: Q150354
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/150/Q150354/
 	
 	=============================================================================
 	
+
+{% endraw %}

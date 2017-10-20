@@ -6,6 +6,8 @@ permalink: /kb/260/Q260395/
 
 ## Q260395: SMS: Variables May Not Work Properly in a Program Command Line
 
+{% raw %}
+
 	Article: Q260395
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -63,3 +65,5 @@ permalink: /kb/260/Q260395/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242519/
 
 ## Q242519: Age of Empires II: Stops Responding When You Press ALT+ TAB
 
+{% raw %}
+
 	Article: Q242519
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0; :
@@ -110,3 +112,5 @@ permalink: /kb/242/Q242519/
 	
 	=============================================================================
 	
+
+{% endraw %}

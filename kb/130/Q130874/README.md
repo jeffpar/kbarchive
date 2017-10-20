@@ -6,6 +6,8 @@ permalink: /kb/130/Q130874/
 
 ## Q130874: Troubleshooting LAN Manager for MS-DOS 2.2c and DHCP
 
+{% raw %}
+
 	Article: Q130874
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2c
@@ -142,3 +144,5 @@ permalink: /kb/130/Q130874/
 	
 	=============================================================================
 	
+
+{% endraw %}

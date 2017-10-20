@@ -6,6 +6,8 @@ permalink: /kb/247/Q247087/
 
 ## Q247087: XWEB: Error Message: Unable to Get Public Folder
 
+{% raw %}
+
 	Article: Q247087
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -67,3 +69,5 @@ permalink: /kb/247/Q247087/
 	
 	=============================================================================
 	
+
+{% endraw %}

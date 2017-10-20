@@ -6,6 +6,8 @@ permalink: /kb/043/Q43144/
 
 ## Q43144: C: Using the _dos_findfirst and _dosfindnext Functions
 
+{% raw %}
+
 	Article: Q43144
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -56,3 +58,5 @@ permalink: /kb/043/Q43144/
 	            if( c_file.attrib & _A_SUBDIR )
 	            printf( "Directory listing %s\n", c_file.name );
 	}
+
+{% endraw %}

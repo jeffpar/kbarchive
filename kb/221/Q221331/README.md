@@ -6,6 +6,8 @@ permalink: /kb/221/Q221331/
 
 ## Q221331: RRAS Computer Stops Responding to Incoming Calls Under Stress
 
+{% raw %}
+
 	Article: Q221331
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/221/Q221331/
 	
 	=============================================================================
 	
+
+{% endraw %}

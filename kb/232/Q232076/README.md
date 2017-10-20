@@ -6,6 +6,8 @@ permalink: /kb/232/Q232076/
 
 ## Q232076: XFOR: Notes Connector AV when Address Is 256 Bytes Long
 
+{% raw %}
+
 	Article: Q232076
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -73,3 +75,5 @@ permalink: /kb/232/Q232076/
 	
 	=============================================================================
 	
+
+{% endraw %}

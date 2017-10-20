@@ -6,6 +6,8 @@ permalink: /kb/102/Q102878/
 
 ## Q102878: Information on Browser Operation
 
+{% raw %}
+
 	Article: Q102878
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.1,3.5,3.51,4.0
@@ -193,3 +195,5 @@ permalink: /kb/102/Q102878/
 	
 	=============================================================================
 	
+
+{% endraw %}

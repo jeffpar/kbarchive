@@ -6,6 +6,8 @@ permalink: /kb/075/Q75275/
 
 ## Q75275: FIX: Assembling with /Sg May Cause A2075 Error
 
+{% raw %}
+
 	Article: Q75275
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -48,3 +50,5 @@ permalink: /kb/075/Q75275/
 	
 	=============================================================================
 	
+
+{% endraw %}

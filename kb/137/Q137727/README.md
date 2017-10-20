@@ -6,6 +6,8 @@ permalink: /kb/137/Q137727/
 
 ## Q137727: Timex Data Link Watch Rounds Appointment Times
 
+{% raw %}
+
 	Article: Q137727
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -48,3 +50,5 @@ permalink: /kb/137/Q137727/
 	
 	=============================================================================
 	
+
+{% endraw %}

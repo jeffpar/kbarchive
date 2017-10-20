@@ -6,6 +6,8 @@ permalink: /kb/153/Q153206/
 
 ## Q153206: PGC Err Msg: Could Not Open the Application Database
 
+{% raw %}
+
 	Article: Q153206
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -84,3 +86,5 @@ permalink: /kb/153/Q153206/
 	
 	=============================================================================
 	
+
+{% endraw %}

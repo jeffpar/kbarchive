@@ -6,6 +6,8 @@ permalink: /kb/323/Q323943/
 
 ## Q323943: &quot;Zoo Tycoon Has Encountered&quot; Err Msg Starting Dinosaur Digs Game
 
+{% raw %}
+
 	Article: Q323943
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -343,3 +345,5 @@ permalink: /kb/323/Q323943/
 	
 	=============================================================================
 	
+
+{% endraw %}

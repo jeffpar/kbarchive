@@ -6,6 +6,8 @@ permalink: /kb/129/Q129193/
 
 ## Q129193: FIX: File Added with No Extension is Handled Incorrectly
 
+{% raw %}
+
 	Article: Q129193
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/129/Q129193/
 	
 	=============================================================================
 	
+
+{% endraw %}

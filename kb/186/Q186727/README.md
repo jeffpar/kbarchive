@@ -6,6 +6,8 @@ permalink: /kb/186/Q186727/
 
 ## Q186727: WD97: Light Blue Background Prints on Graphics
 
+{% raw %}
+
 	Article: Q186727
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/186/Q186727/
 	
 	=============================================================================
 	
+
+{% endraw %}

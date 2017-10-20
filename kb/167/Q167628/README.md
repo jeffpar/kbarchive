@@ -6,6 +6,8 @@ permalink: /kb/167/Q167628/
 
 ## Q167628: SMS: Missing or Incomplete Inventory in SMS Database
 
+{% raw %}
+
 	Article: Q167628
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -106,3 +108,5 @@ permalink: /kb/167/Q167628/
 	
 	=============================================================================
 	
+
+{% endraw %}

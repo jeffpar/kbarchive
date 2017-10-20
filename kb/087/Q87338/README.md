@@ -6,6 +6,8 @@ permalink: /kb/087/Q87338/
 
 ## Q87338: PRB: Font Files Not Found by Chinese Windows 3.0 Setup
 
+{% raw %}
+
 	Article: Q87338
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 3.1
@@ -76,3 +78,5 @@ permalink: /kb/087/Q87338/
 	
 	=============================================================================
 	
+
+{% endraw %}

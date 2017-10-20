@@ -6,6 +6,8 @@ permalink: /kb/142/Q142094/
 
 ## Q142094: PC DOS: Err Msg: Notice 38: Empty Personal Address List (PAL)
 
+{% raw %}
+
 	Article: Q142094
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/142/Q142094/
 	
 	=============================================================================
 	
+
+{% endraw %}

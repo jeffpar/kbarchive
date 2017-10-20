@@ -6,6 +6,8 @@ permalink: /kb/193/Q193320/
 
 ## Q193320: XADM: Store AV When Client Accesses Public Folder Replica
 
+{% raw %}
+
 	Article: Q193320
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -98,3 +100,5 @@ permalink: /kb/193/Q193320/
 	
 	=============================================================================
 	
+
+{% endraw %}

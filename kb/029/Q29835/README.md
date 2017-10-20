@@ -6,6 +6,8 @@ permalink: /kb/029/Q29835/
 
 ## Q29835: C 5.10 MTDYNA.DOC: Sample MT Program/Description of Operation
 
+{% raw %}
+
 	Article: Q29835
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -95,3 +97,5 @@ permalink: /kb/029/Q29835/
 	   started. In other words, there is no chance for the parent code to
 	   do other things and leave the thread waiting for DosSleep for long
 	   periods of time.
+
+{% endraw %}

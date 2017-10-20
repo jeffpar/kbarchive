@@ -6,6 +6,8 @@ permalink: /kb/135/Q135303/
 
 ## Q135303: PC Win: Err Msg: General Mail Failure. Close Excel, Restart...
 
+{% raw %}
+
 	Article: Q135303
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2,4.0
@@ -62,3 +64,5 @@ permalink: /kb/135/Q135303/
 	
 	=============================================================================
 	
+
+{% endraw %}

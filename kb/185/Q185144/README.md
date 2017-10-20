@@ -6,6 +6,8 @@ permalink: /kb/185/Q185144/
 
 ## Q185144: WD97: Multi-level Numbered List Converts Incorrectly
 
+{% raw %}
+
 	Article: Q185144
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/185/Q185144/
 	
 	=============================================================================
 	
+
+{% endraw %}

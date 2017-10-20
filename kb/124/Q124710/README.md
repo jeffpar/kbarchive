@@ -6,6 +6,8 @@ permalink: /kb/124/Q124710/
 
 ## Q124710: MSB Human: No MIDI Drums with Gravis UltraSound
 
+{% raw %}
+
 	Article: Q124710
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/124/Q124710/
 	
 	=============================================================================
 	
+
+{% endraw %}

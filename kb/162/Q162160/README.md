@@ -6,6 +6,8 @@ permalink: /kb/162/Q162160/
 
 ## Q162160: FIX: CFileDialog::DoModal Does Not Return 0
 
+{% raw %}
+
 	Article: Q162160
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0
@@ -71,3 +73,5 @@ permalink: /kb/162/Q162160/
 	
 	=============================================================================
 	
+
+{% endraw %}

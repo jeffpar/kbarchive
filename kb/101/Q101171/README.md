@@ -6,6 +6,8 @@ permalink: /kb/101/Q101171/
 
 ## Q101171: Determining Video Resolution with Windows Paintbrush
 
+{% raw %}
+
 	Article: Q101171
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/101/Q101171/
 	
 	=============================================================================
 	
+
+{% endraw %}

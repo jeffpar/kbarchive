@@ -6,6 +6,8 @@ permalink: /kb/138/Q138212/
 
 ## Q138212: Mastering VB Err Msg: Setup Not Completed Successfully
 
+{% raw %}
+
 	Article: Q138212
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -54,3 +56,5 @@ permalink: /kb/138/Q138212/
 	
 	=============================================================================
 	
+
+{% endraw %}

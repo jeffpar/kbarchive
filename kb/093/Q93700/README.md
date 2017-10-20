@@ -6,6 +6,8 @@ permalink: /kb/093/Q93700/
 
 ## Q93700: WFWG: Error Attempting to Move Local Schedule+ .CAL File
 
+{% raw %}
+
 	Article: Q93700
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/093/Q93700/
 	
 	=============================================================================
 	
+
+{% endraw %}

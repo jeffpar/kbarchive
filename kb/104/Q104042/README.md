@@ -6,6 +6,8 @@ permalink: /kb/104/Q104042/
 
 ## Q104042: PRB: Unable to Write to the Windows NT Registry
 
+{% raw %}
+
 	Article: Q104042
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0 2.0 2.1 4.0 4.1
@@ -85,3 +87,5 @@ permalink: /kb/104/Q104042/
 	
 	=============================================================================
 	
+
+{% endraw %}

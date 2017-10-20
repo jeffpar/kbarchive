@@ -6,6 +6,8 @@ permalink: /kb/235/Q235660/
 
 ## Q235660: Stop 0x0000001e in Win32k.sys with Logon Screen Saver
 
+{% raw %}
+
 	Article: Q235660
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/235/Q235660/
 	
 	=============================================================================
 	
+
+{% endraw %}

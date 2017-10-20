@@ -6,6 +6,8 @@ permalink: /kb/221/Q221778/
 
 ## Q221778: XADM: Explanation of Various Types Used in Exchange PF Replicati
 
+{% raw %}
+
 	Article: Q221778
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -78,3 +80,5 @@ permalink: /kb/221/Q221778/
 	
 	=============================================================================
 	
+
+{% endraw %}

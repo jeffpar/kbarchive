@@ -6,6 +6,8 @@ permalink: /kb/114/Q114138/
 
 ## Q114138: PRB: FoxPro Icon in .EXE Won't Install with Norton Desktop 3.0
 
+{% raw %}
+
 	Article: Q114138
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x,2.6
@@ -87,3 +89,5 @@ permalink: /kb/114/Q114138/
 	
 	=============================================================================
 	
+
+{% endraw %}

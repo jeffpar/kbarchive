@@ -6,6 +6,8 @@ permalink: /kb/196/Q196129/
 
 ## Q196129: XADM: How to Change the KMS Service Password Startup Location
 
+{% raw %}
+
 	Article: Q196129
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -99,3 +101,5 @@ permalink: /kb/196/Q196129/
 	
 	=============================================================================
 	
+
+{% endraw %}

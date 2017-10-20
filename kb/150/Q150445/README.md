@@ -6,6 +6,8 @@ permalink: /kb/150/Q150445/
 
 ## Q150445: Windows 95 Service Pack 1 Floppy Disk Directory Listing
 
+{% raw %}
+
 	Article: Q150445
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -361,3 +363,5 @@ permalink: /kb/150/Q150445/
 	
 	=============================================================================
 	
+
+{% endraw %}

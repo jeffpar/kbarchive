@@ -6,6 +6,8 @@ permalink: /kb/057/Q57711/
 
 ## Q57711: QB/QBX &quot;Out of Stack Space&quot; Using Large TYPE as SUB Parameter
 
+{% raw %}
+
 	Article: Q57711
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -87,3 +89,5 @@ permalink: /kb/057/Q57711/
 	   END
 	   SUB sub1
 	   END SUB
+
+{% endraw %}

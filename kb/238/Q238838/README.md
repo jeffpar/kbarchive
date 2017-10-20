@@ -6,6 +6,8 @@ permalink: /kb/238/Q238838/
 
 ## Q238838: XCON: No Longer Get Delivery Reports After Upgrade to 5.5 SP2
 
+{% raw %}
+
 	Article: Q238838
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -94,3 +96,5 @@ permalink: /kb/238/Q238838/
 	
 	=============================================================================
 	
+
+{% endraw %}

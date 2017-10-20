@@ -6,6 +6,8 @@ permalink: /kb/127/Q127953/
 
 ## Q127953: PC WRmt: Remote Mail to Group with New User Not Delivered
 
+{% raw %}
+
 	Article: Q127953
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -60,3 +62,5 @@ permalink: /kb/127/Q127953/
 	
 	=============================================================================
 	
+
+{% endraw %}

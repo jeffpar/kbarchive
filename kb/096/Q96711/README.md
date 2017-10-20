@@ -6,6 +6,8 @@ permalink: /kb/096/Q96711/
 
 ## Q96711: HIMEM.SYS Reports Error: Unable to Control A20 Line!
 
+{% raw %}
+
 	Article: Q96711
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22; WINDOWS:95
@@ -201,3 +203,5 @@ permalink: /kb/096/Q96711/
 	
 	=============================================================================
 	
+
+{% endraw %}

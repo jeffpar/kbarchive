@@ -6,6 +6,8 @@ permalink: /kb/096/Q96067/
 
 ## Q96067: Print Shop Deluxe Banners Contain Gaps or Blank Pages
 
+{% raw %}
+
 	Article: Q96067
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/096/Q96067/
 	
 	=============================================================================
 	
+
+{% endraw %}

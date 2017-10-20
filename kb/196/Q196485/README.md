@@ -6,6 +6,8 @@ permalink: /kb/196/Q196485/
 
 ## Q196485: Computer Loses Network Connectivity
 
+{% raw %}
+
 	Article: Q196485
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/196/Q196485/
 	
 	=============================================================================
 	
+
+{% endraw %}

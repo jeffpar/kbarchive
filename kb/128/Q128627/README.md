@@ -6,6 +6,8 @@ permalink: /kb/128/Q128627/
 
 ## Q128627: PC Ext: Err Msg: &#91;004&#93; Message Circular Route Detected
 
+{% raw %}
+
 	Article: Q128627
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -83,3 +85,5 @@ permalink: /kb/128/Q128627/
 	
 	=============================================================================
 	
+
+{% endraw %}

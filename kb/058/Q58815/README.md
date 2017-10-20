@@ -6,6 +6,8 @@ permalink: /kb/058/Q58815/
 
 ## Q58815: &quot;Unresolved External&quot; Using Wrong Linker with BASIC 7.00, 7.10
 
+{% raw %}
+
 	Article: Q58815
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -47,3 +49,5 @@ permalink: /kb/058/Q58815/
 	not contain LINK.EXE and thus invoking an older linker version found
 	first in your DOS PATH. You must be sure to have the correct linker
 	found in your DOS PATH or in the current directory.
+
+{% endraw %}

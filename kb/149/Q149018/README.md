@@ -6,6 +6,8 @@ permalink: /kb/149/Q149018/
 
 ## Q149018: HP850C Prints Orange Fonts and Graphics as Yellow
 
+{% raw %}
+
 	Article: Q149018
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -51,3 +53,5 @@ permalink: /kb/149/Q149018/
 	
 	=============================================================================
 	
+
+{% endraw %}

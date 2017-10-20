@@ -6,6 +6,8 @@ permalink: /kb/233/Q233462/
 
 ## Q233462: Business Planner: Error Message Opening Wizard Interview Page
 
+{% raw %}
+
 	Article: Q233462
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -109,3 +111,5 @@ permalink: /kb/233/Q233462/
 	
 	=============================================================================
 	
+
+{% endraw %}

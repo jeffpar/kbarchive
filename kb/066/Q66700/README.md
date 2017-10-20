@@ -6,6 +6,8 @@ permalink: /kb/066/Q66700/
 
 ## Q66700: Redirecting Standard Input Does Not Affect getch() Under OS/2
 
+{% raw %}
+
 	Article: Q66700
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -53,3 +55,5 @@ permalink: /kb/066/Q66700/
 	      /* Use getchar() for input.                */
 	   }
 	}
+
+{% endraw %}

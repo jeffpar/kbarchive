@@ -6,6 +6,8 @@ permalink: /kb/166/Q166934/
 
 ## Q166934: PRB: Err: &quot;Variable Not Found&quot; Attempting to Export
 
+{% raw %}
+
 	Article: Q166934
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -106,3 +108,5 @@ permalink: /kb/166/Q166934/
 	
 	=============================================================================
 	
+
+{% endraw %}

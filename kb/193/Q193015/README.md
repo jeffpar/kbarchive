@@ -6,6 +6,8 @@ permalink: /kb/193/Q193015/
 
 ## Q193015: SMS: Pentium II Processor Detected as 486DX on OS/2 Clients
 
+{% raw %}
+
 	Article: Q193015
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -94,3 +96,5 @@ permalink: /kb/193/Q193015/
 	
 	=============================================================================
 	
+
+{% endraw %}

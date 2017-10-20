@@ -6,6 +6,8 @@ permalink: /kb/132/Q132493/
 
 ## Q132493: PRB: Memory Leaks with Desktop Database Drivers
 
+{% raw %}
+
 	Article: Q132493
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -94,3 +96,5 @@ permalink: /kb/132/Q132493/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156454/
 
 ## Q156454: FIX: Adding File Causes Error if Name Contains a Space
 
+{% raw %}
+
 	Article: Q156454
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a
@@ -92,3 +94,5 @@ permalink: /kb/156/Q156454/
 	
 	=============================================================================
 	
+
+{% endraw %}

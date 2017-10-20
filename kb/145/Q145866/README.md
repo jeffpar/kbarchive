@@ -6,6 +6,8 @@ permalink: /kb/145/Q145866/
 
 ## Q145866: Scenes 1.0: Genigraphics Scanning Special Offer Expired
 
+{% raw %}
+
 	Article: Q145866
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -53,3 +55,5 @@ permalink: /kb/145/Q145866/
 	
 	=============================================================================
 	
+
+{% endraw %}

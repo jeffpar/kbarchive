@@ -6,6 +6,8 @@ permalink: /kb/111/Q111882/
 
 ## Q111882: TI MicroLaser w/EXP16ODI.COM Driver May Cause 15-Second Delay
 
+{% raw %}
+
 	Article: Q111882
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -55,3 +57,5 @@ permalink: /kb/111/Q111882/
 	
 	=============================================================================
 	
+
+{% endraw %}

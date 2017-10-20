@@ -6,6 +6,8 @@ permalink: /kb/246/Q246845/
 
 ## Q246845: XADM: Event ID 202 Space Tree Issues in Exchange Server 5.5 SP3
 
+{% raw %}
+
 	Article: Q246845
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -49,3 +51,5 @@ permalink: /kb/246/Q246845/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120015/
 
 ## Q120015: Windows NT RAS: X.25 Script for Sita Group Network Services
 
+{% raw %}
+
 	Article: Q120015
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10
@@ -178,3 +180,5 @@ permalink: /kb/120/Q120015/
 	
 	=============================================================================
 	
+
+{% endraw %}

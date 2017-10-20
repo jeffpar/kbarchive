@@ -6,6 +6,8 @@ permalink: /kb/089/Q89996/
 
 ## Q89996: Windows Sound System Supports ISA/EISA, Not Micro Channel
 
+{% raw %}
+
 	Article: Q89996
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/089/Q89996/
 	
 	=============================================================================
 	
+
+{% endraw %}

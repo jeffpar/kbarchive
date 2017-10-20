@@ -6,6 +6,8 @@ permalink: /kb/077/Q77575/
 
 ## Q77575: Flight Simulator 4.0 Does Not Operate on Outbound Laptop
 
+{% raw %}
+
 	Article: Q77575
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -34,3 +36,5 @@ permalink: /kb/077/Q77575/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138548/
 
 ## Q138548: FAX: Configuring GammaLink GammaFax with i3CAS Drivers
 
+{% raw %}
+
 	Article: Q138548
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -471,3 +473,5 @@ permalink: /kb/138/Q138548/
 	
 	=============================================================================
 	
+
+{% endraw %}

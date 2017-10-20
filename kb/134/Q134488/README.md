@@ -6,6 +6,8 @@ permalink: /kb/134/Q134488/
 
 ## Q134488: Xircom CE2 PCMCIA Network Adapter Card Problems
 
+{% raw %}
+
 	Article: Q134488
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/134/Q134488/
 	
 	=============================================================================
 	
+
+{% endraw %}

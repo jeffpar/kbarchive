@@ -6,6 +6,8 @@ permalink: /kb/103/Q103711/
 
 ## Q103711: BUG: CXX0067: Error: Illegal Enum Value
 
+{% raw %}
+
 	Article: Q103711
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.1; WINDOWS:1.0
@@ -87,3 +89,5 @@ permalink: /kb/103/Q103711/
 	
 	=============================================================================
 	
+
+{% endraw %}

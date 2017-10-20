@@ -6,6 +6,8 @@ permalink: /kb/117/Q117861/
 
 ## Q117861: Encarta: Can't Install If Clipboard Contains Large Object
 
+{% raw %}
+
 	Article: Q117861
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -53,3 +55,5 @@ permalink: /kb/117/Q117861/
 	
 	=============================================================================
 	
+
+{% endraw %}

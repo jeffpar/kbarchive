@@ -6,6 +6,8 @@ permalink: /kb/186/Q186645/
 
 ## Q186645: Troubleshooting RDP Client Connection Problems
 
+{% raw %}
+
 	Article: Q186645
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -130,3 +132,5 @@ permalink: /kb/186/Q186645/
 	
 	=============================================================================
 	
+
+{% endraw %}

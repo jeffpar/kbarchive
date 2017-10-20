@@ -6,6 +6,8 @@ permalink: /kb/164/Q164535/
 
 ## Q164535: Random Errors w/ IDC or ASP Queries to Access Database
 
+{% raw %}
+
 	Article: Q164535
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0,4.0
@@ -74,3 +76,5 @@ permalink: /kb/164/Q164535/
 	
 	=============================================================================
 	
+
+{% endraw %}

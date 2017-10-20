@@ -6,6 +6,8 @@ permalink: /kb/108/Q108110/
 
 ## Q108110: Corrupted 8-Bit .AVI File After Step Frame Capture
 
+{% raw %}
+
 	Article: Q108110
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:1.1
@@ -45,3 +47,5 @@ permalink: /kb/108/Q108110/
 	
 	=============================================================================
 	
+
+{% endraw %}

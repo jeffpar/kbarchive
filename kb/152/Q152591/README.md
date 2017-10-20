@@ -6,6 +6,8 @@ permalink: /kb/152/Q152591/
 
 ## Q152591: XCON: Cannot Create RAS Connector With More Than 10 entries
 
+{% raw %}
+
 	Article: Q152591
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -49,3 +51,5 @@ permalink: /kb/152/Q152591/
 	
 	=============================================================================
 	
+
+{% endraw %}

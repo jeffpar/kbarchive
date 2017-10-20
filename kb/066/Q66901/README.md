@@ -6,6 +6,8 @@ permalink: /kb/066/Q66901/
 
 ## Q66901: QuickC Version 2.50 Packing List (5.25-Inch Disk Set)
 
+{% raw %}
+
 	Article: Q66901
 	Product(s): See article
 	Version(s): 2.50
@@ -206,3 +208,5 @@ permalink: /kb/066/Q66901/
 	   font\roman.fon               "
 	   font\script.fon              "
 	   font\tmsrb.fon               "
+
+{% endraw %}

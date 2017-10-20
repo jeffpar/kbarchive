@@ -6,6 +6,8 @@ permalink: /kb/298/Q298158/
 
 ## Q298158: HOW TO: Configure FrontPage Server Extensions in IIS
 
+{% raw %}
+
 	Article: Q298158
 	Product(s): Internet Information Server
 	Version(s): 2000,5.0
@@ -160,3 +162,5 @@ permalink: /kb/298/Q298158/
 	
 	=============================================================================
 	
+
+{% endraw %}

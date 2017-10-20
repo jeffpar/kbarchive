@@ -6,6 +6,8 @@ permalink: /kb/039/Q39577/
 
 ## Q39577: DRAW &quot;Illegal Function Call&quot; In .EXE Compiled with BC /D
 
+{% raw %}
+
 	Article: Q39577
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -42,3 +44,5 @@ permalink: /kb/039/Q39577/
 	DRAW "x" + VARPTR$(a$(17))
 	INPUT x$
 	END
+
+{% endraw %}

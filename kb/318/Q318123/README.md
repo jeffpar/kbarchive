@@ -6,6 +6,8 @@ permalink: /kb/318/Q318123/
 
 ## Q318123: Setup Does Not Recognize .inf File During Unattended HIS Install
 
+{% raw %}
+
 	Article: Q318123
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/318/Q318123/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103558/
 
 ## Q103558: TAP Software Fails to Run from a DoubleSpace Drive
 
+{% raw %}
+
 	Article: Q103558
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -46,3 +48,5 @@ permalink: /kb/103/Q103558/
 	
 	=============================================================================
 	
+
+{% endraw %}

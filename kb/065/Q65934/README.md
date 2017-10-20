@@ -6,6 +6,8 @@ permalink: /kb/065/Q65934/
 
 ## Q65934: CV /E Avoids Windows 3.00 386 Enhanced Mode Protection Error
 
+{% raw %}
+
 	Article: Q65934
 	Product(s): See article
 	Version(s): 2.35 3.00 3.10
@@ -48,3 +50,5 @@ permalink: /kb/065/Q65934/
 	
 	CodeView will run without the above error message in a Windows 3.00
 	DOS box in standard mode, WIN /S.
+
+{% endraw %}

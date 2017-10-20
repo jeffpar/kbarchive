@@ -6,6 +6,8 @@ permalink: /kb/160/Q160519/
 
 ## Q160519: DNS Queries for Root Name Servers Every Hour
 
+{% raw %}
+
 	Article: Q160519
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/160/Q160519/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138254/
 
 ## Q138254: Memory Leak in SQL Server 6.0 Affects SMS
 
+{% raw %}
+
 	Article: Q138254
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -74,3 +76,5 @@ permalink: /kb/138/Q138254/
 	
 	=============================================================================
 	
+
+{% endraw %}

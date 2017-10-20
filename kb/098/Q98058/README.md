@@ -6,6 +6,8 @@ permalink: /kb/098/Q98058/
 
 ## Q98058: BUG: Graphics Operations Consume GDI Memory
 
+{% raw %}
+
 	Article: Q98058
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -107,3 +109,5 @@ permalink: /kb/098/Q98058/
 	
 	=============================================================================
 	
+
+{% endraw %}

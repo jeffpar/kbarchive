@@ -6,6 +6,8 @@ permalink: /kb/030/Q30377/
 
 ## Q30377: FIX: Error Message A2051 Incorrectly Generated
 
+{% raw %}
+
 	Article: Q30377
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -73,3 +75,5 @@ permalink: /kb/030/Q30377/
 	
 	=============================================================================
 	
+
+{% endraw %}

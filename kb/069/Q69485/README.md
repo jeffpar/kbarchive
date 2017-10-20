@@ -6,6 +6,8 @@ permalink: /kb/069/Q69485/
 
 ## Q69485: COMPAQ DESKPRO Unable to Read Extended DOS Partitions
 
+{% raw %}
+
 	Article: Q69485
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/069/Q69485/
 	
 	=============================================================================
 	
+
+{% endraw %}

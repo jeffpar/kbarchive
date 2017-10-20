@@ -6,6 +6,8 @@ permalink: /kb/172/Q172340/
 
 ## Q172340: STOP C0000221 Bad Image Checksum After Adding RAM
 
+{% raw %}
+
 	Article: Q172340
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -84,3 +86,5 @@ permalink: /kb/172/Q172340/
 	
 	=============================================================================
 	
+
+{% endraw %}

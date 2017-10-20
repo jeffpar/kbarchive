@@ -6,6 +6,8 @@ permalink: /kb/086/Q86247/
 
 ## Q86247: Future Trend's EZ FX May Require OPL3= Switch
 
+{% raw %}
+
 	Article: Q86247
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/086/Q86247/
 	
 	=============================================================================
 	
+
+{% endraw %}

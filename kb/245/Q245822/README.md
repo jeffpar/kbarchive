@@ -6,6 +6,8 @@ permalink: /kb/245/Q245822/
 
 ## Q245822: XGEN: Troubleshooting Exchange w Antivirus Installed
 
+{% raw %}
+
 	Article: Q245822
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -161,3 +163,5 @@ permalink: /kb/245/Q245822/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123281/
 
 ## Q123281: Low Virtual Memory Errors with FoxPro 2.6 In Windows NT
 
+{% raw %}
+
 	Article: Q123281
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/123/Q123281/
 	
 	=============================================================================
 	
+
+{% endraw %}

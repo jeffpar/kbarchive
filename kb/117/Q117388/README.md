@@ -6,6 +6,8 @@ permalink: /kb/117/Q117388/
 
 ## Q117388: PRB: Structure Packing Causes Some Win32 Programs to Fail
 
+{% raw %}
+
 	Article: Q117388
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,2.1,2.2,3.1,3.5,4.0,4.1,4.2,5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/117/Q117388/
 	
 	=============================================================================
 	
+
+{% endraw %}

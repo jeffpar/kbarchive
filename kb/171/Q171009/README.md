@@ -6,6 +6,8 @@ permalink: /kb/171/Q171009/
 
 ## Q171009: XCLN: How to Delete a Duplicate Custom Form
 
+{% raw %}
+
 	Article: Q171009
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -48,3 +50,5 @@ permalink: /kb/171/Q171009/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150779/
 
 ## Q150779: Arcade for Macintosh: Cannot Start Games, No Full-Screen Mode
 
+{% raw %}
+
 	Article: Q150779
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0
@@ -74,3 +76,5 @@ permalink: /kb/150/Q150779/
 	
 	=============================================================================
 	
+
+{% endraw %}

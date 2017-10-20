@@ -6,6 +6,8 @@ permalink: /kb/174/Q174189/
 
 ## Q174189: XGEN: List of Bugs Fixed in Exchange Server 4.0 SP 3, 4, 5
 
+{% raw %}
+
 	Article: Q174189
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -396,3 +398,5 @@ permalink: /kb/174/Q174189/
 	
 	=============================================================================
 	
+
+{% endraw %}

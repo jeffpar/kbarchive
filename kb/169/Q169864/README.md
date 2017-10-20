@@ -6,6 +6,8 @@ permalink: /kb/169/Q169864/
 
 ## Q169864: Windows 95 Creates New Temp Folder
 
+{% raw %}
+
 	Article: Q169864
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -43,3 +45,5 @@ permalink: /kb/169/Q169864/
 	
 	=============================================================================
 	
+
+{% endraw %}

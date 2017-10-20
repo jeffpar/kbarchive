@@ -6,6 +6,8 @@ permalink: /kb/174/Q174762/
 
 ## Q174762: XADM: Servers Without Public Store Require Anonymous Mailbox
 
+{% raw %}
+
 	Article: Q174762
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -44,3 +46,5 @@ permalink: /kb/174/Q174762/
 	
 	=============================================================================
 	
+
+{% endraw %}

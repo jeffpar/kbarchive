@@ -6,6 +6,8 @@ permalink: /kb/280/Q280811/
 
 ## Q280811: PRB: Mixing And/Or Criteria in Same Filter Returns 3001 ErrMsg
 
+{% raw %}
+
 	Article: Q280811
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.5,2.6,6.0
@@ -99,3 +101,5 @@ permalink: /kb/280/Q280811/
 	
 	=============================================================================
 	
+
+{% endraw %}

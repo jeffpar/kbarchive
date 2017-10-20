@@ -6,6 +6,8 @@ permalink: /kb/172/Q172946/
 
 ## Q172946: XCLN: How to Install the Simple Mail Handler Utility
 
+{% raw %}
+
 	Article: Q172946
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -84,3 +86,5 @@ permalink: /kb/172/Q172946/
 	
 	=============================================================================
 	
+
+{% endraw %}

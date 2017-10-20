@@ -6,6 +6,8 @@ permalink: /kb/273/Q273496/
 
 ## Q273496: PRB: IIS 5.0 Hangs with Application.Lock and Application.Unlock
 
+{% raw %}
+
 	Article: Q273496
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -86,3 +88,5 @@ permalink: /kb/273/Q273496/
 	
 	=============================================================================
 	
+
+{% endraw %}

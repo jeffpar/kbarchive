@@ -6,6 +6,8 @@ permalink: /kb/236/Q236388/
 
 ## Q236388: Err Msg: The Share Name Contains Invalid Characters
 
+{% raw %}
+
 	Article: Q236388
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/236/Q236388/
 	
 	=============================================================================
 	
+
+{% endraw %}

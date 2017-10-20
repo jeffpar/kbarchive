@@ -6,6 +6,8 @@ permalink: /kb/186/Q186790/
 
 ## Q186790: XFOR: Performance Issues after Installing Chat Server Extension
 
+{% raw %}
+
 	Article: Q186790
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -64,3 +66,5 @@ permalink: /kb/186/Q186790/
 	
 	=============================================================================
 	
+
+{% endraw %}

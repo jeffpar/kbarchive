@@ -6,6 +6,8 @@ permalink: /kb/172/Q172846/
 
 ## Q172846: INFO: Readme File List for All Editions of Visual Basic 5.0
 
+{% raw %}
+
 	Article: Q172846
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -102,3 +104,5 @@ permalink: /kb/172/Q172846/
 	
 	=============================================================================
 	
+
+{% endraw %}

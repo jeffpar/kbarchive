@@ -6,6 +6,8 @@ permalink: /kb/068/Q68647/
 
 ## Q68647: Windows Code to Parse MS-DOS Environment Variables
 
+{% raw %}
+
 	Article: Q68647
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -57,3 +59,5 @@ permalink: /kb/068/Q68647/
 	
 	=============================================================================
 	
+
+{% endraw %}

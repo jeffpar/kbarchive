@@ -6,6 +6,8 @@ permalink: /kb/147/Q147431/
 
 ## Q147431: Cannot Hide Host Drive for Compressed Volume on Removable Disk
 
+{% raw %}
+
 	Article: Q147431
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -41,3 +43,5 @@ permalink: /kb/147/Q147431/
 	
 	=============================================================================
 	
+
+{% endraw %}

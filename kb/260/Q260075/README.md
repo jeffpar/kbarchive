@@ -6,6 +6,8 @@ permalink: /kb/260/Q260075/
 
 ## Q260075: PRB: Server Stops Responding When You Call MTS Under ASP
 
+{% raw %}
+
 	Article: Q260075
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:6.0; winnt:4.0
@@ -201,3 +203,5 @@ permalink: /kb/260/Q260075/
 	
 	=============================================================================
 	
+
+{% endraw %}

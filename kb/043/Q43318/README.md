@@ -6,6 +6,8 @@ permalink: /kb/043/Q43318/
 
 ## Q43318: C: Spawned Program Accessing Parent's Functions
 
+{% raw %}
+
 	Article: Q43318
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -127,3 +129,5 @@ permalink: /kb/043/Q43318/
 	    printf( "        Result of foo(): %d\n", i );
 	    printf( "    Leaving child.\n" );
 	}
+
+{% endraw %}

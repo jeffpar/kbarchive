@@ -6,6 +6,8 @@ permalink: /kb/065/Q65066/
 
 ## Q65066: Mac Srv: Server INIT Beeps Twice on Start-Up
 
+{% raw %}
+
 	Article: Q65066
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -39,3 +41,5 @@ permalink: /kb/065/Q65066/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186559/
 
 ## Q186559: Common Question: Will Terminal Server Run on Windows NT 4.0?
 
+{% raw %}
+
 	Article: Q186559
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -40,3 +42,5 @@ permalink: /kb/186/Q186559/
 	
 	=============================================================================
 	
+
+{% endraw %}

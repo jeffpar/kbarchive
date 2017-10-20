@@ -6,6 +6,8 @@ permalink: /kb/192/Q192648/
 
 ## Q192648: FIX: Frame Disappears With Transparent Windowless Control
 
+{% raw %}
+
 	Article: Q192648
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -96,3 +98,5 @@ permalink: /kb/192/Q192648/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245452/
 
 ## Q245452: Streets &amp; Trips 2000: Unable to Update Construction Information
 
+{% raw %}
+
 	Article: Q245452
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -66,3 +68,5 @@ permalink: /kb/245/Q245452/
 	
 	=============================================================================
 	
+
+{% endraw %}

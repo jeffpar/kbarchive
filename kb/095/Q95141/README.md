@@ -6,6 +6,8 @@ permalink: /kb/095/Q95141/
 
 ## Q95141: Dvorak Keyboard Layouts
 
+{% raw %}
+
 	Article: Q95141
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11; Win2000:3.1,3.11,95; winnt:3.1,3.5,3.51
@@ -642,3 +644,5 @@ permalink: /kb/095/Q95141/
 	
 	=============================================================================
 	
+
+{% endraw %}

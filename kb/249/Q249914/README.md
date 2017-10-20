@@ -6,6 +6,8 @@ permalink: /kb/249/Q249914/
 
 ## Q249914: STOP 0x0000007b Inaccessible Boot Disk After Applying SSD 2.12c
 
+{% raw %}
+
 	Article: Q249914
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/249/Q249914/
 	
 	=============================================================================
 	
+
+{% endraw %}

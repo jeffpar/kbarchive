@@ -6,6 +6,8 @@ permalink: /kb/165/Q165803/
 
 ## Q165803: FIX: Error C2783 - Cannot Deduce Non-Type Template Parameter
 
+{% raw %}
+
 	Article: Q165803
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -92,3 +94,5 @@ permalink: /kb/165/Q165803/
 	
 	=============================================================================
 	
+
+{% endraw %}

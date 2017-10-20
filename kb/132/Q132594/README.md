@@ -6,6 +6,8 @@ permalink: /kb/132/Q132594/
 
 ## Q132594: Signature Font Printed Incorrectly to PostScript Printer
 
+{% raw %}
+
 	Article: Q132594
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -55,3 +57,5 @@ permalink: /kb/132/Q132594/
 	
 	=============================================================================
 	
+
+{% endraw %}

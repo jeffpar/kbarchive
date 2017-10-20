@@ -6,6 +6,8 @@ permalink: /kb/287/Q287056/
 
 ## Q287056: XFOR: Event ID 1027 During cc:Mail to Exchange Server 5.5 Migr.
 
+{% raw %}
+
 	Article: Q287056
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -106,3 +108,5 @@ permalink: /kb/287/Q287056/
 	
 	=============================================================================
 	
+
+{% endraw %}

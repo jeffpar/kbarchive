@@ -6,6 +6,8 @@ permalink: /kb/179/Q179052/
 
 ## Q179052: BUG: Transparent Label on Transparent Control Does Not Display
 
+{% raw %}
+
 	Article: Q179052
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/179/Q179052/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/219/Q219341/
 
 ## Q219341: Access Violation in Explorer When Using an Alternate Shell
 
+{% raw %}
+
 	Article: Q219341
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a
@@ -64,3 +66,5 @@ permalink: /kb/219/Q219341/
 	
 	=============================================================================
 	
+
+{% endraw %}

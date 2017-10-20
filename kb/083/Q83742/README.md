@@ -6,6 +6,8 @@ permalink: /kb/083/Q83742/
 
 ## Q83742: Autocad with SMARTDrive 4.0 Requires NewDX Patch
 
+{% raw %}
+
 	Article: Q83742
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/083/Q83742/
 	
 	=============================================================================
 	
+
+{% endraw %}

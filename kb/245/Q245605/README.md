@@ -6,6 +6,8 @@ permalink: /kb/245/Q245605/
 
 ## Q245605: Clusdisk.sys May Corrupt Pool Memory
 
+{% raw %}
+
 	Article: Q245605
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6
@@ -85,3 +87,5 @@ permalink: /kb/245/Q245605/
 	
 	=============================================================================
 	
+
+{% endraw %}

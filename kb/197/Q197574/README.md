@@ -6,6 +6,8 @@ permalink: /kb/197/Q197574/
 
 ## Q197574: Motocross Madness: New High Score Is Not Saved
 
+{% raw %}
+
 	Article: Q197574
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -73,3 +75,5 @@ permalink: /kb/197/Q197574/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/295/Q295329/
 
 ## Q295329: HOWTO: Renew VeriSign SSL Certificate with New Key in IIS 5.0 MM
 
+{% raw %}
+
 	Article: Q295329
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -72,3 +74,5 @@ permalink: /kb/295/Q295329/
 	
 	=============================================================================
 	
+
+{% endraw %}

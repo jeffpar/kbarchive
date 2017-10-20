@@ -6,6 +6,8 @@ permalink: /kb/162/Q162709/
 
 ## Q162709: PPT: How to Use the AddLine Method
 
+{% raw %}
+
 	Article: Q162709
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -218,3 +220,5 @@ permalink: /kb/162/Q162709/
 	
 	=============================================================================
 	
+
+{% endraw %}

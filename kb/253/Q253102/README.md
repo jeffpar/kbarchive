@@ -6,6 +6,8 @@ permalink: /kb/253/Q253102/
 
 ## Q253102: COMTI Returns ADO Recordset That Cannot Be Sorted
 
+{% raw %}
+
 	Article: Q253102
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0 SP3
@@ -67,3 +69,5 @@ permalink: /kb/253/Q253102/
 	
 	=============================================================================
 	
+
+{% endraw %}

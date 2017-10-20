@@ -6,6 +6,8 @@ permalink: /kb/231/Q231258/
 
 ## Q231258: SMS: Smsmon32.exe and Smswiz32.exe Hang Client Computers
 
+{% raw %}
+
 	Article: Q231258
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:95; winnt:2.0,4.0
@@ -84,3 +86,5 @@ permalink: /kb/231/Q231258/
 	
 	=============================================================================
 	
+
+{% endraw %}

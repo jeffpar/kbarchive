@@ -6,6 +6,8 @@ permalink: /kb/061/Q61968/
 
 ## Q61968: Enabling Source Browser Menu Related to .BSC &amp; .MAK Files
 
+{% raw %}
+
 	Article: Q61968
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -89,3 +91,5 @@ permalink: /kb/061/Q61968/
 	
 	=============================================================================
 	
+
+{% endraw %}

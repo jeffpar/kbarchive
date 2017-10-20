@@ -6,6 +6,8 @@ permalink: /kb/298/Q298124/
 
 ## Q298124: Using An msn.com or hotmail.com Account That Was Formerly A Paid
 
+{% raw %}
+
 	Article: Q298124
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -99,3 +101,5 @@ permalink: /kb/298/Q298124/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191763/
 
 ## Q191763: INFO: Abbreviating NOSHOW Clause May Result in an Error
 
+{% raw %}
+
 	Article: Q191763
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -54,3 +56,5 @@ permalink: /kb/191/Q191763/
 	
 	=============================================================================
 	
+
+{% endraw %}

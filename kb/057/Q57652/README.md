@@ -6,6 +6,8 @@ permalink: /kb/057/Q57652/
 
 ## Q57652: Example of Older FORTRAN Main to Newer C Procedure Call
 
+{% raw %}
+
 	Article: Q57652
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -76,3 +78,5 @@ permalink: /kb/057/Q57652/
 	For more information about FORTRAN and C mixed-language programming,
 	see the "Mixed-Language Programming Guide" in your compiler
 	documentation.
+
+{% endraw %}

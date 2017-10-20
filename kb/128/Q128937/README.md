@@ -6,6 +6,8 @@ permalink: /kb/128/Q128937/
 
 ## Q128937: Printing Seems Slow on LANtastic-Shared Printer
 
+{% raw %}
+
 	Article: Q128937
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/128/Q128937/
 	
 	=============================================================================
 	
+
+{% endraw %}

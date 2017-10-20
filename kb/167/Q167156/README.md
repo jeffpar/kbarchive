@@ -6,6 +6,8 @@ permalink: /kb/167/Q167156/
 
 ## Q167156: BUG: OLEISAPI2 Missing from Visual Basic 5.0 CD-ROM
 
+{% raw %}
+
 	Article: Q167156
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/167/Q167156/
 	
 	=============================================================================
 	
+
+{% endraw %}

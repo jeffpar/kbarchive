@@ -6,6 +6,8 @@ permalink: /kb/148/Q148325/
 
 ## Q148325: LocalLU Not Registered on Windows Client If Queued = Operator
 
+{% raw %}
+
 	Article: Q148325
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -110,3 +112,5 @@ permalink: /kb/148/Q148325/
 	
 	=============================================================================
 	
+
+{% endraw %}

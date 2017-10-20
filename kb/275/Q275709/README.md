@@ -6,6 +6,8 @@ permalink: /kb/275/Q275709/
 
 ## Q275709: Event 108 When You Cancel CPI-C CMALLC Verb
 
+{% raw %}
+
 	Article: Q275709
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -73,3 +75,5 @@ permalink: /kb/275/Q275709/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182083/
 
 ## Q182083: XFOR: Attachment Extensions Handled Differently in Exchange 5.5
 
+{% raw %}
+
 	Article: Q182083
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -107,3 +109,5 @@ permalink: /kb/182/Q182083/
 	
 	=============================================================================
 	
+
+{% endraw %}

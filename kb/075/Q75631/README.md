@@ -6,6 +6,8 @@ permalink: /kb/075/Q75631/
 
 ## Q75631: XLTABLE Clipboard Format Documentation Available
 
+{% raw %}
+
 	Article: Q75631
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -123,3 +125,5 @@ permalink: /kb/075/Q75631/
 	
 	=============================================================================
 	
+
+{% endraw %}

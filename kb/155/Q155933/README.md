@@ -6,6 +6,8 @@ permalink: /kb/155/Q155933/
 
 ## Q155933: BUG: Setting Grid's MousePointer Property to 14 Causes Error
 
+{% raw %}
+
 	Article: Q155933
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -63,3 +65,5 @@ permalink: /kb/155/Q155933/
 	
 	=============================================================================
 	
+
+{% endraw %}

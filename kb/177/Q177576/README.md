@@ -6,6 +6,8 @@ permalink: /kb/177/Q177576/
 
 ## Q177576: Color Printing Problems with Windows NT 4.0
 
+{% raw %}
+
 	Article: Q177576
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -98,3 +100,5 @@ permalink: /kb/177/Q177576/
 	
 	=============================================================================
 	
+
+{% endraw %}

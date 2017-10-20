@@ -6,6 +6,8 @@ permalink: /kb/259/Q259616/
 
 ## Q259616: XFOR: Outlook Rules May Not Start on Internet Mail
 
+{% raw %}
+
 	Article: Q259616
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -144,3 +146,5 @@ permalink: /kb/259/Q259616/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/102/Q102590/
 
 ## Q102590: Using ReplaceItem() Command in Program Manager DDE
 
+{% raw %}
+
 	Article: Q102590
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -66,3 +68,5 @@ permalink: /kb/102/Q102590/
 	
 	=============================================================================
 	
+
+{% endraw %}

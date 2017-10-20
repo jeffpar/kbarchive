@@ -6,6 +6,8 @@ permalink: /kb/239/Q239064/
 
 ## Q239064: XADM: Cannot Communicate with Exchange Mailbox Manager Service
 
+{% raw %}
+
 	Article: Q239064
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -60,3 +62,5 @@ permalink: /kb/239/Q239064/
 	
 	=============================================================================
 	
+
+{% endraw %}

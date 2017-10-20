@@ -6,6 +6,8 @@ permalink: /kb/152/Q152693/
 
 ## Q152693: BUG: Component Manager Closes Down When Invalid Date Entered
 
+{% raw %}
+
 	Article: Q152693
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -70,3 +72,5 @@ permalink: /kb/152/Q152693/
 	
 	=============================================================================
 	
+
+{% endraw %}

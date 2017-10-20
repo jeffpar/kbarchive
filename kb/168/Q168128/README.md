@@ -6,6 +6,8 @@ permalink: /kb/168/Q168128/
 
 ## Q168128: XADM: Err Msg: DS_E_COMMUNICATIONS_PROBLEM
 
+{% raw %}
+
 	Article: Q168128
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -77,3 +79,5 @@ permalink: /kb/168/Q168128/
 	
 	=============================================================================
 	
+
+{% endraw %}

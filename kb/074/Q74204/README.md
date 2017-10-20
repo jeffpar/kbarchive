@@ -6,6 +6,8 @@ permalink: /kb/074/Q74204/
 
 ## Q74204: MS-DOS CHKDSK Does Not Show Disk Label As a Hidden File
 
+{% raw %}
+
 	Article: Q74204
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -85,3 +87,5 @@ permalink: /kb/074/Q74204/
 	
 	=============================================================================
 	
+
+{% endraw %}

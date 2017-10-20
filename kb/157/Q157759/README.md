@@ -6,6 +6,8 @@ permalink: /kb/157/Q157759/
 
 ## Q157759: FIX: Calendar Control Help File Contains an Invalid Jump
 
+{% raw %}
+
 	Article: Q157759
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -83,3 +85,5 @@ permalink: /kb/157/Q157759/
 	
 	=============================================================================
 	
+
+{% endraw %}

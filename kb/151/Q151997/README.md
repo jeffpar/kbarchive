@@ -6,6 +6,8 @@ permalink: /kb/151/Q151997/
 
 ## Q151997: DECMON Can Cause Spoolss to Generate an Access Violation
 
+{% raw %}
+
 	Article: Q151997
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -125,3 +127,5 @@ permalink: /kb/151/Q151997/
 	
 	=============================================================================
 	
+
+{% endraw %}

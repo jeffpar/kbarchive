@@ -6,6 +6,8 @@ permalink: /kb/078/Q78235/
 
 ## Q78235: Bookshelf for Windows 1991: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q78235
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1991 edition
@@ -204,3 +206,5 @@ permalink: /kb/078/Q78235/
 	
 	=============================================================================
 	
+
+{% endraw %}

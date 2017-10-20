@@ -6,6 +6,8 @@ permalink: /kb/172/Q172378/
 
 ## Q172378: Error Message: Error Loading. You Must Reinstall Windows.
 
+{% raw %}
+
 	Article: Q172378
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -54,3 +56,5 @@ permalink: /kb/172/Q172378/
 	
 	=============================================================================
 	
+
+{% endraw %}

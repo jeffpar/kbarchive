@@ -6,6 +6,8 @@ permalink: /kb/106/Q106019/
 
 ## Q106019: SoundScapes: Playing Sounds from Any Directory Using WSS 1.0x
 
+{% raw %}
+
 	Article: Q106019
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.00 1.00a
@@ -88,3 +90,5 @@ permalink: /kb/106/Q106019/
 	
 	=============================================================================
 	
+
+{% endraw %}

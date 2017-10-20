@@ -6,6 +6,8 @@ permalink: /kb/181/Q181859/
 
 ## Q181859: Stop 0x0000000A When Using UltraBac to Back Up a SQL Server
 
+{% raw %}
+
 	Article: Q181859
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/181/Q181859/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/318/Q318985/
 
 ## Q318985: FIX: Error With Left Parenthesis in CREATE SQL VIEW Command
 
+{% raw %}
+
 	Article: Q318985
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -73,3 +75,5 @@ permalink: /kb/318/Q318985/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161220/
 
 ## Q161220: Removing Unknown Device in Device Manager Hangs Computer
 
+{% raw %}
+
 	Article: Q161220
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -65,3 +67,5 @@ permalink: /kb/161/Q161220/
 	
 	=============================================================================
 	
+
+{% endraw %}

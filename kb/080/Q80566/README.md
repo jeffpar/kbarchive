@@ -6,6 +6,8 @@ permalink: /kb/080/Q80566/
 
 ## Q80566: MS-DOS Shell Flashes with Metheus Display Card
 
+{% raw %}
+
 	Article: Q80566
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0
@@ -69,3 +71,5 @@ permalink: /kb/080/Q80566/
 	
 	=============================================================================
 	
+
+{% endraw %}

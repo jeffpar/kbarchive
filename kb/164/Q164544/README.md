@@ -6,6 +6,8 @@ permalink: /kb/164/Q164544/
 
 ## Q164544: SMS: Processor Name Is Not Consistent for All Platforms
 
+{% raw %}
+
 	Article: Q164544
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -48,3 +50,5 @@ permalink: /kb/164/Q164544/
 	
 	=============================================================================
 	
+
+{% endraw %}

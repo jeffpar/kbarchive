@@ -6,6 +6,8 @@ permalink: /kb/149/Q149826/
 
 ## Q149826: Cannot Add The Microsoft Network Online Service to Profile
 
+{% raw %}
+
 	Article: Q149826
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5,95
@@ -105,3 +107,5 @@ permalink: /kb/149/Q149826/
 	
 	=============================================================================
 	
+
+{% endraw %}

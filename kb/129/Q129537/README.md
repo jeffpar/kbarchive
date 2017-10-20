@@ -6,6 +6,8 @@ permalink: /kb/129/Q129537/
 
 ## Q129537: PRB: APPEND BLANK Fires Field-Level Validation
 
+{% raw %}
+
 	Article: Q129537
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -90,3 +92,5 @@ permalink: /kb/129/Q129537/
 	
 	=============================================================================
 	
+
+{% endraw %}

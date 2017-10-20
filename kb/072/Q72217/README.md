@@ -6,6 +6,8 @@ permalink: /kb/072/Q72217/
 
 ## Q72217: Windows Err Msg: Insufficient Memory to Run App (dBASE IV)
 
+{% raw %}
+
 	Article: Q72217
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/072/Q72217/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148603/
 
 ## Q148603: Invalid Sense Code Returned In APPC Allocate Response
 
+{% raw %}
+
 	Article: Q148603
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -66,3 +68,5 @@ permalink: /kb/148/Q148603/
 	
 	=============================================================================
 	
+
+{% endraw %}

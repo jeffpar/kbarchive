@@ -6,6 +6,8 @@ permalink: /kb/241/Q241850/
 
 ## Q241850: PRB: Call to CToolBarCtrl::Customize() Does Not Keep Dialog Box
 
+{% raw %}
+
 	Article: Q241850
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.2,5.0,6.0
@@ -111,3 +113,5 @@ permalink: /kb/241/Q241850/
 	
 	=============================================================================
 	
+
+{% endraw %}

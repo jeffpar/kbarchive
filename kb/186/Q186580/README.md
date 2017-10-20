@@ -6,6 +6,8 @@ permalink: /kb/186/Q186580/
 
 ## Q186580: XFOR: OV/VM Connector Fails to Return NDR for Message Addressed
 
+{% raw %}
+
 	Article: Q186580
 	Product(s): Microsoft Exchange
 	Version(s): 3.2, 5.5
@@ -82,3 +84,5 @@ permalink: /kb/186/Q186580/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82374/
 
 ## Q82374: Incorrect Indentation when Pasting Text into Virtual Machine
 
+{% raw %}
+
 	Article: Q82374
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/082/Q82374/
 	
 	=============================================================================
 	
+
+{% endraw %}

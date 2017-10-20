@@ -6,6 +6,8 @@ permalink: /kb/241/Q241037/
 
 ## Q241037: XADM: Local.in.txt Is Needed When Using Mixer
 
+{% raw %}
+
 	Article: Q241037
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -51,3 +53,5 @@ permalink: /kb/241/Q241037/
 	
 	=============================================================================
 	
+
+{% endraw %}

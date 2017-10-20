@@ -6,6 +6,8 @@ permalink: /kb/238/Q238762/
 
 ## Q238762: Software Inventory Creation Date Is Incorrect in SMS Database
 
+{% raw %}
+
 	Article: Q238762
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -54,3 +56,5 @@ permalink: /kb/238/Q238762/
 	
 	=============================================================================
 	
+
+{% endraw %}

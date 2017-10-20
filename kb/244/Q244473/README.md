@@ -6,6 +6,8 @@ permalink: /kb/244/Q244473/
 
 ## Q244473: XFOR: Foreign Connector Updates in Service Pack 3
 
+{% raw %}
+
 	Article: Q244473
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -408,3 +410,5 @@ permalink: /kb/244/Q244473/
 	
 	=============================================================================
 	
+
+{% endraw %}

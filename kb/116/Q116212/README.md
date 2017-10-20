@@ -6,6 +6,8 @@ permalink: /kb/116/Q116212/
 
 ## Q116212: FIX: Assertion Using Multiple %1 (or %2) in AfxFormatString1
 
+{% raw %}
+
 	Article: Q116212
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0,1.5,1.51,1.52; winnt:1.0
@@ -119,3 +121,5 @@ permalink: /kb/116/Q116212/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86167/
 
 ## Q86167: Paintbrush Captures Always on Top Application in Image
 
+{% raw %}
+
 	Article: Q86167
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/086/Q86167/
 	
 	=============================================================================
 	
+
+{% endraw %}

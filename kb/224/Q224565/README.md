@@ -6,6 +6,8 @@ permalink: /kb/224/Q224565/
 
 ## Q224565: XADM: Addresses Are Displayed with a Double / Character in DDA
 
+{% raw %}
+
 	Article: Q224565
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -76,3 +78,5 @@ permalink: /kb/224/Q224565/
 	
 	=============================================================================
 	
+
+{% endraw %}

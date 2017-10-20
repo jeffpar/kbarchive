@@ -6,6 +6,8 @@ permalink: /kb/222/Q222005/
 
 ## Q222005: BUG: LNK2001 When Building Applications for MIPS Palm-size PC Th
 
+{% raw %}
+
 	Article: Q222005
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -73,3 +75,5 @@ permalink: /kb/222/Q222005/
 	
 	=============================================================================
 	
+
+{% endraw %}

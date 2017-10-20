@@ -6,6 +6,8 @@ permalink: /kb/263/Q263715/
 
 ## Q263715: BUG: Incorrect Code with Unsigned Integer Operand &gt; 0x80000000
 
+{% raw %}
+
 	Article: Q263715
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -86,3 +88,5 @@ permalink: /kb/263/Q263715/
 	
 	=============================================================================
 	
+
+{% endraw %}

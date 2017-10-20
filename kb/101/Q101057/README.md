@@ -6,6 +6,8 @@ permalink: /kb/101/Q101057/
 
 ## Q101057: PRB: &quot;Variable Not Found&quot; or Public Variables Acting Private
 
+{% raw %}
+
 	Article: Q101057
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -74,3 +76,5 @@ permalink: /kb/101/Q101057/
 	
 	=============================================================================
 	
+
+{% endraw %}

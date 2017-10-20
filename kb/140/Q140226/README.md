@@ -6,6 +6,8 @@ permalink: /kb/140/Q140226/
 
 ## Q140226: Encarta 96 World Atlas: Unable to Continue Running...
 
+{% raw %}
+
 	Article: Q140226
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -140,3 +142,5 @@ permalink: /kb/140/Q140226/
 	
 	=============================================================================
 	
+
+{% endraw %}

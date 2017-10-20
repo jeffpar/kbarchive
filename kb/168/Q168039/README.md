@@ -6,6 +6,8 @@ permalink: /kb/168/Q168039/
 
 ## Q168039: PRB: Lockscreen with Assert Dialog Causes Problems with Controls
 
+{% raw %}
+
 	Article: Q168039
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a
@@ -126,3 +128,5 @@ permalink: /kb/168/Q168039/
 	
 	=============================================================================
 	
+
+{% endraw %}

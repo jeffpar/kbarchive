@@ -6,6 +6,8 @@ permalink: /kb/089/Q89674/
 
 ## Q89674: Running Multi-user FoxBASE+ Code on a Stand-alone Machine
 
+{% raw %}
+
 	Article: Q89674
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -51,3 +53,5 @@ permalink: /kb/089/Q89674/
 	
 	=============================================================================
 	
+
+{% endraw %}

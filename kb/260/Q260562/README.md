@@ -6,6 +6,8 @@ permalink: /kb/260/Q260562/
 
 ## Q260562: XIMS: Routing Restrictions: &quot;and&quot; or &quot;or&quot; Options
 
+{% raw %}
+
 	Article: Q260562
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -56,3 +58,5 @@ permalink: /kb/260/Q260562/
 	
 	=============================================================================
 	
+
+{% endraw %}

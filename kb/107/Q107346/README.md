@@ -6,6 +6,8 @@ permalink: /kb/107/Q107346/
 
 ## Q107346: WFWG 3.11: Hardware Compatibility List - Modems for AWFAX
 
+{% raw %}
+
 	Article: Q107346
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -224,3 +226,5 @@ permalink: /kb/107/Q107346/
 	
 	=============================================================================
 	
+
+{% endraw %}

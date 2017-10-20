@@ -6,6 +6,8 @@ permalink: /kb/219/Q219602/
 
 ## Q219602: Random Dr. Watson Errors in Services.exe
 
+{% raw %}
+
 	Article: Q219602
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -156,3 +158,5 @@ permalink: /kb/219/Q219602/
 	
 	=============================================================================
 	
+
+{% endraw %}

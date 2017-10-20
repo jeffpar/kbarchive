@@ -6,6 +6,8 @@ permalink: /kb/201/Q201390/
 
 ## Q201390: PRB: CDynamicAccesor Does Not Handle String Columns Correctly
 
+{% raw %}
+
 	Article: Q201390
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -119,3 +121,5 @@ permalink: /kb/201/Q201390/
 	
 	=============================================================================
 	
+
+{% endraw %}

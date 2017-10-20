@@ -6,6 +6,8 @@ permalink: /kb/151/Q151042/
 
 ## Q151042: FP: FrontPage Personal Web Server Supports Standard CGI Only
 
+{% raw %}
+
 	Article: Q151042
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.1,97
@@ -48,3 +50,5 @@ permalink: /kb/151/Q151042/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125751/
 
 ## Q125751: AUDIT16.EXE Fails on OS/2 Client Computers
 
+{% raw %}
+
 	Article: Q125751
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -53,3 +55,5 @@ permalink: /kb/125/Q125751/
 	
 	=============================================================================
 	
+
+{% endraw %}

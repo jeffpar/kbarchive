@@ -6,6 +6,8 @@ permalink: /kb/131/Q131946/
 
 ## Q131946: PRB: Bad Pointer from RUNTIME_CLASS with Class from _AFXDLL
 
+{% raw %}
+
 	Article: Q131946
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,4.0
@@ -153,3 +155,5 @@ permalink: /kb/131/Q131946/
 	
 	=============================================================================
 	
+
+{% endraw %}

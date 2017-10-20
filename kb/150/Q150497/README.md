@@ -6,6 +6,8 @@ permalink: /kb/150/Q150497/
 
 ## Q150497: How to Repair Windows NT System Files Without a CD-ROM Attached
 
+{% raw %}
+
 	Article: Q150497
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -199,3 +201,5 @@ permalink: /kb/150/Q150497/
 	
 	=============================================================================
 	
+
+{% endraw %}

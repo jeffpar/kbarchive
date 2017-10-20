@@ -6,6 +6,8 @@ permalink: /kb/241/Q241346/
 
 ## Q241346: Compaq Array Configuration Tool May Not Work on Terminal Server
 
+{% raw %}
+
 	Article: Q241346
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/241/Q241346/
 	
 	=============================================================================
 	
+
+{% endraw %}

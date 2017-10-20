@@ -6,6 +6,8 @@ permalink: /kb/125/Q125489/
 
 ## Q125489: PC Win: Err Msg: MMFCLEAN.EXE Has Stopped Responding...
 
+{% raw %}
+
 	Article: Q125489
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -86,3 +88,5 @@ permalink: /kb/125/Q125489/
 	
 	=============================================================================
 	
+
+{% endraw %}

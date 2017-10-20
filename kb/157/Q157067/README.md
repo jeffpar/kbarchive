@@ -6,6 +6,8 @@ permalink: /kb/157/Q157067/
 
 ## Q157067: SMS: Network Adapter Card Information Not Detected
 
+{% raw %}
+
 	Article: Q157067
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -68,3 +70,5 @@ permalink: /kb/157/Q157067/
 	
 	=============================================================================
 	
+
+{% endraw %}

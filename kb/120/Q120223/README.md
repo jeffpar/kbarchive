@@ -6,6 +6,8 @@ permalink: /kb/120/Q120223/
 
 ## Q120223: Sending Messages from WinPopup to NWPOPUP in Windows 95
 
+{% raw %}
+
 	Article: Q120223
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/120/Q120223/
 	
 	=============================================================================
 	
+
+{% endraw %}

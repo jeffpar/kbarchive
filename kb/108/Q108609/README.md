@@ -6,6 +6,8 @@ permalink: /kb/108/Q108609/
 
 ## Q108609: BUG: SET MESSAGE WINDOW Command Not Working Correctly
 
+{% raw %}
+
 	Article: Q108609
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a,2.5b; WINDOWS:2.5,2.5a,2.5b,3.0,5.0,5.0a
@@ -62,3 +64,5 @@ permalink: /kb/108/Q108609/
 	
 	=============================================================================
 	
+
+{% endraw %}

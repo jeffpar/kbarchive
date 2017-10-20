@@ -6,6 +6,8 @@ permalink: /kb/074/Q74177/
 
 ## Q74177: Troubleshooting Problems with MS-DOS Shell
 
+{% raw %}
+
 	Article: Q74177
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -104,3 +106,5 @@ permalink: /kb/074/Q74177/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/230/Q230110/
 
 ## Q230110: Default Newsgroups Installed with NNTP Server
 
+{% raw %}
+
 	Article: Q230110
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/230/Q230110/
 	
 	=============================================================================
 	
+
+{% endraw %}

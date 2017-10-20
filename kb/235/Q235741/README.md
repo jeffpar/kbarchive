@@ -6,6 +6,8 @@ permalink: /kb/235/Q235741/
 
 ## Q235741: SMSINST: Installer App Calls CTL3DV2.DLL on NTW Unchecked
 
+{% raw %}
+
 	Article: Q235741
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0; winnt:2.0
@@ -59,3 +61,5 @@ permalink: /kb/235/Q235741/
 	
 	=============================================================================
 	
+
+{% endraw %}

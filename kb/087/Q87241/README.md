@@ -6,6 +6,8 @@ permalink: /kb/087/Q87241/
 
 ## Q87241: Crash or Inappropriate Sounds Occur with Sound Blaster and 486
 
+{% raw %}
+
 	Article: Q87241
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/087/Q87241/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136990/
 
 ## Q136990: ATDISK Driver Fails to Start After Upgrade
 
+{% raw %}
+
 	Article: Q136990
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -59,3 +61,5 @@ permalink: /kb/136/Q136990/
 	
 	=============================================================================
 	
+
+{% endraw %}

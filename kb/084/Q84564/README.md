@@ -6,6 +6,8 @@ permalink: /kb/084/Q84564/
 
 ## Q84564: Windows Err Msg: Setup Error #S019. Cannot Create... WIN.COM
 
+{% raw %}
+
 	Article: Q84564
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -86,3 +88,5 @@ permalink: /kb/084/Q84564/
 	
 	=============================================================================
 	
+
+{% endraw %}

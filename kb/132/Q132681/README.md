@@ -6,6 +6,8 @@ permalink: /kb/132/Q132681/
 
 ## Q132681: PC Adm: How to Reformat Full Name Field in PO Address List
 
+{% raw %}
+
 	Article: Q132681
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -86,3 +88,5 @@ permalink: /kb/132/Q132681/
 	
 	=============================================================================
 	
+
+{% endraw %}

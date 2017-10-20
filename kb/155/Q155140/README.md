@@ -6,6 +6,8 @@ permalink: /kb/155/Q155140/
 
 ## Q155140: Encarta 96: Contents of the March 1996 Yearbook Update
 
+{% raw %}
+
 	Article: Q155140
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :1996 edition
@@ -153,3 +155,5 @@ permalink: /kb/155/Q155140/
 	
 	=============================================================================
 	
+
+{% endraw %}

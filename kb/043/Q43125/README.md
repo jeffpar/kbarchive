@@ -6,6 +6,8 @@ permalink: /kb/043/Q43125/
 
 ## Q43125: Select Whole Word Search to Find Linker Errors
 
+{% raw %}
+
 	Article: Q43125
 	Product(s): See article
 	Version(s): 2.00
@@ -58,3 +60,5 @@ permalink: /kb/043/Q43125/
 	error L2029 : <name> : unresolved external
 	error L2025 : <name> : symbol defined more than once
 	error L2044 : <name> : symbol multiply defined, use /NOE
+
+{% endraw %}

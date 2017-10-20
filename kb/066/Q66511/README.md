@@ -6,6 +6,8 @@ permalink: /kb/066/Q66511/
 
 ## Q66511: SHARE Does Not Need to Be Loaded in MS-DOS 5.0 or Later
 
+{% raw %}
+
 	Article: Q66511
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -42,3 +44,5 @@ permalink: /kb/066/Q66511/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156895/
 
 ## Q156895: XCLN: Auto Forward Does Not Work with Private Mail
 
+{% raw %}
+
 	Article: Q156895
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0; :4.0
@@ -44,3 +46,5 @@ permalink: /kb/156/Q156895/
 	
 	=============================================================================
 	
+
+{% endraw %}

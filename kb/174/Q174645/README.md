@@ -6,6 +6,8 @@ permalink: /kb/174/Q174645/
 
 ## Q174645: SNA Manager Fails With Access Violation in MFC40!Ordinal1375
 
+{% raw %}
+
 	Article: Q174645
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -108,3 +110,5 @@ permalink: /kb/174/Q174645/
 	
 	=============================================================================
 	
+
+{% endraw %}

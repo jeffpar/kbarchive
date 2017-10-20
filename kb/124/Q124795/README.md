@@ -6,6 +6,8 @@ permalink: /kb/124/Q124795/
 
 ## Q124795: Cannot Start Windows NT on Notebook with Docking Station
 
+{% raw %}
+
 	Article: Q124795
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/124/Q124795/
 	
 	=============================================================================
 	
+
+{% endraw %}

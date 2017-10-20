@@ -6,6 +6,8 @@ permalink: /kb/093/Q93588/
 
 ## Q93588: PPT: EPS Graphic Displays as Mostly Empty Frame
 
+{% raw %}
+
 	Article: Q93588
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:2.0,3.0,4.0,4.0a,4.0c,7.0
@@ -80,3 +82,5 @@ permalink: /kb/093/Q93588/
 	
 	=============================================================================
 	
+
+{% endraw %}

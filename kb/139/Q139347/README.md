@@ -6,6 +6,8 @@ permalink: /kb/139/Q139347/
 
 ## Q139347: How to Delete a Control from a Column in a Grid
 
+{% raw %}
+
 	Article: Q139347
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/139/Q139347/
 	
 	=============================================================================
 	
+
+{% endraw %}

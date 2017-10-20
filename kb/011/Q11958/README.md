@@ -6,6 +6,8 @@ permalink: /kb/011/Q11958/
 
 ## Q11958: Tab.exe Demonstrates Modal and Modeless Dialog Boxes
 
+{% raw %}
+
 	Article: Q11958
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:
@@ -55,3 +57,5 @@ permalink: /kb/011/Q11958/
 	
 	=============================================================================
 	
+
+{% endraw %}

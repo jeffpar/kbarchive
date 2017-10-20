@@ -6,6 +6,8 @@ permalink: /kb/074/Q74451/
 
 ## Q74451: Plus Hardcard II Is Very Slow with EMM386
 
+{% raw %}
+
 	Article: Q74451
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0
@@ -57,3 +59,5 @@ permalink: /kb/074/Q74451/
 	
 	=============================================================================
 	
+
+{% endraw %}

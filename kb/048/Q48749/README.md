@@ -6,6 +6,8 @@ permalink: /kb/048/Q48749/
 
 ## Q48749: Ocean 300 Feet Above Sea Level North of Port Angeles
 
+{% raw %}
+
 	Article: Q48749
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/048/Q48749/
 	
 	=============================================================================
 	
+
+{% endraw %}

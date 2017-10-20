@@ -6,6 +6,8 @@ permalink: /kb/123/Q123322/
 
 ## Q123322: No Access to COM Ports with SuperVoice 2.0b &amp; RHICOMM.DRV
 
+{% raw %}
+
 	Article: Q123322
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/123/Q123322/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/232/Q232383/
 
 ## Q232383: XGEN: The Exchange Server 5.5 Evaluation and Migration Kit
 
+{% raw %}
+
 	Article: Q232383
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -131,3 +133,5 @@ permalink: /kb/232/Q232383/
 	
 	=============================================================================
 	
+
+{% endraw %}

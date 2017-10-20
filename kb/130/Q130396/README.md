@@ -6,6 +6,8 @@ permalink: /kb/130/Q130396/
 
 ## Q130396: PC NTMMTA: Err Msg: Unable to Find Specified Instance INI...
 
+{% raw %}
+
 	Article: Q130396
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -94,3 +96,5 @@ permalink: /kb/130/Q130396/
 	
 	=============================================================================
 	
+
+{% endraw %}

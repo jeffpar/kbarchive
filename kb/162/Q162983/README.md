@@ -6,6 +6,8 @@ permalink: /kb/162/Q162983/
 
 ## Q162983: WD97: Background Sound Continues to Play
 
+{% raw %}
+
 	Article: Q162983
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -49,3 +51,5 @@ permalink: /kb/162/Q162983/
 	
 	=============================================================================
 	
+
+{% endraw %}

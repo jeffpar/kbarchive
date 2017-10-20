@@ -6,6 +6,8 @@ permalink: /kb/156/Q156644/
 
 ## Q156644: Deadly Tide: Setup Troubleshooting
 
+{% raw %}
+
 	Article: Q156644
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -194,3 +196,5 @@ permalink: /kb/156/Q156644/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131592/
 
 ## Q131592: Mac Encarta: Cannot Check Spelling
 
+{% raw %}
+
 	Article: Q131592
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition; MACINTOSH:
@@ -41,3 +43,5 @@ permalink: /kb/131/Q131592/
 	
 	=============================================================================
 	
+
+{% endraw %}

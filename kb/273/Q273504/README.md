@@ -6,6 +6,8 @@ permalink: /kb/273/Q273504/
 
 ## Q273504: SNMP Trap Is Not Sent Over a RAS Client Connection
 
+{% raw %}
+
 	Article: Q273504
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -74,3 +76,5 @@ permalink: /kb/273/Q273504/
 	
 	=============================================================================
 	
+
+{% endraw %}

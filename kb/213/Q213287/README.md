@@ -6,6 +6,8 @@ permalink: /kb/213/Q213287/
 
 ## Q213287: SMS: NetWare Logon Manager Creates Copies of Net&#36;log.dat File
 
+{% raw %}
+
 	Article: Q213287
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -49,3 +51,5 @@ permalink: /kb/213/Q213287/
 	
 	=============================================================================
 	
+
+{% endraw %}

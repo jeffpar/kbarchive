@@ -6,6 +6,8 @@ permalink: /kb/245/Q245321/
 
 ## Q245321: SMS: &quot;Stop 0x0000000A&quot; with SMS Remote Control Installed
 
+{% raw %}
+
 	Article: Q245321
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -123,3 +125,5 @@ permalink: /kb/245/Q245321/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143388/
 
 ## Q143388: 16-bit Windows Programs May Not Start
 
+{% raw %}
+
 	Article: Q143388
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51
@@ -70,3 +72,5 @@ permalink: /kb/143/Q143388/
 	
 	=============================================================================
 	
+
+{% endraw %}

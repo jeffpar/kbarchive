@@ -6,6 +6,8 @@ permalink: /kb/085/Q85481/
 
 ## Q85481: Keyboard Problems in Windows 3.1
 
+{% raw %}
+
 	Article: Q85481
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/085/Q85481/
 	
 	=============================================================================
 	
+
+{% endraw %}

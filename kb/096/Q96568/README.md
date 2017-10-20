@@ -6,6 +6,8 @@ permalink: /kb/096/Q96568/
 
 ## Q96568: Using SQL Server over Novell NetWare with WFWG
 
+{% raw %}
+
 	Article: Q96568
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/096/Q96568/
 	
 	=============================================================================
 	
+
+{% endraw %}

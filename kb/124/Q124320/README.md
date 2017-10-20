@@ -6,6 +6,8 @@ permalink: /kb/124/Q124320/
 
 ## Q124320: BUG: No Error Message When Changing Qualifier on 2nd hstmt
 
+{% raw %}
+
 	Article: Q124320
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -83,3 +85,5 @@ permalink: /kb/124/Q124320/
 	
 	=============================================================================
 	
+
+{% endraw %}

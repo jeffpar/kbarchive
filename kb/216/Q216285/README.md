@@ -6,6 +6,8 @@ permalink: /kb/216/Q216285/
 
 ## Q216285: HOW TO: Display a Picture by Using an Access Database in FP2000
 
+{% raw %}
+
 	Article: Q216285
 	Product(s): Word Front Page
 	Version(s): 
@@ -199,3 +201,5 @@ permalink: /kb/216/Q216285/
 	
 	=============================================================================
 	
+
+{% endraw %}

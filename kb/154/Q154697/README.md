@@ -6,6 +6,8 @@ permalink: /kb/154/Q154697/
 
 ## Q154697: Some NE2000 Adapters on Windows 95 Cause Disk or Network Error
 
+{% raw %}
+
 	Article: Q154697
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -86,3 +88,5 @@ permalink: /kb/154/Q154697/
 	
 	=============================================================================
 	
+
+{% endraw %}

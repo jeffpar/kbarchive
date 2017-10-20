@@ -6,6 +6,8 @@ permalink: /kb/222/Q222970/
 
 ## Q222970: List of Bugs Fixed in Terminal Server Edition
 
+{% raw %}
+
 	Article: Q222970
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4
@@ -119,3 +121,5 @@ permalink: /kb/222/Q222970/
 	
 	=============================================================================
 	
+
+{% endraw %}

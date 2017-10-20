@@ -6,6 +6,8 @@ permalink: /kb/264/Q264955/
 
 ## Q264955: XADM: Installing Exchange Administrator Program on Windows 2000
 
+{% raw %}
+
 	Article: Q264955
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -63,3 +65,5 @@ permalink: /kb/264/Q264955/
 	
 	=============================================================================
 	
+
+{% endraw %}

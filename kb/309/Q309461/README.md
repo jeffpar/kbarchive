@@ -6,6 +6,8 @@ permalink: /kb/309/Q309461/
 
 ## Q309461: IIS: Applications That Require or Use IIS
 
+{% raw %}
+
 	Article: Q309461
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -167,3 +169,5 @@ permalink: /kb/309/Q309461/
 	
 	=============================================================================
 	
+
+{% endraw %}

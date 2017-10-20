@@ -6,6 +6,8 @@ permalink: /kb/037/Q37355/
 
 ## Q37355: Loadtime DLL Initialization for C 5.10
 
+{% raw %}
+
 	Article: Q37355
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -44,3 +46,5 @@ permalink: /kb/037/Q37355/
 	CRTDLL.ARC. This file can be found in the Software Library by
 	searching on the filename CRTDLL.ARC, the Q number of this article, or
 	S12104.
+
+{% endraw %}

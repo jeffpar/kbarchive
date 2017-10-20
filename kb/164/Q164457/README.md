@@ -6,6 +6,8 @@ permalink: /kb/164/Q164457/
 
 ## Q164457: XFOR: IMC Returns NDR When Sending to &quot;Specify by E-mail Domain&quot;
 
+{% raw %}
+
 	Article: Q164457
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/164/Q164457/
 	
 	=============================================================================
 	
+
+{% endraw %}

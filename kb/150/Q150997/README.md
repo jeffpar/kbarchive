@@ -6,6 +6,8 @@ permalink: /kb/150/Q150997/
 
 ## Q150997: Opening Multiple Online Viewer Titles May Cause Hang
 
+{% raw %}
+
 	Article: Q150997
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -48,3 +50,5 @@ permalink: /kb/150/Q150997/
 	
 	=============================================================================
 	
+
+{% endraw %}

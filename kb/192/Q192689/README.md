@@ -6,6 +6,8 @@ permalink: /kb/192/Q192689/
 
 ## Q192689: HOWTO: Get UNC Path From a Mapped Network Share's Drive Letter
 
+{% raw %}
+
 	Article: Q192689
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -176,3 +178,5 @@ permalink: /kb/192/Q192689/
 	
 	=============================================================================
 	
+
+{% endraw %}

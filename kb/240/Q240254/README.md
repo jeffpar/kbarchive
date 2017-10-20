@@ -6,6 +6,8 @@ permalink: /kb/240/Q240254/
 
 ## Q240254: Only Drive C Is Available When You Add Fonts
 
+{% raw %}
+
 	Article: Q240254
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/240/Q240254/
 	
 	=============================================================================
 	
+
+{% endraw %}

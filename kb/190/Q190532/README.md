@@ -6,6 +6,8 @@ permalink: /kb/190/Q190532/
 
 ## Q190532: Import COBOL Wizard Cannot Select LL, ZZ, TRANCODE (IMS)
 
+{% raw %}
+
 	Article: Q190532
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0 SP1
@@ -55,3 +57,5 @@ permalink: /kb/190/Q190532/
 	
 	=============================================================================
 	
+
+{% endraw %}

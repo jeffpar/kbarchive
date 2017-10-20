@@ -6,6 +6,8 @@ permalink: /kb/050/Q50237/
 
 ## Q50237: Mac Form: Hiding a Field on a Custom Form
 
+{% raw %}
+
 	Article: Q50237
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -48,3 +50,5 @@ permalink: /kb/050/Q50237/
 	
 	=============================================================================
 	
+
+{% endraw %}

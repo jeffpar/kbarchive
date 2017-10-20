@@ -6,6 +6,8 @@ permalink: /kb/190/Q190462/
 
 ## Q190462: PRB: Insufficient Memory Message Running a FoxPro EXE
 
+{% raw %}
+
 	Article: Q190462
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -212,3 +214,5 @@ permalink: /kb/190/Q190462/
 	
 	=============================================================================
 	
+
+{% endraw %}

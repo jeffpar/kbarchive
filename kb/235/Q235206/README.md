@@ -6,6 +6,8 @@ permalink: /kb/235/Q235206/
 
 ## Q235206: SMS: BackOffice Resource Kit 4.5 Lists Incorrect File Locations
 
+{% raw %}
+
 	Article: Q235206
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -46,3 +48,5 @@ permalink: /kb/235/Q235206/
 	
 	=============================================================================
 	
+
+{% endraw %}

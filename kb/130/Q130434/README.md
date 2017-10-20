@@ -6,6 +6,8 @@ permalink: /kb/130/Q130434/
 
 ## Q130434: Incorrect End Date for Recurring Task in To Do List
 
+{% raw %}
+
 	Article: Q130434
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -47,3 +49,5 @@ permalink: /kb/130/Q130434/
 	
 	=============================================================================
 	
+
+{% endraw %}

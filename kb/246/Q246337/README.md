@@ -6,6 +6,8 @@ permalink: /kb/246/Q246337/
 
 ## Q246337: XADM: Exchange Directory Can't Start After Application of SP
 
+{% raw %}
+
 	Article: Q246337
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -107,3 +109,5 @@ permalink: /kb/246/Q246337/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187788/
 
 ## Q187788: BUG: &quot;No Result&quot; Error Saving Oracle Parameterized View
 
+{% raw %}
+
 	Article: Q187788
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,5.0,5.0a,6.0
@@ -95,3 +97,5 @@ permalink: /kb/187/Q187788/
 	
 	=============================================================================
 	
+
+{% endraw %}

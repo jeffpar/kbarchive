@@ -6,6 +6,8 @@ permalink: /kb/230/Q230701/
 
 ## Q230701: Security Certificates Appear Enlarged and Unusable with AVS
 
+{% raw %}
+
 	Article: Q230701
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:4.01,4.01a; winnt:4.0 SP4
@@ -88,3 +90,5 @@ permalink: /kb/230/Q230701/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123271/
 
 ## Q123271: Chinese and Japanese Sorting
 
+{% raw %}
+
 	Article: Q123271
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -53,3 +55,5 @@ permalink: /kb/123/Q123271/
 	
 	=============================================================================
 	
+
+{% endraw %}

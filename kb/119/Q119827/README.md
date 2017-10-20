@@ -6,6 +6,8 @@ permalink: /kb/119/Q119827/
 
 ## Q119827: PC Win: Err Msg: Error Occurred While Loading the Spelling...
 
+{% raw %}
+
 	Article: Q119827
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -108,3 +110,5 @@ permalink: /kb/119/Q119827/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146764/
 
 ## Q146764: XADM: Limiting Logons to the Information Store
 
+{% raw %}
+
 	Article: Q146764
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -129,3 +131,5 @@ permalink: /kb/146/Q146764/
 	
 	=============================================================================
 	
+
+{% endraw %}

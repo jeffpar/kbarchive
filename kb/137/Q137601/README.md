@@ -6,6 +6,8 @@ permalink: /kb/137/Q137601/
 
 ## Q137601: PPT: Justify Text Command Unavailable in PowerPoint
 
+{% raw %}
+
 	Article: Q137601
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,4.0a,4.0c,7.0
@@ -74,3 +76,5 @@ permalink: /kb/137/Q137601/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132424/
 
 ## Q132424: How to Remove TrueType Fonts and Keep a Copy on the Hard Disk
 
+{% raw %}
+
 	Article: Q132424
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/132/Q132424/
 	
 	=============================================================================
 	
+
+{% endraw %}

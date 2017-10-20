@@ -6,6 +6,8 @@ permalink: /kb/164/Q164257/
 
 ## Q164257: Inactivity Timeout not Passed Through to TAPI Service Provider
 
+{% raw %}
+
 	Article: Q164257
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -81,3 +83,5 @@ permalink: /kb/164/Q164257/
 	
 	=============================================================================
 	
+
+{% endraw %}

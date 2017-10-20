@@ -6,6 +6,8 @@ permalink: /kb/238/Q238786/
 
 ## Q238786: HOWTO: Perform Remote Debugging With VB DCOM Servers
 
+{% raw %}
+
 	Article: Q238786
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -113,3 +115,5 @@ permalink: /kb/238/Q238786/
 	
 	=============================================================================
 	
+
+{% endraw %}

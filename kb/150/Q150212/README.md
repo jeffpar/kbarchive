@@ -6,6 +6,8 @@ permalink: /kb/150/Q150212/
 
 ## Q150212: FIX: Wrong Help Topic Context for IntegralHeight Property
 
+{% raw %}
+
 	Article: Q150212
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -69,3 +71,5 @@ permalink: /kb/150/Q150212/
 	
 	=============================================================================
 	
+
+{% endraw %}

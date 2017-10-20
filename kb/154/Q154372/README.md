@@ -6,6 +6,8 @@ permalink: /kb/154/Q154372/
 
 ## Q154372: Long File Names Lost with Ncopy.exe
 
+{% raw %}
+
 	Article: Q154372
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -51,3 +53,5 @@ permalink: /kb/154/Q154372/
 	
 	=============================================================================
 	
+
+{% endraw %}

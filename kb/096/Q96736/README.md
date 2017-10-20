@@ -6,6 +6,8 @@ permalink: /kb/096/Q96736/
 
 ## Q96736: Using FTSETUP to Install Fault Tolerance
 
+{% raw %}
+
 	Article: Q96736
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/096/Q96736/
 	
 	=============================================================================
 	
+
+{% endraw %}

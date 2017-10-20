@@ -6,6 +6,8 @@ permalink: /kb/141/Q141731/
 
 ## Q141731: Mac Musical Instruments: Files Installed During Installation
 
+{% raw %}
+
 	Article: Q141731
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -60,3 +62,5 @@ permalink: /kb/141/Q141731/
 	
 	=============================================================================
 	
+
+{% endraw %}

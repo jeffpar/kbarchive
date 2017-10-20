@@ -6,6 +6,8 @@ permalink: /kb/131/Q131750/
 
 ## Q131750: Characters on Screen Appear Very Small
 
+{% raw %}
+
 	Article: Q131750
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:2.0,2.0e,3.0,4.0,4.0a,4.0c,7.0; :1.0,1.0a,2.0,2.0a,3.0
@@ -98,3 +100,5 @@ permalink: /kb/131/Q131750/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139659/
 
 ## Q139659: MSB Ocean: ErrMsg: CD Audio MCI Driver Not Installed
 
+{% raw %}
+
 	Article: Q139659
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -191,3 +193,5 @@ permalink: /kb/139/Q139659/
 	
 	=============================================================================
 	
+
+{% endraw %}

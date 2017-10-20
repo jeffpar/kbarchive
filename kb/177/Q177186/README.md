@@ -6,6 +6,8 @@ permalink: /kb/177/Q177186/
 
 ## Q177186: PRB: Error 40069 Update Resultset Returned from Stored Procedure
 
+{% raw %}
+
 	Article: Q177186
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -181,3 +183,5 @@ permalink: /kb/177/Q177186/
 	
 	=============================================================================
 	
+
+{% endraw %}

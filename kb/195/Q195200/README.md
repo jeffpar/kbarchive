@@ -6,6 +6,8 @@ permalink: /kb/195/Q195200/
 
 ## Q195200: XADM: Premature MTA Fanout Inside a Site
 
+{% raw %}
+
 	Article: Q195200
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -82,3 +84,5 @@ permalink: /kb/195/Q195200/
 	
 	=============================================================================
 	
+
+{% endraw %}

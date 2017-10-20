@@ -6,6 +6,8 @@ permalink: /kb/128/Q128455/
 
 ## Q128455: SMSRUN16 Fails to Create SMS Client Group on Installation
 
+{% raw %}
+
 	Article: Q128455
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -73,3 +75,5 @@ permalink: /kb/128/Q128455/
 	
 	=============================================================================
 	
+
+{% endraw %}

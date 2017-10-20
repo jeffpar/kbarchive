@@ -6,6 +6,8 @@ permalink: /kb/169/Q169370/
 
 ## Q169370: SNA Server Print Stuck in InSession Status
 
+{% raw %}
+
 	Article: Q169370
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -75,3 +77,5 @@ permalink: /kb/169/Q169370/
 	
 	=============================================================================
 	
+
+{% endraw %}

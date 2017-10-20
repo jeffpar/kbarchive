@@ -6,6 +6,8 @@ permalink: /kb/041/Q41398/
 
 ## Q41398: Garbage with PRINT TAB, Array Element in .EXE Compiled in 4.50
 
+{% raw %}
+
 	Article: Q41398
 	Product(s): See article
 	Version(s): 4.50
@@ -72,3 +74,5 @@ permalink: /kb/041/Q41398/
 	  ' The following statement also fails:
 	  '  PRINT wmsg$(lbc%(i%)); TAB(j%); wmsg$(lbc%(i% + 4));
 	NEXT i%
+
+{% endraw %}

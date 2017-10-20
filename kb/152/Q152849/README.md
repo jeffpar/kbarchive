@@ -6,6 +6,8 @@ permalink: /kb/152/Q152849/
 
 ## Q152849: XADM: How to Recover from a Lost Key Management Server
 
+{% raw %}
+
 	Article: Q152849
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -52,3 +54,5 @@ permalink: /kb/152/Q152849/
 	
 	=============================================================================
 	
+
+{% endraw %}

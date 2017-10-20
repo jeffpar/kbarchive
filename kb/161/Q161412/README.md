@@ -6,6 +6,8 @@ permalink: /kb/161/Q161412/
 
 ## Q161412: SMS: 'Too Many Parameters' Error When Running Smsls.bat
 
+{% raw %}
+
 	Article: Q161412
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -108,3 +110,5 @@ permalink: /kb/161/Q161412/
 	
 	=============================================================================
 	
+
+{% endraw %}

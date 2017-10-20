@@ -6,6 +6,8 @@ permalink: /kb/150/Q150091/
 
 ## Q150091: New Features in Compaq SSD Version 1.17c
 
+{% raw %}
+
 	Article: Q150091
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -92,3 +94,5 @@ permalink: /kb/150/Q150091/
 	
 	=============================================================================
 	
+
+{% endraw %}

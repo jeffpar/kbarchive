@@ -6,6 +6,8 @@ permalink: /kb/118/Q118341/
 
 ## Q118341: FIX: MATHERRQQ: Access Violation on C8ARG1 and C16ARG1
 
+{% raw %}
+
 	Article: Q118341
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -114,3 +116,5 @@ permalink: /kb/118/Q118341/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159678/
 
 ## Q159678: WD97: Incorrect SectionPages or NumPages When Printed
 
+{% raw %}
+
 	Article: Q159678
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -119,3 +121,5 @@ permalink: /kb/159/Q159678/
 	
 	=============================================================================
 	
+
+{% endraw %}

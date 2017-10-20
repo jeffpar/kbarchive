@@ -6,6 +6,8 @@ permalink: /kb/221/Q221164/
 
 ## Q221164: XFOR: Outlook Express Using IMAP4 Doesn't Display Attachments
 
+{% raw %}
+
 	Article: Q221164
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -69,3 +71,5 @@ permalink: /kb/221/Q221164/
 	
 	=============================================================================
 	
+
+{% endraw %}

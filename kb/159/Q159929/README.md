@@ -6,6 +6,8 @@ permalink: /kb/159/Q159929/
 
 ## Q159929: User Manager Fails at Startup If Windows 95 Is in the Path
 
+{% raw %}
+
 	Article: Q159929
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/159/Q159929/
 	
 	=============================================================================
 	
+
+{% endraw %}

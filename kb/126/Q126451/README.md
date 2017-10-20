@@ -6,6 +6,8 @@ permalink: /kb/126/Q126451/
 
 ## Q126451: Windows NT Client Loses Session To Server
 
+{% raw %}
+
 	Article: Q126451
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1; winnt:3.5
@@ -80,3 +82,5 @@ permalink: /kb/126/Q126451/
 	
 	=============================================================================
 	
+
+{% endraw %}

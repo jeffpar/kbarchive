@@ -6,6 +6,8 @@ permalink: /kb/190/Q190007/
 
 ## Q190007: Location of Instructions on How to Debug ISAPI Extensions
 
+{% raw %}
+
 	Article: Q190007
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -55,3 +57,5 @@ permalink: /kb/190/Q190007/
 	
 	=============================================================================
 	
+
+{% endraw %}

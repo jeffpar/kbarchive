@@ -6,6 +6,8 @@ permalink: /kb/188/Q188410/
 
 ## Q188410: How to Use Both B Channels with CHAP on ImpactIQ ISDN Adapter
 
+{% raw %}
+
 	Article: Q188410
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/188/Q188410/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/256/Q256847/
 
 ## Q256847: HOWTO: Use the WNetUseConnection API to Map a Drive in VB
 
+{% raw %}
+
 	Article: Q256847
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -214,3 +216,5 @@ permalink: /kb/256/Q256847/
 	
 	=============================================================================
 	
+
+{% endraw %}

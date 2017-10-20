@@ -6,6 +6,8 @@ permalink: /kb/109/Q109256/
 
 ## Q109256: CONN: Changing Mail Connection Proxy Network &amp; Postoffice
 
+{% raw %}
+
 	Article: Q109256
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -160,3 +162,5 @@ permalink: /kb/109/Q109256/
 	
 	=============================================================================
 	
+
+{% endraw %}

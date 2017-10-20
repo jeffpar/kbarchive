@@ -6,6 +6,8 @@ permalink: /kb/067/Q67512/
 
 ## Q67512: Documentation Error in QuickC &quot;Up and Running&quot; on /FPi87
 
+{% raw %}
+
 	Article: Q67512
 	Product(s): See article
 	Version(s): 2.50 2.51
@@ -18,3 +20,5 @@ permalink: /kb/067/Q67512/
 	Flags dialog box".
 	
 	It should read "Compiler Flags dialog box".
+
+{% endraw %}

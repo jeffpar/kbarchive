@@ -6,6 +6,8 @@ permalink: /kb/180/Q180868/
 
 ## Q180868: SFGW May Trap When Creating New Devices in SQL Manager
 
+{% raw %}
+
 	Article: Q180868
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -58,3 +60,5 @@ permalink: /kb/180/Q180868/
 	
 	=============================================================================
 	
+
+{% endraw %}

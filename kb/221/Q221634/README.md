@@ -6,6 +6,8 @@ permalink: /kb/221/Q221634/
 
 ## Q221634: FIX: C0000005 Error With CLOSE ALL in Project Hook BeforeBuild
 
+{% raw %}
+
 	Article: Q221634
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -91,3 +93,5 @@ permalink: /kb/221/Q221634/
 	
 	=============================================================================
 	
+
+{% endraw %}

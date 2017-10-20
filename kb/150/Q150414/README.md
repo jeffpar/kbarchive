@@ -6,6 +6,8 @@ permalink: /kb/150/Q150414/
 
 ## Q150414: MSB Oceans and Earth: How to Remove Divers' Licenses
 
+{% raw %}
+
 	Article: Q150414
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -196,3 +198,5 @@ permalink: /kb/150/Q150414/
 	
 	=============================================================================
 	
+
+{% endraw %}

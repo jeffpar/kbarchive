@@ -6,6 +6,8 @@ permalink: /kb/243/Q243278/
 
 ## Q243278: WD97: How to Export a Table to Database/Spreadsheet Application
 
+{% raw %}
+
 	Article: Q243278
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -102,3 +104,5 @@ permalink: /kb/243/Q243278/
 	
 	=============================================================================
 	
+
+{% endraw %}

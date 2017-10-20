@@ -6,6 +6,8 @@ permalink: /kb/242/Q242514/
 
 ## Q242514: AoE II: You Can Hear Sounds but Cannot See the Opening Movie
 
+{% raw %}
+
 	Article: Q242514
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -65,3 +67,5 @@ permalink: /kb/242/Q242514/
 	
 	=============================================================================
 	
+
+{% endraw %}

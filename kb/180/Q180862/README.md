@@ -6,6 +6,8 @@ permalink: /kb/180/Q180862/
 
 ## Q180862: Single Form Feed Sent by Host on LU3 Print Session Is Ignored
 
+{% raw %}
+
 	Article: Q180862
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -92,3 +94,5 @@ permalink: /kb/180/Q180862/
 	
 	=============================================================================
 	
+
+{% endraw %}

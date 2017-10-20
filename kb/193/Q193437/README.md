@@ -6,6 +6,8 @@ permalink: /kb/193/Q193437/
 
 ## Q193437: XFOR: Error Msg: The Domain or User Name You Have Specified...
 
+{% raw %}
+
 	Article: Q193437
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -141,3 +143,5 @@ permalink: /kb/193/Q193437/
 	
 	=============================================================================
 	
+
+{% endraw %}

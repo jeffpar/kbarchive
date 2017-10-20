@@ -6,6 +6,8 @@ permalink: /kb/271/Q271282/
 
 ## Q271282: Microsoft Reader: Text Is Displayed on a Faint Blue Background
 
+{% raw %}
+
 	Article: Q271282
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.5
@@ -48,3 +50,5 @@ permalink: /kb/271/Q271282/
 	
 	=============================================================================
 	
+
+{% endraw %}

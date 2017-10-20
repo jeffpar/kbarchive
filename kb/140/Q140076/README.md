@@ -6,6 +6,8 @@ permalink: /kb/140/Q140076/
 
 ## Q140076: PC Gen: Err Msg: User &lt;Mailbox Name&gt; Not in the POL...
 
+{% raw %}
+
 	Article: Q140076
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2a,3.5
@@ -59,3 +61,5 @@ permalink: /kb/140/Q140076/
 	
 	=============================================================================
 	
+
+{% endraw %}

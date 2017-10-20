@@ -6,6 +6,8 @@ permalink: /kb/157/Q157718/
 
 ## Q157718: INFO: VSS 5.0 Readme: Sec. 3, New Features in Visual SourceSafe
 
+{% raw %}
+
 	Article: Q157718
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -155,3 +157,5 @@ permalink: /kb/157/Q157718/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164434/
 
 ## Q164434: Sony Spressa SCSI CD-ROM Drive May Not Be Detected
 
+{% raw %}
+
 	Article: Q164434
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/164/Q164434/
 	
 	=============================================================================
 	
+
+{% endraw %}

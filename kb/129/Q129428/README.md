@@ -6,6 +6,8 @@ permalink: /kb/129/Q129428/
 
 ## Q129428: INFO: CListBox::SelItemRange Selects Only Two or More Items
 
+{% raw %}
+
 	Article: Q129428
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -75,3 +77,5 @@ permalink: /kb/129/Q129428/
 	
 	=============================================================================
 	
+
+{% endraw %}

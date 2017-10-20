@@ -6,6 +6,8 @@ permalink: /kb/102/Q102691/
 
 ## Q102691: PRB: LNK2133 Size Mismatch on Common Block During Link
 
+{% raw %}
+
 	Article: Q102691
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -137,3 +139,5 @@ permalink: /kb/102/Q102691/
 	
 	=============================================================================
 	
+
+{% endraw %}

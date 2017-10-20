@@ -6,6 +6,8 @@ permalink: /kb/187/Q187425/
 
 ## Q187425: TCP/IP Device Driver Does Not Remember Share Flags
 
+{% raw %}
+
 	Article: Q187425
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -53,3 +55,5 @@ permalink: /kb/187/Q187425/
 	
 	=============================================================================
 	
+
+{% endraw %}

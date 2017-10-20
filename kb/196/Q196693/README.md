@@ -6,6 +6,8 @@ permalink: /kb/196/Q196693/
 
 ## Q196693: XADM: How To Use ESEUTIL /U to Upgrade a Database
 
+{% raw %}
+
 	Article: Q196693
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -68,3 +70,5 @@ permalink: /kb/196/Q196693/
 	
 	=============================================================================
 	
+
+{% endraw %}

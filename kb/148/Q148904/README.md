@@ -6,6 +6,8 @@ permalink: /kb/148/Q148904/
 
 ## Q148904: NetWare Print Jobs Always Use Form Zero
 
+{% raw %}
+
 	Article: Q148904
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/148/Q148904/
 	
 	=============================================================================
 	
+
+{% endraw %}

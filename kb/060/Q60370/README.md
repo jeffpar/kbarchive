@@ -6,6 +6,8 @@ permalink: /kb/060/Q60370/
 
 ## Q60370: Experimental Jet Accelerates Without Throttle
 
+{% raw %}
+
 	Article: Q60370
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/060/Q60370/
 	
 	=============================================================================
 	
+
+{% endraw %}

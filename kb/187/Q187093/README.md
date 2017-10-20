@@ -6,6 +6,8 @@ permalink: /kb/187/Q187093/
 
 ## Q187093: Cannot Add a Practical Peripherals Modem on Serve
 
+{% raw %}
+
 	Article: Q187093
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:
@@ -43,3 +45,5 @@ permalink: /kb/187/Q187093/
 	
 	=============================================================================
 	
+
+{% endraw %}

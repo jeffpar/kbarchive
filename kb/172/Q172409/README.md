@@ -6,6 +6,8 @@ permalink: /kb/172/Q172409/
 
 ## Q172409: &quot;Type Mismatch&quot; Error Messages Accessing Specific Internet Sites
 
+{% raw %}
+
 	Article: Q172409
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0
@@ -81,3 +83,5 @@ permalink: /kb/172/Q172409/
 	
 	=============================================================================
 	
+
+{% endraw %}

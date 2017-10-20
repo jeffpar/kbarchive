@@ -6,6 +6,8 @@ permalink: /kb/167/Q167878/
 
 ## Q167878: WD97: Progress Meter Remains Visible in Status Bar After Error
 
+{% raw %}
+
 	Article: Q167878
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -55,3 +57,5 @@ permalink: /kb/167/Q167878/
 	
 	=============================================================================
 	
+
+{% endraw %}

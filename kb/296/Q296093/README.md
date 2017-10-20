@@ -6,6 +6,8 @@ permalink: /kb/296/Q296093/
 
 ## Q296093: FILE: PrepWebLog Utility Prepares IIS Logs for SQL Bulk Insert
 
+{% raw %}
+
 	Article: Q296093
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0
@@ -103,3 +105,5 @@ permalink: /kb/296/Q296093/
 	
 	=============================================================================
 	
+
+{% endraw %}

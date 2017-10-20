@@ -6,6 +6,8 @@ permalink: /kb/184/Q184250/
 
 ## Q184250: XCLN: Rerun Outlook 98 Setup Fails on Customized Install
 
+{% raw %}
+
 	Article: Q184250
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:98
@@ -65,3 +67,5 @@ permalink: /kb/184/Q184250/
 	
 	=============================================================================
 	
+
+{% endraw %}

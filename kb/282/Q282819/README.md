@@ -6,6 +6,8 @@ permalink: /kb/282/Q282819/
 
 ## Q282819: PRB: Wrong Path When You Connect to Database on Novell Server
 
+{% raw %}
+
 	Article: Q282819
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -111,3 +113,5 @@ permalink: /kb/282/Q282819/
 	
 	=============================================================================
 	
+
+{% endraw %}

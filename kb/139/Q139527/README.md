@@ -6,6 +6,8 @@ permalink: /kb/139/Q139527/
 
 ## Q139527: How to Create a Table that Has Many Fields of Identical Size
 
+{% raw %}
+
 	Article: Q139527
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -48,3 +50,5 @@ permalink: /kb/139/Q139527/
 	
 	=============================================================================
 	
+
+{% endraw %}

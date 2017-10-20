@@ -6,6 +6,8 @@ permalink: /kb/059/Q59681/
 
 ## Q59681: Slow Return to MS-DOS If Keys Pressed on Exit
 
+{% raw %}
+
 	Article: Q59681
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1
@@ -57,3 +59,5 @@ permalink: /kb/059/Q59681/
 	
 	=============================================================================
 	
+
+{% endraw %}

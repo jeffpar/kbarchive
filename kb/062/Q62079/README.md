@@ -6,6 +6,8 @@ permalink: /kb/062/Q62079/
 
 ## Q62079: Mac Hyp: Initializing a New Message
 
+{% raw %}
+
 	Article: Q62079
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -60,3 +62,5 @@ permalink: /kb/062/Q62079/
 	
 	=============================================================================
 	
+
+{% endraw %}

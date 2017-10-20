@@ -6,6 +6,8 @@ permalink: /kb/303/Q303725/
 
 ## Q303725: SMS: Logon Server Manager May Use Sender Credentials
 
+{% raw %}
+
 	Article: Q303725
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -135,3 +137,5 @@ permalink: /kb/303/Q303725/
 	
 	=============================================================================
 	
+
+{% endraw %}

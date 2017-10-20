@@ -6,6 +6,8 @@ permalink: /kb/126/Q126297/
 
 ## Q126297: WinNT 3.5 RAS Server Doesn't Call Back Non-3.5 Clients Over ISDN
 
+{% raw %}
+
 	Article: Q126297
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -61,3 +63,5 @@ permalink: /kb/126/Q126297/
 	
 	=============================================================================
 	
+
+{% endraw %}

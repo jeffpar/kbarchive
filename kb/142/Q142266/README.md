@@ -6,6 +6,8 @@ permalink: /kb/142/Q142266/
 
 ## Q142266: XCON: MS Mail SMTP Addresses Modified During Migration
 
+{% raw %}
+
 	Article: Q142266
 	Product(s): Microsoft Exchange
 	Version(s): 4.00
@@ -54,3 +56,5 @@ permalink: /kb/142/Q142266/
 	
 	=============================================================================
 	
+
+{% endraw %}

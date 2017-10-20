@@ -6,6 +6,8 @@ permalink: /kb/215/Q215485/
 
 ## Q215485: Discussion Web in FrontPage May Cause IIS to Stop Responding
 
+{% raw %}
+
 	Article: Q215485
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:; winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/215/Q215485/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/243/Q243458/
 
 ## Q243458: PRB: Err Msg: Fatal Error LNK1104 Cannot Open File &quot;Nafxcwd.lib&quot;
 
+{% raw %}
+
 	Article: Q243458
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/243/Q243458/
 	
 	=============================================================================
 	
+
+{% endraw %}

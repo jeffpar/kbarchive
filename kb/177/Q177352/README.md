@@ -6,6 +6,8 @@ permalink: /kb/177/Q177352/
 
 ## Q177352: HOWTO: Work with Invalid Rectangle When Window Is Resized
 
+{% raw %}
+
 	Article: Q177352
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0,6.0
@@ -98,3 +100,5 @@ permalink: /kb/177/Q177352/
 	
 	=============================================================================
 	
+
+{% endraw %}

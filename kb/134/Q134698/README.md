@@ -6,6 +6,8 @@ permalink: /kb/134/Q134698/
 
 ## Q134698: Windows NT Setup Does Not Detect QLogic PCI SCSI Adapter
 
+{% raw %}
+
 	Article: Q134698
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/134/Q134698/
 	
 	=============================================================================
 	
+
+{% endraw %}

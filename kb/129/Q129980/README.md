@@ -6,6 +6,8 @@ permalink: /kb/129/Q129980/
 
 ## Q129980: INFO: Private Data Session Resets the Environment
 
+{% raw %}
+
 	Article: Q129980
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/129/Q129980/
 	
 	=============================================================================
 	
+
+{% endraw %}

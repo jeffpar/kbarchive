@@ -6,6 +6,8 @@ permalink: /kb/153/Q153309/
 
 ## Q153309: HOWTO: Retrieve the Registered User Under Windows
 
+{% raw %}
+
 	Article: Q153309
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -94,3 +96,5 @@ permalink: /kb/153/Q153309/
 	
 	=============================================================================
 	
+
+{% endraw %}

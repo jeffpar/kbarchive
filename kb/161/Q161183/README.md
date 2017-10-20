@@ -6,6 +6,8 @@ permalink: /kb/161/Q161183/
 
 ## Q161183: HOWTO: Use the Pinnacle Graph Control to Graph Data
 
+{% raw %}
+
 	Article: Q161183
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -111,3 +113,5 @@ permalink: /kb/161/Q161183/
 	
 	=============================================================================
 	
+
+{% endraw %}

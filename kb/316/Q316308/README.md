@@ -6,6 +6,8 @@ permalink: /kb/316/Q316308/
 
 ## Q316308: HOW TO: Configure a Stripe Set in Windows NT Server 4.0
 
+{% raw %}
+
 	Article: Q316308
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -138,3 +140,5 @@ permalink: /kb/316/Q316308/
 	
 	=============================================================================
 	
+
+{% endraw %}

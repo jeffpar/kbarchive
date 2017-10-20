@@ -6,6 +6,8 @@ permalink: /kb/257/Q257879/
 
 ## Q257879: Event ID 1073 Occurs When You Attempt to Move the Quorum Disk
 
+{% raw %}
+
 	Article: Q257879
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -59,3 +61,5 @@ permalink: /kb/257/Q257879/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/259/Q259751/
 
 ## Q259751: XADM: How to Recover from a Full Transaction Log File Drive
 
+{% raw %}
+
 	Article: Q259751
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -142,3 +144,5 @@ permalink: /kb/259/Q259751/
 	
 	=============================================================================
 	
+
+{% endraw %}

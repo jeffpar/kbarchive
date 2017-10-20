@@ -6,6 +6,8 @@ permalink: /kb/083/Q83074/
 
 ## Q83074: During Setup, Windows 3.1 Fails to Start Standard-Mode Windows
 
+{% raw %}
+
 	Article: Q83074
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/083/Q83074/
 	
 	=============================================================================
 	
+
+{% endraw %}

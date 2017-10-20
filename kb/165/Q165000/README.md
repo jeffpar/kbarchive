@@ -6,6 +6,8 @@ permalink: /kb/165/Q165000/
 
 ## Q165000: XCLN: How to Enable Hyperlinks in an Exchange Form
 
+{% raw %}
+
 	Article: Q165000
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; Win95:4.0,5.0
@@ -66,3 +68,5 @@ permalink: /kb/165/Q165000/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/089/Q89834/
 
 ## Q89834: Artisoft LANtastic Network Card Support with WFWG
 
+{% raw %}
+
 	Article: Q89834
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/089/Q89834/
 	
 	=============================================================================
 	
+
+{% endraw %}

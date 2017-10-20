@@ -6,6 +6,8 @@ permalink: /kb/157/Q157453/
 
 ## Q157453: PRB: Errors Encountered When Creating Oracle ODBC Datasource
 
+{% raw %}
+
 	Article: Q157453
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0b,5.0,6.0
@@ -81,3 +83,5 @@ permalink: /kb/157/Q157453/
 	
 	=============================================================================
 	
+
+{% endraw %}

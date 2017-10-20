@@ -6,6 +6,8 @@ permalink: /kb/298/Q298933/
 
 ## Q298933: XADM: Exchange Services Won't Start After SP3 Canceled
 
+{% raw %}
+
 	Article: Q298933
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -68,3 +70,5 @@ permalink: /kb/298/Q298933/
 	
 	=============================================================================
 	
+
+{% endraw %}

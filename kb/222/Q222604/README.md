@@ -6,6 +6,8 @@ permalink: /kb/222/Q222604/
 
 ## Q222604: Configuring Cached Dfs Referral Expiration Time in Dfs 4.1
 
+{% raw %}
+
 	Article: Q222604
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP3,4.0 SP4
@@ -165,3 +167,5 @@ permalink: /kb/222/Q222604/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234546/
 
 ## Q234546: Windows NT 4.0 SP5 Includes Updated .PAL Files
 
+{% raw %}
+
 	Article: Q234546
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/234/Q234546/
 	
 	=============================================================================
 	
+
+{% endraw %}

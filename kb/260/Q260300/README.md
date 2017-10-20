@@ -6,6 +6,8 @@ permalink: /kb/260/Q260300/
 
 ## Q260300: XADM: Online Defragmentation Stops with Event ID 183
 
+{% raw %}
+
 	Article: Q260300
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -85,3 +87,5 @@ permalink: /kb/260/Q260300/
 	
 	=============================================================================
 	
+
+{% endraw %}

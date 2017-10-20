@@ -6,6 +6,8 @@ permalink: /kb/162/Q162400/
 
 ## Q162400: WD97: IntelliMouse Changes Not Reflected in Current Session
 
+{% raw %}
+
 	Article: Q162400
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/162/Q162400/
 	
 	=============================================================================
 	
+
+{% endraw %}

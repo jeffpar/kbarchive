@@ -6,6 +6,8 @@ permalink: /kb/110/Q110178/
 
 ## Q110178: Cannot Dial Automatically from Works 2.0 with WFWG 3.11
 
+{% raw %}
+
 	Article: Q110178
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -53,3 +55,5 @@ permalink: /kb/110/Q110178/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195525/
 
 ## Q195525: PRB: SQLPREPARE Limited to 254 Characters
 
+{% raw %}
+
 	Article: Q195525
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,5.0,5.0a,6.0
@@ -125,3 +127,5 @@ permalink: /kb/195/Q195525/
 	
 	=============================================================================
 	
+
+{% endraw %}

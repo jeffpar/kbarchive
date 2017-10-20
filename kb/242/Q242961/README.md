@@ -6,6 +6,8 @@ permalink: /kb/242/Q242961/
 
 ## Q242961: Exchange Server DNS Error Messages When Using Dial-Up Networking
 
+{% raw %}
+
 	Article: Q242961
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -74,3 +76,5 @@ permalink: /kb/242/Q242961/
 	
 	=============================================================================
 	
+
+{% endraw %}

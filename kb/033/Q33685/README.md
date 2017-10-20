@@ -6,6 +6,8 @@ permalink: /kb/033/Q33685/
 
 ## Q33685: &quot;Illegal Function Call&quot; Using SCREEN 0 Pages, then SCREEN 1
 
+{% raw %}
+
 	Article: Q33685
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -33,3 +35,5 @@ permalink: /kb/033/Q33685/
 	SCREEN 0,,1,0
 	SCREEN 0,,0,0  'Resets both pages to 0
 	SCREEN 1
+
+{% endraw %}

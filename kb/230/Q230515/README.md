@@ -6,6 +6,8 @@ permalink: /kb/230/Q230515/
 
 ## Q230515: COMTI Method Invocation Fails With Runtime Error 1426
 
+{% raw %}
+
 	Article: Q230515
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0SP2
@@ -109,3 +111,5 @@ permalink: /kb/230/Q230515/
 	
 	=============================================================================
 	
+
+{% endraw %}

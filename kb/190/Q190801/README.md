@@ -6,6 +6,8 @@ permalink: /kb/190/Q190801/
 
 ## Q190801: PRB: Failed to Verify Platform or OS Version
 
+{% raw %}
+
 	Article: Q190801
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:
@@ -82,3 +84,5 @@ permalink: /kb/190/Q190801/
 	
 	=============================================================================
 	
+
+{% endraw %}

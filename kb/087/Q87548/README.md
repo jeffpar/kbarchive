@@ -6,6 +6,8 @@ permalink: /kb/087/Q87548/
 
 ## Q87548: FIX: Upper Half of 32-bit Registers, GS, and FS Corrupt
 
+{% raw %}
+
 	Article: Q87548
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/087/Q87548/
 	
 	=============================================================================
 	
+
+{% endraw %}

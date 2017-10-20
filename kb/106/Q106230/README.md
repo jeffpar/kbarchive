@@ -6,6 +6,8 @@ permalink: /kb/106/Q106230/
 
 ## Q106230: Cinemania 1994: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q106230
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -281,3 +283,5 @@ permalink: /kb/106/Q106230/
 	
 	=============================================================================
 	
+
+{% endraw %}

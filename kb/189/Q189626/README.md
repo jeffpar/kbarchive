@@ -6,6 +6,8 @@ permalink: /kb/189/Q189626/
 
 ## Q189626: HOWTO: Use the Winsock Control Through a Serial Connection
 
+{% raw %}
+
 	Article: Q189626
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0 SP3
@@ -88,3 +90,5 @@ permalink: /kb/189/Q189626/
 	
 	=============================================================================
 	
+
+{% endraw %}

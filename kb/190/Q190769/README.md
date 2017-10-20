@@ -6,6 +6,8 @@ permalink: /kb/190/Q190769/
 
 ## Q190769: HOWTO: Use STRTOFILE() to Send Output to a Printer
 
+{% raw %}
+
 	Article: Q190769
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -134,3 +136,5 @@ permalink: /kb/190/Q190769/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86326/
 
 ## Q86326: PC Cillin Anti-Virus Software May Hang Windows Applications
 
+{% raw %}
+
 	Article: Q86326
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/086/Q86326/
 	
 	=============================================================================
 	
+
+{% endraw %}

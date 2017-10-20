@@ -6,6 +6,8 @@ permalink: /kb/230/Q230491/
 
 ## Q230491: PRB: CDBVariant Contains Wrong BOOL Value with GetFieldValue
 
+{% raw %}
+
 	Article: Q230491
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -96,3 +98,5 @@ permalink: /kb/230/Q230491/
 	
 	=============================================================================
 	
+
+{% endraw %}

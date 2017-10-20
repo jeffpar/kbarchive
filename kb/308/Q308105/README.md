@@ -6,6 +6,8 @@ permalink: /kb/308/Q308105/
 
 ## Q308105: MSN Broadband DSL: Windows 98 Gold Work Around
 
+{% raw %}
+
 	Article: Q308105
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -101,3 +103,5 @@ permalink: /kb/308/Q308105/
 	
 	=============================================================================
 	
+
+{% endraw %}

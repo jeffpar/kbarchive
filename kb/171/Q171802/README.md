@@ -6,6 +6,8 @@ permalink: /kb/171/Q171802/
 
 ## Q171802: FIX: Problems Updating Using DBCombo When ListField = DataField
 
+{% raw %}
+
 	Article: Q171802
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -56,3 +58,5 @@ permalink: /kb/171/Q171802/
 	
 	=============================================================================
 	
+
+{% endraw %}

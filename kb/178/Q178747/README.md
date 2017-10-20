@@ -6,6 +6,8 @@ permalink: /kb/178/Q178747/
 
 ## Q178747: How to Obtain a Foreign Language Version of DirectX
 
+{% raw %}
+
 	Article: Q178747
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -52,3 +54,5 @@ permalink: /kb/178/Q178747/
 	
 	=============================================================================
 	
+
+{% endraw %}

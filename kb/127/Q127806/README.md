@@ -6,6 +6,8 @@ permalink: /kb/127/Q127806/
 
 ## Q127806: Setup Remarks Out Lines in AUTOEXEC.BAT File
 
+{% raw %}
+
 	Article: Q127806
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/127/Q127806/
 	
 	=============================================================================
 	
+
+{% endraw %}

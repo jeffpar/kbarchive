@@ -6,6 +6,8 @@ permalink: /kb/310/Q310970/
 
 ## Q310970: PRB: Some Intellisense Settings Do Not Persist Between Sessions
 
+{% raw %}
+
 	Article: Q310970
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -83,3 +85,5 @@ permalink: /kb/310/Q310970/
 	
 	=============================================================================
 	
+
+{% endraw %}

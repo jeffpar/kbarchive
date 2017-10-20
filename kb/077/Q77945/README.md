@@ -6,6 +6,8 @@ permalink: /kb/077/Q77945/
 
 ## Q77945: FIX: Alignment in Nested Structures Incorrect in MASM 6
 
+{% raw %}
+
 	Article: Q77945
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -71,3 +73,5 @@ permalink: /kb/077/Q77945/
 	
 	=============================================================================
 	
+
+{% endraw %}

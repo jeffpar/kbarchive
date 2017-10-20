@@ -6,6 +6,8 @@ permalink: /kb/133/Q133054/
 
 ## Q133054: HOWTO: Detect and Fix Database Corruption Errors in SSafe
 
+{% raw %}
+
 	Article: Q133054
 	Product(s): Microsoft SourceSafe
 	Version(s): 3.04,3.1
@@ -165,3 +167,5 @@ permalink: /kb/133/Q133054/
 	
 	=============================================================================
 	
+
+{% endraw %}

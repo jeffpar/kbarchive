@@ -6,6 +6,8 @@ permalink: /kb/258/Q258546/
 
 ## Q258546: Cannot Retrieve Default Web Site from External Network
 
+{% raw %}
+
 	Article: Q258546
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,4.0,5.0
@@ -71,3 +73,5 @@ permalink: /kb/258/Q258546/
 	
 	=============================================================================
 	
+
+{% endraw %}

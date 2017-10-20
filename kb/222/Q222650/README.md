@@ -6,6 +6,8 @@ permalink: /kb/222/Q222650/
 
 ## Q222650: Incorrect Fax Printer Properties in Windows 95 or Windows 98
 
+{% raw %}
+
 	Article: Q222650
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -51,3 +53,5 @@ permalink: /kb/222/Q222650/
 	
 	=============================================================================
 	
+
+{% endraw %}

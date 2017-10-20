@@ -6,6 +6,8 @@ permalink: /kb/085/Q85045/
 
 ## Q85045: FFAPI: The Role of Remote Application FFAPI
 
+{% raw %}
+
 	Article: Q85045
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -43,3 +45,5 @@ permalink: /kb/085/Q85045/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216101/
 
 ## Q216101: INF: Missing Entry in Add/Remove Programs after Package Export
 
+{% raw %}
+
 	Article: Q216101
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,1.0 SP1,4.0 SP2
@@ -91,3 +93,5 @@ permalink: /kb/216/Q216101/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148991/
 
 ## Q148991: How to Disable Pop-up Dialog Boxes in Windows NT
 
+{% raw %}
+
 	Article: Q148991
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -62,3 +64,5 @@ permalink: /kb/148/Q148991/
 	
 	=============================================================================
 	
+
+{% endraw %}

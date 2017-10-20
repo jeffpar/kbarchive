@@ -6,6 +6,8 @@ permalink: /kb/082/Q82722/
 
 ## Q82722: Dual Network (LAN Manager/Novell) Support
 
+{% raw %}
+
 	Article: Q82722
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -110,3 +112,5 @@ permalink: /kb/082/Q82722/
 	
 	=============================================================================
 	
+
+{% endraw %}

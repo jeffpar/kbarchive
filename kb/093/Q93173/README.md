@@ -6,6 +6,8 @@ permalink: /kb/093/Q93173/
 
 ## Q93173: PC Win: Description of 3.0b Setup Process
 
+{% raw %}
+
 	Article: Q93173
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b
@@ -162,3 +164,5 @@ permalink: /kb/093/Q93173/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/294/Q294282/
 
 ## Q294282: XADM: How to Use Updatefb.exe to Republish Absent Free/Busy Data
 
+{% raw %}
+
 	Article: Q294282
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -121,3 +123,5 @@ permalink: /kb/294/Q294282/
 	
 	=============================================================================
 	
+
+{% endraw %}

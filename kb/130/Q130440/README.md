@@ -6,6 +6,8 @@ permalink: /kb/130/Q130440/
 
 ## Q130440: INFO: Reserved Words in Visual FoxPro
 
+{% raw %}
+
 	Article: Q130440
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -503,3 +505,5 @@ permalink: /kb/130/Q130440/
 	
 	=============================================================================
 	
+
+{% endraw %}

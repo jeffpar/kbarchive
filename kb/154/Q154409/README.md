@@ -6,6 +6,8 @@ permalink: /kb/154/Q154409/
 
 ## Q154409: Setting WINS Clients Refresh Intervals to Occur Infrequently
 
+{% raw %}
+
 	Article: Q154409
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.5,3.51,4.0
@@ -115,3 +117,5 @@ permalink: /kb/154/Q154409/
 	
 	=============================================================================
 	
+
+{% endraw %}

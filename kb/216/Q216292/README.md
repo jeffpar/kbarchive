@@ -6,6 +6,8 @@ permalink: /kb/216/Q216292/
 
 ## Q216292: XFOR: Reasons for &quot;Unable to logon...&quot; Error Message
 
+{% raw %}
+
 	Article: Q216292
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -71,3 +73,5 @@ permalink: /kb/216/Q216292/
 	
 	=============================================================================
 	
+
+{% endraw %}

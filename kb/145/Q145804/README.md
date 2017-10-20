@@ -6,6 +6,8 @@ permalink: /kb/145/Q145804/
 
 ## Q145804: Pregnancy: What Do I Do with Problems Not Addressed in FAQ?
 
+{% raw %}
+
 	Article: Q145804
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -52,3 +54,5 @@ permalink: /kb/145/Q145804/
 	
 	=============================================================================
 	
+
+{% endraw %}

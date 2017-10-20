@@ -6,6 +6,8 @@ permalink: /kb/154/Q154171/
 
 ## Q154171: BUG: Macintosh Help Key Does Not Invoke FoxPro Help
 
+{% raw %}
+
 	Article: Q154171
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -52,3 +54,5 @@ permalink: /kb/154/Q154171/
 	
 	=============================================================================
 	
+
+{% endraw %}

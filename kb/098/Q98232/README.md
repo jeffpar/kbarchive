@@ -6,6 +6,8 @@ permalink: /kb/098/Q98232/
 
 ## Q98232: Multimedia: GP Fault with Tseng ET4000 Video Drivers
 
+{% raw %}
+
 	Article: Q98232
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -71,3 +73,5 @@ permalink: /kb/098/Q98232/
 	
 	=============================================================================
 	
+
+{% endraw %}

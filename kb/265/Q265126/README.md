@@ -6,6 +6,8 @@ permalink: /kb/265/Q265126/
 
 ## Q265126: HOWTO: Print Contents of the Web Browser Control from VFP
 
+{% raw %}
+
 	Article: Q265126
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -86,3 +88,5 @@ permalink: /kb/265/Q265126/
 	
 	=============================================================================
 	
+
+{% endraw %}

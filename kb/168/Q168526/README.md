@@ -6,6 +6,8 @@ permalink: /kb/168/Q168526/
 
 ## Q168526: FIX: Top-Level Form Releases Undocked Toolbars in VFP 5.0
 
+{% raw %}
+
 	Article: Q168526
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -101,3 +103,5 @@ permalink: /kb/168/Q168526/
 	
 	=============================================================================
 	
+
+{% endraw %}

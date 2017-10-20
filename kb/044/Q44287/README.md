@@ -6,6 +6,8 @@ permalink: /kb/044/Q44287/
 
 ## Q44287: Problem Deleting a Line that Is a Breakpoint in QuickC
 
+{% raw %}
+
 	Article: Q44287
 	Product(s): See article
 	Version(s): 2.00
@@ -42,3 +44,5 @@ permalink: /kb/044/Q44287/
 	associated breakpoint entry is not deleted. Rather, its line number is
 	set to zero. There is no line zero that the debugger can set a
 	breakpoint on; thus, the error pop-up occurs.
+
+{% endraw %}

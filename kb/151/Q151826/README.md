@@ -6,6 +6,8 @@ permalink: /kb/151/Q151826/
 
 ## Q151826: XADM: How to Migrate cc:Mail Messages to Exchange Mailboxes
 
+{% raw %}
+
 	Article: Q151826
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/151/Q151826/
 	
 	=============================================================================
 	
+
+{% endraw %}

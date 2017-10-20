@@ -6,6 +6,8 @@ permalink: /kb/095/Q95232/
 
 ## Q95232: PRB: Video Card Causes GP Faults or Display Problems
 
+{% raw %}
+
 	Article: Q95232
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,2.5a,2.5b,2.6,2.6a,3.0,5.0,6.0,7.0
@@ -114,3 +116,5 @@ permalink: /kb/095/Q95232/
 	
 	=============================================================================
 	
+
+{% endraw %}

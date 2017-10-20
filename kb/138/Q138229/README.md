@@ -6,6 +6,8 @@ permalink: /kb/138/Q138229/
 
 ## Q138229: How to Create a Personal Distribution List with Copy and Paste
 
+{% raw %}
+
 	Article: Q138229
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/138/Q138229/
 	
 	=============================================================================
 	
+
+{% endraw %}

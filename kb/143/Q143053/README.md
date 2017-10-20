@@ -6,6 +6,8 @@ permalink: /kb/143/Q143053/
 
 ## Q143053: Mouse Systems Driver May Cause Windows Protection Error
 
+{% raw %}
+
 	Article: Q143053
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -73,3 +75,5 @@ permalink: /kb/143/Q143053/
 	
 	=============================================================================
 	
+
+{% endraw %}

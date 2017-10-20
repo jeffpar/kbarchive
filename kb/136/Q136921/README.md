@@ -6,6 +6,8 @@ permalink: /kb/136/Q136921/
 
 ## Q136921: Guidelines for Creating Unique and Sequential Keys
 
+{% raw %}
+
 	Article: Q136921
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/136/Q136921/
 	
 	=============================================================================
 	
+
+{% endraw %}

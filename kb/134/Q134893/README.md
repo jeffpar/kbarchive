@@ -6,6 +6,8 @@ permalink: /kb/134/Q134893/
 
 ## Q134893: 3D OpenGL Screen Saver Restores Windows NT 3.51 Help
 
+{% raw %}
+
 	Article: Q134893
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/134/Q134893/
 	
 	=============================================================================
 	
+
+{% endraw %}

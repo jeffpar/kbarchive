@@ -6,6 +6,8 @@ permalink: /kb/106/Q106723/
 
 ## Q106723: BUG: Redirection of Input to a Spawned PowerStation App Fails
 
+{% raw %}
+
 	Article: Q106723
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -85,3 +87,5 @@ permalink: /kb/106/Q106723/
 	
 	=============================================================================
 	
+
+{% endraw %}

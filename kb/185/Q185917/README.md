@@ -6,6 +6,8 @@ permalink: /kb/185/Q185917/
 
 ## Q185917: SMS: Remote Control Agent Installed Regardless of Site Settings
 
+{% raw %}
+
 	Article: Q185917
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -57,3 +59,5 @@ permalink: /kb/185/Q185917/
 	
 	=============================================================================
 	
+
+{% endraw %}

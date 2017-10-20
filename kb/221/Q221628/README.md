@@ -6,6 +6,8 @@ permalink: /kb/221/Q221628/
 
 ## Q221628: FIX: Using Genhtml.prg in Distributed Application is Difficult
 
+{% raw %}
+
 	Article: Q221628
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -88,3 +90,5 @@ permalink: /kb/221/Q221628/
 	
 	=============================================================================
 	
+
+{% endraw %}

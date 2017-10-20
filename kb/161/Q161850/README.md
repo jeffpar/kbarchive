@@ -6,6 +6,8 @@ permalink: /kb/161/Q161850/
 
 ## Q161850: Userinit.exe Entry Point Not Found
 
+{% raw %}
+
 	Article: Q161850
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/161/Q161850/
 	
 	=============================================================================
 	
+
+{% endraw %}

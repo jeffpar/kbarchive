@@ -6,6 +6,8 @@ permalink: /kb/153/Q153533/
 
 ## Q153533: Scheduler Cannot Cancel Job
 
+{% raw %}
+
 	Article: Q153533
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -45,3 +47,5 @@ permalink: /kb/153/Q153533/
 	
 	=============================================================================
 	
+
+{% endraw %}

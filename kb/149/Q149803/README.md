@@ -6,6 +6,8 @@ permalink: /kb/149/Q149803/
 
 ## Q149803: Troubleshooting Error 242 When Use DLC 802.2 Link Services
 
+{% raw %}
+
 	Article: Q149803
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -169,3 +171,5 @@ permalink: /kb/149/Q149803/
 	
 	=============================================================================
 	
+
+{% endraw %}

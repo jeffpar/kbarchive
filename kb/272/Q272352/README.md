@@ -6,6 +6,8 @@ permalink: /kb/272/Q272352/
 
 ## Q272352: SMS Service Packs Must Be Installed on Individual Workstations
 
+{% raw %}
+
 	Article: Q272352
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -90,3 +92,5 @@ permalink: /kb/272/Q272352/
 	
 	=============================================================================
 	
+
+{% endraw %}

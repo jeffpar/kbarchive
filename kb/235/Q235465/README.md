@@ -6,6 +6,8 @@ permalink: /kb/235/Q235465/
 
 ## Q235465: MMC Access Violation Connecting to Remote IIS Server with SMTP
 
+{% raw %}
+
 	Article: Q235465
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:2.0,4.0 SP5
@@ -81,3 +83,5 @@ permalink: /kb/235/Q235465/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138250/
 
 ## Q138250: Updated Ifsmgr.vxd Resolves Problems with Tilde in 8.3 Names
 
+{% raw %}
+
 	Article: Q138250
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/138/Q138250/
 	
 	=============================================================================
 	
+
+{% endraw %}

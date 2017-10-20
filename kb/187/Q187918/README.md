@@ -6,6 +6,8 @@ permalink: /kb/187/Q187918/
 
 ## Q187918: PRB: SendMessage Fails for Some Messages
 
+{% raw %}
+
 	Article: Q187918
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/187/Q187918/
 	
 	=============================================================================
 	
+
+{% endraw %}

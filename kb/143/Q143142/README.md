@@ -6,6 +6,8 @@ permalink: /kb/143/Q143142/
 
 ## Q143142: NetWare Clients Cannot Connect to FPNW Server
 
+{% raw %}
+
 	Article: Q143142
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -79,3 +81,5 @@ permalink: /kb/143/Q143142/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151626/
 
 ## Q151626: XCON: Sockets Error When Connecting to Foreign X.400 MTA
 
+{% raw %}
+
 	Article: Q151626
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -88,3 +90,5 @@ permalink: /kb/151/Q151626/
 	
 	=============================================================================
 	
+
+{% endraw %}

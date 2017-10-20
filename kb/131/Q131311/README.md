@@ -6,6 +6,8 @@ permalink: /kb/131/Q131311/
 
 ## Q131311: WordPad Hangs When Jumping to the End of a Large File
 
+{% raw %}
+
 	Article: Q131311
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/131/Q131311/
 	
 	=============================================================================
 	
+
+{% endraw %}

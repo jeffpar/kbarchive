@@ -6,6 +6,8 @@ permalink: /kb/314/Q314642/
 
 ## Q314642: FIX: VFP Disappears When You Hold Mouse Pointer over Memo Field
 
+{% raw %}
+
 	Article: Q314642
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -69,3 +71,5 @@ permalink: /kb/314/Q314642/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183480/
 
 ## Q183480: HOW TO: Debug ISAPI DLLs Under IIS 4.0 and IIS 5.0
 
+{% raw %}
+
 	Article: Q183480
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -148,3 +150,5 @@ permalink: /kb/183/Q183480/
 	
 	=============================================================================
 	
+
+{% endraw %}

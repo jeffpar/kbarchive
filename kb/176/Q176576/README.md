@@ -6,6 +6,8 @@ permalink: /kb/176/Q176576/
 
 ## Q176576: XADM: Add/Remove Exchange Server Components Shows Size as Zero
 
+{% raw %}
+
 	Article: Q176576
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -57,3 +59,5 @@ permalink: /kb/176/Q176576/
 	
 	=============================================================================
 	
+
+{% endraw %}

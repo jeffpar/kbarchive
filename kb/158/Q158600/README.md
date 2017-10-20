@@ -6,6 +6,8 @@ permalink: /kb/158/Q158600/
 
 ## Q158600: Mac Encarta 97: Readme.txt: Troubleshooting and Suggestions
 
+{% raw %}
+
 	Article: Q158600
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -112,3 +114,5 @@ permalink: /kb/158/Q158600/
 	
 	=============================================================================
 	
+
+{% endraw %}

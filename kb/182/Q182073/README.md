@@ -6,6 +6,8 @@ permalink: /kb/182/Q182073/
 
 ## Q182073: WD97: Picture Becomes Red &quot;X&quot; When Mac Word 98 File Saved in 97
 
+{% raw %}
+
 	Article: Q182073
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -71,3 +73,5 @@ permalink: /kb/182/Q182073/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143023/
 
 ## Q143023: PPT: Text in Microsoft Excel Table Shifted Up in Slide Printout
 
+{% raw %}
+
 	Article: Q143023
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,7.0
@@ -54,3 +56,5 @@ permalink: /kb/143/Q143023/
 	
 	=============================================================================
 	
+
+{% endraw %}

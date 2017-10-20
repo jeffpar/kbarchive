@@ -6,6 +6,8 @@ permalink: /kb/154/Q154751/
 
 ## Q154751: XCLN: Corrupt Reminder.dat Causes Errors with Preview Pane
 
+{% raw %}
+
 	Article: Q154751
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -67,3 +69,5 @@ permalink: /kb/154/Q154751/
 	
 	=============================================================================
 	
+
+{% endraw %}

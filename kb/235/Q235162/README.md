@@ -6,6 +6,8 @@ permalink: /kb/235/Q235162/
 
 ## Q235162: SMS: Operating System Install Time/Date Is Inaccurate
 
+{% raw %}
+
 	Article: Q235162
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -49,3 +51,5 @@ permalink: /kb/235/Q235162/
 	
 	=============================================================================
 	
+
+{% endraw %}

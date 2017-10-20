@@ -6,6 +6,8 @@ permalink: /kb/135/Q135941/
 
 ## Q135941: Write Protection Error Message with DriveSpace 3
 
+{% raw %}
+
 	Article: Q135941
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/135/Q135941/
 	
 	=============================================================================
 	
+
+{% endraw %}

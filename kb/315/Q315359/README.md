@@ -6,6 +6,8 @@ permalink: /kb/315/Q315359/
 
 ## Q315359: PRB: Properties Truncated When OLE DB Provider for SQL Svr Used
 
+{% raw %}
+
 	Article: Q315359
 	Product(s): Internet Information Server
 	Version(s): 2.0,4.0
@@ -55,3 +57,5 @@ permalink: /kb/315/Q315359/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/202/Q202054/
 
 ## Q202054: XWEB: Outlook Web Access Does Not Reply To an Optional Address
 
+{% raw %}
+
 	Article: Q202054
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5,8.0,8.01,8.02,8.03,8.5
@@ -91,3 +93,5 @@ permalink: /kb/202/Q202054/
 	
 	=============================================================================
 	
+
+{% endraw %}

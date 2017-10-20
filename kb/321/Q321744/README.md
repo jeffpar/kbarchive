@@ -6,6 +6,8 @@ permalink: /kb/321/Q321744/
 
 ## Q321744: Dungeon Siege 1.0: Err Msg: Could Not Connect to the ZoneMatch
 
+{% raw %}
+
 	Article: Q321744
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -66,3 +68,5 @@ permalink: /kb/321/Q321744/
 	
 	=============================================================================
 	
+
+{% endraw %}

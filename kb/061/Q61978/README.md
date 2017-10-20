@@ -6,6 +6,8 @@ permalink: /kb/061/Q61978/
 
 ## Q61978: FIX: U1001 w/ Corrupted MAKEDIR Macro in Real Mode NMAKE 1.11
 
+{% raw %}
+
 	Article: Q61978
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.11
@@ -63,3 +65,5 @@ permalink: /kb/061/Q61978/
 	
 	=============================================================================
 	
+
+{% endraw %}

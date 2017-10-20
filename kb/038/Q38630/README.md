@@ -6,6 +6,8 @@ permalink: /kb/038/Q38630/
 
 ## Q38630: Mac DOS: Microsoft Mail, TOPS FlashCard, and Windows/386
 
+{% raw %}
+
 	Article: Q38630
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.37,2.0,3.0
@@ -41,3 +43,5 @@ permalink: /kb/038/Q38630/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87038/
 
 ## Q87038: SMTP: Dir-Sync Effect on SMTP Addresses
 
+{% raw %}
+
 	Article: Q87038
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -39,3 +41,5 @@ permalink: /kb/087/Q87038/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103719/
 
 ## Q103719: INFO: Migrating Visual C++ for Windows to Windows NT
 
+{% raw %}
+
 	Article: Q103719
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:1.0,2.0,2.1,4.0,5.0
@@ -91,3 +93,5 @@ permalink: /kb/103/Q103719/
 	
 	=============================================================================
 	
+
+{% endraw %}

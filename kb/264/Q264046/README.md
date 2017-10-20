@@ -6,6 +6,8 @@ permalink: /kb/264/Q264046/
 
 ## Q264046: WD97: Cannot Insert Special Character Using a Macro
 
+{% raw %}
+
 	Article: Q264046
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -46,3 +48,5 @@ permalink: /kb/264/Q264046/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103317/
 
 ## Q103317: NetBEUI Trapping in DrainLink Function
 
+{% raw %}
+
 	Article: Q103317
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/103/Q103317/
 	
 	=============================================================================
 	
+
+{% endraw %}

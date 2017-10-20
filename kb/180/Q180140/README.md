@@ -6,6 +6,8 @@ permalink: /kb/180/Q180140/
 
 ## Q180140: SBS WinNT Workstation Client Has Server Service Error
 
+{% raw %}
+
 	Article: Q180140
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -80,3 +82,5 @@ permalink: /kb/180/Q180140/
 	
 	=============================================================================
 	
+
+{% endraw %}

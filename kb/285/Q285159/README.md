@@ -6,6 +6,8 @@ permalink: /kb/285/Q285159/
 
 ## Q285159: How to Create Virtual Directories to a Remote NetWare Share
 
+{% raw %}
+
 	Article: Q285159
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -104,3 +106,5 @@ permalink: /kb/285/Q285159/
 	
 	=============================================================================
 	
+
+{% endraw %}

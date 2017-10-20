@@ -6,6 +6,8 @@ permalink: /kb/176/Q176827/
 
 ## Q176827: No Settings Command on Start Menu After Logging On to Windows
 
+{% raw %}
+
 	Article: Q176827
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,95
@@ -114,3 +116,5 @@ permalink: /kb/176/Q176827/
 	
 	=============================================================================
 	
+
+{% endraw %}

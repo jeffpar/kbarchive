@@ -6,6 +6,8 @@ permalink: /kb/089/Q89212/
 
 ## Q89212: Maintenance Mode Setup Can Cause Corrupted WIN.COM
 
+{% raw %}
+
 	Article: Q89212
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/089/Q89212/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169113/
 
 ## Q169113: XCON: Using X.400 Connector with TCP/IP in Cluster Environment
 
+{% raw %}
+
 	Article: Q169113
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -78,3 +80,5 @@ permalink: /kb/169/Q169113/
 	
 	=============================================================================
 	
+
+{% endraw %}

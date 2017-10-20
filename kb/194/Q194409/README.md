@@ -6,6 +6,8 @@ permalink: /kb/194/Q194409/
 
 ## Q194409: SAMPLE: RESFILE.EXE Stores Any File Type in a Resource File
 
+{% raw %}
+
 	Article: Q194409
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -99,3 +101,5 @@ permalink: /kb/194/Q194409/
 	
 	=============================================================================
 	
+
+{% endraw %}

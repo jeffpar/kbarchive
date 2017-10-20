@@ -6,6 +6,8 @@ permalink: /kb/303/Q303831/
 
 ## Q303831: FIX: ScrollBars on EditBox Control Do Not Show in Compiled .exe
 
+{% raw %}
+
 	Article: Q303831
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -94,3 +96,5 @@ permalink: /kb/303/Q303831/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117440/
 
 ## Q117440: Novell NetWare 3.12 and 4.0 Support in Windows 3.11
 
+{% raw %}
+
 	Article: Q117440
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -121,3 +123,5 @@ permalink: /kb/117/Q117440/
 	
 	=============================================================================
 	
+
+{% endraw %}

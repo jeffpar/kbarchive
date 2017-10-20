@@ -6,6 +6,8 @@ permalink: /kb/186/Q186211/
 
 ## Q186211: Cannot Connect to MSN When More Than One Modem Is Installed
 
+{% raw %}
+
 	Article: Q186211
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6,95,98,98 Second Edition
@@ -57,3 +59,5 @@ permalink: /kb/186/Q186211/
 	
 	=============================================================================
 	
+
+{% endraw %}

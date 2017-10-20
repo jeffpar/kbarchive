@@ -6,6 +6,8 @@ permalink: /kb/137/Q137723/
 
 ## Q137723: NET2182 and NET3546 Errors Appear After LAN Manager 2.2c Setup
 
+{% raw %}
+
 	Article: Q137723
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/137/Q137723/
 	
 	=============================================================================
 	
+
+{% endraw %}

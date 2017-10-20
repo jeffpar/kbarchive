@@ -6,6 +6,8 @@ permalink: /kb/032/Q32685/
 
 ## Q32685: INFO: Using the WM_CTLCOLOR Message
 
+{% raw %}
+
 	Article: Q32685
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -189,3 +191,5 @@ permalink: /kb/032/Q32685/
 	
 	=============================================================================
 	
+
+{% endraw %}

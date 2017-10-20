@@ -6,6 +6,8 @@ permalink: /kb/269/Q269809/
 
 ## Q269809: MSB: Slow Performance or &quot;Out of Memory&quot; Error Message
 
+{% raw %}
+
 	Article: Q269809
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -154,3 +156,5 @@ permalink: /kb/269/Q269809/
 	
 	=============================================================================
 	
+
+{% endraw %}

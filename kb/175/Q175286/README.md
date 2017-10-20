@@ -6,6 +6,8 @@ permalink: /kb/175/Q175286/
 
 ## Q175286: XADM: Clicking Title Bar of Directory Import Pauses Import
 
+{% raw %}
+
 	Article: Q175286
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -48,3 +50,5 @@ permalink: /kb/175/Q175286/
 	
 	=============================================================================
 	
+
+{% endraw %}

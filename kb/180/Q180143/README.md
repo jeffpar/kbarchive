@@ -6,6 +6,8 @@ permalink: /kb/180/Q180143/
 
 ## Q180143: Err Msg: The Microsoft Dial-Up Adapter Is Not Installed...
 
+{% raw %}
+
 	Article: Q180143
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -74,3 +76,5 @@ permalink: /kb/180/Q180143/
 	
 	=============================================================================
 	
+
+{% endraw %}

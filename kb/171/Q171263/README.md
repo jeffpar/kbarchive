@@ -6,6 +6,8 @@ permalink: /kb/171/Q171263/
 
 ## Q171263: WD97: Using Html.dot as WordMail Template May Cause Problems
 
+{% raw %}
+
 	Article: Q171263
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -87,3 +89,5 @@ permalink: /kb/171/Q171263/
 	
 	=============================================================================
 	
+
+{% endraw %}

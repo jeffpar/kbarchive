@@ -6,6 +6,8 @@ permalink: /kb/047/Q47565/
 
 ## Q47565: Using Named COMMON /SYMBOL/ May Cause &quot;String Space Corrupt&quot;
 
+{% raw %}
+
 	Article: Q47565
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -54,3 +56,5 @@ permalink: /kb/047/Q47565/
 	   END
 	
 	Additional reference word: B_BasicCom
+
+{% endraw %}

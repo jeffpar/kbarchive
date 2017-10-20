@@ -6,6 +6,8 @@ permalink: /kb/256/Q256312/
 
 ## Q256312: FTP DIR Command Shows Time Created Instead of Year
 
+{% raw %}
+
 	Article: Q256312
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,3.0,4.0,5.0
@@ -73,3 +75,5 @@ permalink: /kb/256/Q256312/
 	
 	=============================================================================
 	
+
+{% endraw %}

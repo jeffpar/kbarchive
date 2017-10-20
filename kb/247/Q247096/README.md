@@ -6,6 +6,8 @@ permalink: /kb/247/Q247096/
 
 ## Q247096: Tips for Making HTMLA (HTML Administrator) Secure
 
+{% raw %}
+
 	Article: Q247096
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -109,3 +111,5 @@ permalink: /kb/247/Q247096/
 	
 	=============================================================================
 	
+
+{% endraw %}

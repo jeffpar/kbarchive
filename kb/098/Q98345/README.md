@@ -6,6 +6,8 @@ permalink: /kb/098/Q98345/
 
 ## Q98345: DoubleSpace and R6002 Run-Time Errors
 
+{% raw %}
+
 	Article: Q98345
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -102,3 +104,5 @@ permalink: /kb/098/Q98345/
 	
 	=============================================================================
 	
+
+{% endraw %}

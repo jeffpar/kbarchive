@@ -6,6 +6,8 @@ permalink: /kb/242/Q242579/
 
 ## Q242579: Age of Empires II: Zone Prompts You to Insert the CD-ROM
 
+{% raw %}
+
 	Article: Q242579
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -62,3 +64,5 @@ permalink: /kb/242/Q242579/
 	
 	=============================================================================
 	
+
+{% endraw %}

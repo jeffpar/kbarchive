@@ -6,6 +6,8 @@ permalink: /kb/025/Q25259/
 
 ## Q25259: How to Enable Math Coprocessor Instructions
 
+{% raw %}
+
 	Article: Q25259
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a,6.0,6.0a,6.0b
@@ -52,3 +54,5 @@ permalink: /kb/025/Q25259/
 	
 	=============================================================================
 	
+
+{% endraw %}

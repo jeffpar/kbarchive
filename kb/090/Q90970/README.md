@@ -6,6 +6,8 @@ permalink: /kb/090/Q90970/
 
 ## Q90970: Setup, Network Card Settings, and Preliminary Troubleshooting
 
+{% raw %}
+
 	Article: Q90970
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:
@@ -290,3 +292,5 @@ permalink: /kb/090/Q90970/
 	
 	=============================================================================
 	
+
+{% endraw %}

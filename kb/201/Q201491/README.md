@@ -6,6 +6,8 @@ permalink: /kb/201/Q201491/
 
 ## Q201491: XWEB: OWA Does Not Display RTF Text in Contacts
 
+{% raw %}
+
 	Article: Q201491
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -57,3 +59,5 @@ permalink: /kb/201/Q201491/
 	
 	=============================================================================
 	
+
+{% endraw %}

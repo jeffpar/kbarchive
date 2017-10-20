@@ -6,6 +6,8 @@ permalink: /kb/130/Q130328/
 
 ## Q130328: Text After Carriage Return Not Pasted in MS Exchange Subject
 
+{% raw %}
+
 	Article: Q130328
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/130/Q130328/
 	
 	=============================================================================
 	
+
+{% endraw %}

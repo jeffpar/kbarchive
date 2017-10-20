@@ -6,6 +6,8 @@ permalink: /kb/167/Q167752/
 
 ## Q167752: XWEB: Web Client Fails with NTLM
 
+{% raw %}
+
 	Article: Q167752
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -68,3 +70,5 @@ permalink: /kb/167/Q167752/
 	
 	=============================================================================
 	
+
+{% endraw %}

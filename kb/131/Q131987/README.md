@@ -6,6 +6,8 @@ permalink: /kb/131/Q131987/
 
 ## Q131987: MS PROJECT 4 FOR WIN SBS Corrections and Comments
 
+{% raw %}
+
 	Article: Q131987
 	Product(s): Microsoft Press
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/131/Q131987/
 	
 	=============================================================================
 	
+
+{% endraw %}

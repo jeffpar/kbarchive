@@ -6,6 +6,8 @@ permalink: /kb/180/Q180832/
 
 ## Q180832: FIX: Toolbar Buttons Do Not Appear Correctly at Run-time
 
+{% raw %}
+
 	Article: Q180832
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0
@@ -104,3 +106,5 @@ permalink: /kb/180/Q180832/
 	
 	=============================================================================
 	
+
+{% endraw %}

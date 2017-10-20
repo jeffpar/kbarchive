@@ -6,6 +6,8 @@ permalink: /kb/302/Q302797/
 
 ## Q302797: Connection Error After Deleting All Users And Going through setu
 
+{% raw %}
+
 	Article: Q302797
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -50,3 +52,5 @@ permalink: /kb/302/Q302797/
 	
 	=============================================================================
 	
+
+{% endraw %}

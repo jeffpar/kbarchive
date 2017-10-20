@@ -6,6 +6,8 @@ permalink: /kb/072/Q72701/
 
 ## Q72701: Writing Macro Functions and Using the EXITM Directive
 
+{% raw %}
+
 	Article: Q72701
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b
@@ -139,3 +141,5 @@ permalink: /kb/072/Q72701/
 	
 	=============================================================================
 	
+
+{% endraw %}

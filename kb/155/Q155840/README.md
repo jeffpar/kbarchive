@@ -6,6 +6,8 @@ permalink: /kb/155/Q155840/
 
 ## Q155840: XCON: How the Use of '&amp;' in Organization Name Affects Exchange
 
+{% raw %}
+
 	Article: Q155840
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -65,3 +67,5 @@ permalink: /kb/155/Q155840/
 	
 	=============================================================================
 	
+
+{% endraw %}

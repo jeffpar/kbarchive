@@ -6,6 +6,8 @@ permalink: /kb/256/Q256291/
 
 ## Q256291: SMS: Mandatory Advertisement Requiring Logged-On UserMay Not Run
 
+{% raw %}
+
 	Article: Q256291
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -61,3 +63,5 @@ permalink: /kb/256/Q256291/
 	
 	=============================================================================
 	
+
+{% endraw %}

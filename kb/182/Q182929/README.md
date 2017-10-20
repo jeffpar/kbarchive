@@ -6,6 +6,8 @@ permalink: /kb/182/Q182929/
 
 ## Q182929: PRB: Stored Procedures with a Return Statement Can Cause Errors
 
+{% raw %}
+
 	Article: Q182929
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -120,3 +122,5 @@ permalink: /kb/182/Q182929/
 	
 	=============================================================================
 	
+
+{% endraw %}

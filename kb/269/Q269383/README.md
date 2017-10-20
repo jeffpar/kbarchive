@@ -6,6 +6,8 @@ permalink: /kb/269/Q269383/
 
 ## Q269383: PRB: System Registry ErrMsg When Displaying VB/VBA References
 
+{% raw %}
+
 	Article: Q269383
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2000,4.0,5.0,6.0
@@ -168,3 +170,5 @@ permalink: /kb/269/Q269383/
 	
 	=============================================================================
 	
+
+{% endraw %}

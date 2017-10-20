@@ -6,6 +6,8 @@ permalink: /kb/160/Q160909/
 
 ## Q160909: FIX: Binder95 Does Not Show an MFC DocObject Server Icon
 
+{% raw %}
+
 	Article: Q160909
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0
@@ -136,3 +138,5 @@ permalink: /kb/160/Q160909/
 	
 	=============================================================================
 	
+
+{% endraw %}

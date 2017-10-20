@@ -6,6 +6,8 @@ permalink: /kb/119/Q119899/
 
 ## Q119899: SET FILTER TO Does Not Move Record Pointer
 
+{% raw %}
+
 	Article: Q119899
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6x; UNIX:2.6; WINDOWS:2.5x,2.6x,3.0
@@ -55,3 +57,5 @@ permalink: /kb/119/Q119899/
 	
 	=============================================================================
 	
+
+{% endraw %}

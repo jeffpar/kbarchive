@@ -6,6 +6,8 @@ permalink: /kb/324/Q324396/
 
 ## Q324396: PRB: SAK Server Managers Group Security Issue
 
+{% raw %}
+
 	Article: Q324396
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/324/Q324396/
 	
 	=============================================================================
 	
+
+{% endraw %}

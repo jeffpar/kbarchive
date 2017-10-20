@@ -6,6 +6,8 @@ permalink: /kb/072/Q72886/
 
 ## Q72886: DOCERR: MASM 6.0 Programmer's Guide Errors: Chapters 1-6
 
+{% raw %}
+
 	Article: Q72886
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -142,3 +144,5 @@ permalink: /kb/072/Q72886/
 	
 	=============================================================================
 	
+
+{% endraw %}

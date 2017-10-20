@@ -6,6 +6,8 @@ permalink: /kb/138/Q138500/
 
 ## Q138500: PRB: Array-Based List Box or Combo Box Shows One Row Only
 
+{% raw %}
+
 	Article: Q138500
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -88,3 +90,5 @@ permalink: /kb/138/Q138500/
 	
 	=============================================================================
 	
+
+{% endraw %}

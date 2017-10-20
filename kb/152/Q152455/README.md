@@ -6,6 +6,8 @@ permalink: /kb/152/Q152455/
 
 ## Q152455: File Manager Can Only See 32 Volumes of NetWare/FPNW
 
+{% raw %}
+
 	Article: Q152455
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -49,3 +51,5 @@ permalink: /kb/152/Q152455/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173344/
 
 ## Q173344: XFOR: MSMI Cannot Process 256+ Character Recipient Names
 
+{% raw %}
+
 	Article: Q173344
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -80,3 +82,5 @@ permalink: /kb/173/Q173344/
 	
 	=============================================================================
 	
+
+{% endraw %}

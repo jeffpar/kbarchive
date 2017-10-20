@@ -6,6 +6,8 @@ permalink: /kb/214/Q214441/
 
 ## Q214441: Access Violation in Spoolss.exe on Windows NT Terminal Server
 
+{% raw %}
+
 	Article: Q214441
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/214/Q214441/
 	
 	=============================================================================
 	
+
+{% endraw %}

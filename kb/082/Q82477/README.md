@@ -6,6 +6,8 @@ permalink: /kb/082/Q82477/
 
 ## Q82477: TIGA Display Driver Doesn't Work on 286 Systems
 
+{% raw %}
+
 	Article: Q82477
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -37,3 +39,5 @@ permalink: /kb/082/Q82477/
 	
 	=============================================================================
 	
+
+{% endraw %}

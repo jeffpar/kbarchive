@@ -6,6 +6,8 @@ permalink: /kb/152/Q152055/
 
 ## Q152055: FIX: No Error and Constructor Not Called if Prototype Missing
 
+{% raw %}
+
 	Article: Q152055
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -89,3 +91,5 @@ permalink: /kb/152/Q152055/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193335/
 
 ## Q193335: PRB: Error Loading Form With Reference to UserControl1.ctl
 
+{% raw %}
+
 	Article: Q193335
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -88,3 +90,5 @@ permalink: /kb/193/Q193335/
 	
 	=============================================================================
 	
+
+{% endraw %}

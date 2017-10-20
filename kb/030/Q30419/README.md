@@ -6,6 +6,8 @@ permalink: /kb/030/Q30419/
 
 ## Q30419: ASSUME Directive Using SEG Operator on Structure Causes Error
 
+{% raw %}
+
 	Article: Q30419
 	Product(s): See article
 	Version(s): 5.10
@@ -41,3 +43,5 @@ permalink: /kb/030/Q30419/
 	   ret
 	   cat endp
 	   end
+
+{% endraw %}

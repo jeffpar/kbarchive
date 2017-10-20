@@ -6,6 +6,8 @@ permalink: /kb/163/Q163072/
 
 ## Q163072: Allow SNARAS to Use a Fully Qualified LU Name in Phone Number
 
+{% raw %}
+
 	Article: Q163072
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -121,3 +123,5 @@ permalink: /kb/163/Q163072/
 	
 	=============================================================================
 	
+
+{% endraw %}

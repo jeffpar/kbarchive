@@ -6,6 +6,8 @@ permalink: /kb/069/Q69253/
 
 ## Q69253: Windows Err Msg: Incorrect Version of FINSTALL
 
+{% raw %}
+
 	Article: Q69253
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -52,3 +54,5 @@ permalink: /kb/069/Q69253/
 	
 	=============================================================================
 	
+
+{% endraw %}

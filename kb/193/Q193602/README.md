@@ -6,6 +6,8 @@ permalink: /kb/193/Q193602/
 
 ## Q193602: Configuration Options for WLBS Hosts Connected to Layer 2 Switch
 
+{% raw %}
+
 	Article: Q193602
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,2000,4.0
@@ -118,3 +120,5 @@ permalink: /kb/193/Q193602/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135308/
 
 ## Q135308: Disk Administrator Corrupts Partitions
 
+{% raw %}
+
 	Article: Q135308
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -150,3 +152,5 @@ permalink: /kb/135/Q135308/
 	
 	=============================================================================
 	
+
+{% endraw %}

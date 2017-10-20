@@ -6,6 +6,8 @@ permalink: /kb/122/Q122542/
 
 ## Q122542: BUG: Incorrect Code for Loop with Known Value
 
+{% raw %}
+
 	Article: Q122542
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,2.0
@@ -88,3 +90,5 @@ permalink: /kb/122/Q122542/
 	
 	=============================================================================
 	
+
+{% endraw %}

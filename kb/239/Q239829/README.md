@@ -6,6 +6,8 @@ permalink: /kb/239/Q239829/
 
 ## Q239829: How to Automate Uninstalling the DLC Protocol
 
+{% raw %}
+
 	Article: Q239829
 	Product(s): Microsoft Windows NT
 	Version(s): NT:4.0,4.5
@@ -72,3 +74,5 @@ permalink: /kb/239/Q239829/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/041/Q41571/
 
 ## Q41571: QuickC 2.00 README.DOC: The &quot;defined&quot; Operator
 
+{% raw %}
+
 	Article: Q41571
 	Product(s): See article
 	Version(s): 2.00
@@ -23,3 +25,5 @@ permalink: /kb/041/Q41571/
 	
 	   In this example the conditional block executes if DEBUG is not
 	   currently defined.
+
+{% endraw %}

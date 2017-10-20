@@ -6,6 +6,8 @@ permalink: /kb/196/Q196043/
 
 ## Q196043: XADM: Directory Service Stops When Upgrading to 5.5 or 5.5 SP1
 
+{% raw %}
+
 	Article: Q196043
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -85,3 +87,5 @@ permalink: /kb/196/Q196043/
 	
 	=============================================================================
 	
+
+{% endraw %}

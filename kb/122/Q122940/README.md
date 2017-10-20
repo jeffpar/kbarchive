@@ -6,6 +6,8 @@ permalink: /kb/122/Q122940/
 
 ## Q122940: System Stops Responding During Shutdown and Restart Process
 
+{% raw %}
+
 	Article: Q122940
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -62,3 +64,5 @@ permalink: /kb/122/Q122940/
 	
 	=============================================================================
 	
+
+{% endraw %}

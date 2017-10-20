@@ -6,6 +6,8 @@ permalink: /kb/185/Q185258/
 
 ## Q185258: PRB: Increment Decimal Value Works Incorrectly in Spinner
 
+{% raw %}
+
 	Article: Q185258
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -73,3 +75,5 @@ permalink: /kb/185/Q185258/
 	
 	=============================================================================
 	
+
+{% endraw %}

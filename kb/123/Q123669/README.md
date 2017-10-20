@@ -6,6 +6,8 @@ permalink: /kb/123/Q123669/
 
 ## Q123669: Err Msg: Cannot Load Extension FTPSMX.DLL
 
+{% raw %}
+
 	Article: Q123669
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -93,3 +95,5 @@ permalink: /kb/123/Q123669/
 	
 	=============================================================================
 	
+
+{% endraw %}

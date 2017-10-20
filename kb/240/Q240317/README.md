@@ -6,6 +6,8 @@ permalink: /kb/240/Q240317/
 
 ## Q240317: HOWTO: Implement Multiuser Custom Counters in Jet 4.0 &amp; ADO 2.1
 
+{% raw %}
+
 	Article: Q240317
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.1 SP1,2.1 SP2,2.5,2.6,5.0,6.0
@@ -314,3 +316,5 @@ permalink: /kb/240/Q240317/
 	
 	=============================================================================
 	
+
+{% endraw %}

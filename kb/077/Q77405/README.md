@@ -6,6 +6,8 @@ permalink: /kb/077/Q77405/
 
 ## Q77405: View File Does Not Show Subdirectories in MS-DOS Shell
 
+{% raw %}
+
 	Article: Q77405
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0
@@ -81,3 +83,5 @@ permalink: /kb/077/Q77405/
 	
 	=============================================================================
 	
+
+{% endraw %}

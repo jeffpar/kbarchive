@@ -6,6 +6,8 @@ permalink: /kb/186/Q186060/
 
 ## Q186060: Troubleshooting Active Movie Playback Problems
 
+{% raw %}
+
 	Article: Q186060
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -129,3 +131,5 @@ permalink: /kb/186/Q186060/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178259/
 
 ## Q178259: XADM: Chat Fails w/ Invalid Number of Reply/Request Arguments
 
+{% raw %}
+
 	Article: Q178259
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -113,3 +115,5 @@ permalink: /kb/178/Q178259/
 	
 	=============================================================================
 	
+
+{% endraw %}

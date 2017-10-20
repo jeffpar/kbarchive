@@ -6,6 +6,8 @@ permalink: /kb/121/Q121532/
 
 ## Q121532: NCB_CALL Using Group Names Fails on TCP/IP-32
 
+{% raw %}
+
 	Article: Q121532
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11; WINDOWS:3.11
@@ -59,3 +61,5 @@ permalink: /kb/121/Q121532/
 	
 	=============================================================================
 	
+
+{% endraw %}

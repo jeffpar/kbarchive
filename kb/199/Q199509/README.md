@@ -6,6 +6,8 @@ permalink: /kb/199/Q199509/
 
 ## Q199509: XFOR: NNTP Protocol Commands are Case Insensitive
 
+{% raw %}
+
 	Article: Q199509
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -47,3 +49,5 @@ permalink: /kb/199/Q199509/
 	
 	=============================================================================
 	
+
+{% endraw %}

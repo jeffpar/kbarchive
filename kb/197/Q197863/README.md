@@ -6,6 +6,8 @@ permalink: /kb/197/Q197863/
 
 ## Q197863: WLBS Cluster Servers Show Multiple Default Hosts
 
+{% raw %}
+
 	Article: Q197863
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/197/Q197863/
 	
 	=============================================================================
 	
+
+{% endraw %}

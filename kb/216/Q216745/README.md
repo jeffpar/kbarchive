@@ -6,6 +6,8 @@ permalink: /kb/216/Q216745/
 
 ## Q216745: How to Improve Performance of a FrontPage 98 Discussion Web
 
+{% raw %}
+
 	Article: Q216745
 	Product(s): Word Front Page
 	Version(s): WINDOWS:
@@ -81,3 +83,5 @@ permalink: /kb/216/Q216745/
 	
 	=============================================================================
 	
+
+{% endraw %}

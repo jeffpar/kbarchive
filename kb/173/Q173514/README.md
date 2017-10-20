@@ -6,6 +6,8 @@ permalink: /kb/173/Q173514/
 
 ## Q173514: Blank Gray Screen Appears When Starting MSN Program Viewer
 
+{% raw %}
+
 	Article: Q173514
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5 (OEM Release),3.02,95
@@ -71,3 +73,5 @@ permalink: /kb/173/Q173514/
 	
 	=============================================================================
 	
+
+{% endraw %}

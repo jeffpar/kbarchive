@@ -6,6 +6,8 @@ permalink: /kb/162/Q162927/
 
 ## Q162927: Telnetting to Port 53 May Crash DNS Service
 
+{% raw %}
+
 	Article: Q162927
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/162/Q162927/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86376/
 
 ## Q86376: PC WSPlus: Assistant Needs Access to Postoffice
 
+{% raw %}
+
 	Article: Q86376
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/086/Q86376/
 	
 	=============================================================================
 	
+
+{% endraw %}

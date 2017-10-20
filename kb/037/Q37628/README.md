@@ -6,6 +6,8 @@ permalink: /kb/037/Q37628/
 
 ## Q37628: Toggling Display Modes: 25-, 43-, and 50-Row Modes
 
+{% raw %}
+
 	Article: Q37628
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -51,3 +53,5 @@ permalink: /kb/037/Q37628/
 	   arg "toggle41:alt+e" assign
 	
 	This technique is very useful in learning to write macros.
+
+{% endraw %}

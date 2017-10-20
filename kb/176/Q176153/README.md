@@ -6,6 +6,8 @@ permalink: /kb/176/Q176153/
 
 ## Q176153: Bookshelf: Right-click Define Feature Does Not Function
 
+{% raw %}
+
 	Article: Q176153
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:7.0,7.0a,97
@@ -150,3 +152,5 @@ permalink: /kb/176/Q176153/
 	
 	=============================================================================
 	
+
+{% endraw %}

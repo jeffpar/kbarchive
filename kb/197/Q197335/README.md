@@ -6,6 +6,8 @@ permalink: /kb/197/Q197335/
 
 ## Q197335: XFOR: NOTES Textured Calendar MSG. do not have EndDateTime
 
+{% raw %}
+
 	Article: Q197335
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -75,3 +77,5 @@ permalink: /kb/197/Q197335/
 	
 	=============================================================================
 	
+
+{% endraw %}

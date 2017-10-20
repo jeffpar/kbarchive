@@ -6,6 +6,8 @@ permalink: /kb/143/Q143316/
 
 ## Q143316: Unconf: Haunted House GPF Using Some Ensoniq Sound Cards
 
+{% raw %}
+
 	Article: Q143316
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -71,3 +73,5 @@ permalink: /kb/143/Q143316/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122297/
 
 ## Q122297: Comparison of MS-DOS Clients for Windows NT Version 3.5
 
+{% raw %}
+
 	Article: Q122297
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -227,3 +229,5 @@ permalink: /kb/122/Q122297/
 	
 	=============================================================================
 	
+
+{% endraw %}

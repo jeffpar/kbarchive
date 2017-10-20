@@ -6,6 +6,8 @@ permalink: /kb/149/Q149653/
 
 ## Q149653: TN3270 Admin Command Line Options
 
+{% raw %}
+
 	Article: Q149653
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -49,3 +51,5 @@ permalink: /kb/149/Q149653/
 	
 	=============================================================================
 	
+
+{% endraw %}

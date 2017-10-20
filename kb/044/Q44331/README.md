@@ -6,6 +6,8 @@ permalink: /kb/044/Q44331/
 
 ## Q44331: QuickC tolower Macro Descriptions Contradictory
 
+{% raw %}
+
 	Article: Q44331
 	Product(s): See article
 	Version(s): 2.00
@@ -41,3 +43,5 @@ permalink: /kb/044/Q44331/
 	
 	In other words, the description section in on-line help is correct;
 	_tolower should only be used when c is KNOWN to be uppercase.
+
+{% endraw %}

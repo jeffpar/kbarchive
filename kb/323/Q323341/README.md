@@ -6,6 +6,8 @@ permalink: /kb/323/Q323341/
 
 ## Q323341: SMS: Software Installation Account Does Not Work on Windows XP
 
+{% raw %}
+
 	Article: Q323341
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3,2.0 SP4
@@ -52,3 +54,5 @@ permalink: /kb/323/Q323341/
 	
 	=============================================================================
 	
+
+{% endraw %}

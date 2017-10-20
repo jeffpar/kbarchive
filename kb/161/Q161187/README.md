@@ -6,6 +6,8 @@ permalink: /kb/161/Q161187/
 
 ## Q161187: FIX: Forms Collection Exposes Memo and General Windows
 
+{% raw %}
+
 	Article: Q161187
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -79,3 +81,5 @@ permalink: /kb/161/Q161187/
 	
 	=============================================================================
 	
+
+{% endraw %}

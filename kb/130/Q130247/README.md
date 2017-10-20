@@ -6,6 +6,8 @@ permalink: /kb/130/Q130247/
 
 ## Q130247: How to Set Up and Use Oracle7 Data Sources with ODBC
 
+{% raw %}
+
 	Article: Q130247
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 2.50b 2.60 2.60a 3.00
@@ -300,3 +302,5 @@ permalink: /kb/130/Q130247/
 	
 	=============================================================================
 	
+
+{% endraw %}

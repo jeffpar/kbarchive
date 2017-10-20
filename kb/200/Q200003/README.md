@@ -6,6 +6,8 @@ permalink: /kb/200/Q200003/
 
 ## Q200003: XFOR: Messages Sit in MS Mail Connector Queue and Event ID 2028
 
+{% raw %}
+
 	Article: Q200003
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -85,3 +87,5 @@ permalink: /kb/200/Q200003/
 	
 	=============================================================================
 	
+
+{% endraw %}

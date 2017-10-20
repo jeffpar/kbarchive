@@ -6,6 +6,8 @@ permalink: /kb/194/Q194920/
 
 ## Q194920: XFOR: Missing Message Bodies after GroupWise Migration
 
+{% raw %}
+
 	Article: Q194920
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -67,3 +69,5 @@ permalink: /kb/194/Q194920/
 	
 	=============================================================================
 	
+
+{% endraw %}

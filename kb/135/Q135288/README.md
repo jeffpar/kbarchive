@@ -6,6 +6,8 @@ permalink: /kb/135/Q135288/
 
 ## Q135288: Network Monitor Msg: Driver Does Not Support Promiscuous Mode
 
+{% raw %}
+
 	Article: Q135288
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/135/Q135288/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141810/
 
 ## Q141810: BUG: pcbValue Shows 1022 Even if Size of Available Data &gt; 1022
 
+{% raw %}
+
 	Article: Q141810
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -82,3 +84,5 @@ permalink: /kb/141/Q141810/
 	
 	=============================================================================
 	
+
+{% endraw %}

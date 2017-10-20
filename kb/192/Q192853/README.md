@@ -6,6 +6,8 @@ permalink: /kb/192/Q192853/
 
 ## Q192853: FIX: Wincore.cpp Line 879 Assert When Using MFC Classes
 
+{% raw %}
+
 	Article: Q192853
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -139,3 +141,5 @@ permalink: /kb/192/Q192853/
 	
 	=============================================================================
 	
+
+{% endraw %}

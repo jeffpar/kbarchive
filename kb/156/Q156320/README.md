@@ -6,6 +6,8 @@ permalink: /kb/156/Q156320/
 
 ## Q156320: XCLN: Contributor Unable to Submit Form to Public Folder
 
+{% raw %}
+
 	Article: Q156320
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -88,3 +90,5 @@ permalink: /kb/156/Q156320/
 	
 	=============================================================================
 	
+
+{% endraw %}

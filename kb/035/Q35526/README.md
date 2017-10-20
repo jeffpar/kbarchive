@@ -6,6 +6,8 @@ permalink: /kb/035/Q35526/
 
 ## Q35526: Exiting without Saving
 
+{% raw %}
+
 	Article: Q35526
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -23,3 +25,5 @@ permalink: /kb/035/Q35526/
 	Normally, when the keystroke for exit is invoked, the file will be
 	saved before exiting. However, typing the keystroke for "Meta" before
 	the exit keystroke allows you to exit without saving your file.
+
+{% endraw %}

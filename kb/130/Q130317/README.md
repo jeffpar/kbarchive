@@ -6,6 +6,8 @@ permalink: /kb/130/Q130317/
 
 ## Q130317: PC Mac: Cannot Access New Messages on Windows NT 3.5 Server
 
+{% raw %}
+
 	Article: Q130317
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -72,3 +74,5 @@ permalink: /kb/130/Q130317/
 	
 	=============================================================================
 	
+
+{% endraw %}

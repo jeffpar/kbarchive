@@ -6,6 +6,8 @@ permalink: /kb/167/Q167261/
 
 ## Q167261: Document Error: Replacing a Primary Domain Controller
 
+{% raw %}
+
 	Article: Q167261
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -43,3 +45,5 @@ permalink: /kb/167/Q167261/
 	
 	=============================================================================
 	
+
+{% endraw %}

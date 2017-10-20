@@ -6,6 +6,8 @@ permalink: /kb/321/Q321726/
 
 ## Q321726: Flight Simulator 2002: How to Print an Aircraft Checklist
 
+{% raw %}
+
 	Article: Q321726
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/321/Q321726/
 	
 	=============================================================================
 	
+
+{% endraw %}

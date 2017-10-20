@@ -6,6 +6,8 @@ permalink: /kb/171/Q171814/
 
 ## Q171814: FIX: System Menu Appears When MouseDown Event Invokes a Drag
 
+{% raw %}
+
 	Article: Q171814
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -98,3 +100,5 @@ permalink: /kb/171/Q171814/
 	
 	=============================================================================
 	
+
+{% endraw %}

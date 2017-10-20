@@ -6,6 +6,8 @@ permalink: /kb/185/Q185841/
 
 ## Q185841: Err Msg: This Program May Not Run Correctly Because of New...
 
+{% raw %}
+
 	Article: Q185841
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:4.01,95
@@ -86,3 +88,5 @@ permalink: /kb/185/Q185841/
 	
 	=============================================================================
 	
+
+{% endraw %}

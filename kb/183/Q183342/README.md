@@ -6,6 +6,8 @@ permalink: /kb/183/Q183342/
 
 ## Q183342: WD97: TableToOrFromText Button Is Blank on Customized Toolbar
 
+{% raw %}
+
 	Article: Q183342
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -66,3 +68,5 @@ permalink: /kb/183/Q183342/
 	
 	=============================================================================
 	
+
+{% endraw %}

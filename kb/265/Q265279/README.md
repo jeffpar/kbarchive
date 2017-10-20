@@ -6,6 +6,8 @@ permalink: /kb/265/Q265279/
 
 ## Q265279: PRB: Disabling of File Caching in IIS 4.0 Fails
 
+{% raw %}
+
 	Article: Q265279
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -95,3 +97,5 @@ permalink: /kb/265/Q265279/
 	
 	=============================================================================
 	
+
+{% endraw %}

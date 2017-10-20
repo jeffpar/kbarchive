@@ -6,6 +6,8 @@ permalink: /kb/154/Q154518/
 
 ## Q154518: FIX: MDI Child Windows Control Box Affected by Parent Toolbars
 
+{% raw %}
+
 	Article: Q154518
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/154/Q154518/
 	
 	=============================================================================
 	
+
+{% endraw %}

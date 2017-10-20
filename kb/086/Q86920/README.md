@@ -6,6 +6,8 @@ permalink: /kb/086/Q86920/
 
 ## Q86920: DOC: OPENFILENAME lpstrInitialDir Documented Incorrectly
 
+{% raw %}
+
 	Article: Q86920
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -84,3 +86,5 @@ permalink: /kb/086/Q86920/
 	
 	=============================================================================
 	
+
+{% endraw %}

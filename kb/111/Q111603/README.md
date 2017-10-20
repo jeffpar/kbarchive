@@ -6,6 +6,8 @@ permalink: /kb/111/Q111603/
 
 ## Q111603: BUG: GlobalCompact() May Return an Inaccurate Value
 
+{% raw %}
+
 	Article: Q111603
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -53,3 +55,5 @@ permalink: /kb/111/Q111603/
 	
 	=============================================================================
 	
+
+{% endraw %}

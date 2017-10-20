@@ -6,6 +6,8 @@ permalink: /kb/174/Q174553/
 
 ## Q174553: HOWTO: Detect When a Control Is Placed into a UserControl
 
+{% raw %}
+
 	Article: Q174553
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/174/Q174553/
 	
 	=============================================================================
 	
+
+{% endraw %}

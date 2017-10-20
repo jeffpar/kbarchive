@@ -6,6 +6,8 @@ permalink: /kb/141/Q141839/
 
 ## Q141839: How to Set Up a Network Printer Using Point and Print
 
+{% raw %}
+
 	Article: Q141839
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -93,3 +95,5 @@ permalink: /kb/141/Q141839/
 	
 	=============================================================================
 	
+
+{% endraw %}

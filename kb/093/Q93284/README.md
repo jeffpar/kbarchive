@@ -6,6 +6,8 @@ permalink: /kb/093/Q93284/
 
 ## Q93284: WFWG Err Msg: Error 12: The Access Code Is Invalid
 
+{% raw %}
+
 	Article: Q93284
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/093/Q93284/
 	
 	=============================================================================
 	
+
+{% endraw %}

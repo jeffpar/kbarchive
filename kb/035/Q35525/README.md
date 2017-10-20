@@ -6,6 +6,8 @@ permalink: /kb/035/Q35525/
 
 ## Q35525: Loading a New File into the Editor
 
+{% raw %}
+
 	Article: Q35525
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -25,3 +27,5 @@ permalink: /kb/035/Q35525/
 	
 	Arg textarg Setfile, where textarg is the name of the file you wish to
 	load.
+
+{% endraw %}

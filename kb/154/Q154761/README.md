@@ -6,6 +6,8 @@ permalink: /kb/154/Q154761/
 
 ## Q154761: DSMN How to Recover from a Loss of the Account Synchronization
 
+{% raw %}
+
 	Article: Q154761
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -81,3 +83,5 @@ permalink: /kb/154/Q154761/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197478/
 
 ## Q197478: HOWTO: How to Detect and Remove Inactive Machine Accounts
 
+{% raw %}
+
 	Article: Q197478
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -227,3 +229,5 @@ permalink: /kb/197/Q197478/
 	
 	=============================================================================
 	
+
+{% endraw %}

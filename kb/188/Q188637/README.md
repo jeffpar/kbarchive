@@ -6,6 +6,8 @@ permalink: /kb/188/Q188637/
 
 ## Q188637: XADM: How to Determine the Size of Recoverable Items in the Info
 
+{% raw %}
+
 	Article: Q188637
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -108,3 +110,5 @@ permalink: /kb/188/Q188637/
 	
 	=============================================================================
 	
+
+{% endraw %}

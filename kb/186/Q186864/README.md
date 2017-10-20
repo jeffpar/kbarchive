@@ -6,6 +6,8 @@ permalink: /kb/186/Q186864/
 
 ## Q186864: XWEB: Text Indented Incorrectly When Replying to Message in OWA
 
+{% raw %}
+
 	Article: Q186864
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -50,3 +52,5 @@ permalink: /kb/186/Q186864/
 	
 	=============================================================================
 	
+
+{% endraw %}

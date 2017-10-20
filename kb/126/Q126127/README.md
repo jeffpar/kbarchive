@@ -6,6 +6,8 @@ permalink: /kb/126/Q126127/
 
 ## Q126127: Network Bindings Not Displayed Correctly for a Protocol
 
+{% raw %}
+
 	Article: Q126127
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50
@@ -49,3 +51,5 @@ permalink: /kb/126/Q126127/
 	
 	=============================================================================
 	
+
+{% endraw %}

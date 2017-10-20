@@ -6,6 +6,8 @@ permalink: /kb/178/Q178918/
 
 ## Q178918: XADM: Select CD-ROM Update Kit Is Missing Setup
 
+{% raw %}
+
 	Article: Q178918
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -58,3 +60,5 @@ permalink: /kb/178/Q178918/
 	
 	=============================================================================
 	
+
+{% endraw %}

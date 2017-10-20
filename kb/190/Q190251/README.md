@@ -6,6 +6,8 @@ permalink: /kb/190/Q190251/
 
 ## Q190251: BUG: Option Explicit Statement is Not Added by a DHTML Page
 
+{% raw %}
+
 	Article: Q190251
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -65,3 +67,5 @@ permalink: /kb/190/Q190251/
 	
 	=============================================================================
 	
+
+{% endraw %}

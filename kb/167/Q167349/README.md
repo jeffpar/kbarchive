@@ -6,6 +6,8 @@ permalink: /kb/167/Q167349/
 
 ## Q167349: PRB: Unable to Derive Classes from External Dependencies
 
+{% raw %}
+
 	Article: Q167349
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -99,3 +101,5 @@ permalink: /kb/167/Q167349/
 	
 	=============================================================================
 	
+
+{% endraw %}

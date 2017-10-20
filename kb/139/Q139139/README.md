@@ -6,6 +6,8 @@ permalink: /kb/139/Q139139/
 
 ## Q139139: Cannot Send E-mail to Address Containing Exclamation Point
 
+{% raw %}
+
 	Article: Q139139
 	Product(s): The Microsoft Network
 	Version(s): 1.0,1.05,1.2,1.3,2.0,2.5,2.6
@@ -52,3 +54,5 @@ permalink: /kb/139/Q139139/
 	
 	=============================================================================
 	
+
+{% endraw %}

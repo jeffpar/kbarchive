@@ -6,6 +6,8 @@ permalink: /kb/066/Q66497/
 
 ## Q66497: C and c Are Illegal Symbols in MASM 5.10 and 5.10a
 
+{% raw %}
+
 	Article: Q66497
 	Product(s): See article
 	Version(s): 5.10 5.10a | 5.10 5.10a
@@ -40,3 +42,5 @@ permalink: /kb/066/Q66497/
 	----------
 	
 	Change "c" or "C" to something else.
+
+{% endraw %}

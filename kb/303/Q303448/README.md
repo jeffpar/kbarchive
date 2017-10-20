@@ -6,6 +6,8 @@ permalink: /kb/303/Q303448/
 
 ## Q303448: XADM: Exchange Server 5.5 LDAP Service Denial of Service Occurs
 
+{% raw %}
+
 	Article: Q303448
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -90,3 +92,5 @@ permalink: /kb/303/Q303448/
 	
 	=============================================================================
 	
+
+{% endraw %}

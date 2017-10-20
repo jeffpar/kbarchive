@@ -6,6 +6,8 @@ permalink: /kb/157/Q157509/
 
 ## Q157509: Basketball: How to View Player Statistics During Play
 
+{% raw %}
+
 	Article: Q157509
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -77,3 +79,5 @@ permalink: /kb/157/Q157509/
 	
 	=============================================================================
 	
+
+{% endraw %}

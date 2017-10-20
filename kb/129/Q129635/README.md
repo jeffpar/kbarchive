@@ -6,6 +6,8 @@ permalink: /kb/129/Q129635/
 
 ## Q129635: INFO: User-Defined Collections Are 1-Based Not 0-Based
 
+{% raw %}
+
 	Article: Q129635
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -54,3 +56,5 @@ permalink: /kb/129/Q129635/
 	
 	=============================================================================
 	
+
+{% endraw %}

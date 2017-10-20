@@ -6,6 +6,8 @@ permalink: /kb/114/Q114471/
 
 ## Q114471: INFO: Drawing a Rubber Rectangle
 
+{% raw %}
+
 	Article: Q114471
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -70,3 +72,5 @@ permalink: /kb/114/Q114471/
 	
 	=============================================================================
 	
+
+{% endraw %}

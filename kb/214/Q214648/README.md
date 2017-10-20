@@ -6,6 +6,8 @@ permalink: /kb/214/Q214648/
 
 ## Q214648: XFOR:&quot;No objects which match the query criteria&quot; message on API
 
+{% raw %}
+
 	Article: Q214648
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -64,3 +66,5 @@ permalink: /kb/214/Q214648/
 	
 	=============================================================================
 	
+
+{% endraw %}

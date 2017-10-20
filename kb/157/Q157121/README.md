@@ -6,6 +6,8 @@ permalink: /kb/157/Q157121/
 
 ## Q157121: WD97: Can't Remove Background Sound Object in HTML Document
 
+{% raw %}
+
 	Article: Q157121
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/157/Q157121/
 	
 	=============================================================================
 	
+
+{% endraw %}

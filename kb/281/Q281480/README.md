@@ -6,6 +6,8 @@ permalink: /kb/281/Q281480/
 
 ## Q281480: Workstation Does Not Connect to Network Resources Using NTLMv2
 
+{% raw %}
+
 	Article: Q281480
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP5,4.0 SP6
@@ -131,3 +133,5 @@ permalink: /kb/281/Q281480/
 	
 	=============================================================================
 	
+
+{% endraw %}

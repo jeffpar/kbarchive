@@ -6,6 +6,8 @@ permalink: /kb/138/Q138830/
 
 ## Q138830: FIX: Dismissing Splash Screen from Component Causes Assertion
 
+{% raw %}
+
 	Article: Q138830
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -142,3 +144,5 @@ permalink: /kb/138/Q138830/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156527/
 
 ## Q156527: &quot;STOP: 0x00000093&quot; with Novell NetWare Client Services
 
+{% raw %}
+
 	Article: Q156527
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -119,3 +121,5 @@ permalink: /kb/156/Q156527/
 	
 	=============================================================================
 	
+
+{% endraw %}

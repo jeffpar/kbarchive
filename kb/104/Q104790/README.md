@@ -6,6 +6,8 @@ permalink: /kb/104/Q104790/
 
 ## Q104790: Using Int 21h Get/Set Media ID in the Windows Environment
 
+{% raw %}
+
 	Article: Q104790
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -190,3 +192,5 @@ permalink: /kb/104/Q104790/
 	
 	=============================================================================
 	
+
+{% endraw %}

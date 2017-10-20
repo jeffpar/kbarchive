@@ -6,6 +6,8 @@ permalink: /kb/118/Q118929/
 
 ## Q118929: PC Win: Change Password Is Case Sensitive
 
+{% raw %}
+
 	Article: Q118929
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -35,3 +37,5 @@ permalink: /kb/118/Q118929/
 	
 	=============================================================================
 	
+
+{% endraw %}

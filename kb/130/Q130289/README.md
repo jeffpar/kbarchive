@@ -6,6 +6,8 @@ permalink: /kb/130/Q130289/
 
 ## Q130289: TN3270 Errors with Telnet Daemon Installed
 
+{% raw %}
+
 	Article: Q130289
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,2.11SP1,2.11SP2,3.0,3.0SP1,3.0SP2,3.0SP3,4.0
@@ -124,3 +126,5 @@ permalink: /kb/130/Q130289/
 	
 	=============================================================================
 	
+
+{% endraw %}

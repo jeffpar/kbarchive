@@ -6,6 +6,8 @@ permalink: /kb/145/Q145686/
 
 ## Q145686: PRB: CDaoRecordView Bookmark Members Invalid After Requery()
 
+{% raw %}
+
 	Article: Q145686
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -98,3 +100,5 @@ permalink: /kb/145/Q145686/
 	
 	=============================================================================
 	
+
+{% endraw %}

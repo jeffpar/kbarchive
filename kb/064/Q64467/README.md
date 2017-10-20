@@ -6,6 +6,8 @@ permalink: /kb/064/Q64467/
 
 ## Q64467: TI Omnilaser 2115 Requires Firmware Version 2.613 or 2.635
 
+{% raw %}
+
 	Article: Q64467
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -51,3 +53,5 @@ permalink: /kb/064/Q64467/
 	
 	=============================================================================
 	
+
+{% endraw %}

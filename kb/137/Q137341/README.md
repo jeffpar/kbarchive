@@ -6,6 +6,8 @@ permalink: /kb/137/Q137341/
 
 ## Q137341: Appointments Print on a Weekly Basis Only
 
+{% raw %}
+
 	Article: Q137341
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -43,3 +45,5 @@ permalink: /kb/137/Q137341/
 	
 	=============================================================================
 	
+
+{% endraw %}

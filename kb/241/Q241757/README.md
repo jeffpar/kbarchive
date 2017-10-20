@@ -6,6 +6,8 @@ permalink: /kb/241/Q241757/
 
 ## Q241757: XGEN: Readme.txt: Microsoft Exchange 5.5 U.S. Service Pack 3
 
+{% raw %}
+
 	Article: Q241757
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -256,3 +258,5 @@ permalink: /kb/241/Q241757/
 	
 	=============================================================================
 	
+
+{% endraw %}

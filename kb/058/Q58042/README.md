@@ -6,6 +6,8 @@ permalink: /kb/058/Q58042/
 
 ## Q58042: QCARDS Demo Program Incorrectly Searches for Zip Code
 
+{% raw %}
+
 	Article: Q58042
 	Product(s): See article
 	Version(s): 4.50
@@ -48,3 +50,5 @@ permalink: /kb/058/Q58042/
 	            FindCard% = Card
 	            EXIT FUNCTION
 	        END IF
+
+{% endraw %}

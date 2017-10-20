@@ -6,6 +6,8 @@ permalink: /kb/128/Q128817/
 
 ## Q128817: How to Display Check Boxes in Reports
 
+{% raw %}
+
 	Article: Q128817
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -84,3 +86,5 @@ permalink: /kb/128/Q128817/
 	
 	=============================================================================
 	
+
+{% endraw %}

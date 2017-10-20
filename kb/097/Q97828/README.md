@@ -6,6 +6,8 @@ permalink: /kb/097/Q97828/
 
 ## Q97828: WEP 2: Level Passwords for Pipe Dream
 
+{% raw %}
+
 	Article: Q97828
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -53,3 +55,5 @@ permalink: /kb/097/Q97828/
 	
 	=============================================================================
 	
+
+{% endraw %}

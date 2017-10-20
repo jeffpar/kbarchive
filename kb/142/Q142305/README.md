@@ -6,6 +6,8 @@ permalink: /kb/142/Q142305/
 
 ## Q142305: Min. and Max. Interval Values for WINS Configuration
 
+{% raw %}
+
 	Article: Q142305
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -65,3 +67,5 @@ permalink: /kb/142/Q142305/
 	
 	=============================================================================
 	
+
+{% endraw %}

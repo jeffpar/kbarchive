@@ -6,6 +6,8 @@ permalink: /kb/327/Q327250/
 
 ## Q327250: DirectDraw May Not Work After You Install Windows Installer 2.0
 
+{% raw %}
+
 	Article: Q327250
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -86,3 +88,5 @@ permalink: /kb/327/Q327250/
 	
 	=============================================================================
 	
+
+{% endraw %}

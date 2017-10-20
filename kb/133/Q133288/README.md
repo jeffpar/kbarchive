@@ -6,6 +6,8 @@ permalink: /kb/133/Q133288/
 
 ## Q133288: PRB: Codepage Does Not Show in Project Information Screen
 
+{% raw %}
+
 	Article: Q133288
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/133/Q133288/
 	
 	=============================================================================
 	
+
+{% endraw %}

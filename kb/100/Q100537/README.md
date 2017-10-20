@@ -6,6 +6,8 @@ permalink: /kb/100/Q100537/
 
 ## Q100537: Using MS-DOS 6 with IBM Lan Server 2.0 Remote Boot
 
+{% raw %}
+
 	Article: Q100537
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -86,3 +88,5 @@ permalink: /kb/100/Q100537/
 	
 	=============================================================================
 	
+
+{% endraw %}

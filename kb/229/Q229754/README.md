@@ -6,6 +6,8 @@ permalink: /kb/229/Q229754/
 
 ## Q229754: XFOR: Web 3 cc:Mail Migration Wizard Does Not Migrate PAB
 
+{% raw %}
+
 	Article: Q229754
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -63,3 +65,5 @@ permalink: /kb/229/Q229754/
 	
 	=============================================================================
 	
+
+{% endraw %}

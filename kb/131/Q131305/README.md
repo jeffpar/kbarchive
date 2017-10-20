@@ -6,6 +6,8 @@ permalink: /kb/131/Q131305/
 
 ## Q131305: How To Make a Network Software Component Setup Disk from CD-ROM
 
+{% raw %}
+
 	Article: Q131305
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -77,3 +79,5 @@ permalink: /kb/131/Q131305/
 	
 	=============================================================================
 	
+
+{% endraw %}

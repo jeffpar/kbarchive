@@ -6,6 +6,8 @@ permalink: /kb/077/Q77219/
 
 ## Q77219: XMS Memory Is Not Reported Until Accessed
 
+{% raw %}
+
 	Article: Q77219
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -63,3 +65,5 @@ permalink: /kb/077/Q77219/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/309/Q309135/
 
 ## Q309135: Games: Using GOS Switches for Troubleshooting
 
+{% raw %}
+
 	Article: Q309135
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -120,3 +122,5 @@ permalink: /kb/309/Q309135/
 	
 	=============================================================================
 	
+
+{% endraw %}

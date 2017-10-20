@@ -6,6 +6,8 @@ permalink: /kb/118/Q118692/
 
 ## Q118692: Printing Output is Always Directed to the Upper Output Tray
 
+{% raw %}
+
 	Article: Q118692
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5
@@ -54,3 +56,5 @@ permalink: /kb/118/Q118692/
 	
 	=============================================================================
 	
+
+{% endraw %}

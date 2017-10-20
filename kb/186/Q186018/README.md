@@ -6,6 +6,8 @@ permalink: /kb/186/Q186018/
 
 ## Q186018: WD97: Table Borders Lost When Table Pasted or Linked
 
+{% raw %}
+
 	Article: Q186018
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/186/Q186018/
 	
 	=============================================================================
 	
+
+{% endraw %}

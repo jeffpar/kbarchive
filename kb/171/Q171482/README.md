@@ -6,6 +6,8 @@ permalink: /kb/171/Q171482/
 
 ## Q171482: FIX: Crash When Enum Name Referenced Incorrectly
 
+{% raw %}
+
 	Article: Q171482
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -130,3 +132,5 @@ permalink: /kb/171/Q171482/
 	
 	=============================================================================
 	
+
+{% endraw %}

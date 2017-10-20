@@ -6,6 +6,8 @@ permalink: /kb/185/Q185674/
 
 ## Q185674: PRB: Default Property Causes DISP_XXXX_ID Methods/Props to Fail
 
+{% raw %}
+
 	Article: Q185674
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -98,3 +100,5 @@ permalink: /kb/185/Q185674/
 	
 	=============================================================================
 	
+
+{% endraw %}

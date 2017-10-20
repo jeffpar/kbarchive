@@ -6,6 +6,8 @@ permalink: /kb/082/Q82226/
 
 ## Q82226: Minor Distortions Using TrueType Fonts
 
+{% raw %}
+
 	Article: Q82226
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/082/Q82226/
 	
 	=============================================================================
 	
+
+{% endraw %}

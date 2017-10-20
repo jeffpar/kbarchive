@@ -6,6 +6,8 @@ permalink: /kb/272/Q272236/
 
 ## Q272236: Games: Video Problems with Intense3D Wildcat Video Adapter
 
+{% raw %}
+
 	Article: Q272236
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -97,3 +99,5 @@ permalink: /kb/272/Q272236/
 	
 	=============================================================================
 	
+
+{% endraw %}

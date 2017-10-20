@@ -6,6 +6,8 @@ permalink: /kb/192/Q192154/
 
 ## Q192154: INFO: ASP Pages Cannot Be Imported into an IIS Application
 
+{% raw %}
+
 	Article: Q192154
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -57,3 +59,5 @@ permalink: /kb/192/Q192154/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124943/
 
 ## Q124943: Musical Instruments: Pictures Do Not Print in Color
 
+{% raw %}
+
 	Article: Q124943
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -91,3 +93,5 @@ permalink: /kb/124/Q124943/
 	
 	=============================================================================
 	
+
+{% endraw %}

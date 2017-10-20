@@ -6,6 +6,8 @@ permalink: /kb/155/Q155559/
 
 ## Q155559: NWRDR Cannot Perform UNC Operations on NDS Server Objects
 
+{% raw %}
+
 	Article: Q155559
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/155/Q155559/
 	
 	=============================================================================
 	
+
+{% endraw %}

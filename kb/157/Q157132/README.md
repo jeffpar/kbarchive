@@ -6,6 +6,8 @@ permalink: /kb/157/Q157132/
 
 ## Q157132: Microsoft Exchange Toolbar Buttons Availability
 
+{% raw %}
+
 	Article: Q157132
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -87,3 +89,5 @@ permalink: /kb/157/Q157132/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119566/
 
 ## Q119566: Intel SatisFAXtion Inaccessible: &quot;Write Fault Error...&quot;
 
+{% raw %}
+
 	Article: Q119566
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/119/Q119566/
 	
 	=============================================================================
 	
+
+{% endraw %}

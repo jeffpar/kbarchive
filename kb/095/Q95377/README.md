@@ -6,6 +6,8 @@ permalink: /kb/095/Q95377/
 
 ## Q95377: Drive Popup of Prompt Files Popup Not in Same Font
 
+{% raw %}
+
 	Article: Q95377
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,3.0
@@ -70,3 +72,5 @@ permalink: /kb/095/Q95377/
 	
 	=============================================================================
 	
+
+{% endraw %}

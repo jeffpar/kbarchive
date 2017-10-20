@@ -6,6 +6,8 @@ permalink: /kb/186/Q186048/
 
 ## Q186048: XCON: MTA Closes Improperly After Repeated Stops and Restarts
 
+{% raw %}
+
 	Article: Q186048
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -48,3 +50,5 @@ permalink: /kb/186/Q186048/
 	
 	=============================================================================
 	
+
+{% endraw %}

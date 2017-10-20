@@ -6,6 +6,8 @@ permalink: /kb/069/Q69582/
 
 ## Q69582: CHKDSK Does Not Subtract EBDA Memory
 
+{% raw %}
+
 	Article: Q69582
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.x,6.0,6.2,6.21,6.22
@@ -49,3 +51,5 @@ permalink: /kb/069/Q69582/
 	
 	=============================================================================
 	
+
+{% endraw %}

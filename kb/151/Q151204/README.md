@@ -6,6 +6,8 @@ permalink: /kb/151/Q151204/
 
 ## Q151204: XCLN: Offline Address Book Does Not Contain All GAL Addresses
 
+{% raw %}
+
 	Article: Q151204
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -59,3 +61,5 @@ permalink: /kb/151/Q151204/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/250/Q250049/
 
 ## Q250049: Domain Users Denied Access When Running Logon Script from PDC
 
+{% raw %}
+
 	Article: Q250049
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/250/Q250049/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193816/
 
 ## Q193816: SNA Server 4.0 Always Checks for Remote APPC LU Security
 
+{% raw %}
+
 	Article: Q193816
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -63,3 +65,5 @@ permalink: /kb/193/Q193816/
 	
 	=============================================================================
 	
+
+{% endraw %}

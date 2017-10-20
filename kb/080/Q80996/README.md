@@ -6,6 +6,8 @@ permalink: /kb/080/Q80996/
 
 ## Q80996: AHA-154x BID Doesn't Support I/O Addresses of 134/130
 
+{% raw %}
+
 	Article: Q80996
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/080/Q80996/
 	
 	=============================================================================
 	
+
+{% endraw %}

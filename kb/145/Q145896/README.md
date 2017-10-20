@@ -6,6 +6,8 @@ permalink: /kb/145/Q145896/
 
 ## Q145896: Cinemania: Unable to Add Custom Items to List Maker
 
+{% raw %}
+
 	Article: Q145896
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition,1997 edition
@@ -58,3 +60,5 @@ permalink: /kb/145/Q145896/
 	
 	=============================================================================
 	
+
+{% endraw %}

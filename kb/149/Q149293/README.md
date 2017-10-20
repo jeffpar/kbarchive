@@ -6,6 +6,8 @@ permalink: /kb/149/Q149293/
 
 ## Q149293: File Manager Can't View Permissions After NWCONV.EXE Is Run
 
+{% raw %}
+
 	Article: Q149293
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -84,3 +86,5 @@ permalink: /kb/149/Q149293/
 	
 	=============================================================================
 	
+
+{% endraw %}

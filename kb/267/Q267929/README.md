@@ -6,6 +6,8 @@ permalink: /kb/267/Q267929/
 
 ## Q267929: SMS: CCM Client Bootstrap Service Does Not Start
 
+{% raw %}
+
 	Article: Q267929
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -100,3 +102,5 @@ permalink: /kb/267/Q267929/
 	
 	=============================================================================
 	
+
+{% endraw %}

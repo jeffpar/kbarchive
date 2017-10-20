@@ -6,6 +6,8 @@ permalink: /kb/247/Q247538/
 
 ## Q247538: Microsoft Win32 Developer's Reference Library Comments and Corre
 
+{% raw %}
+
 	Article: Q247538
 	Product(s): Microsoft Press
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/247/Q247538/
 	
 	=============================================================================
 	
+
+{% endraw %}

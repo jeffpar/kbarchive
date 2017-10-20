@@ -6,6 +6,8 @@ permalink: /kb/121/Q121350/
 
 ## Q121350: CTRL Key Does Not Work in Windows or Windows for Workgroups
 
+{% raw %}
+
 	Article: Q121350
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/121/Q121350/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167647/
 
 ## Q167647: Cannot Log On After FilterKeys Option Enabled
 
+{% raw %}
+
 	Article: Q167647
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/167/Q167647/
 	
 	=============================================================================
 	
+
+{% endraw %}

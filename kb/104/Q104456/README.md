@@ -6,6 +6,8 @@ permalink: /kb/104/Q104456/
 
 ## Q104456: Dinosaurs: GP Fault When Using ATI Card with Mach32 Chip Set
 
+{% raw %}
+
 	Article: Q104456
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/104/Q104456/
 	
 	=============================================================================
 	
+
+{% endraw %}

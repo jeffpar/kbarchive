@@ -6,6 +6,8 @@ permalink: /kb/131/Q131988/
 
 ## Q131988: MHS: Messages Appear Stuck in MHS Queue
 
+{% raw %}
+
 	Article: Q131988
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -53,3 +55,5 @@ permalink: /kb/131/Q131988/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183638/
 
 ## Q183638: HOWTO: Create a Custom Text File Import Routine
 
+{% raw %}
+
 	Article: Q183638
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0,97
@@ -129,3 +131,5 @@ permalink: /kb/183/Q183638/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155177/
 
 ## Q155177: FIX: Sockets Application Hangs or Exhibits Poor Performance
 
+{% raw %}
+
 	Article: Q155177
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -173,3 +175,5 @@ permalink: /kb/155/Q155177/
 	
 	=============================================================================
 	
+
+{% endraw %}

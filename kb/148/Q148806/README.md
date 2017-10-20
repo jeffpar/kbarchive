@@ -6,6 +6,8 @@ permalink: /kb/148/Q148806/
 
 ## Q148806: FIX: Cannot Open Document From Shell If EXE Has Long File Name
 
+{% raw %}
+
 	Article: Q148806
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -127,3 +129,5 @@ permalink: /kb/148/Q148806/
 	
 	=============================================================================
 	
+
+{% endraw %}

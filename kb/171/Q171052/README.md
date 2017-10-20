@@ -6,6 +6,8 @@ permalink: /kb/171/Q171052/
 
 ## Q171052: Software FT Sets Are Not Supported in Microsoft Cluster Server
 
+{% raw %}
+
 	Article: Q171052
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -103,3 +105,5 @@ permalink: /kb/171/Q171052/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142282/
 
 ## Q142282: PRB: Pageframe Does Not Display All the Pages
 
+{% raw %}
+
 	Article: Q142282
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -91,3 +93,5 @@ permalink: /kb/142/Q142282/
 	
 	=============================================================================
 	
+
+{% endraw %}

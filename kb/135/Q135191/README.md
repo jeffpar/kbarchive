@@ -6,6 +6,8 @@ permalink: /kb/135/Q135191/
 
 ## Q135191: Wrong Area Cut When Zoomed-In in Paint
 
+{% raw %}
+
 	Article: Q135191
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -47,3 +49,5 @@ permalink: /kb/135/Q135191/
 	
 	=============================================================================
 	
+
+{% endraw %}

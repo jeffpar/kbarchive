@@ -6,6 +6,8 @@ permalink: /kb/155/Q155605/
 
 ## Q155605: Pressing PRINT SCREEN During Setup Causes Reboot
 
+{% raw %}
+
 	Article: Q155605
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -47,3 +49,5 @@ permalink: /kb/155/Q155605/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184298/
 
 ## Q184298: PRB: Project Containing UserConnection &amp; WithEvents Crashes VB
 
+{% raw %}
+
 	Article: Q184298
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:5.0
@@ -89,3 +91,5 @@ permalink: /kb/184/Q184298/
 	
 	=============================================================================
 	
+
+{% endraw %}

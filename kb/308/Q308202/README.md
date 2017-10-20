@@ -6,6 +6,8 @@ permalink: /kb/308/Q308202/
 
 ## Q308202: HOW TO: Create and Configure a Catalog for Indexing
 
+{% raw %}
+
 	Article: Q308202
 	Product(s): Internet Information Server
 	Version(s): 2000
@@ -322,3 +324,5 @@ permalink: /kb/308/Q308202/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/279/Q279631/
 
 ## Q279631: How to Use the SPCheck Tool to Determine the Service Pack Level
 
+{% raw %}
+
 	Article: Q279631
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,2000 SP2,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6a,5.5,5.5 SP
@@ -212,3 +214,5 @@ permalink: /kb/279/Q279631/
 	
 	=============================================================================
 	
+
+{% endraw %}

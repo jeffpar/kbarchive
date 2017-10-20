@@ -6,6 +6,8 @@ permalink: /kb/172/Q172592/
 
 ## Q172592: HOWTO: Open a Visual FoxPro Table for Read/Write
 
+{% raw %}
+
 	Article: Q172592
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -142,3 +144,5 @@ permalink: /kb/172/Q172592/
 	
 	=============================================================================
 	
+
+{% endraw %}

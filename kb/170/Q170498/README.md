@@ -6,6 +6,8 @@ permalink: /kb/170/Q170498/
 
 ## Q170498: FP: Access Permissions Applied at Web-level Not Per File Basis
 
+{% raw %}
+
 	Article: Q170498
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.1,97, macintosh:1.0
@@ -48,3 +50,5 @@ permalink: /kb/170/Q170498/
 	
 	=============================================================================
 	
+
+{% endraw %}

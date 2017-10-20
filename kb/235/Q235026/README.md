@@ -6,6 +6,8 @@ permalink: /kb/235/Q235026/
 
 ## Q235026: Quick Course in Microsoft Access 2000 Comments and Corrections
 
+{% raw %}
+
 	Article: Q235026
 	Product(s): Microsoft Press
 	Version(s): 
@@ -181,3 +183,5 @@ permalink: /kb/235/Q235026/
 	
 	=============================================================================
 	
+
+{% endraw %}

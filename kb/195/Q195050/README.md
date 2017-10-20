@@ -6,6 +6,8 @@ permalink: /kb/195/Q195050/
 
 ## Q195050: How to Clear Environment Variables Using Setx.exe
 
+{% raw %}
+
 	Article: Q195050
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/195/Q195050/
 	
 	=============================================================================
 	
+
+{% endraw %}

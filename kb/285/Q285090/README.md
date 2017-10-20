@@ -6,6 +6,8 @@ permalink: /kb/285/Q285090/
 
 ## Q285090: XFOR: Retiring an Internet Mail Service
 
+{% raw %}
+
 	Article: Q285090
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -73,3 +75,5 @@ permalink: /kb/285/Q285090/
 	
 	=============================================================================
 	
+
+{% endraw %}

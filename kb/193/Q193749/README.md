@@ -6,6 +6,8 @@ permalink: /kb/193/Q193749/
 
 ## Q193749: PRB: Setting Scrollbars &gt; 0 Changes Height and Width Property
 
+{% raw %}
+
 	Article: Q193749
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -148,3 +150,5 @@ permalink: /kb/193/Q193749/
 	
 	=============================================================================
 	
+
+{% endraw %}

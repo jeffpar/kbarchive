@@ -6,6 +6,8 @@ permalink: /kb/186/Q186344/
 
 ## Q186344: XCON: Exchange Incorrectly Routes Messages Over X.400 Connector
 
+{% raw %}
+
 	Article: Q186344
 	Product(s): Microsoft Exchange
 	Version(s): 5.0, 5.5
@@ -60,3 +62,5 @@ permalink: /kb/186/Q186344/
 	
 	=============================================================================
 	
+
+{% endraw %}

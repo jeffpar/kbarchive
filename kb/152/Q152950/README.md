@@ -6,6 +6,8 @@ permalink: /kb/152/Q152950/
 
 ## Q152950: XCLN: Text Attachments Open in Word on Macintosh Client
 
+{% raw %}
+
 	Article: Q152950
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -64,3 +66,5 @@ permalink: /kb/152/Q152950/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120227/
 
 ## Q120227: Steps to Recover a Failed Mirrored System/Boot Partition
 
+{% raw %}
+
 	Article: Q120227
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.1,3.5,3.51,4.0; :3.1
@@ -112,3 +114,5 @@ permalink: /kb/120/Q120227/
 	
 	=============================================================================
 	
+
+{% endraw %}

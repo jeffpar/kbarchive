@@ -6,6 +6,8 @@ permalink: /kb/198/Q198422/
 
 ## Q198422: PRB: Unable to Display MFC Automation Objects in Watch Window
 
+{% raw %}
+
 	Article: Q198422
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -131,7 +133,7 @@ permalink: /kb/198/Q198422/
 	
 	        IMPLEMENT_OLETYPELIB(CAutoClickDoc, _tlid, _wVerMajor, _wVerMinor)
 	
-	  Add the following line after the "//{ {AFX_DISPATCH_MAP(CAutoClickDoc)"
+	  Add the following line after the "//{{AFX_DISPATCH_MAP(CAutoClickDoc)"
 	  statement:
 	
 	        DISP_PROPERTY(CAutoClickDoc, "text", m_str, VT_BSTR)
@@ -187,3 +189,5 @@ permalink: /kb/198/Q198422/
 	
 	=============================================================================
 	
+
+{% endraw %}

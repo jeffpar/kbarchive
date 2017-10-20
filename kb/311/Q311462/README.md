@@ -6,6 +6,8 @@ permalink: /kb/311/Q311462/
 
 ## Q311462: SMS: User or User Group Advertisements Do Not Run Immediately
 
+{% raw %}
+
 	Article: Q311462
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -205,3 +207,5 @@ permalink: /kb/311/Q311462/
 	
 	=============================================================================
 	
+
+{% endraw %}

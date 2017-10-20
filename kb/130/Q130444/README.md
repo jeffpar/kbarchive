@@ -6,6 +6,8 @@ permalink: /kb/130/Q130444/
 
 ## Q130444: HOWTO: Calculating Years, Months, and Days Between Two Dates
 
+{% raw %}
+
 	Article: Q130444
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.5,2.5a,2.5b,2.6,2.6a; WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0,6.0
@@ -125,3 +127,5 @@ permalink: /kb/130/Q130444/
 	
 	=============================================================================
 	
+
+{% endraw %}

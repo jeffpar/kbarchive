@@ -6,6 +6,8 @@ permalink: /kb/129/Q129122/
 
 ## Q129122: DHCP: Excluding an Address Before Lease Expires Gives Error
 
+{% raw %}
+
 	Article: Q129122
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -39,3 +41,5 @@ permalink: /kb/129/Q129122/
 	
 	=============================================================================
 	
+
+{% endraw %}

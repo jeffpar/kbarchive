@@ -6,6 +6,8 @@ permalink: /kb/223/Q223034/
 
 ## Q223034: Client Authentication Certificate Request Fails
 
+{% raw %}
+
 	Article: Q223034
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/223/Q223034/
 	
 	=============================================================================
 	
+
+{% endraw %}

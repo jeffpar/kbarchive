@@ -6,6 +6,8 @@ permalink: /kb/110/Q110836/
 
 ## Q110836: Fast Throttle Option Slows Throttle Response
 
+{% raw %}
+
 	Article: Q110836
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -64,3 +66,5 @@ permalink: /kb/110/Q110836/
 	
 	=============================================================================
 	
+
+{% endraw %}

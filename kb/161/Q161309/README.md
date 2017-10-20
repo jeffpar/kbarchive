@@ -6,6 +6,8 @@ permalink: /kb/161/Q161309/
 
 ## Q161309: WD97: Macro to Increment Invoice Number to New Form Document
 
+{% raw %}
+
 	Article: Q161309
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -252,3 +254,5 @@ permalink: /kb/161/Q161309/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/109/Q109222/
 
 ## Q109222: Writer/Artist: Do Not Run in Windows 3.1 Standard Mode
 
+{% raw %}
+
 	Article: Q109222
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -61,3 +63,5 @@ permalink: /kb/109/Q109222/
 	
 	=============================================================================
 	
+
+{% endraw %}

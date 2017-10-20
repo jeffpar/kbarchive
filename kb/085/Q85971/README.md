@@ -6,6 +6,8 @@ permalink: /kb/085/Q85971/
 
 ## Q85971: PC Win: Network Connections and Linked Objects
 
+{% raw %}
+
 	Article: Q85971
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -71,3 +73,5 @@ permalink: /kb/085/Q85971/
 	
 	=============================================================================
 	
+
+{% endraw %}

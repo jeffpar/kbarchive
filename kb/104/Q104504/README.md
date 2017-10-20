@@ -6,6 +6,8 @@ permalink: /kb/104/Q104504/
 
 ## Q104504: WFWG Asynchronous Close Leads to Freeze of OS/2 LAN Man Server
 
+{% raw %}
+
 	Article: Q104504
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/104/Q104504/
 	
 	=============================================================================
 	
+
+{% endraw %}

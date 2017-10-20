@@ -6,6 +6,8 @@ permalink: /kb/269/Q269398/
 
 ## Q269398: Performance Monitor May Display Incorrect Data When Logging Data
 
+{% raw %}
+
 	Article: Q269398
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -85,3 +87,5 @@ permalink: /kb/269/Q269398/
 	
 	=============================================================================
 	
+
+{% endraw %}

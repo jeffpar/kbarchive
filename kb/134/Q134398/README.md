@@ -6,6 +6,8 @@ permalink: /kb/134/Q134398/
 
 ## Q134398: Using the Keyboard in The Microsoft Network Explorer
 
+{% raw %}
+
 	Article: Q134398
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -44,3 +46,5 @@ permalink: /kb/134/Q134398/
 	
 	=============================================================================
 	
+
+{% endraw %}

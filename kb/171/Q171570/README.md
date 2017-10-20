@@ -6,6 +6,8 @@ permalink: /kb/171/Q171570/
 
 ## Q171570: Disable.exe Example Enables/Disables Menu Pads and Bars
 
+{% raw %}
+
 	Article: Q171570
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -257,3 +259,5 @@ permalink: /kb/171/Q171570/
 	
 	=============================================================================
 	
+
+{% endraw %}

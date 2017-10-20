@@ -6,6 +6,8 @@ permalink: /kb/237/Q237752/
 
 ## Q237752: SMS: Client Discovery Does Not Enumerate over 25 Netcards
 
+{% raw %}
+
 	Article: Q237752
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -93,3 +95,5 @@ permalink: /kb/237/Q237752/
 	
 	=============================================================================
 	
+
+{% endraw %}

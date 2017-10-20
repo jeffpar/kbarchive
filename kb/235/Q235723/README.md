@@ -6,6 +6,8 @@ permalink: /kb/235/Q235723/
 
 ## Q235723: SNA Windows 3.x Client Displays Warning 956, Won't Unload
 
+{% raw %}
+
 	Article: Q235723
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0SP1,4.0SP2,4.0SP3
@@ -102,3 +104,5 @@ permalink: /kb/235/Q235723/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/041/Q41127/
 
 ## Q41127: No Registration Card Included in Upgraded Products
 
+{% raw %}
+
 	Article: Q41127
 	Product(s): See article
 	Version(s): 1.01 1.00 2.00
@@ -17,3 +19,5 @@ permalink: /kb/041/Q41127/
 	card in the upgrade package. Update notices are sent only to
 	registered users. Once you have registered for a particular product,
 	there is no reason to register again.
+
+{% endraw %}

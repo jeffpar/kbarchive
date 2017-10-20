@@ -6,6 +6,8 @@ permalink: /kb/232/Q232620/
 
 ## Q232620: Spooled Print Jobs Are Deleted from Queue Without Being Printed
 
+{% raw %}
+
 	Article: Q232620
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/232/Q232620/
 	
 	=============================================================================
 	
+
+{% endraw %}

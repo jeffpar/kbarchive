@@ -6,6 +6,8 @@ permalink: /kb/158/Q158154/
 
 ## Q158154: WD97: Multiple Line Table Row in Text Box Won't Break
 
+{% raw %}
+
 	Article: Q158154
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/158/Q158154/
 	
 	=============================================================================
 	
+
+{% endraw %}

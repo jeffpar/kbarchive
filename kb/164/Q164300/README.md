@@ -6,6 +6,8 @@ permalink: /kb/164/Q164300/
 
 ## Q164300: DNS Registry Parameter - AddressAnswerLimit
 
+{% raw %}
+
 	Article: Q164300
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -104,3 +106,5 @@ permalink: /kb/164/Q164300/
 	
 	=============================================================================
 	
+
+{% endraw %}

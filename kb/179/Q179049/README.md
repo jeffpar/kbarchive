@@ -6,6 +6,8 @@ permalink: /kb/179/Q179049/
 
 ## Q179049: XADM: DSAMain Stops on DSAMAIN!PutDistName
 
+{% raw %}
+
 	Article: Q179049
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -139,3 +141,5 @@ permalink: /kb/179/Q179049/
 	
 	=============================================================================
 	
+
+{% endraw %}

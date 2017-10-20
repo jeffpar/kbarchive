@@ -6,6 +6,8 @@ permalink: /kb/098/Q98977/
 
 ## Q98977: PC WSPlus: Setting up Dynamic Connections
 
+{% raw %}
+
 	Article: Q98977
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -163,3 +165,5 @@ permalink: /kb/098/Q98977/
 	
 	=============================================================================
 	
+
+{% endraw %}

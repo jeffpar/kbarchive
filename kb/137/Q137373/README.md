@@ -6,6 +6,8 @@ permalink: /kb/137/Q137373/
 
 ## Q137373: Using UINFO.XNF in MIF Entry Results in Corrupted File Error
 
+{% raw %}
+
 	Article: Q137373
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -61,3 +63,5 @@ permalink: /kb/137/Q137373/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165429/
 
 ## Q165429: Stop 0x0000001E in Ntoskrnl.exe Caused by an Invalid VCB
 
+{% raw %}
+
 	Article: Q165429
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/165/Q165429/
 	
 	=============================================================================
 	
+
+{% endraw %}

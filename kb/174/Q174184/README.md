@@ -6,6 +6,8 @@ permalink: /kb/174/Q174184/
 
 ## Q174184: MDG: Mail Is Missing
 
+{% raw %}
+
 	Article: Q174184
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -58,3 +60,5 @@ permalink: /kb/174/Q174184/
 	
 	=============================================================================
 	
+
+{% endraw %}

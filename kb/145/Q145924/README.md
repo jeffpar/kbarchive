@@ -6,6 +6,8 @@ permalink: /kb/145/Q145924/
 
 ## Q145924: XCLN: Insert Message View Shows Incorrect List
 
+{% raw %}
+
 	Article: Q145924
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0 RC2
@@ -58,3 +60,5 @@ permalink: /kb/145/Q145924/
 	
 	=============================================================================
 	
+
+{% endraw %}

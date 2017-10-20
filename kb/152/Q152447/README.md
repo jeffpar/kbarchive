@@ -6,6 +6,8 @@ permalink: /kb/152/Q152447/
 
 ## Q152447: WINMSD Reports Incorrect Free Space on 4.1-GB NTFS Volume
 
+{% raw %}
+
 	Article: Q152447
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -55,3 +57,5 @@ permalink: /kb/152/Q152447/
 	
 	=============================================================================
 	
+
+{% endraw %}

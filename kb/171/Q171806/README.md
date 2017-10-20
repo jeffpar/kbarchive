@@ -6,6 +6,8 @@ permalink: /kb/171/Q171806/
 
 ## Q171806: FIX: Memory Leak When RDC Bound to OLE Container Control
 
+{% raw %}
+
 	Article: Q171806
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -59,3 +61,5 @@ permalink: /kb/171/Q171806/
 	
 	=============================================================================
 	
+
+{% endraw %}

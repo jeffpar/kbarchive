@@ -6,6 +6,8 @@ permalink: /kb/235/Q235964/
 
 ## Q235964: Recovery Operation for Certificate Server May Invalidate Keys
 
+{% raw %}
+
 	Article: Q235964
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,4.0,4.0 SP4
@@ -118,3 +120,5 @@ permalink: /kb/235/Q235964/
 	
 	=============================================================================
 	
+
+{% endraw %}

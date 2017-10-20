@@ -6,6 +6,8 @@ permalink: /kb/312/Q312946/
 
 ## Q312946: Using Services for UNIX to Synchronize Passwords with NIS Domain
 
+{% raw %}
+
 	Article: Q312946
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,2.1 OEM Only,2.2 OEM Only,2.3 OEM Only,3.0
@@ -102,3 +104,5 @@ permalink: /kb/312/Q312946/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179298/
 
 ## Q179298: PRB: Null RuleExpression, RuleText, and Default View Properties
 
+{% raw %}
+
 	Article: Q179298
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a
@@ -166,3 +168,5 @@ permalink: /kb/179/Q179298/
 	
 	=============================================================================
 	
+
+{% endraw %}

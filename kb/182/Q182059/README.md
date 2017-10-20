@@ -6,6 +6,8 @@ permalink: /kb/182/Q182059/
 
 ## Q182059: Cache ISAPI Application Option Causes ASP to Return Error
 
+{% raw %}
+
 	Article: Q182059
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -71,3 +73,5 @@ permalink: /kb/182/Q182059/
 	
 	=============================================================================
 	
+
+{% endraw %}

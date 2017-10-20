@@ -6,6 +6,8 @@ permalink: /kb/184/Q184619/
 
 ## Q184619: How to Change Windows NT Account Passwords Using IIS 4.0
 
+{% raw %}
+
 	Article: Q184619
 	Product(s): Internet Information Server
 	Version(s): 2.5,4.0
@@ -125,3 +127,5 @@ permalink: /kb/184/Q184619/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120415/
 
 ## Q120415: Net SatisFAXtion Version 2.5 and Windows for Workgroups 3.11
 
+{% raw %}
+
 	Article: Q120415
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -75,3 +77,5 @@ permalink: /kb/120/Q120415/
 	
 	=============================================================================
 	
+
+{% endraw %}

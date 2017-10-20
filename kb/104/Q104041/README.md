@@ -6,6 +6,8 @@ permalink: /kb/104/Q104041/
 
 ## Q104041: FIX: Functions Exported Incorrectly in MASM 6.1 WINDLL Sample
 
+{% raw %}
+
 	Article: Q104041
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.1,6.1a
@@ -76,3 +78,5 @@ permalink: /kb/104/Q104041/
 	
 	=============================================================================
 	
+
+{% endraw %}

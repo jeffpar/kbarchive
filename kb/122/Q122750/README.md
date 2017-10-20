@@ -6,6 +6,8 @@ permalink: /kb/122/Q122750/
 
 ## Q122750: PC DirSync: Files to Check If IMPORT.EXE Does Not Complete
 
+{% raw %}
+
 	Article: Q122750
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -102,3 +104,5 @@ permalink: /kb/122/Q122750/
 	
 	=============================================================================
 	
+
+{% endraw %}

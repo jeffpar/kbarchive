@@ -6,6 +6,8 @@ permalink: /kb/122/Q122385/
 
 ## Q122385: Err Msg: Mail Could Not Read the Entire Message...
 
+{% raw %}
+
 	Article: Q122385
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -65,3 +67,5 @@ permalink: /kb/122/Q122385/
 	
 	=============================================================================
 	
+
+{% endraw %}

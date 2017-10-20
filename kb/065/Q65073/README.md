@@ -6,6 +6,8 @@ permalink: /kb/065/Q65073/
 
 ## Q65073: Running Ventura Publisher with Windows 3.0
 
+{% raw %}
+
 	Article: Q65073
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -50,3 +52,5 @@ permalink: /kb/065/Q65073/
 	
 	=============================================================================
 	
+
+{% endraw %}

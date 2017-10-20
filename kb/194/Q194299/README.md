@@ -6,6 +6,8 @@ permalink: /kb/194/Q194299/
 
 ## Q194299: PRB: RC2151 When Using MFC as a Static Link Library
 
+{% raw %}
+
 	Article: Q194299
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,4.2b,5.0,6.0
@@ -119,3 +121,5 @@ permalink: /kb/194/Q194299/
 	
 	=============================================================================
 	
+
+{% endraw %}

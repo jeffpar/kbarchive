@@ -6,6 +6,8 @@ permalink: /kb/305/Q305209/
 
 ## Q305209: Cannot Migrate to SMS 2.0 If Any Component Uses the LANDesk Key
 
+{% raw %}
+
 	Article: Q305209
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -207,3 +209,5 @@ permalink: /kb/305/Q305209/
 	
 	=============================================================================
 	
+
+{% endraw %}

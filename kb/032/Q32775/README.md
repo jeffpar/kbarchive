@@ -6,6 +6,8 @@ permalink: /kb/032/Q32775/
 
 ## Q32775: Flight Simulator: Airport Appears in Sky
 
+{% raw %}
+
 	Article: Q32775
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/032/Q32775/
 	
 	=============================================================================
 	
+
+{% endraw %}

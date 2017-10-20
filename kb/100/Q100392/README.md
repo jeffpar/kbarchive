@@ -6,6 +6,8 @@ permalink: /kb/100/Q100392/
 
 ## Q100392: McAfee SCAN Incorrectly Reports Israeli Boot &#91;iboot&#93; Virus
 
+{% raw %}
+
 	Article: Q100392
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -43,3 +45,5 @@ permalink: /kb/100/Q100392/
 	
 	=============================================================================
 	
+
+{% endraw %}

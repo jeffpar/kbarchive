@@ -6,6 +6,8 @@ permalink: /kb/155/Q155720/
 
 ## Q155720: Aldus Persuasion Table Uses Marlett as Default Font
 
+{% raw %}
+
 	Article: Q155720
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/155/Q155720/
 	
 	=============================================================================
 	
+
+{% endraw %}

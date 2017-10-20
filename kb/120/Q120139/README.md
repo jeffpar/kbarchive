@@ -6,6 +6,8 @@ permalink: /kb/120/Q120139/
 
 ## Q120139: Cannot Interactively Boot Windows 95 with Hardcard Drives
 
+{% raw %}
+
 	Article: Q120139
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/120/Q120139/
 	
 	=============================================================================
 	
+
+{% endraw %}

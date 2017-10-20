@@ -6,6 +6,8 @@ permalink: /kb/104/Q104686/
 
 ## Q104686: PC Rmt WRmt: Connecting Asynchronously at Different Speeds
 
+{% raw %}
+
 	Article: Q104686
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0,3.2; WINDOWS:3.2
@@ -56,3 +58,5 @@ permalink: /kb/104/Q104686/
 	
 	=============================================================================
 	
+
+{% endraw %}

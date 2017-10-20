@@ -6,6 +6,8 @@ permalink: /kb/247/Q247949/
 
 ## Q247949: SMS: How to Create a Simple Test Advertisement
 
+{% raw %}
+
 	Article: Q247949
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -169,3 +171,5 @@ permalink: /kb/247/Q247949/
 	
 	=============================================================================
 	
+
+{% endraw %}

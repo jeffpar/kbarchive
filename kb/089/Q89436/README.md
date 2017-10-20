@@ -6,6 +6,8 @@ permalink: /kb/089/Q89436/
 
 ## Q89436: Changing Computer's Role Causes Workstation to Not Start
 
+{% raw %}
+
 	Article: Q89436
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/089/Q89436/
 	
 	=============================================================================
 	
+
+{% endraw %}

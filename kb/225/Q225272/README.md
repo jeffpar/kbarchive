@@ -6,6 +6,8 @@ permalink: /kb/225/Q225272/
 
 ## Q225272: Client Programs Are Not Installed on Windows 95 Client
 
+{% raw %}
+
 	Article: Q225272
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.5
@@ -70,3 +72,5 @@ permalink: /kb/225/Q225272/
 	
 	=============================================================================
 	
+
+{% endraw %}

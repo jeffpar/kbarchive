@@ -6,6 +6,8 @@ permalink: /kb/046/Q46133/
 
 ## Q46133: Tecmar VGA Does Not Work in 43-Line Mode with QC2.00/QB4.50
 
+{% raw %}
+
 	Article: Q46133
 	Product(s): See article
 	Version(s): 2.00
@@ -21,3 +23,5 @@ permalink: /kb/046/Q46133/
 	This has been duplicated at Microsoft and verified as a problem with
 	both the Version 1.08 and Version 1.09 Tecmar ROMs. The only
 	workaround is to use 25-line mode, which works correctly.
+
+{% endraw %}

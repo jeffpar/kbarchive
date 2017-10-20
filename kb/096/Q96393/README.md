@@ -6,6 +6,8 @@ permalink: /kb/096/Q96393/
 
 ## Q96393: Drive Letter Icons Unavailable with the FTP TCP/IP Protocol
 
+{% raw %}
+
 	Article: Q96393
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -66,3 +68,5 @@ permalink: /kb/096/Q96393/
 	
 	=============================================================================
 	
+
+{% endraw %}

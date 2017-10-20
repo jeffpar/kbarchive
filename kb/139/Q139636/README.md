@@ -6,6 +6,8 @@ permalink: /kb/139/Q139636/
 
 ## Q139636: X400: Abbreviations for CCITT Recommendation X.224
 
+{% raw %}
+
 	Article: Q139636
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.2
@@ -113,3 +115,5 @@ permalink: /kb/139/Q139636/
 	
 	=============================================================================
 	
+
+{% endraw %}

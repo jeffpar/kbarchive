@@ -6,6 +6,8 @@ permalink: /kb/238/Q238441/
 
 ## Q238441: Remove Personalized Settings for New Users After Installing IE5
 
+{% raw %}
+
 	Article: Q238441
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -113,3 +115,5 @@ permalink: /kb/238/Q238441/
 	
 	=============================================================================
 	
+
+{% endraw %}

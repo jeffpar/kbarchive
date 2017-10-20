@@ -6,6 +6,8 @@ permalink: /kb/186/Q186914/
 
 ## Q186914: HOWTO: Implement Additional Interfaces in an ActiveX Control
 
+{% raw %}
+
 	Article: Q186914
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/186/Q186914/
 	
 	=============================================================================
 	
+
+{% endraw %}

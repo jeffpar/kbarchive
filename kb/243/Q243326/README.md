@@ -6,6 +6,8 @@ permalink: /kb/243/Q243326/
 
 ## Q243326: SMS: Browsing for PDFs Requires Site Modify
 
+{% raw %}
+
 	Article: Q243326
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -173,3 +175,5 @@ permalink: /kb/243/Q243326/
 	
 	=============================================================================
 	
+
+{% endraw %}

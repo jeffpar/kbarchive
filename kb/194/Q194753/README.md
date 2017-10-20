@@ -6,6 +6,8 @@ permalink: /kb/194/Q194753/
 
 ## Q194753: BUG: Divide Error When Compiling Project From Command Line
 
+{% raw %}
+
 	Article: Q194753
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -109,3 +111,5 @@ permalink: /kb/194/Q194753/
 	
 	=============================================================================
 	
+
+{% endraw %}

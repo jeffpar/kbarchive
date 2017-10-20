@@ -6,6 +6,8 @@ permalink: /kb/137/Q137268/
 
 ## Q137268: List of Systems SNA Server Can Connect To
 
+{% raw %}
+
 	Article: Q137268
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0
@@ -64,3 +66,5 @@ permalink: /kb/137/Q137268/
 	
 	=============================================================================
 	
+
+{% endraw %}

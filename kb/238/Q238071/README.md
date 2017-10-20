@@ -6,6 +6,8 @@ permalink: /kb/238/Q238071/
 
 ## Q238071: Managing the Testing Process Comments and Corrections
 
+{% raw %}
+
 	Article: Q238071
 	Product(s): Microsoft Press
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/238/Q238071/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/101/Q101958/
 
 ## Q101958: Reinstalling MS-DOS 6 Upgrade When Using Stacker Version 3.1
 
+{% raw %}
+
 	Article: Q101958
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -244,3 +246,5 @@ permalink: /kb/101/Q101958/
 	
 	=============================================================================
 	
+
+{% endraw %}

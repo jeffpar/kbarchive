@@ -6,6 +6,8 @@ permalink: /kb/254/Q254634/
 
 ## Q254634: PRB: Updating DAO Recordset from Excel Increases File Size
 
+{% raw %}
+
 	Article: Q254634
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0,3.5,3.6,6.0
@@ -122,3 +124,5 @@ permalink: /kb/254/Q254634/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/093/Q93153/
 
 ## Q93153: SMARTDrive Can't Load with Syntax Errors or Incorrect Options
 
+{% raw %}
+
 	Article: Q93153
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
@@ -70,3 +72,5 @@ permalink: /kb/093/Q93153/
 	
 	=============================================================================
 	
+
+{% endraw %}

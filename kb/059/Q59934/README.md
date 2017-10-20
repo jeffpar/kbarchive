@@ -6,6 +6,8 @@ permalink: /kb/059/Q59934/
 
 ## Q59934: Multimate Menu Will Work with Multimate Advantage 4.0
 
+{% raw %}
+
 	Article: Q59934
 	Product(s): See article
 	Version(s): 1.00
@@ -15,3 +17,5 @@ permalink: /kb/059/Q59934/
 	
 	Informal testing with the Multimate Advantage II mouse menu has shown
 	that it also works with Multimate Advantage Version 4.0.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160251/
 
 ## Q160251: BUG: &quot;Invalid Page Fault&quot; After OLE Automation with WordPerfect
 
+{% raw %}
+
 	Article: Q160251
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0 5.0a
@@ -77,3 +79,5 @@ permalink: /kb/160/Q160251/
 	
 	=============================================================================
 	
+
+{% endraw %}

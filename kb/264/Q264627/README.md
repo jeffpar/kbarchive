@@ -6,6 +6,8 @@ permalink: /kb/264/Q264627/
 
 ## Q264627: SMS: Video Acceleration and NetMeeting Cause Error Message
 
+{% raw %}
+
 	Article: Q264627
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3
@@ -99,3 +101,5 @@ permalink: /kb/264/Q264627/
 	
 	=============================================================================
 	
+
+{% endraw %}

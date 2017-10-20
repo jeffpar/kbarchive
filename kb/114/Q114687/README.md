@@ -6,6 +6,8 @@ permalink: /kb/114/Q114687/
 
 ## Q114687: Setting Number of Rings for RAS Server Auto-Answer in NT 3.5x
 
+{% raw %}
+
 	Article: Q114687
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -60,3 +62,5 @@ permalink: /kb/114/Q114687/
 	
 	=============================================================================
 	
+
+{% endraw %}

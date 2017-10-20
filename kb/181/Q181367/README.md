@@ -6,6 +6,8 @@ permalink: /kb/181/Q181367/
 
 ## Q181367: WinNT Error Message: Could Not Locate Ws2_32.dll
 
+{% raw %}
+
 	Article: Q181367
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -104,3 +106,5 @@ permalink: /kb/181/Q181367/
 	
 	=============================================================================
 	
+
+{% endraw %}

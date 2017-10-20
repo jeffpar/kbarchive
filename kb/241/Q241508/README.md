@@ -6,6 +6,8 @@ permalink: /kb/241/Q241508/
 
 ## Q241508: WD97: ParagraphFormat.Shading Shades Cells Black
 
+{% raw %}
+
 	Article: Q241508
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -96,3 +98,5 @@ permalink: /kb/241/Q241508/
 	
 	=============================================================================
 	
+
+{% endraw %}

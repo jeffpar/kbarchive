@@ -6,6 +6,8 @@ permalink: /kb/095/Q95505/
 
 ## Q95505: Troubleshooting GP Faults (UAEs)
 
+{% raw %}
+
 	Article: Q95505
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a,3.1,3.11
@@ -791,3 +793,5 @@ permalink: /kb/095/Q95505/
 	
 	=============================================================================
 	
+
+{% endraw %}

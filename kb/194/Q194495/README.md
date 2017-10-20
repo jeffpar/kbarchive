@@ -6,6 +6,8 @@ permalink: /kb/194/Q194495/
 
 ## Q194495: WD97: Cannot Convert WordPerfect Password-Protected File
 
+{% raw %}
+
 	Article: Q194495
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -77,3 +79,5 @@ permalink: /kb/194/Q194495/
 	
 	=============================================================================
 	
+
+{% endraw %}

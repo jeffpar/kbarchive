@@ -6,6 +6,8 @@ permalink: /kb/086/Q86570/
 
 ## Q86570: Mouse Systems Three-Button Mouse and Windows 3.1
 
+{% raw %}
+
 	Article: Q86570
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/086/Q86570/
 	
 	=============================================================================
 	
+
+{% endraw %}

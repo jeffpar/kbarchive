@@ -6,6 +6,8 @@ permalink: /kb/192/Q192575/
 
 ## Q192575: PRB: Modify of .H File From Project Not Using Syntax Coloring
 
+{% raw %}
+
 	Article: Q192575
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -92,3 +94,5 @@ permalink: /kb/192/Q192575/
 	
 	=============================================================================
 	
+
+{% endraw %}

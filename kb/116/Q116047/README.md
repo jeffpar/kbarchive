@@ -6,6 +6,8 @@ permalink: /kb/116/Q116047/
 
 ## Q116047: Baseball: Must Re-Enter Info if Registration Is Unsuccessful
 
+{% raw %}
+
 	Article: Q116047
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -37,3 +39,5 @@ permalink: /kb/116/Q116047/
 	
 	=============================================================================
 	
+
+{% endraw %}

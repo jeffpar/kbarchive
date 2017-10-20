@@ -6,6 +6,8 @@ permalink: /kb/104/Q104646/
 
 ## Q104646: When Setup Configures SMARTDrive 5.0 for Read-Only Caching
 
+{% raw %}
+
 	Article: Q104646
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -72,3 +74,5 @@ permalink: /kb/104/Q104646/
 	
 	=============================================================================
 	
+
+{% endraw %}

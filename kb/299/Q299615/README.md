@@ -6,6 +6,8 @@ permalink: /kb/299/Q299615/
 
 ## Q299615: BUG: KeyPress Event Behaves Differently in a Compiled Executable
 
+{% raw %}
+
 	Article: Q299615
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -109,3 +111,5 @@ permalink: /kb/299/Q299615/
 	
 	=============================================================================
 	
+
+{% endraw %}

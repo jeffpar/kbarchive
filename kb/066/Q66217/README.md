@@ -6,6 +6,8 @@ permalink: /kb/066/Q66217/
 
 ## Q66217: Pascal Modifier Might Generate Bogus Warning C4059
 
+{% raw %}
+
 	Article: Q66217
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -67,3 +69,5 @@ permalink: /kb/066/Q66217/
 	Microsoft has confirmed this to be a problem with C version 6.00. We
 	are researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

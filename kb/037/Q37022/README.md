@@ -6,6 +6,8 @@ permalink: /kb/037/Q37022/
 
 ## Q37022: How to Determine the Amount of Available DOS Memory
 
+{% raw %}
+
 	Article: Q37022
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -49,3 +51,5 @@ permalink: /kb/037/Q37022/
 	
 	Refer to the "Microsoft C Version 5.10 Optimizing Compiler Run-time
 	Library Reference" for specific information on using _dos_allocmem.
+
+{% endraw %}

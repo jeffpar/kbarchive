@@ -6,6 +6,8 @@ permalink: /kb/216/Q216515/
 
 ## Q216515: BUG: DataMember of GetDataMember Empty If DataSource Is DataList
 
+{% raw %}
+
 	Article: Q216515
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.1,2.1 SP2,2.5,2.6,6.0,6.0 SP4
@@ -256,3 +258,5 @@ permalink: /kb/216/Q216515/
 	
 	=============================================================================
 	
+
+{% endraw %}

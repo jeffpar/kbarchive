@@ -6,6 +6,8 @@ permalink: /kb/113/Q113672/
 
 ## Q113672: BUG: FoxPro Driver Always Shows Deleted Rows
 
+{% raw %}
+
 	Article: Q113672
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -97,3 +99,5 @@ permalink: /kb/113/Q113672/
 	
 	=============================================================================
 	
+
+{% endraw %}

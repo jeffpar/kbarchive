@@ -6,6 +6,8 @@ permalink: /kb/121/Q121430/
 
 ## Q121430: Scenes 2.0: Transition Effects Occur Only on New Image
 
+{% raw %}
+
 	Article: Q121430
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2.0
@@ -49,3 +51,5 @@ permalink: /kb/121/Q121430/
 	
 	=============================================================================
 	
+
+{% endraw %}

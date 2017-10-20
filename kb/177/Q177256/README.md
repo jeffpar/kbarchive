@@ -6,6 +6,8 @@ permalink: /kb/177/Q177256/
 
 ## Q177256: No Validation When Logging on Locally to a WINS Server
 
+{% raw %}
+
 	Article: Q177256
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -77,3 +79,5 @@ permalink: /kb/177/Q177256/
 	
 	=============================================================================
 	
+
+{% endraw %}

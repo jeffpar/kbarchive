@@ -6,6 +6,8 @@ permalink: /kb/034/Q34372/
 
 ## Q34372: Unresolved Externals Link Errors for OS/2 Calls
 
+{% raw %}
+
 	Article: Q34372
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -56,3 +58,5 @@ permalink: /kb/034/Q34372/
 	
 	This information is documented in the README.DOC file that comes with
 	Microsoft C Version 5.10.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/089/Q89896/
 
 ## Q89896: How to Add Vocabulary Items to ProofReader Dictionary
 
+{% raw %}
+
 	Article: Q89896
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/089/Q89896/
 	
 	=============================================================================
 	
+
+{% endraw %}

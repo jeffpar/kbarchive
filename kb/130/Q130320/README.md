@@ -6,6 +6,8 @@ permalink: /kb/130/Q130320/
 
 ## Q130320: PC Win: MOVEUSER.EXE Fails if User's HEXID.CAL Is Missing
 
+{% raw %}
+
 	Article: Q130320
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,1.0a,3.0,3.0b,3.2
@@ -93,3 +95,5 @@ permalink: /kb/130/Q130320/
 	
 	=============================================================================
 	
+
+{% endraw %}

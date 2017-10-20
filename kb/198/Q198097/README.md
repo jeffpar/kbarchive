@@ -6,6 +6,8 @@ permalink: /kb/198/Q198097/
 
 ## Q198097: WD97: Errors, Problem Inserting CMYK JPEG Image
 
+{% raw %}
+
 	Article: Q198097
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -91,3 +93,5 @@ permalink: /kb/198/Q198097/
 	
 	=============================================================================
 	
+
+{% endraw %}

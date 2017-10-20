@@ -6,6 +6,8 @@ permalink: /kb/030/Q30821/
 
 ## Q30821: MASM 5.10 OS2.DOC: OS/2 Call Summary - Video Output
 
+{% raw %}
+
 	Article: Q30821
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -176,3 +178,5 @@ permalink: /kb/030/Q30821/
 	                  or blink/background intensity switch
 	   Parameters - RequestBlock:PS, VioHandle:W
 	   Structures - VIOPALSTATE, VIOOVERSCAN, or VIOINTENSITY
+
+{% endraw %}

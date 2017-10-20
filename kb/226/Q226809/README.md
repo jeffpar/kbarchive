@@ -6,6 +6,8 @@ permalink: /kb/226/Q226809/
 
 ## Q226809: SMS: Incorrect Values Reported for Swap File Size and Swap Used
 
+{% raw %}
+
 	Article: Q226809
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -51,3 +53,5 @@ permalink: /kb/226/Q226809/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/282/Q282073/
 
 ## Q282073: ASP Application Fails If No User Is Logged On to the Server
 
+{% raw %}
+
 	Article: Q282073
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0,4.0,5.0
@@ -128,3 +130,5 @@ permalink: /kb/282/Q282073/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191875/
 
 ## Q191875: FIX: Multiple Open Class Browsers Cause Error Message
 
+{% raw %}
+
 	Article: Q191875
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -73,3 +75,5 @@ permalink: /kb/191/Q191875/
 	
 	=============================================================================
 	
+
+{% endraw %}

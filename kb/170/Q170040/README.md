@@ -6,6 +6,8 @@ permalink: /kb/170/Q170040/
 
 ## Q170040: Computer Associates InocuLAN May Cause Broadcast Storm
 
+{% raw %}
+
 	Article: Q170040
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/170/Q170040/
 	
 	=============================================================================
 	
+
+{% endraw %}

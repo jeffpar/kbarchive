@@ -6,6 +6,8 @@ permalink: /kb/092/Q92728/
 
 ## Q92728: Running CorelDRAW! with Windows 3.1
 
+{% raw %}
+
 	Article: Q92728
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/092/Q92728/
 	
 	=============================================================================
 	
+
+{% endraw %}

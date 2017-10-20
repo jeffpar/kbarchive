@@ -6,6 +6,8 @@ permalink: /kb/241/Q241392/
 
 ## Q241392: &quot;STOP 0x50&quot; Error Message in Mup.sys
 
+{% raw %}
+
 	Article: Q241392
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -67,3 +69,5 @@ permalink: /kb/241/Q241392/
 	
 	=============================================================================
 	
+
+{% endraw %}

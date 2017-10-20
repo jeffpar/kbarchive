@@ -6,6 +6,8 @@ permalink: /kb/101/Q101414/
 
 ## Q101414: BUG: OpenFile() Fails When UNC Name Longer Than 11 Characters
 
+{% raw %}
+
 	Article: Q101414
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/101/Q101414/
 	
 	=============================================================================
 	
+
+{% endraw %}

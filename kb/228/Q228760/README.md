@@ -6,6 +6,8 @@ permalink: /kb/228/Q228760/
 
 ## Q228760: How to Use a HOSTS File to Test a Site That Uses Host Headers
 
+{% raw %}
+
 	Article: Q228760
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -110,3 +112,5 @@ permalink: /kb/228/Q228760/
 	
 	=============================================================================
 	
+
+{% endraw %}

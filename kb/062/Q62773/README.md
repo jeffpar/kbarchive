@@ -6,6 +6,8 @@ permalink: /kb/062/Q62773/
 
 ## Q62773: Overflow Error OPENing ISAM File with TYPE &gt; 255 Elements
 
+{% raw %}
+
 	Article: Q62773
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -65,3 +67,5 @@ permalink: /kb/062/Q62773/
 	  I(1 TO 250) AS INTEGER
 	  N AS NestType
 	END TYPE
+
+{% endraw %}

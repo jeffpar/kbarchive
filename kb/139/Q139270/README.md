@@ -6,6 +6,8 @@ permalink: /kb/139/Q139270/
 
 ## Q139270: How to Change Name Resolution Order on Windows 95 and Windows NT
 
+{% raw %}
+
 	Article: Q139270
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.5,3.51,4.0
@@ -114,3 +116,5 @@ permalink: /kb/139/Q139270/
 	
 	=============================================================================
 	
+
+{% endraw %}

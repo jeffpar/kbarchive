@@ -6,6 +6,8 @@ permalink: /kb/172/Q172975/
 
 ## Q172975: Cannot Disconnect Mapped Network Drives
 
+{% raw %}
+
 	Article: Q172975
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS NT:4.0
@@ -68,3 +70,5 @@ permalink: /kb/172/Q172975/
 	
 	=============================================================================
 	
+
+{% endraw %}

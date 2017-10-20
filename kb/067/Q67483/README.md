@@ -6,6 +6,8 @@ permalink: /kb/067/Q67483/
 
 ## Q67483: PWB Hangs with Novell Netware
 
+{% raw %}
+
 	Article: Q67483
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1
@@ -43,3 +45,5 @@ permalink: /kb/067/Q67483/
 	
 	=============================================================================
 	
+
+{% endraw %}

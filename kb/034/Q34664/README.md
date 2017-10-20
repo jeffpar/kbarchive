@@ -6,6 +6,8 @@ permalink: /kb/034/Q34664/
 
 ## Q34664: Call to @Mkthread Macro Results in Phase Error
 
+{% raw %}
+
 	Article: Q34664
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -43,3 +45,5 @@ permalink: /kb/034/Q34664/
 	mov ax,seg fproc
 	fproc       endp
 	end
+
+{% endraw %}

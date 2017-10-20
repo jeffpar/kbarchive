@@ -6,6 +6,8 @@ permalink: /kb/280/Q280067/
 
 ## Q280067: PRB: Very Large XML Documents from SQL Server 2000 May Be Slow
 
+{% raw %}
+
 	Article: Q280067
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.6,6.0
@@ -162,3 +164,5 @@ permalink: /kb/280/Q280067/
 	
 	=============================================================================
 	
+
+{% endraw %}

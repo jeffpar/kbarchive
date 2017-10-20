@@ -6,6 +6,8 @@ permalink: /kb/113/Q113780/
 
 ## Q113780: Distorted Control Menu and Application Buttons
 
+{% raw %}
+
 	Article: Q113780
 	Product(s): Miscellaneous Windows Products
 	Version(s): 2.00
@@ -56,3 +58,5 @@ permalink: /kb/113/Q113780/
 	
 	=============================================================================
 	
+
+{% endraw %}

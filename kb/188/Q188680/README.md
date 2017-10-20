@@ -6,6 +6,8 @@ permalink: /kb/188/Q188680/
 
 ## Q188680: XADM: How to Change cc:Mail Proxy Address for New Mailboxes
 
+{% raw %}
+
 	Article: Q188680
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -98,3 +100,5 @@ permalink: /kb/188/Q188680/
 	
 	=============================================================================
 	
+
+{% endraw %}

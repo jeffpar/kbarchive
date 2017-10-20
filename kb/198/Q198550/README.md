@@ -6,6 +6,8 @@ permalink: /kb/198/Q198550/
 
 ## Q198550: SP4 Changes DNS Name Resolution
 
+{% raw %}
+
 	Article: Q198550
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0a
@@ -92,3 +94,5 @@ permalink: /kb/198/Q198550/
 	
 	=============================================================================
 	
+
+{% endraw %}

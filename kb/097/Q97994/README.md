@@ -6,6 +6,8 @@ permalink: /kb/097/Q97994/
 
 ## Q97994: Flag Borders Missing in Microsoft Bookshelf for Windows
 
+{% raw %}
+
 	Article: Q97994
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1991 edition,1992 edition
@@ -48,3 +50,5 @@ permalink: /kb/097/Q97994/
 	
 	=============================================================================
 	
+
+{% endraw %}

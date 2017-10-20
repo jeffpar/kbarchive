@@ -6,6 +6,8 @@ permalink: /kb/071/Q71530/
 
 ## Q71530: HP Intellifont-for-Windows 3.0 Description
 
+{% raw %}
+
 	Article: Q71530
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -128,3 +130,5 @@ permalink: /kb/071/Q71530/
 	
 	=============================================================================
 	
+
+{% endraw %}

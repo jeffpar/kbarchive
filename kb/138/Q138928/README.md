@@ -6,6 +6,8 @@ permalink: /kb/138/Q138928/
 
 ## Q138928: FIX: Custom Key Assignments May Not Work as Expected
 
+{% raw %}
+
 	Article: Q138928
 	Product(s): Microsoft C Compiler
 	Version(s): 2.00 2.10 2.20 4.00 4.10 4.20
@@ -92,3 +94,5 @@ permalink: /kb/138/Q138928/
 	
 	=============================================================================
 	
+
+{% endraw %}

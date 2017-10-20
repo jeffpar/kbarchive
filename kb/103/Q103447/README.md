@@ -6,6 +6,8 @@ permalink: /kb/103/Q103447/
 
 ## Q103447: PC Ext: Home Postoffice Must Be on Direct Drive
 
+{% raw %}
+
 	Article: Q103447
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -87,3 +89,5 @@ permalink: /kb/103/Q103447/
 	
 	=============================================================================
 	
+
+{% endraw %}

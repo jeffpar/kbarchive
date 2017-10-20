@@ -6,6 +6,8 @@ permalink: /kb/155/Q155141/
 
 ## Q155141: HOWTO: How To Add a Toolbar in an MDI Child Window
 
+{% raw %}
+
 	Article: Q155141
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -101,3 +103,5 @@ permalink: /kb/155/Q155141/
 	
 	=============================================================================
 	
+
+{% endraw %}

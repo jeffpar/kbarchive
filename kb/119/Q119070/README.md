@@ -6,6 +6,8 @@ permalink: /kb/119/Q119070/
 
 ## Q119070: Using More Than Three Printer Ports with Novell 4.x &amp; Windows
 
+{% raw %}
+
 	Article: Q119070
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/119/Q119070/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140292/
 
 ## Q140292: How to Create Blinking Text
 
+{% raw %}
+
 	Article: Q140292
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/140/Q140292/
 	
 	=============================================================================
 	
+
+{% endraw %}

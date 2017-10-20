@@ -6,6 +6,8 @@ permalink: /kb/130/Q130066/
 
 ## Q130066: CONN: Mail Connection Gateway Errors (531), (550)
 
+{% raw %}
+
 	Article: Q130066
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.2
@@ -112,3 +114,5 @@ permalink: /kb/130/Q130066/
 	
 	=============================================================================
 	
+
+{% endraw %}

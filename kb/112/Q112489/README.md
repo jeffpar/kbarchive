@@ -6,6 +6,8 @@ permalink: /kb/112/Q112489/
 
 ## Q112489: Multimedia: Display Looks Bad with Orchid Fahrenheit 1280
 
+{% raw %}
+
 	Article: Q112489
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -74,3 +76,5 @@ permalink: /kb/112/Q112489/
 	
 	=============================================================================
 	
+
+{% endraw %}

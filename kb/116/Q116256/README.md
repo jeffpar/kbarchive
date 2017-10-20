@@ -6,6 +6,8 @@ permalink: /kb/116/Q116256/
 
 ## Q116256: Himem.sys Cannot Address More Than 64 MB of Memory
 
+{% raw %}
+
 	Article: Q116256
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.x,6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11,95
@@ -69,3 +71,5 @@ permalink: /kb/116/Q116256/
 	
 	=============================================================================
 	
+
+{% endraw %}

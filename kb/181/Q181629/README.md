@@ -6,6 +6,8 @@ permalink: /kb/181/Q181629/
 
 ## Q181629: SMS: &quot;Unexpected Error Creating the Unique Id File&quot; Occurs
 
+{% raw %}
+
 	Article: Q181629
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -61,3 +63,5 @@ permalink: /kb/181/Q181629/
 	
 	=============================================================================
 	
+
+{% endraw %}

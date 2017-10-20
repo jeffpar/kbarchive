@@ -6,6 +6,8 @@ permalink: /kb/079/Q79749/
 
 ## Q79749: Windows 3.1 Runs in Standard and Enhanced Modes Only
 
+{% raw %}
+
 	Article: Q79749
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/079/Q79749/
 	
 	=============================================================================
 	
+
+{% endraw %}

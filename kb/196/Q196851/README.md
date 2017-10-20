@@ -6,6 +6,8 @@ permalink: /kb/196/Q196851/
 
 ## Q196851: WD97: Space Added Before Number After Pasting to Text
 
+{% raw %}
+
 	Article: Q196851
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/196/Q196851/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199003/
 
 ## Q199003: PRB: Visual InterDev Permissions for Users Who Are Not Local Adm
 
+{% raw %}
+
 	Article: Q199003
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:1.0,5.0,6.0; winnt:4.0
@@ -84,3 +86,5 @@ permalink: /kb/199/Q199003/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171983/
 
 ## Q171983: PRB: SelectOnEntry Property Does Not Highlight Single Character
 
+{% raw %}
+
 	Article: Q171983
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -90,3 +92,5 @@ permalink: /kb/171/Q171983/
 	
 	=============================================================================
 	
+
+{% endraw %}

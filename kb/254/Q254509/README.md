@@ -6,6 +6,8 @@ permalink: /kb/254/Q254509/
 
 ## Q254509: IIS Support Resources for Resolving HTTP Error Messages
 
+{% raw %}
+
 	Article: Q254509
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -37,3 +39,5 @@ permalink: /kb/254/Q254509/
 	
 	=============================================================================
 	
+
+{% endraw %}

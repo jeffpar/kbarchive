@@ -6,6 +6,8 @@ permalink: /kb/274/Q274681/
 
 ## Q274681: Metal Gear Solid: How to Improve Game Performance
 
+{% raw %}
+
 	Article: Q274681
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -163,3 +165,5 @@ permalink: /kb/274/Q274681/
 	
 	=============================================================================
 	
+
+{% endraw %}

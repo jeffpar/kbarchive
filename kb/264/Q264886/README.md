@@ -6,6 +6,8 @@ permalink: /kb/264/Q264886/
 
 ## Q264886: WD97: &quot;A Program Is Trying to Access...&quot; Warning in DMM
 
+{% raw %}
+
 	Article: Q264886
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/264/Q264886/
 	
 	=============================================================================
 	
+
+{% endraw %}

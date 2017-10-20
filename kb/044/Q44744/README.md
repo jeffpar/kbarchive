@@ -6,6 +6,8 @@ permalink: /kb/044/Q44744/
 
 ## Q44744: What is Quick Assembler?
 
+{% raw %}
+
 	Article: Q44744
 	Product(s): See article
 	Version(s): 2.01
@@ -32,3 +34,5 @@ permalink: /kb/044/Q44744/
 	specific QuickC 2.01 packages. There is a fulfillment package for
 	owners of QuickC 2.00 which allows the upgrading to QuickC/Quick
 	Assembler.
+
+{% endraw %}

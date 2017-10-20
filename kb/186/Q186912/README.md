@@ -6,6 +6,8 @@ permalink: /kb/186/Q186912/
 
 ## Q186912: FIX: Error Using Trimcrlf Method of _stringlib Class
 
+{% raw %}
+
 	Article: Q186912
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -218,3 +220,5 @@ permalink: /kb/186/Q186912/
 	
 	=============================================================================
 	
+
+{% endraw %}

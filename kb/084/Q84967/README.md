@@ -6,6 +6,8 @@ permalink: /kb/084/Q84967/
 
 ## Q84967: Buffalo Print Sharing Box Requires Fast Print Disabled
 
+{% raw %}
+
 	Article: Q84967
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/084/Q84967/
 	
 	=============================================================================
 	
+
+{% endraw %}

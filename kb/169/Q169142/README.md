@@ -6,6 +6,8 @@ permalink: /kb/169/Q169142/
 
 ## Q169142: Unable To Change 3270 Printer LU Name
 
+{% raw %}
+
 	Article: Q169142
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -73,3 +75,5 @@ permalink: /kb/169/Q169142/
 	
 	=============================================================================
 	
+
+{% endraw %}

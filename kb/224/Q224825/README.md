@@ -6,6 +6,8 @@ permalink: /kb/224/Q224825/
 
 ## Q224825: Event 4097 Logged Continuously By 5250 Print Session
 
+{% raw %}
+
 	Article: Q224825
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
@@ -58,3 +60,5 @@ permalink: /kb/224/Q224825/
 	
 	=============================================================================
 	
+
+{% endraw %}

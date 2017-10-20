@@ -6,6 +6,8 @@ permalink: /kb/151/Q151926/
 
 ## Q151926: Delayed WinLogon When Drive Mapped to Local Share
 
+{% raw %}
+
 	Article: Q151926
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -64,3 +66,5 @@ permalink: /kb/151/Q151926/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190221/
 
 ## Q190221: BUG: Queries or Views Do Not Appear in Data Form Wizard
 
+{% raw %}
+
 	Article: Q190221
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -100,3 +102,5 @@ permalink: /kb/190/Q190221/
 	
 	=============================================================================
 	
+
+{% endraw %}

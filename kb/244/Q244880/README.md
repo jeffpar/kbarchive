@@ -6,6 +6,8 @@ permalink: /kb/244/Q244880/
 
 ## Q244880: Problems When You Play Flight Simulator 2000 on Windows NT 4.0
 
+{% raw %}
+
 	Article: Q244880
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -61,3 +63,5 @@ permalink: /kb/244/Q244880/
 	
 	=============================================================================
 	
+
+{% endraw %}

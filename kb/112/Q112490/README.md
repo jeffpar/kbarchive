@@ -6,6 +6,8 @@ permalink: /kb/112/Q112490/
 
 ## Q112490: Schubert: Incorrect Fonts When Running Under Windows NT
 
+{% raw %}
+
 	Article: Q112490
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/112/Q112490/
 	
 	=============================================================================
 	
+
+{% endraw %}

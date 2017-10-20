@@ -6,6 +6,8 @@ permalink: /kb/198/Q198640/
 
 ## Q198640: SMS: NDS Container Script Is Not Modified
 
+{% raw %}
+
 	Article: Q198640
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -71,3 +73,5 @@ permalink: /kb/198/Q198640/
 	
 	=============================================================================
 	
+
+{% endraw %}

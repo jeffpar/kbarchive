@@ -6,6 +6,8 @@ permalink: /kb/137/Q137556/
 
 ## Q137556: HOWTO: Determine Font Size Setting
 
+{% raw %}
+
 	Article: Q137556
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.5b,2.6,2.6a
@@ -105,3 +107,5 @@ permalink: /kb/137/Q137556/
 	
 	=============================================================================
 	
+
+{% endraw %}

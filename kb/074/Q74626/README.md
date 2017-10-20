@@ -6,6 +6,8 @@ permalink: /kb/074/Q74626/
 
 ## Q74626: RAM Drive Write Protected on Acer 1100 with /Machine:6
 
+{% raw %}
+
 	Article: Q74626
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -44,3 +46,5 @@ permalink: /kb/074/Q74626/
 	
 	=============================================================================
 	
+
+{% endraw %}

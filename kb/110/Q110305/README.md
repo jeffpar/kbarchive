@@ -6,6 +6,8 @@ permalink: /kb/110/Q110305/
 
 ## Q110305: INFO: Windows NT Reads Environment Variables from AUTOEXEC.BAT
 
+{% raw %}
+
 	Article: Q110305
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0,6.11
@@ -88,3 +90,5 @@ permalink: /kb/110/Q110305/
 	
 	=============================================================================
 	
+
+{% endraw %}

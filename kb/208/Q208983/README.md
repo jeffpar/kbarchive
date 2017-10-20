@@ -6,6 +6,8 @@ permalink: /kb/208/Q208983/
 
 ## Q208983: HOWTO: Using MFC LOC DLLs
 
+{% raw %}
+
 	Article: Q208983
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -105,3 +107,5 @@ permalink: /kb/208/Q208983/
 	
 	=============================================================================
 	
+
+{% endraw %}

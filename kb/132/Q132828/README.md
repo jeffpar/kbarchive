@@ -6,6 +6,8 @@ permalink: /kb/132/Q132828/
 
 ## Q132828: Selecting Empty CD-ROM Drive for Backup Causes Backup to Hang
 
+{% raw %}
+
 	Article: Q132828
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/132/Q132828/
 	
 	=============================================================================
 	
+
+{% endraw %}

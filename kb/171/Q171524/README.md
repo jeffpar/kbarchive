@@ -6,6 +6,8 @@ permalink: /kb/171/Q171524/
 
 ## Q171524: FIX: Ambiguous Names Generate Incorrect Error Message
 
+{% raw %}
+
 	Article: Q171524
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -135,3 +137,5 @@ permalink: /kb/171/Q171524/
 	
 	=============================================================================
 	
+
+{% endraw %}

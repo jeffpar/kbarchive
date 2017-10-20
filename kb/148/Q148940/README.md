@@ -6,6 +6,8 @@ permalink: /kb/148/Q148940/
 
 ## Q148940: Admin &quot;Select Domain&quot; SNA Server in Subdomain Fails
 
+{% raw %}
+
 	Article: Q148940
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -90,3 +92,5 @@ permalink: /kb/148/Q148940/
 	
 	=============================================================================
 	
+
+{% endraw %}

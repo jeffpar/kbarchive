@@ -6,6 +6,8 @@ permalink: /kb/068/Q68741/
 
 ## Q68741: ASD: 747 Checklist Doesn't Reset After Mode Reset
 
+{% raw %}
+
 	Article: Q68741
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -38,3 +40,5 @@ permalink: /kb/068/Q68741/
 	
 	=============================================================================
 	
+
+{% endraw %}

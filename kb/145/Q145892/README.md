@@ -6,6 +6,8 @@ permalink: /kb/145/Q145892/
 
 ## Q145892: PRB: OCX Visible on All Pageframe Pages After Modal Form Runs
 
+{% raw %}
+
 	Article: Q145892
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -122,3 +124,5 @@ permalink: /kb/145/Q145892/
 	
 	=============================================================================
 	
+
+{% endraw %}

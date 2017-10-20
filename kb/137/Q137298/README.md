@@ -6,6 +6,8 @@ permalink: /kb/137/Q137298/
 
 ## Q137298: &quot;NetWare Compatible Password Expired&quot; Disappears for New User
 
+{% raw %}
+
 	Article: Q137298
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -51,3 +53,5 @@ permalink: /kb/137/Q137298/
 	
 	=============================================================================
 	
+
+{% endraw %}

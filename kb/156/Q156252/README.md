@@ -6,6 +6,8 @@ permalink: /kb/156/Q156252/
 
 ## Q156252: MSB Dinosaurs: Long Text Strings Are Truncated on Past Cards
 
+{% raw %}
+
 	Article: Q156252
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/156/Q156252/
 	
 	=============================================================================
 	
+
+{% endraw %}

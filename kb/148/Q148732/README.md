@@ -6,6 +6,8 @@ permalink: /kb/148/Q148732/
 
 ## Q148732: XADM: Setting TCP/IP Port Numbers for Internet Firewalls
 
+{% raw %}
+
 	Article: Q148732
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -136,3 +138,5 @@ permalink: /kb/148/Q148732/
 	
 	=============================================================================
 	
+
+{% endraw %}

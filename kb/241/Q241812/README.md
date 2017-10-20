@@ -6,6 +6,8 @@ permalink: /kb/241/Q241812/
 
 ## Q241812: DUN Clients Cannot Obtain Access to the LAN
 
+{% raw %}
+
 	Article: Q241812
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/241/Q241812/
 	
 	=============================================================================
 	
+
+{% endraw %}

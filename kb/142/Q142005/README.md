@@ -6,6 +6,8 @@ permalink: /kb/142/Q142005/
 
 ## Q142005: Setting the Correct ICM Profile
 
+{% raw %}
+
 	Article: Q142005
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -67,3 +69,5 @@ permalink: /kb/142/Q142005/
 	
 	=============================================================================
 	
+
+{% endraw %}

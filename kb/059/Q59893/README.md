@@ -6,6 +6,8 @@ permalink: /kb/059/Q59893/
 
 ## Q59893: Multithreaded Run-Time Libraries Require 40 File Handles
 
+{% raw %}
+
 	Article: Q59893
 	Product(s): See article
 	Version(s): 5.10 6.00
@@ -33,3 +35,5 @@ permalink: /kb/059/Q59893/
 	LLIBCMT.LIB, the library has already set the file-handle count to 40.
 	In this case, a call to DosSetMaxFH() with a number less than 40
 	returns an ERROR_INVALID_PARAMETER value.
+
+{% endraw %}

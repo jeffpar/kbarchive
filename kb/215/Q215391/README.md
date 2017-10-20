@@ -6,6 +6,8 @@ permalink: /kb/215/Q215391/
 
 ## Q215391: BUG: Testing to See if the Current Form is &quot;Me&quot; Returns False
 
+{% raw %}
+
 	Article: Q215391
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -75,3 +77,5 @@ permalink: /kb/215/Q215391/
 	
 	=============================================================================
 	
+
+{% endraw %}

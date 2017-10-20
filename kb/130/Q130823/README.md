@@ -6,6 +6,8 @@ permalink: /kb/130/Q130823/
 
 ## Q130823: Cannot Cancel Changes to Network Adapter Properties
 
+{% raw %}
+
 	Article: Q130823
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -65,3 +67,5 @@ permalink: /kb/130/Q130823/
 	
 	=============================================================================
 	
+
+{% endraw %}

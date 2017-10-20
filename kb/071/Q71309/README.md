@@ -6,6 +6,8 @@ permalink: /kb/071/Q71309/
 
 ## Q71309: IBM 4072 ExecJet Printer Specifications
 
+{% raw %}
+
 	Article: Q71309
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a
@@ -124,3 +126,5 @@ permalink: /kb/071/Q71309/
 	
 	=============================================================================
 	
+
+{% endraw %}

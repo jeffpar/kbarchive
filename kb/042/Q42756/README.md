@@ -6,6 +6,8 @@ permalink: /kb/042/Q42756/
 
 ## Q42756: Not Including MALLOC.H in Compact, Large Model Causes Problems
 
+{% raw %}
+
 	Article: Q42756
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -65,3 +67,5 @@ permalink: /kb/042/Q42756/
 	warning level 1 or higher when such a program is compiled. Paying
 	attention to these warnings generally eliminates problems in
 	converting C programs from other systems.
+
+{% endraw %}

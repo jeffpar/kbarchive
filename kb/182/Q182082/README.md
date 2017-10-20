@@ -6,6 +6,8 @@ permalink: /kb/182/Q182082/
 
 ## Q182082: XADM: Event Service Won't Start If Alternate PF Server Selected
 
+{% raw %}
+
 	Article: Q182082
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -70,3 +72,5 @@ permalink: /kb/182/Q182082/
 	
 	=============================================================================
 	
+
+{% endraw %}

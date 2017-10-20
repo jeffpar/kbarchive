@@ -6,6 +6,8 @@ permalink: /kb/198/Q198826/
 
 ## Q198826: XADM: Address Information for Moved Messages Shows Old DN
 
+{% raw %}
+
 	Article: Q198826
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -52,3 +54,5 @@ permalink: /kb/198/Q198826/
 	
 	=============================================================================
 	
+
+{% endraw %}

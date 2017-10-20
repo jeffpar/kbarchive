@@ -6,6 +6,8 @@ permalink: /kb/278/Q278352/
 
 ## Q278352: XWEB: Can't Forward Autoforwarded Messages to External Address
 
+{% raw %}
+
 	Article: Q278352
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -107,3 +109,5 @@ permalink: /kb/278/Q278352/
 	
 	=============================================================================
 	
+
+{% endraw %}

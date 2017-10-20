@@ -6,6 +6,8 @@ permalink: /kb/137/Q137501/
 
 ## Q137501: FPNW Server Fails to Replicate Files to NetWare Clients
 
+{% raw %}
+
 	Article: Q137501
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/137/Q137501/
 	
 	=============================================================================
 	
+
+{% endraw %}

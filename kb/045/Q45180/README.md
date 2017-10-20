@@ -6,6 +6,8 @@ permalink: /kb/045/Q45180/
 
 ## Q45180: Initialization and Discarding of DLLs Built with C Run Time
 
+{% raw %}
+
 	Article: Q45180
 	Product(s): See article
 	Version(s): 5.10
@@ -97,3 +99,5 @@ permalink: /kb/045/Q45180/
 	DLL termination routine must remove the other functions in the exit
 	list and then call "DosExitList(EXLST_EXIT, 0L);" to remove itself
 	from the exit list. Then, the DosFreeModule of the DLL should succeed.
+
+{% endraw %}

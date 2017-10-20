@@ -6,6 +6,8 @@ permalink: /kb/165/Q165703/
 
 ## Q165703: 16-bit RUI Calls Don't Complete Properly Using NT Thunking DLL
 
+{% raw %}
+
 	Article: Q165703
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0
@@ -66,3 +68,5 @@ permalink: /kb/165/Q165703/
 	
 	=============================================================================
 	
+
+{% endraw %}

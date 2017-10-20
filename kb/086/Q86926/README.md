@@ -6,6 +6,8 @@ permalink: /kb/086/Q86926/
 
 ## Q86926: Using the Dynamic Data Exchange Management Library
 
+{% raw %}
+
 	Article: Q86926
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -363,3 +365,5 @@ permalink: /kb/086/Q86926/
 	
 	=============================================================================
 	
+
+{% endraw %}

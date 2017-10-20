@@ -6,6 +6,8 @@ permalink: /kb/167/Q167393/
 
 ## Q167393: XFOR: UUENCODED Sections Are Not Decoded into Attachments
 
+{% raw %}
+
 	Article: Q167393
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -60,3 +62,5 @@ permalink: /kb/167/Q167393/
 	
 	=============================================================================
 	
+
+{% endraw %}

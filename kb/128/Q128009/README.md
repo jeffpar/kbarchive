@@ -6,6 +6,8 @@ permalink: /kb/128/Q128009/
 
 ## Q128009: ErrMsg: Lockout Duration Must Be Greater Than...Reset Count
 
+{% raw %}
+
 	Article: Q128009
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50
@@ -51,3 +53,5 @@ permalink: /kb/128/Q128009/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151013/
 
 ## Q151013: XCLN: PC Mail Users Cannot Open Macintosh Attachments
 
+{% raw %}
+
 	Article: Q151013
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -57,3 +59,5 @@ permalink: /kb/151/Q151013/
 	
 	=============================================================================
 	
+
+{% endraw %}

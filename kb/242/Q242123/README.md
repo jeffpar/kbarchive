@@ -6,6 +6,8 @@ permalink: /kb/242/Q242123/
 
 ## Q242123: Macintosh Clients Cannot See Server When PDC is Moved to New Net
 
+{% raw %}
+
 	Article: Q242123
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -102,3 +104,5 @@ permalink: /kb/242/Q242123/
 	
 	=============================================================================
 	
+
+{% endraw %}

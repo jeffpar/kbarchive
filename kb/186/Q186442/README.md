@@ -6,6 +6,8 @@ permalink: /kb/186/Q186442/
 
 ## Q186442: XWEB: Exchange Personal Views Unavailable in Outlook or OWA
 
+{% raw %}
+
 	Article: Q186442
 	Product(s): Microsoft Exchange
 	Version(s): Macintosh:8.0;WinNT:5.5,8.0,8.03,8.5
@@ -100,3 +102,5 @@ permalink: /kb/186/Q186442/
 	
 	=============================================================================
 	
+
+{% endraw %}

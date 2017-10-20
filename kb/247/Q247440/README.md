@@ -6,6 +6,8 @@ permalink: /kb/247/Q247440/
 
 ## Q247440: HOWTO: Rename Jet 3.51 ODBC Drivers in Windows 2000
 
+{% raw %}
+
 	Article: Q247440
 	Product(s): Microsoft Windows NT
 	Version(s): 2000
@@ -392,3 +394,5 @@ permalink: /kb/247/Q247440/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178722/
 
 ## Q178722: XCLN: Exchange Client Hangs with Norton Anti-Virus AutoProtect
 
+{% raw %}
+
 	Article: Q178722
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,95,98; :8.0,8.01,8.02,8.03
@@ -48,3 +50,5 @@ permalink: /kb/178/Q178722/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126749/
 
 ## Q126749: Err Msg: System in Protected Mode. System Halted
 
+{% raw %}
+
 	Article: Q126749
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/126/Q126749/
 	
 	=============================================================================
 	
+
+{% endraw %}

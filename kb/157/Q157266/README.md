@@ -6,6 +6,8 @@ permalink: /kb/157/Q157266/
 
 ## Q157266: Msbatch.inf Parameters: Enabling and Disabling Dual-Boot
 
+{% raw %}
+
 	Article: Q157266
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -68,3 +70,5 @@ permalink: /kb/157/Q157266/
 	
 	=============================================================================
 	
+
+{% endraw %}

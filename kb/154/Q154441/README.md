@@ -6,6 +6,8 @@ permalink: /kb/154/Q154441/
 
 ## Q154441: Err Msg: Internet Explorer Unable to Access the Network
 
+{% raw %}
+
 	Article: Q154441
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/154/Q154441/
 	
 	=============================================================================
 	
+
+{% endraw %}

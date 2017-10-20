@@ -6,6 +6,8 @@ permalink: /kb/112/Q112294/
 
 ## Q112294: Err Msg Starting WFWG: Cannot Find NWGDI.DLL
 
+{% raw %}
+
 	Article: Q112294
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -86,3 +88,5 @@ permalink: /kb/112/Q112294/
 	
 	=============================================================================
 	
+
+{% endraw %}

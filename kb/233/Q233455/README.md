@@ -6,6 +6,8 @@ permalink: /kb/233/Q233455/
 
 ## Q233455: Business Planner: Cannot Open Publisher Wizard
 
+{% raw %}
+
 	Article: Q233455
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -74,3 +76,5 @@ permalink: /kb/233/Q233455/
 	
 	=============================================================================
 	
+
+{% endraw %}

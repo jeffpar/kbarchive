@@ -6,6 +6,8 @@ permalink: /kb/095/Q95858/
 
 ## Q95858: What Does BUSETUP.EXE Do?
 
+{% raw %}
+
 	Article: Q95858
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -39,3 +41,5 @@ permalink: /kb/095/Q95858/
 	
 	=============================================================================
 	
+
+{% endraw %}

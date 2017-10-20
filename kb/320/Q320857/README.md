@@ -6,6 +6,8 @@ permalink: /kb/320/Q320857/
 
 ## Q320857: Printing E-mail In MSN Explorer
 
+{% raw %}
+
 	Article: Q320857
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -55,3 +57,5 @@ permalink: /kb/320/Q320857/
 	
 	=============================================================================
 	
+
+{% endraw %}

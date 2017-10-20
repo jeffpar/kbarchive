@@ -6,6 +6,8 @@ permalink: /kb/128/Q128047/
 
 ## Q128047: PC Win: Err Msg: Some Entries Could Not be Added to the Group
 
+{% raw %}
+
 	Article: Q128047
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -62,3 +64,5 @@ permalink: /kb/128/Q128047/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111963/
 
 ## Q111963: Enabling Sound Events for WinPopup in WFWG 3.11
 
+{% raw %}
+
 	Article: Q111963
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): MACINTOSH:1.0; WINDOWS:1.0,3.11; :1.0,1.0a,2.0
@@ -54,3 +56,5 @@ permalink: /kb/111/Q111963/
 	
 	=============================================================================
 	
+
+{% endraw %}

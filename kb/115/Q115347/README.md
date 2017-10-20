@@ -6,6 +6,8 @@ permalink: /kb/115/Q115347/
 
 ## Q115347: PRB: Debugger Cannot Watch Global Constants in C++ Programs
 
+{% raw %}
+
 	Article: Q115347
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.1,4.0,4.01,4.1,5.0
@@ -94,3 +96,5 @@ permalink: /kb/115/Q115347/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183569/
 
 ## Q183569: AS/400 RDB Name Cannot Exceed Eight Characters
 
+{% raw %}
+
 	Article: Q183569
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -51,3 +53,5 @@ permalink: /kb/183/Q183569/
 	
 	=============================================================================
 	
+
+{% endraw %}

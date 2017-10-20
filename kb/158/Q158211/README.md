@@ -6,6 +6,8 @@ permalink: /kb/158/Q158211/
 
 ## Q158211: SNA Server Logs Event 579, 699 Followed by Connection Failure
 
+{% raw %}
+
 	Article: Q158211
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,2.11 SP1
@@ -82,3 +84,5 @@ permalink: /kb/158/Q158211/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132551/
 
 ## Q132551: Dogs, 500 Nations: Can't Print Portrait or Landscape
 
+{% raw %}
+
 	Article: Q132551
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,95,98
@@ -53,3 +55,5 @@ permalink: /kb/132/Q132551/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/102/Q102834/
 
 ## Q102834: Mac Wkst: Dial-In: Local User Disconnected
 
+{% raw %}
+
 	Article: Q102834
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -67,3 +69,5 @@ permalink: /kb/102/Q102834/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216837/
 
 ## Q216837: SFGW Performance Improvements in SNA Server 4.0 SP2
 
+{% raw %}
+
 	Article: Q216837
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0SP2
@@ -57,3 +59,5 @@ permalink: /kb/216/Q216837/
 	
 	=============================================================================
 	
+
+{% endraw %}

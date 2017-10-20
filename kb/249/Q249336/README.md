@@ -6,6 +6,8 @@ permalink: /kb/249/Q249336/
 
 ## Q249336: BUG: Error Message When Using Date in Index File
 
+{% raw %}
+
 	Article: Q249336
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -100,3 +102,5 @@ permalink: /kb/249/Q249336/
 	
 	=============================================================================
 	
+
+{% endraw %}

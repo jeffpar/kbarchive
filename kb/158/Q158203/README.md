@@ -6,6 +6,8 @@ permalink: /kb/158/Q158203/
 
 ## Q158203: STL Sample for the string::operation
 
+{% raw %}
+
 	Article: Q158203
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -168,3 +170,5 @@ permalink: /kb/158/Q158203/
 	
 	=============================================================================
 	
+
+{% endraw %}

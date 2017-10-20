@@ -6,6 +6,8 @@ permalink: /kb/087/Q87426/
 
 ## Q87426: PROFS: Class of Machine Required for Gateway PC
 
+{% raw %}
+
 	Article: Q87426
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -48,3 +50,5 @@ permalink: /kb/087/Q87426/
 	
 	=============================================================================
 	
+
+{% endraw %}

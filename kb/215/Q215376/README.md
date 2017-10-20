@@ -6,6 +6,8 @@ permalink: /kb/215/Q215376/
 
 ## Q215376: ControlService Fails with 1053 (ERROR_SERVICE_REQUEST_TIMEOUT)
 
+{% raw %}
+
 	Article: Q215376
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/215/Q215376/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137963/
 
 ## Q137963: PRB: Disabled Grid Controls Can Be Selected with Mouse
 
+{% raw %}
+
 	Article: Q137963
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -180,3 +182,5 @@ permalink: /kb/137/Q137963/
 	
 	=============================================================================
 	
+
+{% endraw %}

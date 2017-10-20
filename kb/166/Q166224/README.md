@@ -6,6 +6,8 @@ permalink: /kb/166/Q166224/
 
 ## Q166224: SNA Server 802.2 Connection Fails to Reactivate
 
+{% raw %}
+
 	Article: Q166224
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51 (all service packs),4.0 SP1,4.0 SP2
@@ -93,3 +95,5 @@ permalink: /kb/166/Q166224/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/079/Q79991/
 
 ## Q79991: Sound in Tetris Game
 
+{% raw %}
+
 	Article: Q79991
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/079/Q79991/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/251/Q251177/
 
 ## Q251177: XADM: Error Message: You Must Be Logged Into an NT Domain to...
 
+{% raw %}
+
 	Article: Q251177
 	Product(s): Microsoft Exchange
 	Version(s): 5.5; WINDOWS:2000
@@ -81,3 +83,5 @@ permalink: /kb/251/Q251177/
 	
 	=============================================================================
 	
+
+{% endraw %}

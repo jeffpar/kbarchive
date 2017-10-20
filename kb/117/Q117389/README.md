@@ -6,6 +6,8 @@ permalink: /kb/117/Q117389/
 
 ## Q117389: x86 Protected Mode Exceptions
 
+{% raw %}
+
 	Article: Q117389
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -146,3 +148,5 @@ permalink: /kb/117/Q117389/
 	
 	=============================================================================
 	
+
+{% endraw %}

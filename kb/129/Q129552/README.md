@@ -6,6 +6,8 @@ permalink: /kb/129/Q129552/
 
 ## Q129552: Rotated Text in Lotus 1-2-3 Printed Incorrectly to PageMarq 20
 
+{% raw %}
+
 	Article: Q129552
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -49,3 +51,5 @@ permalink: /kb/129/Q129552/
 	
 	=============================================================================
 	
+
+{% endraw %}

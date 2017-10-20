@@ -6,6 +6,8 @@ permalink: /kb/243/Q243684/
 
 ## Q243684: WD97:Deleting Paragraph Mark at End of Table Causes Exception AV
 
+{% raw %}
+
 	Article: Q243684
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -67,3 +69,5 @@ permalink: /kb/243/Q243684/
 	
 	=============================================================================
 	
+
+{% endraw %}

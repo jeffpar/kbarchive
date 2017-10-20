@@ -6,6 +6,8 @@ permalink: /kb/113/Q113384/
 
 ## Q113384: Bookshelf: Highlights on Search Words in Article Disappear
 
+{% raw %}
+
 	Article: Q113384
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,1995 edition; WINDOWS:
@@ -64,3 +66,5 @@ permalink: /kb/113/Q113384/
 	
 	=============================================================================
 	
+
+{% endraw %}

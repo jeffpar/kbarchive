@@ -6,6 +6,8 @@ permalink: /kb/315/Q315839/
 
 ## Q315839: SNABASE.exe Access Violation on HIS 2000 End User Client
 
+{% raw %}
+
 	Article: Q315839
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -143,3 +145,5 @@ permalink: /kb/315/Q315839/
 	
 	=============================================================================
 	
+
+{% endraw %}

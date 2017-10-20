@@ -6,6 +6,8 @@ permalink: /kb/138/Q138082/
 
 ## Q138082: Game Port Not Detected with Sound Card Already Installed
 
+{% raw %}
+
 	Article: Q138082
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -72,3 +74,5 @@ permalink: /kb/138/Q138082/
 	
 	=============================================================================
 	
+
+{% endraw %}

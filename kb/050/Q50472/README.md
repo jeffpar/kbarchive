@@ -6,6 +6,8 @@ permalink: /kb/050/Q50472/
 
 ## Q50472: With /CP:1, _memavl() Still Shows Memory Available
 
+{% raw %}
+
 	Article: Q50472
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -54,3 +56,5 @@ permalink: /kb/050/Q50472/
 	To reduce the amount of memory taken by DGROUP initialization, set
 	_amblksiz to some smaller amount in order for malloc(0) to grab only
 	as much it absolutely needs.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158051/
 
 ## Q158051: Solution.exe Extends the Visual FoxPro Solutions Sample
 
+{% raw %}
+
 	Article: Q158051
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -65,3 +67,5 @@ permalink: /kb/158/Q158051/
 	
 	=============================================================================
 	
+
+{% endraw %}

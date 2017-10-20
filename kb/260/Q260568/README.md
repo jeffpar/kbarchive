@@ -6,6 +6,8 @@ permalink: /kb/260/Q260568/
 
 ## Q260568: BUG: Error: Platform Manager Failed to Queue File Cemon.exe
 
+{% raw %}
+
 	Article: Q260568
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -90,3 +92,5 @@ permalink: /kb/260/Q260568/
 	
 	=============================================================================
 	
+
+{% endraw %}

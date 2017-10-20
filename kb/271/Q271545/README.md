@@ -6,6 +6,8 @@ permalink: /kb/271/Q271545/
 
 ## Q271545: XCON: Message Timeouts and Open Retry Timeouts
 
+{% raw %}
+
 	Article: Q271545
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -105,3 +107,5 @@ permalink: /kb/271/Q271545/
 	
 	=============================================================================
 	
+
+{% endraw %}

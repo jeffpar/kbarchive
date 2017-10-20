@@ -6,6 +6,8 @@ permalink: /kb/238/Q238914/
 
 ## Q238914: Err Msg: Enc99 Caused An Invalid Page Fault in Regsvr32.exe
 
+{% raw %}
+
 	Article: Q238914
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -80,3 +82,5 @@ permalink: /kb/238/Q238914/
 	
 	=============================================================================
 	
+
+{% endraw %}

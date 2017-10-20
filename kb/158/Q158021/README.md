@@ -6,6 +6,8 @@ permalink: /kb/158/Q158021/
 
 ## Q158021: GEX: System Requirements
 
+{% raw %}
+
 	Article: Q158021
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -54,3 +56,5 @@ permalink: /kb/158/Q158021/
 	
 	=============================================================================
 	
+
+{% endraw %}

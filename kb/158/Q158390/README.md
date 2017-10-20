@@ -6,6 +6,8 @@ permalink: /kb/158/Q158390/
 
 ## Q158390: Return of Arcade: Sound Option Is Not Available
 
+{% raw %}
+
 	Article: Q158390
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -113,3 +115,5 @@ permalink: /kb/158/Q158390/
 	
 	=============================================================================
 	
+
+{% endraw %}

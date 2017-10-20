@@ -6,6 +6,8 @@ permalink: /kb/268/Q268000/
 
 ## Q268000: XADM: Exchange 5.5 Server from Select CD Limits IS to 16 GB
 
+{% raw %}
+
 	Article: Q268000
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -54,3 +56,5 @@ permalink: /kb/268/Q268000/
 	
 	=============================================================================
 	
+
+{% endraw %}

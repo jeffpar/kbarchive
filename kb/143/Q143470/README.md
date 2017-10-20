@@ -6,6 +6,8 @@ permalink: /kb/143/Q143470/
 
 ## Q143470: Run Logon Scripts Synchronously Not Applied to New Users
 
+{% raw %}
+
 	Article: Q143470
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/143/Q143470/
 	
 	=============================================================================
 	
+
+{% endraw %}

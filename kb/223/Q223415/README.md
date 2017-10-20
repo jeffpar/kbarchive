@@ -6,6 +6,8 @@ permalink: /kb/223/Q223415/
 
 ## Q223415: Stop 0x0a in Ibmsync.sys at ibmsync!SyncPutDPCQueueTail+0x58
 
+{% raw %}
+
 	Article: Q223415
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0SP1,4.0SP2
@@ -153,3 +155,5 @@ permalink: /kb/223/Q223415/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150599/
 
 ## Q150599: Incompatibility Between Setmarks and Filemarks
 
+{% raw %}
+
 	Article: Q150599
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.2x,6.0,6.5
@@ -70,3 +72,5 @@ permalink: /kb/150/Q150599/
 	
 	=============================================================================
 	
+
+{% endraw %}

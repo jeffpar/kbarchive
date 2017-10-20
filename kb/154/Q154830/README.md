@@ -6,6 +6,8 @@ permalink: /kb/154/Q154830/
 
 ## Q154830: XCLN: Setting Send Options for Individual Messages
 
+{% raw %}
+
 	Article: Q154830
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,8.0; :8.0,8.01,8.02,8.03
@@ -124,3 +126,5 @@ permalink: /kb/154/Q154830/
 	
 	=============================================================================
 	
+
+{% endraw %}

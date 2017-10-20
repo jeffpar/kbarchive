@@ -6,6 +6,8 @@ permalink: /kb/132/Q132359/
 
 ## Q132359: Example of Polymorphism in Visual FoxPro
 
+{% raw %}
+
 	Article: Q132359
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -138,3 +140,5 @@ permalink: /kb/132/Q132359/
 	
 	=============================================================================
 	
+
+{% endraw %}

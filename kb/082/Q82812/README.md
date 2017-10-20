@@ -6,6 +6,8 @@ permalink: /kb/082/Q82812/
 
 ## Q82812: Font Selection/Mouse Support for MS-DOS Apps in a Window
 
+{% raw %}
+
 	Article: Q82812
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -74,3 +76,5 @@ permalink: /kb/082/Q82812/
 	
 	=============================================================================
 	
+
+{% endraw %}

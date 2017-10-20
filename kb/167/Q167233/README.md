@@ -6,6 +6,8 @@ permalink: /kb/167/Q167233/
 
 ## Q167233: Windows NT Boot Error Msg: Missing Last Known Good Menu
 
+{% raw %}
+
 	Article: Q167233
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0a,4.5
@@ -105,3 +107,5 @@ permalink: /kb/167/Q167233/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/275/Q275029/
 
 ## Q275029: AoE: Villagers Stand in Building Foundation and Do Nothing
 
+{% raw %}
+
 	Article: Q275029
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -55,3 +57,5 @@ permalink: /kb/275/Q275029/
 	
 	=============================================================================
 	
+
+{% endraw %}

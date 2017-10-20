@@ -6,6 +6,8 @@ permalink: /kb/262/Q262207/
 
 ## Q262207: Allegiance: Squad Member Is Unable to Join a Squad Game
 
+{% raw %}
+
 	Article: Q262207
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -54,3 +56,5 @@ permalink: /kb/262/Q262207/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/060/Q60430/
 
 ## Q60430: Security Issues with LAN Manager 2.0 and 2.1
 
+{% raw %}
+
 	Article: Q60430
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -125,3 +127,5 @@ permalink: /kb/060/Q60430/
 	
 	=============================================================================
 	
+
+{% endraw %}

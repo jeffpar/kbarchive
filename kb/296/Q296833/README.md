@@ -6,6 +6,8 @@ permalink: /kb/296/Q296833/
 
 ## Q296833: PRB: Windows Can't Handle SSL Certificates Contain Odd-Sized Key
 
+{% raw %}
+
 	Article: Q296833
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,4.0
@@ -50,3 +52,5 @@ permalink: /kb/296/Q296833/
 	
 	=============================================================================
 	
+
+{% endraw %}

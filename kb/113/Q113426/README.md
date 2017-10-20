@@ -6,6 +6,8 @@ permalink: /kb/113/Q113426/
 
 ## Q113426: BUG: DX1020 or Application Error from H2INC
 
+{% raw %}
+
 	Article: Q113426
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.11
@@ -75,3 +77,5 @@ permalink: /kb/113/Q113426/
 	
 	=============================================================================
 	
+
+{% endraw %}

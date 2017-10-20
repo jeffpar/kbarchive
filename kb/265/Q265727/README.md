@@ -6,6 +6,8 @@ permalink: /kb/265/Q265727/
 
 ## Q265727: XFOR: Internet Mail Service Stops while Obtaining Next Host
 
+{% raw %}
+
 	Article: Q265727
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -66,3 +68,5 @@ permalink: /kb/265/Q265727/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234923/
 
 ## Q234923: Err Msg: HTTP/1.1 501 Not Supported
 
+{% raw %}
+
 	Article: Q234923
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -50,3 +52,5 @@ permalink: /kb/234/Q234923/
 	
 	=============================================================================
 	
+
+{% endraw %}

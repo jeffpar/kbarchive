@@ -6,6 +6,8 @@ permalink: /kb/138/Q138245/
 
 ## Q138245: SMS: Err Msg: Incorrect System Version Upgrading to WFW
 
+{% raw %}
+
 	Article: Q138245
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -76,3 +78,5 @@ permalink: /kb/138/Q138245/
 	
 	=============================================================================
 	
+
+{% endraw %}

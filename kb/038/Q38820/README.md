@@ -6,6 +6,8 @@ permalink: /kb/038/Q38820/
 
 ## Q38820: Error L2025 Name : Symbol Defined More than Once
 
+{% raw %}
+
 	Article: Q38820
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -36,3 +38,5 @@ permalink: /kb/038/Q38820/
 	keyword such as pascal. If the included function prototype has the
 	keyword and the library routine does not, or vice versa, the linker
 	reports that the function is defined more than once.
+
+{% endraw %}

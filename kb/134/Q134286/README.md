@@ -6,6 +6,8 @@ permalink: /kb/134/Q134286/
 
 ## Q134286: Windows NT 3.51 LsarLookupSids errors from Big Endian Servers
 
+{% raw %}
+
 	Article: Q134286
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -56,3 +58,5 @@ permalink: /kb/134/Q134286/
 	
 	=============================================================================
 	
+
+{% endraw %}

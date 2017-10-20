@@ -6,6 +6,8 @@ permalink: /kb/067/Q67312/
 
 ## Q67312: Keywords Limited to 9 Characters When Adding to QB 4.50 Help
 
+{% raw %}
+
 	Article: Q67312
 	Product(s): See article
 	Version(s): 4.50
@@ -53,3 +55,5 @@ permalink: /kb/067/Q67312/
 	from Microsoft Product Support Services. The HELPMAKE utility is also
 	documented in Chapter 8, "HELPMAKE," in the "Microsoft QuickC Version
 	2.0: Toolkit" manual.
+
+{% endraw %}

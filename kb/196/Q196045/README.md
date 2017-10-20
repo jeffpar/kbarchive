@@ -6,6 +6,8 @@ permalink: /kb/196/Q196045/
 
 ## Q196045: XCON: DRAS Connector Fails Connecting to Multiple Sites
 
+{% raw %}
+
 	Article: Q196045
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -83,3 +85,5 @@ permalink: /kb/196/Q196045/
 	
 	=============================================================================
 	
+
+{% endraw %}

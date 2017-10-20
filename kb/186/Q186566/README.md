@@ -6,6 +6,8 @@ permalink: /kb/186/Q186566/
 
 ## Q186566: Connection Configuration in Terminal Server
 
+{% raw %}
+
 	Article: Q186566
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,4.0
@@ -265,3 +267,5 @@ permalink: /kb/186/Q186566/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180435/
 
 ## Q180435: PRB: ScrollBars Missing in Multiline TextBox
 
+{% raw %}
+
 	Article: Q180435
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/180/Q180435/
 	
 	=============================================================================
 	
+
+{% endraw %}

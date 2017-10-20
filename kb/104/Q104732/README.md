@@ -6,6 +6,8 @@ permalink: /kb/104/Q104732/
 
 ## Q104732: Running MSD 2.01 under Windows Causes DoubleGuard Error
 
+{% raw %}
+
 	Article: Q104732
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22; WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/104/Q104732/
 	
 	=============================================================================
 	
+
+{% endraw %}

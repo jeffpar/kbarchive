@@ -6,6 +6,8 @@ permalink: /kb/122/Q122899/
 
 ## Q122899: No Network Functionality in The Microsoft Hearts Network
 
+{% raw %}
+
 	Article: Q122899
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/122/Q122899/
 	
 	=============================================================================
 	
+
+{% endraw %}

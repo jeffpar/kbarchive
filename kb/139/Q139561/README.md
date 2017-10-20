@@ -6,6 +6,8 @@ permalink: /kb/139/Q139561/
 
 ## Q139561: Availability of MSDLC32 and Support Boundaries
 
+{% raw %}
+
 	Article: Q139561
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -144,3 +146,5 @@ permalink: /kb/139/Q139561/
 	
 	=============================================================================
 	
+
+{% endraw %}

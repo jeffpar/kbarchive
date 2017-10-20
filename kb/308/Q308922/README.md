@@ -6,6 +6,8 @@ permalink: /kb/308/Q308922/
 
 ## Q308922: Streets and Trips: Browser Hangs During Streets &amp; Trips Install
 
+{% raw %}
+
 	Article: Q308922
 	Product(s): Microsoft Automap
 	Version(s): 1.0,5.5
@@ -109,3 +111,5 @@ permalink: /kb/308/Q308922/
 	
 	=============================================================================
 	
+
+{% endraw %}

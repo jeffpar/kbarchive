@@ -6,6 +6,8 @@ permalink: /kb/244/Q244052/
 
 ## Q244052: AFP (Advanced Function Printing) Is Not Supported by SNA Server
 
+{% raw %}
+
 	Article: Q244052
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -69,3 +71,5 @@ permalink: /kb/244/Q244052/
 	
 	=============================================================================
 	
+
+{% endraw %}

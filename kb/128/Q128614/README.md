@@ -6,6 +6,8 @@ permalink: /kb/128/Q128614/
 
 ## Q128614: SMS: INVDOS Fails with Large PKG_16.CFG File
 
+{% raw %}
+
 	Article: Q128614
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -85,3 +87,5 @@ permalink: /kb/128/Q128614/
 	
 	=============================================================================
 	
+
+{% endraw %}

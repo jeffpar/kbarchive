@@ -6,6 +6,8 @@ permalink: /kb/152/Q152267/
 
 ## Q152267: XCLN: Exchange Client Fails After Removing Application
 
+{% raw %}
+
 	Article: Q152267
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -53,3 +55,5 @@ permalink: /kb/152/Q152267/
 	
 	=============================================================================
 	
+
+{% endraw %}

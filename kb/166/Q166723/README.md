@@ -6,6 +6,8 @@ permalink: /kb/166/Q166723/
 
 ## Q166723: FIX: ATL Object Wizard Prevents Undo Changes
 
+{% raw %}
+
 	Article: Q166723
 	Product(s): Microsoft C Compiler
 	Version(s): 2.1,3.0
@@ -73,3 +75,5 @@ permalink: /kb/166/Q166723/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137908/
 
 ## Q137908: PC WRmt: Script for Xircom CEM2 and Mail Remote for Windows
 
+{% raw %}
+
 	Article: Q137908
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -78,3 +80,5 @@ permalink: /kb/137/Q137908/
 	
 	=============================================================================
 	
+
+{% endraw %}

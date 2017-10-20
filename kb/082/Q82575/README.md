@@ -6,6 +6,8 @@ permalink: /kb/082/Q82575/
 
 ## Q82575: Windows Programs Rely on BIOS to Detect Coprocessor
 
+{% raw %}
+
 	Article: Q82575
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/082/Q82575/
 	
 	=============================================================================
 	
+
+{% endraw %}

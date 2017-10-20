@@ -6,6 +6,8 @@ permalink: /kb/122/Q122381/
 
 ## Q122381: Err Msg: Hard Drive Partition... w/Quantum 540 MB IDE Drive
 
+{% raw %}
+
 	Article: Q122381
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -63,3 +65,5 @@ permalink: /kb/122/Q122381/
 	
 	=============================================================================
 	
+
+{% endraw %}

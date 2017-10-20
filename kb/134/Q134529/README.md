@@ -6,6 +6,8 @@ permalink: /kb/134/Q134529/
 
 ## Q134529: Persistent Connection Is Dropped
 
+{% raw %}
+
 	Article: Q134529
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/134/Q134529/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/106/Q106366/
 
 ## Q106366: WFWG Hangs at Startup with Future Domain 32-Bit Disk Access
 
+{% raw %}
+
 	Article: Q106366
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -54,3 +56,5 @@ permalink: /kb/106/Q106366/
 	
 	=============================================================================
 	
+
+{% endraw %}

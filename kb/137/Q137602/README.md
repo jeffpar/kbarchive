@@ -6,6 +6,8 @@ permalink: /kb/137/Q137602/
 
 ## Q137602: PPT: Slides Not Centered When Printing from HP DeskJet Printer
 
+{% raw %}
+
 	Article: Q137602
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,7.0
@@ -103,3 +105,5 @@ permalink: /kb/137/Q137602/
 	
 	=============================================================================
 	
+
+{% endraw %}

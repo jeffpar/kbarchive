@@ -6,6 +6,8 @@ permalink: /kb/184/Q184149/
 
 ## Q184149: WD97: Word Creates Hyperlink When @ Is Inside Quotation Marks
 
+{% raw %}
+
 	Article: Q184149
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -71,3 +73,5 @@ permalink: /kb/184/Q184149/
 	
 	=============================================================================
 	
+
+{% endraw %}

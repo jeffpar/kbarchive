@@ -6,6 +6,8 @@ permalink: /kb/157/Q157912/
 
 ## Q157912: &quot;STOP: 0x00000093&quot; with Security Dongle Adapter
 
+{% raw %}
+
 	Article: Q157912
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -87,3 +89,5 @@ permalink: /kb/157/Q157912/
 	
 	=============================================================================
 	
+
+{% endraw %}

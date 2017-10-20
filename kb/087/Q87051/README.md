@@ -6,6 +6,8 @@ permalink: /kb/087/Q87051/
 
 ## Q87051: MCI: Role of the Gateway PC
 
+{% raw %}
+
 	Article: Q87051
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -46,3 +48,5 @@ permalink: /kb/087/Q87051/
 	
 	=============================================================================
 	
+
+{% endraw %}

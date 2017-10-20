@@ -6,6 +6,8 @@ permalink: /kb/254/Q254576/
 
 ## Q254576: XADM: Isinteg Reports ecCorruptData-MAPI_E_CORRUPT_DATA
 
+{% raw %}
+
 	Article: Q254576
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -86,3 +88,5 @@ permalink: /kb/254/Q254576/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/279/Q279401/
 
 ## Q279401: PRB: Overlocalized Sort Order Strings in Access/Jet ODBC Driver
 
+{% raw %}
+
 	Article: Q279401
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.1,2.5,2000,2000 Service Release 1 (SR-1),4.0
@@ -154,3 +156,5 @@ permalink: /kb/279/Q279401/
 	
 	=============================================================================
 	
+
+{% endraw %}

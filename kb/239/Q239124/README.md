@@ -6,6 +6,8 @@ permalink: /kb/239/Q239124/
 
 ## Q239124: Time Stamp Errors Running Windows NT on an AS/400-Based Computer
 
+{% raw %}
+
 	Article: Q239124
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:4.0,5.5
@@ -98,3 +100,5 @@ permalink: /kb/239/Q239124/
 	
 	=============================================================================
 	
+
+{% endraw %}

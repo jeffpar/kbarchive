@@ -6,6 +6,8 @@ permalink: /kb/136/Q136823/
 
 ## Q136823: Clicking &quot;?&quot; Button During Sign In May Cause Lost Connection
 
+{% raw %}
+
 	Article: Q136823
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3,2.0,2.5
@@ -64,3 +66,5 @@ permalink: /kb/136/Q136823/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263401/
 
 ## Q263401: SMS: Software Inventory Recalls all Remote Offline Storage
 
+{% raw %}
+
 	Article: Q263401
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -66,3 +68,5 @@ permalink: /kb/263/Q263401/
 	
 	=============================================================================
 	
+
+{% endraw %}

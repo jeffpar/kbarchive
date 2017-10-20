@@ -6,6 +6,8 @@ permalink: /kb/066/Q66455/
 
 ## Q66455: Problems May Occur When Passing the Same Array Element Twice
 
+{% raw %}
+
 	Article: Q66455
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10 | 6.00 6.00b 7.00 7.10
@@ -69,3 +71,5 @@ permalink: /kb/066/Q66455/
 	   SUB MakeUpper(instring AS STRING, outstring AS STRING)
 	     outstring = UCASE$(instring)
 	   END SUB
+
+{% endraw %}

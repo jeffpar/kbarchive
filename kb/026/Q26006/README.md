@@ -6,6 +6,8 @@ permalink: /kb/026/Q26006/
 
 ## Q26006: &quot;Illegal Function Call&quot; from EXE Using Coprocessor
 
+{% raw %}
+
 	Article: Q26006
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -57,3 +59,5 @@ permalink: /kb/026/Q26006/
 	To work around the problem, assign (1 - x^2 / 40804) to an
 	intermediate variable, set the intermediate variable to zero if it is
 	less than zero, and use the intermediate value in the SQR function.
+
+{% endraw %}

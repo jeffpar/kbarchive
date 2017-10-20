@@ -6,6 +6,8 @@ permalink: /kb/146/Q146326/
 
 ## Q146326: XFOR: No Events Logged when the IMC Refuses Inbound Connection
 
+{% raw %}
+
 	Article: Q146326
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -40,3 +42,5 @@ permalink: /kb/146/Q146326/
 	
 	=============================================================================
 	
+
+{% endraw %}

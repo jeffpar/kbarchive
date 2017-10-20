@@ -6,6 +6,8 @@ permalink: /kb/150/Q150615/
 
 ## Q150615: Return of Arcade: Disk Label Mentions Windows NT File Menu
 
+{% raw %}
+
 	Article: Q150615
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -47,3 +49,5 @@ permalink: /kb/150/Q150615/
 	
 	=============================================================================
 	
+
+{% endraw %}

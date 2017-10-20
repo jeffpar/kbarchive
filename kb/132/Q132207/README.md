@@ -6,6 +6,8 @@ permalink: /kb/132/Q132207/
 
 ## Q132207: PRB: MSINFO Not Installed on Windows NT or Windows 95
 
+{% raw %}
+
 	Article: Q132207
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -86,3 +88,5 @@ permalink: /kb/132/Q132207/
 	
 	=============================================================================
 	
+
+{% endraw %}

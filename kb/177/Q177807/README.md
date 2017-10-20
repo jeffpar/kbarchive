@@ -6,6 +6,8 @@ permalink: /kb/177/Q177807/
 
 ## Q177807: XADM: Online Backup of the Store or Directory May Stop
 
+{% raw %}
+
 	Article: Q177807
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0 SP1
@@ -83,3 +85,5 @@ permalink: /kb/177/Q177807/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112883/
 
 ## Q112883: CONN: MACGATE Needs Separate Mappings for DATA and EXE
 
+{% raw %}
+
 	Article: Q112883
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.0b
@@ -65,3 +67,5 @@ permalink: /kb/112/Q112883/
 	
 	=============================================================================
 	
+
+{% endraw %}

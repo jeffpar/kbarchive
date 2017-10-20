@@ -6,6 +6,8 @@ permalink: /kb/167/Q167418/
 
 ## Q167418: Access Violation When Configuring a Printer from a MAC Client
 
+{% raw %}
+
 	Article: Q167418
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -70,3 +72,5 @@ permalink: /kb/167/Q167418/
 	
 	=============================================================================
 	
+
+{% endraw %}

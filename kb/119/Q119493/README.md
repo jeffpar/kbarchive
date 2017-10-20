@@ -6,6 +6,8 @@ permalink: /kb/119/Q119493/
 
 ## Q119493: NetBIOS over TCP/IP Name Resolution and WINS
 
+{% raw %}
+
 	Article: Q119493
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.50 4.00
@@ -138,3 +140,5 @@ permalink: /kb/119/Q119493/
 	
 	=============================================================================
 	
+
+{% endraw %}

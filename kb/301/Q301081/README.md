@@ -6,6 +6,8 @@ permalink: /kb/301/Q301081/
 
 ## Q301081: HOW TO: Export a Table from Windows CE by Using eMbedded Visual
 
+{% raw %}
+
 	Article: Q301081
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -181,3 +183,5 @@ permalink: /kb/301/Q301081/
 	
 	=============================================================================
 	
+
+{% endraw %}

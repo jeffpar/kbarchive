@@ -6,6 +6,8 @@ permalink: /kb/172/Q172404/
 
 ## Q172404: PRB: Opening Excel 4.0 Worksheets with DAO
 
+{% raw %}
+
 	Article: Q172404
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -65,3 +67,5 @@ permalink: /kb/172/Q172404/
 	
 	=============================================================================
 	
+
+{% endraw %}

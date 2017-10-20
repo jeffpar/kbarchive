@@ -6,6 +6,8 @@ permalink: /kb/195/Q195006/
 
 ## Q195006: XADM: Resource Failure Error with More Than 800 MB of RAM
 
+{% raw %}
+
 	Article: Q195006
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -112,3 +114,5 @@ permalink: /kb/195/Q195006/
 	
 	=============================================================================
 	
+
+{% endraw %}

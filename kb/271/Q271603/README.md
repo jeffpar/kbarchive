@@ -6,6 +6,8 @@ permalink: /kb/271/Q271603/
 
 ## Q271603: XADM: How to Use the Inbox Rules Manager Program
 
+{% raw %}
+
 	Article: Q271603
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -168,3 +170,5 @@ permalink: /kb/271/Q271603/
 	
 	=============================================================================
 	
+
+{% endraw %}

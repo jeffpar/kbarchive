@@ -6,6 +6,8 @@ permalink: /kb/110/Q110128/
 
 ## Q110128: PRB: &quot;Unrecognized Phrase/Keyword...&quot; with Macro Substitution
 
+{% raw %}
+
 	Article: Q110128
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -74,3 +76,5 @@ permalink: /kb/110/Q110128/
 	
 	=============================================================================
 	
+
+{% endraw %}

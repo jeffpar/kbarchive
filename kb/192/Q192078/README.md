@@ -6,6 +6,8 @@ permalink: /kb/192/Q192078/
 
 ## Q192078: BUG: Exclusive Check Box Unselected After Importing/Exporting
 
+{% raw %}
+
 	Article: Q192078
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -77,3 +79,5 @@ permalink: /kb/192/Q192078/
 	
 	=============================================================================
 	
+
+{% endraw %}

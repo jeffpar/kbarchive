@@ -6,6 +6,8 @@ permalink: /kb/256/Q256584/
 
 ## Q256584: Gateway for NFS Share Permissions Help Button Generates Error
 
+{% raw %}
+
 	Article: Q256584
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:
@@ -53,3 +55,5 @@ permalink: /kb/256/Q256584/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129548/
 
 ## Q129548: Cannot Open Attachment With Spaces In File Name In MSMAIL32
 
+{% raw %}
+
 	Article: Q129548
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:3.5,3.51
@@ -111,3 +113,5 @@ permalink: /kb/129/Q129548/
 	
 	=============================================================================
 	
+
+{% endraw %}

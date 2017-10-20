@@ -6,6 +6,8 @@ permalink: /kb/185/Q185703/
 
 ## Q185703: Limitations of the CB Feature in Monster Truck Madness 2
 
+{% raw %}
+
 	Article: Q185703
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -51,3 +53,5 @@ permalink: /kb/185/Q185703/
 	
 	=============================================================================
 	
+
+{% endraw %}

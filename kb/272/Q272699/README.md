@@ -6,6 +6,8 @@ permalink: /kb/272/Q272699/
 
 ## Q272699: XCON: Consequences of Non-Standard Class Message on X.400 Msgs.
 
+{% raw %}
+
 	Article: Q272699
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -77,3 +79,5 @@ permalink: /kb/272/Q272699/
 	
 	=============================================================================
 	
+
+{% endraw %}

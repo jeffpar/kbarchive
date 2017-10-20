@@ -6,6 +6,8 @@ permalink: /kb/158/Q158489/
 
 ## Q158489: XFOR: Err Msg: The Selected Postoffice is Read Only...
 
+{% raw %}
+
 	Article: Q158489
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/158/Q158489/
 	
 	=============================================================================
 	
+
+{% endraw %}

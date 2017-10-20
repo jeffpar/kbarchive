@@ -6,6 +6,8 @@ permalink: /kb/238/Q238189/
 
 ## Q238189: XCON: Duplicate Messages Delivered After MTA Restart
 
+{% raw %}
+
 	Article: Q238189
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -122,3 +124,5 @@ permalink: /kb/238/Q238189/
 	
 	=============================================================================
 	
+
+{% endraw %}

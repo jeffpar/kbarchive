@@ -6,6 +6,8 @@ permalink: /kb/114/Q114949/
 
 ## Q114949: INFO: Description of the FOXTOUCH() Function
 
+{% raw %}
+
 	Article: Q114949
 	Product(s): Microsoft FoxPro
 	Version(s): 2.6,2.6a,3.0,5.0,6.0
@@ -85,3 +87,5 @@ permalink: /kb/114/Q114949/
 	
 	=============================================================================
 	
+
+{% endraw %}

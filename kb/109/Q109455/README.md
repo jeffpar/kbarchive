@@ -6,6 +6,8 @@ permalink: /kb/109/Q109455/
 
 ## Q109455: Writer: Some Backgrounds Don't Support Multiple Columns
 
+{% raw %}
+
 	Article: Q109455
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
@@ -60,3 +62,5 @@ permalink: /kb/109/Q109455/
 	
 	=============================================================================
 	
+
+{% endraw %}

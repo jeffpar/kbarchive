@@ -6,6 +6,8 @@ permalink: /kb/141/Q141085/
 
 ## Q141085: HARDCORE VISUAL BASIC: Corrections and Comments
 
+{% raw %}
+
 	Article: Q141085
 	Product(s): Microsoft Press
 	Version(s): 
@@ -421,3 +423,5 @@ permalink: /kb/141/Q141085/
 	
 	=============================================================================
 	
+
+{% endraw %}

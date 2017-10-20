@@ -6,6 +6,8 @@ permalink: /kb/122/Q122265/
 
 ## Q122265: BUG: Incorrect Calculations with Both /Og and /G5
 
+{% raw %}
+
 	Article: Q122265
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,2.1
@@ -97,3 +99,5 @@ permalink: /kb/122/Q122265/
 	
 	=============================================================================
 	
+
+{% endraw %}

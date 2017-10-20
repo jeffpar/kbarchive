@@ -6,6 +6,8 @@ permalink: /kb/215/Q215336/
 
 ## Q215336: PRB: Picture.Circle Works Wrong if Radius Large and Angle Small
 
+{% raw %}
+
 	Article: Q215336
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -322,3 +324,5 @@ permalink: /kb/215/Q215336/
 	
 	=============================================================================
 	
+
+{% endraw %}

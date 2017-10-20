@@ -6,6 +6,8 @@ permalink: /kb/197/Q197727/
 
 ## Q197727: XFOR: NotesCal Returns Warning Event 2001
 
+{% raw %}
+
 	Article: Q197727
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -61,3 +63,5 @@ permalink: /kb/197/Q197727/
 	
 	=============================================================================
 	
+
+{% endraw %}

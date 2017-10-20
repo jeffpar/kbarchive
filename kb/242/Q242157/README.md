@@ -6,6 +6,8 @@ permalink: /kb/242/Q242157/
 
 ## Q242157: XCON: TP4 Transport Protocol Not Supported Under Windows 2000
 
+{% raw %}
+
 	Article: Q242157
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -68,3 +70,5 @@ permalink: /kb/242/Q242157/
 	
 	=============================================================================
 	
+
+{% endraw %}

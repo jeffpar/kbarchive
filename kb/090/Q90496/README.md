@@ -6,6 +6,8 @@ permalink: /kb/090/Q90496/
 
 ## Q90496: 386 Enhanced Mode Boot Sequence for Windows for Workgroups
 
+{% raw %}
+
 	Article: Q90496
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -99,3 +101,5 @@ permalink: /kb/090/Q90496/
 	
 	=============================================================================
 	
+
+{% endraw %}

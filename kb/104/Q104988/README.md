@@ -6,6 +6,8 @@ permalink: /kb/104/Q104988/
 
 ## Q104988: How to Recover from a Failed MS-DOS 6.2 Step-Up Installation
 
+{% raw %}
+
 	Article: Q104988
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -54,3 +56,5 @@ permalink: /kb/104/Q104988/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/290/Q290406/
 
 ## Q290406: Stop 0xC000021A with Custom Gina.dll &amp; WLX_LOGON_OPT_NO_PROFILE
 
+{% raw %}
+
 	Article: Q290406
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -101,3 +103,5 @@ permalink: /kb/290/Q290406/
 	
 	=============================================================================
 	
+
+{% endraw %}

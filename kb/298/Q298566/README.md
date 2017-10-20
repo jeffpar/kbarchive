@@ -6,6 +6,8 @@ permalink: /kb/298/Q298566/
 
 ## Q298566: &quot;Stop 0x0000000A&quot; Err Msg When You Use Nwfs.sys Redirector
 
+{% raw %}
+
 	Article: Q298566
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6
@@ -57,3 +59,5 @@ permalink: /kb/298/Q298566/
 	
 	=============================================================================
 	
+
+{% endraw %}

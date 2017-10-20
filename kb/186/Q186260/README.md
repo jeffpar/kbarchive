@@ -6,6 +6,8 @@ permalink: /kb/186/Q186260/
 
 ## Q186260: HOWTO: Rotate a Bitmap Image in 90-Degree Increments
 
+{% raw %}
+
 	Article: Q186260
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -349,3 +351,5 @@ permalink: /kb/186/Q186260/
 	
 	=============================================================================
 	
+
+{% endraw %}

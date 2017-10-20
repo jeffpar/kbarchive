@@ -6,6 +6,8 @@ permalink: /kb/190/Q190486/
 
 ## Q190486: DOC: Missing Styles for CToolbar::SetButtonStyles
 
+{% raw %}
+
 	Article: Q190486
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:6.0
@@ -71,3 +73,5 @@ permalink: /kb/190/Q190486/
 	
 	=============================================================================
 	
+
+{% endraw %}

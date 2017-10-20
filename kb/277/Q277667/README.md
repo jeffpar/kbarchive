@@ -6,6 +6,8 @@ permalink: /kb/277/Q277667/
 
 ## Q277667: PRB: SELECT DISTINCT Fails with Microsoft ODBC for Oracle
 
+{% raw %}
+
 	Article: Q277667
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.1,2.5,2.6,2.7,Build 2.573.2927,Build 2.573.3513,Build 2.573.3711,Build 2.573.4202,Bu
@@ -94,3 +96,5 @@ permalink: /kb/277/Q277667/
 	
 	=============================================================================
 	
+
+{% endraw %}

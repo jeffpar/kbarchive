@@ -6,6 +6,8 @@ permalink: /kb/303/Q303497/
 
 ## Q303497: Links 2001: Cameras Do Not Work as Expected
 
+{% raw %}
+
 	Article: Q303497
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -128,3 +130,5 @@ permalink: /kb/303/Q303497/
 	
 	=============================================================================
 	
+
+{% endraw %}

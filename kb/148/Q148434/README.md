@@ -6,6 +6,8 @@ permalink: /kb/148/Q148434/
 
 ## Q148434: File and Print Services Service Not Started in File Manager
 
+{% raw %}
+
 	Article: Q148434
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -68,3 +70,5 @@ permalink: /kb/148/Q148434/
 	
 	=============================================================================
 	
+
+{% endraw %}

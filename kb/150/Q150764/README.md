@@ -6,6 +6,8 @@ permalink: /kb/150/Q150764/
 
 ## Q150764: PRB: CString::LoadString Fails in Console Application
 
+{% raw %}
+
 	Article: Q150764
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1
@@ -145,3 +147,5 @@ permalink: /kb/150/Q150764/
 	
 	=============================================================================
 	
+
+{% endraw %}

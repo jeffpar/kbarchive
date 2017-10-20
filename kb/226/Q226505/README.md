@@ -6,6 +6,8 @@ permalink: /kb/226/Q226505/
 
 ## Q226505: SMS: Read/View Rights at Instance Level Not Providing Access
 
+{% raw %}
+
 	Article: Q226505
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -54,3 +56,5 @@ permalink: /kb/226/Q226505/
 	
 	=============================================================================
 	
+
+{% endraw %}

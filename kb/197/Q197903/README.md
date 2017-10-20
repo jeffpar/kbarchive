@@ -6,6 +6,8 @@ permalink: /kb/197/Q197903/
 
 ## Q197903: Snaservr.exe Access Violation In Snpugeti() or Snpuputi()
 
+{% raw %}
+
 	Article: Q197903
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0 SP1,4.0 SP2
@@ -126,3 +128,5 @@ permalink: /kb/197/Q197903/
 	
 	=============================================================================
 	
+
+{% endraw %}

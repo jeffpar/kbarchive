@@ -6,6 +6,8 @@ permalink: /kb/315/Q315616/
 
 ## Q315616: HOW TO: Detect a Client Language in an ASP Page in IIS
 
+{% raw %}
+
 	Article: Q315616
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0
@@ -171,3 +173,5 @@ permalink: /kb/315/Q315616/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/250/Q250487/
 
 ## Q250487: Generic Printer Driver Does Not Print Properly on Large Paper
 
+{% raw %}
+
 	Article: Q250487
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/250/Q250487/
 	
 	=============================================================================
 	
+
+{% endraw %}

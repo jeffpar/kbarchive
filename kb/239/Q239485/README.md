@@ -6,6 +6,8 @@ permalink: /kb/239/Q239485/
 
 ## Q239485: XWEB: OWA and IIS Authentication on a Member Server
 
+{% raw %}
+
 	Article: Q239485
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -60,3 +62,5 @@ permalink: /kb/239/Q239485/
 	
 	=============================================================================
 	
+
+{% endraw %}

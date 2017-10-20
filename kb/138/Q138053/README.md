@@ -6,6 +6,8 @@ permalink: /kb/138/Q138053/
 
 ## Q138053: XFOR: How to Stop Winmail.dat from Being Sent to Internet Users
 
+{% raw %}
+
 	Article: Q138053
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -162,3 +164,5 @@ permalink: /kb/138/Q138053/
 	
 	=============================================================================
 	
+
+{% endraw %}

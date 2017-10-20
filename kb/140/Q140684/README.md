@@ -6,6 +6,8 @@ permalink: /kb/140/Q140684/
 
 ## Q140684: Connectoid's Associated Script File Does Not Run
 
+{% raw %}
+
 	Article: Q140684
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -56,3 +58,5 @@ permalink: /kb/140/Q140684/
 	
 	=============================================================================
 	
+
+{% endraw %}

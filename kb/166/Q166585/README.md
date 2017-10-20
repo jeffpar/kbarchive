@@ -6,6 +6,8 @@ permalink: /kb/166/Q166585/
 
 ## Q166585: XADM: Msg with Bad TNEF Causes Store to Access Violate
 
+{% raw %}
+
 	Article: Q166585
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -161,3 +163,5 @@ permalink: /kb/166/Q166585/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247797/
 
 ## Q247797: Extra LBN_SELCHANGE Notification for Drop-Down List Boxes
 
+{% raw %}
+
 	Article: Q247797
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -100,3 +102,5 @@ permalink: /kb/247/Q247797/
 	
 	=============================================================================
 	
+
+{% endraw %}

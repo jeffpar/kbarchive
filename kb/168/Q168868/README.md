@@ -6,6 +6,8 @@ permalink: /kb/168/Q168868/
 
 ## Q168868: Puzzle Collection: Contents Description and System Requirements
 
+{% raw %}
+
 	Article: Q168868
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -124,3 +126,5 @@ permalink: /kb/168/Q168868/
 	
 	=============================================================================
 	
+
+{% endraw %}

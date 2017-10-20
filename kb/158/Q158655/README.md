@@ -6,6 +6,8 @@ permalink: /kb/158/Q158655/
 
 ## Q158655: Mac Encarta 97: May Run Slowly on PowerMacs with Low Memory
 
+{% raw %}
+
 	Article: Q158655
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -71,3 +73,5 @@ permalink: /kb/158/Q158655/
 	
 	=============================================================================
 	
+
+{% endraw %}

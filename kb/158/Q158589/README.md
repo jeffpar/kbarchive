@@ -6,6 +6,8 @@ permalink: /kb/158/Q158589/
 
 ## Q158589: XCON: Only a Few Messages Delivered over X.400 Connector
 
+{% raw %}
+
 	Article: Q158589
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -43,3 +45,5 @@ permalink: /kb/158/Q158589/
 	
 	=============================================================================
 	
+
+{% endraw %}

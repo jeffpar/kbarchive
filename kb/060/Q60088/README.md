@@ -6,6 +6,8 @@ permalink: /kb/060/Q60088/
 
 ## Q60088: Instruction: VOR Tracking with Glideslope On
 
+{% raw %}
+
 	Article: Q60088
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/060/Q60088/
 	
 	=============================================================================
 	
+
+{% endraw %}

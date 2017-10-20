@@ -6,6 +6,8 @@ permalink: /kb/194/Q194487/
 
 ## Q194487: WD97: Difference Between RTF and RFT File Formats
 
+{% raw %}
+
 	Article: Q194487
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/194/Q194487/
 	
 	=============================================================================
 	
+
+{% endraw %}

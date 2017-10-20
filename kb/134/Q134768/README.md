@@ -6,6 +6,8 @@ permalink: /kb/134/Q134768/
 
 ## Q134768: Problems Using the XCOPY Command and Long Filenames
 
+{% raw %}
+
 	Article: Q134768
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/134/Q134768/
 	
 	=============================================================================
 	
+
+{% endraw %}

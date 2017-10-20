@@ -6,6 +6,8 @@ permalink: /kb/126/Q126897/
 
 ## Q126897: HOWTO: How to Change Default Printer Settings in an MFC Applicat
 
+{% raw %}
+
 	Article: Q126897
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1
@@ -111,3 +113,5 @@ permalink: /kb/126/Q126897/
 	
 	=============================================================================
 	
+
+{% endraw %}

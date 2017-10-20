@@ -6,6 +6,8 @@ permalink: /kb/136/Q136688/
 
 ## Q136688: FIX: Class Browser: Multiple Control Boxes with Maximized .VCX
 
+{% raw %}
+
 	Article: Q136688
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b
@@ -62,3 +64,5 @@ permalink: /kb/136/Q136688/
 	
 	=============================================================================
 	
+
+{% endraw %}

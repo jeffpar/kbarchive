@@ -6,6 +6,8 @@ permalink: /kb/172/Q172708/
 
 ## Q172708: BID Response Not Honoring Pacing Indicator from FMI Application
 
+{% raw %}
+
 	Article: Q172708
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -69,3 +71,5 @@ permalink: /kb/172/Q172708/
 	
 	=============================================================================
 	
+
+{% endraw %}

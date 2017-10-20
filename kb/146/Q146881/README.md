@@ -6,6 +6,8 @@ permalink: /kb/146/Q146881/
 
 ## Q146881: XCLN: Column Order Changed After Group By Operation
 
+{% raw %}
+
 	Article: Q146881
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -45,3 +47,5 @@ permalink: /kb/146/Q146881/
 	
 	=============================================================================
 	
+
+{% endraw %}

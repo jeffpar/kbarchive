@@ -6,6 +6,8 @@ permalink: /kb/308/Q308179/
 
 ## Q308179: BUG: Virtual Directories Disappear from the IIS 5.1 Snap-in
 
+{% raw %}
+
 	Article: Q308179
 	Product(s): Internet Information Server
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/308/Q308179/
 	
 	=============================================================================
 	
+
+{% endraw %}

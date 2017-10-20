@@ -6,6 +6,8 @@ permalink: /kb/061/Q61282/
 
 ## Q61282: Mac Wkst: Trying to Install Causes Macintosh to Crash
 
+{% raw %}
+
 	Article: Q61282
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b
@@ -49,3 +51,5 @@ permalink: /kb/061/Q61282/
 	
 	=============================================================================
 	
+
+{% endraw %}

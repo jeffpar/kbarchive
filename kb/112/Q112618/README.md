@@ -6,6 +6,8 @@ permalink: /kb/112/Q112618/
 
 ## Q112618: How to Prevent Calling Card Numbers from Appearing on Faxes
 
+{% raw %}
+
 	Article: Q112618
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -66,3 +68,5 @@ permalink: /kb/112/Q112618/
 	
 	=============================================================================
 	
+
+{% endraw %}

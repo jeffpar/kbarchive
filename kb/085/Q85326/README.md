@@ -6,6 +6,8 @@ permalink: /kb/085/Q85326/
 
 ## Q85326: Windows Err Msg: Failed to Register Server
 
+{% raw %}
+
 	Article: Q85326
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/085/Q85326/
 	
 	=============================================================================
 	
+
+{% endraw %}

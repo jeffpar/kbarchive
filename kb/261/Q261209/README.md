@@ -6,6 +6,8 @@ permalink: /kb/261/Q261209/
 
 ## Q261209: StarLancer: Cannot Assign a Different Function to the POV Switch
 
+{% raw %}
+
 	Article: Q261209
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -48,3 +50,5 @@ permalink: /kb/261/Q261209/
 	
 	=============================================================================
 	
+
+{% endraw %}

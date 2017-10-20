@@ -6,6 +6,8 @@ permalink: /kb/076/Q76682/
 
 ## Q76682: Properly Using Dynamic-Link Libraries
 
+{% raw %}
+
 	Article: Q76682
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -72,3 +74,5 @@ permalink: /kb/076/Q76682/
 	
 	=============================================================================
 	
+
+{% endraw %}

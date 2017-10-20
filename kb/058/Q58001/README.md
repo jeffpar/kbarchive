@@ -6,6 +6,8 @@ permalink: /kb/058/Q58001/
 
 ## Q58001: Can't Supress References to ILINK in NMAKE File
 
+{% raw %}
+
 	Article: Q58001
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -41,3 +43,5 @@ permalink: /kb/058/Q58001/
 	Microsoft has confirmed this to be a problem with Microsoft QuickC
 	Version 2.00. We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

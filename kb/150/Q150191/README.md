@@ -6,6 +6,8 @@ permalink: /kb/150/Q150191/
 
 ## Q150191: DOC: DBGrid Does Not Support Display of Pictures
 
+{% raw %}
+
 	Article: Q150191
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -63,3 +65,5 @@ permalink: /kb/150/Q150191/
 	
 	=============================================================================
 	
+
+{% endraw %}

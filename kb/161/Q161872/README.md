@@ -6,6 +6,8 @@ permalink: /kb/161/Q161872/
 
 ## Q161872: FIX: ActiveX Control Fails to Fire Click Event
 
+{% raw %}
+
 	Article: Q161872
 	Product(s): Microsoft C Compiler
 	Version(s): 4.20
@@ -83,3 +85,5 @@ permalink: /kb/161/Q161872/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176276/
 
 ## Q176276: Frequently Asked Questions About Mail Migration For MSN Version
 
+{% raw %}
+
 	Article: Q176276
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.5,4.0
@@ -178,3 +180,5 @@ permalink: /kb/176/Q176276/
 	
 	=============================================================================
 	
+
+{% endraw %}

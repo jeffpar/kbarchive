@@ -6,6 +6,8 @@ permalink: /kb/200/Q200972/
 
 ## Q200972: SMS: Custom Collection Examples
 
+{% raw %}
+
 	Article: Q200972
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -144,3 +146,5 @@ permalink: /kb/200/Q200972/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196510/
 
 ## Q196510: Error Msg: Error Writing to LPT1: System Cannot Find the File
 
+{% raw %}
+
 	Article: Q196510
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -87,3 +89,5 @@ permalink: /kb/196/Q196510/
 	
 	=============================================================================
 	
+
+{% endraw %}

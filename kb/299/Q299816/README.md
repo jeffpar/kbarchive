@@ -6,6 +6,8 @@ permalink: /kb/299/Q299816/
 
 ## Q299816: Train Simulator: Screen Flickers in Local Service Activity
 
+{% raw %}
+
 	Article: Q299816
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -41,3 +43,5 @@ permalink: /kb/299/Q299816/
 	
 	=============================================================================
 	
+
+{% endraw %}

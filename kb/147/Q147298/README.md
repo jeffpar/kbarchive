@@ -6,6 +6,8 @@ permalink: /kb/147/Q147298/
 
 ## Q147298: XCLN: Maximum Number of Rules Per Folder
 
+{% raw %}
+
 	Article: Q147298
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -49,3 +51,5 @@ permalink: /kb/147/Q147298/
 	
 	=============================================================================
 	
+
+{% endraw %}

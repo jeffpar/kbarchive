@@ -6,6 +6,8 @@ permalink: /kb/158/Q158573/
 
 ## Q158573: STL Sample for the set::(key_, value_)comp Function
 
+{% raw %}
+
 	Article: Q158573
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -158,3 +160,5 @@ permalink: /kb/158/Q158573/
 	
 	=============================================================================
 	
+
+{% endraw %}

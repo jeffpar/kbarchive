@@ -6,6 +6,8 @@ permalink: /kb/083/Q83275/
 
 ## Q83275: Using Extended ASCII Characters (Not Found on Keyboard)
 
+{% raw %}
+
 	Article: Q83275
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -84,3 +86,5 @@ permalink: /kb/083/Q83275/
 	
 	=============================================================================
 	
+
+{% endraw %}

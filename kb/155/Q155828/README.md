@@ -6,6 +6,8 @@ permalink: /kb/155/Q155828/
 
 ## Q155828: XFOR: How the IMC Dial-Up Can Retrieve Mail from an ISP
 
+{% raw %}
+
 	Article: Q155828
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/155/Q155828/
 	
 	=============================================================================
 	
+
+{% endraw %}

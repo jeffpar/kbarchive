@@ -6,6 +6,8 @@ permalink: /kb/189/Q189189/
 
 ## Q189189: SMS: Fiperf.bat - Add SMS File Counters to Performance Monitor
 
+{% raw %}
+
 	Article: Q189189
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -101,3 +103,5 @@ permalink: /kb/189/Q189189/
 	
 	=============================================================================
 	
+
+{% endraw %}

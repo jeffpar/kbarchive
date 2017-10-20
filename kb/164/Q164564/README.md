@@ -6,6 +6,8 @@ permalink: /kb/164/Q164564/
 
 ## Q164564: XADM: How to Install Exchange 4.0 in an Exchange 5.0 Site
 
+{% raw %}
+
 	Article: Q164564
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -66,3 +68,5 @@ permalink: /kb/164/Q164564/
 	
 	=============================================================================
 	
+
+{% endraw %}

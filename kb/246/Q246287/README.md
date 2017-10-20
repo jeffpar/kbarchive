@@ -6,6 +6,8 @@ permalink: /kb/246/Q246287/
 
 ## Q246287: XADM: Write a Batch File to Shut Down Exchange Server Quickly
 
+{% raw %}
+
 	Article: Q246287
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -56,3 +58,5 @@ permalink: /kb/246/Q246287/
 	
 	=============================================================================
 	
+
+{% endraw %}

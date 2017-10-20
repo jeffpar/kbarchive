@@ -6,6 +6,8 @@ permalink: /kb/128/Q128237/
 
 ## Q128237: PRB: Polyline Fails with NULL Clipping Region
 
+{% raw %}
+
 	Article: Q128237
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -49,3 +51,5 @@ permalink: /kb/128/Q128237/
 	
 	=============================================================================
 	
+
+{% endraw %}

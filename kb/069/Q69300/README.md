@@ -6,6 +6,8 @@ permalink: /kb/069/Q69300/
 
 ## Q69300: QEMM386: Exiting Windows 3.0 and Starting Word Reboots System
 
+{% raw %}
+
 	Article: Q69300
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -66,3 +68,5 @@ permalink: /kb/069/Q69300/
 	
 	=============================================================================
 	
+
+{% endraw %}

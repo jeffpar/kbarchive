@@ -6,6 +6,8 @@ permalink: /kb/159/Q159761/
 
 ## Q159761: MSB Human: Hangs Before Classroom or During Transition
 
+{% raw %}
+
 	Article: Q159761
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -104,3 +106,5 @@ permalink: /kb/159/Q159761/
 	
 	=============================================================================
 	
+
+{% endraw %}

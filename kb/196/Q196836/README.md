@@ -6,6 +6,8 @@ permalink: /kb/196/Q196836/
 
 ## Q196836: PRB: MFC Socket Functions Fail from ExitInstance
 
+{% raw %}
+
 	Article: Q196836
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/196/Q196836/
 	
 	=============================================================================
 	
+
+{% endraw %}

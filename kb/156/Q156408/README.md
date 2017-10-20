@@ -6,6 +6,8 @@ permalink: /kb/156/Q156408/
 
 ## Q156408: Setting Up Virtual Directory May Cause &quot;Logon Failure&quot; ErrMsg
 
+{% raw %}
+
 	Article: Q156408
 	Product(s): Internet Information Server
 	Version(s): WinNT:2.0
@@ -51,3 +53,5 @@ permalink: /kb/156/Q156408/
 	
 	=============================================================================
 	
+
+{% endraw %}

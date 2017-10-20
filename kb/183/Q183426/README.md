@@ -6,6 +6,8 @@ permalink: /kb/183/Q183426/
 
 ## Q183426: WD97: How to Merge a Single Data Source to Multiple Documents
 
+{% raw %}
+
 	Article: Q183426
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -245,3 +247,5 @@ permalink: /kb/183/Q183426/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231798/
 
 ## Q231798: Access Database with Multiple Users Slow on Terminal Server
 
+{% raw %}
+
 	Article: Q231798
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -70,3 +72,5 @@ permalink: /kb/231/Q231798/
 	
 	=============================================================================
 	
+
+{% endraw %}

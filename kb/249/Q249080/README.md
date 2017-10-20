@@ -6,6 +6,8 @@ permalink: /kb/249/Q249080/
 
 ## Q249080: SMS: Problems Processing a Large Number of Tables with CMDCLEAN
 
+{% raw %}
+
 	Article: Q249080
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -83,3 +85,5 @@ permalink: /kb/249/Q249080/
 	
 	=============================================================================
 	
+
+{% endraw %}

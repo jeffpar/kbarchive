@@ -6,6 +6,8 @@ permalink: /kb/186/Q186430/
 
 ## Q186430: FIX: Intellipoint 'Snap To' Feature and VB5 Applications
 
+{% raw %}
+
 	Article: Q186430
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.2,5.0
@@ -117,3 +119,5 @@ permalink: /kb/186/Q186430/
 	
 	=============================================================================
 	
+
+{% endraw %}

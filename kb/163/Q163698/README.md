@@ -6,6 +6,8 @@ permalink: /kb/163/Q163698/
 
 ## Q163698: IDC Fails to Execute When Access to Httpodbc.dll Is Denied
 
+{% raw %}
+
 	Article: Q163698
 	Product(s): Internet Information Server
 	Version(s): WINNT: 2.0,3.0
@@ -70,3 +72,5 @@ permalink: /kb/163/Q163698/
 	
 	=============================================================================
 	
+
+{% endraw %}

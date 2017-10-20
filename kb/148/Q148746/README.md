@@ -6,6 +6,8 @@ permalink: /kb/148/Q148746/
 
 ## Q148746: FIX: Check Marks Work Only When Set in Top Level Menu Events
 
+{% raw %}
+
 	Article: Q148746
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -111,3 +113,5 @@ permalink: /kb/148/Q148746/
 	
 	=============================================================================
 	
+
+{% endraw %}

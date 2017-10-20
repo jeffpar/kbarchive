@@ -6,6 +6,8 @@ permalink: /kb/146/Q146222/
 
 ## Q146222: How to Use Grid MouseDown Code to Prevent Row/Partition Resize
 
+{% raw %}
+
 	Article: Q146222
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -170,3 +172,5 @@ permalink: /kb/146/Q146222/
 	
 	=============================================================================
 	
+
+{% endraw %}

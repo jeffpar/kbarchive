@@ -6,6 +6,8 @@ permalink: /kb/143/Q143040/
 
 ## Q143040: How to Call a Visual Basic 4.0 OLE Server from Project 4.0
 
+{% raw %}
+
 	Article: Q143040
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -98,3 +100,5 @@ permalink: /kb/143/Q143040/
 	
 	=============================================================================
 	
+
+{% endraw %}

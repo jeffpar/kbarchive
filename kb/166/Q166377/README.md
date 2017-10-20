@@ -6,6 +6,8 @@ permalink: /kb/166/Q166377/
 
 ## Q166377: FIX: Report Designer Changes Font from Wingdings to Default Font
 
+{% raw %}
+
 	Article: Q166377
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0a
@@ -71,3 +73,5 @@ permalink: /kb/166/Q166377/
 	
 	=============================================================================
 	
+
+{% endraw %}

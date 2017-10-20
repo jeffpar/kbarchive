@@ -6,6 +6,8 @@ permalink: /kb/157/Q157565/
 
 ## Q157565: XCON: MTA Terminates Without Logging Event in Application Log
 
+{% raw %}
+
 	Article: Q157565
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -45,3 +47,5 @@ permalink: /kb/157/Q157565/
 	
 	=============================================================================
 	
+
+{% endraw %}

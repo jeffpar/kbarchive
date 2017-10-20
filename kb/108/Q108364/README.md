@@ -6,6 +6,8 @@ permalink: /kb/108/Q108364/
 
 ## Q108364: BUG: Resolutions for DBWIN Utility Continuous Beeping
 
+{% raw %}
+
 	Article: Q108364
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -87,3 +89,5 @@ permalink: /kb/108/Q108364/
 	
 	=============================================================================
 	
+
+{% endraw %}

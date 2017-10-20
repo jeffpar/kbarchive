@@ -6,6 +6,8 @@ permalink: /kb/142/Q142509/
 
 ## Q142509: FIX: List of Problems Solved by Visual SourceSafe 4.0
 
+{% raw %}
+
 	Article: Q142509
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0
@@ -53,3 +55,5 @@ permalink: /kb/142/Q142509/
 	
 	=============================================================================
 	
+
+{% endraw %}

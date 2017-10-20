@@ -6,6 +6,8 @@ permalink: /kb/177/Q177464/
 
 ## Q177464: XADM: Information Store Stops in EcCreateP1 When Starting MTA
 
+{% raw %}
+
 	Article: Q177464
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -67,3 +69,5 @@ permalink: /kb/177/Q177464/
 	
 	=============================================================================
 	
+
+{% endraw %}

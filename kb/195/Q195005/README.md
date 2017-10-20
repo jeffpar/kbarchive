@@ -6,6 +6,8 @@ permalink: /kb/195/Q195005/
 
 ## Q195005: WD97: Some Document Properties Populated Automatically
 
+{% raw %}
+
 	Article: Q195005
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -110,3 +112,5 @@ permalink: /kb/195/Q195005/
 	
 	=============================================================================
 	
+
+{% endraw %}

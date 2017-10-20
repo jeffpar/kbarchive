@@ -6,6 +6,8 @@ permalink: /kb/137/Q137571/
 
 ## Q137571: SRV.SYS Error 2023
 
+{% raw %}
+
 	Article: Q137571
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP1,4.0
@@ -62,3 +64,5 @@ permalink: /kb/137/Q137571/
 	
 	=============================================================================
 	
+
+{% endraw %}

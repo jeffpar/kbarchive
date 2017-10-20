@@ -6,6 +6,8 @@ permalink: /kb/059/Q59099/
 
 ## Q59099: Mac Form: Err Msg: ...Sent Using a Custom Form Not Installed
 
+{% raw %}
+
 	Article: Q59099
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -44,3 +46,5 @@ permalink: /kb/059/Q59099/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179777/
 
 ## Q179777: Encarta 98: Lookup Reference Feature Not Available in Word
 
+{% raw %}
+
 	Article: Q179777
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:97
@@ -70,3 +72,5 @@ permalink: /kb/179/Q179777/
 	
 	=============================================================================
 	
+
+{% endraw %}

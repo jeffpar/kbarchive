@@ -6,6 +6,8 @@ permalink: /kb/137/Q137407/
 
 ## Q137407: How to Obtain the Active Drive Letters in a Visual FoxPro App
 
+{% raw %}
+
 	Article: Q137407
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/137/Q137407/
 	
 	=============================================================================
 	
+
+{% endraw %}

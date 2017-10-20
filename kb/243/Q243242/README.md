@@ -6,6 +6,8 @@ permalink: /kb/243/Q243242/
 
 ## Q243242: XADM: Mailbox Manager Application Error with Exclude Mailboxes
 
+{% raw %}
+
 	Article: Q243242
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -87,3 +89,5 @@ permalink: /kb/243/Q243242/
 	
 	=============================================================================
 	
+
+{% endraw %}

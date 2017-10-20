@@ -6,6 +6,8 @@ permalink: /kb/171/Q171864/
 
 ## Q171864: SNA Manager Does Not Stay Maximized
 
+{% raw %}
+
 	Article: Q171864
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -58,3 +60,5 @@ permalink: /kb/171/Q171864/
 	
 	=============================================================================
 	
+
+{% endraw %}

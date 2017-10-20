@@ -6,6 +6,8 @@ permalink: /kb/124/Q124429/
 
 ## Q124429: SMS Shared Version of Works 3.0 Displays OLE Error on Startup
 
+{% raw %}
+
 	Article: Q124429
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -56,3 +58,5 @@ permalink: /kb/124/Q124429/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/268/Q268604/
 
 ## Q268604: WEP2K: Card Collection Stops Responding During Game
 
+{% raw %}
+
 	Article: Q268604
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/268/Q268604/
 	
 	=============================================================================
 	
+
+{% endraw %}

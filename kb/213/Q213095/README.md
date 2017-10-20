@@ -6,6 +6,8 @@ permalink: /kb/213/Q213095/
 
 ## Q213095: SMS: SMS Icons Don't Appear After Windows NT 4 Client Discovery
 
+{% raw %}
+
 	Article: Q213095
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -52,3 +54,5 @@ permalink: /kb/213/Q213095/
 	
 	=============================================================================
 	
+
+{% endraw %}

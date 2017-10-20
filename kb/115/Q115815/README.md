@@ -6,6 +6,8 @@ permalink: /kb/115/Q115815/
 
 ## Q115815: How to Use the Backslash Character in AppleScript Script
 
+{% raw %}
+
 	Article: Q115815
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -71,3 +73,5 @@ permalink: /kb/115/Q115815/
 	
 	=============================================================================
 	
+
+{% endraw %}

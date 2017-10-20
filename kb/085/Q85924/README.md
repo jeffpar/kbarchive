@@ -6,6 +6,8 @@ permalink: /kb/085/Q85924/
 
 ## Q85924: Using UNC Redirections for File and Groups
 
+{% raw %}
+
 	Article: Q85924
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -153,3 +155,5 @@ permalink: /kb/085/Q85924/
 	
 	=============================================================================
 	
+
+{% endraw %}

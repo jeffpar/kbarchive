@@ -6,6 +6,8 @@ permalink: /kb/103/Q103834/
 
 ## Q103834: Style Metacharacter Not for Use with Main Menu Bar
 
+{% raw %}
+
 	Article: Q103834
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): 2.01
@@ -65,3 +67,5 @@ permalink: /kb/103/Q103834/
 	
 	=============================================================================
 	
+
+{% endraw %}

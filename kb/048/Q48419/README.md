@@ -6,6 +6,8 @@ permalink: /kb/048/Q48419/
 
 ## Q48419: Zenith Computer Running DOS 3.3 Hangs in Flight Instruction
 
+{% raw %}
+
 	Article: Q48419
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/048/Q48419/
 	
 	=============================================================================
 	
+
+{% endraw %}

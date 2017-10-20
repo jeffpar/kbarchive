@@ -6,6 +6,8 @@ permalink: /kb/186/Q186316/
 
 ## Q186316: ODE97: ODE License Information Missing in ODE About Box
 
+{% raw %}
+
 	Article: Q186316
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/186/Q186316/
 	
 	=============================================================================
 	
+
+{% endraw %}

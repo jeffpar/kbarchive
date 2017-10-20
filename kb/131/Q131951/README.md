@@ -6,6 +6,8 @@ permalink: /kb/131/Q131951/
 
 ## Q131951: Flight Simulator 5.1: Disk 2 (Setup) Contents (3.5, 1.44 MB)
 
+{% raw %}
+
 	Article: Q131951
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.1
@@ -50,3 +52,5 @@ permalink: /kb/131/Q131951/
 	
 	=============================================================================
 	
+
+{% endraw %}

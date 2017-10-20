@@ -6,6 +6,8 @@ permalink: /kb/229/Q229764/
 
 ## Q229764: Err Msg: &quot;System error 87 has occured.&quot; On Alpha Computers
 
+{% raw %}
+
 	Article: Q229764
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -94,3 +96,5 @@ permalink: /kb/229/Q229764/
 	
 	=============================================================================
 	
+
+{% endraw %}

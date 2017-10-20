@@ -6,6 +6,8 @@ permalink: /kb/221/Q221175/
 
 ## Q221175: INFO: Visual SourceSafe 6 Installation Creates Registry Entries
 
+{% raw %}
+
 	Article: Q221175
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -124,3 +126,5 @@ permalink: /kb/221/Q221175/
 	
 	=============================================================================
 	
+
+{% endraw %}

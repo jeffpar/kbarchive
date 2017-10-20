@@ -6,6 +6,8 @@ permalink: /kb/146/Q146505/
 
 ## Q146505: XCLN: Incorrect Read Receipt with Only BCC Recipient
 
+{% raw %}
+
 	Article: Q146505
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -46,3 +48,5 @@ permalink: /kb/146/Q146505/
 	
 	=============================================================================
 	
+
+{% endraw %}

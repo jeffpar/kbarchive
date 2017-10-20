@@ -6,6 +6,8 @@ permalink: /kb/079/Q79869/
 
 ## Q79869: Pressing ALT+TAB to Switch Between Applications
 
+{% raw %}
+
 	Article: Q79869
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/079/Q79869/
 	
 	=============================================================================
 	
+
+{% endraw %}

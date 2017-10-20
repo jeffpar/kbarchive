@@ -6,6 +6,8 @@ permalink: /kb/176/Q176322/
 
 ## Q176322: The Far East GetTextExtent API Fails with Null LPNFit
 
+{% raw %}
+
 	Article: Q176322
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -80,3 +82,5 @@ permalink: /kb/176/Q176322/
 	
 	=============================================================================
 	
+
+{% endraw %}

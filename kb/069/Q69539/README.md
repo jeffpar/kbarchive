@@ -6,6 +6,8 @@ permalink: /kb/069/Q69539/
 
 ## Q69539: _cexit() Does Not Close Files Correctly
 
+{% raw %}
+
 	Article: Q69539
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -72,3 +74,5 @@ permalink: /kb/069/Q69539/
 	{
 	    printf("\nThis is the exit function code.\n\n");
 	}
+
+{% endraw %}

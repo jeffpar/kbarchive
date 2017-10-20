@@ -6,6 +6,8 @@ permalink: /kb/196/Q196571/
 
 ## Q196571: NVRunCmd Does Not Return More Than 32 KB of Data Per Command
 
+{% raw %}
+
 	Article: Q196571
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -94,3 +96,5 @@ permalink: /kb/196/Q196571/
 	
 	=============================================================================
 	
+
+{% endraw %}

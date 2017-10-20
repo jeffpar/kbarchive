@@ -6,6 +6,8 @@ permalink: /kb/216/Q216828/
 
 ## Q216828: Password Synchronization/Allow IIS to Control Password
 
+{% raw %}
+
 	Article: Q216828
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -89,3 +91,5 @@ permalink: /kb/216/Q216828/
 	
 	=============================================================================
 	
+
+{% endraw %}

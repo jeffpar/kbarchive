@@ -6,6 +6,8 @@ permalink: /kb/198/Q198135/
 
 ## Q198135: Combat FS: Overlapping View Windows Appear When Switching to HUD
 
+{% raw %}
+
 	Article: Q198135
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -69,3 +71,5 @@ permalink: /kb/198/Q198135/
 	
 	=============================================================================
 	
+
+{% endraw %}

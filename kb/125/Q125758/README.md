@@ -6,6 +6,8 @@ permalink: /kb/125/Q125758/
 
 ## Q125758: Logon Failure on SMP Computer with GSNW or CSNW Installed
 
+{% raw %}
+
 	Article: Q125758
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/125/Q125758/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111472/
 
 ## Q111472: WFWG 3.11 and Sun PC-NFS 5.0 Err Msg: Invalid COMMAND.COM
 
+{% raw %}
+
 	Article: Q111472
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -56,3 +58,5 @@ permalink: /kb/111/Q111472/
 	
 	=============================================================================
 	
+
+{% endraw %}

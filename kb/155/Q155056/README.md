@@ -6,6 +6,8 @@ permalink: /kb/155/Q155056/
 
 ## Q155056: IIS Security Concern Using Batch Files for CGI
 
+{% raw %}
+
 	Article: Q155056
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -64,3 +66,5 @@ permalink: /kb/155/Q155056/
 	
 	=============================================================================
 	
+
+{% endraw %}

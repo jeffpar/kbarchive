@@ -6,6 +6,8 @@ permalink: /kb/030/Q30813/
 
 ## Q30813: MASM 5.10 OS2.DOC: OS/2 Call Summary - Monitor Management
 
+{% raw %}
+
 	Article: Q30813
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -33,3 +35,5 @@ permalink: /kb/030/Q30813/
 	
 	   @DosMonWrite - Writes data to the output buffer of a monitor
 	   Parameters - BufferO:PB, DataBuffer:PB, ByteCnt:W
+
+{% endraw %}

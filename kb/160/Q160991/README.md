@@ -6,6 +6,8 @@ permalink: /kb/160/Q160991/
 
 ## Q160991: SNA Server Sends Sense Code 400D to Host after CD Received
 
+{% raw %}
+
 	Article: Q160991
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,3.0
@@ -71,3 +73,5 @@ permalink: /kb/160/Q160991/
 	
 	=============================================================================
 	
+
+{% endraw %}

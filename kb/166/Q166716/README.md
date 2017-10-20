@@ -6,6 +6,8 @@ permalink: /kb/166/Q166716/
 
 ## Q166716: BUG: Header File Listed in SYSINCL.DAT in Dependency List
 
+{% raw %}
+
 	Article: Q166716
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -63,3 +65,5 @@ permalink: /kb/166/Q166716/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/095/Q95559/
 
 ## Q95559: MemMaker Does Not Preserve Redirection or Trailing Spaces
 
+{% raw %}
+
 	Article: Q95559
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -50,3 +52,5 @@ permalink: /kb/095/Q95559/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/050/Q50410/
 
 ## Q50410: Entering Double Words at a Prompt Prevents Reloading Program
 
+{% raw %}
+
 	Article: Q50410
 	Product(s): See article
 	Version(s): 2.20 2.30
@@ -36,3 +38,5 @@ permalink: /kb/050/Q50410/
 	Microsoft has confirmed this to be a problem with CodeView Version
 	2.30. We are researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/045/Q45718/
 
 ## Q45718: PRB: Addressing L1064: &quot;Out of Memory&quot; Errors
 
+{% raw %}
+
 	Article: Q45718
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:5.03,5.05,5.1,5.13,5.3,5.31.009,5.5; OS/2:5.03,5.05,5.1,5.13
@@ -139,3 +141,5 @@ permalink: /kb/045/Q45718/
 	
 	=============================================================================
 	
+
+{% endraw %}

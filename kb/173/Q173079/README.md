@@ -6,6 +6,8 @@ permalink: /kb/173/Q173079/
 
 ## Q173079: Favorite Places Links Missing After Upgrade to MSN 2.0 or Later
 
+{% raw %}
+
 	Article: Q173079
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5,2.6,5.0,5.1; Win2000:95
@@ -51,3 +53,5 @@ permalink: /kb/173/Q173079/
 	
 	=============================================================================
 	
+
+{% endraw %}

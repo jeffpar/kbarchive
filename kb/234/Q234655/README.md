@@ -6,6 +6,8 @@ permalink: /kb/234/Q234655/
 
 ## Q234655: Err Msg: Unable to Log You on Because the Netlogon Service...
 
+{% raw %}
+
 	Article: Q234655
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -103,3 +105,5 @@ permalink: /kb/234/Q234655/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146958/
 
 ## Q146958: XCLN: &quot;Replace All&quot; Replaces Previous Instances of a Word
 
+{% raw %}
+
 	Article: Q146958
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -46,3 +48,5 @@ permalink: /kb/146/Q146958/
 	
 	=============================================================================
 	
+
+{% endraw %}

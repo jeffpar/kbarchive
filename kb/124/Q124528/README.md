@@ -6,6 +6,8 @@ permalink: /kb/124/Q124528/
 
 ## Q124528: PRB: How to Handle the Error &quot;INI in 2.2 format&quot;
 
+{% raw %}
+
 	Article: Q124528
 	Product(s): Microsoft SourceSafe
 	Version(s): 3.0x
@@ -59,3 +61,5 @@ permalink: /kb/124/Q124528/
 	
 	=============================================================================
 	
+
+{% endraw %}

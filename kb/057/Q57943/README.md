@@ -6,6 +6,8 @@ permalink: /kb/057/Q57943/
 
 ## Q57943: No Symbolic Information Generated for Pascal Units
 
+{% raw %}
+
 	Article: Q57943
 	Product(s): See article
 	Version(s): 2.10 2.20 2.30 | 2.20 2.30
@@ -20,3 +22,5 @@ permalink: /kb/057/Q57943/
 	unknown" error.
 	
 	The only workaround is to transform the program units into modules.
+
+{% endraw %}

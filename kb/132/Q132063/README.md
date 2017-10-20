@@ -6,6 +6,8 @@ permalink: /kb/132/Q132063/
 
 ## Q132063: Hard Disk Activity After Shutdown
 
+{% raw %}
+
 	Article: Q132063
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -42,3 +44,5 @@ permalink: /kb/132/Q132063/
 	
 	=============================================================================
 	
+
+{% endraw %}

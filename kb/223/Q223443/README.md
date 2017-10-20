@@ -6,6 +6,8 @@ permalink: /kb/223/Q223443/
 
 ## Q223443: Streets and Trips 2000: Testing CD-ROM Drive for File Access
 
+{% raw %}
+
 	Article: Q223443
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -106,3 +108,5 @@ permalink: /kb/223/Q223443/
 	
 	=============================================================================
 	
+
+{% endraw %}

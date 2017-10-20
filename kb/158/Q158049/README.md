@@ -6,6 +6,8 @@ permalink: /kb/158/Q158049/
 
 ## Q158049: Fonts Missing or Damaged After Installing Microsoft Office 95
 
+{% raw %}
+
 	Article: Q158049
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/158/Q158049/
 	
 	=============================================================================
 	
+
+{% endraw %}

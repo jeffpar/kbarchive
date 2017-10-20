@@ -6,6 +6,8 @@ permalink: /kb/166/Q166170/
 
 ## Q166170: Using Default Gateways with OSPF
 
+{% raw %}
+
 	Article: Q166170
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -74,3 +76,5 @@ permalink: /kb/166/Q166170/
 	
 	=============================================================================
 	
+
+{% endraw %}

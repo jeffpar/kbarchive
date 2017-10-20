@@ -6,6 +6,8 @@ permalink: /kb/311/Q311733/
 
 ## Q311733: BUG: DBCombo on Modal Form Fails to Respond to Mouse Events
 
+{% raw %}
+
 	Article: Q311733
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -75,3 +77,5 @@ permalink: /kb/311/Q311733/
 	
 	=============================================================================
 	
+
+{% endraw %}

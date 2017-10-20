@@ -6,6 +6,8 @@ permalink: /kb/177/Q177777/
 
 ## Q177777: XADM: Missing DLL Running Crystal Reports
 
+{% raw %}
+
 	Article: Q177777
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -77,3 +79,5 @@ permalink: /kb/177/Q177777/
 	
 	=============================================================================
 	
+
+{% endraw %}

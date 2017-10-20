@@ -6,6 +6,8 @@ permalink: /kb/182/Q182952/
 
 ## Q182952: XCON: X.400 Backbone Must Route SMTP Messages By DDA Type
 
+{% raw %}
+
 	Article: Q182952
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -58,3 +60,5 @@ permalink: /kb/182/Q182952/
 	
 	=============================================================================
 	
+
+{% endraw %}

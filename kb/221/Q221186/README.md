@@ -6,6 +6,8 @@ permalink: /kb/221/Q221186/
 
 ## Q221186: Printers May Not Install on Computers Created from Other Image
 
+{% raw %}
+
 	Article: Q221186
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -84,3 +86,5 @@ permalink: /kb/221/Q221186/
 	
 	=============================================================================
 	
+
+{% endraw %}

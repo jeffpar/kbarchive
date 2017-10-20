@@ -6,6 +6,8 @@ permalink: /kb/184/Q184265/
 
 ## Q184265: HOWTO: Distribute ADO with the VB5 Application Setup Wizard
 
+{% raw %}
+
 	Article: Q184265
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.1 SP2,2.5,2.6,5.0
@@ -185,3 +187,5 @@ permalink: /kb/184/Q184265/
 	
 	=============================================================================
 	
+
+{% endraw %}

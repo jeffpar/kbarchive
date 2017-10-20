@@ -6,6 +6,8 @@ permalink: /kb/267/Q267865/
 
 ## Q267865: Can't Access FoxPro Databases on Novell Server with ODBC
 
+{% raw %}
+
 	Article: Q267865
 	Product(s): Internet Information Server
 	Version(s): 2.1,2.5,4.0
@@ -146,3 +148,5 @@ permalink: /kb/267/Q267865/
 	
 	=============================================================================
 	
+
+{% endraw %}

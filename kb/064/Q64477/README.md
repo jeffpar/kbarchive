@@ -6,6 +6,8 @@ permalink: /kb/064/Q64477/
 
 ## Q64477: Windows 3.0: Microsoft MusicBox Windows Version Won't Run
 
+{% raw %}
+
 	Article: Q64477
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -50,3 +52,5 @@ permalink: /kb/064/Q64477/
 	
 	=============================================================================
 	
+
+{% endraw %}

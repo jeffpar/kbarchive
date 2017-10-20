@@ -6,6 +6,8 @@ permalink: /kb/252/Q252657/
 
 ## Q252657: IIS 5.0: HTTP 403.16 Forbidden: Client certificate Untrusted
 
+{% raw %}
+
 	Article: Q252657
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -93,3 +95,5 @@ permalink: /kb/252/Q252657/
 	
 	=============================================================================
 	
+
+{% endraw %}

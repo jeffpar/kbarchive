@@ -6,6 +6,8 @@ permalink: /kb/152/Q152192/
 
 ## Q152192: Err Msg: Setup Error 258. Your Setup Files May Be Damaged...
 
+{% raw %}
+
 	Article: Q152192
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0,2.0
@@ -93,3 +95,5 @@ permalink: /kb/152/Q152192/
 	
 	=============================================================================
 	
+
+{% endraw %}

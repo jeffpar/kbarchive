@@ -6,6 +6,8 @@ permalink: /kb/066/Q66731/
 
 ## Q66731: Windows 3.0 Setup Hangs Disk #2 with Invalid Directory
 
+{% raw %}
+
 	Article: Q66731
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -41,3 +43,5 @@ permalink: /kb/066/Q66731/
 	
 	=============================================================================
 	
+
+{% endraw %}

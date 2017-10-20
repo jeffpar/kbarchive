@@ -6,6 +6,8 @@ permalink: /kb/274/Q274249/
 
 ## Q274249: WD97: Macros Enabled Using Access Database in Mail Merge File
 
+{% raw %}
+
 	Article: Q274249
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -76,3 +78,5 @@ permalink: /kb/274/Q274249/
 	
 	=============================================================================
 	
+
+{% endraw %}

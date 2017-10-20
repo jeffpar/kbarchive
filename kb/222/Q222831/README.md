@@ -6,6 +6,8 @@ permalink: /kb/222/Q222831/
 
 ## Q222831: HOWTO: Retrieving Numeric Data with SQL_NUMERIC_STRUCT
 
+{% raw %}
+
 	Article: Q222831
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.1,2.5,2.6,3.7
@@ -264,3 +266,5 @@ permalink: /kb/222/Q222831/
 	
 	=============================================================================
 	
+
+{% endraw %}

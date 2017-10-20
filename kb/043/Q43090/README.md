@@ -6,6 +6,8 @@ permalink: /kb/043/Q43090/
 
 ## Q43090: BC.EXE Command-Line Options for QuickBASIC and BASIC Compiler
 
+{% raw %}
+
 	Article: Q43090
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -130,3 +132,5 @@ permalink: /kb/043/Q43090/
 	
 	/FPa    Generates code using alternate (a) math library, which runs
 	        faster than emulating a coprocessor when none is present.
+
+{% endraw %}

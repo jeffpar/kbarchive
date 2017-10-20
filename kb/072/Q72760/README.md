@@ -6,6 +6,8 @@ permalink: /kb/072/Q72760/
 
 ## Q72760: FIX: F2124 or Incorrect Results From Structure Array Use
 
+{% raw %}
+
 	Article: Q72760
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.0,5.1
@@ -170,3 +172,5 @@ permalink: /kb/072/Q72760/
 	
 	=============================================================================
 	
+
+{% endraw %}

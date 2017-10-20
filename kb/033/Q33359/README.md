@@ -6,6 +6,8 @@ permalink: /kb/033/Q33359/
 
 ## Q33359: Enhancements to Help Use Procedures in MASM
 
+{% raw %}
+
 	Article: Q33359
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -27,3 +29,5 @@ permalink: /kb/033/Q33359/
 	specific.
 	   However, these features are intended as a package; therefore, the
 	extended features are not recognized if no language is specified.
+
+{% endraw %}

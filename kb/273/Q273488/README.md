@@ -6,6 +6,8 @@ permalink: /kb/273/Q273488/
 
 ## Q273488: Reader Err Msg: You Are Attempting to Connect to an Invalid...
 
+{% raw %}
+
 	Article: Q273488
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.5
@@ -95,3 +97,5 @@ permalink: /kb/273/Q273488/
 	
 	=============================================================================
 	
+
+{% endraw %}

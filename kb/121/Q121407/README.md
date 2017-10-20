@@ -6,6 +6,8 @@ permalink: /kb/121/Q121407/
 
 ## Q121407: List of Printers Supported by PRINTER.SYS
 
+{% raw %}
+
 	Article: Q121407
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.3,4.x,5.0
@@ -81,3 +83,5 @@ permalink: /kb/121/Q121407/
 	
 	=============================================================================
 	
+
+{% endraw %}

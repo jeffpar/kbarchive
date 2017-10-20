@@ -6,6 +6,8 @@ permalink: /kb/174/Q174106/
 
 ## Q174106: MSN E-mail Address Is Changed After You Install MSN 2.5
 
+{% raw %}
+
 	Article: Q174106
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -69,3 +71,5 @@ permalink: /kb/174/Q174106/
 	
 	=============================================================================
 	
+
+{% endraw %}

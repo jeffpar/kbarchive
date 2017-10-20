@@ -6,6 +6,8 @@ permalink: /kb/106/Q106053/
 
 ## Q106053: Cannot Attach to NetWare Server After Installing WFWG 3.11
 
+{% raw %}
+
 	Article: Q106053
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -82,3 +84,5 @@ permalink: /kb/106/Q106053/
 	
 	=============================================================================
 	
+
+{% endraw %}

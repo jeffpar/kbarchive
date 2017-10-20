@@ -6,6 +6,8 @@ permalink: /kb/285/Q285023/
 
 ## Q285023: XCON: Internet Mail Service Does Not Follow Time to Live for DNS
 
+{% raw %}
+
 	Article: Q285023
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -115,3 +117,5 @@ permalink: /kb/285/Q285023/
 	
 	=============================================================================
 	
+
+{% endraw %}

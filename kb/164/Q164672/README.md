@@ -6,6 +6,8 @@ permalink: /kb/164/Q164672/
 
 ## Q164672: IE Does Not Interpret PERL Scripts Correctly as Plain Text
 
+{% raw %}
+
 	Article: Q164672
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,3.0
@@ -53,3 +55,5 @@ permalink: /kb/164/Q164672/
 	
 	=============================================================================
 	
+
+{% endraw %}

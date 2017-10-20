@@ -6,6 +6,8 @@ permalink: /kb/242/Q242397/
 
 ## Q242397: HOWTO: Add Subitems to a ListView Result View in Report Mode
 
+{% raw %}
+
 	Article: Q242397
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:1.1,1.2,6.0
@@ -86,3 +88,5 @@ permalink: /kb/242/Q242397/
 	
 	=============================================================================
 	
+
+{% endraw %}

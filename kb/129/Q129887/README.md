@@ -6,6 +6,8 @@ permalink: /kb/129/Q129887/
 
 ## Q129887: Introducing the Powerful New Picture Object in VB 4.0
 
+{% raw %}
+
 	Article: Q129887
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -100,3 +102,5 @@ permalink: /kb/129/Q129887/
 	
 	=============================================================================
 	
+
+{% endraw %}

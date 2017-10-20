@@ -6,6 +6,8 @@ permalink: /kb/099/Q99636/
 
 ## Q99636: PC Win: Running Windows Client on Windows for Workgroups
 
+{% raw %}
+
 	Article: Q99636
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -56,3 +58,5 @@ permalink: /kb/099/Q99636/
 	
 	=============================================================================
 	
+
+{% endraw %}

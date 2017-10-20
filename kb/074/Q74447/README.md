@@ -6,6 +6,8 @@ permalink: /kb/074/Q74447/
 
 ## Q74447: MS-DOS Shell Version Check on Mouse Drivers
 
+{% raw %}
+
 	Article: Q74447
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0
@@ -52,3 +54,5 @@ permalink: /kb/074/Q74447/
 	
 	=============================================================================
 	
+
+{% endraw %}

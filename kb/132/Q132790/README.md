@@ -6,6 +6,8 @@ permalink: /kb/132/Q132790/
 
 ## Q132790: Unable to Restore cc:Mail After Opening .wri File
 
+{% raw %}
+
 	Article: Q132790
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -74,3 +76,5 @@ permalink: /kb/132/Q132790/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/239/Q239060/
 
 ## Q239060: WD97: Problems Opening or Locating Files Using UNC Path
 
+{% raw %}
+
 	Article: Q239060
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -108,3 +110,5 @@ permalink: /kb/239/Q239060/
 	
 	=============================================================================
 	
+
+{% endraw %}

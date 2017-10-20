@@ -6,6 +6,8 @@ permalink: /kb/069/Q69110/
 
 ## Q69110: QB 4.x Program Example to Create or Remove Directory
 
+{% raw %}
+
 	Article: Q69110
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -92,3 +94,5 @@ permalink: /kb/069/Q69110/
 	      CALL INTERRUPT(&H21, inreg, outreg)
 	      RemoveDir% = (outreg.flags AND 1)  'Return success flag.
 	END FUNCTION
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189095/
 
 ## Q189095: XFOR: Messages Not Delivered Due to IMS Size Restrictions
 
+{% raw %}
+
 	Article: Q189095
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -69,3 +71,5 @@ permalink: /kb/189/Q189095/
 	
 	=============================================================================
 	
+
+{% endraw %}

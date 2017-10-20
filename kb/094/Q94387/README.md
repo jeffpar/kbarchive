@@ -6,6 +6,8 @@ permalink: /kb/094/Q94387/
 
 ## Q94387: Setup Creates OLD_DOS.x Directory with /G &amp; /H Switches
 
+{% raw %}
+
 	Article: Q94387
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -47,3 +49,5 @@ permalink: /kb/094/Q94387/
 	
 	=============================================================================
 	
+
+{% endraw %}

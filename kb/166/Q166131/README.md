@@ -6,6 +6,8 @@ permalink: /kb/166/Q166131/
 
 ## Q166131: BUG: Class with Data Source Causes Type 11 Error
 
+{% raw %}
+
 	Article: Q166131
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -77,3 +79,5 @@ permalink: /kb/166/Q166131/
 	
 	=============================================================================
 	
+
+{% endraw %}

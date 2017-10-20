@@ -6,6 +6,8 @@ permalink: /kb/098/Q98067/
 
 ## Q98067: SMTP: Explanation of FROM Field wit
 
+{% raw %}
+
 	Article: Q98067
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -68,3 +70,5 @@ permalink: /kb/098/Q98067/
 	
 	=============================================================================
 	
+
+{% endraw %}

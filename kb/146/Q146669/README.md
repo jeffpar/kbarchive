@@ -6,6 +6,8 @@ permalink: /kb/146/Q146669/
 
 ## Q146669: XFOR: SMTP Log Reports Rescheduled Delivery When Retries=0
 
+{% raw %}
+
 	Article: Q146669
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/146/Q146669/
 	
 	=============================================================================
 	
+
+{% endraw %}

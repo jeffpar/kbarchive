@@ -6,6 +6,8 @@ permalink: /kb/283/Q283149/
 
 ## Q283149: XADM: -1011 Error Message Reported After Running ISINTEG -PATCH
 
+{% raw %}
+
 	Article: Q283149
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -64,3 +66,5 @@ permalink: /kb/283/Q283149/
 	
 	=============================================================================
 	
+
+{% endraw %}

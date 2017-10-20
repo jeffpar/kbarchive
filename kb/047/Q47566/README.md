@@ -6,6 +6,8 @@ permalink: /kb/047/Q47566/
 
 ## Q47566: SHARED Dynamic Array Element Passed as Parameter Aliases to 0
 
+{% raw %}
+
 	Article: Q47566
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -76,3 +78,5 @@ permalink: /kb/047/Q47566/
 	  b(20) = 10
 	  PRINT b(20)           'Step 2. PRINTs 10 -- Global value is
 	END SUB                 '        changed. Parameter a! is still 0.
+
+{% endraw %}

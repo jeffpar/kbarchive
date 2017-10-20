@@ -6,6 +6,8 @@ permalink: /kb/274/Q274501/
 
 ## Q274501: BUG: CRT: wcsxfrm(NULL, string, 0) Fails Outside &quot;C&quot; Locale
 
+{% raw %}
+
 	Article: Q274501
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -101,3 +103,5 @@ permalink: /kb/274/Q274501/
 	
 	=============================================================================
 	
+
+{% endraw %}

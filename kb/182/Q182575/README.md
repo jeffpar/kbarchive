@@ -6,6 +6,8 @@ permalink: /kb/182/Q182575/
 
 ## Q182575: IBM PComm AS/400 Data Transfer Doesn't Display Remote APPC LUs
 
+{% raw %}
+
 	Article: Q182575
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -58,3 +60,5 @@ permalink: /kb/182/Q182575/
 	
 	=============================================================================
 	
+
+{% endraw %}

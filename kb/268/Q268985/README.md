@@ -6,6 +6,8 @@ permalink: /kb/268/Q268985/
 
 ## Q268985: XADM:Can't Log on to Exchange Information Store with GWClient
 
+{% raw %}
+
 	Article: Q268985
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -77,3 +79,5 @@ permalink: /kb/268/Q268985/
 	
 	=============================================================================
 	
+
+{% endraw %}

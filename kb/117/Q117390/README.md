@@ -6,6 +6,8 @@ permalink: /kb/117/Q117390/
 
 ## Q117390: SUBST Fails on Removable Media
 
+{% raw %}
+
 	Article: Q117390
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/117/Q117390/
 	
 	=============================================================================
 	
+
+{% endraw %}

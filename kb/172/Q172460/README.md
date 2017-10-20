@@ -6,6 +6,8 @@ permalink: /kb/172/Q172460/
 
 ## Q172460: Cannot Connect to MSN After Internet Explorer Is Removed
 
+{% raw %}
+
 	Article: Q172460
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5,95
@@ -48,3 +50,5 @@ permalink: /kb/172/Q172460/
 	
 	=============================================================================
 	
+
+{% endraw %}

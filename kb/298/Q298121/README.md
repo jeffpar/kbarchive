@@ -6,6 +6,8 @@ permalink: /kb/298/Q298121/
 
 ## Q298121: Free-to-paid
 
+{% raw %}
+
 	Article: Q298121
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -118,3 +120,5 @@ permalink: /kb/298/Q298121/
 	
 	=============================================================================
 	
+
+{% endraw %}

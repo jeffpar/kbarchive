@@ -6,6 +6,8 @@ permalink: /kb/308/Q308191/
 
 ## Q308191: Can't Use AppGetStatus in a Script to Administer IIS 5.1
 
+{% raw %}
+
 	Article: Q308191
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -65,3 +67,5 @@ permalink: /kb/308/Q308191/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150606/
 
 ## Q150606: Event ID 4024 with Services for the Macintosh
 
+{% raw %}
+
 	Article: Q150606
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -55,3 +57,5 @@ permalink: /kb/150/Q150606/
 	
 	=============================================================================
 	
+
+{% endraw %}

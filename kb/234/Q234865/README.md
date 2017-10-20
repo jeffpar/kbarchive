@@ -6,6 +6,8 @@ permalink: /kb/234/Q234865/
 
 ## Q234865: MOD2000: Setting Up VBE/VSS for Multiuser Development
 
+{% raw %}
+
 	Article: Q234865
 	Product(s): Microsoft SourceSafe
 	Version(s): ; WINDOWS:6.0
@@ -80,3 +82,5 @@ permalink: /kb/234/Q234865/
 	
 	=============================================================================
 	
+
+{% endraw %}

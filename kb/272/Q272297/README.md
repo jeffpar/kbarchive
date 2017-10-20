@@ -6,6 +6,8 @@ permalink: /kb/272/Q272297/
 
 ## Q272297: Zone Error Message: You Do Not Have a &lt;Game&gt; Subscription...
 
+{% raw %}
+
 	Article: Q272297
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -169,3 +171,5 @@ permalink: /kb/272/Q272297/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/043/Q43217/
 
 ## Q43217: QuickC: MATH.C Sample Program Contains Incorrect Expressions
 
+{% raw %}
+
 	Article: Q43217
 	Product(s): See article
 	Version(s): 2.00
@@ -48,3 +50,5 @@ permalink: /kb/043/Q43217/
 	
 	   exp     pow      sqrt     frexp     log     log10
 	   ldexp   modf     ceil     floor     fabs    fmod
+
+{% endraw %}

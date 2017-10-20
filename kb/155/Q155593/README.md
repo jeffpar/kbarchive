@@ -6,6 +6,8 @@ permalink: /kb/155/Q155593/
 
 ## Q155593: SMS: No Network Found When Changing Client Redirector
 
+{% raw %}
+
 	Article: Q155593
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -97,3 +99,5 @@ permalink: /kb/155/Q155593/
 	
 	=============================================================================
 	
+
+{% endraw %}

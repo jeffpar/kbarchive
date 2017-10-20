@@ -6,6 +6,8 @@ permalink: /kb/197/Q197823/
 
 ## Q197823: WD97: Word Sorts Numeric Index Entries as Alphabetic Entries
 
+{% raw %}
+
 	Article: Q197823
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/197/Q197823/
 	
 	=============================================================================
 	
+
+{% endraw %}

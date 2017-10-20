@@ -6,6 +6,8 @@ permalink: /kb/303/Q303417/
 
 ## Q303417: SMS: Software_Inventory Table Grows to Very Large Size
 
+{% raw %}
+
 	Article: Q303417
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -57,3 +59,5 @@ permalink: /kb/303/Q303417/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/050/Q50735/
 
 ## Q50735: Linking QuickBASIC 4.50 with QuickC 2.00, 2.01 Font Library
 
+{% raw %}
+
 	Article: Q50735
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -99,3 +101,5 @@ permalink: /kb/050/Q50735/
 	   BC CFONT.BAS;
 	   QCL /c /AM TMSRB.C
 	   LINK /noe /nod CFONT+TMSRB,,,BRT70ENR.LIB+MLIBCE.LIB+GRAPHICS.LIB;
+
+{% endraw %}

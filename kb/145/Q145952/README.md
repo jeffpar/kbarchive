@@ -6,6 +6,8 @@ permalink: /kb/145/Q145952/
 
 ## Q145952: Event ID 26 Appears If Large File Transfer Fails
 
+{% raw %}
+
 	Article: Q145952
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -65,3 +67,5 @@ permalink: /kb/145/Q145952/
 	
 	=============================================================================
 	
+
+{% endraw %}

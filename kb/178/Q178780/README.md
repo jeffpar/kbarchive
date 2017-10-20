@@ -6,6 +6,8 @@ permalink: /kb/178/Q178780/
 
 ## Q178780: ODE: Distributing a Replica Set for Indirect Synchronization
 
+{% raw %}
+
 	Article: Q178780
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -151,3 +153,5 @@ permalink: /kb/178/Q178780/
 	
 	=============================================================================
 	
+
+{% endraw %}

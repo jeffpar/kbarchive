@@ -6,6 +6,8 @@ permalink: /kb/103/Q103459/
 
 ## Q103459: Cinemania: Words Do Not Fit on the Buttons
 
+{% raw %}
+
 	Article: Q103459
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1992 edition
@@ -74,3 +76,5 @@ permalink: /kb/103/Q103459/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172110/
 
 ## Q172110: Cannot Install Windows NT Workstation from ZAK Server
 
+{% raw %}
+
 	Article: Q172110
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:4.0
@@ -55,3 +57,5 @@ permalink: /kb/172/Q172110/
 	
 	=============================================================================
 	
+
+{% endraw %}

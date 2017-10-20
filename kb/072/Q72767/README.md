@@ -6,6 +6,8 @@ permalink: /kb/072/Q72767/
 
 ## Q72767: WD97: Setting Sequence Numbering Using a Bookmark
 
+{% raw %}
+
 	Article: Q72767
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -44,7 +46,7 @@ permalink: /kb/072/Q72767/
 	-------                 ------
 	
 	{set year 1992}
-	{SEQ yr \r{year} }       1992
+	{SEQ yr \r{year}}       1992
 	{SEQ yr}                1993
 	{SEQ yr}                1994
 	
@@ -58,3 +60,5 @@ permalink: /kb/072/Q72767/
 	
 	=============================================================================
 	
+
+{% endraw %}

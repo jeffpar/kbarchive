@@ -6,6 +6,8 @@ permalink: /kb/121/Q121035/
 
 ## Q121035: MAC Cinemania 1994: README Contents
 
+{% raw %}
+
 	Article: Q121035
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -352,3 +354,5 @@ permalink: /kb/121/Q121035/
 	
 	=============================================================================
 	
+
+{% endraw %}

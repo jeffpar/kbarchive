@@ -6,6 +6,8 @@ permalink: /kb/162/Q162841/
 
 ## Q162841: XFOR: MSMI NDRs Dir-Sync Messages Under Certain Circumstances
 
+{% raw %}
+
 	Article: Q162841
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 SP3,5.5
@@ -78,3 +80,5 @@ permalink: /kb/162/Q162841/
 	
 	=============================================================================
 	
+
+{% endraw %}

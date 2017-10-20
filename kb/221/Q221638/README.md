@@ -6,6 +6,8 @@ permalink: /kb/221/Q221638/
 
 ## Q221638: FIX: Setup Does Not Install Label Wizard Requests Definitions
 
+{% raw %}
+
 	Article: Q221638
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -75,3 +77,5 @@ permalink: /kb/221/Q221638/
 	
 	=============================================================================
 	
+
+{% endraw %}

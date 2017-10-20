@@ -6,6 +6,8 @@ permalink: /kb/198/Q198046/
 
 ## Q198046: Change in Time Zone Behavior for Israel with Service Pack 4
 
+{% raw %}
+
 	Article: Q198046
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/198/Q198046/
 	
 	=============================================================================
 	
+
+{% endraw %}

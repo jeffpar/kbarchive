@@ -6,6 +6,8 @@ permalink: /kb/142/Q142686/
 
 ## Q142686: First Line of Print Job Lost When Printing Using Lpdsvc
 
+{% raw %}
+
 	Article: Q142686
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -69,3 +71,5 @@ permalink: /kb/142/Q142686/
 	
 	=============================================================================
 	
+
+{% endraw %}

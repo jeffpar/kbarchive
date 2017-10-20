@@ -6,6 +6,8 @@ permalink: /kb/095/Q95540/
 
 ## Q95540: Install Button in Printer Setup Doesn't Work
 
+{% raw %}
+
 	Article: Q95540
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -91,3 +93,5 @@ permalink: /kb/095/Q95540/
 	
 	=============================================================================
 	
+
+{% endraw %}

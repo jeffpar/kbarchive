@@ -6,6 +6,8 @@ permalink: /kb/080/Q80303/
 
 ## Q80303: Unable to Use MS-DOS 5.0 BACKUP to NetWare Drive
 
+{% raw %}
+
 	Article: Q80303
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a
@@ -46,3 +48,5 @@ permalink: /kb/080/Q80303/
 	
 	=============================================================================
 	
+
+{% endraw %}

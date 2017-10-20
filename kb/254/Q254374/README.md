@@ -6,6 +6,8 @@ permalink: /kb/254/Q254374/
 
 ## Q254374: WD97: Lists Are Numbered Incorrectly in Catalog Mail Merge
 
+{% raw %}
+
 	Article: Q254374
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -100,3 +102,5 @@ permalink: /kb/254/Q254374/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174532/
 
 ## Q174532: 16-bit Application Cannot Select a Network Drive
 
+{% raw %}
+
 	Article: Q174532
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -47,3 +49,5 @@ permalink: /kb/174/Q174532/
 	
 	=============================================================================
 	
+
+{% endraw %}

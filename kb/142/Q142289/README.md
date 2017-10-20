@@ -6,6 +6,8 @@ permalink: /kb/142/Q142289/
 
 ## Q142289: PC Rmt: Troubleshooting Options for the Command Line
 
+{% raw %}
+
 	Article: Q142289
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -69,3 +71,5 @@ permalink: /kb/142/Q142289/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177911/
 
 ## Q177911: OLE2BIN Sample - Storing COleClientItems in a Database
 
+{% raw %}
+
 	Article: Q177911
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -287,3 +289,5 @@ permalink: /kb/177/Q177911/
 	
 	=============================================================================
 	
+
+{% endraw %}

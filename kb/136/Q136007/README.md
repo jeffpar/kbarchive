@@ -6,6 +6,8 @@ permalink: /kb/136/Q136007/
 
 ## Q136007: Error Message: Host Disconnected Due to Idle Timeout
 
+{% raw %}
+
 	Article: Q136007
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -47,3 +49,5 @@ permalink: /kb/136/Q136007/
 	
 	=============================================================================
 	
+
+{% endraw %}

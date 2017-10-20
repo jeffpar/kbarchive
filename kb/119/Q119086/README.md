@@ -6,6 +6,8 @@ permalink: /kb/119/Q119086/
 
 ## Q119086: Windows for Workgroups Hangs w/ ArcNet Cards &amp; Novell NetWare
 
+{% raw %}
+
 	Article: Q119086
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -54,3 +56,5 @@ permalink: /kb/119/Q119086/
 	
 	=============================================================================
 	
+
+{% endraw %}

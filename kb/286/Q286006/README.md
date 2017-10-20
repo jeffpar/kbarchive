@@ -6,6 +6,8 @@ permalink: /kb/286/Q286006/
 
 ## Q286006: Games: Err Msg: Ddhelp Caused an Invalid Page Fault in Module...
 
+{% raw %}
+
 	Article: Q286006
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -162,3 +164,5 @@ permalink: /kb/286/Q286006/
 	
 	=============================================================================
 	
+
+{% endraw %}

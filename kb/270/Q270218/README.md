@@ -6,6 +6,8 @@ permalink: /kb/270/Q270218/
 
 ## Q270218: &quot;Use All Detected Servers&quot; in Multisite Domain Causes Errors
 
+{% raw %}
+
 	Article: Q270218
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP4
@@ -104,3 +106,5 @@ permalink: /kb/270/Q270218/
 	
 	=============================================================================
 	
+
+{% endraw %}

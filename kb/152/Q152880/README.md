@@ -6,6 +6,8 @@ permalink: /kb/152/Q152880/
 
 ## Q152880: XADM: Cannot Reinstall on a BDC Using a Domain Service Account
 
+{% raw %}
+
 	Article: Q152880
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -49,3 +51,5 @@ permalink: /kb/152/Q152880/
 	
 	=============================================================================
 	
+
+{% endraw %}

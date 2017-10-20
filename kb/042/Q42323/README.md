@@ -6,6 +6,8 @@ permalink: /kb/042/Q42323/
 
 ## Q42323: &quot;Symbol Defined More Than Once&quot; Linking to QuickC 2.00 Routine
 
+{% raw %}
+
 	Article: Q42323
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -39,3 +41,5 @@ permalink: /kb/042/Q42323/
 	following word:
 	
 	   BAS2C
+
+{% endraw %}

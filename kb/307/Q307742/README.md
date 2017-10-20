@@ -6,6 +6,8 @@ permalink: /kb/307/Q307742/
 
 ## Q307742: Exchange SDK HrCreateDirEntryID Does Not Work w/Outlook 2002
 
+{% raw %}
+
 	Article: Q307742
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/307/Q307742/
 	
 	=============================================================================
 	
+
+{% endraw %}

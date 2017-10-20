@@ -6,6 +6,8 @@ permalink: /kb/114/Q114364/
 
 ## Q114364: Novell Compressed Drives Inaccessible Under MS-DOS 6.21
 
+{% raw %}
+
 	Article: Q114364
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.21
@@ -48,3 +50,5 @@ permalink: /kb/114/Q114364/
 	
 	=============================================================================
 	
+
+{% endraw %}

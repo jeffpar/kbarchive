@@ -6,6 +6,8 @@ permalink: /kb/159/Q159409/
 
 ## Q159409: PRB: No Icons Created on Application Setup
 
+{% raw %}
+
 	Article: Q159409
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -76,3 +78,5 @@ permalink: /kb/159/Q159409/
 	
 	=============================================================================
 	
+
+{% endraw %}

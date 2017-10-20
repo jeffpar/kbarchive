@@ -6,6 +6,8 @@ permalink: /kb/244/Q244865/
 
 ## Q244865: EST2000: How to Import Contacts From Microsoft Outlook
 
+{% raw %}
+
 	Article: Q244865
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -79,3 +81,5 @@ permalink: /kb/244/Q244865/
 	
 	=============================================================================
 	
+
+{% endraw %}

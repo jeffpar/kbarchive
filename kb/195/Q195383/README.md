@@ -6,6 +6,8 @@ permalink: /kb/195/Q195383/
 
 ## Q195383: WD97: Page Setup Not Available on File Menu
 
+{% raw %}
+
 	Article: Q195383
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/195/Q195383/
 	
 	=============================================================================
 	
+
+{% endraw %}

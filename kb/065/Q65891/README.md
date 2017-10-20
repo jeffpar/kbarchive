@@ -6,6 +6,8 @@ permalink: /kb/065/Q65891/
 
 ## Q65891: Only One Instance of Macro Recorder Can Be Run at a Time
 
+{% raw %}
+
 	Article: Q65891
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -43,3 +45,5 @@ permalink: /kb/065/Q65891/
 	
 	=============================================================================
 	
+
+{% endraw %}

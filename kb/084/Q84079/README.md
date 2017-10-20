@@ -6,6 +6,8 @@ permalink: /kb/084/Q84079/
 
 ## Q84079: TrueType and Pacific Data Products PostScript Cartridge
 
+{% raw %}
+
 	Article: Q84079
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -67,3 +69,5 @@ permalink: /kb/084/Q84079/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150623/
 
 ## Q150623: Mac Bookshelf '96-'97: Startup Screen Appears Fuzzy or Blurry
 
+{% raw %}
+
 	Article: Q150623
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -65,3 +67,5 @@ permalink: /kb/150/Q150623/
 	
 	=============================================================================
 	
+
+{% endraw %}

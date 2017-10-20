@@ -6,6 +6,8 @@ permalink: /kb/045/Q45584/
 
 ## Q45584: Can't Take Address of Frame Variable in DLL (SS!=DS)
 
+{% raw %}
+
 	Article: Q45584
 	Product(s): See article
 	Version(s): 5.10
@@ -82,3 +84,5 @@ permalink: /kb/045/Q45584/
 	.DLL's which use the C Runtime Library **ALWAYS** use NONSHARED
 	default data and instance initialization.  Instance initialization is
 	specified in the LIBRARY statement of the .DEF file.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85679/
 
 ## Q85679: INFO: Changing Print Settings Mid-Job
 
+{% raw %}
+
 	Article: Q85679
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -53,3 +55,5 @@ permalink: /kb/085/Q85679/
 	
 	=============================================================================
 	
+
+{% endraw %}

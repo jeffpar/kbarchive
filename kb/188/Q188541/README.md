@@ -6,6 +6,8 @@ permalink: /kb/188/Q188541/
 
 ## Q188541: INFO: Visual Basic Requirements for Using Exported DLLs
 
+{% raw %}
+
 	Article: Q188541
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -200,3 +202,5 @@ permalink: /kb/188/Q188541/
 	
 	=============================================================================
 	
+
+{% endraw %}

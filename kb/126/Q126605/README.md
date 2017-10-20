@@ -6,6 +6,8 @@ permalink: /kb/126/Q126605/
 
 ## Q126605: Error Using Quick Connect and Password Protected Shares
 
+{% raw %}
+
 	Article: Q126605
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -81,3 +83,5 @@ permalink: /kb/126/Q126605/
 	
 	=============================================================================
 	
+
+{% endraw %}

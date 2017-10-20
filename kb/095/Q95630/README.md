@@ -6,6 +6,8 @@ permalink: /kb/095/Q95630/
 
 ## Q95630: Windows for Workgroups and NetBEUI Protocol
 
+{% raw %}
+
 	Article: Q95630
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -158,3 +160,5 @@ permalink: /kb/095/Q95630/
 	
 	=============================================================================
 	
+
+{% endraw %}

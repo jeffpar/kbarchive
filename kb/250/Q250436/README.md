@@ -6,6 +6,8 @@ permalink: /kb/250/Q250436/
 
 ## Q250436: XCLN: Schedule Plus Does Not Open Outlook Calendar Across Domain
 
+{% raw %}
+
 	Article: Q250436
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0,7.0a,7.5
@@ -56,3 +58,5 @@ permalink: /kb/250/Q250436/
 	
 	=============================================================================
 	
+
+{% endraw %}

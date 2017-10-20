@@ -6,6 +6,8 @@ permalink: /kb/261/Q261053/
 
 ## Q261053: MCM2: Error Message on Blue Screen When You Start Program
 
+{% raw %}
+
 	Article: Q261053
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -97,3 +99,5 @@ permalink: /kb/261/Q261053/
 	
 	=============================================================================
 	
+
+{% endraw %}

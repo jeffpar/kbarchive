@@ -6,6 +6,8 @@ permalink: /kb/142/Q142607/
 
 ## Q142607: Extra Sets for Pan Chinese Windows NT Workstation 4.0
 
+{% raw %}
+
 	Article: Q142607
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -153,3 +155,5 @@ permalink: /kb/142/Q142607/
 	
 	=============================================================================
 	
+
+{% endraw %}

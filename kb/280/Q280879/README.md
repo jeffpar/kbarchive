@@ -6,6 +6,8 @@ permalink: /kb/280/Q280879/
 
 ## Q280879: SNA DB2 Service Not Removed During Upgrade
 
+{% raw %}
+
 	Article: Q280879
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/280/Q280879/
 	
 	=============================================================================
 	
+
+{% endraw %}

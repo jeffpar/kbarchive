@@ -6,6 +6,8 @@ permalink: /kb/155/Q155152/
 
 ## Q155152: Writer 2: Zoom Button Not Dimmed When at Extreme Position
 
+{% raw %}
+
 	Article: Q155152
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -42,3 +44,5 @@ permalink: /kb/155/Q155152/
 	
 	=============================================================================
 	
+
+{% endraw %}

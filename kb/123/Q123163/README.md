@@ -6,6 +6,8 @@ permalink: /kb/123/Q123163/
 
 ## Q123163: FIX: &#95;&#95;TIMESTAMP&#95;&#95; Reports Pacific Standard Time
 
+{% raw %}
+
 	Article: Q123163
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/123/Q123163/
 	
 	=============================================================================
 	
+
+{% endraw %}

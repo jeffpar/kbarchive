@@ -6,6 +6,8 @@ permalink: /kb/095/Q95430/
 
 ## Q95430: BUG: GPF/UAE If Multi-Select Controls w/ No Common Properties
 
+{% raw %}
+
 	Article: Q95430
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -56,3 +58,5 @@ permalink: /kb/095/Q95430/
 	
 	=============================================================================
 	
+
+{% endraw %}

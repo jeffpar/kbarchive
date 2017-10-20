@@ -6,6 +6,8 @@ permalink: /kb/037/Q37646/
 
 ## Q37646: FOR...NEXT with 32767 or -32768 Index Fails to Stop Unless /d
 
+{% raw %}
+
 	Article: Q37646
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -31,3 +33,5 @@ permalink: /kb/037/Q37646/
 	FOR X = 1 TO 32767
 	  IF X MOD 100 = 0 THEN PRINT X
 	NEXT X
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153320/
 
 ## Q153320: Cannot Manually Add Package Source Directory
 
+{% raw %}
+
 	Article: Q153320
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -44,3 +46,5 @@ permalink: /kb/153/Q153320/
 	
 	=============================================================================
 	
+
+{% endraw %}

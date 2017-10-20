@@ -6,6 +6,8 @@ permalink: /kb/188/Q188065/
 
 ## Q188065: BUG: Welcome Screen Continues to Redisplay
 
+{% raw %}
+
 	Article: Q188065
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -142,3 +144,5 @@ permalink: /kb/188/Q188065/
 	
 	=============================================================================
 	
+
+{% endraw %}

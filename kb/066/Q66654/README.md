@@ -6,6 +6,8 @@ permalink: /kb/066/Q66654/
 
 ## Q66654: INFO: Possible Causes for System Resource Reduction
 
+{% raw %}
+
 	Article: Q66654
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -59,3 +61,5 @@ permalink: /kb/066/Q66654/
 	
 	=============================================================================
 	
+
+{% endraw %}

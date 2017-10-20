@@ -6,6 +6,8 @@ permalink: /kb/032/Q32285/
 
 ## Q32285: EXEC Problem with the Novell Network
 
+{% raw %}
+
 	Article: Q32285
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10
@@ -43,3 +45,5 @@ permalink: /kb/032/Q32285/
 	Versions 3.x (which is what Novell presents itself as) do not save
 	SS:SP. The network destroys those registers on the call even though
 	this behavior is unlike DOS Versions 3.x.
+
+{% endraw %}

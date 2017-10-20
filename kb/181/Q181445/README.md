@@ -6,6 +6,8 @@ permalink: /kb/181/Q181445/
 
 ## Q181445: XADM: Files Needed to Perform Exchange NT Backup on Workstation
 
+{% raw %}
+
 	Article: Q181445
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -60,3 +62,5 @@ permalink: /kb/181/Q181445/
 	
 	=============================================================================
 	
+
+{% endraw %}

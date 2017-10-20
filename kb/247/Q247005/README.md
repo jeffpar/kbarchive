@@ -6,6 +6,8 @@ permalink: /kb/247/Q247005/
 
 ## Q247005: HOWTO: Move Visual C++ IDE Customizations to Another Computer
 
+{% raw %}
+
 	Article: Q247005
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -186,3 +188,5 @@ permalink: /kb/247/Q247005/
 	
 	=============================================================================
 	
+
+{% endraw %}

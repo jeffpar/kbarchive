@@ -6,6 +6,8 @@ permalink: /kb/125/Q125904/
 
 ## Q125904: Client Data is Corrupted When Written to an NTFS Server
 
+{% raw %}
+
 	Article: Q125904
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/125/Q125904/
 	
 	=============================================================================
 	
+
+{% endraw %}

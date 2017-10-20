@@ -6,6 +6,8 @@ permalink: /kb/130/Q130637/
 
 ## Q130637: PC Gen: Modem Vendor Voice Support and BBS Phone Numbers
 
+{% raw %}
+
 	Article: Q130637
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.20
@@ -96,3 +98,5 @@ permalink: /kb/130/Q130637/
 	
 	=============================================================================
 	
+
+{% endraw %}

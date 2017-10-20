@@ -6,6 +6,8 @@ permalink: /kb/152/Q152144/
 
 ## Q152144: XADM: Changing a Site's Display Name in the Address Book
 
+{% raw %}
+
 	Article: Q152144
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -56,3 +58,5 @@ permalink: /kb/152/Q152144/
 	
 	=============================================================================
 	
+
+{% endraw %}

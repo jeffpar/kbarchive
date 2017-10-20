@@ -6,6 +6,8 @@ permalink: /kb/127/Q127828/
 
 ## Q127828: Cannot Connect to Share With Single User Access
 
+{% raw %}
+
 	Article: Q127828
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/127/Q127828/
 	
 	=============================================================================
 	
+
+{% endraw %}

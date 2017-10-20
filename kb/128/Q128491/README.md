@@ -6,6 +6,8 @@ permalink: /kb/128/Q128491/
 
 ## Q128491: Creating a NetDDE Link in Excel on Windows NT
 
+{% raw %}
+
 	Article: Q128491
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -140,3 +142,5 @@ permalink: /kb/128/Q128491/
 	
 	=============================================================================
 	
+
+{% endraw %}

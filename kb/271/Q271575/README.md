@@ -6,6 +6,8 @@ permalink: /kb/271/Q271575/
 
 ## Q271575: XCON: Internet Mail Service Uses the IMCEA  Encapsulation Prefix
 
+{% raw %}
+
 	Article: Q271575
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -61,3 +63,5 @@ permalink: /kb/271/Q271575/
 	
 	=============================================================================
 	
+
+{% endraw %}

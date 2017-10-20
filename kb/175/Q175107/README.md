@@ -6,6 +6,8 @@ permalink: /kb/175/Q175107/
 
 ## Q175107: XCLN: Directory for the Local Exchange Offline Add
 
+{% raw %}
+
 	Article: Q175107
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,97
@@ -163,3 +165,5 @@ permalink: /kb/175/Q175107/
 	
 	=============================================================================
 	
+
+{% endraw %}

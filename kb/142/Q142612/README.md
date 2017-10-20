@@ -6,6 +6,8 @@ permalink: /kb/142/Q142612/
 
 ## Q142612: TrueImage Errors 4014 When Printing from a Macintosh
 
+{% raw %}
+
 	Article: Q142612
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -83,3 +85,5 @@ permalink: /kb/142/Q142612/
 	
 	=============================================================================
 	
+
+{% endraw %}

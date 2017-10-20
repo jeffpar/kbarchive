@@ -6,6 +6,8 @@ permalink: /kb/090/Q90227/
 
 ## Q90227: Changes Lost or Cannot Save Changes
 
+{% raw %}
+
 	Article: Q90227
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -66,3 +68,5 @@ permalink: /kb/090/Q90227/
 	
 	=============================================================================
 	
+
+{% endraw %}

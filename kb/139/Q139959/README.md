@@ -6,6 +6,8 @@ permalink: /kb/139/Q139959/
 
 ## Q139959: BUG: Valid Event Runs Twice When SetFocus Issued in LostFocus
 
+{% raw %}
+
 	Article: Q139959
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS: 3.0,5.0,5.0a,6.0
@@ -68,3 +70,5 @@ permalink: /kb/139/Q139959/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117866/
 
 ## Q117866: DOC: Adding Icon and Cursor Devices Documented Incorrectly
 
+{% raw %}
+
 	Article: Q117866
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/117/Q117866/
 	
 	=============================================================================
 	
+
+{% endraw %}

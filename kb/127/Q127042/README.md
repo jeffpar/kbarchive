@@ -6,6 +6,8 @@ permalink: /kb/127/Q127042/
 
 ## Q127042: Automap: Streets Install Cannot Find Existing Automap
 
+{% raw %}
+
 	Article: Q127042
 	Product(s): Microsoft Automap
 	Version(s): 1.01,1.06,1.1,4.0
@@ -62,3 +64,5 @@ permalink: /kb/127/Q127042/
 	
 	=============================================================================
 	
+
+{% endraw %}

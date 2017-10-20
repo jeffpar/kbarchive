@@ -6,6 +6,8 @@ permalink: /kb/193/Q193235/
 
 ## Q193235: SAMPLE: VBCECOMM.EXE Uses the MSCEComm Control in Emulation
 
+{% raw %}
+
 	Article: Q193235
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0
@@ -233,3 +235,5 @@ permalink: /kb/193/Q193235/
 	
 	=============================================================================
 	
+
+{% endraw %}

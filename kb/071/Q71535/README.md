@@ -6,6 +6,8 @@ permalink: /kb/071/Q71535/
 
 ## Q71535: MS-DOS: Uninstalling After Moving the OLD_DOS Directory
 
+{% raw %}
+
 	Article: Q71535
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -61,3 +63,5 @@ permalink: /kb/071/Q71535/
 	
 	=============================================================================
 	
+
+{% endraw %}

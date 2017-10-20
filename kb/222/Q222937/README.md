@@ -6,6 +6,8 @@ permalink: /kb/222/Q222937/
 
 ## Q222937: INF: Creating a Linked Server to DB2 w/ OLE DB Provider for DB2
 
+{% raw %}
+
 	Article: Q222937
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP2,4.0 SP4
@@ -110,3 +112,5 @@ permalink: /kb/222/Q222937/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135544/
 
 ## Q135544: Windows 95 DMF Floppy Disk Directory Listing (3 of 4)
 
+{% raw %}
+
 	Article: Q135544
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -512,3 +514,5 @@ permalink: /kb/135/Q135544/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263356/
 
 ## Q263356: SMS: Outbox Sending Times and Priorities Lost During Upgrade
 
+{% raw %}
+
 	Article: Q263356
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0,2.0 SP1,2.0 SP2
@@ -62,3 +64,5 @@ permalink: /kb/263/Q263356/
 	
 	=============================================================================
 	
+
+{% endraw %}

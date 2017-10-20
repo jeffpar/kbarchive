@@ -6,6 +6,8 @@ permalink: /kb/175/Q175220/
 
 ## Q175220: XADM: MAPI Calls Fail with MAPI_E_NOT_ENOUGH_MEMORY
 
+{% raw %}
+
 	Article: Q175220
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/175/Q175220/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/046/Q46802/
 
 ## Q46802: QUICK.INI Needs Modification for Use with M 1.02 or MEP 1.02
 
+{% raw %}
+
 	Article: Q46802
 	Product(s): See article
 	Version(s): 1.02   | 1.02
@@ -30,3 +32,5 @@ permalink: /kb/046/Q46802/
 	with the editor. The Help:F1 line is a leftover from previous versions
 	of the editor and is not implemented in this version. To eliminate the
 	Help error message, either delete or comment out the Help:F1 line.
+
+{% endraw %}

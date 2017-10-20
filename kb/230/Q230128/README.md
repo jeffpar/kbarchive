@@ -6,6 +6,8 @@ permalink: /kb/230/Q230128/
 
 ## Q230128: SMS: SQL Monitor Reports Cannot Connect to Site Server Registry
 
+{% raw %}
+
 	Article: Q230128
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -71,3 +73,5 @@ permalink: /kb/230/Q230128/
 	
 	=============================================================================
 	
+
+{% endraw %}

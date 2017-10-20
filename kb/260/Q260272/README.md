@@ -6,6 +6,8 @@ permalink: /kb/260/Q260272/
 
 ## Q260272: MapPoint 2001: Computer Hangs When You Link or Import More than
 
+{% raw %}
+
 	Article: Q260272
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/260/Q260272/
 	
 	=============================================================================
 	
+
+{% endraw %}

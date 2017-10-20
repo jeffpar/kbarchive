@@ -6,6 +6,8 @@ permalink: /kb/158/Q158796/
 
 ## Q158796: Macintosh Clients Connected to WinNT Server Appear to Hang
 
+{% raw %}
+
 	Article: Q158796
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -132,3 +134,5 @@ permalink: /kb/158/Q158796/
 	
 	=============================================================================
 	
+
+{% endraw %}

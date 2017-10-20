@@ -6,6 +6,8 @@ permalink: /kb/105/Q105186/
 
 ## Q105186: DBLSPACE /MAXFILEFRAGMENTS May Not Display Error Message
 
+{% raw %}
+
 	Article: Q105186
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -42,3 +44,5 @@ permalink: /kb/105/Q105186/
 	
 	=============================================================================
 	
+
+{% endraw %}

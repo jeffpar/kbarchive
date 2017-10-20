@@ -6,6 +6,8 @@ permalink: /kb/261/Q261040/
 
 ## Q261040: Motocross Madness 2: Black Screen When You Start the Program
 
+{% raw %}
+
 	Article: Q261040
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -64,3 +66,5 @@ permalink: /kb/261/Q261040/
 	
 	=============================================================================
 	
+
+{% endraw %}

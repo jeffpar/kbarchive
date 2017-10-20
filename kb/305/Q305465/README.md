@@ -6,6 +6,8 @@ permalink: /kb/305/Q305465/
 
 ## Q305465: Microsoft Excel Version 2002 Inside Out Comments and Corrections
 
+{% raw %}
+
 	Article: Q305465
 	Product(s): Microsoft Press
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/305/Q305465/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/250/Q250477/
 
 ## Q250477: PRB: Terminate Events Fire in Reverse Order in VBCE/eVB
 
+{% raw %}
+
 	Article: Q250477
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -173,3 +175,5 @@ permalink: /kb/250/Q250477/
 	
 	=============================================================================
 	
+
+{% endraw %}

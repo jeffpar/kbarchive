@@ -6,6 +6,8 @@ permalink: /kb/240/Q240435/
 
 ## Q240435: PATCH: WCELoad.exe Fixes ActiveX Hanging Problem on Palm-size PC
 
+{% raw %}
+
 	Article: Q240435
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.11,3.0
@@ -124,3 +126,5 @@ permalink: /kb/240/Q240435/
 	
 	=============================================================================
 	
+
+{% endraw %}

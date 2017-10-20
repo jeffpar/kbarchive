@@ -6,6 +6,8 @@ permalink: /kb/149/Q149167/
 
 ## Q149167: Unable to Allocate Resources from the NDIS Wrapper
 
+{% raw %}
+
 	Article: Q149167
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -61,3 +63,5 @@ permalink: /kb/149/Q149167/
 	
 	=============================================================================
 	
+
+{% endraw %}

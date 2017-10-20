@@ -6,6 +6,8 @@ permalink: /kb/220/Q220890/
 
 ## Q220890: XADM: Simple IMAP4 Fails if IMAP4 with SSL Fails
 
+{% raw %}
+
 	Article: Q220890
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -74,3 +76,5 @@ permalink: /kb/220/Q220890/
 	
 	=============================================================================
 	
+
+{% endraw %}

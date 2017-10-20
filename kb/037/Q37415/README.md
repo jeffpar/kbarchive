@@ -6,6 +6,8 @@ permalink: /kb/037/Q37415/
 
 ## Q37415: QuickBASIC 4.50 and Earlier May Not Work with MS-DOS 4.00
 
+{% raw %}
+
 	Article: Q37415
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -30,3 +32,5 @@ permalink: /kb/037/Q37415/
 	
 	CHAIN statement failures have also been reported with QuickBASIC
 	operating under MS-DOS Version 4.00.
+
+{% endraw %}

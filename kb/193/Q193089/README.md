@@ -6,6 +6,8 @@ permalink: /kb/193/Q193089/
 
 ## Q193089: PRB: Unexpected Error Occurs in Code Generator or Linker
 
+{% raw %}
+
 	Article: Q193089
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -83,3 +85,5 @@ permalink: /kb/193/Q193089/
 	
 	=============================================================================
 	
+
+{% endraw %}

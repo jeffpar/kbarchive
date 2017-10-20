@@ -6,6 +6,8 @@ permalink: /kb/250/Q250108/
 
 ## Q250108: Asheron's Call: Your Patron Has Been Deleted from the Game
 
+{% raw %}
+
 	Article: Q250108
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -63,3 +65,5 @@ permalink: /kb/250/Q250108/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166365/
 
 ## Q166365: ACC97: Changing Your Data Source for a Microsoft Word Mail Merge
 
+{% raw %}
+
 	Article: Q166365
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/166/Q166365/
 	
 	=============================================================================
 	
+
+{% endraw %}

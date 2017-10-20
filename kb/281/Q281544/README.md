@@ -6,6 +6,8 @@ permalink: /kb/281/Q281544/
 
 ## Q281544: Terminal Server Hangs with &quot;Stop 0x82&quot; Error Message
 
+{% raw %}
+
 	Article: Q281544
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -78,3 +80,5 @@ permalink: /kb/281/Q281544/
 	
 	=============================================================================
 	
+
+{% endraw %}

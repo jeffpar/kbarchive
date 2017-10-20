@@ -6,6 +6,8 @@ permalink: /kb/150/Q150211/
 
 ## Q150211: HOWTO: Determine if a Program Is Running as a DLL or an EXE
 
+{% raw %}
+
 	Article: Q150211
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -131,3 +133,5 @@ permalink: /kb/150/Q150211/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173877/
 
 ## Q173877: What Files Are Needed to Uninstall Windows NT Service Pack
 
+{% raw %}
+
 	Article: Q173877
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -74,3 +76,5 @@ permalink: /kb/173/Q173877/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183852/
 
 ## Q183852: DOC: PRINTER_DEFAULTS Contains an Incorrectly Typed Member
 
+{% raw %}
+
 	Article: Q183852
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -60,3 +62,5 @@ permalink: /kb/183/Q183852/
 	
 	=============================================================================
 	
+
+{% endraw %}

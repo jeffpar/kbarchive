@@ -6,6 +6,8 @@ permalink: /kb/152/Q152850/
 
 ## Q152850: XADM: Local Group Permissions not Valid for Member Server
 
+{% raw %}
+
 	Article: Q152850
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -47,3 +49,5 @@ permalink: /kb/152/Q152850/
 	
 	=============================================================================
 	
+
+{% endraw %}

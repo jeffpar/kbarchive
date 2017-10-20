@@ -6,6 +6,8 @@ permalink: /kb/172/Q172702/
 
 ## Q172702: ODE97: Using Newer Version of Comctl32.ocx with ODE Applications
 
+{% raw %}
+
 	Article: Q172702
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/172/Q172702/
 	
 	=============================================================================
 	
+
+{% endraw %}

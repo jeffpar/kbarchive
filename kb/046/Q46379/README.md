@@ -6,6 +6,8 @@ permalink: /kb/046/Q46379/
 
 ## Q46379: C 5.10 Internal Compiler Error C1001: pgoMD.c : 1.134 Line 146
 
+{% raw %}
+
 	Article: Q46379
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -45,3 +47,5 @@ permalink: /kb/046/Q46379/
 	
 	Microsoft is researching this problem and will post new information as
 	it becomes available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/257/Q257794/
 
 ## Q257794: HOWTO: Use Binary File Access with Visual Basic
 
+{% raw %}
+
 	Article: Q257794
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -199,3 +201,5 @@ permalink: /kb/257/Q257794/
 	
 	=============================================================================
 	
+
+{% endraw %}

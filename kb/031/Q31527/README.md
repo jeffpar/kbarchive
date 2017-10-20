@@ -6,6 +6,8 @@ permalink: /kb/031/Q31527/
 
 ## Q31527: MASM 5.10 EXT.DOC: FileRead - Reads File Contents into Buffer
 
+{% raw %}
+
 	Article: Q31527
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -33,3 +35,5 @@ permalink: /kb/031/Q31527/
 	flagType pascal FileRead (name, pFile)
 	char far *name;
 	PFILE pFile;
+
+{% endraw %}

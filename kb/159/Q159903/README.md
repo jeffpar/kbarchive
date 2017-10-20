@@ -6,6 +6,8 @@ permalink: /kb/159/Q159903/
 
 ## Q159903: Chip's Challenge: No Cosmic Chip Socket in Level 20
 
+{% raw %}
+
 	Article: Q159903
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -52,3 +54,5 @@ permalink: /kb/159/Q159903/
 	
 	=============================================================================
 	
+
+{% endraw %}

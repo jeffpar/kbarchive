@@ -6,6 +6,8 @@ permalink: /kb/183/Q183734/
 
 ## Q183734: How to Create Custom Abstracts for HTML Documents
 
+{% raw %}
+
 	Article: Q183734
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,1.1,2.0; :
@@ -48,3 +50,5 @@ permalink: /kb/183/Q183734/
 	
 	=============================================================================
 	
+
+{% endraw %}

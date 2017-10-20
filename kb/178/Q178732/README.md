@@ -6,6 +6,8 @@ permalink: /kb/178/Q178732/
 
 ## Q178732: WD97: &quot;Word Cannot Find or Run the Application&quot; with EZ-Photo
 
+{% raw %}
+
 	Article: Q178732
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -318,3 +320,5 @@ permalink: /kb/178/Q178732/
 	
 	=============================================================================
 	
+
+{% endraw %}

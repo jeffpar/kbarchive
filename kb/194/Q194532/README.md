@@ -6,6 +6,8 @@ permalink: /kb/194/Q194532/
 
 ## Q194532: Urban Assault/Dreamworks: &quot;Application Error&quot; Msg Starting Game
 
+{% raw %}
+
 	Article: Q194532
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -59,3 +61,5 @@ permalink: /kb/194/Q194532/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164935/
 
 ## Q164935: Shared Folders Drive Subdirectories Are Shared Improperly
 
+{% raw %}
+
 	Article: Q164935
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/164/Q164935/
 	
 	=============================================================================
 	
+
+{% endraw %}

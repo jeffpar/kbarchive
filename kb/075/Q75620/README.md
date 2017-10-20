@@ -6,6 +6,8 @@ permalink: /kb/075/Q75620/
 
 ## Q75620: LAN Manager/MS-DOS 5.0 Supplemental Disks
 
+{% raw %}
+
 	Article: Q75620
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a
@@ -52,3 +54,5 @@ permalink: /kb/075/Q75620/
 	
 	=============================================================================
 	
+
+{% endraw %}

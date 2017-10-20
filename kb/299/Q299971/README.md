@@ -6,6 +6,8 @@ permalink: /kb/299/Q299971/
 
 ## Q299971: &quot;WLX_SAS_ACTION_LOCK_WKSTA&quot; Returned from GINA Causes Shutdown
 
+{% raw %}
+
 	Article: Q299971
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6a
@@ -95,3 +97,5 @@ permalink: /kb/299/Q299971/
 	
 	=============================================================================
 	
+
+{% endraw %}

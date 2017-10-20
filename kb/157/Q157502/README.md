@@ -6,6 +6,8 @@ permalink: /kb/157/Q157502/
 
 ## Q157502: License Logging Service May Fail to Start
 
+{% raw %}
+
 	Article: Q157502
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -62,3 +64,5 @@ permalink: /kb/157/Q157502/
 	
 	=============================================================================
 	
+
+{% endraw %}

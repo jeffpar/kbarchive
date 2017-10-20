@@ -6,6 +6,8 @@ permalink: /kb/061/Q61469/
 
 ## Q61469: Bound Program Works Under OS/2, but Hangs Under DOS
 
+{% raw %}
+
 	Article: Q61469
 	Product(s): See article
 	Version(s): 1.10   | 1.10
@@ -22,3 +24,5 @@ permalink: /kb/061/Q61469/
 	version 1.20. Using BIND 1.10 with LINK version 5.03 resolves this
 	problem, and using BIND 1.20 or later with the OS/2 linker also
 	creates a valid executable for DOS and OS/2.
+
+{% endraw %}

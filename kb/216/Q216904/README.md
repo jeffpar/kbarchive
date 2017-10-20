@@ -6,6 +6,8 @@ permalink: /kb/216/Q216904/
 
 ## Q216904: How to Access a Client Authentication Certificate
 
+{% raw %}
+
 	Article: Q216904
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -61,3 +63,5 @@ permalink: /kb/216/Q216904/
 	
 	=============================================================================
 	
+
+{% endraw %}

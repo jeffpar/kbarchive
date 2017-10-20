@@ -6,6 +6,8 @@ permalink: /kb/162/Q162674/
 
 ## Q162674: XCON: MTA Sockets Error 10054 Connecting Over TCP/IP X.400
 
+{% raw %}
+
 	Article: Q162674
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/162/Q162674/
 	
 	=============================================================================
 	
+
+{% endraw %}

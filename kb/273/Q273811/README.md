@@ -6,6 +6,8 @@ permalink: /kb/273/Q273811/
 
 ## Q273811: AoE II Expansion: The Conquerors: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q273811
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -81,3 +83,5 @@ permalink: /kb/273/Q273811/
 	
 	=============================================================================
 	
+
+{% endraw %}

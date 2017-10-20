@@ -6,6 +6,8 @@ permalink: /kb/086/Q86150/
 
 ## Q86150: PROFS: Definition of XEDIT, How to Find Help Using It
 
+{% raw %}
+
 	Article: Q86150
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -50,3 +52,5 @@ permalink: /kb/086/Q86150/
 	
 	=============================================================================
 	
+
+{% endraw %}

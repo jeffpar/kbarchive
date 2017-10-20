@@ -6,6 +6,8 @@ permalink: /kb/325/Q325880/
 
 ## Q325880: Zoo Tycoon: Troubleshoot Performance Issues
 
+{% raw %}
+
 	Article: Q325880
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -221,3 +223,5 @@ permalink: /kb/325/Q325880/
 	
 	=============================================================================
 	
+
+{% endraw %}

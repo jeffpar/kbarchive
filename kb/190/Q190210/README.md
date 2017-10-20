@@ -6,6 +6,8 @@ permalink: /kb/190/Q190210/
 
 ## Q190210: PRB: Passing ActiveX Control to Component Gives &quot;Type Mismatch&quot;
 
+{% raw %}
+
 	Article: Q190210
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -138,3 +140,5 @@ permalink: /kb/190/Q190210/
 	
 	=============================================================================
 	
+
+{% endraw %}

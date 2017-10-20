@@ -6,6 +6,8 @@ permalink: /kb/173/Q173222/
 
 ## Q173222: WD97: Line Between Columns Fails to Appear and Is Not Printed
 
+{% raw %}
+
 	Article: Q173222
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -104,3 +106,5 @@ permalink: /kb/173/Q173222/
 	
 	=============================================================================
 	
+
+{% endraw %}

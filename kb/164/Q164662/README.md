@@ -6,6 +6,8 @@ permalink: /kb/164/Q164662/
 
 ## Q164662: XCON: Message Conversion Fails in MIME Uudecoder
 
+{% raw %}
+
 	Article: Q164662
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -62,3 +64,5 @@ permalink: /kb/164/Q164662/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197509/
 
 ## Q197509: XFOR: Notes Connector May &quot;Timeout on resource lock&quot; on Startup
 
+{% raw %}
+
 	Article: Q197509
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -106,3 +108,5 @@ permalink: /kb/197/Q197509/
 	
 	=============================================================================
 	
+
+{% endraw %}

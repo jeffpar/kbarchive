@@ -6,6 +6,8 @@ permalink: /kb/176/Q176297/
 
 ## Q176297: CFS or FS: Error Message or Hang When You Start Program
 
+{% raw %}
+
 	Article: Q176297
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -76,3 +78,5 @@ permalink: /kb/176/Q176297/
 	
 	=============================================================================
 	
+
+{% endraw %}

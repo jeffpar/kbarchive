@@ -6,6 +6,8 @@ permalink: /kb/167/Q167150/
 
 ## Q167150: WD97: Invalid Page Fault with WordBasic.EditLinks and &#92;Sel
 
+{% raw %}
+
 	Article: Q167150
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -109,3 +111,5 @@ permalink: /kb/167/Q167150/
 	
 	=============================================================================
 	
+
+{% endraw %}

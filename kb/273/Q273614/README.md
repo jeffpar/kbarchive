@@ -6,6 +6,8 @@ permalink: /kb/273/Q273614/
 
 ## Q273614: Cannot Change Cluster Share Resource Permissions
 
+{% raw %}
+
 	Article: Q273614
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -86,3 +88,5 @@ permalink: /kb/273/Q273614/
 	
 	=============================================================================
 	
+
+{% endraw %}

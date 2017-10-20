@@ -6,6 +6,8 @@ permalink: /kb/159/Q159441/
 
 ## Q159441: FP97: Dialog Boxes Show Incorrect Desktop If Running NT 4.0
 
+{% raw %}
+
 	Article: Q159441
 	Product(s): Word Front Page
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/159/Q159441/
 	
 	=============================================================================
 	
+
+{% endraw %}

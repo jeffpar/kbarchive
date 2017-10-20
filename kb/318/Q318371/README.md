@@ -6,6 +6,8 @@ permalink: /kb/318/Q318371/
 
 ## Q318371: Locked-Down Users Can View Folders
 
+{% raw %}
+
 	Article: Q318371
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -84,3 +86,5 @@ permalink: /kb/318/Q318371/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/258/Q258237/
 
 ## Q258237: All Logs in ISA Server Use GMT (UTC) Times
 
+{% raw %}
+
 	Article: Q258237
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/258/Q258237/
 	
 	=============================================================================
 	
+
+{% endraw %}

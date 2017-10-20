@@ -6,6 +6,8 @@ permalink: /kb/100/Q100191/
 
 ## Q100191: FIX: VB Pro Setup Fails to Correctly Associate .HLP Files
 
+{% raw %}
+
 	Article: Q100191
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -77,3 +79,5 @@ permalink: /kb/100/Q100191/
 	
 	=============================================================================
 	
+
+{% endraw %}

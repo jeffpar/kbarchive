@@ -6,6 +6,8 @@ permalink: /kb/123/Q123975/
 
 ## Q123975: How to Read Fields in a Table from the LCK
 
+{% raw %}
+
 	Article: Q123975
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6a,3.0
@@ -202,3 +204,5 @@ permalink: /kb/123/Q123975/
 	
 	=============================================================================
 	
+
+{% endraw %}

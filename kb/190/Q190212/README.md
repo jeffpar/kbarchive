@@ -6,6 +6,8 @@ permalink: /kb/190/Q190212/
 
 ## Q190212: BUG: Add-Ins Only Visible to the User Who Installs VB
 
+{% raw %}
+
 	Article: Q190212
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -162,3 +164,5 @@ permalink: /kb/190/Q190212/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184509/
 
 ## Q184509: How to Obtain SNA Server 4.0 Printed Documentation
 
+{% raw %}
+
 	Article: Q184509
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0
@@ -111,3 +113,5 @@ permalink: /kb/184/Q184509/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/229/Q229020/
 
 ## Q229020: FIX: Date in @ GET Displays Incorrect Year With SET CENTURY OFF
 
+{% raw %}
+
 	Article: Q229020
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -81,3 +83,5 @@ permalink: /kb/229/Q229020/
 	
 	=============================================================================
 	
+
+{% endraw %}

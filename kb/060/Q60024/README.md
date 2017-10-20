@@ -6,6 +6,8 @@ permalink: /kb/060/Q60024/
 
 ## Q60024: Mac DOS: Custom Forms on PC Workstations in Microsoft Mail
 
+{% raw %}
+
 	Article: Q60024
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,2.0a,2.0b,3.0
@@ -42,3 +44,5 @@ permalink: /kb/060/Q60024/
 	
 	=============================================================================
 	
+
+{% endraw %}

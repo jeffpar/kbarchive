@@ -6,6 +6,8 @@ permalink: /kb/255/Q255658/
 
 ## Q255658: SMS: Manage SMS Users Does Not Remove Users from SMS Admins
 
+{% raw %}
+
 	Article: Q255658
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -50,3 +52,5 @@ permalink: /kb/255/Q255658/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/115/Q115603/
 
 ## Q115603: No Option to Import LMHOSTS with SmartStart
 
+{% raw %}
+
 	Article: Q115603
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -49,3 +51,5 @@ permalink: /kb/115/Q115603/
 	
 	=============================================================================
 	
+
+{% endraw %}

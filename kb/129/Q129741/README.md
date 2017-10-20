@@ -6,6 +6,8 @@ permalink: /kb/129/Q129741/
 
 ## Q129741: PRB: Call List Takes Longer to Display
 
+{% raw %}
+
 	Article: Q129741
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -75,3 +77,5 @@ permalink: /kb/129/Q129741/
 	
 	=============================================================================
 	
+
+{% endraw %}

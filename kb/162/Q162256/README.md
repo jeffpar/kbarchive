@@ -6,6 +6,8 @@ permalink: /kb/162/Q162256/
 
 ## Q162256: FIX: TextBox Value in Grid Column Using Numeric ControlSource
 
+{% raw %}
+
 	Article: Q162256
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -154,3 +156,5 @@ permalink: /kb/162/Q162256/
 	
 	=============================================================================
 	
+
+{% endraw %}

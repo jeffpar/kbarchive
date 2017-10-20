@@ -6,6 +6,8 @@ permalink: /kb/151/Q151540/
 
 ## Q151540: Cannot Change Host Drive Letter in Windows 95
 
+{% raw %}
+
 	Article: Q151540
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -73,3 +75,5 @@ permalink: /kb/151/Q151540/
 	
 	=============================================================================
 	
+
+{% endraw %}

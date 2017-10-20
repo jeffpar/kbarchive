@@ -6,6 +6,8 @@ permalink: /kb/263/Q263421/
 
 ## Q263421: SMS: Cust. Collect's from Par. Site Don't Appear in Child's Site
 
+{% raw %}
+
 	Article: Q263421
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -73,3 +75,5 @@ permalink: /kb/263/Q263421/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/063/Q63281/
 
 ## Q63281: Unsupported MS-DOS Version on Hewlett-Packard Machines
 
+{% raw %}
+
 	Article: Q63281
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -68,3 +70,5 @@ permalink: /kb/063/Q63281/
 	
 	=============================================================================
 	
+
+{% endraw %}

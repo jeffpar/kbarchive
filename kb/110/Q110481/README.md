@@ -6,6 +6,8 @@ permalink: /kb/110/Q110481/
 
 ## Q110481: Backup Doesn't Back Up Entire Hard Disk or Create Log File
 
+{% raw %}
+
 	Article: Q110481
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -92,3 +94,5 @@ permalink: /kb/110/Q110481/
 	
 	=============================================================================
 	
+
+{% endraw %}

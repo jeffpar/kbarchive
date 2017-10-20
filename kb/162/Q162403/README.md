@@ -6,6 +6,8 @@ permalink: /kb/162/Q162403/
 
 ## Q162403: WD97: Selection Returns Question Marks Instead of Text
 
+{% raw %}
+
 	Article: Q162403
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -51,3 +53,5 @@ permalink: /kb/162/Q162403/
 	
 	=============================================================================
 	
+
+{% endraw %}

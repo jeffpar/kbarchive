@@ -6,6 +6,8 @@ permalink: /kb/170/Q170543/
 
 ## Q170543: FP97: Font Set in Font Options Dialog Box Not Used in Browser
 
+{% raw %}
+
 	Article: Q170543
 	Product(s): Word Front Page
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/170/Q170543/
 	
 	=============================================================================
 	
+
+{% endraw %}

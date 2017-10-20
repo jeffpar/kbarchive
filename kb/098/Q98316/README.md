@@ -6,6 +6,8 @@ permalink: /kb/098/Q98316/
 
 ## Q98316: Carmen San Diego Game Interrupted After Digitized Sound Played
 
+{% raw %}
+
 	Article: Q98316
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/098/Q98316/
 	
 	=============================================================================
 	
+
+{% endraw %}

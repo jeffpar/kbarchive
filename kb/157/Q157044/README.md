@@ -6,6 +6,8 @@ permalink: /kb/157/Q157044/
 
 ## Q157044: Some Applications Appear to Consume 100% of CPU Time
 
+{% raw %}
+
 	Article: Q157044
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -50,3 +52,5 @@ permalink: /kb/157/Q157044/
 	
 	=============================================================================
 	
+
+{% endraw %}

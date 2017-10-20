@@ -6,6 +6,8 @@ permalink: /kb/146/Q146795/
 
 ## Q146795: XFOR: IMC Messages Left in &#92;Imcdata&#92;Out Directory
 
+{% raw %}
+
 	Article: Q146795
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/146/Q146795/
 	
 	=============================================================================
 	
+
+{% endraw %}

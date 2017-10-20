@@ -6,6 +6,8 @@ permalink: /kb/129/Q129083/
 
 ## Q129083: Microsoft Visual Basic Toolbox Does Not Minimize
 
+{% raw %}
+
 	Article: Q129083
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -47,3 +49,5 @@ permalink: /kb/129/Q129083/
 	
 	=============================================================================
 	
+
+{% endraw %}

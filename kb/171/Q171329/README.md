@@ -6,6 +6,8 @@ permalink: /kb/171/Q171329/
 
 ## Q171329: SMS: &lt;Unknown&gt; NetcardID When a Different OS Is Detected
 
+{% raw %}
+
 	Article: Q171329
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2 SP2
@@ -70,3 +72,5 @@ permalink: /kb/171/Q171329/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176483/
 
 ## Q176483: PRB: Large Amounts of RAM Seem to Process Data Slowly
 
+{% raw %}
+
 	Article: Q176483
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -98,3 +100,5 @@ permalink: /kb/176/Q176483/
 	
 	=============================================================================
 	
+
+{% endraw %}

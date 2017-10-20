@@ -6,6 +6,8 @@ permalink: /kb/103/Q103717/
 
 ## Q103717: INFO: Differences Between LINK and LINK32
 
+{% raw %}
+
 	Article: Q103717
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,2.5
@@ -70,3 +72,5 @@ permalink: /kb/103/Q103717/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/253/Q253525/
 
 ## Q253525: XCLN: Outlook for Macintosh Loses Connectivity
 
+{% raw %}
+
 	Article: Q253525
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0,8.1,8.2; WINDOWS:4.0,5.0
@@ -95,3 +97,5 @@ permalink: /kb/253/Q253525/
 	
 	=============================================================================
 	
+
+{% endraw %}

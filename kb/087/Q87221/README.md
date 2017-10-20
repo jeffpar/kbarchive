@@ -6,6 +6,8 @@ permalink: /kb/087/Q87221/
 
 ## Q87221: PROFS: Where Incoming/Outgoing Mail Files Are Stored
 
+{% raw %}
+
 	Article: Q87221
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -56,3 +58,5 @@ permalink: /kb/087/Q87221/
 	
 	=============================================================================
 	
+
+{% endraw %}

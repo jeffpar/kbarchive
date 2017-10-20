@@ -6,6 +6,8 @@ permalink: /kb/172/Q172352/
 
 ## Q172352: Windows 95 PostScript Driver May Not Download Properly
 
+{% raw %}
+
 	Article: Q172352
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -122,3 +124,5 @@ permalink: /kb/172/Q172352/
 	
 	=============================================================================
 	
+
+{% endraw %}

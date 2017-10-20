@@ -6,6 +6,8 @@ permalink: /kb/183/Q183414/
 
 ## Q183414: XADM: Cannot View Internet Mail Service Properties
 
+{% raw %}
+
 	Article: Q183414
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -68,3 +70,5 @@ permalink: /kb/183/Q183414/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124375/
 
 ## Q124375: SFM: File Permissions Problem When Volume is Shared at Root
 
+{% raw %}
+
 	Article: Q124375
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -57,3 +59,5 @@ permalink: /kb/124/Q124375/
 	
 	=============================================================================
 	
+
+{% endraw %}

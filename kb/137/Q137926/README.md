@@ -6,6 +6,8 @@ permalink: /kb/137/Q137926/
 
 ## Q137926: Underline Not Printed on IBM 40x9 Printers Using Courier
 
+{% raw %}
+
 	Article: Q137926
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -70,3 +72,5 @@ permalink: /kb/137/Q137926/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/219/Q219363/
 
 ## Q219363: Characters Missing from Print Jobs Spanning Multiple Pages
 
+{% raw %}
+
 	Article: Q219363
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/219/Q219363/
 	
 	=============================================================================
 	
+
+{% endraw %}

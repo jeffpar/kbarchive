@@ -6,6 +6,8 @@ permalink: /kb/138/Q138831/
 
 ## Q138831: Disabling TCP/IP Nagle Algorithm Improves Speed on Slow Nets
 
+{% raw %}
+
 	Article: Q138831
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11
@@ -116,3 +118,5 @@ permalink: /kb/138/Q138831/
 	
 	=============================================================================
 	
+
+{% endraw %}

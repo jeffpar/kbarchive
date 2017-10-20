@@ -6,6 +6,8 @@ permalink: /kb/315/Q315494/
 
 ## Q315494: No NMVT for Printer DDDLUs After Connection Outage
 
+{% raw %}
+
 	Article: Q315494
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP4
@@ -121,3 +123,5 @@ permalink: /kb/315/Q315494/
 	
 	=============================================================================
 	
+
+{% endraw %}

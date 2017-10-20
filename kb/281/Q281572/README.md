@@ -6,6 +6,8 @@ permalink: /kb/281/Q281572/
 
 ## Q281572: AoE II: Cannot Record a Multiplayer Game on Zone.com
 
+{% raw %}
+
 	Article: Q281572
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -44,3 +46,5 @@ permalink: /kb/281/Q281572/
 	
 	=============================================================================
 	
+
+{% endraw %}

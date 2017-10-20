@@ -6,6 +6,8 @@ permalink: /kb/156/Q156479/
 
 ## Q156479: INFO: Differences Between DLC on Windows 95 and Windows NT
 
+{% raw %}
+
 	Article: Q156479
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.5,4.0
@@ -115,3 +117,5 @@ permalink: /kb/156/Q156479/
 	
 	=============================================================================
 	
+
+{% endraw %}

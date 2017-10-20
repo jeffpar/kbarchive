@@ -6,6 +6,8 @@ permalink: /kb/129/Q129189/
 
 ## Q129189: BUG: SourceSafe Suddenly Terminates After Running a Long Time
 
+{% raw %}
+
 	Article: Q129189
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/129/Q129189/
 	
 	=============================================================================
 	
+
+{% endraw %}

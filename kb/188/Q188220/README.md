@@ -6,6 +6,8 @@ permalink: /kb/188/Q188220/
 
 ## Q188220: NTOP May Cause Win95 Clients To Fail When Using CMAK
 
+{% raw %}
+
 	Article: Q188220
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:95; winnt:1.0
@@ -85,3 +87,5 @@ permalink: /kb/188/Q188220/
 	
 	=============================================================================
 	
+
+{% endraw %}

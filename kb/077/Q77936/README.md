@@ -6,6 +6,8 @@ permalink: /kb/077/Q77936/
 
 ## Q77936: Swap Tool Not Included with Windows SDK 3.1
 
+{% raw %}
+
 	Article: Q77936
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -48,3 +50,5 @@ permalink: /kb/077/Q77936/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/052/Q52092/
 
 ## Q52092: &quot;Subscript out of Range in Quick Library Module: MENU&quot; in 7.00
 
+{% raw %}
+
 	Article: Q52092
 	Product(s): See article
 	Version(s): 7.00
@@ -62,3 +64,5 @@ permalink: /kb/052/Q52092/
 	        DIM GloEdit(MAXEDITFIELD)             AS EditFieldType
 	        DIM GloWindowStack(MAXWINDOW)         AS INTEGER
 	        DIM GloBuffer$(MAXWINDOW + 1, 2)
+
+{% endraw %}

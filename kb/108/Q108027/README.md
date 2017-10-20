@@ -6,6 +6,8 @@ permalink: /kb/108/Q108027/
 
 ## Q108027: PC DB: Finding MAI File Name from MBG File
 
+{% raw %}
+
 	Article: Q108027
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1x,3.0,3.0a,3.2
@@ -74,3 +76,5 @@ permalink: /kb/108/Q108027/
 	
 	=============================================================================
 	
+
+{% endraw %}

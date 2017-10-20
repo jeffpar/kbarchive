@@ -6,6 +6,8 @@ permalink: /kb/199/Q199653/
 
 ## Q199653: SMS: What Is CHECK20?
 
+{% raw %}
+
 	Article: Q199653
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -93,3 +95,5 @@ permalink: /kb/199/Q199653/
 	
 	=============================================================================
 	
+
+{% endraw %}

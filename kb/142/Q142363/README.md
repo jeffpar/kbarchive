@@ -6,6 +6,8 @@ permalink: /kb/142/Q142363/
 
 ## Q142363: Xircom PE3 Network Adapter Not Loaded on Compaq Contura
 
+{% raw %}
+
 	Article: Q142363
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/142/Q142363/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162349/
 
 ## Q162349: WD97: Picture Displayed as Red &quot;X&quot; in Document
 
+{% raw %}
+
 	Article: Q162349
 	Product(s): Word 97 for Windows
 	Version(s): Service Release 1 (SR-1)
@@ -432,3 +434,5 @@ permalink: /kb/162/Q162349/
 	
 	=============================================================================
 	
+
+{% endraw %}

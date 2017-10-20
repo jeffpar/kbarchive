@@ -6,6 +6,8 @@ permalink: /kb/076/Q76089/
 
 ## Q76089: Pyro! Causes MS-DOS Shell to Blink
 
+{% raw %}
+
 	Article: Q76089
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -49,3 +51,5 @@ permalink: /kb/076/Q76089/
 	
 	=============================================================================
 	
+
+{% endraw %}

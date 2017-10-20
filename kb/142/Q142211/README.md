@@ -6,6 +6,8 @@ permalink: /kb/142/Q142211/
 
 ## Q142211: BUG: Blob Persistent Data Incorrect for Ported OLE Control
 
+{% raw %}
+
 	Article: Q142211
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -125,3 +127,5 @@ permalink: /kb/142/Q142211/
 	
 	=============================================================================
 	
+
+{% endraw %}

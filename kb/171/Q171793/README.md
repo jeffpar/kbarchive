@@ -6,6 +6,8 @@ permalink: /kb/171/Q171793/
 
 ## Q171793: Information on Application Use of 4GT RAM Tuning
 
+{% raw %}
+
 	Article: Q171793
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -168,3 +170,5 @@ permalink: /kb/171/Q171793/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/093/Q93643/
 
 ## Q93643: Sound System: Proofreader and Lotus 1-2-3 Compatibility
 
+{% raw %}
+
 	Article: Q93643
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/093/Q93643/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/217/Q217755/
 
 ## Q217755: FIX: #import Ignores TKIND_MODULE Members of a Type Library
 
+{% raw %}
+
 	Article: Q217755
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -85,3 +87,5 @@ permalink: /kb/217/Q217755/
 	
 	=============================================================================
 	
+
+{% endraw %}

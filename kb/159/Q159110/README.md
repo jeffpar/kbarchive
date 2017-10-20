@@ -6,6 +6,8 @@ permalink: /kb/159/Q159110/
 
 ## Q159110: CDFS Does Not Complete IRPs Correctly
 
+{% raw %}
+
 	Article: Q159110
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/159/Q159110/
 	
 	=============================================================================
 	
+
+{% endraw %}

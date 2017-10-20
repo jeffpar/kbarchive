@@ -6,6 +6,8 @@ permalink: /kb/042/Q42581/
 
 ## Q42581: Solutions to QuickC 2.00 Color Problems on Isolated Machines
 
+{% raw %}
+
 	Article: Q42581
 	Product(s): See article
 	Version(s): 2.00
@@ -42,3 +44,5 @@ permalink: /kb/042/Q42581/
 	   have TANDY's DOS, there is a similar patch that Product Support has
 	   made available in an application note. This application note is
 	   available from Product Support by calling (206) 454-2030.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157244/
 
 ## Q157244: Program Cannot Share or &quot;Steal&quot; LPT Port in Windows 95
 
+{% raw %}
+
 	Article: Q157244
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/157/Q157244/
 	
 	=============================================================================
 	
+
+{% endraw %}

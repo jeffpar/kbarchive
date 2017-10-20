@@ -6,6 +6,8 @@ permalink: /kb/024/Q24200/
 
 ## Q24200: 3270 ERMA Emulator
 
+{% raw %}
+
 	Article: Q24200
 	Product(s): See article
 	Version(s): 1.00 1.10 2.00 2.10 2.20 2.30
@@ -25,3 +27,5 @@ permalink: /kb/024/Q24200/
 	not work with CodeView. It has been reported that CodeView will hang
 	if the 3270 ERMA emulator is enabled; we recommend you disable the
 	emulator before running CodeView.
+
+{% endraw %}

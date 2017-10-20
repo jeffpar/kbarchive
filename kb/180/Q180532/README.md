@@ -6,6 +6,8 @@ permalink: /kb/180/Q180532/
 
 ## Q180532: Xircom PC Card Fails to Function
 
+{% raw %}
+
 	Article: Q180532
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -68,3 +70,5 @@ permalink: /kb/180/Q180532/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104096/
 
 ## Q104096: IniHeadr.exe Reads Section Headers from .INI Files
 
+{% raw %}
+
 	Article: Q104096
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:
@@ -94,3 +96,5 @@ permalink: /kb/104/Q104096/
 	
 	=============================================================================
 	
+
+{% endraw %}

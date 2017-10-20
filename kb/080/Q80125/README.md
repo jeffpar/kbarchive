@@ -6,6 +6,8 @@ permalink: /kb/080/Q80125/
 
 ## Q80125: INFO: Terminating the Creation of an MDI Child Window
 
+{% raw %}
+
 	Article: Q80125
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -74,3 +76,5 @@ permalink: /kb/080/Q80125/
 	
 	=============================================================================
 	
+
+{% endraw %}

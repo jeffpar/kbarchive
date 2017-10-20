@@ -6,6 +6,8 @@ permalink: /kb/170/Q170378/
 
 ## Q170378: XADM: Removing SMTP Addresses for All Users
 
+{% raw %}
+
 	Article: Q170378
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -57,3 +59,5 @@ permalink: /kb/170/Q170378/
 	
 	=============================================================================
 	
+
+{% endraw %}

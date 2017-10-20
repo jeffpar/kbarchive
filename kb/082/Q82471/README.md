@@ -6,6 +6,8 @@ permalink: /kb/082/Q82471/
 
 ## Q82471: YourWay 2.0 Pushpin Window Not Visible
 
+{% raw %}
+
 	Article: Q82471
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/082/Q82471/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196384/
 
 ## Q196384: HOWTO: Perform Bulk Inserts Using SQLSetPos
 
+{% raw %}
+
 	Article: Q196384
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5,2.6,2.7,3.0
@@ -252,3 +254,5 @@ permalink: /kb/196/Q196384/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87285/
 
 ## Q87285: Windows Err Msg: One of the Library Files Needed...
 
+{% raw %}
+
 	Article: Q87285
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/087/Q87285/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/073/Q73581/
 
 ## Q73581: Can't Exit from Lotus Agenda with EMM386.EXE
 
+{% raw %}
+
 	Article: Q73581
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -47,3 +49,5 @@ permalink: /kb/073/Q73581/
 	
 	=============================================================================
 	
+
+{% endraw %}

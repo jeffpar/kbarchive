@@ -6,6 +6,8 @@ permalink: /kb/086/Q86922/
 
 ## Q86922: Using LINK 5.3 to Create Applications for Real Mode
 
+{% raw %}
+
 	Article: Q86922
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -40,3 +42,5 @@ permalink: /kb/086/Q86922/
 	
 	=============================================================================
 	
+
+{% endraw %}

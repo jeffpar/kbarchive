@@ -6,6 +6,8 @@ permalink: /kb/216/Q216843/
 
 ## Q216843: Clients Receive &quot;Error 1000 No Licenses Are Available&quot;
 
+{% raw %}
+
 	Article: Q216843
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -89,3 +91,5 @@ permalink: /kb/216/Q216843/
 	
 	=============================================================================
 	
+
+{% endraw %}

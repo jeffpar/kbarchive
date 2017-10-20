@@ -6,6 +6,8 @@ permalink: /kb/237/Q237429/
 
 ## Q237429: PRB: Very Wide Editboxes Do Not Display Data
 
+{% raw %}
+
 	Article: Q237429
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -210,3 +212,5 @@ permalink: /kb/237/Q237429/
 	
 	=============================================================================
 	
+
+{% endraw %}

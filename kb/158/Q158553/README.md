@@ -6,6 +6,8 @@ permalink: /kb/158/Q158553/
 
 ## Q158553: Encarta 97: Chemical Formulas in Dictionary are Incorrect
 
+{% raw %}
+
 	Article: Q158553
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -47,3 +49,5 @@ permalink: /kb/158/Q158553/
 	
 	=============================================================================
 	
+
+{% endraw %}

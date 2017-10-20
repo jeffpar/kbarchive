@@ -6,6 +6,8 @@ permalink: /kb/175/Q175460/
 
 ## Q175460: Inside Visual C++, 4th Ed. Corrections and Comments
 
+{% raw %}
+
 	Article: Q175460
 	Product(s): Microsoft Press
 	Version(s): 
@@ -200,3 +202,5 @@ permalink: /kb/175/Q175460/
 	
 	=============================================================================
 	
+
+{% endraw %}

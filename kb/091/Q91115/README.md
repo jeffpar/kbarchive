@@ -6,6 +6,8 @@ permalink: /kb/091/Q91115/
 
 ## Q91115: Windows Drivers for HP LaserJet IV Printer
 
+{% raw %}
+
 	Article: Q91115
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/091/Q91115/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149283/
 
 ## Q149283: INFO: Rollback.exe on Windows NT 4.0 CD Destroys Critical System
 
+{% raw %}
+
 	Article: Q149283
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/149/Q149283/
 	
 	=============================================================================
 	
+
+{% endraw %}

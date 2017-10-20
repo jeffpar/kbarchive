@@ -6,6 +6,8 @@ permalink: /kb/083/Q83890/
 
 ## Q83890: Where to Obtain Multimedia Information
 
+{% raw %}
+
 	Article: Q83890
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -45,3 +47,5 @@ permalink: /kb/083/Q83890/
 	
 	=============================================================================
 	
+
+{% endraw %}

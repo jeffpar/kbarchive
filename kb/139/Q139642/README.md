@@ -6,6 +6,8 @@ permalink: /kb/139/Q139642/
 
 ## Q139642: XCLN: Err Msg: TCP/IP Is Required to Run Internet Mail
 
+{% raw %}
+
 	Article: Q139642
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -50,3 +52,5 @@ permalink: /kb/139/Q139642/
 	
 	=============================================================================
 	
+
+{% endraw %}

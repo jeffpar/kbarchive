@@ -6,6 +6,8 @@ permalink: /kb/037/Q37986/
 
 ## Q37986: &quot;Cannot create PIF File&quot; Message when No Directory Exists
 
+{% raw %}
+
 	Article: Q37986
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -37,3 +39,5 @@ permalink: /kb/037/Q37986/
 	
 	=============================================================================
 	
+
+{% endraw %}

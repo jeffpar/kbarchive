@@ -6,6 +6,8 @@ permalink: /kb/242/Q242364/
 
 ## Q242364: XADM: Information Store Does Not Start After Offline Defrag
 
+{% raw %}
+
 	Article: Q242364
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -143,3 +145,5 @@ permalink: /kb/242/Q242364/
 	
 	=============================================================================
 	
+
+{% endraw %}

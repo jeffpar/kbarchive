@@ -6,6 +6,8 @@ permalink: /kb/171/Q171927/
 
 ## Q171927: Missing WINS Directory Causes Missing/Corrupt Error
 
+{% raw %}
+
 	Article: Q171927
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -95,3 +97,5 @@ permalink: /kb/171/Q171927/
 	
 	=============================================================================
 	
+
+{% endraw %}

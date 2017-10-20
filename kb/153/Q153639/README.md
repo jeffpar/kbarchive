@@ -6,6 +6,8 @@ permalink: /kb/153/Q153639/
 
 ## Q153639: SMS Site Server's Number of SQL Connections Continue to Grow
 
+{% raw %}
+
 	Article: Q153639
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -44,3 +46,5 @@ permalink: /kb/153/Q153639/
 	
 	=============================================================================
 	
+
+{% endraw %}

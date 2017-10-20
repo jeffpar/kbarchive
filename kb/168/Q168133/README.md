@@ -6,6 +6,8 @@ permalink: /kb/168/Q168133/
 
 ## Q168133: XCLN: Deleting the Schedule+ Data from Exchange Server
 
+{% raw %}
+
 	Article: Q168133
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 7.5,7.x
@@ -74,3 +76,5 @@ permalink: /kb/168/Q168133/
 	
 	=============================================================================
 	
+
+{% endraw %}

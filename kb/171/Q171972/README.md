@@ -6,6 +6,8 @@ permalink: /kb/171/Q171972/
 
 ## Q171972: FIX: Cannot Disable UserControl on Modal Form
 
+{% raw %}
+
 	Article: Q171972
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -163,3 +165,5 @@ permalink: /kb/171/Q171972/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/270/Q270065/
 
 ## Q270065: XADM: How to Troubleshoot New Mail Notification Issues
 
+{% raw %}
+
 	Article: Q270065
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -102,3 +104,5 @@ permalink: /kb/270/Q270065/
 	
 	=============================================================================
 	
+
+{% endraw %}

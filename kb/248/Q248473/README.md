@@ -6,6 +6,8 @@ permalink: /kb/248/Q248473/
 
 ## Q248473: Fighter Ace II: Ground Explosions Fill Entire Texture Square
 
+{% raw %}
+
 	Article: Q248473
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/248/Q248473/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193533/
 
 ## Q193533: XFOR: Date/Time Stamps Not Preserved on Migrated Notes Messages
 
+{% raw %}
+
 	Article: Q193533
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -59,3 +61,5 @@ permalink: /kb/193/Q193533/
 	
 	=============================================================================
 	
+
+{% endraw %}

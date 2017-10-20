@@ -6,6 +6,8 @@ permalink: /kb/327/Q327356/
 
 ## Q327356: FIX: Event 25 Error Messages Are Logged for Each Print Job
 
+{% raw %}
+
 	Article: Q327356
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -120,3 +122,5 @@ permalink: /kb/327/Q327356/
 	
 	=============================================================================
 	
+
+{% endraw %}

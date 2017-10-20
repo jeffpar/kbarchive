@@ -6,6 +6,8 @@ permalink: /kb/200/Q200521/
 
 ## Q200521: SMSINST: Self-registered OCX or DLL Converted to Short File Name
 
+{% raw %}
+
 	Article: Q200521
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -67,3 +69,5 @@ permalink: /kb/200/Q200521/
 	
 	=============================================================================
 	
+
+{% endraw %}

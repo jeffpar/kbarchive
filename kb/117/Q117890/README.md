@@ -6,6 +6,8 @@ permalink: /kb/117/Q117890/
 
 ## Q117890: Encarta: Can't Display Population or Climate Charts
 
+{% raw %}
+
 	Article: Q117890
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -55,3 +57,5 @@ permalink: /kb/117/Q117890/
 	
 	=============================================================================
 	
+
+{% endraw %}

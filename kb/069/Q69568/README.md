@@ -6,6 +6,8 @@ permalink: /kb/069/Q69568/
 
 ## Q69568: Disabling Shadow RAM on Leading Technology 386-16SX
 
+{% raw %}
+
 	Article: Q69568
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -62,3 +64,5 @@ permalink: /kb/069/Q69568/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/041/Q41677/
 
 ## Q41677: QuickC 2.00 README.DOC: Spurious Error: &#95;&#95;aDBused...
 
+{% raw %}
+
 	Article: Q41677
 	Product(s): See article
 	Version(s): 2.00
@@ -20,3 +22,5 @@ permalink: /kb/041/Q41677/
 	
 	To eliminate this error, link with the DBUSED.OBJ file. Or use the LIB
 	utility to add DBUSED.OBJ to your combined libraries.
+
+{% endraw %}

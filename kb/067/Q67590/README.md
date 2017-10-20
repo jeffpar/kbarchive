@@ -6,6 +6,8 @@ permalink: /kb/067/Q67590/
 
 ## Q67590: VWFD.exe VxD Helps MS-DOS Application Query Screen State
 
+{% raw %}
+
 	Article: Q67590
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -131,3 +133,5 @@ permalink: /kb/067/Q67590/
 	
 	=============================================================================
 	
+
+{% endraw %}

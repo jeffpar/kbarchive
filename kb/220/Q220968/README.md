@@ -6,6 +6,8 @@ permalink: /kb/220/Q220968/
 
 ## Q220968: Microsoft Windows Language Versions Supported by DirectX 6.1
 
+{% raw %}
+
 	Article: Q220968
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,2.0
@@ -81,3 +83,5 @@ permalink: /kb/220/Q220968/
 	
 	=============================================================================
 	
+
+{% endraw %}

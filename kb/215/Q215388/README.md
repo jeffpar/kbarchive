@@ -6,6 +6,8 @@ permalink: /kb/215/Q215388/
 
 ## Q215388: BUG: AfterLabelEdit Event Fires After Canceling an Edit
 
+{% raw %}
+
 	Article: Q215388
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,3.0
@@ -91,3 +93,5 @@ permalink: /kb/215/Q215388/
 	
 	=============================================================================
 	
+
+{% endraw %}

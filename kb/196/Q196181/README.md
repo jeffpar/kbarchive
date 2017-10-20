@@ -6,6 +6,8 @@ permalink: /kb/196/Q196181/
 
 ## Q196181: XADM: Moveserv.htm Contents and Index are not Accessible
 
+{% raw %}
+
 	Article: Q196181
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -40,3 +42,5 @@ permalink: /kb/196/Q196181/
 	
 	=============================================================================
 	
+
+{% endraw %}

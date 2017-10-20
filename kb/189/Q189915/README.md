@@ -6,6 +6,8 @@ permalink: /kb/189/Q189915/
 
 ## Q189915: BUG: ALTER TABLE Can Add Duplicate Relations to DBC
 
+{% raw %}
+
 	Article: Q189915
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -122,3 +124,5 @@ permalink: /kb/189/Q189915/
 	
 	=============================================================================
 	
+
+{% endraw %}

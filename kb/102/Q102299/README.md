@@ -6,6 +6,8 @@ permalink: /kb/102/Q102299/
 
 ## Q102299: X400: File Handles, RAM, and Disk Space Requirements
 
+{% raw %}
+
 	Article: Q102299
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0,3.2
@@ -47,3 +49,5 @@ permalink: /kb/102/Q102299/
 	
 	=============================================================================
 	
+
+{% endraw %}

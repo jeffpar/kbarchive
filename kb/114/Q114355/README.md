@@ -6,6 +6,8 @@ permalink: /kb/114/Q114355/
 
 ## Q114355: INFO: Single-Tier Drivers Don't Support Asynchronous Processing
 
+{% raw %}
+
 	Article: Q114355
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,2.5a,2.5b,2.6,3.0
@@ -144,3 +146,5 @@ permalink: /kb/114/Q114355/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170807/
 
 ## Q170807: XCLN: Cannot Paste into Global Distribution List
 
+{% raw %}
+
 	Article: Q170807
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -92,3 +94,5 @@ permalink: /kb/170/Q170807/
 	
 	=============================================================================
 	
+
+{% endraw %}

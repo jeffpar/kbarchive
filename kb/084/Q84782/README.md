@@ -6,6 +6,8 @@ permalink: /kb/084/Q84782/
 
 ## Q84782: Norton Utilities Version 6.01 and Windows 3.1
 
+{% raw %}
+
 	Article: Q84782
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/084/Q84782/
 	
 	=============================================================================
 	
+
+{% endraw %}

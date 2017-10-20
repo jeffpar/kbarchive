@@ -6,6 +6,8 @@ permalink: /kb/255/Q255238/
 
 ## Q255238: Error When Printing from Excel or Word with HP Printer Driver
 
+{% raw %}
+
 	Article: Q255238
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:97; winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/255/Q255238/
 	
 	=============================================================================
 	
+
+{% endraw %}

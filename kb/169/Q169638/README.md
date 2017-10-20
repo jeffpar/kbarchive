@@ -6,6 +6,8 @@ permalink: /kb/169/Q169638/
 
 ## Q169638: XADM: Exchange Uses Information Store for Intersite Replication
 
+{% raw %}
+
 	Article: Q169638
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -51,3 +53,5 @@ permalink: /kb/169/Q169638/
 	
 	=============================================================================
 	
+
+{% endraw %}

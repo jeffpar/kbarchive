@@ -6,6 +6,8 @@ permalink: /kb/181/Q181847/
 
 ## Q181847: XADM: How to Configure Exchange Server with Proxy Server
 
+{% raw %}
+
 	Article: Q181847
 	Product(s): Microsoft Exchange
 	Version(s): 2.0,4.0,5.0,5.5
@@ -107,3 +109,5 @@ permalink: /kb/181/Q181847/
 	
 	=============================================================================
 	
+
+{% endraw %}

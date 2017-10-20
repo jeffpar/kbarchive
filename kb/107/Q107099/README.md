@@ -6,6 +6,8 @@ permalink: /kb/107/Q107099/
 
 ## Q107099: X400: 3.2 Gateway Memory Requirements
 
+{% raw %}
+
 	Article: Q107099
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -45,3 +47,5 @@ permalink: /kb/107/Q107099/
 	
 	=============================================================================
 	
+
+{% endraw %}

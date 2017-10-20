@@ -6,6 +6,8 @@ permalink: /kb/153/Q153706/
 
 ## Q153706: WINS Service Terminates During Replication
 
+{% raw %}
+
 	Article: Q153706
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -48,3 +50,5 @@ permalink: /kb/153/Q153706/
 	
 	=============================================================================
 	
+
+{% endraw %}

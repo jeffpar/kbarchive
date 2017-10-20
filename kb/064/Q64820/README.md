@@ -6,6 +6,8 @@ permalink: /kb/064/Q64820/
 
 ## Q64820: Quicken Shows Up as Quattro During Windows Setup
 
+{% raw %}
+
 	Article: Q64820
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -59,3 +61,5 @@ permalink: /kb/064/Q64820/
 	
 	=============================================================================
 	
+
+{% endraw %}

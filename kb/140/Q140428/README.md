@@ -6,6 +6,8 @@ permalink: /kb/140/Q140428/
 
 ## Q140428: MS Plus! Setup Err Msg: This Is an Invalid Command Line Option
 
+{% raw %}
+
 	Article: Q140428
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -88,3 +90,5 @@ permalink: /kb/140/Q140428/
 	
 	=============================================================================
 	
+
+{% endraw %}

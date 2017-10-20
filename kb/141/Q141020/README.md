@@ -6,6 +6,8 @@ permalink: /kb/141/Q141020/
 
 ## Q141020: How to Find Next Available Drive Letter (for Network Connect)
 
+{% raw %}
+
 	Article: Q141020
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -100,3 +102,5 @@ permalink: /kb/141/Q141020/
 	
 	=============================================================================
 	
+
+{% endraw %}

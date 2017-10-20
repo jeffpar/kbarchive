@@ -6,6 +6,8 @@ permalink: /kb/130/Q130097/
 
 ## Q130097: PC Win: How to Disable the Server Button
 
+{% raw %}
+
 	Article: Q130097
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -53,3 +55,5 @@ permalink: /kb/130/Q130097/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126004/
 
 ## Q126004: MSB Solar and Ocean: Err Msg: Run Magic School Bus Setup Again
 
+{% raw %}
+
 	Article: Q126004
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -112,3 +114,5 @@ permalink: /kb/126/Q126004/
 	
 	=============================================================================
 	
+
+{% endraw %}

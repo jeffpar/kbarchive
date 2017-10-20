@@ -6,6 +6,8 @@ permalink: /kb/315/Q315602/
 
 ## Q315602: Flight Simulator 2002: Pan a View May Not Work As Expected
 
+{% raw %}
+
 	Article: Q315602
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -114,3 +116,5 @@ permalink: /kb/315/Q315602/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/037/Q37004/
 
 ## Q37004: Warning C4086 Expected
 
+{% raw %}
+
 	Article: Q37004
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -40,3 +42,5 @@ permalink: /kb/037/Q37004/
 	For detailed information on the /Zp option and the "pack" pragma, see
 	Page 210 of the QuickC programmer's guide and Page 100 of the C user's
 	guide.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164191/
 
 ## Q164191: Msbatch.inf Parameters: Bypassing Network Logon
 
+{% raw %}
+
 	Article: Q164191
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -89,3 +91,5 @@ permalink: /kb/164/Q164191/
 	
 	=============================================================================
 	
+
+{% endraw %}

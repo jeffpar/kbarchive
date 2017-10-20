@@ -6,6 +6,8 @@ permalink: /kb/160/Q160215/
 
 ## Q160215: HOWTO: Obtain the Host IP Address Using Windows Sockets
 
+{% raw %}
+
 	Article: Q160215
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -228,3 +230,5 @@ permalink: /kb/160/Q160215/
 	
 	=============================================================================
 	
+
+{% endraw %}

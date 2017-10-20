@@ -6,6 +6,8 @@ permalink: /kb/073/Q73667/
 
 ## Q73667: INFO: Considerations for CreateCursor() and CreateIcon()
 
+{% raw %}
+
 	Article: Q73667
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51
@@ -56,3 +58,5 @@ permalink: /kb/073/Q73667/
 	
 	=============================================================================
 	
+
+{% endraw %}

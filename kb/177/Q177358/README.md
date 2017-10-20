@@ -6,6 +6,8 @@ permalink: /kb/177/Q177358/
 
 ## Q177358: HOWTO: Pass a Date Value to a Oracle Stored Procedure
 
+{% raw %}
+
 	Article: Q177358
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -155,3 +157,5 @@ permalink: /kb/177/Q177358/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171658/
 
 ## Q171658: Windows 95 3270 Applet Fails if Directory Name Contains a Space
 
+{% raw %}
+
 	Article: Q171658
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -74,3 +76,5 @@ permalink: /kb/171/Q171658/
 	
 	=============================================================================
 	
+
+{% endraw %}

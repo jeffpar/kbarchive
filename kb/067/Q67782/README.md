@@ -6,6 +6,8 @@ permalink: /kb/067/Q67782/
 
 ## Q67782: /MT Cannot Be Mixed with /FPa As Shown on Page 370 of APT
 
+{% raw %}
+
 	Article: Q67782
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -23,3 +25,5 @@ permalink: /kb/067/Q67782/
 	To use the alternate math libraries, you must either create a single
 	threaded .EXE or a multithreaded DLL. The libraries to create a
 	multithreaded .EXE are not available.
+
+{% endraw %}

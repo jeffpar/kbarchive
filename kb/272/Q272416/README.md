@@ -6,6 +6,8 @@ permalink: /kb/272/Q272416/
 
 ## Q272416: Plus! Game Pack: Cannot Establish Multiplayer Connection
 
+{% raw %}
+
 	Article: Q272416
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/272/Q272416/
 	
 	=============================================================================
 	
+
+{% endraw %}

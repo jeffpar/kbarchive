@@ -6,6 +6,8 @@ permalink: /kb/234/Q234565/
 
 ## Q234565: PowerPoint 2000 At a Glance Comments and Corrections
 
+{% raw %}
+
 	Article: Q234565
 	Product(s): Microsoft Press
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/234/Q234565/
 	
 	=============================================================================
 	
+
+{% endraw %}

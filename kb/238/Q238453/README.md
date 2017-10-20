@@ -6,6 +6,8 @@ permalink: /kb/238/Q238453/
 
 ## Q238453: Data in Route Pointer Field Can Bypass Source Routing Disable
 
+{% raw %}
+
 	Article: Q238453
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 4.0
@@ -233,3 +235,5 @@ permalink: /kb/238/Q238453/
 	
 	=============================================================================
 	
+
+{% endraw %}

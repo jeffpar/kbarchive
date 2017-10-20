@@ -6,6 +6,8 @@ permalink: /kb/136/Q136923/
 
 ## Q136923: Purpose of Edit User Defined Properties and Methods Dialog Box
 
+{% raw %}
+
 	Article: Q136923
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -43,3 +45,5 @@ permalink: /kb/136/Q136923/
 	
 	=============================================================================
 	
+
+{% endraw %}

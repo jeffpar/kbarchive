@@ -6,6 +6,8 @@ permalink: /kb/131/Q131522/
 
 ## Q131522: PC WSPLUS: Schedule+ Dynamic Connections Not Work w/Novell NDS
 
+{% raw %}
+
 	Article: Q131522
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -71,3 +73,5 @@ permalink: /kb/131/Q131522/
 	
 	=============================================================================
 	
+
+{% endraw %}

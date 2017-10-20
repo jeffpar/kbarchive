@@ -6,6 +6,8 @@ permalink: /kb/197/Q197116/
 
 ## Q197116: BUG: Label Width Changes with WordWrap and AutoSize Set to True
 
+{% raw %}
+
 	Article: Q197116
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -123,3 +125,5 @@ permalink: /kb/197/Q197116/
 	
 	=============================================================================
 	
+
+{% endraw %}

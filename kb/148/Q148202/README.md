@@ -6,6 +6,8 @@ permalink: /kb/148/Q148202/
 
 ## Q148202: BUG: Changes to Double-Precision Values in Debugger Fail
 
+{% raw %}
+
 	Article: Q148202
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/148/Q148202/
 	
 	=============================================================================
 	
+
+{% endraw %}

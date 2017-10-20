@@ -6,6 +6,8 @@ permalink: /kb/220/Q220951/
 
 ## Q220951: Err: Invalid System Time with Real Time Clock and Windows NT
 
+{% raw %}
+
 	Article: Q220951
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -81,3 +83,5 @@ permalink: /kb/220/Q220951/
 	
 	=============================================================================
 	
+
+{% endraw %}

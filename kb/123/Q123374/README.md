@@ -6,6 +6,8 @@ permalink: /kb/123/Q123374/
 
 ## Q123374: Mac Form: Adding Functionality to Custom Forms
 
+{% raw %}
+
 	Article: Q123374
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -72,3 +74,5 @@ permalink: /kb/123/Q123374/
 	
 	=============================================================================
 	
+
+{% endraw %}

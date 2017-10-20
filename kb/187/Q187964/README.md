@@ -6,6 +6,8 @@ permalink: /kb/187/Q187964/
 
 ## Q187964: MGI PhotoSuite May Paste Screenshots As Garbage Or an AV Occurs
 
+{% raw %}
+
 	Article: Q187964
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0,4.0a
@@ -85,3 +87,5 @@ permalink: /kb/187/Q187964/
 	
 	=============================================================================
 	
+
+{% endraw %}

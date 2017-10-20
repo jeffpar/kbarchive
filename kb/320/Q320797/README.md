@@ -6,6 +6,8 @@ permalink: /kb/320/Q320797/
 
 ## Q320797: SMS: Windows 98 Client Hangs When the Wuser32.exe Agent Starts
 
+{% raw %}
+
 	Article: Q320797
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -159,3 +161,5 @@ permalink: /kb/320/Q320797/
 	
 	=============================================================================
 	
+
+{% endraw %}

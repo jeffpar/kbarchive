@@ -6,6 +6,8 @@ permalink: /kb/196/Q196524/
 
 ## Q196524: How to Generate a List of Keyboard Commands for Word
 
+{% raw %}
+
 	Article: Q196524
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -55,3 +57,5 @@ permalink: /kb/196/Q196524/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168061/
 
 ## Q168061: WD97: Word Appears to Hang Sending Mail on NT 3.51 with MS Mail
 
+{% raw %}
+
 	Article: Q168061
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97; winnt:3.51
@@ -68,3 +70,5 @@ permalink: /kb/168/Q168061/
 	
 	=============================================================================
 	
+
+{% endraw %}

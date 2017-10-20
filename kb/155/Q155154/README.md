@@ -6,6 +6,8 @@ permalink: /kb/155/Q155154/
 
 ## Q155154: Encarta 96: Contents of the April 1996 Yearbook Update
 
+{% raw %}
+
 	Article: Q155154
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :1996 edition
@@ -147,3 +149,5 @@ permalink: /kb/155/Q155154/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161197/
 
 ## Q161197: HOWTO: Automate a Word Object Embedded in a Form
 
+{% raw %}
+
 	Article: Q161197
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -96,3 +98,5 @@ permalink: /kb/161/Q161197/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/076/Q76535/
 
 ## Q76535: MyFont.exe - Creating a Custom Raster Font
 
+{% raw %}
+
 	Article: Q76535
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -244,3 +246,5 @@ permalink: /kb/076/Q76535/
 	
 	=============================================================================
 	
+
+{% endraw %}

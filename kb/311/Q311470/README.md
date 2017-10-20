@@ -6,6 +6,8 @@ permalink: /kb/311/Q311470/
 
 ## Q311470: IIS Incorrectly Processes Escape Characters in URI
 
+{% raw %}
+
 	Article: Q311470
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -48,3 +50,5 @@ permalink: /kb/311/Q311470/
 	
 	=============================================================================
 	
+
+{% endraw %}

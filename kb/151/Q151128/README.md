@@ -6,6 +6,8 @@ permalink: /kb/151/Q151128/
 
 ## Q151128: Bookshelf '96-'97 Err Msg: Cannot Open Bookshelf Note File
 
+{% raw %}
+
 	Article: Q151128
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -86,3 +88,5 @@ permalink: /kb/151/Q151128/
 	
 	=============================================================================
 	
+
+{% endraw %}

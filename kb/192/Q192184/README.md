@@ -6,6 +6,8 @@ permalink: /kb/192/Q192184/
 
 ## Q192184: HOWTO: Add a Horizontal Scroll Bar to a Visual Basic ListBox
 
+{% raw %}
+
 	Article: Q192184
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/192/Q192184/
 	
 	=============================================================================
 	
+
+{% endraw %}

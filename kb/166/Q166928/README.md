@@ -6,6 +6,8 @@ permalink: /kb/166/Q166928/
 
 ## Q166928: FIX: Public Properties of VB4 Class Are Passed by Reference
 
+{% raw %}
+
 	Article: Q166928
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0 5.0
@@ -132,3 +134,5 @@ permalink: /kb/166/Q166928/
 	
 	=============================================================================
 	
+
+{% endraw %}

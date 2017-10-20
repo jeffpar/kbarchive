@@ -6,6 +6,8 @@ permalink: /kb/142/Q142286/
 
 ## Q142286: FIX: GETPEM Returns Cryptic Characters On Sub-Classed Object
 
+{% raw %}
+
 	Article: Q142286
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b
@@ -90,3 +92,5 @@ permalink: /kb/142/Q142286/
 	
 	=============================================================================
 	
+
+{% endraw %}

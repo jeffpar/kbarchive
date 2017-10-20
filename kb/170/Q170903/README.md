@@ -6,6 +6,8 @@ permalink: /kb/170/Q170903/
 
 ## Q170903: NUMLOCK Causes Logon Problems with Portable Computers
 
+{% raw %}
+
 	Article: Q170903
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/170/Q170903/
 	
 	=============================================================================
 	
+
+{% endraw %}

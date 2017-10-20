@@ -6,6 +6,8 @@ permalink: /kb/087/Q87432/
 
 ## Q87432: PC DB: Description of TPL File
 
+{% raw %}
+
 	Article: Q87432
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.2
@@ -106,3 +108,5 @@ permalink: /kb/087/Q87432/
 	
 	=============================================================================
 	
+
+{% endraw %}

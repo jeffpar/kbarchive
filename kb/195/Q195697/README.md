@@ -6,6 +6,8 @@ permalink: /kb/195/Q195697/
 
 ## Q195697: XFOR: Upgrade to 5.5 SP1 Overwrites Notes Mapping Tables
 
+{% raw %}
+
 	Article: Q195697
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -72,3 +74,5 @@ permalink: /kb/195/Q195697/
 	
 	=============================================================================
 	
+
+{% endraw %}

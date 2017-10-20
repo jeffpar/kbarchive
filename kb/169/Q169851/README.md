@@ -6,6 +6,8 @@ permalink: /kb/169/Q169851/
 
 ## Q169851: XCLN: Post Button Enabled Even If User Doesn't Have Permissions
 
+{% raw %}
+
 	Article: Q169851
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -46,3 +48,5 @@ permalink: /kb/169/Q169851/
 	
 	=============================================================================
 	
+
+{% endraw %}

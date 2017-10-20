@@ -6,6 +6,8 @@ permalink: /kb/301/Q301387/
 
 ## Q301387: HOW TO: Use IIS Migration Wizard to Migrate From IIS 4.0 to 5.0
 
+{% raw %}
+
 	Article: Q301387
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -389,3 +391,5 @@ permalink: /kb/301/Q301387/
 	
 	=============================================================================
 	
+
+{% endraw %}

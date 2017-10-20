@@ -6,6 +6,8 @@ permalink: /kb/196/Q196502/
 
 ## Q196502: WD97: Sort Order Appears to Be Incorrect
 
+{% raw %}
+
 	Article: Q196502
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/196/Q196502/
 	
 	=============================================================================
 	
+
+{% endraw %}

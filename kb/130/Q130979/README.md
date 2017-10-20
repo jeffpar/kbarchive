@@ -6,6 +6,8 @@ permalink: /kb/130/Q130979/
 
 ## Q130979: User Environment Variables Set Before Default Home Directory
 
+{% raw %}
+
 	Article: Q130979
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/130/Q130979/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134221/
 
 ## Q134221: Explorapedia: Little Kids Mode is New
 
+{% raw %}
+
 	Article: Q134221
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -80,3 +82,5 @@ permalink: /kb/134/Q134221/
 	
 	=============================================================================
 	
+
+{% endraw %}

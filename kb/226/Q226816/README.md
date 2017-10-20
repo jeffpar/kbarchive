@@ -6,6 +6,8 @@ permalink: /kb/226/Q226816/
 
 ## Q226816: SMS: Installation Issues in Foreign Language Environments
 
+{% raw %}
+
 	Article: Q226816
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -92,3 +94,5 @@ permalink: /kb/226/Q226816/
 	
 	=============================================================================
 	
+
+{% endraw %}

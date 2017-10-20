@@ -6,6 +6,8 @@ permalink: /kb/170/Q170660/
 
 ## Q170660: TN3270 Server Access Violation in SetBestGroups()
 
+{% raw %}
+
 	Article: Q170660
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -94,3 +96,5 @@ permalink: /kb/170/Q170660/
 	
 	=============================================================================
 	
+
+{% endraw %}

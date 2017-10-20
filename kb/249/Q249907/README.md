@@ -6,6 +6,8 @@ permalink: /kb/249/Q249907/
 
 ## Q249907: When You Apply SP4, Q147222 Appears in Registry Under Hotfix Key
 
+{% raw %}
+
 	Article: Q249907
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -44,3 +46,5 @@ permalink: /kb/249/Q249907/
 	
 	=============================================================================
 	
+
+{% endraw %}

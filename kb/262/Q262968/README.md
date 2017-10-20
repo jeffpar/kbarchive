@@ -6,6 +6,8 @@ permalink: /kb/262/Q262968/
 
 ## Q262968: XADM: Distribution List Is Not Displayed in Address Book View
 
+{% raw %}
+
 	Article: Q262968
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -125,3 +127,5 @@ permalink: /kb/262/Q262968/
 	
 	=============================================================================
 	
+
+{% endraw %}

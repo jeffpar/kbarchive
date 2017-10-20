@@ -6,6 +6,8 @@ permalink: /kb/141/Q141064/
 
 ## Q141064: Problems w/ Automatic Adjust Clock for Daylight Saving Time
 
+{% raw %}
+
 	Article: Q141064
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -84,3 +86,5 @@ permalink: /kb/141/Q141064/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175696/
 
 ## Q175696: MDG: Mac Mail Security Violation Error
 
+{% raw %}
+
 	Article: Q175696
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -114,3 +116,5 @@ permalink: /kb/175/Q175696/
 	
 	=============================================================================
 	
+
+{% endraw %}

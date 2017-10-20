@@ -6,6 +6,8 @@ permalink: /kb/130/Q130941/
 
 ## Q130941: How to Change the SQL Login ID for the SMS Database
 
+{% raw %}
+
 	Article: Q130941
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -78,3 +80,5 @@ permalink: /kb/130/Q130941/
 	
 	=============================================================================
 	
+
+{% endraw %}

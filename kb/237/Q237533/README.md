@@ -6,6 +6,8 @@ permalink: /kb/237/Q237533/
 
 ## Q237533: Reference Suite 2000 Err Msg: Insufficient Hard Disk Space
 
+{% raw %}
+
 	Article: Q237533
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -78,3 +80,5 @@ permalink: /kb/237/Q237533/
 	
 	=============================================================================
 	
+
+{% endraw %}

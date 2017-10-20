@@ -6,6 +6,8 @@ permalink: /kb/184/Q184425/
 
 ## Q184425: MS Windows Architecture for Developers Training Corrections
 
+{% raw %}
+
 	Article: Q184425
 	Product(s): Microsoft Press
 	Version(s): 
@@ -295,3 +297,5 @@ permalink: /kb/184/Q184425/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/299/Q299819/
 
 ## Q299819: Train Simulator: Switch Does Not Function as Expected
 
+{% raw %}
+
 	Article: Q299819
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -54,3 +56,5 @@ permalink: /kb/299/Q299819/
 	
 	=============================================================================
 	
+
+{% endraw %}

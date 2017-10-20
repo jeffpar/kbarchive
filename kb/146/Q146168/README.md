@@ -6,6 +6,8 @@ permalink: /kb/146/Q146168/
 
 ## Q146168: Cannot Restore From Archive When Exchange Server is Shut Down
 
+{% raw %}
+
 	Article: Q146168
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -47,3 +49,5 @@ permalink: /kb/146/Q146168/
 	
 	=============================================================================
 	
+
+{% endraw %}

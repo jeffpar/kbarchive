@@ -6,6 +6,8 @@ permalink: /kb/245/Q245731/
 
 ## Q245731: DirectX 7.0a: List of Files Displayed in DirectX Diagnostic Tool
 
+{% raw %}
+
 	Article: Q245731
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -132,3 +134,5 @@ permalink: /kb/245/Q245731/
 	
 	=============================================================================
 	
+
+{% endraw %}

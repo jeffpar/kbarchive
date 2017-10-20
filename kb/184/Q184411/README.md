@@ -6,6 +6,8 @@ permalink: /kb/184/Q184411/
 
 ## Q184411: FP: Cannot Validate Form Field if Name Has Invalid Character
 
+{% raw %}
+
 	Article: Q184411
 	Product(s): Word Front Page
 	Version(s): MACINTOSH:1.0; WINDOWS:97
@@ -81,3 +83,5 @@ permalink: /kb/184/Q184411/
 	
 	=============================================================================
 	
+
+{% endraw %}

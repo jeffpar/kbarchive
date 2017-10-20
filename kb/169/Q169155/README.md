@@ -6,6 +6,8 @@ permalink: /kb/169/Q169155/
 
 ## Q169155: FIX: SET ANSI ON Default Setting in VFPODBC Driver
 
+{% raw %}
+
 	Article: Q169155
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a
@@ -129,3 +131,5 @@ permalink: /kb/169/Q169155/
 	
 	=============================================================================
 	
+
+{% endraw %}

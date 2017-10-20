@@ -6,6 +6,8 @@ permalink: /kb/038/Q38285/
 
 ## Q38285: Detecting Presence of 80x87 Math Coprocessor
 
+{% raw %}
+
 	Article: Q38285
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10 | 5.10
@@ -66,3 +68,5 @@ permalink: /kb/038/Q38285/
 	4. Proceed with your program as you normally would. The C run-time
 	   libraries will automatically adjust for the presence or lack of a
 	   80x87.
+
+{% endraw %}

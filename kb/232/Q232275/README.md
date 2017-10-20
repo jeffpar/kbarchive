@@ -6,6 +6,8 @@ permalink: /kb/232/Q232275/
 
 ## Q232275: Multithreaded Write Routine May Corrupt Data on FAT Partition
 
+{% raw %}
+
 	Article: Q232275
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -85,3 +87,5 @@ permalink: /kb/232/Q232275/
 	
 	=============================================================================
 	
+
+{% endraw %}

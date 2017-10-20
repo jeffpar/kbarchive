@@ -6,6 +6,8 @@ permalink: /kb/141/Q141755/
 
 ## Q141755: PC WSPlus: How to Set Up Schedule Distribution
 
+{% raw %}
+
 	Article: Q141755
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 1.0,1.0a,3.0b,3.2,3.2a,3.5
@@ -835,3 +837,5 @@ permalink: /kb/141/Q141755/
 	
 	=============================================================================
 	
+
+{% endraw %}

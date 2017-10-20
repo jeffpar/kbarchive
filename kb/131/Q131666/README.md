@@ -6,6 +6,8 @@ permalink: /kb/131/Q131666/
 
 ## Q131666: Access Denied When Connecting From Pathworks 4.1 Client
 
+{% raw %}
+
 	Article: Q131666
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -100,3 +102,5 @@ permalink: /kb/131/Q131666/
 	
 	=============================================================================
 	
+
+{% endraw %}

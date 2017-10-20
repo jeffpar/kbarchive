@@ -6,6 +6,8 @@ permalink: /kb/104/Q104674/
 
 ## Q104674: Chaining Interrupts Using MASM
 
+{% raw %}
+
 	Article: Q104674
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -140,3 +142,5 @@ permalink: /kb/104/Q104674/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157989/
 
 ## Q157989: FIX: Deleting Object in Watch Window Causes Application Error
 
+{% raw %}
+
 	Article: Q157989
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -67,3 +69,5 @@ permalink: /kb/157/Q157989/
 	
 	=============================================================================
 	
+
+{% endraw %}

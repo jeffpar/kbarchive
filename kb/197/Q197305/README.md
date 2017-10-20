@@ -6,6 +6,8 @@ permalink: /kb/197/Q197305/
 
 ## Q197305: BUG: Error with Std EXE Converted from ActiveX Control Project
 
+{% raw %}
+
 	Article: Q197305
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -94,3 +96,5 @@ permalink: /kb/197/Q197305/
 	
 	=============================================================================
 	
+
+{% endraw %}

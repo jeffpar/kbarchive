@@ -6,6 +6,8 @@ permalink: /kb/274/Q274592/
 
 ## Q274592: SMS: Office 2000 SMS 1.2 Fix May Cause Programs to Not Install
 
+{% raw %}
+
 	Article: Q274592
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,1.2 SP4
@@ -129,3 +131,5 @@ permalink: /kb/274/Q274592/
 	
 	=============================================================================
 	
+
+{% endraw %}

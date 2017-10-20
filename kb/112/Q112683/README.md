@@ -6,6 +6,8 @@ permalink: /kb/112/Q112683/
 
 ## Q112683: Keyboard Hangs After Installing WFWG on Toshiba or TI Notebook
 
+{% raw %}
+
 	Article: Q112683
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0,3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/112/Q112683/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68125/
 
 ## Q68125: Kraft Micro-Mouse Doesn't Work with Windows 3.0
 
+{% raw %}
+
 	Article: Q68125
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/068/Q68125/
 	
 	=============================================================================
 	
+
+{% endraw %}

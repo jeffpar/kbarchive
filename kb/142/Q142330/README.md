@@ -6,6 +6,8 @@ permalink: /kb/142/Q142330/
 
 ## Q142330: User-Level Security Not Enabled with Custom Setup Script
 
+{% raw %}
+
 	Article: Q142330
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -89,3 +91,5 @@ permalink: /kb/142/Q142330/
 	
 	=============================================================================
 	
+
+{% endraw %}

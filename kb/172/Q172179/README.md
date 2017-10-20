@@ -6,6 +6,8 @@ permalink: /kb/172/Q172179/
 
 ## Q172179: WD97: Saving to a Banyan Vines Server Hangs Word
 
+{% raw %}
+
 	Article: Q172179
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -64,3 +66,5 @@ permalink: /kb/172/Q172179/
 	
 	=============================================================================
 	
+
+{% endraw %}

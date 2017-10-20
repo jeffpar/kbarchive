@@ -6,6 +6,8 @@ permalink: /kb/140/Q140648/
 
 ## Q140648: Microsoft File Transfer Available for Floppy Disk Users
 
+{% raw %}
+
 	Article: Q140648
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -73,3 +75,5 @@ permalink: /kb/140/Q140648/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/310/Q310663/
 
 ## Q310663: PRB: SQLBrowseConnect Can't Browse SQL 7.0 Servers from Win9x
 
+{% raw %}
+
 	Article: Q310663
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.6,2.6 SP1,2.7,2000.80.194
@@ -54,3 +56,5 @@ permalink: /kb/310/Q310663/
 	
 	=============================================================================
 	
+
+{% endraw %}

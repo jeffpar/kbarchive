@@ -6,6 +6,8 @@ permalink: /kb/136/Q136848/
 
 ## Q136848: PRB: Class Browser: &quot;Unable to Display Class Hierarchy&quot; Error
 
+{% raw %}
+
 	Article: Q136848
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/136/Q136848/
 	
 	=============================================================================
 	
+
+{% endraw %}

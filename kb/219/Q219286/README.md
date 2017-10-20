@@ -6,6 +6,8 @@ permalink: /kb/219/Q219286/
 
 ## Q219286: Appointments Are Not Deleted from OWA When Using Netscape
 
+{% raw %}
+
 	Article: Q219286
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -61,3 +63,5 @@ permalink: /kb/219/Q219286/
 	
 	=============================================================================
 	
+
+{% endraw %}

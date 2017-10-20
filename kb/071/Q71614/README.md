@@ -6,6 +6,8 @@ permalink: /kb/071/Q71614/
 
 ## Q71614: Minesweeper Will Not Save High Scores
 
+{% raw %}
+
 	Article: Q71614
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -34,3 +36,5 @@ permalink: /kb/071/Q71614/
 	
 	=============================================================================
 	
+
+{% endraw %}

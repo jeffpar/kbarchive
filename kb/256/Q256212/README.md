@@ -6,6 +6,8 @@ permalink: /kb/256/Q256212/
 
 ## Q256212: Software Metering Client Agent Can Lock Out Domain User Account
 
+{% raw %}
+
 	Article: Q256212
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -69,3 +71,5 @@ permalink: /kb/256/Q256212/
 	
 	=============================================================================
 	
+
+{% endraw %}

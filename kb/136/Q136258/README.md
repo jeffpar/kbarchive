@@ -6,6 +6,8 @@ permalink: /kb/136/Q136258/
 
 ## Q136258: HOWTO: Troubleshoot Visual C++ Setup Problems in Windows NT
 
+{% raw %}
+
 	Article: Q136258
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,5.0,6.0
@@ -470,3 +472,5 @@ permalink: /kb/136/Q136258/
 	
 	=============================================================================
 	
+
+{% endraw %}

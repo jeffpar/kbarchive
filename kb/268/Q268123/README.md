@@ -6,6 +6,8 @@ permalink: /kb/268/Q268123/
 
 ## Q268123: Windows 2000 Server Training Kit Comments and Corrections
 
+{% raw %}
+
 	Article: Q268123
 	Product(s): Microsoft Press
 	Version(s): 
@@ -1075,3 +1077,5 @@ permalink: /kb/268/Q268123/
 	
 	=============================================================================
 	
+
+{% endraw %}

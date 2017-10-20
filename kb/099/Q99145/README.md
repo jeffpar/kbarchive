@@ -6,6 +6,8 @@ permalink: /kb/099/Q99145/
 
 ## Q99145: RAS RemoteListen Parameter
 
+{% raw %}
+
 	Article: Q99145
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -135,3 +137,5 @@ permalink: /kb/099/Q99145/
 	
 	=============================================================================
 	
+
+{% endraw %}

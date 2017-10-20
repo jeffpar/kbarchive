@@ -6,6 +6,8 @@ permalink: /kb/135/Q135920/
 
 ## Q135920: Canon BubbleJet Printers Unavailable for Macintosh Clients
 
+{% raw %}
+
 	Article: Q135920
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -49,3 +51,5 @@ permalink: /kb/135/Q135920/
 	
 	=============================================================================
 	
+
+{% endraw %}

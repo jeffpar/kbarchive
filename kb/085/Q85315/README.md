@@ -6,6 +6,8 @@ permalink: /kb/085/Q85315/
 
 ## Q85315: Norton Desktop 2.0 Adds Options to Windows 3.1 File Manager
 
+{% raw %}
+
 	Article: Q85315
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -86,3 +88,5 @@ permalink: /kb/085/Q85315/
 	
 	=============================================================================
 	
+
+{% endraw %}

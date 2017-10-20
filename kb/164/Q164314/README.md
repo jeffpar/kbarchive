@@ -6,6 +6,8 @@ permalink: /kb/164/Q164314/
 
 ## Q164314: WinNT Err Msg: STOP 0x0000001E in Win32k.sys When Moving Mouse
 
+{% raw %}
+
 	Article: Q164314
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/164/Q164314/
 	
 	=============================================================================
 	
+
+{% endraw %}

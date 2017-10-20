@@ -6,6 +6,8 @@ permalink: /kb/256/Q256003/
 
 ## Q256003: SMS: Cannot Remotely Control Mouse with Toshiba Driver
 
+{% raw %}
+
 	Article: Q256003
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,4.0
@@ -75,3 +77,5 @@ permalink: /kb/256/Q256003/
 	
 	=============================================================================
 	
+
+{% endraw %}

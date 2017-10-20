@@ -6,6 +6,8 @@ permalink: /kb/150/Q150189/
 
 ## Q150189: BUG: vbCFRTF Clipboard Constant Stored Incorrectly
 
+{% raw %}
+
 	Article: Q150189
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -91,3 +93,5 @@ permalink: /kb/150/Q150189/
 	
 	=============================================================================
 	
+
+{% endraw %}

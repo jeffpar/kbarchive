@@ -6,6 +6,8 @@ permalink: /kb/186/Q186147/
 
 ## Q186147: Installing pcANYWHERE32 8.0 on Windows NT 4.0 w/ ATI Rage Card
 
+{% raw %}
+
 	Article: Q186147
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -142,3 +144,5 @@ permalink: /kb/186/Q186147/
 	
 	=============================================================================
 	
+
+{% endraw %}

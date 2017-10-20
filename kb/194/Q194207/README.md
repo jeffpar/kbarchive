@@ -6,6 +6,8 @@ permalink: /kb/194/Q194207/
 
 ## Q194207: HOWTO: How to Use Access Autonumber Column with OLE DB Templates
 
+{% raw %}
+
 	Article: Q194207
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -113,3 +115,5 @@ permalink: /kb/194/Q194207/
 	
 	=============================================================================
 	
+
+{% endraw %}

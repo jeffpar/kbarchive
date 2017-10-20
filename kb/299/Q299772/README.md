@@ -6,6 +6,8 @@ permalink: /kb/299/Q299772/
 
 ## Q299772: Site-Wide Travel Mode Prevents Windows NT Remote Client Install
 
+{% raw %}
+
 	Article: Q299772
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -105,3 +107,5 @@ permalink: /kb/299/Q299772/
 	
 	=============================================================================
 	
+
+{% endraw %}

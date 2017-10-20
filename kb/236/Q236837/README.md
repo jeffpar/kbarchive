@@ -6,6 +6,8 @@ permalink: /kb/236/Q236837/
 
 ## Q236837: PRB: SQL/DTS Wizard &quot;Unrecognized Phrase/Keyword&quot; w/FoxPro DB
 
+{% raw %}
+
 	Article: Q236837
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -93,3 +95,5 @@ permalink: /kb/236/Q236837/
 	
 	=============================================================================
 	
+
+{% endraw %}

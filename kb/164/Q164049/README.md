@@ -6,6 +6,8 @@ permalink: /kb/164/Q164049/
 
 ## Q164049: XCON: MTA: Remote X.400 MTA Fails to Decode NDR from Exchange
 
+{% raw %}
+
 	Article: Q164049
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -78,3 +80,5 @@ permalink: /kb/164/Q164049/
 	
 	=============================================================================
 	
+
+{% endraw %}

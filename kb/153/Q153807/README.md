@@ -6,6 +6,8 @@ permalink: /kb/153/Q153807/
 
 ## Q153807: PRB: GetRowsEx Re-fetches Last Read Record in Subsequent Calls
 
+{% raw %}
+
 	Article: Q153807
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -120,3 +122,5 @@ permalink: /kb/153/Q153807/
 	
 	=============================================================================
 	
+
+{% endraw %}

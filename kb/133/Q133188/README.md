@@ -6,6 +6,8 @@ permalink: /kb/133/Q133188/
 
 ## Q133188: Microsoft Plus! Internet Mail Client Service Uses POP3 Port ID
 
+{% raw %}
+
 	Article: Q133188
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -96,3 +98,5 @@ permalink: /kb/133/Q133188/
 	
 	=============================================================================
 	
+
+{% endraw %}

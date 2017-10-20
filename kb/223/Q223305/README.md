@@ -6,6 +6,8 @@ permalink: /kb/223/Q223305/
 
 ## Q223305: MSB Animals: Character Stops Talking and Program Hangs
 
+{% raw %}
+
 	Article: Q223305
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -73,3 +75,5 @@ permalink: /kb/223/Q223305/
 	
 	=============================================================================
 	
+
+{% endraw %}

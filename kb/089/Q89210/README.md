@@ -6,6 +6,8 @@ permalink: /kb/089/Q89210/
 
 ## Q89210: Linotronic 530 Driver Truncates Page with User-Defined Sizes
 
+{% raw %}
+
 	Article: Q89210
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -78,3 +80,5 @@ permalink: /kb/089/Q89210/
 	
 	=============================================================================
 	
+
+{% endraw %}

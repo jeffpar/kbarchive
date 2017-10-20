@@ -6,6 +6,8 @@ permalink: /kb/189/Q189918/
 
 ## Q189918: HOWTO: Administer SQL Server Users from Visual FoxPro
 
+{% raw %}
+
 	Article: Q189918
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0
@@ -128,3 +130,5 @@ permalink: /kb/189/Q189918/
 	
 	=============================================================================
 	
+
+{% endraw %}

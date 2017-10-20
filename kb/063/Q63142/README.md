@@ -6,6 +6,8 @@ permalink: /kb/063/Q63142/
 
 ## Q63142: Flight Simulator: Zooming the Map Window with the Mouse
 
+{% raw %}
+
 	Article: Q63142
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -32,3 +34,5 @@ permalink: /kb/063/Q63142/
 	
 	=============================================================================
 	
+
+{% endraw %}

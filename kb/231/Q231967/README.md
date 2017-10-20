@@ -6,6 +6,8 @@ permalink: /kb/231/Q231967/
 
 ## Q231967: XADM: Isinteg Has Been Modified to Dump the Mailbox Table
 
+{% raw %}
+
 	Article: Q231967
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -150,3 +152,5 @@ permalink: /kb/231/Q231967/
 	
 	=============================================================================
 	
+
+{% endraw %}

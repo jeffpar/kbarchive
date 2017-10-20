@@ -6,6 +6,8 @@ permalink: /kb/029/Q29836/
 
 ## Q29836: C 5.10 MTDYNA.DOC: Sample MT Program/Compiling and Linking
 
+{% raw %}
+
 	Article: Q29836
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -76,3 +78,5 @@ permalink: /kb/029/Q29836/
 	      CL /Alfw /Zl mhello.c /link llibcmt doscalls
 	
 	5. Run the program under OS/2.
+
+{% endraw %}

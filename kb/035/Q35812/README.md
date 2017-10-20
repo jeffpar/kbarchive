@@ -6,6 +6,8 @@ permalink: /kb/035/Q35812/
 
 ## Q35812: Sample Pascal Program Documentation Error: function Fact
 
+{% raw %}
+
 	Article: Q35812
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -21,3 +23,5 @@ permalink: /kb/035/Q35812/
 	The Pascal function declaration should be the following:
 	
 	function Fact (n: integer) : integer [C]; extern;
+
+{% endraw %}

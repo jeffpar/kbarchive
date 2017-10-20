@@ -6,6 +6,8 @@ permalink: /kb/283/Q283618/
 
 ## Q283618: INFO: Security Considerations When Using Automatic User Login
 
+{% raw %}
+
 	Article: Q283618
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,5.0,6.0
@@ -98,3 +100,5 @@ permalink: /kb/283/Q283618/
 	
 	=============================================================================
 	
+
+{% endraw %}

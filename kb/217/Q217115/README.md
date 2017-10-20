@@ -6,6 +6,8 @@ permalink: /kb/217/Q217115/
 
 ## Q217115: &quot;Invalid Syntax&quot; Connecting to Microsoft Windows Update Web Site
 
+{% raw %}
+
 	Article: Q217115
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:98
@@ -67,3 +69,5 @@ permalink: /kb/217/Q217115/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/314/Q314761/
 
 ## Q314761: RRAS Drops the First Route That Is Added By Using Routemon.exe
 
+{% raw %}
+
 	Article: Q314761
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -76,3 +78,5 @@ permalink: /kb/314/Q314761/
 	
 	=============================================================================
 	
+
+{% endraw %}

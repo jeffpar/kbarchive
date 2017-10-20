@@ -6,6 +6,8 @@ permalink: /kb/185/Q185090/
 
 ## Q185090: HOWTO: Create Multicolored Items in a Combo Box
 
+{% raw %}
+
 	Article: Q185090
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -90,3 +92,5 @@ permalink: /kb/185/Q185090/
 	
 	=============================================================================
 	
+
+{% endraw %}

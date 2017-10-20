@@ -6,6 +6,8 @@ permalink: /kb/183/Q183481/
 
 ## Q183481: XADM: CR/LF Missing from End of Internet Text Body Parts
 
+{% raw %}
+
 	Article: Q183481
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -69,3 +71,5 @@ permalink: /kb/183/Q183481/
 	
 	=============================================================================
 	
+
+{% endraw %}

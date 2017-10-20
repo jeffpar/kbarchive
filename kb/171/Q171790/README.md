@@ -6,6 +6,8 @@ permalink: /kb/171/Q171790/
 
 ## Q171790: Time Incorrect After Restarting Multiprocessor System
 
+{% raw %}
+
 	Article: Q171790
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.00
@@ -89,3 +91,5 @@ permalink: /kb/171/Q171790/
 	
 	=============================================================================
 	
+
+{% endraw %}

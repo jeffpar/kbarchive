@@ -6,6 +6,8 @@ permalink: /kb/090/Q90478/
 
 ## Q90478: PC Win: How to Mail Enable/Disable Excel 3.0
 
+{% raw %}
+
 	Article: Q90478
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -45,3 +47,5 @@ permalink: /kb/090/Q90478/
 	
 	=============================================================================
 	
+
+{% endraw %}

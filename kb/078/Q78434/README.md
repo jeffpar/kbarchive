@@ -6,6 +6,8 @@ permalink: /kb/078/Q78434/
 
 ## Q78434: Comparison of BUFFERS=, STACKS=, and SMARTDRV.SYS
 
+{% raw %}
+
 	Article: Q78434
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -75,3 +77,5 @@ permalink: /kb/078/Q78434/
 	
 	=============================================================================
 	
+
+{% endraw %}

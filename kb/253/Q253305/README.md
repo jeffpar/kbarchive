@@ -6,6 +6,8 @@ permalink: /kb/253/Q253305/
 
 ## Q253305: XADM: Exchange Setup Stops w. &quot;Account Information Is Incorrect&quot;
 
+{% raw %}
+
 	Article: Q253305
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -69,3 +71,5 @@ permalink: /kb/253/Q253305/
 	
 	=============================================================================
 	
+
+{% endraw %}

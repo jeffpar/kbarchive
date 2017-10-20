@@ -6,6 +6,8 @@ permalink: /kb/260/Q260717/
 
 ## Q260717: StarLancer: Game Hangs When You Start New Mission
 
+{% raw %}
+
 	Article: Q260717
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -67,3 +69,5 @@ permalink: /kb/260/Q260717/
 	
 	=============================================================================
 	
+
+{% endraw %}

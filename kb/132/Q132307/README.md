@@ -6,6 +6,8 @@ permalink: /kb/132/Q132307/
 
 ## Q132307: Logon Script Does Not Run When Computer Name Contains a Space
 
+{% raw %}
+
 	Article: Q132307
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -56,3 +58,5 @@ permalink: /kb/132/Q132307/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/265/Q265508/
 
 ## Q265508: XCON: MTA Instance Is Not Displayed in Performance Monitor
 
+{% raw %}
+
 	Article: Q265508
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -63,3 +65,5 @@ permalink: /kb/265/Q265508/
 	
 	=============================================================================
 	
+
+{% endraw %}

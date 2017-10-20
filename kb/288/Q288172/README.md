@@ -6,6 +6,8 @@ permalink: /kb/288/Q288172/
 
 ## Q288172: How to Remove PPTP Using the Registry and Manually Delete File
 
+{% raw %}
+
 	Article: Q288172
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -86,3 +88,5 @@ permalink: /kb/288/Q288172/
 	
 	=============================================================================
 	
+
+{% endraw %}

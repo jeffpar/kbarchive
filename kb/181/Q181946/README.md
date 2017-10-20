@@ -6,6 +6,8 @@ permalink: /kb/181/Q181946/
 
 ## Q181946: HOWTO: Create a NetDDE Client and Server in Visual Basic
 
+{% raw %}
+
 	Article: Q181946
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0
@@ -160,3 +162,5 @@ permalink: /kb/181/Q181946/
 	
 	=============================================================================
 	
+
+{% endraw %}

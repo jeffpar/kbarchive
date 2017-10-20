@@ -6,6 +6,8 @@ permalink: /kb/195/Q195368/
 
 ## Q195368: WD97: Drag-and-Drop Edit Won't Swap Positions of 2 Table Rows
 
+{% raw %}
+
 	Article: Q195368
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -105,3 +107,5 @@ permalink: /kb/195/Q195368/
 	
 	=============================================================================
 	
+
+{% endraw %}

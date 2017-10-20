@@ -6,6 +6,8 @@ permalink: /kb/146/Q146456/
 
 ## Q146456: XCLN: Err Msg: MAPI: 80040113 Reported by: Personal...
 
+{% raw %}
+
 	Article: Q146456
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -47,3 +49,5 @@ permalink: /kb/146/Q146456/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241195/
 
 ## Q241195: XADM: How to Add Only Mailboxes to a Distribution List
 
+{% raw %}
+
 	Article: Q241195
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -64,3 +66,5 @@ permalink: /kb/241/Q241195/
 	
 	=============================================================================
 	
+
+{% endraw %}

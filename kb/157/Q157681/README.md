@@ -6,6 +6,8 @@ permalink: /kb/157/Q157681/
 
 ## Q157681: SMS: IP Address Missing from Client Inventory
 
+{% raw %}
+
 	Article: Q157681
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:3.11; winnt:1.2
@@ -123,3 +125,5 @@ permalink: /kb/157/Q157681/
 	
 	=============================================================================
 	
+
+{% endraw %}

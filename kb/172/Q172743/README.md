@@ -6,6 +6,8 @@ permalink: /kb/172/Q172743/
 
 ## Q172743: WD97: Web Preview Edit Browser Path Limited to 50 Characters
 
+{% raw %}
+
 	Article: Q172743
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/172/Q172743/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/041/Q41668/
 
 ## Q41668: QuickC 2.00 README.DOC: Error Message C2418
 
+{% raw %}
+
 	Article: Q41668
 	Product(s): See article
 	Version(s): 2.00
@@ -44,3 +46,5 @@ permalink: /kb/041/Q41668/
 	    mov regvar2, regvar4;    /* error */
 	   }
 	  }
+
+{% endraw %}

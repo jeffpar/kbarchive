@@ -6,6 +6,8 @@ permalink: /kb/130/Q130417/
 
 ## Q130417: Using SMS Remote Control and RAS to Control a WFW Client
 
+{% raw %}
+
 	Article: Q130417
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -78,3 +80,5 @@ permalink: /kb/130/Q130417/
 	
 	=============================================================================
 	
+
+{% endraw %}

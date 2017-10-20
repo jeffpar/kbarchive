@@ -6,6 +6,8 @@ permalink: /kb/185/Q185013/
 
 ## Q185013: XADM: Using # and ^ Symbols in Display Names
 
+{% raw %}
+
 	Article: Q185013
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -40,3 +42,5 @@ permalink: /kb/185/Q185013/
 	
 	=============================================================================
 	
+
+{% endraw %}

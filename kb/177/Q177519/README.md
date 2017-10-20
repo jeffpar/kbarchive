@@ -6,6 +6,8 @@ permalink: /kb/177/Q177519/
 
 ## Q177519: WD97: Comments Lost When Word 2.x File Converted to Word 97
 
+{% raw %}
+
 	Article: Q177519
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -112,3 +114,5 @@ permalink: /kb/177/Q177519/
 	
 	=============================================================================
 	
+
+{% endraw %}

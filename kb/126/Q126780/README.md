@@ -6,6 +6,8 @@ permalink: /kb/126/Q126780/
 
 ## Q126780: PRB: Operator/Operand Type Mismatch When Comparing Two Objects
 
+{% raw %}
+
 	Article: Q126780
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -94,3 +96,5 @@ permalink: /kb/126/Q126780/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139643/
 
 ## Q139643: XADM: Error Writing Log Information to SA
 
+{% raw %}
+
 	Article: Q139643
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -60,3 +62,5 @@ permalink: /kb/139/Q139643/
 	
 	=============================================================================
 	
+
+{% endraw %}

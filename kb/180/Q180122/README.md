@@ -6,6 +6,8 @@ permalink: /kb/180/Q180122/
 
 ## Q180122: After Changing the Time, Windows NT May Skip a Day
 
+{% raw %}
+
 	Article: Q180122
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -123,3 +125,5 @@ permalink: /kb/180/Q180122/
 	
 	=============================================================================
 	
+
+{% endraw %}

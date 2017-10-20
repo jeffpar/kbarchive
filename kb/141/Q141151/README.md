@@ -6,6 +6,8 @@ permalink: /kb/141/Q141151/
 
 ## Q141151: Streets 4.0: Maps Show Corrupted Phone and Zip Codes
 
+{% raw %}
+
 	Article: Q141151
 	Product(s): Microsoft Automap
 	Version(s): 4.00
@@ -70,3 +72,5 @@ permalink: /kb/141/Q141151/
 	
 	=============================================================================
 	
+
+{% endraw %}

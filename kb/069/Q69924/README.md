@@ -6,6 +6,8 @@ permalink: /kb/069/Q69924/
 
 ## Q69924: MS-DOS 3.3x Extended Partitions Keep Windows from Formatting
 
+{% raw %}
+
 	Article: Q69924
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -82,3 +84,5 @@ permalink: /kb/069/Q69924/
 	
 	=============================================================================
 	
+
+{% endraw %}

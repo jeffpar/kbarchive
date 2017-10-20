@@ -6,6 +6,8 @@ permalink: /kb/151/Q151686/
 
 ## Q151686: FIX: MFC ODBC Dynaset Cannot Update a SQL Server 6.0 View
 
+{% raw %}
+
 	Article: Q151686
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.5,4.0,4.1,4.2
@@ -76,3 +78,5 @@ permalink: /kb/151/Q151686/
 	
 	=============================================================================
 	
+
+{% endraw %}

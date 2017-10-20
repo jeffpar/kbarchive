@@ -6,6 +6,8 @@ permalink: /kb/250/Q250484/
 
 ## Q250484: How to Use the VIA Compact Utility in MMS
 
+{% raw %}
+
 	Article: Q250484
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,2.2
@@ -109,3 +111,5 @@ permalink: /kb/250/Q250484/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159658/
 
 ## Q159658: Mac Encarta 97 Err Msg: Required Files Are Missing...
 
+{% raw %}
+
 	Article: Q159658
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/159/Q159658/
 	
 	=============================================================================
 	
+
+{% endraw %}

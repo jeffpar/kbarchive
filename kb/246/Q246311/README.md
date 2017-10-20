@@ -6,6 +6,8 @@ permalink: /kb/246/Q246311/
 
 ## Q246311: Err Msg: An Error Occurred Getting or Setting a Configuration...
 
+{% raw %}
+
 	Article: Q246311
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -171,3 +173,5 @@ permalink: /kb/246/Q246311/
 	
 	=============================================================================
 	
+
+{% endraw %}

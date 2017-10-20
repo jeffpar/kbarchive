@@ -6,6 +6,8 @@ permalink: /kb/150/Q150946/
 
 ## Q150946: PRB: Setup Hangs While &quot;Updating System Files&quot;
 
+{% raw %}
+
 	Article: Q150946
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -196,3 +198,5 @@ permalink: /kb/150/Q150946/
 	
 	=============================================================================
 	
+
+{% endraw %}

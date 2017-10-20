@@ -6,6 +6,8 @@ permalink: /kb/199/Q199303/
 
 ## Q199303: Explorer Draws Default Icon for Shortcuts over Slow Link
 
+{% raw %}
+
 	Article: Q199303
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/199/Q199303/
 	
 	=============================================================================
 	
+
+{% endraw %}

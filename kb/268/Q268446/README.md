@@ -6,6 +6,8 @@ permalink: /kb/268/Q268446/
 
 ## Q268446: XADM: Random Access Violation in Store.exe (JetMove)
 
+{% raw %}
+
 	Article: Q268446
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -119,3 +121,5 @@ permalink: /kb/268/Q268446/
 	
 	=============================================================================
 	
+
+{% endraw %}

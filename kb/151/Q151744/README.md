@@ -6,6 +6,8 @@ permalink: /kb/151/Q151744/
 
 ## Q151744: Network Client 3.0 with IPX Needs Direct Hosting on Server
 
+{% raw %}
+
 	Article: Q151744
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -62,3 +64,5 @@ permalink: /kb/151/Q151744/
 	
 	=============================================================================
 	
+
+{% endraw %}

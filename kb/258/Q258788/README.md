@@ -6,6 +6,8 @@ permalink: /kb/258/Q258788/
 
 ## Q258788: Cannot Change Password in Windows Without Logging on to Domain
 
+{% raw %}
+
 	Article: Q258788
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; :4.0; winnt:4.0
@@ -99,3 +101,5 @@ permalink: /kb/258/Q258788/
 	
 	=============================================================================
 	
+
+{% endraw %}

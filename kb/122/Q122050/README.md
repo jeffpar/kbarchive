@@ -6,6 +6,8 @@ permalink: /kb/122/Q122050/
 
 ## Q122050: ICM Printers Supported in Windows 95
 
+{% raw %}
+
 	Article: Q122050
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/122/Q122050/
 	
 	=============================================================================
 	
+
+{% endraw %}

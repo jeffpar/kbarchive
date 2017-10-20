@@ -6,6 +6,8 @@ permalink: /kb/100/Q100040/
 
 ## Q100040: PC Forms: Updates to MAPI Visual Basic API
 
+{% raw %}
+
 	Article: Q100040
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -103,3 +105,5 @@ permalink: /kb/100/Q100040/
 	
 	=============================================================================
 	
+
+{% endraw %}

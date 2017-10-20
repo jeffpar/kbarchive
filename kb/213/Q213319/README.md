@@ -6,6 +6,8 @@ permalink: /kb/213/Q213319/
 
 ## Q213319: SMS: Sender Address Properties Box Displays Server As Unknown
 
+{% raw %}
+
 	Article: Q213319
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -70,3 +72,5 @@ permalink: /kb/213/Q213319/
 	
 	=============================================================================
 	
+
+{% endraw %}

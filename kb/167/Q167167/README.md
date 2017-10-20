@@ -6,6 +6,8 @@ permalink: /kb/167/Q167167/
 
 ## Q167167: INFO: Visual Basic 5.0 README.TXT File
 
+{% raw %}
+
 	Article: Q167167
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -528,3 +530,5 @@ permalink: /kb/167/Q167167/
 	
 	=============================================================================
 	
+
+{% endraw %}

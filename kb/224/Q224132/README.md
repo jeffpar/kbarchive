@@ -6,6 +6,8 @@ permalink: /kb/224/Q224132/
 
 ## Q224132: Encarta Encyclopedia 99: Suite Menu Disabled on Home Screen
 
+{% raw %}
+
 	Article: Q224132
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -57,3 +59,5 @@ permalink: /kb/224/Q224132/
 	
 	=============================================================================
 	
+
+{% endraw %}

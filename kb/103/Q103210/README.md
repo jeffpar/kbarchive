@@ -6,6 +6,8 @@ permalink: /kb/103/Q103210/
 
 ## Q103210: Designing DLLs for Multiple Client Applications
 
+{% raw %}
+
 	Article: Q103210
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -62,3 +64,5 @@ permalink: /kb/103/Q103210/
 	
 	=============================================================================
 	
+
+{% endraw %}

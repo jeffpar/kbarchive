@@ -6,6 +6,8 @@ permalink: /kb/048/Q48400/
 
 ## Q48400: Using BASIC to Perform Serial Communications in MS OS/2
 
+{% raw %}
+
 	Article: Q48400
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10
@@ -212,3 +214,5 @@ permalink: /kb/048/Q48400/
 	SUB CloseCom (Handle%)
 	    ReturnErr% = DosClose% (Handle%)
 	END SUB
+
+{% endraw %}

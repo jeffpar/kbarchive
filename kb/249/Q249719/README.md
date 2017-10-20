@@ -6,6 +6,8 @@ permalink: /kb/249/Q249719/
 
 ## Q249719: Error Message: 8447: Internet Server Error
 
+{% raw %}
+
 	Article: Q249719
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -104,3 +106,5 @@ permalink: /kb/249/Q249719/
 	
 	=============================================================================
 	
+
+{% endraw %}

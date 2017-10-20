@@ -6,6 +6,8 @@ permalink: /kb/140/Q140307/
 
 ## Q140307: Mac Encarta: Err Msg &quot;The Correct Fonts Needed...&quot;
 
+{% raw %}
+
 	Article: Q140307
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,1996 edition,1997 edition
@@ -101,3 +103,5 @@ permalink: /kb/140/Q140307/
 	
 	=============================================================================
 	
+
+{% endraw %}

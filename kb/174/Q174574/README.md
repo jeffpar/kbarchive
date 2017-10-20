@@ -6,6 +6,8 @@ permalink: /kb/174/Q174574/
 
 ## Q174574: SMS: Inventory Reports Incorrect Macintosh Processor
 
+{% raw %}
+
 	Article: Q174574
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -50,3 +52,5 @@ permalink: /kb/174/Q174574/
 	
 	=============================================================================
 	
+
+{% endraw %}

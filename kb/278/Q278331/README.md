@@ -6,6 +6,8 @@ permalink: /kb/278/Q278331/
 
 ## Q278331: COMTI: Deallocate Issued to Host for Every COMTI Transaction
 
+{% raw %}
+
 	Article: Q278331
 	Product(s): Microsoft SNA Server
 	Version(s): 1.0,1.0 SP1,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -72,3 +74,5 @@ permalink: /kb/278/Q278331/
 	
 	=============================================================================
 	
+
+{% endraw %}

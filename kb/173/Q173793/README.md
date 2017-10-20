@@ -6,6 +6,8 @@ permalink: /kb/173/Q173793/
 
 ## Q173793: SMS: How to Use System Policies with Program Group Control
 
+{% raw %}
+
 	Article: Q173793
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -85,3 +87,5 @@ permalink: /kb/173/Q173793/
 	
 	=============================================================================
 	
+
+{% endraw %}

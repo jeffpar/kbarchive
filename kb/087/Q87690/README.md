@@ -6,6 +6,8 @@ permalink: /kb/087/Q87690/
 
 ## Q87690: PRB: How to Resolve &quot;Too Many Files Open&quot; Error
 
+{% raw %}
+
 	Article: Q87690
 	Product(s): Microsoft FoxPro
 	Version(s): 2.00 2.50 | 2.50 3.00 5.00
@@ -91,3 +93,5 @@ permalink: /kb/087/Q87690/
 	
 	=============================================================================
 	
+
+{% endraw %}

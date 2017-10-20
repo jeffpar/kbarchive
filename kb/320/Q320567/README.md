@@ -6,6 +6,8 @@ permalink: /kb/320/Q320567/
 
 ## Q320567: Files Corrupted During Installation from Samsung DVD-ROM
 
+{% raw %}
+
 	Article: Q320567
 	Product(s): Microsoft Developer Network
 	Version(s): 
@@ -148,3 +150,5 @@ permalink: /kb/320/Q320567/
 	
 	=============================================================================
 	
+
+{% endraw %}

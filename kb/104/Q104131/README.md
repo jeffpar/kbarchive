@@ -6,6 +6,8 @@ permalink: /kb/104/Q104131/
 
 ## Q104131: PC Win: Err Msg: Some Entries Could Not Be Added to the Group
 
+{% raw %}
+
 	Article: Q104131
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -46,3 +48,5 @@ permalink: /kb/104/Q104131/
 	
 	=============================================================================
 	
+
+{% endraw %}

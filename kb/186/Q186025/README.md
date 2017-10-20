@@ -6,6 +6,8 @@ permalink: /kb/186/Q186025/
 
 ## Q186025: PRB: AGETCLASS() Function may Truncate Fifth Parameter
 
+{% raw %}
+
 	Article: Q186025
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -73,3 +75,5 @@ permalink: /kb/186/Q186025/
 	
 	=============================================================================
 	
+
+{% endraw %}

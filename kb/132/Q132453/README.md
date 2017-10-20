@@ -6,6 +6,8 @@ permalink: /kb/132/Q132453/
 
 ## Q132453: SET Statements in Dosstart.bat File Ignored
 
+{% raw %}
+
 	Article: Q132453
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/132/Q132453/
 	
 	=============================================================================
 	
+
+{% endraw %}

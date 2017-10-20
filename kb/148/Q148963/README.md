@@ -6,6 +6,8 @@ permalink: /kb/148/Q148963/
 
 ## Q148963: XADM: Disabling Message Tracking For One or More Servers
 
+{% raw %}
+
 	Article: Q148963
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -78,3 +80,5 @@ permalink: /kb/148/Q148963/
 	
 	=============================================================================
 	
+
+{% endraw %}

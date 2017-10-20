@@ -6,6 +6,8 @@ permalink: /kb/167/Q167747/
 
 ## Q167747: WD97: IPF Linking Custom Document Property to Empty
 
+{% raw %}
+
 	Article: Q167747
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -81,3 +83,5 @@ permalink: /kb/167/Q167747/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/237/Q237735/
 
 ## Q237735: NFL Fever 2000: Quits Unexpectedly When Play Clock Expires
 
+{% raw %}
+
 	Article: Q237735
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/237/Q237735/
 	
 	=============================================================================
 	
+
+{% endraw %}

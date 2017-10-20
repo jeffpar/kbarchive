@@ -6,6 +6,8 @@ permalink: /kb/031/Q31520/
 
 ## Q31520: MASM 5.10 EXT.DOC: DelStream - Deletes Text Stream from File
 
+{% raw %}
+
 	Article: Q31520
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -32,3 +34,5 @@ permalink: /kb/031/Q31520/
 	PFILE pFile;
 	COL  xStart, xEnd;
 	LINE yStart, yEnd;
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177038/
 
 ## Q177038: Sounds Are Choppy or Not Played in Encarta and My Personal Tutor
 
+{% raw %}
+
 	Article: Q177038
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0; :
@@ -137,3 +139,5 @@ permalink: /kb/177/Q177038/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245252/
 
 ## Q245252: Secondary DNS Server Does Not Obtain Glue Record in Child Domain
 
+{% raw %}
+
 	Article: Q245252
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -85,3 +87,5 @@ permalink: /kb/245/Q245252/
 	
 	=============================================================================
 	
+
+{% endraw %}

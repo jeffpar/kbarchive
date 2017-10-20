@@ -6,6 +6,8 @@ permalink: /kb/265/Q265403/
 
 ## Q265403: XFOR: Outbound X.400 Message Created by CDO May Result in NDR
 
+{% raw %}
+
 	Article: Q265403
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -66,3 +68,5 @@ permalink: /kb/265/Q265403/
 	
 	=============================================================================
 	
+
+{% endraw %}

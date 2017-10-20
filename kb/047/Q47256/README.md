@@ -6,6 +6,8 @@ permalink: /kb/047/Q47256/
 
 ## Q47256: Using Dynamic Scenery in Flight Simulator 4.00
 
+{% raw %}
+
 	Article: Q47256
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -32,3 +34,5 @@ permalink: /kb/047/Q47256/
 	
 	=============================================================================
 	
+
+{% endraw %}

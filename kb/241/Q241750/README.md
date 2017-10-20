@@ -6,6 +6,8 @@ permalink: /kb/241/Q241750/
 
 ## Q241750: BUG: CHtmlView Leaks Memory by Not Releasing BSTRs
 
+{% raw %}
+
 	Article: Q241750
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -274,3 +276,5 @@ permalink: /kb/241/Q241750/
 	
 	=============================================================================
 	
+
+{% endraw %}

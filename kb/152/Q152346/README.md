@@ -6,6 +6,8 @@ permalink: /kb/152/Q152346/
 
 ## Q152346: Some DEC TLZ06 4MM DAT Tape Drives Not Recognized by Windows NT
 
+{% raw %}
+
 	Article: Q152346
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -93,3 +95,5 @@ permalink: /kb/152/Q152346/
 	
 	=============================================================================
 	
+
+{% endraw %}

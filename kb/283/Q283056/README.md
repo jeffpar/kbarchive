@@ -6,6 +6,8 @@ permalink: /kb/283/Q283056/
 
 ## Q283056: Error Message &quot;Unable to Load Your Profile&quot; When You Install SMS
 
+{% raw %}
+
 	Article: Q283056
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,4.0
@@ -163,3 +165,5 @@ permalink: /kb/283/Q283056/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/238/Q238801/
 
 ## Q238801: Setting up Demand-Dial Connections with RRAS Document Available
 
+{% raw %}
+
 	Article: Q238801
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/238/Q238801/
 	
 	=============================================================================
 	
+
+{% endraw %}

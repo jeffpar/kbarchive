@@ -6,6 +6,8 @@ permalink: /kb/120/Q120268/
 
 ## Q120268: Diamond Video Card Settings
 
+{% raw %}
+
 	Article: Q120268
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -78,3 +80,5 @@ permalink: /kb/120/Q120268/
 	
 	=============================================================================
 	
+
+{% endraw %}

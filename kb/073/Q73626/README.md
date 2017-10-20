@@ -6,6 +6,8 @@ permalink: /kb/073/Q73626/
 
 ## Q73626: Adaptec RLL Controller and UMA Address Range
 
+{% raw %}
+
 	Article: Q73626
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -50,3 +52,5 @@ permalink: /kb/073/Q73626/
 	
 	=============================================================================
 	
+
+{% endraw %}

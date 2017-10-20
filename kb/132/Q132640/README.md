@@ -6,6 +6,8 @@ permalink: /kb/132/Q132640/
 
 ## Q132640: Error Message: Rundll32 Caused a GPF in Apmext.dll
 
+{% raw %}
+
 	Article: Q132640
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -62,3 +64,5 @@ permalink: /kb/132/Q132640/
 	
 	=============================================================================
 	
+
+{% endraw %}

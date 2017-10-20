@@ -6,6 +6,8 @@ permalink: /kb/130/Q130319/
 
 ## Q130319: PC DOS Win: Convert.exe Doesn't Work on Windows NT 3.5 Computers
 
+{% raw %}
+
 	Article: Q130319
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -68,3 +70,5 @@ permalink: /kb/130/Q130319/
 	
 	=============================================================================
 	
+
+{% endraw %}

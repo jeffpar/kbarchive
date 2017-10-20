@@ -6,6 +6,8 @@ permalink: /kb/161/Q161947/
 
 ## Q161947: XCON: MTA: Address Space Replication with LOCAL Address Spaces
 
+{% raw %}
+
 	Article: Q161947
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -106,3 +108,5 @@ permalink: /kb/161/Q161947/
 	
 	=============================================================================
 	
+
+{% endraw %}

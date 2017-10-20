@@ -6,6 +6,8 @@ permalink: /kb/236/Q236126/
 
 ## Q236126: HOWTO: Passing Single Quotes in String to SQL Server w/ SQL PT
 
+{% raw %}
+
 	Article: Q236126
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0
@@ -74,3 +76,5 @@ permalink: /kb/236/Q236126/
 	
 	=============================================================================
 	
+
+{% endraw %}

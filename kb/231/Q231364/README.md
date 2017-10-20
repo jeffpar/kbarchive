@@ -6,6 +6,8 @@ permalink: /kb/231/Q231364/
 
 ## Q231364: HOWTO: Install VFP6 Application for All Users on NT 4 Server
 
+{% raw %}
+
 	Article: Q231364
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0; winnt:4.0
@@ -149,3 +151,5 @@ permalink: /kb/231/Q231364/
 	
 	=============================================================================
 	
+
+{% endraw %}

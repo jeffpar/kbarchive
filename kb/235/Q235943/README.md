@@ -6,6 +6,8 @@ permalink: /kb/235/Q235943/
 
 ## Q235943: Doc Err: Updated Version of Content Analyzer Is Available
 
+{% raw %}
+
 	Article: Q235943
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/235/Q235943/
 	
 	=============================================================================
 	
+
+{% endraw %}

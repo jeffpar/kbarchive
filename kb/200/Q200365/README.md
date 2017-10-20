@@ -6,6 +6,8 @@ permalink: /kb/200/Q200365/
 
 ## Q200365: XFOR:Regulating Free/Busy Updates for Selective Custom Recipient
 
+{% raw %}
+
 	Article: Q200365
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -48,3 +50,5 @@ permalink: /kb/200/Q200365/
 	
 	=============================================================================
 	
+
+{% endraw %}

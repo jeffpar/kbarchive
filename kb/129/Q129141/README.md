@@ -6,6 +6,8 @@ permalink: /kb/129/Q129141/
 
 ## Q129141: Available Diagnostics for Digiboard C/CON 16 While Operational
 
+{% raw %}
+
 	Article: Q129141
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.11 3.5 3.51 4.0
@@ -93,3 +95,5 @@ permalink: /kb/129/Q129141/
 	
 	=============================================================================
 	
+
+{% endraw %}

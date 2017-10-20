@@ -6,6 +6,8 @@ permalink: /kb/090/Q90252/
 
 ## Q90252: The Sound Menu Item Dimmed (Unavailable) in Hearts
 
+{% raw %}
+
 	Article: Q90252
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -47,3 +49,5 @@ permalink: /kb/090/Q90252/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173361/
 
 ## Q173361: The MSN Home Page Reloads Continuously When You Connect
 
+{% raw %}
+
 	Article: Q173361
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5,2.51,2.52,2.6
@@ -89,3 +91,5 @@ permalink: /kb/173/Q173361/
 	
 	=============================================================================
 	
+
+{% endraw %}

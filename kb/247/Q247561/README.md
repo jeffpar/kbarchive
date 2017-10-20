@@ -6,6 +6,8 @@ permalink: /kb/247/Q247561/
 
 ## Q247561: How to Edit Index Server Noise-Word Lists
 
+{% raw %}
+
 	Article: Q247561
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0
@@ -76,3 +78,5 @@ permalink: /kb/247/Q247561/
 	
 	=============================================================================
 	
+
+{% endraw %}

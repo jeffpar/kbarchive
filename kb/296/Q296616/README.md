@@ -6,6 +6,8 @@ permalink: /kb/296/Q296616/
 
 ## Q296616: Windows 2000 Professional At a Glance Comments and Corrections
 
+{% raw %}
+
 	Article: Q296616
 	Product(s): Microsoft Press
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/296/Q296616/
 	
 	=============================================================================
 	
+
+{% endraw %}

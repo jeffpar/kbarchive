@@ -6,6 +6,8 @@ permalink: /kb/065/Q65681/
 
 ## Q65681: Windows 3.0 Help Text Is Unreadable on Gas Plasma Displays
 
+{% raw %}
+
 	Article: Q65681
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -64,3 +66,5 @@ permalink: /kb/065/Q65681/
 	
 	=============================================================================
 	
+
+{% endraw %}

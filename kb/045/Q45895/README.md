@@ -6,6 +6,8 @@ permalink: /kb/045/Q45895/
 
 ## Q45895: QuickBASIC 4.50 Conflict with Tornado Notes TSR Software
 
+{% raw %}
+
 	Article: Q45895
 	Product(s): See article
 	Version(s): 4.50
@@ -23,3 +25,5 @@ permalink: /kb/045/Q45895/
 	
 	Microsoft does not support running QuickBASIC with this TSR program
 	and varying problems may occur.
+
+{% endraw %}

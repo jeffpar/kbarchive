@@ -6,6 +6,8 @@ permalink: /kb/157/Q157982/
 
 ## Q157982: INFO: Understanding Promotions
 
+{% raw %}
+
 	Article: Q157982
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -161,3 +163,5 @@ permalink: /kb/157/Q157982/
 	
 	=============================================================================
 	
+
+{% endraw %}

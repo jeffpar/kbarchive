@@ -6,6 +6,8 @@ permalink: /kb/130/Q130354/
 
 ## Q130354: PRB: GRID.COLUMN() Gives &quot;Property COLUMN is not Found&quot; Error
 
+{% raw %}
+
 	Article: Q130354
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -80,3 +82,5 @@ permalink: /kb/130/Q130354/
 	
 	=============================================================================
 	
+
+{% endraw %}

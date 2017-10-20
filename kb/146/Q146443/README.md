@@ -6,6 +6,8 @@ permalink: /kb/146/Q146443/
 
 ## Q146443: PRB: Msmask32.ocx Does Not Work Properly in MFC Containers
 
+{% raw %}
+
 	Article: Q146443
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/146/Q146443/
 	
 	=============================================================================
 	
+
+{% endraw %}

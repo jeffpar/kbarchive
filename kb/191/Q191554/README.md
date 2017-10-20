@@ -6,6 +6,8 @@ permalink: /kb/191/Q191554/
 
 ## Q191554: Err Msg: UA Caused an Invalid Page Fault in Module Unknown
 
+{% raw %}
+
 	Article: Q191554
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -65,3 +67,5 @@ permalink: /kb/191/Q191554/
 	
 	=============================================================================
 	
+
+{% endraw %}

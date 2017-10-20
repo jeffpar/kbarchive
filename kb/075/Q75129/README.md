@@ -6,6 +6,8 @@ permalink: /kb/075/Q75129/
 
 ## Q75129: Stacker Coprocessor Card with MS-DOS 5.0 and EMM386.EXE
 
+{% raw %}
+
 	Article: Q75129
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -72,3 +74,5 @@ permalink: /kb/075/Q75129/
 	
 	=============================================================================
 	
+
+{% endraw %}

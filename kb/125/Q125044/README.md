@@ -6,6 +6,8 @@ permalink: /kb/125/Q125044/
 
 ## Q125044: PRB: SYS(2004) From .EXE Returns .ESL Directory
 
+{% raw %}
+
 	Article: Q125044
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6x,3.0
@@ -84,3 +86,5 @@ permalink: /kb/125/Q125044/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161481/
 
 ## Q161481: XADM: Purpose of Integrity Checker (Isinteg.exe) -PATCH Option
 
+{% raw %}
+
 	Article: Q161481
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -49,3 +51,5 @@ permalink: /kb/161/Q161481/
 	
 	=============================================================================
 	
+
+{% endraw %}

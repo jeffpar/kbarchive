@@ -6,6 +6,8 @@ permalink: /kb/230/Q230168/
 
 ## Q230168: Terminal Server Does Not Support User- Mode Printer Drivers
 
+{% raw %}
+
 	Article: Q230168
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/230/Q230168/
 	
 	=============================================================================
 	
+
+{% endraw %}

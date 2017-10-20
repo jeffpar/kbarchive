@@ -6,6 +6,8 @@ permalink: /kb/150/Q150326/
 
 ## Q150326: Distorted Video With Avance Logic Drivers
 
+{% raw %}
+
 	Article: Q150326
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0; WINDOWS:1.0,1.0a,2.0
@@ -64,3 +66,5 @@ permalink: /kb/150/Q150326/
 	
 	=============================================================================
 	
+
+{% endraw %}

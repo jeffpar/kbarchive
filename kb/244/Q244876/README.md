@@ -6,6 +6,8 @@ permalink: /kb/244/Q244876/
 
 ## Q244876: How to Determine if Windows Is Started in Debug Mode
 
+{% raw %}
+
 	Article: Q244876
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.1,3.5,3.51,4.0
@@ -76,3 +78,5 @@ permalink: /kb/244/Q244876/
 	
 	=============================================================================
 	
+
+{% endraw %}

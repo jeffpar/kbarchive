@@ -6,6 +6,8 @@ permalink: /kb/235/Q235425/
 
 ## Q235425: CreateFile() Can Cause Leak in Paged Pool Memory
 
+{% raw %}
+
 	Article: Q235425
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -97,3 +99,5 @@ permalink: /kb/235/Q235425/
 	
 	=============================================================================
 	
+
+{% endraw %}

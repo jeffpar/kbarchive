@@ -6,6 +6,8 @@ permalink: /kb/275/Q275132/
 
 ## Q275132: SMS: Large Hierarchy Causes High Processor Usage on Central Site
 
+{% raw %}
+
 	Article: Q275132
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -76,3 +78,5 @@ permalink: /kb/275/Q275132/
 	
 	=============================================================================
 	
+
+{% endraw %}

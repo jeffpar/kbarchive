@@ -6,6 +6,8 @@ permalink: /kb/186/Q186101/
 
 ## Q186101: FTP Client Does Not Show the Correct Transfer Size for Files
 
+{% raw %}
+
 	Article: Q186101
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/186/Q186101/
 	
 	=============================================================================
 	
+
+{% endraw %}

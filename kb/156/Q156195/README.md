@@ -6,6 +6,8 @@ permalink: /kb/156/Q156195/
 
 ## Q156195: ADT2: Setup Wizard Fails to Create Disks Compressing Large File
 
+{% raw %}
+
 	Article: Q156195
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -112,3 +114,5 @@ permalink: /kb/156/Q156195/
 	
 	=============================================================================
 	
+
+{% endraw %}

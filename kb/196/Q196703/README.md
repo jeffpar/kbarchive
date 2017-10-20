@@ -6,6 +6,8 @@ permalink: /kb/196/Q196703/
 
 ## Q196703: INFO: Files Installed in WINNT&#92;SYSTEM32 Folder for NT SP3
 
+{% raw %}
+
 	Article: Q196703
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -112,3 +114,5 @@ permalink: /kb/196/Q196703/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/217/Q217134/
 
 ## Q217134: Err Msg: The Application Failed to Initialize Properly
 
+{% raw %}
+
 	Article: Q217134
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -113,3 +115,5 @@ permalink: /kb/217/Q217134/
 	
 	=============================================================================
 	
+
+{% endraw %}

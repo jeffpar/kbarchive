@@ -6,6 +6,8 @@ permalink: /kb/174/Q174847/
 
 ## Q174847: Arcade for the Macintosh Hangs or Quits
 
+{% raw %}
+
 	Article: Q174847
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0
@@ -62,3 +64,5 @@ permalink: /kb/174/Q174847/
 	
 	=============================================================================
 	
+
+{% endraw %}

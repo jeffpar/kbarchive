@@ -6,6 +6,8 @@ permalink: /kb/246/Q246045/
 
 ## Q246045: RFPoison: Denial of Service Attack Causes Access Violation
 
+{% raw %}
+
 	Article: Q246045
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -130,3 +132,5 @@ permalink: /kb/246/Q246045/
 	
 	=============================================================================
 	
+
+{% endraw %}

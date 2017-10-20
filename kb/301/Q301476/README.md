@@ -6,6 +6,8 @@ permalink: /kb/301/Q301476/
 
 ## Q301476: Broadband Advanced Setup
 
+{% raw %}
+
 	Article: Q301476
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -69,3 +71,5 @@ permalink: /kb/301/Q301476/
 	
 	=============================================================================
 	
+
+{% endraw %}

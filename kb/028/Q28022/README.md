@@ -6,6 +6,8 @@ permalink: /kb/028/Q28022/
 
 ## Q28022: Extraneous Error Messages Compiling REMLINE.BAS with BC /E
 
+{% raw %}
+
 	Article: Q28022
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -35,3 +37,5 @@ permalink: /kb/028/Q28022/
 	and 6.00b for MS-DOS and MS OS/2 (buglist6.00, buglist6.00b). This
 	problem was corrected in Microsoft BASIC Professional Development
 	System (PDS) Version 7.00 (fixlist7.00).
+
+{% endraw %}

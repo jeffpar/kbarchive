@@ -6,6 +6,8 @@ permalink: /kb/273/Q273777/
 
 ## Q273777: Logging Fails with Event ID 2 &quot;The Data is the Error&quot;
 
+{% raw %}
+
 	Article: Q273777
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -80,3 +82,5 @@ permalink: /kb/273/Q273777/
 	
 	=============================================================================
 	
+
+{% endraw %}

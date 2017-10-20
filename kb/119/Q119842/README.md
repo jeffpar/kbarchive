@@ -6,6 +6,8 @@ permalink: /kb/119/Q119842/
 
 ## Q119842: PPT: &quot;Server Not Found&quot; Error Editing 3.0 Slide in 4.0
 
+{% raw %}
+
 	Article: Q119842
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -73,3 +75,5 @@ permalink: /kb/119/Q119842/
 	
 	=============================================================================
 	
+
+{% endraw %}

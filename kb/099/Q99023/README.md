@@ -6,6 +6,8 @@ permalink: /kb/099/Q99023/
 
 ## Q99023: PPT: How to Set Object Defaults in PowerPoint 4.0, 7.0
 
+{% raw %}
+
 	Article: Q99023
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,4.0,4.0a,4.0c,7.0
@@ -93,3 +95,5 @@ permalink: /kb/099/Q99023/
 	
 	=============================================================================
 	
+
+{% endraw %}

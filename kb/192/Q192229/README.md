@@ -6,6 +6,8 @@ permalink: /kb/192/Q192229/
 
 ## Q192229: Login Script Group Membership Mapping on BDC Fail If PDC Is Down
 
+{% raw %}
+
 	Article: Q192229
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -57,3 +59,5 @@ permalink: /kb/192/Q192229/
 	
 	=============================================================================
 	
+
+{% endraw %}

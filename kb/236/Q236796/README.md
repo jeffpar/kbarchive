@@ -6,6 +6,8 @@ permalink: /kb/236/Q236796/
 
 ## Q236796: How to Suppress Restart after an Unattended NTOP Installation
 
+{% raw %}
+
 	Article: Q236796
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -39,3 +41,5 @@ permalink: /kb/236/Q236796/
 	
 	=============================================================================
 	
+
+{% endraw %}

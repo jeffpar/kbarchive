@@ -6,6 +6,8 @@ permalink: /kb/160/Q160270/
 
 ## Q160270: XGEN: BackOffice Resource Kit Part One
 
+{% raw %}
+
 	Article: Q160270
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,7.0
@@ -165,3 +167,5 @@ permalink: /kb/160/Q160270/
 	
 	=============================================================================
 	
+
+{% endraw %}

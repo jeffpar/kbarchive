@@ -6,6 +6,8 @@ permalink: /kb/088/Q88158/
 
 ## Q88158: Certus NoVi TSR Hangs in Windows 386 Enhanced Mode
 
+{% raw %}
+
 	Article: Q88158
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/088/Q88158/
 	
 	=============================================================================
 	
+
+{% endraw %}

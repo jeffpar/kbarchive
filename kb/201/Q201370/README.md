@@ -6,6 +6,8 @@ permalink: /kb/201/Q201370/
 
 ## Q201370: XFOR: Notes Advanced Rich Text Not Supported by App Connector
 
+{% raw %}
+
 	Article: Q201370
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -63,3 +65,5 @@ permalink: /kb/201/Q201370/
 	
 	=============================================================================
 	
+
+{% endraw %}

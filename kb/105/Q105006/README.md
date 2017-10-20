@@ -6,6 +6,8 @@ permalink: /kb/105/Q105006/
 
 ## Q105006: How to Use the MsgBox() Function in FOXTOOLS.FLL
 
+{% raw %}
+
 	Article: Q105006
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6x,3.0
@@ -152,3 +154,5 @@ permalink: /kb/105/Q105006/
 	
 	=============================================================================
 	
+
+{% endraw %}

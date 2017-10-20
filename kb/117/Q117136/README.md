@@ -6,6 +6,8 @@ permalink: /kb/117/Q117136/
 
 ## Q117136: Extra Characters in MS-DOS Session with Voice Pilot Active
 
+{% raw %}
+
 	Article: Q117136
 	Product(s): Miscellaneous Windows Products
 	Version(s): 2.0
@@ -79,3 +81,5 @@ permalink: /kb/117/Q117136/
 	
 	=============================================================================
 	
+
+{% endraw %}

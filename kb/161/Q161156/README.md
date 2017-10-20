@@ -6,6 +6,8 @@ permalink: /kb/161/Q161156/
 
 ## Q161156: HOWTO: Create A Default Event for a UserControl
 
+{% raw %}
+
 	Article: Q161156
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/161/Q161156/
 	
 	=============================================================================
 	
+
+{% endraw %}

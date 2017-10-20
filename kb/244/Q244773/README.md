@@ -6,6 +6,8 @@ permalink: /kb/244/Q244773/
 
 ## Q244773: 500-100.asp Returns &quot;Variable is Undefined&quot; Error When Session S
 
+{% raw %}
+
 	Article: Q244773
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -118,3 +120,5 @@ permalink: /kb/244/Q244773/
 	
 	=============================================================================
 	
+
+{% endraw %}

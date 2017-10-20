@@ -6,6 +6,8 @@ permalink: /kb/259/Q259138/
 
 ## Q259138: SMS: How to Specify the Maximum Log File Size on a Client
 
+{% raw %}
+
 	Article: Q259138
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -112,3 +114,5 @@ permalink: /kb/259/Q259138/
 	
 	=============================================================================
 	
+
+{% endraw %}

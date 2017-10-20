@@ -6,6 +6,8 @@ permalink: /kb/157/Q157050/
 
 ## Q157050: PRB: Loops of @..SAY &lt;General field&gt; Causes GPF
 
+{% raw %}
+
 	Article: Q157050
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b 5.00
@@ -90,3 +92,5 @@ permalink: /kb/157/Q157050/
 	
 	=============================================================================
 	
+
+{% endraw %}

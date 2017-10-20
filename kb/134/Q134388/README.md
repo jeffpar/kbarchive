@@ -6,6 +6,8 @@ permalink: /kb/134/Q134388/
 
 ## Q134388: Disk Administrator Does Not Appear When Run For The First Time
 
+{% raw %}
+
 	Article: Q134388
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/134/Q134388/
 	
 	=============================================================================
 	
+
+{% endraw %}

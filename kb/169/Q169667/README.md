@@ -6,6 +6,8 @@ permalink: /kb/169/Q169667/
 
 ## Q169667: XCON: X.25 Support for Cirel Cards
 
+{% raw %}
+
 	Article: Q169667
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -76,3 +78,5 @@ permalink: /kb/169/Q169667/
 	
 	=============================================================================
 	
+
+{% endraw %}

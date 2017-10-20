@@ -6,6 +6,8 @@ permalink: /kb/038/Q38296/
 
 ## Q38296: How the Null Character Is Handled by Printf Functions.
 
+{% raw %}
+
 	Article: Q38296
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10 | 4.00 5.00 5.10
@@ -43,3 +45,5 @@ permalink: /kb/038/Q38296/
 	
 	Before,,After
 	Before,
+
+{% endraw %}

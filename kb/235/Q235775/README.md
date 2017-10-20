@@ -6,6 +6,8 @@ permalink: /kb/235/Q235775/
 
 ## Q235775: SMS: Network Discovery Using SNMP May Fail to Discover Device
 
+{% raw %}
+
 	Article: Q235775
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -73,3 +75,5 @@ permalink: /kb/235/Q235775/
 	
 	=============================================================================
 	
+
+{% endraw %}

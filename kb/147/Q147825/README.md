@@ -6,6 +6,8 @@ permalink: /kb/147/Q147825/
 
 ## Q147825: RAS Server Does Not Autodisconnect If NetBIOS Gateway Disabled
 
+{% raw %}
+
 	Article: Q147825
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -80,3 +82,5 @@ permalink: /kb/147/Q147825/
 	
 	=============================================================================
 	
+
+{% endraw %}

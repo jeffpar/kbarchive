@@ -6,6 +6,8 @@ permalink: /kb/264/Q264703/
 
 ## Q264703: SMS:Queries Missing During Collection Creation
 
+{% raw %}
+
 	Article: Q264703
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -50,3 +52,5 @@ permalink: /kb/264/Q264703/
 	
 	=============================================================================
 	
+
+{% endraw %}

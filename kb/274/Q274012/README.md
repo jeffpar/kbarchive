@@ -6,6 +6,8 @@ permalink: /kb/274/Q274012/
 
 ## Q274012: FIX: std::wofstream Can't Output After DBCS Character Is Output
 
+{% raw %}
+
 	Article: Q274012
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -79,3 +81,5 @@ permalink: /kb/274/Q274012/
 	
 	=============================================================================
 	
+
+{% endraw %}

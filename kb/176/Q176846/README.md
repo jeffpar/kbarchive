@@ -6,6 +6,8 @@ permalink: /kb/176/Q176846/
 
 ## Q176846: Encarta Encyclopedia Does Not Recognize the Second CD-ROM
 
+{% raw %}
+
 	Article: Q176846
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -52,3 +54,5 @@ permalink: /kb/176/Q176846/
 	
 	=============================================================================
 	
+
+{% endraw %}

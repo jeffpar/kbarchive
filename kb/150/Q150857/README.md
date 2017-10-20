@@ -6,6 +6,8 @@ permalink: /kb/150/Q150857/
 
 ## Q150857: No Sound Playing Audio CDs with Philips CD-ROM Drive
 
+{% raw %}
+
 	Article: Q150857
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -44,3 +46,5 @@ permalink: /kb/150/Q150857/
 	
 	=============================================================================
 	
+
+{% endraw %}

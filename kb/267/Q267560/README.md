@@ -6,6 +6,8 @@ permalink: /kb/267/Q267560/
 
 ## Q267560: Changing the URL May Expose Contents of a File
 
+{% raw %}
+
 	Article: Q267560
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -252,3 +254,5 @@ permalink: /kb/267/Q267560/
 	
 	=============================================================================
 	
+
+{% endraw %}

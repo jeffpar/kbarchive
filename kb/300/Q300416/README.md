@@ -6,6 +6,8 @@ permalink: /kb/300/Q300416/
 
 ## Q300416: Netscape Navigator Browsers Display a &quot;404 Page Not Found&quot; Error
 
+{% raw %}
+
 	Article: Q300416
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -51,3 +53,5 @@ permalink: /kb/300/Q300416/
 	
 	=============================================================================
 	
+
+{% endraw %}

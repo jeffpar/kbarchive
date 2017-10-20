@@ -6,6 +6,8 @@ permalink: /kb/250/Q250577/
 
 ## Q250577: HOWTO: Use Picture Box in UserControl and DataRepeater
 
+{% raw %}
+
 	Article: Q250577
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:2.1,2.1 SP1,2.1 SP2,2.5,2.6,6.0,6.0 SP3
@@ -313,3 +315,5 @@ permalink: /kb/250/Q250577/
 	
 	=============================================================================
 	
+
+{% endraw %}

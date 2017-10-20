@@ -6,6 +6,8 @@ permalink: /kb/231/Q231250/
 
 ## Q231250: SMS: Deleting Collection Fails, Connection Status Remains Busy
 
+{% raw %}
+
 	Article: Q231250
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -98,3 +100,5 @@ permalink: /kb/231/Q231250/
 	
 	=============================================================================
 	
+
+{% endraw %}

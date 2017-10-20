@@ -6,6 +6,8 @@ permalink: /kb/127/Q127951/
 
 ## Q127951: Mac Adm: CNU Names on Gateway Recipients Screen
 
+{% raw %}
+
 	Article: Q127951
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -49,3 +51,5 @@ permalink: /kb/127/Q127951/
 	
 	=============================================================================
 	
+
+{% endraw %}

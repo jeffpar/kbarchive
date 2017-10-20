@@ -6,6 +6,8 @@ permalink: /kb/228/Q228758/
 
 ## Q228758: Office 97 Small Business Edition Starts Here States Publisher 97
 
+{% raw %}
+
 	Article: Q228758
 	Product(s): Microsoft Press
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/228/Q228758/
 	
 	=============================================================================
 	
+
+{% endraw %}

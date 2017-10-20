@@ -6,6 +6,8 @@ permalink: /kb/159/Q159590/
 
 ## Q159590: HOWTO: Connect to SQL Server Using a Trusted Connection in VFP
 
+{% raw %}
+
 	Article: Q159590
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,2.6,3.0,3.0b,5.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/159/Q159590/
 	
 	=============================================================================
 	
+
+{% endraw %}

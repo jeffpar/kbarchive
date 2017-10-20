@@ -6,6 +6,8 @@ permalink: /kb/030/Q30785/
 
 ## Q30785: MASM 5.10 MIXED.DOC: Macros Supported in MIXED.INC
 
+{% raw %}
+
 	Article: Q30785
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -79,3 +81,5 @@ permalink: /kb/030/Q30785/
 	   mov     bx,arg1
 	
 	in small and medium models.
+
+{% endraw %}

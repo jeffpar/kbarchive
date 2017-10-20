@@ -6,6 +6,8 @@ permalink: /kb/170/Q170463/
 
 ## Q170463: WD97: Photo Editor Appears to Hang on Low-Memory Computer
 
+{% raw %}
+
 	Article: Q170463
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -75,3 +77,5 @@ permalink: /kb/170/Q170463/
 	
 	=============================================================================
 	
+
+{% endraw %}

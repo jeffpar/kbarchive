@@ -6,6 +6,8 @@ permalink: /kb/085/Q85738/
 
 ## Q85738: Windows 3.1 EPS Files Do Not Include TIFF Preview
 
+{% raw %}
+
 	Article: Q85738
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -83,3 +85,5 @@ permalink: /kb/085/Q85738/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/062/Q62172/
 
 ## Q62172: Mac Hyp: Setting the Message Subject
 
+{% raw %}
+
 	Article: Q62172
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -47,3 +49,5 @@ permalink: /kb/062/Q62172/
 	
 	=============================================================================
 	
+
+{% endraw %}

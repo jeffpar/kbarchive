@@ -6,6 +6,8 @@ permalink: /kb/184/Q184742/
 
 ## Q184742: HOWTO: Use the Script Control Error Object
 
+{% raw %}
+
 	Article: Q184742
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -168,3 +170,5 @@ permalink: /kb/184/Q184742/
 	
 	=============================================================================
 	
+
+{% endraw %}

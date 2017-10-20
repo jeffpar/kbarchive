@@ -6,6 +6,8 @@ permalink: /kb/159/Q159206/
 
 ## Q159206: Reactivation of Paused Print Queues Deletes Print Jobs
 
+{% raw %}
+
 	Article: Q159206
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0.
@@ -56,3 +58,5 @@ permalink: /kb/159/Q159206/
 	
 	=============================================================================
 	
+
+{% endraw %}

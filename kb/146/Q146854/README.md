@@ -6,6 +6,8 @@ permalink: /kb/146/Q146854/
 
 ## Q146854: XCLN: Viewing Message Properties Prompts to Save Changes
 
+{% raw %}
+
 	Article: Q146854
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -46,3 +48,5 @@ permalink: /kb/146/Q146854/
 	
 	=============================================================================
 	
+
+{% endraw %}

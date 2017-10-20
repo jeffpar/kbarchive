@@ -6,6 +6,8 @@ permalink: /kb/158/Q158695/
 
 ## Q158695: WD97: How to Use the Name...As Statement to Rename Files
 
+{% raw %}
+
 	Article: Q158695
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/158/Q158695/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82035/
 
 ## Q82035: Popup Window Utility Inactive on Toshiba Laptops
 
+{% raw %}
+
 	Article: Q82035
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/082/Q82035/
 	
 	=============================================================================
 	
+
+{% endraw %}

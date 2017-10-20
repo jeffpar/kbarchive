@@ -6,6 +6,8 @@ permalink: /kb/240/Q240840/
 
 ## Q240840: Operator Started CPIC/APPC Application May Cause Events 60 and 7
 
+{% raw %}
+
 	Article: Q240840
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP2
@@ -84,3 +86,5 @@ permalink: /kb/240/Q240840/
 	
 	=============================================================================
 	
+
+{% endraw %}

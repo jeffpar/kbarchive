@@ -6,6 +6,8 @@ permalink: /kb/164/Q164438/
 
 ## Q164438: FPNW Print Jobs Do Not Print or Errors Occur in FPNW Interface
 
+{% raw %}
+
 	Article: Q164438
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -212,3 +214,5 @@ permalink: /kb/164/Q164438/
 	
 	=============================================================================
 	
+
+{% endraw %}

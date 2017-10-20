@@ -6,6 +6,8 @@ permalink: /kb/145/Q145800/
 
 ## Q145800: Pregnancy: &quot;Find&quot; Tips and Tricks
 
+{% raw %}
+
 	Article: Q145800
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -125,3 +127,5 @@ permalink: /kb/145/Q145800/
 	
 	=============================================================================
 	
+
+{% endraw %}

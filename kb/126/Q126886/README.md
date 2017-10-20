@@ -6,6 +6,8 @@ permalink: /kb/126/Q126886/
 
 ## Q126886: PC MAPI: IPC Messages Not Supported w/ Common Mail Calls (CMC)
 
+{% raw %}
+
 	Article: Q126886
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -49,3 +51,5 @@ permalink: /kb/126/Q126886/
 	
 	=============================================================================
 	
+
+{% endraw %}

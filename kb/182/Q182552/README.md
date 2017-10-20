@@ -6,6 +6,8 @@ permalink: /kb/182/Q182552/
 
 ## Q182552: XADM: Exporting Secondary Windows NT Accounts
 
+{% raw %}
+
 	Article: Q182552
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -63,3 +65,5 @@ permalink: /kb/182/Q182552/
 	
 	=============================================================================
 	
+
+{% endraw %}

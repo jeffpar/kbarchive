@@ -6,6 +6,8 @@ permalink: /kb/198/Q198537/
 
 ## Q198537: BUG: &quot;Sorry! An error occurred when generating the object.&quot;
 
+{% raw %}
+
 	Article: Q198537
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -110,3 +112,5 @@ permalink: /kb/198/Q198537/
 	
 	=============================================================================
 	
+
+{% endraw %}

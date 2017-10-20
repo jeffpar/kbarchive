@@ -6,6 +6,8 @@ permalink: /kb/299/Q299813/
 
 ## Q299813: Train Simulator: How to Find the Product ID
 
+{% raw %}
+
 	Article: Q299813
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -47,3 +49,5 @@ permalink: /kb/299/Q299813/
 	
 	=============================================================================
 	
+
+{% endraw %}

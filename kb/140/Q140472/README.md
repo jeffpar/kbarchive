@@ -6,6 +6,8 @@ permalink: /kb/140/Q140472/
 
 ## Q140472: PRB: Limited Virtual Memory Error When Starting Windows NT
 
+{% raw %}
+
 	Article: Q140472
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.1,3.5,3.51,4.0
@@ -120,3 +122,5 @@ permalink: /kb/140/Q140472/
 	
 	=============================================================================
 	
+
+{% endraw %}

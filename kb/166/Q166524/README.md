@@ -6,6 +6,8 @@ permalink: /kb/166/Q166524/
 
 ## Q166524: XADM: Offline Defrag Fails with Error -1605
 
+{% raw %}
+
 	Article: Q166524
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -57,3 +59,5 @@ permalink: /kb/166/Q166524/
 	
 	=============================================================================
 	
+
+{% endraw %}

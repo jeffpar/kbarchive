@@ -6,6 +6,8 @@ permalink: /kb/217/Q217010/
 
 ## Q217010: Terminal Server May Be Unable to Start 16-bit DCOM Server
 
+{% raw %}
+
 	Article: Q217010
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/217/Q217010/
 	
 	=============================================================================
 	
+
+{% endraw %}

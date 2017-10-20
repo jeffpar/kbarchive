@@ -6,6 +6,8 @@ permalink: /kb/159/Q159308/
 
 ## Q159308: XFOR: DirSync Names Disappearing
 
+{% raw %}
+
 	Article: Q159308
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -98,3 +100,5 @@ permalink: /kb/159/Q159308/
 	
 	=============================================================================
 	
+
+{% endraw %}

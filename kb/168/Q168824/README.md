@@ -6,6 +6,8 @@ permalink: /kb/168/Q168824/
 
 ## Q168824: FIX: Setting ComboBox Control Text in Click Event Wipes Out Text
 
+{% raw %}
+
 	Article: Q168824
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -148,3 +150,5 @@ permalink: /kb/168/Q168824/
 	
 	=============================================================================
 	
+
+{% endraw %}

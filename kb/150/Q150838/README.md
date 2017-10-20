@@ -6,6 +6,8 @@ permalink: /kb/150/Q150838/
 
 ## Q150838: NWLNKSPX May Reset Connection With Out-Of-Sequence Packet
 
+{% raw %}
+
 	Article: Q150838
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -68,3 +70,5 @@ permalink: /kb/150/Q150838/
 	
 	=============================================================================
 	
+
+{% endraw %}

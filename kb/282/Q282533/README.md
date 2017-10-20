@@ -6,6 +6,8 @@ permalink: /kb/282/Q282533/
 
 ## Q282533: XADM: Exchange Server 5.5 Post-SP4 Information Store Fixes
 
+{% raw %}
+
 	Article: Q282533
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -175,3 +177,5 @@ permalink: /kb/282/Q282533/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169679/
 
 ## Q169679: XADM: Messages Sent with MIME/JIS Encoding May Not Be Readable
 
+{% raw %}
+
 	Article: Q169679
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -63,3 +65,5 @@ permalink: /kb/169/Q169679/
 	
 	=============================================================================
 	
+
+{% endraw %}

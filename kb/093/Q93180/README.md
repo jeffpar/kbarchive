@@ -6,6 +6,8 @@ permalink: /kb/093/Q93180/
 
 ## Q93180: HPPCL5A.DRV: Different Settings and Ports, Same Output
 
+{% raw %}
+
 	Article: Q93180
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -74,3 +76,5 @@ permalink: /kb/093/Q93180/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/031/Q31486/
 
 ## Q31486: NOSOFTCR Parameter in TOOLS.INI Disables Auto Indentation
 
+{% raw %}
+
 	Article: Q31486
 	Product(s): See article
 	Version(s): 1.00
@@ -20,3 +22,5 @@ permalink: /kb/031/Q31486/
 	follows:
 	
 	   nosoftcr:
+
+{% endraw %}

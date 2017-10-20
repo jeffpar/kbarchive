@@ -6,6 +6,8 @@ permalink: /kb/138/Q138482/
 
 ## Q138482: Windows NT Telnet Client Does Not Support SNA Server TN3270
 
+{% raw %}
+
 	Article: Q138482
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0,4.0
@@ -102,3 +104,5 @@ permalink: /kb/138/Q138482/
 	
 	=============================================================================
 	
+
+{% endraw %}

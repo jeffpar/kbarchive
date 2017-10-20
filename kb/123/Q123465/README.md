@@ -6,6 +6,8 @@ permalink: /kb/123/Q123465/
 
 ## Q123465: PRB: Cannot View Unicode Strings in the Watch Window
 
+{% raw %}
+
 	Article: Q123465
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -77,3 +79,5 @@ permalink: /kb/123/Q123465/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/036/Q36570/
 
 ## Q36570: Percent (%) Character in Filenames
 
+{% raw %}
+
 	Article: Q36570
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -32,3 +34,5 @@ permalink: /kb/036/Q36570/
 	Both of the above problems only occur when a percent sign is used as
 	the first character in the filename. To work around this problem, do
 	not use the percent sign as the first character.
+
+{% endraw %}

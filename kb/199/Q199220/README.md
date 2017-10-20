@@ -6,6 +6,8 @@ permalink: /kb/199/Q199220/
 
 ## Q199220: Err Msg: The System Cannot Find the Path Specified
 
+{% raw %}
+
 	Article: Q199220
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -45,3 +47,5 @@ permalink: /kb/199/Q199220/
 	
 	=============================================================================
 	
+
+{% endraw %}

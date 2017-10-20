@@ -6,6 +6,8 @@ permalink: /kb/139/Q139423/
 
 ## Q139423: Downstream Connection Should Default to Incoming Calls
 
+{% raw %}
+
 	Article: Q139423
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -57,3 +59,5 @@ permalink: /kb/139/Q139423/
 	
 	=============================================================================
 	
+
+{% endraw %}

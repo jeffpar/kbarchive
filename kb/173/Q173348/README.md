@@ -6,6 +6,8 @@ permalink: /kb/173/Q173348/
 
 ## Q173348: PRB: ActiveControl Set to &quot;Nothing&quot; on Disabled Form
 
+{% raw %}
+
 	Article: Q173348
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -120,3 +122,5 @@ permalink: /kb/173/Q173348/
 	
 	=============================================================================
 	
+
+{% endraw %}

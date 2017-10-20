@@ -6,6 +6,8 @@ permalink: /kb/149/Q149986/
 
 ## Q149986: Creating a .SCD File for an Existing Profile
 
+{% raw %}
+
 	Article: Q149986
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -58,3 +60,5 @@ permalink: /kb/149/Q149986/
 	
 	=============================================================================
 	
+
+{% endraw %}

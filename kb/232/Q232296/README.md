@@ -6,6 +6,8 @@ permalink: /kb/232/Q232296/
 
 ## Q232296: HOWTO: Return a Collection from Visual Basic to an ASP Page
 
+{% raw %}
+
 	Article: Q232296
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0; winnt:
@@ -110,3 +112,5 @@ permalink: /kb/232/Q232296/
 	
 	=============================================================================
 	
+
+{% endraw %}

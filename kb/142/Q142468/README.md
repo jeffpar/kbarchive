@@ -6,6 +6,8 @@ permalink: /kb/142/Q142468/
 
 ## Q142468: FIX: Adding Subitems To Hidden ListView Causes APP Error
 
+{% raw %}
+
 	Article: Q142468
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -135,3 +137,5 @@ permalink: /kb/142/Q142468/
 	
 	=============================================================================
 	
+
+{% endraw %}

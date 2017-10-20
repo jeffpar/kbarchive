@@ -6,6 +6,8 @@ permalink: /kb/077/Q77051/
 
 ## Q77051: Recorder Err Msg: Recorder Playback Aborted
 
+{% raw %}
+
 	Article: Q77051
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/077/Q77051/
 	
 	=============================================================================
 	
+
+{% endraw %}

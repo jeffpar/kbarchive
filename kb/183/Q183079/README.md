@@ -6,6 +6,8 @@ permalink: /kb/183/Q183079/
 
 ## Q183079: WD97: Graphics Not Displayed in Binder
 
+{% raw %}
+
 	Article: Q183079
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -58,3 +60,5 @@ permalink: /kb/183/Q183079/
 	
 	=============================================================================
 	
+
+{% endraw %}

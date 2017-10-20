@@ -6,6 +6,8 @@ permalink: /kb/300/Q300204/
 
 ## Q300204: XFOR: Messages Sent Through cc:Mail Connector Are White and Blue
 
+{% raw %}
+
 	Article: Q300204
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -50,3 +52,5 @@ permalink: /kb/300/Q300204/
 	
 	=============================================================================
 	
+
+{% endraw %}

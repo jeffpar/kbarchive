@@ -6,6 +6,8 @@ permalink: /kb/171/Q171325/
 
 ## Q171325: Incorrect Icons Displayed for .ico Files
 
+{% raw %}
+
 	Article: Q171325
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:4.0,95
@@ -117,3 +119,5 @@ permalink: /kb/171/Q171325/
 	
 	=============================================================================
 	
+
+{% endraw %}

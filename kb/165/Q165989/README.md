@@ -6,6 +6,8 @@ permalink: /kb/165/Q165989/
 
 ## Q165989: GetPeerName() Returns WSAENOTCONN After Select() Returns Success
 
+{% raw %}
+
 	Article: Q165989
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/165/Q165989/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/038/Q38964/
 
 ## Q38964: QuickBASIC 4.50 Incompatible with Sperry 8086 PC with IBM CGA
 
+{% raw %}
+
 	Article: Q38964
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -27,3 +29,5 @@ permalink: /kb/038/Q38964/
 	has not been tested on a Sperry PC with an installed Hercules card,
 	and therefore, you may experience QuickBASIC 4.50 compatibility
 	problems.
+
+{% endraw %}

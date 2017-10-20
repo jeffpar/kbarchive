@@ -6,6 +6,8 @@ permalink: /kb/074/Q74696/
 
 ## Q74696: Using Memory Below 1 Megabyte
 
+{% raw %}
+
 	Article: Q74696
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -98,3 +100,5 @@ permalink: /kb/074/Q74696/
 	
 	=============================================================================
 	
+
+{% endraw %}

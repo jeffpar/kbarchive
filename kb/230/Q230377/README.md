@@ -6,6 +6,8 @@ permalink: /kb/230/Q230377/
 
 ## Q230377: BUG: Find/Replace ASSERT in MDI App w/ CRichEditView-based Views
 
+{% raw %}
+
 	Article: Q230377
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -192,3 +194,5 @@ permalink: /kb/230/Q230377/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/229/Q229612/
 
 ## Q229612: SAMPLE: Mfceqaado.exe Shows How to Use English Query w/MFC &amp; ADO
 
+{% raw %}
+
 	Article: Q229612
 	Product(s): Microsoft C Compiler
 	Version(s): 2.1,2.5,2.6,6.0,7.0
@@ -137,3 +139,5 @@ permalink: /kb/229/Q229612/
 	
 	=============================================================================
 	
+
+{% endraw %}

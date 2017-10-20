@@ -6,6 +6,8 @@ permalink: /kb/152/Q152194/
 
 ## Q152194: Stop 0x0A When NWNBLNK Accesses Memory in Free Pool
 
+{% raw %}
+
 	Article: Q152194
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -75,3 +77,5 @@ permalink: /kb/152/Q152194/
 	
 	=============================================================================
 	
+
+{% endraw %}

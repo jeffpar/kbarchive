@@ -6,6 +6,8 @@ permalink: /kb/291/Q291953/
 
 ## Q291953: BUG: Visual C++  6.0 May Stop Responding in Devedit.pkg
 
+{% raw %}
+
 	Article: Q291953
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -78,3 +80,5 @@ permalink: /kb/291/Q291953/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/032/Q32730/
 
 ## Q32730: Use Logical AND to Determine Which Bits Are Set in an Integer
 
+{% raw %}
+
 	Article: Q32730
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,3.20,3.20 and later,4.0,4.0b,4.5,7.0,7.1
@@ -68,3 +70,5 @@ permalink: /kb/032/Q32730/
 	
 	=============================================================================
 	
+
+{% endraw %}

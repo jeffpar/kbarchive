@@ -6,6 +6,8 @@ permalink: /kb/259/Q259210/
 
 ## Q259210: Puzzle Collection: Setup Starts and Quits Immediately
 
+{% raw %}
+
 	Article: Q259210
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -75,3 +77,5 @@ permalink: /kb/259/Q259210/
 	
 	=============================================================================
 	
+
+{% endraw %}

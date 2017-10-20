@@ -6,6 +6,8 @@ permalink: /kb/131/Q131735/
 
 ## Q131735: How to Create Windows NT Boot Floppy Disks
 
+{% raw %}
+
 	Article: Q131735
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0,4.0 SP4,4.0 SP5
@@ -71,3 +73,5 @@ permalink: /kb/131/Q131735/
 	
 	=============================================================================
 	
+
+{% endraw %}

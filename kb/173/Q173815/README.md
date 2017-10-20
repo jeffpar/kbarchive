@@ -6,6 +6,8 @@ permalink: /kb/173/Q173815/
 
 ## Q173815: Open File Is Slow When Using Novell IntranetWare Client
 
+{% raw %}
+
 	Article: Q173815
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -57,3 +59,5 @@ permalink: /kb/173/Q173815/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216651/
 
 ## Q216651: Characters Are Faint When Printing to an HP LaserJet Printer
 
+{% raw %}
+
 	Article: Q216651
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
@@ -64,3 +66,5 @@ permalink: /kb/216/Q216651/
 	
 	=============================================================================
 	
+
+{% endraw %}

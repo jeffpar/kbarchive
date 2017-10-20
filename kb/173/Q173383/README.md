@@ -6,6 +6,8 @@ permalink: /kb/173/Q173383/
 
 ## Q173383: XCLN: New Mail Notification To &quot;Play a Sound&quot; Does Not Work
 
+{% raw %}
+
 	Article: Q173383
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -114,3 +116,5 @@ permalink: /kb/173/Q173383/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198683/
 
 ## Q198683: Err Msg: The Security Library Has Encountered an Improperly...
 
+{% raw %}
+
 	Article: Q198683
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,3.0,4.0
@@ -68,3 +70,5 @@ permalink: /kb/198/Q198683/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130346/
 
 ## Q130346: How to Manipulate DateTime Fields in a Browse
 
+{% raw %}
+
 	Article: Q130346
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -80,3 +82,5 @@ permalink: /kb/130/Q130346/
 	
 	=============================================================================
 	
+
+{% endraw %}

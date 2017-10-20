@@ -6,6 +6,8 @@ permalink: /kb/161/Q161896/
 
 ## Q161896: DOC: Unresolved External with &quot;Ignore all Default Libraries&quot;
 
+{% raw %}
+
 	Article: Q161896
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -43,3 +45,5 @@ permalink: /kb/161/Q161896/
 	
 	=============================================================================
 	
+
+{% endraw %}

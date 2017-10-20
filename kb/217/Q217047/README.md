@@ -6,6 +6,8 @@ permalink: /kb/217/Q217047/
 
 ## Q217047: PRB: CD Key Invalid for Visual Basic 6.0 Deluxe Learning Edition
 
+{% raw %}
+
 	Article: Q217047
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -77,3 +79,5 @@ permalink: /kb/217/Q217047/
 	
 	=============================================================================
 	
+
+{% endraw %}

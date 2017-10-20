@@ -6,6 +6,8 @@ permalink: /kb/263/Q263700/
 
 ## Q263700: SMS: APM Can't Start Dep Program If 1st Prog Returns Non-Zero
 
+{% raw %}
+
 	Article: Q263700
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,2.0,2.0 SP1
@@ -113,3 +115,5 @@ permalink: /kb/263/Q263700/
 	
 	=============================================================================
 	
+
+{% endraw %}

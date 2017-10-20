@@ -6,6 +6,8 @@ permalink: /kb/071/Q71632/
 
 ## Q71632: Programs to Turn NUM LOCK On and Off
 
+{% raw %}
+
 	Article: Q71632
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.x
@@ -92,3 +94,5 @@ permalink: /kb/071/Q71632/
 	
 	=============================================================================
 	
+
+{% endraw %}

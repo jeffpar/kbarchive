@@ -6,6 +6,8 @@ permalink: /kb/177/Q177845/
 
 ## Q177845: Protect It!: Error Message When You Start Windows
 
+{% raw %}
+
 	Article: Q177845
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -84,3 +86,5 @@ permalink: /kb/177/Q177845/
 	
 	=============================================================================
 	
+
+{% endraw %}

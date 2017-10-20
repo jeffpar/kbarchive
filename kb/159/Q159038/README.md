@@ -6,6 +6,8 @@ permalink: /kb/159/Q159038/
 
 ## Q159038: P6 BIOS Must Configure Devices Behind PCI-to-PCI Bridge
 
+{% raw %}
+
 	Article: Q159038
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -55,3 +57,5 @@ permalink: /kb/159/Q159038/
 	
 	=============================================================================
 	
+
+{% endraw %}

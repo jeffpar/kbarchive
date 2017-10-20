@@ -6,6 +6,8 @@ permalink: /kb/193/Q193783/
 
 ## Q193783: HOWTO: Use the _ShortCutMenu Foundation Class
 
+{% raw %}
+
 	Article: Q193783
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -97,3 +99,5 @@ permalink: /kb/193/Q193783/
 	
 	=============================================================================
 	
+
+{% endraw %}

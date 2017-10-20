@@ -6,6 +6,8 @@ permalink: /kb/226/Q226897/
 
 ## Q226897: SMS: Duplicate COMM &amp; SPEC Caused by Failed Child Attachment
 
+{% raw %}
+
 	Article: Q226897
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -60,3 +62,5 @@ permalink: /kb/226/Q226897/
 	
 	=============================================================================
 	
+
+{% endraw %}

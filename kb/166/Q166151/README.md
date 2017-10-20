@@ -6,6 +6,8 @@ permalink: /kb/166/Q166151/
 
 ## Q166151: Numpad Decimal Key Inputs a Decimal Instead of Comma
 
+{% raw %}
+
 	Article: Q166151
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/166/Q166151/
 	
 	=============================================================================
 	
+
+{% endraw %}

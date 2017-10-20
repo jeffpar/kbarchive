@@ -6,6 +6,8 @@ permalink: /kb/078/Q78393/
 
 ## Q78393: FIX: MASM 6.0 Always Uses EAX Register with BSWAP
 
+{% raw %}
+
 	Article: Q78393
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -83,3 +85,5 @@ permalink: /kb/078/Q78393/
 	
 	=============================================================================
 	
+
+{% endraw %}

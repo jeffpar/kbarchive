@@ -6,6 +6,8 @@ permalink: /kb/160/Q160697/
 
 ## Q160697: WD97: Macro Name Truncated in Customize Dialog Box
 
+{% raw %}
+
 	Article: Q160697
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/160/Q160697/
 	
 	=============================================================================
 	
+
+{% endraw %}

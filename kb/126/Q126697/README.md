@@ -6,6 +6,8 @@ permalink: /kb/126/Q126697/
 
 ## Q126697: Err Msg: ERROR 3649: The IFSHLP.SYS Driver Is Not Installed
 
+{% raw %}
+
 	Article: Q126697
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -68,3 +70,5 @@ permalink: /kb/126/Q126697/
 	
 	=============================================================================
 	
+
+{% endraw %}

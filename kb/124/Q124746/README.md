@@ -6,6 +6,8 @@ permalink: /kb/124/Q124746/
 
 ## Q124746: MHS: Err Msg: Invalid Address
 
+{% raw %}
+
 	Article: Q124746
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -85,3 +87,5 @@ permalink: /kb/124/Q124746/
 	
 	=============================================================================
 	
+
+{% endraw %}

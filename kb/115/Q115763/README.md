@@ -6,6 +6,8 @@ permalink: /kb/115/Q115763/
 
 ## Q115763: VFW v1.1 DK &quot;ICM_DRAW_START_PLAY&quot; Message
 
+{% raw %}
+
 	Article: Q115763
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 1.1
@@ -61,3 +63,5 @@ permalink: /kb/115/Q115763/
 	
 	=============================================================================
 	
+
+{% endraw %}

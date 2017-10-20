@@ -6,6 +6,8 @@ permalink: /kb/139/Q139872/
 
 ## Q139872: PRB: &quot;Expand is not an array&quot; Error When Using Outline Control
 
+{% raw %}
+
 	Article: Q139872
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -102,3 +104,5 @@ permalink: /kb/139/Q139872/
 	
 	=============================================================================
 	
+
+{% endraw %}

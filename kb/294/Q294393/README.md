@@ -6,6 +6,8 @@ permalink: /kb/294/Q294393/
 
 ## Q294393: Error &quot;No LU in LU Group Free&quot; Occurs When Starting 3270 Applet
 
+{% raw %}
+
 	Article: Q294393
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -79,3 +81,5 @@ permalink: /kb/294/Q294393/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/324/Q324284/
 
 ## Q324284: HOW TO: Secure XML Web Services with SSL in Windows .NET Server
 
+{% raw %}
+
 	Article: Q324284
 	Product(s): Internet Information Server
 	Version(s): Beta
@@ -350,3 +352,5 @@ permalink: /kb/324/Q324284/
 	
 	=============================================================================
 	
+
+{% endraw %}

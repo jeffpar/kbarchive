@@ -6,6 +6,8 @@ permalink: /kb/093/Q93571/
 
 ## Q93571: PC DirSync: CTRL+C Displayed But Not Used in REQMAIN.EXE
 
+{% raw %}
+
 	Article: Q93571
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a,3.2,3.5
@@ -48,3 +50,5 @@ permalink: /kb/093/Q93571/
 	
 	=============================================================================
 	
+
+{% endraw %}

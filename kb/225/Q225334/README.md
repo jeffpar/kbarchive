@@ -6,6 +6,8 @@ permalink: /kb/225/Q225334/
 
 ## Q225334: PRB: Jet/VBA May Fail w/ Datetime Data
 
+{% raw %}
+
 	Article: Q225334
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.0,2.1,2.5,2.6,3.0,3.5
@@ -72,3 +74,5 @@ permalink: /kb/225/Q225334/
 	
 	=============================================================================
 	
+
+{% endraw %}

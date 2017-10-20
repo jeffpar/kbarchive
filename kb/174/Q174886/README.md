@@ -6,6 +6,8 @@ permalink: /kb/174/Q174886/
 
 ## Q174886: FIX: Gendbc Produces Error Message when View is Open in Workarea
 
+{% raw %}
+
 	Article: Q174886
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a
@@ -95,3 +97,5 @@ permalink: /kb/174/Q174886/
 	
 	=============================================================================
 	
+
+{% endraw %}

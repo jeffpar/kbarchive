@@ -6,6 +6,8 @@ permalink: /kb/141/Q141170/
 
 ## Q141170: PRB: DBGrid Has No Default Property
 
+{% raw %}
+
 	Article: Q141170
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -83,3 +85,5 @@ permalink: /kb/141/Q141170/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162948/
 
 ## Q162948: Windows 95 Does Not Send DHCP Request Packet
 
+{% raw %}
+
 	Article: Q162948
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -101,3 +103,5 @@ permalink: /kb/162/Q162948/
 	
 	=============================================================================
 	
+
+{% endraw %}

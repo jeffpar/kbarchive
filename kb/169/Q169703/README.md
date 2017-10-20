@@ -6,6 +6,8 @@ permalink: /kb/169/Q169703/
 
 ## Q169703: XADM: Error Msg. When Accessing cc:Mail Connector Properties
 
+{% raw %}
+
 	Article: Q169703
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -67,3 +69,5 @@ permalink: /kb/169/Q169703/
 	
 	=============================================================================
 	
+
+{% endraw %}

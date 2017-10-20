@@ -6,6 +6,8 @@ permalink: /kb/157/Q157011/
 
 ## Q157011: XCLN: Large Icon Labels can Cause Access Violation
 
+{% raw %}
+
 	Article: Q157011
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -48,3 +50,5 @@ permalink: /kb/157/Q157011/
 	
 	=============================================================================
 	
+
+{% endraw %}

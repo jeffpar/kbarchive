@@ -6,6 +6,8 @@ permalink: /kb/108/Q108709/
 
 ## Q108709: Expected Expression Error: Dynamic Array Not OK in User-Type
 
+{% raw %}
+
 	Article: Q108709
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,3.0
@@ -136,3 +138,5 @@ permalink: /kb/108/Q108709/
 	
 	=============================================================================
 	
+
+{% endraw %}

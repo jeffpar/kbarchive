@@ -6,6 +6,8 @@ permalink: /kb/183/Q183864/
 
 ## Q183864: Windows NT 4.0 Resource Kit Perfm.bat Error
 
+{% raw %}
+
 	Article: Q183864
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -125,3 +127,5 @@ permalink: /kb/183/Q183864/
 	
 	=============================================================================
 	
+
+{% endraw %}

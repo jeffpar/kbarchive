@@ -6,6 +6,8 @@ permalink: /kb/190/Q190113/
 
 ## Q190113: BUG: Query Designer Generates Invalid SQL Statement
 
+{% raw %}
+
 	Article: Q190113
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -104,3 +106,5 @@ permalink: /kb/190/Q190113/
 	
 	=============================================================================
 	
+
+{% endraw %}

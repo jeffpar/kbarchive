@@ -6,6 +6,8 @@ permalink: /kb/119/Q119863/
 
 ## Q119863: Fatal Error on Drive 1 with Quantum ProDrive 1080s
 
+{% raw %}
+
 	Article: Q119863
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/119/Q119863/
 	
 	=============================================================================
 	
+
+{% endraw %}

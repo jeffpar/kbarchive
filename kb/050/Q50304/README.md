@@ -6,6 +6,8 @@ permalink: /kb/050/Q50304/
 
 ## Q50304: Score Does Not Reset in World War I Ace in Flight Simulator
 
+{% raw %}
+
 	Article: Q50304
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/050/Q50304/
 	
 	=============================================================================
 	
+
+{% endraw %}

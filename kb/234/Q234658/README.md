@@ -6,6 +6,8 @@ permalink: /kb/234/Q234658/
 
 ## Q234658: STOP Error in CSRSS After Attempting to Free a Screen Buffer
 
+{% raw %}
+
 	Article: Q234658
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5
@@ -107,3 +109,5 @@ permalink: /kb/234/Q234658/
 	
 	=============================================================================
 	
+
+{% endraw %}

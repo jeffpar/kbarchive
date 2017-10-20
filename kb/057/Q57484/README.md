@@ -6,6 +6,8 @@ permalink: /kb/057/Q57484/
 
 ## Q57484: JMP Back More Than 128 Bytes Not Flagged
 
+{% raw %}
+
 	Article: Q57484
 	Product(s): See article
 	Version(s): 2.01
@@ -65,3 +67,5 @@ permalink: /kb/057/Q57484/
 	          int 21h
 	
 	          end start
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/040/Q40429/
 
 ## Q40429: Using a Response File with Microsoft LINK
 
+{% raw %}
+
 	Article: Q40429
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.x,5.01.20,5.01.21,5.03,5.05,5.1,5.13,5.15,5.3,5.31.009,5.5,5.6
@@ -64,3 +66,5 @@ permalink: /kb/040/Q40429/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182579/
 
 ## Q182579: HOWTO: Getting Started With Active Documents
 
+{% raw %}
+
 	Article: Q182579
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -175,3 +177,5 @@ permalink: /kb/182/Q182579/
 	
 	=============================================================================
 	
+
+{% endraw %}

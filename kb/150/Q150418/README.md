@@ -6,6 +6,8 @@ permalink: /kb/150/Q150418/
 
 ## Q150418: How To Create an Access Database Through Visual Basic 4.0
 
+{% raw %}
+
 	Article: Q150418
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -120,3 +122,5 @@ permalink: /kb/150/Q150418/
 	
 	=============================================================================
 	
+
+{% endraw %}

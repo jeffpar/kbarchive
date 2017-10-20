@@ -6,6 +6,8 @@ permalink: /kb/098/Q98342/
 
 ## Q98342: Retrieving Group Names from a MM Viewer Title
 
+{% raw %}
+
 	Article: Q98342
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0
@@ -60,3 +62,5 @@ permalink: /kb/098/Q98342/
 	
 	=============================================================================
 	
+
+{% endraw %}

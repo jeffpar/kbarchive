@@ -6,6 +6,8 @@ permalink: /kb/133/Q133209/
 
 ## Q133209: Writer/Artist: Cannot Access Control Room on Macintosh
 
+{% raw %}
+
 	Article: Q133209
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a
@@ -68,3 +70,5 @@ permalink: /kb/133/Q133209/
 	
 	=============================================================================
 	
+
+{% endraw %}

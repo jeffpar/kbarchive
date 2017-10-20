@@ -6,6 +6,8 @@ permalink: /kb/109/Q109269/
 
 ## Q109269: PRB: Causes of Error CK1024
 
+{% raw %}
+
 	Article: Q109269
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,2.5,2.55,5.5,5.6
@@ -100,3 +102,5 @@ permalink: /kb/109/Q109269/
 	
 	=============================================================================
 	
+
+{% endraw %}

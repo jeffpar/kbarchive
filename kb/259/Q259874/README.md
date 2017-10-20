@@ -6,6 +6,8 @@ permalink: /kb/259/Q259874/
 
 ## Q259874: Error Message: The System Can Not Log You On (6A6)
 
+{% raw %}
+
 	Article: Q259874
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/259/Q259874/
 	
 	=============================================================================
 	
+
+{% endraw %}

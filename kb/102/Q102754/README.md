@@ -6,6 +6,8 @@ permalink: /kb/102/Q102754/
 
 ## Q102754: PC Forms: Working with Data in Combo Boxes
 
+{% raw %}
+
 	Article: Q102754
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -177,3 +179,5 @@ permalink: /kb/102/Q102754/
 	
 	=============================================================================
 	
+
+{% endraw %}

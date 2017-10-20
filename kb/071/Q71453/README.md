@@ -6,6 +6,8 @@ permalink: /kb/071/Q71453/
 
 ## Q71453: Using a Wacom HD-648A Tablet with Pen Windows
 
+{% raw %}
+
 	Article: Q71453
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -97,3 +99,5 @@ permalink: /kb/071/Q71453/
 	
 	=============================================================================
 	
+
+{% endraw %}

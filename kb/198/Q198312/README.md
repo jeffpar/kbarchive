@@ -6,6 +6,8 @@ permalink: /kb/198/Q198312/
 
 ## Q198312: WD97: Can't Use Scroll Box to Get to Last Page of Document
 
+{% raw %}
+
 	Article: Q198312
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/198/Q198312/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/287/Q287761/
 
 ## Q287761: DB2OLEDB Provider Does Not Always Determine Nullability of Data
 
+{% raw %}
+
 	Article: Q287761
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP4
@@ -100,3 +102,5 @@ permalink: /kb/287/Q287761/
 	
 	=============================================================================
 	
+
+{% endraw %}

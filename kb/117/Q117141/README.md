@@ -6,6 +6,8 @@ permalink: /kb/117/Q117141/
 
 ## Q117141: Err Msg Installing DeskJet 500 4.0 Driver: COMMCTRL.DLL Is...
 
+{% raw %}
+
 	Article: Q117141
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -72,3 +74,5 @@ permalink: /kb/117/Q117141/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189853/
 
 ## Q189853: PRB: Data Environment: Error Setting Lock Type
 
+{% raw %}
+
 	Article: Q189853
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.1,2.1 SP2,2.5,2.6,6.0
@@ -105,3 +107,5 @@ permalink: /kb/189/Q189853/
 	
 	=============================================================================
 	
+
+{% endraw %}

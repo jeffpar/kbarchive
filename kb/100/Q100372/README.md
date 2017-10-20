@@ -6,6 +6,8 @@ permalink: /kb/100/Q100372/
 
 ## Q100372: Detecting Windows NT Serial Ports
 
+{% raw %}
+
 	Article: Q100372
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0 3.5 3.51 4.0
@@ -79,3 +81,5 @@ permalink: /kb/100/Q100372/
 	
 	=============================================================================
 	
+
+{% endraw %}

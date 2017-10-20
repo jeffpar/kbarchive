@@ -6,6 +6,8 @@ permalink: /kb/146/Q146811/
 
 ## Q146811: XADM: Canceling Directory Import Operation Causes STOP Event
 
+{% raw %}
+
 	Article: Q146811
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/146/Q146811/
 	
 	=============================================================================
 	
+
+{% endraw %}

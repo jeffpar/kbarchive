@@ -6,6 +6,8 @@ permalink: /kb/030/Q30860/
 
 ## Q30860: Program Aborts after SHELL on COMPAQ 386/20, COMPAQ DOS 3.31
 
+{% raw %}
+
 	Article: Q30860
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -39,3 +41,5 @@ permalink: /kb/030/Q30860/
 	
 	Microsoft is researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

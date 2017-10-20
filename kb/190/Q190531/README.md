@@ -6,6 +6,8 @@ permalink: /kb/190/Q190531/
 
 ## Q190531: FIX: Calling delete or free() in ATL Causes Access Violation
 
+{% raw %}
+
 	Article: Q190531
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -121,3 +123,5 @@ permalink: /kb/190/Q190531/
 	
 	=============================================================================
 	
+
+{% endraw %}

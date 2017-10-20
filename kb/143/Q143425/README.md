@@ -6,6 +6,8 @@ permalink: /kb/143/Q143425/
 
 ## Q143425: FIX: Cannot Load Binary Data or Files Containing Binary Data
 
+{% raw %}
+
 	Article: Q143425
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -63,3 +65,5 @@ permalink: /kb/143/Q143425/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128154/
 
 ## Q128154: How Toolbars Differ from Forms
 
+{% raw %}
+
 	Article: Q128154
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -70,3 +72,5 @@ permalink: /kb/128/Q128154/
 	
 	=============================================================================
 	
+
+{% endraw %}

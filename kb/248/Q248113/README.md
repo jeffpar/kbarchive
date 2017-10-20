@@ -6,6 +6,8 @@ permalink: /kb/248/Q248113/
 
 ## Q248113: Files That Are Not Removed When You Uninstall SP6 or SP6a
 
+{% raw %}
+
 	Article: Q248113
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP6,4.0 SP6a
@@ -93,3 +95,5 @@ permalink: /kb/248/Q248113/
 	
 	=============================================================================
 	
+
+{% endraw %}

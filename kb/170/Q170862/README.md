@@ -6,6 +6,8 @@ permalink: /kb/170/Q170862/
 
 ## Q170862: Virtual Servers and HOST Name Resolution
 
+{% raw %}
+
 	Article: Q170862
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0
@@ -85,3 +87,5 @@ permalink: /kb/170/Q170862/
 	
 	=============================================================================
 	
+
+{% endraw %}

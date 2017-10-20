@@ -6,6 +6,8 @@ permalink: /kb/193/Q193939/
 
 ## Q193939: HOWTO: Use a Project and File Object's SCC PEMs
 
+{% raw %}
+
 	Article: Q193939
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -147,3 +149,5 @@ permalink: /kb/193/Q193939/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/257/Q257665/
 
 ## Q257665: Cannot Disable &quot;Stretch Wallpaper&quot; Feature
 
+{% raw %}
+
 	Article: Q257665
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -75,3 +77,5 @@ permalink: /kb/257/Q257665/
 	
 	=============================================================================
 	
+
+{% endraw %}

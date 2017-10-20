@@ -6,6 +6,8 @@ permalink: /kb/109/Q109801/
 
 ## Q109801: PRB: MDI Child Form Painted Twice When Moved Before Loaded
 
+{% raw %}
+
 	Article: Q109801
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -92,3 +94,5 @@ permalink: /kb/109/Q109801/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148513/
 
 ## Q148513: HOWTO: Use Pin and Label for Quality Assurance
 
+{% raw %}
+
 	Article: Q148513
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/148/Q148513/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120266/
 
 ## Q120266: Flashing Screen with Orchid Fahrenheit 1280
 
+{% raw %}
+
 	Article: Q120266
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/120/Q120266/
 	
 	=============================================================================
 	
+
+{% endraw %}

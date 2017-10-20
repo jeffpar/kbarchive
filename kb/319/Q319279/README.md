@@ -6,6 +6,8 @@ permalink: /kb/319/Q319279/
 
 ## Q319279: FIX: JustPath() Returns a String when Passed no Path
 
+{% raw %}
+
 	Article: Q319279
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -60,3 +62,5 @@ permalink: /kb/319/Q319279/
 	
 	=============================================================================
 	
+
+{% endraw %}

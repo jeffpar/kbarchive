@@ -6,6 +6,8 @@ permalink: /kb/247/Q247339/
 
 ## Q247339: XADM: Controlling the Size of Intrasite Replication Packets
 
+{% raw %}
+
 	Article: Q247339
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -65,3 +67,5 @@ permalink: /kb/247/Q247339/
 	
 	=============================================================================
 	
+
+{% endraw %}

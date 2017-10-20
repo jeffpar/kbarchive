@@ -6,6 +6,8 @@ permalink: /kb/245/Q245565/
 
 ## Q245565: XCON: Msg Delivery Fails Using Internet Mail Service w/NTLM
 
+{% raw %}
+
 	Article: Q245565
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -81,3 +83,5 @@ permalink: /kb/245/Q245565/
 	
 	=============================================================================
 	
+
+{% endraw %}

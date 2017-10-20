@@ -6,6 +6,8 @@ permalink: /kb/139/Q139415/
 
 ## Q139415: New TCP/IP ArpCacheLife Parameter in Windows NT
 
+{% raw %}
+
 	Article: Q139415
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -85,3 +87,5 @@ permalink: /kb/139/Q139415/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98844/
 
 ## Q98844: Database Query from LAN Man WS Requires TCP/IP
 
+{% raw %}
+
 	Article: Q98844
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -28,3 +30,5 @@ permalink: /kb/098/Q98844/
 	
 	=============================================================================
 	
+
+{% endraw %}

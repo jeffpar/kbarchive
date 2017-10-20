@@ -6,6 +6,8 @@ permalink: /kb/132/Q132687/
 
 ## Q132687: PC WSPlus: Documentation for Mixed Networks Dynamic Schedule
 
+{% raw %}
+
 	Article: Q132687
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -83,3 +85,5 @@ permalink: /kb/132/Q132687/
 	
 	=============================================================================
 	
+
+{% endraw %}

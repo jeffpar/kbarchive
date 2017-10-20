@@ -6,6 +6,8 @@ permalink: /kb/171/Q171311/
 
 ## Q171311: INF: NT 4.0 documentation cited in NT 4.0 Resource Kits
 
+{% raw %}
+
 	Article: Q171311
 	Product(s): Microsoft Press
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/171/Q171311/
 	
 	=============================================================================
 	
+
+{% endraw %}

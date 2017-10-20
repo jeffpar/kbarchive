@@ -6,6 +6,8 @@ permalink: /kb/142/Q142172/
 
 ## Q142172: HOWTO: Perform 3-D Line Drawing in Win32 with DrawEdge
 
+{% raw %}
+
 	Article: Q142172
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -258,3 +260,5 @@ permalink: /kb/142/Q142172/
 	
 	=============================================================================
 	
+
+{% endraw %}

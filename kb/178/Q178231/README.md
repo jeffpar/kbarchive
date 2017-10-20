@@ -6,6 +6,8 @@ permalink: /kb/178/Q178231/
 
 ## Q178231: Bookshelf: Web Link Redirection Updates Internet Links
 
+{% raw %}
+
 	Article: Q178231
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -59,3 +61,5 @@ permalink: /kb/178/Q178231/
 	
 	=============================================================================
 	
+
+{% endraw %}

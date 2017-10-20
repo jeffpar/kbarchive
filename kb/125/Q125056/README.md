@@ -6,6 +6,8 @@ permalink: /kb/125/Q125056/
 
 ## Q125056: INFO: Precision and Accuracy in Floating-Point Calculations
 
+{% raw %}
+
 	Article: Q125056
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a,1.5,1.51,2.0,4.0,5.0,6.0
@@ -294,3 +296,5 @@ permalink: /kb/125/Q125056/
 	
 	=============================================================================
 	
+
+{% endraw %}

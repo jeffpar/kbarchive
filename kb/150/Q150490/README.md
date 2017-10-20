@@ -6,6 +6,8 @@ permalink: /kb/150/Q150490/
 
 ## Q150490: 3D Movie Maker: Features and Limitations
 
+{% raw %}
+
 	Article: Q150490
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -148,3 +150,5 @@ permalink: /kb/150/Q150490/
 	
 	=============================================================================
 	
+
+{% endraw %}

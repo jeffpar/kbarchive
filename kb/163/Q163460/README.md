@@ -6,6 +6,8 @@ permalink: /kb/163/Q163460/
 
 ## Q163460: WD97: ODMA TeamLinks or PCDOCS: Images Missing Saving to HTML
 
+{% raw %}
+
 	Article: Q163460
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -57,3 +59,5 @@ permalink: /kb/163/Q163460/
 	
 	=============================================================================
 	
+
+{% endraw %}

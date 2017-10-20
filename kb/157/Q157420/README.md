@@ -6,6 +6,8 @@ permalink: /kb/157/Q157420/
 
 ## Q157420: XFOR: Embedded Messages not Handled by MS Mail Connector
 
+{% raw %}
+
 	Article: Q157420
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -87,3 +89,5 @@ permalink: /kb/157/Q157420/
 	
 	=============================================================================
 	
+
+{% endraw %}

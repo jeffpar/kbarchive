@@ -6,6 +6,8 @@ permalink: /kb/130/Q130340/
 
 ## Q130340: Windows 95 Hangs Printing with Vertisoft Emulaser
 
+{% raw %}
+
 	Article: Q130340
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/130/Q130340/
 	
 	=============================================================================
 	
+
+{% endraw %}

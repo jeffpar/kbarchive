@@ -6,6 +6,8 @@ permalink: /kb/325/Q325734/
 
 ## Q325734: MechWarrior 4.0: Game Hangs Immediately After Starting
 
+{% raw %}
+
 	Article: Q325734
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -139,3 +141,5 @@ permalink: /kb/325/Q325734/
 	
 	=============================================================================
 	
+
+{% endraw %}

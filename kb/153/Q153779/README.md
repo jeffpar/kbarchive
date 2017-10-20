@@ -6,6 +6,8 @@ permalink: /kb/153/Q153779/
 
 ## Q153779: Close Combat: CD-ROM, Right Mouse Button Options
 
+{% raw %}
+
 	Article: Q153779
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -116,3 +118,5 @@ permalink: /kb/153/Q153779/
 	
 	=============================================================================
 	
+
+{% endraw %}

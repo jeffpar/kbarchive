@@ -6,6 +6,8 @@ permalink: /kb/138/Q138155/
 
 ## Q138155: No NDIS Interrupt Activity Using Windows 95 and Pathworks
 
+{% raw %}
+
 	Article: Q138155
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/138/Q138155/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153739/
 
 ## Q153739: Do-It-Yourself Guide: Comdlg32.dll File Cannot Start
 
+{% raw %}
+
 	Article: Q153739
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -134,3 +136,5 @@ permalink: /kb/153/Q153739/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/083/Q83661/
 
 ## Q83661: SAMPLE: Executing Excel Functions with Return Values Using DDE
 
+{% raw %}
+
 	Article: Q83661
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -63,3 +65,5 @@ permalink: /kb/083/Q83661/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126226/
 
 ## Q126226: Writer: TrueType Fonts Not Showing Under Letterizer Tool
 
+{% raw %}
+
 	Article: Q126226
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -72,3 +74,5 @@ permalink: /kb/126/Q126226/
 	
 	=============================================================================
 	
+
+{% endraw %}

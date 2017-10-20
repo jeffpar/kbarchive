@@ -6,6 +6,8 @@ permalink: /kb/191/Q191652/
 
 ## Q191652: MCM: Text Missing from Default Button and Random Button
 
+{% raw %}
+
 	Article: Q191652
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -52,3 +54,5 @@ permalink: /kb/191/Q191652/
 	
 	=============================================================================
 	
+
+{% endraw %}

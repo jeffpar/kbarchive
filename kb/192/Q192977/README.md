@@ -6,6 +6,8 @@ permalink: /kb/192/Q192977/
 
 ## Q192977: FIX: Table Allows Modification Although DBC is Opened NOUPDATE
 
+{% raw %}
+
 	Article: Q192977
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -86,3 +88,5 @@ permalink: /kb/192/Q192977/
 	
 	=============================================================================
 	
+
+{% endraw %}

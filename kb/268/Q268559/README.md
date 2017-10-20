@@ -6,6 +6,8 @@ permalink: /kb/268/Q268559/
 
 ## Q268559: Domain Users Can Remotely Access Event Logs
 
+{% raw %}
+
 	Article: Q268559
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/268/Q268559/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163906/
 
 ## Q163906: XADM: Year 2000 Support for DateTime Properties
 
+{% raw %}
+
 	Article: Q163906
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -73,3 +75,5 @@ permalink: /kb/163/Q163906/
 	
 	=============================================================================
 	
+
+{% endraw %}

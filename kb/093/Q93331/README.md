@@ -6,6 +6,8 @@ permalink: /kb/093/Q93331/
 
 ## Q93331: How to Specify Field Alignment in the Report Writer
 
+{% raw %}
+
 	Article: Q93331
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6x; MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0,3.0b
@@ -60,3 +62,5 @@ permalink: /kb/093/Q93331/
 	
 	=============================================================================
 	
+
+{% endraw %}

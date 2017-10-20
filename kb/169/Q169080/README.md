@@ -6,6 +6,8 @@ permalink: /kb/169/Q169080/
 
 ## Q169080: Cannot Select System.dat File with Emergency Recovery Utility
 
+{% raw %}
+
 	Article: Q169080
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -78,3 +80,5 @@ permalink: /kb/169/Q169080/
 	
 	=============================================================================
 	
+
+{% endraw %}

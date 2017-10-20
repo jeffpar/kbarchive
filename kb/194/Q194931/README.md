@@ -6,6 +6,8 @@ permalink: /kb/194/Q194931/
 
 ## Q194931: Incorrect Number of Active Users Displayed in SNA Manager
 
+{% raw %}
+
 	Article: Q194931
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -92,3 +94,5 @@ permalink: /kb/194/Q194931/
 	
 	=============================================================================
 	
+
+{% endraw %}

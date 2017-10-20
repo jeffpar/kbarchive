@@ -6,6 +6,8 @@ permalink: /kb/096/Q96441/
 
 ## Q96441: MS-DOS 6 and later Require ASPI4DOS.SYS Version 3.1 or Later
 
+{% raw %}
+
 	Article: Q96441
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -69,3 +71,5 @@ permalink: /kb/096/Q96441/
 	
 	=============================================================================
 	
+
+{% endraw %}

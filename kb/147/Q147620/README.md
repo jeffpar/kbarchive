@@ -6,6 +6,8 @@ permalink: /kb/147/Q147620/
 
 ## Q147620: Xircom CreditCard Ethernet + 28800 Modem Support
 
+{% raw %}
+
 	Article: Q147620
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -62,3 +64,5 @@ permalink: /kb/147/Q147620/
 	
 	=============================================================================
 	
+
+{% endraw %}

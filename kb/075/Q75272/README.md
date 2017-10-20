@@ -6,6 +6,8 @@ permalink: /kb/075/Q75272/
 
 ## Q75272: Problems Printing on Novell Network with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q75272
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -60,3 +62,5 @@ permalink: /kb/075/Q75272/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/110/Q110193/
 
 ## Q110193: Writer: Sound Defaults to Off with Sound Galaxy Card
 
+{% raw %}
+
 	Article: Q110193
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -54,3 +56,5 @@ permalink: /kb/110/Q110193/
 	
 	=============================================================================
 	
+
+{% endraw %}

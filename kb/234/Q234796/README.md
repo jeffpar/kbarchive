@@ -6,6 +6,8 @@ permalink: /kb/234/Q234796/
 
 ## Q234796: FP: How to Create a Link to a Worksheet in an Excel Workbook
 
+{% raw %}
+
 	Article: Q234796
 	Product(s): Word Front Page
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/234/Q234796/
 	
 	=============================================================================
 	
+
+{% endraw %}

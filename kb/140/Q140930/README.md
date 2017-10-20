@@ -6,6 +6,8 @@ permalink: /kb/140/Q140930/
 
 ## Q140930: Chinese Characters Rotated 90 Degrees in Word 97
 
+{% raw %}
+
 	Article: Q140930
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/140/Q140930/
 	
 	=============================================================================
 	
+
+{% endraw %}

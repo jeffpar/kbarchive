@@ -6,6 +6,8 @@ permalink: /kb/131/Q131741/
 
 ## Q131741: Interrupted Disk Defragmenter Causes Lost Clusters
 
+{% raw %}
+
 	Article: Q131741
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/131/Q131741/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179416/
 
 ## Q179416: No Shutdown Notification When Users Are Connected
 
+{% raw %}
+
 	Article: Q179416
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -54,3 +56,5 @@ permalink: /kb/179/Q179416/
 	
 	=============================================================================
 	
+
+{% endraw %}

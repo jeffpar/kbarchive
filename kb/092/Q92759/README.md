@@ -6,6 +6,8 @@ permalink: /kb/092/Q92759/
 
 ## Q92759: Video Err Msg: Undefined Dynalink
 
+{% raw %}
+
 	Article: Q92759
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/092/Q92759/
 	
 	=============================================================================
 	
+
+{% endraw %}

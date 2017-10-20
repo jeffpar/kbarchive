@@ -6,6 +6,8 @@ permalink: /kb/198/Q198049/
 
 ## Q198049: WD97: Space Between Converted WordPerfect Back to Back Tables
 
+{% raw %}
+
 	Article: Q198049
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -58,3 +60,5 @@ permalink: /kb/198/Q198049/
 	
 	=============================================================================
 	
+
+{% endraw %}

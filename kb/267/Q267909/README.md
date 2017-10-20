@@ -6,6 +6,8 @@ permalink: /kb/267/Q267909/
 
 ## Q267909: HOWTO: Save TreeView Data to a Formatted File
 
+{% raw %}
+
 	Article: Q267909
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -152,3 +154,5 @@ permalink: /kb/267/Q267909/
 	
 	=============================================================================
 	
+
+{% endraw %}

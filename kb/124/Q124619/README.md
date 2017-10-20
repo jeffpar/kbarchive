@@ -6,6 +6,8 @@ permalink: /kb/124/Q124619/
 
 ## Q124619: Error Changing User Password Using Postoffice Manager
 
+{% raw %}
+
 	Article: Q124619
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.2; winnt:3.5,3.51
@@ -63,3 +65,5 @@ permalink: /kb/124/Q124619/
 	
 	=============================================================================
 	
+
+{% endraw %}

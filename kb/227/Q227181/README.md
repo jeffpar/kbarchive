@@ -6,6 +6,8 @@ permalink: /kb/227/Q227181/
 
 ## Q227181: How to Manage Windows Installer Local Policies
 
+{% raw %}
+
 	Article: Q227181
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -138,3 +140,5 @@ permalink: /kb/227/Q227181/
 	
 	=============================================================================
 	
+
+{% endraw %}

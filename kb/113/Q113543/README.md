@@ -6,6 +6,8 @@ permalink: /kb/113/Q113543/
 
 ## Q113543: Err Msg After Installing MS-DOS 6.21: Wrong DBLSPACE.BIN...
 
+{% raw %}
+
 	Article: Q113543
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.21,6.22
@@ -75,3 +77,5 @@ permalink: /kb/113/Q113543/
 	
 	=============================================================================
 	
+
+{% endraw %}

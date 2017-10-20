@@ -6,6 +6,8 @@ permalink: /kb/252/Q252678/
 
 ## Q252678: INFO: No API to Programmatically Manipulate Disk Partitions
 
+{% raw %}
+
 	Article: Q252678
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -40,3 +42,5 @@ permalink: /kb/252/Q252678/
 	
 	=============================================================================
 	
+
+{% endraw %}

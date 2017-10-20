@@ -6,6 +6,8 @@ permalink: /kb/195/Q195810/
 
 ## Q195810: Default Alias Name is Incorrect if Folder Name is DBCS
 
+{% raw %}
+
 	Article: Q195810
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/195/Q195810/
 	
 	=============================================================================
 	
+
+{% endraw %}

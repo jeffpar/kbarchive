@@ -6,6 +6,8 @@ permalink: /kb/136/Q136151/
 
 ## Q136151: SFM Print Service is Limited to 127 Printers
 
+{% raw %}
+
 	Article: Q136151
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -93,3 +95,5 @@ permalink: /kb/136/Q136151/
 	
 	=============================================================================
 	
+
+{% endraw %}

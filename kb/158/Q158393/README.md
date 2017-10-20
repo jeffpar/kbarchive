@@ -6,6 +6,8 @@ permalink: /kb/158/Q158393/
 
 ## Q158393: Soccer: Game Hangs When Red-Carded Player Takes Corner Kick
 
+{% raw %}
+
 	Article: Q158393
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/158/Q158393/
 	
 	=============================================================================
 	
+
+{% endraw %}

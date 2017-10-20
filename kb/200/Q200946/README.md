@@ -6,6 +6,8 @@ permalink: /kb/200/Q200946/
 
 ## Q200946: SMS: How to Check RC Status on 32-bit Client Computers
 
+{% raw %}
+
 	Article: Q200946
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -59,3 +61,5 @@ permalink: /kb/200/Q200946/
 	
 	=============================================================================
 	
+
+{% endraw %}

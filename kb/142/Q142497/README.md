@@ -6,6 +6,8 @@ permalink: /kb/142/Q142497/
 
 ## Q142497: SNA Server Processes Show Huge Virtual Byte Size in PerfMon
 
+{% raw %}
+
 	Article: Q142497
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0
@@ -118,3 +120,5 @@ permalink: /kb/142/Q142497/
 	
 	=============================================================================
 	
+
+{% endraw %}

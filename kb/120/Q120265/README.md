@@ -6,6 +6,8 @@ permalink: /kb/120/Q120265/
 
 ## Q120265: Using the Diamond Viper Video Card with Space Simulator
 
+{% raw %}
+
 	Article: Q120265
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -91,3 +93,5 @@ permalink: /kb/120/Q120265/
 	
 	=============================================================================
 	
+
+{% endraw %}

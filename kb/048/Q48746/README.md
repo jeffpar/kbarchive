@@ -6,6 +6,8 @@ permalink: /kb/048/Q48746/
 
 ## Q48746: Explanation of Manifest Constants Used By _putimage()
 
+{% raw %}
+
 	Article: Q48746
 	Product(s): See article
 	Version(s): 2.00
@@ -46,3 +48,5 @@ permalink: /kb/048/Q48746/
 	             allows you to move an object around without erasing the
 	             background. The _GXOR constant is a special mode often used
 	             for animation.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/320/Q320004/
 
 ## Q320004: BUG: &quot;Fatal Error C1001&quot; Err Msg Compiling Code with While Loop
 
+{% raw %}
+
 	Article: Q320004
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/320/Q320004/
 	
 	=============================================================================
 	
+
+{% endraw %}

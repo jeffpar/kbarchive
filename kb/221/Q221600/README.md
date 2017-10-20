@@ -6,6 +6,8 @@ permalink: /kb/221/Q221600/
 
 ## Q221600: Working with Distributed Authoring and Versioning (DAV) and Web
 
+{% raw %}
+
 	Article: Q221600
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -183,3 +185,5 @@ permalink: /kb/221/Q221600/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154394/
 
 ## Q154394: Computer with NetFlex 2 Card Stops Responding Every 30 Seconds
 
+{% raw %}
+
 	Article: Q154394
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -56,3 +58,5 @@ permalink: /kb/154/Q154394/
 	
 	=============================================================================
 	
+
+{% endraw %}

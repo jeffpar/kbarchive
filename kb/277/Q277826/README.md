@@ -6,6 +6,8 @@ permalink: /kb/277/Q277826/
 
 ## Q277826: Err Msg: The Currently Selected Display Resolution Is Invalid
 
+{% raw %}
+
 	Article: Q277826
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -76,3 +78,5 @@ permalink: /kb/277/Q277826/
 	
 	=============================================================================
 	
+
+{% endraw %}

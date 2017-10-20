@@ -6,6 +6,8 @@ permalink: /kb/168/Q168634/
 
 ## Q168634: INFO: When -d Switch of Analyze Deletes Files
 
+{% raw %}
+
 	Article: Q168634
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,4.0a,5.0,6.0
@@ -68,3 +70,5 @@ permalink: /kb/168/Q168634/
 	
 	=============================================================================
 	
+
+{% endraw %}

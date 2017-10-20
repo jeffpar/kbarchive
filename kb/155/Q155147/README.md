@@ -6,6 +6,8 @@ permalink: /kb/155/Q155147/
 
 ## Q155147: Writer 2: Spaces to the Right of Right Margin Behave Strangely
 
+{% raw %}
+
 	Article: Q155147
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -66,3 +68,5 @@ permalink: /kb/155/Q155147/
 	
 	=============================================================================
 	
+
+{% endraw %}

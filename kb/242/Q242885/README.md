@@ -6,6 +6,8 @@ permalink: /kb/242/Q242885/
 
 ## Q242885: AoE II: Game Screen Distorted When Screen Size Is 1280 x 1024
 
+{% raw %}
+
 	Article: Q242885
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -55,3 +57,5 @@ permalink: /kb/242/Q242885/
 	
 	=============================================================================
 	
+
+{% endraw %}

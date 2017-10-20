@@ -6,6 +6,8 @@ permalink: /kb/183/Q183415/
 
 ## Q183415: XFOR: NNTP JIS Message Converted to SJIS, Displayed Incorrectly
 
+{% raw %}
+
 	Article: Q183415
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -74,3 +76,5 @@ permalink: /kb/183/Q183415/
 	
 	=============================================================================
 	
+
+{% endraw %}

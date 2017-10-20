@@ -6,6 +6,8 @@ permalink: /kb/104/Q104955/
 
 ## Q104955: WFW NCBS and SESSIONS Settings Affect only Real Mode NetBEUI
 
+{% raw %}
+
 	Article: Q104955
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11
@@ -42,3 +44,5 @@ permalink: /kb/104/Q104955/
 	
 	=============================================================================
 	
+
+{% endraw %}

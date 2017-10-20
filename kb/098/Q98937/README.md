@@ -6,6 +6,8 @@ permalink: /kb/098/Q98937/
 
 ## Q98937: Description of TriPeaks
 
+{% raw %}
+
 	Article: Q98937
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/098/Q98937/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99562/
 
 ## Q99562: INFO: Switching Views in a Single Document Interface Program
 
+{% raw %}
+
 	Article: Q99562
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
@@ -147,3 +149,5 @@ permalink: /kb/099/Q99562/
 	
 	=============================================================================
 	
+
+{% endraw %}

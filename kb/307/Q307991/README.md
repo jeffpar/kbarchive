@@ -6,6 +6,8 @@ permalink: /kb/307/Q307991/
 
 ## Q307991: TCP Session Is Reset After You Apply the Security Rollup Package
 
+{% raw %}
+
 	Article: Q307991
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6a
@@ -107,3 +109,5 @@ permalink: /kb/307/Q307991/
 	
 	=============================================================================
 	
+
+{% endraw %}

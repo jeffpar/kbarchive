@@ -6,6 +6,8 @@ permalink: /kb/193/Q193751/
 
 ## Q193751: FIX: Do Not Use Commas in Step 4 of Setup Wizard Dialog Box
 
+{% raw %}
+
 	Article: Q193751
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -100,3 +102,5 @@ permalink: /kb/193/Q193751/
 	
 	=============================================================================
 	
+
+{% endraw %}

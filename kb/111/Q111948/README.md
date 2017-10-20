@@ -6,6 +6,8 @@ permalink: /kb/111/Q111948/
 
 ## Q111948: X400: Err Msg: ERROR 8 (layer): Initialization Failed...MEMORY
 
+{% raw %}
+
 	Article: Q111948
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -48,3 +50,5 @@ permalink: /kb/111/Q111948/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152842/
 
 ## Q152842: PostScript Halftoning Is Different on WinNT Than Win95
 
+{% raw %}
+
 	Article: Q152842
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -54,3 +56,5 @@ permalink: /kb/152/Q152842/
 	
 	=============================================================================
 	
+
+{% endraw %}

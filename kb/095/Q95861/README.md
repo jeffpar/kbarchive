@@ -6,6 +6,8 @@ permalink: /kb/095/Q95861/
 
 ## Q95861: RAMDRIVE.SYS Should Precede DBLSPACE.SYS in CONFIG.SYS
 
+{% raw %}
+
 	Article: Q95861
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -62,3 +64,5 @@ permalink: /kb/095/Q95861/
 	
 	=============================================================================
 	
+
+{% endraw %}

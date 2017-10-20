@@ -6,6 +6,8 @@ permalink: /kb/302/Q302921/
 
 ## Q302921: Microsoft Office Bar Blocks &quot;Help And Settings&quot; And &quot;Sign Out&quot; W
 
+{% raw %}
+
 	Article: Q302921
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -67,3 +69,5 @@ permalink: /kb/302/Q302921/
 	
 	=============================================================================
 	
+
+{% endraw %}

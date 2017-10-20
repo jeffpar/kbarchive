@@ -6,6 +6,8 @@ permalink: /kb/281/Q281207/
 
 ## Q281207: SMS: Manual Upgrds (1.2 to 2.0 SP2) Cause 2.0 SP3 Upgrd to Fail
 
+{% raw %}
+
 	Article: Q281207
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -69,3 +71,5 @@ permalink: /kb/281/Q281207/
 	
 	=============================================================================
 	
+
+{% endraw %}

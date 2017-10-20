@@ -6,6 +6,8 @@ permalink: /kb/156/Q156734/
 
 ## Q156734: XADM: Err Msg: Attribute Member Of is not Directly Importable
 
+{% raw %}
+
 	Article: Q156734
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -60,3 +62,5 @@ permalink: /kb/156/Q156734/
 	
 	=============================================================================
 	
+
+{% endraw %}

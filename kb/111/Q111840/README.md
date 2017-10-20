@@ -6,6 +6,8 @@ permalink: /kb/111/Q111840/
 
 ## Q111840: SMTP: Configuring the Gateway to Use Company Domain Names
 
+{% raw %}
+
 	Article: Q111840
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -68,3 +70,5 @@ permalink: /kb/111/Q111840/
 	
 	=============================================================================
 	
+
+{% endraw %}

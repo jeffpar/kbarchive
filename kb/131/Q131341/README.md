@@ -6,6 +6,8 @@ permalink: /kb/131/Q131341/
 
 ## Q131341: ADT/ODE: Setup Wizard Error Creating Disk Images with ADT or ODE
 
+{% raw %}
+
 	Article: Q131341
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 2.0 7.0 97
@@ -119,3 +121,5 @@ permalink: /kb/131/Q131341/
 	
 	=============================================================================
 	
+
+{% endraw %}

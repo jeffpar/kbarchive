@@ -6,6 +6,8 @@ permalink: /kb/200/Q200362/
 
 ## Q200362: WD97: Bullet/Number in List Reappears When Opened in Word 6.0/95
 
+{% raw %}
+
 	Article: Q200362
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/200/Q200362/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/240/Q240887/
 
 ## Q240887: BUG: Fatal Error w/Memo Field in Watch Window Bound to Edit Box
 
+{% raw %}
+
 	Article: Q240887
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -120,3 +122,5 @@ permalink: /kb/240/Q240887/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/315/Q315718/
 
 ## Q315718: SMS: Windows File Protection Message During Client Installation
 
+{% raw %}
+
 	Article: Q315718
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -84,3 +86,5 @@ permalink: /kb/315/Q315718/
 	
 	=============================================================================
 	
+
+{% endraw %}

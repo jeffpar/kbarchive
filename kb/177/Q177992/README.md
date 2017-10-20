@@ -6,6 +6,8 @@ permalink: /kb/177/Q177992/
 
 ## Q177992: HOWTO: Intercept Keyboard Input from Visual Basic
 
+{% raw %}
+
 	Article: Q177992
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -189,3 +191,5 @@ permalink: /kb/177/Q177992/
 	
 	=============================================================================
 	
+
+{% endraw %}

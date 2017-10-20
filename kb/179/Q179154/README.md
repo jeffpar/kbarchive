@@ -6,6 +6,8 @@ permalink: /kb/179/Q179154/
 
 ## Q179154: Adding OEM Display Adapters to Windows NT Display Tool
 
+{% raw %}
+
 	Article: Q179154
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -423,3 +425,5 @@ permalink: /kb/179/Q179154/
 	
 	=============================================================================
 	
+
+{% endraw %}

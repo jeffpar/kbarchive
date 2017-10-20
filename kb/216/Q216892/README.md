@@ -6,6 +6,8 @@ permalink: /kb/216/Q216892/
 
 ## Q216892: How to Disable the Default Exchange Mail Client Installation
 
+{% raw %}
+
 	Article: Q216892
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -69,3 +71,5 @@ permalink: /kb/216/Q216892/
 	
 	=============================================================================
 	
+
+{% endraw %}

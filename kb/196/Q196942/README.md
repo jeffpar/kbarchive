@@ -6,6 +6,8 @@ permalink: /kb/196/Q196942/
 
 ## Q196942: WD97: How to Select the Current Page in a Word Document
 
+{% raw %}
+
 	Article: Q196942
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -43,3 +45,5 @@ permalink: /kb/196/Q196942/
 	
 	=============================================================================
 	
+
+{% endraw %}

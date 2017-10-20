@@ -6,6 +6,8 @@ permalink: /kb/122/Q122386/
 
 ## Q122386: Non-Existing Administrative Share Causes Incomplete Site
 
+{% raw %}
+
 	Article: Q122386
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -55,3 +57,5 @@ permalink: /kb/122/Q122386/
 	
 	=============================================================================
 	
+
+{% endraw %}

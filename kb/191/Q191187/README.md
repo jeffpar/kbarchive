@@ -6,6 +6,8 @@ permalink: /kb/191/Q191187/
 
 ## Q191187: PRB: Do Not Modify ASP File That Is Created by WebClass Designer
 
+{% raw %}
+
 	Article: Q191187
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -97,3 +99,5 @@ permalink: /kb/191/Q191187/
 	
 	=============================================================================
 	
+
+{% endraw %}

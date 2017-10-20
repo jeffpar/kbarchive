@@ -6,6 +6,8 @@ permalink: /kb/146/Q146017/
 
 ## Q146017: PRB: History in Explorer Differs from History File w/ Keywords
 
+{% raw %}
+
 	Article: Q146017
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/146/Q146017/
 	
 	=============================================================================
 	
+
+{% endraw %}

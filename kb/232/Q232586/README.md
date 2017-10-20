@@ -6,6 +6,8 @@ permalink: /kb/232/Q232586/
 
 ## Q232586: XCON: X.400 MTA Logs &quot;Loop Detected&quot; Error Message
 
+{% raw %}
+
 	Article: Q232586
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -110,3 +112,5 @@ permalink: /kb/232/Q232586/
 	
 	=============================================================================
 	
+
+{% endraw %}

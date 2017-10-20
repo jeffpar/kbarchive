@@ -6,6 +6,8 @@ permalink: /kb/246/Q246207/
 
 ## Q246207: XADM: Database Won't Start with -1206 Error After Failed Upgrade
 
+{% raw %}
+
 	Article: Q246207
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -147,3 +149,5 @@ permalink: /kb/246/Q246207/
 	
 	=============================================================================
 	
+
+{% endraw %}

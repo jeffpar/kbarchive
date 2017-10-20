@@ -6,6 +6,8 @@ permalink: /kb/244/Q244751/
 
 ## Q244751: PRB: Winsock Control does not Fire Error Event in all Cases
 
+{% raw %}
+
 	Article: Q244751
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -90,3 +92,5 @@ permalink: /kb/244/Q244751/
 	
 	=============================================================================
 	
+
+{% endraw %}

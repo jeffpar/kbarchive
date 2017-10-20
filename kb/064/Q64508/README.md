@@ -6,6 +6,8 @@ permalink: /kb/064/Q64508/
 
 ## Q64508: Novell XMSNETx.COM and EMSNETx.COM with Windows
 
+{% raw %}
+
 	Article: Q64508
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/064/Q64508/
 	
 	=============================================================================
 	
+
+{% endraw %}

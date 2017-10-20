@@ -6,6 +6,8 @@ permalink: /kb/109/Q109876/
 
 ## Q109876: BUG: In-line Comment in Continued FORMAT Causes Syntax Error
 
+{% raw %}
+
 	Article: Q109876
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,4.0
@@ -67,3 +69,5 @@ permalink: /kb/109/Q109876/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168121/
 
 ## Q168121: How Windows 95 Determines Which Policies to Enforce
 
+{% raw %}
+
 	Article: Q168121
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/168/Q168121/
 	
 	=============================================================================
 	
+
+{% endraw %}

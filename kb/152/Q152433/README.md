@@ -6,6 +6,8 @@ permalink: /kb/152/Q152433/
 
 ## Q152433: XADM: How to Remove Orphaned Public Folders
 
+{% raw %}
+
 	Article: Q152433
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -124,3 +126,5 @@ permalink: /kb/152/Q152433/
 	
 	=============================================================================
 	
+
+{% endraw %}

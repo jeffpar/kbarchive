@@ -6,6 +6,8 @@ permalink: /kb/159/Q159430/
 
 ## Q159430: Full Court Press: 24-Second Clock Not Reset
 
+{% raw %}
+
 	Article: Q159430
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -50,3 +52,5 @@ permalink: /kb/159/Q159430/
 	
 	=============================================================================
 	
+
+{% endraw %}

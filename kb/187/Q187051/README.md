@@ -6,6 +6,8 @@ permalink: /kb/187/Q187051/
 
 ## Q187051: Cannot Drag and Drop UNC Path When in Add/Remove Programs
 
+{% raw %}
+
 	Article: Q187051
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -45,3 +47,5 @@ permalink: /kb/187/Q187051/
 	
 	=============================================================================
 	
+
+{% endraw %}

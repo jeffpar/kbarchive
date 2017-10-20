@@ -6,6 +6,8 @@ permalink: /kb/281/Q281081/
 
 ## Q281081: Links 2001: Cannot See Where the Golf Ball Lands
 
+{% raw %}
+
 	Article: Q281081
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/281/Q281081/
 	
 	=============================================================================
 	
+
+{% endraw %}

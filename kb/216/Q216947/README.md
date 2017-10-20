@@ -6,6 +6,8 @@ permalink: /kb/216/Q216947/
 
 ## Q216947: How Special Characters in the Name Field Effect Certificates
 
+{% raw %}
+
 	Article: Q216947
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,4.0
@@ -82,3 +84,5 @@ permalink: /kb/216/Q216947/
 	
 	=============================================================================
 	
+
+{% endraw %}

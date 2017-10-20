@@ -6,6 +6,8 @@ permalink: /kb/151/Q151768/
 
 ## Q151768: BUG: Tooltips on Primary Monitor when Toolbar on 2nd Monitor
 
+{% raw %}
+
 	Article: Q151768
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -66,3 +68,5 @@ permalink: /kb/151/Q151768/
 	
 	=============================================================================
 	
+
+{% endraw %}

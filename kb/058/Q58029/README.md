@@ -6,6 +6,8 @@ permalink: /kb/058/Q58029/
 
 ## Q58029: Two Toned Colors in &lt;assign&gt; Pseudo File Can Occur
 
+{% raw %}
+
 	Article: Q58029
 	Product(s): See article
 	Version(s): 1.02    | 1.02
@@ -34,3 +36,5 @@ permalink: /kb/058/Q58029/
 	Microsoft has confirmed this to be a problem with the Microsoft Editor
 	Version 1.02. We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

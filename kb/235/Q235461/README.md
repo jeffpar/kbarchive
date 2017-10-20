@@ -6,6 +6,8 @@ permalink: /kb/235/Q235461/
 
 ## Q235461: Enhancing Performance in Internet Information Server 4.0
 
+{% raw %}
+
 	Article: Q235461
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -158,3 +160,5 @@ permalink: /kb/235/Q235461/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/256/Q256603/
 
 ## Q256603: MapPoint: How to Dynamically Link SQL Data to a Map
 
+{% raw %}
+
 	Article: Q256603
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/256/Q256603/
 	
 	=============================================================================
 	
+
+{% endraw %}

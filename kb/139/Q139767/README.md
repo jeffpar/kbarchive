@@ -6,6 +6,8 @@ permalink: /kb/139/Q139767/
 
 ## Q139767: Julia Child: Intro Audio Plays After Starting Another Program
 
+{% raw %}
+
 	Article: Q139767
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -43,3 +45,5 @@ permalink: /kb/139/Q139767/
 	
 	=============================================================================
 	
+
+{% endraw %}

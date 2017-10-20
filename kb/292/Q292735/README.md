@@ -6,6 +6,8 @@ permalink: /kb/292/Q292735/
 
 ## Q292735: Microsoft Office 97 Small Business Edition Starts Here Online Re
 
+{% raw %}
+
 	Article: Q292735
 	Product(s): Microsoft Press
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/292/Q292735/
 	
 	=============================================================================
 	
+
+{% endraw %}

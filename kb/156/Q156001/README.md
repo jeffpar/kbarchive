@@ -6,6 +6,8 @@ permalink: /kb/156/Q156001/
 
 ## Q156001: PowerPoint 4.0 Presentations Not Recognized in Exchange Folder
 
+{% raw %}
+
 	Article: Q156001
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -70,3 +72,5 @@ permalink: /kb/156/Q156001/
 	
 	=============================================================================
 	
+
+{% endraw %}

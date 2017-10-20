@@ -6,6 +6,8 @@ permalink: /kb/258/Q258771/
 
 ## Q258771: Cannot Connect to Virtual IP Address by UNC Without NetBIOS
 
+{% raw %}
+
 	Article: Q258771
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -73,3 +75,5 @@ permalink: /kb/258/Q258771/
 	
 	=============================================================================
 	
+
+{% endraw %}

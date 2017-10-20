@@ -6,6 +6,8 @@ permalink: /kb/136/Q136781/
 
 ## Q136781: STOP 0x0000005c on Multi-Processor Computer During Setup
 
+{% raw %}
+
 	Article: Q136781
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/136/Q136781/
 	
 	=============================================================================
 	
+
+{% endraw %}

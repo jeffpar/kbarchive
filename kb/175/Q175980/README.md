@@ -6,6 +6,8 @@ permalink: /kb/175/Q175980/
 
 ## Q175980: BUG: Error Msg Applying Service Pack 3 in Unattended Mode
 
+{% raw %}
+
 	Article: Q175980
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/175/Q175980/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231337/
 
 ## Q231337: Netdde.exe Does Not Relay WM_DDE_TERMINATE to Remote Clients
 
+{% raw %}
+
 	Article: Q231337
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5
@@ -87,3 +89,5 @@ permalink: /kb/231/Q231337/
 	
 	=============================================================================
 	
+
+{% endraw %}

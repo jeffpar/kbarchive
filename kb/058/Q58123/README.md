@@ -6,6 +6,8 @@ permalink: /kb/058/Q58123/
 
 ## Q58123: &quot;Feature Unavailable&quot; Using FRE(-3) in .EXE Compiled in 7.00
 
+{% raw %}
+
 	Article: Q58123
 	Product(s): See article
 	Version(s): 7.00
@@ -54,3 +56,5 @@ permalink: /kb/058/Q58123/
 	
 	Also see Pages 612-614 of the "Microsoft BASIC 7.0: Programmer's
 	Guide," in the section "Linking with Overlays".
+
+{% endraw %}

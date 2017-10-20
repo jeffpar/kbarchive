@@ -6,6 +6,8 @@ permalink: /kb/256/Q256978/
 
 ## Q256978: Bandwidth Leak with IEEE 1394 Video Capture
 
+{% raw %}
+
 	Article: Q256978
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -80,3 +82,5 @@ permalink: /kb/256/Q256978/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166571/
 
 ## Q166571: Creating an SFM Volume on Large Partition Causes a Stop 0x24
 
+{% raw %}
+
 	Article: Q166571
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -146,3 +148,5 @@ permalink: /kb/166/Q166571/
 	
 	=============================================================================
 	
+
+{% endraw %}

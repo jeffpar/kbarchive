@@ -6,6 +6,8 @@ permalink: /kb/148/Q148767/
 
 ## Q148767: Contents of Return of Arcade README.TXT
 
+{% raw %}
+
 	Article: Q148767
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -222,3 +224,5 @@ permalink: /kb/148/Q148767/
 	
 	=============================================================================
 	
+
+{% endraw %}

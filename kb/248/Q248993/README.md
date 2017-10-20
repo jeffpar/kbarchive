@@ -6,6 +6,8 @@ permalink: /kb/248/Q248993/
 
 ## Q248993: PRB: Performance Object Is Not Displayed in Performance Monitor
 
+{% raw %}
+
 	Article: Q248993
 	Product(s): Microsoft Windows NT
 	Version(s): 2000
@@ -138,3 +140,5 @@ permalink: /kb/248/Q248993/
 	
 	=============================================================================
 	
+
+{% endraw %}

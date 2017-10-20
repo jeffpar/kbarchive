@@ -6,6 +6,8 @@ permalink: /kb/240/Q240015/
 
 ## Q240015: FIX: getline Template Function Reads Extra Character
 
+{% raw %}
+
 	Article: Q240015
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -93,3 +95,5 @@ permalink: /kb/240/Q240015/
 	
 	=============================================================================
 	
+
+{% endraw %}

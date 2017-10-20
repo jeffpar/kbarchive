@@ -6,6 +6,8 @@ permalink: /kb/177/Q177654/
 
 ## Q177654: Slow Network Performance Using NetBEUI Across Bridges
 
+{% raw %}
+
 	Article: Q177654
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -111,3 +113,5 @@ permalink: /kb/177/Q177654/
 	
 	=============================================================================
 	
+
+{% endraw %}

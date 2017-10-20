@@ -6,6 +6,8 @@ permalink: /kb/041/Q41078/
 
 ## Q41078: Failure to Set Video to Text Mode When Swapping to Environment
 
+{% raw %}
+
 	Article: Q41078
 	Product(s): See article
 	Version(s): 2.00
@@ -68,3 +70,5 @@ permalink: /kb/041/Q41078/
 	   _MRES4COLOR
 	   _HRESBW
 	   _ORESCOLOR
+
+{% endraw %}

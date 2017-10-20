@@ -6,6 +6,8 @@ permalink: /kb/042/Q42763/
 
 ## Q42763: Copy Is a Reserved Word
 
+{% raw %}
+
 	Article: Q42763
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -27,3 +29,5 @@ permalink: /kb/042/Q42763/
 	unsigned int argData;
 	ARG far *Parg;
 	flagType fMeta;
+
+{% endraw %}

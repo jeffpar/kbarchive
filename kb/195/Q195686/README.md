@@ -6,6 +6,8 @@ permalink: /kb/195/Q195686/
 
 ## Q195686: Explanation of ICMP Redirect Behavior
 
+{% raw %}
+
 	Article: Q195686
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.51,4.0
@@ -104,3 +106,5 @@ permalink: /kb/195/Q195686/
 	
 	=============================================================================
 	
+
+{% endraw %}

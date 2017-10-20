@@ -6,6 +6,8 @@ permalink: /kb/249/Q249113/
 
 ## Q249113: XFOR: Connector for Lotus Notes Extracts Filter Rule Incorrectly
 
+{% raw %}
+
 	Article: Q249113
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -73,3 +75,5 @@ permalink: /kb/249/Q249113/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/090/Q90568/
 
 ## Q90568: Using Calcomp Drawing Board/Pad Series II with Windows 3.1
 
+{% raw %}
+
 	Article: Q90568
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/090/Q90568/
 	
 	=============================================================================
 	
+
+{% endraw %}

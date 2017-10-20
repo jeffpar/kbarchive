@@ -6,6 +6,8 @@ permalink: /kb/063/Q63564/
 
 ## Q63564: Colorado Memory Systems and Windows 3.0
 
+{% raw %}
+
 	Article: Q63564
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -48,3 +50,5 @@ permalink: /kb/063/Q63564/
 	
 	=============================================================================
 	
+
+{% endraw %}

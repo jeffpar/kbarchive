@@ -6,6 +6,8 @@ permalink: /kb/151/Q151554/
 
 ## Q151554: MSB Earth: How to Play the Games
 
+{% raw %}
+
 	Article: Q151554
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -134,3 +136,5 @@ permalink: /kb/151/Q151554/
 	
 	=============================================================================
 	
+
+{% endraw %}

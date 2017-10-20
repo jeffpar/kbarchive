@@ -6,6 +6,8 @@ permalink: /kb/067/Q67255/
 
 ## Q67255: Gateway 2000 Problems Running Standard or 386 Enhanced Mode
 
+{% raw %}
+
 	Article: Q67255
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -59,3 +61,5 @@ permalink: /kb/067/Q67255/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/115/Q115925/
 
 ## Q115925: Network Setup with Customized SETUP.INF Doesn't Work
 
+{% raw %}
+
 	Article: Q115925
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -72,3 +74,5 @@ permalink: /kb/115/Q115925/
 	
 	=============================================================================
 	
+
+{% endraw %}

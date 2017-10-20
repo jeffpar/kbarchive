@@ -6,6 +6,8 @@ permalink: /kb/244/Q244335/
 
 ## Q244335: SMS: Network Discovery Causes Incorrect Names in Collections
 
+{% raw %}
+
 	Article: Q244335
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -91,3 +93,5 @@ permalink: /kb/244/Q244335/
 	
 	=============================================================================
 	
+
+{% endraw %}

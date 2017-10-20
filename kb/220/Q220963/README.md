@@ -6,6 +6,8 @@ permalink: /kb/220/Q220963/
 
 ## Q220963: Object Is Not Displayed in the Multimedia Tool in Control Panel
 
+{% raw %}
+
 	Article: Q220963
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -108,3 +110,5 @@ permalink: /kb/220/Q220963/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192306/
 
 ## Q192306: XADM: Access Directory Through LDAP When Search Control is Set
 
+{% raw %}
+
 	Article: Q192306
 	Product(s): Microsoft Exchange
 	Version(s): winnt:2.5,5.5
@@ -93,3 +95,5 @@ permalink: /kb/192/Q192306/
 	
 	=============================================================================
 	
+
+{% endraw %}

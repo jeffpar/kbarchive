@@ -6,6 +6,8 @@ permalink: /kb/196/Q196652/
 
 ## Q196652: HOWTO: Implement Custom Rounding Procedures
 
+{% raw %}
+
 	Article: Q196652
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0,6.5,7.0
@@ -496,3 +498,5 @@ permalink: /kb/196/Q196652/
 	
 	=============================================================================
 	
+
+{% endraw %}

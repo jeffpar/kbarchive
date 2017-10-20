@@ -6,6 +6,8 @@ permalink: /kb/191/Q191509/
 
 ## Q191509: Multimedia: Your Search Words Are Not Found
 
+{% raw %}
+
 	Article: Q191509
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:; WINDOWS:
@@ -101,3 +103,5 @@ permalink: /kb/191/Q191509/
 	
 	=============================================================================
 	
+
+{% endraw %}

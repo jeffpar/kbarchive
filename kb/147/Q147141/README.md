@@ -6,6 +6,8 @@ permalink: /kb/147/Q147141/
 
 ## Q147141: Macintosh Music Central 1996: ReadMe File Contents
 
+{% raw %}
+
 	Article: Q147141
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -316,3 +318,5 @@ permalink: /kb/147/Q147141/
 	
 	=============================================================================
 	
+
+{% endraw %}

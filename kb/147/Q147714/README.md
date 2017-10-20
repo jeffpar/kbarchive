@@ -6,6 +6,8 @@ permalink: /kb/147/Q147714/
 
 ## Q147714: Windows Sockets 2 Service Provider Interface Limitations
 
+{% raw %}
+
 	Article: Q147714
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -338,3 +340,5 @@ permalink: /kb/147/Q147714/
 	
 	=============================================================================
 	
+
+{% endraw %}

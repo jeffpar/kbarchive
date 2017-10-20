@@ -6,6 +6,8 @@ permalink: /kb/157/Q157637/
 
 ## Q157637: WD97: Placeholder Replaces Image After Adding Hyperlink
 
+{% raw %}
+
 	Article: Q157637
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -67,3 +69,5 @@ permalink: /kb/157/Q157637/
 	
 	=============================================================================
 	
+
+{% endraw %}

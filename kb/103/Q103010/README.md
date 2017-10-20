@@ -6,6 +6,8 @@ permalink: /kb/103/Q103010/
 
 ## Q103010: Read-Only Files Don't Copy Correctly to Net One Server
 
+{% raw %}
+
 	Article: Q103010
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -54,3 +56,5 @@ permalink: /kb/103/Q103010/
 	
 	=============================================================================
 	
+
+{% endraw %}

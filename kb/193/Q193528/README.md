@@ -6,6 +6,8 @@ permalink: /kb/193/Q193528/
 
 ## Q193528: Internet Service Manager Does Not Allow Wildcard Redirections
 
+{% raw %}
+
 	Article: Q193528
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/193/Q193528/
 	
 	=============================================================================
 	
+
+{% endraw %}

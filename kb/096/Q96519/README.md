@@ -6,6 +6,8 @@ permalink: /kb/096/Q96519/
 
 ## Q96519: Situations in Which DEFRAG Cannot Run
 
+{% raw %}
+
 	Article: Q96519
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -83,3 +85,5 @@ permalink: /kb/096/Q96519/
 	
 	=============================================================================
 	
+
+{% endraw %}

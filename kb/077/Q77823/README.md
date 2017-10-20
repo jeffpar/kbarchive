@@ -6,6 +6,8 @@ permalink: /kb/077/Q77823/
 
 ## Q77823: FIX: L2049 Error From LINK 5.1x with /HIGH Option
 
+{% raw %}
+
 	Article: Q77823
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:5.1,5.11,5.13,5.15
@@ -56,3 +58,5 @@ permalink: /kb/077/Q77823/
 	
 	=============================================================================
 	
+
+{% endraw %}

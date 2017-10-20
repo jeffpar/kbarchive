@@ -6,6 +6,8 @@ permalink: /kb/155/Q155594/
 
 ## Q155594: XADM: Generic Import Format to Add SMTP Secondary Proxy Address
 
+{% raw %}
+
 	Article: Q155594
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -55,3 +57,5 @@ permalink: /kb/155/Q155594/
 	
 	=============================================================================
 	
+
+{% endraw %}

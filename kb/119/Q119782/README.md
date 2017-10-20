@@ -6,6 +6,8 @@ permalink: /kb/119/Q119782/
 
 ## Q119782: Problems Accessing or Writing to the SYSTEM.INI File
 
+{% raw %}
+
 	Article: Q119782
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -80,3 +82,5 @@ permalink: /kb/119/Q119782/
 	
 	=============================================================================
 	
+
+{% endraw %}

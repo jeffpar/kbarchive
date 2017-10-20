@@ -6,6 +6,8 @@ permalink: /kb/267/Q267235/
 
 ## Q267235: FS2000: Flying Lessons Are Not Available on the Startup Screen
 
+{% raw %}
+
 	Article: Q267235
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -52,3 +54,5 @@ permalink: /kb/267/Q267235/
 	
 	=============================================================================
 	
+
+{% endraw %}

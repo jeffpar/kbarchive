@@ -6,6 +6,8 @@ permalink: /kb/074/Q74648/
 
 ## Q74648: PRB: Insufficient Disk Space Error When Setup Copies Files
 
+{% raw %}
+
 	Article: Q74648
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0,3.0
@@ -49,3 +51,5 @@ permalink: /kb/074/Q74648/
 	
 	=============================================================================
 	
+
+{% endraw %}

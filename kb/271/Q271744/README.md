@@ -6,6 +6,8 @@ permalink: /kb/271/Q271744/
 
 ## Q271744: XADM: Intersite Directory Replication Stops with Event ID 1091
 
+{% raw %}
+
 	Article: Q271744
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -222,3 +224,5 @@ permalink: /kb/271/Q271744/
 	
 	=============================================================================
 	
+
+{% endraw %}

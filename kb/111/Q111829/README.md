@@ -6,6 +6,8 @@ permalink: /kb/111/Q111829/
 
 ## Q111829: Problems Installing IBM Quietwriter Driver with WFWG 3.11
 
+{% raw %}
+
 	Article: Q111829
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -70,3 +72,5 @@ permalink: /kb/111/Q111829/
 	
 	=============================================================================
 	
+
+{% endraw %}

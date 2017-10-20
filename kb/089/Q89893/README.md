@@ -6,6 +6,8 @@ permalink: /kb/089/Q89893/
 
 ## Q89893: FoxBASE+/Mac 2.01 Disk Directory Listing
 
+{% raw %}
+
 	Article: Q89893
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -145,3 +147,5 @@ permalink: /kb/089/Q89893/
 	
 	=============================================================================
 	
+
+{% endraw %}

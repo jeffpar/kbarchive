@@ -6,6 +6,8 @@ permalink: /kb/178/Q178021/
 
 ## Q178021: XFOR: Many DAT Files in the Mtadata Directory
 
+{% raw %}
+
 	Article: Q178021
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -47,3 +49,5 @@ permalink: /kb/178/Q178021/
 	
 	=============================================================================
 	
+
+{% endraw %}

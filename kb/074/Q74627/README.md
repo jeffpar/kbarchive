@@ -6,6 +6,8 @@ permalink: /kb/074/Q74627/
 
 ## Q74627: 'Invalid COMMAND.COM' with Profit Wise and MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q74627
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -66,3 +68,5 @@ permalink: /kb/074/Q74627/
 	
 	=============================================================================
 	
+
+{% endraw %}

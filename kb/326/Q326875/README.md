@@ -6,6 +6,8 @@ permalink: /kb/326/Q326875/
 
 ## Q326875: MCAD/MCSD Self-Paced Training Kit: Developing Windows-Based Appl
 
+{% raw %}
+
 	Article: Q326875
 	Product(s): Microsoft Press
 	Version(s): 
@@ -183,3 +185,5 @@ permalink: /kb/326/Q326875/
 	
 	=============================================================================
 	
+
+{% endraw %}

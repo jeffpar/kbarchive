@@ -6,6 +6,8 @@ permalink: /kb/157/Q157049/
 
 ## Q157049: HOWTO: Debug Remote Automation Servers in Visual FoxPro 5
 
+{% raw %}
+
 	Article: Q157049
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -261,3 +263,5 @@ permalink: /kb/157/Q157049/
 	
 	=============================================================================
 	
+
+{% endraw %}

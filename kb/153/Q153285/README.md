@@ -6,6 +6,8 @@ permalink: /kb/153/Q153285/
 
 ## Q153285: INFO: Will VSS 5.0 Be Able to Read a VSS 6.0 Database?
 
+{% raw %}
+
 	Article: Q153285
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0a,5.0,6.0
@@ -49,3 +51,5 @@ permalink: /kb/153/Q153285/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131089/
 
 ## Q131089: Resizing Planner Alters Selected Dates/Times
 
+{% raw %}
+
 	Article: Q131089
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -42,3 +44,5 @@ permalink: /kb/131/Q131089/
 	
 	=============================================================================
 	
+
+{% endraw %}

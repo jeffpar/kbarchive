@@ -6,6 +6,8 @@ permalink: /kb/032/Q32891/
 
 ## Q32891: &#95;&#95;fac Unresolved at Link Time
 
+{% raw %}
+
 	Article: Q32891
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -29,3 +31,5 @@ permalink: /kb/032/Q32891/
 	Pascal calling convention. Functions returning double with the Pascal
 	calling convention pass the return value on the stack and allow you to
 	work in a reentrant environment.
+
+{% endraw %}

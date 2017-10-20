@@ -6,6 +6,8 @@ permalink: /kb/253/Q253939/
 
 ## Q253939: DOC: APPEND PROCEDURES Is Not Available at Run Time
 
+{% raw %}
+
 	Article: Q253939
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -129,3 +131,5 @@ permalink: /kb/253/Q253939/
 	
 	=============================================================================
 	
+
+{% endraw %}

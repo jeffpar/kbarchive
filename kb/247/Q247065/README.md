@@ -6,6 +6,8 @@ permalink: /kb/247/Q247065/
 
 ## Q247065: Err Msg: System Process Lost Delayed-Write Data
 
+{% raw %}
+
 	Article: Q247065
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6,4.0 SP6a
@@ -86,3 +88,5 @@ permalink: /kb/247/Q247065/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/057/Q57937/
 
 ## Q57937: _pg_chartpie Fails on { 1.0, 0.0 } Set Elements
 
+{% raw %}
+
 	Article: Q57937
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -75,3 +77,5 @@ permalink: /kb/057/Q57937/
 	      getch();
 	     _setvideomode(_DEFAULTMODE);
 	}
+
+{% endraw %}

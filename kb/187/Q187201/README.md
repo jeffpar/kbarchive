@@ -6,6 +6,8 @@ permalink: /kb/187/Q187201/
 
 ## Q187201: Reset /? Displays Wrong Parameters
 
+{% raw %}
+
 	Article: Q187201
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/187/Q187201/
 	
 	=============================================================================
 	
+
+{% endraw %}

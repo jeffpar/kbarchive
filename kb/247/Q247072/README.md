@@ -6,6 +6,8 @@ permalink: /kb/247/Q247072/
 
 ## Q247072: SAMPLE: DnDZoom.exe - ATL Control Implements OLE Drag and Drop
 
+{% raw %}
+
 	Article: Q247072
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -147,3 +149,5 @@ permalink: /kb/247/Q247072/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245695/
 
 ## Q245695: Error Message: &quot;Access is Denied&quot; When Changing Password
 
+{% raw %}
+
 	Article: Q245695
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -93,3 +95,5 @@ permalink: /kb/245/Q245695/
 	
 	=============================================================================
 	
+
+{% endraw %}

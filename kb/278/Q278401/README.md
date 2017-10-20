@@ -6,6 +6,8 @@ permalink: /kb/278/Q278401/
 
 ## Q278401: XCCC: Event 205 Occurs After Security Bulletin Is Installed
 
+{% raw %}
+
 	Article: Q278401
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -72,3 +74,5 @@ permalink: /kb/278/Q278401/
 	
 	=============================================================================
 	
+
+{% endraw %}

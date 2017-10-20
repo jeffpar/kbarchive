@@ -6,6 +6,8 @@ permalink: /kb/188/Q188681/
 
 ## Q188681: How to Manually Uninstall Microsoft Personal Web Server 1.0
 
+{% raw %}
+
 	Article: Q188681
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:1.0
@@ -75,3 +77,5 @@ permalink: /kb/188/Q188681/
 	
 	=============================================================================
 	
+
+{% endraw %}

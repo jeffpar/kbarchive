@@ -6,6 +6,8 @@ permalink: /kb/308/Q308945/
 
 ## Q308945: SMS: An Exception Is Created in the Wnremote.log File
 
+{% raw %}
+
 	Article: Q308945
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP3
@@ -85,3 +87,5 @@ permalink: /kb/308/Q308945/
 	
 	=============================================================================
 	
+
+{% endraw %}

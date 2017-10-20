@@ -6,6 +6,8 @@ permalink: /kb/089/Q89950/
 
 ## Q89950: No Shortcut Keys for Label/Description Fields in Sound Finder
 
+{% raw %}
+
 	Article: Q89950
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/089/Q89950/
 	
 	=============================================================================
 	
+
+{% endraw %}

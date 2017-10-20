@@ -6,6 +6,8 @@ permalink: /kb/189/Q189080/
 
 ## Q189080: TCP Connection May Drop When Transferring Large Amounts of Data
 
+{% raw %}
+
 	Article: Q189080
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/189/Q189080/
 	
 	=============================================================================
 	
+
+{% endraw %}

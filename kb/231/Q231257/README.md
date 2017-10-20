@@ -6,6 +6,8 @@ permalink: /kb/231/Q231257/
 
 ## Q231257: SMS: Software Metering Does Not Reserve License When Checked Out
 
+{% raw %}
+
 	Article: Q231257
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -52,3 +54,5 @@ permalink: /kb/231/Q231257/
 	
 	=============================================================================
 	
+
+{% endraw %}

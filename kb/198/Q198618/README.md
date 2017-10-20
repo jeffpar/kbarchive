@@ -6,6 +6,8 @@ permalink: /kb/198/Q198618/
 
 ## Q198618: MCSE Readiness Review Windows NT Workstation Corrections
 
+{% raw %}
+
 	Article: Q198618
 	Product(s): Microsoft Press
 	Version(s): 
@@ -395,3 +397,5 @@ permalink: /kb/198/Q198618/
 	
 	=============================================================================
 	
+
+{% endraw %}

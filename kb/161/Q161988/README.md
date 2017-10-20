@@ -6,6 +6,8 @@ permalink: /kb/161/Q161988/
 
 ## Q161988: WD97: Full Screen View Toolbar Is Hidden
 
+{% raw %}
+
 	Article: Q161988
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -151,3 +153,5 @@ permalink: /kb/161/Q161988/
 	
 	=============================================================================
 	
+
+{% endraw %}

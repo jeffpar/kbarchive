@@ -6,6 +6,8 @@ permalink: /kb/087/Q87492/
 
 ## Q87492: X400: Multiple Icons Sending Files Across X.400 Backbone
 
+{% raw %}
+
 	Article: Q87492
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -54,3 +56,5 @@ permalink: /kb/087/Q87492/
 	
 	=============================================================================
 	
+
+{% endraw %}

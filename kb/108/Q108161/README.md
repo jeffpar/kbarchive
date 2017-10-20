@@ -6,6 +6,8 @@ permalink: /kb/108/Q108161/
 
 ## Q108161: Deleting TrueType Font Weights (Bold, Italic, Bold/Italic)
 
+{% raw %}
+
 	Article: Q108161
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/108/Q108161/
 	
 	=============================================================================
 	
+
+{% endraw %}

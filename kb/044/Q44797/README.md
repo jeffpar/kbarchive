@@ -6,6 +6,8 @@ permalink: /kb/044/Q44797/
 
 ## Q44797: &quot;Error Loading - Invalid Format,&quot; MOUSE.LIB in Quick Library
 
+{% raw %}
+
 	Article: Q44797
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -27,3 +29,5 @@ permalink: /kb/044/Q44797/
 	BASIC compiler 6.00 or 6.00b (with QB /L Mouse.QLB) results in an
 	"Error loading file - invalid format" error message. This problem does
 	not occur in QuickBASIC 4.50 or BASIC PDS 7.00.
+
+{% endraw %}

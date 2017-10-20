@@ -6,6 +6,8 @@ permalink: /kb/122/Q122296/
 
 ## Q122296: INFO: List of Books About C++ Programming
 
+{% raw %}
+
 	Article: Q122296
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,2.0,4.0,5.0,6.0
@@ -323,3 +325,5 @@ permalink: /kb/122/Q122296/
 	
 	=============================================================================
 	
+
+{% endraw %}

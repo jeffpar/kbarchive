@@ -6,6 +6,8 @@ permalink: /kb/285/Q285642/
 
 ## Q285642: BUG: Using Add-In to Change Name of UserControl May Cause AV
 
+{% raw %}
+
 	Article: Q285642
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -90,3 +92,5 @@ permalink: /kb/285/Q285642/
 	
 	=============================================================================
 	
+
+{% endraw %}

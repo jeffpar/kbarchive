@@ -6,6 +6,8 @@ permalink: /kb/086/Q86609/
 
 ## Q86609: PC WSPlus: Appointment or Message Window Off Screen
 
+{% raw %}
+
 	Article: Q86609
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/086/Q86609/
 	
 	=============================================================================
 	
+
+{% endraw %}

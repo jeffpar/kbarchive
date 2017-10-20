@@ -6,6 +6,8 @@ permalink: /kb/034/Q34768/
 
 ## Q34768: Differences between COMMAND /C and CALL
 
+{% raw %}
+
 	Article: Q34768
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0,5.0a,6.0,6.2,6.21,6.22
@@ -51,3 +53,5 @@ permalink: /kb/034/Q34768/
 	
 	=============================================================================
 	
+
+{% endraw %}

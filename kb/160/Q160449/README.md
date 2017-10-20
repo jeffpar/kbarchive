@@ -6,6 +6,8 @@ permalink: /kb/160/Q160449/
 
 ## Q160449: SNA Client May Incorrectly Connect to Distributed Link Server
 
+{% raw %}
+
 	Article: Q160449
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1,3.0
@@ -66,3 +68,5 @@ permalink: /kb/160/Q160449/
 	
 	=============================================================================
 	
+
+{% endraw %}

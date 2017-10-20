@@ -6,6 +6,8 @@ permalink: /kb/169/Q169861/
 
 ## Q169861: MDG: Offline Symbol Caused by Corrupted Mailbag
 
+{% raw %}
+
 	Article: Q169861
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.5
@@ -70,3 +72,5 @@ permalink: /kb/169/Q169861/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155403/
 
 ## Q155403: HOWTO: Modify a Shortcut Menu at Run Time
 
+{% raw %}
+
 	Article: Q155403
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -112,3 +114,5 @@ permalink: /kb/155/Q155403/
 	
 	=============================================================================
 	
+
+{% endraw %}

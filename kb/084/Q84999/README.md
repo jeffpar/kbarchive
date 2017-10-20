@@ -6,6 +6,8 @@ permalink: /kb/084/Q84999/
 
 ## Q84999: How to Print TrueType Fonts in Reverse Video
 
+{% raw %}
+
 	Article: Q84999
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/084/Q84999/
 	
 	=============================================================================
 	
+
+{% endraw %}

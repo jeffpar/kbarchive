@@ -6,6 +6,8 @@ permalink: /kb/022/Q22036/
 
 ## Q22036: SCREEN 7,8,9 &quot;Illegal Function Call&quot; Using Foreground COLOR 0
 
+{% raw %}
+
 	Article: Q22036
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -49,3 +51,5 @@ permalink: /kb/022/Q22036/
 	
 	(The graphics GET and PUT technique and sample program shown in this
 	separate article could be modified for QuickBASIC 2.0x and 3.00.)
+
+{% endraw %}

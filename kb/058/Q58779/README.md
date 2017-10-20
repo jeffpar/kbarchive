@@ -6,6 +6,8 @@ permalink: /kb/058/Q58779/
 
 ## Q58779: After Increasing Available File Handles, exec Hangs Machine
 
+{% raw %}
+
 	Article: Q58779
 	Product(s): See article
 	Version(s): 5.00 5.10 6.00 6.00a
@@ -70,3 +72,5 @@ permalink: /kb/058/Q58779/
 	a loop of exec's set up. You can exec the child once, then your
 	machine either hangs on the call to exec the first program again or as
 	the second program is finishing execution.
+
+{% endraw %}

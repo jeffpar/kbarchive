@@ -6,6 +6,8 @@ permalink: /kb/148/Q148304/
 
 ## Q148304: INFO: Frequently Encountered MFC 3.x to 4.0 Porting Issues
 
+{% raw %}
+
 	Article: Q148304
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0
@@ -474,3 +476,5 @@ permalink: /kb/148/Q148304/
 	
 	=============================================================================
 	
+
+{% endraw %}

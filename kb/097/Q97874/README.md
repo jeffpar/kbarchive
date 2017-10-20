@@ -6,6 +6,8 @@ permalink: /kb/097/Q97874/
 
 ## Q97874: /N Switch Turns off Verification Search for Protocol
 
+{% raw %}
+
 	Article: Q97874
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -32,3 +34,5 @@ permalink: /kb/097/Q97874/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139127/
 
 ## Q139127: DOC: Passing GETFILE() a Semicolon Won't Work in Windows 95
 
+{% raw %}
+
 	Article: Q139127
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/139/Q139127/
 	
 	=============================================================================
 	
+
+{% endraw %}

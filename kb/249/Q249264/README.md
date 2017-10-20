@@ -6,6 +6,8 @@ permalink: /kb/249/Q249264/
 
 ## Q249264: AC Err Msg: Failed to Establish Connection to the Server
 
+{% raw %}
+
 	Article: Q249264
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -86,3 +88,5 @@ permalink: /kb/249/Q249264/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/064/Q64100/
 
 ## Q64100: BEGINTRANS Example &quot;Invalid Columnname&quot; for Address
 
+{% raw %}
+
 	Article: Q64100
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -48,3 +50,5 @@ permalink: /kb/064/Q64100/
 	should read as follows:
 	
 	     PRINT LEFT$(People.Street, 25); "  ";
+
+{% endraw %}

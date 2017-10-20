@@ -6,6 +6,8 @@ permalink: /kb/200/Q200567/
 
 ## Q200567: Answer File Parameters for WinNT 4.0 System Preparation Tool
 
+{% raw %}
+
 	Article: Q200567
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -207,3 +209,5 @@ permalink: /kb/200/Q200567/
 	
 	=============================================================================
 	
+
+{% endraw %}

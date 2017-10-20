@@ -6,6 +6,8 @@ permalink: /kb/173/Q173251/
 
 ## Q173251: Running Outlook 97  CD Will not Load with IE 4.0 Beta
 
+{% raw %}
+
 	Article: Q173251
 	Product(s): Microsoft Press
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/173/Q173251/
 	
 	=============================================================================
 	
+
+{% endraw %}

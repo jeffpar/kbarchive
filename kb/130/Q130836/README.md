@@ -6,6 +6,8 @@ permalink: /kb/130/Q130836/
 
 ## Q130836: Windows NT: List of Currently Validated Clients Not Available
 
+{% raw %}
+
 	Article: Q130836
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/130/Q130836/
 	
 	=============================================================================
 	
+
+{% endraw %}

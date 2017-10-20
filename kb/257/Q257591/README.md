@@ -6,6 +6,8 @@ permalink: /kb/257/Q257591/
 
 ## Q257591: Description of the Secure Sockets Layer (SSL) Handshake
 
+{% raw %}
+
 	Article: Q257591
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -129,3 +131,5 @@ permalink: /kb/257/Q257591/
 	
 	=============================================================================
 	
+
+{% endraw %}

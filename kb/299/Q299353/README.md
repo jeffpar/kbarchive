@@ -6,6 +6,8 @@ permalink: /kb/299/Q299353/
 
 ## Q299353: Passport Cookies Are Not Deleted When a User Signs Out
 
+{% raw %}
+
 	Article: Q299353
 	Product(s): Microsoft Developer Network
 	Version(s): 1.4
@@ -117,3 +119,5 @@ permalink: /kb/299/Q299353/
 	
 	=============================================================================
 	
+
+{% endraw %}

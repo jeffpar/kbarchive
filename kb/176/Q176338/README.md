@@ -6,6 +6,8 @@ permalink: /kb/176/Q176338/
 
 ## Q176338: PRB: Executing .Fetch of the VB5 MSMAPI32.OCX Can Hang VB
 
+{% raw %}
+
 	Article: Q176338
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -71,3 +73,5 @@ permalink: /kb/176/Q176338/
 	
 	=============================================================================
 	
+
+{% endraw %}

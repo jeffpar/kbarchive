@@ -6,6 +6,8 @@ permalink: /kb/122/Q122928/
 
 ## Q122928: Description of the WINSOCK.DLL File
 
+{% raw %}
+
 	Article: Q122928
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:
@@ -73,3 +75,5 @@ permalink: /kb/122/Q122928/
 	
 	=============================================================================
 	
+
+{% endraw %}

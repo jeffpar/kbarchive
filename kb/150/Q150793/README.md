@@ -6,6 +6,8 @@ permalink: /kb/150/Q150793/
 
 ## Q150793: XCLN: Cannot Change Subject Field of Posted Word Document
 
+{% raw %}
+
 	Article: Q150793
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -47,3 +49,5 @@ permalink: /kb/150/Q150793/
 	
 	=============================================================================
 	
+
+{% endraw %}

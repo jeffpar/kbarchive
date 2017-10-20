@@ -6,6 +6,8 @@ permalink: /kb/305/Q305291/
 
 ## Q305291: ENC2002: &quot;I/O Operation Has Been Aborted&quot; Err Msg
 
+{% raw %}
+
 	Article: Q305291
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/305/Q305291/
 	
 	=============================================================================
 	
+
+{% endraw %}

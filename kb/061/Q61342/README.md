@@ -6,6 +6,8 @@ permalink: /kb/061/Q61342/
 
 ## Q61342: Description for L2043 in BASIC PDS 7.00 Manual Incorrect
 
+{% raw %}
+
 	Article: Q61342
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -40,3 +42,5 @@ permalink: /kb/061/Q61342/
 	
 	            The module QBXQLB.OBJ must be linked when creating a
 	            Quick library.
+
+{% endraw %}

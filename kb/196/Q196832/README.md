@@ -6,6 +6,8 @@ permalink: /kb/196/Q196832/
 
 ## Q196832: HOWTO: Provide an Alternative View to Data Using Splitter Window
 
+{% raw %}
+
 	Article: Q196832
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0,6.0
@@ -188,3 +190,5 @@ permalink: /kb/196/Q196832/
 	
 	=============================================================================
 	
+
+{% endraw %}

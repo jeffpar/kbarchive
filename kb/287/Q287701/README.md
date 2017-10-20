@@ -6,6 +6,8 @@ permalink: /kb/287/Q287701/
 
 ## Q287701: Flight Simulator 2000: Error: OE: 0028 : FFFF3DBD
 
+{% raw %}
+
 	Article: Q287701
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -123,3 +125,5 @@ permalink: /kb/287/Q287701/
 	
 	=============================================================================
 	
+
+{% endraw %}

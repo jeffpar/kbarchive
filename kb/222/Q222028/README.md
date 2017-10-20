@@ -6,6 +6,8 @@ permalink: /kb/222/Q222028/
 
 ## Q222028: Setting Up Digest Authentication for Use with IIS 5.0
 
+{% raw %}
+
 	Article: Q222028
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -90,3 +92,5 @@ permalink: /kb/222/Q222028/
 	
 	=============================================================================
 	
+
+{% endraw %}

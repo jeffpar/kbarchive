@@ -6,6 +6,8 @@ permalink: /kb/187/Q187892/
 
 ## Q187892: WD97: Macro to Determine If a File Exists on Disk
 
+{% raw %}
+
 	Article: Q187892
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -108,3 +110,5 @@ permalink: /kb/187/Q187892/
 	
 	=============================================================================
 	
+
+{% endraw %}

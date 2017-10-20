@@ -6,6 +6,8 @@ permalink: /kb/183/Q183748/
 
 ## Q183748: PRB: Error Message &quot;DllRegisterServer in &lt;File name&gt;.dll Failed&quot;
 
+{% raw %}
+
 	Article: Q183748
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97sp2,97sp3
@@ -106,3 +108,5 @@ permalink: /kb/183/Q183748/
 	
 	=============================================================================
 	
+
+{% endraw %}

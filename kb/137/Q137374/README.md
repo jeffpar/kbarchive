@@ -6,6 +6,8 @@ permalink: /kb/137/Q137374/
 
 ## Q137374: Devices Attached to Adaptec 2740 Not Recognized
 
+{% raw %}
+
 	Article: Q137374
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/137/Q137374/
 	
 	=============================================================================
 	
+
+{% endraw %}

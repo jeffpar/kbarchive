@@ -6,6 +6,8 @@ permalink: /kb/253/Q253814/
 
 ## Q253814: PRB: SetParent Does Not Change Standard Forms into Child Windows
 
+{% raw %}
+
 	Article: Q253814
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -162,3 +164,5 @@ permalink: /kb/253/Q253814/
 	
 	=============================================================================
 	
+
+{% endraw %}

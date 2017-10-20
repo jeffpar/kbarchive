@@ -6,6 +6,8 @@ permalink: /kb/260/Q260828/
 
 ## Q260828: SMS: Installations Using Automatic Logon Fail in SMS
 
+{% raw %}
+
 	Article: Q260828
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -85,3 +87,5 @@ permalink: /kb/260/Q260828/
 	
 	=============================================================================
 	
+
+{% endraw %}

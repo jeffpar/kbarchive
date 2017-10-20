@@ -6,6 +6,8 @@ permalink: /kb/308/Q308605/
 
 ## Q308605: Stop 0x00000048/Stop 0x0000000A Caused By Named Pipe File System
 
+{% raw %}
+
 	Article: Q308605
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -140,3 +142,5 @@ permalink: /kb/308/Q308605/
 	
 	=============================================================================
 	
+
+{% endraw %}

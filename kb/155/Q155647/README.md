@@ -6,6 +6,8 @@ permalink: /kb/155/Q155647/
 
 ## Q155647: MSN Error Message: Wrong Information Specified
 
+{% raw %}
+
 	Article: Q155647
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0
@@ -71,3 +73,5 @@ permalink: /kb/155/Q155647/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191832/
 
 ## Q191832: Access Violation in Hangul Version of Lotus Organizer 97
 
+{% raw %}
+
 	Article: Q191832
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0,4.0a
@@ -63,3 +65,5 @@ permalink: /kb/191/Q191832/
 	
 	=============================================================================
 	
+
+{% endraw %}

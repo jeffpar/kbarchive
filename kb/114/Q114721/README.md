@@ -6,6 +6,8 @@ permalink: /kb/114/Q114721/
 
 ## Q114721: PRB: Error Occurs When Starting a Wizard
 
+{% raw %}
+
 	Article: Q114721
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.6; WINDOWS:2.6,3.0
@@ -119,3 +121,5 @@ permalink: /kb/114/Q114721/
 	
 	=============================================================================
 	
+
+{% endraw %}

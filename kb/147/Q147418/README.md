@@ -6,6 +6,8 @@ permalink: /kb/147/Q147418/
 
 ## Q147418: MAC Asimov: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q147418
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -51,3 +53,5 @@ permalink: /kb/147/Q147418/
 	
 	=============================================================================
 	
+
+{% endraw %}

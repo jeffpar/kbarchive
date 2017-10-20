@@ -6,6 +6,8 @@ permalink: /kb/043/Q43601/
 
 ## Q43601: CodeView May Single Step onto a Comment Line
 
+{% raw %}
+
 	Article: Q43601
 	Product(s): See article
 	Version(s): 2.20   | 2.20
@@ -42,3 +44,5 @@ permalink: /kb/043/Q43601/
 	     /* more comment */
 	     i = 1 ;
 	}
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67756/
 
 ## Q67756: Use /Ln When Creating .COM Files from Command Line
 
+{% raw %}
+
 	Article: Q67756
 	Product(s): See article
 	Version(s): 2.51
@@ -29,3 +31,5 @@ permalink: /kb/067/Q67756/
 	
 	Page 383 of the "Programmer's Guide" for QuickC with QuickAssembler
 	doesn't mention this in the example command line.
+
+{% endraw %}

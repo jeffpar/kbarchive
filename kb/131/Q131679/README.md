@@ -6,6 +6,8 @@ permalink: /kb/131/Q131679/
 
 ## Q131679: PC NTMMTA: Detecting Memory Bottlenecks
 
+{% raw %}
+
 	Article: Q131679
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -179,3 +181,5 @@ permalink: /kb/131/Q131679/
 	
 	=============================================================================
 	
+
+{% endraw %}

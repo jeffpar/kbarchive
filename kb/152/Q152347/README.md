@@ -6,6 +6,8 @@ permalink: /kb/152/Q152347/
 
 ## Q152347: BUG: Hairline and Dotted Pen Lines Print as Single Point Width
 
+{% raw %}
+
 	Article: Q152347
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a,3.0b
@@ -68,3 +70,5 @@ permalink: /kb/152/Q152347/
 	
 	=============================================================================
 	
+
+{% endraw %}

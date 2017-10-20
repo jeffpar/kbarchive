@@ -6,6 +6,8 @@ permalink: /kb/266/Q266303/
 
 ## Q266303: Cron.exe Event Log Warnings Without Sub-Authentication Package
 
+{% raw %}
+
 	Article: Q266303
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/266/Q266303/
 	
 	=============================================================================
 	
+
+{% endraw %}

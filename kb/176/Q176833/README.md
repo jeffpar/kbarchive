@@ -6,6 +6,8 @@ permalink: /kb/176/Q176833/
 
 ## Q176833: FS98 Is Minimized After You Choose Context-Sensitive Help
 
+{% raw %}
+
 	Article: Q176833
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -61,3 +63,5 @@ permalink: /kb/176/Q176833/
 	
 	=============================================================================
 	
+
+{% endraw %}

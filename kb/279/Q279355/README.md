@@ -6,6 +6,8 @@ permalink: /kb/279/Q279355/
 
 ## Q279355: Removing MSDE Does Not Remove Registry Key MS_HI_Server_DB
 
+{% raw %}
+
 	Article: Q279355
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/279/Q279355/
 	
 	=============================================================================
 	
+
+{% endraw %}

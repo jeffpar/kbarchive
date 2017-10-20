@@ -6,6 +6,8 @@ permalink: /kb/170/Q170289/
 
 ## Q170289: DISPLAY or CNOS Calls Fail with UNEXPECTED_DOS_ERROR
 
+{% raw %}
+
 	Article: Q170289
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP2,3.0,3.0 SP1
@@ -65,3 +67,5 @@ permalink: /kb/170/Q170289/
 	
 	=============================================================================
 	
+
+{% endraw %}

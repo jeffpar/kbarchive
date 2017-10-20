@@ -6,6 +6,8 @@ permalink: /kb/143/Q143041/
 
 ## Q143041: HOWTO: Call a Visual Basic 4.0 OLE Server from Excel 5.0
 
+{% raw %}
+
 	Article: Q143041
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -103,3 +105,5 @@ permalink: /kb/143/Q143041/
 	
 	=============================================================================
 	
+
+{% endraw %}

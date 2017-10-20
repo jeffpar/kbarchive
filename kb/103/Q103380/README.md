@@ -6,6 +6,8 @@ permalink: /kb/103/Q103380/
 
 ## Q103380: PC Forms: File Scan Rights Required for Novell NetWare
 
+{% raw %}
+
 	Article: Q103380
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -44,3 +46,5 @@ permalink: /kb/103/Q103380/
 	
 	=============================================================================
 	
+
+{% endraw %}

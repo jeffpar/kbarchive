@@ -6,6 +6,8 @@ permalink: /kb/157/Q157738/
 
 ## Q157738: DEV INTL SFTWRE WIN 95&amp;WIN NT Corrections and Comments
 
+{% raw %}
+
 	Article: Q157738
 	Product(s): Microsoft Press
 	Version(s): 
@@ -470,3 +472,5 @@ permalink: /kb/157/Q157738/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194857/
 
 ## Q194857: PC DirSync: Break Relative Parameter Not Set Properly
 
+{% raw %}
+
 	Article: Q194857
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -73,3 +75,5 @@ permalink: /kb/194/Q194857/
 	
 	=============================================================================
 	
+
+{% endraw %}

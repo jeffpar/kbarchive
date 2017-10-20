@@ -6,6 +6,8 @@ permalink: /kb/131/Q131015/
 
 ## Q131015: MS Exchange Users Cannot Create Own Post Office Accounts
 
+{% raw %}
+
 	Article: Q131015
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/131/Q131015/
 	
 	=============================================================================
 	
+
+{% endraw %}

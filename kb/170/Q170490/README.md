@@ -6,6 +6,8 @@ permalink: /kb/170/Q170490/
 
 ## Q170490: XCLN: AutoSignature Is Not Present When Message Is Composed
 
+{% raw %}
+
 	Article: Q170490
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -43,3 +45,5 @@ permalink: /kb/170/Q170490/
 	
 	=============================================================================
 	
+
+{% endraw %}

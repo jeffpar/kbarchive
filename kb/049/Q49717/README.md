@@ -6,6 +6,8 @@ permalink: /kb/049/Q49717/
 
 ## Q49717: Using MS-DOS Shell to Format Low-Density Disks
 
+{% raw %}
+
 	Article: Q49717
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.x,6.0,6.2,6.21,6.22
@@ -76,3 +78,5 @@ permalink: /kb/049/Q49717/
 	
 	=============================================================================
 	
+
+{% endraw %}

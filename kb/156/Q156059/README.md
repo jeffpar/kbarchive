@@ -6,6 +6,8 @@ permalink: /kb/156/Q156059/
 
 ## Q156059: PRB: Single Letter SCX Name Not Permitted in ON KEY LABEL
 
+{% raw %}
+
 	Article: Q156059
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -71,3 +73,5 @@ permalink: /kb/156/Q156059/
 	
 	=============================================================================
 	
+
+{% endraw %}

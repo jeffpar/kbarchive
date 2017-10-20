@@ -6,6 +6,8 @@ permalink: /kb/177/Q177820/
 
 ## Q177820: XCON: MTA Stops Unexpectedly When Accessing Memory
 
+{% raw %}
+
 	Article: Q177820
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -65,3 +67,5 @@ permalink: /kb/177/Q177820/
 	
 	=============================================================================
 	
+
+{% endraw %}

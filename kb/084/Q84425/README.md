@@ -6,6 +6,8 @@ permalink: /kb/084/Q84425/
 
 ## Q84425: Qume Printers Not Printing Documents from Windows
 
+{% raw %}
+
 	Article: Q84425
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -86,3 +88,5 @@ permalink: /kb/084/Q84425/
 	
 	=============================================================================
 	
+
+{% endraw %}

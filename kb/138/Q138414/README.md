@@ -6,6 +6,8 @@ permalink: /kb/138/Q138414/
 
 ## Q138414: PRB: FromIDispatch Returns NULL for OLE Control
 
+{% raw %}
+
 	Article: Q138414
 	Product(s): Microsoft C Compiler
 	Version(s): 2.00 2.10 | 1.50 1.51 1.52 1.52
@@ -108,3 +110,5 @@ permalink: /kb/138/Q138414/
 	
 	=============================================================================
 	
+
+{% endraw %}

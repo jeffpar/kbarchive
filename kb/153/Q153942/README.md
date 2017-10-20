@@ -6,6 +6,8 @@ permalink: /kb/153/Q153942/
 
 ## Q153942: Saving Key in RegEdt32 May Cause Access Denied Error
 
+{% raw %}
+
 	Article: Q153942
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -60,3 +62,5 @@ permalink: /kb/153/Q153942/
 	
 	=============================================================================
 	
+
+{% endraw %}

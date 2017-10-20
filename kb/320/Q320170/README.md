@@ -6,6 +6,8 @@ permalink: /kb/320/Q320170/
 
 ## Q320170: Cannot Type In Body Of MSN Explorer E-mail
 
+{% raw %}
+
 	Article: Q320170
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -103,3 +105,5 @@ permalink: /kb/320/Q320170/
 	
 	=============================================================================
 	
+
+{% endraw %}

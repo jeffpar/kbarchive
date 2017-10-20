@@ -6,6 +6,8 @@ permalink: /kb/307/Q307702/
 
 ## Q307702: Microsoft Windows 2000 and IIS 5.0 Administrator's Pocket Consul
 
+{% raw %}
+
 	Article: Q307702
 	Product(s): Microsoft Press
 	Version(s): 
@@ -92,3 +94,5 @@ permalink: /kb/307/Q307702/
 	
 	=============================================================================
 	
+
+{% endraw %}

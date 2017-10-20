@@ -6,6 +6,8 @@ permalink: /kb/303/Q303469/
 
 ## Q303469: Combat Flight Simulator 2: Black Screen Appears at Start of Game
 
+{% raw %}
+
 	Article: Q303469
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -228,3 +230,5 @@ permalink: /kb/303/Q303469/
 	
 	=============================================================================
 	
+
+{% endraw %}

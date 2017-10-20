@@ -6,6 +6,8 @@ permalink: /kb/167/Q167929/
 
 ## Q167929: PRB: Memory Leaks Reported When Using Multiple MFC DLLs
 
+{% raw %}
+
 	Article: Q167929
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0,6.0
@@ -148,3 +150,5 @@ permalink: /kb/167/Q167929/
 	
 	=============================================================================
 	
+
+{% endraw %}

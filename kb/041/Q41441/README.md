@@ -6,6 +6,8 @@ permalink: /kb/041/Q41441/
 
 ## Q41441: Documentation Error Page 136 _bios_equiplist
 
+{% raw %}
+
 	Article: Q41441
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -29,3 +31,5 @@ permalink: /kb/041/Q41441/
 	
 	This error also exists in the QuickC Versions 1.00 and 1.01 run-time
 	library reference manuals and in the QuickC Version 2.00 on-line help.
+
+{% endraw %}

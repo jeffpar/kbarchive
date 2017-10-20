@@ -6,6 +6,8 @@ permalink: /kb/049/Q49846/
 
 ## Q49846: Inappropriate Options Available with Sailplane
 
+{% raw %}
+
 	Article: Q49846
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/049/Q49846/
 	
 	=============================================================================
 	
+
+{% endraw %}

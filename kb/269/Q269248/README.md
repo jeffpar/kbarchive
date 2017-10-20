@@ -6,6 +6,8 @@ permalink: /kb/269/Q269248/
 
 ## Q269248: XADM: Exchange Installation Stops with Error ID C103798a
 
+{% raw %}
+
 	Article: Q269248
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -64,3 +66,5 @@ permalink: /kb/269/Q269248/
 	
 	=============================================================================
 	
+
+{% endraw %}

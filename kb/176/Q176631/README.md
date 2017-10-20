@@ -6,6 +6,8 @@ permalink: /kb/176/Q176631/
 
 ## Q176631: DOCFIX: FlexGrid Constants Incorrect in Help and Books Online
 
+{% raw %}
+
 	Article: Q176631
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/176/Q176631/
 	
 	=============================================================================
 	
+
+{% endraw %}

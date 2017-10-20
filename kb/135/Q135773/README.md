@@ -6,6 +6,8 @@ permalink: /kb/135/Q135773/
 
 ## Q135773: Logon Scripts Are Not Changed When Site Properties Are Changed
 
+{% raw %}
+
 	Article: Q135773
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -50,3 +52,5 @@ permalink: /kb/135/Q135773/
 	
 	=============================================================================
 	
+
+{% endraw %}

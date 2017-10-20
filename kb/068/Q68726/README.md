@@ -6,6 +6,8 @@ permalink: /kb/068/Q68726/
 
 ## Q68726: Windows Setup with EtherLink MC
 
+{% raw %}
+
 	Article: Q68726
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -53,3 +55,5 @@ permalink: /kb/068/Q68726/
 	
 	=============================================================================
 	
+
+{% endraw %}

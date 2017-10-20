@@ -6,6 +6,8 @@ permalink: /kb/175/Q175424/
 
 ## Q175424: Return of Arcade: Game Does Not Appear on Screen
 
+{% raw %}
+
 	Article: Q175424
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -113,3 +115,5 @@ permalink: /kb/175/Q175424/
 	
 	=============================================================================
 	
+
+{% endraw %}

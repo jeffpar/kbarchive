@@ -6,6 +6,8 @@ permalink: /kb/158/Q158904/
 
 ## Q158904: CD-ROM Benchmark Program May Not Disable Read Ahead or Caching
 
+{% raw %}
+
 	Article: Q158904
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -54,3 +56,5 @@ permalink: /kb/158/Q158904/
 	
 	=============================================================================
 	
+
+{% endraw %}

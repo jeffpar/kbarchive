@@ -6,6 +6,8 @@ permalink: /kb/152/Q152391/
 
 ## Q152391: PRB: Adding OnClose Handler to COleControl Class Causes C2660
 
+{% raw %}
+
 	Article: Q152391
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,4.1,5.0
@@ -89,3 +91,5 @@ permalink: /kb/152/Q152391/
 	
 	=============================================================================
 	
+
+{% endraw %}

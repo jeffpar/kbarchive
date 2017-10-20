@@ -6,6 +6,8 @@ permalink: /kb/295/Q295330/
 
 ## Q295330: BUG: AV in MSVBVM60.dll Using WinInet .ocx in COM DLL
 
+{% raw %}
+
 	Article: Q295330
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0,6.0 SP3,6.0 SP4,6.0 SP5
@@ -80,3 +82,5 @@ permalink: /kb/295/Q295330/
 	
 	=============================================================================
 	
+
+{% endraw %}

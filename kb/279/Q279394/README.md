@@ -6,6 +6,8 @@ permalink: /kb/279/Q279394/
 
 ## Q279394: Combat Flight Simulator 2: Cannot Exit Padlock View
 
+{% raw %}
+
 	Article: Q279394
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -63,3 +65,5 @@ permalink: /kb/279/Q279394/
 	
 	=============================================================================
 	
+
+{% endraw %}

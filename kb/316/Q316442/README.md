@@ -6,6 +6,8 @@ permalink: /kb/316/Q316442/
 
 ## Q316442: Accessing MSN E-mail at Hotmail.com
 
+{% raw %}
+
 	Article: Q316442
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -58,3 +60,5 @@ permalink: /kb/316/Q316442/
 	
 	=============================================================================
 	
+
+{% endraw %}

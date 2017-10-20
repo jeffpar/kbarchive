@@ -6,6 +6,8 @@ permalink: /kb/174/Q174693/
 
 ## Q174693: XADM: Exchange Organization Name Is Case Sensitive
 
+{% raw %}
+
 	Article: Q174693
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/174/Q174693/
 	
 	=============================================================================
 	
+
+{% endraw %}

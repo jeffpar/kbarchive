@@ -6,6 +6,8 @@ permalink: /kb/159/Q159202/
 
 ## Q159202: SMS: Deleted User Groups Are Not Removed from the SMS Database
 
+{% raw %}
+
 	Article: Q159202
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -56,3 +58,5 @@ permalink: /kb/159/Q159202/
 	
 	=============================================================================
 	
+
+{% endraw %}

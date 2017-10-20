@@ -6,6 +6,8 @@ permalink: /kb/143/Q143429/
 
 ## Q143429: FIX: Developer Studio Causes an Alignment Fault
 
+{% raw %}
+
 	Article: Q143429
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/143/Q143429/
 	
 	=============================================================================
 	
+
+{% endraw %}

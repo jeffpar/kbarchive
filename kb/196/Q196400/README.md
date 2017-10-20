@@ -6,6 +6,8 @@ permalink: /kb/196/Q196400/
 
 ## Q196400: XADM: Move Server Wizard Error: An Error has Occurred Copying
 
+{% raw %}
+
 	Article: Q196400
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -59,3 +61,5 @@ permalink: /kb/196/Q196400/
 	
 	=============================================================================
 	
+
+{% endraw %}

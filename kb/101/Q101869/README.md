@@ -6,6 +6,8 @@ permalink: /kb/101/Q101869/
 
 ## Q101869: Print Manager Reports &quot;Printer Out of Paper&quot; on Serial Port
 
+{% raw %}
+
 	Article: Q101869
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/101/Q101869/
 	
 	=============================================================================
 	
+
+{% endraw %}

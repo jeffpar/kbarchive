@@ -6,6 +6,8 @@ permalink: /kb/260/Q260258/
 
 ## Q260258: PC NTMMTA: Path Restrictions for NTMMTA Setup Folder
 
+{% raw %}
+
 	Article: Q260258
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.x
@@ -73,3 +75,5 @@ permalink: /kb/260/Q260258/
 	
 	=============================================================================
 	
+
+{% endraw %}

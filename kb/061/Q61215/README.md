@@ -6,6 +6,8 @@ permalink: /kb/061/Q61215/
 
 ## Q61215: C 6.00 README: SHIFT+ALT, SHIFT+CTRL Different in DOS and OS/2
 
+{% raw %}
+
 	Article: Q61215
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -32,3 +34,5 @@ permalink: /kb/061/Q61215/
 	
 	   SHIFT+CTRL+<shifted_character>
 	   SHIFT+ALT+<shifted_character>
+
+{% endraw %}

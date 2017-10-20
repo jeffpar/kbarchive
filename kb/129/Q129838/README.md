@@ -6,6 +6,8 @@ permalink: /kb/129/Q129838/
 
 ## Q129838: BUG: GPF in Excel After Using Excel Spreadsheet in OLE Control
 
+{% raw %}
+
 	Article: Q129838
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -74,3 +76,5 @@ permalink: /kb/129/Q129838/
 	
 	=============================================================================
 	
+
+{% endraw %}

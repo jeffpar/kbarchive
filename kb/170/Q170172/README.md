@@ -6,6 +6,8 @@ permalink: /kb/170/Q170172/
 
 ## Q170172: PRB: Changing Form ScaleMode Does Not Alter Grid Partition Value
 
+{% raw %}
+
 	Article: Q170172
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -64,3 +66,5 @@ permalink: /kb/170/Q170172/
 	
 	=============================================================================
 	
+
+{% endraw %}

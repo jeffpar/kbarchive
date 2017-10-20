@@ -6,6 +6,8 @@ permalink: /kb/149/Q149288/
 
 ## Q149288: XCLN: Copy of a Message Will Not Paste as a Link
 
+{% raw %}
+
 	Article: Q149288
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -44,3 +46,5 @@ permalink: /kb/149/Q149288/
 	
 	=============================================================================
 	
+
+{% endraw %}

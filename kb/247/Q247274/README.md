@@ -6,6 +6,8 @@ permalink: /kb/247/Q247274/
 
 ## Q247274: XADM: How to Set Up a Private Information Store Only Server
 
+{% raw %}
+
 	Article: Q247274
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -127,3 +129,5 @@ permalink: /kb/247/Q247274/
 	
 	=============================================================================
 	
+
+{% endraw %}

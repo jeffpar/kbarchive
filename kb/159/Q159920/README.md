@@ -6,6 +6,8 @@ permalink: /kb/159/Q159920/
 
 ## Q159920: FP: Part of the Data Transferred with &quot;Publish Web&quot; Command
 
+{% raw %}
+
 	Article: Q159920
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.1,97; macintosh:1.0
@@ -70,3 +72,5 @@ permalink: /kb/159/Q159920/
 	
 	=============================================================================
 	
+
+{% endraw %}

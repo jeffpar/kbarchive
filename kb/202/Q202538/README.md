@@ -6,6 +6,8 @@ permalink: /kb/202/Q202538/
 
 ## Q202538: SMS: How to Edit MOF Files with MOF Manager
 
+{% raw %}
+
 	Article: Q202538
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -175,3 +177,5 @@ permalink: /kb/202/Q202538/
 	
 	=============================================================================
 	
+
+{% endraw %}

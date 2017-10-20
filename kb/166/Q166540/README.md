@@ -6,6 +6,8 @@ permalink: /kb/166/Q166540/
 
 ## Q166540: XFOR: IMC Appears Hung with Improper DN Format
 
+{% raw %}
+
 	Article: Q166540
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -87,3 +89,5 @@ permalink: /kb/166/Q166540/
 	
 	=============================================================================
 	
+
+{% endraw %}

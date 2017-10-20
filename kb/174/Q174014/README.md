@@ -6,6 +6,8 @@ permalink: /kb/174/Q174014/
 
 ## Q174014: How to Specify Which Modem to Use to Connect to MSN
 
+{% raw %}
+
 	Article: Q174014
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5,2.51,2.52,2.6
@@ -72,3 +74,5 @@ permalink: /kb/174/Q174014/
 	
 	=============================================================================
 	
+
+{% endraw %}

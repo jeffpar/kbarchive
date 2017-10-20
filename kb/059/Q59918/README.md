@@ -6,6 +6,8 @@ permalink: /kb/059/Q59918/
 
 ## Q59918: Mac Hyp: Add Multiple Recipients with One msmail Function Call
 
+{% raw %}
+
 	Article: Q59918
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,2.0a,2.0b,3.0
@@ -56,3 +58,5 @@ permalink: /kb/059/Q59918/
 	
 	=============================================================================
 	
+
+{% endraw %}

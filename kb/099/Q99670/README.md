@@ -6,6 +6,8 @@ permalink: /kb/099/Q99670/
 
 ## Q99670: BUG: RC /fe Switch Does Not Work
 
+{% raw %}
+
 	Article: Q99670
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -61,3 +63,5 @@ permalink: /kb/099/Q99670/
 	
 	=============================================================================
 	
+
+{% endraw %}

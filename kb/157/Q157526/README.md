@@ -6,6 +6,8 @@ permalink: /kb/157/Q157526/
 
 ## Q157526: PRB: &lt;None&gt; as the Remote View Join Type Causes Error
 
+{% raw %}
+
 	Article: Q157526
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,5.0,6.0
@@ -83,3 +85,5 @@ permalink: /kb/157/Q157526/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148139/
 
 ## Q148139: FIX: Default OLE Container w/ Splitters Faults on View Closure
 
+{% raw %}
+
 	Article: Q148139
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -104,3 +106,5 @@ permalink: /kb/148/Q148139/
 	
 	=============================================================================
 	
+
+{% endraw %}

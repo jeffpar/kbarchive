@@ -6,6 +6,8 @@ permalink: /kb/173/Q173577/
 
 ## Q173577: WD97: Some View Options Change Between Views
 
+{% raw %}
+
 	Article: Q173577
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -133,3 +135,5 @@ permalink: /kb/173/Q173577/
 	
 	=============================================================================
 	
+
+{% endraw %}

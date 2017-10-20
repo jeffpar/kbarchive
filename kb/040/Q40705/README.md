@@ -6,6 +6,8 @@ permalink: /kb/040/Q40705/
 
 ## Q40705: MS-DOS: Reassignment Buffer Size of ANSI.SYS
 
+{% raw %}
+
 	Article: Q40705
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.3,3.3a,4.x,5.x,6.0,6.2,6.21,6.22
@@ -43,3 +45,5 @@ permalink: /kb/040/Q40705/
 	
 	=============================================================================
 	
+
+{% endraw %}

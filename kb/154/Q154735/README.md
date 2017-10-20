@@ -6,6 +6,8 @@ permalink: /kb/154/Q154735/
 
 ## Q154735: TrueType Fonts Printed to File as Text with HP 4 or 4M Driver
 
+{% raw %}
+
 	Article: Q154735
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -71,3 +73,5 @@ permalink: /kb/154/Q154735/
 	
 	=============================================================================
 	
+
+{% endraw %}

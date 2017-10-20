@@ -6,6 +6,8 @@ permalink: /kb/266/Q266056/
 
 ## Q266056: Error Message Appears Stating that Video Drivers Not Installed
 
+{% raw %}
+
 	Article: Q266056
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -140,3 +142,5 @@ permalink: /kb/266/Q266056/
 	
 	=============================================================================
 	
+
+{% endraw %}

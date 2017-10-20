@@ -6,6 +6,8 @@ permalink: /kb/173/Q173539/
 
 ## Q173539: Routing and Remote Access Event ID 20063
 
+{% raw %}
+
 	Article: Q173539
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/173/Q173539/
 	
 	=============================================================================
 	
+
+{% endraw %}

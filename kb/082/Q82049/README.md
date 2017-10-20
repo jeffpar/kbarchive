@@ -6,6 +6,8 @@ permalink: /kb/082/Q82049/
 
 ## Q82049: &quot;No COM Ports Available&quot; Error on IBM PS/2 Computer
 
+{% raw %}
+
 	Article: Q82049
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/082/Q82049/
 	
 	=============================================================================
 	
+
+{% endraw %}

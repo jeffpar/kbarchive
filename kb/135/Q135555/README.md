@@ -6,6 +6,8 @@ permalink: /kb/135/Q135555/
 
 ## Q135555: Novell NetWare 4.x Reports Incorrect Maximum Connections
 
+{% raw %}
+
 	Article: Q135555
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/135/Q135555/
 	
 	=============================================================================
 	
+
+{% endraw %}

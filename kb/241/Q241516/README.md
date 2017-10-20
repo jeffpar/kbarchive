@@ -6,6 +6,8 @@ permalink: /kb/241/Q241516/
 
 ## Q241516: XADM: Exchange Becomes Unresponsive Approximately Every 24 Days
 
+{% raw %}
+
 	Article: Q241516
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -62,3 +64,5 @@ permalink: /kb/241/Q241516/
 	
 	=============================================================================
 	
+
+{% endraw %}

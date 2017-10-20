@@ -6,6 +6,8 @@ permalink: /kb/068/Q68385/
 
 ## Q68385: PRB: Compiler Lacks Warnings for Options Incompatible with /u
 
+{% raw %}
+
 	Article: Q68385
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0
@@ -55,3 +57,5 @@ permalink: /kb/068/Q68385/
 	
 	=============================================================================
 	
+
+{% endraw %}

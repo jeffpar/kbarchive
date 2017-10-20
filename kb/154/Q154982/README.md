@@ -6,6 +6,8 @@ permalink: /kb/154/Q154982/
 
 ## Q154982: ATDISK Reports Huge Disk Size on IDE Greater Than 2 GB
 
+{% raw %}
+
 	Article: Q154982
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -49,3 +51,5 @@ permalink: /kb/154/Q154982/
 	
 	=============================================================================
 	
+
+{% endraw %}

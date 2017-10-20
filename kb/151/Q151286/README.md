@@ -6,6 +6,8 @@ permalink: /kb/151/Q151286/
 
 ## Q151286: Top Articles on Setting Up Windows 95
 
+{% raw %}
+
 	Article: Q151286
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/151/Q151286/
 	
 	=============================================================================
 	
+
+{% endraw %}

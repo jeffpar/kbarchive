@@ -6,6 +6,8 @@ permalink: /kb/192/Q192134/
 
 ## Q192134: Err Msg: Error 621 or Error 623  When Connecting to MSN
 
+{% raw %}
+
 	Article: Q192134
 	Product(s): The Microsoft Network
 	Version(s): 2.5,2.51,2.52,2.6
@@ -86,3 +88,5 @@ permalink: /kb/192/Q192134/
 	
 	=============================================================================
 	
+
+{% endraw %}

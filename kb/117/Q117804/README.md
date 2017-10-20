@@ -6,6 +6,8 @@ permalink: /kb/117/Q117804/
 
 ## Q117804: PC Ext: Mailing to External Addresses Via Groups from Other PO
 
+{% raw %}
+
 	Article: Q117804
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2,3.2a,3.5
@@ -50,3 +52,5 @@ permalink: /kb/117/Q117804/
 	
 	=============================================================================
 	
+
+{% endraw %}

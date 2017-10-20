@@ -6,6 +6,8 @@ permalink: /kb/070/Q70363/
 
 ## Q70363: FIX: /PAGESIZE Option Not Supported in LIB 3.10
 
+{% raw %}
+
 	Article: Q70363
 	Product(s): Microsoft Programming Utilities
 	Version(s): 3.1
@@ -45,3 +47,5 @@ permalink: /kb/070/Q70363/
 	
 	=============================================================================
 	
+
+{% endraw %}

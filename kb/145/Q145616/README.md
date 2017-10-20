@@ -6,6 +6,8 @@ permalink: /kb/145/Q145616/
 
 ## Q145616: HOWTO: How to Enable Edit Menu Commands for Edit Controls
 
+{% raw %}
+
 	Article: Q145616
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0
@@ -158,3 +160,5 @@ permalink: /kb/145/Q145616/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84123/
 
 ## Q84123: V7VGA.DRV Not Updated in Windows 3.1 Upgrade
 
+{% raw %}
+
 	Article: Q84123
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/084/Q84123/
 	
 	=============================================================================
 	
+
+{% endraw %}

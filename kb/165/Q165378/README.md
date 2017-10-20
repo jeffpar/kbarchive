@@ -6,6 +6,8 @@ permalink: /kb/165/Q165378/
 
 ## Q165378: CG3: Clip Gallery 3.0 Does Not Display Path in Preview
 
+{% raw %}
+
 	Article: Q165378
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,97
@@ -60,3 +62,5 @@ permalink: /kb/165/Q165378/
 	
 	=============================================================================
 	
+
+{% endraw %}

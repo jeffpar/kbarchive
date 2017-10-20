@@ -6,6 +6,8 @@ permalink: /kb/191/Q191032/
 
 ## Q191032: WD97: HTML Images Greater Than 6&quot; Are Scaled on Import
 
+{% raw %}
+
 	Article: Q191032
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -49,3 +51,5 @@ permalink: /kb/191/Q191032/
 	
 	=============================================================================
 	
+
+{% endraw %}

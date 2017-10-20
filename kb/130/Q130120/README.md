@@ -6,6 +6,8 @@ permalink: /kb/130/Q130120/
 
 ## Q130120: Event Error 2000 Logged Repeatedly Due to Illegal Command
 
+{% raw %}
+
 	Article: Q130120
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -63,3 +65,5 @@ permalink: /kb/130/Q130120/
 	
 	=============================================================================
 	
+
+{% endraw %}

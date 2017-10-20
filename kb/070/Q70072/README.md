@@ -6,6 +6,8 @@ permalink: /kb/070/Q70072/
 
 ## Q70072: Corrupt RES File May Crash Dialog Editor
 
+{% raw %}
+
 	Article: Q70072
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -54,3 +56,5 @@ permalink: /kb/070/Q70072/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154620/
 
 ## Q154620: Windows NT 4.0 DNS Server Loses the Forwarders Settings
 
+{% raw %}
+
 	Article: Q154620
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/154/Q154620/
 	
 	=============================================================================
 	
+
+{% endraw %}

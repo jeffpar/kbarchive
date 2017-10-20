@@ -6,6 +6,8 @@ permalink: /kb/256/Q256827/
 
 ## Q256827: MapPoint 2001: There Was a Problem Opening &lt;Filename&gt;
 
+{% raw %}
+
 	Article: Q256827
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -60,3 +62,5 @@ permalink: /kb/256/Q256827/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66728/
 
 ## Q66728: Windows Err Msg: System Error Network Error Reading Drive &lt;x&gt;
 
+{% raw %}
+
 	Article: Q66728
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -63,3 +65,5 @@ permalink: /kb/066/Q66728/
 	
 	=============================================================================
 	
+
+{% endraw %}

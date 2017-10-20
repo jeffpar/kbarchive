@@ -6,6 +6,8 @@ permalink: /kb/137/Q137256/
 
 ## Q137256: Mac Multimedia &amp; Kids: Setup with Network and At Ease
 
+{% raw %}
+
 	Article: Q137256
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0,1.1,1.1a,2.0; :1994 edition,1995 edition,1997 edition
@@ -127,3 +129,5 @@ permalink: /kb/137/Q137256/
 	
 	=============================================================================
 	
+
+{% endraw %}

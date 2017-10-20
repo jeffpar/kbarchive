@@ -6,6 +6,8 @@ permalink: /kb/246/Q246120/
 
 ## Q246120: How To Determine Audit Policies from the Registry
 
+{% raw %}
+
 	Article: Q246120
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -104,3 +106,5 @@ permalink: /kb/246/Q246120/
 	
 	=============================================================================
 	
+
+{% endraw %}

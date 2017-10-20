@@ -6,6 +6,8 @@ permalink: /kb/152/Q152959/
 
 ## Q152959: XADM: How to Remove the First Exchange Server in a Site
 
+{% raw %}
+
 	Article: Q152959
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -192,3 +194,5 @@ permalink: /kb/152/Q152959/
 	
 	=============================================================================
 	
+
+{% endraw %}

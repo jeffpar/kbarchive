@@ -6,6 +6,8 @@ permalink: /kb/096/Q96747/
 
 ## Q96747: PC Win: Mail for Windows VFORMS.DLL 3.2.0.4064 Update
 
+{% raw %}
+
 	Article: Q96747
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b,3.2
@@ -145,3 +147,5 @@ permalink: /kb/096/Q96747/
 	
 	=============================================================================
 	
+
+{% endraw %}

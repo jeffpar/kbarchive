@@ -6,6 +6,8 @@ permalink: /kb/247/Q247660/
 
 ## Q247660: Error When Saving Routing &amp; Remote Access Service Configuration
 
+{% raw %}
+
 	Article: Q247660
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/247/Q247660/
 	
 	=============================================================================
 	
+
+{% endraw %}

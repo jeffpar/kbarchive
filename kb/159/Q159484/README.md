@@ -6,6 +6,8 @@ permalink: /kb/159/Q159484/
 
 ## Q159484: WD97: Simulating a Macro Pause in Visual Basic for Applications
 
+{% raw %}
+
 	Article: Q159484
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -127,3 +129,5 @@ permalink: /kb/159/Q159484/
 	
 	=============================================================================
 	
+
+{% endraw %}

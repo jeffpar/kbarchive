@@ -6,6 +6,8 @@ permalink: /kb/119/Q119519/
 
 ## Q119519: BUG: Aggregate Initializer Fails In VC++ 32-bit, Ver. 1.0, 2.0
 
+{% raw %}
+
 	Article: Q119519
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0
@@ -84,3 +86,5 @@ permalink: /kb/119/Q119519/
 	
 	=============================================================================
 	
+
+{% endraw %}

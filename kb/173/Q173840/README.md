@@ -6,6 +6,8 @@ permalink: /kb/173/Q173840/
 
 ## Q173840: Hardcore Visual Basic 2nd Ed. Comments and Corrections
 
+{% raw %}
+
 	Article: Q173840
 	Product(s): Microsoft Press
 	Version(s): 
@@ -441,3 +443,5 @@ permalink: /kb/173/Q173840/
 	
 	=============================================================================
 	
+
+{% endraw %}

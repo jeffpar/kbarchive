@@ -6,6 +6,8 @@ permalink: /kb/138/Q138073/
 
 ## Q138073: Saved Fury3 Game Does Not Save the Window Size
 
+{% raw %}
+
 	Article: Q138073
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -40,3 +42,5 @@ permalink: /kb/138/Q138073/
 	
 	=============================================================================
 	
+
+{% endraw %}

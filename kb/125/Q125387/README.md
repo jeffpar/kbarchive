@@ -6,6 +6,8 @@ permalink: /kb/125/Q125387/
 
 ## Q125387: SMS Inventory on Serial Mouse Hardware Takes a Long Time
 
+{% raw %}
+
 	Article: Q125387
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -43,3 +45,5 @@ permalink: /kb/125/Q125387/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/239/Q239126/
 
 ## Q239126: SMS: Output Corrupted When You Print IPF Files in Windows 95
 
+{% raw %}
+
 	Article: Q239126
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -51,3 +53,5 @@ permalink: /kb/239/Q239126/
 	
 	=============================================================================
 	
+
+{% endraw %}

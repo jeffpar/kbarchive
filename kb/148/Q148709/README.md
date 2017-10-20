@@ -6,6 +6,8 @@ permalink: /kb/148/Q148709/
 
 ## Q148709: Windows 95 Service Pack 1 Files Not Found After Setup
 
+{% raw %}
+
 	Article: Q148709
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -57,3 +59,5 @@ permalink: /kb/148/Q148709/
 	
 	=============================================================================
 	
+
+{% endraw %}

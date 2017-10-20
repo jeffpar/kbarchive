@@ -6,6 +6,8 @@ permalink: /kb/165/Q165060/
 
 ## Q165060: Printing a Fax May Produce a Solid Black Page
 
+{% raw %}
+
 	Article: Q165060
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:; Win2000:95
@@ -76,3 +78,5 @@ permalink: /kb/165/Q165060/
 	
 	=============================================================================
 	
+
+{% endraw %}

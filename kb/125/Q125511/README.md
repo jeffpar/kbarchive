@@ -6,6 +6,8 @@ permalink: /kb/125/Q125511/
 
 ## Q125511: PC Adm: Err Msg: Warning &#91;154&#93; Non-delivery Report...
 
+{% raw %}
+
 	Article: Q125511
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -59,3 +61,5 @@ permalink: /kb/125/Q125511/
 	
 	=============================================================================
 	
+
+{% endraw %}

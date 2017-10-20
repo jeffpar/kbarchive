@@ -6,6 +6,8 @@ permalink: /kb/130/Q130119/
 
 ## Q130119: DHCP Requests Not Returned by TokenRing Routers
 
+{% raw %}
+
 	Article: Q130119
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11,3.5
@@ -69,3 +71,5 @@ permalink: /kb/130/Q130119/
 	
 	=============================================================================
 	
+
+{% endraw %}

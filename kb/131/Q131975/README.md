@@ -6,6 +6,8 @@ permalink: /kb/131/Q131975/
 
 ## Q131975: SETUP.TXT Missing Information Regarding Diamond Viper PCI
 
+{% raw %}
+
 	Article: Q131975
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/131/Q131975/
 	
 	=============================================================================
 	
+
+{% endraw %}

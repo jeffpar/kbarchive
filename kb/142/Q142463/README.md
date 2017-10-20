@@ -6,6 +6,8 @@ permalink: /kb/142/Q142463/
 
 ## Q142463: FIX: Non-SourceSafe Visual Test Files Show Up as Checked Out
 
+{% raw %}
+
 	Article: Q142463
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0
@@ -69,3 +71,5 @@ permalink: /kb/142/Q142463/
 	
 	=============================================================================
 	
+
+{% endraw %}

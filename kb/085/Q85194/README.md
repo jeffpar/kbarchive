@@ -6,6 +6,8 @@ permalink: /kb/085/Q85194/
 
 ## Q85194: Top Questions and Answers for Windows 3.1
 
+{% raw %}
+
 	Article: Q85194
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -355,3 +357,5 @@ permalink: /kb/085/Q85194/
 	
 	=============================================================================
 	
+
+{% endraw %}

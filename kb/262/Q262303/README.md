@@ -6,6 +6,8 @@ permalink: /kb/262/Q262303/
 
 ## Q262303: XFOR: Mail Sent to Windows 2000 Contact from Notes/OL May Loop
 
+{% raw %}
+
 	Article: Q262303
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/262/Q262303/
 	
 	=============================================================================
 	
+
+{% endraw %}

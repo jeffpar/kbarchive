@@ -6,6 +6,8 @@ permalink: /kb/268/Q268095/
 
 ## Q268095: SMS: Modifying ProviderForLocalSite Value Causes MMC to Fail
 
+{% raw %}
+
 	Article: Q268095
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -95,3 +97,5 @@ permalink: /kb/268/Q268095/
 	
 	=============================================================================
 	
+
+{% endraw %}

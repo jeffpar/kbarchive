@@ -6,6 +6,8 @@ permalink: /kb/094/Q94386/
 
 ## Q94386: Insufficient Memory Error Message with DBLSPACE /RATIO
 
+{% raw %}
+
 	Article: Q94386
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22; WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/094/Q94386/
 	
 	=============================================================================
 	
+
+{% endraw %}

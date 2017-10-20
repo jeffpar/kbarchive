@@ -6,6 +6,8 @@ permalink: /kb/137/Q137817/
 
 ## Q137817: Microsoft Plus! CD-ROM Directory Listing (2 of 2)
 
+{% raw %}
+
 	Article: Q137817
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -473,3 +475,5 @@ permalink: /kb/137/Q137817/
 	
 	=============================================================================
 	
+
+{% endraw %}

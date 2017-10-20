@@ -6,6 +6,8 @@ permalink: /kb/111/Q111587/
 
 ## Q111587: BUG: _lread() Functions Incorrectly When No Floppy in Drive
 
+{% raw %}
+
 	Article: Q111587
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -52,3 +54,5 @@ permalink: /kb/111/Q111587/
 	
 	=============================================================================
 	
+
+{% endraw %}

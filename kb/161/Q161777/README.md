@@ -6,6 +6,8 @@ permalink: /kb/161/Q161777/
 
 ## Q161777: SNA Server/SnaBase Traps Receive Invalid Client Logon Message
 
+{% raw %}
+
 	Article: Q161777
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -93,3 +95,5 @@ permalink: /kb/161/Q161777/
 	
 	=============================================================================
 	
+
+{% endraw %}

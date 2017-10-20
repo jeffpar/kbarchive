@@ -6,6 +6,8 @@ permalink: /kb/174/Q174874/
 
 ## Q174874: FIX: Branched Files Restored to New Database Cause Corruption
 
+{% raw %}
+
 	Article: Q174874
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,97
@@ -65,3 +67,5 @@ permalink: /kb/174/Q174874/
 	
 	=============================================================================
 	
+
+{% endraw %}

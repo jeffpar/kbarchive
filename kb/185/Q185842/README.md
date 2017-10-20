@@ -6,6 +6,8 @@ permalink: /kb/185/Q185842/
 
 ## Q185842: XADM: 4.0 Server in 5.5 Site Does Not Function Properly
 
+{% raw %}
+
 	Article: Q185842
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.5
@@ -74,3 +76,5 @@ permalink: /kb/185/Q185842/
 	
 	=============================================================================
 	
+
+{% endraw %}

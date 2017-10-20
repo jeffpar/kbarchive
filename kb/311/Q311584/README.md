@@ -6,6 +6,8 @@ permalink: /kb/311/Q311584/
 
 ## Q311584: LUA App May Hang If VTAM Recycled While RUI_WRITE Outstanding
 
+{% raw %}
+
 	Article: Q311584
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0
@@ -160,3 +162,5 @@ permalink: /kb/311/Q311584/
 	
 	=============================================================================
 	
+
+{% endraw %}

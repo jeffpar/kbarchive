@@ -6,6 +6,8 @@ permalink: /kb/201/Q201807/
 
 ## Q201807: SMS: How to Distribute Event to Trap Configuration Data
 
+{% raw %}
+
 	Article: Q201807
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -77,3 +79,5 @@ permalink: /kb/201/Q201807/
 	
 	=============================================================================
 	
+
+{% endraw %}

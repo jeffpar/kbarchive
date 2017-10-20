@@ -6,6 +6,8 @@ permalink: /kb/163/Q163576/
 
 ## Q163576: XGEN: Changing the RPC Binding Order
 
+{% raw %}
+
 	Article: Q163576
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0,8.1; WINDOWS:4.0,5.0,8.0,8.01,8.02,8.03,8.04,8.5,9.0; winnt:4.0,5.0,5.5
@@ -230,3 +232,5 @@ permalink: /kb/163/Q163576/
 	
 	=============================================================================
 	
+
+{% endraw %}

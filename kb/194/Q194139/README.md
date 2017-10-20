@@ -6,6 +6,8 @@ permalink: /kb/194/Q194139/
 
 ## Q194139: XFOR: SNADS to Exchange Service Perfmon Counters don't Update
 
+{% raw %}
+
 	Article: Q194139
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -55,3 +57,5 @@ permalink: /kb/194/Q194139/
 	
 	=============================================================================
 	
+
+{% endraw %}

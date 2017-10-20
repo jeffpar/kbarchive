@@ -6,6 +6,8 @@ permalink: /kb/281/Q281403/
 
 ## Q281403: CGI Can't Load DLL in Directory with Extended ASCII Characters
 
+{% raw %}
+
 	Article: Q281403
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -88,3 +90,5 @@ permalink: /kb/281/Q281403/
 	
 	=============================================================================
 	
+
+{% endraw %}

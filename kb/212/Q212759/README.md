@@ -6,6 +6,8 @@ permalink: /kb/212/Q212759/
 
 ## Q212759: XFOR: CCMC Event 54 Conversion of Message Failed
 
+{% raw %}
+
 	Article: Q212759
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -91,3 +93,5 @@ permalink: /kb/212/Q212759/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/303/Q303856/
 
 ## Q303856: CFS2: Err Msg: K Mode Exception ....Physical Memory Stack Dump
 
+{% raw %}
+
 	Article: Q303856
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -110,3 +112,5 @@ permalink: /kb/303/Q303856/
 	
 	=============================================================================
 	
+
+{% endraw %}

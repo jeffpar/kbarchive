@@ -6,6 +6,8 @@ permalink: /kb/104/Q104945/
 
 ## Q104945: DOCERR: BEEPQQ and SLEEPQQ Deal in Milliseconds and Hz
 
+{% raw %}
+
 	Article: Q104945
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -86,3 +88,5 @@ permalink: /kb/104/Q104945/
 	
 	=============================================================================
 	
+
+{% endraw %}

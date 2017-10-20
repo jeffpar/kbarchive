@@ -6,6 +6,8 @@ permalink: /kb/196/Q196660/
 
 ## Q196660: WD97: Insertion Point Positioned Left of Inserted Fields
 
+{% raw %}
+
 	Article: Q196660
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/196/Q196660/
 	
 	=============================================================================
 	
+
+{% endraw %}

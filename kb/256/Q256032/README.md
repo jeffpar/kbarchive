@@ -6,6 +6,8 @@ permalink: /kb/256/Q256032/
 
 ## Q256032: XFOR: Exchange Server 5.5 Post-SP3 Connector Fixes Available
 
+{% raw %}
+
 	Article: Q256032
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -208,3 +210,5 @@ permalink: /kb/256/Q256032/
 	
 	=============================================================================
 	
+
+{% endraw %}

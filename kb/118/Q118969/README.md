@@ -6,6 +6,8 @@ permalink: /kb/118/Q118969/
 
 ## Q118969: X400: Err Msg: Error Malformed Address:Typ
 
+{% raw %}
+
 	Article: Q118969
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -76,3 +78,5 @@ permalink: /kb/118/Q118969/
 	
 	=============================================================================
 	
+
+{% endraw %}

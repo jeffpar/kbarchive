@@ -6,6 +6,8 @@ permalink: /kb/198/Q198536/
 
 ## Q198536: HOWTO: #include the Localized MFC Resources in an EXE or DLL
 
+{% raw %}
+
 	Article: Q198536
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -120,3 +122,5 @@ permalink: /kb/198/Q198536/
 	
 	=============================================================================
 	
+
+{% endraw %}

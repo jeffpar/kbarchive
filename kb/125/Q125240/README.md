@@ -6,6 +6,8 @@ permalink: /kb/125/Q125240/
 
 ## Q125240: Bookshelf: Error Message During Search Using Word &quot;Near&quot;
 
+{% raw %}
+
 	Article: Q125240
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition; WINDOWS:
@@ -60,3 +62,5 @@ permalink: /kb/125/Q125240/
 	
 	=============================================================================
 	
+
+{% endraw %}

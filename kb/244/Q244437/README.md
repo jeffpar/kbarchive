@@ -6,6 +6,8 @@ permalink: /kb/244/Q244437/
 
 ## Q244437: WD97: Splitting Rightmost Cell in Table Loses Some Format
 
+{% raw %}
+
 	Article: Q244437
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -69,3 +71,5 @@ permalink: /kb/244/Q244437/
 	
 	=============================================================================
 	
+
+{% endraw %}

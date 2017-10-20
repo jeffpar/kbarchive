@@ -6,6 +6,8 @@ permalink: /kb/194/Q194660/
 
 ## Q194660: Stop 0x0000000A After Installing Service Pack 4
 
+{% raw %}
+
 	Article: Q194660
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -68,3 +70,5 @@ permalink: /kb/194/Q194660/
 	
 	=============================================================================
 	
+
+{% endraw %}

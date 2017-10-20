@@ -6,6 +6,8 @@ permalink: /kb/139/Q139529/
 
 ## Q139529: Aztech and Reveal Cards: Poor Sound with Windows 32-Bit Drivers
 
+{% raw %}
+
 	Article: Q139529
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -98,3 +100,5 @@ permalink: /kb/139/Q139529/
 	
 	=============================================================================
 	
+
+{% endraw %}

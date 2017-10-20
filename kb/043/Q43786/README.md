@@ -6,6 +6,8 @@ permalink: /kb/043/Q43786/
 
 ## Q43786: QB 4.00/4.00b Can Wrongly Assign User-TYPE Variable; 4.50 OK
 
+{% raw %}
+
 	Article: Q43786
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -42,3 +44,5 @@ permalink: /kb/043/Q43786/
 	PRINT f.a
 	PRINT f.inx   ' this value will print out 0
 	END
+
+{% endraw %}

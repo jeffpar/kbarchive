@@ -6,6 +6,8 @@ permalink: /kb/100/Q100775/
 
 ## Q100775: INFO: Stack Checking for Windows NT-based Applications
 
+{% raw %}
+
 	Article: Q100775
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0,5.0,6.0
@@ -113,3 +115,5 @@ permalink: /kb/100/Q100775/
 	
 	=============================================================================
 	
+
+{% endraw %}

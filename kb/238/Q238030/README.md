@@ -6,6 +6,8 @@ permalink: /kb/238/Q238030/
 
 ## Q238030: HOWTO: Create HTML Help for MFC Application on WinCE
 
+{% raw %}
+
 	Article: Q238030
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -124,7 +126,7 @@ permalink: /kb/238/Q238030/
 	  WM_COMMAND message with ID_HELP in wparam is sent when Help/Help Topics menu
 	  item is selected.)
 	
-	      //} }AFX_MSG_MAP
+	      //}}AFX_MSG_MAP
 	      // Global help commands
 	      ON_COMMAND(ID_HELP, CMainFrame::OnHelpInfo)
 	  END_MESSAGE_MAP()
@@ -162,3 +164,5 @@ permalink: /kb/238/Q238030/
 	
 	=============================================================================
 	
+
+{% endraw %}

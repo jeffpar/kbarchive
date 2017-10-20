@@ -6,6 +6,8 @@ permalink: /kb/142/Q142365/
 
 ## Q142365: Member Support Phone Numbers for MSN, The Microsoft Network
 
+{% raw %}
+
 	Article: Q142365
 	Product(s): The Microsoft Network
 	Version(s): 2.51,2.52,2.6,5.0,5.1,5.2,5.3
@@ -71,3 +73,5 @@ permalink: /kb/142/Q142365/
 	
 	=============================================================================
 	
+
+{% endraw %}

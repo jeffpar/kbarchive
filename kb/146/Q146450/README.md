@@ -6,6 +6,8 @@ permalink: /kb/146/Q146450/
 
 ## Q146450: Scenes 1.0: Outer Space Disk 2 Contents
 
+{% raw %}
+
 	Article: Q146450
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -105,3 +107,5 @@ permalink: /kb/146/Q146450/
 	
 	=============================================================================
 	
+
+{% endraw %}

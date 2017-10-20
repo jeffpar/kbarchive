@@ -6,6 +6,8 @@ permalink: /kb/221/Q221650/
 
 ## Q221650: FIX: Error 11 (Function argument invalid) w/ SQL SELECT 'LIKE'
 
+{% raw %}
+
 	Article: Q221650
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -98,3 +100,5 @@ permalink: /kb/221/Q221650/
 	
 	=============================================================================
 	
+
+{% endraw %}

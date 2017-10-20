@@ -6,6 +6,8 @@ permalink: /kb/149/Q149914/
 
 ## Q149914: Cannot Use Special Graphics Character Set in VT100 Emulation
 
+{% raw %}
+
 	Article: Q149914
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -42,3 +44,5 @@ permalink: /kb/149/Q149914/
 	
 	=============================================================================
 	
+
+{% endraw %}

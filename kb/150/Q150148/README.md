@@ -6,6 +6,8 @@ permalink: /kb/150/Q150148/
 
 ## Q150148: BUG: FOR2715 Error Generated for Pointer Assignment
 
+{% raw %}
+
 	Article: Q150148
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -63,3 +65,5 @@ permalink: /kb/150/Q150148/
 	
 	=============================================================================
 	
+
+{% endraw %}

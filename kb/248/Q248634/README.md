@@ -6,6 +6,8 @@ permalink: /kb/248/Q248634/
 
 ## Q248634: IPX Routing Does Not Succeed on a Windows NT 4.0 Network
 
+{% raw %}
+
 	Article: Q248634
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/248/Q248634/
 	
 	=============================================================================
 	
+
+{% endraw %}

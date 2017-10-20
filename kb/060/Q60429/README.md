@@ -6,6 +6,8 @@ permalink: /kb/060/Q60429/
 
 ## Q60429: Using the C Emulator Library with an Assembly Program
 
+{% raw %}
+
 	Article: Q60429
 	Product(s): See article
 	Version(s): 5.10 5.10a | 5.10 5.10a
@@ -50,3 +52,5 @@ permalink: /kb/060/Q60429/
 	the Global Custom Flags field of the Assembler Flags Dialog box
 	(reached through the Options menu). This allows the C emulator library
 	to be used for all the assembler modules.
+
+{% endraw %}

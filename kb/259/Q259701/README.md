@@ -6,6 +6,8 @@ permalink: /kb/259/Q259701/
 
 ## Q259701: Extra Lines Appear in LU3 Print Job When You Use PDT
 
+{% raw %}
+
 	Article: Q259701
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP3
@@ -78,3 +80,5 @@ permalink: /kb/259/Q259701/
 	
 	=============================================================================
 	
+
+{% endraw %}

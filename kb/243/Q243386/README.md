@@ -6,6 +6,8 @@ permalink: /kb/243/Q243386/
 
 ## Q243386: IIS Metabase Encryption on the French Version of Windows 2000
 
+{% raw %}
+
 	Article: Q243386
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -47,3 +49,5 @@ permalink: /kb/243/Q243386/
 	
 	=============================================================================
 	
+
+{% endraw %}

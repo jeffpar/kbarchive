@@ -6,6 +6,8 @@ permalink: /kb/295/Q295649/
 
 ## Q295649: XADM: You May Be Unable to Start the Information Store
 
+{% raw %}
+
 	Article: Q295649
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -88,3 +90,5 @@ permalink: /kb/295/Q295649/
 	
 	=============================================================================
 	
+
+{% endraw %}

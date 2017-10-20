@@ -6,6 +6,8 @@ permalink: /kb/112/Q112286/
 
 ## Q112286: SMTP: Example of SMTP Gateway Log File
 
+{% raw %}
+
 	Article: Q112286
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -218,3 +220,5 @@ permalink: /kb/112/Q112286/
 	
 	=============================================================================
 	
+
+{% endraw %}

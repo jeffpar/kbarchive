@@ -6,6 +6,8 @@ permalink: /kb/112/Q112739/
 
 ## Q112739: Error Renaming Expanded Directory When Running NetWare 3.x
 
+{% raw %}
+
 	Article: Q112739
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/112/Q112739/
 	
 	=============================================================================
 	
+
+{% endraw %}

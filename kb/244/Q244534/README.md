@@ -6,6 +6,8 @@ permalink: /kb/244/Q244534/
 
 ## Q244534: WD97: Word Saves Document Without Prompting to Save
 
+{% raw %}
+
 	Article: Q244534
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -55,3 +57,5 @@ permalink: /kb/244/Q244534/
 	
 	=============================================================================
 	
+
+{% endraw %}

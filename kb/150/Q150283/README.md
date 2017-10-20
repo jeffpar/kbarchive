@@ -6,6 +6,8 @@ permalink: /kb/150/Q150283/
 
 ## Q150283: SysKonnect FDDI Cards and Some EISA Computers possible data
 
+{% raw %}
+
 	Article: Q150283
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51
@@ -54,3 +56,5 @@ permalink: /kb/150/Q150283/
 	
 	=============================================================================
 	
+
+{% endraw %}

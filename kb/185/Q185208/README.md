@@ -6,6 +6,8 @@ permalink: /kb/185/Q185208/
 
 ## Q185208: Compaq CPM v1.10 Causes 100% Processor Usage in SNMP
 
+{% raw %}
+
 	Article: Q185208
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -52,3 +54,5 @@ permalink: /kb/185/Q185208/
 	
 	=============================================================================
 	
+
+{% endraw %}

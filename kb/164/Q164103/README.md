@@ -6,6 +6,8 @@ permalink: /kb/164/Q164103/
 
 ## Q164103: Auto Insert Notification Polling May Prevent Automatic Suspend
 
+{% raw %}
+
 	Article: Q164103
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -65,3 +67,5 @@ permalink: /kb/164/Q164103/
 	
 	=============================================================================
 	
+
+{% endraw %}

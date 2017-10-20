@@ -6,6 +6,8 @@ permalink: /kb/149/Q149562/
 
 ## Q149562: STOP Msg: &quot;c000021a &quot;- Using Local Path for Mandatory Profile
 
+{% raw %}
+
 	Article: Q149562
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -75,3 +77,5 @@ permalink: /kb/149/Q149562/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152863/
 
 ## Q152863: XFOR: IMC Generates Empty Body on S/MIME Messages
 
+{% raw %}
+
 	Article: Q152863
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -46,3 +48,5 @@ permalink: /kb/152/Q152863/
 	
 	=============================================================================
 	
+
+{% endraw %}

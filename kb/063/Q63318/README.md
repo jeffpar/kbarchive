@@ -6,6 +6,8 @@ permalink: /kb/063/Q63318/
 
 ## Q63318: BUG: PWB Print Does Not Put CR/LF at EOL If Text Selected
 
+{% raw %}
+
 	Article: Q63318
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -75,3 +77,5 @@ permalink: /kb/063/Q63318/
 	
 	=============================================================================
 	
+
+{% endraw %}

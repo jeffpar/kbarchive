@@ -6,6 +6,8 @@ permalink: /kb/173/Q173350/
 
 ## Q173350: WD97: When and Why Link Fixing May Not Work
 
+{% raw %}
+
 	Article: Q173350
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -190,3 +192,5 @@ permalink: /kb/173/Q173350/
 	
 	=============================================================================
 	
+
+{% endraw %}

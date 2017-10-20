@@ -6,6 +6,8 @@ permalink: /kb/173/Q173879/
 
 ## Q173879: HOWTO: Importing an Access Table into FoxPro for the Mac
 
+{% raw %}
+
 	Article: Q173879
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -117,3 +119,5 @@ permalink: /kb/173/Q173879/
 	
 	=============================================================================
 	
+
+{% endraw %}

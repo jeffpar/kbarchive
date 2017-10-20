@@ -6,6 +6,8 @@ permalink: /kb/047/Q47209/
 
 ## Q47209: New Features for Flight Simulator Version 4.00
 
+{% raw %}
+
 	Article: Q47209
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -35,3 +37,5 @@ permalink: /kb/047/Q47209/
 	
 	=============================================================================
 	
+
+{% endraw %}

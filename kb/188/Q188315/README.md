@@ -6,6 +6,8 @@ permalink: /kb/188/Q188315/
 
 ## Q188315: Stop Error Message in Sfmsrv.sys
 
+{% raw %}
+
 	Article: Q188315
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/188/Q188315/
 	
 	=============================================================================
 	
+
+{% endraw %}

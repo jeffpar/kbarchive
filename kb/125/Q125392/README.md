@@ -6,6 +6,8 @@ permalink: /kb/125/Q125392/
 
 ## Q125392: Windows Stops Responding When Moving or Resizing a Window
 
+{% raw %}
+
 	Article: Q125392
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/125/Q125392/
 	
 	=============================================================================
 	
+
+{% endraw %}

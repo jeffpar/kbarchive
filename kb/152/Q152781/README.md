@@ -6,6 +6,8 @@ permalink: /kb/152/Q152781/
 
 ## Q152781: FIX: Incorrect Return Values from COleDateTime Members
 
+{% raw %}
+
 	Article: Q152781
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -93,3 +95,5 @@ permalink: /kb/152/Q152781/
 	
 	=============================================================================
 	
+
+{% endraw %}

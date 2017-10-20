@@ -6,6 +6,8 @@ permalink: /kb/176/Q176741/
 
 ## Q176741: XADM: ~DEL in Directory Name Column Creates Duplicate User
 
+{% raw %}
+
 	Article: Q176741
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -50,3 +52,5 @@ permalink: /kb/176/Q176741/
 	
 	=============================================================================
 	
+
+{% endraw %}

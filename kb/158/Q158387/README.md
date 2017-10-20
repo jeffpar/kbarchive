@@ -6,6 +6,8 @@ permalink: /kb/158/Q158387/
 
 ## Q158387: RAS Cannot Use DHCP to Assign Addresses w/ PPTP Filtering
 
+{% raw %}
+
 	Article: Q158387
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -77,3 +79,5 @@ permalink: /kb/158/Q158387/
 	
 	=============================================================================
 	
+
+{% endraw %}

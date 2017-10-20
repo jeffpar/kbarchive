@@ -6,6 +6,8 @@ permalink: /kb/138/Q138463/
 
 ## Q138463: Upgrade Site Option Not Available in SMS 1.1 Setup
 
+{% raw %}
+
 	Article: Q138463
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -73,3 +75,5 @@ permalink: /kb/138/Q138463/
 	
 	=============================================================================
 	
+
+{% endraw %}

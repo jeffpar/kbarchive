@@ -6,6 +6,8 @@ permalink: /kb/175/Q175316/
 
 ## Q175316: Internet Mail Does Not Download E-mail Messages Using MSN
 
+{% raw %}
+
 	Article: Q175316
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,2.5 (OEM Release),95
@@ -91,3 +93,5 @@ permalink: /kb/175/Q175316/
 	
 	=============================================================================
 	
+
+{% endraw %}

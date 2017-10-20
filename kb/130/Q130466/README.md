@@ -6,6 +6,8 @@ permalink: /kb/130/Q130466/
 
 ## Q130466: PRB: Double-click in File Manager Starts Wrong FoxPro Version
 
+{% raw %}
+
 	Article: Q130466
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -83,3 +85,5 @@ permalink: /kb/130/Q130466/
 	
 	=============================================================================
 	
+
+{% endraw %}

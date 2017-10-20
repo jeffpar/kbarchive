@@ -6,6 +6,8 @@ permalink: /kb/049/Q49010/
 
 ## Q49010: How to Search and Replace Control Characters with M Editor
 
+{% raw %}
+
 	Article: Q49010
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 | 1.00 1.01 1.02
@@ -29,3 +31,5 @@ permalink: /kb/049/Q49010/
 	4. Invoke the quote function.
 	
 	5. Type the control character.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247886/
 
 ## Q247886: Computer Stops Responding to Mouse or Keyboard Input
 
+{% raw %}
+
 	Article: Q247886
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -88,3 +90,5 @@ permalink: /kb/247/Q247886/
 	
 	=============================================================================
 	
+
+{% endraw %}

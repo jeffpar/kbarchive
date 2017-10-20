@@ -6,6 +6,8 @@ permalink: /kb/137/Q137136/
 
 ## Q137136: RAS Not Saving Terminal &amp; Script Options for ISDN or X.25 Ports
 
+{% raw %}
+
 	Article: Q137136
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -60,3 +62,5 @@ permalink: /kb/137/Q137136/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82528/
 
 ## Q82528: Some Printers Don't Get Correct Resolution in Excel 4
 
+{% raw %}
+
 	Article: Q82528
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -44,3 +46,5 @@ permalink: /kb/082/Q82528/
 	
 	=============================================================================
 	
+
+{% endraw %}

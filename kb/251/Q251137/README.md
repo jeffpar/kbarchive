@@ -6,6 +6,8 @@ permalink: /kb/251/Q251137/
 
 ## Q251137: XADM: Exchange Server 5.5 Post-SP3 Message Transfer Agent Fixes
 
+{% raw %}
+
 	Article: Q251137
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -260,3 +262,5 @@ permalink: /kb/251/Q251137/
 	
 	=============================================================================
 	
+
+{% endraw %}

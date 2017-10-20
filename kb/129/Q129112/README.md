@@ -6,6 +6,8 @@ permalink: /kb/129/Q129112/
 
 ## Q129112: How to Install SourceSafe on a Windows 95 Workstation
 
+{% raw %}
+
 	Article: Q129112
 	Product(s): Microsoft SourceSafe
 	Version(s): 3.1
@@ -59,3 +61,5 @@ permalink: /kb/129/Q129112/
 	
 	=============================================================================
 	
+
+{% endraw %}

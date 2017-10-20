@@ -6,6 +6,8 @@ permalink: /kb/093/Q93647/
 
 ## Q93647: Creating a Custom Voice Pilot Vocabulary
 
+{% raw %}
+
 	Article: Q93647
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/093/Q93647/
 	
 	=============================================================================
 	
+
+{% endraw %}

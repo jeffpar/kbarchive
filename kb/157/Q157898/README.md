@@ -6,6 +6,8 @@ permalink: /kb/157/Q157898/
 
 ## Q157898: INFO: Setup Wizard Allows Commas in Filenames in Setup.lst
 
+{% raw %}
+
 	Article: Q157898
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -82,3 +84,5 @@ permalink: /kb/157/Q157898/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124508/
 
 ## Q124508: Explorapedia Nature 1.0: Contents of README.WRI
 
+{% raw %}
+
 	Article: Q124508
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -449,3 +451,5 @@ permalink: /kb/124/Q124508/
 	
 	=============================================================================
 	
+
+{% endraw %}

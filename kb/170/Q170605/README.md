@@ -6,6 +6,8 @@ permalink: /kb/170/Q170605/
 
 ## Q170605: XCLN: Troubleshooting Schedule Synchronization in Schedule+
 
+{% raw %}
+
 	Article: Q170605
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0a,7.5
@@ -257,3 +259,5 @@ permalink: /kb/170/Q170605/
 	
 	=============================================================================
 	
+
+{% endraw %}

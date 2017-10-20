@@ -6,6 +6,8 @@ permalink: /kb/158/Q158056/
 
 ## Q158056: WD97: Quick View Doesn't Convert Word 97 Documents
 
+{% raw %}
+
 	Article: Q158056
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -75,3 +77,5 @@ permalink: /kb/158/Q158056/
 	
 	=============================================================================
 	
+
+{% endraw %}

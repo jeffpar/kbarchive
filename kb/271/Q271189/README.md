@@ -6,6 +6,8 @@ permalink: /kb/271/Q271189/
 
 ## Q271189: Deleting All Users from Container Stops User Deletion from MMS
 
+{% raw %}
+
 	Article: Q271189
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,2.2
@@ -66,3 +68,5 @@ permalink: /kb/271/Q271189/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173368/
 
 ## Q173368: ATI Mach64GX/CT Chipsets May Hang System during Display Test
 
+{% raw %}
+
 	Article: Q173368
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -81,3 +83,5 @@ permalink: /kb/173/Q173368/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197508/
 
 ## Q197508: WD97: Error Message: Wizard Cannot Use the Active Document
 
+{% raw %}
+
 	Article: Q197508
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -94,3 +96,5 @@ permalink: /kb/197/Q197508/
 	
 	=============================================================================
 	
+
+{% endraw %}

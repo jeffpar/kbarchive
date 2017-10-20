@@ -6,6 +6,8 @@ permalink: /kb/130/Q130740/
 
 ## Q130740: Hairline Borders Do Not Print Using Access 2.0 in Windows NT
 
+{% raw %}
+
 	Article: Q130740
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/130/Q130740/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130061/
 
 ## Q130061: PRB: Korean Dollar Sign Is Shown as a Backslash
 
+{% raw %}
+
 	Article: Q130061
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:1.2,3.1,3.5
@@ -53,3 +55,5 @@ permalink: /kb/130/Q130061/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156085/
 
 ## Q156085: HOWTO: Have a Multiple-Line Caption on a Command Button
 
+{% raw %}
+
 	Article: Q156085
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -58,3 +60,5 @@ permalink: /kb/156/Q156085/
 	
 	=============================================================================
 	
+
+{% endraw %}

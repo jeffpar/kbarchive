@@ -6,6 +6,8 @@ permalink: /kb/152/Q152885/
 
 ## Q152885: XADM: Public Folder Empty After Copying From Favorites
 
+{% raw %}
+
 	Article: Q152885
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -45,3 +47,5 @@ permalink: /kb/152/Q152885/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111896/
 
 ## Q111896: PC Win: FAX Viewer Prints to Wrong Port
 
+{% raw %}
+
 	Article: Q111896
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -40,3 +42,5 @@ permalink: /kb/111/Q111896/
 	
 	=============================================================================
 	
+
+{% endraw %}

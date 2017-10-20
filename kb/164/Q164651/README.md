@@ -6,6 +6,8 @@ permalink: /kb/164/Q164651/
 
 ## Q164651: Tab Function Does Not Work on 3270 Printer LU Page
 
+{% raw %}
+
 	Article: Q164651
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/164/Q164651/
 	
 	=============================================================================
 	
+
+{% endraw %}

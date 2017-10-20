@@ -6,6 +6,8 @@ permalink: /kb/092/Q92551/
 
 ## Q92551: COMPAQ Portable Hangs when Sleep Button or ALT+TAB Pressed
 
+{% raw %}
+
 	Article: Q92551
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -70,3 +72,5 @@ permalink: /kb/092/Q92551/
 	
 	=============================================================================
 	
+
+{% endraw %}

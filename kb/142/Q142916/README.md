@@ -6,6 +6,8 @@ permalink: /kb/142/Q142916/
 
 ## Q142916: XADM: MTA Generates a 2171 Error
 
+{% raw %}
+
 	Article: Q142916
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -50,3 +52,5 @@ permalink: /kb/142/Q142916/
 	
 	=============================================================================
 	
+
+{% endraw %}

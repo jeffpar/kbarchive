@@ -6,6 +6,8 @@ permalink: /kb/159/Q159837/
 
 ## Q159837: PRB: Setting the Frame Type for IPX During Unattended Setup
 
+{% raw %}
+
 	Article: Q159837
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -115,3 +117,5 @@ permalink: /kb/159/Q159837/
 	
 	=============================================================================
 	
+
+{% endraw %}

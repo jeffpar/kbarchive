@@ -6,6 +6,8 @@ permalink: /kb/131/Q131816/
 
 ## Q131816: JULIA CHILD: README.WRI Contents (Part 1 of 2)
 
+{% raw %}
+
 	Article: Q131816
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995
@@ -110,3 +112,5 @@ permalink: /kb/131/Q131816/
 	
 	=============================================================================
 	
+
+{% endraw %}

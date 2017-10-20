@@ -6,6 +6,8 @@ permalink: /kb/126/Q126925/
 
 ## Q126925: PC Win: How to Create a New MMF (Stored Locally)
 
+{% raw %}
+
 	Article: Q126925
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -88,3 +90,5 @@ permalink: /kb/126/Q126925/
 	
 	=============================================================================
 	
+
+{% endraw %}

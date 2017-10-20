@@ -6,6 +6,8 @@ permalink: /kb/289/Q289810/
 
 ## Q289810: BUG: Right-Clicking Close Button May Cause VFP to Shut Down
 
+{% raw %}
+
 	Article: Q289810
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -88,3 +90,5 @@ permalink: /kb/289/Q289810/
 	
 	=============================================================================
 	
+
+{% endraw %}

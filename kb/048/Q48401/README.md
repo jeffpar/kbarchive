@@ -6,6 +6,8 @@ permalink: /kb/048/Q48401/
 
 ## Q48401: Multi-DIMensioned Arrays Are in Column Order; BC /R Row Order
 
+{% raw %}
+
 	Article: Q48401
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -54,3 +56,5 @@ permalink: /kb/048/Q48401/
 	Learning and Using Microsoft QuickBASIC" manual for Versions 6.00 and
 	6.00b, and from Page 560 of the "Microsoft BASIC 7.0: Programmer's
 	Guide" for BASIC PDS Version 7.00.
+
+{% endraw %}

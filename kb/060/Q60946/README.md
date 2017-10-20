@@ -6,6 +6,8 @@ permalink: /kb/060/Q60946/
 
 ## Q60946: Network Functions Provided by Windows 3.0 Environment
 
+{% raw %}
+
 	Article: Q60946
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/060/Q60946/
 	
 	=============================================================================
 	
+
+{% endraw %}

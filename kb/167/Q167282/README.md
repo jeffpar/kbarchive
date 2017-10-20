@@ -6,6 +6,8 @@ permalink: /kb/167/Q167282/
 
 ## Q167282: WD97: Equation Object Not Inserted at Insertion Point
 
+{% raw %}
+
 	Article: Q167282
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -145,3 +147,5 @@ permalink: /kb/167/Q167282/
 	
 	=============================================================================
 	
+
+{% endraw %}

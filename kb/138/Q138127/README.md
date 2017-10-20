@@ -6,6 +6,8 @@ permalink: /kb/138/Q138127/
 
 ## Q138127: How to Uninstall Windows 95
 
+{% raw %}
+
 	Article: Q138127
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -97,3 +99,5 @@ permalink: /kb/138/Q138127/
 	
 	=============================================================================
 	
+
+{% endraw %}

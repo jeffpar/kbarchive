@@ -6,6 +6,8 @@ permalink: /kb/165/Q165384/
 
 ## Q165384: HOWTO: How to Change the User Password Remotely and from Batch F
 
+{% raw %}
+
 	Article: Q165384
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -181,3 +183,5 @@ permalink: /kb/165/Q165384/
 	
 	=============================================================================
 	
+
+{% endraw %}

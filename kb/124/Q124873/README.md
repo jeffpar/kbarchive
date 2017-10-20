@@ -6,6 +6,8 @@ permalink: /kb/124/Q124873/
 
 ## Q124873: Disabling System Hard Error Message Dialog Boxes
 
+{% raw %}
+
 	Article: Q124873
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10
@@ -110,3 +112,5 @@ permalink: /kb/124/Q124873/
 	
 	=============================================================================
 	
+
+{% endraw %}

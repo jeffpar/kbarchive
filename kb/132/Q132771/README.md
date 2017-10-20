@@ -6,6 +6,8 @@ permalink: /kb/132/Q132771/
 
 ## Q132771: Lotus Programs Have Distorted Buttons on Title Bar
 
+{% raw %}
+
 	Article: Q132771
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/132/Q132771/
 	
 	=============================================================================
 	
+
+{% endraw %}

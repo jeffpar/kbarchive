@@ -6,6 +6,8 @@ permalink: /kb/166/Q166239/
 
 ## Q166239: XCLN: Err Msg: HTTP/1.0 404 Object Not Found
 
+{% raw %}
+
 	Article: Q166239
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -116,3 +118,5 @@ permalink: /kb/166/Q166239/
 	
 	=============================================================================
 	
+
+{% endraw %}

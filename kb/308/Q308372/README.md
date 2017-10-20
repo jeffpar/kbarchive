@@ -6,6 +6,8 @@ permalink: /kb/308/Q308372/
 
 ## Q308372: INFO: Logon Failure to Passport Returns &quot;f= &quot;  Error on the Quer
 
+{% raw %}
+
 	Article: Q308372
 	Product(s): Microsoft Developer Network
 	Version(s): 1.4,1.99,2.0
@@ -120,3 +122,5 @@ permalink: /kb/308/Q308372/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192453/
 
 ## Q192453: MoveFile API from Windows 95 with Invalid UNC Causes STOP 0xa
 
+{% raw %}
+
 	Article: Q192453
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0,5.0
@@ -71,3 +73,5 @@ permalink: /kb/192/Q192453/
 	
 	=============================================================================
 	
+
+{% endraw %}

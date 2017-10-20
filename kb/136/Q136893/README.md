@@ -6,6 +6,8 @@ permalink: /kb/136/Q136893/
 
 ## Q136893: First Contact Form for MS Mail PO2PO
 
+{% raw %}
+
 	Article: Q136893
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.x
@@ -118,3 +120,5 @@ permalink: /kb/136/Q136893/
 	
 	=============================================================================
 	
+
+{% endraw %}

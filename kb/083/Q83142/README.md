@@ -6,6 +6,8 @@ permalink: /kb/083/Q83142/
 
 ## Q83142: CorelDRAW! Can't Paste Paintbrush Images in Windows 3.1
 
+{% raw %}
+
 	Article: Q83142
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/083/Q83142/
 	
 	=============================================================================
 	
+
+{% endraw %}

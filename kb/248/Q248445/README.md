@@ -6,6 +6,8 @@ permalink: /kb/248/Q248445/
 
 ## Q248445: XADM: SP Upgrade Won't Work w. &quot;Access Is Denied&quot; Event ID 7028
 
+{% raw %}
+
 	Article: Q248445
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -91,3 +93,5 @@ permalink: /kb/248/Q248445/
 	
 	=============================================================================
 	
+
+{% endraw %}

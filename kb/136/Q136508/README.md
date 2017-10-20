@@ -6,6 +6,8 @@ permalink: /kb/136/Q136508/
 
 ## Q136508: Filtered Events For Server Tools Event Viewer Not Saved
 
+{% raw %}
+
 	Article: Q136508
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -46,3 +48,5 @@ permalink: /kb/136/Q136508/
 	
 	=============================================================================
 	
+
+{% endraw %}

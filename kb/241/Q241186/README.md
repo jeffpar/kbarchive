@@ -6,6 +6,8 @@ permalink: /kb/241/Q241186/
 
 ## Q241186: XADM: DirRep Bridgeheads Generate Unnecessary Notifications
 
+{% raw %}
+
 	Article: Q241186
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -77,3 +79,5 @@ permalink: /kb/241/Q241186/
 	
 	=============================================================================
 	
+
+{% endraw %}

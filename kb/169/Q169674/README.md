@@ -6,6 +6,8 @@ permalink: /kb/169/Q169674/
 
 ## Q169674: XADM: Read Receipt May Not Be Delivered If Message Read Offline
 
+{% raw %}
+
 	Article: Q169674
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -71,3 +73,5 @@ permalink: /kb/169/Q169674/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162984/
 
 ## Q162984: WD97: Error Inserting Video Clip In HTML Document
 
+{% raw %}
+
 	Article: Q162984
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -94,3 +96,5 @@ permalink: /kb/162/Q162984/
 	
 	=============================================================================
 	
+
+{% endraw %}

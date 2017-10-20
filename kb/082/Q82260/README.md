@@ -6,6 +6,8 @@ permalink: /kb/082/Q82260/
 
 ## Q82260: Windows 3.1 Setup /B Switch Does Not Affect Windows Settings
 
+{% raw %}
+
 	Article: Q82260
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/082/Q82260/
 	
 	=============================================================================
 	
+
+{% endraw %}

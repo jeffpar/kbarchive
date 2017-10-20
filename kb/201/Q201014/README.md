@@ -6,6 +6,8 @@ permalink: /kb/201/Q201014/
 
 ## Q201014: PRB: Blocking Occurs When You Call a VB ActiveX EXE from ASP
 
+{% raw %}
+
 	Article: Q201014
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0,6.0
@@ -136,3 +138,5 @@ permalink: /kb/201/Q201014/
 	
 	=============================================================================
 	
+
+{% endraw %}

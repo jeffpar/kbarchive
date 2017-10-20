@@ -6,6 +6,8 @@ permalink: /kb/137/Q137243/
 
 ## Q137243: Cannot Print Multiple Copies from WordPad or Paint
 
+{% raw %}
+
 	Article: Q137243
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -53,3 +55,5 @@ permalink: /kb/137/Q137243/
 	
 	=============================================================================
 	
+
+{% endraw %}

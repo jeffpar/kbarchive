@@ -6,6 +6,8 @@ permalink: /kb/107/Q107423/
 
 ## Q107423: Windows NT Resource Kit Vol. 2 - 3.5 Inch Disk Contents
 
+{% raw %}
+
 	Article: Q107423
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -93,3 +95,5 @@ permalink: /kb/107/Q107423/
 	
 	=============================================================================
 	
+
+{% endraw %}

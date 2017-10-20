@@ -6,6 +6,8 @@ permalink: /kb/170/Q170354/
 
 ## Q170354: WD97: Error Installing Updated Word 6.0/95 Export Converter
 
+{% raw %}
+
 	Article: Q170354
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -111,3 +113,5 @@ permalink: /kb/170/Q170354/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185561/
 
 ## Q185561: How to Enable Profile Quotas in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q185561
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -95,3 +97,5 @@ permalink: /kb/185/Q185561/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/031/Q31037/
 
 ## Q31037: Default Stack Size for QuickBASIC Versions 3.00 and 4.00
 
+{% raw %}
+
 	Article: Q31037
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -33,3 +35,5 @@ permalink: /kb/031/Q31037/
 	program uses the stack when it is running. The FRE(-2) function to
 	report unused stack space is not available in QuickBASIC Version 3.00
 	or earlier versions.
+
+{% endraw %}

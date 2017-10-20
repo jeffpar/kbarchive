@@ -6,6 +6,8 @@ permalink: /kb/110/Q110616/
 
 ## Q110616: Flight Simulator: Diamond Video Card Settings
 
+{% raw %}
+
 	Article: Q110616
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -81,3 +83,5 @@ permalink: /kb/110/Q110616/
 	
 	=============================================================================
 	
+
+{% endraw %}

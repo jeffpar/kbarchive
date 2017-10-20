@@ -6,6 +6,8 @@ permalink: /kb/149/Q149647/
 
 ## Q149647: Voice Features Limited By a Program's Abilities
 
+{% raw %}
+
 	Article: Q149647
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -39,3 +41,5 @@ permalink: /kb/149/Q149647/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130907/
 
 ## Q130907: Entering Japanese Characters Using a U.S. Keyboard and IME
 
+{% raw %}
+
 	Article: Q130907
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5
@@ -54,3 +56,5 @@ permalink: /kb/130/Q130907/
 	
 	=============================================================================
 	
+
+{% endraw %}

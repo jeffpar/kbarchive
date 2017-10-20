@@ -6,6 +6,8 @@ permalink: /kb/124/Q124409/
 
 ## Q124409: UT1x: Upsizing Wizard Incorrectly Converts Extended Characters
 
+{% raw %}
+
 	Article: Q124409
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:1.0
@@ -73,3 +75,5 @@ permalink: /kb/124/Q124409/
 	
 	=============================================================================
 	
+
+{% endraw %}

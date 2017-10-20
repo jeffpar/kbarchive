@@ -6,6 +6,8 @@ permalink: /kb/194/Q194126/
 
 ## Q194126: XFOR: How to Create an Active File to Use with NNTP
 
+{% raw %}
+
 	Article: Q194126
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -64,3 +66,5 @@ permalink: /kb/194/Q194126/
 	
 	=============================================================================
 	
+
+{% endraw %}

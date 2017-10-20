@@ -6,6 +6,8 @@ permalink: /kb/281/Q281608/
 
 ## Q281608: Encarta Researcher: Pasted Images Appear Blank or as a Gray Box
 
+{% raw %}
+
 	Article: Q281608
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/281/Q281608/
 	
 	=============================================================================
 	
+
+{% endraw %}

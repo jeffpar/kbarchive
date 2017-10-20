@@ -6,6 +6,8 @@ permalink: /kb/071/Q71230/
 
 ## Q71230: INFO: ExtTextOut() Instead of TextOut() to Improve Performance
 
+{% raw %}
+
 	Article: Q71230
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -48,3 +50,5 @@ permalink: /kb/071/Q71230/
 	
 	=============================================================================
 	
+
+{% endraw %}

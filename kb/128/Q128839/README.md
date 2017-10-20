@@ -6,6 +6,8 @@ permalink: /kb/128/Q128839/
 
 ## Q128839: How to Disable AST Desktop as the Windows Shell
 
+{% raw %}
+
 	Article: Q128839
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/128/Q128839/
 	
 	=============================================================================
 	
+
+{% endraw %}

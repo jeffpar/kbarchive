@@ -6,6 +6,8 @@ permalink: /kb/278/Q278246/
 
 ## Q278246: Combat Flight Simulator 2: How to Optimize Performance
 
+{% raw %}
+
 	Article: Q278246
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -466,3 +468,5 @@ permalink: /kb/278/Q278246/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175548/
 
 ## Q175548: About MSN Displays Incorrect Version of Internet Explorer
 
+{% raw %}
+
 	Article: Q175548
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.51,4.0,95
@@ -59,3 +61,5 @@ permalink: /kb/175/Q175548/
 	
 	=============================================================================
 	
+
+{% endraw %}

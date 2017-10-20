@@ -6,6 +6,8 @@ permalink: /kb/149/Q149741/
 
 ## Q149741: Using Uppercase Letters in Find Tab in Help Does Not Work
 
+{% raw %}
+
 	Article: Q149741
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/149/Q149741/
 	
 	=============================================================================
 	
+
+{% endraw %}

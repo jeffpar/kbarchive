@@ -6,6 +6,8 @@ permalink: /kb/150/Q150654/
 
 ## Q150654: MSB Ocean: Contents of the Readme File
 
+{% raw %}
+
 	Article: Q150654
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -317,3 +319,5 @@ permalink: /kb/150/Q150654/
 	
 	=============================================================================
 	
+
+{% endraw %}

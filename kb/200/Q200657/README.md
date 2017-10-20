@@ -6,6 +6,8 @@ permalink: /kb/200/Q200657/
 
 ## Q200657: SMS: Character Display Limit in Status Viewer Description Field
 
+{% raw %}
+
 	Article: Q200657
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -55,3 +57,5 @@ permalink: /kb/200/Q200657/
 	
 	=============================================================================
 	
+
+{% endraw %}

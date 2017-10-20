@@ -6,6 +6,8 @@ permalink: /kb/166/Q166623/
 
 ## Q166623: SNA Server Rejects FMH-5 Attach Intended for TP on NT Client
 
+{% raw %}
+
 	Article: Q166623
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1
@@ -74,3 +76,5 @@ permalink: /kb/166/Q166623/
 	
 	=============================================================================
 	
+
+{% endraw %}

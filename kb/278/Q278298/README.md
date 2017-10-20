@@ -6,6 +6,8 @@ permalink: /kb/278/Q278298/
 
 ## Q278298: Clients Are Not Detected When Network Discovery Is Used
 
+{% raw %}
+
 	Article: Q278298
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -75,3 +77,5 @@ permalink: /kb/278/Q278298/
 	
 	=============================================================================
 	
+
+{% endraw %}

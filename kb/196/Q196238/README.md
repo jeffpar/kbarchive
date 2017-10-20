@@ -6,6 +6,8 @@ permalink: /kb/196/Q196238/
 
 ## Q196238: SNARAS Goes Into Infinite Loop When Invalid Msg Type Is Received
 
+{% raw %}
+
 	Article: Q196238
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,4.0
@@ -84,3 +86,5 @@ permalink: /kb/196/Q196238/
 	
 	=============================================================================
 	
+
+{% endraw %}

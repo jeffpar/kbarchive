@@ -6,6 +6,8 @@ permalink: /kb/232/Q232958/
 
 ## Q232958: INFO: Cannot Restart CESH After the Connection Is Broken
 
+{% raw %}
+
 	Article: Q232958
 	Product(s): Microsoft C Compiler
 	Version(s): N\A:2.11,2.12; WINDOWS:
@@ -49,3 +51,5 @@ permalink: /kb/232/Q232958/
 	
 	=============================================================================
 	
+
+{% endraw %}

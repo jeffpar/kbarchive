@@ -6,6 +6,8 @@ permalink: /kb/113/Q113166/
 
 ## Q113166: PC Adm: Err Msg: Moving User 'UserName' Failed
 
+{% raw %}
+
 	Article: Q113166
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -88,3 +90,5 @@ permalink: /kb/113/Q113166/
 	
 	=============================================================================
 	
+
+{% endraw %}

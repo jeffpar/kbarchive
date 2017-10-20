@@ -6,6 +6,8 @@ permalink: /kb/038/Q38277/
 
 ## Q38277: LOCATE Must Place Cursor in VIEW PRINT Window or Line 25
 
+{% raw %}
+
 	Article: Q38277
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -37,3 +39,5 @@ permalink: /kb/038/Q38277/
 	   VIEW PRINT 4 TO 12
 	   LOCATE 25, 1     ' This LOCATE is OK
 	   LOCATE 13, 1     ' This LOCATE is an "Illegal Function Call"
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139845/
 
 ## Q139845: Long File Names Not Displayed During Compression
 
+{% raw %}
+
 	Article: Q139845
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -49,3 +51,5 @@ permalink: /kb/139/Q139845/
 	
 	=============================================================================
 	
+
+{% endraw %}

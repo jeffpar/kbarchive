@@ -6,6 +6,8 @@ permalink: /kb/128/Q128796/
 
 ## Q128796: Running After Dark: Unable to Access Serial and Parallel Ports
 
+{% raw %}
+
 	Article: Q128796
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/128/Q128796/
 	
 	=============================================================================
 	
+
+{% endraw %}

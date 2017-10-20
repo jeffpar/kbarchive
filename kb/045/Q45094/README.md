@@ -6,6 +6,8 @@ permalink: /kb/045/Q45094/
 
 ## Q45094: -FPc Generates Call to &#95;&#95;fld1 with ++ Operator
 
+{% raw %}
+
 	Article: Q45094
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -44,3 +46,5 @@ permalink: /kb/045/Q45094/
 	Microsoft has confirmed this to be a problem with C Version 5.10. We
 	are researching this problem and will post new information as it
 	becomes available.
+
+{% endraw %}

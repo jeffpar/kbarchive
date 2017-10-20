@@ -6,6 +6,8 @@ permalink: /kb/185/Q185494/
 
 ## Q185494: VADEVDBG.PKG Single Stepping Crashes With Register Window
 
+{% raw %}
+
 	Article: Q185494
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0sp3
@@ -61,3 +63,5 @@ permalink: /kb/185/Q185494/
 	
 	=============================================================================
 	
+
+{% endraw %}

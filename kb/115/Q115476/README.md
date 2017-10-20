@@ -6,6 +6,8 @@ permalink: /kb/115/Q115476/
 
 ## Q115476: How To Encrypt FoxPro .DBF Files
 
+{% raw %}
+
 	Article: Q115476
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 2.50b 2.60 3.00| 2.00
@@ -102,3 +104,5 @@ permalink: /kb/115/Q115476/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168944/
 
 ## Q168944: Epson Stylus Color 800 Does Not Print with Service Pack 3
 
+{% raw %}
+
 	Article: Q168944
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/168/Q168944/
 	
 	=============================================================================
 	
+
+{% endraw %}

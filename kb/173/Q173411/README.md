@@ -6,6 +6,8 @@ permalink: /kb/173/Q173411/
 
 ## Q173411: CG3: Error Trying to Delete Image, Category in ClipArt Gallery
 
+{% raw %}
+
 	Article: Q173411
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 3.0; WINDOWS:97
@@ -166,3 +168,5 @@ permalink: /kb/173/Q173411/
 	
 	=============================================================================
 	
+
+{% endraw %}

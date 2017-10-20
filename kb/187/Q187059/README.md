@@ -6,6 +6,8 @@ permalink: /kb/187/Q187059/
 
 ## Q187059: Client Uninstall Does Not Prompt for Restart
 
+{% raw %}
+
 	Article: Q187059
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/187/Q187059/
 	
 	=============================================================================
 	
+
+{% endraw %}

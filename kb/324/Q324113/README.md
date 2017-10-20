@@ -6,6 +6,8 @@ permalink: /kb/324/Q324113/
 
 ## Q324113: SDB Cannot Service Look-up Requests Before Required Steps Comple
 
+{% raw %}
+
 	Article: Q324113
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -112,3 +114,5 @@ permalink: /kb/324/Q324113/
 	
 	=============================================================================
 	
+
+{% endraw %}

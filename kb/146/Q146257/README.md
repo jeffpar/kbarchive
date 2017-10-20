@@ -6,6 +6,8 @@ permalink: /kb/146/Q146257/
 
 ## Q146257: XCLN: Screen Refresh Problems When Using the Color Dialog
 
+{% raw %}
+
 	Article: Q146257
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -58,3 +60,5 @@ permalink: /kb/146/Q146257/
 	
 	=============================================================================
 	
+
+{% endraw %}

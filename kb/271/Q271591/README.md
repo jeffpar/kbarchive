@@ -6,6 +6,8 @@ permalink: /kb/271/Q271591/
 
 ## Q271591: XFOR: Virus Scan Software Interferes with Message Delivery
 
+{% raw %}
+
 	Article: Q271591
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -83,3 +85,5 @@ permalink: /kb/271/Q271591/
 	
 	=============================================================================
 	
+
+{% endraw %}

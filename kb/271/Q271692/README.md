@@ -6,6 +6,8 @@ permalink: /kb/271/Q271692/
 
 ## Q271692: INFO: Avoid Truncation When You Use Data Report ExportReport
 
+{% raw %}
+
 	Article: Q271692
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -66,3 +68,5 @@ permalink: /kb/271/Q271692/
 	
 	=============================================================================
 	
+
+{% endraw %}

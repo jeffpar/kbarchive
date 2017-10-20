@@ -6,6 +6,8 @@ permalink: /kb/100/Q100998/
 
 ## Q100998: BUG: ? Command with FONT Clause Prints Double Spaced
 
+{% raw %}
+
 	Article: Q100998
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,2.5a,2.5b,2.6,3.0,5.0,5.0a,6.0,7.0
@@ -98,3 +100,5 @@ permalink: /kb/100/Q100998/
 	
 	=============================================================================
 	
+
+{% endraw %}

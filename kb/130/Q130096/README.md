@@ -6,6 +6,8 @@ permalink: /kb/130/Q130096/
 
 ## Q130096: PC Win: Err Msg: This Account Is Not a Valid User of this...
 
+{% raw %}
+
 	Article: Q130096
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2,3.2a
@@ -72,3 +74,5 @@ permalink: /kb/130/Q130096/
 	
 	=============================================================================
 	
+
+{% endraw %}

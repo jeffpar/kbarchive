@@ -6,6 +6,8 @@ permalink: /kb/161/Q161802/
 
 ## Q161802: Stop 0x0000000A During Create File SMB
 
+{% raw %}
+
 	Article: Q161802
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -74,3 +76,5 @@ permalink: /kb/161/Q161802/
 	
 	=============================================================================
 	
+
+{% endraw %}

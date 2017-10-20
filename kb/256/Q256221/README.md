@@ -6,6 +6,8 @@ permalink: /kb/256/Q256221/
 
 ## Q256221: XCON: Exchange Server 5.5 POP3 Clients Cannot Authenticate
 
+{% raw %}
+
 	Article: Q256221
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -60,3 +62,5 @@ permalink: /kb/256/Q256221/
 	
 	=============================================================================
 	
+
+{% endraw %}

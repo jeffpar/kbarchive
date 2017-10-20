@@ -6,6 +6,8 @@ permalink: /kb/184/Q184759/
 
 ## Q184759: XADM: Pfadmin.exe 1.2.1 Uses Commas As The Delimiter
 
+{% raw %}
+
 	Article: Q184759
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -71,3 +73,5 @@ permalink: /kb/184/Q184759/
 	
 	=============================================================================
 	
+
+{% endraw %}

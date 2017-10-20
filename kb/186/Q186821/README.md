@@ -6,6 +6,8 @@ permalink: /kb/186/Q186821/
 
 ## Q186821: Unable to Access CD-ROM with CD-ROM Changer
 
+{% raw %}
+
 	Article: Q186821
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -57,3 +59,5 @@ permalink: /kb/186/Q186821/
 	
 	=============================================================================
 	
+
+{% endraw %}

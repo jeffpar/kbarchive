@@ -6,6 +6,8 @@ permalink: /kb/167/Q167807/
 
 ## Q167807: XFOR: Lotus cc:Mail Connector Event ID 45
 
+{% raw %}
+
 	Article: Q167807
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -56,3 +58,5 @@ permalink: /kb/167/Q167807/
 	
 	=============================================================================
 	
+
+{% endraw %}

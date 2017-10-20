@@ -6,6 +6,8 @@ permalink: /kb/185/Q185457/
 
 ## Q185457: XADM: Information Store Shuts Down; Database at Maximum Size
 
+{% raw %}
+
 	Article: Q185457
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -140,3 +142,5 @@ permalink: /kb/185/Q185457/
 	
 	=============================================================================
 	
+
+{% endraw %}

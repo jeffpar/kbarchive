@@ -6,6 +6,8 @@ permalink: /kb/087/Q87423/
 
 ## Q87423: 360K Floppy Boot Disk for LAN Manager Basic Workstation
 
+{% raw %}
+
 	Article: Q87423
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -124,3 +126,5 @@ permalink: /kb/087/Q87423/
 	
 	=============================================================================
 	
+
+{% endraw %}

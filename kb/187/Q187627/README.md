@@ -6,6 +6,8 @@ permalink: /kb/187/Q187627/
 
 ## Q187627: Command Line Options for Internal App Compatibility Tools
 
+{% raw %}
+
 	Article: Q187627
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -146,3 +148,5 @@ permalink: /kb/187/Q187627/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173061/
 
 ## Q173061: Delay Opening Explorer, Control Panel, &amp; Other RPC-Aware Apps
 
+{% raw %}
+
 	Article: Q173061
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/173/Q173061/
 	
 	=============================================================================
 	
+
+{% endraw %}

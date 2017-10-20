@@ -6,6 +6,8 @@ permalink: /kb/051/Q51977/
 
 ## Q51977: QuickAssembler Does Not Support 64K Data Segments
 
+{% raw %}
+
 	Article: Q51977
 	Product(s): See article
 	Version(s): 2.01
@@ -42,3 +44,5 @@ permalink: /kb/051/Q51977/
 	Microsoft has confirmed this to be a problem in Version 2.01. We are
 	researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

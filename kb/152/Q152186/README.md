@@ -6,6 +6,8 @@ permalink: /kb/152/Q152186/
 
 ## Q152186: Possible Network Data Corruption If Locking Not Used
 
+{% raw %}
+
 	Article: Q152186
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/152/Q152186/
 	
 	=============================================================================
 	
+
+{% endraw %}

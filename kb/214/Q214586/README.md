@@ -6,6 +6,8 @@ permalink: /kb/214/Q214586/
 
 ## Q214586: Close Combat III: How to Install the Matrox G-100 Video Driver
 
+{% raw %}
+
 	Article: Q214586
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -99,3 +101,5 @@ permalink: /kb/214/Q214586/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/217/Q217579/
 
 ## Q217579: Motocross Madness: Ground Textures Are Distorted or Missing
 
+{% raw %}
+
 	Article: Q217579
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.1,2.5
@@ -83,3 +85,5 @@ permalink: /kb/217/Q217579/
 	
 	=============================================================================
 	
+
+{% endraw %}

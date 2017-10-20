@@ -6,6 +6,8 @@ permalink: /kb/274/Q274167/
 
 ## Q274167: FIX: Unable to Create or Modify Tables/Views on SQL Server 2000
 
+{% raw %}
+
 	Article: Q274167
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -109,3 +111,5 @@ permalink: /kb/274/Q274167/
 	
 	=============================================================================
 	
+
+{% endraw %}

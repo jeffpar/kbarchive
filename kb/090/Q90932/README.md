@@ -6,6 +6,8 @@ permalink: /kb/090/Q90932/
 
 ## Q90932: PC Tools May Prevent WFWG From Starting in Enhanced Mode
 
+{% raw %}
+
 	Article: Q90932
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -66,3 +68,5 @@ permalink: /kb/090/Q90932/
 	
 	=============================================================================
 	
+
+{% endraw %}

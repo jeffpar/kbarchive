@@ -6,6 +6,8 @@ permalink: /kb/124/Q124525/
 
 ## Q124525: INFO: How SourceSafe Locks Files in the DATA Directory
 
+{% raw %}
+
 	Article: Q124525
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/124/Q124525/
 	
 	=============================================================================
 	
+
+{% endraw %}

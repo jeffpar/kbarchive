@@ -6,6 +6,8 @@ permalink: /kb/272/Q272693/
 
 ## Q272693: 0x80004005 ASP Error Occurs with Crystal Reports 8
 
+{% raw %}
+
 	Article: Q272693
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -137,3 +139,5 @@ permalink: /kb/272/Q272693/
 	
 	=============================================================================
 	
+
+{% endraw %}

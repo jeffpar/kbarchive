@@ -6,6 +6,8 @@ permalink: /kb/042/Q42469/
 
 ## Q42469: FOR...NEXT with Floating-Point Counter May Not Execute Fully
 
+{% raw %}
+
 	Article: Q42469
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -50,3 +52,5 @@ permalink: /kb/042/Q42469/
 	to properly execute five times:
 	
 	   DEFDBL A-Z
+
+{% endraw %}

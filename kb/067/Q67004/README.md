@@ -6,6 +6,8 @@ permalink: /kb/067/Q67004/
 
 ## Q67004: L2002 When Creating a Dynamic Link Library
 
+{% raw %}
+
 	Article: Q67004
 	Product(s): See article
 	Version(s): 5.10 5.11
@@ -62,3 +64,5 @@ permalink: /kb/067/Q67004/
 	
 	   c=i;
 	}
+
+{% endraw %}

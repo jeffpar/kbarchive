@@ -6,6 +6,8 @@ permalink: /kb/216/Q216698/
 
 ## Q216698: Cannot Connect to Network Drive While Backing Up
 
+{% raw %}
+
 	Article: Q216698
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP3
@@ -55,3 +57,5 @@ permalink: /kb/216/Q216698/
 	
 	=============================================================================
 	
+
+{% endraw %}

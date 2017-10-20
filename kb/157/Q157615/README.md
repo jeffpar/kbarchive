@@ -6,6 +6,8 @@ permalink: /kb/157/Q157615/
 
 ## Q157615: WD97: Word Can't Open Data Source If String Is Too Long
 
+{% raw %}
+
 	Article: Q157615
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/157/Q157615/
 	
 	=============================================================================
 	
+
+{% endraw %}

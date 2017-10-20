@@ -6,6 +6,8 @@ permalink: /kb/172/Q172912/
 
 ## Q172912: Windows NT May Appear to Hang When a Mirrored IDE Drive Fails
 
+{% raw %}
+
 	Article: Q172912
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -78,3 +80,5 @@ permalink: /kb/172/Q172912/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/221/Q221712/
 
 ## Q221712: FIX: FFCs- _XMLTag/_StyleTag in _html.vcx Use Wrong Extension
 
+{% raw %}
+
 	Article: Q221712
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -83,3 +85,5 @@ permalink: /kb/221/Q221712/
 	
 	=============================================================================
 	
+
+{% endraw %}

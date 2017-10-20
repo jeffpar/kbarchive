@@ -6,6 +6,8 @@ permalink: /kb/246/Q246401/
 
 ## Q246401: MS99-061: IIS May Improperly Parse Specific Escape Characters
 
+{% raw %}
+
 	Article: Q246401
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6
@@ -183,3 +185,5 @@ permalink: /kb/246/Q246401/
 	
 	=============================================================================
 	
+
+{% endraw %}

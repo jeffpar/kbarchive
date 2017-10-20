@@ -6,6 +6,8 @@ permalink: /kb/132/Q132710/
 
 ## Q132710: Err Msg Installing SQL 6.0: Setup Has Detected SMS Version 1.0
 
+{% raw %}
+
 	Article: Q132710
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,6.0
@@ -74,3 +76,5 @@ permalink: /kb/132/Q132710/
 	
 	=============================================================================
 	
+
+{% endraw %}

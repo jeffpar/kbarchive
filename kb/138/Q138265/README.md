@@ -6,6 +6,8 @@ permalink: /kb/138/Q138265/
 
 ## Q138265: Creator Field Empty When Creating Recurring Tasks
 
+{% raw %}
+
 	Article: Q138265
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -46,3 +48,5 @@ permalink: /kb/138/Q138265/
 	
 	=============================================================================
 	
+
+{% endraw %}

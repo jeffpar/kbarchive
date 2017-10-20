@@ -6,6 +6,8 @@ permalink: /kb/114/Q114939/
 
 ## Q114939: WD97: Novell NetWare Network Privileges Required to Run Word
 
+{% raw %}
+
 	Article: Q114939
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -208,3 +210,5 @@ permalink: /kb/114/Q114939/
 	
 	=============================================================================
 	
+
+{% endraw %}

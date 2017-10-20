@@ -6,6 +6,8 @@ permalink: /kb/163/Q163547/
 
 ## Q163547: WD97: How to Create Custom Toolbars and Toolbar Buttons
 
+{% raw %}
+
 	Article: Q163547
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -167,3 +169,5 @@ permalink: /kb/163/Q163547/
 	
 	=============================================================================
 	
+
+{% endraw %}

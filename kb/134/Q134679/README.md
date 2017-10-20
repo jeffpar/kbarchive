@@ -6,6 +6,8 @@ permalink: /kb/134/Q134679/
 
 ## Q134679: FIX: Loss of Decimal Digits with MFC Database Classes
 
+{% raw %}
+
 	Article: Q134679
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5 1.51 1.52 1.52a 1.52b 2.0
@@ -275,3 +277,5 @@ permalink: /kb/134/Q134679/
 	
 	=============================================================================
 	
+
+{% endraw %}

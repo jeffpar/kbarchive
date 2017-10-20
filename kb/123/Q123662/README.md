@@ -6,6 +6,8 @@ permalink: /kb/123/Q123662/
 
 ## Q123662: BUG: Select Case Does Not Allow Character Expression String
 
+{% raw %}
+
 	Article: Q123662
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -110,3 +112,5 @@ permalink: /kb/123/Q123662/
 	
 	=============================================================================
 	
+
+{% endraw %}

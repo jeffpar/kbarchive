@@ -6,6 +6,8 @@ permalink: /kb/195/Q195095/
 
 ## Q195095: CG3: Previews on Network Drive Error with Clip Gallery 3.0
 
+{% raw %}
+
 	Article: Q195095
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0
@@ -116,3 +118,5 @@ permalink: /kb/195/Q195095/
 	
 	=============================================================================
 	
+
+{% endraw %}

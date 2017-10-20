@@ -6,6 +6,8 @@ permalink: /kb/093/Q93004/
 
 ## Q93004: BUG: QuickHelp Paste Topic Command Pastes Two Extra Lines
 
+{% raw %}
+
 	Article: Q93004
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.7,1.83
@@ -71,3 +73,5 @@ permalink: /kb/093/Q93004/
 	
 	=============================================================================
 	
+
+{% endraw %}

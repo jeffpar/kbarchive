@@ -6,6 +6,8 @@ permalink: /kb/250/Q250338/
 
 ## Q250338: XADM: Mdbvu32 Enhancements for Viewing/Managing Rules Messages
 
+{% raw %}
+
 	Article: Q250338
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -80,3 +82,5 @@ permalink: /kb/250/Q250338/
 	
 	=============================================================================
 	
+
+{% endraw %}

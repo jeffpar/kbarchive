@@ -6,6 +6,8 @@ permalink: /kb/066/Q66665/
 
 ## Q66665: ASD: Cannot View 3-D Window 2 in Boeing Field Mode
 
+{% raw %}
+
 	Article: Q66665
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -34,3 +36,5 @@ permalink: /kb/066/Q66665/
 	
 	=============================================================================
 	
+
+{% endraw %}

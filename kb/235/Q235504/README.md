@@ -6,6 +6,8 @@ permalink: /kb/235/Q235504/
 
 ## Q235504: XFOR: Warning Event ID 31043 Logged by GroupWise Connector
 
+{% raw %}
+
 	Article: Q235504
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -72,3 +74,5 @@ permalink: /kb/235/Q235504/
 	
 	=============================================================================
 	
+
+{% endraw %}

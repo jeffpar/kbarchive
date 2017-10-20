@@ -6,6 +6,8 @@ permalink: /kb/155/Q155370/
 
 ## Q155370: FIX: Wizards May Display Invalid Table Names for CRecordset
 
+{% raw %}
+
 	Article: Q155370
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -60,3 +62,5 @@ permalink: /kb/155/Q155370/
 	
 	=============================================================================
 	
+
+{% endraw %}

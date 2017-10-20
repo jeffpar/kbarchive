@@ -6,6 +6,8 @@ permalink: /kb/071/Q71944/
 
 ## Q71944: COMPAQ LTE 386/20 Reverse Video
 
+{% raw %}
+
 	Article: Q71944
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/071/Q71944/
 	
 	=============================================================================
 	
+
+{% endraw %}

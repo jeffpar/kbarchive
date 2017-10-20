@@ -6,6 +6,8 @@ permalink: /kb/170/Q170998/
 
 ## Q170998: Cannot Log in to Windows NT Domain Over Internet Connection
 
+{% raw %}
+
 	Article: Q170998
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.5,3.51,4.0
@@ -98,3 +100,5 @@ permalink: /kb/170/Q170998/
 	
 	=============================================================================
 	
+
+{% endraw %}

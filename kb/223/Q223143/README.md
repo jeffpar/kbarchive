@@ -6,6 +6,8 @@ permalink: /kb/223/Q223143/
 
 ## Q223143: SMS: AUDIT32 Does Not Delete Temp MIF Created in Ms&#92;Sms&#92;Temp
 
+{% raw %}
+
 	Article: Q223143
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -102,3 +104,5 @@ permalink: /kb/223/Q223143/
 	
 	=============================================================================
 	
+
+{% endraw %}

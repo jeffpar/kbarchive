@@ -6,6 +6,8 @@ permalink: /kb/042/Q42669/
 
 ## Q42669: LINE INPUT#n Drops Null Characters from File; Use INPUT&#36;
 
+{% raw %}
+
 	Article: Q42669
 	Product(s): See article
 	Version(s): 1.x 2.x 3.00 4.00 4.00b 4.50
@@ -54,3 +56,5 @@ permalink: /kb/042/Q42669/
 	OPEN "test.dat" FOR OUTPUT AS #1
 	PRINT #1, "hello" + CHR$(0) + "world"
 	CLOSE #1
+
+{% endraw %}

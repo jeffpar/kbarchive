@@ -6,6 +6,8 @@ permalink: /kb/140/Q140846/
 
 ## Q140846: PPT7: &quot;Could Not Find Pngsetup.ex_&quot; Using Pack And Go Wizard
 
+{% raw %}
+
 	Article: Q140846
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 7.0
@@ -63,3 +65,5 @@ permalink: /kb/140/Q140846/
 	
 	=============================================================================
 	
+
+{% endraw %}

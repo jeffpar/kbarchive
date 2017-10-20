@@ -6,6 +6,8 @@ permalink: /kb/090/Q90008/
 
 ## Q90008: Low Memory Makes Voice Pilot Slow
 
+{% raw %}
+
 	Article: Q90008
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/090/Q90008/
 	
 	=============================================================================
 	
+
+{% endraw %}

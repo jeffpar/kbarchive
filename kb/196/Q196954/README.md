@@ -6,6 +6,8 @@ permalink: /kb/196/Q196954/
 
 ## Q196954: WD97: Cannot Merge a Barcode Field Based on a Condition
 
+{% raw %}
+
 	Article: Q196954
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/196/Q196954/
 	
 	=============================================================================
 	
+
+{% endraw %}

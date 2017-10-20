@@ -6,6 +6,8 @@ permalink: /kb/090/Q90272/
 
 ## Q90272: Print Manager Error Indications in Windows for Workgroups
 
+{% raw %}
+
 	Article: Q90272
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/090/Q90272/
 	
 	=============================================================================
 	
+
+{% endraw %}

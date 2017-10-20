@@ -6,6 +6,8 @@ permalink: /kb/171/Q171877/
 
 ## Q171877: LU Creation Wizard Does Not Accept HEX Data When in HEX Mode
 
+{% raw %}
+
 	Article: Q171877
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -61,3 +63,5 @@ permalink: /kb/171/Q171877/
 	
 	=============================================================================
 	
+
+{% endraw %}

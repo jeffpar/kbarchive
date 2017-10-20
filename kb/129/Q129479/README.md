@@ -6,6 +6,8 @@ permalink: /kb/129/Q129479/
 
 ## Q129479: PRB: _searchenv() Does Not Check the Buffer Size
 
+{% raw %}
+
 	Article: Q129479
 	Product(s): Microsoft C Compiler
 	Version(s): 2.1 4.0 5.0
@@ -69,3 +71,5 @@ permalink: /kb/129/Q129479/
 	
 	=============================================================================
 	
+
+{% endraw %}

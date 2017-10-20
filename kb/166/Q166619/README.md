@@ -6,6 +6,8 @@ permalink: /kb/166/Q166619/
 
 ## Q166619: XCON: DR Contains only DN in Non-Replicated Exchange Environment
 
+{% raw %}
+
 	Article: Q166619
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -126,3 +128,5 @@ permalink: /kb/166/Q166619/
 	
 	=============================================================================
 	
+
+{% endraw %}

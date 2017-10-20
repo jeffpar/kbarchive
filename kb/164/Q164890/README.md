@@ -6,6 +6,8 @@ permalink: /kb/164/Q164890/
 
 ## Q164890: SMS Software Inventory Package Is Limited to 40 Characters
 
+{% raw %}
+
 	Article: Q164890
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -55,3 +57,5 @@ permalink: /kb/164/Q164890/
 	
 	=============================================================================
 	
+
+{% endraw %}

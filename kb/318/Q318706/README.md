@@ -6,6 +6,8 @@ permalink: /kb/318/Q318706/
 
 ## Q318706: FIX: Cannot Implement Office Add-in IDTExtensibility2 Interface
 
+{% raw %}
+
 	Article: Q318706
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -156,3 +158,5 @@ permalink: /kb/318/Q318706/
 	
 	=============================================================================
 	
+
+{% endraw %}

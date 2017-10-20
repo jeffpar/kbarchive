@@ -6,6 +6,8 @@ permalink: /kb/174/Q174314/
 
 ## Q174314: WD97: Cannot Copy from Word and Paste to GroupWise 4.1a
 
+{% raw %}
+
 	Article: Q174314
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -108,3 +110,5 @@ permalink: /kb/174/Q174314/
 	
 	=============================================================================
 	
+
+{% endraw %}

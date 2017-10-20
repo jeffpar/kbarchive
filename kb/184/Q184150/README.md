@@ -6,6 +6,8 @@ permalink: /kb/184/Q184150/
 
 ## Q184150: WD97: Text Marked as Deleted Marked as Inserted After Insert Fil
 
+{% raw %}
+
 	Article: Q184150
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/184/Q184150/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180045/
 
 ## Q180045: Virtual Globe: Colored Text Is Not Printed on HP LaserJet 5L
 
+{% raw %}
+
 	Article: Q180045
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -73,3 +75,5 @@ permalink: /kb/180/Q180045/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191386/
 
 ## Q191386: Considerations When Installing Link Services in SNA 4.0
 
+{% raw %}
+
 	Article: Q191386
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -59,3 +61,5 @@ permalink: /kb/191/Q191386/
 	
 	=============================================================================
 	
+
+{% endraw %}

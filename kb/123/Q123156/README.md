@@ -6,6 +6,8 @@ permalink: /kb/123/Q123156/
 
 ## Q123156: Server Spools Jobs Endlessly if AppleTalk Print Device Removed
 
+{% raw %}
+
 	Article: Q123156
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -108,3 +110,5 @@ permalink: /kb/123/Q123156/
 	
 	=============================================================================
 	
+
+{% endraw %}

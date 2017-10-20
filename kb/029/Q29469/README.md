@@ -6,6 +6,8 @@ permalink: /kb/029/Q29469/
 
 ## Q29469: Mouse Compatibility with IBM PCjr
 
+{% raw %}
+
 	Article: Q29469
 	Product(s): See article
 	Version(s): 1.00
@@ -26,3 +28,5 @@ permalink: /kb/029/Q29469/
 	
 	Solid Rock was a company that provided PCjr accessories, but it has
 	since gone out of business.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132789/
 
 ## Q132789: &quot;Network Drive No Longer Exists&quot; Error with NetFlex Card
 
+{% raw %}
+
 	Article: Q132789
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/132/Q132789/
 	
 	=============================================================================
 	
+
+{% endraw %}

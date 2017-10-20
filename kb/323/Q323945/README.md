@@ -6,6 +6,8 @@ permalink: /kb/323/Q323945/
 
 ## Q323945: Zoo Tycoon: Guests Appear Stuck to Zoo Objects in Dinosaur Digs
 
+{% raw %}
+
 	Article: Q323945
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -225,3 +227,5 @@ permalink: /kb/323/Q323945/
 	
 	=============================================================================
 	
+
+{% endraw %}

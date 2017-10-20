@@ -6,6 +6,8 @@ permalink: /kb/094/Q94988/
 
 ## Q94988: Slow Keyboard Repeat Rate with the AnyKey Keyboard
 
+{% raw %}
+
 	Article: Q94988
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -103,3 +105,5 @@ permalink: /kb/094/Q94988/
 	
 	=============================================================================
 	
+
+{% endraw %}

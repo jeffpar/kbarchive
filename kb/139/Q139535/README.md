@@ -6,6 +6,8 @@ permalink: /kb/139/Q139535/
 
 ## Q139535: Some TrueType Fonts Do Not Produce Glyphs on Windows NT 3.51
 
+{% raw %}
+
 	Article: Q139535
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -64,3 +66,5 @@ permalink: /kb/139/Q139535/
 	
 	=============================================================================
 	
+
+{% endraw %}

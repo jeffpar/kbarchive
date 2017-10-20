@@ -6,6 +6,8 @@ permalink: /kb/146/Q146173/
 
 ## Q146173: XCLN: Task Created in Appointment Book has no Created By Stamp
 
+{% raw %}
+
 	Article: Q146173
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:7.0,7.5; winnt:4.0,5.0
@@ -52,3 +54,5 @@ permalink: /kb/146/Q146173/
 	
 	=============================================================================
 	
+
+{% endraw %}

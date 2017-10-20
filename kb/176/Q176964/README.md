@@ -6,6 +6,8 @@ permalink: /kb/176/Q176964/
 
 ## Q176964: Rasusers.exe Only Searches About 5000 Users
 
+{% raw %}
+
 	Article: Q176964
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -50,3 +52,5 @@ permalink: /kb/176/Q176964/
 	
 	=============================================================================
 	
+
+{% endraw %}

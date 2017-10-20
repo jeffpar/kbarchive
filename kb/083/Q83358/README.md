@@ -6,6 +6,8 @@ permalink: /kb/083/Q83358/
 
 ## Q83358: Video Seven Modes and Drivers in Windows 3.0
 
+{% raw %}
+
 	Article: Q83358
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -60,3 +62,5 @@ permalink: /kb/083/Q83358/
 	
 	=============================================================================
 	
+
+{% endraw %}

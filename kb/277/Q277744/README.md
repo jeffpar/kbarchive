@@ -6,6 +6,8 @@ permalink: /kb/277/Q277744/
 
 ## Q277744: SMS: Status Is Displayed Incorrectly When Using Advertview
 
+{% raw %}
+
 	Article: Q277744
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3
@@ -96,3 +98,5 @@ permalink: /kb/277/Q277744/
 	
 	=============================================================================
 	
+
+{% endraw %}

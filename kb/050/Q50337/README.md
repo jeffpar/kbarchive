@@ -6,6 +6,8 @@ permalink: /kb/050/Q50337/
 
 ## Q50337: Internal Compiler Error: ctypes.c:1.107, Line 474
 
+{% raw %}
+
 	Article: Q50337
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -49,3 +51,5 @@ permalink: /kb/050/Q50337/
 	structure [i.e., using the "address of" operator ("&") on the
 	interface structure] eliminates the internal compiler error and makes
 	the program correct.
+
+{% endraw %}

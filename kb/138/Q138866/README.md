@@ -6,6 +6,8 @@ permalink: /kb/138/Q138866/
 
 ## Q138866: HOWTO: How to Set Default Values for Stock Properties in OLE Con
 
+{% raw %}
+
 	Article: Q138866
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1
@@ -130,3 +132,5 @@ permalink: /kb/138/Q138866/
 	
 	=============================================================================
 	
+
+{% endraw %}

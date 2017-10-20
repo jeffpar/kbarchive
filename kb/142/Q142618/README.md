@@ -6,6 +6,8 @@ permalink: /kb/142/Q142618/
 
 ## Q142618: NCP Client Stops Responding When Saving File
 
+{% raw %}
+
 	Article: Q142618
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -59,3 +61,5 @@ permalink: /kb/142/Q142618/
 	
 	=============================================================================
 	
+
+{% endraw %}

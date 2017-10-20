@@ -6,6 +6,8 @@ permalink: /kb/074/Q74795/
 
 ## Q74795: HOWTO: Use PeekMessage() Loops in a Dialog Box
 
+{% raw %}
+
 	Article: Q74795
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -60,3 +62,5 @@ permalink: /kb/074/Q74795/
 	
 	=============================================================================
 	
+
+{% endraw %}

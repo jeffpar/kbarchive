@@ -6,6 +6,8 @@ permalink: /kb/097/Q97867/
 
 ## Q97867: Using Include/Exclude Correctly with Microsoft Backup
 
+{% raw %}
+
 	Article: Q97867
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -80,3 +82,5 @@ permalink: /kb/097/Q97867/
 	
 	=============================================================================
 	
+
+{% endraw %}

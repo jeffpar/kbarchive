@@ -6,6 +6,8 @@ permalink: /kb/174/Q174244/
 
 ## Q174244: FIX: RESTORE SCREEN Causes Memory Leak in Visual FoxPro 5.0
 
+{% raw %}
+
 	Article: Q174244
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -108,3 +110,5 @@ permalink: /kb/174/Q174244/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/074/Q74203/
 
 ## Q74203: MS-DOS 5 Can't Install On An IBM AT With Plus Hardcard II XL
 
+{% raw %}
+
 	Article: Q74203
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -98,3 +100,5 @@ permalink: /kb/074/Q74203/
 	
 	=============================================================================
 	
+
+{% endraw %}

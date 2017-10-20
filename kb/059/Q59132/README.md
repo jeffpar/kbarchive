@@ -6,6 +6,8 @@ permalink: /kb/059/Q59132/
 
 ## Q59132: How to Disable Toggle for NUM/CAPS/SCROLL LOCK with Key Trap
 
+{% raw %}
+
 	Article: Q59132
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -83,3 +85,5 @@ permalink: /kb/059/Q59132/
 	
 	scroll:  PRINT "NO SCROLL LOCK TOGGLE!"
 	RETURN
+
+{% endraw %}

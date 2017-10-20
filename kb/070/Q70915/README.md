@@ -6,6 +6,8 @@ permalink: /kb/070/Q70915/
 
 ## Q70915: UMB Support, Floppy-Based Programs, and Compaqs
 
+{% raw %}
+
 	Article: Q70915
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -62,3 +64,5 @@ permalink: /kb/070/Q70915/
 	
 	=============================================================================
 	
+
+{% endraw %}

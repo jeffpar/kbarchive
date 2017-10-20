@@ -6,6 +6,8 @@ permalink: /kb/151/Q151411/
 
 ## Q151411: FIX: New Version of Ssscc.dll Available
 
+{% raw %}
+
 	Article: Q151411
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0; winnt:4.0a,4.1,4.2
@@ -93,3 +95,5 @@ permalink: /kb/151/Q151411/
 	
 	=============================================================================
 	
+
+{% endraw %}

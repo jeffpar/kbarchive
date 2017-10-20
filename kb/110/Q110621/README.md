@@ -6,6 +6,8 @@ permalink: /kb/110/Q110621/
 
 ## Q110621: Defragmenter Err Msg: Program Too Big to Fit into Memory
 
+{% raw %}
+
 	Article: Q110621
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -61,3 +63,5 @@ permalink: /kb/110/Q110621/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/047/Q47767/
 
 ## Q47767: Getting SYS2070 While Using MEP
 
+{% raw %}
+
 	Article: Q47767
 	Product(s): See article
 	Version(s): 1.02
@@ -38,3 +40,5 @@ permalink: /kb/047/Q47767/
 	
 	If there is no MSHELP.DLL on the LIB path, then MEP loads and seems to
 	function correctly, but there will be no help available.
+
+{% endraw %}

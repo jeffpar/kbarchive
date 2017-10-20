@@ -6,6 +6,8 @@ permalink: /kb/044/Q44237/
 
 ## Q44237: Hercules Page Support for SCREEN 0 and SCREEN 3
 
+{% raw %}
+
 	Article: Q44237
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -45,3 +47,5 @@ permalink: /kb/044/Q44237/
 	video memory to the first display page. Therefore, calling this BIOS
 	function results only in a blank screen, which may appear to hang the
 	machine. Setting the page back to page 0 restores the screen.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/095/Q95589/
 
 ## Q95589: PRB: Problems Using SET PRINTER TO &#92;&#92;SPOOLER on Novell Network
 
+{% raw %}
+
 	Article: Q95589
 	Product(s): Microsoft FoxPro
 	Version(s): 2.0 2.5x 2.6x 3.0 5.0 6.0
@@ -65,3 +67,5 @@ permalink: /kb/095/Q95589/
 	
 	=============================================================================
 	
+
+{% endraw %}

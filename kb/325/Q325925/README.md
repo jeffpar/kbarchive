@@ -6,6 +6,8 @@ permalink: /kb/325/Q325925/
 
 ## Q325925: FIX: Event 25 Error Message When You Print by Using SNACFG
 
+{% raw %}
+
 	Article: Q325925
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -175,3 +177,5 @@ permalink: /kb/325/Q325925/
 	
 	=============================================================================
 	
+
+{% endraw %}

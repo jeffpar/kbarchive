@@ -6,6 +6,8 @@ permalink: /kb/170/Q170252/
 
 ## Q170252: XCON: How to Configure Dynamic RAS Using IPX
 
+{% raw %}
+
 	Article: Q170252
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -47,3 +49,5 @@ permalink: /kb/170/Q170252/
 	
 	=============================================================================
 	
+
+{% endraw %}

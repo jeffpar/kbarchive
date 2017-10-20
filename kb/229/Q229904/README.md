@@ -6,6 +6,8 @@ permalink: /kb/229/Q229904/
 
 ## Q229904: PRB: CAxWindow Members Can Cause a Memory Leak
 
+{% raw %}
+
 	Article: Q229904
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/229/Q229904/
 	
 	=============================================================================
 	
+
+{% endraw %}

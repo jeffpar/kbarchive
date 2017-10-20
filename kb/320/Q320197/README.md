@@ -6,6 +6,8 @@ permalink: /kb/320/Q320197/
 
 ## Q320197: Flight Simulator 2002: How to Provide Feedback About the Product
 
+{% raw %}
+
 	Article: Q320197
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/320/Q320197/
 	
 	=============================================================================
 	
+
+{% endraw %}

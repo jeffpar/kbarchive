@@ -6,6 +6,8 @@ permalink: /kb/273/Q273734/
 
 ## Q273734: SMS: How to Set Up Unattended Installation Scripts
 
+{% raw %}
+
 	Article: Q273734
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -158,3 +160,5 @@ permalink: /kb/273/Q273734/
 	
 	=============================================================================
 	
+
+{% endraw %}

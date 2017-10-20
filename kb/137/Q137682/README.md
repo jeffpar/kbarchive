@@ -6,6 +6,8 @@ permalink: /kb/137/Q137682/
 
 ## Q137682: PRB: &quot;Record validation rule is violated&quot; Error in a Form
 
+{% raw %}
+
 	Article: Q137682
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -155,3 +157,5 @@ permalink: /kb/137/Q137682/
 	
 	=============================================================================
 	
+
+{% endraw %}

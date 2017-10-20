@@ -6,6 +6,8 @@ permalink: /kb/171/Q171989/
 
 ## Q171989: Windows NT Services for Macintosh May Not Start in Desired Zone
 
+{% raw %}
+
 	Article: Q171989
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -79,3 +81,5 @@ permalink: /kb/171/Q171989/
 	
 	=============================================================================
 	
+
+{% endraw %}

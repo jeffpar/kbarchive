@@ -6,6 +6,8 @@ permalink: /kb/189/Q189735/
 
 ## Q189735: BUG: Removing Collection Elements Takes Longer Than Expected
 
+{% raw %}
+
 	Article: Q189735
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -106,3 +108,5 @@ permalink: /kb/189/Q189735/
 	
 	=============================================================================
 	
+
+{% endraw %}

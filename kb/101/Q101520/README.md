@@ -6,6 +6,8 @@ permalink: /kb/101/Q101520/
 
 ## Q101520: INF: SQLDescribeCol Limitation on Meta Data
 
+{% raw %}
+
 	Article: Q101520
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/101/Q101520/
 	
 	=============================================================================
 	
+
+{% endraw %}

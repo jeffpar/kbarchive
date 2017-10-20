@@ -6,6 +6,8 @@ permalink: /kb/129/Q129449/
 
 ## Q129449: PRB: Object Created w/NEW Instantiated When Passed as Argument
 
+{% raw %}
+
 	Article: Q129449
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -105,3 +107,5 @@ permalink: /kb/129/Q129449/
 	
 	=============================================================================
 	
+
+{% endraw %}

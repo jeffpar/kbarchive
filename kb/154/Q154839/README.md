@@ -6,6 +6,8 @@ permalink: /kb/154/Q154839/
 
 ## Q154839: Err Msg: Windows Has Detected a Compressed Drive Access Error
 
+{% raw %}
+
 	Article: Q154839
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -102,3 +104,5 @@ permalink: /kb/154/Q154839/
 	
 	=============================================================================
 	
+
+{% endraw %}

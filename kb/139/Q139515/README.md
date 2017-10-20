@@ -6,6 +6,8 @@ permalink: /kb/139/Q139515/
 
 ## Q139515: Defrag Cluster Size Changes When 50 Percent Finished
 
+{% raw %}
+
 	Article: Q139515
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -53,3 +55,5 @@ permalink: /kb/139/Q139515/
 	
 	=============================================================================
 	
+
+{% endraw %}

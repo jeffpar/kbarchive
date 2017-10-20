@@ -6,6 +6,8 @@ permalink: /kb/118/Q118932/
 
 ## Q118932: PC Adm: Err Msg: Notice 2 Error Updating MASTER.GLB
 
+{% raw %}
+
 	Article: Q118932
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -64,3 +66,5 @@ permalink: /kb/118/Q118932/
 	
 	=============================================================================
 	
+
+{% endraw %}

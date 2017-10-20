@@ -6,6 +6,8 @@ permalink: /kb/230/Q230305/
 
 ## Q230305: Contents of Script Debugger Release Notes
 
+{% raw %}
+
 	Article: Q230305
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -174,3 +176,5 @@ permalink: /kb/230/Q230305/
 	
 	=============================================================================
 	
+
+{% endraw %}

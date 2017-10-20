@@ -6,6 +6,8 @@ permalink: /kb/188/Q188041/
 
 ## Q188041: SMS: Considerations When Using Windows NT Trusted Domain Model
 
+{% raw %}
+
 	Article: Q188041
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -62,3 +64,5 @@ permalink: /kb/188/Q188041/
 	
 	=============================================================================
 	
+
+{% endraw %}

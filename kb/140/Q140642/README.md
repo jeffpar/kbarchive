@@ -6,6 +6,8 @@ permalink: /kb/140/Q140642/
 
 ## Q140642: Err Msg: Unexpected DOS Error 11 Using Server Tools
 
+{% raw %}
+
 	Article: Q140642
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -48,3 +50,5 @@ permalink: /kb/140/Q140642/
 	
 	=============================================================================
 	
+
+{% endraw %}

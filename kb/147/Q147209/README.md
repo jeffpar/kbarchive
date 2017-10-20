@@ -6,6 +6,8 @@ permalink: /kb/147/Q147209/
 
 ## Q147209: Cannot Change Default Font for Received Message in MS Exchange
 
+{% raw %}
+
 	Article: Q147209
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -47,3 +49,5 @@ permalink: /kb/147/Q147209/
 	
 	=============================================================================
 	
+
+{% endraw %}

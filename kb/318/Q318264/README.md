@@ -6,6 +6,8 @@ permalink: /kb/318/Q318264/
 
 ## Q318264: FIX: DO FORM Command in an .exe Holds Form Until Process Ends
 
+{% raw %}
+
 	Article: Q318264
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -103,3 +105,5 @@ permalink: /kb/318/Q318264/
 	
 	=============================================================================
 	
+
+{% endraw %}

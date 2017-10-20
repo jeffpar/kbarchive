@@ -6,6 +6,8 @@ permalink: /kb/257/Q257585/
 
 ## Q257585: RAS DCC with Null Modem Cable Always Uses 1 Stop Bit
 
+{% raw %}
+
 	Article: Q257585
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -101,3 +103,5 @@ permalink: /kb/257/Q257585/
 	
 	=============================================================================
 	
+
+{% endraw %}

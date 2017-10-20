@@ -6,6 +6,8 @@ permalink: /kb/165/Q165090/
 
 ## Q165090: Memory Leak in SNA Server Windows NT Client When Using APPC
 
+{% raw %}
+
 	Article: Q165090
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/165/Q165090/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156107/
 
 ## Q156107: Encarta 1996: Unable to Enter Yearbook Builder
 
+{% raw %}
+
 	Article: Q156107
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -92,3 +94,5 @@ permalink: /kb/156/Q156107/
 	
 	=============================================================================
 	
+
+{% endraw %}

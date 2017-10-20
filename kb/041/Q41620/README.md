@@ -6,6 +6,8 @@ permalink: /kb/041/Q41620/
 
 ## Q41620: QuickC 2.00 README.DOC: Example Program INPUT.C
 
+{% raw %}
+
 	Article: Q41620
 	Product(s): See article
 	Version(s): 2.00
@@ -29,3 +31,5 @@ permalink: /kb/041/Q41620/
 	
 	The INPUT.C program in on-line help already contains this correction,
 	but you may want to correct the printed documentation, too.
+
+{% endraw %}

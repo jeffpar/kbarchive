@@ -6,6 +6,8 @@ permalink: /kb/164/Q164367/
 
 ## Q164367: BUG: Report Writer Selects Objects After Printing in Designer
 
+{% raw %}
+
 	Article: Q164367
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -68,3 +70,5 @@ permalink: /kb/164/Q164367/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183401/
 
 ## Q183401: Poor Print Quality from Adobe Acrobat on 600 DPI Printer
 
+{% raw %}
+
 	Article: Q183401
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -62,3 +64,5 @@ permalink: /kb/183/Q183401/
 	
 	=============================================================================
 	
+
+{% endraw %}

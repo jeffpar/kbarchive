@@ -6,6 +6,8 @@ permalink: /kb/105/Q105809/
 
 ## Q105809: WFWG Error Message: 3653: The Protocol Manager Could Not Be...
 
+{% raw %}
+
 	Article: Q105809
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -72,3 +74,5 @@ permalink: /kb/105/Q105809/
 	
 	=============================================================================
 	
+
+{% endraw %}

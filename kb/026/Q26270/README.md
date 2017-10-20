@@ -6,6 +6,8 @@ permalink: /kb/026/Q26270/
 
 ## Q26270: FIX: Relational Operators with MOV May Evaluate Incorrectly
 
+{% raw %}
+
 	Article: Q26270
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a
@@ -69,3 +71,5 @@ permalink: /kb/026/Q26270/
 	
 	=============================================================================
 	
+
+{% endraw %}

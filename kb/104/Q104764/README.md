@@ -6,6 +6,8 @@ permalink: /kb/104/Q104764/
 
 ## Q104764: IRQ Conflicts on Gateway 2000 Computers
 
+{% raw %}
+
 	Article: Q104764
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -70,3 +72,5 @@ permalink: /kb/104/Q104764/
 	
 	=============================================================================
 	
+
+{% endraw %}

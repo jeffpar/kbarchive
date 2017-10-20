@@ -6,6 +6,8 @@ permalink: /kb/307/Q307976/
 
 ## Q307976: FP: Error When Using FrontPage with URLScan
 
+{% raw %}
+
 	Article: Q307976
 	Product(s): Word Front Page
 	Version(s): 1.0,6.0
@@ -178,3 +180,5 @@ permalink: /kb/307/Q307976/
 	
 	=============================================================================
 	
+
+{% endraw %}

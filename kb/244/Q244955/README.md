@@ -6,6 +6,8 @@ permalink: /kb/244/Q244955/
 
 ## Q244955: PRB: MinDependency Project May Need to Include Atl.dll
 
+{% raw %}
+
 	Article: Q244955
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -64,3 +66,5 @@ permalink: /kb/244/Q244955/
 	
 	=============================================================================
 	
+
+{% endraw %}

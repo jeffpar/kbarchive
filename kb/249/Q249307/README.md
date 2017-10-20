@@ -6,6 +6,8 @@ permalink: /kb/249/Q249307/
 
 ## Q249307: Mac Arcade Error Message: The Finder Needs Your Attention
 
+{% raw %}
+
 	Article: Q249307
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0
@@ -63,3 +65,5 @@ permalink: /kb/249/Q249307/
 	
 	=============================================================================
 	
+
+{% endraw %}

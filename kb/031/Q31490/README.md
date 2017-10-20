@@ -6,6 +6,8 @@ permalink: /kb/031/Q31490/
 
 ## Q31490: Resizing Windows
 
+{% raw %}
+
 	Article: Q31490
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -20,3 +22,5 @@ permalink: /kb/031/Q31490/
 	
 	This feature is under review and will be considered for inclusion in a
 	future release.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216480/
 
 ## Q216480: PRB: Error Setting Default Value of Optional Byte Arg to TRUE
 
+{% raw %}
+
 	Article: Q216480
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/216/Q216480/
 	
 	=============================================================================
 	
+
+{% endraw %}

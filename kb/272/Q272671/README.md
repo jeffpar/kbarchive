@@ -6,6 +6,8 @@ permalink: /kb/272/Q272671/
 
 ## Q272671: Golf 2001: Unable to Adjust the Master Volume in the Game
 
+{% raw %}
+
 	Article: Q272671
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/272/Q272671/
 	
 	=============================================================================
 	
+
+{% endraw %}

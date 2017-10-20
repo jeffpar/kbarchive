@@ -6,6 +6,8 @@ permalink: /kb/040/Q40890/
 
 ## Q40890: BC &quot;Variable Name Not Unique&quot; on SUB with Period in Name
 
+{% raw %}
+
 	Article: Q40890
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -47,3 +49,5 @@ permalink: /kb/040/Q40890/
 	SUB Test.one
 	  PRINT "in Test.one"
 	END SUB
+
+{% endraw %}

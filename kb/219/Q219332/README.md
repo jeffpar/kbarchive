@@ -6,6 +6,8 @@ permalink: /kb/219/Q219332/
 
 ## Q219332: Memory Leak in RPC When Doing Repeated Binding Lookups
 
+{% raw %}
+
 	Article: Q219332
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -70,3 +72,5 @@ permalink: /kb/219/Q219332/
 	
 	=============================================================================
 	
+
+{% endraw %}

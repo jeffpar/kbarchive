@@ -6,6 +6,8 @@ permalink: /kb/184/Q184539/
 
 ## Q184539: SMS: PGC Shows Long Delay Before Completing Normal Process Cycle
 
+{% raw %}
+
 	Article: Q184539
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -80,3 +82,5 @@ permalink: /kb/184/Q184539/
 	
 	=============================================================================
 	
+
+{% endraw %}

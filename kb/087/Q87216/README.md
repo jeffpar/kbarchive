@@ -6,6 +6,8 @@ permalink: /kb/087/Q87216/
 
 ## Q87216: PROFS: Why Can't the Gateway Find the File Transfer Programs?
 
+{% raw %}
+
 	Article: Q87216
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -45,3 +47,5 @@ permalink: /kb/087/Q87216/
 	
 	=============================================================================
 	
+
+{% endraw %}

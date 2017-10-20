@@ -6,6 +6,8 @@ permalink: /kb/154/Q154426/
 
 ## Q154426: XCLN: EFD Cannot Display Initial Subject Text in Reply Item
 
+{% raw %}
+
 	Article: Q154426
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -67,3 +69,5 @@ permalink: /kb/154/Q154426/
 	
 	=============================================================================
 	
+
+{% endraw %}

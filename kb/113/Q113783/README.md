@@ -6,6 +6,8 @@ permalink: /kb/113/Q113783/
 
 ## Q113783: Ndkwiz.exe Contains Latest Version of Dksetup.prg
 
+{% raw %}
+
 	Article: Q113783
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6
@@ -92,3 +94,5 @@ permalink: /kb/113/Q113783/
 	
 	=============================================================================
 	
+
+{% endraw %}

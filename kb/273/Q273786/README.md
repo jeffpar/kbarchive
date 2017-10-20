@@ -6,6 +6,8 @@ permalink: /kb/273/Q273786/
 
 ## Q273786: Midtown Madness 2: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q273786
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -86,3 +88,5 @@ permalink: /kb/273/Q273786/
 	
 	=============================================================================
 	
+
+{% endraw %}

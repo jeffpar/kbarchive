@@ -6,6 +6,8 @@ permalink: /kb/121/Q121016/
 
 ## Q121016: FIX: Long Query Name in Browser Causes Application Error
 
+{% raw %}
+
 	Article: Q121016
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,4.0,4.1,5.0
@@ -77,3 +79,5 @@ permalink: /kb/121/Q121016/
 	
 	=============================================================================
 	
+
+{% endraw %}

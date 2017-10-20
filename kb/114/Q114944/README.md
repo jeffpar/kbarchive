@@ -6,6 +6,8 @@ permalink: /kb/114/Q114944/
 
 ## Q114944: Using WSSCNFG.EXE with Multiple-Configuration System Files
 
+{% raw %}
+
 	Article: Q114944
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -118,3 +120,5 @@ permalink: /kb/114/Q114944/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173816/
 
 ## Q173816: Desktop Pattern Corruption When Increasing Color Palette
 
+{% raw %}
+
 	Article: Q173816
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/173/Q173816/
 	
 	=============================================================================
 	
+
+{% endraw %}

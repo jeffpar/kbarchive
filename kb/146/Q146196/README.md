@@ -6,6 +6,8 @@ permalink: /kb/146/Q146196/
 
 ## Q146196: MSB Human: Human Body for Macintosh ReadMe File
 
+{% raw %}
+
 	Article: Q146196
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0
@@ -122,3 +124,5 @@ permalink: /kb/146/Q146196/
 	
 	=============================================================================
 	
+
+{% endraw %}

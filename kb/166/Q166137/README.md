@@ -6,6 +6,8 @@ permalink: /kb/166/Q166137/
 
 ## Q166137: PRB: SELECT-SQL COUNT() Field Function Ignores SET DELETED ON
 
+{% raw %}
+
 	Article: Q166137
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -90,3 +92,5 @@ permalink: /kb/166/Q166137/
 	
 	=============================================================================
 	
+
+{% endraw %}

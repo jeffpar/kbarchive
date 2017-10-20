@@ -6,6 +6,8 @@ permalink: /kb/081/Q81520/
 
 ## Q81520: Using Golden Bow's Vcache with Windows 3.0
 
+{% raw %}
+
 	Article: Q81520
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a
@@ -62,3 +64,5 @@ permalink: /kb/081/Q81520/
 	
 	=============================================================================
 	
+
+{% endraw %}

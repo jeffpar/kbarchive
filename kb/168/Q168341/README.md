@@ -6,6 +6,8 @@ permalink: /kb/168/Q168341/
 
 ## Q168341: SMS: Windows 95 PCM Fails to Run UNC Path Command Lines
 
+{% raw %}
+
 	Article: Q168341
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -44,3 +46,5 @@ permalink: /kb/168/Q168341/
 	
 	=============================================================================
 	
+
+{% endraw %}

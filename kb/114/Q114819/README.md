@@ -6,6 +6,8 @@ permalink: /kb/114/Q114819/
 
 ## Q114819: How to Obtain Support for Video Seven Video Boards
 
+{% raw %}
+
 	Article: Q114819
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -94,3 +96,5 @@ permalink: /kb/114/Q114819/
 	
 	=============================================================================
 	
+
+{% endraw %}

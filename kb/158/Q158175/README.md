@@ -6,6 +6,8 @@ permalink: /kb/158/Q158175/
 
 ## Q158175: HOWTO: Determine the Differences Between DoEvents and Sleep
 
+{% raw %}
+
 	Article: Q158175
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -62,3 +64,5 @@ permalink: /kb/158/Q158175/
 	
 	=============================================================================
 	
+
+{% endraw %}

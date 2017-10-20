@@ -6,6 +6,8 @@ permalink: /kb/117/Q117502/
 
 ## Q117502: WFWG 3.11 RAS Error 652: Unrecognized Text Response...
 
+{% raw %}
+
 	Article: Q117502
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -70,3 +72,5 @@ permalink: /kb/117/Q117502/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/312/Q312538/
 
 ## Q312538: Reducing the Cached Logon Information Disables the Funtionality
 
+{% raw %}
+
 	Article: Q312538
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6a
@@ -87,3 +89,5 @@ permalink: /kb/312/Q312538/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/207/Q207671/
 
 ## Q207671: HOW TO: Access Network Files from IIS Applications
 
+{% raw %}
+
 	Article: Q207671
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0
@@ -324,3 +326,5 @@ permalink: /kb/207/Q207671/
 	
 	=============================================================================
 	
+
+{% endraw %}

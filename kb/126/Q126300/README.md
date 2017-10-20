@@ -6,6 +6,8 @@ permalink: /kb/126/Q126300/
 
 ## Q126300: Errors Using Lexmark IBM 4039 Printer
 
+{% raw %}
+
 	Article: Q126300
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -89,3 +91,5 @@ permalink: /kb/126/Q126300/
 	
 	=============================================================================
 	
+
+{% endraw %}

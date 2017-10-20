@@ -6,6 +6,8 @@ permalink: /kb/195/Q195734/
 
 ## Q195734: WinNT 4.0 Post-Service Pack 4 Hotfixes Combined into One Package
 
+{% raw %}
+
 	Article: Q195734
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4
@@ -90,3 +92,5 @@ permalink: /kb/195/Q195734/
 	
 	=============================================================================
 	
+
+{% endraw %}

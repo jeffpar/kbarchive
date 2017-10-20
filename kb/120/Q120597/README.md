@@ -6,6 +6,8 @@ permalink: /kb/120/Q120597/
 
 ## Q120597: Fp1023.exe Describes Using FoxPro for MS-DOS Wizards
 
+{% raw %}
+
 	Article: Q120597
 	Product(s): Microsoft FoxPro
 	Version(s): 2.6
@@ -67,3 +69,5 @@ permalink: /kb/120/Q120597/
 	
 	=============================================================================
 	
+
+{% endraw %}

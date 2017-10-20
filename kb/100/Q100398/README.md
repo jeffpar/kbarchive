@@ -6,6 +6,8 @@ permalink: /kb/100/Q100398/
 
 ## Q100398: Bookshelf: Audio Does Not Always Exactly Match Quotation
 
+{% raw %}
+
 	Article: Q100398
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1993 edition
@@ -50,3 +52,5 @@ permalink: /kb/100/Q100398/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/239/Q239039/
 
 ## Q239039: CPU Usage Is Set to an Incorrect Value Using HTMLA
 
+{% raw %}
+
 	Article: Q239039
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -57,3 +59,5 @@ permalink: /kb/239/Q239039/
 	
 	=============================================================================
 	
+
+{% endraw %}

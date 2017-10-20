@@ -6,6 +6,8 @@ permalink: /kb/070/Q70916/
 
 ## Q70916: Screen Garbage on Tandon Laptop 386, VGA, QBasic Mode 13
 
+{% raw %}
+
 	Article: Q70916
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -47,3 +49,5 @@ permalink: /kb/070/Q70916/
 	
 	=============================================================================
 	
+
+{% endraw %}

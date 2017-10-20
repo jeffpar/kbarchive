@@ -6,6 +6,8 @@ permalink: /kb/059/Q59973/
 
 ## Q59973: Mac Hyp: Getting a List of Messages
 
+{% raw %}
+
 	Article: Q59973
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -58,3 +60,5 @@ permalink: /kb/059/Q59973/
 	
 	=============================================================================
 	
+
+{% endraw %}

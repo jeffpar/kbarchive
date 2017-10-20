@@ -6,6 +6,8 @@ permalink: /kb/069/Q69350/
 
 ## Q69350: CHRTDEMO Example Gives C2059 Error with ANSI Compatibility Set
 
+{% raw %}
+
 	Article: Q69350
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -49,3 +51,5 @@ permalink: /kb/069/Q69350/
 	optimizing compiler, as well as a similar chart example program. Thus,
 	the same C2059 error may be encountered with /Za in QuickC versions
 	2.00, 2.01, 2.50, and 2.51.
+
+{% endraw %}

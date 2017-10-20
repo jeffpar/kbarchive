@@ -6,6 +6,8 @@ permalink: /kb/181/Q181838/
 
 ## Q181838: XADM: Jet97 Database Header Does Not Contain Last Repaired Date
 
+{% raw %}
+
 	Article: Q181838
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -54,3 +56,5 @@ permalink: /kb/181/Q181838/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/229/Q229770/
 
 ## Q229770: PRB: CoGetClassObject for IClassFactory2 Returns E_NOINTERFACE
 
+{% raw %}
+
 	Article: Q229770
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/229/Q229770/
 	
 	=============================================================================
 	
+
+{% endraw %}

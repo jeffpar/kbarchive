@@ -6,6 +6,8 @@ permalink: /kb/253/Q253555/
 
 ## Q253555: FIX:&quot;Report Width Is Larger Than the Paper Width&quot; on Data Report
 
+{% raw %}
+
 	Article: Q253555
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -80,3 +82,5 @@ permalink: /kb/253/Q253555/
 	
 	=============================================================================
 	
+
+{% endraw %}

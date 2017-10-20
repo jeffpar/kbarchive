@@ -6,6 +6,8 @@ permalink: /kb/162/Q162422/
 
 ## Q162422: WD97: GetSpellingSuggestions Method Misses Repeated Words
 
+{% raw %}
+
 	Article: Q162422
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -117,3 +119,5 @@ permalink: /kb/162/Q162422/
 	
 	=============================================================================
 	
+
+{% endraw %}

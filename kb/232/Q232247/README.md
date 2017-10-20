@@ -6,6 +6,8 @@ permalink: /kb/232/Q232247/
 
 ## Q232247: Using Network Monitor to Capture Traffic Using a Remote Agent
 
+{% raw %}
+
 	Article: Q232247
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -112,3 +114,5 @@ permalink: /kb/232/Q232247/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263636/
 
 ## Q263636: Unable to Promote BDC to PDC Event ID 5516 and 3096
 
+{% raw %}
+
 	Article: Q263636
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/263/Q263636/
 	
 	=============================================================================
 	
+
+{% endraw %}

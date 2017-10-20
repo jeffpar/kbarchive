@@ -6,6 +6,8 @@ permalink: /kb/111/Q111558/
 
 ## Q111558: PC Ext: Microsoft Mail EXTERNAL.EXE Version 3.2.18 Update
 
+{% raw %}
+
 	Article: Q111558
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -252,3 +254,5 @@ permalink: /kb/111/Q111558/
 	
 	=============================================================================
 	
+
+{% endraw %}

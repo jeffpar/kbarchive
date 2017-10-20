@@ -6,6 +6,8 @@ permalink: /kb/142/Q142696/
 
 ## Q142696: WinNT 3.51 SP3 GARAM4.TTF Font Not Displayed Properly
 
+{% raw %}
+
 	Article: Q142696
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP3,4.0
@@ -47,3 +49,5 @@ permalink: /kb/142/Q142696/
 	
 	=============================================================================
 	
+
+{% endraw %}

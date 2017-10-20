@@ -6,6 +6,8 @@ permalink: /kb/188/Q188675/
 
 ## Q188675: Schedule+ ErrMsg &quot;The meeting request is out of date&quot;
 
+{% raw %}
+
 	Article: Q188675
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0,7.5
@@ -65,3 +67,5 @@ permalink: /kb/188/Q188675/
 	
 	=============================================================================
 	
+
+{% endraw %}

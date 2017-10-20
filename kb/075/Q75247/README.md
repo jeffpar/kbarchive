@@ -6,6 +6,8 @@ permalink: /kb/075/Q75247/
 
 ## Q75247: LOCAL Requires Language Specifier on .MODEL
 
+{% raw %}
+
 	Article: Q75247
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.10,5.10a,6.0
@@ -67,3 +69,5 @@ permalink: /kb/075/Q75247/
 	
 	=============================================================================
 	
+
+{% endraw %}

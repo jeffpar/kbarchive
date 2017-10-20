@@ -6,6 +6,8 @@ permalink: /kb/140/Q140145/
 
 ## Q140145: SMS.INI Only Contains Eight Logon Servers
 
+{% raw %}
+
 	Article: Q140145
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -51,3 +53,5 @@ permalink: /kb/140/Q140145/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/037/Q37664/
 
 ## Q37664: EMULATOR_TEXT and EMULATOR_DATA Segments in Small Model
 
+{% raw %}
+
 	Article: Q37664
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10 | 5.10
@@ -24,3 +26,5 @@ permalink: /kb/037/Q37664/
 	the emulator only is accessed through far calls and interrupts, this
 	is not a problem. Both EMULATOR_TEXT and EMULATOR_DATA are in separate
 	segments from DGROUP and _TEXT in all memory models.
+
+{% endraw %}

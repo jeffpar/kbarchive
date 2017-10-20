@@ -6,6 +6,8 @@ permalink: /kb/065/Q65194/
 
 ## Q65194: &quot;Redo from Start&quot; for Correct INPUT in QB and BASIC PDS
 
+{% raw %}
+
 	Article: Q65194
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10 | 6.00 6.00b 7.00 7.10
@@ -76,3 +78,5 @@ permalink: /kb/065/Q65194/
 	   z(i%) = 0
 	   INPUT "Input a real number: ", z(i%)
 	   END
+
+{% endraw %}

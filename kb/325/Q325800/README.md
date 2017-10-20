@@ -6,6 +6,8 @@ permalink: /kb/325/Q325800/
 
 ## Q325800: MCSE Readiness Review Exam 70-220 Designing Windows 2000 Network
 
+{% raw %}
+
 	Article: Q325800
 	Product(s): Microsoft Press
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/325/Q325800/
 	
 	=============================================================================
 	
+
+{% endraw %}

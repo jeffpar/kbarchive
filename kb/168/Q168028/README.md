@@ -6,6 +6,8 @@ permalink: /kb/168/Q168028/
 
 ## Q168028: FIX: C2955 Caused by the &quot;using&quot; Declaration
 
+{% raw %}
+
 	Article: Q168028
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -98,3 +100,5 @@ permalink: /kb/168/Q168028/
 	
 	=============================================================================
 	
+
+{% endraw %}

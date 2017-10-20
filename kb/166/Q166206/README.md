@@ -6,6 +6,8 @@ permalink: /kb/166/Q166206/
 
 ## Q166206: WD97: Month, Day Transposed After Updating Form Field
 
+{% raw %}
+
 	Article: Q166206
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -131,3 +133,5 @@ permalink: /kb/166/Q166206/
 	
 	=============================================================================
 	
+
+{% endraw %}

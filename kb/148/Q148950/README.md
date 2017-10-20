@@ -6,6 +6,8 @@ permalink: /kb/148/Q148950/
 
 ## Q148950: Changing the Windows NT Redirector Time-Out Value
 
+{% raw %}
+
 	Article: Q148950
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -66,3 +68,5 @@ permalink: /kb/148/Q148950/
 	
 	=============================================================================
 	
+
+{% endraw %}

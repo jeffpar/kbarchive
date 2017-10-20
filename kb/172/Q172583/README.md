@@ -6,6 +6,8 @@ permalink: /kb/172/Q172583/
 
 ## Q172583: WordArt Preview Is Blank After Installing Service Pack 5
 
+{% raw %}
+
 	Article: Q172583
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -42,3 +44,5 @@ permalink: /kb/172/Q172583/
 	
 	=============================================================================
 	
+
+{% endraw %}

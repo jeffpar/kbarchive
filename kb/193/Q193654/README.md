@@ -6,6 +6,8 @@ permalink: /kb/193/Q193654/
 
 ## Q193654: Services Continue to Run After Shutdown Initiated
 
+{% raw %}
+
 	Article: Q193654
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/193/Q193654/
 	
 	=============================================================================
 	
+
+{% endraw %}

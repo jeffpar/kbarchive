@@ -6,6 +6,8 @@ permalink: /kb/154/Q154135/
 
 ## Q154135: How To Control Hours of Web Site Availability
 
+{% raw %}
+
 	Article: Q154135
 	Product(s): Internet Information Server
 	Version(s): 2.0
@@ -74,3 +76,5 @@ permalink: /kb/154/Q154135/
 	
 	=============================================================================
 	
+
+{% endraw %}

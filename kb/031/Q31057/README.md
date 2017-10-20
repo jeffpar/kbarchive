@@ -6,6 +6,8 @@ permalink: /kb/031/Q31057/
 
 ## Q31057: QB.EXE &quot;Bad File Mode&quot; Using Merge of Fast Load Format File
 
+{% raw %}
+
 	Article: Q31057
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -28,3 +30,5 @@ permalink: /kb/031/Q31057/
 	comes with Microsoft BASIC Compiler Version 6.00 or 6.00b for MS-DOS
 	and MS OS/2 and to the QBX.EXE editor that comes with Microsoft BASIC
 	PDS Version 7.00 for MS-DOS and MS OS/2.
+
+{% endraw %}

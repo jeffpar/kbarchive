@@ -6,6 +6,8 @@ permalink: /kb/146/Q146340/
 
 ## Q146340: Alt+Shift+tab Causes Schedule+ to Behave As If Shift Held Down
 
+{% raw %}
+
 	Article: Q146340
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -53,3 +55,5 @@ permalink: /kb/146/Q146340/
 	
 	=============================================================================
 	
+
+{% endraw %}

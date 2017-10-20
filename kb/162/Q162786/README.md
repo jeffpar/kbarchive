@@ -6,6 +6,8 @@ permalink: /kb/162/Q162786/
 
 ## Q162786: Undocumented CACLS: Group Permissions Capabilities
 
+{% raw %}
+
 	Article: Q162786
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -131,3 +133,5 @@ permalink: /kb/162/Q162786/
 	
 	=============================================================================
 	
+
+{% endraw %}

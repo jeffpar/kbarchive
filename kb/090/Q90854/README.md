@@ -6,6 +6,8 @@ permalink: /kb/090/Q90854/
 
 ## Q90854: PRB: Accented Characters in Filename Controls Lose Accents
 
+{% raw %}
+
 	Article: Q90854
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -77,3 +79,5 @@ permalink: /kb/090/Q90854/
 	
 	=============================================================================
 	
+
+{% endraw %}

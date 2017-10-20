@@ -6,6 +6,8 @@ permalink: /kb/136/Q136832/
 
 ## Q136832: Editing Address Book in MS Word 7.0 Renders File Unusable
 
+{% raw %}
+
 	Article: Q136832
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -62,3 +64,5 @@ permalink: /kb/136/Q136832/
 	
 	=============================================================================
 	
+
+{% endraw %}

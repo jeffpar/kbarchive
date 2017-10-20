@@ -6,6 +6,8 @@ permalink: /kb/135/Q135129/
 
 ## Q135129: Removing FailedHardwareChecks Entry In SMS.INI
 
+{% raw %}
+
 	Article: Q135129
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -147,3 +149,5 @@ permalink: /kb/135/Q135129/
 	
 	=============================================================================
 	
+
+{% endraw %}

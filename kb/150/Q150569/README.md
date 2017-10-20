@@ -6,6 +6,8 @@ permalink: /kb/150/Q150569/
 
 ## Q150569: Stardata TSR on Win3.x Client Causes SNABase Service to Loop
 
+{% raw %}
+
 	Article: Q150569
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11 SP1
@@ -102,3 +104,5 @@ permalink: /kb/150/Q150569/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136550/
 
 ## Q136550: Using the Xerox 4700II Printer with Windows 95
 
+{% raw %}
+
 	Article: Q136550
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -72,3 +74,5 @@ permalink: /kb/136/Q136550/
 	
 	=============================================================================
 	
+
+{% endraw %}

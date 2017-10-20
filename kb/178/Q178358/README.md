@@ -6,6 +6,8 @@ permalink: /kb/178/Q178358/
 
 ## Q178358: INFO: October 1997 MSDN Library and Internet Explorer
 
+{% raw %}
+
 	Article: Q178358
 	Product(s): Microsoft Developer Network
 	Version(s): WINDOWS:3.02,3.02a,4.0,97,97sp1,97sp2; winnt:
@@ -213,3 +215,5 @@ permalink: /kb/178/Q178358/
 	
 	=============================================================================
 	
+
+{% endraw %}

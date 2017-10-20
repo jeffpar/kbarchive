@@ -6,6 +6,8 @@ permalink: /kb/134/Q134705/
 
 ## Q134705: DOC: DBGETPROP() Returns Unexpected Value
 
+{% raw %}
+
 	Article: Q134705
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/134/Q134705/
 	
 	=============================================================================
 	
+
+{% endraw %}

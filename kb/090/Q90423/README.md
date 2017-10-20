@@ -6,6 +6,8 @@ permalink: /kb/090/Q90423/
 
 ## Q90423: Print Manager Continuously Ejects Separator Pages
 
+{% raw %}
+
 	Article: Q90423
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:
@@ -82,3 +84,5 @@ permalink: /kb/090/Q90423/
 	
 	=============================================================================
 	
+
+{% endraw %}

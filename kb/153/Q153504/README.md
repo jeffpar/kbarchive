@@ -6,6 +6,8 @@ permalink: /kb/153/Q153504/
 
 ## Q153504: PCL5EMS Does Not Support All Memory Available on HP LJ 5Si MX
 
+{% raw %}
+
 	Article: Q153504
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -48,3 +50,5 @@ permalink: /kb/153/Q153504/
 	
 	=============================================================================
 	
+
+{% endraw %}

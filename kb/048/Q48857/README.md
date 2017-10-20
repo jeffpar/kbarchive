@@ -6,6 +6,8 @@ permalink: /kb/048/Q48857/
 
 ## Q48857: Video Modes Available on Tandy 1000 Computers
 
+{% raw %}
+
 	Article: Q48857
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -35,3 +37,5 @@ permalink: /kb/048/Q48857/
 	   _MRES4COLOR
 	   _MRESNOCOLOR
 	   _HRESBW
+
+{% endraw %}

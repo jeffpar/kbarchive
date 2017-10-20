@@ -6,6 +6,8 @@ permalink: /kb/114/Q114727/
 
 ## Q114727: Quicken: GP Fault in QW.EXE During Transaction
 
+{% raw %}
+
 	Article: Q114727
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -55,3 +57,5 @@ permalink: /kb/114/Q114727/
 	
 	=============================================================================
 	
+
+{% endraw %}

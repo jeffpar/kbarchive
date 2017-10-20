@@ -6,6 +6,8 @@ permalink: /kb/058/Q58595/
 
 ## Q58595: Mac Hyp: GetDate Gets the Time and Date a Message Was Sent
 
+{% raw %}
+
 	Article: Q58595
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -47,3 +49,5 @@ permalink: /kb/058/Q58595/
 	
 	=============================================================================
 	
+
+{% endraw %}

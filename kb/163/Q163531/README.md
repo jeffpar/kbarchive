@@ -6,6 +6,8 @@ permalink: /kb/163/Q163531/
 
 ## Q163531: PPT: Code to Count the Placeholders on the Current Slide
 
+{% raw %}
+
 	Article: Q163531
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -127,3 +129,5 @@ permalink: /kb/163/Q163531/
 	
 	=============================================================================
 	
+
+{% endraw %}

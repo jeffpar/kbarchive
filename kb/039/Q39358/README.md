@@ -6,6 +6,8 @@ permalink: /kb/039/Q39358/
 
 ## Q39358: Non-Directional Beacons Do Not Work with Scenery Disks
 
+{% raw %}
+
 	Article: Q39358
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/039/Q39358/
 	
 	=============================================================================
 	
+
+{% endraw %}

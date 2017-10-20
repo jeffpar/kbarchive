@@ -6,6 +6,8 @@ permalink: /kb/091/Q91737/
 
 ## Q91737: PC Adm: External PO Not Listed in RNETWORK.GLB Regeneration
 
+{% raw %}
+
 	Article: Q91737
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a
@@ -77,3 +79,5 @@ permalink: /kb/091/Q91737/
 	
 	=============================================================================
 	
+
+{% endraw %}

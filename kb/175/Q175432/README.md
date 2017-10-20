@@ -6,6 +6,8 @@ permalink: /kb/175/Q175432/
 
 ## Q175432: HOWTO: Walk the Fields Collection of a Message in Active Msg
 
+{% raw %}
+
 	Article: Q175432
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -119,3 +121,5 @@ permalink: /kb/175/Q175432/
 	
 	=============================================================================
 	
+
+{% endraw %}

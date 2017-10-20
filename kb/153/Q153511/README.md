@@ -6,6 +6,8 @@ permalink: /kb/153/Q153511/
 
 ## Q153511: PRB: Shared Project, Branch Menu Option Is Not Available
 
+{% raw %}
+
 	Article: Q153511
 	Product(s): Microsoft SourceSafe
 	Version(s): MS-DOS:3.1; WINDOWS:3.1,4.0,5.0,6.0; winnt:3.1
@@ -68,3 +70,5 @@ permalink: /kb/153/Q153511/
 	
 	=============================================================================
 	
+
+{% endraw %}

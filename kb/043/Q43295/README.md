@@ -6,6 +6,8 @@ permalink: /kb/043/Q43295/
 
 ## Q43295: Executable Modules Must Be Processed by Resource Compiler
 
+{% raw %}
+
 	Article: Q43295
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -54,3 +56,5 @@ permalink: /kb/043/Q43295/
 	
 	=============================================================================
 	
+
+{% endraw %}

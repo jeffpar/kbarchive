@@ -6,6 +6,8 @@ permalink: /kb/099/Q99486/
 
 ## Q99486: SYSTEM.INI Setting Needed for MS-DOS Box in Windows
 
+{% raw %}
+
 	Article: Q99486
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -36,3 +38,5 @@ permalink: /kb/099/Q99486/
 	
 	=============================================================================
 	
+
+{% endraw %}

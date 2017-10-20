@@ -6,6 +6,8 @@ permalink: /kb/184/Q184608/
 
 ## Q184608: HOWTO: Programmatically Create a DSN for SQL Server with VB
 
+{% raw %}
+
 	Article: Q184608
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -162,3 +164,5 @@ permalink: /kb/184/Q184608/
 	
 	=============================================================================
 	
+
+{% endraw %}

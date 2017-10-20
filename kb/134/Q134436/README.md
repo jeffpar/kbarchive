@@ -6,6 +6,8 @@ permalink: /kb/134/Q134436/
 
 ## Q134436: FIX: After Removing Text in Grid Other Data Appears Truncated
 
+{% raw %}
+
 	Article: Q134436
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -127,3 +129,5 @@ permalink: /kb/134/Q134436/
 	
 	=============================================================================
 	
+
+{% endraw %}

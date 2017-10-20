@@ -6,6 +6,8 @@ permalink: /kb/155/Q155451/
 
 ## Q155451: Microsoft Position on Support for Customers Deploying NDS
 
+{% raw %}
+
 	Article: Q155451
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:
@@ -114,3 +116,5 @@ permalink: /kb/155/Q155451/
 	
 	=============================================================================
 	
+
+{% endraw %}

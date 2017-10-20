@@ -6,6 +6,8 @@ permalink: /kb/169/Q169908/
 
 ## Q169908: Specifying Printer Not Installed in Print Manager Causes AV
 
+{% raw %}
+
 	Article: Q169908
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -50,3 +52,5 @@ permalink: /kb/169/Q169908/
 	
 	=============================================================================
 	
+
+{% endraw %}

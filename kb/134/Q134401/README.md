@@ -6,6 +6,8 @@ permalink: /kb/134/Q134401/
 
 ## Q134401: Windows 95 Resource Kit Readme.txt File
 
+{% raw %}
+
 	Article: Q134401
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -235,3 +237,5 @@ permalink: /kb/134/Q134401/
 	
 	=============================================================================
 	
+
+{% endraw %}

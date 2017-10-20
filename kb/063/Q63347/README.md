@@ -6,6 +6,8 @@ permalink: /kb/063/Q63347/
 
 ## Q63347: PRB: Clicking Noises While Playing Sounds on SoundBlaster Card
 
+{% raw %}
+
 	Article: Q63347
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -65,3 +67,5 @@ permalink: /kb/063/Q63347/
 	
 	=============================================================================
 	
+
+{% endraw %}

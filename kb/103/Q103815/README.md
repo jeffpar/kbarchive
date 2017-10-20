@@ -6,6 +6,8 @@ permalink: /kb/103/Q103815/
 
 ## Q103815: PC WFW: Template Truncation in Extensions Upgrade
 
+{% raw %}
+
 	Article: Q103815
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -90,3 +92,5 @@ permalink: /kb/103/Q103815/
 	
 	=============================================================================
 	
+
+{% endraw %}

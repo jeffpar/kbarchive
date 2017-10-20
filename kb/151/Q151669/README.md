@@ -6,6 +6,8 @@ permalink: /kb/151/Q151669/
 
 ## Q151669: XFOR: MSMI Stops Processing Mail
 
+{% raw %}
+
 	Article: Q151669
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -90,3 +92,5 @@ permalink: /kb/151/Q151669/
 	
 	=============================================================================
 	
+
+{% endraw %}

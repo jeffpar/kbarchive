@@ -6,6 +6,8 @@ permalink: /kb/083/Q83373/
 
 ## Q83373: Installation and Usage of MicroSpeed PC-Trackball for Windows
 
+{% raw %}
+
 	Article: Q83373
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -103,3 +105,5 @@ permalink: /kb/083/Q83373/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163234/
 
 ## Q163234: PRB: User-defined Formats in OLE Drag-Drop Require Byte Arrays
 
+{% raw %}
+
 	Article: Q163234
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/163/Q163234/
 	
 	=============================================================================
 	
+
+{% endraw %}

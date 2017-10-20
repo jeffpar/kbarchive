@@ -6,6 +6,8 @@ permalink: /kb/221/Q221872/
 
 ## Q221872: How to Use Metainfo.asp
 
+{% raw %}
+
 	Article: Q221872
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -101,3 +103,5 @@ permalink: /kb/221/Q221872/
 	
 	=============================================================================
 	
+
+{% endraw %}

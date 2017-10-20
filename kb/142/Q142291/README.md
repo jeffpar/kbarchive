@@ -6,6 +6,8 @@ permalink: /kb/142/Q142291/
 
 ## Q142291: BUG: Error '80080005' with 16-Bit Remote Automation Clients
 
+{% raw %}
+
 	Article: Q142291
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -90,3 +92,5 @@ permalink: /kb/142/Q142291/
 	
 	=============================================================================
 	
+
+{% endraw %}

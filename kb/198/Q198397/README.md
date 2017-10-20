@@ -6,6 +6,8 @@ permalink: /kb/198/Q198397/
 
 ## Q198397: Dr. Watson Does Not Seem to Trap GP Faults
 
+{% raw %}
+
 	Article: Q198397
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -50,3 +52,5 @@ permalink: /kb/198/Q198397/
 	
 	=============================================================================
 	
+
+{% endraw %}

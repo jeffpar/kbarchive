@@ -6,6 +6,8 @@ permalink: /kb/136/Q136545/
 
 ## Q136545: BUG: Macro with Line Continuation Interprets &quot;;&quot; Incorrectly
 
+{% raw %}
+
 	Article: Q136545
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.11
@@ -85,3 +87,5 @@ permalink: /kb/136/Q136545/
 	
 	=============================================================================
 	
+
+{% endraw %}

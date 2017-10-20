@@ -6,6 +6,8 @@ permalink: /kb/199/Q199035/
 
 ## Q199035: PRB: Solution and Web Files Are Added to Different Databases
 
+{% raw %}
+
 	Article: Q199035
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -123,3 +125,5 @@ permalink: /kb/199/Q199035/
 	
 	=============================================================================
 	
+
+{% endraw %}

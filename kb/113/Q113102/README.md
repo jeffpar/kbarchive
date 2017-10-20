@@ -6,6 +6,8 @@ permalink: /kb/113/Q113102/
 
 ## Q113102: Bookshelf: Pronunciations Don't Work under Windows NT
 
+{% raw %}
+
 	Article: Q113102
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,1995 edition; winnt:3.1,3.5
@@ -54,3 +56,5 @@ permalink: /kb/113/Q113102/
 	
 	=============================================================================
 	
+
+{% endraw %}

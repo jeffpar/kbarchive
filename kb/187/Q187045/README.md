@@ -6,6 +6,8 @@ permalink: /kb/187/Q187045/
 
 ## Q187045: Aciniupd.exe Has No Help Switches
 
+{% raw %}
+
 	Article: Q187045
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -41,3 +43,5 @@ permalink: /kb/187/Q187045/
 	
 	=============================================================================
 	
+
+{% endraw %}

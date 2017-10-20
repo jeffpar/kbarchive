@@ -6,6 +6,8 @@ permalink: /kb/231/Q231512/
 
 ## Q231512: MapPoint 2000: Data Import Wizard Assigns ZIP Heading to Column
 
+{% raw %}
+
 	Article: Q231512
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -73,3 +75,5 @@ permalink: /kb/231/Q231512/
 	
 	=============================================================================
 	
+
+{% endraw %}

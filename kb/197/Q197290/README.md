@@ -6,6 +6,8 @@ permalink: /kb/197/Q197290/
 
 ## Q197290: Euro Currency Not Available in Windows NT 3.51 Character Sets
 
+{% raw %}
+
 	Article: Q197290
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -162,3 +164,5 @@ permalink: /kb/197/Q197290/
 	
 	=============================================================================
 	
+
+{% endraw %}

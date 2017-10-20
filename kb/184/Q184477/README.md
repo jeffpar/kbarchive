@@ -6,6 +6,8 @@ permalink: /kb/184/Q184477/
 
 ## Q184477: Stop Some Services Before Installing Proxy Server 2.0
 
+{% raw %}
+
 	Article: Q184477
 	Product(s): Internet Information Server
 	Version(s): 2.0,3.0,4.0
@@ -64,3 +66,5 @@ permalink: /kb/184/Q184477/
 	
 	=============================================================================
 	
+
+{% endraw %}

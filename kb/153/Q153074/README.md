@@ -6,6 +6,8 @@ permalink: /kb/153/Q153074/
 
 ## Q153074: Administrators Can't Remove All Users from Built-in Groups
 
+{% raw %}
+
 	Article: Q153074
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.50,3.51
@@ -49,3 +51,5 @@ permalink: /kb/153/Q153074/
 	
 	=============================================================================
 	
+
+{% endraw %}

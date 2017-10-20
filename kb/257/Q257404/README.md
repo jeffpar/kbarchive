@@ -6,6 +6,8 @@ permalink: /kb/257/Q257404/
 
 ## Q257404: DOS Command Line Is Missing the First Character
 
+{% raw %}
+
 	Article: Q257404
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,2000 SP2
@@ -101,3 +103,5 @@ permalink: /kb/257/Q257404/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148685/
 
 ## Q148685: PRB: Changing Partition Formatting Causes Grid to Jump Around
 
+{% raw %}
+
 	Article: Q148685
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -72,3 +74,5 @@ permalink: /kb/148/Q148685/
 	
 	=============================================================================
 	
+
+{% endraw %}

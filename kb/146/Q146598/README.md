@@ -6,6 +6,8 @@ permalink: /kb/146/Q146598/
 
 ## Q146598: XFOR: Messages Are Stuck in the IMC's OUT Queue
 
+{% raw %}
+
 	Article: Q146598
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/146/Q146598/
 	
 	=============================================================================
 	
+
+{% endraw %}

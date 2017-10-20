@@ -6,6 +6,8 @@ permalink: /kb/189/Q189930/
 
 ## Q189930: XCLN: Macintosh Client Error &quot;The Item Could Not Be Displayed&quot;
 
+{% raw %}
+
 	Article: Q189930
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0; WINDOWS:4.0,5.0
@@ -66,3 +68,5 @@ permalink: /kb/189/Q189930/
 	
 	=============================================================================
 	
+
+{% endraw %}

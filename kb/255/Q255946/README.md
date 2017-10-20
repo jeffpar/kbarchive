@@ -6,6 +6,8 @@ permalink: /kb/255/Q255946/
 
 ## Q255946: Allegiance: Training Resets Game Controller to Default Settings
 
+{% raw %}
+
 	Article: Q255946
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -47,3 +49,5 @@ permalink: /kb/255/Q255946/
 	
 	=============================================================================
 	
+
+{% endraw %}

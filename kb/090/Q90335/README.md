@@ -6,6 +6,8 @@ permalink: /kb/090/Q90335/
 
 ## Q90335: Cannot Find HOME Directory Share on IBM LAN Server
 
+{% raw %}
+
 	Article: Q90335
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/090/Q90335/
 	
 	=============================================================================
 	
+
+{% endraw %}

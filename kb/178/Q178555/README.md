@@ -6,6 +6,8 @@ permalink: /kb/178/Q178555/
 
 ## Q178555: How to Move a Scheduled Job to Another NT Server
 
+{% raw %}
+
 	Article: Q178555
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -112,3 +114,5 @@ permalink: /kb/178/Q178555/
 	
 	=============================================================================
 	
+
+{% endraw %}

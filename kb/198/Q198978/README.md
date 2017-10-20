@@ -6,6 +6,8 @@ permalink: /kb/198/Q198978/
 
 ## Q198978: SMS: Trap Receiver Not in SMS 2.0
 
+{% raw %}
+
 	Article: Q198978
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -42,3 +44,5 @@ permalink: /kb/198/Q198978/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194686/
 
 ## Q194686: X400: Error 58 Message Displayed and Connection Ends
 
+{% raw %}
+
 	Article: Q194686
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -81,3 +83,5 @@ permalink: /kb/194/Q194686/
 	
 	=============================================================================
 	
+
+{% endraw %}

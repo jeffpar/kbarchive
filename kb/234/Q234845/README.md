@@ -6,6 +6,8 @@ permalink: /kb/234/Q234845/
 
 ## Q234845: Input Box over First Binding in HTMLA Advanced Properties
 
+{% raw %}
+
 	Article: Q234845
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/234/Q234845/
 	
 	=============================================================================
 	
+
+{% endraw %}

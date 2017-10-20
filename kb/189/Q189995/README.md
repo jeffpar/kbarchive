@@ -6,6 +6,8 @@ permalink: /kb/189/Q189995/
 
 ## Q189995: XADM: Unable to Delete Mailbox
 
+{% raw %}
+
 	Article: Q189995
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -55,3 +57,5 @@ permalink: /kb/189/Q189995/
 	
 	=============================================================================
 	
+
+{% endraw %}

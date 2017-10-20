@@ -6,6 +6,8 @@ permalink: /kb/149/Q149518/
 
 ## Q149518: BUG: OK Button Callback Not Called in Video Poker Sample
 
+{% raw %}
+
 	Article: Q149518
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -95,3 +97,5 @@ permalink: /kb/149/Q149518/
 	
 	=============================================================================
 	
+
+{% endraw %}

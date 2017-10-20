@@ -6,6 +6,8 @@ permalink: /kb/322/Q322350/
 
 ## Q322350: HOW TO: Recycle IIS 5.0 with the IIS 5.0 Process Recycling Tool
 
+{% raw %}
+
 	Article: Q322350
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -459,3 +461,5 @@ permalink: /kb/322/Q322350/
 	
 	=============================================================================
 	
+
+{% endraw %}

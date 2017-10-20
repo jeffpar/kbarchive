@@ -6,6 +6,8 @@ permalink: /kb/321/Q321080/
 
 ## Q321080: Ntbackup Does Not Back Up Files from an SFU NFS Mount Point
 
+{% raw %}
+
 	Article: Q321080
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,2.1 OEM Only,2.2 OEM Only
@@ -91,3 +93,5 @@ permalink: /kb/321/Q321080/
 	
 	=============================================================================
 	
+
+{% endraw %}

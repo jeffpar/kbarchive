@@ -6,6 +6,8 @@ permalink: /kb/093/Q93246/
 
 ## Q93246: Australian Star Dot-Matrix Models
 
+{% raw %}
+
 	Article: Q93246
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/093/Q93246/
 	
 	=============================================================================
 	
+
+{% endraw %}

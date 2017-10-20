@@ -6,6 +6,8 @@ permalink: /kb/134/Q134985/
 
 ## Q134985: Browsing &amp; Other Traffic Incur High Costs over ISDN Routers
 
+{% raw %}
+
 	Article: Q134985
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -241,3 +243,5 @@ permalink: /kb/134/Q134985/
 	
 	=============================================================================
 	
+
+{% endraw %}

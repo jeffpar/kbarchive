@@ -6,6 +6,8 @@ permalink: /kb/088/Q88572/
 
 ## Q88572: Using the Intel Inboard 386/PC with Windows
 
+{% raw %}
+
 	Article: Q88572
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/088/Q88572/
 	
 	=============================================================================
 	
+
+{% endraw %}

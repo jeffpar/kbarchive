@@ -6,6 +6,8 @@ permalink: /kb/170/Q170664/
 
 ## Q170664: Index Server Cannot Index a Virtual Directory with Require SSL
 
+{% raw %}
+
 	Article: Q170664
 	Product(s): Internet Information Server
 	Version(s): WINNT: 1.1
@@ -60,3 +62,5 @@ permalink: /kb/170/Q170664/
 	
 	=============================================================================
 	
+
+{% endraw %}

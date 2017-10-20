@@ -6,6 +6,8 @@ permalink: /kb/098/Q98619/
 
 ## Q98619: PATPOLY Demos Polygon Filled with Dithered Color
 
+{% raw %}
+
 	Article: Q98619
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -72,3 +74,5 @@ permalink: /kb/098/Q98619/
 	
 	=============================================================================
 	
+
+{% endraw %}

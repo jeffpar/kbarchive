@@ -6,6 +6,8 @@ permalink: /kb/175/Q175768/
 
 ## Q175768: FIX: ActiveX MAPI Control 5.0 Causes Memory Errors
 
+{% raw %}
+
 	Article: Q175768
 	Product(s): Microsoft FoxPro
 	Version(s): WINNT:97
@@ -146,3 +148,5 @@ permalink: /kb/175/Q175768/
 	
 	=============================================================================
 	
+
+{% endraw %}

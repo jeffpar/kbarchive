@@ -6,6 +6,8 @@ permalink: /kb/176/Q176124/
 
 ## Q176124: WD97: Revision Bars Display and Print in Wrong Location
 
+{% raw %}
+
 	Article: Q176124
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -133,3 +135,5 @@ permalink: /kb/176/Q176124/
 	
 	=============================================================================
 	
+
+{% endraw %}

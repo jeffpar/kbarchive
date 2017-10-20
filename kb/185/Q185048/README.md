@@ -6,6 +6,8 @@ permalink: /kb/185/Q185048/
 
 ## Q185048: Outwars: Background Music Echoes or Sounds Distorted
 
+{% raw %}
+
 	Article: Q185048
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -60,3 +62,5 @@ permalink: /kb/185/Q185048/
 	
 	=============================================================================
 	
+
+{% endraw %}

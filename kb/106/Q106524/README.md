@@ -6,6 +6,8 @@ permalink: /kb/106/Q106524/
 
 ## Q106524: Invalid Named Pipe Message Causes SNABASE.EXE Exception
 
+{% raw %}
+
 	Article: Q106524
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -94,3 +96,5 @@ permalink: /kb/106/Q106524/
 	
 	=============================================================================
 	
+
+{% endraw %}

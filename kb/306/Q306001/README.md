@@ -6,6 +6,8 @@ permalink: /kb/306/Q306001/
 
 ## Q306001: BUG 14373: Inline Sign-In Page Does Not Render w/ Netscape
 
+{% raw %}
+
 	Article: Q306001
 	Product(s): Microsoft Developer Network
 	Version(s): 2.0
@@ -48,3 +50,5 @@ permalink: /kb/306/Q306001/
 	
 	=============================================================================
 	
+
+{% endraw %}

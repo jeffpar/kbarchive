@@ -6,6 +6,8 @@ permalink: /kb/150/Q150237/
 
 ## Q150237: BUG: Cell Size of Grid Does Not Change as Font Size Changes
 
+{% raw %}
+
 	Article: Q150237
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -93,3 +95,5 @@ permalink: /kb/150/Q150237/
 	
 	=============================================================================
 	
+
+{% endraw %}

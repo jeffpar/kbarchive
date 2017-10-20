@@ -6,6 +6,8 @@ permalink: /kb/030/Q30313/
 
 ## Q30313: BC.EXE &quot;Syntax Error&quot; Instead of CONST &quot;Duplicate Definition&quot;
 
+{% raw %}
+
 	Article: Q30313
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -41,3 +43,5 @@ permalink: /kb/030/Q30313/
 	   'If this is compiled with BC.EXE you get a "Syntax Error"
 	   a = 5
 	   CONST a = 6
+
+{% endraw %}

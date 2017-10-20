@@ -6,6 +6,8 @@ permalink: /kb/037/Q37769/
 
 ## Q37769: Using Run-Time Module, RUN Makes Program Lose 70K Memory
 
+{% raw %}
+
 	Article: Q37769
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10
@@ -109,3 +111,5 @@ permalink: /kb/037/Q37769/
 	j=_memavl();/*calculate approximate amount available from near heap*/
 	printf("approximate # of bytes available for allocation %ld\n",l+j);
 	}
+
+{% endraw %}

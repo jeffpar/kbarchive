@@ -6,6 +6,8 @@ permalink: /kb/299/Q299322/
 
 ## Q299322: FIX: Error with Repeated AddObject/RemoveObject Calls
 
+{% raw %}
+
 	Article: Q299322
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -100,3 +102,5 @@ permalink: /kb/299/Q299322/
 	
 	=============================================================================
 	
+
+{% endraw %}

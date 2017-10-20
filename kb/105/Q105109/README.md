@@ -6,6 +6,8 @@ permalink: /kb/105/Q105109/
 
 ## Q105109: PC Win: .MMF File Size Increases by Twice the Size of Message
 
+{% raw %}
+
 	Article: Q105109
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -60,3 +62,5 @@ permalink: /kb/105/Q105109/
 	
 	=============================================================================
 	
+
+{% endraw %}

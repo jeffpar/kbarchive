@@ -6,6 +6,8 @@ permalink: /kb/066/Q66078/
 
 ## Q66078: Turning Off Autoswitching for Acer DVGA Board
 
+{% raw %}
+
 	Article: Q66078
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -58,3 +60,5 @@ permalink: /kb/066/Q66078/
 	
 	=============================================================================
 	
+
+{% endraw %}

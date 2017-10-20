@@ -6,6 +6,8 @@ permalink: /kb/183/Q183517/
 
 ## Q183517: XCLN: Unable to Display Outlook Calendar After Move Mailbox
 
+{% raw %}
+
 	Article: Q183517
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5; winnt:4.0,5.0,5.5; :8.0,8.01,8.02,8.03
@@ -78,3 +80,5 @@ permalink: /kb/183/Q183517/
 	
 	=============================================================================
 	
+
+{% endraw %}

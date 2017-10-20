@@ -6,6 +6,8 @@ permalink: /kb/067/Q67373/
 
 ## Q67373: CLEAR Can Cause &quot;Subscript out of Range&quot; with &#36;DYNAMIC Array
 
+{% raw %}
+
 	Article: Q67373
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -66,3 +68,5 @@ permalink: /kb/067/Q67373/
 	For related articles, query on the following words:
 	
 	   LINK and STACK and default and size and 3.00 and 4.00 and QuickBASIC
+
+{% endraw %}

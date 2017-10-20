@@ -6,6 +6,8 @@ permalink: /kb/116/Q116156/
 
 ## Q116156: Farallon Phone-Net Is Incompatible with 32-Bit File Access
 
+{% raw %}
+
 	Article: Q116156
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -51,3 +53,5 @@ permalink: /kb/116/Q116156/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/101/Q101367/
 
 ## Q101367: PC WRmt: Err Msg: Mail Remote Driver Not Compatible...
 
+{% raw %}
+
 	Article: Q101367
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -73,3 +75,5 @@ permalink: /kb/101/Q101367/
 	
 	=============================================================================
 	
+
+{% endraw %}

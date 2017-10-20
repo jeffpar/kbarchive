@@ -6,6 +6,8 @@ permalink: /kb/187/Q187281/
 
 ## Q187281: PRB: Corporate Benefits Sample in German
 
+{% raw %}
+
 	Article: Q187281
 	Product(s): Microsoft Developer Network
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/187/Q187281/
 	
 	=============================================================================
 	
+
+{% endraw %}

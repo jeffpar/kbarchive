@@ -6,6 +6,8 @@ permalink: /kb/108/Q108460/
 
 ## Q108460: FIX: Carriage Control 1 Prints an Ankh Symbol to Screen
 
+{% raw %}
+
 	Article: Q108460
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -70,3 +72,5 @@ permalink: /kb/108/Q108460/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188401/
 
 ## Q188401: PRB: ACCESS Cannot Import/Link Table if Index Contains Function
 
+{% raw %}
+
 	Article: Q188401
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,3.0,3.0b,5.0,5.0a
@@ -156,3 +158,5 @@ permalink: /kb/188/Q188401/
 	
 	=============================================================================
 	
+
+{% endraw %}

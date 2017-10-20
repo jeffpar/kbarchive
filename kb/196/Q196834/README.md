@@ -6,6 +6,8 @@ permalink: /kb/196/Q196834/
 
 ## Q196834: PRB: MFC Active Document Container May Not Hide Toolbars
 
+{% raw %}
+
 	Article: Q196834
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -60,3 +62,5 @@ permalink: /kb/196/Q196834/
 	
 	=============================================================================
 	
+
+{% endraw %}

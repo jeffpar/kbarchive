@@ -6,6 +6,8 @@ permalink: /kb/157/Q157317/
 
 ## Q157317: PRB: &quot;Invalid Library File&quot; Loading .fll Created with VC++ 4.2
 
+{% raw %}
+
 	Article: Q157317
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b 5.00
@@ -93,3 +95,5 @@ permalink: /kb/157/Q157317/
 	
 	=============================================================================
 	
+
+{% endraw %}

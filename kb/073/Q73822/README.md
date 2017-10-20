@@ -6,6 +6,8 @@ permalink: /kb/073/Q73822/
 
 ## Q73822: SysEdit Uses Incorrect AUTOEXEC.BAT and CONFIG.SYS
 
+{% raw %}
+
 	Article: Q73822
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/073/Q73822/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136046/
 
 ## Q136046: PC WRmt: Possible Misdirected Mail When Upgrading Address List
 
+{% raw %}
+
 	Article: Q136046
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -88,3 +90,5 @@ permalink: /kb/136/Q136046/
 	
 	=============================================================================
 	
+
+{% endraw %}

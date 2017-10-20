@@ -6,6 +6,8 @@ permalink: /kb/068/Q68946/
 
 ## Q68946: NMK Macros Do Not Override Environment Variables
 
+{% raw %}
+
 	Article: Q68946
 	Product(s): See article
 	Version(s): 1.11
@@ -63,3 +65,5 @@ permalink: /kb/068/Q68946/
 	
 	Microsoft Development Utilities
 	=============================================================================
+
+{% endraw %}

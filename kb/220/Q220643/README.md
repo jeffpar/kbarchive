@@ -6,6 +6,8 @@ permalink: /kb/220/Q220643/
 
 ## Q220643: PRB: Windows CE 2.10 and 2.11 Configurations Are Not Available
 
+{% raw %}
+
 	Article: Q220643
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:6.0
@@ -98,3 +100,5 @@ permalink: /kb/220/Q220643/
 	
 	=============================================================================
 	
+
+{% endraw %}

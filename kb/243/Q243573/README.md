@@ -6,6 +6,8 @@ permalink: /kb/243/Q243573/
 
 ## Q243573: Error Message: The File &lt;Filename&gt;.tmp Could Not be Opened.
 
+{% raw %}
+
 	Article: Q243573
 	Product(s): Word Front Page
 	Version(s): WINDOWS:
@@ -85,3 +87,5 @@ permalink: /kb/243/Q243573/
 	
 	=============================================================================
 	
+
+{% endraw %}

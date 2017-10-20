@@ -6,6 +6,8 @@ permalink: /kb/192/Q192169/
 
 ## Q192169: BUG: Property Page Does Not Close Using Compiled VB OCX
 
+{% raw %}
+
 	Article: Q192169
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -138,3 +140,5 @@ permalink: /kb/192/Q192169/
 	
 	=============================================================================
 	
+
+{% endraw %}

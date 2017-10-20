@@ -6,6 +6,8 @@ permalink: /kb/130/Q130540/
 
 ## Q130540: System Management Server Setup Limits Path of Devices
 
+{% raw %}
+
 	Article: Q130540
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -52,3 +54,5 @@ permalink: /kb/130/Q130540/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/275/Q275877/
 
 ## Q275877: SMS: Installing BackOffice 4.5 Version of SMS on Windows 2000
 
+{% raw %}
+
 	Article: Q275877
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -64,3 +66,5 @@ permalink: /kb/275/Q275877/
 	
 	=============================================================================
 	
+
+{% endraw %}

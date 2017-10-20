@@ -6,6 +6,8 @@ permalink: /kb/109/Q109259/
 
 ## Q109259: CONN: MACGATE.INI File Should Not Be Edited Manually
 
+{% raw %}
+
 	Article: Q109259
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -51,3 +53,5 @@ permalink: /kb/109/Q109259/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186618/
 
 ## Q186618: New System Policy Options in Terminal Server
 
+{% raw %}
+
 	Article: Q186618
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -115,3 +117,5 @@ permalink: /kb/186/Q186618/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158424/
 
 ## Q158424: WD97: Some Characters Not Supported in ScreenTips
 
+{% raw %}
+
 	Article: Q158424
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/158/Q158424/
 	
 	=============================================================================
 	
+
+{% endraw %}

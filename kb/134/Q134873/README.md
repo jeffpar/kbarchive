@@ -6,6 +6,8 @@ permalink: /kb/134/Q134873/
 
 ## Q134873: PPT7: Shaded Backgrounds Appear Banded in Word or Excel
 
+{% raw %}
+
 	Article: Q134873
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -76,3 +78,5 @@ permalink: /kb/134/Q134873/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/077/Q77397/
 
 ## Q77397: KEYB.COM, German 83/84 Key Keyboard, and Phoenix BIOS
 
+{% raw %}
+
 	Article: Q77397
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -67,3 +69,5 @@ permalink: /kb/077/Q77397/
 	
 	=============================================================================
 	
+
+{% endraw %}

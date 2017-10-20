@@ -6,6 +6,8 @@ permalink: /kb/109/Q109337/
 
 ## Q109337: ADT/ODE: How to Hide the Database Window Menu Bar
 
+{% raw %}
+
 	Article: Q109337
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:1.1,2.0,7.0,97; :
@@ -94,3 +96,5 @@ permalink: /kb/109/Q109337/
 	
 	=============================================================================
 	
+
+{% endraw %}

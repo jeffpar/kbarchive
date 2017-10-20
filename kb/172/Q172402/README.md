@@ -6,6 +6,8 @@ permalink: /kb/172/Q172402/
 
 ## Q172402: Auditing Logon Failures Does Not Log Remote Failures
 
+{% raw %}
+
 	Article: Q172402
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/172/Q172402/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/256/Q256815/
 
 ## Q256815: MapPoint 2001: How to Create Web Links to Maps in Office
 
+{% raw %}
+
 	Article: Q256815
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/256/Q256815/
 	
 	=============================================================================
 	
+
+{% endraw %}

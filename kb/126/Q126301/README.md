@@ -6,6 +6,8 @@ permalink: /kb/126/Q126301/
 
 ## Q126301: FIX: CMDIFrameWnd Caption Not Updated When Child Closed
 
+{% raw %}
+
 	Article: Q126301
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -136,3 +138,5 @@ permalink: /kb/126/Q126301/
 	
 	=============================================================================
 	
+
+{% endraw %}

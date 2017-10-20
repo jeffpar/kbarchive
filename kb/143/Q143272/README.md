@@ -6,6 +6,8 @@ permalink: /kb/143/Q143272/
 
 ## Q143272: How to Restart Windows Without Restarting the Computer
 
+{% raw %}
+
 	Article: Q143272
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -51,3 +53,5 @@ permalink: /kb/143/Q143272/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196078/
 
 ## Q196078: No Error Message when Remote Link Services is Wrong for DLS
 
+{% raw %}
+
 	Article: Q196078
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -69,3 +71,5 @@ permalink: /kb/196/Q196078/
 	
 	=============================================================================
 	
+
+{% endraw %}

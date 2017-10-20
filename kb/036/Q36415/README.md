@@ -6,6 +6,8 @@ permalink: /kb/036/Q36415/
 
 ## Q36415: Case Sensitivity of Switches
 
+{% raw %}
+
 	Article: Q36415
 	Product(s): See article
 	Version(s): 1.00
@@ -16,3 +18,5 @@ permalink: /kb/036/Q36415/
 	The BACKUP text switch is case sensitive with the arguments given it.
 	The arguments "undel", "bak", and "none" need to be lowercase, otherwise
 	an error will be reported.
+
+{% endraw %}

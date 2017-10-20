@@ -6,6 +6,8 @@ permalink: /kb/060/Q60141/
 
 ## Q60141: HELPMAKE &quot;:p&quot; Option Does Not Work Correctly
 
+{% raw %}
+
 	Article: Q60141
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -41,3 +43,5 @@ permalink: /kb/060/Q60141/
 	Note: HELPMAKE.EXE is the Microsoft Help File Maintenance Utility.
 	HELPMAKE version 1.04 is shipped with BASIC PDS 7.00, and HELPMAKE
 	version 1.05 is shipped with BASIC PDS 7.10.
+
+{% endraw %}

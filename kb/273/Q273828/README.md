@@ -6,6 +6,8 @@ permalink: /kb/273/Q273828/
 
 ## Q273828: Midtown Madness 2: Sounds in the Game Are Not Played
 
+{% raw %}
+
 	Article: Q273828
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -178,3 +180,5 @@ permalink: /kb/273/Q273828/
 	
 	=============================================================================
 	
+
+{% endraw %}

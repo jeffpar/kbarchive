@@ -6,6 +6,8 @@ permalink: /kb/279/Q279800/
 
 ## Q279800: XFOR: Comments Do Not Appear in Updated Lotus Notes Meeting
 
+{% raw %}
+
 	Article: Q279800
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -54,3 +56,5 @@ permalink: /kb/279/Q279800/
 	
 	=============================================================================
 	
+
+{% endraw %}

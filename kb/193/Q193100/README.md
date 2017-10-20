@@ -6,6 +6,8 @@ permalink: /kb/193/Q193100/
 
 ## Q193100: FIX: CString Serialization Causes Access Violation
 
+{% raw %}
+
 	Article: Q193100
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -119,3 +121,5 @@ permalink: /kb/193/Q193100/
 	
 	=============================================================================
 	
+
+{% endraw %}

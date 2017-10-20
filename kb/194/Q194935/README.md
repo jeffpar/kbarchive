@@ -6,6 +6,8 @@ permalink: /kb/194/Q194935/
 
 ## Q194935: Printing from S/36 or AS/36 Fails when Using Host Print Server
 
+{% raw %}
+
 	Article: Q194935
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -86,3 +88,5 @@ permalink: /kb/194/Q194935/
 	
 	=============================================================================
 	
+
+{% endraw %}

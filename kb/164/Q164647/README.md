@@ -6,6 +6,8 @@ permalink: /kb/164/Q164647/
 
 ## Q164647: Server Displays Offline When Link Drops and Recovers
 
+{% raw %}
+
 	Article: Q164647
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -86,3 +88,5 @@ permalink: /kb/164/Q164647/
 	
 	=============================================================================
 	
+
+{% endraw %}

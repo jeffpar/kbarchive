@@ -6,6 +6,8 @@ permalink: /kb/110/Q110257/
 
 ## Q110257: Flight Simulator: Landing Light Does Not Turn on Automatically
 
+{% raw %}
+
 	Article: Q110257
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -55,3 +57,5 @@ permalink: /kb/110/Q110257/
 	
 	=============================================================================
 	
+
+{% endraw %}

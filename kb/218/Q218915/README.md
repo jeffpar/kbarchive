@@ -6,6 +6,8 @@ permalink: /kb/218/Q218915/
 
 ## Q218915: Err Msg: This Program Cannot Continue Running Because of a...
 
+{% raw %}
+
 	Article: Q218915
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:98
@@ -70,3 +72,5 @@ permalink: /kb/218/Q218915/
 	
 	=============================================================================
 	
+
+{% endraw %}

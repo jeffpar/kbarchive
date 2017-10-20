@@ -6,6 +6,8 @@ permalink: /kb/234/Q234563/
 
 ## Q234563: XCLN: Errors Using Command Line Switches with Outlook
 
+{% raw %}
+
 	Article: Q234563
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -58,3 +60,5 @@ permalink: /kb/234/Q234563/
 	
 	=============================================================================
 	
+
+{% endraw %}

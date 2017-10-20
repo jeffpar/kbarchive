@@ -6,6 +6,8 @@ permalink: /kb/185/Q185270/
 
 ## Q185270: WD97: Paragraph Fails to Indent When Indent Applied with Ruler
 
+{% raw %}
+
 	Article: Q185270
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -57,3 +59,5 @@ permalink: /kb/185/Q185270/
 	
 	=============================================================================
 	
+
+{% endraw %}

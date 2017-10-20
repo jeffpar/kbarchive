@@ -6,6 +6,8 @@ permalink: /kb/167/Q167620/
 
 ## Q167620: WD97: TOC Styles Don't Have Tab Stop When Applied Manually
 
+{% raw %}
+
 	Article: Q167620
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -113,3 +115,5 @@ permalink: /kb/167/Q167620/
 	
 	=============================================================================
 	
+
+{% endraw %}

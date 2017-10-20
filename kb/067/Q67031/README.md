@@ -6,6 +6,8 @@ permalink: /kb/067/Q67031/
 
 ## Q67031: C1001: '@(#)regMD.c:1.100', Line 3101
 
+{% raw %}
+
 	Article: Q67031
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -58,3 +60,5 @@ permalink: /kb/067/Q67031/
 	10:    moo=goo;
 	11:    n= moo->i ? moo->i :10000;
 	12: }
+
+{% endraw %}

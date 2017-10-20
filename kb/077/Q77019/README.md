@@ -6,6 +6,8 @@ permalink: /kb/077/Q77019/
 
 ## Q77019: Bookshelf 1991: OK Button Dimmed at Install Path in Setup
 
+{% raw %}
+
 	Article: Q77019
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1991 edition
@@ -48,3 +50,5 @@ permalink: /kb/077/Q77019/
 	
 	=============================================================================
 	
+
+{% endraw %}

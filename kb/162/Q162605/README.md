@@ -6,6 +6,8 @@ permalink: /kb/162/Q162605/
 
 ## Q162605: The SLI Interface Does not Return LUA_DATA_INCOMPLETE
 
+{% raw %}
+
 	Article: Q162605
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -91,3 +93,5 @@ permalink: /kb/162/Q162605/
 	
 	=============================================================================
 	
+
+{% endraw %}

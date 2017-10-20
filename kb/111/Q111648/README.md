@@ -6,6 +6,8 @@ permalink: /kb/111/Q111648/
 
 ## Q111648: BUG: EM_CANUNDO Returns Zero After EM_REPLACESEL
 
+{% raw %}
+
 	Article: Q111648
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -41,3 +43,5 @@ permalink: /kb/111/Q111648/
 	
 	=============================================================================
 	
+
+{% endraw %}

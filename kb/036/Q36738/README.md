@@ -6,6 +6,8 @@ permalink: /kb/036/Q36738/
 
 ## Q36738: Third-Party TSR for Printing Hercules Graphics Screens
 
+{% raw %}
+
 	Article: Q36738
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -63,3 +65,5 @@ permalink: /kb/036/Q36738/
 	called QBHERC.COM in QuickBASIC Versions 4.00 and 4.00b and in the
 	BASIC compiler Versions 6.00 and 6.00b. This driver is called
 	MSHERC.COM in QuickBASIC 4.50 and in BASIC PDS 7.00.
+
+{% endraw %}

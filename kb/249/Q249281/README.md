@@ -6,6 +6,8 @@ permalink: /kb/249/Q249281/
 
 ## Q249281: COMTI May Generate 1507 Error When Converting COMP-3 Data Type
 
+{% raw %}
+
 	Article: Q249281
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,1.0 SP1,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -149,3 +151,5 @@ permalink: /kb/249/Q249281/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155435/
 
 ## Q155435: Space Character in Keystroke Font Printed Incorrectly
 
+{% raw %}
+
 	Article: Q155435
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -66,3 +68,5 @@ permalink: /kb/155/Q155435/
 	
 	=============================================================================
 	
+
+{% endraw %}

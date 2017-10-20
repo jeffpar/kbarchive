@@ -6,6 +6,8 @@ permalink: /kb/082/Q82734/
 
 ## Q82734: Meaning of SYSTEM.INI File's SVGAMODE= Setting
 
+{% raw %}
+
 	Article: Q82734
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -83,3 +85,5 @@ permalink: /kb/082/Q82734/
 	
 	=============================================================================
 	
+
+{% endraw %}

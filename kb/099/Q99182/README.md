@@ -6,6 +6,8 @@ permalink: /kb/099/Q99182/
 
 ## Q99182: HOWTO: Change an MFC-Based MDI Child Window's Frame Text
 
+{% raw %}
+
 	Article: Q99182
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.1,4.2,5.0,6.0
@@ -164,3 +166,5 @@ permalink: /kb/099/Q99182/
 	
 	=============================================================================
 	
+
+{% endraw %}

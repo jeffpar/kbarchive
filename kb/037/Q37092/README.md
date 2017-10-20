@@ -6,6 +6,8 @@ permalink: /kb/037/Q37092/
 
 ## Q37092: BUILDRTM Puts C Routines in BC 6.00 Extended Run-Time Library
 
+{% raw %}
+
 	Article: Q37092
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -62,3 +64,5 @@ permalink: /kb/037/Q37092/
 	
 	This produces the .EXE file PROG2.EXE, which requires the NEWRUN.EXE
 	extended run-time library to run.
+
+{% endraw %}

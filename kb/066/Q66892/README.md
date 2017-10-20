@@ -6,6 +6,8 @@ permalink: /kb/066/Q66892/
 
 ## Q66892: ASD: BACKSLASH Does Not Bring Up Design Preferences Menu
 
+{% raw %}
+
 	Article: Q66892
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -32,3 +34,5 @@ permalink: /kb/066/Q66892/
 	
 	=============================================================================
 	
+
+{% endraw %}

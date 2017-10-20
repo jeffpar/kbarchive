@@ -6,6 +6,8 @@ permalink: /kb/137/Q137557/
 
 ## Q137557: Bookshelf 1995: Opening Word Minimizes Bookshelf
 
+{% raw %}
+
 	Article: Q137557
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:6.0; :1995 edition
@@ -41,3 +43,5 @@ permalink: /kb/137/Q137557/
 	
 	=============================================================================
 	
+
+{% endraw %}

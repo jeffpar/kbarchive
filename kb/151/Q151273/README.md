@@ -6,6 +6,8 @@ permalink: /kb/151/Q151273/
 
 ## Q151273: XGEN: Definitions of Folder Design Conflict Messages
 
+{% raw %}
+
 	Article: Q151273
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -54,3 +56,5 @@ permalink: /kb/151/Q151273/
 	
 	=============================================================================
 	
+
+{% endraw %}

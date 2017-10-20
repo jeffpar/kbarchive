@@ -6,6 +6,8 @@ permalink: /kb/126/Q126122/
 
 ## Q126122: WIN EXCEL CDK: Corrections and Comments
 
+{% raw %}
+
 	Article: Q126122
 	Product(s): Microsoft Press
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/126/Q126122/
 	
 	=============================================================================
 	
+
+{% endraw %}

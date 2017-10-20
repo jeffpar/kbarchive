@@ -6,6 +6,8 @@ permalink: /kb/183/Q183654/
 
 ## Q183654: IBM DTTA-351010 10.1 GB Drive Capacity Is Inaccurate
 
+{% raw %}
+
 	Article: Q183654
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/183/Q183654/
 	
 	=============================================================================
 	
+
+{% endraw %}

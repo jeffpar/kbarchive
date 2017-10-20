@@ -6,6 +6,8 @@ permalink: /kb/125/Q125018/
 
 ## Q125018: PC Win: Details of User or Group Not Available in Read Note
 
+{% raw %}
+
 	Article: Q125018
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -56,3 +58,5 @@ permalink: /kb/125/Q125018/
 	
 	=============================================================================
 	
+
+{% endraw %}

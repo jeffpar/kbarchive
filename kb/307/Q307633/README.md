@@ -6,6 +6,8 @@ permalink: /kb/307/Q307633/
 
 ## Q307633: IIS Does Not Return HTTP 304 Not Modified for Compressed Content
 
+{% raw %}
+
 	Article: Q307633
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -84,3 +86,5 @@ permalink: /kb/307/Q307633/
 	
 	=============================================================================
 	
+
+{% endraw %}

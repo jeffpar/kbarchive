@@ -6,6 +6,8 @@ permalink: /kb/150/Q150778/
 
 ## Q150778: Mastering Visual C++, Mastering Access: Runtime Error 13
 
+{% raw %}
+
 	Article: Q150778
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/150/Q150778/
 	
 	=============================================================================
 	
+
+{% endraw %}

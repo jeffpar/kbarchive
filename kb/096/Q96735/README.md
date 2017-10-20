@@ -6,6 +6,8 @@ permalink: /kb/096/Q96735/
 
 ## Q96735: Hardware/Software Requirements for Fault Tolerance
 
+{% raw %}
+
 	Article: Q96735
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -129,3 +131,5 @@ permalink: /kb/096/Q96735/
 	
 	=============================================================================
 	
+
+{% endraw %}

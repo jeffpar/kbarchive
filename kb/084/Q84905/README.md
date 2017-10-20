@@ -6,6 +6,8 @@ permalink: /kb/084/Q84905/
 
 ## Q84905: Startup Directory Doesn't Work in Standard on Novell
 
+{% raw %}
+
 	Article: Q84905
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -75,3 +77,5 @@ permalink: /kb/084/Q84905/
 	
 	=============================================================================
 	
+
+{% endraw %}

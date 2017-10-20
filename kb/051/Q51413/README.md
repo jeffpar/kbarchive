@@ -6,6 +6,8 @@ permalink: /kb/051/Q51413/
 
 ## Q51413: STACK STACK Correctly Gives &quot;Out of Memory&quot; in QBX.EXE
 
+{% raw %}
+
 	Article: Q51413
 	Product(s): See article
 	Version(s): 7.00
@@ -24,3 +26,5 @@ permalink: /kb/051/Q51413/
 	
 	This information applies to Microsoft BASIC PDS Version 7.00 for
 	MS-DOS.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/202/Q202014/
 
 ## Q202014: Placing HTTPEXT.DLL in the &#42; Scriptmaps Causes 500 Error
 
+{% raw %}
+
 	Article: Q202014
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -42,3 +44,5 @@ permalink: /kb/202/Q202014/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181871/
 
 ## Q181871: XADM: PR_MESSAGE_FLAGS MSGFLAG_UNMODIFIED Bit Not Set Correctly
 
+{% raw %}
+
 	Article: Q181871
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -67,3 +69,5 @@ permalink: /kb/181/Q181871/
 	
 	=============================================================================
 	
+
+{% endraw %}

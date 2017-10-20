@@ -6,6 +6,8 @@ permalink: /kb/153/Q153256/
 
 ## Q153256: Unable to Build Wrui3270.exe Sample App. with VC++ 4.0
 
+{% raw %}
+
 	Article: Q153256
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -66,3 +68,5 @@ permalink: /kb/153/Q153256/
 	
 	=============================================================================
 	
+
+{% endraw %}

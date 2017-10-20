@@ -6,6 +6,8 @@ permalink: /kb/139/Q139859/
 
 ## Q139859: Video for Windows Screen Capture Displays Wrong Mouse Pointer
 
+{% raw %}
+
 	Article: Q139859
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1.1,95
@@ -43,3 +45,5 @@ permalink: /kb/139/Q139859/
 	
 	=============================================================================
 	
+
+{% endraw %}

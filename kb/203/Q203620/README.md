@@ -6,6 +6,8 @@ permalink: /kb/203/Q203620/
 
 ## Q203620: XADM: NT Account for DL Owner Is Not Added to Permissions
 
+{% raw %}
+
 	Article: Q203620
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -62,3 +64,5 @@ permalink: /kb/203/Q203620/
 	
 	=============================================================================
 	
+
+{% endraw %}

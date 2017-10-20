@@ -6,6 +6,8 @@ permalink: /kb/153/Q153457/
 
 ## Q153457: Host TPX Application Problem Leads to 3270 Emulator 2004 Error
 
+{% raw %}
+
 	Article: Q153457
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11 SP1;2.11 SP2,3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -90,3 +92,5 @@ permalink: /kb/153/Q153457/
 	
 	=============================================================================
 	
+
+{% endraw %}

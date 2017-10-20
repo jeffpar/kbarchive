@@ -6,6 +6,8 @@ permalink: /kb/163/Q163292/
 
 ## Q163292: XCON: WEBTECH: MTA Events 2219; 2206; and 2207 (MTACHECK)
 
+{% raw %}
+
 	Article: Q163292
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -69,3 +71,5 @@ permalink: /kb/163/Q163292/
 	
 	=============================================================================
 	
+
+{% endraw %}

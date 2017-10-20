@@ -6,6 +6,8 @@ permalink: /kb/132/Q132613/
 
 ## Q132613: Memory Problems on EISA Computers
 
+{% raw %}
+
 	Article: Q132613
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/132/Q132613/
 	
 	=============================================================================
 	
+
+{% endraw %}

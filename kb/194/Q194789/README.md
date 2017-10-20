@@ -6,6 +6,8 @@ permalink: /kb/194/Q194789/
 
 ## Q194789: HOWTO: Determine Available PaperBins wth DeviceCapabilities API
 
+{% raw %}
+
 	Article: Q194789
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -131,3 +133,5 @@ permalink: /kb/194/Q194789/
 	
 	=============================================================================
 	
+
+{% endraw %}

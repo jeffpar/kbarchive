@@ -6,6 +6,8 @@ permalink: /kb/165/Q165919/
 
 ## Q165919: HOWTO: Use the Windows 95/98/Me Copy and Recycle Functions in VB
 
+{% raw %}
+
 	Article: Q165919
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -189,3 +191,5 @@ permalink: /kb/165/Q165919/
 	
 	=============================================================================
 	
+
+{% endraw %}

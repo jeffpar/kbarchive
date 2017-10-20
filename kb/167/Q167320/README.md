@@ -6,6 +6,8 @@ permalink: /kb/167/Q167320/
 
 ## Q167320: Fixacls.exe Not Available in Windows NT Server 4.0 Resource Kit
 
+{% raw %}
+
 	Article: Q167320
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/167/Q167320/
 	
 	=============================================================================
 	
+
+{% endraw %}

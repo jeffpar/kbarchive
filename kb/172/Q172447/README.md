@@ -6,6 +6,8 @@ permalink: /kb/172/Q172447/
 
 ## Q172447: BUG: PageFrame SubClass Invisible at Runtime
 
+{% raw %}
+
 	Article: Q172447
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -81,3 +83,5 @@ permalink: /kb/172/Q172447/
 	
 	=============================================================================
 	
+
+{% endraw %}

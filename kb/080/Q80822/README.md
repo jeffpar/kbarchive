@@ -6,6 +6,8 @@ permalink: /kb/080/Q80822/
 
 ## Q80822: NoSwitch.exe Prevents Windows from Switching Tasks
 
+{% raw %}
+
 	Article: Q80822
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -82,3 +84,5 @@ permalink: /kb/080/Q80822/
 	
 	=============================================================================
 	
+
+{% endraw %}

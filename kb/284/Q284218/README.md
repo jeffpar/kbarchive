@@ -6,6 +6,8 @@ permalink: /kb/284/Q284218/
 
 ## Q284218: MechWarrior 4: Troubleshooting Video Issues
 
+{% raw %}
+
 	Article: Q284218
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -237,3 +239,5 @@ permalink: /kb/284/Q284218/
 	
 	=============================================================================
 	
+
+{% endraw %}

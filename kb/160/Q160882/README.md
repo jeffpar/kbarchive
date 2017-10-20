@@ -6,6 +6,8 @@ permalink: /kb/160/Q160882/
 
 ## Q160882: Additional 4mm dat Tape Support in Windows NT 4.0 SP2
 
+{% raw %}
+
 	Article: Q160882
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -44,3 +46,5 @@ permalink: /kb/160/Q160882/
 	
 	=============================================================================
 	
+
+{% endraw %}

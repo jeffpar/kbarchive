@@ -6,6 +6,8 @@ permalink: /kb/312/Q312891/
 
 ## Q312891: HOW TO: Synchronize a Computer Database with Pocket Access
 
+{% raw %}
+
 	Article: Q312891
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -100,3 +102,5 @@ permalink: /kb/312/Q312891/
 	
 	=============================================================================
 	
+
+{% endraw %}

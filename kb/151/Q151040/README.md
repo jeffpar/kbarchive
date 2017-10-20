@@ -6,6 +6,8 @@ permalink: /kb/151/Q151040/
 
 ## Q151040: FP: Copy Web Command Replaces Files on Destination Web
 
+{% raw %}
+
 	Article: Q151040
 	Product(s): Word Front Page
 	Version(s): windows:1.1,97
@@ -65,3 +67,5 @@ permalink: /kb/151/Q151040/
 	
 	=============================================================================
 	
+
+{% endraw %}

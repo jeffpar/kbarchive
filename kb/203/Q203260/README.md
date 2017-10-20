@@ -6,6 +6,8 @@ permalink: /kb/203/Q203260/
 
 ## Q203260: Bookshelf 98: Using Keyboard to Copy Image Copies Entire Article
 
+{% raw %}
+
 	Article: Q203260
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -43,3 +45,5 @@ permalink: /kb/203/Q203260/
 	
 	=============================================================================
 	
+
+{% endraw %}

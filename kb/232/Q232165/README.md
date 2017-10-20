@@ -6,6 +6,8 @@ permalink: /kb/232/Q232165/
 
 ## Q232165: Enabling Certificate Revocation Checking in IIS 4.0
 
+{% raw %}
+
 	Article: Q232165
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -119,3 +121,5 @@ permalink: /kb/232/Q232165/
 	
 	=============================================================================
 	
+
+{% endraw %}

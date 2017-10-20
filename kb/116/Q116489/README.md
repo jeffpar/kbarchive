@@ -6,6 +6,8 @@ permalink: /kb/116/Q116489/
 
 ## Q116489: BUG: Printing to stdout with CV /2 Can Cause Screen Corruption
 
+{% raw %}
+
 	Article: Q116489
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.1
@@ -82,3 +84,5 @@ permalink: /kb/116/Q116489/
 	
 	=============================================================================
 	
+
+{% endraw %}

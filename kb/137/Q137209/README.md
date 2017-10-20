@@ -6,6 +6,8 @@ permalink: /kb/137/Q137209/
 
 ## Q137209: Remotely Viewing SMS Event Logs Using Windows NT Event Viewer
 
+{% raw %}
+
 	Article: Q137209
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -93,3 +95,5 @@ permalink: /kb/137/Q137209/
 	
 	=============================================================================
 	
+
+{% endraw %}

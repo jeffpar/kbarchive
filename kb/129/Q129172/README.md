@@ -6,6 +6,8 @@ permalink: /kb/129/Q129172/
 
 ## Q129172: Wine Guide 1.0: Problems Installing S3 Video Drivers
 
+{% raw %}
+
 	Article: Q129172
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -110,3 +112,5 @@ permalink: /kb/129/Q129172/
 	
 	=============================================================================
 	
+
+{% endraw %}

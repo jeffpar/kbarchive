@@ -6,6 +6,8 @@ permalink: /kb/166/Q166211/
 
 ## Q166211: HOWTO: Call SQL Server System Stored Procedures from RDO
 
+{% raw %}
+
 	Article: Q166211
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -123,3 +125,5 @@ permalink: /kb/166/Q166211/
 	
 	=============================================================================
 	
+
+{% endraw %}

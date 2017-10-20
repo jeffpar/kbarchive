@@ -6,6 +6,8 @@ permalink: /kb/121/Q121799/
 
 ## Q121799: PC Win: MS Word Attachments Open Multiple Copies of Program
 
+{% raw %}
+
 	Article: Q121799
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2,3.2a
@@ -57,3 +59,5 @@ permalink: /kb/121/Q121799/
 	
 	=============================================================================
 	
+
+{% endraw %}

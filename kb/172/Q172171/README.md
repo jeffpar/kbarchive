@@ -6,6 +6,8 @@ permalink: /kb/172/Q172171/
 
 ## Q172171: How to Create Write Only Mac Volumes
 
+{% raw %}
+
 	Article: Q172171
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -76,3 +78,5 @@ permalink: /kb/172/Q172171/
 	
 	=============================================================================
 	
+
+{% endraw %}

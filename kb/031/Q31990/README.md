@@ -6,6 +6,8 @@ permalink: /kb/031/Q31990/
 
 ## Q31990: Maximum Number of Segments LINK Supports
 
+{% raw %}
+
 	Article: Q31990
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:5.01.20,5.01.21,5.03,5.05,5.1,5.13,5.15,5.3,5.31.009,5.5,5.6
@@ -35,3 +37,5 @@ permalink: /kb/031/Q31990/
 	
 	=============================================================================
 	
+
+{% endraw %}

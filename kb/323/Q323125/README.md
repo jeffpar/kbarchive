@@ -6,6 +6,8 @@ permalink: /kb/323/Q323125/
 
 ## Q323125: PRB: Visual FoxPro 7.0 Help Documentation Appears to Be Missing
 
+{% raw %}
+
 	Article: Q323125
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/323/Q323125/
 	
 	=============================================================================
 	
+
+{% endraw %}

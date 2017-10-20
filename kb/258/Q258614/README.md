@@ -6,6 +6,8 @@ permalink: /kb/258/Q258614/
 
 ## Q258614: HTML Filter Emits DocAuthor Property Instead of the Title
 
+{% raw %}
+
 	Article: Q258614
 	Product(s): Internet Information Server
 	Version(s): 2.0,3.0,4.0
@@ -98,3 +100,5 @@ permalink: /kb/258/Q258614/
 	
 	=============================================================================
 	
+
+{% endraw %}

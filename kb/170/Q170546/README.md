@@ -6,6 +6,8 @@ permalink: /kb/170/Q170546/
 
 ## Q170546: FP: Blank Line Remains after Deleting Single Line Selection
 
+{% raw %}
+
 	Article: Q170546
 	Product(s): Word Front Page
 	Version(s): ; MACINTOSH:1.0
@@ -53,3 +55,5 @@ permalink: /kb/170/Q170546/
 	
 	=============================================================================
 	
+
+{% endraw %}

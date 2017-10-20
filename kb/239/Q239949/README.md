@@ -6,6 +6,8 @@ permalink: /kb/239/Q239949/
 
 ## Q239949: PRB: 16-Bit Apps May Use 32-Bit DSNs if Duplicate DSNs Exist
 
+{% raw %}
+
 	Article: Q239949
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.0,3.0,3.5
@@ -58,3 +60,5 @@ permalink: /kb/239/Q239949/
 	
 	=============================================================================
 	
+
+{% endraw %}

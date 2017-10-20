@@ -6,6 +6,8 @@ permalink: /kb/048/Q48859/
 
 ## Q48859: NMAKE Version 1.00 with &quot;!&quot; and User and Predefined Macros
 
+{% raw %}
+
 	Article: Q48859
 	Product(s): See article
 	Version(s): 1.00
@@ -95,3 +97,5 @@ permalink: /kb/048/Q48859/
 	cl test.c
 	copy test.c new
 	copy test.c new
+
+{% endraw %}

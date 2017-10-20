@@ -6,6 +6,8 @@ permalink: /kb/096/Q96540/
 
 ## Q96540: Display Window Title with GetFocus() and GetWindowText()
 
+{% raw %}
+
 	Article: Q96540
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 3.00
@@ -82,3 +84,5 @@ permalink: /kb/096/Q96540/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189296/
 
 ## Q189296: Inside DirectX Comments and Corrections
 
+{% raw %}
+
 	Article: Q189296
 	Product(s): Microsoft Press
 	Version(s): 
@@ -163,3 +165,5 @@ permalink: /kb/189/Q189296/
 	
 	=============================================================================
 	
+
+{% endraw %}

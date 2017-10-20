@@ -6,6 +6,8 @@ permalink: /kb/199/Q199987/
 
 ## Q199987: SMS: How to Avoid Client Contention Between SMS 1.2 and SMS 2.0
 
+{% raw %}
+
 	Article: Q199987
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -117,3 +119,5 @@ permalink: /kb/199/Q199987/
 	
 	=============================================================================
 	
+
+{% endraw %}

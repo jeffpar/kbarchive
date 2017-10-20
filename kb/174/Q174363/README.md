@@ -6,6 +6,8 @@ permalink: /kb/174/Q174363/
 
 ## Q174363: FS98: CH Force FX Does Not Work with Flight Simulator
 
+{% raw %}
+
 	Article: Q174363
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -58,3 +60,5 @@ permalink: /kb/174/Q174363/
 	
 	=============================================================================
 	
+
+{% endraw %}

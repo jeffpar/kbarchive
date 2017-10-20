@@ -6,6 +6,8 @@ permalink: /kb/167/Q167601/
 
 ## Q167601: Micrografx Designer 6.0 Cannot Print A0
 
+{% raw %}
+
 	Article: Q167601
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -51,3 +53,5 @@ permalink: /kb/167/Q167601/
 	
 	=============================================================================
 	
+
+{% endraw %}

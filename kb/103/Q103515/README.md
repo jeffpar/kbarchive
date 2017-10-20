@@ -6,6 +6,8 @@ permalink: /kb/103/Q103515/
 
 ## Q103515: PC Forms: Err Msg: The Document Name or Path Is Not Valid...
 
+{% raw %}
+
 	Article: Q103515
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -64,3 +66,5 @@ permalink: /kb/103/Q103515/
 	
 	=============================================================================
 	
+
+{% endraw %}

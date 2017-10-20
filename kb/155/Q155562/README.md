@@ -6,6 +6,8 @@ permalink: /kb/155/Q155562/
 
 ## Q155562: Cannot Enter Virus Scan Time in Symantec Norton NT Tools
 
+{% raw %}
+
 	Article: Q155562
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/155/Q155562/
 	
 	=============================================================================
 	
+
+{% endraw %}

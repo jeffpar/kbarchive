@@ -6,6 +6,8 @@ permalink: /kb/185/Q185540/
 
 ## Q185540: APPC/5250 Hot Backup Fails If Connection Is Inactive or Pending
 
+{% raw %}
+
 	Article: Q185540
 	Product(s): Microsoft SNA Server
 	Version(s): 2.1,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -122,3 +124,5 @@ permalink: /kb/185/Q185540/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/226/Q226470/
 
 ## Q226470: XWEB: Using OWA with Windows Load Balancing Service (WLBS)
 
+{% raw %}
+
 	Article: Q226470
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -90,3 +92,5 @@ permalink: /kb/226/Q226470/
 	
 	=============================================================================
 	
+
+{% endraw %}

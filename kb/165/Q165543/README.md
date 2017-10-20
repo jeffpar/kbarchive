@@ -6,6 +6,8 @@ permalink: /kb/165/Q165543/
 
 ## Q165543: Bus-Tech Link Service Doesn't Install Driver from SNA Setup
 
+{% raw %}
+
 	Article: Q165543
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/165/Q165543/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141171/
 
 ## Q141171: PRB: RDO Forward-Only Cursor Doesn't Allow MoveLast
 
+{% raw %}
+
 	Article: Q141171
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -126,3 +128,5 @@ permalink: /kb/141/Q141171/
 	
 	=============================================================================
 	
+
+{% endraw %}

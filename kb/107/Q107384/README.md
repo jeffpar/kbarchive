@@ -6,6 +6,8 @@ permalink: /kb/107/Q107384/
 
 ## Q107384: RUI Interface Enhancement to Avoid Duplicate Signon Screens
 
+{% raw %}
+
 	Article: Q107384
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -133,3 +135,5 @@ permalink: /kb/107/Q107384/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/261/Q261026/
 
 ## Q261026: MCM2: Video Problems When You Select the TV Out Video Adapter
 
+{% raw %}
+
 	Article: Q261026
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -88,3 +90,5 @@ permalink: /kb/261/Q261026/
 	
 	=============================================================================
 	
+
+{% endraw %}

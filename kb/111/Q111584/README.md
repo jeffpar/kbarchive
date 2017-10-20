@@ -6,6 +6,8 @@ permalink: /kb/111/Q111584/
 
 ## Q111584: BUG: Occasional Gap Between Adjacent Pie() Wedges
 
+{% raw %}
+
 	Article: Q111584
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -74,3 +76,5 @@ permalink: /kb/111/Q111584/
 	
 	=============================================================================
 	
+
+{% endraw %}

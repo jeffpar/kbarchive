@@ -6,6 +6,8 @@ permalink: /kb/083/Q83539/
 
 ## Q83539: Mac Fax: Fax Transmissions Are Scaled
 
+{% raw %}
+
 	Article: Q83539
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.x,3.0
@@ -52,3 +54,5 @@ permalink: /kb/083/Q83539/
 	
 	=============================================================================
 	
+
+{% endraw %}

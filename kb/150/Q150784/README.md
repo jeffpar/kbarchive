@@ -6,6 +6,8 @@ permalink: /kb/150/Q150784/
 
 ## Q150784: Encarta 96: Contents of the November 1995 Yearbook Update
 
+{% raw %}
+
 	Article: Q150784
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :1996 edition
@@ -91,3 +93,5 @@ permalink: /kb/150/Q150784/
 	
 	=============================================================================
 	
+
+{% endraw %}

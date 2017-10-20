@@ -6,6 +6,8 @@ permalink: /kb/181/Q181837/
 
 ## Q181837: PRB: Output Param Not Returned from Procedure Without Resultset
 
+{% raw %}
+
 	Article: Q181837
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -107,3 +109,5 @@ permalink: /kb/181/Q181837/
 	
 	=============================================================================
 	
+
+{% endraw %}

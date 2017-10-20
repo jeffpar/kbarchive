@@ -6,6 +6,8 @@ permalink: /kb/160/Q160614/
 
 ## Q160614: FP97: AVI Files Are Converted to GIF Files
 
+{% raw %}
+
 	Article: Q160614
 	Product(s): Word Front Page
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/160/Q160614/
 	
 	=============================================================================
 	
+
+{% endraw %}

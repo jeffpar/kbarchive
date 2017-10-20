@@ -6,6 +6,8 @@ permalink: /kb/069/Q69145/
 
 ## Q69145: PWB Ignores Certain Compiler Switches in Additional Options
 
+{% raw %}
+
 	Article: Q69145
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -67,3 +69,5 @@ permalink: /kb/069/Q69145/
 	
 	=============================================================================
 	
+
+{% endraw %}

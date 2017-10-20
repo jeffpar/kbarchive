@@ -6,6 +6,8 @@ permalink: /kb/216/Q216445/
 
 ## Q216445: How to Control the Delay of the Start Menu Display
 
+{% raw %}
+
 	Article: Q216445
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -66,3 +68,5 @@ permalink: /kb/216/Q216445/
 	
 	=============================================================================
 	
+
+{% endraw %}

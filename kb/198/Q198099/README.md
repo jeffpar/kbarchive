@@ -6,6 +6,8 @@ permalink: /kb/198/Q198099/
 
 ## Q198099: XGEN: ODK: &quot;The disk labeled 'default' is now required&quot;
 
+{% raw %}
+
 	Article: Q198099
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:98
@@ -60,3 +62,5 @@ permalink: /kb/198/Q198099/
 	
 	=============================================================================
 	
+
+{% endraw %}

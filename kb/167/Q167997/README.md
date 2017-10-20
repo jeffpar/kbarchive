@@ -6,6 +6,8 @@ permalink: /kb/167/Q167997/
 
 ## Q167997: WD97: Invalid Page Fault in KERNEL32.DLL with Browser Control
 
+{% raw %}
+
 	Article: Q167997
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -50,3 +52,5 @@ permalink: /kb/167/Q167997/
 	
 	=============================================================================
 	
+
+{% endraw %}

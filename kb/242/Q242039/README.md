@@ -6,6 +6,8 @@ permalink: /kb/242/Q242039/
 
 ## Q242039: PRB: NT Perms for Distribution List when Owner Set ADSI/LDAP
 
+{% raw %}
+
 	Article: Q242039
 	Product(s): Microsoft Exchange
 	Version(s): winnt:1.0,2.0,2.5,5.5
@@ -111,3 +113,5 @@ permalink: /kb/242/Q242039/
 	
 	=============================================================================
 	
+
+{% endraw %}

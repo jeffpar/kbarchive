@@ -6,6 +6,8 @@ permalink: /kb/169/Q169131/
 
 ## Q169131: Print Setup Dialog Box May Take a Long Time to Display
 
+{% raw %}
+
 	Article: Q169131
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -98,3 +100,5 @@ permalink: /kb/169/Q169131/
 	
 	=============================================================================
 	
+
+{% endraw %}

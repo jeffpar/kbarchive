@@ -6,6 +6,8 @@ permalink: /kb/264/Q264632/
 
 ## Q264632: DLC Session Hangs When Using DLSW
 
+{% raw %}
+
 	Article: Q264632
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -92,3 +94,5 @@ permalink: /kb/264/Q264632/
 	
 	=============================================================================
 	
+
+{% endraw %}

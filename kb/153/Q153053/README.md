@@ -6,6 +6,8 @@ permalink: /kb/153/Q153053/
 
 ## Q153053: Bookshelf '96-'97: Reference Titles Included in Bookshelf
 
+{% raw %}
+
 	Article: Q153053
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:; WINDOWS:
@@ -56,3 +58,5 @@ permalink: /kb/153/Q153053/
 	
 	=============================================================================
 	
+
+{% endraw %}

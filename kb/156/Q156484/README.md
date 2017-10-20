@@ -6,6 +6,8 @@ permalink: /kb/156/Q156484/
 
 ## Q156484: Process Launched with CreateProcess() May Terminate Prematurely
 
+{% raw %}
+
 	Article: Q156484
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.0,4.0
@@ -81,3 +83,5 @@ permalink: /kb/156/Q156484/
 	
 	=============================================================================
 	
+
+{% endraw %}

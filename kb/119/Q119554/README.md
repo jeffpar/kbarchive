@@ -6,6 +6,8 @@ permalink: /kb/119/Q119554/
 
 ## Q119554: PC Adm: Err Msg: Notice 101 Error File Not Accessible
 
+{% raw %}
+
 	Article: Q119554
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -74,3 +76,5 @@ permalink: /kb/119/Q119554/
 	
 	=============================================================================
 	
+
+{% endraw %}

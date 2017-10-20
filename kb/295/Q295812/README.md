@@ -6,6 +6,8 @@ permalink: /kb/295/Q295812/
 
 ## Q295812: XFOR: Messages from Exchange to CC:Mail Remain Queued
 
+{% raw %}
+
 	Article: Q295812
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -72,3 +74,5 @@ permalink: /kb/295/Q295812/
 	
 	=============================================================================
 	
+
+{% endraw %}

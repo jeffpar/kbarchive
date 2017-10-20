@@ -6,6 +6,8 @@ permalink: /kb/150/Q150799/
 
 ## Q150799: Changes to Supported Platforms Options in Package Properties
 
+{% raw %}
+
 	Article: Q150799
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -76,3 +78,5 @@ permalink: /kb/150/Q150799/
 	
 	=============================================================================
 	
+
+{% endraw %}

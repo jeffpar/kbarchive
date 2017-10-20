@@ -6,6 +6,8 @@ permalink: /kb/099/Q99306/
 
 ## Q99306: PC Forms: Err Msg: Another Application Refused the Request
 
+{% raw %}
+
 	Article: Q99306
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -49,3 +51,5 @@ permalink: /kb/099/Q99306/
 	
 	=============================================================================
 	
+
+{% endraw %}

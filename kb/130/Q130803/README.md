@@ -6,6 +6,8 @@ permalink: /kb/130/Q130803/
 
 ## Q130803: Windows NT 3.5 Hangs If Command Window Cursors are 80x80 Pixels
 
+{% raw %}
+
 	Article: Q130803
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -50,3 +52,5 @@ permalink: /kb/130/Q130803/
 	
 	=============================================================================
 	
+
+{% endraw %}

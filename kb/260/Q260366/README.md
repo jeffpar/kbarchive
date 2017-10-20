@@ -6,6 +6,8 @@ permalink: /kb/260/Q260366/
 
 ## Q260366: SMS Executive Service Can Hang If Started by Site Backup Service
 
+{% raw %}
+
 	Article: Q260366
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -96,3 +98,5 @@ permalink: /kb/260/Q260366/
 	
 	=============================================================================
 	
+
+{% endraw %}

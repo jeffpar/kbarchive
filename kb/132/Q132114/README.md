@@ -6,6 +6,8 @@ permalink: /kb/132/Q132114/
 
 ## Q132114: Sound Blaster 16 Incorrectly Detected After Being Removed
 
+{% raw %}
+
 	Article: Q132114
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/132/Q132114/
 	
 	=============================================================================
 	
+
+{% endraw %}

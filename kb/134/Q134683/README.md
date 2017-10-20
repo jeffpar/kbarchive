@@ -6,6 +6,8 @@ permalink: /kb/134/Q134683/
 
 ## Q134683: Scenes 2.0: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q134683
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 2.00
@@ -198,3 +200,5 @@ permalink: /kb/134/Q134683/
 	
 	=============================================================================
 	
+
+{% endraw %}

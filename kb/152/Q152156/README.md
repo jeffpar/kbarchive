@@ -6,6 +6,8 @@ permalink: /kb/152/Q152156/
 
 ## Q152156: Access Violation in Client Process During Authenticated RPC
 
+{% raw %}
+
 	Article: Q152156
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -57,3 +59,5 @@ permalink: /kb/152/Q152156/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153090/
 
 ## Q153090: HOWTO: Pass a Visual Basic Array to an Excel Worksheet
 
+{% raw %}
+
 	Article: Q153090
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -108,3 +110,5 @@ permalink: /kb/153/Q153090/
 	
 	=============================================================================
 	
+
+{% endraw %}

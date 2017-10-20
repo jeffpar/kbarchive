@@ -6,6 +6,8 @@ permalink: /kb/121/Q121413/
 
 ## Q121413: PRB: &quot;Printer Not Ready&quot; When Choosing Font from Object Menu
 
+{% raw %}
+
 	Article: Q121413
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6,2.6a,3.0
@@ -63,3 +65,5 @@ permalink: /kb/121/Q121413/
 	
 	=============================================================================
 	
+
+{% endraw %}

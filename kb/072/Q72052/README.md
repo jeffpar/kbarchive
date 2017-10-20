@@ -6,6 +6,8 @@ permalink: /kb/072/Q72052/
 
 ## Q72052: Duplicate Dates in Month View When Converting Calendar Files
 
+{% raw %}
+
 	Article: Q72052
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/072/Q72052/
 	
 	=============================================================================
 	
+
+{% endraw %}

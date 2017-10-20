@@ -6,6 +6,8 @@ permalink: /kb/168/Q168473/
 
 ## Q168473: Hide Drives on Default User Sets Restrictions
 
+{% raw %}
+
 	Article: Q168473
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/168/Q168473/
 	
 	=============================================================================
 	
+
+{% endraw %}

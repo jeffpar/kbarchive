@@ -6,6 +6,8 @@ permalink: /kb/129/Q129164/
 
 ## Q129164: Updated NET.EXE Corrects Basic Redirector Truncating Problem
 
+{% raw %}
+
 	Article: Q129164
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.11
@@ -91,3 +93,5 @@ permalink: /kb/129/Q129164/
 	
 	=============================================================================
 	
+
+{% endraw %}

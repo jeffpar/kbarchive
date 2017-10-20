@@ -6,6 +6,8 @@ permalink: /kb/128/Q128641/
 
 ## Q128641: INFO: /Mx Compiler Options and the LIBC, LIBCMT, MSVCRT Libs
 
+{% raw %}
+
 	Article: Q128641
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:2.0,2.1,4.0,5.0;
@@ -115,3 +117,5 @@ permalink: /kb/128/Q128641/
 	
 	=============================================================================
 	
+
+{% endraw %}

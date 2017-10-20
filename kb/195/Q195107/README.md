@@ -6,6 +6,8 @@ permalink: /kb/195/Q195107/
 
 ## Q195107: XCLN: Comma Separator if Contact is Listed by Only First Name
 
+{% raw %}
+
 	Article: Q195107
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -68,3 +70,5 @@ permalink: /kb/195/Q195107/
 	
 	=============================================================================
 	
+
+{% endraw %}

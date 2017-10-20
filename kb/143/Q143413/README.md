@@ -6,6 +6,8 @@ permalink: /kb/143/Q143413/
 
 ## Q143413: MSMAIL32 Error Occurs When Data is Cached Across Bad Link
 
+{% raw %}
+
 	Article: Q143413
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -117,3 +119,5 @@ permalink: /kb/143/Q143413/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/294/Q294320/
 
 ## Q294320: &quot;How to&quot; Information for Microsoft Visual C++ Beginners
 
+{% raw %}
+
 	Article: Q294320
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -76,3 +78,5 @@ permalink: /kb/294/Q294320/
 	
 	=============================================================================
 	
+
+{% endraw %}

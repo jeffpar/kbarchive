@@ -6,6 +6,8 @@ permalink: /kb/161/Q161801/
 
 ## Q161801: Chkdsk Reports an Erroneous Event ID 41
 
+{% raw %}
+
 	Article: Q161801
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/161/Q161801/
 	
 	=============================================================================
 	
+
+{% endraw %}

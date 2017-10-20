@@ -6,6 +6,8 @@ permalink: /kb/096/Q96676/
 
 ## Q96676: Font: Fonts Appear Similar in System 7 Font Sample Window
 
+{% raw %}
+
 	Article: Q96676
 	Product(s): Microsoft Press
 	Version(s): 1.0,7.0,7.1
@@ -51,3 +53,5 @@ permalink: /kb/096/Q96676/
 	
 	=============================================================================
 	
+
+{% endraw %}

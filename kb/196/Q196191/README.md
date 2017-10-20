@@ -6,6 +6,8 @@ permalink: /kb/196/Q196191/
 
 ## Q196191: SNABASE Unable to Update the BackupSponsor Registry Key
 
+{% raw %}
+
 	Article: Q196191
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -64,3 +66,5 @@ permalink: /kb/196/Q196191/
 	
 	=============================================================================
 	
+
+{% endraw %}

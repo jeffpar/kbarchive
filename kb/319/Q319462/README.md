@@ -6,6 +6,8 @@ permalink: /kb/319/Q319462/
 
 ## Q319462: SMS: Travel Mode Discovery Property May Not Be Reported in DDRs
 
+{% raw %}
+
 	Article: Q319462
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3,2.0 SP4
@@ -229,3 +231,5 @@ permalink: /kb/319/Q319462/
 	
 	=============================================================================
 	
+
+{% endraw %}

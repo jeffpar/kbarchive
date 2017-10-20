@@ -6,6 +6,8 @@ permalink: /kb/102/Q102740/
 
 ## Q102740: Macintosh Alias Does Not Use Microsoft UAM
 
+{% raw %}
+
 	Article: Q102740
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51,4.0
@@ -65,3 +67,5 @@ permalink: /kb/102/Q102740/
 	
 	=============================================================================
 	
+
+{% endraw %}

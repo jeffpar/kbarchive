@@ -6,6 +6,8 @@ permalink: /kb/143/Q143028/
 
 ## Q143028: Encarta Notemarks: Err Msg or Problems Saving Notemark
 
+{% raw %}
+
 	Article: Q143028
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1994 edition,1995 edition; WINDOWS:
@@ -75,3 +77,5 @@ permalink: /kb/143/Q143028/
 	
 	=============================================================================
 	
+
+{% endraw %}

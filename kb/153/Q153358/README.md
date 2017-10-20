@@ -6,6 +6,8 @@ permalink: /kb/153/Q153358/
 
 ## Q153358: Wine Guide: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q153358
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,1.0a
@@ -59,3 +61,5 @@ permalink: /kb/153/Q153358/
 	
 	=============================================================================
 	
+
+{% endraw %}

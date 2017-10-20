@@ -6,6 +6,8 @@ permalink: /kb/173/Q173902/
 
 ## Q173902: XWEB: Default Start Time for Appointment or Meeting Is 8:00
 
+{% raw %}
+
 	Article: Q173902
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -47,3 +49,5 @@ permalink: /kb/173/Q173902/
 	
 	=============================================================================
 	
+
+{% endraw %}

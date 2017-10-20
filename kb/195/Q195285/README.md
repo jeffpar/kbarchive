@@ -6,6 +6,8 @@ permalink: /kb/195/Q195285/
 
 ## Q195285: MS SNA Server Training Kit Comments &amp; Corrections
 
+{% raw %}
+
 	Article: Q195285
 	Product(s): Microsoft Press
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/195/Q195285/
 	
 	=============================================================================
 	
+
+{% endraw %}

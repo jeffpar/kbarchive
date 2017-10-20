@@ -6,6 +6,8 @@ permalink: /kb/085/Q85347/
 
 ## Q85347: FAX: How to Test the Fax Hardware and Software
 
+{% raw %}
+
 	Article: Q85347
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -44,3 +46,5 @@ permalink: /kb/085/Q85347/
 	
 	=============================================================================
 	
+
+{% endraw %}

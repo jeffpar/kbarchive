@@ -6,6 +6,8 @@ permalink: /kb/195/Q195669/
 
 ## Q195669: DNS: System Error 13 When Starting DNS Service
 
+{% raw %}
+
 	Article: Q195669
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -76,3 +78,5 @@ permalink: /kb/195/Q195669/
 	
 	=============================================================================
 	
+
+{% endraw %}

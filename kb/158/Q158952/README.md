@@ -6,6 +6,8 @@ permalink: /kb/158/Q158952/
 
 ## Q158952: RAS Detects Motorola BitSurfr Pro Incorrectly
 
+{% raw %}
+
 	Article: Q158952
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -46,3 +48,5 @@ permalink: /kb/158/Q158952/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126308/
 
 ## Q126308: Problems Accessing Netware Server From a Windows NT RAS Client
 
+{% raw %}
+
 	Article: Q126308
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -99,3 +101,5 @@ permalink: /kb/126/Q126308/
 	
 	=============================================================================
 	
+
+{% endraw %}

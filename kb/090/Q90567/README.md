@@ -6,6 +6,8 @@ permalink: /kb/090/Q90567/
 
 ## Q90567: Setup Err Msg: Cannot Find the PRTUPD.INF File
 
+{% raw %}
+
 	Article: Q90567
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -80,3 +82,5 @@ permalink: /kb/090/Q90567/
 	
 	=============================================================================
 	
+
+{% endraw %}

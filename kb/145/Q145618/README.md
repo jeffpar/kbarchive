@@ -6,6 +6,8 @@ permalink: /kb/145/Q145618/
 
 ## Q145618: FIX: Visual Basic 4.0 Setup on Compressed Drive Failure
 
+{% raw %}
+
 	Article: Q145618
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0;
@@ -86,3 +88,5 @@ permalink: /kb/145/Q145618/
 	
 	=============================================================================
 	
+
+{% endraw %}

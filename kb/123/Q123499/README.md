@@ -6,6 +6,8 @@ permalink: /kb/123/Q123499/
 
 ## Q123499: PCMDUMP and Package Command Manager Instruction Files
 
+{% raw %}
+
 	Article: Q123499
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -213,3 +215,5 @@ permalink: /kb/123/Q123499/
 	
 	=============================================================================
 	
+
+{% endraw %}

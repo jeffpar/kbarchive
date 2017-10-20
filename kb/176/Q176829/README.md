@@ -6,6 +6,8 @@ permalink: /kb/176/Q176829/
 
 ## Q176829: FIX: &quot;Index Internal Consistency Error&quot; Occurs with IDX Index
 
+{% raw %}
+
 	Article: Q176829
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a
@@ -90,3 +92,5 @@ permalink: /kb/176/Q176829/
 	
 	=============================================================================
 	
+
+{% endraw %}

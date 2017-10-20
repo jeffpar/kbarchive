@@ -6,6 +6,8 @@ permalink: /kb/133/Q133452/
 
 ## Q133452: How to Use Macro Substitution in Object Referencing
 
+{% raw %}
+
 	Article: Q133452
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -69,3 +71,5 @@ permalink: /kb/133/Q133452/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163252/
 
 ## Q163252: FIX: Cannot Remove BS_PUSHLIKE in Resource Editor
 
+{% raw %}
+
 	Article: Q163252
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00 4.10 4.20 5.00
@@ -96,3 +98,5 @@ permalink: /kb/163/Q163252/
 	
 	=============================================================================
 	
+
+{% endraw %}

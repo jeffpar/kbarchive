@@ -6,6 +6,8 @@ permalink: /kb/190/Q190655/
 
 ## Q190655: WD97: Error Creating New Image in Photo Editor
 
+{% raw %}
+
 	Article: Q190655
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/190/Q190655/
 	
 	=============================================================================
 	
+
+{% endraw %}

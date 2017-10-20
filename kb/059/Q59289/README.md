@@ -6,6 +6,8 @@ permalink: /kb/059/Q59289/
 
 ## Q59289: BASIC 7.00 ISAM Cannot Store Single-Precision Numbers
 
+{% raw %}
+
 	Article: Q59289
 	Product(s): See article
 	Version(s): 7.00
@@ -26,3 +28,5 @@ permalink: /kb/059/Q59289/
 	
 	For more information on this topic, see Pages 333-334 of the
 	"Microsoft BASIC 7.0: Programmer's Guide."
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/256/Q256857/
 
 ## Q256857: BUG: Toolbar with Placeholder Button Does Not Wrap Correctly
 
+{% raw %}
+
 	Article: Q256857
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -119,3 +121,5 @@ permalink: /kb/256/Q256857/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124581/
 
 ## Q124581: Explorapedia: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q124581
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -60,3 +62,5 @@ permalink: /kb/124/Q124581/
 	
 	=============================================================================
 	
+
+{% endraw %}

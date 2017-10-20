@@ -6,6 +6,8 @@ permalink: /kb/131/Q131098/
 
 ## Q131098: Mac PC Mail Client Err Msg: Cannot open key file
 
+{% raw %}
+
 	Article: Q131098
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0,3.5,3.51
@@ -74,3 +76,5 @@ permalink: /kb/131/Q131098/
 	
 	=============================================================================
 	
+
+{% endraw %}

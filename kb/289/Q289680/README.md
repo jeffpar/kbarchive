@@ -6,6 +6,8 @@ permalink: /kb/289/Q289680/
 
 ## Q289680: Migrating From Windows NT 4.0 To Windows 2000 Training Kit Comme
 
+{% raw %}
+
 	Article: Q289680
 	Product(s): Microsoft Press
 	Version(s): 
@@ -172,3 +174,5 @@ permalink: /kb/289/Q289680/
 	
 	=============================================================================
 	
+
+{% endraw %}

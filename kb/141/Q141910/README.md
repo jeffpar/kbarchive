@@ -6,6 +6,8 @@ permalink: /kb/141/Q141910/
 
 ## Q141910: BUG: Validate Database Dialog Allows Choice of Invalid Table
 
+{% raw %}
+
 	Article: Q141910
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/141/Q141910/
 	
 	=============================================================================
 	
+
+{% endraw %}

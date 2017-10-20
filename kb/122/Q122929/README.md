@@ -6,6 +6,8 @@ permalink: /kb/122/Q122929/
 
 ## Q122929: DEC Alpha STOP Message: System File S3 is Bad or Missing
 
+{% raw %}
+
 	Article: Q122929
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -58,3 +60,5 @@ permalink: /kb/122/Q122929/
 	
 	=============================================================================
 	
+
+{% endraw %}

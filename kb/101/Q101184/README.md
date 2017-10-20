@@ -6,6 +6,8 @@ permalink: /kb/101/Q101184/
 
 ## Q101184: INFO: Retrieving the CMDIChildWnd Parent Window
 
+{% raw %}
+
 	Article: Q101184
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -49,3 +51,5 @@ permalink: /kb/101/Q101184/
 	
 	=============================================================================
 	
+
+{% endraw %}

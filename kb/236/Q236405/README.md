@@ -6,6 +6,8 @@ permalink: /kb/236/Q236405/
 
 ## Q236405: Terminal Server License Service May Not Start on 2/29/2000
 
+{% raw %}
+
 	Article: Q236405
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -57,3 +59,5 @@ permalink: /kb/236/Q236405/
 	
 	=============================================================================
 	
+
+{% endraw %}

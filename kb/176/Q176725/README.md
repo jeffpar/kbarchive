@@ -6,6 +6,8 @@ permalink: /kb/176/Q176725/
 
 ## Q176725: XCLN: Microsoft Exchange MS-DOS Client Fails with Memory Error
 
+{% raw %}
+
 	Article: Q176725
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -73,3 +75,5 @@ permalink: /kb/176/Q176725/
 	
 	=============================================================================
 	
+
+{% endraw %}

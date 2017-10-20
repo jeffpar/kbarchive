@@ -6,6 +6,8 @@ permalink: /kb/173/Q173903/
 
 ## Q173903: XFOR: Changing the TCP Port Used for SMTP Mail
 
+{% raw %}
+
 	Article: Q173903
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -65,3 +67,5 @@ permalink: /kb/173/Q173903/
 	
 	=============================================================================
 	
+
+{% endraw %}

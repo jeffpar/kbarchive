@@ -6,6 +6,8 @@ permalink: /kb/074/Q74608/
 
 ## Q74608: INFO: When to Use WIN.INI or a Private INI File
 
+{% raw %}
+
 	Article: Q74608
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -106,3 +108,5 @@ permalink: /kb/074/Q74608/
 	
 	=============================================================================
 	
+
+{% endraw %}

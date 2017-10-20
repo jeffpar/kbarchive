@@ -6,6 +6,8 @@ permalink: /kb/186/Q186634/
 
 ## Q186634: Periods Appear as Commas Using Belgian Dutch Keyboard
 
+{% raw %}
+
 	Article: Q186634
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -49,3 +51,5 @@ permalink: /kb/186/Q186634/
 	
 	=============================================================================
 	
+
+{% endraw %}

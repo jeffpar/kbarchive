@@ -6,6 +6,8 @@ permalink: /kb/199/Q199354/
 
 ## Q199354: XADM: Slow Intrasite Replication Issues with Exchange Server 5.5
 
+{% raw %}
+
 	Article: Q199354
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -66,3 +68,5 @@ permalink: /kb/199/Q199354/
 	
 	=============================================================================
 	
+
+{% endraw %}

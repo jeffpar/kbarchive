@@ -6,6 +6,8 @@ permalink: /kb/048/Q48903/
 
 ## Q48903: Mac Form: Custom Forms with Fixed Recipient Users or Groups
 
+{% raw %}
+
 	Article: Q48903
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -94,3 +96,5 @@ permalink: /kb/048/Q48903/
 	
 	=============================================================================
 	
+
+{% endraw %}

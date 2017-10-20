@@ -6,6 +6,8 @@ permalink: /kb/149/Q149407/
 
 ## Q149407: HOWTO: How to Display a Bitmap in a CStatusBar Pane
 
+{% raw %}
+
 	Article: Q149407
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,2.2,4.0,4.1
@@ -171,3 +173,5 @@ permalink: /kb/149/Q149407/
 	
 	=============================================================================
 	
+
+{% endraw %}

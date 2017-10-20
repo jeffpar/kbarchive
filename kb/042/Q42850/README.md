@@ -6,6 +6,8 @@ permalink: /kb/042/Q42850/
 
 ## Q42850: Near Const Data Placed in _DATA in C 5.10
 
+{% raw %}
+
 	Article: Q42850
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -32,3 +34,5 @@ permalink: /kb/042/Q42850/
 	
 	For more information see the Update section, Page 51, of the
 	"Microsoft C 5.10 Optimizing Compiler User's Guide."
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/091/Q91031/
 
 ## Q91031: WD97: NUMPAGES Field Does Not Work During Mail Merge
 
+{% raw %}
+
 	Article: Q91031
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -85,3 +87,5 @@ permalink: /kb/091/Q91031/
 	
 	=============================================================================
 	
+
+{% endraw %}

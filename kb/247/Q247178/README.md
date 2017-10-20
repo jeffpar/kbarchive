@@ -6,6 +6,8 @@ permalink: /kb/247/Q247178/
 
 ## Q247178: Programs May Hang When Accessing Files from a File Server
 
+{% raw %}
+
 	Article: Q247178
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP5,4.0 SP6,4.0 SP6a
@@ -84,3 +86,5 @@ permalink: /kb/247/Q247178/
 	
 	=============================================================================
 	
+
+{% endraw %}

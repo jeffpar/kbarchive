@@ -6,6 +6,8 @@ permalink: /kb/069/Q69891/
 
 ## Q69891: DOCERR: ExtDeviceMode() API Documentation Error
 
+{% raw %}
+
 	Article: Q69891
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -50,3 +52,5 @@ permalink: /kb/069/Q69891/
 	
 	=============================================================================
 	
+
+{% endraw %}

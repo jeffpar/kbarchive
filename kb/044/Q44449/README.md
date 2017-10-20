@@ -6,6 +6,8 @@ permalink: /kb/044/Q44449/
 
 ## Q44449: QuickC 2.00 Debugger Does Not Support Huge Pointers/Model
 
+{% raw %}
+
 	Article: Q44449
 	Product(s): See article
 	Version(s): 2.00
@@ -24,3 +26,5 @@ permalink: /kb/044/Q44449/
 	   image: <Debugger does not support huge model>
 	
 	This is intentional program design for the product.
+
+{% endraw %}

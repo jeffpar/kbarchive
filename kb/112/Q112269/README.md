@@ -6,6 +6,8 @@ permalink: /kb/112/Q112269/
 
 ## Q112269: PC WRmt: Short Cut Method to Select All Headers
 
+{% raw %}
+
 	Article: Q112269
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -45,3 +47,5 @@ permalink: /kb/112/Q112269/
 	
 	=============================================================================
 	
+
+{% endraw %}

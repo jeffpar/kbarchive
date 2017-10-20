@@ -6,6 +6,8 @@ permalink: /kb/069/Q69344/
 
 ## Q69344: Promotion of char to int May Add Two Hex Digits in printf()
 
+{% raw %}
+
 	Article: Q69344
 	Product(s): See article
 	Version(s): 5.00 5.10 6.00 6.00a | 5.10 6.00 6.00a
@@ -65,3 +67,5 @@ permalink: /kb/069/Q69344/
 	   /* correct way to represent the char as two hex digits "80" */
 	   printf( "foo = %X\n",   (unsigned char)foo);
 	}
+
+{% endraw %}

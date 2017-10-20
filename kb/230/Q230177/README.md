@@ -6,6 +6,8 @@ permalink: /kb/230/Q230177/
 
 ## Q230177: Corrupted Data Packet Causes PPTP to Hang in Ndiswan.sys
 
+{% raw %}
+
 	Article: Q230177
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/230/Q230177/
 	
 	=============================================================================
 	
+
+{% endraw %}

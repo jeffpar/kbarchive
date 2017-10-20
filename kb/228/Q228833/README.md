@@ -6,6 +6,8 @@ permalink: /kb/228/Q228833/
 
 ## Q228833: Desktop Applications for Microsoft Visual Basic 6.0 Training Kit
 
+{% raw %}
+
 	Article: Q228833
 	Product(s): Microsoft Press
 	Version(s): 
@@ -711,3 +713,5 @@ permalink: /kb/228/Q228833/
 	
 	=============================================================================
 	
+
+{% endraw %}

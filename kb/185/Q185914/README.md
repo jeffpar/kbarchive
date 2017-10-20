@@ -6,6 +6,8 @@ permalink: /kb/185/Q185914/
 
 ## Q185914: SMS: Mismatch in Network Data Reported by 16/32-Bit Inv Agents
 
+{% raw %}
+
 	Article: Q185914
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -66,3 +68,5 @@ permalink: /kb/185/Q185914/
 	
 	=============================================================================
 	
+
+{% endraw %}

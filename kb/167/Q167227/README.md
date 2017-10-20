@@ -6,6 +6,8 @@ permalink: /kb/167/Q167227/
 
 ## Q167227: HOWTO: Create and Update a Replicated Access Database
 
+{% raw %}
+
 	Article: Q167227
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 5.00
@@ -205,3 +207,5 @@ permalink: /kb/167/Q167227/
 	
 	=============================================================================
 	
+
+{% endraw %}

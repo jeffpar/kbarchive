@@ -6,6 +6,8 @@ permalink: /kb/129/Q129036/
 
 ## Q129036: Screen Saver Preview Button Does Not Work
 
+{% raw %}
+
 	Article: Q129036
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/129/Q129036/
 	
 	=============================================================================
 	
+
+{% endraw %}

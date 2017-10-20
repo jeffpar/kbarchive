@@ -6,6 +6,8 @@ permalink: /kb/112/Q112863/
 
 ## Q112863: Letter Forms Pull Only from Upper Tray on Postscript Printers
 
+{% raw %}
+
 	Article: Q112863
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -61,3 +63,5 @@ permalink: /kb/112/Q112863/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164400/
 
 ## Q164400: XCON: Sockets Error 10022 When Connecting X.400 over TP4
 
+{% raw %}
+
 	Article: Q164400
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -63,3 +65,5 @@ permalink: /kb/164/Q164400/
 	
 	=============================================================================
 	
+
+{% endraw %}

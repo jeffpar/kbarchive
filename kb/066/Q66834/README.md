@@ -6,6 +6,8 @@ permalink: /kb/066/Q66834/
 
 ## Q66834: ASD: Using 747 Panel Distance Measuring Equipment (DME)
 
+{% raw %}
+
 	Article: Q66834
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/066/Q66834/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126392/
 
 ## Q126392: SNA Server Vines PC-based Service Doesn't Get Created
 
+{% raw %}
+
 	Article: Q126392
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -61,3 +63,5 @@ permalink: /kb/126/Q126392/
 	
 	=============================================================================
 	
+
+{% endraw %}

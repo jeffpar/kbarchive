@@ -6,6 +6,8 @@ permalink: /kb/128/Q128180/
 
 ## Q128180: Upgrade Does Not Install Network Client Administrator
 
+{% raw %}
+
 	Article: Q128180
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/128/Q128180/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/030/Q30365/
 
 ## Q30365: Debug Shown on M.EXE Help Screen Is Not a Supported Switch
 
+{% raw %}
+
 	Article: Q30365
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -17,3 +19,5 @@ permalink: /kb/030/Q30365/
 	the help screen in the Microsoft Editor Version 1.00 has not been
 	implemented.
 	   There is no function associated with Debug.
+
+{% endraw %}

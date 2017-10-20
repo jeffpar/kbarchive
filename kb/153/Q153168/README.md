@@ -6,6 +6,8 @@ permalink: /kb/153/Q153168/
 
 ## Q153168: MAC Address for OS/2 Warp Clients Reported Incorrectly
 
+{% raw %}
+
 	Article: Q153168
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -43,3 +45,5 @@ permalink: /kb/153/Q153168/
 	
 	=============================================================================
 	
+
+{% endraw %}

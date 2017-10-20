@@ -6,6 +6,8 @@ permalink: /kb/241/Q241961/
 
 ## Q241961: Terminal Server RDP Client Window Hangs While You Are Logging On
 
+{% raw %}
+
 	Article: Q241961
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -68,3 +70,5 @@ permalink: /kb/241/Q241961/
 	
 	=============================================================================
 	
+
+{% endraw %}

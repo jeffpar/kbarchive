@@ -6,6 +6,8 @@ permalink: /kb/243/Q243457/
 
 ## Q243457: BUG: MFC-WinCE Property Page Disappears when Selected
 
+{% raw %}
+
 	Article: Q243457
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:6.0; winnt:
@@ -47,9 +49,9 @@ permalink: /kb/243/Q243457/
 	generates the following message map:
 	
 	  // Generated message map functions
-	  //{ {AFX_MSG(CMyPropertyPage1)
+	  //{{AFX_MSG(CMyPropertyPage1)
 	  virtual BOOL OnInitDialog();
-	  //} }AFX_MSG
+	  //}}AFX_MSG
 	
 	Then from the menu item, select Project, Add to Project, Components and Control,
 	and then Registered ActiveX Controls. Locate the control you want to add to the
@@ -158,3 +160,5 @@ permalink: /kb/243/Q243457/
 	
 	=============================================================================
 	
+
+{% endraw %}

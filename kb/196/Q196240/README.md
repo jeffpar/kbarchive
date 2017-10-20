@@ -6,6 +6,8 @@ permalink: /kb/196/Q196240/
 
 ## Q196240: Characters Above 127 Were Incorrectly Mapped By NvRunCmd
 
+{% raw %}
+
 	Article: Q196240
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,4.0
@@ -119,3 +121,5 @@ permalink: /kb/196/Q196240/
 	
 	=============================================================================
 	
+
+{% endraw %}

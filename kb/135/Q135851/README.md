@@ -6,6 +6,8 @@ permalink: /kb/135/Q135851/
 
 ## Q135851: Remote Diagnostics Shows Incorrect Number Of Cylinders
 
+{% raw %}
+
 	Article: Q135851
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -45,3 +47,5 @@ permalink: /kb/135/Q135851/
 	
 	=============================================================================
 	
+
+{% endraw %}

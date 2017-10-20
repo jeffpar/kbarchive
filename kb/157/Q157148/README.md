@@ -6,6 +6,8 @@ permalink: /kb/157/Q157148/
 
 ## Q157148: WD97: Newsletter Wizard Address Printed in Wrong Location
 
+{% raw %}
+
 	Article: Q157148
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/157/Q157148/
 	
 	=============================================================================
 	
+
+{% endraw %}

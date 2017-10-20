@@ -6,6 +6,8 @@ permalink: /kb/093/Q93512/
 
 ## Q93512: Reading LOGSHOW Information
 
+{% raw %}
+
 	Article: Q93512
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -139,3 +141,5 @@ permalink: /kb/093/Q93512/
 	
 	=============================================================================
 	
+
+{% endraw %}

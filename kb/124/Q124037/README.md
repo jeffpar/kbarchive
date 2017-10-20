@@ -6,6 +6,8 @@ permalink: /kb/124/Q124037/
 
 ## Q124037: Windows NT Setup Err Msg on Compaq: Stop 0x0000008B
 
+{% raw %}
+
 	Article: Q124037
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/124/Q124037/
 	
 	=============================================================================
 	
+
+{% endraw %}

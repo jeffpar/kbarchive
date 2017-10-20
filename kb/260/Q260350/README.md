@@ -6,6 +6,8 @@ permalink: /kb/260/Q260350/
 
 ## Q260350: INFO: What Does &quot;Wait 0 0&quot; Mean in the Routing Process?
 
+{% raw %}
+
 	Article: Q260350
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -88,3 +90,5 @@ permalink: /kb/260/Q260350/
 	
 	=============================================================================
 	
+
+{% endraw %}

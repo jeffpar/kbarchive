@@ -6,6 +6,8 @@ permalink: /kb/080/Q80082/
 
 ## Q80082: DOCERR: Description of the DDEML Error Codes
 
+{% raw %}
+
 	Article: Q80082
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -134,3 +136,5 @@ permalink: /kb/080/Q80082/
 	
 	=============================================================================
 	
+
+{% endraw %}

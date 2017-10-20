@@ -6,6 +6,8 @@ permalink: /kb/140/Q140951/
 
 ## Q140951: XFOR: DXA Generates Multiple SMTP Proxies for PCMail
 
+{% raw %}
+
 	Article: Q140951
 	Product(s): Microsoft Exchange
 	Version(s): 3.x,4.0
@@ -110,3 +112,5 @@ permalink: /kb/140/Q140951/
 	
 	=============================================================================
 	
+
+{% endraw %}

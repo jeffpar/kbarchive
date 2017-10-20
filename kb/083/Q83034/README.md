@@ -6,6 +6,8 @@ permalink: /kb/083/Q83034/
 
 ## Q83034: Reading and Converting Between the Three GDI Resources
 
+{% raw %}
+
 	Article: Q83034
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -215,3 +217,5 @@ permalink: /kb/083/Q83034/
 	
 	=============================================================================
 	
+
+{% endraw %}

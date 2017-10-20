@@ -6,6 +6,8 @@ permalink: /kb/224/Q224367/
 
 ## Q224367: Err Msg: An Essential Component for Full Screen Video Is Missing
 
+{% raw %}
+
 	Article: Q224367
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -69,3 +71,5 @@ permalink: /kb/224/Q224367/
 	
 	=============================================================================
 	
+
+{% endraw %}

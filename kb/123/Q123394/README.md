@@ -6,6 +6,8 @@ permalink: /kb/123/Q123394/
 
 ## Q123394: MSB Human: Cannot Play MIDI Sounds
 
+{% raw %}
+
 	Article: Q123394
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -150,3 +152,5 @@ permalink: /kb/123/Q123394/
 	
 	=============================================================================
 	
+
+{% endraw %}

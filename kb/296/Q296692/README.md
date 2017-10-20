@@ -6,6 +6,8 @@ permalink: /kb/296/Q296692/
 
 ## Q296692: Troubleshooting TCP Ports in SYN_RECEIVED State for Long Periods
 
+{% raw %}
+
 	Article: Q296692
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -99,3 +101,5 @@ permalink: /kb/296/Q296692/
 	
 	=============================================================================
 	
+
+{% endraw %}

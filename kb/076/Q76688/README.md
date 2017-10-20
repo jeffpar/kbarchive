@@ -6,6 +6,8 @@ permalink: /kb/076/Q76688/
 
 ## Q76688: PRB: Resource Compiler Cannot Find Include Files
 
+{% raw %}
+
 	Article: Q76688
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -49,3 +51,5 @@ permalink: /kb/076/Q76688/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196408/
 
 ## Q196408: XADM: Move Server Logs Failure if MailBox has no WinNT Account
 
+{% raw %}
+
 	Article: Q196408
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -53,3 +55,5 @@ permalink: /kb/196/Q196408/
 	
 	=============================================================================
 	
+
+{% endraw %}

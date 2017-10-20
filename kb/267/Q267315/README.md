@@ -6,6 +6,8 @@ permalink: /kb/267/Q267315/
 
 ## Q267315: Streets &amp; Trips 2001: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q267315
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/267/Q267315/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/215/Q215503/
 
 ## Q215503: Turkish Windows 95 OSR2 Restarts with Turkish NetMeeting 2.1
 
+{% raw %}
+
 	Article: Q215503
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.1,95
@@ -69,3 +71,5 @@ permalink: /kb/215/Q215503/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173796/
 
 ## Q173796: ODE97: Print Command Not Available in Run-Time Applications
 
+{% raw %}
+
 	Article: Q173796
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:97
@@ -245,3 +247,5 @@ permalink: /kb/173/Q173796/
 	
 	=============================================================================
 	
+
+{% endraw %}

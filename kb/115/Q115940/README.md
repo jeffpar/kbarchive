@@ -6,6 +6,8 @@ permalink: /kb/115/Q115940/
 
 ## Q115940: Running Windows 3.1 Under Workgroup Add-On for MS-DOS
 
+{% raw %}
+
 	Article: Q115940
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): MS-DOS:3.11; WINDOWS:3.1
@@ -79,3 +81,5 @@ permalink: /kb/115/Q115940/
 	
 	=============================================================================
 	
+
+{% endraw %}

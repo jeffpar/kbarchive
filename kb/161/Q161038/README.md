@@ -6,6 +6,8 @@ permalink: /kb/161/Q161038/
 
 ## Q161038: Winsock Apps Fail on First Attempt at NetBIOS Name Resolution
 
+{% raw %}
+
 	Article: Q161038
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/161/Q161038/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/270/Q270621/
 
 ## Q270621: EWED: New Browser Window Opens When You Use QuickDefine
 
+{% raw %}
+
 	Article: Q270621
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -53,3 +55,5 @@ permalink: /kb/270/Q270621/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139411/
 
 ## Q139411: Maximum WINS Owners Under Windows NT 3.5 and 3.51
 
+{% raw %}
+
 	Article: Q139411
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -54,3 +56,5 @@ permalink: /kb/139/Q139411/
 	
 	=============================================================================
 	
+
+{% endraw %}

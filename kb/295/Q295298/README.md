@@ -6,6 +6,8 @@ permalink: /kb/295/Q295298/
 
 ## Q295298: INFO: IIS 5: What Does Check on Pending Requests Do?
 
+{% raw %}
+
 	Article: Q295298
 	Product(s): Internet Information Server
 	Version(s): 2.0,5.0
@@ -136,3 +138,5 @@ permalink: /kb/295/Q295298/
 	
 	=============================================================================
 	
+
+{% endraw %}

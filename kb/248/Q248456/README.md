@@ -6,6 +6,8 @@ permalink: /kb/248/Q248456/
 
 ## Q248456: XADM: OOF Does Not Start If a Rule Stops Processing Other Rules
 
+{% raw %}
+
 	Article: Q248456
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -93,3 +95,5 @@ permalink: /kb/248/Q248456/
 	
 	=============================================================================
 	
+
+{% endraw %}

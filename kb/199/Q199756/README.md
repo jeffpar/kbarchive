@@ -6,6 +6,8 @@ permalink: /kb/199/Q199756/
 
 ## Q199756: XADM: Tips for Modifying an Exchange Server Registry Key on MSCS
 
+{% raw %}
+
 	Article: Q199756
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -65,3 +67,5 @@ permalink: /kb/199/Q199756/
 	
 	=============================================================================
 	
+
+{% endraw %}

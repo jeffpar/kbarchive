@@ -6,6 +6,8 @@ permalink: /kb/031/Q31293/
 
 ## Q31293: Using Mouse Menus with WordPerfect Version 5.00
 
+{% raw %}
+
 	Article: Q31293
 	Product(s): See article
 	Version(s): 1.00
@@ -22,3 +24,5 @@ permalink: /kb/031/Q31293/
 	Version 5.00, you must start WordPerfect with the /nk switch. This
 	will disable the keyboard macros and allow the Mouse menu to function
 	normally.
+
+{% endraw %}

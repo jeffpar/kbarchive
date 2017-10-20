@@ -6,6 +6,8 @@ permalink: /kb/216/Q216254/
 
 ## Q216254: User Global Object Mistakenly Created as System Global Object
 
+{% raw %}
+
 	Article: Q216254
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/216/Q216254/
 	
 	=============================================================================
 	
+
+{% endraw %}

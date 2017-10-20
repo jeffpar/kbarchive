@@ -6,6 +6,8 @@ permalink: /kb/235/Q235742/
 
 ## Q235742: SMS: Hardware Inventory  Raises Exception When Processing Class
 
+{% raw %}
+
 	Article: Q235742
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -67,3 +69,5 @@ permalink: /kb/235/Q235742/
 	
 	=============================================================================
 	
+
+{% endraw %}

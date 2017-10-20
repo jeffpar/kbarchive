@@ -6,6 +6,8 @@ permalink: /kb/314/Q314654/
 
 ## Q314654: FIX: &quot;Cannot update the Cursor&quot; Error When Indexing a Table
 
+{% raw %}
+
 	Article: Q314654
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -88,3 +90,5 @@ permalink: /kb/314/Q314654/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/300/Q300140/
 
 ## Q300140: FIX: Minimized Modal Form Cannot Be Restored
 
+{% raw %}
+
 	Article: Q300140
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -105,3 +107,5 @@ permalink: /kb/300/Q300140/
 	
 	=============================================================================
 	
+
+{% endraw %}

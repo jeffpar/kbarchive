@@ -6,6 +6,8 @@ permalink: /kb/092/Q92990/
 
 ## Q92990: Remote Access Service (RAS) 1.1 Support in WFWG
 
+{% raw %}
+
 	Article: Q92990
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -51,3 +53,5 @@ permalink: /kb/092/Q92990/
 	
 	=============================================================================
 	
+
+{% endraw %}

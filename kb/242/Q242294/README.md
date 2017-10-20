@@ -6,6 +6,8 @@ permalink: /kb/242/Q242294/
 
 ## Q242294: Security Descriptor Allows Privilege Elevation on Remote PCs
 
+{% raw %}
+
 	Article: Q242294
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -190,3 +192,5 @@ permalink: /kb/242/Q242294/
 	
 	=============================================================================
 	
+
+{% endraw %}

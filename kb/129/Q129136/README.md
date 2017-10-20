@@ -6,6 +6,8 @@ permalink: /kb/129/Q129136/
 
 ## Q129136: XCLN: Pointer Doesn't Change When New Mail Is Received
 
+{% raw %}
+
 	Article: Q129136
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -51,3 +53,5 @@ permalink: /kb/129/Q129136/
 	
 	=============================================================================
 	
+
+{% endraw %}

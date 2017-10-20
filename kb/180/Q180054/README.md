@@ -6,6 +6,8 @@ permalink: /kb/180/Q180054/
 
 ## Q180054: Perfmon Trap or Winlogon STOP C000021A When Running Perfmon
 
+{% raw %}
+
 	Article: Q180054
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -91,3 +93,5 @@ permalink: /kb/180/Q180054/
 	
 	=============================================================================
 	
+
+{% endraw %}

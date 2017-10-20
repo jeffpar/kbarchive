@@ -6,6 +6,8 @@ permalink: /kb/230/Q230240/
 
 ## Q230240: A+ Certification Training Kit Comments and Corrections
 
+{% raw %}
+
 	Article: Q230240
 	Product(s): Microsoft Press
 	Version(s): 
@@ -325,3 +327,5 @@ permalink: /kb/230/Q230240/
 	
 	=============================================================================
 	
+
+{% endraw %}

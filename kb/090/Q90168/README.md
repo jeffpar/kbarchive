@@ -6,6 +6,8 @@ permalink: /kb/090/Q90168/
 
 ## Q90168: Configuration Manager Allows Duplicate Filenames
 
+{% raw %}
+
 	Article: Q90168
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -52,3 +54,5 @@ permalink: /kb/090/Q90168/
 	
 	=============================================================================
 	
+
+{% endraw %}

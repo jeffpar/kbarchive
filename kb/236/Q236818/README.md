@@ -6,6 +6,8 @@ permalink: /kb/236/Q236818/
 
 ## Q236818: VSE Support for OLE DB to DB2/ODBC
 
+{% raw %}
+
 	Article: Q236818
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2
@@ -81,3 +83,5 @@ permalink: /kb/236/Q236818/
 	
 	=============================================================================
 	
+
+{% endraw %}

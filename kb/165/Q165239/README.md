@@ -6,6 +6,8 @@ permalink: /kb/165/Q165239/
 
 ## Q165239: FIX: Removing Views from DBC in Project Causes Error
 
+{% raw %}
+
 	Article: Q165239
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -113,3 +115,5 @@ permalink: /kb/165/Q165239/
 	
 	=============================================================================
 	
+
+{% endraw %}

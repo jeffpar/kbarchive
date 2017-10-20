@@ -6,6 +6,8 @@ permalink: /kb/225/Q225016/
 
 ## Q225016: XADM: How to Change the Recipients Container for PF Mailboxes
 
+{% raw %}
+
 	Article: Q225016
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -54,3 +56,5 @@ permalink: /kb/225/Q225016/
 	
 	=============================================================================
 	
+
+{% endraw %}

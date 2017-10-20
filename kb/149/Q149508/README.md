@@ -6,6 +6,8 @@ permalink: /kb/149/Q149508/
 
 ## Q149508: PRB: SETTEXTPOSITION() Does Not Scroll Window to New Location
 
+{% raw %}
+
 	Article: Q149508
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,4.0
@@ -75,3 +77,5 @@ permalink: /kb/149/Q149508/
 	
 	=============================================================================
 	
+
+{% endraw %}

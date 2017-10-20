@@ -6,6 +6,8 @@ permalink: /kb/242/Q242762/
 
 ## Q242762: XFOR: Error Creating Connectivity Controller Service
 
+{% raw %}
+
 	Article: Q242762
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -78,3 +80,5 @@ permalink: /kb/242/Q242762/
 	
 	=============================================================================
 	
+
+{% endraw %}

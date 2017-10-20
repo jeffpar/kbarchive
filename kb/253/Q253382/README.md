@@ -6,6 +6,8 @@ permalink: /kb/253/Q253382/
 
 ## Q253382: Error Message: Unable to Display Security Information
 
+{% raw %}
+
 	Article: Q253382
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -119,3 +121,5 @@ permalink: /kb/253/Q253382/
 	
 	=============================================================================
 	
+
+{% endraw %}

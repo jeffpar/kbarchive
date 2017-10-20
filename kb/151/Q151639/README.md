@@ -6,6 +6,8 @@ permalink: /kb/151/Q151639/
 
 ## Q151639: Err Msg: Enc9632 Caused an Invalid Page Fault in Enc9632.exe
 
+{% raw %}
+
 	Article: Q151639
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1996
@@ -121,3 +123,5 @@ permalink: /kb/151/Q151639/
 	
 	=============================================================================
 	
+
+{% endraw %}

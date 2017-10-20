@@ -6,6 +6,8 @@ permalink: /kb/137/Q137644/
 
 ## Q137644: &quot;Invalid Page Fault&quot; Starting PVCS Version Manager 5.2
 
+{% raw %}
+
 	Article: Q137644
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/137/Q137644/
 	
 	=============================================================================
 	
+
+{% endraw %}

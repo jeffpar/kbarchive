@@ -6,6 +6,8 @@ permalink: /kb/253/Q253291/
 
 ## Q253291: XADM: Determining the Last User to Modify a Public Folder Item
 
+{% raw %}
+
 	Article: Q253291
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -96,3 +98,5 @@ permalink: /kb/253/Q253291/
 	
 	=============================================================================
 	
+
+{% endraw %}

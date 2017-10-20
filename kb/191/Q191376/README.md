@@ -6,6 +6,8 @@ permalink: /kb/191/Q191376/
 
 ## Q191376: WD97: Tabs Button Doesn't Work with Envelopes and Labels
 
+{% raw %}
+
 	Article: Q191376
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -65,3 +67,5 @@ permalink: /kb/191/Q191376/
 	
 	=============================================================================
 	
+
+{% endraw %}

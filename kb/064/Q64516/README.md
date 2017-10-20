@@ -6,6 +6,8 @@ permalink: /kb/064/Q64516/
 
 ## Q64516: Viewing Printer Error Messages on an HP LaserJet III
 
+{% raw %}
+
 	Article: Q64516
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -58,3 +60,5 @@ permalink: /kb/064/Q64516/
 	
 	=============================================================================
 	
+
+{% endraw %}

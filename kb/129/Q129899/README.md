@@ -6,6 +6,8 @@ permalink: /kb/129/Q129899/
 
 ## Q129899: PC WRmt: Err Msg: Address Is No Longer Valid...
 
+{% raw %}
+
 	Article: Q129899
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -98,3 +100,5 @@ permalink: /kb/129/Q129899/
 	
 	=============================================================================
 	
+
+{% endraw %}

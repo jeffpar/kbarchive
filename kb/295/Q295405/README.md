@@ -6,6 +6,8 @@ permalink: /kb/295/Q295405/
 
 ## Q295405: HOWTO: Capture TCP and HTTP Data Frames Using Network Monitor
 
+{% raw %}
+
 	Article: Q295405
 	Product(s): Internet Information Server
 	Version(s): 3.0,3.0 SP1,4.0,5.0
@@ -211,3 +213,5 @@ permalink: /kb/295/Q295405/
 	
 	=============================================================================
 	
+
+{% endraw %}

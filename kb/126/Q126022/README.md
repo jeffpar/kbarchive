@@ -6,6 +6,8 @@ permalink: /kb/126/Q126022/
 
 ## Q126022: Contents of FONTMAP.TXT for Ultimate Haunted House
 
+{% raw %}
+
 	Article: Q126022
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -177,3 +179,5 @@ permalink: /kb/126/Q126022/
 	
 	=============================================================================
 	
+
+{% endraw %}

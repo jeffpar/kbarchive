@@ -6,6 +6,8 @@ permalink: /kb/138/Q138856/
 
 ## Q138856: Error 4119 when Selecting SNA Server Admin Security Options
 
+{% raw %}
+
 	Article: Q138856
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -82,3 +84,5 @@ permalink: /kb/138/Q138856/
 	
 	=============================================================================
 	
+
+{% endraw %}

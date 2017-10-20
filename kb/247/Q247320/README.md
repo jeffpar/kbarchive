@@ -6,6 +6,8 @@ permalink: /kb/247/Q247320/
 
 ## Q247320: User ID Can be Edited When &quot;User May Override Mapping&quot; Is Disabl
 
+{% raw %}
+
 	Article: Q247320
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -78,3 +80,5 @@ permalink: /kb/247/Q247320/
 	
 	=============================================================================
 	
+
+{% endraw %}

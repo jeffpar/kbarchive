@@ -6,6 +6,8 @@ permalink: /kb/245/Q245534/
 
 ## Q245534: How To Locate a COMTI TypeLib After It's Been Registered In MTS
 
+{% raw %}
+
 	Article: Q245534
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,1.0 SP1,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -104,3 +106,5 @@ permalink: /kb/245/Q245534/
 	
 	=============================================================================
 	
+
+{% endraw %}

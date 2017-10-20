@@ -6,6 +6,8 @@ permalink: /kb/176/Q176357/
 
 ## Q176357: Err Msg: Critical Information About the Desktop Could Not Be...
 
+{% raw %}
+
 	Article: Q176357
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; winnt:4.0
@@ -106,3 +108,5 @@ permalink: /kb/176/Q176357/
 	
 	=============================================================================
 	
+
+{% endraw %}

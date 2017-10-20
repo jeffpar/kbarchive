@@ -6,6 +6,8 @@ permalink: /kb/269/Q269862/
 
 ## Q269862: MS00-057: Patch Released for Canonicalization Error Issue
 
+{% raw %}
+
 	Article: Q269862
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -304,3 +306,5 @@ permalink: /kb/269/Q269862/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/026/Q26803/
 
 ## Q26803: FIX: Incorrect Checksum
 
+{% raw %}
+
 	Article: Q26803
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0
@@ -67,3 +69,5 @@ permalink: /kb/026/Q26803/
 	
 	=============================================================================
 	
+
+{% endraw %}

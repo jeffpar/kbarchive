@@ -6,6 +6,8 @@ permalink: /kb/123/Q123616/
 
 ## Q123616: Blank APPSTART Icon
 
+{% raw %}
+
 	Article: Q123616
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -92,3 +94,5 @@ permalink: /kb/123/Q123616/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/250/Q250441/
 
 ## Q250441: XFOR: Internet Mail Service Moves Messages to Archive Folder
 
+{% raw %}
+
 	Article: Q250441
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -81,3 +83,5 @@ permalink: /kb/250/Q250441/
 	
 	=============================================================================
 	
+
+{% endraw %}

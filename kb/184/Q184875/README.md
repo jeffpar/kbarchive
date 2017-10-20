@@ -6,6 +6,8 @@ permalink: /kb/184/Q184875/
 
 ## Q184875: API Function BroadcastSystemMessage() Always Returns 1 (Success)
 
+{% raw %}
+
 	Article: Q184875
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/184/Q184875/
 	
 	=============================================================================
 	
+
+{% endraw %}

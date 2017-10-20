@@ -6,6 +6,8 @@ permalink: /kb/155/Q155442/
 
 ## Q155442: Music Central 96 Update Contents: July 96
 
+{% raw %}
+
 	Article: Q155442
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -158,3 +160,5 @@ permalink: /kb/155/Q155442/
 	
 	=============================================================================
 	
+
+{% endraw %}

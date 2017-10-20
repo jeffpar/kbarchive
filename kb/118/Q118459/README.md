@@ -6,6 +6,8 @@ permalink: /kb/118/Q118459/
 
 ## Q118459: CONN: Dir-Sync and Connection Can Cause Misdirected Mail
 
+{% raw %}
+
 	Article: Q118459
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -61,3 +63,5 @@ permalink: /kb/118/Q118459/
 	
 	=============================================================================
 	
+
+{% endraw %}

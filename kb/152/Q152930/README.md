@@ -6,6 +6,8 @@ permalink: /kb/152/Q152930/
 
 ## Q152930: XCON: IMC Might Stop if RFC 821 From Address is &gt; 64 Characters
 
+{% raw %}
+
 	Article: Q152930
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/152/Q152930/
 	
 	=============================================================================
 	
+
+{% endraw %}

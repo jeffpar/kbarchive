@@ -6,6 +6,8 @@ permalink: /kb/301/Q301925/
 
 ## Q301925: Messages Received with White Text and Blue Background
 
+{% raw %}
+
 	Article: Q301925
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -50,3 +52,5 @@ permalink: /kb/301/Q301925/
 	
 	=============================================================================
 	
+
+{% endraw %}

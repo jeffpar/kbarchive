@@ -6,6 +6,8 @@ permalink: /kb/181/Q181184/
 
 ## Q181184: WD97: Incorrect Calculation in Drop-Down Form Field Using Macro
 
+{% raw %}
+
 	Article: Q181184
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/181/Q181184/
 	
 	=============================================================================
 	
+
+{% endraw %}

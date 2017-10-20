@@ -6,6 +6,8 @@ permalink: /kb/167/Q167688/
 
 ## Q167688: &quot;STOP 0x7B&quot; on DEC Alpha Personal Workstation During Setup
 
+{% raw %}
+
 	Article: Q167688
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -60,3 +62,5 @@ permalink: /kb/167/Q167688/
 	
 	=============================================================================
 	
+
+{% endraw %}

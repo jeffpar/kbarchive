@@ -6,6 +6,8 @@ permalink: /kb/098/Q98312/
 
 ## Q98312: How to Install MS-DOS 6 Upgrade to a Drive Other Than C
 
+{% raw %}
+
 	Article: Q98312
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -64,3 +66,5 @@ permalink: /kb/098/Q98312/
 	
 	=============================================================================
 	
+
+{% endraw %}

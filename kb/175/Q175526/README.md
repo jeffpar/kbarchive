@@ -6,6 +6,8 @@ permalink: /kb/175/Q175526/
 
 ## Q175526: SMS: Modifying the Default 'User Information' MIF Entry
 
+{% raw %}
+
 	Article: Q175526
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -257,3 +259,5 @@ permalink: /kb/175/Q175526/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160983/
 
 ## Q160983: MSN Menus Not Updated or Welcome Page Continues to Appear
 
+{% raw %}
+
 	Article: Q160983
 	Product(s): The Microsoft Network
 	Version(s): 2.0,2.5,2.6,4.0,4.01 Service Pack 2,5
@@ -84,3 +86,5 @@ permalink: /kb/160/Q160983/
 	
 	=============================================================================
 	
+
+{% endraw %}

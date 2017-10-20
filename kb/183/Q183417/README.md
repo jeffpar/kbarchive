@@ -6,6 +6,8 @@ permalink: /kb/183/Q183417/
 
 ## Q183417: WD97: Cannot Select Named Range from Excel During Mail Merge
 
+{% raw %}
+
 	Article: Q183417
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -127,3 +129,5 @@ permalink: /kb/183/Q183417/
 	
 	=============================================================================
 	
+
+{% endraw %}

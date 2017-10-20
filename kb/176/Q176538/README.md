@@ -6,6 +6,8 @@ permalink: /kb/176/Q176538/
 
 ## Q176538: XADM: Display Name Missing for RFC 822 &quot;Group:;&quot; Address
 
+{% raw %}
+
 	Article: Q176538
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -75,3 +77,5 @@ permalink: /kb/176/Q176538/
 	
 	=============================================================================
 	
+
+{% endraw %}

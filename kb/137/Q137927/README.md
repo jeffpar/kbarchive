@@ -6,6 +6,8 @@ permalink: /kb/137/Q137927/
 
 ## Q137927: Int21 Random Write Fails Under Windows NT
 
+{% raw %}
+
 	Article: Q137927
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -64,3 +66,5 @@ permalink: /kb/137/Q137927/
 	
 	=============================================================================
 	
+
+{% endraw %}

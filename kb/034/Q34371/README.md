@@ -6,6 +6,8 @@ permalink: /kb/034/Q34371/
 
 ## Q34371: STOS Instruction Must Have String Pointed to ES:DI
 
+{% raw %}
+
 	Article: Q34371
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -19,3 +21,5 @@ permalink: /kb/034/Q34371/
 	expect the string to be pointed to by ES:DI:
 	
 	   STOS  WORD PTR ES:[SI]
+
+{% endraw %}

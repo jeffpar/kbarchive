@@ -6,6 +6,8 @@ permalink: /kb/231/Q231213/
 
 ## Q231213: Remote Tools Installation Disables Logitech Mouse Functionality
 
+{% raw %}
+
 	Article: Q231213
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -60,3 +62,5 @@ permalink: /kb/231/Q231213/
 	
 	=============================================================================
 	
+
+{% endraw %}

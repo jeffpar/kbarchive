@@ -6,6 +6,8 @@ permalink: /kb/173/Q173441/
 
 ## Q173441: DOC: Running NT Server 4.0: FPNW not available on Internet
 
+{% raw %}
+
 	Article: Q173441
 	Product(s): Microsoft Press
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/173/Q173441/
 	
 	=============================================================================
 	
+
+{% endraw %}

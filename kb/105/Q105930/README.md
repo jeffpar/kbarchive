@@ -6,6 +6,8 @@ permalink: /kb/105/Q105930/
 
 ## Q105930: PC WRmt: Mail Remote Displays &quot;SENDING&quot; When It Isn't Sending
 
+{% raw %}
+
 	Article: Q105930
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -43,3 +45,5 @@ permalink: /kb/105/Q105930/
 	
 	=============================================================================
 	
+
+{% endraw %}

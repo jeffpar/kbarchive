@@ -6,6 +6,8 @@ permalink: /kb/153/Q153437/
 
 ## Q153437: Access Not Allowed When Accessing Web Server
 
+{% raw %}
+
 	Article: Q153437
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0
@@ -62,3 +64,5 @@ permalink: /kb/153/Q153437/
 	
 	=============================================================================
 	
+
+{% endraw %}

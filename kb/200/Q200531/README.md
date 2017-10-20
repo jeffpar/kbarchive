@@ -6,6 +6,8 @@ permalink: /kb/200/Q200531/
 
 ## Q200531: RasDial() Does Not Connect Dual Channels with Some ISDN Adapters
 
+{% raw %}
+
 	Article: Q200531
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/200/Q200531/
 	
 	=============================================================================
 	
+
+{% endraw %}

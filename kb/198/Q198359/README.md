@@ -6,6 +6,8 @@ permalink: /kb/198/Q198359/
 
 ## Q198359: WD97: Err Msg: &quot;MergeField Was Not Found...&quot; When Mail Merging
 
+{% raw %}
+
 	Article: Q198359
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -75,3 +77,5 @@ permalink: /kb/198/Q198359/
 	
 	=============================================================================
 	
+
+{% endraw %}

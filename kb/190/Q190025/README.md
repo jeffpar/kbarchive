@@ -6,6 +6,8 @@ permalink: /kb/190/Q190025/
 
 ## Q190025: XADM: Unable to Create New Mailbox, Error 2037
 
+{% raw %}
+
 	Article: Q190025
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -85,3 +87,5 @@ permalink: /kb/190/Q190025/
 	
 	=============================================================================
 	
+
+{% endraw %}

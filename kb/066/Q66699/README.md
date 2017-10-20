@@ -6,6 +6,8 @@ permalink: /kb/066/Q66699/
 
 ## Q66699: LINK Ignores Drive Specification Searching for Libraries
 
+{% raw %}
+
 	Article: Q66699
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:5.0x,5.1x,5.3,5.31.009,5.5,5.6; OS/2:5.01.21,5.03,5.05,5.1,5.11,5.13
@@ -57,3 +59,5 @@ permalink: /kb/066/Q66699/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234311/
 
 ## Q234311: PRB: Microsoft Word 2000 At A Glance Comments And Corrections
 
+{% raw %}
+
 	Article: Q234311
 	Product(s): Microsoft Press
 	Version(s): 
@@ -122,3 +124,5 @@ permalink: /kb/234/Q234311/
 	
 	=============================================================================
 	
+
+{% endraw %}

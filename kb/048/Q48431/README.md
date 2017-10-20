@@ -6,6 +6,8 @@ permalink: /kb/048/Q48431/
 
 ## Q48431: Macros ceil and floor Incorrectly Listed As Functions
 
+{% raw %}
+
 	Article: Q48431
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -20,3 +22,5 @@ permalink: /kb/048/Q48431/
 	As correctly noted in the "Microsoft C 5.1 Optimizing Compiler
 	Run-Time Library Reference" on Pages 152 and 270, ceil and floor are
 	macros defined in the include file MATH.H.
+
+{% endraw %}

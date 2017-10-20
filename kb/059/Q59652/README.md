@@ -6,6 +6,8 @@ permalink: /kb/059/Q59652/
 
 ## Q59652: Calendar Not Displaying Message with Alarm
 
+{% raw %}
+
 	Article: Q59652
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/059/Q59652/
 	
 	=============================================================================
 	
+
+{% endraw %}

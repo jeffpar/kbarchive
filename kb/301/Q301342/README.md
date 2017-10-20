@@ -6,6 +6,8 @@ permalink: /kb/301/Q301342/
 
 ## Q301342: XFOR: How to Enable Archiving for the GroupWise Connector in Exc
 
+{% raw %}
+
 	Article: Q301342
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -67,3 +69,5 @@ permalink: /kb/301/Q301342/
 	
 	=============================================================================
 	
+
+{% endraw %}

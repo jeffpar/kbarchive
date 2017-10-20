@@ -6,6 +6,8 @@ permalink: /kb/177/Q177155/
 
 ## Q177155: PRB: &quot;Save Changes?&quot; Dialog Box Appears When No Changes Made
 
+{% raw %}
+
 	Article: Q177155
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -64,3 +66,5 @@ permalink: /kb/177/Q177155/
 	
 	=============================================================================
 	
+
+{% endraw %}

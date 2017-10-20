@@ -6,6 +6,8 @@ permalink: /kb/167/Q167956/
 
 ## Q167956: HOWTO: Detect IE's STOP Button Click in ActiveX Control
 
+{% raw %}
+
 	Article: Q167956
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,4.2b,5.0,6.0
@@ -141,3 +143,5 @@ permalink: /kb/167/Q167956/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/226/Q226106/
 
 ## Q226106: MS Commerce Solutions: Some Figures Printed Incorrectly
 
+{% raw %}
+
 	Article: Q226106
 	Product(s): Microsoft Press
 	Version(s): 
@@ -167,3 +169,5 @@ permalink: /kb/226/Q226106/
 	
 	=============================================================================
 	
+
+{% endraw %}

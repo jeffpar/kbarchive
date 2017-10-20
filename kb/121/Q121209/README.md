@@ -6,6 +6,8 @@ permalink: /kb/121/Q121209/
 
 ## Q121209: MIDIIO Sample Demonstrates MIDI Input and Output
 
+{% raw %}
+
 	Article: Q121209
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -63,3 +65,5 @@ permalink: /kb/121/Q121209/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140643/
 
 ## Q140643: STOP 0x0000000A Using STB Video Card and Adaptec Controller
 
+{% raw %}
+
 	Article: Q140643
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -65,3 +67,5 @@ permalink: /kb/140/Q140643/
 	
 	=============================================================================
 	
+
+{% endraw %}

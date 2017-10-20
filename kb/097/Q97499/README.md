@@ -6,6 +6,8 @@ permalink: /kb/097/Q97499/
 
 ## Q97499: Ensure User Permissions Are Retained During Transfer
 
+{% raw %}
+
 	Article: Q97499
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/097/Q97499/
 	
 	=============================================================================
 	
+
+{% endraw %}

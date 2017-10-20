@@ -6,6 +6,8 @@ permalink: /kb/149/Q149341/
 
 ## Q149341: FIX: CreatePointFont() May Create Wrong Size Font in Preview
 
+{% raw %}
+
 	Article: Q149341
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -92,3 +94,5 @@ permalink: /kb/149/Q149341/
 	
 	=============================================================================
 	
+
+{% endraw %}

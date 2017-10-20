@@ -6,6 +6,8 @@ permalink: /kb/102/Q102074/
 
 ## Q102074: How to Run a dBASE IV Report File in FoxPro
 
+{% raw %}
+
 	Article: Q102074
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0
@@ -69,3 +71,5 @@ permalink: /kb/102/Q102074/
 	
 	=============================================================================
 	
+
+{% endraw %}

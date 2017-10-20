@@ -6,6 +6,8 @@ permalink: /kb/223/Q223157/
 
 ## Q223157: Integrating WLBS and MSCS
 
+{% raw %}
+
 	Article: Q223157
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0,4.0
@@ -65,3 +67,5 @@ permalink: /kb/223/Q223157/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/238/Q238992/
 
 ## Q238992: XFOR: Notes to Exchange Dirsync Generates Events 6206 &amp; 60102
 
+{% raw %}
+
 	Article: Q238992
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -83,3 +85,5 @@ permalink: /kb/238/Q238992/
 	
 	=============================================================================
 	
+
+{% endraw %}

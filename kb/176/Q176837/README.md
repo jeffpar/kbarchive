@@ -6,6 +6,8 @@ permalink: /kb/176/Q176837/
 
 ## Q176837: Bookshelf 98: Computer Stops Responding When Searching Online
 
+{% raw %}
+
 	Article: Q176837
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -60,3 +62,5 @@ permalink: /kb/176/Q176837/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123869/
 
 ## Q123869: BUG: Trouble Changing Where SETUP Installs MASM
 
+{% raw %}
+
 	Article: Q123869
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.11
@@ -63,3 +65,5 @@ permalink: /kb/123/Q123869/
 	
 	=============================================================================
 	
+
+{% endraw %}

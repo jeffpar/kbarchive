@@ -6,6 +6,8 @@ permalink: /kb/082/Q82422/
 
 ## Q82422: No Vector Fonts for HP DeskJet Plus at 300 Dpi
 
+{% raw %}
+
 	Article: Q82422
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -42,3 +44,5 @@ permalink: /kb/082/Q82422/
 	
 	=============================================================================
 	
+
+{% endraw %}

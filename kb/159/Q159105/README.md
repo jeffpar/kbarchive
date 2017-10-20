@@ -6,6 +6,8 @@ permalink: /kb/159/Q159105/
 
 ## Q159105: Cannot Open Truncated File Names from Compact Discs
 
+{% raw %}
+
 	Article: Q159105
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -53,3 +55,5 @@ permalink: /kb/159/Q159105/
 	
 	=============================================================================
 	
+
+{% endraw %}

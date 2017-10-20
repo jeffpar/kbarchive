@@ -6,6 +6,8 @@ permalink: /kb/222/Q222652/
 
 ## Q222652: Prompted for Floppy Disk When Adding a Printer to SBS Server
 
+{% raw %}
+
 	Article: Q222652
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -59,3 +61,5 @@ permalink: /kb/222/Q222652/
 	
 	=============================================================================
 	
+
+{% endraw %}

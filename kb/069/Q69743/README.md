@@ -6,6 +6,8 @@ permalink: /kb/069/Q69743/
 
 ## Q69743: PC DOS: Using the NEWMAIL Utility with Mail
 
+{% raw %}
+
 	Article: Q69743
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0
@@ -64,3 +66,5 @@ permalink: /kb/069/Q69743/
 	
 	=============================================================================
 	
+
+{% endraw %}

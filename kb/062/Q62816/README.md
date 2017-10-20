@@ -6,6 +6,8 @@ permalink: /kb/062/Q62816/
 
 ## Q62816: Passed Parameters Incorrectly PRINTed from SUB in Library
 
+{% raw %}
+
 	Article: Q62816
 	Product(s): See article
 	Version(s): 4.50
@@ -68,3 +70,5 @@ permalink: /kb/062/Q62816/
 	To work around this problem, compile with the /X option, as follows:
 	
 	   BC /X TEST.BAS ;
+
+{% endraw %}

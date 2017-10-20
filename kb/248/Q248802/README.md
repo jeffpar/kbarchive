@@ -6,6 +6,8 @@ permalink: /kb/248/Q248802/
 
 ## Q248802: PRB: Vcvars32.bat Generates Out of Environment Message
 
+{% raw %}
+
 	Article: Q248802
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/248/Q248802/
 	
 	=============================================================================
 	
+
+{% endraw %}

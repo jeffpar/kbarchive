@@ -6,6 +6,8 @@ permalink: /kb/072/Q72067/
 
 ## Q72067: DOCERR: Docs for PWB Extension Functions Have Errors/Omissions
 
+{% raw %}
+
 	Article: Q72067
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -104,3 +106,5 @@ permalink: /kb/072/Q72067/
 	
 	=============================================================================
 	
+
+{% endraw %}

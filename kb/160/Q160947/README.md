@@ -6,6 +6,8 @@ permalink: /kb/160/Q160947/
 
 ## Q160947: XCON: NDR and Event ID 290 in Event Log Sending X.400 Message
 
+{% raw %}
+
 	Article: Q160947
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -60,3 +62,5 @@ permalink: /kb/160/Q160947/
 	
 	=============================================================================
 	
+
+{% endraw %}

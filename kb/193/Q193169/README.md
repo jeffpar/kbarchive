@@ -6,6 +6,8 @@ permalink: /kb/193/Q193169/
 
 ## Q193169: Script Mappings Are Not Removed from the Registry
 
+{% raw %}
+
 	Article: Q193169
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/193/Q193169/
 	
 	=============================================================================
 	
+
+{% endraw %}

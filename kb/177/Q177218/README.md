@@ -6,6 +6,8 @@ permalink: /kb/177/Q177218/
 
 ## Q177218: HOWTO: Return Array to VB from VC++ DLL or OLE Server
 
+{% raw %}
+
 	Article: Q177218
 	Product(s): Microsoft C Compiler
 	Version(s): 2000,4.0,5.0,6.0
@@ -143,3 +145,5 @@ permalink: /kb/177/Q177218/
 	
 	=============================================================================
 	
+
+{% endraw %}

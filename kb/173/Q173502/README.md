@@ -6,6 +6,8 @@ permalink: /kb/173/Q173502/
 
 ## Q173502: Storage Durations For MSN Internet Access E-mail Messages
 
+{% raw %}
+
 	Article: Q173502
 	Product(s): The Microsoft Network
 	Version(s): 2.6,5.0,5.1,5.2,5.3,5.4,5.5,6.0,6.1
@@ -65,3 +67,5 @@ permalink: /kb/173/Q173502/
 	
 	=============================================================================
 	
+
+{% endraw %}

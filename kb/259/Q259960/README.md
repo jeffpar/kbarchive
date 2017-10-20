@@ -6,6 +6,8 @@ permalink: /kb/259/Q259960/
 
 ## Q259960: StarLancer: Game Stops Responding During 3D Hardware Detection
 
+{% raw %}
+
 	Article: Q259960
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -72,3 +74,5 @@ permalink: /kb/259/Q259960/
 	
 	=============================================================================
 	
+
+{% endraw %}

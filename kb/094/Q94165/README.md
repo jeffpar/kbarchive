@@ -6,6 +6,8 @@ permalink: /kb/094/Q94165/
 
 ## Q94165: Printing Problems at DOS after Using the OKI24.DRV in Windows
 
+{% raw %}
+
 	Article: Q94165
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/094/Q94165/
 	
 	=============================================================================
 	
+
+{% endraw %}

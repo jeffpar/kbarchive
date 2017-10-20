@@ -6,6 +6,8 @@ permalink: /kb/169/Q169493/
 
 ## Q169493: Host Drive Shares Still Available After Host Drive Is Hidden
 
+{% raw %}
+
 	Article: Q169493
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -85,3 +87,5 @@ permalink: /kb/169/Q169493/
 	
 	=============================================================================
 	
+
+{% endraw %}

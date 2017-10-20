@@ -6,6 +6,8 @@ permalink: /kb/186/Q186083/
 
 ## Q186083: INFO: New Features of Class Browser
 
+{% raw %}
+
 	Article: Q186083
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -110,3 +112,5 @@ permalink: /kb/186/Q186083/
 	
 	=============================================================================
 	
+
+{% endraw %}

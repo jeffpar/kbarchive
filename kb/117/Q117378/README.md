@@ -6,6 +6,8 @@ permalink: /kb/117/Q117378/
 
 ## Q117378: INFO: Command IDs and In-Place Frame Window Toolbar
 
+{% raw %}
+
 	Article: Q117378
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5,1.51,1.52,2.0,2.1
@@ -79,3 +81,5 @@ permalink: /kb/117/Q117378/
 	
 	=============================================================================
 	
+
+{% endraw %}

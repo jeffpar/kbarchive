@@ -6,6 +6,8 @@ permalink: /kb/099/Q99120/
 
 ## Q99120: PC Win: Network List Doesn't Sort Alphabetically
 
+{% raw %}
+
 	Article: Q99120
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -89,3 +91,5 @@ permalink: /kb/099/Q99120/
 	
 	=============================================================================
 	
+
+{% endraw %}

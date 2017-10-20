@@ -6,6 +6,8 @@ permalink: /kb/124/Q124065/
 
 ## Q124065: PC Win: Err Msg: There is not a valid workgroup postoffice....
 
+{% raw %}
+
 	Article: Q124065
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -84,3 +86,5 @@ permalink: /kb/124/Q124065/
 	
 	=============================================================================
 	
+
+{% endraw %}

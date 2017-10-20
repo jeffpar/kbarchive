@@ -6,6 +6,8 @@ permalink: /kb/171/Q171744/
 
 ## Q171744: FIX: DragIcon Property with Cursor Files Does Not Work in an EXE
 
+{% raw %}
+
 	Article: Q171744
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a
@@ -119,3 +121,5 @@ permalink: /kb/171/Q171744/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146880/
 
 ## Q146880: Logon/Logoff Events Logged Out of Order in Security Log
 
+{% raw %}
+
 	Article: Q146880
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -62,3 +64,5 @@ permalink: /kb/146/Q146880/
 	
 	=============================================================================
 	
+
+{% endraw %}

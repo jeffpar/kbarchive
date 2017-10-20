@@ -6,6 +6,8 @@ permalink: /kb/169/Q169879/
 
 ## Q169879: WD97: MS Excel Text Formatting May Not Convert Properly to Word
 
+{% raw %}
+
 	Article: Q169879
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/169/Q169879/
 	
 	=============================================================================
 	
+
+{% endraw %}

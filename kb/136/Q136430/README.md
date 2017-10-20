@@ -6,6 +6,8 @@ permalink: /kb/136/Q136430/
 
 ## Q136430: Total Disk Space on Banyan Vines Server Incorrectly Reported
 
+{% raw %}
+
 	Article: Q136430
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0; WINDOWS:3.11,95
@@ -43,3 +45,5 @@ permalink: /kb/136/Q136430/
 	
 	=============================================================================
 	
+
+{% endraw %}

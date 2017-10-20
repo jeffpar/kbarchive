@@ -6,6 +6,8 @@ permalink: /kb/131/Q131197/
 
 ## Q131197: PRB: Can't Edit/Select Converted Screen Objects by Clicking
 
+{% raw %}
+
 	Article: Q131197
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -91,3 +93,5 @@ permalink: /kb/131/Q131197/
 	
 	=============================================================================
 	
+
+{% endraw %}

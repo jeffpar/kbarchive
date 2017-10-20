@@ -6,6 +6,8 @@ permalink: /kb/086/Q86147/
 
 ## Q86147: PROFS: Information Required to Troubleshoot Gateway Problems
 
+{% raw %}
+
 	Article: Q86147
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -55,3 +57,5 @@ permalink: /kb/086/Q86147/
 	
 	=============================================================================
 	
+
+{% endraw %}

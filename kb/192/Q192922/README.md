@@ -6,6 +6,8 @@ permalink: /kb/192/Q192922/
 
 ## Q192922: MIFs Not Processed After Applying Hotfix for Q188880
 
+{% raw %}
+
 	Article: Q192922
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -115,3 +117,5 @@ permalink: /kb/192/Q192922/
 	
 	=============================================================================
 	
+
+{% endraw %}

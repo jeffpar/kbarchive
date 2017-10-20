@@ -6,6 +6,8 @@ permalink: /kb/184/Q184206/
 
 ## Q184206: PRB: DragDrop with ListView Control Fails in MouseMove Event
 
+{% raw %}
+
 	Article: Q184206
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -138,3 +140,5 @@ permalink: /kb/184/Q184206/
 	
 	=============================================================================
 	
+
+{% endraw %}

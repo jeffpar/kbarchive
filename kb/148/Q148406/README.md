@@ -6,6 +6,8 @@ permalink: /kb/148/Q148406/
 
 ## Q148406: HOWTO: How to Create a Microsoft Excel Remote View from Visual F
 
+{% raw %}
+
 	Article: Q148406
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b
@@ -82,3 +84,5 @@ permalink: /kb/148/Q148406/
 	
 	=============================================================================
 	
+
+{% endraw %}

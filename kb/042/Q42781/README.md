@@ -6,6 +6,8 @@ permalink: /kb/042/Q42781/
 
 ## Q42781: C Compiler: _control87() and Modifying the Control Word
 
+{% raw %}
+
 	Article: Q42781
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -85,3 +87,5 @@ permalink: /kb/042/Q42781/
 	
 	For additional information on floating point exceptions, please refer
 	to the file FPEXCEPT.DOC contained in the C 5.10 package.
+
+{% endraw %}

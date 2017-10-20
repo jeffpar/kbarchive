@@ -6,6 +6,8 @@ permalink: /kb/152/Q152963/
 
 ## Q152963: XCLN: Autosignature Not Applied on MS Word Editor
 
+{% raw %}
+
 	Article: Q152963
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -59,3 +61,5 @@ permalink: /kb/152/Q152963/
 	
 	=============================================================================
 	
+
+{% endraw %}

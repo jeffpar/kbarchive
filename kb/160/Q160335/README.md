@@ -6,6 +6,8 @@ permalink: /kb/160/Q160335/
 
 ## Q160335: RealAudio Plays at 14,400 bps
 
+{% raw %}
+
 	Article: Q160335
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5
@@ -41,3 +43,5 @@ permalink: /kb/160/Q160335/
 	
 	=============================================================================
 	
+
+{% endraw %}

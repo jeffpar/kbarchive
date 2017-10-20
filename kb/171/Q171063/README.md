@@ -6,6 +6,8 @@ permalink: /kb/171/Q171063/
 
 ## Q171063: WD97: Merged Table Cells and Rows Do Not Print Bottom Border
 
+{% raw %}
+
 	Article: Q171063
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -115,3 +117,5 @@ permalink: /kb/171/Q171063/
 	
 	=============================================================================
 	
+
+{% endraw %}

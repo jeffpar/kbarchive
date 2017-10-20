@@ -6,6 +6,8 @@ permalink: /kb/147/Q147601/
 
 ## Q147601: Problem Switching From Office 95 to 16-bit Application Window
 
+{% raw %}
+
 	Article: Q147601
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -58,3 +60,5 @@ permalink: /kb/147/Q147601/
 	
 	=============================================================================
 	
+
+{% endraw %}

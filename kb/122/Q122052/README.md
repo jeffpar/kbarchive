@@ -6,6 +6,8 @@ permalink: /kb/122/Q122052/
 
 ## Q122052: Logical Block Addressing (LBA) Defined
 
+{% raw %}
+
 	Article: Q122052
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:95
@@ -88,3 +90,5 @@ permalink: /kb/122/Q122052/
 	
 	=============================================================================
 	
+
+{% endraw %}

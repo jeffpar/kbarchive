@@ -6,6 +6,8 @@ permalink: /kb/297/Q297169/
 
 ## Q297169: Asheron's Call: The Game Stops Responding or Quits Unexpectedly
 
+{% raw %}
+
 	Article: Q297169
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -263,3 +265,5 @@ permalink: /kb/297/Q297169/
 	
 	=============================================================================
 	
+
+{% endraw %}

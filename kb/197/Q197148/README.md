@@ -6,6 +6,8 @@ permalink: /kb/197/Q197148/
 
 ## Q197148: WD97: Word Ruler Supports Only Mouse Commands
 
+{% raw %}
+
 	Article: Q197148
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -65,3 +67,5 @@ permalink: /kb/197/Q197148/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/213/Q213226/
 
 ## Q213226: SMS: NDS Logon Manager Does Not Create Logon Point
 
+{% raw %}
+
 	Article: Q213226
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -55,3 +57,5 @@ permalink: /kb/213/Q213226/
 	
 	=============================================================================
 	
+
+{% endraw %}

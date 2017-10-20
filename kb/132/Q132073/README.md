@@ -6,6 +6,8 @@ permalink: /kb/132/Q132073/
 
 ## Q132073: FLTSIM 5.1: FFSYSTEM ERROR When Creating Startup Disk
 
+{% raw %}
+
 	Article: Q132073
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.1
@@ -73,3 +75,5 @@ permalink: /kb/132/Q132073/
 	
 	=============================================================================
 	
+
+{% endraw %}

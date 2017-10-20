@@ -6,6 +6,8 @@ permalink: /kb/068/Q68901/
 
 ## Q68901: Windows Setup Adds &quot;?&quot; in WordPerfect's Calendar PIF File
 
+{% raw %}
+
 	Article: Q68901
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -50,3 +52,5 @@ permalink: /kb/068/Q68901/
 	
 	=============================================================================
 	
+
+{% endraw %}

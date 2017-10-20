@@ -6,6 +6,8 @@ permalink: /kb/139/Q139331/
 
 ## Q139331: Errors when Using LPR.EXE Command to Print a Zero Byte File
 
+{% raw %}
+
 	Article: Q139331
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -56,3 +58,5 @@ permalink: /kb/139/Q139331/
 	
 	=============================================================================
 	
+
+{% endraw %}

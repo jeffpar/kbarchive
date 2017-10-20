@@ -6,6 +6,8 @@ permalink: /kb/216/Q216371/
 
 ## Q216371: XCLN: Attendees Don't Publish Correct Free/Busy Calendar Info
 
+{% raw %}
+
 	Article: Q216371
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,97,98
@@ -107,3 +109,5 @@ permalink: /kb/216/Q216371/
 	
 	=============================================================================
 	
+
+{% endraw %}

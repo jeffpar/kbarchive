@@ -6,6 +6,8 @@ permalink: /kb/256/Q256156/
 
 ## Q256156: PRB: Report Transported from DOS Causes Problems in Visual FoxPr
 
+{% raw %}
+
 	Article: Q256156
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -138,3 +140,5 @@ permalink: /kb/256/Q256156/
 	
 	=============================================================================
 	
+
+{% endraw %}

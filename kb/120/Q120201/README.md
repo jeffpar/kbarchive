@@ -6,6 +6,8 @@ permalink: /kb/120/Q120201/
 
 ## Q120201: RAS Err Msg: Error 717: Serial Overrun Errors Were Detected...
 
+{% raw %}
+
 	Article: Q120201
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -57,3 +59,5 @@ permalink: /kb/120/Q120201/
 	
 	=============================================================================
 	
+
+{% endraw %}

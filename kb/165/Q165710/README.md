@@ -6,6 +6,8 @@ permalink: /kb/165/Q165710/
 
 ## Q165710: Creating an Emergency Repair Disk Fails - Disk Unusable
 
+{% raw %}
+
 	Article: Q165710
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -53,3 +55,5 @@ permalink: /kb/165/Q165710/
 	
 	=============================================================================
 	
+
+{% endraw %}

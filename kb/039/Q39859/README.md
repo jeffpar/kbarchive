@@ -6,6 +6,8 @@ permalink: /kb/039/Q39859/
 
 ## Q39859: CALL INTERRUPT 25H Doesn't Return Error Flags in the AX Reg
 
+{% raw %}
+
 	Article: Q39859
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -95,3 +97,5 @@ permalink: /kb/039/Q39859/
 	CALL INTERRUPTX(&H13, InRegs, OutRegs)
 	PRINT OutRegs.ax
 	END
+
+{% endraw %}

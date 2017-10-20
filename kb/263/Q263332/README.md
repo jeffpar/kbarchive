@@ -6,6 +6,8 @@ permalink: /kb/263/Q263332/
 
 ## Q263332: Uninstall Does Not Remove SMS Provider from Remote SQL Server
 
+{% raw %}
+
 	Article: Q263332
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -55,3 +57,5 @@ permalink: /kb/263/Q263332/
 	
 	=============================================================================
 	
+
+{% endraw %}

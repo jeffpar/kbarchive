@@ -6,6 +6,8 @@ permalink: /kb/248/Q248398/
 
 ## Q248398: XADM: Restricting Permission to Address Book Views
 
+{% raw %}
+
 	Article: Q248398
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -138,3 +140,5 @@ permalink: /kb/248/Q248398/
 	
 	=============================================================================
 	
+
+{% endraw %}

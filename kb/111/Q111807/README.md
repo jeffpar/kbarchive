@@ -6,6 +6,8 @@ permalink: /kb/111/Q111807/
 
 ## Q111807: &quot;API Library Not Found&quot; w/ MS-DOS .PLB in FoxPro for Mac
 
+{% raw %}
+
 	Article: Q111807
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -46,3 +48,5 @@ permalink: /kb/111/Q111807/
 	
 	=============================================================================
 	
+
+{% endraw %}

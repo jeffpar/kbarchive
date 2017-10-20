@@ -6,6 +6,8 @@ permalink: /kb/155/Q155345/
 
 ## Q155345: How To Re-Create Administrative Shares in Windows NT
 
+{% raw %}
+
 	Article: Q155345
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -55,3 +57,5 @@ permalink: /kb/155/Q155345/
 	
 	=============================================================================
 	
+
+{% endraw %}

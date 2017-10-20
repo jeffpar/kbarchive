@@ -6,6 +6,8 @@ permalink: /kb/177/Q177259/
 
 ## Q177259: XADM: User Count Increments Incorrectly
 
+{% raw %}
+
 	Article: Q177259
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -46,3 +48,5 @@ permalink: /kb/177/Q177259/
 	
 	=============================================================================
 	
+
+{% endraw %}

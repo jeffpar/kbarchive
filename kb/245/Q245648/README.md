@@ -6,6 +6,8 @@ permalink: /kb/245/Q245648/
 
 ## Q245648: Values List from Query Builder Not Always Sorted and Is Limited
 
+{% raw %}
+
 	Article: Q245648
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -107,3 +109,5 @@ permalink: /kb/245/Q245648/
 	
 	=============================================================================
 	
+
+{% endraw %}

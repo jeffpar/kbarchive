@@ -6,6 +6,8 @@ permalink: /kb/059/Q59724/
 
 ## Q59724: List Box Width Can Be Only 14-55 Characters in 7.00 UI Toolbox
 
+{% raw %}
+
 	Article: Q59724
 	Product(s): See article
 	Version(s): 7.00
@@ -55,3 +57,5 @@ permalink: /kb/059/Q59724/
 	allow any list box width. If the width is too small, the OK and Cancel
 	buttons may not fit in the list box. If the width is too large, the
 	resulting list box may not fit on the screen.
+
+{% endraw %}

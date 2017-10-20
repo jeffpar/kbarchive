@@ -6,6 +6,8 @@ permalink: /kb/090/Q90740/
 
 ## Q90740: Color Values for MessageBackColor and MessageTextColor Setting
 
+{% raw %}
+
 	Article: Q90740
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -87,3 +89,5 @@ permalink: /kb/090/Q90740/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192799/
 
 ## Q192799: Other Gateways Not Used if Default Gateway Is Not Available
 
+{% raw %}
+
 	Article: Q192799
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -55,3 +57,5 @@ permalink: /kb/192/Q192799/
 	
 	=============================================================================
 	
+
+{% endraw %}

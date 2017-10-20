@@ -6,6 +6,8 @@ permalink: /kb/149/Q149135/
 
 ## Q149135: BUG: Incorrect Custom/Complete Setup Size in Standard Edition
 
+{% raw %}
+
 	Article: Q149135
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -44,3 +46,5 @@ permalink: /kb/149/Q149135/
 	
 	=============================================================================
 	
+
+{% endraw %}

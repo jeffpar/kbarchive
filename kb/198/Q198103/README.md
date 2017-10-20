@@ -6,6 +6,8 @@ permalink: /kb/198/Q198103/
 
 ## Q198103: Combat Flight Simulator: Textures in Cockpit Flicker
 
+{% raw %}
+
 	Article: Q198103
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -64,3 +66,5 @@ permalink: /kb/198/Q198103/
 	
 	=============================================================================
 	
+
+{% endraw %}

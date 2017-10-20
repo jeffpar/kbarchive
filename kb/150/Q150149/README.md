@@ -6,6 +6,8 @@ permalink: /kb/150/Q150149/
 
 ## Q150149: Contents of Visual FoxPro 1.0 ODBC Vfpodbc.txt File
 
+{% raw %}
+
 	Article: Q150149
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 1.0
@@ -533,3 +535,5 @@ permalink: /kb/150/Q150149/
 	
 	=============================================================================
 	
+
+{% endraw %}

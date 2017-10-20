@@ -6,6 +6,8 @@ permalink: /kb/292/Q292030/
 
 ## Q292030: The Install Status May Be Missing for Advertised Programs
 
+{% raw %}
+
 	Article: Q292030
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -106,3 +108,5 @@ permalink: /kb/292/Q292030/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164147/
 
 ## Q164147: Internet Information Server Will Not Re-install
 
+{% raw %}
+
 	Article: Q164147
 	Product(s): Internet Information Server
 	Version(s): 2.0,3.0
@@ -76,3 +78,5 @@ permalink: /kb/164/Q164147/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199264/
 
 ## Q199264: XIMS: Top 10 Network News Transport Protocol (NNTP) References
 
+{% raw %}
+
 	Article: Q199264
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -101,3 +103,5 @@ permalink: /kb/199/Q199264/
 	
 	=============================================================================
 	
+
+{% endraw %}

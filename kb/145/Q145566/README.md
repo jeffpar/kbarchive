@@ -6,6 +6,8 @@ permalink: /kb/145/Q145566/
 
 ## Q145566: FIX: App Error Occurs After Saving a Changed Module Name
 
+{% raw %}
+
 	Article: Q145566
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -95,3 +97,5 @@ permalink: /kb/145/Q145566/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188659/
 
 ## Q188659: HOWTO: Use a Satellite DLL for Localization Purposes
 
+{% raw %}
+
 	Article: Q188659
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -240,3 +242,5 @@ permalink: /kb/188/Q188659/
 	
 	=============================================================================
 	
+
+{% endraw %}

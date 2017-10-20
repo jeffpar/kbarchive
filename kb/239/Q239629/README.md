@@ -6,6 +6,8 @@ permalink: /kb/239/Q239629/
 
 ## Q239629: World Atlas: Setup Quits Unexpectedly During CD-ROM Verification
 
+{% raw %}
+
 	Article: Q239629
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -69,3 +71,5 @@ permalink: /kb/239/Q239629/
 	
 	=============================================================================
 	
+
+{% endraw %}

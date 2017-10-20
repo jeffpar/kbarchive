@@ -6,6 +6,8 @@ permalink: /kb/096/Q96288/
 
 ## Q96288: How FoxPro for Windows Uses the FOXPRO.INI File
 
+{% raw %}
+
 	Article: Q96288
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 3.00
@@ -51,3 +53,5 @@ permalink: /kb/096/Q96288/
 	
 	=============================================================================
 	
+
+{% endraw %}

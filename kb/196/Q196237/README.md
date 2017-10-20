@@ -6,6 +6,8 @@ permalink: /kb/196/Q196237/
 
 ## Q196237: SDLC Multiport Connection Only Works with One DSPU at a Time
 
+{% raw %}
+
 	Article: Q196237
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,4.0
@@ -73,3 +75,5 @@ permalink: /kb/196/Q196237/
 	
 	=============================================================================
 	
+
+{% endraw %}

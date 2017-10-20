@@ -6,6 +6,8 @@ permalink: /kb/228/Q228960/
 
 ## Q228960: Midtown Madness: Cannot Play Game If You Cancel Setup
 
+{% raw %}
+
 	Article: Q228960
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/228/Q228960/
 	
 	=============================================================================
 	
+
+{% endraw %}

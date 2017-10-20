@@ -6,6 +6,8 @@ permalink: /kb/173/Q173223/
 
 ## Q173223: WD97: Linked Picture Size Lost When Saving as Rich Text Format
 
+{% raw %}
+
 	Article: Q173223
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -107,3 +109,5 @@ permalink: /kb/173/Q173223/
 	
 	=============================================================================
 	
+
+{% endraw %}

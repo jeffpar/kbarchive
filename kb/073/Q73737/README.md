@@ -6,6 +6,8 @@ permalink: /kb/073/Q73737/
 
 ## Q73737: DOSSWAP.EXE Problem Occurs When Swap Not Allowed
 
+{% raw %}
+
 	Article: Q73737
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -61,3 +63,5 @@ permalink: /kb/073/Q73737/
 	
 	=============================================================================
 	
+
+{% endraw %}

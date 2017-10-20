@@ -6,6 +6,8 @@ permalink: /kb/124/Q124940/
 
 ## Q124940: STOP 0x0000000A when Accessing NetWare Server
 
+{% raw %}
+
 	Article: Q124940
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/124/Q124940/
 	
 	=============================================================================
 	
+
+{% endraw %}

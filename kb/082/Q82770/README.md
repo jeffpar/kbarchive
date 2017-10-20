@@ -6,6 +6,8 @@ permalink: /kb/082/Q82770/
 
 ## Q82770: Windows 3.1 Setup Error Codes (S000 through S022)
 
+{% raw %}
+
 	Article: Q82770
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -185,3 +187,5 @@ permalink: /kb/082/Q82770/
 	
 	=============================================================================
 	
+
+{% endraw %}

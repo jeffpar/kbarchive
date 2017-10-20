@@ -6,6 +6,8 @@ permalink: /kb/067/Q67517/
 
 ## Q67517: EXPAND.EXE Error Msg: Can't Open Output File &lt;filename.ext&gt;
 
+{% raw %}
+
 	Article: Q67517
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -51,3 +53,5 @@ permalink: /kb/067/Q67517/
 	
 	=============================================================================
 	
+
+{% endraw %}

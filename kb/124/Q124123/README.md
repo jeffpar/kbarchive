@@ -6,6 +6,8 @@ permalink: /kb/124/Q124123/
 
 ## Q124123: File Open (16-Bit) Displays File List Very Slowly
 
+{% raw %}
+
 	Article: Q124123
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/124/Q124123/
 	
 	=============================================================================
 	
+
+{% endraw %}

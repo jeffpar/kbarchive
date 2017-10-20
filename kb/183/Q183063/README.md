@@ -6,6 +6,8 @@ permalink: /kb/183/Q183063/
 
 ## Q183063: Detailed Explanation of SecondLevelDataCache
 
+{% raw %}
+
 	Article: Q183063
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/183/Q183063/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104857/
 
 ## Q104857: Flight Simulator: Aircraft Pulls to the Left
 
+{% raw %}
+
 	Article: Q104857
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -57,3 +59,5 @@ permalink: /kb/104/Q104857/
 	
 	=============================================================================
 	
+
+{% endraw %}

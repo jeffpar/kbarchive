@@ -6,6 +6,8 @@ permalink: /kb/221/Q221728/
 
 ## Q221728: FIX: C0000005 Fatal Error With MODIFY WINDOW SCREEN in EXE
 
+{% raw %}
+
 	Article: Q221728
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -89,3 +91,5 @@ permalink: /kb/221/Q221728/
 	
 	=============================================================================
 	
+
+{% endraw %}

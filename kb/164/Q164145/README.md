@@ -6,6 +6,8 @@ permalink: /kb/164/Q164145/
 
 ## Q164145: Cannot Open File Accessing Visual FoxPro Database
 
+{% raw %}
+
 	Article: Q164145
 	Product(s): Internet Information Server
 	Version(s): 2.00
@@ -69,3 +71,5 @@ permalink: /kb/164/Q164145/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117430/
 
 ## Q117430: Cannot Install HP DeskJet Printer Driver Version 3.10
 
+{% raw %}
+
 	Article: Q117430
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/117/Q117430/
 	
 	=============================================================================
 	
+
+{% endraw %}

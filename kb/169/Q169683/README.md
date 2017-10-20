@@ -6,6 +6,8 @@ permalink: /kb/169/Q169683/
 
 ## Q169683: XFOR: New IMS Routing Functionality in Exchange Server 5.0 SP2
 
+{% raw %}
+
 	Article: Q169683
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -90,3 +92,5 @@ permalink: /kb/169/Q169683/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85342/
 
 ## Q85342: WT1249: Pure Black and White Printing Add-in
 
+{% raw %}
+
 	Article: Q85342
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 7.0
@@ -216,3 +218,5 @@ permalink: /kb/085/Q85342/
 	
 	=============================================================================
 	
+
+{% endraw %}

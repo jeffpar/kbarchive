@@ -6,6 +6,8 @@ permalink: /kb/160/Q160209/
 
 ## Q160209: XCLN: Quiet Mode Setup (setup /q) Defaults to Pacific Time
 
+{% raw %}
+
 	Article: Q160209
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -100,3 +102,5 @@ permalink: /kb/160/Q160209/
 	
 	=============================================================================
 	
+
+{% endraw %}

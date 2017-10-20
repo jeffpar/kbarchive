@@ -6,6 +6,8 @@ permalink: /kb/175/Q175130/
 
 ## Q175130: XADM: Initialization of DLL Fails Starting Exchange Server
 
+{% raw %}
+
 	Article: Q175130
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -50,3 +52,5 @@ permalink: /kb/175/Q175130/
 	
 	=============================================================================
 	
+
+{% endraw %}

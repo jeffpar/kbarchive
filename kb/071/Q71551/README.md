@@ -6,6 +6,8 @@ permalink: /kb/071/Q71551/
 
 ## Q71551: Image Attributes Changes Don't Take Effect Immediately
 
+{% raw %}
+
 	Article: Q71551
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -78,3 +80,5 @@ permalink: /kb/071/Q71551/
 	
 	=============================================================================
 	
+
+{% endraw %}

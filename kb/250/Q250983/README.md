@@ -6,6 +6,8 @@ permalink: /kb/250/Q250983/
 
 ## Q250983: Using Netscape Server Push Technology with ASP
 
+{% raw %}
+
 	Article: Q250983
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:5; winnt:4.0,5.0
@@ -159,3 +161,5 @@ permalink: /kb/250/Q250983/
 	
 	=============================================================================
 	
+
+{% endraw %}

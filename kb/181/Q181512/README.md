@@ -6,6 +6,8 @@ permalink: /kb/181/Q181512/
 
 ## Q181512: XFOR: Lsccmmex.exe Access Violates When Processing Delivery Repo
 
+{% raw %}
+
 	Article: Q181512
 	Product(s): Microsoft Exchange
 	Version(s): 3.2,4.0,5.0,5.5
@@ -81,3 +83,5 @@ permalink: /kb/181/Q181512/
 	
 	=============================================================================
 	
+
+{% endraw %}

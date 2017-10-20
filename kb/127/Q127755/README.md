@@ -6,6 +6,8 @@ permalink: /kb/127/Q127755/
 
 ## Q127755: Some Composer Titles Do Not Play CD Audio When Minimized
 
+{% raw %}
+
 	Article: Q127755
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -78,3 +80,5 @@ permalink: /kb/127/Q127755/
 	
 	=============================================================================
 	
+
+{% endraw %}

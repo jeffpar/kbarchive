@@ -6,6 +6,8 @@ permalink: /kb/132/Q132619/
 
 ## Q132619: Windows 95 Hangs on Compaq Computer with SafeStart Enabled
 
+{% raw %}
+
 	Article: Q132619
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/132/Q132619/
 	
 	=============================================================================
 	
+
+{% endraw %}

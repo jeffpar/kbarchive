@@ -6,6 +6,8 @@ permalink: /kb/148/Q148937/
 
 ## Q148937: XADM: Setting Age Limits on Public Folders
 
+{% raw %}
+
 	Article: Q148937
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -98,3 +100,5 @@ permalink: /kb/148/Q148937/
 	
 	=============================================================================
 	
+
+{% endraw %}

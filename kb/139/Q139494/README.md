@@ -6,6 +6,8 @@ permalink: /kb/139/Q139494/
 
 ## Q139494: Multiple CRC Errors and Hardware Overruns Using RAS
 
+{% raw %}
+
 	Article: Q139494
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -68,3 +70,5 @@ permalink: /kb/139/Q139494/
 	
 	=============================================================================
 	
+
+{% endraw %}

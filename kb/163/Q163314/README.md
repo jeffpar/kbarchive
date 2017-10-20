@@ -6,6 +6,8 @@ permalink: /kb/163/Q163314/
 
 ## Q163314: Occasional Event 23 Outages With a Microgate SDLC Adapter
 
+{% raw %}
+
 	Article: Q163314
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,2.11 SP1
@@ -79,3 +81,5 @@ permalink: /kb/163/Q163314/
 	
 	=============================================================================
 	
+
+{% endraw %}

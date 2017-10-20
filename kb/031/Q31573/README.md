@@ -6,6 +6,8 @@ permalink: /kb/031/Q31573/
 
 ## Q31573: QuickBASIC/MASM Programs in &quot;PC Magazine&quot; Incorrect
 
+{% raw %}
+
 	Article: Q31573
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -109,3 +111,5 @@ permalink: /kb/031/Q31573/
 	   QPrint      Endp
 	   Code        Ends
 	               End   ;* remove this label Begin
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138661/
 
 ## Q138661: PRB: Aliased Field Not Saved in Query Designer
 
+{% raw %}
+
 	Article: Q138661
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -113,3 +115,5 @@ permalink: /kb/138/Q138661/
 	
 	=============================================================================
 	
+
+{% endraw %}

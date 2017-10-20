@@ -6,6 +6,8 @@ permalink: /kb/239/Q239811/
 
 ## Q239811: NBA/NFL 2000: 3D Rendering Is Unavailable
 
+{% raw %}
+
 	Article: Q239811
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/239/Q239811/
 	
 	=============================================================================
 	
+
+{% endraw %}

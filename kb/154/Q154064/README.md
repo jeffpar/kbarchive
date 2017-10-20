@@ -6,6 +6,8 @@ permalink: /kb/154/Q154064/
 
 ## Q154064: How To Direct Output to Installed GX Printers
 
+{% raw %}
+
 	Article: Q154064
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -107,3 +109,5 @@ permalink: /kb/154/Q154064/
 	
 	=============================================================================
 	
+
+{% endraw %}

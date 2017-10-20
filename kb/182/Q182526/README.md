@@ -1,10 +1,12 @@
 ---
 layout: page
-title: "Q182526: DMOD Times Out If Client Doesn't Quickly Log on to WinNT Domain"
+title: "Q182526: DMOD Times Out If Client Doesnt Quickly Log on to WinNT Domain"
 permalink: /kb/182/Q182526/
 ---
 
-## Q182526: DMOD Times Out If Client Doesn't Quickly Log on to WinNT Domain
+## Q182526: DMOD Times Out If Client Doesnt Quickly Log on to WinNT Domain
+
+{% raw %}
 
 	Article: Q182526
 	Product(s): Microsoft SNA Server
@@ -83,3 +85,5 @@ permalink: /kb/182/Q182526/
 	
 	=============================================================================
 	
+
+{% endraw %}

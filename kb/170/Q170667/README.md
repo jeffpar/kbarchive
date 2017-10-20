@@ -6,6 +6,8 @@ permalink: /kb/170/Q170667/
 
 ## Q170667: Index Server CGI Error
 
+{% raw %}
+
 	Article: Q170667
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:1.1
@@ -68,3 +70,5 @@ permalink: /kb/170/Q170667/
 	
 	=============================================================================
 	
+
+{% endraw %}

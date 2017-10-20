@@ -6,6 +6,8 @@ permalink: /kb/167/Q167273/
 
 ## Q167273: FIX: VSS Editor/Viewer Removes and Replaces Characters
 
+{% raw %}
+
 	Article: Q167273
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0
@@ -86,3 +88,5 @@ permalink: /kb/167/Q167273/
 	
 	=============================================================================
 	
+
+{% endraw %}

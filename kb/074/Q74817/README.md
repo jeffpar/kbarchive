@@ -6,6 +6,8 @@ permalink: /kb/074/Q74817/
 
 ## Q74817: Using Different Filename Extensions with PWB Program List
 
+{% raw %}
+
 	Article: Q74817
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -74,3 +76,5 @@ permalink: /kb/074/Q74817/
 	
 	=============================================================================
 	
+
+{% endraw %}

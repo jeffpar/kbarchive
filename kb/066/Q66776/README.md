@@ -6,6 +6,8 @@ permalink: /kb/066/Q66776/
 
 ## Q66776: No Warning for Redeclared Parameter on Old-Style Declarations
 
+{% raw %}
+
 	Article: Q66776
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -43,3 +45,5 @@ permalink: /kb/066/Q66776/
 	   The use of function definitions with separate parameter identifier
 	   and declaration lists (not prototype-format parameter type and
 	   identifier declarators) is an obsolescent feature.
+
+{% endraw %}

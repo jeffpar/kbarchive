@@ -6,6 +6,8 @@ permalink: /kb/115/Q115732/
 
 ## Q115732: PRB: FoxPro for Macintosh Changes Database's Icon After PACK
 
+{% raw %}
+
 	Article: Q115732
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -56,3 +58,5 @@ permalink: /kb/115/Q115732/
 	
 	=============================================================================
 	
+
+{% endraw %}

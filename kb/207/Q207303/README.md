@@ -6,6 +6,8 @@ permalink: /kb/207/Q207303/
 
 ## Q207303: How to Distribute Modifications to Default Regional Settings
 
+{% raw %}
+
 	Article: Q207303
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -69,3 +71,5 @@ permalink: /kb/207/Q207303/
 	
 	=============================================================================
 	
+
+{% endraw %}

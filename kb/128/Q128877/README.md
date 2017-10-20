@@ -6,6 +6,8 @@ permalink: /kb/128/Q128877/
 
 ## Q128877: UT1x: Upsizing Wizard Does Not Allow Nulls in Foreign Key
 
+{% raw %}
+
 	Article: Q128877
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:1.0
@@ -122,3 +124,5 @@ permalink: /kb/128/Q128877/
 	
 	=============================================================================
 	
+
+{% endraw %}

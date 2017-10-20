@@ -6,6 +6,8 @@ permalink: /kb/252/Q252788/
 
 ## Q252788: Midtown Madness: Randomly Colored Shapes Displayed on Screen
 
+{% raw %}
+
 	Article: Q252788
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -84,3 +86,5 @@ permalink: /kb/252/Q252788/
 	
 	=============================================================================
 	
+
+{% endraw %}

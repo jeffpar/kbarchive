@@ -6,6 +6,8 @@ permalink: /kb/107/Q107820/
 
 ## Q107820: WFWG: Can't Connect to Share That Has Multiple Passwords
 
+{% raw %}
+
 	Article: Q107820
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -60,3 +62,5 @@ permalink: /kb/107/Q107820/
 	
 	=============================================================================
 	
+
+{% endraw %}

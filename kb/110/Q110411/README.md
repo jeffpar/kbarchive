@@ -6,6 +6,8 @@ permalink: /kb/110/Q110411/
 
 ## Q110411: BUG: &quot;Invalid Excel File Format&quot; with IMPORT Command
 
+{% raw %}
+
 	Article: Q110411
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b; MS-DOS:2.0,2.5,2.5a,2.5b; WINDOWS:2.5,2.5a,2.5b
@@ -95,3 +97,5 @@ permalink: /kb/110/Q110411/
 	
 	=============================================================================
 	
+
+{% endraw %}

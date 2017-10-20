@@ -6,6 +6,8 @@ permalink: /kb/153/Q153408/
 
 ## Q153408: Sms.ini Not Updating Server/Share Names
 
+{% raw %}
+
 	Article: Q153408
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -46,3 +48,5 @@ permalink: /kb/153/Q153408/
 	
 	=============================================================================
 	
+
+{% endraw %}

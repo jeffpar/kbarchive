@@ -6,6 +6,8 @@ permalink: /kb/150/Q150351/
 
 ## Q150351: FIX: Absolute Pathnames for Source Files Placed in Makefile
 
+{% raw %}
+
 	Article: Q150351
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1
@@ -61,3 +63,5 @@ permalink: /kb/150/Q150351/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129895/
 
 ## Q129895: PRB: OPTION PRIVATE Statement Has No Effect in Visual Basic
 
+{% raw %}
+
 	Article: Q129895
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -52,3 +54,5 @@ permalink: /kb/129/Q129895/
 	
 	=============================================================================
 	
+
+{% endraw %}

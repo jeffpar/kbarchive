@@ -6,6 +6,8 @@ permalink: /kb/031/Q31163/
 
 ## Q31163: Selecting Text in QB.EXE with Dedicated Cursor Keys on Toshiba
 
+{% raw %}
+
 	Article: Q31163
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -69,3 +71,5 @@ permalink: /kb/031/Q31163/
 	keys when highlighting mode is on. Press FUNCTION+NUM LOCK again to
 	toggle off the highlighting mode. Microsoft has not confirmed this
 	information.
+
+{% endraw %}

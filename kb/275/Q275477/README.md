@@ -6,6 +6,8 @@ permalink: /kb/275/Q275477/
 
 ## Q275477: XADM: Determining Attachment Long File Names w. Outlook 2000
 
+{% raw %}
+
 	Article: Q275477
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -89,3 +91,5 @@ permalink: /kb/275/Q275477/
 	
 	=============================================================================
 	
+
+{% endraw %}

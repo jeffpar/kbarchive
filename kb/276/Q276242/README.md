@@ -6,6 +6,8 @@ permalink: /kb/276/Q276242/
 
 ## Q276242: SNA Service Table Objects Increased from 1 KB to 4 KB
 
+{% raw %}
+
 	Article: Q276242
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -91,3 +93,5 @@ permalink: /kb/276/Q276242/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/310/Q310400/
 
 ## Q310400: Microsoft Outlook Version 2002 Step by Step Comments and Correct
 
+{% raw %}
+
 	Article: Q310400
 	Product(s): Microsoft Press
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/310/Q310400/
 	
 	=============================================================================
 	
+
+{% endraw %}

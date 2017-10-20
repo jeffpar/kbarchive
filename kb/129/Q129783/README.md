@@ -6,6 +6,8 @@ permalink: /kb/129/Q129783/
 
 ## Q129783: FIX: typedef Class Template Causes Compiler Errors C2440/C2561
 
+{% raw %}
+
 	Article: Q129783
 	Product(s): Microsoft C Compiler
 	Version(s): 2.00 2.10
@@ -140,3 +142,5 @@ permalink: /kb/129/Q129783/
 	
 	=============================================================================
 	
+
+{% endraw %}

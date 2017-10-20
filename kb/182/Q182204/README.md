@@ -6,6 +6,8 @@ permalink: /kb/182/Q182204/
 
 ## Q182204: XADM: Offline Address Book Generated on Global Address List Fail
 
+{% raw %}
+
 	Article: Q182204
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -57,3 +59,5 @@ permalink: /kb/182/Q182204/
 	
 	=============================================================================
 	
+
+{% endraw %}

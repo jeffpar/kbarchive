@@ -6,6 +6,8 @@ permalink: /kb/166/Q166548/
 
 ## Q166548: XADM: Administrators Cannot Add Accounts to Private IS
 
+{% raw %}
+
 	Article: Q166548
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -58,3 +60,5 @@ permalink: /kb/166/Q166548/
 	
 	=============================================================================
 	
+
+{% endraw %}

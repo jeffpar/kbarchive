@@ -6,6 +6,8 @@ permalink: /kb/303/Q303020/
 
 ## Q303020: Train Simulator 2000: &quot;Dsound.dll Was Not Found&quot; Err Msg Appears
 
+{% raw %}
+
 	Article: Q303020
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -125,3 +127,5 @@ permalink: /kb/303/Q303020/
 	
 	=============================================================================
 	
+
+{% endraw %}

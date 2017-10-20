@@ -6,6 +6,8 @@ permalink: /kb/125/Q125454/
 
 ## Q125454: SMS Service Account Requirements for Different Configurations
 
+{% raw %}
+
 	Article: Q125454
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -81,3 +83,5 @@ permalink: /kb/125/Q125454/
 	
 	=============================================================================
 	
+
+{% endraw %}

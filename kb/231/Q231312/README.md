@@ -6,6 +6,8 @@ permalink: /kb/231/Q231312/
 
 ## Q231312: Computer Name Missing in the Browsing List
 
+{% raw %}
+
 	Article: Q231312
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/231/Q231312/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/048/Q48689/
 
 ## Q48689: CodeView Version 2.20 Is Called CVPCK.EXE by DOS Version 2.10
 
+{% raw %}
+
 	Article: Q48689
 	Product(s): See article
 	Version(s): 2.20
@@ -42,3 +44,5 @@ permalink: /kb/048/Q48689/
 	their own names hard coded as the filename to locate. Unfortunately,
 	the hard-coded name within CodeView Version 2.20 is "CVPCK.EXE", so
 	this is what it looks for under DOS Versions 2.x.
+
+{% endraw %}

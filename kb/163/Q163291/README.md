@@ -6,6 +6,8 @@ permalink: /kb/163/Q163291/
 
 ## Q163291: TN3270E Sets Incorrect Sequence Number on ACKLUA Messages
 
+{% raw %}
+
 	Article: Q163291
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -64,3 +66,5 @@ permalink: /kb/163/Q163291/
 	
 	=============================================================================
 	
+
+{% endraw %}

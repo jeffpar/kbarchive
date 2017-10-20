@@ -6,6 +6,8 @@ permalink: /kb/082/Q82382/
 
 ## Q82382: InPort Mouse Not Functioning Correctly on IRQ2
 
+{% raw %}
+
 	Article: Q82382
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/082/Q82382/
 	
 	=============================================================================
 	
+
+{% endraw %}

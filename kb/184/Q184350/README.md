@@ -6,6 +6,8 @@ permalink: /kb/184/Q184350/
 
 ## Q184350: WordPerfect Suite 6.0 Setup Fails with Multiple CD-ROMs
 
+{% raw %}
+
 	Article: Q184350
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -83,3 +85,5 @@ permalink: /kb/184/Q184350/
 	
 	=============================================================================
 	
+
+{% endraw %}

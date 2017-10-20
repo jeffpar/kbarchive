@@ -6,6 +6,8 @@ permalink: /kb/253/Q253917/
 
 ## Q253917: XADM: MAPI Read Receipt Functionality over Internet Mail Service
 
+{% raw %}
+
 	Article: Q253917
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -78,3 +80,5 @@ permalink: /kb/253/Q253917/
 	
 	=============================================================================
 	
+
+{% endraw %}

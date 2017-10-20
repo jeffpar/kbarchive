@@ -6,6 +6,8 @@ permalink: /kb/108/Q108479/
 
 ## Q108479: Extended Error 53 When Accessing Network Drives from MS-DOS
 
+{% raw %}
+
 	Article: Q108479
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -80,3 +82,5 @@ permalink: /kb/108/Q108479/
 	
 	=============================================================================
 	
+
+{% endraw %}

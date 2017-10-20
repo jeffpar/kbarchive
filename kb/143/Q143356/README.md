@@ -6,6 +6,8 @@ permalink: /kb/143/Q143356/
 
 ## Q143356: XCLN: Err Msg: The Logon Attempt Timed Out While Waiting
 
+{% raw %}
+
 	Article: Q143356
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -75,3 +77,5 @@ permalink: /kb/143/Q143356/
 	
 	=============================================================================
 	
+
+{% endraw %}

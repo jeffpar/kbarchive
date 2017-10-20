@@ -6,6 +6,8 @@ permalink: /kb/037/Q37484/
 
 ## Q37484: SCREEN Function Returns 32 for ASCII Byte 196 in SCREEN 3
 
+{% raw %}
+
 	Article: Q37484
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -57,3 +59,5 @@ permalink: /kb/037/Q37484/
 	   chr$(32)
 	   chr$(196)    ' <<====== Returns ASCII 32 (blank) only in SCREEN 3
 	   chr$(255)
+
+{% endraw %}

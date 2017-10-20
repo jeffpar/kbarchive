@@ -6,6 +6,8 @@ permalink: /kb/113/Q113233/
 
 ## Q113233: Windows 3.1 Disk 5 Directory Listing (3.5 Inch 1.44 MB)
 
+{% raw %}
+
 	Article: Q113233
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -112,3 +114,5 @@ permalink: /kb/113/Q113233/
 	
 	=============================================================================
 	
+
+{% endraw %}

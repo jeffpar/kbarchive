@@ -6,6 +6,8 @@ permalink: /kb/115/Q115813/
 
 ## Q115813: INF: Checking for an ODBC Driver's Transaction Support
 
+{% raw %}
+
 	Article: Q115813
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.5,2.0
@@ -52,3 +54,5 @@ permalink: /kb/115/Q115813/
 	
 	=============================================================================
 	
+
+{% endraw %}

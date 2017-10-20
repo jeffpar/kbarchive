@@ -6,6 +6,8 @@ permalink: /kb/096/Q96625/
 
 ## Q96625: MS-DOS: EMM386.EXE and VCPI Services
 
+{% raw %}
+
 	Article: Q96625
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0; WINDOWS:3.11
@@ -89,3 +91,5 @@ permalink: /kb/096/Q96625/
 	
 	=============================================================================
 	
+
+{% endraw %}

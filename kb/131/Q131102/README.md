@@ -6,6 +6,8 @@ permalink: /kb/131/Q131102/
 
 ## Q131102: FIX: Enumerating Connection Points Causes GP Fault
 
+{% raw %}
+
 	Article: Q131102
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0
@@ -117,3 +119,5 @@ permalink: /kb/131/Q131102/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160982/
 
 ## Q160982: Files Installed with Microsoft NetWare Directory Services
 
+{% raw %}
+
 	Article: Q160982
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -77,3 +79,5 @@ permalink: /kb/160/Q160982/
 	
 	=============================================================================
 	
+
+{% endraw %}

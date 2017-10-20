@@ -6,6 +6,8 @@ permalink: /kb/119/Q119424/
 
 ## Q119424: FAX: FAXLOGO3.PCX Opens in ZOOM IN Mode Within PaintBrush
 
+{% raw %}
+
 	Article: Q119424
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.0a
@@ -54,3 +56,5 @@ permalink: /kb/119/Q119424/
 	
 	=============================================================================
 	
+
+{% endraw %}

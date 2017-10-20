@@ -6,6 +6,8 @@ permalink: /kb/077/Q77563/
 
 ## Q77563: Enhanced Mode Windows Does Not Reset COM Ports
 
+{% raw %}
+
 	Article: Q77563
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/077/Q77563/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112420/
 
 ## Q112420: PPT: PowerPoint Cannot Open Some Files with .DRW Extension
 
+{% raw %}
+
 	Article: Q112420
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -63,3 +65,5 @@ permalink: /kb/112/Q112420/
 	
 	=============================================================================
 	
+
+{% endraw %}

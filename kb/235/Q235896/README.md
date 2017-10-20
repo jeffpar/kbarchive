@@ -6,6 +6,8 @@ permalink: /kb/235/Q235896/
 
 ## Q235896: Files That Are Not Removed When You Uninstall Service Pack 5
 
+{% raw %}
+
 	Article: Q235896
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP5
@@ -127,3 +129,5 @@ permalink: /kb/235/Q235896/
 	
 	=============================================================================
 	
+
+{% endraw %}

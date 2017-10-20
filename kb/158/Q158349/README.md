@@ -6,6 +6,8 @@ permalink: /kb/158/Q158349/
 
 ## Q158349: XCLN: Print/Add/Remove Columns from Contact or To Do Lists
 
+{% raw %}
+
 	Article: Q158349
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -48,3 +50,5 @@ permalink: /kb/158/Q158349/
 	
 	=============================================================================
 	
+
+{% endraw %}

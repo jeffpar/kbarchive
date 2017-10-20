@@ -6,6 +6,8 @@ permalink: /kb/137/Q137753/
 
 ## Q137753: Motorola Power 14.4 PCMCIA Modem May Not Dial Twice
 
+{% raw %}
+
 	Article: Q137753
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -83,3 +85,5 @@ permalink: /kb/137/Q137753/
 	
 	=============================================================================
 	
+
+{% endraw %}

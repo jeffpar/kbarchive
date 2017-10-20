@@ -6,6 +6,8 @@ permalink: /kb/130/Q130200/
 
 ## Q130200: PRB: Deleted Records are Committed with TABLEUPDATE
 
+{% raw %}
+
 	Article: Q130200
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -115,3 +117,5 @@ permalink: /kb/130/Q130200/
 	
 	=============================================================================
 	
+
+{% endraw %}

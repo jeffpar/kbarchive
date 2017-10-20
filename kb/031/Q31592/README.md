@@ -6,6 +6,8 @@ permalink: /kb/031/Q31592/
 
 ## Q31592: Flight Simulator: Adjusting the Radios
 
+{% raw %}
+
 	Article: Q31592
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/031/Q31592/
 	
 	=============================================================================
 	
+
+{% endraw %}

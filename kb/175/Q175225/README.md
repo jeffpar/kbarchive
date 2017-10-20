@@ -6,6 +6,8 @@ permalink: /kb/175/Q175225/
 
 ## Q175225: Disabling Context Menus Does Not Disable Key Combinations
 
+{% raw %}
+
 	Article: Q175225
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/175/Q175225/
 	
 	=============================================================================
 	
+
+{% endraw %}

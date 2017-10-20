@@ -6,6 +6,8 @@ permalink: /kb/147/Q147145/
 
 ## Q147145: XCLN: Send from Excel/Word Hangs Client Until Message Sent
 
+{% raw %}
+
 	Article: Q147145
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -53,3 +55,5 @@ permalink: /kb/147/Q147145/
 	
 	=============================================================================
 	
+
+{% endraw %}

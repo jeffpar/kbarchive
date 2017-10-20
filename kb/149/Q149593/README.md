@@ -6,6 +6,8 @@ permalink: /kb/149/Q149593/
 
 ## Q149593: PowerPoint Could Not Locate Character Map
 
+{% raw %}
+
 	Article: Q149593
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -74,3 +76,5 @@ permalink: /kb/149/Q149593/
 	
 	=============================================================================
 	
+
+{% endraw %}

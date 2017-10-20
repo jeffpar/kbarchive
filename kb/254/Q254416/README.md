@@ -6,6 +6,8 @@ permalink: /kb/254/Q254416/
 
 ## Q254416: MapPoint 2001 Error Message: An Unexpected Failure Has Occurred
 
+{% raw %}
+
 	Article: Q254416
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/254/Q254416/
 	
 	=============================================================================
 	
+
+{% endraw %}

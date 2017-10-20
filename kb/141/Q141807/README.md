@@ -6,6 +6,8 @@ permalink: /kb/141/Q141807/
 
 ## Q141807: BUG: RPC NetBIOS Calls Fail over RAS
 
+{% raw %}
+
 	Article: Q141807
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -85,3 +87,5 @@ permalink: /kb/141/Q141807/
 	
 	=============================================================================
 	
+
+{% endraw %}

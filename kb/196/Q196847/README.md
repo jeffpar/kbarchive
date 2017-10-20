@@ -6,6 +6,8 @@ permalink: /kb/196/Q196847/
 
 ## Q196847: &quot;Stop 0xc000021e&quot; Installing SP4 with LapLink Installed
 
+{% raw %}
+
 	Article: Q196847
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/196/Q196847/
 	
 	=============================================================================
 	
+
+{% endraw %}

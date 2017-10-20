@@ -6,6 +6,8 @@ permalink: /kb/121/Q121686/
 
 ## Q121686: Contents of Space Simulator README.TXT File
 
+{% raw %}
+
 	Article: Q121686
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -161,3 +163,5 @@ permalink: /kb/121/Q121686/
 	
 	=============================================================================
 	
+
+{% endraw %}

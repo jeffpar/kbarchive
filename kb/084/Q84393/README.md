@@ -6,6 +6,8 @@ permalink: /kb/084/Q84393/
 
 ## Q84393: Error Messages When Installing Windows 3.1 on a Compudyne 286
 
+{% raw %}
+
 	Article: Q84393
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/084/Q84393/
 	
 	=============================================================================
 	
+
+{% endraw %}

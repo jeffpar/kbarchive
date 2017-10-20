@@ -6,6 +6,8 @@ permalink: /kb/045/Q45904/
 
 ## Q45904: Using DosExecPgm() After Changing PATH Environment Variable
 
+{% raw %}
+
 	Article: Q45904
 	Product(s): See article
 	Version(s): 5.10
@@ -88,3 +90,5 @@ permalink: /kb/045/Q45904/
 	"off.exe". Each directory in the path passed to DosSearchPath() will
 	be searched. In this case the current directory will be searched
 	first, because of the SEARCH_CUR_DIRECTORY flag.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138147/
 
 ## Q138147: HOWTO: Use the SourceSafe Explorer to Modify the Ss.ini File
 
+{% raw %}
+
 	Article: Q138147
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -133,3 +135,5 @@ permalink: /kb/138/Q138147/
 	
 	=============================================================================
 	
+
+{% endraw %}

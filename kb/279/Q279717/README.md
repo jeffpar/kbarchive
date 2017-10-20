@@ -6,6 +6,8 @@ permalink: /kb/279/Q279717/
 
 ## Q279717: Memory Leak in Db2serv.exe
 
+{% raw %}
+
 	Article: Q279717
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP3
@@ -99,3 +101,5 @@ permalink: /kb/279/Q279717/
 	
 	=============================================================================
 	
+
+{% endraw %}

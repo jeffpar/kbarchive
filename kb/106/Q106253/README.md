@@ -6,6 +6,8 @@ permalink: /kb/106/Q106253/
 
 ## Q106253: Program Priority and Multithreaded Applications
 
+{% raw %}
+
 	Article: Q106253
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -83,3 +85,5 @@ permalink: /kb/106/Q106253/
 	
 	=============================================================================
 	
+
+{% endraw %}

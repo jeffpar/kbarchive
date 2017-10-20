@@ -6,6 +6,8 @@ permalink: /kb/153/Q153598/
 
 ## Q153598: World Atlas: Exception 0E Error in VxD IFSMGR
 
+{% raw %}
+
 	Article: Q153598
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996
@@ -68,3 +70,5 @@ permalink: /kb/153/Q153598/
 	
 	=============================================================================
 	
+
+{% endraw %}

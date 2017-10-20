@@ -6,6 +6,8 @@ permalink: /kb/074/Q74767/
 
 ## Q74767: How to Remove Berkeley Systems After Dark from Windows
 
+{% raw %}
+
 	Article: Q74767
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -83,3 +85,5 @@ permalink: /kb/074/Q74767/
 	
 	=============================================================================
 	
+
+{% endraw %}

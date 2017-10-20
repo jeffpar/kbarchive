@@ -6,6 +6,8 @@ permalink: /kb/281/Q281502/
 
 ## Q281502: IA-2 MSN Companion Starting Screen
 
+{% raw %}
+
 	Article: Q281502
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -52,3 +54,5 @@ permalink: /kb/281/Q281502/
 	
 	=============================================================================
 	
+
+{% endraw %}

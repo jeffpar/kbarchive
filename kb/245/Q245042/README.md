@@ -6,6 +6,8 @@ permalink: /kb/245/Q245042/
 
 ## Q245042: XFOR: Invalid PO Name or Pwd Error Migrating cc:Mail Mobile User
 
+{% raw %}
+
 	Article: Q245042
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -56,3 +58,5 @@ permalink: /kb/245/Q245042/
 	
 	=============================================================================
 	
+
+{% endraw %}

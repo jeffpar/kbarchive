@@ -6,6 +6,8 @@ permalink: /kb/138/Q138003/
 
 ## Q138003: PC Forms: Err Msg: ...No E-forms Available in Shared Mail...
 
+{% raw %}
+
 	Article: Q138003
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0
@@ -87,3 +89,5 @@ permalink: /kb/138/Q138003/
 	
 	=============================================================================
 	
+
+{% endraw %}

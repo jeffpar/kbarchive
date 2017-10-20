@@ -6,6 +6,8 @@ permalink: /kb/274/Q274754/
 
 ## Q274754: HOWTO: Create a User Control with Licensed Components in VB
 
+{% raw %}
+
 	Article: Q274754
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -466,3 +468,5 @@ permalink: /kb/274/Q274754/
 	
 	=============================================================================
 	
+
+{% endraw %}

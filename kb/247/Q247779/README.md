@@ -6,6 +6,8 @@ permalink: /kb/247/Q247779/
 
 ## Q247779: XCLN: Mailboxes Not Available Through OWA, Timeout Error Appears
 
+{% raw %}
+
 	Article: Q247779
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -86,3 +88,5 @@ permalink: /kb/247/Q247779/
 	
 	=============================================================================
 	
+
+{% endraw %}

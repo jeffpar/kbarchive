@@ -6,6 +6,8 @@ permalink: /kb/241/Q241012/
 
 ## Q241012: NBA Inside Drive 2000: Introductory Video Is Not Played Properly
 
+{% raw %}
+
 	Article: Q241012
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/241/Q241012/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158541/
 
 ## Q158541: PRB: C2440 Error When Using CMap and User Defined Key Type
 
+{% raw %}
+
 	Article: Q158541
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -113,3 +115,5 @@ permalink: /kb/158/Q158541/
 	
 	=============================================================================
 	
+
+{% endraw %}

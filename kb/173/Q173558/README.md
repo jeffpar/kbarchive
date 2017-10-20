@@ -6,6 +6,8 @@ permalink: /kb/173/Q173558/
 
 ## Q173558: XADM: Client Fails to Connect to Alternate PF Server
 
+{% raw %}
+
 	Article: Q173558
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -65,3 +67,5 @@ permalink: /kb/173/Q173558/
 	
 	=============================================================================
 	
+
+{% endraw %}

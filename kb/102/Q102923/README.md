@@ -6,6 +6,8 @@ permalink: /kb/102/Q102923/
 
 ## Q102923: STB WIND/X Video Card Interferes with COM4 Serial Port
 
+{% raw %}
+
 	Article: Q102923
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/102/Q102923/
 	
 	=============================================================================
 	
+
+{% endraw %}

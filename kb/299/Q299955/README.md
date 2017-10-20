@@ -6,6 +6,8 @@ permalink: /kb/299/Q299955/
 
 ## Q299955: FIX: Using SET('PRINTER) in COM Server Causes Error
 
+{% raw %}
+
 	Article: Q299955
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -78,3 +80,5 @@ permalink: /kb/299/Q299955/
 	
 	=============================================================================
 	
+
+{% endraw %}

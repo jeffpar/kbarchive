@@ -6,6 +6,8 @@ permalink: /kb/178/Q178539/
 
 ## Q178539: XCON: How to Adjust Message Time-Outs for the Exchange MTA
 
+{% raw %}
+
 	Article: Q178539
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -96,3 +98,5 @@ permalink: /kb/178/Q178539/
 	
 	=============================================================================
 	
+
+{% endraw %}

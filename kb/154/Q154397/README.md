@@ -6,6 +6,8 @@ permalink: /kb/154/Q154397/
 
 ## Q154397: ADT/ODE: How to Modify RefreshTableLinks Module in Solutions.mdb
 
+{% raw %}
+
 	Article: Q154397
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0; :97
@@ -164,3 +166,5 @@ permalink: /kb/154/Q154397/
 	
 	=============================================================================
 	
+
+{% endraw %}

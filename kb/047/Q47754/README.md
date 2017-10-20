@@ -6,6 +6,8 @@ permalink: /kb/047/Q47754/
 
 ## Q47754: Can't Trap &quot;String Input When a Numeric Value Is Expected&quot;
 
+{% raw %}
+
 	Article: Q47754
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -44,3 +46,5 @@ permalink: /kb/047/Q47754/
 	query on the following words:
 	
 	   INKEY$ and CTRL+BREAK and DEBUG and GOSUB
+
+{% endraw %}

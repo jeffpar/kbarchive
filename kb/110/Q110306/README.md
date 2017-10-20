@@ -6,6 +6,8 @@ permalink: /kb/110/Q110306/
 
 ## Q110306: CD Sampler: Setup Creates Multiple Icons
 
+{% raw %}
+
 	Article: Q110306
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): Fall 1993 edition
@@ -41,3 +43,5 @@ permalink: /kb/110/Q110306/
 	
 	=============================================================================
 	
+
+{% endraw %}

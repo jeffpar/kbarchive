@@ -6,6 +6,8 @@ permalink: /kb/231/Q231857/
 
 ## Q231857: Midtown Madness: Game Is Not Displayed on the Correct Monitor
 
+{% raw %}
+
 	Article: Q231857
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -63,3 +65,5 @@ permalink: /kb/231/Q231857/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153708/
 
 ## Q153708: Cinemania 1996: Button Images in Find Menu Misplaced
 
+{% raw %}
+
 	Article: Q153708
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition; WINDOWS:95
@@ -68,3 +70,5 @@ permalink: /kb/153/Q153708/
 	
 	=============================================================================
 	
+
+{% endraw %}

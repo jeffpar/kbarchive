@@ -6,6 +6,8 @@ permalink: /kb/103/Q103953/
 
 ## Q103953: Basic Protocol Requirements in Microsoft Network Architecture
 
+{% raw %}
+
 	Article: Q103953
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/103/Q103953/
 	
 	=============================================================================
 	
+
+{% endraw %}

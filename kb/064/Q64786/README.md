@@ -6,6 +6,8 @@ permalink: /kb/064/Q64786/
 
 ## Q64786: _pg_chartpie() Fails to Free Memory in QC 2.00 and QC 2.50
 
+{% raw %}
+
 	Article: Q64786
 	Product(s): See article
 	Version(s): 2.00 2.50
@@ -81,3 +83,5 @@ permalink: /kb/064/Q64786/
 	Microsoft has confirmed this to be a problem in QuickC version 2.50.
 	We are researching this problem and will post new information here as
 	it becomes available.
+
+{% endraw %}

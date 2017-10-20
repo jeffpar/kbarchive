@@ -6,6 +6,8 @@ permalink: /kb/165/Q165851/
 
 ## Q165851: Support SNA Server 3270 Applet Keyboard Type-Ahead
 
+{% raw %}
+
 	Article: Q165851
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -75,3 +77,5 @@ permalink: /kb/165/Q165851/
 	
 	=============================================================================
 	
+
+{% endraw %}

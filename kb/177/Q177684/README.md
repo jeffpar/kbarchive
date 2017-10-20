@@ -6,6 +6,8 @@ permalink: /kb/177/Q177684/
 
 ## Q177684: Application Using SetOwner May Hang Windows NT User Interface
 
+{% raw %}
+
 	Article: Q177684
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/177/Q177684/
 	
 	=============================================================================
 	
+
+{% endraw %}

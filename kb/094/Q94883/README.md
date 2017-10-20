@@ -6,6 +6,8 @@ permalink: /kb/094/Q94883/
 
 ## Q94883: PC WSPlus: Importing/Exporting Information to the Sharp Wizard
 
+{% raw %}
+
 	Article: Q94883
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0a
@@ -98,3 +100,5 @@ permalink: /kb/094/Q94883/
 	
 	=============================================================================
 	
+
+{% endraw %}

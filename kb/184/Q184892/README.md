@@ -6,6 +6,8 @@ permalink: /kb/184/Q184892/
 
 ## Q184892: Unexpected Behavior After Changing Settings in the DirectX Tool
 
+{% raw %}
+
 	Article: Q184892
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/184/Q184892/
 	
 	=============================================================================
 	
+
+{% endraw %}

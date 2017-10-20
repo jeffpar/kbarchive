@@ -6,6 +6,8 @@ permalink: /kb/166/Q166546/
 
 ## Q166546: XCLN: POP3 Attachments Do Not Decode
 
+{% raw %}
+
 	Article: Q166546
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -46,3 +48,5 @@ permalink: /kb/166/Q166546/
 	
 	=============================================================================
 	
+
+{% endraw %}

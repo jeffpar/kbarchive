@@ -6,6 +6,8 @@ permalink: /kb/141/Q141447/
 
 ## Q141447: FIX: dbDao's CdbException Uses Private Constructor
 
+{% raw %}
+
 	Article: Q141447
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,3.5,3.51,3.6
@@ -76,3 +78,5 @@ permalink: /kb/141/Q141447/
 	
 	=============================================================================
 	
+
+{% endraw %}

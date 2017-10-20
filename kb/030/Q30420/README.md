@@ -6,6 +6,8 @@ permalink: /kb/030/Q30420/
 
 ## Q30420: LOCAL Directive Gives Misleading Error without .MODEL Language
 
+{% raw %}
+
 	Article: Q30420
 	Product(s): See article
 	Version(s): 5.10
@@ -32,3 +34,5 @@ permalink: /kb/030/Q30420/
 	
 	   Microsoft is researching this problem and will post new information
 	as it becomes available.
+
+{% endraw %}

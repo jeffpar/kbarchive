@@ -6,6 +6,8 @@ permalink: /kb/079/Q79254/
 
 ## Q79254: Creating a Bootable LM 2.1 Enhanced RAS Workstation Disk
 
+{% raw %}
+
 	Article: Q79254
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -208,3 +210,5 @@ permalink: /kb/079/Q79254/
 	
 	=============================================================================
 	
+
+{% endraw %}

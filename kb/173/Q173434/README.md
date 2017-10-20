@@ -6,6 +6,8 @@ permalink: /kb/173/Q173434/
 
 ## Q173434: FP: Indent Formatting in Word HTML File Converted to Bullets
 
+{% raw %}
+
 	Article: Q173434
 	Product(s): Word Front Page
 	Version(s): MACINTOSH:1.0; WINDOWS:97
@@ -87,3 +89,5 @@ permalink: /kb/173/Q173434/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/230/Q230381/
 
 ## Q230381: TCP/IP Dead Gateway Detection May Not Work if ARP Cache Empty
 
+{% raw %}
+
 	Article: Q230381
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -94,3 +96,5 @@ permalink: /kb/230/Q230381/
 	
 	=============================================================================
 	
+
+{% endraw %}

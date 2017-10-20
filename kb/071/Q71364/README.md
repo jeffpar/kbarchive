@@ -6,6 +6,8 @@ permalink: /kb/071/Q71364/
 
 ## Q71364: Program Manager Command Line Limited to 80 Characters
 
+{% raw %}
+
 	Article: Q71364
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -41,3 +43,5 @@ permalink: /kb/071/Q71364/
 	
 	=============================================================================
 	
+
+{% endraw %}

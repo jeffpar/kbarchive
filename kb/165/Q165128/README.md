@@ -6,6 +6,8 @@ permalink: /kb/165/Q165128/
 
 ## Q165128: Range Of LUs Wizard Should Use 2 Digits if Base is Hexadecimal
 
+{% raw %}
+
 	Article: Q165128
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/165/Q165128/
 	
 	=============================================================================
 	
+
+{% endraw %}

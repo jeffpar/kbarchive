@@ -6,6 +6,8 @@ permalink: /kb/180/Q180170/
 
 ## Q180170: DOC: TopIndex Property Incorrectly Documented
 
+{% raw %}
+
 	Article: Q180170
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a
@@ -63,3 +65,5 @@ permalink: /kb/180/Q180170/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107445/
 
 ## Q107445: X400: X400GATE.EXE Version 3.2.17 Update
 
+{% raw %}
+
 	Article: Q107445
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -161,3 +163,5 @@ permalink: /kb/107/Q107445/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/078/Q78448/
 
 ## Q78448: MS-DOS 5, 6, and 6.2 Upgrades Provide DMDRVR.BIN &amp; SSTOR.SYS
 
+{% raw %}
+
 	Article: Q78448
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -93,3 +95,5 @@ permalink: /kb/078/Q78448/
 	
 	=============================================================================
 	
+
+{% endraw %}

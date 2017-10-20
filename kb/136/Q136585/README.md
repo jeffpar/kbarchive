@@ -6,6 +6,8 @@ permalink: /kb/136/Q136585/
 
 ## Q136585: PRB: Import Wizard Doesn't Automatically Browse Imported Table
 
+{% raw %}
+
 	Article: Q136585
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -44,3 +46,5 @@ permalink: /kb/136/Q136585/
 	
 	=============================================================================
 	
+
+{% endraw %}

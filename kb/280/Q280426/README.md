@@ -6,6 +6,8 @@ permalink: /kb/280/Q280426/
 
 ## Q280426: Cannot Put a File with a Name That Ends with &quot;ABOR&quot;
 
+{% raw %}
+
 	Article: Q280426
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/280/Q280426/
 	
 	=============================================================================
 	
+
+{% endraw %}

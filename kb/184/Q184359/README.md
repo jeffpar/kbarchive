@@ -6,6 +6,8 @@ permalink: /kb/184/Q184359/
 
 ## Q184359: Outwars: Multiplayer Game Requires DirectPlay 5.0a or Later
 
+{% raw %}
+
 	Article: Q184359
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/184/Q184359/
 	
 	=============================================================================
 	
+
+{% endraw %}

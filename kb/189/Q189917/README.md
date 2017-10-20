@@ -6,6 +6,8 @@ permalink: /kb/189/Q189917/
 
 ## Q189917: PRB: VisualFoxPro.Application Object Does Not Release
 
+{% raw %}
+
 	Article: Q189917
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -70,3 +72,5 @@ permalink: /kb/189/Q189917/
 	
 	=============================================================================
 	
+
+{% endraw %}

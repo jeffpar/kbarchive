@@ -6,6 +6,8 @@ permalink: /kb/229/Q229973/
 
 ## Q229973: SMS: SINV Does Not Report Last Accessed Date or Modified Date
 
+{% raw %}
+
 	Article: Q229973
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -192,3 +194,5 @@ permalink: /kb/229/Q229973/
 	
 	=============================================================================
 	
+
+{% endraw %}

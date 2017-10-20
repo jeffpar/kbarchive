@@ -6,6 +6,8 @@ permalink: /kb/106/Q106023/
 
 ## Q106023: WFWG Setup Leaves Two Sets of Mail and Schedule+ Icons
 
+{% raw %}
+
 	Article: Q106023
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -44,3 +46,5 @@ permalink: /kb/106/Q106023/
 	
 	=============================================================================
 	
+
+{% endraw %}

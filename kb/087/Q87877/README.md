@@ -6,6 +6,8 @@ permalink: /kb/087/Q87877/
 
 ## Q87877: Err Msg: System Error: Write Protected Disk in Drive x:
 
+{% raw %}
+
 	Article: Q87877
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/087/Q87877/
 	
 	=============================================================================
 	
+
+{% endraw %}

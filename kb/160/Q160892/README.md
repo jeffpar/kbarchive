@@ -6,6 +6,8 @@ permalink: /kb/160/Q160892/
 
 ## Q160892: ADT95: Including Briefcase Replication in a Custom Application
 
+{% raw %}
+
 	Article: Q160892
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0
@@ -149,3 +151,5 @@ permalink: /kb/160/Q160892/
 	
 	=============================================================================
 	
+
+{% endraw %}

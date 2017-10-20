@@ -6,6 +6,8 @@ permalink: /kb/185/Q185562/
 
 ## Q185562: Golf 98/99 Err Msg: Requires Windows 95 with DirectX...
 
+{% raw %}
+
 	Article: Q185562
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -86,3 +88,5 @@ permalink: /kb/185/Q185562/
 	
 	=============================================================================
 	
+
+{% endraw %}

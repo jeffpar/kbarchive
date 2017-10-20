@@ -1,10 +1,12 @@
 ---
 layout: page
-title: "Q163522: SNA Server Doesn't Support Digi Cards w/ SDLC and X.25 Driver"
+title: "Q163522: SNA Server Doesnt Support Digi Cards w/ SDLC and X.25 Driver"
 permalink: /kb/163/Q163522/
 ---
 
-## Q163522: SNA Server Doesn't Support Digi Cards w/ SDLC and X.25 Driver
+## Q163522: SNA Server Doesnt Support Digi Cards w/ SDLC and X.25 Driver
+
+{% raw %}
 
 	Article: Q163522
 	Product(s): Microsoft SNA Server
@@ -64,3 +66,5 @@ permalink: /kb/163/Q163522/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140321/
 
 ## Q140321: HOWTO: Set the Default Choice in a List Box or Combo Box
 
+{% raw %}
+
 	Article: Q140321
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/140/Q140321/
 	
 	=============================================================================
 	
+
+{% endraw %}

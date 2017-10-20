@@ -6,6 +6,8 @@ permalink: /kb/133/Q133251/
 
 ## Q133251: Err Msg: Sub or Function Not Defined in Visual Basic
 
+{% raw %}
+
 	Article: Q133251
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/133/Q133251/
 	
 	=============================================================================
 	
+
+{% endraw %}

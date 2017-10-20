@@ -6,6 +6,8 @@ permalink: /kb/194/Q194949/
 
 ## Q194949: XADM: The Default Setting for Canceling Schema is Wrong
 
+{% raw %}
+
 	Article: Q194949
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -46,3 +48,5 @@ permalink: /kb/194/Q194949/
 	
 	=============================================================================
 	
+
+{% endraw %}

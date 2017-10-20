@@ -6,6 +6,8 @@ permalink: /kb/234/Q234840/
 
 ## Q234840: MOD2000: &quot;Get Object from SourceSafe&quot; Command Gets New Object
 
+{% raw %}
+
 	Article: Q234840
 	Product(s): Microsoft SourceSafe
 	Version(s): ; WINDOWS:6.0
@@ -100,3 +102,5 @@ permalink: /kb/234/Q234840/
 	
 	=============================================================================
 	
+
+{% endraw %}

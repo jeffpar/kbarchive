@@ -6,6 +6,8 @@ permalink: /kb/244/Q244450/
 
 ## Q244450: XCLN: Outlook 97, 98, and 2000 Issues w. Remote Mail Filter
 
+{% raw %}
+
 	Article: Q244450
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; :
@@ -68,3 +70,5 @@ permalink: /kb/244/Q244450/
 	
 	=============================================================================
 	
+
+{% endraw %}

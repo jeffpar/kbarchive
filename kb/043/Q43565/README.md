@@ -6,6 +6,8 @@ permalink: /kb/043/Q43565/
 
 ## Q43565: QuickBASIC Program to Detect if a Math Coprocessor Is Present
 
+{% raw %}
+
 	Article: Q43565
 	Product(s): See article
 	Version(s): 4.50
@@ -63,3 +65,5 @@ permalink: /kb/043/Q43565/
 	COLOR 0, 0
 	PRINT
 	END SUB
+
+{% endraw %}

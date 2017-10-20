@@ -6,6 +6,8 @@ permalink: /kb/214/Q214911/
 
 ## Q214911: SMSINST: Change Window Hides Buttons When Using Repackage
 
+{% raw %}
+
 	Article: Q214911
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0,2.0; winnt:2.0
@@ -65,3 +67,5 @@ permalink: /kb/214/Q214911/
 	
 	=============================================================================
 	
+
+{% endraw %}

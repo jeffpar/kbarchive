@@ -6,6 +6,8 @@ permalink: /kb/311/Q311786/
 
 ## Q311786: XML And SOAP Programming For BizTalk Servers Comments And Correc
 
+{% raw %}
+
 	Article: Q311786
 	Product(s): Microsoft Press
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/311/Q311786/
 	
 	=============================================================================
 	
+
+{% endraw %}

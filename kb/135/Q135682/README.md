@@ -6,6 +6,8 @@ permalink: /kb/135/Q135682/
 
 ## Q135682: PRB: Drag and Drop with TYMED_FILE Runs Out of File Handles
 
+{% raw %}
+
 	Article: Q135682
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5,1.51,1.52,1.52b; winnt:2.0,2.1,2.2,4.0
@@ -82,3 +84,5 @@ permalink: /kb/135/Q135682/
 	
 	=============================================================================
 	
+
+{% endraw %}

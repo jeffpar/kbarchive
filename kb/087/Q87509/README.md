@@ -6,6 +6,8 @@ permalink: /kb/087/Q87509/
 
 ## Q87509: No Text When Using Stealth and Running MS-DOS in a Window
 
+{% raw %}
+
 	Article: Q87509
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/087/Q87509/
 	
 	=============================================================================
 	
+
+{% endraw %}

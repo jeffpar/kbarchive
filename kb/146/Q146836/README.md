@@ -6,6 +6,8 @@ permalink: /kb/146/Q146836/
 
 ## Q146836: XCLN: Unread Message Count Not Updated Correctly
 
+{% raw %}
+
 	Article: Q146836
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -52,3 +54,5 @@ permalink: /kb/146/Q146836/
 	
 	=============================================================================
 	
+
+{% endraw %}

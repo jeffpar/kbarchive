@@ -6,6 +6,8 @@ permalink: /kb/085/Q85960/
 
 ## Q85960: Group Icons Missing After Windows 3.1 Installation
 
+{% raw %}
+
 	Article: Q85960
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -85,3 +87,5 @@ permalink: /kb/085/Q85960/
 	
 	=============================================================================
 	
+
+{% endraw %}

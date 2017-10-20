@@ -6,6 +6,8 @@ permalink: /kb/140/Q140096/
 
 ## Q140096: PRB: &quot;Unable to start DDE communication with Program Manager&quot;
 
+{% raw %}
+
 	Article: Q140096
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -87,3 +89,5 @@ permalink: /kb/140/Q140096/
 	
 	=============================================================================
 	
+
+{% endraw %}

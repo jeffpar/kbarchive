@@ -6,6 +6,8 @@ permalink: /kb/163/Q163458/
 
 ## Q163458: WD97: Err Msg: &quot;Unable to Open Selected TWAIN Source&quot; in Word 97
 
+{% raw %}
+
 	Article: Q163458
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/163/Q163458/
 	
 	=============================================================================
 	
+
+{% endraw %}

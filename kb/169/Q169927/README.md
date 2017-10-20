@@ -6,6 +6,8 @@ permalink: /kb/169/Q169927/
 
 ## Q169927: HOWTO: Get History Using SourceSafe OLE Automation in C++
 
+{% raw %}
+
 	Article: Q169927
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -165,3 +167,5 @@ permalink: /kb/169/Q169927/
 	
 	=============================================================================
 	
+
+{% endraw %}

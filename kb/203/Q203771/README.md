@@ -6,6 +6,8 @@ permalink: /kb/203/Q203771/
 
 ## Q203771: Encarta Encyclopedia: Error Message When Starting Virtual Tour
 
+{% raw %}
+
 	Article: Q203771
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -94,3 +96,5 @@ permalink: /kb/203/Q203771/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117202/
 
 ## Q117202: FIX: &quot;Set Bookmarks on All&quot; May Cause Application Error
 
+{% raw %}
+
 	Article: Q117202
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0
@@ -82,3 +84,5 @@ permalink: /kb/117/Q117202/
 	
 	=============================================================================
 	
+
+{% endraw %}

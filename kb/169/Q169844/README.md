@@ -6,6 +6,8 @@ permalink: /kb/169/Q169844/
 
 ## Q169844: Removing an IP Routing Protocol from Routing and Remote Access
 
+{% raw %}
+
 	Article: Q169844
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -70,3 +72,5 @@ permalink: /kb/169/Q169844/
 	
 	=============================================================================
 	
+
+{% endraw %}

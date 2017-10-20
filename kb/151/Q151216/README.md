@@ -6,6 +6,8 @@ permalink: /kb/151/Q151216/
 
 ## Q151216: NTVDM May Leak Memory When Opening/Closing COMM Ports
 
+{% raw %}
+
 	Article: Q151216
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -61,3 +63,5 @@ permalink: /kb/151/Q151216/
 	
 	=============================================================================
 	
+
+{% endraw %}

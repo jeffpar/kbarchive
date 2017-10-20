@@ -6,6 +6,8 @@ permalink: /kb/190/Q190928/
 
 ## Q190928: Poledit Spin Boxes Limit Max Value to 9999
 
+{% raw %}
+
 	Article: Q190928
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -54,3 +56,5 @@ permalink: /kb/190/Q190928/
 	
 	=============================================================================
 	
+
+{% endraw %}

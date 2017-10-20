@@ -6,6 +6,8 @@ permalink: /kb/177/Q177235/
 
 ## Q177235: WD97: Undoing Grouped Linked Text Boxes Causes IPF and Crash
 
+{% raw %}
+
 	Article: Q177235
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -94,3 +96,5 @@ permalink: /kb/177/Q177235/
 	
 	=============================================================================
 	
+
+{% endraw %}

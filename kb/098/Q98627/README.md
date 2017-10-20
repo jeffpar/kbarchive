@@ -6,6 +6,8 @@ permalink: /kb/098/Q98627/
 
 ## Q98627: SAMPLE: Advanced ALC_ Sample and ShowKeyboard() Sample
 
+{% raw %}
+
 	Article: Q98627
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -71,3 +73,5 @@ permalink: /kb/098/Q98627/
 	
 	=============================================================================
 	
+
+{% endraw %}

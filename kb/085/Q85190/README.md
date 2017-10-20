@@ -6,6 +6,8 @@ permalink: /kb/085/Q85190/
 
 ## Q85190: WINMATIC.SHH File Is Created by SETUP /H
 
+{% raw %}
+
 	Article: Q85190
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/085/Q85190/
 	
 	=============================================================================
 	
+
+{% endraw %}

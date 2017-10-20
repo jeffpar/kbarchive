@@ -6,6 +6,8 @@ permalink: /kb/156/Q156710/
 
 ## Q156710: XFOR: Incoming SMTP Messages NDR with Invalid Argument
 
+{% raw %}
+
 	Article: Q156710
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:; winnt:4.0
@@ -171,3 +173,5 @@ permalink: /kb/156/Q156710/
 	
 	=============================================================================
 	
+
+{% endraw %}

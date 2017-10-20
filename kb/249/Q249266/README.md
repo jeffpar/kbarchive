@@ -6,6 +6,8 @@ permalink: /kb/249/Q249266/
 
 ## Q249266: XFOR: Online Resources for Spam Mail Testing and Information
 
+{% raw %}
+
 	Article: Q249266
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -82,3 +84,5 @@ permalink: /kb/249/Q249266/
 	
 	=============================================================================
 	
+
+{% endraw %}

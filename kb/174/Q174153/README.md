@@ -6,6 +6,8 @@ permalink: /kb/174/Q174153/
 
 ## Q174153: XFOR: Incorrect Character Mappings when MSFS32.DLL Doesn't Match
 
+{% raw %}
+
 	Article: Q174153
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -93,3 +95,5 @@ permalink: /kb/174/Q174153/
 	
 	=============================================================================
 	
+
+{% endraw %}

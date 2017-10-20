@@ -6,6 +6,8 @@ permalink: /kb/196/Q196102/
 
 ## Q196102: PRB: User Defined Page Size May Causes Report Distortion
 
+{% raw %}
+
 	Article: Q196102
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a,6.0
@@ -89,3 +91,5 @@ permalink: /kb/196/Q196102/
 	
 	=============================================================================
 	
+
+{% endraw %}

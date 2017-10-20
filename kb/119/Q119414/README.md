@@ -6,6 +6,8 @@ permalink: /kb/119/Q119414/
 
 ## Q119414: PC WRmt: Mail Remote for Windows Address List Creation
 
+{% raw %}
+
 	Article: Q119414
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -54,3 +56,5 @@ permalink: /kb/119/Q119414/
 	
 	=============================================================================
 	
+
+{% endraw %}

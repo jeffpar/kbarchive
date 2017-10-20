@@ -6,6 +6,8 @@ permalink: /kb/271/Q271617/
 
 ## Q271617: Golf 2001: How to Improve Game Performance
 
+{% raw %}
+
 	Article: Q271617
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -118,3 +120,5 @@ permalink: /kb/271/Q271617/
 	
 	=============================================================================
 	
+
+{% endraw %}

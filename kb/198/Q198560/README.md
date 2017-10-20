@@ -6,6 +6,8 @@ permalink: /kb/198/Q198560/
 
 ## Q198560: XFOR: Update Meeting Requests from Schedule+ to Profs
 
+{% raw %}
+
 	Article: Q198560
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2,5.5 SP3
@@ -46,3 +48,5 @@ permalink: /kb/198/Q198560/
 	
 	=============================================================================
 	
+
+{% endraw %}

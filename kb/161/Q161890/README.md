@@ -6,6 +6,8 @@ permalink: /kb/161/Q161890/
 
 ## Q161890: RCMD Strips Quotes from the Command Line
 
+{% raw %}
+
 	Article: Q161890
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -64,3 +66,5 @@ permalink: /kb/161/Q161890/
 	
 	=============================================================================
 	
+
+{% endraw %}

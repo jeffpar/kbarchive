@@ -6,6 +6,8 @@ permalink: /kb/115/Q115927/
 
 ## Q115927: MS-DOS 6.22 Upgrade Directory Listing 5.25-Inch 1.2 MB Set
 
+{% raw %}
+
 	Article: Q115927
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -222,3 +224,5 @@ permalink: /kb/115/Q115927/
 	
 	=============================================================================
 	
+
+{% endraw %}

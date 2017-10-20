@@ -6,6 +6,8 @@ permalink: /kb/195/Q195991/
 
 ## Q195991: WD97: Text Box Resizes When Clipboard Contents Paste
 
+{% raw %}
+
 	Article: Q195991
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -54,3 +56,5 @@ permalink: /kb/195/Q195991/
 	
 	=============================================================================
 	
+
+{% endraw %}

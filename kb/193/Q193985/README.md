@@ -6,6 +6,8 @@ permalink: /kb/193/Q193985/
 
 ## Q193985: Encarta: Computer Hangs at 21 Percent When Installing Program
 
+{% raw %}
+
 	Article: Q193985
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): ; WINDOWS:
@@ -176,3 +178,5 @@ permalink: /kb/193/Q193985/
 	
 	=============================================================================
 	
+
+{% endraw %}

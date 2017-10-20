@@ -6,6 +6,8 @@ permalink: /kb/269/Q269139/
 
 ## Q269139: Windows 2000 TCP/IP Protocols and Services Technical Reference C
 
+{% raw %}
+
 	Article: Q269139
 	Product(s): Microsoft Press
 	Version(s): 
@@ -110,3 +112,5 @@ permalink: /kb/269/Q269139/
 	
 	=============================================================================
 	
+
+{% endraw %}

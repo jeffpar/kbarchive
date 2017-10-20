@@ -6,6 +6,8 @@ permalink: /kb/173/Q173200/
 
 ## Q173200: MTG: Novell Discontinues Support for All MHS Products
 
+{% raw %}
+
 	Article: Q173200
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -53,3 +55,5 @@ permalink: /kb/173/Q173200/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/278/Q278481/
 
 ## Q278481: MSN Companion Troubleshooting Tool FIXIT
 
+{% raw %}
+
 	Article: Q278481
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -117,3 +119,5 @@ permalink: /kb/278/Q278481/
 	
 	=============================================================================
 	
+
+{% endraw %}

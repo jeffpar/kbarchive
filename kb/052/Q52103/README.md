@@ -6,6 +6,8 @@ permalink: /kb/052/Q52103/
 
 ## Q52103: Casting Large Double to Float Gives Compile or Run-Time Error
 
+{% raw %}
+
 	Article: Q52103
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -90,3 +92,5 @@ permalink: /kb/052/Q52103/
 	be avoided if you ensure that a value greater than 3.4E+38 (maximum
 	float value as determined by the IEEE standard for 4 byte floating
 	point numbers) is never assigned to a float.
+
+{% endraw %}

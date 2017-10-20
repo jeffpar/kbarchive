@@ -6,6 +6,8 @@ permalink: /kb/136/Q136255/
 
 ## Q136255: Error Message: A Fatal Error Has Occurred in VxD VMCPD
 
+{% raw %}
+
 	Article: Q136255
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -77,3 +79,5 @@ permalink: /kb/136/Q136255/
 	
 	=============================================================================
 	
+
+{% endraw %}

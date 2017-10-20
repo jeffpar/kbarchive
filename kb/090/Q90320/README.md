@@ -6,6 +6,8 @@ permalink: /kb/090/Q90320/
 
 ## Q90320: How To: File Handles Open When WFWG Server Is Down
 
+{% raw %}
+
 	Article: Q90320
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/090/Q90320/
 	
 	=============================================================================
 	
+
+{% endraw %}

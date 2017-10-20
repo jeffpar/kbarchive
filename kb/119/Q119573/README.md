@@ -6,6 +6,8 @@ permalink: /kb/119/Q119573/
 
 ## Q119573: Configuring Windows NT to Print to a Workgroup Add-On Machine
 
+{% raw %}
+
 	Article: Q119573
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): MS-DOS:3.11
@@ -73,3 +75,5 @@ permalink: /kb/119/Q119573/
 	
 	=============================================================================
 	
+
+{% endraw %}

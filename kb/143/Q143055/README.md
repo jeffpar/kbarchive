@@ -6,6 +6,8 @@ permalink: /kb/143/Q143055/
 
 ## Q143055: Voice Command Does Not Deactivate Screen Saver
 
+{% raw %}
+
 	Article: Q143055
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -48,3 +50,5 @@ permalink: /kb/143/Q143055/
 	
 	=============================================================================
 	
+
+{% endraw %}

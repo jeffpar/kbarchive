@@ -6,6 +6,8 @@ permalink: /kb/029/Q29730/
 
 ## Q29730: Editor &quot;User's Guide&quot; C-Extension Sample Generates Warnings
 
+{% raw %}
+
 	Article: Q29730
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -41,3 +43,5 @@ permalink: /kb/029/Q29730/
 	            { "Upper", Upper, 0, BOXSTR | TEXTARG },
 	            { NULL, NULL, 0, 0 }
 	       };
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186945/
 
 ## Q186945: XCLN: How To Calculate a Future Date Using Outlook
 
+{% raw %}
+
 	Article: Q186945
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03; WINDOWS:
@@ -60,3 +62,5 @@ permalink: /kb/186/Q186945/
 	
 	=============================================================================
 	
+
+{% endraw %}

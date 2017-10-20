@@ -6,6 +6,8 @@ permalink: /kb/107/Q107168/
 
 ## Q107168: Limits on Number of Groups and Word Wheels
 
+{% raw %}
+
 	Article: Q107168
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -42,3 +44,5 @@ permalink: /kb/107/Q107168/
 	
 	=============================================================================
 	
+
+{% endraw %}

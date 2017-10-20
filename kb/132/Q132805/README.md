@@ -6,6 +6,8 @@ permalink: /kb/132/Q132805/
 
 ## Q132805: Tabworks Replaces Windows 95 Shell with Program Manager
 
+{% raw %}
+
 	Article: Q132805
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -57,3 +59,5 @@ permalink: /kb/132/Q132805/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173387/
 
 ## Q173387: PRB: Restoring an Archive of an Entire Database
 
+{% raw %}
+
 	Article: Q173387
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -122,3 +124,5 @@ permalink: /kb/173/Q173387/
 	
 	=============================================================================
 	
+
+{% endraw %}

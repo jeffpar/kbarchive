@@ -6,6 +6,8 @@ permalink: /kb/108/Q108367/
 
 ## Q108367: FIX: Columns 72 to 80 Not Displayed in Source Listing File
 
+{% raw %}
+
 	Article: Q108367
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -62,3 +64,5 @@ permalink: /kb/108/Q108367/
 	
 	=============================================================================
 	
+
+{% endraw %}

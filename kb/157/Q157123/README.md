@@ -6,6 +6,8 @@ permalink: /kb/157/Q157123/
 
 ## Q157123: Communicating with SNA Hosts May Cause STOP 0x0A in DLC.SYS
 
+{% raw %}
+
 	Article: Q157123
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -68,3 +70,5 @@ permalink: /kb/157/Q157123/
 	
 	=============================================================================
 	
+
+{% endraw %}

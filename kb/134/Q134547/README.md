@@ -6,6 +6,8 @@ permalink: /kb/134/Q134547/
 
 ## Q134547: Arcada Backup Exec Error Message: Drive Not Responding
 
+{% raw %}
+
 	Article: Q134547
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -74,3 +76,5 @@ permalink: /kb/134/Q134547/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/101/Q101403/
 
 ## Q101403: PC WSPlus: Running SCHDIST.EXE as Idle Process in Dispatch
 
+{% raw %}
+
 	Article: Q101403
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -123,3 +125,5 @@ permalink: /kb/101/Q101403/
 	
 	=============================================================================
 	
+
+{% endraw %}

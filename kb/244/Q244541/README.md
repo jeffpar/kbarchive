@@ -6,6 +6,8 @@ permalink: /kb/244/Q244541/
 
 ## Q244541: SMS: &quot;NO PERMISSIONS&quot; Security Entries Appear in Admin Console
 
+{% raw %}
+
 	Article: Q244541
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -73,3 +75,5 @@ permalink: /kb/244/Q244541/
 	
 	=============================================================================
 	
+
+{% endraw %}

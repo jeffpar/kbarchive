@@ -6,6 +6,8 @@ permalink: /kb/160/Q160336/
 
 ## Q160336: Shortcut to Frame in a Show May Not Work Correctly
 
+{% raw %}
+
 	Article: Q160336
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5,95
@@ -47,3 +49,5 @@ permalink: /kb/160/Q160336/
 	
 	=============================================================================
 	
+
+{% endraw %}

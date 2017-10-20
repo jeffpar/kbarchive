@@ -6,6 +6,8 @@ permalink: /kb/127/Q127922/
 
 ## Q127922: Setting BDC to be WINS Proxy Agent May Cause Broadcast Storms
 
+{% raw %}
+
 	Article: Q127922
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -74,3 +76,5 @@ permalink: /kb/127/Q127922/
 	
 	=============================================================================
 	
+
+{% endraw %}

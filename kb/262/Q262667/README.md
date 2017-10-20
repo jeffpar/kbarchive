@@ -6,6 +6,8 @@ permalink: /kb/262/Q262667/
 
 ## Q262667: FIX: Wrong Result Using RtlMoveMemory to Copy Nested UDT
 
+{% raw %}
+
 	Article: Q262667
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -239,3 +241,5 @@ permalink: /kb/262/Q262667/
 	
 	=============================================================================
 	
+
+{% endraw %}

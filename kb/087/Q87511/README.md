@@ -6,6 +6,8 @@ permalink: /kb/087/Q87511/
 
 ## Q87511: FaceLift Err Msg: Data in Section of WIN.INI...
 
+{% raw %}
+
 	Article: Q87511
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a,3.1,3.11
@@ -112,3 +114,5 @@ permalink: /kb/087/Q87511/
 	
 	=============================================================================
 	
+
+{% endraw %}

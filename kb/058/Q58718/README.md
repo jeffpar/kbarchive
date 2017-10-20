@@ -6,6 +6,8 @@ permalink: /kb/058/Q58718/
 
 ## Q58718: CVPACK May Lose Type Information in Large Files
 
+{% raw %}
+
 	Article: Q58718
 	Product(s): See article
 	Version(s): 2.01 3.01 | 2.01 3.01
@@ -32,3 +34,5 @@ permalink: /kb/058/Q58718/
 	the offset address remains the same. Therefore, the correct
 	information cannot be displayed, and CodeView emits a warning beep
 	instead of showing the expanded structure elements.
+
+{% endraw %}

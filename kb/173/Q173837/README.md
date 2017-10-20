@@ -6,6 +6,8 @@ permalink: /kb/173/Q173837/
 
 ## Q173837: Building Applications With Outlook 97 Comments and Corrections
 
+{% raw %}
+
 	Article: Q173837
 	Product(s): Microsoft Press
 	Version(s): 
@@ -279,3 +281,5 @@ permalink: /kb/173/Q173837/
 	
 	=============================================================================
 	
+
+{% endraw %}

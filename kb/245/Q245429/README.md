@@ -6,6 +6,8 @@ permalink: /kb/245/Q245429/
 
 ## Q245429: Win5250 Problem Exiting AS/400 Screen With Function Key
 
+{% raw %}
+
 	Article: Q245429
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -76,3 +78,5 @@ permalink: /kb/245/Q245429/
 	
 	=============================================================================
 	
+
+{% endraw %}

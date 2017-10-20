@@ -6,6 +6,8 @@ permalink: /kb/221/Q221734/
 
 ## Q221734: FIX: C0000005 Fatal Error With Invalid Property Name
 
+{% raw %}
+
 	Article: Q221734
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -128,3 +130,5 @@ permalink: /kb/221/Q221734/
 	
 	=============================================================================
 	
+
+{% endraw %}

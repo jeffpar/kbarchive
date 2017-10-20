@@ -6,6 +6,8 @@ permalink: /kb/090/Q90820/
 
 ## Q90820: Permanently Converting Text Files to Write Format
 
+{% raw %}
+
 	Article: Q90820
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,95
@@ -64,3 +66,5 @@ permalink: /kb/090/Q90820/
 	
 	=============================================================================
 	
+
+{% endraw %}

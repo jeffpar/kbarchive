@@ -6,6 +6,8 @@ permalink: /kb/315/Q315647/
 
 ## Q315647: FIX: Dockable Windows May Cause VFP to Crash
 
+{% raw %}
+
 	Article: Q315647
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -85,3 +87,5 @@ permalink: /kb/315/Q315647/
 	
 	=============================================================================
 	
+
+{% endraw %}

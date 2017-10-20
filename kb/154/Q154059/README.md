@@ -6,6 +6,8 @@ permalink: /kb/154/Q154059/
 
 ## Q154059: PRB: Commands Fail in Makefile if Directory Over 66 Characters
 
+{% raw %}
+
 	Article: Q154059
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5 1.51 1.52 2.0 4.0 4.1 5.0 6.0
@@ -79,3 +81,5 @@ permalink: /kb/154/Q154059/
 	
 	=============================================================================
 	
+
+{% endraw %}

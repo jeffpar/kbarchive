@@ -6,6 +6,8 @@ permalink: /kb/140/Q140337/
 
 ## Q140337: PC MAPI: Sample C++ Code to Read Mail Messages
 
+{% raw %}
+
 	Article: Q140337
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.5
@@ -151,3 +153,5 @@ permalink: /kb/140/Q140337/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156448/
 
 ## Q156448: INFO: Some Files and Projects are Upper Case after Upgrade
 
+{% raw %}
+
 	Article: Q156448
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a
@@ -60,3 +62,5 @@ permalink: /kb/156/Q156448/
 	
 	=============================================================================
 	
+
+{% endraw %}

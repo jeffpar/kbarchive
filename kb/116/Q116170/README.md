@@ -6,6 +6,8 @@ permalink: /kb/116/Q116170/
 
 ## Q116170: FIX: C2099 Generated Initializing Struct with Macro
 
+{% raw %}
+
 	Article: Q116170
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,4.1,4.2,5.0,7.0
@@ -93,3 +95,5 @@ permalink: /kb/116/Q116170/
 	
 	=============================================================================
 	
+
+{% endraw %}

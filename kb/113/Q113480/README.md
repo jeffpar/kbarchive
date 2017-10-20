@@ -6,6 +6,8 @@ permalink: /kb/113/Q113480/
 
 ## Q113480: WFWG AWFAX Err Msg: General Failure in EFAXPUMP
 
+{% raw %}
+
 	Article: Q113480
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -87,3 +89,5 @@ permalink: /kb/113/Q113480/
 	
 	=============================================================================
 	
+
+{% endraw %}

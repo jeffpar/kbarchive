@@ -6,6 +6,8 @@ permalink: /kb/062/Q62276/
 
 ## Q62276: Nonexpanded Windows Mouse Driver Freezes Machine
 
+{% raw %}
+
 	Article: Q62276
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -81,3 +83,5 @@ permalink: /kb/062/Q62276/
 	
 	=============================================================================
 	
+
+{% endraw %}

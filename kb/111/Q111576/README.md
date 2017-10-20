@@ -6,6 +6,8 @@ permalink: /kb/111/Q111576/
 
 ## Q111576: BUG: LineTo() Endcaps Misaligned with Large Pen Width
 
+{% raw %}
+
 	Article: Q111576
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -61,3 +63,5 @@ permalink: /kb/111/Q111576/
 	
 	=============================================================================
 	
+
+{% endraw %}

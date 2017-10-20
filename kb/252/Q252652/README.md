@@ -6,6 +6,8 @@ permalink: /kb/252/Q252652/
 
 ## Q252652: HOWTO: Use the SHGetFolderPath Function from Visual Basic
 
+{% raw %}
+
 	Article: Q252652
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2000,4.0,5.0,6.0
@@ -157,3 +159,5 @@ permalink: /kb/252/Q252652/
 	
 	=============================================================================
 	
+
+{% endraw %}

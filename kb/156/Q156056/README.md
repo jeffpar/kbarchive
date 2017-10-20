@@ -6,6 +6,8 @@ permalink: /kb/156/Q156056/
 
 ## Q156056: Unable to Start the Monitor Service - Error 2002
 
+{% raw %}
+
 	Article: Q156056
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -68,3 +70,5 @@ permalink: /kb/156/Q156056/
 	
 	=============================================================================
 	
+
+{% endraw %}

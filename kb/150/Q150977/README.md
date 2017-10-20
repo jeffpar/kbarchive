@@ -6,6 +6,8 @@ permalink: /kb/150/Q150977/
 
 ## Q150977: XADM: Supporting Localized Exchange Clients
 
+{% raw %}
+
 	Article: Q150977
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -147,3 +149,5 @@ permalink: /kb/150/Q150977/
 	
 	=============================================================================
 	
+
+{% endraw %}

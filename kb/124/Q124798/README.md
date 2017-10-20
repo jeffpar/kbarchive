@@ -6,6 +6,8 @@ permalink: /kb/124/Q124798/
 
 ## Q124798: Ethernet_802.3 Does Not Work with ODI/NDIS Support Driver
 
+{% raw %}
+
 	Article: Q124798
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.5
@@ -95,3 +97,5 @@ permalink: /kb/124/Q124798/
 	
 	=============================================================================
 	
+
+{% endraw %}

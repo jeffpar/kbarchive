@@ -6,6 +6,8 @@ permalink: /kb/242/Q242119/
 
 ## Q242119: Unable to Lock for Exclusive Use Message in Disk Administrator
 
+{% raw %}
+
 	Article: Q242119
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -103,3 +105,5 @@ permalink: /kb/242/Q242119/
 	
 	=============================================================================
 	
+
+{% endraw %}

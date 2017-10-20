@@ -6,6 +6,8 @@ permalink: /kb/306/Q306002/
 
 ## Q306002: Flexible Registration-Regional Data Functionality
 
+{% raw %}
+
 	Article: Q306002
 	Product(s): Microsoft Developer Network
 	Version(s): 2.0
@@ -47,3 +49,5 @@ permalink: /kb/306/Q306002/
 	
 	=============================================================================
 	
+
+{% endraw %}

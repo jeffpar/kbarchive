@@ -6,6 +6,8 @@ permalink: /kb/275/Q275911/
 
 ## Q275911: Err Msg: DDHELP Has Caused Error In GDI.EXE
 
+{% raw %}
+
 	Article: Q275911
 	Product(s): The Microsoft Network
 	Version(s): 6.0
@@ -70,3 +72,5 @@ permalink: /kb/275/Q275911/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/300/Q300075/
 
 ## Q300075: Changes Not Saved When Users Edit Passport Core Profile Data
 
+{% raw %}
+
 	Article: Q300075
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -86,3 +88,5 @@ permalink: /kb/300/Q300075/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120428/
 
 ## Q120428: PowerBuilder Preferences Dialog Box Has No Text
 
+{% raw %}
+
 	Article: Q120428
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/120/Q120428/
 	
 	=============================================================================
 	
+
+{% endraw %}

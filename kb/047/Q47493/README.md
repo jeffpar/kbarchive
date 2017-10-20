@@ -6,6 +6,8 @@ permalink: /kb/047/Q47493/
 
 ## Q47493: Using the Linker /ALIGN Option
 
+{% raw %}
+
 	Article: Q47493
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -102,3 +104,5 @@ permalink: /kb/047/Q47493/
 	
 	=============================================================================
 	
+
+{% endraw %}

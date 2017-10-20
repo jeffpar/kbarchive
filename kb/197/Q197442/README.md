@@ -6,6 +6,8 @@ permalink: /kb/197/Q197442/
 
 ## Q197442: WD97: Hidden Drop-Down List Box in Tools Customize Dialog Box
 
+{% raw %}
+
 	Article: Q197442
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -63,3 +65,5 @@ permalink: /kb/197/Q197442/
 	
 	=============================================================================
 	
+
+{% endraw %}

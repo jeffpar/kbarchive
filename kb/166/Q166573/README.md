@@ -6,6 +6,8 @@ permalink: /kb/166/Q166573/
 
 ## Q166573: XFOR: Two Attachments Created When Filename Has a Path
 
+{% raw %}
+
 	Article: Q166573
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -47,3 +49,5 @@ permalink: /kb/166/Q166573/
 	
 	=============================================================================
 	
+
+{% endraw %}

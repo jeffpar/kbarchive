@@ -6,6 +6,8 @@ permalink: /kb/125/Q125596/
 
 ## Q125596: PGC Status Dialog Displayed Under Windows 95 Taskbar
 
+{% raw %}
+
 	Article: Q125596
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -42,3 +44,5 @@ permalink: /kb/125/Q125596/
 	
 	=============================================================================
 	
+
+{% endraw %}

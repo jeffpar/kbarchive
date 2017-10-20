@@ -6,6 +6,8 @@ permalink: /kb/171/Q171699/
 
 ## Q171699: Error Message: Active Content Is Causing a Sharing Violation
 
+{% raw %}
+
 	Article: Q171699
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -65,3 +67,5 @@ permalink: /kb/171/Q171699/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150736/
 
 ## Q150736: Stopping SNA Server Service Leads to Perpetual Stopping State
 
+{% raw %}
+
 	Article: Q150736
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1; winnt:3.51
@@ -78,3 +80,5 @@ permalink: /kb/150/Q150736/
 	
 	=============================================================================
 	
+
+{% endraw %}

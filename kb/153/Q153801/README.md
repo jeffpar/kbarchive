@@ -6,6 +6,8 @@ permalink: /kb/153/Q153801/
 
 ## Q153801: BUG: C2352 Error for Reference to Nested Class Member
 
+{% raw %}
+
 	Article: Q153801
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0
@@ -120,3 +122,5 @@ permalink: /kb/153/Q153801/
 	
 	=============================================================================
 	
+
+{% endraw %}

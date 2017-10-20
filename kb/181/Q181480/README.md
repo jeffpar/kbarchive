@@ -6,6 +6,8 @@ permalink: /kb/181/Q181480/
 
 ## Q181480: FIX: MFC ODBC Cannot Update Access Date/Time with No Date
 
+{% raw %}
+
 	Article: Q181480
 	Product(s): Microsoft C Compiler
 	Version(s): 2.5,2000,5.0,6.0,97
@@ -87,3 +89,5 @@ permalink: /kb/181/Q181480/
 	
 	=============================================================================
 	
+
+{% endraw %}

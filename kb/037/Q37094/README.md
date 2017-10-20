@@ -6,6 +6,8 @@ permalink: /kb/037/Q37094/
 
 ## Q37094: WIDTH Clears the Screen When Setting EGA 43-Line Mode
 
+{% raw %}
+
 	Article: Q37094
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -26,3 +28,5 @@ permalink: /kb/037/Q37094/
 	and 4.50 for MS-DOS, to Microsoft BASIC Compiler Versions 6.00 and
 	6.00b for MS-DOS, and to Microsoft BASIC PDS (Professional Development
 	System) Version 7.00 for MS-DOS.
+
+{% endraw %}

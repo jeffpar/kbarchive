@@ -6,6 +6,8 @@ permalink: /kb/135/Q135084/
 
 ## Q135084: SMS Software Inventory Fails to Find Office 95 or Word 95
 
+{% raw %}
+
 	Article: Q135084
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:7.0; Win95:7.0; winnt:1.0,1.1,1.2
@@ -68,3 +70,5 @@ permalink: /kb/135/Q135084/
 	
 	=============================================================================
 	
+
+{% endraw %}

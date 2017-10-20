@@ -6,6 +6,8 @@ permalink: /kb/242/Q242213/
 
 ## Q242213: PRB: ScopeItem's ExpandOnReload Is Not Available at Design Time
 
+{% raw %}
+
 	Article: Q242213
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:1.1,1.2,6.0
@@ -43,3 +45,5 @@ permalink: /kb/242/Q242213/
 	
 	=============================================================================
 	
+
+{% endraw %}

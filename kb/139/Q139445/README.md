@@ -6,6 +6,8 @@ permalink: /kb/139/Q139445/
 
 ## Q139445: Windows 95 Support for Infrared Data Association Connectivity
 
+{% raw %}
+
 	Article: Q139445
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -118,3 +120,5 @@ permalink: /kb/139/Q139445/
 	
 	=============================================================================
 	
+
+{% endraw %}

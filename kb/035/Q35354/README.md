@@ -6,6 +6,8 @@ permalink: /kb/035/Q35354/
 
 ## Q35354: QB.EXE Single Step Is Not Reliable with &#36;INCLUDE Lines
 
+{% raw %}
+
 	Article: Q35354
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -48,3 +50,5 @@ permalink: /kb/035/Q35354/
 	3. Press F8 to single step.
 	
 	The current line is at 908, not at 900 as expected.
+
+{% endraw %}

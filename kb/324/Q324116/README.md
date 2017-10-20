@@ -6,6 +6,8 @@ permalink: /kb/324/Q324116/
 
 ## Q324116: Microsoft C# Language Specifications Comments and Corrections
 
+{% raw %}
+
 	Article: Q324116
 	Product(s): Microsoft Press
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/324/Q324116/
 	
 	=============================================================================
 	
+
+{% endraw %}

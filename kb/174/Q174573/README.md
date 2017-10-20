@@ -6,6 +6,8 @@ permalink: /kb/174/Q174573/
 
 ## Q174573: SMS: Remote Control May Get a Dr.Watson Error w/ Acrobat Viewer
 
+{% raw %}
+
 	Article: Q174573
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -59,3 +61,5 @@ permalink: /kb/174/Q174573/
 	
 	=============================================================================
 	
+
+{% endraw %}

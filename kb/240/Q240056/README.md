@@ -6,6 +6,8 @@ permalink: /kb/240/Q240056/
 
 ## Q240056: SMS: Forced Sites Registry Key Entry Causes Multiple Errors
 
+{% raw %}
+
 	Article: Q240056
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -88,3 +90,5 @@ permalink: /kb/240/Q240056/
 	
 	=============================================================================
 	
+
+{% endraw %}

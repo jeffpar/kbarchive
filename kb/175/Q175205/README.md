@@ -6,6 +6,8 @@ permalink: /kb/175/Q175205/
 
 ## Q175205: Printout Truncated When Printing to Plotter
 
+{% raw %}
+
 	Article: Q175205
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.00
@@ -90,3 +92,5 @@ permalink: /kb/175/Q175205/
 	
 	=============================================================================
 	
+
+{% endraw %}

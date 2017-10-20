@@ -6,6 +6,8 @@ permalink: /kb/174/Q174321/
 
 ## Q174321: FIX: BackColor of MaskEdBox Control Changes When Enabled=False
 
+{% raw %}
+
 	Article: Q174321
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -93,3 +95,5 @@ permalink: /kb/174/Q174321/
 	
 	=============================================================================
 	
+
+{% endraw %}

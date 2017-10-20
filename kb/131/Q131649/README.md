@@ -6,6 +6,8 @@ permalink: /kb/131/Q131649/
 
 ## Q131649: Using Help Causes Text or Image to Disappear in Paint
 
+{% raw %}
+
 	Article: Q131649
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/131/Q131649/
 	
 	=============================================================================
 	
+
+{% endraw %}

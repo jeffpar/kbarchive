@@ -6,6 +6,8 @@ permalink: /kb/258/Q258758/
 
 ## Q258758: XADM: Understanding How and When Mailbox Manager Processes Items
 
+{% raw %}
+
 	Article: Q258758
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -152,3 +154,5 @@ permalink: /kb/258/Q258758/
 	
 	=============================================================================
 	
+
+{% endraw %}

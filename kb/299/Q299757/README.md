@@ -6,6 +6,8 @@ permalink: /kb/299/Q299757/
 
 ## Q299757: Train Simulator: Can't Restore Minimized Window w/Double-Click
 
+{% raw %}
+
 	Article: Q299757
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -59,3 +61,5 @@ permalink: /kb/299/Q299757/
 	
 	=============================================================================
 	
+
+{% endraw %}

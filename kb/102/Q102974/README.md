@@ -6,6 +6,8 @@ permalink: /kb/102/Q102974/
 
 ## Q102974: TCP/IP Transport Entries, Part 2
 
+{% raw %}
+
 	Article: Q102974
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,4.0
@@ -357,3 +359,5 @@ permalink: /kb/102/Q102974/
 	
 	=============================================================================
 	
+
+{% endraw %}

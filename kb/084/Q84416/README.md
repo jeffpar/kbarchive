@@ -6,6 +6,8 @@ permalink: /kb/084/Q84416/
 
 ## Q84416: GP Fault in Ventura 4.0 After Installing Windows 3.1
 
+{% raw %}
+
 	Article: Q84416
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/084/Q84416/
 	
 	=============================================================================
 	
+
+{% endraw %}

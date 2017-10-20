@@ -6,6 +6,8 @@ permalink: /kb/229/Q229323/
 
 ## Q229323: Err Msg: The Client Could Not Connect to Terminal Server
 
+{% raw %}
+
 	Article: Q229323
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/229/Q229323/
 	
 	=============================================================================
 	
+
+{% endraw %}

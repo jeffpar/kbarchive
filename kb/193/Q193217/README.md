@@ -6,6 +6,8 @@ permalink: /kb/193/Q193217/
 
 ## Q193217: BUG: Editing Compiled Resource Causes Them to Disappear
 
+{% raw %}
+
 	Article: Q193217
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -94,3 +96,5 @@ permalink: /kb/193/Q193217/
 	
 	=============================================================================
 	
+
+{% endraw %}

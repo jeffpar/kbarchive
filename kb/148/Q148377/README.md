@@ -6,6 +6,8 @@ permalink: /kb/148/Q148377/
 
 ## Q148377: Available Servers List Blank Running Rconsole 4.1 with FPNW
 
+{% raw %}
+
 	Article: Q148377
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -58,3 +60,5 @@ permalink: /kb/148/Q148377/
 	
 	=============================================================================
 	
+
+{% endraw %}

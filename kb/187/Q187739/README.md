@@ -6,6 +6,8 @@ permalink: /kb/187/Q187739/
 
 ## Q187739: Edits to Virtual Directories are Not Reflected in the Metabase
 
+{% raw %}
+
 	Article: Q187739
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -45,3 +47,5 @@ permalink: /kb/187/Q187739/
 	
 	=============================================================================
 	
+
+{% endraw %}

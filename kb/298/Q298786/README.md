@@ -6,6 +6,8 @@ permalink: /kb/298/Q298786/
 
 ## Q298786: Error Message: &quot;Privacy Settings&quot; When Attempting Sign In To MSN
 
+{% raw %}
+
 	Article: Q298786
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -66,3 +68,5 @@ permalink: /kb/298/Q298786/
 	
 	=============================================================================
 	
+
+{% endraw %}

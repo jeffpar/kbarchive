@@ -6,6 +6,8 @@ permalink: /kb/156/Q156720/
 
 ## Q156720: XCLN: Date/Time Field Corruption in Macintosh Client
 
+{% raw %}
+
 	Article: Q156720
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -62,3 +64,5 @@ permalink: /kb/156/Q156720/
 	
 	=============================================================================
 	
+
+{% endraw %}

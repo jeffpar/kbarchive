@@ -6,6 +6,8 @@ permalink: /kb/150/Q150704/
 
 ## Q150704: FIX: Toolbar Button Count Is Wrong if Image Index is Invalid
 
+{% raw %}
+
 	Article: Q150704
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -108,3 +110,5 @@ permalink: /kb/150/Q150704/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130347/
 
 ## Q130347: PRB: Bound Control Does Not Show Current Record Value
 
+{% raw %}
+
 	Article: Q130347
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -84,3 +86,5 @@ permalink: /kb/130/Q130347/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/239/Q239850/
 
 ## Q239850: Schannel Updated to Support Multiple SGC Certificate Authorities
 
+{% raw %}
+
 	Article: Q239850
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -113,3 +115,5 @@ permalink: /kb/239/Q239850/
 	
 	=============================================================================
 	
+
+{% endraw %}

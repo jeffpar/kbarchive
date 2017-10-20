@@ -6,6 +6,8 @@ permalink: /kb/234/Q234314/
 
 ## Q234314: BUG: &quot;This Stub Requires an Updated Version of &lt;Rpcndr.h&gt;&quot; Error
 
+{% raw %}
+
 	Article: Q234314
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:6.0
@@ -57,3 +59,5 @@ permalink: /kb/234/Q234314/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135545/
 
 ## Q135545: Windows 95 DMF Floppy Disk Directory Listing (2 of 4)
 
+{% raw %}
+
 	Article: Q135545
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -542,3 +544,5 @@ permalink: /kb/135/Q135545/
 	
 	=============================================================================
 	
+
+{% endraw %}

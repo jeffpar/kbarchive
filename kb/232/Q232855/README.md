@@ -6,6 +6,8 @@ permalink: /kb/232/Q232855/
 
 ## Q232855: Microsoft Windows 95 Year 2000 Corporate Update Readme File
 
+{% raw %}
+
 	Article: Q232855
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -115,3 +117,5 @@ permalink: /kb/232/Q232855/
 	
 	=============================================================================
 	
+
+{% endraw %}

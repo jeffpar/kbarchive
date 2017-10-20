@@ -6,6 +6,8 @@ permalink: /kb/221/Q221656/
 
 ## Q221656: FIX: Difficult to Add Records to Form in Application Wizard App
 
+{% raw %}
+
 	Article: Q221656
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -80,3 +82,5 @@ permalink: /kb/221/Q221656/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170720/
 
 ## Q170720: WD97: Saving as HTML Removes Hyperlink &quot;Target&quot; Tag
 
+{% raw %}
+
 	Article: Q170720
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -133,3 +135,5 @@ permalink: /kb/170/Q170720/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143410/
 
 ## Q143410: DOC: Vertical Slider Control Sends WM_VSCROLL Message
 
+{% raw %}
+
 	Article: Q143410
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0
@@ -71,3 +73,5 @@ permalink: /kb/143/Q143410/
 	
 	=============================================================================
 	
+
+{% endraw %}

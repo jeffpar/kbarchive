@@ -6,6 +6,8 @@ permalink: /kb/248/Q248491/
 
 ## Q248491: Fighter Ace II: Game Hangs After You Change Screen Resolution
 
+{% raw %}
+
 	Article: Q248491
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/248/Q248491/
 	
 	=============================================================================
 	
+
+{% endraw %}

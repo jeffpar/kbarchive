@@ -6,6 +6,8 @@ permalink: /kb/157/Q157263/
 
 ## Q157263: Msbatch.inf Parameters: Installing Default Screen Saver
 
+{% raw %}
+
 	Article: Q157263
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -71,3 +73,5 @@ permalink: /kb/157/Q157263/
 	
 	=============================================================================
 	
+
+{% endraw %}

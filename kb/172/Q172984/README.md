@@ -6,6 +6,8 @@ permalink: /kb/172/Q172984/
 
 ## Q172984: TI 850/855 Printer Will Not Print Margins Less Than 1 Inch
 
+{% raw %}
+
 	Article: Q172984
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -46,3 +48,5 @@ permalink: /kb/172/Q172984/
 	
 	=============================================================================
 	
+
+{% endraw %}

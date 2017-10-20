@@ -6,6 +6,8 @@ permalink: /kb/159/Q159180/
 
 ## Q159180: XCON: Japanese Subject Is Replaced w/ Question Mark
 
+{% raw %}
+
 	Article: Q159180
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/159/Q159180/
 	
 	=============================================================================
 	
+
+{% endraw %}

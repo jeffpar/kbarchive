@@ -6,6 +6,8 @@ permalink: /kb/071/Q71691/
 
 ## Q71691: What MS-DOS 5 Upgrade Setup Does
 
+{% raw %}
+
 	Article: Q71691
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -105,3 +107,5 @@ permalink: /kb/071/Q71691/
 	
 	=============================================================================
 	
+
+{% endraw %}

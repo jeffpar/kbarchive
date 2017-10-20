@@ -6,6 +6,8 @@ permalink: /kb/241/Q241164/
 
 ## Q241164: NBA Inside Drive 2000: Lights Flash Behind Spectatators
 
+{% raw %}
+
 	Article: Q241164
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/241/Q241164/
 	
 	=============================================================================
 	
+
+{% endraw %}

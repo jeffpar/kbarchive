@@ -6,6 +6,8 @@ permalink: /kb/240/Q240676/
 
 ## Q240676: Cannot Use ODO As a Return Value for Method's Recordset
 
+{% raw %}
+
 	Article: Q240676
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -88,3 +90,5 @@ permalink: /kb/240/Q240676/
 	
 	=============================================================================
 	
+
+{% endraw %}

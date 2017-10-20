@@ -6,6 +6,8 @@ permalink: /kb/233/Q233048/
 
 ## Q233048: RAS or RRAS Logs Event ID 20050 When PPTP Connection Is Refused
 
+{% raw %}
+
 	Article: Q233048
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/233/Q233048/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158821/
 
 ## Q158821: Cannot Install Gravis UltraSound Pro Drivers Correctly
 
+{% raw %}
+
 	Article: Q158821
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -46,3 +48,5 @@ permalink: /kb/158/Q158821/
 	
 	=============================================================================
 	
+
+{% endraw %}

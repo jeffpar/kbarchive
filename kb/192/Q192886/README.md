@@ -6,6 +6,8 @@ permalink: /kb/192/Q192886/
 
 ## Q192886: PRB: Alpha MS Oracle ODBC Driver Does Not Work with Oracle8
 
+{% raw %}
+
 	Article: Q192886
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.1,Build 2.573.2927
@@ -73,3 +75,5 @@ permalink: /kb/192/Q192886/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/281/Q281833/
 
 ## Q281833: Multimedia: Tool to Remove Shockwave Registry Keys
 
+{% raw %}
+
 	Article: Q281833
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -188,3 +190,5 @@ permalink: /kb/281/Q281833/
 	
 	=============================================================================
 	
+
+{% endraw %}

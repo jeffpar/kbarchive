@@ -6,6 +6,8 @@ permalink: /kb/152/Q152553/
 
 ## Q152553: Print Jobs from MAC OTI Clients May Hang in WinNT Print Queue
 
+{% raw %}
+
 	Article: Q152553
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -56,3 +58,5 @@ permalink: /kb/152/Q152553/
 	
 	=============================================================================
 	
+
+{% endraw %}

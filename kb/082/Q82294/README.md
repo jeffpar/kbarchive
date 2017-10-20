@@ -6,6 +6,8 @@ permalink: /kb/082/Q82294/
 
 ## Q82294: PC Win: Client Version Control Not Available
 
+{% raw %}
+
 	Article: Q82294
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -38,3 +40,5 @@ permalink: /kb/082/Q82294/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/049/Q49536/
 
 ## Q49536: M Editor Version 1.00 Does Not Clear Compiler Error Buffer
 
+{% raw %}
+
 	Article: Q49536
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -26,3 +28,5 @@ permalink: /kb/049/Q49536/
 	Microsoft has confirmed this to be a problem with the Microsoft Editor
 	Version 1.00. This problem was corrected in Version 1.02 of the
 	Editor.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174030/
 
 ## Q174030: XWEB: Outlook Web Access Client Fails if JavaScript Disabled
 
+{% raw %}
+
 	Article: Q174030
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -55,3 +57,5 @@ permalink: /kb/174/Q174030/
 	
 	=============================================================================
 	
+
+{% endraw %}

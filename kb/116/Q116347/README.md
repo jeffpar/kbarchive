@@ -6,6 +6,8 @@ permalink: /kb/116/Q116347/
 
 ## Q116347: Mac Bookshelf: One Message When Toggling QuickShelf On and Off
 
+{% raw %}
+
 	Article: Q116347
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -40,3 +42,5 @@ permalink: /kb/116/Q116347/
 	
 	=============================================================================
 	
+
+{% endraw %}

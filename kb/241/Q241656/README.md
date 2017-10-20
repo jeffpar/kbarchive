@@ -6,6 +6,8 @@ permalink: /kb/241/Q241656/
 
 ## Q241656: SMS: Memory Leak in Pcmsvc32
 
+{% raw %}
+
 	Article: Q241656
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -149,3 +151,5 @@ permalink: /kb/241/Q241656/
 	
 	=============================================================================
 	
+
+{% endraw %}

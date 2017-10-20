@@ -6,6 +6,8 @@ permalink: /kb/162/Q162557/
 
 ## Q162557: SMS: Sharing Violations When Creating Inventory RAW Files
 
+{% raw %}
+
 	Article: Q162557
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -68,3 +70,5 @@ permalink: /kb/162/Q162557/
 	
 	=============================================================================
 	
+
+{% endraw %}

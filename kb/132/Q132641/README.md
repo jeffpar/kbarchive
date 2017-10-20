@@ -6,6 +6,8 @@ permalink: /kb/132/Q132641/
 
 ## Q132641: Automatically Detecting Racal Modem Causes Modem Hang
 
+{% raw %}
+
 	Article: Q132641
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/132/Q132641/
 	
 	=============================================================================
 	
+
+{% endraw %}

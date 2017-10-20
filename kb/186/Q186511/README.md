@@ -6,6 +6,8 @@ permalink: /kb/186/Q186511/
 
 ## Q186511: Terminal Server Commands: DBGTRACE
 
+{% raw %}
+
 	Article: Q186511
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/186/Q186511/
 	
 	=============================================================================
 	
+
+{% endraw %}

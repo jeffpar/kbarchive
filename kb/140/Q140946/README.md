@@ -6,6 +6,8 @@ permalink: /kb/140/Q140946/
 
 ## Q140946: XADM: Microsoft Mail Interchange Hang During DirSync
 
+{% raw %}
+
 	Article: Q140946
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -58,3 +60,5 @@ permalink: /kb/140/Q140946/
 	
 	=============================================================================
 	
+
+{% endraw %}

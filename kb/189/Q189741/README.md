@@ -6,6 +6,8 @@ permalink: /kb/189/Q189741/
 
 ## Q189741: BUG: Form Falls to Background When MsgBox Appears
 
+{% raw %}
+
 	Article: Q189741
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/189/Q189741/
 	
 	=============================================================================
 	
+
+{% endraw %}

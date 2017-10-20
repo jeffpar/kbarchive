@@ -6,6 +6,8 @@ permalink: /kb/139/Q139921/
 
 ## Q139921: Encarta 96 Encyclopedia Annual Subscription Readme Information
 
+{% raw %}
+
 	Article: Q139921
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -146,3 +148,5 @@ permalink: /kb/139/Q139921/
 	
 	=============================================================================
 	
+
+{% endraw %}

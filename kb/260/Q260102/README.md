@@ -6,6 +6,8 @@ permalink: /kb/260/Q260102/
 
 ## Q260102: FIX: Can't Add Available Toolbar Buttons After They Are Removed
 
+{% raw %}
+
 	Article: Q260102
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0,6.0 sp1, sp2, sp3
@@ -92,3 +94,5 @@ permalink: /kb/260/Q260102/
 	
 	=============================================================================
 	
+
+{% endraw %}

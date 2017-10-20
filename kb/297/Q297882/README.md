@@ -6,6 +6,8 @@ permalink: /kb/297/Q297882/
 
 ## Q297882: PRB: Behavior of Format Function Changes from VB 5.0 to VB 6.0
 
+{% raw %}
+
 	Article: Q297882
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -84,3 +86,5 @@ permalink: /kb/297/Q297882/
 	
 	=============================================================================
 	
+
+{% endraw %}

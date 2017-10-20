@@ -6,6 +6,8 @@ permalink: /kb/200/Q200336/
 
 ## Q200336: SMS: PCM Application Pauses Using a Novell Distribution Server
 
+{% raw %}
+
 	Article: Q200336
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -48,3 +50,5 @@ permalink: /kb/200/Q200336/
 	
 	=============================================================================
 	
+
+{% endraw %}

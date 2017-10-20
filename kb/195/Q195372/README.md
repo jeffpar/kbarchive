@@ -6,6 +6,8 @@ permalink: /kb/195/Q195372/
 
 ## Q195372: STOP 0x00000067 on System Reboot
 
+{% raw %}
+
 	Article: Q195372
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/195/Q195372/
 	
 	=============================================================================
 	
+
+{% endraw %}

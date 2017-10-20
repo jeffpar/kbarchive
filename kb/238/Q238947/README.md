@@ -6,6 +6,8 @@ permalink: /kb/238/Q238947/
 
 ## Q238947: FILE: Msadoce2.exe Installs ADO for Windows CE SDK
 
+{% raw %}
+
 	Article: Q238947
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -130,3 +132,5 @@ permalink: /kb/238/Q238947/
 	
 	=============================================================================
 	
+
+{% endraw %}

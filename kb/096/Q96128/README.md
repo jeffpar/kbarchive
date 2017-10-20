@@ -6,6 +6,8 @@ permalink: /kb/096/Q96128/
 
 ## Q96128: How Setup, MemMaker, and DoubleSpace Find Windows
 
+{% raw %}
+
 	Article: Q96128
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -59,3 +61,5 @@ permalink: /kb/096/Q96128/
 	
 	=============================================================================
 	
+
+{% endraw %}

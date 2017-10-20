@@ -6,6 +6,8 @@ permalink: /kb/170/Q170750/
 
 ## Q170750: INFO: End of Line Character Settings for Visual SourceSafe
 
+{% raw %}
+
 	Article: Q170750
 	Product(s): Microsoft SourceSafe
 	Version(s): MACINTOSH:3.01,3.02,3.04,3.1; WINDOWS:3.02,3.04,3.1,4.0,5.0,6.0
@@ -88,3 +90,5 @@ permalink: /kb/170/Q170750/
 	
 	=============================================================================
 	
+
+{% endraw %}

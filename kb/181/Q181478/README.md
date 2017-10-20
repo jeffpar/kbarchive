@@ -6,6 +6,8 @@ permalink: /kb/181/Q181478/
 
 ## Q181478: Joystick.exe Calls the Joystick API Functions
 
+{% raw %}
+
 	Article: Q181478
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -83,3 +85,5 @@ permalink: /kb/181/Q181478/
 	
 	=============================================================================
 	
+
+{% endraw %}

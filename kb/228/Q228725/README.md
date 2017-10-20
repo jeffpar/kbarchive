@@ -6,6 +6,8 @@ permalink: /kb/228/Q228725/
 
 ## Q228725: XFOR: IMS Outbound Queue Backlog - SMTP Error 499
 
+{% raw %}
+
 	Article: Q228725
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -81,3 +83,5 @@ permalink: /kb/228/Q228725/
 	
 	=============================================================================
 	
+
+{% endraw %}

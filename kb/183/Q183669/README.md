@@ -6,6 +6,8 @@ permalink: /kb/183/Q183669/
 
 ## Q183669: XADM: Troubleshooting Intersite Directory Replication
 
+{% raw %}
+
 	Article: Q183669
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -112,3 +114,5 @@ permalink: /kb/183/Q183669/
 	
 	=============================================================================
 	
+
+{% endraw %}

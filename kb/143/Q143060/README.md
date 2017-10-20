@@ -6,6 +6,8 @@ permalink: /kb/143/Q143060/
 
 ## Q143060: PC Gen: How to Install Mail Server 3.5 from the BackOffice CD
 
+{% raw %}
+
 	Article: Q143060
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:3.5; winnt:1.5
@@ -144,3 +146,5 @@ permalink: /kb/143/Q143060/
 	
 	=============================================================================
 	
+
+{% endraw %}

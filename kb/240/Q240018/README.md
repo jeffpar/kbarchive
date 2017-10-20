@@ -6,6 +6,8 @@ permalink: /kb/240/Q240018/
 
 ## Q240018: Schedule+ Stack Fault After You Apply Office 95 Y2K Update
 
+{% raw %}
+
 	Article: Q240018
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -72,3 +74,5 @@ permalink: /kb/240/Q240018/
 	
 	=============================================================================
 	
+
+{% endraw %}

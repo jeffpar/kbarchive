@@ -6,6 +6,8 @@ permalink: /kb/067/Q67265/
 
 ## Q67265: Cannot Run Swapfile When Any Other Applications Are Running
 
+{% raw %}
+
 	Article: Q67265
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -62,3 +64,5 @@ permalink: /kb/067/Q67265/
 	
 	=============================================================================
 	
+
+{% endraw %}

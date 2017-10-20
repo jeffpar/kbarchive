@@ -6,6 +6,8 @@ permalink: /kb/152/Q152529/
 
 ## Q152529: XADM: Crash in Srvrmax.exe (RtlQueryInformationAcl) During Setup
 
+{% raw %}
+
 	Article: Q152529
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -217,3 +219,5 @@ permalink: /kb/152/Q152529/
 	
 	=============================================================================
 	
+
+{% endraw %}

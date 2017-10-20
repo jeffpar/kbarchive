@@ -6,6 +6,8 @@ permalink: /kb/045/Q45948/
 
 ## Q45948: Failure to Trap Event Compiled BC /w; Needs Line Label or /v
 
+{% raw %}
+
 	Article: Q45948
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -74,3 +76,5 @@ permalink: /kb/045/Q45948/
 	QuickBASIC Versions 1.x compile with BASCOM.EXE, as follows:
 	
 	   BASCOM test/V;
+
+{% endraw %}

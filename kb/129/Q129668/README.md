@@ -6,6 +6,8 @@ permalink: /kb/129/Q129668/
 
 ## Q129668: Logitech Mouse Support in Windows NT
 
+{% raw %}
+
 	Article: Q129668
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:3.5,3.51,4.0
@@ -49,3 +51,5 @@ permalink: /kb/129/Q129668/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155775/
 
 ## Q155775: WD97: Date Field Changes to Text Using Letter Wizard
 
+{% raw %}
+
 	Article: Q155775
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/155/Q155775/
 	
 	=============================================================================
 	
+
+{% endraw %}

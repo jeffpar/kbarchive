@@ -6,6 +6,8 @@ permalink: /kb/102/Q102644/
 
 ## Q102644: WEP and Link Error L2023 Export Imported
 
+{% raw %}
+
 	Article: Q102644
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/102/Q102644/
 	
 	=============================================================================
 	
+
+{% endraw %}

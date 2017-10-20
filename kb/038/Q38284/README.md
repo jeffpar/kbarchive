@@ -6,6 +6,8 @@ permalink: /kb/038/Q38284/
 
 ## Q38284: 80386 and 80387 Instruction Set
 
+{% raw %}
+
 	Article: Q38284
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -26,3 +28,5 @@ permalink: /kb/038/Q38284/
 	generate true 80386 code, or use 32-bit addressing. Although our
 	compilers do not generate specific 80386 or 80387 code, the code which
 	is generated will run faster than on a 80286 and 80287.
+
+{% endraw %}

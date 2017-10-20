@@ -6,6 +6,8 @@ permalink: /kb/081/Q81607/
 
 ## Q81607: Rebooting from a Batch File with SMARTDRV.EXE Loaded
 
+{% raw %}
+
 	Article: Q81607
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/081/Q81607/
 	
 	=============================================================================
 	
+
+{% endraw %}

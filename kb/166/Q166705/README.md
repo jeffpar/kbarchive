@@ -6,6 +6,8 @@ permalink: /kb/166/Q166705/
 
 ## Q166705: Kids Plus!: Internet Settings Remain After Protect It! Removed
 
+{% raw %}
+
 	Article: Q166705
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/166/Q166705/
 	
 	=============================================================================
 	
+
+{% endraw %}

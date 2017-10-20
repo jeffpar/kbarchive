@@ -6,6 +6,8 @@ permalink: /kb/132/Q132229/
 
 ## Q132229: Where to Set Environment Settings for Visual FoxPro
 
+{% raw %}
+
 	Article: Q132229
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -212,3 +214,5 @@ permalink: /kb/132/Q132229/
 	
 	=============================================================================
 	
+
+{% endraw %}

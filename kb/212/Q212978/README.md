@@ -6,6 +6,8 @@ permalink: /kb/212/Q212978/
 
 ## Q212978: SMS: Description of Preinst.exe for SMS 2.0
 
+{% raw %}
+
 	Article: Q212978
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -94,3 +96,5 @@ permalink: /kb/212/Q212978/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148799/
 
 ## Q148799: Err Msg: There Is Not Enough Disk Space to Upgrade...
 
+{% raw %}
+
 	Article: Q148799
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -71,3 +73,5 @@ permalink: /kb/148/Q148799/
 	
 	=============================================================================
 	
+
+{% endraw %}

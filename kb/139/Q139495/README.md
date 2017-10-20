@@ -6,6 +6,8 @@ permalink: /kb/139/Q139495/
 
 ## Q139495: 3D Movie Maker: How to Reset the Talent Book
 
+{% raw %}
+
 	Article: Q139495
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -109,3 +111,5 @@ permalink: /kb/139/Q139495/
 	
 	=============================================================================
 	
+
+{% endraw %}

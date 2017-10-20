@@ -6,6 +6,8 @@ permalink: /kb/057/Q57649/
 
 ## Q57649: CIRCLE Statement Draws Ellipses Based on Horizontal Resolution
 
+{% raw %}
+
 	Article: Q57649
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -72,3 +74,5 @@ permalink: /kb/057/Q57649/
 	CIRCLE(0, 0), 100
 	LINE(-100, -100)-(100, 100),,B
 	END
+
+{% endraw %}

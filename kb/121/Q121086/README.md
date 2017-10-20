@@ -6,6 +6,8 @@ permalink: /kb/121/Q121086/
 
 ## Q121086: Obtaining the NetShare Utility for Workgroup Add-On for MS-DOS
 
+{% raw %}
+
 	Article: Q121086
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.11
@@ -52,3 +54,5 @@ permalink: /kb/121/Q121086/
 	
 	=============================================================================
 	
+
+{% endraw %}

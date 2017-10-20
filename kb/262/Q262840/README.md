@@ -6,6 +6,8 @@ permalink: /kb/262/Q262840/
 
 ## Q262840: The New SMS 2.0 Site Is Unable to Run SQL Setup
 
+{% raw %}
+
 	Article: Q262840
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -57,3 +59,5 @@ permalink: /kb/262/Q262840/
 	
 	=============================================================================
 	
+
+{% endraw %}

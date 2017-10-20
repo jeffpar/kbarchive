@@ -6,6 +6,8 @@ permalink: /kb/134/Q134578/
 
 ## Q134578: PIF File Properties Change After Use
 
+{% raw %}
+
 	Article: Q134578
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/134/Q134578/
 	
 	=============================================================================
 	
+
+{% endraw %}

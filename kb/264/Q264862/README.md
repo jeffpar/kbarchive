@@ -6,6 +6,8 @@ permalink: /kb/264/Q264862/
 
 ## Q264862: XADM: No CRL Distribution Points Extension in X.509 V3 Cert.
 
+{% raw %}
+
 	Article: Q264862
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -66,3 +68,5 @@ permalink: /kb/264/Q264862/
 	
 	=============================================================================
 	
+
+{% endraw %}

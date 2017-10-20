@@ -6,6 +6,8 @@ permalink: /kb/283/Q283793/
 
 ## Q283793: WD97: Which Address Books Can Be Used with Word?
 
+{% raw %}
+
 	Article: Q283793
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/283/Q283793/
 	
 	=============================================================================
 	
+
+{% endraw %}

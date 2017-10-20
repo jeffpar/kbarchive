@@ -6,6 +6,8 @@ permalink: /kb/247/Q247926/
 
 ## Q247926: Windows NT Server 4.0-Based PDC Repeatedly Reports Event 3224
 
+{% raw %}
+
 	Article: Q247926
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/247/Q247926/
 	
 	=============================================================================
 	
+
+{% endraw %}

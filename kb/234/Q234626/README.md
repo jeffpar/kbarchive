@@ -6,6 +6,8 @@ permalink: /kb/234/Q234626/
 
 ## Q234626: SAMPLE: Setup1.exe Fully Automating MSDE Setup with the PDW
 
+{% raw %}
+
 	Article: Q234626
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,6.0
@@ -120,3 +122,5 @@ permalink: /kb/234/Q234626/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142109/
 
 ## Q142109: Writer: ErrMsg: Integer Divide by Zero with STB Vision
 
+{% raw %}
+
 	Article: Q142109
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,3.1
@@ -78,3 +80,5 @@ permalink: /kb/142/Q142109/
 	
 	=============================================================================
 	
+
+{% endraw %}

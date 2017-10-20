@@ -6,6 +6,8 @@ permalink: /kb/081/Q81605/
 
 ## Q81605: Setting Up LANtastic 4.x with Windows 3.0
 
+{% raw %}
+
 	Article: Q81605
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -160,3 +162,5 @@ permalink: /kb/081/Q81605/
 	
 	=============================================================================
 	
+
+{% endraw %}

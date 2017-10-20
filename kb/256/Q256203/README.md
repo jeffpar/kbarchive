@@ -6,6 +6,8 @@ permalink: /kb/256/Q256203/
 
 ## Q256203: SMS: Status Messages Are Not Displayed in SQL Server Database
 
+{% raw %}
+
 	Article: Q256203
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -63,3 +65,5 @@ permalink: /kb/256/Q256203/
 	
 	=============================================================================
 	
+
+{% endraw %}

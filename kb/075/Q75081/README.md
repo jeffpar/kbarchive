@@ -6,6 +6,8 @@ permalink: /kb/075/Q75081/
 
 ## Q75081: Cannot Use /U Switch with DOS=LOW and MOUSE.COM Version 8.0
 
+{% raw %}
+
 	Article: Q75081
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -65,3 +67,5 @@ permalink: /kb/075/Q75081/
 	
 	=============================================================================
 	
+
+{% endraw %}

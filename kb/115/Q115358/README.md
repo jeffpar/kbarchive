@@ -6,6 +6,8 @@ permalink: /kb/115/Q115358/
 
 ## Q115358: X400: TSAP and SSAP Fields Cannot Accept Hex Values V2.1, V3.0
 
+{% raw %}
+
 	Article: Q115358
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0,3.2
@@ -38,3 +40,5 @@ permalink: /kb/115/Q115358/
 	
 	=============================================================================
 	
+
+{% endraw %}

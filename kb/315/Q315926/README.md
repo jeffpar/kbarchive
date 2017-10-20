@@ -6,6 +6,8 @@ permalink: /kb/315/Q315926/
 
 ## Q315926: Flight Simulator 2002: Troubleshooting Joystick Problems Part 1
 
+{% raw %}
+
 	Article: Q315926
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -549,3 +551,5 @@ permalink: /kb/315/Q315926/
 	
 	=============================================================================
 	
+
+{% endraw %}

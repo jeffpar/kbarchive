@@ -6,6 +6,8 @@ permalink: /kb/219/Q219405/
 
 ## Q219405: SAMPLE: SSApplet.exe Connects to SourceSafe via Web Using Java
 
+{% raw %}
+
 	Article: Q219405
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -187,3 +189,5 @@ permalink: /kb/219/Q219405/
 	
 	=============================================================================
 	
+
+{% endraw %}

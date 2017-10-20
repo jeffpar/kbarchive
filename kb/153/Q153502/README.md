@@ -6,6 +6,8 @@ permalink: /kb/153/Q153502/
 
 ## Q153502: PRB: Unable to Open Project Error When Running Analyze
 
+{% raw %}
+
 	Article: Q153502
 	Product(s): Microsoft SourceSafe
 	Version(s): 95
@@ -75,3 +77,5 @@ permalink: /kb/153/Q153502/
 	
 	=============================================================================
 	
+
+{% endraw %}

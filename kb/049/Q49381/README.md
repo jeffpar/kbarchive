@@ -6,6 +6,8 @@ permalink: /kb/049/Q49381/
 
 ## Q49381: CVP 2.30 Hangs When /O Is Specified, but Child Is Not Debugged
 
+{% raw %}
+
 	Article: Q49381
 	Product(s): See article
 	Version(s): 2.30
@@ -38,3 +40,5 @@ permalink: /kb/049/Q49381/
 	must switch to the Task Manager and use it to close the hung CodeView
 	session. If you are working on a PM application, the only workaround
 	may be to reboot the computer.
+
+{% endraw %}

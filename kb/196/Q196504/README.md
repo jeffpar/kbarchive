@@ -6,6 +6,8 @@ permalink: /kb/196/Q196504/
 
 ## Q196504: WD97: Symbol in STYLEREF Field Appears as Opening Parenthesis
 
+{% raw %}
+
 	Article: Q196504
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/196/Q196504/
 	
 	=============================================================================
 	
+
+{% endraw %}

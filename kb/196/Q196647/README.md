@@ -6,6 +6,8 @@ permalink: /kb/196/Q196647/
 
 ## Q196647: PRB: SUBSTR(SYS(2015),3,10) as Alias Name Causes Syntax Error
 
+{% raw %}
+
 	Article: Q196647
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,2.6a,3.0b; MS-DOS:2.0,2.5,2.5a,2.5b,2.6,2.6a; UNIX:2.6; WINDOWS:2.5
@@ -143,3 +145,5 @@ permalink: /kb/196/Q196647/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151287/
 
 ## Q151287: Windows 95 Questions and Answers
 
+{% raw %}
+
 	Article: Q151287
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/151/Q151287/
 	
 	=============================================================================
 	
+
+{% endraw %}

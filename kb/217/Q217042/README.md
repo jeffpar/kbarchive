@@ -6,6 +6,8 @@ permalink: /kb/217/Q217042/
 
 ## Q217042: Dump Discovery Data Tool Views Discovery Data from the Client
 
+{% raw %}
+
 	Article: Q217042
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -58,3 +60,5 @@ permalink: /kb/217/Q217042/
 	
 	=============================================================================
 	
+
+{% endraw %}

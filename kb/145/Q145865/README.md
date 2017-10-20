@@ -6,6 +6,8 @@ permalink: /kb/145/Q145865/
 
 ## Q145865: FIX: Cannot Receive WM_HELP for a Subclassed Control
 
+{% raw %}
+
 	Article: Q145865
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -132,3 +134,5 @@ permalink: /kb/145/Q145865/
 	
 	=============================================================================
 	
+
+{% endraw %}

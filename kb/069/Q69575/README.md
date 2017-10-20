@@ -6,6 +6,8 @@ permalink: /kb/069/Q69575/
 
 ## Q69575: COPY Concatenates Files Based on Command Syntax
 
+{% raw %}
+
 	Article: Q69575
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -64,3 +66,5 @@ permalink: /kb/069/Q69575/
 	
 	=============================================================================
 	
+
+{% endraw %}

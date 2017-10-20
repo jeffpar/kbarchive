@@ -6,6 +6,8 @@ permalink: /kb/257/Q257700/
 
 ## Q257700: SMS: Advertisements Do Not Run If DC Is Unavailable
 
+{% raw %}
+
 	Article: Q257700
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -77,3 +79,5 @@ permalink: /kb/257/Q257700/
 	
 	=============================================================================
 	
+
+{% endraw %}

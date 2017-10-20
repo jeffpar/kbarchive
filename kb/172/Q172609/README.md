@@ -6,6 +6,8 @@ permalink: /kb/172/Q172609/
 
 ## Q172609: FIX: /GX May Cause C1001 When Using Base Class' Operator Delete
 
+{% raw %}
+
 	Article: Q172609
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -118,3 +120,5 @@ permalink: /kb/172/Q172609/
 	
 	=============================================================================
 	
+
+{% endraw %}

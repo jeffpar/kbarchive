@@ -6,6 +6,8 @@ permalink: /kb/137/Q137864/
 
 ## Q137864: PC NTMMTA: Err Msg: A Failure Occurred Attempting to Read...
 
+{% raw %}
+
 	Article: Q137864
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -49,3 +51,5 @@ permalink: /kb/137/Q137864/
 	
 	=============================================================================
 	
+
+{% endraw %}

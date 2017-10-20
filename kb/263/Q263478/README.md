@@ -6,6 +6,8 @@ permalink: /kb/263/Q263478/
 
 ## Q263478: Urban Assault Err Msg: Invalid Page Fault in Module Mss32.dll
 
+{% raw %}
+
 	Article: Q263478
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/263/Q263478/
 	
 	=============================================================================
 	
+
+{% endraw %}

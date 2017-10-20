@@ -6,6 +6,8 @@ permalink: /kb/199/Q199125/
 
 ## Q199125: XCON: Connectors Included with Microsoft Exchange Server 5.5
 
+{% raw %}
+
 	Article: Q199125
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -61,3 +63,5 @@ permalink: /kb/199/Q199125/
 	
 	=============================================================================
 	
+
+{% endraw %}

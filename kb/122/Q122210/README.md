@@ -6,6 +6,8 @@ permalink: /kb/122/Q122210/
 
 ## Q122210: Communication Fails with NWLink and Even Length Packets
 
+{% raw %}
+
 	Article: Q122210
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): ; WINDOWS:3.11
@@ -76,3 +78,5 @@ permalink: /kb/122/Q122210/
 	
 	=============================================================================
 	
+
+{% endraw %}

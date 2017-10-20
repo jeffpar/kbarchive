@@ -6,6 +6,8 @@ permalink: /kb/178/Q178244/
 
 ## Q178244: XADM: Store Stops When POP3 Client Retrieves NDR for UTF-7 Msg
 
+{% raw %}
+
 	Article: Q178244
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -67,3 +69,5 @@ permalink: /kb/178/Q178244/
 	
 	=============================================================================
 	
+
+{% endraw %}

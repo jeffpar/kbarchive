@@ -6,6 +6,8 @@ permalink: /kb/178/Q178852/
 
 ## Q178852: INFO: OLE DB Provider for ODBC Now an ODBC 3.5 and Higher Core C
 
+{% raw %}
+
 	Article: Q178852
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.5,2.0,2.1,2.5,3.5,3.51
@@ -74,3 +76,5 @@ permalink: /kb/178/Q178852/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163797/
 
 ## Q163797: HOWTO: Lock a SourceSafe Database
 
+{% raw %}
+
 	Article: Q163797
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/163/Q163797/
 	
 	=============================================================================
 	
+
+{% endraw %}

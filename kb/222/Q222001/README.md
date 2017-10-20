@@ -6,6 +6,8 @@ permalink: /kb/222/Q222001/
 
 ## Q222001: XCLN: No &quot;Open Recurring Item&quot; Prompt in Outlook Calendar
 
+{% raw %}
+
 	Article: Q222001
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03; WINDOWS:
@@ -52,3 +54,5 @@ permalink: /kb/222/Q222001/
 	
 	=============================================================================
 	
+
+{% endraw %}

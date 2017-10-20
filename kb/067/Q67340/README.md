@@ -6,6 +6,8 @@ permalink: /kb/067/Q67340/
 
 ## Q67340: Correct Mouse Drivers for Express Publisher
 
+{% raw %}
+
 	Article: Q67340
 	Product(s): See article
 	Version(s): 1.00
@@ -17,3 +19,5 @@ permalink: /kb/067/Q67340/
 	driver to run correctly. Other mouse driver versions will not work
 	according to the manufacturers, Power Up Software Corporation
 	of San Mateo, CA.
+
+{% endraw %}

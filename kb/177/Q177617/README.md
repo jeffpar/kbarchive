@@ -6,6 +6,8 @@ permalink: /kb/177/Q177617/
 
 ## Q177617: WD: Manage Fields Dialog Box Returns Incorrect Values
 
+{% raw %}
+
 	Article: Q177617
 	Product(s): Word 97 for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -89,3 +91,5 @@ permalink: /kb/177/Q177617/
 	
 	=============================================================================
 	
+
+{% endraw %}

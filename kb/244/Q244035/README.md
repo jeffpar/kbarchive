@@ -6,6 +6,8 @@ permalink: /kb/244/Q244035/
 
 ## Q244035: XCON: Event 2125 Caused by mismatched Info?log.cfg Files
 
+{% raw %}
+
 	Article: Q244035
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -84,3 +86,5 @@ permalink: /kb/244/Q244035/
 	
 	=============================================================================
 	
+
+{% endraw %}

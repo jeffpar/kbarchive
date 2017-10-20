@@ -6,6 +6,8 @@ permalink: /kb/173/Q173384/
 
 ## Q173384: HOWTO: Recover from Deleting the Repair Directory and Setup.log
 
+{% raw %}
+
 	Article: Q173384
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -265,3 +267,5 @@ permalink: /kb/173/Q173384/
 	
 	=============================================================================
 	
+
+{% endraw %}

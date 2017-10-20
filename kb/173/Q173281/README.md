@@ -6,6 +6,8 @@ permalink: /kb/173/Q173281/
 
 ## Q173281: How to Reset Permissions for FrontPage 97
 
+{% raw %}
+
 	Article: Q173281
 	Product(s): Word Front Page
 	Version(s): 
@@ -239,3 +241,5 @@ permalink: /kb/173/Q173281/
 	
 	=============================================================================
 	
+
+{% endraw %}

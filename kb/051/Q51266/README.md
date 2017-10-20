@@ -6,6 +6,8 @@ permalink: /kb/051/Q51266/
 
 ## Q51266: Air Traffic Control Communications Using Transponder
 
+{% raw %}
+
 	Article: Q51266
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/051/Q51266/
 	
 	=============================================================================
 	
+
+{% endraw %}

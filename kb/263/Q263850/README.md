@@ -6,6 +6,8 @@ permalink: /kb/263/Q263850/
 
 ## Q263850: XCLN: Problem Forwarding Mail with Attachments
 
+{% raw %}
+
 	Article: Q263850
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,5.0; winnt:5.0 SP2
@@ -117,3 +119,5 @@ permalink: /kb/263/Q263850/
 	
 	=============================================================================
 	
+
+{% endraw %}

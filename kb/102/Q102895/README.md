@@ -6,6 +6,8 @@ permalink: /kb/102/Q102895/
 
 ## Q102895: How Increase &amp; Decrease Size of Compound Structural Index
 
+{% raw %}
+
 	Article: Q102895
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
@@ -75,3 +77,5 @@ permalink: /kb/102/Q102895/
 	
 	=============================================================================
 	
+
+{% endraw %}

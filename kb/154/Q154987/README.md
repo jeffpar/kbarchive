@@ -6,6 +6,8 @@ permalink: /kb/154/Q154987/
 
 ## Q154987: Cannot Use Reserved Names with SYSDIFF
 
+{% raw %}
+
 	Article: Q154987
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/154/Q154987/
 	
 	=============================================================================
 	
+
+{% endraw %}

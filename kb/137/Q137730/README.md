@@ -6,6 +6,8 @@ permalink: /kb/137/Q137730/
 
 ## Q137730: PRB: Cannot Pass Parameters as Float ByVal to VB 4.0 Events
 
+{% raw %}
+
 	Article: Q137730
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -72,3 +74,5 @@ permalink: /kb/137/Q137730/
 	
 	=============================================================================
 	
+
+{% endraw %}

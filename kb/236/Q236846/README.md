@@ -6,6 +6,8 @@ permalink: /kb/236/Q236846/
 
 ## Q236846: Zone: Error Message or Nothing Happens When You Click a Web Link
 
+{% raw %}
+
 	Article: Q236846
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -141,3 +143,5 @@ permalink: /kb/236/Q236846/
 	
 	=============================================================================
 	
+
+{% endraw %}

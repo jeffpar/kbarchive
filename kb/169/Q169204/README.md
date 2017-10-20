@@ -6,6 +6,8 @@ permalink: /kb/169/Q169204/
 
 ## Q169204: Renegotiate CNOS After Connection Reestablishment
 
+{% raw %}
+
 	Article: Q169204
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP2,3.0 SP1
@@ -85,3 +87,5 @@ permalink: /kb/169/Q169204/
 	
 	=============================================================================
 	
+
+{% endraw %}

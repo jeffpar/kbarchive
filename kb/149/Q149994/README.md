@@ -6,6 +6,8 @@ permalink: /kb/149/Q149994/
 
 ## Q149994: ATAPI Causes CRC Errors on Serial Board
 
+{% raw %}
+
 	Article: Q149994
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -63,3 +65,5 @@ permalink: /kb/149/Q149994/
 	
 	=============================================================================
 	
+
+{% endraw %}

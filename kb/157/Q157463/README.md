@@ -6,6 +6,8 @@ permalink: /kb/157/Q157463/
 
 ## Q157463: WD97: How to Use Calculate on Exit in a Forms Document
 
+{% raw %}
+
 	Article: Q157463
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -194,3 +196,5 @@ permalink: /kb/157/Q157463/
 	
 	=============================================================================
 	
+
+{% endraw %}

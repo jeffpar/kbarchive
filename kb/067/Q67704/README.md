@@ -6,6 +6,8 @@ permalink: /kb/067/Q67704/
 
 ## Q67704: Program Manager Doesn't Shrink Group to Program Item Icon
 
+{% raw %}
+
 	Article: Q67704
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -45,3 +47,5 @@ permalink: /kb/067/Q67704/
 	
 	=============================================================================
 	
+
+{% endraw %}

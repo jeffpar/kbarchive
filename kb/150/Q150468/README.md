@@ -6,6 +6,8 @@ permalink: /kb/150/Q150468/
 
 ## Q150468: HOWTO: Clear the Contents of a DBGrid Control
 
+{% raw %}
+
 	Article: Q150468
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -110,3 +112,5 @@ permalink: /kb/150/Q150468/
 	
 	=============================================================================
 	
+
+{% endraw %}

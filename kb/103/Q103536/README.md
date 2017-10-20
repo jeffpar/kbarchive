@@ -6,6 +6,8 @@ permalink: /kb/103/Q103536/
 
 ## Q103536: Defrag Returns Errorlevel 1 When It Finds Allocation Errors
 
+{% raw %}
+
 	Article: Q103536
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -41,3 +43,5 @@ permalink: /kb/103/Q103536/
 	
 	=============================================================================
 	
+
+{% endraw %}

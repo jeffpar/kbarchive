@@ -6,6 +6,8 @@ permalink: /kb/065/Q65403/
 
 ## Q65403: LINK Creating Temporary File Can Hang on 3Com 3+ Open Network
 
+{% raw %}
+
 	Article: Q65403
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:5.1; :7.1
@@ -73,3 +75,5 @@ permalink: /kb/065/Q65403/
 	
 	=============================================================================
 	
+
+{% endraw %}

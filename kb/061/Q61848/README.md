@@ -6,6 +6,8 @@ permalink: /kb/061/Q61848/
 
 ## Q61848: How to Swap Drive Letters with ASSIGN
 
+{% raw %}
+
 	Article: Q61848
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x
@@ -55,3 +57,5 @@ permalink: /kb/061/Q61848/
 	
 	=============================================================================
 	
+
+{% endraw %}

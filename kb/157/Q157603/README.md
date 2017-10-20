@@ -6,6 +6,8 @@ permalink: /kb/157/Q157603/
 
 ## Q157603: Golf: Video Troubleshooting
 
+{% raw %}
+
 	Article: Q157603
 	Product(s): Microsoft Home Games
 	Version(s): 3.0
@@ -75,3 +77,5 @@ permalink: /kb/157/Q157603/
 	
 	=============================================================================
 	
+
+{% endraw %}

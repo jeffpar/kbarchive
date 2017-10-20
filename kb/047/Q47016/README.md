@@ -6,6 +6,8 @@ permalink: /kb/047/Q47016/
 
 ## Q47016: Incorrect Response File Used with LIB Causes U1183 Error
 
+{% raw %}
+
 	Article: Q47016
 	Product(s): See article
 	Version(s): 3.1x   | 3.1x
@@ -103,3 +105,5 @@ permalink: /kb/047/Q47016/
 	or
 	
 	Operations: @response thisisextrajunkbutwillworkcuzofthe<space>delimiter
+
+{% endraw %}

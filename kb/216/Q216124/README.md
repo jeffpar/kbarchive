@@ -6,6 +6,8 @@ permalink: /kb/216/Q216124/
 
 ## Q216124: BUG: Reinstalling App Fails To Replace Text File With Same Date
 
+{% raw %}
+
 	Article: Q216124
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -113,3 +115,5 @@ permalink: /kb/216/Q216124/
 	
 	=============================================================================
 	
+
+{% endraw %}

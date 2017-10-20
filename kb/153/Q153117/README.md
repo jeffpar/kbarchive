@@ -6,6 +6,8 @@ permalink: /kb/153/Q153117/
 
 ## Q153117: DOCERR: ListItemId Doesn't Return -1 as Stated in Online Help
 
+{% raw %}
+
 	Article: Q153117
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -81,3 +83,5 @@ permalink: /kb/153/Q153117/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173771/
 
 ## Q173771: WD97: Check Links Reports Broken Links If Connection Lost or Bad
 
+{% raw %}
+
 	Article: Q173771
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -93,3 +95,5 @@ permalink: /kb/173/Q173771/
 	
 	=============================================================================
 	
+
+{% endraw %}

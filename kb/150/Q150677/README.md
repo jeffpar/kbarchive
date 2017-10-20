@@ -6,6 +6,8 @@ permalink: /kb/150/Q150677/
 
 ## Q150677: FP: Internet Explorer 2.0 Does Not Recognize Right Alignment
 
+{% raw %}
+
 	Article: Q150677
 	Product(s): Word Front Page
 	Version(s): ; WINDOWS:1.1
@@ -50,3 +52,5 @@ permalink: /kb/150/Q150677/
 	
 	=============================================================================
 	
+
+{% endraw %}

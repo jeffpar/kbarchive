@@ -6,6 +6,8 @@ permalink: /kb/129/Q129446/
 
 ## Q129446: PRB: Can't Have Multiple Declare Statements for Same Function
 
+{% raw %}
+
 	Article: Q129446
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -85,3 +87,5 @@ permalink: /kb/129/Q129446/
 	
 	=============================================================================
 	
+
+{% endraw %}

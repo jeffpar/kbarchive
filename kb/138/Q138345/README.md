@@ -6,6 +6,8 @@ permalink: /kb/138/Q138345/
 
 ## Q138345: PRB: Error &quot;File &lt;filename&gt; Not Found&quot; When Adding Files
 
+{% raw %}
+
 	Article: Q138345
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,5.0
@@ -90,3 +92,5 @@ permalink: /kb/138/Q138345/
 	
 	=============================================================================
 	
+
+{% endraw %}

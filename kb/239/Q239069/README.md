@@ -6,6 +6,8 @@ permalink: /kb/239/Q239069/
 
 ## Q239069: PRB: Cannot Open or Find File Error Installing VB Applicati
 
+{% raw %}
+
 	Article: Q239069
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -85,3 +87,5 @@ permalink: /kb/239/Q239069/
 	
 	=============================================================================
 	
+
+{% endraw %}

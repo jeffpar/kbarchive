@@ -6,6 +6,8 @@ permalink: /kb/058/Q58609/
 
 ## Q58609: ON...GOSUB Example from QB 4.50 Help Gives &quot;Label Not Defined&quot;
 
+{% raw %}
+
 	Article: Q58609
 	Product(s): See article
 	Version(s): 4.50
@@ -86,3 +88,5 @@ permalink: /kb/058/Q58609/
 	    RETURN Choice
 	Progend:
 	    END
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154650/
 
 ## Q154650: DBWEB: NT Service Reports Error 1067 and Immediately Terminates
 
+{% raw %}
+
 	Article: Q154650
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:1.0
@@ -196,3 +198,5 @@ permalink: /kb/154/Q154650/
 	
 	=============================================================================
 	
+
+{% endraw %}

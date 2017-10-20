@@ -6,6 +6,8 @@ permalink: /kb/130/Q130482/
 
 ## Q130482: Compaq DeskPro XL 566 Not Automatically Rebooting Upon Failure
 
+{% raw %}
+
 	Article: Q130482
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/130/Q130482/
 	
 	=============================================================================
 	
+
+{% endraw %}

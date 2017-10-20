@@ -6,6 +6,8 @@ permalink: /kb/131/Q131815/
 
 ## Q131815: PRB: Assert Error in BARTOOL.CPP line 398
 
+{% raw %}
+
 	Article: Q131815
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -96,3 +98,5 @@ permalink: /kb/131/Q131815/
 	
 	=============================================================================
 	
+
+{% endraw %}

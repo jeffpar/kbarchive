@@ -6,6 +6,8 @@ permalink: /kb/092/Q92945/
 
 ## Q92945: Bookshelf: How to Restore Word for Windows Integration
 
+{% raw %}
+
 	Article: Q92945
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1992 edition,1993 edition; WINDOWS:2.0a-CD,2.0c-CD,3.1
@@ -74,3 +76,5 @@ permalink: /kb/092/Q92945/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/089/Q89671/
 
 ## Q89671: Converting a FoxBASE File to FoxBASE+ Format
 
+{% raw %}
+
 	Article: Q89671
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -39,3 +41,5 @@ permalink: /kb/089/Q89671/
 	
 	=============================================================================
 	
+
+{% endraw %}

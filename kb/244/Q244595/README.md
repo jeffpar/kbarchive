@@ -6,6 +6,8 @@ permalink: /kb/244/Q244595/
 
 ## Q244595: XADM: How to Create Mailboxes by Means of a .csv File
 
+{% raw %}
+
 	Article: Q244595
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -81,3 +83,5 @@ permalink: /kb/244/Q244595/
 	
 	=============================================================================
 	
+
+{% endraw %}

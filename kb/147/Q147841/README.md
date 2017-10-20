@@ -6,6 +6,8 @@ permalink: /kb/147/Q147841/
 
 ## Q147841: Using Microsoft Outlook with MSN Version 2.0
 
+{% raw %}
+
 	Article: Q147841
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,97
@@ -131,3 +133,5 @@ permalink: /kb/147/Q147841/
 	
 	=============================================================================
 	
+
+{% endraw %}

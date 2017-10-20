@@ -6,6 +6,8 @@ permalink: /kb/129/Q129283/
 
 ## Q129283: RAS Error Message: &quot;Error 1: Incorrect Function&quot;
 
+{% raw %}
+
 	Article: Q129283
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/129/Q129283/
 	
 	=============================================================================
 	
+
+{% endraw %}

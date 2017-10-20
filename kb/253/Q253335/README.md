@@ -6,6 +6,8 @@ permalink: /kb/253/Q253335/
 
 ## Q253335: BUG: CE CommonDialog: ShowOpen Displays Only My Documents Files
 
+{% raw %}
+
 	Article: Q253335
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.11,3.0
@@ -83,3 +85,5 @@ permalink: /kb/253/Q253335/
 	
 	=============================================================================
 	
+
+{% endraw %}

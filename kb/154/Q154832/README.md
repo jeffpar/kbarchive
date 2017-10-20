@@ -6,6 +6,8 @@ permalink: /kb/154/Q154832/
 
 ## Q154832: Disabling Thread Creation for CGI I/O in IIS 1.0
 
+{% raw %}
+
 	Article: Q154832
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -93,3 +95,5 @@ permalink: /kb/154/Q154832/
 	
 	=============================================================================
 	
+
+{% endraw %}

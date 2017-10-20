@@ -6,6 +6,8 @@ permalink: /kb/175/Q175948/
 
 ## Q175948: INFO: Running Visual Basic Applications as Windows NT Services
 
+{% raw %}
+
 	Article: Q175948
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -214,3 +216,5 @@ permalink: /kb/175/Q175948/
 	
 	=============================================================================
 	
+
+{% endraw %}

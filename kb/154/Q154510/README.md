@@ -6,6 +6,8 @@ permalink: /kb/154/Q154510/
 
 ## Q154510: HOWTO: Get More Information on the ODBC Call Failed Error
 
+{% raw %}
+
 	Article: Q154510
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -120,3 +122,5 @@ permalink: /kb/154/Q154510/
 	
 	=============================================================================
 	
+
+{% endraw %}

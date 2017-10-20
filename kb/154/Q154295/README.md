@@ -6,6 +6,8 @@ permalink: /kb/154/Q154295/
 
 ## Q154295: FIX: TDS Errors in a Multithreaded ODBC Application
 
+{% raw %}
+
 	Article: Q154295
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.65
@@ -76,3 +78,5 @@ permalink: /kb/154/Q154295/
 	
 	=============================================================================
 	
+
+{% endraw %}

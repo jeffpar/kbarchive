@@ -6,6 +6,8 @@ permalink: /kb/036/Q36611/
 
 ## Q36611: Share Problems Using sopen and Incorrect oflag
 
+{% raw %}
+
 	Article: Q36611
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -30,3 +32,5 @@ permalink: /kb/036/Q36611/
 	being able to write to it resulting in a file of zero length.
 	
 	These problems may also occur in DOS Version 3.30.
+
+{% endraw %}

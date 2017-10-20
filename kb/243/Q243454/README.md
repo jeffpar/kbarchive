@@ -6,6 +6,8 @@ permalink: /kb/243/Q243454/
 
 ## Q243454: PRB: MFC ActiveX Control Subclassed ComboBox Problems with VB
 
+{% raw %}
+
 	Article: Q243454
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -102,3 +104,5 @@ permalink: /kb/243/Q243454/
 	
 	=============================================================================
 	
+
+{% endraw %}

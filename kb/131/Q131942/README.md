@@ -6,6 +6,8 @@ permalink: /kb/131/Q131942/
 
 ## Q131942: Erratic Mouse Pointer Behavior on Laptop Computers
 
+{% raw %}
+
 	Article: Q131942
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -68,3 +70,5 @@ permalink: /kb/131/Q131942/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/080/Q80496/
 
 ## Q80496: When Not to Use MS-DOS 5.0 CHKDSK and UNDELETE Commands
 
+{% raw %}
+
 	Article: Q80496
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -107,3 +109,5 @@ permalink: /kb/080/Q80496/
 	
 	=============================================================================
 	
+
+{% endraw %}

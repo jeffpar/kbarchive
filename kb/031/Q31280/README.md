@@ -6,6 +6,8 @@ permalink: /kb/031/Q31280/
 
 ## Q31280: Purpose of ECH.EXE with the Microsoft Editor
 
+{% raw %}
+
 	Article: Q31280
 	Product(s): See article
 	Version(s): 1.00
@@ -15,3 +17,5 @@ permalink: /kb/031/Q31280/
 	
 	ECH.EXE is used by the editor to generate the list of files you
 	receive when you do <arg> "*.C" <setfile>.
+
+{% endraw %}

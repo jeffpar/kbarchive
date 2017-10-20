@@ -6,6 +6,8 @@ permalink: /kb/184/Q184609/
 
 ## Q184609: PRB: Compile Error: User-Defined Type Not Defined
 
+{% raw %}
+
 	Article: Q184609
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.1 SP2,2.5,2.6,5.0,6.0
@@ -98,3 +100,5 @@ permalink: /kb/184/Q184609/
 	
 	=============================================================================
 	
+
+{% endraw %}

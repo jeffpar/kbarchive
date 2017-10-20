@@ -6,6 +6,8 @@ permalink: /kb/040/Q40225/
 
 ## Q40225: The Assemble Command with ADD Instructions
 
+{% raw %}
+
 	Article: Q40225
 	Product(s): See article
 	Version(s): 2.20 2.30  | 2.20 2.30
@@ -32,3 +34,5 @@ permalink: /kb/040/Q40225/
 	Microsoft has confirmed this to be a problem in Versions 2.20
 	and 2.30 of CodeView. We are researching this problem and will
 	post new information as it becomes available.
+
+{% endraw %}

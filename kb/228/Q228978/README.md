@@ -6,6 +6,8 @@ permalink: /kb/228/Q228978/
 
 ## Q228978: MidMad: Game Unexpectedly Quits After You Start a Race
 
+{% raw %}
+
 	Article: Q228978
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/228/Q228978/
 	
 	=============================================================================
 	
+
+{% endraw %}

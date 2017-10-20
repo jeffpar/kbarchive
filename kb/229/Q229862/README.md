@@ -6,6 +6,8 @@ permalink: /kb/229/Q229862/
 
 ## Q229862: Microsoft Windows 95 Year 2000 Corporate Update
 
+{% raw %}
+
 	Article: Q229862
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1,2.5
@@ -120,3 +122,5 @@ permalink: /kb/229/Q229862/
 	
 	=============================================================================
 	
+
+{% endraw %}

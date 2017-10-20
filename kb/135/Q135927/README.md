@@ -6,6 +6,8 @@ permalink: /kb/135/Q135927/
 
 ## Q135927: MHS: Command Line Options
 
+{% raw %}
+
 	Article: Q135927
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -133,3 +135,5 @@ permalink: /kb/135/Q135927/
 	
 	=============================================================================
 	
+
+{% endraw %}

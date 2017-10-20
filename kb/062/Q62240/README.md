@@ -6,6 +6,8 @@ permalink: /kb/062/Q62240/
 
 ## Q62240: Mac Hyp: Suggested Possible Uses for the HyperCard API
 
+{% raw %}
+
 	Article: Q62240
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -131,3 +133,5 @@ permalink: /kb/062/Q62240/
 	
 	=============================================================================
 	
+
+{% endraw %}

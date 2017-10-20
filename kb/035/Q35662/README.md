@@ -6,6 +6,8 @@ permalink: /kb/035/Q35662/
 
 ## Q35662: &quot;Out of Memory&quot; in MS-DOS 4.00, OK in MS-DOS 3.x; 30K Impact
 
+{% raw %}
+
 	Article: Q35662
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -27,3 +29,5 @@ permalink: /kb/035/Q35662/
 	and 4.50 for MS-DOS, to Microsoft BASIC Compiler Versions 6.00 and
 	6.00b for MS-DOS and MS OS/2, and to Microsoft BASIC PDS Version 7.00
 	for MS-DOS and MS OS/2.
+
+{% endraw %}

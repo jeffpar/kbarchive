@@ -6,6 +6,8 @@ permalink: /kb/156/Q156535/
 
 ## Q156535: Cannot Open Phone Book File After Using Internet Setup Wizard
 
+{% raw %}
+
 	Article: Q156535
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0
@@ -61,3 +63,5 @@ permalink: /kb/156/Q156535/
 	
 	=============================================================================
 	
+
+{% endraw %}

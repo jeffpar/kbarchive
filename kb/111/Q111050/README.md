@@ -6,6 +6,8 @@ permalink: /kb/111/Q111050/
 
 ## Q111050: ScanDisk Does Not Correct Clusters Marked as Bad
 
+{% raw %}
+
 	Article: Q111050
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -96,3 +98,5 @@ permalink: /kb/111/Q111050/
 	
 	=============================================================================
 	
+
+{% endraw %}

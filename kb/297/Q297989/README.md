@@ -6,6 +6,8 @@ permalink: /kb/297/Q297989/
 
 ## Q297989: PRB: Configured Identity Is Incorrect for IWAM Account
 
+{% raw %}
+
 	Article: Q297989
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -305,3 +307,5 @@ permalink: /kb/297/Q297989/
 	
 	=============================================================================
 	
+
+{% endraw %}

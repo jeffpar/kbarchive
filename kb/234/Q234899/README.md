@@ -6,6 +6,8 @@ permalink: /kb/234/Q234899/
 
 ## Q234899: XCLN: How to Manage Outlook 2000 with System Policies
 
+{% raw %}
+
 	Article: Q234899
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000
@@ -179,3 +181,5 @@ permalink: /kb/234/Q234899/
 	
 	=============================================================================
 	
+
+{% endraw %}

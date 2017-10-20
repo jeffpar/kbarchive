@@ -6,6 +6,8 @@ permalink: /kb/257/Q257608/
 
 ## Q257608: BUG: Record Inserted Even Though the Field Does Not Accept NULL
 
+{% raw %}
+
 	Article: Q257608
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -102,3 +104,5 @@ permalink: /kb/257/Q257608/
 	
 	=============================================================================
 	
+
+{% endraw %}

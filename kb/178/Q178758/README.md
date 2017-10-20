@@ -6,6 +6,8 @@ permalink: /kb/178/Q178758/
 
 ## Q178758: XCON: CCMC Stops Randomly with Out of Disk Space Error
 
+{% raw %}
+
 	Article: Q178758
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -64,3 +66,5 @@ permalink: /kb/178/Q178758/
 	
 	=============================================================================
 	
+
+{% endraw %}

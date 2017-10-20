@@ -6,6 +6,8 @@ permalink: /kb/260/Q260069/
 
 ## Q260069: Malformed HTR Request Returns Source Code for ASP Scripting File
 
+{% raw %}
+
 	Article: Q260069
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -196,3 +198,5 @@ permalink: /kb/260/Q260069/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132353/
 
 ## Q132353: DOCERR: AfterRowColChange Event Documented Incorrectly
 
+{% raw %}
+
 	Article: Q132353
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/132/Q132353/
 	
 	=============================================================================
 	
+
+{% endraw %}

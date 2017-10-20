@@ -6,6 +6,8 @@ permalink: /kb/074/Q74704/
 
 ## Q74704: INFO: Supporting PostScript Features in Windows
 
+{% raw %}
+
 	Article: Q74704
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -138,3 +140,5 @@ permalink: /kb/074/Q74704/
 	
 	=============================================================================
 	
+
+{% endraw %}

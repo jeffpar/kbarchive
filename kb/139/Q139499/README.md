@@ -6,6 +6,8 @@ permalink: /kb/139/Q139499/
 
 ## Q139499: TN3270 Server Doesn't Dynamically Recognize LUA LU Config Change
 
+{% raw %}
+
 	Article: Q139499
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -50,3 +52,5 @@ permalink: /kb/139/Q139499/
 	
 	=============================================================================
 	
+
+{% endraw %}

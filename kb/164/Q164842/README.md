@@ -6,6 +6,8 @@ permalink: /kb/164/Q164842/
 
 ## Q164842: XCON: Enhanced Diagnostics in MTA
 
+{% raw %}
+
 	Article: Q164842
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -48,3 +50,5 @@ permalink: /kb/164/Q164842/
 	
 	=============================================================================
 	
+
+{% endraw %}

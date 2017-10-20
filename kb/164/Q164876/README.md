@@ -6,6 +6,8 @@ permalink: /kb/164/Q164876/
 
 ## Q164876: SMS: Service Pack Upgrade Doesn't Change the Version Bitmap
 
+{% raw %}
+
 	Article: Q164876
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -48,3 +50,5 @@ permalink: /kb/164/Q164876/
 	
 	=============================================================================
 	
+
+{% endraw %}

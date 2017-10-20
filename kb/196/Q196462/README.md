@@ -6,6 +6,8 @@ permalink: /kb/196/Q196462/
 
 ## Q196462: How RDP Transmits Data in Both LAN and WAN Environments
 
+{% raw %}
+
 	Article: Q196462
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -68,3 +70,5 @@ permalink: /kb/196/Q196462/
 	
 	=============================================================================
 	
+
+{% endraw %}

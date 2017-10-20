@@ -6,6 +6,8 @@ permalink: /kb/181/Q181030/
 
 ## Q181030: SNAPRINT Ignores SCS Codes, Print Job Ignores SCS Formatting
 
+{% raw %}
+
 	Article: Q181030
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP2,4.0
@@ -58,3 +60,5 @@ permalink: /kb/181/Q181030/
 	
 	=============================================================================
 	
+
+{% endraw %}

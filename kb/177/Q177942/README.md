@@ -6,6 +6,8 @@ permalink: /kb/177/Q177942/
 
 ## Q177942: XADM: MIME Message Text Word Wrap Option Cannot Be Configured
 
+{% raw %}
+
 	Article: Q177942
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -71,3 +73,5 @@ permalink: /kb/177/Q177942/
 	
 	=============================================================================
 	
+
+{% endraw %}

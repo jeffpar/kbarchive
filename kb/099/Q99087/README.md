@@ -6,6 +6,8 @@ permalink: /kb/099/Q99087/
 
 ## Q99087: Can't Add Function to List in RQBE Expression Builder
 
+{% raw %}
+
 	Article: Q99087
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,3.0
@@ -41,3 +43,5 @@ permalink: /kb/099/Q99087/
 	
 	=============================================================================
 	
+
+{% endraw %}

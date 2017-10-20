@@ -6,6 +6,8 @@ permalink: /kb/110/Q110613/
 
 ## Q110613: PROFS: Err Msg: PWACSI Copy of PO USR Failed - Space
 
+{% raw %}
+
 	Article: Q110613
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.4
@@ -64,3 +66,5 @@ permalink: /kb/110/Q110613/
 	
 	=============================================================================
 	
+
+{% endraw %}

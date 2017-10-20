@@ -6,6 +6,8 @@ permalink: /kb/139/Q139182/
 
 ## Q139182: Multimedia: Second Mouse Cursor In Flyout Menu
 
+{% raw %}
+
 	Article: Q139182
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1995 edition; WINDOWS:1.0,95
@@ -60,3 +62,5 @@ permalink: /kb/139/Q139182/
 	
 	=============================================================================
 	
+
+{% endraw %}

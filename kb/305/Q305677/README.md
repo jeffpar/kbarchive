@@ -6,6 +6,8 @@ permalink: /kb/305/Q305677/
 
 ## Q305677: MSN Explorer 6.1 Connection Dropped When Switching Users In Wind
 
+{% raw %}
+
 	Article: Q305677
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -81,3 +83,5 @@ permalink: /kb/305/Q305677/
 	
 	=============================================================================
 	
+
+{% endraw %}

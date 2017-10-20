@@ -6,6 +6,8 @@ permalink: /kb/242/Q242563/
 
 ## Q242563: AoE II: How to Move Campaigns, Scenarios to a Different Computer
 
+{% raw %}
+
 	Article: Q242563
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0; :
@@ -71,3 +73,5 @@ permalink: /kb/242/Q242563/
 	
 	=============================================================================
 	
+
+{% endraw %}

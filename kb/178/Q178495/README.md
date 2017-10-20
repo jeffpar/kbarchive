@@ -6,6 +6,8 @@ permalink: /kb/178/Q178495/
 
 ## Q178495: FIX: Invalid Page Fault When Deleting Nodes in TreeView Control
 
+{% raw %}
+
 	Article: Q178495
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,97,97sp1,97sp2,97sp3
@@ -109,3 +111,5 @@ permalink: /kb/178/Q178495/
 	
 	=============================================================================
 	
+
+{% endraw %}

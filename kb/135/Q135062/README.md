@@ -6,6 +6,8 @@ permalink: /kb/135/Q135062/
 
 ## Q135062: XCLN: How to Import Folders from a .PST File
 
+{% raw %}
+
 	Article: Q135062
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,8.0x
@@ -68,3 +70,5 @@ permalink: /kb/135/Q135062/
 	
 	=============================================================================
 	
+
+{% endraw %}

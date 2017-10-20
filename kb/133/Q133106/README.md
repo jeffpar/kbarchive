@@ -6,6 +6,8 @@ permalink: /kb/133/Q133106/
 
 ## Q133106: FORTRAN PowerStation 32 QUICKWIN.TXT
 
+{% raw %}
+
 	Article: Q133106
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -296,3 +298,5 @@ permalink: /kb/133/Q133106/
 	
 	=============================================================================
 	
+
+{% endraw %}

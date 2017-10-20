@@ -6,6 +6,8 @@ permalink: /kb/110/Q110977/
 
 ## Q110977: PROFS: 3.4 Distribution Manager Disk &#91;3.5, 1.4 MB&#93;
 
+{% raw %}
+
 	Article: Q110977
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.4
@@ -68,3 +70,5 @@ permalink: /kb/110/Q110977/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132858/
 
 ## Q132858: PowerStack with Cirrus Video Adapter Hangs During Startup
 
+{% raw %}
+
 	Article: Q132858
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/132/Q132858/
 	
 	=============================================================================
 	
+
+{% endraw %}

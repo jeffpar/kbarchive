@@ -6,6 +6,8 @@ permalink: /kb/152/Q152487/
 
 ## Q152487: Rcmd.exe Err Msg: Error 123 Failed to Connect to &#92;&#92;&#92;&#92;Servername
 
+{% raw %}
+
 	Article: Q152487
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -58,3 +60,5 @@ permalink: /kb/152/Q152487/
 	
 	=============================================================================
 	
+
+{% endraw %}

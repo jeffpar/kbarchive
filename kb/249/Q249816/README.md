@@ -6,6 +6,8 @@ permalink: /kb/249/Q249816/
 
 ## Q249816: APPC App Fails with Primary RC = F004, Secondary RC = 00000000
 
+{% raw %}
+
 	Article: Q249816
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -76,3 +78,5 @@ permalink: /kb/249/Q249816/
 	
 	=============================================================================
 	
+
+{% endraw %}

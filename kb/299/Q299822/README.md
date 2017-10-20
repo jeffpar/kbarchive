@@ -6,6 +6,8 @@ permalink: /kb/299/Q299822/
 
 ## Q299822: MapPoint 2002: Default Speed for Streets Is Changed from 31 MPH
 
+{% raw %}
+
 	Article: Q299822
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/299/Q299822/
 	
 	=============================================================================
 	
+
+{% endraw %}

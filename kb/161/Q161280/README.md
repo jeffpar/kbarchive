@@ -6,6 +6,8 @@ permalink: /kb/161/Q161280/
 
 ## Q161280: Unable to Change Previously Used FPNW Server Name
 
+{% raw %}
+
 	Article: Q161280
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -93,3 +95,5 @@ permalink: /kb/161/Q161280/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156133/
 
 ## Q156133: BUG: Execute SQL Toolbar Button Not Disabled with Focus Change
 
+{% raw %}
+
 	Article: Q156133
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.2
@@ -50,3 +52,5 @@ permalink: /kb/156/Q156133/
 	
 	=============================================================================
 	
+
+{% endraw %}

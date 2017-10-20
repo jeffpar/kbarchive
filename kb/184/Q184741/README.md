@@ -6,6 +6,8 @@ permalink: /kb/184/Q184741/
 
 ## Q184741: PRB: MsgBox with Script Control Produces Run-Time Error 70
 
+{% raw %}
+
 	Article: Q184741
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -132,3 +134,5 @@ permalink: /kb/184/Q184741/
 	
 	=============================================================================
 	
+
+{% endraw %}

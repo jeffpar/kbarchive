@@ -6,6 +6,8 @@ permalink: /kb/168/Q168055/
 
 ## Q168055: PRB: Files Saved to Novell Server May Give Read-Only Message
 
+{% raw %}
+
 	Article: Q168055
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0a,6.0,7.0
@@ -69,3 +71,5 @@ permalink: /kb/168/Q168055/
 	
 	=============================================================================
 	
+
+{% endraw %}

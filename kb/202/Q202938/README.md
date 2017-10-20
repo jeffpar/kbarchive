@@ -6,6 +6,8 @@ permalink: /kb/202/Q202938/
 
 ## Q202938: SMS: Unable to Perform Carriage Return in SQL Command Text Box
 
+{% raw %}
+
 	Article: Q202938
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -46,3 +48,5 @@ permalink: /kb/202/Q202938/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125875/
 
 ## Q125875: SHARE Functionality Different in Windows NT and WfW
 
+{% raw %}
+
 	Article: Q125875
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.11
@@ -53,3 +55,5 @@ permalink: /kb/125/Q125875/
 	
 	=============================================================================
 	
+
+{% endraw %}

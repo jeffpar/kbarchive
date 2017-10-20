@@ -6,6 +6,8 @@ permalink: /kb/113/Q113583/
 
 ## Q113583: SYSDIFF Does Not Remove Folders That Are Not Empty
 
+{% raw %}
+
 	Article: Q113583
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/113/Q113583/
 	
 	=============================================================================
 	
+
+{% endraw %}

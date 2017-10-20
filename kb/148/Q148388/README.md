@@ -6,6 +6,8 @@ permalink: /kb/148/Q148388/
 
 ## Q148388: HOWTO: How to Change Default Control Focus on CPropertyPage
 
+{% raw %}
+
 	Article: Q148388
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/148/Q148388/
 	
 	=============================================================================
 	
+
+{% endraw %}

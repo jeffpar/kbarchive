@@ -6,6 +6,8 @@ permalink: /kb/286/Q286339/
 
 ## Q286339: BUG: &quot;Data Type Mismatch&quot; Error After PACK When Used with an IDX
 
+{% raw %}
+
 	Article: Q286339
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -87,3 +89,5 @@ permalink: /kb/286/Q286339/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/060/Q60954/
 
 ## Q60954: Takeoff Roll Instructor Doesn't Look for Incoming Traffic
 
+{% raw %}
+
 	Article: Q60954
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -32,3 +34,5 @@ permalink: /kb/060/Q60954/
 	
 	=============================================================================
 	
+
+{% endraw %}

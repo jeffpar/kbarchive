@@ -6,6 +6,8 @@ permalink: /kb/062/Q62788/
 
 ## Q62788: Setup Does Not Give You a Directory Choice
 
+{% raw %}
+
 	Article: Q62788
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/062/Q62788/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231447/
 
 ## Q231447: Search for Files or Folders Uses MS-DOS Date and Time Limitation
 
+{% raw %}
+
 	Article: Q231447
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5
@@ -67,3 +69,5 @@ permalink: /kb/231/Q231447/
 	
 	=============================================================================
 	
+
+{% endraw %}

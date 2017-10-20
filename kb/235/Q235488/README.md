@@ -6,6 +6,8 @@ permalink: /kb/235/Q235488/
 
 ## Q235488: XFOR: Vcards Not Received Correctly by the GroupWise Connector
 
+{% raw %}
+
 	Article: Q235488
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -64,3 +66,5 @@ permalink: /kb/235/Q235488/
 	
 	=============================================================================
 	
+
+{% endraw %}

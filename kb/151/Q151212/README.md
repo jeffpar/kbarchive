@@ -6,6 +6,8 @@ permalink: /kb/151/Q151212/
 
 ## Q151212: Windows NT 3.5 Setup and the Pentium Pro Processor
 
+{% raw %}
+
 	Article: Q151212
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5
@@ -54,3 +56,5 @@ permalink: /kb/151/Q151212/
 	
 	=============================================================================
 	
+
+{% endraw %}

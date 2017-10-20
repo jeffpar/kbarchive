@@ -6,6 +6,8 @@ permalink: /kb/230/Q230293/
 
 ## Q230293: ActiveX Data Objects 1.5 Release Notes
 
+{% raw %}
+
 	Article: Q230293
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -143,3 +145,5 @@ permalink: /kb/230/Q230293/
 	
 	=============================================================================
 	
+
+{% endraw %}

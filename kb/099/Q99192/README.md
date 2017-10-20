@@ -6,6 +6,8 @@ permalink: /kb/099/Q99192/
 
 ## Q99192: Lanabase Changes when DOS Client not In Default Directory
 
+{% raw %}
+
 	Article: Q99192
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/099/Q99192/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103387/
 
 ## Q103387: Intersvr Does Not List Available COM Ports for Printing
 
+{% raw %}
+
 	Article: Q103387
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -75,3 +77,5 @@ permalink: /kb/103/Q103387/
 	
 	=============================================================================
 	
+
+{% endraw %}

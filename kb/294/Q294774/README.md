@@ -6,6 +6,8 @@ permalink: /kb/294/Q294774/
 
 ## Q294774: ISAPI Extension In-Process w/ Application Marked High Isolation
 
+{% raw %}
+
 	Article: Q294774
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -124,3 +126,5 @@ permalink: /kb/294/Q294774/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/072/Q72887/
 
 ## Q72887: FIX: Using a Higher Processor Directive in a Macro Causes A2006
 
+{% raw %}
+
 	Article: Q72887
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -90,3 +92,5 @@ permalink: /kb/072/Q72887/
 	
 	=============================================================================
 	
+
+{% endraw %}

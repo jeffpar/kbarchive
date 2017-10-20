@@ -6,6 +6,8 @@ permalink: /kb/061/Q61305/
 
 ## Q61305: Warning C4018: signed/unsigned Mismatch Not in QuickHelp
 
+{% raw %}
+
 	Article: Q61305
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -32,3 +34,5 @@ permalink: /kb/061/Q61305/
 	    if ( i == u )    // Warning is generated on this line.
 	        i = 0;
 	}
+
+{% endraw %}

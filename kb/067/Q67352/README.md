@@ -6,6 +6,8 @@ permalink: /kb/067/Q67352/
 
 ## Q67352: Typedef and Struct Member with Same Name Give Bad C2062 Error
 
+{% raw %}
+
 	Article: Q67352
 	Product(s): See article
 	Version(s): 5.10 6.00 6.00a | 5.10 6.00 6.00a
@@ -63,3 +65,5 @@ permalink: /kb/067/Q67352/
 	and 6.00a and QuickC versions 2.00, 2.01, 2.50, and 2.51 (buglist2.00,
 	buglist2.01, buglist2.50, and buglist2.51). We are researching this
 	problem and will post new information here as it becomes available.
+
+{% endraw %}

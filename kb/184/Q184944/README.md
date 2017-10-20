@@ -6,6 +6,8 @@ permalink: /kb/184/Q184944/
 
 ## Q184944: WD97: Send Command Sends Attachment as Word 97 Document
 
+{% raw %}
+
 	Article: Q184944
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/184/Q184944/
 	
 	=============================================================================
 	
+
+{% endraw %}

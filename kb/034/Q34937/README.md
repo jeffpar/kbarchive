@@ -6,6 +6,8 @@ permalink: /kb/034/Q34937/
 
 ## Q34937: Segment Combine Type AT with Equate Variable Causes Problem
 
+{% raw %}
+
 	Article: Q34937
 	Product(s): See article
 	Version(s): 5.10
@@ -40,3 +42,5 @@ permalink: /kb/034/Q34937/
 	
 	code ends
 	end start
+
+{% endraw %}

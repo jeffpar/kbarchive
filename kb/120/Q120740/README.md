@@ -6,6 +6,8 @@ permalink: /kb/120/Q120740/
 
 ## Q120740: Avoid Creating Macintosh Filenames that are NT Device Names
 
+{% raw %}
+
 	Article: Q120740
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -45,3 +47,5 @@ permalink: /kb/120/Q120740/
 	
 	=============================================================================
 	
+
+{% endraw %}

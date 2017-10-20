@@ -6,6 +6,8 @@ permalink: /kb/232/Q232096/
 
 ## Q232096: How to Verify a Successful Installation of DirectPlay 6.1a
 
+{% raw %}
+
 	Article: Q232096
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/232/Q232096/
 	
 	=============================================================================
 	
+
+{% endraw %}

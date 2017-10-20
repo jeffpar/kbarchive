@@ -6,6 +6,8 @@ permalink: /kb/150/Q150856/
 
 ## Q150856: Microsoft Backup May Not Restore Files or Folders
 
+{% raw %}
+
 	Article: Q150856
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -48,3 +50,5 @@ permalink: /kb/150/Q150856/
 	
 	=============================================================================
 	
+
+{% endraw %}

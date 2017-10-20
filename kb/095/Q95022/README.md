@@ -6,6 +6,8 @@ permalink: /kb/095/Q95022/
 
 ## Q95022: INF: ODBC Transaction Isolation Levels
 
+{% raw %}
+
 	Article: Q95022
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -101,3 +103,5 @@ permalink: /kb/095/Q95022/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/102/Q102636/
 
 ## Q102636: Video for Windows VidEdit Doesn't Run on Windows NT
 
+{% raw %}
+
 	Article: Q102636
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:1.0,1.1; winnt:3.1; :3.1
@@ -39,3 +41,5 @@ permalink: /kb/102/Q102636/
 	
 	=============================================================================
 	
+
+{% endraw %}

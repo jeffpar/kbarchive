@@ -6,6 +6,8 @@ permalink: /kb/147/Q147051/
 
 ## Q147051: XFOR: IMC Queue Only Displays the First 10,000 Items
 
+{% raw %}
+
 	Article: Q147051
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/147/Q147051/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130920/
 
 ## Q130920: Windows NT 3.5 Setup on Compaq LTE Elite Hangs
 
+{% raw %}
+
 	Article: Q130920
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -52,3 +54,5 @@ permalink: /kb/130/Q130920/
 	
 	=============================================================================
 	
+
+{% endraw %}

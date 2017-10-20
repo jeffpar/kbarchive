@@ -6,6 +6,8 @@ permalink: /kb/154/Q154972/
 
 ## Q154972: PPT7: Some PowerPoint Features Lost Exporting to HTML
 
+{% raw %}
+
 	Article: Q154972
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0,7.0a; :
@@ -45,3 +47,5 @@ permalink: /kb/154/Q154972/
 	
 	=============================================================================
 	
+
+{% endraw %}

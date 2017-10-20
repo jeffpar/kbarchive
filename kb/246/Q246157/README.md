@@ -6,6 +6,8 @@ permalink: /kb/246/Q246157/
 
 ## Q246157: FS2000: Kneeboard Is Not Displayed
 
+{% raw %}
+
 	Article: Q246157
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -98,3 +100,5 @@ permalink: /kb/246/Q246157/
 	
 	=============================================================================
 	
+
+{% endraw %}

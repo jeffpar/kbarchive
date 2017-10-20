@@ -6,6 +6,8 @@ permalink: /kb/196/Q196838/
 
 ## Q196838: XFOR: GroupWise Migration Event ID 4012
 
+{% raw %}
+
 	Article: Q196838
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/196/Q196838/
 	
 	=============================================================================
 	
+
+{% endraw %}

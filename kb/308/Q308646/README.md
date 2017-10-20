@@ -6,6 +6,8 @@ permalink: /kb/308/Q308646/
 
 ## Q308646: SMS: Screen-Redraw Issues Advertising Programs with Custom Icons
 
+{% raw %}
+
 	Article: Q308646
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3,2.0 SP4
@@ -246,3 +248,5 @@ permalink: /kb/308/Q308646/
 	
 	=============================================================================
 	
+
+{% endraw %}

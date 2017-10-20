@@ -6,6 +6,8 @@ permalink: /kb/094/Q94638/
 
 ## Q94638: Leftover IBM System Files Cause Hangs and Keyboard Problems
 
+{% raw %}
+
 	Article: Q94638
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -69,3 +71,5 @@ permalink: /kb/094/Q94638/
 	
 	=============================================================================
 	
+
+{% endraw %}

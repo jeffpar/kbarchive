@@ -6,6 +6,8 @@ permalink: /kb/327/Q327050/
 
 ## Q327050: Microsoft ADO.NET (Core Reference) Comments And Corrections
 
+{% raw %}
+
 	Article: Q327050
 	Product(s): Microsoft Press
 	Version(s): 
@@ -174,3 +176,5 @@ permalink: /kb/327/Q327050/
 	
 	=============================================================================
 	
+
+{% endraw %}

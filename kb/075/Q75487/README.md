@@ -6,6 +6,8 @@ permalink: /kb/075/Q75487/
 
 ## Q75487: Logitech Cordless Mouse and Windows 3.0
 
+{% raw %}
+
 	Article: Q75487
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -59,3 +61,5 @@ permalink: /kb/075/Q75487/
 	
 	=============================================================================
 	
+
+{% endraw %}

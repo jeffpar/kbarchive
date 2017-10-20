@@ -6,6 +6,8 @@ permalink: /kb/077/Q77094/
 
 ## Q77094: Orchid PC Turbo 286 E Board Incompatible with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q77094
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a
@@ -46,3 +48,5 @@ permalink: /kb/077/Q77094/
 	
 	=============================================================================
 	
+
+{% endraw %}

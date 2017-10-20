@@ -6,6 +6,8 @@ permalink: /kb/124/Q124084/
 
 ## Q124084: FTP OnNet 1.1 PPP Client Hangs Windows NT 3.5 RAS Service
 
+{% raw %}
+
 	Article: Q124084
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -59,3 +61,5 @@ permalink: /kb/124/Q124084/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/058/Q58284/
 
 ## Q58284: Printer Support Changes in Windows 3.0
 
+{% raw %}
+
 	Article: Q58284
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -99,3 +101,5 @@ permalink: /kb/058/Q58284/
 	
 	=============================================================================
 	
+
+{% endraw %}

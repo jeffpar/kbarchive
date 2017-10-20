@@ -6,6 +6,8 @@ permalink: /kb/098/Q98295/
 
 ## Q98295: DoubleSpace Err Msg: ...Crosslink Between Files C: and C:
 
+{% raw %}
+
 	Article: Q98295
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -63,3 +65,5 @@ permalink: /kb/098/Q98295/
 	
 	=============================================================================
 	
+
+{% endraw %}

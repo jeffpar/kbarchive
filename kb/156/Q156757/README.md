@@ -6,6 +6,8 @@ permalink: /kb/156/Q156757/
 
 ## Q156757: How to Dynamically Populate a Select Control with IDC
 
+{% raw %}
+
 	Article: Q156757
 	Product(s): Internet Information Server
 	Version(s): 1.0 2.0
@@ -58,3 +60,5 @@ permalink: /kb/156/Q156757/
 	
 	=============================================================================
 	
+
+{% endraw %}

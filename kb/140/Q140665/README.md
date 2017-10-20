@@ -6,6 +6,8 @@ permalink: /kb/140/Q140665/
 
 ## Q140665: Macintosh Cinemania 96: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q140665
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -107,3 +109,5 @@ permalink: /kb/140/Q140665/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242369/
 
 ## Q242369: HOWTO: Distribute an MMC SnapIn Project With the PDW
 
+{% raw %}
+
 	Article: Q242369
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.1,1.2,6.0
@@ -128,3 +130,5 @@ permalink: /kb/242/Q242369/
 	
 	=============================================================================
 	
+
+{% endraw %}

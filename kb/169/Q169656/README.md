@@ -6,6 +6,8 @@ permalink: /kb/169/Q169656/
 
 ## Q169656: XCON: MTA Fails to Start and Logs Event ID 2143
 
+{% raw %}
+
 	Article: Q169656
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -73,3 +75,5 @@ permalink: /kb/169/Q169656/
 	
 	=============================================================================
 	
+
+{% endraw %}

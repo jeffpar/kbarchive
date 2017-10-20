@@ -6,6 +6,8 @@ permalink: /kb/047/Q47964/
 
 ## Q47964: Contents of Microsoft Academic Edition Packages
 
+{% raw %}
+
 	Article: Q47964
 	Product(s): See article
 	Version(s): 2.00
@@ -46,3 +48,5 @@ permalink: /kb/047/Q47964/
 	If you have further questions regarding this or any other academic
 	releases that Microsoft has offered, contact Microsoft Educational
 	Services at (800) 227-4679.
+
+{% endraw %}

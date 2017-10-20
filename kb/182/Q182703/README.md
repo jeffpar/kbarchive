@@ -6,6 +6,8 @@ permalink: /kb/182/Q182703/
 
 ## Q182703: ODBC Demo for AS/400 Fails with MS Query Version 8.0
 
+{% raw %}
+
 	Article: Q182703
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP2,3.0 SP3,4.0
@@ -75,3 +77,5 @@ permalink: /kb/182/Q182703/
 	
 	=============================================================================
 	
+
+{% endraw %}

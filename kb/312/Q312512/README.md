@@ -6,6 +6,8 @@ permalink: /kb/312/Q312512/
 
 ## Q312512: SMS: Network Discovery Cannot Connect Anonymously to Client
 
+{% raw %}
+
 	Article: Q312512
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -172,3 +174,5 @@ permalink: /kb/312/Q312512/
 	
 	=============================================================================
 	
+
+{% endraw %}

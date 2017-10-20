@@ -6,6 +6,8 @@ permalink: /kb/166/Q166555/
 
 ## Q166555: XADM: Address Book Views Fail If Referenced Object Is Deleted
 
+{% raw %}
+
 	Article: Q166555
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -67,3 +69,5 @@ permalink: /kb/166/Q166555/
 	
 	=============================================================================
 	
+
+{% endraw %}

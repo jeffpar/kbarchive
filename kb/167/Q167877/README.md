@@ -6,6 +6,8 @@ permalink: /kb/167/Q167877/
 
 ## Q167877: WD97: Voice Dictation System Appears to Run Slowly with Word
 
+{% raw %}
+
 	Article: Q167877
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -59,3 +61,5 @@ permalink: /kb/167/Q167877/
 	
 	=============================================================================
 	
+
+{% endraw %}

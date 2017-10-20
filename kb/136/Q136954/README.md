@@ -6,6 +6,8 @@ permalink: /kb/136/Q136954/
 
 ## Q136954: Disk Formatting Is Slow After Failing on Write-Protected Disk
 
+{% raw %}
+
 	Article: Q136954
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -54,3 +56,5 @@ permalink: /kb/136/Q136954/
 	
 	=============================================================================
 	
+
+{% endraw %}

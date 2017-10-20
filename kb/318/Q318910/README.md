@@ -6,6 +6,8 @@ permalink: /kb/318/Q318910/
 
 ## Q318910: XML Programming Core Reference Comments and Corrections
 
+{% raw %}
+
 	Article: Q318910
 	Product(s): Microsoft Press
 	Version(s): 
@@ -198,3 +200,5 @@ permalink: /kb/318/Q318910/
 	
 	=============================================================================
 	
+
+{% endraw %}

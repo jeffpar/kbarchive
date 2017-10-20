@@ -6,6 +6,8 @@ permalink: /kb/246/Q246976/
 
 ## Q246976: Windows Media Player May Start When You Click a NetShow Link
 
+{% raw %}
+
 	Article: Q246976
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1.0,2.0,98 Second Edition
@@ -86,3 +88,5 @@ permalink: /kb/246/Q246976/
 	
 	=============================================================================
 	
+
+{% endraw %}

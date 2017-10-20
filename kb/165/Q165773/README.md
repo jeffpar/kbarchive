@@ -6,6 +6,8 @@ permalink: /kb/165/Q165773/
 
 ## Q165773: WD97: Protected Document Stuck in Normal View After You Edit It
 
+{% raw %}
+
 	Article: Q165773
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -75,3 +77,5 @@ permalink: /kb/165/Q165773/
 	
 	=============================================================================
 	
+
+{% endraw %}

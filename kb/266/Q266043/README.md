@@ -6,6 +6,8 @@ permalink: /kb/266/Q266043/
 
 ## Q266043: XADM: Windows 2000 Server and Key Management Server Interop. WP
 
+{% raw %}
+
 	Article: Q266043
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP1
@@ -53,3 +55,5 @@ permalink: /kb/266/Q266043/
 	
 	=============================================================================
 	
+
+{% endraw %}

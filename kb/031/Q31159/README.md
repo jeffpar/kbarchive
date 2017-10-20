@@ -6,6 +6,8 @@ permalink: /kb/031/Q31159/
 
 ## Q31159: &quot;Out of Data Space
 
+{% raw %}
+
 	Article: Q31159
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -50,3 +52,5 @@ permalink: /kb/031/Q31159/
 	OPEN "z4" FOR OUTPUT AS 4 LEN = 5000
 	OPEN "z6" FOR BINARY AS 6
 	PRINT "Amount of available string space";FRE("")
+
+{% endraw %}

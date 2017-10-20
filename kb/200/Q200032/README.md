@@ -6,6 +6,8 @@ permalink: /kb/200/Q200032/
 
 ## Q200032: XFOR:Typo in French cc:Mail Connector Read Receipt Token String
 
+{% raw %}
+
 	Article: Q200032
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -54,3 +56,5 @@ permalink: /kb/200/Q200032/
 	
 	=============================================================================
 	
+
+{% endraw %}

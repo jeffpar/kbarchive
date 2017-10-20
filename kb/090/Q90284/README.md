@@ -6,6 +6,8 @@ permalink: /kb/090/Q90284/
 
 ## Q90284: Two-Password Shares and Password Caching
 
+{% raw %}
+
 	Article: Q90284
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.10 3.11
@@ -73,3 +75,5 @@ permalink: /kb/090/Q90284/
 	
 	=============================================================================
 	
+
+{% endraw %}

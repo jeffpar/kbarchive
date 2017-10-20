@@ -6,6 +6,8 @@ permalink: /kb/093/Q93086/
 
 ## Q93086: Okidata OL830/PS Driver Doesn't Retain Values in Printer Setup
 
+{% raw %}
+
 	Article: Q93086
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): WINDOWS:3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/093/Q93086/
 	
 	=============================================================================
 	
+
+{% endraw %}

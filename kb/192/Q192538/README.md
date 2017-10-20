@@ -6,6 +6,8 @@ permalink: /kb/192/Q192538/
 
 ## Q192538: DOC: Cursor Functions Not Included in Winuser.h for Windows CE
 
+{% raw %}
+
 	Article: Q192538
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.0
@@ -49,3 +51,5 @@ permalink: /kb/192/Q192538/
 	
 	=============================================================================
 	
+
+{% endraw %}

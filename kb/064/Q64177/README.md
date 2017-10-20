@@ -6,6 +6,8 @@ permalink: /kb/064/Q64177/
 
 ## Q64177: Hot Spot Not Displaced Along Horizontal Axis with Driver 7.04
 
+{% raw %}
+
 	Article: Q64177
 	Product(s): See article
 	Version(s): 7.04
@@ -20,3 +22,5 @@ permalink: /kb/064/Q64177/
 	This problem will occur only in programs that use mouse function 9 to
 	set the hot spot. Including a /Y switch when installing the mouse
 	driver will eliminate this problem.
+
+{% endraw %}

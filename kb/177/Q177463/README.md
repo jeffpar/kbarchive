@@ -6,6 +6,8 @@ permalink: /kb/177/Q177463/
 
 ## Q177463: The Basics of Reading SPX Traces
 
+{% raw %}
+
 	Article: Q177463
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -233,3 +235,5 @@ permalink: /kb/177/Q177463/
 	
 	=============================================================================
 	
+
+{% endraw %}

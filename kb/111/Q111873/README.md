@@ -6,6 +6,8 @@ permalink: /kb/111/Q111873/
 
 ## Q111873: GETFILE() and PUTFILE() Return Values in Uppercase
 
+{% raw %}
+
 	Article: Q111873
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -47,3 +49,5 @@ permalink: /kb/111/Q111873/
 	
 	=============================================================================
 	
+
+{% endraw %}

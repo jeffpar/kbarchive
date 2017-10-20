@@ -6,6 +6,8 @@ permalink: /kb/190/Q190237/
 
 ## Q190237: PRB: ImagEdit Not Included With Visual FoxPro 6.0
 
+{% raw %}
+
 	Article: Q190237
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -56,3 +58,5 @@ permalink: /kb/190/Q190237/
 	
 	=============================================================================
 	
+
+{% endraw %}

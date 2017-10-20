@@ -6,6 +6,8 @@ permalink: /kb/187/Q187765/
 
 ## Q187765: CG4: Clip Gallery Object Appears as Gray Hashed Box
 
+{% raw %}
+
 	Article: Q187765
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/187/Q187765/
 	
 	=============================================================================
 	
+
+{% endraw %}

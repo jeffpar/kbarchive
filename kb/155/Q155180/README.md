@@ -6,6 +6,8 @@ permalink: /kb/155/Q155180/
 
 ## Q155180: Granting RAS Dial-in Permission to a Group of Users
 
+{% raw %}
+
 	Article: Q155180
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -80,3 +82,5 @@ permalink: /kb/155/Q155180/
 	
 	=============================================================================
 	
+
+{% endraw %}

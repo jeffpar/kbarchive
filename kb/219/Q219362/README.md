@@ -6,6 +6,8 @@ permalink: /kb/219/Q219362/
 
 ## Q219362: Using SNA Server Print Server and LPR Degrades Performance
 
+{% raw %}
+
 	Article: Q219362
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/219/Q219362/
 	
 	=============================================================================
 	
+
+{% endraw %}

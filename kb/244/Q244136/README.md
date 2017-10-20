@@ -6,6 +6,8 @@ permalink: /kb/244/Q244136/
 
 ## Q244136: INFO: When Is the Access AutoNumber Field Available?
 
+{% raw %}
+
 	Article: Q244136
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.1,2.1 SP1,2.1 SP2,2.5,2.6,6.0
@@ -146,3 +148,5 @@ permalink: /kb/244/Q244136/
 	
 	=============================================================================
 	
+
+{% endraw %}

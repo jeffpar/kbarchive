@@ -6,6 +6,8 @@ permalink: /kb/163/Q163731/
 
 ## Q163731: WD97: Bullets and Horizontal Lines Lost After Save to FTP Server
 
+{% raw %}
+
 	Article: Q163731
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -91,3 +93,5 @@ permalink: /kb/163/Q163731/
 	
 	=============================================================================
 	
+
+{% endraw %}

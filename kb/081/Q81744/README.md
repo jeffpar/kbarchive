@@ -6,6 +6,8 @@ permalink: /kb/081/Q81744/
 
 ## Q81744: No Way Around Corrupt Swap File on True Pen-Based Machine
 
+{% raw %}
+
 	Article: Q81744
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/081/Q81744/
 	
 	=============================================================================
 	
+
+{% endraw %}

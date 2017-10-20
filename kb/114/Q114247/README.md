@@ -6,6 +6,8 @@ permalink: /kb/114/Q114247/
 
 ## Q114247: PC MAPI: Background on Common Messaging Calls (CMC)
 
+{% raw %}
+
 	Article: Q114247
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -58,3 +60,5 @@ permalink: /kb/114/Q114247/
 	
 	=============================================================================
 	
+
+{% endraw %}

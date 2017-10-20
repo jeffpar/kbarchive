@@ -6,6 +6,8 @@ permalink: /kb/241/Q241151/
 
 ## Q241151: MMC: All Sites Are Stopped and Opening a Web Site Causes Error
 
+{% raw %}
+
 	Article: Q241151
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/241/Q241151/
 	
 	=============================================================================
 	
+
+{% endraw %}

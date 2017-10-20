@@ -6,6 +6,8 @@ permalink: /kb/138/Q138630/
 
 ## Q138630: PRB: AMD PCNET Family Ethernet Adapter Cannot Be Installed Unatt
 
+{% raw %}
+
 	Article: Q138630
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/138/Q138630/
 	
 	=============================================================================
 	
+
+{% endraw %}

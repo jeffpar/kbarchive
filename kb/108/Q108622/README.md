@@ -6,6 +6,8 @@ permalink: /kb/108/Q108622/
 
 ## Q108622: How to Use AppleScript Scripts to Return Values to FoxPro
 
+{% raw %}
+
 	Article: Q108622
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -98,3 +100,5 @@ permalink: /kb/108/Q108622/
 	
 	=============================================================================
 	
+
+{% endraw %}

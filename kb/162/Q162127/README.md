@@ -6,6 +6,8 @@ permalink: /kb/162/Q162127/
 
 ## Q162127: Error: Incorrect Version on File D:&#92;Data&#92;Data&#92;Base&#92;Weapons
 
+{% raw %}
+
 	Article: Q162127
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -75,3 +77,5 @@ permalink: /kb/162/Q162127/
 	
 	=============================================================================
 	
+
+{% endraw %}

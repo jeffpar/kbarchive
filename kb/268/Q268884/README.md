@@ -6,6 +6,8 @@ permalink: /kb/268/Q268884/
 
 ## Q268884: HOWTO: Set or Retrieve the Authentication Level of a DCOM Client
 
+{% raw %}
+
 	Article: Q268884
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -352,3 +354,5 @@ permalink: /kb/268/Q268884/
 	
 	=============================================================================
 	
+
+{% endraw %}

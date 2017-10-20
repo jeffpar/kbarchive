@@ -6,6 +6,8 @@ permalink: /kb/166/Q166174/
 
 ## Q166174: WD97: Styles Not Automatically Updated Attaching to Normal.dot
 
+{% raw %}
+
 	Article: Q166174
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -155,3 +157,5 @@ permalink: /kb/166/Q166174/
 	
 	=============================================================================
 	
+
+{% endraw %}

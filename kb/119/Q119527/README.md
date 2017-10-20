@@ -6,6 +6,8 @@ permalink: /kb/119/Q119527/
 
 ## Q119527: PC Win: Err Msg: Undeliverable Mail
 
+{% raw %}
+
 	Article: Q119527
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -44,3 +46,5 @@ permalink: /kb/119/Q119527/
 	
 	=============================================================================
 	
+
+{% endraw %}

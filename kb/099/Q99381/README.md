@@ -6,6 +6,8 @@ permalink: /kb/099/Q99381/
 
 ## Q99381: Trace Access Pack for Windows 3.0 and 3.1
 
+{% raw %}
+
 	Article: Q99381
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -219,3 +221,5 @@ permalink: /kb/099/Q99381/
 	
 	=============================================================================
 	
+
+{% endraw %}

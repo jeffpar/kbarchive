@@ -6,6 +6,8 @@ permalink: /kb/130/Q130706/
 
 ## Q130706: PRB: MODIFY STRUCTURE Command Doesn't Set Index Order
 
+{% raw %}
+
 	Article: Q130706
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -159,3 +161,5 @@ permalink: /kb/130/Q130706/
 	
 	=============================================================================
 	
+
+{% endraw %}

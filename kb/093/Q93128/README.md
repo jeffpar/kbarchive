@@ -6,6 +6,8 @@ permalink: /kb/093/Q93128/
 
 ## Q93128: Err Msg: &quot;WinPrint Manager Printer Error...&quot; (WinJet)
 
+{% raw %}
+
 	Article: Q93128
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): 3.0,3.0a,3.1,3.11
@@ -117,3 +119,5 @@ permalink: /kb/093/Q93128/
 	
 	=============================================================================
 	
+
+{% endraw %}

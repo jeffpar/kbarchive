@@ -6,6 +6,8 @@ permalink: /kb/135/Q135841/
 
 ## Q135841: PRB: List Box Does Not Respect NumberOfElements
 
+{% raw %}
+
 	Article: Q135841
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -85,3 +87,5 @@ permalink: /kb/135/Q135841/
 	
 	=============================================================================
 	
+
+{% endraw %}

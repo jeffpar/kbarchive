@@ -6,6 +6,8 @@ permalink: /kb/197/Q197976/
 
 ## Q197976: XFOR: Inbound Mail Failure Error with MS Mail and IMC
 
+{% raw %}
+
 	Article: Q197976
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -104,3 +106,5 @@ permalink: /kb/197/Q197976/
 	
 	=============================================================================
 	
+
+{% endraw %}

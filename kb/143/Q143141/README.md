@@ -6,6 +6,8 @@ permalink: /kb/143/Q143141/
 
 ## Q143141: Mylex DAC960 RAID Controller Causes &quot;Missing Operating System&quot;
 
+{% raw %}
+
 	Article: Q143141
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -79,3 +81,5 @@ permalink: /kb/143/Q143141/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177978/
 
 ## Q177978: Modem Does Not Dial All Numbers in Calling Card Rule
 
+{% raw %}
+
 	Article: Q177978
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -204,3 +206,5 @@ permalink: /kb/177/Q177978/
 	
 	=============================================================================
 	
+
+{% endraw %}

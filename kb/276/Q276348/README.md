@@ -6,6 +6,8 @@ permalink: /kb/276/Q276348/
 
 ## Q276348: Casino: Game Stops Responding or Quits When You Press ALT+TAB
 
+{% raw %}
+
 	Article: Q276348
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -67,3 +69,5 @@ permalink: /kb/276/Q276348/
 	
 	=============================================================================
 	
+
+{% endraw %}

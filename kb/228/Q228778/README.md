@@ -6,6 +6,8 @@ permalink: /kb/228/Q228778/
 
 ## Q228778: How to Administer IIS 4.0 on a Different Domain through the MMC
 
+{% raw %}
+
 	Article: Q228778
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/228/Q228778/
 	
 	=============================================================================
 	
+
+{% endraw %}

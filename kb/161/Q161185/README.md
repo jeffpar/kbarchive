@@ -6,6 +6,8 @@ permalink: /kb/161/Q161185/
 
 ## Q161185: FIX: Report Calling Custom Method Returns Incorrect Info
 
+{% raw %}
+
 	Article: Q161185
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -97,3 +99,5 @@ permalink: /kb/161/Q161185/
 	
 	=============================================================================
 	
+
+{% endraw %}

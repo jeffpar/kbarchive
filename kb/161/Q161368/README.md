@@ -6,6 +6,8 @@ permalink: /kb/161/Q161368/
 
 ## Q161368: Service Pack 2 May Cause Loss of Connectivity in Remote Access
 
+{% raw %}
+
 	Article: Q161368
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/161/Q161368/
 	
 	=============================================================================
 	
+
+{% endraw %}

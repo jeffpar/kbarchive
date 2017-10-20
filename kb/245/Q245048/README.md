@@ -6,6 +6,8 @@ permalink: /kb/245/Q245048/
 
 ## Q245048: How to: Hide FTP Folders
 
+{% raw %}
+
 	Article: Q245048
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -102,3 +104,5 @@ permalink: /kb/245/Q245048/
 	
 	=============================================================================
 	
+
+{% endraw %}

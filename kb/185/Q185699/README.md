@@ -6,6 +6,8 @@ permalink: /kb/185/Q185699/
 
 ## Q185699: FS98: Computer Hangs When You Switch to 3-D Mode on Monster 3D
 
+{% raw %}
+
 	Article: Q185699
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -61,3 +63,5 @@ permalink: /kb/185/Q185699/
 	
 	=============================================================================
 	
+
+{% endraw %}

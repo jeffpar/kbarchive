@@ -6,6 +6,8 @@ permalink: /kb/162/Q162838/
 
 ## Q162838: Stop 0xA IRQL_NOT_LESS_OR_EQUAL Digifep5.sys During Shutdown
 
+{% raw %}
+
 	Article: Q162838
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/162/Q162838/
 	
 	=============================================================================
 	
+
+{% endraw %}

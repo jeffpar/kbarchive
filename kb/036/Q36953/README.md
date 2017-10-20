@@ -6,6 +6,8 @@ permalink: /kb/036/Q36953/
 
 ## Q36953: Warning C1015 May be Caused by Lack of Available File Handles
 
+{% raw %}
+
 	Article: Q36953
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -43,3 +45,5 @@ permalink: /kb/036/Q36953/
 	Closing a file makes its handle available to the operating system
 	again, so the lack of available file handles refers to the number of
 	files open at any one time.
+
+{% endraw %}

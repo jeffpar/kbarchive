@@ -6,6 +6,8 @@ permalink: /kb/098/Q98635/
 
 ## Q98635: Interlnk Client Cannot Access Drives on Server
 
+{% raw %}
+
 	Article: Q98635
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -74,3 +76,5 @@ permalink: /kb/098/Q98635/
 	
 	=============================================================================
 	
+
+{% endraw %}

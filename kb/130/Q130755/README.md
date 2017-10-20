@@ -6,6 +6,8 @@ permalink: /kb/130/Q130755/
 
 ## Q130755: PC Adm: Err Msg: Notice 9 Error File Not Accessible
 
+{% raw %}
+
 	Article: Q130755
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -82,3 +84,5 @@ permalink: /kb/130/Q130755/
 	
 	=============================================================================
 	
+
+{% endraw %}

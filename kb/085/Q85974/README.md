@@ -6,6 +6,8 @@ permalink: /kb/085/Q85974/
 
 ## Q85974: Err Msg: &quot;Incorrect MS-DOS Version&quot; During Setup (W/QEMM386)
 
+{% raw %}
+
 	Article: Q85974
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/085/Q85974/
 	
 	=============================================================================
 	
+
+{% endraw %}

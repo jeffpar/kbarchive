@@ -6,6 +6,8 @@ permalink: /kb/198/Q198728/
 
 ## Q198728: SMS: Cannot Remote Control Clients Using DirectX
 
+{% raw %}
+
 	Article: Q198728
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -69,3 +71,5 @@ permalink: /kb/198/Q198728/
 	
 	=============================================================================
 	
+
+{% endraw %}

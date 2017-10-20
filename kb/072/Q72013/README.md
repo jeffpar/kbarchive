@@ -6,6 +6,8 @@ permalink: /kb/072/Q72013/
 
 ## Q72013: Examining Contents of UMBs
 
+{% raw %}
+
 	Article: Q72013
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -137,3 +139,5 @@ permalink: /kb/072/Q72013/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194480/
 
 ## Q194480: Encarta 98: Unable to Play Video Clips in Full Screen Mode
 
+{% raw %}
+
 	Article: Q194480
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -81,3 +83,5 @@ permalink: /kb/194/Q194480/
 	
 	=============================================================================
 	
+
+{% endraw %}

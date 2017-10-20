@@ -6,6 +6,8 @@ permalink: /kb/156/Q156759/
 
 ## Q156759: STL Sample for deque::push_back and deque::pop_back Functions
 
+{% raw %}
+
 	Article: Q156759
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -150,3 +152,5 @@ permalink: /kb/156/Q156759/
 	
 	=============================================================================
 	
+
+{% endraw %}

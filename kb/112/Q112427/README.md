@@ -6,6 +6,8 @@ permalink: /kb/112/Q112427/
 
 ## Q112427: DDE Commands Must Be Bracketed for Non-Windows Platform
 
+{% raw %}
+
 	Article: Q112427
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b; MS-DOS:2.5,2.5a,2.5b
@@ -51,3 +53,5 @@ permalink: /kb/112/Q112427/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159959/
 
 ## Q159959: Connection Fails Over IPX with Duplicate SPX Connection ID
 
+{% raw %}
+
 	Article: Q159959
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0
@@ -72,3 +74,5 @@ permalink: /kb/159/Q159959/
 	
 	=============================================================================
 	
+
+{% endraw %}

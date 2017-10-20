@@ -6,6 +6,8 @@ permalink: /kb/142/Q142567/
 
 ## Q142567: HOWTO: Filter a Child Grid Using a Parent Combo Box
 
+{% raw %}
+
 	Article: Q142567
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/142/Q142567/
 	
 	=============================================================================
 	
+
+{% endraw %}

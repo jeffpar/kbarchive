@@ -6,6 +6,8 @@ permalink: /kb/268/Q268442/
 
 ## Q268442: SMS: Design Considerations When Integrating NetWare &amp; SMS 2.0
 
+{% raw %}
+
 	Article: Q268442
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -133,3 +135,5 @@ permalink: /kb/268/Q268442/
 	
 	=============================================================================
 	
+
+{% endraw %}

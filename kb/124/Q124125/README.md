@@ -6,6 +6,8 @@ permalink: /kb/124/Q124125/
 
 ## Q124125: How to Create Your Own Base Class for Custom Default Form
 
+{% raw %}
+
 	Article: Q124125
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -70,3 +72,5 @@ permalink: /kb/124/Q124125/
 	
 	=============================================================================
 	
+
+{% endraw %}

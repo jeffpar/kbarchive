@@ -6,6 +6,8 @@ permalink: /kb/185/Q185987/
 
 ## Q185987: Virtual Globe 98: World Flights: Flight Does Not Stop
 
+{% raw %}
+
 	Article: Q185987
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -49,3 +51,5 @@ permalink: /kb/185/Q185987/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187870/
 
 ## Q187870: HOWTO: How to Remove and Reinstall the Windows NT 4.0 Option Pac
 
+{% raw %}
+
 	Article: Q187870
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -165,3 +167,5 @@ permalink: /kb/187/Q187870/
 	
 	=============================================================================
 	
+
+{% endraw %}

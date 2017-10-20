@@ -6,6 +6,8 @@ permalink: /kb/185/Q185736/
 
 ## Q185736: Applications May Appear Hung or Unresponsive on Windows NT 4.0
 
+{% raw %}
+
 	Article: Q185736
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/185/Q185736/
 	
 	=============================================================================
 	
+
+{% endraw %}

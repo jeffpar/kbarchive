@@ -6,6 +6,8 @@ permalink: /kb/099/Q99482/
 
 ## Q99482: Use Status Requests to Identify Workstation Adapter
 
+{% raw %}
+
 	Article: Q99482
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -27,3 +29,5 @@ permalink: /kb/099/Q99482/
 	
 	=============================================================================
 	
+
+{% endraw %}

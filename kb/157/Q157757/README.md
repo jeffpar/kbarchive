@@ -6,6 +6,8 @@ permalink: /kb/157/Q157757/
 
 ## Q157757: WD97: Background Color Won't Print
 
+{% raw %}
+
 	Article: Q157757
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -84,3 +86,5 @@ permalink: /kb/157/Q157757/
 	
 	=============================================================================
 	
+
+{% endraw %}

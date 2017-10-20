@@ -6,6 +6,8 @@ permalink: /kb/250/Q250478/
 
 ## Q250478: Streets 98 Err Msg: Application Can't Find GPS on Your System...
 
+{% raw %}
+
 	Article: Q250478
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -79,3 +81,5 @@ permalink: /kb/250/Q250478/
 	
 	=============================================================================
 	
+
+{% endraw %}

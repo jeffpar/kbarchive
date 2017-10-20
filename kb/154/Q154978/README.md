@@ -6,6 +6,8 @@ permalink: /kb/154/Q154978/
 
 ## Q154978: Err Msg: The Product Information File Is Not Available
 
+{% raw %}
+
 	Article: Q154978
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3,2.0,2.5,2.51,2.52,2.6
@@ -67,3 +69,5 @@ permalink: /kb/154/Q154978/
 	
 	=============================================================================
 	
+
+{% endraw %}

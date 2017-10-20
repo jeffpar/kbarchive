@@ -6,6 +6,8 @@ permalink: /kb/140/Q140975/
 
 ## Q140975: XFOR: Event ID 4037 An Exception Has Occurred
 
+{% raw %}
+
 	Article: Q140975
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -60,3 +62,5 @@ permalink: /kb/140/Q140975/
 	
 	=============================================================================
 	
+
+{% endraw %}

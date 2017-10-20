@@ -6,6 +6,8 @@ permalink: /kb/260/Q260856/
 
 ## Q260856: PRB: File Access Denied Opening Table Accessed by Using  ADO
 
+{% raw %}
+
 	Article: Q260856
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -205,3 +207,5 @@ permalink: /kb/260/Q260856/
 	
 	=============================================================================
 	
+
+{% endraw %}

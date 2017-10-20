@@ -6,6 +6,8 @@ permalink: /kb/172/Q172454/
 
 ## Q172454: Err Msg: An Error Occurred While Windows Was Working with...
 
+{% raw %}
+
 	Article: Q172454
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -93,3 +95,5 @@ permalink: /kb/172/Q172454/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132817/
 
 ## Q132817: E-mail Connection Beta Fails with Windows 95 MAPI.DLL.
 
+{% raw %}
+
 	Article: Q132817
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/132/Q132817/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147250/
 
 ## Q147250: Strauss: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q147250
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/147/Q147250/
 	
 	=============================================================================
 	
+
+{% endraw %}

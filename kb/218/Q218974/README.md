@@ -6,6 +6,8 @@ permalink: /kb/218/Q218974/
 
 ## Q218974: Cannot Boot off of a SCSI Device Other Than LUN 0
 
+{% raw %}
+
 	Article: Q218974
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -60,3 +62,5 @@ permalink: /kb/218/Q218974/
 	
 	=============================================================================
 	
+
+{% endraw %}

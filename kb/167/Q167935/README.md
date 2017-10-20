@@ -6,6 +6,8 @@ permalink: /kb/167/Q167935/
 
 ## Q167935: XCLN: Able to Log On with Incorrect Windows NT Credentials
 
+{% raw %}
+
 	Article: Q167935
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -103,3 +105,5 @@ permalink: /kb/167/Q167935/
 	
 	=============================================================================
 	
+
+{% endraw %}

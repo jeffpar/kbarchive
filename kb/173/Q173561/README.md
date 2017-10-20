@@ -6,6 +6,8 @@ permalink: /kb/173/Q173561/
 
 ## Q173561: XADM: Can Not Limit Message Size Submitted by an Anonymous User
 
+{% raw %}
+
 	Article: Q173561
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -53,3 +55,5 @@ permalink: /kb/173/Q173561/
 	
 	=============================================================================
 	
+
+{% endraw %}

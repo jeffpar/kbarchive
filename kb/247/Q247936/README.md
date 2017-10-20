@@ -6,6 +6,8 @@ permalink: /kb/247/Q247936/
 
 ## Q247936: XWEB: Error Message Accessing OWA:  HTTP 404 Not Found
 
+{% raw %}
+
 	Article: Q247936
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -65,3 +67,5 @@ permalink: /kb/247/Q247936/
 	
 	=============================================================================
 	
+
+{% endraw %}

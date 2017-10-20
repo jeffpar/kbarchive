@@ -6,6 +6,8 @@ permalink: /kb/141/Q141016/
 
 ## Q141016: FIX: Visual SourceSafe Books Online Help Is for Visual Basic
 
+{% raw %}
+
 	Article: Q141016
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/141/Q141016/
 	
 	=============================================================================
 	
+
+{% endraw %}

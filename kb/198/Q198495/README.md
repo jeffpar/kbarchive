@@ -6,6 +6,8 @@ permalink: /kb/198/Q198495/
 
 ## Q198495: XWEB: &quot;Failed To Open This Message&quot; Error After Applying SP1
 
+{% raw %}
+
 	Article: Q198495
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5SP1
@@ -45,3 +47,5 @@ permalink: /kb/198/Q198495/
 	
 	=============================================================================
 	
+
+{% endraw %}

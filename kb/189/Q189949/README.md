@@ -6,6 +6,8 @@ permalink: /kb/189/Q189949/
 
 ## Q189949: PRB: Run-Time Error After an ActiveX Server Crashes
 
+{% raw %}
+
 	Article: Q189949
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -142,3 +144,5 @@ permalink: /kb/189/Q189949/
 	
 	=============================================================================
 	
+
+{% endraw %}

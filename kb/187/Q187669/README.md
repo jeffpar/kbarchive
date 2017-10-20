@@ -6,6 +6,8 @@ permalink: /kb/187/Q187669/
 
 ## Q187669: Unable to Use NetBIOS Resources over SLIP
 
+{% raw %}
+
 	Article: Q187669
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/187/Q187669/
 	
 	=============================================================================
 	
+
+{% endraw %}

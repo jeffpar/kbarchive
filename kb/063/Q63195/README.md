@@ -6,6 +6,8 @@ permalink: /kb/063/Q63195/
 
 ## Q63195: When Out of Memory in QBX 7.00, Instant Watch Reruns Program
 
+{% raw %}
+
 	Article: Q63195
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -67,3 +69,5 @@ permalink: /kb/063/Q63195/
 	   PRINT
 	   PRINT
 	   PRINT
+
+{% endraw %}

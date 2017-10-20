@@ -6,6 +6,8 @@ permalink: /kb/109/Q109050/
 
 ## Q109050: Err Msg: While Registering OLE Servers, Setup Had a Problem...
 
+{% raw %}
+
 	Article: Q109050
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.0
@@ -169,3 +171,5 @@ permalink: /kb/109/Q109050/
 	
 	=============================================================================
 	
+
+{% endraw %}

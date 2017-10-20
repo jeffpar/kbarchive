@@ -6,6 +6,8 @@ permalink: /kb/195/Q195620/
 
 ## Q195620: HOWTO: Check for Component Gallery/Class Browser Version
 
+{% raw %}
+
 	Article: Q195620
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -54,3 +56,5 @@ permalink: /kb/195/Q195620/
 	
 	=============================================================================
 	
+
+{% endraw %}

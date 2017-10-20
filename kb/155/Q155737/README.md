@@ -6,6 +6,8 @@ permalink: /kb/155/Q155737/
 
 ## Q155737: StickyKeys Feature Deactivated Without Notice
 
+{% raw %}
+
 	Article: Q155737
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:
@@ -52,3 +54,5 @@ permalink: /kb/155/Q155737/
 	
 	=============================================================================
 	
+
+{% endraw %}

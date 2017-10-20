@@ -6,6 +6,8 @@ permalink: /kb/256/Q256283/
 
 ## Q256283: Error Message: The Pipe Has Ended
 
+{% raw %}
+
 	Article: Q256283
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0
@@ -64,3 +66,5 @@ permalink: /kb/256/Q256283/
 	
 	=============================================================================
 	
+
+{% endraw %}

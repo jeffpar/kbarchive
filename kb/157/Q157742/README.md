@@ -6,6 +6,8 @@ permalink: /kb/157/Q157742/
 
 ## Q157742: WOW Applications Calling KillTimer() API May Leak Memory
 
+{% raw %}
+
 	Article: Q157742
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -49,3 +51,5 @@ permalink: /kb/157/Q157742/
 	
 	=============================================================================
 	
+
+{% endraw %}

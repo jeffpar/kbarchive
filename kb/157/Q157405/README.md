@@ -6,6 +6,8 @@ permalink: /kb/157/Q157405/
 
 ## Q157405: BUG: Reverting to OLDVAL() Causes Error with Table Buffering
 
+{% raw %}
+
 	Article: Q157405
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -86,3 +88,5 @@ permalink: /kb/157/Q157405/
 	
 	=============================================================================
 	
+
+{% endraw %}

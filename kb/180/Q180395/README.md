@@ -6,6 +6,8 @@ permalink: /kb/180/Q180395/
 
 ## Q180395: HDR Unable to Create a PK Column on DB2 Subscription Table
 
+{% raw %}
+
 	Article: Q180395
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/180/Q180395/
 	
 	=============================================================================
 	
+
+{% endraw %}

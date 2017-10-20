@@ -6,6 +6,8 @@ permalink: /kb/073/Q73584/
 
 ## Q73584: Using Multiple Software Disk Caches Can Destroy Data
 
+{% raw %}
+
 	Article: Q73584
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -69,3 +71,5 @@ permalink: /kb/073/Q73584/
 	
 	=============================================================================
 	
+
+{% endraw %}

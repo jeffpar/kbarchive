@@ -6,6 +6,8 @@ permalink: /kb/243/Q243611/
 
 ## Q243611: Setup Screens Freeze During MSN 5.0 Installation
 
+{% raw %}
+
 	Article: Q243611
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:5.0
@@ -56,3 +58,5 @@ permalink: /kb/243/Q243611/
 	
 	=============================================================================
 	
+
+{% endraw %}

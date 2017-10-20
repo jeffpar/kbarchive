@@ -6,6 +6,8 @@ permalink: /kb/241/Q241035/
 
 ## Q241035: Mastering MS Visual Basic 6.0 Development Comments &amp; Corrections
 
+{% raw %}
+
 	Article: Q241035
 	Product(s): Microsoft Press
 	Version(s): 
@@ -110,3 +112,5 @@ permalink: /kb/241/Q241035/
 	
 	=============================================================================
 	
+
+{% endraw %}

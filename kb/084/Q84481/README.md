@@ -6,6 +6,8 @@ permalink: /kb/084/Q84481/
 
 ## Q84481: SPY Utility Reports Application Name, Not Module Name
 
+{% raw %}
+
 	Article: Q84481
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -46,3 +48,5 @@ permalink: /kb/084/Q84481/
 	
 	=============================================================================
 	
+
+{% endraw %}

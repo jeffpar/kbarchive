@@ -6,6 +6,8 @@ permalink: /kb/155/Q155085/
 
 ## Q155085: BUG: 3.0 WAIT WINDOW Display Performance Much Slower than 2.6
 
+{% raw %}
+
 	Article: Q155085
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -83,3 +85,5 @@ permalink: /kb/155/Q155085/
 	
 	=============================================================================
 	
+
+{% endraw %}

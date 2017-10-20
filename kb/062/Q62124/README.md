@@ -6,6 +6,8 @@ permalink: /kb/062/Q62124/
 
 ## Q62124: Mac Hyp: Explanation of messageRef (Message Reference)
 
+{% raw %}
+
 	Article: Q62124
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -46,3 +48,5 @@ permalink: /kb/062/Q62124/
 	
 	=============================================================================
 	
+
+{% endraw %}

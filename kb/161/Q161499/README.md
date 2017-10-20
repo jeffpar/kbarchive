@@ -6,6 +6,8 @@ permalink: /kb/161/Q161499/
 
 ## Q161499: XADM: Event 7042 During DS/IS Consistency Check
 
+{% raw %}
+
 	Article: Q161499
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -68,3 +70,5 @@ permalink: /kb/161/Q161499/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/039/Q39248/
 
 ## Q39248: QB.EXE 4.x Doesn't Save Screen Settings on Hercules Adapter
 
+{% raw %}
+
 	Article: Q39248
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -26,3 +28,5 @@ permalink: /kb/039/Q39248/
 	(buglist6.00, buglist6.00b). This problem was corrected in the QBX.EXE
 	(QuickBASIC Extended) environment that comes with Microsoft BASIC
 	Professional Development System (PDS) Version 7.00 (fixlist7.00).
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131786/
 
 ## Q131786: SNA Setup Fails When Installing 33rd DLC 802.2 Link Service
 
+{% raw %}
+
 	Article: Q131786
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1
@@ -100,3 +102,5 @@ permalink: /kb/131/Q131786/
 	
 	=============================================================================
 	
+
+{% endraw %}

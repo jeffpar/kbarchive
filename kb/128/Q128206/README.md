@@ -6,6 +6,8 @@ permalink: /kb/128/Q128206/
 
 ## Q128206: PRB: Function Requires Row or Table Buffering Mode
 
+{% raw %}
+
 	Article: Q128206
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -74,3 +76,5 @@ permalink: /kb/128/Q128206/
 	
 	=============================================================================
 	
+
+{% endraw %}

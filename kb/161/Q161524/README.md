@@ -6,6 +6,8 @@ permalink: /kb/161/Q161524/
 
 ## Q161524: WD97: Invalid Page Fault Modifying Numbered Style
 
+{% raw %}
+
 	Article: Q161524
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/161/Q161524/
 	
 	=============================================================================
 	
+
+{% endraw %}

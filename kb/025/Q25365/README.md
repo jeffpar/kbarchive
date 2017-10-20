@@ -6,6 +6,8 @@ permalink: /kb/025/Q25365/
 
 ## Q25365: Incorrect Error Generated for Very Small COM Files
 
+{% raw %}
+
 	Article: Q25365
 	Product(s): See article
 	Version(s): 2.00 2.10 2.20 2.30
@@ -26,3 +28,5 @@ permalink: /kb/025/Q25365/
 	Microsoft has confirmed this to be a problem with CodeView Version
 	2.00. We are researching this problem and will post new information as
 	it becomes available.
+
+{% endraw %}

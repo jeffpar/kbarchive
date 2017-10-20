@@ -6,6 +6,8 @@ permalink: /kb/069/Q69111/
 
 ## Q69111: Correction for Scroll SUB in GENERAL.BAS, UI Toolbox
 
+{% raw %}
+
 	Article: Q69111
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -58,3 +60,5 @@ permalink: /kb/069/Q69111/
 	        INTERRUPT 16, regs, regs
 	    END IF
 	END SUB
+
+{% endraw %}

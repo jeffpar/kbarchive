@@ -6,6 +6,8 @@ permalink: /kb/096/Q96329/
 
 ## Q96329: How MemMaker Finds Current Files and Buffers Settings
 
+{% raw %}
+
 	Article: Q96329
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -44,3 +46,5 @@ permalink: /kb/096/Q96329/
 	
 	=============================================================================
 	
+
+{% endraw %}

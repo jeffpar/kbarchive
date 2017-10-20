@@ -6,6 +6,8 @@ permalink: /kb/130/Q130006/
 
 ## Q130006: PRB: Creator Type Not TEXT with FCREATE If Extension Not .TXT
 
+{% raw %}
+
 	Article: Q130006
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -104,3 +106,5 @@ permalink: /kb/130/Q130006/
 	
 	=============================================================================
 	
+
+{% endraw %}

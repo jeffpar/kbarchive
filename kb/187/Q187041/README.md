@@ -6,6 +6,8 @@ permalink: /kb/187/Q187041/
 
 ## Q187041: Available Servers Box Disappears from Client GUI
 
+{% raw %}
+
 	Article: Q187041
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -37,3 +39,5 @@ permalink: /kb/187/Q187041/
 	
 	=============================================================================
 	
+
+{% endraw %}

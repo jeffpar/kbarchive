@@ -6,6 +6,8 @@ permalink: /kb/184/Q184549/
 
 ## Q184549: Service Fails Unexpectedly with Access Violation in s1ppcass()
 
+{% raw %}
+
 	Article: Q184549
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -143,3 +145,5 @@ permalink: /kb/184/Q184549/
 	
 	=============================================================================
 	
+
+{% endraw %}

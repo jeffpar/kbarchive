@@ -6,6 +6,8 @@ permalink: /kb/139/Q139503/
 
 ## Q139503: Alarm Will Not Activate on an Archive File with Reminders
 
+{% raw %}
+
 	Article: Q139503
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -42,3 +44,5 @@ permalink: /kb/139/Q139503/
 	
 	=============================================================================
 	
+
+{% endraw %}

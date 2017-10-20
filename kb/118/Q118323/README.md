@@ -6,6 +6,8 @@ permalink: /kb/118/Q118323/
 
 ## Q118323: WFWG Err Msg: WINFILE Caused a GP Fault at 0009:028A...
 
+{% raw %}
+
 	Article: Q118323
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -72,3 +74,5 @@ permalink: /kb/118/Q118323/
 	
 	=============================================================================
 	
+
+{% endraw %}

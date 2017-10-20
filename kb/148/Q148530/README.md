@@ -6,6 +6,8 @@ permalink: /kb/148/Q148530/
 
 ## Q148530: Bookshelf 96-97: Changes to Internet Updates Not Saved
 
+{% raw %}
+
 	Article: Q148530
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -56,3 +58,5 @@ permalink: /kb/148/Q148530/
 	
 	=============================================================================
 	
+
+{% endraw %}

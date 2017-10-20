@@ -6,6 +6,8 @@ permalink: /kb/083/Q83064/
 
 ## Q83064: Using ANSI.SYS /X to Remap Extended Keys
 
+{% raw %}
+
 	Article: Q83064
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.0,4.01,4.01a,5.x,6.0,6.2,6.21,6.22
@@ -84,3 +86,5 @@ permalink: /kb/083/Q83064/
 	
 	=============================================================================
 	
+
+{% endraw %}

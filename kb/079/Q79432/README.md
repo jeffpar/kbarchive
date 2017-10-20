@@ -6,6 +6,8 @@ permalink: /kb/079/Q79432/
 
 ## Q79432: PIF Editor Help Screen for Each Option
 
+{% raw %}
+
 	Article: Q79432
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -38,3 +40,5 @@ permalink: /kb/079/Q79432/
 	
 	=============================================================================
 	
+
+{% endraw %}

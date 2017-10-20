@@ -6,6 +6,8 @@ permalink: /kb/181/Q181545/
 
 ## Q181545: Error Message: An External Winnt Error Has Occurred
 
+{% raw %}
+
 	Article: Q181545
 	Product(s): Microsoft Windows NT
 	Version(s): 4.00
@@ -68,3 +70,5 @@ permalink: /kb/181/Q181545/
 	
 	=============================================================================
 	
+
+{% endraw %}

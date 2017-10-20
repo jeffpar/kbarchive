@@ -6,6 +6,8 @@ permalink: /kb/280/Q280512/
 
 ## Q280512: SAMPLE: ATLCPImplMT - ATL Event Firing Across COM Apartments
 
+{% raw %}
+
 	Article: Q280512
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0
@@ -179,3 +181,5 @@ permalink: /kb/280/Q280512/
 	
 	=============================================================================
 	
+
+{% endraw %}

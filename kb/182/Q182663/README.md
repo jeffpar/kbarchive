@@ -6,6 +6,8 @@ permalink: /kb/182/Q182663/
 
 ## Q182663: XADM: NDR After Information Store Stops Unexpectedly
 
+{% raw %}
+
 	Article: Q182663
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -65,3 +67,5 @@ permalink: /kb/182/Q182663/
 	
 	=============================================================================
 	
+
+{% endraw %}

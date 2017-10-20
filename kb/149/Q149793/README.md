@@ -6,6 +6,8 @@ permalink: /kb/149/Q149793/
 
 ## Q149793: Cannot Type English or Chinese Characters in Text Box
 
+{% raw %}
+
 	Article: Q149793
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -54,3 +56,5 @@ permalink: /kb/149/Q149793/
 	
 	=============================================================================
 	
+
+{% endraw %}

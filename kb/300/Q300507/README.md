@@ -6,6 +6,8 @@ permalink: /kb/300/Q300507/
 
 ## Q300507: Passport Encryption Key Sent Through Express Mail
 
+{% raw %}
+
 	Article: Q300507
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -52,3 +54,5 @@ permalink: /kb/300/Q300507/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129008/
 
 ## Q129008: Windows NT Displays a Stall or Panic Error When Printing
 
+{% raw %}
+
 	Article: Q129008
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -52,3 +54,5 @@ permalink: /kb/129/Q129008/
 	
 	=============================================================================
 	
+
+{% endraw %}

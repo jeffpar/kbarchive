@@ -6,6 +6,8 @@ permalink: /kb/145/Q145970/
 
 ## Q145970: XCLN: Search Items Don't Match Criteria
 
+{% raw %}
+
 	Article: Q145970
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/145/Q145970/
 	
 	=============================================================================
 	
+
+{% endraw %}

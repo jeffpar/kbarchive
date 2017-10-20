@@ -6,6 +6,8 @@ permalink: /kb/168/Q168945/
 
 ## Q168945: Puzzle Collection: Rat Poker: Red And Orange Rats Appear Similar
 
+{% raw %}
+
 	Article: Q168945
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:; :
@@ -49,3 +51,5 @@ permalink: /kb/168/Q168945/
 	
 	=============================================================================
 	
+
+{% endraw %}

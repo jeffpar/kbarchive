@@ -6,6 +6,8 @@ permalink: /kb/243/Q243893/
 
 ## Q243893: XFOR: Can't Log On to MAPI Running Notes Application Converter
 
+{% raw %}
+
 	Article: Q243893
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -60,3 +62,5 @@ permalink: /kb/243/Q243893/
 	
 	=============================================================================
 	
+
+{% endraw %}

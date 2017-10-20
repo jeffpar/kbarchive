@@ -6,6 +6,8 @@ permalink: /kb/045/Q45171/
 
 ## Q45171: How to Detect Keypress in BASIC without Reading in Character
 
+{% raw %}
+
 	Article: Q45171
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -48,3 +50,5 @@ permalink: /kb/045/Q45171/
 	INPUT X$   ' The first character typed appears in the INPUT line.
 	' Or you can PRINT INKEY$ instead of using INPUT X$ to see the
 	' character waiting in the keyboard buffer.
+
+{% endraw %}

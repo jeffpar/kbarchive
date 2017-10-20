@@ -6,6 +6,8 @@ permalink: /kb/050/Q50466/
 
 ## Q50466: QB.EXE 4.50 May Lose SUB During SUB Move If &quot;Out of Memory&quot;
 
+{% raw %}
+
 	Article: Q50466
 	Product(s): See article
 	Version(s): 4.50
@@ -48,3 +50,5 @@ permalink: /kb/050/Q50466/
 	
 	8. If you were not able to reproduce the problem, increase the size of
 	   one or more of the modules and repeat from Step 3.
+
+{% endraw %}

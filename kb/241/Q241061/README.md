@@ -6,6 +6,8 @@ permalink: /kb/241/Q241061/
 
 ## Q241061: Cannot Gain Access to Certificate Server Log and Queue
 
+{% raw %}
+
 	Article: Q241061
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -81,3 +83,5 @@ permalink: /kb/241/Q241061/
 	
 	=============================================================================
 	
+
+{% endraw %}

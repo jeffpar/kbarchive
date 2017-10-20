@@ -6,6 +6,8 @@ permalink: /kb/032/Q32274/
 
 ## Q32274: Do Not Use DOS Interrupts to Terminate Compiled Programs
 
+{% raw %}
+
 	Article: Q32274
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -36,3 +38,5 @@ permalink: /kb/032/Q32274/
 	inarray%(0) = &H4C00
 	CALL int86old(&H21, inarray%(), outarray%())
 	'The INT86OLD routine is located in QB.QLB and QB.LIB.
+
+{% endraw %}

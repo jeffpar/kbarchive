@@ -6,6 +6,8 @@ permalink: /kb/136/Q136623/
 
 ## Q136623: Windows NT Runs Out of Memory Accessing Many OLE Servers
 
+{% raw %}
+
 	Article: Q136623
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -41,3 +43,5 @@ permalink: /kb/136/Q136623/
 	
 	=============================================================================
 	
+
+{% endraw %}

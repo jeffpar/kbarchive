@@ -6,6 +6,8 @@ permalink: /kb/119/Q119393/
 
 ## Q119393: BUG: Invalid Extraction from istrstream Does Not Set failbit
 
+{% raw %}
+
 	Article: Q119393
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,4.0,4.1,4.2,5.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/119/Q119393/
 	
 	=============================================================================
 	
+
+{% endraw %}

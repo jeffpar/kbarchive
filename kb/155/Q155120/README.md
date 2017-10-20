@@ -6,6 +6,8 @@ permalink: /kb/155/Q155120/
 
 ## Q155120: Error Message: Error Copying File
 
+{% raw %}
+
 	Article: Q155120
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -50,3 +52,5 @@ permalink: /kb/155/Q155120/
 	
 	=============================================================================
 	
+
+{% endraw %}

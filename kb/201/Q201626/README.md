@@ -6,6 +6,8 @@ permalink: /kb/201/Q201626/
 
 ## Q201626: WD97: SuperDocStatistics Macro: Purpose, Features, Issues
 
+{% raw %}
+
 	Article: Q201626
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/201/Q201626/
 	
 	=============================================================================
 	
+
+{% endraw %}

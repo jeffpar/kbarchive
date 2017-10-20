@@ -6,6 +6,8 @@ permalink: /kb/280/Q280436/
 
 ## Q280436: MechWarrior 4: SHIFT+Button Does Not Work Correctly
 
+{% raw %}
+
 	Article: Q280436
 	Product(s): Microsoft Home Games
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/280/Q280436/
 	
 	=============================================================================
 	
+
+{% endraw %}

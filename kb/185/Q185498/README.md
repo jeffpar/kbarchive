@@ -6,6 +6,8 @@ permalink: /kb/185/Q185498/
 
 ## Q185498: Vfphtml.exe Demonstrates HTML Help in VFP 3.0 and 5.0
 
+{% raw %}
+
 	Article: Q185498
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a
@@ -80,3 +82,5 @@ permalink: /kb/185/Q185498/
 	
 	=============================================================================
 	
+
+{% endraw %}

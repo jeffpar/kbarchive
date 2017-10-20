@@ -6,6 +6,8 @@ permalink: /kb/066/Q66250/
 
 ## Q66250: Novell NetWare Drag and Drop in Windows 3.0 File Manager
 
+{% raw %}
+
 	Article: Q66250
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -62,3 +64,5 @@ permalink: /kb/066/Q66250/
 	
 	=============================================================================
 	
+
+{% endraw %}

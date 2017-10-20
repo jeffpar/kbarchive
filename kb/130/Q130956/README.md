@@ -6,6 +6,8 @@ permalink: /kb/130/Q130956/
 
 ## Q130956: PRB: MFC DB Classes Don't Update NULL Field Values to Non-NULL
 
+{% raw %}
+
 	Article: Q130956
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -71,3 +73,5 @@ permalink: /kb/130/Q130956/
 	
 	=============================================================================
 	
+
+{% endraw %}

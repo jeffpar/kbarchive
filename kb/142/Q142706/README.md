@@ -6,6 +6,8 @@ permalink: /kb/142/Q142706/
 
 ## Q142706: Source Routing with NetBEUI Not Supported in FDDI Environment
 
+{% raw %}
+
 	Article: Q142706
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -46,3 +48,5 @@ permalink: /kb/142/Q142706/
 	
 	=============================================================================
 	
+
+{% endraw %}

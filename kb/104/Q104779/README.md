@@ -6,6 +6,8 @@ permalink: /kb/104/Q104779/
 
 ## Q104779: Undelete on LANtastic: Disk Drive Failed - Could Not...
 
+{% raw %}
+
 	Article: Q104779
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -49,3 +51,5 @@ permalink: /kb/104/Q104779/
 	
 	=============================================================================
 	
+
+{% endraw %}

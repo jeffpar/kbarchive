@@ -6,6 +6,8 @@ permalink: /kb/155/Q155964/
 
 ## Q155964: WD97: Column Paragraph Bordering May Print Unevenly
 
+{% raw %}
+
 	Article: Q155964
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -59,3 +61,5 @@ permalink: /kb/155/Q155964/
 	
 	=============================================================================
 	
+
+{% endraw %}

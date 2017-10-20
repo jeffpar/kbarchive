@@ -6,6 +6,8 @@ permalink: /kb/046/Q46767/
 
 ## Q46767: PPT: Text In Slide Master Does Not Appear On Every Slide
 
+{% raw %}
+
 	Article: Q46767
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:2.0,2.01,3.0,4.0; WINDOWS:2.0,3.0,4.0,4.0a,4.0c,7.0
@@ -66,3 +68,5 @@ permalink: /kb/046/Q46767/
 	
 	=============================================================================
 	
+
+{% endraw %}

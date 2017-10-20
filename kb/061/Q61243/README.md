@@ -6,6 +6,8 @@ permalink: /kb/061/Q61243/
 
 ## Q61243: C 6.00 README: HIMEM Documentation
 
+{% raw %}
+
 	Article: Q61243
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -47,3 +49,5 @@ permalink: /kb/061/Q61243/
 	
 	The /NUMHANDLES option sets (in <n>) the maximum number of extended
 	memory block handles that can be used at any given time.
+
+{% endraw %}

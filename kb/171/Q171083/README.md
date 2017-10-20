@@ -6,6 +6,8 @@ permalink: /kb/171/Q171083/
 
 ## Q171083: SnaExp.exe Access Violation in CshrMemPool()
 
+{% raw %}
+
 	Article: Q171083
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -61,3 +63,5 @@ permalink: /kb/171/Q171083/
 	
 	=============================================================================
 	
+
+{% endraw %}

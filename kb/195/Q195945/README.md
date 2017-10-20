@@ -6,6 +6,8 @@ permalink: /kb/195/Q195945/
 
 ## Q195945: Traced version of the x.25 link service doesn't provide output
 
+{% raw %}
+
 	Article: Q195945
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -73,3 +75,5 @@ permalink: /kb/195/Q195945/
 	
 	=============================================================================
 	
+
+{% endraw %}

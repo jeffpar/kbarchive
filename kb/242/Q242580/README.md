@@ -6,6 +6,8 @@ permalink: /kb/242/Q242580/
 
 ## Q242580: Online Investing Comments and Corrections
 
+{% raw %}
+
 	Article: Q242580
 	Product(s): Microsoft Press
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/242/Q242580/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117677/
 
 ## Q117677: PC Ext: EXTERNAL.EXE Creates No Remote Client SENT.LOG Entry
 
+{% raw %}
+
 	Article: Q117677
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -79,3 +81,5 @@ permalink: /kb/117/Q117677/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/269/Q269804/
 
 ## Q269804: Magic School Bus: Slow Performance with Network Installation
 
+{% raw %}
+
 	Article: Q269804
 	Product(s): Microsoft Home Kids Products
 	Version(s): 
@@ -104,3 +106,5 @@ permalink: /kb/269/Q269804/
 	
 	=============================================================================
 	
+
+{% endraw %}

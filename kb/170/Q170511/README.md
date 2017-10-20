@@ -6,6 +6,8 @@ permalink: /kb/170/Q170511/
 
 ## Q170511: PRB: WizardBar Notification Slows Down Dialog Editor
 
+{% raw %}
+
 	Article: Q170511
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0 6.0
@@ -91,3 +93,5 @@ permalink: /kb/170/Q170511/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136253/
 
 ## Q136253: Clipbook Viewer Does Not Connect to a Long (13+) Computer Name
 
+{% raw %}
+
 	Article: Q136253
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/136/Q136253/
 	
 	=============================================================================
 	
+
+{% endraw %}

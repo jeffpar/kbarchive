@@ -6,6 +6,8 @@ permalink: /kb/149/Q149068/
 
 ## Q149068: FIX: Reprint Group Header on Each Page Malfunctions
 
+{% raw %}
+
 	Article: Q149068
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -131,3 +133,5 @@ permalink: /kb/149/Q149068/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/237/Q237816/
 
 ## Q237816: BUG: MSFLEXGRID Prints as Black Box After Installing VS SP3
 
+{% raw %}
+
 	Article: Q237816
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0,6.0 SP3,6.0 SP5
@@ -86,3 +88,5 @@ permalink: /kb/237/Q237816/
 	
 	=============================================================================
 	
+
+{% endraw %}

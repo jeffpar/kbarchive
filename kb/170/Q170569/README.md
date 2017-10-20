@@ -6,6 +6,8 @@ permalink: /kb/170/Q170569/
 
 ## Q170569: WinNT Stops Recognizing PCI Network Adapter After It Is Moved
 
+{% raw %}
+
 	Article: Q170569
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -73,3 +75,5 @@ permalink: /kb/170/Q170569/
 	
 	=============================================================================
 	
+
+{% endraw %}

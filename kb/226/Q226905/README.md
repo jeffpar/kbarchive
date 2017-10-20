@@ -6,6 +6,8 @@ permalink: /kb/226/Q226905/
 
 ## Q226905: SMS: Network Monitor Displays Incorrect Results in Windows 2000
 
+{% raw %}
+
 	Article: Q226905
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -42,3 +44,5 @@ permalink: /kb/226/Q226905/
 	
 	=============================================================================
 	
+
+{% endraw %}

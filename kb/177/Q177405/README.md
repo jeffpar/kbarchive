@@ -6,6 +6,8 @@ permalink: /kb/177/Q177405/
 
 ## Q177405: Disabled Zones or Failed Reverse Queries Using DNS Root Server
 
+{% raw %}
+
 	Article: Q177405
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/177/Q177405/
 	
 	=============================================================================
 	
+
+{% endraw %}

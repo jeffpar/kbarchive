@@ -6,6 +6,8 @@ permalink: /kb/234/Q234977/
 
 ## Q234977: PRB: Error C0042116 &quot;Further Processing Has Stopped&quot;
 
+{% raw %}
+
 	Article: Q234977
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -77,3 +79,5 @@ permalink: /kb/234/Q234977/
 	
 	=============================================================================
 	
+
+{% endraw %}

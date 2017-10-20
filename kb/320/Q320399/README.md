@@ -6,6 +6,8 @@ permalink: /kb/320/Q320399/
 
 ## Q320399: Programming in Microsoft Visual Studio .NET (Core Reference) Com
 
+{% raw %}
+
 	Article: Q320399
 	Product(s): Microsoft Press
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/320/Q320399/
 	
 	=============================================================================
 	
+
+{% endraw %}

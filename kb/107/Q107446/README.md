@@ -6,6 +6,8 @@ permalink: /kb/107/Q107446/
 
 ## Q107446: FFAPI: Application-Put Executables 3.04.1 Update
 
+{% raw %}
+
 	Article: Q107446
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -103,3 +105,5 @@ permalink: /kb/107/Q107446/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/269/Q269589/
 
 ## Q269589: XADM: MTA May Stop When Parsing an Address and MIXER Is Enabled
 
+{% raw %}
+
 	Article: Q269589
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -130,3 +132,5 @@ permalink: /kb/269/Q269589/
 	
 	=============================================================================
 	
+
+{% endraw %}

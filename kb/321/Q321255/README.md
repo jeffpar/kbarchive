@@ -6,6 +6,8 @@ permalink: /kb/321/Q321255/
 
 ## Q321255: FIX: ODBC Driver for SQL Server Incorrectly Returns SQL_SUCCESS
 
+{% raw %}
+
 	Article: Q321255
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.6,2.7,2000.80.194,2000.80.380,2000.81.7713.0
@@ -176,3 +178,5 @@ permalink: /kb/321/Q321255/
 	
 	=============================================================================
 	
+
+{% endraw %}

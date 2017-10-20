@@ -6,6 +6,8 @@ permalink: /kb/089/Q89869/
 
 ## Q89869: Sound Continues After Exiting Windows with Sound Blaster
 
+{% raw %}
+
 	Article: Q89869
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/089/Q89869/
 	
 	=============================================================================
 	
+
+{% endraw %}

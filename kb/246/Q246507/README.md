@@ -6,6 +6,8 @@ permalink: /kb/246/Q246507/
 
 ## Q246507: Windows NT Does Not Start, Error Message About Ntoskrnl.exe
 
+{% raw %}
+
 	Article: Q246507
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -137,3 +139,5 @@ permalink: /kb/246/Q246507/
 	
 	=============================================================================
 	
+
+{% endraw %}

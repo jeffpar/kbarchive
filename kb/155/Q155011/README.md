@@ -6,6 +6,8 @@ permalink: /kb/155/Q155011/
 
 ## Q155011: INFO: Error Codes in Windows NT Part 1 of 2 (article I)
 
+{% raw %}
+
 	Article: Q155011
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -873,3 +875,5 @@ permalink: /kb/155/Q155011/
 	
 	=============================================================================
 	
+
+{% endraw %}

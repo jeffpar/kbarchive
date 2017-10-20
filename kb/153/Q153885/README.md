@@ -6,6 +6,8 @@ permalink: /kb/153/Q153885/
 
 ## Q153885: Push-to-Talk Key Does Not Perform Original Function
 
+{% raw %}
+
 	Article: Q153885
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -66,3 +68,5 @@ permalink: /kb/153/Q153885/
 	
 	=============================================================================
 	
+
+{% endraw %}

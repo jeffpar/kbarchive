@@ -6,6 +6,8 @@ permalink: /kb/153/Q153601/
 
 ## Q153601: XCOPY /F Command Does Not Display Destination Path
 
+{% raw %}
+
 	Article: Q153601
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -48,3 +50,5 @@ permalink: /kb/153/Q153601/
 	
 	=============================================================================
 	
+
+{% endraw %}

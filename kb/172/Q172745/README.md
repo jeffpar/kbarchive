@@ -6,6 +6,8 @@ permalink: /kb/172/Q172745/
 
 ## Q172745: WD97: Editing Web Browser Path Creates Duplicate Entry
 
+{% raw %}
+
 	Article: Q172745
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -105,3 +107,5 @@ permalink: /kb/172/Q172745/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/049/Q49004/
 
 ## Q49004: Some Toshibas Cannot Highlight Text for Edit with QuickC 2.00
 
+{% raw %}
+
 	Article: Q49004
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -32,3 +34,5 @@ permalink: /kb/049/Q49004/
 	Microsoft has confirmed this to be a problem with QuickC Versions 2.00
 	and 2.01. We are researching this problem and will post new
 	information as it becomes available.
+
+{% endraw %}

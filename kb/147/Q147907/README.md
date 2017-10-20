@@ -6,6 +6,8 @@ permalink: /kb/147/Q147907/
 
 ## Q147907: Error Starting IIS Services Without TCP/IP Installed
 
+{% raw %}
+
 	Article: Q147907
 	Product(s): Internet Information Server
 	Version(s): 1.0 3.51
@@ -116,3 +118,5 @@ permalink: /kb/147/Q147907/
 	
 	=============================================================================
 	
+
+{% endraw %}

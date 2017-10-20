@@ -6,6 +6,8 @@ permalink: /kb/062/Q62352/
 
 ## Q62352: Windows 3.0 Enhanced Mode Hangs at Startup on Super VGA
 
+{% raw %}
+
 	Article: Q62352
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -69,3 +71,5 @@ permalink: /kb/062/Q62352/
 	
 	=============================================================================
 	
+
+{% endraw %}

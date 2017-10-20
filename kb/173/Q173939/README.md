@@ -6,6 +6,8 @@ permalink: /kb/173/Q173939/
 
 ## Q173939: How to Identify User Who Changed Administrator Password
 
+{% raw %}
+
 	Article: Q173939
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -101,3 +103,5 @@ permalink: /kb/173/Q173939/
 	
 	=============================================================================
 	
+
+{% endraw %}

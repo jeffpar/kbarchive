@@ -6,6 +6,8 @@ permalink: /kb/162/Q162297/
 
 ## Q162297: How to Disable SAP 64E
 
+{% raw %}
+
 	Article: Q162297
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:1.0,2.0,3.0,3.51,4.0
@@ -83,3 +85,5 @@ permalink: /kb/162/Q162297/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183069/
 
 ## Q183069: Ensoniq PCI Sound Card Experiences Static When Disk Is Accessed
 
+{% raw %}
+
 	Article: Q183069
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -82,3 +84,5 @@ permalink: /kb/183/Q183069/
 	
 	=============================================================================
 	
+
+{% endraw %}

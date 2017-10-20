@@ -6,6 +6,8 @@ permalink: /kb/191/Q191192/
 
 ## Q191192: Cannot Change Password with DUN 1.2b and 128-Bit Encryption
 
+{% raw %}
+
 	Article: Q191192
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -56,3 +58,5 @@ permalink: /kb/191/Q191192/
 	
 	=============================================================================
 	
+
+{% endraw %}

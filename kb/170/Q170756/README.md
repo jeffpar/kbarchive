@@ -6,6 +6,8 @@ permalink: /kb/170/Q170756/
 
 ## Q170756: Available Switch Options for Windows NT Boot.ini File
 
+{% raw %}
+
 	Article: Q170756
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -242,3 +244,5 @@ permalink: /kb/170/Q170756/
 	
 	=============================================================================
 	
+
+{% endraw %}

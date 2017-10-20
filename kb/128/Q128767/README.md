@@ -6,6 +6,8 @@ permalink: /kb/128/Q128767/
 
 ## Q128767: DriveSpace Does Not Compress Existing Drive
 
+{% raw %}
+
 	Article: Q128767
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/128/Q128767/
 	
 	=============================================================================
 	
+
+{% endraw %}

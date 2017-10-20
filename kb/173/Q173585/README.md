@@ -6,6 +6,8 @@ permalink: /kb/173/Q173585/
 
 ## Q173585: General Protection Faults Printing to Color PostScript Printer
 
+{% raw %}
+
 	Article: Q173585
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -80,3 +82,5 @@ permalink: /kb/173/Q173585/
 	
 	=============================================================================
 	
+
+{% endraw %}

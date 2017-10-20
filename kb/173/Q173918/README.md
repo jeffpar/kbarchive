@@ -6,6 +6,8 @@ permalink: /kb/173/Q173918/
 
 ## Q173918: WD97: Word Hangs If VBA Adds Inline Control in Header or Footer
 
+{% raw %}
+
 	Article: Q173918
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -87,3 +89,5 @@ permalink: /kb/173/Q173918/
 	
 	=============================================================================
 	
+
+{% endraw %}

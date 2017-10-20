@@ -6,6 +6,8 @@ permalink: /kb/262/Q262883/
 
 ## Q262883: SAMPLE: NEWVBTERM.EXE MSComm Control Techniques
 
+{% raw %}
+
 	Article: Q262883
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -195,3 +197,5 @@ permalink: /kb/262/Q262883/
 	
 	=============================================================================
 	
+
+{% endraw %}

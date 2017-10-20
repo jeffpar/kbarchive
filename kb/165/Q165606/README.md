@@ -6,6 +6,8 @@ permalink: /kb/165/Q165606/
 
 ## Q165606: PRB: CRecordset::Move(0) Asserts with skipDeletedRecords Option
 
+{% raw %}
+
 	Article: Q165606
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,4.2b,5.0,6.0
@@ -80,3 +82,5 @@ permalink: /kb/165/Q165606/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194286/
 
 ## Q194286: Virtual Globe 99: Cannot Print Map or Map Is Printed Very Slowly
 
+{% raw %}
+
 	Article: Q194286
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -65,3 +67,5 @@ permalink: /kb/194/Q194286/
 	
 	=============================================================================
 	
+
+{% endraw %}

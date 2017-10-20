@@ -6,6 +6,8 @@ permalink: /kb/099/Q99313/
 
 ## Q99313: Password Duration Parameters and Update Procedures
 
+{% raw %}
+
 	Article: Q99313
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/099/Q99313/
 	
 	=============================================================================
 	
+
+{% endraw %}

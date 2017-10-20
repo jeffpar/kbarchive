@@ -6,6 +6,8 @@ permalink: /kb/198/Q198393/
 
 ## Q198393: XFOR: MS Mail Connector May Stop with Error 2380
 
+{% raw %}
+
 	Article: Q198393
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -82,3 +84,5 @@ permalink: /kb/198/Q198393/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126952/
 
 ## Q126952: How to Scope a Variable to a Form
 
+{% raw %}
+
 	Article: Q126952
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -68,3 +70,5 @@ permalink: /kb/126/Q126952/
 	
 	=============================================================================
 	
+
+{% endraw %}

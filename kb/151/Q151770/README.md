@@ -6,6 +6,8 @@ permalink: /kb/151/Q151770/
 
 ## Q151770: INF: How to Suppress &quot;Local Port Error&quot; Dialog Boxes
 
+{% raw %}
+
 	Article: Q151770
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -70,3 +72,5 @@ permalink: /kb/151/Q151770/
 	
 	=============================================================================
 	
+
+{% endraw %}

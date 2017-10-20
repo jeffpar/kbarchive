@@ -6,6 +6,8 @@ permalink: /kb/290/Q290217/
 
 ## Q290217: SQL Server 2000 Administrator's Companion Comments and Correctio
 
+{% raw %}
+
 	Article: Q290217
 	Product(s): Microsoft Press
 	Version(s): 
@@ -117,3 +119,5 @@ permalink: /kb/290/Q290217/
 	
 	=============================================================================
 	
+
+{% endraw %}

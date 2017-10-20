@@ -6,6 +6,8 @@ permalink: /kb/168/Q168478/
 
 ## Q168478: Unable to Create Profiles with Client Access for Windows 95/NT
 
+{% raw %}
+
 	Article: Q168478
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -47,3 +49,5 @@ permalink: /kb/168/Q168478/
 	
 	=============================================================================
 	
+
+{% endraw %}

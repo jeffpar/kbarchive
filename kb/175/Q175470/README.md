@@ -6,6 +6,8 @@ permalink: /kb/175/Q175470/
 
 ## Q175470: ActionListOn Items May Be Reset to off after Editing a Policy
 
+{% raw %}
+
 	Article: Q175470
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0;Win95
@@ -106,3 +108,5 @@ permalink: /kb/175/Q175470/
 	
 	=============================================================================
 	
+
+{% endraw %}

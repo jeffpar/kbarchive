@@ -6,6 +6,8 @@ permalink: /kb/182/Q182040/
 
 ## Q182040: XFOR: Internet Mail Service Converts Two-Digit Years Incorrectly
 
+{% raw %}
+
 	Article: Q182040
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -87,3 +89,5 @@ permalink: /kb/182/Q182040/
 	
 	=============================================================================
 	
+
+{% endraw %}

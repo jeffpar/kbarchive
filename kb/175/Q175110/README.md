@@ -6,6 +6,8 @@ permalink: /kb/175/Q175110/
 
 ## Q175110: How to Change the Subdomain Name in SNA Server
 
+{% raw %}
+
 	Article: Q175110
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,4.0
@@ -86,3 +88,5 @@ permalink: /kb/175/Q175110/
 	
 	=============================================================================
 	
+
+{% endraw %}

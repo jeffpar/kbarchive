@@ -6,6 +6,8 @@ permalink: /kb/193/Q193401/
 
 ## Q193401: BUG: Can't Change UserControl FontTransparent if Default = False
 
+{% raw %}
+
 	Article: Q193401
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -93,3 +95,5 @@ permalink: /kb/193/Q193401/
 	
 	=============================================================================
 	
+
+{% endraw %}

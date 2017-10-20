@@ -6,6 +6,8 @@ permalink: /kb/230/Q230780/
 
 ## Q230780: XADM: Cannot Start KM Service After Upgrading to V3 Certificates
 
+{% raw %}
+
 	Article: Q230780
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -71,3 +73,5 @@ permalink: /kb/230/Q230780/
 	
 	=============================================================================
 	
+
+{% endraw %}

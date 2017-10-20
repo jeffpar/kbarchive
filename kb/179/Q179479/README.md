@@ -6,6 +6,8 @@ permalink: /kb/179/Q179479/
 
 ## Q179479: PRB: Problems with Error 2004 and 2005 Commands
 
+{% raw %}
+
 	Article: Q179479
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -78,3 +80,5 @@ permalink: /kb/179/Q179479/
 	
 	=============================================================================
 	
+
+{% endraw %}

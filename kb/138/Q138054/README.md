@@ -6,6 +6,8 @@ permalink: /kb/138/Q138054/
 
 ## Q138054: XFOR: Err Msg: Unable to Deliver User Mail... Full Mailbag
 
+{% raw %}
+
 	Article: Q138054
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -79,3 +81,5 @@ permalink: /kb/138/Q138054/
 	
 	=============================================================================
 	
+
+{% endraw %}

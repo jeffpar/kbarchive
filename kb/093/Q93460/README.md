@@ -6,6 +6,8 @@ permalink: /kb/093/Q93460/
 
 ## Q93460: README.WRI from Windows for Workgroups Version 3.1 (Part C)
 
+{% raw %}
+
 	Article: Q93460
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -571,3 +573,5 @@ permalink: /kb/093/Q93460/
 	
 	=============================================================================
 	
+
+{% endraw %}

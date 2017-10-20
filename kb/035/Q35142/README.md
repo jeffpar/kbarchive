@@ -6,6 +6,8 @@ permalink: /kb/035/Q35142/
 
 ## Q35142: Weitek WTL 1167 Math Coprocessor Support
 
+{% raw %}
+
 	Article: Q35142
 	Product(s): See article
 	Version(s): 5.x    | 5.10
@@ -26,3 +28,5 @@ permalink: /kb/035/Q35142/
 	have an 80387 to use our Math Coprocessor Library. Without the 80387
 	you will have to use our Emulator or Alternate Math Libraries, or link
 	with a third-party library.
+
+{% endraw %}

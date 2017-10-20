@@ -6,6 +6,8 @@ permalink: /kb/029/Q29923/
 
 ## Q29923: FUNCTIONs and Subprograms Can Affect FIELDed Arrays in COMMON
 
+{% raw %}
+
 	Article: Q29923
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -70,3 +72,5 @@ permalink: /kb/029/Q29923/
 	        x$ = any$       '** so won't affect value of any$ **
 	        PRINT x$
 	END FUNCTION
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185288/
 
 ## Q185288: PRB: Cheyenne InocuLAN May Cause ATL Wizard to Crash DevStudio
 
+{% raw %}
+
 	Article: Q185288
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -76,3 +78,5 @@ permalink: /kb/185/Q185288/
 	
 	=============================================================================
 	
+
+{% endraw %}

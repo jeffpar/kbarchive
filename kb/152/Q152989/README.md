@@ -6,6 +6,8 @@ permalink: /kb/152/Q152989/
 
 ## Q152989: XADM: French Connectors Disks not Recognized
 
+{% raw %}
+
 	Article: Q152989
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/152/Q152989/
 	
 	=============================================================================
 	
+
+{% endraw %}

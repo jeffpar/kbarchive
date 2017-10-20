@@ -6,6 +6,8 @@ permalink: /kb/263/Q263123/
 
 ## Q263123: BUG: Intermittent Crashes in NdisMWanIndicateReceive on Win2000
 
+{% raw %}
+
 	Article: Q263123
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/263/Q263123/
 	
 	=============================================================================
 	
+
+{% endraw %}

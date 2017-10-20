@@ -6,6 +6,8 @@ permalink: /kb/051/Q51834/
 
 ## Q51834: &quot;Internal Debugger Error: 0&quot; When Watching Structure Members
 
+{% raw %}
+
 	Article: Q51834
 	Product(s): See article
 	Version(s): 2.20 2.30 | 2.20 2.30
@@ -40,3 +42,5 @@ permalink: /kb/051/Q51834/
 	Microsoft has confirmed this to be a problem in CodeView Version 2.30.
 	We are researching this problem and will post new information here as
 	it becomes available.
+
+{% endraw %}

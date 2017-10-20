@@ -6,6 +6,8 @@ permalink: /kb/080/Q80274/
 
 ## Q80274: PC DOS: Using the Micro or Monitor TSRs on NetBIOS Networks
 
+{% raw %}
+
 	Article: Q80274
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -52,3 +54,5 @@ permalink: /kb/080/Q80274/
 	
 	=============================================================================
 	
+
+{% endraw %}

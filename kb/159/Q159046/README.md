@@ -6,6 +6,8 @@ permalink: /kb/159/Q159046/
 
 ## Q159046: Ntbackup.exe Does Not Work with Removable-Media Drives
 
+{% raw %}
+
 	Article: Q159046
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -53,3 +55,5 @@ permalink: /kb/159/Q159046/
 	
 	=============================================================================
 	
+
+{% endraw %}

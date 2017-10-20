@@ -6,6 +6,8 @@ permalink: /kb/285/Q285859/
 
 ## Q285859: XADM: Mailbox Manager Hangs When You Click the Policy Tab
 
+{% raw %}
+
 	Article: Q285859
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -112,3 +114,5 @@ permalink: /kb/285/Q285859/
 	
 	=============================================================================
 	
+
+{% endraw %}

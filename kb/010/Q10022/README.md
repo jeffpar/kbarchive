@@ -6,6 +6,8 @@ permalink: /kb/010/Q10022/
 
 ## Q10022: OFF97: EPS File Is Not Printed or Is Printed Incorrectly in NT
 
+{% raw %}
+
 	Article: Q10022
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97; winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/010/Q10022/
 	
 	=============================================================================
 	
+
+{% endraw %}

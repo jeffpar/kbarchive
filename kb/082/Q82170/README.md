@@ -6,6 +6,8 @@ permalink: /kb/082/Q82170/
 
 ## Q82170: SAMPLE: DLLDlg.exe Demonstrates Creating Dialog Box in DLL
 
+{% raw %}
+
 	Article: Q82170
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -63,3 +65,5 @@ permalink: /kb/082/Q82170/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142928/
 
 ## Q142928: PRB: Bound ListBox Doesn't Show List Item When MultiSelect = 2
 
+{% raw %}
+
 	Article: Q142928
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/142/Q142928/
 	
 	=============================================================================
 	
+
+{% endraw %}

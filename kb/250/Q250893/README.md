@@ -6,6 +6,8 @@ permalink: /kb/250/Q250893/
 
 ## Q250893: Zoomit Server Service Does Not Start After Installing MMS
 
+{% raw %}
+
 	Article: Q250893
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -117,3 +119,5 @@ permalink: /kb/250/Q250893/
 	
 	=============================================================================
 	
+
+{% endraw %}

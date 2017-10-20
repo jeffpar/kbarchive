@@ -6,6 +6,8 @@ permalink: /kb/217/Q217040/
 
 ## Q217040: XFOR: New Lotus cc:Mail Dirsync Mapping Rule
 
+{% raw %}
+
 	Article: Q217040
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -124,3 +126,5 @@ permalink: /kb/217/Q217040/
 	
 	=============================================================================
 	
+
+{% endraw %}

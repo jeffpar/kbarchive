@@ -6,6 +6,8 @@ permalink: /kb/173/Q173491/
 
 ## Q173491: XFOR: Message to IMC via Telnet with Year 1900
 
+{% raw %}
+
 	Article: Q173491
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -58,3 +60,5 @@ permalink: /kb/173/Q173491/
 	
 	=============================================================================
 	
+
+{% endraw %}

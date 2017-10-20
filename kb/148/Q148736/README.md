@@ -6,6 +6,8 @@ permalink: /kb/148/Q148736/
 
 ## Q148736: SNA EIS Guide:Open(SSCP)Error 0x1009, 0x100B Not Documented
 
+{% raw %}
+
 	Article: Q148736
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -62,3 +64,5 @@ permalink: /kb/148/Q148736/
 	
 	=============================================================================
 	
+
+{% endraw %}

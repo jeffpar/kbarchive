@@ -6,6 +6,8 @@ permalink: /kb/158/Q158236/
 
 ## Q158236: Error Message: HTTP/1.0 500 Server Error
 
+{% raw %}
+
 	Article: Q158236
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:1.0
@@ -115,3 +117,5 @@ permalink: /kb/158/Q158236/
 	
 	=============================================================================
 	
+
+{% endraw %}

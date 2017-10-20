@@ -6,6 +6,8 @@ permalink: /kb/160/Q160701/
 
 ## Q160701: SMS: Inventory Does Not Detect Memory Beyond 16 MB
 
+{% raw %}
+
 	Article: Q160701
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -55,3 +57,5 @@ permalink: /kb/160/Q160701/
 	
 	=============================================================================
 	
+
+{% endraw %}

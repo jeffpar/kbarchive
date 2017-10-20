@@ -6,6 +6,8 @@ permalink: /kb/136/Q136892/
 
 ## Q136892: First Contact Form for MS Mail Server and Mail Client
 
+{% raw %}
+
 	Article: Q136892
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0,3.2,3.5
@@ -83,3 +85,5 @@ permalink: /kb/136/Q136892/
 	
 	=============================================================================
 	
+
+{% endraw %}

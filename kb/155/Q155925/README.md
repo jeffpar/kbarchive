@@ -6,6 +6,8 @@ permalink: /kb/155/Q155925/
 
 ## Q155925: Non-SCSI Devices Added Using SCSI Adapters Tool
 
+{% raw %}
+
 	Article: Q155925
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -49,3 +51,5 @@ permalink: /kb/155/Q155925/
 	
 	=============================================================================
 	
+
+{% endraw %}

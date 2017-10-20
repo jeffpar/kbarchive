@@ -6,6 +6,8 @@ permalink: /kb/149/Q149716/
 
 ## Q149716: New Hardware Is Added to All Hardware Profiles
 
+{% raw %}
+
 	Article: Q149716
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -69,3 +71,5 @@ permalink: /kb/149/Q149716/
 	
 	=============================================================================
 	
+
+{% endraw %}

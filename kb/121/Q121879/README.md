@@ -6,6 +6,8 @@ permalink: /kb/121/Q121879/
 
 ## Q121879: ISDN Server Does Not Answer Incoming Calls
 
+{% raw %}
+
 	Article: Q121879
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -94,3 +96,5 @@ permalink: /kb/121/Q121879/
 	
 	=============================================================================
 	
+
+{% endraw %}

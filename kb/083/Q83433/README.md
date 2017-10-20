@@ -6,6 +6,8 @@ permalink: /kb/083/Q83433/
 
 ## Q83433: Windows 3.1 Resource Kit WIN.INI Section Settings
 
+{% raw %}
+
 	Article: Q83433
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -1602,3 +1604,5 @@ permalink: /kb/083/Q83433/
 	
 	=============================================================================
 	
+
+{% endraw %}

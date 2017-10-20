@@ -6,6 +6,8 @@ permalink: /kb/183/Q183590/
 
 ## Q183590: XFOR: Memory Error Encountered in Migration Wizard for cc:Mail
 
+{% raw %}
+
 	Article: Q183590
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -65,3 +67,5 @@ permalink: /kb/183/Q183590/
 	
 	=============================================================================
 	
+
+{% endraw %}

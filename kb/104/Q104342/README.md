@@ -6,6 +6,8 @@ permalink: /kb/104/Q104342/
 
 ## Q104342: SQL Server System Funcs Supported by the Connectivity Kit
 
+{% raw %}
+
 	Article: Q104342
 	Product(s): Microsoft FoxPro
 	Version(s): 2.6a,3.0
@@ -99,3 +101,5 @@ permalink: /kb/104/Q104342/
 	
 	=============================================================================
 	
+
+{% endraw %}

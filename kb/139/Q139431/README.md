@@ -6,6 +6,8 @@ permalink: /kb/139/Q139431/
 
 ## Q139431: Spock.mpd SCSI Miniport Driver Supports Only IRQ 14
 
+{% raw %}
+
 	Article: Q139431
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/139/Q139431/
 	
 	=============================================================================
 	
+
+{% endraw %}

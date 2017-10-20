@@ -6,6 +6,8 @@ permalink: /kb/108/Q108305/
 
 ## Q108305: INFO: Handling an Existing Call on a Line
 
+{% raw %}
+
 	Article: Q108305
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/108/Q108305/
 	
 	=============================================================================
 	
+
+{% endraw %}

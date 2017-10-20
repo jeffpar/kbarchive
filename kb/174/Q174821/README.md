@@ -6,6 +6,8 @@ permalink: /kb/174/Q174821/
 
 ## Q174821: XADM: TCP/IP Error Messages Following Install and Reboot
 
+{% raw %}
+
 	Article: Q174821
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -71,3 +73,5 @@ permalink: /kb/174/Q174821/
 	
 	=============================================================================
 	
+
+{% endraw %}

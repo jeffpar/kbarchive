@@ -6,6 +6,8 @@ permalink: /kb/188/Q188573/
 
 ## Q188573: INFO: Install Visual Basic 6.0 Complete from Visual Studio
 
+{% raw %}
+
 	Article: Q188573
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -104,3 +106,5 @@ permalink: /kb/188/Q188573/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141114/
 
 ## Q141114: PRB: &quot;NetBIOS AddName Failure&quot; On Remote Boot Workstation
 
+{% raw %}
+
 	Article: Q141114
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -58,3 +60,5 @@ permalink: /kb/141/Q141114/
 	
 	=============================================================================
 	
+
+{% endraw %}

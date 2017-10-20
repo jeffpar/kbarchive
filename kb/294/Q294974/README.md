@@ -6,6 +6,8 @@ permalink: /kb/294/Q294974/
 
 ## Q294974: Password Synchronization to AS/400 Fails with Events 1506 &amp; 6005
 
+{% raw %}
+
 	Article: Q294974
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -149,3 +151,5 @@ permalink: /kb/294/Q294974/
 	
 	=============================================================================
 	
+
+{% endraw %}

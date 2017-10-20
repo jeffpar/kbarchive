@@ -6,6 +6,8 @@ permalink: /kb/185/Q185619/
 
 ## Q185619: Windows 95 Accesses the Floppy Disk Drive at Startup
 
+{% raw %}
+
 	Article: Q185619
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -67,3 +69,5 @@ permalink: /kb/185/Q185619/
 	
 	=============================================================================
 	
+
+{% endraw %}

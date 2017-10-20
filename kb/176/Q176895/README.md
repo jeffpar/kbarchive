@@ -6,6 +6,8 @@ permalink: /kb/176/Q176895/
 
 ## Q176895: BUG: FOR EACH Fails to Remove All Objects
 
+{% raw %}
+
 	Article: Q176895
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -85,3 +87,5 @@ permalink: /kb/176/Q176895/
 	
 	=============================================================================
 	
+
+{% endraw %}

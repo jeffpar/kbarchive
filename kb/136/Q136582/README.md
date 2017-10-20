@@ -6,6 +6,8 @@ permalink: /kb/136/Q136582/
 
 ## Q136582: Help Converting from FoxPro 2.x to Visual FoxPro 3.0
 
+{% raw %}
+
 	Article: Q136582
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/136/Q136582/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163219/
 
 ## Q163219: Spooler Uses 92%+ CPU When a Lexmark TCP/IP Printer Goes Offline
 
+{% raw %}
+
 	Article: Q163219
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/163/Q163219/
 	
 	=============================================================================
 	
+
+{% endraw %}

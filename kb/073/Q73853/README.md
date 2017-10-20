@@ -6,6 +6,8 @@ permalink: /kb/073/Q73853/
 
 ## Q73853: INFO: Sorting Structures with the C qsort() Function
 
+{% raw %}
+
 	Article: Q73853
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:5.1,6.0,6.00a,6.00ax,7.0 WINDOWS:1.0,1.5,1.51,1.52; WINDOWS NT:1.0,2.0,2.1,4.0,5
@@ -119,3 +121,5 @@ permalink: /kb/073/Q73853/
 	
 	=============================================================================
 	
+
+{% endraw %}

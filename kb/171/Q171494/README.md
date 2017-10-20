@@ -6,6 +6,8 @@ permalink: /kb/171/Q171494/
 
 ## Q171494: FIX: MouseUp Event Not Triggered in DblClick w/Comctl32
 
+{% raw %}
+
 	Article: Q171494
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -106,3 +108,5 @@ permalink: /kb/171/Q171494/
 	
 	=============================================================================
 	
+
+{% endraw %}

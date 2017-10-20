@@ -6,6 +6,8 @@ permalink: /kb/170/Q170516/
 
 ## Q170516: Microsoft Exchange Client Unable to Print Message w/ Attachment
 
+{% raw %}
+
 	Article: Q170516
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -102,3 +104,5 @@ permalink: /kb/170/Q170516/
 	
 	=============================================================================
 	
+
+{% endraw %}

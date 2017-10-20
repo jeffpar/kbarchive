@@ -6,6 +6,8 @@ permalink: /kb/195/Q195415/
 
 ## Q195415: XADM: Key Management (KM) Server in Performance Monitor
 
+{% raw %}
+
 	Article: Q195415
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -45,3 +47,5 @@ permalink: /kb/195/Q195415/
 	
 	=============================================================================
 	
+
+{% endraw %}

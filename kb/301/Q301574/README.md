@@ -6,6 +6,8 @@ permalink: /kb/301/Q301574/
 
 ## Q301574: SMS: Context Menu Is Missing for Resources
 
+{% raw %}
+
 	Article: Q301574
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3
@@ -70,3 +72,5 @@ permalink: /kb/301/Q301574/
 	
 	=============================================================================
 	
+
+{% endraw %}

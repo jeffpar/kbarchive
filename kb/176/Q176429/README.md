@@ -6,6 +6,8 @@ permalink: /kb/176/Q176429/
 
 ## Q176429: BUG: Can't Check MDIChild Property of Forms in Forms Collection
 
+{% raw %}
+
 	Article: Q176429
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/176/Q176429/
 	
 	=============================================================================
 	
+
+{% endraw %}

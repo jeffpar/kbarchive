@@ -6,6 +6,8 @@ permalink: /kb/165/Q165405/
 
 ## Q165405: Computer with NeoMagic Display Hangs When PC Card Is Inserted
 
+{% raw %}
+
 	Article: Q165405
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -53,3 +55,5 @@ permalink: /kb/165/Q165405/
 	
 	=============================================================================
 	
+
+{% endraw %}

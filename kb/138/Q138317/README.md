@@ -6,6 +6,8 @@ permalink: /kb/138/Q138317/
 
 ## Q138317: Fw1180.exe Describes Screen Issues in FoxPro for Windows
 
+{% raw %}
+
 	Article: Q138317
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,2.5a,2.5b,2.6,2.6a
@@ -72,3 +74,5 @@ permalink: /kb/138/Q138317/
 	
 	=============================================================================
 	
+
+{% endraw %}

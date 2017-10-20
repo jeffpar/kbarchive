@@ -6,6 +6,8 @@ permalink: /kb/214/Q214584/
 
 ## Q214584: Close Combat III: Game Does Not Start at High Resolutions
 
+{% raw %}
+
 	Article: Q214584
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/214/Q214584/
 	
 	=============================================================================
 	
+
+{% endraw %}

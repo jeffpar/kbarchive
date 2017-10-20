@@ -6,6 +6,8 @@ permalink: /kb/196/Q196843/
 
 ## Q196843: WD97: Some Fields Update While Other Fields Don't Update
 
+{% raw %}
+
 	Article: Q196843
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -85,3 +87,5 @@ permalink: /kb/196/Q196843/
 	
 	=============================================================================
 	
+
+{% endraw %}

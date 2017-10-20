@@ -6,6 +6,8 @@ permalink: /kb/171/Q171569/
 
 ## Q171569: FP: How to Create Custom Web Templates
 
+{% raw %}
+
 	Article: Q171569
 	Product(s): Word Front Page
 	Version(s): windows:97; macintosh:1.0
@@ -120,3 +122,5 @@ permalink: /kb/171/Q171569/
 	
 	=============================================================================
 	
+
+{% endraw %}

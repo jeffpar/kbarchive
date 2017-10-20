@@ -6,6 +6,8 @@ permalink: /kb/298/Q298455/
 
 ## Q298455: SMS: Collection Evaluator Can't Update Collections on Child Site
 
+{% raw %}
+
 	Article: Q298455
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -98,3 +100,5 @@ permalink: /kb/298/Q298455/
 	
 	=============================================================================
 	
+
+{% endraw %}

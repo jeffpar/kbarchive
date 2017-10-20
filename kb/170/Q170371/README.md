@@ -6,6 +6,8 @@ permalink: /kb/170/Q170371/
 
 ## Q170371: HOWTO: Implement Optional Parameter with UserConnection Designer
 
+{% raw %}
+
 	Article: Q170371
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -187,3 +189,5 @@ permalink: /kb/170/Q170371/
 	
 	=============================================================================
 	
+
+{% endraw %}

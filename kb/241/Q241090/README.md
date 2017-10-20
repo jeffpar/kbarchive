@@ -6,6 +6,8 @@ permalink: /kb/241/Q241090/
 
 ## Q241090: PRB: Toggling TitleBar Property Off and On Causes Form to Resize
 
+{% raw %}
+
 	Article: Q241090
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -142,3 +144,5 @@ permalink: /kb/241/Q241090/
 	
 	=============================================================================
 	
+
+{% endraw %}

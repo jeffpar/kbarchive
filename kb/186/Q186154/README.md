@@ -6,6 +6,8 @@ permalink: /kb/186/Q186154/
 
 ## Q186154: XCLN: Using Auto Signatures with Roving Users
 
+{% raw %}
+
 	Article: Q186154
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -89,3 +91,5 @@ permalink: /kb/186/Q186154/
 	
 	=============================================================================
 	
+
+{% endraw %}

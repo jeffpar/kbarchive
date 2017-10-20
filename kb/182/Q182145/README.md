@@ -6,6 +6,8 @@ permalink: /kb/182/Q182145/
 
 ## Q182145: SMS: Error in Prodspec.ini in WinNT 4.0 (KOR and CHT Versions)
 
+{% raw %}
+
 	Article: Q182145
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP3,4.0
@@ -75,3 +77,5 @@ permalink: /kb/182/Q182145/
 	
 	=============================================================================
 	
+
+{% endraw %}

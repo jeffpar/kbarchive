@@ -6,6 +6,8 @@ permalink: /kb/140/Q140588/
 
 ## Q140588: INFO: Differences Between Full Screen and Windowed Mode Palettes
 
+{% raw %}
+
 	Article: Q140588
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 1.0
@@ -104,3 +106,5 @@ permalink: /kb/140/Q140588/
 	
 	=============================================================================
 	
+
+{% endraw %}

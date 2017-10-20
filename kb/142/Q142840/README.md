@@ -6,6 +6,8 @@ permalink: /kb/142/Q142840/
 
 ## Q142840: INFO: Visual Basic Requirements for Exported DLL Functions
 
+{% raw %}
+
 	Article: Q142840
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -138,3 +140,5 @@ permalink: /kb/142/Q142840/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/032/Q32743/
 
 ## Q32743: _fmalloc and halloc Run-Time Library Update
 
+{% raw %}
+
 	Article: Q32743
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -110,3 +112,5 @@ permalink: /kb/032/Q32743/
 	If the start-up code is not on your hard disk, you will need to go
 	through the C Version 5.10 setup procedure again and choose the option
 	to copy the start-up code to your hard disk.
+
+{% endraw %}

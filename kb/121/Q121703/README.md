@@ -6,6 +6,8 @@ permalink: /kb/121/Q121703/
 
 ## Q121703: Setup and Boot Hangs on HP NetServer Computer
 
+{% raw %}
+
 	Article: Q121703
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5
@@ -122,3 +124,5 @@ permalink: /kb/121/Q121703/
 	
 	=============================================================================
 	
+
+{% endraw %}

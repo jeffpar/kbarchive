@@ -6,6 +6,8 @@ permalink: /kb/064/Q64024/
 
 ## Q64024: C 6.00 UNDEL.EXE Is Not Compatible with the Microsoft Editor
 
+{% raw %}
+
 	Article: Q64024
 	Product(s): See article
 	Version(s): 1.00 1.02 | 1.00 1.02
@@ -34,3 +36,5 @@ permalink: /kb/064/Q64024/
 	
 	As a workaround, rename the C 5.10 UNDEL.EXE to UNDEL51.EXE and the C
 	6.00 UNDEL.EXE to UNDEL60.EXE.
+
+{% endraw %}

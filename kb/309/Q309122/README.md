@@ -6,6 +6,8 @@ permalink: /kb/309/Q309122/
 
 ## Q309122: PRB: VFP 6 Application Framework Class Doesn't Compile in  VFP 7
 
+{% raw %}
+
 	Article: Q309122
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -94,3 +96,5 @@ permalink: /kb/309/Q309122/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157005/
 
 ## Q157005: XCLN: Invalid Page Fault in Mapi32.dll
 
+{% raw %}
+
 	Article: Q157005
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0; :4.0
@@ -62,3 +64,5 @@ permalink: /kb/157/Q157005/
 	
 	=============================================================================
 	
+
+{% endraw %}

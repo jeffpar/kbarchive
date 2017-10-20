@@ -6,6 +6,8 @@ permalink: /kb/165/Q165249/
 
 ## Q165249: OEM Third-Party Network Drivers Cannot be Updated
 
+{% raw %}
+
 	Article: Q165249
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -66,3 +68,5 @@ permalink: /kb/165/Q165249/
 	
 	=============================================================================
 	
+
+{% endraw %}

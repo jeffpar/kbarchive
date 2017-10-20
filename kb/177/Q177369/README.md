@@ -6,6 +6,8 @@ permalink: /kb/177/Q177369/
 
 ## Q177369: WD97: Return Address Does Not Print or Show on Envelopes Tab
 
+{% raw %}
+
 	Article: Q177369
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -94,3 +96,5 @@ permalink: /kb/177/Q177369/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148231/
 
 ## Q148231: Shutdown Problems with Older HP Vectra BIOS Chip Sets
 
+{% raw %}
+
 	Article: Q148231
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -67,3 +69,5 @@ permalink: /kb/148/Q148231/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/058/Q58409/
 
 ## Q58409: 7.00 Problem Passing Near Fixed String to Recursive FUNCTION
 
+{% raw %}
+
 	Article: Q58409
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -115,3 +117,5 @@ permalink: /kb/058/Q58409/
 	       PRINT "after recursion :  parm1=["; parm1; "]": SLEEP 1
 	     END IF
 	   END FUNCTION
+
+{% endraw %}

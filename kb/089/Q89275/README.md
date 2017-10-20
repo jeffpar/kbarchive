@@ -6,6 +6,8 @@ permalink: /kb/089/Q89275/
 
 ## Q89275: DefaultDialogs=1 in WIN.INI Overrides Updated LANMAN21.DRV
 
+{% raw %}
+
 	Article: Q89275
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/089/Q89275/
 	
 	=============================================================================
 	
+
+{% endraw %}

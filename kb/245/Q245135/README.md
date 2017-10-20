@@ -6,6 +6,8 @@ permalink: /kb/245/Q245135/
 
 ## Q245135: Error Occurs While Windows NT Server 4.0 Setup Copies Files.
 
+{% raw %}
+
 	Article: Q245135
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/245/Q245135/
 	
 	=============================================================================
 	
+
+{% endraw %}

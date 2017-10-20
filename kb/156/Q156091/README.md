@@ -6,6 +6,8 @@ permalink: /kb/156/Q156091/
 
 ## Q156091: Access Violation with Long NDS Context in CSNW/GSNW
 
+{% raw %}
+
 	Article: Q156091
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/156/Q156091/
 	
 	=============================================================================
 	
+
+{% endraw %}

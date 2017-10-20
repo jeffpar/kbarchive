@@ -6,6 +6,8 @@ permalink: /kb/131/Q131579/
 
 ## Q131579: Using Lotus Organizer Cost/Customer Codes Under Windows NT
 
+{% raw %}
+
 	Article: Q131579
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/131/Q131579/
 	
 	=============================================================================
 	
+
+{% endraw %}

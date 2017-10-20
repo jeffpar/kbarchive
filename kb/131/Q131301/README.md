@@ -6,6 +6,8 @@ permalink: /kb/131/Q131301/
 
 ## Q131301: PRB: Pressing ESC Key Clears Contents of Text Box in a Toolbar
 
+{% raw %}
+
 	Article: Q131301
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -83,3 +85,5 @@ permalink: /kb/131/Q131301/
 	
 	=============================================================================
 	
+
+{% endraw %}

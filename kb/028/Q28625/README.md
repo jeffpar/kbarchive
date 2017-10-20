@@ -6,6 +6,8 @@ permalink: /kb/028/Q28625/
 
 ## Q28625: High and Low Operators on External Items
 
+{% raw %}
+
 	Article: Q28625
 	Product(s): See article
 	Version(s): 5.10
@@ -29,3 +31,5 @@ permalink: /kb/028/Q28625/
 	or referenced using a segment override. In the above example, the
 	.DATA should be placed before the EXTRN statement in order to
 	associate the variable "e" with a segment.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184215/
 
 ## Q184215: FS98: Multiple Chat Windows Displayed During Multiplayer Play
 
+{% raw %}
+
 	Article: Q184215
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -120,3 +122,5 @@ permalink: /kb/184/Q184215/
 	
 	=============================================================================
 	
+
+{% endraw %}

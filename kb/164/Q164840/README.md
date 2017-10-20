@@ -6,6 +6,8 @@ permalink: /kb/164/Q164840/
 
 ## Q164840: XFOR: NDRs Stay in MS Mail Connector Queue
 
+{% raw %}
+
 	Article: Q164840
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -70,3 +72,5 @@ permalink: /kb/164/Q164840/
 	
 	=============================================================================
 	
+
+{% endraw %}

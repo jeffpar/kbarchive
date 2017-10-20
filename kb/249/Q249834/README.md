@@ -6,6 +6,8 @@ permalink: /kb/249/Q249834/
 
 ## Q249834: XADM: Mailbox Manager Fails When Installing on Cluster
 
+{% raw %}
+
 	Article: Q249834
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -77,3 +79,5 @@ permalink: /kb/249/Q249834/
 	
 	=============================================================================
 	
+
+{% endraw %}

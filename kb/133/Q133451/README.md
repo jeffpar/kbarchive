@@ -6,6 +6,8 @@ permalink: /kb/133/Q133451/
 
 ## Q133451: HOWTO: Causing a Form or Formset to Time Out
 
+{% raw %}
+
 	Article: Q133451
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -108,3 +110,5 @@ permalink: /kb/133/Q133451/
 	
 	=============================================================================
 	
+
+{% endraw %}

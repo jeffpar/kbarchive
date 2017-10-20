@@ -6,6 +6,8 @@ permalink: /kb/043/Q43177/
 
 ## Q43177: PRB: Error L2028: Automatic Data Segment Plus Heap Exceed 64K
 
+{% raw %}
+
 	Article: Q43177
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -62,3 +64,5 @@ permalink: /kb/043/Q43177/
 	
 	=============================================================================
 	
+
+{% endraw %}

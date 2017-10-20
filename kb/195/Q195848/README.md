@@ -6,6 +6,8 @@ permalink: /kb/195/Q195848/
 
 ## Q195848: SAMPLE: ADSIPrnt.exe Demonstrates ADSI Print Job Control
 
+{% raw %}
+
 	Article: Q195848
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0; winnt:2.5
@@ -96,3 +98,5 @@ permalink: /kb/195/Q195848/
 	
 	=============================================================================
 	
+
+{% endraw %}

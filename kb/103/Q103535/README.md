@@ -6,6 +6,8 @@ permalink: /kb/103/Q103535/
 
 ## Q103535: Cannot Manually Mount Fragmented DoubleSpace-Compressed Drive
 
+{% raw %}
+
 	Article: Q103535
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -66,3 +68,5 @@ permalink: /kb/103/Q103535/
 	
 	=============================================================================
 	
+
+{% endraw %}

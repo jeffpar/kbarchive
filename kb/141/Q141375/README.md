@@ -6,6 +6,8 @@ permalink: /kb/141/Q141375/
 
 ## Q141375: Winstone 97 May Fail on Windows NT 4.0
 
+{% raw %}
+
 	Article: Q141375
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/141/Q141375/
 	
 	=============================================================================
 	
+
+{% endraw %}

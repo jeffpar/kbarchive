@@ -6,6 +6,8 @@ permalink: /kb/098/Q98956/
 
 ## Q98956: LM File Permission Enforcement on a CD-ROM Drive
 
+{% raw %}
+
 	Article: Q98956
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/098/Q98956/
 	
 	=============================================================================
 	
+
+{% endraw %}

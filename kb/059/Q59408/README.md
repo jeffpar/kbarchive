@@ -6,6 +6,8 @@ permalink: /kb/059/Q59408/
 
 ## Q59408: Selecting Text for Use with Commands
 
+{% raw %}
+
 	Article: Q59408
 	Product(s): See article
 	Version(s): 2.20 2.30 | 2.20 2.30
@@ -22,3 +24,5 @@ permalink: /kb/059/Q59408/
 	Guide" Version 5.0 manual, it incorrectly states that you can copy any
 	text that appears in any window. This is incorrect because you can
 	only copy text in the command window.
+
+{% endraw %}

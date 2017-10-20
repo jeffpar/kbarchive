@@ -6,6 +6,8 @@ permalink: /kb/319/Q319318/
 
 ## Q319318: HOW TO: Change Source Control Providers w/ MSSCCI Providers
 
+{% raw %}
+
 	Article: Q319318
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/319/Q319318/
 	
 	=============================================================================
 	
+
+{% endraw %}

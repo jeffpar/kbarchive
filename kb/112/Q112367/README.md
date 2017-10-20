@@ -6,6 +6,8 @@ permalink: /kb/112/Q112367/
 
 ## Q112367: Deleted MSMAIL.INI Creates Embedded WGPO Directory
 
+{% raw %}
+
 	Article: Q112367
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -73,3 +75,5 @@ permalink: /kb/112/Q112367/
 	
 	=============================================================================
 	
+
+{% endraw %}

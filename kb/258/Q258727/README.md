@@ -6,6 +6,8 @@ permalink: /kb/258/Q258727/
 
 ## Q258727: Web Site Accepts Revoked Certificates
 
+{% raw %}
+
 	Article: Q258727
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0; :2.0
@@ -78,3 +80,5 @@ permalink: /kb/258/Q258727/
 	
 	=============================================================================
 	
+
+{% endraw %}

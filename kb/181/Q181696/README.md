@@ -6,6 +6,8 @@ permalink: /kb/181/Q181696/
 
 ## Q181696: XCLN: Configuring E-Mail Clients for Multiple Local Users
 
+{% raw %}
+
 	Article: Q181696
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -121,3 +123,5 @@ permalink: /kb/181/Q181696/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129229/
 
 ## Q129229: BUG: READ DEACTIVATE Runs When BROWSE Called From VALID of GET
 
+{% raw %}
+
 	Article: Q129229
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -98,3 +100,5 @@ permalink: /kb/129/Q129229/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/114/Q114463/
 
 ## Q114463: Hiding the Last Logged On Username in the Logon Dialog
 
+{% raw %}
+
 	Article: Q114463
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -67,3 +69,5 @@ permalink: /kb/114/Q114463/
 	
 	=============================================================================
 	
+
+{% endraw %}

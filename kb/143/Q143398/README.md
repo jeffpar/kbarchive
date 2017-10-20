@@ -6,6 +6,8 @@ permalink: /kb/143/Q143398/
 
 ## Q143398: Problems Running Remote Registry and MSNDS
 
+{% raw %}
+
 	Article: Q143398
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -91,3 +93,5 @@ permalink: /kb/143/Q143398/
 	
 	=============================================================================
 	
+
+{% endraw %}

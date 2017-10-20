@@ -6,6 +6,8 @@ permalink: /kb/255/Q255673/
 
 ## Q255673: XADM: Unwanted Replication of Address Book Views
 
+{% raw %}
+
 	Article: Q255673
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -56,3 +58,5 @@ permalink: /kb/255/Q255673/
 	
 	=============================================================================
 	
+
+{% endraw %}

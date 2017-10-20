@@ -6,6 +6,8 @@ permalink: /kb/083/Q83996/
 
 ## Q83996: Windows Software Development Kit Installation Procedure
 
+{% raw %}
+
 	Article: Q83996
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -67,3 +69,5 @@ permalink: /kb/083/Q83996/
 	
 	=============================================================================
 	
+
+{% endraw %}

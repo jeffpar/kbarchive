@@ -6,6 +6,8 @@ permalink: /kb/239/Q239419/
 
 ## Q239419: MapPoint: How to Create Shaded Area Maps
 
+{% raw %}
+
 	Article: Q239419
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -107,3 +109,5 @@ permalink: /kb/239/Q239419/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176544/
 
 ## Q176544: SMS: Err Msg: &quot;Couldn't Save the Query Result Format&quot;
 
+{% raw %}
+
 	Article: Q176544
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -129,3 +131,5 @@ permalink: /kb/176/Q176544/
 	
 	=============================================================================
 	
+
+{% endraw %}

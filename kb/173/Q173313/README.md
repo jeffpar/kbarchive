@@ -6,6 +6,8 @@ permalink: /kb/173/Q173313/
 
 ## Q173313: Ntbackup Can Read Tapes Created by Third-Party Backup Programs
 
+{% raw %}
+
 	Article: Q173313
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -70,3 +72,5 @@ permalink: /kb/173/Q173313/
 	
 	=============================================================================
 	
+
+{% endraw %}

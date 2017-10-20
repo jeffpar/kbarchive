@@ -6,6 +6,8 @@ permalink: /kb/244/Q244597/
 
 ## Q244597: HOWTO: Enumerate Cluster Resources by Resource Type in VB
 
+{% raw %}
+
 	Article: Q244597
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:
@@ -132,3 +134,5 @@ permalink: /kb/244/Q244597/
 	
 	=============================================================================
 	
+
+{% endraw %}

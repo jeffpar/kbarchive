@@ -6,6 +6,8 @@ permalink: /kb/043/Q43251/
 
 ## Q43251: Language Support Directory for QuickBASIC/BASIC Add-Ons
 
+{% raw %}
+
 	Article: Q43251
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -43,3 +45,5 @@ permalink: /kb/043/Q43251/
 	
 	The above information is summarized in a paragraph at the end of the
 	language support directory on Page 17.
+
+{% endraw %}

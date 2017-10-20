@@ -6,6 +6,8 @@ permalink: /kb/044/Q44751/
 
 ## Q44751: QuickC 2.00 Debugger Does Not Debug Overlays
 
+{% raw %}
+
 	Article: Q44751
 	Product(s): See article
 	Version(s): 2.00
@@ -19,3 +21,5 @@ permalink: /kb/044/Q44751/
 	overlays are required because of memory constraints, you should not
 	use the QC environment due to the large amount of memory which
 	the QuickC enviroment consumes.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/031/Q31522/
 
 ## Q31522: MASM 5.10 EXT.DOC: AddFile - Creates File Buffer
 
+{% raw %}
+
 	Article: Q31522
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -30,3 +32,5 @@ permalink: /kb/031/Q31522/
 	 */
 	PFILE pascal AddFile (p)
 	char far *p;
+
+{% endraw %}

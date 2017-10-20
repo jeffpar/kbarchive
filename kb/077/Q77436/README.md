@@ -6,6 +6,8 @@ permalink: /kb/077/Q77436/
 
 ## Q77436: DEC Printer Emulations for Windows 3.0
 
+{% raw %}
+
 	Article: Q77436
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -71,3 +73,5 @@ permalink: /kb/077/Q77436/
 	
 	=============================================================================
 	
+
+{% endraw %}

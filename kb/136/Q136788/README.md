@@ -6,6 +6,8 @@ permalink: /kb/136/Q136788/
 
 ## Q136788: XCLN: Multiple Dictionaries Not Supported
 
+{% raw %}
+
 	Article: Q136788
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -54,3 +56,5 @@ permalink: /kb/136/Q136788/
 	
 	=============================================================================
 	
+
+{% endraw %}

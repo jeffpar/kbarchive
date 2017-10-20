@@ -6,6 +6,8 @@ permalink: /kb/278/Q278334/
 
 ## Q278334: SMS: Component Status Reports &quot;Stopped&quot; for Remote Site Systems
 
+{% raw %}
+
 	Article: Q278334
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -80,3 +82,5 @@ permalink: /kb/278/Q278334/
 	
 	=============================================================================
 	
+
+{% endraw %}

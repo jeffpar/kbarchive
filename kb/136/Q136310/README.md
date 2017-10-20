@@ -6,6 +6,8 @@ permalink: /kb/136/Q136310/
 
 ## Q136310: How to Expand a Combo Box Programmatically
 
+{% raw %}
+
 	Article: Q136310
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -62,3 +64,5 @@ permalink: /kb/136/Q136310/
 	
 	=============================================================================
 	
+
+{% endraw %}

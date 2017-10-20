@@ -6,6 +6,8 @@ permalink: /kb/153/Q153904/
 
 ## Q153904: How To Perform Background Processing in FoxPro
 
+{% raw %}
+
 	Article: Q153904
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -233,3 +235,5 @@ permalink: /kb/153/Q153904/
 	
 	=============================================================================
 	
+
+{% endraw %}

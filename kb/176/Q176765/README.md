@@ -6,6 +6,8 @@ permalink: /kb/176/Q176765/
 
 ## Q176765: BUG: Placing Icons in Picture Object Causes Memory Leak
 
+{% raw %}
+
 	Article: Q176765
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0b,5.0,5.0a,6.0
@@ -145,3 +147,5 @@ permalink: /kb/176/Q176765/
 	
 	=============================================================================
 	
+
+{% endraw %}

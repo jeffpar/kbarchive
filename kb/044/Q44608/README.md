@@ -6,6 +6,8 @@ permalink: /kb/044/Q44608/
 
 ## Q44608: UNLINK Does Not Work If the File Is Not Closed
 
+{% raw %}
+
 	Article: Q44608
 	Product(s): See article
 	Version(s): 4.00 5.00 | 5.10
@@ -28,3 +30,5 @@ permalink: /kb/044/Q44608/
 	
 	You can recover the lost disk space by running CHKDSK /F. This
 	information also applies to the C run-time function REMOVE.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/212/Q212279/
 
 ## Q212279: DirectX 7.0: DirectX Setup Does Not Install Old DirectPlay Files
 
+{% raw %}
+
 	Article: Q212279
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/212/Q212279/
 	
 	=============================================================================
 	
+
+{% endraw %}

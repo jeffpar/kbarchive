@@ -6,6 +6,8 @@ permalink: /kb/130/Q130110/
 
 ## Q130110: DriveSpace May Not Mount Removable Media Automatically
 
+{% raw %}
+
 	Article: Q130110
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/130/Q130110/
 	
 	=============================================================================
 	
+
+{% endraw %}

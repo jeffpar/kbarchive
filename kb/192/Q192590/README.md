@@ -6,6 +6,8 @@ permalink: /kb/192/Q192590/
 
 ## Q192590: Encarta: What Happens When You Score 20,000 Points in MindMaze
 
+{% raw %}
+
 	Article: Q192590
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -66,3 +68,5 @@ permalink: /kb/192/Q192590/
 	
 	=============================================================================
 	
+
+{% endraw %}

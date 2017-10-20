@@ -6,6 +6,8 @@ permalink: /kb/166/Q166951/
 
 ## Q166951: WD97: &quot;Merge Cells Before Split&quot; Option Causes Unexpected Result
 
+{% raw %}
+
 	Article: Q166951
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -106,3 +108,5 @@ permalink: /kb/166/Q166951/
 	
 	=============================================================================
 	
+
+{% endraw %}

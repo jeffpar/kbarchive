@@ -6,6 +6,8 @@ permalink: /kb/123/Q123400/
 
 ## Q123400: NCC/CSNW Product Description and Download Locations
 
+{% raw %}
+
 	Article: Q123400
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -105,3 +107,5 @@ permalink: /kb/123/Q123400/
 	
 	=============================================================================
 	
+
+{% endraw %}

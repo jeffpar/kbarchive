@@ -6,6 +6,8 @@ permalink: /kb/165/Q165998/
 
 ## Q165998: Cold Fusion Applications Bypass Security
 
+{% raw %}
+
 	Article: Q165998
 	Product(s): Internet Information Server
 	Version(s): 2.0,3.0
@@ -57,3 +59,5 @@ permalink: /kb/165/Q165998/
 	
 	=============================================================================
 	
+
+{% endraw %}

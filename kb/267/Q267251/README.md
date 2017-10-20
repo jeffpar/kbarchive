@@ -6,6 +6,8 @@ permalink: /kb/267/Q267251/
 
 ## Q267251: COMTI Test Console Fails When You Use an Array of UDTs
 
+{% raw %}
+
 	Article: Q267251
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0 SP3; :
@@ -59,3 +61,5 @@ permalink: /kb/267/Q267251/
 	
 	=============================================================================
 	
+
+{% endraw %}

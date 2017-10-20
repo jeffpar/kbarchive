@@ -6,6 +6,8 @@ permalink: /kb/162/Q162686/
 
 ## Q162686: Problems with Incorrect #9FX Reality 332 Video Card
 
+{% raw %}
+
 	Article: Q162686
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:3.51
@@ -81,3 +83,5 @@ permalink: /kb/162/Q162686/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179983/
 
 ## Q179983: RDR Sessions on UNC Name Images May Log Off Prematurely
 
+{% raw %}
+
 	Article: Q179983
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -76,3 +78,5 @@ permalink: /kb/179/Q179983/
 	
 	=============================================================================
 	
+
+{% endraw %}

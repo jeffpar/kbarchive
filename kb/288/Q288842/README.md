@@ -6,6 +6,8 @@ permalink: /kb/288/Q288842/
 
 ## Q288842: New 802.2 Connections Always Appear as Ethernet in SNA Manager
 
+{% raw %}
+
 	Article: Q288842
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP4
@@ -171,3 +173,5 @@ permalink: /kb/288/Q288842/
 	
 	=============================================================================
 	
+
+{% endraw %}

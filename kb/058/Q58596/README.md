@@ -6,6 +6,8 @@ permalink: /kb/058/Q58596/
 
 ## Q58596: Mac Hyp: EnableNotify Can Disable Notification Alerts
 
+{% raw %}
+
 	Article: Q58596
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -45,3 +47,5 @@ permalink: /kb/058/Q58596/
 	
 	=============================================================================
 	
+
+{% endraw %}

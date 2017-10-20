@@ -6,6 +6,8 @@ permalink: /kb/218/Q218136/
 
 ## Q218136: How to Configure SBS to Send E-Mail Messages Larger Than 1 MB
 
+{% raw %}
+
 	Article: Q218136
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a,4.5
@@ -63,3 +65,5 @@ permalink: /kb/218/Q218136/
 	
 	=============================================================================
 	
+
+{% endraw %}

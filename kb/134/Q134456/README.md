@@ -6,6 +6,8 @@ permalink: /kb/134/Q134456/
 
 ## Q134456: Err Msg: ScanDisk Cannot Check This Drive Now Because the...
 
+{% raw %}
+
 	Article: Q134456
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -89,3 +91,5 @@ permalink: /kb/134/Q134456/
 	
 	=============================================================================
 	
+
+{% endraw %}

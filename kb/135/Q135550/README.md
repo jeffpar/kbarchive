@@ -6,6 +6,8 @@ permalink: /kb/135/Q135550/
 
 ## Q135550: Err Msg: &quot;Net 815: Network Name Was Deleted&quot; Remoteboot Wrksta
 
+{% raw %}
+
 	Article: Q135550
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/135/Q135550/
 	
 	=============================================================================
 	
+
+{% endraw %}

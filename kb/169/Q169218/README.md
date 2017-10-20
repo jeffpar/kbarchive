@@ -6,6 +6,8 @@ permalink: /kb/169/Q169218/
 
 ## Q169218: FIX: &quot;Invalid Argument Value&quot; Error with SQLSetConnectOption
 
+{% raw %}
+
 	Article: Q169218
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.0
@@ -65,3 +67,5 @@ permalink: /kb/169/Q169218/
 	
 	=============================================================================
 	
+
+{% endraw %}

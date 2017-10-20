@@ -6,6 +6,8 @@ permalink: /kb/320/Q320151/
 
 ## Q320151: HOW TO: Determine Dependencies with InstallShield Express
 
+{% raw %}
+
 	Article: Q320151
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -196,3 +198,5 @@ permalink: /kb/320/Q320151/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157677/
 
 ## Q157677: Systems Management Server 1.2 Service Pack 3 Fixlist
 
+{% raw %}
+
 	Article: Q157677
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP3
@@ -212,3 +214,5 @@ permalink: /kb/157/Q157677/
 	
 	=============================================================================
 	
+
+{% endraw %}

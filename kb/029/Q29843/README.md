@@ -6,6 +6,8 @@ permalink: /kb/029/Q29843/
 
 ## Q29843: C 5.10 MTDYNA.DOC: Creating an MTDYNA Library
 
+{% raw %}
+
 	Article: Q29843
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -57,3 +59,5 @@ permalink: /kb/029/Q29843/
 	   command for this step is shown below:
 	
 	      lib crtlib.lib+cdllsupp.lib;
+
+{% endraw %}

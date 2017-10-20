@@ -6,6 +6,8 @@ permalink: /kb/312/Q312533/
 
 ## Q312533: Intermittent Stop Error in Rdr.sys
 
+{% raw %}
+
 	Article: Q312533
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -86,3 +88,5 @@ permalink: /kb/312/Q312533/
 	
 	=============================================================================
 	
+
+{% endraw %}

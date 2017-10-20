@@ -6,6 +6,8 @@ permalink: /kb/323/Q323062/
 
 ## Q323062: PRB: ACLs Cannot Be Read After You Apply the IIS Lockdown Tool
 
+{% raw %}
+
 	Article: Q323062
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -78,3 +80,5 @@ permalink: /kb/323/Q323062/
 	
 	=============================================================================
 	
+
+{% endraw %}

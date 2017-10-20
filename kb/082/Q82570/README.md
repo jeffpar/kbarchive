@@ -6,6 +6,8 @@ permalink: /kb/082/Q82570/
 
 ## Q82570: Text Is Clipped in Micrografx Designer 3.1
 
+{% raw %}
+
 	Article: Q82570
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/082/Q82570/
 	
 	=============================================================================
 	
+
+{% endraw %}

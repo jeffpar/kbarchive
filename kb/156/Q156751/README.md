@@ -6,6 +6,8 @@ permalink: /kb/156/Q156751/
 
 ## Q156751: PRB: Executing Quit Method on OLE Object Quits VFP
 
+{% raw %}
+
 	Article: Q156751
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -131,3 +133,5 @@ permalink: /kb/156/Q156751/
 	
 	=============================================================================
 	
+
+{% endraw %}

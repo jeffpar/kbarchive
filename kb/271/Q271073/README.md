@@ -6,6 +6,8 @@ permalink: /kb/271/Q271073/
 
 ## Q271073: XWEB: OWA Logon Page Does Not Display Graphics
 
+{% raw %}
+
 	Article: Q271073
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -56,3 +58,5 @@ permalink: /kb/271/Q271073/
 	
 	=============================================================================
 	
+
+{% endraw %}

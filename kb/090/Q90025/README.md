@@ -6,6 +6,8 @@ permalink: /kb/090/Q90025/
 
 ## Q90025: How to Uninstall Windows Sound System
 
+{% raw %}
+
 	Article: Q90025
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/090/Q90025/
 	
 	=============================================================================
 	
+
+{% endraw %}

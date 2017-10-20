@@ -6,6 +6,8 @@ permalink: /kb/200/Q200483/
 
 ## Q200483: SMS: Description of Remote Control Client Installation
 
+{% raw %}
+
 	Article: Q200483
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -101,3 +103,5 @@ permalink: /kb/200/Q200483/
 	
 	=============================================================================
 	
+
+{% endraw %}

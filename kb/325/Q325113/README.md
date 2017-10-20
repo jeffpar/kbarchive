@@ -6,6 +6,8 @@ permalink: /kb/325/Q325113/
 
 ## Q325113: SMS: SMS 2.0 SP4 Fixes That May Require Manual Intervention
 
+{% raw %}
+
 	Article: Q325113
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP4
@@ -84,3 +86,5 @@ permalink: /kb/325/Q325113/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185620/
 
 ## Q185620: XCLN: Exchange Setup Appears To Hang Indefinitely With SQL
 
+{% raw %}
+
 	Article: Q185620
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -51,3 +53,5 @@ permalink: /kb/185/Q185620/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128648/
 
 ## Q128648: How to Create a List Box That Lists Available Fonts
 
+{% raw %}
+
 	Article: Q128648
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -97,3 +99,5 @@ permalink: /kb/128/Q128648/
 	
 	=============================================================================
 	
+
+{% endraw %}

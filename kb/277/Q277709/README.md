@@ -6,6 +6,8 @@ permalink: /kb/277/Q277709/
 
 ## Q277709: XFOR: Notes Calendar Entries Not Migrated with Migration Wizard
 
+{% raw %}
+
 	Article: Q277709
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -61,3 +63,5 @@ permalink: /kb/277/Q277709/
 	
 	=============================================================================
 	
+
+{% endraw %}

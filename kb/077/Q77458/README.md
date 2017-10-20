@@ -6,6 +6,8 @@ permalink: /kb/077/Q77458/
 
 ## Q77458: MS-DOS Shell Leaves Temporary Files on Hard Drive
 
+{% raw %}
+
 	Article: Q77458
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0
@@ -70,3 +72,5 @@ permalink: /kb/077/Q77458/
 	
 	=============================================================================
 	
+
+{% endraw %}

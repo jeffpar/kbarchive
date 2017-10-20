@@ -6,6 +6,8 @@ permalink: /kb/314/Q314595/
 
 ## Q314595: Automap 2002: Err Msg: ...Can Only Import 10,000 Addresses...
 
+{% raw %}
+
 	Article: Q314595
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -62,3 +64,5 @@ permalink: /kb/314/Q314595/
 	
 	=============================================================================
 	
+
+{% endraw %}

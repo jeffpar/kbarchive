@@ -6,6 +6,8 @@ permalink: /kb/260/Q260060/
 
 ## Q260060: XCON: Routing Calculation Complete, Registry Appears Corrupted
 
+{% raw %}
+
 	Article: Q260060
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -115,3 +117,5 @@ permalink: /kb/260/Q260060/
 	
 	=============================================================================
 	
+
+{% endraw %}

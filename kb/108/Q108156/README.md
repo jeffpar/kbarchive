@@ -6,6 +6,8 @@ permalink: /kb/108/Q108156/
 
 ## Q108156: WinPopup Cannot Run... Error with VREDIR.386
 
+{% raw %}
+
 	Article: Q108156
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -49,3 +51,5 @@ permalink: /kb/108/Q108156/
 	
 	=============================================================================
 	
+
+{% endraw %}

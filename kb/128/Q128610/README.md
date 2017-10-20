@@ -6,6 +6,8 @@ permalink: /kb/128/Q128610/
 
 ## Q128610: SMS: Doc Err: INVDOS /N Command Line Option is Incorrect
 
+{% raw %}
+
 	Article: Q128610
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -40,3 +42,5 @@ permalink: /kb/128/Q128610/
 	
 	=============================================================================
 	
+
+{% endraw %}

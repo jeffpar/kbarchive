@@ -6,6 +6,8 @@ permalink: /kb/161/Q161927/
 
 ## Q161927: XCLN: Newprof.exe Causes GPF on Windows 3.x
 
+{% raw %}
+
 	Article: Q161927
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -45,3 +47,5 @@ permalink: /kb/161/Q161927/
 	
 	=============================================================================
 	
+
+{% endraw %}

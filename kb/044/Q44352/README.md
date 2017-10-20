@@ -6,6 +6,8 @@ permalink: /kb/044/Q44352/
 
 ## Q44352: DRAW Statement Doesn't Affect WINDOW's Physical Coordinates
 
+{% raw %}
+
 	Article: Q44352
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -64,3 +66,5 @@ permalink: /kb/044/Q44352/
 	PRINT
 	
 	END
+
+{% endraw %}

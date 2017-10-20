@@ -6,6 +6,8 @@ permalink: /kb/084/Q84341/
 
 ## Q84341: Quietwriter III Cartridge Fonts Incorrect
 
+{% raw %}
+
 	Article: Q84341
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/084/Q84341/
 	
 	=============================================================================
 	
+
+{% endraw %}

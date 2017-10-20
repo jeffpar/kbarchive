@@ -6,6 +6,8 @@ permalink: /kb/174/Q174921/
 
 ## Q174921: HOWTO: Communicate with a UserDocument from a WebBrowser Control
 
+{% raw %}
+
 	Article: Q174921
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -109,3 +111,5 @@ permalink: /kb/174/Q174921/
 	
 	=============================================================================
 	
+
+{% endraw %}

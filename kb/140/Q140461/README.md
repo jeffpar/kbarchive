@@ -6,6 +6,8 @@ permalink: /kb/140/Q140461/
 
 ## Q140461: PC NTMMTA: Err Msg: Service Instance Not Found
 
+{% raw %}
+
 	Article: Q140461
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -64,3 +66,5 @@ permalink: /kb/140/Q140461/
 	
 	=============================================================================
 	
+
+{% endraw %}

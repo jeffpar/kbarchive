@@ -6,6 +6,8 @@ permalink: /kb/193/Q193284/
 
 ## Q193284: XADM: Searching Folders on Server Never Finishes
 
+{% raw %}
+
 	Article: Q193284
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5,8.5
@@ -84,3 +86,5 @@ permalink: /kb/193/Q193284/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145674/
 
 ## Q145674: How Long Does it Take to Set Up Pregnancy and Child Care
 
+{% raw %}
+
 	Article: Q145674
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -50,3 +52,5 @@ permalink: /kb/145/Q145674/
 	
 	=============================================================================
 	
+
+{% endraw %}

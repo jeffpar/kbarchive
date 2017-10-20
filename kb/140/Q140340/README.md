@@ -6,6 +6,8 @@ permalink: /kb/140/Q140340/
 
 ## Q140340: PC WSPlus: Using SPLUSGetFreeBusy Causes a GPF in VB 4.0
 
+{% raw %}
+
 	Article: Q140340
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 1.0
@@ -46,3 +48,5 @@ permalink: /kb/140/Q140340/
 	
 	=============================================================================
 	
+
+{% endraw %}

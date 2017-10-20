@@ -6,6 +6,8 @@ permalink: /kb/234/Q234199/
 
 ## Q234199: Baseball 2000 Err Msg: Invalid Page Fault in Module Graphics.dll
 
+{% raw %}
+
 	Article: Q234199
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -249,3 +251,5 @@ permalink: /kb/234/Q234199/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158852/
 
 ## Q158852: XCLN: Client Cannot Read Project 4.0 Files Sent Through Exchange
 
+{% raw %}
+
 	Article: Q158852
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -62,3 +64,5 @@ permalink: /kb/158/Q158852/
 	
 	=============================================================================
 	
+
+{% endraw %}

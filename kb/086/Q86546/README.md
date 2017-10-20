@@ -6,6 +6,8 @@ permalink: /kb/086/Q86546/
 
 ## Q86546: MHS: Definition of MHS
 
+{% raw %}
+
 	Article: Q86546
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/086/Q86546/
 	
 	=============================================================================
 	
+
+{% endraw %}

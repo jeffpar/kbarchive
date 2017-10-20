@@ -6,6 +6,8 @@ permalink: /kb/160/Q160453/
 
 ## Q160453: Enabling Power Management May Cause SNA Disconnects
 
+{% raw %}
+
 	Article: Q160453
 	Product(s): Microsoft SNA Server
 	Version(s): winnt:2.x,3.0,4.0
@@ -51,3 +53,5 @@ permalink: /kb/160/Q160453/
 	
 	=============================================================================
 	
+
+{% endraw %}

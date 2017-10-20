@@ -6,6 +6,8 @@ permalink: /kb/179/Q179574/
 
 ## Q179574: How to Update Access Numbers for MSN 2.0
 
+{% raw %}
+
 	Article: Q179574
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -48,3 +50,5 @@ permalink: /kb/179/Q179574/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175692/
 
 ## Q175692: PRB: Unable to Remove Previous MSDN Installation
 
+{% raw %}
+
 	Article: Q175692
 	Product(s): Microsoft Developer Network
 	Version(s): winnt:
@@ -107,3 +109,5 @@ permalink: /kb/175/Q175692/
 	
 	=============================================================================
 	
+
+{% endraw %}

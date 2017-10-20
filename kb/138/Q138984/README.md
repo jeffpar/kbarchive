@@ -6,6 +6,8 @@ permalink: /kb/138/Q138984/
 
 ## Q138984: Updated Dmn0.dll for Visual C++ 2.0 for Windows 95
 
+{% raw %}
+
 	Article: Q138984
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0
@@ -64,3 +66,5 @@ permalink: /kb/138/Q138984/
 	
 	=============================================================================
 	
+
+{% endraw %}

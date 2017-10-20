@@ -6,6 +6,8 @@ permalink: /kb/149/Q149592/
 
 ## Q149592: PPT7: .pps Files Fail to Start in Slide Show
 
+{% raw %}
+
 	Article: Q149592
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0a
@@ -94,3 +96,5 @@ permalink: /kb/149/Q149592/
 	
 	=============================================================================
 	
+
+{% endraw %}

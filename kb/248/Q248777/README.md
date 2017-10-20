@@ -6,6 +6,8 @@ permalink: /kb/248/Q248777/
 
 ## Q248777: Streets and Trips 2000: Error When Selecting a Different Printer
 
+{% raw %}
+
 	Article: Q248777
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -67,3 +69,5 @@ permalink: /kb/248/Q248777/
 	
 	=============================================================================
 	
+
+{% endraw %}

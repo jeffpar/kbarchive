@@ -6,6 +6,8 @@ permalink: /kb/125/Q125955/
 
 ## Q125955: Paste Link Fails to Create Network DDE Link in Excel
 
+{% raw %}
+
 	Article: Q125955
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -88,3 +90,5 @@ permalink: /kb/125/Q125955/
 	
 	=============================================================================
 	
+
+{% endraw %}

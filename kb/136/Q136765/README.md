@@ -6,6 +6,8 @@ permalink: /kb/136/Q136765/
 
 ## Q136765: How Memory &amp; Disk Space Are Used During an SQL SELECT Command
 
+{% raw %}
+
 	Article: Q136765
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/136/Q136765/
 	
 	=============================================================================
 	
+
+{% endraw %}

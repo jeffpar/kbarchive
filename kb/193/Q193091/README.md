@@ -6,6 +6,8 @@ permalink: /kb/193/Q193091/
 
 ## Q193091: FIX: VSS OLE Automation Error Message &quot;Bad Access Parameter&quot;
 
+{% raw %}
+
 	Article: Q193091
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/193/Q193091/
 	
 	=============================================================================
 	
+
+{% endraw %}

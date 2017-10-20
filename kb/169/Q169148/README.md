@@ -6,6 +6,8 @@ permalink: /kb/169/Q169148/
 
 ## Q169148: XFOR: GroupWise Migration Fails with Shared Directory WPC20 Err
 
+{% raw %}
+
 	Article: Q169148
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -71,3 +73,5 @@ permalink: /kb/169/Q169148/
 	
 	=============================================================================
 	
+
+{% endraw %}

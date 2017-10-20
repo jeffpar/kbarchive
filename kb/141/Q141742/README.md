@@ -6,6 +6,8 @@ permalink: /kb/141/Q141742/
 
 ## Q141742: Mac Encarta 95: Files Installed During Installation
 
+{% raw %}
+
 	Article: Q141742
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -117,3 +119,5 @@ permalink: /kb/141/Q141742/
 	
 	=============================================================================
 	
+
+{% endraw %}

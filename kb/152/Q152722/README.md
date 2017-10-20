@@ -6,6 +6,8 @@ permalink: /kb/152/Q152722/
 
 ## Q152722: XCLN: ErrMsg: Need Additional Space to Complete This Operation
 
+{% raw %}
+
 	Article: Q152722
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -82,3 +84,5 @@ permalink: /kb/152/Q152722/
 	
 	=============================================================================
 	
+
+{% endraw %}

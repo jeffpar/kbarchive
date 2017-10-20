@@ -6,6 +6,8 @@ permalink: /kb/173/Q173602/
 
 ## Q173602: MSB Rainforest: How to Play the Games
 
+{% raw %}
+
 	Article: Q173602
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -150,3 +152,5 @@ permalink: /kb/173/Q173602/
 	
 	=============================================================================
 	
+
+{% endraw %}

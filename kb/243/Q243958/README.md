@@ -6,6 +6,8 @@ permalink: /kb/243/Q243958/
 
 ## Q243958: SMS: NetWare Client Performance Degrades After SMS Client Inst.
 
+{% raw %}
+
 	Article: Q243958
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -73,3 +75,5 @@ permalink: /kb/243/Q243958/
 	
 	=============================================================================
 	
+
+{% endraw %}

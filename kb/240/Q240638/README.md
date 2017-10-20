@@ -6,6 +6,8 @@ permalink: /kb/240/Q240638/
 
 ## Q240638: World Atlas 2000: Character in Favorite Name Appears As a Dash
 
+{% raw %}
+
 	Article: Q240638
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -82,3 +84,5 @@ permalink: /kb/240/Q240638/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150413/
 
 ## Q150413: Using Netscape Navigator with The Microsoft Network
 
+{% raw %}
+
 	Article: Q150413
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5,2.51,2.52,2.6
@@ -55,3 +57,5 @@ permalink: /kb/150/Q150413/
 	
 	=============================================================================
 	
+
+{% endraw %}

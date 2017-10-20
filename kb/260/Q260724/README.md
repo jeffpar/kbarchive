@@ -6,6 +6,8 @@ permalink: /kb/260/Q260724/
 
 ## Q260724: XADM: Calendar Public Folders Don't Publish Free/Busy Info
 
+{% raw %}
+
 	Article: Q260724
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -48,3 +50,5 @@ permalink: /kb/260/Q260724/
 	
 	=============================================================================
 	
+
+{% endraw %}

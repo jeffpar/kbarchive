@@ -6,6 +6,8 @@ permalink: /kb/222/Q222109/
 
 ## Q222109: Using Persistent Verification, Blank Password Not Sent To Host
 
+{% raw %}
+
 	Article: Q222109
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0SP1,4.0SP2
@@ -77,3 +79,5 @@ permalink: /kb/222/Q222109/
 	
 	=============================================================================
 	
+
+{% endraw %}

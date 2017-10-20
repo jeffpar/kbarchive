@@ -6,6 +6,8 @@ permalink: /kb/148/Q148398/
 
 ## Q148398: Remotely Managing FPNW Users in Windows NT Workstation/Server
 
+{% raw %}
+
 	Article: Q148398
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -143,3 +145,5 @@ permalink: /kb/148/Q148398/
 	
 	=============================================================================
 	
+
+{% endraw %}

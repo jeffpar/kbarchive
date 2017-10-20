@@ -6,6 +6,8 @@ permalink: /kb/104/Q104418/
 
 ## Q104418: Direct Memory Access (DMA) Channels and Descriptions
 
+{% raw %}
+
 	Article: Q104418
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:2.x,3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -72,3 +74,5 @@ permalink: /kb/104/Q104418/
 	
 	=============================================================================
 	
+
+{% endraw %}

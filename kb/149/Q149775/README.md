@@ -6,6 +6,8 @@ permalink: /kb/149/Q149775/
 
 ## Q149775: World Atlas: Program Hangs When You Click Statistic Button
 
+{% raw %}
+
 	Article: Q149775
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -80,3 +82,5 @@ permalink: /kb/149/Q149775/
 	
 	=============================================================================
 	
+
+{% endraw %}

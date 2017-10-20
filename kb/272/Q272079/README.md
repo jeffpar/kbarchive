@@ -6,6 +6,8 @@ permalink: /kb/272/Q272079/
 
 ## Q272079: IIS Search Method May Allow Unauthorized Users a  Directory List
 
+{% raw %}
+
 	Article: Q272079
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -84,3 +86,5 @@ permalink: /kb/272/Q272079/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/039/Q39191/
 
 ## Q39191: Cannot CHAIN to Earlier QuickBASIC Version Unless Stand Alone
 
+{% raw %}
+
 	Article: Q39191
 	Product(s): See article
 	Version(s): 4.50
@@ -28,3 +30,5 @@ permalink: /kb/039/Q39191/
 	and 4.50; to Microsoft BASIC Compiler versions 6.00 and 6.00b for
 	MS-DOS and MS OS/2; and to Microsoft BASIC Professional Development
 	System (PDS) versions 7.00 and 7.10 for MS-DOS and MS OS/2.
+
+{% endraw %}

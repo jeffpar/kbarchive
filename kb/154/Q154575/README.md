@@ -6,6 +6,8 @@ permalink: /kb/154/Q154575/
 
 ## Q154575: HOWTO: Extract Appointment Information from Schedule Plus
 
+{% raw %}
+
 	Article: Q154575
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -103,3 +105,5 @@ permalink: /kb/154/Q154575/
 	
 	=============================================================================
 	
+
+{% endraw %}

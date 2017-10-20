@@ -6,6 +6,8 @@ permalink: /kb/193/Q193703/
 
 ## Q193703: XADM: Error Msg: Event ID 1189; IMAP4 Object Not Found
 
+{% raw %}
+
 	Article: Q193703
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -51,3 +53,5 @@ permalink: /kb/193/Q193703/
 	
 	=============================================================================
 	
+
+{% endraw %}

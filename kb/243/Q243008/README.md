@@ -6,6 +6,8 @@ permalink: /kb/243/Q243008/
 
 ## Q243008: IIS Won't Start if Client for Microsoft Networks Is Uninstalled
 
+{% raw %}
+
 	Article: Q243008
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -75,3 +77,5 @@ permalink: /kb/243/Q243008/
 	
 	=============================================================================
 	
+
+{% endraw %}

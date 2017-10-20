@@ -6,6 +6,8 @@ permalink: /kb/158/Q158814/
 
 ## Q158814: FP: How to Link to Two Target Frames Using a Single Hyperlink
 
+{% raw %}
+
 	Article: Q158814
 	Product(s): Word Front Page
 	Version(s): 1.1
@@ -125,3 +127,5 @@ permalink: /kb/158/Q158814/
 	
 	=============================================================================
 	
+
+{% endraw %}

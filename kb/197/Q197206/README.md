@@ -6,6 +6,8 @@ permalink: /kb/197/Q197206/
 
 ## Q197206: PRB: Slight Memory Leak Calling VFP COM DLL Repeatedly from VFP
 
+{% raw %}
+
 	Article: Q197206
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -103,3 +105,5 @@ permalink: /kb/197/Q197206/
 	
 	=============================================================================
 	
+
+{% endraw %}

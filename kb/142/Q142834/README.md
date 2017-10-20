@@ -6,6 +6,8 @@ permalink: /kb/142/Q142834/
 
 ## Q142834: INFO: Limiting Number of Rows Returned in Resultset with RDO
 
+{% raw %}
+
 	Article: Q142834
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/142/Q142834/
 	
 	=============================================================================
 	
+
+{% endraw %}

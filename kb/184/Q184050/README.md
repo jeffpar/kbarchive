@@ -6,6 +6,8 @@ permalink: /kb/184/Q184050/
 
 ## Q184050: WD97: Assigned Selected Adjacent Text Variable Doubles
 
+{% raw %}
+
 	Article: Q184050
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -98,3 +100,5 @@ permalink: /kb/184/Q184050/
 	
 	=============================================================================
 	
+
+{% endraw %}

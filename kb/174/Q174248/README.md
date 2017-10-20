@@ -6,6 +6,8 @@ permalink: /kb/174/Q174248/
 
 ## Q174248: Index Server 1.1 Does Not Index German Compound Words
 
+{% raw %}
+
 	Article: Q174248
 	Product(s): Internet Information Server
 	Version(s): WINNT: 1.1
@@ -70,3 +72,5 @@ permalink: /kb/174/Q174248/
 	
 	=============================================================================
 	
+
+{% endraw %}

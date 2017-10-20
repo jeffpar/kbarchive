@@ -6,6 +6,8 @@ permalink: /kb/253/Q253692/
 
 ## Q253692: Kids Products Troubleshooter Available
 
+{% raw %}
+
 	Article: Q253692
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0,1.1,2.0
@@ -55,3 +57,5 @@ permalink: /kb/253/Q253692/
 	
 	=============================================================================
 	
+
+{% endraw %}

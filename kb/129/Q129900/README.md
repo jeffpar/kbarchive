@@ -6,6 +6,8 @@ permalink: /kb/129/Q129900/
 
 ## Q129900: PC Win: Can Not Store Folders Separate from MMF
 
+{% raw %}
+
 	Article: Q129900
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -63,3 +65,5 @@ permalink: /kb/129/Q129900/
 	
 	=============================================================================
 	
+
+{% endraw %}

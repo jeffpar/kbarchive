@@ -6,6 +6,8 @@ permalink: /kb/099/Q99749/
 
 ## Q99749: Installing the 32-bit Fast-SCSI-2 Controller and HPFS
 
+{% raw %}
+
 	Article: Q99749
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -117,3 +119,5 @@ permalink: /kb/099/Q99749/
 	
 	=============================================================================
 	
+
+{% endraw %}

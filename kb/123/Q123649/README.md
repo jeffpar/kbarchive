@@ -6,6 +6,8 @@ permalink: /kb/123/Q123649/
 
 ## Q123649: MHS: Err Msg: Outpost: Could Not Create Mail Item
 
+{% raw %}
+
 	Article: Q123649
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/123/Q123649/
 	
 	=============================================================================
 	
+
+{% endraw %}

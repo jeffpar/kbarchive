@@ -6,6 +6,8 @@ permalink: /kb/145/Q145714/
 
 ## Q145714: How to Establish Two 802.2 Connections To AS/400
 
+{% raw %}
+
 	Article: Q145714
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -107,3 +109,5 @@ permalink: /kb/145/Q145714/
 	
 	=============================================================================
 	
+
+{% endraw %}

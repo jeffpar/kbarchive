@@ -6,6 +6,8 @@ permalink: /kb/185/Q185329/
 
 ## Q185329: How to Enable or Disable Network Bindings
 
+{% raw %}
+
 	Article: Q185329
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -55,3 +57,5 @@ permalink: /kb/185/Q185329/
 	
 	=============================================================================
 	
+
+{% endraw %}

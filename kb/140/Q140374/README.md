@@ -6,6 +6,8 @@ permalink: /kb/140/Q140374/
 
 ## Q140374: SMS: System Management Server Jobs Continue to Retry &amp; Not Fail
 
+{% raw %}
+
 	Article: Q140374
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -94,3 +96,5 @@ permalink: /kb/140/Q140374/
 	
 	=============================================================================
 	
+
+{% endraw %}

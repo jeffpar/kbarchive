@@ -6,6 +6,8 @@ permalink: /kb/163/Q163852/
 
 ## Q163852: Invalid Operand with Locked CMPXCHG8B Instruction
 
+{% raw %}
+
 	Article: Q163852
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.5,3.51,4.0
@@ -158,3 +160,5 @@ permalink: /kb/163/Q163852/
 	
 	=============================================================================
 	
+
+{% endraw %}

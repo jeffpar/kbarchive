@@ -6,6 +6,8 @@ permalink: /kb/250/Q250998/
 
 ## Q250998: Access Violation in Cmd.exe in Long Batch Files Using &quot;FOR /F&quot;
 
+{% raw %}
+
 	Article: Q250998
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -122,3 +124,5 @@ permalink: /kb/250/Q250998/
 	
 	=============================================================================
 	
+
+{% endraw %}

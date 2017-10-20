@@ -6,6 +6,8 @@ permalink: /kb/299/Q299258/
 
 ## Q299258: XADM: Information Store Access Violation with Virus Scanning API
 
+{% raw %}
+
 	Article: Q299258
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3,5.5 SP4
@@ -104,3 +106,5 @@ permalink: /kb/299/Q299258/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159993/
 
 ## Q159993: Unable to Administer Macintosh Volumes from Windows NT Explorer
 
+{% raw %}
+
 	Article: Q159993
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -48,3 +50,5 @@ permalink: /kb/159/Q159993/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/264/Q264159/
 
 ## Q264159: XADM: Uninstalling Mailbox Manager Service Leaves Mailbox
 
+{% raw %}
+
 	Article: Q264159
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -118,3 +120,5 @@ permalink: /kb/264/Q264159/
 	
 	=============================================================================
 	
+
+{% endraw %}

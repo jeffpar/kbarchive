@@ -6,6 +6,8 @@ permalink: /kb/119/Q119053/
 
 ## Q119053: MCI: Invalid Address Causes Delivery Failure to All Users
 
+{% raw %}
+
 	Article: Q119053
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1b
@@ -58,3 +60,5 @@ permalink: /kb/119/Q119053/
 	
 	=============================================================================
 	
+
+{% endraw %}

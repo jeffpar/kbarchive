@@ -6,6 +6,8 @@ permalink: /kb/102/Q102706/
 
 ## Q102706: PRB: SECONDS() Function Is Not Reset at 12:00 A.M. (Midnight)
 
+{% raw %}
+
 	Article: Q102706
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.60,2.60a,3.0
@@ -79,3 +81,5 @@ permalink: /kb/102/Q102706/
 	
 	=============================================================================
 	
+
+{% endraw %}

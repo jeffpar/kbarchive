@@ -6,6 +6,8 @@ permalink: /kb/186/Q186620/
 
 ## Q186620: Terminal Server Commands: AREVFIX
 
+{% raw %}
+
 	Article: Q186620
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -41,3 +43,5 @@ permalink: /kb/186/Q186620/
 	
 	=============================================================================
 	
+
+{% endraw %}

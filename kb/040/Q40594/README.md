@@ -6,6 +6,8 @@ permalink: /kb/040/Q40594/
 
 ## Q40594: Accessing the COM3: or COM4: Port
 
+{% raw %}
+
 	Article: Q40594
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,1.5,6.0,6.0a,6.0ax; MS-DOS:7.0
@@ -53,3 +55,5 @@ permalink: /kb/040/Q40594/
 	
 	=============================================================================
 	
+
+{% endraw %}

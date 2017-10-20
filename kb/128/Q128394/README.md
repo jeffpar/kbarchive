@@ -6,6 +6,8 @@ permalink: /kb/128/Q128394/
 
 ## Q128394: Multimedia: System Hangs with Diamond Stealth 64
 
+{% raw %}
+
 	Article: Q128394
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1994 edition,1995 edition,3.1
@@ -91,3 +93,5 @@ permalink: /kb/128/Q128394/
 	
 	=============================================================================
 	
+
+{% endraw %}

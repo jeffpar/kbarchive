@@ -6,6 +6,8 @@ permalink: /kb/095/Q95941/
 
 ## Q95941: Err Msg: &quot;Cannot Find File LMRSETUP.EXE&quot; with RAS Setup
 
+{% raw %}
+
 	Article: Q95941
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/095/Q95941/
 	
 	=============================================================================
 	
+
+{% endraw %}

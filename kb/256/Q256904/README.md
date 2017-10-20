@@ -6,6 +6,8 @@ permalink: /kb/256/Q256904/
 
 ## Q256904: WD97: Day Name Is Incorrect in a Date and Time Field
 
+{% raw %}
+
 	Article: Q256904
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -158,3 +160,5 @@ permalink: /kb/256/Q256904/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/269/Q269024/
 
 ## Q269024: XCLN: Mailto Hyperlink Word Document 97 Opens Two Message Forms
 
+{% raw %}
+
 	Article: Q269024
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -88,3 +90,5 @@ permalink: /kb/269/Q269024/
 	
 	=============================================================================
 	
+
+{% endraw %}

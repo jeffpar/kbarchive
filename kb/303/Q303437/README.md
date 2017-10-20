@@ -6,6 +6,8 @@ permalink: /kb/303/Q303437/
 
 ## Q303437: Security Update MS00-024 Breaks SHGetFolderPath in Shfolder.dll
 
+{% raw %}
+
 	Article: Q303437
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6a
@@ -97,3 +99,5 @@ permalink: /kb/303/Q303437/
 	
 	=============================================================================
 	
+
+{% endraw %}

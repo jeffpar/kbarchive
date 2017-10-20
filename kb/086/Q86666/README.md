@@ -6,6 +6,8 @@ permalink: /kb/086/Q86666/
 
 ## Q86666: PPT: Pantone(R) Color Conversion
 
+{% raw %}
+
 	Article: Q86666
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:2.0,3.0,4.0; WINDOWS:2.0,3.0,4.0,4.0a,4.0c,7.0
@@ -72,3 +74,5 @@ permalink: /kb/086/Q86666/
 	
 	=============================================================================
 	
+
+{% endraw %}

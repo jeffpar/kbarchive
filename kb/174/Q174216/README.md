@@ -6,6 +6,8 @@ permalink: /kb/174/Q174216/
 
 ## Q174216: PRB: TransparentPaint Backstyle Option Unavailable
 
+{% raw %}
+
 	Article: Q174216
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -143,3 +145,5 @@ permalink: /kb/174/Q174216/
 	
 	=============================================================================
 	
+
+{% endraw %}

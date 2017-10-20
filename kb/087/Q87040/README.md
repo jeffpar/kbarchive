@@ -6,6 +6,8 @@ permalink: /kb/087/Q87040/
 
 ## Q87040: SMTP: Configuration for Encapsulation
 
+{% raw %}
+
 	Article: Q87040
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -42,3 +44,5 @@ permalink: /kb/087/Q87040/
 	
 	=============================================================================
 	
+
+{% endraw %}

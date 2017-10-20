@@ -6,6 +6,8 @@ permalink: /kb/080/Q80021/
 
 ## Q80021: Mac Srv Wkst: &quot;Mail System Could Not Be Loaded&quot; Alert
 
+{% raw %}
+
 	Article: Q80021
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0,3.0a
@@ -52,3 +54,5 @@ permalink: /kb/080/Q80021/
 	
 	=============================================================================
 	
+
+{% endraw %}

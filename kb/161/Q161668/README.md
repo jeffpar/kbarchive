@@ -6,6 +6,8 @@ permalink: /kb/161/Q161668/
 
 ## Q161668: Kids Plus!: Server Application Retains Previous Active Tool
 
+{% raw %}
+
 	Article: Q161668
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/161/Q161668/
 	
 	=============================================================================
 	
+
+{% endraw %}

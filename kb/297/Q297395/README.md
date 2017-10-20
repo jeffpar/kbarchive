@@ -6,6 +6,8 @@ permalink: /kb/297/Q297395/
 
 ## Q297395: XADM: Performance Wizard Does Not Update File Location
 
+{% raw %}
+
 	Article: Q297395
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -84,3 +86,5 @@ permalink: /kb/297/Q297395/
 	
 	=============================================================================
 	
+
+{% endraw %}

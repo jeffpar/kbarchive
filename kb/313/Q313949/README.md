@@ -6,6 +6,8 @@ permalink: /kb/313/Q313949/
 
 ## Q313949: Encarta 2001: Msg: An Encarta Product(s) Is Running
 
+{% raw %}
+
 	Article: Q313949
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/313/Q313949/
 	
 	=============================================================================
 	
+
+{% endraw %}

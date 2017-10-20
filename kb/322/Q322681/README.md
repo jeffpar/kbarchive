@@ -6,6 +6,8 @@ permalink: /kb/322/Q322681/
 
 ## Q322681: FTP Server Does Not Support Extended Characters
 
+{% raw %}
+
 	Article: Q322681
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -88,3 +90,5 @@ permalink: /kb/322/Q322681/
 	
 	=============================================================================
 	
+
+{% endraw %}

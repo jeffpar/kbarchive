@@ -6,6 +6,8 @@ permalink: /kb/156/Q156274/
 
 ## Q156274: XADM: Saving Changes to Customized Templates
 
+{% raw %}
+
 	Article: Q156274
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/156/Q156274/
 	
 	=============================================================================
 	
+
+{% endraw %}

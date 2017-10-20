@@ -6,6 +6,8 @@ permalink: /kb/129/Q129776/
 
 ## Q129776: How to Browse an IBM LAN Server Domain from Windows NT
 
+{% raw %}
+
 	Article: Q129776
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/129/Q129776/
 	
 	=============================================================================
 	
+
+{% endraw %}

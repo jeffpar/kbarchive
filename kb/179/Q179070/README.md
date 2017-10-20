@@ -6,6 +6,8 @@ permalink: /kb/179/Q179070/
 
 ## Q179070: Year 2000 Reverts to Year 1900 with Hal.dll File
 
+{% raw %}
+
 	Article: Q179070
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -55,3 +57,5 @@ permalink: /kb/179/Q179070/
 	
 	=============================================================================
 	
+
+{% endraw %}

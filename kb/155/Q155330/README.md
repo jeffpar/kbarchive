@@ -6,6 +6,8 @@ permalink: /kb/155/Q155330/
 
 ## Q155330: FPNW Utility to Set Up Subauthentication on Domain Controller
 
+{% raw %}
+
 	Article: Q155330
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -52,3 +54,5 @@ permalink: /kb/155/Q155330/
 	
 	=============================================================================
 	
+
+{% endraw %}

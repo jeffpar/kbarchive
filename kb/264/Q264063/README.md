@@ -6,6 +6,8 @@ permalink: /kb/264/Q264063/
 
 ## Q264063: VBScript Date and Time Functions May not be Formatted Properly
 
+{% raw %}
+
 	Article: Q264063
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -123,3 +125,5 @@ permalink: /kb/264/Q264063/
 	
 	=============================================================================
 	
+
+{% endraw %}

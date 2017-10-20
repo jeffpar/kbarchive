@@ -6,6 +6,8 @@ permalink: /kb/184/Q184458/
 
 ## Q184458: Outwars: Where Does Outwars Store Saved Games?
 
+{% raw %}
+
 	Article: Q184458
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -54,3 +56,5 @@ permalink: /kb/184/Q184458/
 	
 	=============================================================================
 	
+
+{% endraw %}

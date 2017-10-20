@@ -6,6 +6,8 @@ permalink: /kb/134/Q134877/
 
 ## Q134877: PPT: Using Transitions to Achieve Smoother Branching
 
+{% raw %}
+
 	Article: Q134877
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -89,3 +91,5 @@ permalink: /kb/134/Q134877/
 	
 	=============================================================================
 	
+
+{% endraw %}

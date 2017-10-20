@@ -6,6 +6,8 @@ permalink: /kb/066/Q66326/
 
 ## Q66326: Windows 3.0 Productivity Pack 1.0 Disk Directories
 
+{% raw %}
+
 	Article: Q66326
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0
@@ -142,3 +144,5 @@ permalink: /kb/066/Q66326/
 	
 	=============================================================================
 	
+
+{% endraw %}

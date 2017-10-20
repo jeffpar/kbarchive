@@ -6,6 +6,8 @@ permalink: /kb/185/Q185739/
 
 ## Q185739: How to Disable Restarting GUI Mode Setup
 
+{% raw %}
+
 	Article: Q185739
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.1,3.5,3.51,4.0,4.0a
@@ -150,3 +152,5 @@ permalink: /kb/185/Q185739/
 	
 	=============================================================================
 	
+
+{% endraw %}

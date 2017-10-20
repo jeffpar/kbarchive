@@ -6,6 +6,8 @@ permalink: /kb/073/Q73763/
 
 ## Q73763: Sysgen Driver Version 3.41 Required with Windows
 
+{% raw %}
+
 	Article: Q73763
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/073/Q73763/
 	
 	=============================================================================
 	
+
+{% endraw %}

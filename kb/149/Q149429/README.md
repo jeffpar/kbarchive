@@ -6,6 +6,8 @@ permalink: /kb/149/Q149429/
 
 ## Q149429: INFO: What Is an OCA file?
 
+{% raw %}
+
 	Article: Q149429
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -69,3 +71,5 @@ permalink: /kb/149/Q149429/
 	
 	=============================================================================
 	
+
+{% endraw %}

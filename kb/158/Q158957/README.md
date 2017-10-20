@@ -6,6 +6,8 @@ permalink: /kb/158/Q158957/
 
 ## Q158957: DirectX: Description of the DirectX Setup (Dxsetup.exe) Tool
 
+{% raw %}
+
 	Article: Q158957
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -401,3 +403,5 @@ permalink: /kb/158/Q158957/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140059/
 
 ## Q140059: Stop 0xA in Afd When Browsing IIS
 
+{% raw %}
+
 	Article: Q140059
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP1
@@ -61,3 +63,5 @@ permalink: /kb/140/Q140059/
 	
 	=============================================================================
 	
+
+{% endraw %}

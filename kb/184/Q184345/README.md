@@ -6,6 +6,8 @@ permalink: /kb/184/Q184345/
 
 ## Q184345: How to Configure Outlook 98 for Use With MSN The Microsoft Netwo
 
+{% raw %}
+
 	Article: Q184345
 	Product(s): The Microsoft Network
 	Version(s): 2.5,2.51,2.52,2.6,5.0,5.1,5.2
@@ -154,3 +156,5 @@ permalink: /kb/184/Q184345/
 	
 	=============================================================================
 	
+
+{% endraw %}

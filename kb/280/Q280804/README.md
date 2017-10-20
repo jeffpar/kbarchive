@@ -6,6 +6,8 @@ permalink: /kb/280/Q280804/
 
 ## Q280804: Memory Leak in Mapsvc.exe When Synchronizing Many Users
 
+{% raw %}
+
 	Article: Q280804
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -83,3 +85,5 @@ permalink: /kb/280/Q280804/
 	
 	=============================================================================
 	
+
+{% endraw %}

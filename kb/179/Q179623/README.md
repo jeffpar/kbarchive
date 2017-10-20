@@ -6,6 +6,8 @@ permalink: /kb/179/Q179623/
 
 ## Q179623: XADM: Store Terminates Unexpectedly in CbBinlen
 
+{% raw %}
+
 	Article: Q179623
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -154,3 +156,5 @@ permalink: /kb/179/Q179623/
 	
 	=============================================================================
 	
+
+{% endraw %}

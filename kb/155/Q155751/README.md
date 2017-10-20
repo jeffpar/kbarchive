@@ -6,6 +6,8 @@ permalink: /kb/155/Q155751/
 
 ## Q155751: HOWTO: Create Form Letter Programmatically in Word with OLE
 
+{% raw %}
+
 	Article: Q155751
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,6.0
@@ -164,3 +166,5 @@ permalink: /kb/155/Q155751/
 	
 	=============================================================================
 	
+
+{% endraw %}

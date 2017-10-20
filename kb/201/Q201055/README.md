@@ -6,6 +6,8 @@ permalink: /kb/201/Q201055/
 
 ## Q201055: SMS: Resource Manager Does Not Use Domain Names
 
+{% raw %}
+
 	Article: Q201055
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -43,3 +45,5 @@ permalink: /kb/201/Q201055/
 	
 	=============================================================================
 	
+
+{% endraw %}

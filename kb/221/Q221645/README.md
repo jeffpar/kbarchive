@@ -6,6 +6,8 @@ permalink: /kb/221/Q221645/
 
 ## Q221645: FIX:_SCREEN.Forms&#91; &#93; Collection Not Available at Design-Time
 
+{% raw %}
+
 	Article: Q221645
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -72,3 +74,5 @@ permalink: /kb/221/Q221645/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142651/
 
 ## Q142651: Third-Party Cursor Hangs Cirrus Driver
 
+{% raw %}
+
 	Article: Q142651
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -64,3 +66,5 @@ permalink: /kb/142/Q142651/
 	
 	=============================================================================
 	
+
+{% endraw %}

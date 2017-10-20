@@ -6,6 +6,8 @@ permalink: /kb/105/Q105333/
 
 ## Q105333: MS-DOS 6.x Err Msg: Error Attempting to Update &lt;FILENAME&gt;.INI
 
+{% raw %}
+
 	Article: Q105333
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -53,3 +55,5 @@ permalink: /kb/105/Q105333/
 	
 	=============================================================================
 	
+
+{% endraw %}

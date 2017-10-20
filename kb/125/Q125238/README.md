@@ -6,6 +6,8 @@ permalink: /kb/125/Q125238/
 
 ## Q125238: Office Professional and Bookshelf Disables Sound Drivers
 
+{% raw %}
+
 	Article: Q125238
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1994 edition, 4.3C,1995 edition; WINDOWS:1.0
@@ -100,3 +102,5 @@ permalink: /kb/125/Q125238/
 	
 	=============================================================================
 	
+
+{% endraw %}

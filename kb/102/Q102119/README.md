@@ -6,6 +6,8 @@ permalink: /kb/102/Q102119/
 
 ## Q102119: Mac Form: Creating a Custom Form with Pre-Addressed Recipient
 
+{% raw %}
+
 	Article: Q102119
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,3.0,3.1
@@ -63,3 +65,5 @@ permalink: /kb/102/Q102119/
 	
 	=============================================================================
 	
+
+{% endraw %}

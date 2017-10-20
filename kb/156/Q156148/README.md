@@ -6,6 +6,8 @@ permalink: /kb/156/Q156148/
 
 ## Q156148: Full Court Press: Multiplayer Information
 
+{% raw %}
+
 	Article: Q156148
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -74,3 +76,5 @@ permalink: /kb/156/Q156148/
 	
 	=============================================================================
 	
+
+{% endraw %}

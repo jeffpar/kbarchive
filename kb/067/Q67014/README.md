@@ -6,6 +6,8 @@ permalink: /kb/067/Q67014/
 
 ## Q67014: Fontware Installation Kit Not Enough Disk Space Available
 
+{% raw %}
+
 	Article: Q67014
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -49,3 +51,5 @@ permalink: /kb/067/Q67014/
 	
 	=============================================================================
 	
+
+{% endraw %}

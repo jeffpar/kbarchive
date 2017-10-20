@@ -6,6 +6,8 @@ permalink: /kb/135/Q135916/
 
 ## Q135916: PRB: Save As Command Is Unavailable from Visual Class Designer
 
+{% raw %}
+
 	Article: Q135916
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -46,3 +48,5 @@ permalink: /kb/135/Q135916/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192507/
 
 ## Q192507: Microsoft Word 97 At A Glance Comments and Corrections
 
+{% raw %}
+
 	Article: Q192507
 	Product(s): Microsoft Press
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/192/Q192507/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245195/
 
 ## Q245195: Event ID 12288 with Windows NT Server 3.51
 
+{% raw %}
+
 	Article: Q245195
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -84,3 +86,5 @@ permalink: /kb/245/Q245195/
 	
 	=============================================================================
 	
+
+{% endraw %}

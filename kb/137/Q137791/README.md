@@ -6,6 +6,8 @@ permalink: /kb/137/Q137791/
 
 ## Q137791: ATI Mach32 PCI Video BIOS Date is Incorrect
 
+{% raw %}
+
 	Article: Q137791
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -48,3 +50,5 @@ permalink: /kb/137/Q137791/
 	
 	=============================================================================
 	
+
+{% endraw %}

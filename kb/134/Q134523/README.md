@@ -6,6 +6,8 @@ permalink: /kb/134/Q134523/
 
 ## Q134523: Talking Solitaire and Minesweeper Do Not Work in Windows 95
 
+{% raw %}
+
 	Article: Q134523
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/134/Q134523/
 	
 	=============================================================================
 	
+
+{% endraw %}

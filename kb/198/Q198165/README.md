@@ -6,6 +6,8 @@ permalink: /kb/198/Q198165/
 
 ## Q198165: Virtual Globe 99 Err Msg: Unable to Load the Resource.dll
 
+{% raw %}
+
 	Article: Q198165
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -72,3 +74,5 @@ permalink: /kb/198/Q198165/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156986/
 
 ## Q156986: Error Message: The Computer You're Dialing in to Cannot...
 
+{% raw %}
+
 	Article: Q156986
 	Product(s): The Microsoft Network
 	Version(s): 2.6,5,5.0,5.01,5.1,5.2,5.5
@@ -68,3 +70,5 @@ permalink: /kb/156/Q156986/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85351/
 
 ## Q85351: FAX: MS-DOS Version Requirement for the Fax Gateway
 
+{% raw %}
+
 	Article: Q85351
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -41,3 +43,5 @@ permalink: /kb/085/Q85351/
 	
 	=============================================================================
 	
+
+{% endraw %}

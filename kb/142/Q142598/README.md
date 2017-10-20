@@ -6,6 +6,8 @@ permalink: /kb/142/Q142598/
 
 ## Q142598: Err Msg: Session Management Module Is Invalid
 
+{% raw %}
+
 	Article: Q142598
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0
@@ -141,3 +143,5 @@ permalink: /kb/142/Q142598/
 	
 	=============================================================================
 	
+
+{% endraw %}

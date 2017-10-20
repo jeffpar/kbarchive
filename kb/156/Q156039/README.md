@@ -6,6 +6,8 @@ permalink: /kb/156/Q156039/
 
 ## Q156039: Deadly Tide: How to Run Program in Demonstration Mode
 
+{% raw %}
+
 	Article: Q156039
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/156/Q156039/
 	
 	=============================================================================
 	
+
+{% endraw %}

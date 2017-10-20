@@ -6,6 +6,8 @@ permalink: /kb/047/Q47758/
 
 ## Q47758: SETMEM(0) Returns Total Heap, FRE(-1) Returns Available Heap
 
+{% raw %}
+
 	Article: Q47758
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -40,3 +42,5 @@ permalink: /kb/047/Q47758/
 	did before the call. FRE(-1), however, is decreased by the size of the
 	string (200 bytes for the string plus 2 bytes for the string
 	descriptor).
+
+{% endraw %}

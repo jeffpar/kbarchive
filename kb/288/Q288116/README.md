@@ -6,6 +6,8 @@ permalink: /kb/288/Q288116/
 
 ## Q288116: FP98: Percent Sign in URL Returns HTTP 404 Error
 
+{% raw %}
+
 	Article: Q288116
 	Product(s): Word Front Page
 	Version(s): 5,5.5
@@ -82,3 +84,5 @@ permalink: /kb/288/Q288116/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117212/
 
 ## Q117212: How to Use the FoxPro Spelling Checker (SPELLCHK.APP)
 
+{% raw %}
+
 	Article: Q117212
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 2.50b 2.60 3.00 | 2.5
@@ -110,3 +112,5 @@ permalink: /kb/117/Q117212/
 	
 	=============================================================================
 	
+
+{% endraw %}

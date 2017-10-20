@@ -6,6 +6,8 @@ permalink: /kb/196/Q196560/
 
 ## Q196560: WD97: Rulers Disappear with Selection Larger Than One Page
 
+{% raw %}
+
 	Article: Q196560
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -49,3 +51,5 @@ permalink: /kb/196/Q196560/
 	
 	=============================================================================
 	
+
+{% endraw %}

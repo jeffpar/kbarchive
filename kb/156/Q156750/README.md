@@ -6,6 +6,8 @@ permalink: /kb/156/Q156750/
 
 ## Q156750: AddGroupNameResponse Frame from WinNT May Cause WFWG to Hang
 
+{% raw %}
+
 	Article: Q156750
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0; :
@@ -86,3 +88,5 @@ permalink: /kb/156/Q156750/
 	
 	=============================================================================
 	
+
+{% endraw %}

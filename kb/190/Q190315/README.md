@@ -6,6 +6,8 @@ permalink: /kb/190/Q190315/
 
 ## Q190315: PRB: Some CRT File Functions Adjust For Daylight Savings Time
 
+{% raw %}
+
 	Article: Q190315
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -147,3 +149,5 @@ permalink: /kb/190/Q190315/
 	
 	=============================================================================
 	
+
+{% endraw %}

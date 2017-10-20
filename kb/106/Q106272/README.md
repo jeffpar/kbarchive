@@ -6,6 +6,8 @@ permalink: /kb/106/Q106272/
 
 ## Q106272: WFWG Err Msg: Network Busy
 
+{% raw %}
+
 	Article: Q106272
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/106/Q106272/
 	
 	=============================================================================
 	
+
+{% endraw %}

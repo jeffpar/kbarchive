@@ -6,6 +6,8 @@ permalink: /kb/126/Q126677/
 
 ## Q126677: Writer/Artist: Limitation on Number of Users
 
+{% raw %}
+
 	Article: Q126677
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.1,1.1a; WINDOWS:1.1,1.1a
@@ -59,3 +61,5 @@ permalink: /kb/126/Q126677/
 	
 	=============================================================================
 	
+
+{% endraw %}

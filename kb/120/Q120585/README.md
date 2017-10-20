@@ -6,6 +6,8 @@ permalink: /kb/120/Q120585/
 
 ## Q120585: Golf 2.0 Requires 12 MB of Virtual Memory
 
+{% raw %}
+
 	Article: Q120585
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -41,3 +43,5 @@ permalink: /kb/120/Q120585/
 	
 	=============================================================================
 	
+
+{% endraw %}

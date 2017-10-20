@@ -6,6 +6,8 @@ permalink: /kb/192/Q192837/
 
 ## Q192837: PPT7: Black and White Versus Pure Black and White Printing
 
+{% raw %}
+
 	Article: Q192837
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -92,3 +94,5 @@ permalink: /kb/192/Q192837/
 	
 	=============================================================================
 	
+
+{% endraw %}

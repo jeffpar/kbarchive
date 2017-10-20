@@ -6,6 +6,8 @@ permalink: /kb/032/Q32109/
 
 ## Q32109: INFO: Two Syntaxes for Calling Functions with Pointers
 
+{% raw %}
+
 	Article: Q32109
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -103,3 +105,5 @@ permalink: /kb/032/Q32109/
 	
 	=============================================================================
 	
+
+{% endraw %}

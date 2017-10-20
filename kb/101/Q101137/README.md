@@ -6,6 +6,8 @@ permalink: /kb/101/Q101137/
 
 ## Q101137: PC DirSync: Possible Failure of Directory Synchronization
 
+{% raw %}
+
 	Article: Q101137
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -63,3 +65,5 @@ permalink: /kb/101/Q101137/
 	
 	=============================================================================
 	
+
+{% endraw %}

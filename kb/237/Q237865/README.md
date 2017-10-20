@@ -6,6 +6,8 @@ permalink: /kb/237/Q237865/
 
 ## Q237865: Changes Made to a Folder Are Not Retained in Other Folders
 
+{% raw %}
+
 	Article: Q237865
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -53,3 +55,5 @@ permalink: /kb/237/Q237865/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182958/
 
 ## Q182958: PRB: RDO RowsAffected Property Does Not Return Correct Value
 
+{% raw %}
+
 	Article: Q182958
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -125,3 +127,5 @@ permalink: /kb/182/Q182958/
 	
 	=============================================================================
 	
+
+{% endraw %}

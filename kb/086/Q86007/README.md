@@ -6,6 +6,8 @@ permalink: /kb/086/Q86007/
 
 ## Q86007: DOC: Correction to JournalRecordProc Documentation
 
+{% raw %}
+
 	Article: Q86007
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/086/Q86007/
 	
 	=============================================================================
 	
+
+{% endraw %}

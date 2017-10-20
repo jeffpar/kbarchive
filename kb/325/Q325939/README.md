@@ -6,6 +6,8 @@ permalink: /kb/325/Q325939/
 
 ## Q325939: XADM: Internet Mail Service Stops w Event ID 12800, 4182, 4102
 
+{% raw %}
+
 	Article: Q325939
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -121,3 +123,5 @@ permalink: /kb/325/Q325939/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126845/
 
 ## Q126845: INFO: C++ Name Decoration--Why Used, Getting Decorated Names
 
+{% raw %}
+
 	Article: Q126845
 	Product(s): Microsoft C Compiler
 	Version(s): Windows: 1.5,1.51,1.52;Winnt:2.0,2.1,4.0,4.1,5.0
@@ -146,3 +148,5 @@ permalink: /kb/126/Q126845/
 	
 	=============================================================================
 	
+
+{% endraw %}

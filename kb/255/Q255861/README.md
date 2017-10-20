@@ -6,6 +6,8 @@ permalink: /kb/255/Q255861/
 
 ## Q255861: &quot;Event Log File Is Corrupt&quot; Error When Opening an Event Log File
 
+{% raw %}
+
 	Article: Q255861
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a,4.5
@@ -80,3 +82,5 @@ permalink: /kb/255/Q255861/
 	
 	=============================================================================
 	
+
+{% endraw %}

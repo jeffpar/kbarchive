@@ -6,6 +6,8 @@ permalink: /kb/171/Q171402/
 
 ## Q171402: Help/About Does Not Report More Than 2 GB of RAM
 
+{% raw %}
+
 	Article: Q171402
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/171/Q171402/
 	
 	=============================================================================
 	
+
+{% endraw %}

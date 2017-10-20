@@ -6,6 +6,8 @@ permalink: /kb/078/Q78664/
 
 ## Q78664: Generating an Updated IPX.COM File for Novell Network
 
+{% raw %}
+
 	Article: Q78664
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0; WINDOWS:3.0
@@ -80,3 +82,5 @@ permalink: /kb/078/Q78664/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112757/
 
 ## Q112757: FIX: Problems When Using an Oracle Data Source
 
+{% raw %}
+
 	Article: Q112757
 	Product(s): Microsoft C Compiler
 	Version(s): 1.50 1.51 1.52 | 2.2
@@ -78,3 +80,5 @@ permalink: /kb/112/Q112757/
 	
 	=============================================================================
 	
+
+{% endraw %}

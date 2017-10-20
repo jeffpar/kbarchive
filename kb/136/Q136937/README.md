@@ -6,6 +6,8 @@ permalink: /kb/136/Q136937/
 
 ## Q136937: Internet Tab Missing in Message Properties
 
+{% raw %}
+
 	Article: Q136937
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/136/Q136937/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139094/
 
 ## Q139094: World Atlas 96: Compass Indicator Remains in the Foreground
 
+{% raw %}
+
 	Article: Q139094
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -53,3 +55,5 @@ permalink: /kb/139/Q139094/
 	
 	=============================================================================
 	
+
+{% endraw %}

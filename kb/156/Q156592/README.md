@@ -6,6 +6,8 @@ permalink: /kb/156/Q156592/
 
 ## Q156592: STL Sample for deque::rbegin and deque::rend Functions
 
+{% raw %}
+
 	Article: Q156592
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -140,3 +142,5 @@ permalink: /kb/156/Q156592/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/025/Q25950/
 
 ## Q25950: CodeView Versions 2.10 to 2.30 Use Four Extra File Handles
 
+{% raw %}
+
 	Article: Q25950
 	Product(s): See article
 	Version(s): 2.30 2.20 2.10 2.00
@@ -50,3 +52,5 @@ permalink: /kb/025/Q25950/
 	you want to open more than 15 files, follow the steps specified in the
 	C Version 5.10 README.DOC to modify the C start-up code to allow
 	opening more than 20 files.
+
+{% endraw %}

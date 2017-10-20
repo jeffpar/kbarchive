@@ -6,6 +6,8 @@ permalink: /kb/166/Q166238/
 
 ## Q166238: Problems Caused by Disabling Original Profile on Some Devices
 
+{% raw %}
+
 	Article: Q166238
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -144,3 +146,5 @@ permalink: /kb/166/Q166238/
 	
 	=============================================================================
 	
+
+{% endraw %}

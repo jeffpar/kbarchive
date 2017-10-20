@@ -6,6 +6,8 @@ permalink: /kb/193/Q193283/
 
 ## Q193283: XADM: Meeting Update Generates NDR After Moving Server
 
+{% raw %}
+
 	Article: Q193283
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1
@@ -76,3 +78,5 @@ permalink: /kb/193/Q193283/
 	
 	=============================================================================
 	
+
+{% endraw %}

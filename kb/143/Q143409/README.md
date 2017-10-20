@@ -6,6 +6,8 @@ permalink: /kb/143/Q143409/
 
 ## Q143409: DOC: CFile::GetFileTitle May Return with File Extension
 
+{% raw %}
+
 	Article: Q143409
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0; :
@@ -68,3 +70,5 @@ permalink: /kb/143/Q143409/
 	
 	=============================================================================
 	
+
+{% endraw %}

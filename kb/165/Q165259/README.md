@@ -6,6 +6,8 @@ permalink: /kb/165/Q165259/
 
 ## Q165259: INFO: Active Template Library (ATL) 2.0 Readme File
 
+{% raw %}
+
 	Article: Q165259
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,3.0
@@ -462,3 +464,5 @@ permalink: /kb/165/Q165259/
 	
 	=============================================================================
 	
+
+{% endraw %}

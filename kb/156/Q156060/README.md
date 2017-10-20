@@ -6,6 +6,8 @@ permalink: /kb/156/Q156060/
 
 ## Q156060: How To Determine Where Options Dialog Default Settings Stored
 
+{% raw %}
+
 	Article: Q156060
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -89,3 +91,5 @@ permalink: /kb/156/Q156060/
 	
 	=============================================================================
 	
+
+{% endraw %}

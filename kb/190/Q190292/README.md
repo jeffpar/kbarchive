@@ -6,6 +6,8 @@ permalink: /kb/190/Q190292/
 
 ## Q190292: Encarta 98: How to Test 360-Degree Views Outside Encarta
 
+{% raw %}
+
 	Article: Q190292
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -90,3 +92,5 @@ permalink: /kb/190/Q190292/
 	
 	=============================================================================
 	
+
+{% endraw %}

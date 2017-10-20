@@ -6,6 +6,8 @@ permalink: /kb/210/Q210525/
 
 ## Q210525: Err Msg: Make Sure Golf 1999 Edition CD 1 Is in Your CD Drive...
 
+{% raw %}
+
 	Article: Q210525
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -52,3 +54,5 @@ permalink: /kb/210/Q210525/
 	
 	=============================================================================
 	
+
+{% endraw %}

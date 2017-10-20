@@ -6,6 +6,8 @@ permalink: /kb/134/Q134584/
 
 ## Q134584: Second PCMCIA Network Adapter Fails
 
+{% raw %}
+
 	Article: Q134584
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/134/Q134584/
 	
 	=============================================================================
 	
+
+{% endraw %}

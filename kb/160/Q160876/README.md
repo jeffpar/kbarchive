@@ -6,6 +6,8 @@ permalink: /kb/160/Q160876/
 
 ## Q160876: INFO: SNA Server Does Not Support Full Duplex APPC
 
+{% raw %}
+
 	Article: Q160876
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -57,3 +59,5 @@ permalink: /kb/160/Q160876/
 	
 	=============================================================================
 	
+
+{% endraw %}

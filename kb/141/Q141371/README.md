@@ -6,6 +6,8 @@ permalink: /kb/141/Q141371/
 
 ## Q141371: STOP Msg: STOP 0x0000000A from DLC.SYS
 
+{% raw %}
+
 	Article: Q141371
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -54,3 +56,5 @@ permalink: /kb/141/Q141371/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128629/
 
 ## Q128629: Cannot Boot Windows NT on a Diskless Workstation
 
+{% raw %}
+
 	Article: Q128629
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2.2c,3.0,3.1,3.5
@@ -68,3 +70,5 @@ permalink: /kb/128/Q128629/
 	
 	=============================================================================
 	
+
+{% endraw %}

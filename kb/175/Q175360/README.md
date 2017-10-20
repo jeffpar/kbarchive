@@ -6,6 +6,8 @@ permalink: /kb/175/Q175360/
 
 ## Q175360: XFOR: DirSync Cycle Removes Secondary X.400 Addresses
 
+{% raw %}
+
 	Article: Q175360
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -70,3 +72,5 @@ permalink: /kb/175/Q175360/
 	
 	=============================================================================
 	
+
+{% endraw %}

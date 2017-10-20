@@ -6,6 +6,8 @@ permalink: /kb/109/Q109697/
 
 ## Q109697: Multimedia Err Msg: Failed to Open CD-Audio Device...
 
+{% raw %}
+
 	Article: Q109697
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.00
@@ -115,3 +117,5 @@ permalink: /kb/109/Q109697/
 	
 	=============================================================================
 	
+
+{% endraw %}

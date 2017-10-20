@@ -6,6 +6,8 @@ permalink: /kb/174/Q174135/
 
 ## Q174135: PRB: Setup Cannot Continue...System Files Are Out of Date
 
+{% raw %}
+
 	Article: Q174135
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/174/Q174135/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193610/
 
 ## Q193610: Performance Monitor Object Name Change
 
+{% raw %}
+
 	Article: Q193610
 	Product(s): Internet Information Server
 	Version(s): WINNT:3.0,4.0
@@ -40,3 +42,5 @@ permalink: /kb/193/Q193610/
 	
 	=============================================================================
 	
+
+{% endraw %}

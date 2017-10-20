@@ -6,6 +6,8 @@ permalink: /kb/258/Q258708/
 
 ## Q258708: Allegiance: Cannot Connect to Server from Windows 98 SE Computer
 
+{% raw %}
+
 	Article: Q258708
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -58,3 +60,5 @@ permalink: /kb/258/Q258708/
 	
 	=============================================================================
 	
+
+{% endraw %}

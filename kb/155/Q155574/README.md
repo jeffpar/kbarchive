@@ -6,6 +6,8 @@ permalink: /kb/155/Q155574/
 
 ## Q155574: NFS Share Cannot Be Established from Windows NT Explorer
 
+{% raw %}
+
 	Article: Q155574
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/155/Q155574/
 	
 	=============================================================================
 	
+
+{% endraw %}

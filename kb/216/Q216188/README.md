@@ -6,6 +6,8 @@ permalink: /kb/216/Q216188/
 
 ## Q216188: Unattended Installation with /E Option to Install SP4 Fails
 
+{% raw %}
+
 	Article: Q216188
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -74,3 +76,5 @@ permalink: /kb/216/Q216188/
 	
 	=============================================================================
 	
+
+{% endraw %}

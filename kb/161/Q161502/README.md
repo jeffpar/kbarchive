@@ -6,6 +6,8 @@ permalink: /kb/161/Q161502/
 
 ## Q161502: WD97: CD-ROM Contents (Part 3 of 7)
 
+{% raw %}
+
 	Article: Q161502
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -302,3 +304,5 @@ permalink: /kb/161/Q161502/
 	
 	=============================================================================
 	
+
+{% endraw %}

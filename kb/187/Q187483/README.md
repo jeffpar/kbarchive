@@ -6,6 +6,8 @@ permalink: /kb/187/Q187483/
 
 ## Q187483: WD97: Word Generates Application Error When File Is Saved in RTF
 
+{% raw %}
+
 	Article: Q187483
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -78,3 +80,5 @@ permalink: /kb/187/Q187483/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129174/
 
 ## Q129174: 500 Nations: Problems Closing &quot;See Also&quot; Feature
 
+{% raw %}
+
 	Article: Q129174
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -50,3 +52,5 @@ permalink: /kb/129/Q129174/
 	
 	=============================================================================
 	
+
+{% endraw %}

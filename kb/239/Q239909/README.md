@@ -6,6 +6,8 @@ permalink: /kb/239/Q239909/
 
 ## Q239909: BUG: ATL Registrar Code Does Not Handle DBCS Correctly
 
+{% raw %}
+
 	Article: Q239909
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.0,2.1,3.0
@@ -127,3 +129,5 @@ permalink: /kb/239/Q239909/
 	
 	=============================================================================
 	
+
+{% endraw %}

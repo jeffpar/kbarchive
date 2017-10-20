@@ -6,6 +6,8 @@ permalink: /kb/137/Q137764/
 
 ## Q137764: Road Atlas 4.0: Error Executing PSS.BAT File on Streets CD
 
+{% raw %}
+
 	Article: Q137764
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:3.11,4.0
@@ -90,3 +92,5 @@ permalink: /kb/137/Q137764/
 	
 	=============================================================================
 	
+
+{% endraw %}

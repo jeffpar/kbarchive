@@ -6,6 +6,8 @@ permalink: /kb/187/Q187787/
 
 ## Q187787: PRB: Class Builder Does Not Save the Built Class
 
+{% raw %}
+
 	Article: Q187787
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/187/Q187787/
 	
 	=============================================================================
 	
+
+{% endraw %}

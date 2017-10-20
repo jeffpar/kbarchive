@@ -6,6 +6,8 @@ permalink: /kb/192/Q192825/
 
 ## Q192825: INFO: Searching FoxPro Newsgroups
 
+{% raw %}
+
 	Article: Q192825
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; MS-DOS:2.6a; UNIX:2.6; WINDOWS:2.6a,3.0,3.0b,5.0,5.0a,6.0
@@ -100,3 +102,5 @@ permalink: /kb/192/Q192825/
 	
 	=============================================================================
 	
+
+{% endraw %}

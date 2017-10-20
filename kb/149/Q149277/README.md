@@ -6,6 +6,8 @@ permalink: /kb/149/Q149277/
 
 ## Q149277: BUG: SSCommand Click Fired with Double-Click in Common Dialog
 
+{% raw %}
+
 	Article: Q149277
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -120,3 +122,5 @@ permalink: /kb/149/Q149277/
 	
 	=============================================================================
 	
+
+{% endraw %}

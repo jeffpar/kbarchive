@@ -6,6 +6,8 @@ permalink: /kb/250/Q250578/
 
 ## Q250578: XADM: InterOrg Synchronization Tool May Not Import Some Users
 
+{% raw %}
+
 	Article: Q250578
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -150,3 +152,5 @@ permalink: /kb/250/Q250578/
 	
 	=============================================================================
 	
+
+{% endraw %}

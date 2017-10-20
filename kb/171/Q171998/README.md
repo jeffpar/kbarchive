@@ -6,6 +6,8 @@ permalink: /kb/171/Q171998/
 
 ## Q171998: &quot;A&quot; Records Automatically Appear and Disappear in DNS Manager
 
+{% raw %}
+
 	Article: Q171998
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/171/Q171998/
 	
 	=============================================================================
 	
+
+{% endraw %}

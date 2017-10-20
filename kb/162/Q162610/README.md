@@ -6,6 +6,8 @@ permalink: /kb/162/Q162610/
 
 ## Q162610: SNARAS Cannot Connect to Heavily Loaded Server
 
+{% raw %}
+
 	Article: Q162610
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -80,3 +82,5 @@ permalink: /kb/162/Q162610/
 	
 	=============================================================================
 	
+
+{% endraw %}

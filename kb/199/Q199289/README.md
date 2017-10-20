@@ -6,6 +6,8 @@ permalink: /kb/199/Q199289/
 
 ## Q199289: XFOR: Migration Wizard or CCMC Crashes on Alpha NT for JPN
 
+{% raw %}
+
 	Article: Q199289
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -92,3 +94,5 @@ permalink: /kb/199/Q199289/
 	
 	=============================================================================
 	
+
+{% endraw %}

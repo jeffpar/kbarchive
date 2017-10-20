@@ -6,6 +6,8 @@ permalink: /kb/274/Q274670/
 
 ## Q274670: CFS2: Cannot Configure the Amount of Fuel and Ammunition
 
+{% raw %}
+
 	Article: Q274670
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -69,3 +71,5 @@ permalink: /kb/274/Q274670/
 	
 	=============================================================================
 	
+
+{% endraw %}

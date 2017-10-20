@@ -6,6 +6,8 @@ permalink: /kb/135/Q135346/
 
 ## Q135346: I/O Port or Memory Address Conflicts in Windows NT
 
+{% raw %}
+
 	Article: Q135346
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -68,3 +70,5 @@ permalink: /kb/135/Q135346/
 	
 	=============================================================================
 	
+
+{% endraw %}

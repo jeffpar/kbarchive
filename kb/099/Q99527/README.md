@@ -6,6 +6,8 @@ permalink: /kb/099/Q99527/
 
 ## Q99527: Backup, MSAV, and Defrag Don't Display Correctly on AST
 
+{% raw %}
+
 	Article: Q99527
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -47,3 +49,5 @@ permalink: /kb/099/Q99527/
 	
 	=============================================================================
 	
+
+{% endraw %}

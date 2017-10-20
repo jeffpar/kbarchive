@@ -6,6 +6,8 @@ permalink: /kb/191/Q191625/
 
 ## Q191625: TN3270 Server Rejects Valid BIND with 0821 Sense Code
 
+{% raw %}
+
 	Article: Q191625
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1
@@ -129,3 +131,5 @@ permalink: /kb/191/Q191625/
 	
 	=============================================================================
 	
+
+{% endraw %}

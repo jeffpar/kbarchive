@@ -6,6 +6,8 @@ permalink: /kb/164/Q164635/
 
 ## Q164635: SNA 3.0 Mngagent.exe Traps on NT4.0-J
 
+{% raw %}
+
 	Article: Q164635
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0
@@ -74,3 +76,5 @@ permalink: /kb/164/Q164635/
 	
 	=============================================================================
 	
+
+{% endraw %}

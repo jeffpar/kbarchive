@@ -6,6 +6,8 @@ permalink: /kb/179/Q179597/
 
 ## Q179597: WD97: Laserjet III Ignores Allow A4 Paper Resizing Setting
 
+{% raw %}
+
 	Article: Q179597
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/179/Q179597/
 	
 	=============================================================================
 	
+
+{% endraw %}

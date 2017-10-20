@@ -6,6 +6,8 @@ permalink: /kb/242/Q242993/
 
 ## Q242993: BUG: Retrieved Data May Display as Nonalphanumeric Using ODBC
 
+{% raw %}
+
 	Article: Q242993
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.1 SP2,3.7
@@ -147,3 +149,5 @@ permalink: /kb/242/Q242993/
 	
 	=============================================================================
 	
+
+{% endraw %}

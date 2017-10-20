@@ -6,6 +6,8 @@ permalink: /kb/135/Q135397/
 
 ## Q135397: Oceans 1.0 for Windows: Cannot Print from Help
 
+{% raw %}
+
 	Article: Q135397
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -100,3 +102,5 @@ permalink: /kb/135/Q135397/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130610/
 
 ## Q130610: How to Call a Wizard in a Program
 
+{% raw %}
+
 	Article: Q130610
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/130/Q130610/
 	
 	=============================================================================
 	
+
+{% endraw %}

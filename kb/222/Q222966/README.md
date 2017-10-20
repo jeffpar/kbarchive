@@ -6,6 +6,8 @@ permalink: /kb/222/Q222966/
 
 ## Q222966: HOWTO: Call a Script Method from an ActiveX Script Host
 
+{% raw %}
+
 	Article: Q222966
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -91,3 +93,5 @@ permalink: /kb/222/Q222966/
 	
 	=============================================================================
 	
+
+{% endraw %}

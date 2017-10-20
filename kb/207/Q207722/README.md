@@ -6,6 +6,8 @@ permalink: /kb/207/Q207722/
 
 ## Q207722: SMS: Retaining Status Summaries After Advertisement Done
 
+{% raw %}
+
 	Article: Q207722
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -84,3 +86,5 @@ permalink: /kb/207/Q207722/
 	
 	=============================================================================
 	
+
+{% endraw %}

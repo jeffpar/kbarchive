@@ -6,6 +6,8 @@ permalink: /kb/289/Q289904/
 
 ## Q289904: HOWTO: Create a CD-ROM Setup Disk with the VFP 6.0 Setup Wizard
 
+{% raw %}
+
 	Article: Q289904
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -76,3 +78,5 @@ permalink: /kb/289/Q289904/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194315/
 
 ## Q194315: PRB: Query Output to Graph No Longer Saved to a General Field
 
+{% raw %}
+
 	Article: Q194315
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -103,3 +105,5 @@ permalink: /kb/194/Q194315/
 	
 	=============================================================================
 	
+
+{% endraw %}

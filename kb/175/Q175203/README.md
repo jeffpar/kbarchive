@@ -6,6 +6,8 @@ permalink: /kb/175/Q175203/
 
 ## Q175203: XWEB: Pine 3.96 Cannot Handle IMAP DRAFT Flag
 
+{% raw %}
+
 	Article: Q175203
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -53,3 +55,5 @@ permalink: /kb/175/Q175203/
 	
 	=============================================================================
 	
+
+{% endraw %}

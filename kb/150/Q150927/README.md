@@ -6,6 +6,8 @@ permalink: /kb/150/Q150927/
 
 ## Q150927: XCON: MTA Continuously Dialing RAS Connection
 
+{% raw %}
+
 	Article: Q150927
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/150/Q150927/
 	
 	=============================================================================
 	
+
+{% endraw %}

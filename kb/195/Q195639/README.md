@@ -6,6 +6,8 @@ permalink: /kb/195/Q195639/
 
 ## Q195639: Nonexistent Virtual Directory Returns a 403 Error
 
+{% raw %}
+
 	Article: Q195639
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/195/Q195639/
 	
 	=============================================================================
 	
+
+{% endraw %}

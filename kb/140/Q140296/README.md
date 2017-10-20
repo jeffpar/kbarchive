@@ -6,6 +6,8 @@ permalink: /kb/140/Q140296/
 
 ## Q140296: How to Use a KeyPress Event in Lieu of ON KEY LABEL
 
+{% raw %}
+
 	Article: Q140296
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -118,3 +120,5 @@ permalink: /kb/140/Q140296/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176777/
 
 ## Q176777: FIX: Multi-Use OLE .Exe File Not Releasing Memory
 
+{% raw %}
+
 	Article: Q176777
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -93,3 +95,5 @@ permalink: /kb/176/Q176777/
 	
 	=============================================================================
 	
+
+{% endraw %}

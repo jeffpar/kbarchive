@@ -6,6 +6,8 @@ permalink: /kb/033/Q33732/
 
 ## Q33732: COM1 and COM2: Communications Device Default Buffer Size
 
+{% raw %}
+
 	Article: Q33732
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -59,3 +61,5 @@ permalink: /kb/033/Q33732/
 	
 	3. Page 354 of "Microsoft QuickBASIC 4.5: Programming in BASIC" manual
 	   for version 4.50
+
+{% endraw %}

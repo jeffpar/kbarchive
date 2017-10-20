@@ -6,6 +6,8 @@ permalink: /kb/103/Q103361/
 
 ## Q103361: 16-Bit Windows-Based Applications May Hang w/Network Printer
 
+{% raw %}
+
 	Article: Q103361
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -76,3 +78,5 @@ permalink: /kb/103/Q103361/
 	
 	=============================================================================
 	
+
+{% endraw %}

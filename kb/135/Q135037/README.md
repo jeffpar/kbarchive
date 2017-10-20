@@ -6,6 +6,8 @@ permalink: /kb/135/Q135037/
 
 ## Q135037: How to Connect a LaserDisc Player Using MCI Driver
 
+{% raw %}
+
 	Article: Q135037
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/135/Q135037/
 	
 	=============================================================================
 	
+
+{% endraw %}

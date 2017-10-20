@@ -6,6 +6,8 @@ permalink: /kb/278/Q278678/
 
 ## Q278678: Slow Performance Accessing Local Drives with Share Name
 
+{% raw %}
+
 	Article: Q278678
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -73,3 +75,5 @@ permalink: /kb/278/Q278678/
 	
 	=============================================================================
 	
+
+{% endraw %}

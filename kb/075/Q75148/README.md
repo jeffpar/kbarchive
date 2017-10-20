@@ -6,6 +6,8 @@ permalink: /kb/075/Q75148/
 
 ## Q75148: System Requirements for IBM PC-DOS 5.0 Upgrade
 
+{% raw %}
+
 	Article: Q75148
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -58,3 +60,5 @@ permalink: /kb/075/Q75148/
 	
 	=============================================================================
 	
+
+{% endraw %}

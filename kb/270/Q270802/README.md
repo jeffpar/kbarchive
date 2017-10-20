@@ -6,6 +6,8 @@ permalink: /kb/270/Q270802/
 
 ## Q270802: ELL: Virtual Keyboard Menu Disables Pointing Device
 
+{% raw %}
+
 	Article: Q270802
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/270/Q270802/
 	
 	=============================================================================
 	
+
+{% endraw %}

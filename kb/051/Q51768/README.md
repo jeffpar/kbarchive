@@ -6,6 +6,8 @@ permalink: /kb/051/Q51768/
 
 ## Q51768: spawn Ignores arg0 with DOS 3.00 and Later
 
+{% raw %}
+
 	Article: Q51768
 	Product(s): See article
 	Version(s): 5.10
@@ -27,3 +29,5 @@ permalink: /kb/051/Q51768/
 	
 	Under OS/2, this is not the case; arg0 is passed as specified with the
 	spawn command.
+
+{% endraw %}

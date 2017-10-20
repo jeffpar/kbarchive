@@ -6,6 +6,8 @@ permalink: /kb/186/Q186740/
 
 ## Q186740: XFOR: cc:Mail Migration Fails with Event ID 1004
 
+{% raw %}
+
 	Article: Q186740
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -70,3 +72,5 @@ permalink: /kb/186/Q186740/
 	
 	=============================================================================
 	
+
+{% endraw %}

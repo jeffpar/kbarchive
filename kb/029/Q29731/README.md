@@ -6,6 +6,8 @@ permalink: /kb/029/Q29731/
 
 ## Q29731: Missing Semicolon on Line 17 of Example on Page 85 in Manual
 
+{% raw %}
+
 	Article: Q29731
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -22,3 +24,5 @@ permalink: /kb/029/Q29731/
 	   It should read as follows:
 	
 	   cfile = FileNameToHandle("", NULL);
+
+{% endraw %}

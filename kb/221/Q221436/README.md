@@ -6,6 +6,8 @@ permalink: /kb/221/Q221436/
 
 ## Q221436: Combat FS: Point of View Does Not Return to Forward View
 
+{% raw %}
+
 	Article: Q221436
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -144,3 +146,5 @@ permalink: /kb/221/Q221436/
 	
 	=============================================================================
 	
+
+{% endraw %}

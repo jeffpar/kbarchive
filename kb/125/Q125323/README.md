@@ -6,6 +6,8 @@ permalink: /kb/125/Q125323/
 
 ## Q125323: Err Msg: Cannot Find NETAPI.DLL; Cannot Find PMSPL.DLL
 
+{% raw %}
+
 	Article: Q125323
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): MS-DOS:3.0; WINDOWS:3.1,3.11; winnt:3.5
@@ -71,3 +73,5 @@ permalink: /kb/125/Q125323/
 	
 	=============================================================================
 	
+
+{% endraw %}

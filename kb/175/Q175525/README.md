@@ -6,6 +6,8 @@ permalink: /kb/175/Q175525/
 
 ## Q175525: SMS: Win 95 Clients Hang When Shut Down Using Remote Control
 
+{% raw %}
+
 	Article: Q175525
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -52,3 +54,5 @@ permalink: /kb/175/Q175525/
 	
 	=============================================================================
 	
+
+{% endraw %}

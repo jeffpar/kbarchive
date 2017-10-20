@@ -6,6 +6,8 @@ permalink: /kb/151/Q151708/
 
 ## Q151708: XCLN: Page Fault in Mpr.exe when Starting Client
 
+{% raw %}
+
 	Article: Q151708
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -82,3 +84,5 @@ permalink: /kb/151/Q151708/
 	
 	=============================================================================
 	
+
+{% endraw %}

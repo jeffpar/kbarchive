@@ -6,6 +6,8 @@ permalink: /kb/100/Q100036/
 
 ## Q100036: Mac Wkst: Explanation of Give Up Dialog Box
 
+{% raw %}
+
 	Article: Q100036
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -82,3 +84,5 @@ permalink: /kb/100/Q100036/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196435/
 
 ## Q196435: WD97: How to Show/Hide Hidden Text
 
+{% raw %}
+
 	Article: Q196435
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -93,3 +95,5 @@ permalink: /kb/196/Q196435/
 	
 	=============================================================================
 	
+
+{% endraw %}

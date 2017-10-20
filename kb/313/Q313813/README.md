@@ -6,6 +6,8 @@ permalink: /kb/313/Q313813/
 
 ## Q313813: SSL Fails When You Use an SGC Certificate with Missing OID
 
+{% raw %}
+
 	Article: Q313813
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -70,3 +72,5 @@ permalink: /kb/313/Q313813/
 	
 	=============================================================================
 	
+
+{% endraw %}

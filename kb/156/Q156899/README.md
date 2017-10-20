@@ -6,6 +6,8 @@ permalink: /kb/156/Q156899/
 
 ## Q156899: INFO: STL Sample for the make_pair Function
 
+{% raw %}
+
 	Article: Q156899
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -113,3 +115,5 @@ permalink: /kb/156/Q156899/
 	
 	=============================================================================
 	
+
+{% endraw %}

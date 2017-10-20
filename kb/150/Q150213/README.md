@@ -6,6 +6,8 @@ permalink: /kb/150/Q150213/
 
 ## Q150213: FIX: Incorrect Declaration for SelectObject API Function
 
+{% raw %}
+
 	Article: Q150213
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -58,3 +60,5 @@ permalink: /kb/150/Q150213/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186086/
 
 ## Q186086: HOWTO: Get a File DSN in the Connection Designer
 
+{% raw %}
+
 	Article: Q186086
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,6.0
@@ -72,3 +74,5 @@ permalink: /kb/186/Q186086/
 	
 	=============================================================================
 	
+
+{% endraw %}

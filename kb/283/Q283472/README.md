@@ -6,6 +6,8 @@ permalink: /kb/283/Q283472/
 
 ## Q283472: SMS: Event ID 7031 Occurs When Installing Secondary Site Server
 
+{% raw %}
+
 	Article: Q283472
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -57,3 +59,5 @@ permalink: /kb/283/Q283472/
 	
 	=============================================================================
 	
+
+{% endraw %}

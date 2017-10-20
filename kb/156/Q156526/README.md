@@ -6,6 +6,8 @@ permalink: /kb/156/Q156526/
 
 ## Q156526: General Error=51 Connecting to an Access Datasource
 
+{% raw %}
+
 	Article: Q156526
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0
@@ -80,3 +82,5 @@ permalink: /kb/156/Q156526/
 	
 	=============================================================================
 	
+
+{% endraw %}

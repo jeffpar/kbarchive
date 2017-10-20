@@ -6,6 +6,8 @@ permalink: /kb/280/Q280762/
 
 ## Q280762: INFO: Contents of the SNA Server 4.0 Service Pack 4 Readme.txt F
 
+{% raw %}
+
 	Article: Q280762
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP4
@@ -343,3 +345,5 @@ permalink: /kb/280/Q280762/
 	
 	=============================================================================
 	
+
+{% endraw %}

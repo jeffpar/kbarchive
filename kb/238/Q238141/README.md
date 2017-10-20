@@ -6,6 +6,8 @@ permalink: /kb/238/Q238141/
 
 ## Q238141: SMS: Client Installation Adds Multiple Path Statements
 
+{% raw %}
+
 	Article: Q238141
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -113,3 +115,5 @@ permalink: /kb/238/Q238141/
 	
 	=============================================================================
 	
+
+{% endraw %}

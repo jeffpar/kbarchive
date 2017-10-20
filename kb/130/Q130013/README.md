@@ -6,6 +6,8 @@ permalink: /kb/130/Q130013/
 
 ## Q130013: IPX Addressing Format For Microsoft SNMP Agents
 
+{% raw %}
+
 	Article: Q130013
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -59,3 +61,5 @@ permalink: /kb/130/Q130013/
 	
 	=============================================================================
 	
+
+{% endraw %}

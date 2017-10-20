@@ -6,6 +6,8 @@ permalink: /kb/221/Q221604/
 
 ## Q221604: INFO: Known Issues with Internet Explorer 5 and Visual Basic 6.0
 
+{% raw %}
+
 	Article: Q221604
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -59,3 +61,5 @@ permalink: /kb/221/Q221604/
 	
 	=============================================================================
 	
+
+{% endraw %}

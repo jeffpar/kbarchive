@@ -6,6 +6,8 @@ permalink: /kb/103/Q103600/
 
 ## Q103600: How Menu Events Are Handled by Windows &amp; Macintosh
 
+{% raw %}
+
 	Article: Q103600
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6a,2.6x,3.0
@@ -56,3 +58,5 @@ permalink: /kb/103/Q103600/
 	
 	=============================================================================
 	
+
+{% endraw %}

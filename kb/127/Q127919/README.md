@@ -6,6 +6,8 @@ permalink: /kb/127/Q127919/
 
 ## Q127919: PC Ext: Err Msg: &#91;002&#93; Mail Was Received...Unknown Addresses
 
+{% raw %}
+
 	Article: Q127919
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.20 3.20a
@@ -115,3 +117,5 @@ permalink: /kb/127/Q127919/
 	
 	=============================================================================
 	
+
+{% endraw %}

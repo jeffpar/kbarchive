@@ -6,6 +6,8 @@ permalink: /kb/066/Q66646/
 
 ## Q66646: PRB: U4007 Error Can Be Caused By Missing Quotation Marks
 
+{% raw %}
+
 	Article: Q66646
 	Product(s): Microsoft Programming Utilities
 	Version(s): NT:1.4; OS/2:1.11,1.12,1.13,1.21
@@ -54,3 +56,5 @@ permalink: /kb/066/Q66646/
 	
 	=============================================================================
 	
+
+{% endraw %}

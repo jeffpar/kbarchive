@@ -6,6 +6,8 @@ permalink: /kb/172/Q172158/
 
 ## Q172158: PRB: Setup Error: &quot;You must have NT administrative privileges&quot;
 
+{% raw %}
+
 	Article: Q172158
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/172/Q172158/
 	
 	=============================================================================
 	
+
+{% endraw %}

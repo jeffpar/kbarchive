@@ -6,6 +6,8 @@ permalink: /kb/063/Q63746/
 
 ## Q63746: Print Prints Incorrect Higher-Order Character
 
+{% raw %}
+
 	Article: Q63746
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -80,3 +82,5 @@ permalink: /kb/063/Q63746/
 	
 	=============================================================================
 	
+
+{% endraw %}

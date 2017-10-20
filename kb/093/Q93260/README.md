@@ -6,6 +6,8 @@ permalink: /kb/093/Q93260/
 
 ## Q93260: WFWG: Cannot Connect to Local Postoffice
 
+{% raw %}
+
 	Article: Q93260
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -135,3 +137,5 @@ permalink: /kb/093/Q93260/
 	
 	=============================================================================
 	
+
+{% endraw %}

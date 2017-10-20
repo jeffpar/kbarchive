@@ -6,6 +6,8 @@ permalink: /kb/132/Q132728/
 
 ## Q132728: Resource Kit 3.5 Doc Err: NETBIOS.DLL Provides Network DDE
 
+{% raw %}
+
 	Article: Q132728
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.5
@@ -36,3 +38,5 @@ permalink: /kb/132/Q132728/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127769/
 
 ## Q127769: PC Win: MoveUser Does Not Change Access Privileges
 
+{% raw %}
+
 	Article: Q127769
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -68,3 +70,5 @@ permalink: /kb/127/Q127769/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156931/
 
 ## Q156931: STOP 0x0000001E in Nwrdr.sys
 
+{% raw %}
+
 	Article: Q156931
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -84,3 +86,5 @@ permalink: /kb/156/Q156931/
 	
 	=============================================================================
 	
+
+{% endraw %}

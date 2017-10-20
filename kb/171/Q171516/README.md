@@ -6,6 +6,8 @@ permalink: /kb/171/Q171516/
 
 ## Q171516: FIX: ActiveX Document DLL Causes GPF When Unloading Modal Form
 
+{% raw %}
+
 	Article: Q171516
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -101,3 +103,5 @@ permalink: /kb/171/Q171516/
 	
 	=============================================================================
 	
+
+{% endraw %}

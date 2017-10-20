@@ -6,6 +6,8 @@ permalink: /kb/080/Q80120/
 
 ## Q80120: FIX: MASM 6.0 May Incorrectly Generate A2032 for EQU
 
+{% raw %}
+
 	Article: Q80120
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b
@@ -79,3 +81,5 @@ permalink: /kb/080/Q80120/
 	
 	=============================================================================
 	
+
+{% endraw %}

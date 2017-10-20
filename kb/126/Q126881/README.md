@@ -6,6 +6,8 @@ permalink: /kb/126/Q126881/
 
 ## Q126881: Baseball 1995: ASCII Format Statistics (BS95STRM.TXT)
 
+{% raw %}
+
 	Article: Q126881
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -192,3 +194,5 @@ permalink: /kb/126/Q126881/
 	
 	=============================================================================
 	
+
+{% endraw %}

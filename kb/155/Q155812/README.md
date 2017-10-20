@@ -6,6 +6,8 @@ permalink: /kb/155/Q155812/
 
 ## Q155812: XADM: NDR from Japanese Microsoft Exchange Server is Corrupt
 
+{% raw %}
+
 	Article: Q155812
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -49,3 +51,5 @@ permalink: /kb/155/Q155812/
 	
 	=============================================================================
 	
+
+{% endraw %}

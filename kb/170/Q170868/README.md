@@ -6,6 +6,8 @@ permalink: /kb/170/Q170868/
 
 ## Q170868: How to Create a Per User FTP Directory Structure
 
+{% raw %}
+
 	Article: Q170868
 	Product(s): Internet Information Server
 	Version(s): 2.0,3.0
@@ -91,3 +93,5 @@ permalink: /kb/170/Q170868/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/028/Q28473/
 
 ## Q28473: Detailed Information on What APPEND Does
 
+{% raw %}
+
 	Article: Q28473
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.3,3.3a,4.x,5.x,6.0,6.2,6.21,6.22
@@ -161,3 +163,5 @@ permalink: /kb/028/Q28473/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127776/
 
 ## Q127776: Path Rules for FoxPro for Macintosh
 
+{% raw %}
+
 	Article: Q127776
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,2.6a,3.0b
@@ -169,3 +171,5 @@ permalink: /kb/127/Q127776/
 	
 	=============================================================================
 	
+
+{% endraw %}

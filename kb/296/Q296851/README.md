@@ -6,6 +6,8 @@ permalink: /kb/296/Q296851/
 
 ## Q296851: PRB: Error &quot;User Password/Validation Failed&quot;
 
+{% raw %}
+
 	Article: Q296851
 	Product(s): Internet Information Server
 	Version(s): 1.0,5.0
@@ -195,3 +197,5 @@ permalink: /kb/296/Q296851/
 	
 	=============================================================================
 	
+
+{% endraw %}

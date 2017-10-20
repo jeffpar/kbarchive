@@ -6,6 +6,8 @@ permalink: /kb/287/Q287703/
 
 ## Q287703: XFOR: Edb Log Files Grow When Calendar Connector Is Started
 
+{% raw %}
+
 	Article: Q287703
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -76,3 +78,5 @@ permalink: /kb/287/Q287703/
 	
 	=============================================================================
 	
+
+{% endraw %}

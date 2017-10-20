@@ -6,6 +6,8 @@ permalink: /kb/239/Q239483/
 
 ## Q239483: Err Msg: Cannot Open Internet Site Http://&lt;Site Name&gt;.
 
+{% raw %}
+
 	Article: Q239483
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -66,3 +68,5 @@ permalink: /kb/239/Q239483/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139613/
 
 ## Q139613: Error Accessing Performance Data of Remote Windows NT Server
 
+{% raw %}
+
 	Article: Q139613
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -71,3 +73,5 @@ permalink: /kb/139/Q139613/
 	
 	=============================================================================
 	
+
+{% endraw %}

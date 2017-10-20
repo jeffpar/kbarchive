@@ -6,6 +6,8 @@ permalink: /kb/141/Q141881/
 
 ## Q141881: PRB: VB 4.0 Doesn't Install on Older 32-Bit Operating System
 
+{% raw %}
+
 	Article: Q141881
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -85,3 +87,5 @@ permalink: /kb/141/Q141881/
 	
 	=============================================================================
 	
+
+{% endraw %}

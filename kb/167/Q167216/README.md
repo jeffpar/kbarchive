@@ -6,6 +6,8 @@ permalink: /kb/167/Q167216/
 
 ## Q167216: WD97: REF Field Becomes Text Converting from Word 97 to MacWord
 
+{% raw %}
+
 	Article: Q167216
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -79,3 +81,5 @@ permalink: /kb/167/Q167216/
 	
 	=============================================================================
 	
+
+{% endraw %}

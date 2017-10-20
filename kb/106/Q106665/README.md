@@ -6,6 +6,8 @@ permalink: /kb/106/Q106665/
 
 ## Q106665: Example SYSTEM.INI Configuration Lines for Sound System
 
+{% raw %}
+
 	Article: Q106665
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/106/Q106665/
 	
 	=============================================================================
 	
+
+{% endraw %}

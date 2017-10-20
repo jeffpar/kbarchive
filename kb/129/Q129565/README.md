@@ -6,6 +6,8 @@ permalink: /kb/129/Q129565/
 
 ## Q129565: PC WSPlus: Change of Status Not Always Reflected in POF File
 
+{% raw %}
+
 	Article: Q129565
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -51,3 +53,5 @@ permalink: /kb/129/Q129565/
 	
 	=============================================================================
 	
+
+{% endraw %}

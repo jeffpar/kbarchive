@@ -6,6 +6,8 @@ permalink: /kb/097/Q97446/
 
 ## Q97446: Third Party Software Shares Files on NetWare
 
+{% raw %}
+
 	Article: Q97446
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/097/Q97446/
 	
 	=============================================================================
 	
+
+{% endraw %}

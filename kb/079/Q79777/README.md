@@ -6,6 +6,8 @@ permalink: /kb/079/Q79777/
 
 ## Q79777: AutoCAD Version 2.62 May Not Function with HIMEM.SYS
 
+{% raw %}
+
 	Article: Q79777
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.x,6.0,6.2,6.21,6.22
@@ -124,3 +126,5 @@ permalink: /kb/079/Q79777/
 	
 	=============================================================================
 	
+
+{% endraw %}

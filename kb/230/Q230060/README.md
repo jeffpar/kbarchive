@@ -6,6 +6,8 @@ permalink: /kb/230/Q230060/
 
 ## Q230060: Doc Err: The Main Directory is C:&#92;Inetpub&#92;Nntproot by Default
 
+{% raw %}
+
 	Article: Q230060
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/230/Q230060/
 	
 	=============================================================================
 	
+
+{% endraw %}

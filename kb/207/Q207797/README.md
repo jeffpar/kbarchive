@@ -6,6 +6,8 @@ permalink: /kb/207/Q207797/
 
 ## Q207797: BUG: Cursor Jumps Around when Typing in Edit Box
 
+{% raw %}
+
 	Article: Q207797
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -123,3 +125,5 @@ permalink: /kb/207/Q207797/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/057/Q57877/
 
 ## Q57877: Mac GW: Information About Adding User's to a Gateway Account
 
+{% raw %}
+
 	Article: Q57877
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -58,3 +60,5 @@ permalink: /kb/057/Q57877/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143187/
 
 ## Q143187: HTTP Server MIB definitions
 
+{% raw %}
+
 	Article: Q143187
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -156,3 +158,5 @@ permalink: /kb/143/Q143187/
 	
 	=============================================================================
 	
+
+{% endraw %}

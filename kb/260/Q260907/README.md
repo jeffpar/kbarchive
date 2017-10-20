@@ -6,6 +6,8 @@ permalink: /kb/260/Q260907/
 
 ## Q260907: Err Msg: Exchange MAPI Management Agent DAPIWrite Failed with...
 
+{% raw %}
+
 	Article: Q260907
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -100,3 +102,5 @@ permalink: /kb/260/Q260907/
 	
 	=============================================================================
 	
+
+{% endraw %}

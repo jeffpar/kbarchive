@@ -6,6 +6,8 @@ permalink: /kb/130/Q130299/
 
 ## Q130299: PRB: CURVAL() Returns Same Value as OLDVAL()
 
+{% raw %}
+
 	Article: Q130299
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -143,3 +145,5 @@ permalink: /kb/130/Q130299/
 	
 	=============================================================================
 	
+
+{% endraw %}

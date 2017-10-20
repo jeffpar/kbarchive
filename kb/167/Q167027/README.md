@@ -6,6 +6,8 @@ permalink: /kb/167/Q167027/
 
 ## Q167027: WinNT Workstation Resource Kit Refers to File Not on CD
 
+{% raw %}
+
 	Article: Q167027
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -58,3 +60,5 @@ permalink: /kb/167/Q167027/
 	
 	=============================================================================
 	
+
+{% endraw %}

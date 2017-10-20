@@ -6,6 +6,8 @@ permalink: /kb/179/Q179808/
 
 ## Q179808: Encarta 98 Deluxe Edition: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q179808
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/179/Q179808/
 	
 	=============================================================================
 	
+
+{% endraw %}

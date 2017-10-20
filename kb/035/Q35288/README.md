@@ -6,6 +6,8 @@ permalink: /kb/035/Q35288/
 
 ## Q35288: MDA Blinking Normal Text Example
 
+{% raw %}
+
 	Article: Q35288
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -36,3 +38,5 @@ permalink: /kb/035/Q35288/
 	 _settextcolor(oldcolor);
 	 _setbkcolor(oldbkcolor);
 	}
+
+{% endraw %}

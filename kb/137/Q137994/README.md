@@ -6,6 +6,8 @@ permalink: /kb/137/Q137994/
 
 ## Q137994: Windows 95 Readme.txt File from Drivers&#92;Storage&#92;Iomega Folder
 
+{% raw %}
+
 	Article: Q137994
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/137/Q137994/
 	
 	=============================================================================
 	
+
+{% endraw %}

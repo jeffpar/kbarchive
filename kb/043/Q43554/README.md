@@ -6,6 +6,8 @@ permalink: /kb/043/Q43554/
 
 ## Q43554: _outtext() Expects an Unsigned Character Pointer as Parameter
 
+{% raw %}
+
 	Article: Q43554
 	Product(s): See article
 	Version(s): 2.00
@@ -25,3 +27,5 @@ permalink: /kb/043/Q43554/
 	This is a change between QuickC Version 2.00 and those versions
 	earlier than 2.00. Earlier versions did expect a "char far *" as the
 	parameter for the _outtext() function.
+
+{% endraw %}

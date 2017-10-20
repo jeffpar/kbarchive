@@ -6,6 +6,8 @@ permalink: /kb/272/Q272948/
 
 ## Q272948: Asheron's Call Error Message: Invalid Argument Count
 
+{% raw %}
+
 	Article: Q272948
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -234,3 +236,5 @@ permalink: /kb/272/Q272948/
 	
 	=============================================================================
 	
+
+{% endraw %}

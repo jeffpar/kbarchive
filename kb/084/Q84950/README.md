@@ -6,6 +6,8 @@ permalink: /kb/084/Q84950/
 
 ## Q84950: File Manager Cannot Connect to Share with Long Name
 
+{% raw %}
+
 	Article: Q84950
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/084/Q84950/
 	
 	=============================================================================
 	
+
+{% endraw %}

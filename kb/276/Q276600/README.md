@@ -6,6 +6,8 @@ permalink: /kb/276/Q276600/
 
 ## Q276600: XADM: Cannot Create an Exchange Cluster Resource
 
+{% raw %}
+
 	Article: Q276600
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/276/Q276600/
 	
 	=============================================================================
 	
+
+{% endraw %}

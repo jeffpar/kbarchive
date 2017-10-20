@@ -6,6 +6,8 @@ permalink: /kb/216/Q216868/
 
 ## Q216868: FIX: Crash When Class Variable Declared Before Class Declaration
 
+{% raw %}
+
 	Article: Q216868
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -102,3 +104,5 @@ permalink: /kb/216/Q216868/
 	
 	=============================================================================
 	
+
+{% endraw %}

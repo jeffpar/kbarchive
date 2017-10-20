@@ -6,6 +6,8 @@ permalink: /kb/151/Q151007/
 
 ## Q151007: IBM ThinkPad Drives Have Problem w/ Read/Write and Media Change
 
+{% raw %}
+
 	Article: Q151007
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -66,3 +68,5 @@ permalink: /kb/151/Q151007/
 	
 	=============================================================================
 	
+
+{% endraw %}

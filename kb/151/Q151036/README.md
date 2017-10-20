@@ -6,6 +6,8 @@ permalink: /kb/151/Q151036/
 
 ## Q151036: Mac Multimedia: Configuring HTTP Helper Application
 
+{% raw %}
+
 	Article: Q151036
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/151/Q151036/
 	
 	=============================================================================
 	
+
+{% endraw %}

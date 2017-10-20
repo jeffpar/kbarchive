@@ -6,6 +6,8 @@ permalink: /kb/050/Q50831/
 
 ## Q50831: Control Panel Timer Not Accurate to the Second
 
+{% raw %}
+
 	Article: Q50831
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -35,3 +37,5 @@ permalink: /kb/050/Q50831/
 	
 	=============================================================================
 	
+
+{% endraw %}

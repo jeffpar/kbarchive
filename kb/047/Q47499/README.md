@@ -6,6 +6,8 @@ permalink: /kb/047/Q47499/
 
 ## Q47499: Talk.exe Shares Global Memory Between Applications
 
+{% raw %}
+
 	Article: Q47499
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -63,3 +65,5 @@ permalink: /kb/047/Q47499/
 	
 	=============================================================================
 	
+
+{% endraw %}

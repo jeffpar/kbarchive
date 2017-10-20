@@ -6,6 +6,8 @@ permalink: /kb/182/Q182413/
 
 ## Q182413: SMS: CTRL+ALT+DEL &quot;Gold Key&quot; May Not Function with IBM PC
 
+{% raw %}
+
 	Article: Q182413
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -64,3 +66,5 @@ permalink: /kb/182/Q182413/
 	
 	=============================================================================
 	
+
+{% endraw %}

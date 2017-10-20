@@ -6,6 +6,8 @@ permalink: /kb/142/Q142959/
 
 ## Q142959: FIX: YMD Date Format Causes Improper History Selection
 
+{% raw %}
+
 	Article: Q142959
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,5.0
@@ -74,3 +76,5 @@ permalink: /kb/142/Q142959/
 	
 	=============================================================================
 	
+
+{% endraw %}

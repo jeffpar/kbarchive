@@ -6,6 +6,8 @@ permalink: /kb/170/Q170536/
 
 ## Q170536: HOWTO: Use API to Customize DAO Registry to Close ODBC Connectn
 
+{% raw %}
+
 	Article: Q170536
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -286,3 +288,5 @@ permalink: /kb/170/Q170536/
 	
 	=============================================================================
 	
+
+{% endraw %}

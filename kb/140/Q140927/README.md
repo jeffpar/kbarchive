@@ -6,6 +6,8 @@ permalink: /kb/140/Q140927/
 
 ## Q140927: L2GETNET Causes Access Violation Error on Windows 95 Clients
 
+{% raw %}
+
 	Article: Q140927
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -74,3 +76,5 @@ permalink: /kb/140/Q140927/
 	
 	=============================================================================
 	
+
+{% endraw %}

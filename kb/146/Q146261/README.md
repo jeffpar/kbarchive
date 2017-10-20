@@ -6,6 +6,8 @@ permalink: /kb/146/Q146261/
 
 ## Q146261: XCLN: Labels Can Be Truncated When Resolution Changes
 
+{% raw %}
+
 	Article: Q146261
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/146/Q146261/
 	
 	=============================================================================
 	
+
+{% endraw %}

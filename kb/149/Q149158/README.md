@@ -6,6 +6,8 @@ permalink: /kb/149/Q149158/
 
 ## Q149158: BUG: Compiler Options /W0 and /WX Fail When Used with /4Ys
 
+{% raw %}
+
 	Article: Q149158
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -88,3 +90,5 @@ permalink: /kb/149/Q149158/
 	
 	=============================================================================
 	
+
+{% endraw %}

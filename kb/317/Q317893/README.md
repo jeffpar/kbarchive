@@ -6,6 +6,8 @@ permalink: /kb/317/Q317893/
 
 ## Q317893: SMS: Sender Does Not Respond to Schedule or Rate Limit Changes
 
+{% raw %}
+
 	Article: Q317893
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -151,3 +153,5 @@ permalink: /kb/317/Q317893/
 	
 	=============================================================================
 	
+
+{% endraw %}

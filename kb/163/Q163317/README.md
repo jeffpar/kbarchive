@@ -6,6 +6,8 @@ permalink: /kb/163/Q163317/
 
 ## Q163317: MS-DOS Compatibility Mode When Booting from Removable Disk
 
+{% raw %}
+
 	Article: Q163317
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -61,3 +63,5 @@ permalink: /kb/163/Q163317/
 	
 	=============================================================================
 	
+
+{% endraw %}

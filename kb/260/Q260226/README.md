@@ -6,6 +6,8 @@ permalink: /kb/260/Q260226/
 
 ## Q260226: PRB: Attempting to Print to Remote Printer Via a TCP/IP in SNA
 
+{% raw %}
+
 	Article: Q260226
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1 and above,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -83,3 +85,5 @@ permalink: /kb/260/Q260226/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174339/
 
 ## Q174339: Error 404 When Accessing Intranet Using NetBIOS Server
 
+{% raw %}
+
 	Article: Q174339
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.51,4.0
@@ -101,3 +103,5 @@ permalink: /kb/174/Q174339/
 	
 	=============================================================================
 	
+
+{% endraw %}

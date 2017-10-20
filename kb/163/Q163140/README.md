@@ -6,6 +6,8 @@ permalink: /kb/163/Q163140/
 
 ## Q163140: XCLN: Schedule+ Calendar Not Synchronized If Not Logged Off
 
+{% raw %}
+
 	Article: Q163140
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:4.0,7.0; Win95:4.0
@@ -62,3 +64,5 @@ permalink: /kb/163/Q163140/
 	
 	=============================================================================
 	
+
+{% endraw %}

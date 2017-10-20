@@ -6,6 +6,8 @@ permalink: /kb/100/Q100608/
 
 ## Q100608: Windows Reboots at Startup on the Texas Instruments SP1000
 
+{% raw %}
+
 	Article: Q100608
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/100/Q100608/
 	
 	=============================================================================
 	
+
+{% endraw %}

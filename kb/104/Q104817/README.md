@@ -6,6 +6,8 @@ permalink: /kb/104/Q104817/
 
 ## Q104817: Print Jobs Stay in Queue After Printing
 
+{% raw %}
+
 	Article: Q104817
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -67,3 +69,5 @@ permalink: /kb/104/Q104817/
 	
 	=============================================================================
 	
+
+{% endraw %}

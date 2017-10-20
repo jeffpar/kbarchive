@@ -6,6 +6,8 @@ permalink: /kb/184/Q184954/
 
 ## Q184954: Computer Hangs While Booting with HP 6L Printer out of Paper
 
+{% raw %}
+
 	Article: Q184954
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/184/Q184954/
 	
 	=============================================================================
 	
+
+{% endraw %}

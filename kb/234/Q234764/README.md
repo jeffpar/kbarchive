@@ -6,6 +6,8 @@ permalink: /kb/234/Q234764/
 
 ## Q234764: XADM: Eseutil Ends with -1808 (Jet_ErrDiskFull) on /P or /G
 
+{% raw %}
+
 	Article: Q234764
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -72,3 +74,5 @@ permalink: /kb/234/Q234764/
 	
 	=============================================================================
 	
+
+{% endraw %}

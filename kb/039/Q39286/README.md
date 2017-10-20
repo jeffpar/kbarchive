@@ -6,6 +6,8 @@ permalink: /kb/039/Q39286/
 
 ## Q39286: Mac DOS: Messages Containing Extended Characters Are Garbled
 
+{% raw %}
+
 	Article: Q39286
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.37,2.0,3.0
@@ -38,3 +40,5 @@ permalink: /kb/039/Q39286/
 	
 	=============================================================================
 	
+
+{% endraw %}

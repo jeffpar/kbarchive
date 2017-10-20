@@ -6,6 +6,8 @@ permalink: /kb/256/Q256324/
 
 ## Q256324: PRB: Visual C++ Displays Error for Shsql.dll and Eeswt.dll Files
 
+{% raw %}
+
 	Article: Q256324
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -97,3 +99,5 @@ permalink: /kb/256/Q256324/
 	
 	=============================================================================
 	
+
+{% endraw %}

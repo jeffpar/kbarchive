@@ -6,6 +6,8 @@ permalink: /kb/216/Q216703/
 
 ## Q216703: Windows NT LDAP Connections Remain Open After LDAP Query
 
+{% raw %}
+
 	Article: Q216703
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/216/Q216703/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/232/Q232298/
 
 ## Q232298: STOP 0x0000000A in SFMAtalk Because of Invalid Frame
 
+{% raw %}
+
 	Article: Q232298
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/232/Q232298/
 	
 	=============================================================================
 	
+
+{% endraw %}

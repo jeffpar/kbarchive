@@ -6,6 +6,8 @@ permalink: /kb/076/Q76186/
 
 ## Q76186: Up to 48 Buffers Load in HMA with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q76186
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -72,3 +74,5 @@ permalink: /kb/076/Q76186/
 	
 	=============================================================================
 	
+
+{% endraw %}

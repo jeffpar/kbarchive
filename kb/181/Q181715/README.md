@@ -6,6 +6,8 @@ permalink: /kb/181/Q181715/
 
 ## Q181715: PRB: RDO/Jet: Run-Time Error 40069; Client Cursor Error 11 or 12
 
+{% raw %}
+
 	Article: Q181715
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -146,3 +148,5 @@ permalink: /kb/181/Q181715/
 	
 	=============================================================================
 	
+
+{% endraw %}

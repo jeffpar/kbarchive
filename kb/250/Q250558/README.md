@@ -6,6 +6,8 @@ permalink: /kb/250/Q250558/
 
 ## Q250558: XIMS: Internet Mail Service MIME Word Wrap Default 76 Characters
 
+{% raw %}
+
 	Article: Q250558
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP1,5.5 SP2,5.5 SP3
@@ -52,3 +54,5 @@ permalink: /kb/250/Q250558/
 	
 	=============================================================================
 	
+
+{% endraw %}

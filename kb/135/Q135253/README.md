@@ -6,6 +6,8 @@ permalink: /kb/135/Q135253/
 
 ## Q135253: E-mail Lost When Disk Space Is Low
 
+{% raw %}
+
 	Article: Q135253
 	Product(s): The Microsoft Network
 	Version(s): 1.00 1.2 1.3 2.0
@@ -47,3 +49,5 @@ permalink: /kb/135/Q135253/
 	
 	=============================================================================
 	
+
+{% endraw %}

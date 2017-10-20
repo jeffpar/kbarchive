@@ -6,6 +6,8 @@ permalink: /kb/126/Q126008/
 
 ## Q126008: Registry Value for Routing PPP Packets Incorrect
 
+{% raw %}
+
 	Article: Q126008
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -73,3 +75,5 @@ permalink: /kb/126/Q126008/
 	
 	=============================================================================
 	
+
+{% endraw %}

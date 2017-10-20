@@ -6,6 +6,8 @@ permalink: /kb/059/Q59255/
 
 ## Q59255: C 5.10 Has a Default Threshold of 32,767 Bytes
 
+{% raw %}
+
 	Article: Q59255
 	Product(s): See article
 	Version(s): 5.10 6.00 | 5.10 6.00
@@ -35,3 +37,5 @@ permalink: /kb/059/Q59255/
 	
 	For more information on the /Gt switch, refer to the "Microsoft C
 	Optimizing Compiler User's Guide."
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/224/Q224327/
 
 ## Q224327: XCON: Inetinfo Stops with ASP Event 5 in CDO!EcDecompressData
 
+{% raw %}
+
 	Article: Q224327
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -95,3 +97,5 @@ permalink: /kb/224/Q224327/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157902/
 
 ## Q157902: XCON: Can't Communicate w/ MTA via French X.25 Network
 
+{% raw %}
+
 	Article: Q157902
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/157/Q157902/
 	
 	=============================================================================
 	
+
+{% endraw %}

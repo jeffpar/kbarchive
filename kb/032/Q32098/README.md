@@ -6,6 +6,8 @@ permalink: /kb/032/Q32098/
 
 ## Q32098: QB Program Can Hang If Coprocessor Switch Is Set Incorrectly
 
+{% raw %}
+
 	Article: Q32098
 	Product(s): See article
 	Version(s): 4.00b 4.50
@@ -63,3 +65,5 @@ permalink: /kb/032/Q32098/
 	
 	This book contains reference tables for IBM PCs and compatibles, PS/2
 	machines, and MS-DOS.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176477/
 
 ## Q176477: XFOR: SMTP Message to More Than 100 Recipients Is Not Delivered
 
+{% raw %}
+
 	Article: Q176477
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -73,3 +75,5 @@ permalink: /kb/176/Q176477/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180537/
 
 ## Q180537: TPs Can't Be Invoked On Windows 95/NT Clients if One TP Ends
 
+{% raw %}
+
 	Article: Q180537
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,4.0
@@ -91,3 +93,5 @@ permalink: /kb/180/Q180537/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241591/
 
 ## Q241591: HOWTO: Change the Cursor in a VBCE/eVB Application
 
+{% raw %}
+
 	Article: Q241591
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,3.0
@@ -95,3 +97,5 @@ permalink: /kb/241/Q241591/
 	
 	=============================================================================
 	
+
+{% endraw %}

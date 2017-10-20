@@ -6,6 +6,8 @@ permalink: /kb/120/Q120253/
 
 ## Q120253: Multimedia Registration Kit Revision 3.0
 
+{% raw %}
+
 	Article: Q120253
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -87,3 +89,5 @@ permalink: /kb/120/Q120253/
 	
 	=============================================================================
 	
+
+{% endraw %}

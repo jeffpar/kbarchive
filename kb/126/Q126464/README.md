@@ -6,6 +6,8 @@ permalink: /kb/126/Q126464/
 
 ## Q126464: Repair Disk Utility Does Not Update SAM and Security Hives
 
+{% raw %}
+
 	Article: Q126464
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -70,3 +72,5 @@ permalink: /kb/126/Q126464/
 	
 	=============================================================================
 	
+
+{% endraw %}

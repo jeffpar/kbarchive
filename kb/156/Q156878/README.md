@@ -6,6 +6,8 @@ permalink: /kb/156/Q156878/
 
 ## Q156878: FIX: Checking Out .vbp Overwrites Unsaved Changes in Project
 
+{% raw %}
+
 	Article: Q156878
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -96,3 +98,5 @@ permalink: /kb/156/Q156878/
 	
 	=============================================================================
 	
+
+{% endraw %}

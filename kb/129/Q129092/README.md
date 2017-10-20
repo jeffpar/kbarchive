@@ -6,6 +6,8 @@ permalink: /kb/129/Q129092/
 
 ## Q129092: Subfolder in Bulletin Board Counted as Conversation
 
+{% raw %}
+
 	Article: Q129092
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -39,3 +41,5 @@ permalink: /kb/129/Q129092/
 	
 	=============================================================================
 	
+
+{% endraw %}

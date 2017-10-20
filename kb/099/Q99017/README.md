@@ -6,6 +6,8 @@ permalink: /kb/099/Q99017/
 
 ## Q99017: Characters Do Not Wrap to Next Line in MS-DOS Editor or QBasic
 
+{% raw %}
+
 	Article: Q99017
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -46,3 +48,5 @@ permalink: /kb/099/Q99017/
 	
 	=============================================================================
 	
+
+{% endraw %}

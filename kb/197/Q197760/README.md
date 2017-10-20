@@ -6,6 +6,8 @@ permalink: /kb/197/Q197760/
 
 ## Q197760: WD97: Vertical Cell Alignment Lost Pasting to Word for Windows
 
+{% raw %}
+
 	Article: Q197760
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -60,3 +62,5 @@ permalink: /kb/197/Q197760/
 	
 	=============================================================================
 	
+
+{% endraw %}

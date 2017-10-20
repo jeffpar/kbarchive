@@ -6,6 +6,8 @@ permalink: /kb/042/Q42965/
 
 ## Q42965: Banking in Slow Flight Causes Climb in Flight Simulator
 
+{% raw %}
+
 	Article: Q42965
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/042/Q42965/
 	
 	=============================================================================
 	
+
+{% endraw %}

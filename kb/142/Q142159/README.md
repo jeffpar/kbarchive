@@ -6,6 +6,8 @@ permalink: /kb/142/Q142159/
 
 ## Q142159: How to Automate SNMP Installation
 
+{% raw %}
+
 	Article: Q142159
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -134,3 +136,5 @@ permalink: /kb/142/Q142159/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161263/
 
 ## Q161263: Kids Plus!: Talk It!: Not All Characters Pronounced
 
+{% raw %}
+
 	Article: Q161263
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -52,3 +54,5 @@ permalink: /kb/161/Q161263/
 	
 	=============================================================================
 	
+
+{% endraw %}

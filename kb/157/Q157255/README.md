@@ -6,6 +6,8 @@ permalink: /kb/157/Q157255/
 
 ## Q157255: DOCERR: About _Coverage Wrong in Documentation and Help
 
+{% raw %}
+
 	Article: Q157255
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -61,3 +63,5 @@ permalink: /kb/157/Q157255/
 	
 	=============================================================================
 	
+
+{% endraw %}

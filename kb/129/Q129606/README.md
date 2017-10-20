@@ -6,6 +6,8 @@ permalink: /kb/129/Q129606/
 
 ## Q129606: Lightly Colored Helvetica Text Not Printed Correctly
 
+{% raw %}
+
 	Article: Q129606
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/129/Q129606/
 	
 	=============================================================================
 	
+
+{% endraw %}

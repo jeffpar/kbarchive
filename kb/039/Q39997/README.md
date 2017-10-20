@@ -6,6 +6,8 @@ permalink: /kb/039/Q39997/
 
 ## Q39997: Optimizing C or QuickC 2.00 Required for Writing C Extensions
 
+{% raw %}
+
 	Article: Q39997
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -31,3 +33,5 @@ permalink: /kb/039/Q39997/
 	
 	For more information, see Pages 68 and 83 of the "Microsoft Editor for
 	MS OS/2 and MS-DOS Operating Systems: User's Guide."
+
+{% endraw %}

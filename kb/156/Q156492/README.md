@@ -6,6 +6,8 @@ permalink: /kb/156/Q156492/
 
 ## Q156492: GP Fault or Fatal Exception Error on Intel MMX CPU
 
+{% raw %}
+
 	Article: Q156492
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/156/Q156492/
 	
 	=============================================================================
 	
+
+{% endraw %}

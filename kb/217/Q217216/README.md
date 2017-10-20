@@ -6,6 +6,8 @@ permalink: /kb/217/Q217216/
 
 ## Q217216: FIX: Assertion Or Failure With CDaoDatabase::CreateRelation Meth
 
+{% raw %}
+
 	Article: Q217216
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0,6.0 SP3
@@ -83,3 +85,5 @@ permalink: /kb/217/Q217216/
 	
 	=============================================================================
 	
+
+{% endraw %}

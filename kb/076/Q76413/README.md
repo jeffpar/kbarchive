@@ -6,6 +6,8 @@ permalink: /kb/076/Q76413/
 
 ## Q76413: Screen Repainting Problem with Microsoft Mouse Driver
 
+{% raw %}
+
 	Article: Q76413
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -35,3 +37,5 @@ permalink: /kb/076/Q76413/
 	
 	=============================================================================
 	
+
+{% endraw %}

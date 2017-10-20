@@ -6,6 +6,8 @@ permalink: /kb/149/Q149146/
 
 ## Q149146: BUG: Incorrect Output with CARRIAGECONTROL='fortran' Option
 
+{% raw %}
+
 	Article: Q149146
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -86,3 +88,5 @@ permalink: /kb/149/Q149146/
 	
 	=============================================================================
 	
+
+{% endraw %}

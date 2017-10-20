@@ -6,6 +6,8 @@ permalink: /kb/196/Q196626/
 
 ## Q196626: XFOR: Restricting Routing in the Internet Mail Service
 
+{% raw %}
+
 	Article: Q196626
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -93,3 +95,5 @@ permalink: /kb/196/Q196626/
 	
 	=============================================================================
 	
+
+{% endraw %}

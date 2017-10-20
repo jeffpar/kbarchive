@@ -6,6 +6,8 @@ permalink: /kb/170/Q170356/
 
 ## Q170356: BUG: Cannot Reference Excel 8.0 Object Library from VB 4.0x
 
+{% raw %}
+
 	Article: Q170356
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.1,4.1a,4.2,4.2b,4.2c,4.3,4.3c,5.0,5.0a,5.0c,98; Win95:7.0,7.0a,7.0b;
@@ -264,3 +266,5 @@ permalink: /kb/170/Q170356/
 	
 	=============================================================================
 	
+
+{% endraw %}

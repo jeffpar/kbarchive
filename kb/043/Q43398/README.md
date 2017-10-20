@@ -6,6 +6,8 @@ permalink: /kb/043/Q43398/
 
 ## Q43398: Incorrect Reference to Preprocessor Directives in User's Guide
 
+{% raw %}
+
 	Article: Q43398
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -21,3 +23,5 @@ permalink: /kb/043/Q43398/
 	Guide"; however, Section 8 does not exist. The actual location of the
 	information is in Part 2 on Pages 30-32 of the Quick Reference Guide.
 	This section contains a listing of the preprocessor directives.
+
+{% endraw %}

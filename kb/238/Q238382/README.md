@@ -6,6 +6,8 @@ permalink: /kb/238/Q238382/
 
 ## Q238382: W3C Log File Format May Contain Spaces in CS-Username Field
 
+{% raw %}
+
 	Article: Q238382
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/238/Q238382/
 	
 	=============================================================================
 	
+
+{% endraw %}

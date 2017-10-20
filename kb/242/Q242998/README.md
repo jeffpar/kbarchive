@@ -6,6 +6,8 @@ permalink: /kb/242/Q242998/
 
 ## Q242998: PRB: Beautify Changes the Case of Multi-Line Strings
 
+{% raw %}
+
 	Article: Q242998
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -74,3 +76,5 @@ permalink: /kb/242/Q242998/
 	
 	=============================================================================
 	
+
+{% endraw %}

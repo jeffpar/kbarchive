@@ -6,6 +6,8 @@ permalink: /kb/165/Q165162/
 
 ## Q165162: WD97: AutoNum Fields Don't Update When Deleted W/ Track Changes
 
+{% raw %}
+
 	Article: Q165162
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -84,3 +86,5 @@ permalink: /kb/165/Q165162/
 	
 	=============================================================================
 	
+
+{% endraw %}

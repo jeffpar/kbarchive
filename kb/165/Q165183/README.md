@@ -6,6 +6,8 @@ permalink: /kb/165/Q165183/
 
 ## Q165183: SMS: &quot;Could Not Spawn Initmain.exe&quot; Error Message
 
+{% raw %}
+
 	Article: Q165183
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -42,3 +44,5 @@ permalink: /kb/165/Q165183/
 	
 	=============================================================================
 	
+
+{% endraw %}

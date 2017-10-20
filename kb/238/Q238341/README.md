@@ -6,6 +6,8 @@ permalink: /kb/238/Q238341/
 
 ## Q238341: FIX: Opening a DSP or DSW File in Explorer Crashes Visual C++
 
+{% raw %}
+
 	Article: Q238341
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -125,3 +127,5 @@ permalink: /kb/238/Q238341/
 	
 	=============================================================================
 	
+
+{% endraw %}

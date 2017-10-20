@@ -6,6 +6,8 @@ permalink: /kb/130/Q130244/
 
 ## Q130244: PRB: All New Field Values Set to .NULL. When You Modify Table
 
+{% raw %}
+
 	Article: Q130244
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -78,3 +80,5 @@ permalink: /kb/130/Q130244/
 	
 	=============================================================================
 	
+
+{% endraw %}

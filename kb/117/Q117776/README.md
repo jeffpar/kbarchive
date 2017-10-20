@@ -6,6 +6,8 @@ permalink: /kb/117/Q117776/
 
 ## Q117776: Mac Cinemania 94: Foreign and Special Characters Display as Bo
 
+{% raw %}
+
 	Article: Q117776
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -64,3 +66,5 @@ permalink: /kb/117/Q117776/
 	
 	=============================================================================
 	
+
+{% endraw %}

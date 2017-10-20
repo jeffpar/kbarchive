@@ -6,6 +6,8 @@ permalink: /kb/258/Q258827/
 
 ## Q258827: INFO: Visual Basic Object Browser Cannot See the Default Interfa
 
+{% raw %}
+
 	Article: Q258827
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -100,3 +102,5 @@ permalink: /kb/258/Q258827/
 	
 	=============================================================================
 	
+
+{% endraw %}

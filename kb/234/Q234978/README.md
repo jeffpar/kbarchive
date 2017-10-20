@@ -6,6 +6,8 @@ permalink: /kb/234/Q234978/
 
 ## Q234978: PRB: Error C0042116 &quot;The Parameter Is Incorrect&quot;
 
+{% raw %}
+
 	Article: Q234978
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/234/Q234978/
 	
 	=============================================================================
 	
+
+{% endraw %}

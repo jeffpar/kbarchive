@@ -6,6 +6,8 @@ permalink: /kb/027/Q27324/
 
 ## Q27324: Passing Numeric Variables between BASIC and C by Far Reference
 
+{% raw %}
+
 	Article: Q27324
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -69,3 +71,5 @@ permalink: /kb/027/Q27324/
 	LONG     32769
 	FLOAT    123.311996
 	DOUBLE   129381.333000
+
+{% endraw %}

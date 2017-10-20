@@ -6,6 +6,8 @@ permalink: /kb/161/Q161193/
 
 ## Q161193: LU6.2 Session May End Abnormally over Twinax Link
 
+{% raw %}
+
 	Article: Q161193
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -68,3 +70,5 @@ permalink: /kb/161/Q161193/
 	
 	=============================================================================
 	
+
+{% endraw %}

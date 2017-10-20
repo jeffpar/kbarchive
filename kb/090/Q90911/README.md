@@ -6,6 +6,8 @@ permalink: /kb/090/Q90911/
 
 ## Q90911: FIX: CodeView Version 4.0 Redirects STDPRN to the Screen
 
+{% raw %}
+
 	Article: Q90911
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.05
@@ -72,3 +74,5 @@ permalink: /kb/090/Q90911/
 	
 	=============================================================================
 	
+
+{% endraw %}

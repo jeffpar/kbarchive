@@ -6,6 +6,8 @@ permalink: /kb/233/Q233453/
 
 ## Q233453: MSBP Err Msg: Some Components of the Wizard Engine Are Missing
 
+{% raw %}
+
 	Article: Q233453
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -74,3 +76,5 @@ permalink: /kb/233/Q233453/
 	
 	=============================================================================
 	
+
+{% endraw %}

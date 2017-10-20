@@ -6,6 +6,8 @@ permalink: /kb/171/Q171150/
 
 ## Q171150: Outlook 97 SBS: Steps Unclear for Non-Exchange Installation
 
+{% raw %}
+
 	Article: Q171150
 	Product(s): Microsoft Press
 	Version(s): 
@@ -114,3 +116,5 @@ permalink: /kb/171/Q171150/
 	
 	=============================================================================
 	
+
+{% endraw %}

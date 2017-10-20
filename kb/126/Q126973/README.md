@@ -6,6 +6,8 @@ permalink: /kb/126/Q126973/
 
 ## Q126973: NWCONV LOGFILE.LOG Error: Users Didn't Get Moved
 
+{% raw %}
+
 	Article: Q126973
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -64,3 +66,5 @@ permalink: /kb/126/Q126973/
 	
 	=============================================================================
 	
+
+{% endraw %}

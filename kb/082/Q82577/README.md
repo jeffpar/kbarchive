@@ -6,6 +6,8 @@ permalink: /kb/082/Q82577/
 
 ## Q82577: No Environment Variable in PC Tools for Windows Causes GPF
 
+{% raw %}
+
 	Article: Q82577
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/082/Q82577/
 	
 	=============================================================================
 	
+
+{% endraw %}

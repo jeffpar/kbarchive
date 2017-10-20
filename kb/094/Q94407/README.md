@@ -6,6 +6,8 @@ permalink: /kb/094/Q94407/
 
 ## Q94407: FIX: ML DX1020 Error With Several Source Files In Directory
 
+{% raw %}
+
 	Article: Q94407
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.1
@@ -75,3 +77,5 @@ permalink: /kb/094/Q94407/
 	
 	=============================================================================
 	
+
+{% endraw %}

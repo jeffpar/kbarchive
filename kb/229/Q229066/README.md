@@ -6,6 +6,8 @@ permalink: /kb/229/Q229066/
 
 ## Q229066: PC WRmt: Msrmttr.dll Causes Usgeneric.scr to Return NO ANSWER
 
+{% raw %}
+
 	Article: Q229066
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -83,3 +85,5 @@ permalink: /kb/229/Q229066/
 	
 	=============================================================================
 	
+
+{% endraw %}

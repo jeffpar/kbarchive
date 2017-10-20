@@ -6,6 +6,8 @@ permalink: /kb/175/Q175906/
 
 ## Q175906: Clearing the Documents Menu Clears Multiple MRU Lists
 
+{% raw %}
+
 	Article: Q175906
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:4.0,95; winnt:4.0
@@ -85,3 +87,5 @@ permalink: /kb/175/Q175906/
 	
 	=============================================================================
 	
+
+{% endraw %}

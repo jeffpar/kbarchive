@@ -6,6 +6,8 @@ permalink: /kb/156/Q156197/
 
 ## Q156197: ADT/ODE: Setup Repeatedly Prompts You for Disk2
 
+{% raw %}
+
 	Article: Q156197
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0; :97
@@ -82,3 +84,5 @@ permalink: /kb/156/Q156197/
 	
 	=============================================================================
 	
+
+{% endraw %}

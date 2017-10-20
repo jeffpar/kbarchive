@@ -6,6 +6,8 @@ permalink: /kb/191/Q191342/
 
 ## Q191342: SMS: PGC Fails to Configure Shared Applications on WFW Clients
 
+{% raw %}
+
 	Article: Q191342
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP2,1.2 SP3,1.2 SP4,2.0,2.0 SP1,2.0 SP2
@@ -66,3 +68,5 @@ permalink: /kb/191/Q191342/
 	
 	=============================================================================
 	
+
+{% endraw %}

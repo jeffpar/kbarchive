@@ -6,6 +6,8 @@ permalink: /kb/049/Q49130/
 
 ## Q49130: &quot;SELECT Without END SELECT&quot; Flagged in Wrong Place by QB 4.00
 
+{% raw %}
+
 	Article: Q49130
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -57,3 +59,5 @@ permalink: /kb/049/Q49130/
 	IF x% THEN
 	   PRINT "hello"
 	      ' END IF ' Adding this END IF corrects the syntax error.
+
+{% endraw %}

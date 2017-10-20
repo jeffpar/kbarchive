@@ -6,6 +6,8 @@ permalink: /kb/275/Q275591/
 
 ## Q275591: SMSINST: Logon Server Manager Deletes Smslogon Language Folders
 
+{% raw %}
+
 	Article: Q275591
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -63,3 +65,5 @@ permalink: /kb/275/Q275591/
 	
 	=============================================================================
 	
+
+{% endraw %}

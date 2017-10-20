@@ -6,6 +6,8 @@ permalink: /kb/235/Q235190/
 
 ## Q235190: SMS Advertisements Are Immediately Locked and Cannot Be Modified
 
+{% raw %}
+
 	Article: Q235190
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -54,3 +56,5 @@ permalink: /kb/235/Q235190/
 	
 	=============================================================================
 	
+
+{% endraw %}

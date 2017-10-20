@@ -6,6 +6,8 @@ permalink: /kb/178/Q178494/
 
 ## Q178494: PRB: More Than Nine Functions in Left Join Causes Memory Error
 
+{% raw %}
+
 	Article: Q178494
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -90,3 +92,5 @@ permalink: /kb/178/Q178494/
 	
 	=============================================================================
 	
+
+{% endraw %}

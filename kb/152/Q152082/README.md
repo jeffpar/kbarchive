@@ -6,6 +6,8 @@ permalink: /kb/152/Q152082/
 
 ## Q152082: XADM: Cannot Modify DL if DL and Owner Not in the Same Site
 
+{% raw %}
+
 	Article: Q152082
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -69,3 +71,5 @@ permalink: /kb/152/Q152082/
 	
 	=============================================================================
 	
+
+{% endraw %}

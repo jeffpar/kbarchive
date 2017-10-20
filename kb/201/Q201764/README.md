@@ -6,6 +6,8 @@ permalink: /kb/201/Q201764/
 
 ## Q201764: SMS: Windows NT 4.0 Service Pack 3 Upgrade Fails
 
+{% raw %}
+
 	Article: Q201764
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -77,3 +79,5 @@ permalink: /kb/201/Q201764/
 	
 	=============================================================================
 	
+
+{% endraw %}

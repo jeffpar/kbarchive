@@ -6,6 +6,8 @@ permalink: /kb/318/Q318999/
 
 ## Q318999: FIX: Fatal Exception Starting Object Browser with MSAA
 
+{% raw %}
+
 	Article: Q318999
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -100,3 +102,5 @@ permalink: /kb/318/Q318999/
 	
 	=============================================================================
 	
+
+{% endraw %}

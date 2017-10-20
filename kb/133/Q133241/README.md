@@ -6,6 +6,8 @@ permalink: /kb/133/Q133241/
 
 ## Q133241: Browsing Domain Master Browsers w/ Multiple NICs and Protocols
 
+{% raw %}
+
 	Article: Q133241
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -78,3 +80,5 @@ permalink: /kb/133/Q133241/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140505/
 
 ## Q140505: Disk Space Alarm Reports Status on Hidden Drives
 
+{% raw %}
+
 	Article: Q140505
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -66,3 +68,5 @@ permalink: /kb/140/Q140505/
 	
 	=============================================================================
 	
+
+{% endraw %}

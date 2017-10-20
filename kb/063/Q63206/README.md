@@ -6,6 +6,8 @@ permalink: /kb/063/Q63206/
 
 ## Q63206: Flight Simulator: Position Set Causes Plane to Crash
 
+{% raw %}
+
 	Article: Q63206
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/063/Q63206/
 	
 	=============================================================================
 	
+
+{% endraw %}

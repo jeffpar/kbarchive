@@ -6,6 +6,8 @@ permalink: /kb/147/Q147359/
 
 ## Q147359: XCLN: How to Activate URLs by Default
 
+{% raw %}
+
 	Article: Q147359
 	Product(s): Microsoft Exchange
 	Version(s): 3.1,3.11,4.0,5.0
@@ -56,3 +58,5 @@ permalink: /kb/147/Q147359/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/064/Q64123/
 
 ## Q64123: PRB: Encountering an INT 01 with WDEB386
 
+{% raw %}
+
 	Article: Q64123
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -49,3 +51,5 @@ permalink: /kb/064/Q64123/
 	
 	=============================================================================
 	
+
+{% endraw %}

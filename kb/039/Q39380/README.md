@@ -6,6 +6,8 @@ permalink: /kb/039/Q39380/
 
 ## Q39380: GET with BINARY File Fills String with NULL Bytes at EOF
 
+{% raw %}
+
 	Article: Q39380
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -49,3 +51,5 @@ permalink: /kb/039/Q39380/
 	49 50 51 52 53 54 55 56 57 48 49 50 51 52 53
 	ASCII dump of string AFTER GET from small file
 	84 69 83 84 0 0 0 0 0 0 0 0 0 0 0
+
+{% endraw %}

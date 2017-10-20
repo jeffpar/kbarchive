@@ -6,6 +6,8 @@ permalink: /kb/179/Q179441/
 
 ## Q179441: XCLN: Exchange Server Slows with Message Stuck in User Mailbox
 
+{% raw %}
+
 	Article: Q179441
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0; WINDOWS:4.0,5.0,5.5,8.0; :8.0,8.01,8.02,8.03
@@ -105,3 +107,5 @@ permalink: /kb/179/Q179441/
 	
 	=============================================================================
 	
+
+{% endraw %}

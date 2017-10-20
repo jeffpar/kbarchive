@@ -6,6 +6,8 @@ permalink: /kb/152/Q152084/
 
 ## Q152084: Insufficient Memory Error Using Internet Explorer 2.0
 
+{% raw %}
+
 	Article: Q152084
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:; winnt:1.0,1.1,1.2
@@ -73,3 +75,5 @@ permalink: /kb/152/Q152084/
 	
 	=============================================================================
 	
+
+{% endraw %}

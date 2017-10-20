@@ -6,6 +6,8 @@ permalink: /kb/168/Q168402/
 
 ## Q168402: WD97: Opening Version After Updating Linked Picture Hangs Word
 
+{% raw %}
+
 	Article: Q168402
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -77,3 +79,5 @@ permalink: /kb/168/Q168402/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/221/Q221704/
 
 ## Q221704: BUG: FFCs - _URLComboBox in _internet.vcx Has Trouble with URLs
 
+{% raw %}
+
 	Article: Q221704
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -86,3 +88,5 @@ permalink: /kb/221/Q221704/
 	
 	=============================================================================
 	
+
+{% endraw %}

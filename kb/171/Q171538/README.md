@@ -6,6 +6,8 @@ permalink: /kb/171/Q171538/
 
 ## Q171538: FIX: Can't Set Property on Interface That Has Attached Root
 
+{% raw %}
+
 	Article: Q171538
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97
@@ -77,3 +79,5 @@ permalink: /kb/171/Q171538/
 	
 	=============================================================================
 	
+
+{% endraw %}

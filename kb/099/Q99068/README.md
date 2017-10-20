@@ -6,6 +6,8 @@ permalink: /kb/099/Q99068/
 
 ## Q99068: REXX Commands Syntax--an Abbreviated Listing
 
+{% raw %}
+
 	Article: Q99068
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -125,3 +127,5 @@ permalink: /kb/099/Q99068/
 	
 	=============================================================================
 	
+
+{% endraw %}

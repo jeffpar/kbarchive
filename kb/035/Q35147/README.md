@@ -6,6 +6,8 @@ permalink: /kb/035/Q35147/
 
 ## Q35147: Capturing Paintbrush and FRIEZE Screens with QuickBASIC BSAVE
 
+{% raw %}
+
 	Article: Q35147
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -95,3 +97,5 @@ permalink: /kb/035/Q35147/
 	   ' DEF SEG = &HB800
 	   BLOAD "image.pic", 0
 	   DEF SEG
+
+{% endraw %}

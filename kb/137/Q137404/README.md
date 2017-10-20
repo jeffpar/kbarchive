@@ -6,6 +6,8 @@ permalink: /kb/137/Q137404/
 
 ## Q137404: LAN Manager NETADMIN.EXE Does Not Work in Windows 95
 
+{% raw %}
+
 	Article: Q137404
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2.2; WINDOWS:95
@@ -59,3 +61,5 @@ permalink: /kb/137/Q137404/
 	
 	=============================================================================
 	
+
+{% endraw %}

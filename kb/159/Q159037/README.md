@@ -6,6 +6,8 @@ permalink: /kb/159/Q159037/
 
 ## Q159037: MSN Installation and Setup Questions &amp; Answers
 
+{% raw %}
+
 	Article: Q159037
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5,95
@@ -191,3 +193,5 @@ permalink: /kb/159/Q159037/
 	
 	=============================================================================
 	
+
+{% endraw %}

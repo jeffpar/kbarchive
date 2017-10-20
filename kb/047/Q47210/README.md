@@ -6,6 +6,8 @@ permalink: /kb/047/Q47210/
 
 ## Q47210: Flight Simulator: Definition of Aspect Ratio
 
+{% raw %}
+
 	Article: Q47210
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/047/Q47210/
 	
 	=============================================================================
 	
+
+{% endraw %}

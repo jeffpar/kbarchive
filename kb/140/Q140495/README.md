@@ -6,6 +6,8 @@ permalink: /kb/140/Q140495/
 
 ## Q140495: INF: No Further Development of 16-bit ODBC Components
 
+{% raw %}
+
 	Article: Q140495
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0,1.5,2.0
@@ -57,3 +59,5 @@ permalink: /kb/140/Q140495/
 	
 	=============================================================================
 	
+
+{% endraw %}

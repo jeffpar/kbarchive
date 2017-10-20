@@ -6,6 +6,8 @@ permalink: /kb/161/Q161949/
 
 ## Q161949: XCON: MTA Unable to Start on Invalid Object
 
+{% raw %}
+
 	Article: Q161949
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -85,3 +87,5 @@ permalink: /kb/161/Q161949/
 	
 	=============================================================================
 	
+
+{% endraw %}

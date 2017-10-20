@@ -6,6 +6,8 @@ permalink: /kb/193/Q193445/
 
 ## Q193445: Virtual Globe 99: Cannot Copy or Print Frame from Video Clip
 
+{% raw %}
+
 	Article: Q193445
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -51,3 +53,5 @@ permalink: /kb/193/Q193445/
 	
 	=============================================================================
 	
+
+{% endraw %}

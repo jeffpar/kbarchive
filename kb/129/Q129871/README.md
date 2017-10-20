@@ -6,6 +6,8 @@ permalink: /kb/129/Q129871/
 
 ## Q129871: PRB: &quot;Object not a Collection&quot; Trying to Read Array Element
 
+{% raw %}
+
 	Article: Q129871
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -116,3 +118,5 @@ permalink: /kb/129/Q129871/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139051/
 
 ## Q139051: HOWTO: Select Cells in Excel by Using OLE Automation
 
+{% raw %}
+
 	Article: Q139051
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/139/Q139051/
 	
 	=============================================================================
 	
+
+{% endraw %}

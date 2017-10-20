@@ -6,6 +6,8 @@ permalink: /kb/155/Q155932/
 
 ## Q155932: BUG: Changing ScaleMode in Form Class Moves Objects in VFP 5.0
 
+{% raw %}
+
 	Article: Q155932
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -78,3 +80,5 @@ permalink: /kb/155/Q155932/
 	
 	=============================================================================
 	
+
+{% endraw %}

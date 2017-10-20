@@ -6,6 +6,8 @@ permalink: /kb/100/Q100305/
 
 ## Q100305: DOCERR: Incomplete Description of SetErrorMode() Function
 
+{% raw %}
+
 	Article: Q100305
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/100/Q100305/
 	
 	=============================================================================
 	
+
+{% endraw %}

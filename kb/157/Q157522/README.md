@@ -6,6 +6,8 @@ permalink: /kb/157/Q157522/
 
 ## Q157522: HOWTO: Install Visual FoxPro 5.x or 6.0 on a Network
 
+{% raw %}
+
 	Article: Q157522
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/157/Q157522/
 	
 	=============================================================================
 	
+
+{% endraw %}

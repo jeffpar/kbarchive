@@ -6,6 +6,8 @@ permalink: /kb/134/Q134453/
 
 ## Q134453: No Duplex Printing on HP LaserJet 4+/4M+
 
+{% raw %}
+
 	Article: Q134453
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/134/Q134453/
 	
 	=============================================================================
 	
+
+{% endraw %}

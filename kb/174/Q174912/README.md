@@ -6,6 +6,8 @@ permalink: /kb/174/Q174912/
 
 ## Q174912: Bookshelf 98: Opening a 360 View Enables Interface Sounds
 
+{% raw %}
+
 	Article: Q174912
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -41,3 +43,5 @@ permalink: /kb/174/Q174912/
 	
 	=============================================================================
 	
+
+{% endraw %}

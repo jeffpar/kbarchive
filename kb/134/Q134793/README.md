@@ -6,6 +6,8 @@ permalink: /kb/134/Q134793/
 
 ## Q134793: PRB: Text Labels Do Not Float with Memo Fields in a Report
 
+{% raw %}
+
 	Article: Q134793
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -102,3 +104,5 @@ permalink: /kb/134/Q134793/
 	
 	=============================================================================
 	
+
+{% endraw %}

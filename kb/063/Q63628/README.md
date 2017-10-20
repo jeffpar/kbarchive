@@ -6,6 +6,8 @@ permalink: /kb/063/Q63628/
 
 ## Q63628: Flight Simulator: Saving Startup Modes to Disk
 
+{% raw %}
+
 	Article: Q63628
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/063/Q63628/
 	
 	=============================================================================
 	
+
+{% endraw %}

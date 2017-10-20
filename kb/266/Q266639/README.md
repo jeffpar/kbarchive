@@ -6,6 +6,8 @@ permalink: /kb/266/Q266639/
 
 ## Q266639: XCLI: Outlook Tasks Don't Send Updates upon Completion
 
+{% raw %}
+
 	Article: Q266639
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -98,3 +100,5 @@ permalink: /kb/266/Q266639/
 	
 	=============================================================================
 	
+
+{% endraw %}

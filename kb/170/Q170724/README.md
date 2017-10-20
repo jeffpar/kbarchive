@@ -6,6 +6,8 @@ permalink: /kb/170/Q170724/
 
 ## Q170724: WD97: Macro to Determine If Insertion Point Is in a Table
 
+{% raw %}
+
 	Article: Q170724
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -92,3 +94,5 @@ permalink: /kb/170/Q170724/
 	
 	=============================================================================
 	
+
+{% endraw %}

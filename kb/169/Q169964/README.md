@@ -6,6 +6,8 @@ permalink: /kb/169/Q169964/
 
 ## Q169964: PPT7: Animation Effect Doesn't Work with Auto Advance
 
+{% raw %}
+
 	Article: Q169964
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -69,3 +71,5 @@ permalink: /kb/169/Q169964/
 	
 	=============================================================================
 	
+
+{% endraw %}

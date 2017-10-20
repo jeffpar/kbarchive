@@ -6,6 +6,8 @@ permalink: /kb/066/Q66785/
 
 ## Q66785: Extended ASCII Characters on CGA Card
 
+{% raw %}
+
 	Article: Q66785
 	Product(s): See article
 	Version(s): 5.10 6.00 6.00a | 6.00 6.00a
@@ -80,3 +82,5 @@ permalink: /kb/066/Q66785/
 	
 	   getch();
 	}
+
+{% endraw %}

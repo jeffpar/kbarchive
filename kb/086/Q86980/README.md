@@ -6,6 +6,8 @@ permalink: /kb/086/Q86980/
 
 ## Q86980: X400: How Address Conversion Is Performed by the Gateway
 
+{% raw %}
+
 	Article: Q86980
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -46,3 +48,5 @@ permalink: /kb/086/Q86980/
 	
 	=============================================================================
 	
+
+{% endraw %}

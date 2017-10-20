@@ -6,6 +6,8 @@ permalink: /kb/150/Q150963/
 
 ## Q150963: Err Msg: Event ID: 5513 Source: Netlogon
 
+{% raw %}
+
 	Article: Q150963
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -115,3 +117,5 @@ permalink: /kb/150/Q150963/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132388/
 
 ## Q132388: Dogs: Can't Stop Dog Piano Movie After it Starts
 
+{% raw %}
+
 	Article: Q132388
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -61,3 +63,5 @@ permalink: /kb/132/Q132388/
 	
 	=============================================================================
 	
+
+{% endraw %}

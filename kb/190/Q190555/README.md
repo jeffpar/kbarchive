@@ -6,6 +6,8 @@ permalink: /kb/190/Q190555/
 
 ## Q190555: XFOR: Connector for cc:Mail Converts Messages Larger Than 20 KB
 
+{% raw %}
+
 	Article: Q190555
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -65,3 +67,5 @@ permalink: /kb/190/Q190555/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/315/Q315535/
 
 ## Q315535: BUG: Problems When You Rebuild Static and Dynamic CRT Libraries
 
+{% raw %}
+
 	Article: Q315535
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -221,3 +223,5 @@ permalink: /kb/315/Q315535/
 	
 	=============================================================================
 	
+
+{% endraw %}

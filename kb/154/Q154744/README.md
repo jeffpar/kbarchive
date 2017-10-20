@@ -6,6 +6,8 @@ permalink: /kb/154/Q154744/
 
 ## Q154744: PRB: Modifying CWinApp Members Causes Error in DBGHEAP.C
 
+{% raw %}
+
 	Article: Q154744
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -98,3 +100,5 @@ permalink: /kb/154/Q154744/
 	
 	=============================================================================
 	
+
+{% endraw %}

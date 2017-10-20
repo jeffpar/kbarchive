@@ -6,6 +6,8 @@ permalink: /kb/175/Q175688/
 
 ## Q175688: XADM: Exact Name Resolution Fails with First and Last Name
 
+{% raw %}
+
 	Article: Q175688
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -57,3 +59,5 @@ permalink: /kb/175/Q175688/
 	
 	=============================================================================
 	
+
+{% endraw %}

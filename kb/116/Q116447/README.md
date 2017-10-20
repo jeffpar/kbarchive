@@ -6,6 +6,8 @@ permalink: /kb/116/Q116447/
 
 ## Q116447: FIX: ostrstrea
 
+{% raw %}
+
 	Article: Q116447
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5
@@ -94,3 +96,5 @@ permalink: /kb/116/Q116447/
 	
 	=============================================================================
 	
+
+{% endraw %}

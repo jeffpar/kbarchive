@@ -6,6 +6,8 @@ permalink: /kb/135/Q135733/
 
 ## Q135733: PC NTMMTA: Errors Installing on Unsupported Platforms
 
+{% raw %}
+
 	Article: Q135733
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/135/Q135733/
 	
 	=============================================================================
 	
+
+{% endraw %}

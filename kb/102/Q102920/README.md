@@ -6,6 +6,8 @@ permalink: /kb/102/Q102920/
 
 ## Q102920: FIX: Linker May Cause L5000 with CodeView Information
 
+{% raw %}
+
 	Article: Q102920
 	Product(s): Microsoft Programming Utilities
 	Version(s): 5.5,5.6
@@ -75,3 +77,5 @@ permalink: /kb/102/Q102920/
 	
 	=============================================================================
 	
+
+{% endraw %}

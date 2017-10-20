@@ -6,6 +6,8 @@ permalink: /kb/109/Q109695/
 
 ## Q109695: Cannot Read Last Image from Photo-CD
 
+{% raw %}
+
 	Article: Q109695
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22; WINDOWS:3.11
@@ -73,3 +75,5 @@ permalink: /kb/109/Q109695/
 	
 	=============================================================================
 	
+
+{% endraw %}

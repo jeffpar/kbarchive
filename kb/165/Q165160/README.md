@@ -6,6 +6,8 @@ permalink: /kb/165/Q165160/
 
 ## Q165160: WD97: Items Missing from Message Using &quot;Send To Mail Recipient&quot;
 
+{% raw %}
+
 	Article: Q165160
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/165/Q165160/
 	
 	=============================================================================
 	
+
+{% endraw %}

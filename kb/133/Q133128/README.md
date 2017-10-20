@@ -6,6 +6,8 @@ permalink: /kb/133/Q133128/
 
 ## Q133128: Printing From Windows NT 3.51 to an HP4 at 600 DPI is Slow
 
+{% raw %}
+
 	Article: Q133128
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -62,3 +64,5 @@ permalink: /kb/133/Q133128/
 	
 	=============================================================================
 	
+
+{% endraw %}

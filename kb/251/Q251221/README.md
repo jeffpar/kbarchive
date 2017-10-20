@@ -6,6 +6,8 @@ permalink: /kb/251/Q251221/
 
 ## Q251221: How to Select Replication of Specific WINS Databases
 
+{% raw %}
+
 	Article: Q251221
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -118,3 +120,5 @@ permalink: /kb/251/Q251221/
 	
 	=============================================================================
 	
+
+{% endraw %}

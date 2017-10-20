@@ -6,6 +6,8 @@ permalink: /kb/194/Q194460/
 
 ## Q194460: XCLN: Security Settings in Outlook Clients
 
+{% raw %}
+
 	Article: Q194460
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:8.0; :8.0,8.01,8.02,8.03
@@ -83,3 +85,5 @@ permalink: /kb/194/Q194460/
 	
 	=============================================================================
 	
+
+{% endraw %}

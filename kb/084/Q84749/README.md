@@ -6,6 +6,8 @@ permalink: /kb/084/Q84749/
 
 ## Q84749: Dell CMOS Password Setup Hangs with Microsoft Mouse 8.2
 
+{% raw %}
+
 	Article: Q84749
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -83,3 +85,5 @@ permalink: /kb/084/Q84749/
 	
 	=============================================================================
 	
+
+{% endraw %}

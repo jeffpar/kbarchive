@@ -6,6 +6,8 @@ permalink: /kb/043/Q43957/
 
 ## Q43957: Mac Srv: Novell's NetWare for the Macintosh
 
+{% raw %}
+
 	Article: Q43957
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -52,3 +54,5 @@ permalink: /kb/043/Q43957/
 	
 	=============================================================================
 	
+
+{% endraw %}

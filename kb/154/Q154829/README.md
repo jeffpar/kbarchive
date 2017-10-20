@@ -6,6 +6,8 @@ permalink: /kb/154/Q154829/
 
 ## Q154829: PRB: Rights by Project Are Not Always Inherited
 
+{% raw %}
+
 	Article: Q154829
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,5.0
@@ -79,3 +81,5 @@ permalink: /kb/154/Q154829/
 	
 	=============================================================================
 	
+
+{% endraw %}

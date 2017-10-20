@@ -6,6 +6,8 @@ permalink: /kb/098/Q98466/
 
 ## Q98466: Bookshelf: WordBASIC Err=5: Illegal Function Call on Launch
 
+{% raw %}
+
 	Article: Q98466
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1993 edition,2.0; WINDOWS:2.0a,2.0b,2.0c,6.0,6.0a
@@ -67,3 +69,5 @@ permalink: /kb/098/Q98466/
 	
 	=============================================================================
 	
+
+{% endraw %}

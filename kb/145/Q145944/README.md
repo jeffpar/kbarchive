@@ -6,6 +6,8 @@ permalink: /kb/145/Q145944/
 
 ## Q145944: X.400: Using X400adm.exe to Configure Settings
 
+{% raw %}
+
 	Article: Q145944
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.2
@@ -56,3 +58,5 @@ permalink: /kb/145/Q145944/
 	
 	=============================================================================
 	
+
+{% endraw %}

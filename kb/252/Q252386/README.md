@@ -6,6 +6,8 @@ permalink: /kb/252/Q252386/
 
 ## Q252386: SFU: Network Path Not Found When Trying to Mount Unix NFS Volume
 
+{% raw %}
+
 	Article: Q252386
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0; :2.0
@@ -83,3 +85,5 @@ permalink: /kb/252/Q252386/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/023/Q23051/
 
 ## Q23051: Creating Macros for the Microsoft Editor
 
+{% raw %}
+
 	Article: Q23051
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -36,3 +38,5 @@ permalink: /kb/023/Q23051/
 	This macro creates a file-time stamp that contains the filename, the
 	current date, and the current time; it is assigned to the keystroke
 	"ALT+S".
+
+{% endraw %}

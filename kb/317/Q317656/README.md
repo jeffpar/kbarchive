@@ -6,6 +6,8 @@ permalink: /kb/317/Q317656/
 
 ## Q317656: XADM: Memory Issues After You Update Scan Engine
 
+{% raw %}
+
 	Article: Q317656
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -123,3 +125,5 @@ permalink: /kb/317/Q317656/
 	
 	=============================================================================
 	
+
+{% endraw %}

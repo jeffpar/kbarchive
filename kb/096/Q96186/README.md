@@ -6,6 +6,8 @@ permalink: /kb/096/Q96186/
 
 ## Q96186: PRB: LINK Error L2022: Export Undefined
 
+{% raw %}
+
 	Article: Q96186
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -76,3 +78,5 @@ permalink: /kb/096/Q96186/
 	
 	=============================================================================
 	
+
+{% endraw %}

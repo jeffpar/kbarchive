@@ -6,6 +6,8 @@ permalink: /kb/231/Q231454/
 
 ## Q231454: Installing Windows NT If You Receive &quot;Out of Memory&quot; Errors
 
+{% raw %}
+
 	Article: Q231454
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -179,3 +181,5 @@ permalink: /kb/231/Q231454/
 	
 	=============================================================================
 	
+
+{% endraw %}

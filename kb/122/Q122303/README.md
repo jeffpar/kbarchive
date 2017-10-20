@@ -6,6 +6,8 @@ permalink: /kb/122/Q122303/
 
 ## Q122303: FIX: &#95;&#95;declspec(dllimport) Classes Are Not Caught Correctly
 
+{% raw %}
+
 	Article: Q122303
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -185,3 +187,5 @@ permalink: /kb/122/Q122303/
 	
 	=============================================================================
 	
+
+{% endraw %}

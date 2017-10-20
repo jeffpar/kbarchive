@@ -6,6 +6,8 @@ permalink: /kb/137/Q137827/
 
 ## Q137827: Program and .ini Files Not Transferred with User Profiles
 
+{% raw %}
+
 	Article: Q137827
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/137/Q137827/
 	
 	=============================================================================
 	
+
+{% endraw %}

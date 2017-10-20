@@ -6,6 +6,8 @@ permalink: /kb/148/Q148716/
 
 ## Q148716: XADM: Unable to Configure Windows NT Natural Language
 
+{% raw %}
+
 	Article: Q148716
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/148/Q148716/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/252/Q252693/
 
 ## Q252693: Chunked Encoding Request with No Data Causes IIS Memory Leak
 
+{% raw %}
+
 	Article: Q252693
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -241,3 +243,5 @@ permalink: /kb/252/Q252693/
 	
 	=============================================================================
 	
+
+{% endraw %}

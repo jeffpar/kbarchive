@@ -6,6 +6,8 @@ permalink: /kb/196/Q196005/
 
 ## Q196005: DirectX Home User Troubleshooter Available
 
+{% raw %}
+
 	Article: Q196005
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -57,3 +59,5 @@ permalink: /kb/196/Q196005/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/217/Q217017/
 
 ## Q217017: INFO: Visual Basic 5.0 and 6.0 Compatibility Issues
 
+{% raw %}
+
 	Article: Q217017
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -132,3 +134,5 @@ permalink: /kb/217/Q217017/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/229/Q229005/
 
 ## Q229005: How to Connect to a Web or FTP Site Using Non-Default Port
 
+{% raw %}
+
 	Article: Q229005
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/229/Q229005/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/029/Q29791/
 
 ## Q29791: Including a File that Contains CTRL+Z Causes Error Message
 
+{% raw %}
+
 	Article: Q29791
 	Product(s): See article
 	Version(s): 5.10
@@ -31,3 +33,5 @@ permalink: /kb/029/Q29791/
 	
 	This procedure copies the old filename to the new filename up to, but
 	not including, the CTRL+Z.
+
+{% endraw %}

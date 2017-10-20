@@ -6,6 +6,8 @@ permalink: /kb/176/Q176633/
 
 ## Q176633: PRB: Axis Text on MSChart Control Appears Illegible
 
+{% raw %}
+
 	Article: Q176633
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/176/Q176633/
 	
 	=============================================================================
 	
+
+{% endraw %}

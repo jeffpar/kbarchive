@@ -6,6 +6,8 @@ permalink: /kb/157/Q157639/
 
 ## Q157639: WD97: Incorrect Hyperlink, Error Inserting from Insert Field
 
+{% raw %}
+
 	Article: Q157639
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/157/Q157639/
 	
 	=============================================================================
 	
+
+{% endraw %}

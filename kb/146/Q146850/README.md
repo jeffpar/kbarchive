@@ -6,6 +6,8 @@ permalink: /kb/146/Q146850/
 
 ## Q146850: XCLN: Message Body Scroll at End of Document
 
+{% raw %}
+
 	Article: Q146850
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -45,3 +47,5 @@ permalink: /kb/146/Q146850/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172239/
 
 ## Q172239: BUG: OpenResultset Doesn't Fire QueryComplete in Class Module
 
+{% raw %}
+
 	Article: Q172239
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -115,3 +117,5 @@ permalink: /kb/172/Q172239/
 	
 	=============================================================================
 	
+
+{% endraw %}

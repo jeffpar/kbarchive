@@ -6,6 +6,8 @@ permalink: /kb/252/Q252644/
 
 ## Q252644: Printer Error Messages Incorrectly Redirected to Terminal Server
 
+{% raw %}
+
 	Article: Q252644
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5,4.0 SP6
@@ -91,3 +93,5 @@ permalink: /kb/252/Q252644/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/222/Q222944/
 
 ## Q222944: Allow COMTI LU6.2 Send Size to be Configurable.
 
+{% raw %}
+
 	Article: Q222944
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP2,4.0SP1,4.0SP2
@@ -89,3 +91,5 @@ permalink: /kb/222/Q222944/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235372/
 
 ## Q235372: XADM: Display Name Corrupts and Information Store Stops
 
+{% raw %}
+
 	Article: Q235372
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -113,3 +115,5 @@ permalink: /kb/235/Q235372/
 	
 	=============================================================================
 	
+
+{% endraw %}

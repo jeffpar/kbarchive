@@ -6,6 +6,8 @@ permalink: /kb/094/Q94382/
 
 ## Q94382: Can't Print from MS-DOS-Based WordPerfect with FaceLift
 
+{% raw %}
+
 	Article: Q94382
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/094/Q94382/
 	
 	=============================================================================
 	
+
+{% endraw %}

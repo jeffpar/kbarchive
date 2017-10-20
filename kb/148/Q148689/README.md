@@ -6,6 +6,8 @@ permalink: /kb/148/Q148689/
 
 ## Q148689: How to Parse Config.fpw Programmatically
 
+{% raw %}
+
 	Article: Q148689
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -137,3 +139,5 @@ permalink: /kb/148/Q148689/
 	
 	=============================================================================
 	
+
+{% endraw %}

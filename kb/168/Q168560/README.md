@@ -6,6 +6,8 @@ permalink: /kb/168/Q168560/
 
 ## Q168560: WD97: Invalid Page Fault When You Edit a Picture
 
+{% raw %}
+
 	Article: Q168560
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/168/Q168560/
 	
 	=============================================================================
 	
+
+{% endraw %}

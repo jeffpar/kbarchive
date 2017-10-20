@@ -6,6 +6,8 @@ permalink: /kb/085/Q85055/
 
 ## Q85055: FFAPI: What to Watch for When Building an FFAPI File
 
+{% raw %}
+
 	Article: Q85055
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/085/Q85055/
 	
 	=============================================================================
 	
+
+{% endraw %}

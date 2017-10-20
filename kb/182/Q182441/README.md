@@ -6,6 +6,8 @@ permalink: /kb/182/Q182441/
 
 ## Q182441: Full Synchronization from WinNT PDC to LanMan Server May Fail
 
+{% raw %}
+
 	Article: Q182441
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -74,3 +76,5 @@ permalink: /kb/182/Q182441/
 	
 	=============================================================================
 	
+
+{% endraw %}

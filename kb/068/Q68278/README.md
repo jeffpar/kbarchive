@@ -6,6 +6,8 @@ permalink: /kb/068/Q68278/
 
 ## Q68278: COMPAQ SLT Screen Blanks When Returning to MS-DOS Prompt
 
+{% raw %}
+
 	Article: Q68278
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/068/Q68278/
 	
 	=============================================================================
 	
+
+{% endraw %}

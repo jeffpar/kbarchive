@@ -6,6 +6,8 @@ permalink: /kb/233/Q233184/
 
 ## Q233184: XCLN: Out-of-Range Calendar Items Don't Print with Daily Style
 
+{% raw %}
+
 	Article: Q233184
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; :
@@ -95,3 +97,5 @@ permalink: /kb/233/Q233184/
 	
 	=============================================================================
 	
+
+{% endraw %}

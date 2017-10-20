@@ -6,6 +6,8 @@ permalink: /kb/126/Q126592/
 
 ## Q126592: PC DOS: 3.x DOS Client Displays Garbage in Address List
 
+{% raw %}
+
 	Article: Q126592
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -58,3 +60,5 @@ permalink: /kb/126/Q126592/
 	
 	=============================================================================
 	
+
+{% endraw %}

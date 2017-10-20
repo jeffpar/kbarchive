@@ -6,6 +6,8 @@ permalink: /kb/049/Q49892/
 
 ## Q49892: Logitech Bus Mouse Can Use Microsoft Mouse Drivers
 
+{% raw %}
+
 	Article: Q49892
 	Product(s): See article
 	Version(s): 4.50
@@ -27,3 +29,5 @@ permalink: /kb/049/Q49892/
 	including, Version 7.00. Version 7.00 of the Microsoft Mouse driver is
 	shipped with the new high-resolution 400 ppi (pixels per inch)
 	Microsoft Mouse and has not been tested with the Logitech bus mice.
+
+{% endraw %}

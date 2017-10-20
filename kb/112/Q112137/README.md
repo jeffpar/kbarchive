@@ -6,6 +6,8 @@ permalink: /kb/112/Q112137/
 
 ## Q112137: ADT2: Overview of MS Access Developer's Toolkit Version 2.0
 
+{% raw %}
+
 	Article: Q112137
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 2.0
@@ -61,3 +63,5 @@ permalink: /kb/112/Q112137/
 	
 	=============================================================================
 	
+
+{% endraw %}

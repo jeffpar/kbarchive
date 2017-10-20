@@ -6,6 +6,8 @@ permalink: /kb/185/Q185027/
 
 ## Q185027: XADM: Event 1282 Logged After Removing TCP/IP From Server
 
+{% raw %}
+
 	Article: Q185027
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -55,3 +57,5 @@ permalink: /kb/185/Q185027/
 	
 	=============================================================================
 	
+
+{% endraw %}

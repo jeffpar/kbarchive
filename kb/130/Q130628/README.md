@@ -6,6 +6,8 @@ permalink: /kb/130/Q130628/
 
 ## Q130628: IPCONFIG Error: Couldn't Locate Windows Installation
 
+{% raw %}
+
 	Article: Q130628
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11,3.11a; WINDOWS:3.11
@@ -49,3 +51,5 @@ permalink: /kb/130/Q130628/
 	
 	=============================================================================
 	
+
+{% endraw %}

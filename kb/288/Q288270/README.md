@@ -6,6 +6,8 @@ permalink: /kb/288/Q288270/
 
 ## Q288270: ASP Returns Continuous &quot;Include File Not Found&quot; Errors
 
+{% raw %}
+
 	Article: Q288270
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -74,3 +76,5 @@ permalink: /kb/288/Q288270/
 	
 	=============================================================================
 	
+
+{% endraw %}

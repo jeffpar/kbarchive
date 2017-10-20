@@ -6,6 +6,8 @@ permalink: /kb/185/Q185233/
 
 ## Q185233: WD97: Error Setting Transparent Color in Header/Footer Picture
 
+{% raw %}
+
 	Article: Q185233
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -122,3 +124,5 @@ permalink: /kb/185/Q185233/
 	
 	=============================================================================
 	
+
+{% endraw %}

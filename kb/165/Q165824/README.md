@@ -6,6 +6,8 @@ permalink: /kb/165/Q165824/
 
 ## Q165824: ADT/ODE: End Statement in Run-Time Application Causes Error
 
+{% raw %}
+
 	Article: Q165824
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0
@@ -122,3 +124,5 @@ permalink: /kb/165/Q165824/
 	
 	=============================================================================
 	
+
+{% endraw %}

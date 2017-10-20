@@ -6,6 +6,8 @@ permalink: /kb/193/Q193225/
 
 ## Q193225: How to Configure IIS to Connect to Oracle from ASP and ADO
 
+{% raw %}
+
 	Article: Q193225
 	Product(s): Internet Information Server
 	Version(s): 2.0,2.1 SP2,4.0,6.0,Build 2.573.2927,Build 2.573.3513
@@ -246,3 +248,5 @@ permalink: /kb/193/Q193225/
 	
 	=============================================================================
 	
+
+{% endraw %}

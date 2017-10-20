@@ -6,6 +6,8 @@ permalink: /kb/106/Q106561/
 
 ## Q106561: FIX: Debug: Single-Step Fails with Emulated Float Intructions
 
+{% raw %}
+
 	Article: Q106561
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -89,3 +91,5 @@ permalink: /kb/106/Q106561/
 	
 	=============================================================================
 	
+
+{% endraw %}

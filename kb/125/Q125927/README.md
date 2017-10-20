@@ -6,6 +6,8 @@ permalink: /kb/125/Q125927/
 
 ## Q125927: MS EXCEL 5 VB APPS SBS WIN Corrections and Comments
 
+{% raw %}
+
 	Article: Q125927
 	Product(s): Microsoft Press
 	Version(s): 
@@ -146,3 +148,5 @@ permalink: /kb/125/Q125927/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172747/
 
 ## Q172747: WD97: What's New in the Web Page Authoring Tools Update
 
+{% raw %}
+
 	Article: Q172747
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -142,3 +144,5 @@ permalink: /kb/172/Q172747/
 	
 	=============================================================================
 	
+
+{% endraw %}

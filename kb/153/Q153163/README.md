@@ -6,6 +6,8 @@ permalink: /kb/153/Q153163/
 
 ## Q153163: Using MS-DOS Environment Variable as Command-Line Option
 
+{% raw %}
+
 	Article: Q153163
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/153/Q153163/
 	
 	=============================================================================
 	
+
+{% endraw %}

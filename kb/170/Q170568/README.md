@@ -6,6 +6,8 @@ permalink: /kb/170/Q170568/
 
 ## Q170568: Seagate Tape Drive Light Stays Lit After Exiting NTBACKUP
 
+{% raw %}
+
 	Article: Q170568
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/170/Q170568/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186531/
 
 ## Q186531: Error Message: &quot;Cannot find &#42;.ini. Please Re-run Setup&quot;
 
+{% raw %}
+
 	Article: Q186531
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/186/Q186531/
 	
 	=============================================================================
 	
+
+{% endraw %}

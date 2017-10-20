@@ -6,6 +6,8 @@ permalink: /kb/103/Q103622/
 
 ## Q103622: Err Msg: GROUP ERROR: Cannot Open Program Group....
 
+{% raw %}
+
 	Article: Q103622
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -56,3 +58,5 @@ permalink: /kb/103/Q103622/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137577/
 
 ## Q137577: The Control Point Name is Invalid
 
+{% raw %}
+
 	Article: Q137577
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -91,3 +93,5 @@ permalink: /kb/137/Q137577/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154696/
 
 ## Q154696: Starting MS-DOS from Office 95 Shortcut Bar May Fail
 
+{% raw %}
+
 	Article: Q154696
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -66,3 +68,5 @@ permalink: /kb/154/Q154696/
 	
 	=============================================================================
 	
+
+{% endraw %}

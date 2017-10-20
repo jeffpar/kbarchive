@@ -6,6 +6,8 @@ permalink: /kb/169/Q169269/
 
 ## Q169269: Creating Virtual Directories with NetWare Share Names
 
+{% raw %}
+
 	Article: Q169269
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0
@@ -89,3 +91,5 @@ permalink: /kb/169/Q169269/
 	
 	=============================================================================
 	
+
+{% endraw %}

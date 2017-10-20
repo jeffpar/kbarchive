@@ -6,6 +6,8 @@ permalink: /kb/143/Q143197/
 
 ## Q143197: XCON: Pending Delivery Notification on Read Receipts
 
+{% raw %}
+
 	Article: Q143197
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -43,3 +45,5 @@ permalink: /kb/143/Q143197/
 	
 	=============================================================================
 	
+
+{% endraw %}

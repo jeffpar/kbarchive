@@ -6,6 +6,8 @@ permalink: /kb/232/Q232000/
 
 ## Q232000: How to Configure WLBS with Multiple Virtual IP Addresses
 
+{% raw %}
+
 	Article: Q232000
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,2000,4.0
@@ -67,3 +69,5 @@ permalink: /kb/232/Q232000/
 	
 	=============================================================================
 	
+
+{% endraw %}

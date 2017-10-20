@@ -6,6 +6,8 @@ permalink: /kb/188/Q188304/
 
 ## Q188304: PRB: Calling 32-bit Help Files from 16-bit Applications on NT
 
+{% raw %}
+
 	Article: Q188304
 	Product(s): Microsoft C Compiler
 	Version(s): 1.52
@@ -289,3 +291,5 @@ permalink: /kb/188/Q188304/
 	
 	=============================================================================
 	
+
+{% endraw %}

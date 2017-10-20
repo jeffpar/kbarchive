@@ -6,6 +6,8 @@ permalink: /kb/134/Q134824/
 
 ## Q134824: Remote Control Fails With 15 Character NetBIOS Name
 
+{% raw %}
+
 	Article: Q134824
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -48,3 +50,5 @@ permalink: /kb/134/Q134824/
 	
 	=============================================================================
 	
+
+{% endraw %}

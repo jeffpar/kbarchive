@@ -6,6 +6,8 @@ permalink: /kb/123/Q123825/
 
 ## Q123825: SMTP: Err Msg: Can Not Use Indirect Postoffice to Forward Mail
 
+{% raw %}
+
 	Article: Q123825
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -68,3 +70,5 @@ permalink: /kb/123/Q123825/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/061/Q61344/
 
 ## Q61344: Why a Program Might Hang with BLOAD/BSAVE
 
+{% raw %}
+
 	Article: Q61344
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -100,3 +102,5 @@ permalink: /kb/061/Q61344/
 	DIM buffer(16384)
 	BLOAD "test.bin", VARPTR(buffer(0))
 	END
+
+{% endraw %}

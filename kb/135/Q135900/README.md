@@ -6,6 +6,8 @@ permalink: /kb/135/Q135900/
 
 ## Q135900: Windows 95 CD-ROM Internet.txt File
 
+{% raw %}
+
 	Article: Q135900
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -131,3 +133,5 @@ permalink: /kb/135/Q135900/
 	
 	=============================================================================
 	
+
+{% endraw %}

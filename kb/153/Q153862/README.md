@@ -6,6 +6,8 @@ permalink: /kb/153/Q153862/
 
 ## Q153862: XCLN: How to Use CompuServe WinCIM and Exchange Client
 
+{% raw %}
+
 	Article: Q153862
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -87,3 +89,5 @@ permalink: /kb/153/Q153862/
 	
 	=============================================================================
 	
+
+{% endraw %}

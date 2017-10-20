@@ -6,6 +6,8 @@ permalink: /kb/186/Q186846/
 
 ## Q186846: WD97: New Information in Help About for New English Thesaurus
 
+{% raw %}
+
 	Article: Q186846
 	Product(s): Word 97 for Windows
 	Version(s): Service Release 2
@@ -53,3 +55,5 @@ permalink: /kb/186/Q186846/
 	
 	=============================================================================
 	
+
+{% endraw %}

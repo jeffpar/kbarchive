@@ -6,6 +6,8 @@ permalink: /kb/176/Q176286/
 
 ## Q176286: WD97: WordMail Template Not Displayed If Document Sent from Word
 
+{% raw %}
+
 	Article: Q176286
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -121,3 +123,5 @@ permalink: /kb/176/Q176286/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/028/Q28582/
 
 ## Q28582: &quot;Function Not Defined&quot; or &quot;Duplicate Definition&quot; Fast Load
 
+{% raw %}
+
 	Article: Q28582
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -55,3 +57,5 @@ permalink: /kb/028/Q28582/
 	are either to upgrade to QuickBASIC 4.50 or BASIC PDS 7.00, to save in
 	Text format instead of Fast Load Format, or to name all variables with
 	different names.
+
+{% endraw %}

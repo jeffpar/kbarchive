@@ -6,6 +6,8 @@ permalink: /kb/170/Q170851/
 
 ## Q170851: How Windows NT/Challenge Response Authentication Works
 
+{% raw %}
+
 	Article: Q170851
 	Product(s): Internet Information Server
 	Version(s): WinNT:2.0,3.0
@@ -60,3 +62,5 @@ permalink: /kb/170/Q170851/
 	
 	=============================================================================
 	
+
+{% endraw %}

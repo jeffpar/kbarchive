@@ -6,6 +6,8 @@ permalink: /kb/106/Q106114/
 
 ## Q106114: 32-bit Windows SLI Applications Encounter Application Exception
 
+{% raw %}
+
 	Article: Q106114
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -60,3 +62,5 @@ permalink: /kb/106/Q106114/
 	
 	=============================================================================
 	
+
+{% endraw %}

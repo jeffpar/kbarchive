@@ -6,6 +6,8 @@ permalink: /kb/089/Q89563/
 
 ## Q89563: INFO: Using SetParent() to Change a Window Parent
 
+{% raw %}
+
 	Article: Q89563
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.11,95; winnt:3.51
@@ -45,3 +47,5 @@ permalink: /kb/089/Q89563/
 	
 	=============================================================================
 	
+
+{% endraw %}

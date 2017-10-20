@@ -6,6 +6,8 @@ permalink: /kb/095/Q95734/
 
 ## Q95734: PC Win: Attachments Cannot Be Added to Message
 
+{% raw %}
+
 	Article: Q95734
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -47,3 +49,5 @@ permalink: /kb/095/Q95734/
 	
 	=============================================================================
 	
+
+{% endraw %}

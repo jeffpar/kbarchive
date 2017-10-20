@@ -6,6 +6,8 @@ permalink: /kb/167/Q167654/
 
 ## Q167654: HOWTO: Visual C++ 5.0 (Professional &amp; Enterprise) Support FAQ
 
+{% raw %}
+
 	Article: Q167654
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -543,3 +545,5 @@ permalink: /kb/167/Q167654/
 	
 	=============================================================================
 	
+
+{% endraw %}

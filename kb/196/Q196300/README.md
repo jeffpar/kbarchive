@@ -6,6 +6,8 @@ permalink: /kb/196/Q196300/
 
 ## Q196300: Failure Accessing PerfMon Counters from ActiveX Component
 
+{% raw %}
+
 	Article: Q196300
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/196/Q196300/
 	
 	=============================================================================
 	
+
+{% endraw %}

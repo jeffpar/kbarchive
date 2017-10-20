@@ -6,6 +6,8 @@ permalink: /kb/142/Q142727/
 
 ## Q142727: System Agent Reports a Stacker Drive Error with ScanDisk
 
+{% raw %}
+
 	Article: Q142727
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -70,3 +72,5 @@ permalink: /kb/142/Q142727/
 	
 	=============================================================================
 	
+
+{% endraw %}

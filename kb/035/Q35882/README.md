@@ -6,6 +6,8 @@ permalink: /kb/035/Q35882/
 
 ## Q35882: FIX: A5114: Operand Size Does Not Match Segment Word Size
 
+{% raw %}
+
 	Article: Q35882
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a
@@ -87,3 +89,5 @@ permalink: /kb/035/Q35882/
 	
 	=============================================================================
 	
+
+{% endraw %}

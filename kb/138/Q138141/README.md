@@ -6,6 +6,8 @@ permalink: /kb/138/Q138141/
 
 ## Q138141: INFO: Tips For Troubleshooting Remote OLE Automation Errors
 
+{% raw %}
+
 	Article: Q138141
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -60,3 +62,5 @@ permalink: /kb/138/Q138141/
 	
 	=============================================================================
 	
+
+{% endraw %}

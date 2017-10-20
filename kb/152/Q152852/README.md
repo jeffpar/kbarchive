@@ -6,6 +6,8 @@ permalink: /kb/152/Q152852/
 
 ## Q152852: XADM: Steps to Move User and Inbox Assistant Rules
 
+{% raw %}
+
 	Article: Q152852
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -84,3 +86,5 @@ permalink: /kb/152/Q152852/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185506/
 
 ## Q185506: WD97: Numbering Reset When Frame Is Anchored to Paragraph
 
+{% raw %}
+
 	Article: Q185506
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -59,3 +61,5 @@ permalink: /kb/185/Q185506/
 	
 	=============================================================================
 	
+
+{% endraw %}

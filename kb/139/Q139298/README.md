@@ -6,6 +6,8 @@ permalink: /kb/139/Q139298/
 
 ## Q139298: HOWTO: Include Specific File Revisions in a Project Label
 
+{% raw %}
+
 	Article: Q139298
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -87,3 +89,5 @@ permalink: /kb/139/Q139298/
 	
 	=============================================================================
 	
+
+{% endraw %}

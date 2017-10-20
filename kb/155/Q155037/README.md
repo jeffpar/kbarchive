@@ -6,6 +6,8 @@ permalink: /kb/155/Q155037/
 
 ## Q155037: No Services Have Been Registered to Use Licensing
 
+{% raw %}
+
 	Article: Q155037
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -107,3 +109,5 @@ permalink: /kb/155/Q155037/
 	
 	=============================================================================
 	
+
+{% endraw %}

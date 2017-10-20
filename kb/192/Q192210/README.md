@@ -6,6 +6,8 @@ permalink: /kb/192/Q192210/
 
 ## Q192210: DOC: TabStrip Separators Do Not Work with tabButtons Style
 
+{% raw %}
+
 	Article: Q192210
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -69,3 +71,5 @@ permalink: /kb/192/Q192210/
 	
 	=============================================================================
 	
+
+{% endraw %}

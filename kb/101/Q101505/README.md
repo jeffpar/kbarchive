@@ -6,6 +6,8 @@ permalink: /kb/101/Q101505/
 
 ## Q101505: Macintosh Users Logon Only as Guest, Not Registered User
 
+{% raw %}
+
 	Article: Q101505
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -66,3 +68,5 @@ permalink: /kb/101/Q101505/
 	
 	=============================================================================
 	
+
+{% endraw %}

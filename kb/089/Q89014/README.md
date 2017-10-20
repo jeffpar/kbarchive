@@ -6,6 +6,8 @@ permalink: /kb/089/Q89014/
 
 ## Q89014: Video Problems with the Compaq Portable III/Portable 386
 
+{% raw %}
+
 	Article: Q89014
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.03,2.1,2.11,3.0,3.0a,3.1,3.11,95
@@ -89,3 +91,5 @@ permalink: /kb/089/Q89014/
 	
 	=============================================================================
 	
+
+{% endraw %}

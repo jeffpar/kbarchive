@@ -6,6 +6,8 @@ permalink: /kb/080/Q80267/
 
 ## Q80267: PC Gen: Contents of Modem Script File ULTRA96.MDM
 
+{% raw %}
+
 	Article: Q80267
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e
@@ -286,3 +288,5 @@ permalink: /kb/080/Q80267/
 	
 	=============================================================================
 	
+
+{% endraw %}

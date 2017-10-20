@@ -6,6 +6,8 @@ permalink: /kb/107/Q107059/
 
 ## Q107059: RAS Returns Poorly Formatted or Unreadable Error Messages
 
+{% raw %}
+
 	Article: Q107059
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -43,3 +45,5 @@ permalink: /kb/107/Q107059/
 	
 	=============================================================================
 	
+
+{% endraw %}

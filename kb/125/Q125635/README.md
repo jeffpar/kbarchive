@@ -6,6 +6,8 @@ permalink: /kb/125/Q125635/
 
 ## Q125635: BUG: Win 3.1 Kernel Debugger 3.10.46 Locks Up on Pentium Sys
 
+{% raw %}
+
 	Article: Q125635
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.1
@@ -92,3 +94,5 @@ permalink: /kb/125/Q125635/
 	
 	=============================================================================
 	
+
+{% endraw %}

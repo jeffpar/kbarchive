@@ -6,6 +6,8 @@ permalink: /kb/319/Q319121/
 
 ## Q319121: Cannot Remove MSN Explorer User Tile(s) In Windows XP--Deleted T
 
+{% raw %}
+
 	Article: Q319121
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -71,3 +73,5 @@ permalink: /kb/319/Q319121/
 	
 	=============================================================================
 	
+
+{% endraw %}

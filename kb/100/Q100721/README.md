@@ -6,6 +6,8 @@ permalink: /kb/100/Q100721/
 
 ## Q100721: GP Fault Occurs in Anti-Virus for Windows with Tetris Faces
 
+{% raw %}
+
 	Article: Q100721
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -51,3 +53,5 @@ permalink: /kb/100/Q100721/
 	
 	=============================================================================
 	
+
+{% endraw %}

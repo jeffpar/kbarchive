@@ -6,6 +6,8 @@ permalink: /kb/191/Q191454/
 
 ## Q191454: PRB: Event Procedures May Be Executed for Unhandled Events
 
+{% raw %}
+
 	Article: Q191454
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -99,3 +101,5 @@ permalink: /kb/191/Q191454/
 	
 	=============================================================================
 	
+
+{% endraw %}

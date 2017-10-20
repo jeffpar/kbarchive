@@ -6,6 +6,8 @@ permalink: /kb/125/Q125328/
 
 ## Q125328: PC Ext: Purpose of CommInOnly Option for External
 
+{% raw %}
+
 	Article: Q125328
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2,3.2a
@@ -69,3 +71,5 @@ permalink: /kb/125/Q125328/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/105/Q105276/
 
 ## Q105276: Differences Between LAN Manager and WFWG WinPopup
 
+{% raw %}
+
 	Article: Q105276
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:
@@ -50,3 +52,5 @@ permalink: /kb/105/Q105276/
 	
 	=============================================================================
 	
+
+{% endraw %}

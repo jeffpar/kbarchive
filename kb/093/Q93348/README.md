@@ -6,6 +6,8 @@ permalink: /kb/093/Q93348/
 
 ## Q93348: INFO: Locking Error Messages in a Multiuser Environment
 
+{% raw %}
+
 	Article: Q93348
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -125,3 +127,5 @@ permalink: /kb/093/Q93348/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/228/Q228974/
 
 ## Q228974: MidMad: Unable to Start Multiplayer Cruise Game
 
+{% raw %}
+
 	Article: Q228974
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -69,3 +71,5 @@ permalink: /kb/228/Q228974/
 	
 	=============================================================================
 	
+
+{% endraw %}

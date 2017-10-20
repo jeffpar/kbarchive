@@ -6,6 +6,8 @@ permalink: /kb/170/Q170736/
 
 ## Q170736: Windows 95 MSDLC32 Does Not Receive Multicast Packets
 
+{% raw %}
+
 	Article: Q170736
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -100,3 +102,5 @@ permalink: /kb/170/Q170736/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182564/
 
 ## Q182564: Maintenance Mode Windows Client Installs to Wrong Directory
 
+{% raw %}
+
 	Article: Q182564
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -64,3 +66,5 @@ permalink: /kb/182/Q182564/
 	
 	=============================================================================
 	
+
+{% endraw %}

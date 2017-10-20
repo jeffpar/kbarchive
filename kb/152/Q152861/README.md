@@ -6,6 +6,8 @@ permalink: /kb/152/Q152861/
 
 ## Q152861: SMS: Using Dosetup to Create Registry Entries for PGC
 
+{% raw %}
+
 	Article: Q152861
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -81,3 +83,5 @@ permalink: /kb/152/Q152861/
 	
 	=============================================================================
 	
+
+{% endraw %}

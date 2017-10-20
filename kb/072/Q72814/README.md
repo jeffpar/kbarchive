@@ -6,6 +6,8 @@ permalink: /kb/072/Q72814/
 
 ## Q72814: Windows 3.0 Does Not Support Auto-Initialize DMA
 
+{% raw %}
+
 	Article: Q72814
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0
@@ -278,3 +280,5 @@ permalink: /kb/072/Q72814/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129386/
 
 ## Q129386: PPT7: Internet Assistant for PowerPoint Available Online
 
+{% raw %}
+
 	Article: Q129386
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -100,3 +102,5 @@ permalink: /kb/129/Q129386/
 	
 	=============================================================================
 	
+
+{% endraw %}

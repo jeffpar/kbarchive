@@ -6,6 +6,8 @@ permalink: /kb/090/Q90020/
 
 ## Q90020: &quot;Cannot Find SETUP.INF&quot; During Windows Sound System Setup
 
+{% raw %}
+
 	Article: Q90020
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/090/Q90020/
 	
 	=============================================================================
 	
+
+{% endraw %}

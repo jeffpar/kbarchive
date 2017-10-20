@@ -6,6 +6,8 @@ permalink: /kb/131/Q131095/
 
 ## Q131095: How to Control the Occurrence of a Default Event
 
+{% raw %}
+
 	Article: Q131095
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -100,3 +102,5 @@ permalink: /kb/131/Q131095/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174069/
 
 ## Q174069: WD97: Invalid Links from Link to Remote File Transfer Protocol
 
+{% raw %}
+
 	Article: Q174069
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/174/Q174069/
 	
 	=============================================================================
 	
+
+{% endraw %}

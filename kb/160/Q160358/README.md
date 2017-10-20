@@ -6,6 +6,8 @@ permalink: /kb/160/Q160358/
 
 ## Q160358: Mouse Leaves Horizontal Lines on Display with Matrox Video
 
+{% raw %}
+
 	Article: Q160358
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -54,3 +56,5 @@ permalink: /kb/160/Q160358/
 	
 	=============================================================================
 	
+
+{% endraw %}

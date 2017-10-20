@@ -6,6 +6,8 @@ permalink: /kb/171/Q171510/
 
 ## Q171510: FIX: Setting Font Property Causes Error 438 with RichTextBox
 
+{% raw %}
+
 	Article: Q171510
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0 5.0
@@ -89,3 +91,5 @@ permalink: /kb/171/Q171510/
 	
 	=============================================================================
 	
+
+{% endraw %}

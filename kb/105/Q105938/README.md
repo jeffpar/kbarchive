@@ -6,6 +6,8 @@ permalink: /kb/105/Q105938/
 
 ## Q105938: FORTRAN PowerStation 1.0 ANSWERS.TXT
 
+{% raw %}
+
 	Article: Q105938
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -199,3 +201,5 @@ permalink: /kb/105/Q105938/
 	
 	=============================================================================
 	
+
+{% endraw %}

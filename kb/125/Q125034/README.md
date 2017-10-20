@@ -6,6 +6,8 @@ permalink: /kb/125/Q125034/
 
 ## Q125034: Artist: How to Remove or Add Custom Stickers
 
+{% raw %}
+
 	Article: Q125034
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
@@ -73,3 +75,5 @@ permalink: /kb/125/Q125034/
 	
 	=============================================================================
 	
+
+{% endraw %}

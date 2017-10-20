@@ -6,6 +6,8 @@ permalink: /kb/237/Q237968/
 
 ## Q237968: RAS Configuration May Change When Installing Multiple ISDN Cards
 
+{% raw %}
+
 	Article: Q237968
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -127,3 +129,5 @@ permalink: /kb/237/Q237968/
 	
 	=============================================================================
 	
+
+{% endraw %}

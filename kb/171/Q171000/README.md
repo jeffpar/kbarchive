@@ -6,6 +6,8 @@ permalink: /kb/171/Q171000/
 
 ## Q171000: Banyan &quot;The procedure Entry Point NtReleaseProcessMutant&quot;
 
+{% raw %}
+
 	Article: Q171000
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/171/Q171000/
 	
 	=============================================================================
 	
+
+{% endraw %}

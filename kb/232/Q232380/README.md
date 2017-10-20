@@ -6,6 +6,8 @@ permalink: /kb/232/Q232380/
 
 ## Q232380: XCLN: Tentative Appointments Missing Schedule+ Free Busy Message
 
+{% raw %}
+
 	Article: Q232380
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -66,3 +68,5 @@ permalink: /kb/232/Q232380/
 	
 	=============================================================================
 	
+
+{% endraw %}

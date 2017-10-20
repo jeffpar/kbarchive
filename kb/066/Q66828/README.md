@@ -6,6 +6,8 @@ permalink: /kb/066/Q66828/
 
 ## Q66828: Unexpected Behavior with the /Gt Switch and the PWB
 
+{% raw %}
+
 	Article: Q66828
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -66,3 +68,5 @@ permalink: /kb/066/Q66828/
 	Also, you can set the /Gt switch on the Additional Options line in
 	either Set Debug Options or Set Release Options, rather than the
 	global Additional Options.
+
+{% endraw %}

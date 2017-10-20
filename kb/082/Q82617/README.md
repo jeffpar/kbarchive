@@ -6,6 +6,8 @@ permalink: /kb/082/Q82617/
 
 ## Q82617: Ventura Publisher Doesn't Install If SHARE Is Loaded
 
+{% raw %}
+
 	Article: Q82617
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:3.x,4.x,5.x,6.x; WINDOWS:3.x
@@ -76,3 +78,5 @@ permalink: /kb/082/Q82617/
 	
 	=============================================================================
 	
+
+{% endraw %}

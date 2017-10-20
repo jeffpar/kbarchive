@@ -6,6 +6,8 @@ permalink: /kb/227/Q227033/
 
 ## Q227033: Changing the SMSClient_&lt;SiteCode&gt; Password Can Cause Lockouts
 
+{% raw %}
+
 	Article: Q227033
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -71,3 +73,5 @@ permalink: /kb/227/Q227033/
 	
 	=============================================================================
 	
+
+{% endraw %}

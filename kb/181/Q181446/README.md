@@ -6,6 +6,8 @@ permalink: /kb/181/Q181446/
 
 ## Q181446: Games: Buttons Disabled on CH Virtual Pilot Pro or Combatstick
 
+{% raw %}
+
 	Article: Q181446
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -75,3 +77,5 @@ permalink: /kb/181/Q181446/
 	
 	=============================================================================
 	
+
+{% endraw %}

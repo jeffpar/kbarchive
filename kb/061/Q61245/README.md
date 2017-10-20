@@ -6,6 +6,8 @@ permalink: /kb/061/Q61245/
 
 ## Q61245: C 6.00 README: SMARTDRV Documentation
 
+{% raw %}
+
 	Article: Q61245
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -37,3 +39,5 @@ permalink: /kb/061/Q61245/
 	The /a switch is used when you have expanded memory or an expanded
 	memory emulator. If you omit this switch, SMARTDRV uses extended
 	memory.
+
+{% endraw %}

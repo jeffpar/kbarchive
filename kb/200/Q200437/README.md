@@ -6,6 +6,8 @@ permalink: /kb/200/Q200437/
 
 ## Q200437: SMS: Status MIFs Are Generated with .MIF.MIF Extension
 
+{% raw %}
+
 	Article: Q200437
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/200/Q200437/
 	
 	=============================================================================
 	
+
+{% endraw %}

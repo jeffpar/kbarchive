@@ -6,6 +6,8 @@ permalink: /kb/279/Q279341/
 
 ## Q279341: OLE DB Provider for DB2 Hangs When Calling Stored Procedure
 
+{% raw %}
+
 	Article: Q279341
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP3,4.0 SP4
@@ -149,3 +151,5 @@ permalink: /kb/279/Q279341/
 	
 	=============================================================================
 	
+
+{% endraw %}

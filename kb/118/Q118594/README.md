@@ -6,6 +6,8 @@ permalink: /kb/118/Q118594/
 
 ## Q118594: SMTP: Definition of SMTP Gateway Terms
 
+{% raw %}
+
 	Article: Q118594
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -75,3 +77,5 @@ permalink: /kb/118/Q118594/
 	
 	=============================================================================
 	
+
+{% endraw %}

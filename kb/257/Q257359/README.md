@@ -6,6 +6,8 @@ permalink: /kb/257/Q257359/
 
 ## Q257359: World Atlas 2000: World Atlas Has Encountered an Unknown Error
 
+{% raw %}
+
 	Article: Q257359
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/257/Q257359/
 	
 	=============================================================================
 	
+
+{% endraw %}

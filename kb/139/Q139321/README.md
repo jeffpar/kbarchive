@@ -6,6 +6,8 @@ permalink: /kb/139/Q139321/
 
 ## Q139321: Bookshelf and Works 4.0 Err Msg: Insert Bookshelf Disc
 
+{% raw %}
+
 	Article: Q139321
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -77,3 +79,5 @@ permalink: /kb/139/Q139321/
 	
 	=============================================================================
 	
+
+{% endraw %}

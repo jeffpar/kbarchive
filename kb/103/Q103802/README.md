@@ -6,6 +6,8 @@ permalink: /kb/103/Q103802/
 
 ## Q103802: MHS: How to Test Whether the Gateway Is Working
 
+{% raw %}
+
 	Article: Q103802
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -81,3 +83,5 @@ permalink: /kb/103/Q103802/
 	
 	=============================================================================
 	
+
+{% endraw %}

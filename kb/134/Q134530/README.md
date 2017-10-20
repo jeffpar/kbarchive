@@ -6,6 +6,8 @@ permalink: /kb/134/Q134530/
 
 ## Q134530: Error Message: VGASWAP VDD Control Hook Recursion
 
+{% raw %}
+
 	Article: Q134530
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/134/Q134530/
 	
 	=============================================================================
 	
+
+{% endraw %}

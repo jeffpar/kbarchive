@@ -6,6 +6,8 @@ permalink: /kb/114/Q114834/
 
 ## Q114834: ADT: Description of the Visual Basic Compatibility Layer
 
+{% raw %}
+
 	Article: Q114834
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -128,3 +130,5 @@ permalink: /kb/114/Q114834/
 	
 	=============================================================================
 	
+
+{% endraw %}

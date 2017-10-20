@@ -6,6 +6,8 @@ permalink: /kb/281/Q281525/
 
 ## Q281525: Can I View Shockwave Files?
 
+{% raw %}
+
 	Article: Q281525
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -53,3 +55,5 @@ permalink: /kb/281/Q281525/
 	
 	=============================================================================
 	
+
+{% endraw %}

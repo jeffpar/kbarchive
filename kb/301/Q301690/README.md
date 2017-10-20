@@ -6,6 +6,8 @@ permalink: /kb/301/Q301690/
 
 ## Q301690: XIMS: Corrupted Message Header Causes Access Violation
 
+{% raw %}
+
 	Article: Q301690
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -108,3 +110,5 @@ permalink: /kb/301/Q301690/
 	
 	=============================================================================
 	
+
+{% endraw %}

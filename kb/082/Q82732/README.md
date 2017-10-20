@@ -6,6 +6,8 @@ permalink: /kb/082/Q82732/
 
 ## Q82732: Meaning of the SETUP.INF's &quot;noclobber&quot; Entries
 
+{% raw %}
+
 	Article: Q82732
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/082/Q82732/
 	
 	=============================================================================
 	
+
+{% endraw %}

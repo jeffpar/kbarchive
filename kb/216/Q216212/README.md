@@ -6,6 +6,8 @@ permalink: /kb/216/Q216212/
 
 ## Q216212: How to Configure Printing to PPA Printers Through Jet Direct
 
+{% raw %}
+
 	Article: Q216212
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/216/Q216212/
 	
 	=============================================================================
 	
+
+{% endraw %}

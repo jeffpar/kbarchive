@@ -6,6 +6,8 @@ permalink: /kb/194/Q194808/
 
 ## Q194808: Combat Flight Simulator: Missing, Distorted, or Blurred Textures
 
+{% raw %}
+
 	Article: Q194808
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -100,3 +102,5 @@ permalink: /kb/194/Q194808/
 	
 	=============================================================================
 	
+
+{% endraw %}

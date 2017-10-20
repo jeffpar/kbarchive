@@ -6,6 +6,8 @@ permalink: /kb/099/Q99809/
 
 ## Q99809: Mac Multimedia: Sounds Choppy with Virtual Memory On
 
+{% raw %}
+
 	Article: Q99809
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a,1993, 1994, 1995, 1996-1997 editions,2.0
@@ -71,3 +73,5 @@ permalink: /kb/099/Q99809/
 	
 	=============================================================================
 	
+
+{% endraw %}

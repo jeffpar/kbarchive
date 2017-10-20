@@ -6,6 +6,8 @@ permalink: /kb/190/Q190043/
 
 ## Q190043: PRB: Controls Collection vs. Standard Collection in For Each
 
+{% raw %}
+
 	Article: Q190043
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0;
@@ -133,3 +135,5 @@ permalink: /kb/190/Q190043/
 	
 	=============================================================================
 	
+
+{% endraw %}

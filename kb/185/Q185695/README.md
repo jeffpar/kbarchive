@@ -6,6 +6,8 @@ permalink: /kb/185/Q185695/
 
 ## Q185695: HOWTO: Renaming an ActiveX Control After its Project Is Created
 
+{% raw %}
+
 	Article: Q185695
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -75,3 +77,5 @@ permalink: /kb/185/Q185695/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/047/Q47768/
 
 ## Q47768: Unrecognized Switches /Z1, /NOI with Old Version of Linker
 
+{% raw %}
+
 	Article: Q47768
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:2.x,3.01,3.02,3.04,3.05,3.51,3.55
@@ -41,3 +43,5 @@ permalink: /kb/047/Q47768/
 	
 	=============================================================================
 	
+
+{% endraw %}

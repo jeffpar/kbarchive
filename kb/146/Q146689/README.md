@@ -6,6 +6,8 @@ permalink: /kb/146/Q146689/
 
 ## Q146689: Cursor Flashes While Determining Free and Busy Times
 
+{% raw %}
+
 	Article: Q146689
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -52,3 +54,5 @@ permalink: /kb/146/Q146689/
 	
 	=============================================================================
 	
+
+{% endraw %}

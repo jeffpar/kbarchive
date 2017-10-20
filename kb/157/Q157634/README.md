@@ -6,6 +6,8 @@ permalink: /kb/157/Q157634/
 
 ## Q157634: BUG: Drag and Drop Fails in an As Top-Level Form
 
+{% raw %}
+
 	Article: Q157634
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -71,3 +73,5 @@ permalink: /kb/157/Q157634/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/281/Q281298/
 
 ## Q281298: PRB: Session Variables Do Not Persist When Global.asa Is Empty
 
+{% raw %}
+
 	Article: Q281298
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -94,3 +96,5 @@ permalink: /kb/281/Q281298/
 	
 	=============================================================================
 	
+
+{% endraw %}

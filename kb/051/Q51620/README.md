@@ -6,6 +6,8 @@ permalink: /kb/051/Q51620/
 
 ## Q51620: No Warning When Passing Long to Int Prototyped Function
 
+{% raw %}
+
 	Article: Q51620
 	Product(s): See article
 	Version(s): 5.10   | 5.00
@@ -45,3 +47,5 @@ permalink: /kb/051/Q51620/
 	
 	   long a=50000,b=1;
 	   func(a,b);
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135612/
 
 ## Q135612: BUG: Form Does Not Release After Being Changed to Modal
 
+{% raw %}
+
 	Article: Q135612
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS: 3.0,3.0b,5.0,5.0a,6.0
@@ -152,3 +154,5 @@ permalink: /kb/135/Q135612/
 	
 	=============================================================================
 	
+
+{% endraw %}

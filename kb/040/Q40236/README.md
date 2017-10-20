@@ -6,6 +6,8 @@ permalink: /kb/040/Q40236/
 
 ## Q40236: LINK4 Is Not Included in C 5.10 or MASM 5.10 Packages
 
+{% raw %}
+
 	Article: Q40236
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -39,3 +41,5 @@ permalink: /kb/040/Q40236/
 	
 	The ILINK utility should only be used under OS/2 for creating OS/2
 	programs.
+
+{% endraw %}

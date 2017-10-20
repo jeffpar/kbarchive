@@ -6,6 +6,8 @@ permalink: /kb/276/Q276345/
 
 ## Q276345: Microsoft Casino: How to Improve Game Performance
 
+{% raw %}
+
 	Article: Q276345
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -52,3 +54,5 @@ permalink: /kb/276/Q276345/
 	
 	=============================================================================
 	
+
+{% endraw %}

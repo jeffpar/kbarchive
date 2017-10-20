@@ -6,6 +6,8 @@ permalink: /kb/193/Q193157/
 
 ## Q193157: TCP/IP Does Not Allow MAC Addresses to Change Dynamically
 
+{% raw %}
+
 	Article: Q193157
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/193/Q193157/
 	
 	=============================================================================
 	
+
+{% endraw %}

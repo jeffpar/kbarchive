@@ -6,6 +6,8 @@ permalink: /kb/237/Q237714/
 
 ## Q237714: NFL Fever 2000: Quits Unexpectedly When You Select a Play
 
+{% raw %}
+
 	Article: Q237714
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/237/Q237714/
 	
 	=============================================================================
 	
+
+{% endraw %}

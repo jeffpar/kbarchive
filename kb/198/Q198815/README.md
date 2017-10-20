@@ -6,6 +6,8 @@ permalink: /kb/198/Q198815/
 
 ## Q198815: XCON: Chat MMC Snap-in Requires Double-click to Sort By Priority
 
+{% raw %}
+
 	Article: Q198815
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -66,3 +68,5 @@ permalink: /kb/198/Q198815/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168430/
 
 ## Q168430: FIX: Using Referenced Integer to Access Array Generates CXX0034
 
+{% raw %}
+
 	Article: Q168430
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -84,3 +86,5 @@ permalink: /kb/168/Q168430/
 	
 	=============================================================================
 	
+
+{% endraw %}

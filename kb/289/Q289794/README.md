@@ -6,6 +6,8 @@ permalink: /kb/289/Q289794/
 
 ## Q289794: HTMLA with SSL Incorrectly Warns of a Non-Secure Connection
 
+{% raw %}
+
 	Article: Q289794
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -76,3 +78,5 @@ permalink: /kb/289/Q289794/
 	
 	=============================================================================
 	
+
+{% endraw %}

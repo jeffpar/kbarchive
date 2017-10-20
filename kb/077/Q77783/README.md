@@ -6,6 +6,8 @@ permalink: /kb/077/Q77783/
 
 ## Q77783: Modal Dialog Child of Modeless Dialog Box Sample Code
 
+{% raw %}
+
 	Article: Q77783
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -54,3 +56,5 @@ permalink: /kb/077/Q77783/
 	
 	=============================================================================
 	
+
+{% endraw %}

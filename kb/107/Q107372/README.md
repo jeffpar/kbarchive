@@ -6,6 +6,8 @@ permalink: /kb/107/Q107372/
 
 ## Q107372: Windows for Workgroups: 32-Bit File Access Is Slow with MSIPX
 
+{% raw %}
+
 	Article: Q107372
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -61,3 +63,5 @@ permalink: /kb/107/Q107372/
 	
 	=============================================================================
 	
+
+{% endraw %}

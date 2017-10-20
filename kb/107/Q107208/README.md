@@ -6,6 +6,8 @@ permalink: /kb/107/Q107208/
 
 ## Q107208: Adaptec 1740/1742 May Require BIOS Version 1.4
 
+{% raw %}
+
 	Article: Q107208
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -55,3 +57,5 @@ permalink: /kb/107/Q107208/
 	
 	=============================================================================
 	
+
+{% endraw %}

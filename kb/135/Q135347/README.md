@@ -6,6 +6,8 @@ permalink: /kb/135/Q135347/
 
 ## Q135347: Able to Print Only Once from Digitalk Parts Workbench 2.0
 
+{% raw %}
+
 	Article: Q135347
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -64,3 +66,5 @@ permalink: /kb/135/Q135347/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86176/
 
 ## Q86176: Black May Print as Blue or Magenta on Epson LQ-2550 Printer
 
+{% raw %}
+
 	Article: Q86176
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -61,3 +63,5 @@ permalink: /kb/086/Q86176/
 	
 	=============================================================================
 	
+
+{% endraw %}

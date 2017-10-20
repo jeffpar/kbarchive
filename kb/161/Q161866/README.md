@@ -6,6 +6,8 @@ permalink: /kb/161/Q161866/
 
 ## Q161866: XCLN: Stopping Windows 3.x Clients from Prompting for a Domain
 
+{% raw %}
+
 	Article: Q161866
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -92,3 +94,5 @@ permalink: /kb/161/Q161866/
 	
 	=============================================================================
 	
+
+{% endraw %}

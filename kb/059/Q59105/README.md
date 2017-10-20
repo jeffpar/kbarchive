@@ -6,6 +6,8 @@ permalink: /kb/059/Q59105/
 
 ## Q59105: Mac Wkst: Text in Received Mail Message Cannot Be Edited
 
+{% raw %}
+
 	Article: Q59105
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -38,3 +40,5 @@ permalink: /kb/059/Q59105/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137934/
 
 ## Q137934: TN3270 Refresh Cycle Time Description
 
+{% raw %}
+
 	Article: Q137934
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0
@@ -37,3 +39,5 @@ permalink: /kb/137/Q137934/
 	
 	=============================================================================
 	
+
+{% endraw %}

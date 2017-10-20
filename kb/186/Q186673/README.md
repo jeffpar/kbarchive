@@ -6,6 +6,8 @@ permalink: /kb/186/Q186673/
 
 ## Q186673: XWEB: Error Msg: Unable to Delete Message Using OWA
 
+{% raw %}
+
 	Article: Q186673
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -63,3 +65,5 @@ permalink: /kb/186/Q186673/
 	
 	=============================================================================
 	
+
+{% endraw %}

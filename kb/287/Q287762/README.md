@@ -6,6 +6,8 @@ permalink: /kb/287/Q287762/
 
 ## Q287762: IBM SDLC Link Service Lacks Support for IRQ 7
 
+{% raw %}
+
 	Article: Q287762
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP4
@@ -122,3 +124,5 @@ permalink: /kb/287/Q287762/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194144/
 
 ## Q194144: MHS: Messages with Addresses on Multiple Lines Not Delivered
 
+{% raw %}
+
 	Article: Q194144
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -78,3 +80,5 @@ permalink: /kb/194/Q194144/
 	
 	=============================================================================
 	
+
+{% endraw %}

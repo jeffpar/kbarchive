@@ -6,6 +6,8 @@ permalink: /kb/219/Q219047/
 
 ## Q219047: Black Window or Error Message When You Play Video Clip
 
+{% raw %}
+
 	Article: Q219047
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,95
@@ -137,3 +139,5 @@ permalink: /kb/219/Q219047/
 	
 	=============================================================================
 	
+
+{% endraw %}

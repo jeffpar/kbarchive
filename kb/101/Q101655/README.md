@@ -6,6 +6,8 @@ permalink: /kb/101/Q101655/
 
 ## Q101655: Copying Directory with SFM Loses Icons for Some Files
 
+{% raw %}
+
 	Article: Q101655
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,4.0
@@ -49,3 +51,5 @@ permalink: /kb/101/Q101655/
 	
 	=============================================================================
 	
+
+{% endraw %}

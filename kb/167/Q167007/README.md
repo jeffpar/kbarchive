@@ -6,6 +6,8 @@ permalink: /kb/167/Q167007/
 
 ## Q167007: SMS: Distribution Status Failure with Machine Groups
 
+{% raw %}
+
 	Article: Q167007
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -54,3 +56,5 @@ permalink: /kb/167/Q167007/
 	
 	=============================================================================
 	
+
+{% endraw %}

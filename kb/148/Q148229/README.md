@@ -6,6 +6,8 @@ permalink: /kb/148/Q148229/
 
 ## Q148229: How to Get the Full Path from a List Box
 
+{% raw %}
+
 	Article: Q148229
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -85,3 +87,5 @@ permalink: /kb/148/Q148229/
 	
 	=============================================================================
 	
+
+{% endraw %}

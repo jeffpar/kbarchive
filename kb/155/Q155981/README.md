@@ -6,6 +6,8 @@ permalink: /kb/155/Q155981/
 
 ## Q155981: Time Updated for Daylight Savings More Than Once
 
+{% raw %}
+
 	Article: Q155981
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/155/Q155981/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/244/Q244241/
 
 ## Q244241: APM Message Never Received If Windows 95 Client Not Logged On
 
+{% raw %}
+
 	Article: Q244241
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -116,3 +118,5 @@ permalink: /kb/244/Q244241/
 	
 	=============================================================================
 	
+
+{% endraw %}

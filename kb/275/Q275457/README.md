@@ -6,6 +6,8 @@ permalink: /kb/275/Q275457/
 
 ## Q275457: IIS 5.0 Loops Infinitely When A User Must Change Their Password
 
+{% raw %}
+
 	Article: Q275457
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -85,3 +87,5 @@ permalink: /kb/275/Q275457/
 	
 	=============================================================================
 	
+
+{% endraw %}

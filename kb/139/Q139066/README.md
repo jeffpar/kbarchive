@@ -6,6 +6,8 @@ permalink: /kb/139/Q139066/
 
 ## Q139066: DOC: Incorrect Reference to TabWidth Property in Help
 
+{% raw %}
+
 	Article: Q139066
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -45,3 +47,5 @@ permalink: /kb/139/Q139066/
 	
 	=============================================================================
 	
+
+{% endraw %}

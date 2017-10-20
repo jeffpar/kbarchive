@@ -6,6 +6,8 @@ permalink: /kb/186/Q186579/
 
 ## Q186579: XCLN: Message Attachment May Be Hidden in English WinNT Client
 
+{% raw %}
+
 	Article: Q186579
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -97,3 +99,5 @@ permalink: /kb/186/Q186579/
 	
 	=============================================================================
 	
+
+{% endraw %}

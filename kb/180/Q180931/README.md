@@ -6,6 +6,8 @@ permalink: /kb/180/Q180931/
 
 ## Q180931: MicroGate SDLC Adapter Is Not Being Allowed Time to Reset DSR
 
+{% raw %}
+
 	Article: Q180931
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,4.0
@@ -80,3 +82,5 @@ permalink: /kb/180/Q180931/
 	
 	=============================================================================
 	
+
+{% endraw %}

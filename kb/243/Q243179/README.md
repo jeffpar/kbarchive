@@ -6,6 +6,8 @@ permalink: /kb/243/Q243179/
 
 ## Q243179: SMS: Sinvproc Log Error Message: Delete Zero Length File Failed
 
+{% raw %}
+
 	Article: Q243179
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -104,3 +106,5 @@ permalink: /kb/243/Q243179/
 	
 	=============================================================================
 	
+
+{% endraw %}

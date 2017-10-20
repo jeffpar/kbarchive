@@ -6,6 +6,8 @@ permalink: /kb/125/Q125971/
 
 ## Q125971: INSIDE VISUAL C++ VERSION 1.5 Corrections and Comments
 
+{% raw %}
+
 	Article: Q125971
 	Product(s): Microsoft Press
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/125/Q125971/
 	
 	=============================================================================
 	
+
+{% endraw %}

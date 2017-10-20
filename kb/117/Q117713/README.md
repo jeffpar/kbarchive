@@ -6,6 +6,8 @@ permalink: /kb/117/Q117713/
 
 ## Q117713: PC Win: Files Used with Regenerate Command
 
+{% raw %}
+
 	Article: Q117713
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/117/Q117713/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/278/Q278085/
 
 ## Q278085: HOWTO: Retrieve Word Document Information from Visual FoxPro
 
+{% raw %}
+
 	Article: Q278085
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -101,3 +103,5 @@ permalink: /kb/278/Q278085/
 	
 	=============================================================================
 	
+
+{% endraw %}

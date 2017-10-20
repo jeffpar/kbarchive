@@ -6,6 +6,8 @@ permalink: /kb/045/Q45906/
 
 ## Q45906: No Extended ASCII in SCREEN 4 on Olivetti/AT&amp;T 6300
 
+{% raw %}
+
 	Article: Q45906
 	Product(s): See article
 	Version(s): 4.00b 4.50
@@ -31,3 +33,5 @@ permalink: /kb/045/Q45906/
 	FOR i%=128 TO 255
 	   PRINT CHR$(i%)
 	NEXT i%
+
+{% endraw %}

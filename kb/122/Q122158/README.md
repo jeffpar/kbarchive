@@ -6,6 +6,8 @@ permalink: /kb/122/Q122158/
 
 ## Q122158: Configuring Sound in Visual C++ Development Environment
 
+{% raw %}
+
 	Article: Q122158
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,4.0
@@ -143,3 +145,5 @@ permalink: /kb/122/Q122158/
 	
 	=============================================================================
 	
+
+{% endraw %}

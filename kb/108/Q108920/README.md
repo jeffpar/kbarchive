@@ -6,6 +6,8 @@ permalink: /kb/108/Q108920/
 
 ## Q108920: Stopping System Error Messages From Appearing on Desktop
 
+{% raw %}
+
 	Article: Q108920
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -48,3 +50,5 @@ permalink: /kb/108/Q108920/
 	
 	=============================================================================
 	
+
+{% endraw %}

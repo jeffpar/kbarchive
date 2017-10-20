@@ -6,6 +6,8 @@ permalink: /kb/095/Q95697/
 
 ## Q95697: OTN Installation Fails Using Madge Token Ring Adapter
 
+{% raw %}
+
 	Article: Q95697
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/095/Q95697/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156175/
 
 ## Q156175: PRB: Cannot Advance in Setup Wizard Step 4
 
+{% raw %}
+
 	Article: Q156175
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -67,3 +69,5 @@ permalink: /kb/156/Q156175/
 	
 	=============================================================================
 	
+
+{% endraw %}

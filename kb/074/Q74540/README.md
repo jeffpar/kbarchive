@@ -6,6 +6,8 @@ permalink: /kb/074/Q74540/
 
 ## Q74540: Windows Versions 3.0, 3.0a Share Directory Files
 
+{% raw %}
+
 	Article: Q74540
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.0,3.0a
@@ -337,3 +339,5 @@ permalink: /kb/074/Q74540/
 	
 	=============================================================================
 	
+
+{% endraw %}

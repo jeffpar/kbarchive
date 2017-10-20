@@ -6,6 +6,8 @@ permalink: /kb/117/Q117321/
 
 ## Q117321: PRB: CodeView Hangs When Debugging DOS-Extended Application
 
+{% raw %}
+
 	Article: Q117321
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/117/Q117321/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/108/Q108791/
 
 ## Q108791: Video for Windows 1.1 Samples Disk (3.5 Inch, 1.44 MB)
 
+{% raw %}
+
 	Article: Q108791
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:1.1
@@ -37,3 +39,5 @@ permalink: /kb/108/Q108791/
 	
 	=============================================================================
 	
+
+{% endraw %}

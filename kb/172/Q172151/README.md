@@ -6,6 +6,8 @@ permalink: /kb/172/Q172151/
 
 ## Q172151: SAM Failed to Start the TCP/IP or SPX/IPX Listening Thread
 
+{% raw %}
+
 	Article: Q172151
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -81,3 +83,5 @@ permalink: /kb/172/Q172151/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156326/
 
 ## Q156326: No Network Access with DEC Network Adapter
 
+{% raw %}
+
 	Article: Q156326
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/156/Q156326/
 	
 	=============================================================================
 	
+
+{% endraw %}

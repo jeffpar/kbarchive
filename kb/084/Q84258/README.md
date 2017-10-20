@@ -6,6 +6,8 @@ permalink: /kb/084/Q84258/
 
 ## Q84258: Network Drive Icons Do Not Appear in File Manager
 
+{% raw %}
+
 	Article: Q84258
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -38,3 +40,5 @@ permalink: /kb/084/Q84258/
 	
 	=============================================================================
 	
+
+{% endraw %}

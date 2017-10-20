@@ -6,6 +6,8 @@ permalink: /kb/130/Q130551/
 
 ## Q130551: FIX: C2974 When Explicitly Call Class Template('s) Destructor
 
+{% raw %}
+
 	Article: Q130551
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1
@@ -101,3 +103,5 @@ permalink: /kb/130/Q130551/
 	
 	=============================================================================
 	
+
+{% endraw %}

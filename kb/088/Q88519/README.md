@@ -6,6 +6,8 @@ permalink: /kb/088/Q88519/
 
 ## Q88519: Running Golf with a 256-Color Video Driver Is Faster
 
+{% raw %}
+
 	Article: Q88519
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/088/Q88519/
 	
 	=============================================================================
 	
+
+{% endraw %}

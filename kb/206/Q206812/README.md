@@ -6,6 +6,8 @@ permalink: /kb/206/Q206812/
 
 ## Q206812: SMS: Remote Control Component Is Not Available
 
+{% raw %}
+
 	Article: Q206812
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -88,3 +90,5 @@ permalink: /kb/206/Q206812/
 	
 	=============================================================================
 	
+
+{% endraw %}

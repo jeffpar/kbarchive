@@ -6,6 +6,8 @@ permalink: /kb/198/Q198861/
 
 ## Q198861: XFOR:JPN cc:Mail DB8 PO w/Problem Characters Can Crash the NTVDM
 
+{% raw %}
+
 	Article: Q198861
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -67,3 +69,5 @@ permalink: /kb/198/Q198861/
 	
 	=============================================================================
 	
+
+{% endraw %}

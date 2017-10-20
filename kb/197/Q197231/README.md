@@ -6,6 +6,8 @@ permalink: /kb/197/Q197231/
 
 ## Q197231: XFOR: Notes Connector Does Not Support &quot;Flags&quot; in Message
 
+{% raw %}
+
 	Article: Q197231
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -55,3 +57,5 @@ permalink: /kb/197/Q197231/
 	
 	=============================================================================
 	
+
+{% endraw %}

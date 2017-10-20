@@ -6,6 +6,8 @@ permalink: /kb/182/Q182303/
 
 ## Q182303: Twinax Connections Should Be Restricted To Secondary DLC Role
 
+{% raw %}
+
 	Article: Q182303
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP3,4.0
@@ -56,3 +58,5 @@ permalink: /kb/182/Q182303/
 	
 	=============================================================================
 	
+
+{% endraw %}

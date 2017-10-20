@@ -6,6 +6,8 @@ permalink: /kb/171/Q171348/
 
 ## Q171348: PRB: TabStrip Control is Always on Top During Runtime
 
+{% raw %}
+
 	Article: Q171348
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -146,3 +148,5 @@ permalink: /kb/171/Q171348/
 	
 	=============================================================================
 	
+
+{% endraw %}

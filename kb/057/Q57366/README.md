@@ -6,6 +6,8 @@ permalink: /kb/057/Q57366/
 
 ## Q57366: DateSerial# Accepts Values Outside Range for Arguments
 
+{% raw %}
+
 	Article: Q57366
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -72,3 +74,5 @@ permalink: /kb/057/Q57366/
 	   theDate# = DateSerial#(2078, 12, 32)  ->  January   1, 2079
 	   theDate# = DateSerial#(2078, 13,  1)  ->  January   1, 2079
 	   theDate# = DateSerial#(1753,  0, 31)  ->  December 31, 1752
+
+{% endraw %}

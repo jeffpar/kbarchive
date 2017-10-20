@@ -6,6 +6,8 @@ permalink: /kb/158/Q158694/
 
 ## Q158694: XFOR: Dir-Sync: Map Template Info Between MSMail &amp; Exchange
 
+{% raw %}
+
 	Article: Q158694
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/158/Q158694/
 	
 	=============================================================================
 	
+
+{% endraw %}

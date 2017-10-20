@@ -6,6 +6,8 @@ permalink: /kb/062/Q62375/
 
 ## Q62375: Fatal /nologo and /e Switch Interaction
 
+{% raw %}
+
 	Article: Q62375
 	Product(s): See article
 	Version(s): 1.20   | 1.20
@@ -40,3 +42,5 @@ permalink: /kb/062/Q62375/
 	Microsoft has confirmed this to be a problem with LINK version 1.20.
 	We are researching this problem and will post new information here as
 	it becomes available.
+
+{% endraw %}

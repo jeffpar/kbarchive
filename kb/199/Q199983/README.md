@@ -6,6 +6,8 @@ permalink: /kb/199/Q199983/
 
 ## Q199983: SMS: Incorrect Mouse Cursor May Appear During Remote Control
 
+{% raw %}
+
 	Article: Q199983
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -49,3 +51,5 @@ permalink: /kb/199/Q199983/
 	
 	=============================================================================
 	
+
+{% endraw %}

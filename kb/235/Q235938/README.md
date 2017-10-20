@@ -6,6 +6,8 @@ permalink: /kb/235/Q235938/
 
 ## Q235938: FIX: MSMQ-MQSeries Bridge Limited to10 Queue Manager Connections
 
+{% raw %}
+
 	Article: Q235938
 	Product(s): Microsoft SNA Server
 	Version(s): ; WINDOWS:4.0
@@ -61,3 +63,5 @@ permalink: /kb/235/Q235938/
 	
 	=============================================================================
 	
+
+{% endraw %}

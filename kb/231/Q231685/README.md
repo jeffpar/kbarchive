@@ -6,6 +6,8 @@ permalink: /kb/231/Q231685/
 
 ## Q231685: XCON: Corrupted Message in MTA DB Logs DB Server Errors
 
+{% raw %}
+
 	Article: Q231685
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -132,3 +134,5 @@ permalink: /kb/231/Q231685/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/200/Q200676/
 
 ## Q200676: HOWTO: Use the AsyncRead Method to Download Files
 
+{% raw %}
+
 	Article: Q200676
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -101,3 +103,5 @@ permalink: /kb/200/Q200676/
 	
 	=============================================================================
 	
+
+{% endraw %}

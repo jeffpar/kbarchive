@@ -6,6 +6,8 @@ permalink: /kb/119/Q119254/
 
 ## Q119254: PC Win: Converting Local Private Folders Doesn't Delete .FLD
 
+{% raw %}
+
 	Article: Q119254
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -60,3 +62,5 @@ permalink: /kb/119/Q119254/
 	
 	=============================================================================
 	
+
+{% endraw %}

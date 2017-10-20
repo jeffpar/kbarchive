@@ -6,6 +6,8 @@ permalink: /kb/089/Q89333/
 
 ## Q89333: Minimum System Requirements for Windows for Workgroups
 
+{% raw %}
+
 	Article: Q89333
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/089/Q89333/
 	
 	=============================================================================
 	
+
+{% endraw %}

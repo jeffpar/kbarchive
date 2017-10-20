@@ -6,6 +6,8 @@ permalink: /kb/138/Q138926/
 
 ## Q138926: Print Jobs Not Clearing for Compaq Pagemarq Printers
 
+{% raw %}
+
 	Article: Q138926
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -48,3 +50,5 @@ permalink: /kb/138/Q138926/
 	
 	=============================================================================
 	
+
+{% endraw %}

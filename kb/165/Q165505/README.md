@@ -6,6 +6,8 @@ permalink: /kb/165/Q165505/
 
 ## Q165505: XFOR: How to View or Delete Messages in MTS-IN and MTS-OUT Queue
 
+{% raw %}
+
 	Article: Q165505
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -159,3 +161,5 @@ permalink: /kb/165/Q165505/
 	
 	=============================================================================
 	
+
+{% endraw %}

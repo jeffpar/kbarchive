@@ -6,6 +6,8 @@ permalink: /kb/200/Q200514/
 
 ## Q200514: Err Msg: Server Failed to Load Application , 80004005
 
+{% raw %}
+
 	Article: Q200514
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -70,3 +72,5 @@ permalink: /kb/200/Q200514/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/081/Q81685/
 
 ## Q81685: Windows 3.1: KBFLOW.EXE Should Be Loaded from Virtual Machine
 
+{% raw %}
+
 	Article: Q81685
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/081/Q81685/
 	
 	=============================================================================
 	
+
+{% endraw %}

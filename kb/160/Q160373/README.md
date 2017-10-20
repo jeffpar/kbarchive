@@ -6,6 +6,8 @@ permalink: /kb/160/Q160373/
 
 ## Q160373: Adaptec Aic78xx Does Not Issue Multiple Tagged Commands
 
+{% raw %}
+
 	Article: Q160373
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -50,3 +52,5 @@ permalink: /kb/160/Q160373/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150384/
 
 ## Q150384: Shared File Access Delayed If File Is Open
 
+{% raw %}
+
 	Article: Q150384
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -110,3 +112,5 @@ permalink: /kb/150/Q150384/
 	
 	=============================================================================
 	
+
+{% endraw %}

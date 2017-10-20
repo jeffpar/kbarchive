@@ -6,6 +6,8 @@ permalink: /kb/170/Q170670/
 
 ## Q170670: Renaming LU Pools is not a Dynamic Change
 
+{% raw %}
+
 	Article: Q170670
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,4.0
@@ -44,3 +46,5 @@ permalink: /kb/170/Q170670/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/286/Q286765/
 
 ## Q286765: INFO: Two-Phase Commit is Not Supported over TCP/IP for DB2OLEDB
 
+{% raw %}
+
 	Article: Q286765
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/286/Q286765/
 	
 	=============================================================================
 	
+
+{% endraw %}

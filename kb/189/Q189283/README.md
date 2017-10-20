@@ -6,6 +6,8 @@ permalink: /kb/189/Q189283/
 
 ## Q189283: No More Than About 570 Reservations Visible in a DHCP Scope
 
+{% raw %}
+
 	Article: Q189283
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/189/Q189283/
 	
 	=============================================================================
 	
+
+{% endraw %}

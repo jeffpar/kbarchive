@@ -6,6 +6,8 @@ permalink: /kb/069/Q69897/
 
 ## Q69897: Using Variable Argument Lists in DLL Functions
 
+{% raw %}
+
 	Article: Q69897
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -117,3 +119,5 @@ permalink: /kb/069/Q69897/
 	
 	=============================================================================
 	
+
+{% endraw %}

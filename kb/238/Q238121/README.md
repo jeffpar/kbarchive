@@ -6,6 +6,8 @@ permalink: /kb/238/Q238121/
 
 ## Q238121: Multimedia: How to Install and Use the Microsoft Media Test Tool
 
+{% raw %}
+
 	Article: Q238121
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0; :
@@ -82,3 +84,5 @@ permalink: /kb/238/Q238121/
 	
 	=============================================================================
 	
+
+{% endraw %}

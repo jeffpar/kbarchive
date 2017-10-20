@@ -6,6 +6,8 @@ permalink: /kb/193/Q193292/
 
 ## Q193292: BUG: Commandbutton.SetFocus() in Form Init Sets Default = .T.
 
+{% raw %}
+
 	Article: Q193292
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -128,3 +130,5 @@ permalink: /kb/193/Q193292/
 	
 	=============================================================================
 	
+
+{% endraw %}

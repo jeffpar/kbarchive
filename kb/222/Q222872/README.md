@@ -6,6 +6,8 @@ permalink: /kb/222/Q222872/
 
 ## Q222872: RAS Counters Missing in Performance Monitor
 
+{% raw %}
+
 	Article: Q222872
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -122,3 +124,5 @@ permalink: /kb/222/Q222872/
 	
 	=============================================================================
 	
+
+{% endraw %}

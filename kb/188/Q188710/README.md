@@ -6,6 +6,8 @@ permalink: /kb/188/Q188710/
 
 ## Q188710: File Locking Behavior in FPNW
 
+{% raw %}
+
 	Article: Q188710
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -184,3 +186,5 @@ permalink: /kb/188/Q188710/
 	
 	=============================================================================
 	
+
+{% endraw %}

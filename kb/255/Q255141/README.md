@@ -6,6 +6,8 @@ permalink: /kb/255/Q255141/
 
 ## Q255141: MP2001: Geographic Information Is Needed to Import or Link Data
 
+{% raw %}
+
 	Article: Q255141
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/255/Q255141/
 	
 	=============================================================================
 	
+
+{% endraw %}

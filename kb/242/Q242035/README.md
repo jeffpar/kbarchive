@@ -6,6 +6,8 @@ permalink: /kb/242/Q242035/
 
 ## Q242035: Printer Pooling Improvements in Windows NT 4.0 Service Pack 6
 
+{% raw %}
+
 	Article: Q242035
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP6
@@ -182,3 +184,5 @@ permalink: /kb/242/Q242035/
 	
 	=============================================================================
 	
+
+{% endraw %}

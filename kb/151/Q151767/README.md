@@ -6,6 +6,8 @@ permalink: /kb/151/Q151767/
 
 ## Q151767: BUG: 2.x @ SAY Report May Print Differently in Visual FoxPro
 
+{% raw %}
+
 	Article: Q151767
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -73,3 +75,5 @@ permalink: /kb/151/Q151767/
 	
 	=============================================================================
 	
+
+{% endraw %}

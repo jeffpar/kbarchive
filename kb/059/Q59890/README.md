@@ -6,6 +6,8 @@ permalink: /kb/059/Q59890/
 
 ## Q59890: Minimum Extended Memory (384K) Causes CV 3.00 to Use Extra RAM
 
+{% raw %}
+
 	Article: Q59890
 	Product(s): See article
 	Version(s): 3.00
@@ -59,3 +61,5 @@ permalink: /kb/059/Q59890/
 	overlays, or you can remove (or comment out) the line in your
 	CONFIG.SYS file that loads the extended memory driver (HIMEM.SYS) and
 	reboot.
+
+{% endraw %}

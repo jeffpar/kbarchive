@@ -6,6 +6,8 @@ permalink: /kb/304/Q304637/
 
 ## Q304637: IIS: Problems Using SSL with AuthentiX ISAPI Filter
 
+{% raw %}
+
 	Article: Q304637
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0
@@ -77,3 +79,5 @@ permalink: /kb/304/Q304637/
 	
 	=============================================================================
 	
+
+{% endraw %}

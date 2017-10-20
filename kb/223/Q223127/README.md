@@ -6,6 +6,8 @@ permalink: /kb/223/Q223127/
 
 ## Q223127: FIX: PDW Reports Out-of-Date Dependency Info
 
+{% raw %}
+
 	Article: Q223127
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -81,3 +83,5 @@ permalink: /kb/223/Q223127/
 	
 	=============================================================================
 	
+
+{% endraw %}

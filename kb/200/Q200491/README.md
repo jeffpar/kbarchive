@@ -6,6 +6,8 @@ permalink: /kb/200/Q200491/
 
 ## Q200491: BUG: Incorrect Coordinates Passed to OLEDragDrop/OLEDragOver
 
+{% raw %}
+
 	Article: Q200491
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -84,11 +86,11 @@ permalink: /kb/200/Q200491/
 	the OLEDragDrop event handler, OnOLEDragDropTreectrl1(), of the dialog box:
 	
 	     BEGIN_EVENTSINK_MAP(CTestDlg, CDialog)
-	        //{ {AFX_EVENTSINK_MAP(CTestDlg)
+	        //{{AFX_EVENTSINK_MAP(CTestDlg)
 	        ON_EVENT(CTestDlg, IDC_TREECTRL1, 1555 /* OLEDragDrop */,
 	           OnOLEDragDropTreectrl1,
 	           VTS_PDISPATCH VTS_PI4 VTS_PI2 VTS_PI2 VTS_PR4 VTS_PR4)
-	        //} }AFX_EVENTSINK_MAP
+	        //}}AFX_EVENTSINK_MAP
 	     END_EVENTSINK_MAP()
 	
 	     void CTestDlg::OnOLEDragDropTreectrl1(
@@ -194,3 +196,5 @@ permalink: /kb/200/Q200491/
 	
 	=============================================================================
 	
+
+{% endraw %}

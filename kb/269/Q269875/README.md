@@ -6,6 +6,8 @@ permalink: /kb/269/Q269875/
 
 ## Q269875: SVCACLS.EXE Is Not Included With The Windows 2000 Resource Kits
 
+{% raw %}
+
 	Article: Q269875
 	Product(s): Microsoft Press
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/269/Q269875/
 	
 	=============================================================================
 	
+
+{% endraw %}

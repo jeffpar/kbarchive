@@ -6,6 +6,8 @@ permalink: /kb/152/Q152302/
 
 ## Q152302: Files Saved to NetWare Server via GSNW Don't Retain Case
 
+{% raw %}
+
 	Article: Q152302
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -45,3 +47,5 @@ permalink: /kb/152/Q152302/
 	
 	=============================================================================
 	
+
+{% endraw %}

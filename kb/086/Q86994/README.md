@@ -6,6 +6,8 @@ permalink: /kb/086/Q86994/
 
 ## Q86994: Updated ATI CRYSTAL Fonts Driver Required for Windows 3.1
 
+{% raw %}
+
 	Article: Q86994
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/086/Q86994/
 	
 	=============================================================================
 	
+
+{% endraw %}

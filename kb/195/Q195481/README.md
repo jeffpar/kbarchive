@@ -6,6 +6,8 @@ permalink: /kb/195/Q195481/
 
 ## Q195481: WD97: Excel Object Range Name Changes Format After Paste Link
 
+{% raw %}
+
 	Article: Q195481
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -59,3 +61,5 @@ permalink: /kb/195/Q195481/
 	
 	=============================================================================
 	
+
+{% endraw %}

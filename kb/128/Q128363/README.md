@@ -6,6 +6,8 @@ permalink: /kb/128/Q128363/
 
 ## Q128363: Aztech Nova Sound Board Support in Windows NT
 
+{% raw %}
+
 	Article: Q128363
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/128/Q128363/
 	
 	=============================================================================
 	
+
+{% endraw %}

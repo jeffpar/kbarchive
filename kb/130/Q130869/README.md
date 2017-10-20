@@ -6,6 +6,8 @@ permalink: /kb/130/Q130869/
 
 ## Q130869: HOWTO: Avoid Error LNK2001 Unresolved External Using DEFINE_GUID
 
+{% raw %}
+
 	Article: Q130869
 	Product(s): Microsoft C Compiler
 	Version(s): WinNT:2.0,2.1,4.0,4.1,4.2,5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/130/Q130869/
 	
 	=============================================================================
 	
+
+{% endraw %}

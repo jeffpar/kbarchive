@@ -6,6 +6,8 @@ permalink: /kb/082/Q82287/
 
 ## Q82287: FIX: MASM 6.0 Does Not Align on Page Boundary
 
+{% raw %}
+
 	Article: Q82287
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b
@@ -121,3 +123,5 @@ permalink: /kb/082/Q82287/
 	
 	=============================================================================
 	
+
+{% endraw %}

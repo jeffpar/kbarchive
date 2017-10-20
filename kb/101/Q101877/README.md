@@ -6,6 +6,8 @@ permalink: /kb/101/Q101877/
 
 ## Q101877: GRiD 2260 PEN Pointing Device is Disabled in Virtual Machine
 
+{% raw %}
+
 	Article: Q101877
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -53,3 +55,5 @@ permalink: /kb/101/Q101877/
 	
 	=============================================================================
 	
+
+{% endraw %}

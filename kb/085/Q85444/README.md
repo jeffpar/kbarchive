@@ -6,6 +6,8 @@ permalink: /kb/085/Q85444/
 
 ## Q85444: Windows and the Intel Inboard 386/AT
 
+{% raw %}
+
 	Article: Q85444
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -124,3 +126,5 @@ permalink: /kb/085/Q85444/
 	
 	=============================================================================
 	
+
+{% endraw %}

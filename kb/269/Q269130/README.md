@@ -6,6 +6,8 @@ permalink: /kb/269/Q269130/
 
 ## Q269130: Migrating NIS NETGROUP File to Active Directory May Not Work
 
+{% raw %}
+
 	Article: Q269130
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -71,3 +73,5 @@ permalink: /kb/269/Q269130/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139679/
 
 ## Q139679: PRB: ImageEdit Icon Not Created with Workstation Installation
 
+{% raw %}
+
 	Article: Q139679
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -70,3 +72,5 @@ permalink: /kb/139/Q139679/
 	
 	=============================================================================
 	
+
+{% endraw %}

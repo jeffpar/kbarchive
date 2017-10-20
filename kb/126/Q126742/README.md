@@ -6,6 +6,8 @@ permalink: /kb/126/Q126742/
 
 ## Q126742: VB3 How to Size a Picture Box Dynamically to Fit an AVI Image
 
+{% raw %}
+
 	Article: Q126742
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -129,3 +131,5 @@ permalink: /kb/126/Q126742/
 	
 	=============================================================================
 	
+
+{% endraw %}

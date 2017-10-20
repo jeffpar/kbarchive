@@ -6,6 +6,8 @@ permalink: /kb/172/Q172379/
 
 ## Q172379: WD97: Unexpected Results When Printing in Master Document View
 
+{% raw %}
+
 	Article: Q172379
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -81,3 +83,5 @@ permalink: /kb/172/Q172379/
 	
 	=============================================================================
 	
+
+{% endraw %}

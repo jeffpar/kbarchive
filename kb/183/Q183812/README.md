@@ -6,6 +6,8 @@ permalink: /kb/183/Q183812/
 
 ## Q183812: Problems When a Connection over an ISDN Bridge Is Not Closed
 
+{% raw %}
+
 	Article: Q183812
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/183/Q183812/
 	
 	=============================================================================
 	
+
+{% endraw %}

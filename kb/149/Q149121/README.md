@@ -6,6 +6,8 @@ permalink: /kb/149/Q149121/
 
 ## Q149121: XCON: Gateway Address Routing Table Information
 
+{% raw %}
+
 	Article: Q149121
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -135,3 +137,5 @@ permalink: /kb/149/Q149121/
 	
 	=============================================================================
 	
+
+{% endraw %}

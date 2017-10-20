@@ -6,6 +6,8 @@ permalink: /kb/085/Q85542/
 
 ## Q85542: OLE: Drag and Drop from CD-ROM May Cause Error
 
+{% raw %}
+
 	Article: Q85542
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/085/Q85542/
 	
 	=============================================================================
 	
+
+{% endraw %}

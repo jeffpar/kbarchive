@@ -6,6 +6,8 @@ permalink: /kb/073/Q73663/
 
 ## Q73663: FIX: LINK May Incorrectly Generate L2049 for Resource-Only DLL
 
+{% raw %}
+
 	Article: Q73663
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:5.03,5.05,5.1,5.11; OS/2:5.03,5.05,5.1,5.11
@@ -83,3 +85,5 @@ permalink: /kb/073/Q73663/
 	
 	=============================================================================
 	
+
+{% endraw %}

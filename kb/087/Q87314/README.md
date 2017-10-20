@@ -6,6 +6,8 @@ permalink: /kb/087/Q87314/
 
 ## Q87314: TrueType Problems with PS388 PostScript Board
 
+{% raw %}
+
 	Article: Q87314
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/087/Q87314/
 	
 	=============================================================================
 	
+
+{% endraw %}

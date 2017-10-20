@@ -6,6 +6,8 @@ permalink: /kb/108/Q108650/
 
 ## Q108650: Flight Simulator 5.0 Err Msg: EMM386.EXE Exception Error #12
 
+{% raw %}
+
 	Article: Q108650
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -66,3 +68,5 @@ permalink: /kb/108/Q108650/
 	
 	=============================================================================
 	
+
+{% endraw %}

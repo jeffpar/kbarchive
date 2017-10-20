@@ -6,6 +6,8 @@ permalink: /kb/120/Q120759/
 
 ## Q120759: Cue Card/Wizard Dialog Problems After Publisher 2.0a Invoked
 
+{% raw %}
+
 	Article: Q120759
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/120/Q120759/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126344/
 
 ## Q126344: Mac RAM Doubler Suppresses Sound
 
+{% raw %}
+
 	Article: Q126344
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0; :1994 edition,1995 edition
@@ -97,3 +99,5 @@ permalink: /kb/126/Q126344/
 	
 	=============================================================================
 	
+
+{% endraw %}

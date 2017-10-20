@@ -6,6 +6,8 @@ permalink: /kb/260/Q260734/
 
 ## Q260734: StarLancer: Graphics in the Game Are Very Dark
 
+{% raw %}
+
 	Article: Q260734
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -61,3 +63,5 @@ permalink: /kb/260/Q260734/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149271/
 
 ## Q149271: PC DirSync: Explanation of DSSERVER.LOG Codes 167, 171 and 105
 
+{% raw %}
+
 	Article: Q149271
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -65,3 +67,5 @@ permalink: /kb/149/Q149271/
 	
 	=============================================================================
 	
+
+{% endraw %}

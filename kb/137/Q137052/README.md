@@ -6,6 +6,8 @@ permalink: /kb/137/Q137052/
 
 ## Q137052: Changed Interactive Setting Not Reflected in Active Slide Show
 
+{% raw %}
+
 	Article: Q137052
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -51,3 +53,5 @@ permalink: /kb/137/Q137052/
 	
 	=============================================================================
 	
+
+{% endraw %}

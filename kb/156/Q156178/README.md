@@ -6,6 +6,8 @@ permalink: /kb/156/Q156178/
 
 ## Q156178: PRB: @...GET...NAME Object References Change with Read Level
 
+{% raw %}
+
 	Article: Q156178
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -146,3 +148,5 @@ permalink: /kb/156/Q156178/
 	
 	=============================================================================
 	
+
+{% endraw %}

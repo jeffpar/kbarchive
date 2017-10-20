@@ -6,6 +6,8 @@ permalink: /kb/165/Q165385/
 
 ## Q165385: Single Signon for APPC Applications Using Privileged Proxy
 
+{% raw %}
+
 	Article: Q165385
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -137,3 +139,5 @@ permalink: /kb/165/Q165385/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141300/
 
 ## Q141300: Primary and Secondary WINS Servers in Unattended Setup
 
+{% raw %}
+
 	Article: Q141300
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -124,7 +126,7 @@ permalink: /kb/141/Q141300/
 	                   endif
 	               endif
 	               set NewValueList = +
-	        { {NameServer,$(NoTitle),$(!REG_VT_SZ),"135.135.2.8"},+
+	        {{NameServer,$(NoTitle),$(!REG_VT_SZ),"135.135.2.8"},+
 	        {NameServerBackup,$(NoTitle),$(!REG_VT_SZ),"135.135.7.1"}+
 	                                  }
 	               Shell  $(UtilityInf), AddValueList, $(WinsParamKey) , +
@@ -150,3 +152,5 @@ permalink: /kb/141/Q141300/
 	
 	=============================================================================
 	
+
+{% endraw %}

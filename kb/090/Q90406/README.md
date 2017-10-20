@@ -6,6 +6,8 @@ permalink: /kb/090/Q90406/
 
 ## Q90406: Upgrades from Windows 3.1 Inherit Persistent Connections
 
+{% raw %}
+
 	Article: Q90406
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/090/Q90406/
 	
 	=============================================================================
 	
+
+{% endraw %}

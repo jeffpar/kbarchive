@@ -6,6 +6,8 @@ permalink: /kb/270/Q270663/
 
 ## Q270663: HOWTO: Open a Secured Access Database from Visual C++
 
+{% raw %}
+
 	Article: Q270663
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -176,3 +178,5 @@ permalink: /kb/270/Q270663/
 	
 	=============================================================================
 	
+
+{% endraw %}

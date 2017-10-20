@@ -6,6 +6,8 @@ permalink: /kb/107/Q107651/
 
 ## Q107651: 32-Bit File Access Can Cause ScanDisk to Report Harmless Error
 
+{% raw %}
+
 	Article: Q107651
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): MS-DOS:6.2,6.22; WINDOWS:3.11
@@ -87,3 +89,5 @@ permalink: /kb/107/Q107651/
 	
 	=============================================================================
 	
+
+{% endraw %}

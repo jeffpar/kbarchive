@@ -6,6 +6,8 @@ permalink: /kb/135/Q135617/
 
 ## Q135617: BUG: Group Header Information Prints Incorrectly
 
+{% raw %}
+
 	Article: Q135617
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -78,3 +80,5 @@ permalink: /kb/135/Q135617/
 	
 	=============================================================================
 	
+
+{% endraw %}

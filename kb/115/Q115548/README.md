@@ -6,6 +6,8 @@ permalink: /kb/115/Q115548/
 
 ## Q115548: FAX: Err Msg: Profile Error: Incorrect or Missing Printer Path
 
+{% raw %}
+
 	Article: Q115548
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.0a
@@ -78,3 +80,5 @@ permalink: /kb/115/Q115548/
 	
 	=============================================================================
 	
+
+{% endraw %}

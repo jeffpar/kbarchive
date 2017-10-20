@@ -6,6 +6,8 @@ permalink: /kb/100/Q100363/
 
 ## Q100363: HOWTO: How to Use Network DDE
 
+{% raw %}
+
 	Article: Q100363
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -102,3 +104,5 @@ permalink: /kb/100/Q100363/
 	
 	=============================================================================
 	
+
+{% endraw %}

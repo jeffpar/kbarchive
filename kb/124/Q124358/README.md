@@ -6,6 +6,8 @@ permalink: /kb/124/Q124358/
 
 ## Q124358: RAS Server Assigns Cached IP Addresses to RAS Clients
 
+{% raw %}
+
 	Article: Q124358
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -67,3 +69,5 @@ permalink: /kb/124/Q124358/
 	
 	=============================================================================
 	
+
+{% endraw %}

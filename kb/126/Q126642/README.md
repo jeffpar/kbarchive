@@ -6,6 +6,8 @@ permalink: /kb/126/Q126642/
 
 ## Q126642: SMS: Troubleshooting Inventory Collection Problems
 
+{% raw %}
+
 	Article: Q126642
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -196,3 +198,5 @@ permalink: /kb/126/Q126642/
 	
 	=============================================================================
 	
+
+{% endraw %}

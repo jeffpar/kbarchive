@@ -6,6 +6,8 @@ permalink: /kb/174/Q174468/
 
 ## Q174468: SLI_SEND Fails To Complete, Causing Win32 SLI App To Hang
 
+{% raw %}
+
 	Article: Q174468
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -107,3 +109,5 @@ permalink: /kb/174/Q174468/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/240/Q240913/
 
 ## Q240913: XFOR: PROFS AT Command Fails When Forwarding Meeting Requests.
 
+{% raw %}
+
 	Article: Q240913
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -55,3 +57,5 @@ permalink: /kb/240/Q240913/
 	
 	=============================================================================
 	
+
+{% endraw %}

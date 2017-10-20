@@ -6,6 +6,8 @@ permalink: /kb/258/Q258586/
 
 ## Q258586: Baseball 2001: Cannot Install on Windows 2000-Based Computer
 
+{% raw %}
+
 	Article: Q258586
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -59,3 +61,5 @@ permalink: /kb/258/Q258586/
 	
 	=============================================================================
 	
+
+{% endraw %}

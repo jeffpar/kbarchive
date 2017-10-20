@@ -6,6 +6,8 @@ permalink: /kb/085/Q85620/
 
 ## Q85620: Invalid Error When Increasing Size of Permanent Swap File
 
+{% raw %}
+
 	Article: Q85620
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/085/Q85620/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187581/
 
 ## Q187581: XFOR: DBCS Attachment File Name Not Encoded If Using UUENCODE
 
+{% raw %}
+
 	Article: Q187581
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -85,3 +87,5 @@ permalink: /kb/187/Q187581/
 	
 	=============================================================================
 	
+
+{% endraw %}

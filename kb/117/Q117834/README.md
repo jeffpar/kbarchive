@@ -6,6 +6,8 @@ permalink: /kb/117/Q117834/
 
 ## Q117834: FIX: Wrong Output Library Name Used with VCNT Makefile
 
+{% raw %}
+
 	Article: Q117834
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0
@@ -73,3 +75,5 @@ permalink: /kb/117/Q117834/
 	
 	=============================================================================
 	
+
+{% endraw %}

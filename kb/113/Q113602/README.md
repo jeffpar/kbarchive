@@ -6,6 +6,8 @@ permalink: /kb/113/Q113602/
 
 ## Q113602: Less Conventional Memory After Installing MS-DOS 6.21
 
+{% raw %}
+
 	Article: Q113602
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.21,6.22
@@ -63,3 +65,5 @@ permalink: /kb/113/Q113602/
 	
 	=============================================================================
 	
+
+{% endraw %}

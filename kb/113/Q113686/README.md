@@ -6,6 +6,8 @@ permalink: /kb/113/Q113686/
 
 ## Q113686: FIX: Lost MouseDown Event with Command Button &amp; Check Box
 
+{% raw %}
+
 	Article: Q113686
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,3.0
@@ -79,3 +81,5 @@ permalink: /kb/113/Q113686/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169682/
 
 ## Q169682: XFOR: MS Mail Connector Interchange Rejects Outlook Msgs
 
+{% raw %}
+
 	Article: Q169682
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -137,3 +139,5 @@ permalink: /kb/169/Q169682/
 	
 	=============================================================================
 	
+
+{% endraw %}

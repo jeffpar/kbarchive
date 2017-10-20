@@ -6,6 +6,8 @@ permalink: /kb/068/Q68873/
 
 ## Q68873: FIX: Warning A4057 When Using Local Variables
 
+{% raw %}
+
 	Article: Q68873
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -68,3 +70,5 @@ permalink: /kb/068/Q68873/
 	
 	=============================================================================
 	
+
+{% endraw %}

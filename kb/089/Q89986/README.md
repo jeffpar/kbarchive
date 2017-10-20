@@ -6,6 +6,8 @@ permalink: /kb/089/Q89986/
 
 ## Q89986: Windows Sound System Supports Audio Written for Windows 3.1
 
+{% raw %}
+
 	Article: Q89986
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/089/Q89986/
 	
 	=============================================================================
 	
+
+{% endraw %}

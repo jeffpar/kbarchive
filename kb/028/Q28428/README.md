@@ -6,6 +6,8 @@ permalink: /kb/028/Q28428/
 
 ## Q28428: Menu Problems with Leading Edge D2 in 43-Line Mode
 
+{% raw %}
+
 	Article: Q28428
 	Product(s): See article
 	Version(s): 1.0
@@ -24,3 +26,5 @@ permalink: /kb/028/Q28428/
 	display adapter to the open position to disable the auto-mode
 	selection feature (this process produces the same effect as the EGA
 	EGA command).
+
+{% endraw %}

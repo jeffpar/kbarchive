@@ -6,6 +6,8 @@ permalink: /kb/193/Q193499/
 
 ## Q193499: Multiple RRAS Client Disconnects Cause Increased CPU Usage
 
+{% raw %}
+
 	Article: Q193499
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -74,3 +76,5 @@ permalink: /kb/193/Q193499/
 	
 	=============================================================================
 	
+
+{% endraw %}

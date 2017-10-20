@@ -6,6 +6,8 @@ permalink: /kb/250/Q250705/
 
 ## Q250705: No Internet Explorer Installation When Shdocvw.dll in Windows
 
+{% raw %}
+
 	Article: Q250705
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:
@@ -50,3 +52,5 @@ permalink: /kb/250/Q250705/
 	
 	=============================================================================
 	
+
+{% endraw %}

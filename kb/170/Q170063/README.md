@@ -6,6 +6,8 @@ permalink: /kb/170/Q170063/
 
 ## Q170063: RASMAN Fails with 0xC0000005 - Access Violation
 
+{% raw %}
+
 	Article: Q170063
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -62,3 +64,5 @@ permalink: /kb/170/Q170063/
 	
 	=============================================================================
 	
+
+{% endraw %}

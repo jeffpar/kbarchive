@@ -6,6 +6,8 @@ permalink: /kb/284/Q284068/
 
 ## Q284068: CFS2: Training Missions Documentation Is Incorrect
 
+{% raw %}
+
 	Article: Q284068
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -51,3 +53,5 @@ permalink: /kb/284/Q284068/
 	
 	=============================================================================
 	
+
+{% endraw %}

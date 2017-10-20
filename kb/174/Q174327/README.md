@@ -6,6 +6,8 @@ permalink: /kb/174/Q174327/
 
 ## Q174327: DLL Initialization Failure May Occur When Loading Crypt32.dll
 
+{% raw %}
+
 	Article: Q174327
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP3
@@ -67,3 +69,5 @@ permalink: /kb/174/Q174327/
 	
 	=============================================================================
 	
+
+{% endraw %}

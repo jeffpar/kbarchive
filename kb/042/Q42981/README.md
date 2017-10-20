@@ -6,6 +6,8 @@ permalink: /kb/042/Q42981/
 
 ## Q42981: Missing Semicolon in GRAPHIC.C
 
+{% raw %}
+
 	Article: Q42981
 	Product(s): See article
 	Version(s): 2.00
@@ -37,3 +39,5 @@ permalink: /kb/042/Q42981/
 	This error will occur on the prototype to print_menu as follows:
 	
 	   void print_menu( void );
+
+{% endraw %}

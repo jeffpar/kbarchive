@@ -6,6 +6,8 @@ permalink: /kb/126/Q126056/
 
 ## Q126056: UNCONF: Microsoft Setup: Stack Fault Error in USER.EXE
 
+{% raw %}
+
 	Article: Q126056
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,3.1,3.11,4.0,4.2,6.0a; :1994 edition,1995 edition
@@ -109,3 +111,5 @@ permalink: /kb/126/Q126056/
 	
 	=============================================================================
 	
+
+{% endraw %}

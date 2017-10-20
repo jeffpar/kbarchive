@@ -6,6 +6,8 @@ permalink: /kb/171/Q171703/
 
 ## Q171703: Kids Plus!: Resetting Protect It! and Internet Ratings Passwords
 
+{% raw %}
+
 	Article: Q171703
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.00
@@ -76,3 +78,5 @@ permalink: /kb/171/Q171703/
 	
 	=============================================================================
 	
+
+{% endraw %}

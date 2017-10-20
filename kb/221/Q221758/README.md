@@ -6,6 +6,8 @@ permalink: /kb/221/Q221758/
 
 ## Q221758: XADM: Exchange 4.0/5.0 Administrator Help File Is Incorrect
 
+{% raw %}
+
 	Article: Q221758
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -49,3 +51,5 @@ permalink: /kb/221/Q221758/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/303/Q303124/
 
 ## Q303124: Can't Type In Body Of E-mail Window in MSN Explorer 6.1
 
+{% raw %}
+
 	Article: Q303124
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -80,3 +82,5 @@ permalink: /kb/303/Q303124/
 	
 	=============================================================================
 	
+
+{% endraw %}

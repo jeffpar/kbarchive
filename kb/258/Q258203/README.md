@@ -6,6 +6,8 @@ permalink: /kb/258/Q258203/
 
 ## Q258203: XFOR: How to Configure Exchange to Share SMTP Domain Name Space
 
+{% raw %}
+
 	Article: Q258203
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -79,3 +81,5 @@ permalink: /kb/258/Q258203/
 	
 	=============================================================================
 	
+
+{% endraw %}

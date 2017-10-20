@@ -6,6 +6,8 @@ permalink: /kb/247/Q247645/
 
 ## Q247645: Flight Simulator 2000: Sounds Are Fuzzy or Distorted
 
+{% raw %}
+
 	Article: Q247645
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -69,3 +71,5 @@ permalink: /kb/247/Q247645/
 	
 	=============================================================================
 	
+
+{% endraw %}

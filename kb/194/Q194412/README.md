@@ -6,6 +6,8 @@ permalink: /kb/194/Q194412/
 
 ## Q194412: PROJUPDG.EXE VB 6.0 ActiveX Control Upgrade Utility
 
+{% raw %}
+
 	Article: Q194412
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -115,3 +117,5 @@ permalink: /kb/194/Q194412/
 	
 	=============================================================================
 	
+
+{% endraw %}

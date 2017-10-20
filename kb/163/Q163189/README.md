@@ -6,6 +6,8 @@ permalink: /kb/163/Q163189/
 
 ## Q163189: WD97: Text in Shaded Table Missing Printing to NT Servers
 
+{% raw %}
+
 	Article: Q163189
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -87,3 +89,5 @@ permalink: /kb/163/Q163189/
 	
 	=============================================================================
 	
+
+{% endraw %}

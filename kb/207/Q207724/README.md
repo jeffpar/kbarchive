@@ -6,6 +6,8 @@ permalink: /kb/207/Q207724/
 
 ## Q207724: Urban Assault: Game Hangs When You Load Last Saved Game
 
+{% raw %}
+
 	Article: Q207724
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -114,3 +116,5 @@ permalink: /kb/207/Q207724/
 	
 	=============================================================================
 	
+
+{% endraw %}

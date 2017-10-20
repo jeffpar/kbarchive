@@ -6,6 +6,8 @@ permalink: /kb/037/Q37001/
 
 ## Q37001: Warning C4077 Unknown check_stack Option
 
+{% raw %}
+
 	Article: Q37001
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -55,3 +57,5 @@ permalink: /kb/037/Q37001/
 	
 	This information was taken from Page 98 of the C user's guide and
 	Page 169 of the QuickC programmer's guide.
+
+{% endraw %}

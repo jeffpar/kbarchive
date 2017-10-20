@@ -6,6 +6,8 @@ permalink: /kb/165/Q165650/
 
 ## Q165650: Command Line Configuration Fixes for SNA Server 3.0
 
+{% raw %}
+
 	Article: Q165650
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -167,3 +169,5 @@ permalink: /kb/165/Q165650/
 	
 	=============================================================================
 	
+
+{% endraw %}

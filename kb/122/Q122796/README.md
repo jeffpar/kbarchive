@@ -6,6 +6,8 @@ permalink: /kb/122/Q122796/
 
 ## Q122796: Setup Problems with Gateway 2000 P5-60 and Memory Modules
 
+{% raw %}
+
 	Article: Q122796
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/122/Q122796/
 	
 	=============================================================================
 	
+
+{% endraw %}

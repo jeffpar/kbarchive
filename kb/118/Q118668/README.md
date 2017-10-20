@@ -6,6 +6,8 @@ permalink: /kb/118/Q118668/
 
 ## Q118668: PPT7: Printing Slides or Notes Pages in Reverse Order
 
+{% raw %}
+
 	Article: Q118668
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:2.0,3.0,4.0; WINDOWS:2.0,3.0,4.0,4.0a,4.0c,7.0
@@ -55,3 +57,5 @@ permalink: /kb/118/Q118668/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/043/Q43393/
 
 ## Q43393: No Explicit Limit on Length of Literal Strings In QuickC 2.00
 
+{% raw %}
+
 	Article: Q43393
 	Product(s): See article
 	Version(s): 2.00
@@ -38,3 +40,5 @@ permalink: /kb/043/Q43393/
 	This means that the compiler ran out of room in the near heap for
 	storing the string literal. In this case, store the string literal in
 	a file and read it into a character array at run time.
+
+{% endraw %}

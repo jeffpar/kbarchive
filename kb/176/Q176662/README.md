@@ -6,6 +6,8 @@ permalink: /kb/176/Q176662/
 
 ## Q176662: Cannot View Tool Box, Color Box, or Thumbnail Tool in Paint
 
+{% raw %}
+
 	Article: Q176662
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -128,3 +130,5 @@ permalink: /kb/176/Q176662/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/237/Q237279/
 
 ## Q237279: WD97: Word Stops When You Use ApplyListTemplate Method
 
+{% raw %}
+
 	Article: Q237279
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -66,3 +68,5 @@ permalink: /kb/237/Q237279/
 	
 	=============================================================================
 	
+
+{% endraw %}

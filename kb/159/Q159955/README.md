@@ -6,6 +6,8 @@ permalink: /kb/159/Q159955/
 
 ## Q159955: Encarta 97: Differences Between Standard and Deluxe Editions
 
+{% raw %}
+
 	Article: Q159955
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -51,3 +53,5 @@ permalink: /kb/159/Q159955/
 	
 	=============================================================================
 	
+
+{% endraw %}

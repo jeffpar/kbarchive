@@ -6,6 +6,8 @@ permalink: /kb/110/Q110345/
 
 ## Q110345: Word 2.0: Blank Items in File List Boxes and Missing Letters
 
+{% raw %}
+
 	Article: Q110345
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 6.0
@@ -54,3 +56,5 @@ permalink: /kb/110/Q110345/
 	
 	=============================================================================
 	
+
+{% endraw %}

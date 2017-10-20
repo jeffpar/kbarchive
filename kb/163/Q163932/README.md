@@ -6,6 +6,8 @@ permalink: /kb/163/Q163932/
 
 ## Q163932: WD97: Frequently Asked Questions About Word Macro Viruses
 
+{% raw %}
+
 	Article: Q163932
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -180,3 +182,5 @@ permalink: /kb/163/Q163932/
 	
 	=============================================================================
 	
+
+{% endraw %}

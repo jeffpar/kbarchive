@@ -6,6 +6,8 @@ permalink: /kb/094/Q94695/
 
 ## Q94695: Error: Executable code not allowed in module level of a form
 
+{% raw %}
+
 	Article: Q94695
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): MS-DOS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/094/Q94695/
 	
 	=============================================================================
 	
+
+{% endraw %}

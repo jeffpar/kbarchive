@@ -6,6 +6,8 @@ permalink: /kb/135/Q135609/
 
 ## Q135609: WINS Fails on RAS Server with Multiport Adapter Installed
 
+{% raw %}
+
 	Article: Q135609
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -87,3 +89,5 @@ permalink: /kb/135/Q135609/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169317/
 
 ## Q169317: Close Combat Patch Is Available for Better Performance
 
+{% raw %}
+
 	Article: Q169317
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0; WINDOWS:1.0
@@ -70,3 +72,5 @@ permalink: /kb/169/Q169317/
 	
 	=============================================================================
 	
+
+{% endraw %}

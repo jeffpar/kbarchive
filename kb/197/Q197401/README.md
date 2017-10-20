@@ -6,6 +6,8 @@ permalink: /kb/197/Q197401/
 
 ## Q197401: Convlog Tool Stops Processing NCSA Files
 
+{% raw %}
+
 	Article: Q197401
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -63,3 +65,5 @@ permalink: /kb/197/Q197401/
 	
 	=============================================================================
 	
+
+{% endraw %}

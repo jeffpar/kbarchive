@@ -6,6 +6,8 @@ permalink: /kb/146/Q146412/
 
 ## Q146412: Cannot Paste Text from Japanese Newsgroup into Other Program
 
+{% raw %}
+
 	Article: Q146412
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5
@@ -42,3 +44,5 @@ permalink: /kb/146/Q146412/
 	
 	=============================================================================
 	
+
+{% endraw %}

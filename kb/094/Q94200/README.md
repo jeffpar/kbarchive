@@ -6,6 +6,8 @@ permalink: /kb/094/Q94200/
 
 ## Q94200: Windows Screen Savers Don't Activate with Icon Hearit
 
+{% raw %}
+
 	Article: Q94200
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/094/Q94200/
 	
 	=============================================================================
 	
+
+{% endraw %}

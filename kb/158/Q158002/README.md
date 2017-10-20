@@ -6,6 +6,8 @@ permalink: /kb/158/Q158002/
 
 ## Q158002: STL Sample for the Predicate Version of partial_sort Function
 
+{% raw %}
+
 	Article: Q158002
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -159,3 +161,5 @@ permalink: /kb/158/Q158002/
 	
 	=============================================================================
 	
+
+{% endraw %}

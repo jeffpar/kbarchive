@@ -6,6 +6,8 @@ permalink: /kb/133/Q133226/
 
 ## Q133226: PPT7: Office Shortcut Bar Not Hidden During Slide Show on NT
 
+{% raw %}
+
 	Article: Q133226
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0; winnt:3.51
@@ -75,3 +77,5 @@ permalink: /kb/133/Q133226/
 	
 	=============================================================================
 	
+
+{% endraw %}

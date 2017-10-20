@@ -6,6 +6,8 @@ permalink: /kb/278/Q278444/
 
 ## Q278444: XCON: MTA Queue Building Up with No Association Opening
 
+{% raw %}
+
 	Article: Q278444
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -131,3 +133,5 @@ permalink: /kb/278/Q278444/
 	
 	=============================================================================
 	
+
+{% endraw %}

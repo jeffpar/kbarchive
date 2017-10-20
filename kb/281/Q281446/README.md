@@ -6,6 +6,8 @@ permalink: /kb/281/Q281446/
 
 ## Q281446: FIX: Access Violation with std::map::erase or std::set::erase
 
+{% raw %}
+
 	Article: Q281446
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0 SP4
@@ -113,3 +115,5 @@ permalink: /kb/281/Q281446/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177590/
 
 ## Q177590: ADT/ODE: Setup Not Completed Successfully Installing Custom App
 
+{% raw %}
+
 	Article: Q177590
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0,97
@@ -185,3 +187,5 @@ permalink: /kb/177/Q177590/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/250/Q250521/
 
 ## Q250521: XADM: How to Prevent Sending SMTP Mail to a Specific Address
 
+{% raw %}
+
 	Article: Q250521
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -78,3 +80,5 @@ permalink: /kb/250/Q250521/
 	
 	=============================================================================
 	
+
+{% endraw %}

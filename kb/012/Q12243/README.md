@@ -6,6 +6,8 @@ permalink: /kb/012/Q12243/
 
 ## Q12243: No Error Listing File in QB 2.00; Error-Only File in 2.01/3.00
 
+{% raw %}
+
 	Article: Q12243
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00
@@ -48,3 +50,5 @@ permalink: /kb/012/Q12243/
 	output the assembler translation of the BASIC code. The compiler /A
 	option is supported only in QuickBASIC Versions 1.00, 1.02, 1.02,
 	4.00, 4.00b, and 4.50.
+
+{% endraw %}

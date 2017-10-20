@@ -6,6 +6,8 @@ permalink: /kb/249/Q249609/
 
 ## Q249609: Unable to Index PDF Files after Upgrading to Windows 2000
 
+{% raw %}
+
 	Article: Q249609
 	Product(s): Internet Information Server
 	Version(s): ; WINDOWS:
@@ -86,3 +88,5 @@ permalink: /kb/249/Q249609/
 	
 	=============================================================================
 	
+
+{% endraw %}

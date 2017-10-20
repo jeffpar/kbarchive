@@ -6,6 +6,8 @@ permalink: /kb/166/Q166078/
 
 ## Q166078: PRB: SQLSetDescField Appears to Call Itself
 
+{% raw %}
+
 	Article: Q166078
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.0
@@ -49,3 +51,5 @@ permalink: /kb/166/Q166078/
 	
 	=============================================================================
 	
+
+{% endraw %}

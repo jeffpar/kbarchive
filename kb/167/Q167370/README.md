@@ -6,6 +6,8 @@ permalink: /kb/167/Q167370/
 
 ## Q167370: WD97: Word Stops Responding Opening MacWord 5.x File
 
+{% raw %}
+
 	Article: Q167370
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/167/Q167370/
 	
 	=============================================================================
 	
+
+{% endraw %}

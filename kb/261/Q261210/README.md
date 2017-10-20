@@ -6,6 +6,8 @@ permalink: /kb/261/Q261210/
 
 ## Q261210: XFOR: Some Exchange Server Recipients Not Synchronized to Notes
 
+{% raw %}
+
 	Article: Q261210
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -63,3 +65,5 @@ permalink: /kb/261/Q261210/
 	
 	=============================================================================
 	
+
+{% endraw %}

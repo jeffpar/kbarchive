@@ -6,6 +6,8 @@ permalink: /kb/179/Q179497/
 
 ## Q179497: HOWTO: Select a Directory Without the Common Dialog Control
 
+{% raw %}
+
 	Article: Q179497
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -116,3 +118,5 @@ permalink: /kb/179/Q179497/
 	
 	=============================================================================
 	
+
+{% endraw %}

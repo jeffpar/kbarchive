@@ -6,6 +6,8 @@ permalink: /kb/141/Q141638/
 
 ## Q141638: PRB: Unable to Change Sorted Property in Form Designer
 
+{% raw %}
+
 	Article: Q141638
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -88,3 +90,5 @@ permalink: /kb/141/Q141638/
 	
 	=============================================================================
 	
+
+{% endraw %}

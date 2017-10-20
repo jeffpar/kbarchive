@@ -6,6 +6,8 @@ permalink: /kb/230/Q230744/
 
 ## Q230744: Windows NT 4.0 SP4 DNR Does Not Send Unqualified DNS Queries
 
+{% raw %}
+
 	Article: Q230744
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -95,3 +97,5 @@ permalink: /kb/230/Q230744/
 	
 	=============================================================================
 	
+
+{% endraw %}

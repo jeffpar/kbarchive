@@ -6,6 +6,8 @@ permalink: /kb/158/Q158370/
 
 ## Q158370: Err Msg: Another Program Is Using the Selected Telephony...
 
+{% raw %}
+
 	Article: Q158370
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -63,3 +65,5 @@ permalink: /kb/158/Q158370/
 	
 	=============================================================================
 	
+
+{% endraw %}

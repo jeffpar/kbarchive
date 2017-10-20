@@ -6,6 +6,8 @@ permalink: /kb/167/Q167947/
 
 ## Q167947: FIX: ODBC CAB File Does Not Install 16-bit ODBC Files
 
+{% raw %}
+
 	Article: Q167947
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0 97
@@ -57,3 +59,5 @@ permalink: /kb/167/Q167947/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/200/Q200099/
 
 ## Q200099: PRB: Owner-Drawn List Control in 68K App Crashes Macintosh
 
+{% raw %}
+
 	Article: Q200099
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:4.0b
@@ -113,3 +115,5 @@ permalink: /kb/200/Q200099/
 	
 	=============================================================================
 	
+
+{% endraw %}

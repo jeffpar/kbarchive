@@ -6,6 +6,8 @@ permalink: /kb/253/Q253811/
 
 ## Q253811: Connect Requests Not Seen on All Interfaces on Multihomed Client
 
+{% raw %}
+
 	Article: Q253811
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -85,3 +87,5 @@ permalink: /kb/253/Q253811/
 	
 	=============================================================================
 	
+
+{% endraw %}

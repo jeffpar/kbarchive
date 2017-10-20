@@ -6,6 +6,8 @@ permalink: /kb/152/Q152023/
 
 ## Q152023: Locating Resources to Study Automation
 
+{% raw %}
+
 	Article: Q152023
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.5,3.51,4.0,4.0 SP4
@@ -201,3 +203,5 @@ permalink: /kb/152/Q152023/
 	
 	=============================================================================
 	
+
+{% endraw %}

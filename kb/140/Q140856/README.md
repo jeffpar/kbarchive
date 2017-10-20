@@ -6,6 +6,8 @@ permalink: /kb/140/Q140856/
 
 ## Q140856: SMS Client DEINSTAL.BAT Fails on Windows 95 w/out Full Shutdown
 
+{% raw %}
+
 	Article: Q140856
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -44,3 +46,5 @@ permalink: /kb/140/Q140856/
 	
 	=============================================================================
 	
+
+{% endraw %}

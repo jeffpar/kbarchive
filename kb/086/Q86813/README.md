@@ -6,6 +6,8 @@ permalink: /kb/086/Q86813/
 
 ## Q86813: FIX: Macros w/ Different Case Can't Be Assigned to Each Other
 
+{% raw %}
+
 	Article: Q86813
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.11,1.12,1.13,1.2; OS/2:1.11,1.12,1.13
@@ -77,3 +79,5 @@ permalink: /kb/086/Q86813/
 	
 	=============================================================================
 	
+
+{% endraw %}

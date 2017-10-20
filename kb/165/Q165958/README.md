@@ -6,6 +6,8 @@ permalink: /kb/165/Q165958/
 
 ## Q165958: Getting Madge PCMCIA Token Card to Join a Domain During Setup
 
+{% raw %}
+
 	Article: Q165958
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -107,3 +109,5 @@ permalink: /kb/165/Q165958/
 	
 	=============================================================================
 	
+
+{% endraw %}

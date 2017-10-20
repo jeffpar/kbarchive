@@ -6,6 +6,8 @@ permalink: /kb/140/Q140850/
 
 ## Q140850: HOWTO: Properly Export Functions Using the MFC Shared Library
 
+{% raw %}
+
 	Article: Q140850
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.2,5.0,6.0
@@ -188,3 +190,5 @@ permalink: /kb/140/Q140850/
 	
 	=============================================================================
 	
+
+{% endraw %}

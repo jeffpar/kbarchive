@@ -6,6 +6,8 @@ permalink: /kb/178/Q178224/
 
 ## Q178224: INFO: Summary List: Visual C++ Version 4.1 Known Problems
 
+{% raw %}
+
 	Article: Q178224
 	Product(s): Microsoft C Compiler
 	Version(s): 4.1
@@ -532,3 +534,5 @@ permalink: /kb/178/Q178224/
 	
 	=============================================================================
 	
+
+{% endraw %}

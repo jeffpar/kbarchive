@@ -6,6 +6,8 @@ permalink: /kb/029/Q29188/
 
 ## Q29188: Unresolved External on &#95;&#95;Clpow with /Oi and /FPa in C 5.xx
 
+{% raw %}
+
 	Article: Q29188
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -37,3 +39,5 @@ permalink: /kb/029/Q29188/
 	   yy = 3.9;
 	   printf("%f", pow(xx,yy));
 	   }
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/265/Q265507/
 
 ## Q265507: WD97: Picture's Object Anchor Moves Outside Table
 
+{% raw %}
+
 	Article: Q265507
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -102,3 +104,5 @@ permalink: /kb/265/Q265507/
 	
 	=============================================================================
 	
+
+{% endraw %}

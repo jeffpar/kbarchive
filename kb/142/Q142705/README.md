@@ -6,6 +6,8 @@ permalink: /kb/142/Q142705/
 
 ## Q142705: BUG: No Option in Windows NT to Limit Number of User Logons
 
+{% raw %}
+
 	Article: Q142705
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -69,3 +71,5 @@ permalink: /kb/142/Q142705/
 	
 	=============================================================================
 	
+
+{% endraw %}

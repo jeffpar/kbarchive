@@ -6,6 +6,8 @@ permalink: /kb/186/Q186544/
 
 ## Q186544: Terminal Server Error Messages: 3100 to 3199
 
+{% raw %}
+
 	Article: Q186544
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -888,3 +890,5 @@ permalink: /kb/186/Q186544/
 	
 	=============================================================================
 	
+
+{% endraw %}

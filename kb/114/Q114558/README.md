@@ -6,6 +6,8 @@ permalink: /kb/114/Q114558/
 
 ## Q114558: Err Msg: Could Not Set the Device Mode for this Printer
 
+{% raw %}
+
 	Article: Q114558
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -74,3 +76,5 @@ permalink: /kb/114/Q114558/
 	
 	=============================================================================
 	
+
+{% endraw %}

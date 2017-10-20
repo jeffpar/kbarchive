@@ -6,6 +6,8 @@ permalink: /kb/176/Q176849/
 
 ## Q176849: SNA Server Logs Events 684 and 685 When Using SDLC Connection
 
+{% raw %}
+
 	Article: Q176849
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2
@@ -89,3 +91,5 @@ permalink: /kb/176/Q176849/
 	
 	=============================================================================
 	
+
+{% endraw %}

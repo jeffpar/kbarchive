@@ -6,6 +6,8 @@ permalink: /kb/179/Q179130/
 
 ## Q179130: Universal Serial Bus-Equipped Computer May Hang on Resume
 
+{% raw %}
+
 	Article: Q179130
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.1
@@ -55,3 +57,5 @@ permalink: /kb/179/Q179130/
 	
 	=============================================================================
 	
+
+{% endraw %}

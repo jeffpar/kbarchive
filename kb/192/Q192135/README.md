@@ -6,6 +6,8 @@ permalink: /kb/192/Q192135/
 
 ## Q192135: BUG: Opening Multiple Instances of Visual Basic Causes Error
 
+{% raw %}
+
 	Article: Q192135
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -53,3 +55,5 @@ permalink: /kb/192/Q192135/
 	
 	=============================================================================
 	
+
+{% endraw %}

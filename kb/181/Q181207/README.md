@@ -6,6 +6,8 @@ permalink: /kb/181/Q181207/
 
 ## Q181207: FIX: CRuntimeClass Not Available for CInternetException
 
+{% raw %}
+
 	Article: Q181207
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:97,97sp3
@@ -85,3 +87,5 @@ permalink: /kb/181/Q181207/
 	
 	=============================================================================
 	
+
+{% endraw %}

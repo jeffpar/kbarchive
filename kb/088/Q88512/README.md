@@ -6,6 +6,8 @@ permalink: /kb/088/Q88512/
 
 ## Q88512: Stance in Advanced Shot Setup Doesn't Affect Ball's Flight
 
+{% raw %}
+
 	Article: Q88512
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/088/Q88512/
 	
 	=============================================================================
 	
+
+{% endraw %}

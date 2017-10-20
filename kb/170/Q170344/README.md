@@ -6,6 +6,8 @@ permalink: /kb/170/Q170344/
 
 ## Q170344: XCLN: Err Msg: Unable To Display The Folder
 
+{% raw %}
+
 	Article: Q170344
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -65,3 +67,5 @@ permalink: /kb/170/Q170344/
 	
 	=============================================================================
 	
+
+{% endraw %}

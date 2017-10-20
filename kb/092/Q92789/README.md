@@ -6,6 +6,8 @@ permalink: /kb/092/Q92789/
 
 ## Q92789: WFWG Fails with 3Com Etherlink Plus (3C505)
 
+{% raw %}
+
 	Article: Q92789
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -46,3 +48,5 @@ permalink: /kb/092/Q92789/
 	
 	=============================================================================
 	
+
+{% endraw %}

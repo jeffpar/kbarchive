@@ -6,6 +6,8 @@ permalink: /kb/303/Q303027/
 
 ## Q303027: Age of Empires II: Computer Hangs When Loading The Age of Kings
 
+{% raw %}
+
 	Article: Q303027
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -78,3 +80,5 @@ permalink: /kb/303/Q303027/
 	
 	=============================================================================
 	
+
+{% endraw %}

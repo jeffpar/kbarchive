@@ -6,6 +6,8 @@ permalink: /kb/218/Q218445/
 
 ## Q218445: How to Configure Certificate Server for Use with SSL on IIS
 
+{% raw %}
+
 	Article: Q218445
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -351,3 +353,5 @@ permalink: /kb/218/Q218445/
 	
 	=============================================================================
 	
+
+{% endraw %}

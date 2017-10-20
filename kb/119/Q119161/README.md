@@ -6,6 +6,8 @@ permalink: /kb/119/Q119161/
 
 ## Q119161: FIX: Dependencies May Not Be Detected
 
+{% raw %}
+
 	Article: Q119161
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0
@@ -121,3 +123,5 @@ permalink: /kb/119/Q119161/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67860/
 
 ## Q67860: The Microsoft Mouse with Lotus 1-2-3 Release 3.1
 
+{% raw %}
+
 	Article: Q67860
 	Product(s): See article
 	Version(s): 1.00
@@ -103,3 +105,5 @@ permalink: /kb/067/Q67860/
 	In addition to normal mouse cursor movement, you may also move the
 	mouse cursor by selecting the arrow icons on the right hand side of
 	the 1-2-3 screen.
+
+{% endraw %}

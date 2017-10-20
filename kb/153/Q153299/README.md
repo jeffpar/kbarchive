@@ -6,6 +6,8 @@ permalink: /kb/153/Q153299/
 
 ## Q153299: SMS Directory Structure Is Duplicated
 
+{% raw %}
+
 	Article: Q153299
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -41,3 +43,5 @@ permalink: /kb/153/Q153299/
 	
 	=============================================================================
 	
+
+{% endraw %}

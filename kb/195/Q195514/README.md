@@ -6,6 +6,8 @@ permalink: /kb/195/Q195514/
 
 ## Q195514: FIX: Error Loading File When Converting a 2.6 Form in VFP 6.0
 
+{% raw %}
+
 	Article: Q195514
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -191,3 +193,5 @@ permalink: /kb/195/Q195514/
 	
 	=============================================================================
 	
+
+{% endraw %}

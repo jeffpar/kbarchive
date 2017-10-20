@@ -6,6 +6,8 @@ permalink: /kb/043/Q43009/
 
 ## Q43009: How /NOE (No Extended Dictionary) Is Used by the Linker
 
+{% raw %}
+
 	Article: Q43009
 	Product(s): See article
 	Version(s): 3.65 4.06 5.01 | 5.01
@@ -99,3 +101,5 @@ permalink: /kb/043/Q43009/
 	functions; printf is not. You can get a redefinition error only if you
 	redefine a second-level library function called by some first-level
 	routine being linked into your program.
+
+{% endraw %}

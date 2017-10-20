@@ -6,6 +6,8 @@ permalink: /kb/120/Q120498/
 
 ## Q120498: 6.22 Setup Err Msg with SCSI Device: Hard Disk Write Error
 
+{% raw %}
+
 	Article: Q120498
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -59,3 +61,5 @@ permalink: /kb/120/Q120498/
 	
 	=============================================================================
 	
+
+{% endraw %}

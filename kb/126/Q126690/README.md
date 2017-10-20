@@ -6,6 +6,8 @@ permalink: /kb/126/Q126690/
 
 ## Q126690: INFO: Windows NT 4.0 Setup Troubleshooting Guide
 
+{% raw %}
+
 	Article: Q126690
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -1202,3 +1204,5 @@ permalink: /kb/126/Q126690/
 	
 	=============================================================================
 	
+
+{% endraw %}

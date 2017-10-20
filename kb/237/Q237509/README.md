@@ -6,6 +6,8 @@ permalink: /kb/237/Q237509/
 
 ## Q237509: Encarta: Pasted Articles Do Not Include Copyright Information
 
+{% raw %}
+
 	Article: Q237509
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/237/Q237509/
 	
 	=============================================================================
 	
+
+{% endraw %}

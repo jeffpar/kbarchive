@@ -6,6 +6,8 @@ permalink: /kb/166/Q166773/
 
 ## Q166773: Using the Personalization Service with IIS 4.0
 
+{% raw %}
+
 	Article: Q166773
 	Product(s): Internet Information Server
 	Version(s): WINNT:2.0,4.0
@@ -68,3 +70,5 @@ permalink: /kb/166/Q166773/
 	
 	=============================================================================
 	
+
+{% endraw %}

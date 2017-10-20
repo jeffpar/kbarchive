@@ -6,6 +6,8 @@ permalink: /kb/176/Q176899/
 
 ## Q176899: FS98/2000: How To Find Detailed Preflight Briefing Information
 
+{% raw %}
+
 	Article: Q176899
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -83,3 +85,5 @@ permalink: /kb/176/Q176899/
 	
 	=============================================================================
 	
+
+{% endraw %}

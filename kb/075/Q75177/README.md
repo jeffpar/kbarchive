@@ -6,6 +6,8 @@ permalink: /kb/075/Q75177/
 
 ## Q75177: FIX: Subtracting Two Externs Gives Incorrect Results
 
+{% raw %}
+
 	Article: Q75177
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -95,3 +97,5 @@ permalink: /kb/075/Q75177/
 	
 	=============================================================================
 	
+
+{% endraw %}

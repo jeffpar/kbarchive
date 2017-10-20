@@ -6,6 +6,8 @@ permalink: /kb/142/Q142600/
 
 ## Q142600: MSN Mail Not Delivered: No Transport Provider Available
 
+{% raw %}
+
 	Article: Q142600
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3,2.0,2.5,2.6,8.0
@@ -111,3 +113,5 @@ permalink: /kb/142/Q142600/
 	
 	=============================================================================
 	
+
+{% endraw %}

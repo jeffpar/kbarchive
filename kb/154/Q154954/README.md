@@ -6,6 +6,8 @@ permalink: /kb/154/Q154954/
 
 ## Q154954: XADM: Limited Sort Options in Administrator Program
 
+{% raw %}
+
 	Article: Q154954
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -52,3 +54,5 @@ permalink: /kb/154/Q154954/
 	
 	=============================================================================
 	
+
+{% endraw %}

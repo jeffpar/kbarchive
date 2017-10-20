@@ -6,6 +6,8 @@ permalink: /kb/131/Q131941/
 
 ## Q131941: PRB: Class Browser Does Not Recognize Inheritance
 
+{% raw %}
+
 	Article: Q131941
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -90,3 +92,5 @@ permalink: /kb/131/Q131941/
 	
 	=============================================================================
 	
+
+{% endraw %}

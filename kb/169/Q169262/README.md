@@ -6,6 +6,8 @@ permalink: /kb/169/Q169262/
 
 ## Q169262: FTP Service Blue Screens When Downloading
 
+{% raw %}
+
 	Article: Q169262
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,3.0
@@ -56,3 +58,5 @@ permalink: /kb/169/Q169262/
 	
 	=============================================================================
 	
+
+{% endraw %}

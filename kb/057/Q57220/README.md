@@ -6,6 +6,8 @@ permalink: /kb/057/Q57220/
 
 ## Q57220: Inline Assembly May Cause Debugger to Skip Lines
 
+{% raw %}
+
 	Article: Q57220
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -40,3 +42,5 @@ permalink: /kb/057/Q57220/
 	Microsoft has confirmed this to be a problem in Versions 2.00 and
 	2.01. We are researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

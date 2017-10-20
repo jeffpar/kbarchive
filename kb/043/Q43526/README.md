@@ -6,6 +6,8 @@ permalink: /kb/043/Q43526/
 
 ## Q43526: Assigning Values by PMAP to INTEGERs Can Map Incorrectly
 
+{% raw %}
+
 	Article: Q43526
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -169,3 +171,5 @@ permalink: /kb/043/Q43526/
 	 7             7                   7
 	 8             8                   8
 	 9             9                   9
+
+{% endraw %}

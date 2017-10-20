@@ -6,6 +6,8 @@ permalink: /kb/217/Q217082/
 
 ## Q217082: PRB: Connection Busy Message w/Remote Views of SQL Server Tables
 
+{% raw %}
+
 	Article: Q217082
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0
@@ -222,3 +224,5 @@ permalink: /kb/217/Q217082/
 	
 	=============================================================================
 	
+
+{% endraw %}

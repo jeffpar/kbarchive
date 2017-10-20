@@ -6,6 +6,8 @@ permalink: /kb/101/Q101173/
 
 ## Q101173: Files Modified by Workgroup Connections Setup Program
 
+{% raw %}
+
 	Article: Q101173
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0
@@ -42,3 +44,5 @@ permalink: /kb/101/Q101173/
 	
 	=============================================================================
 	
+
+{% endraw %}

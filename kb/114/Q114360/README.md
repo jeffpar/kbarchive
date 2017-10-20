@@ -6,6 +6,8 @@ permalink: /kb/114/Q114360/
 
 ## Q114360: Modifying Configuration Files When Upgrading from Novell DOS 7
 
+{% raw %}
+
 	Article: Q114360
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.21
@@ -59,3 +61,5 @@ permalink: /kb/114/Q114360/
 	
 	=============================================================================
 	
+
+{% endraw %}

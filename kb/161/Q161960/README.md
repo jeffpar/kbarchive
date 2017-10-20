@@ -6,6 +6,8 @@ permalink: /kb/161/Q161960/
 
 ## Q161960: STOP 0x0000007B On Windows NT 4.0 After SP2 Applied
 
+{% raw %}
+
 	Article: Q161960
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP2
@@ -91,3 +93,5 @@ permalink: /kb/161/Q161960/
 	
 	=============================================================================
 	
+
+{% endraw %}

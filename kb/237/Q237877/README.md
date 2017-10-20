@@ -6,6 +6,8 @@ permalink: /kb/237/Q237877/
 
 ## Q237877: XADM: How to Create a Windows NT User Account in Mixed Site
 
+{% raw %}
+
 	Article: Q237877
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -68,3 +70,5 @@ permalink: /kb/237/Q237877/
 	
 	=============================================================================
 	
+
+{% endraw %}

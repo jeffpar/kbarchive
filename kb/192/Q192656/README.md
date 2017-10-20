@@ -6,6 +6,8 @@ permalink: /kb/192/Q192656/
 
 ## Q192656: XADM: Directory Replication Is Object Based, Not Attribute Based
 
+{% raw %}
+
 	Article: Q192656
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -37,3 +39,5 @@ permalink: /kb/192/Q192656/
 	
 	=============================================================================
 	
+
+{% endraw %}

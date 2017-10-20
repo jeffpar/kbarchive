@@ -6,6 +6,8 @@ permalink: /kb/069/Q69837/
 
 ## Q69837: Finding Track and Sector Size Using SMARTDRV.SYS from Windows
 
+{% raw %}
+
 	Article: Q69837
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -34,3 +36,5 @@ permalink: /kb/069/Q69837/
 	
 	=============================================================================
 	
+
+{% endraw %}

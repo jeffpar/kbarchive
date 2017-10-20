@@ -6,6 +6,8 @@ permalink: /kb/094/Q94637/
 
 ## Q94637: Can't Run DeskMate after Installing MS-DOS Upgrade
 
+{% raw %}
+
 	Article: Q94637
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -54,3 +56,5 @@ permalink: /kb/094/Q94637/
 	
 	=============================================================================
 	
+
+{% endraw %}

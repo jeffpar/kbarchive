@@ -6,6 +6,8 @@ permalink: /kb/171/Q171140/
 
 ## Q171140: Permission Denied During Certificate Creation
 
+{% raw %}
+
 	Article: Q171140
 	Product(s): Internet Information Server
 	Version(s): WinNT:1.0,3.0
@@ -63,3 +65,5 @@ permalink: /kb/171/Q171140/
 	
 	=============================================================================
 	
+
+{% endraw %}

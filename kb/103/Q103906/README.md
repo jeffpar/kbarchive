@@ -6,6 +6,8 @@ permalink: /kb/103/Q103906/
 
 ## Q103906: PC DOS: Err Msg: Notice 80: Failure to Create Folder
 
+{% raw %}
+
 	Article: Q103906
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -51,3 +53,5 @@ permalink: /kb/103/Q103906/
 	
 	=============================================================================
 	
+
+{% endraw %}

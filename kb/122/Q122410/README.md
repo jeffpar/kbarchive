@@ -6,6 +6,8 @@ permalink: /kb/122/Q122410/
 
 ## Q122410: DOC: pow(0,0) Function Not Documented
 
+{% raw %}
+
 	Article: Q122410
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/122/Q122410/
 	
 	=============================================================================
 	
+
+{% endraw %}

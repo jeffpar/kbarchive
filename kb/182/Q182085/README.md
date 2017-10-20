@@ -6,6 +6,8 @@ permalink: /kb/182/Q182085/
 
 ## Q182085: XCON: MTA Fails with 9405 Error Queue-Desc-Object (ID1)
 
+{% raw %}
+
 	Article: Q182085
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -74,3 +76,5 @@ permalink: /kb/182/Q182085/
 	
 	=============================================================================
 	
+
+{% endraw %}

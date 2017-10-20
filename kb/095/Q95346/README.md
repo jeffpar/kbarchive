@@ -6,6 +6,8 @@ permalink: /kb/095/Q95346/
 
 ## Q95346: Problem with Proteon 1390 and 1392 Network Interface Cards
 
+{% raw %}
+
 	Article: Q95346
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -77,3 +79,5 @@ permalink: /kb/095/Q95346/
 	
 	=============================================================================
 	
+
+{% endraw %}

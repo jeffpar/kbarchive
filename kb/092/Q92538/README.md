@@ -6,6 +6,8 @@ permalink: /kb/092/Q92538/
 
 ## Q92538: Corrections to the Windows 3.1 SDK Sample FONTEST
 
+{% raw %}
+
 	Article: Q92538
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -73,3 +75,5 @@ permalink: /kb/092/Q92538/
 	
 	=============================================================================
 	
+
+{% endraw %}

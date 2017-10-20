@@ -6,6 +6,8 @@ permalink: /kb/130/Q130646/
 
 ## Q130646: PRB: DAO References Not Enabled When Porting an Older VB App
 
+{% raw %}
+
 	Article: Q130646
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/130/Q130646/
 	
 	=============================================================================
 	
+
+{% endraw %}

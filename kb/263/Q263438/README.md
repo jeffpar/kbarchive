@@ -6,6 +6,8 @@ permalink: /kb/263/Q263438/
 
 ## Q263438: Integrated SQL Setup Does Not Work if Server Name Has Hyphens
 
+{% raw %}
+
 	Article: Q263438
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -66,3 +68,5 @@ permalink: /kb/263/Q263438/
 	
 	=============================================================================
 	
+
+{% endraw %}

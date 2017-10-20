@@ -6,6 +6,8 @@ permalink: /kb/268/Q268748/
 
 ## Q268748: Error Message Appears and Action Menu Is Empty When You Run Outl
 
+{% raw %}
+
 	Article: Q268748
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -121,3 +123,5 @@ permalink: /kb/268/Q268748/
 	
 	=============================================================================
 	
+
+{% endraw %}

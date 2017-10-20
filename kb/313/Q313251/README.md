@@ -6,6 +6,8 @@ permalink: /kb/313/Q313251/
 
 ## Q313251: HOW TO: Set Up Anon and Basic Authentication on Same Web Content
 
+{% raw %}
+
 	Article: Q313251
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -96,3 +98,5 @@ permalink: /kb/313/Q313251/
 	
 	=============================================================================
 	
+
+{% endraw %}

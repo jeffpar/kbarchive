@@ -6,6 +6,8 @@ permalink: /kb/065/Q65490/
 
 ## Q65490: Building Windows 3.00 Applications with QuickC
 
+{% raw %}
+
 	Article: Q65490
 	Product(s): See article
 	Version(s): 2.00 2.01 2.50 2.51
@@ -35,3 +37,5 @@ permalink: /kb/065/Q65490/
 	or 6.00 of the Microsoft Optimizing C Compiler. The optimizing
 	compiler contains the necessary utilities, has a higher capacity, and
 	produces production-quality code.
+
+{% endraw %}

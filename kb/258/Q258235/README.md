@@ -6,6 +6,8 @@ permalink: /kb/258/Q258235/
 
 ## Q258235: BUG: Memory Leak with ATL Containment
 
+{% raw %}
+
 	Article: Q258235
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -90,3 +92,5 @@ permalink: /kb/258/Q258235/
 	
 	=============================================================================
 	
+
+{% endraw %}

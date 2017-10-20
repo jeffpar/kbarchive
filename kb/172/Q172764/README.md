@@ -6,6 +6,8 @@ permalink: /kb/172/Q172764/
 
 ## Q172764: WD97: Changes to List Number Styles May be Lost
 
+{% raw %}
+
 	Article: Q172764
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/172/Q172764/
 	
 	=============================================================================
 	
+
+{% endraw %}

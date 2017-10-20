@@ -6,6 +6,8 @@ permalink: /kb/090/Q90849/
 
 ## Q90849: Write: Saving in MS-DOS Word Format Loses Fonts and Graphics
 
+{% raw %}
+
 	Article: Q90849
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -41,3 +43,5 @@ permalink: /kb/090/Q90849/
 	
 	=============================================================================
 	
+
+{% endraw %}

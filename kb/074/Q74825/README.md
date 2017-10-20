@@ -6,6 +6,8 @@ permalink: /kb/074/Q74825/
 
 ## Q74825: MS-DOS 5.0 Setup Doesn't Always Copy HIMEM.SYS
 
+{% raw %}
+
 	Article: Q74825
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -61,3 +63,5 @@ permalink: /kb/074/Q74825/
 	
 	=============================================================================
 	
+
+{% endraw %}

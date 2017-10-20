@@ -6,6 +6,8 @@ permalink: /kb/234/Q234645/
 
 ## Q234645: ODE97: Error Configuring SQL Server Driver During Install of App
 
+{% raw %}
+
 	Article: Q234645
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:97
@@ -261,3 +263,5 @@ permalink: /kb/234/Q234645/
 	
 	=============================================================================
 	
+
+{% endraw %}

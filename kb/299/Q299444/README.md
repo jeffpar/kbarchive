@@ -6,6 +6,8 @@ permalink: /kb/299/Q299444/
 
 ## Q299444: Post-Windows NT 4.0 SP6a Security Rollup Package (SRP)
 
+{% raw %}
+
 	Article: Q299444
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6a
@@ -319,3 +321,5 @@ permalink: /kb/299/Q299444/
 	
 	=============================================================================
 	
+
+{% endraw %}

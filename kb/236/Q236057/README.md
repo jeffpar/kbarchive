@@ -6,6 +6,8 @@ permalink: /kb/236/Q236057/
 
 ## Q236057: PRB: User BIOS Reset Causes Problems with SourceSafe
 
+{% raw %}
+
 	Article: Q236057
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -73,3 +75,5 @@ permalink: /kb/236/Q236057/
 	
 	=============================================================================
 	
+
+{% endraw %}

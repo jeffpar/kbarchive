@@ -6,6 +6,8 @@ permalink: /kb/189/Q189911/
 
 ## Q189911: PRB: REDIMENSION an Array Passed by Reference in DLL Fails
 
+{% raw %}
+
 	Article: Q189911
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -87,3 +89,5 @@ permalink: /kb/189/Q189911/
 	
 	=============================================================================
 	
+
+{% endraw %}

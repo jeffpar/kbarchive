@@ -6,6 +6,8 @@ permalink: /kb/160/Q160664/
 
 ## Q160664: XFOR: Cannot Configure Microsoft Mail Connector (AppleTalk)
 
+{% raw %}
+
 	Article: Q160664
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/160/Q160664/
 	
 	=============================================================================
 	
+
+{% endraw %}

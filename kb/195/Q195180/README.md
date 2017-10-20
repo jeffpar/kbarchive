@@ -6,6 +6,8 @@ permalink: /kb/195/Q195180/
 
 ## Q195180: PRB: VBScript &quot;Type Mismatch&quot; Error When Field Type Is adNumeric
 
+{% raw %}
+
 	Article: Q195180
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 1.0,1.5,2.0,2.5,2.6,2.7,5.0,Build 2.573.2927
@@ -89,3 +91,5 @@ permalink: /kb/195/Q195180/
 	
 	=============================================================================
 	
+
+{% endraw %}

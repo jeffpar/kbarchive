@@ -6,6 +6,8 @@ permalink: /kb/148/Q148771/
 
 ## Q148771: PC DirSync: Err Msg: Bad ID or Password
 
+{% raw %}
+
 	Article: Q148771
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -73,3 +75,5 @@ permalink: /kb/148/Q148771/
 	
 	=============================================================================
 	
+
+{% endraw %}

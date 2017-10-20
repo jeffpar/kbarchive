@@ -6,6 +6,8 @@ permalink: /kb/047/Q47187/
 
 ## Q47187: Mac Wkst: File Type and Creator of Saved Messages
 
+{% raw %}
+
 	Article: Q47187
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.0a,3.0b,3.1,3.1a,3.1c
@@ -41,3 +43,5 @@ permalink: /kb/047/Q47187/
 	
 	=============================================================================
 	
+
+{% endraw %}

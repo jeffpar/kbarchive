@@ -6,6 +6,8 @@ permalink: /kb/122/Q122317/
 
 ## Q122317: TCP/IP-32 May Fail on Token Ring Network with Source Routing
 
+{% raw %}
+
 	Article: Q122317
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11; WINDOWS:3.11
@@ -73,3 +75,5 @@ permalink: /kb/122/Q122317/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/303/Q303827/
 
 ## Q303827: PRB: Norton AntiVirus Error When Running Setup from Vfpstart.hta
 
+{% raw %}
+
 	Article: Q303827
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -76,3 +78,5 @@ permalink: /kb/303/Q303827/
 	
 	=============================================================================
 	
+
+{% endraw %}

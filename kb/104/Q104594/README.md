@@ -6,6 +6,8 @@ permalink: /kb/104/Q104594/
 
 ## Q104594: Tandberg Firmware Versions Required for Windows NT
 
+{% raw %}
+
 	Article: Q104594
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51,4.0
@@ -89,3 +91,5 @@ permalink: /kb/104/Q104594/
 	
 	=============================================================================
 	
+
+{% endraw %}

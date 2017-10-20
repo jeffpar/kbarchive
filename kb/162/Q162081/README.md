@@ -6,6 +6,8 @@ permalink: /kb/162/Q162081/
 
 ## Q162081: PRB: In-Process Server Fails on CREATEOBJECT in VFP Run Time
 
+{% raw %}
+
 	Article: Q162081
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -107,3 +109,5 @@ permalink: /kb/162/Q162081/
 	
 	=============================================================================
 	
+
+{% endraw %}

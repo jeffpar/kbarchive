@@ -6,6 +6,8 @@ permalink: /kb/138/Q138764/
 
 ## Q138764: FIX: Custom Build Commands Not Assigned Values
 
+{% raw %}
+
 	Article: Q138764
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -77,3 +79,5 @@ permalink: /kb/138/Q138764/
 	
 	=============================================================================
 	
+
+{% endraw %}

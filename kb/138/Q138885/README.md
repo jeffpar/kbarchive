@@ -6,6 +6,8 @@ permalink: /kb/138/Q138885/
 
 ## Q138885: Magic School Bus: Slow Performance During Videos, Transitions
 
+{% raw %}
+
 	Article: Q138885
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -81,3 +83,5 @@ permalink: /kb/138/Q138885/
 	
 	=============================================================================
 	
+
+{% endraw %}

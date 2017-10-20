@@ -6,6 +6,8 @@ permalink: /kb/235/Q235043/
 
 ## Q235043: SMS: Smsls Hangs Client with Unsupported Network Redirector
 
+{% raw %}
+
 	Article: Q235043
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -63,3 +65,5 @@ permalink: /kb/235/Q235043/
 	
 	=============================================================================
 	
+
+{% endraw %}

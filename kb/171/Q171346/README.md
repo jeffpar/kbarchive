@@ -6,6 +6,8 @@ permalink: /kb/171/Q171346/
 
 ## Q171346: PRB: Filter String Exceeds the Maximum Length of 511
 
+{% raw %}
+
 	Article: Q171346
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/171/Q171346/
 	
 	=============================================================================
 	
+
+{% endraw %}

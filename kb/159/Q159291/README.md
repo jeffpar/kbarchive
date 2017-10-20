@@ -6,6 +6,8 @@ permalink: /kb/159/Q159291/
 
 ## Q159291: XADM: Single Forward Slash Treated as Delimiter in DDA Value
 
+{% raw %}
+
 	Article: Q159291
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/159/Q159291/
 	
 	=============================================================================
 	
+
+{% endraw %}

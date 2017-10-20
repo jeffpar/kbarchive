@@ -6,6 +6,8 @@ permalink: /kb/143/Q143192/
 
 ## Q143192: Access Is Denied Error in Internet Service Virtual Directory
 
+{% raw %}
+
 	Article: Q143192
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -74,3 +76,5 @@ permalink: /kb/143/Q143192/
 	
 	=============================================================================
 	
+
+{% endraw %}

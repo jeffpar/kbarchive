@@ -6,6 +6,8 @@ permalink: /kb/076/Q76811/
 
 ## Q76811: Sound Blaster: Built-In Game I/O Port Feature
 
+{% raw %}
+
 	Article: Q76811
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.0; WINDOWS:3.1
@@ -53,3 +55,5 @@ permalink: /kb/076/Q76811/
 	
 	=============================================================================
 	
+
+{% endraw %}

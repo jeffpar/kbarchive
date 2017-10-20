@@ -6,6 +6,8 @@ permalink: /kb/130/Q130613/
 
 ## Q130613: Audio, MIDI, Capture Cards Requiring Windows 3.1 Drivers
 
+{% raw %}
+
 	Article: Q130613
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -204,3 +206,5 @@ permalink: /kb/130/Q130613/
 	
 	=============================================================================
 	
+
+{% endraw %}

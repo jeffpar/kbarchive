@@ -6,6 +6,8 @@ permalink: /kb/085/Q85059/
 
 ## Q85059: FFAPI: The Limitations of FFAPI
 
+{% raw %}
+
 	Article: Q85059
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/085/Q85059/
 	
 	=============================================================================
 	
+
+{% endraw %}

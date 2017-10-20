@@ -6,6 +6,8 @@ permalink: /kb/219/Q219540/
 
 ## Q219540: Terminal Server Will Disconnect Users When Connected Remotely
 
+{% raw %}
+
 	Article: Q219540
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/219/Q219540/
 	
 	=============================================================================
 	
+
+{% endraw %}

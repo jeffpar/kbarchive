@@ -6,6 +6,8 @@ permalink: /kb/152/Q152498/
 
 ## Q152498: XADM: Unable to Enable Advanced Security on User Account
 
+{% raw %}
+
 	Article: Q152498
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/152/Q152498/
 	
 	=============================================================================
 	
+
+{% endraw %}

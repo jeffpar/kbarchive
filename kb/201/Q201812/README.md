@@ -6,6 +6,8 @@ permalink: /kb/201/Q201812/
 
 ## Q201812: SMS: NetWare Users Do Not Have Rights to the SMSLOGON Directory
 
+{% raw %}
+
 	Article: Q201812
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -51,3 +53,5 @@ permalink: /kb/201/Q201812/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182060/
 
 ## Q182060: SMS: Rservice for Alpha Does Not Process All Computers in List
 
+{% raw %}
+
 	Article: Q182060
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -62,3 +64,5 @@ permalink: /kb/182/Q182060/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163381/
 
 ## Q163381: SMS: Setup Limits SQL Database and Device Names to 21 Characters
 
+{% raw %}
+
 	Article: Q163381
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -50,3 +52,5 @@ permalink: /kb/163/Q163381/
 	
 	=============================================================================
 	
+
+{% endraw %}

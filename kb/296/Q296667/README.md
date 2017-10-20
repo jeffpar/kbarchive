@@ -6,6 +6,8 @@ permalink: /kb/296/Q296667/
 
 ## Q296667: SMS: French SMS 2.0 SP3 Contains an Incorrect Colleval.dll File
 
+{% raw %}
+
 	Article: Q296667
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -79,3 +81,5 @@ permalink: /kb/296/Q296667/
 	
 	=============================================================================
 	
+
+{% endraw %}

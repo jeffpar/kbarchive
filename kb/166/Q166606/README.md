@@ -6,6 +6,8 @@ permalink: /kb/166/Q166606/
 
 ## Q166606: XFOR: Msgs With Mixed Japanese Encoding Not Decoded Correctly
 
+{% raw %}
+
 	Article: Q166606
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -52,3 +54,5 @@ permalink: /kb/166/Q166606/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/081/Q81871/
 
 ## Q81871: Controlling the CD Using mciSendCommand()
 
+{% raw %}
+
 	Article: Q81871
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -61,3 +63,5 @@ permalink: /kb/081/Q81871/
 	
 	=============================================================================
 	
+
+{% endraw %}

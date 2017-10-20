@@ -6,6 +6,8 @@ permalink: /kb/092/Q92438/
 
 ## Q92438: PC Ext: External Mail Program's -Qx Option
 
+{% raw %}
+
 	Article: Q92438
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2,3.5
@@ -59,3 +61,5 @@ permalink: /kb/092/Q92438/
 	
 	=============================================================================
 	
+
+{% endraw %}

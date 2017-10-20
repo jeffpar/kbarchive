@@ -6,6 +6,8 @@ permalink: /kb/161/Q161426/
 
 ## Q161426: How to Enable Logging with Routing and Remote Access
 
+{% raw %}
+
 	Article: Q161426
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -92,3 +94,5 @@ permalink: /kb/161/Q161426/
 	
 	=============================================================================
 	
+
+{% endraw %}

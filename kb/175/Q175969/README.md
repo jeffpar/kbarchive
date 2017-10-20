@@ -6,6 +6,8 @@ permalink: /kb/175/Q175969/
 
 ## Q175969: XCLN: NT Client Generates Application Error, Exception
 
+{% raw %}
+
 	Article: Q175969
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -77,3 +79,5 @@ permalink: /kb/175/Q175969/
 	
 	=============================================================================
 	
+
+{% endraw %}

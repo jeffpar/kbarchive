@@ -6,6 +6,8 @@ permalink: /kb/141/Q141354/
 
 ## Q141354: FIX: Adding Description to Table's Index in DBC Corrupts Table
 
+{% raw %}
+
 	Article: Q141354
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -105,3 +107,5 @@ permalink: /kb/141/Q141354/
 	
 	=============================================================================
 	
+
+{% endraw %}

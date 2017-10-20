@@ -6,6 +6,8 @@ permalink: /kb/083/Q83051/
 
 ## Q83051: Maintaining OLE Functionality when Reinstalling Windows 3.1
 
+{% raw %}
+
 	Article: Q83051
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -81,3 +83,5 @@ permalink: /kb/083/Q83051/
 	
 	=============================================================================
 	
+
+{% endraw %}

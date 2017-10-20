@@ -6,6 +6,8 @@ permalink: /kb/095/Q95819/
 
 ## Q95819: MS-DOS DEFRAG Err Msg: &quot;Insufficient Memory...&quot;
 
+{% raw %}
+
 	Article: Q95819
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -108,3 +110,5 @@ permalink: /kb/095/Q95819/
 	
 	=============================================================================
 	
+
+{% endraw %}

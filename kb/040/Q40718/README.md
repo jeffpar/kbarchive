@@ -6,6 +6,8 @@ permalink: /kb/040/Q40718/
 
 ## Q40718: BASIC TYPE...END TYPE Must Be Physically at Top of Program
 
+{% raw %}
+
 	Article: Q40718
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -44,3 +46,5 @@ permalink: /kb/040/Q40718/
 	        DIM x AS user
 	        x.str = "hello"
 	RETURN
+
+{% endraw %}

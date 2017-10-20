@@ -6,6 +6,8 @@ permalink: /kb/248/Q248987/
 
 ## Q248987: XCLN: Out of Office Rule Does Not Work w/ Prohibit Send Option
 
+{% raw %}
+
 	Article: Q248987
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,8.0,8.01,8.02,8.03,8.04,8.1,8.2,SR-1 Enterprise Update
@@ -68,3 +70,5 @@ permalink: /kb/248/Q248987/
 	
 	=============================================================================
 	
+
+{% endraw %}

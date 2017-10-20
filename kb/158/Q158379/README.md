@@ -6,6 +6,8 @@ permalink: /kb/158/Q158379/
 
 ## Q158379: XFOR: MSExchangeMSMI Reports Event IDs 2380 and 2446/2447
 
+{% raw %}
+
 	Article: Q158379
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/158/Q158379/
 	
 	=============================================================================
 	
+
+{% endraw %}

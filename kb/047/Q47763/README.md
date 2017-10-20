@@ -6,6 +6,8 @@ permalink: /kb/047/Q47763/
 
 ## Q47763: CMD.EXE Shell Fails with Incorrect COMSPEC
 
+{% raw %}
+
 	Article: Q47763
 	Product(s): See article
 	Version(s): 1.00 1.02
@@ -56,3 +58,5 @@ permalink: /kb/047/Q47763/
 	environment, examine the COMSPEC setting and also verify that CMD.EXE
 	is traversed by the search path of the PATH environment variable in
 	the CONFIG.SYS.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132819/
 
 ## Q132819: DynaComm 3270 Quick Start May Lock Up the System.
 
+{% raw %}
+
 	Article: Q132819
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/132/Q132819/
 	
 	=============================================================================
 	
+
+{% endraw %}

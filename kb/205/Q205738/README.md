@@ -6,6 +6,8 @@ permalink: /kb/205/Q205738/
 
 ## Q205738: OFF97: Multiple General Tabs in New File Dialog Box
 
+{% raw %}
+
 	Article: Q205738
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/205/Q205738/
 	
 	=============================================================================
 	
+
+{% endraw %}

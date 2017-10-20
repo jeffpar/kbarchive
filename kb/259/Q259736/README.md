@@ -6,6 +6,8 @@ permalink: /kb/259/Q259736/
 
 ## Q259736: Partial RPC Entries May Cause Netlogon Error Messages
 
+{% raw %}
+
 	Article: Q259736
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -104,3 +106,5 @@ permalink: /kb/259/Q259736/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162712/
 
 ## Q162712: Cannot Resolve Hostname with DNS
 
+{% raw %}
+
 	Article: Q162712
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -65,3 +67,5 @@ permalink: /kb/162/Q162712/
 	
 	=============================================================================
 	
+
+{% endraw %}

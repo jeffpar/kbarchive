@@ -6,6 +6,8 @@ permalink: /kb/245/Q245071/
 
 ## Q245071: Cannot Use Telnet on UNIX Workstation Through Proxy Server 2.0.
 
+{% raw %}
+
 	Article: Q245071
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:2.0,4.0
@@ -66,3 +68,5 @@ permalink: /kb/245/Q245071/
 	
 	=============================================================================
 	
+
+{% endraw %}

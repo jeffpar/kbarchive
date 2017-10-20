@@ -6,6 +6,8 @@ permalink: /kb/166/Q166054/
 
 ## Q166054: WV: Outline Expand/Collapse Keystrokes Fail in Word Viewer
 
+{% raw %}
+
 	Article: Q166054
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -76,3 +78,5 @@ permalink: /kb/166/Q166054/
 	
 	=============================================================================
 	
+
+{% endraw %}

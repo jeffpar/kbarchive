@@ -6,6 +6,8 @@ permalink: /kb/072/Q72852/
 
 ## Q72852: DOCERR: Undocumented Error U1369: Invalid Format in PWBED.EXE
 
+{% raw %}
+
 	Article: Q72852
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1
@@ -40,3 +42,5 @@ permalink: /kb/072/Q72852/
 	
 	=============================================================================
 	
+
+{% endraw %}

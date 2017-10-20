@@ -6,6 +6,8 @@ permalink: /kb/234/Q234751/
 
 ## Q234751: XWEB: Installing and Using OWA Language Packs
 
+{% raw %}
+
 	Article: Q234751
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -83,3 +85,5 @@ permalink: /kb/234/Q234751/
 	
 	=============================================================================
 	
+
+{% endraw %}

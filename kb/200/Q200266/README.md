@@ -6,6 +6,8 @@ permalink: /kb/200/Q200266/
 
 ## Q200266: PRB: Form's KeyPress Is Not Fired When ActiveX Control Has Focus
 
+{% raw %}
+
 	Article: Q200266
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0,7.0
@@ -90,3 +92,5 @@ permalink: /kb/200/Q200266/
 	
 	=============================================================================
 	
+
+{% endraw %}

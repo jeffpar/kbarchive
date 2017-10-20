@@ -6,6 +6,8 @@ permalink: /kb/134/Q134367/
 
 ## Q134367: PRB: &quot;Too Many Files&quot; Open in FoxPro for Macintosh
 
+{% raw %}
+
 	Article: Q134367
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a,3.0b
@@ -90,3 +92,5 @@ permalink: /kb/134/Q134367/
 	
 	=============================================================================
 	
+
+{% endraw %}

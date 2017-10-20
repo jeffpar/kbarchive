@@ -6,6 +6,8 @@ permalink: /kb/193/Q193811/
 
 ## Q193811: SNA Manager Does Not Show Local Domain Window
 
+{% raw %}
+
 	Article: Q193811
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP1
@@ -68,3 +70,5 @@ permalink: /kb/193/Q193811/
 	
 	=============================================================================
 	
+
+{% endraw %}

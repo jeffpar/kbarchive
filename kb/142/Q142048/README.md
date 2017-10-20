@@ -6,6 +6,8 @@ permalink: /kb/142/Q142048/
 
 ## Q142048: WinNT 3.51 SP2 Increases Performance and Resolves SQL Slowdowns
 
+{% raw %}
+
 	Article: Q142048
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -58,3 +60,5 @@ permalink: /kb/142/Q142048/
 	
 	=============================================================================
 	
+
+{% endraw %}

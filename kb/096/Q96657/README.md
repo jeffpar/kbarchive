@@ -6,6 +6,8 @@ permalink: /kb/096/Q96657/
 
 ## Q96657: 3COM: UPLOAD.EXE -D Parameter Does Not Require Backslash (&#92;)
 
+{% raw %}
+
 	Article: Q96657
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -46,3 +48,5 @@ permalink: /kb/096/Q96657/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124414/
 
 ## Q124414: Video Problems in Grolier 6.0 After Installing VFW 1.1.
 
+{% raw %}
+
 	Article: Q124414
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,1.0a,2.0; :1.0,1994 edition,1994-1995 edition,1995 edition,1995-1996 editio
@@ -108,3 +110,5 @@ permalink: /kb/124/Q124414/
 	
 	=============================================================================
 	
+
+{% endraw %}

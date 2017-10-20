@@ -6,6 +6,8 @@ permalink: /kb/096/Q96253/
 
 ## Q96253: Mac Srv Wkst: Compatibility with A/UX
 
+{% raw %}
+
 	Article: Q96253
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1,3.1a,3.1c,3.1d
@@ -46,3 +48,5 @@ permalink: /kb/096/Q96253/
 	
 	=============================================================================
 	
+
+{% endraw %}

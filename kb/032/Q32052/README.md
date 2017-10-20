@@ -6,6 +6,8 @@ permalink: /kb/032/Q32052/
 
 ## Q32052: M Hangs on Tandy 2000 with MS-DOS Version 2.11
 
+{% raw %}
+
 	Article: Q32052
 	Product(s): See article
 	Version(s): 1.00
@@ -18,3 +20,5 @@ permalink: /kb/032/Q32052/
 	
 	M does not support the Tandy 2000. There is no workaround to this
 	incompatibility.
+
+{% endraw %}

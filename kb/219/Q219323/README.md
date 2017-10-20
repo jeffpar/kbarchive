@@ -6,6 +6,8 @@ permalink: /kb/219/Q219323/
 
 ## Q219323: IPX Router Does Not Increase Transport Control Field
 
+{% raw %}
+
 	Article: Q219323
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4
@@ -76,3 +78,5 @@ permalink: /kb/219/Q219323/
 	
 	=============================================================================
 	
+
+{% endraw %}

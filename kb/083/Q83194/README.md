@@ -6,6 +6,8 @@ permalink: /kb/083/Q83194/
 
 ## Q83194: Windows 3.1 Setup Information
 
+{% raw %}
+
 	Article: Q83194
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1
@@ -359,3 +361,5 @@ permalink: /kb/083/Q83194/
 	
 	=============================================================================
 	
+
+{% endraw %}

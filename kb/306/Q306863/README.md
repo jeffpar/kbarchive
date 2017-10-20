@@ -6,6 +6,8 @@ permalink: /kb/306/Q306863/
 
 ## Q306863: SnaBase Fails to Start Automatically on HIS 2000 Admin Client
 
+{% raw %}
+
 	Article: Q306863
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -130,3 +132,5 @@ permalink: /kb/306/Q306863/
 	
 	=============================================================================
 	
+
+{% endraw %}

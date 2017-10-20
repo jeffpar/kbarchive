@@ -6,6 +6,8 @@ permalink: /kb/164/Q164961/
 
 ## Q164961: Network Monitor Setup Doesn't Find Previous Version Installation
 
+{% raw %}
+
 	Article: Q164961
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -97,3 +99,5 @@ permalink: /kb/164/Q164961/
 	
 	=============================================================================
 	
+
+{% endraw %}

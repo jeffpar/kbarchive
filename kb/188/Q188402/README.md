@@ -6,6 +6,8 @@ permalink: /kb/188/Q188402/
 
 ## Q188402: INFO: Some Visual FoxPro Files Contained in XSOURCE Folder
 
+{% raw %}
+
 	Article: Q188402
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -65,3 +67,5 @@ permalink: /kb/188/Q188402/
 	
 	=============================================================================
 	
+
+{% endraw %}

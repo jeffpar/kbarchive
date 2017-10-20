@@ -6,6 +6,8 @@ permalink: /kb/157/Q157455/
 
 ## Q157455: PRB: Import Wizard Fails Reporting &quot;No Fields Were Found&quot;
 
+{% raw %}
+
 	Article: Q157455
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -72,3 +74,5 @@ permalink: /kb/157/Q157455/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127949/
 
 ## Q127949: Unrecognizable Characters Displayed Using Remote Control
 
+{% raw %}
+
 	Article: Q127949
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -51,3 +53,5 @@ permalink: /kb/127/Q127949/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162536/
 
 ## Q162536: SMS: SMS Event 336 with a Large Number of Sites
 
+{% raw %}
+
 	Article: Q162536
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -78,3 +80,5 @@ permalink: /kb/162/Q162536/
 	
 	=============================================================================
 	
+
+{% endraw %}

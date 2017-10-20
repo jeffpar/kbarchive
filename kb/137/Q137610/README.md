@@ -6,6 +6,8 @@ permalink: /kb/137/Q137610/
 
 ## Q137610: SMS: Senders Do Not Check for Sufficient Disk Space
 
+{% raw %}
+
 	Article: Q137610
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -78,3 +80,5 @@ permalink: /kb/137/Q137610/
 	
 	=============================================================================
 	
+
+{% endraw %}

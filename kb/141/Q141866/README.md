@@ -6,6 +6,8 @@ permalink: /kb/141/Q141866/
 
 ## Q141866: FIX: App Error While Changing Install Dir for Visual C++
 
+{% raw %}
+
 	Article: Q141866
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/141/Q141866/
 	
 	=============================================================================
 	
+
+{% endraw %}

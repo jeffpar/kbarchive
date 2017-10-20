@@ -6,6 +6,8 @@ permalink: /kb/151/Q151902/
 
 ## Q151902: XCLN: Err Msg: The Attachment Could Not Be Saved
 
+{% raw %}
+
 	Article: Q151902
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -53,3 +55,5 @@ permalink: /kb/151/Q151902/
 	
 	=============================================================================
 	
+
+{% endraw %}

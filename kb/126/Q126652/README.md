@@ -6,6 +6,8 @@ permalink: /kb/126/Q126652/
 
 ## Q126652: FDDI MAC Address Issue with Windows NT 3.5
 
+{% raw %}
+
 	Article: Q126652
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -56,3 +58,5 @@ permalink: /kb/126/Q126652/
 	
 	=============================================================================
 	
+
+{% endraw %}

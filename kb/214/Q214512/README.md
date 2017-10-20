@@ -6,6 +6,8 @@ permalink: /kb/214/Q214512/
 
 ## Q214512: SFU: Showmount May Display Invalid List of NFS Exports
 
+{% raw %}
+
 	Article: Q214512
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0; :
@@ -72,3 +74,5 @@ permalink: /kb/214/Q214512/
 	
 	=============================================================================
 	
+
+{% endraw %}

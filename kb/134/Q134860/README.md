@@ -6,6 +6,8 @@ permalink: /kb/134/Q134860/
 
 ## Q134860: Problems with MS-DOS Comm. Programs Using ATI Mouse Driver
 
+{% raw %}
+
 	Article: Q134860
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/134/Q134860/
 	
 	=============================================================================
 	
+
+{% endraw %}

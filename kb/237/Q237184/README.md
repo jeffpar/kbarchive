@@ -6,6 +6,8 @@ permalink: /kb/237/Q237184/
 
 ## Q237184: FIX: Err Branching from Label &quot;You do not have access rights..&quot;
 
+{% raw %}
+
 	Article: Q237184
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -163,3 +165,5 @@ permalink: /kb/237/Q237184/
 	
 	=============================================================================
 	
+
+{% endraw %}

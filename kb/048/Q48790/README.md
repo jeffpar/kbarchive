@@ -6,6 +6,8 @@ permalink: /kb/048/Q48790/
 
 ## Q48790: Potential Problems with Identifiers Over 31 Characters
 
+{% raw %}
+
 	Article: Q48790
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -31,3 +33,5 @@ permalink: /kb/048/Q48790/
 	
 	This information also applies to QuickC Versions 1.01, 2.00, 2.01 and
 	QuickAssembler Version 2.01.
+
+{% endraw %}

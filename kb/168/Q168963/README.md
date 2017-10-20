@@ -6,6 +6,8 @@ permalink: /kb/168/Q168963/
 
 ## Q168963: Snaservr.exe Access Violation in Function s1plgrsp
 
+{% raw %}
+
 	Article: Q168963
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0
@@ -126,3 +128,5 @@ permalink: /kb/168/Q168963/
 	
 	=============================================================================
 	
+
+{% endraw %}

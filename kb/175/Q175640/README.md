@@ -6,6 +6,8 @@ permalink: /kb/175/Q175640/
 
 ## Q175640: How To Configure Nwlink LAN-to-LAN Routing Using RRAS
 
+{% raw %}
+
 	Article: Q175640
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -115,3 +117,5 @@ permalink: /kb/175/Q175640/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/218/Q218165/
 
 ## Q218165: WAPPC32 Ignores User ID Provided By APPC App On Consecutive Allo
 
+{% raw %}
+
 	Article: Q218165
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0SP3,4.0,4.0SP1,4.0SP2
@@ -113,3 +115,5 @@ permalink: /kb/218/Q218165/
 	
 	=============================================================================
 	
+
+{% endraw %}

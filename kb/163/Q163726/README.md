@@ -6,6 +6,8 @@ permalink: /kb/163/Q163726/
 
 ## Q163726: STOP 0x0000001E with DPT PM2124 SCSI Adapter and Volume Set
 
+{% raw %}
+
 	Article: Q163726
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -68,3 +70,5 @@ permalink: /kb/163/Q163726/
 	
 	=============================================================================
 	
+
+{% endraw %}

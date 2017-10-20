@@ -6,6 +6,8 @@ permalink: /kb/147/Q147469/
 
 ## Q147469: Cannot Change SMS Site Server Computer's NetBIOS Name
 
+{% raw %}
+
 	Article: Q147469
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -51,3 +53,5 @@ permalink: /kb/147/Q147469/
 	
 	=============================================================================
 	
+
+{% endraw %}

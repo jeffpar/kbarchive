@@ -6,6 +6,8 @@ permalink: /kb/299/Q299752/
 
 ## Q299752: Problems Occur with Site After You Edit the CCD
 
+{% raw %}
+
 	Article: Q299752
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4,1.99,2.0,2.1
@@ -60,3 +62,5 @@ permalink: /kb/299/Q299752/
 	
 	=============================================================================
 	
+
+{% endraw %}

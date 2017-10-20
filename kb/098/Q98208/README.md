@@ -6,6 +6,8 @@ permalink: /kb/098/Q98208/
 
 ## Q98208: SMTP: When the SMTP Gateway Uses Quotation Marks
 
+{% raw %}
+
 	Article: Q98208
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -78,3 +80,5 @@ permalink: /kb/098/Q98208/
 	
 	=============================================================================
 	
+
+{% endraw %}

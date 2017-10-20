@@ -6,6 +6,8 @@ permalink: /kb/168/Q168407/
 
 ## Q168407: DOC: &#36;(InputDir) and &#36;(ProjDir) Produce Relative Paths
 
+{% raw %}
+
 	Article: Q168407
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS NT: 5.0
@@ -52,3 +54,5 @@ permalink: /kb/168/Q168407/
 	
 	=============================================================================
 	
+
+{% endraw %}

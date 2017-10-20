@@ -6,6 +6,8 @@ permalink: /kb/138/Q138791/
 
 ## Q138791: SCSI Printing Devices Requiring Wide SCSI May Fail
 
+{% raw %}
+
 	Article: Q138791
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/138/Q138791/
 	
 	=============================================================================
 	
+
+{% endraw %}

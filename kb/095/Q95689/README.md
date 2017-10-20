@@ -6,6 +6,8 @@ permalink: /kb/095/Q95689/
 
 ## Q95689: Unable to Run TrueType Font Pack 2 Font Assistant (FAST.EXE)
 
+{% raw %}
+
 	Article: Q95689
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/095/Q95689/
 	
 	=============================================================================
 	
+
+{% endraw %}

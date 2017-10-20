@@ -6,6 +6,8 @@ permalink: /kb/157/Q157848/
 
 ## Q157848: Custom Forms Not Available for Panasonic KXP-1124i
 
+{% raw %}
+
 	Article: Q157848
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -81,3 +83,5 @@ permalink: /kb/157/Q157848/
 	
 	=============================================================================
 	
+
+{% endraw %}

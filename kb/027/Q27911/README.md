@@ -6,6 +6,8 @@ permalink: /kb/027/Q27911/
 
 ## Q27911: MS-DOS 3.20 Patch for Coprocessor Math Exceptions in BC and QB
 
+{% raw %}
+
 	Article: Q27911
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -115,3 +117,5 @@ permalink: /kb/027/Q27911/
 	      A: SYS C:
 	
 	8. The DOS patch has been installed. Reboot the system.
+
+{% endraw %}

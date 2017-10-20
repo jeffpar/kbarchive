@@ -6,6 +6,8 @@ permalink: /kb/069/Q69880/
 
 ## Q69880: LAN Manager Troubleshooting Guide
 
+{% raw %}
+
 	Article: Q69880
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -139,3 +141,5 @@ permalink: /kb/069/Q69880/
 	
 	=============================================================================
 	
+
+{% endraw %}

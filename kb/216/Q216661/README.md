@@ -6,6 +6,8 @@ permalink: /kb/216/Q216661/
 
 ## Q216661: How to Implement a Policy to Set the Date Format
 
+{% raw %}
+
 	Article: Q216661
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -100,3 +102,5 @@ permalink: /kb/216/Q216661/
 	
 	=============================================================================
 	
+
+{% endraw %}

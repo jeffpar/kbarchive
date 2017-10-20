@@ -6,6 +6,8 @@ permalink: /kb/157/Q157854/
 
 ## Q157854: HOWTO: Create a New Form Based on a Template
 
+{% raw %}
+
 	Article: Q157854
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -107,3 +109,5 @@ permalink: /kb/157/Q157854/
 	
 	=============================================================================
 	
+
+{% endraw %}

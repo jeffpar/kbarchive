@@ -6,6 +6,8 @@ permalink: /kb/149/Q149287/
 
 ## Q149287: Upgrading Site Server Recreates Program Group
 
+{% raw %}
+
 	Article: Q149287
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -54,3 +56,5 @@ permalink: /kb/149/Q149287/
 	
 	=============================================================================
 	
+
+{% endraw %}

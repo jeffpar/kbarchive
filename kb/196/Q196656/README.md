@@ -6,6 +6,8 @@ permalink: /kb/196/Q196656/
 
 ## Q196656: DOC: vbOLEDBProvider Value for DataSourceBehavior Doesn't Exist
 
+{% raw %}
+
 	Article: Q196656
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -43,3 +45,5 @@ permalink: /kb/196/Q196656/
 	
 	=============================================================================
 	
+
+{% endraw %}

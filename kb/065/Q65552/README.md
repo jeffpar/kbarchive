@@ -6,6 +6,8 @@ permalink: /kb/065/Q65552/
 
 ## Q65552: Text/Graphic Mode Determines _setbkcolor() Parameters to Use
 
+{% raw %}
+
 	Article: Q65552
 	Product(s): See article
 	Version(s): 6.00
@@ -24,3 +26,5 @@ permalink: /kb/065/Q65552/
 	For more information, see page 668 of the "Microsoft C Optimizing
 	Compiler Run-Time Library Reference" manual or query the online help
 	for "_setbkcolor()".
+
+{% endraw %}

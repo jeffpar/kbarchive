@@ -6,6 +6,8 @@ permalink: /kb/164/Q164963/
 
 ## Q164963: Form Feed at End of Job When the Last Item Is a Blank Line
 
+{% raw %}
+
 	Article: Q164963
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -52,3 +54,5 @@ permalink: /kb/164/Q164963/
 	
 	=============================================================================
 	
+
+{% endraw %}

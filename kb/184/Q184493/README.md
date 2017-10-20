@@ -6,6 +6,8 @@ permalink: /kb/184/Q184493/
 
 ## Q184493: INFO: Programmer's Guide to Using Index Server Provider in VC++
 
+{% raw %}
+
 	Article: Q184493
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.5,2.6,5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/184/Q184493/
 	
 	=============================================================================
 	
+
+{% endraw %}

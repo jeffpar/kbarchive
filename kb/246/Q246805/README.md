@@ -6,6 +6,8 @@ permalink: /kb/246/Q246805/
 
 ## Q246805: Rasctrs.dll Error Message Appears with RAS on Windows NT 4.0 SP4
 
+{% raw %}
+
 	Article: Q246805
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/246/Q246805/
 	
 	=============================================================================
 	
+
+{% endraw %}

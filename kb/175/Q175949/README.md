@@ -6,6 +6,8 @@ permalink: /kb/175/Q175949/
 
 ## Q175949: INFO: List of Values for Action Parameter of Validate Event
 
+{% raw %}
+
 	Article: Q175949
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -109,3 +111,5 @@ permalink: /kb/175/Q175949/
 	
 	=============================================================================
 	
+
+{% endraw %}

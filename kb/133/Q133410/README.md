@@ -6,6 +6,8 @@ permalink: /kb/133/Q133410/
 
 ## Q133410: The Breakpoint &quot;{,&lt;filename&gt;,} .&lt;line&gt;&quot; Cannot Be Set
 
+{% raw %}
+
 	Article: Q133410
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -60,3 +62,5 @@ permalink: /kb/133/Q133410/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67084/
 
 ## Q67084: Make Your Function Return Zero When Redefining _nullcheck()
 
+{% raw %}
+
 	Article: Q67084
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -33,3 +35,5 @@ permalink: /kb/067/Q67084/
 	    {
 	        return (0);
 	    }
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/258/Q258737/
 
 ## Q258737: FIX: DataSession Property Cannot Be Set in Session Subclass
 
+{% raw %}
+
 	Article: Q258737
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -93,3 +95,5 @@ permalink: /kb/258/Q258737/
 	
 	=============================================================================
 	
+
+{% endraw %}

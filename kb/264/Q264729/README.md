@@ -6,6 +6,8 @@ permalink: /kb/264/Q264729/
 
 ## Q264729: WD97: Deleting Bulleted Text May Cause Hebrew Word 97 to Stop
 
+{% raw %}
+
 	Article: Q264729
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/264/Q264729/
 	
 	=============================================================================
 	
+
+{% endraw %}

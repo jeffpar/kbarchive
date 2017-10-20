@@ -6,6 +6,8 @@ permalink: /kb/209/Q209033/
 
 ## Q209033: INFO: Maximum Window Sizes for Windows CE Devices
 
+{% raw %}
+
 	Article: Q209033
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -113,3 +115,5 @@ permalink: /kb/209/Q209033/
 	
 	=============================================================================
 	
+
+{% endraw %}

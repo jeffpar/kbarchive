@@ -6,6 +6,8 @@ permalink: /kb/323/Q323614/
 
 ## Q323614: SMS: Increasing Zero-Byte Files in Replmgr.box&#92;Incoming Folder
 
+{% raw %}
+
 	Article: Q323614
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3,2.0 SP4
@@ -90,3 +92,5 @@ permalink: /kb/323/Q323614/
 	
 	=============================================================================
 	
+
+{% endraw %}

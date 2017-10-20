@@ -6,6 +6,8 @@ permalink: /kb/302/Q302659/
 
 ## Q302659: MSN Companion Start Page: Changing Local Information
 
+{% raw %}
+
 	Article: Q302659
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/302/Q302659/
 	
 	=============================================================================
 	
+
+{% endraw %}

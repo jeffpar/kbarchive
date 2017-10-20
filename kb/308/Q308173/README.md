@@ -6,6 +6,8 @@ permalink: /kb/308/Q308173/
 
 ## Q308173: FrontPage Server Extensions Are Not Installed with IIS 5.1
 
+{% raw %}
+
 	Article: Q308173
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -73,3 +75,5 @@ permalink: /kb/308/Q308173/
 	
 	=============================================================================
 	
+
+{% endraw %}

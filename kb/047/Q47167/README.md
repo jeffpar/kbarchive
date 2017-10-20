@@ -6,6 +6,8 @@ permalink: /kb/047/Q47167/
 
 ## Q47167: Cannot Access LINK.EXE: Retry Does Not Retry Another Floppy
 
+{% raw %}
+
 	Article: Q47167
 	Product(s): See article
 	Version(s): 2.00
@@ -41,3 +43,5 @@ permalink: /kb/047/Q47167/
 	menu. This is similar to the above procedure but will not generate
 	the error message because the linker is not searched for until the
 	BUILD PROGRAM option is selected.
+
+{% endraw %}

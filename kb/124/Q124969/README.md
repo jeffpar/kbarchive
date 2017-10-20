@@ -6,6 +6,8 @@ permalink: /kb/124/Q124969/
 
 ## Q124969: Kids: ErrMsg: Error Messages When Accessing CD-ROM Drive
 
+{% raw %}
+
 	Article: Q124969
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a,2.0
@@ -97,3 +99,5 @@ permalink: /kb/124/Q124969/
 	
 	=============================================================================
 	
+
+{% endraw %}

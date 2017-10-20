@@ -6,6 +6,8 @@ permalink: /kb/082/Q82142/
 
 ## Q82142: Microsoft Learning Windows Hangs when Running Help Demo
 
+{% raw %}
+
 	Article: Q82142
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -59,3 +61,5 @@ permalink: /kb/082/Q82142/
 	
 	=============================================================================
 	
+
+{% endraw %}

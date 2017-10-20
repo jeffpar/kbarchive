@@ -6,6 +6,8 @@ permalink: /kb/153/Q153411/
 
 ## Q153411: Default APPC Are Not Resolved Correctly for OS/2 Clients
 
+{% raw %}
+
 	Article: Q153411
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11
@@ -63,3 +65,5 @@ permalink: /kb/153/Q153411/
 	
 	=============================================================================
 	
+
+{% endraw %}

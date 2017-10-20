@@ -6,6 +6,8 @@ permalink: /kb/155/Q155842/
 
 ## Q155842: PPT7: How to Open a .ppz File in Microsoft PowerPoint
 
+{% raw %}
+
 	Article: Q155842
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -66,3 +68,5 @@ permalink: /kb/155/Q155842/
 	
 	=============================================================================
 	
+
+{% endraw %}

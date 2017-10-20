@@ -6,6 +6,8 @@ permalink: /kb/171/Q171700/
 
 ## Q171700: Error Message: Billadd.dll Is Linked to Missing Export Mcm.dll
 
+{% raw %}
+
 	Article: Q171700
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -100,3 +102,5 @@ permalink: /kb/171/Q171700/
 	
 	=============================================================================
 	
+
+{% endraw %}

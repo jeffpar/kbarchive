@@ -6,6 +6,8 @@ permalink: /kb/107/Q107578/
 
 ## Q107578: MS-DOS Prompt Can Hang with Full Redirector and Novell Loaded
 
+{% raw %}
+
 	Article: Q107578
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -54,3 +56,5 @@ permalink: /kb/107/Q107578/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/254/Q254189/
 
 ## Q254189: Description of the Management Agent Working Folders
 
+{% raw %}
+
 	Article: Q254189
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -106,3 +108,5 @@ permalink: /kb/254/Q254189/
 	
 	=============================================================================
 	
+
+{% endraw %}

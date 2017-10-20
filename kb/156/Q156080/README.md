@@ -6,6 +6,8 @@ permalink: /kb/156/Q156080/
 
 ## Q156080: STL Sample for Non-Predicate Version of adjacent_find Function
 
+{% raw %}
+
 	Article: Q156080
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -134,3 +136,5 @@ permalink: /kb/156/Q156080/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158455/
 
 ## Q158455: Supported Network Adapters for Remoteboot Clients and WinNT 4.0
 
+{% raw %}
+
 	Article: Q158455
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -124,3 +126,5 @@ permalink: /kb/158/Q158455/
 	
 	=============================================================================
 	
+
+{% endraw %}

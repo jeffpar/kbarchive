@@ -6,6 +6,8 @@ permalink: /kb/131/Q131980/
 
 ## Q131980: PC Win: Truncated Addresses in To: Line When Printing Message
 
+{% raw %}
+
 	Article: Q131980
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -62,3 +64,5 @@ permalink: /kb/131/Q131980/
 	
 	=============================================================================
 	
+
+{% endraw %}

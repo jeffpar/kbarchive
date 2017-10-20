@@ -6,6 +6,8 @@ permalink: /kb/151/Q151495/
 
 ## Q151495: XADM: Priv.edb not Smaller After Running Edbutil /D
 
+{% raw %}
+
 	Article: Q151495
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/151/Q151495/
 	
 	=============================================================================
 	
+
+{% endraw %}

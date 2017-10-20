@@ -6,6 +6,8 @@ permalink: /kb/064/Q64264/
 
 ## Q64264: No Mouse in Windows 3.0 with DEC Mouse
 
+{% raw %}
+
 	Article: Q64264
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -50,3 +52,5 @@ permalink: /kb/064/Q64264/
 	
 	=============================================================================
 	
+
+{% endraw %}

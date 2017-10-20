@@ -6,6 +6,8 @@ permalink: /kb/083/Q83587/
 
 ## Q83587: Error when Installing Fastback for Windows on Windows 3.1
 
+{% raw %}
+
 	Article: Q83587
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/083/Q83587/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/110/Q110082/
 
 ## Q110082: Art Gallery: Monitor Changes to 256 Shades of Gray on Restart
 
+{% raw %}
+
 	Article: Q110082
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -71,3 +73,5 @@ permalink: /kb/110/Q110082/
 	
 	=============================================================================
 	
+
+{% endraw %}

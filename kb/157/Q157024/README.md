@@ -6,6 +6,8 @@ permalink: /kb/157/Q157024/
 
 ## Q157024: XCLN: Err Msg &quot;Your Exchange Server Is Unavailable&quot;
 
+{% raw %}
+
 	Article: Q157024
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/157/Q157024/
 	
 	=============================================================================
 	
+
+{% endraw %}

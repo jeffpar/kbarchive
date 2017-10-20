@@ -6,6 +6,8 @@ permalink: /kb/296/Q296821/
 
 ## Q296821: External Clocking and Sangoma S514/S508 SDLC PCI Adapter Driver
 
+{% raw %}
+
 	Article: Q296821
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -123,3 +125,5 @@ permalink: /kb/296/Q296821/
 	
 	=============================================================================
 	
+
+{% endraw %}

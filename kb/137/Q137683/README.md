@@ -6,6 +6,8 @@ permalink: /kb/137/Q137683/
 
 ## Q137683: Duplicate .fon Files Installed During Setup
 
+{% raw %}
+
 	Article: Q137683
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/137/Q137683/
 	
 	=============================================================================
 	
+
+{% endraw %}

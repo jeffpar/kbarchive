@@ -6,6 +6,8 @@ permalink: /kb/104/Q104852/
 
 ## Q104852: System and Hardware Requirements for Flight Sim 1.02
 
+{% raw %}
+
 	Article: Q104852
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.02
@@ -62,3 +64,5 @@ permalink: /kb/104/Q104852/
 	
 	=============================================================================
 	
+
+{% endraw %}

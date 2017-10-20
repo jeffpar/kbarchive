@@ -6,6 +6,8 @@ permalink: /kb/068/Q68930/
 
 ## Q68930: CADKEY Requires Microsoft Mouse Driver Version 7.04
 
+{% raw %}
+
 	Article: Q68930
 	Product(s): See article
 	Version(s): 1.00
@@ -25,3 +27,5 @@ permalink: /kb/068/Q68930/
 	manufactured by vendors independent of Microsoft; we make no warranty,
 	implied or otherwise, regarding the product's performance or
 	reliability.
+
+{% endraw %}

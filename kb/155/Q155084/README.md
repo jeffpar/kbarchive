@@ -6,6 +6,8 @@ permalink: /kb/155/Q155084/
 
 ## Q155084: DOCERR: AppleScript Do Script &quot;Quit&quot; Causes Error
 
+{% raw %}
+
 	Article: Q155084
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -52,3 +54,5 @@ permalink: /kb/155/Q155084/
 	
 	=============================================================================
 	
+
+{% endraw %}

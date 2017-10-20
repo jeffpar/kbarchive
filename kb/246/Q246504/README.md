@@ -6,6 +6,8 @@ permalink: /kb/246/Q246504/
 
 ## Q246504: XADM: Cannot Access Public Folder Properties, C1010AAE
 
+{% raw %}
+
 	Article: Q246504
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -84,3 +86,5 @@ permalink: /kb/246/Q246504/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/030/Q30402/
 
 ## Q30402: INPUT Receives Nonzero Value When &quot;&amp;&quot; Character Is Input
 
+{% raw %}
+
 	Article: Q30402
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -42,3 +44,5 @@ permalink: /kb/030/Q30402/
 	
 	   INPUT "Enter an integer : ", I%     ' Type in & character.
 	   PRINT I%
+
+{% endraw %}

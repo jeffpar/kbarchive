@@ -6,6 +6,8 @@ permalink: /kb/151/Q151718/
 
 ## Q151718: Managing Memory in MS-DOS Mode
 
+{% raw %}
+
 	Article: Q151718
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/151/Q151718/
 	
 	=============================================================================
 	
+
+{% endraw %}

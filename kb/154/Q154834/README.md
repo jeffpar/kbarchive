@@ -6,6 +6,8 @@ permalink: /kb/154/Q154834/
 
 ## Q154834: PRB: Checking Out Forms and MAK File Loses Changes in Memory
 
+{% raw %}
+
 	Article: Q154834
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.00
@@ -88,3 +90,5 @@ permalink: /kb/154/Q154834/
 	
 	=============================================================================
 	
+
+{% endraw %}

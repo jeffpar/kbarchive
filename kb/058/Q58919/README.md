@@ -6,6 +6,8 @@ permalink: /kb/058/Q58919/
 
 ## Q58919: How to Change the DOS Memory Allocation Strategy
 
+{% raw %}
+
 	Article: Q58919
 	Product(s): See article
 	Version(s): 3.x 4.x 5.00 5.10
@@ -172,3 +174,5 @@ permalink: /kb/058/Q58919/
 	        return ( outregs.x.ax ) ;
 	
 	}
+
+{% endraw %}

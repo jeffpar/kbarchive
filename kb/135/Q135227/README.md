@@ -6,6 +6,8 @@ permalink: /kb/135/Q135227/
 
 ## Q135227: Err Msg: Error Starting Program: Regserv.exe Linked to Missing
 
+{% raw %}
+
 	Article: Q135227
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/135/Q135227/
 	
 	=============================================================================
 	
+
+{% endraw %}

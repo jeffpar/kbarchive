@@ -6,6 +6,8 @@ permalink: /kb/046/Q46880/
 
 ## Q46880: Suppressing STOP Statement's &quot;Hit Any Key to Return&quot; Message
 
+{% raw %}
+
 	Article: Q46880
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -32,3 +34,5 @@ permalink: /kb/046/Q46880/
 	
 	Eliminating the need to press a key may be useful when running BASIC
 	programs from within MS-DOS batch files or from MS-DOS itself.
+
+{% endraw %}

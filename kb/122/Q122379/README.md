@@ -6,6 +6,8 @@ permalink: /kb/122/Q122379/
 
 ## Q122379: WD97: Error Saving Document: &quot;Network or File Permission Error&quot;
 
+{% raw %}
+
 	Article: Q122379
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -194,3 +196,5 @@ permalink: /kb/122/Q122379/
 	
 	=============================================================================
 	
+
+{% endraw %}

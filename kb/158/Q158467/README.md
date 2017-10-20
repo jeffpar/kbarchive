@@ -6,6 +6,8 @@ permalink: /kb/158/Q158467/
 
 ## Q158467: WD97: Description of Options for Conversion Wizard
 
+{% raw %}
+
 	Article: Q158467
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -187,3 +189,5 @@ permalink: /kb/158/Q158467/
 	
 	=============================================================================
 	
+
+{% endraw %}

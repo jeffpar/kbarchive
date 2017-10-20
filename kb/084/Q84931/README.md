@@ -6,6 +6,8 @@ permalink: /kb/084/Q84931/
 
 ## Q84931: Use Extended Memory to Build Larger Windows Help Files
 
+{% raw %}
+
 	Article: Q84931
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -65,3 +67,5 @@ permalink: /kb/084/Q84931/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190714/
 
 ## Q190714: XADM: Distribution List Name Changes When Moved to PAB
 
+{% raw %}
+
 	Article: Q190714
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -60,3 +62,5 @@ permalink: /kb/190/Q190714/
 	
 	=============================================================================
 	
+
+{% endraw %}

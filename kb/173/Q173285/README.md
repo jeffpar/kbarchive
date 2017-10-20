@@ -6,6 +6,8 @@ permalink: /kb/173/Q173285/
 
 ## Q173285: Win3.x Client Problem Connecting over Netmanage Newt TCP/IP
 
+{% raw %}
+
 	Article: Q173285
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 (all SP),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -82,3 +84,5 @@ permalink: /kb/173/Q173285/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154847/
 
 ## Q154847: WINMSD May Not Report Correct Service Pack Version
 
+{% raw %}
+
 	Article: Q154847
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -46,3 +48,5 @@ permalink: /kb/154/Q154847/
 	
 	=============================================================================
 	
+
+{% endraw %}

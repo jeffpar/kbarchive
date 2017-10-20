@@ -6,6 +6,8 @@ permalink: /kb/099/Q99632/
 
 ## Q99632: PRB: &quot;String too long to fit&quot; or &quot;Feature is not available&quot;
 
+{% raw %}
+
 	Article: Q99632
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.5,2.5a,2.5b,2.6,2.6a; WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0
@@ -90,3 +92,5 @@ permalink: /kb/099/Q99632/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245414/
 
 ## Q245414: PC WSPlus: Recovering Calendar Info to a Schedule+ 1.0 Client
 
+{% raw %}
+
 	Article: Q245414
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.x
@@ -77,3 +79,5 @@ permalink: /kb/245/Q245414/
 	
 	=============================================================================
 	
+
+{% endraw %}

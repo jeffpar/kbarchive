@@ -6,6 +6,8 @@ permalink: /kb/161/Q161562/
 
 ## Q161562: Setting Up Server-Side Includes with Different Extension
 
+{% raw %}
+
 	Article: Q161562
 	Product(s): Internet Information Server
 	Version(s): 2.0,3.0
@@ -88,3 +90,5 @@ permalink: /kb/161/Q161562/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/224/Q224811/
 
 ## Q224811: XADM: How to Designate the Home of Subfolders
 
+{% raw %}
+
 	Article: Q224811
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -77,3 +79,5 @@ permalink: /kb/224/Q224811/
 	
 	=============================================================================
 	
+
+{% endraw %}

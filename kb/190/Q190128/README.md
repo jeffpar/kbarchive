@@ -6,6 +6,8 @@ permalink: /kb/190/Q190128/
 
 ## Q190128: XCLN: Messages with Attachments Sent over IMS, Attachments Move
 
+{% raw %}
+
 	Article: Q190128
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,95,98; winnt:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -64,3 +66,5 @@ permalink: /kb/190/Q190128/
 	
 	=============================================================================
 	
+
+{% endraw %}

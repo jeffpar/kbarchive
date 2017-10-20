@@ -6,6 +6,8 @@ permalink: /kb/029/Q29838/
 
 ## Q29838: C 5.10 MTDYNA.DOC: Creating Dynamic-Link Libraries
 
+{% raw %}
+
 	Article: Q29838
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -45,3 +47,5 @@ permalink: /kb/029/Q29838/
 	CodeView debugger (CVP). For more information on this topic, see
 	Section 2.2.2 "Debugging Dynamic-Link Modules" in the Microsoft
 	CodeView and Utilities Update document.
+
+{% endraw %}

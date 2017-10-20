@@ -6,6 +6,8 @@ permalink: /kb/128/Q128366/
 
 ## Q128366: Mac Wkst: Resizing Graphic Images
 
+{% raw %}
+
 	Article: Q128366
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -40,3 +42,5 @@ permalink: /kb/128/Q128366/
 	
 	=============================================================================
 	
+
+{% endraw %}

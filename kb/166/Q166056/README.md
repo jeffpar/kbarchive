@@ -6,6 +6,8 @@ permalink: /kb/166/Q166056/
 
 ## Q166056: WV: Word Viewer Upgrade Doesn't Prompt for Document Open Option
 
+{% raw %}
+
 	Article: Q166056
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -80,3 +82,5 @@ permalink: /kb/166/Q166056/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180065/
 
 ## Q180065: Err Msg: Error 709: Try Changing Your Password Again. If You...
 
+{% raw %}
+
 	Article: Q180065
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/180/Q180065/
 	
 	=============================================================================
 	
+
+{% endraw %}

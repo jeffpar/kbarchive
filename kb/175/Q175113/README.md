@@ -6,6 +6,8 @@ permalink: /kb/175/Q175113/
 
 ## Q175113: XCLN: Deleted Items Folder Does Not Empty on Exit
 
+{% raw %}
+
 	Article: Q175113
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -47,3 +49,5 @@ permalink: /kb/175/Q175113/
 	
 	=============================================================================
 	
+
+{% endraw %}

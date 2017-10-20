@@ -6,6 +6,8 @@ permalink: /kb/227/Q227034/
 
 ## Q227034: SMS: Error Message When Advertised Program &#42;.pkg File Is Missing
 
+{% raw %}
+
 	Article: Q227034
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -51,3 +53,5 @@ permalink: /kb/227/Q227034/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190067/
 
 ## Q190067: BUG: Object References Might Not Be Released Properly
 
+{% raw %}
+
 	Article: Q190067
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0;
@@ -82,3 +84,5 @@ permalink: /kb/190/Q190067/
 	
 	=============================================================================
 	
+
+{% endraw %}

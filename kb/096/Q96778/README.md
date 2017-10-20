@@ -6,6 +6,8 @@ permalink: /kb/096/Q96778/
 
 ## Q96778: Verifying Printer Ports on a 3Server
 
+{% raw %}
+
 	Article: Q96778
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/096/Q96778/
 	
 	=============================================================================
 	
+
+{% endraw %}

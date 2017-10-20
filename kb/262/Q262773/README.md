@@ -6,6 +6,8 @@ permalink: /kb/262/Q262773/
 
 ## Q262773: XADM: Permissions Tab Should Not Display Inherited Permissions
 
+{% raw %}
+
 	Article: Q262773
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -55,3 +57,5 @@ permalink: /kb/262/Q262773/
 	
 	=============================================================================
 	
+
+{% endraw %}

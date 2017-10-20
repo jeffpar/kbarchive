@@ -6,6 +6,8 @@ permalink: /kb/183/Q183684/
 
 ## Q183684: Directory Service Manager for NetWare (DSMN) - An Overview
 
+{% raw %}
+
 	Article: Q183684
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -249,3 +251,5 @@ permalink: /kb/183/Q183684/
 	
 	=============================================================================
 	
+
+{% endraw %}

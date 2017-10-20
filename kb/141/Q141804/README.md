@@ -6,6 +6,8 @@ permalink: /kb/141/Q141804/
 
 ## Q141804: How to Force Input to Uppercase in a Combo Box
 
+{% raw %}
+
 	Article: Q141804
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -45,3 +47,5 @@ permalink: /kb/141/Q141804/
 	
 	=============================================================================
 	
+
+{% endraw %}

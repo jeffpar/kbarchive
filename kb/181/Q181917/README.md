@@ -6,6 +6,8 @@ permalink: /kb/181/Q181917/
 
 ## Q181917: XFOR: -ERR Ambiguous Alias Returned from POP3 Client
 
+{% raw %}
+
 	Article: Q181917
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -49,3 +51,5 @@ permalink: /kb/181/Q181917/
 	
 	=============================================================================
 	
+
+{% endraw %}

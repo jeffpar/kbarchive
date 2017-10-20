@@ -6,6 +6,8 @@ permalink: /kb/062/Q62871/
 
 ## Q62871: Insufficent Memory to Run Toolbook Application
 
+{% raw %}
+
 	Article: Q62871
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -91,3 +93,5 @@ permalink: /kb/062/Q62871/
 	
 	=============================================================================
 	
+
+{% endraw %}

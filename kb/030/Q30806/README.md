@@ -6,6 +6,8 @@ permalink: /kb/030/Q30806/
 
 ## Q30806: MASM 5.10 OS2.DOC: OS/2 Call Summary - File Management
 
+{% raw %}
+
 	Article: Q30806
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -134,3 +136,5 @@ permalink: /kb/030/Q30806/
 	
 	   @DosSetFileMode - Changes the mode (attribute) of a file
 	   Parameters - Filename:PZ, Attribute:W, Reserved:D
+
+{% endraw %}

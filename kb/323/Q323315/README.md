@@ -6,6 +6,8 @@ permalink: /kb/323/Q323315/
 
 ## Q323315: HOW TO: Create an IIS Baseline by Using the Processor Object
 
+{% raw %}
+
 	Article: Q323315
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -224,3 +226,5 @@ permalink: /kb/323/Q323315/
 	
 	=============================================================================
 	
+
+{% endraw %}

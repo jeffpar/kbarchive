@@ -6,6 +6,8 @@ permalink: /kb/085/Q85251/
 
 ## Q85251: Cannot Print TrueType Fonts to QMS-PS 410 or 815
 
+{% raw %}
+
 	Article: Q85251
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/085/Q85251/
 	
 	=============================================================================
 	
+
+{% endraw %}

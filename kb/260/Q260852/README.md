@@ -6,6 +6,8 @@ permalink: /kb/260/Q260852/
 
 ## Q260852: StarLancer: Error Message When You Quit Game in Windows 2000
 
+{% raw %}
+
 	Article: Q260852
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -123,3 +125,5 @@ permalink: /kb/260/Q260852/
 	
 	=============================================================================
 	
+
+{% endraw %}

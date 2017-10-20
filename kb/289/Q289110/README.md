@@ -6,6 +6,8 @@ permalink: /kb/289/Q289110/
 
 ## Q289110: SMS: SQL Replication of the SMS Database Is Not Supported
 
+{% raw %}
+
 	Article: Q289110
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -60,3 +62,5 @@ permalink: /kb/289/Q289110/
 	
 	=============================================================================
 	
+
+{% endraw %}

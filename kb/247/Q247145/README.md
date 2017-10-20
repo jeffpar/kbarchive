@@ -6,6 +6,8 @@ permalink: /kb/247/Q247145/
 
 ## Q247145: XADM: ID No. c1040af3 or c1040af5 When Rehoming a Public Folder
 
+{% raw %}
+
 	Article: Q247145
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -99,3 +101,5 @@ permalink: /kb/247/Q247145/
 	
 	=============================================================================
 	
+
+{% endraw %}

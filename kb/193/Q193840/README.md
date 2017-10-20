@@ -6,6 +6,8 @@ permalink: /kb/193/Q193840/
 
 ## Q193840: RAS Fails with NetBEUI Protocol Service Failed to Start Error
 
+{% raw %}
+
 	Article: Q193840
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/193/Q193840/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/219/Q219538/
 
 ## Q219538: DLL Registration Causes Access Violation on Terminal Server
 
+{% raw %}
+
 	Article: Q219538
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/219/Q219538/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129294/
 
 ## Q129294: How Messages Are Displayed in Bulletin Boards
 
+{% raw %}
+
 	Article: Q129294
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -56,3 +58,5 @@ permalink: /kb/129/Q129294/
 	
 	=============================================================================
 	
+
+{% endraw %}

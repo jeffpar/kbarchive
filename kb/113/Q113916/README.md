@@ -6,6 +6,8 @@ permalink: /kb/113/Q113916/
 
 ## Q113916: Copy from One Novell Server to Another Fails
 
+{% raw %}
+
 	Article: Q113916
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -47,3 +49,5 @@ permalink: /kb/113/Q113916/
 	
 	=============================================================================
 	
+
+{% endraw %}

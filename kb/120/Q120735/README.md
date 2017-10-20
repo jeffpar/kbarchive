@@ -6,6 +6,8 @@ permalink: /kb/120/Q120735/
 
 ## Q120735: Space Simulator Err Msg: Violated System Integrity in Windows
 
+{% raw %}
+
 	Article: Q120735
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -51,3 +53,5 @@ permalink: /kb/120/Q120735/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/030/Q30271/
 
 ## Q30271: LINK QB &amp; C &quot;Unresolved Externals&quot;; How to Use LINK /NOE, /NOD
 
+{% raw %}
+
 	Article: Q30271
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -110,3 +112,5 @@ permalink: /kb/030/Q30271/
 	    workspace=malloc((unsigned) bytes);
 	    free(workspace);
 	   }
+
+{% endraw %}

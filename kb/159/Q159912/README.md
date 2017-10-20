@@ -6,6 +6,8 @@ permalink: /kb/159/Q159912/
 
 ## Q159912: Rotated Text in Excel May Print Incorrectly to PCL5 Printers
 
+{% raw %}
+
 	Article: Q159912
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.51,4.0
@@ -88,3 +90,5 @@ permalink: /kb/159/Q159912/
 	
 	=============================================================================
 	
+
+{% endraw %}

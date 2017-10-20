@@ -6,6 +6,8 @@ permalink: /kb/223/Q223111/
 
 ## Q223111: FIX: Type Mismatch Error When Compiling UserControl
 
+{% raw %}
+
 	Article: Q223111
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -133,3 +135,5 @@ permalink: /kb/223/Q223111/
 	
 	=============================================================================
 	
+
+{% endraw %}

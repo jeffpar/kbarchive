@@ -6,6 +6,8 @@ permalink: /kb/156/Q156729/
 
 ## Q156729: XFOR: Malformed Dir-Sync Transactions Cause DXA to Stop
 
+{% raw %}
+
 	Article: Q156729
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/156/Q156729/
 	
 	=============================================================================
 	
+
+{% endraw %}

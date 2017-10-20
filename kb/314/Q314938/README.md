@@ -6,6 +6,8 @@ permalink: /kb/314/Q314938/
 
 ## Q314938: Internet Information Services Does Not Log Requests Properly
 
+{% raw %}
+
 	Article: Q314938
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -105,3 +107,5 @@ permalink: /kb/314/Q314938/
 	
 	=============================================================================
 	
+
+{% endraw %}

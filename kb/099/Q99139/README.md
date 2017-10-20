@@ -6,6 +6,8 @@ permalink: /kb/099/Q99139/
 
 ## Q99139: PC Ext: SESSION.LOG File Shows Only First 10 Characters
 
+{% raw %}
+
 	Article: Q99139
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -40,3 +42,5 @@ permalink: /kb/099/Q99139/
 	
 	=============================================================================
 	
+
+{% endraw %}

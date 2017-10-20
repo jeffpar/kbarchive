@@ -6,6 +6,8 @@ permalink: /kb/171/Q171353/
 
 ## Q171353: Computer with Ultra DMA IDE Controller May Hang
 
+{% raw %}
+
 	Article: Q171353
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -116,3 +118,5 @@ permalink: /kb/171/Q171353/
 	
 	=============================================================================
 	
+
+{% endraw %}

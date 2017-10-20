@@ -6,6 +6,8 @@ permalink: /kb/057/Q57537/
 
 ## Q57537: Leading Edge Won't Take Mode CO80 Command
 
+{% raw %}
+
 	Article: Q57537
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/057/Q57537/
 	
 	=============================================================================
 	
+
+{% endraw %}

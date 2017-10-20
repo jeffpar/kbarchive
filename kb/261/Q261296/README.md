@@ -6,6 +6,8 @@ permalink: /kb/261/Q261296/
 
 ## Q261296: Asheron's Call: How to Improve Game Performance
 
+{% raw %}
+
 	Article: Q261296
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -208,3 +210,5 @@ permalink: /kb/261/Q261296/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/243/Q243274/
 
 ## Q243274: XCON: GWART Does Not Contain All Possible Routes
 
+{% raw %}
+
 	Article: Q243274
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -85,3 +87,5 @@ permalink: /kb/243/Q243274/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/083/Q83732/
 
 ## Q83732: Wrong Tray Selection Causes Epson Printer Error in Windows 3.1
 
+{% raw %}
+
 	Article: Q83732
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/083/Q83732/
 	
 	=============================================================================
 	
+
+{% endraw %}

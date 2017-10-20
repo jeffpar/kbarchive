@@ -6,6 +6,8 @@ permalink: /kb/186/Q186905/
 
 ## Q186905: Radius Client Uses 100 Percent CPU on Invalid Response
 
+{% raw %}
+
 	Article: Q186905
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -78,3 +80,5 @@ permalink: /kb/186/Q186905/
 	
 	=============================================================================
 	
+
+{% endraw %}

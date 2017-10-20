@@ -6,6 +6,8 @@ permalink: /kb/128/Q128963/
 
 ## Q128963: PC MAPI: How To Determine if a Mail Session Already Exists
 
+{% raw %}
+
 	Article: Q128963
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -80,3 +82,5 @@ permalink: /kb/128/Q128963/
 	
 	=============================================================================
 	
+
+{% endraw %}

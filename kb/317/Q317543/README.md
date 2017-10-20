@@ -6,6 +6,8 @@ permalink: /kb/317/Q317543/
 
 ## Q317543: How To Connect To MSN Using Macintosh Remote Access
 
+{% raw %}
+
 	Article: Q317543
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/317/Q317543/
 	
 	=============================================================================
 	
+
+{% endraw %}

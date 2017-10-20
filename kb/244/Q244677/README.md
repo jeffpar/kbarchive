@@ -6,6 +6,8 @@ permalink: /kb/244/Q244677/
 
 ## Q244677: HOWTO: Create a Desktop Shortcut with the Windows Script Host
 
+{% raw %}
+
 	Article: Q244677
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -103,3 +105,5 @@ permalink: /kb/244/Q244677/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197127/
 
 ## Q197127: HOWTO: Add a Custom Font Property to a User Control
 
+{% raw %}
+
 	Article: Q197127
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -227,3 +229,5 @@ permalink: /kb/197/Q197127/
 	
 	=============================================================================
 	
+
+{% endraw %}

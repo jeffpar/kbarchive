@@ -6,6 +6,8 @@ permalink: /kb/139/Q139568/
 
 ## Q139568: How to Dock a Toolbar that Is Part of a Formset
 
+{% raw %}
+
 	Article: Q139568
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -96,3 +98,5 @@ permalink: /kb/139/Q139568/
 	
 	=============================================================================
 	
+
+{% endraw %}

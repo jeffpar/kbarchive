@@ -6,6 +6,8 @@ permalink: /kb/271/Q271500/
 
 ## Q271500: Golf 2001: Screen Saver Does Not Initialize When You Play Game
 
+{% raw %}
+
 	Article: Q271500
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/271/Q271500/
 	
 	=============================================================================
 	
+
+{% endraw %}

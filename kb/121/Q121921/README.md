@@ -6,6 +6,8 @@ permalink: /kb/121/Q121921/
 
 ## Q121921: Backup Reports Incorrect Time in Foreign Countries
 
+{% raw %}
+
 	Article: Q121921
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:3.5
@@ -80,3 +82,5 @@ permalink: /kb/121/Q121921/
 	
 	=============================================================================
 	
+
+{% endraw %}

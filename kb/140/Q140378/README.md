@@ -6,6 +6,8 @@ permalink: /kb/140/Q140378/
 
 ## Q140378: Using NETSVC.EXE To Control and Display Services
 
+{% raw %}
+
 	Article: Q140378
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,1.1,3.5,3.51
@@ -68,3 +70,5 @@ permalink: /kb/140/Q140378/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186515/
 
 ## Q186515: Do Not Run Terminal Server in Installation Mode
 
+{% raw %}
+
 	Article: Q186515
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -92,3 +94,5 @@ permalink: /kb/186/Q186515/
 	
 	=============================================================================
 	
+
+{% endraw %}

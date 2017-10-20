@@ -6,6 +6,8 @@ permalink: /kb/219/Q219025/
 
 ## Q219025: BUG: ODBC Query of VFP View Returns SQL_NO_DATA_FOUND
 
+{% raw %}
+
 	Article: Q219025
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,6.0
@@ -82,3 +84,5 @@ permalink: /kb/219/Q219025/
 	
 	=============================================================================
 	
+
+{% endraw %}

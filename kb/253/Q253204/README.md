@@ -6,6 +6,8 @@ permalink: /kb/253/Q253204/
 
 ## Q253204: PRB: Err Msg: The Server Was Unable to Logon the Windows NT...
 
+{% raw %}
+
 	Article: Q253204
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:; winnt:3.0,4.0,5.0
@@ -91,3 +93,5 @@ permalink: /kb/253/Q253204/
 	
 	=============================================================================
 	
+
+{% endraw %}

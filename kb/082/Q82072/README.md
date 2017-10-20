@@ -6,6 +6,8 @@ permalink: /kb/082/Q82072/
 
 ## Q82072: Third-Party Applications May Need to Be Reinstalled
 
+{% raw %}
+
 	Article: Q82072
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/082/Q82072/
 	
 	=============================================================================
 	
+
+{% endraw %}

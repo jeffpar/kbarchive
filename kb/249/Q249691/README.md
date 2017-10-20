@@ -6,6 +6,8 @@ permalink: /kb/249/Q249691/
 
 ## Q249691: XADM: Error in Mailbox Manager Documentation on IPM.Note
 
+{% raw %}
+
 	Article: Q249691
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -62,3 +64,5 @@ permalink: /kb/249/Q249691/
 	
 	=============================================================================
 	
+
+{% endraw %}

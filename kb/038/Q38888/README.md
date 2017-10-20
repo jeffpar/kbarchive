@@ -6,6 +6,8 @@ permalink: /kb/038/Q38888/
 
 ## Q38888: &amp;H8000 to &amp;HFFFF Hex = -32,768 to -1, Affects LONG Bit Masking
 
+{% raw %}
+
 	Article: Q38888
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -113,3 +115,5 @@ permalink: /kb/038/Q38888/
 	shortint% = &H8000
 	PRINT "longint& =", longint&, HEX$(longint&)
 	PRINT "shortint% =", shortint%, HEX$(shortint%)
+
+{% endraw %}

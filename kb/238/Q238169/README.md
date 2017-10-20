@@ -6,6 +6,8 @@ permalink: /kb/238/Q238169/
 
 ## Q238169: SMS: Queries using SMS_R_SYSTEM Return Inaccurate Results
 
+{% raw %}
+
 	Article: Q238169
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -74,3 +76,5 @@ permalink: /kb/238/Q238169/
 	
 	=============================================================================
 	
+
+{% endraw %}

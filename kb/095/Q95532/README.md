@@ -6,6 +6,8 @@ permalink: /kb/095/Q95532/
 
 ## Q95532: Deleting Unneeded Files After Converting a Stacker Drive
 
+{% raw %}
+
 	Article: Q95532
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2
@@ -59,3 +61,5 @@ permalink: /kb/095/Q95532/
 	
 	=============================================================================
 	
+
+{% endraw %}

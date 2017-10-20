@@ -6,6 +6,8 @@ permalink: /kb/103/Q103539/
 
 ## Q103539: Running FASTOPEN and CHKDSK Removes File Attributes on CVF
 
+{% raw %}
+
 	Article: Q103539
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -46,3 +48,5 @@ permalink: /kb/103/Q103539/
 	
 	=============================================================================
 	
+
+{% endraw %}

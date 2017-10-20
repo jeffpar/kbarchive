@@ -6,6 +6,8 @@ permalink: /kb/196/Q196608/
 
 ## Q196608: HP4000 Paper Drawer Options Not Available When Using HPT
 
+{% raw %}
+
 	Article: Q196608
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -57,3 +59,5 @@ permalink: /kb/196/Q196608/
 	
 	=============================================================================
 	
+
+{% endraw %}

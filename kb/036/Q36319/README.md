@@ -6,6 +6,8 @@ permalink: /kb/036/Q36319/
 
 ## Q36319: INFO: Algorithm Creates Window Same Size As Full-Screen Window
 
+{% raw %}
+
 	Article: Q36319
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -72,3 +74,5 @@ permalink: /kb/036/Q36319/
 	
 	=============================================================================
 	
+
+{% endraw %}

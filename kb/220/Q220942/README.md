@@ -6,6 +6,8 @@ permalink: /kb/220/Q220942/
 
 ## Q220942: TN5250 Clients May Fail with a STATE_CHECK Error
 
+{% raw %}
+
 	Article: Q220942
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
@@ -84,3 +86,5 @@ permalink: /kb/220/Q220942/
 	
 	=============================================================================
 	
+
+{% endraw %}

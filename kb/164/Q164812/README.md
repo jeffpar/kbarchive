@@ -6,6 +6,8 @@ permalink: /kb/164/Q164812/
 
 ## Q164812: Computer Name Truncated When Name Resolution Attempted
 
+{% raw %}
+
 	Article: Q164812
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -71,3 +73,5 @@ permalink: /kb/164/Q164812/
 	
 	=============================================================================
 	
+
+{% endraw %}

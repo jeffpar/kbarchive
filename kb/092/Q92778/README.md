@@ -6,6 +6,8 @@ permalink: /kb/092/Q92778/
 
 ## Q92778: Setup Hangs, Reboots, or Generates Errors with Racal NI6510
 
+{% raw %}
+
 	Article: Q92778
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -47,3 +49,5 @@ permalink: /kb/092/Q92778/
 	
 	=============================================================================
 	
+
+{% endraw %}

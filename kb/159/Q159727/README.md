@@ -6,6 +6,8 @@ permalink: /kb/159/Q159727/
 
 ## Q159727: The File Drive Letter:&#92;&lt;winnt&gt;&#92;. Was Not Copied Correctly
 
+{% raw %}
+
 	Article: Q159727
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -61,3 +63,5 @@ permalink: /kb/159/Q159727/
 	
 	=============================================================================
 	
+
+{% endraw %}

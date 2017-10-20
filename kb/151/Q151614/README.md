@@ -6,6 +6,8 @@ permalink: /kb/151/Q151614/
 
 ## Q151614: Differences in Dhcpcmd.exe in WinNT 3.5, 3.51, and 4.0
 
+{% raw %}
+
 	Article: Q151614
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -82,3 +84,5 @@ permalink: /kb/151/Q151614/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97099/
 
 ## Q97099: Windows NT Does Not Support Windows Printing System 1.0
 
+{% raw %}
+
 	Article: Q97099
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,3.1,3.5,3.51,4.0
@@ -37,3 +39,5 @@ permalink: /kb/097/Q97099/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123501/
 
 ## Q123501: PC Adm: Err Msg: Can Not Create User or Can Not Delete User
 
+{% raw %}
+
 	Article: Q123501
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a,3.2
@@ -56,3 +58,5 @@ permalink: /kb/123/Q123501/
 	
 	=============================================================================
 	
+
+{% endraw %}

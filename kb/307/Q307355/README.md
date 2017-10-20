@@ -6,6 +6,8 @@ permalink: /kb/307/Q307355/
 
 ## Q307355: HOW TO: Call a Web Service in Visual FoxPro 7.0
 
+{% raw %}
+
 	Article: Q307355
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -182,3 +184,5 @@ permalink: /kb/307/Q307355/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/095/Q95020/
 
 ## Q95020: INF: Setting Data Sources for SQL Server Driver on Novell NIK
 
+{% raw %}
+
 	Article: Q95020
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -85,3 +87,5 @@ permalink: /kb/095/Q95020/
 	
 	=============================================================================
 	
+
+{% endraw %}

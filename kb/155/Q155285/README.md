@@ -6,6 +6,8 @@ permalink: /kb/155/Q155285/
 
 ## Q155285: Cinemania 96 Update Contents: July 96
 
+{% raw %}
+
 	Article: Q155285
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -47,3 +49,5 @@ permalink: /kb/155/Q155285/
 	
 	=============================================================================
 	
+
+{% endraw %}

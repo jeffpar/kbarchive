@@ -6,6 +6,8 @@ permalink: /kb/149/Q149788/
 
 ## Q149788: BUG: Visual SourceSafe Books Online Isn't Properly Installed
 
+{% raw %}
+
 	Article: Q149788
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0
@@ -74,3 +76,5 @@ permalink: /kb/149/Q149788/
 	
 	=============================================================================
 	
+
+{% endraw %}

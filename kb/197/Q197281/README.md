@@ -6,6 +6,8 @@ permalink: /kb/197/Q197281/
 
 ## Q197281: XCON: MTA Can Stop After Generating an Event ID 9405
 
+{% raw %}
+
 	Article: Q197281
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1
@@ -94,3 +96,5 @@ permalink: /kb/197/Q197281/
 	
 	=============================================================================
 	
+
+{% endraw %}

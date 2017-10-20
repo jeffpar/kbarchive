@@ -6,6 +6,8 @@ permalink: /kb/094/Q94657/
 
 ## Q94657: Upgrading WFWG Over Windows with Novell NetWare Lite
 
+{% raw %}
+
 	Article: Q94657
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -68,3 +70,5 @@ permalink: /kb/094/Q94657/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82739/
 
 ## Q82739: SUN PC-NFS Version 3.5C and Windows 3.1
 
+{% raw %}
+
 	Article: Q82739
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -100,3 +102,5 @@ permalink: /kb/082/Q82739/
 	
 	=============================================================================
 	
+
+{% endraw %}

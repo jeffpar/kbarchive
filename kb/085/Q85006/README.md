@@ -6,6 +6,8 @@ permalink: /kb/085/Q85006/
 
 ## Q85006: The Purpose of TBMI2.COM File
 
+{% raw %}
+
 	Article: Q85006
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/085/Q85006/
 	
 	=============================================================================
 	
+
+{% endraw %}

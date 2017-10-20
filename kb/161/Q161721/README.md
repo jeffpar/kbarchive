@@ -6,6 +6,8 @@ permalink: /kb/161/Q161721/
 
 ## Q161721: Interphase EISA Adapter Doesn't Support EISA Bus Preemption
 
+{% raw %}
+
 	Article: Q161721
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -128,3 +130,5 @@ permalink: /kb/161/Q161721/
 	
 	=============================================================================
 	
+
+{% endraw %}

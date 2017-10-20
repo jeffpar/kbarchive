@@ -6,6 +6,8 @@ permalink: /kb/302/Q302508/
 
 ## Q302508: Duplicate Queries Appear in the Administrator Console
 
+{% raw %}
+
 	Article: Q302508
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -74,3 +76,5 @@ permalink: /kb/302/Q302508/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/045/Q45563/
 
 ## Q45563: setbuf() Doesn't Control MS-DOS Buffer or Keyboard Buffer
 
+{% raw %}
+
 	Article: Q45563
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -77,3 +79,5 @@ permalink: /kb/045/Q45563/
 	
 	=============================================================================
 	
+
+{% endraw %}

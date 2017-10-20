@@ -6,6 +6,8 @@ permalink: /kb/049/Q49401/
 
 ## Q49401: Example of Passing Array of Doubles from BASIC to MASM
 
+{% raw %}
+
 	Article: Q49401
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -91,3 +93,5 @@ permalink: /kb/049/Q49401/
 	   98765.432
 	   12345.678
 	   777.888
+
+{% endraw %}

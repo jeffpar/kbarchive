@@ -6,6 +6,8 @@ permalink: /kb/256/Q256202/
 
 ## Q256202: SMS: Upgrading SQL Server May Not Succeed When Running SMS
 
+{% raw %}
+
 	Article: Q256202
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -94,3 +96,5 @@ permalink: /kb/256/Q256202/
 	
 	=============================================================================
 	
+
+{% endraw %}

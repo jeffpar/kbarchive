@@ -6,6 +6,8 @@ permalink: /kb/316/Q316830/
 
 ## Q316830: Offline E-mail Features in MSN Explorer--For MSN Internet Access
 
+{% raw %}
+
 	Article: Q316830
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -68,3 +70,5 @@ permalink: /kb/316/Q316830/
 	
 	=============================================================================
 	
+
+{% endraw %}

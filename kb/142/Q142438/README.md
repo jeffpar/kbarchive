@@ -6,6 +6,8 @@ permalink: /kb/142/Q142438/
 
 ## Q142438: PPT7: Frequently Asked Questions about Genigraphics
 
+{% raw %}
+
 	Article: Q142438
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -165,3 +167,5 @@ permalink: /kb/142/Q142438/
 	
 	=============================================================================
 	
+
+{% endraw %}

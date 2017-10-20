@@ -6,6 +6,8 @@ permalink: /kb/226/Q226900/
 
 ## Q226900: SMS: Package Instruction Files Are Distribution Server-Specific
 
+{% raw %}
+
 	Article: Q226900
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -63,3 +65,5 @@ permalink: /kb/226/Q226900/
 	
 	=============================================================================
 	
+
+{% endraw %}

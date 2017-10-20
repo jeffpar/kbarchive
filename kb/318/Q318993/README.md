@@ -6,6 +6,8 @@ permalink: /kb/318/Q318993/
 
 ## Q318993: FIX: XMLToCursor() Truncates Data on DBCS System
 
+{% raw %}
+
 	Article: Q318993
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -92,3 +94,5 @@ permalink: /kb/318/Q318993/
 	
 	=============================================================================
 	
+
+{% endraw %}

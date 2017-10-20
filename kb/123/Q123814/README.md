@@ -6,6 +6,8 @@ permalink: /kb/123/Q123814/
 
 ## Q123814: Win NT Err Msg: MBR Checksum Error: A Virus May Be Present...
 
+{% raw %}
+
 	Article: Q123814
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/123/Q123814/
 	
 	=============================================================================
 	
+
+{% endraw %}

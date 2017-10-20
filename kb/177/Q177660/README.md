@@ -6,6 +6,8 @@ permalink: /kb/177/Q177660/
 
 ## Q177660: Access Violation Occurs in Sfmprint.exe on Busy Print Server
 
+{% raw %}
+
 	Article: Q177660
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -69,3 +71,5 @@ permalink: /kb/177/Q177660/
 	
 	=============================================================================
 	
+
+{% endraw %}

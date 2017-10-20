@@ -6,6 +6,8 @@ permalink: /kb/142/Q142544/
 
 ## Q142544: Windows 95/98 Win.com Command-Line Switches
 
+{% raw %}
+
 	Article: Q142544
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -92,3 +94,5 @@ permalink: /kb/142/Q142544/
 	
 	=============================================================================
 	
+
+{% endraw %}

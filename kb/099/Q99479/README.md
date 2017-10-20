@@ -6,6 +6,8 @@ permalink: /kb/099/Q99479/
 
 ## Q99479: How to Modify MODEMS.INF for Non-Standard Modems
 
+{% raw %}
+
 	Article: Q99479
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/099/Q99479/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176519/
 
 ## Q176519: Cannot Quit Internet Explorer When You Reset Your MSN Password
 
+{% raw %}
+
 	Article: Q176519
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -52,3 +54,5 @@ permalink: /kb/176/Q176519/
 	
 	=============================================================================
 	
+
+{% endraw %}

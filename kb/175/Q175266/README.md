@@ -6,6 +6,8 @@ permalink: /kb/175/Q175266/
 
 ## Q175266: Creating Many Partitions Causes Double Drive Letters
 
+{% raw %}
+
 	Article: Q175266
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -74,3 +76,5 @@ permalink: /kb/175/Q175266/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/043/Q43075/
 
 ## Q43075: Using Batch Files with the FOR Batch Command
 
+{% raw %}
+
 	Article: Q43075
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:
@@ -59,3 +61,5 @@ permalink: /kb/043/Q43075/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165997/
 
 ## Q165997: Unable to Execute Server-side Include (.stm) Files
 
+{% raw %}
+
 	Article: Q165997
 	Product(s): Internet Information Server
 	Version(s): Winnt:2.0,3.0
@@ -64,3 +66,5 @@ permalink: /kb/165/Q165997/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141327/
 
 ## Q141327: Multimedia: WinToon Causes Hang or Page Fault in Kernel32.dll
 
+{% raw %}
+
 	Article: Q141327
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/141/Q141327/
 	
 	=============================================================================
 	
+
+{% endraw %}

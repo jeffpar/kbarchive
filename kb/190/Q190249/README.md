@@ -6,6 +6,8 @@ permalink: /kb/190/Q190249/
 
 ## Q190249: INFO: VB 6.0 Readme Part 9: DHTML Page Designer Issues
 
+{% raw %}
+
 	Article: Q190249
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -643,3 +645,5 @@ permalink: /kb/190/Q190249/
 	
 	=============================================================================
 	
+
+{% endraw %}

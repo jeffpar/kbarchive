@@ -6,6 +6,8 @@ permalink: /kb/160/Q160843/
 
 ## Q160843: Windows 95/98 Clients Cannot See Long Share Names
 
+{% raw %}
+
 	Article: Q160843
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/160/Q160843/
 	
 	=============================================================================
 	
+
+{% endraw %}

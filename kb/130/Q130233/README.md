@@ -6,6 +6,8 @@ permalink: /kb/130/Q130233/
 
 ## Q130233: How to Install or Remove a Font in Windows 95/98
 
+{% raw %}
+
 	Article: Q130233
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -142,3 +144,5 @@ permalink: /kb/130/Q130233/
 	
 	=============================================================================
 	
+
+{% endraw %}

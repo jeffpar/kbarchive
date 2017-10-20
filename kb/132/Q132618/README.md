@@ -6,6 +6,8 @@ permalink: /kb/132/Q132618/
 
 ## Q132618: Resizing Explorer Window While Renaming a File Hangs Computer
 
+{% raw %}
+
 	Article: Q132618
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -57,3 +59,5 @@ permalink: /kb/132/Q132618/
 	
 	=============================================================================
 	
+
+{% endraw %}

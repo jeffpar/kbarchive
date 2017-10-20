@@ -6,6 +6,8 @@ permalink: /kb/232/Q232213/
 
 ## Q232213: How to Use the Dhcpcmd.exe Tool Included with Support Tools
 
+{% raw %}
+
 	Article: Q232213
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -462,3 +464,5 @@ permalink: /kb/232/Q232213/
 	
 	=============================================================================
 	
+
+{% endraw %}

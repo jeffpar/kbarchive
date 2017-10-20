@@ -6,6 +6,8 @@ permalink: /kb/123/Q123734/
 
 ## Q123734: Writer/Artist: CD-ROM System Requirements
 
+{% raw %}
+
 	Article: Q123734
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 1.1,1.1a
@@ -86,3 +88,5 @@ permalink: /kb/123/Q123734/
 	
 	=============================================================================
 	
+
+{% endraw %}

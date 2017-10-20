@@ -6,6 +6,8 @@ permalink: /kb/103/Q103964/
 
 ## Q103964: PC DOS: Err Msg: Notice 91 Duplicate Folder Name
 
+{% raw %}
+
 	Article: Q103964
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -60,3 +62,5 @@ permalink: /kb/103/Q103964/
 	
 	=============================================================================
 	
+
+{% endraw %}

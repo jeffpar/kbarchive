@@ -6,6 +6,8 @@ permalink: /kb/167/Q167026/
 
 ## Q167026: Windows NT 4.0 DNS Server Stops Responding to Queries
 
+{% raw %}
+
 	Article: Q167026
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/167/Q167026/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139672/
 
 ## Q139672: FIX: Initialization Var Shadow_SetTime Set to Invalid Value
 
+{% raw %}
+
 	Article: Q139672
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,5.0
@@ -64,3 +66,5 @@ permalink: /kb/139/Q139672/
 	
 	=============================================================================
 	
+
+{% endraw %}

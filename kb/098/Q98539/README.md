@@ -6,6 +6,8 @@ permalink: /kb/098/Q98539/
 
 ## Q98539: 3Server Restore Fails on HPFS Volumes
 
+{% raw %}
+
 	Article: Q98539
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -38,3 +40,5 @@ permalink: /kb/098/Q98539/
 	
 	=============================================================================
 	
+
+{% endraw %}

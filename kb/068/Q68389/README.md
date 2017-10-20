@@ -6,6 +6,8 @@ permalink: /kb/068/Q68389/
 
 ## Q68389: INFO: sizeof(char Expression) Same as sizeof(int)
 
+{% raw %}
+
 	Article: Q68389
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -97,3 +99,5 @@ permalink: /kb/068/Q68389/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/286/Q286755/
 
 ## Q286755: How to Create an Index on a Custom Property
 
+{% raw %}
+
 	Article: Q286755
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.5,2.6,6.0
@@ -213,3 +215,5 @@ permalink: /kb/286/Q286755/
 	
 	=============================================================================
 	
+
+{% endraw %}

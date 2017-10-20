@@ -6,6 +6,8 @@ permalink: /kb/196/Q196555/
 
 ## Q196555: WD97: Cannot Drag from Word to Another Program
 
+{% raw %}
+
 	Article: Q196555
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -58,3 +60,5 @@ permalink: /kb/196/Q196555/
 	
 	=============================================================================
 	
+
+{% endraw %}

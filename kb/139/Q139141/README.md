@@ -6,6 +6,8 @@ permalink: /kb/139/Q139141/
 
 ## Q139141: Debugging SMS/SQL Related Problems
 
+{% raw %}
+
 	Article: Q139141
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1,1.2,2.0,2.0 SP1
@@ -86,3 +88,5 @@ permalink: /kb/139/Q139141/
 	
 	=============================================================================
 	
+
+{% endraw %}

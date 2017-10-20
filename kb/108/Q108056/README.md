@@ -6,6 +6,8 @@ permalink: /kb/108/Q108056/
 
 ## Q108056: Macintosh Finder Sometimes Does Not Display File
 
+{% raw %}
+
 	Article: Q108056
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -53,3 +55,5 @@ permalink: /kb/108/Q108056/
 	
 	=============================================================================
 	
+
+{% endraw %}

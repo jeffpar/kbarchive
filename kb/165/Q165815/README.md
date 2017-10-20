@@ -6,6 +6,8 @@ permalink: /kb/165/Q165815/
 
 ## Q165815: How to Troubleshoot Event ID 2009 Errors
 
+{% raw %}
+
 	Article: Q165815
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.51,4.0
@@ -243,3 +245,5 @@ permalink: /kb/165/Q165815/
 	
 	=============================================================================
 	
+
+{% endraw %}

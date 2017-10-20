@@ -6,6 +6,8 @@ permalink: /kb/083/Q83537/
 
 ## Q83537: Mac Fax: Fax Gateway Sending an Extra Page
 
+{% raw %}
+
 	Article: Q83537
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -41,3 +43,5 @@ permalink: /kb/083/Q83537/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129077/
 
 ## Q129077: How to Use the NODATA and NOREQUERY Clauses of USE
 
+{% raw %}
+
 	Article: Q129077
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -101,3 +103,5 @@ permalink: /kb/129/Q129077/
 	
 	=============================================================================
 	
+
+{% endraw %}

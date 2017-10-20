@@ -6,6 +6,8 @@ permalink: /kb/066/Q66070/
 
 ## Q66070: Printing to LPTx.yyy or COMx.yyy From Windows 3.0
 
+{% raw %}
+
 	Article: Q66070
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -92,3 +94,5 @@ permalink: /kb/066/Q66070/
 	
 	=============================================================================
 	
+
+{% endraw %}

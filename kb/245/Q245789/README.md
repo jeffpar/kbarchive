@@ -6,6 +6,8 @@ permalink: /kb/245/Q245789/
 
 ## Q245789: XADM: Move Server Wizard Stops with c1010aae
 
+{% raw %}
+
 	Article: Q245789
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -62,3 +64,5 @@ permalink: /kb/245/Q245789/
 	
 	=============================================================================
 	
+
+{% endraw %}

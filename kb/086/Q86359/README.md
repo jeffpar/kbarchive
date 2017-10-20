@@ -6,6 +6,8 @@ permalink: /kb/086/Q86359/
 
 ## Q86359: README.WRI: Microsoft Windows &amp; MS-DOS 5 Upgrade (Part A)
 
+{% raw %}
+
 	Article: Q86359
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -731,3 +733,5 @@ permalink: /kb/086/Q86359/
 	
 	=============================================================================
 	
+
+{% endraw %}

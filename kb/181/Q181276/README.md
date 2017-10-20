@@ -6,6 +6,8 @@ permalink: /kb/181/Q181276/
 
 ## Q181276: HOWTO: Display Extended ASCII WingDings on DBCS Systems
 
+{% raw %}
+
 	Article: Q181276
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -250,3 +252,5 @@ permalink: /kb/181/Q181276/
 	
 	=============================================================================
 	
+
+{% endraw %}

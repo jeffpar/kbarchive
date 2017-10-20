@@ -6,6 +6,8 @@ permalink: /kb/180/Q180489/
 
 ## Q180489: APPC Partnership Changes May Cause SNA Manager to Disappear
 
+{% raw %}
+
 	Article: Q180489
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP2
@@ -61,3 +63,5 @@ permalink: /kb/180/Q180489/
 	
 	=============================================================================
 	
+
+{% endraw %}

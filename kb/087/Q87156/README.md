@@ -6,6 +6,8 @@ permalink: /kb/087/Q87156/
 
 ## Q87156: Mac Wkst: Password Verification/Offline Operation
 
+{% raw %}
+
 	Article: Q87156
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -42,3 +44,5 @@ permalink: /kb/087/Q87156/
 	
 	=============================================================================
 	
+
+{% endraw %}

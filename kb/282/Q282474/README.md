@@ -6,6 +6,8 @@ permalink: /kb/282/Q282474/
 
 ## Q282474: HOWTO: Print Using Custom Page Sizes on Windows NT/2000
 
+{% raw %}
+
 	Article: Q282474
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -713,3 +715,5 @@ permalink: /kb/282/Q282474/
 	
 	=============================================================================
 	
+
+{% endraw %}

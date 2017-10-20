@@ -6,6 +6,8 @@ permalink: /kb/064/Q64033/
 
 ## Q64033: D2030 Caused by Undefined Identifier in Parameter List
 
+{% raw %}
+
 	Article: Q64033
 	Product(s): See article
 	Version(s): 6.00
@@ -40,3 +42,5 @@ permalink: /kb/064/Q64033/
 	void foo (char retstring[maxfields]);
 	
 	void main(void){}
+
+{% endraw %}

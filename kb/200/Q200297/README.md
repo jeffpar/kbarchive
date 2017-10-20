@@ -6,6 +6,8 @@ permalink: /kb/200/Q200297/
 
 ## Q200297: XADM: Incorrect Product Name Listed with Non-Frames Browser
 
+{% raw %}
+
 	Article: Q200297
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -75,3 +77,5 @@ permalink: /kb/200/Q200297/
 	
 	=============================================================================
 	
+
+{% endraw %}

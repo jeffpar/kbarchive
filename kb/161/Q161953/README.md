@@ -6,6 +6,8 @@ permalink: /kb/161/Q161953/
 
 ## Q161953: XFOR: Unable to Forward Schedule+ Messages
 
+{% raw %}
+
 	Article: Q161953
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -92,3 +94,5 @@ permalink: /kb/161/Q161953/
 	
 	=============================================================================
 	
+
+{% endraw %}

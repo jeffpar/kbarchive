@@ -6,6 +6,8 @@ permalink: /kb/074/Q74715/
 
 ## Q74715: Windows Err Msg: Cannot Run PageMaker 4.0, Aldus Directory...
 
+{% raw %}
+
 	Article: Q74715
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -65,3 +67,5 @@ permalink: /kb/074/Q74715/
 	
 	=============================================================================
 	
+
+{% endraw %}

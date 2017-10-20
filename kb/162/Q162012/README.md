@@ -6,6 +6,8 @@ permalink: /kb/162/Q162012/
 
 ## Q162012: XADM: Unable to Change the Routing Calculation Server
 
+{% raw %}
+
 	Article: Q162012
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/162/Q162012/
 	
 	=============================================================================
 	
+
+{% endraw %}

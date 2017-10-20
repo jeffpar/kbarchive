@@ -6,6 +6,8 @@ permalink: /kb/176/Q176043/
 
 ## Q176043: HOWTO: Add or Subtract Time with a DateTime Data Type
 
+{% raw %}
+
 	Article: Q176043
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/176/Q176043/
 	
 	=============================================================================
 	
+
+{% endraw %}

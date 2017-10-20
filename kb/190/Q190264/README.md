@@ -6,6 +6,8 @@ permalink: /kb/190/Q190264/
 
 ## Q190264: PRB: Unusual Characteristics of the ActiveMovie Control
 
+{% raw %}
+
 	Article: Q190264
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -99,3 +101,5 @@ permalink: /kb/190/Q190264/
 	
 	=============================================================================
 	
+
+{% endraw %}

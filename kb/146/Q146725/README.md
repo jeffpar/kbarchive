@@ -6,6 +6,8 @@ permalink: /kb/146/Q146725/
 
 ## Q146725: XFOR: NDR's Send Again Moves Bcc: Recipient to To: Line
 
+{% raw %}
+
 	Article: Q146725
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -44,3 +46,5 @@ permalink: /kb/146/Q146725/
 	
 	=============================================================================
 	
+
+{% endraw %}

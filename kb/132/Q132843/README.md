@@ -6,6 +6,8 @@ permalink: /kb/132/Q132843/
 
 ## Q132843: Warm Undocking Causes Errors While MS Exchange is Running
 
+{% raw %}
+
 	Article: Q132843
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -54,3 +56,5 @@ permalink: /kb/132/Q132843/
 	
 	=============================================================================
 	
+
+{% endraw %}

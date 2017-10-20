@@ -6,6 +6,8 @@ permalink: /kb/193/Q193084/
 
 ## Q193084: Motocross Madness: 3-D Effects Are Not Applied to Riders
 
+{% raw %}
+
 	Article: Q193084
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -80,3 +82,5 @@ permalink: /kb/193/Q193084/
 	
 	=============================================================================
 	
+
+{% endraw %}

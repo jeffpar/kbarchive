@@ -6,6 +6,8 @@ permalink: /kb/234/Q234733/
 
 ## Q234733: XFOR: Migration Wizard Reports Event ID 4088
 
+{% raw %}
+
 	Article: Q234733
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -89,3 +91,5 @@ permalink: /kb/234/Q234733/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/063/Q63694/
 
 ## Q63694: Moving Windows 3.0 to Another Location
 
+{% raw %}
+
 	Article: Q63694
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -80,3 +82,5 @@ permalink: /kb/063/Q63694/
 	
 	=============================================================================
 	
+
+{% endraw %}

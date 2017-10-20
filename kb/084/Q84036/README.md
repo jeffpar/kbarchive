@@ -6,6 +6,8 @@ permalink: /kb/084/Q84036/
 
 ## Q84036: Troubleshooting HP LaserJet Printing Under Windows 3.1
 
+{% raw %}
+
 	Article: Q84036
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -168,3 +170,5 @@ permalink: /kb/084/Q84036/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138216/
 
 ## Q138216: World of Flight: Peeled Sections Overlap
 
+{% raw %}
+
 	Article: Q138216
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -60,3 +62,5 @@ permalink: /kb/138/Q138216/
 	
 	=============================================================================
 	
+
+{% endraw %}

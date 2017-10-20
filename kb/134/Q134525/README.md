@@ -6,6 +6,8 @@ permalink: /kb/134/Q134525/
 
 ## Q134525: Placing Briefcase Inside Another Briefcase Causes Problems
 
+{% raw %}
+
 	Article: Q134525
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/134/Q134525/
 	
 	=============================================================================
 	
+
+{% endraw %}

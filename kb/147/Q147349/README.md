@@ -6,6 +6,8 @@ permalink: /kb/147/Q147349/
 
 ## Q147349: No Sound On Some PCMCIA Modems in Windows NT 3.51
 
+{% raw %}
+
 	Article: Q147349
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -58,3 +60,5 @@ permalink: /kb/147/Q147349/
 	
 	=============================================================================
 	
+
+{% endraw %}

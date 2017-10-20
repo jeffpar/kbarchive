@@ -6,6 +6,8 @@ permalink: /kb/293/Q293131/
 
 ## Q293131: &quot;HTTP 400 - Bad Request&quot; Err Msg if Content Length Header is 0
 
+{% raw %}
+
 	Article: Q293131
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -145,3 +147,5 @@ permalink: /kb/293/Q293131/
 	
 	=============================================================================
 	
+
+{% endraw %}

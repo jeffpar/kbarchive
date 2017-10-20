@@ -6,6 +6,8 @@ permalink: /kb/185/Q185315/
 
 ## Q185315: WD97: How to Change an Existing Linked Excel Object
 
+{% raw %}
+
 	Article: Q185315
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -112,3 +114,5 @@ permalink: /kb/185/Q185315/
 	
 	=============================================================================
 	
+
+{% endraw %}

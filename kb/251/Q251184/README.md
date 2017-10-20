@@ -6,6 +6,8 @@ permalink: /kb/251/Q251184/
 
 ## Q251184: XADM: Link Monitor Doesn't Work After Priv.edb Is Renamed
 
+{% raw %}
+
 	Article: Q251184
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -51,3 +53,5 @@ permalink: /kb/251/Q251184/
 	
 	=============================================================================
 	
+
+{% endraw %}

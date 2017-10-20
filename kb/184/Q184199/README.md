@@ -6,6 +6,8 @@ permalink: /kb/184/Q184199/
 
 ## Q184199: DMM: Envelopes are Printed Incorrectly Using DeskJet Printer
 
+{% raw %}
+
 	Article: Q184199
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -180,3 +182,5 @@ permalink: /kb/184/Q184199/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129632/
 
 ## Q129632: Visual FoxPro Capacities
 
+{% raw %}
+
 	Article: Q129632
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -137,3 +139,5 @@ permalink: /kb/129/Q129632/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/080/Q80272/
 
 ## Q80272: PC Ext: Diagnostics Produced by the -Q2z Parameter on External
 
+{% raw %}
+
 	Article: Q80272
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1b,2.1c,2.1d,2.1e,3.0,3.2,3.5
@@ -132,3 +134,5 @@ permalink: /kb/080/Q80272/
 	
 	=============================================================================
 	
+
+{% endraw %}

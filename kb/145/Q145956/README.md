@@ -6,6 +6,8 @@ permalink: /kb/145/Q145956/
 
 ## Q145956: XCLN: Phonebook Entries w/ Extended Chars Not Sorted Correctly
 
+{% raw %}
+
 	Article: Q145956
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -51,3 +53,5 @@ permalink: /kb/145/Q145956/
 	
 	=============================================================================
 	
+
+{% endraw %}

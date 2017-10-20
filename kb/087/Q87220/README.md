@@ -6,6 +6,8 @@ permalink: /kb/087/Q87220/
 
 ## Q87220: PROFS: What Happens in the Event of a Mail Failure?
 
+{% raw %}
+
 	Article: Q87220
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -64,3 +66,5 @@ permalink: /kb/087/Q87220/
 	
 	=============================================================================
 	
+
+{% endraw %}

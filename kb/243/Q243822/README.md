@@ -6,6 +6,8 @@ permalink: /kb/243/Q243822/
 
 ## Q243822: XCON: Incorrect Internet Mail Service Msg Size Restriction
 
+{% raw %}
+
 	Article: Q243822
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -83,3 +85,5 @@ permalink: /kb/243/Q243822/
 	
 	=============================================================================
 	
+
+{% endraw %}

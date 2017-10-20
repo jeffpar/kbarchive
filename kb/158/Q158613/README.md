@@ -6,6 +6,8 @@ permalink: /kb/158/Q158613/
 
 ## Q158613: STL Sample for the vector::(front, back) Functions
 
+{% raw %}
+
 	Article: Q158613
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -183,3 +185,5 @@ permalink: /kb/158/Q158613/
 	
 	=============================================================================
 	
+
+{% endraw %}

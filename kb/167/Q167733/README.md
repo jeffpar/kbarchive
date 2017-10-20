@@ -6,6 +6,8 @@ permalink: /kb/167/Q167733/
 
 ## Q167733: PRB: Operator New Doesn't Throw bad_alloc Exception on Failure
 
+{% raw %}
+
 	Article: Q167733
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -132,3 +134,5 @@ permalink: /kb/167/Q167733/
 	
 	=============================================================================
 	
+
+{% endraw %}

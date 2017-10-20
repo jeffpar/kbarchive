@@ -6,6 +6,8 @@ permalink: /kb/157/Q157762/
 
 ## Q157762: FIX: Invalid Page Fault After Summing Currency Field of Cursor
 
+{% raw %}
+
 	Article: Q157762
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -80,3 +82,5 @@ permalink: /kb/157/Q157762/
 	
 	=============================================================================
 	
+
+{% endraw %}

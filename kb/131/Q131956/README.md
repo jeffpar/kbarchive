@@ -6,6 +6,8 @@ permalink: /kb/131/Q131956/
 
 ## Q131956: HOWTO: Run the Macintosh SourceSafe SSADMIN Tool
 
+{% raw %}
+
 	Article: Q131956
 	Product(s): Microsoft SourceSafe
 	Version(s): MACINTOSH:3.04,3.1
@@ -55,3 +57,5 @@ permalink: /kb/131/Q131956/
 	
 	=============================================================================
 	
+
+{% endraw %}

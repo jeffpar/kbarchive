@@ -6,6 +6,8 @@ permalink: /kb/095/Q95514/
 
 ## Q95514: FIX: Focus Rectangle Remains When Grid Loses Focus
 
+{% raw %}
+
 	Article: Q95514
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0
@@ -90,3 +92,5 @@ permalink: /kb/095/Q95514/
 	
 	=============================================================================
 	
+
+{% endraw %}

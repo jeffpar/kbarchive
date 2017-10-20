@@ -6,6 +6,8 @@ permalink: /kb/259/Q259024/
 
 ## Q259024: Allegiance: Quits Unexpectedly when Sound Acceleration Is On
 
+{% raw %}
+
 	Article: Q259024
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -71,3 +73,5 @@ permalink: /kb/259/Q259024/
 	
 	=============================================================================
 	
+
+{% endraw %}

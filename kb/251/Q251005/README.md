@@ -6,6 +6,8 @@ permalink: /kb/251/Q251005/
 
 ## Q251005: OLE Automation Number Conversion Changed in SP4
 
+{% raw %}
+
 	Article: Q251005
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -120,3 +122,5 @@ permalink: /kb/251/Q251005/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/090/Q90213/
 
 ## Q90213: AT&amp;T Mouse Problems with Windows for Workgroups
 
+{% raw %}
+
 	Article: Q90213
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -42,3 +44,5 @@ permalink: /kb/090/Q90213/
 	
 	=============================================================================
 	
+
+{% endraw %}

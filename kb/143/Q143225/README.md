@@ -6,6 +6,8 @@ permalink: /kb/143/Q143225/
 
 ## Q143225: FP: HTTP Code 501 Error Opening, Creating Web
 
+{% raw %}
+
 	Article: Q143225
 	Product(s): Word Front Page
 	Version(s): 1.0,1.1
@@ -71,3 +73,5 @@ permalink: /kb/143/Q143225/
 	
 	=============================================================================
 	
+
+{% endraw %}

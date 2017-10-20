@@ -6,6 +6,8 @@ permalink: /kb/140/Q140397/
 
 ## Q140397: DocErr: No SNMP Available for Windows for Workgroups
 
+{% raw %}
+
 	Article: Q140397
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11,3.11a,3.11b
@@ -49,3 +51,5 @@ permalink: /kb/140/Q140397/
 	
 	=============================================================================
 	
+
+{% endraw %}

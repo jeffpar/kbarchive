@@ -6,6 +6,8 @@ permalink: /kb/164/Q164125/
 
 ## Q164125: XCLN: Creator Information Missing for Scheduled Appointment
 
+{% raw %}
+
 	Article: Q164125
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:4.0,7.0a; Win95:4.0; winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/164/Q164125/
 	
 	=============================================================================
 	
+
+{% endraw %}

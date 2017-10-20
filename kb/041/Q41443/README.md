@@ -6,6 +6,8 @@ permalink: /kb/041/Q41443/
 
 ## Q41443: QuickC 2.00 README.DOC: Using the Mouse and the Keyboard
 
+{% raw %}
+
 	Article: Q41443
 	Product(s): See article
 	Version(s): 2.00
@@ -24,3 +26,5 @@ permalink: /kb/041/Q41443/
 	   If you own a COMPAQ(R) SLT/286 Laptop, run the MOUSE.COM program
 	   before running QuickC. This workaround corrects a problem in the
 	   COMPAQ BIOS.
+
+{% endraw %}

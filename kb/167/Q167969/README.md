@@ -6,6 +6,8 @@ permalink: /kb/167/Q167969/
 
 ## Q167969: Under Windows NT, Win16 Applications Opening MS-DOS Devices Fail
 
+{% raw %}
+
 	Article: Q167969
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/167/Q167969/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184072/
 
 ## Q184072: HasOverlappedIoCompleted, GetOverlappedResult Give Wrong Value
 
+{% raw %}
+
 	Article: Q184072
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -70,3 +72,5 @@ permalink: /kb/184/Q184072/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194965/
 
 ## Q194965: Desktop Update Lost by Running Windows NT 4.0 SP4 Uninstall
 
+{% raw %}
+
 	Article: Q194965
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/194/Q194965/
 	
 	=============================================================================
 	
+
+{% endraw %}

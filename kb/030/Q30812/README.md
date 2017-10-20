@@ -6,6 +6,8 @@ permalink: /kb/030/Q30812/
 
 ## Q30812: MASM 5.10 OS2.DOC: OS/2 Call Summary - Signal Management
 
+{% raw %}
+
 	Article: Q30812
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -31,3 +33,5 @@ permalink: /kb/030/Q30812/
 	
 	   @DosSendSignal - Sends a CTRL-C or CTRL-BREAK signal
 	   Parameters - ProcessID:W, SigNumber:W
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152105/
 
 ## Q152105: Quick Viewer Font Problem(s) When You Remote Control to Clients
 
+{% raw %}
+
 	Article: Q152105
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -60,3 +62,5 @@ permalink: /kb/152/Q152105/
 	
 	=============================================================================
 	
+
+{% endraw %}

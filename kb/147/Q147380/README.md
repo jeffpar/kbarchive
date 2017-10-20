@@ -6,6 +6,8 @@ permalink: /kb/147/Q147380/
 
 ## Q147380: MSN Context Menus Not Available with XMouse Installed
 
+{% raw %}
+
 	Article: Q147380
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -47,3 +49,5 @@ permalink: /kb/147/Q147380/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/057/Q57585/
 
 ## Q57585: Background Color Greater Than Seven Causes Region to Blink
 
+{% raw %}
+
 	Article: Q57585
 	Product(s): See article
 	Version(s): 1.00 1.02 | 1.00 1.02
@@ -69,3 +71,5 @@ permalink: /kb/057/Q57585/
 	           ^
 	           |
 	           +----------------------- Brown
+
+{% endraw %}

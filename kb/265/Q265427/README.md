@@ -6,6 +6,8 @@ permalink: /kb/265/Q265427/
 
 ## Q265427: Err Msg: Your Computer Is Not Properly Configured...
 
+{% raw %}
+
 	Article: Q265427
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -119,3 +121,5 @@ permalink: /kb/265/Q265427/
 	
 	=============================================================================
 	
+
+{% endraw %}

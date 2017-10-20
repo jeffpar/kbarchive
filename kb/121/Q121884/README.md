@@ -6,6 +6,8 @@ permalink: /kb/121/Q121884/
 
 ## Q121884: Golf Err Msg: Not Enough Memory to Zoom Top View
 
+{% raw %}
+
 	Article: Q121884
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -54,3 +56,5 @@ permalink: /kb/121/Q121884/
 	
 	=============================================================================
 	
+
+{% endraw %}

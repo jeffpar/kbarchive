@@ -6,6 +6,8 @@ permalink: /kb/139/Q139079/
 
 ## Q139079: MSB Ocean: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q139079
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/139/Q139079/
 	
 	=============================================================================
 	
+
+{% endraw %}

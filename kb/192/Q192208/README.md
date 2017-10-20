@@ -6,6 +6,8 @@ permalink: /kb/192/Q192208/
 
 ## Q192208: BUG: UserControl SHIFT+TAB Does Not Follow Tab Sequence
 
+{% raw %}
+
 	Article: Q192208
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -343,3 +345,5 @@ permalink: /kb/192/Q192208/
 	
 	=============================================================================
 	
+
+{% endraw %}

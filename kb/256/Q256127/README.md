@@ -6,6 +6,8 @@ permalink: /kb/256/Q256127/
 
 ## Q256127: SMS: Changing Software Metering Server Service Account Password
 
+{% raw %}
+
 	Article: Q256127
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -79,3 +81,5 @@ permalink: /kb/256/Q256127/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/302/Q302789/
 
 ## Q302789: When You Sort Address Book Entries By A Criteria Other than &quot;Nic
 
+{% raw %}
+
 	Article: Q302789
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/302/Q302789/
 	
 	=============================================================================
 	
+
+{% endraw %}

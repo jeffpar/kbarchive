@@ -6,6 +6,8 @@ permalink: /kb/040/Q40270/
 
 ## Q40270: How CodeView Handles DosExitList Routines
 
+{% raw %}
+
 	Article: Q40270
 	Product(s): See article
 	Version(s): 2.20
@@ -52,3 +54,5 @@ permalink: /kb/040/Q40270/
 	This command causes a jump to the last curly brace; you can step
 	through your program from there. This method allows you to step
 	through your exit routine, but it is a little more risky.
+
+{% endraw %}

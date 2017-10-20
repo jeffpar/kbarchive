@@ -6,6 +6,8 @@ permalink: /kb/174/Q174460/
 
 ## Q174460: SMS: PCM Introduction Dialog Box Does Not Close Automatically
 
+{% raw %}
+
 	Article: Q174460
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -48,3 +50,5 @@ permalink: /kb/174/Q174460/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157289/
 
 ## Q157289: Memory Leak Using RegConnectRegistry API
 
+{% raw %}
+
 	Article: Q157289
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/157/Q157289/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197202/
 
 ## Q197202: WD97: Paragraph Numbering Causes Slow Scrolling
 
+{% raw %}
+
 	Article: Q197202
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -67,3 +69,5 @@ permalink: /kb/197/Q197202/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130538/
 
 ## Q130538: DHCP-Enabled MS-DOS Clients Do Not Resolve Host Names
 
+{% raw %}
+
 	Article: Q130538
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.0
@@ -79,3 +81,5 @@ permalink: /kb/130/Q130538/
 	
 	=============================================================================
 	
+
+{% endraw %}

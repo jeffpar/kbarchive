@@ -6,6 +6,8 @@ permalink: /kb/235/Q235021/
 
 ## Q235021: Quick Course in Microsoft Excel 2000 Comments and Corrections
 
+{% raw %}
+
 	Article: Q235021
 	Product(s): Microsoft Press
 	Version(s): 
@@ -152,3 +154,5 @@ permalink: /kb/235/Q235021/
 	
 	=============================================================================
 	
+
+{% endraw %}

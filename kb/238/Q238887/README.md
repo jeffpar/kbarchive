@@ -6,6 +6,8 @@ permalink: /kb/238/Q238887/
 
 ## Q238887: XCLN: &quot;Invitations have not been sent for this meeting&quot; Message
 
+{% raw %}
+
 	Article: Q238887
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,97,98
@@ -75,3 +77,5 @@ permalink: /kb/238/Q238887/
 	
 	=============================================================================
 	
+
+{% endraw %}

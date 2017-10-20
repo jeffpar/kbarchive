@@ -6,6 +6,8 @@ permalink: /kb/174/Q174840/
 
 ## Q174840: Disabling Buttons in the Windows NT Security Dialog Box
 
+{% raw %}
+
 	Article: Q174840
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT4.0
@@ -134,3 +136,5 @@ permalink: /kb/174/Q174840/
 	
 	=============================================================================
 	
+
+{% endraw %}

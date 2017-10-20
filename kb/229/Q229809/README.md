@@ -6,6 +6,8 @@ permalink: /kb/229/Q229809/
 
 ## Q229809: SMS: Unexpected Reinstallation of SMS Packages
 
+{% raw %}
+
 	Article: Q229809
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -103,3 +105,5 @@ permalink: /kb/229/Q229809/
 	
 	=============================================================================
 	
+
+{% endraw %}

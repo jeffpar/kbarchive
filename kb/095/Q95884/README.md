@@ -6,6 +6,8 @@ permalink: /kb/095/Q95884/
 
 ## Q95884: How To: Modifying WFWG for Use with Artisoft's LANtastic
 
+{% raw %}
+
 	Article: Q95884
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -146,3 +148,5 @@ permalink: /kb/095/Q95884/
 	
 	=============================================================================
 	
+
+{% endraw %}

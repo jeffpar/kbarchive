@@ -6,6 +6,8 @@ permalink: /kb/155/Q155622/
 
 ## Q155622: FIX: IDE Debugger Truncates Floating Point Numbers
 
+{% raw %}
+
 	Article: Q155622
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -107,3 +109,5 @@ permalink: /kb/155/Q155622/
 	
 	=============================================================================
 	
+
+{% endraw %}

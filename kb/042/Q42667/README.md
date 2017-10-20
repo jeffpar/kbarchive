@@ -6,6 +6,8 @@ permalink: /kb/042/Q42667/
 
 ## Q42667: Accessing Huge Array (Larger Than 64K) Can Hang 386 Computers
 
+{% raw %}
+
 	Article: Q42667
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -90,3 +92,5 @@ permalink: /kb/042/Q42667/
 	QuickBASIC earlier than Version 4.00.
 	
 	Additional reference word: B_BasicCom
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86939/
 
 ## Q86939: 3COM: How to Generate and Maintain Address Lists
 
+{% raw %}
+
 	Article: Q86939
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -42,3 +44,5 @@ permalink: /kb/086/Q86939/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151291/
 
 ## Q151291: Top Articles on Windows 95 General Information
 
+{% raw %}
+
 	Article: Q151291
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/151/Q151291/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152213/
 
 ## Q152213: Flight Simulator: Cannot Open PID File During Setup
 
+{% raw %}
+
 	Article: Q152213
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.1
@@ -83,3 +85,5 @@ permalink: /kb/152/Q152213/
 	
 	=============================================================================
 	
+
+{% endraw %}

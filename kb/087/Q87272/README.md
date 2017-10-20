@@ -6,6 +6,8 @@ permalink: /kb/087/Q87272/
 
 ## Q87272: Always On Top Applications May Hang Windows 3.1 Tutorial
 
+{% raw %}
+
 	Article: Q87272
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -72,3 +74,5 @@ permalink: /kb/087/Q87272/
 	
 	=============================================================================
 	
+
+{% endraw %}

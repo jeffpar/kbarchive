@@ -6,6 +6,8 @@ permalink: /kb/175/Q175080/
 
 ## Q175080: PRB: RDORESULTSET's SOURCETABLE Property Won't Return a Value
 
+{% raw %}
+
 	Article: Q175080
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/175/Q175080/
 	
 	=============================================================================
 	
+
+{% endraw %}

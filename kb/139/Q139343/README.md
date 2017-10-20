@@ -6,6 +6,8 @@ permalink: /kb/139/Q139343/
 
 ## Q139343: How To Promote BDC to PDC Through RAS
 
+{% raw %}
+
 	Article: Q139343
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -44,3 +46,5 @@ permalink: /kb/139/Q139343/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132857/
 
 ## Q132857: XCLN: Running 16-Bit Exchange Client on NT Is Not Supported
 
+{% raw %}
+
 	Article: Q132857
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -43,3 +45,5 @@ permalink: /kb/132/Q132857/
 	
 	=============================================================================
 	
+
+{% endraw %}

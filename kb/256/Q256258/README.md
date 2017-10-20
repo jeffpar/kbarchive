@@ -6,6 +6,8 @@ permalink: /kb/256/Q256258/
 
 ## Q256258: MapPoint 2001: Imported Records Do Not Appear on the Map
 
+{% raw %}
+
 	Article: Q256258
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/256/Q256258/
 	
 	=============================================================================
 	
+
+{% endraw %}

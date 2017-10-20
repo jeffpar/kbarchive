@@ -6,6 +6,8 @@ permalink: /kb/100/Q100536/
 
 ## Q100536: DBLSPACE.INI File Settings
 
+{% raw %}
+
 	Article: Q100536
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22; WINDOWS:95
@@ -305,3 +307,5 @@ permalink: /kb/100/Q100536/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/076/Q76933/
 
 ## Q76933: DOC: Button Styles May Not Be OR'd with Other Button Styles
 
+{% raw %}
+
 	Article: Q76933
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -60,3 +62,5 @@ permalink: /kb/076/Q76933/
 	
 	=============================================================================
 	
+
+{% endraw %}

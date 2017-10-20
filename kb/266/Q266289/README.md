@@ -6,6 +6,8 @@ permalink: /kb/266/Q266289/
 
 ## Q266289: HOWTO:Use Split Function to Put Delimited String into String Arr
 
+{% raw %}
+
 	Article: Q266289
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -76,3 +78,5 @@ permalink: /kb/266/Q266289/
 	
 	=============================================================================
 	
+
+{% endraw %}

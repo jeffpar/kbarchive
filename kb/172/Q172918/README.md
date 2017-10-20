@@ -6,6 +6,8 @@ permalink: /kb/172/Q172918/
 
 ## Q172918: WD97: Dot or Dash Border Lost Opening Word 6.x, 7.x Document
 
+{% raw %}
+
 	Article: Q172918
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -104,3 +106,5 @@ permalink: /kb/172/Q172918/
 	
 	=============================================================================
 	
+
+{% endraw %}

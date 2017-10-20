@@ -6,6 +6,8 @@ permalink: /kb/068/Q68736/
 
 ## Q68736: Methods of Printing on Novell Networks in Windows 3.0
 
+{% raw %}
+
 	Article: Q68736
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -82,3 +84,5 @@ permalink: /kb/068/Q68736/
 	
 	=============================================================================
 	
+
+{% endraw %}

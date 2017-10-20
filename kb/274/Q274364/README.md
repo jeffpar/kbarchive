@@ -6,6 +6,8 @@ permalink: /kb/274/Q274364/
 
 ## Q274364: MSN Companion Troubleshooting Tool HAMMER
 
+{% raw %}
+
 	Article: Q274364
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/274/Q274364/
 	
 	=============================================================================
 	
+
+{% endraw %}

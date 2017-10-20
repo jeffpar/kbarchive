@@ -6,6 +6,8 @@ permalink: /kb/246/Q246051/
 
 ## Q246051: XIMS: No NDR If SMTP Msg Exceeds &quot;Max Recipients on Submit&quot;
 
+{% raw %}
+
 	Article: Q246051
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -119,3 +121,5 @@ permalink: /kb/246/Q246051/
 	
 	=============================================================================
 	
+
+{% endraw %}

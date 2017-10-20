@@ -6,6 +6,8 @@ permalink: /kb/157/Q157517/
 
 ## Q157517: BUG: Uninstalling DAO 3.0 SDK Prevents Help Files from Working
 
+{% raw %}
+
 	Article: Q157517
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2; WINDOWS:4.2
@@ -79,3 +81,5 @@ permalink: /kb/157/Q157517/
 	
 	=============================================================================
 	
+
+{% endraw %}

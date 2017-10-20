@@ -6,6 +6,8 @@ permalink: /kb/261/Q261954/
 
 ## Q261954: XADM: Exmerge Archive Function Requests Too Much Disk Space
 
+{% raw %}
+
 	Article: Q261954
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -73,3 +75,5 @@ permalink: /kb/261/Q261954/
 	
 	=============================================================================
 	
+
+{% endraw %}

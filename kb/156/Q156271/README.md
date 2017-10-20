@@ -6,6 +6,8 @@ permalink: /kb/156/Q156271/
 
 ## Q156271: SMS: Installation Scripts for &quot;Run Command on Workstation&quot;
 
+{% raw %}
+
 	Article: Q156271
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -129,3 +131,5 @@ permalink: /kb/156/Q156271/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/225/Q225425/
 
 ## Q225425: WD97: Fax Fails with Check Names Dialog Box, Error Message
 
+{% raw %}
+
 	Article: Q225425
 	Product(s): Word 97 for Windows
 	Version(s): 5,97
@@ -97,3 +99,5 @@ permalink: /kb/225/Q225425/
 	
 	=============================================================================
 	
+
+{% endraw %}

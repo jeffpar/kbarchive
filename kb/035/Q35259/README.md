@@ -6,6 +6,8 @@ permalink: /kb/035/Q35259/
 
 ## Q35259: How to Read the Contents of the M Editor Clipboard
 
+{% raw %}
+
 	Article: Q35259
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -44,3 +46,5 @@ permalink: /kb/035/Q35259/
 	
 	This information indicates whether the Clipboard holds a block of text
 	or a stream of text.
+
+{% endraw %}

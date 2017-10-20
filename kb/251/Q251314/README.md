@@ -6,6 +6,8 @@ permalink: /kb/251/Q251314/
 
 ## Q251314: XCLN: Schedule+ Two-Digit Date Is Not Interpreted Correctly
 
+{% raw %}
+
 	Article: Q251314
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 7.5
@@ -136,3 +138,5 @@ permalink: /kb/251/Q251314/
 	
 	=============================================================================
 	
+
+{% endraw %}

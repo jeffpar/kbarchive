@@ -6,6 +6,8 @@ permalink: /kb/249/Q249045/
 
 ## Q249045: BUG: C2964 On Pointer-To-Member As Template Argument
 
+{% raw %}
+
 	Article: Q249045
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -112,3 +114,5 @@ permalink: /kb/249/Q249045/
 	
 	=============================================================================
 	
+
+{% endraw %}

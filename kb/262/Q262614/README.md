@@ -6,6 +6,8 @@ permalink: /kb/262/Q262614/
 
 ## Q262614: BUG: SetTextCharacterExtra() Sometimes Ignored When Printing
 
+{% raw %}
+
 	Article: Q262614
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -86,3 +88,5 @@ permalink: /kb/262/Q262614/
 	
 	=============================================================================
 	
+
+{% endraw %}

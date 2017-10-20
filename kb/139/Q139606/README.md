@@ -6,6 +6,8 @@ permalink: /kb/139/Q139606/
 
 ## Q139606: How to Speed Up the Mastering Visual FoxPro Program
 
+{% raw %}
+
 	Article: Q139606
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -66,3 +68,5 @@ permalink: /kb/139/Q139606/
 	
 	=============================================================================
 	
+
+{% endraw %}

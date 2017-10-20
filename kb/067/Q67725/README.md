@@ -6,6 +6,8 @@ permalink: /kb/067/Q67725/
 
 ## Q67725: File Manager's Mechanism for Sensing File System Changes
 
+{% raw %}
+
 	Article: Q67725
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -38,3 +40,5 @@ permalink: /kb/067/Q67725/
 	
 	=============================================================================
 	
+
+{% endraw %}

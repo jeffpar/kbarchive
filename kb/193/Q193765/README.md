@@ -6,6 +6,8 @@ permalink: /kb/193/Q193765/
 
 ## Q193765: HOWTO: Using Visual FoxPro Online Help Without Installing MSDN
 
+{% raw %}
+
 	Article: Q193765
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -76,3 +78,5 @@ permalink: /kb/193/Q193765/
 	
 	=============================================================================
 	
+
+{% endraw %}

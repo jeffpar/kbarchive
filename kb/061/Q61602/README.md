@@ -6,6 +6,8 @@ permalink: /kb/061/Q61602/
 
 ## Q61602: Assembler Options Passed to C Compiler If /MA Contains Space
 
+{% raw %}
+
 	Article: Q61602
 	Product(s): See article
 	Version(s): 6.00    | 6.00
@@ -21,3 +23,5 @@ permalink: /kb/061/Q61602/
 	option
 	
 	For example, "/MA DEBUG" does not work; "/MADEBUG" does work properly.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84245/
 
 ## Q84245: Greek Symbols Appear Instead of Selected Fonts in Windows 3.1
 
+{% raw %}
+
 	Article: Q84245
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/084/Q84245/
 	
 	=============================================================================
 	
+
+{% endraw %}

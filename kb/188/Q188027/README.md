@@ -6,6 +6,8 @@ permalink: /kb/188/Q188027/
 
 ## Q188027: Performance, Audit Logging, and Fixes to the DHCP Service
 
+{% raw %}
+
 	Article: Q188027
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -143,3 +145,5 @@ permalink: /kb/188/Q188027/
 	
 	=============================================================================
 	
+
+{% endraw %}

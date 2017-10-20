@@ -6,6 +6,8 @@ permalink: /kb/249/Q249603/
 
 ## Q249603: Using IISSYNC to Synchronize Clustered Web Sites on Windows 2000
 
+{% raw %}
+
 	Article: Q249603
 	Product(s): Internet Information Server
 	Version(s): 2000,5.0
@@ -111,3 +113,5 @@ permalink: /kb/249/Q249603/
 	
 	=============================================================================
 	
+
+{% endraw %}

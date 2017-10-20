@@ -6,6 +6,8 @@ permalink: /kb/137/Q137245/
 
 ## Q137245: Cannot Open or Compose Message in Windows Messaging
 
+{% raw %}
+
 	Article: Q137245
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; winnt:4.0
@@ -233,3 +235,5 @@ permalink: /kb/137/Q137245/
 	
 	=============================================================================
 	
+
+{% endraw %}

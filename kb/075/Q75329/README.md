@@ -6,6 +6,8 @@ permalink: /kb/075/Q75329/
 
 ## Q75329: Paintbrush Prints Too Many Pages on Laser Printers
 
+{% raw %}
+
 	Article: Q75329
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/075/Q75329/
 	
 	=============================================================================
 	
+
+{% endraw %}

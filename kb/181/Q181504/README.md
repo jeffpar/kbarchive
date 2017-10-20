@@ -6,6 +6,8 @@ permalink: /kb/181/Q181504/
 
 ## Q181504: PRB: Developer Studio Macro's ExecuteCommand Requires Quotes
 
+{% raw %}
+
 	Article: Q181504
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -98,3 +100,5 @@ permalink: /kb/181/Q181504/
 	
 	=============================================================================
 	
+
+{% endraw %}

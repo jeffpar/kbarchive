@@ -6,6 +6,8 @@ permalink: /kb/262/Q262328/
 
 ## Q262328: StarLancer: Cannot View Your Sixth Medal in the Medal Locker
 
+{% raw %}
+
 	Article: Q262328
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -47,3 +49,5 @@ permalink: /kb/262/Q262328/
 	
 	=============================================================================
 	
+
+{% endraw %}

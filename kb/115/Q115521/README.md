@@ -6,6 +6,8 @@ permalink: /kb/115/Q115521/
 
 ## Q115521: FIX: Private Copy Constructor Called Without Proper Access
 
+{% raw %}
+
 	Article: Q115521
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,4.1,7.0
@@ -84,3 +86,5 @@ permalink: /kb/115/Q115521/
 	
 	=============================================================================
 	
+
+{% endraw %}

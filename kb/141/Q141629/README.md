@@ -6,6 +6,8 @@ permalink: /kb/141/Q141629/
 
 ## Q141629: FIX: Edit Menu Find Option Is Enabled But No Find Next Button
 
+{% raw %}
+
 	Article: Q141629
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -59,3 +61,5 @@ permalink: /kb/141/Q141629/
 	
 	=============================================================================
 	
+
+{% endraw %}

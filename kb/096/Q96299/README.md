@@ -6,6 +6,8 @@ permalink: /kb/096/Q96299/
 
 ## Q96299: PRB: ??? &quot;{&quot; Returns Syntax Error
 
+{% raw %}
+
 	Article: Q96299
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:1.02,2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0,3.0b,5.0,6.0
@@ -63,11 +65,11 @@ permalink: /kb/096/Q96299/
 	
 	The text file will contain a single left brace.
 	
-	Another alternative is to use "{ {}" and "{} }" to output a single left and right
+	Another alternative is to use "{{}" and "{}}" to output a single left and right
 	brace, respectively. The following command, if used in the above code example,
 	will also output a single left brace to the text file:
 	
-	     ??? "{ {}"
+	     ??? "{{}"
 	
 	STATUS
 	======
@@ -83,3 +85,5 @@ permalink: /kb/096/Q96299/
 	
 	=============================================================================
 	
+
+{% endraw %}

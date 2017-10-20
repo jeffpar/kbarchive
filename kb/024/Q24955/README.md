@@ -6,6 +6,8 @@ permalink: /kb/024/Q24955/
 
 ## Q24955: Results of not Specifying a Starting Address
 
+{% raw %}
+
 	Article: Q24955
 	Product(s): Microsoft Macro Assembler
 	Version(s): 3.0x,4.x,5.0,5.1,6.0,6.0a,6.0b
@@ -60,3 +62,5 @@ permalink: /kb/024/Q24955/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197461/
 
 ## Q197461: Client Certificate Mapping Uses Multiple Organization Units
 
+{% raw %}
+
 	Article: Q197461
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -89,3 +91,5 @@ permalink: /kb/197/Q197461/
 	
 	=============================================================================
 	
+
+{% endraw %}

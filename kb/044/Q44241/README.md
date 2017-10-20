@@ -6,6 +6,8 @@ permalink: /kb/044/Q44241/
 
 ## Q44241: .EXE with PRINT TAB or SPC Can Hang If Compiled with BC /S
 
+{% raw %}
+
 	Article: Q44241
 	Product(s): See article
 	Version(s): 4.50
@@ -43,3 +45,5 @@ permalink: /kb/044/Q44241/
 	   c$ = "hello"
 	   d$ = "bye"
 	   print tab(8); c$; tab(16); d$
+
+{% endraw %}

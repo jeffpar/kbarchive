@@ -6,6 +6,8 @@ permalink: /kb/061/Q61209/
 
 ## Q61209: C 6.00 README: PWB Starts on Boot Monitor Under OS/2 1.10
 
+{% raw %}
+
 	Article: Q61209
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -29,3 +31,5 @@ permalink: /kb/061/Q61209/
 	PWB will appear on the color monitor.
 	
 	This problem does not exist under OS/2 1.20.
+
+{% endraw %}

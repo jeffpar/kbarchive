@@ -6,6 +6,8 @@ permalink: /kb/122/Q122423/
 
 ## Q122423: Mac RSC: Remote Server Connection-ARA 2.0 Compatibility Patch
 
+{% raw %}
+
 	Article: Q122423
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1d
@@ -139,3 +141,5 @@ permalink: /kb/122/Q122423/
 	
 	=============================================================================
 	
+
+{% endraw %}

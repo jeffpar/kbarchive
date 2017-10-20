@@ -6,6 +6,8 @@ permalink: /kb/320/Q320066/
 
 ## Q320066: SMS: A Large .tmp File Is Created When You Install a Client
 
+{% raw %}
+
 	Article: Q320066
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -189,3 +191,5 @@ permalink: /kb/320/Q320066/
 	
 	=============================================================================
 	
+
+{% endraw %}

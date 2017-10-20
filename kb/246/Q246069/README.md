@@ -6,6 +6,8 @@ permalink: /kb/246/Q246069/
 
 ## Q246069: Encoding Form Data for SQL Server Input and Output to HTML
 
+{% raw %}
+
 	Article: Q246069
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -270,3 +272,5 @@ permalink: /kb/246/Q246069/
 	
 	=============================================================================
 	
+
+{% endraw %}

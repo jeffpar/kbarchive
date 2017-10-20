@@ -6,6 +6,8 @@ permalink: /kb/195/Q195617/
 
 ## Q195617: WD97: How to Transpose Rows and Columns in Word Table
 
+{% raw %}
+
 	Article: Q195617
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -95,3 +97,5 @@ permalink: /kb/195/Q195617/
 	
 	=============================================================================
 	
+
+{% endraw %}

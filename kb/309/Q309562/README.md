@@ -6,6 +6,8 @@ permalink: /kb/309/Q309562/
 
 ## Q309562: Proxy-to-Proxy Authentication Error after Installing IIS Patch
 
+{% raw %}
+
 	Article: Q309562
 	Product(s): Internet Information Server
 	Version(s): 2.0,5.0
@@ -122,3 +124,5 @@ permalink: /kb/309/Q309562/
 	
 	=============================================================================
 	
+
+{% endraw %}

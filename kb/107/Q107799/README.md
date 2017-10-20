@@ -6,6 +6,8 @@ permalink: /kb/107/Q107799/
 
 ## Q107799: Post Office Directory Name Cannot Contain Extended Characters
 
+{% raw %}
+
 	Article: Q107799
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -54,3 +56,5 @@ permalink: /kb/107/Q107799/
 	
 	=============================================================================
 	
+
+{% endraw %}

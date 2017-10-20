@@ -6,6 +6,8 @@ permalink: /kb/190/Q190523/
 
 ## Q190523: PRB: Automation Error (-2147417843) When You Use the Taskbar Not
 
+{% raw %}
+
 	Article: Q190523
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -159,3 +161,5 @@ permalink: /kb/190/Q190523/
 	
 	=============================================================================
 	
+
+{% endraw %}

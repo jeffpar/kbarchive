@@ -6,6 +6,8 @@ permalink: /kb/139/Q139828/
 
 ## Q139828: PRB: MFC Does Not Reopen an Open Document
 
+{% raw %}
+
 	Article: Q139828
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -109,3 +111,5 @@ permalink: /kb/139/Q139828/
 	
 	=============================================================================
 	
+
+{% endraw %}

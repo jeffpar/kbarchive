@@ -6,6 +6,8 @@ permalink: /kb/141/Q141935/
 
 ## Q141935: Scenes: Rainbow Pattern On Tycho's Supernova Picture
 
+{% raw %}
+
 	Article: Q141935
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,2.0
@@ -45,3 +47,5 @@ permalink: /kb/141/Q141935/
 	
 	=============================================================================
 	
+
+{% endraw %}

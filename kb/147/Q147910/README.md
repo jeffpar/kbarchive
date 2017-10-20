@@ -6,6 +6,8 @@ permalink: /kb/147/Q147910/
 
 ## Q147910: Network Printing Options with the Tektronix Phaser
 
+{% raw %}
+
 	Article: Q147910
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -143,3 +145,5 @@ permalink: /kb/147/Q147910/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/207/Q207595/
 
 ## Q207595: HOWTO: SQL Server 7.0 Distributed Query With FoxPro .dbf Files
 
+{% raw %}
+
 	Article: Q207595
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6,2.6a,3.0,3.0b,5.0,5.0a,6.0; winnt:7.0
@@ -212,3 +214,5 @@ permalink: /kb/207/Q207595/
 	
 	=============================================================================
 	
+
+{% endraw %}

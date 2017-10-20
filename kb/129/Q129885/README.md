@@ -6,6 +6,8 @@ permalink: /kb/129/Q129885/
 
 ## Q129885: FIX: OLE Server Terminate Not Fired If Client Uses 'End'
 
+{% raw %}
+
 	Article: Q129885
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -131,3 +133,5 @@ permalink: /kb/129/Q129885/
 	
 	=============================================================================
 	
+
+{% endraw %}

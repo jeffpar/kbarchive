@@ -6,6 +6,8 @@ permalink: /kb/073/Q73190/
 
 ## Q73190: FIX: MASM 6.0 ALIGN Directive Requires Patch to Work Correctly
 
+{% raw %}
+
 	Article: Q73190
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -113,3 +115,5 @@ permalink: /kb/073/Q73190/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66649/
 
 ## Q66649: PRB: Cause of U4004 Error Message
 
+{% raw %}
+
 	Article: Q66649
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.11,1.12,1.13,1.2,1.3,1.4; NT:1.4,1.5; OS/2:1.11,1.12,1.13,1.21
@@ -83,3 +85,5 @@ permalink: /kb/066/Q66649/
 	
 	=============================================================================
 	
+
+{% endraw %}

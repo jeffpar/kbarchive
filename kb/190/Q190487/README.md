@@ -6,6 +6,8 @@ permalink: /kb/190/Q190487/
 
 ## Q190487: PRB: MFC Debug DLLs Are Not Compatible Between Versions
 
+{% raw %}
+
 	Article: Q190487
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0,6.0
@@ -98,3 +100,5 @@ permalink: /kb/190/Q190487/
 	
 	=============================================================================
 	
+
+{% endraw %}

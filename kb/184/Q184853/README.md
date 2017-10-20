@@ -6,6 +6,8 @@ permalink: /kb/184/Q184853/
 
 ## Q184853: Outwars: Choppy, Distorted, or Stuttering Sound
 
+{% raw %}
+
 	Article: Q184853
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -147,3 +149,5 @@ permalink: /kb/184/Q184853/
 	
 	=============================================================================
 	
+
+{% endraw %}

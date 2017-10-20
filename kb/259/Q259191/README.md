@@ -6,6 +6,8 @@ permalink: /kb/259/Q259191/
 
 ## Q259191: CFS/FS98: Aircraft Unexpectedly Stops Nose Down in Midair
 
+{% raw %}
+
 	Article: Q259191
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -191,3 +193,5 @@ permalink: /kb/259/Q259191/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161669/
 
 ## Q161669: WD97: Can't Open Selected Doc Using Dialogs FileFind Constant
 
+{% raw %}
+
 	Article: Q161669
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -149,3 +151,5 @@ permalink: /kb/161/Q161669/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190705/
 
 ## Q190705: XADM: How to Set Diagnostic Logging Levels for the Event Service
 
+{% raw %}
+
 	Article: Q190705
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -75,3 +77,5 @@ permalink: /kb/190/Q190705/
 	
 	=============================================================================
 	
+
+{% endraw %}

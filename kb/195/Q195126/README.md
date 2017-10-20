@@ -6,6 +6,8 @@ permalink: /kb/195/Q195126/
 
 ## Q195126: WD97: Third-Party Conversion Solutions
 
+{% raw %}
+
 	Article: Q195126
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -299,3 +301,5 @@ permalink: /kb/195/Q195126/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/303/Q303032/
 
 ## Q303032: Games: Game Stops Responding or Quits Unexpectedly
 
+{% raw %}
+
 	Article: Q303032
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -105,3 +107,5 @@ permalink: /kb/303/Q303032/
 	
 	=============================================================================
 	
+
+{% endraw %}

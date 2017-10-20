@@ -6,6 +6,8 @@ permalink: /kb/168/Q168081/
 
 ## Q168081: FIX: Wrong Column Jumped to for Macro Syntax Error
 
+{% raw %}
+
 	Article: Q168081
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -87,3 +89,5 @@ permalink: /kb/168/Q168081/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159299/
 
 ## Q159299: XFOR: IMC Unable to Resolve Host Addr. Using Raptor Firewall
 
+{% raw %}
+
 	Article: Q159299
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/159/Q159299/
 	
 	=============================================================================
 	
+
+{% endraw %}

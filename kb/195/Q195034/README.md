@@ -6,6 +6,8 @@ permalink: /kb/195/Q195034/
 
 ## Q195034: HOWTO: OfnKing Demonstrates CFileDialog Customization
 
+{% raw %}
+
 	Article: Q195034
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -328,3 +330,5 @@ permalink: /kb/195/Q195034/
 	
 	=============================================================================
 	
+
+{% endraw %}

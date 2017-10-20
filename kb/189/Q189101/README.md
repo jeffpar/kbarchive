@@ -6,6 +6,8 @@ permalink: /kb/189/Q189101/
 
 ## Q189101: Understanding NetBIOS Resource Record Flags
 
+{% raw %}
+
 	Article: Q189101
 	Product(s): Microsoft Windows NT
 	Version(s): Windows:3.11,95,98;WinNT:3.5,3.51,4.0
@@ -98,3 +100,5 @@ permalink: /kb/189/Q189101/
 	
 	=============================================================================
 	
+
+{% endraw %}

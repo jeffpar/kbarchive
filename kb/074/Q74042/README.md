@@ -6,6 +6,8 @@ permalink: /kb/074/Q74042/
 
 ## Q74042: HOWTO: How to Use PeekMessage() Correctly in Windows
 
+{% raw %}
+
 	Article: Q74042
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,4.0,95; winnt:3.5,3.51
@@ -187,3 +189,5 @@ permalink: /kb/074/Q74042/
 	
 	=============================================================================
 	
+
+{% endraw %}

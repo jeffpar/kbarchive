@@ -6,6 +6,8 @@ permalink: /kb/182/Q182330/
 
 ## Q182330: XCON: Perfmon Work Queue and MTA Queues Tab Conflict
 
+{% raw %}
+
 	Article: Q182330
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -83,3 +85,5 @@ permalink: /kb/182/Q182330/
 	
 	=============================================================================
 	
+
+{% endraw %}

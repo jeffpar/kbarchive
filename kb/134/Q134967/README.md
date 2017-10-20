@@ -6,6 +6,8 @@ permalink: /kb/134/Q134967/
 
 ## Q134967: SMS: Audit Package Fails to Report MIF to Site
 
+{% raw %}
+
 	Article: Q134967
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -62,3 +64,5 @@ permalink: /kb/134/Q134967/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130273/
 
 ## Q130273: NetBT Domain 0x1C Name Fails to Add All #DOM IP Addresses
 
+{% raw %}
+
 	Article: Q130273
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -76,3 +78,5 @@ permalink: /kb/130/Q130273/
 	
 	=============================================================================
 	
+
+{% endraw %}

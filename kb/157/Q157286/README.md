@@ -6,6 +6,8 @@ permalink: /kb/157/Q157286/
 
 ## Q157286: STL Sample for the includes Function
 
+{% raw %}
+
 	Article: Q157286
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -180,3 +182,5 @@ permalink: /kb/157/Q157286/
 	
 	=============================================================================
 	
+
+{% endraw %}

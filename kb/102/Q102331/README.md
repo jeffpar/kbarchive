@@ -6,6 +6,8 @@ permalink: /kb/102/Q102331/
 
 ## Q102331: BUG: Problems Viewing Protected-Mode Application Memory
 
+{% raw %}
+
 	Article: Q102331
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.1
@@ -88,3 +90,5 @@ permalink: /kb/102/Q102331/
 	
 	=============================================================================
 	
+
+{% endraw %}

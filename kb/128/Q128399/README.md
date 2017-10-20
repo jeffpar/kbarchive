@@ -6,6 +6,8 @@ permalink: /kb/128/Q128399/
 
 ## Q128399: MS-DOS-Based Application Checks for Existence of Windows
 
+{% raw %}
+
 	Article: Q128399
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -73,3 +75,5 @@ permalink: /kb/128/Q128399/
 	
 	=============================================================================
 	
+
+{% endraw %}

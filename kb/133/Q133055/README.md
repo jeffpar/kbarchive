@@ -6,6 +6,8 @@ permalink: /kb/133/Q133055/
 
 ## Q133055: Scenes 2.0: How to Uninstall Scenes
 
+{% raw %}
+
 	Article: Q133055
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2.0
@@ -59,3 +61,5 @@ permalink: /kb/133/Q133055/
 	
 	=============================================================================
 	
+
+{% endraw %}

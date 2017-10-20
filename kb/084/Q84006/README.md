@@ -6,6 +6,8 @@ permalink: /kb/084/Q84006/
 
 ## Q84006: Recording Requirements for Sound Recorder
 
+{% raw %}
+
 	Article: Q84006
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0; WINDOWS:3.1,3.11,95
@@ -54,3 +56,5 @@ permalink: /kb/084/Q84006/
 	
 	=============================================================================
 	
+
+{% endraw %}

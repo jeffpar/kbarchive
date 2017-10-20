@@ -6,6 +6,8 @@ permalink: /kb/172/Q172790/
 
 ## Q172790: SMS: How to Enable Wuser32 User Mode Debug Logging
 
+{% raw %}
+
 	Article: Q172790
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -59,3 +61,5 @@ permalink: /kb/172/Q172790/
 	
 	=============================================================================
 	
+
+{% endraw %}

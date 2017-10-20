@@ -6,6 +6,8 @@ permalink: /kb/323/Q323155/
 
 ## Q323155: Migrating to MSN Internet Access (Dial-up) Using Mac OS X
 
+{% raw %}
+
 	Article: Q323155
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -195,3 +197,5 @@ permalink: /kb/323/Q323155/
 	
 	=============================================================================
 	
+
+{% endraw %}

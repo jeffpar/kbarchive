@@ -6,6 +6,8 @@ permalink: /kb/240/Q240137/
 
 ## Q240137: PRB: Invalid Return from SQL Server ODBC Driver ver. 3.70.0623
 
+{% raw %}
+
 	Article: Q240137
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.6,3.0,3.0b,3.7,5.0,5.0a,6.0
@@ -212,3 +214,5 @@ permalink: /kb/240/Q240137/
 	
 	=============================================================================
 	
+
+{% endraw %}

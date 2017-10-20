@@ -6,6 +6,8 @@ permalink: /kb/262/Q262108/
 
 ## Q262108: Inside Server-Based Applications Comments and Corrections
 
+{% raw %}
+
 	Article: Q262108
 	Product(s): Microsoft Press
 	Version(s): 
@@ -249,3 +251,5 @@ permalink: /kb/262/Q262108/
 	
 	=============================================================================
 	
+
+{% endraw %}

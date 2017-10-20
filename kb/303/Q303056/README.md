@@ -6,6 +6,8 @@ permalink: /kb/303/Q303056/
 
 ## Q303056: XADM:  BackOffice Resource Kit Utility Support Boundaries
 
+{% raw %}
+
 	Article: Q303056
 	Product(s): Microsoft Windows NT
 	Version(s): Part 1,Part 2,Part 3
@@ -71,3 +73,5 @@ permalink: /kb/303/Q303056/
 	
 	=============================================================================
 	
+
+{% endraw %}

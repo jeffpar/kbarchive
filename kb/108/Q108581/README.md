@@ -6,6 +6,8 @@ permalink: /kb/108/Q108581/
 
 ## Q108581: Setting Up VI POSIX Editor for Windows NT 3.1
 
+{% raw %}
+
 	Article: Q108581
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -111,3 +113,5 @@ permalink: /kb/108/Q108581/
 	
 	=============================================================================
 	
+
+{% endraw %}

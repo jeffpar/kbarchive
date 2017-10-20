@@ -6,6 +6,8 @@ permalink: /kb/234/Q234647/
 
 ## Q234647: Windows 95/98 Clients Hang with &quot;Mprexe.exe Not Responding&quot;
 
+{% raw %}
+
 	Article: Q234647
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 4.0,7.0
@@ -129,3 +131,5 @@ permalink: /kb/234/Q234647/
 	
 	=============================================================================
 	
+
+{% endraw %}

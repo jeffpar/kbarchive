@@ -6,6 +6,8 @@ permalink: /kb/060/Q60109/
 
 ## Q60109: Mac Hyp: Listing All Recipients of a Mail Message
 
+{% raw %}
+
 	Article: Q60109
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,2.0a,2.0b,3.0
@@ -55,3 +57,5 @@ permalink: /kb/060/Q60109/
 	
 	=============================================================================
 	
+
+{% endraw %}

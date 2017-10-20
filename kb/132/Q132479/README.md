@@ -6,6 +6,8 @@ permalink: /kb/132/Q132479/
 
 ## Q132479: PRB: 'Variable 'TYPE' is not found' err msg using Export
 
+{% raw %}
+
 	Article: Q132479
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -103,3 +105,5 @@ permalink: /kb/132/Q132479/
 	
 	=============================================================================
 	
+
+{% endraw %}

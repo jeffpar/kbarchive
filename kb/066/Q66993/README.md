@@ -6,6 +6,8 @@ permalink: /kb/066/Q66993/
 
 ## Q66993: Noise Words Are Wildcards in &quot;Phrase Search&quot; in PRISM Browser
 
+{% raw %}
+
 	Article: Q66993
 	Product(s): Microsoft Product Support Information
 	Version(s): 
@@ -134,3 +136,5 @@ permalink: /kb/066/Q66993/
 	
 	=============================================================================
 	
+
+{% endraw %}

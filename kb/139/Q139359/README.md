@@ -6,6 +6,8 @@ permalink: /kb/139/Q139359/
 
 ## Q139359: INFO: Readme.wri: Section 2, General Notes and Tips
 
+{% raw %}
+
 	Article: Q139359
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0
@@ -167,3 +169,5 @@ permalink: /kb/139/Q139359/
 	
 	=============================================================================
 	
+
+{% endraw %}

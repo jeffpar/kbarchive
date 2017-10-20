@@ -6,6 +6,8 @@ permalink: /kb/254/Q254916/
 
 ## Q254916: XFOR: Line Overwritten Sending Files to an Exchange Server
 
+{% raw %}
+
 	Article: Q254916
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -71,3 +73,5 @@ permalink: /kb/254/Q254916/
 	
 	=============================================================================
 	
+
+{% endraw %}

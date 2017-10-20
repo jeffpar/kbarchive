@@ -6,6 +6,8 @@ permalink: /kb/104/Q104681/
 
 ## Q104681: FIX: StreBlt Sample Causes Windows NT to Hang
 
+{% raw %}
+
 	Article: Q104681
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0
@@ -64,3 +66,5 @@ permalink: /kb/104/Q104681/
 	
 	=============================================================================
 	
+
+{% endraw %}

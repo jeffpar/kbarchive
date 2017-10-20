@@ -6,6 +6,8 @@ permalink: /kb/250/Q250850/
 
 ## Q250850: SMS: Systems Management Server 2.0 SP1 Server Hotfix Bundle
 
+{% raw %}
+
 	Article: Q250850
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP1
@@ -306,3 +308,5 @@ permalink: /kb/250/Q250850/
 	
 	=============================================================================
 	
+
+{% endraw %}

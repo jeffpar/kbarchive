@@ -6,6 +6,8 @@ permalink: /kb/137/Q137990/
 
 ## Q137990: Error Printing Command Reference Topic in Windows NT Help
 
+{% raw %}
+
 	Article: Q137990
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -46,3 +48,5 @@ permalink: /kb/137/Q137990/
 	
 	=============================================================================
 	
+
+{% endraw %}

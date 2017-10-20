@@ -6,6 +6,8 @@ permalink: /kb/111/Q111928/
 
 ## Q111928: Cannot Use Reply All Button with Received DCX Faxes
 
+{% raw %}
+
 	Article: Q111928
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -44,3 +46,5 @@ permalink: /kb/111/Q111928/
 	
 	=============================================================================
 	
+
+{% endraw %}

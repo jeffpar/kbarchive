@@ -6,6 +6,8 @@ permalink: /kb/309/Q309637/
 
 ## Q309637: Bicycle Casino 1.5: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q309637
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/309/Q309637/
 	
 	=============================================================================
 	
+
+{% endraw %}

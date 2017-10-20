@@ -6,6 +6,8 @@ permalink: /kb/031/Q31308/
 
 ## Q31308: BASIC Example Using SETMEM to Allocate Far Heap Memory; EXEMOD
 
+{% raw %}
+
 	Article: Q31308
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -86,3 +88,5 @@ permalink: /kb/031/Q31308/
 	ELSE
 	     PRINT "ERROR!  Incorrect segment in ES!"
 	END IF
+
+{% endraw %}

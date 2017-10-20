@@ -6,6 +6,8 @@ permalink: /kb/099/Q99864/
 
 ## Q99864: Buttons Seem Taller on 12-Inch Screen
 
+{% raw %}
+
 	Article: Q99864
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -36,3 +38,5 @@ permalink: /kb/099/Q99864/
 	
 	=============================================================================
 	
+
+{% endraw %}

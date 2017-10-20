@@ -6,6 +6,8 @@ permalink: /kb/183/Q183706/
 
 ## Q183706: XFOR: File Status Table Contains Invalid Entry; Dirsync Fails
 
+{% raw %}
+
 	Article: Q183706
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.2,5.0
@@ -94,3 +96,5 @@ permalink: /kb/183/Q183706/
 	
 	=============================================================================
 	
+
+{% endraw %}

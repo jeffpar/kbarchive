@@ -6,6 +6,8 @@ permalink: /kb/243/Q243769/
 
 ## Q243769: XADM: Store.exe Crashes Converting TNEF Data
 
+{% raw %}
+
 	Article: Q243769
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP3
@@ -80,3 +82,5 @@ permalink: /kb/243/Q243769/
 	
 	=============================================================================
 	
+
+{% endraw %}

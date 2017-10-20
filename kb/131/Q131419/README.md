@@ -6,6 +6,8 @@ permalink: /kb/131/Q131419/
 
 ## Q131419: How to Gain Keyboard Access to Extended Characters
 
+{% raw %}
+
 	Article: Q131419
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/131/Q131419/
 	
 	=============================================================================
 	
+
+{% endraw %}

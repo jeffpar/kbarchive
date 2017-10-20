@@ -6,6 +6,8 @@ permalink: /kb/048/Q48301/
 
 ## Q48301: FltSim: Dynamic Scenery Doesn't Stop When Recording a Demo
 
+{% raw %}
+
 	Article: Q48301
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -28,3 +30,5 @@ permalink: /kb/048/Q48301/
 	
 	=============================================================================
 	
+
+{% endraw %}

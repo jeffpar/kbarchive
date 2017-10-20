@@ -6,6 +6,8 @@ permalink: /kb/184/Q184896/
 
 ## Q184896: PRB: Scroll Arrows Not Showing When DisplayCount = 1
 
+{% raw %}
+
 	Article: Q184896
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -79,3 +81,5 @@ permalink: /kb/184/Q184896/
 	
 	=============================================================================
 	
+
+{% endraw %}

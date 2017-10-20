@@ -6,6 +6,8 @@ permalink: /kb/104/Q104613/
 
 ## Q104613: Arcade: Description of Missile Command
 
+{% raw %}
+
 	Article: Q104613
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0; WINDOWS:1.0
@@ -145,3 +147,5 @@ permalink: /kb/104/Q104613/
 	
 	=============================================================================
 	
+
+{% endraw %}

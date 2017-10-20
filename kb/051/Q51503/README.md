@@ -6,6 +6,8 @@ permalink: /kb/051/Q51503/
 
 ## Q51503: Requested Contents for Windows Problem Reports
 
+{% raw %}
+
 	Article: Q51503
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -127,3 +129,5 @@ permalink: /kb/051/Q51503/
 	
 	=============================================================================
 	
+
+{% endraw %}

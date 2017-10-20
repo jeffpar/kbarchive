@@ -6,6 +6,8 @@ permalink: /kb/115/Q115144/
 
 ## Q115144: Cannot Print Faxes from AWFAX Fax Viewer with the HP 1200C
 
+{% raw %}
+
 	Article: Q115144
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -55,3 +57,5 @@ permalink: /kb/115/Q115144/
 	
 	=============================================================================
 	
+
+{% endraw %}

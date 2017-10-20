@@ -6,6 +6,8 @@ permalink: /kb/258/Q258894/
 
 ## Q258894: Allegiance: Server Settings Removed When You Uninstall Client
 
+{% raw %}
+
 	Article: Q258894
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/258/Q258894/
 	
 	=============================================================================
 	
+
+{% endraw %}

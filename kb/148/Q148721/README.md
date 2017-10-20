@@ -6,6 +6,8 @@ permalink: /kb/148/Q148721/
 
 ## Q148721: PRB: ODBC - Call Failed Error When Appending Record in Access
 
+{% raw %}
+
 	Article: Q148721
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:1.0
@@ -101,3 +103,5 @@ permalink: /kb/148/Q148721/
 	
 	=============================================================================
 	
+
+{% endraw %}

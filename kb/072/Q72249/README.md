@@ -6,6 +6,8 @@ permalink: /kb/072/Q72249/
 
 ## Q72249: CodeView Does Not Detect M61xx Math Errors
 
+{% raw %}
+
 	Article: Q72249
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/072/Q72249/
 	
 	=============================================================================
 	
+
+{% endraw %}

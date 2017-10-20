@@ -6,6 +6,8 @@ permalink: /kb/058/Q58658/
 
 ## Q58658: Quick Libraries in BASIC 7.00 Don't Use Expanded Memory
 
+{% raw %}
+
 	Article: Q58658
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -27,3 +29,5 @@ permalink: /kb/058/Q58658/
 	
 	Note: (LIM 4.0 EMS is an acronym for the Lotus/Intel/Microsoft version
 	4.0 Expanded Memory Specification for MS-DOS.)
+
+{% endraw %}

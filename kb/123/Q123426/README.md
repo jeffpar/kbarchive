@@ -6,6 +6,8 @@ permalink: /kb/123/Q123426/
 
 ## Q123426: STOP 0x0000000A During Upgrade to Windows NT 3.5
 
+{% raw %}
+
 	Article: Q123426
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/123/Q123426/
 	
 	=============================================================================
 	
+
+{% endraw %}

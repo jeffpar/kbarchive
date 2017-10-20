@@ -6,6 +6,8 @@ permalink: /kb/295/Q295016/
 
 ## Q295016: SMS: Cannot Save .mif Files Created by the MIF Entry Tool in Win
 
+{% raw %}
+
 	Article: Q295016
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -73,3 +75,5 @@ permalink: /kb/295/Q295016/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/309/Q309654/
 
 ## Q309654: STREETS: Err Msg: The Main Application Cannot Be Launched
 
+{% raw %}
+
 	Article: Q309654
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/309/Q309654/
 	
 	=============================================================================
 	
+
+{% endraw %}

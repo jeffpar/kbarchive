@@ -6,6 +6,8 @@ permalink: /kb/122/Q122258/
 
 ## Q122258: BUG: Cannot Disconnect From Network Drive After Running Setup
 
+{% raw %}
+
 	Article: Q122258
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,4.0,4.1
@@ -83,3 +85,5 @@ permalink: /kb/122/Q122258/
 	
 	=============================================================================
 	
+
+{% endraw %}

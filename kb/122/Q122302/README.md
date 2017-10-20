@@ -6,6 +6,8 @@ permalink: /kb/122/Q122302/
 
 ## Q122302: FIX: C1001 Error Compiling Naked Function with /Og and /G5
 
+{% raw %}
+
 	Article: Q122302
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -85,3 +87,5 @@ permalink: /kb/122/Q122302/
 	
 	=============================================================================
 	
+
+{% endraw %}

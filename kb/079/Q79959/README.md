@@ -6,6 +6,8 @@ permalink: /kb/079/Q79959/
 
 ## Q79959: Standard Mode with Windows on a Unisys (Sperry) Micro IT
 
+{% raw %}
+
 	Article: Q79959
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/079/Q79959/
 	
 	=============================================================================
 	
+
+{% endraw %}

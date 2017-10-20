@@ -6,6 +6,8 @@ permalink: /kb/119/Q119866/
 
 ## Q119866: Microcom 4232 Modem Connects at 9600 Baud Only
 
+{% raw %}
+
 	Article: Q119866
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50
@@ -70,3 +72,5 @@ permalink: /kb/119/Q119866/
 	
 	=============================================================================
 	
+
+{% endraw %}

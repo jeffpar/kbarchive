@@ -6,6 +6,8 @@ permalink: /kb/083/Q83272/
 
 ## Q83272: Help File Missing Green Text or Text is Hard to Read
 
+{% raw %}
+
 	Article: Q83272
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/083/Q83272/
 	
 	=============================================================================
 	
+
+{% endraw %}

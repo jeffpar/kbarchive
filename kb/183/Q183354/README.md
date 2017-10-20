@@ -6,6 +6,8 @@ permalink: /kb/183/Q183354/
 
 ## Q183354: XCLN: Unable to Attach Files with Long File Names
 
+{% raw %}
+
 	Article: Q183354
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -80,3 +82,5 @@ permalink: /kb/183/Q183354/
 	
 	=============================================================================
 	
+
+{% endraw %}

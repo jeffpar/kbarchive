@@ -6,6 +6,8 @@ permalink: /kb/319/Q319282/
 
 ## Q319282: FIX: SETFLDSTATE() Does Not Work for Field with Default Value
 
+{% raw %}
+
 	Article: Q319282
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -96,3 +98,5 @@ permalink: /kb/319/Q319282/
 	
 	=============================================================================
 	
+
+{% endraw %}

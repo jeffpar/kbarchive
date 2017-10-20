@@ -6,6 +6,8 @@ permalink: /kb/079/Q79524/
 
 ## Q79524: Bookshelf for Windows 1991 AUTOEXEC.BAT and WIN.INI Changes
 
+{% raw %}
+
 	Article: Q79524
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1991 edition
@@ -65,3 +67,5 @@ permalink: /kb/079/Q79524/
 	
 	=============================================================================
 	
+
+{% endraw %}

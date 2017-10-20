@@ -6,6 +6,8 @@ permalink: /kb/148/Q148180/
 
 ## Q148180: INFO: File Differences in Visual Basic 4.0a
 
+{% raw %}
+
 	Article: Q148180
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0a
@@ -140,3 +142,5 @@ permalink: /kb/148/Q148180/
 	
 	=============================================================================
 	
+
+{% endraw %}

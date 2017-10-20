@@ -6,6 +6,8 @@ permalink: /kb/257/Q257308/
 
 ## Q257308: XCON: Dynamic RAS Doesn't Work w. &quot;-RpcServerUseProtSeqEp...&quot;
 
+{% raw %}
+
 	Article: Q257308
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -64,3 +66,5 @@ permalink: /kb/257/Q257308/
 	
 	=============================================================================
 	
+
+{% endraw %}

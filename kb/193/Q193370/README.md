@@ -6,6 +6,8 @@ permalink: /kb/193/Q193370/
 
 ## Q193370: Encarta Virtual Globe 99: Program Hangs When You Print Article
 
+{% raw %}
+
 	Article: Q193370
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -63,3 +65,5 @@ permalink: /kb/193/Q193370/
 	
 	=============================================================================
 	
+
+{% endraw %}

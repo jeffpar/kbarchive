@@ -6,6 +6,8 @@ permalink: /kb/178/Q178408/
 
 ## Q178408: BUG: Value Property of Calendar Control Not on Properties Sheet
 
+{% raw %}
+
 	Article: Q178408
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -80,3 +82,5 @@ permalink: /kb/178/Q178408/
 	
 	=============================================================================
 	
+
+{% endraw %}

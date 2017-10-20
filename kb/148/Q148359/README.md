@@ -6,6 +6,8 @@ permalink: /kb/148/Q148359/
 
 ## Q148359: SNA Server APPC Error: F004 AP_COMM_SUBSYSTEM_NOT_LOADED
 
+{% raw %}
+
 	Article: Q148359
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -145,3 +147,5 @@ permalink: /kb/148/Q148359/
 	
 	=============================================================================
 	
+
+{% endraw %}

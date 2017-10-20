@@ -6,6 +6,8 @@ permalink: /kb/069/Q69079/
 
 ## Q69079: HOWTO: How to Give a 3-D Effect to Windows Controls
 
+{% raw %}
+
 	Article: Q69079
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -162,3 +164,5 @@ permalink: /kb/069/Q69079/
 	
 	=============================================================================
 	
+
+{% endraw %}

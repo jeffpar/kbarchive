@@ -6,6 +6,8 @@ permalink: /kb/246/Q246141/
 
 ## Q246141: FS2000: Graphic Elements Intermittently Flash or Blink
 
+{% raw %}
+
 	Article: Q246141
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -69,3 +71,5 @@ permalink: /kb/246/Q246141/
 	
 	=============================================================================
 	
+
+{% endraw %}

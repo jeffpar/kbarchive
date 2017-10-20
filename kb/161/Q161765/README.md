@@ -6,6 +6,8 @@ permalink: /kb/161/Q161765/
 
 ## Q161765: Incorrect Resource Information Printed from Device Manager
 
+{% raw %}
+
 	Article: Q161765
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -61,3 +63,5 @@ permalink: /kb/161/Q161765/
 	
 	=============================================================================
 	
+
+{% endraw %}

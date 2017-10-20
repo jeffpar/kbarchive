@@ -6,6 +6,8 @@ permalink: /kb/156/Q156316/
 
 ## Q156316: Inability to Open Files May Be Caused by Bad Registry Key
 
+{% raw %}
+
 	Article: Q156316
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -78,3 +80,5 @@ permalink: /kb/156/Q156316/
 	
 	=============================================================================
 	
+
+{% endraw %}

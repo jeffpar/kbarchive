@@ -6,6 +6,8 @@ permalink: /kb/123/Q123803/
 
 ## Q123803: FIX: Fatal Error C1001: Compiler File MSC1.CPP Line 1056
 
+{% raw %}
+
 	Article: Q123803
 	Product(s): Microsoft C Compiler
 	Version(s): 2.00
@@ -88,3 +90,5 @@ permalink: /kb/123/Q123803/
 	
 	=============================================================================
 	
+
+{% endraw %}

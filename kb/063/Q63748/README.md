@@ -6,6 +6,8 @@ permalink: /kb/063/Q63748/
 
 ## Q63748: Using Colorgraphics Dual VGA Card with Windows 3.0
 
+{% raw %}
+
 	Article: Q63748
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -49,3 +51,5 @@ permalink: /kb/063/Q63748/
 	
 	=============================================================================
 	
+
+{% endraw %}

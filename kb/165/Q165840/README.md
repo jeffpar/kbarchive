@@ -6,6 +6,8 @@ permalink: /kb/165/Q165840/
 
 ## Q165840: Using Stripe Set During Initialization May Result in Data Loss
 
+{% raw %}
+
 	Article: Q165840
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -86,3 +88,5 @@ permalink: /kb/165/Q165840/
 	
 	=============================================================================
 	
+
+{% endraw %}

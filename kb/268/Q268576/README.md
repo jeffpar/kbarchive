@@ -6,6 +6,8 @@ permalink: /kb/268/Q268576/
 
 ## Q268576: XADM: &quot;Hide from AB&quot; Value Set to NULL After Mailbox Is Created
 
+{% raw %}
+
 	Article: Q268576
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -57,3 +59,5 @@ permalink: /kb/268/Q268576/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/073/Q73232/
 
 ## Q73232: Cannot Delete Files in MS-DOS Executive with DELETE Key
 
+{% raw %}
+
 	Article: Q73232
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -32,3 +34,5 @@ permalink: /kb/073/Q73232/
 	
 	=============================================================================
 	
+
+{% endraw %}

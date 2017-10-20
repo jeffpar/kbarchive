@@ -6,6 +6,8 @@ permalink: /kb/200/Q200540/
 
 ## Q200540: Quick Viewer Displays Black Screen When You Try Remote Control
 
+{% raw %}
+
 	Article: Q200540
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -50,3 +52,5 @@ permalink: /kb/200/Q200540/
 	
 	=============================================================================
 	
+
+{% endraw %}

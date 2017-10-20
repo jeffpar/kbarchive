@@ -6,6 +6,8 @@ permalink: /kb/245/Q245099/
 
 ## Q245099: Content Location Does Not Return the Port Number Is Not 80
 
+{% raw %}
+
 	Article: Q245099
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -72,3 +74,5 @@ permalink: /kb/245/Q245099/
 	
 	=============================================================================
 	
+
+{% endraw %}

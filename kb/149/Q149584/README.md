@@ -6,6 +6,8 @@ permalink: /kb/149/Q149584/
 
 ## Q149584: Cannot Access Compressed Drives After Removing Windows 95
 
+{% raw %}
+
 	Article: Q149584
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:6.0,6.2,6.22; WINDOWS:95
@@ -70,3 +72,5 @@ permalink: /kb/149/Q149584/
 	
 	=============================================================================
 	
+
+{% endraw %}

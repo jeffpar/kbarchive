@@ -6,6 +6,8 @@ permalink: /kb/126/Q126591/
 
 ## Q126591: PC Mac: Err Msg: Application Unknown Has Unexpectedly Quit
 
+{% raw %}
+
 	Article: Q126591
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -92,3 +94,5 @@ permalink: /kb/126/Q126591/
 	
 	=============================================================================
 	
+
+{% endraw %}

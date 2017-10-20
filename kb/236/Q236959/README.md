@@ -6,6 +6,8 @@ permalink: /kb/236/Q236959/
 
 ## Q236959: Access Violation in Mpr.dll During Startup
 
+{% raw %}
+
 	Article: Q236959
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/236/Q236959/
 	
 	=============================================================================
 	
+
+{% endraw %}

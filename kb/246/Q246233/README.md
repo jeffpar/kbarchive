@@ -6,6 +6,8 @@ permalink: /kb/246/Q246233/
 
 ## Q246233: FIX: Nested UserControl DataSource Property Causes Crash
 
+{% raw %}
+
 	Article: Q246233
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -99,3 +101,5 @@ permalink: /kb/246/Q246233/
 	
 	=============================================================================
 	
+
+{% endraw %}

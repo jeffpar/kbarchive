@@ -6,6 +6,8 @@ permalink: /kb/197/Q197330/
 
 ## Q197330: XFOR: Configuring LDAP/IMAP Migration Wizard for Exchange
 
+{% raw %}
+
 	Article: Q197330
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -68,3 +70,5 @@ permalink: /kb/197/Q197330/
 	
 	=============================================================================
 	
+
+{% endraw %}

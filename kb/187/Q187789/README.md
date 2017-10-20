@@ -6,6 +6,8 @@ permalink: /kb/187/Q187789/
 
 ## Q187789: Step by Step: Novell NetWare to Windows NT Migration
 
+{% raw %}
+
 	Article: Q187789
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -459,3 +461,5 @@ permalink: /kb/187/Q187789/
 	
 	=============================================================================
 	
+
+{% endraw %}

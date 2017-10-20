@@ -6,6 +6,8 @@ permalink: /kb/120/Q120193/
 
 ## Q120193: PRB: U1150 Error From the LIB Utility
 
+{% raw %}
+
 	Article: Q120193
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,1.5
@@ -79,3 +81,5 @@ permalink: /kb/120/Q120193/
 	
 	=============================================================================
 	
+
+{% endraw %}

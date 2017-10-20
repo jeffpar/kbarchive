@@ -6,6 +6,8 @@ permalink: /kb/260/Q260150/
 
 ## Q260150: BUG: Control Manager Allows You to Uninstall of ActiveX DLLs
 
+{% raw %}
+
 	Article: Q260150
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -81,3 +83,5 @@ permalink: /kb/260/Q260150/
 	
 	=============================================================================
 	
+
+{% endraw %}

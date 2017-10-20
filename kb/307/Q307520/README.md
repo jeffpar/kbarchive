@@ -6,6 +6,8 @@ permalink: /kb/307/Q307520/
 
 ## Q307520: Dynamic Remote LUs May Lead to Allocation Failures
 
+{% raw %}
+
 	Article: Q307520
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -140,3 +142,5 @@ permalink: /kb/307/Q307520/
 	
 	=============================================================================
 	
+
+{% endraw %}

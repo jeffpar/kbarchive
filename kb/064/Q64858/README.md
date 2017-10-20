@@ -6,6 +6,8 @@ permalink: /kb/064/Q64858/
 
 ## Q64858: Missing Printers on SETUP.INF on 3.5-Inch Disk in Windows 3.0
 
+{% raw %}
+
 	Article: Q64858
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -45,3 +47,5 @@ permalink: /kb/064/Q64858/
 	
 	=============================================================================
 	
+
+{% endraw %}

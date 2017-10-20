@@ -6,6 +6,8 @@ permalink: /kb/117/Q117862/
 
 ## Q117862: MAC Encarta: Can't Copy Graphic in Millions of Colors
 
+{% raw %}
+
 	Article: Q117862
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -46,3 +48,5 @@ permalink: /kb/117/Q117862/
 	
 	=============================================================================
 	
+
+{% endraw %}

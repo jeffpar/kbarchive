@@ -6,6 +6,8 @@ permalink: /kb/129/Q129211/
 
 ## Q129211: Frequently Asked Questions About Microsoft Exchange Profiles
 
+{% raw %}
+
 	Article: Q129211
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -170,3 +172,5 @@ permalink: /kb/129/Q129211/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152304/
 
 ## Q152304: Random Blue Screens Caused by Bad Packet and DLC.SYS
 
+{% raw %}
+
 	Article: Q152304
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -103,3 +105,5 @@ permalink: /kb/152/Q152304/
 	
 	=============================================================================
 	
+
+{% endraw %}

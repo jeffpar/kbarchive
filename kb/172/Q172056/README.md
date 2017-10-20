@@ -6,6 +6,8 @@ permalink: /kb/172/Q172056/
 
 ## Q172056: BUG: Private UserControls Do Not Support Data Binding
 
+{% raw %}
+
 	Article: Q172056
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -130,3 +132,5 @@ permalink: /kb/172/Q172056/
 	
 	=============================================================================
 	
+
+{% endraw %}

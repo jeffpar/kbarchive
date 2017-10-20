@@ -6,6 +6,8 @@ permalink: /kb/216/Q216952/
 
 ## Q216952: ERROR 12035 on SFM Volume Creation After Installing SP4
 
+{% raw %}
+
 	Article: Q216952
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -59,3 +61,5 @@ permalink: /kb/216/Q216952/
 	
 	=============================================================================
 	
+
+{% endraw %}

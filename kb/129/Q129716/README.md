@@ -6,6 +6,8 @@ permalink: /kb/129/Q129716/
 
 ## Q129716: Setup Warning on Computers Using XtraDrive Is Misleading
 
+{% raw %}
+
 	Article: Q129716
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -70,3 +72,5 @@ permalink: /kb/129/Q129716/
 	
 	=============================================================================
 	
+
+{% endraw %}

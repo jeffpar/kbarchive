@@ -6,6 +6,8 @@ permalink: /kb/193/Q193541/
 
 ## Q193541: INFO: Visual Basic 5.0 Product Documentation Print Version
 
+{% raw %}
+
 	Article: Q193541
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -67,3 +69,5 @@ permalink: /kb/193/Q193541/
 	
 	=============================================================================
 	
+
+{% endraw %}

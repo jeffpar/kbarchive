@@ -6,6 +6,8 @@ permalink: /kb/182/Q182322/
 
 ## Q182322: SNMP Appends Garbage to Data in Response to SNMP Get
 
+{% raw %}
+
 	Article: Q182322
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/182/Q182322/
 	
 	=============================================================================
 	
+
+{% endraw %}

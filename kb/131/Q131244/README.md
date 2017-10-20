@@ -6,6 +6,8 @@ permalink: /kb/131/Q131244/
 
 ## Q131244: How the Component Manager for The Microsoft Network Works
 
+{% raw %}
+
 	Article: Q131244
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -66,3 +68,5 @@ permalink: /kb/131/Q131244/
 	
 	=============================================================================
 	
+
+{% endraw %}

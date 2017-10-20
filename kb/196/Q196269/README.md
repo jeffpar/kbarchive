@@ -6,6 +6,8 @@ permalink: /kb/196/Q196269/
 
 ## Q196269: When to Reinstall a Service Pack
 
+{% raw %}
+
 	Article: Q196269
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0,4.0a
@@ -75,3 +77,5 @@ permalink: /kb/196/Q196269/
 	
 	=============================================================================
 	
+
+{% endraw %}

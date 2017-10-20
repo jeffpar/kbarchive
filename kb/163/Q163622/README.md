@@ -6,6 +6,8 @@ permalink: /kb/163/Q163622/
 
 ## Q163622: No Sound Dialing with Apex Data Mobile Plus Modem
 
+{% raw %}
+
 	Article: Q163622
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -64,3 +66,5 @@ permalink: /kb/163/Q163622/
 	
 	=============================================================================
 	
+
+{% endraw %}

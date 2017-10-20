@@ -6,6 +6,8 @@ permalink: /kb/189/Q189988/
 
 ## Q189988: CMPXCHG8B CPUs in Non-Intel/AMD x86 Compatibles Not Supported
 
+{% raw %}
+
 	Article: Q189988
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -74,3 +76,5 @@ permalink: /kb/189/Q189988/
 	
 	=============================================================================
 	
+
+{% endraw %}

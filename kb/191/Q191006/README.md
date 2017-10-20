@@ -6,6 +6,8 @@ permalink: /kb/191/Q191006/
 
 ## Q191006: DOC: FlexGrid Control Is Limited to 350,000 Total Cells
 
+{% raw %}
+
 	Article: Q191006
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -75,3 +77,5 @@ permalink: /kb/191/Q191006/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128647/
 
 ## Q128647: Troubleshooting TCP/IP LAN and RAS Routing Issues
 
+{% raw %}
+
 	Article: Q128647
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -101,3 +103,5 @@ permalink: /kb/128/Q128647/
 	
 	=============================================================================
 	
+
+{% endraw %}

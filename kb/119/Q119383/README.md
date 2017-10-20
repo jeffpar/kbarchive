@@ -6,6 +6,8 @@ permalink: /kb/119/Q119383/
 
 ## Q119383: AVI Files Available for Testing Video for Windows Runtime
 
+{% raw %}
+
 	Article: Q119383
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -73,3 +75,5 @@ permalink: /kb/119/Q119383/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/226/Q226872/
 
 ## Q226872: SMS: Can't Remove Assigned Client Remote Installation Account
 
+{% raw %}
+
 	Article: Q226872
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -54,3 +56,5 @@ permalink: /kb/226/Q226872/
 	
 	=============================================================================
 	
+
+{% endraw %}

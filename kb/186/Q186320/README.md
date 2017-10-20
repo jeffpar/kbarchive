@@ -6,6 +6,8 @@ permalink: /kb/186/Q186320/
 
 ## Q186320: INFO: Determining if a Web Project is Source Code Controlled
 
+{% raw %}
+
 	Article: Q186320
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:1.0,5.0,97
@@ -93,3 +95,5 @@ permalink: /kb/186/Q186320/
 	
 	=============================================================================
 	
+
+{% endraw %}

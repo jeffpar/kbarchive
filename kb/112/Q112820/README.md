@@ -6,6 +6,8 @@ permalink: /kb/112/Q112820/
 
 ## Q112820: PRIVATE Memory Variables and Memory Allocation
 
+{% raw %}
+
 	Article: Q112820
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 2.50b 3.00| 2.50 2.50
@@ -58,3 +60,5 @@ permalink: /kb/112/Q112820/
 	
 	=============================================================================
 	
+
+{% endraw %}

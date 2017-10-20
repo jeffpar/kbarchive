@@ -6,6 +6,8 @@ permalink: /kb/167/Q167839/
 
 ## Q167839: BUG: PopupMenu on Modal Form Not Displayed
 
+{% raw %}
+
 	Article: Q167839
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -129,3 +131,5 @@ permalink: /kb/167/Q167839/
 	
 	=============================================================================
 	
+
+{% endraw %}

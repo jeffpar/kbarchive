@@ -6,6 +6,8 @@ permalink: /kb/026/Q26589/
 
 ## Q26589: Variables in C 5.00/5.10 splitpath() Example Declared Wrong
 
+{% raw %}
+
 	Article: Q26589
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -33,3 +35,5 @@ permalink: /kb/026/Q26589/
 	
 	Both declarations work correctly, but unpredictable results may occur
 	with the original form of the array declarations.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241112/
 
 ## Q241112: ISAPI Filter Cannot be Removed Using HTMLA
 
+{% raw %}
+
 	Article: Q241112
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/241/Q241112/
 	
 	=============================================================================
 	
+
+{% endraw %}

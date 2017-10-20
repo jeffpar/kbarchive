@@ -6,6 +6,8 @@ permalink: /kb/083/Q83547/
 
 ## Q83547: Requesting OEM Disk When Changing System Settings
 
+{% raw %}
+
 	Article: Q83547
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/083/Q83547/
 	
 	=============================================================================
 	
+
+{% endraw %}

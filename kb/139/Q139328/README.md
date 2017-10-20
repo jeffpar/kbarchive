@@ -6,6 +6,8 @@ permalink: /kb/139/Q139328/
 
 ## Q139328: INF: No ODBC 32-bit Btrieve Driver Available from Microsoft
 
+{% raw %}
+
 	Article: Q139328
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -58,3 +60,5 @@ permalink: /kb/139/Q139328/
 	
 	=============================================================================
 	
+
+{% endraw %}

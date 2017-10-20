@@ -6,6 +6,8 @@ permalink: /kb/255/Q255832/
 
 ## Q255832: HTTP Compressed Files Not Created in Temporary Folder
 
+{% raw %}
+
 	Article: Q255832
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -67,3 +69,5 @@ permalink: /kb/255/Q255832/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189224/
 
 ## Q189224: TCP/IP Printing Service Hangs If Started Before Spooler Service
 
+{% raw %}
+
 	Article: Q189224
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -102,3 +104,5 @@ permalink: /kb/189/Q189224/
 	
 	=============================================================================
 	
+
+{% endraw %}

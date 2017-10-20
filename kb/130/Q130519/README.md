@@ -6,6 +6,8 @@ permalink: /kb/130/Q130519/
 
 ## Q130519: Cannot Access WFWG 3.11 Computer with Monolithic IPX
 
+{% raw %}
+
 	Article: Q130519
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -83,3 +85,5 @@ permalink: /kb/130/Q130519/
 	
 	=============================================================================
 	
+
+{% endraw %}

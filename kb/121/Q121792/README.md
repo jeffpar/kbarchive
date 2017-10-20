@@ -6,6 +6,8 @@ permalink: /kb/121/Q121792/
 
 ## Q121792: Stop 0x0000006b During Setup on NEC Image P60
 
+{% raw %}
+
 	Article: Q121792
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/121/Q121792/
 	
 	=============================================================================
 	
+
+{% endraw %}

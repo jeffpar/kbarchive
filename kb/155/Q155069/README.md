@@ -6,6 +6,8 @@ permalink: /kb/155/Q155069/
 
 ## Q155069: ClickArt Manual Has Incorrect Support Phone Number
 
+{% raw %}
+
 	Article: Q155069
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -53,3 +55,5 @@ permalink: /kb/155/Q155069/
 	
 	=============================================================================
 	
+
+{% endraw %}

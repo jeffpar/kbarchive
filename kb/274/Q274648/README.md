@@ -6,6 +6,8 @@ permalink: /kb/274/Q274648/
 
 ## Q274648: Combat Flight Simulator 2: Aircraft Fly with Landing Gear Down
 
+{% raw %}
+
 	Article: Q274648
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -45,3 +47,5 @@ permalink: /kb/274/Q274648/
 	
 	=============================================================================
 	
+
+{% endraw %}

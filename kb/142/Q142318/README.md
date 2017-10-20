@@ -6,6 +6,8 @@ permalink: /kb/142/Q142318/
 
 ## Q142318: HOWTO: Remove OLE Controls &amp; Gallery Components from a Project
 
+{% raw %}
+
 	Article: Q142318
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -125,3 +127,5 @@ permalink: /kb/142/Q142318/
 	
 	=============================================================================
 	
+
+{% endraw %}

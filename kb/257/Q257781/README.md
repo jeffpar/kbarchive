@@ -6,6 +6,8 @@ permalink: /kb/257/Q257781/
 
 ## Q257781: FIX: 0x800040154 Loading Multi-Threaded DLL Repetitively
 
+{% raw %}
+
 	Article: Q257781
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -53,3 +55,5 @@ permalink: /kb/257/Q257781/
 	
 	=============================================================================
 	
+
+{% endraw %}

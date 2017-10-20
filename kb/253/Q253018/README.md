@@ -6,6 +6,8 @@ permalink: /kb/253/Q253018/
 
 ## Q253018: XFOR: Exchange Connector for Lotus Notes Appends From Field
 
+{% raw %}
+
 	Article: Q253018
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -84,3 +86,5 @@ permalink: /kb/253/Q253018/
 	
 	=============================================================================
 	
+
+{% endraw %}

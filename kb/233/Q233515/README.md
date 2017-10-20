@@ -6,6 +6,8 @@ permalink: /kb/233/Q233515/
 
 ## Q233515: PRB: Error &quot;String Literal Too Long&quot; w/ Update/Insert on Oracle
 
+{% raw %}
+
 	Article: Q233515
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -171,3 +173,5 @@ permalink: /kb/233/Q233515/
 	
 	=============================================================================
 	
+
+{% endraw %}

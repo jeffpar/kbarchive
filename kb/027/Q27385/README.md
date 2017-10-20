@@ -6,6 +6,8 @@ permalink: /kb/027/Q27385/
 
 ## Q27385: LINE INPUT to Fixed-Length String Crashes QB.EXE Interpreter
 
+{% raw %}
+
 	Article: Q27385
 	Product(s): See article
 	Version(s): 4.00
@@ -31,3 +33,5 @@ permalink: /kb/027/Q27385/
 	
 	The workaround for this problem is to LINE INPUT into a
 	variable-length string and then assign to a fixed-length string.
+
+{% endraw %}

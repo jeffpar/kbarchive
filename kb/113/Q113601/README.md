@@ -6,6 +6,8 @@ permalink: /kb/113/Q113601/
 
 ## Q113601: MS-DOS 6.21 Err Msg: Setup Cannot Continue. Your Computer...
 
+{% raw %}
+
 	Article: Q113601
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.21
@@ -50,3 +52,5 @@ permalink: /kb/113/Q113601/
 	
 	=============================================================================
 	
+
+{% endraw %}

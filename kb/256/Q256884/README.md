@@ -6,6 +6,8 @@ permalink: /kb/256/Q256884/
 
 ## Q256884: TCP and UDP Ports Used by Remote Control Have Changed in SP2
 
+{% raw %}
+
 	Article: Q256884
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -85,3 +87,5 @@ permalink: /kb/256/Q256884/
 	
 	=============================================================================
 	
+
+{% endraw %}

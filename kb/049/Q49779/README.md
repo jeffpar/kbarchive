@@ -6,6 +6,8 @@ permalink: /kb/049/Q49779/
 
 ## Q49779: Using Graphics in Mixed-Language Calls between QC and QB
 
+{% raw %}
+
 	Article: Q49779
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -36,3 +38,5 @@ permalink: /kb/049/Q49779/
 	compatibility, search on the following words:
 	
 	   QuickBASIC and QuickC and link and graphic
+
+{% endraw %}

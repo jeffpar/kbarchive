@@ -6,6 +6,8 @@ permalink: /kb/164/Q164886/
 
 ## Q164886: SMS: Invdos.exe Fails to Set the Resync Flag
 
+{% raw %}
+
 	Article: Q164886
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -56,3 +58,5 @@ permalink: /kb/164/Q164886/
 	
 	=============================================================================
 	
+
+{% endraw %}

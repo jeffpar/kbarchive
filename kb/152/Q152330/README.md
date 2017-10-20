@@ -6,6 +6,8 @@ permalink: /kb/152/Q152330/
 
 ## Q152330: XADM: Err Msg: Could Not Log On to the Message Store
 
+{% raw %}
+
 	Article: Q152330
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -53,3 +55,5 @@ permalink: /kb/152/Q152330/
 	
 	=============================================================================
 	
+
+{% endraw %}

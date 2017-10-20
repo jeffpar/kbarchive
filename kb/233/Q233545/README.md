@@ -6,6 +6,8 @@ permalink: /kb/233/Q233545/
 
 ## Q233545: SMS: Remote Control WinNT to WinNT Drops Connection
 
+{% raw %}
+
 	Article: Q233545
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -87,3 +89,5 @@ permalink: /kb/233/Q233545/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161700/
 
 ## Q161700: WinAT Returns Error &quot;Filename ... Is Incorrect&quot;
 
+{% raw %}
+
 	Article: Q161700
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -58,3 +60,5 @@ permalink: /kb/161/Q161700/
 	
 	=============================================================================
 	
+
+{% endraw %}

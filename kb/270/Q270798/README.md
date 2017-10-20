@@ -6,6 +6,8 @@ permalink: /kb/270/Q270798/
 
 ## Q270798: Encarta Language Learning: Menu Bar Is Missing
 
+{% raw %}
+
 	Article: Q270798
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -124,3 +126,5 @@ permalink: /kb/270/Q270798/
 	
 	=============================================================================
 	
+
+{% endraw %}

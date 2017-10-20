@@ -6,6 +6,8 @@ permalink: /kb/084/Q84942/
 
 ## Q84942: ZEOS OEM Windows 3.1 Causes Error on Network Install
 
+{% raw %}
+
 	Article: Q84942
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/084/Q84942/
 	
 	=============================================================================
 	
+
+{% endraw %}

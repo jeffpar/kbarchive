@@ -6,6 +6,8 @@ permalink: /kb/086/Q86976/
 
 ## Q86976: X400: Choosing Postoffice Mapping
 
+{% raw %}
+
 	Article: Q86976
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/086/Q86976/
 	
 	=============================================================================
 	
+
+{% endraw %}

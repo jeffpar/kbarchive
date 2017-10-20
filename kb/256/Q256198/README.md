@@ -6,6 +6,8 @@ permalink: /kb/256/Q256198/
 
 ## Q256198: SMS: Hardware Inventory Uses SMSCliToknAcct&amp; on Mapped Drives
 
+{% raw %}
+
 	Article: Q256198
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -58,3 +60,5 @@ permalink: /kb/256/Q256198/
 	
 	=============================================================================
 	
+
+{% endraw %}

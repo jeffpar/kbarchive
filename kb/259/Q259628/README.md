@@ -6,6 +6,8 @@ permalink: /kb/259/Q259628/
 
 ## Q259628: XADM: Restoring Exchange Databases from Alpha to Intel Servers
 
+{% raw %}
+
 	Article: Q259628
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -48,3 +50,5 @@ permalink: /kb/259/Q259628/
 	
 	=============================================================================
 	
+
+{% endraw %}

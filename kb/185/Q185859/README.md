@@ -6,6 +6,8 @@ permalink: /kb/185/Q185859/
 
 ## Q185859: INFO: OLE Servers Return Date Calculation Results as Seconds
 
+{% raw %}
+
 	Article: Q185859
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -90,3 +92,5 @@ permalink: /kb/185/Q185859/
 	
 	=============================================================================
 	
+
+{% endraw %}

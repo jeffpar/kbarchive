@@ -6,6 +6,8 @@ permalink: /kb/200/Q200467/
 
 ## Q200467: INFO: Modem Selection Algorithm for &quot;Use Another Port If Busy&quot;
 
+{% raw %}
+
 	Article: Q200467
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/200/Q200467/
 	
 	=============================================================================
 	
+
+{% endraw %}

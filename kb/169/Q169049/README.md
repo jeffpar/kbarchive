@@ -6,6 +6,8 @@ permalink: /kb/169/Q169049/
 
 ## Q169049: Unable to Restore Persistent Connection During Logon
 
+{% raw %}
+
 	Article: Q169049
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -97,3 +99,5 @@ permalink: /kb/169/Q169049/
 	
 	=============================================================================
 	
+
+{% endraw %}

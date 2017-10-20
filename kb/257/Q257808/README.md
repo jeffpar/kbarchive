@@ -6,6 +6,8 @@ permalink: /kb/257/Q257808/
 
 ## Q257808: SMS: Avoiding Duplicate IDs in SMS 2.0
 
+{% raw %}
+
 	Article: Q257808
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -99,3 +101,5 @@ permalink: /kb/257/Q257808/
 	
 	=============================================================================
 	
+
+{% endraw %}

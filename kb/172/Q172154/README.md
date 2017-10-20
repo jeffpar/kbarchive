@@ -6,6 +6,8 @@ permalink: /kb/172/Q172154/
 
 ## Q172154: Service Starts Automatically Even Though Startup Type Is Manual
 
+{% raw %}
+
 	Article: Q172154
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -57,3 +59,5 @@ permalink: /kb/172/Q172154/
 	
 	=============================================================================
 	
+
+{% endraw %}

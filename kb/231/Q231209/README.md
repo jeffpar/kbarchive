@@ -6,6 +6,8 @@ permalink: /kb/231/Q231209/
 
 ## Q231209: SMS: Update Distribution Points on a Schedule Cannot Be Cleared
 
+{% raw %}
+
 	Article: Q231209
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -52,3 +54,5 @@ permalink: /kb/231/Q231209/
 	
 	=============================================================================
 	
+
+{% endraw %}

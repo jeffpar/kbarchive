@@ -6,6 +6,8 @@ permalink: /kb/077/Q77628/
 
 ## Q77628: PC Ext: How External Sends Mail Between Postoffices
 
+{% raw %}
+
 	Article: Q77628
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.0a,3.2,3.2a,3.5
@@ -172,3 +174,5 @@ permalink: /kb/077/Q77628/
 	
 	=============================================================================
 	
+
+{% endraw %}

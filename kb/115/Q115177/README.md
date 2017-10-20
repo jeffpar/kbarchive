@@ -6,6 +6,8 @@ permalink: /kb/115/Q115177/
 
 ## Q115177: Incorrect Qemm READ.ME Reference to MemMaker
 
+{% raw %}
+
 	Article: Q115177
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -43,3 +45,5 @@ permalink: /kb/115/Q115177/
 	
 	=============================================================================
 	
+
+{% endraw %}

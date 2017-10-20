@@ -6,6 +6,8 @@ permalink: /kb/135/Q135337/
 
 ## Q135337: PRB: Run-Time Error R6915 - DOSX16: Unhandled Exception
 
+{% raw %}
+
 	Article: Q135337
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/135/Q135337/
 	
 	=============================================================================
 	
+
+{% endraw %}

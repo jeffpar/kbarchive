@@ -6,6 +6,8 @@ permalink: /kb/086/Q86972/
 
 ## Q86972: X400: Typical Batch Files to Set Up and Start X.400 Gateway
 
+{% raw %}
+
 	Article: Q86972
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -53,3 +55,5 @@ permalink: /kb/086/Q86972/
 	
 	=============================================================================
 	
+
+{% endraw %}

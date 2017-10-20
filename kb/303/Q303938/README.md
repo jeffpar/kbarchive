@@ -6,6 +6,8 @@ permalink: /kb/303/Q303938/
 
 ## Q303938: XIMS: Netscape IMAP4 Clients Cannot View the Message Body
 
+{% raw %}
+
 	Article: Q303938
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -107,3 +109,5 @@ permalink: /kb/303/Q303938/
 	
 	=============================================================================
 	
+
+{% endraw %}

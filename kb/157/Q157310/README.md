@@ -6,6 +6,8 @@ permalink: /kb/157/Q157310/
 
 ## Q157310: Batch.exe Creates &#91;InstallLocationsMRU&#93; Section Incorrectly
 
+{% raw %}
+
 	Article: Q157310
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -72,3 +74,5 @@ permalink: /kb/157/Q157310/
 	
 	=============================================================================
 	
+
+{% endraw %}

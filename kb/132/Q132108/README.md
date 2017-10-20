@@ -6,6 +6,8 @@ permalink: /kb/132/Q132108/
 
 ## Q132108: NE3200 not reset properly on warm boot
 
+{% raw %}
+
 	Article: Q132108
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/132/Q132108/
 	
 	=============================================================================
 	
+
+{% endraw %}

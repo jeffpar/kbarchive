@@ -6,6 +6,8 @@ permalink: /kb/187/Q187947/
 
 ## Q187947: 100 Percent CPU System Handle Problem
 
+{% raw %}
+
 	Article: Q187947
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:2.0,4.0
@@ -65,3 +67,5 @@ permalink: /kb/187/Q187947/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/243/Q243599/
 
 ## Q243599: FIX: VC Debugger Fails on Some Long Names
 
+{% raw %}
+
 	Article: Q243599
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -103,3 +105,5 @@ permalink: /kb/243/Q243599/
 	
 	=============================================================================
 	
+
+{% endraw %}

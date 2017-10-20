@@ -6,6 +6,8 @@ permalink: /kb/234/Q234615/
 
 ## Q234615: Windows 95 Tools May Cause Illegal Operation During Shutdown
 
+{% raw %}
+
 	Article: Q234615
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -69,3 +71,5 @@ permalink: /kb/234/Q234615/
 	
 	=============================================================================
 	
+
+{% endraw %}

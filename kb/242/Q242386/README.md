@@ -6,6 +6,8 @@ permalink: /kb/242/Q242386/
 
 ## Q242386: Cluster Does Not Log Event on Resource Monitor Failure
 
+{% raw %}
+
 	Article: Q242386
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:
@@ -83,3 +85,5 @@ permalink: /kb/242/Q242386/
 	
 	=============================================================================
 	
+
+{% endraw %}

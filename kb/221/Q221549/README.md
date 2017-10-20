@@ -6,6 +6,8 @@ permalink: /kb/221/Q221549/
 
 ## Q221549: Importing Client Authentication Certificates into IIS 4.0
 
+{% raw %}
+
 	Article: Q221549
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/221/Q221549/
 	
 	=============================================================================
 	
+
+{% endraw %}

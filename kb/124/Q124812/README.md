@@ -6,6 +6,8 @@ permalink: /kb/124/Q124812/
 
 ## Q124812: Kids: Hangs with Ensoniq Sound Card
 
+{% raw %}
+
 	Article: Q124812
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -125,3 +127,5 @@ permalink: /kb/124/Q124812/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155641/
 
 ## Q155641: Games: DirectX 2.0 Notes and Troubleshooting
 
+{% raw %}
+
 	Article: Q155641
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -240,3 +242,5 @@ permalink: /kb/155/Q155641/
 	
 	=============================================================================
 	
+
+{% endraw %}

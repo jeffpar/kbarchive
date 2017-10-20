@@ -6,6 +6,8 @@ permalink: /kb/047/Q47254/
 
 ## Q47254: SideKick 1.56x Causes Problems with Keyboard Input
 
+{% raw %}
+
 	Article: Q47254
 	Product(s): See article
 	Version(s): 2.01
@@ -33,3 +35,5 @@ permalink: /kb/047/Q47254/
 	
 	   CTRL+ALT (To call up the main selection window), then
 	   CTRL+HOME+END
+
+{% endraw %}

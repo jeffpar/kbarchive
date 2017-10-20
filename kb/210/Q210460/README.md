@@ -6,6 +6,8 @@ permalink: /kb/210/Q210460/
 
 ## Q210460: PRB: Data Truncated Error With CRecordset
 
+{% raw %}
+
 	Article: Q210460
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -80,3 +82,5 @@ permalink: /kb/210/Q210460/
 	
 	=============================================================================
 	
+
+{% endraw %}

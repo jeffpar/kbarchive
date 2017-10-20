@@ -6,6 +6,8 @@ permalink: /kb/157/Q157914/
 
 ## Q157914: &quot;Netware Compatible Home Directory&quot; Setting Has No Effect
 
+{% raw %}
+
 	Article: Q157914
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -48,3 +50,5 @@ permalink: /kb/157/Q157914/
 	
 	=============================================================================
 	
+
+{% endraw %}

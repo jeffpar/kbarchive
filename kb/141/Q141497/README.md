@@ -6,6 +6,8 @@ permalink: /kb/141/Q141497/
 
 ## Q141497: How to Use Device Manager to Check the Status of a Resource
 
+{% raw %}
+
 	Article: Q141497
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -98,3 +100,5 @@ permalink: /kb/141/Q141497/
 	
 	=============================================================================
 	
+
+{% endraw %}

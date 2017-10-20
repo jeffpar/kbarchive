@@ -6,6 +6,8 @@ permalink: /kb/153/Q153066/
 
 ## Q153066: IPC&#36; Connections Do Not Disconnect
 
+{% raw %}
+
 	Article: Q153066
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -75,3 +77,5 @@ permalink: /kb/153/Q153066/
 	
 	=============================================================================
 	
+
+{% endraw %}

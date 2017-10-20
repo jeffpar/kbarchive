@@ -6,6 +6,8 @@ permalink: /kb/184/Q184436/
 
 ## Q184436: Removal of Connection Manager Is Not Confirmed
 
+{% raw %}
+
 	Article: Q184436
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -42,3 +44,5 @@ permalink: /kb/184/Q184436/
 	
 	=============================================================================
 	
+
+{% endraw %}

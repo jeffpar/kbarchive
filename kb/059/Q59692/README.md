@@ -6,6 +6,8 @@ permalink: /kb/059/Q59692/
 
 ## Q59692: Macro Recorder Won't Record CTRL as First Key Press
 
+{% raw %}
+
 	Article: Q59692
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/059/Q59692/
 	
 	=============================================================================
 	
+
+{% endraw %}

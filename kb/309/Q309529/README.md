@@ -6,6 +6,8 @@ permalink: /kb/309/Q309529/
 
 ## Q309529: The CASE_IGNORE_NAME Line Has No Effect
 
+{% raw %}
+
 	Article: Q309529
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -99,3 +101,5 @@ permalink: /kb/309/Q309529/
 	
 	=============================================================================
 	
+
+{% endraw %}

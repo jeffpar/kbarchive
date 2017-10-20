@@ -6,6 +6,8 @@ permalink: /kb/128/Q128543/
 
 ## Q128543: Windows Won't Restart or Restarts With Distorted Video
 
+{% raw %}
+
 	Article: Q128543
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a,3.1,3.11
@@ -110,3 +112,5 @@ permalink: /kb/128/Q128543/
 	
 	=============================================================================
 	
+
+{% endraw %}

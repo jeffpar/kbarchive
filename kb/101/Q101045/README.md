@@ -6,6 +6,8 @@ permalink: /kb/101/Q101045/
 
 ## Q101045: Encarta Err Msg: The Necessary Text Fonts Are Not Available
 
+{% raw %}
+
 	Article: Q101045
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1993 edition,1994 edition,1995 edition; WINDOWS:
@@ -120,3 +122,5 @@ permalink: /kb/101/Q101045/
 	
 	=============================================================================
 	
+
+{% endraw %}

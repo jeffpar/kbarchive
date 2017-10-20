@@ -6,6 +6,8 @@ permalink: /kb/126/Q126689/
 
 ## Q126689: STOP Msg: c000021a Logging on a Second Time to WinNT 3.51 w/ SP2
 
+{% raw %}
+
 	Article: Q126689
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -60,3 +62,5 @@ permalink: /kb/126/Q126689/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234687/
 
 ## Q234687: How To Disable SNA NT Client Smart Multihoming
 
+{% raw %}
+
 	Article: Q234687
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
@@ -78,3 +80,5 @@ permalink: /kb/234/Q234687/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87758/
 
 ## Q87758: XGAAIDOX.SYS May Cause Windows 3.1 to Stop
 
+{% raw %}
+
 	Article: Q87758
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/087/Q87758/
 	
 	=============================================================================
 	
+
+{% endraw %}

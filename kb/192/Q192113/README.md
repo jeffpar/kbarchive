@@ -6,6 +6,8 @@ permalink: /kb/192/Q192113/
 
 ## Q192113: Order In Which Programs in the Startup Folder Are Processed
 
+{% raw %}
+
 	Article: Q192113
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -47,3 +49,5 @@ permalink: /kb/192/Q192113/
 	
 	=============================================================================
 	
+
+{% endraw %}

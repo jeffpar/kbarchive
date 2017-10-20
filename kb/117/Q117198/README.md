@@ -6,6 +6,8 @@ permalink: /kb/117/Q117198/
 
 ## Q117198: PC Adm: IMPORT .INF File Size Increases When IMPORT -A Is Used
 
+{% raw %}
+
 	Article: Q117198
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -76,3 +78,5 @@ permalink: /kb/117/Q117198/
 	
 	=============================================================================
 	
+
+{% endraw %}

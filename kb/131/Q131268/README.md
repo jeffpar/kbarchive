@@ -6,6 +6,8 @@ permalink: /kb/131/Q131268/
 
 ## Q131268: Baseball 95: Season Schedule Does Not Print With HP560C Driver
 
+{% raw %}
+
 	Article: Q131268
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.x
@@ -81,3 +83,5 @@ permalink: /kb/131/Q131268/
 	
 	=============================================================================
 	
+
+{% endraw %}

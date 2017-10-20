@@ -6,6 +6,8 @@ permalink: /kb/129/Q129494/
 
 ## Q129494: PRB: GPF When MultiColumn &amp; LBS_OWNERDRAWVARIABLE in List Box
 
+{% raw %}
+
 	Article: Q129494
 	Product(s): Microsoft C Compiler
 	Version(s): 1.00 1.50 1.51 1.52 2.00
@@ -100,3 +102,5 @@ permalink: /kb/129/Q129494/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/070/Q70005/
 
 ## Q70005: DOC: LB_GETCURSEL Function Documentation Incorrect
 
+{% raw %}
+
 	Article: Q70005
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -50,3 +52,5 @@ permalink: /kb/070/Q70005/
 	
 	=============================================================================
 	
+
+{% endraw %}

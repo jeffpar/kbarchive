@@ -6,6 +6,8 @@ permalink: /kb/165/Q165279/
 
 ## Q165279: XCON: X.400 First Contact Form for X.400 Connector Problem
 
+{% raw %}
+
 	Article: Q165279
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -251,3 +253,5 @@ permalink: /kb/165/Q165279/
 	
 	=============================================================================
 	
+
+{% endraw %}

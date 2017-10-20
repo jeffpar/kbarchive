@@ -6,6 +6,8 @@ permalink: /kb/157/Q157892/
 
 ## Q157892: WD97: Change to Address Font Not Saved from Envelopes Tab
 
+{% raw %}
+
 	Article: Q157892
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -71,3 +73,5 @@ permalink: /kb/157/Q157892/
 	
 	=============================================================================
 	
+
+{% endraw %}

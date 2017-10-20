@@ -6,6 +6,8 @@ permalink: /kb/248/Q248258/
 
 ## Q248258: Games: &lt;Program&gt; Caused an Invalid Page Fault in Module Unknown
 
+{% raw %}
+
 	Article: Q248258
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -74,3 +76,5 @@ permalink: /kb/248/Q248258/
 	
 	=============================================================================
 	
+
+{% endraw %}

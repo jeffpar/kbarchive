@@ -6,6 +6,8 @@ permalink: /kb/169/Q169143/
 
 ## Q169143: XCON: MTA Event 9221 A Sockets Err 10054 on a WSARecvEx() Call
 
+{% raw %}
+
 	Article: Q169143
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -60,3 +62,5 @@ permalink: /kb/169/Q169143/
 	
 	=============================================================================
 	
+
+{% endraw %}

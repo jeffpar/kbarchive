@@ -6,6 +6,8 @@ permalink: /kb/272/Q272462/
 
 ## Q272462: Runtime Error in MapPoint or Streets and Trips
 
+{% raw %}
+
 	Article: Q272462
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -182,3 +184,5 @@ permalink: /kb/272/Q272462/
 	
 	=============================================================================
 	
+
+{% endraw %}

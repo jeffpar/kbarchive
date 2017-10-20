@@ -6,6 +6,8 @@ permalink: /kb/037/Q37475/
 
 ## Q37475: User-Defined Character Fonts for Hercules Graphics Mode
 
+{% raw %}
+
 	Article: Q37475
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -125,3 +127,5 @@ permalink: /kb/037/Q37475/
 	
 	' pause
 	   SLEEP
+
+{% endraw %}

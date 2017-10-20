@@ -6,6 +6,8 @@ permalink: /kb/125/Q125306/
 
 ## Q125306: BUG: Cannot Insert BLOB Data Sized Between 64K and 128K
 
+{% raw %}
+
 	Article: Q125306
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -57,3 +59,5 @@ permalink: /kb/125/Q125306/
 	
 	=============================================================================
 	
+
+{% endraw %}

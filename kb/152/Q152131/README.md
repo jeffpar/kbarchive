@@ -6,6 +6,8 @@ permalink: /kb/152/Q152131/
 
 ## Q152131: FIX: C1001: Extern in Function Call or Bad Type in Prototype
 
+{% raw %}
+
 	Article: Q152131
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2
@@ -95,3 +97,5 @@ permalink: /kb/152/Q152131/
 	
 	=============================================================================
 	
+
+{% endraw %}

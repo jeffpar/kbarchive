@@ -6,6 +6,8 @@ permalink: /kb/130/Q130355/
 
 ## Q130355: How to Validate Data by Using Customized Error Messages
 
+{% raw %}
+
 	Article: Q130355
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -131,3 +133,5 @@ permalink: /kb/130/Q130355/
 	
 	=============================================================================
 	
+
+{% endraw %}

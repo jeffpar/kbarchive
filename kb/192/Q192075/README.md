@@ -6,6 +6,8 @@ permalink: /kb/192/Q192075/
 
 ## Q192075: HOWTO: Making Coolbar Interface Using Toolbar ActiveX Control
 
+{% raw %}
+
 	Article: Q192075
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -149,3 +151,5 @@ permalink: /kb/192/Q192075/
 	
 	=============================================================================
 	
+
+{% endraw %}

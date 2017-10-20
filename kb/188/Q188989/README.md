@@ -6,6 +6,8 @@ permalink: /kb/188/Q188989/
 
 ## Q188989: XADM: IS Stops Unexpectedly Formatting a Binary Property Value
 
+{% raw %}
+
 	Article: Q188989
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -113,3 +115,5 @@ permalink: /kb/188/Q188989/
 	
 	=============================================================================
 	
+
+{% endraw %}

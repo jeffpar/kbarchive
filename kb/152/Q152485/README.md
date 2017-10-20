@@ -6,6 +6,8 @@ permalink: /kb/152/Q152485/
 
 ## Q152485: Using Iomega Write-protected Media
 
+{% raw %}
+
 	Article: Q152485
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -58,3 +60,5 @@ permalink: /kb/152/Q152485/
 	
 	=============================================================================
 	
+
+{% endraw %}

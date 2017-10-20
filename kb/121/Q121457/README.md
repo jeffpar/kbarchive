@@ -6,6 +6,8 @@ permalink: /kb/121/Q121457/
 
 ## Q121457: Using Microsoft FORTRAN 5.1 with Visual Basic
 
+{% raw %}
+
 	Article: Q121457
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 3.0,5.1
@@ -347,3 +349,5 @@ permalink: /kb/121/Q121457/
 	
 	=============================================================================
 	
+
+{% endraw %}

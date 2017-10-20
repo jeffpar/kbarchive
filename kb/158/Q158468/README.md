@@ -6,6 +6,8 @@ permalink: /kb/158/Q158468/
 
 ## Q158468: WD97: Compile, Syntax Errors When You Run a Converted Macro in W
 
+{% raw %}
+
 	Article: Q158468
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -94,3 +96,5 @@ permalink: /kb/158/Q158468/
 	
 	=============================================================================
 	
+
+{% endraw %}

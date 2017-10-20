@@ -6,6 +6,8 @@ permalink: /kb/265/Q265215/
 
 ## Q265215: DocErr: SMCLIENT.DOC Incorrectly References SpyHydra Application
 
+{% raw %}
+
 	Article: Q265215
 	Product(s): Microsoft Press
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/265/Q265215/
 	
 	=============================================================================
 	
+
+{% endraw %}

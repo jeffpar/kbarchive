@@ -6,6 +6,8 @@ permalink: /kb/150/Q150681/
 
 ## Q150681: FP: How to Use a Document Other Than Index.htm as Default Page
 
+{% raw %}
+
 	Article: Q150681
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.1,97
@@ -72,3 +74,5 @@ permalink: /kb/150/Q150681/
 	
 	=============================================================================
 	
+
+{% endraw %}

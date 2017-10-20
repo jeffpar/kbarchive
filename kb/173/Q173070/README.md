@@ -6,6 +6,8 @@ permalink: /kb/173/Q173070/
 
 ## Q173070: WD97: Unwanted Tab Stop Inserted in Outline Numbered Sequence
 
+{% raw %}
+
 	Article: Q173070
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -260,3 +262,5 @@ permalink: /kb/173/Q173070/
 	
 	=============================================================================
 	
+
+{% endraw %}

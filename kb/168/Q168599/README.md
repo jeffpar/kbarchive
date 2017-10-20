@@ -6,6 +6,8 @@ permalink: /kb/168/Q168599/
 
 ## Q168599: SMS: Brief Overview of PGC for Windows 95 Clients in SMS 1.2
 
+{% raw %}
+
 	Article: Q168599
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -93,3 +95,5 @@ permalink: /kb/168/Q168599/
 	
 	=============================================================================
 	
+
+{% endraw %}

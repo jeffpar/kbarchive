@@ -6,6 +6,8 @@ permalink: /kb/043/Q43344/
 
 ## Q43344: Deallocating Memory When Using Compaq and IBM Mouse Ports
 
+{% raw %}
+
 	Article: Q43344
 	Product(s): See article
 	Version(s): 1.00
@@ -23,3 +25,5 @@ permalink: /kb/043/Q43344/
 	1. COMPAQ 286e, 386s, 386e, and 386 20e
 	
 	2. IBM (all PS/2's)
+
+{% endraw %}

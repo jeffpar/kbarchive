@@ -6,6 +6,8 @@ permalink: /kb/133/Q133291/
 
 ## Q133291: Windows 95: How to Change an Audio Driver
 
+{% raw %}
+
 	Article: Q133291
 	Product(s): Microsoft Home Miscellaneous Products
 	Version(s): WINDOWS:95
@@ -125,3 +127,5 @@ permalink: /kb/133/Q133291/
 	
 	=============================================================================
 	
+
+{% endraw %}

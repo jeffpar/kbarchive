@@ -6,6 +6,8 @@ permalink: /kb/257/Q257529/
 
 ## Q257529: FIX: MonthView's Year is Changed When Setting DayofWeek Property
 
+{% raw %}
+
 	Article: Q257529
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -115,3 +117,5 @@ permalink: /kb/257/Q257529/
 	
 	=============================================================================
 	
+
+{% endraw %}

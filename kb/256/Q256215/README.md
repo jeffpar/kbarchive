@@ -6,6 +6,8 @@ permalink: /kb/256/Q256215/
 
 ## Q256215: SMS: Client Reports Advertisement Status Messages to Wrong Sites
 
+{% raw %}
+
 	Article: Q256215
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -56,3 +58,5 @@ permalink: /kb/256/Q256215/
 	
 	=============================================================================
 	
+
+{% endraw %}

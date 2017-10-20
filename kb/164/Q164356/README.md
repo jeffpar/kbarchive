@@ -6,6 +6,8 @@ permalink: /kb/164/Q164356/
 
 ## Q164356: Mac Encarta 97: Computer Does Not Wake Up From Sleep Mode
 
+{% raw %}
+
 	Article: Q164356
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -57,3 +59,5 @@ permalink: /kb/164/Q164356/
 	
 	=============================================================================
 	
+
+{% endraw %}

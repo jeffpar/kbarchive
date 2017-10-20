@@ -6,6 +6,8 @@ permalink: /kb/080/Q80525/
 
 ## Q80525: FltSim: Using System Time Causes Night Flight
 
+{% raw %}
+
 	Article: Q80525
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/080/Q80525/
 	
 	=============================================================================
 	
+
+{% endraw %}

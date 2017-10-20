@@ -6,6 +6,8 @@ permalink: /kb/252/Q252837/
 
 ## Q252837: Exception in DbgBreakPoint with TN5250 Service
 
+{% raw %}
+
 	Article: Q252837
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -99,3 +101,5 @@ permalink: /kb/252/Q252837/
 	
 	=============================================================================
 	
+
+{% endraw %}

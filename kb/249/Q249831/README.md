@@ -6,6 +6,8 @@ permalink: /kb/249/Q249831/
 
 ## Q249831: XADM: How to Delete Windows 2000 User Accounts Stored in LDF
 
+{% raw %}
+
 	Article: Q249831
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -77,3 +79,5 @@ permalink: /kb/249/Q249831/
 	
 	=============================================================================
 	
+
+{% endraw %}

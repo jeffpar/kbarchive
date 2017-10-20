@@ -6,6 +6,8 @@ permalink: /kb/201/Q201068/
 
 ## Q201068: How to Set Up Disaster Recovery for a Critical WINS Server
 
+{% raw %}
+
 	Article: Q201068
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -84,3 +86,5 @@ permalink: /kb/201/Q201068/
 	
 	=============================================================================
 	
+
+{% endraw %}

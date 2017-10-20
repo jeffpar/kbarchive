@@ -6,6 +6,8 @@ permalink: /kb/154/Q154953/
 
 ## Q154953: Setup Unable to Create IUSR_computername Account
 
+{% raw %}
+
 	Article: Q154953
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,3.51
@@ -56,3 +58,5 @@ permalink: /kb/154/Q154953/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247085/
 
 ## Q247085: XWEB: Error: Failed to Connect to the Microsoft Exchange Server
 
+{% raw %}
+
 	Article: Q247085
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -69,3 +71,5 @@ permalink: /kb/247/Q247085/
 	
 	=============================================================================
 	
+
+{% endraw %}

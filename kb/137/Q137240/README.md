@@ -6,6 +6,8 @@ permalink: /kb/137/Q137240/
 
 ## Q137240: Mystify Screen Saver Reverts Back to Default Object Shape
 
+{% raw %}
+
 	Article: Q137240
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/137/Q137240/
 	
 	=============================================================================
 	
+
+{% endraw %}

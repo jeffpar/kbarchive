@@ -6,6 +6,8 @@ permalink: /kb/084/Q84972/
 
 ## Q84972: Windows Sound Events Not Occurring at Standard Points
 
+{% raw %}
+
 	Article: Q84972
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/084/Q84972/
 	
 	=============================================================================
 	
+
+{% endraw %}

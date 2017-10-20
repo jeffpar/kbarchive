@@ -6,6 +6,8 @@ permalink: /kb/226/Q226806/
 
 ## Q226806: SMS: Windows 3.11 Client Shows Incorrect Remote Control Status
 
+{% raw %}
+
 	Article: Q226806
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -55,3 +57,5 @@ permalink: /kb/226/Q226806/
 	
 	=============================================================================
 	
+
+{% endraw %}

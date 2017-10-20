@@ -6,6 +6,8 @@ permalink: /kb/262/Q262097/
 
 ## Q262097: XIMS: Internet Mail Service Extension Messg. Text Append/Prepend
 
+{% raw %}
+
 	Article: Q262097
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -186,3 +188,5 @@ permalink: /kb/262/Q262097/
 	
 	=============================================================================
 	
+
+{% endraw %}

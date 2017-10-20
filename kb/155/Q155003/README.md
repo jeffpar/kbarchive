@@ -6,6 +6,8 @@ permalink: /kb/155/Q155003/
 
 ## Q155003: Description of Windows 95 OEM Service Release 2
 
+{% raw %}
+
 	Article: Q155003
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2
@@ -235,3 +237,5 @@ permalink: /kb/155/Q155003/
 	
 	=============================================================================
 	
+
+{% endraw %}

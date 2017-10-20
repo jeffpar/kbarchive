@@ -6,6 +6,8 @@ permalink: /kb/065/Q65382/
 
 ## Q65382: Mac Form: Setting Command Keys for Mail Form Designer Objects
 
+{% raw %}
+
 	Article: Q65382
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -65,3 +67,5 @@ permalink: /kb/065/Q65382/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122421/
 
 ## Q122421: Server Service Hangs, Event 2000, with Madge Adapter
 
+{% raw %}
+
 	Article: Q122421
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/122/Q122421/
 	
 	=============================================================================
 	
+
+{% endraw %}

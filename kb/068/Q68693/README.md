@@ -6,6 +6,8 @@ permalink: /kb/068/Q68693/
 
 ## Q68693: charttype Constants Are Documented with Wrong Names in C 6.00
 
+{% raw %}
+
 	Article: Q68693
 	Product(s): See article
 	Version(s): 6.00 6.00a
@@ -27,3 +29,5 @@ permalink: /kb/068/Q68693/
 	
 	However, the actual constant names are defined to be _PG_BARCHART,
 	_PG_COLUMNCHART, _PG_LINECHART, _PG_SCATTERCHART, and _PG_PIECHART.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/113/Q113698/
 
 ## Q113698: PRB: Command Window Moves Behind Main FoxPro Window
 
+{% raw %}
+
 	Article: Q113698
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -57,3 +59,5 @@ permalink: /kb/113/Q113698/
 	
 	=============================================================================
 	
+
+{% endraw %}

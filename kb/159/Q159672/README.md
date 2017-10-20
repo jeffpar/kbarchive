@@ -6,6 +6,8 @@ permalink: /kb/159/Q159672/
 
 ## Q159672: How To Find the Trap Frame If It Is Corrupt
 
+{% raw %}
+
 	Article: Q159672
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -71,3 +73,5 @@ permalink: /kb/159/Q159672/
 	
 	=============================================================================
 	
+
+{% endraw %}

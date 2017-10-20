@@ -6,6 +6,8 @@ permalink: /kb/177/Q177204/
 
 ## Q177204: DHCP Does Not Offer Addresses in Numerical Sequence
 
+{% raw %}
+
 	Article: Q177204
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -124,3 +126,5 @@ permalink: /kb/177/Q177204/
 	
 	=============================================================================
 	
+
+{% endraw %}

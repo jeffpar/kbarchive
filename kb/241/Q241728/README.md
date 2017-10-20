@@ -6,6 +6,8 @@ permalink: /kb/241/Q241728/
 
 ## Q241728: PRB: Using 2-Digit Years w/ IsDate May Produce Unexpected Result
 
+{% raw %}
+
 	Article: Q241728
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -158,3 +160,5 @@ permalink: /kb/241/Q241728/
 	
 	=============================================================================
 	
+
+{% endraw %}

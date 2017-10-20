@@ -6,6 +6,8 @@ permalink: /kb/174/Q174952/
 
 ## Q174952: SMS: Client Setup Does Not Check for Smsrun16/32.exe
 
+{% raw %}
+
 	Article: Q174952
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -74,3 +76,5 @@ permalink: /kb/174/Q174952/
 	
 	=============================================================================
 	
+
+{% endraw %}

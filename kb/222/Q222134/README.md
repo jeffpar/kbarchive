@@ -6,6 +6,8 @@ permalink: /kb/222/Q222134/
 
 ## Q222134: XADM: Unable to Establish Proxy Functionality
 
+{% raw %}
+
 	Article: Q222134
 	Product(s): Microsoft Exchange
 	Version(s): winnt:2.0,4.0,5.0,5.5
@@ -100,3 +102,5 @@ permalink: /kb/222/Q222134/
 	
 	=============================================================================
 	
+
+{% endraw %}

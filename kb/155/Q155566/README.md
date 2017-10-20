@@ -6,6 +6,8 @@ permalink: /kb/155/Q155566/
 
 ## Q155566: SysMarkNT Benchmark Does Not Work Properly with Windows NT 4.0
 
+{% raw %}
+
 	Article: Q155566
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/155/Q155566/
 	
 	=============================================================================
 	
+
+{% endraw %}

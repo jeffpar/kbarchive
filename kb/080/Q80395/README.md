@@ -6,6 +6,8 @@ permalink: /kb/080/Q80395/
 
 ## Q80395: TurboCom and Windows
 
+{% raw %}
+
 	Article: Q80395
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/080/Q80395/
 	
 	=============================================================================
 	
+
+{% endraw %}

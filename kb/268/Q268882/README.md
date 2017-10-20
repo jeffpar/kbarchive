@@ -6,6 +6,8 @@ permalink: /kb/268/Q268882/
 
 ## Q268882: Cannot Map to Drive Z if Novell Client32 Is Not Installed
 
+{% raw %}
+
 	Article: Q268882
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; Win2000:95; winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/268/Q268882/
 	
 	=============================================================================
 	
+
+{% endraw %}

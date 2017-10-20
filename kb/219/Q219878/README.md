@@ -6,6 +6,8 @@ permalink: /kb/219/Q219878/
 
 ## Q219878: &quot;Warning! Your Drive May Be Corrupt&quot; Starting Windows NT 4.0 SP4
 
+{% raw %}
+
 	Article: Q219878
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -74,3 +76,5 @@ permalink: /kb/219/Q219878/
 	
 	=============================================================================
 	
+
+{% endraw %}

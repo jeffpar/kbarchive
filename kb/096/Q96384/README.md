@@ -6,6 +6,8 @@ permalink: /kb/096/Q96384/
 
 ## Q96384: DoubleSpace Err Msg: Unrecognized Error #109
 
+{% raw %}
+
 	Article: Q96384
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -109,3 +111,5 @@ permalink: /kb/096/Q96384/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168470/
 
 ## Q168470: SCopy Copies Local Domain Group to Other Domains
 
+{% raw %}
+
 	Article: Q168470
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -52,3 +54,5 @@ permalink: /kb/168/Q168470/
 	
 	=============================================================================
 	
+
+{% endraw %}

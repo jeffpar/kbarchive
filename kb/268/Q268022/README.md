@@ -6,6 +6,8 @@ permalink: /kb/268/Q268022/
 
 ## Q268022: PRB: SELECT Returns NULL Rows Filtering Join on Child Table
 
+{% raw %}
+
 	Article: Q268022
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -121,3 +123,5 @@ permalink: /kb/268/Q268022/
 	
 	=============================================================================
 	
+
+{% endraw %}

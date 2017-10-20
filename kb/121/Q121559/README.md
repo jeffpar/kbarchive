@@ -6,6 +6,8 @@ permalink: /kb/121/Q121559/
 
 ## Q121559: WFWSYS.CFG Remote Update from Windows NT 3.5 Fails
 
+{% raw %}
+
 	Article: Q121559
 	Product(s): Microsoft Windows NT
 	Version(s): 3.11,3.5
@@ -70,3 +72,5 @@ permalink: /kb/121/Q121559/
 	
 	=============================================================================
 	
+
+{% endraw %}

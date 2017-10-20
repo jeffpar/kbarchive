@@ -6,6 +6,8 @@ permalink: /kb/033/Q33403/
 
 ## Q33403: Using 43-Line Mode with Hercules Card
 
+{% raw %}
+
 	Article: Q33403
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -17,3 +19,5 @@ permalink: /kb/033/Q33403/
 	is possible to switch to 43-line mode if you first do a
 	_setvideomode(_DEFAULTMODE), then immediately do a
 	_setvideomode(_ERESCOLOR).
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/256/Q256309/
 
 ## Q256309: Site Reset May Lock Out SMSSERVER_&lt;xxx&gt; Account
 
+{% raw %}
+
 	Article: Q256309
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -89,3 +91,5 @@ permalink: /kb/256/Q256309/
 	
 	=============================================================================
 	
+
+{% endraw %}

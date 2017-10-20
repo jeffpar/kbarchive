@@ -6,6 +6,8 @@ permalink: /kb/182/Q182087/
 
 ## Q182087: XCLN: NDR Sending to Internet Recipient When Offline
 
+{% raw %}
+
 	Article: Q182087
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -106,3 +108,5 @@ permalink: /kb/182/Q182087/
 	
 	=============================================================================
 	
+
+{% endraw %}

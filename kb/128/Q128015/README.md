@@ -6,6 +6,8 @@ permalink: /kb/128/Q128015/
 
 ## Q128015: Presario CDS633 Does Not Support 16- or 24-Bit Color Palette
 
+{% raw %}
+
 	Article: Q128015
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/128/Q128015/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/300/Q300890/
 
 ## Q300890: Windows May Not Show Files on Dfs Share With 2nd-Level Servers
 
+{% raw %}
+
 	Article: Q300890
 	Product(s): Microsoft Windows NT
 	Version(s): 1,2,2.1,2.5,4.0
@@ -74,3 +76,5 @@ permalink: /kb/300/Q300890/
 	
 	=============================================================================
 	
+
+{% endraw %}

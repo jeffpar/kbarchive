@@ -6,6 +6,8 @@ permalink: /kb/102/Q102422/
 
 ## Q102422: PC OS2: Doc Err: Associating Applications and File Extensions
 
+{% raw %}
+
 	Article: Q102422
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -50,3 +52,5 @@ permalink: /kb/102/Q102422/
 	
 	=============================================================================
 	
+
+{% endraw %}

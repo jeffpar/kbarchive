@@ -6,6 +6,8 @@ permalink: /kb/101/Q101176/
 
 ## Q101176: Comprehensive List of Windows 3.0 &quot;User's Guide&quot; Doc Errs
 
+{% raw %}
+
 	Article: Q101176
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -282,3 +284,5 @@ permalink: /kb/101/Q101176/
 	
 	=============================================================================
 	
+
+{% endraw %}

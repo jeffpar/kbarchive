@@ -6,6 +6,8 @@ permalink: /kb/145/Q145694/
 
 ## Q145694: INFO: SaveSetting &amp; GetSetting Allow Nested Settings
 
+{% raw %}
+
 	Article: Q145694
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/145/Q145694/
 	
 	=============================================================================
 	
+
+{% endraw %}

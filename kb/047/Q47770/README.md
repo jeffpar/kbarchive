@@ -6,6 +6,8 @@ permalink: /kb/047/Q47770/
 
 ## Q47770: Possible Explanation for &quot;Cannot Close This Window&quot; Error
 
+{% raw %}
+
 	Article: Q47770
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -26,3 +28,5 @@ permalink: /kb/047/Q47770/
 	This message occurs when you attempt to close a window that contains
 	modified text. If you want to abandon edits on the file, you can
 	reread the file using SHIFT+F7 and then successfully close the window.
+
+{% endraw %}

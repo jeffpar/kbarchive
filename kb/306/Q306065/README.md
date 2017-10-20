@@ -6,6 +6,8 @@ permalink: /kb/306/Q306065/
 
 ## Q306065: Direct Cable Connection Between Win2000 and Win98 Not Working
 
+{% raw %}
+
 	Article: Q306065
 	Product(s): Microsoft Windows NT
 	Version(s): 2000
@@ -96,3 +98,5 @@ permalink: /kb/306/Q306065/
 	
 	=============================================================================
 	
+
+{% endraw %}

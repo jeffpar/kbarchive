@@ -6,6 +6,8 @@ permalink: /kb/253/Q253118/
 
 ## Q253118: SMS: The &quot;Gold Key&quot; Button May Not Respond
 
+{% raw %}
+
 	Article: Q253118
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -97,3 +99,5 @@ permalink: /kb/253/Q253118/
 	
 	=============================================================================
 	
+
+{% endraw %}

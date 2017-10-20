@@ -6,6 +6,8 @@ permalink: /kb/105/Q105632/
 
 ## Q105632: Scenes 1.0: Will Not Activate With MS-DOS Prompt
 
+{% raw %}
+
 	Article: Q105632
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -39,3 +41,5 @@ permalink: /kb/105/Q105632/
 	
 	=============================================================================
 	
+
+{% endraw %}

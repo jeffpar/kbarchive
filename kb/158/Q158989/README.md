@@ -6,6 +6,8 @@ permalink: /kb/158/Q158989/
 
 ## Q158989: XADM: Factors affecting Exchange Directory Replication Speed
 
+{% raw %}
+
 	Article: Q158989
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -78,3 +80,5 @@ permalink: /kb/158/Q158989/
 	
 	=============================================================================
 	
+
+{% endraw %}

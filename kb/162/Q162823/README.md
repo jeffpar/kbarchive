@@ -6,6 +6,8 @@ permalink: /kb/162/Q162823/
 
 ## Q162823: ACC97: SourceSafe Integration Alerts Do Not Use Office Assistant
 
+{% raw %}
+
 	Article: Q162823
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0,97
@@ -65,3 +67,5 @@ permalink: /kb/162/Q162823/
 	
 	=============================================================================
 	
+
+{% endraw %}

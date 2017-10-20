@@ -6,6 +6,8 @@ permalink: /kb/223/Q223440/
 
 ## Q223440: Warning Message During Small Business Server Upgrade
 
+{% raw %}
+
 	Article: Q223440
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.5
@@ -56,3 +58,5 @@ permalink: /kb/223/Q223440/
 	
 	=============================================================================
 	
+
+{% endraw %}

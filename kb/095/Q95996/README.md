@@ -6,6 +6,8 @@ permalink: /kb/095/Q95996/
 
 ## Q95996: Mail: Differences Between WFWG Mail and PC Mail 3.0
 
+{% raw %}
+
 	Article: Q95996
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.0,3.1,3.11,3.2
@@ -81,3 +83,5 @@ permalink: /kb/095/Q95996/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235751/
 
 ## Q235751: SMS: Wizard Internal Error: Invalid WBEM Query Result
 
+{% raw %}
+
 	Article: Q235751
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -59,3 +61,5 @@ permalink: /kb/235/Q235751/
 	
 	=============================================================================
 	
+
+{% endraw %}

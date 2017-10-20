@@ -6,6 +6,8 @@ permalink: /kb/187/Q187166/
 
 ## Q187166: Users Cannot Connect Without Logon Local Permissions
 
+{% raw %}
+
 	Article: Q187166
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/187/Q187166/
 	
 	=============================================================================
 	
+
+{% endraw %}

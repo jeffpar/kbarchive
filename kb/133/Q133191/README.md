@@ -6,6 +6,8 @@ permalink: /kb/133/Q133191/
 
 ## Q133191: Reinstalling System Agent Without Losing Scheduled Tasks
 
+{% raw %}
+
 	Article: Q133191
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/133/Q133191/
 	
 	=============================================================================
 	
+
+{% endraw %}

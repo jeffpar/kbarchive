@@ -6,6 +6,8 @@ permalink: /kb/093/Q93603/
 
 ## Q93603: After Dark Screen Saver Can Corrupt Screen
 
+{% raw %}
+
 	Article: Q93603
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -40,3 +42,5 @@ permalink: /kb/093/Q93603/
 	
 	=============================================================================
 	
+
+{% endraw %}

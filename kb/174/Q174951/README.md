@@ -6,6 +6,8 @@ permalink: /kb/174/Q174951/
 
 ## Q174951: Err Msg: Error Copying File Cannot Copy Config Access Is Denied
 
+{% raw %}
+
 	Article: Q174951
 	Product(s): Microsoft Windows NT
 	Version(s): 1.00
@@ -76,3 +78,5 @@ permalink: /kb/174/Q174951/
 	
 	=============================================================================
 	
+
+{% endraw %}

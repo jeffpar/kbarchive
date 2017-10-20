@@ -6,6 +6,8 @@ permalink: /kb/141/Q141252/
 
 ## Q141252: Corrupted or Symbol Font Used for Text
 
+{% raw %}
+
 	Article: Q141252
 	Product(s): Microsoft Automap
 	Version(s): 1.0,1.1,1.1a,1.1b,2.0,5.0
@@ -147,3 +149,5 @@ permalink: /kb/141/Q141252/
 	
 	=============================================================================
 	
+
+{% endraw %}

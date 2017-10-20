@@ -6,6 +6,8 @@ permalink: /kb/029/Q29918/
 
 ## Q29918: Defining &quot;Intersegment Short Jump&quot; (LINK Error L2002)
 
+{% raw %}
+
 	Article: Q29918
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -43,3 +45,5 @@ permalink: /kb/029/Q29918/
 	
 	This error is usually associated with assembly language routines. It
 	usually doesn't occur with QuickBASIC programs.
+
+{% endraw %}

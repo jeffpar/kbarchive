@@ -6,6 +6,8 @@ permalink: /kb/184/Q184428/
 
 ## Q184428: XADM: NDRs When Sending Mail To User On Moved Server
 
+{% raw %}
+
 	Article: Q184428
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1,5.5 SP2
@@ -49,3 +51,5 @@ permalink: /kb/184/Q184428/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171923/
 
 ## Q171923: Service Pack Installation May Replace File Permissions
 
+{% raw %}
+
 	Article: Q171923
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/171/Q171923/
 	
 	=============================================================================
 	
+
+{% endraw %}

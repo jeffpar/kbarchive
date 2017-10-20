@@ -6,6 +6,8 @@ permalink: /kb/194/Q194422/
 
 ## Q194422: How to Extract Service Pack 3 Files
 
+{% raw %}
+
 	Article: Q194422
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/194/Q194422/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180165/
 
 ## Q180165: WD: AutoCorrect Feature Limitations
 
+{% raw %}
+
 	Article: Q180165
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/180/Q180165/
 	
 	=============================================================================
 	
+
+{% endraw %}

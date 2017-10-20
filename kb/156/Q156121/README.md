@@ -6,6 +6,8 @@ permalink: /kb/156/Q156121/
 
 ## Q156121: Manic Marbles Trial Version: Playing Field Descriptions
 
+{% raw %}
+
 	Article: Q156121
 	Product(s): Microsoft Home Kids Products
 	Version(s): Trial Version
@@ -109,3 +111,5 @@ permalink: /kb/156/Q156121/
 	
 	=============================================================================
 	
+
+{% endraw %}

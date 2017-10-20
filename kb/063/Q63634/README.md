@@ -6,6 +6,8 @@ permalink: /kb/063/Q63634/
 
 ## Q63634: Resolving C Compiler LINKer Response File Error
 
+{% raw %}
+
 	Article: Q63634
 	Product(s): See article
 	Version(s): 6.00
@@ -34,3 +36,5 @@ permalink: /kb/063/Q63634/
 	Another solution is to rename the LINK.EXE program in the OS/2
 	subdirectory to something similar to LINK.EX@. Either of these actions
 	will ensure that the proper version of LINK.EXE is executed.
+
+{% endraw %}

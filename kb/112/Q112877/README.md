@@ -6,6 +6,8 @@ permalink: /kb/112/Q112877/
 
 ## Q112877: PC Win: Comma Causes Problems with Name Resolution
 
+{% raw %}
+
 	Article: Q112877
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -46,3 +48,5 @@ permalink: /kb/112/Q112877/
 	
 	=============================================================================
 	
+
+{% endraw %}

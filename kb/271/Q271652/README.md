@@ -6,6 +6,8 @@ permalink: /kb/271/Q271652/
 
 ## Q271652: Patch for Malformed URL Vulnerability That Disables Web Server
 
+{% raw %}
+
 	Article: Q271652
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -121,3 +123,5 @@ permalink: /kb/271/Q271652/
 	
 	=============================================================================
 	
+
+{% endraw %}

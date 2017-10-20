@@ -6,6 +6,8 @@ permalink: /kb/135/Q135769/
 
 ## Q135769: SMS: Error 313 SCHEDULER Reports Out of Sync on Slow Link
 
+{% raw %}
+
 	Article: Q135769
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -54,3 +56,5 @@ permalink: /kb/135/Q135769/
 	
 	=============================================================================
 	
+
+{% endraw %}

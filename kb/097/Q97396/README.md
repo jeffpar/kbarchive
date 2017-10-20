@@ -6,6 +6,8 @@ permalink: /kb/097/Q97396/
 
 ## Q97396: SAMPLE: HierList.exe - Hierarchical List in Owner-Draw List Box
 
+{% raw %}
+
 	Article: Q97396
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -54,3 +56,5 @@ permalink: /kb/097/Q97396/
 	
 	=============================================================================
 	
+
+{% endraw %}

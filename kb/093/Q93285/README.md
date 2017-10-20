@@ -6,6 +6,8 @@ permalink: /kb/093/Q93285/
 
 ## Q93285: Windows Err Msg: The ATI FlexDesk Drivers Require 386 Enhanced
 
+{% raw %}
+
 	Article: Q93285
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/093/Q93285/
 	
 	=============================================================================
 	
+
+{% endraw %}

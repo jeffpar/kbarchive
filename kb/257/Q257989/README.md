@@ -6,6 +6,8 @@ permalink: /kb/257/Q257989/
 
 ## Q257989: HOWTO: Pin and Unpin Files in VSS from OLE Automation in VC++
 
+{% raw %}
+
 	Article: Q257989
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -93,3 +95,5 @@ permalink: /kb/257/Q257989/
 	
 	=============================================================================
 	
+
+{% endraw %}

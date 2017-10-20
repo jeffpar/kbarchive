@@ -6,6 +6,8 @@ permalink: /kb/247/Q247767/
 
 ## Q247767: XADM: Unable to Move Mailbox, with Error c1040af1 and Event 1008
 
+{% raw %}
+
 	Article: Q247767
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -63,3 +65,5 @@ permalink: /kb/247/Q247767/
 	
 	=============================================================================
 	
+
+{% endraw %}

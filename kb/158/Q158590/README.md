@@ -6,6 +6,8 @@ permalink: /kb/158/Q158590/
 
 ## Q158590: XCON: Delivery Restrictions Max CPU and Slow Down Msg Delivery
 
+{% raw %}
+
 	Article: Q158590
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -154,3 +156,5 @@ permalink: /kb/158/Q158590/
 	
 	=============================================================================
 	
+
+{% endraw %}

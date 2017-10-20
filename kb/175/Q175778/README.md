@@ -6,6 +6,8 @@ permalink: /kb/175/Q175778/
 
 ## Q175778: Invalid Page Fault in Wappc32.dll Using WinAPPCSetBlockingHook
 
+{% raw %}
+
 	Article: Q175778
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2
@@ -98,3 +100,5 @@ permalink: /kb/175/Q175778/
 	
 	=============================================================================
 	
+
+{% endraw %}

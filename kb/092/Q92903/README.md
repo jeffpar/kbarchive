@@ -6,6 +6,8 @@ permalink: /kb/092/Q92903/
 
 ## Q92903: AutoCAD 386 Version 12 PIF Cannot Run with Windows
 
+{% raw %}
+
 	Article: Q92903
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/092/Q92903/
 	
 	=============================================================================
 	
+
+{% endraw %}

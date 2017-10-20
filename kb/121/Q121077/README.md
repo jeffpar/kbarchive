@@ -6,6 +6,8 @@ permalink: /kb/121/Q121077/
 
 ## Q121077: WFW Print Manager Limitations with Windows NT Shared
 
+{% raw %}
+
 	Article: Q121077
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.5 4.0
@@ -55,3 +57,5 @@ permalink: /kb/121/Q121077/
 	
 	=============================================================================
 	
+
+{% endraw %}

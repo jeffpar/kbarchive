@@ -6,6 +6,8 @@ permalink: /kb/197/Q197763/
 
 ## Q197763: WD97: &quot;Styles in Use&quot; List Displays Styles Not Applied in Doc
 
+{% raw %}
+
 	Article: Q197763
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -45,3 +47,5 @@ permalink: /kb/197/Q197763/
 	
 	=============================================================================
 	
+
+{% endraw %}

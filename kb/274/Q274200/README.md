@@ -6,6 +6,8 @@ permalink: /kb/274/Q274200/
 
 ## Q274200: XADM: Duplicated Message Received with Store Post-SP3 Hotfix
 
+{% raw %}
+
 	Article: Q274200
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -65,3 +67,5 @@ permalink: /kb/274/Q274200/
 	
 	=============================================================================
 	
+
+{% endraw %}

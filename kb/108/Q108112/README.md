@@ -6,6 +6,8 @@ permalink: /kb/108/Q108112/
 
 ## Q108112: HOWTO: View the Call Stack After an MFC ASSERT
 
+{% raw %}
+
 	Article: Q108112
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -71,3 +73,5 @@ permalink: /kb/108/Q108112/
 	
 	=============================================================================
 	
+
+{% endraw %}

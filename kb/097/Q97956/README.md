@@ -6,6 +6,8 @@ permalink: /kb/097/Q97956/
 
 ## Q97956: CONN: CNU Needs MultiFinder
 
+{% raw %}
+
 	Article: Q97956
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.0,1.0b; WINDOWS:3.0,3.0a,3.0b,3.1,3.1a,3.1c,3.1d
@@ -46,3 +48,5 @@ permalink: /kb/097/Q97956/
 	
 	=============================================================================
 	
+
+{% endraw %}

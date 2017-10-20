@@ -6,6 +6,8 @@ permalink: /kb/150/Q150248/
 
 ## Q150248: MSB Earth: Minimum System Requirements for Windows
 
+{% raw %}
+
 	Article: Q150248
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/150/Q150248/
 	
 	=============================================================================
 	
+
+{% endraw %}

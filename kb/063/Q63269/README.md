@@ -6,6 +6,8 @@ permalink: /kb/063/Q63269/
 
 ## Q63269: Pocket Soft's .RTLink Gives Overlay Support to Compiled BASIC
 
+{% raw %}
+
 	Article: Q63269
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -58,3 +60,5 @@ permalink: /kb/063/Q63269/
 	   Houston, TX  77282
 	   (713) 460-5600
 	   Orders: (800) 336-1166
+
+{% endraw %}

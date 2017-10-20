@@ -6,6 +6,8 @@ permalink: /kb/166/Q166071/
 
 ## Q166071: Error Message: Unexpected DOS Error 11
 
+{% raw %}
+
 	Article: Q166071
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -64,3 +66,5 @@ permalink: /kb/166/Q166071/
 	
 	=============================================================================
 	
+
+{% endraw %}

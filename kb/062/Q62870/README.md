@@ -6,6 +6,8 @@ permalink: /kb/062/Q62870/
 
 ## Q62870: Cannot Start DayBook as Icon with SHIFT+Double-Click
 
+{% raw %}
+
 	Article: Q62870
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -49,3 +51,5 @@ permalink: /kb/062/Q62870/
 	
 	=============================================================================
 	
+
+{% endraw %}

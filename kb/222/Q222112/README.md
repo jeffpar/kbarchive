@@ -6,6 +6,8 @@ permalink: /kb/222/Q222112/
 
 ## Q222112: FIX: Class Not Selected Opening Class Browser From Form Designer
 
+{% raw %}
+
 	Article: Q222112
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -79,3 +81,5 @@ permalink: /kb/222/Q222112/
 	
 	=============================================================================
 	
+
+{% endraw %}

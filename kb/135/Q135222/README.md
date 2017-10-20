@@ -6,6 +6,8 @@ permalink: /kb/135/Q135222/
 
 ## Q135222: IRQ and DMA Resources Not Listed for ECP Port
 
+{% raw %}
+
 	Article: Q135222
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/135/Q135222/
 	
 	=============================================================================
 	
+
+{% endraw %}

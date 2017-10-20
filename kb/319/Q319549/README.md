@@ -6,6 +6,8 @@ permalink: /kb/319/Q319549/
 
 ## Q319549: PRB: ASP Class_Terminate Code Errors Can Cause IIS 4.0 to Fail
 
+{% raw %}
+
 	Article: Q319549
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -95,3 +97,5 @@ permalink: /kb/319/Q319549/
 	
 	=============================================================================
 	
+
+{% endraw %}

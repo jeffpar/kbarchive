@@ -6,6 +6,8 @@ permalink: /kb/118/Q118462/
 
 ## Q118462: Dangerous Creatures: TROUBLE.TXT Contents
 
+{% raw %}
+
 	Article: Q118462
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -302,3 +304,5 @@ permalink: /kb/118/Q118462/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/288/Q288292/
 
 ## Q288292: Managing File and Folder Permissions with Command Line Utility
 
+{% raw %}
+
 	Article: Q288292
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -52,3 +54,5 @@ permalink: /kb/288/Q288292/
 	
 	=============================================================================
 	
+
+{% endraw %}

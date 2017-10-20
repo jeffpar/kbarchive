@@ -6,6 +6,8 @@ permalink: /kb/175/Q175153/
 
 ## Q175153: FS98: How To Print Airport Directories and Navaids Lists
 
+{% raw %}
+
 	Article: Q175153
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -66,3 +68,5 @@ permalink: /kb/175/Q175153/
 	
 	=============================================================================
 	
+
+{% endraw %}

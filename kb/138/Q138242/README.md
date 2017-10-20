@@ -6,6 +6,8 @@ permalink: /kb/138/Q138242/
 
 ## Q138242: SMS Hangs Choosing PCMMAC Menu Options Before Network Logon
 
+{% raw %}
+
 	Article: Q138242
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -43,3 +45,5 @@ permalink: /kb/138/Q138242/
 	
 	=============================================================================
 	
+
+{% endraw %}

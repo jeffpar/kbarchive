@@ -6,6 +6,8 @@ permalink: /kb/158/Q158200/
 
 ## Q158200: STL Sample for the string::getline Function
 
+{% raw %}
+
 	Article: Q158200
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -116,3 +118,5 @@ permalink: /kb/158/Q158200/
 	
 	=============================================================================
 	
+
+{% endraw %}

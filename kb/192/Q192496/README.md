@@ -6,6 +6,8 @@ permalink: /kb/192/Q192496/
 
 ## Q192496: Slow Write Performance Using IBM DOS Lan Requester
 
+{% raw %}
+
 	Article: Q192496
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -115,3 +117,5 @@ permalink: /kb/192/Q192496/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187798/
 
 ## Q187798: XWEB: Appointment Shows End Date In Different Month Than Start
 
+{% raw %}
+
 	Article: Q187798
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -51,3 +53,5 @@ permalink: /kb/187/Q187798/
 	
 	=============================================================================
 	
+
+{% endraw %}

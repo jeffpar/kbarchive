@@ -6,6 +6,8 @@ permalink: /kb/070/Q70991/
 
 ## Q70991: WD97: Auto Macros in Word
 
+{% raw %}
+
 	Article: Q70991
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -154,3 +156,5 @@ permalink: /kb/070/Q70991/
 	
 	=============================================================================
 	
+
+{% endraw %}

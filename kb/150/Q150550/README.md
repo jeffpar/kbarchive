@@ -6,6 +6,8 @@ permalink: /kb/150/Q150550/
 
 ## Q150550: HOWTO: Obtain Windows 3.1/Windows 95 Btrieve ODBC Interface
 
+{% raw %}
+
 	Article: Q150550
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,5.0,6.0
@@ -65,3 +67,5 @@ permalink: /kb/150/Q150550/
 	
 	=============================================================================
 	
+
+{% endraw %}

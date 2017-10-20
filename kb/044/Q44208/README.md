@@ -6,6 +6,8 @@ permalink: /kb/044/Q44208/
 
 ## Q44208: Blink/Intensity Bit Not Restored by Environment in QuickC
 
+{% raw %}
+
 	Article: Q44208
 	Product(s): See article
 	Version(s): 2.00
@@ -61,3 +63,5 @@ permalink: /kb/044/Q44208/
 	
 	  _outtext ("\nRed text on a bright white background\n");
 	}
+
+{% endraw %}

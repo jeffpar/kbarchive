@@ -6,6 +6,8 @@ permalink: /kb/065/Q65084/
 
 ## Q65084: PRB: Spaces in Inference Rules Corrupt NMAKE Macro Expansion
 
+{% raw %}
+
 	Article: Q65084
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.01,1.1,1.11,1.12,1.13,1.2,1.3,1.4; NT:1.4,1.5; OS/2:1.01,1.11,1.12,1.13,1.21
@@ -84,3 +86,5 @@ permalink: /kb/065/Q65084/
 	
 	=============================================================================
 	
+
+{% endraw %}

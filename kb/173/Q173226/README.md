@@ -6,6 +6,8 @@ permalink: /kb/173/Q173226/
 
 ## Q173226: WD97: Document Containing FILLIN Fields May Not Prompt to Save
 
+{% raw %}
+
 	Article: Q173226
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -118,3 +120,5 @@ permalink: /kb/173/Q173226/
 	
 	=============================================================================
 	
+
+{% endraw %}

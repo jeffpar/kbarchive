@@ -6,6 +6,8 @@ permalink: /kb/122/Q122671/
 
 ## Q122671: Scandisk: Privileged Operation Error #2 or System Reboots
 
+{% raw %}
+
 	Article: Q122671
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -106,3 +108,5 @@ permalink: /kb/122/Q122671/
 	
 	=============================================================================
 	
+
+{% endraw %}

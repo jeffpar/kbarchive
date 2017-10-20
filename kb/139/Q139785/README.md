@@ -6,6 +6,8 @@ permalink: /kb/139/Q139785/
 
 ## Q139785: RUI Problem Handling RUI_SEND After Sense Data Received
 
+{% raw %}
+
 	Article: Q139785
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11
@@ -77,3 +79,5 @@ permalink: /kb/139/Q139785/
 	
 	=============================================================================
 	
+
+{% endraw %}

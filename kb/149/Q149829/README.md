@@ -6,6 +6,8 @@ permalink: /kb/149/Q149829/
 
 ## Q149829: Long File Names Are Truncated in File Manager Properties
 
+{% raw %}
+
 	Article: Q149829
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -85,3 +87,5 @@ permalink: /kb/149/Q149829/
 	
 	=============================================================================
 	
+
+{% endraw %}

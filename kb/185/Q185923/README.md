@@ -6,6 +6,8 @@ permalink: /kb/185/Q185923/
 
 ## Q185923: WD97: Text Formatted with &quot;Drop Cap&quot; in Wrong Place on Page
 
+{% raw %}
+
 	Article: Q185923
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -70,3 +72,5 @@ permalink: /kb/185/Q185923/
 	
 	=============================================================================
 	
+
+{% endraw %}

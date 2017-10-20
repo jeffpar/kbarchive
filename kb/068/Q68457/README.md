@@ -6,6 +6,8 @@ permalink: /kb/068/Q68457/
 
 ## Q68457: Ground Hog Graphics VGA Card Screen Capture Problem
 
+{% raw %}
+
 	Article: Q68457
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -62,3 +64,5 @@ permalink: /kb/068/Q68457/
 	
 	=============================================================================
 	
+
+{% endraw %}

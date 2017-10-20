@@ -6,6 +6,8 @@ permalink: /kb/097/Q97809/
 
 ## Q97809: FIX: C1024 or C1083 Error When INCLUDE Set to Root Directory
 
+{% raw %}
+
 	Article: Q97809
 	Product(s): Microsoft C Compiler
 	Version(s): 7.00 | 1.00 1.50 | 1.00
@@ -118,3 +120,5 @@ permalink: /kb/097/Q97809/
 	
 	=============================================================================
 	
+
+{% endraw %}

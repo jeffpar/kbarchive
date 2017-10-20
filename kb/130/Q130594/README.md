@@ -6,6 +6,8 @@ permalink: /kb/130/Q130594/
 
 ## Q130594: 2139 - Could Not Create Mail Slot w/ SNA Server Client
 
+{% raw %}
+
 	Article: Q130594
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0
@@ -53,3 +55,5 @@ permalink: /kb/130/Q130594/
 	
 	=============================================================================
 	
+
+{% endraw %}

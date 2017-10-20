@@ -6,6 +6,8 @@ permalink: /kb/072/Q72308/
 
 ## Q72308: User's Guide Incorrectly Describes SPART.PAR &amp; 386SPART.PAR
 
+{% raw %}
+
 	Article: Q72308
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/072/Q72308/
 	
 	=============================================================================
 	
+
+{% endraw %}

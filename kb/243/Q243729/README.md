@@ -6,6 +6,8 @@ permalink: /kb/243/Q243729/
 
 ## Q243729: Preventing Print Spooler CR or LF to CR/LF Character Translation
 
+{% raw %}
+
 	Article: Q243729
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -164,3 +166,5 @@ permalink: /kb/243/Q243729/
 	
 	=============================================================================
 	
+
+{% endraw %}

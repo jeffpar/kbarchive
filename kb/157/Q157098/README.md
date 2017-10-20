@@ -6,6 +6,8 @@ permalink: /kb/157/Q157098/
 
 ## Q157098: WD97: General Information About Page Borders in Word
 
+{% raw %}
+
 	Article: Q157098
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -103,3 +105,5 @@ permalink: /kb/157/Q157098/
 	
 	=============================================================================
 	
+
+{% endraw %}

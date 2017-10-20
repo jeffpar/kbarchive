@@ -6,6 +6,8 @@ permalink: /kb/199/Q199757/
 
 ## Q199757: XIMS: Link Monitor Setup Fails with Two NDRs on Notes Connector
 
+{% raw %}
+
 	Article: Q199757
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/199/Q199757/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187708/
 
 ## Q187708: Cannot Connect to SQL Virtual Server via Sockets in Cluster
 
+{% raw %}
+
 	Article: Q187708
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -92,3 +94,5 @@ permalink: /kb/187/Q187708/
 	
 	=============================================================================
 	
+
+{% endraw %}

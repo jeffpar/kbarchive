@@ -6,6 +6,8 @@ permalink: /kb/121/Q121231/
 
 ## Q121231: Net Watcher Isn't Displaying an Open File from Another Machine
 
+{% raw %}
+
 	Article: Q121231
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/121/Q121231/
 	
 	=============================================================================
 	
+
+{% endraw %}

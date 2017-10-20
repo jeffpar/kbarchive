@@ -6,6 +6,8 @@ permalink: /kb/165/Q165990/
 
 ## Q165990: Windows 95 Policies Do Not Work Without User Profiles
 
+{% raw %}
+
 	Article: Q165990
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1.00
@@ -57,3 +59,5 @@ permalink: /kb/165/Q165990/
 	
 	=============================================================================
 	
+
+{% endraw %}

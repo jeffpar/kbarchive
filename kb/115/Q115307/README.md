@@ -6,6 +6,8 @@ permalink: /kb/115/Q115307/
 
 ## Q115307: DOC: Extending Device Descriptions Handled by App Studio
 
+{% raw %}
+
 	Article: Q115307
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -38,3 +40,5 @@ permalink: /kb/115/Q115307/
 	
 	=============================================================================
 	
+
+{% endraw %}

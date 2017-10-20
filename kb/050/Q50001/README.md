@@ -6,6 +6,8 @@ permalink: /kb/050/Q50001/
 
 ## Q50001: The Width of Text Is Carried between BASIC SCREENs If Possible
 
+{% raw %}
+
 	Article: Q50001
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -45,3 +47,5 @@ permalink: /kb/050/Q50001/
 	SLEEP                  'format, so the format that was used in
 	                       'SCREEN 1 is maintained when switching to
 	                       'SCREEN 0.
+
+{% endraw %}

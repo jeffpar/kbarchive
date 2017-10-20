@@ -6,6 +6,8 @@ permalink: /kb/174/Q174179/
 
 ## Q174179: Err Msg: WAB Caused a General Protection Fault in Module...
 
+{% raw %}
+
 	Article: Q174179
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -92,3 +94,5 @@ permalink: /kb/174/Q174179/
 	
 	=============================================================================
 	
+
+{% endraw %}

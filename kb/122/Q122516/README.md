@@ -6,6 +6,8 @@ permalink: /kb/122/Q122516/
 
 ## Q122516: Purge Print Jobs Fails to Clear Printer Buffer
 
+{% raw %}
+
 	Article: Q122516
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -57,3 +59,5 @@ permalink: /kb/122/Q122516/
 	
 	=============================================================================
 	
+
+{% endraw %}

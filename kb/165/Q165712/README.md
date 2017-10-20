@@ -6,6 +6,8 @@ permalink: /kb/165/Q165712/
 
 ## Q165712: XFOR: Err Msg: The Microsoft Exchange Server is Down
 
+{% raw %}
+
 	Article: Q165712
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -79,3 +81,5 @@ permalink: /kb/165/Q165712/
 	
 	=============================================================================
 	
+
+{% endraw %}

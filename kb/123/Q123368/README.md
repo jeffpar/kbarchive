@@ -6,6 +6,8 @@ permalink: /kb/123/Q123368/
 
 ## Q123368: Can't Recognize Beyond 64MB RAM on ALR Evolution Pentium
 
+{% raw %}
+
 	Article: Q123368
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51,4.0
@@ -58,3 +60,5 @@ permalink: /kb/123/Q123368/
 	
 	=============================================================================
 	
+
+{% endraw %}

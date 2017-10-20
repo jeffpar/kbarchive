@@ -6,6 +6,8 @@ permalink: /kb/126/Q126675/
 
 ## Q126675: BUG: Menu Lost if Caption Changed on Menu with Only WindowList
 
+{% raw %}
+
 	Article: Q126675
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -109,3 +111,5 @@ permalink: /kb/126/Q126675/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/079/Q79220/
 
 ## Q79220: Archive Fastape Version 5.0 with MS-DOS 5.0 and Later
 
+{% raw %}
+
 	Article: Q79220
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -47,3 +49,5 @@ permalink: /kb/079/Q79220/
 	
 	=============================================================================
 	
+
+{% endraw %}

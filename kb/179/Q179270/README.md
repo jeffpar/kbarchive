@@ -6,6 +6,8 @@ permalink: /kb/179/Q179270/
 
 ## Q179270: FIX: Warnings with RTTI and Automatic Precompiled Headers
 
+{% raw %}
+
 	Article: Q179270
 	Product(s): Microsoft C Compiler
 	Version(s): 2000,5.0,6.0
@@ -105,3 +107,5 @@ permalink: /kb/179/Q179270/
 	
 	=============================================================================
 	
+
+{% endraw %}

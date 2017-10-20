@@ -6,6 +6,8 @@ permalink: /kb/042/Q42476/
 
 ## Q42476: &quot;Subscript Out of Range&quot; Then Add REM &#36;DYNAMIC Hangs QB 4.50
 
+{% raw %}
+
 	Article: Q42476
 	Product(s): See article
 	Version(s): 4.50
@@ -42,3 +44,5 @@ permalink: /kb/042/Q42476/
 	Professional Development System (PDS) Version 7.00 (fixlist7.00).
 	When the program is run a second time, it does not hang or produce an
 	error message.
+
+{% endraw %}

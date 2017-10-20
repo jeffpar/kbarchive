@@ -6,6 +6,8 @@ permalink: /kb/164/Q164806/
 
 ## Q164806: CHKNTFS Does Not Exclude FAT Partitions from AUTOCHK on Boot
 
+{% raw %}
+
 	Article: Q164806
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/164/Q164806/
 	
 	=============================================================================
 	
+
+{% endraw %}

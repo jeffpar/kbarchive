@@ -6,6 +6,8 @@ permalink: /kb/176/Q176037/
 
 ## Q176037: XWEB: Blank To: Line When Deleting Recurring Appointment
 
+{% raw %}
+
 	Article: Q176037
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -59,3 +61,5 @@ permalink: /kb/176/Q176037/
 	
 	=============================================================================
 	
+
+{% endraw %}

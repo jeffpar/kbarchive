@@ -6,6 +6,8 @@ permalink: /kb/112/Q112022/
 
 ## Q112022: Mac Client Cannot Print After Service Pack 2 is Installed
 
+{% raw %}
+
 	Article: Q112022
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -59,3 +61,5 @@ permalink: /kb/112/Q112022/
 	
 	=============================================================================
 	
+
+{% endraw %}

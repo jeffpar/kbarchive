@@ -6,6 +6,8 @@ permalink: /kb/117/Q117317/
 
 ## Q117317: Client Shutdown Causes Ghosted TCP/IP Connection
 
+{% raw %}
+
 	Article: Q117317
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -149,3 +151,5 @@ permalink: /kb/117/Q117317/
 	
 	=============================================================================
 	
+
+{% endraw %}

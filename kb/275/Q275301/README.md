@@ -6,6 +6,8 @@ permalink: /kb/275/Q275301/
 
 ## Q275301: BUG: Kodak Image Edit Controls Causes Error in VB IDE on Win Me
 
+{% raw %}
+
 	Article: Q275301
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -93,3 +95,5 @@ permalink: /kb/275/Q275301/
 	
 	=============================================================================
 	
+
+{% endraw %}

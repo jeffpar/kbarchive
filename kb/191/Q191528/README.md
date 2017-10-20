@@ -6,6 +6,8 @@ permalink: /kb/191/Q191528/
 
 ## Q191528: FIX: DBCombo Not Appearing on SSTab After Changing Settings
 
+{% raw %}
+
 	Article: Q191528
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -109,3 +111,5 @@ permalink: /kb/191/Q191528/
 	
 	=============================================================================
 	
+
+{% endraw %}

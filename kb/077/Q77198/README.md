@@ -6,6 +6,8 @@ permalink: /kb/077/Q77198/
 
 ## Q77198: Cardfile Err Msg: Insufficient Memory to Read Picture...
 
+{% raw %}
+
 	Article: Q77198
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -106,3 +108,5 @@ permalink: /kb/077/Q77198/
 	
 	=============================================================================
 	
+
+{% endraw %}

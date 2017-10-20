@@ -6,6 +6,8 @@ permalink: /kb/096/Q96880/
 
 ## Q96880: Damaged CVFs and Third-Party Repair Software
 
+{% raw %}
+
 	Article: Q96880
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -51,3 +53,5 @@ permalink: /kb/096/Q96880/
 	
 	=============================================================================
 	
+
+{% endraw %}

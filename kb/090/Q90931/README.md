@@ -6,6 +6,8 @@ permalink: /kb/090/Q90931/
 
 ## Q90931: Corrupt CONNECT.DAT May Cause Invalid Errors in WFWG
 
+{% raw %}
+
 	Article: Q90931
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -72,3 +74,5 @@ permalink: /kb/090/Q90931/
 	
 	=============================================================================
 	
+
+{% endraw %}

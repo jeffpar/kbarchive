@@ -6,6 +6,8 @@ permalink: /kb/244/Q244248/
 
 ## Q244248: AOE: The Rise of Rome: List of Campaigns and Scenarios
 
+{% raw %}
+
 	Article: Q244248
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/244/Q244248/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125727/
 
 ## Q125727: FIX: Text Truncated When Using Dynaset and RFX_Text()
 
+{% raw %}
+
 	Article: Q125727
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -125,3 +127,5 @@ permalink: /kb/125/Q125727/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197275/
 
 ## Q197275: FIX: _urlcombobox Class Closes Any Current Work Area
 
+{% raw %}
+
 	Article: Q197275
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -83,3 +85,5 @@ permalink: /kb/197/Q197275/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180693/
 
 ## Q180693: IPX Clients Fail to Obtain A Sponsor Connection
 
+{% raw %}
+
 	Article: Q180693
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -90,3 +92,5 @@ permalink: /kb/180/Q180693/
 	
 	=============================================================================
 	
+
+{% endraw %}

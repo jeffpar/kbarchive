@@ -6,6 +6,8 @@ permalink: /kb/157/Q157695/
 
 ## Q157695: XFOR: MTA can't Communicate with Another MTA via French X.25
 
+{% raw %}
+
 	Article: Q157695
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/157/Q157695/
 	
 	=============================================================================
 	
+
+{% endraw %}

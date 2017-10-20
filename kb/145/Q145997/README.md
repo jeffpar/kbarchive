@@ -6,6 +6,8 @@ permalink: /kb/145/Q145997/
 
 ## Q145997: PRB: Resource Language Must Match the Current System Language
 
+{% raw %}
+
 	Article: Q145997
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -108,3 +110,5 @@ permalink: /kb/145/Q145997/
 	
 	=============================================================================
 	
+
+{% endraw %}

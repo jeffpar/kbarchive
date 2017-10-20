@@ -6,6 +6,8 @@ permalink: /kb/142/Q142038/
 
 ## Q142038: DOCERR: Bad Instructions for Converting FAT Partition to NTFS
 
+{% raw %}
+
 	Article: Q142038
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -52,3 +54,5 @@ permalink: /kb/142/Q142038/
 	
 	=============================================================================
 	
+
+{% endraw %}

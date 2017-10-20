@@ -6,6 +6,8 @@ permalink: /kb/159/Q159790/
 
 ## Q159790: WD97: Words Missing from Custom Dictionary After Undo
 
+{% raw %}
+
 	Article: Q159790
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -67,3 +69,5 @@ permalink: /kb/159/Q159790/
 	
 	=============================================================================
 	
+
+{% endraw %}

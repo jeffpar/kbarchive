@@ -6,6 +6,8 @@ permalink: /kb/182/Q182644/
 
 ## Q182644: DNR Sorts IP Address for Multihomed Hosts Before Returning List
 
+{% raw %}
+
 	Article: Q182644
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:4.0
@@ -103,3 +105,5 @@ permalink: /kb/182/Q182644/
 	
 	=============================================================================
 	
+
+{% endraw %}

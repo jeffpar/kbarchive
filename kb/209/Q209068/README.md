@@ -6,6 +6,8 @@ permalink: /kb/209/Q209068/
 
 ## Q209068: BUG: VBCE: Type Mismatch Error Msg Using InputFields Method
 
+{% raw %}
+
 	Article: Q209068
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0,2.11,3.0
@@ -125,3 +127,5 @@ permalink: /kb/209/Q209068/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148785/
 
 ## Q148785: New Functions Included in Foxtools.fll
 
+{% raw %}
+
 	Article: Q148785
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -82,3 +84,5 @@ permalink: /kb/148/Q148785/
 	
 	=============================================================================
 	
+
+{% endraw %}

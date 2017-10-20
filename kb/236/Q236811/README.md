@@ -6,6 +6,8 @@ permalink: /kb/236/Q236811/
 
 ## Q236811: XWEB: How to Set Up OWA for Specific Users
 
+{% raw %}
+
 	Article: Q236811
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -106,3 +108,5 @@ permalink: /kb/236/Q236811/
 	
 	=============================================================================
 	
+
+{% endraw %}

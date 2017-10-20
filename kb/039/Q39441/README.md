@@ -6,6 +6,8 @@ permalink: /kb/039/Q39441/
 
 ## Q39441: The ORG Directive and Actual Offsets
 
+{% raw %}
+
 	Article: Q39441
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a,6.0,6.0a,6.0b
@@ -122,3 +124,5 @@ permalink: /kb/039/Q39441/
 	
 	=============================================================================
 	
+
+{% endraw %}

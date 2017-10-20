@@ -6,6 +6,8 @@ permalink: /kb/102/Q102425/
 
 ## Q102425: WRKHEURISTICS Bit 14 Controls Raw I/O for LM MS-DOS Client
 
+{% raw %}
+
 	Article: Q102425
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -28,3 +30,5 @@ permalink: /kb/102/Q102425/
 	
 	=============================================================================
 	
+
+{% endraw %}

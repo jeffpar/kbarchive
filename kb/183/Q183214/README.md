@@ -6,6 +6,8 @@ permalink: /kb/183/Q183214/
 
 ## Q183214: PRB: E_INVALIDARG Error from CoCreateInstance()
 
+{% raw %}
+
 	Article: Q183214
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,3.0,4.2b,5.0,6.0
@@ -80,3 +82,5 @@ permalink: /kb/183/Q183214/
 	
 	=============================================================================
 	
+
+{% endraw %}

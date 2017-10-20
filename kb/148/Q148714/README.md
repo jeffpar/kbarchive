@@ -6,6 +6,8 @@ permalink: /kb/148/Q148714/
 
 ## Q148714: Dr. Watson Error Installing Internet Information Server
 
+{% raw %}
+
 	Article: Q148714
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,3.51
@@ -65,3 +67,5 @@ permalink: /kb/148/Q148714/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/279/Q279447/
 
 ## Q279447: How to change MSN Companion e-mail address or member ID
 
+{% raw %}
+
 	Article: Q279447
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -58,3 +60,5 @@ permalink: /kb/279/Q279447/
 	
 	=============================================================================
 	
+
+{% endraw %}

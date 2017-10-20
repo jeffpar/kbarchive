@@ -6,6 +6,8 @@ permalink: /kb/087/Q87104/
 
 ## Q87104: BUG: Repeated EQUIVALENCE's Cause GP Fault During Compile
 
+{% raw %}
+
 	Article: Q87104
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.1
@@ -90,3 +92,5 @@ permalink: /kb/087/Q87104/
 	
 	=============================================================================
 	
+
+{% endraw %}

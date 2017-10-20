@@ -6,6 +6,8 @@ permalink: /kb/122/Q122540/
 
 ## Q122540: FIX: 'char &#42;' Passed to 'const char &#42; &amp;' Violates Type Safety
 
+{% raw %}
+
 	Article: Q122540
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.52,2.0,2.1,4.0,4.1,4.2,5.0
@@ -96,3 +98,5 @@ permalink: /kb/122/Q122540/
 	
 	=============================================================================
 	
+
+{% endraw %}

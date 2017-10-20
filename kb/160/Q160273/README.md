@@ -6,6 +6,8 @@ permalink: /kb/160/Q160273/
 
 ## Q160273: LPR 'o' Option Does Not Work After Applying SP5
 
+{% raw %}
+
 	Article: Q160273
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -84,3 +86,5 @@ permalink: /kb/160/Q160273/
 	
 	=============================================================================
 	
+
+{% endraw %}

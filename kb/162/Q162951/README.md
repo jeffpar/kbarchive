@@ -6,6 +6,8 @@ permalink: /kb/162/Q162951/
 
 ## Q162951: SMS: How to Recover Remote Control Agent from Broken Mirror
 
+{% raw %}
+
 	Article: Q162951
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -74,3 +76,5 @@ permalink: /kb/162/Q162951/
 	
 	=============================================================================
 	
+
+{% endraw %}

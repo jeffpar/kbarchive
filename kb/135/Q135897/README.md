@@ -6,6 +6,8 @@ permalink: /kb/135/Q135897/
 
 ## Q135897: Windows 95 CD-ROM Faq.txt File (1 of 2)
 
+{% raw %}
+
 	Article: Q135897
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -505,3 +507,5 @@ permalink: /kb/135/Q135897/
 	
 	=============================================================================
 	
+
+{% endraw %}

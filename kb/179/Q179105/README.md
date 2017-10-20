@@ -6,6 +6,8 @@ permalink: /kb/179/Q179105/
 
 ## Q179105: WD97: Word Attachment Not Readable Upon Receipt Via E-Mail
 
+{% raw %}
+
 	Article: Q179105
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/179/Q179105/
 	
 	=============================================================================
 	
+
+{% endraw %}

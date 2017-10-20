@@ -6,6 +6,8 @@ permalink: /kb/146/Q146341/
 
 ## Q146341: Account Information Boxes Are Gray Adding Virtual Directories
 
+{% raw %}
+
 	Article: Q146341
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0
@@ -46,3 +48,5 @@ permalink: /kb/146/Q146341/
 	
 	=============================================================================
 	
+
+{% endraw %}

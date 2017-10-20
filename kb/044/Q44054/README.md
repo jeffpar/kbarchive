@@ -6,6 +6,8 @@ permalink: /kb/044/Q44054/
 
 ## Q44054: QuickC: _floodfill May Fail When Filling Color 0
 
+{% raw %}
+
 	Article: Q44054
 	Product(s): See article
 	Version(s): 2.00
@@ -72,3 +74,5 @@ permalink: /kb/044/Q44054/
 	just color 0.
 	Microsoft is researching this problem and will post new information as
 	it becomes available.
+
+{% endraw %}

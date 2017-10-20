@@ -6,6 +6,8 @@ permalink: /kb/151/Q151195/
 
 ## Q151195: LocalLUs Parameter Displays Printer LUs as Display LUs
 
+{% raw %}
+
 	Article: Q151195
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -155,3 +157,5 @@ permalink: /kb/151/Q151195/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/044/Q44053/
 
 ## Q44053: Regular Expression Replacements in QuickC 2.00 Editor
 
+{% raw %}
+
 	Article: Q44053
 	Product(s): See article
 	Version(s): 2.00
@@ -32,3 +34,5 @@ permalink: /kb/044/Q44053/
 	For a more complete discussion of regular expressions in QuickC 2.00,
 	select the Change... option in the Search menu and press the F1 key
 	for help.
+
+{% endraw %}

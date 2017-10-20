@@ -6,6 +6,8 @@ permalink: /kb/199/Q199528/
 
 ## Q199528: BUG: CEPC Mouse Driver Moves Cursor Erratically
 
+{% raw %}
+
 	Article: Q199528
 	Product(s): Microsoft C Compiler
 	Version(s): N\A:2.11,2.12; WINDOWS:1.0
@@ -97,3 +99,5 @@ permalink: /kb/199/Q199528/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/043/Q43538/
 
 ## Q43538: NMAKE Example Incorrect in QuickC Manual; Should Be Lowercase
 
+{% raw %}
+
 	Article: Q43538
 	Product(s): See article
 	Version(s): 2.00
@@ -37,3 +39,5 @@ permalink: /kb/043/Q43538/
 	the following pseudotarget at the top of the NMAKE description file:
 	
 	   .SUFFIXES: .OBJ
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127850/
 
 ## Q127850: Using the DPT SmartRAID SCSI Host on a AST Manhattan P5090
 
+{% raw %}
+
 	Article: Q127850
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -87,3 +89,5 @@ permalink: /kb/127/Q127850/
 	
 	=============================================================================
 	
+
+{% endraw %}

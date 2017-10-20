@@ -6,6 +6,8 @@ permalink: /kb/058/Q58676/
 
 ## Q58676: MenuEvent&#36; Should Be MenuEvent, Page 495 BASIC 7.0 Reference
 
+{% raw %}
+
 	Article: Q58676
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -23,3 +25,5 @@ permalink: /kb/058/Q58676/
 	
 	MenuEvent is a SUB in the toolbox file MENU.BAS and is used to poll
 	for any menu events activated by the mouse or keyboard.
+
+{% endraw %}

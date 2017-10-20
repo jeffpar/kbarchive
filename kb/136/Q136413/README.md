@@ -6,6 +6,8 @@ permalink: /kb/136/Q136413/
 
 ## Q136413: How to Send E-mail to CompuServe Accounts
 
+{% raw %}
+
 	Article: Q136413
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5
@@ -144,3 +146,5 @@ permalink: /kb/136/Q136413/
 	
 	=============================================================================
 	
+
+{% endraw %}

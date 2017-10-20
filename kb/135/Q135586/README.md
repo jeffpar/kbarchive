@@ -6,6 +6,8 @@ permalink: /kb/135/Q135586/
 
 ## Q135586: Hiding the Last Logged On User Name in Windows 95
 
+{% raw %}
+
 	Article: Q135586
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -65,3 +67,5 @@ permalink: /kb/135/Q135586/
 	
 	=============================================================================
 	
+
+{% endraw %}

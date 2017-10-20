@@ -6,6 +6,8 @@ permalink: /kb/103/Q103561/
 
 ## Q103561: Clean Start: DblSpace Maintenance Program Runs in Setup Mode
 
+{% raw %}
+
 	Article: Q103561
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -46,3 +48,5 @@ permalink: /kb/103/Q103561/
 	
 	=============================================================================
 	
+
+{% endraw %}

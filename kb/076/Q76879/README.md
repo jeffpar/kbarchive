@@ -6,6 +6,8 @@ permalink: /kb/076/Q76879/
 
 ## Q76879: Installing MS-DOS 5 Upgrade on Zenith MinisPort HD
 
+{% raw %}
+
 	Article: Q76879
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -60,3 +62,5 @@ permalink: /kb/076/Q76879/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231878/
 
 ## Q231878: Location of Winsock Proxy Client Configuration Information
 
+{% raw %}
+
 	Article: Q231878
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:4.0
@@ -122,3 +124,5 @@ permalink: /kb/231/Q231878/
 	
 	=============================================================================
 	
+
+{% endraw %}

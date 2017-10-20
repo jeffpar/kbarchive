@@ -6,6 +6,8 @@ permalink: /kb/133/Q133438/
 
 ## Q133438: Print Job Not Printed When Printing to a NetWare Server
 
+{% raw %}
+
 	Article: Q133438
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/133/Q133438/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96518/
 
 ## Q96518: Differences Between DOSSHELL.INI in MS-DOS Versions 5 and 6
 
+{% raw %}
+
 	Article: Q96518
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -79,3 +81,5 @@ permalink: /kb/096/Q96518/
 	
 	=============================================================================
 	
+
+{% endraw %}

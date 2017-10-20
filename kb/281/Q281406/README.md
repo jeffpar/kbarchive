@@ -6,6 +6,8 @@ permalink: /kb/281/Q281406/
 
 ## Q281406: Multiplayer Pinochle Game Becomes Unsynchronized
 
+{% raw %}
+
 	Article: Q281406
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/281/Q281406/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82434/
 
 ## Q82434: Windows Screen Savers Corrupted by Pull-Down Menus
 
+{% raw %}
+
 	Article: Q82434
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/082/Q82434/
 	
 	=============================================================================
 	
+
+{% endraw %}

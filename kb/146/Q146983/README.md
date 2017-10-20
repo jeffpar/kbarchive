@@ -6,6 +6,8 @@ permalink: /kb/146/Q146983/
 
 ## Q146983: XCLN: Apply/Cancel Options in Control Panel Mail and Fax
 
+{% raw %}
+
 	Article: Q146983
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -44,3 +46,5 @@ permalink: /kb/146/Q146983/
 	
 	=============================================================================
 	
+
+{% endraw %}

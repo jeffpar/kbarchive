@@ -6,6 +6,8 @@ permalink: /kb/093/Q93255/
 
 ## Q93255: VidCap: Err Msg: Cannot Initialize Capture Driver - Indeo
 
+{% raw %}
+
 	Article: Q93255
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/093/Q93255/
 	
 	=============================================================================
 	
+
+{% endraw %}

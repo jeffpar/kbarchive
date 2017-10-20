@@ -6,6 +6,8 @@ permalink: /kb/126/Q126133/
 
 ## Q126133: Windows NT Setup Hangs when Upgrading a Compaq Proliant
 
+{% raw %}
+
 	Article: Q126133
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -58,3 +60,5 @@ permalink: /kb/126/Q126133/
 	
 	=============================================================================
 	
+
+{% endraw %}

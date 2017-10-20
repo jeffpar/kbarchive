@@ -6,6 +6,8 @@ permalink: /kb/125/Q125976/
 
 ## Q125976: How to Assign IPX Network Numbers to Multiple Network Cards
 
+{% raw %}
+
 	Article: Q125976
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -68,3 +70,5 @@ permalink: /kb/125/Q125976/
 	
 	=============================================================================
 	
+
+{% endraw %}

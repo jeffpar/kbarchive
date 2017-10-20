@@ -6,6 +6,8 @@ permalink: /kb/229/Q229756/
 
 ## Q229756: INFO: Maximum Number of Controls on a Form
 
+{% raw %}
+
 	Article: Q229756
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -94,3 +96,5 @@ permalink: /kb/229/Q229756/
 	
 	=============================================================================
 	
+
+{% endraw %}

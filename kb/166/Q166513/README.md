@@ -6,6 +6,8 @@ permalink: /kb/166/Q166513/
 
 ## Q166513: FIX: Typedef Type Causes C2275: Illegal Use of Type
 
+{% raw %}
+
 	Article: Q166513
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0
@@ -86,3 +88,5 @@ permalink: /kb/166/Q166513/
 	
 	=============================================================================
 	
+
+{% endraw %}

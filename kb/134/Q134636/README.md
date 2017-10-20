@@ -6,6 +6,8 @@ permalink: /kb/134/Q134636/
 
 ## Q134636: List of Error Messages That Have Changed in Visual FoxPro
 
+{% raw %}
+
 	Article: Q134636
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -307,3 +309,5 @@ permalink: /kb/134/Q134636/
 	
 	=============================================================================
 	
+
+{% endraw %}

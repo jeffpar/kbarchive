@@ -6,6 +6,8 @@ permalink: /kb/138/Q138703/
 
 ## Q138703: STOP 0x0000005c on IBM PC Server 320
 
+{% raw %}
+
 	Article: Q138703
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -75,3 +77,5 @@ permalink: /kb/138/Q138703/
 	
 	=============================================================================
 	
+
+{% endraw %}

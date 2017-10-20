@@ -6,6 +6,8 @@ permalink: /kb/162/Q162293/
 
 ## Q162293: Troubleshooting RAS Client Issues in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q162293
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -140,3 +142,5 @@ permalink: /kb/162/Q162293/
 	
 	=============================================================================
 	
+
+{% endraw %}

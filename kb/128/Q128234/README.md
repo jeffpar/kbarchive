@@ -6,6 +6,8 @@ permalink: /kb/128/Q128234/
 
 ## Q128234: Scheduling Windows NT Backup Fails and Locks Backup Process
 
+{% raw %}
+
 	Article: Q128234
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0,4.5
@@ -55,3 +57,5 @@ permalink: /kb/128/Q128234/
 	
 	=============================================================================
 	
+
+{% endraw %}

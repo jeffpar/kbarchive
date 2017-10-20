@@ -6,6 +6,8 @@ permalink: /kb/137/Q137400/
 
 ## Q137400: Changing Default Permissions Causes STOP 0xC000021A
 
+{% raw %}
+
 	Article: Q137400
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -74,3 +76,5 @@ permalink: /kb/137/Q137400/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/113/Q113853/
 
 ## Q113853: Flight Simulator: Day/Night Variation Range Has No Effect
 
+{% raw %}
+
 	Article: Q113853
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -55,3 +57,5 @@ permalink: /kb/113/Q113853/
 	
 	=============================================================================
 	
+
+{% endraw %}

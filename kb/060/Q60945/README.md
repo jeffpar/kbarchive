@@ -6,6 +6,8 @@ permalink: /kb/060/Q60945/
 
 ## Q60945: Mac Form: RETURN Key Does Not Work in Scrolling Text Field
 
+{% raw %}
+
 	Article: Q60945
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -48,3 +50,5 @@ permalink: /kb/060/Q60945/
 	
 	=============================================================================
 	
+
+{% endraw %}

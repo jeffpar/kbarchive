@@ -6,6 +6,8 @@ permalink: /kb/254/Q254230/
 
 ## Q254230: XADM: Running Isinteg in Fix Mode Affects Appointments
 
+{% raw %}
+
 	Article: Q254230
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP2,5.5 SP3
@@ -157,3 +159,5 @@ permalink: /kb/254/Q254230/
 	
 	=============================================================================
 	
+
+{% endraw %}

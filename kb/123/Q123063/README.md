@@ -6,6 +6,8 @@ permalink: /kb/123/Q123063/
 
 ## Q123063: Account Lockout Alert Does Not Function
 
+{% raw %}
+
 	Article: Q123063
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -47,3 +49,5 @@ permalink: /kb/123/Q123063/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/303/Q303828/
 
 ## Q303828: BUG: Installing MSDN Does Not Enable MDSN Help Bars in VFP 7.0
 
+{% raw %}
+
 	Article: Q303828
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -83,3 +85,5 @@ permalink: /kb/303/Q303828/
 	
 	=============================================================================
 	
+
+{% endraw %}

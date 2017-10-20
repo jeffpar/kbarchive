@@ -6,6 +6,8 @@ permalink: /kb/129/Q129120/
 
 ## Q129120: MAPI Unable to Run as a Windows NT Service
 
+{% raw %}
+
 	Article: Q129120
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/129/Q129120/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174698/
 
 ## Q174698: XFOR: DXANOTES Stops Responding Due to Incorrect ID File
 
+{% raw %}
+
 	Article: Q174698
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0
@@ -106,3 +108,5 @@ permalink: /kb/174/Q174698/
 	
 	=============================================================================
 	
+
+{% endraw %}

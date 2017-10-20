@@ -6,6 +6,8 @@ permalink: /kb/115/Q115437/
 
 ## Q115437: FIX: Problems Using Parentheses to Denote Array Subscripts
 
+{% raw %}
+
 	Article: Q115437
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5
@@ -113,3 +115,5 @@ permalink: /kb/115/Q115437/
 	
 	=============================================================================
 	
+
+{% endraw %}

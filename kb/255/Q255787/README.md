@@ -6,6 +6,8 @@ permalink: /kb/255/Q255787/
 
 ## Q255787: Exchange Discovery Takes a Long Time
 
+{% raw %}
+
 	Article: Q255787
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -100,3 +102,5 @@ permalink: /kb/255/Q255787/
 	
 	=============================================================================
 	
+
+{% endraw %}

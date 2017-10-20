@@ -6,6 +6,8 @@ permalink: /kb/149/Q149472/
 
 ## Q149472: PRB: FOR3852 Error Function RESULT and &#91;&#93; Attribute Specifier
 
+{% raw %}
+
 	Article: Q149472
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -86,3 +88,5 @@ permalink: /kb/149/Q149472/
 	
 	=============================================================================
 	
+
+{% endraw %}

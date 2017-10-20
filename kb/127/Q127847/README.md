@@ -6,6 +6,8 @@ permalink: /kb/127/Q127847/
 
 ## Q127847: PRB: Cannot Set a One-to-Many Relationship in Data Designer
 
+{% raw %}
+
 	Article: Q127847
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -83,3 +85,5 @@ permalink: /kb/127/Q127847/
 	
 	=============================================================================
 	
+
+{% endraw %}

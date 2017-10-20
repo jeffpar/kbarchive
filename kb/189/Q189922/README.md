@@ -6,6 +6,8 @@ permalink: /kb/189/Q189922/
 
 ## Q189922: PRB: Copying Folder in Component Gallery Copies Folder Only
 
+{% raw %}
+
 	Article: Q189922
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -60,3 +62,5 @@ permalink: /kb/189/Q189922/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174328/
 
 ## Q174328: SMSINST: Repackage Does Not Capture REG_MULTI_SZ Changes
 
+{% raw %}
+
 	Article: Q174328
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/174/Q174328/
 	
 	=============================================================================
 	
+
+{% endraw %}

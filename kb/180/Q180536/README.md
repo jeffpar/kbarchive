@@ -6,6 +6,8 @@ permalink: /kb/180/Q180536/
 
 ## Q180536: BUG: Right-Justified Label Caption Is Aligned Improperly
 
+{% raw %}
+
 	Article: Q180536
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.11,3.0
@@ -72,3 +74,5 @@ permalink: /kb/180/Q180536/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/115/Q115390/
 
 ## Q115390: LAN Manager Upgrade Release Notes - README.TXT
 
+{% raw %}
+
 	Article: Q115390
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -589,3 +591,5 @@ permalink: /kb/115/Q115390/
 	
 	=============================================================================
 	
+
+{% endraw %}

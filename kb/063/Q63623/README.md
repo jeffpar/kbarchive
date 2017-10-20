@@ -6,6 +6,8 @@ permalink: /kb/063/Q63623/
 
 ## Q63623: How to Set Up Programmer's WorkBench (PWB) for BASIC PDS 7.10
 
+{% raw %}
+
 	Article: Q63623
 	Product(s): See article
 	Version(s): 7.10   | 7.10
@@ -97,3 +99,5 @@ permalink: /kb/063/Q63623/
 	
 	      UNPACK A:PWBC.MX$ PWBC.MXT
 	      UNPACK A:PWBC.PX$ PWBC.PXT
+
+{% endraw %}

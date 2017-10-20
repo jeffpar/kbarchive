@@ -6,6 +6,8 @@ permalink: /kb/203/Q203933/
 
 ## Q203933: SMS: Installer Does Not Restart Automatically After Reboot
 
+{% raw %}
+
 	Article: Q203933
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0,2.0; winnt:2.0
@@ -54,3 +56,5 @@ permalink: /kb/203/Q203933/
 	
 	=============================================================================
 	
+
+{% endraw %}

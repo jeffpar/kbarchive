@@ -6,6 +6,8 @@ permalink: /kb/110/Q110543/
 
 ## Q110543: Flight Simulator: Floating Dynamic Scenery Objects
 
+{% raw %}
+
 	Article: Q110543
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -82,3 +84,5 @@ permalink: /kb/110/Q110543/
 	
 	=============================================================================
 	
+
+{% endraw %}

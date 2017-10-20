@@ -6,6 +6,8 @@ permalink: /kb/171/Q171332/
 
 ## Q171332: Invalid LAA MAC Address Causes Network Driver Failure.
 
+{% raw %}
+
 	Article: Q171332
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -105,3 +107,5 @@ permalink: /kb/171/Q171332/
 	
 	=============================================================================
 	
+
+{% endraw %}

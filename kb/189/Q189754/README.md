@@ -6,6 +6,8 @@ permalink: /kb/189/Q189754/
 
 ## Q189754: XCON: Remote X.400 MTA May Abort the Connection to Exchange
 
+{% raw %}
+
 	Article: Q189754
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -58,3 +60,5 @@ permalink: /kb/189/Q189754/
 	
 	=============================================================================
 	
+
+{% endraw %}

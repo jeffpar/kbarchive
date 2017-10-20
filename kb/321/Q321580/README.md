@@ -6,6 +6,8 @@ permalink: /kb/321/Q321580/
 
 ## Q321580: SMS: Distributions to Windows XP Clients May Not Work
 
+{% raw %}
+
 	Article: Q321580
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -58,3 +60,5 @@ permalink: /kb/321/Q321580/
 	
 	=============================================================================
 	
+
+{% endraw %}

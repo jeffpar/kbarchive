@@ -6,6 +6,8 @@ permalink: /kb/175/Q175734/
 
 ## Q175734: Frequently Asked Questions About Using Chat 2.0 on MSN
 
+{% raw %}
+
 	Article: Q175734
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5
@@ -392,3 +394,5 @@ permalink: /kb/175/Q175734/
 	
 	=============================================================================
 	
+
+{% endraw %}

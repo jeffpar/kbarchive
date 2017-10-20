@@ -6,6 +6,8 @@ permalink: /kb/012/Q12401/
 
 ## Q12401: PRB: Single Stepping IN to 8259A Controller Gives Wrong Result
 
+{% raw %}
+
 	Article: Q12401
 	Product(s): Microsoft Programming Utilities
 	Version(s): 2.2,3.0,3.05,3.06,3.07,3.11,3.14,4.0,4.01,4.05,4.1
@@ -60,3 +62,5 @@ permalink: /kb/012/Q12401/
 	
 	=============================================================================
 	
+
+{% endraw %}

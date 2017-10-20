@@ -6,6 +6,8 @@ permalink: /kb/184/Q184012/
 
 ## Q184012: FP97: Page Doesn't Preview in Window Size Specified
 
+{% raw %}
+
 	Article: Q184012
 	Product(s): Word Front Page
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/184/Q184012/
 	
 	=============================================================================
 	
+
+{% endraw %}

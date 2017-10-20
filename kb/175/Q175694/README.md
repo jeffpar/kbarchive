@@ -6,6 +6,8 @@ permalink: /kb/175/Q175694/
 
 ## Q175694: MDG: Admin Notice 55
 
+{% raw %}
+
 	Article: Q175694
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): winnt:3.2,3.5
@@ -76,3 +78,5 @@ permalink: /kb/175/Q175694/
 	
 	=============================================================================
 	
+
+{% endraw %}

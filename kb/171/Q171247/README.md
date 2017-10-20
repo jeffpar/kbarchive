@@ -6,6 +6,8 @@ permalink: /kb/171/Q171247/
 
 ## Q171247: FIX: Setup Quits When Microsoft ODBC Driver for Oracle Is Used
 
+{% raw %}
+
 	Article: Q171247
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 1.0,2.0
@@ -64,3 +66,5 @@ permalink: /kb/171/Q171247/
 	
 	=============================================================================
 	
+
+{% endraw %}

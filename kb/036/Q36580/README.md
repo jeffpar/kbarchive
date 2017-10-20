@@ -6,6 +6,8 @@ permalink: /kb/036/Q36580/
 
 ## Q36580: How Tabs Are Treated in the Microsoft Editor
 
+{% raw %}
+
 	Article: Q36580
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -45,3 +47,5 @@ permalink: /kb/036/Q36580/
 	If you need to view the tabs as they are situated in your file you can
 	use the TABDISP switch to show you which spaces will be compressed
 	into a tab character at the next write to the disk file.
+
+{% endraw %}

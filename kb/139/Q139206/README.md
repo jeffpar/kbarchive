@@ -6,6 +6,8 @@ permalink: /kb/139/Q139206/
 
 ## Q139206: Hardware List Not Updated After Installing New .inf File
 
+{% raw %}
+
 	Article: Q139206
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -91,3 +93,5 @@ permalink: /kb/139/Q139206/
 	
 	=============================================================================
 	
+
+{% endraw %}

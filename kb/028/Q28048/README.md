@@ -6,6 +6,8 @@ permalink: /kb/028/Q28048/
 
 ## Q28048: Repeated SOUND Statement Causes System Clock to Lose Time
 
+{% raw %}
+
 	Article: Q28048
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -35,3 +37,5 @@ permalink: /kb/028/Q28048/
 	(fixlist7.00).
 	
 	A similar problem occurs with the PLAY statement.
+
+{% endraw %}

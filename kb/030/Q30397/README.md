@@ -6,6 +6,8 @@ permalink: /kb/030/Q30397/
 
 ## Q30397: Bad Math in EXE Using Dynamic Array of Long Integers: Use /D
 
+{% raw %}
+
 	Article: Q30397
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -56,3 +58,5 @@ permalink: /kb/030/Q30397/
 	PRINT (r - x) * b(1) + a(1)
 	PRINT a(1) + (r - x) * b(1)
 	END
+
+{% endraw %}

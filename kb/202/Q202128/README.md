@@ -6,6 +6,8 @@ permalink: /kb/202/Q202128/
 
 ## Q202128: FIX: ATL EXE Server on CComAutoThreadModule Hang on Registration
 
+{% raw %}
+
 	Article: Q202128
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/202/Q202128/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118931/
 
 ## Q118931: Writer: Pattern-Filled Word Shapes Don't Print
 
+{% raw %}
+
 	Article: Q118931
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -56,3 +58,5 @@ permalink: /kb/118/Q118931/
 	
 	=============================================================================
 	
+
+{% endraw %}

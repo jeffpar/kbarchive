@@ -6,6 +6,8 @@ permalink: /kb/191/Q191790/
 
 ## Q191790: INFO: VB 6.0 Readme Part 15: Application Performance Explorer
 
+{% raw %}
+
 	Article: Q191790
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -243,3 +245,5 @@ permalink: /kb/191/Q191790/
 	
 	=============================================================================
 	
+
+{% endraw %}

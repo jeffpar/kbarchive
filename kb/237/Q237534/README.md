@@ -6,6 +6,8 @@ permalink: /kb/237/Q237534/
 
 ## Q237534: Encarta 2000: Error Message When You Use Shortcut to Install NLQ
 
+{% raw %}
+
 	Article: Q237534
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/237/Q237534/
 	
 	=============================================================================
 	
+
+{% endraw %}

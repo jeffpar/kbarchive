@@ -6,6 +6,8 @@ permalink: /kb/140/Q140352/
 
 ## Q140352: BUG: RC1120: RC Out of Memory When Compiling for Macintosh
 
+{% raw %}
+
 	Article: Q140352
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -58,3 +60,5 @@ permalink: /kb/140/Q140352/
 	
 	=============================================================================
 	
+
+{% endraw %}

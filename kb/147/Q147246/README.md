@@ -6,6 +6,8 @@ permalink: /kb/147/Q147246/
 
 ## Q147246: Using Direct Hosting over IPX Causes STOP 0x0000000A
 
+{% raw %}
+
 	Article: Q147246
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -78,3 +80,5 @@ permalink: /kb/147/Q147246/
 	
 	=============================================================================
 	
+
+{% endraw %}

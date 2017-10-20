@@ -6,6 +6,8 @@ permalink: /kb/191/Q191953/
 
 ## Q191953: HOWTO: Use Coverage Profiler to Optimize App Performance
 
+{% raw %}
+
 	Article: Q191953
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -111,3 +113,5 @@ permalink: /kb/191/Q191953/
 	
 	=============================================================================
 	
+
+{% endraw %}

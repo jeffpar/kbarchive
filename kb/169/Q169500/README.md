@@ -6,6 +6,8 @@ permalink: /kb/169/Q169500/
 
 ## Q169500: HOWTO: Call Driver Specific Functions in a Remote View
 
+{% raw %}
+
 	Article: Q169500
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a
@@ -104,3 +106,5 @@ permalink: /kb/169/Q169500/
 	
 	=============================================================================
 	
+
+{% endraw %}

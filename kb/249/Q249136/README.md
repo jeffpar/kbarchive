@@ -6,6 +6,8 @@ permalink: /kb/249/Q249136/
 
 ## Q249136: Software Inventory Agent May Cause Windows 95 Clients to Hang
 
+{% raw %}
+
 	Article: Q249136
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP1,2.0 SP2
@@ -71,3 +73,5 @@ permalink: /kb/249/Q249136/
 	
 	=============================================================================
 	
+
+{% endraw %}

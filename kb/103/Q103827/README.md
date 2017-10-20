@@ -6,6 +6,8 @@ permalink: /kb/103/Q103827/
 
 ## Q103827: RAS and SFM Passwords Are Not Case Sensitive
 
+{% raw %}
+
 	Article: Q103827
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -65,3 +67,5 @@ permalink: /kb/103/Q103827/
 	
 	=============================================================================
 	
+
+{% endraw %}

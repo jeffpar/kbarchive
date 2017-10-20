@@ -6,6 +6,8 @@ permalink: /kb/137/Q137106/
 
 ## Q137106: Internet Mail Accepts Only Files as Attachments
 
+{% raw %}
+
 	Article: Q137106
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3,2.0,2.5,2.6
@@ -41,3 +43,5 @@ permalink: /kb/137/Q137106/
 	
 	=============================================================================
 	
+
+{% endraw %}

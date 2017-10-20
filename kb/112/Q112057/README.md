@@ -6,6 +6,8 @@ permalink: /kb/112/Q112057/
 
 ## Q112057: FIX: F1001 in regasg.c with Adjustable Sized COMPLEX and /4Yb
 
+{% raw %}
+
 	Article: Q112057
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -88,3 +90,5 @@ permalink: /kb/112/Q112057/
 	
 	=============================================================================
 	
+
+{% endraw %}

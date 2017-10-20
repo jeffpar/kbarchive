@@ -6,6 +6,8 @@ permalink: /kb/166/Q166847/
 
 ## Q166847: XFOR: AS/400 DXA on RISC Computer
 
+{% raw %}
+
 	Article: Q166847
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/166/Q166847/
 	
 	=============================================================================
 	
+
+{% endraw %}

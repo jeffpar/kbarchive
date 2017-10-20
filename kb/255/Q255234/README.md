@@ -6,6 +6,8 @@ permalink: /kb/255/Q255234/
 
 ## Q255234: XFOR: Internet Mail Service Setup Can't Authenticate Password
 
+{% raw %}
+
 	Article: Q255234
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -59,3 +61,5 @@ permalink: /kb/255/Q255234/
 	
 	=============================================================================
 	
+
+{% endraw %}

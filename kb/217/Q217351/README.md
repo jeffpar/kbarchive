@@ -6,6 +6,8 @@ permalink: /kb/217/Q217351/
 
 ## Q217351: PRB: DCOM Port Range Configuration Problems
 
+{% raw %}
+
 	Article: Q217351
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -167,3 +169,5 @@ permalink: /kb/217/Q217351/
 	
 	=============================================================================
 	
+
+{% endraw %}

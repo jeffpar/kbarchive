@@ -6,6 +6,8 @@ permalink: /kb/140/Q140224/
 
 ## Q140224: How to Make a ShortCut to Modify a Project or Screen
 
+{% raw %}
+
 	Article: Q140224
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/140/Q140224/
 	
 	=============================================================================
 	
+
+{% endraw %}

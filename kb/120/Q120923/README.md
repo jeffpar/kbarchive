@@ -6,6 +6,8 @@ permalink: /kb/120/Q120923/
 
 ## Q120923: Visual C++ Vers 2.0 README.WRI, Part 7 Run-Time Library Routines
 
+{% raw %}
+
 	Article: Q120923
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/120/Q120923/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147694/
 
 ## Q147694: Clients Not Obtaining DHCP Leases Across Some Proteon Routers
 
+{% raw %}
+
 	Article: Q147694
 	Product(s): Microsoft Windows NT
 	Version(s): 3.11,3.11a,3.11b,3.5,3.51
@@ -60,3 +62,5 @@ permalink: /kb/147/Q147694/
 	
 	=============================================================================
 	
+
+{% endraw %}

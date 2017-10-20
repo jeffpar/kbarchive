@@ -6,6 +6,8 @@ permalink: /kb/169/Q169639/
 
 ## Q169639: XADM: Public Folder Hierarchy Comes From Pub.edb
 
+{% raw %}
+
 	Article: Q169639
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -51,3 +53,5 @@ permalink: /kb/169/Q169639/
 	
 	=============================================================================
 	
+
+{% endraw %}

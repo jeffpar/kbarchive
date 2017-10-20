@@ -6,6 +6,8 @@ permalink: /kb/318/Q318346/
 
 ## Q318346: BUG: No Merge Warning After User Changes the Binding Information
 
+{% raw %}
+
 	Article: Q318346
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -100,3 +102,5 @@ permalink: /kb/318/Q318346/
 	
 	=============================================================================
 	
+
+{% endraw %}

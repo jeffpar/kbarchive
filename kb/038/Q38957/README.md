@@ -6,6 +6,8 @@ permalink: /kb/038/Q38957/
 
 ## Q38957: How to Get 3.5-Inch Disks for QuickBASIC for MS-DOS
 
+{% raw %}
+
 	Article: Q38957
 	Product(s): See article
 	Version(s): 2.01 3.00 4.00 4.00b 4.50
@@ -40,3 +42,5 @@ permalink: /kb/038/Q38957/
 	3.5-inch disks if available for that same version number. As of
 	December 1988, there is no charge for this, but you must confirm the
 	charges and conditions with Microsoft Customer Service.
+
+{% endraw %}

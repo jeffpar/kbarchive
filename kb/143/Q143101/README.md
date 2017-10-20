@@ -6,6 +6,8 @@ permalink: /kb/143/Q143101/
 
 ## Q143101: FP: Using FrontPage Without the Server Extensions
 
+{% raw %}
+
 	Article: Q143101
 	Product(s): Word Front Page
 	Version(s): 1.0,1.1
@@ -174,3 +176,5 @@ permalink: /kb/143/Q143101/
 	
 	=============================================================================
 	
+
+{% endraw %}

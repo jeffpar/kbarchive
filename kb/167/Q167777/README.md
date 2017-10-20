@@ -6,6 +6,8 @@ permalink: /kb/167/Q167777/
 
 ## Q167777: SMS: Site/Domain Changes Are Processed Automatically
 
+{% raw %}
+
 	Article: Q167777
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP2
@@ -94,3 +96,5 @@ permalink: /kb/167/Q167777/
 	
 	=============================================================================
 	
+
+{% endraw %}

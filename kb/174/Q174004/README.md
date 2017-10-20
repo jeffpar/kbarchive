@@ -6,6 +6,8 @@ permalink: /kb/174/Q174004/
 
 ## Q174004: FIX: Cannot Change Variant Array in Class Module
 
+{% raw %}
+
 	Article: Q174004
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -136,3 +138,5 @@ permalink: /kb/174/Q174004/
 	
 	=============================================================================
 	
+
+{% endraw %}

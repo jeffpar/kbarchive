@@ -6,6 +6,8 @@ permalink: /kb/050/Q50341/
 
 ## Q50341: Preprocessor Condenses Multi-Line Macro Invocations
 
+{% raw %}
+
 	Article: Q50341
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -92,3 +94,5 @@ permalink: /kb/050/Q50341/
 	preprocessor listing contain consistent line numbers following the
 	macro invocation because the line number is reset to the proper value
 	(seven) after the preprocessor pass.
+
+{% endraw %}

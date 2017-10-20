@@ -6,6 +6,8 @@ permalink: /kb/154/Q154097/
 
 ## Q154097: How to Change the Default MSN Chat Program
 
+{% raw %}
+
 	Article: Q154097
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5,2.51,2.52,2.6
@@ -74,3 +76,5 @@ permalink: /kb/154/Q154097/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161300/
 
 ## Q161300: HOWTO: Determine the Type of Drive Using Win32
 
+{% raw %}
+
 	Article: Q161300
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/161/Q161300/
 	
 	=============================================================================
 	
+
+{% endraw %}

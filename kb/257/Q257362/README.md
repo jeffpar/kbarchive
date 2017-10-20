@@ -6,6 +6,8 @@ permalink: /kb/257/Q257362/
 
 ## Q257362: SMS: Systems Management Server Site Reset Functionality
 
+{% raw %}
+
 	Article: Q257362
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -123,3 +125,5 @@ permalink: /kb/257/Q257362/
 	
 	=============================================================================
 	
+
+{% endraw %}

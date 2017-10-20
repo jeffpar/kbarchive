@@ -6,6 +6,8 @@ permalink: /kb/087/Q87919/
 
 ## Q87919: MicroSpeed Serial Card Is Incompatible with Windows 3.1
 
+{% raw %}
+
 	Article: Q87919
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/087/Q87919/
 	
 	=============================================================================
 	
+
+{% endraw %}

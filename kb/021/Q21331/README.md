@@ -6,6 +6,8 @@ permalink: /kb/021/Q21331/
 
 ## Q21331: MS-DOS BASIC Compiler Does Not Provide ISAM File Support
 
+{% raw %}
+
 	Article: Q21331
 	Product(s): See article
 	Version(s): 5.35 5.36 6.00 6.00b 7.00
@@ -21,3 +23,5 @@ permalink: /kb/021/Q21331/
 	Microsoft BASIC Professional Development System (PDS) Version 7.00 for
 	MS-DOS does support ISAM files. BASIC PDS 7.00 currently supports
 	single-user ISAM, however.
+
+{% endraw %}

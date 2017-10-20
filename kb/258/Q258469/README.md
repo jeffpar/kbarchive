@@ -6,6 +6,8 @@ permalink: /kb/258/Q258469/
 
 ## Q258469: Cluster Service May Not Start After Restricting IP Ports for RPC
 
+{% raw %}
+
 	Article: Q258469
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -92,3 +94,5 @@ permalink: /kb/258/Q258469/
 	
 	=============================================================================
 	
+
+{% endraw %}

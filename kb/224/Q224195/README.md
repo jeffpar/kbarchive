@@ -6,6 +6,8 @@ permalink: /kb/224/Q224195/
 
 ## Q224195: XADM: Store Failure During the Processing of a Client Based Rule
 
+{% raw %}
+
 	Article: Q224195
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -144,3 +146,5 @@ permalink: /kb/224/Q224195/
 	
 	=============================================================================
 	
+
+{% endraw %}

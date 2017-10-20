@@ -6,6 +6,8 @@ permalink: /kb/256/Q256829/
 
 ## Q256829: MapPoint 2001: Add-in Modules Are Not Displayed on the Screen
 
+{% raw %}
+
 	Article: Q256829
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/256/Q256829/
 	
 	=============================================================================
 	
+
+{% endraw %}

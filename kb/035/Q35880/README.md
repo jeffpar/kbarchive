@@ -6,6 +6,8 @@ permalink: /kb/035/Q35880/
 
 ## Q35880: Align Directive Aligns Off Start of Segment
 
+{% raw %}
+
 	Article: Q35880
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -26,3 +28,5 @@ permalink: /kb/035/Q35880/
 	e.data
 	d1   db 'This is to pad the data segment'
 	align 16
+
+{% endraw %}

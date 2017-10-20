@@ -6,6 +6,8 @@ permalink: /kb/095/Q95856/
 
 ## Q95856: Removing MS-DOS 6 Upgrade After Compressing a Drive
 
+{% raw %}
+
 	Article: Q95856
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -71,3 +73,5 @@ permalink: /kb/095/Q95856/
 	
 	=============================================================================
 	
+
+{% endraw %}

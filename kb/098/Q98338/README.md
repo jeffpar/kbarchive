@@ -6,6 +6,8 @@ permalink: /kb/098/Q98338/
 
 ## Q98338: PC DB: 3.0b Mail Server Update Disk &#91;3.5, 720K; 5.25, 1.2 MB&#93;
 
+{% raw %}
+
 	Article: Q98338
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b
@@ -95,3 +97,5 @@ permalink: /kb/098/Q98338/
 	
 	=============================================================================
 	
+
+{% endraw %}

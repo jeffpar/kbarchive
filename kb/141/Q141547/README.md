@@ -6,6 +6,8 @@ permalink: /kb/141/Q141547/
 
 ## Q141547: FIX: Visual SourceSafe Help System Searches for Wrong HLP File
 
+{% raw %}
+
 	Article: Q141547
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,5.0
@@ -58,3 +60,5 @@ permalink: /kb/141/Q141547/
 	
 	=============================================================================
 	
+
+{% endraw %}

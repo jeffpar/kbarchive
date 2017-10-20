@@ -6,6 +6,8 @@ permalink: /kb/182/Q182934/
 
 ## Q182934: WD97: Not Enough Memory or Disk Space Saving File (Windows NT)
 
+{% raw %}
+
 	Article: Q182934
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/182/Q182934/
 	
 	=============================================================================
 	
+
+{% endraw %}

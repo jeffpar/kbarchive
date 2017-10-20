@@ -6,6 +6,8 @@ permalink: /kb/106/Q106126/
 
 ## Q106126: DoubleSpace DoubleGuard Error Codes
 
+{% raw %}
+
 	Article: Q106126
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22; WINDOWS:95
@@ -127,3 +129,5 @@ permalink: /kb/106/Q106126/
 	
 	=============================================================================
 	
+
+{% endraw %}

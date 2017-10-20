@@ -6,6 +6,8 @@ permalink: /kb/148/Q148238/
 
 ## Q148238: Bookshelf 96-97: Remove All Deletes Internet Directory Updates
 
+{% raw %}
+
 	Article: Q148238
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -85,3 +87,5 @@ permalink: /kb/148/Q148238/
 	
 	=============================================================================
 	
+
+{% endraw %}

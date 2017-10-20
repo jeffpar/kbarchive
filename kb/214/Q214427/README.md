@@ -6,6 +6,8 @@ permalink: /kb/214/Q214427/
 
 ## Q214427: FIX: &quot;Prompt To Save Changes&quot; Setting Crashes VB IDE Upon Saving
 
+{% raw %}
+
 	Article: Q214427
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -90,3 +92,5 @@ permalink: /kb/214/Q214427/
 	
 	=============================================================================
 	
+
+{% endraw %}

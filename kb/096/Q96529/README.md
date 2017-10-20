@@ -6,6 +6,8 @@ permalink: /kb/096/Q96529/
 
 ## Q96529: PC WRmt: Help in Separate Files
 
+{% raw %}
+
 	Article: Q96529
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -55,3 +57,5 @@ permalink: /kb/096/Q96529/
 	
 	=============================================================================
 	
+
+{% endraw %}

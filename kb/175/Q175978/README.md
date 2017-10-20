@@ -6,6 +6,8 @@ permalink: /kb/175/Q175978/
 
 ## Q175978: XFOR: List of Reserved Microsoft Mail Network Names
 
+{% raw %}
+
 	Article: Q175978
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -60,3 +62,5 @@ permalink: /kb/175/Q175978/
 	
 	=============================================================================
 	
+
+{% endraw %}

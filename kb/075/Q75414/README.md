@@ -6,6 +6,8 @@ permalink: /kb/075/Q75414/
 
 ## Q75414: Explanation of SPECIAL=DEFAULT in DOSSHELL.INI
 
+{% raw %}
+
 	Article: Q75414
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -44,3 +46,5 @@ permalink: /kb/075/Q75414/
 	
 	=============================================================================
 	
+
+{% endraw %}

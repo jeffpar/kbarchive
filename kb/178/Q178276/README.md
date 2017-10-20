@@ -6,6 +6,8 @@ permalink: /kb/178/Q178276/
 
 ## Q178276: Dependencies Are Unavailable When First Modifying Properties
 
+{% raw %}
+
 	Article: Q178276
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -51,3 +53,5 @@ permalink: /kb/178/Q178276/
 	
 	=============================================================================
 	
+
+{% endraw %}

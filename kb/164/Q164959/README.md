@@ -6,6 +6,8 @@ permalink: /kb/164/Q164959/
 
 ## Q164959: XADM: Encryption Does Not Work in Public Folders
 
+{% raw %}
+
 	Article: Q164959
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -61,3 +63,5 @@ permalink: /kb/164/Q164959/
 	
 	=============================================================================
 	
+
+{% endraw %}

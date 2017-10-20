@@ -6,6 +6,8 @@ permalink: /kb/146/Q146224/
 
 ## Q146224: HOWTO: Use SQL Pass Through to Connect to ASCII Text Files
 
+{% raw %}
+
 	Article: Q146224
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,3.0,3.0b,6.0
@@ -189,3 +191,5 @@ permalink: /kb/146/Q146224/
 	
 	=============================================================================
 	
+
+{% endraw %}

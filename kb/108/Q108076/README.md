@@ -6,6 +6,8 @@ permalink: /kb/108/Q108076/
 
 ## Q108076: 3Com Etherlink 16 Network Adapter Unstable in Turbo Mode
 
+{% raw %}
+
 	Article: Q108076
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -81,3 +83,5 @@ permalink: /kb/108/Q108076/
 	
 	=============================================================================
 	
+
+{% endraw %}

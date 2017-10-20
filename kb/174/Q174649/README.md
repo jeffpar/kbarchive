@@ -6,6 +6,8 @@ permalink: /kb/174/Q174649/
 
 ## Q174649: SMS: Remote Control Viewer Is Blank for a Busy WinNT Client
 
+{% raw %}
+
 	Article: Q174649
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -51,3 +53,5 @@ permalink: /kb/174/Q174649/
 	
 	=============================================================================
 	
+
+{% endraw %}

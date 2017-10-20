@@ -6,6 +6,8 @@ permalink: /kb/171/Q171794/
 
 ## Q171794: Migrate On/Off Does Not Allow Overwriting Static &lt;1Ch&gt; Mappings
 
+{% raw %}
+
 	Article: Q171794
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -78,3 +80,5 @@ permalink: /kb/171/Q171794/
 	
 	=============================================================================
 	
+
+{% endraw %}

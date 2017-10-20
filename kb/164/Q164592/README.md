@@ -6,6 +6,8 @@ permalink: /kb/164/Q164592/
 
 ## Q164592: Dynamically Defined Dependent LU Support for LUA LUs
 
+{% raw %}
+
 	Article: Q164592
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11,2.11 SP1,3.0
@@ -83,3 +85,5 @@ permalink: /kb/164/Q164592/
 	
 	=============================================================================
 	
+
+{% endraw %}

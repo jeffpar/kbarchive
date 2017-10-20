@@ -6,6 +6,8 @@ permalink: /kb/072/Q72637/
 
 ## Q72637: Sharing IRQs with the Windows 3.0 Communications Driver
 
+{% raw %}
+
 	Article: Q72637
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0
@@ -71,3 +73,5 @@ permalink: /kb/072/Q72637/
 	
 	=============================================================================
 	
+
+{% endraw %}

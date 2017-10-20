@@ -6,6 +6,8 @@ permalink: /kb/200/Q200296/
 
 ## Q200296: BUG: ComboBox Display Bleeds Through Pages in a PageFrame
 
+{% raw %}
+
 	Article: Q200296
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -167,3 +169,5 @@ permalink: /kb/200/Q200296/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/236/Q236933/
 
 ## Q236933: PRB: DB_E_ERRORSOCCURRED returned from Open When using GROUP BY
 
+{% raw %}
+
 	Article: Q236933
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -94,3 +96,5 @@ permalink: /kb/236/Q236933/
 	
 	=============================================================================
 	
+
+{% endraw %}

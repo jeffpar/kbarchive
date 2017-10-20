@@ -6,6 +6,8 @@ permalink: /kb/071/Q71787/
 
 ## Q71787: Stacker Disk-Compression Utility with Windows
 
+{% raw %}
+
 	Article: Q71787
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -157,3 +159,5 @@ permalink: /kb/071/Q71787/
 	
 	=============================================================================
 	
+
+{% endraw %}

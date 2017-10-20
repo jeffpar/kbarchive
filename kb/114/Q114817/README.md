@@ -6,6 +6,8 @@ permalink: /kb/114/Q114817/
 
 ## Q114817: No Shutdown Button in Windows NT Server Welcome Screen
 
+{% raw %}
+
 	Article: Q114817
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -59,3 +61,5 @@ permalink: /kb/114/Q114817/
 	
 	=============================================================================
 	
+
+{% endraw %}

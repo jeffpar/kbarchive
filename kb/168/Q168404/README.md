@@ -6,6 +6,8 @@ permalink: /kb/168/Q168404/
 
 ## Q168404: PRB: C2664 Instantiating STL List with Sequence &#91;first, last)
 
+{% raw %}
+
 	Article: Q168404
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -126,3 +128,5 @@ permalink: /kb/168/Q168404/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245583/
 
 ## Q245583: General Protection Fault When Browsing for Device Drivers
 
+{% raw %}
+
 	Article: Q245583
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/245/Q245583/
 	
 	=============================================================================
 	
+
+{% endraw %}

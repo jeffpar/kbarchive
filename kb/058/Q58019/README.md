@@ -6,6 +6,8 @@ permalink: /kb/058/Q58019/
 
 ## Q58019: BC 6.00 User's Guide, NOVGA.OBJ Affects SCREENs 11-13, Not 3
 
+{% raw %}
+
 	Article: Q58019
 	Product(s): See article
 	Version(s): 6.00 6.00b | 6.00 6.00b
@@ -26,3 +28,5 @@ permalink: /kb/058/Q58019/
 	This documentation error was corrected in the documentation for
 	Microsoft BASIC Professional Development System (PDS) Version 7.00 for
 	MS-DOS and MS OS/2.
+
+{% endraw %}

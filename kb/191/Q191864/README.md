@@ -6,6 +6,8 @@ permalink: /kb/191/Q191864/
 
 ## Q191864: PRB: Error 743 Adding ActiveX Controls to Control Collection
 
+{% raw %}
+
 	Article: Q191864
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/191/Q191864/
 	
 	=============================================================================
 	
+
+{% endraw %}

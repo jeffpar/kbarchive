@@ -6,6 +6,8 @@ permalink: /kb/149/Q149519/
 
 ## Q149519: IIS IDC to SQL with Pipe/Connection Busy, Timeout Expired
 
+{% raw %}
+
 	Article: Q149519
 	Product(s): Internet Information Server
 	Version(s): 1.0 3.51
@@ -59,3 +61,5 @@ permalink: /kb/149/Q149519/
 	
 	=============================================================================
 	
+
+{% endraw %}

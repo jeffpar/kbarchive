@@ -6,6 +6,8 @@ permalink: /kb/159/Q159573/
 
 ## Q159573: RRAS Hotfix Update 1.0 Release Notes
 
+{% raw %}
+
 	Article: Q159573
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -131,3 +133,5 @@ permalink: /kb/159/Q159573/
 	
 	=============================================================================
 	
+
+{% endraw %}

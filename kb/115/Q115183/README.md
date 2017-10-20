@@ -6,6 +6,8 @@ permalink: /kb/115/Q115183/
 
 ## Q115183: Running WINHELP.EXE with Command Line Switches
 
+{% raw %}
+
 	Article: Q115183
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -78,3 +80,5 @@ permalink: /kb/115/Q115183/
 	
 	=============================================================================
 	
+
+{% endraw %}

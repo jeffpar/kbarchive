@@ -6,6 +6,8 @@ permalink: /kb/121/Q121542/
 
 ## Q121542: How to Install NDIS 2 Network Card Drivers That Are Not Listed
 
+{% raw %}
+
 	Article: Q121542
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -123,3 +125,5 @@ permalink: /kb/121/Q121542/
 	
 	=============================================================================
 	
+
+{% endraw %}

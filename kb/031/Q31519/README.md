@@ -6,6 +6,8 @@ permalink: /kb/031/Q31519/
 
 ## Q31519: MASM 5.10 EXT.DOC: DelBox - Deletes a &quot;Box&quot; from a File
 
+{% raw %}
+
 	Article: Q31519
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -32,3 +34,5 @@ permalink: /kb/031/Q31519/
 	PFILE pFile;
 	COL  xLeft, xRight;
 	LINE yTop, yBottom;
+
+{% endraw %}

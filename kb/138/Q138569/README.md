@@ -6,6 +6,8 @@ permalink: /kb/138/Q138569/
 
 ## Q138569: INFO: Object-Oriented Programming Reference Books
 
+{% raw %}
+
 	Article: Q138569
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,6.0
@@ -290,3 +292,5 @@ permalink: /kb/138/Q138569/
 	
 	=============================================================================
 	
+
+{% endraw %}

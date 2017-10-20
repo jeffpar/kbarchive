@@ -6,6 +6,8 @@ permalink: /kb/166/Q166618/
 
 ## Q166618: XADM: Batch Export Crashes When Non Zero ulUSNBase is Specified
 
+{% raw %}
+
 	Article: Q166618
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -59,3 +61,5 @@ permalink: /kb/166/Q166618/
 	
 	=============================================================================
 	
+
+{% endraw %}

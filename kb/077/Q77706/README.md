@@ -6,6 +6,8 @@ permalink: /kb/077/Q77706/
 
 ## Q77706: Himem /M:12 on Vendex VTI with Award 3.03 BIOS
 
+{% raw %}
+
 	Article: Q77706
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -38,3 +40,5 @@ permalink: /kb/077/Q77706/
 	
 	=============================================================================
 	
+
+{% endraw %}

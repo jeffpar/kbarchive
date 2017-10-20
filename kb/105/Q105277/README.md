@@ -6,6 +6,8 @@ permalink: /kb/105/Q105277/
 
 ## Q105277: Net Watcher Audit Log Shows Two Entries for Failed Password
 
+{% raw %}
+
 	Article: Q105277
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -44,3 +46,5 @@ permalink: /kb/105/Q105277/
 	
 	=============================================================================
 	
+
+{% endraw %}

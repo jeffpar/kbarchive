@@ -6,6 +6,8 @@ permalink: /kb/177/Q177245/
 
 ## Q177245: Multiprocessor Computer May Hang Because of Tcpip.sys
 
+{% raw %}
+
 	Article: Q177245
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -121,3 +123,5 @@ permalink: /kb/177/Q177245/
 	
 	=============================================================================
 	
+
+{% endraw %}

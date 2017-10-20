@@ -6,6 +6,8 @@ permalink: /kb/258/Q258609/
 
 ## Q258609: WLBS Cluster Appears to Stop Servicing Clients
 
+{% raw %}
+
 	Article: Q258609
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/258/Q258609/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128074/
 
 ## Q128074: How to Refer to a Form from a Menu or a Program
 
+{% raw %}
+
 	Article: Q128074
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -52,3 +54,5 @@ permalink: /kb/128/Q128074/
 	
 	=============================================================================
 	
+
+{% endraw %}

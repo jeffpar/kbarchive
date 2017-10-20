@@ -6,6 +6,8 @@ permalink: /kb/136/Q136358/
 
 ## Q136358: Fury3: Windowed mode uses top 1/8 of screen with Actix Picaso
 
+{% raw %}
+
 	Article: Q136358
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -51,3 +53,5 @@ permalink: /kb/136/Q136358/
 	
 	=============================================================================
 	
+
+{% endraw %}

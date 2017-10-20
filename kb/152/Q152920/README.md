@@ -6,6 +6,8 @@ permalink: /kb/152/Q152920/
 
 ## Q152920: XCLN: MAPIOle Attachments from OLEMsg have no Rendering Data
 
+{% raw %}
+
 	Article: Q152920
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -64,3 +66,5 @@ permalink: /kb/152/Q152920/
 	
 	=============================================================================
 	
+
+{% endraw %}

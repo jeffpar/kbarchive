@@ -6,6 +6,8 @@ permalink: /kb/293/Q293225/
 
 ## Q293225: SMS: All Hardware Inventory Goes to BADMIFS Folder After Upgrade
 
+{% raw %}
+
 	Article: Q293225
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -72,3 +74,5 @@ permalink: /kb/293/Q293225/
 	
 	=============================================================================
 	
+
+{% endraw %}

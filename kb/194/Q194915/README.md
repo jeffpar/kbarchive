@@ -6,6 +6,8 @@ permalink: /kb/194/Q194915/
 
 ## Q194915: BUG: Toolbar ButtonMenu May Not Display Correctly
 
+{% raw %}
+
 	Article: Q194915
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -86,3 +88,5 @@ permalink: /kb/194/Q194915/
 	
 	=============================================================================
 	
+
+{% endraw %}

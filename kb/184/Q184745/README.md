@@ -6,6 +6,8 @@ permalink: /kb/184/Q184745/
 
 ## Q184745: HOWTO: Use Script Control Modules and Procedures Collections
 
+{% raw %}
+
 	Article: Q184745
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -254,3 +256,5 @@ permalink: /kb/184/Q184745/
 	
 	=============================================================================
 	
+
+{% endraw %}

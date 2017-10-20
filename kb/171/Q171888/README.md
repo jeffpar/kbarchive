@@ -6,6 +6,8 @@ permalink: /kb/171/Q171888/
 
 ## Q171888: Unreadable Error Messages When Deleting Host Security Domains
 
+{% raw %}
+
 	Article: Q171888
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -55,3 +57,5 @@ permalink: /kb/171/Q171888/
 	
 	=============================================================================
 	
+
+{% endraw %}

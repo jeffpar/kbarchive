@@ -6,6 +6,8 @@ permalink: /kb/129/Q129547/
 
 ## Q129547: Company Name Preset to MICROSOFT When Installing WFW
 
+{% raw %}
+
 	Article: Q129547
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11; winnt:3.5
@@ -51,3 +53,5 @@ permalink: /kb/129/Q129547/
 	
 	=============================================================================
 	
+
+{% endraw %}

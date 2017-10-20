@@ -6,6 +6,8 @@ permalink: /kb/154/Q154960/
 
 ## Q154960: Windows 95 Does Not Retain Primary WINS Server IP Address
 
+{% raw %}
+
 	Article: Q154960
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -53,3 +55,5 @@ permalink: /kb/154/Q154960/
 	
 	=============================================================================
 	
+
+{% endraw %}

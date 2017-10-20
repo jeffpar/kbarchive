@@ -6,6 +6,8 @@ permalink: /kb/138/Q138563/
 
 ## Q138563: FIX: Form Not Cleared from Memory When Grid Has the Focus
 
+{% raw %}
+
 	Article: Q138563
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -112,3 +114,5 @@ permalink: /kb/138/Q138563/
 	
 	=============================================================================
 	
+
+{% endraw %}

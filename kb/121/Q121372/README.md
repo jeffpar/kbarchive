@@ -6,6 +6,8 @@ permalink: /kb/121/Q121372/
 
 ## Q121372: How to Configure Non-Intelligent Digiboard PC/8 Adapters
 
+{% raw %}
+
 	Article: Q121372
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -190,3 +192,5 @@ permalink: /kb/121/Q121372/
 	
 	=============================================================================
 	
+
+{% endraw %}

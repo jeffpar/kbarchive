@@ -6,6 +6,8 @@ permalink: /kb/026/Q26637/
 
 ## Q26637: ASCII 0, 1, and 2 Control Character Problems in DATA Statement
 
+{% raw %}
+
 	Article: Q26637
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -186,3 +188,5 @@ permalink: /kb/026/Q26637/
 	   PRINT X; CHR$(X) ' Displays correctly.
 	   NEXT
 	   DATA 0,1,2,3
+
+{% endraw %}

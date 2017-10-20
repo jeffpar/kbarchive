@@ -6,6 +6,8 @@ permalink: /kb/222/Q222026/
 
 ## Q222026: MAPI_E_NOT_FOUND Error In Sample For Programming OutlooK
 
+{% raw %}
+
 	Article: Q222026
 	Product(s): Microsoft Press
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/222/Q222026/
 	
 	=============================================================================
 	
+
+{% endraw %}

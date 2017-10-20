@@ -6,6 +6,8 @@ permalink: /kb/128/Q128533/
 
 ## Q128533: Cannot Type Simplified Chinese with MS PingYing in Taiwan Locale
 
+{% raw %}
+
 	Article: Q128533
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -46,3 +48,5 @@ permalink: /kb/128/Q128533/
 	
 	=============================================================================
 	
+
+{% endraw %}

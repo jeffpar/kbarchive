@@ -6,6 +6,8 @@ permalink: /kb/174/Q174836/
 
 ## Q174836: FIX: Problems Shutting Down When Using the Inet Control
 
+{% raw %}
+
 	Article: Q174836
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -139,3 +141,5 @@ permalink: /kb/174/Q174836/
 	
 	=============================================================================
 	
+
+{% endraw %}

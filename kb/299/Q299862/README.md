@@ -6,6 +6,8 @@ permalink: /kb/299/Q299862/
 
 ## Q299862: Mixed Secure and Nonsecure Content Dialog Boxes
 
+{% raw %}
+
 	Article: Q299862
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -46,3 +48,5 @@ permalink: /kb/299/Q299862/
 	
 	=============================================================================
 	
+
+{% endraw %}

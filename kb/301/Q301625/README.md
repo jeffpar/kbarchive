@@ -6,6 +6,8 @@ permalink: /kb/301/Q301625/
 
 ## Q301625: MS01-044: Patch for SSI Privilege Elevation Vulnerability
 
+{% raw %}
+
 	Article: Q301625
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -276,3 +278,5 @@ permalink: /kb/301/Q301625/
 	
 	=============================================================================
 	
+
+{% endraw %}

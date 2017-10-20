@@ -6,6 +6,8 @@ permalink: /kb/161/Q161364/
 
 ## Q161364: SMS: Description of Remote Control Event Log Codes
 
+{% raw %}
+
 	Article: Q161364
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -64,3 +66,5 @@ permalink: /kb/161/Q161364/
 	
 	=============================================================================
 	
+
+{% endraw %}

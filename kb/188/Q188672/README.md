@@ -6,6 +6,8 @@ permalink: /kb/188/Q188672/
 
 ## Q188672: XADM: Upgrading to Exchange 5.5 Gives Error ID No: c1032695
 
+{% raw %}
+
 	Article: Q188672
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -103,3 +105,5 @@ permalink: /kb/188/Q188672/
 	
 	=============================================================================
 	
+
+{% endraw %}

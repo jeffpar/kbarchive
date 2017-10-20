@@ -6,6 +6,8 @@ permalink: /kb/031/Q31557/
 
 ## Q31557: Passing Array of TYPE or Fixed-Length Strings to SUBprogram
 
+{% raw %}
+
 	Article: Q31557
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -86,3 +88,5 @@ permalink: /kb/031/Q31557/
 	     PRINT AR(5).FIRST
 	     PRINT TEMP
 	   END SUB
+
+{% endraw %}

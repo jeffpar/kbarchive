@@ -6,6 +6,8 @@ permalink: /kb/230/Q230198/
 
 ## Q230198: SP4 or SP5 Re-Enables Daylight Savings Time Option
 
+{% raw %}
+
 	Article: Q230198
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -63,3 +65,5 @@ permalink: /kb/230/Q230198/
 	
 	=============================================================================
 	
+
+{% endraw %}

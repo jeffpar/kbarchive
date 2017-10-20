@@ -6,6 +6,8 @@ permalink: /kb/195/Q195480/
 
 ## Q195480: Close Combat Error Message: Inform DirectDraw That the Previous
 
+{% raw %}
+
 	Article: Q195480
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -164,3 +166,5 @@ permalink: /kb/195/Q195480/
 	
 	=============================================================================
 	
+
+{% endraw %}

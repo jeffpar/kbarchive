@@ -6,6 +6,8 @@ permalink: /kb/226/Q226113/
 
 ## Q226113: SMS: Client Does Not Use Existing Connection for CAP or DP
 
+{% raw %}
+
 	Article: Q226113
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -66,3 +68,5 @@ permalink: /kb/226/Q226113/
 	
 	=============================================================================
 	
+
+{% endraw %}

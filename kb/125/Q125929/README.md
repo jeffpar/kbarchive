@@ -6,6 +6,8 @@ permalink: /kb/125/Q125929/
 
 ## Q125929: Windows NT Setup Displayed Twice in Task List
 
+{% raw %}
+
 	Article: Q125929
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/125/Q125929/
 	
 	=============================================================================
 	
+
+{% endraw %}

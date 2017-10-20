@@ -6,6 +6,8 @@ permalink: /kb/222/Q222837/
 
 ## Q222837: PRB: Cannot Call ActiveX Scripting Engine Methods from Non-base
 
+{% raw %}
+
 	Article: Q222837
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -85,3 +87,5 @@ permalink: /kb/222/Q222837/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168909/
 
 ## Q168909: Query/Remove Support for CardBus Cards Hangs Computer
 
+{% raw %}
+
 	Article: Q168909
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -56,3 +58,5 @@ permalink: /kb/168/Q168909/
 	
 	=============================================================================
 	
+
+{% endraw %}

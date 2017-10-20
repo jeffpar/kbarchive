@@ -6,6 +6,8 @@ permalink: /kb/030/Q30580/
 
 ## Q30580: HOWTO: Declare an Array of Pointers to Functions
 
+{% raw %}
+
 	Article: Q30580
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,4.1,5.0,6.0
@@ -80,3 +82,5 @@ permalink: /kb/030/Q30580/
 	
 	=============================================================================
 	
+
+{% endraw %}

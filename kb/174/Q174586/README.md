@@ -6,6 +6,8 @@ permalink: /kb/174/Q174586/
 
 ## Q174586: SMS: RSERVICE /Query Loops When Sites Have &gt; 1,400 Clients
 
+{% raw %}
+
 	Article: Q174586
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -53,3 +55,5 @@ permalink: /kb/174/Q174586/
 	
 	=============================================================================
 	
+
+{% endraw %}

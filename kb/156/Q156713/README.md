@@ -6,6 +6,8 @@ permalink: /kb/156/Q156713/
 
 ## Q156713: XADM: KM Server Stops Intermittently on Alpha Servers
 
+{% raw %}
+
 	Article: Q156713
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/156/Q156713/
 	
 	=============================================================================
 	
+
+{% endraw %}

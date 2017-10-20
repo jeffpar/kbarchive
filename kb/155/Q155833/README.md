@@ -6,6 +6,8 @@ permalink: /kb/155/Q155833/
 
 ## Q155833: Wine Guide 2.0: Unable to Use ENTER Key in Notes Feature
 
+{% raw %}
+
 	Article: Q155833
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2.0
@@ -52,3 +54,5 @@ permalink: /kb/155/Q155833/
 	
 	=============================================================================
 	
+
+{% endraw %}

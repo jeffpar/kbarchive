@@ -6,6 +6,8 @@ permalink: /kb/126/Q126612/
 
 ## Q126612: OS/2 Inventory Does Not Write LastLoggedUser Entry into SMS.INI
 
+{% raw %}
+
 	Article: Q126612
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -42,3 +44,5 @@ permalink: /kb/126/Q126612/
 	
 	=============================================================================
 	
+
+{% endraw %}

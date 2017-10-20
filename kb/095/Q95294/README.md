@@ -6,6 +6,8 @@ permalink: /kb/095/Q95294/
 
 ## Q95294: Creating Modifiable Cursor in FoxPro with SQL SELECT
 
+{% raw %}
+
 	Article: Q95294
 	Product(s): Microsoft FoxPro
 	Version(s): 2.00 2.50 2.50a | 2.50 2.50a 3.0
@@ -65,3 +67,5 @@ permalink: /kb/095/Q95294/
 	
 	=============================================================================
 	
+
+{% endraw %}

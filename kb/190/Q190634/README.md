@@ -6,6 +6,8 @@ permalink: /kb/190/Q190634/
 
 ## Q190634: PRB: Activate Event Is Not Triggered with Child Form of MDI Form
 
+{% raw %}
+
 	Article: Q190634
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -131,3 +133,5 @@ permalink: /kb/190/Q190634/
 	
 	=============================================================================
 	
+
+{% endraw %}

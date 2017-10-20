@@ -6,6 +6,8 @@ permalink: /kb/161/Q161425/
 
 ## Q161425: WinNT 4.0 SP2 Multihomed Computer Connection Enhancement
 
+{% raw %}
+
 	Article: Q161425
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -164,3 +166,5 @@ permalink: /kb/161/Q161425/
 	
 	=============================================================================
 	
+
+{% endraw %}

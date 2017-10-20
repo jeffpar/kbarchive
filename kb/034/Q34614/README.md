@@ -6,6 +6,8 @@ permalink: /kb/034/Q34614/
 
 ## Q34614: INFO: Creating Lines with a Nonstandard Pattern
 
+{% raw %}
+
 	Article: Q34614
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -97,3 +99,5 @@ permalink: /kb/034/Q34614/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157130/
 
 ## Q157130: XCLN: Error Message From MS-DOS Client on Diskless Workstation
 
+{% raw %}
+
 	Article: Q157130
 	Product(s): Microsoft Exchange
 	Version(s): MS-DOS:4.0
@@ -50,3 +52,5 @@ permalink: /kb/157/Q157130/
 	
 	=============================================================================
 	
+
+{% endraw %}

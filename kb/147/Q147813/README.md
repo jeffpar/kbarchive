@@ -6,6 +6,8 @@ permalink: /kb/147/Q147813/
 
 ## Q147813: Message with Attachments Sent Over Internet Not Received
 
+{% raw %}
+
 	Article: Q147813
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5,95
@@ -58,3 +60,5 @@ permalink: /kb/147/Q147813/
 	
 	=============================================================================
 	
+
+{% endraw %}

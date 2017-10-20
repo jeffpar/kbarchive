@@ -6,6 +6,8 @@ permalink: /kb/189/Q189262/
 
 ## Q189262: FTP Passive Mode May Terminate Session
 
+{% raw %}
+
 	Article: Q189262
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,3.0,4.0
@@ -154,3 +156,5 @@ permalink: /kb/189/Q189262/
 	
 	=============================================================================
 	
+
+{% endraw %}

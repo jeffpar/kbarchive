@@ -6,6 +6,8 @@ permalink: /kb/125/Q125918/
 
 ## Q125918: PC DirSync: SRVMAIN.EXE Causes Trap 000D Error
 
+{% raw %}
+
 	Article: Q125918
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2a
@@ -54,3 +56,5 @@ permalink: /kb/125/Q125918/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184835/
 
 ## Q184835: Explorer on Windows 95 DFS Client May Hang
 
+{% raw %}
+
 	Article: Q184835
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT:4.0, Windows:95
@@ -74,3 +76,5 @@ permalink: /kb/184/Q184835/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192578/
 
 ## Q192578: HOWTO: Creating and Customizing a ProjectHook Class
 
+{% raw %}
+
 	Article: Q192578
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -127,3 +129,5 @@ permalink: /kb/192/Q192578/
 	
 	=============================================================================
 	
+
+{% endraw %}

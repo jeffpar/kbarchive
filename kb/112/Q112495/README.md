@@ -6,6 +6,8 @@ permalink: /kb/112/Q112495/
 
 ## Q112495: PRB: Macro Substitution Doesn't Work with M Prefix
 
+{% raw %}
+
 	Article: Q112495
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b; MS-DOS:2.0,2.5,2.5a,2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
@@ -75,3 +77,5 @@ permalink: /kb/112/Q112495/
 	
 	=============================================================================
 	
+
+{% endraw %}

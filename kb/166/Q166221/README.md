@@ -6,6 +6,8 @@ permalink: /kb/166/Q166221/
 
 ## Q166221: Can't Use Fully Qualified LU Name in Print Session Properties
 
+{% raw %}
+
 	Article: Q166221
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -65,3 +67,5 @@ permalink: /kb/166/Q166221/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/260/Q260866/
 
 ## Q260866: FS2000: Gauges Display Incorrect Data in Instant Replay Mode
 
+{% raw %}
+
 	Article: Q260866
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -45,3 +47,5 @@ permalink: /kb/260/Q260866/
 	
 	=============================================================================
 	
+
+{% endraw %}

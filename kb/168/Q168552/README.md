@@ -6,6 +6,8 @@ permalink: /kb/168/Q168552/
 
 ## Q168552: Allowing WinNT Setup to Detect and Configure 3COM 3C589D
 
+{% raw %}
+
 	Article: Q168552
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -82,3 +84,5 @@ permalink: /kb/168/Q168552/
 	
 	=============================================================================
 	
+
+{% endraw %}

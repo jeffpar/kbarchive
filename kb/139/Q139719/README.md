@@ -6,6 +6,8 @@ permalink: /kb/139/Q139719/
 
 ## Q139719: &quot;Science&quot; and &quot;60's USA&quot; Screen Savers Require 256 Colors
 
+{% raw %}
+
 	Article: Q139719
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/139/Q139719/
 	
 	=============================================================================
 	
+
+{% endraw %}

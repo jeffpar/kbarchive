@@ -6,6 +6,8 @@ permalink: /kb/101/Q101724/
 
 ## Q101724: Drive Mappings with NWShareHandles and RestoreDrives
 
+{% raw %}
+
 	Article: Q101724
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/101/Q101724/
 	
 	=============================================================================
 	
+
+{% endraw %}

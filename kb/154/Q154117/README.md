@@ -6,6 +6,8 @@ permalink: /kb/154/Q154117/
 
 ## Q154117: No Drive Letter When Using PC-Card Type III Slot
 
+{% raw %}
+
 	Article: Q154117
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -126,3 +128,5 @@ permalink: /kb/154/Q154117/
 	
 	=============================================================================
 	
+
+{% endraw %}

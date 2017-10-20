@@ -6,6 +6,8 @@ permalink: /kb/168/Q168278/
 
 ## Q168278: INFO: Cannot Access UserConnection Properties from Add-In
 
+{% raw %}
+
 	Article: Q168278
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -51,3 +53,5 @@ permalink: /kb/168/Q168278/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/238/Q238776/
 
 ## Q238776: XCLN: MAPIsend Tool Usage and Error Codes
 
+{% raw %}
+
 	Article: Q238776
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,97,98; winnt:4.0,5.0,5.5
@@ -128,3 +130,5 @@ permalink: /kb/238/Q238776/
 	
 	=============================================================================
 	
+
+{% endraw %}

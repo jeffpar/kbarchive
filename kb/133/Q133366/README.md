@@ -6,6 +6,8 @@ permalink: /kb/133/Q133366/
 
 ## Q133366: Julia Child: Clearing All Notes Disables Buttons
 
+{% raw %}
+
 	Article: Q133366
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/133/Q133366/
 	
 	=============================================================================
 	
+
+{% endraw %}

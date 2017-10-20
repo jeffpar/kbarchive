@@ -6,6 +6,8 @@ permalink: /kb/082/Q82712/
 
 ## Q82712: HIMEM.SYS /EISA Switch
 
+{% raw %}
+
 	Article: Q82712
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -87,3 +89,5 @@ permalink: /kb/082/Q82712/
 	
 	=============================================================================
 	
+
+{% endraw %}

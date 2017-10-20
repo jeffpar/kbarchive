@@ -6,6 +6,8 @@ permalink: /kb/145/Q145623/
 
 ## Q145623: Access Violation in LSASS.EXE On Primary Domain Controller
 
+{% raw %}
+
 	Article: Q145623
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -57,3 +59,5 @@ permalink: /kb/145/Q145623/
 	
 	=============================================================================
 	
+
+{% endraw %}

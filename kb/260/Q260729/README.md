@@ -6,6 +6,8 @@ permalink: /kb/260/Q260729/
 
 ## Q260729: HOW TO: Enable Schannel Logging
 
+{% raw %}
+
 	Article: Q260729
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -111,3 +113,5 @@ permalink: /kb/260/Q260729/
 	
 	=============================================================================
 	
+
+{% endraw %}

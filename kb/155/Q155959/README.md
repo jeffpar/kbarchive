@@ -6,6 +6,8 @@ permalink: /kb/155/Q155959/
 
 ## Q155959: WD97: Envelope Feed Method Displayed Incorrectly (HP DeskJet)
 
+{% raw %}
+
 	Article: Q155959
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -65,3 +67,5 @@ permalink: /kb/155/Q155959/
 	
 	=============================================================================
 	
+
+{% endraw %}

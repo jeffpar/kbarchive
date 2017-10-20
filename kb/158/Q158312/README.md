@@ -6,6 +6,8 @@ permalink: /kb/158/Q158312/
 
 ## Q158312: SMS: Hardware Inventory Stops Responding with Madge Token Ring
 
+{% raw %}
+
 	Article: Q158312
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -49,3 +51,5 @@ permalink: /kb/158/Q158312/
 	
 	=============================================================================
 	
+
+{% endraw %}

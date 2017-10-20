@@ -6,6 +6,8 @@ permalink: /kb/060/Q60878/
 
 ## Q60878: /y Parameter Added to MOUSE.SYS During Windows 3.00 Setup
 
+{% raw %}
+
 	Article: Q60878
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -54,3 +56,5 @@ permalink: /kb/060/Q60878/
 	
 	=============================================================================
 	
+
+{% endraw %}

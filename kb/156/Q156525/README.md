@@ -6,6 +6,8 @@ permalink: /kb/156/Q156525/
 
 ## Q156525: Sched+ User Gets NDR from Attendee not Listed in Appointment
 
+{% raw %}
+
 	Article: Q156525
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:4.0,5.0,8.0,8.5,9.0
@@ -67,3 +69,5 @@ permalink: /kb/156/Q156525/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185768/
 
 ## Q185768: Baseball 3D Err Msg: You Do Not Have a 3D Display Adapter
 
+{% raw %}
+
 	Article: Q185768
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -81,3 +83,5 @@ permalink: /kb/185/Q185768/
 	
 	=============================================================================
 	
+
+{% endraw %}

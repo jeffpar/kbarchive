@@ -6,6 +6,8 @@ permalink: /kb/237/Q237687/
 
 ## Q237687: Obtaining the ITSEC Evaluated Y2K Update Patch for WinNT 4.0 SP3
 
+{% raw %}
+
 	Article: Q237687
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/237/Q237687/
 	
 	=============================================================================
 	
+
+{% endraw %}

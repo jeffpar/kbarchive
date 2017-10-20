@@ -6,6 +6,8 @@ permalink: /kb/063/Q63272/
 
 ## Q63272: Single-Line DEF FN Can Cause Program to Rerun ON ERROR
 
+{% raw %}
+
 	Article: Q63272
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -72,3 +74,5 @@ permalink: /kb/063/Q63272/
 	This program will execute correctly. The FN function will return a 0
 	and the program will resume on the line after the PRINT fnx(0)
 	statement.
+
+{% endraw %}

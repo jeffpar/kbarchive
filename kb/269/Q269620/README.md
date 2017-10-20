@@ -6,6 +6,8 @@ permalink: /kb/269/Q269620/
 
 ## Q269620: PRB: SP_SetAppRole in RDO Causes Error Message
 
+{% raw %}
+
 	Article: Q269620
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -58,3 +60,5 @@ permalink: /kb/269/Q269620/
 	
 	=============================================================================
 	
+
+{% endraw %}

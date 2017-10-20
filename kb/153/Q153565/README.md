@@ -6,6 +6,8 @@ permalink: /kb/153/Q153565/
 
 ## Q153565: Sender Manager Only Accepts UPPERCASE Site Server Names
 
+{% raw %}
+
 	Article: Q153565
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -53,3 +55,5 @@ permalink: /kb/153/Q153565/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246392/
 
 ## Q246392: How to Uninstall Microsoft Metadirectory Services
 
+{% raw %}
+
 	Article: Q246392
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -61,3 +63,5 @@ permalink: /kb/246/Q246392/
 	
 	=============================================================================
 	
+
+{% endraw %}

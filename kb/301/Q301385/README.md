@@ -6,6 +6,8 @@ permalink: /kb/301/Q301385/
 
 ## Q301385: SMS: The Offermgr.log File Entry May Be  Misleading
 
+{% raw %}
+
 	Article: Q301385
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -77,3 +79,5 @@ permalink: /kb/301/Q301385/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/133/Q133250/
 
 ## Q133250: Unable to Connect to SQL Server If Default Protocol Is Changed
 
+{% raw %}
+
 	Article: Q133250
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2,4.2x,6.0,6.5
@@ -71,3 +73,5 @@ permalink: /kb/133/Q133250/
 	
 	=============================================================================
 	
+
+{% endraw %}

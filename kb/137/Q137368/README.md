@@ -6,6 +6,8 @@ permalink: /kb/137/Q137368/
 
 ## Q137368: How to Disable NetBIOS Name Resolution on DNS
 
+{% raw %}
+
 	Article: Q137368
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -67,3 +69,5 @@ permalink: /kb/137/Q137368/
 	
 	=============================================================================
 	
+
+{% endraw %}

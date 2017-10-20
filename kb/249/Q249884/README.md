@@ -6,6 +6,8 @@ permalink: /kb/249/Q249884/
 
 ## Q249884: XFOR: Connector for Lotus Notes Dirsync Truncates Last Name
 
+{% raw %}
+
 	Article: Q249884
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -74,3 +76,5 @@ permalink: /kb/249/Q249884/
 	
 	=============================================================================
 	
+
+{% endraw %}

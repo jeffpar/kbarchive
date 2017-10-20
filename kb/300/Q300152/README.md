@@ -6,6 +6,8 @@ permalink: /kb/300/Q300152/
 
 ## Q300152: Troubleshooting Passport Using the Microsoft Windows NT Event Mo
 
+{% raw %}
+
 	Article: Q300152
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -51,3 +53,5 @@ permalink: /kb/300/Q300152/
 	
 	=============================================================================
 	
+
+{% endraw %}

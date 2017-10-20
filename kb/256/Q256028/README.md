@@ -6,6 +6,8 @@ permalink: /kb/256/Q256028/
 
 ## Q256028: FS2000: Video Frame Rate Is Slow and Performance Is Poor
 
+{% raw %}
+
 	Article: Q256028
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -63,3 +65,5 @@ permalink: /kb/256/Q256028/
 	
 	=============================================================================
 	
+
+{% endraw %}

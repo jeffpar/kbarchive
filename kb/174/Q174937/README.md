@@ -6,6 +6,8 @@ permalink: /kb/174/Q174937/
 
 ## Q174937: Compaq Insight Agent Causes Tape Drive to Stop Responding
 
+{% raw %}
+
 	Article: Q174937
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -108,3 +110,5 @@ permalink: /kb/174/Q174937/
 	
 	=============================================================================
 	
+
+{% endraw %}

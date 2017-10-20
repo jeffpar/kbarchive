@@ -6,6 +6,8 @@ permalink: /kb/216/Q216664/
 
 ## Q216664: HOWTO: Prevent the ENTER Key From Firing in TreevView Control
 
+{% raw %}
+
 	Article: Q216664
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -173,3 +175,5 @@ permalink: /kb/216/Q216664/
 	
 	=============================================================================
 	
+
+{% endraw %}

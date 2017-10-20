@@ -6,6 +6,8 @@ permalink: /kb/043/Q43243/
 
 ## Q43243: Mac Srv: How to Modify a User Group
 
+{% raw %}
+
 	Article: Q43243
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -62,3 +64,5 @@ permalink: /kb/043/Q43243/
 	
 	=============================================================================
 	
+
+{% endraw %}

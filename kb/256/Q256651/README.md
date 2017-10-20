@@ -6,6 +6,8 @@ permalink: /kb/256/Q256651/
 
 ## Q256651: SMS: NDS Logon Server Mgr. Reports Error Removing Logon Scripts
 
+{% raw %}
+
 	Article: Q256651
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -45,3 +47,5 @@ permalink: /kb/256/Q256651/
 	
 	=============================================================================
 	
+
+{% endraw %}

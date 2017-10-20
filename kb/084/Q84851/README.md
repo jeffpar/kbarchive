@@ -6,6 +6,8 @@ permalink: /kb/084/Q84851/
 
 ## Q84851: Windows 3.1 Not Compatible with TenTimes Partitioning Method
 
+{% raw %}
+
 	Article: Q84851
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/084/Q84851/
 	
 	=============================================================================
 	
+
+{% endraw %}

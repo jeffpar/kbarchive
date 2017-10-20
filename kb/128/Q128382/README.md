@@ -6,6 +6,8 @@ permalink: /kb/128/Q128382/
 
 ## Q128382: UT2: Access Upsizing Tools Information Available
 
+{% raw %}
+
 	Article: Q128382
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -63,3 +65,5 @@ permalink: /kb/128/Q128382/
 	
 	=============================================================================
 	
+
+{% endraw %}

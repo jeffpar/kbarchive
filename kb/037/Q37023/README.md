@@ -6,6 +6,8 @@ permalink: /kb/037/Q37023/
 
 ## Q37023: Link Error No Stack Segment after Using Windows SDK Install
 
+{% raw %}
+
 	Article: Q37023
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -28,3 +30,5 @@ permalink: /kb/037/Q37023/
 	have its same name with a "C" appended. For instance, SLIBCE.LIB will
 	be copied to SLIBCEC.LIB. When you link with this library, make sure
 	to use the /NOD option and specify the library by name.
+
+{% endraw %}

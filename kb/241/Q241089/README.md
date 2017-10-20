@@ -6,6 +6,8 @@ permalink: /kb/241/Q241089/
 
 ## Q241089: How to Save Internet Sites to Your Favorites Folder
 
+{% raw %}
+
 	Article: Q241089
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6,4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,5,5.01
@@ -49,3 +51,5 @@ permalink: /kb/241/Q241089/
 	
 	=============================================================================
 	
+
+{% endraw %}

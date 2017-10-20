@@ -6,6 +6,8 @@ permalink: /kb/190/Q190206/
 
 ## Q190206: Unattended NT Option Pack Installation Ignores Some Parameters
 
+{% raw %}
+
 	Article: Q190206
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/190/Q190206/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126096/
 
 ## Q126096: Guest Account Deletes System Fonts
 
+{% raw %}
+
 	Article: Q126096
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50
@@ -51,3 +53,5 @@ permalink: /kb/126/Q126096/
 	
 	=============================================================================
 	
+
+{% endraw %}

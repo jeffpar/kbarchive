@@ -6,6 +6,8 @@ permalink: /kb/180/Q180047/
 
 ## Q180047: XCLN: Post Note Appears Instead of Compose Note
 
+{% raw %}
+
 	Article: Q180047
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -50,3 +52,5 @@ permalink: /kb/180/Q180047/
 	
 	=============================================================================
 	
+
+{% endraw %}

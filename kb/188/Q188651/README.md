@@ -6,6 +6,8 @@ permalink: /kb/188/Q188651/
 
 ## Q188651: XADM: Public Folder Deletion Causes One Replication Message
 
+{% raw %}
+
 	Article: Q188651
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -68,3 +70,5 @@ permalink: /kb/188/Q188651/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/045/Q45763/
 
 ## Q45763: Typographical Error in ALMUL.ASM of C Library Source
 
+{% raw %}
+
 	Article: Q45763
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -35,3 +37,5 @@ permalink: /kb/045/Q45763/
 	
 	Correcting the error in ALMUL.ASM, as noted above, corrects the
 	problem.
+
+{% endraw %}

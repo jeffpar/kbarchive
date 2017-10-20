@@ -6,6 +6,8 @@ permalink: /kb/115/Q115146/
 
 ## Q115146: WD97: &quot;Too Many Data Fields&quot; Managing Mail Merge in Source View
 
+{% raw %}
+
 	Article: Q115146
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -93,3 +95,5 @@ permalink: /kb/115/Q115146/
 	
 	=============================================================================
 	
+
+{% endraw %}

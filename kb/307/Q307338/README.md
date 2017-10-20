@@ -6,6 +6,8 @@ permalink: /kb/307/Q307338/
 
 ## Q307338: Stop 0xA Error in nwlnkspx!SpxConnConnectFindRouteComplete()
 
+{% raw %}
+
 	Article: Q307338
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6
@@ -88,3 +90,5 @@ permalink: /kb/307/Q307338/
 	
 	=============================================================================
 	
+
+{% endraw %}

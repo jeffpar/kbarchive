@@ -6,6 +6,8 @@ permalink: /kb/113/Q113197/
 
 ## Q113197: GP Fault in Chip's Challenge When Playing at Level 104
 
+{% raw %}
+
 	Article: Q113197
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -49,3 +51,5 @@ permalink: /kb/113/Q113197/
 	
 	=============================================================================
 	
+
+{% endraw %}

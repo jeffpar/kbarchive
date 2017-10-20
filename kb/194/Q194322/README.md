@@ -6,6 +6,8 @@ permalink: /kb/194/Q194322/
 
 ## Q194322: T/R NIC May Fail Windows Hardware Quality Lab (WHQL) Test
 
+{% raw %}
+
 	Article: Q194322
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/194/Q194322/
 	
 	=============================================================================
 	
+
+{% endraw %}

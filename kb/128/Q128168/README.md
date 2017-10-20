@@ -6,6 +6,8 @@ permalink: /kb/128/Q128168/
 
 ## Q128168: Configuring Windows 3.x Clients to use TCP/IP with SNA Server
 
+{% raw %}
+
 	Article: Q128168
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,2.11 SP1,3.0,4.0
@@ -77,3 +79,5 @@ permalink: /kb/128/Q128168/
 	
 	=============================================================================
 	
+
+{% endraw %}

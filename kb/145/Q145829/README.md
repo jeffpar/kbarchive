@@ -6,6 +6,8 @@ permalink: /kb/145/Q145829/
 
 ## Q145829: Print Time Is Different From Printer Available Time
 
+{% raw %}
+
 	Article: Q145829
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -68,3 +70,5 @@ permalink: /kb/145/Q145829/
 	
 	=============================================================================
 	
+
+{% endraw %}

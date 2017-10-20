@@ -6,6 +6,8 @@ permalink: /kb/168/Q168962/
 
 ## Q168962: Number of Copies Option Is Unavailable When Printing
 
+{% raw %}
+
 	Article: Q168962
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 95
@@ -61,3 +63,5 @@ permalink: /kb/168/Q168962/
 	
 	=============================================================================
 	
+
+{% endraw %}

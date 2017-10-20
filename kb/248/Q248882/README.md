@@ -6,6 +6,8 @@ permalink: /kb/248/Q248882/
 
 ## Q248882: HOWTO: Print a Range of Pages with the CommonDialog Control
 
+{% raw %}
+
 	Article: Q248882
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -191,3 +193,5 @@ permalink: /kb/248/Q248882/
 	
 	=============================================================================
 	
+
+{% endraw %}

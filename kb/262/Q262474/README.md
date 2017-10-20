@@ -6,6 +6,8 @@ permalink: /kb/262/Q262474/
 
 ## Q262474: Kerberos Security with SNA Server/Host Integration Server 2000
 
+{% raw %}
+
 	Article: Q262474
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2000,3.0,3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3; :
@@ -66,3 +68,5 @@ permalink: /kb/262/Q262474/
 	
 	=============================================================================
 	
+
+{% endraw %}

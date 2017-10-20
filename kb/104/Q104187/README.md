@@ -6,6 +6,8 @@ permalink: /kb/104/Q104187/
 
 ## Q104187: Previous and Next Buttons Lose Mouse Clicks
 
+{% raw %}
+
 	Article: Q104187
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -45,3 +47,5 @@ permalink: /kb/104/Q104187/
 	
 	=============================================================================
 	
+
+{% endraw %}

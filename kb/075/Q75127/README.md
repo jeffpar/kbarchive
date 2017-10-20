@@ -6,6 +6,8 @@ permalink: /kb/075/Q75127/
 
 ## Q75127: How to Modify the Command Prompt within MS-DOS Shell
 
+{% raw %}
+
 	Article: Q75127
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -61,3 +63,5 @@ permalink: /kb/075/Q75127/
 	
 	=============================================================================
 	
+
+{% endraw %}

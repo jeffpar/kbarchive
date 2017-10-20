@@ -6,6 +6,8 @@ permalink: /kb/170/Q170164/
 
 ## Q170164: INFO: VB 6.0 Readme Part 1: Important Issues - Read First!
 
+{% raw %}
+
 	Article: Q170164
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -203,3 +205,5 @@ permalink: /kb/170/Q170164/
 	
 	=============================================================================
 	
+
+{% endraw %}

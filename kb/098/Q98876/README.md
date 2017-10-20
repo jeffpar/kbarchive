@@ -6,6 +6,8 @@ permalink: /kb/098/Q98876/
 
 ## Q98876: Mac Gty: Limit of Gateway Recipients
 
+{% raw %}
+
 	Article: Q98876
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -42,3 +44,5 @@ permalink: /kb/098/Q98876/
 	
 	=============================================================================
 	
+
+{% endraw %}

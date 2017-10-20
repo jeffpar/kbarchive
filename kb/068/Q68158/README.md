@@ -6,6 +6,8 @@ permalink: /kb/068/Q68158/
 
 ## Q68158: BASIC 7.10 LINK &quot;L4051 Cannot Find Library&quot; If Using 7.00 .LIB
 
+{% raw %}
+
 	Article: Q68158
 	Product(s): See article
 	Version(s): 7.10   | 7.10
@@ -68,3 +70,5 @@ permalink: /kb/068/Q68158/
 	
 	To correct the problem, recompile, relink, and rebuild the library
 	MYLIB using BASIC PDS version 7.10.
+
+{% endraw %}

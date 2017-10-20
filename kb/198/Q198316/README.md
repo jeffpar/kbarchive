@@ -6,6 +6,8 @@ permalink: /kb/198/Q198316/
 
 ## Q198316: WD97: Some Underlines Lost After Opening Word 6.0/95 or RTF File
 
+{% raw %}
+
 	Article: Q198316
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -96,3 +98,5 @@ permalink: /kb/198/Q198316/
 	
 	=============================================================================
 	
+
+{% endraw %}

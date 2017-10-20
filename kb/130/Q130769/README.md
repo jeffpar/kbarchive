@@ -6,6 +6,8 @@ permalink: /kb/130/Q130769/
 
 ## Q130769: FIX: Negative Value Passed to mktime() Generates Wrong Date
 
+{% raw %}
+
 	Article: Q130769
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1
@@ -80,3 +82,5 @@ permalink: /kb/130/Q130769/
 	
 	=============================================================================
 	
+
+{% endraw %}

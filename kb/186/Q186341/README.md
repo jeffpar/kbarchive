@@ -6,6 +6,8 @@ permalink: /kb/186/Q186341/
 
 ## Q186341: Superscoping vs. Supernetting
 
+{% raw %}
+
 	Article: Q186341
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -55,3 +57,5 @@ permalink: /kb/186/Q186341/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171992/
 
 ## Q171992: Creating Connection Gets Error Even If Link Service Selected
 
+{% raw %}
+
 	Article: Q171992
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -59,3 +61,5 @@ permalink: /kb/171/Q171992/
 	
 	=============================================================================
 	
+
+{% endraw %}

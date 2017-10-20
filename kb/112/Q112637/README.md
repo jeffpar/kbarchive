@@ -6,6 +6,8 @@ permalink: /kb/112/Q112637/
 
 ## Q112637: STOP Message on MIPS Computer Caused by NET Command
 
+{% raw %}
+
 	Article: Q112637
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -47,3 +49,5 @@ permalink: /kb/112/Q112637/
 	
 	=============================================================================
 	
+
+{% endraw %}

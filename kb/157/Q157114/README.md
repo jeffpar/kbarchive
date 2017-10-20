@@ -6,6 +6,8 @@ permalink: /kb/157/Q157114/
 
 ## Q157114: &quot;Access Denied&quot; Attempting to Run File on LM/X Server
 
+{% raw %}
+
 	Article: Q157114
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -127,3 +129,5 @@ permalink: /kb/157/Q157114/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241805/
 
 ## Q241805: Combined FTP and Domain Restriction Security Patch for IIS 4.0
 
+{% raw %}
+
 	Article: Q241805
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -145,3 +147,5 @@ permalink: /kb/241/Q241805/
 	
 	=============================================================================
 	
+
+{% endraw %}

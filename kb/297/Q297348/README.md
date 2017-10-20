@@ -6,6 +6,8 @@ permalink: /kb/297/Q297348/
 
 ## Q297348: HOWTO: Display A Particular Radius with MapPoint
 
+{% raw %}
+
 	Article: Q297348
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -123,3 +125,5 @@ permalink: /kb/297/Q297348/
 	
 	=============================================================================
 	
+
+{% endraw %}

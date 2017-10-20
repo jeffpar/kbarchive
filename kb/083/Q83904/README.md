@@ -6,6 +6,8 @@ permalink: /kb/083/Q83904/
 
 ## Q83904: Emerson 286 or 386sx Hangs During Windows Startup
 
+{% raw %}
+
 	Article: Q83904
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.1
@@ -51,3 +53,5 @@ permalink: /kb/083/Q83904/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99663/
 
 ## Q99663: PC Forms: Installing E-Forms Designer on Remote Clients
 
+{% raw %}
+
 	Article: Q99663
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -85,3 +87,5 @@ permalink: /kb/099/Q99663/
 	
 	=============================================================================
 	
+
+{% endraw %}

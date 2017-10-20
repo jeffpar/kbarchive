@@ -6,6 +6,8 @@ permalink: /kb/176/Q176161/
 
 ## Q176161: XFOR: Exchange 5.5 Can Disallow Auto Forwarding to the Internet
 
+{% raw %}
+
 	Article: Q176161
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -55,3 +57,5 @@ permalink: /kb/176/Q176161/
 	
 	=============================================================================
 	
+
+{% endraw %}

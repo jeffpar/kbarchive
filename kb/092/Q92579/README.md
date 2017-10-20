@@ -6,6 +6,8 @@ permalink: /kb/092/Q92579/
 
 ## Q92579: WFWG: No Error Message If Save or Open Fails with ClipBook
 
+{% raw %}
+
 	Article: Q92579
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -42,3 +44,5 @@ permalink: /kb/092/Q92579/
 	
 	=============================================================================
 	
+
+{% endraw %}

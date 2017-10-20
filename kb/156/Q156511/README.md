@@ -6,6 +6,8 @@ permalink: /kb/156/Q156511/
 
 ## Q156511: PRB: WhatsThisButton Disappears when Form Designer Gets Focus
 
+{% raw %}
+
 	Article: Q156511
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -76,3 +78,5 @@ permalink: /kb/156/Q156511/
 	
 	=============================================================================
 	
+
+{% endraw %}

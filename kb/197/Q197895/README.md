@@ -6,6 +6,8 @@ permalink: /kb/197/Q197895/
 
 ## Q197895: Application Starting Point in Web Admin Cannot be Modified
 
+{% raw %}
+
 	Article: Q197895
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -47,3 +49,5 @@ permalink: /kb/197/Q197895/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152730/
 
 ## Q152730: XGEN: How to Make Disks From the Select CD
 
+{% raw %}
+
 	Article: Q152730
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -180,3 +182,5 @@ permalink: /kb/152/Q152730/
 	
 	=============================================================================
 	
+
+{% endraw %}

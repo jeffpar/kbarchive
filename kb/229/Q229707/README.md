@@ -6,6 +6,8 @@ permalink: /kb/229/Q229707/
 
 ## Q229707: Dynamic HTML in Action, 2nd Edition Comments and Corrections
 
+{% raw %}
+
 	Article: Q229707
 	Product(s): Microsoft Press
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/229/Q229707/
 	
 	=============================================================================
 	
+
+{% endraw %}

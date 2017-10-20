@@ -6,6 +6,8 @@ permalink: /kb/173/Q173349/
 
 ## Q173349: FIX: OLEDropMode=0 Doesn't Stop DragDrop of File to Rich TextBox
 
+{% raw %}
+
 	Article: Q173349
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -128,3 +130,5 @@ permalink: /kb/173/Q173349/
 	
 	=============================================================================
 	
+
+{% endraw %}

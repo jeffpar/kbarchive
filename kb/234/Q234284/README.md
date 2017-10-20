@@ -6,6 +6,8 @@ permalink: /kb/234/Q234284/
 
 ## Q234284: &quot;Path not found&quot; Error Occurs When Saving Component Library
 
+{% raw %}
+
 	Article: Q234284
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0SP2
@@ -66,3 +68,5 @@ permalink: /kb/234/Q234284/
 	
 	=============================================================================
 	
+
+{% endraw %}

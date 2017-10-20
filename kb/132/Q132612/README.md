@@ -6,6 +6,8 @@ permalink: /kb/132/Q132612/
 
 ## Q132612: Arcada Backup Hangs in MS-DOS Mode
 
+{% raw %}
+
 	Article: Q132612
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/132/Q132612/
 	
 	=============================================================================
 	
+
+{% endraw %}

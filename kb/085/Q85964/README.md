@@ -6,6 +6,8 @@ permalink: /kb/085/Q85964/
 
 ## Q85964: Windows 3.1 Paintbrush Loses Part of Display
 
+{% raw %}
+
 	Article: Q85964
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -41,3 +43,5 @@ permalink: /kb/085/Q85964/
 	
 	=============================================================================
 	
+
+{% endraw %}

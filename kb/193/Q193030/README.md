@@ -6,6 +6,8 @@ permalink: /kb/193/Q193030/
 
 ## Q193030: SMS:Logged on User Name Not Reported on OS/2 Clients
 
+{% raw %}
+
 	Article: Q193030
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -95,3 +97,5 @@ permalink: /kb/193/Q193030/
 	
 	=============================================================================
 	
+
+{% endraw %}

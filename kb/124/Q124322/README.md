@@ -6,6 +6,8 @@ permalink: /kb/124/Q124322/
 
 ## Q124322: BUG: SQLNumResultCols on a Prepared SELECT with ORDER in Name
 
+{% raw %}
+
 	Article: Q124322
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -91,3 +93,5 @@ permalink: /kb/124/Q124322/
 	
 	=============================================================================
 	
+
+{% endraw %}

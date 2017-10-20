@@ -6,6 +6,8 @@ permalink: /kb/169/Q169504/
 
 ## Q169504: TrueType Fonts Displayed Incorrectly
 
+{% raw %}
+
 	Article: Q169504
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/169/Q169504/
 	
 	=============================================================================
 	
+
+{% endraw %}

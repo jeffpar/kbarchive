@@ -6,6 +6,8 @@ permalink: /kb/190/Q190076/
 
 ## Q190076: HOWTO: Avoid GPF When Using a VB6 DLL with a VB5 UserControl
 
+{% raw %}
+
 	Article: Q190076
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -108,3 +110,5 @@ permalink: /kb/190/Q190076/
 	
 	=============================================================================
 	
+
+{% endraw %}

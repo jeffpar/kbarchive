@@ -6,6 +6,8 @@ permalink: /kb/160/Q160153/
 
 ## Q160153: XGEN: Directory Import Generates Unusable Random Password
 
+{% raw %}
+
 	Article: Q160153
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/160/Q160153/
 	
 	=============================================================================
 	
+
+{% endraw %}

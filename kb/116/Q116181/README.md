@@ -6,6 +6,8 @@ permalink: /kb/116/Q116181/
 
 ## Q116181: FIX: ClassWizard Option Isn't Disabled for Non-MFC Projects
 
+{% raw %}
+
 	Article: Q116181
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:; :1.0
@@ -51,3 +53,5 @@ permalink: /kb/116/Q116181/
 	
 	=============================================================================
 	
+
+{% endraw %}

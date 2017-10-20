@@ -6,6 +6,8 @@ permalink: /kb/268/Q268370/
 
 ## Q268370: Windows NT Server &quot;0x00000023&quot; Error with Norton AntiVirus
 
+{% raw %}
+
 	Article: Q268370
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/268/Q268370/
 	
 	=============================================================================
 	
+
+{% endraw %}

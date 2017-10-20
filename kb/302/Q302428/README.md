@@ -6,6 +6,8 @@ permalink: /kb/302/Q302428/
 
 ## Q302428: Uninstalling MSN Explorer 6.0 After Upgrade From Windows 9x to W
 
+{% raw %}
+
 	Article: Q302428
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -65,3 +67,5 @@ permalink: /kb/302/Q302428/
 	
 	=============================================================================
 	
+
+{% endraw %}

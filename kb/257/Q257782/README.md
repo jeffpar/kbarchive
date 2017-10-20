@@ -6,6 +6,8 @@ permalink: /kb/257/Q257782/
 
 ## Q257782: FIX: VB IDE Crashes Changing Control's Name in Properties Window
 
+{% raw %}
+
 	Article: Q257782
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -60,3 +62,5 @@ permalink: /kb/257/Q257782/
 	
 	=============================================================================
 	
+
+{% endraw %}

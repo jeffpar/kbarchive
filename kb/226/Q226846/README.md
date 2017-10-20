@@ -6,6 +6,8 @@ permalink: /kb/226/Q226846/
 
 ## Q226846: SMS: Domain Account for Software Metering Is Converted to Local
 
+{% raw %}
+
 	Article: Q226846
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -69,3 +71,5 @@ permalink: /kb/226/Q226846/
 	
 	=============================================================================
 	
+
+{% endraw %}

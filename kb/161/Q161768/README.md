@@ -6,6 +6,8 @@ permalink: /kb/161/Q161768/
 
 ## Q161768: SNALINK.EXE - Cancel Timeout in &#92;driver&#92;DLC
 
+{% raw %}
+
 	Article: Q161768
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0,4.0; winnt:3.5,3.51,4.0
@@ -90,3 +92,5 @@ permalink: /kb/161/Q161768/
 	
 	=============================================================================
 	
+
+{% endraw %}

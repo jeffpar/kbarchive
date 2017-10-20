@@ -6,6 +6,8 @@ permalink: /kb/164/Q164076/
 
 ## Q164076: List of Bugs Fixed in SNA Server 2.11 SP2
 
+{% raw %}
+
 	Article: Q164076
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP2
@@ -203,3 +205,5 @@ permalink: /kb/164/Q164076/
 	
 	=============================================================================
 	
+
+{% endraw %}

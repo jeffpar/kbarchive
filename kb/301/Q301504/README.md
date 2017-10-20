@@ -6,6 +6,8 @@ permalink: /kb/301/Q301504/
 
 ## Q301504: Printer Problems After You Apply SP6a
 
+{% raw %}
+
 	Article: Q301504
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6
@@ -87,3 +89,5 @@ permalink: /kb/301/Q301504/
 	
 	=============================================================================
 	
+
+{% endraw %}

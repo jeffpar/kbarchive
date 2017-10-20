@@ -6,6 +6,8 @@ permalink: /kb/143/Q143249/
 
 ## Q143249: PRB: ORDER BY Field in Result Set Without Being in Field List
 
+{% raw %}
+
 	Article: Q143249
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -58,3 +60,5 @@ permalink: /kb/143/Q143249/
 	
 	=============================================================================
 	
+
+{% endraw %}

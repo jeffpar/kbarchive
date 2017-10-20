@@ -6,6 +6,8 @@ permalink: /kb/182/Q182502/
 
 ## Q182502: XADM: Changes Made to Performance Monitor in Exchange 5.5
 
+{% raw %}
+
 	Article: Q182502
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -184,3 +186,5 @@ permalink: /kb/182/Q182502/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194861/
 
 ## Q194861: FIX: &quot;AtlReportError: no overloaded function takes X parameters&quot;
 
+{% raw %}
+
 	Article: Q194861
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -157,3 +159,5 @@ permalink: /kb/194/Q194861/
 	
 	=============================================================================
 	
+
+{% endraw %}

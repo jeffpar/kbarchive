@@ -6,6 +6,8 @@ permalink: /kb/134/Q134702/
 
 ## Q134702: PRB: &quot;VFP300.ESL: Error Code=0&quot; Error Occurs When Running .EXE
 
+{% raw %}
+
 	Article: Q134702
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -96,3 +98,5 @@ permalink: /kb/134/Q134702/
 	
 	=============================================================================
 	
+
+{% endraw %}

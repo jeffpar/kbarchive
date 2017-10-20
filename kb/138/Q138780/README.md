@@ -6,6 +6,8 @@ permalink: /kb/138/Q138780/
 
 ## Q138780: How to Use the Name Argument of an @...GET in Visual FoxPro
 
+{% raw %}
+
 	Article: Q138780
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -133,3 +135,5 @@ permalink: /kb/138/Q138780/
 	
 	=============================================================================
 	
+
+{% endraw %}

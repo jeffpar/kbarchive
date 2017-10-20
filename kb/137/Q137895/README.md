@@ -6,6 +6,8 @@ permalink: /kb/137/Q137895/
 
 ## Q137895: Add Components Selects All Components by Default
 
+{% raw %}
+
 	Article: Q137895
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -44,3 +46,5 @@ permalink: /kb/137/Q137895/
 	
 	=============================================================================
 	
+
+{% endraw %}

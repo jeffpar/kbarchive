@@ -6,6 +6,8 @@ permalink: /kb/268/Q268141/
 
 ## Q268141: XADM: Information Store Stops Resp. Retrieving S/MIME Message
 
+{% raw %}
+
 	Article: Q268141
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -101,3 +103,5 @@ permalink: /kb/268/Q268141/
 	
 	=============================================================================
 	
+
+{% endraw %}

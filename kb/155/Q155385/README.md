@@ -6,6 +6,8 @@ permalink: /kb/155/Q155385/
 
 ## Q155385: PRB: DEBUGOUT and ASSERT Commands Do Not Function in .exe
 
+{% raw %}
+
 	Article: Q155385
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -49,3 +51,5 @@ permalink: /kb/155/Q155385/
 	
 	=============================================================================
 	
+
+{% endraw %}

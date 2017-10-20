@@ -6,6 +6,8 @@ permalink: /kb/184/Q184595/
 
 ## Q184595: Err Msg: Error Submitting Fax to the Print Server...
 
+{% raw %}
+
 	Article: Q184595
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.0,4.0a
@@ -57,3 +59,5 @@ permalink: /kb/184/Q184595/
 	
 	=============================================================================
 	
+
+{% endraw %}

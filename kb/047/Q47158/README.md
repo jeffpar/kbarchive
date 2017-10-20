@@ -6,6 +6,8 @@ permalink: /kb/047/Q47158/
 
 ## Q47158: Warning C4051: Data Conversion from Constant to float
 
+{% raw %}
+
 	Article: Q47158
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -40,3 +42,5 @@ permalink: /kb/047/Q47158/
 	2. Type cast the constant to a float as follows:
 	
 	      float num = (float) 3.4;
+
+{% endraw %}

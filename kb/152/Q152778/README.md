@@ -6,6 +6,8 @@ permalink: /kb/152/Q152778/
 
 ## Q152778: Example Shows How to Pass Objects to FLL
 
+{% raw %}
+
 	Article: Q152778
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b
@@ -87,3 +89,5 @@ permalink: /kb/152/Q152778/
 	
 	=============================================================================
 	
+
+{% endraw %}

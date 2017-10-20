@@ -6,6 +6,8 @@ permalink: /kb/038/Q38498/
 
 ## Q38498: &quot;Expression Too Complex&quot; Error when Compiling with BC.EXE
 
+{% raw %}
+
 	Article: Q38498
 	Product(s): See article
 	Version(s): 4.50
@@ -51,3 +53,5 @@ permalink: /kb/038/Q38498/
 	SUB cd (cur(), c(), b(), sn, l())
 	  mp = cur(l(sn), 0, 1, c(0, sn)) - 1
 	END SUB
+
+{% endraw %}

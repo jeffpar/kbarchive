@@ -6,6 +6,8 @@ permalink: /kb/272/Q272206/
 
 ## Q272206: Startup Access Violation and Event ID 100 on PDC That Runs IIS
 
+{% raw %}
+
 	Article: Q272206
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0,4.0
@@ -91,3 +93,5 @@ permalink: /kb/272/Q272206/
 	
 	=============================================================================
 	
+
+{% endraw %}

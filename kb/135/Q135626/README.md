@@ -6,6 +6,8 @@ permalink: /kb/135/Q135626/
 
 ## Q135626: HOWTO: How to Select Field on Entry on a Form in Visual FoxPro
 
+{% raw %}
+
 	Article: Q135626
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -71,3 +73,5 @@ permalink: /kb/135/Q135626/
 	
 	=============================================================================
 	
+
+{% endraw %}

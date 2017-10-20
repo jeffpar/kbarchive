@@ -6,6 +6,8 @@ permalink: /kb/153/Q153742/
 
 ## Q153742: STOP 0x0000006F During System Initialization
 
+{% raw %}
+
 	Article: Q153742
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.51
@@ -68,3 +70,5 @@ permalink: /kb/153/Q153742/
 	
 	=============================================================================
 	
+
+{% endraw %}

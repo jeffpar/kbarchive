@@ -6,6 +6,8 @@ permalink: /kb/149/Q149669/
 
 ## Q149669: BUG: &quot;Required File Missing: MSJINT32.DL_&quot; Setup Wizard Error
 
+{% raw %}
+
 	Article: Q149669
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0b
@@ -88,3 +90,5 @@ permalink: /kb/149/Q149669/
 	
 	=============================================================================
 	
+
+{% endraw %}

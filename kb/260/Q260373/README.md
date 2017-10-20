@@ -6,6 +6,8 @@ permalink: /kb/260/Q260373/
 
 ## Q260373: FIX: The SSTab Events May Fire Despite Cancel = True
 
+{% raw %}
+
 	Article: Q260373
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -101,3 +103,5 @@ permalink: /kb/260/Q260373/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137124/
 
 ## Q137124: HOWTO: Create a PageFrame Parameterized View
 
+{% raw %}
+
 	Article: Q137124
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,5.0,6.0
@@ -137,3 +139,5 @@ permalink: /kb/137/Q137124/
 	
 	=============================================================================
 	
+
+{% endraw %}

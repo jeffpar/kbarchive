@@ -6,6 +6,8 @@ permalink: /kb/057/Q57780/
 
 ## Q57780: Casting Pointer Subtraction May Yield Incorrect Code
 
+{% raw %}
+
 	Article: Q57780
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -51,3 +53,5 @@ permalink: /kb/057/Q57780/
 	separating the two pointers. The resulting type is defined inside
 	"stddef.h" with "ptrdiff_t". Microsoft C and QuickC define "ptrdiff_t"
 	to be a two-byte signed integer.
+
+{% endraw %}

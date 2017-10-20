@@ -6,6 +6,8 @@ permalink: /kb/167/Q167879/
 
 ## Q167879: WD97: Can't Run OCX Control After Converting to Inline Object
 
+{% raw %}
+
 	Article: Q167879
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -67,3 +69,5 @@ permalink: /kb/167/Q167879/
 	
 	=============================================================================
 	
+
+{% endraw %}

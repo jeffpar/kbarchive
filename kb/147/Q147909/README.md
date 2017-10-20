@@ -6,6 +6,8 @@ permalink: /kb/147/Q147909/
 
 ## Q147909: Troubleshooting MacVolume Creation Errors
 
+{% raw %}
+
 	Article: Q147909
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.51,4.0
@@ -171,3 +173,5 @@ permalink: /kb/147/Q147909/
 	
 	=============================================================================
 	
+
+{% endraw %}

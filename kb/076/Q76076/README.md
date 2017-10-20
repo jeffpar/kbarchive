@@ -6,6 +6,8 @@ permalink: /kb/076/Q76076/
 
 ## Q76076: Macro Assembler Version 6.0 Return Codes
 
+{% raw %}
+
 	Article: Q76076
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -37,3 +39,5 @@ permalink: /kb/076/Q76076/
 	
 	=============================================================================
 	
+
+{% endraw %}

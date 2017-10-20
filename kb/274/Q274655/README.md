@@ -6,6 +6,8 @@ permalink: /kb/274/Q274655/
 
 ## Q274655: CFS2: Aircraft Fly Past Target and Continue with Mission
 
+{% raw %}
+
 	Article: Q274655
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -59,3 +61,5 @@ permalink: /kb/274/Q274655/
 	
 	=============================================================================
 	
+
+{% endraw %}

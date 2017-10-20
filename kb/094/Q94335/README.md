@@ -6,6 +6,8 @@ permalink: /kb/094/Q94335/
 
 ## Q94335: DoubleSpace Installation Fails to Update SYSTEM.INI File
 
+{% raw %}
+
 	Article: Q94335
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -55,3 +57,5 @@ permalink: /kb/094/Q94335/
 	
 	=============================================================================
 	
+
+{% endraw %}

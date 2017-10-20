@@ -6,6 +6,8 @@ permalink: /kb/129/Q129299/
 
 ## Q129299: Setup Requests Disk 9 with Multiple CD-ROM Drives
 
+{% raw %}
+
 	Article: Q129299
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/129/Q129299/
 	
 	=============================================================================
 	
+
+{% endraw %}

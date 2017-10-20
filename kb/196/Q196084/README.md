@@ -6,6 +6,8 @@ permalink: /kb/196/Q196084/
 
 ## Q196084: HOWTO: Retrieve Foreign Key Information from SQL Server
 
+{% raw %}
+
 	Article: Q196084
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0
@@ -192,3 +194,5 @@ permalink: /kb/196/Q196084/
 	
 	=============================================================================
 	
+
+{% endraw %}

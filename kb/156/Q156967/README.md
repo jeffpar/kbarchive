@@ -6,6 +6,8 @@ permalink: /kb/156/Q156967/
 
 ## Q156967: SNA Server Performance Degrades Running LUA Application
 
+{% raw %}
+
 	Article: Q156967
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
@@ -120,3 +122,5 @@ permalink: /kb/156/Q156967/
 	
 	=============================================================================
 	
+
+{% endraw %}

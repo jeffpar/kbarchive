@@ -6,6 +6,8 @@ permalink: /kb/159/Q159181/
 
 ## Q159181: XCON: Duplicate Messages Received by MS Mail Recipients
 
+{% raw %}
+
 	Article: Q159181
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -76,3 +78,5 @@ permalink: /kb/159/Q159181/
 	
 	=============================================================================
 	
+
+{% endraw %}

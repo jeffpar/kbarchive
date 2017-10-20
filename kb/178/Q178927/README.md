@@ -6,6 +6,8 @@ permalink: /kb/178/Q178927/
 
 ## Q178927: XADM: How to Rehome Public Folders in Exchange
 
+{% raw %}
+
 	Article: Q178927
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -141,3 +143,5 @@ permalink: /kb/178/Q178927/
 	
 	=============================================================================
 	
+
+{% endraw %}

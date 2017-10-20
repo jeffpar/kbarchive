@@ -6,6 +6,8 @@ permalink: /kb/256/Q256900/
 
 ## Q256900: WD97: AV Using German Spelling Checker in Doc with Long Name
 
+{% raw %}
+
 	Article: Q256900
 	Product(s): Word 97 for Windows
 	Version(s): Service Release 1 (SR-1),Service Release 2
@@ -145,3 +147,5 @@ permalink: /kb/256/Q256900/
 	
 	=============================================================================
 	
+
+{% endraw %}

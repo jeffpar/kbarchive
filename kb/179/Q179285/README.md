@@ -6,6 +6,8 @@ permalink: /kb/179/Q179285/
 
 ## Q179285: PRB: Disabled Developer Studio Add-Ins Not Unloaded From Memory
 
+{% raw %}
+
 	Article: Q179285
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/179/Q179285/
 	
 	=============================================================================
 	
+
+{% endraw %}

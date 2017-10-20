@@ -6,6 +6,8 @@ permalink: /kb/148/Q148475/
 
 ## Q148475: HOWTO: Obtain Macintosh System Software Updates
 
+{% raw %}
+
 	Article: Q148475
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -69,3 +71,5 @@ permalink: /kb/148/Q148475/
 	
 	=============================================================================
 	
+
+{% endraw %}

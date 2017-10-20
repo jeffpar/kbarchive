@@ -6,6 +6,8 @@ permalink: /kb/126/Q126659/
 
 ## Q126659: PC WRmt: Err Msg: Account Not Valid User of Message File
 
+{% raw %}
+
 	Article: Q126659
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -89,3 +91,5 @@ permalink: /kb/126/Q126659/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176386/
 
 ## Q176386: Cinemania: No Sound When You Play Film Clips
 
+{% raw %}
+
 	Article: Q176386
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.1,3.11
@@ -84,3 +86,5 @@ permalink: /kb/176/Q176386/
 	
 	=============================================================================
 	
+
+{% endraw %}

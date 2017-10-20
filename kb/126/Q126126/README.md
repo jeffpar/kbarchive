@@ -6,6 +6,8 @@ permalink: /kb/126/Q126126/
 
 ## Q126126: Windows NT Setup Fails when SCSI Controller is Not Detected
 
+{% raw %}
+
 	Article: Q126126
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -72,3 +74,5 @@ permalink: /kb/126/Q126126/
 	
 	=============================================================================
 	
+
+{% endraw %}

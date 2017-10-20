@@ -6,6 +6,8 @@ permalink: /kb/262/Q262390/
 
 ## Q262390: Network Discovery Returns DHCP Reservation Name w/ Windows DHCP
 
+{% raw %}
+
 	Article: Q262390
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -52,3 +54,5 @@ permalink: /kb/262/Q262390/
 	
 	=============================================================================
 	
+
+{% endraw %}

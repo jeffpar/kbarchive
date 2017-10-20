@@ -6,6 +6,8 @@ permalink: /kb/066/Q66490/
 
 ## Q66490: BASIC PDS Reply Letters: Appnotes BB0354, BB0355, BB0356
 
+{% raw %}
+
 	Article: Q66490
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -177,3 +179,5 @@ permalink: /kb/066/Q66490/
 	BASIC Languages Team Manager
 	Product Support Services
 	BB0356
+
+{% endraw %}

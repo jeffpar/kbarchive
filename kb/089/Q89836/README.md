@@ -6,6 +6,8 @@ permalink: /kb/089/Q89836/
 
 ## Q89836: System Hangs with ASPI4DOS.SYS Version 3.0 or Earlier
 
+{% raw %}
+
 	Article: Q89836
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -72,3 +74,5 @@ permalink: /kb/089/Q89836/
 	
 	=============================================================================
 	
+
+{% endraw %}

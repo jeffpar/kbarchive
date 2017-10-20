@@ -6,6 +6,8 @@ permalink: /kb/196/Q196500/
 
 ## Q196500: New Registry Value to Disable DNR Local Network Priority Sorting
 
+{% raw %}
+
 	Article: Q196500
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -127,3 +129,5 @@ permalink: /kb/196/Q196500/
 	
 	=============================================================================
 	
+
+{% endraw %}

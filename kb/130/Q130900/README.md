@@ -6,6 +6,8 @@ permalink: /kb/130/Q130900/
 
 ## Q130900: SMS Remote Control Fails on AST Manhattan Pentium
 
+{% raw %}
+
 	Article: Q130900
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -53,3 +55,5 @@ permalink: /kb/130/Q130900/
 	
 	=============================================================================
 	
+
+{% endraw %}

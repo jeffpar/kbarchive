@@ -6,6 +6,8 @@ permalink: /kb/168/Q168046/
 
 ## Q168046: HOWTO: STL Sample for &#91;list::rbegin, rend, reverse, rev_iterator
 
+{% raw %}
+
 	Article: Q168046
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -183,3 +185,5 @@ permalink: /kb/168/Q168046/
 	
 	=============================================================================
 	
+
+{% endraw %}

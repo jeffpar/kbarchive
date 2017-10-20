@@ -6,6 +6,8 @@ permalink: /kb/058/Q58687/
 
 ## Q58687: Version 1.02 of M and MEP Incorrectly Reports Version As 1.2
 
+{% raw %}
+
 	Article: Q58687
 	Product(s): See article
 	Version(s): 1.02   | 1.02
@@ -24,3 +26,5 @@ permalink: /kb/058/Q58687/
 	   Microsoft (R) Editor Version 1.2
 	   Copyright (C) Microsoft Corp 1987-1989. All rights reserved
 	   Usage: [/D] [/e cmd-string] [/m mark] [/r] [[/t] filename]*
+
+{% endraw %}

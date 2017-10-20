@@ -6,6 +6,8 @@ permalink: /kb/262/Q262849/
 
 ## Q262849: XADM: Exchange Server 5.5 Post-SP3 Mailbox Manager Fixes
 
+{% raw %}
+
 	Article: Q262849
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -100,3 +102,5 @@ permalink: /kb/262/Q262849/
 	
 	=============================================================================
 	
+
+{% endraw %}

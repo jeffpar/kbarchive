@@ -6,6 +6,8 @@ permalink: /kb/117/Q117841/
 
 ## Q117841: Avoiding Background Palette Flash When Viewing AVI Files
 
+{% raw %}
+
 	Article: Q117841
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:1.0,1.1
@@ -49,3 +51,5 @@ permalink: /kb/117/Q117841/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/281/Q281281/
 
 ## Q281281: PRB: FLUSH Command Slower on Windows 95 or Windows 98 Computers
 
+{% raw %}
+
 	Article: Q281281
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -71,3 +73,5 @@ permalink: /kb/281/Q281281/
 	
 	=============================================================================
 	
+
+{% endraw %}

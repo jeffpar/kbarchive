@@ -6,6 +6,8 @@ permalink: /kb/111/Q111428/
 
 ## Q111428: What is a Clean Boot for WFWG 3.11 with NetWare?
 
+{% raw %}
+
 	Article: Q111428
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -211,3 +213,5 @@ permalink: /kb/111/Q111428/
 	
 	=============================================================================
 	
+
+{% endraw %}

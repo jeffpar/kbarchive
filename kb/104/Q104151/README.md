@@ -6,6 +6,8 @@ permalink: /kb/104/Q104151/
 
 ## Q104151: Setup Doesn't Install Audio Drivers in NT
 
+{% raw %}
+
 	Article: Q104151
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/104/Q104151/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185785/
 
 ## Q185785: Unable to View Entire NetWare Volume Name
 
+{% raw %}
+
 	Article: Q185785
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 98,95
@@ -61,3 +63,5 @@ permalink: /kb/185/Q185785/
 	
 	=============================================================================
 	
+
+{% endraw %}

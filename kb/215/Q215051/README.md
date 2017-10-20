@@ -6,6 +6,8 @@ permalink: /kb/215/Q215051/
 
 ## Q215051: SMS: Removing Primary Site Does Not Remove SMSPKG Package Folder
 
+{% raw %}
+
 	Article: Q215051
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,2.0,2.0 SP1,2.0 SP2
@@ -62,3 +64,5 @@ permalink: /kb/215/Q215051/
 	
 	=============================================================================
 	
+
+{% endraw %}

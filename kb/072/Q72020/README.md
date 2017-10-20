@@ -6,6 +6,8 @@ permalink: /kb/072/Q72020/
 
 ## Q72020: INFO: Stroke Fonts Marked as OEM Character Set Are ANSI
 
+{% raw %}
+
 	Article: Q72020
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -63,3 +65,5 @@ permalink: /kb/072/Q72020/
 	
 	=============================================================================
 	
+
+{% endraw %}

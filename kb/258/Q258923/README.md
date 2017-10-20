@@ -6,6 +6,8 @@ permalink: /kb/258/Q258923/
 
 ## Q258923: XADM: DS_E_ATTRIBUTE_OR_VALUE_EXISTS Error Appears Joining Site
 
+{% raw %}
+
 	Article: Q258923
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -106,3 +108,5 @@ permalink: /kb/258/Q258923/
 	
 	=============================================================================
 	
+
+{% endraw %}

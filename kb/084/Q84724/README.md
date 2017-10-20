@@ -6,6 +6,8 @@ permalink: /kb/084/Q84724/
 
 ## Q84724: 32-Bit Disk Access and Microsolutions Compaticard
 
+{% raw %}
+
 	Article: Q84724
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/084/Q84724/
 	
 	=============================================================================
 	
+
+{% endraw %}

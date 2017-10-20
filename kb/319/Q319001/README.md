@@ -6,6 +6,8 @@ permalink: /kb/319/Q319001/
 
 ## Q319001: FIX: SEEK(), INDEXSEEK(), and LOOKUP() Find Nonexistent Records
 
+{% raw %}
+
 	Article: Q319001
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -89,3 +91,5 @@ permalink: /kb/319/Q319001/
 	
 	=============================================================================
 	
+
+{% endraw %}

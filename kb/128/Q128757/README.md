@@ -6,6 +6,8 @@ permalink: /kb/128/Q128757/
 
 ## Q128757: CODE COMPLETE: Corrections and Comments
 
+{% raw %}
+
 	Article: Q128757
 	Product(s): Microsoft Press
 	Version(s): 
@@ -507,3 +509,5 @@ permalink: /kb/128/Q128757/
 	
 	=============================================================================
 	
+
+{% endraw %}

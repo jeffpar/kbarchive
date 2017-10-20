@@ -6,6 +6,8 @@ permalink: /kb/232/Q232270/
 
 ## Q232270: &quot;Help on Property&quot; Command Unavailable in Network Monitor
 
+{% raw %}
+
 	Article: Q232270
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95,98,98 Second Edition; winnt:3.1,3.5,3.51,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -62,3 +64,5 @@ permalink: /kb/232/Q232270/
 	
 	=============================================================================
 	
+
+{% endraw %}

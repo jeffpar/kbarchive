@@ -6,6 +6,8 @@ permalink: /kb/101/Q101257/
 
 ## Q101257: FIX: Incorrect Behavior in MaskedEdit BorderStyle Property
 
+{% raw %}
+
 	Article: Q101257
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -84,3 +86,5 @@ permalink: /kb/101/Q101257/
 	
 	=============================================================================
 	
+
+{% endraw %}

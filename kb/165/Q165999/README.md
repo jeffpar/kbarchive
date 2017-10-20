@@ -6,6 +6,8 @@ permalink: /kb/165/Q165999/
 
 ## Q165999: X.25 &quot;Delay After Failure&quot; Dialog Box Has Illegal Values
 
+{% raw %}
+
 	Article: Q165999
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/165/Q165999/
 	
 	=============================================================================
 	
+
+{% endraw %}

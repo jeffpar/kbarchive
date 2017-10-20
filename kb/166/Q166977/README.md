@@ -6,6 +6,8 @@ permalink: /kb/166/Q166977/
 
 ## Q166977: WD97: Erratic Scrolling Caused by Large Objects
 
+{% raw %}
+
 	Article: Q166977
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -59,3 +61,5 @@ permalink: /kb/166/Q166977/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146133/
 
 ## Q146133: Sending Attachments When Responding to Meeting Request
 
+{% raw %}
+
 	Article: Q146133
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -49,3 +51,5 @@ permalink: /kb/146/Q146133/
 	
 	=============================================================================
 	
+
+{% endraw %}

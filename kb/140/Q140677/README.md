@@ -6,6 +6,8 @@ permalink: /kb/140/Q140677/
 
 ## Q140677: FIX: Go Back Button in InfoView Viewer Window Is Disabled
 
+{% raw %}
+
 	Article: Q140677
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -60,3 +62,5 @@ permalink: /kb/140/Q140677/
 	
 	=============================================================================
 	
+
+{% endraw %}

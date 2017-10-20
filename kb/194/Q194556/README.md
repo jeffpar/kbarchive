@@ -6,6 +6,8 @@ permalink: /kb/194/Q194556/
 
 ## Q194556: X400: Foreign MTA Cannot Restore Connection Using PConnect
 
+{% raw %}
+
 	Article: Q194556
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -96,3 +98,5 @@ permalink: /kb/194/Q194556/
 	
 	=============================================================================
 	
+
+{% endraw %}

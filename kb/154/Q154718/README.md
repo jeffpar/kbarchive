@@ -6,6 +6,8 @@ permalink: /kb/154/Q154718/
 
 ## Q154718: Incorrect Memory Size Reported in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q154718
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -44,3 +46,5 @@ permalink: /kb/154/Q154718/
 	
 	=============================================================================
 	
+
+{% endraw %}

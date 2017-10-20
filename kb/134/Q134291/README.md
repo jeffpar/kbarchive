@@ -6,6 +6,8 @@ permalink: /kb/134/Q134291/
 
 ## Q134291: Show All Messages in BBS Is Disabled
 
+{% raw %}
+
 	Article: Q134291
 	Product(s): The Microsoft Network
 	Version(s): 1.00 1.05 1.2 1.3
@@ -45,3 +47,5 @@ permalink: /kb/134/Q134291/
 	
 	=============================================================================
 	
+
+{% endraw %}

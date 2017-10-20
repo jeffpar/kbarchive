@@ -6,6 +6,8 @@ permalink: /kb/141/Q141477/
 
 ## Q141477: FIX: Exception Specification Syntax Handled Incorrectly
 
+{% raw %}
+
 	Article: Q141477
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2
@@ -76,3 +78,5 @@ permalink: /kb/141/Q141477/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162592/
 
 ## Q162592: SLI Libraries Set Wrong RU Size After Unbind(Hold)
 
+{% raw %}
+
 	Article: Q162592
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,3.0
@@ -133,3 +135,5 @@ permalink: /kb/162/Q162592/
 	
 	=============================================================================
 	
+
+{% endraw %}

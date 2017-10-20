@@ -6,6 +6,8 @@ permalink: /kb/168/Q168290/
 
 ## Q168290: FIX: GPF When Setting Font of Multi-selected Controls
 
+{% raw %}
+
 	Article: Q168290
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -98,3 +100,5 @@ permalink: /kb/168/Q168290/
 	
 	=============================================================================
 	
+
+{% endraw %}

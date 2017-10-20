@@ -6,6 +6,8 @@ permalink: /kb/199/Q199286/
 
 ## Q199286: DNS Event IDs 1 Through 1657 for Windows NT 4.0 SP4
 
+{% raw %}
+
 	Article: Q199286
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4
@@ -507,3 +509,5 @@ permalink: /kb/199/Q199286/
 	
 	=============================================================================
 	
+
+{% endraw %}

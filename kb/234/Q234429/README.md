@@ -6,6 +6,8 @@ permalink: /kb/234/Q234429/
 
 ## Q234429: How to Manually Restore the Metabase When No Backup Exists
 
+{% raw %}
+
 	Article: Q234429
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -163,3 +165,5 @@ permalink: /kb/234/Q234429/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135261/
 
 ## Q135261: PPT: Server Application Error Trying to Edit OrgChart Object
 
+{% raw %}
+
 	Article: Q135261
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,7.0
@@ -119,3 +121,5 @@ permalink: /kb/135/Q135261/
 	
 	=============================================================================
 	
+
+{% endraw %}

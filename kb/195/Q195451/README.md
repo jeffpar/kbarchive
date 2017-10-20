@@ -6,6 +6,8 @@ permalink: /kb/195/Q195451/
 
 ## Q195451: MSN Error Message: Remote Server Disconnected
 
+{% raw %}
+
 	Article: Q195451
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5
@@ -98,3 +100,5 @@ permalink: /kb/195/Q195451/
 	
 	=============================================================================
 	
+
+{% endraw %}

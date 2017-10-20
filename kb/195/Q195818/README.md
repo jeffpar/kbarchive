@@ -6,6 +6,8 @@ permalink: /kb/195/Q195818/
 
 ## Q195818: Windows NT 4.0 SP4 Breaks SNA Encrypted Client Connectivity
 
+{% raw %}
+
 	Article: Q195818
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,4.0
@@ -242,3 +244,5 @@ permalink: /kb/195/Q195818/
 	
 	=============================================================================
 	
+
+{% endraw %}

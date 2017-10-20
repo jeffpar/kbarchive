@@ -6,6 +6,8 @@ permalink: /kb/260/Q260202/
 
 ## Q260202: XADM: BlackBerry Pager Software Changes Auto Naming Generation
 
+{% raw %}
+
 	Article: Q260202
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -109,3 +111,5 @@ permalink: /kb/260/Q260202/
 	
 	=============================================================================
 	
+
+{% endraw %}

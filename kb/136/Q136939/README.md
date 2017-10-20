@@ -6,6 +6,8 @@ permalink: /kb/136/Q136939/
 
 ## Q136939: MS Backup Error Message: A Serious Error Has Occurred...
 
+{% raw %}
+
 	Article: Q136939
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/136/Q136939/
 	
 	=============================================================================
 	
+
+{% endraw %}

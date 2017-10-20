@@ -6,6 +6,8 @@ permalink: /kb/172/Q172916/
 
 ## Q172916: WD97: Nothing Happens When OCR Scanning from Word
 
+{% raw %}
+
 	Article: Q172916
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -80,3 +82,5 @@ permalink: /kb/172/Q172916/
 	
 	=============================================================================
 	
+
+{% endraw %}

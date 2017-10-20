@@ -6,6 +6,8 @@ permalink: /kb/187/Q187593/
 
 ## Q187593: INFO: MSVBVM50.DLL Is Included in Windows 98
 
+{% raw %}
+
 	Article: Q187593
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -63,3 +65,5 @@ permalink: /kb/187/Q187593/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/269/Q269170/
 
 ## Q269170: PRB: Set of DEFAULT Changed After MAPI.SESSION Logon
 
+{% raw %}
+
 	Article: Q269170
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -116,3 +118,5 @@ permalink: /kb/269/Q269170/
 	
 	=============================================================================
 	
+
+{% endraw %}

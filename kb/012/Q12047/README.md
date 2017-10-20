@@ -6,6 +6,8 @@ permalink: /kb/012/Q12047/
 
 ## Q12047: Explorapedia: Where Is the Help File?
 
+{% raw %}
+
 	Article: Q12047
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -40,3 +42,5 @@ permalink: /kb/012/Q12047/
 	
 	=============================================================================
 	
+
+{% endraw %}

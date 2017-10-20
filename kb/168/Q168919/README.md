@@ -6,6 +6,8 @@ permalink: /kb/168/Q168919/
 
 ## Q168919: Windows NT Explorer Does Not Refresh New DFS Mappings
 
+{% raw %}
+
 	Article: Q168919
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -52,3 +54,5 @@ permalink: /kb/168/Q168919/
 	
 	=============================================================================
 	
+
+{% endraw %}

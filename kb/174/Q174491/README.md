@@ -6,6 +6,8 @@ permalink: /kb/174/Q174491/
 
 ## Q174491: User Profile Scenario Summaries
 
+{% raw %}
+
 	Article: Q174491
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -231,3 +233,5 @@ permalink: /kb/174/Q174491/
 	
 	=============================================================================
 	
+
+{% endraw %}

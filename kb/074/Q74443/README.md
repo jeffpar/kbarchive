@@ -6,6 +6,8 @@ permalink: /kb/074/Q74443/
 
 ## Q74443: Updated Genius Mouse Driver Required for MS-DOS Shell
 
+{% raw %}
+
 	Article: Q74443
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0
@@ -43,3 +45,5 @@ permalink: /kb/074/Q74443/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139990/
 
 ## Q139990: Sound Problems with ESS ES1688 AudioDrive
 
+{% raw %}
+
 	Article: Q139990
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -107,3 +109,5 @@ permalink: /kb/139/Q139990/
 	
 	=============================================================================
 	
+
+{% endraw %}

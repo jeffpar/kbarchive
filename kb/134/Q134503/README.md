@@ -6,6 +6,8 @@ permalink: /kb/134/Q134503/
 
 ## Q134503: Parity Error Messages May Indicate Bad Memory
 
+{% raw %}
+
 	Article: Q134503
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -119,3 +121,5 @@ permalink: /kb/134/Q134503/
 	
 	=============================================================================
 	
+
+{% endraw %}

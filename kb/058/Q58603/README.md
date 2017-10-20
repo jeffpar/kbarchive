@@ -6,6 +6,8 @@ permalink: /kb/058/Q58603/
 
 ## Q58603: MHELP Driver Not Completely Compatible with QuickC Help Files
 
+{% raw %}
+
 	Article: Q58603
 	Product(s): See article
 	Version(s): 1.02   | 1.02
@@ -55,3 +57,5 @@ permalink: /kb/058/Q58603/
 	Microsoft has confirmed this to be a problem with the M Editor Version
 	1.02. We are researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

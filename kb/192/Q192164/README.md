@@ -6,6 +6,8 @@ permalink: /kb/192/Q192164/
 
 ## Q192164: Home Directories Are Created with Incorrect Permissions
 
+{% raw %}
+
 	Article: Q192164
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/192/Q192164/
 	
 	=============================================================================
 	
+
+{% endraw %}

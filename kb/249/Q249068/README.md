@@ -6,6 +6,8 @@ permalink: /kb/249/Q249068/
 
 ## Q249068: IO Threading Model Used by SNA Server Services
 
+{% raw %}
+
 	Article: Q249068
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -168,3 +170,5 @@ permalink: /kb/249/Q249068/
 	
 	=============================================================================
 	
+
+{% endraw %}

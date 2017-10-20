@@ -6,6 +6,8 @@ permalink: /kb/246/Q246799/
 
 ## Q246799: Drive in Volume Set Is Missing After You Use Repair Process
 
+{% raw %}
+
 	Article: Q246799
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/246/Q246799/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130014/
 
 ## Q130014: Unable To Connect SQL Server Using NWLink
 
+{% raw %}
+
 	Article: Q130014
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:; winnt:3.5
@@ -58,3 +60,5 @@ permalink: /kb/130/Q130014/
 	
 	=============================================================================
 	
+
+{% endraw %}

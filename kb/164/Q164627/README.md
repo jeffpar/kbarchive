@@ -6,6 +6,8 @@ permalink: /kb/164/Q164627/
 
 ## Q164627: SGC-Enabled Clients Have Trouble Connecting to SGC-Enabled IIS
 
+{% raw %}
+
 	Article: Q164627
 	Product(s): Internet Information Server
 	Version(s): 3.0
@@ -80,3 +82,5 @@ permalink: /kb/164/Q164627/
 	
 	=============================================================================
 	
+
+{% endraw %}

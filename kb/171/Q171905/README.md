@@ -6,6 +6,8 @@ permalink: /kb/171/Q171905/
 
 ## Q171905: Err Msg: Cannot Establish Modem Connection.
 
+{% raw %}
+
 	Article: Q171905
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5,2.51,2.52,2.6
@@ -100,3 +102,5 @@ permalink: /kb/171/Q171905/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145706/
 
 ## Q145706: New Local Schedule+ Files Do Not Synchronize with Server
 
+{% raw %}
+
 	Article: Q145706
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -56,3 +58,5 @@ permalink: /kb/145/Q145706/
 	
 	=============================================================================
 	
+
+{% endraw %}

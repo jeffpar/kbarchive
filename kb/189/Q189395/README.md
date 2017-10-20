@@ -6,6 +6,8 @@ permalink: /kb/189/Q189395/
 
 ## Q189395: Support for Canadian ACNOR Keyboard
 
+{% raw %}
+
 	Article: Q189395
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -55,3 +57,5 @@ permalink: /kb/189/Q189395/
 	
 	=============================================================================
 	
+
+{% endraw %}

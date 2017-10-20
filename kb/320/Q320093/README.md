@@ -6,6 +6,8 @@ permalink: /kb/320/Q320093/
 
 ## Q320093: Streets and Trips 2002: How to Import Pushpins from Version 2000
 
+{% raw %}
+
 	Article: Q320093
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -68,3 +70,5 @@ permalink: /kb/320/Q320093/
 	
 	=============================================================================
 	
+
+{% endraw %}

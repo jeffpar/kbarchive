@@ -6,6 +6,8 @@ permalink: /kb/134/Q134695/
 
 ## Q134695: BW-Connect NFS 3.5 for Windows NT Hangs Windows NT 3.51 VDMs
 
+{% raw %}
+
 	Article: Q134695
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/134/Q134695/
 	
 	=============================================================================
 	
+
+{% endraw %}

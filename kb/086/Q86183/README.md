@@ -6,6 +6,8 @@ permalink: /kb/086/Q86183/
 
 ## Q86183: PC WSPlus: Importing WordPerfect Files
 
+{% raw %}
+
 	Article: Q86183
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/086/Q86183/
 	
 	=============================================================================
 	
+
+{% endraw %}

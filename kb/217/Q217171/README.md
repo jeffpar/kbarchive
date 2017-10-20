@@ -6,6 +6,8 @@ permalink: /kb/217/Q217171/
 
 ## Q217171: FIX: /Zl Generates Invalid VXD Or Driver Image
 
+{% raw %}
+
 	Article: Q217171
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -74,3 +76,5 @@ permalink: /kb/217/Q217171/
 	
 	=============================================================================
 	
+
+{% endraw %}

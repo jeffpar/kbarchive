@@ -6,6 +6,8 @@ permalink: /kb/140/Q140240/
 
 ## Q140240: Screen Saver Files Become Associated with Fax Viewer
 
+{% raw %}
+
 	Article: Q140240
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -93,3 +95,5 @@ permalink: /kb/140/Q140240/
 	
 	=============================================================================
 	
+
+{% endraw %}

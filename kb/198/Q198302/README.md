@@ -6,6 +6,8 @@ permalink: /kb/198/Q198302/
 
 ## Q198302: WD97: Cannot Change Case from Uppercase to Title Case
 
+{% raw %}
+
 	Article: Q198302
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -102,3 +104,5 @@ permalink: /kb/198/Q198302/
 	
 	=============================================================================
 	
+
+{% endraw %}

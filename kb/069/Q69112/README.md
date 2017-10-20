@@ -6,6 +6,8 @@ permalink: /kb/069/Q69112/
 
 ## Q69112: How to Estimate Size of BASIC PDS ISAM Database Components
 
+{% raw %}
+
 	Article: Q69112
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.10
@@ -134,3 +136,5 @@ permalink: /kb/069/Q69112/
 	                                  Grand total(82K)....   83,968 bytes
 	   Adjusted for 32K chunk (3 * 32K * 1024 bytes/K)....   98,304 bytes
 	           Actual file reported after packing file....   98,304 bytes
+
+{% endraw %}

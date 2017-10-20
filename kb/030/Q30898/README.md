@@ -6,6 +6,8 @@ permalink: /kb/030/Q30898/
 
 ## Q30898: DOCERR: KBDINFO Incorrectly Defined
 
+{% raw %}
+
 	Article: Q30898
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -44,3 +46,5 @@ permalink: /kb/030/Q30898/
 	
 	=============================================================================
 	
+
+{% endraw %}

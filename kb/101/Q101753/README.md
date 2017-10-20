@@ -6,6 +6,8 @@ permalink: /kb/101/Q101753/
 
 ## Q101753: PC DirSync: When to Use the Time Zone Option with Dir-Sync
 
+{% raw %}
+
 	Article: Q101753
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -106,3 +108,5 @@ permalink: /kb/101/Q101753/
 	
 	=============================================================================
 	
+
+{% endraw %}

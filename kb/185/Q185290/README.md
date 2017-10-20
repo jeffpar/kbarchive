@@ -6,6 +6,8 @@ permalink: /kb/185/Q185290/
 
 ## Q185290: WD97: Macro to Find Special Characters Based on Unicode Value
 
+{% raw %}
+
 	Article: Q185290
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -120,3 +122,5 @@ permalink: /kb/185/Q185290/
 	
 	=============================================================================
 	
+
+{% endraw %}

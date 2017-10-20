@@ -6,6 +6,8 @@ permalink: /kb/160/Q160354/
 
 ## Q160354: Mouse and Keyboard Can Disappear when Replacing Drivers
 
+{% raw %}
+
 	Article: Q160354
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -57,3 +59,5 @@ permalink: /kb/160/Q160354/
 	
 	=============================================================================
 	
+
+{% endraw %}

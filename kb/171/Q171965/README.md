@@ -6,6 +6,8 @@ permalink: /kb/171/Q171965/
 
 ## Q171965: Mac Bookshelf 98: Animations and Movies Slightly Out Of Frame
 
+{% raw %}
+
 	Article: Q171965
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -72,3 +74,5 @@ permalink: /kb/171/Q171965/
 	
 	=============================================================================
 	
+
+{% endraw %}

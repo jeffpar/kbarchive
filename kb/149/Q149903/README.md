@@ -6,6 +6,8 @@ permalink: /kb/149/Q149903/
 
 ## Q149903: File Manager Performs a Move Instead of a Copy
 
+{% raw %}
+
 	Article: Q149903
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/149/Q149903/
 	
 	=============================================================================
 	
+
+{% endraw %}

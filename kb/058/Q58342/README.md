@@ -6,6 +6,8 @@ permalink: /kb/058/Q58342/
 
 ## Q58342: Windows 3.0 SYSTEM.INI &#91;keyboard&#93; Section
 
+{% raw %}
+
 	Article: Q58342
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -113,3 +115,5 @@ permalink: /kb/058/Q58342/
 	
 	=============================================================================
 	
+
+{% endraw %}

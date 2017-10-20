@@ -6,6 +6,8 @@ permalink: /kb/050/Q50825/
 
 ## Q50825: Terminal Uses Only 24 Lines
 
+{% raw %}
+
 	Article: Q50825
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -36,3 +38,5 @@ permalink: /kb/050/Q50825/
 	
 	=============================================================================
 	
+
+{% endraw %}

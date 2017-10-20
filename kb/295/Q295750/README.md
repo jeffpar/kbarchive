@@ -6,6 +6,8 @@ permalink: /kb/295/Q295750/
 
 ## Q295750: Error Message: Unable to Set Default Formats and Patterns
 
+{% raw %}
+
 	Article: Q295750
 	Product(s): Microsoft Exchange
 	Version(s): 3.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/295/Q295750/
 	
 	=============================================================================
 	
+
+{% endraw %}

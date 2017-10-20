@@ -6,6 +6,8 @@ permalink: /kb/236/Q236364/
 
 ## Q236364: SNA Server 4.0 Service Pack 3 Fix List
 
+{% raw %}
+
 	Article: Q236364
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP3
@@ -184,3 +186,5 @@ permalink: /kb/236/Q236364/
 	
 	=============================================================================
 	
+
+{% endraw %}

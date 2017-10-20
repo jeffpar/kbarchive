@@ -6,6 +6,8 @@ permalink: /kb/074/Q74793/
 
 ## Q74793: HOWTO: Simulating CreatePatternBrush() on a High-Res Printer
 
+{% raw %}
+
 	Article: Q74793
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:
@@ -81,3 +83,5 @@ permalink: /kb/074/Q74793/
 	
 	=============================================================================
 	
+
+{% endraw %}

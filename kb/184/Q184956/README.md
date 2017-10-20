@@ -6,6 +6,8 @@ permalink: /kb/184/Q184956/
 
 ## Q184956: Problems Deleting Files under Internet Information Server
 
+{% raw %}
+
 	Article: Q184956
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/184/Q184956/
 	
 	=============================================================================
 	
+
+{% endraw %}

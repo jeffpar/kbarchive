@@ -6,6 +6,8 @@ permalink: /kb/171/Q171336/
 
 ## Q171336: WD97: Font Animation May Not Be Shown on Last Line of Text
 
+{% raw %}
+
 	Article: Q171336
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/171/Q171336/
 	
 	=============================================================================
 	
+
+{% endraw %}

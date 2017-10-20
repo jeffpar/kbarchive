@@ -6,6 +6,8 @@ permalink: /kb/123/Q123690/
 
 ## Q123690: Using INTDOSQQ for Keyboard Input in FORTRAN 5.1
 
+{% raw %}
+
 	Article: Q123690
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.1
@@ -156,3 +158,5 @@ permalink: /kb/123/Q123690/
 	
 	=============================================================================
 	
+
+{% endraw %}

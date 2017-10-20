@@ -6,6 +6,8 @@ permalink: /kb/140/Q140310/
 
 ## Q140310: FIX: Holding Down the F1 Key a Long Time Crashes Windows Help
 
+{% raw %}
+
 	Article: Q140310
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -61,3 +63,5 @@ permalink: /kb/140/Q140310/
 	
 	=============================================================================
 	
+
+{% endraw %}

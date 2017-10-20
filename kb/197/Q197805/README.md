@@ -6,6 +6,8 @@ permalink: /kb/197/Q197805/
 
 ## Q197805: Combat Flight Simulator: How to Import Flight Simulator Aircraft
 
+{% raw %}
+
 	Article: Q197805
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -169,3 +171,5 @@ permalink: /kb/197/Q197805/
 	
 	=============================================================================
 	
+
+{% endraw %}

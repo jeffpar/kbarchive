@@ -6,6 +6,8 @@ permalink: /kb/067/Q67760/
 
 ## Q67760: FIX: Bad Object File Generated with MASM 5.1 and 5.1a
 
+{% raw %}
+
 	Article: Q67760
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -99,3 +101,5 @@ permalink: /kb/067/Q67760/
 	
 	=============================================================================
 	
+
+{% endraw %}

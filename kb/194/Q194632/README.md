@@ -6,6 +6,8 @@ permalink: /kb/194/Q194632/
 
 ## Q194632: WD97: Word Doesn't Convert Creative Writer and Fine Artist Files
 
+{% raw %}
+
 	Article: Q194632
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:1.0,1.1,1.1a,97
@@ -73,3 +75,5 @@ permalink: /kb/194/Q194632/
 	
 	=============================================================================
 	
+
+{% endraw %}

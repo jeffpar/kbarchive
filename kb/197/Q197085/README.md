@@ -6,6 +6,8 @@ permalink: /kb/197/Q197085/
 
 ## Q197085: Heap Corruptions Cause Access Violations in SNA Server and SnaBa
 
+{% raw %}
+
 	Article: Q197085
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,4.0
@@ -94,3 +96,5 @@ permalink: /kb/197/Q197085/
 	
 	=============================================================================
 	
+
+{% endraw %}

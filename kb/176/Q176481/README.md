@@ -6,6 +6,8 @@ permalink: /kb/176/Q176481/
 
 ## Q176481: FIX: LUPDATE() Does Not Report Correct Century for Year 2000
 
+{% raw %}
+
 	Article: Q176481
 	Product(s): Microsoft FoxPro
 	Version(s): 2.01,2.1,2.6,2.6a,3.0,3.0b,5.0,5.0a
@@ -138,3 +140,5 @@ permalink: /kb/176/Q176481/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159477/
 
 ## Q159477: SMSLS or PGC Stop Responding When Programs in Startup Group
 
+{% raw %}
+
 	Article: Q159477
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -69,3 +71,5 @@ permalink: /kb/159/Q159477/
 	
 	=============================================================================
 	
+
+{% endraw %}

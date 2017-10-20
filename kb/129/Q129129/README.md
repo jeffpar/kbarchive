@@ -6,6 +6,8 @@ permalink: /kb/129/Q129129/
 
 ## Q129129: Windows NT SNMP Agent Allows Only Read Access
 
+{% raw %}
+
 	Article: Q129129
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -100,3 +102,5 @@ permalink: /kb/129/Q129129/
 	
 	=============================================================================
 	
+
+{% endraw %}

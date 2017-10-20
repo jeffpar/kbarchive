@@ -6,6 +6,8 @@ permalink: /kb/197/Q197019/
 
 ## Q197019: WD97: How to Convert Between IBM's DCF Text Processor and Word
 
+{% raw %}
+
 	Article: Q197019
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -94,3 +96,5 @@ permalink: /kb/197/Q197019/
 	
 	=============================================================================
 	
+
+{% endraw %}

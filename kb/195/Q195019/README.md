@@ -6,6 +6,8 @@ permalink: /kb/195/Q195019/
 
 ## Q195019: FIX: Checking Out a .frm File Without a .vbp File Causes GPF
 
+{% raw %}
+
 	Article: Q195019
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -322,3 +324,5 @@ permalink: /kb/195/Q195019/
 	
 	=============================================================================
 	
+
+{% endraw %}

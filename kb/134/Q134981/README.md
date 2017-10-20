@@ -6,6 +6,8 @@ permalink: /kb/134/Q134981/
 
 ## Q134981: PRB: Directories &amp; Registry Entries Left After Deinstall
 
+{% raw %}
+
 	Article: Q134981
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -93,3 +95,5 @@ permalink: /kb/134/Q134981/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82678/
 
 ## Q82678: Advanced Power Management (APM) Support
 
+{% raw %}
+
 	Article: Q82678
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/082/Q82678/
 	
 	=============================================================================
 	
+
+{% endraw %}

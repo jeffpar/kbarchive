@@ -6,6 +6,8 @@ permalink: /kb/125/Q125859/
 
 ## Q125859: SystemDrive Environment Variable Disappears
 
+{% raw %}
+
 	Article: Q125859
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/125/Q125859/
 	
 	=============================================================================
 	
+
+{% endraw %}

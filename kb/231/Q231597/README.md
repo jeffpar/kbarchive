@@ -6,6 +6,8 @@ permalink: /kb/231/Q231597/
 
 ## Q231597: Midtown Madness: Screen Elements Are Not Displayed Properly
 
+{% raw %}
+
 	Article: Q231597
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -80,3 +82,5 @@ permalink: /kb/231/Q231597/
 	
 	=============================================================================
 	
+
+{% endraw %}

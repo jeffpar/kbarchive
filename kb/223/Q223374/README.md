@@ -6,6 +6,8 @@ permalink: /kb/223/Q223374/
 
 ## Q223374: Installing SP 4 Automatically Enables DHCP Logging
 
+{% raw %}
+
 	Article: Q223374
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -86,3 +88,5 @@ permalink: /kb/223/Q223374/
 	
 	=============================================================================
 	
+
+{% endraw %}

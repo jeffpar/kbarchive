@@ -6,6 +6,8 @@ permalink: /kb/168/Q168925/
 
 ## Q168925: Err Msg: The WIN16 Subsystem Was Unable to Enter Protected Mode
 
+{% raw %}
+
 	Article: Q168925
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/168/Q168925/
 	
 	=============================================================================
 	
+
+{% endraw %}

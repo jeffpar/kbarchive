@@ -6,6 +6,8 @@ permalink: /kb/313/Q313898/
 
 ## Q313898: BUG: StartUp Project Changes When You &quot;Get Latest Version&quot;
 
+{% raw %}
+
 	Article: Q313898
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -87,3 +89,5 @@ permalink: /kb/313/Q313898/
 	
 	=============================================================================
 	
+
+{% endraw %}

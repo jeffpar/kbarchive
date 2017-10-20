@@ -6,6 +6,8 @@ permalink: /kb/221/Q221711/
 
 ## Q221711: FIX: FFCs - Problem with Element Tag With _XMLTag in _html.vcx
 
+{% raw %}
+
 	Article: Q221711
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -81,3 +83,5 @@ permalink: /kb/221/Q221711/
 	
 	=============================================================================
 	
+
+{% endraw %}

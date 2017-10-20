@@ -6,6 +6,8 @@ permalink: /kb/134/Q134541/
 
 ## Q134541: PageMaker Does Not Print Large TrueType Fonts to TrueLaser
 
+{% raw %}
+
 	Article: Q134541
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -67,3 +69,5 @@ permalink: /kb/134/Q134541/
 	
 	=============================================================================
 	
+
+{% endraw %}

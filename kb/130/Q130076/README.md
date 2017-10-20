@@ -6,6 +6,8 @@ permalink: /kb/130/Q130076/
 
 ## Q130076: Briefcase Cannot Contain More Than 1.44 MB
 
+{% raw %}
+
 	Article: Q130076
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/130/Q130076/
 	
 	=============================================================================
 	
+
+{% endraw %}

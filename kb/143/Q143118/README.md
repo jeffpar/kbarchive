@@ -6,6 +6,8 @@ permalink: /kb/143/Q143118/
 
 ## Q143118: Error Message: Unable to Display Find Tab
 
+{% raw %}
+
 	Article: Q143118
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -52,3 +54,5 @@ permalink: /kb/143/Q143118/
 	
 	=============================================================================
 	
+
+{% endraw %}

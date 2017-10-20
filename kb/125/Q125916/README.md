@@ -6,6 +6,8 @@ permalink: /kb/125/Q125916/
 
 ## Q125916: NetBIOS CALL to a Group Name Fails with TCP/IP-32
 
+{% raw %}
+
 	Article: Q125916
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11; WINDOWS:3.11
@@ -58,3 +60,5 @@ permalink: /kb/125/Q125916/
 	
 	=============================================================================
 	
+
+{% endraw %}

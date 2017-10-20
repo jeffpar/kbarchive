@@ -6,6 +6,8 @@ permalink: /kb/107/Q107204/
 
 ## Q107204: PROFS: Use of PROFSIN.DAT, Format of PROFSIN.CSI Files
 
+{% raw %}
+
 	Article: Q107204
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.1,3.2,3.3
@@ -98,3 +100,5 @@ permalink: /kb/107/Q107204/
 	
 	=============================================================================
 	
+
+{% endraw %}

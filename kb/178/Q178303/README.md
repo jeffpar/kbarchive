@@ -6,6 +6,8 @@ permalink: /kb/178/Q178303/
 
 ## Q178303: XADM: Chat 5.5 Err Msg: Unable To Start Microsoft Chat Service
 
+{% raw %}
+
 	Article: Q178303
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -48,3 +50,5 @@ permalink: /kb/178/Q178303/
 	
 	=============================================================================
 	
+
+{% endraw %}

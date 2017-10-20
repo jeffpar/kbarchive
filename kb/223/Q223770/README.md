@@ -6,6 +6,8 @@ permalink: /kb/223/Q223770/
 
 ## Q223770: Mciavi32.dll Handle Leak When Opening an AVI File
 
+{% raw %}
+
 	Article: Q223770
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/223/Q223770/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161604/
 
 ## Q161604: SMS: PGC Application Is Reset with a &quot;Configure&quot; Status
 
+{% raw %}
+
 	Article: Q161604
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1,1.2
@@ -69,3 +71,5 @@ permalink: /kb/161/Q161604/
 	
 	=============================================================================
 	
+
+{% endraw %}

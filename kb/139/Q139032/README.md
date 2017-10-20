@@ -6,6 +6,8 @@ permalink: /kb/139/Q139032/
 
 ## Q139032: PC NTMMTA: Dispatch Instance Name Is Not Displayed
 
+{% raw %}
+
 	Article: Q139032
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -45,3 +47,5 @@ permalink: /kb/139/Q139032/
 	
 	=============================================================================
 	
+
+{% endraw %}

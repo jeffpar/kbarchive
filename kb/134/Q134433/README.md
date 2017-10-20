@@ -6,6 +6,8 @@ permalink: /kb/134/Q134433/
 
 ## Q134433: List of Confirmed Bugs in Systems Management Server 1.0
 
+{% raw %}
+
 	Article: Q134433
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -166,3 +168,5 @@ permalink: /kb/134/Q134433/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/045/Q45420/
 
 ## Q45420: LPOS(0) and LPOS(1) Both Return Print Head Position for LPT1
 
+{% raw %}
+
 	Article: Q45420
 	Product(s): See article
 	Version(s): 6.00 6.00b | 6.00 6.00b
@@ -33,3 +35,5 @@ permalink: /kb/045/Q45420/
 	This documentation error was corrected on Page 204 of the "Microsoft
 	BASIC 7.0: Language Reference" manual for Microsoft BASIC Professional
 	Development System (PDS) Version 7.00.
+
+{% endraw %}

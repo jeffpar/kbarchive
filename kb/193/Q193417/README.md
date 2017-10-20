@@ -6,6 +6,8 @@ permalink: /kb/193/Q193417/
 
 ## Q193417: WD97: How Text with Layout Converter Determines Line Length
 
+{% raw %}
+
 	Article: Q193417
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -160,3 +162,5 @@ permalink: /kb/193/Q193417/
 	
 	=============================================================================
 	
+
+{% endraw %}

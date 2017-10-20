@@ -6,6 +6,8 @@ permalink: /kb/113/Q113180/
 
 ## Q113180: Bookshelf: Does Not Adopt New Default Printer Settings
 
+{% raw %}
+
 	Article: Q113180
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -46,3 +48,5 @@ permalink: /kb/113/Q113180/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/207/Q207566/
 
 ## Q207566: SMS: Client Remote Installation Account Cannot Be Deleted
 
+{% raw %}
+
 	Article: Q207566
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -61,3 +63,5 @@ permalink: /kb/207/Q207566/
 	
 	=============================================================================
 	
+
+{% endraw %}

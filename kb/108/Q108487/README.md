@@ -6,6 +6,8 @@ permalink: /kb/108/Q108487/
 
 ## Q108487: MS2000&#36; Trap D on OS/2 2.1 Workstation
 
+{% raw %}
+
 	Article: Q108487
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/108/Q108487/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248065/
 
 ## Q248065: How to Search for Unfiltered Documents in a Non Default Catalog
 
+{% raw %}
+
 	Article: Q248065
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0
@@ -72,3 +74,5 @@ permalink: /kb/248/Q248065/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146413/
 
 ## Q146413: Japanese Characters Not Displayed Correctly in BBS Author List
 
+{% raw %}
+
 	Article: Q146413
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -51,3 +53,5 @@ permalink: /kb/146/Q146413/
 	
 	=============================================================================
 	
+
+{% endraw %}

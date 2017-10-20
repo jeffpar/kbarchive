@@ -6,6 +6,8 @@ permalink: /kb/126/Q126497/
 
 ## Q126497: XADM: Limiting the Number of Recipients of a Message
 
+{% raw %}
+
 	Article: Q126497
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -108,3 +110,5 @@ permalink: /kb/126/Q126497/
 	
 	=============================================================================
 	
+
+{% endraw %}

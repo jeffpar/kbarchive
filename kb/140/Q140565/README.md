@@ -6,6 +6,8 @@ permalink: /kb/140/Q140565/
 
 ## Q140565: PRB: SET INDEX TO Command Causes Error When Run from a Form
 
+{% raw %}
+
 	Article: Q140565
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -109,3 +111,5 @@ permalink: /kb/140/Q140565/
 	
 	=============================================================================
 	
+
+{% endraw %}

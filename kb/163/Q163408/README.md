@@ -6,6 +6,8 @@ permalink: /kb/163/Q163408/
 
 ## Q163408: ODE97: MSDN Sampler: License Help Topic Incorrect
 
+{% raw %}
+
 	Article: Q163408
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/163/Q163408/
 	
 	=============================================================================
 	
+
+{% endraw %}

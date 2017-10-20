@@ -6,6 +6,8 @@ permalink: /kb/093/Q93170/
 
 ## Q93170: BUG: PWB Stores Tabstops Value Incorrectly in TOOLS.INI
 
+{% raw %}
+
 	Article: Q93170
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:2.0,2.1.49
@@ -61,3 +63,5 @@ permalink: /kb/093/Q93170/
 	
 	=============================================================================
 	
+
+{% endraw %}

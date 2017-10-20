@@ -6,6 +6,8 @@ permalink: /kb/081/Q81476/
 
 ## Q81476: MS-DOS Customers Who Want Windows 3.1 EMM386.EXE
 
+{% raw %}
+
 	Article: Q81476
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21; WINDOWS:3.0,3.0a,3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/081/Q81476/
 	
 	=============================================================================
 	
+
+{% endraw %}

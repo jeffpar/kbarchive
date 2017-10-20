@@ -6,6 +6,8 @@ permalink: /kb/153/Q153508/
 
 ## Q153508: DOC: User's Guide Gives Wrong Required Windows NT Version
 
+{% raw %}
+
 	Article: Q153508
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/153/Q153508/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176630/
 
 ## Q176630: SMSINST: How to Use a Custom Progress Dialog
 
+{% raw %}
+
 	Article: Q176630
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/176/Q176630/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/226/Q226851/
 
 ## Q226851: SMS: Initial Site Control File Rejection Doesn't Confgure Client
 
+{% raw %}
+
 	Article: Q226851
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -55,3 +57,5 @@ permalink: /kb/226/Q226851/
 	
 	=============================================================================
 	
+
+{% endraw %}

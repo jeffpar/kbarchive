@@ -6,6 +6,8 @@ permalink: /kb/165/Q165419/
 
 ## Q165419: FIX: SQL Debugger Displays Incorrect Value for Float Variables
 
+{% raw %}
+
 	Article: Q165419
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:5.0
@@ -63,3 +65,5 @@ permalink: /kb/165/Q165419/
 	
 	=============================================================================
 	
+
+{% endraw %}

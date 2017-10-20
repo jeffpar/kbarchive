@@ -6,6 +6,8 @@ permalink: /kb/040/Q40027/
 
 ## Q40027: INFO: #pragma pack() Affects Declarations, Not Definitions
 
+{% raw %}
+
 	Article: Q40027
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
@@ -71,3 +73,5 @@ permalink: /kb/040/Q40027/
 	
 	=============================================================================
 	
+
+{% endraw %}

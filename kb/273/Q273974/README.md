@@ -6,6 +6,8 @@ permalink: /kb/273/Q273974/
 
 ## Q273974: PRB: Session_OnStart Fires When EnableSessionState=False
 
+{% raw %}
+
 	Article: Q273974
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -112,3 +114,5 @@ permalink: /kb/273/Q273974/
 	
 	=============================================================================
 	
+
+{% endraw %}

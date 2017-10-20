@@ -6,6 +6,8 @@ permalink: /kb/270/Q270248/
 
 ## Q270248: RoR: How to Import First Punic War Campaign into Retail Version
 
+{% raw %}
+
 	Article: Q270248
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -95,3 +97,5 @@ permalink: /kb/270/Q270248/
 	
 	=============================================================================
 	
+
+{% endraw %}

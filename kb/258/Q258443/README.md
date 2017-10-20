@@ -6,6 +6,8 @@ permalink: /kb/258/Q258443/
 
 ## Q258443: Cluster Spooler Reports Node Name Instead of Virtual Name
 
+{% raw %}
+
 	Article: Q258443
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0; winnt:1.1
@@ -50,3 +52,5 @@ permalink: /kb/258/Q258443/
 	
 	=============================================================================
 	
+
+{% endraw %}

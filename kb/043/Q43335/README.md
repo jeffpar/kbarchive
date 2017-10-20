@@ -6,6 +6,8 @@ permalink: /kb/043/Q43335/
 
 ## Q43335: cegal() Function in EGA.LIB May Not Work Properly
 
+{% raw %}
+
 	Article: Q43335
 	Product(s): See article
 	Version(s): 1.00
@@ -42,3 +44,5 @@ permalink: /kb/043/Q43335/
 	         inregs.x.bx=0xd;
 	         inregs.x.dx=0;
 	         int86(0x10,&inregs,&outregs);
+
+{% endraw %}

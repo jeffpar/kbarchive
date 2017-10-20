@@ -6,6 +6,8 @@ permalink: /kb/189/Q189138/
 
 ## Q189138: PRB: &quot;error spawning empfile.exe&quot; Building WINCE Application
 
+{% raw %}
+
 	Article: Q189138
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:5.0,2.0
@@ -188,3 +190,5 @@ permalink: /kb/189/Q189138/
 	
 	=============================================================================
 	
+
+{% endraw %}

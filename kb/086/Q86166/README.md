@@ -6,6 +6,8 @@ permalink: /kb/086/Q86166/
 
 ## Q86166: Using SMARTDrive 4.0 with Peachtree Accounting Software
 
+{% raw %}
+
 	Article: Q86166
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/086/Q86166/
 	
 	=============================================================================
 	
+
+{% endraw %}

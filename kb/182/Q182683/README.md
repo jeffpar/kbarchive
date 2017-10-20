@@ -6,6 +6,8 @@ permalink: /kb/182/Q182683/
 
 ## Q182683: Windows Taskbar Unavailable During IMS COBOL Import
 
+{% raw %}
+
 	Article: Q182683
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -67,3 +69,5 @@ permalink: /kb/182/Q182683/
 	
 	=============================================================================
 	
+
+{% endraw %}

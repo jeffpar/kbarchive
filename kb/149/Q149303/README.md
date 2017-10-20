@@ -6,6 +6,8 @@ permalink: /kb/149/Q149303/
 
 ## Q149303: TN3287 Support Added to the TN3270 Server
 
+{% raw %}
+
 	Article: Q149303
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -85,3 +87,5 @@ permalink: /kb/149/Q149303/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194734/
 
 ## Q194734: PC WRmt: Echo and Display Commands do not Work in Remote Client
 
+{% raw %}
+
 	Article: Q194734
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -70,3 +72,5 @@ permalink: /kb/194/Q194734/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191819/
 
 ## Q191819: Still Prompted for Password After Login Script Provides One
 
+{% raw %}
+
 	Article: Q191819
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -50,3 +52,5 @@ permalink: /kb/191/Q191819/
 	
 	=============================================================================
 	
+
+{% endraw %}

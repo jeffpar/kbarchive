@@ -6,6 +6,8 @@ permalink: /kb/203/Q203695/
 
 ## Q203695: Encarta 99: Home Screen Introductory Audio Broken Up or Choppy
 
+{% raw %}
+
 	Article: Q203695
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -70,3 +72,5 @@ permalink: /kb/203/Q203695/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86381/
 
 ## Q86381: PC WSPlus: Err Msg: XXXXXXXX.CAL Is Not a Valid Local...
 
+{% raw %}
+
 	Article: Q86381
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/086/Q86381/
 	
 	=============================================================================
 	
+
+{% endraw %}

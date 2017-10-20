@@ -6,6 +6,8 @@ permalink: /kb/296/Q296575/
 
 ## Q296575: E-mail Message Not Properly Decoded
 
+{% raw %}
+
 	Article: Q296575
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -79,3 +81,5 @@ permalink: /kb/296/Q296575/
 	
 	=============================================================================
 	
+
+{% endraw %}

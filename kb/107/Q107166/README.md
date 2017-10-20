@@ -6,6 +6,8 @@ permalink: /kb/107/Q107166/
 
 ## Q107166: Using the TITLE Option in Viewer
 
+{% raw %}
+
 	Article: Q107166
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -34,3 +36,5 @@ permalink: /kb/107/Q107166/
 	
 	=============================================================================
 	
+
+{% endraw %}

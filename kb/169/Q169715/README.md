@@ -6,6 +6,8 @@ permalink: /kb/169/Q169715/
 
 ## Q169715: XCON: Exchange Server MTA Generates Event ID 208
 
+{% raw %}
+
 	Article: Q169715
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -91,3 +93,5 @@ permalink: /kb/169/Q169715/
 	
 	=============================================================================
 	
+
+{% endraw %}

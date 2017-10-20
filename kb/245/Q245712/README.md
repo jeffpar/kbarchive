@@ -6,6 +6,8 @@ permalink: /kb/245/Q245712/
 
 ## Q245712: XCLN: How to Apply a Hotfix to Outlook 2000
 
+{% raw %}
+
 	Article: Q245712
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -127,3 +129,5 @@ permalink: /kb/245/Q245712/
 	
 	=============================================================================
 	
+
+{% endraw %}

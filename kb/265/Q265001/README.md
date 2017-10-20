@@ -6,6 +6,8 @@ permalink: /kb/265/Q265001/
 
 ## Q265001: PRB: SNA Server Invokable Transaction Programs Are Not Supported
 
+{% raw %}
+
 	Article: Q265001
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3; :
@@ -63,3 +65,5 @@ permalink: /kb/265/Q265001/
 	
 	=============================================================================
 	
+
+{% endraw %}

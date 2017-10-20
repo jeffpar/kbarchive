@@ -6,6 +6,8 @@ permalink: /kb/059/Q59539/
 
 ## Q59539: ICE Error When Casting Pointer Arithmetic Result
 
+{% raw %}
+
 	Article: Q59539
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -60,3 +62,5 @@ permalink: /kb/059/Q59539/
 	Microsoft has confirmed this to be a problem with QuickC Versions 2.00
 	and 2.01. We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

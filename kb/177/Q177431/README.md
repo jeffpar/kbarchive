@@ -6,6 +6,8 @@ permalink: /kb/177/Q177431/
 
 ## Q177431: FIX: C2065: Undeclared Identifier Creating a STL Function Object
 
+{% raw %}
+
 	Article: Q177431
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -134,3 +136,5 @@ permalink: /kb/177/Q177431/
 	
 	=============================================================================
 	
+
+{% endraw %}

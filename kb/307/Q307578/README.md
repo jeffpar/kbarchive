@@ -6,6 +6,8 @@ permalink: /kb/307/Q307578/
 
 ## Q307578: Metal Gear Solid: Game Quits Unexpectedly When Character Dies
 
+{% raw %}
+
 	Article: Q307578
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/307/Q307578/
 	
 	=============================================================================
 	
+
+{% endraw %}

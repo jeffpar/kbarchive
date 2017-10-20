@@ -6,6 +6,8 @@ permalink: /kb/217/Q217004/
 
 ## Q217004: BackOffice Installer Tool Does Not Delete Password Cache File
 
+{% raw %}
+
 	Article: Q217004
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/217/Q217004/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/262/Q262231/
 
 ## Q262231: SMS: Site Server Installation on Windows 2000 Terminal Server
 
+{% raw %}
+
 	Article: Q262231
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -66,3 +68,5 @@ permalink: /kb/262/Q262231/
 	
 	=============================================================================
 	
+
+{% endraw %}

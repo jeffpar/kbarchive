@@ -6,6 +6,8 @@ permalink: /kb/180/Q180544/
 
 ## Q180544: XADM: SMTP Display Name in Korean Displays Incorrectly
 
+{% raw %}
+
 	Article: Q180544
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -83,3 +85,5 @@ permalink: /kb/180/Q180544/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166584/
 
 ## Q166584: XFOR: IMS Does Not Immediately Reject Inbound Connections
 
+{% raw %}
+
 	Article: Q166584
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -60,3 +62,5 @@ permalink: /kb/166/Q166584/
 	
 	=============================================================================
 	
+
+{% endraw %}

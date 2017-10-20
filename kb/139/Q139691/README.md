@@ -6,6 +6,8 @@ permalink: /kb/139/Q139691/
 
 ## Q139691: International Characters in User Names Not Handled Properly
 
+{% raw %}
+
 	Article: Q139691
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -80,3 +82,5 @@ permalink: /kb/139/Q139691/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/028/Q28020/
 
 ## Q28020: How to Modify the BASIC 6.00 Run-Time Module with BUILDTRM
 
+{% raw %}
+
 	Article: Q28020
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -57,3 +59,5 @@ permalink: /kb/028/Q28020/
 	   ===== COMMAND LINE to USE the RUNTIME =====
 	
 	   LINK IMPORT.OBJ your objects,executable,,NEWRUNTIME.LIB /NOD
+
+{% endraw %}

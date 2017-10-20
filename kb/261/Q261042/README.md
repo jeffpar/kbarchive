@@ -6,6 +6,8 @@ permalink: /kb/261/Q261042/
 
 ## Q261042: MCM2: Textures and Colors on the Ground Are Distorted
 
+{% raw %}
+
 	Article: Q261042
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -80,3 +82,5 @@ permalink: /kb/261/Q261042/
 	
 	=============================================================================
 	
+
+{% endraw %}

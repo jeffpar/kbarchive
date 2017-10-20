@@ -6,6 +6,8 @@ permalink: /kb/296/Q296159/
 
 ## Q296159: Setting Permissions on Packages Using MOF Files May Not Work
 
+{% raw %}
+
 	Article: Q296159
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -67,3 +69,5 @@ permalink: /kb/296/Q296159/
 	
 	=============================================================================
 	
+
+{% endraw %}

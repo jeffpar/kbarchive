@@ -6,6 +6,8 @@ permalink: /kb/145/Q145719/
 
 ## Q145719: BUG: DAOENROL - Can't See Added Records in Windows 95
 
+{% raw %}
+
 	Article: Q145719
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1; :
@@ -107,3 +109,5 @@ permalink: /kb/145/Q145719/
 	
 	=============================================================================
 	
+
+{% endraw %}

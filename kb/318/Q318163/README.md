@@ -6,6 +6,8 @@ permalink: /kb/318/Q318163/
 
 ## Q318163: SMS: Client Service Does Not Quit During Shutdown
 
+{% raw %}
+
 	Article: Q318163
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3,2.0 SP4
@@ -132,3 +134,5 @@ permalink: /kb/318/Q318163/
 	
 	=============================================================================
 	
+
+{% endraw %}

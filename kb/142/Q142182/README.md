@@ -6,6 +6,8 @@ permalink: /kb/142/Q142182/
 
 ## Q142182: How to Set Up Remote Mail for MS Mail in Microsoft Exchange
 
+{% raw %}
+
 	Article: Q142182
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -69,3 +71,5 @@ permalink: /kb/142/Q142182/
 	
 	=============================================================================
 	
+
+{% endraw %}

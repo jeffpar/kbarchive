@@ -6,6 +6,8 @@ permalink: /kb/195/Q195515/
 
 ## Q195515: XADM:Perform a full online backup of servers after a server move
 
+{% raw %}
+
 	Article: Q195515
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -51,3 +53,5 @@ permalink: /kb/195/Q195515/
 	
 	=============================================================================
 	
+
+{% endraw %}

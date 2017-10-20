@@ -6,6 +6,8 @@ permalink: /kb/083/Q83892/
 
 ## Q83892: Loss of CMOS Settings When Rebooting on Intel Machines
 
+{% raw %}
+
 	Article: Q83892
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/083/Q83892/
 	
 	=============================================================================
 	
+
+{% endraw %}

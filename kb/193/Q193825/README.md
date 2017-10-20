@@ -6,6 +6,8 @@ permalink: /kb/193/Q193825/
 
 ## Q193825: NET TIME /Domain Will Not Sync Time w/ Domain Time Source Srv
 
+{% raw %}
+
 	Article: Q193825
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -113,3 +115,5 @@ permalink: /kb/193/Q193825/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67341/
 
 ## Q67341: Trail of Multiple Cursors in Desqview 386
 
+{% raw %}
+
 	Article: Q67341
 	Product(s): See article
 	Version(s): 1.00
@@ -23,3 +25,5 @@ permalink: /kb/067/Q67341/
 	the Desqview Setup program, the mouse cursor will display normally.
 	Note: This problem will not occur if the mouse is connected to the
 	serial port.
+
+{% endraw %}

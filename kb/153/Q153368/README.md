@@ -6,6 +6,8 @@ permalink: /kb/153/Q153368/
 
 ## Q153368: SMS: Deleting Computers Fails with &quot;Out Of Locks&quot; Errors
 
+{% raw %}
+
 	Article: Q153368
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -72,3 +74,5 @@ permalink: /kb/153/Q153368/
 	
 	=============================================================================
 	
+
+{% endraw %}

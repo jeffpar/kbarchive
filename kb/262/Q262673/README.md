@@ -6,6 +6,8 @@ permalink: /kb/262/Q262673/
 
 ## Q262673: XADM: Modified Deferred Delivery Messages Are Never Sent
 
+{% raw %}
+
 	Article: Q262673
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5; :
@@ -58,3 +60,5 @@ permalink: /kb/262/Q262673/
 	
 	=============================================================================
 	
+
+{% endraw %}

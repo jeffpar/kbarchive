@@ -6,6 +6,8 @@ permalink: /kb/082/Q82403/
 
 ## Q82403: Attachmate 3.21 Font Lists Multiple Times
 
+{% raw %}
+
 	Article: Q82403
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/082/Q82403/
 	
 	=============================================================================
 	
+
+{% endraw %}

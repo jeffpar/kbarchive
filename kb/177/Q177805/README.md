@@ -6,6 +6,8 @@ permalink: /kb/177/Q177805/
 
 ## Q177805: XCLN: Setup Cannot Register Comcat.dll in the System Registry
 
+{% raw %}
+
 	Article: Q177805
 	Product(s): Microsoft Exchange
 	Version(s): 8.03
@@ -53,3 +55,5 @@ permalink: /kb/177/Q177805/
 	
 	=============================================================================
 	
+
+{% endraw %}

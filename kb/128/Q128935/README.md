@@ -6,6 +6,8 @@ permalink: /kb/128/Q128935/
 
 ## Q128935: LPQ Running Recursively May Hang Windows NT LPD Server
 
+{% raw %}
+
 	Article: Q128935
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -53,3 +55,5 @@ permalink: /kb/128/Q128935/
 	
 	=============================================================================
 	
+
+{% endraw %}

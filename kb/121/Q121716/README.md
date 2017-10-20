@@ -6,6 +6,8 @@ permalink: /kb/121/Q121716/
 
 ## Q121716: PC WRmt:  Duplicate Entries in the Personal Address Book
 
+{% raw %}
+
 	Article: Q121716
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -40,3 +42,5 @@ permalink: /kb/121/Q121716/
 	
 	=============================================================================
 	
+
+{% endraw %}

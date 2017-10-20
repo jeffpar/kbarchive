@@ -6,6 +6,8 @@ permalink: /kb/176/Q176845/
 
 ## Q176845: WD97: Some Style Formats Not Displayed with Reveal Formatting
 
+{% raw %}
+
 	Article: Q176845
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/176/Q176845/
 	
 	=============================================================================
 	
+
+{% endraw %}

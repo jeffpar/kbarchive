@@ -6,6 +6,8 @@ permalink: /kb/314/Q314783/
 
 ## Q314783: HOW TO: Plan SQL Server CE Security for Mobile Devices in IIS
 
+{% raw %}
+
 	Article: Q314783
 	Product(s): Internet Information Server
 	Version(s): 1.0,1.1,5.0
@@ -184,3 +186,5 @@ permalink: /kb/314/Q314783/
 	
 	=============================================================================
 	
+
+{% endraw %}

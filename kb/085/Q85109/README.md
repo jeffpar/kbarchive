@@ -6,6 +6,8 @@ permalink: /kb/085/Q85109/
 
 ## Q85109: VB3 How to Edit Grid Cells in VB Using Overlapped Text Box
 
+{% raw %}
+
 	Article: Q85109
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -179,3 +181,5 @@ permalink: /kb/085/Q85109/
 	
 	=============================================================================
 	
+
+{% endraw %}

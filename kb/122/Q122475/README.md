@@ -6,6 +6,8 @@ permalink: /kb/122/Q122475/
 
 ## Q122475: Asimov: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q122475
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -40,3 +42,5 @@ permalink: /kb/122/Q122475/
 	
 	=============================================================================
 	
+
+{% endraw %}

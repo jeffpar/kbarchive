@@ -6,6 +6,8 @@ permalink: /kb/114/Q114638/
 
 ## Q114638: Only 60 Clients Can Simultaneously Access a TCP/IP Share
 
+{% raw %}
+
 	Article: Q114638
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -67,3 +69,5 @@ permalink: /kb/114/Q114638/
 	
 	=============================================================================
 	
+
+{% endraw %}

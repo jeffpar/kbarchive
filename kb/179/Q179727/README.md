@@ -6,6 +6,8 @@ permalink: /kb/179/Q179727/
 
 ## Q179727: Top Articles for Windows NT 4.0
 
+{% raw %}
+
 	Article: Q179727
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -240,3 +242,5 @@ permalink: /kb/179/Q179727/
 	
 	=============================================================================
 	
+
+{% endraw %}

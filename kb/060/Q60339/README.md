@@ -6,6 +6,8 @@ permalink: /kb/060/Q60339/
 
 ## Q60339: Reference to &quot;Push&quot; Function Incorrect Editor User's Guide
 
+{% raw %}
+
 	Article: Q60339
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -18,3 +20,5 @@ permalink: /kb/060/Q60339/
 	switch Savescreen is "for use with the Push and Exit functions." Since
 	there is no "Push" function, this should read "for use with the Shell
 	and Exit functions."
+
+{% endraw %}

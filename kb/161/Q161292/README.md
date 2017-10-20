@@ -6,6 +6,8 @@ permalink: /kb/161/Q161292/
 
 ## Q161292: WD97: Undo Insert Page Numbers Causes Word To Hang
 
+{% raw %}
+
 	Article: Q161292
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/161/Q161292/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/092/Q92904/
 
 ## Q92904: Windows and Quarterdeck QEMM386 Require WINHIRAM.VXD File
 
+{% raw %}
+
 	Article: Q92904
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/092/Q92904/
 	
 	=============================================================================
 	
+
+{% endraw %}

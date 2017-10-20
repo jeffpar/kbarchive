@@ -6,6 +6,8 @@ permalink: /kb/190/Q190015/
 
 ## Q190015: Setting LogonMethod to Batch Causes &quot;Parameter is Incorrect&quot;
 
+{% raw %}
+
 	Article: Q190015
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -57,3 +59,5 @@ permalink: /kb/190/Q190015/
 	
 	=============================================================================
 	
+
+{% endraw %}

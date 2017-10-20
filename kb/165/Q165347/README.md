@@ -6,6 +6,8 @@ permalink: /kb/165/Q165347/
 
 ## Q165347: FP: FrontPage Save Results Forms Altered By Web Browsers
 
+{% raw %}
+
 	Article: Q165347
 	Product(s): Word Front Page
 	Version(s): MACINTOSH:1.0; WINDOWS:1.1
@@ -87,3 +89,5 @@ permalink: /kb/165/Q165347/
 	
 	=============================================================================
 	
+
+{% endraw %}

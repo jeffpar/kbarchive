@@ -6,6 +6,8 @@ permalink: /kb/160/Q160973/
 
 ## Q160973: SMS: How to Restrict Access to NetWare Servers
 
+{% raw %}
+
 	Article: Q160973
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -130,3 +132,5 @@ permalink: /kb/160/Q160973/
 	
 	=============================================================================
 	
+
+{% endraw %}

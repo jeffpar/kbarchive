@@ -6,6 +6,8 @@ permalink: /kb/153/Q153650/
 
 ## Q153650: Database Manager Does Not Delete Collected Files
 
+{% raw %}
+
 	Article: Q153650
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -60,3 +62,5 @@ permalink: /kb/153/Q153650/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235679/
 
 ## Q235679: XADM: Slow Performance Opening Unread Item from Public Folder
 
+{% raw %}
+
 	Article: Q235679
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -95,3 +97,5 @@ permalink: /kb/235/Q235679/
 	
 	=============================================================================
 	
+
+{% endraw %}

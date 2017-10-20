@@ -6,6 +6,8 @@ permalink: /kb/040/Q40182/
 
 ## Q40182: Use of Wrong Library Causes Unresolved External on &#95;&#95;aDBused
 
+{% raw %}
+
 	Article: Q40182
 	Product(s): See article
 	Version(s): 2.00
@@ -44,3 +46,5 @@ permalink: /kb/040/Q40182/
 	
 	With linker versions later than 3.65, this message will occur for each
 	module in the program list.
+
+{% endraw %}

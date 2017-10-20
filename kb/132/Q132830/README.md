@@ -6,6 +6,8 @@ permalink: /kb/132/Q132830/
 
 ## Q132830: Some Start Menu Icons Different After Upgrading from Win 3.1
 
+{% raw %}
+
 	Article: Q132830
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -45,3 +47,5 @@ permalink: /kb/132/Q132830/
 	
 	=============================================================================
 	
+
+{% endraw %}

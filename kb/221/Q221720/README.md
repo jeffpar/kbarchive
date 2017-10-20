@@ -6,6 +6,8 @@ permalink: /kb/221/Q221720/
 
 ## Q221720: FIX: COM Servers Cannot Redimension Arrays Passed By Reference
 
+{% raw %}
+
 	Article: Q221720
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -118,3 +120,5 @@ permalink: /kb/221/Q221720/
 	
 	=============================================================================
 	
+
+{% endraw %}

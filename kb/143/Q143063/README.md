@@ -6,6 +6,8 @@ permalink: /kb/143/Q143063/
 
 ## Q143063: How to Remove White Lines in Mailing Labels and Reports
 
+{% raw %}
+
 	Article: Q143063
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -69,3 +71,5 @@ permalink: /kb/143/Q143063/
 	
 	=============================================================================
 	
+
+{% endraw %}

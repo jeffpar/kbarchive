@@ -6,6 +6,8 @@ permalink: /kb/116/Q116380/
 
 ## Q116380: BUG: Semicolon in a Table Name Displays as Underscore
 
+{% raw %}
+
 	Article: Q116380
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -64,3 +66,5 @@ permalink: /kb/116/Q116380/
 	
 	=============================================================================
 	
+
+{% endraw %}

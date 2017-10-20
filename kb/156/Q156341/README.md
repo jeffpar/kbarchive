@@ -6,6 +6,8 @@ permalink: /kb/156/Q156341/
 
 ## Q156341: PRB: Cannot Load the Same Class Library More Than Once
 
+{% raw %}
+
 	Article: Q156341
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -97,3 +99,5 @@ permalink: /kb/156/Q156341/
 	
 	=============================================================================
 	
+
+{% endraw %}

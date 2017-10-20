@@ -6,6 +6,8 @@ permalink: /kb/161/Q161100/
 
 ## Q161100: File May Be Truncated When Copied to a Full Network Drive
 
+{% raw %}
+
 	Article: Q161100
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -158,3 +160,5 @@ permalink: /kb/161/Q161100/
 	
 	=============================================================================
 	
+
+{% endraw %}

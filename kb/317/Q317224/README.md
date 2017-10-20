@@ -6,6 +6,8 @@ permalink: /kb/317/Q317224/
 
 ## Q317224: &quot;Cdralw2k Service Failed&quot; Err Msg Installing Media Player 7.0
 
+{% raw %}
+
 	Article: Q317224
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -103,3 +105,5 @@ permalink: /kb/317/Q317224/
 	
 	=============================================================================
 	
+
+{% endraw %}

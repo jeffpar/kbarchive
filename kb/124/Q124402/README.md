@@ -6,6 +6,8 @@ permalink: /kb/124/Q124402/
 
 ## Q124402: Calling a User-Defined Function (UDF) from SQL SELECT
 
+{% raw %}
+
 	Article: Q124402
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0
@@ -153,3 +155,5 @@ permalink: /kb/124/Q124402/
 	
 	=============================================================================
 	
+
+{% endraw %}

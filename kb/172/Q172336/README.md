@@ -6,6 +6,8 @@ permalink: /kb/172/Q172336/
 
 ## Q172336: PRB: Assertion Launching Program with Tip of Day &amp; Splash Screen
 
+{% raw %}
+
 	Article: Q172336
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -122,3 +124,5 @@ permalink: /kb/172/Q172336/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/064/Q64851/
 
 ## Q64851: Calendar Err Msg: Cannot Find Calendar Change File...
 
+{% raw %}
+
 	Article: Q64851
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -53,3 +55,5 @@ permalink: /kb/064/Q64851/
 	
 	=============================================================================
 	
+
+{% endraw %}

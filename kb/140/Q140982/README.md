@@ -6,6 +6,8 @@ permalink: /kb/140/Q140982/
 
 ## Q140982: PPT7: PowerPoint Presentation Conferencing: Hidden Slides
 
+{% raw %}
+
 	Article: Q140982
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -62,3 +64,5 @@ permalink: /kb/140/Q140982/
 	
 	=============================================================================
 	
+
+{% endraw %}

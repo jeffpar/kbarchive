@@ -6,6 +6,8 @@ permalink: /kb/138/Q138634/
 
 ## Q138634: Error Message: Modem is Busy or Not Responding
 
+{% raw %}
+
 	Article: Q138634
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -157,3 +159,5 @@ permalink: /kb/138/Q138634/
 	
 	=============================================================================
 	
+
+{% endraw %}

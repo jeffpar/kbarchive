@@ -6,6 +6,8 @@ permalink: /kb/180/Q180408/
 
 ## Q180408: Country Does Not Appear in Telephony Country Code List
 
+{% raw %}
+
 	Article: Q180408
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -95,3 +97,5 @@ permalink: /kb/180/Q180408/
 	
 	=============================================================================
 	
+
+{% endraw %}

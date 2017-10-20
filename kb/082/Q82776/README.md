@@ -6,6 +6,8 @@ permalink: /kb/082/Q82776/
 
 ## Q82776: Setup Hangs After Successful Boot into Windows
 
+{% raw %}
+
 	Article: Q82776
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -71,3 +73,5 @@ permalink: /kb/082/Q82776/
 	
 	=============================================================================
 	
+
+{% endraw %}

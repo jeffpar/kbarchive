@@ -6,6 +6,8 @@ permalink: /kb/177/Q177410/
 
 ## Q177410: No IGMP Packets Received When Using Starlight Software
 
+{% raw %}
+
 	Article: Q177410
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51
@@ -73,3 +75,5 @@ permalink: /kb/177/Q177410/
 	
 	=============================================================================
 	
+
+{% endraw %}

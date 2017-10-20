@@ -6,6 +6,8 @@ permalink: /kb/159/Q159005/
 
 ## Q159005: CardBus PCMCIA Controller Disabled After Second Boot
 
+{% raw %}
+
 	Article: Q159005
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -77,3 +79,5 @@ permalink: /kb/159/Q159005/
 	
 	=============================================================================
 	
+
+{% endraw %}

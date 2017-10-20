@@ -6,6 +6,8 @@ permalink: /kb/215/Q215859/
 
 ## Q215859: Event ID 12288, 5705 on PDC Because Hard Disk Is Full
 
+{% raw %}
+
 	Article: Q215859
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -167,3 +169,5 @@ permalink: /kb/215/Q215859/
 	
 	=============================================================================
 	
+
+{% endraw %}

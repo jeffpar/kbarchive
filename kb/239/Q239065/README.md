@@ -6,6 +6,8 @@ permalink: /kb/239/Q239065/
 
 ## Q239065: XADM: Error Message: LDAP Authentication Method Is Not Supported
 
+{% raw %}
+
 	Article: Q239065
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -63,3 +65,5 @@ permalink: /kb/239/Q239065/
 	
 	=============================================================================
 	
+
+{% endraw %}

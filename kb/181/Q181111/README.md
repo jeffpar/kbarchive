@@ -6,6 +6,8 @@ permalink: /kb/181/Q181111/
 
 ## Q181111: WD97: How to Automatically Display Drop-Down Form Field Contents
 
+{% raw %}
+
 	Article: Q181111
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/181/Q181111/
 	
 	=============================================================================
 	
+
+{% endraw %}

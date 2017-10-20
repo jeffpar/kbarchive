@@ -6,6 +6,8 @@ permalink: /kb/151/Q151697/
 
 ## Q151697: SNA Server 2.11 May Send 2nd BID to 3270 Emulator in Error
 
+{% raw %}
+
 	Article: Q151697
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11,2.11 SP1
@@ -84,3 +86,5 @@ permalink: /kb/151/Q151697/
 	
 	=============================================================================
 	
+
+{% endraw %}

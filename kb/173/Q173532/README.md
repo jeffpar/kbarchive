@@ -6,6 +6,8 @@ permalink: /kb/173/Q173532/
 
 ## Q173532: RADIUS Authentication Causes Access Violation in Mprouter.exe
 
+{% raw %}
+
 	Article: Q173532
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/173/Q173532/
 	
 	=============================================================================
 	
+
+{% endraw %}

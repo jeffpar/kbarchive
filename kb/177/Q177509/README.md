@@ -6,6 +6,8 @@ permalink: /kb/177/Q177509/
 
 ## Q177509: Error Message: Failed to Enumerate Volumes in Dfs...
 
+{% raw %}
+
 	Article: Q177509
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/177/Q177509/
 	
 	=============================================================================
 	
+
+{% endraw %}

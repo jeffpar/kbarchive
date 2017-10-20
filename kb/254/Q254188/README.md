@@ -6,6 +6,8 @@ permalink: /kb/254/Q254188/
 
 ## Q254188: XADM: How to Move the Directory Replication Connector
 
+{% raw %}
+
 	Article: Q254188
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -92,3 +94,5 @@ permalink: /kb/254/Q254188/
 	
 	=============================================================================
 	
+
+{% endraw %}

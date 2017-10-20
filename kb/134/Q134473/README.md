@@ -6,6 +6,8 @@ permalink: /kb/134/Q134473/
 
 ## Q134473: Cannot Configure Network with More than One Network Card
 
+{% raw %}
+
 	Article: Q134473
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/134/Q134473/
 	
 	=============================================================================
 	
+
+{% endraw %}

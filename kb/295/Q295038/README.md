@@ -6,6 +6,8 @@ permalink: /kb/295/Q295038/
 
 ## Q295038: SMS: Remote Provider Account Not Removed When Site Uninstalled
 
+{% raw %}
+
 	Article: Q295038
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -58,3 +60,5 @@ permalink: /kb/295/Q295038/
 	
 	=============================================================================
 	
+
+{% endraw %}

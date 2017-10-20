@@ -6,6 +6,8 @@ permalink: /kb/074/Q74419/
 
 ## Q74419: Norton's Erase Protect Program Doesn't Work with Windows 3.0
 
+{% raw %}
+
 	Article: Q74419
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -83,3 +85,5 @@ permalink: /kb/074/Q74419/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126280/
 
 ## Q126280: Windows 95 ScanDisk (SCANDSKW) Exit Codes
 
+{% raw %}
+
 	Article: Q126280
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/126/Q126280/
 	
 	=============================================================================
 	
+
+{% endraw %}

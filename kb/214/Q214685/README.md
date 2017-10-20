@@ -6,6 +6,8 @@ permalink: /kb/214/Q214685/
 
 ## Q214685: XFOR: CDONTS Not Thread-Safe, Crashes Under Stress
 
+{% raw %}
+
 	Article: Q214685
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -73,3 +75,5 @@ permalink: /kb/214/Q214685/
 	
 	=============================================================================
 	
+
+{% endraw %}

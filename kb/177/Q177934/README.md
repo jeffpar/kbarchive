@@ -6,6 +6,8 @@ permalink: /kb/177/Q177934/
 
 ## Q177934: GP Fault When Clicking Properties on Any Local Group
 
+{% raw %}
+
 	Article: Q177934
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -67,3 +69,5 @@ permalink: /kb/177/Q177934/
 	
 	=============================================================================
 	
+
+{% endraw %}

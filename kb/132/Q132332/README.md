@@ -6,6 +6,8 @@ permalink: /kb/132/Q132332/
 
 ## Q132332: How to Back Up the Registry in Microsoft Windows 95
 
+{% raw %}
+
 	Article: Q132332
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -136,3 +138,5 @@ permalink: /kb/132/Q132332/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164656/
 
 ## Q164656: Windows 95 Stops Responding During 3270 SNA Server Logon
 
+{% raw %}
+
 	Article: Q164656
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/164/Q164656/
 	
 	=============================================================================
 	
+
+{% endraw %}

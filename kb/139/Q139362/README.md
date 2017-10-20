@@ -6,6 +6,8 @@ permalink: /kb/139/Q139362/
 
 ## Q139362: INFO: Readme.wri: Section 5, New Features of Visual SourceSafe
 
+{% raw %}
+
 	Article: Q139362
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/139/Q139362/
 	
 	=============================================================================
 	
+
+{% endraw %}

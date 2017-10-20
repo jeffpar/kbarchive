@@ -6,6 +6,8 @@ permalink: /kb/163/Q163774/
 
 ## Q163774: Err Msg: HTTP/1.0 406 No Acceptable Objects Were Found
 
+{% raw %}
+
 	Article: Q163774
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,4.0
@@ -69,3 +71,5 @@ permalink: /kb/163/Q163774/
 	
 	=============================================================================
 	
+
+{% endraw %}

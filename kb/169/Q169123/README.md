@@ -6,6 +6,8 @@ permalink: /kb/169/Q169123/
 
 ## Q169123: Error Message: Installation Failed While Installing from .INF
 
+{% raw %}
+
 	Article: Q169123
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/169/Q169123/
 	
 	=============================================================================
 	
+
+{% endraw %}

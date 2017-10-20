@@ -6,6 +6,8 @@ permalink: /kb/190/Q190119/
 
 ## Q190119: Games Error Message: Error: 5
 
+{% raw %}
+
 	Article: Q190119
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -139,3 +141,5 @@ permalink: /kb/190/Q190119/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/283/Q283903/
 
 ## Q283903: XADM: Event ID 8512 Logged by Exchange Server Information Store
 
+{% raw %}
+
 	Article: Q283903
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -104,3 +106,5 @@ permalink: /kb/283/Q283903/
 	
 	=============================================================================
 	
+
+{% endraw %}

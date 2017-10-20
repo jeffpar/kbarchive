@@ -6,6 +6,8 @@ permalink: /kb/117/Q117874/
 
 ## Q117874: Drive C and Drive H Are Not Available for Swap File
 
+{% raw %}
+
 	Article: Q117874
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22; WINDOWS:3.11
@@ -59,3 +61,5 @@ permalink: /kb/117/Q117874/
 	
 	=============================================================================
 	
+
+{% endraw %}

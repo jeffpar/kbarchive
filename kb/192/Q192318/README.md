@@ -6,6 +6,8 @@ permalink: /kb/192/Q192318/
 
 ## Q192318: WD97: Use Field to Print Text in Footer Except on Last Page
 
+{% raw %}
+
 	Article: Q192318
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -78,3 +80,5 @@ permalink: /kb/192/Q192318/
 	
 	=============================================================================
 	
+
+{% endraw %}

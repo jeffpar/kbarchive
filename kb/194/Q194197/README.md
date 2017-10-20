@@ -6,6 +6,8 @@ permalink: /kb/194/Q194197/
 
 ## Q194197: FIX: Application Setup Fails on Some Computers
 
+{% raw %}
+
 	Article: Q194197
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,6.0
@@ -142,3 +144,5 @@ permalink: /kb/194/Q194197/
 	
 	=============================================================================
 	
+
+{% endraw %}

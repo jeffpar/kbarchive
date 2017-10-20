@@ -6,6 +6,8 @@ permalink: /kb/163/Q163561/
 
 ## Q163561: GetLuaReturnCode Mapping Problems and Possible Access Violation
 
+{% raw %}
+
 	Article: Q163561
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,2.11 SP1,3.0
@@ -80,3 +82,5 @@ permalink: /kb/163/Q163561/
 	
 	=============================================================================
 	
+
+{% endraw %}

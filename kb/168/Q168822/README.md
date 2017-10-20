@@ -6,6 +6,8 @@ permalink: /kb/168/Q168822/
 
 ## Q168822: INFO: List of Visual Basic 5.0 Books and Training Material
 
+{% raw %}
+
 	Article: Q168822
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -116,3 +118,5 @@ permalink: /kb/168/Q168822/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/253/Q253046/
 
 ## Q253046: XCLN: Error Message Opening Routed Document from Office
 
+{% raw %}
+
 	Article: Q253046
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -116,3 +118,5 @@ permalink: /kb/253/Q253046/
 	
 	=============================================================================
 	
+
+{% endraw %}

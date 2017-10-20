@@ -6,6 +6,8 @@ permalink: /kb/165/Q165296/
 
 ## Q165296: PRB: Hiding Standard Toolbar Moves Position of Command Window
 
+{% raw %}
+
 	Article: Q165296
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -59,3 +61,5 @@ permalink: /kb/165/Q165296/
 	
 	=============================================================================
 	
+
+{% endraw %}

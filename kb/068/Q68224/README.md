@@ -6,6 +6,8 @@ permalink: /kb/068/Q68224/
 
 ## Q68224: BASIC Program to Reboot or &quot;Cold&quot; Reboot the Machine
 
+{% raw %}
+
 	Article: Q68224
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -72,3 +74,5 @@ permalink: /kb/068/Q68224/
 	For more information about calling C from BASIC, search on the word
 	BAS2C. For more information about calling assembly language from
 	BASIC, search on the word BAS2MASM.
+
+{% endraw %}

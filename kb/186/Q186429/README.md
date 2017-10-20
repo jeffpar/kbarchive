@@ -6,6 +6,8 @@ permalink: /kb/186/Q186429/
 
 ## Q186429: HOWTO: Create Scrollable Viewports
 
+{% raw %}
+
 	Article: Q186429
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -184,3 +186,5 @@ permalink: /kb/186/Q186429/
 	
 	=============================================================================
 	
+
+{% endraw %}

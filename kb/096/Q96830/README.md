@@ -6,6 +6,8 @@ permalink: /kb/096/Q96830/
 
 ## Q96830: Windows 3.0 Doesn't Run in 386 Enhanced Mode
 
+{% raw %}
+
 	Article: Q96830
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21; WINDOWS:3.0,3.0a
@@ -228,3 +230,5 @@ permalink: /kb/096/Q96830/
 	
 	=============================================================================
 	
+
+{% endraw %}

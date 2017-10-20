@@ -6,6 +6,8 @@ permalink: /kb/151/Q151781/
 
 ## Q151781: Renaming Server-Based Profiles for Use by Local User Accounts
 
+{% raw %}
+
 	Article: Q151781
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -50,3 +52,5 @@ permalink: /kb/151/Q151781/
 	
 	=============================================================================
 	
+
+{% endraw %}

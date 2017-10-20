@@ -6,6 +6,8 @@ permalink: /kb/135/Q135033/
 
 ## Q135033: PC NTMMTA: Service Account Cannot Be a Group
 
+{% raw %}
+
 	Article: Q135033
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -58,3 +60,5 @@ permalink: /kb/135/Q135033/
 	
 	=============================================================================
 	
+
+{% endraw %}

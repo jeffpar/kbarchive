@@ -6,6 +6,8 @@ permalink: /kb/164/Q164910/
 
 ## Q164910: SNAHOSTPROCESS Requires Restart With New Host Security Domain
 
+{% raw %}
+
 	Article: Q164910
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -89,3 +91,5 @@ permalink: /kb/164/Q164910/
 	
 	=============================================================================
 	
+
+{% endraw %}

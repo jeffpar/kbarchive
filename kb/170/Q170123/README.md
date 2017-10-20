@@ -6,6 +6,8 @@ permalink: /kb/170/Q170123/
 
 ## Q170123: FP: Clicking &quot;Preview In Browser&quot; Saves Work in Progress
 
+{% raw %}
+
 	Article: Q170123
 	Product(s): Word Front Page
 	Version(s): windows:97; macintosh:1.0
@@ -53,3 +55,5 @@ permalink: /kb/170/Q170123/
 	
 	=============================================================================
 	
+
+{% endraw %}

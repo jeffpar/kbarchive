@@ -6,6 +6,8 @@ permalink: /kb/316/Q316340/
 
 ## Q316340: HOW TO: Back Up Files and Folders on a  Computer in Windows NT
 
+{% raw %}
+
 	Article: Q316340
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -130,3 +132,5 @@ permalink: /kb/316/Q316340/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167152/
 
 ## Q167152: SMS: &quot;Couldn't Create A New Package&quot; Error
 
+{% raw %}
+
 	Article: Q167152
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -63,3 +65,5 @@ permalink: /kb/167/Q167152/
 	
 	=============================================================================
 	
+
+{% endraw %}

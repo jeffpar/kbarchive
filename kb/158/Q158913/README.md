@@ -6,6 +6,8 @@ permalink: /kb/158/Q158913/
 
 ## Q158913: PPT: Sample Macro Code To Visit Every Open Slide
 
+{% raw %}
+
 	Article: Q158913
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -122,3 +124,5 @@ permalink: /kb/158/Q158913/
 	
 	=============================================================================
 	
+
+{% endraw %}

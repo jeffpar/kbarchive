@@ -6,6 +6,8 @@ permalink: /kb/243/Q243167/
 
 ## Q243167: Tcmapp.exe Does Not Properly Handle Removed Line Device
 
+{% raw %}
+
 	Article: Q243167
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/243/Q243167/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/274/Q274108/
 
 ## Q274108: SMS: How to Troubleshoot NDS Logon Point Creation Failures
 
+{% raw %}
+
 	Article: Q274108
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -98,3 +100,5 @@ permalink: /kb/274/Q274108/
 	
 	=============================================================================
 	
+
+{% endraw %}

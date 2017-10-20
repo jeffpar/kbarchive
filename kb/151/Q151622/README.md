@@ -6,6 +6,8 @@ permalink: /kb/151/Q151622/
 
 ## Q151622: IIS Sends Image Map File Instead of Processing the Script
 
+{% raw %}
+
 	Article: Q151622
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -62,3 +64,5 @@ permalink: /kb/151/Q151622/
 	
 	=============================================================================
 	
+
+{% endraw %}

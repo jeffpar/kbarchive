@@ -6,6 +6,8 @@ permalink: /kb/130/Q130134/
 
 ## Q130134: 500 Nations: Seneca Town Copies to Clipboard as Huron Village
 
+{% raw %}
+
 	Article: Q130134
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -75,3 +77,5 @@ permalink: /kb/130/Q130134/
 	
 	=============================================================================
 	
+
+{% endraw %}

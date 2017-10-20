@@ -6,6 +6,8 @@ permalink: /kb/131/Q131625/
 
 ## Q131625: Multiple APPN-capable Connections to Same AS/400 Not Supported
 
+{% raw %}
+
 	Article: Q131625
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -85,3 +87,5 @@ permalink: /kb/131/Q131625/
 	
 	=============================================================================
 	
+
+{% endraw %}

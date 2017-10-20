@@ -6,6 +6,8 @@ permalink: /kb/200/Q200294/
 
 ## Q200294: BUG: Cannot Use LoadPicture() with Images Included in Project
 
+{% raw %}
+
 	Article: Q200294
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -98,3 +100,5 @@ permalink: /kb/200/Q200294/
 	
 	=============================================================================
 	
+
+{% endraw %}

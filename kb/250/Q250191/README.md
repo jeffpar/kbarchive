@@ -6,6 +6,8 @@ permalink: /kb/250/Q250191/
 
 ## Q250191: Cannot Access InetKit Library Using BackOffice with Windows 2000
 
+{% raw %}
+
 	Article: Q250191
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.5
@@ -79,3 +81,5 @@ permalink: /kb/250/Q250191/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/115/Q115063/
 
 ## Q115063: Dinosaurs May Have Poor Printed Output
 
+{% raw %}
+
 	Article: Q115063
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -45,3 +47,5 @@ permalink: /kb/115/Q115063/
 	
 	=============================================================================
 	
+
+{% endraw %}

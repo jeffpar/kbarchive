@@ -6,6 +6,8 @@ permalink: /kb/087/Q87049/
 
 ## Q87049: MCI: Main Software Components in an MCI Gateway
 
+{% raw %}
+
 	Article: Q87049
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -45,3 +47,5 @@ permalink: /kb/087/Q87049/
 	
 	=============================================================================
 	
+
+{% endraw %}

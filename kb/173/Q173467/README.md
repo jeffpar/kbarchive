@@ -6,6 +6,8 @@ permalink: /kb/173/Q173467/
 
 ## Q173467: MSN Error Message: Potential Safety Violation Avoided
 
+{% raw %}
+
 	Article: Q173467
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,95
@@ -125,3 +127,5 @@ permalink: /kb/173/Q173467/
 	
 	=============================================================================
 	
+
+{% endraw %}

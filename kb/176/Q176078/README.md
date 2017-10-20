@@ -6,6 +6,8 @@ permalink: /kb/176/Q176078/
 
 ## Q176078: XFOR: NNTP Newsreader Users Cannot Use Exchange Newsgroups
 
+{% raw %}
+
 	Article: Q176078
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -71,3 +73,5 @@ permalink: /kb/176/Q176078/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162298/
 
 ## Q162298: PRB: &quot;Multi Use&quot; Cannot be Selected Until .exe is Created
 
+{% raw %}
+
 	Article: Q162298
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/162/Q162298/
 	
 	=============================================================================
 	
+
+{% endraw %}

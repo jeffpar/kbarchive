@@ -6,6 +6,8 @@ permalink: /kb/118/Q118471/
 
 ## Q118471: BUG: Caching GDI Objects Causes Temporary GDI Resource Leak
 
+{% raw %}
+
 	Article: Q118471
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -88,3 +90,5 @@ permalink: /kb/118/Q118471/
 	
 	=============================================================================
 	
+
+{% endraw %}

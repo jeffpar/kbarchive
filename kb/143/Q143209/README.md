@@ -6,6 +6,8 @@ permalink: /kb/143/Q143209/
 
 ## Q143209: PRB: MeasureItem Not Called for Popup Item on Owner-Draw Menu
 
+{% raw %}
+
 	Article: Q143209
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,2.2,4.0
@@ -107,3 +109,5 @@ permalink: /kb/143/Q143209/
 	
 	=============================================================================
 	
+
+{% endraw %}

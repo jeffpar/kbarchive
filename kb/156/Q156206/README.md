@@ -6,6 +6,8 @@ permalink: /kb/156/Q156206/
 
 ## Q156206: SMS: OS/2 Inventory Agent Does Not Detect Pentium Processor
 
+{% raw %}
+
 	Article: Q156206
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -59,3 +61,5 @@ permalink: /kb/156/Q156206/
 	
 	=============================================================================
 	
+
+{% endraw %}

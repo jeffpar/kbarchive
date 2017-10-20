@@ -6,6 +6,8 @@ permalink: /kb/143/Q143229/
 
 ## Q143229: Writer: Borders Cut Off on Cards: Alternate Layout Method
 
+{% raw %}
+
 	Article: Q143229
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a,1.1b,1.1c; WINDOWS:1.0,1.1,1.1a,1.1b,1.1c
@@ -64,3 +66,5 @@ permalink: /kb/143/Q143229/
 	
 	=============================================================================
 	
+
+{% endraw %}

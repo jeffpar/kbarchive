@@ -6,6 +6,8 @@ permalink: /kb/163/Q163423/
 
 ## Q163423: SET: Allied Telesyn 1700+ Network Adapter Posts Event Message
 
+{% raw %}
+
 	Article: Q163423
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/163/Q163423/
 	
 	=============================================================================
 	
+
+{% endraw %}

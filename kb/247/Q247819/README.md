@@ -6,6 +6,8 @@ permalink: /kb/247/Q247819/
 
 ## Q247819: WLBS May Discard Some TCP/UDP Fragments
 
+{% raw %}
+
 	Article: Q247819
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -78,3 +80,5 @@ permalink: /kb/247/Q247819/
 	
 	=============================================================================
 	
+
+{% endraw %}

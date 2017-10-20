@@ -6,6 +6,8 @@ permalink: /kb/139/Q139954/
 
 ## Q139954: PRB: Unable to Run Setup Wizard From Shared Network Install
 
+{% raw %}
+
 	Article: Q139954
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -68,3 +70,5 @@ permalink: /kb/139/Q139954/
 	
 	=============================================================================
 	
+
+{% endraw %}

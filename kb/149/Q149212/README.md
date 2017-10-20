@@ -6,6 +6,8 @@ permalink: /kb/149/Q149212/
 
 ## Q149212: XCLN: How to Configure Public Folder Favorites for Users
 
+{% raw %}
+
 	Article: Q149212
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -94,3 +96,5 @@ permalink: /kb/149/Q149212/
 	
 	=============================================================================
 	
+
+{% endraw %}

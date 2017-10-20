@@ -6,6 +6,8 @@ permalink: /kb/165/Q165744/
 
 ## Q165744: FIX: RichEditCtrl IDs Not Shown in Member Variables Tab
 
+{% raw %}
+
 	Article: Q165744
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -58,10 +60,10 @@ permalink: /kb/165/Q165744/
 	        CSampleDlg(CWnd* pParent = NULL);
 	
 	     // Dialog Data
-	        //{ {AFX_DATA(CSampleDlg)
+	        //{{AFX_DATA(CSampleDlg)
 	        enum { IDD = IDD_SAMPLE_DIALOG };
 	        CString  m_edit;      // Added by ClassWizard for an edit control
-	        //} }AFX_DATA
+	        //}}AFX_DATA
 	
 	     // Manually add member variables for the rich edit control
 	        CRichEditCtrl m_richEditCtrl;
@@ -69,11 +71,11 @@ permalink: /kb/165/Q165744/
 	        CString m_richedit;
 	
 	        // ClassWizard generated virtual function overrides
-	        //{ {AFX_VIRTUAL(CSampleDlg)
+	        //{{AFX_VIRTUAL(CSampleDlg)
 	        protected:
 	        virtual void DoDataExchange(CDataExchange* pDX);
 	             // DDX/DDV support
-	        //} }AFX_VIRTUAL
+	        //}}AFX_VIRTUAL
 	
 	             ......
 	
@@ -88,10 +90,10 @@ permalink: /kb/165/Q165744/
 	     void CSampleDlg::DoDataExchange(CDataExchange* pDX)
 	     {
 	        CDialog::DoDataExchange(pDX);
-	        //{ {AFX_DATA_MAP(CSampleDlg)
+	        //{{AFX_DATA_MAP(CSampleDlg)
 	        DDX_Text(pDX, IDC_EDIT, m_edit);
 	        DDV_MaxChars(pDX, m_edit, 10);
-	        //} }AFX_DATA_MAP
+	        //}}AFX_DATA_MAP
 	
 	     // Manually add DDX_Control, DDX_Text and DDV_MaxChars for the
 	     // rich edit control
@@ -139,3 +141,5 @@ permalink: /kb/165/Q165744/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/121/Q121216/
 
 ## Q121216: BUG: Vector Delete Calls Exported Destructor Only Once
 
+{% raw %}
+
 	Article: Q121216
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,4.1,4.2,5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/121/Q121216/
 	
 	=============================================================================
 	
+
+{% endraw %}

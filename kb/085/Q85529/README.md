@@ -6,6 +6,8 @@ permalink: /kb/085/Q85529/
 
 ## Q85529: Cannot Change Paper Sizes with Canon Bubble-Jet 10e
 
+{% raw %}
+
 	Article: Q85529
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/085/Q85529/
 	
 	=============================================================================
 	
+
+{% endraw %}

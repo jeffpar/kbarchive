@@ -6,6 +6,8 @@ permalink: /kb/061/Q61285/
 
 ## Q61285: Global Lock Count Changes in Windows 3.x
 
+{% raw %}
+
 	Article: Q61285
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -136,3 +138,5 @@ permalink: /kb/061/Q61285/
 	
 	=============================================================================
 	
+
+{% endraw %}

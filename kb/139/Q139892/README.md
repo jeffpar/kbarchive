@@ -6,6 +6,8 @@ permalink: /kb/139/Q139892/
 
 ## Q139892: SNA Server Banyan Interface Updated to Support Win95 SNA Clients
 
+{% raw %}
+
 	Article: Q139892
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -58,3 +60,5 @@ permalink: /kb/139/Q139892/
 	
 	=============================================================================
 	
+
+{% endraw %}

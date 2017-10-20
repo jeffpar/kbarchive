@@ -6,6 +6,8 @@ permalink: /kb/152/Q152697/
 
 ## Q152697: Koi and the Kola Nuts: The Story of Koi and the Kola Nuts
 
+{% raw %}
+
 	Article: Q152697
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -450,3 +452,5 @@ permalink: /kb/152/Q152697/
 	
 	=============================================================================
 	
+
+{% endraw %}

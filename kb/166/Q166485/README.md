@@ -6,6 +6,8 @@ permalink: /kb/166/Q166485/
 
 ## Q166485: Removing Entries in WINS from Other Non-Existent WINS Servers
 
+{% raw %}
+
 	Article: Q166485
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -96,3 +98,5 @@ permalink: /kb/166/Q166485/
 	
 	=============================================================================
 	
+
+{% endraw %}

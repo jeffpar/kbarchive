@@ -6,6 +6,8 @@ permalink: /kb/183/Q183665/
 
 ## Q183665: XADM: Unable to Delete Attachment From Message
 
+{% raw %}
+
 	Article: Q183665
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -83,3 +85,5 @@ permalink: /kb/183/Q183665/
 	
 	=============================================================================
 	
+
+{% endraw %}

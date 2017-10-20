@@ -6,6 +6,8 @@ permalink: /kb/108/Q108048/
 
 ## Q108048: Printing Graphics from DOS Client Prints Incorrectly
 
+{% raw %}
+
 	Article: Q108048
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -51,3 +53,5 @@ permalink: /kb/108/Q108048/
 	
 	=============================================================================
 	
+
+{% endraw %}

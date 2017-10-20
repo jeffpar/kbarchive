@@ -6,6 +6,8 @@ permalink: /kb/132/Q132888/
 
 ## Q132888: Encarta 95: GP Fault When Using Dictionary or Thesaurus
 
+{% raw %}
+
 	Article: Q132888
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1995 edition
@@ -64,3 +66,5 @@ permalink: /kb/132/Q132888/
 	
 	=============================================================================
 	
+
+{% endraw %}

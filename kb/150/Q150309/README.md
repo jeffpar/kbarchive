@@ -6,6 +6,8 @@ permalink: /kb/150/Q150309/
 
 ## Q150309: Bookshelf 96-97 Installed Before Word Will Not Integrate
 
+{% raw %}
+
 	Article: Q150309
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.x,6.x
@@ -64,3 +66,5 @@ permalink: /kb/150/Q150309/
 	
 	=============================================================================
 	
+
+{% endraw %}

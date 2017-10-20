@@ -6,6 +6,8 @@ permalink: /kb/261/Q261020/
 
 ## Q261020: MCM2: Distorted Textures After You Use Minimize the Game
 
+{% raw %}
+
 	Article: Q261020
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -87,3 +89,5 @@ permalink: /kb/261/Q261020/
 	
 	=============================================================================
 	
+
+{% endraw %}

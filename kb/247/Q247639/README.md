@@ -6,6 +6,8 @@ permalink: /kb/247/Q247639/
 
 ## Q247639: WD97: Err Msg: &quot;Style Not Defined&quot; with StyleRef Field
 
+{% raw %}
+
 	Article: Q247639
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/247/Q247639/
 	
 	=============================================================================
 	
+
+{% endraw %}

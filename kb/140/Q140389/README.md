@@ -6,6 +6,8 @@ permalink: /kb/140/Q140389/
 
 ## Q140389: Job Status MIFs Cause Overhead on Central Site
 
+{% raw %}
+
 	Article: Q140389
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -50,3 +52,5 @@ permalink: /kb/140/Q140389/
 	
 	=============================================================================
 	
+
+{% endraw %}

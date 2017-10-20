@@ -6,6 +6,8 @@ permalink: /kb/066/Q66632/
 
 ## Q66632: Windows SDK Support for Microsoft FORTRAN Compilers
 
+{% raw %}
+
 	Article: Q66632
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -58,3 +60,5 @@ permalink: /kb/066/Q66632/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124271/
 
 ## Q124271: PRB: Heap Walker's Object: USER LocalWalk Doesn't Track Data
 
+{% raw %}
+
 	Article: Q124271
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -117,3 +119,5 @@ permalink: /kb/124/Q124271/
 	
 	=============================================================================
 	
+
+{% endraw %}

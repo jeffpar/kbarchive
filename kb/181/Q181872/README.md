@@ -6,6 +6,8 @@ permalink: /kb/181/Q181872/
 
 ## Q181872: HOWTO: Display Ellipses Button for a UserControl Property
 
+{% raw %}
+
 	Article: Q181872
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -72,3 +74,5 @@ permalink: /kb/181/Q181872/
 	
 	=============================================================================
 	
+
+{% endraw %}

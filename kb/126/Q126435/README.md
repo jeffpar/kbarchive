@@ -6,6 +6,8 @@ permalink: /kb/126/Q126435/
 
 ## Q126435: Automap Road Atlas: Road Symbols Print in Solid Black
 
+{% raw %}
+
 	Article: Q126435
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:3.0,3.02,3.03,3.04
@@ -82,3 +84,5 @@ permalink: /kb/126/Q126435/
 	
 	=============================================================================
 	
+
+{% endraw %}

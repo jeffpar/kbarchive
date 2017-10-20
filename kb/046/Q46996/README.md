@@ -6,6 +6,8 @@ permalink: /kb/046/Q46996/
 
 ## Q46996: PRB: L1074 Groupname: &quot;Group Larger Than 64K Bytes&quot; Error
 
+{% raw %}
+
 	Article: Q46996
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:4.x,5.01,5.02,5.03,5.05,5.1,5.11,5.13,5.15,5.3,5.31.009,5.5,5.6
@@ -90,3 +92,5 @@ permalink: /kb/046/Q46996/
 	
 	=============================================================================
 	
+
+{% endraw %}

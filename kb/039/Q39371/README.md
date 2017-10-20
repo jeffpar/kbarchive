@@ -6,6 +6,8 @@ permalink: /kb/039/Q39371/
 
 ## Q39371: Procedures With Arguments Require a Specified Language
 
+{% raw %}
+
 	Article: Q39371
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b
@@ -80,3 +82,5 @@ permalink: /kb/039/Q39371/
 	
 	=============================================================================
 	
+
+{% endraw %}

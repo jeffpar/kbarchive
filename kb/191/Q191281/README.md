@@ -6,6 +6,8 @@ permalink: /kb/191/Q191281/
 
 ## Q191281: WD97: DocProperty Field Truncated After 127 Characters
 
+{% raw %}
+
 	Article: Q191281
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -115,3 +117,5 @@ permalink: /kb/191/Q191281/
 	
 	=============================================================================
 	
+
+{% endraw %}

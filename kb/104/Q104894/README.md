@@ -6,6 +6,8 @@ permalink: /kb/104/Q104894/
 
 ## Q104894: FIX: VERIFY Doesn't Check Last Character in String
 
+{% raw %}
+
 	Article: Q104894
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -76,3 +78,5 @@ permalink: /kb/104/Q104894/
 	
 	=============================================================================
 	
+
+{% endraw %}

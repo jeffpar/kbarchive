@@ -6,6 +6,8 @@ permalink: /kb/296/Q296458/
 
 ## Q296458: IIS Disregards Host Headers When Using Keep-Alives
 
+{% raw %}
+
 	Article: Q296458
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -107,3 +109,5 @@ permalink: /kb/296/Q296458/
 	
 	=============================================================================
 	
+
+{% endraw %}

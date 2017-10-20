@@ -6,6 +6,8 @@ permalink: /kb/162/Q162528/
 
 ## Q162528: WD97: Returning Object Counts for Parts of a Document
 
+{% raw %}
+
 	Article: Q162528
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -191,3 +193,5 @@ permalink: /kb/162/Q162528/
 	
 	=============================================================================
 	
+
+{% endraw %}

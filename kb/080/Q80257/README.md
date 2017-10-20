@@ -6,6 +6,8 @@ permalink: /kb/080/Q80257/
 
 ## Q80257: PC Gen: Contents of Modem Script File HAYES24.MDM
 
+{% raw %}
+
 	Article: Q80257
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e
@@ -243,3 +245,5 @@ permalink: /kb/080/Q80257/
 	
 	=============================================================================
 	
+
+{% endraw %}

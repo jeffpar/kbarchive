@@ -6,6 +6,8 @@ permalink: /kb/185/Q185866/
 
 ## Q185866: BUG: Combo Box Valid Event Fires Before GotFocus in Page Frame
 
+{% raw %}
+
 	Article: Q185866
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -79,3 +81,5 @@ permalink: /kb/185/Q185866/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178761/
 
 ## Q178761: XWEB: Attachments Produce JavaScript Errors in Browser
 
+{% raw %}
+
 	Article: Q178761
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -70,3 +72,5 @@ permalink: /kb/178/Q178761/
 	
 	=============================================================================
 	
+
+{% endraw %}

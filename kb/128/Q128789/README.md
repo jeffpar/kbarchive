@@ -6,6 +6,8 @@ permalink: /kb/128/Q128789/
 
 ## Q128789: BUG: LNK2001 on Member Function When Use Nested Class Template
 
+{% raw %}
+
 	Article: Q128789
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,4.0,4.1,4.2,5.0,6.0
@@ -120,3 +122,5 @@ permalink: /kb/128/Q128789/
 	
 	=============================================================================
 	
+
+{% endraw %}

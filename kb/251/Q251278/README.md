@@ -6,6 +6,8 @@ permalink: /kb/251/Q251278/
 
 ## Q251278: User Profile Folders Are Not Deleted After Logging Off
 
+{% raw %}
+
 	Article: Q251278
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -75,3 +77,5 @@ permalink: /kb/251/Q251278/
 	
 	=============================================================================
 	
+
+{% endraw %}

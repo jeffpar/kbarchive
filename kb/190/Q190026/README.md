@@ -6,6 +6,8 @@ permalink: /kb/190/Q190026/
 
 ## Q190026: XFOR: SMTP Protocol Log Only Shows Connection Established Else
 
+{% raw %}
+
 	Article: Q190026
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -112,3 +114,5 @@ permalink: /kb/190/Q190026/
 	
 	=============================================================================
 	
+
+{% endraw %}

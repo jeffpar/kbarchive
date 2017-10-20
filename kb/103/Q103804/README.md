@@ -6,6 +6,8 @@ permalink: /kb/103/Q103804/
 
 ## Q103804: 3COM: Access Component Is Installed by Gateway Disk
 
+{% raw %}
+
 	Article: Q103804
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -77,3 +79,5 @@ permalink: /kb/103/Q103804/
 	
 	=============================================================================
 	
+
+{% endraw %}

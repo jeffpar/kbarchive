@@ -6,6 +6,8 @@ permalink: /kb/118/Q118296/
 
 ## Q118296: ANNOUNCE and ANNDELTA Entries in Registry are Ignored
 
+{% raw %}
+
 	Article: Q118296
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -58,3 +60,5 @@ permalink: /kb/118/Q118296/
 	
 	=============================================================================
 	
+
+{% endraw %}

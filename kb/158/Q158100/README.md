@@ -6,6 +6,8 @@ permalink: /kb/158/Q158100/
 
 ## Q158100: Windows NT 4.0 Support for Quantum Atlas SCSI Drives w/ Adaptec
 
+{% raw %}
+
 	Article: Q158100
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -122,3 +124,5 @@ permalink: /kb/158/Q158100/
 	
 	=============================================================================
 	
+
+{% endraw %}

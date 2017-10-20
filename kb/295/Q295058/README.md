@@ -6,6 +6,8 @@ permalink: /kb/295/Q295058/
 
 ## Q295058: SMS: Memory Leak During SMS_Advertisement Instance Enumeration
 
+{% raw %}
+
 	Article: Q295058
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -76,3 +78,5 @@ permalink: /kb/295/Q295058/
 	
 	=============================================================================
 	
+
+{% endraw %}

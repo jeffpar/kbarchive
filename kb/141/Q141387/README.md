@@ -6,6 +6,8 @@ permalink: /kb/141/Q141387/
 
 ## Q141387: Ball Hesitates with Flipper Movement Playing 3D Pinball
 
+{% raw %}
+
 	Article: Q141387
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -60,3 +62,5 @@ permalink: /kb/141/Q141387/
 	
 	=============================================================================
 	
+
+{% endraw %}

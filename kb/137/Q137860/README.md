@@ -6,6 +6,8 @@ permalink: /kb/137/Q137860/
 
 ## Q137860: STOP Msg: 0x0000007B Installing Windows NT on HP Vectra XU/XUC
 
+{% raw %}
+
 	Article: Q137860
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -66,3 +68,5 @@ permalink: /kb/137/Q137860/
 	
 	=============================================================================
 	
+
+{% endraw %}

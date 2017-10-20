@@ -6,6 +6,8 @@ permalink: /kb/267/Q267955/
 
 ## Q267955: WD97: Excel Worksheet Object Color Text Is Printed as Black
 
+{% raw %}
+
 	Article: Q267955
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -94,3 +96,5 @@ permalink: /kb/267/Q267955/
 	
 	=============================================================================
 	
+
+{% endraw %}

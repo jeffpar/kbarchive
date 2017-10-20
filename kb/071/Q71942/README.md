@@ -6,6 +6,8 @@ permalink: /kb/071/Q71942/
 
 ## Q71942: Word Wrap in Notepad Causes UAE
 
+{% raw %}
+
 	Article: Q71942
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/071/Q71942/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153970/
 
 ## Q153970: NETWORKING FUNDAMENTALS TRAINING Corrections and Comments
 
+{% raw %}
+
 	Article: Q153970
 	Product(s): Microsoft Press
 	Version(s): 
@@ -235,3 +237,5 @@ permalink: /kb/153/Q153970/
 	
 	=============================================================================
 	
+
+{% endraw %}

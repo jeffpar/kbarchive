@@ -6,6 +6,8 @@ permalink: /kb/162/Q162354/
 
 ## Q162354: XADM: DS_E_COMMUNICATIONS_PROBLEM Running ISINTEG -PATCH
 
+{% raw %}
+
 	Article: Q162354
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0 5.0 5.5
@@ -40,3 +42,5 @@ permalink: /kb/162/Q162354/
 	
 	=============================================================================
 	
+
+{% endraw %}

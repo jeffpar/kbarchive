@@ -6,6 +6,8 @@ permalink: /kb/143/Q143241/
 
 ## Q143241: XCLN: Improving the Security of PST Files
 
+{% raw %}
+
 	Article: Q143241
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,8.0,8.01,8.02
@@ -68,3 +70,5 @@ permalink: /kb/143/Q143241/
 	
 	=============================================================================
 	
+
+{% endraw %}

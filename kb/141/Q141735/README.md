@@ -6,6 +6,8 @@ permalink: /kb/141/Q141735/
 
 ## Q141735: Windows NT Setup Fails on an IBM ThinkPad 760C P120
 
+{% raw %}
+
 	Article: Q141735
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -52,3 +54,5 @@ permalink: /kb/141/Q141735/
 	
 	=============================================================================
 	
+
+{% endraw %}

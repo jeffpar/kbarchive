@@ -6,6 +6,8 @@ permalink: /kb/127/Q127731/
 
 ## Q127731: MHS: Err Msg: General Outpost Failure
 
+{% raw %}
+
 	Article: Q127731
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -49,3 +51,5 @@ permalink: /kb/127/Q127731/
 	
 	=============================================================================
 	
+
+{% endraw %}

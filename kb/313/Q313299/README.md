@@ -6,6 +6,8 @@ permalink: /kb/313/Q313299/
 
 ## Q313299: HOW TO: Load Balance a Web Server Farm Using One SSL Certificate
 
+{% raw %}
+
 	Article: Q313299
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -272,3 +274,5 @@ permalink: /kb/313/Q313299/
 	
 	=============================================================================
 	
+
+{% endraw %}

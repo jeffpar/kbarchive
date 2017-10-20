@@ -6,6 +6,8 @@ permalink: /kb/061/Q61515/
 
 ## Q61515: Mac Hyp: &quot;Can't Understand msmail&quot; -- Statement Needs a Verb
 
+{% raw %}
+
 	Article: Q61515
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -54,3 +56,5 @@ permalink: /kb/061/Q61515/
 	
 	=============================================================================
 	
+
+{% endraw %}

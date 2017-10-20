@@ -6,6 +6,8 @@ permalink: /kb/225/Q225743/
 
 ## Q225743: PRB: Current Table's Fields Are Not in Report Expression Builder
 
+{% raw %}
+
 	Article: Q225743
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -79,3 +81,5 @@ permalink: /kb/225/Q225743/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/057/Q57341/
 
 ## Q57341: You Can CHAIN Only to an .EXE or .COM in BASIC PDS 7.00
 
+{% raw %}
+
 	Article: Q57341
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -24,3 +26,5 @@ permalink: /kb/057/Q57341/
 	
 	This new extension checking is to help you CHAIN to files that are
 	most likely meant to be CHAINed to.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67079/
 
 ## Q67079: Error C2141 When Initializing enum Constant to -32768
 
+{% raw %}
+
 	Article: Q67079
 	Product(s): See article
 	Version(s): 5.10 6.00 6.00a | 5.10 6.00 6.00a
@@ -53,3 +55,5 @@ permalink: /kb/067/Q67079/
 	    printf("Hex7FFF = %d\n", Hex7FFF);
 	    printf("MaxNegative = %d\n", MaxNegative);
 	}
+
+{% endraw %}

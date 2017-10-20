@@ -6,6 +6,8 @@ permalink: /kb/037/Q37421/
 
 ## Q37421: Two BASIC Methods to Save &amp; Restore Text Screens in DOS &amp; OS/2
 
+{% raw %}
+
 	Article: Q37421
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -140,3 +142,5 @@ permalink: /kb/037/Q37421/
 	        NEXT j
 	    NEXT i
 	END SUB
+
+{% endraw %}

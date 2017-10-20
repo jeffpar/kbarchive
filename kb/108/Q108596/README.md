@@ -6,6 +6,8 @@ permalink: /kb/108/Q108596/
 
 ## Q108596: Mac Flight Simulator: View 1 Is Solid Color
 
+{% raw %}
+
 	Article: Q108596
 	Product(s): Microsoft Home Games
 	Version(s): 4.0
@@ -63,3 +65,5 @@ permalink: /kb/108/Q108596/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/200/Q200921/
 
 ## Q200921: PRB: OpenQuery with ATL Provider Fails When Set Up with SQL Ente
 
+{% raw %}
+
 	Article: Q200921
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0,7.0
@@ -135,3 +137,5 @@ permalink: /kb/200/Q200921/
 	
 	=============================================================================
 	
+
+{% endraw %}

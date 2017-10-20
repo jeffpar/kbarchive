@@ -6,6 +6,8 @@ permalink: /kb/087/Q87417/
 
 ## Q87417: PC DB: Rebuilding an MBG File
 
+{% raw %}
+
 	Article: Q87417
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.2
@@ -44,3 +46,5 @@ permalink: /kb/087/Q87417/
 	
 	=============================================================================
 	
+
+{% endraw %}

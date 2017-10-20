@@ -6,6 +6,8 @@ permalink: /kb/150/Q150741/
 
 ## Q150741: XCLN: Invalid VxD Dynamic Link Call
 
+{% raw %}
+
 	Article: Q150741
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -51,3 +53,5 @@ permalink: /kb/150/Q150741/
 	
 	=============================================================================
 	
+
+{% endraw %}

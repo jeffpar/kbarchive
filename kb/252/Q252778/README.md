@@ -6,6 +6,8 @@ permalink: /kb/252/Q252778/
 
 ## Q252778: SNA Win9x Host Account Manager Unable to Locate MDB Domain
 
+{% raw %}
+
 	Article: Q252778
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -100,3 +102,5 @@ permalink: /kb/252/Q252778/
 	
 	=============================================================================
 	
+
+{% endraw %}

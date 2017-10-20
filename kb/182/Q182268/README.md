@@ -6,6 +6,8 @@ permalink: /kb/182/Q182268/
 
 ## Q182268: SNA Server Event 60 Should Log Local APPC LU Name
 
+{% raw %}
+
 	Article: Q182268
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -87,3 +89,5 @@ permalink: /kb/182/Q182268/
 	
 	=============================================================================
 	
+
+{% endraw %}

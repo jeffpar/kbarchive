@@ -6,6 +6,8 @@ permalink: /kb/153/Q153578/
 
 ## Q153578: PGC Does Not Remove Some Icons from SMS Program Groups
 
+{% raw %}
+
 	Article: Q153578
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -56,3 +58,5 @@ permalink: /kb/153/Q153578/
 	
 	=============================================================================
 	
+
+{% endraw %}

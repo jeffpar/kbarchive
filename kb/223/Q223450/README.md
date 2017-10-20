@@ -6,6 +6,8 @@ permalink: /kb/223/Q223450/
 
 ## Q223450: TCP Initial Retransmission Timer Adjustment Added to Windows NT
 
+{% raw %}
+
 	Article: Q223450
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -141,3 +143,5 @@ permalink: /kb/223/Q223450/
 	
 	=============================================================================
 	
+
+{% endraw %}

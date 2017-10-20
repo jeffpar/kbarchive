@@ -6,6 +6,8 @@ permalink: /kb/176/Q176876/
 
 ## Q176876: HOWTO: Find VB32.EXE Without Searching the Hard Drive
 
+{% raw %}
+
 	Article: Q176876
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -118,3 +120,5 @@ permalink: /kb/176/Q176876/
 	
 	=============================================================================
 	
+
+{% endraw %}

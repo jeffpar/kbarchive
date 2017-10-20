@@ -6,6 +6,8 @@ permalink: /kb/147/Q147314/
 
 ## Q147314: GlobalFlags for Windows NT 3.51
 
+{% raw %}
+
 	Article: Q147314
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -68,3 +70,5 @@ permalink: /kb/147/Q147314/
 	
 	=============================================================================
 	
+
+{% endraw %}

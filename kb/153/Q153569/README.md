@@ -6,6 +6,8 @@ permalink: /kb/153/Q153569/
 
 ## Q153569: HOWTO: Get a Typelib (.TLB) File for a Visual Basic OLE Server
 
+{% raw %}
+
 	Article: Q153569
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/153/Q153569/
 	
 	=============================================================================
 	
+
+{% endraw %}

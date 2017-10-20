@@ -6,6 +6,8 @@ permalink: /kb/178/Q178677/
 
 ## Q178677: Err Msg: MMSYSTEMxxx: There is Not Enough Memory Available for T
 
+{% raw %}
+
 	Article: Q178677
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -133,3 +135,5 @@ permalink: /kb/178/Q178677/
 	
 	=============================================================================
 	
+
+{% endraw %}

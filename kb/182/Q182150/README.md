@@ -6,6 +6,8 @@ permalink: /kb/182/Q182150/
 
 ## Q182150: PRB: Visual Basic 5.0 Setup Error: DAO350.DLL File In Use
 
+{% raw %}
+
 	Article: Q182150
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -93,3 +95,5 @@ permalink: /kb/182/Q182150/
 	
 	=============================================================================
 	
+
+{% endraw %}

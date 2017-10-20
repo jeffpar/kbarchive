@@ -6,6 +6,8 @@ permalink: /kb/294/Q294735/
 
 ## Q294735: SAMPLE: Override the Server Name in the Response Header Field
 
+{% raw %}
+
 	Article: Q294735
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0
@@ -126,3 +128,5 @@ permalink: /kb/294/Q294735/
 	
 	=============================================================================
 	
+
+{% endraw %}

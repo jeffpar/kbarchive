@@ -6,6 +6,8 @@ permalink: /kb/192/Q192084/
 
 ## Q192084: X400: Incorrect Date on Message Sent Through X.400 Gateway
 
+{% raw %}
+
 	Article: Q192084
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -80,3 +82,5 @@ permalink: /kb/192/Q192084/
 	
 	=============================================================================
 	
+
+{% endraw %}

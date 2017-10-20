@@ -6,6 +6,8 @@ permalink: /kb/082/Q82653/
 
 ## Q82653: Da Vinci eMAIL may GP Fault When Attaching a Shared Worksheet
 
+{% raw %}
+
 	Article: Q82653
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/082/Q82653/
 	
 	=============================================================================
 	
+
+{% endraw %}

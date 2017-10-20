@@ -6,6 +6,8 @@ permalink: /kb/095/Q95721/
 
 ## Q95721: Fox Mouse Support Numbers
 
+{% raw %}
+
 	Article: Q95721
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a
@@ -44,3 +46,5 @@ permalink: /kb/095/Q95721/
 	
 	=============================================================================
 	
+
+{% endraw %}

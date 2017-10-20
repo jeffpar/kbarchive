@@ -6,6 +6,8 @@ permalink: /kb/141/Q141084/
 
 ## Q141084: DOCERR: How to Create a Blank DateTime Documented Incorrectly
 
+{% raw %}
+
 	Article: Q141084
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -84,3 +86,5 @@ permalink: /kb/141/Q141084/
 	
 	=============================================================================
 	
+
+{% endraw %}

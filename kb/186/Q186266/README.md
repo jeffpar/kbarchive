@@ -6,6 +6,8 @@ permalink: /kb/186/Q186266/
 
 ## Q186266: INFO: What Is Handled Differently in Windows CE, VBCE, and eVB
 
+{% raw %}
+
 	Article: Q186266
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -128,3 +130,5 @@ permalink: /kb/186/Q186266/
 	
 	=============================================================================
 	
+
+{% endraw %}

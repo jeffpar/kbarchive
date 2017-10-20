@@ -6,6 +6,8 @@ permalink: /kb/103/Q103548/
 
 ## Q103548: MS-DOS FORMAT Does Not Preserve Clusters Marked Bad
 
+{% raw %}
+
 	Article: Q103548
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.22; WINDOWS:95
@@ -73,3 +75,5 @@ permalink: /kb/103/Q103548/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/279/Q279216/
 
 ## Q279216: XFOR:How Notes Calendar Messages Not Yet Accepted Are Migrated
 
+{% raw %}
+
 	Article: Q279216
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -47,3 +49,5 @@ permalink: /kb/279/Q279216/
 	
 	=============================================================================
 	
+
+{% endraw %}

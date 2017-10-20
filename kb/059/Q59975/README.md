@@ -6,6 +6,8 @@ permalink: /kb/059/Q59975/
 
 ## Q59975: Mac Hyp: Getting the Status of the Return Receipt Flag
 
+{% raw %}
+
 	Article: Q59975
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -45,3 +47,5 @@ permalink: /kb/059/Q59975/
 	
 	=============================================================================
 	
+
+{% endraw %}

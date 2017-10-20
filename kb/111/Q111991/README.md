@@ -6,6 +6,8 @@ permalink: /kb/111/Q111991/
 
 ## Q111991: PRB: &quot;Compiled Code for This Line Too Long&quot; Error Message
 
+{% raw %}
+
 	Article: Q111991
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
@@ -108,3 +110,5 @@ permalink: /kb/111/Q111991/
 	
 	=============================================================================
 	
+
+{% endraw %}

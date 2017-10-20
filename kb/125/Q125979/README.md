@@ -6,6 +6,8 @@ permalink: /kb/125/Q125979/
 
 ## Q125979: Err Msg: The Selected COM Port Is Either Not Supported...
 
+{% raw %}
+
 	Article: Q125979
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/125/Q125979/
 	
 	=============================================================================
 	
+
+{% endraw %}

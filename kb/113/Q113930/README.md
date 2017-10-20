@@ -6,6 +6,8 @@ permalink: /kb/113/Q113930/
 
 ## Q113930: ADT2: Shortcut Menus Cannot Be Disabled in Microsoft Access
 
+{% raw %}
+
 	Article: Q113930
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -69,3 +71,5 @@ permalink: /kb/113/Q113930/
 	
 	=============================================================================
 	
+
+{% endraw %}

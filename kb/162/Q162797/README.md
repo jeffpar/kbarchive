@@ -6,6 +6,8 @@ permalink: /kb/162/Q162797/
 
 ## Q162797: Trust Relationship Between Workstation and Domain Fails
 
+{% raw %}
+
 	Article: Q162797
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -96,3 +98,5 @@ permalink: /kb/162/Q162797/
 	
 	=============================================================================
 	
+
+{% endraw %}

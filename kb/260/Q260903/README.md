@@ -6,6 +6,8 @@ permalink: /kb/260/Q260903/
 
 ## Q260903: StarLancer: Stops Responding at Title Screen or During Briefing
 
+{% raw %}
+
 	Article: Q260903
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -79,3 +81,5 @@ permalink: /kb/260/Q260903/
 	
 	=============================================================================
 	
+
+{% endraw %}

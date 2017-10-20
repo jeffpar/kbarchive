@@ -6,6 +6,8 @@ permalink: /kb/091/Q91114/
 
 ## Q91114: WFWG Err Msg: NET3651: There Is No Protocol Added...
 
+{% raw %}
+
 	Article: Q91114
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -66,3 +68,5 @@ permalink: /kb/091/Q91114/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192445/
 
 ## Q192445: Fatal Exception Errors in Wsipx.vxd
 
+{% raw %}
+
 	Article: Q192445
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/192/Q192445/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154108/
 
 ## Q154108: XADM: Dead Letter Functionality with Exchange Server 4.0
 
+{% raw %}
+
 	Article: Q154108
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/154/Q154108/
 	
 	=============================================================================
 	
+
+{% endraw %}

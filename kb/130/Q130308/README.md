@@ -6,6 +6,8 @@ permalink: /kb/130/Q130308/
 
 ## Q130308: PRB: Using SHOW(1) Does Not Make a Form in a Formset Modal
 
+{% raw %}
+
 	Article: Q130308
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -119,3 +121,5 @@ permalink: /kb/130/Q130308/
 	
 	=============================================================================
 	
+
+{% endraw %}

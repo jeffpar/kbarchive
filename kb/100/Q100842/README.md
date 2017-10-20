@@ -6,6 +6,8 @@ permalink: /kb/100/Q100842/
 
 ## Q100842: File Limit for DIR Command Sort Options
 
+{% raw %}
+
 	Article: Q100842
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22; Win95:
@@ -66,3 +68,5 @@ permalink: /kb/100/Q100842/
 	
 	=============================================================================
 	
+
+{% endraw %}

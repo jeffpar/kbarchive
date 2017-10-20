@@ -6,6 +6,8 @@ permalink: /kb/167/Q167169/
 
 ## Q167169: FIX: COleDateTime::Format Throws a COleException(scode=E_FAIL)
 
+{% raw %}
+
 	Article: Q167169
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.0a,4.1,4.2,4.2b,5.0
@@ -212,3 +214,5 @@ permalink: /kb/167/Q167169/
 	
 	=============================================================================
 	
+
+{% endraw %}

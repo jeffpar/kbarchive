@@ -6,6 +6,8 @@ permalink: /kb/061/Q61434/
 
 ## Q61434: XOR, OR, AND Convert Floating Point to Integer
 
+{% raw %}
+
 	Article: Q61434
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -72,3 +74,5 @@ permalink: /kb/061/Q61434/
 	FUNCTION LongToSingle!(l&)
 	  LongToSingle! = CVS(MKL$(l&))
 	END FUNCTION
+
+{% endraw %}

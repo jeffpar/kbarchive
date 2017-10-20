@@ -6,6 +6,8 @@ permalink: /kb/139/Q139156/
 
 ## Q139156: PRB: DO WHILE Loop Does Not See Changes Made to Macro Variable
 
+{% raw %}
+
 	Article: Q139156
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -95,3 +97,5 @@ permalink: /kb/139/Q139156/
 	
 	=============================================================================
 	
+
+{% endraw %}

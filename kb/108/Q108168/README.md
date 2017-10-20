@@ -6,6 +6,8 @@ permalink: /kb/108/Q108168/
 
 ## Q108168: PRB: &quot;No Label Layouts Found&quot; Message When Creating a Label
 
+{% raw %}
+
 	Article: Q108168
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2x,3.0
@@ -78,3 +80,5 @@ permalink: /kb/108/Q108168/
 	
 	=============================================================================
 	
+
+{% endraw %}

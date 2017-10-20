@@ -6,6 +6,8 @@ permalink: /kb/210/Q210377/
 
 ## Q210377: SMS: Network Discovery Not Reporting Domain Names of Computers
 
+{% raw %}
+
 	Article: Q210377
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -53,3 +55,5 @@ permalink: /kb/210/Q210377/
 	
 	=============================================================================
 	
+
+{% endraw %}

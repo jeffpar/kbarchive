@@ -6,6 +6,8 @@ permalink: /kb/193/Q193960/
 
 ## Q193960: DOC: Visual Basic 6.0 Applications Cannot Be Run on NT 3.51
 
+{% raw %}
+
 	Article: Q193960
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -67,3 +69,5 @@ permalink: /kb/193/Q193960/
 	
 	=============================================================================
 	
+
+{% endraw %}

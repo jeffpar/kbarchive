@@ -6,6 +6,8 @@ permalink: /kb/135/Q135960/
 
 ## Q135960: Compressed Drive Not Automatically Mounted
 
+{% raw %}
+
 	Article: Q135960
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/135/Q135960/
 	
 	=============================================================================
 	
+
+{% endraw %}

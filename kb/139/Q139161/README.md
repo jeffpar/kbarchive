@@ -6,6 +6,8 @@ permalink: /kb/139/Q139161/
 
 ## Q139161: Encarta World Atlas 1996 Edition: No Help Button Available
 
+{% raw %}
+
 	Article: Q139161
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -60,3 +62,5 @@ permalink: /kb/139/Q139161/
 	
 	=============================================================================
 	
+
+{% endraw %}

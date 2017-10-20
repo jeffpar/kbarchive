@@ -6,6 +6,8 @@ permalink: /kb/039/Q39244/
 
 ## Q39244: Incorrect Result Using SGN in a Mathematical Expression
 
+{% raw %}
+
 	Article: Q39244
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -50,3 +52,5 @@ permalink: /kb/039/Q39244/
 	   PRINT (SGN(S!) = 0)                       'Works -> -1
 	   PRINT LEN(STR$(FIX(S!))) + (SGN(S!) = 0)  'Fails -> 16385
 	   END                                       'Should be (2 + -1) = 1
+
+{% endraw %}

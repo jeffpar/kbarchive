@@ -6,6 +6,8 @@ permalink: /kb/093/Q93375/
 
 ## Q93375: Changes in EMM386.EXE Version 4.45 (MS-DOS 6.0)
 
+{% raw %}
+
 	Article: Q93375
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -141,3 +143,5 @@ permalink: /kb/093/Q93375/
 	
 	=============================================================================
 	
+
+{% endraw %}

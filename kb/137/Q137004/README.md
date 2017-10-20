@@ -6,6 +6,8 @@ permalink: /kb/137/Q137004/
 
 ## Q137004: Error Running Windows NT After Restoring From Backup
 
+{% raw %}
+
 	Article: Q137004
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -71,3 +73,5 @@ permalink: /kb/137/Q137004/
 	
 	=============================================================================
 	
+
+{% endraw %}

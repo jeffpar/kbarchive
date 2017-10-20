@@ -6,6 +6,8 @@ permalink: /kb/175/Q175983/
 
 ## Q175983: PRB: Extra Menu Pad Added if Modal Screen Called 31 Times
 
+{% raw %}
+
 	Article: Q175983
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0,3.0b,5.0,5.0a,6.0
@@ -319,3 +321,5 @@ permalink: /kb/175/Q175983/
 	
 	=============================================================================
 	
+
+{% endraw %}

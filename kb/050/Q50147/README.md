@@ -6,6 +6,8 @@ permalink: /kb/050/Q50147/
 
 ## Q50147: Mac Gty: Using a Bridge or Router on an AppleTalk Network
 
+{% raw %}
+
 	Article: Q50147
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -53,3 +55,5 @@ permalink: /kb/050/Q50147/
 	
 	=============================================================================
 	
+
+{% endraw %}

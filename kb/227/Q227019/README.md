@@ -6,6 +6,8 @@ permalink: /kb/227/Q227019/
 
 ## Q227019: SMS: Heartbeat Discovery Causes Performance Degradation
 
+{% raw %}
+
 	Article: Q227019
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -71,3 +73,5 @@ permalink: /kb/227/Q227019/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124945/
 
 ## Q124945: Vidio Clip Error Msg: Cannot Find Decompressor
 
+{% raw %}
+
 	Article: Q124945
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a,1994-1995 edition,1995 edition,2.0,3.1,3.11
@@ -101,3 +103,5 @@ permalink: /kb/124/Q124945/
 	
 	=============================================================================
 	
+
+{% endraw %}

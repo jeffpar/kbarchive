@@ -6,6 +6,8 @@ permalink: /kb/140/Q140538/
 
 ## Q140538: HOWTO: How to Do Away with the Print Dialog Box in MFC Printing
 
+{% raw %}
+
 	Article: Q140538
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2
@@ -81,3 +83,5 @@ permalink: /kb/140/Q140538/
 	
 	=============================================================================
 	
+
+{% endraw %}

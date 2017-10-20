@@ -6,6 +6,8 @@ permalink: /kb/141/Q141679/
 
 ## Q141679: Writer: Can't Copy Files From Library Wall to Portfolio Rack
 
+{% raw %}
+
 	Article: Q141679
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a,1.1c,7.1.2 and later
@@ -65,3 +67,5 @@ permalink: /kb/141/Q141679/
 	
 	=============================================================================
 	
+
+{% endraw %}

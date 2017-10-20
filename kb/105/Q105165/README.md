@@ -6,6 +6,8 @@ permalink: /kb/105/Q105165/
 
 ## Q105165: PC DOS: MS-DOS Client Doesn't Log Msg. If Print Selected First
 
+{% raw %}
+
 	Article: Q105165
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -45,3 +47,5 @@ permalink: /kb/105/Q105165/
 	
 	=============================================================================
 	
+
+{% endraw %}

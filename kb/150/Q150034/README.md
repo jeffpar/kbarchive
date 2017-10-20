@@ -6,6 +6,8 @@ permalink: /kb/150/Q150034/
 
 ## Q150034: PRB: LPPICTUREDISP Cannot Be Passed Across Process Boundaries
 
+{% raw %}
+
 	Article: Q150034
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0,6.0
@@ -83,3 +85,5 @@ permalink: /kb/150/Q150034/
 	
 	=============================================================================
 	
+
+{% endraw %}

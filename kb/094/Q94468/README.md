@@ -6,6 +6,8 @@ permalink: /kb/094/Q94468/
 
 ## Q94468: MHS: Microsoft Mail &amp; Netware Global Messaging (NGM)
 
+{% raw %}
+
 	Article: Q94468
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -89,3 +91,5 @@ permalink: /kb/094/Q94468/
 	
 	=============================================================================
 	
+
+{% endraw %}

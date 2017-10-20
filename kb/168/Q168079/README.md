@@ -6,6 +6,8 @@ permalink: /kb/168/Q168079/
 
 ## Q168079: FIX: _com_ptr_t::operator=(const _variant_t&amp;) AddRefs Twice
 
+{% raw %}
+
 	Article: Q168079
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -83,3 +85,5 @@ permalink: /kb/168/Q168079/
 	
 	=============================================================================
 	
+
+{% endraw %}

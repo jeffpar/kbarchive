@@ -6,6 +6,8 @@ permalink: /kb/189/Q189751/
 
 ## Q189751: INFO: Limitations of the FileSystemObject
 
+{% raw %}
+
 	Article: Q189751
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/189/Q189751/
 	
 	=============================================================================
 	
+
+{% endraw %}

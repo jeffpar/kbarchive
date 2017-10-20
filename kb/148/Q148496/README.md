@@ -6,6 +6,8 @@ permalink: /kb/148/Q148496/
 
 ## Q148496: XCLN: Creating Shared Windows Roving Users
 
+{% raw %}
+
 	Article: Q148496
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,4.0,5.0,97,98; winnt:4.0,5.5
@@ -85,3 +87,5 @@ permalink: /kb/148/Q148496/
 	
 	=============================================================================
 	
+
+{% endraw %}

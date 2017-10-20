@@ -6,6 +6,8 @@ permalink: /kb/129/Q129787/
 
 ## Q129787: HOWTO: Build a Code Resource
 
+{% raw %}
+
 	Article: Q129787
 	Product(s): Microsoft C Compiler
 	Version(s): MAC:2.0;
@@ -111,3 +113,5 @@ permalink: /kb/129/Q129787/
 	
 	=============================================================================
 	
+
+{% endraw %}

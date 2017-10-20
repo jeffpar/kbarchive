@@ -6,6 +6,8 @@ permalink: /kb/225/Q225090/
 
 ## Q225090: XADM: 3093 PF Replication Error 0x8004010f Reading Property 0x67
 
+{% raw %}
+
 	Article: Q225090
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -56,3 +58,5 @@ permalink: /kb/225/Q225090/
 	
 	=============================================================================
 	
+
+{% endraw %}

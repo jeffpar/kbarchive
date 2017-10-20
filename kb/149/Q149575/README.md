@@ -6,6 +6,8 @@ permalink: /kb/149/Q149575/
 
 ## Q149575: Initial SMS Client Setup Generates &quot;Error: 259&quot;
 
+{% raw %}
+
 	Article: Q149575
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -50,3 +52,5 @@ permalink: /kb/149/Q149575/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149479/
 
 ## Q149479: BUG: Cannot Scroll to End of Last Field in Format Editor
 
+{% raw %}
+
 	Article: Q149479
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -76,3 +78,5 @@ permalink: /kb/149/Q149479/
 	
 	=============================================================================
 	
+
+{% endraw %}

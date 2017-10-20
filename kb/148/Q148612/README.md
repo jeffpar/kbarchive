@@ -6,6 +6,8 @@ permalink: /kb/148/Q148612/
 
 ## Q148612: BUG: Scaling Metafiles in World Sample Fails Under Windows 95
 
+{% raw %}
+
 	Article: Q148612
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/148/Q148612/
 	
 	=============================================================================
 	
+
+{% endraw %}

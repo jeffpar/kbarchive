@@ -6,6 +6,8 @@ permalink: /kb/034/Q34114/
 
 ## Q34114: &quot;Wrong Number of Dimensions&quot; When Declaring Arrays in COMMON
 
+{% raw %}
+
 	Article: Q34114
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -52,3 +54,5 @@ permalink: /kb/034/Q34114/
 	   COMMON z11, z12, z13, z14, z15, z16, z17, z18, o(), p(),_
 	          q(), r(), s(), t(), u(), v(), w(), z19, x()
 	   PRINT "Got this far ....."
+
+{% endraw %}

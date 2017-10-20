@@ -6,6 +6,8 @@ permalink: /kb/147/Q147740/
 
 ## Q147740: HOWTO: Handling Events for ActiveX Controls in a CWnd
 
+{% raw %}
+
 	Article: Q147740
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,5.0,6.0
@@ -172,3 +174,5 @@ permalink: /kb/147/Q147740/
 	
 	=============================================================================
 	
+
+{% endraw %}

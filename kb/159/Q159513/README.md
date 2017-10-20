@@ -6,6 +6,8 @@ permalink: /kb/159/Q159513/
 
 ## Q159513: Deadly Tide: H2 66 Bomb Incorrectly Stated as an HY 66
 
+{% raw %}
+
 	Article: Q159513
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -51,3 +53,5 @@ permalink: /kb/159/Q159513/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178378/
 
 ## Q178378: XFOR: IMS Doesn't Send NDR for Messages Passed From Custom DLL
 
+{% raw %}
+
 	Article: Q178378
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -74,3 +76,5 @@ permalink: /kb/178/Q178378/
 	
 	=============================================================================
 	
+
+{% endraw %}

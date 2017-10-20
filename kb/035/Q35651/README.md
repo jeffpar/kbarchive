@@ -6,6 +6,8 @@ permalink: /kb/035/Q35651/
 
 ## Q35651: ASCII Codes That Do Not Output Using SCRN:, CONS:, or PRINT
 
+{% raw %}
+
 	Article: Q35651
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -109,3 +111,5 @@ permalink: /kb/035/Q35651/
 	      WHILE INKEY$ = "": WEND
 	      PRINT #1, k; CHR$(k)
 	   NEXT
+
+{% endraw %}

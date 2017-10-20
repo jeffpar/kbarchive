@@ -6,6 +6,8 @@ permalink: /kb/049/Q49693/
 
 ## Q49693: Microsoft Systems Journal Ordering Information
 
+{% raw %}
+
 	Article: Q49693
 	Product(s): Microsoft Product Support Information
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/049/Q49693/
 	
 	=============================================================================
 	
+
+{% endraw %}

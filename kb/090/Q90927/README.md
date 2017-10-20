@@ -6,6 +6,8 @@ permalink: /kb/090/Q90927/
 
 ## Q90927: WFWG Servers Cannot Act as a Gateway, Router, or Bridge
 
+{% raw %}
+
 	Article: Q90927
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -80,3 +82,5 @@ permalink: /kb/090/Q90927/
 	
 	=============================================================================
 	
+
+{% endraw %}

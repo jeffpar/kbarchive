@@ -6,6 +6,8 @@ permalink: /kb/255/Q255809/
 
 ## Q255809: Using the Init.bat Utility in Microsoft Metadirectory Services
 
+{% raw %}
+
 	Article: Q255809
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -80,3 +82,5 @@ permalink: /kb/255/Q255809/
 	
 	=============================================================================
 	
+
+{% endraw %}

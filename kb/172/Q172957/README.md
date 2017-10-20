@@ -6,6 +6,8 @@ permalink: /kb/172/Q172957/
 
 ## Q172957: XCLN: Creating a New Offline Folder File (OST File)
 
+{% raw %}
+
 	Article: Q172957
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; Win95:4.0,5.0; winnt:4.0,5.0
@@ -65,3 +67,5 @@ permalink: /kb/172/Q172957/
 	
 	=============================================================================
 	
+
+{% endraw %}

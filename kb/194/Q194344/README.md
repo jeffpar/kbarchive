@@ -6,6 +6,8 @@ permalink: /kb/194/Q194344/
 
 ## Q194344: Multimedia: Hangs While Updating Files or Program Does Not Start
 
+{% raw %}
+
 	Article: Q194344
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -164,3 +166,5 @@ permalink: /kb/194/Q194344/
 	
 	=============================================================================
 	
+
+{% endraw %}

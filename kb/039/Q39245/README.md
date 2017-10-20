@@ -6,6 +6,8 @@ permalink: /kb/039/Q39245/
 
 ## Q39245: BC.EXE &quot;Internal Error&quot; Using Passed Integers in Expression
 
+{% raw %}
+
 	Article: Q39245
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -45,3 +47,5 @@ permalink: /kb/039/Q39245/
 	   LCol% = temp1%
 	   NumCol# = ((Rcol% - LCol%) + 1) \ BarLen%
 	END SUB
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159919/
 
 ## Q159919: XADM: Public Folder Hierarchy Replicates Through Messages
 
+{% raw %}
+
 	Article: Q159919
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -47,3 +49,5 @@ permalink: /kb/159/Q159919/
 	
 	=============================================================================
 	
+
+{% endraw %}

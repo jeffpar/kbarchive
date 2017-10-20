@@ -6,6 +6,8 @@ permalink: /kb/122/Q122125/
 
 ## Q122125: Information: Card Soft PCMCIA Drivers and Definitions
 
+{% raw %}
+
 	Article: Q122125
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -100,3 +102,5 @@ permalink: /kb/122/Q122125/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/078/Q78019/
 
 ## Q78019: Bookshelf Setup: Fatal Error Copying FONTFILE.EXT
 
+{% raw %}
+
 	Article: Q78019
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1991 edition
@@ -43,3 +45,5 @@ permalink: /kb/078/Q78019/
 	
 	=============================================================================
 	
+
+{% endraw %}

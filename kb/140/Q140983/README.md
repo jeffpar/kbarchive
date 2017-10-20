@@ -6,6 +6,8 @@ permalink: /kb/140/Q140983/
 
 ## Q140983: PPT7: Pack And Go Wizard Is Not Supported on Windows 3.1
 
+{% raw %}
+
 	Article: Q140983
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 7.0
@@ -111,3 +113,5 @@ permalink: /kb/140/Q140983/
 	
 	=============================================================================
 	
+
+{% endraw %}

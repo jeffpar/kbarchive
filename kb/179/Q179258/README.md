@@ -6,6 +6,8 @@ permalink: /kb/179/Q179258/
 
 ## Q179258: XADM: Considerations When Upgrading to Exchange Server 5.5
 
+{% raw %}
+
 	Article: Q179258
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -239,3 +241,5 @@ permalink: /kb/179/Q179258/
 	
 	=============================================================================
 	
+
+{% endraw %}

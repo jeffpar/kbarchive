@@ -6,6 +6,8 @@ permalink: /kb/120/Q120493/
 
 ## Q120493: NWLink with Ethernet_II Frame Type Corrupt Packets
 
+{% raw %}
+
 	Article: Q120493
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.11,3.5,4.0
@@ -83,3 +85,5 @@ permalink: /kb/120/Q120493/
 	
 	=============================================================================
 	
+
+{% endraw %}

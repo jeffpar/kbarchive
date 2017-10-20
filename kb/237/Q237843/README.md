@@ -6,6 +6,8 @@ permalink: /kb/237/Q237843/
 
 ## Q237843: HOWTO: Synchronize a SourceControlled VFP Project Between Users
 
+{% raw %}
+
 	Article: Q237843
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -88,3 +90,5 @@ permalink: /kb/237/Q237843/
 	
 	=============================================================================
 	
+
+{% endraw %}

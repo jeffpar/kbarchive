@@ -6,6 +6,8 @@ permalink: /kb/198/Q198810/
 
 ## Q198810: XWEB: Mail Doesn't Get Sent to Contacts w/SMTP in E-mail Address
 
+{% raw %}
+
 	Article: Q198810
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -77,3 +79,5 @@ permalink: /kb/198/Q198810/
 	
 	=============================================================================
 	
+
+{% endraw %}

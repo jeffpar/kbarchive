@@ -6,6 +6,8 @@ permalink: /kb/117/Q117466/
 
 ## Q117466: Cannot Create Shortcuts with File Manager in Windows 95
 
+{% raw %}
+
 	Article: Q117466
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -53,3 +55,5 @@ permalink: /kb/117/Q117466/
 	
 	=============================================================================
 	
+
+{% endraw %}

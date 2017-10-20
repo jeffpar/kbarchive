@@ -6,6 +6,8 @@ permalink: /kb/134/Q134778/
 
 ## Q134778: Cannot Print from MS-DOS to JetDirect Printer in Direct Mode
 
+{% raw %}
+
 	Article: Q134778
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -74,3 +76,5 @@ permalink: /kb/134/Q134778/
 	
 	=============================================================================
 	
+
+{% endraw %}

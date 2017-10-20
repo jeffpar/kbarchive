@@ -6,6 +6,8 @@ permalink: /kb/142/Q142911/
 
 ## Q142911: Printing in Portrait and Landscape Results in Two-Page Output
 
+{% raw %}
+
 	Article: Q142911
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -54,3 +56,5 @@ permalink: /kb/142/Q142911/
 	
 	=============================================================================
 	
+
+{% endraw %}

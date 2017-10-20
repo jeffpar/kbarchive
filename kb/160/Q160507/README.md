@@ -6,6 +6,8 @@ permalink: /kb/160/Q160507/
 
 ## Q160507: Windows 95 OEM Service Release 2 CD-ROM Network.txt File
 
+{% raw %}
+
 	Article: Q160507
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -614,3 +616,5 @@ permalink: /kb/160/Q160507/
 	
 	=============================================================================
 	
+
+{% endraw %}

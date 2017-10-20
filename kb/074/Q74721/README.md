@@ -6,6 +6,8 @@ permalink: /kb/074/Q74721/
 
 ## Q74721: Windows Err Msg: Full Paint Reject (Canon LBP-8II Printer)
 
+{% raw %}
+
 	Article: Q74721
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -54,3 +56,5 @@ permalink: /kb/074/Q74721/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/262/Q262947/
 
 ## Q262947: FILE: Event.sys: Sample Driver for Windows 2000
 
+{% raw %}
+
 	Article: Q262947
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; winnt:
@@ -164,3 +166,5 @@ permalink: /kb/262/Q262947/
 	
 	=============================================================================
 	
+
+{% endraw %}

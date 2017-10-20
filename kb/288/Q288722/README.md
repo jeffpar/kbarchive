@@ -6,6 +6,8 @@ permalink: /kb/288/Q288722/
 
 ## Q288722: Non-Delivery Reports with Event ID 2025 Error Code BB8 or 50A
 
+{% raw %}
+
 	Article: Q288722
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -103,3 +105,5 @@ permalink: /kb/288/Q288722/
 	
 	=============================================================================
 	
+
+{% endraw %}

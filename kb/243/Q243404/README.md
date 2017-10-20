@@ -6,6 +6,8 @@ permalink: /kb/243/Q243404/
 
 ## Q243404: Winobj.exe May Permit You to View Securable Jet500.dll Objects
 
+{% raw %}
+
 	Article: Q243404
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -156,3 +158,5 @@ permalink: /kb/243/Q243404/
 	
 	=============================================================================
 	
+
+{% endraw %}

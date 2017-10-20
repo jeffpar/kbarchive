@@ -6,6 +6,8 @@ permalink: /kb/141/Q141842/
 
 ## Q141842: Sounds Played Repeatedly with Sigma Designs ReelMagic Board
 
+{% raw %}
+
 	Article: Q141842
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -62,3 +64,5 @@ permalink: /kb/141/Q141842/
 	
 	=============================================================================
 	
+
+{% endraw %}

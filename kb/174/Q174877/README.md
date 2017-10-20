@@ -6,6 +6,8 @@ permalink: /kb/174/Q174877/
 
 ## Q174877: FIX: Selecting a File in SourceSafe Explorer Causes Refresh
 
+{% raw %}
+
 	Article: Q174877
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/174/Q174877/
 	
 	=============================================================================
 	
+
+{% endraw %}

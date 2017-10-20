@@ -6,6 +6,8 @@ permalink: /kb/097/Q97166/
 
 ## Q97166: How to Compile a FoxBASE+ Program
 
+{% raw %}
+
 	Article: Q97166
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -51,3 +53,5 @@ permalink: /kb/097/Q97166/
 	
 	=============================================================================
 	
+
+{% endraw %}

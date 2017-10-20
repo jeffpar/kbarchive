@@ -6,6 +6,8 @@ permalink: /kb/138/Q138897/
 
 ## Q138897: MS Fax Does Not Recognize the &quot;&#36;&quot; Calling Card Dialing Rule
 
+{% raw %}
+
 	Article: Q138897
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -75,3 +77,5 @@ permalink: /kb/138/Q138897/
 	
 	=============================================================================
 	
+
+{% endraw %}

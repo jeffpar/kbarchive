@@ -6,6 +6,8 @@ permalink: /kb/082/Q82255/
 
 ## Q82255: Visual Basic Combo Control Receives Extra &quot;Click&quot; Event
 
+{% raw %}
+
 	Article: Q82255
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/082/Q82255/
 	
 	=============================================================================
 	
+
+{% endraw %}

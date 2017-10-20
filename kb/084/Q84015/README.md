@@ -6,6 +6,8 @@ permalink: /kb/084/Q84015/
 
 ## Q84015: Adaptec 1740 Controller Requires Double Buffering
 
+{% raw %}
+
 	Article: Q84015
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.0,6.0; WINDOWS:3.0,3.0a,3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/084/Q84015/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129546/
 
 ## Q129546: No 600 dpi Option for Canon LBP-8 IV Printer
 
+{% raw %}
+
 	Article: Q129546
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -48,3 +50,5 @@ permalink: /kb/129/Q129546/
 	
 	=============================================================================
 	
+
+{% endraw %}

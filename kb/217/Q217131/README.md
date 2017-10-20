@@ -6,6 +6,8 @@ permalink: /kb/217/Q217131/
 
 ## Q217131: XCON: Link Remains Up After Urgent Message Overrides Schedule
 
+{% raw %}
+
 	Article: Q217131
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -103,3 +105,5 @@ permalink: /kb/217/Q217131/
 	
 	=============================================================================
 	
+
+{% endraw %}

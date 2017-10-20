@@ -6,6 +6,8 @@ permalink: /kb/131/Q131380/
 
 ## Q131380: PC WSPlus: Dynamic Connections through GSNW to Novell Servers
 
+{% raw %}
+
 	Article: Q131380
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -119,3 +121,5 @@ permalink: /kb/131/Q131380/
 	
 	=============================================================================
 	
+
+{% endraw %}

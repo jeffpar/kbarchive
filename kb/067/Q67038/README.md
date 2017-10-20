@@ -6,6 +6,8 @@ permalink: /kb/067/Q67038/
 
 ## Q67038: INFO: TYPE Operator Expressions Not Allowed for Inline Assembly
 
+{% raw %}
+
 	Article: Q67038
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -42,3 +44,5 @@ permalink: /kb/067/Q67038/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198855/
 
 ## Q198855: Certificate Phone Number Field Does Not Accept Letters
 
+{% raw %}
+
 	Article: Q198855
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -51,3 +53,5 @@ permalink: /kb/198/Q198855/
 	
 	=============================================================================
 	
+
+{% endraw %}

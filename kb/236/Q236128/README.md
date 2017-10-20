@@ -6,6 +6,8 @@ permalink: /kb/236/Q236128/
 
 ## Q236128: Deleting the Last User Privilege Deletes the Group Object
 
+{% raw %}
+
 	Article: Q236128
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/236/Q236128/
 	
 	=============================================================================
 	
+
+{% endraw %}

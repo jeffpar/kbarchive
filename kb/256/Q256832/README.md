@@ -6,6 +6,8 @@ permalink: /kb/256/Q256832/
 
 ## Q256832: MapPoint 2001: File Size of Map Increases Unexpectedly
 
+{% raw %}
+
 	Article: Q256832
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/256/Q256832/
 	
 	=============================================================================
 	
+
+{% endraw %}

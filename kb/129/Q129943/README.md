@@ -6,6 +6,8 @@ permalink: /kb/129/Q129943/
 
 ## Q129943: INFO: OLE Controls Must Be Registered
 
+{% raw %}
+
 	Article: Q129943
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/129/Q129943/
 	
 	=============================================================================
 	
+
+{% endraw %}

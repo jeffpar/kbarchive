@@ -6,6 +6,8 @@ permalink: /kb/138/Q138740/
 
 ## Q138740: SHUTGUI Window May Not Be Visible In Large Fonts
 
+{% raw %}
+
 	Article: Q138740
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/138/Q138740/
 	
 	=============================================================================
 	
+
+{% endraw %}

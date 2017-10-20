@@ -6,6 +6,8 @@ permalink: /kb/199/Q199656/
 
 ## Q199656: XIMS: How to Stop Spam Mail Messages from Using IMS Relay Agent
 
+{% raw %}
+
 	Article: Q199656
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -89,3 +91,5 @@ permalink: /kb/199/Q199656/
 	
 	=============================================================================
 	
+
+{% endraw %}

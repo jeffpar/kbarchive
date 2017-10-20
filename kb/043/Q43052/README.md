@@ -6,6 +6,8 @@ permalink: /kb/043/Q43052/
 
 ## Q43052: Windows Does Not Support OS/2 Family API Calls
 
+{% raw %}
+
 	Article: Q43052
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -93,3 +95,5 @@ permalink: /kb/043/Q43052/
 	
 	=============================================================================
 	
+
+{% endraw %}

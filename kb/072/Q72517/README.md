@@ -6,6 +6,8 @@ permalink: /kb/072/Q72517/
 
 ## Q72517: UNDELETE Won't Work If the Subdirectory Has Been Removed
 
+{% raw %}
+
 	Article: Q72517
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -59,3 +61,5 @@ permalink: /kb/072/Q72517/
 	
 	=============================================================================
 	
+
+{% endraw %}

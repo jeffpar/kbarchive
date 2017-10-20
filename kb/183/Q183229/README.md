@@ -6,6 +6,8 @@ permalink: /kb/183/Q183229/
 
 ## Q183229: RAS Uses Fixed TCP/IP MTU Size
 
+{% raw %}
+
 	Article: Q183229
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -126,3 +128,5 @@ permalink: /kb/183/Q183229/
 	
 	=============================================================================
 	
+
+{% endraw %}

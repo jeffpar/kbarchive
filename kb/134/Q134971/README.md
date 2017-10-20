@@ -6,6 +6,8 @@ permalink: /kb/134/Q134971/
 
 ## Q134971: Cannot Create Setup Disks From MSDN CD-ROM
 
+{% raw %}
+
 	Article: Q134971
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/134/Q134971/
 	
 	=============================================================================
 	
+
+{% endraw %}

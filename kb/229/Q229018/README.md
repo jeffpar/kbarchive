@@ -6,6 +6,8 @@ permalink: /kb/229/Q229018/
 
 ## Q229018: SMS: APM Re-Executes Some Advertisements
 
+{% raw %}
+
 	Article: Q229018
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -88,3 +90,5 @@ permalink: /kb/229/Q229018/
 	
 	=============================================================================
 	
+
+{% endraw %}

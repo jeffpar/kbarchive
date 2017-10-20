@@ -6,6 +6,8 @@ permalink: /kb/182/Q182368/
 
 ## Q182368: XCLN: Err Msg: Exchange32 Is Not A Valid Win32 Application
 
+{% raw %}
+
 	Article: Q182368
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -62,3 +64,5 @@ permalink: /kb/182/Q182368/
 	
 	=============================================================================
 	
+
+{% endraw %}

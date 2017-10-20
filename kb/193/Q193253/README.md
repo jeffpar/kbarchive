@@ -6,6 +6,8 @@ permalink: /kb/193/Q193253/
 
 ## Q193253: BUG: HalfHeightCaption Form Causes Small Empty Control Menu
 
+{% raw %}
+
 	Article: Q193253
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -110,3 +112,5 @@ permalink: /kb/193/Q193253/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/115/Q115618/
 
 ## Q115618: PRB: Numeric Overflow (Data Was Lost)
 
+{% raw %}
+
 	Article: Q115618
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5c,2.5x; MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
@@ -67,3 +69,5 @@ permalink: /kb/115/Q115618/
 	
 	=============================================================================
 	
+
+{% endraw %}

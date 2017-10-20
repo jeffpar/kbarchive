@@ -6,6 +6,8 @@ permalink: /kb/095/Q95349/
 
 ## Q95349: Cannot Open More Than One File at a Time with EXPAND
 
+{% raw %}
+
 	Article: Q95349
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -39,3 +41,5 @@ permalink: /kb/095/Q95349/
 	
 	=============================================================================
 	
+
+{% endraw %}

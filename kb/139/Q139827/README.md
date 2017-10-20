@@ -6,6 +6,8 @@ permalink: /kb/139/Q139827/
 
 ## Q139827: ThinkPad Hibernation File Does Not Work with DriveSpace
 
+{% raw %}
+
 	Article: Q139827
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -57,3 +59,5 @@ permalink: /kb/139/Q139827/
 	
 	=============================================================================
 	
+
+{% endraw %}

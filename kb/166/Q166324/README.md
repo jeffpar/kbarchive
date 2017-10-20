@@ -6,6 +6,8 @@ permalink: /kb/166/Q166324/
 
 ## Q166324: FCP: Err Msg: Cannot Initialize Sound System
 
+{% raw %}
+
 	Article: Q166324
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/166/Q166324/
 	
 	=============================================================================
 	
+
+{% endraw %}

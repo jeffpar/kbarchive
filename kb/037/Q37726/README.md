@@ -6,6 +6,8 @@ permalink: /kb/037/Q37726/
 
 ## Q37726: Error C2143 Syntax Error : Missing 'token1' before 'token2'
 
+{% raw %}
+
 	Article: Q37726
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -45,3 +47,5 @@ permalink: /kb/037/Q37726/
 	interprets the prototype as the start of a function definition, and
 	the next line to follow the prototype as if it were the first
 	declaration within a function definition.
+
+{% endraw %}

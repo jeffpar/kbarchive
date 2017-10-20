@@ -6,6 +6,8 @@ permalink: /kb/117/Q117304/
 
 ## Q117304: RAS Event ID (Error Code) Information
 
+{% raw %}
+
 	Article: Q117304
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51,4.0;Win95
@@ -832,3 +834,5 @@ permalink: /kb/117/Q117304/
 	
 	=============================================================================
 	
+
+{% endraw %}

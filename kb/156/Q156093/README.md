@@ -6,6 +6,8 @@ permalink: /kb/156/Q156093/
 
 ## Q156093: XADM: An Error Occurred While Processing an E-mail Address
 
+{% raw %}
+
 	Article: Q156093
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -70,3 +72,5 @@ permalink: /kb/156/Q156093/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185711/
 
 ## Q185711: Stop 0x50 When Shared Folders Gateway (Sffsd.sys) Is Stopped
 
+{% raw %}
+
 	Article: Q185711
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -55,3 +57,5 @@ permalink: /kb/185/Q185711/
 	
 	=============================================================================
 	
+
+{% endraw %}

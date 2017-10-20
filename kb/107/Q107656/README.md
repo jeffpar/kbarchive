@@ -6,6 +6,8 @@ permalink: /kb/107/Q107656/
 
 ## Q107656: Writer: GP Fault After a Random Animation Plays
 
+{% raw %}
+
 	Article: Q107656
 	Product(s): Microsoft Home Kids Products
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/107/Q107656/
 	
 	=============================================================================
 	
+
+{% endraw %}

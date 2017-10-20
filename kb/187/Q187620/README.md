@@ -6,6 +6,8 @@ permalink: /kb/187/Q187620/
 
 ## Q187620: Understanding Intranets Comments and Corrections
 
+{% raw %}
+
 	Article: Q187620
 	Product(s): Microsoft Press
 	Version(s): 
@@ -135,3 +137,5 @@ permalink: /kb/187/Q187620/
 	
 	=============================================================================
 	
+
+{% endraw %}

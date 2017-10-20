@@ -6,6 +6,8 @@ permalink: /kb/050/Q50702/
 
 ## Q50702: PRB: /PACKCODE Incompatible with IOPL Segments w/ LINK 5.01.21
 
+{% raw %}
+
 	Article: Q50702
 	Product(s): Microsoft Programming Utilities
 	Version(s): OS/2:5.01.21
@@ -47,3 +49,5 @@ permalink: /kb/050/Q50702/
 	
 	=============================================================================
 	
+
+{% endraw %}

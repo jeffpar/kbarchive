@@ -6,6 +6,8 @@ permalink: /kb/130/Q130866/
 
 ## Q130866: INFO: Using a TimerProc Function in MFC Application
 
+{% raw %}
+
 	Article: Q130866
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0
@@ -145,3 +147,5 @@ permalink: /kb/130/Q130866/
 	
 	=============================================================================
 	
+
+{% endraw %}

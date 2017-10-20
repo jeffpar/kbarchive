@@ -6,6 +6,8 @@ permalink: /kb/118/Q118994/
 
 ## Q118994: FAX: ErrMsg: Cannot Find or Open M:&#92;FAX&#92;&#42;.ICX file
 
+{% raw %}
+
 	Article: Q118994
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.0a
@@ -52,3 +54,5 @@ permalink: /kb/118/Q118994/
 	
 	=============================================================================
 	
+
+{% endraw %}

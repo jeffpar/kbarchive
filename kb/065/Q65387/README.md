@@ -6,6 +6,8 @@ permalink: /kb/065/Q65387/
 
 ## Q65387: Mac Form: Cannot Create Custom Voice Mail Forms
 
+{% raw %}
+
 	Article: Q65387
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -40,3 +42,5 @@ permalink: /kb/065/Q65387/
 	
 	=============================================================================
 	
+
+{% endraw %}

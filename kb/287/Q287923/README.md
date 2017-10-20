@@ -6,6 +6,8 @@ permalink: /kb/287/Q287923/
 
 ## Q287923: MechWarrior 4 Error Message: Exception: Access Violation in MW4
 
+{% raw %}
+
 	Article: Q287923
 	Product(s): Microsoft Home Games
 	Version(s): 4.0
@@ -206,3 +208,5 @@ permalink: /kb/287/Q287923/
 	
 	=============================================================================
 	
+
+{% endraw %}

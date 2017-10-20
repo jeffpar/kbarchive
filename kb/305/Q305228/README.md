@@ -6,6 +6,8 @@ permalink: /kb/305/Q305228/
 
 ## Q305228: &quot;STOP 0xA&quot; Occurs After Applying Windows NT 4.0 SRP
 
+{% raw %}
+
 	Article: Q305228
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6a
@@ -129,3 +131,5 @@ permalink: /kb/305/Q305228/
 	
 	=============================================================================
 	
+
+{% endraw %}

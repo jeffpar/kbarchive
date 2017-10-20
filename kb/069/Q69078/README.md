@@ -6,6 +6,8 @@ permalink: /kb/069/Q69078/
 
 ## Q69078: Printing Text Reports
 
+{% raw %}
+
 	Article: Q69078
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -121,3 +123,5 @@ permalink: /kb/069/Q69078/
 	
 	=============================================================================
 	
+
+{% endraw %}

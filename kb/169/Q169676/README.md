@@ -6,6 +6,8 @@ permalink: /kb/169/Q169676/
 
 ## Q169676: XCON: DirRep Messages NDR Due to Connector Restrictions
 
+{% raw %}
+
 	Article: Q169676
 	Product(s): Microsoft Exchange
 	Version(s): 5.00
@@ -63,3 +65,5 @@ permalink: /kb/169/Q169676/
 	
 	=============================================================================
 	
+
+{% endraw %}

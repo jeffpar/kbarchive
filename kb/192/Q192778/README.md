@@ -6,6 +6,8 @@ permalink: /kb/192/Q192778/
 
 ## Q192778: BUG: Package Call Fails if Parameters Are Not Present
 
+{% raw %}
+
 	Article: Q192778
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5,Build 2.573.2927
@@ -94,3 +96,5 @@ permalink: /kb/192/Q192778/
 	
 	=============================================================================
 	
+
+{% endraw %}

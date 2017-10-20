@@ -6,6 +6,8 @@ permalink: /kb/041/Q41086/
 
 ## Q41086: IEEE Number Range Correction for QB 4.0 &quot;Learning and Using&quot;
 
+{% raw %}
+
 	Article: Q41086
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -45,3 +47,5 @@ permalink: /kb/041/Q41086/
 	PRINT j#, k
 	IF k = 0 THEN STOP
 	GOTO t
+
+{% endraw %}

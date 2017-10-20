@@ -6,6 +6,8 @@ permalink: /kb/181/Q181835/
 
 ## Q181835: Unable to Start the Server Service
 
+{% raw %}
+
 	Article: Q181835
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -133,3 +135,5 @@ permalink: /kb/181/Q181835/
 	
 	=============================================================================
 	
+
+{% endraw %}

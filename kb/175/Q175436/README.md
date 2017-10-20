@@ -6,6 +6,8 @@ permalink: /kb/175/Q175436/
 
 ## Q175436: DNS Stops Forwarding Queries After PPP Link Goes Down
 
+{% raw %}
+
 	Article: Q175436
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/175/Q175436/
 	
 	=============================================================================
 	
+
+{% endraw %}

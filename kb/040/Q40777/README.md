@@ -6,6 +6,8 @@ permalink: /kb/040/Q40777/
 
 ## Q40777: Using /ND to Put Uninitialized Data in a Named Segment
 
+{% raw %}
+
 	Article: Q40777
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -49,3 +51,5 @@ permalink: /kb/040/Q40777/
 	
 	So, to put the variable in the STUFF group, either declare the
 	variable static or initialize it (like either b or c above).
+
+{% endraw %}

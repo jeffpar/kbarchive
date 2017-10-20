@@ -6,6 +6,8 @@ permalink: /kb/057/Q57368/
 
 ## Q57368: Explanation of Critical Error Codes Returned by ERDEV
 
+{% raw %}
+
 	Article: Q57368
 	Product(s): See article
 	Version(s): 2.00 3.00 4.00 4.00b 4.50
@@ -125,3 +127,5 @@ permalink: /kb/057/Q57368/
 	   DosErrCode = x AND &HFF              'low byte of ERDEV
 	   PRINT "The DOS error code returned by ERDEV => "; x
 	RESUME NEXT
+
+{% endraw %}

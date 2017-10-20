@@ -6,6 +6,8 @@ permalink: /kb/298/Q298569/
 
 ## Q298569: /Oxs Is Always Present in Project Options
 
+{% raw %}
+
 	Article: Q298569
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/298/Q298569/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195488/
 
 ## Q195488: INFO: Installing Visual Modeler for Visual Basic 5.0 and 6.0
 
+{% raw %}
+
 	Article: Q195488
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -76,3 +78,5 @@ permalink: /kb/195/Q195488/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139496/
 
 ## Q139496: Slow Performance in Bulletin Boards with 1000+ Messages
 
+{% raw %}
+
 	Article: Q139496
 	Product(s): The Microsoft Network
 	Version(s): 1.00 1.05 1.2 1.3
@@ -54,3 +56,5 @@ permalink: /kb/139/Q139496/
 	
 	=============================================================================
 	
+
+{% endraw %}

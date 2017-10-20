@@ -6,6 +6,8 @@ permalink: /kb/154/Q154590/
 
 ## Q154590: Print Option Unavailable in Tabworks
 
+{% raw %}
+
 	Article: Q154590
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -50,3 +52,5 @@ permalink: /kb/154/Q154590/
 	
 	=============================================================================
 	
+
+{% endraw %}

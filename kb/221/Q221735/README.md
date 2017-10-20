@@ -6,6 +6,8 @@ permalink: /kb/221/Q221735/
 
 ## Q221735: FIX: Reference to ActiveForm does not Allow Access to all Prop.
 
+{% raw %}
+
 	Article: Q221735
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -76,3 +78,5 @@ permalink: /kb/221/Q221735/
 	
 	=============================================================================
 	
+
+{% endraw %}

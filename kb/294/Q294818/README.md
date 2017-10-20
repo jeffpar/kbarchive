@@ -6,6 +6,8 @@ permalink: /kb/294/Q294818/
 
 ## Q294818: Frequently Asked Questions About Network Monitor
 
+{% raw %}
+
 	Article: Q294818
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,4.0
@@ -275,3 +277,5 @@ permalink: /kb/294/Q294818/
 	
 	=============================================================================
 	
+
+{% endraw %}

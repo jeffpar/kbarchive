@@ -6,6 +6,8 @@ permalink: /kb/232/Q232003/
 
 ## Q232003: HOWTO: Determine the Version of DCOM 95/98 Using Visual Basic
 
+{% raw %}
+
 	Article: Q232003
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -296,3 +298,5 @@ permalink: /kb/232/Q232003/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/113/Q113015/
 
 ## Q113015: PPT: Applying Template Does Not Affect Slide Setup
 
+{% raw %}
+
 	Article: Q113015
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:3.0,4.0; WINDOWS:3.0,4.0,4.0a,4.0c,7.0
@@ -68,3 +70,5 @@ permalink: /kb/113/Q113015/
 	
 	=============================================================================
 	
+
+{% endraw %}

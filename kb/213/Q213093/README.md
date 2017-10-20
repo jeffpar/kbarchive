@@ -6,6 +6,8 @@ permalink: /kb/213/Q213093/
 
 ## Q213093: LastLogonUserName Reports User Name Different than NetWare Name
 
+{% raw %}
+
 	Article: Q213093
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -57,3 +59,5 @@ permalink: /kb/213/Q213093/
 	
 	=============================================================================
 	
+
+{% endraw %}

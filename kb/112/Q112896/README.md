@@ -6,6 +6,8 @@ permalink: /kb/112/Q112896/
 
 ## Q112896: PC Rmt: Remote Postoffice List Only Contains Local Addresses
 
+{% raw %}
+
 	Article: Q112896
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -65,3 +67,5 @@ permalink: /kb/112/Q112896/
 	
 	=============================================================================
 	
+
+{% endraw %}

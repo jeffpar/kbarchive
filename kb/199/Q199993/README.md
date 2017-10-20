@@ -6,6 +6,8 @@ permalink: /kb/199/Q199993/
 
 ## Q199993: SMS: Using SMS Service Manager to Query/Start/Stop SMS Services
 
+{% raw %}
+
 	Article: Q199993
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -83,3 +85,5 @@ permalink: /kb/199/Q199993/
 	
 	=============================================================================
 	
+
+{% endraw %}

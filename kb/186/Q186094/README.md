@@ -6,6 +6,8 @@ permalink: /kb/186/Q186094/
 
 ## Q186094: HOWTO: Change the Data Series in MSGraph Using the PlotBy Prop
 
+{% raw %}
+
 	Article: Q186094
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -127,3 +129,5 @@ permalink: /kb/186/Q186094/
 	
 	=============================================================================
 	
+
+{% endraw %}

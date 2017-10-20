@@ -6,6 +6,8 @@ permalink: /kb/067/Q67793/
 
 ## Q67793: The Syntax for STACK Is Incorrect in EXEHDR Usage Statement
 
+{% raw %}
+
 	Article: Q67793
 	Product(s): See article
 	Version(s): 2.01   | 2.01
@@ -25,3 +27,5 @@ permalink: /kb/067/Q67793/
 	
 	   EXEHDR: error U1110: malformed number xxxx
 	   EXEHDR: error U1115: option /STACK:xxxx ignored
+
+{% endraw %}

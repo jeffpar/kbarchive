@@ -6,6 +6,8 @@ permalink: /kb/257/Q257398/
 
 ## Q257398: SFU: Cannot Use ALT+CONTROL Keys from Within a Telnet Session
 
+{% raw %}
+
 	Article: Q257398
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/257/Q257398/
 	
 	=============================================================================
 	
+
+{% endraw %}

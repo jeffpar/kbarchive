@@ -6,6 +6,8 @@ permalink: /kb/275/Q275868/
 
 ## Q275868: CFS2: Tips and Suggestions for Training Missions
 
+{% raw %}
+
 	Article: Q275868
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -69,3 +71,5 @@ permalink: /kb/275/Q275868/
 	
 	=============================================================================
 	
+
+{% endraw %}

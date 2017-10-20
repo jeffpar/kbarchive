@@ -6,6 +6,8 @@ permalink: /kb/120/Q120128/
 
 ## Q120128: PPT: Bypassing Startup Dialog Boxes in PowerPoint
 
+{% raw %}
+
 	Article: Q120128
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -100,3 +102,5 @@ permalink: /kb/120/Q120128/
 	
 	=============================================================================
 	
+
+{% endraw %}

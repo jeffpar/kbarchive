@@ -6,6 +6,8 @@ permalink: /kb/089/Q89724/
 
 ## Q89724: Use New Disk Manager Drivers After MS-DOS Uninstall
 
+{% raw %}
+
 	Article: Q89724
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -58,3 +60,5 @@ permalink: /kb/089/Q89724/
 	
 	=============================================================================
 	
+
+{% endraw %}

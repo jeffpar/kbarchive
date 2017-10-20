@@ -6,6 +6,8 @@ permalink: /kb/162/Q162719/
 
 ## Q162719: HOWTO: Use the WebBrowser Control from Visual Basic 5.0
 
+{% raw %}
+
 	Article: Q162719
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -120,3 +122,5 @@ permalink: /kb/162/Q162719/
 	
 	=============================================================================
 	
+
+{% endraw %}

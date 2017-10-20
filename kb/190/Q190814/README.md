@@ -6,6 +6,8 @@ permalink: /kb/190/Q190814/
 
 ## Q190814: HOWTO: Display a ReadMe File at the End of a Custom Setup
 
+{% raw %}
+
 	Article: Q190814
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -98,3 +100,5 @@ permalink: /kb/190/Q190814/
 	
 	=============================================================================
 	
+
+{% endraw %}

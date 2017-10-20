@@ -6,6 +6,8 @@ permalink: /kb/163/Q163773/
 
 ## Q163773: Brief 3.0 in NTVDM Consumes 100% Processor
 
+{% raw %}
+
 	Article: Q163773
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -47,3 +49,5 @@ permalink: /kb/163/Q163773/
 	
 	=============================================================================
 	
+
+{% endraw %}

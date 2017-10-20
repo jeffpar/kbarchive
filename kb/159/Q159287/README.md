@@ -6,6 +6,8 @@ permalink: /kb/159/Q159287/
 
 ## Q159287: XCLN: MAPIFindNext Fails to Retrieve Message Identifiers
 
+{% raw %}
+
 	Article: Q159287
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -120,3 +122,5 @@ permalink: /kb/159/Q159287/
 	
 	=============================================================================
 	
+
+{% endraw %}

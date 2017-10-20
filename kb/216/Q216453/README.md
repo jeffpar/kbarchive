@@ -6,6 +6,8 @@ permalink: /kb/216/Q216453/
 
 ## Q216453: FP: FP98: Security Patch for FrontPage Personal Web Server
 
+{% raw %}
+
 	Article: Q216453
 	Product(s): Word Front Page
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/216/Q216453/
 	
 	=============================================================================
 	
+
+{% endraw %}

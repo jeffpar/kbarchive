@@ -6,6 +6,8 @@ permalink: /kb/274/Q274571/
 
 ## Q274571: Games: Font Related Issues in Microsoft Games
 
+{% raw %}
+
 	Article: Q274571
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -244,3 +246,5 @@ permalink: /kb/274/Q274571/
 	
 	=============================================================================
 	
+
+{% endraw %}

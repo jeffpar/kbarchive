@@ -6,6 +6,8 @@ permalink: /kb/195/Q195909/
 
 ## Q195909: Virtual Globe 99: &quot;Disputed&quot; Is Repeated in Dynamic Sensor Tool
 
+{% raw %}
+
 	Article: Q195909
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -56,3 +58,5 @@ permalink: /kb/195/Q195909/
 	
 	=============================================================================
 	
+
+{% endraw %}

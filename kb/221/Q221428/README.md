@@ -6,6 +6,8 @@ permalink: /kb/221/Q221428/
 
 ## Q221428: XFOR: Mail Forwarded from GroupWise to Exchange Loses Flag
 
+{% raw %}
+
 	Article: Q221428
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -63,3 +65,5 @@ permalink: /kb/221/Q221428/
 	
 	=============================================================================
 	
+
+{% endraw %}

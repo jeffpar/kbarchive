@@ -6,6 +6,8 @@ permalink: /kb/185/Q185265/
 
 ## Q185265: Err Msg: Repair Disk Utility Could Not Save All Configuration...
 
+{% raw %}
+
 	Article: Q185265
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -104,3 +106,5 @@ permalink: /kb/185/Q185265/
 	
 	=============================================================================
 	
+
+{% endraw %}

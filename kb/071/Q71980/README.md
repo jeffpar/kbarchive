@@ -6,6 +6,8 @@ permalink: /kb/071/Q71980/
 
 ## Q71980: DOCERR: MASM 6.0 Makefile BELL.MAK Gives C1024 Compiler Error
 
+{% raw %}
+
 	Article: Q71980
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b
@@ -79,3 +81,5 @@ permalink: /kb/071/Q71980/
 	
 	=============================================================================
 	
+
+{% endraw %}

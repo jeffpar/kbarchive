@@ -6,6 +6,8 @@ permalink: /kb/119/Q119333/
 
 ## Q119333: PRB: CWinApp-Based DLL Gets Assertion Failure on Win32s
 
+{% raw %}
+
 	Article: Q119333
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -110,3 +112,5 @@ permalink: /kb/119/Q119333/
 	
 	=============================================================================
 	
+
+{% endraw %}

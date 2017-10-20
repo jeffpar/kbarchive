@@ -6,6 +6,8 @@ permalink: /kb/219/Q219376/
 
 ## Q219376: NDIS Does Not Indicate NDIS_RESET_END Status
 
+{% raw %}
+
 	Article: Q219376
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -78,3 +80,5 @@ permalink: /kb/219/Q219376/
 	
 	=============================================================================
 	
+
+{% endraw %}

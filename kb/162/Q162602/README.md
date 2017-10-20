@@ -6,6 +6,8 @@ permalink: /kb/162/Q162602/
 
 ## Q162602: WD97: Questions About Saving in the Word 6.0/95 File Format
 
+{% raw %}
+
 	Article: Q162602
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -264,3 +266,5 @@ permalink: /kb/162/Q162602/
 	
 	=============================================================================
 	
+
+{% endraw %}

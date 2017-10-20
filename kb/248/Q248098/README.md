@@ -6,6 +6,8 @@ permalink: /kb/248/Q248098/
 
 ## Q248098: PRB: ErrMsg: Method Call on MTS Object from VB App Fails
 
+{% raw %}
+
 	Article: Q248098
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,4.0,6.0
@@ -219,3 +221,5 @@ permalink: /kb/248/Q248098/
 	
 	=============================================================================
 	
+
+{% endraw %}

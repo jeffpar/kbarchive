@@ -6,6 +6,8 @@ permalink: /kb/126/Q126932/
 
 ## Q126932: Scenes 2.0: Will Not Close Under Windows NT
 
+{% raw %}
+
 	Article: Q126932
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2.0
@@ -64,3 +66,5 @@ permalink: /kb/126/Q126932/
 	
 	=============================================================================
 	
+
+{% endraw %}

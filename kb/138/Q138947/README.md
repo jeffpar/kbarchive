@@ -6,6 +6,8 @@ permalink: /kb/138/Q138947/
 
 ## Q138947: FIX: Comma Acts Like CR/LF in Custom Build Options
 
+{% raw %}
+
 	Article: Q138947
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -82,3 +84,5 @@ permalink: /kb/138/Q138947/
 	
 	=============================================================================
 	
+
+{% endraw %}

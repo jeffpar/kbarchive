@@ -6,6 +6,8 @@ permalink: /kb/274/Q274211/
 
 ## Q274211: PRB: Error Msg. 3734 Occurs When You Repeatedly Open &amp; Close MDB
 
+{% raw %}
+
 	Article: Q274211
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -254,3 +256,5 @@ permalink: /kb/274/Q274211/
 	
 	=============================================================================
 	
+
+{% endraw %}

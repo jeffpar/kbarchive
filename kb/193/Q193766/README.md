@@ -6,6 +6,8 @@ permalink: /kb/193/Q193766/
 
 ## Q193766: SMS: Despooler Reports Out of Disk Space in Event Log
 
+{% raw %}
+
 	Article: Q193766
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -86,3 +88,5 @@ permalink: /kb/193/Q193766/
 	
 	=============================================================================
 	
+
+{% endraw %}

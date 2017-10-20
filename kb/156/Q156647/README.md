@@ -6,6 +6,8 @@ permalink: /kb/156/Q156647/
 
 ## Q156647: Deadly Tide: Troubleshooting Display Problems
 
+{% raw %}
+
 	Article: Q156647
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -111,3 +113,5 @@ permalink: /kb/156/Q156647/
 	
 	=============================================================================
 	
+
+{% endraw %}

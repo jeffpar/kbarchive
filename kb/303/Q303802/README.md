@@ -6,6 +6,8 @@ permalink: /kb/303/Q303802/
 
 ## Q303802: HOWTO: Troubleshoot SMB Connections from IIS/ASP
 
+{% raw %}
+
 	Article: Q303802
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -299,3 +301,5 @@ permalink: /kb/303/Q303802/
 	
 	=============================================================================
 	
+
+{% endraw %}

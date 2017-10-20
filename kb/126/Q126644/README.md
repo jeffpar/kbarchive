@@ -6,6 +6,8 @@ permalink: /kb/126/Q126644/
 
 ## Q126644: Troubleshooting SMS Workstation Package Installations
 
+{% raw %}
+
 	Article: Q126644
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -154,3 +156,5 @@ permalink: /kb/126/Q126644/
 	
 	=============================================================================
 	
+
+{% endraw %}

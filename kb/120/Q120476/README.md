@@ -6,6 +6,8 @@ permalink: /kb/120/Q120476/
 
 ## Q120476: ADT2: Microsoft ADT Disk Contents (3.5 Inch, 1.44 MB)
 
+{% raw %}
+
 	Article: Q120476
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -136,3 +138,5 @@ permalink: /kb/120/Q120476/
 	
 	=============================================================================
 	
+
+{% endraw %}

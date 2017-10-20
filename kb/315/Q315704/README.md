@@ -6,6 +6,8 @@ permalink: /kb/315/Q315704/
 
 ## Q315704: PDT-Enabled Print Sessions Result in Corrupted or Missing Data
 
+{% raw %}
+
 	Article: Q315704
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/315/Q315704/
 	
 	=============================================================================
 	
+
+{% endraw %}

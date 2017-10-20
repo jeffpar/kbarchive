@@ -6,6 +6,8 @@ permalink: /kb/314/Q314655/
 
 ## Q314655: FIX: &quot;Cannot update the cursor&quot; Error Indexing a View
 
+{% raw %}
+
 	Article: Q314655
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -91,3 +93,5 @@ permalink: /kb/314/Q314655/
 	
 	=============================================================================
 	
+
+{% endraw %}

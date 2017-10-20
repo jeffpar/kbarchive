@@ -6,6 +6,8 @@ permalink: /kb/154/Q154327/
 
 ## Q154327: MSB Solar: Err Msg: This Program Requires a Newer Version...
 
+{% raw %}
+
 	Article: Q154327
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -85,3 +87,5 @@ permalink: /kb/154/Q154327/
 	
 	=============================================================================
 	
+
+{% endraw %}

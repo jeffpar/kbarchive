@@ -6,6 +6,8 @@ permalink: /kb/071/Q71993/
 
 ## Q71993: PCL Driver 3.3 and 3.4 Does Not Set Default Paper Source
 
+{% raw %}
+
 	Article: Q71993
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -72,3 +74,5 @@ permalink: /kb/071/Q71993/
 	
 	=============================================================================
 	
+
+{% endraw %}

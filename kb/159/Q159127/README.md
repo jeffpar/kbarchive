@@ -6,6 +6,8 @@ permalink: /kb/159/Q159127/
 
 ## Q159127: Bugcheck in Windows NT While Running POSIX Applications
 
+{% raw %}
+
 	Article: Q159127
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/159/Q159127/
 	
 	=============================================================================
 	
+
+{% endraw %}

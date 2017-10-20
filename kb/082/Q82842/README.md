@@ -6,6 +6,8 @@ permalink: /kb/082/Q82842/
 
 ## Q82842: 8514 Palette Changes in Windows
 
+{% raw %}
+
 	Article: Q82842
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/082/Q82842/
 	
 	=============================================================================
 	
+
+{% endraw %}

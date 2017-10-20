@@ -6,6 +6,8 @@ permalink: /kb/164/Q164821/
 
 ## Q164821: DHCP Server Service May Stop Responding
 
+{% raw %}
+
 	Article: Q164821
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -82,3 +84,5 @@ permalink: /kb/164/Q164821/
 	
 	=============================================================================
 	
+
+{% endraw %}

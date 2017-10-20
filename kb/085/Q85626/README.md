@@ -6,6 +6,8 @@ permalink: /kb/085/Q85626/
 
 ## Q85626: Canon BJ-130e Driver Causes Continuous Form Feeds
 
+{% raw %}
+
 	Article: Q85626
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/085/Q85626/
 	
 	=============================================================================
 	
+
+{% endraw %}

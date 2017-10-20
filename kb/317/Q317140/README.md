@@ -6,6 +6,8 @@ permalink: /kb/317/Q317140/
 
 ## Q317140: Event ID 3870, 7023, 2504 and 7002 Messages Are Logged
 
+{% raw %}
+
 	Article: Q317140
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -163,3 +165,5 @@ permalink: /kb/317/Q317140/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87415/
 
 ## Q87415: PC DB: Symptoms of Not Having an MBG File
 
+{% raw %}
+
 	Article: Q87415
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.2
@@ -60,3 +62,5 @@ permalink: /kb/087/Q87415/
 	
 	=============================================================================
 	
+
+{% endraw %}

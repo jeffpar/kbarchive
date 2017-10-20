@@ -6,6 +6,8 @@ permalink: /kb/185/Q185163/
 
 ## Q185163: PRB: Operation Stopped: Data Has Changed
 
+{% raw %}
+
 	Article: Q185163
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -71,3 +73,5 @@ permalink: /kb/185/Q185163/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/047/Q47497/
 
 ## Q47497: FP_SEG(), FP_OFF() Need Pointer Rather Than Address
 
+{% raw %}
+
 	Article: Q47497
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.00 5.10
@@ -49,3 +51,5 @@ permalink: /kb/047/Q47497/
 	
 	returns the offset of the variable val, as the address of valptr can
 	be taken.
+
+{% endraw %}

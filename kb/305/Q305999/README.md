@@ -6,6 +6,8 @@ permalink: /kb/305/Q305999/
 
 ## Q305999: MSN Broadband DSL: Lost DSL Connection During New User Setup
 
+{% raw %}
+
 	Article: Q305999
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/305/Q305999/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177575/
 
 ## Q177575: PRB: ActiveX Controls Passing Variant&#42; Back to VFP Cause Error
 
+{% raw %}
+
 	Article: Q177575
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -106,3 +108,5 @@ permalink: /kb/177/Q177575/
 	
 	=============================================================================
 	
+
+{% endraw %}

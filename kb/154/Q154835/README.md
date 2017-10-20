@@ -6,6 +6,8 @@ permalink: /kb/154/Q154835/
 
 ## Q154835: BUG: &quot;Project History Options&quot; Won't Search for Labels in File
 
+{% raw %}
+
 	Article: Q154835
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -116,3 +118,5 @@ permalink: /kb/154/Q154835/
 	
 	=============================================================================
 	
+
+{% endraw %}

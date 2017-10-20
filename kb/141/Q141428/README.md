@@ -6,6 +6,8 @@ permalink: /kb/141/Q141428/
 
 ## Q141428: Bookshelf 1995: Search Not Restarted After Spell Check
 
+{% raw %}
+
 	Article: Q141428
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition; WINDOWS:
@@ -53,3 +55,5 @@ permalink: /kb/141/Q141428/
 	
 	=============================================================================
 	
+
+{% endraw %}

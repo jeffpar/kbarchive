@@ -6,6 +6,8 @@ permalink: /kb/113/Q113822/
 
 ## Q113822: WD97: How to Embed TrueType Fonts in a Document
 
+{% raw %}
+
 	Article: Q113822
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -115,3 +117,5 @@ permalink: /kb/113/Q113822/
 	
 	=============================================================================
 	
+
+{% endraw %}

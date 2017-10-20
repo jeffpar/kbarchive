@@ -6,6 +6,8 @@ permalink: /kb/168/Q168230/
 
 ## Q168230: WinNT Err Msg: Cannot Find the Working Folder for This Program
 
+{% raw %}
+
 	Article: Q168230
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.51,4.0
@@ -62,3 +64,5 @@ permalink: /kb/168/Q168230/
 	
 	=============================================================================
 	
+
+{% endraw %}

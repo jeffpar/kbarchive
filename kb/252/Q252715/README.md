@@ -6,6 +6,8 @@ permalink: /kb/252/Q252715/
 
 ## Q252715: Error 14064 Attempting to Change an Attribute Value Type
 
+{% raw %}
+
 	Article: Q252715
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -79,3 +81,5 @@ permalink: /kb/252/Q252715/
 	
 	=============================================================================
 	
+
+{% endraw %}

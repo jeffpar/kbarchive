@@ -6,6 +6,8 @@ permalink: /kb/132/Q132280/
 
 ## Q132280: Writer/Artist: DocErr: Control Room Access is Incorrect
 
+{% raw %}
+
 	Article: Q132280
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.1
@@ -43,3 +45,5 @@ permalink: /kb/132/Q132280/
 	
 	=============================================================================
 	
+
+{% endraw %}

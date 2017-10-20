@@ -6,6 +6,8 @@ permalink: /kb/148/Q148929/
 
 ## Q148929: Security Event ID 642 Logged Incorrectly for Audits
 
+{% raw %}
+
 	Article: Q148929
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -74,3 +76,5 @@ permalink: /kb/148/Q148929/
 	
 	=============================================================================
 	
+
+{% endraw %}

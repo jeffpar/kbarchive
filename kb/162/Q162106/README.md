@@ -6,6 +6,8 @@ permalink: /kb/162/Q162106/
 
 ## Q162106: Flight Simulator 6.0 Err Msg: Setup Cannot Copy Files
 
+{% raw %}
+
 	Article: Q162106
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -181,3 +183,5 @@ permalink: /kb/162/Q162106/
 	
 	=============================================================================
 	
+
+{% endraw %}

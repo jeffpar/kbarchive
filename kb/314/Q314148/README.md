@@ -6,6 +6,8 @@ permalink: /kb/314/Q314148/
 
 ## Q314148: XADM: Exchange Event Service Does Not Start Event ID 5 Is Logged
 
+{% raw %}
+
 	Article: Q314148
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -130,3 +132,5 @@ permalink: /kb/314/Q314148/
 	
 	=============================================================================
 	
+
+{% endraw %}

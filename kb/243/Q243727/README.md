@@ -6,6 +6,8 @@ permalink: /kb/243/Q243727/
 
 ## Q243727: XCLN: DMS Clients Cannot Send Mail to Distribution Lists
 
+{% raw %}
+
 	Article: Q243727
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:95,98
@@ -91,3 +93,5 @@ permalink: /kb/243/Q243727/
 	
 	=============================================================================
 	
+
+{% endraw %}

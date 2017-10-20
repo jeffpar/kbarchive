@@ -6,6 +6,8 @@ permalink: /kb/159/Q159975/
 
 ## Q159975: BUG: FileCopy Does Not Reset Err if Floppy is Write-Protected
 
+{% raw %}
+
 	Article: Q159975
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -136,3 +138,5 @@ permalink: /kb/159/Q159975/
 	
 	=============================================================================
 	
+
+{% endraw %}

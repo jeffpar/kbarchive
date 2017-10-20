@@ -6,6 +6,8 @@ permalink: /kb/148/Q148527/
 
 ## Q148527: Windows 95 Can Share the Windows NT Domain Browse List
 
+{% raw %}
+
 	Article: Q148527
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.5,3.51
@@ -86,3 +88,5 @@ permalink: /kb/148/Q148527/
 	
 	=============================================================================
 	
+
+{% endraw %}

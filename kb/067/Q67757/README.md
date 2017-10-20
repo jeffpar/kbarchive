@@ -6,6 +6,8 @@ permalink: /kb/067/Q67757/
 
 ## Q67757: DOCERR: Conditional Jump Instruction Is Incorrectly Documented
 
+{% raw %}
+
 	Article: Q67757
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a
@@ -62,3 +64,5 @@ permalink: /kb/067/Q67757/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168186/
 
 ## Q168186: HOWTO: STL Sample for slice::(length, start, stride) Functions
 
+{% raw %}
+
 	Article: Q168186
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0,6.0
@@ -198,3 +200,5 @@ permalink: /kb/168/Q168186/
 	
 	=============================================================================
 	
+
+{% endraw %}

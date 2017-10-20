@@ -6,6 +6,8 @@ permalink: /kb/153/Q153216/
 
 ## Q153216: BUG: GetRowsEx() Incorrectly Handles Null Field Values
 
+{% raw %}
+
 	Article: Q153216
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00 4.10 4.20
@@ -155,3 +157,5 @@ permalink: /kb/153/Q153216/
 	
 	=============================================================================
 	
+
+{% endraw %}

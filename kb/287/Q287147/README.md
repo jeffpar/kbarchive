@@ -6,6 +6,8 @@ permalink: /kb/287/Q287147/
 
 ## Q287147: FP: ErrMsg: &quot;Database Results Error&quot; Updating Database Record
 
+{% raw %}
+
 	Article: Q287147
 	Product(s): Word Front Page
 	Version(s): 
@@ -144,3 +146,5 @@ permalink: /kb/287/Q287147/
 	
 	=============================================================================
 	
+
+{% endraw %}

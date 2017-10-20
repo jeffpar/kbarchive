@@ -6,6 +6,8 @@ permalink: /kb/235/Q235873/
 
 ## Q235873: SMS: Specifying Preferred Servers in Systems Management Server
 
+{% raw %}
+
 	Article: Q235873
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -167,3 +169,5 @@ permalink: /kb/235/Q235873/
 	
 	=============================================================================
 	
+
+{% endraw %}

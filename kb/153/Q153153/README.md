@@ -6,6 +6,8 @@ permalink: /kb/153/Q153153/
 
 ## Q153153: Error Message: &quot;SMS.EXE - Application Error&quot;
 
+{% raw %}
+
 	Article: Q153153
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -56,3 +58,5 @@ permalink: /kb/153/Q153153/
 	
 	=============================================================================
 	
+
+{% endraw %}

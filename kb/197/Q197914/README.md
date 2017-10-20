@@ -6,6 +6,8 @@ permalink: /kb/197/Q197914/
 
 ## Q197914: SAMPLE: RDOBLOBS.EXE RDO and BLOB/TEXT Data with SQL SP
 
+{% raw %}
+
 	Article: Q197914
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -266,3 +268,5 @@ permalink: /kb/197/Q197914/
 	
 	=============================================================================
 	
+
+{% endraw %}

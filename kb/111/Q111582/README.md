@@ -6,6 +6,8 @@ permalink: /kb/111/Q111582/
 
 ## Q111582: BUG: Arc() Not Drawn Completely with a Wide Pen
 
+{% raw %}
+
 	Article: Q111582
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -57,3 +59,5 @@ permalink: /kb/111/Q111582/
 	
 	=============================================================================
 	
+
+{% endraw %}

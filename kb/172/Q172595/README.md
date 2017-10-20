@@ -6,6 +6,8 @@ permalink: /kb/172/Q172595/
 
 ## Q172595: WinNT Err: Stop 0x0000007F in Netbt.sys Due to #INCLUDE
 
+{% raw %}
+
 	Article: Q172595
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -82,3 +84,5 @@ permalink: /kb/172/Q172595/
 	
 	=============================================================================
 	
+
+{% endraw %}

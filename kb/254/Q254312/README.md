@@ -6,6 +6,8 @@ permalink: /kb/254/Q254312/
 
 ## Q254312: GPS Icon Drifts or Appears in Unexpected Locations
 
+{% raw %}
+
 	Article: Q254312
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -78,3 +80,5 @@ permalink: /kb/254/Q254312/
 	
 	=============================================================================
 	
+
+{% endraw %}

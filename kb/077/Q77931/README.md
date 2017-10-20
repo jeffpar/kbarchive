@@ -6,6 +6,8 @@ permalink: /kb/077/Q77931/
 
 ## Q77931: Sample Help File Demonstrates Win 3.1 Help Macros
 
+{% raw %}
+
 	Article: Q77931
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -53,3 +55,5 @@ permalink: /kb/077/Q77931/
 	
 	=============================================================================
 	
+
+{% endraw %}

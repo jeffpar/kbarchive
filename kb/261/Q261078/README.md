@@ -6,6 +6,8 @@ permalink: /kb/261/Q261078/
 
 ## Q261078: Motocross Madness 2: Hangs When You Click &quot;Start Race!&quot;
 
+{% raw %}
+
 	Article: Q261078
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -119,3 +121,5 @@ permalink: /kb/261/Q261078/
 	
 	=============================================================================
 	
+
+{% endraw %}

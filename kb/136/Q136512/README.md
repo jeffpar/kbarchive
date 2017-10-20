@@ -6,6 +6,8 @@ permalink: /kb/136/Q136512/
 
 ## Q136512: PC WRmt: System Selector Not Display Installed Mail Options
 
+{% raw %}
+
 	Article: Q136512
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -82,3 +84,5 @@ permalink: /kb/136/Q136512/
 	
 	=============================================================================
 	
+
+{% endraw %}

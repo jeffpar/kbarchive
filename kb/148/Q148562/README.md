@@ -6,6 +6,8 @@ permalink: /kb/148/Q148562/
 
 ## Q148562: INFO: List of Problems in Visual FoxPro 3.0 for Windows
 
+{% raw %}
+
 	Article: Q148562
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -361,3 +363,5 @@ permalink: /kb/148/Q148562/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169040/
 
 ## Q169040: Puzzle: Game Music Won't Play if Media Player is in Background
 
+{% raw %}
+
 	Article: Q169040
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -41,3 +43,5 @@ permalink: /kb/169/Q169040/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166543/
 
 ## Q166543: XFOR: Migration Wizard Hangs with Invalid Entry in SEC File
 
+{% raw %}
+
 	Article: Q166543
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -57,3 +59,5 @@ permalink: /kb/166/Q166543/
 	
 	=============================================================================
 	
+
+{% endraw %}

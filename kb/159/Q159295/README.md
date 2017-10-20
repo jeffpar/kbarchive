@@ -6,6 +6,8 @@ permalink: /kb/159/Q159295/
 
 ## Q159295: XFOR: Exchange Dir-Sync Failing with Event ID 134
 
+{% raw %}
+
 	Article: Q159295
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/159/Q159295/
 	
 	=============================================================================
 	
+
+{% endraw %}

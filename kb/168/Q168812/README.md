@@ -6,6 +6,8 @@ permalink: /kb/168/Q168812/
 
 ## Q168812: Dr Watson Exception Violation C0000005 Occurs After Install SP3
 
+{% raw %}
+
 	Article: Q168812
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -63,3 +65,5 @@ permalink: /kb/168/Q168812/
 	
 	=============================================================================
 	
+
+{% endraw %}

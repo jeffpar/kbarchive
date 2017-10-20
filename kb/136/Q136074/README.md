@@ -6,6 +6,8 @@ permalink: /kb/136/Q136074/
 
 ## Q136074: STOP Msg: 0x0000007B on Digitial Venturis 466 with 32-Bit I/O
 
+{% raw %}
+
 	Article: Q136074
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -79,3 +81,5 @@ permalink: /kb/136/Q136074/
 	
 	=============================================================================
 	
+
+{% endraw %}

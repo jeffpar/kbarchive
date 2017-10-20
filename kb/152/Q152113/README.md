@@ -6,6 +6,8 @@ permalink: /kb/152/Q152113/
 
 ## Q152113: XADM: How to Send as a Public Folder
 
+{% raw %}
+
 	Article: Q152113
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -119,3 +121,5 @@ permalink: /kb/152/Q152113/
 	
 	=============================================================================
 	
+
+{% endraw %}

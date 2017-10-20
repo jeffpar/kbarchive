@@ -6,6 +6,8 @@ permalink: /kb/134/Q134469/
 
 ## Q134469: Sound Device on Digital HiNote Ultra with PNP BIOS Not Working
 
+{% raw %}
+
 	Article: Q134469
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/134/Q134469/
 	
 	=============================================================================
 	
+
+{% endraw %}

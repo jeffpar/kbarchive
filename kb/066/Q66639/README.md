@@ -6,6 +6,8 @@ permalink: /kb/066/Q66639/
 
 ## Q66639: ASD: Scenery on the Box Is Not Included
 
+{% raw %}
+
 	Article: Q66639
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -27,3 +29,5 @@ permalink: /kb/066/Q66639/
 	
 	=============================================================================
 	
+
+{% endraw %}

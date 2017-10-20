@@ -6,6 +6,8 @@ permalink: /kb/242/Q242416/
 
 ## Q242416: HOWTO: Enumerate 16-bit Tasks on Window NT Using Visual Basic
 
+{% raw %}
+
 	Article: Q242416
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -134,3 +136,5 @@ permalink: /kb/242/Q242416/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/109/Q109848/
 
 ## Q109848: MS-DOS Shell Err Msg: Invalid Path
 
+{% raw %}
+
 	Article: Q109848
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0
@@ -66,3 +68,5 @@ permalink: /kb/109/Q109848/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127900/
 
 ## Q127900: BUG: C2487 Error Occurs If Multiple Static Vars Use dllexport
 
+{% raw %}
+
 	Article: Q127900
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,4.0,4.1,4.2,5.0,6.0
@@ -78,3 +80,5 @@ permalink: /kb/127/Q127900/
 	
 	=============================================================================
 	
+
+{% endraw %}

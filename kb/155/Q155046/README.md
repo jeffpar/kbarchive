@@ -6,6 +6,8 @@ permalink: /kb/155/Q155046/
 
 ## Q155046: FIX: Member Function Referenced Without () Compiles
 
+{% raw %}
+
 	Article: Q155046
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -106,3 +108,5 @@ permalink: /kb/155/Q155046/
 	
 	=============================================================================
 	
+
+{% endraw %}

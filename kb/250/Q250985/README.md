@@ -6,6 +6,8 @@ permalink: /kb/250/Q250985/
 
 ## Q250985: PRB: Missing Product Key in the &quot;Unattend&quot; Answer File
 
+{% raw %}
+
 	Article: Q250985
 	Product(s): Microsoft Windows NT
 	Version(s): 2000
@@ -97,3 +99,5 @@ permalink: /kb/250/Q250985/
 	
 	=============================================================================
 	
+
+{% endraw %}

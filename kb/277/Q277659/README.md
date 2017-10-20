@@ -6,6 +6,8 @@ permalink: /kb/277/Q277659/
 
 ## Q277659: CFS2: Configuration File Is Incorrectly Named in Readme.rtf File
 
+{% raw %}
+
 	Article: Q277659
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -72,3 +74,5 @@ permalink: /kb/277/Q277659/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/100/Q100005/
 
 ## Q100005: Drive Letters Unavailable for Interlnk with MS-DOS 6.0
 
+{% raw %}
+
 	Article: Q100005
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -67,3 +69,5 @@ permalink: /kb/100/Q100005/
 	
 	=============================================================================
 	
+
+{% endraw %}

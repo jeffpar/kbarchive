@@ -6,6 +6,8 @@ permalink: /kb/180/Q180402/
 
 ## Q180402: PRB: MFC ActiveX Control Ignores ARROW Keys on VB Container
 
+{% raw %}
+
 	Article: Q180402
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0,97; winnt:5.0,6.0
@@ -110,3 +112,5 @@ permalink: /kb/180/Q180402/
 	
 	=============================================================================
 	
+
+{% endraw %}

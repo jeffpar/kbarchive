@@ -6,6 +6,8 @@ permalink: /kb/089/Q89264/
 
 ## Q89264: Increasing Speed in FoxBASE+
 
+{% raw %}
+
 	Article: Q89264
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -53,3 +55,5 @@ permalink: /kb/089/Q89264/
 	
 	=============================================================================
 	
+
+{% endraw %}

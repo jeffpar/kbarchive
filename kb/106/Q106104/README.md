@@ -6,6 +6,8 @@ permalink: /kb/106/Q106104/
 
 ## Q106104: Cannot Create Icons for Executables in Long Directories
 
+{% raw %}
+
 	Article: Q106104
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1; :3.1
@@ -55,3 +57,5 @@ permalink: /kb/106/Q106104/
 	
 	=============================================================================
 	
+
+{% endraw %}

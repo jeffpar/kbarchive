@@ -6,6 +6,8 @@ permalink: /kb/152/Q152184/
 
 ## Q152184: Connecting To MSN Questions &amp; Answers
 
+{% raw %}
+
 	Article: Q152184
 	Product(s): The Microsoft Network
 	Version(s): 2.6,5.0,5.1,5.2
@@ -119,3 +121,5 @@ permalink: /kb/152/Q152184/
 	
 	=============================================================================
 	
+
+{% endraw %}

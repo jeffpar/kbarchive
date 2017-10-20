@@ -6,6 +6,8 @@ permalink: /kb/152/Q152516/
 
 ## Q152516: INFO: List of ODBC Files Installed During Setup
 
+{% raw %}
+
 	Article: Q152516
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00b 3.00
@@ -118,3 +120,5 @@ permalink: /kb/152/Q152516/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/042/Q42791/
 
 ## Q42791: QuickC: Tracking Down Null Pointer Assignments
 
+{% raw %}
+
 	Article: Q42791
 	Product(s): See article
 	Version(s): 2.00
@@ -52,3 +54,5 @@ permalink: /kb/042/Q42791/
 	Information for using the CodeView debugger is provided in the
 	"Microsoft CodeView and Utilities Software Development Tools for the
 	MS-DOS Operating System" manual.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/038/Q38112/
 
 ## Q38112: Backing up to Floppy Disks in MS-DOS 4.0 and 5.0
 
+{% raw %}
+
 	Article: Q38112
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.0,5.0
@@ -69,3 +71,5 @@ permalink: /kb/038/Q38112/
 	
 	=============================================================================
 	
+
+{% endraw %}

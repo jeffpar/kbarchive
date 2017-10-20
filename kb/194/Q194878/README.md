@@ -6,6 +6,8 @@ permalink: /kb/194/Q194878/
 
 ## Q194878: Error: &quot;No Transport Provider&quot; Trying to Send Mail
 
+{% raw %}
+
 	Article: Q194878
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,8.0,8.01,8.02,8.03,8.5
@@ -81,3 +83,5 @@ permalink: /kb/194/Q194878/
 	
 	=============================================================================
 	
+
+{% endraw %}

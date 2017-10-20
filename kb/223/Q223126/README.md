@@ -6,6 +6,8 @@ permalink: /kb/223/Q223126/
 
 ## Q223126: FIX: Form Icon Displayed as Compressed on True Color Display
 
+{% raw %}
+
 	Article: Q223126
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -92,3 +94,5 @@ permalink: /kb/223/Q223126/
 	
 	=============================================================================
 	
+
+{% endraw %}

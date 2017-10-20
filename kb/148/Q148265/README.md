@@ -6,6 +6,8 @@ permalink: /kb/148/Q148265/
 
 ## Q148265: Dangerous Creatures: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q148265
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/148/Q148265/
 	
 	=============================================================================
 	
+
+{% endraw %}

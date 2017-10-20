@@ -6,6 +6,8 @@ permalink: /kb/199/Q199736/
 
 ## Q199736: FIX: C1013: Too Many Open Parentheses
 
+{% raw %}
+
 	Article: Q199736
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -60,3 +62,5 @@ permalink: /kb/199/Q199736/
 	
 	=============================================================================
 	
+
+{% endraw %}

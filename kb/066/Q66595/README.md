@@ -6,6 +6,8 @@ permalink: /kb/066/Q66595/
 
 ## Q66595: INFO: Using SetDIBitsToDevice() with a Memory Device Context
 
+{% raw %}
+
 	Article: Q66595
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/066/Q66595/
 	
 	=============================================================================
 	
+
+{% endraw %}

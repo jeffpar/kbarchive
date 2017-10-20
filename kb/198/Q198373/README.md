@@ -6,6 +6,8 @@ permalink: /kb/198/Q198373/
 
 ## Q198373: WD97: Outline Number &quot;Number Format&quot; Wrong or Changes to Square
 
+{% raw %}
+
 	Article: Q198373
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -108,3 +110,5 @@ permalink: /kb/198/Q198373/
 	
 	=============================================================================
 	
+
+{% endraw %}

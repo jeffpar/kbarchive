@@ -6,6 +6,8 @@ permalink: /kb/124/Q124936/
 
 ## Q124936: Application in VDM May Receive Overrun Error
 
+{% raw %}
+
 	Article: Q124936
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/124/Q124936/
 	
 	=============================================================================
 	
+
+{% endraw %}

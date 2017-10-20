@@ -6,6 +6,8 @@ permalink: /kb/107/Q107432/
 
 ## Q107432: PRB: Inline Assembly C++ Function May Need Return Statement
 
+{% raw %}
+
 	Article: Q107432
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:7.0; :1.0,1.5,2.0
@@ -72,3 +74,5 @@ permalink: /kb/107/Q107432/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146102/
 
 ## Q146102: XCLN: Embedded Objects in Private Messages Can be Modified
 
+{% raw %}
+
 	Article: Q146102
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -38,3 +40,5 @@ permalink: /kb/146/Q146102/
 	
 	=============================================================================
 	
+
+{% endraw %}

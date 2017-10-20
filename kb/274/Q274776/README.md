@@ -6,6 +6,8 @@ permalink: /kb/274/Q274776/
 
 ## Q274776: Microsoft Reader Error Message: Activation Error
 
+{% raw %}
+
 	Article: Q274776
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -210,3 +212,5 @@ permalink: /kb/274/Q274776/
 	
 	=============================================================================
 	
+
+{% endraw %}

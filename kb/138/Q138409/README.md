@@ -6,6 +6,8 @@ permalink: /kb/138/Q138409/
 
 ## Q138409: Novell VLM Client Files Not Removed When COMMAND /C Used
 
+{% raw %}
+
 	Article: Q138409
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/138/Q138409/
 	
 	=============================================================================
 	
+
+{% endraw %}

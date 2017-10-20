@@ -6,6 +6,8 @@ permalink: /kb/156/Q156581/
 
 ## Q156581: PRB: INSERT Can Freeze VFP if Table's Index File Corrupted
 
+{% raw %}
+
 	Article: Q156581
 	Product(s): Microsoft FoxPro
 	Version(s): 5.00
@@ -74,3 +76,5 @@ permalink: /kb/156/Q156581/
 	
 	=============================================================================
 	
+
+{% endraw %}

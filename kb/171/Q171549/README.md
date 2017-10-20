@@ -6,6 +6,8 @@ permalink: /kb/171/Q171549/
 
 ## Q171549: FIX: Cached Class Factorys Get Released by Illegal Thread
 
+{% raw %}
+
 	Article: Q171549
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97
@@ -75,3 +77,5 @@ permalink: /kb/171/Q171549/
 	
 	=============================================================================
 	
+
+{% endraw %}

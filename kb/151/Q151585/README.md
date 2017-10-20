@@ -6,6 +6,8 @@ permalink: /kb/151/Q151585/
 
 ## Q151585: HOWTO: Use _crtBreakAlloc to Debug a Memory Allocation
 
+{% raw %}
+
 	Article: Q151585
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:4.0,4.1,4.2,5.0;
@@ -109,3 +111,5 @@ permalink: /kb/151/Q151585/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/267/Q267573/
 
 ## Q267573: XADM: Error 0xc00206b7 When You Start the System Attendant
 
+{% raw %}
+
 	Article: Q267573
 	Product(s): Microsoft Exchange
 	Version(s): 2000,5.5
@@ -136,3 +138,5 @@ permalink: /kb/267/Q267573/
 	
 	=============================================================================
 	
+
+{% endraw %}

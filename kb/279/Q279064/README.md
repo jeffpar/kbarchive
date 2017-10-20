@@ -6,6 +6,8 @@ permalink: /kb/279/Q279064/
 
 ## Q279064: MSN Companion Troubleshooting Tools Secret Codes
 
+{% raw %}
+
 	Article: Q279064
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -67,3 +69,5 @@ permalink: /kb/279/Q279064/
 	
 	=============================================================================
 	
+
+{% endraw %}

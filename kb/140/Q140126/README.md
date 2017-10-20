@@ -6,6 +6,8 @@ permalink: /kb/140/Q140126/
 
 ## Q140126: How to Configure Microsoft 16-Bit DLC Protocol with Windows 95
 
+{% raw %}
+
 	Article: Q140126
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -177,3 +179,5 @@ permalink: /kb/140/Q140126/
 	
 	=============================================================================
 	
+
+{% endraw %}

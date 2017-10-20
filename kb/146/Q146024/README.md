@@ -6,6 +6,8 @@ permalink: /kb/146/Q146024/
 
 ## Q146024: XCLN: Ambiguous Name Resolution Methods
 
+{% raw %}
+
 	Article: Q146024
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -70,3 +72,5 @@ permalink: /kb/146/Q146024/
 	
 	=============================================================================
 	
+
+{% endraw %}

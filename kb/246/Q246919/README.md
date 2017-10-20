@@ -6,6 +6,8 @@ permalink: /kb/246/Q246919/
 
 ## Q246919: FIX: VB Crashes on ActiveX Control Interface Wizard Code
 
+{% raw %}
+
 	Article: Q246919
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -154,3 +156,5 @@ permalink: /kb/246/Q246919/
 	
 	=============================================================================
 	
+
+{% endraw %}

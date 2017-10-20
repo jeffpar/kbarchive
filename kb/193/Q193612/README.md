@@ -6,6 +6,8 @@ permalink: /kb/193/Q193612/
 
 ## Q193612: Log Files Rolled Over According to GMT, Not Local Time Zone
 
+{% raw %}
+
 	Article: Q193612
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -107,3 +109,5 @@ permalink: /kb/193/Q193612/
 	
 	=============================================================================
 	
+
+{% endraw %}

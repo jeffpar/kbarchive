@@ -6,6 +6,8 @@ permalink: /kb/299/Q299754/
 
 ## Q299754: Train Simulator: Uncoupling Possible During Intro Train Ride
 
+{% raw %}
+
 	Article: Q299754
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -40,3 +42,5 @@ permalink: /kb/299/Q299754/
 	
 	=============================================================================
 	
+
+{% endraw %}

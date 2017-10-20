@@ -6,6 +6,8 @@ permalink: /kb/275/Q275602/
 
 ## Q275602: XADM: Microsoft Exchange Server Information Store May Stop After
 
+{% raw %}
+
 	Article: Q275602
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -178,3 +180,5 @@ permalink: /kb/275/Q275602/
 	
 	=============================================================================
 	
+
+{% endraw %}

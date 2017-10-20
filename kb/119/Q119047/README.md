@@ -6,6 +6,8 @@ permalink: /kb/119/Q119047/
 
 ## Q119047: CONN: &quot;Mail Failure&quot; Responding to Unlabeled Return Receipt
 
+{% raw %}
+
 	Article: Q119047
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -71,3 +73,5 @@ permalink: /kb/119/Q119047/
 	
 	=============================================================================
 	
+
+{% endraw %}

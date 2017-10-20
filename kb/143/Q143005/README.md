@@ -6,6 +6,8 @@ permalink: /kb/143/Q143005/
 
 ## Q143005: Limited Printing Capabilities of 32-bit PowerPoint Viewer.
 
+{% raw %}
+
 	Article: Q143005
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -49,3 +51,5 @@ permalink: /kb/143/Q143005/
 	
 	=============================================================================
 	
+
+{% endraw %}

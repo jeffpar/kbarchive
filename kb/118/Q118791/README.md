@@ -6,6 +6,8 @@ permalink: /kb/118/Q118791/
 
 ## Q118791: Windows 95 Views But Cannot Access NTFS and HPFS Partitions
 
+{% raw %}
+
 	Article: Q118791
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -73,3 +75,5 @@ permalink: /kb/118/Q118791/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190010/
 
 ## Q190010: Logging Performs Unwanted Flushes of Log Data Buffer
 
+{% raw %}
+
 	Article: Q190010
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -55,3 +57,5 @@ permalink: /kb/190/Q190010/
 	
 	=============================================================================
 	
+
+{% endraw %}

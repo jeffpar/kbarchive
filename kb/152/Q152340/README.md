@@ -6,6 +6,8 @@ permalink: /kb/152/Q152340/
 
 ## Q152340: How To Configure the Command Window in Visual FoxPro Screen
 
+{% raw %}
+
 	Article: Q152340
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -81,3 +83,5 @@ permalink: /kb/152/Q152340/
 	
 	=============================================================================
 	
+
+{% endraw %}

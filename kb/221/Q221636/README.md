@@ -6,6 +6,8 @@ permalink: /kb/221/Q221636/
 
 ## Q221636: FIX: FFCs -_therm.vxc Classes Have Color Problems with Bars
 
+{% raw %}
+
 	Article: Q221636
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -120,3 +122,5 @@ permalink: /kb/221/Q221636/
 	
 	=============================================================================
 	
+
+{% endraw %}

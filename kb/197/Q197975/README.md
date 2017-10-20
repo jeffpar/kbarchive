@@ -6,6 +6,8 @@ permalink: /kb/197/Q197975/
 
 ## Q197975: XADM: Error When Removing SBS Version of Exchange
 
+{% raw %}
+
 	Article: Q197975
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,4.0a
@@ -71,3 +73,5 @@ permalink: /kb/197/Q197975/
 	
 	=============================================================================
 	
+
+{% endraw %}

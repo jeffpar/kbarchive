@@ -6,6 +6,8 @@ permalink: /kb/228/Q228946/
 
 ## Q228946: Midtown Madness: Textures Are Not Displayed When You Start Race
 
+{% raw %}
+
 	Article: Q228946
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -51,3 +53,5 @@ permalink: /kb/228/Q228946/
 	
 	=============================================================================
 	
+
+{% endraw %}

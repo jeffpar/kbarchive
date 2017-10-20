@@ -6,6 +6,8 @@ permalink: /kb/062/Q62308/
 
 ## Q62308: Internal Compiler Error '@(#)newcode.c:1.87', Line 697
 
+{% raw %}
+
 	Article: Q62308
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -50,3 +52,5 @@ permalink: /kb/062/Q62308/
 	Microsoft has confirmed this to be a problem with C 6.00. We are
 	researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

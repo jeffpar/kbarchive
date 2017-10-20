@@ -6,6 +6,8 @@ permalink: /kb/151/Q151995/
 
 ## Q151995: Configure Win95 &amp; WinNT Logon to NetWare Server w/ NT RAS Server
 
+{% raw %}
+
 	Article: Q151995
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 95
@@ -88,3 +90,5 @@ permalink: /kb/151/Q151995/
 	
 	=============================================================================
 	
+
+{% endraw %}

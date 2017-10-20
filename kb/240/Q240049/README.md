@@ -6,6 +6,8 @@ permalink: /kb/240/Q240049/
 
 ## Q240049: How to Obtain Diagnostic i386 Processsor Integrity Tests
 
+{% raw %}
+
 	Article: Q240049
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/240/Q240049/
 	
 	=============================================================================
 	
+
+{% endraw %}

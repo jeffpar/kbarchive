@@ -6,6 +6,8 @@ permalink: /kb/215/Q215057/
 
 ## Q215057: SMS: Multiple SMS2 Sites Cannot Use Same NetWare and NDS Servers
 
+{% raw %}
+
 	Article: Q215057
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -65,3 +67,5 @@ permalink: /kb/215/Q215057/
 	
 	=============================================================================
 	
+
+{% endraw %}

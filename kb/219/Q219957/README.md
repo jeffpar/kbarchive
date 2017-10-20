@@ -6,6 +6,8 @@ permalink: /kb/219/Q219957/
 
 ## Q219957: FIX: SQLNumResultCols Results in Attentions Generation on Server
 
+{% raw %}
+
 	Article: Q219957
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 3.6,3.7
@@ -151,3 +153,5 @@ permalink: /kb/219/Q219957/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141646/
 
 ## Q141646: Mac Encarta 96: Program Fails to Run from the Compact Disc
 
+{% raw %}
+
 	Article: Q141646
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -52,3 +54,5 @@ permalink: /kb/141/Q141646/
 	
 	=============================================================================
 	
+
+{% endraw %}

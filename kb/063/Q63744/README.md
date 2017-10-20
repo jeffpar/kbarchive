@@ -6,6 +6,8 @@ permalink: /kb/063/Q63744/
 
 ## Q63744: Macro Recorder Macros Take Priority Over Application Macros
 
+{% raw %}
+
 	Article: Q63744
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -59,3 +61,5 @@ permalink: /kb/063/Q63744/
 	
 	=============================================================================
 	
+
+{% endraw %}

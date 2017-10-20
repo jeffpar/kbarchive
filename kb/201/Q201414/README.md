@@ -6,6 +6,8 @@ permalink: /kb/201/Q201414/
 
 ## Q201414: XADM: Restored Directory Not Replicating Out to Other Servers
 
+{% raw %}
+
 	Article: Q201414
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -434,3 +436,5 @@ permalink: /kb/201/Q201414/
 	
 	=============================================================================
 	
+
+{% endraw %}

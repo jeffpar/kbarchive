@@ -6,6 +6,8 @@ permalink: /kb/142/Q142816/
 
 ## Q142816: HOWTO: Make ENTER Key Move Focus Like TAB Key for VB Controls
 
+{% raw %}
+
 	Article: Q142816
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/142/Q142816/
 	
 	=============================================================================
 	
+
+{% endraw %}

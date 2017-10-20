@@ -6,6 +6,8 @@ permalink: /kb/158/Q158278/
 
 ## Q158278: Explanation of How Windows NT Server 4.0 Remoteboot Works
 
+{% raw %}
+
 	Article: Q158278
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -107,3 +109,5 @@ permalink: /kb/158/Q158278/
 	
 	=============================================================================
 	
+
+{% endraw %}

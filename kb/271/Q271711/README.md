@@ -6,6 +6,8 @@ permalink: /kb/271/Q271711/
 
 ## Q271711: XADM: Autoforward Rules May Be Disabled When Using Antivirus API
 
+{% raw %}
+
 	Article: Q271711
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -106,3 +108,5 @@ permalink: /kb/271/Q271711/
 	
 	=============================================================================
 	
+
+{% endraw %}

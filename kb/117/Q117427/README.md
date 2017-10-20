@@ -6,6 +6,8 @@ permalink: /kb/117/Q117427/
 
 ## Q117427: PC Ext: MS-DOS External and RebootOnCE
 
+{% raw %}
+
 	Article: Q117427
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -64,3 +66,5 @@ permalink: /kb/117/Q117427/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155372/
 
 ## Q155372: Analysis of Helpdesk Impacts During Windows NT 4.0 Deployment
 
+{% raw %}
+
 	Article: Q155372
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -45,3 +47,5 @@ permalink: /kb/155/Q155372/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122203/
 
 ## Q122203: SMS Administrator Doesn't Show New Architectures
 
+{% raw %}
+
 	Article: Q122203
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -55,3 +57,5 @@ permalink: /kb/122/Q122203/
 	
 	=============================================================================
 	
+
+{% endraw %}

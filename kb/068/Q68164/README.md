@@ -6,6 +6,8 @@ permalink: /kb/068/Q68164/
 
 ## Q68164: CLOSE Doesn't Release Far Heap Used by First OPEN &quot;COM&quot; Buffer
 
+{% raw %}
+
 	Article: Q68164
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -51,3 +53,5 @@ permalink: /kb/068/Q68164/
 	needed to maintain a file. But after the CLOSE, only a few bytes
 	(equal to the file overhead release in DGROUP memory) get reallocated
 	to the far heap.
+
+{% endraw %}

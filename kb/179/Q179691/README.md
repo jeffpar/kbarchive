@@ -6,6 +6,8 @@ permalink: /kb/179/Q179691/
 
 ## Q179691: PRB: Adding Property in ClassWizard Changes DISPIDs for Methods
 
+{% raw %}
+
 	Article: Q179691
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0,6.0
@@ -79,14 +81,14 @@ permalink: /kb/179/Q179691/
 	  //////////////////////////////////////////////////////////////////////// 
 	     // Dispatch map:
 	     BEGIN_DISPATCH_MAP(CTestCtrl, COleControl)
-	        //{ {AFX_DISPATCH_MAP(CTestCtrl)
+	        //{{AFX_DISPATCH_MAP(CTestCtrl)
 	        DISP_PROPERTY_NOTIFY(CTestCtrl, "Property1", m_property1,
 	                             OnProperty1Changed, VT_I2)
 	        DISP_PROPERTY_EX(CTestCtrl, "Property2", GetProperty2,
 	                         SetProperty2, VT_I2)
 	        DISP_FUNCTION(CTestCtrl, "Method1", Method1, VT_I2, VTS_I2)
 	        DISP_FUNCTION(CTestCtrl, "Method2", Method2, VT_I4, VTS_NONE)
-	        //} }AFX_DISPATCH_MAP
+	        //}}AFX_DISPATCH_MAP
 	        DISP_FUNCTION_ID(CTestCtrl, "AboutBox", DISPID_ABOUTBOX,
 	                        AboutBox, VT_EMPTY, VTS_NONE)
 	     END_DISPATCH_MAP()
@@ -97,8 +99,8 @@ permalink: /kb/179/Q179691/
 	  //////////////////////////////////////////////////////////////////////// 
 	     // Dispatch map:
 	     BEGIN_DISPATCH_MAP(CTestCtrl, COleControl)
-	        //{ {AFX_DISPATCH_MAP(CTestCtrl)
-	        //} }AFX_DISPATCH_MAP
+	        //{{AFX_DISPATCH_MAP(CTestCtrl)
+	        //}}AFX_DISPATCH_MAP
 	        DISP_PROPERTY_NOTIFY_ID(CTestCtrl, "Property1", 1,
 	                                m_property1, OnProperty1Changed, VT_I2)
 	        DISP_PROPERTY_EX_ID(CTestCtrl, "Property2", 2, GetProperty2,
@@ -129,3 +131,5 @@ permalink: /kb/179/Q179691/
 	
 	=============================================================================
 	
+
+{% endraw %}

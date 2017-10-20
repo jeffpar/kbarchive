@@ -6,6 +6,8 @@ permalink: /kb/192/Q192822/
 
 ## Q192822: START Priority Class Arguments Ignored for WOW Applications
 
+{% raw %}
+
 	Article: Q192822
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0a
@@ -57,3 +59,5 @@ permalink: /kb/192/Q192822/
 	
 	=============================================================================
 	
+
+{% endraw %}

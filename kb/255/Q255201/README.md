@@ -6,6 +6,8 @@ permalink: /kb/255/Q255201/
 
 ## Q255201: Cannot Log On to PDC After Unsuccessful Installation of NDS
 
+{% raw %}
+
 	Article: Q255201
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/255/Q255201/
 	
 	=============================================================================
 	
+
+{% endraw %}

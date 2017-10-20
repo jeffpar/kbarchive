@@ -6,6 +6,8 @@ permalink: /kb/201/Q201179/
 
 ## Q201179: SMS: How To Run Smsman.exe and Specify an NDS Logon Point
 
+{% raw %}
+
 	Article: Q201179
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -53,3 +55,5 @@ permalink: /kb/201/Q201179/
 	
 	=============================================================================
 	
+
+{% endraw %}

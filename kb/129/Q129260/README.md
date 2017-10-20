@@ -6,6 +6,8 @@ permalink: /kb/129/Q129260/
 
 ## Q129260: Windows 95 Setup: Description and Troubleshooting Steps
 
+{% raw %}
+
 	Article: Q129260
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -563,3 +565,5 @@ permalink: /kb/129/Q129260/
 	
 	=============================================================================
 	
+
+{% endraw %}

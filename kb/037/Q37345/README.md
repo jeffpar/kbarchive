@@ -6,6 +6,8 @@ permalink: /kb/037/Q37345/
 
 ## Q37345: BIOS Interrupt to Read Sector, Get Disk Status, Find Errors
 
+{% raw %}
+
 	Article: Q37345
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -101,3 +103,5 @@ permalink: /kb/037/Q37345/
 	  regl.dx = drive%
 	  CALL interruptx(&H13, regl, regl)
 	END SUB
+
+{% endraw %}

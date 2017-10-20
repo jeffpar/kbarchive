@@ -6,6 +6,8 @@ permalink: /kb/103/Q103803/
 
 ## Q103803: X400: X400ADM Utility Memory Requirements
 
+{% raw %}
+
 	Article: Q103803
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -62,3 +64,5 @@ permalink: /kb/103/Q103803/
 	
 	=============================================================================
 	
+
+{% endraw %}

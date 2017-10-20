@@ -6,6 +6,8 @@ permalink: /kb/149/Q149552/
 
 ## Q149552: ISDN Terms and Definitions
 
+{% raw %}
+
 	Article: Q149552
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -156,3 +158,5 @@ permalink: /kb/149/Q149552/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/252/Q252215/
 
 ## Q252215: SMART Capability Available for Released Version of Windows 95
 
+{% raw %}
+
 	Article: Q252215
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -96,3 +98,5 @@ permalink: /kb/252/Q252215/
 	
 	=============================================================================
 	
+
+{% endraw %}

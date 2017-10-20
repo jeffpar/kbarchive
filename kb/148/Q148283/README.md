@@ -6,6 +6,8 @@ permalink: /kb/148/Q148283/
 
 ## Q148283: XADM: Custom Attribute Values Replicate, but Names Do Not
 
+{% raw %}
+
 	Article: Q148283
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -44,3 +46,5 @@ permalink: /kb/148/Q148283/
 	
 	=============================================================================
 	
+
+{% endraw %}

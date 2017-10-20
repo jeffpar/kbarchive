@@ -6,6 +6,8 @@ permalink: /kb/177/Q177368/
 
 ## Q177368: Bookshelf 96-97: Lookup Reference Does Not Function in Word 97
 
+{% raw %}
+
 	Article: Q177368
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:97
@@ -112,3 +114,5 @@ permalink: /kb/177/Q177368/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158488/
 
 ## Q158488: XCON: Event Log: Queue-Desc-Object (ID 1) Not Found . . .
 
+{% raw %}
+
 	Article: Q158488
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -78,3 +80,5 @@ permalink: /kb/158/Q158488/
 	
 	=============================================================================
 	
+
+{% endraw %}

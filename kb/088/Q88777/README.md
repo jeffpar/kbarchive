@@ -6,6 +6,8 @@ permalink: /kb/088/Q88777/
 
 ## Q88777: SMTP: RFCs Supported by the Gateway
 
+{% raw %}
+
 	Article: Q88777
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -45,3 +47,5 @@ permalink: /kb/088/Q88777/
 	
 	=============================================================================
 	
+
+{% endraw %}

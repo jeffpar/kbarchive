@@ -6,6 +6,8 @@ permalink: /kb/171/Q171539/
 
 ## Q171539: FIX: TypeDef Model Doesn't Have Propagate Delete on Relationship
 
+{% raw %}
+
 	Article: Q171539
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97
@@ -55,3 +57,5 @@ permalink: /kb/171/Q171539/
 	
 	=============================================================================
 	
+
+{% endraw %}

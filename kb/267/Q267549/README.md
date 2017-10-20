@@ -6,6 +6,8 @@ permalink: /kb/267/Q267549/
 
 ## Q267549: FIX: Debugger Doesn't Give Full Precision For double Data Type
 
+{% raw %}
+
 	Article: Q267549
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -81,3 +83,5 @@ permalink: /kb/267/Q267549/
 	
 	=============================================================================
 	
+
+{% endraw %}

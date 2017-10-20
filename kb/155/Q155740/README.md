@@ -6,6 +6,8 @@ permalink: /kb/155/Q155740/
 
 ## Q155740: .avi File Hangs When Played with MIDI on Alpha Computer
 
+{% raw %}
+
 	Article: Q155740
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.1,3.51,4.0
@@ -44,3 +46,5 @@ permalink: /kb/155/Q155740/
 	
 	=============================================================================
 	
+
+{% endraw %}

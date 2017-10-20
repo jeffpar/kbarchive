@@ -6,6 +6,8 @@ permalink: /kb/157/Q157083/
 
 ## Q157083: WD97: Graphics Filters Installed During Typical Setup
 
+{% raw %}
+
 	Article: Q157083
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -105,3 +107,5 @@ permalink: /kb/157/Q157083/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143369/
 
 ## Q143369: 3D Movie Maker: How to Add Frames While Freezing Actor
 
+{% raw %}
+
 	Article: Q143369
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/143/Q143369/
 	
 	=============================================================================
 	
+
+{% endraw %}

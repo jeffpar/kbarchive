@@ -6,6 +6,8 @@ permalink: /kb/162/Q162133/
 
 ## Q162133: SNA Server 3.0 Supports Multiple Connections to Same AS/400
 
+{% raw %}
+
 	Article: Q162133
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -225,3 +227,5 @@ permalink: /kb/162/Q162133/
 	
 	=============================================================================
 	
+
+{% endraw %}

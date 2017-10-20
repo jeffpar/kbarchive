@@ -6,6 +6,8 @@ permalink: /kb/155/Q155899/
 
 ## Q155899: WD97: Merged Document Based on Elegant Template Includes Header
 
+{% raw %}
+
 	Article: Q155899
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -114,3 +116,5 @@ permalink: /kb/155/Q155899/
 	
 	=============================================================================
 	
+
+{% endraw %}

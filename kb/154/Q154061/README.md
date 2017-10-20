@@ -6,6 +6,8 @@ permalink: /kb/154/Q154061/
 
 ## Q154061: SFM Fails to Bind to a Newly Installed Network Card
 
+{% raw %}
+
 	Article: Q154061
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1; winnt:3.5,3.51,4.0
@@ -63,3 +65,5 @@ permalink: /kb/154/Q154061/
 	
 	=============================================================================
 	
+
+{% endraw %}

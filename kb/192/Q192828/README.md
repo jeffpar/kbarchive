@@ -6,6 +6,8 @@ permalink: /kb/192/Q192828/
 
 ## Q192828: Tutor: Err Msg: Sky's Space Station Voyage Cannot Continue
 
+{% raw %}
+
 	Article: Q192828
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/192/Q192828/
 	
 	=============================================================================
 	
+
+{% endraw %}

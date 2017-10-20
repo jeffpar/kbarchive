@@ -6,6 +6,8 @@ permalink: /kb/141/Q141503/
 
 ## Q141503: FIX: Can't Connect to Excel Data Source in Remote View Wizard
 
+{% raw %}
+
 	Article: Q141503
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b
@@ -80,3 +82,5 @@ permalink: /kb/141/Q141503/
 	
 	=============================================================================
 	
+
+{% endraw %}

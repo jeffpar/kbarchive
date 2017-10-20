@@ -6,6 +6,8 @@ permalink: /kb/198/Q198704/
 
 ## Q198704: XCLN: ErrMsg: 0x800ccc90, 0x800ccc18 &amp; Outlook Express
 
+{% raw %}
+
 	Article: Q198704
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -96,3 +98,5 @@ permalink: /kb/198/Q198704/
 	
 	=============================================================================
 	
+
+{% endraw %}

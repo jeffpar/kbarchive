@@ -6,6 +6,8 @@ permalink: /kb/161/Q161188/
 
 ## Q161188: FIX: RELEASE POPUP _medit Command Causes Invalid Page Fault
 
+{% raw %}
+
 	Article: Q161188
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -62,3 +64,5 @@ permalink: /kb/161/Q161188/
 	
 	=============================================================================
 	
+
+{% endraw %}

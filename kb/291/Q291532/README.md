@@ -6,6 +6,8 @@ permalink: /kb/291/Q291532/
 
 ## Q291532: XFOR: Calendar Connector Only Looks in Cache
 
+{% raw %}
+
 	Article: Q291532
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP4
@@ -92,3 +94,5 @@ permalink: /kb/291/Q291532/
 	
 	=============================================================================
 	
+
+{% endraw %}

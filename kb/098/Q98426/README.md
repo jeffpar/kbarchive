@@ -6,6 +6,8 @@ permalink: /kb/098/Q98426/
 
 ## Q98426: Full Sync on LAN Manager 2.1a/2.2 Servers
 
+{% raw %}
+
 	Article: Q98426
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/098/Q98426/
 	
 	=============================================================================
 	
+
+{% endraw %}

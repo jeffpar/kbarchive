@@ -6,6 +6,8 @@ permalink: /kb/157/Q157253/
 
 ## Q157253: FIX: Copying Tables Between Databases Changes Index Type
 
+{% raw %}
+
 	Article: Q157253
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0 5.0a
@@ -75,3 +77,5 @@ permalink: /kb/157/Q157253/
 	
 	=============================================================================
 	
+
+{% endraw %}

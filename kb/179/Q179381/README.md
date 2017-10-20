@@ -6,6 +6,8 @@ permalink: /kb/179/Q179381/
 
 ## Q179381: PRB: Error Connecting to MS Query with UserConnection Designer
 
+{% raw %}
+
 	Article: Q179381
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/179/Q179381/
 	
 	=============================================================================
 	
+
+{% endraw %}

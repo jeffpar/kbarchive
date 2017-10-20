@@ -6,6 +6,8 @@ permalink: /kb/012/Q12074/
 
 ## Q12074: CLEAR Should Not Be Used in Event Trap
 
+{% raw %}
+
 	Article: Q12074
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -29,3 +31,5 @@ permalink: /kb/012/Q12074/
 	The error occurs because the CLEAR statement changes the stack. The
 	CLEAR statement is not allowed in an event handler because it would
 	destroy the return address.
+
+{% endraw %}

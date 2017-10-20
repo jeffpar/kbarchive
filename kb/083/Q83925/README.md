@@ -6,6 +6,8 @@ permalink: /kb/083/Q83925/
 
 ## Q83925: 16.66 cpi Line Printer Font on HP LaserJet IIIsi
 
+{% raw %}
+
 	Article: Q83925
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/083/Q83925/
 	
 	=============================================================================
 	
+
+{% endraw %}

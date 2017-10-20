@@ -6,6 +6,8 @@ permalink: /kb/159/Q159092/
 
 ## Q159092: Mouse Buttons Not Swapped on German Windows NT 4.0
 
+{% raw %}
+
 	Article: Q159092
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -57,3 +59,5 @@ permalink: /kb/159/Q159092/
 	
 	=============================================================================
 	
+
+{% endraw %}

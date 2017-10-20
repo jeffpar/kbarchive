@@ -6,6 +6,8 @@ permalink: /kb/100/Q100984/
 
 ## Q100984: Additional Information on Using Clean and Interactive Start
 
+{% raw %}
+
 	Article: Q100984
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -60,3 +62,5 @@ permalink: /kb/100/Q100984/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152918/
 
 ## Q152918: XCON: MTA: Mail Delivery Slow and Disk Space Consumed
 
+{% raw %}
+
 	Article: Q152918
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/152/Q152918/
 	
 	=============================================================================
 	
+
+{% endraw %}

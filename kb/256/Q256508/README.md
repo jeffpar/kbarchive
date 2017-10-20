@@ -6,6 +6,8 @@ permalink: /kb/256/Q256508/
 
 ## Q256508: Installing Routing and Remote Access Services in Unattended Mode
 
+{% raw %}
+
 	Article: Q256508
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -597,3 +599,5 @@ permalink: /kb/256/Q256508/
 	
 	=============================================================================
 	
+
+{% endraw %}

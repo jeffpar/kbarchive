@@ -6,6 +6,8 @@ permalink: /kb/141/Q141893/
 
 ## Q141893: Encarta 1996 for the Macintosh System Requirements
 
+{% raw %}
+
 	Article: Q141893
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -61,3 +63,5 @@ permalink: /kb/141/Q141893/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165994/
 
 ## Q165994: Cinemania 96: Film Clips Do Not Play When Clicked
 
+{% raw %}
+
 	Article: Q165994
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -60,3 +62,5 @@ permalink: /kb/165/Q165994/
 	
 	=============================================================================
 	
+
+{% endraw %}

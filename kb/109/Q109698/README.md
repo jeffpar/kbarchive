@@ -6,6 +6,8 @@ permalink: /kb/109/Q109698/
 
 ## Q109698: Spool File Location is Not Configurable
 
+{% raw %}
+
 	Article: Q109698
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -64,3 +66,5 @@ permalink: /kb/109/Q109698/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/058/Q58218/
 
 ## Q58218: QBX /NOF (NOFrills) Option Saves 19K, Not 22K in BASIC 7.00
 
+{% raw %}
+
 	Article: Q58218
 	Product(s): See article
 	Version(s): 7.00
@@ -25,3 +27,5 @@ permalink: /kb/058/Q58218/
 	
 	Please note that the /NOF option for QBX.EXE is unrelated to the /NOF
 	(/NOFarcalls) option for the linker (LINK.EXE) in BASIC PDS 7.00.
+
+{% endraw %}

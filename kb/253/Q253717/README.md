@@ -6,6 +6,8 @@ permalink: /kb/253/Q253717/
 
 ## Q253717: No Data Is Visible in Log File Created Using Performance Monitor
 
+{% raw %}
+
 	Article: Q253717
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/253/Q253717/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82216/
 
 ## Q82216: Command Piped in Root Directory May Hang Machine
 
+{% raw %}
+
 	Article: Q82216
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22; WINDOWS:3.0,3.0a,3.1,3.11
@@ -85,3 +87,5 @@ permalink: /kb/082/Q82216/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170475/
 
 ## Q170475: XADM: No Accelerator Key for the Find Dialog's Help
 
+{% raw %}
+
 	Article: Q170475
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -45,3 +47,5 @@ permalink: /kb/170/Q170475/
 	
 	=============================================================================
 	
+
+{% endraw %}

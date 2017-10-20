@@ -6,6 +6,8 @@ permalink: /kb/285/Q285037/
 
 ## Q285037: Games Err Msg: Your Program Is Making an Invalid Dynamic...
 
+{% raw %}
+
 	Article: Q285037
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -183,3 +185,5 @@ permalink: /kb/285/Q285037/
 	
 	=============================================================================
 	
+
+{% endraw %}

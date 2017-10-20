@@ -6,6 +6,8 @@ permalink: /kb/103/Q103214/
 
 ## Q103214: Updating the Screen Without Flicker
 
+{% raw %}
+
 	Article: Q103214
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -69,3 +71,5 @@ permalink: /kb/103/Q103214/
 	
 	=============================================================================
 	
+
+{% endraw %}

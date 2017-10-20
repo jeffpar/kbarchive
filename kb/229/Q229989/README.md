@@ -6,6 +6,8 @@ permalink: /kb/229/Q229989/
 
 ## Q229989: Event Viewer Does Not Sort Events by Date and Time
 
+{% raw %}
+
 	Article: Q229989
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -48,3 +50,5 @@ permalink: /kb/229/Q229989/
 	
 	=============================================================================
 	
+
+{% endraw %}

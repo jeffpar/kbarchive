@@ -6,6 +6,8 @@ permalink: /kb/095/Q95115/
 
 ## Q95115: WFWG: Using Two Network Cards with the SMCMAC.DOS Driver
 
+{% raw %}
+
 	Article: Q95115
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -97,3 +99,5 @@ permalink: /kb/095/Q95115/
 	
 	=============================================================================
 	
+
+{% endraw %}

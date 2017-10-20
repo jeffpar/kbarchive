@@ -6,6 +6,8 @@ permalink: /kb/141/Q141604/
 
 ## Q141604: PPT: How to Bring Harvard Graphics Slides into PowerPoint
 
+{% raw %}
+
 	Article: Q141604
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -77,3 +79,5 @@ permalink: /kb/141/Q141604/
 	
 	=============================================================================
 	
+
+{% endraw %}

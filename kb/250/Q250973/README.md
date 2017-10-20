@@ -6,6 +6,8 @@ permalink: /kb/250/Q250973/
 
 ## Q250973: FS2000 Professional: Stops Responding When You Start Program
 
+{% raw %}
+
 	Article: Q250973
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -61,3 +63,5 @@ permalink: /kb/250/Q250973/
 	
 	=============================================================================
 	
+
+{% endraw %}

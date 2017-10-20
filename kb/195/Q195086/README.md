@@ -6,6 +6,8 @@ permalink: /kb/195/Q195086/
 
 ## Q195086: INFO: File REGMSVM.BAT is Missing in Visual Modeler 1.1 Release
 
+{% raw %}
+
 	Article: Q195086
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -54,3 +56,5 @@ permalink: /kb/195/Q195086/
 	
 	=============================================================================
 	
+
+{% endraw %}

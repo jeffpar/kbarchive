@@ -6,6 +6,8 @@ permalink: /kb/192/Q192744/
 
 ## Q192744: HOWTO: Implement &quot;What's This?&quot; Help in ActiveX Control
 
+{% raw %}
+
 	Article: Q192744
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -186,3 +188,5 @@ permalink: /kb/192/Q192744/
 	
 	=============================================================================
 	
+
+{% endraw %}

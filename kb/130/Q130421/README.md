@@ -6,6 +6,8 @@ permalink: /kb/130/Q130421/
 
 ## Q130421: Windows NT 3.5 SNMP Agent Responds to Incorrect Communities
 
+{% raw %}
+
 	Article: Q130421
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -48,3 +50,5 @@ permalink: /kb/130/Q130421/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153630/
 
 ## Q153630: FP: FrontPage Client, Personal Web Server Run Only on i386
 
+{% raw %}
+
 	Article: Q153630
 	Product(s): Word Front Page
 	Version(s): 1.0
@@ -54,3 +56,5 @@ permalink: /kb/153/Q153630/
 	
 	=============================================================================
 	
+
+{% endraw %}

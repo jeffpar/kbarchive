@@ -6,6 +6,8 @@ permalink: /kb/099/Q99296/
 
 ## Q99296: Error: Training Could Not Be Carried Out for &quot;Bravo&quot;
 
+{% raw %}
+
 	Article: Q99296
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/099/Q99296/
 	
 	=============================================================================
 	
+
+{% endraw %}

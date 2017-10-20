@@ -6,6 +6,8 @@ permalink: /kb/139/Q139644/
 
 ## Q139644: XCLN: Err Msg: Items cannot be transferred or deleted...
 
+{% raw %}
+
 	Article: Q139644
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -60,3 +62,5 @@ permalink: /kb/139/Q139644/
 	
 	=============================================================================
 	
+
+{% endraw %}

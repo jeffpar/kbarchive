@@ -6,6 +6,8 @@ permalink: /kb/152/Q152003/
 
 ## Q152003: Server Stops Responding upon Startup
 
+{% raw %}
+
 	Article: Q152003
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -73,3 +75,5 @@ permalink: /kb/152/Q152003/
 	
 	=============================================================================
 	
+
+{% endraw %}

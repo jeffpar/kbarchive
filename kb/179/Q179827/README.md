@@ -6,6 +6,8 @@ permalink: /kb/179/Q179827/
 
 ## Q179827: Registry Handle Leak Causes Random Blue Screens
 
+{% raw %}
+
 	Article: Q179827
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -75,3 +77,5 @@ permalink: /kb/179/Q179827/
 	
 	=============================================================================
 	
+
+{% endraw %}

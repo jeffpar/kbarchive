@@ -6,6 +6,8 @@ permalink: /kb/202/Q202584/
 
 ## Q202584: FIX: C1001 Compiling File Containing Local Enum with Debug Info
 
+{% raw %}
+
 	Article: Q202584
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:6.0
@@ -68,3 +70,5 @@ permalink: /kb/202/Q202584/
 	
 	=============================================================================
 	
+
+{% endraw %}

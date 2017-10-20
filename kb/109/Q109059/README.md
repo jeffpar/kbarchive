@@ -6,6 +6,8 @@ permalink: /kb/109/Q109059/
 
 ## Q109059: HOWTO: Prevent Multiple Instances of an Application
 
+{% raw %}
+
 	Article: Q109059
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/109/Q109059/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231485/
 
 ## Q231485: XCLN: How to Remove Outlook 98 Completely
 
+{% raw %}
+
 	Article: Q231485
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:
@@ -95,3 +97,5 @@ permalink: /kb/231/Q231485/
 	
 	=============================================================================
 	
+
+{% endraw %}

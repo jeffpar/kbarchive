@@ -6,6 +6,8 @@ permalink: /kb/207/Q207088/
 
 ## Q207088: SAMPLE: Implement a Date/Time Generic ActiveX Property Page
 
+{% raw %}
+
 	Article: Q207088
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -144,3 +146,5 @@ permalink: /kb/207/Q207088/
 	
 	=============================================================================
 	
+
+{% endraw %}

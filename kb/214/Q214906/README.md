@@ -6,6 +6,8 @@ permalink: /kb/214/Q214906/
 
 ## Q214906: SMSINST: Colons Invalid in Path in Default Directory Text Box
 
+{% raw %}
+
 	Article: Q214906
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0,2.0; winnt:2.0
@@ -73,3 +75,5 @@ permalink: /kb/214/Q214906/
 	
 	=============================================================================
 	
+
+{% endraw %}

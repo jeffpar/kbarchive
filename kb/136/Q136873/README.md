@@ -6,6 +6,8 @@ permalink: /kb/136/Q136873/
 
 ## Q136873: NET PASSWORD on Windows for Workgroups Causes Error 2453
 
+{% raw %}
+
 	Article: Q136873
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11; winnt:3.51; :3.11,3.11a,3.11b
@@ -83,3 +85,5 @@ permalink: /kb/136/Q136873/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/232/Q232392/
 
 ## Q232392: Zone: High Latency in Game Lobbies or When Playing Games
 
+{% raw %}
+
 	Article: Q232392
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -170,3 +172,5 @@ permalink: /kb/232/Q232392/
 	
 	=============================================================================
 	
+
+{% endraw %}

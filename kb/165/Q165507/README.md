@@ -6,6 +6,8 @@ permalink: /kb/165/Q165507/
 
 ## Q165507: SMS: PGC Randomly Picks a Logon Server
 
+{% raw %}
+
 	Article: Q165507
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -66,3 +68,5 @@ permalink: /kb/165/Q165507/
 	
 	=============================================================================
 	
+
+{% endraw %}

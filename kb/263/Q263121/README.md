@@ -6,6 +6,8 @@ permalink: /kb/263/Q263121/
 
 ## Q263121: Internet Services Manager MMC Not Added to Windows Start Menu
 
+{% raw %}
+
 	Article: Q263121
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -92,3 +94,5 @@ permalink: /kb/263/Q263121/
 	
 	=============================================================================
 	
+
+{% endraw %}

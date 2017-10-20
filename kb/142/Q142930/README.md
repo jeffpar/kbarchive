@@ -6,6 +6,8 @@ permalink: /kb/142/Q142930/
 
 ## Q142930: HOWTO: RDO: Use ODBC Escape Clauses in Your SQL Syntax
 
+{% raw %}
+
 	Article: Q142930
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:2.5,4.0
@@ -174,3 +176,5 @@ permalink: /kb/142/Q142930/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122175/
 
 ## Q122175: SMS Network Applications Database Synchronization
 
+{% raw %}
+
 	Article: Q122175
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -55,3 +57,5 @@ permalink: /kb/122/Q122175/
 	
 	=============================================================================
 	
+
+{% endraw %}

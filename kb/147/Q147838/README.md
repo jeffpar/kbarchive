@@ -6,6 +6,8 @@ permalink: /kb/147/Q147838/
 
 ## Q147838: Cannot Access Folders with Long File Names on NetWare Servers
 
+{% raw %}
+
 	Article: Q147838
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/147/Q147838/
 	
 	=============================================================================
 	
+
+{% endraw %}

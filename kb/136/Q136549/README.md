@@ -6,6 +6,8 @@ permalink: /kb/136/Q136549/
 
 ## Q136549: INFO: Microsoft Foundation Class Library Development Guidelines
 
+{% raw %}
+
 	Article: Q136549
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/136/Q136549/
 	
 	=============================================================================
 	
+
+{% endraw %}

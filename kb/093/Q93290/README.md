@@ -6,6 +6,8 @@ permalink: /kb/093/Q93290/
 
 ## Q93290: PRB: DBWIN Sample Application May Appear to Hang Windows
 
+{% raw %}
+
 	Article: Q93290
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -103,3 +105,5 @@ permalink: /kb/093/Q93290/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241404/
 
 ## Q241404: Dr. Watson Error in Userinit.exe When a User Logs On
 
+{% raw %}
+
 	Article: Q241404
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/241/Q241404/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161678/
 
 ## Q161678: Regedit.exe Cannot Search for DWORD or Binary Data
 
+{% raw %}
+
 	Article: Q161678
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 95
@@ -68,3 +70,5 @@ permalink: /kb/161/Q161678/
 	
 	=============================================================================
 	
+
+{% endraw %}

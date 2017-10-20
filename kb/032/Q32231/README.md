@@ -6,6 +6,8 @@ permalink: /kb/032/Q32231/
 
 ## Q32231: The Purpose of the AUTOEXEC.FS3 or AUTOEXEC.FS4 File
 
+{% raw %}
+
 	Article: Q32231
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -34,3 +36,5 @@ permalink: /kb/032/Q32231/
 	
 	=============================================================================
 	
+
+{% endraw %}

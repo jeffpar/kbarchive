@@ -6,6 +6,8 @@ permalink: /kb/035/Q35957/
 
 ## Q35957: INFO: Active Application, Active Window, Input Focus Definition
 
+{% raw %}
+
 	Article: Q35957
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -184,3 +186,5 @@ permalink: /kb/035/Q35957/
 	
 	=============================================================================
 	
+
+{% endraw %}

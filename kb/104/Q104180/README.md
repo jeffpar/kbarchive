@@ -6,6 +6,8 @@ permalink: /kb/104/Q104180/
 
 ## Q104180: Err Msg: Error writing to LPT1:
 
+{% raw %}
+
 	Article: Q104180
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -59,3 +61,5 @@ permalink: /kb/104/Q104180/
 	
 	=============================================================================
 	
+
+{% endraw %}

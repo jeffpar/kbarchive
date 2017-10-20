@@ -6,6 +6,8 @@ permalink: /kb/172/Q172552/
 
 ## Q172552: How to Configure TCP/IP for The Microsoft Network
 
+{% raw %}
+
 	Article: Q172552
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5,5.0,5.1
@@ -66,3 +68,5 @@ permalink: /kb/172/Q172552/
 	
 	=============================================================================
 	
+
+{% endraw %}

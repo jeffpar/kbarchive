@@ -6,6 +6,8 @@ permalink: /kb/151/Q151426/
 
 ## Q151426: HOWTO: Create a DAO Setup that Installs Jet IISAM Files
 
+{% raw %}
+
 	Article: Q151426
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00 4.10
@@ -109,3 +111,5 @@ permalink: /kb/151/Q151426/
 	
 	=============================================================================
 	
+
+{% endraw %}

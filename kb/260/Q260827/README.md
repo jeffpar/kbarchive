@@ -6,6 +6,8 @@ permalink: /kb/260/Q260827/
 
 ## Q260827: Conflicting Credentials Exist for CCM When Site Server on PDC
 
+{% raw %}
+
 	Article: Q260827
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -69,3 +71,5 @@ permalink: /kb/260/Q260827/
 	
 	=============================================================================
 	
+
+{% endraw %}

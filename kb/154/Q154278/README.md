@@ -6,6 +6,8 @@ permalink: /kb/154/Q154278/
 
 ## Q154278: MSN Access Numbers Questions and Answers
 
+{% raw %}
+
 	Article: Q154278
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3,2.0,2.5,2.51,2.52,2.6
@@ -82,3 +84,5 @@ permalink: /kb/154/Q154278/
 	
 	=============================================================================
 	
+
+{% endraw %}

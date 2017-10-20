@@ -6,6 +6,8 @@ permalink: /kb/159/Q159908/
 
 ## Q159908: &quot;Net print&quot; Command May Print One Print Job as Two
 
+{% raw %}
+
 	Article: Q159908
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2.2c,3.51,4.0
@@ -63,3 +65,5 @@ permalink: /kb/159/Q159908/
 	
 	=============================================================================
 	
+
+{% endraw %}

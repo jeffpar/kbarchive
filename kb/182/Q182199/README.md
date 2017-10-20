@@ -6,6 +6,8 @@ permalink: /kb/182/Q182199/
 
 ## Q182199: XADM: How to Move Details Templates to Another Server
 
+{% raw %}
+
 	Article: Q182199
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/182/Q182199/
 	
 	=============================================================================
 	
+
+{% endraw %}

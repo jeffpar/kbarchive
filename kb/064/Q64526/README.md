@@ -6,6 +6,8 @@ permalink: /kb/064/Q64526/
 
 ## Q64526: Amount of Memory Used by MS-DOS
 
+{% raw %}
+
 	Article: Q64526
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:1.x,2.x,3.x,4.x,5.x
@@ -73,3 +75,5 @@ permalink: /kb/064/Q64526/
 	
 	=============================================================================
 	
+
+{% endraw %}

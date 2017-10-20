@@ -6,6 +6,8 @@ permalink: /kb/108/Q108365/
 
 ## Q108365: FIX: Strange Character in Warning for Illegal Edit List
 
+{% raw %}
+
 	Article: Q108365
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -66,3 +68,5 @@ permalink: /kb/108/Q108365/
 	
 	=============================================================================
 	
+
+{% endraw %}

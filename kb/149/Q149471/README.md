@@ -6,6 +6,8 @@ permalink: /kb/149/Q149471/
 
 ## Q149471: PRB: Conflicting Definitions of time_t Between Windows and Mac
 
+{% raw %}
+
 	Article: Q149471
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -77,3 +79,5 @@ permalink: /kb/149/Q149471/
 	
 	=============================================================================
 	
+
+{% endraw %}

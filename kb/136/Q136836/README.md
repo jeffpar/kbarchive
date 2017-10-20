@@ -6,6 +6,8 @@ permalink: /kb/136/Q136836/
 
 ## Q136836: Disk Defragmenter May Seem to Stop Responding
 
+{% raw %}
+
 	Article: Q136836
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -75,3 +77,5 @@ permalink: /kb/136/Q136836/
 	
 	=============================================================================
 	
+
+{% endraw %}

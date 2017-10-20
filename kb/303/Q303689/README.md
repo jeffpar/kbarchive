@@ -6,6 +6,8 @@ permalink: /kb/303/Q303689/
 
 ## Q303689: Netscape Navigator 6.01 Cannot Display Congratulations Page
 
+{% raw %}
+
 	Article: Q303689
 	Product(s): Microsoft Developer Network
 	Version(s): 2.0
@@ -49,3 +51,5 @@ permalink: /kb/303/Q303689/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98760/
 
 ## Q98760: DoubleSpace Error: R6003 - Integer Divide by Zero
 
+{% raw %}
+
 	Article: Q98760
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -80,3 +82,5 @@ permalink: /kb/098/Q98760/
 	
 	=============================================================================
 	
+
+{% endraw %}

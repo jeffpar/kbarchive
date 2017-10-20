@@ -6,6 +6,8 @@ permalink: /kb/063/Q63797/
 
 ## Q63797: In 7.00 UI Toolbox, WindowOpen Must Start at Row 3, Column 2
 
+{% raw %}
+
 	Article: Q63797
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -82,3 +84,5 @@ permalink: /kb/063/Q63797/
 	'coordinates:
 	
 	windowopen 2, 3, 2, 10, 20, 15, 0, 15, 0, 6, 0, 0, 0, 0, 2, "test #2"
+
+{% endraw %}

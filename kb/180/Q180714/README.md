@@ -6,6 +6,8 @@ permalink: /kb/180/Q180714/
 
 ## Q180714: HOWTO: Pass a Picture Object Remotely Using COM
 
+{% raw %}
+
 	Article: Q180714
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -391,3 +393,5 @@ permalink: /kb/180/Q180714/
 	
 	=============================================================================
 	
+
+{% endraw %}

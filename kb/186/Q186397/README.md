@@ -6,6 +6,8 @@ permalink: /kb/186/Q186397/
 
 ## Q186397: SMS: National Language Support Message Maker - Nlsmsg.exe
 
+{% raw %}
+
 	Article: Q186397
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -127,3 +129,5 @@ permalink: /kb/186/Q186397/
 	
 	=============================================================================
 	
+
+{% endraw %}

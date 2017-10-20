@@ -6,6 +6,8 @@ permalink: /kb/118/Q118338/
 
 ## Q118338: BUG: Sample MTTEST.FOR Compile Errors
 
+{% raw %}
+
 	Article: Q118338
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -85,3 +87,5 @@ permalink: /kb/118/Q118338/
 	
 	=============================================================================
 	
+
+{% endraw %}

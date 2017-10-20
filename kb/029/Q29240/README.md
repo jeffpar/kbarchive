@@ -6,6 +6,8 @@ permalink: /kb/029/Q29240/
 
 ## Q29240: HOWTO: Converting Colors Between RGB and HLS (HBS)
 
+{% raw %}
+
 	Article: Q29240
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -176,3 +178,5 @@ permalink: /kb/029/Q29240/
 	
 	=============================================================================
 	
+
+{% endraw %}

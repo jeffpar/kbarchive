@@ -6,6 +6,8 @@ permalink: /kb/068/Q68301/
 
 ## Q68301: SAMPLE: Spdsheet.exe - Developing a Spreadsheet App for Windows
 
+{% raw %}
+
 	Article: Q68301
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -107,3 +109,5 @@ permalink: /kb/068/Q68301/
 	
 	=============================================================================
 	
+
+{% endraw %}

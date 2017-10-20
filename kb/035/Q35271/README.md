@@ -6,6 +6,8 @@ permalink: /kb/035/Q35271/
 
 ## Q35271: Sample BASIC Program That Makes OS/2 Call to DosSearchPath
 
+{% raw %}
+
 	Article: Q35271
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -57,3 +59,5 @@ permalink: /kb/035/Q35271/
 	   Print Buffer
 	END IF
 	end
+
+{% endraw %}

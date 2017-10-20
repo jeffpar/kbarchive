@@ -6,6 +6,8 @@ permalink: /kb/134/Q134755/
 
 ## Q134755: PC Gen: PABUTILS.TXT: Mail 3.5 Utilities Disk
 
+{% raw %}
+
 	Article: Q134755
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -69,3 +71,5 @@ permalink: /kb/134/Q134755/
 	
 	=============================================================================
 	
+
+{% endraw %}

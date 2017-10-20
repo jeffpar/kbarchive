@@ -6,6 +6,8 @@ permalink: /kb/154/Q154756/
 
 ## Q154756: HOWTO: List Stored Procedures in a SQL Server Database
 
+{% raw %}
+
 	Article: Q154756
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/154/Q154756/
 	
 	=============================================================================
 	
+
+{% endraw %}

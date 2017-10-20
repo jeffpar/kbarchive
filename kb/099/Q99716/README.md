@@ -6,6 +6,8 @@ permalink: /kb/099/Q99716/
 
 ## Q99716: SMTP: Attachments Named ATT1, ATT2, ATT#
 
+{% raw %}
+
 	Article: Q99716
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -47,3 +49,5 @@ permalink: /kb/099/Q99716/
 	
 	=============================================================================
 	
+
+{% endraw %}

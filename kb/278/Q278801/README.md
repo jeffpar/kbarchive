@@ -6,6 +6,8 @@ permalink: /kb/278/Q278801/
 
 ## Q278801: MSN Companion Troubleshooting Tool: Logging ID
 
+{% raw %}
+
 	Article: Q278801
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -69,3 +71,5 @@ permalink: /kb/278/Q278801/
 	
 	=============================================================================
 	
+
+{% endraw %}

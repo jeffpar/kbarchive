@@ -6,6 +6,8 @@ permalink: /kb/096/Q96083/
 
 ## Q96083: DoubleSpace Err Msg: Drive Is Too Fragmented to Resize
 
+{% raw %}
+
 	Article: Q96083
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -173,3 +175,5 @@ permalink: /kb/096/Q96083/
 	
 	=============================================================================
 	
+
+{% endraw %}

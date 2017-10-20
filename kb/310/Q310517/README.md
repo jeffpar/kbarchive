@@ -6,6 +6,8 @@ permalink: /kb/310/Q310517/
 
 ## Q310517: Event 1301 Logged During Host-Initiated Password Change
 
+{% raw %}
+
 	Article: Q310517
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -130,3 +132,5 @@ permalink: /kb/310/Q310517/
 	
 	=============================================================================
 	
+
+{% endraw %}

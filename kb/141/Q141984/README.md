@@ -6,6 +6,8 @@ permalink: /kb/141/Q141984/
 
 ## Q141984: XCLN: Location of User Profiles
 
+{% raw %}
+
 	Article: Q141984
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -57,3 +59,5 @@ permalink: /kb/141/Q141984/
 	
 	=============================================================================
 	
+
+{% endraw %}

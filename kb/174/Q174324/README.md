@@ -6,6 +6,8 @@ permalink: /kb/174/Q174324/
 
 ## Q174324: WD97: Can Add Bookmark to Hyperlink When No Bookmark Exists
 
+{% raw %}
+
 	Article: Q174324
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -51,3 +53,5 @@ permalink: /kb/174/Q174324/
 	
 	=============================================================================
 	
+
+{% endraw %}

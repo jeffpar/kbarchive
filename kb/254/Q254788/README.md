@@ -6,6 +6,8 @@ permalink: /kb/254/Q254788/
 
 ## Q254788: XFOR: Schedule+ 7.5 Users Always Prompted for a Password
 
+{% raw %}
+
 	Article: Q254788
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 7.5
@@ -99,3 +101,5 @@ permalink: /kb/254/Q254788/
 	
 	=============================================================================
 	
+
+{% endraw %}

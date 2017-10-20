@@ -6,6 +6,8 @@ permalink: /kb/148/Q148296/
 
 ## Q148296: PPT7: Handout Page Numbers Always Start at One
 
+{% raw %}
+
 	Article: Q148296
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -43,3 +45,5 @@ permalink: /kb/148/Q148296/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151395/
 
 ## Q151395: XCON: MTA Terminates After Receiving Mail from Zoomit Gateway
 
+{% raw %}
+
 	Article: Q151395
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -108,3 +110,5 @@ permalink: /kb/151/Q151395/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171062/
 
 ## Q171062: XCON: Exchange RAS Does Not Support Windows NT Multilink
 
+{% raw %}
+
 	Article: Q171062
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -40,3 +42,5 @@ permalink: /kb/171/Q171062/
 	
 	=============================================================================
 	
+
+{% endraw %}

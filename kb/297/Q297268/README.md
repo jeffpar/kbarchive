@@ -6,6 +6,8 @@ permalink: /kb/297/Q297268/
 
 ## Q297268: Data Fragmentation Occurs When You Restore Data to Clean Volume
 
+{% raw %}
+
 	Article: Q297268
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/297/Q297268/
 	
 	=============================================================================
 	
+
+{% endraw %}

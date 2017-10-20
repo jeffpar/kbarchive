@@ -6,6 +6,8 @@ permalink: /kb/096/Q96149/
 
 ## Q96149: Installing Wollongong Pathway Access on WfW
 
+{% raw %}
+
 	Article: Q96149
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/096/Q96149/
 	
 	=============================================================================
 	
+
+{% endraw %}

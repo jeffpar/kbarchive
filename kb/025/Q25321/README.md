@@ -6,6 +6,8 @@ permalink: /kb/025/Q25321/
 
 ## Q25321: Using EXEHDR or EXEMOD to Change the Stack Size of an .EXE
 
+{% raw %}
+
 	Article: Q25321
 	Product(s): See article
 	Version(s): 1.00 2.01 | 1.00 2.01
@@ -33,3 +35,5 @@ permalink: /kb/025/Q25321/
 	-or-
 	
 	   EXEMOD file /STACK 1000
+
+{% endraw %}

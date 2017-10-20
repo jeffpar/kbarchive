@@ -6,6 +6,8 @@ permalink: /kb/094/Q94297/
 
 ## Q94297: Hardware Handshake for 3Server COM Ports
 
+{% raw %}
+
 	Article: Q94297
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/094/Q94297/
 	
 	=============================================================================
 	
+
+{% endraw %}

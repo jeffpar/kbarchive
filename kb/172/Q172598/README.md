@@ -6,6 +6,8 @@ permalink: /kb/172/Q172598/
 
 ## Q172598: Client Profile Setup Utility Obsolete
 
+{% raw %}
+
 	Article: Q172598
 	Product(s): Microsoft Press
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/172/Q172598/
 	
 	=============================================================================
 	
+
+{% endraw %}

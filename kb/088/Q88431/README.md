@@ -6,6 +6,8 @@ permalink: /kb/088/Q88431/
 
 ## Q88431: Using the Orange 386 and Windows on a Macintosh
 
+{% raw %}
+
 	Article: Q88431
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -107,3 +109,5 @@ permalink: /kb/088/Q88431/
 	
 	=============================================================================
 	
+
+{% endraw %}

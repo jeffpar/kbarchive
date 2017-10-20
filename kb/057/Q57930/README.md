@@ -6,6 +6,8 @@ permalink: /kb/057/Q57930/
 
 ## Q57930: BREAK Status Always Reports OFF Using BASIC CALL INTERRUPT
 
+{% raw %}
+
 	Article: Q57930
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -62,3 +64,5 @@ permalink: /kb/057/Q57930/
 	Even if BREAK ON is previously set in DOS, the program reports that
 	BREAK is OFF. After the program ends, issuing the BREAK command in DOS
 	shows BREAK as still ON.
+
+{% endraw %}

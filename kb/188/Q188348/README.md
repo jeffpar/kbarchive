@@ -6,6 +6,8 @@ permalink: /kb/188/Q188348/
 
 ## Q188348: Specially-Malformed FTP Requests May Create Denial of Service
 
+{% raw %}
+
 	Article: Q188348
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0,4.0
@@ -90,3 +92,5 @@ permalink: /kb/188/Q188348/
 	
 	=============================================================================
 	
+
+{% endraw %}

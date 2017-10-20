@@ -6,6 +6,8 @@ permalink: /kb/066/Q66574/
 
 ## Q66574: ASD: 747-400 Separate Engine Control
 
+{% raw %}
+
 	Article: Q66574
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -34,3 +36,5 @@ permalink: /kb/066/Q66574/
 	
 	=============================================================================
 	
+
+{% endraw %}

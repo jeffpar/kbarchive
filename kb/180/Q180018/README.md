@@ -6,6 +6,8 @@ permalink: /kb/180/Q180018/
 
 ## Q180018: SGCINST.EXE Appears to Execute but SGC Does Not Work
 
+{% raw %}
+
 	Article: Q180018
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.0,4.0,4.0 SP3
@@ -51,3 +53,5 @@ permalink: /kb/180/Q180018/
 	
 	=============================================================================
 	
+
+{% endraw %}

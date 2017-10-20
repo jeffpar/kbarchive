@@ -6,6 +6,8 @@ permalink: /kb/139/Q139904/
 
 ## Q139904: How to Configure Your DHCP Server Scope
 
+{% raw %}
+
 	Article: Q139904
 	Product(s): Microsoft Windows NT
 	Version(s): 3.11,3.11a,3.11b,3.5,3.51,4.0
@@ -255,3 +257,5 @@ permalink: /kb/139/Q139904/
 	
 	=============================================================================
 	
+
+{% endraw %}

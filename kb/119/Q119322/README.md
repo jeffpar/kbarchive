@@ -6,6 +6,8 @@ permalink: /kb/119/Q119322/
 
 ## Q119322: Mac Multimedia: Can't Eject or Drag CD-ROM Icon to Trash
 
+{% raw %}
+
 	Article: Q119322
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a,1993, 1994, 1995, 1996-1997 editions,1994 edition,1995 edition,1996 edition,1
@@ -80,3 +82,5 @@ permalink: /kb/119/Q119322/
 	
 	=============================================================================
 	
+
+{% endraw %}

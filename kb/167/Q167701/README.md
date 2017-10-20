@@ -6,6 +6,8 @@ permalink: /kb/167/Q167701/
 
 ## Q167701: Unattended Setup of WinNT Server 4.0 Network Monitor and Agent
 
+{% raw %}
+
 	Article: Q167701
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,4.0
@@ -92,3 +94,5 @@ permalink: /kb/167/Q167701/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147684/
 
 ## Q147684: FIX: Sending WM_xSCROLL Message Causes Invalid ASSERT
 
+{% raw %}
+
 	Article: Q147684
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -121,3 +123,5 @@ permalink: /kb/147/Q147684/
 	
 	=============================================================================
 	
+
+{% endraw %}

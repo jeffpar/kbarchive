@@ -6,6 +6,8 @@ permalink: /kb/116/Q116301/
 
 ## Q116301: PRB: Visual WB Matches Enclosure Symbols in Comments
 
+{% raw %}
+
 	Article: Q116301
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,2.1,4.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/116/Q116301/
 	
 	=============================================================================
 	
+
+{% endraw %}

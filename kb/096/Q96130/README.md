@@ -6,6 +6,8 @@ permalink: /kb/096/Q96130/
 
 ## Q96130: How DBLSPACE.BIN Determines If It Should Stay in Memory
 
+{% raw %}
+
 	Article: Q96130
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -64,3 +66,5 @@ permalink: /kb/096/Q96130/
 	
 	=============================================================================
 	
+
+{% endraw %}

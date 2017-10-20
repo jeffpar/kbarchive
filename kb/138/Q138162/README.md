@@ -6,6 +6,8 @@ permalink: /kb/138/Q138162/
 
 ## Q138162: How to Resize a Form When the Application Window Is Resized
 
+{% raw %}
+
 	Article: Q138162
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -72,3 +74,5 @@ permalink: /kb/138/Q138162/
 	
 	=============================================================================
 	
+
+{% endraw %}

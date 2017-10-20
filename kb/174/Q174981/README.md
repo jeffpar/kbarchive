@@ -6,6 +6,8 @@ permalink: /kb/174/Q174981/
 
 ## Q174981: HOWTO: Retrieve Typical Resultsets From Oracle Stored Procedures
 
+{% raw %}
+
 	Article: Q174981
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0,Build 2.573.2927,Build 2.73.7269,Build 2.73.7283.01,Build 2.73.7283.03,Build 2
@@ -305,3 +307,5 @@ permalink: /kb/174/Q174981/
 	
 	=============================================================================
 	
+
+{% endraw %}

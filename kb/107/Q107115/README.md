@@ -6,6 +6,8 @@ permalink: /kb/107/Q107115/
 
 ## Q107115: 3270 Applet Keyboard Functions
 
+{% raw %}
+
 	Article: Q107115
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.11,3.0,4.0
@@ -106,3 +108,5 @@ permalink: /kb/107/Q107115/
 	
 	=============================================================================
 	
+
+{% endraw %}

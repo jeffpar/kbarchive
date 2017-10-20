@@ -6,6 +6,8 @@ permalink: /kb/107/Q107103/
 
 ## Q107103: X400: Gateway Requires P2 Originator Info for Display
 
+{% raw %}
+
 	Article: Q107103
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.2
@@ -45,3 +47,5 @@ permalink: /kb/107/Q107103/
 	
 	=============================================================================
 	
+
+{% endraw %}

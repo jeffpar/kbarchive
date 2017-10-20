@@ -6,6 +6,8 @@ permalink: /kb/196/Q196353/
 
 ## Q196353: Starts Here: Desktop Flashes After Load
 
+{% raw %}
+
 	Article: Q196353
 	Product(s): Microsoft Press
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/196/Q196353/
 	
 	=============================================================================
 	
+
+{% endraw %}

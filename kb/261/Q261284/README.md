@@ -6,6 +6,8 @@ permalink: /kb/261/Q261284/
 
 ## Q261284: WD97: Word Stops When Printing or Returns Error in Hpbla2.dll
 
+{% raw %}
+
 	Article: Q261284
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -69,3 +71,5 @@ permalink: /kb/261/Q261284/
 	
 	=============================================================================
 	
+
+{% endraw %}

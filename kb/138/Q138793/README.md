@@ -6,6 +6,8 @@ permalink: /kb/138/Q138793/
 
 ## Q138793: Multi-Protocol Router Installation and Configuration
 
+{% raw %}
+
 	Article: Q138793
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -129,3 +131,5 @@ permalink: /kb/138/Q138793/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/239/Q239760/
 
 ## Q239760: XADM: How to Recover Organizational Forms
 
+{% raw %}
+
 	Article: Q239760
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -130,3 +132,5 @@ permalink: /kb/239/Q239760/
 	
 	=============================================================================
 	
+
+{% endraw %}

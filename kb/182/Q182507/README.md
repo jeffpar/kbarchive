@@ -6,6 +6,8 @@ permalink: /kb/182/Q182507/
 
 ## Q182507: XADM: How to Authenticate for LDAP Access
 
+{% raw %}
+
 	Article: Q182507
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -53,3 +55,5 @@ permalink: /kb/182/Q182507/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/083/Q83658/
 
 ## Q83658: INF: Version Information Resources in VxDs
 
+{% raw %}
+
 	Article: Q83658
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.1
@@ -50,3 +52,5 @@ permalink: /kb/083/Q83658/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188312/
 
 ## Q188312: Lexmark Optra E+ Unprintable Region Is Incorrect
 
+{% raw %}
+
 	Article: Q188312
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -78,3 +80,5 @@ permalink: /kb/188/Q188312/
 	
 	=============================================================================
 	
+
+{% endraw %}

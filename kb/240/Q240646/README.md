@@ -6,6 +6,8 @@ permalink: /kb/240/Q240646/
 
 ## Q240646: World Atlas: Error Message When You Quit Program and Browser
 
+{% raw %}
+
 	Article: Q240646
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -71,3 +73,5 @@ permalink: /kb/240/Q240646/
 	
 	=============================================================================
 	
+
+{% endraw %}

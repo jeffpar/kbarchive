@@ -6,6 +6,8 @@ permalink: /kb/216/Q216481/
 
 ## Q216481: PRB: ByRef Has No Effect on Form's Public Variables
 
+{% raw %}
+
 	Article: Q216481
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -138,3 +140,5 @@ permalink: /kb/216/Q216481/
 	
 	=============================================================================
 	
+
+{% endraw %}

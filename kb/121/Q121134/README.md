@@ -6,6 +6,8 @@ permalink: /kb/121/Q121134/
 
 ## Q121134: Doc Error: NT Workstation Inbound Connections Not Unlimited
 
+{% raw %}
+
 	Article: Q121134
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -43,3 +45,5 @@ permalink: /kb/121/Q121134/
 	
 	=============================================================================
 	
+
+{% endraw %}

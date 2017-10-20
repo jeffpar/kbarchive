@@ -6,6 +6,8 @@ permalink: /kb/121/Q121130/
 
 ## Q121130: PC Win: MMFClean GP Fault in Large POL w/ Gateway Addresses
 
+{% raw %}
+
 	Article: Q121130
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.20
@@ -111,3 +113,5 @@ permalink: /kb/121/Q121130/
 	
 	=============================================================================
 	
+
+{% endraw %}

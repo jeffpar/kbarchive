@@ -6,6 +6,8 @@ permalink: /kb/229/Q229927/
 
 ## Q229927: SMS: Long Event to Trap Translator Description Brings Error
 
+{% raw %}
+
 	Article: Q229927
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -88,3 +90,5 @@ permalink: /kb/229/Q229927/
 	
 	=============================================================================
 	
+
+{% endraw %}

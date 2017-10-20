@@ -6,6 +6,8 @@ permalink: /kb/274/Q274466/
 
 ## Q274466: MSN Explorer Dial Up Networking (DUN 1.4) Setup May Fail To Inst
 
+{% raw %}
+
 	Article: Q274466
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -64,3 +66,5 @@ permalink: /kb/274/Q274466/
 	
 	=============================================================================
 	
+
+{% endraw %}

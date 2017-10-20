@@ -6,6 +6,8 @@ permalink: /kb/062/Q62460/
 
 ## Q62460: ISAM INSERT with Duplicate Key Incorrectly Allocates Record
 
+{% raw %}
+
 	Article: Q62460
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -83,3 +85,5 @@ permalink: /kb/062/Q62460/
 	            DELETEINDEX #1, "X"
 	            END
 	        END SELECT
+
+{% endraw %}

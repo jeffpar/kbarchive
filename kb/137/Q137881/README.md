@@ -6,6 +6,8 @@ permalink: /kb/137/Q137881/
 
 ## Q137881: Print and Copy Not Available from within Help
 
+{% raw %}
+
 	Article: Q137881
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.00
@@ -66,3 +68,5 @@ permalink: /kb/137/Q137881/
 	
 	=============================================================================
 	
+
+{% endraw %}

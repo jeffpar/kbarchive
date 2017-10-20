@@ -6,6 +6,8 @@ permalink: /kb/164/Q164202/
 
 ## Q164202: Booting to Secondary Installation When Boot.ini Is Set to Zero
 
+{% raw %}
+
 	Article: Q164202
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -133,3 +135,5 @@ permalink: /kb/164/Q164202/
 	
 	=============================================================================
 	
+
+{% endraw %}

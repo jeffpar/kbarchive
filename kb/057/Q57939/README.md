@@ -6,6 +6,8 @@ permalink: /kb/057/Q57939/
 
 ## Q57939: Writing Optimized Dynamic Link Libraries (DDLs)
 
+{% raw %}
+
 	Article: Q57939
 	Product(s): See article
 	Version(s): 5.10
@@ -48,3 +50,5 @@ permalink: /kb/057/Q57939/
 	
 	For more information on the function pragma, see Page 94 in the
 	"Microsoft C Optimizing Compiler: User's Guide."
+
+{% endraw %}

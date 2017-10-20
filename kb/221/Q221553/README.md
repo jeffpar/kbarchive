@@ -6,6 +6,8 @@ permalink: /kb/221/Q221553/
 
 ## Q221553: Setting File Attributes Causes 404 - File Not Found Error
 
+{% raw %}
+
 	Article: Q221553
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,3.0,4.0,5.0
@@ -57,3 +59,5 @@ permalink: /kb/221/Q221553/
 	
 	=============================================================================
 	
+
+{% endraw %}

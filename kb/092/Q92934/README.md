@@ -6,6 +6,8 @@ permalink: /kb/092/Q92934/
 
 ## Q92934: Installing Workgroup Connections to a Floppy Disk
 
+{% raw %}
+
 	Article: Q92934
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 1.0
@@ -73,3 +75,5 @@ permalink: /kb/092/Q92934/
 	
 	=============================================================================
 	
+
+{% endraw %}

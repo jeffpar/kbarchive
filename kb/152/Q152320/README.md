@@ -6,6 +6,8 @@ permalink: /kb/152/Q152320/
 
 ## Q152320: XCLN: How to Display the Secondary Mouse Menu
 
+{% raw %}
+
 	Article: Q152320
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -47,3 +49,5 @@ permalink: /kb/152/Q152320/
 	
 	=============================================================================
 	
+
+{% endraw %}

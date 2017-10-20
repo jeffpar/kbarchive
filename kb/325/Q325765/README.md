@@ -6,6 +6,8 @@ permalink: /kb/325/Q325765/
 
 ## Q325765: &quot;String Data, Length Mismatch&quot; Err Msg w/ ODBC Driver for SQL
 
+{% raw %}
+
 	Article: Q325765
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5,2.6,2.7,2000.80.194,2000.80.380,2000.81.7713.0,3.7
@@ -335,3 +337,5 @@ permalink: /kb/325/Q325765/
 	
 	=============================================================================
 	
+
+{% endraw %}

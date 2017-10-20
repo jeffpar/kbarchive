@@ -6,6 +6,8 @@ permalink: /kb/258/Q258557/
 
 ## Q258557: XFOR: How to Record Internet Messages Sent by an Exchange User
 
+{% raw %}
+
 	Article: Q258557
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -115,3 +117,5 @@ permalink: /kb/258/Q258557/
 	
 	=============================================================================
 	
+
+{% endraw %}

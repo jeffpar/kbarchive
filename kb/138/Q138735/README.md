@@ -6,6 +6,8 @@ permalink: /kb/138/Q138735/
 
 ## Q138735: FAQ: Visual C++ 4.0 Frequently Asked Questions
 
+{% raw %}
+
 	Article: Q138735
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:4.0;
@@ -236,3 +238,5 @@ permalink: /kb/138/Q138735/
 	
 	=============================================================================
 	
+
+{% endraw %}

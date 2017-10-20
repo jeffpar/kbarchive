@@ -6,6 +6,8 @@ permalink: /kb/249/Q249102/
 
 ## Q249102: XCLN: Connection Errors for Remote Mail Users Working Offline
 
+{% raw %}
+
 	Article: Q249102
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:
@@ -97,3 +99,5 @@ permalink: /kb/249/Q249102/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196992/
 
 ## Q196992: Current NonAnonymous Users Performance Counter Is Incorrect
 
+{% raw %}
+
 	Article: Q196992
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -122,3 +124,5 @@ permalink: /kb/196/Q196992/
 	
 	=============================================================================
 	
+
+{% endraw %}

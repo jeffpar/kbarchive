@@ -6,6 +6,8 @@ permalink: /kb/160/Q160524/
 
 ## Q160524: Using the TELES S0 16.3 Bit ISDN Card with MSN
 
+{% raw %}
+
 	Article: Q160524
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5
@@ -133,3 +135,5 @@ permalink: /kb/160/Q160524/
 	
 	=============================================================================
 	
+
+{% endraw %}

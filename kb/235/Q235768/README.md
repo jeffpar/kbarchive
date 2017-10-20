@@ -6,6 +6,8 @@ permalink: /kb/235/Q235768/
 
 ## Q235768: SMS: Using /Upgrade Switch with Command Line Setup Causes Error
 
+{% raw %}
+
 	Article: Q235768
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -68,3 +70,5 @@ permalink: /kb/235/Q235768/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150933/
 
 ## Q150933: Acmsetup Caused an Exception 03H in Module Msvfw32.dll
 
+{% raw %}
+
 	Article: Q150933
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,2.0,99
@@ -201,3 +203,5 @@ permalink: /kb/150/Q150933/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111094/
 
 ## Q111094: RAS ErrMsg: NETBIOS Error 640: A Netbios Error Has Occurred...
 
+{% raw %}
+
 	Article: Q111094
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11
@@ -111,3 +113,5 @@ permalink: /kb/111/Q111094/
 	
 	=============================================================================
 	
+
+{% endraw %}

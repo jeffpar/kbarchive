@@ -6,6 +6,8 @@ permalink: /kb/247/Q247098/
 
 ## Q247098: HOW TO: Install and Reload the SSL Filter Sspifilt.dll
 
+{% raw %}
+
 	Article: Q247098
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0
@@ -194,3 +196,5 @@ permalink: /kb/247/Q247098/
 	
 	=============================================================================
 	
+
+{% endraw %}

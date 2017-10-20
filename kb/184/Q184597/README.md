@@ -6,6 +6,8 @@ permalink: /kb/184/Q184597/
 
 ## Q184597: Visual Basic Script Error Message When You Connect to MSN
 
+{% raw %}
+
 	Article: Q184597
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.51,2.52,2.6,4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,5,95,98,98 Secon
@@ -61,3 +63,5 @@ permalink: /kb/184/Q184597/
 	
 	=============================================================================
 	
+
+{% endraw %}

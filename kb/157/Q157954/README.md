@@ -6,6 +6,8 @@ permalink: /kb/157/Q157954/
 
 ## Q157954: BUG: ROUND() Function Not Rounding Properly After Calculations
 
+{% raw %}
+
 	Article: Q157954
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,6.0
@@ -105,3 +107,5 @@ permalink: /kb/157/Q157954/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176830/
 
 ## Q176830: HOWTO: Create a Connection Programmatically
 
+{% raw %}
+
 	Article: Q176830
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0
@@ -128,3 +130,5 @@ permalink: /kb/176/Q176830/
 	
 	=============================================================================
 	
+
+{% endraw %}

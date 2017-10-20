@@ -6,6 +6,8 @@ permalink: /kb/074/Q74749/
 
 ## Q74749: Library Switches Determine Which C Libraries PWB Assumes
 
+{% raw %}
+
 	Article: Q74749
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -98,3 +100,5 @@ permalink: /kb/074/Q74749/
 	
 	=============================================================================
 	
+
+{% endraw %}

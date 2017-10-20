@@ -6,6 +6,8 @@ permalink: /kb/093/Q93568/
 
 ## Q93568: PC Ext: Err Msg: Cannot Connect to Server
 
+{% raw %}
+
 	Article: Q93568
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/093/Q93568/
 	
 	=============================================================================
 	
+
+{% endraw %}

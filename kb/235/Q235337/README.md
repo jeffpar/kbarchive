@@ -6,6 +6,8 @@ permalink: /kb/235/Q235337/
 
 ## Q235337: Cannot Remove Internet Explorer 5 After You Uninstall Service Pa
 
+{% raw %}
+
 	Article: Q235337
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/235/Q235337/
 	
 	=============================================================================
 	
+
+{% endraw %}

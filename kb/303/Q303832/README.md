@@ -6,6 +6,8 @@ permalink: /kb/303/Q303832/
 
 ## Q303832: BUG: cPath Parameter Not Passed to DBC_Before/AfterDropOffline
 
+{% raw %}
+
 	Article: Q303832
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -58,3 +60,5 @@ permalink: /kb/303/Q303832/
 	
 	=============================================================================
 	
+
+{% endraw %}

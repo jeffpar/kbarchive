@@ -6,6 +6,8 @@ permalink: /kb/156/Q156510/
 
 ## Q156510: PRB: ComboBox ReadOnly Property Applies Only to Dropdown Combo
 
+{% raw %}
+
 	Article: Q156510
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -71,3 +73,5 @@ permalink: /kb/156/Q156510/
 	
 	=============================================================================
 	
+
+{% endraw %}

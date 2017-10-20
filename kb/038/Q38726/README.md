@@ -6,6 +6,8 @@ permalink: /kb/038/Q38726/
 
 ## Q38726: Finding Out what Video Adapters Are Installed and Active
 
+{% raw %}
+
 	Article: Q38726
 	Product(s): See article
 	Version(s): 5.10
@@ -57,3 +59,5 @@ permalink: /kb/038/Q38726/
 	return zero. For example, if you tried to select a VGA mode and
 	_setvideomode returned zero, you would know that no VGA was present in
 	the system. You then could attempt to select an EGA, etc.
+
+{% endraw %}

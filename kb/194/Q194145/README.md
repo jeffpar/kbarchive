@@ -6,6 +6,8 @@ permalink: /kb/194/Q194145/
 
 ## Q194145: MHS: Attachment Not Delivered, But No Error Message Displayed
 
+{% raw %}
+
 	Article: Q194145
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -84,3 +86,5 @@ permalink: /kb/194/Q194145/
 	
 	=============================================================================
 	
+
+{% endraw %}

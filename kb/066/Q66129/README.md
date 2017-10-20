@@ -6,6 +6,8 @@ permalink: /kb/066/Q66129/
 
 ## Q66129: Use of the shflag with sopen()
 
+{% raw %}
+
 	Article: Q66129
 	Product(s): See article
 	Version(s): 6.00
@@ -40,3 +42,5 @@ permalink: /kb/066/Q66129/
 	SH_COMPAT mode be used if the file is to be shared for reading and
 	writing. For further information about file modes, see the "MS-DOS
 	Encyclopedia," Article 7, "File and Record Management".
+
+{% endraw %}

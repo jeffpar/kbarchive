@@ -6,6 +6,8 @@ permalink: /kb/152/Q152949/
 
 ## Q152949: XFOR: Read Receipt is Received Instead of Return Receipt
 
+{% raw %}
+
 	Article: Q152949
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/152/Q152949/
 	
 	=============================================================================
 	
+
+{% endraw %}

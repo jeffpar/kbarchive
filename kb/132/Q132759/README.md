@@ -6,6 +6,8 @@ permalink: /kb/132/Q132759/
 
 ## Q132759: XCOPY from LFN-Only Drive to SFN-Only Drive Generates Errors
 
+{% raw %}
+
 	Article: Q132759
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/132/Q132759/
 	
 	=============================================================================
 	
+
+{% endraw %}

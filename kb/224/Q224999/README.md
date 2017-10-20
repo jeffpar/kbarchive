@@ -6,6 +6,8 @@ permalink: /kb/224/Q224999/
 
 ## Q224999: How to Use the Cluster TMP file to Replace a Damaged Clusdb File
 
+{% raw %}
+
 	Article: Q224999
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -132,3 +134,5 @@ permalink: /kb/224/Q224999/
 	
 	=============================================================================
 	
+
+{% endraw %}

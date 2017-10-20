@@ -6,6 +6,8 @@ permalink: /kb/153/Q153768/
 
 ## Q153768: INFO: Changing the Default Installation Drive Using Unattended S
 
+{% raw %}
+
 	Article: Q153768
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -61,3 +63,5 @@ permalink: /kb/153/Q153768/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/038/Q38754/
 
 ## Q38754: &quot;Interrupt Jumper Missing&quot; Error Message
 
+{% raw %}
+
 	Article: Q38754
 	Product(s): See article
 	Version(s): 1.00
@@ -27,3 +29,5 @@ permalink: /kb/038/Q38754/
 	It also is possible that the interface card is defective. This can
 	only be verified by installing the mouse and software onto another
 	machine and testing the mouse.
+
+{% endraw %}

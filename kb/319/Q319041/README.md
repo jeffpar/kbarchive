@@ -6,6 +6,8 @@ permalink: /kb/319/Q319041/
 
 ## Q319041: FIX: Internal Consistency Error with View and GOTO Command
 
+{% raw %}
+
 	Article: Q319041
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -85,3 +87,5 @@ permalink: /kb/319/Q319041/
 	
 	=============================================================================
 	
+
+{% endraw %}

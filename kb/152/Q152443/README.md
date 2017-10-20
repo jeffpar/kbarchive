@@ -6,6 +6,8 @@ permalink: /kb/152/Q152443/
 
 ## Q152443: PKZIP Corrupts Files with Long File Names
 
+{% raw %}
+
 	Article: Q152443
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -59,3 +61,5 @@ permalink: /kb/152/Q152443/
 	
 	=============================================================================
 	
+
+{% endraw %}

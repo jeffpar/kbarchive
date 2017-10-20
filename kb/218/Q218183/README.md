@@ -6,6 +6,8 @@ permalink: /kb/218/Q218183/
 
 ## Q218183: ServletExec Shuts Down the W3SVC Service
 
+{% raw %}
+
 	Article: Q218183
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/218/Q218183/
 	
 	=============================================================================
 	
+
+{% endraw %}

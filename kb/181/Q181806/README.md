@@ -6,6 +6,8 @@ permalink: /kb/181/Q181806/
 
 ## Q181806: Services Configured with an Account and Password May Not Start
 
+{% raw %}
+
 	Article: Q181806
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -69,3 +71,5 @@ permalink: /kb/181/Q181806/
 	
 	=============================================================================
 	
+
+{% endraw %}

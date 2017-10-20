@@ -6,6 +6,8 @@ permalink: /kb/258/Q258568/
 
 ## Q258568: Baseball 2001: Problems Using SideWinder Plug &amp; Play Game Pad
 
+{% raw %}
+
 	Article: Q258568
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -50,3 +52,5 @@ permalink: /kb/258/Q258568/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187429/
 
 ## Q187429: Connection Configuration Advanced Settings Dialog Too Big
 
+{% raw %}
+
 	Article: Q187429
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -48,3 +50,5 @@ permalink: /kb/187/Q187429/
 	
 	=============================================================================
 	
+
+{% endraw %}

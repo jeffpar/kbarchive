@@ -6,6 +6,8 @@ permalink: /kb/035/Q35753/
 
 ## Q35753: Directory Listing for C 5.10 Distribution Disks (3.5-Inch)
 
+{% raw %}
+
 	Article: Q35753
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -520,3 +522,5 @@ permalink: /kb/035/Q35753/
 	SNAP     C      13083   3-07-88   5:10a
 	MAKESNAP CMD     2148   3-07-88   5:10a
 	     16 File(s)   93184 bytes free
+
+{% endraw %}

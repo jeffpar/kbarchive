@@ -6,6 +6,8 @@ permalink: /kb/126/Q126260/
 
 ## Q126260: Writer: Borders Cut Off on HP DeskJet Series
 
+{% raw %}
+
 	Article: Q126260
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a,3.11
@@ -91,3 +93,5 @@ permalink: /kb/126/Q126260/
 	
 	=============================================================================
 	
+
+{% endraw %}

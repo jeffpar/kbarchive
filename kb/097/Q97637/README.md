@@ -6,6 +6,8 @@ permalink: /kb/097/Q97637/
 
 ## Q97637: Using Memory Variable Files (.MEM) in FoxPro
 
+{% raw %}
+
 	Article: Q97637
 	Product(s): Microsoft FoxPro
 	Version(s): 2.00 2.50x 2.60 2.60a | 2.50x 2.
@@ -104,3 +106,5 @@ permalink: /kb/097/Q97637/
 	
 	=============================================================================
 	
+
+{% endraw %}

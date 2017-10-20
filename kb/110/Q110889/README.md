@@ -6,6 +6,8 @@ permalink: /kb/110/Q110889/
 
 ## Q110889: Can't Choose Second Operating System on Olivetti M6 Computer
 
+{% raw %}
+
 	Article: Q110889
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5
@@ -68,3 +70,5 @@ permalink: /kb/110/Q110889/
 	
 	=============================================================================
 	
+
+{% endraw %}

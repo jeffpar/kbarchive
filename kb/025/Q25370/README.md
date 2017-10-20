@@ -6,6 +6,8 @@ permalink: /kb/025/Q25370/
 
 ## Q25370: Imported Word Documents Convert to Courier 12 Point in Write
 
+{% raw %}
+
 	Article: Q25370
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/025/Q25370/
 	
 	=============================================================================
 	
+
+{% endraw %}

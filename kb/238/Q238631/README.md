@@ -6,6 +6,8 @@ permalink: /kb/238/Q238631/
 
 ## Q238631: NTLM Password Change Fails When Password Contains an Ampersand
 
+{% raw %}
+
 	Article: Q238631
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -110,3 +112,5 @@ permalink: /kb/238/Q238631/
 	
 	=============================================================================
 	
+
+{% endraw %}

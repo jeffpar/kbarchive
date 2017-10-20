@@ -6,6 +6,8 @@ permalink: /kb/095/Q95204/
 
 ## Q95204: MS-DOS 6.x ANSI.SYS Turns Off Menu Colors
 
+{% raw %}
+
 	Article: Q95204
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -46,3 +48,5 @@ permalink: /kb/095/Q95204/
 	
 	=============================================================================
 	
+
+{% endraw %}

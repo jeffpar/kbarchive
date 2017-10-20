@@ -6,6 +6,8 @@ permalink: /kb/092/Q92349/
 
 ## Q92349: PRB: Resolving &quot;Structural CDX File Not Found&quot; Error
 
+{% raw %}
+
 	Article: Q92349
 	Product(s): Microsoft FoxPro
 	Version(s): 2.00 2.50 2.50a | 2.50 2.50a 3.0
@@ -83,3 +85,5 @@ permalink: /kb/092/Q92349/
 	
 	=============================================================================
 	
+
+{% endraw %}

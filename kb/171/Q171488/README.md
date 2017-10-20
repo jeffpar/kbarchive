@@ -6,6 +6,8 @@ permalink: /kb/171/Q171488/
 
 ## Q171488: FIX: Val Function Recognizes System Decimal Symbol
 
+{% raw %}
+
 	Article: Q171488
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -111,3 +113,5 @@ permalink: /kb/171/Q171488/
 	
 	=============================================================================
 	
+
+{% endraw %}

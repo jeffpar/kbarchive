@@ -6,6 +6,8 @@ permalink: /kb/061/Q61501/
 
 ## Q61501: Reference to Table 10.4 in &quot;Programming in BASIC&quot; Incorrect
 
+{% raw %}
+
 	Article: Q61501
 	Product(s): See article
 	Version(s): 4.50
@@ -29,3 +31,5 @@ permalink: /kb/061/Q61501/
 	
 	This information applies to Microsoft QuickBASIC version 4.50 for
 	MS-DOS.
+
+{% endraw %}

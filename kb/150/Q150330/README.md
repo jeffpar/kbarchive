@@ -6,6 +6,8 @@ permalink: /kb/150/Q150330/
 
 ## Q150330: CD-ROM Extras DMF Diskettes Folder (Directory) Listing
 
+{% raw %}
+
 	Article: Q150330
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -405,3 +407,5 @@ permalink: /kb/150/Q150330/
 	
 	=============================================================================
 	
+
+{% endraw %}

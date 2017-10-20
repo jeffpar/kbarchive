@@ -6,6 +6,8 @@ permalink: /kb/138/Q138832/
 
 ## Q138832: How to Enable SNA Server IPX/SPX Clients to Use SPXII
 
+{% raw %}
+
 	Article: Q138832
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -95,3 +97,5 @@ permalink: /kb/138/Q138832/
 	
 	=============================================================================
 	
+
+{% endraw %}

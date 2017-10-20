@@ -6,6 +6,8 @@ permalink: /kb/177/Q177060/
 
 ## Q177060: Error Message: Cannot Find File Imaadp32.acm, Win_08.cab
 
+{% raw %}
+
 	Article: Q177060
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -88,3 +90,5 @@ permalink: /kb/177/Q177060/
 	
 	=============================================================================
 	
+
+{% endraw %}

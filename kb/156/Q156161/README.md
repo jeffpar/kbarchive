@@ -6,6 +6,8 @@ permalink: /kb/156/Q156161/
 
 ## Q156161: PPT7: How To Print Shadowed Text to PCL Printers
 
+{% raw %}
+
 	Article: Q156161
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -102,3 +104,5 @@ permalink: /kb/156/Q156161/
 	
 	=============================================================================
 	
+
+{% endraw %}

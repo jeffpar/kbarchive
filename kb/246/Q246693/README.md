@@ -6,6 +6,8 @@ permalink: /kb/246/Q246693/
 
 ## Q246693: HOWTO: Get Document Statistics from Word via OLE Automation
 
+{% raw %}
+
 	Article: Q246693
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2000,3.0,3.0b,5.0,5.0a,6.0
@@ -90,3 +92,5 @@ permalink: /kb/246/Q246693/
 	
 	=============================================================================
 	
+
+{% endraw %}

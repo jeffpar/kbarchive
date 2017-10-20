@@ -6,6 +6,8 @@ permalink: /kb/191/Q191418/
 
 ## Q191418: Arcs Print Incorrectly with EMF on PCL Printers
 
+{% raw %}
+
 	Article: Q191418
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -55,3 +57,5 @@ permalink: /kb/191/Q191418/
 	
 	=============================================================================
 	
+
+{% endraw %}

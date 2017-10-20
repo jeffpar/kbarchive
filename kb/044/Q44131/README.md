@@ -6,6 +6,8 @@ permalink: /kb/044/Q44131/
 
 ## Q44131: Specifying a Path in an NMAKE Inference Rule
 
+{% raw %}
+
 	Article: Q44131
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/044/Q44131/
 	
 	=============================================================================
 	
+
+{% endraw %}

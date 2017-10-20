@@ -6,6 +6,8 @@ permalink: /kb/174/Q174581/
 
 ## Q174581: Double-Clicking MSPress Welcome Icon Returns Error Message
 
+{% raw %}
+
 	Article: Q174581
 	Product(s): Microsoft Press
 	Version(s): 
@@ -96,3 +98,5 @@ permalink: /kb/174/Q174581/
 	
 	=============================================================================
 	
+
+{% endraw %}

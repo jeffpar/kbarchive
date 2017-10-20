@@ -6,6 +6,8 @@ permalink: /kb/138/Q138614/
 
 ## Q138614: Description of Foxpro.int Table
 
+{% raw %}
+
 	Article: Q138614
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/138/Q138614/
 	
 	=============================================================================
 	
+
+{% endraw %}

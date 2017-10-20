@@ -6,6 +6,8 @@ permalink: /kb/058/Q58680/
 
 ## Q58680: C and QC Now Allow Large Unsigned Long Constants in Decimal
 
+{% raw %}
+
 	Article: Q58680
 	Product(s): See article
 	Version(s): 6.00
@@ -21,3 +23,5 @@ permalink: /kb/058/Q58680/
 	Microsoft C Version 6.00 and QuickC Version 2.50 allow unsigned long
 	variables larger than MAX_LONG to be initialized using decimal
 	constants. This is an ANSI-mandated change.
+
+{% endraw %}

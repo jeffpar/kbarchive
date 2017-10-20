@@ -6,6 +6,8 @@ permalink: /kb/168/Q168709/
 
 ## Q168709: ConfirmHardware In an Unattend.txt File Appears Not to Work
 
+{% raw %}
+
 	Article: Q168709
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -93,3 +95,5 @@ permalink: /kb/168/Q168709/
 	
 	=============================================================================
 	
+
+{% endraw %}

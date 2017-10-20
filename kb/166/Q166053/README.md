@@ -6,6 +6,8 @@ permalink: /kb/166/Q166053/
 
 ## Q166053: WV: Document Menu Unavailable in Word Viewer
 
+{% raw %}
+
 	Article: Q166053
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -89,3 +91,5 @@ permalink: /kb/166/Q166053/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/284/Q284112/
 
 ## Q284112: File Names Not Listed When You Query with Descending Sorted Rank
 
+{% raw %}
+
 	Article: Q284112
 	Product(s): Internet Information Server
 	Version(s): 2.0,2000
@@ -66,3 +68,5 @@ permalink: /kb/284/Q284112/
 	
 	=============================================================================
 	
+
+{% endraw %}

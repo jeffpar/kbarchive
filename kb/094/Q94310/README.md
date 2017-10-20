@@ -6,6 +6,8 @@ permalink: /kb/094/Q94310/
 
 ## Q94310: WFWG File Manager Shows Multiple WIN.INI Files
 
+{% raw %}
+
 	Article: Q94310
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -80,3 +82,5 @@ permalink: /kb/094/Q94310/
 	
 	=============================================================================
 	
+
+{% endraw %}

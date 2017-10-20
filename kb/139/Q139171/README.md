@@ -6,6 +6,8 @@ permalink: /kb/139/Q139171/
 
 ## Q139171: Compaq System Hangs with Incomplete IRP Running Cpqarray
 
+{% raw %}
+
 	Article: Q139171
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -57,3 +59,5 @@ permalink: /kb/139/Q139171/
 	
 	=============================================================================
 	
+
+{% endraw %}

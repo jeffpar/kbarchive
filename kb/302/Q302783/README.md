@@ -6,6 +6,8 @@ permalink: /kb/302/Q302783/
 
 ## Q302783: Launching Internet Explorer Does Not Launch MSN Explorer Dialer
 
+{% raw %}
+
 	Article: Q302783
 	Product(s): The Microsoft Network
 	Version(s): 6.0
@@ -75,3 +77,5 @@ permalink: /kb/302/Q302783/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130349/
 
 ## Q130349: PRB: Cannot Change ActivePage of a PageFrame with a Hot Key
 
+{% raw %}
+
 	Article: Q130349
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -86,3 +88,5 @@ permalink: /kb/130/Q130349/
 	
 	=============================================================================
 	
+
+{% endraw %}

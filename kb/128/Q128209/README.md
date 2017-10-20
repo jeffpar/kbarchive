@@ -6,6 +6,8 @@ permalink: /kb/128/Q128209/
 
 ## Q128209: Description of Design Mode in Screens, Reports, &amp; Labels
 
+{% raw %}
+
 	Article: Q128209
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -65,3 +67,5 @@ permalink: /kb/128/Q128209/
 	
 	=============================================================================
 	
+
+{% endraw %}

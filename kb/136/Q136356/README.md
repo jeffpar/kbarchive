@@ -6,6 +6,8 @@ permalink: /kb/136/Q136356/
 
 ## Q136356: Pressing F4 and Dragging Mouse Causes Screen Corruption
 
+{% raw %}
+
 	Article: Q136356
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -56,3 +58,5 @@ permalink: /kb/136/Q136356/
 	
 	=============================================================================
 	
+
+{% endraw %}

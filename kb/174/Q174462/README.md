@@ -6,6 +6,8 @@ permalink: /kb/174/Q174462/
 
 ## Q174462: SMS: Run Command On Workstation Job May Not Go Active
 
+{% raw %}
+
 	Article: Q174462
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -53,3 +55,5 @@ permalink: /kb/174/Q174462/
 	
 	=============================================================================
 	
+
+{% endraw %}

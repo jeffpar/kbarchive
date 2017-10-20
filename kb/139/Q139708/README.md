@@ -6,6 +6,8 @@ permalink: /kb/139/Q139708/
 
 ## Q139708: Compression Agent Resets to 5 Percent Complete
 
+{% raw %}
+
 	Article: Q139708
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/139/Q139708/
 	
 	=============================================================================
 	
+
+{% endraw %}

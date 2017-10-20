@@ -6,6 +6,8 @@ permalink: /kb/094/Q94148/
 
 ## Q94148: HPPCL5E: Printer Intellifont Fonts Are Not Listed
 
+{% raw %}
+
 	Article: Q94148
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -44,3 +46,5 @@ permalink: /kb/094/Q94148/
 	
 	=============================================================================
 	
+
+{% endraw %}

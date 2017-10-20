@@ -6,6 +6,8 @@ permalink: /kb/029/Q29519/
 
 ## Q29519: How to Write a Driver for a Custom Hardware Device
 
+{% raw %}
+
 	Article: Q29519
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -133,3 +135,5 @@ permalink: /kb/029/Q29519/
 	
 	=============================================================================
 	
+
+{% endraw %}

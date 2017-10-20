@@ -6,6 +6,8 @@ permalink: /kb/223/Q223398/
 
 ## Q223398: Warning Error ID:101 Changes Text in the Japanese Version of IIS
 
+{% raw %}
+
 	Article: Q223398
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0
@@ -95,3 +97,5 @@ permalink: /kb/223/Q223398/
 	
 	=============================================================================
 	
+
+{% endraw %}

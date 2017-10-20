@@ -6,6 +6,8 @@ permalink: /kb/140/Q140826/
 
 ## Q140826: TN3270 Server Rejects First Data RU After Host's CLEAR Message
 
+{% raw %}
+
 	Article: Q140826
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11
@@ -172,3 +174,5 @@ permalink: /kb/140/Q140826/
 	
 	=============================================================================
 	
+
+{% endraw %}

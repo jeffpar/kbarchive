@@ -6,6 +6,8 @@ permalink: /kb/156/Q156977/
 
 ## Q156977: PRB: CRecordset Does Not Skip Deleted Records
 
+{% raw %}
+
 	Article: Q156977
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2 4.2b 5.0 6.0
@@ -92,3 +94,5 @@ permalink: /kb/156/Q156977/
 	
 	=============================================================================
 	
+
+{% endraw %}

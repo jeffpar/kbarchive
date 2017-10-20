@@ -6,6 +6,8 @@ permalink: /kb/241/Q241289/
 
 ## Q241289: How to Change the Amount of Memory Used During an Installation
 
+{% raw %}
+
 	Article: Q241289
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/241/Q241289/
 	
 	=============================================================================
 	
+
+{% endraw %}

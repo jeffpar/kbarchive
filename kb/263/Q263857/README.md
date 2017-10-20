@@ -6,6 +6,8 @@ permalink: /kb/263/Q263857/
 
 ## Q263857: Items in the ISM Are Missing or Appear Dimmed on Windows
 
+{% raw %}
+
 	Article: Q263857
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -90,3 +92,5 @@ permalink: /kb/263/Q263857/
 	
 	=============================================================================
 	
+
+{% endraw %}

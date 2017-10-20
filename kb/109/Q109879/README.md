@@ -6,6 +6,8 @@ permalink: /kb/109/Q109879/
 
 ## Q109879: BUG: Inline Comment with &quot;!&quot; Can Act Like a C String
 
+{% raw %}
+
 	Article: Q109879
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -63,3 +65,5 @@ permalink: /kb/109/Q109879/
 	
 	=============================================================================
 	
+
+{% endraw %}

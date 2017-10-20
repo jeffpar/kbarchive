@@ -6,6 +6,8 @@ permalink: /kb/193/Q193907/
 
 ## Q193907: Windows NT 4.0 SP4 Supports IGMP Version 2
 
+{% raw %}
+
 	Article: Q193907
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4
@@ -123,3 +125,5 @@ permalink: /kb/193/Q193907/
 	
 	=============================================================================
 	
+
+{% endraw %}

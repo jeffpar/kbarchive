@@ -6,6 +6,8 @@ permalink: /kb/205/Q205533/
 
 ## Q205533: XCON: Exchange Server MTA in Large Site May Run Out of ECBs
 
+{% raw %}
+
 	Article: Q205533
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -114,3 +116,5 @@ permalink: /kb/205/Q205533/
 	
 	=============================================================================
 	
+
+{% endraw %}

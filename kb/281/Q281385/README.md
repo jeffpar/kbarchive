@@ -6,6 +6,8 @@ permalink: /kb/281/Q281385/
 
 ## Q281385: PRB: VFP May Not Display All Fields of a dBASE Table
 
+{% raw %}
+
 	Article: Q281385
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0,7.0
@@ -76,3 +78,5 @@ permalink: /kb/281/Q281385/
 	
 	=============================================================================
 	
+
+{% endraw %}

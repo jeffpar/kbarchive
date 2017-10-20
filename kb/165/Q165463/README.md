@@ -6,6 +6,8 @@ permalink: /kb/165/Q165463/
 
 ## Q165463: WINS Admin Shows Huge Version ID for WINS Records
 
+{% raw %}
+
 	Article: Q165463
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -68,3 +70,5 @@ permalink: /kb/165/Q165463/
 	
 	=============================================================================
 	
+
+{% endraw %}

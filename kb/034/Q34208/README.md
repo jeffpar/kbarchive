@@ -6,6 +6,8 @@ permalink: /kb/034/Q34208/
 
 ## Q34208: LINK /OV&#91;ERLAYINTERRUPT&#93; Option, Valid Interrupt Numbers
 
+{% raw %}
+
 	Article: Q34208
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.x,4.x,5.x
@@ -47,3 +49,5 @@ permalink: /kb/034/Q34208/
 	
 	=============================================================================
 	
+
+{% endraw %}

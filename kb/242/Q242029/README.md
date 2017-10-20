@@ -6,6 +6,8 @@ permalink: /kb/242/Q242029/
 
 ## Q242029: MS Exchange Server 5.5 Administrator's Companion Corrections
 
+{% raw %}
+
 	Article: Q242029
 	Product(s): Microsoft Press
 	Version(s): 
@@ -123,3 +125,5 @@ permalink: /kb/242/Q242029/
 	
 	=============================================================================
 	
+
+{% endraw %}

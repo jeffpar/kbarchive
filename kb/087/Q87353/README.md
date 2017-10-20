@@ -6,6 +6,8 @@ permalink: /kb/087/Q87353/
 
 ## Q87353: Using Publisher's PowerPak with Windows 3.1
 
+{% raw %}
+
 	Article: Q87353
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -129,3 +131,5 @@ permalink: /kb/087/Q87353/
 	
 	=============================================================================
 	
+
+{% endraw %}

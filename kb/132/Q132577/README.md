@@ -6,6 +6,8 @@ permalink: /kb/132/Q132577/
 
 ## Q132577: Setup Program for Grammer Game Warns User of Unknown Shell
 
+{% raw %}
+
 	Article: Q132577
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -56,3 +58,5 @@ permalink: /kb/132/Q132577/
 	
 	=============================================================================
 	
+
+{% endraw %}

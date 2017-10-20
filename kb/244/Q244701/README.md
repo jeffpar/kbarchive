@@ -6,6 +6,8 @@ permalink: /kb/244/Q244701/
 
 ## Q244701: XADM: How to Install Internet Mail Service Connector on Cluster
 
+{% raw %}
+
 	Article: Q244701
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -61,3 +63,5 @@ permalink: /kb/244/Q244701/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/260/Q260868/
 
 ## Q260868: Small Business Solutions for Networking Comments and Corrections
 
+{% raw %}
+
 	Article: Q260868
 	Product(s): Microsoft Press
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/260/Q260868/
 	
 	=============================================================================
 	
+
+{% endraw %}

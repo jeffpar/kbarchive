@@ -6,6 +6,8 @@ permalink: /kb/168/Q168092/
 
 ## Q168092: XCLN: Deleted PAB Entries Remain in PDLs
 
+{% raw %}
+
 	Article: Q168092
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -49,3 +51,5 @@ permalink: /kb/168/Q168092/
 	
 	=============================================================================
 	
+
+{% endraw %}

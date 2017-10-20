@@ -6,6 +6,8 @@ permalink: /kb/245/Q245228/
 
 ## Q245228: SMS: Liccli95.exe May Hang Windows 95/98 Clients
 
+{% raw %}
+
 	Article: Q245228
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -62,3 +64,5 @@ permalink: /kb/245/Q245228/
 	
 	=============================================================================
 	
+
+{% endraw %}

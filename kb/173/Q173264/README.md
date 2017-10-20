@@ -6,6 +6,8 @@ permalink: /kb/173/Q173264/
 
 ## Q173264: HOWTO: Internet Transfer Control Using Username and Password
 
+{% raw %}
+
 	Article: Q173264
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -135,3 +137,5 @@ permalink: /kb/173/Q173264/
 	
 	=============================================================================
 	
+
+{% endraw %}

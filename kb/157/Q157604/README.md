@@ -6,6 +6,8 @@ permalink: /kb/157/Q157604/
 
 ## Q157604: Golf: Multiplayer Troubleshooting
 
+{% raw %}
+
 	Article: Q157604
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:3.0
@@ -122,3 +124,5 @@ permalink: /kb/157/Q157604/
 	
 	=============================================================================
 	
+
+{% endraw %}

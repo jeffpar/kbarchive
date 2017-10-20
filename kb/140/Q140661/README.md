@@ -6,6 +6,8 @@ permalink: /kb/140/Q140661/
 
 ## Q140661: Encarta 97 Deluxe: CD swapping problem with NetWare/Win 3.x
 
+{% raw %}
+
 	Article: Q140661
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/140/Q140661/
 	
 	=============================================================================
 	
+
+{% endraw %}

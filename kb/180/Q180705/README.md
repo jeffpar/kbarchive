@@ -6,6 +6,8 @@ permalink: /kb/180/Q180705/
 
 ## Q180705: APPC DISPLAY Call May Return AP_COMM_SUBSYSTEM_ABENDED.
 
+{% raw %}
+
 	Article: Q180705
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -82,3 +84,5 @@ permalink: /kb/180/Q180705/
 	
 	=============================================================================
 	
+
+{% endraw %}

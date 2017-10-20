@@ -6,6 +6,8 @@ permalink: /kb/241/Q241324/
 
 ## Q241324: XFOR: DocErr: Filter Rules Only Support EQ and NE Operators
 
+{% raw %}
+
 	Article: Q241324
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -85,3 +87,5 @@ permalink: /kb/241/Q241324/
 	
 	=============================================================================
 	
+
+{% endraw %}

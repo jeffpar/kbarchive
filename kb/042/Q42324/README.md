@@ -6,6 +6,8 @@ permalink: /kb/042/Q42324/
 
 ## Q42324: Period in Name of NAMED COMMON Can Erase BLANK COMMON Values
 
+{% raw %}
+
 	Article: Q42324
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -77,3 +79,5 @@ permalink: /kb/042/Q42324/
 	To prevent this problem, and to follow a good general rule, use only a
 	period in a name when accessing a field of a variable that is
 	DIMensioned as a user-defined TYPE.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/058/Q58939/
 
 ## Q58939: Mac Form: Scrolling in FatBits When Making a Custom Form Icon
 
+{% raw %}
+
 	Article: Q58939
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -36,3 +38,5 @@ permalink: /kb/058/Q58939/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178527/
 
 ## Q178527: PRB: VB5 SP2 and SP3 Give Incorrect Floating Point Results
 
+{% raw %}
+
 	Article: Q178527
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -104,3 +106,5 @@ permalink: /kb/178/Q178527/
 	
 	=============================================================================
 	
+
+{% endraw %}

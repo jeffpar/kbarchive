@@ -6,6 +6,8 @@ permalink: /kb/094/Q94414/
 
 ## Q94414: OLD_DOS.x Directory Created Even if You Can't Uninstall
 
+{% raw %}
+
 	Article: Q94414
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -46,3 +48,5 @@ permalink: /kb/094/Q94414/
 	
 	=============================================================================
 	
+
+{% endraw %}

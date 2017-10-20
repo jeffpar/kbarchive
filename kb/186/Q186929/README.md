@@ -6,6 +6,8 @@ permalink: /kb/186/Q186929/
 
 ## Q186929: LowercaseFiles Registry Key Has Added Functionality
 
+{% raw %}
+
 	Article: Q186929
 	Product(s): Internet Information Server
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/186/Q186929/
 	
 	=============================================================================
 	
+
+{% endraw %}

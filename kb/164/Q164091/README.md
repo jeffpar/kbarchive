@@ -6,6 +6,8 @@ permalink: /kb/164/Q164091/
 
 ## Q164091: FTP Permissions for File GET and PUT
 
+{% raw %}
+
 	Article: Q164091
 	Product(s): Internet Information Server
 	Version(s): 2.0
@@ -78,3 +80,5 @@ permalink: /kb/164/Q164091/
 	
 	=============================================================================
 	
+
+{% endraw %}

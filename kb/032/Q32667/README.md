@@ -6,6 +6,8 @@ permalink: /kb/032/Q32667/
 
 ## Q32667: INFO: Font Metrics and the Use of Negative lfHeight
 
+{% raw %}
+
 	Article: Q32667
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -170,3 +172,5 @@ permalink: /kb/032/Q32667/
 	
 	=============================================================================
 	
+
+{% endraw %}

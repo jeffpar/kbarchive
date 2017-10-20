@@ -6,6 +6,8 @@ permalink: /kb/186/Q186172/
 
 ## Q186172: XCON: POP3 RETR and LIST Command Behavior Reversed
 
+{% raw %}
+
 	Article: Q186172
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -56,3 +58,5 @@ permalink: /kb/186/Q186172/
 	
 	=============================================================================
 	
+
+{% endraw %}

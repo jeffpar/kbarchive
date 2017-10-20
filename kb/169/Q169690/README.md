@@ -6,6 +6,8 @@ permalink: /kb/169/Q169690/
 
 ## Q169690: XCON: MTA Terminates with 2191, 2198, 2197, and 9405 Events
 
+{% raw %}
+
 	Article: Q169690
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,5.0,5.0 SP1,5.5
@@ -102,3 +104,5 @@ permalink: /kb/169/Q169690/
 	
 	=============================================================================
 	
+
+{% endraw %}

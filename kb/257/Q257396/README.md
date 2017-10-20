@@ -6,6 +6,8 @@ permalink: /kb/257/Q257396/
 
 ## Q257396: XFOR: Read Receipts Between Exchange Servers in Different Orgs
 
+{% raw %}
+
 	Article: Q257396
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -130,3 +132,5 @@ permalink: /kb/257/Q257396/
 	
 	=============================================================================
 	
+
+{% endraw %}

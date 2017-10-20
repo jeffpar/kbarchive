@@ -6,6 +6,8 @@ permalink: /kb/232/Q232240/
 
 ## Q232240: SMS: Specifying Long File Name for Status MIF Causes Error
 
+{% raw %}
+
 	Article: Q232240
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0,2.0; winnt:2.0
@@ -63,3 +65,5 @@ permalink: /kb/232/Q232240/
 	
 	=============================================================================
 	
+
+{% endraw %}

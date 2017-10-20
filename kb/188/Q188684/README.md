@@ -6,6 +6,8 @@ permalink: /kb/188/Q188684/
 
 ## Q188684: XADM: Units of Information Store Delivery Time PerfMon Counters
 
+{% raw %}
+
 	Article: Q188684
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -36,3 +38,5 @@ permalink: /kb/188/Q188684/
 	
 	=============================================================================
 	
+
+{% endraw %}

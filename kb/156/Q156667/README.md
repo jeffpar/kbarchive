@@ -6,6 +6,8 @@ permalink: /kb/156/Q156667/
 
 ## Q156667: INFO: Limitations of View Designer vs. CREATE SQL VIEW Command
 
+{% raw %}
+
 	Article: Q156667
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/156/Q156667/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/318/Q318982/
 
 ## Q318982: FIX:Fatal Exception Activating Properties Window w/ MSAA Watcher
 
+{% raw %}
+
 	Article: Q318982
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -92,3 +94,5 @@ permalink: /kb/318/Q318982/
 	
 	=============================================================================
 	
+
+{% endraw %}

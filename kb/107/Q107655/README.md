@@ -6,6 +6,8 @@ permalink: /kb/107/Q107655/
 
 ## Q107655: Writer: Borders Don't Print on PostScript Printer
 
+{% raw %}
+
 	Article: Q107655
 	Product(s): Microsoft Home Kids Products
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/107/Q107655/
 	
 	=============================================================================
 	
+
+{% endraw %}

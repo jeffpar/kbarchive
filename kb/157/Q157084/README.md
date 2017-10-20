@@ -6,6 +6,8 @@ permalink: /kb/157/Q157084/
 
 ## Q157084: WD97: Text Converters Installed in a Typical Setup
 
+{% raw %}
+
 	Article: Q157084
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -105,3 +107,5 @@ permalink: /kb/157/Q157084/
 	
 	=============================================================================
 	
+
+{% endraw %}

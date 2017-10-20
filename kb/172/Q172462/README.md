@@ -6,6 +6,8 @@ permalink: /kb/172/Q172462/
 
 ## Q172462: RPC Failure on Heavily Loaded Print Server
 
+{% raw %}
+
 	Article: Q172462
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -70,3 +72,5 @@ permalink: /kb/172/Q172462/
 	
 	=============================================================================
 	
+
+{% endraw %}

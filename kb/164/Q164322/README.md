@@ -6,6 +6,8 @@ permalink: /kb/164/Q164322/
 
 ## Q164322: Memory Leak in NetQueryDisplayInformation API
 
+{% raw %}
+
 	Article: Q164322
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -50,3 +52,5 @@ permalink: /kb/164/Q164322/
 	
 	=============================================================================
 	
+
+{% endraw %}

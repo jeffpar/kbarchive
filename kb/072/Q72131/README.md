@@ -6,6 +6,8 @@ permalink: /kb/072/Q72131/
 
 ## Q72131: Installing Individual Windows 3.0 Resource Kit Utilities
 
+{% raw %}
+
 	Article: Q72131
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -83,3 +85,5 @@ permalink: /kb/072/Q72131/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140861/
 
 ## Q140861: FIX: Default Value Not Evaluated Properly Using Stored Procs
 
+{% raw %}
+
 	Article: Q140861
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -108,3 +110,5 @@ permalink: /kb/140/Q140861/
 	
 	=============================================================================
 	
+
+{% endraw %}

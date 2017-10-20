@@ -6,6 +6,8 @@ permalink: /kb/163/Q163141/
 
 ## Q163141: Change of Printer IP Address Not Recognized by Spooler
 
+{% raw %}
+
 	Article: Q163141
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -69,3 +71,5 @@ permalink: /kb/163/Q163141/
 	
 	=============================================================================
 	
+
+{% endraw %}

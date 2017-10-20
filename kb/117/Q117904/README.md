@@ -6,6 +6,8 @@ permalink: /kb/117/Q117904/
 
 ## Q117904: DOCERR: F2400 : &quot;&lt;name&gt; : COMMON not defined&quot;
 
+{% raw %}
+
 	Article: Q117904
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a,4.0
@@ -59,3 +61,5 @@ permalink: /kb/117/Q117904/
 	
 	=============================================================================
 	
+
+{% endraw %}

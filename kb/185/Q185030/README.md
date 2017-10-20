@@ -6,6 +6,8 @@ permalink: /kb/185/Q185030/
 
 ## Q185030: WD97: ODMA: How Word 97 Works with DOCS Open (PC DOCS)
 
+{% raw %}
+
 	Article: Q185030
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -313,3 +315,5 @@ permalink: /kb/185/Q185030/
 	
 	=============================================================================
 	
+
+{% endraw %}

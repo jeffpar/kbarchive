@@ -6,6 +6,8 @@ permalink: /kb/095/Q95879/
 
 ## Q95879: VINES Err Msg: BAN: Unable to Read 'PCCONFIG.DB' with WFWG
 
+{% raw %}
+
 	Article: Q95879
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/095/Q95879/
 	
 	=============================================================================
 	
+
+{% endraw %}

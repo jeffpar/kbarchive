@@ -6,6 +6,8 @@ permalink: /kb/232/Q232512/
 
 ## Q232512: TCP/IP may Retransmit Packets Prematurely
 
+{% raw %}
+
 	Article: Q232512
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -106,3 +108,5 @@ permalink: /kb/232/Q232512/
 	
 	=============================================================================
 	
+
+{% endraw %}

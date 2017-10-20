@@ -6,6 +6,8 @@ permalink: /kb/257/Q257626/
 
 ## Q257626: Non-Paged Pool Leak Running Internet Explorer 5
 
+{% raw %}
+
 	Article: Q257626
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:5; winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/257/Q257626/
 	
 	=============================================================================
 	
+
+{% endraw %}

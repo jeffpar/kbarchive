@@ -6,6 +6,8 @@ permalink: /kb/224/Q224298/
 
 ## Q224298: HTML Page Sent to a Browser May Be Truncated
 
+{% raw %}
+
 	Article: Q224298
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -84,3 +86,5 @@ permalink: /kb/224/Q224298/
 	
 	=============================================================================
 	
+
+{% endraw %}

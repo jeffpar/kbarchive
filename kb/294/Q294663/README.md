@@ -6,6 +6,8 @@ permalink: /kb/294/Q294663/
 
 ## Q294663: Error Message: MSN Failed to Load Folcom.dll
 
+{% raw %}
+
 	Article: Q294663
 	Product(s): The Microsoft Network
 	Version(s): 6.0
@@ -101,3 +103,5 @@ permalink: /kb/294/Q294663/
 	
 	=============================================================================
 	
+
+{% endraw %}

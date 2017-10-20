@@ -6,6 +6,8 @@ permalink: /kb/172/Q172455/
 
 ## Q172455: ExitFox.exe Overcomes &quot;Cannot Quit Visual FoxPro&quot; Error
 
+{% raw %}
+
 	Article: Q172455
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -176,3 +178,5 @@ permalink: /kb/172/Q172455/
 	
 	=============================================================================
 	
+
+{% endraw %}

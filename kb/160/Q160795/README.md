@@ -6,6 +6,8 @@ permalink: /kb/160/Q160795/
 
 ## Q160795: Incorrect Application Jumps to Foreground
 
+{% raw %}
+
 	Article: Q160795
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.2c
@@ -45,3 +47,5 @@ permalink: /kb/160/Q160795/
 	
 	=============================================================================
 	
+
+{% endraw %}

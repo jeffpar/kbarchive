@@ -6,6 +6,8 @@ permalink: /kb/198/Q198973/
 
 ## Q198973: Bookshelf 99: Cannot Search for Content from the Start Menu
 
+{% raw %}
+
 	Article: Q198973
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -51,3 +53,5 @@ permalink: /kb/198/Q198973/
 	
 	=============================================================================
 	
+
+{% endraw %}

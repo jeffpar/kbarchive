@@ -6,6 +6,8 @@ permalink: /kb/175/Q175567/
 
 ## Q175567: XCLN: Upgrading to Outlook 8.03 Does not Remove Exchange Icons
 
+{% raw %}
+
 	Article: Q175567
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:8.03
@@ -70,3 +72,5 @@ permalink: /kb/175/Q175567/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107850/
 
 ## Q107850: VB CDK Cannot Access the Properties of the VB System Objects
 
+{% raw %}
+
 	Article: Q107850
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -63,3 +65,5 @@ permalink: /kb/107/Q107850/
 	
 	=============================================================================
 	
+
+{% endraw %}

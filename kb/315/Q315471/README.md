@@ -6,6 +6,8 @@ permalink: /kb/315/Q315471/
 
 ## Q315471: HOW TO: Perform Secure Internet Messaging over HTTPS
 
+{% raw %}
+
 	Article: Q315471
 	Product(s): Internet Information Server
 	Version(s): 
@@ -214,3 +216,5 @@ permalink: /kb/315/Q315471/
 	
 	=============================================================================
 	
+
+{% endraw %}

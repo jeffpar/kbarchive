@@ -6,6 +6,8 @@ permalink: /kb/245/Q245128/
 
 ## Q245128: Restrict Remote Access to Event Viewer on Windows NT Server.
 
+{% raw %}
+
 	Article: Q245128
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -93,3 +95,5 @@ permalink: /kb/245/Q245128/
 	
 	=============================================================================
 	
+
+{% endraw %}

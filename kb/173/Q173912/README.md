@@ -6,6 +6,8 @@ permalink: /kb/173/Q173912/
 
 ## Q173912: XCLN: Exchange Generates Conflict Messages for Same PF Replica
 
+{% raw %}
+
 	Article: Q173912
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -44,3 +46,5 @@ permalink: /kb/173/Q173912/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135774/
 
 ## Q135774: Performance Monitor Counters Produce Unlikely Results
 
+{% raw %}
+
 	Article: Q135774
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/135/Q135774/
 	
 	=============================================================================
 	
+
+{% endraw %}

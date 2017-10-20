@@ -6,6 +6,8 @@ permalink: /kb/178/Q178402/
 
 ## Q178402: XCLN: Determining Whether Outlook 8.03 is Exportable or NA Only
 
+{% raw %}
+
 	Article: Q178402
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,8.03
@@ -61,3 +63,5 @@ permalink: /kb/178/Q178402/
 	
 	=============================================================================
 	
+
+{% endraw %}

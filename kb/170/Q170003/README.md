@@ -6,6 +6,8 @@ permalink: /kb/170/Q170003/
 
 ## Q170003: XADM: Incoming Message Size Limit Does Not Work
 
+{% raw %}
+
 	Article: Q170003
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -42,3 +44,5 @@ permalink: /kb/170/Q170003/
 	
 	=============================================================================
 	
+
+{% endraw %}

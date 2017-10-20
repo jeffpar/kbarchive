@@ -6,6 +6,8 @@ permalink: /kb/138/Q138818/
 
 ## Q138818: BUG: VB 4.0 32-bit Quits When Deleting a Menu at Design Time
 
+{% raw %}
+
 	Article: Q138818
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -76,3 +78,5 @@ permalink: /kb/138/Q138818/
 	
 	=============================================================================
 	
+
+{% endraw %}

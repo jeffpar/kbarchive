@@ -6,6 +6,8 @@ permalink: /kb/193/Q193206/
 
 ## Q193206: Acquiring SNMP Info For OSPF in RRAS Hangs
 
+{% raw %}
+
 	Article: Q193206
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:4.0,4.0a; WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/193/Q193206/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164887/
 
 ## Q164887: SMS: Upgrading Windows NT with PCM Service May Constantly Repeat
 
+{% raw %}
+
 	Article: Q164887
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -59,3 +61,5 @@ permalink: /kb/164/Q164887/
 	
 	=============================================================================
 	
+
+{% endraw %}

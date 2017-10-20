@@ -6,6 +6,8 @@ permalink: /kb/299/Q299482/
 
 ## Q299482: Index Server Interprets Three-Digit Numbers as Years
 
+{% raw %}
+
 	Article: Q299482
 	Product(s): Internet Information Server
 	Version(s): 2.0,3.0
@@ -84,3 +86,5 @@ permalink: /kb/299/Q299482/
 	
 	=============================================================================
 	
+
+{% endraw %}

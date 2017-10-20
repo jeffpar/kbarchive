@@ -6,6 +6,8 @@ permalink: /kb/128/Q128171/
 
 ## Q128171: PC MAPI: MAPI Messages w/ Space in Message Type Fail to Print
 
+{% raw %}
+
 	Article: Q128171
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -69,3 +71,5 @@ permalink: /kb/128/Q128171/
 	
 	=============================================================================
 	
+
+{% endraw %}

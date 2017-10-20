@@ -6,6 +6,8 @@ permalink: /kb/253/Q253298/
 
 ## Q253298: PRB: HTML Template Items' Names Changed in WebClass Designer
 
+{% raw %}
+
 	Article: Q253298
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -90,3 +92,5 @@ permalink: /kb/253/Q253298/
 	
 	=============================================================================
 	
+
+{% endraw %}

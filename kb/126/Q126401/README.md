@@ -6,6 +6,8 @@ permalink: /kb/126/Q126401/
 
 ## Q126401: Err Msg: &quot;Not Enough Server Storage is Available to Process...&quot;
 
+{% raw %}
+
 	Article: Q126401
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51,4.0
@@ -100,3 +102,5 @@ permalink: /kb/126/Q126401/
 	
 	=============================================================================
 	
+
+{% endraw %}

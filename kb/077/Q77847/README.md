@@ -6,6 +6,8 @@ permalink: /kb/077/Q77847/
 
 ## Q77847: MS-DOS 5.0 Setup Fails with Lightning Disk Cache 5.52
 
+{% raw %}
+
 	Article: Q77847
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -55,3 +57,5 @@ permalink: /kb/077/Q77847/
 	
 	=============================================================================
 	
+
+{% endraw %}

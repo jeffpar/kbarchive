@@ -6,6 +6,8 @@ permalink: /kb/181/Q181265/
 
 ## Q181265: HOWTO: Create ATL COM Objects
 
+{% raw %}
+
 	Article: Q181265
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,3.0,5.0,6.0
@@ -127,3 +129,5 @@ permalink: /kb/181/Q181265/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173546/
 
 ## Q173546: XADM: Find Recipient Does not Notify Administrator when Complete
 
+{% raw %}
+
 	Article: Q173546
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -53,3 +55,5 @@ permalink: /kb/173/Q173546/
 	
 	=============================================================================
 	
+
+{% endraw %}

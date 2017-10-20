@@ -6,6 +6,8 @@ permalink: /kb/208/Q208562/
 
 ## Q208562: BUG: VBCE Special Methods Do Not Appear in IntelliSense Help
 
+{% raw %}
+
 	Article: Q208562
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -77,3 +79,5 @@ permalink: /kb/208/Q208562/
 	
 	=============================================================================
 	
+
+{% endraw %}

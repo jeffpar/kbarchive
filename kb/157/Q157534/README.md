@@ -6,6 +6,8 @@ permalink: /kb/157/Q157534/
 
 ## Q157534: XCLN: Memory Valet Utility to Correct &quot;Out of Memory&quot; Errors
 
+{% raw %}
+
 	Article: Q157534
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -83,3 +85,5 @@ permalink: /kb/157/Q157534/
 	
 	=============================================================================
 	
+
+{% endraw %}

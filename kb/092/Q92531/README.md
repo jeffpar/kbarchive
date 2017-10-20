@@ -6,6 +6,8 @@ permalink: /kb/092/Q92531/
 
 ## Q92531: BUG: CreatePatternBrush() with Large Bitmap GP Fault
 
+{% raw %}
+
 	Article: Q92531
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -52,3 +54,5 @@ permalink: /kb/092/Q92531/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241292/
 
 ## Q241292: XADM: Collabra Migration Objects - File Attachments Not Visible
 
+{% raw %}
+
 	Article: Q241292
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -54,3 +56,5 @@ permalink: /kb/241/Q241292/
 	
 	=============================================================================
 	
+
+{% endraw %}

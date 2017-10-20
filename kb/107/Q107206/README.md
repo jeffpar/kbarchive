@@ -6,6 +6,8 @@ permalink: /kb/107/Q107206/
 
 ## Q107206: HIVEHDR.EXE Mentioned in Resource Kit
 
+{% raw %}
+
 	Article: Q107206
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.5,3.51
@@ -34,3 +36,5 @@ permalink: /kb/107/Q107206/
 	
 	=============================================================================
 	
+
+{% endraw %}

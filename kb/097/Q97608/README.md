@@ -6,6 +6,8 @@ permalink: /kb/097/Q97608/
 
 ## Q97608: MS-DOS 6 Err Msg: Too Many Block Devices
 
+{% raw %}
+
 	Article: Q97608
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; Win95:
@@ -195,3 +197,5 @@ permalink: /kb/097/Q97608/
 	
 	=============================================================================
 	
+
+{% endraw %}

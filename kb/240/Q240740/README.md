@@ -6,6 +6,8 @@ permalink: /kb/240/Q240740/
 
 ## Q240740: Overflow from NtGdiAddFontResourceW Returning Uninitialized Pool
 
+{% raw %}
+
 	Article: Q240740
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -104,3 +106,5 @@ permalink: /kb/240/Q240740/
 	
 	=============================================================================
 	
+
+{% endraw %}

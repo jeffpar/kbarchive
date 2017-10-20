@@ -6,6 +6,8 @@ permalink: /kb/174/Q174213/
 
 ## Q174213: BUG: Blank Window Appears Instead of Help File Contents
 
+{% raw %}
+
 	Article: Q174213
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -101,3 +103,5 @@ permalink: /kb/174/Q174213/
 	
 	=============================================================================
 	
+
+{% endraw %}

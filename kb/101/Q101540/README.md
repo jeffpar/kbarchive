@@ -6,6 +6,8 @@ permalink: /kb/101/Q101540/
 
 ## Q101540: PC WSPlus: Err Msg: Not a Valid File or Invalid Password
 
+{% raw %}
+
 	Article: Q101540
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -123,3 +125,5 @@ permalink: /kb/101/Q101540/
 	
 	=============================================================================
 	
+
+{% endraw %}

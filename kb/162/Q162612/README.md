@@ -6,6 +6,8 @@ permalink: /kb/162/Q162612/
 
 ## Q162612: PPT: Sample VB Code that Inserts Title Slide and Title Text
 
+{% raw %}
+
 	Article: Q162612
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -114,3 +116,5 @@ permalink: /kb/162/Q162612/
 	
 	=============================================================================
 	
+
+{% endraw %}

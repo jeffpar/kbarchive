@@ -6,6 +6,8 @@ permalink: /kb/112/Q112387/
 
 ## Q112387: INFO: How GDI Sends Data to the Printer
 
+{% raw %}
+
 	Article: Q112387
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -64,3 +66,5 @@ permalink: /kb/112/Q112387/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216978/
 
 ## Q216978: BUG: &quot;Invalid number&quot; When Inserting Decimals into UNIX Oracle
 
+{% raw %}
+
 	Article: Q216978
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.0,2.1,Build 2.573.2927,Build 2.573.3513,Build 2.573.3711
@@ -128,3 +130,5 @@ permalink: /kb/216/Q216978/
 	
 	=============================================================================
 	
+
+{% endraw %}

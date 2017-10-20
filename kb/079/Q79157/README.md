@@ -6,6 +6,8 @@ permalink: /kb/079/Q79157/
 
 ## Q79157: FIX: H2INC Doesn't Recognize /BATCH Command-Line Switch
 
+{% raw %}
+
 	Article: Q79157
 	Product(s): Microsoft C Compiler
 	Version(s): OS/2:1.0; winnt:1.0
@@ -51,3 +53,5 @@ permalink: /kb/079/Q79157/
 	
 	=============================================================================
 	
+
+{% endraw %}

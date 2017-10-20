@@ -6,6 +6,8 @@ permalink: /kb/175/Q175165/
 
 ## Q175165: XADM: Changes to Internet Mail Service Wizard Cannot Be Saved
 
+{% raw %}
+
 	Article: Q175165
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -52,3 +54,5 @@ permalink: /kb/175/Q175165/
 	
 	=============================================================================
 	
+
+{% endraw %}

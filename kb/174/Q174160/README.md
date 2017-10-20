@@ -6,6 +6,8 @@ permalink: /kb/174/Q174160/
 
 ## Q174160: Redirecting Files in Batch Files Inserts Incorrect Characters
 
+{% raw %}
+
 	Article: Q174160
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -60,3 +62,5 @@ permalink: /kb/174/Q174160/
 	
 	=============================================================================
 	
+
+{% endraw %}

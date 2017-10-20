@@ -6,6 +6,8 @@ permalink: /kb/269/Q269966/
 
 ## Q269966: BUG: MSDN Library - July 2000 DVD Edition Has a Corrupt MSDN020.
 
+{% raw %}
+
 	Article: Q269966
 	Product(s): Microsoft Developer Network
 	Version(s): July 2000
@@ -79,3 +81,5 @@ permalink: /kb/269/Q269966/
 	
 	=============================================================================
 	
+
+{% endraw %}

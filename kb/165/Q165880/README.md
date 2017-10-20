@@ -6,6 +6,8 @@ permalink: /kb/165/Q165880/
 
 ## Q165880: WD97: Dash in Autosignature Is Autoformatted to a Dot
 
+{% raw %}
+
 	Article: Q165880
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -102,3 +104,5 @@ permalink: /kb/165/Q165880/
 	
 	=============================================================================
 	
+
+{% endraw %}

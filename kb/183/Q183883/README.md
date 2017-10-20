@@ -6,6 +6,8 @@ permalink: /kb/183/Q183883/
 
 ## Q183883: WD97: Updating Cross References Causes Object Duplication
 
+{% raw %}
+
 	Article: Q183883
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -90,3 +92,5 @@ permalink: /kb/183/Q183883/
 	
 	=============================================================================
 	
+
+{% endraw %}

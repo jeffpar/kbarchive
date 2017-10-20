@@ -6,6 +6,8 @@ permalink: /kb/257/Q257223/
 
 ## Q257223: SMS: SMS Clients Do Not Release Netware Licenses
 
+{% raw %}
+
 	Article: Q257223
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -65,3 +67,5 @@ permalink: /kb/257/Q257223/
 	
 	=============================================================================
 	
+
+{% endraw %}

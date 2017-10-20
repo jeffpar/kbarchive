@@ -6,6 +6,8 @@ permalink: /kb/057/Q57481/
 
 ## Q57481: C Can Recognize up to 31 Characters of Any Name
 
+{% raw %}
+
 	Article: Q57481
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -22,3 +24,5 @@ permalink: /kb/057/Q57481/
 	   do not make names shared with C longer than eight characters.
 	
 	This statement is not true. C can recognize up to 31 characters.
+
+{% endraw %}

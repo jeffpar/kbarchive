@@ -6,6 +6,8 @@ permalink: /kb/098/Q98341/
 
 ## Q98341: PROFS: How to Check VM Host ROUTE Statements
 
+{% raw %}
+
 	Article: Q98341
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.1,3.2,3.3
@@ -39,3 +41,5 @@ permalink: /kb/098/Q98341/
 	
 	=============================================================================
 	
+
+{% endraw %}

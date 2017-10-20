@@ -6,6 +6,8 @@ permalink: /kb/239/Q239561/
 
 ## Q239561: HOWTO: Use CoInitializeSecurity in Visual Basic
 
+{% raw %}
+
 	Article: Q239561
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -152,3 +154,5 @@ permalink: /kb/239/Q239561/
 	
 	=============================================================================
 	
+
+{% endraw %}

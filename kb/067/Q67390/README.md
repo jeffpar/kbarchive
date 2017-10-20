@@ -6,6 +6,8 @@ permalink: /kb/067/Q67390/
 
 ## Q67390: Converting Flight Simulator Coordinates to Meters or Feet
 
+{% raw %}
+
 	Article: Q67390
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -28,3 +30,5 @@ permalink: /kb/067/Q67390/
 	
 	=============================================================================
 	
+
+{% endraw %}

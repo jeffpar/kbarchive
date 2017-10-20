@@ -6,6 +6,8 @@ permalink: /kb/166/Q166790/
 
 ## Q166790: Novell DOS/WIN Client-32 Not Registering Hostname w/DHCP
 
+{% raw %}
+
 	Article: Q166790
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/166/Q166790/
 	
 	=============================================================================
 	
+
+{% endraw %}

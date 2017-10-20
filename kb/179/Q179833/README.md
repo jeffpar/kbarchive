@@ -6,6 +6,8 @@ permalink: /kb/179/Q179833/
 
 ## Q179833: WD97: Menu Bar Fails to Hide in Full Screen Mode
 
+{% raw %}
+
 	Article: Q179833
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -62,3 +64,5 @@ permalink: /kb/179/Q179833/
 	
 	=============================================================================
 	
+
+{% endraw %}

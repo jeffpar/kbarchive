@@ -6,6 +6,8 @@ permalink: /kb/155/Q155501/
 
 ## Q155501: WINS Client Stops Querying or Renewing with WINS
 
+{% raw %}
+
 	Article: Q155501
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11,95; winnt:3.5,3.51; :3.11b
@@ -96,3 +98,5 @@ permalink: /kb/155/Q155501/
 	
 	=============================================================================
 	
+
+{% endraw %}

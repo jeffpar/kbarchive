@@ -6,6 +6,8 @@ permalink: /kb/190/Q190663/
 
 ## Q190663: PRB: Opening an ODBC Database Inside a Jet Workspace Hangs VB
 
+{% raw %}
+
 	Article: Q190663
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/190/Q190663/
 	
 	=============================================================================
 	
+
+{% endraw %}

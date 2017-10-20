@@ -6,6 +6,8 @@ permalink: /kb/166/Q166425/
 
 ## Q166425: Pan Chinese WinNT 4.0 Installation Question &amp; Answer
 
+{% raw %}
+
 	Article: Q166425
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -137,3 +139,5 @@ permalink: /kb/166/Q166425/
 	
 	=============================================================================
 	
+
+{% endraw %}

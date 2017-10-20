@@ -6,6 +6,8 @@ permalink: /kb/160/Q160164/
 
 ## Q160164: XCLN: MAC: Application Error Type 1
 
+{% raw %}
+
 	Article: Q160164
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -97,3 +99,5 @@ permalink: /kb/160/Q160164/
 	
 	=============================================================================
 	
+
+{% endraw %}

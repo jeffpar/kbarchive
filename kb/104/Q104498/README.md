@@ -6,6 +6,8 @@ permalink: /kb/104/Q104498/
 
 ## Q104498: How OF_SHARE Modes Affect Opening Files
 
+{% raw %}
+
 	Article: Q104498
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -58,3 +60,5 @@ permalink: /kb/104/Q104498/
 	
 	=============================================================================
 	
+
+{% endraw %}

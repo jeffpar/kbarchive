@@ -6,6 +6,8 @@ permalink: /kb/129/Q129657/
 
 ## Q129657: Windows 95 Cannot Create 360K Floppy System Disk
 
+{% raw %}
+
 	Article: Q129657
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/129/Q129657/
 	
 	=============================================================================
 	
+
+{% endraw %}

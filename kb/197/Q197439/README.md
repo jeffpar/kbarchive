@@ -6,6 +6,8 @@ permalink: /kb/197/Q197439/
 
 ## Q197439: WD97: Replace Within Selection Continues to End of Document
 
+{% raw %}
+
 	Article: Q197439
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -57,3 +59,5 @@ permalink: /kb/197/Q197439/
 	
 	=============================================================================
 	
+
+{% endraw %}

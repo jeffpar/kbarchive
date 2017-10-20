@@ -6,6 +6,8 @@ permalink: /kb/154/Q154417/
 
 ## Q154417: XCLN: EFD Form Project Appears Skewed When Loaded in VB
 
+{% raw %}
+
 	Article: Q154417
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -49,3 +51,5 @@ permalink: /kb/154/Q154417/
 	
 	=============================================================================
 	
+
+{% endraw %}

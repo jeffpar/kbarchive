@@ -6,6 +6,8 @@ permalink: /kb/148/Q148804/
 
 ## Q148804: Err Msg: An Exception 0E Has Occurred in Rpcss.exe...
 
+{% raw %}
+
 	Article: Q148804
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/148/Q148804/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98642/
 
 ## Q98642: Multimedia Err Msg: The Specified Device Is Not Open ...
 
+{% raw %}
+
 	Article: Q98642
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -113,3 +115,5 @@ permalink: /kb/098/Q98642/
 	
 	=============================================================================
 	
+
+{% endraw %}

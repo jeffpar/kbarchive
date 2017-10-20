@@ -6,6 +6,8 @@ permalink: /kb/146/Q146641/
 
 ## Q146641: HOWTO: Use OLE Messaging to Send Mail in Visual FoxPro App
 
+{% raw %}
+
 	Article: Q146641
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/146/Q146641/
 	
 	=============================================================================
 	
+
+{% endraw %}

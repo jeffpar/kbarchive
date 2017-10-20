@@ -6,6 +6,8 @@ permalink: /kb/237/Q237610/
 
 ## Q237610: Err Msg: &quot;You Do Not Have Permission to Modify This Print Job&quot;
 
+{% raw %}
+
 	Article: Q237610
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/237/Q237610/
 	
 	=============================================================================
 	
+
+{% endraw %}

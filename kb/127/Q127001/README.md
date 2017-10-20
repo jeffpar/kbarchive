@@ -6,6 +6,8 @@ permalink: /kb/127/Q127001/
 
 ## Q127001: PC WRmt Ext: Err Msg: Postoffice Has Not Accepted Mail Item
 
+{% raw %}
+
 	Article: Q127001
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -90,3 +92,5 @@ permalink: /kb/127/Q127001/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/105/Q105000/
 
 ## Q105000: RESTACC Fails with &quot;SYS0111 File Name Too Long&quot; Error
 
+{% raw %}
+
 	Article: Q105000
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/105/Q105000/
 	
 	=============================================================================
 	
+
+{% endraw %}

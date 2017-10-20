@@ -6,6 +6,8 @@ permalink: /kb/221/Q221402/
 
 ## Q221402: XWEB: OWA Message Body Does Not Display European Currency Symbol
 
+{% raw %}
+
 	Article: Q221402
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5; winnt:5.5
@@ -55,3 +57,5 @@ permalink: /kb/221/Q221402/
 	
 	=============================================================================
 	
+
+{% endraw %}

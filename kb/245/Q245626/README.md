@@ -6,6 +6,8 @@ permalink: /kb/245/Q245626/
 
 ## Q245626: INFO: Use &quot;-localquorum&quot; Switch Install Single-Node MSCS Cluster
 
+{% raw %}
+
 	Article: Q245626
 	Product(s): Microsoft Windows NT
 	Version(s): 1.1,2000,4.0
@@ -81,3 +83,5 @@ permalink: /kb/245/Q245626/
 	
 	=============================================================================
 	
+
+{% endraw %}

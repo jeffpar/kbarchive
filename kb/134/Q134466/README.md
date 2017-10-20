@@ -6,6 +6,8 @@ permalink: /kb/134/Q134466/
 
 ## Q134466: How to Display a SQL Cursor's Multiple Columns in a Combo Box
 
+{% raw %}
+
 	Article: Q134466
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/134/Q134466/
 	
 	=============================================================================
 	
+
+{% endraw %}

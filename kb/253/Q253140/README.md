@@ -6,6 +6,8 @@ permalink: /kb/253/Q253140/
 
 ## Q253140: HOWTO: Use WTSEnumerateProcesses from Visual Basic
 
+{% raw %}
+
 	Article: Q253140
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -202,3 +204,5 @@ permalink: /kb/253/Q253140/
 	
 	=============================================================================
 	
+
+{% endraw %}

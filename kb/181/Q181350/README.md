@@ -6,6 +6,8 @@ permalink: /kb/181/Q181350/
 
 ## Q181350: Clients Fail to Connect to Notes Server Running on Windows NT
 
+{% raw %}
+
 	Article: Q181350
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -83,3 +85,5 @@ permalink: /kb/181/Q181350/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/029/Q29925/
 
 ## Q29925: Wild-Card Expansion
 
+{% raw %}
+
 	Article: Q29925
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -53,3 +55,5 @@ permalink: /kb/029/Q29925/
 	
 	If you are using C Version 4.00, search for wild card and setargv for
 	more information.
+
+{% endraw %}

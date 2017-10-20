@@ -6,6 +6,8 @@ permalink: /kb/154/Q154022/
 
 ## Q154022: Wine Guide: Distorted Display When Playing Video Clips
 
+{% raw %}
+
 	Article: Q154022
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,1.0a,2.0,3.1,3.11
@@ -72,3 +74,5 @@ permalink: /kb/154/Q154022/
 	
 	=============================================================================
 	
+
+{% endraw %}

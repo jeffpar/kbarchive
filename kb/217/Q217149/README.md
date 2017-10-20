@@ -6,6 +6,8 @@ permalink: /kb/217/Q217149/
 
 ## Q217149: XFOR: Chat Service May Terminate Unexpectedly
 
+{% raw %}
+
 	Article: Q217149
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -97,3 +99,5 @@ permalink: /kb/217/Q217149/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183550/
 
 ## Q183550: BUG: Administrative Snap-in Allows Duplicate Names of HCD Files
 
+{% raw %}
+
 	Article: Q183550
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -69,3 +71,5 @@ permalink: /kb/183/Q183550/
 	
 	=============================================================================
 	
+
+{% endraw %}

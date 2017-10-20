@@ -6,6 +6,8 @@ permalink: /kb/245/Q245453/
 
 ## Q245453: TN3270 Server Access Violation in Mngext!MngDeleteObject()
 
+{% raw %}
+
 	Article: Q245453
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -101,3 +103,5 @@ permalink: /kb/245/Q245453/
 	
 	=============================================================================
 	
+
+{% endraw %}

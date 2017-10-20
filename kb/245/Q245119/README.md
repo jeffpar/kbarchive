@@ -6,6 +6,8 @@ permalink: /kb/245/Q245119/
 
 ## Q245119: XCLN: How to Automatically Download the Offline Address Book
 
+{% raw %}
+
 	Article: Q245119
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000
@@ -52,3 +54,5 @@ permalink: /kb/245/Q245119/
 	
 	=============================================================================
 	
+
+{% endraw %}

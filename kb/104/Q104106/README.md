@@ -6,6 +6,8 @@ permalink: /kb/104/Q104106/
 
 ## Q104106: PC Win: GP Fault During Setup When Installing Only Spelling
 
+{% raw %}
+
 	Article: Q104106
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b
@@ -56,3 +58,5 @@ permalink: /kb/104/Q104106/
 	
 	=============================================================================
 	
+
+{% endraw %}

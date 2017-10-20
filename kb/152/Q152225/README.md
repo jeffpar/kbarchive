@@ -6,6 +6,8 @@ permalink: /kb/152/Q152225/
 
 ## Q152225: .Gid File Location Determined by .Cnt File Location in Help
 
+{% raw %}
+
 	Article: Q152225
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -96,3 +98,5 @@ permalink: /kb/152/Q152225/
 	
 	=============================================================================
 	
+
+{% endraw %}

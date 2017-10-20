@@ -6,6 +6,8 @@ permalink: /kb/263/Q263271/
 
 ## Q263271: SMS: Queries May Not Be Saved in a New Query-Based Collection
 
+{% raw %}
+
 	Article: Q263271
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -93,3 +95,5 @@ permalink: /kb/263/Q263271/
 	
 	=============================================================================
 	
+
+{% endraw %}

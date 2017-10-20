@@ -6,6 +6,8 @@ permalink: /kb/137/Q137952/
 
 ## Q137952: How to Set Up Relationship in Data Env for Concatenated Fields
 
+{% raw %}
+
 	Article: Q137952
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -140,3 +142,5 @@ permalink: /kb/137/Q137952/
 	
 	=============================================================================
 	
+
+{% endraw %}

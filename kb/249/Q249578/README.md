@@ -6,6 +6,8 @@ permalink: /kb/249/Q249578/
 
 ## Q249578: Pcmdump Detects Expiration Date Incorrectly in Instruction File
 
+{% raw %}
+
 	Article: Q249578
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -92,3 +94,5 @@ permalink: /kb/249/Q249578/
 	
 	=============================================================================
 	
+
+{% endraw %}

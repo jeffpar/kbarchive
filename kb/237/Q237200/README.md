@@ -6,6 +6,8 @@ permalink: /kb/237/Q237200/
 
 ## Q237200: WD97: Form Fields Not Visible Pasted as Word Document Object
 
+{% raw %}
+
 	Article: Q237200
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -67,3 +69,5 @@ permalink: /kb/237/Q237200/
 	
 	=============================================================================
 	
+
+{% endraw %}

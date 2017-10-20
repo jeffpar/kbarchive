@@ -6,6 +6,8 @@ permalink: /kb/238/Q238725/
 
 ## Q238725: PRB: ShowColor Method Might Not Work on Palm-Size Devices
 
+{% raw %}
+
 	Article: Q238725
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.11,3.0
@@ -76,3 +78,5 @@ permalink: /kb/238/Q238725/
 	
 	=============================================================================
 	
+
+{% endraw %}

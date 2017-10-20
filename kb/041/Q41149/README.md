@@ -6,6 +6,8 @@ permalink: /kb/041/Q41149/
 
 ## Q41149: Single Precision Numbers Have 1 to 7 Digits; Double Have 8+
 
+{% raw %}
+
 	Article: Q41149
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -43,3 +45,5 @@ permalink: /kb/041/Q41149/
 	
 	The above products follow the IEEE standard format for storage of
 	floating-point numbers.
+
+{% endraw %}

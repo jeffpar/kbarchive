@@ -6,6 +6,8 @@ permalink: /kb/151/Q151179/
 
 ## Q151179: INFO: Configuring DNS on NT with CPS or During Unattended Setup
 
+{% raw %}
+
 	Article: Q151179
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -50,7 +52,7 @@ permalink: /kb/151/Q151179/
 	
 	  $(!STF_COMPUTERNAME)
 	  set NewValueList =
-	  { {EnableDHCP,$(NoTitle),$(!REG_VT_DWORD),$(EnableDHCPFlag)},+
+	  {{EnableDHCP,$(NoTitle),$(!REG_VT_DWORD),$(EnableDHCPFlag)},+
 	  {DataBasePath,$(NoTitle),$(!REG_VT_EXPAND_SZ),
 	  "%SystemRoot%\System32\drivers\etc"},+
 	  ;
@@ -75,7 +77,7 @@ permalink: /kb/151/Q151179/
 	  ;Enter the Domain Suffix between the quotes
 	  ;Example: {SearchList,$(NoTitle),$(!REG_VT_SZ)," xxxxxxxx.xxx
 	  ;xxxxxxxx.xxx xxxxxxxx.xxx"},+
-	  {SearchList,$(NoTitle),$(!REG_VT_SZ),""} }
+	  {SearchList,$(NoTitle),$(!REG_VT_SZ),""}}
 	
 	          Shell  $(UtilityInf), AddValueList, $(TcpParmKeyHandle),
 	
@@ -98,3 +100,5 @@ permalink: /kb/151/Q151179/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/038/Q38225/
 
 ## Q38225: Error C1053 Compiler Limit : Struct/union Nesting
 
+{% raw %}
+
 	Article: Q38225
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -29,3 +31,5 @@ permalink: /kb/038/Q38225/
 	
 	The compiler cannot recover from a fatal error; it terminates after
 	printing the error message.
+
+{% endraw %}

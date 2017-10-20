@@ -6,6 +6,8 @@ permalink: /kb/087/Q87515/
 
 ## Q87515: FIX: Implied INCLUDE Macro Does Not Force Expansion
 
+{% raw %}
+
 	Article: Q87515
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.11,1.12,1.13,1.2; OS/2:1.11,1.12,1.13,1.21
@@ -91,3 +93,5 @@ permalink: /kb/087/Q87515/
 	
 	=============================================================================
 	
+
+{% endraw %}

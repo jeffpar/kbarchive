@@ -6,6 +6,8 @@ permalink: /kb/096/Q96627/
 
 ## Q96627: No Warning If Setup Fails to Modify Your SYSTEM.INI File
 
+{% raw %}
+
 	Article: Q96627
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -51,3 +53,5 @@ permalink: /kb/096/Q96627/
 	
 	=============================================================================
 	
+
+{% endraw %}

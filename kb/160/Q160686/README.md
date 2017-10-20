@@ -6,6 +6,8 @@ permalink: /kb/160/Q160686/
 
 ## Q160686: WD97: No Macro Warning Opening File in Template Folder
 
+{% raw %}
+
 	Article: Q160686
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/160/Q160686/
 	
 	=============================================================================
 	
+
+{% endraw %}

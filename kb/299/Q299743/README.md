@@ -6,6 +6,8 @@ permalink: /kb/299/Q299743/
 
 ## Q299743: TS Err Msg: &quot;Setup encountered a disk error while writing ...&quot;
 
+{% raw %}
+
 	Article: Q299743
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -62,3 +64,5 @@ permalink: /kb/299/Q299743/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155386/
 
 ## Q155386: FIX: C1001 in Compiler File MSC1.CPP at Line 1089
 
+{% raw %}
+
 	Article: Q155386
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -101,3 +103,5 @@ permalink: /kb/155/Q155386/
 	
 	=============================================================================
 	
+
+{% endraw %}

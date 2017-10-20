@@ -6,6 +6,8 @@ permalink: /kb/174/Q174556/
 
 ## Q174556: SMS: Remote Control Performance Better on WinNT 3.51 Than 4.0
 
+{% raw %}
+
 	Article: Q174556
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -52,3 +54,5 @@ permalink: /kb/174/Q174556/
 	
 	=============================================================================
 	
+
+{% endraw %}

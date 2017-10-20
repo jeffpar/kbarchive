@@ -6,6 +6,8 @@ permalink: /kb/163/Q163817/
 
 ## Q163817: How To Create a Printer Using GSNW
 
+{% raw %}
+
 	Article: Q163817
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -142,3 +144,5 @@ permalink: /kb/163/Q163817/
 	
 	=============================================================================
 	
+
+{% endraw %}

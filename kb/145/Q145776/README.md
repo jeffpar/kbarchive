@@ -6,6 +6,8 @@ permalink: /kb/145/Q145776/
 
 ## Q145776: XCLN: Cannot Send Folder as Attachment with Windows Explorer
 
+{% raw %}
+
 	Article: Q145776
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -43,3 +45,5 @@ permalink: /kb/145/Q145776/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/078/Q78265/
 
 ## Q78265: Toshiba T1200XE Screen Choices and the 7.04 Mouse Driver
 
+{% raw %}
+
 	Article: Q78265
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -61,3 +63,5 @@ permalink: /kb/078/Q78265/
 	
 	=============================================================================
 	
+
+{% endraw %}

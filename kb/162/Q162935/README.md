@@ -6,6 +6,8 @@ permalink: /kb/162/Q162935/
 
 ## Q162935: ADT/ODE: Final Help Workshop Training Card Does Not Close
 
+{% raw %}
+
 	Article: Q162935
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0
@@ -70,3 +72,5 @@ permalink: /kb/162/Q162935/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123095/
 
 ## Q123095: Windows Err Msg: Invalid VxD... Device # 0484, Service 800D...
 
+{% raw %}
+
 	Article: Q123095
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/123/Q123095/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129807/
 
 ## Q129807: Running Non-Latin Based Version of Windows Application
 
+{% raw %}
+
 	Article: Q129807
 	Product(s): Microsoft Product Support Information
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/129/Q129807/
 	
 	=============================================================================
 	
+
+{% endraw %}

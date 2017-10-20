@@ -6,6 +6,8 @@ permalink: /kb/129/Q129779/
 
 ## Q129779: PC Mac: Err Msg: File Pathname Exceeds Max. Length of 67 Char.
 
+{% raw %}
+
 	Article: Q129779
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -45,3 +47,5 @@ permalink: /kb/129/Q129779/
 	
 	=============================================================================
 	
+
+{% endraw %}

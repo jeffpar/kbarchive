@@ -6,6 +6,8 @@ permalink: /kb/139/Q139288/
 
 ## Q139288: How to Change the Default Port Speed on a RAS Server
 
+{% raw %}
+
 	Article: Q139288
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -97,3 +99,5 @@ permalink: /kb/139/Q139288/
 	
 	=============================================================================
 	
+
+{% endraw %}

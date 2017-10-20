@@ -6,6 +6,8 @@ permalink: /kb/159/Q159677/
 
 ## Q159677: Flight Simulator Err Msg: MMSystem263 &#91;MCI&#93; Device Not Connected
 
+{% raw %}
+
 	Article: Q159677
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -139,3 +141,5 @@ permalink: /kb/159/Q159677/
 	
 	=============================================================================
 	
+
+{% endraw %}

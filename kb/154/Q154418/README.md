@@ -6,6 +6,8 @@ permalink: /kb/154/Q154418/
 
 ## Q154418: Cannot Upgrade Windows 95 to Windows NT Workstation 4.0
 
+{% raw %}
+
 	Article: Q154418
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 4.0 95
@@ -97,3 +99,5 @@ permalink: /kb/154/Q154418/
 	
 	=============================================================================
 	
+
+{% endraw %}

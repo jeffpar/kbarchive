@@ -6,6 +6,8 @@ permalink: /kb/132/Q132469/
 
 ## Q132469: Windows NT 3.51 Setup Hangs on a Computer With Three IDE Drives
 
+{% raw %}
+
 	Article: Q132469
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/132/Q132469/
 	
 	=============================================================================
 	
+
+{% endraw %}

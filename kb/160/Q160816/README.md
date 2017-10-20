@@ -6,6 +6,8 @@ permalink: /kb/160/Q160816/
 
 ## Q160816: FP: FrontPage Editor Adds Space to Empty Table Cell
 
+{% raw %}
+
 	Article: Q160816
 	Product(s): Word Front Page
 	Version(s): windows:97, macintosh:1.0
@@ -54,3 +56,5 @@ permalink: /kb/160/Q160816/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/264/Q264083/
 
 ## Q264083: Games: Sound or Video Is Distorted or Program Stops Responding
 
+{% raw %}
+
 	Article: Q264083
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -169,3 +171,5 @@ permalink: /kb/264/Q264083/
 	
 	=============================================================================
 	
+
+{% endraw %}

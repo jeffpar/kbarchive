@@ -6,6 +6,8 @@ permalink: /kb/133/Q133255/
 
 ## Q133255: WFWFILES.TXT: Windows for Workgroups Update Files
 
+{% raw %}
+
 	Article: Q133255
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.11
@@ -99,3 +101,5 @@ permalink: /kb/133/Q133255/
 	
 	=============================================================================
 	
+
+{% endraw %}

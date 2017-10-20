@@ -6,6 +6,8 @@ permalink: /kb/086/Q86261/
 
 ## Q86261: Windows Help Print Macro Does Not Print Pop-up Contents
 
+{% raw %}
+
 	Article: Q86261
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -38,3 +40,5 @@ permalink: /kb/086/Q86261/
 	
 	=============================================================================
 	
+
+{% endraw %}

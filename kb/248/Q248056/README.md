@@ -6,6 +6,8 @@ permalink: /kb/248/Q248056/
 
 ## Q248056: XCON: Bad NDR w. No Intended Recipient Stops Connector for Notes
 
+{% raw %}
+
 	Article: Q248056
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -76,3 +78,5 @@ permalink: /kb/248/Q248056/
 	
 	=============================================================================
 	
+
+{% endraw %}

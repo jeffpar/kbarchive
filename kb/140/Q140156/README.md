@@ -6,6 +6,8 @@ permalink: /kb/140/Q140156/
 
 ## Q140156: No Floppy Access on Presario 140/774/972/982/992 with MS Plus!
 
+{% raw %}
+
 	Article: Q140156
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -72,3 +74,5 @@ permalink: /kb/140/Q140156/
 	
 	=============================================================================
 	
+
+{% endraw %}

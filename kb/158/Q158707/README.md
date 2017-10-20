@@ -6,6 +6,8 @@ permalink: /kb/158/Q158707/
 
 ## Q158707: DDE Destroy Window Code May Stop 0x0000001e in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q158707
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/158/Q158707/
 	
 	=============================================================================
 	
+
+{% endraw %}

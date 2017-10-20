@@ -6,6 +6,8 @@ permalink: /kb/128/Q128584/
 
 ## Q128584: PC WSPlus: Restoring Schedule+ .CAL File Information
 
+{% raw %}
+
 	Article: Q128584
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -251,3 +253,5 @@ permalink: /kb/128/Q128584/
 	
 	=============================================================================
 	
+
+{% endraw %}

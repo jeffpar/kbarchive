@@ -6,6 +6,8 @@ permalink: /kb/165/Q165199/
 
 ## Q165199: SNA Server Services Stay in Stopping State
 
+{% raw %}
+
 	Article: Q165199
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/165/Q165199/
 	
 	=============================================================================
 	
+
+{% endraw %}

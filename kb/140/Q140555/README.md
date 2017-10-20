@@ -6,6 +6,8 @@ permalink: /kb/140/Q140555/
 
 ## Q140555: Asynch Verb Completion Via WinNT Events
 
+{% raw %}
+
 	Article: Q140555
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -142,3 +144,5 @@ permalink: /kb/140/Q140555/
 	
 	=============================================================================
 	
+
+{% endraw %}

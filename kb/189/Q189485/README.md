@@ -6,6 +6,8 @@ permalink: /kb/189/Q189485/
 
 ## Q189485: HOWTO: Debug MFC Module and Thread State Problems
 
+{% raw %}
+
 	Article: Q189485
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0
@@ -140,3 +142,5 @@ permalink: /kb/189/Q189485/
 	
 	=============================================================================
 	
+
+{% endraw %}

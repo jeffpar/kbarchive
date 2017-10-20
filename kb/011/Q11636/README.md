@@ -6,6 +6,8 @@ permalink: /kb/011/Q11636/
 
 ## Q11636: INFO: Windows Resource Numbering Starts at 1
 
+{% raw %}
+
 	Article: Q11636
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -41,3 +43,5 @@ permalink: /kb/011/Q11636/
 	
 	=============================================================================
 	
+
+{% endraw %}

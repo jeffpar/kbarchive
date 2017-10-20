@@ -6,6 +6,8 @@ permalink: /kb/244/Q244719/
 
 ## Q244719: FIX: Parameter Mismatch with Subqueries When Using Access ODBC
 
+{% raw %}
+
 	Article: Q244719
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.1,2.5,2.6,4.0
@@ -151,3 +153,5 @@ permalink: /kb/244/Q244719/
 	
 	=============================================================================
 	
+
+{% endraw %}

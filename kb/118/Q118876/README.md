@@ -6,6 +6,8 @@ permalink: /kb/118/Q118876/
 
 ## Q118876: PRB: USER Resource Leak when Improperly Using CFormView
 
+{% raw %}
+
 	Article: Q118876
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -67,3 +69,5 @@ permalink: /kb/118/Q118876/
 	
 	=============================================================================
 	
+
+{% endraw %}

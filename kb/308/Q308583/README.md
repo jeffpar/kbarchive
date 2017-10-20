@@ -6,6 +6,8 @@ permalink: /kb/308/Q308583/
 
 ## Q308583: HIS End-User Client Install Fails w/Internet Explorer 6
 
+{% raw %}
+
 	Article: Q308583
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0
@@ -88,3 +90,5 @@ permalink: /kb/308/Q308583/
 	
 	=============================================================================
 	
+
+{% endraw %}

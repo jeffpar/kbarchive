@@ -6,6 +6,8 @@ permalink: /kb/135/Q135518/
 
 ## Q135518: HOWTO: Copy Files from Cabinets on DMF-Formatted Disks
 
+{% raw %}
+
 	Article: Q135518
 	Product(s): Microsoft FoxPro
 	Version(s): WIN3.X:3.0
@@ -123,3 +125,5 @@ permalink: /kb/135/Q135518/
 	
 	=============================================================================
 	
+
+{% endraw %}

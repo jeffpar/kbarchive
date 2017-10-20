@@ -6,6 +6,8 @@ permalink: /kb/161/Q161288/
 
 ## Q161288: HOWTO: Get More Information on the ODBC Call Failed Error
 
+{% raw %}
+
 	Article: Q161288
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.5,5.0,6.0
@@ -129,3 +131,5 @@ permalink: /kb/161/Q161288/
 	
 	=============================================================================
 	
+
+{% endraw %}

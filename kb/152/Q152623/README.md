@@ -6,6 +6,8 @@ permalink: /kb/152/Q152623/
 
 ## Q152623: XCLN: The Setup Editor is Language Specific
 
+{% raw %}
+
 	Article: Q152623
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/152/Q152623/
 	
 	=============================================================================
 	
+
+{% endraw %}

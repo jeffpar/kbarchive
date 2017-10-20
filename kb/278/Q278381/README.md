@@ -6,6 +6,8 @@ permalink: /kb/278/Q278381/
 
 ## Q278381: Default Permissions For the MachineKeys Folders
 
+{% raw %}
+
 	Article: Q278381
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -73,3 +75,5 @@ permalink: /kb/278/Q278381/
 	
 	=============================================================================
 	
+
+{% endraw %}

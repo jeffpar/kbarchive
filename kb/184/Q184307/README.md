@@ -6,6 +6,8 @@ permalink: /kb/184/Q184307/
 
 ## Q184307: How to Obtain the Latest SNA Server Version 3.0 Service Pack
 
+{% raw %}
+
 	Article: Q184307
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP4
@@ -112,3 +114,5 @@ permalink: /kb/184/Q184307/
 	
 	=============================================================================
 	
+
+{% endraw %}

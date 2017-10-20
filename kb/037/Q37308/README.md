@@ -6,6 +6,8 @@ permalink: /kb/037/Q37308/
 
 ## Q37308: Graphics GET and PUT Require Integer or LONG Array; Example
 
+{% raw %}
+
 	Article: Q37308
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -58,3 +60,5 @@ permalink: /kb/037/Q37308/
 	
 	CLS
 	PUT (5, 5), picture                ' Display the picture
+
+{% endraw %}

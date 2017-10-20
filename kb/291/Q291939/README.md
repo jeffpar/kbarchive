@@ -6,6 +6,8 @@ permalink: /kb/291/Q291939/
 
 ## Q291939: Reader: Error Messages Appear When Attempting to Delete eBook
 
+{% raw %}
+
 	Article: Q291939
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -103,3 +105,5 @@ permalink: /kb/291/Q291939/
 	
 	=============================================================================
 	
+
+{% endraw %}

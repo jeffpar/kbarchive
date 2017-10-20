@@ -6,6 +6,8 @@ permalink: /kb/036/Q36022/
 
 ## Q36022: How to BSAVE/BLOAD EGA SCREENs 7, 8, 9, 10 in QB 2.x, 3.0, 4.x
 
+{% raw %}
+
 	Article: Q36022
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -120,3 +122,5 @@ permalink: /kb/036/Q36022/
 	DEF SEG
 	NOEGA:
 	END SUB
+
+{% endraw %}

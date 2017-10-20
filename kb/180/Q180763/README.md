@@ -6,6 +6,8 @@ permalink: /kb/180/Q180763/
 
 ## Q180763: MSN Err Msg: Account Failed: Permission Denied
 
+{% raw %}
+
 	Article: Q180763
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -50,3 +52,5 @@ permalink: /kb/180/Q180763/
 	
 	=============================================================================
 	
+
+{% endraw %}

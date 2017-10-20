@@ -6,6 +6,8 @@ permalink: /kb/103/Q103199/
 
 ## Q103199: PC Mac: Cannot See Postoffice on Pathworks Server
 
+{% raw %}
+
 	Article: Q103199
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -213,3 +215,5 @@ permalink: /kb/103/Q103199/
 	
 	=============================================================================
 	
+
+{% endraw %}

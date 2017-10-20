@@ -6,6 +6,8 @@ permalink: /kb/086/Q86181/
 
 ## Q86181: Programs with Reserved Windows Filenames May Not Run
 
+{% raw %}
+
 	Article: Q86181
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -83,3 +85,5 @@ permalink: /kb/086/Q86181/
 	
 	=============================================================================
 	
+
+{% endraw %}

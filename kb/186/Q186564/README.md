@@ -6,6 +6,8 @@ permalink: /kb/186/Q186564/
 
 ## Q186564: Visible Servers in Terminal Server Administration
 
+{% raw %}
+
 	Article: Q186564
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -42,3 +44,5 @@ permalink: /kb/186/Q186564/
 	
 	=============================================================================
 	
+
+{% endraw %}

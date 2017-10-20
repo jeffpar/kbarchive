@@ -6,6 +6,8 @@ permalink: /kb/272/Q272751/
 
 ## Q272751: WD97: Macros Are Enabled When Word Automatically Opens ASD Files
 
+{% raw %}
+
 	Article: Q272751
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -93,3 +95,5 @@ permalink: /kb/272/Q272751/
 	
 	=============================================================================
 	
+
+{% endraw %}

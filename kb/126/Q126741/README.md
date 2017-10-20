@@ -6,6 +6,8 @@ permalink: /kb/126/Q126741/
 
 ## Q126741: Reinstalling HP DeskJet Version 3.x Printer Driver
 
+{% raw %}
+
 	Article: Q126741
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -74,3 +76,5 @@ permalink: /kb/126/Q126741/
 	
 	=============================================================================
 	
+
+{% endraw %}

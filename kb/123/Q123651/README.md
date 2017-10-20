@@ -6,6 +6,8 @@ permalink: /kb/123/Q123651/
 
 ## Q123651: Writer: Starts Up in Black and White
 
+{% raw %}
+
 	Article: Q123651
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -50,3 +52,5 @@ permalink: /kb/123/Q123651/
 	
 	=============================================================================
 	
+
+{% endraw %}

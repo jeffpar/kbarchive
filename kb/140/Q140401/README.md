@@ -6,6 +6,8 @@ permalink: /kb/140/Q140401/
 
 ## Q140401: NET DIAG /STATUS Reports 0 Packets Transmitted and Received
 
+{% raw %}
+
 	Article: Q140401
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.0,3.5,3.51
@@ -70,3 +72,5 @@ permalink: /kb/140/Q140401/
 	
 	=============================================================================
 	
+
+{% endraw %}

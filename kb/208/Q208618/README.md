@@ -6,6 +6,8 @@ permalink: /kb/208/Q208618/
 
 ## Q208618: SMS: CAP Not Accessible During SMS 2.0 Client Installation
 
+{% raw %}
+
 	Article: Q208618
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -66,3 +68,5 @@ permalink: /kb/208/Q208618/
 	
 	=============================================================================
 	
+
+{% endraw %}

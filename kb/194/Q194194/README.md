@@ -6,6 +6,8 @@ permalink: /kb/194/Q194194/
 
 ## Q194194: DNS Fails with Error 1201 If Secondary Zone File Not Specified
 
+{% raw %}
+
 	Article: Q194194
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/194/Q194194/
 	
 	=============================================================================
 	
+
+{% endraw %}

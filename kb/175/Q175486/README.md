@@ -6,6 +6,8 @@ permalink: /kb/175/Q175486/
 
 ## Q175486: XCLN: Exchange Win 3.x Client Cannot Open XNK Sent from Outlook
 
+{% raw %}
+
 	Article: Q175486
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02
@@ -82,3 +84,5 @@ permalink: /kb/175/Q175486/
 	
 	=============================================================================
 	
+
+{% endraw %}

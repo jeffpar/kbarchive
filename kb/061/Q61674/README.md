@@ -6,6 +6,8 @@ permalink: /kb/061/Q61674/
 
 ## Q61674: Machine Hangs When BASIC PDS 7.00 Tries to Call QuickC 2.00
 
+{% raw %}
+
 	Article: Q61674
 	Product(s): See article
 	Version(s): 7.00
@@ -74,3 +76,5 @@ permalink: /kb/061/Q61674/
 	   printf ("Returning to BASIC \n");
 	
 	   }
+
+{% endraw %}

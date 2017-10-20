@@ -6,6 +6,8 @@ permalink: /kb/251/Q251334/
 
 ## Q251334: How to Remove Multiple Expired User Accounts from Windows NT
 
+{% raw %}
+
 	Article: Q251334
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -187,3 +189,5 @@ permalink: /kb/251/Q251334/
 	
 	=============================================================================
 	
+
+{% endraw %}

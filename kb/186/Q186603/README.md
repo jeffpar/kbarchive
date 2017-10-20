@@ -6,6 +6,8 @@ permalink: /kb/186/Q186603/
 
 ## Q186603: Terminal Server Client Supported Platforms
 
+{% raw %}
+
 	Article: Q186603
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -39,3 +41,5 @@ permalink: /kb/186/Q186603/
 	
 	=============================================================================
 	
+
+{% endraw %}

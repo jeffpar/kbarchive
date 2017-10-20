@@ -6,6 +6,8 @@ permalink: /kb/123/Q123751/
 
 ## Q123751: DriveSpace Utility Creates DoubleSpace CVFs in Windows 95
 
+{% raw %}
+
 	Article: Q123751
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/123/Q123751/
 	
 	=============================================================================
 	
+
+{% endraw %}

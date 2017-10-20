@@ -6,6 +6,8 @@ permalink: /kb/044/Q44033/
 
 ## Q44033: DOS Append Interfaces with execvp() in C
 
+{% raw %}
+
 	Article: Q44033
 	Product(s): See article
 	Version(s): 5.10
@@ -71,3 +73,5 @@ permalink: /kb/044/Q44033/
 	Note: DON'T use one of the functions that has a "p" in its name --
 	these functions search the path for the file, something you've
 	already done if you've followed these directions.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168731/
 
 ## Q168731: No RAS-Capable Devices to Add in Remote Access Setup
 
+{% raw %}
+
 	Article: Q168731
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/168/Q168731/
 	
 	=============================================================================
 	
+
+{% endraw %}

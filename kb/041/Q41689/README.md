@@ -6,6 +6,8 @@ permalink: /kb/041/Q41689/
 
 ## Q41689: Documentation on Global Variable _osversion Is Incomplete
 
+{% raw %}
+
 	Article: Q41689
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -31,3 +33,5 @@ permalink: /kb/041/Q41689/
 	
 	See the C run-time library reference guide, Page 36 for more
 	information.
+
+{% endraw %}

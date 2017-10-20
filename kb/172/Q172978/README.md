@@ -6,6 +6,8 @@ permalink: /kb/172/Q172978/
 
 ## Q172978: Err Msg: Iexplore Caused a Stack Fault in Module Kernel32.dll.
 
+{% raw %}
+
 	Article: Q172978
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51
@@ -67,3 +69,5 @@ permalink: /kb/172/Q172978/
 	
 	=============================================================================
 	
+
+{% endraw %}

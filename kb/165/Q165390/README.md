@@ -6,6 +6,8 @@ permalink: /kb/165/Q165390/
 
 ## Q165390: Document Margins Not Maintained in WordPad
 
+{% raw %}
+
 	Article: Q165390
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -65,3 +67,5 @@ permalink: /kb/165/Q165390/
 	
 	=============================================================================
 	
+
+{% endraw %}

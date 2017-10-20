@@ -6,6 +6,8 @@ permalink: /kb/161/Q161933/
 
 ## Q161933: XFOR: MSMI Message Sent Time Stamp Is Incorrect
 
+{% raw %}
+
 	Article: Q161933
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/161/Q161933/
 	
 	=============================================================================
 	
+
+{% endraw %}

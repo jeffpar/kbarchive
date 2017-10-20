@@ -6,6 +6,8 @@ permalink: /kb/140/Q140549/
 
 ## Q140549: ADT95: List of Redistributable Files for Microsoft ADT 95
 
+{% raw %}
+
 	Article: Q140549
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 7.0
@@ -228,3 +230,5 @@ permalink: /kb/140/Q140549/
 	
 	=============================================================================
 	
+
+{% endraw %}

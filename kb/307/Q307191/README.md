@@ -6,6 +6,8 @@ permalink: /kb/307/Q307191/
 
 ## Q307191: BUG: VB 5.0 Setup.exe Consumes CPU, Installation Inefficient
 
+{% raw %}
+
 	Article: Q307191
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -92,3 +94,5 @@ permalink: /kb/307/Q307191/
 	
 	=============================================================================
 	
+
+{% endraw %}

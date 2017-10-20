@@ -6,6 +6,8 @@ permalink: /kb/165/Q165789/
 
 ## Q165789: DOC: Tab Text is too Small to Read
 
+{% raw %}
+
 	Article: Q165789
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -44,3 +46,5 @@ permalink: /kb/165/Q165789/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216484/
 
 ## Q216484: Alternate Way to Install Application During GUI-mode Setup
 
+{% raw %}
+
 	Article: Q216484
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/216/Q216484/
 	
 	=============================================================================
 	
+
+{% endraw %}

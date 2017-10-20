@@ -6,6 +6,8 @@ permalink: /kb/110/Q110001/
 
 ## Q110001: BUG: WRITE Statement Not Shifting Window Focus
 
+{% raw %}
+
 	Article: Q110001
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -91,3 +93,5 @@ permalink: /kb/110/Q110001/
 	
 	=============================================================================
 	
+
+{% endraw %}

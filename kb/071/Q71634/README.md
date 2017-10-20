@@ -6,6 +6,8 @@ permalink: /kb/071/Q71634/
 
 ## Q71634: Loading 10net Redirector High Hangs Unisys Workstation
 
+{% raw %}
+
 	Article: Q71634
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -49,3 +51,5 @@ permalink: /kb/071/Q71634/
 	
 	=============================================================================
 	
+
+{% endraw %}

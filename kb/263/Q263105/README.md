@@ -6,6 +6,8 @@ permalink: /kb/263/Q263105/
 
 ## Q263105: Environment Variables Not Set by &quot;Double-Click&quot;
 
+{% raw %}
+
 	Article: Q263105
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:3.5,3.51,4.0
@@ -78,3 +80,5 @@ permalink: /kb/263/Q263105/
 	
 	=============================================================================
 	
+
+{% endraw %}

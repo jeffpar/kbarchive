@@ -6,6 +6,8 @@ permalink: /kb/123/Q123670/
 
 ## Q123670: Err Msg: ...Install the NWLINK IPX/SPX Compatible Transport...
 
+{% raw %}
+
 	Article: Q123670
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/123/Q123670/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/100/Q100950/
 
 ## Q100950: SoundBits: Maximizing and Minimizing Windows Causes GP Fault
 
+{% raw %}
+
 	Article: Q100950
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0; :1.0; WINDOWS:3.x
@@ -55,3 +57,5 @@ permalink: /kb/100/Q100950/
 	
 	=============================================================================
 	
+
+{% endraw %}

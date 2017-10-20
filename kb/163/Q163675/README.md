@@ -6,6 +6,8 @@ permalink: /kb/163/Q163675/
 
 ## Q163675: SMS: STOP 0x0000000A During Hardware Inventory
 
+{% raw %}
+
 	Article: Q163675
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -65,3 +67,5 @@ permalink: /kb/163/Q163675/
 	
 	=============================================================================
 	
+
+{% endraw %}

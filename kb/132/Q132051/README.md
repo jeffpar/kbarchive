@@ -6,6 +6,8 @@ permalink: /kb/132/Q132051/
 
 ## Q132051: How the Color of Screen and GET Objects Is Converted
 
+{% raw %}
+
 	Article: Q132051
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -114,3 +116,5 @@ permalink: /kb/132/Q132051/
 	
 	=============================================================================
 	
+
+{% endraw %}

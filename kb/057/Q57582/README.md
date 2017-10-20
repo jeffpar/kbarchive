@@ -6,6 +6,8 @@ permalink: /kb/057/Q57582/
 
 ## Q57582: Why QB 4.50 Language Reference Manual Is Sold Separately
 
+{% raw %}
+
 	Article: Q57582
 	Product(s): See article
 	Version(s): 4.50
@@ -97,3 +99,5 @@ permalink: /kb/057/Q57582/
 	could want. BASIC PDS 7.00 is marketed for professional developers who
 	want the best BASIC compiler available. (QuickBASIC is a separate,
 	lower-priced, powerful product for a wider audience.)
+
+{% endraw %}

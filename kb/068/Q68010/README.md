@@ -6,6 +6,8 @@ permalink: /kb/068/Q68010/
 
 ## Q68010: Quickwatch Seems to Hang When Expanding Very Large Arrays
 
+{% raw %}
+
 	Article: Q68010
 	Product(s): See article
 	Version(s): 3.00 3.10 3.11 | 3.00 3.10 3.11
@@ -18,3 +20,5 @@ permalink: /kb/068/Q68010/
 	hang. This apparent problem is caused by the time it takes to re-align
 	the data in the window, and is actually normal operation. If you place
 	the same array element in the Watch Window, it will expand instantly.
+
+{% endraw %}

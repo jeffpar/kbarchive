@@ -6,6 +6,8 @@ permalink: /kb/262/Q262865/
 
 ## Q262865: XCON: Do Not Replay .dat Files Removed by Mtacheck Utility
 
+{% raw %}
+
 	Article: Q262865
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -80,3 +82,5 @@ permalink: /kb/262/Q262865/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184202/
 
 ## Q184202: XGEN: Microsoft Exchange Server 5.5 Documentation
 
+{% raw %}
+
 	Article: Q184202
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -53,3 +55,5 @@ permalink: /kb/184/Q184202/
 	
 	=============================================================================
 	
+
+{% endraw %}

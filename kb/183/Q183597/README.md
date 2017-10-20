@@ -6,6 +6,8 @@ permalink: /kb/183/Q183597/
 
 ## Q183597: XCLN: Outbound Mail Stuck In Client Outbox
 
+{% raw %}
+
 	Article: Q183597
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -85,3 +87,5 @@ permalink: /kb/183/Q183597/
 	
 	=============================================================================
 	
+
+{% endraw %}

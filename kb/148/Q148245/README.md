@@ -6,6 +6,8 @@ permalink: /kb/148/Q148245/
 
 ## Q148245: Upgrading from Uni- to Multi-Processor Requires Service Pack
 
+{% raw %}
+
 	Article: Q148245
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -177,3 +179,5 @@ permalink: /kb/148/Q148245/
 	
 	=============================================================================
 	
+
+{% endraw %}

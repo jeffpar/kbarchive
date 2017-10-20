@@ -6,6 +6,8 @@ permalink: /kb/164/Q164394/
 
 ## Q164394: BOOTP Service Does Not Populate ARP Cache
 
+{% raw %}
+
 	Article: Q164394
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -110,3 +112,5 @@ permalink: /kb/164/Q164394/
 	
 	=============================================================================
 	
+
+{% endraw %}

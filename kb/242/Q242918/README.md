@@ -6,6 +6,8 @@ permalink: /kb/242/Q242918/
 
 ## Q242918: DCOM Heap Memory Leak When Using IDataObject/IAdviseSink
 
+{% raw %}
+
 	Article: Q242918
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:; Win2000:95
@@ -101,3 +103,5 @@ permalink: /kb/242/Q242918/
 	
 	=============================================================================
 	
+
+{% endraw %}

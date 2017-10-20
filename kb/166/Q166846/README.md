@@ -6,6 +6,8 @@ permalink: /kb/166/Q166846/
 
 ## Q166846: Cannot Reconnect to TN3270 Server with Close Listen Sockets
 
+{% raw %}
+
 	Article: Q166846
 	Product(s): Microsoft Windows NT
 	Version(s): 2.11 SP1,2.11 SP2,3.0,3.51,4.0
@@ -107,3 +109,5 @@ permalink: /kb/166/Q166846/
 	
 	=============================================================================
 	
+
+{% endraw %}

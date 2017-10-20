@@ -6,6 +6,8 @@ permalink: /kb/245/Q245723/
 
 ## Q245723: SMS: Simple Schedule Inventory Always Runs at Midnight
 
+{% raw %}
+
 	Article: Q245723
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,2.0 SP1,2.0 SP2
@@ -87,3 +89,5 @@ permalink: /kb/245/Q245723/
 	
 	=============================================================================
 	
+
+{% endraw %}

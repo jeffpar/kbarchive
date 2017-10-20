@@ -6,6 +6,8 @@ permalink: /kb/065/Q65646/
 
 ## Q65646: /Zg Prototypes Unsigned Functions as Unsigned Short
 
+{% raw %}
+
 	Article: Q65646
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -37,3 +39,5 @@ permalink: /kb/065/Q65646/
 	name for unsigned short int. In the Microsoft C 6.00 implementation,
 	unsigned/unsigned int and unsigned short/unsigned short int specify
 	compatible data types.
+
+{% endraw %}

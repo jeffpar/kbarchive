@@ -6,6 +6,8 @@ permalink: /kb/151/Q151435/
 
 ## Q151435: Portions of Received Fax Cover Page Missing
 
+{% raw %}
+
 	Article: Q151435
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -66,3 +68,5 @@ permalink: /kb/151/Q151435/
 	
 	=============================================================================
 	
+
+{% endraw %}

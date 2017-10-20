@@ -6,6 +6,8 @@ permalink: /kb/176/Q176255/
 
 ## Q176255: Bookshelf 98: Hard to tell Focus Box from Window Background
 
+{% raw %}
+
 	Article: Q176255
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -45,3 +47,5 @@ permalink: /kb/176/Q176255/
 	
 	=============================================================================
 	
+
+{% endraw %}

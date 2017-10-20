@@ -6,6 +6,8 @@ permalink: /kb/090/Q90917/
 
 ## Q90917: Unable to Switch to File Manager After Formatting Disk in Back
 
+{% raw %}
+
 	Article: Q90917
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/090/Q90917/
 	
 	=============================================================================
 	
+
+{% endraw %}

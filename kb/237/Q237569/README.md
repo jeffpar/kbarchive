@@ -6,6 +6,8 @@ permalink: /kb/237/Q237569/
 
 ## Q237569: PRB: Scrolling a List Box with DELETED Off Moves Record Pointer
 
+{% raw %}
+
 	Article: Q237569
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -165,3 +167,5 @@ permalink: /kb/237/Q237569/
 	
 	=============================================================================
 	
+
+{% endraw %}

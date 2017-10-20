@@ -6,6 +6,8 @@ permalink: /kb/174/Q174214/
 
 ## Q174214: PRB: Form with Menu Displays Border w/ Borderstyle Set to None
 
+{% raw %}
+
 	Article: Q174214
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -106,3 +108,5 @@ permalink: /kb/174/Q174214/
 	
 	=============================================================================
 	
+
+{% endraw %}

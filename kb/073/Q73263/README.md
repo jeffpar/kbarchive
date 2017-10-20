@@ -6,6 +6,8 @@ permalink: /kb/073/Q73263/
 
 ## Q73263: Softlogic Disk Optimizer Requires Updated Version
 
+{% raw %}
+
 	Article: Q73263
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -45,3 +47,5 @@ permalink: /kb/073/Q73263/
 	
 	=============================================================================
 	
+
+{% endraw %}

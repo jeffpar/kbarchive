@@ -6,6 +6,8 @@ permalink: /kb/153/Q153267/
 
 ## Q153267: Deadly Tide Trial Version: Minimum Requirements for Windows
 
+{% raw %}
+
 	Article: Q153267
 	Product(s): Microsoft Home Games
 	Version(s): Trial Version
@@ -61,3 +63,5 @@ permalink: /kb/153/Q153267/
 	
 	=============================================================================
 	
+
+{% endraw %}

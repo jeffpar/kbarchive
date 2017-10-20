@@ -6,6 +6,8 @@ permalink: /kb/087/Q87876/
 
 ## Q87876: Err Msg: Insufficient Memory Error... w/Extra for Windows
 
+{% raw %}
+
 	Article: Q87876
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/087/Q87876/
 	
 	=============================================================================
 	
+
+{% endraw %}

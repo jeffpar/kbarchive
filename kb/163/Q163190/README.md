@@ -6,6 +6,8 @@ permalink: /kb/163/Q163190/
 
 ## Q163190: WD97: Tracked Changes Accept All Button Does Not Accept Revision
 
+{% raw %}
+
 	Article: Q163190
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/163/Q163190/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/324/Q324721/
 
 ## Q324721: SMS: Clitravl.exe Returns Error Code 1 Even If Successful
 
+{% raw %}
+
 	Article: Q324721
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3,2.0 SP4
@@ -71,3 +73,5 @@ permalink: /kb/324/Q324721/
 	
 	=============================================================================
 	
+
+{% endraw %}

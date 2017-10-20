@@ -6,6 +6,8 @@ permalink: /kb/141/Q141316/
 
 ## Q141316: FIX: Report Is Wrong When You Relate Tables on Currency Field
 
+{% raw %}
+
 	Article: Q141316
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -78,3 +80,5 @@ permalink: /kb/141/Q141316/
 	
 	=============================================================================
 	
+
+{% endraw %}

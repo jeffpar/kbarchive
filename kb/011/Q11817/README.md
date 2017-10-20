@@ -6,6 +6,8 @@ permalink: /kb/011/Q11817/
 
 ## Q11817: How Interrupts Are Handled in CodeView
 
+{% raw %}
+
 	Article: Q11817
 	Product(s): See article
 	Version(s): 1.00 1.10 2.00 2.10 2.20 2.30
@@ -59,3 +61,5 @@ permalink: /kb/011/Q11817/
 	work if you enter "T 1000" and expect your program to catch and
 	process interrupts during the trace. You will need to set a breakpoint
 	at the instruction with which you are concerned, then enter G(o).
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/233/Q233448/
 
 ## Q233448: Business Planner: Changing Link Color Does Not Affect Web Links
 
+{% raw %}
+
 	Article: Q233448
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -53,3 +55,5 @@ permalink: /kb/233/Q233448/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86718/
 
 ## Q86718: DOCERR: Setup Toolkit _MSTEST &quot;Bad Destination Value&quot; Error
 
+{% raw %}
+
 	Article: Q86718
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -58,3 +60,5 @@ permalink: /kb/086/Q86718/
 	
 	=============================================================================
 	
+
+{% endraw %}

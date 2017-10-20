@@ -6,6 +6,8 @@ permalink: /kb/169/Q169904/
 
 ## Q169904: Shared Folders Gateway May Cause Trap 0x1E in Ntoskrl.exe
 
+{% raw %}
+
 	Article: Q169904
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -62,3 +64,5 @@ permalink: /kb/169/Q169904/
 	
 	=============================================================================
 	
+
+{% endraw %}

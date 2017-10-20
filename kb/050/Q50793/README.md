@@ -6,6 +6,8 @@ permalink: /kb/050/Q50793/
 
 ## Q50793: Why After Edit, fopen with Mode &quot;a&quot; Doesn't Appear to Append
 
+{% raw %}
+
 	Article: Q50793
 	Product(s): See article
 	Version(s): 5.10
@@ -62,3 +64,5 @@ permalink: /kb/050/Q50793/
 	
 	Changing the fopen "a" to "a+" and rebuilding the program will
 	demonstrate the solution.
+
+{% endraw %}

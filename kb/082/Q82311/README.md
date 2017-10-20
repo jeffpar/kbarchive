@@ -6,6 +6,8 @@ permalink: /kb/082/Q82311/
 
 ## Q82311: Problems Using Borland's Turbo Debugger with Windows
 
+{% raw %}
+
 	Article: Q82311
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/082/Q82311/
 	
 	=============================================================================
 	
+
+{% endraw %}

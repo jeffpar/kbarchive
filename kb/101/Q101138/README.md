@@ -6,6 +6,8 @@ permalink: /kb/101/Q101138/
 
 ## Q101138: PC Win: Using the ServerPath Entry in the MSMAIL.INI File
 
+{% raw %}
+
 	Article: Q101138
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -59,3 +61,5 @@ permalink: /kb/101/Q101138/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247900/
 
 ## Q247900: Cannot Log On After Removing Everyone Group from Permissions
 
+{% raw %}
+
 	Article: Q247900
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/247/Q247900/
 	
 	=============================================================================
 	
+
+{% endraw %}

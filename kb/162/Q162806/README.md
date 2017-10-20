@@ -6,6 +6,8 @@ permalink: /kb/162/Q162806/
 
 ## Q162806: Golf 3.0: Commentary Options Depend On Type of Installation
 
+{% raw %}
+
 	Article: Q162806
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:3.0
@@ -90,3 +92,5 @@ permalink: /kb/162/Q162806/
 	
 	=============================================================================
 	
+
+{% endraw %}

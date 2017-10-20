@@ -6,6 +6,8 @@ permalink: /kb/233/Q233513/
 
 ## Q233513: Access Denied Error Message in Windows Script Host
 
+{% raw %}
+
 	Article: Q233513
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/233/Q233513/
 	
 	=============================================================================
 	
+
+{% endraw %}

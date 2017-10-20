@@ -6,6 +6,8 @@ permalink: /kb/160/Q160511/
 
 ## Q160511: Regsec.exe Gives Strange Results for Non-Administrator
 
+{% raw %}
+
 	Article: Q160511
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/160/Q160511/
 	
 	=============================================================================
 	
+
+{% endraw %}

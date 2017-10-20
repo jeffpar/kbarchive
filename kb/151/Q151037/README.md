@@ -6,6 +6,8 @@ permalink: /kb/151/Q151037/
 
 ## Q151037: Disk Contents: Office Pro 7.0b for Windows 95(Disks 11-20)
 
+{% raw %}
+
 	Article: Q151037
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 
@@ -751,3 +753,5 @@ permalink: /kb/151/Q151037/
 	
 	=============================================================================
 	
+
+{% endraw %}

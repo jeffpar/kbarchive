@@ -6,6 +6,8 @@ permalink: /kb/173/Q173007/
 
 ## Q173007: Updated Cannon Bubble Jet drivers for Windows NT 4.0
 
+{% raw %}
+
 	Article: Q173007
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/173/Q173007/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139097/
 
 ## Q139097: HOWTO: How to Clean Up DirectDraw Using Release()
 
+{% raw %}
+
 	Article: Q139097
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 1.0
@@ -72,3 +74,5 @@ permalink: /kb/139/Q139097/
 	
 	=============================================================================
 	
+
+{% endraw %}

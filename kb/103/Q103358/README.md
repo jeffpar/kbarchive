@@ -6,6 +6,8 @@ permalink: /kb/103/Q103358/
 
 ## Q103358: Lotus Improv May Not be Able to Change the Paper Size to Print
 
+{% raw %}
+
 	Article: Q103358
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -72,3 +74,5 @@ permalink: /kb/103/Q103358/
 	
 	=============================================================================
 	
+
+{% endraw %}

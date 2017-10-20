@@ -6,6 +6,8 @@ permalink: /kb/237/Q237599/
 
 ## Q237599: SNA Server 4.0 SP2 Client for Windows NT Always Installs MMC
 
+{% raw %}
+
 	Article: Q237599
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -122,3 +124,5 @@ permalink: /kb/237/Q237599/
 	
 	=============================================================================
 	
+
+{% endraw %}

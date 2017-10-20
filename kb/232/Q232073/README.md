@@ -6,6 +6,8 @@ permalink: /kb/232/Q232073/
 
 ## Q232073: Content Ratings Dates/Times in MMC Use Time Zone of Client
 
+{% raw %}
+
 	Article: Q232073
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/232/Q232073/
 	
 	=============================================================================
 	
+
+{% endraw %}

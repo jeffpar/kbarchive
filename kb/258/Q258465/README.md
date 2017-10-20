@@ -6,6 +6,8 @@ permalink: /kb/258/Q258465/
 
 ## Q258465: Error Message C00E0044 Appears When You Create Queues in MSMQ
 
+{% raw %}
+
 	Article: Q258465
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -81,3 +83,5 @@ permalink: /kb/258/Q258465/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127065/
 
 ## Q127065: Phone Number Does Not Appear in Modem Log File
 
+{% raw %}
+
 	Article: Q127065
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -75,3 +77,5 @@ permalink: /kb/127/Q127065/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/254/Q254035/
 
 ## Q254035: XADM: Stack Overflow While Deleting Child Folders in a Deep Hier
 
+{% raw %}
+
 	Article: Q254035
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -134,3 +136,5 @@ permalink: /kb/254/Q254035/
 	
 	=============================================================================
 	
+
+{% endraw %}

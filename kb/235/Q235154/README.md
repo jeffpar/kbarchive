@@ -6,6 +6,8 @@ permalink: /kb/235/Q235154/
 
 ## Q235154: SMS: 16-Bit Remote Control Components Remain After WIN Upgrade
 
+{% raw %}
+
 	Article: Q235154
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -57,3 +59,5 @@ permalink: /kb/235/Q235154/
 	
 	=============================================================================
 	
+
+{% endraw %}

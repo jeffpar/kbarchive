@@ -6,6 +6,8 @@ permalink: /kb/183/Q183886/
 
 ## Q183886: Access Violation in LSASS When Logging on System
 
+{% raw %}
+
 	Article: Q183886
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/183/Q183886/
 	
 	=============================================================================
 	
+
+{% endraw %}

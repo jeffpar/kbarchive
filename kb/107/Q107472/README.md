@@ -6,6 +6,8 @@ permalink: /kb/107/Q107472/
 
 ## Q107472: Fax Monitor Is Idle on CAS Modems While Receiving Faxes
 
+{% raw %}
+
 	Article: Q107472
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -51,3 +53,5 @@ permalink: /kb/107/Q107472/
 	
 	=============================================================================
 	
+
+{% endraw %}

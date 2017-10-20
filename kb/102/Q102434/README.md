@@ -6,6 +6,8 @@ permalink: /kb/102/Q102434/
 
 ## Q102434: Accessing Global Symbols Defined in C from MASM
 
+{% raw %}
+
 	Article: Q102434
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -61,7 +63,7 @@ permalink: /kb/102/Q102434/
 	  {
 	     int var3;
 	     int var4;
-	  } * struct_ptr, struct_var = {5, 7}, v_ray[2] = { {9, 11}, {13, 15} };
+	  } * struct_ptr, struct_var = {5, 7}, v_ray[2] = {{9, 11}, {13, 15}};
 	
 	  void main(void)
 	  {
@@ -208,3 +210,5 @@ permalink: /kb/102/Q102434/
 	
 	=============================================================================
 	
+
+{% endraw %}

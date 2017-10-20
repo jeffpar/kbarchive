@@ -6,6 +6,8 @@ permalink: /kb/148/Q148681/
 
 ## Q148681: FIX: localtime() Does Not Always Switch to Standard Time
 
+{% raw %}
+
 	Article: Q148681
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5,1.51,1.52,2.0,2.1,2.2,4.0
@@ -143,3 +145,5 @@ permalink: /kb/148/Q148681/
 	
 	=============================================================================
 	
+
+{% endraw %}

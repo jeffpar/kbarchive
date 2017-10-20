@@ -6,6 +6,8 @@ permalink: /kb/087/Q87979/
 
 ## Q87979: Third-Party Pen Hardware Vendor List
 
+{% raw %}
+
 	Article: Q87979
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0,1.0a
@@ -62,3 +64,5 @@ permalink: /kb/087/Q87979/
 	
 	=============================================================================
 	
+
+{% endraw %}

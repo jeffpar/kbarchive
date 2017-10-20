@@ -6,6 +6,8 @@ permalink: /kb/130/Q130982/
 
 ## Q130982: Windows 95 Does Not Support the Clix Mouse
 
+{% raw %}
+
 	Article: Q130982
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/130/Q130982/
 	
 	=============================================================================
 	
+
+{% endraw %}

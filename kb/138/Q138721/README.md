@@ -6,6 +6,8 @@ permalink: /kb/138/Q138721/
 
 ## Q138721: &quot;Line Non-Operational&quot; in Remote Access Service Monitor
 
+{% raw %}
+
 	Article: Q138721
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -75,3 +77,5 @@ permalink: /kb/138/Q138721/
 	
 	=============================================================================
 	
+
+{% endraw %}

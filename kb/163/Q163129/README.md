@@ -6,6 +6,8 @@ permalink: /kb/163/Q163129/
 
 ## Q163129: RAS Client Fails to Connect to Service Pack 2 Using NetBEUI
 
+{% raw %}
+
 	Article: Q163129
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/163/Q163129/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/035/Q35229/
 
 ## Q35229: CPANEL May Crash if /S Switch Used Previously
 
+{% raw %}
+
 	Article: Q35229
 	Product(s): See article
 	Version(s): 6.x 1.00
@@ -17,3 +19,5 @@ permalink: /kb/035/Q35229/
 	CPANEL, CPANEL may crash if you keep decrementing while in the CPANEL
 	screen. The CPANEL will not be invoked and a divide overflow may
 	occur, but the mouse driver remains intact.
+
+{% endraw %}

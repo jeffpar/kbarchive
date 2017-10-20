@@ -6,6 +6,8 @@ permalink: /kb/186/Q186920/
 
 ## Q186920: HOWTO: Change the Report Designer Ruler Measurement
 
+{% raw %}
+
 	Article: Q186920
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,2.6a,3.0b; MS-DOS:2.5,2.5a,2.5b,2.6,2.6a; UNIX:2.6; WINDOWS:2.5,2.5
@@ -95,3 +97,5 @@ permalink: /kb/186/Q186920/
 	
 	=============================================================================
 	
+
+{% endraw %}

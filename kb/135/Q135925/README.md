@@ -6,6 +6,8 @@ permalink: /kb/135/Q135925/
 
 ## Q135925: Peachtree Complete Accounting Setup Guide for Windows NT 3.5x
 
+{% raw %}
+
 	Article: Q135925
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -41,3 +43,5 @@ permalink: /kb/135/Q135925/
 	
 	=============================================================================
 	
+
+{% endraw %}

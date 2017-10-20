@@ -6,6 +6,8 @@ permalink: /kb/092/Q92363/
 
 ## Q92363: Problems Printing Graphs from Quattro Pro for Windows
 
+{% raw %}
+
 	Article: Q92363
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/092/Q92363/
 	
 	=============================================================================
 	
+
+{% endraw %}

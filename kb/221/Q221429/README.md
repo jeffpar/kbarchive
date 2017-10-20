@@ -6,6 +6,8 @@ permalink: /kb/221/Q221429/
 
 ## Q221429: XFOR: Continuous Retry Of Dirsync If Options Tab Not Configured
 
+{% raw %}
+
 	Article: Q221429
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -108,3 +110,5 @@ permalink: /kb/221/Q221429/
 	
 	=============================================================================
 	
+
+{% endraw %}

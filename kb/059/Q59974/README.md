@@ -6,6 +6,8 @@ permalink: /kb/059/Q59974/
 
 ## Q59974: Mac Hyp: Getting a List of Recipients of a Message
 
+{% raw %}
+
 	Article: Q59974
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -49,3 +51,5 @@ permalink: /kb/059/Q59974/
 	
 	=============================================================================
 	
+
+{% endraw %}

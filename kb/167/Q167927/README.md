@@ -6,6 +6,8 @@ permalink: /kb/167/Q167927/
 
 ## Q167927: PRB: Building ATL Service Project Does Not Register the Service
 
+{% raw %}
+
 	Article: Q167927
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,3.0
@@ -81,3 +83,5 @@ permalink: /kb/167/Q167927/
 	
 	=============================================================================
 	
+
+{% endraw %}

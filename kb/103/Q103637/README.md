@@ -6,6 +6,8 @@ permalink: /kb/103/Q103637/
 
 ## Q103637: Use EV_RINGTE for Modem Ring Detection
 
+{% raw %}
+
 	Article: Q103637
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -67,3 +69,5 @@ permalink: /kb/103/Q103637/
 	
 	=============================================================================
 	
+
+{% endraw %}

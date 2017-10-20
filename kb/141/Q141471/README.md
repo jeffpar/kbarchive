@@ -6,6 +6,8 @@ permalink: /kb/141/Q141471/
 
 ## Q141471: Err Msg: No Such File or Directory Using FC.EXE
 
+{% raw %}
+
 	Article: Q141471
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -60,3 +62,5 @@ permalink: /kb/141/Q141471/
 	
 	=============================================================================
 	
+
+{% endraw %}

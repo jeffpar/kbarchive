@@ -6,6 +6,8 @@ permalink: /kb/172/Q172492/
 
 ## Q172492: WD97: Templates and Wizards Not Included with SR-1 Patch
 
+{% raw %}
+
 	Article: Q172492
 	Product(s): Word 97 for Windows
 	Version(s): Service Release 1 (SR-1)
@@ -78,3 +80,5 @@ permalink: /kb/172/Q172492/
 	
 	=============================================================================
 	
+
+{% endraw %}

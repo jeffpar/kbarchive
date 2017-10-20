@@ -6,6 +6,8 @@ permalink: /kb/239/Q239607/
 
 ## Q239607: World Atlas: Error Message on Blue Screen When You Start Program
 
+{% raw %}
+
 	Article: Q239607
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -72,3 +74,5 @@ permalink: /kb/239/Q239607/
 	
 	=============================================================================
 	
+
+{% endraw %}

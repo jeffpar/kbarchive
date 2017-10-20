@@ -6,6 +6,8 @@ permalink: /kb/132/Q132399/
 
 ## Q132399: SQLGetData() Returns SQL_NO_TOTAL in RFX_LongBinary()
 
+{% raw %}
+
 	Article: Q132399
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.1,4.0
@@ -77,3 +79,5 @@ permalink: /kb/132/Q132399/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166130/
 
 ## Q166130: HOWTO: Overriding Initial Setting on Print Setup Dialog
 
+{% raw %}
+
 	Article: Q166130
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.52; winnt:2.0,2.1,2.2,4.0,4.1,4.2,4.2b,5.0,6.0
@@ -115,3 +117,5 @@ permalink: /kb/166/Q166130/
 	
 	=============================================================================
 	
+
+{% endraw %}

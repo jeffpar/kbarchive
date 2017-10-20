@@ -6,6 +6,8 @@ permalink: /kb/233/Q233459/
 
 ## Q233459: MSBP: Wizard Interview Files Are Replaced Without Warning
 
+{% raw %}
+
 	Article: Q233459
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -58,3 +60,5 @@ permalink: /kb/233/Q233459/
 	
 	=============================================================================
 	
+
+{% endraw %}

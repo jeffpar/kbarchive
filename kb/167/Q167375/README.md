@@ -6,6 +6,8 @@ permalink: /kb/167/Q167375/
 
 ## Q167375: Err Msg: Error Opening Modem.inf File in the RAS Directory
 
+{% raw %}
+
 	Article: Q167375
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -78,3 +80,5 @@ permalink: /kb/167/Q167375/
 	
 	=============================================================================
 	
+
+{% endraw %}

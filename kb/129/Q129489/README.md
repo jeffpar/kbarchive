@@ -6,6 +6,8 @@ permalink: /kb/129/Q129489/
 
 ## Q129489: DEC 101 Card Does Not Function After Server-Based Setup
 
+{% raw %}
+
 	Article: Q129489
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -65,3 +67,5 @@ permalink: /kb/129/Q129489/
 	
 	=============================================================================
 	
+
+{% endraw %}

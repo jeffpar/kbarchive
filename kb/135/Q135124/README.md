@@ -6,6 +6,8 @@ permalink: /kb/135/Q135124/
 
 ## Q135124: System Keys Not Passed Through to Client Using Remote Control
 
+{% raw %}
+
 	Article: Q135124
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -90,3 +92,5 @@ permalink: /kb/135/Q135124/
 	
 	=============================================================================
 	
+
+{% endraw %}

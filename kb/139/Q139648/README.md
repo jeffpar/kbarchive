@@ -6,6 +6,8 @@ permalink: /kb/139/Q139648/
 
 ## Q139648: PRB: OLE Drop Target Does Not Permit Drop
 
+{% raw %}
+
 	Article: Q139648
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2
@@ -108,3 +110,5 @@ permalink: /kb/139/Q139648/
 	
 	=============================================================================
 	
+
+{% endraw %}

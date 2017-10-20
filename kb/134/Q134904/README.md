@@ -6,6 +6,8 @@ permalink: /kb/134/Q134904/
 
 ## Q134904: STOP Msg: 0x0000001e on Server with Services for Macintosh
 
+{% raw %}
+
 	Article: Q134904
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -62,3 +64,5 @@ permalink: /kb/134/Q134904/
 	
 	=============================================================================
 	
+
+{% endraw %}

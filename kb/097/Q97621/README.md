@@ -6,6 +6,8 @@ permalink: /kb/097/Q97621/
 
 ## Q97621: Hyperdisk Version 4.6 or Higher Required With MS-DOS 6.0
 
+{% raw %}
+
 	Article: Q97621
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -47,3 +49,5 @@ permalink: /kb/097/Q97621/
 	
 	=============================================================================
 	
+
+{% endraw %}

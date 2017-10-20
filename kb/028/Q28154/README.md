@@ -6,6 +6,8 @@ permalink: /kb/028/Q28154/
 
 ## Q28154: A RETURN Without a GOSUB in a Subprogram Hangs in EXE
 
+{% raw %}
+
 	Article: Q28154
 	Product(s): See article
 	Version(s): 6.00    | 6.00
@@ -56,3 +58,5 @@ permalink: /kb/028/Q28154/
 	      print j
 	      return
 	   end sub
+
+{% endraw %}

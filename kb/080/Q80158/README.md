@@ -6,6 +6,8 @@ permalink: /kb/080/Q80158/
 
 ## Q80158: PC Adm: Storage Status in ADMIN.EXE Reports 0 Bytes Used
 
+{% raw %}
+
 	Article: Q80158
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0
@@ -43,3 +45,5 @@ permalink: /kb/080/Q80158/
 	
 	=============================================================================
 	
+
+{% endraw %}

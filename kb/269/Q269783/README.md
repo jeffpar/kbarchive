@@ -6,6 +6,8 @@ permalink: /kb/269/Q269783/
 
 ## Q269783: BUG: Cannot Drag Multiple Selections from ListView Control
 
+{% raw %}
+
 	Article: Q269783
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -212,3 +214,5 @@ permalink: /kb/269/Q269783/
 	
 	=============================================================================
 	
+
+{% endraw %}

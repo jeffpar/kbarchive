@@ -6,6 +6,8 @@ permalink: /kb/277/Q277767/
 
 ## Q277767: XADM: User Without Proper Permissions Can Open Public Folders
 
+{% raw %}
+
 	Article: Q277767
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -50,3 +52,5 @@ permalink: /kb/277/Q277767/
 	
 	=============================================================================
 	
+
+{% endraw %}

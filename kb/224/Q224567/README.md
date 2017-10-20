@@ -6,6 +6,8 @@ permalink: /kb/224/Q224567/
 
 ## Q224567: WD97: Word Macro Virus Alert &quot;Melissa Macro Virus&quot;
 
+{% raw %}
+
 	Article: Q224567
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -188,3 +190,5 @@ permalink: /kb/224/Q224567/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/315/Q315922/
 
 ## Q315922: MSScript.ocx Leaks Event Handles in Certain Applications
 
+{% raw %}
+
 	Article: Q315922
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -111,3 +113,5 @@ permalink: /kb/315/Q315922/
 	
 	=============================================================================
 	
+
+{% endraw %}

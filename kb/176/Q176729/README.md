@@ -6,6 +6,8 @@ permalink: /kb/176/Q176729/
 
 ## Q176729: PRB: Menus Behave Differently in OS 8
 
+{% raw %}
+
 	Article: Q176729
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -117,3 +119,5 @@ permalink: /kb/176/Q176729/
 	
 	=============================================================================
 	
+
+{% endraw %}

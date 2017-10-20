@@ -6,6 +6,8 @@ permalink: /kb/068/Q68991/
 
 ## Q68991: Windows File Manager Hangs Reading Floppies on ALR 386 220
 
+{% raw %}
+
 	Article: Q68991
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -50,3 +52,5 @@ permalink: /kb/068/Q68991/
 	
 	=============================================================================
 	
+
+{% endraw %}

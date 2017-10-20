@@ -6,6 +6,8 @@ permalink: /kb/121/Q121228/
 
 ## Q121228: Postscript Print Driver Does Not Give Valid Ranges for Scaling
 
+{% raw %}
+
 	Article: Q121228
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/121/Q121228/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97193/
 
 ## Q97193: WINCAP Captures Screens Using DIB API
 
+{% raw %}
+
 	Article: Q97193
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -108,3 +110,5 @@ permalink: /kb/097/Q97193/
 	
 	=============================================================================
 	
+
+{% endraw %}

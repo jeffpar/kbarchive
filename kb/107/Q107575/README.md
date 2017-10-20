@@ -6,6 +6,8 @@ permalink: /kb/107/Q107575/
 
 ## Q107575: WFWG: Adapter Media Type Information Is Incorrect
 
+{% raw %}
+
 	Article: Q107575
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -55,3 +57,5 @@ permalink: /kb/107/Q107575/
 	
 	=============================================================================
 	
+
+{% endraw %}

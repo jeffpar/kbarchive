@@ -6,6 +6,8 @@ permalink: /kb/158/Q158054/
 
 ## Q158054: WD97: Page Number Field Not Marked As Deleted, Reinserted
 
+{% raw %}
+
 	Article: Q158054
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -45,3 +47,5 @@ permalink: /kb/158/Q158054/
 	
 	=============================================================================
 	
+
+{% endraw %}

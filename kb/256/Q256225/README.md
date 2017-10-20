@@ -6,6 +6,8 @@ permalink: /kb/256/Q256225/
 
 ## Q256225: ATT: Extracting ATT Gateway User List by Using the Import Tool
 
+{% raw %}
+
 	Article: Q256225
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -60,3 +62,5 @@ permalink: /kb/256/Q256225/
 	
 	=============================================================================
 	
+
+{% endraw %}

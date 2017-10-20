@@ -6,6 +6,8 @@ permalink: /kb/297/Q297040/
 
 ## Q297040: Windows May Hang When Attempting to Establish a TCP Connection
 
+{% raw %}
+
 	Article: Q297040
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6,4.0 SP6a
@@ -97,3 +99,5 @@ permalink: /kb/297/Q297040/
 	
 	=============================================================================
 	
+
+{% endraw %}

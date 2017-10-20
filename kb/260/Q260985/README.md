@@ -6,6 +6,8 @@ permalink: /kb/260/Q260985/
 
 ## Q260985: XIMS: Minimum NTFS Permissions Required to Use CDONTS
 
+{% raw %}
+
 	Article: Q260985
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:1.1,1.2,2.0; winnt:4.0,5.0,5.5
@@ -66,3 +68,5 @@ permalink: /kb/260/Q260985/
 	
 	=============================================================================
 	
+
+{% endraw %}

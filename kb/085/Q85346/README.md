@@ -6,6 +6,8 @@ permalink: /kb/085/Q85346/
 
 ## Q85346: FAX: What Software Drivers Are Running on the Gateway PC
 
+{% raw %}
+
 	Article: Q85346
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -45,3 +47,5 @@ permalink: /kb/085/Q85346/
 	
 	=============================================================================
 	
+
+{% endraw %}

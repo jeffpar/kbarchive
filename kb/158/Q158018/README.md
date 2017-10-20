@@ -6,6 +6,8 @@ permalink: /kb/158/Q158018/
 
 ## Q158018: SMS: How to Deploy Microsoft Internet Explorer 3.0
 
+{% raw %}
+
 	Article: Q158018
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -66,3 +68,5 @@ permalink: /kb/158/Q158018/
 	
 	=============================================================================
 	
+
+{% endraw %}

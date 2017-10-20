@@ -6,6 +6,8 @@ permalink: /kb/315/Q315612/
 
 ## Q315612: Train Simulator: Tools Update Available for Download
 
+{% raw %}
+
 	Article: Q315612
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -81,3 +83,5 @@ permalink: /kb/315/Q315612/
 	
 	=============================================================================
 	
+
+{% endraw %}

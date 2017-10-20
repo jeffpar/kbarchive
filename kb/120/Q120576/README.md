@@ -6,6 +6,8 @@ permalink: /kb/120/Q120576/
 
 ## Q120576: Logon and Connection Problems using 3Com Etherlink 16 Adapters
 
+{% raw %}
+
 	Article: Q120576
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0,3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/120/Q120576/
 	
 	=============================================================================
 	
+
+{% endraw %}

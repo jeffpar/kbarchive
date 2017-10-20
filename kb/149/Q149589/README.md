@@ -6,6 +6,8 @@ permalink: /kb/149/Q149589/
 
 ## Q149589: How to Ensure that Custom Icons Show Up in Windows 95 Explorer
 
+{% raw %}
+
 	Article: Q149589
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00b
@@ -106,3 +108,5 @@ permalink: /kb/149/Q149589/
 	
 	=============================================================================
 	
+
+{% endraw %}

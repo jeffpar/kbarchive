@@ -6,6 +6,8 @@ permalink: /kb/168/Q168471/
 
 ## Q168471: New Synchronization Behavior with Windows NT Server Version 4.0
 
+{% raw %}
+
 	Article: Q168471
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -49,3 +51,5 @@ permalink: /kb/168/Q168471/
 	
 	=============================================================================
 	
+
+{% endraw %}

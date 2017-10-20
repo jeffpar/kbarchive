@@ -6,6 +6,8 @@ permalink: /kb/170/Q170061/
 
 ## Q170061: XCLN: Readme.txt for Msoutl32.dll
 
+{% raw %}
+
 	Article: Q170061
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:7.0,7.5; :8.01,8.02
@@ -148,3 +150,5 @@ permalink: /kb/170/Q170061/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160154/
 
 ## Q160154: Change Code Page for Scheduler Service
 
+{% raw %}
+
 	Article: Q160154
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -51,3 +53,5 @@ permalink: /kb/160/Q160154/
 	
 	=============================================================================
 	
+
+{% endraw %}

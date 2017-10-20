@@ -6,6 +6,8 @@ permalink: /kb/164/Q164979/
 
 ## Q164979: SMS: Database Does Not Reflect Site/Domain Changes Correctly
 
+{% raw %}
+
 	Article: Q164979
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -57,3 +59,5 @@ permalink: /kb/164/Q164979/
 	
 	=============================================================================
 	
+
+{% endraw %}

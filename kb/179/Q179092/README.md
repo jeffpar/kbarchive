@@ -6,6 +6,8 @@ permalink: /kb/179/Q179092/
 
 ## Q179092: NWLNKIPX Sends Broadcast RIPX Packets Over the Network
 
+{% raw %}
+
 	Article: Q179092
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -106,3 +108,5 @@ permalink: /kb/179/Q179092/
 	
 	=============================================================================
 	
+
+{% endraw %}

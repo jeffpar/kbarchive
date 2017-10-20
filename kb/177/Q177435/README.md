@@ -6,6 +6,8 @@ permalink: /kb/177/Q177435/
 
 ## Q177435: PRB: Resolving DEVBCPX: Required file cannot be loaded Error
 
+{% raw %}
+
 	Article: Q177435
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -113,3 +115,5 @@ permalink: /kb/177/Q177435/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/059/Q59723/
 
 ## Q59723: OS/2 DosFindFirst Code Example Correction; Missing Comma
 
+{% raw %}
+
 	Article: Q59723
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -29,3 +31,5 @@ permalink: /kb/059/Q59723/
 	                    atr, buffer, bufflen, searchcount, reserved)
 	
 	A comma is needed between VARSEG(flname$) and SADD(flname$).
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164817/
 
 ## Q164817: WD97: Bad Parameter Error with the AddPicture Method
 
+{% raw %}
+
 	Article: Q164817
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -118,3 +120,5 @@ permalink: /kb/164/Q164817/
 	
 	=============================================================================
 	
+
+{% endraw %}

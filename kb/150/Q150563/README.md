@@ -6,6 +6,8 @@ permalink: /kb/150/Q150563/
 
 ## Q150563: PC Mac: Microsoft Word Attachment Loses Its File Association
 
+{% raw %}
+
 	Article: Q150563
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0.6,3.5.1
@@ -47,3 +49,5 @@ permalink: /kb/150/Q150563/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141030/
 
 ## Q141030: PRB: Changing _ASCIIROWS Modifies a Report
 
+{% raw %}
+
 	Article: Q141030
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -60,3 +62,5 @@ permalink: /kb/141/Q141030/
 	
 	=============================================================================
 	
+
+{% endraw %}

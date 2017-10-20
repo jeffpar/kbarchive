@@ -6,6 +6,8 @@ permalink: /kb/278/Q278408/
 
 ## Q278408: PRB: DataGrid Cannot Be Bound to a Non-Bookmarkable Recordset
 
+{% raw %}
+
 	Article: Q278408
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.1,2.1 SP1,2.1 SP2,2.5,2.6,6.0
@@ -102,3 +104,5 @@ permalink: /kb/278/Q278408/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197017/
 
 ## Q197017: INFO: Files Installed Win 98&#92;SYSTEM Folder Before VFP6 Setup
 
+{% raw %}
+
 	Article: Q197017
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -742,3 +744,5 @@ permalink: /kb/197/Q197017/
 	
 	=============================================================================
 	
+
+{% endraw %}

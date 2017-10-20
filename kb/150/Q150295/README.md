@@ -6,6 +6,8 @@ permalink: /kb/150/Q150295/
 
 ## Q150295: Group Names and Using NET GROUP Utility
 
+{% raw %}
+
 	Article: Q150295
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -60,3 +62,5 @@ permalink: /kb/150/Q150295/
 	
 	=============================================================================
 	
+
+{% endraw %}

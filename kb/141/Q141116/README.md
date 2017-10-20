@@ -6,6 +6,8 @@ permalink: /kb/141/Q141116/
 
 ## Q141116: Windows 3.1 Program Groups Do Not Migrate to Windows NT 4.0
 
+{% raw %}
+
 	Article: Q141116
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/141/Q141116/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140191/
 
 ## Q140191: PC WSPlus: SCHDIST.EXE Ignores CAL File Security
 
+{% raw %}
+
 	Article: Q140191
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -61,3 +63,5 @@ permalink: /kb/140/Q140191/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159476/
 
 ## Q159476: WD97: How to Enable, Disable Microsoft Word as the E-Mail Editor
 
+{% raw %}
+
 	Article: Q159476
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -56,3 +58,5 @@ permalink: /kb/159/Q159476/
 	
 	=============================================================================
 	
+
+{% endraw %}

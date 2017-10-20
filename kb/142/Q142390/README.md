@@ -6,6 +6,8 @@ permalink: /kb/142/Q142390/
 
 ## Q142390: Windows NT Drivers for Yamaha CDR-100 CD-ROM Drive
 
+{% raw %}
+
 	Article: Q142390
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -44,3 +46,5 @@ permalink: /kb/142/Q142390/
 	
 	=============================================================================
 	
+
+{% endraw %}

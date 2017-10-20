@@ -6,6 +6,8 @@ permalink: /kb/163/Q163662/
 
 ## Q163662: Running Multiple Instances of an Application Causes STOP x50
 
+{% raw %}
+
 	Article: Q163662
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -68,3 +70,5 @@ permalink: /kb/163/Q163662/
 	
 	=============================================================================
 	
+
+{% endraw %}

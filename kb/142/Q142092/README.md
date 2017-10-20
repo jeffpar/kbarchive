@@ -6,6 +6,8 @@ permalink: /kb/142/Q142092/
 
 ## Q142092: BUG: Report to File &quot;Access to File Denied&quot; Error Message
 
+{% raw %}
+
 	Article: Q142092
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0
@@ -68,3 +70,5 @@ permalink: /kb/142/Q142092/
 	
 	=============================================================================
 	
+
+{% endraw %}

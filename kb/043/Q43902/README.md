@@ -6,6 +6,8 @@ permalink: /kb/043/Q43902/
 
 ## Q43902: Incorrect SEEK Statement Example on QB Advisor On-Line Help
 
+{% raw %}
+
 	Article: Q43902
 	Product(s): See article
 	Version(s): 4.50
@@ -100,3 +102,5 @@ permalink: /kb/043/Q43902/
 	CLOSE #1
 	KILL "TESTDAT2.DAT"
 	END
+
+{% endraw %}

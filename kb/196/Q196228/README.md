@@ -6,6 +6,8 @@ permalink: /kb/196/Q196228/
 
 ## Q196228: SMS: Getdisk.exe Does Not Detect CD-ROM on Windows 95 Clients
 
+{% raw %}
+
 	Article: Q196228
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -155,3 +157,5 @@ permalink: /kb/196/Q196228/
 	
 	=============================================================================
 	
+
+{% endraw %}

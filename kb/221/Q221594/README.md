@@ -6,6 +6,8 @@ permalink: /kb/221/Q221594/
 
 ## Q221594: HOWTO: Populate a ListView With an ADOCE Recordset in VBCE6
 
+{% raw %}
+
 	Article: Q221594
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.11
@@ -140,3 +142,5 @@ permalink: /kb/221/Q221594/
 	
 	=============================================================================
 	
+
+{% endraw %}

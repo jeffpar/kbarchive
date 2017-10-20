@@ -6,6 +6,8 @@ permalink: /kb/065/Q65979/
 
 ## Q65979: PRB: C Pragma Comment &amp; #ident Strings Missing from Executable
 
+{% raw %}
+
 	Article: Q65979
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -63,3 +65,5 @@ permalink: /kb/065/Q65979/
 	
 	=============================================================================
 	
+
+{% endraw %}

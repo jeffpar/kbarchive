@@ -6,6 +6,8 @@ permalink: /kb/046/Q46183/
 
 ## Q46183: Search/Change &quot;Match Not Found&quot; If Previous Search/Label
 
+{% raw %}
+
 	Article: Q46183
 	Product(s): See article
 	Version(s): 4.50
@@ -45,3 +47,5 @@ permalink: /kb/046/Q46183/
 	
 	3. Choose Change from the Search menu and find LPRINT and change it
 	   to PRINT. The message "No Match Found" is displayed.
+
+{% endraw %}

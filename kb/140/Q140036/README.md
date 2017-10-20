@@ -6,6 +6,8 @@ permalink: /kb/140/Q140036/
 
 ## Q140036: Slow Network Printing from MS-DOS-Based Programs
 
+{% raw %}
+
 	Article: Q140036
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -75,3 +77,5 @@ permalink: /kb/140/Q140036/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189285/
 
 ## Q189285: XADM: Testing IPX Name Resolution with IPXROUTE.EXE
 
+{% raw %}
+
 	Article: Q189285
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -51,3 +53,5 @@ permalink: /kb/189/Q189285/
 	
 	=============================================================================
 	
+
+{% endraw %}

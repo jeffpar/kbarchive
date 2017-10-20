@@ -6,6 +6,8 @@ permalink: /kb/242/Q242190/
 
 ## Q242190: BUG: Full Koenig Lookup Works Only for Operators
 
+{% raw %}
+
 	Article: Q242190
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -81,3 +83,5 @@ permalink: /kb/242/Q242190/
 	
 	=============================================================================
 	
+
+{% endraw %}

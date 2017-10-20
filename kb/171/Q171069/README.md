@@ -6,6 +6,8 @@ permalink: /kb/171/Q171069/
 
 ## Q171069: SMS: Unable to Inventory Macintosh Files w/ Trademark Character
 
+{% raw %}
+
 	Article: Q171069
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -57,3 +59,5 @@ permalink: /kb/171/Q171069/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140380/
 
 ## Q140380: User Account Database Fails to Shrink After Deleting Accounts
 
+{% raw %}
+
 	Article: Q140380
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51
@@ -101,3 +103,5 @@ permalink: /kb/140/Q140380/
 	
 	=============================================================================
 	
+
+{% endraw %}

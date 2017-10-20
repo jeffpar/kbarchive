@@ -6,6 +6,8 @@ permalink: /kb/070/Q70074/
 
 ## Q70074: HOWTO: Reactivating First (and Only) Instance of an Application
 
+{% raw %}
+
 	Article: Q70074
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -144,3 +146,5 @@ permalink: /kb/070/Q70074/
 	
 	=============================================================================
 	
+
+{% endraw %}

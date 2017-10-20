@@ -6,6 +6,8 @@ permalink: /kb/099/Q99061/
 
 ## Q99061: Using REXX Program Flow-Control Commands
 
+{% raw %}
+
 	Article: Q99061
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -196,3 +198,5 @@ permalink: /kb/099/Q99061/
 	
 	=============================================================================
 	
+
+{% endraw %}

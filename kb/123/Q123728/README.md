@@ -6,6 +6,8 @@ permalink: /kb/123/Q123728/
 
 ## Q123728: FIX: EXTERNDEF on PROC Labels Does Not Make Them Public
 
+{% raw %}
+
 	Article: Q123728
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.1
@@ -75,3 +77,5 @@ permalink: /kb/123/Q123728/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248655/
 
 ## Q248655: BUG: ATL Composite Controls Do Not Meet Windows 2000 Logo
 
+{% raw %}
+
 	Article: Q248655
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -146,3 +148,5 @@ permalink: /kb/248/Q248655/
 	
 	=============================================================================
 	
+
+{% endraw %}

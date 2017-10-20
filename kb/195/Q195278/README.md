@@ -6,6 +6,8 @@ permalink: /kb/195/Q195278/
 
 ## Q195278: Visual InterDev 6.0 Programmer's Guide Comments and Corrections
 
+{% raw %}
+
 	Article: Q195278
 	Product(s): Microsoft Press
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/195/Q195278/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/239/Q239066/
 
 ## Q239066: XADM: Exchange Mailbox Manager Error Message: Setup Has Failed
 
+{% raw %}
+
 	Article: Q239066
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -56,3 +58,5 @@ permalink: /kb/239/Q239066/
 	
 	=============================================================================
 	
+
+{% endraw %}

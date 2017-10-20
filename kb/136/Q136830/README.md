@@ -6,6 +6,8 @@ permalink: /kb/136/Q136830/
 
 ## Q136830: DriveSpace May Fail to Restart in Mini-Windows Mode
 
+{% raw %}
+
 	Article: Q136830
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -131,3 +133,5 @@ permalink: /kb/136/Q136830/
 	
 	=============================================================================
 	
+
+{% endraw %}

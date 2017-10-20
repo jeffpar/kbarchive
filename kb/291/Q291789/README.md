@@ -6,6 +6,8 @@ permalink: /kb/291/Q291789/
 
 ## Q291789: HOWTO: Use WTSEnumerateSessions Terminal Server Function from VB
 
+{% raw %}
+
 	Article: Q291789
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -192,3 +194,5 @@ permalink: /kb/291/Q291789/
 	
 	=============================================================================
 	
+
+{% endraw %}

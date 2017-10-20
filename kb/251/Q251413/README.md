@@ -6,6 +6,8 @@ permalink: /kb/251/Q251413/
 
 ## Q251413: XADM: How to Export the Directory Schema
 
+{% raw %}
+
 	Article: Q251413
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -67,3 +69,5 @@ permalink: /kb/251/Q251413/
 	
 	=============================================================================
 	
+
+{% endraw %}

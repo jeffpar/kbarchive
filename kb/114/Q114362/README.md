@@ -6,6 +6,8 @@ permalink: /kb/114/Q114362/
 
 ## Q114362: Err Msg After Running BUSETUP.EXE: Wrong DBLSPACE.BIN Version
 
+{% raw %}
+
 	Article: Q114362
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.21,6.22
@@ -61,3 +63,5 @@ permalink: /kb/114/Q114362/
 	
 	=============================================================================
 	
+
+{% endraw %}

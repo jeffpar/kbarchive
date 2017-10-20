@@ -6,6 +6,8 @@ permalink: /kb/138/Q138375/
 
 ## Q138375: PRB: Errors Caused by Setting _GENMENU to an Invalid Value
 
+{% raw %}
+
 	Article: Q138375
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -86,3 +88,5 @@ permalink: /kb/138/Q138375/
 	
 	=============================================================================
 	
+
+{% endraw %}

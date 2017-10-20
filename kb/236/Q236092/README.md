@@ -6,6 +6,8 @@ permalink: /kb/236/Q236092/
 
 ## Q236092: FIX: &quot;Error Spawning 'vcspawn.exe'. The build could not be perfo
 
+{% raw %}
+
 	Article: Q236092
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -200,3 +202,5 @@ permalink: /kb/236/Q236092/
 	
 	=============================================================================
 	
+
+{% endraw %}

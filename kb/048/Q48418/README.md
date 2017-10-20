@@ -6,6 +6,8 @@ permalink: /kb/048/Q48418/
 
 ## Q48418: Water Visible Through Storm Clouds in Flight Simulator
 
+{% raw %}
+
 	Article: Q48418
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -32,3 +34,5 @@ permalink: /kb/048/Q48418/
 	
 	=============================================================================
 	
+
+{% endraw %}

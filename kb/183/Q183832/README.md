@@ -6,6 +6,8 @@ permalink: /kb/183/Q183832/
 
 ## Q183832: gethostname() Must Support Alternate Computer Names
 
+{% raw %}
+
 	Article: Q183832
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/183/Q183832/
 	
 	=============================================================================
 	
+
+{% endraw %}

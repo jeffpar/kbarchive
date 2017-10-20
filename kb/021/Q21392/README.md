@@ -6,6 +6,8 @@ permalink: /kb/021/Q21392/
 
 ## Q21392: Math Coprocessors Not Supported by Flight Simulator
 
+{% raw %}
+
 	Article: Q21392
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -26,3 +28,5 @@ permalink: /kb/021/Q21392/
 	
 	=============================================================================
 	
+
+{% endraw %}

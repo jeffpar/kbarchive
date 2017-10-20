@@ -6,6 +6,8 @@ permalink: /kb/040/Q40237/
 
 ## Q40237: Elaboration of Debug History in QuickC Version 2.00
 
+{% raw %}
+
 	Article: Q40237
 	Product(s): See article
 	Version(s): 2.00
@@ -124,3 +126,5 @@ permalink: /kb/040/Q40237/
 	To rerun your program with the same debug commands, but different
 	user input, enable the debug command tape and disable the
 	user-input tape.
+
+{% endraw %}

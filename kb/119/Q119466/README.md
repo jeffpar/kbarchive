@@ -6,6 +6,8 @@ permalink: /kb/119/Q119466/
 
 ## Q119466: Microsoft TCP/IP-32 and Sockets Support
 
+{% raw %}
+
 	Article: Q119466
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11
@@ -51,3 +53,5 @@ permalink: /kb/119/Q119466/
 	
 	=============================================================================
 	
+
+{% endraw %}

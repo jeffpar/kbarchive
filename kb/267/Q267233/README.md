@@ -6,6 +6,8 @@ permalink: /kb/267/Q267233/
 
 ## Q267233: XADM: &quot;The Client Operation Failed&quot; Err Msg Using Move Mailbox
 
+{% raw %}
+
 	Article: Q267233
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.5
@@ -65,3 +67,5 @@ permalink: /kb/267/Q267233/
 	
 	=============================================================================
 	
+
+{% endraw %}

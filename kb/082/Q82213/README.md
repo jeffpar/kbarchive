@@ -6,6 +6,8 @@ permalink: /kb/082/Q82213/
 
 ## Q82213: Media Vision Multimedia Drivers May Have Problems Installing
 
+{% raw %}
+
 	Article: Q82213
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0,3.1
@@ -63,3 +65,5 @@ permalink: /kb/082/Q82213/
 	
 	=============================================================================
 	
+
+{% endraw %}

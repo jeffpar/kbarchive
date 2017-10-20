@@ -6,6 +6,8 @@ permalink: /kb/314/Q314653/
 
 ## Q314653: FIX: Index Created via ADOX/VFP OLEDB Provider Contain TRANSFORM
 
+{% raw %}
+
 	Article: Q314653
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -142,3 +144,5 @@ permalink: /kb/314/Q314653/
 	
 	=============================================================================
 	
+
+{% endraw %}

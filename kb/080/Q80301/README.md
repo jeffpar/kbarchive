@@ -6,6 +6,8 @@ permalink: /kb/080/Q80301/
 
 ## Q80301: How to Change the MS-DOS Cursor
 
+{% raw %}
+
 	Article: Q80301
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:2.x,3.x,4.x,5.0
@@ -91,3 +93,5 @@ permalink: /kb/080/Q80301/
 	
 	=============================================================================
 	
+
+{% endraw %}

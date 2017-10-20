@@ -6,6 +6,8 @@ permalink: /kb/139/Q139982/
 
 ## Q139982: Windows NT 3.5 &amp; 3.51 Supported Network Card Drivers Location
 
+{% raw %}
+
 	Article: Q139982
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -190,3 +192,5 @@ permalink: /kb/139/Q139982/
 	
 	=============================================================================
 	
+
+{% endraw %}

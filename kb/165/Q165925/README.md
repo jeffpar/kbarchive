@@ -6,6 +6,8 @@ permalink: /kb/165/Q165925/
 
 ## Q165925: WD97: &quot;Distance From Text&quot; Property Not Applied to Inside Border
 
+{% raw %}
+
 	Article: Q165925
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -59,3 +61,5 @@ permalink: /kb/165/Q165925/
 	
 	=============================================================================
 	
+
+{% endraw %}

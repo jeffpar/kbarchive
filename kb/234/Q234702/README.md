@@ -6,6 +6,8 @@ permalink: /kb/234/Q234702/
 
 ## Q234702: XGEN: MTA Queue to Information Store Processing Slowly
 
+{% raw %}
+
 	Article: Q234702
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -128,3 +130,5 @@ permalink: /kb/234/Q234702/
 	
 	=============================================================================
 	
+
+{% endraw %}

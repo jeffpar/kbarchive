@@ -6,6 +6,8 @@ permalink: /kb/072/Q72847/
 
 ## Q72847: PC Win: Win Client Creates Shared Folders Without Privileges
 
+{% raw %}
+
 	Article: Q72847
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1
@@ -42,3 +44,5 @@ permalink: /kb/072/Q72847/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85254/
 
 ## Q85254: Only a Temporary Swap File Can Be Set Up on Banyan VINES
 
+{% raw %}
+
 	Article: Q85254
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -40,3 +42,5 @@ permalink: /kb/085/Q85254/
 	
 	=============================================================================
 	
+
+{% endraw %}

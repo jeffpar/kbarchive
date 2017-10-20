@@ -6,6 +6,8 @@ permalink: /kb/176/Q176868/
 
 ## Q176868: WD97: How to Programmatically Insert an Excel Chart into Word
 
+{% raw %}
+
 	Article: Q176868
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -110,3 +112,5 @@ permalink: /kb/176/Q176868/
 	
 	=============================================================================
 	
+
+{% endraw %}

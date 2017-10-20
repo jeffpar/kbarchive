@@ -6,6 +6,8 @@ permalink: /kb/131/Q131531/
 
 ## Q131531: Windows NT Hangs on HP Vectra VL3 5/75
 
+{% raw %}
+
 	Article: Q131531
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -55,3 +57,5 @@ permalink: /kb/131/Q131531/
 	
 	=============================================================================
 	
+
+{% endraw %}

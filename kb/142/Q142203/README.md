@@ -6,6 +6,8 @@ permalink: /kb/142/Q142203/
 
 ## Q142203: DOC: GetFileTitle() &amp; GetFileName() Docs Are Switched
 
+{% raw %}
+
 	Article: Q142203
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/142/Q142203/
 	
 	=============================================================================
 	
+
+{% endraw %}

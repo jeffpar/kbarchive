@@ -6,6 +6,8 @@ permalink: /kb/154/Q154334/
 
 ## Q154334: PROGRAMMING WINDOWS 95 Corrections and Comments
 
+{% raw %}
+
 	Article: Q154334
 	Product(s): Microsoft Press
 	Version(s): 
@@ -337,3 +339,5 @@ permalink: /kb/154/Q154334/
 	
 	=============================================================================
 	
+
+{% endraw %}

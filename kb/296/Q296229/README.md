@@ -6,6 +6,8 @@ permalink: /kb/296/Q296229/
 
 ## Q296229: XADM: Recovering Exchange Server Computer Using Online Backup
 
+{% raw %}
+
 	Article: Q296229
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -186,3 +188,5 @@ permalink: /kb/296/Q296229/
 	
 	=============================================================================
 	
+
+{% endraw %}

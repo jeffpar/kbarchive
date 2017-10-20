@@ -6,6 +6,8 @@ permalink: /kb/093/Q93075/
 
 ## Q93075: PC Win: Description of 3.0 Setup Process
 
+{% raw %}
+
 	Article: Q93075
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -175,3 +177,5 @@ permalink: /kb/093/Q93075/
 	
 	=============================================================================
 	
+
+{% endraw %}

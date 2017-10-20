@@ -6,6 +6,8 @@ permalink: /kb/188/Q188896/
 
 ## Q188896: Access Violation in Explorer.exe Changing Share Permissions
 
+{% raw %}
+
 	Article: Q188896
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0,4.0a
@@ -65,3 +67,5 @@ permalink: /kb/188/Q188896/
 	
 	=============================================================================
 	
+
+{% endraw %}

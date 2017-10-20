@@ -6,6 +6,8 @@ permalink: /kb/142/Q142660/
 
 ## Q142660: Upgrade from Uni- to Multiprocessor (Uptomp.exe) and Win32k.sys
 
+{% raw %}
+
 	Article: Q142660
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -82,3 +84,5 @@ permalink: /kb/142/Q142660/
 	
 	=============================================================================
 	
+
+{% endraw %}

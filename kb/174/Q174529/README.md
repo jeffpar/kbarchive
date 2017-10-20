@@ -6,6 +6,8 @@ permalink: /kb/174/Q174529/
 
 ## Q174529: Installing Updated NetFlex 3 Drivers During Unattended Install
 
+{% raw %}
+
 	Article: Q174529
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -69,3 +71,5 @@ permalink: /kb/174/Q174529/
 	
 	=============================================================================
 	
+
+{% endraw %}

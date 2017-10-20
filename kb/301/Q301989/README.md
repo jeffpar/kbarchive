@@ -6,6 +6,8 @@ permalink: /kb/301/Q301989/
 
 ## Q301989: HOW TO: Capture WAN Traffic with Network Monitor in Windows
 
+{% raw %}
+
 	Article: Q301989
 	Product(s): Microsoft Windows NT
 	Version(s): 2000
@@ -256,3 +258,5 @@ permalink: /kb/301/Q301989/
 	
 	=============================================================================
 	
+
+{% endraw %}

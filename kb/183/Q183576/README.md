@@ -6,6 +6,8 @@ permalink: /kb/183/Q183576/
 
 ## Q183576: Problems Using Visual Basic Sample Program (ado_vb)
 
+{% raw %}
+
 	Article: Q183576
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -70,3 +72,5 @@ permalink: /kb/183/Q183576/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/046/Q46848/
 
 ## Q46848: TAB Function Documentation Error in QuickBASIC 4.50 Manual
 
+{% raw %}
+
 	Article: Q46848
 	Product(s): See article
 	Version(s): 4.50
@@ -43,3 +45,5 @@ permalink: /kb/046/Q46848/
 	                    four
 	
 	to correspond to the code given for the TAB function.
+
+{% endraw %}

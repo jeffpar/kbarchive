@@ -6,6 +6,8 @@ permalink: /kb/176/Q176677/
 
 ## Q176677: Cinemania: Menus Do Not Fly Down When Running Windows NT 4.0
 
+{% raw %}
+
 	Article: Q176677
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition,1997 edition; winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/176/Q176677/
 	
 	=============================================================================
 	
+
+{% endraw %}

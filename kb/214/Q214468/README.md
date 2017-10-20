@@ -6,6 +6,8 @@ permalink: /kb/214/Q214468/
 
 ## Q214468: WD97: &quot;Print to File&quot; Option Set After Printing from Binder
 
+{% raw %}
+
 	Article: Q214468
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/214/Q214468/
 	
 	=============================================================================
 	
+
+{% endraw %}

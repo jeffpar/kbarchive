@@ -6,6 +6,8 @@ permalink: /kb/028/Q28502/
 
 ## Q28502: Windows 1.01 MOUSE.DRV File Included with Mouse 1.0
 
+{% raw %}
+
 	Article: Q28502
 	Product(s): See article
 	Version(s): 1.00
@@ -23,3 +25,5 @@ permalink: /kb/028/Q28502/
 	   Copy the MOUSE.DRV file to your Windows Install disk and reinstall
 	the Windows software. If you have Windows Version 1.03 or a newer
 	version, you will not have this problem.
+
+{% endraw %}

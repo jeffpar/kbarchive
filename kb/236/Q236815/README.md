@@ -6,6 +6,8 @@ permalink: /kb/236/Q236815/
 
 ## Q236815: INFO: Effects of Column and CurrentControl ControlSource Setting
 
+{% raw %}
+
 	Article: Q236815
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -79,3 +81,5 @@ permalink: /kb/236/Q236815/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192785/
 
 ## Q192785: Must Be Administrator to Eject Removable Media
 
+{% raw %}
+
 	Article: Q192785
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/192/Q192785/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174940/
 
 ## Q174940: Clients May Receive Access Denied Error
 
+{% raw %}
+
 	Article: Q174940
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/174/Q174940/
 	
 	=============================================================================
 	
+
+{% endraw %}

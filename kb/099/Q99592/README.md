@@ -6,6 +6,8 @@ permalink: /kb/099/Q99592/
 
 ## Q99592: Three Conditions Affecting Maynstream OS/2 Software
 
+{% raw %}
+
 	Article: Q99592
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/099/Q99592/
 	
 	=============================================================================
 	
+
+{% endraw %}

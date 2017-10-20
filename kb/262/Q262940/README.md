@@ -6,6 +6,8 @@ permalink: /kb/262/Q262940/
 
 ## Q262940: Age of Empires: How to Capture a Screen Shot in Age of Empires
 
+{% raw %}
+
 	Article: Q262940
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,2.0
@@ -53,3 +55,5 @@ permalink: /kb/262/Q262940/
 	
 	=============================================================================
 	
+
+{% endraw %}

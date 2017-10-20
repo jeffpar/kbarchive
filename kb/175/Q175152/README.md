@@ -6,6 +6,8 @@ permalink: /kb/175/Q175152/
 
 ## Q175152: FS98: Program Stops Responding in Introductory 737-400 Lesson
 
+{% raw %}
+
 	Article: Q175152
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -72,3 +74,5 @@ permalink: /kb/175/Q175152/
 	
 	=============================================================================
 	
+
+{% endraw %}

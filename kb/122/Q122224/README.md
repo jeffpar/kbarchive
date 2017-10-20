@@ -6,6 +6,8 @@ permalink: /kb/122/Q122224/
 
 ## Q122224: Format Limits Stripe Sets to 4 GB
 
+{% raw %}
+
 	Article: Q122224
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/122/Q122224/
 	
 	=============================================================================
 	
+
+{% endraw %}

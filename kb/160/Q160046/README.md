@@ -6,6 +6,8 @@ permalink: /kb/160/Q160046/
 
 ## Q160046: Play It!: Space Bar and Mouse May Cause Stuck MIDI Notes
 
+{% raw %}
+
 	Article: Q160046
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -54,3 +56,5 @@ permalink: /kb/160/Q160046/
 	
 	=============================================================================
 	
+
+{% endraw %}

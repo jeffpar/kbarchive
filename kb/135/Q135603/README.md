@@ -6,6 +6,8 @@ permalink: /kb/135/Q135603/
 
 ## Q135603: Customizing Microsoft Office Toolbar for Separate Memory Space
 
+{% raw %}
+
 	Article: Q135603
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.5,3.51,3.51,4.2
@@ -69,3 +71,5 @@ permalink: /kb/135/Q135603/
 	
 	=============================================================================
 	
+
+{% endraw %}

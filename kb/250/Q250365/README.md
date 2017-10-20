@@ -6,6 +6,8 @@ permalink: /kb/250/Q250365/
 
 ## Q250365: BUG: System Menu Gets Corrupted when File Dropped onto a MDI App
 
+{% raw %}
+
 	Article: Q250365
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -151,3 +153,5 @@ permalink: /kb/250/Q250365/
 	
 	=============================================================================
 	
+
+{% endraw %}

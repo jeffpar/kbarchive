@@ -6,6 +6,8 @@ permalink: /kb/121/Q121360/
 
 ## Q121360: Setting Remote Logging in SNA Server Causes RPC Busy Error
 
+{% raw %}
+
 	Article: Q121360
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1
@@ -67,3 +69,5 @@ permalink: /kb/121/Q121360/
 	
 	=============================================================================
 	
+
+{% endraw %}

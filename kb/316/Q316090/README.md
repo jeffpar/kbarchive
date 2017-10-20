@@ -6,6 +6,8 @@ permalink: /kb/316/Q316090/
 
 ## Q316090: BUG: Fatal Error C1001 When You Compile with Global Optimizer
 
+{% raw %}
+
 	Article: Q316090
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/316/Q316090/
 	
 	=============================================================================
 	
+
+{% endraw %}

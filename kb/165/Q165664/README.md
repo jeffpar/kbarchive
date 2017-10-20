@@ -6,6 +6,8 @@ permalink: /kb/165/Q165664/
 
 ## Q165664: RPC Encoding API &quot;MesInqProcEncodingId&quot; May Not Work
 
+{% raw %}
+
 	Article: Q165664
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -68,3 +70,5 @@ permalink: /kb/165/Q165664/
 	
 	=============================================================================
 	
+
+{% endraw %}

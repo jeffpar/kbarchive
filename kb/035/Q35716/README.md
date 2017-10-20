@@ -6,6 +6,8 @@ permalink: /kb/035/Q35716/
 
 ## Q35716: INPUT Hercules Cursor 2 Pixels High in GWBASIC, 1 in QB 4.50
 
+{% raw %}
+
 	Article: Q35716
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -52,3 +54,5 @@ permalink: /kb/035/Q35716/
 	INPUT x  ' Compare with a two-pixel high cursor.
 	LOCATE 1, 1, , 10, 12
 	INPUT x  ' Compare with a three-pixel high cursor.
+
+{% endraw %}

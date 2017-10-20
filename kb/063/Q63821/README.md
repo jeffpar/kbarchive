@@ -6,6 +6,8 @@ permalink: /kb/063/Q63821/
 
 ## Q63821: Problems with Word 5.0 in Windows 3.0
 
+{% raw %}
+
 	Article: Q63821
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -83,3 +85,5 @@ permalink: /kb/063/Q63821/
 	
 	=============================================================================
 	
+
+{% endraw %}

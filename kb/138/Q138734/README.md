@@ -6,6 +6,8 @@ permalink: /kb/138/Q138734/
 
 ## Q138734: BUG: Cancel Doesn't Work in RESTORE MACROS FROM GETFILE()
 
+{% raw %}
+
 	Article: Q138734
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -70,3 +72,5 @@ permalink: /kb/138/Q138734/
 	
 	=============================================================================
 	
+
+{% endraw %}

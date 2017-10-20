@@ -6,6 +6,8 @@ permalink: /kb/215/Q215554/
 
 ## Q215554: XADM: How to Change the POP3-Download Order
 
+{% raw %}
+
 	Article: Q215554
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -102,3 +104,5 @@ permalink: /kb/215/Q215554/
 	
 	=============================================================================
 	
+
+{% endraw %}

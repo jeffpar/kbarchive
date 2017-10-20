@@ -6,6 +6,8 @@ permalink: /kb/108/Q108710/
 
 ## Q108710: PRB: Extra Repaint of VB CDK Graphical Custom Control
 
+{% raw %}
+
 	Article: Q108710
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:3.0
@@ -65,3 +67,5 @@ permalink: /kb/108/Q108710/
 	
 	=============================================================================
 	
+
+{% endraw %}

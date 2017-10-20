@@ -6,6 +6,8 @@ permalink: /kb/034/Q34411/
 
 ## Q34411: Changing Height Switch Not Sufficient to Change Video Modes
 
+{% raw %}
+
 	Article: Q34411
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -38,3 +40,5 @@ permalink: /kb/034/Q34411/
 	by the TMP environment variable; if TMP is not set, M.TMP is placed in
 	the current default directory. Invoking the INITIALIZE function causes
 	M to reset the settings in M.TMP based on the settings in TOOLS.INI.
+
+{% endraw %}

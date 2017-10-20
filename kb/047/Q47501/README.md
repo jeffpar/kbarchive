@@ -6,6 +6,8 @@ permalink: /kb/047/Q47501/
 
 ## Q47501: Libraries Only Found When Linking in Environment
 
+{% raw %}
+
 	Article: Q47501
 	Product(s): See article
 	Version(s): 1.01 2.00 2.01
@@ -81,3 +83,5 @@ permalink: /kb/047/Q47501/
 	problems, but if you are experiencing problems that seem to involve
 	environment variables, it is best to delete the lines that SET them in
 	your batch files, and then completely retype them.
+
+{% endraw %}

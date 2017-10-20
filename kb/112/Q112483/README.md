@@ -6,6 +6,8 @@ permalink: /kb/112/Q112483/
 
 ## Q112483: INFO: Limitations of Run-Time MS Graph
 
+{% raw %}
+
 	Article: Q112483
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,2.5a,2.5b,3.0,3.0b,5.0,6.0
@@ -63,3 +65,5 @@ permalink: /kb/112/Q112483/
 	
 	=============================================================================
 	
+
+{% endraw %}

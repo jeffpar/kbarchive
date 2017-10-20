@@ -6,6 +6,8 @@ permalink: /kb/131/Q131168/
 
 ## Q131168: PRB: Length Not Updating Properly in Table Structure Dialog
 
+{% raw %}
+
 	Article: Q131168
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -63,3 +65,5 @@ permalink: /kb/131/Q131168/
 	
 	=============================================================================
 	
+
+{% endraw %}

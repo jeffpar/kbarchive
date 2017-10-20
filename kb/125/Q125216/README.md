@@ -6,6 +6,8 @@ permalink: /kb/125/Q125216/
 
 ## Q125216: Heavy I/O Operation Using Adaptec 1640 Causes STOP 0x0A
 
+{% raw %}
+
 	Article: Q125216
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -55,3 +57,5 @@ permalink: /kb/125/Q125216/
 	
 	=============================================================================
 	
+
+{% endraw %}

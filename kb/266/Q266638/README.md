@@ -6,6 +6,8 @@ permalink: /kb/266/Q266638/
 
 ## Q266638: XADM: Information Store Stops Responding Receiving Message
 
+{% raw %}
+
 	Article: Q266638
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -102,3 +104,5 @@ permalink: /kb/266/Q266638/
 	
 	=============================================================================
 	
+
+{% endraw %}

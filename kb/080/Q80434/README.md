@@ -6,6 +6,8 @@ permalink: /kb/080/Q80434/
 
 ## Q80434: DRIVPARM Must Be Used with Tandy 1000HX, 1000TX, 1400LT/HD
 
+{% raw %}
+
 	Article: Q80434
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -67,3 +69,5 @@ permalink: /kb/080/Q80434/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/035/Q35252/
 
 ## Q35252: M Does Not Respond to Changes in the Height Switch
 
+{% raw %}
+
 	Article: Q35252
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -24,3 +26,5 @@ permalink: /kb/035/Q35252/
 	The video mode also is stored in the M.TMP file in the directory
 	pointed to by the INIT environmental variable or the current default
 	directory.
+
+{% endraw %}

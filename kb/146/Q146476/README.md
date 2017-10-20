@@ -6,6 +6,8 @@ permalink: /kb/146/Q146476/
 
 ## Q146476: XCLN: Not Create a Rule w/ Reply Template If Signed &amp; Sealed
 
+{% raw %}
+
 	Article: Q146476
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -86,3 +88,5 @@ permalink: /kb/146/Q146476/
 	
 	=============================================================================
 	
+
+{% endraw %}

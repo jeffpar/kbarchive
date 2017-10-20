@@ -6,6 +6,8 @@ permalink: /kb/128/Q128205/
 
 ## Q128205: HOWTO: Set Buffering Mode in Visual FoxPro
 
+{% raw %}
+
 	Article: Q128205
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,6.0
@@ -101,3 +103,5 @@ permalink: /kb/128/Q128205/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151923/
 
 ## Q151923: Appointment Book Marks Accepted Even if Time is Changed
 
+{% raw %}
+
 	Article: Q151923
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -43,3 +45,5 @@ permalink: /kb/151/Q151923/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157395/
 
 ## Q157395: WD97: Tabs or Spaces Missing Using Continuous Section Break
 
+{% raw %}
+
 	Article: Q157395
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -84,3 +86,5 @@ permalink: /kb/157/Q157395/
 	
 	=============================================================================
 	
+
+{% endraw %}

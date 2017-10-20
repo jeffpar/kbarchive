@@ -6,6 +6,8 @@ permalink: /kb/061/Q61188/
 
 ## Q61188: C 6.00 README: Functions Declared as Float Now Return Float
 
+{% raw %}
+
 	Article: Q61188
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -30,3 +32,5 @@ permalink: /kb/061/Q61188/
 	code. Then compile with C 6.00. For example:
 	
 	   double func_in_51_lib( float );
+
+{% endraw %}

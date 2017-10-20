@@ -6,6 +6,8 @@ permalink: /kb/146/Q146502/
 
 ## Q146502: Which Schedule+ Meeting Time is Correct?
 
+{% raw %}
+
 	Article: Q146502
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -60,3 +62,5 @@ permalink: /kb/146/Q146502/
 	
 	=============================================================================
 	
+
+{% endraw %}

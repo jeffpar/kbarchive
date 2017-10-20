@@ -6,6 +6,8 @@ permalink: /kb/104/Q104532/
 
 ## Q104532: Norton Speed Disk May Not Recognize DoubleSpace Floppy Disk
 
+{% raw %}
+
 	Article: Q104532
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -56,3 +58,5 @@ permalink: /kb/104/Q104532/
 	
 	=============================================================================
 	
+
+{% endraw %}

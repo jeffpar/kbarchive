@@ -6,6 +6,8 @@ permalink: /kb/125/Q125933/
 
 ## Q125933: STOP 0x0000007B: Inaccessible Boot Device After Removing CD-ROM
 
+{% raw %}
+
 	Article: Q125933
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -87,3 +89,5 @@ permalink: /kb/125/Q125933/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68121/
 
 ## Q68121: Checking Game Port with CALL INTERRUPT If STICK &amp; STRIG Fail
 
+{% raw %}
+
 	Article: Q68121
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -143,3 +145,5 @@ permalink: /kb/068/Q68121/
 	
 	2. "IBM Technical Reference Options and Adapters" Volume 2, "Game
 	   Control Adapter", published by IBM
+
+{% endraw %}

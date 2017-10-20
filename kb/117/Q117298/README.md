@@ -6,6 +6,8 @@ permalink: /kb/117/Q117298/
 
 ## Q117298: Configuring NWLink Frame Type
 
+{% raw %}
+
 	Article: Q117298
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51; :
@@ -79,3 +81,5 @@ permalink: /kb/117/Q117298/
 	
 	=============================================================================
 	
+
+{% endraw %}

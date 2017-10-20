@@ -6,6 +6,8 @@ permalink: /kb/224/Q224788/
 
 ## Q224788: BUG: MFC Active Document Container Hangs When Invoking About Box
 
+{% raw %}
+
 	Article: Q224788
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -99,3 +101,5 @@ permalink: /kb/224/Q224788/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194830/
 
 ## Q194830: Unicode Character Display Problem in Full-Screen MS-DOS Session
 
+{% raw %}
+
 	Article: Q194830
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/194/Q194830/
 	
 	=============================================================================
 	
+
+{% endraw %}

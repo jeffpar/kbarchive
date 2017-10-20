@@ -6,6 +6,8 @@ permalink: /kb/077/Q77106/
 
 ## Q77106: PC Adm: Connecting Two Postoffices by Using Null Modem
 
+{% raw %}
+
 	Article: Q77106
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.0b,3.2,3.2a
@@ -68,3 +70,5 @@ permalink: /kb/077/Q77106/
 	
 	=============================================================================
 	
+
+{% endraw %}

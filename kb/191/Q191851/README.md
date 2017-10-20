@@ -6,6 +6,8 @@ permalink: /kb/191/Q191851/
 
 ## Q191851: Unattended Installation of Windows NT 4.0 Option Pack Fails
 
+{% raw %}
+
 	Article: Q191851
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/191/Q191851/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85660/
 
 ## Q85660: Setting and Saving the Terminal Screen Buffer
 
+{% raw %}
+
 	Article: Q85660
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/085/Q85660/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196389/
 
 ## Q196389: STOP 0x0000000A or STOP 0x00000050 in NTOSKRNL.EXE
 
+{% raw %}
+
 	Article: Q196389
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP3
@@ -101,3 +103,5 @@ permalink: /kb/196/Q196389/
 	
 	=============================================================================
 	
+
+{% endraw %}

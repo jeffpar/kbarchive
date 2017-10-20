@@ -6,6 +6,8 @@ permalink: /kb/029/Q29852/
 
 ## Q29852: HOWTO: Use fopen() to Append Data to File Terminated w/ CTRL+Z
 
+{% raw %}
+
 	Article: Q29852
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -57,3 +59,5 @@ permalink: /kb/029/Q29852/
 	
 	=============================================================================
 	
+
+{% endraw %}

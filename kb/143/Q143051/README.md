@@ -6,6 +6,8 @@ permalink: /kb/143/Q143051/
 
 ## Q143051: How to Install and Use CompuServe Mail with MS Exchange
 
+{% raw %}
+
 	Article: Q143051
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95
@@ -147,3 +149,5 @@ permalink: /kb/143/Q143051/
 	
 	=============================================================================
 	
+
+{% endraw %}

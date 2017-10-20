@@ -6,6 +6,8 @@ permalink: /kb/163/Q163747/
 
 ## Q163747: SMS Site to Site Communication May Lock Out Service Account
 
+{% raw %}
+
 	Article: Q163747
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -82,3 +84,5 @@ permalink: /kb/163/Q163747/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/243/Q243080/
 
 ## Q243080: XADM: Access Denied During Service Pack Update 0xc0020005
 
+{% raw %}
+
 	Article: Q243080
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5; winnt:5.0,5.5
@@ -75,3 +77,5 @@ permalink: /kb/243/Q243080/
 	
 	=============================================================================
 	
+
+{% endraw %}

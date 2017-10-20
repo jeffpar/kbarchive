@@ -6,6 +6,8 @@ permalink: /kb/148/Q148272/
 
 ## Q148272: XADM: Exchange Server Setup Halts Copying MAPI32.DLL
 
+{% raw %}
+
 	Article: Q148272
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -84,3 +86,5 @@ permalink: /kb/148/Q148272/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191310/
 
 ## Q191310: Cannot Create List with Multiple Bullets on One Line
 
+{% raw %}
+
 	Article: Q191310
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -110,3 +112,5 @@ permalink: /kb/191/Q191310/
 	
 	=============================================================================
 	
+
+{% endraw %}

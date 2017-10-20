@@ -6,6 +6,8 @@ permalink: /kb/037/Q37347/
 
 ## Q37347: &quot;Device Unavailable&quot; on OPEN &quot;COM1:&quot; Compiled with BC /O/S
 
+{% raw %}
+
 	Article: Q37347
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -38,3 +40,5 @@ permalink: /kb/037/Q37347/
 	
 	OPEN "COM1:9600,N,8,1,CS,DS" FOR RANDOM AS 1
 	CLOSE 1
+
+{% endraw %}

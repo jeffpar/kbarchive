@@ -6,6 +6,8 @@ permalink: /kb/216/Q216248/
 
 ## Q216248: PRB: IClientSecurity::CopyProxy() Leaks Memory
 
+{% raw %}
+
 	Article: Q216248
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95,98; winnt:4.0,5.0
@@ -151,3 +153,5 @@ permalink: /kb/216/Q216248/
 	
 	=============================================================================
 	
+
+{% endraw %}

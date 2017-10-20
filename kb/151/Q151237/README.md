@@ -6,6 +6,8 @@ permalink: /kb/151/Q151237/
 
 ## Q151237: Error Message When Installing TCP/IP or Adding TCP/IP Service
 
+{% raw %}
+
 	Article: Q151237
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -147,3 +149,5 @@ permalink: /kb/151/Q151237/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135048/
 
 ## Q135048: HOWTO: How to Access a Subclassed Windows Control in an OLE Cont
 
+{% raw %}
+
 	Article: Q135048
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:; :1.0,1.1,1.2
@@ -99,3 +101,5 @@ permalink: /kb/135/Q135048/
 	
 	=============================================================================
 	
+
+{% endraw %}

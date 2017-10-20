@@ -6,6 +6,8 @@ permalink: /kb/154/Q154783/
 
 ## Q154783: Msg Sent from MSMail Windows NT Client Undeliverable
 
+{% raw %}
+
 	Article: Q154783
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -92,3 +94,5 @@ permalink: /kb/154/Q154783/
 	
 	=============================================================================
 	
+
+{% endraw %}

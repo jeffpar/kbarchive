@@ -6,6 +6,8 @@ permalink: /kb/182/Q182955/
 
 ## Q182955: XWEB: Some MHTML and HTML Messages Are Not Displayed Correctly
 
+{% raw %}
+
 	Article: Q182955
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -72,3 +74,5 @@ permalink: /kb/182/Q182955/
 	
 	=============================================================================
 	
+
+{% endraw %}

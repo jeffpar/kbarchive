@@ -6,6 +6,8 @@ permalink: /kb/135/Q135192/
 
 ## Q135192: Error Message: Insufficient Memory to Initialize Windows
 
+{% raw %}
+
 	Article: Q135192
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -52,3 +54,5 @@ permalink: /kb/135/Q135192/
 	
 	=============================================================================
 	
+
+{% endraw %}

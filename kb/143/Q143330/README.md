@@ -6,6 +6,8 @@ permalink: /kb/143/Q143330/
 
 ## Q143330: FIX: Messagebox Shows in DDX_FieldCBString &amp; DDX_FieldLBString
 
+{% raw %}
+
 	Article: Q143330
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -114,3 +116,5 @@ permalink: /kb/143/Q143330/
 	
 	=============================================================================
 	
+
+{% endraw %}

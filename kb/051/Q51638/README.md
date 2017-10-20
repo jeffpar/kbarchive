@@ -6,6 +6,8 @@ permalink: /kb/051/Q51638/
 
 ## Q51638: QuickC Err Msg: Cannot Load Binary File
 
+{% raw %}
+
 	Article: Q51638
 	Product(s): See article
 	Version(s): 1.00 1.01 2.00 2.01
@@ -50,3 +52,5 @@ permalink: /kb/051/Q51638/
 	Microsoft has confirmed this to be a problem with QuickC Versions
 	1.00, 1.01, 2.00, 2.01. We are researching this problem and will post
 	new information here as it becomes available.
+
+{% endraw %}

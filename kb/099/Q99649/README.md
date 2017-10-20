@@ -6,6 +6,8 @@ permalink: /kb/099/Q99649/
 
 ## Q99649: Amstrad Notebook Computer Hangs at &quot;Starting MS-DOS...&quot; Prompt
 
+{% raw %}
+
 	Article: Q99649
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -58,3 +60,5 @@ permalink: /kb/099/Q99649/
 	
 	=============================================================================
 	
+
+{% endraw %}

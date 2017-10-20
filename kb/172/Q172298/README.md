@@ -6,6 +6,8 @@ permalink: /kb/172/Q172298/
 
 ## Q172298: SNA Manager Redraws TN5250 IP Address List Incorrectly
 
+{% raw %}
+
 	Article: Q172298
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -65,3 +67,5 @@ permalink: /kb/172/Q172298/
 	
 	=============================================================================
 	
+
+{% endraw %}

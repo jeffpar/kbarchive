@@ -6,6 +6,8 @@ permalink: /kb/190/Q190287/
 
 ## Q190287: SMS: PCM Files on SMS 1.2 SP3 Are Newer Than the Files on BORK
 
+{% raw %}
+
 	Article: Q190287
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -54,3 +56,5 @@ permalink: /kb/190/Q190287/
 	
 	=============================================================================
 	
+
+{% endraw %}

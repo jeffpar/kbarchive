@@ -6,6 +6,8 @@ permalink: /kb/085/Q85414/
 
 ## Q85414: MS-DOS 5.0a Upgrade README.TXT: Notes on Windows
 
+{% raw %}
+
 	Article: Q85414
 	Product(s): Microsoft Disk Operating System
 	Version(s): 5.0a
@@ -68,3 +70,5 @@ permalink: /kb/085/Q85414/
 	
 	=============================================================================
 	
+
+{% endraw %}

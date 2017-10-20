@@ -6,6 +6,8 @@ permalink: /kb/147/Q147281/
 
 ## Q147281: Delete Key and Delete Button Function Differently
 
+{% raw %}
+
 	Article: Q147281
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -45,3 +47,5 @@ permalink: /kb/147/Q147281/
 	
 	=============================================================================
 	
+
+{% endraw %}

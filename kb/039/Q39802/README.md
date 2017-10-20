@@ -6,6 +6,8 @@ permalink: /kb/039/Q39802/
 
 ## Q39802: INFO: Limit of Logical Coordinate System in Windows
 
+{% raw %}
+
 	Article: Q39802
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -58,3 +60,5 @@ permalink: /kb/039/Q39802/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132309/
 
 ## Q132309: Wizards Do Not Appear in ALT+TAB Task List
 
+{% raw %}
+
 	Article: Q132309
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; winnt:4.0
@@ -50,3 +52,5 @@ permalink: /kb/132/Q132309/
 	
 	=============================================================================
 	
+
+{% endraw %}

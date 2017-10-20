@@ -6,6 +6,8 @@ permalink: /kb/169/Q169543/
 
 ## Q169543: WD97: Cover Sheet Missing When Merging to Fax
 
+{% raw %}
+
 	Article: Q169543
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/169/Q169543/
 	
 	=============================================================================
 	
+
+{% endraw %}

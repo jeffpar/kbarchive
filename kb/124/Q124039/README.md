@@ -6,6 +6,8 @@ permalink: /kb/124/Q124039/
 
 ## Q124039: PC Win: Setup Err Msg: Could Not Create Directory F:&#92;TMP.INI
 
+{% raw %}
+
 	Article: Q124039
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -97,3 +99,5 @@ permalink: /kb/124/Q124039/
 	
 	=============================================================================
 	
+
+{% endraw %}

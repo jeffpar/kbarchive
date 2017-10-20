@@ -6,6 +6,8 @@ permalink: /kb/061/Q61768/
 
 ## Q61768: Hewlett-Packard Global Text Font Cartridge Description
 
+{% raw %}
+
 	Article: Q61768
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/061/Q61768/
 	
 	=============================================================================
 	
+
+{% endraw %}

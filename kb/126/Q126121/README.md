@@ -6,6 +6,8 @@ permalink: /kb/126/Q126121/
 
 ## Q126121: RUNNING MS ACCESS 2 FOR WIN: Corrections and Comments
 
+{% raw %}
+
 	Article: Q126121
 	Product(s): Microsoft Press
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/126/Q126121/
 	
 	=============================================================================
 	
+
+{% endraw %}

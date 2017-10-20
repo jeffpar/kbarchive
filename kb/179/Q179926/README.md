@@ -6,6 +6,8 @@ permalink: /kb/179/Q179926/
 
 ## Q179926: DirectX: No Sound After You Install DirectX
 
+{% raw %}
+
 	Article: Q179926
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,2.0
@@ -94,3 +96,5 @@ permalink: /kb/179/Q179926/
 	
 	=============================================================================
 	
+
+{% endraw %}

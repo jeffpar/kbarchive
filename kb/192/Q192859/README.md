@@ -6,6 +6,8 @@ permalink: /kb/192/Q192859/
 
 ## Q192859: SMS: SMS 1.2 SP4 Includes SMSIDDUP, DATDUPC, and DATDUPCL
 
+{% raw %}
+
 	Article: Q192859
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -201,3 +203,5 @@ permalink: /kb/192/Q192859/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152273/
 
 ## Q152273: DHCP Server May Give Out Duplicate IP Addresses
 
+{% raw %}
+
 	Article: Q152273
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -142,3 +144,5 @@ permalink: /kb/152/Q152273/
 	
 	=============================================================================
 	
+
+{% endraw %}

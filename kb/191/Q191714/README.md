@@ -6,6 +6,8 @@ permalink: /kb/191/Q191714/
 
 ## Q191714: INFO: Limiting the Scope of MSDN Help Topics in Visual FoxPro
 
+{% raw %}
+
 	Article: Q191714
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -75,3 +77,5 @@ permalink: /kb/191/Q191714/
 	
 	=============================================================================
 	
+
+{% endraw %}

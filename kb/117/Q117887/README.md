@@ -6,6 +6,8 @@ permalink: /kb/117/Q117887/
 
 ## Q117887: PRB: L1035 Linking MOVE Application Using a Fastcall Function
 
+{% raw %}
+
 	Article: Q117887
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:5.3,5.31,5.5,5.6
@@ -93,3 +95,5 @@ permalink: /kb/117/Q117887/
 	
 	=============================================================================
 	
+
+{% endraw %}

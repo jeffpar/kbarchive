@@ -6,6 +6,8 @@ permalink: /kb/093/Q93477/
 
 ## Q93477: Default Entries in WFWG SCHDPLUS.INI File
 
+{% raw %}
+
 	Article: Q93477
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -72,3 +74,5 @@ permalink: /kb/093/Q93477/
 	
 	=============================================================================
 	
+
+{% endraw %}

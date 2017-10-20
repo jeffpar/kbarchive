@@ -6,6 +6,8 @@ permalink: /kb/302/Q302863/
 
 ## Q302863: XFOR: How to Use the IMC Queue Dump Utility (Imcdump.exe)
 
+{% raw %}
+
 	Article: Q302863
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -100,3 +102,5 @@ permalink: /kb/302/Q302863/
 	
 	=============================================================================
 	
+
+{% endraw %}

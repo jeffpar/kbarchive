@@ -6,6 +6,8 @@ permalink: /kb/233/Q233433/
 
 ## Q233433: MSBP: Text Only Mode Unavailable When You View Wizard Interview
 
+{% raw %}
+
 	Article: Q233433
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -49,3 +51,5 @@ permalink: /kb/233/Q233433/
 	
 	=============================================================================
 	
+
+{% endraw %}

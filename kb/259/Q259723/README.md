@@ -6,6 +6,8 @@ permalink: /kb/259/Q259723/
 
 ## Q259723: FIX: Debugger Fails on Fast Dual Processors
 
+{% raw %}
+
 	Article: Q259723
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -74,3 +76,5 @@ permalink: /kb/259/Q259723/
 	
 	=============================================================================
 	
+
+{% endraw %}

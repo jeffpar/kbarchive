@@ -6,6 +6,8 @@ permalink: /kb/145/Q145995/
 
 ## Q145995: BUG: Changes to Remote Project Files Not Detected
 
+{% raw %}
+
 	Article: Q145995
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -84,3 +86,5 @@ permalink: /kb/145/Q145995/
 	
 	=============================================================================
 	
+
+{% endraw %}

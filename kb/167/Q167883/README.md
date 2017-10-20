@@ -6,6 +6,8 @@ permalink: /kb/167/Q167883/
 
 ## Q167883: WD97: Computer Hangs While Editing WordMail Template
 
+{% raw %}
+
 	Article: Q167883
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97; :4.0
@@ -99,3 +101,5 @@ permalink: /kb/167/Q167883/
 	
 	=============================================================================
 	
+
+{% endraw %}

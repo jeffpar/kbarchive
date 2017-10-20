@@ -6,6 +6,8 @@ permalink: /kb/069/Q69430/
 
 ## Q69430: Pentax IQ Scanner Does Not Run in Windows 3.0 Enhanced Mode
 
+{% raw %}
+
 	Article: Q69430
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -57,3 +59,5 @@ permalink: /kb/069/Q69430/
 	
 	=============================================================================
 	
+
+{% endraw %}

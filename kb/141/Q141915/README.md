@@ -6,6 +6,8 @@ permalink: /kb/141/Q141915/
 
 ## Q141915: PRB: Syntax Error with the Query Wizard
 
+{% raw %}
+
 	Article: Q141915
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -76,3 +78,5 @@ permalink: /kb/141/Q141915/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104734/
 
 ## Q104734: Setup Does Not Recognize Compaq XMS Device Driver
 
+{% raw %}
+
 	Article: Q104734
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -55,3 +57,5 @@ permalink: /kb/104/Q104734/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/034/Q34623/
 
 ## Q34623: _remappalette(8,_GRAY) Does Not Work Correctly
 
+{% raw %}
+
 	Article: Q34623
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -52,3 +54,5 @@ permalink: /kb/034/Q34623/
 	            }
 	            _setvideomode(_DEFAULTMODE);
 	         }
+
+{% endraw %}

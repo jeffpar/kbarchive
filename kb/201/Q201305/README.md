@@ -6,6 +6,8 @@ permalink: /kb/201/Q201305/
 
 ## Q201305: INFO: Debugging VC++ 6.0 Application in VC++ 5.0 Debugger
 
+{% raw %}
+
 	Article: Q201305
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -99,3 +101,5 @@ permalink: /kb/201/Q201305/
 	
 	=============================================================================
 	
+
+{% endraw %}

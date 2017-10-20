@@ -6,6 +6,8 @@ permalink: /kb/136/Q136743/
 
 ## Q136743: Internet Mail Message Grows in Size Using Microsoft Exchange
 
+{% raw %}
+
 	Article: Q136743
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/136/Q136743/
 	
 	=============================================================================
 	
+
+{% endraw %}

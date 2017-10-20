@@ -6,6 +6,8 @@ permalink: /kb/086/Q86895/
 
 ## Q86895: Possible Problems with Windows 3.0, 3.1 Using Setup /P
 
+{% raw %}
+
 	Article: Q86895
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a,3.1,3.11
@@ -104,3 +106,5 @@ permalink: /kb/086/Q86895/
 	
 	=============================================================================
 	
+
+{% endraw %}

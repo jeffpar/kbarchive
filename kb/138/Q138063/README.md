@@ -6,6 +6,8 @@ permalink: /kb/138/Q138063/
 
 ## Q138063: Effect of DoEvents in Visual Basic OLE Server DLLs
 
+{% raw %}
+
 	Article: Q138063
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/138/Q138063/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142836/
 
 ## Q142836: HOWTO: RDO Prepared Statements/Search Crit. to Fill Listbox
 
+{% raw %}
+
 	Article: Q142836
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/142/Q142836/
 	
 	=============================================================================
 	
+
+{% endraw %}

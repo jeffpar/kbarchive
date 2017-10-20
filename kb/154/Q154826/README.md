@@ -6,6 +6,8 @@ permalink: /kb/154/Q154826/
 
 ## Q154826: XCLN: Running English Clients on DBCS OS Is Not Supported
 
+{% raw %}
+
 	Article: Q154826
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -43,3 +45,5 @@ permalink: /kb/154/Q154826/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126614/
 
 ## Q126614: PRB: 32K Limit on Direct Parameters for 16-bit Drivers
 
+{% raw %}
+
 	Article: Q126614
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -83,3 +85,5 @@ permalink: /kb/126/Q126614/
 	
 	=============================================================================
 	
+
+{% endraw %}

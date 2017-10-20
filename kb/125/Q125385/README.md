@@ -6,6 +6,8 @@ permalink: /kb/125/Q125385/
 
 ## Q125385: File Size and Date Reported Incorrectly On NTFS Drive
 
+{% raw %}
+
 	Article: Q125385
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/125/Q125385/
 	
 	=============================================================================
 	
+
+{% endraw %}

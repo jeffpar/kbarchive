@@ -6,6 +6,8 @@ permalink: /kb/136/Q136478/
 
 ## Q136478: Cannot Enter UNC Path for Windows NT Mail .MMF File
 
+{% raw %}
+
 	Article: Q136478
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/136/Q136478/
 	
 	=============================================================================
 	
+
+{% endraw %}

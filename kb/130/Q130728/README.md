@@ -6,6 +6,8 @@ permalink: /kb/130/Q130728/
 
 ## Q130728: OLE Controls Available in Visual FoxPro
 
+{% raw %}
+
 	Article: Q130728
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -483,3 +485,5 @@ permalink: /kb/130/Q130728/
 	
 	=============================================================================
 	
+
+{% endraw %}

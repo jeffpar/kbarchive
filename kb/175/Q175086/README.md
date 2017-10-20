@@ -6,6 +6,8 @@ permalink: /kb/175/Q175086/
 
 ## Q175086: Regional Settings Specified in User Profile Are Not Applied
 
+{% raw %}
+
 	Article: Q175086
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -144,3 +146,5 @@ permalink: /kb/175/Q175086/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193322/
 
 ## Q193322: XCON: Route Selection Criteria
 
+{% raw %}
+
 	Article: Q193322
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -101,3 +103,5 @@ permalink: /kb/193/Q193322/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167217/
 
 ## Q167217: WD97: Field Switches Moved Inside Field After Saving as HTML
 
+{% raw %}
+
 	Article: Q167217
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/167/Q167217/
 	
 	=============================================================================
 	
+
+{% endraw %}

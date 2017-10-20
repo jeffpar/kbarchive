@@ -6,6 +6,8 @@ permalink: /kb/048/Q48729/
 
 ## Q48729: Absolute Coordinate of Top Left Corner for _settextwindow
 
+{% raw %}
+
 	Article: Q48729
 	Product(s): See article
 	Version(s): 2.00
@@ -23,3 +25,5 @@ permalink: /kb/048/Q48729/
 	not documented in the "Microsoft QuickC Run-Time Library Reference" or
 	the on-line help. However, it is documented in the "Microsoft QuickC
 	Graphics Library Reference" in Section 2.2 on Pages 42 and 43.
+
+{% endraw %}

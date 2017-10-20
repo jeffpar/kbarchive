@@ -6,6 +6,8 @@ permalink: /kb/097/Q97491/
 
 ## Q97491: Duplicate LOGON Names Can Disrupt Messenger Service
 
+{% raw %}
+
 	Article: Q97491
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/097/Q97491/
 	
 	=============================================================================
 	
+
+{% endraw %}

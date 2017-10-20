@@ -6,6 +6,8 @@ permalink: /kb/169/Q169486/
 
 ## Q169486: SnaBase and SNA Server Don't Accept New Client Connections
 
+{% raw %}
+
 	Article: Q169486
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -98,3 +100,5 @@ permalink: /kb/169/Q169486/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166560/
 
 ## Q166560: XGEN: German EDB Error Messages not Localized
 
+{% raw %}
+
 	Article: Q166560
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -43,3 +45,5 @@ permalink: /kb/166/Q166560/
 	
 	=============================================================================
 	
+
+{% endraw %}

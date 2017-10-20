@@ -6,6 +6,8 @@ permalink: /kb/038/Q38488/
 
 ## Q38488: Cannot Make EXE... with BRUN45.EXE if Full Menus Turned Off
 
+{% raw %}
+
 	Article: Q38488
 	Product(s): See article
 	Version(s): 4.50
@@ -25,3 +27,5 @@ permalink: /kb/038/Q38488/
 	"off."
 	
 	You can work around this limitation by turning on the Full Menus item.
+
+{% endraw %}

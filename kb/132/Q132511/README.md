@@ -6,6 +6,8 @@ permalink: /kb/132/Q132511/
 
 ## Q132511: Windows NT 3.51 Hangs on Shutdown With Some S3 Based Video Cards
 
+{% raw %}
+
 	Article: Q132511
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -56,3 +58,5 @@ permalink: /kb/132/Q132511/
 	
 	=============================================================================
 	
+
+{% endraw %}

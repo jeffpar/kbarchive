@@ -6,6 +6,8 @@ permalink: /kb/071/Q71731/
 
 ## Q71731: Installing Windows Version 3.0 on IBM L40 Laptop
 
+{% raw %}
+
 	Article: Q71731
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -97,3 +99,5 @@ permalink: /kb/071/Q71731/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142345/
 
 ## Q142345: WD97: Unable to Fax Mail Merge to Microsoft Fax from Word
 
+{% raw %}
+
 	Article: Q142345
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -116,3 +118,5 @@ permalink: /kb/142/Q142345/
 	
 	=============================================================================
 	
+
+{% endraw %}

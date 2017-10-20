@@ -6,6 +6,8 @@ permalink: /kb/085/Q85862/
 
 ## Q85862: Err Msg: Error Loading PROGMAN.EXE
 
+{% raw %}
+
 	Article: Q85862
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a,3.1,3.11,6.0,6.2,6.21,6.22
@@ -145,3 +147,5 @@ permalink: /kb/085/Q85862/
 	
 	=============================================================================
 	
+
+{% endraw %}

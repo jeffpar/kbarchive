@@ -6,6 +6,8 @@ permalink: /kb/151/Q151778/
 
 ## Q151778: Huge Downlevel Print Job Causes File Cache to Grow
 
+{% raw %}
+
 	Article: Q151778
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/151/Q151778/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148764/
 
 ## Q148764: SNA Server 2.11 Refresh Does Not Install From Floppy Disk
 
+{% raw %}
+
 	Article: Q148764
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -80,3 +82,5 @@ permalink: /kb/148/Q148764/
 	
 	=============================================================================
 	
+
+{% endraw %}

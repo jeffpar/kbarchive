@@ -6,6 +6,8 @@ permalink: /kb/289/Q289738/
 
 ## Q289738: FIX: History of a Label Does Not Show the Files from Subproject
 
+{% raw %}
+
 	Article: Q289738
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -120,3 +122,5 @@ permalink: /kb/289/Q289738/
 	
 	=============================================================================
 	
+
+{% endraw %}

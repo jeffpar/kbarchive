@@ -6,6 +6,8 @@ permalink: /kb/132/Q132544/
 
 ## Q132544: 500 Nations: README.TXT Incorrect Location of Video Drivers
 
+{% raw %}
+
 	Article: Q132544
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -41,3 +43,5 @@ permalink: /kb/132/Q132544/
 	
 	=============================================================================
 	
+
+{% endraw %}

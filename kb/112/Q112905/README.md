@@ -6,6 +6,8 @@ permalink: /kb/112/Q112905/
 
 ## Q112905: PC Adm: Err Msg: Notice 36 Error Reading Groups
 
+{% raw %}
+
 	Article: Q112905
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1x,3.0,3.0a,3.2
@@ -123,3 +125,5 @@ permalink: /kb/112/Q112905/
 	
 	=============================================================================
 	
+
+{% endraw %}

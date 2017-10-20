@@ -6,6 +6,8 @@ permalink: /kb/026/Q26548/
 
 ## Q26548: Cannot Load CTRL+Z-Terminated Files with Less than 129 Bytes
 
+{% raw %}
+
 	Article: Q26548
 	Product(s): See article
 	Version(s): 1.00 1.10 2.00 2.10
@@ -26,3 +28,5 @@ permalink: /kb/026/Q26548/
 	Microsoft has confirmed this to be a problem in Version 1.00, 1.10,
 	2.00, and 2.10. We are researching this problem and will post new
 	information as it becomes available.
+
+{% endraw %}

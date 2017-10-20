@@ -6,6 +6,8 @@ permalink: /kb/250/Q250263/
 
 ## Q250263: PDC and BDC Show as Workstations in Server Manager
 
+{% raw %}
+
 	Article: Q250263
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/250/Q250263/
 	
 	=============================================================================
 	
+
+{% endraw %}

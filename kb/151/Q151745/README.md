@@ -6,6 +6,8 @@ permalink: /kb/151/Q151745/
 
 ## Q151745: IPX Direct Hosting May Corrupt Print Jobs from WFW to WinNT
 
+{% raw %}
+
 	Article: Q151745
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11; winnt:3.5,3.51
@@ -60,3 +62,5 @@ permalink: /kb/151/Q151745/
 	
 	=============================================================================
 	
+
+{% endraw %}

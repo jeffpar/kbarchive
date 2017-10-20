@@ -6,6 +6,8 @@ permalink: /kb/199/Q199539/
 
 ## Q199539: PRB: MF1012 Error, Copying PowerPC App w/AppleTalk Under NT 4.0
 
+{% raw %}
+
 	Article: Q199539
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:4.0,4.0b
@@ -81,3 +83,5 @@ permalink: /kb/199/Q199539/
 	
 	=============================================================================
 	
+
+{% endraw %}

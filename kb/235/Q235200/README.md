@@ -6,6 +6,8 @@ permalink: /kb/235/Q235200/
 
 ## Q235200: SMS: Err Msg Using W95to98.inf to Upgrade to Windows 98 SE
 
+{% raw %}
+
 	Article: Q235200
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -68,3 +70,5 @@ permalink: /kb/235/Q235200/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123779/
 
 ## Q123779: Changing the Windows NT Computer Name on an SNA Server
 
+{% raw %}
+
 	Article: Q123779
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,2.11 SP1,3.0,3.0 SP1,4.0,4.0 SP1
@@ -88,3 +90,5 @@ permalink: /kb/123/Q123779/
 	
 	=============================================================================
 	
+
+{% endraw %}

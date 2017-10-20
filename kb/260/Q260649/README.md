@@ -6,6 +6,8 @@ permalink: /kb/260/Q260649/
 
 ## Q260649: Error Message When You Use WebDav to Copy a Large File
 
+{% raw %}
+
 	Article: Q260649
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,5.0
@@ -98,3 +100,5 @@ permalink: /kb/260/Q260649/
 	
 	=============================================================================
 	
+
+{% endraw %}

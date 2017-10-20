@@ -6,6 +6,8 @@ permalink: /kb/134/Q134543/
 
 ## Q134543: Unable to Set Up New PCMCIA Card on Single-Socket System
 
+{% raw %}
+
 	Article: Q134543
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/134/Q134543/
 	
 	=============================================================================
 	
+
+{% endraw %}

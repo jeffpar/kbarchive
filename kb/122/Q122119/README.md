@@ -6,6 +6,8 @@ permalink: /kb/122/Q122119/
 
 ## Q122119: Differences Between Schedule+ for Workgroups &amp; Retail Version
 
+{% raw %}
+
 	Article: Q122119
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -60,3 +62,5 @@ permalink: /kb/122/Q122119/
 	
 	=============================================================================
 	
+
+{% endraw %}

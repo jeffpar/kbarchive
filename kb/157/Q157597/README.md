@@ -6,6 +6,8 @@ permalink: /kb/157/Q157597/
 
 ## Q157597: BUG: 16-bit RPC Problems with Novell's Client32 for Windows 95
 
+{% raw %}
+
 	Article: Q157597
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/157/Q157597/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175407/
 
 ## Q175407: Age of Empires: Hangs During Multiplayer Game on Zone.com
 
+{% raw %}
+
 	Article: Q175407
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -73,3 +75,5 @@ permalink: /kb/175/Q175407/
 	
 	=============================================================================
 	
+
+{% endraw %}

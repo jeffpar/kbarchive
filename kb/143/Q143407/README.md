@@ -6,6 +6,8 @@ permalink: /kb/143/Q143407/
 
 ## Q143407: FIX: Buttons On Wrappable Toolbar Do Not Appear
 
+{% raw %}
+
 	Article: Q143407
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -79,3 +81,5 @@ permalink: /kb/143/Q143407/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242401/
 
 ## Q242401: HOWTO: Use a Timer With A Visual Basic SnapIn Project
 
+{% raw %}
+
 	Article: Q242401
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:1.1,1.2,6.0
@@ -116,3 +118,5 @@ permalink: /kb/242/Q242401/
 	
 	=============================================================================
 	
+
+{% endraw %}

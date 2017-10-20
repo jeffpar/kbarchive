@@ -6,6 +6,8 @@ permalink: /kb/142/Q142701/
 
 ## Q142701: SAM Does Not Replicate Members of the Administrators Alias
 
+{% raw %}
+
 	Article: Q142701
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -48,3 +50,5 @@ permalink: /kb/142/Q142701/
 	
 	=============================================================================
 	
+
+{% endraw %}

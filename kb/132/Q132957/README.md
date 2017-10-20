@@ -6,6 +6,8 @@ permalink: /kb/132/Q132957/
 
 ## Q132957: Removable-Media Drives Not Automatically Mounted at Startup
 
+{% raw %}
+
 	Article: Q132957
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/132/Q132957/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198052/
 
 ## Q198052: FIX: &quot;Out-of-Date Dependency&quot; Warning in Setup Wizard and PDW
 
+{% raw %}
+
 	Article: Q198052
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -197,3 +199,5 @@ permalink: /kb/198/Q198052/
 	
 	=============================================================================
 	
+
+{% endraw %}

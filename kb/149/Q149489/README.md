@@ -6,6 +6,8 @@ permalink: /kb/149/Q149489/
 
 ## Q149489: FIX: GotFocus Event Not Executed in Sub Main and SetFocus
 
+{% raw %}
+
 	Article: Q149489
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/149/Q149489/
 	
 	=============================================================================
 	
+
+{% endraw %}

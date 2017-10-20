@@ -6,6 +6,8 @@ permalink: /kb/047/Q47369/
 
 ## Q47369: scanf Unable to Match Extended Characters in Format String
 
+{% raw %}
+
 	Article: Q47369
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -72,3 +74,5 @@ permalink: /kb/047/Q47369/
 	    printf( "values_read = %d\n", values_read);
 	    printf( "??%lf = %lf\n\n", num, sqrt(num));
 	}
+
+{% endraw %}

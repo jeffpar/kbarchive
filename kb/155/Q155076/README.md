@@ -6,6 +6,8 @@ permalink: /kb/155/Q155076/
 
 ## Q155076: Only Admins May Log in After Applying C2 Security from Reskit
 
+{% raw %}
+
 	Article: Q155076
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -70,3 +72,5 @@ permalink: /kb/155/Q155076/
 	
 	=============================================================================
 	
+
+{% endraw %}

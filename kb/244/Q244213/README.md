@@ -6,6 +6,8 @@ permalink: /kb/244/Q244213/
 
 ## Q244213: XADM: Configuring the Mailbox Manager to Exclude Message Classes
 
+{% raw %}
+
 	Article: Q244213
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -87,3 +89,5 @@ permalink: /kb/244/Q244213/
 	
 	=============================================================================
 	
+
+{% endraw %}

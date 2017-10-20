@@ -6,6 +6,8 @@ permalink: /kb/242/Q242455/
 
 ## Q242455: Incorrect Link in Mapping Client Certificates to User Accounts
 
+{% raw %}
+
 	Article: Q242455
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -84,3 +86,5 @@ permalink: /kb/242/Q242455/
 	
 	=============================================================================
 	
+
+{% endraw %}

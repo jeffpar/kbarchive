@@ -6,6 +6,8 @@ permalink: /kb/186/Q186519/
 
 ## Q186519: Terminal Server Application Error: Duplicate NetBIOS Name
 
+{% raw %}
+
 	Article: Q186519
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -110,3 +112,5 @@ permalink: /kb/186/Q186519/
 	
 	=============================================================================
 	
+
+{% endraw %}

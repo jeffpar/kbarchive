@@ -6,6 +6,8 @@ permalink: /kb/304/Q304989/
 
 ## Q304989: PRB: Debugger Cannot Read System Symbols on Windows XP
 
+{% raw %}
+
 	Article: Q304989
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -87,3 +89,5 @@ permalink: /kb/304/Q304989/
 	
 	=============================================================================
 	
+
+{% endraw %}

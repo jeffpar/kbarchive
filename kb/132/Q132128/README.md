@@ -6,6 +6,8 @@ permalink: /kb/132/Q132128/
 
 ## Q132128: ADT2: Installing/Registering OLE Controls in Run-time App
 
+{% raw %}
+
 	Article: Q132128
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 2.0
@@ -165,3 +167,5 @@ permalink: /kb/132/Q132128/
 	
 	=============================================================================
 	
+
+{% endraw %}

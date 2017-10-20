@@ -6,6 +6,8 @@ permalink: /kb/156/Q156684/
 
 ## Q156684: How to Use NLTEST to Force a New Secure Channel
 
+{% raw %}
+
 	Article: Q156684
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:3.51 4.0
@@ -101,3 +103,5 @@ permalink: /kb/156/Q156684/
 	
 	=============================================================================
 	
+
+{% endraw %}

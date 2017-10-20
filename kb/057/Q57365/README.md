@@ -6,6 +6,8 @@ permalink: /kb/057/Q57365/
 
 ## Q57365: &quot;Subprogram Not Defined&quot; GetCopyBox, AttrBox Using GENERAL.BAS
 
+{% raw %}
+
 	Article: Q57365
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -70,3 +72,5 @@ permalink: /kb/057/Q57365/
 	a Quick library when running inside the QBX.EXE editor or in a library
 	(.LIB) that is linked to your program when running outside the
 	environment (in a compiled executable .EXE form).
+
+{% endraw %}

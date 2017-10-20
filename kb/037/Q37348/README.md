@@ -6,6 +6,8 @@ permalink: /kb/037/Q37348/
 
 ## Q37348: New COMMAND&#36; Will Not Pass with RUN from within QB Program
 
+{% raw %}
+
 	Article: Q37348
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b
@@ -42,3 +44,5 @@ permalink: /kb/037/Q37348/
 	REM   *** Prog2 ***
 	PRINT "Here is the COMMAND$: "; COMMAND$
 	END
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149017/
 
 ## Q149017: XCON: MTACheck Event IDs and Command Line Syntax
 
+{% raw %}
+
 	Article: Q149017
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -68,3 +70,5 @@ permalink: /kb/149/Q149017/
 	
 	=============================================================================
 	
+
+{% endraw %}

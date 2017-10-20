@@ -6,6 +6,8 @@ permalink: /kb/157/Q157295/
 
 ## Q157295: WD97: Can't Redefine Normal Style from Style Box
 
+{% raw %}
+
 	Article: Q157295
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/157/Q157295/
 	
 	=============================================================================
 	
+
+{% endraw %}

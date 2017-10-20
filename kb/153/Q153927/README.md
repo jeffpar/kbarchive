@@ -6,6 +6,8 @@ permalink: /kb/153/Q153927/
 
 ## Q153927: HOWTO: Create Pie Charts Using the Circle Method in VB
 
+{% raw %}
+
 	Article: Q153927
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -96,3 +98,5 @@ permalink: /kb/153/Q153927/
 	
 	=============================================================================
 	
+
+{% endraw %}

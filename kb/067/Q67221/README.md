@@ -6,6 +6,8 @@ permalink: /kb/067/Q67221/
 
 ## Q67221: Changing Decks in Solitaire with the Keyboard
 
+{% raw %}
+
 	Article: Q67221
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -42,3 +44,5 @@ permalink: /kb/067/Q67221/
 	
 	=============================================================================
 	
+
+{% endraw %}

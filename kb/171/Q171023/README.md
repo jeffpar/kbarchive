@@ -6,6 +6,8 @@ permalink: /kb/171/Q171023/
 
 ## Q171023: Program Viewer Menus Do Not Function Properly
 
+{% raw %}
+
 	Article: Q171023
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -66,3 +68,5 @@ permalink: /kb/171/Q171023/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/050/Q50588/
 
 ## Q50588: Controlling the Use of Tabs in the Microsoft Editor
 
+{% raw %}
+
 	Article: Q50588
 	Product(s): See article
 	Version(s): 1.00 1.02 | 1.00 1.02
@@ -87,3 +89,5 @@ permalink: /kb/050/Q50588/
 	The trailspace switch is needed to use tabs on blank lines. The
 	tabdisp switch may also be used with realtabs to make the tab
 	characters visible on the screen.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197366/
 
 ## Q197366: Data Corruption Recovering from Failed Mirror Set
 
+{% raw %}
+
 	Article: Q197366
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -75,3 +77,5 @@ permalink: /kb/197/Q197366/
 	
 	=============================================================================
 	
+
+{% endraw %}

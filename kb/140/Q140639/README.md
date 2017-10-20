@@ -6,6 +6,8 @@ permalink: /kb/140/Q140639/
 
 ## Q140639: Daylight Savings Time Not Advancing
 
+{% raw %}
+
 	Article: Q140639
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -75,3 +77,5 @@ permalink: /kb/140/Q140639/
 	
 	=============================================================================
 	
+
+{% endraw %}

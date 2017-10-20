@@ -6,6 +6,8 @@ permalink: /kb/095/Q95998/
 
 ## Q95998: SmartMon Incorrectly Reports Cache Status on Compressed Drive
 
+{% raw %}
+
 	Article: Q95998
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -65,3 +67,5 @@ permalink: /kb/095/Q95998/
 	
 	=============================================================================
 	
+
+{% endraw %}

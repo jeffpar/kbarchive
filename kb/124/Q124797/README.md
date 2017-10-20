@@ -6,6 +6,8 @@ permalink: /kb/124/Q124797/
 
 ## Q124797: ARP Static Cache Entries Switch to Dynamic
 
+{% raw %}
+
 	Article: Q124797
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.5; :3.11
@@ -52,3 +54,5 @@ permalink: /kb/124/Q124797/
 	
 	=============================================================================
 	
+
+{% endraw %}

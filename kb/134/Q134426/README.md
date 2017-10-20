@@ -6,6 +6,8 @@ permalink: /kb/134/Q134426/
 
 ## Q134426: File Attributes Removed Attempting to Delete Open File
 
+{% raw %}
+
 	Article: Q134426
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51
@@ -44,3 +46,5 @@ permalink: /kb/134/Q134426/
 	
 	=============================================================================
 	
+
+{% endraw %}

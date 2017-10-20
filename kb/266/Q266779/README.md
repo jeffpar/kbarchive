@@ -6,6 +6,8 @@ permalink: /kb/266/Q266779/
 
 ## Q266779: MCM/MCM2: How to Use a SideWinder Wheel in Motocross Madness
 
+{% raw %}
+
 	Article: Q266779
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0; WINDOWS:1.0
@@ -63,3 +65,5 @@ permalink: /kb/266/Q266779/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177014/
 
 ## Q177014: A Bridge Too Far: Error Message: Cannot Create Any More DC's
 
+{% raw %}
+
 	Article: Q177014
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -71,3 +73,5 @@ permalink: /kb/177/Q177014/
 	
 	=============================================================================
 	
+
+{% endraw %}

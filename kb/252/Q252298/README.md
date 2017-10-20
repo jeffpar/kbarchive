@@ -6,6 +6,8 @@ permalink: /kb/252/Q252298/
 
 ## Q252298: Error Msg &quot;Browser Error: Your Browser Sent a Malformed Request
 
+{% raw %}
+
 	Article: Q252298
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1.0,1.0a,4.0
@@ -84,3 +86,5 @@ permalink: /kb/252/Q252298/
 	
 	=============================================================================
 	
+
+{% endraw %}

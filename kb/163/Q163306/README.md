@@ -6,6 +6,8 @@ permalink: /kb/163/Q163306/
 
 ## Q163306: WD97: Squares Not Symbols in Insert Symbol Dialog Box
 
+{% raw %}
+
 	Article: Q163306
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -128,3 +130,5 @@ permalink: /kb/163/Q163306/
 	
 	=============================================================================
 	
+
+{% endraw %}

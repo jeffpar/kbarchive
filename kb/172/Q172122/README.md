@@ -6,6 +6,8 @@ permalink: /kb/172/Q172122/
 
 ## Q172122: Toshiba I586 Pro 230 MHz System and the National 307 Chip
 
+{% raw %}
+
 	Article: Q172122
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -92,3 +94,5 @@ permalink: /kb/172/Q172122/
 	
 	=============================================================================
 	
+
+{% endraw %}

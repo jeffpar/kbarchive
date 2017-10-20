@@ -6,6 +6,8 @@ permalink: /kb/245/Q245435/
 
 ## Q245435: XCLN: Attendees Deleted from Recurring Calendar Items
 
+{% raw %}
+
 	Article: Q245435
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/245/Q245435/
 	
 	=============================================================================
 	
+
+{% endraw %}

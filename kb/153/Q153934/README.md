@@ -6,6 +6,8 @@ permalink: /kb/153/Q153934/
 
 ## Q153934: IIS Converts %0D%0A to Hex 0DH and 20H When Submit to ODBC
 
+{% raw %}
+
 	Article: Q153934
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0,3.0
@@ -62,3 +64,5 @@ permalink: /kb/153/Q153934/
 	
 	=============================================================================
 	
+
+{% endraw %}

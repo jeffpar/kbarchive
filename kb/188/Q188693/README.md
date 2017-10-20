@@ -6,6 +6,8 @@ permalink: /kb/188/Q188693/
 
 ## Q188693: SNA Server Version 4.0 Service Pack 1 Updated Help File
 
+{% raw %}
+
 	Article: Q188693
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP1
@@ -53,3 +55,5 @@ permalink: /kb/188/Q188693/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/257/Q257990/
 
 ## Q257990: HOWTO: Obtain List of Pinned Files from OLE Automation in VC++
 
+{% raw %}
+
 	Article: Q257990
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -227,3 +229,5 @@ permalink: /kb/257/Q257990/
 	
 	=============================================================================
 	
+
+{% endraw %}

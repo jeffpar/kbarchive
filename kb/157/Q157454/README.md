@@ -6,6 +6,8 @@ permalink: /kb/157/Q157454/
 
 ## Q157454: PRB: Get Info Settings Not Reflected on Other WorkStations
 
+{% raw %}
+
 	Article: Q157454
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,2.6a,3.0b
@@ -77,3 +79,5 @@ permalink: /kb/157/Q157454/
 	
 	=============================================================================
 	
+
+{% endraw %}

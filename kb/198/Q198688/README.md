@@ -6,6 +6,8 @@ permalink: /kb/198/Q198688/
 
 ## Q198688: XCON: General Data Gathering Procedures for MTA Troubleshooting
 
+{% raw %}
+
 	Article: Q198688
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -308,3 +310,5 @@ permalink: /kb/198/Q198688/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153937/
 
 ## Q153937: XCLN: Creating an .SCD After Schedule+ Configured for no .SCD
 
+{% raw %}
+
 	Article: Q153937
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -65,3 +67,5 @@ permalink: /kb/153/Q153937/
 	
 	=============================================================================
 	
+
+{% endraw %}

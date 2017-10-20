@@ -6,6 +6,8 @@ permalink: /kb/058/Q58792/
 
 ## Q58792: PCOPY Can Fail from Page 0 in 43-Line Mode in SCREEN 0
 
+{% raw %}
+
 	Article: Q58792
 	Product(s): See article
 	Version(s): 7.00
@@ -43,3 +45,5 @@ permalink: /kb/058/Q58792/
 	   SLEEP
 	   SCREEN , ,0, 1
 	   END
+
+{% endraw %}

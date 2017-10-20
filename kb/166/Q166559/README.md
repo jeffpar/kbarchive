@@ -6,6 +6,8 @@ permalink: /kb/166/Q166559/
 
 ## Q166559: XCLN: Setup /q1 Ignores HomeServer &amp; MailboxName in Default.prf
 
+{% raw %}
+
 	Article: Q166559
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -72,3 +74,5 @@ permalink: /kb/166/Q166559/
 	
 	=============================================================================
 	
+
+{% endraw %}

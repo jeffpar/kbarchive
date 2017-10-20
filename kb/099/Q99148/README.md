@@ -6,6 +6,8 @@ permalink: /kb/099/Q99148/
 
 ## Q99148: Microsoft Anti-Virus CHKLIST.MS Files Explained
 
+{% raw %}
+
 	Article: Q99148
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -80,3 +82,5 @@ permalink: /kb/099/Q99148/
 	
 	=============================================================================
 	
+
+{% endraw %}

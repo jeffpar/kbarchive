@@ -6,6 +6,8 @@ permalink: /kb/275/Q275695/
 
 ## Q275695: SMS: Recovering from Wrong Sender Acct. on Secondary Site Server
 
+{% raw %}
+
 	Article: Q275695
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -79,3 +81,5 @@ permalink: /kb/275/Q275695/
 	
 	=============================================================================
 	
+
+{% endraw %}

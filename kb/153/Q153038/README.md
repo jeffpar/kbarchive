@@ -6,6 +6,8 @@ permalink: /kb/153/Q153038/
 
 ## Q153038: How to Automate Dial-Up Networking Connections
 
+{% raw %}
+
 	Article: Q153038
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; Win2000:95
@@ -109,3 +111,5 @@ permalink: /kb/153/Q153038/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162518/
 
 ## Q162518: PRB: &quot;Unexpected error; quitting&quot; Installing VB4 Application
 
+{% raw %}
+
 	Article: Q162518
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -103,3 +105,5 @@ permalink: /kb/162/Q162518/
 	
 	=============================================================================
 	
+
+{% endraw %}

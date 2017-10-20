@@ -6,6 +6,8 @@ permalink: /kb/189/Q189313/
 
 ## Q189313: SMSINST: Extract Option Truncates File Names After 19 Characters
 
+{% raw %}
+
 	Article: Q189313
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/189/Q189313/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/071/Q71697/
 
 ## Q71697: PC DOS: Creating Action Field Items for the Operator Program
 
+{% raw %}
+
 	Article: Q71697
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.0b,3.2a
@@ -52,3 +54,5 @@ permalink: /kb/071/Q71697/
 	
 	=============================================================================
 	
+
+{% endraw %}

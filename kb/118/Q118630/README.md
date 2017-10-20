@@ -6,6 +6,8 @@ permalink: /kb/118/Q118630/
 
 ## Q118630: Key Caps Desk Accessory Displays Special Characters
 
+{% raw %}
+
 	Article: Q118630
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -69,3 +71,5 @@ permalink: /kb/118/Q118630/
 	
 	=============================================================================
 	
+
+{% endraw %}

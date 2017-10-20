@@ -6,6 +6,8 @@ permalink: /kb/135/Q135406/
 
 ## Q135406: Steps to Manually Remove and Reinstall a Printer Driver
 
+{% raw %}
+
 	Article: Q135406
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.5,3.51,4.0
@@ -139,3 +141,5 @@ permalink: /kb/135/Q135406/
 	
 	=============================================================================
 	
+
+{% endraw %}

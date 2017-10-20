@@ -6,6 +6,8 @@ permalink: /kb/062/Q62184/
 
 ## Q62184: L2025: &#95;&#95;fltin with Mixed-Language FORTRAN 5.00 and C 6.00
 
+{% raw %}
+
 	Article: Q62184
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -63,3 +65,5 @@ permalink: /kb/062/Q62184/
 	Microsoft has confirmed this to be a problem with C versions 6.00 and
 	6.00a. We are researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

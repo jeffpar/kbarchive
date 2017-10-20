@@ -6,6 +6,8 @@ permalink: /kb/164/Q164000/
 
 ## Q164000: FIX: C1001 Compiler File MAIN.C Line 413
 
+{% raw %}
+
 	Article: Q164000
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2
@@ -86,3 +88,5 @@ permalink: /kb/164/Q164000/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/029/Q29201/
 
 ## Q29201: Serial Mouse: &quot;Driver Not Installed--Mouse Not Found&quot; Message
 
+{% raw %}
+
 	Article: Q29201
 	Product(s): See article
 	Version(s): 1.00
@@ -34,3 +36,5 @@ permalink: /kb/029/Q29201/
 	   If you have checked your configuration and the mouse driver does
 	not install, checking the mouse on two machines is a good isolation
 	test.
+
+{% endraw %}

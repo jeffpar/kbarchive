@@ -6,6 +6,8 @@ permalink: /kb/089/Q89572/
 
 ## Q89572: The Microsoft Setup Toolkit for Windows -- A Tutorial
 
+{% raw %}
+
 	Article: Q89572
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -578,3 +580,5 @@ permalink: /kb/089/Q89572/
 	
 	=============================================================================
 	
+
+{% endraw %}

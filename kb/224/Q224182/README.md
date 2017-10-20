@@ -6,6 +6,8 @@ permalink: /kb/224/Q224182/
 
 ## Q224182: Encarta 99: Cannot Play Some Animations Listed in the Pinpointer
 
+{% raw %}
+
 	Article: Q224182
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -61,3 +63,5 @@ permalink: /kb/224/Q224182/
 	
 	=============================================================================
 	
+
+{% endraw %}

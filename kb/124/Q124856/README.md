@@ -6,6 +6,8 @@ permalink: /kb/124/Q124856/
 
 ## Q124856: Do Not Type &quot;1&quot; in Dialing Properties to Dial Long Distance
 
+{% raw %}
+
 	Article: Q124856
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5
@@ -47,3 +49,5 @@ permalink: /kb/124/Q124856/
 	
 	=============================================================================
 	
+
+{% endraw %}

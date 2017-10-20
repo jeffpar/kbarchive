@@ -6,6 +6,8 @@ permalink: /kb/191/Q191919/
 
 ## Q191919: BUG: DataGrid Doesn't Handle Special Filter Constants Correctly
 
+{% raw %}
+
 	Article: Q191919
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.5,2.0,2.1 SP2,2.5,2.6,2.7,5.0,6.0,6.0 SP4,6.0 SP5
@@ -125,3 +127,5 @@ permalink: /kb/191/Q191919/
 	
 	=============================================================================
 	
+
+{% endraw %}

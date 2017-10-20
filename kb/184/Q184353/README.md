@@ -6,6 +6,8 @@ permalink: /kb/184/Q184353/
 
 ## Q184353: DHCP ALT+H Shortcut Key for HELP Is Not Available
 
+{% raw %}
+
 	Article: Q184353
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/184/Q184353/
 	
 	=============================================================================
 	
+
+{% endraw %}

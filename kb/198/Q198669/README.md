@@ -6,6 +6,8 @@ permalink: /kb/198/Q198669/
 
 ## Q198669: SMS: Status Message Viewer Shows Conflicting Statistics
 
+{% raw %}
+
 	Article: Q198669
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -84,3 +86,5 @@ permalink: /kb/198/Q198669/
 	
 	=============================================================================
 	
+
+{% endraw %}

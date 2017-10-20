@@ -6,6 +6,8 @@ permalink: /kb/102/Q102942/
 
 ## Q102942: Key Differences Between NetBEUI and NBF
 
+{% raw %}
+
 	Article: Q102942
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -170,3 +172,5 @@ permalink: /kb/102/Q102942/
 	
 	=============================================================================
 	
+
+{% endraw %}

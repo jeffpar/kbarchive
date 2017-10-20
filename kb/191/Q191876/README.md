@@ -6,6 +6,8 @@ permalink: /kb/191/Q191876/
 
 ## Q191876: No Prompt to Disconnect When Using Internet Explorer with MSN
 
+{% raw %}
+
 	Article: Q191876
 	Product(s): The Microsoft Network
 	Version(s): 2.51,2.6,5,5.0,5.01,5.1,5.2,5.3,5.5
@@ -81,3 +83,5 @@ permalink: /kb/191/Q191876/
 	
 	=============================================================================
 	
+
+{% endraw %}

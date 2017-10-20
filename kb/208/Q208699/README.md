@@ -6,6 +6,8 @@ permalink: /kb/208/Q208699/
 
 ## Q208699: BUG: Error &quot;&#36;(DllSelfRegisterEx) Could Not Be Registered&quot;
 
+{% raw %}
+
 	Article: Q208699
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,5.5,6.0
@@ -128,3 +130,5 @@ permalink: /kb/208/Q208699/
 	
 	=============================================================================
 	
+
+{% endraw %}

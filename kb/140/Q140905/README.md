@@ -6,6 +6,8 @@ permalink: /kb/140/Q140905/
 
 ## Q140905: PCI Device Settings Not Retained with Safe Recovery Option
 
+{% raw %}
+
 	Article: Q140905
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/140/Q140905/
 	
 	=============================================================================
 	
+
+{% endraw %}

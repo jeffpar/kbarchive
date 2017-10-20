@@ -6,6 +6,8 @@ permalink: /kb/113/Q113254/
 
 ## Q113254: INFO: Calculating MM_HIMETRIC Units for the METAFILEPICT
 
+{% raw %}
+
 	Article: Q113254
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -214,3 +216,5 @@ permalink: /kb/113/Q113254/
 	
 	=============================================================================
 	
+
+{% endraw %}

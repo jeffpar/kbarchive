@@ -6,6 +6,8 @@ permalink: /kb/173/Q173925/
 
 ## Q173925: WD97: Graphic on Select Browse Object Button Does Not Resize
 
+{% raw %}
+
 	Article: Q173925
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/173/Q173925/
 	
 	=============================================================================
 	
+
+{% endraw %}

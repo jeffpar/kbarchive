@@ -6,6 +6,8 @@ permalink: /kb/112/Q112389/
 
 ## Q112389: The Unexpected QuickWin Error
 
+{% raw %}
+
 	Article: Q112389
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -90,3 +92,5 @@ permalink: /kb/112/Q112389/
 	
 	=============================================================================
 	
+
+{% endraw %}

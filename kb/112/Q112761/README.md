@@ -6,6 +6,8 @@ permalink: /kb/112/Q112761/
 
 ## Q112761: SMTP: Maximum Number of Recipients Allowed
 
+{% raw %}
+
 	Article: Q112761
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/112/Q112761/
 	
 	=============================================================================
 	
+
+{% endraw %}

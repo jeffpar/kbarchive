@@ -6,6 +6,8 @@ permalink: /kb/129/Q129706/
 
 ## Q129706: X400: Incoming X.400 Receipt Notifications
 
+{% raw %}
+
 	Article: Q129706
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0,3.2
@@ -109,3 +111,5 @@ permalink: /kb/129/Q129706/
 	
 	=============================================================================
 	
+
+{% endraw %}

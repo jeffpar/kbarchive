@@ -6,6 +6,8 @@ permalink: /kb/190/Q190211/
 
 ## Q190211: PRB: Problems with Visual Basic 5.0 and 6.0 on the Same System
 
+{% raw %}
+
 	Article: Q190211
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -115,3 +117,5 @@ permalink: /kb/190/Q190211/
 	
 	=============================================================================
 	
+
+{% endraw %}

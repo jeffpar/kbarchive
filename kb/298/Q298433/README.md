@@ -6,6 +6,8 @@ permalink: /kb/298/Q298433/
 
 ## Q298433: SMS: Clients in Shared Subnet Don't Inst. in Multiple SMS Sites
 
+{% raw %}
+
 	Article: Q298433
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -57,3 +59,5 @@ permalink: /kb/298/Q298433/
 	
 	=============================================================================
 	
+
+{% endraw %}

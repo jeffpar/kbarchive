@@ -6,6 +6,8 @@ permalink: /kb/175/Q175926/
 
 ## Q175926: WD97: How to Select the Current Paragraph Using VBA Code
 
+{% raw %}
+
 	Article: Q175926
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -114,3 +116,5 @@ permalink: /kb/175/Q175926/
 	
 	=============================================================================
 	
+
+{% endraw %}

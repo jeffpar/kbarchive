@@ -6,6 +6,8 @@ permalink: /kb/096/Q96916/
 
 ## Q96916: PC WRmt: Problems Regaining Control with Some Screen Savers
 
+{% raw %}
+
 	Article: Q96916
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -55,3 +57,5 @@ permalink: /kb/096/Q96916/
 	
 	=============================================================================
 	
+
+{% endraw %}

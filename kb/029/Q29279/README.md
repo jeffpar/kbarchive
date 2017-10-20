@@ -6,6 +6,8 @@ permalink: /kb/029/Q29279/
 
 ## Q29279: Bus Mouse May Not Work on IRQ 2 on a 386 with OS/2
 
+{% raw %}
+
 	Article: Q29279
 	Product(s): See article
 	Version(s): 6.x 1.00
@@ -24,3 +26,5 @@ permalink: /kb/029/Q29279/
 	Although IRQ2 is not recommended for ATs or 386s, the mouse seems to
 	work without any problems in the DOS environment (using all other
 	interrupts); however, this does not seem to be the case in OS/2.
+
+{% endraw %}

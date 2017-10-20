@@ -6,6 +6,8 @@ permalink: /kb/175/Q175447/
 
 ## Q175447: XFOR: Looping Message from Microsoft Mail to Inet List Server
 
+{% raw %}
+
 	Article: Q175447
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -162,3 +164,5 @@ permalink: /kb/175/Q175447/
 	
 	=============================================================================
 	
+
+{% endraw %}

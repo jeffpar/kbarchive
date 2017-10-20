@@ -6,6 +6,8 @@ permalink: /kb/127/Q127830/
 
 ## Q127830: Time Stamps Change When Copying From NTFS to FAT
 
+{% raw %}
+
 	Article: Q127830
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,4.0
@@ -71,3 +73,5 @@ permalink: /kb/127/Q127830/
 	
 	=============================================================================
 	
+
+{% endraw %}

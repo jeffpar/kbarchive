@@ -6,6 +6,8 @@ permalink: /kb/317/Q317795/
 
 ## Q317795: SMS: The Remote Control Console Displays a Gray Screen
 
+{% raw %}
+
 	Article: Q317795
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -127,3 +129,5 @@ permalink: /kb/317/Q317795/
 	
 	=============================================================================
 	
+
+{% endraw %}

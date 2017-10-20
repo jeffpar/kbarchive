@@ -6,6 +6,8 @@ permalink: /kb/090/Q90238/
 
 ## Q90238: WFWG System Hangs After Running Central Point Backup
 
+{% raw %}
+
 	Article: Q90238
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -66,3 +68,5 @@ permalink: /kb/090/Q90238/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198929/
 
 ## Q198929: Error 'ASP 0115' Unexpected Error. A Trappable Error Occurred
 
+{% raw %}
+
 	Article: Q198929
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/198/Q198929/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160930/
 
 ## Q160930: Connecting to HP JetDirect Adapters with IPX in Windows NT
 
+{% raw %}
+
 	Article: Q160930
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/160/Q160930/
 	
 	=============================================================================
 	
+
+{% endraw %}

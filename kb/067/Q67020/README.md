@@ -6,6 +6,8 @@ permalink: /kb/067/Q67020/
 
 ## Q67020: Fontware Installation Kit Cannot Copy Typeface Information
 
+{% raw %}
+
 	Article: Q67020
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -53,3 +55,5 @@ permalink: /kb/067/Q67020/
 	
 	=============================================================================
 	
+
+{% endraw %}

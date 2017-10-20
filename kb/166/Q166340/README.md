@@ -6,6 +6,8 @@ permalink: /kb/166/Q166340/
 
 ## Q166340: Direct Cable Connection May Not Work in Localized OSR2
 
+{% raw %}
+
 	Article: Q166340
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -70,3 +72,5 @@ permalink: /kb/166/Q166340/
 	
 	=============================================================================
 	
+
+{% endraw %}

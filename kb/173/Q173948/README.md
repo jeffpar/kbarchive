@@ -6,6 +6,8 @@ permalink: /kb/173/Q173948/
 
 ## Q173948: XWEB: Text in Create New Folder Box Not Left-Justified
 
+{% raw %}
+
 	Article: Q173948
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -51,3 +53,5 @@ permalink: /kb/173/Q173948/
 	
 	=============================================================================
 	
+
+{% endraw %}

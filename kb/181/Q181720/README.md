@@ -6,6 +6,8 @@ permalink: /kb/181/Q181720/
 
 ## Q181720: PRB: MOVE 0 Works Only with RDO Server-Side Cursors
 
+{% raw %}
+
 	Article: Q181720
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -172,3 +174,5 @@ permalink: /kb/181/Q181720/
 	
 	=============================================================================
 	
+
+{% endraw %}

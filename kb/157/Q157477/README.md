@@ -6,6 +6,8 @@ permalink: /kb/157/Q157477/
 
 ## Q157477: WD97: Features Not Available During Web Authoring
 
+{% raw %}
+
 	Article: Q157477
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -170,3 +172,5 @@ permalink: /kb/157/Q157477/
 	
 	=============================================================================
 	
+
+{% endraw %}

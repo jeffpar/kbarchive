@@ -6,6 +6,8 @@ permalink: /kb/166/Q166260/
 
 ## Q166260: PRB: No Workspace or Project Files Found in Selected SCC Project
 
+{% raw %}
+
 	Article: Q166260
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/166/Q166260/
 	
 	=============================================================================
 	
+
+{% endraw %}

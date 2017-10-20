@@ -6,6 +6,8 @@ permalink: /kb/290/Q290339/
 
 ## Q290339: MCSE Readiness Review Exam 70-215 Microsoft Windows 2000 Server
 
+{% raw %}
+
 	Article: Q290339
 	Product(s): Microsoft Press
 	Version(s): 
@@ -197,3 +199,5 @@ permalink: /kb/290/Q290339/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/094/Q94185/
 
 ## Q94185: FIX: VB MCITEST CD Player Sample Displays Incorrect Track
 
+{% raw %}
+
 	Article: Q94185
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0
@@ -66,3 +68,5 @@ permalink: /kb/094/Q94185/
 	
 	=============================================================================
 	
+
+{% endraw %}

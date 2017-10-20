@@ -6,6 +6,8 @@ permalink: /kb/183/Q183347/
 
 ## Q183347: SMS: Secondary Site Upgrade Stays at Phase 4 Complete
 
+{% raw %}
+
 	Article: Q183347
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -238,3 +240,5 @@ permalink: /kb/183/Q183347/
 	
 	=============================================================================
 	
+
+{% endraw %}

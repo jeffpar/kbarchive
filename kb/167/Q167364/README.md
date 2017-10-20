@@ -6,6 +6,8 @@ permalink: /kb/167/Q167364/
 
 ## Q167364: Automating AUTOADMINLOGON Locally When Joining a Domain
 
+{% raw %}
+
 	Article: Q167364
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -190,3 +192,5 @@ permalink: /kb/167/Q167364/
 	
 	=============================================================================
 	
+
+{% endraw %}

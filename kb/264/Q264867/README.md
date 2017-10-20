@@ -6,6 +6,8 @@ permalink: /kb/264/Q264867/
 
 ## Q264867: INFO: Possible Causes of Data Corruption in Visual FoxPro
 
+{% raw %}
+
 	Article: Q264867
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -101,3 +103,5 @@ permalink: /kb/264/Q264867/
 	
 	=============================================================================
 	
+
+{% endraw %}

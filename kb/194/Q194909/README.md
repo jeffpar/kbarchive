@@ -6,6 +6,8 @@ permalink: /kb/194/Q194909/
 
 ## Q194909: LowercaseFiles Parameter Does Not Affect GET/MGET Commands
 
+{% raw %}
+
 	Article: Q194909
 	Product(s): Internet Information Server
 	Version(s): WINNT:1.0,2.0,3.0,4.0
@@ -68,3 +70,5 @@ permalink: /kb/194/Q194909/
 	
 	=============================================================================
 	
+
+{% endraw %}

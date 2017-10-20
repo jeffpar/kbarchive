@@ -6,6 +6,8 @@ permalink: /kb/280/Q280835/
 
 ## Q280835: MechWarrior 4: How to Disable the Y-Axis of Your Pointing Device
 
+{% raw %}
+
 	Article: Q280835
 	Product(s): Microsoft Home Games
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/280/Q280835/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/268/Q268499/
 
 ## Q268499: SMS: Software Distribution Does Not Function on Alpha Platform
 
+{% raw %}
+
 	Article: Q268499
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -62,3 +64,5 @@ permalink: /kb/268/Q268499/
 	
 	=============================================================================
 	
+
+{% endraw %}

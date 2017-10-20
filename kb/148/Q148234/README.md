@@ -6,6 +6,8 @@ permalink: /kb/148/Q148234/
 
 ## Q148234: XCON: Latin-1 Characters May Be Translated Incorrectly
 
+{% raw %}
+
 	Article: Q148234
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -63,3 +65,5 @@ permalink: /kb/148/Q148234/
 	
 	=============================================================================
 	
+
+{% endraw %}

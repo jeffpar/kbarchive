@@ -6,6 +6,8 @@ permalink: /kb/158/Q158454/
 
 ## Q158454: How to Install Remoteboot on Windows NT 4.0
 
+{% raw %}
+
 	Article: Q158454
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/158/Q158454/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/076/Q76298/
 
 ## Q76298: PATH Command Has No Effect in NMAKE
 
+{% raw %}
+
 	Article: Q76298
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.01,1.11,1.12,1.13,1.2,1.21,1.3,1.4,1.5
@@ -86,3 +88,5 @@ permalink: /kb/076/Q76298/
 	
 	=============================================================================
 	
+
+{% endraw %}

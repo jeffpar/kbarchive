@@ -6,6 +6,8 @@ permalink: /kb/168/Q168683/
 
 ## Q168683: Errors Installing Routing and Remote Access Using Have Disk
 
+{% raw %}
+
 	Article: Q168683
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -100,3 +102,5 @@ permalink: /kb/168/Q168683/
 	
 	=============================================================================
 	
+
+{% endraw %}

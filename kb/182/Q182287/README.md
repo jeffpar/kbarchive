@@ -6,6 +6,8 @@ permalink: /kb/182/Q182287/
 
 ## Q182287: Setting up a Canon LBP360PS Printer for LPR Printing
 
+{% raw %}
+
 	Article: Q182287
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -87,3 +89,5 @@ permalink: /kb/182/Q182287/
 	
 	=============================================================================
 	
+
+{% endraw %}

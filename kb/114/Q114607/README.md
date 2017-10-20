@@ -6,6 +6,8 @@ permalink: /kb/114/Q114607/
 
 ## Q114607: Using the Setup Toolkit's GetLocalHardDrivesList Function
 
+{% raw %}
+
 	Article: Q114607
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -63,3 +65,5 @@ permalink: /kb/114/Q114607/
 	
 	=============================================================================
 	
+
+{% endraw %}

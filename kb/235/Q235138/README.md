@@ -6,6 +6,8 @@ permalink: /kb/235/Q235138/
 
 ## Q235138: SMS: Unable to Delete Site System from Administrator UI
 
+{% raw %}
+
 	Article: Q235138
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -81,3 +83,5 @@ permalink: /kb/235/Q235138/
 	
 	=============================================================================
 	
+
+{% endraw %}

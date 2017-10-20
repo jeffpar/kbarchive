@@ -6,6 +6,8 @@ permalink: /kb/037/Q37905/
 
 ## Q37905: BASIC Sample Program for OS/2 Function Calls for DLL Modules
 
+{% raw %}
+
 	Article: Q37905
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -117,3 +119,5 @@ permalink: /kb/037/Q37905/
 	   END IF
 	END IF
 	END
+
+{% endraw %}

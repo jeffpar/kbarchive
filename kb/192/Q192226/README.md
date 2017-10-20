@@ -6,6 +6,8 @@ permalink: /kb/192/Q192226/
 
 ## Q192226: FIX: Edit/Clear From Menu Fails to Clear General Field in Editor
 
+{% raw %}
+
 	Article: Q192226
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -99,3 +101,5 @@ permalink: /kb/192/Q192226/
 	
 	=============================================================================
 	
+
+{% endraw %}

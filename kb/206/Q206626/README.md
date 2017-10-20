@@ -6,6 +6,8 @@ permalink: /kb/206/Q206626/
 
 ## Q206626: HOWTO: Change the Text Color of the Selected Property Sheet Tab
 
+{% raw %}
+
 	Article: Q206626
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2b,5.0,6.0
@@ -109,3 +111,5 @@ permalink: /kb/206/Q206626/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164822/
 
 ## Q164822: SMS: Administrator Program Cannot Find Add-in Tool
 
+{% raw %}
+
 	Article: Q164822
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -69,3 +71,5 @@ permalink: /kb/164/Q164822/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/089/Q89839/
 
 ## Q89839: WFWG Err Msg: Memory Is Insufficient to Run KRNL386.EXE
 
+{% raw %}
+
 	Article: Q89839
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -101,3 +103,5 @@ permalink: /kb/089/Q89839/
 	
 	=============================================================================
 	
+
+{% endraw %}

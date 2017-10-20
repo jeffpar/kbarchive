@@ -6,6 +6,8 @@ permalink: /kb/021/Q21815/
 
 ## Q21815: Cannot Access FIELDed Variables After CLOSE in Compiled BASIC
 
+{% raw %}
+
 	Article: Q21815
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -42,3 +44,5 @@ permalink: /kb/021/Q21815/
 	This information can also be added to Chapter 10,
 	"Compiler-Interpreter Language Differences," of the "Microsoft
 	QuickBASIC Compiler" Versions 2.0x and 3.00 manual.
+
+{% endraw %}

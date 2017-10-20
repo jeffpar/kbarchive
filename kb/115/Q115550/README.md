@@ -6,6 +6,8 @@ permalink: /kb/115/Q115550/
 
 ## Q115550: FAX: FAXVIEW.EXE Error &quot;File Cannot Be Saved&quot;
 
+{% raw %}
+
 	Article: Q115550
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.0a,3.2
@@ -49,3 +51,5 @@ permalink: /kb/115/Q115550/
 	
 	=============================================================================
 	
+
+{% endraw %}

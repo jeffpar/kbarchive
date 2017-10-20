@@ -6,6 +6,8 @@ permalink: /kb/172/Q172217/
 
 ## Q172217: ASP Returns Invalid Application Name Error Message
 
+{% raw %}
+
 	Article: Q172217
 	Product(s): Internet Information Server
 	Version(s): 3.00
@@ -97,3 +99,5 @@ permalink: /kb/172/Q172217/
 	
 	=============================================================================
 	
+
+{% endraw %}

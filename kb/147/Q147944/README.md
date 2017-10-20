@@ -6,6 +6,8 @@ permalink: /kb/147/Q147944/
 
 ## Q147944: FIX: Edit Control's Number Style Check Box Won't Stay Selected
 
+{% raw %}
+
 	Article: Q147944
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00 4.10 4.20
@@ -84,3 +86,5 @@ permalink: /kb/147/Q147944/
 	
 	=============================================================================
 	
+
+{% endraw %}

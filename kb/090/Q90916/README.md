@@ -6,6 +6,8 @@ permalink: /kb/090/Q90916/
 
 ## Q90916: Packard Bell OEM Windows Does Not Include a Drivers Disk
 
+{% raw %}
+
 	Article: Q90916
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/090/Q90916/
 	
 	=============================================================================
 	
+
+{% endraw %}

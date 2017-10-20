@@ -6,6 +6,8 @@ permalink: /kb/246/Q246483/
 
 ## Q246483: Installation Unsuccessful for 3Com 3C575-TX CardBus Network Card
 
+{% raw %}
+
 	Article: Q246483
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/246/Q246483/
 	
 	=============================================================================
 	
+
+{% endraw %}

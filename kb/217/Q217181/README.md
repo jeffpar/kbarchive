@@ -6,6 +6,8 @@ permalink: /kb/217/Q217181/
 
 ## Q217181: FIX: PROVIDER_COLUMN_ENTRY Sets DBID.eKind to DBKIND_GUID_NAME
 
+{% raw %}
+
 	Article: Q217181
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -98,3 +100,5 @@ permalink: /kb/217/Q217181/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/105/Q105106/
 
 ## Q105106: PC WFW: Mail DoubleSpace and Highest Security Options
 
+{% raw %}
+
 	Article: Q105106
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.11
@@ -68,3 +70,5 @@ permalink: /kb/105/Q105106/
 	
 	=============================================================================
 	
+
+{% endraw %}

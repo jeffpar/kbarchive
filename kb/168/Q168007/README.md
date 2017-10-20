@@ -6,6 +6,8 @@ permalink: /kb/168/Q168007/
 
 ## Q168007: FIX: Remote Debugging Very Slow in Visual C++ Version 5.0
 
+{% raw %}
+
 	Article: Q168007
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -65,3 +67,5 @@ permalink: /kb/168/Q168007/
 	
 	=============================================================================
 	
+
+{% endraw %}

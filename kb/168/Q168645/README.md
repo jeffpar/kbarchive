@@ -6,6 +6,8 @@ permalink: /kb/168/Q168645/
 
 ## Q168645: Error: Please Insert the Compaq SSD into Drive &quot;CD-ROM&quot;
 
+{% raw %}
+
 	Article: Q168645
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -79,3 +81,5 @@ permalink: /kb/168/Q168645/
 	
 	=============================================================================
 	
+
+{% endraw %}

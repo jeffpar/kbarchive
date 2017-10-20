@@ -6,6 +6,8 @@ permalink: /kb/082/Q82429/
 
 ## Q82429: No-Squint II Cursor Enhancement Package and Windows
 
+{% raw %}
+
 	Article: Q82429
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/082/Q82429/
 	
 	=============================================================================
 	
+
+{% endraw %}

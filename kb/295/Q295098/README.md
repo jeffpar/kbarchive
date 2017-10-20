@@ -6,6 +6,8 @@ permalink: /kb/295/Q295098/
 
 ## Q295098: No Automatic Virus Scanning In MSN Explorer E-mail
 
+{% raw %}
+
 	Article: Q295098
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -43,3 +45,5 @@ permalink: /kb/295/Q295098/
 	
 	=============================================================================
 	
+
+{% endraw %}

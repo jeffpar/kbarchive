@@ -6,6 +6,8 @@ permalink: /kb/234/Q234432/
 
 ## Q234432: XADM: Running Isinteg May Truncate Databases to 8 KB
 
+{% raw %}
+
 	Article: Q234432
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -88,3 +90,5 @@ permalink: /kb/234/Q234432/
 	
 	=============================================================================
 	
+
+{% endraw %}

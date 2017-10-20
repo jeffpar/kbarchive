@@ -6,6 +6,8 @@ permalink: /kb/139/Q139291/
 
 ## Q139291: HOWTO: Change the BackColor of a ToolBar When it is Docked
 
+{% raw %}
+
 	Article: Q139291
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -118,3 +120,5 @@ permalink: /kb/139/Q139291/
 	
 	=============================================================================
 	
+
+{% endraw %}

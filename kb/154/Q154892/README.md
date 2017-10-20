@@ -6,6 +6,8 @@ permalink: /kb/154/Q154892/
 
 ## Q154892: How to Disconnect DUN Connection Using the Keyboard
 
+{% raw %}
+
 	Article: Q154892
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -57,3 +59,5 @@ permalink: /kb/154/Q154892/
 	
 	=============================================================================
 	
+
+{% endraw %}

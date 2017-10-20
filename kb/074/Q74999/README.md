@@ -6,6 +6,8 @@ permalink: /kb/074/Q74999/
 
 ## Q74999: BtnBar.exe Demonstrates a Button Bar
 
+{% raw %}
+
 	Article: Q74999
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -95,3 +97,5 @@ permalink: /kb/074/Q74999/
 	
 	=============================================================================
 	
+
+{% endraw %}

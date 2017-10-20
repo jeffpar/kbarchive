@@ -6,6 +6,8 @@ permalink: /kb/184/Q184018/
 
 ## Q184018: Novell NDS for WinNT Doesn't Support Restrict Anonymous Security
 
+{% raw %}
+
 	Article: Q184018
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/184/Q184018/
 	
 	=============================================================================
 	
+
+{% endraw %}

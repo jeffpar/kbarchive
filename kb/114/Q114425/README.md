@@ -6,6 +6,8 @@ permalink: /kb/114/Q114425/
 
 ## Q114425: WFWG 3.11: How to Create a Boot Disk to Load Real-Mode Network
 
+{% raw %}
+
 	Article: Q114425
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -163,3 +165,5 @@ permalink: /kb/114/Q114425/
 	
 	=============================================================================
 	
+
+{% endraw %}

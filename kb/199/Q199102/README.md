@@ -6,6 +6,8 @@ permalink: /kb/199/Q199102/
 
 ## Q199102: SMS: How to Define a Collection Using Direct Membership Rules
 
+{% raw %}
+
 	Article: Q199102
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -107,3 +109,5 @@ permalink: /kb/199/Q199102/
 	
 	=============================================================================
 	
+
+{% endraw %}

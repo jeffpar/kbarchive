@@ -6,6 +6,8 @@ permalink: /kb/158/Q158039/
 
 ## Q158039: STL Sample for the stack::size Function
 
+{% raw %}
+
 	Article: Q158039
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -165,3 +167,5 @@ permalink: /kb/158/Q158039/
 	
 	=============================================================================
 	
+
+{% endraw %}

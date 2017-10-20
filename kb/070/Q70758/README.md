@@ -6,6 +6,8 @@ permalink: /kb/070/Q70758/
 
 ## Q70758: Floating-Point Calculations in Windows Using WIN87EM.DLL
 
+{% raw %}
+
 	Article: Q70758
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -79,3 +81,5 @@ permalink: /kb/070/Q70758/
 	
 	=============================================================================
 	
+
+{% endraw %}

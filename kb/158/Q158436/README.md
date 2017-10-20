@@ -6,6 +6,8 @@ permalink: /kb/158/Q158436/
 
 ## Q158436: WD97: Sample VB Code to Assign Clipboard Text to String Variable
 
+{% raw %}
+
 	Article: Q158436
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -100,3 +102,5 @@ permalink: /kb/158/Q158436/
 	
 	=============================================================================
 	
+
+{% endraw %}

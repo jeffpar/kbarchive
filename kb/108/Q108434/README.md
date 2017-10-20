@@ -6,6 +6,8 @@ permalink: /kb/108/Q108434/
 
 ## Q108434: FIX: CSplitterWnd Class Does Not Handle All Focus Cases
 
+{% raw %}
+
 	Article: Q108434
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0
@@ -142,3 +144,5 @@ permalink: /kb/108/Q108434/
 	
 	=============================================================================
 	
+
+{% endraw %}

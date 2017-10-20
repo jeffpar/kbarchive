@@ -6,6 +6,8 @@ permalink: /kb/236/Q236847/
 
 ## Q236847: SNACFG Should Allow Configuration of Host Security Domains
 
+{% raw %}
+
 	Article: Q236847
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2
@@ -90,3 +92,5 @@ permalink: /kb/236/Q236847/
 	
 	=============================================================================
 	
+
+{% endraw %}

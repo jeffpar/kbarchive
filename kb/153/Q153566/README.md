@@ -6,6 +6,8 @@ permalink: /kb/153/Q153566/
 
 ## Q153566: SMS: Remote Control of Schedule+ shows incorrect colors
 
+{% raw %}
+
 	Article: Q153566
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -48,3 +50,5 @@ permalink: /kb/153/Q153566/
 	
 	=============================================================================
 	
+
+{% endraw %}

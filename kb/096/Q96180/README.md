@@ -6,6 +6,8 @@ permalink: /kb/096/Q96180/
 
 ## Q96180: VSafe Err Msg: Program Is Trying to Write to Hard Disk
 
+{% raw %}
+
 	Article: Q96180
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -73,3 +75,5 @@ permalink: /kb/096/Q96180/
 	
 	=============================================================================
 	
+
+{% endraw %}

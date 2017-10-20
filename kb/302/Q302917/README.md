@@ -6,6 +6,8 @@ permalink: /kb/302/Q302917/
 
 ## Q302917: Log In Error Codes For MSN Companion
 
+{% raw %}
+
 	Article: Q302917
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -57,3 +59,5 @@ permalink: /kb/302/Q302917/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135015/
 
 ## Q135015: Explorapedia: Clearing/Removing List of User Names
 
+{% raw %}
+
 	Article: Q135015
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.2
@@ -78,3 +80,5 @@ permalink: /kb/135/Q135015/
 	
 	=============================================================================
 	
+
+{% endraw %}

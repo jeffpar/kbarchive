@@ -6,6 +6,8 @@ permalink: /kb/216/Q216990/
 
 ## Q216990: XADM: Exchange Fails to Install on Second Cluster Partition
 
+{% raw %}
+
 	Article: Q216990
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -90,3 +92,5 @@ permalink: /kb/216/Q216990/
 	
 	=============================================================================
 	
+
+{% endraw %}

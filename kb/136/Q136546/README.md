@@ -6,6 +6,8 @@ permalink: /kb/136/Q136546/
 
 ## Q136546: Help Desk Options Incorrectly Displays Error Message
 
+{% raw %}
+
 	Article: Q136546
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -48,3 +50,5 @@ permalink: /kb/136/Q136546/
 	
 	=============================================================================
 	
+
+{% endraw %}

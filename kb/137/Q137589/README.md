@@ -6,6 +6,8 @@ permalink: /kb/137/Q137589/
 
 ## Q137589: Cover Pages May Be Unavailable in Microsoft Fax
 
+{% raw %}
+
 	Article: Q137589
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -121,3 +123,5 @@ permalink: /kb/137/Q137589/
 	
 	=============================================================================
 	
+
+{% endraw %}

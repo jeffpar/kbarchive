@@ -6,6 +6,8 @@ permalink: /kb/156/Q156497/
 
 ## Q156497: Duplicate Print Output on PC-LAN Server from Windows 95 Client
 
+{% raw %}
+
 	Article: Q156497
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/156/Q156497/
 	
 	=============================================================================
 	
+
+{% endraw %}

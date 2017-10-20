@@ -6,6 +6,8 @@ permalink: /kb/138/Q138882/
 
 ## Q138882: SNA Server Windows 95 Client 5250 Applet Print Screen Fails
 
+{% raw %}
+
 	Article: Q138882
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11
@@ -59,3 +61,5 @@ permalink: /kb/138/Q138882/
 	
 	=============================================================================
 	
+
+{% endraw %}

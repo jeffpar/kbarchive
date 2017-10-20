@@ -6,6 +6,8 @@ permalink: /kb/199/Q199009/
 
 ## Q199009: EVG99: Video Playback Is Choppy or Quits Before Clip Is Finished
 
+{% raw %}
+
 	Article: Q199009
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -74,3 +76,5 @@ permalink: /kb/199/Q199009/
 	
 	=============================================================================
 	
+
+{% endraw %}

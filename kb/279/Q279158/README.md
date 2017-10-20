@@ -6,6 +6,8 @@ permalink: /kb/279/Q279158/
 
 ## Q279158: XADM: Exchange 5.5 May Not Close Registry Properly After Install
 
+{% raw %}
+
 	Article: Q279158
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -116,3 +118,5 @@ permalink: /kb/279/Q279158/
 	
 	=============================================================================
 	
+
+{% endraw %}

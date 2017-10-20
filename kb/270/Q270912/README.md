@@ -6,6 +6,8 @@ permalink: /kb/270/Q270912/
 
 ## Q270912: SMS: &quot;#&#36;#&#36;#&#36;#&#36;#&#36; ERROR&quot; Appears in Clisvc.log File
 
+{% raw %}
+
 	Article: Q270912
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -241,3 +243,5 @@ permalink: /kb/270/Q270912/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153653/
 
 ## Q153653: Remote Control: File Transfer Display Field Is Small
 
+{% raw %}
+
 	Article: Q153653
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -43,3 +45,5 @@ permalink: /kb/153/Q153653/
 	
 	=============================================================================
 	
+
+{% endraw %}

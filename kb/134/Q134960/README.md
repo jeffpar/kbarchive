@@ -6,6 +6,8 @@ permalink: /kb/134/Q134960/
 
 ## Q134960: How to Install CSNW or GSNW From Floppy Disks
 
+{% raw %}
+
 	Article: Q134960
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -130,3 +132,5 @@ permalink: /kb/134/Q134960/
 	
 	=============================================================================
 	
+
+{% endraw %}

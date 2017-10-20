@@ -6,6 +6,8 @@ permalink: /kb/170/Q170070/
 
 ## Q170070: SNA Client Allocate Requests May Hang After AS/400 IPL
 
+{% raw %}
+
 	Article: Q170070
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1
@@ -84,3 +86,5 @@ permalink: /kb/170/Q170070/
 	
 	=============================================================================
 	
+
+{% endraw %}

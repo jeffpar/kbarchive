@@ -6,6 +6,8 @@ permalink: /kb/212/Q212898/
 
 ## Q212898: SMS: Advertisement Start Time Is 1 Hour Earlier w/ IntraNetware
 
+{% raw %}
+
 	Article: Q212898
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,4.0 SP3,4.0 SP4
@@ -53,3 +55,5 @@ permalink: /kb/212/Q212898/
 	
 	=============================================================================
 	
+
+{% endraw %}

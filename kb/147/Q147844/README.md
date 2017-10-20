@@ -6,6 +6,8 @@ permalink: /kb/147/Q147844/
 
 ## Q147844: Dial-Up Networking Server Not Supported with ISDN Adapter
 
+{% raw %}
+
 	Article: Q147844
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -40,3 +42,5 @@ permalink: /kb/147/Q147844/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/047/Q47456/
 
 ## Q47456: MASM Err Msg: Error L2002: Fixup Overflow
 
+{% raw %}
+
 	Article: Q47456
 	Product(s): See article
 	Version(s): 5.10
@@ -43,3 +45,5 @@ permalink: /kb/047/Q47456/
 	     mov        word ptr ds:old_dma_vect,bx   ; (CORRECT)
 	      .
 	        end capture
+
+{% endraw %}

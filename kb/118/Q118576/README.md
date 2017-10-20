@@ -6,6 +6,8 @@ permalink: /kb/118/Q118576/
 
 ## Q118576: Machine Hangs While Downloading Files with Procomm Plus 2.0
 
+{% raw %}
+
 	Article: Q118576
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/118/Q118576/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/233/Q233492/
 
 ## Q233492: The Major Differences Between NFS Versions 2 and 3
 
+{% raw %}
+
 	Article: Q233492
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0 SP3,4.0 SP4
@@ -72,3 +74,5 @@ permalink: /kb/233/Q233492/
 	
 	=============================================================================
 	
+
+{% endraw %}

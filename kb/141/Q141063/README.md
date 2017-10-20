@@ -6,6 +6,8 @@ permalink: /kb/141/Q141063/
 
 ## Q141063: PC MAPI: How to Find the Name of the CMC DLL to Call
 
+{% raw %}
+
 	Article: Q141063
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.5
@@ -48,3 +50,5 @@ permalink: /kb/141/Q141063/
 	
 	=============================================================================
 	
+
+{% endraw %}

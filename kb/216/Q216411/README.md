@@ -6,6 +6,8 @@ permalink: /kb/216/Q216411/
 
 ## Q216411: ERRMSG: A Required Privilege Is Not Held by the Client
 
+{% raw %}
+
 	Article: Q216411
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -66,3 +68,5 @@ permalink: /kb/216/Q216411/
 	
 	=============================================================================
 	
+
+{% endraw %}

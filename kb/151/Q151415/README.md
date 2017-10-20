@@ -6,6 +6,8 @@ permalink: /kb/151/Q151415/
 
 ## Q151415: Fury3 Power Ups Symbol Not Anchored On The Instrument Panel
 
+{% raw %}
+
 	Article: Q151415
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -42,3 +44,5 @@ permalink: /kb/151/Q151415/
 	
 	=============================================================================
 	
+
+{% endraw %}

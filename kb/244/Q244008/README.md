@@ -6,6 +6,8 @@ permalink: /kb/244/Q244008/
 
 ## Q244008: XFOR: How to Restrict SMTP Access
 
+{% raw %}
+
 	Article: Q244008
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -84,3 +86,5 @@ permalink: /kb/244/Q244008/
 	
 	=============================================================================
 	
+
+{% endraw %}

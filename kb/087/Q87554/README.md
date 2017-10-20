@@ -6,6 +6,8 @@ permalink: /kb/087/Q87554/
 
 ## Q87554: BUG: CArchiveException for Read-only and Write-only Files
 
+{% raw %}
+
 	Article: Q87554
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -69,3 +71,5 @@ permalink: /kb/087/Q87554/
 	
 	=============================================================================
 	
+
+{% endraw %}

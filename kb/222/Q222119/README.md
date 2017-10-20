@@ -6,6 +6,8 @@ permalink: /kb/222/Q222119/
 
 ## Q222119: SNA Server Fails With Event 686 Using Persistent Verification
 
+{% raw %}
+
 	Article: Q222119
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0SP3,4.0,4.0SP1,4.0SP2
@@ -82,3 +84,5 @@ permalink: /kb/222/Q222119/
 	
 	=============================================================================
 	
+
+{% endraw %}

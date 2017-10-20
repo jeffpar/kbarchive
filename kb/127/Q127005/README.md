@@ -6,6 +6,8 @@ permalink: /kb/127/Q127005/
 
 ## Q127005: PRB: UP/DOWN Arrow Keys Call Click Event in Form
 
+{% raw %}
+
 	Article: Q127005
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -113,3 +115,5 @@ permalink: /kb/127/Q127005/
 	
 	=============================================================================
 	
+
+{% endraw %}

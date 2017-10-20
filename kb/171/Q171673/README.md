@@ -6,6 +6,8 @@ permalink: /kb/171/Q171673/
 
 ## Q171673: FP: How to Use Microsoft Forms 2.0 ActiveX Controls
 
+{% raw %}
+
 	Article: Q171673
 	Product(s): Word Front Page
 	Version(s): 
@@ -605,3 +607,5 @@ permalink: /kb/171/Q171673/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142994/
 
 ## Q142994: Known Issues Concerning Bulletin Boards on MSN
 
+{% raw %}
+
 	Article: Q142994
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -114,3 +116,5 @@ permalink: /kb/142/Q142994/
 	
 	=============================================================================
 	
+
+{% endraw %}

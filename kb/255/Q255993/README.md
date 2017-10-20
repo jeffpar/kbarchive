@@ -6,6 +6,8 @@ permalink: /kb/255/Q255993/
 
 ## Q255993: Allegiance: Game Hangs Before the Introductory Movie Is Played
 
+{% raw %}
+
 	Article: Q255993
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -44,3 +46,5 @@ permalink: /kb/255/Q255993/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186198/
 
 ## Q186198: PRB: ClassWizard Binds Fields in Incorrect Order Causing Errors
 
+{% raw %}
+
 	Article: Q186198
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0, 6.0
@@ -106,3 +108,5 @@ permalink: /kb/186/Q186198/
 	
 	=============================================================================
 	
+
+{% endraw %}

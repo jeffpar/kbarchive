@@ -6,6 +6,8 @@ permalink: /kb/174/Q174251/
 
 ## Q174251: FS98/2000: How to Enable 3D Hardware Acceleration
 
+{% raw %}
+
 	Article: Q174251
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -133,3 +135,5 @@ permalink: /kb/174/Q174251/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138701/
 
 ## Q138701: Controlling Server Hard Disk Space Allocated to Users
 
+{% raw %}
+
 	Article: Q138701
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/138/Q138701/
 	
 	=============================================================================
 	
+
+{% endraw %}

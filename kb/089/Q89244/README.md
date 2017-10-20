@@ -6,6 +6,8 @@ permalink: /kb/089/Q89244/
 
 ## Q89244: Banyan VINES 4.0 Does Not Support File Manager 3.0 Drags
 
+{% raw %}
+
 	Article: Q89244
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/089/Q89244/
 	
 	=============================================================================
 	
+
+{% endraw %}

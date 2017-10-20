@@ -6,6 +6,8 @@ permalink: /kb/115/Q115258/
 
 ## Q115258: NewGen ImagerPlus 12 Printer Emulations
 
+{% raw %}
+
 	Article: Q115258
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): WINDOWS:3.1,6.0,6.0a
@@ -69,3 +71,5 @@ permalink: /kb/115/Q115258/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/250/Q250684/
 
 ## Q250684: Err Msg: &lt;Program&gt; Executed Invalid Instruction in &lt;Program&gt;.icd
 
+{% raw %}
+
 	Article: Q250684
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,2.0
@@ -66,3 +68,5 @@ permalink: /kb/250/Q250684/
 	
 	=============================================================================
 	
+
+{% endraw %}

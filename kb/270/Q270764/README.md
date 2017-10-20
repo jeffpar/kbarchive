@@ -6,6 +6,8 @@ permalink: /kb/270/Q270764/
 
 ## Q270764: ELL: Microphone Wizard Does Not Adjust Volume
 
+{% raw %}
+
 	Article: Q270764
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/270/Q270764/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120922/
 
 ## Q120922: Visual C++ Vers 2.0 README.WRI, Part 6 Internationalization
 
+{% raw %}
+
 	Article: Q120922
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0
@@ -63,3 +65,5 @@ permalink: /kb/120/Q120922/
 	
 	=============================================================================
 	
+
+{% endraw %}

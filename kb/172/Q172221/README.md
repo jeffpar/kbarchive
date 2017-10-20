@@ -6,6 +6,8 @@ permalink: /kb/172/Q172221/
 
 ## Q172221: How to Move One or More Zone Files to a New WinNT DNS Server
 
+{% raw %}
+
 	Article: Q172221
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -155,3 +157,5 @@ permalink: /kb/172/Q172221/
 	
 	=============================================================================
 	
+
+{% endraw %}

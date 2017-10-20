@@ -6,6 +6,8 @@ permalink: /kb/299/Q299425/
 
 ## Q299425: Document Location for Passport Implementation on Unix Systems
 
+{% raw %}
+
 	Article: Q299425
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -47,3 +49,5 @@ permalink: /kb/299/Q299425/
 	
 	=============================================================================
 	
+
+{% endraw %}

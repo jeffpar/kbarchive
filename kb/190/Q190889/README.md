@@ -6,6 +6,8 @@ permalink: /kb/190/Q190889/
 
 ## Q190889: Configuring Hayes Modem for SNA Server Switched Line
 
+{% raw %}
+
 	Article: Q190889
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -77,3 +79,5 @@ permalink: /kb/190/Q190889/
 	
 	=============================================================================
 	
+
+{% endraw %}

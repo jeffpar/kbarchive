@@ -6,6 +6,8 @@ permalink: /kb/139/Q139835/
 
 ## Q139835: FIX: TTOD() Returns Incorrect Date with Time of 12:00:00 AM
 
+{% raw %}
+
 	Article: Q139835
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -81,3 +83,5 @@ permalink: /kb/139/Q139835/
 	
 	=============================================================================
 	
+
+{% endraw %}

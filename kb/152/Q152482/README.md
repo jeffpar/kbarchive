@@ -6,6 +6,8 @@ permalink: /kb/152/Q152482/
 
 ## Q152482: FIX: Error: Undefined Symbol 'DOC' from Custom AppWizard
 
+{% raw %}
+
 	Article: Q152482
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -95,3 +97,5 @@ permalink: /kb/152/Q152482/
 	
 	=============================================================================
 	
+
+{% endraw %}

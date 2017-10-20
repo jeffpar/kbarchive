@@ -6,6 +6,8 @@ permalink: /kb/221/Q221737/
 
 ## Q221737: FIX: C0000005 Fatal Error With SET('RELATION') Function
 
+{% raw %}
+
 	Article: Q221737
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -119,3 +121,5 @@ permalink: /kb/221/Q221737/
 	
 	=============================================================================
 	
+
+{% endraw %}

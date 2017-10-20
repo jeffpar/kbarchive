@@ -6,6 +6,8 @@ permalink: /kb/251/Q251309/
 
 ## Q251309: How to Enable Line Printer Remote Printing on Macintosh Clients
 
+{% raw %}
+
 	Article: Q251309
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/251/Q251309/
 	
 	=============================================================================
 	
+
+{% endraw %}

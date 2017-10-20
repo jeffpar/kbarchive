@@ -6,6 +6,8 @@ permalink: /kb/139/Q139349/
 
 ## Q139349: FIX: C2607 Error Passing Ref to Pointer w/ Templated Functions
 
+{% raw %}
+
 	Article: Q139349
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.20
@@ -108,3 +110,5 @@ permalink: /kb/139/Q139349/
 	
 	=============================================================================
 	
+
+{% endraw %}

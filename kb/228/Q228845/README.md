@@ -6,6 +6,8 @@ permalink: /kb/228/Q228845/
 
 ## Q228845: Zone Transfers Are Incomplete When Deleting a Delegation
 
+{% raw %}
+
 	Article: Q228845
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -108,3 +110,5 @@ permalink: /kb/228/Q228845/
 	
 	=============================================================================
 	
+
+{% endraw %}

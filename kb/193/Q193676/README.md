@@ -6,6 +6,8 @@ permalink: /kb/193/Q193676/
 
 ## Q193676: PC DirSync: Problem using Outlook Journaling on MSMail PO
 
+{% raw %}
+
 	Article: Q193676
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -57,3 +59,5 @@ permalink: /kb/193/Q193676/
 	
 	=============================================================================
 	
+
+{% endraw %}

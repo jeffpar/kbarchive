@@ -6,6 +6,8 @@ permalink: /kb/257/Q257586/
 
 ## Q257586: Description of Client Authentication Process During SSLHandshake
 
+{% raw %}
+
 	Article: Q257586
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -117,3 +119,5 @@ permalink: /kb/257/Q257586/
 	
 	=============================================================================
 	
+
+{% endraw %}

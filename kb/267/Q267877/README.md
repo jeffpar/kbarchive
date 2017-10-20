@@ -6,6 +6,8 @@ permalink: /kb/267/Q267877/
 
 ## Q267877: Error Message: Username Not Found
 
+{% raw %}
+
 	Article: Q267877
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2000
@@ -117,3 +119,5 @@ permalink: /kb/267/Q267877/
 	
 	=============================================================================
 	
+
+{% endraw %}

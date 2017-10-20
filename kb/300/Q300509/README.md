@@ -6,6 +6,8 @@ permalink: /kb/300/Q300509/
 
 ## Q300509: IIS5: Hardware Load Balance Does Not Detect a Stopped Web Site
 
+{% raw %}
+
 	Article: Q300509
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -61,3 +63,5 @@ permalink: /kb/300/Q300509/
 	
 	=============================================================================
 	
+
+{% endraw %}

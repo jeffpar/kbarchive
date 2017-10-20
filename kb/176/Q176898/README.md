@@ -6,6 +6,8 @@ permalink: /kb/176/Q176898/
 
 ## Q176898: FTP &quot;Resume&quot; Functionality Not Supported
 
+{% raw %}
+
 	Article: Q176898
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:1.0; winnt:1.0,2.0,3.0,4.0
@@ -38,3 +40,5 @@ permalink: /kb/176/Q176898/
 	
 	=============================================================================
 	
+
+{% endraw %}

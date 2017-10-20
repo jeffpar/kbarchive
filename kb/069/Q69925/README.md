@@ -6,6 +6,8 @@ permalink: /kb/069/Q69925/
 
 ## Q69925: Running Recorder Lesson in Windows Class-in-the-Box
 
+{% raw %}
+
 	Article: Q69925
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a
@@ -63,3 +65,5 @@ permalink: /kb/069/Q69925/
 	
 	=============================================================================
 	
+
+{% endraw %}

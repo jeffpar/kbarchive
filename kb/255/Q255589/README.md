@@ -6,6 +6,8 @@ permalink: /kb/255/Q255589/
 
 ## Q255589: Common Name Connector Space Is Not Synchronized with the Connect
 
+{% raw %}
+
 	Article: Q255589
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -67,3 +69,5 @@ permalink: /kb/255/Q255589/
 	
 	=============================================================================
 	
+
+{% endraw %}

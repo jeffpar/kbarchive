@@ -6,6 +6,8 @@ permalink: /kb/219/Q219956/
 
 ## Q219956: PRB: Too Many Files Open Running  VFP on Windows Terminal Server
 
+{% raw %}
+
 	Article: Q219956
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6,2.6a,3.0,3.0b,5.0,5.0a,6.0; winnt:4.0
@@ -113,3 +115,5 @@ permalink: /kb/219/Q219956/
 	
 	=============================================================================
 	
+
+{% endraw %}

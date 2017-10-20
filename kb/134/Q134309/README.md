@@ -6,6 +6,8 @@ permalink: /kb/134/Q134309/
 
 ## Q134309: PRB: Timer Event Does Not Fire If Timer Object Is on a Toolbar
 
+{% raw %}
+
 	Article: Q134309
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -78,3 +80,5 @@ permalink: /kb/134/Q134309/
 	
 	=============================================================================
 	
+
+{% endraw %}

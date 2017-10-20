@@ -6,6 +6,8 @@ permalink: /kb/125/Q125473/
 
 ## Q125473: DOC: Pass Counts for Breakpoints Undocumented
 
+{% raw %}
+
 	Article: Q125473
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,6.0
@@ -49,3 +51,5 @@ permalink: /kb/125/Q125473/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195889/
 
 ## Q195889: SnaBase Fails To Start When Using Novell's IntraNetware Client
 
+{% raw %}
+
 	Article: Q195889
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -59,3 +61,5 @@ permalink: /kb/195/Q195889/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/299/Q299671/
 
 ## Q299671: Convert.exe Tool Causes Desktop Shortcuts to Prompt for Password
 
+{% raw %}
+
 	Article: Q299671
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/299/Q299671/
 	
 	=============================================================================
 	
+
+{% endraw %}

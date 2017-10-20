@@ -6,6 +6,8 @@ permalink: /kb/123/Q123411/
 
 ## Q123411: BIOS and System Vendors That MSD.EXE Identifies
 
+{% raw %}
+
 	Article: Q123411
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -102,3 +104,5 @@ permalink: /kb/123/Q123411/
 	
 	=============================================================================
 	
+
+{% endraw %}

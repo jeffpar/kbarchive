@@ -6,6 +6,8 @@ permalink: /kb/172/Q172931/
 
 ## Q172931: Cached Logon Information
 
+{% raw %}
+
 	Article: Q172931
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.51,4.0
@@ -95,3 +97,5 @@ permalink: /kb/172/Q172931/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139760/
 
 ## Q139760: Baseball 1995: Ballpark Scrolling in Alphabetical Order Only
 
+{% raw %}
+
 	Article: Q139760
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -39,3 +41,5 @@ permalink: /kb/139/Q139760/
 	
 	=============================================================================
 	
+
+{% endraw %}

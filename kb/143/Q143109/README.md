@@ -6,6 +6,8 @@ permalink: /kb/143/Q143109/
 
 ## Q143109: BUG: Debugger Shows Incorrect &quot;this&quot; Pointer
 
+{% raw %}
+
 	Article: Q143109
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -146,3 +148,5 @@ permalink: /kb/143/Q143109/
 	
 	=============================================================================
 	
+
+{% endraw %}

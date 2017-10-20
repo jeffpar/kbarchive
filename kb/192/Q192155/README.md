@@ -6,6 +6,8 @@ permalink: /kb/192/Q192155/
 
 ## Q192155: PRB: Internal Error Occurred While Loading the HTML Template
 
+{% raw %}
+
 	Article: Q192155
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -69,3 +71,5 @@ permalink: /kb/192/Q192155/
 	
 	=============================================================================
 	
+
+{% endraw %}

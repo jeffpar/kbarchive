@@ -6,6 +6,8 @@ permalink: /kb/046/Q46993/
 
 ## Q46993: C Version 5.10 Does Not Handle const Keyword Like ANSI
 
+{% raw %}
+
 	Article: Q46993
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -66,3 +68,5 @@ permalink: /kb/046/Q46993/
 	Note that the above four examples do not work correctly on Version
 	5.10. This feature is under review and should be fixed in the next
 	release.
+
+{% endraw %}

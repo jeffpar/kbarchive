@@ -6,6 +6,8 @@ permalink: /kb/201/Q201321/
 
 ## Q201321: HOWTO: Alternative Implementation of ATL Singleton
 
+{% raw %}
+
 	Article: Q201321
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -219,3 +221,5 @@ permalink: /kb/201/Q201321/
 	
 	=============================================================================
 	
+
+{% endraw %}

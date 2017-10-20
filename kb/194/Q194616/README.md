@@ -6,6 +6,8 @@ permalink: /kb/194/Q194616/
 
 ## Q194616: FIX: error CBE7002: Failed assertion &quot;lab&quot; ascoff.cpp, line 769
 
+{% raw %}
+
 	Article: Q194616
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:
@@ -90,3 +92,5 @@ permalink: /kb/194/Q194616/
 	
 	=============================================================================
 	
+
+{% endraw %}

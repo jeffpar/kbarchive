@@ -6,6 +6,8 @@ permalink: /kb/216/Q216444/
 
 ## Q216444: Logon Script in a Windows NT Domain Runs Sporadically
 
+{% raw %}
+
 	Article: Q216444
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/216/Q216444/
 	
 	=============================================================================
 	
+
+{% endraw %}

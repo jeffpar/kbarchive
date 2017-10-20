@@ -6,6 +6,8 @@ permalink: /kb/249/Q249904/
 
 ## Q249904: XADM: Deleting Damaged IMS Object in Raw Mode
 
+{% raw %}
+
 	Article: Q249904
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -60,3 +62,5 @@ permalink: /kb/249/Q249904/
 	
 	=============================================================================
 	
+
+{% endraw %}

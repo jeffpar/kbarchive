@@ -6,6 +6,8 @@ permalink: /kb/166/Q166638/
 
 ## Q166638: How the Default User Policy Is Implemented
 
+{% raw %}
+
 	Article: Q166638
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -73,3 +75,5 @@ permalink: /kb/166/Q166638/
 	
 	=============================================================================
 	
+
+{% endraw %}

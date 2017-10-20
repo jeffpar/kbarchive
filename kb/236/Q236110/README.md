@@ -6,6 +6,8 @@ permalink: /kb/236/Q236110/
 
 ## Q236110: OLE DB for DB2 Provider Hangs on Non-Trusted Windows 95/98
 
+{% raw %}
+
 	Article: Q236110
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -94,3 +96,5 @@ permalink: /kb/236/Q236110/
 	
 	=============================================================================
 	
+
+{% endraw %}

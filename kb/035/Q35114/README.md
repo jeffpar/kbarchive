@@ -6,6 +6,8 @@ permalink: /kb/035/Q35114/
 
 ## Q35114: PRB: Comparison of a Constant and a Relocatable Is Not Allowed
 
+{% raw %}
+
 	Article: Q35114
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a,6.0,6.0a,6.0b
@@ -81,3 +83,5 @@ permalink: /kb/035/Q35114/
 	
 	=============================================================================
 	
+
+{% endraw %}

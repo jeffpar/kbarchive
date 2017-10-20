@@ -6,6 +6,8 @@ permalink: /kb/216/Q216032/
 
 ## Q216032: Telnet 3270 Clients Experience Delay During Session Startup
 
+{% raw %}
+
 	Article: Q216032
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
@@ -76,3 +78,5 @@ permalink: /kb/216/Q216032/
 	
 	=============================================================================
 	
+
+{% endraw %}

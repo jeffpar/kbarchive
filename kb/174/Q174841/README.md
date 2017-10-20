@@ -6,6 +6,8 @@ permalink: /kb/174/Q174841/
 
 ## Q174841: How to Manage Windows Tips at Startup
 
+{% raw %}
+
 	Article: Q174841
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -81,3 +83,5 @@ permalink: /kb/174/Q174841/
 	
 	=============================================================================
 	
+
+{% endraw %}

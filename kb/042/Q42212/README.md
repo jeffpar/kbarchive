@@ -6,6 +6,8 @@ permalink: /kb/042/Q42212/
 
 ## Q42212: /CO before /DO Causes Problems in LINK
 
+{% raw %}
+
 	Article: Q42212
 	Product(s): See article
 	Version(s): 3.65 4.06 5.01
@@ -42,3 +44,5 @@ permalink: /kb/042/Q42212/
 	While LINK Version 5.01 may be used in OS/2, the /DO switch has no
 	meaning. Using it, however, causes the linker to GP fault if /CO
 	precedes /DO.
+
+{% endraw %}

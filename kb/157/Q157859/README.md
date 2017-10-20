@@ -6,6 +6,8 @@ permalink: /kb/157/Q157859/
 
 ## Q157859: WD97: Changes to Inline Pictures Are Not Saved
 
+{% raw %}
+
 	Article: Q157859
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -115,3 +117,5 @@ permalink: /kb/157/Q157859/
 	
 	=============================================================================
 	
+
+{% endraw %}

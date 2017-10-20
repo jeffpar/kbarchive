@@ -6,6 +6,8 @@ permalink: /kb/093/Q93652/
 
 ## Q93652: WFWG Err Msg with DblSpace: PRO0003E: PROTOCOL.INI File Open
 
+{% raw %}
+
 	Article: Q93652
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22; WINDOWS:3.1
@@ -62,3 +64,5 @@ permalink: /kb/093/Q93652/
 	
 	=============================================================================
 	
+
+{% endraw %}

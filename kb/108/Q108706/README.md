@@ -6,6 +6,8 @@ permalink: /kb/108/Q108706/
 
 ## Q108706: Common Q&amp;A for Visual C++ 32-bit edition, ver 1.0
 
+{% raw %}
+
 	Article: Q108706
 	Product(s): Microsoft C Compiler
 	Version(s): 1.00
@@ -93,3 +95,5 @@ permalink: /kb/108/Q108706/
 	
 	=============================================================================
 	
+
+{% endraw %}

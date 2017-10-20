@@ -6,6 +6,8 @@ permalink: /kb/234/Q234257/
 
 ## Q234257: SMS: Secondary Site Server Processor Utilization Is Always High
 
+{% raw %}
+
 	Article: Q234257
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -93,3 +95,5 @@ permalink: /kb/234/Q234257/
 	
 	=============================================================================
 	
+
+{% endraw %}

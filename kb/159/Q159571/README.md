@@ -6,6 +6,8 @@ permalink: /kb/159/Q159571/
 
 ## Q159571: PRB: SQLCancel Instead of SQLFreeStmt Causes a Memory Leak
 
+{% raw %}
+
 	Article: Q159571
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.5,4.0; winnt:6.0,6.5
@@ -61,3 +63,5 @@ permalink: /kb/159/Q159571/
 	
 	=============================================================================
 	
+
+{% endraw %}

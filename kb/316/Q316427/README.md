@@ -6,6 +6,8 @@ permalink: /kb/316/Q316427/
 
 ## Q316427: Computer Hangs During Startup If DMA Mode Is Set for IDE Devices
 
+{% raw %}
+
 	Article: Q316427
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -83,3 +85,5 @@ permalink: /kb/316/Q316427/
 	
 	=============================================================================
 	
+
+{% endraw %}

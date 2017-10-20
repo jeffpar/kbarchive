@@ -6,6 +6,8 @@ permalink: /kb/152/Q152234/
 
 ## Q152234: XCLN: Exchange Client for Windows 95 Starts Very Slowly
 
+{% raw %}
+
 	Article: Q152234
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/152/Q152234/
 	
 	=============================================================================
 	
+
+{% endraw %}

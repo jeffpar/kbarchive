@@ -6,6 +6,8 @@ permalink: /kb/110/Q110551/
 
 ## Q110551: Flight Simulator: General Air Temperature Information
 
+{% raw %}
+
 	Article: Q110551
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -62,3 +64,5 @@ permalink: /kb/110/Q110551/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/276/Q276332/
 
 ## Q276332: Classic Board Games: Slow Response When Clicking Menu or Toolbar
 
+{% raw %}
+
 	Article: Q276332
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -38,3 +40,5 @@ permalink: /kb/276/Q276332/
 	
 	=============================================================================
 	
+
+{% endraw %}

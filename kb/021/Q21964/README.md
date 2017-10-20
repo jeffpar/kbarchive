@@ -6,6 +6,8 @@ permalink: /kb/021/Q21964/
 
 ## Q21964: &quot;Subscript Out of Range&quot; Dimensioning a Dynamic Numeric Array
 
+{% raw %}
+
 	Article: Q21964
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -42,3 +44,5 @@ permalink: /kb/021/Q21964/
 	exceeds the dynamic numeric array size limit of 65,536 bytes (64K).
 	   Note that there are 1,024 bytes per Kilobyte (K), therefore 64K
 	multiplied by 1024 bytes per Kilobyte equals 65,536 bytes.
+
+{% endraw %}

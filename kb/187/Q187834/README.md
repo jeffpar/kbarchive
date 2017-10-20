@@ -6,6 +6,8 @@ permalink: /kb/187/Q187834/
 
 ## Q187834: HOWTO: Select and Unselect a Range of Cells in MSFlexGrid
 
+{% raw %}
+
 	Article: Q187834
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/187/Q187834/
 	
 	=============================================================================
 	
+
+{% endraw %}

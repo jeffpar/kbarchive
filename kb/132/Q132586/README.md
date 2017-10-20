@@ -6,6 +6,8 @@ permalink: /kb/132/Q132586/
 
 ## Q132586: APEX Audio Express PCMCIA Sound Card May Not Operate Correctly
 
+{% raw %}
+
 	Article: Q132586
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -43,3 +45,5 @@ permalink: /kb/132/Q132586/
 	
 	=============================================================================
 	
+
+{% endraw %}

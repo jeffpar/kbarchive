@@ -6,6 +6,8 @@ permalink: /kb/171/Q171680/
 
 ## Q171680: NTLM Enabled on IIS 1.0 Creates Problems with Run-Time Bots
 
+{% raw %}
+
 	Article: Q171680
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -67,3 +69,5 @@ permalink: /kb/171/Q171680/
 	
 	=============================================================================
 	
+
+{% endraw %}

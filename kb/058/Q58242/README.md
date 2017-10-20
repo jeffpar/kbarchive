@@ -6,6 +6,8 @@ permalink: /kb/058/Q58242/
 
 ## Q58242: FORMAT.COM Cannot Be Directly Run with Parameters
 
+{% raw %}
+
 	Article: Q58242
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -58,3 +60,5 @@ permalink: /kb/058/Q58242/
 	
 	=============================================================================
 	
+
+{% endraw %}

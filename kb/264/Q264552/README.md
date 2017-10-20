@@ -6,6 +6,8 @@ permalink: /kb/264/Q264552/
 
 ## Q264552: Modification Error Occurs When Exporting Custom Recipients
 
+{% raw %}
+
 	Article: Q264552
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -78,3 +80,5 @@ permalink: /kb/264/Q264552/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/259/Q259946/
 
 ## Q259946: StarLancer: Textures in the Game Are Missing or Distorted
 
+{% raw %}
+
 	Article: Q259946
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -84,3 +86,5 @@ permalink: /kb/259/Q259946/
 	
 	=============================================================================
 	
+
+{% endraw %}

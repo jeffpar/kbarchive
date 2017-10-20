@@ -6,6 +6,8 @@ permalink: /kb/149/Q149670/
 
 ## Q149670: How to Run Multiple SQL Statements w/ the VFP ODBC Driver
 
+{% raw %}
+
 	Article: Q149670
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:1.0
@@ -104,3 +106,5 @@ permalink: /kb/149/Q149670/
 	
 	=============================================================================
 	
+
+{% endraw %}

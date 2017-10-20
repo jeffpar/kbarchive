@@ -6,6 +6,8 @@ permalink: /kb/306/Q306569/
 
 ## Q306569: Non-U.S. User Cannot Set Up An MSN Internet Access Account After
 
+{% raw %}
+
 	Article: Q306569
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -100,3 +102,5 @@ permalink: /kb/306/Q306569/
 	
 	=============================================================================
 	
+
+{% endraw %}

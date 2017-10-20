@@ -6,6 +6,8 @@ permalink: /kb/135/Q135957/
 
 ## Q135957: Incorrect Free Space Reported After Uncompressing Drive
 
+{% raw %}
+
 	Article: Q135957
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/135/Q135957/
 	
 	=============================================================================
 	
+
+{% endraw %}

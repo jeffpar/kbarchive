@@ -6,6 +6,8 @@ permalink: /kb/268/Q268785/
 
 ## Q268785: XFOR: The NEWNEWS and XOVER commands in Exchange NNTP
 
+{% raw %}
+
 	Article: Q268785
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -92,3 +94,5 @@ permalink: /kb/268/Q268785/
 	
 	=============================================================================
 	
+
+{% endraw %}

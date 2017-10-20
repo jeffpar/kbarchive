@@ -6,6 +6,8 @@ permalink: /kb/084/Q84339/
 
 ## Q84339: LANtastic Notes on Version 4.x and Windows 3.1
 
+{% raw %}
+
 	Article: Q84339
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -141,3 +143,5 @@ permalink: /kb/084/Q84339/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/321/Q321073/
 
 ## Q321073: Index Service Stops Responding When Filtering Japanese ExcelFile
 
+{% raw %}
+
 	Article: Q321073
 	Product(s): Internet Information Server
 	Version(s): 2000,2000 SP1,2000 SP2,3.0
@@ -101,3 +103,5 @@ permalink: /kb/321/Q321073/
 	
 	=============================================================================
 	
+
+{% endraw %}

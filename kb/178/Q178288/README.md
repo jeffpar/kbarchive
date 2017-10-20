@@ -6,6 +6,8 @@ permalink: /kb/178/Q178288/
 
 ## Q178288: Flight Simulator 98: Contents of the Setup Patch Readme File
 
+{% raw %}
+
 	Article: Q178288
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -114,3 +116,5 @@ permalink: /kb/178/Q178288/
 	
 	=============================================================================
 	
+
+{% endraw %}

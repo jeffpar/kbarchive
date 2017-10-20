@@ -6,6 +6,8 @@ permalink: /kb/285/Q285294/
 
 ## Q285294: Midtown Madness 2: Cannot Use USB Steering Wheel to Drive Cars
 
+{% raw %}
+
 	Article: Q285294
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -55,3 +57,5 @@ permalink: /kb/285/Q285294/
 	
 	=============================================================================
 	
+
+{% endraw %}

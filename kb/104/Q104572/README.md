@@ -6,6 +6,8 @@ permalink: /kb/104/Q104572/
 
 ## Q104572: Using Microsoft Scenes Version 1.0 with Windows NT
 
+{% raw %}
+
 	Article: Q104572
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -77,3 +79,5 @@ permalink: /kb/104/Q104572/
 	
 	=============================================================================
 	
+
+{% endraw %}

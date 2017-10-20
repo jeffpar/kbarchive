@@ -6,6 +6,8 @@ permalink: /kb/246/Q246837/
 
 ## Q246837: XWEB: OWA Can't Display Previous Month's Free and Busy Info
 
+{% raw %}
+
 	Article: Q246837
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -52,3 +54,5 @@ permalink: /kb/246/Q246837/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178755/
 
 ## Q178755: HOWTO: Enumerate the Values of a Registry Key
 
+{% raw %}
+
 	Article: Q178755
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -195,3 +197,5 @@ permalink: /kb/178/Q178755/
 	
 	=============================================================================
 	
+
+{% endraw %}

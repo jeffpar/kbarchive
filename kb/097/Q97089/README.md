@@ -6,6 +6,8 @@ permalink: /kb/097/Q97089/
 
 ## Q97089: Graphic Missing Border in Concise Columbia Encyclopedia
 
+{% raw %}
+
 	Article: Q97089
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1991 edition,1992 edition,2.0
@@ -40,3 +42,5 @@ permalink: /kb/097/Q97089/
 	
 	=============================================================================
 	
+
+{% endraw %}

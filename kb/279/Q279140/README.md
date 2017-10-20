@@ -6,6 +6,8 @@ permalink: /kb/279/Q279140/
 
 ## Q279140: FIX: ALINES() Leaks Memory Handle with Empty String
 
+{% raw %}
+
 	Article: Q279140
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -80,3 +82,5 @@ permalink: /kb/279/Q279140/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/314/Q314434/
 
 ## Q314434: SMS: SNMPELEA Event Errors on Client Install to Windows 2000
 
+{% raw %}
+
 	Article: Q314434
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,1.2 SP4,2000
@@ -138,3 +140,5 @@ permalink: /kb/314/Q314434/
 	
 	=============================================================================
 	
+
+{% endraw %}

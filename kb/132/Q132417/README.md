@@ -6,6 +6,8 @@ permalink: /kb/132/Q132417/
 
 ## Q132417: Mac Encarta 94: Animations No Longer Play
 
+{% raw %}
+
 	Article: Q132417
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -52,3 +54,5 @@ permalink: /kb/132/Q132417/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131932/
 
 ## Q131932: Error Occurs Mapping Over Existing Network Connection
 
+{% raw %}
+
 	Article: Q131932
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/131/Q131932/
 	
 	=============================================================================
 	
+
+{% endraw %}

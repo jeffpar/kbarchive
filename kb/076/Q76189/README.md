@@ -6,6 +6,8 @@ permalink: /kb/076/Q76189/
 
 ## Q76189: PPT: Cannot Run Workstation Setup from a Floppy Disk
 
+{% raw %}
+
 	Article: Q76189
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:2.0e,3.0,4.0,4.0a,4.0c,7.0
@@ -74,3 +76,5 @@ permalink: /kb/076/Q76189/
 	
 	=============================================================================
 	
+
+{% endraw %}

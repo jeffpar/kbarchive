@@ -6,6 +6,8 @@ permalink: /kb/051/Q51416/
 
 ## Q51416: How to Use Link Overlays in BASIC PDS 7.00 and 7.10
 
+{% raw %}
+
 	Article: Q51416
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -155,3 +157,5 @@ permalink: /kb/051/Q51416/
 	For more information on using overlays, see the section "Linking with
 	Overlays" on Pages 612-614 in the "Microsoft BASIC 7.0: Programmer's
 	Guide."
+
+{% endraw %}

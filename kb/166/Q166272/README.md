@@ -6,6 +6,8 @@ permalink: /kb/166/Q166272/
 
 ## Q166272: WD97: Incorrect Total When Table Has More Than 85 Rows
 
+{% raw %}
+
 	Article: Q166272
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -119,3 +121,5 @@ permalink: /kb/166/Q166272/
 	
 	=============================================================================
 	
+
+{% endraw %}

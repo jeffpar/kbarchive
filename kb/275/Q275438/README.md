@@ -6,6 +6,8 @@ permalink: /kb/275/Q275438/
 
 ## Q275438: NBA2000 Error Message: Invalid Page Fault in Module NBA2000.icd
 
+{% raw %}
+
 	Article: Q275438
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -172,3 +174,5 @@ permalink: /kb/275/Q275438/
 	
 	=============================================================================
 	
+
+{% endraw %}

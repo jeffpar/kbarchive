@@ -6,6 +6,8 @@ permalink: /kb/058/Q58660/
 
 ## Q58660: TIMEVALUE# Function Documentation Correction in BASIC 7.00
 
+{% raw %}
+
 	Article: Q58660
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -28,3 +30,5 @@ permalink: /kb/058/Q58660/
 	The TIMEVALUE function is a routine in the "add-on library" included
 	with Microsoft BASIC Professional Development System versions 7.00 and
 	7.10 for MS-DOS and MS OS/2.
+
+{% endraw %}

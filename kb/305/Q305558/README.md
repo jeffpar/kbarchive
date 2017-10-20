@@ -6,6 +6,8 @@ permalink: /kb/305/Q305558/
 
 ## Q305558: PRB: PDW Raises Error 28 When You Click Finish
 
+{% raw %}
+
 	Article: Q305558
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -91,3 +93,5 @@ permalink: /kb/305/Q305558/
 	
 	=============================================================================
 	
+
+{% endraw %}

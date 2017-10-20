@@ -6,6 +6,8 @@ permalink: /kb/166/Q166034/
 
 ## Q166034: Writer 2: ErrMsg: Creative Writer Had Trouble Spell Checking...
 
+{% raw %}
+
 	Article: Q166034
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -123,3 +125,5 @@ permalink: /kb/166/Q166034/
 	
 	=============================================================================
 	
+
+{% endraw %}

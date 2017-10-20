@@ -6,6 +6,8 @@ permalink: /kb/155/Q155743/
 
 ## Q155743: Directory Import Error: Unable to Process Object
 
+{% raw %}
+
 	Article: Q155743
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/155/Q155743/
 	
 	=============================================================================
 	
+
+{% endraw %}

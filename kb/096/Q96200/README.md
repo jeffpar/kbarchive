@@ -6,6 +6,8 @@ permalink: /kb/096/Q96200/
 
 ## Q96200: DoubleSpace Cannot Mount Compressed Write-Protected Disk
 
+{% raw %}
+
 	Article: Q96200
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2; WINDOWS:95
@@ -77,3 +79,5 @@ permalink: /kb/096/Q96200/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173679/
 
 ## Q173679: MSN Sign In Screen Does Not Appear
 
+{% raw %}
+
 	Article: Q173679
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -164,3 +166,5 @@ permalink: /kb/173/Q173679/
 	
 	=============================================================================
 	
+
+{% endraw %}

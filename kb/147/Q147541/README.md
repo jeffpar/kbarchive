@@ -6,6 +6,8 @@ permalink: /kb/147/Q147541/
 
 ## Q147541: Undoing Goal Deletes Goal Text from New Item box
 
+{% raw %}
+
 	Article: Q147541
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -43,3 +45,5 @@ permalink: /kb/147/Q147541/
 	
 	=============================================================================
 	
+
+{% endraw %}

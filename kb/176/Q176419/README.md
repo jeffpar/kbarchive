@@ -6,6 +6,8 @@ permalink: /kb/176/Q176419/
 
 ## Q176419: FIX: Inet Control Method OpenURL Fails If No Proxy Selected
 
+{% raw %}
+
 	Article: Q176419
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -164,3 +166,5 @@ permalink: /kb/176/Q176419/
 	
 	=============================================================================
 	
+
+{% endraw %}

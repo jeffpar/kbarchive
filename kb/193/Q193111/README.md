@@ -6,6 +6,8 @@ permalink: /kb/193/Q193111/
 
 ## Q193111: XCLN: Encrypted Mail Unreadable by Exchange Client
 
+{% raw %}
+
 	Article: Q193111
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,8.0; :8.0,8.01,8.02,8.03
@@ -54,3 +56,5 @@ permalink: /kb/193/Q193111/
 	
 	=============================================================================
 	
+
+{% endraw %}

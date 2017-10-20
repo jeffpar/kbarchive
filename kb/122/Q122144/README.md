@@ -6,6 +6,8 @@ permalink: /kb/122/Q122144/
 
 ## Q122144: Word for Windows NT Err Msg in Windows 95: Out of Memory
 
+{% raw %}
+
 	Article: Q122144
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -56,3 +58,5 @@ permalink: /kb/122/Q122144/
 	
 	=============================================================================
 	
+
+{% endraw %}

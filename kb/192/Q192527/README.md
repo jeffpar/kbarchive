@@ -6,6 +6,8 @@ permalink: /kb/192/Q192527/
 
 ## Q192527: Hot Swappable Drive Does Not Come Online on Alpha
 
+{% raw %}
+
 	Article: Q192527
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -46,3 +48,5 @@ permalink: /kb/192/Q192527/
 	
 	=============================================================================
 	
+
+{% endraw %}

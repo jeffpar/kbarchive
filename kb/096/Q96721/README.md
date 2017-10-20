@@ -6,6 +6,8 @@ permalink: /kb/096/Q96721/
 
 ## Q96721: PC WRmt: Direct Export to Primary Message File Clears PAB
 
+{% raw %}
+
 	Article: Q96721
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -39,3 +41,5 @@ permalink: /kb/096/Q96721/
 	
 	=============================================================================
 	
+
+{% endraw %}

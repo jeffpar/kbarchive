@@ -6,6 +6,8 @@ permalink: /kb/175/Q175076/
 
 ## Q175076: SMS: Windows 95 Clients Cannot Be Remotely Rebooted
 
+{% raw %}
+
 	Article: Q175076
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -60,3 +62,5 @@ permalink: /kb/175/Q175076/
 	
 	=============================================================================
 	
+
+{% endraw %}

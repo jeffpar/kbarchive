@@ -6,6 +6,8 @@ permalink: /kb/086/Q86979/
 
 ## Q86979: X400: Address Conversion and Address Mapping Differences
 
+{% raw %}
+
 	Article: Q86979
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -46,3 +48,5 @@ permalink: /kb/086/Q86979/
 	
 	=============================================================================
 	
+
+{% endraw %}

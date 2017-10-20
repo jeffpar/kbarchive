@@ -6,6 +6,8 @@ permalink: /kb/132/Q132201/
 
 ## Q132201: Windows 95/98: Checking and Modifying a COM Port
 
+{% raw %}
+
 	Article: Q132201
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95,98
@@ -109,3 +111,5 @@ permalink: /kb/132/Q132201/
 	
 	=============================================================================
 	
+
+{% endraw %}

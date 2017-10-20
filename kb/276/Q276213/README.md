@@ -6,6 +6,8 @@ permalink: /kb/276/Q276213/
 
 ## Q276213: Spurious Pop-up Messages When You Insert a New Link Service
 
+{% raw %}
+
 	Article: Q276213
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP1,4.0 SP2,4.0 SP3
@@ -90,3 +92,5 @@ permalink: /kb/276/Q276213/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/200/Q200545/
 
 ## Q200545: SMS: Client Configuration Setter - Setclcfg.exe
 
+{% raw %}
+
 	Article: Q200545
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -82,3 +84,5 @@ permalink: /kb/200/Q200545/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198196/
 
 ## Q198196: WD97: Excel Object Pasted As Hyperlink Is a Single Link
 
+{% raw %}
+
 	Article: Q198196
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -59,3 +61,5 @@ permalink: /kb/198/Q198196/
 	
 	=============================================================================
 	
+
+{% endraw %}

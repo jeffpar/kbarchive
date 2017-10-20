@@ -6,6 +6,8 @@ permalink: /kb/143/Q143044/
 
 ## Q143044: INFO: How Visual Basic 4.0 Handles Files Marked Read-Only
 
+{% raw %}
+
 	Article: Q143044
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0;
@@ -191,3 +193,5 @@ permalink: /kb/143/Q143044/
 	
 	=============================================================================
 	
+
+{% endraw %}

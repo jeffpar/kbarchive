@@ -6,6 +6,8 @@ permalink: /kb/036/Q36584/
 
 ## Q36584: PRB: PostMessage() Returns 0, Indicating Failure
 
+{% raw %}
+
 	Article: Q36584
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -49,3 +51,5 @@ permalink: /kb/036/Q36584/
 	
 	=============================================================================
 	
+
+{% endraw %}

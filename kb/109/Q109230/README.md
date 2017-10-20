@@ -6,6 +6,8 @@ permalink: /kb/109/Q109230/
 
 ## Q109230: How to Create a List or Popup of Available Volume Names
 
+{% raw %}
+
 	Article: Q109230
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -125,3 +127,5 @@ permalink: /kb/109/Q109230/
 	
 	=============================================================================
 	
+
+{% endraw %}

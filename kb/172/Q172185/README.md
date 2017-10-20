@@ -6,6 +6,8 @@ permalink: /kb/172/Q172185/
 
 ## Q172185: C2config.exe Removes All Admin Permissions on International NT
 
+{% raw %}
+
 	Article: Q172185
 	Product(s): Microsoft Press
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/172/Q172185/
 	
 	=============================================================================
 	
+
+{% endraw %}

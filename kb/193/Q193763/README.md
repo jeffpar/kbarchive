@@ -6,6 +6,8 @@ permalink: /kb/193/Q193763/
 
 ## Q193763: GetFileAttributes API May Return Invalid Return Code
 
+{% raw %}
+
 	Article: Q193763
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/193/Q193763/
 	
 	=============================================================================
 	
+
+{% endraw %}

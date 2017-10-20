@@ -6,6 +6,8 @@ permalink: /kb/151/Q151870/
 
 ## Q151870: BUG: Mastering Exchange: Help Option Doesn't Work During Setup
 
+{% raw %}
+
 	Article: Q151870
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -66,3 +68,5 @@ permalink: /kb/151/Q151870/
 	
 	=============================================================================
 	
+
+{% endraw %}

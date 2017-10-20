@@ -6,6 +6,8 @@ permalink: /kb/032/Q32892/
 
 ## Q32892: Compiling with /Zi Causes Code Motion Optimization Suppression
 
+{% raw %}
+
 	Article: Q32892
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10 | 5.10
@@ -22,3 +24,5 @@ permalink: /kb/032/Q32892/
 	without /Zi:
 	
 	   cl /Zi /Ot file.c
+
+{% endraw %}

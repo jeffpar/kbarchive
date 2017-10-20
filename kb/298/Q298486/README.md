@@ -6,6 +6,8 @@ permalink: /kb/298/Q298486/
 
 ## Q298486: XCON: Exchange Notes Connector Service Stops w. Message Backlog
 
+{% raw %}
+
 	Article: Q298486
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -167,3 +169,5 @@ permalink: /kb/298/Q298486/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85312/
 
 ## Q85312: GP Fault with SETUP.SHH if &#91;Windir&#93; Path Exceeds 29 Characters
 
+{% raw %}
+
 	Article: Q85312
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -71,3 +73,5 @@ permalink: /kb/085/Q85312/
 	
 	=============================================================================
 	
+
+{% endraw %}

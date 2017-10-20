@@ -6,6 +6,8 @@ permalink: /kb/275/Q275515/
 
 ## Q275515: PRB: Performance Degradation with SQL Selects from Offline Views
 
+{% raw %}
+
 	Article: Q275515
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -177,3 +179,5 @@ permalink: /kb/275/Q275515/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112268/
 
 ## Q112268: PC Setup: Mail 3.0 Directory Entries in NetWare
 
+{% raw %}
+
 	Article: Q112268
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -45,3 +47,5 @@ permalink: /kb/112/Q112268/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173674/
 
 ## Q173674: WD97: Blue Underline for Hyperlink Not Placed Below Object
 
+{% raw %}
+
 	Article: Q173674
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/173/Q173674/
 	
 	=============================================================================
 	
+
+{% endraw %}

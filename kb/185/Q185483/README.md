@@ -6,6 +6,8 @@ permalink: /kb/185/Q185483/
 
 ## Q185483: WD97: Compare Documents Reinserts Deleted Paragraph Marks
 
+{% raw %}
+
 	Article: Q185483
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -186,3 +188,5 @@ permalink: /kb/185/Q185483/
 	
 	=============================================================================
 	
+
+{% endraw %}

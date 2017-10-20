@@ -6,6 +6,8 @@ permalink: /kb/051/Q51280/
 
 ## Q51280: Mac Form: Minimum System Requirement for Running Form Designer
 
+{% raw %}
+
 	Article: Q51280
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -47,3 +49,5 @@ permalink: /kb/051/Q51280/
 	
 	=============================================================================
 	
+
+{% endraw %}

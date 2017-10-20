@@ -6,6 +6,8 @@ permalink: /kb/180/Q180704/
 
 ## Q180704: SLI_CLOSE May Hang if CICS Doesn't Respond to SHUTC
 
+{% raw %}
+
 	Article: Q180704
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -82,3 +84,5 @@ permalink: /kb/180/Q180704/
 	
 	=============================================================================
 	
+
+{% endraw %}

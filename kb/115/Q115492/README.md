@@ -6,6 +6,8 @@ permalink: /kb/115/Q115492/
 
 ## Q115492: SMTP: Troubleshooting the TCP/IP Layer of the Mail Gateway
 
+{% raw %}
+
 	Article: Q115492
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -104,3 +106,5 @@ permalink: /kb/115/Q115492/
 	
 	=============================================================================
 	
+
+{% endraw %}

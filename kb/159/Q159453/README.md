@@ -6,6 +6,8 @@ permalink: /kb/159/Q159453/
 
 ## Q159453: SNA Server 3.0 5250 Applet Numeric Pad Function Keys Don't Work
 
+{% raw %}
+
 	Article: Q159453
 	Product(s): Microsoft SNA Server
 	Version(s): winnt:3.0,4.0
@@ -87,3 +89,5 @@ permalink: /kb/159/Q159453/
 	
 	=============================================================================
 	
+
+{% endraw %}

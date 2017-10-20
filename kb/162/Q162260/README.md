@@ -6,6 +6,8 @@ permalink: /kb/162/Q162260/
 
 ## Q162260: WD97: Err Msg: &quot;The Subdocument Is Missing&quot; Word Hangs
 
+{% raw %}
+
 	Article: Q162260
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -60,3 +62,5 @@ permalink: /kb/162/Q162260/
 	
 	=============================================================================
 	
+
+{% endraw %}

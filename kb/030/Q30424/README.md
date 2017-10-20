@@ -6,6 +6,8 @@ permalink: /kb/030/Q30424/
 
 ## Q30424: Using the &amp; Operator to Combine Multiple Parameters
 
+{% raw %}
+
 	Article: Q30424
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b
@@ -153,3 +155,5 @@ permalink: /kb/030/Q30424/
 	
 	=============================================================================
 	
+
+{% endraw %}

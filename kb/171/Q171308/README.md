@@ -6,6 +6,8 @@ permalink: /kb/171/Q171308/
 
 ## Q171308: Explorer File Properties Dialog Version Tab Missing
 
+{% raw %}
+
 	Article: Q171308
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/171/Q171308/
 	
 	=============================================================================
 	
+
+{% endraw %}

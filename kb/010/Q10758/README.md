@@ -6,6 +6,8 @@ permalink: /kb/010/Q10758/
 
 ## Q10758: Managing Memory with calloc() and malloc()
 
+{% raw %}
+
 	Article: Q10758
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -65,3 +67,5 @@ permalink: /kb/010/Q10758/
 	
 	=============================================================================
 	
+
+{% endraw %}

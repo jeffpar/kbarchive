@@ -6,6 +6,8 @@ permalink: /kb/138/Q138854/
 
 ## Q138854: Connecting Using NBT.SYS Causes Windows NT Session to Hang
 
+{% raw %}
+
 	Article: Q138854
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP2,4.0
@@ -70,3 +72,5 @@ permalink: /kb/138/Q138854/
 	
 	=============================================================================
 	
+
+{% endraw %}

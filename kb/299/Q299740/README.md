@@ -6,6 +6,8 @@ permalink: /kb/299/Q299740/
 
 ## Q299740: Train Simulator: Keyboard Stops Responding
 
+{% raw %}
+
 	Article: Q299740
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -73,3 +75,5 @@ permalink: /kb/299/Q299740/
 	
 	=============================================================================
 	
+
+{% endraw %}

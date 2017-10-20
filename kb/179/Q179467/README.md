@@ -6,6 +6,8 @@ permalink: /kb/179/Q179467/
 
 ## Q179467: Inappropriate Use of Trailing FILLER with an Array
 
+{% raw %}
+
 	Article: Q179467
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0
@@ -80,3 +82,5 @@ permalink: /kb/179/Q179467/
 	
 	=============================================================================
 	
+
+{% endraw %}

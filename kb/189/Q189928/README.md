@@ -6,6 +6,8 @@ permalink: /kb/189/Q189928/
 
 ## Q189928: WD97: Errors Attempting to Fax After Installing Outlook 98
 
+{% raw %}
+
 	Article: Q189928
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -121,3 +123,5 @@ permalink: /kb/189/Q189928/
 	
 	=============================================================================
 	
+
+{% endraw %}

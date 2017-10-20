@@ -6,6 +6,8 @@ permalink: /kb/094/Q94033/
 
 ## Q94033: Windows: Auto Resume Failure on Toshiba Computers
 
+{% raw %}
+
 	Article: Q94033
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/094/Q94033/
 	
 	=============================================================================
 	
+
+{% endraw %}

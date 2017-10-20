@@ -6,6 +6,8 @@ permalink: /kb/039/Q39309/
 
 ## Q39309: Example of C Calling a MASM Procedure
 
+{% raw %}
+
 	Article: Q39309
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -58,3 +60,5 @@ permalink: /kb/039/Q39309/
 	         ret
 	_mixed   ENDP
 	         END
+
+{% endraw %}

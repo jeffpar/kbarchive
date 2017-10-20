@@ -6,6 +6,8 @@ permalink: /kb/131/Q131754/
 
 ## Q131754: Mac Encarta 1995: Slide Show Stops After 100 Slides
 
+{% raw %}
+
 	Article: Q131754
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -51,3 +53,5 @@ permalink: /kb/131/Q131754/
 	
 	=============================================================================
 	
+
+{% endraw %}

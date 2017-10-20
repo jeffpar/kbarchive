@@ -6,6 +6,8 @@ permalink: /kb/321/Q321159/
 
 ## Q321159: Event IDs 5125 and 5149 After You Start SNA Manager in HIS 2000
 
+{% raw %}
+
 	Article: Q321159
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -121,3 +123,5 @@ permalink: /kb/321/Q321159/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247291/
 
 ## Q247291: XFOR: Migration Slow to Enumerate Names from a Large NAB
 
+{% raw %}
+
 	Article: Q247291
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -79,3 +81,5 @@ permalink: /kb/247/Q247291/
 	
 	=============================================================================
 	
+
+{% endraw %}

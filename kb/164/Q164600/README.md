@@ -6,6 +6,8 @@ permalink: /kb/164/Q164600/
 
 ## Q164600: 4 mm DAT Driver Reports DEC TZ9L Supports Setmarks
 
+{% raw %}
+
 	Article: Q164600
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/164/Q164600/
 	
 	=============================================================================
 	
+
+{% endraw %}

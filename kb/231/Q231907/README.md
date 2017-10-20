@@ -6,6 +6,8 @@ permalink: /kb/231/Q231907/
 
 ## Q231907: Midtown Madness: Game Is Minimized Unexpectedly
 
+{% raw %}
+
 	Article: Q231907
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/231/Q231907/
 	
 	=============================================================================
 	
+
+{% endraw %}

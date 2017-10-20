@@ -6,6 +6,8 @@ permalink: /kb/250/Q250867/
 
 ## Q250867: Cannot Install SP 6/6a with High Encryption Internet Explorer
 
+{% raw %}
+
 	Article: Q250867
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6,4.0 SP6a
@@ -80,3 +82,5 @@ permalink: /kb/250/Q250867/
 	
 	=============================================================================
 	
+
+{% endraw %}

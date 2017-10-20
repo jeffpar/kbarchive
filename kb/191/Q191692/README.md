@@ -6,6 +6,8 @@ permalink: /kb/191/Q191692/
 
 ## Q191692: PRB: Shdocvw.dll Is Not Included in PDW Setup Package
 
+{% raw %}
+
 	Article: Q191692
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -60,3 +62,5 @@ permalink: /kb/191/Q191692/
 	
 	=============================================================================
 	
+
+{% endraw %}

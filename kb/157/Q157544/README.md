@@ -6,6 +6,8 @@ permalink: /kb/157/Q157544/
 
 ## Q157544: WD97: Cannot Link More Than 32 Text Boxes
 
+{% raw %}
+
 	Article: Q157544
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/157/Q157544/
 	
 	=============================================================================
 	
+
+{% endraw %}

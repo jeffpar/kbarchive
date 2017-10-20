@@ -6,6 +6,8 @@ permalink: /kb/104/Q104650/
 
 ## Q104650: INFO: Default Assignment Used, Not User-Defined operator=()
 
+{% raw %}
+
 	Article: Q104650
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/104/Q104650/
 	
 	=============================================================================
 	
+
+{% endraw %}

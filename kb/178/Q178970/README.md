@@ -6,6 +6,8 @@ permalink: /kb/178/Q178970/
 
 ## Q178970: Availability of Windows 95 OEM Service Release 2.5
 
+{% raw %}
+
 	Article: Q178970
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -57,3 +59,5 @@ permalink: /kb/178/Q178970/
 	
 	=============================================================================
 	
+
+{% endraw %}

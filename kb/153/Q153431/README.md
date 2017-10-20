@@ -6,6 +6,8 @@ permalink: /kb/153/Q153431/
 
 ## Q153431: Explorapedia People: Listing of Files Installed and Modified
 
+{% raw %}
+
 	Article: Q153431
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -177,3 +179,5 @@ permalink: /kb/153/Q153431/
 	
 	=============================================================================
 	
+
+{% endraw %}

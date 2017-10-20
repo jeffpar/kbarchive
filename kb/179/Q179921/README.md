@@ -6,6 +6,8 @@ permalink: /kb/179/Q179921/
 
 ## Q179921: Error -204 When Using the STARSQL32 Driver
 
+{% raw %}
+
 	Article: Q179921
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -77,3 +79,5 @@ permalink: /kb/179/Q179921/
 	
 	=============================================================================
 	
+
+{% endraw %}

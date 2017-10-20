@@ -6,6 +6,8 @@ permalink: /kb/281/Q281927/
 
 ## Q281927: FP2002: Prompted to Save File in ASP Format, Then HTML Format
 
+{% raw %}
+
 	Article: Q281927
 	Product(s): Word Front Page
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/281/Q281927/
 	
 	=============================================================================
 	
+
+{% endraw %}

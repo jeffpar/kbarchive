@@ -6,6 +6,8 @@ permalink: /kb/104/Q104198/
 
 ## Q104198: SFM: Macintosh Locked Folders Are Not Completely Secure
 
+{% raw %}
+
 	Article: Q104198
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -60,3 +62,5 @@ permalink: /kb/104/Q104198/
 	
 	=============================================================================
 	
+
+{% endraw %}

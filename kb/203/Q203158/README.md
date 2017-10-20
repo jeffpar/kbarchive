@@ -6,6 +6,8 @@ permalink: /kb/203/Q203158/
 
 ## Q203158: INFO: IIS 4.0 Is Not Compatible with Proxy Server 1.0
 
+{% raw %}
+
 	Article: Q203158
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,4.0
@@ -45,3 +47,5 @@ permalink: /kb/203/Q203158/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132937/
 
 ## Q132937: Known Issues Concerning Upgrades to The Microsoft Network
 
+{% raw %}
+
 	Article: Q132937
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -101,3 +103,5 @@ permalink: /kb/132/Q132937/
 	
 	=============================================================================
 	
+
+{% endraw %}

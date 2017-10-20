@@ -6,6 +6,8 @@ permalink: /kb/174/Q174102/
 
 ## Q174102: XFOR: Messages Not Flowing from OV/VM to Exchange
 
+{% raw %}
+
 	Article: Q174102
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -88,3 +90,5 @@ permalink: /kb/174/Q174102/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/304/Q304867/
 
 ## Q304867: Server Configuration Error Appears When Viewing a Web Page
 
+{% raw %}
+
 	Article: Q304867
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -133,3 +135,5 @@ permalink: /kb/304/Q304867/
 	
 	=============================================================================
 	
+
+{% endraw %}

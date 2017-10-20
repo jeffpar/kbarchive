@@ -6,6 +6,8 @@ permalink: /kb/182/Q182828/
 
 ## Q182828: Access Violation in Posix Subsystem
 
+{% raw %}
+
 	Article: Q182828
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -49,3 +51,5 @@ permalink: /kb/182/Q182828/
 	
 	=============================================================================
 	
+
+{% endraw %}

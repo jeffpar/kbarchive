@@ -6,6 +6,8 @@ permalink: /kb/172/Q172604/
 
 ## Q172604: Error Message: The Set of Folders Could Not Be Opened
 
+{% raw %}
+
 	Article: Q172604
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -65,3 +67,5 @@ permalink: /kb/172/Q172604/
 	
 	=============================================================================
 	
+
+{% endraw %}

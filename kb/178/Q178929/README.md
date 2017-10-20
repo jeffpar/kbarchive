@@ -6,6 +6,8 @@ permalink: /kb/178/Q178929/
 
 ## Q178929: XADM: How to Use the Event Log Tools in BORK Part Two
 
+{% raw %}
+
 	Article: Q178929
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -176,3 +178,5 @@ permalink: /kb/178/Q178929/
 	
 	=============================================================================
 	
+
+{% endraw %}

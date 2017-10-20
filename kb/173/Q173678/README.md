@@ -6,6 +6,8 @@ permalink: /kb/173/Q173678/
 
 ## Q173678: WD97: Incorrect Results When Undo Dragging of Objects
 
+{% raw %}
+
 	Article: Q173678
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -105,3 +107,5 @@ permalink: /kb/173/Q173678/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187710/
 
 ## Q187710: IIS 4.0 Installation Error: CoGetClassObject, 0x80080005 Server
 
+{% raw %}
+
 	Article: Q187710
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -97,3 +99,5 @@ permalink: /kb/187/Q187710/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/105/Q105559/
 
 ## Q105559: MS-DOS 6.2 SCANDISK.INI File
 
+{% raw %}
+
 	Article: Q105559
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21
@@ -180,3 +182,5 @@ permalink: /kb/105/Q105559/
 	
 	=============================================================================
 	
+
+{% endraw %}

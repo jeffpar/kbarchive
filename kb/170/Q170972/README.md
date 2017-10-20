@@ -6,6 +6,8 @@ permalink: /kb/170/Q170972/
 
 ## Q170972: WD97: IExplorer Back Button Ignored After Hyperlink from Word
 
+{% raw %}
+
 	Article: Q170972
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:3.01,3.02,97
@@ -65,3 +67,5 @@ permalink: /kb/170/Q170972/
 	
 	=============================================================================
 	
+
+{% endraw %}

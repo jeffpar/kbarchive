@@ -6,6 +6,8 @@ permalink: /kb/173/Q173426/
 
 ## Q173426: Err Msg: MSNVIEWR Caused an Invalid Page Fault in Module...
 
+{% raw %}
+
 	Article: Q173426
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5
@@ -49,3 +51,5 @@ permalink: /kb/173/Q173426/
 	
 	=============================================================================
 	
+
+{% endraw %}

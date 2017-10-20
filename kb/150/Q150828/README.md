@@ -6,6 +6,8 @@ permalink: /kb/150/Q150828/
 
 ## Q150828: XFOR: Dirsync Role/Number of Servers can Change DXA Addresses
 
+{% raw %}
+
 	Article: Q150828
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -62,3 +64,5 @@ permalink: /kb/150/Q150828/
 	
 	=============================================================================
 	
+
+{% endraw %}

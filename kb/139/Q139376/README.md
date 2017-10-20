@@ -6,6 +6,8 @@ permalink: /kb/139/Q139376/
 
 ## Q139376: SNA Server Does Not Support Printer LU Pools
 
+{% raw %}
+
 	Article: Q139376
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -46,3 +48,5 @@ permalink: /kb/139/Q139376/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154542/
 
 ## Q154542: XFOR: IMC Delivery Restrictions Only Work for Outbound Mail
 
+{% raw %}
+
 	Article: Q154542
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -47,3 +49,5 @@ permalink: /kb/154/Q154542/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150945/
 
 ## Q150945: BUG: Unable to Enter the CD KEY in the Setup Dialog Box
 
+{% raw %}
+
 	Article: Q150945
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0;
@@ -124,3 +126,5 @@ permalink: /kb/150/Q150945/
 	
 	=============================================================================
 	
+
+{% endraw %}

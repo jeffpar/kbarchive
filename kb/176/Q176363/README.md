@@ -6,6 +6,8 @@ permalink: /kb/176/Q176363/
 
 ## Q176363: Using Automatic Direction Finder (ADF) in Flight Simulator
 
+{% raw %}
+
 	Article: Q176363
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -72,3 +74,5 @@ permalink: /kb/176/Q176363/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/115/Q115125/
 
 ## Q115125: ADT2: Calendar Control Font and Color Properties Unavailable
 
+{% raw %}
+
 	Article: Q115125
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -88,3 +90,5 @@ permalink: /kb/115/Q115125/
 	
 	=============================================================================
 	
+
+{% endraw %}

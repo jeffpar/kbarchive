@@ -6,6 +6,8 @@ permalink: /kb/112/Q112234/
 
 ## Q112234: FaxDrv: Improper Scaling with Excel 4.0
 
+{% raw %}
+
 	Article: Q112234
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0a; WINDOWS:4.0
@@ -51,3 +53,5 @@ permalink: /kb/112/Q112234/
 	
 	=============================================================================
 	
+
+{% endraw %}

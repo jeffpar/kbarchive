@@ -6,6 +6,8 @@ permalink: /kb/165/Q165843/
 
 ## Q165843: 3270 Wizard Memory Error If Computer Name Is 15 Characters
 
+{% raw %}
+
 	Article: Q165843
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/165/Q165843/
 	
 	=============================================================================
 	
+
+{% endraw %}

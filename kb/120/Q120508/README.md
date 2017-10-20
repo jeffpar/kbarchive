@@ -6,6 +6,8 @@ permalink: /kb/120/Q120508/
 
 ## Q120508: Unable to Create a Palette Consisting of More Than 256 Colors
 
+{% raw %}
+
 	Article: Q120508
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:1.0,1.1
@@ -46,3 +48,5 @@ permalink: /kb/120/Q120508/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234487/
 
 ## Q234487: XCLN: Send To Mail Recipient Opens an Outlook Plain Text Message
 
+{% raw %}
+
 	Article: Q234487
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000
@@ -83,3 +85,5 @@ permalink: /kb/234/Q234487/
 	
 	=============================================================================
 	
+
+{% endraw %}

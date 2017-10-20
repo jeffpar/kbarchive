@@ -6,6 +6,8 @@ permalink: /kb/044/Q44111/
 
 ## Q44111: Windows with Hercules and a Secondary Display Connected
 
+{% raw %}
+
 	Article: Q44111
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -51,3 +53,5 @@ permalink: /kb/044/Q44111/
 	
 	=============================================================================
 	
+
+{% endraw %}

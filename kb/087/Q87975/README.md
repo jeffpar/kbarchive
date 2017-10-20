@@ -6,6 +6,8 @@ permalink: /kb/087/Q87975/
 
 ## Q87975: DOC: EnumFontFamProc Documentation Incorrect
 
+{% raw %}
+
 	Article: Q87975
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -87,3 +89,5 @@ permalink: /kb/087/Q87975/
 	
 	=============================================================================
 	
+
+{% endraw %}

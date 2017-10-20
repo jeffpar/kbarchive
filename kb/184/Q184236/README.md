@@ -6,6 +6,8 @@ permalink: /kb/184/Q184236/
 
 ## Q184236: BUG: Filebuf overflow() and underflow() Call filebuf::sync()
 
+{% raw %}
+
 	Article: Q184236
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.0a,4.1,4.2,5.0,6.0
@@ -103,3 +105,5 @@ permalink: /kb/184/Q184236/
 	
 	=============================================================================
 	
+
+{% endraw %}

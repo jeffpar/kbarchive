@@ -6,6 +6,8 @@ permalink: /kb/153/Q153097/
 
 ## Q153097: XFOR: Apple Talk MTA not Transferring Mail
 
+{% raw %}
+
 	Article: Q153097
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -54,3 +56,5 @@ permalink: /kb/153/Q153097/
 	
 	=============================================================================
 	
+
+{% endraw %}

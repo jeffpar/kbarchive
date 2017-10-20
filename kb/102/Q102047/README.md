@@ -6,6 +6,8 @@ permalink: /kb/102/Q102047/
 
 ## Q102047: PRB: Two Error Messages When Closing Query with No Fields
 
+{% raw %}
+
 	Article: Q102047
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
@@ -68,3 +70,5 @@ permalink: /kb/102/Q102047/
 	
 	=============================================================================
 	
+
+{% endraw %}

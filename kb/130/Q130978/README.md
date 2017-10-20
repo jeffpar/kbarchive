@@ -6,6 +6,8 @@ permalink: /kb/130/Q130978/
 
 ## Q130978: PC DirSync: IdleTime Will Not Work if External Is Idle Process
 
+{% raw %}
+
 	Article: Q130978
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -46,3 +48,5 @@ permalink: /kb/130/Q130978/
 	
 	=============================================================================
 	
+
+{% endraw %}

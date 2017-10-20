@@ -6,6 +6,8 @@ permalink: /kb/155/Q155819/
 
 ## Q155819: XADM: IMC Can't Decode Mail That Uses the EUC-KR Charset
 
+{% raw %}
+
 	Article: Q155819
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/155/Q155819/
 	
 	=============================================================================
 	
+
+{% endraw %}

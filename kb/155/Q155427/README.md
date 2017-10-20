@@ -6,6 +6,8 @@ permalink: /kb/155/Q155427/
 
 ## Q155427: Errors 2114 or (9 - 2114) Using Windows NT Diagnostics
 
+{% raw %}
+
 	Article: Q155427
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -64,3 +66,5 @@ permalink: /kb/155/Q155427/
 	
 	=============================================================================
 	
+
+{% endraw %}

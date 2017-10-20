@@ -6,6 +6,8 @@ permalink: /kb/175/Q175631/
 
 ## Q175631: MSN Sign-In Screen Appears After Disconnecting from the Internet
 
+{% raw %}
+
 	Article: Q175631
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6
@@ -68,3 +70,5 @@ permalink: /kb/175/Q175631/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/217/Q217751/
 
 ## Q217751: HOWTO: Get Current User Locale ID in VB EXE Without Restarting
 
+{% raw %}
+
 	Article: Q217751
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -118,3 +120,5 @@ permalink: /kb/217/Q217751/
 	
 	=============================================================================
 	
+
+{% endraw %}

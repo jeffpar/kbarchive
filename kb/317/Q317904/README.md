@@ -6,6 +6,8 @@ permalink: /kb/317/Q317904/
 
 ## Q317904: Money/ Street/ Works 2002: Err Msg: EULA Error
 
+{% raw %}
+
 	Article: Q317904
 	Product(s): Microsoft Home Miscellaneous Products
 	Version(s): 1.0
@@ -198,3 +200,5 @@ permalink: /kb/317/Q317904/
 	
 	=============================================================================
 	
+
+{% endraw %}

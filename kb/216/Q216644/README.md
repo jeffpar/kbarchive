@@ -6,6 +6,8 @@ permalink: /kb/216/Q216644/
 
 ## Q216644: Golf 99: How to Install Specific Golf Courses to Your Hard Disk
 
+{% raw %}
+
 	Article: Q216644
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -63,3 +65,5 @@ permalink: /kb/216/Q216644/
 	
 	=============================================================================
 	
+
+{% endraw %}

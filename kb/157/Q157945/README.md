@@ -6,6 +6,8 @@ permalink: /kb/157/Q157945/
 
 ## Q157945: PRB: What to Do If Syntax Coloring Is Not Working
 
+{% raw %}
+
 	Article: Q157945
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -55,3 +57,5 @@ permalink: /kb/157/Q157945/
 	
 	=============================================================================
 	
+
+{% endraw %}

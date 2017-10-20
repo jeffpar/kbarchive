@@ -6,6 +6,8 @@ permalink: /kb/164/Q164238/
 
 ## Q164238: ACC97: Duplicate Relationships Multiply in Back-End Database
 
+{% raw %}
+
 	Article: Q164238
 	Product(s): Microsoft SourceSafe
 	Version(s): 97
@@ -213,3 +215,5 @@ permalink: /kb/164/Q164238/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/236/Q236406/
 
 ## Q236406: BUG: Accept Socket No Inherit Notification from Listening Socket
 
+{% raw %}
+
 	Article: Q236406
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95,98,98 Second Edition
@@ -68,3 +70,5 @@ permalink: /kb/236/Q236406/
 	
 	=============================================================================
 	
+
+{% endraw %}

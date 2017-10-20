@@ -6,6 +6,8 @@ permalink: /kb/192/Q192763/
 
 ## Q192763: STOP 0x1E in Poolext.sys on Terminal Server
 
+{% raw %}
+
 	Article: Q192763
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -78,3 +80,5 @@ permalink: /kb/192/Q192763/
 	
 	=============================================================================
 	
+
+{% endraw %}

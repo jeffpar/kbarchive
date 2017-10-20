@@ -6,6 +6,8 @@ permalink: /kb/186/Q186698/
 
 ## Q186698: XWEB: Post from OWA Gives Error &quot;There were problems sending...&quot;
 
+{% raw %}
+
 	Article: Q186698
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -79,3 +81,5 @@ permalink: /kb/186/Q186698/
 	
 	=============================================================================
 	
+
+{% endraw %}

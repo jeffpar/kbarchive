@@ -6,6 +6,8 @@ permalink: /kb/058/Q58299/
 
 ## Q58299: System Integrity Violated Pasting with VT52.SYS
 
+{% raw %}
+
 	Article: Q58299
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -50,3 +52,5 @@ permalink: /kb/058/Q58299/
 	
 	=============================================================================
 	
+
+{% endraw %}

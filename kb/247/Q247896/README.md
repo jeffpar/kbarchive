@@ -6,6 +6,8 @@ permalink: /kb/247/Q247896/
 
 ## Q247896: SMS: Setup May Not Install All Components
 
+{% raw %}
+
 	Article: Q247896
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -106,3 +108,5 @@ permalink: /kb/247/Q247896/
 	
 	=============================================================================
 	
+
+{% endraw %}

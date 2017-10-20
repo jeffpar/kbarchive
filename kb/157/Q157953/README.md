@@ -6,6 +6,8 @@ permalink: /kb/157/Q157953/
 
 ## Q157953: FIX: Print Button in Preview Does Not Respect the FOR Clause
 
+{% raw %}
+
 	Article: Q157953
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -76,3 +78,5 @@ permalink: /kb/157/Q157953/
 	
 	=============================================================================
 	
+
+{% endraw %}

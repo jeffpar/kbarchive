@@ -6,6 +6,8 @@ permalink: /kb/232/Q232969/
 
 ## Q232969: INFO: Error Listing for Microsoft Index Server
 
+{% raw %}
+
 	Article: Q232969
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,1.1,2.0
@@ -197,3 +199,5 @@ permalink: /kb/232/Q232969/
 	
 	=============================================================================
 	
+
+{% endraw %}

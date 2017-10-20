@@ -6,6 +6,8 @@ permalink: /kb/148/Q148808/
 
 ## Q148808: FIX: C2670: Template Function Cannot Convert Parameter
 
+{% raw %}
+
 	Article: Q148808
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -110,3 +112,5 @@ permalink: /kb/148/Q148808/
 	
 	=============================================================================
 	
+
+{% endraw %}

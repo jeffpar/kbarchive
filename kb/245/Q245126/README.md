@@ -6,6 +6,8 @@ permalink: /kb/245/Q245126/
 
 ## Q245126: How to Export the Contents of a DHCP Database to a Text File
 
+{% raw %}
+
 	Article: Q245126
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:97; winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/245/Q245126/
 	
 	=============================================================================
 	
+
+{% endraw %}

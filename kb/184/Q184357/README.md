@@ -6,6 +6,8 @@ permalink: /kb/184/Q184357/
 
 ## Q184357: PRB: Visual C++ Opens Project in Wrong VSS Database
 
+{% raw %}
+
 	Article: Q184357
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/184/Q184357/
 	
 	=============================================================================
 	
+
+{% endraw %}

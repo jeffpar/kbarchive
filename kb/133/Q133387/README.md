@@ -6,6 +6,8 @@ permalink: /kb/133/Q133387/
 
 ## Q133387: SETLS16 Fails to Enumerate a Domain Using SMSLS.INI
 
+{% raw %}
+
 	Article: Q133387
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -54,3 +56,5 @@ permalink: /kb/133/Q133387/
 	
 	=============================================================================
 	
+
+{% endraw %}

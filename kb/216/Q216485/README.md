@@ -6,6 +6,8 @@ permalink: /kb/216/Q216485/
 
 ## Q216485: HOW TO: Limit the Number of Trusted Certification Authorities
 
+{% raw %}
+
 	Article: Q216485
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -84,3 +86,5 @@ permalink: /kb/216/Q216485/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/203/Q203083/
 
 ## Q203083: SMS: Site System Status Does Not Show Current Database Size
 
+{% raw %}
+
 	Article: Q203083
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -64,3 +66,5 @@ permalink: /kb/203/Q203083/
 	
 	=============================================================================
 	
+
+{% endraw %}

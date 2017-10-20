@@ -6,6 +6,8 @@ permalink: /kb/288/Q288268/
 
 ## Q288268: XADM: How to Determine Which Users Are Using KMS
 
+{% raw %}
+
 	Article: Q288268
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -43,3 +45,5 @@ permalink: /kb/288/Q288268/
 	
 	=============================================================================
 	
+
+{% endraw %}

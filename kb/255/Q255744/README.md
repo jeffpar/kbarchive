@@ -6,6 +6,8 @@ permalink: /kb/255/Q255744/
 
 ## Q255744: HOWTO: Obtain a Device Context Handle for a Print Device
 
+{% raw %}
+
 	Article: Q255744
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -187,3 +189,5 @@ permalink: /kb/255/Q255744/
 	
 	=============================================================================
 	
+
+{% endraw %}

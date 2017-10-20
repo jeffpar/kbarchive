@@ -6,6 +6,8 @@ permalink: /kb/135/Q135368/
 
 ## Q135368: Cannot Retrieve E-mail on The Microsoft Network
 
+{% raw %}
+
 	Article: Q135368
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,95
@@ -61,3 +63,5 @@ permalink: /kb/135/Q135368/
 	
 	=============================================================================
 	
+
+{% endraw %}

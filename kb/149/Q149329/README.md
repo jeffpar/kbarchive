@@ -6,6 +6,8 @@ permalink: /kb/149/Q149329/
 
 ## Q149329: BUG: PictureBox Loses Graphics Printing from Win95 with 16-Bit
 
+{% raw %}
+
 	Article: Q149329
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -90,3 +92,5 @@ permalink: /kb/149/Q149329/
 	
 	=============================================================================
 	
+
+{% endraw %}

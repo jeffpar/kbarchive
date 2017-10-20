@@ -6,6 +6,8 @@ permalink: /kb/167/Q167363/
 
 ## Q167363: HP Network Port Missing After Reinstalling DLC on SNA Server
 
+{% raw %}
+
 	Article: Q167363
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 (all SP),4.0
@@ -125,3 +127,5 @@ permalink: /kb/167/Q167363/
 	
 	=============================================================================
 	
+
+{% endraw %}

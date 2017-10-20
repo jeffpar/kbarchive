@@ -6,6 +6,8 @@ permalink: /kb/069/Q69476/
 
 ## Q69476: stdout/stderr Are Buffered When Stack Is Moved Out of DGROUP
 
+{% raw %}
+
 	Article: Q69476
 	Product(s): See article
 	Version(s): 6.00 6.00a
@@ -69,3 +71,5 @@ permalink: /kb/069/Q69476/
 	
 	Enter a number:      /* printf() output is buffered, so output does */
 	The number is 22     /* not appear until exit code flushes buffers  */
+
+{% endraw %}

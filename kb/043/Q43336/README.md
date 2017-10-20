@@ -6,6 +6,8 @@ permalink: /kb/043/Q43336/
 
 ## Q43336: NOTEPAD.COM Doesn't Work with Extended Keyboard
 
+{% raw %}
+
 	Article: Q43336
 	Product(s): See article
 	Version(s): 1.00 1.01 2.00 2.01 2.50 3.00 4.00 5.00 5.02 5.03
@@ -18,3 +20,5 @@ permalink: /kb/043/Q43336/
 	
 	No resolution to this limitation is expected because NOTEPAD.COM is
 	no longer included with the mouse.
+
+{% endraw %}

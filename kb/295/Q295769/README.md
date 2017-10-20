@@ -6,6 +6,8 @@ permalink: /kb/295/Q295769/
 
 ## Q295769: Slow DDR Processing with a Growing DDM Backlog
 
+{% raw %}
+
 	Article: Q295769
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -84,3 +86,5 @@ permalink: /kb/295/Q295769/
 	
 	=============================================================================
 	
+
+{% endraw %}

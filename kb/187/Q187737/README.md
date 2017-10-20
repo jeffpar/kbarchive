@@ -6,6 +6,8 @@ permalink: /kb/187/Q187737/
 
 ## Q187737: PRB: Meta Tag Properties Not Retrieved from a Query
 
+{% raw %}
+
 	Article: Q187737
 	Product(s): Internet Information Server
 	Version(s): 2.0
@@ -45,3 +47,5 @@ permalink: /kb/187/Q187737/
 	
 	=============================================================================
 	
+
+{% endraw %}

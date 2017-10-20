@@ -6,6 +6,8 @@ permalink: /kb/125/Q125469/
 
 ## Q125469: PRB: Run-time Subroutines Do Not Appear to Function
 
+{% raw %}
+
 	Article: Q125469
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a,4.0
@@ -118,3 +120,5 @@ permalink: /kb/125/Q125469/
 	
 	=============================================================================
 	
+
+{% endraw %}

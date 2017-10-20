@@ -6,6 +6,8 @@ permalink: /kb/163/Q163877/
 
 ## Q163877: Problems Copying Files To Novell NetWare 3.11
 
+{% raw %}
+
 	Article: Q163877
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -127,3 +129,5 @@ permalink: /kb/163/Q163877/
 	
 	=============================================================================
 	
+
+{% endraw %}

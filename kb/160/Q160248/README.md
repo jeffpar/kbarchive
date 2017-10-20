@@ -6,6 +6,8 @@ permalink: /kb/160/Q160248/
 
 ## Q160248: Clicking Close Button During MSN Setup Restarts Computer
 
+{% raw %}
+
 	Article: Q160248
 	Product(s): The Microsoft Network
 	Version(s): 2.00
@@ -40,3 +42,5 @@ permalink: /kb/160/Q160248/
 	
 	=============================================================================
 	
+
+{% endraw %}

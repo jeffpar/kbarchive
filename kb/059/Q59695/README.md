@@ -6,6 +6,8 @@ permalink: /kb/059/Q59695/
 
 ## Q59695: Can't Have Groups Within Groups in Program Manager
 
+{% raw %}
+
 	Article: Q59695
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -32,3 +34,5 @@ permalink: /kb/059/Q59695/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124580/
 
 ## Q124580: Explorapedia: Program Seems to Hang When Printing
 
+{% raw %}
+
 	Article: Q124580
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -100,3 +102,5 @@ permalink: /kb/124/Q124580/
 	
 	=============================================================================
 	
+
+{% endraw %}

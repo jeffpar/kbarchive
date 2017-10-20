@@ -6,6 +6,8 @@ permalink: /kb/189/Q189866/
 
 ## Q189866: BUG: Incorrect Results When Comparing Large Numbers
 
+{% raw %}
+
 	Article: Q189866
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -70,3 +72,5 @@ permalink: /kb/189/Q189866/
 	
 	=============================================================================
 	
+
+{% endraw %}

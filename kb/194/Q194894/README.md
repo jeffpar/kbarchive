@@ -6,6 +6,8 @@ permalink: /kb/194/Q194894/
 
 ## Q194894: PRB: Date Comparison Can fail Using Arithmetic Operators
 
+{% raw %}
+
 	Article: Q194894
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -118,3 +120,5 @@ permalink: /kb/194/Q194894/
 	
 	=============================================================================
 	
+
+{% endraw %}

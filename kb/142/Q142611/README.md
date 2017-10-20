@@ -6,6 +6,8 @@ permalink: /kb/142/Q142611/
 
 ## Q142611: WOW: GP Fault in Ddeml.dll Using Visual Basic Application
 
+{% raw %}
+
 	Article: Q142611
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -58,3 +60,5 @@ permalink: /kb/142/Q142611/
 	
 	=============================================================================
 	
+
+{% endraw %}

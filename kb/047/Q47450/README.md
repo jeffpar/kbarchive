@@ -6,6 +6,8 @@ permalink: /kb/047/Q47450/
 
 ## Q47450: Chart Location for Scaletitle Documented Incorrectly
 
+{% raw %}
+
 	Article: Q47450
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -19,3 +21,5 @@ permalink: /kb/047/Q47450/
 	This is not correct. If an x axis scaletitle is displayed, it always
 	will be ABOVE the x axis title. The positioning of the y axis
 	scaletitle is described correctly.
+
+{% endraw %}

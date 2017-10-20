@@ -6,6 +6,8 @@ permalink: /kb/221/Q221911/
 
 ## Q221911: FIX: Memory Leak in Visual C++ Integrated Debugger
 
+{% raw %}
+
 	Article: Q221911
 	Product(s): Microsoft C Compiler
 	Version(s): 2000,6.0
@@ -92,3 +94,5 @@ permalink: /kb/221/Q221911/
 	
 	=============================================================================
 	
+
+{% endraw %}

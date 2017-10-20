@@ -6,6 +6,8 @@ permalink: /kb/180/Q180939/
 
 ## Q180939: Unable to Start Print Session After Changing Session Name
 
+{% raw %}
+
 	Article: Q180939
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -55,3 +57,5 @@ permalink: /kb/180/Q180939/
 	
 	=============================================================================
 	
+
+{% endraw %}

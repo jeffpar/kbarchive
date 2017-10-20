@@ -6,6 +6,8 @@ permalink: /kb/160/Q160535/
 
 ## Q160535: XCON: Description of Event ID 145
 
+{% raw %}
+
 	Article: Q160535
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -52,3 +54,5 @@ permalink: /kb/160/Q160535/
 	
 	=============================================================================
 	
+
+{% endraw %}

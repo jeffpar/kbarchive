@@ -6,6 +6,8 @@ permalink: /kb/043/Q43564/
 
 ## Q43564: L2025: Symbol Already Defined Error Caused by SIGNAL.H in .QLB
 
+{% raw %}
+
 	Article: Q43564
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -57,3 +59,5 @@ permalink: /kb/043/Q43564/
 	BQLB45.LIB in QuickBASIC 4.50, BQLB41.LIB in QuickBASIC 4.00b or BASIC
 	Compiler 6.00b, BQLB40.LIB in QuickBASIC 4.00 or BASIC Compiler 6.00,
 	and QBXQLB.LIB in BASIC PDS 7.00 or 7.10.
+
+{% endraw %}

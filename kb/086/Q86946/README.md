@@ -6,6 +6,8 @@ permalink: /kb/086/Q86946/
 
 ## Q86946: 3COM: Valid Options for the GATEWAY.INI File
 
+{% raw %}
+
 	Article: Q86946
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -36,3 +38,5 @@ permalink: /kb/086/Q86946/
 	
 	=============================================================================
 	
+
+{% endraw %}

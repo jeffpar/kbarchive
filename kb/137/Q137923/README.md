@@ -6,6 +6,8 @@ permalink: /kb/137/Q137923/
 
 ## Q137923: Driver for Compaq NetFlex32 Integrated Ethernet Adapter
 
+{% raw %}
+
 	Article: Q137923
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -76,3 +78,5 @@ permalink: /kb/137/Q137923/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/221/Q221766/
 
 ## Q221766: Registry Permissions Not Inherited Properly
 
+{% raw %}
+
 	Article: Q221766
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/221/Q221766/
 	
 	=============================================================================
 	
+
+{% endraw %}

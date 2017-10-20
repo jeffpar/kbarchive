@@ -6,6 +6,8 @@ permalink: /kb/130/Q130678/
 
 ## Q130678: TEAC CD55A 4X IDE Beta Drivers for Windows NT 3.5x
 
+{% raw %}
+
 	Article: Q130678
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -49,3 +51,5 @@ permalink: /kb/130/Q130678/
 	
 	=============================================================================
 	
+
+{% endraw %}

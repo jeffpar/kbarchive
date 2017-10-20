@@ -6,6 +6,8 @@ permalink: /kb/221/Q221642/
 
 ## Q221642: FIX: Memory Leak With SET SYSMENU TO DEFAULT
 
+{% raw %}
+
 	Article: Q221642
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -77,3 +79,5 @@ permalink: /kb/221/Q221642/
 	
 	=============================================================================
 	
+
+{% endraw %}

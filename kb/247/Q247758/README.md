@@ -6,6 +6,8 @@ permalink: /kb/247/Q247758/
 
 ## Q247758: INFO: No Padding of Parameters Done by SQL Driver Prior Ver 3.7x
 
+{% raw %}
+
 	Article: Q247758
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5,2.6,3.7
@@ -66,3 +68,5 @@ permalink: /kb/247/Q247758/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/259/Q259363/
 
 ## Q259363: SideWinder: How to Minimize and Pause Games in Revenge of Arcade
 
+{% raw %}
+
 	Article: Q259363
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,1.5,2.0,3.0,4.0
@@ -69,3 +71,5 @@ permalink: /kb/259/Q259363/
 	
 	=============================================================================
 	
+
+{% endraw %}

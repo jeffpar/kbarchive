@@ -6,6 +6,8 @@ permalink: /kb/103/Q103881/
 
 ## Q103881: The ISO Model: Theory and Function of Layered Design
 
+{% raw %}
+
 	Article: Q103881
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/103/Q103881/
 	
 	=============================================================================
 	
+
+{% endraw %}

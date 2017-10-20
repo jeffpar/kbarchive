@@ -6,6 +6,8 @@ permalink: /kb/124/Q124658/
 
 ## Q124658: DCA IRMA Token Ring Adapter is not Detected
 
+{% raw %}
+
 	Article: Q124658
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -49,3 +51,5 @@ permalink: /kb/124/Q124658/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/295/Q295368/
 
 ## Q295368: Windows Service Packs May Use Shared Folder Drive For Temp Files
 
+{% raw %}
+
 	Article: Q295368
 	Product(s): Microsoft SNA Server
 	Version(s): 2000,3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -59,3 +61,5 @@ permalink: /kb/295/Q295368/
 	
 	=============================================================================
 	
+
+{% endraw %}

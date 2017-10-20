@@ -6,6 +6,8 @@ permalink: /kb/195/Q195630/
 
 ## Q195630: Unable to Fail-Back the Disk Resource After a Fail-Over
 
+{% raw %}
+
 	Article: Q195630
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/195/Q195630/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142493/
 
 ## Q142493: BUG: Cannot Cast Double to int for Use in an Array Declarator
 
+{% raw %}
+
 	Article: Q142493
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0
@@ -84,3 +86,5 @@ permalink: /kb/142/Q142493/
 	
 	=============================================================================
 	
+
+{% endraw %}

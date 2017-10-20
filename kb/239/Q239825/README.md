@@ -6,6 +6,8 @@ permalink: /kb/239/Q239825/
 
 ## Q239825: INFO: Transfer Files Between Desktop and Windows CE Emulator
 
+{% raw %}
+
 	Article: Q239825
 	Product(s): Microsoft C Compiler
 	Version(s): 2000,4.0,5.0,6.0
@@ -120,3 +122,5 @@ permalink: /kb/239/Q239825/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189750/
 
 ## Q189750: Error Message: Bad Resource Data Checksum Error
 
+{% raw %}
+
 	Article: Q189750
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -68,3 +70,5 @@ permalink: /kb/189/Q189750/
 	
 	=============================================================================
 	
+
+{% endraw %}

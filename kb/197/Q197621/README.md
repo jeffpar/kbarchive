@@ -6,6 +6,8 @@ permalink: /kb/197/Q197621/
 
 ## Q197621: IP Restrictions Using Web Admin May Not Work as Expected
 
+{% raw %}
+
 	Article: Q197621
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -48,3 +50,5 @@ permalink: /kb/197/Q197621/
 	
 	=============================================================================
 	
+
+{% endraw %}

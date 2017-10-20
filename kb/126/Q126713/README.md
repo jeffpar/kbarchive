@@ -6,6 +6,8 @@ permalink: /kb/126/Q126713/
 
 ## Q126713: Resetting Default Access Controls on Selected Registry Keys
 
+{% raw %}
+
 	Article: Q126713
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -97,3 +99,5 @@ permalink: /kb/126/Q126713/
 	
 	=============================================================================
 	
+
+{% endraw %}

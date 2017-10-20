@@ -6,6 +6,8 @@ permalink: /kb/111/Q111317/
 
 ## Q111317: Default MVCOUNT Value Increased in FoxPro for Macintosh
 
+{% raw %}
+
 	Article: Q111317
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -35,3 +37,5 @@ permalink: /kb/111/Q111317/
 	
 	=============================================================================
 	
+
+{% endraw %}

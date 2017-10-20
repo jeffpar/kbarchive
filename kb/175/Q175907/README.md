@@ -6,6 +6,8 @@ permalink: /kb/175/Q175907/
 
 ## Q175907: FIX: Hide Event Doesn't Fire Correctly in Internet Explorer 4.0
 
+{% raw %}
+
 	Article: Q175907
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -132,3 +134,5 @@ permalink: /kb/175/Q175907/
 	
 	=============================================================================
 	
+
+{% endraw %}

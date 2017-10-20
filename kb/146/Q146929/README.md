@@ -6,6 +6,8 @@ permalink: /kb/146/Q146929/
 
 ## Q146929: XCON: ORName Not Included in Reported IPMessageId
 
+{% raw %}
+
 	Article: Q146929
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -102,3 +104,5 @@ permalink: /kb/146/Q146929/
 	
 	=============================================================================
 	
+
+{% endraw %}

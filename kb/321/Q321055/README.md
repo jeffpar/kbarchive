@@ -6,6 +6,8 @@ permalink: /kb/321/Q321055/
 
 ## Q321055: Deadlock Occurs If You Use Printer Object in Multithreaded App.
 
+{% raw %}
+
 	Article: Q321055
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -76,3 +78,5 @@ permalink: /kb/321/Q321055/
 	
 	=============================================================================
 	
+
+{% endraw %}

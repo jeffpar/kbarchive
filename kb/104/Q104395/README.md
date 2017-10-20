@@ -6,6 +6,8 @@ permalink: /kb/104/Q104395/
 
 ## Q104395: BUG: StretchDIBits Faults on 24-BPP PM-Style DIBs
 
+{% raw %}
+
 	Article: Q104395
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/104/Q104395/
 	
 	=============================================================================
 	
+
+{% endraw %}

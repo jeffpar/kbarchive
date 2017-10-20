@@ -6,6 +6,8 @@ permalink: /kb/119/Q119323/
 
 ## Q119323: Cinemania 1994: Review May Not Copy Completely
 
+{% raw %}
+
 	Article: Q119323
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1991 edition,1994 edition
@@ -51,3 +53,5 @@ permalink: /kb/119/Q119323/
 	
 	=============================================================================
 	
+
+{% endraw %}

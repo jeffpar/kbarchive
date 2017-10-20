@@ -6,6 +6,8 @@ permalink: /kb/177/Q177135/
 
 ## Q177135: PRB: Do not Call ODBC Within DLL_PROCESS_DETACH Case
 
+{% raw %}
+
 	Article: Q177135
 	Product(s): Microsoft C Compiler
 	Version(s): 2.5,2.6,5.0,6.0
@@ -63,3 +65,5 @@ permalink: /kb/177/Q177135/
 	
 	=============================================================================
 	
+
+{% endraw %}

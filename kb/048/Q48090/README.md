@@ -6,6 +6,8 @@ permalink: /kb/048/Q48090/
 
 ## Q48090: Using a Wildcard Argument with the remove() Function
 
+{% raw %}
+
 	Article: Q48090
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -57,3 +59,5 @@ permalink: /kb/048/Q48090/
 	     else
 	        printf ("File successfully deleted\n");
 	}
+
+{% endraw %}

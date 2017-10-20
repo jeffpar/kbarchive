@@ -6,6 +6,8 @@ permalink: /kb/187/Q187529/
 
 ## Q187529: HOWTO: Use ADO to Access Objects Through an ADSI LDAP Provider
 
+{% raw %}
+
 	Article: Q187529
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.5,2.0,2.1 SP2,2.5,5.0,6.0
@@ -120,3 +122,5 @@ permalink: /kb/187/Q187529/
 	
 	=============================================================================
 	
+
+{% endraw %}

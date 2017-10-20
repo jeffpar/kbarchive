@@ -6,6 +6,8 @@ permalink: /kb/062/Q62266/
 
 ## Q62266: QB.EXE/QBX.EXE Incorrectly Allows GO As a Variable
 
+{% raw %}
+
 	Article: Q62266
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -37,3 +39,5 @@ permalink: /kb/062/Q62266/
 	compiled with BC.EXE:
 	
 	   GO = 1
+
+{% endraw %}

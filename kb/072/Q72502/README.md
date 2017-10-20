@@ -6,6 +6,8 @@ permalink: /kb/072/Q72502/
 
 ## Q72502: Converting Programs from GW-Basic to QBasic
 
+{% raw %}
+
 	Article: Q72502
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -79,3 +81,5 @@ permalink: /kb/072/Q72502/
 	
 	=============================================================================
 	
+
+{% endraw %}

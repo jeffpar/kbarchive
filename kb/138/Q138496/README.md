@@ -6,6 +6,8 @@ permalink: /kb/138/Q138496/
 
 ## Q138496: How to Call the Class Code of a Control in a Container
 
+{% raw %}
+
 	Article: Q138496
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -53,3 +55,5 @@ permalink: /kb/138/Q138496/
 	
 	=============================================================================
 	
+
+{% endraw %}

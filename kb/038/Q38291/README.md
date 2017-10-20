@@ -6,6 +6,8 @@ permalink: /kb/038/Q38291/
 
 ## Q38291: INFO: Cannot Define Other Preprocessor Directives with #define
 
+{% raw %}
+
 	Article: Q38291
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0,7.0
@@ -92,3 +94,5 @@ permalink: /kb/038/Q38291/
 	
 	=============================================================================
 	
+
+{% endraw %}

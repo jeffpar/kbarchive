@@ -6,6 +6,8 @@ permalink: /kb/323/Q323206/
 
 ## Q323206: SMS: List of Bugs Fixed in Systems Management Server 2.0 SP4 HRP
 
+{% raw %}
+
 	Article: Q323206
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -200,3 +202,5 @@ permalink: /kb/323/Q323206/
 	
 	=============================================================================
 	
+
+{% endraw %}

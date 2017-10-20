@@ -6,6 +6,8 @@ permalink: /kb/175/Q175018/
 
 ## Q175018: HOWTO: Acquire and Install the Microsoft Oracle ODBC Driver
 
+{% raw %}
+
 	Article: Q175018
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): Build 2.573.2927,Build 2.573.3513,Build 2.573.3711,Build 2.573.4202
@@ -106,3 +108,5 @@ permalink: /kb/175/Q175018/
 	
 	=============================================================================
 	
+
+{% endraw %}

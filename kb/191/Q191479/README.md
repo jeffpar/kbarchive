@@ -6,6 +6,8 @@ permalink: /kb/191/Q191479/
 
 ## Q191479: RRAS API Name Updated
 
+{% raw %}
+
 	Article: Q191479
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -59,3 +61,5 @@ permalink: /kb/191/Q191479/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165841/
 
 ## Q165841: Support for More than 158 Characters Per Line
 
+{% raw %}
+
 	Article: Q165841
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -60,3 +62,5 @@ permalink: /kb/165/Q165841/
 	
 	=============================================================================
 	
+
+{% endraw %}

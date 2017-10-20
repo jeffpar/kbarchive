@@ -6,6 +6,8 @@ permalink: /kb/165/Q165327/
 
 ## Q165327: XCLN: Replacing a Damaged Offline Folder (OST)
 
+{% raw %}
+
 	Article: Q165327
 	Product(s): Microsoft Exchange
 	Version(s): 1.00
@@ -60,3 +62,5 @@ permalink: /kb/165/Q165327/
 	
 	=============================================================================
 	
+
+{% endraw %}

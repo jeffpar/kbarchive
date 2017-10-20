@@ -6,6 +6,8 @@ permalink: /kb/078/Q78061/
 
 ## Q78061: Problems with LAN Manager Updates and OS/2 1.3
 
+{% raw %}
+
 	Article: Q78061
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -115,3 +117,5 @@ permalink: /kb/078/Q78061/
 	
 	=============================================================================
 	
+
+{% endraw %}

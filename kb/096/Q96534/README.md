@@ -6,6 +6,8 @@ permalink: /kb/096/Q96534/
 
 ## Q96534: PC WRmt: Password Problems and Switching Mail Drivers
 
+{% raw %}
+
 	Article: Q96534
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -44,3 +46,5 @@ permalink: /kb/096/Q96534/
 	
 	=============================================================================
 	
+
+{% endraw %}

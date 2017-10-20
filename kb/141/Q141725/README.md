@@ -6,6 +6,8 @@ permalink: /kb/141/Q141725/
 
 ## Q141725: INFO: Stopping MFC/MDI from Creating New MDI Child Window On Sta
 
+{% raw %}
+
 	Article: Q141725
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/141/Q141725/
 	
 	=============================================================================
 	
+
+{% endraw %}

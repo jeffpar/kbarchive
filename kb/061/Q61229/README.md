@@ -6,6 +6,8 @@ permalink: /kb/061/Q61229/
 
 ## Q61229: C 6.00 README: NMAKE: Source Objects in Different Directories
 
+{% raw %}
+
 	Article: Q61229
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -45,3 +47,5 @@ permalink: /kb/061/Q61229/
 	          $(CC) -c /Fo$@ $<
 	
 	      $(obj)test.obj : $(src)test.c
+
+{% endraw %}

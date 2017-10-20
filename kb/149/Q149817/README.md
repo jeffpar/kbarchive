@@ -6,6 +6,8 @@ permalink: /kb/149/Q149817/
 
 ## Q149817: STOP 0x0000000A and STOP 0x0000001E in Isotp.sys
 
+{% raw %}
+
 	Article: Q149817
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -71,3 +73,5 @@ permalink: /kb/149/Q149817/
 	
 	=============================================================================
 	
+
+{% endraw %}

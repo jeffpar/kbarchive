@@ -6,6 +6,8 @@ permalink: /kb/107/Q107840/
 
 ## Q107840: Upgrade over IBM LAN Server Leaves Drivers in Startup Files
 
+{% raw %}
+
 	Article: Q107840
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -78,3 +80,5 @@ permalink: /kb/107/Q107840/
 	
 	=============================================================================
 	
+
+{% endraw %}

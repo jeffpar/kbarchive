@@ -6,6 +6,8 @@ permalink: /kb/060/Q60311/
 
 ## Q60311: Notepad Does Not Save Word Wrap As Default
 
+{% raw %}
+
 	Article: Q60311
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -35,3 +37,5 @@ permalink: /kb/060/Q60311/
 	
 	=============================================================================
 	
+
+{% endraw %}

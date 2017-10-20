@@ -6,6 +6,8 @@ permalink: /kb/245/Q245445/
 
 ## Q245445: Err Msg: The Subscription Coupon Number You Entered...
 
+{% raw %}
+
 	Article: Q245445
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -112,3 +114,5 @@ permalink: /kb/245/Q245445/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137139/
 
 ## Q137139: HOWTO: Optimize the Reactivation of In-Place Active Servers
 
+{% raw %}
+
 	Article: Q137139
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0
@@ -113,3 +115,5 @@ permalink: /kb/137/Q137139/
 	
 	=============================================================================
 	
+
+{% endraw %}

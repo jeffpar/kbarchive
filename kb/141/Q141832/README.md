@@ -6,6 +6,8 @@ permalink: /kb/141/Q141832/
 
 ## Q141832: How to Change the Boot Disk Order with Multiple SCSI Adapters
 
+{% raw %}
+
 	Article: Q141832
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.00
@@ -68,3 +70,5 @@ permalink: /kb/141/Q141832/
 	
 	=============================================================================
 	
+
+{% endraw %}

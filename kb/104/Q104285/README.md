@@ -6,6 +6,8 @@ permalink: /kb/104/Q104285/
 
 ## Q104285: Dinosaurs: Title Bar Is Wrong Color When Active/Inactive
 
+{% raw %}
+
 	Article: Q104285
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -41,3 +43,5 @@ permalink: /kb/104/Q104285/
 	
 	=============================================================================
 	
+
+{% endraw %}

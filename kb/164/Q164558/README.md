@@ -6,6 +6,8 @@ permalink: /kb/164/Q164558/
 
 ## Q164558: Configuring MSNDS to Log in to a NetWare Bindery Server
 
+{% raw %}
+
 	Article: Q164558
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -72,3 +74,5 @@ permalink: /kb/164/Q164558/
 	
 	=============================================================================
 	
+
+{% endraw %}

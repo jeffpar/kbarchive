@@ -6,6 +6,8 @@ permalink: /kb/193/Q193941/
 
 ## Q193941: INFO: Location of Oracle's Public FTP Site
 
+{% raw %}
+
 	Article: Q193941
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): Build 2.573.2927
@@ -93,3 +95,5 @@ permalink: /kb/193/Q193941/
 	
 	=============================================================================
 	
+
+{% endraw %}

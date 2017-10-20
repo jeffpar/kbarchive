@@ -6,6 +6,8 @@ permalink: /kb/170/Q170624/
 
 ## Q170624: FP97: Data Loss After Using &quot;View or Edit HTML&quot; Dialog Box
 
+{% raw %}
+
 	Article: Q170624
 	Product(s): Word Front Page
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/170/Q170624/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96446/
 
 ## Q96446: Error Message: The NETWARE.DLL File Cannot Be Located
 
+{% raw %}
+
 	Article: Q96446
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -86,3 +88,5 @@ permalink: /kb/096/Q96446/
 	
 	=============================================================================
 	
+
+{% endraw %}

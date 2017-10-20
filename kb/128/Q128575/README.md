@@ -6,6 +6,8 @@ permalink: /kb/128/Q128575/
 
 ## Q128575: PC MAPI: MAPI32.DLL Does Not Support Multi-Threaded Call
 
+{% raw %}
+
 	Article: Q128575
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -49,3 +51,5 @@ permalink: /kb/128/Q128575/
 	
 	=============================================================================
 	
+
+{% endraw %}

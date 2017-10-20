@@ -6,6 +6,8 @@ permalink: /kb/230/Q230294/
 
 ## Q230294: Remote Data Service 1.5 Release Notes
 
+{% raw %}
+
 	Article: Q230294
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -517,3 +519,5 @@ permalink: /kb/230/Q230294/
 	
 	=============================================================================
 	
+
+{% endraw %}

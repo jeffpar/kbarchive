@@ -6,6 +6,8 @@ permalink: /kb/132/Q132085/
 
 ## Q132085: Applications Hang When Opening Files when CSNW is Installed
 
+{% raw %}
+
 	Article: Q132085
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -57,3 +59,5 @@ permalink: /kb/132/Q132085/
 	
 	=============================================================================
 	
+
+{% endraw %}

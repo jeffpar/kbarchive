@@ -6,6 +6,8 @@ permalink: /kb/166/Q166875/
 
 ## Q166875: 5250 Emulator Won't Connect Even Though Sessions Are Available
 
+{% raw %}
+
 	Article: Q166875
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0
@@ -177,3 +179,5 @@ permalink: /kb/166/Q166875/
 	
 	=============================================================================
 	
+
+{% endraw %}

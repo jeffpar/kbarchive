@@ -6,6 +6,8 @@ permalink: /kb/134/Q134471/
 
 ## Q134471: System Error Trying to Suspend Global Dynamics 466 Computers
 
+{% raw %}
+
 	Article: Q134471
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/134/Q134471/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174001/
 
 ## Q174001: The Microsoft Network Stops Responding After Initial Sign-In
 
+{% raw %}
+
 	Article: Q174001
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5
@@ -75,3 +77,5 @@ permalink: /kb/174/Q174001/
 	
 	=============================================================================
 	
+
+{% endraw %}

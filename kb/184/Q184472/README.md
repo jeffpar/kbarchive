@@ -6,6 +6,8 @@ permalink: /kb/184/Q184472/
 
 ## Q184472: Zone: ZoneFriends Icon Remains on Taskbar When You Close Browser
 
+{% raw %}
+
 	Article: Q184472
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/184/Q184472/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154170/
 
 ## Q154170: BUG: @...SAY Prints Gray Background
 
+{% raw %}
+
 	Article: Q154170
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.6a; WINDOWS: 3.0,3.0b,5.0,5.0a,6.0
@@ -159,3 +161,5 @@ permalink: /kb/154/Q154170/
 	
 	=============================================================================
 	
+
+{% endraw %}

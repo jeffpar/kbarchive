@@ -6,6 +6,8 @@ permalink: /kb/198/Q198124/
 
 ## Q198124: WD97: Comments/Annotations Scramble When Merging Documents
 
+{% raw %}
+
 	Article: Q198124
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -60,3 +62,5 @@ permalink: /kb/198/Q198124/
 	
 	=============================================================================
 	
+
+{% endraw %}

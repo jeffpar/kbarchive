@@ -6,6 +6,8 @@ permalink: /kb/182/Q182465/
 
 ## Q182465: ACCDATE Command Line Does Not Work with Windows 95
 
+{% raw %}
+
 	Article: Q182465
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -51,3 +53,5 @@ permalink: /kb/182/Q182465/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/266/Q266314/
 
 ## Q266314: OS/2 Programs May Not Work When Calling DosCreateCSAlias()
 
+{% raw %}
+
 	Article: Q266314
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/266/Q266314/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/113/Q113366/
 
 ## Q113366: Writer: Banner and Card Text Inserted in Wrong Place
 
+{% raw %}
+
 	Article: Q113366
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a,2.0
@@ -65,3 +67,5 @@ permalink: /kb/113/Q113366/
 	
 	=============================================================================
 	
+
+{% endraw %}

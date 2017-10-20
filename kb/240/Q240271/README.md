@@ -6,6 +6,8 @@ permalink: /kb/240/Q240271/
 
 ## Q240271: Event 1045 When Bringing IP Address Resource Online
 
+{% raw %}
+
 	Article: Q240271
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/240/Q240271/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175491/
 
 ## Q175491: ODE97: Step-by-Step Example of Creating/Compiling a Help File
 
+{% raw %}
+
 	Article: Q175491
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -267,3 +269,5 @@ permalink: /kb/175/Q175491/
 	
 	=============================================================================
 	
+
+{% endraw %}

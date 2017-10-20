@@ -6,6 +6,8 @@ permalink: /kb/231/Q231529/
 
 ## Q231529: MapPoint 2000: Unable to Link or Import More than 1000 Records
 
+{% raw %}
+
 	Article: Q231529
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -71,3 +73,5 @@ permalink: /kb/231/Q231529/
 	
 	=============================================================================
 	
+
+{% endraw %}

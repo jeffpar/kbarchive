@@ -6,6 +6,8 @@ permalink: /kb/235/Q235868/
 
 ## Q235868: Invoking COMTI Method Elicits MTS Event ID 4128
 
+{% raw %}
+
 	Article: Q235868
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0 SP2
@@ -70,3 +72,5 @@ permalink: /kb/235/Q235868/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126781/
 
 ## Q126781: Cinemania: Film Clips Do Not Play on Reveal TV 300 Card
 
+{% raw %}
+
 	Article: Q126781
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition,1996 edition
@@ -97,3 +99,5 @@ permalink: /kb/126/Q126781/
 	
 	=============================================================================
 	
+
+{% endraw %}

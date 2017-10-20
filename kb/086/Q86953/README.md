@@ -6,6 +6,8 @@ permalink: /kb/086/Q86953/
 
 ## Q86953: 3COM: Hardware Required by the 3Com Gateway
 
+{% raw %}
+
 	Article: Q86953
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -44,3 +46,5 @@ permalink: /kb/086/Q86953/
 	
 	=============================================================================
 	
+
+{% endraw %}

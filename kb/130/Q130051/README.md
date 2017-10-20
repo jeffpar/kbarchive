@@ -6,6 +6,8 @@ permalink: /kb/130/Q130051/
 
 ## Q130051: Use CHEV Command for Changing Mode of DOS/V
 
+{% raw %}
+
 	Article: Q130051
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -51,3 +53,5 @@ permalink: /kb/130/Q130051/
 	
 	=============================================================================
 	
+
+{% endraw %}

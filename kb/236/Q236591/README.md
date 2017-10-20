@@ -6,6 +6,8 @@ permalink: /kb/236/Q236591/
 
 ## Q236591: SNA Server LU Allocation Favors Active Remote Connections
 
+{% raw %}
+
 	Article: Q236591
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2
@@ -118,3 +120,5 @@ permalink: /kb/236/Q236591/
 	
 	=============================================================================
 	
+
+{% endraw %}

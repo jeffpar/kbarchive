@@ -6,6 +6,8 @@ permalink: /kb/036/Q36729/
 
 ## Q36729: Warning C4047 'operator': Different Levels of Indirection
 
+{% raw %}
+
 	Article: Q36729
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -50,3 +52,5 @@ permalink: /kb/036/Q36729/
 	
 	This is a result of the fact that MALLOC()'s default return type is
 	"void *".
+
+{% endraw %}

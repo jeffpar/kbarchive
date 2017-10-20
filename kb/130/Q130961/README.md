@@ -6,6 +6,8 @@ permalink: /kb/130/Q130961/
 
 ## Q130961: TCP/IP Upgrade from Windows NT 3.1 Requires User Interaction
 
+{% raw %}
+
 	Article: Q130961
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.5
@@ -98,3 +100,5 @@ permalink: /kb/130/Q130961/
 	
 	=============================================================================
 	
+
+{% endraw %}

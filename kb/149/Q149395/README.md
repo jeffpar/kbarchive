@@ -6,6 +6,8 @@ permalink: /kb/149/Q149395/
 
 ## Q149395: Stop Msg: 0x0000001E in RDR.SYS Caused by Corrupted SMBs
 
+{% raw %}
+
 	Article: Q149395
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -68,3 +70,5 @@ permalink: /kb/149/Q149395/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/223/Q223071/
 
 ## Q223071: FIX: MSHFlexgrid Clip Property Can't Get Data in Selected C
 
+{% raw %}
+
 	Article: Q223071
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -105,3 +107,5 @@ permalink: /kb/223/Q223071/
 	
 	=============================================================================
 	
+
+{% endraw %}

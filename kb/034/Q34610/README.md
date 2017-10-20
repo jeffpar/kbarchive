@@ -6,6 +6,8 @@ permalink: /kb/034/Q34610/
 
 ## Q34610: WRITE# Statement Works with Semicolon Despite BC.EXE Error
 
+{% raw %}
+
 	Article: Q34610
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -56,3 +58,5 @@ permalink: /kb/034/Q34610/
 	
 	The WRITE# statement delimits output arguments with commas, and also
 	places double quotation marks around string arguments.
+
+{% endraw %}

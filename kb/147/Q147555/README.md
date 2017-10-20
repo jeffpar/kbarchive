@@ -6,6 +6,8 @@ permalink: /kb/147/Q147555/
 
 ## Q147555: Connecting to NetWare Servers Using Schedule Service
 
+{% raw %}
+
 	Article: Q147555
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -53,3 +55,5 @@ permalink: /kb/147/Q147555/
 	
 	=============================================================================
 	
+
+{% endraw %}

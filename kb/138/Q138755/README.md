@@ -6,6 +6,8 @@ permalink: /kb/138/Q138755/
 
 ## Q138755: FIX: GPF When Drag-Drop Resources Between Two Resource Scripts
 
+{% raw %}
+
 	Article: Q138755
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0,6.0
@@ -70,3 +72,5 @@ permalink: /kb/138/Q138755/
 	
 	=============================================================================
 	
+
+{% endraw %}

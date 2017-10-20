@@ -6,6 +6,8 @@ permalink: /kb/183/Q183840/
 
 ## Q183840: Stop 0xC000021A When Starting Task Manager with CTRL+ALT+DEL
 
+{% raw %}
+
 	Article: Q183840
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/183/Q183840/
 	
 	=============================================================================
 	
+
+{% endraw %}

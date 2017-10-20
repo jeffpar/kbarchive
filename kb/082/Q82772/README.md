@@ -6,6 +6,8 @@ permalink: /kb/082/Q82772/
 
 ## Q82772: Windows and WFWG 3.1x Setup Error Codes (000 through 100)
 
+{% raw %}
+
 	Article: Q82772
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -209,3 +211,5 @@ permalink: /kb/082/Q82772/
 	
 	=============================================================================
 	
+
+{% endraw %}

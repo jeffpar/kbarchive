@@ -6,6 +6,8 @@ permalink: /kb/095/Q95722/
 
 ## Q95722: How to Export Memo Fields to an ASCII File
 
+{% raw %}
+
 	Article: Q95722
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x 2.6x 3.00 | 2.00 2.5x 2.6x
@@ -167,3 +169,5 @@ permalink: /kb/095/Q95722/
 	
 	=============================================================================
 	
+
+{% endraw %}

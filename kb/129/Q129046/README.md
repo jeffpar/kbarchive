@@ -6,6 +6,8 @@ permalink: /kb/129/Q129046/
 
 ## Q129046: NCR 3455 with 53C700 SCSI Adapter Not Compatible with NT 3.X
 
+{% raw %}
+
 	Article: Q129046
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -42,3 +44,5 @@ permalink: /kb/129/Q129046/
 	
 	=============================================================================
 	
+
+{% endraw %}

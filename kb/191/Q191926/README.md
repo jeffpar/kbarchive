@@ -6,6 +6,8 @@ permalink: /kb/191/Q191926/
 
 ## Q191926: FIX: VFP ODBC Driver Problem w/ {d 'yyyymmdd'} and Year &gt; 1999
 
+{% raw %}
+
 	Article: Q191926
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -71,3 +73,5 @@ permalink: /kb/191/Q191926/
 	
 	=============================================================================
 	
+
+{% endraw %}

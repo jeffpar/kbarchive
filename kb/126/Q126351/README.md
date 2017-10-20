@@ -6,6 +6,8 @@ permalink: /kb/126/Q126351/
 
 ## Q126351: Different Language Site Reporting Not Supported in SMS
 
+{% raw %}
+
 	Article: Q126351
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -61,3 +63,5 @@ permalink: /kb/126/Q126351/
 	
 	=============================================================================
 	
+
+{% endraw %}

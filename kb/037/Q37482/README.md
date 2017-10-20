@@ -6,6 +6,8 @@ permalink: /kb/037/Q37482/
 
 ## Q37482: QB.EXE 4.00b Problem LOADing Lone .BAS File from Floppy Drive
 
+{% raw %}
+
 	Article: Q37482
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -40,3 +42,5 @@ permalink: /kb/037/Q37482/
 	If the above conditions apply, the file will not load into QuickBASIC
 	as it should. To work around this problem, highlight the filename when
 	the cursor is under it by using any arrow key, then press ENTER.
+
+{% endraw %}

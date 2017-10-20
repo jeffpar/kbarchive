@@ -6,6 +6,8 @@ permalink: /kb/146/Q146298/
 
 ## Q146298: XFOR: IMC Flush Mode Holds Messages Without Notice
 
+{% raw %}
+
 	Article: Q146298
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -42,3 +44,5 @@ permalink: /kb/146/Q146298/
 	
 	=============================================================================
 	
+
+{% endraw %}

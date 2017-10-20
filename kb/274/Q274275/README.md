@@ -6,6 +6,8 @@ permalink: /kb/274/Q274275/
 
 ## Q274275: Queries with German Wordbreaker Return More Results
 
+{% raw %}
+
 	Article: Q274275
 	Product(s): Internet Information Server
 	Version(s): 2.0,2000,3.0
@@ -89,3 +91,5 @@ permalink: /kb/274/Q274275/
 	
 	=============================================================================
 	
+
+{% endraw %}

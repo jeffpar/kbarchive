@@ -6,6 +6,8 @@ permalink: /kb/195/Q195262/
 
 ## Q195262: HOWTO: Delete ODBC Data Source Using SqlConfigDataSource
 
+{% raw %}
+
 	Article: Q195262
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,3.0,3.0b,5.0,5.0a,6.0
@@ -68,3 +70,5 @@ permalink: /kb/195/Q195262/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150667/
 
 ## Q150667: Mac Bookshelf 96-97: China's National Anthem Does Not Play
 
+{% raw %}
+
 	Article: Q150667
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996-1997
@@ -50,3 +52,5 @@ permalink: /kb/150/Q150667/
 	
 	=============================================================================
 	
+
+{% endraw %}

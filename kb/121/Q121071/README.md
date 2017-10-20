@@ -6,6 +6,8 @@ permalink: /kb/121/Q121071/
 
 ## Q121071: No Ports in Print Manager with Services for NetWare Installed
 
+{% raw %}
+
 	Article: Q121071
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10
@@ -61,3 +63,5 @@ permalink: /kb/121/Q121071/
 	
 	=============================================================================
 	
+
+{% endraw %}

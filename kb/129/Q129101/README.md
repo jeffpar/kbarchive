@@ -6,6 +6,8 @@ permalink: /kb/129/Q129101/
 
 ## Q129101: 500 Nations: Videos Have Psychedelic Background Pattern
 
+{% raw %}
+
 	Article: Q129101
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -52,3 +54,5 @@ permalink: /kb/129/Q129101/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167961/
 
 ## Q167961: FIX: F1 Help Routed Wrongly for Additional Top-Level Windows
 
+{% raw %}
+
 	Article: Q167961
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2
@@ -126,3 +128,5 @@ permalink: /kb/167/Q167961/
 	
 	=============================================================================
 	
+
+{% endraw %}

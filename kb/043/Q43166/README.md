@@ -6,6 +6,8 @@ permalink: /kb/043/Q43166/
 
 ## Q43166: C: How Stack Checking Is Done
 
+{% raw %}
+
 	Article: Q43166
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -48,3 +50,5 @@ permalink: /kb/043/Q43166/
 	case, SP will be updated even if a stack overflow occurs.
 	
 	For more information on _end, query on _edata.
+
+{% endraw %}

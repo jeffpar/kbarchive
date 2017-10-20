@@ -6,6 +6,8 @@ permalink: /kb/197/Q197674/
 
 ## Q197674: WD97: How to Automatically Scroll While Reading Document
 
+{% raw %}
+
 	Article: Q197674
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -89,3 +91,5 @@ permalink: /kb/197/Q197674/
 	
 	=============================================================================
 	
+
+{% endraw %}

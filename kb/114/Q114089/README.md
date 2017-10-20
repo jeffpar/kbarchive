@@ -6,6 +6,8 @@ permalink: /kb/114/Q114089/
 
 ## Q114089: Using the Windows NT NetDDE Share Manager
 
+{% raw %}
+
 	Article: Q114089
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -145,3 +147,5 @@ permalink: /kb/114/Q114089/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146573/
 
 ## Q146573: Using Image Maps with Internet Information Server
 
+{% raw %}
+
 	Article: Q146573
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -60,3 +62,5 @@ permalink: /kb/146/Q146573/
 	
 	=============================================================================
 	
+
+{% endraw %}

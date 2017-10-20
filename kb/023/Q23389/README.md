@@ -6,6 +6,8 @@ permalink: /kb/023/Q23389/
 
 ## Q23389: Unexpected Result from CINT(.5) in QB87; IEEE Rounds to Even
 
+{% raw %}
+
 	Article: Q23389
 	Product(s): See article
 	Version(s): 3.00
@@ -39,3 +41,5 @@ permalink: /kb/023/Q23389/
 	The non-coprocessor version of QuickBASIC 3.00 (QB.EXE) supports a
 	different floating-point format, the Microsoft Binary format (MBF),
 	which rounds differently than the IEEE standard.
+
+{% endraw %}

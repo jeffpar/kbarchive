@@ -6,6 +6,8 @@ permalink: /kb/138/Q138156/
 
 ## Q138156: Problems Setting Up Carmen Sandiego from CD-ROM
 
+{% raw %}
+
 	Article: Q138156
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/138/Q138156/
 	
 	=============================================================================
 	
+
+{% endraw %}

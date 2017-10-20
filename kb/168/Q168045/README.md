@@ -6,6 +6,8 @@ permalink: /kb/168/Q168045/
 
 ## Q168045: HOWTO: STL Sample For &#91;list::merge&#93; Function(s)
 
+{% raw %}
+
 	Article: Q168045
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -124,3 +126,5 @@ permalink: /kb/168/Q168045/
 	
 	=============================================================================
 	
+
+{% endraw %}

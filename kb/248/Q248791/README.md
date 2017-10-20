@@ -6,6 +6,8 @@ permalink: /kb/248/Q248791/
 
 ## Q248791: XCLN: Send To from Office 97 Doesn't Work on Windows TS
 
+{% raw %}
+
 	Article: Q248791
 	Product(s): Microsoft Exchange
 	Version(s): ; winnt:4.0 SP5
@@ -76,3 +78,5 @@ permalink: /kb/248/Q248791/
 	
 	=============================================================================
 	
+
+{% endraw %}

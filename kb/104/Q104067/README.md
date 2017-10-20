@@ -6,6 +6,8 @@ permalink: /kb/104/Q104067/
 
 ## Q104067: X400: Setting Up the Gateway as an EiconCard Redirector
 
+{% raw %}
+
 	Article: Q104067
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -113,3 +115,5 @@ permalink: /kb/104/Q104067/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159179/
 
 ## Q159179: XCON: Message Body Truncated
 
+{% raw %}
+
 	Article: Q159179
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/159/Q159179/
 	
 	=============================================================================
 	
+
+{% endraw %}

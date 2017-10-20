@@ -6,6 +6,8 @@ permalink: /kb/135/Q135220/
 
 ## Q135220: Bold Text on PostScript Printer Has Downward Slant
 
+{% raw %}
+
 	Article: Q135220
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -60,3 +62,5 @@ permalink: /kb/135/Q135220/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156136/
 
 ## Q156136: FIX: F1 Help Not Hooked to Some New Dialog Boxes
 
+{% raw %}
+
 	Article: Q156136
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.2
@@ -58,3 +60,5 @@ permalink: /kb/156/Q156136/
 	
 	=============================================================================
 	
+
+{% endraw %}

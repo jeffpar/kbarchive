@@ -6,6 +6,8 @@ permalink: /kb/158/Q158993/
 
 ## Q158993: SMS: Troubleshooting Novell NetWare Client32 Clients
 
+{% raw %}
+
 	Article: Q158993
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -108,3 +110,5 @@ permalink: /kb/158/Q158993/
 	
 	=============================================================================
 	
+
+{% endraw %}

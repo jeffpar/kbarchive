@@ -6,6 +6,8 @@ permalink: /kb/323/Q323938/
 
 ## Q323938: Train Simulator: Windshield Wipers Not Visible from Inside Cab
 
+{% raw %}
+
 	Article: Q323938
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -48,3 +50,5 @@ permalink: /kb/323/Q323938/
 	
 	=============================================================================
 	
+
+{% endraw %}

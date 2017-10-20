@@ -6,6 +6,8 @@ permalink: /kb/178/Q178892/
 
 ## Q178892: XADM: DMS-Latest Delivery Settings Not Effective
 
+{% raw %}
+
 	Article: Q178892
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -64,3 +66,5 @@ permalink: /kb/178/Q178892/
 	
 	=============================================================================
 	
+
+{% endraw %}

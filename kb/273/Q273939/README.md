@@ -6,6 +6,8 @@ permalink: /kb/273/Q273939/
 
 ## Q273939: XCON: Delivery Receipts Not Rerouted
 
+{% raw %}
+
 	Article: Q273939
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -106,3 +108,5 @@ permalink: /kb/273/Q273939/
 	
 	=============================================================================
 	
+
+{% endraw %}

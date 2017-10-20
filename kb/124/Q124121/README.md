@@ -6,6 +6,8 @@ permalink: /kb/124/Q124121/
 
 ## Q124121: Memory Loss During Application Process Creation
 
+{% raw %}
+
 	Article: Q124121
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -86,3 +88,5 @@ permalink: /kb/124/Q124121/
 	
 	=============================================================================
 	
+
+{% endraw %}

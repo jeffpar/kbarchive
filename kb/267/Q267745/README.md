@@ -6,6 +6,8 @@ permalink: /kb/267/Q267745/
 
 ## Q267745: BUG: Hierarchical Flexgrid Row or Cell Selection Fails
 
+{% raw %}
+
 	Article: Q267745
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -107,3 +109,5 @@ permalink: /kb/267/Q267745/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131108/
 
 ## Q131108: Kids: Err Msg: Invalid TrueType Font Detected
 
+{% raw %}
+
 	Article: Q131108
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -92,3 +94,5 @@ permalink: /kb/131/Q131108/
 	
 	=============================================================================
 	
+
+{% endraw %}

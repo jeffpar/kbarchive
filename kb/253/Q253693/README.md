@@ -6,6 +6,8 @@ permalink: /kb/253/Q253693/
 
 ## Q253693: Encarta and Reference Products Troubleshooter Available
 
+{% raw %}
+
 	Article: Q253693
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0; :
@@ -58,3 +60,5 @@ permalink: /kb/253/Q253693/
 	
 	=============================================================================
 	
+
+{% endraw %}

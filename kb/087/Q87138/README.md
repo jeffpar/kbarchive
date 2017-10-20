@@ -6,6 +6,8 @@ permalink: /kb/087/Q87138/
 
 ## Q87138: Core Technologies CNT-MCK Disk Controllers with Windows
 
+{% raw %}
+
 	Article: Q87138
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/087/Q87138/
 	
 	=============================================================================
 	
+
+{% endraw %}

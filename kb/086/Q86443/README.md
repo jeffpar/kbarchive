@@ -6,6 +6,8 @@ permalink: /kb/086/Q86443/
 
 ## Q86443: LANtastic for Windows Updated LANTNET.DRV Available
 
+{% raw %}
+
 	Article: Q86443
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/086/Q86443/
 	
 	=============================================================================
 	
+
+{% endraw %}

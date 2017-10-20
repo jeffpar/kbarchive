@@ -6,6 +6,8 @@ permalink: /kb/291/Q291339/
 
 ## Q291339: SMS: Administrator Console/Services Can't Connect to SQL Server
 
+{% raw %}
+
 	Article: Q291339
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -96,3 +98,5 @@ permalink: /kb/291/Q291339/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/060/Q60142/
 
 ## Q60142: Configuring M.EXE to Epsilon Format
 
+{% raw %}
+
 	Article: Q60142
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -40,3 +42,5 @@ permalink: /kb/060/Q60142/
 	program called M.EXE or a program called MEP.EXE is executed. If you
 	have changed the name of your M Editor, this label should be changed
 	to include the current name of the editor.
+
+{% endraw %}

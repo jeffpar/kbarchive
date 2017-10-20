@@ -6,6 +6,8 @@ permalink: /kb/062/Q62233/
 
 ## Q62233: Mac Wkst: Saving an Enclosure to a Sun File Server
 
+{% raw %}
+
 	Article: Q62233
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -38,3 +40,5 @@ permalink: /kb/062/Q62233/
 	
 	=============================================================================
 	
+
+{% endraw %}

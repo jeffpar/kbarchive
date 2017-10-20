@@ -6,6 +6,8 @@ permalink: /kb/123/Q123741/
 
 ## Q123741: Cannot Run RAS Programs When a Service References RASAPI32.DLL
 
+{% raw %}
+
 	Article: Q123741
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -57,3 +59,5 @@ permalink: /kb/123/Q123741/
 	
 	=============================================================================
 	
+
+{% endraw %}

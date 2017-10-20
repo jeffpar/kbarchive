@@ -6,6 +6,8 @@ permalink: /kb/133/Q133023/
 
 ## Q133023: How to List Number of Records in Each Group of a SQL Group By
 
+{% raw %}
+
 	Article: Q133023
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -71,3 +73,5 @@ permalink: /kb/133/Q133023/
 	
 	=============================================================================
 	
+
+{% endraw %}

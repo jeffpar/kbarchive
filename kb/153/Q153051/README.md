@@ -6,6 +6,8 @@ permalink: /kb/153/Q153051/
 
 ## Q153051: Jetpack.exe May Complete and Not Compress DHCP or WINS Database
 
+{% raw %}
+
 	Article: Q153051
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -62,3 +64,5 @@ permalink: /kb/153/Q153051/
 	
 	=============================================================================
 	
+
+{% endraw %}

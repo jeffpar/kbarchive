@@ -6,6 +6,8 @@ permalink: /kb/157/Q157735/
 
 ## Q157735: XFOR: Character Set Not Supported
 
+{% raw %}
+
 	Article: Q157735
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/157/Q157735/
 	
 	=============================================================================
 	
+
+{% endraw %}

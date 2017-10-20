@@ -6,6 +6,8 @@ permalink: /kb/155/Q155603/
 
 ## Q155603: Some S3 Video Cards Do Not Set Refresh Rate Properly
 
+{% raw %}
+
 	Article: Q155603
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/155/Q155603/
 	
 	=============================================================================
 	
+
+{% endraw %}

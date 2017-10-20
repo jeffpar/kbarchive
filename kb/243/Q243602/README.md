@@ -6,6 +6,8 @@ permalink: /kb/243/Q243602/
 
 ## Q243602: SMS: How to Change the SMS Service Account Password
 
+{% raw %}
+
 	Article: Q243602
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -111,3 +113,5 @@ permalink: /kb/243/Q243602/
 	
 	=============================================================================
 	
+
+{% endraw %}

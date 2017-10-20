@@ -6,6 +6,8 @@ permalink: /kb/231/Q231308/
 
 ## Q231308: Glue NS Records Are Lost When You Add Additional NS Records
 
+{% raw %}
+
 	Article: Q231308
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -105,3 +107,5 @@ permalink: /kb/231/Q231308/
 	
 	=============================================================================
 	
+
+{% endraw %}

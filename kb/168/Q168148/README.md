@@ -6,6 +6,8 @@ permalink: /kb/168/Q168148/
 
 ## Q168148: How To Clear Path Entries In The Map Network Drive Dialog Box
 
+{% raw %}
+
 	Article: Q168148
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/168/Q168148/
 	
 	=============================================================================
 	
+
+{% endraw %}

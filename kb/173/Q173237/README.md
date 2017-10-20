@@ -6,6 +6,8 @@ permalink: /kb/173/Q173237/
 
 ## Q173237: FIX: Barcode Font Does Not Display or Print Correctly
 
+{% raw %}
+
 	Article: Q173237
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a; WINNT:97,97sp1,97sp2,97sp3
@@ -81,3 +83,5 @@ permalink: /kb/173/Q173237/
 	
 	=============================================================================
 	
+
+{% endraw %}

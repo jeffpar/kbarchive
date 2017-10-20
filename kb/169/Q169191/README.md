@@ -6,6 +6,8 @@ permalink: /kb/169/Q169191/
 
 ## Q169191: RAS Server Registry Settings for IP Header Compression
 
+{% raw %}
+
 	Article: Q169191
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -88,3 +90,5 @@ permalink: /kb/169/Q169191/
 	
 	=============================================================================
 	
+
+{% endraw %}

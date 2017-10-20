@@ -6,6 +6,8 @@ permalink: /kb/075/Q75079/
 
 ## Q75079: FIX: NMAKE 1.13 May Return U1002: Invalid Macro Invocation '&#36;'
 
+{% raw %}
+
 	Article: Q75079
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.13
@@ -61,3 +63,5 @@ permalink: /kb/075/Q75079/
 	
 	=============================================================================
 	
+
+{% endraw %}

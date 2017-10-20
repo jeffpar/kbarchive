@@ -6,6 +6,8 @@ permalink: /kb/186/Q186356/
 
 ## Q186356: FIX: Source Code Controlled VFP Project Compiles Slow
 
+{% raw %}
+
 	Article: Q186356
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/186/Q186356/
 	
 	=============================================================================
 	
+
+{% endraw %}

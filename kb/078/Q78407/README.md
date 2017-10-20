@@ -6,6 +6,8 @@ permalink: /kb/078/Q78407/
 
 ## Q78407: Wyse DOS 3.3 Partitions Incompatible with MS-DOS 5.x and 6.x
 
+{% raw %}
+
 	Article: Q78407
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -74,3 +76,5 @@ permalink: /kb/078/Q78407/
 	
 	=============================================================================
 	
+
+{% endraw %}

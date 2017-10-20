@@ -6,6 +6,8 @@ permalink: /kb/212/Q212793/
 
 ## Q212793: SMSINST: Increment Variable Operation Does Not Work as Expected
 
+{% raw %}
+
 	Article: Q212793
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0
@@ -65,3 +67,5 @@ permalink: /kb/212/Q212793/
 	
 	=============================================================================
 	
+
+{% endraw %}

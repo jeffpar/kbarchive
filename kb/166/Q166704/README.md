@@ -6,6 +6,8 @@ permalink: /kb/166/Q166704/
 
 ## Q166704: Err Msg: Not Enough Storage Is Available to Complete This...
 
+{% raw %}
+
 	Article: Q166704
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -58,3 +60,5 @@ permalink: /kb/166/Q166704/
 	
 	=============================================================================
 	
+
+{% endraw %}

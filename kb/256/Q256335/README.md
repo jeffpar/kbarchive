@@ -6,6 +6,8 @@ permalink: /kb/256/Q256335/
 
 ## Q256335: Low Hard Disk Space May Damage a Roaming User Profile
 
+{% raw %}
+
 	Article: Q256335
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -93,3 +95,5 @@ permalink: /kb/256/Q256335/
 	
 	=============================================================================
 	
+
+{% endraw %}

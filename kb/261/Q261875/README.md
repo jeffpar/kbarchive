@@ -6,6 +6,8 @@ permalink: /kb/261/Q261875/
 
 ## Q261875: XADM: Original Domain Controller Needed for New User Attribubtes
 
+{% raw %}
+
 	Article: Q261875
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:; winnt:5.5 SP3
@@ -74,3 +76,5 @@ permalink: /kb/261/Q261875/
 	
 	=============================================================================
 	
+
+{% endraw %}

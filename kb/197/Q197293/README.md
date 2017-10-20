@@ -6,6 +6,8 @@ permalink: /kb/197/Q197293/
 
 ## Q197293: XADM: Changing Calendar View Takes an Unusually Long Time
 
+{% raw %}
+
 	Article: Q197293
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -64,3 +66,5 @@ permalink: /kb/197/Q197293/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163192/
 
 ## Q163192: WD97: &quot;String Too Long&quot; Using Over 255 Characters
 
+{% raw %}
+
 	Article: Q163192
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -118,3 +120,5 @@ permalink: /kb/163/Q163192/
 	
 	=============================================================================
 	
+
+{% endraw %}

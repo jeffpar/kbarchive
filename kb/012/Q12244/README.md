@@ -6,6 +6,8 @@ permalink: /kb/012/Q12244/
 
 ## Q12244: Fatal Error Messages 0x0140 and 0x0240
 
+{% raw %}
+
 	Article: Q12244
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -41,3 +43,5 @@ permalink: /kb/012/Q12244/
 	
 	=============================================================================
 	
+
+{% endraw %}

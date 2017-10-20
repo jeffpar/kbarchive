@@ -6,6 +6,8 @@ permalink: /kb/250/Q250605/
 
 ## Q250605: MSB Bugs: Program Stops Responding After You Type Your Name
 
+{% raw %}
+
 	Article: Q250605
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS|MACINTOS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/250/Q250605/
 	
 	=============================================================================
 	
+
+{% endraw %}

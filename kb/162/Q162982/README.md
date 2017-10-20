@@ -6,6 +6,8 @@ permalink: /kb/162/Q162982/
 
 ## Q162982: WD97: Appearance of Document Not Refreshed Saving as HTML
 
+{% raw %}
+
 	Article: Q162982
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/162/Q162982/
 	
 	=============================================================================
 	
+
+{% endraw %}

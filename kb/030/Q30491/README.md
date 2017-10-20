@@ -6,6 +6,8 @@ permalink: /kb/030/Q30491/
 
 ## Q30491: Structures and Segment Overrides
 
+{% raw %}
+
 	Article: Q30491
 	Product(s): See article
 	Version(s): 4.00 5.10
@@ -41,3 +43,5 @@ permalink: /kb/030/Q30491/
 	      int 21h
 	_TEXT ends
 	      end
+
+{% endraw %}

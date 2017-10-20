@@ -6,6 +6,8 @@ permalink: /kb/104/Q104367/
 
 ## Q104367: PC DOS: Err Msg: Notice 33 More Mail at Postoffice...
 
+{% raw %}
+
 	Article: Q104367
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0
@@ -74,3 +76,5 @@ permalink: /kb/104/Q104367/
 	
 	=============================================================================
 	
+
+{% endraw %}

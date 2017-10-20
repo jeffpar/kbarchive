@@ -6,6 +6,8 @@ permalink: /kb/172/Q172346/
 
 ## Q172346: FIX: Unable to Disable IME Box in a Grid at Runtime
 
+{% raw %}
+
 	Article: Q172346
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -118,3 +120,5 @@ permalink: /kb/172/Q172346/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163891/
 
 ## Q163891: Microsoft Excel 97 Causes a Windows NT Access Violation
 
+{% raw %}
+
 	Article: Q163891
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/163/Q163891/
 	
 	=============================================================================
 	
+
+{% endraw %}

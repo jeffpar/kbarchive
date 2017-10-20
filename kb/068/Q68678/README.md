@@ -6,6 +6,8 @@ permalink: /kb/068/Q68678/
 
 ## Q68678: Help Files for QuickC Require Special &quot;Backtrace&quot; Declaration
 
+{% raw %}
+
 	Article: Q68678
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -34,3 +36,5 @@ permalink: /kb/068/Q68678/
 	lowercase letters (that is, !cq.hb). HelpMake will not issue an error
 	message with an uppercase command, but it will also not allow a
 	backtrace to be performed.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/230/Q230180/
 
 ## Q230180: Rasmon.exe Does Not Work When Monitoring Multiple VPN Connection
 
+{% raw %}
+
 	Article: Q230180
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/230/Q230180/
 	
 	=============================================================================
 	
+
+{% endraw %}

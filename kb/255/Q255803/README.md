@@ -6,6 +6,8 @@ permalink: /kb/255/Q255803/
 
 ## Q255803: Naming Convention of Compressed Files Stored in the Temp Folder
 
+{% raw %}
+
 	Article: Q255803
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -65,3 +67,5 @@ permalink: /kb/255/Q255803/
 	
 	=============================================================================
 	
+
+{% endraw %}

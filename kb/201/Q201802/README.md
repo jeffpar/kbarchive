@@ -6,6 +6,8 @@ permalink: /kb/201/Q201802/
 
 ## Q201802: SMS: Supported Naming Conventions for NDS Logon Point Creation
 
+{% raw %}
+
 	Article: Q201802
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -89,3 +91,5 @@ permalink: /kb/201/Q201802/
 	
 	=============================================================================
 	
+
+{% endraw %}

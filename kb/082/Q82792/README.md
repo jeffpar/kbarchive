@@ -6,6 +6,8 @@ permalink: /kb/082/Q82792/
 
 ## Q82792: Meaning of SYSTEM.INI's MaxCOMPort Switch
 
+{% raw %}
+
 	Article: Q82792
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/082/Q82792/
 	
 	=============================================================================
 	
+
+{% endraw %}

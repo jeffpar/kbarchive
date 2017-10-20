@@ -6,6 +6,8 @@ permalink: /kb/158/Q158595/
 
 ## Q158595: Mac Encarta 97: Readme.txt: Memory Use
 
+{% raw %}
+
 	Article: Q158595
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -195,3 +197,5 @@ permalink: /kb/158/Q158595/
 	
 	=============================================================================
 	
+
+{% endraw %}

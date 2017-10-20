@@ -6,6 +6,8 @@ permalink: /kb/178/Q178534/
 
 ## Q178534: XCON: Delivery Restriction May Not Work After Moving a User
 
+{% raw %}
+
 	Article: Q178534
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -87,3 +89,5 @@ permalink: /kb/178/Q178534/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182794/
 
 ## Q182794: Files Included in the Microsoft Exchange Inbox Update
 
+{% raw %}
+
 	Article: Q182794
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -140,3 +142,5 @@ permalink: /kb/182/Q182794/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/089/Q89265/
 
 ## Q89265: Combining Picture Clauses and Functions
 
+{% raw %}
+
 	Article: Q89265
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -45,3 +47,5 @@ permalink: /kb/089/Q89265/
 	
 	=============================================================================
 	
+
+{% endraw %}

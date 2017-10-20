@@ -6,6 +6,8 @@ permalink: /kb/323/Q323968/
 
 ## Q323968: HOW TO: Configure a GPS Device for Use with Pocket Streets
 
+{% raw %}
+
 	Article: Q323968
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -243,3 +245,5 @@ permalink: /kb/323/Q323968/
 	
 	=============================================================================
 	
+
+{% endraw %}

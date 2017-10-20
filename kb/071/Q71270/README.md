@@ -6,6 +6,8 @@ permalink: /kb/071/Q71270/
 
 ## Q71270: Windows Setup Hangs if SYSTEM.INI Has EOF Character
 
+{% raw %}
+
 	Article: Q71270
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -54,3 +56,5 @@ permalink: /kb/071/Q71270/
 	
 	=============================================================================
 	
+
+{% endraw %}

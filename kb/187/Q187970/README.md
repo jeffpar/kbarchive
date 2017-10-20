@@ -6,6 +6,8 @@ permalink: /kb/187/Q187970/
 
 ## Q187970: XCON: Unicode Message with TNEF Causes Information Store to Stop
 
+{% raw %}
+
 	Article: Q187970
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -78,3 +80,5 @@ permalink: /kb/187/Q187970/
 	
 	=============================================================================
 	
+
+{% endraw %}

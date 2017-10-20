@@ -6,6 +6,8 @@ permalink: /kb/109/Q109863/
 
 ## Q109863: Writer 1: Difficulty Printing Card to Canon BubbleJet
 
+{% raw %}
+
 	Article: Q109863
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1
@@ -175,3 +177,5 @@ permalink: /kb/109/Q109863/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172678/
 
 ## Q172678: WD97: Changes in Word SR-2 Spelling and Thesaurus
 
+{% raw %}
+
 	Article: Q172678
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/172/Q172678/
 	
 	=============================================================================
 	
+
+{% endraw %}

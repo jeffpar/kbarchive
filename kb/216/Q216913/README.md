@@ -6,6 +6,8 @@ permalink: /kb/216/Q216913/
 
 ## Q216913: BIOS Date Value Does Not Immediately Update on January 1, 2000
 
+{% raw %}
+
 	Article: Q216913
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5
@@ -177,3 +179,5 @@ permalink: /kb/216/Q216913/
 	
 	=============================================================================
 	
+
+{% endraw %}

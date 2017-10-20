@@ -6,6 +6,8 @@ permalink: /kb/182/Q182964/
 
 ## Q182964: XADM: Unable to Access Others' Schedules
 
+{% raw %}
+
 	Article: Q182964
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -60,3 +62,5 @@ permalink: /kb/182/Q182964/
 	
 	=============================================================================
 	
+
+{% endraw %}

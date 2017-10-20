@@ -6,6 +6,8 @@ permalink: /kb/099/Q99580/
 
 ## Q99580: PC Forms: Err Msg: File Not Found
 
+{% raw %}
+
 	Article: Q99580
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -54,3 +56,5 @@ permalink: /kb/099/Q99580/
 	
 	=============================================================================
 	
+
+{% endraw %}

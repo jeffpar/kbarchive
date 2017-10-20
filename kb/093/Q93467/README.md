@@ -6,6 +6,8 @@ permalink: /kb/093/Q93467/
 
 ## Q93467: Macro Recorder Cannot Save to Novell Subdirectory
 
+{% raw %}
+
 	Article: Q93467
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/093/Q93467/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/070/Q70281/
 
 ## Q70281: Cannot Start Run-Time ToolBook Without a Book
 
+{% raw %}
+
 	Article: Q70281
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -86,3 +88,5 @@ permalink: /kb/070/Q70281/
 	
 	=============================================================================
 	
+
+{% endraw %}

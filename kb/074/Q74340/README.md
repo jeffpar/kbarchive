@@ -6,6 +6,8 @@ permalink: /kb/074/Q74340/
 
 ## Q74340: ALC Values Supported by the Microsoft Recognizer
 
+{% raw %}
+
 	Article: Q74340
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -60,3 +62,5 @@ permalink: /kb/074/Q74340/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/031/Q31524/
 
 ## Q31524: MASM 5.10 EXT.DOC: FileNameToHandle - Returns Handle
 
+{% raw %}
+
 	Article: Q31524
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -36,3 +38,5 @@ permalink: /kb/031/Q31524/
 	 */
 	PFILE pascal FileNameToHandle (pName, pShortName)
 	char far *pName, *pShortName;
+
+{% endraw %}

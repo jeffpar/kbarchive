@@ -6,6 +6,8 @@ permalink: /kb/190/Q190477/
 
 ## Q190477: BUG: Run-time Error '326' with LoadResData
 
+{% raw %}
+
 	Article: Q190477
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/190/Q190477/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158736/
 
 ## Q158736: Creating Devices in SQL is Slow with Removable Media Installed
 
+{% raw %}
+
 	Article: Q158736
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.5,3.51,4.0,6.0,6.5
@@ -64,3 +66,5 @@ permalink: /kb/158/Q158736/
 	
 	=============================================================================
 	
+
+{% endraw %}

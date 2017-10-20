@@ -6,6 +6,8 @@ permalink: /kb/163/Q163278/
 
 ## Q163278: ACC97: Err Checking Out Data Object with Linked Exchange Table
 
+{% raw %}
+
 	Article: Q163278
 	Product(s): Microsoft SourceSafe
 	Version(s): 97
@@ -214,3 +216,5 @@ permalink: /kb/163/Q163278/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177997/
 
 ## Q177997: HOWTO: Set the FillColor in the MS Chart Control at Run-time
 
+{% raw %}
+
 	Article: Q177997
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -102,3 +104,5 @@ permalink: /kb/177/Q177997/
 	
 	=============================================================================
 	
+
+{% endraw %}

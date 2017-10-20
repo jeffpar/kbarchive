@@ -6,6 +6,8 @@ permalink: /kb/195/Q195702/
 
 ## Q195702: SMS: CHECK20 Misidentifies SMS 1.2 Client as an SMS 2.0 Client
 
+{% raw %}
+
 	Article: Q195702
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP4
@@ -92,3 +94,5 @@ permalink: /kb/195/Q195702/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96839/
 
 ## Q96839: Mac Srv: Upgrade from Version 2.0 to 3.1 Does Not Work
 
+{% raw %}
+
 	Article: Q96839
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,3.0,3.1
@@ -57,3 +59,5 @@ permalink: /kb/096/Q96839/
 	
 	=============================================================================
 	
+
+{% endraw %}

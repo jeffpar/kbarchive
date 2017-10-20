@@ -6,6 +6,8 @@ permalink: /kb/182/Q182653/
 
 ## Q182653: Component Builder Title Bar Shows MS-DOS Filename
 
+{% raw %}
+
 	Article: Q182653
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -54,3 +56,5 @@ permalink: /kb/182/Q182653/
 	
 	=============================================================================
 	
+
+{% endraw %}

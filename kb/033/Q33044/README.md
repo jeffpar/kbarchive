@@ -6,6 +6,8 @@ permalink: /kb/033/Q33044/
 
 ## Q33044: PEN(5) Function in SCREEN 9 Returns Only 0 or 1 with Mouse
 
+{% raw %}
+
 	Article: Q33044
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -40,3 +42,5 @@ permalink: /kb/033/Q33044/
 	   y = PEN(5)         'y pixel coordinate
 	   PRINT "X= "x, "Y= "y
 	WEND
+
+{% endraw %}

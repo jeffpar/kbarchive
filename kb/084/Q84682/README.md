@@ -6,6 +6,8 @@ permalink: /kb/084/Q84682/
 
 ## Q84682: Microcom's Carbon Copy for Windows and Windows 3.1
 
+{% raw %}
+
 	Article: Q84682
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -72,3 +74,5 @@ permalink: /kb/084/Q84682/
 	
 	=============================================================================
 	
+
+{% endraw %}

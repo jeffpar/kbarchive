@@ -6,6 +6,8 @@ permalink: /kb/228/Q228802/
 
 ## Q228802: MS RPC Incorrect Behavior for Frame Following Maybe Frame
 
+{% raw %}
+
 	Article: Q228802
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -88,3 +90,5 @@ permalink: /kb/228/Q228802/
 	
 	=============================================================================
 	
+
+{% endraw %}

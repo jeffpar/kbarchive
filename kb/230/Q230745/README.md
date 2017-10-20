@@ -6,6 +6,8 @@ permalink: /kb/230/Q230745/
 
 ## Q230745: XADM: Event 1333 Anonymous LDAP and MAPI Search Requests Denied
 
+{% raw %}
+
 	Article: Q230745
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -70,3 +72,5 @@ permalink: /kb/230/Q230745/
 	
 	=============================================================================
 	
+
+{% endraw %}

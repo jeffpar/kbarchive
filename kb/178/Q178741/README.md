@@ -6,6 +6,8 @@ permalink: /kb/178/Q178741/
 
 ## Q178741: Event Log Opening Problem Causes Services.exe Failure
 
+{% raw %}
+
 	Article: Q178741
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP5,4.0
@@ -75,3 +77,5 @@ permalink: /kb/178/Q178741/
 	
 	=============================================================================
 	
+
+{% endraw %}

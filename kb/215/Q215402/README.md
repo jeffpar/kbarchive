@@ -6,6 +6,8 @@ permalink: /kb/215/Q215402/
 
 ## Q215402: BUG: Pressing F1 for Windows CE Controls Does Not Display Help
 
+{% raw %}
+
 	Article: Q215402
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -69,3 +71,5 @@ permalink: /kb/215/Q215402/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/071/Q71435/
 
 ## Q71435: ALR 386 Microchannel (MPS) and Seagate IDE Drives
 
+{% raw %}
+
 	Article: Q71435
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -67,3 +69,5 @@ permalink: /kb/071/Q71435/
 	
 	=============================================================================
 	
+
+{% endraw %}

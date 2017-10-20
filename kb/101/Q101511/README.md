@@ -6,6 +6,8 @@ permalink: /kb/101/Q101511/
 
 ## Q101511: FILES=11 or Greater Needed to run NetWare 4.0 NETADMIN
 
+{% raw %}
+
 	Article: Q101511
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -67,3 +69,5 @@ permalink: /kb/101/Q101511/
 	
 	=============================================================================
 	
+
+{% endraw %}

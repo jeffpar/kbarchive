@@ -6,6 +6,8 @@ permalink: /kb/126/Q126566/
 
 ## Q126566: Problems Typing Quotation Mark, Caret, Apostrophe, or Tilde
 
+{% raw %}
+
 	Article: Q126566
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/126/Q126566/
 	
 	=============================================================================
 	
+
+{% endraw %}

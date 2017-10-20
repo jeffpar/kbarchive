@@ -6,6 +6,8 @@ permalink: /kb/101/Q101945/
 
 ## Q101945: Scenes 1.0: Shared Printing Halts When Scenes Starts Up
 
+{% raw %}
+
 	Article: Q101945
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -53,3 +55,5 @@ permalink: /kb/101/Q101945/
 	
 	=============================================================================
 	
+
+{% endraw %}

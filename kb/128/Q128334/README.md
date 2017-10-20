@@ -6,6 +6,8 @@ permalink: /kb/128/Q128334/
 
 ## Q128334: PRB: Clipping Doesn't Work Correctly in Print Preview
 
+{% raw %}
+
 	Article: Q128334
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -153,3 +155,5 @@ permalink: /kb/128/Q128334/
 	
 	=============================================================================
 	
+
+{% endraw %}

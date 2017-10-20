@@ -6,6 +6,8 @@ permalink: /kb/133/Q133462/
 
 ## Q133462: Julia Child: How Items Are Added to Shopping List
 
+{% raw %}
+
 	Article: Q133462
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -40,3 +42,5 @@ permalink: /kb/133/Q133462/
 	
 	=============================================================================
 	
+
+{% endraw %}

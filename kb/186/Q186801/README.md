@@ -6,6 +6,8 @@ permalink: /kb/186/Q186801/
 
 ## Q186801: PERL Scripts Do Not Run
 
+{% raw %}
+
 	Article: Q186801
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -174,3 +176,5 @@ permalink: /kb/186/Q186801/
 	
 	=============================================================================
 	
+
+{% endraw %}

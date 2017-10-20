@@ -6,6 +6,8 @@ permalink: /kb/197/Q197428/
 
 ## Q197428: BUG: DataRepeater Control does not Update Records
 
+{% raw %}
+
 	Article: Q197428
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -169,3 +171,5 @@ permalink: /kb/197/Q197428/
 	
 	=============================================================================
 	
+
+{% endraw %}

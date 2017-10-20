@@ -6,6 +6,8 @@ permalink: /kb/136/Q136773/
 
 ## Q136773: How to Change the Connection UserId Programmatically
 
+{% raw %}
+
 	Article: Q136773
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/136/Q136773/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180148/
 
 ## Q180148: French Support for Host Security
 
+{% raw %}
+
 	Article: Q180148
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,4.0
@@ -72,3 +74,5 @@ permalink: /kb/180/Q180148/
 	
 	=============================================================================
 	
+
+{% endraw %}

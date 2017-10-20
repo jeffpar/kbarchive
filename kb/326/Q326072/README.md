@@ -6,6 +6,8 @@ permalink: /kb/326/Q326072/
 
 ## Q326072: SMS: First 2,000 Results Are Returned When You Search for Values
 
+{% raw %}
+
 	Article: Q326072
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -55,3 +57,5 @@ permalink: /kb/326/Q326072/
 	
 	=============================================================================
 	
+
+{% endraw %}

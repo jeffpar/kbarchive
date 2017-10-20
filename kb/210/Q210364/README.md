@@ -6,6 +6,8 @@ permalink: /kb/210/Q210364/
 
 ## Q210364: SMS: SMS Executive Service Stops if SMS Database Transaction Log
 
+{% raw %}
+
 	Article: Q210364
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -50,3 +52,5 @@ permalink: /kb/210/Q210364/
 	
 	=============================================================================
 	
+
+{% endraw %}

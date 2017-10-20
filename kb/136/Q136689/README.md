@@ -6,6 +6,8 @@ permalink: /kb/136/Q136689/
 
 ## Q136689: How an ON ERROR Routine Affects the Error Event
 
+{% raw %}
+
 	Article: Q136689
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/136/Q136689/
 	
 	=============================================================================
 	
+
+{% endraw %}

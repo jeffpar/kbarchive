@@ -6,6 +6,8 @@ permalink: /kb/095/Q95824/
 
 ## Q95824: Constant or Random Beeping in Windows with Anti-Virus
 
+{% raw %}
+
 	Article: Q95824
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -42,3 +44,5 @@ permalink: /kb/095/Q95824/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/232/Q232448/
 
 ## Q232448: XFOR: Netscape 4.x Cannot Delete Appointments in Calendar
 
+{% raw %}
+
 	Article: Q232448
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -74,3 +76,5 @@ permalink: /kb/232/Q232448/
 	
 	=============================================================================
 	
+
+{% endraw %}

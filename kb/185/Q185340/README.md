@@ -6,6 +6,8 @@ permalink: /kb/185/Q185340/
 
 ## Q185340: SMS: Using SMS in an International Environment
 
+{% raw %}
+
 	Article: Q185340
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -73,3 +75,5 @@ permalink: /kb/185/Q185340/
 	
 	=============================================================================
 	
+
+{% endraw %}

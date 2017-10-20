@@ -6,6 +6,8 @@ permalink: /kb/190/Q190722/
 
 ## Q190722: XADM: MoveUser Fails After Running ISINTEG
 
+{% raw %}
+
 	Article: Q190722
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -85,3 +87,5 @@ permalink: /kb/190/Q190722/
 	
 	=============================================================================
 	
+
+{% endraw %}

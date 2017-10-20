@@ -6,6 +6,8 @@ permalink: /kb/235/Q235898/
 
 ## Q235898: XADM: Cannot Generate Offline Address Book
 
+{% raw %}
+
 	Article: Q235898
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -83,3 +85,5 @@ permalink: /kb/235/Q235898/
 	
 	=============================================================================
 	
+
+{% endraw %}

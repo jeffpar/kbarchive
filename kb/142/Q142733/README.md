@@ -6,6 +6,8 @@ permalink: /kb/142/Q142733/
 
 ## Q142733: Cannot Connect To Internet Or MSN With Two Network Cards
 
+{% raw %}
+
 	Article: Q142733
 	Product(s): The Microsoft Network
 	Version(s): 1.2,1.3,2.0,2.5,2.51,2.52,2.6
@@ -48,3 +50,5 @@ permalink: /kb/142/Q142733/
 	
 	=============================================================================
 	
+
+{% endraw %}

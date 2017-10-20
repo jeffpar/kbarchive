@@ -6,6 +6,8 @@ permalink: /kb/163/Q163661/
 
 ## Q163661: Remove Old Device Drivers Before Installing Windows NT 4.0
 
+{% raw %}
+
 	Article: Q163661
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -76,3 +78,5 @@ permalink: /kb/163/Q163661/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/301/Q301477/
 
 ## Q301477: Broadband-Supported USB-Ethernet Adaptors
 
+{% raw %}
+
 	Article: Q301477
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -54,3 +56,5 @@ permalink: /kb/301/Q301477/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185338/
 
 ## Q185338: SMS: PCM as a Service and Security Context
 
+{% raw %}
+
 	Article: Q185338
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -55,3 +57,5 @@ permalink: /kb/185/Q185338/
 	
 	=============================================================================
 	
+
+{% endraw %}

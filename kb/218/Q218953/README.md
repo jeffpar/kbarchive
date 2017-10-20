@@ -6,6 +6,8 @@ permalink: /kb/218/Q218953/
 
 ## Q218953: Display Problems with Greetings Workshop on Windows NT 4.0 SP4
 
+{% raw %}
+
 	Article: Q218953
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -58,3 +60,5 @@ permalink: /kb/218/Q218953/
 	
 	=============================================================================
 	
+
+{% endraw %}

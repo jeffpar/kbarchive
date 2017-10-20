@@ -6,6 +6,8 @@ permalink: /kb/121/Q121032/
 
 ## Q121032: MAC Bookshelf 1994: README Contents
 
+{% raw %}
+
 	Article: Q121032
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -286,3 +288,5 @@ permalink: /kb/121/Q121032/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87022/
 
 ## Q87022: SMTP: Definition of SMTP
 
+{% raw %}
+
 	Article: Q87022
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/087/Q87022/
 	
 	=============================================================================
 	
+
+{% endraw %}

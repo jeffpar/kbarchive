@@ -6,6 +6,8 @@ permalink: /kb/138/Q138732/
 
 ## Q138732: Works 4.0 Setup Error: Your Setup Files May Be Damaged
 
+{% raw %}
+
 	Article: Q138732
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/138/Q138732/
 	
 	=============================================================================
 	
+
+{% endraw %}

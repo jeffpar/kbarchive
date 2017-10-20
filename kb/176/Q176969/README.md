@@ -6,6 +6,8 @@ permalink: /kb/176/Q176969/
 
 ## Q176969: SMS: Audit Fails with &quot;Cannot read SMS.INI&quot; Error Message
 
+{% raw %}
+
 	Article: Q176969
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -75,3 +77,5 @@ permalink: /kb/176/Q176969/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165094/
 
 ## Q165094: PRB: Unattended Installation of RAS May Fail
 
+{% raw %}
+
 	Article: Q165094
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -108,3 +110,5 @@ permalink: /kb/165/Q165094/
 	
 	=============================================================================
 	
+
+{% endraw %}

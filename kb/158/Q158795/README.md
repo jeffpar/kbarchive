@@ -6,6 +6,8 @@ permalink: /kb/158/Q158795/
 
 ## Q158795: Win95 Client Cannot Rename Directory on Korean WinNT 3.5 Share
 
+{% raw %}
+
 	Article: Q158795
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -70,3 +72,5 @@ permalink: /kb/158/Q158795/
 	
 	=============================================================================
 	
+
+{% endraw %}

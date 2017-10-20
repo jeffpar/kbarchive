@@ -6,6 +6,8 @@ permalink: /kb/231/Q231992/
 
 ## Q231992: XFOR: Enable/Disable Mtg Request Support w/PROFS/Notes Connector
 
+{% raw %}
+
 	Article: Q231992
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.2
@@ -110,3 +112,5 @@ permalink: /kb/231/Q231992/
 	
 	=============================================================================
 	
+
+{% endraw %}

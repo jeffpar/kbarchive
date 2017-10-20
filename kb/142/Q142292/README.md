@@ -6,6 +6,8 @@ permalink: /kb/142/Q142292/
 
 ## Q142292: INFO: VBA Versions in Different Microsoft Products
 
+{% raw %}
+
 	Article: Q142292
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -67,3 +69,5 @@ permalink: /kb/142/Q142292/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/257/Q257645/
 
 ## Q257645: FIX: Setting Windowless Control to Transparent Prevents Animatio
 
+{% raw %}
+
 	Article: Q257645
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -165,3 +167,5 @@ permalink: /kb/257/Q257645/
 	
 	=============================================================================
 	
+
+{% endraw %}

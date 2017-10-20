@@ -6,6 +6,8 @@ permalink: /kb/260/Q260690/
 
 ## Q260690: XFOR: Event ID 5016 from the GroupWise Calendar Connector
 
+{% raw %}
+
 	Article: Q260690
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -64,3 +66,5 @@ permalink: /kb/260/Q260690/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -1,7 +1,18 @@
 # Microsoft KnowledgeBase Archive
 
 This repository was initially populated with KB content from Microsoft's FTP archive, circa 2002, and
-then back-filled with KB articles from other sources (eg, Microsoft Programmer's Library CD-ROM).
+then back-filled with KB articles from other sources (eg, Microsoft Programmer's Library CD-ROM).  The scripts
+used:
+
+	node scripts/genmd.js txt | tee scripts/genmd.log
+	node ../pcjs/modules/shared/bin/kbgen ../pcjs/pubs/pc/reference/microsoft/mspl13/archive/basic/basknow.txt
+	node ../pcjs/modules/shared/bin/kbgen ../pcjs/pubs/pc/reference/microsoft/mspl13/archive/msc/mscknl.txt
+	node ../pcjs/modules/shared/bin/kbgen ../pcjs/pubs/pc/reference/microsoft/mspl13/archive/masm/masmknwl.txt
+
+TODO: Add a step for sorting all indexes stored in the [id](id/) folder.  For the *genmd* script, index order
+is dependent on the file system, and for the *kbgen* script, index order is determined by the order of the articles
+in the MSPL13 *txt* files.  Currently, the [mspl13_basic](id/mspl13_basic), [mspl13_c](id/mspl13_c), and
+[mspl13_masm](id/mspl13_masm) indexes are sorted by hand.
 
 All the original text files have been [converted](scripts/genmd.js) to Markdown files in preparation for
 publishing via GitHub Pages.  The boilerplate legal notices have been removed from the Markdown files,

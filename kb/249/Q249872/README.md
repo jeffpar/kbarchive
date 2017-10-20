@@ -6,6 +6,8 @@ permalink: /kb/249/Q249872/
 
 ## Q249872: Cannot Remotely Edit Windows 95/98 Registry with Regedit/Poledit
 
+{% raw %}
+
 	Article: Q249872
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/249/Q249872/
 	
 	=============================================================================
 	
+
+{% endraw %}

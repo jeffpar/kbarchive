@@ -6,6 +6,8 @@ permalink: /kb/139/Q139501/
 
 ## Q139501: VB CPIC Application Returns CM_PRODUCT_SPECIFIC_ERROR (20)
 
+{% raw %}
+
 	Article: Q139501
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -81,3 +83,5 @@ permalink: /kb/139/Q139501/
 	
 	=============================================================================
 	
+
+{% endraw %}

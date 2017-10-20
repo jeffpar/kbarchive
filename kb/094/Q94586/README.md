@@ -6,6 +6,8 @@ permalink: /kb/094/Q94586/
 
 ## Q94586: EXE2BIN Error Messages
 
+{% raw %}
+
 	Article: Q94586
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -90,3 +92,5 @@ permalink: /kb/094/Q94586/
 	
 	=============================================================================
 	
+
+{% endraw %}

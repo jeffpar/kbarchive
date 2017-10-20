@@ -6,6 +6,8 @@ permalink: /kb/086/Q86406/
 
 ## Q86406: PC MAPI: Excel Call Function Has Incorrect Arguments
 
+{% raw %}
+
 	Article: Q86406
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -37,3 +39,5 @@ permalink: /kb/086/Q86406/
 	
 	=============================================================================
 	
+
+{% endraw %}

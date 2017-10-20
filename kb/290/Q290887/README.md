@@ -6,6 +6,8 @@ permalink: /kb/290/Q290887/
 
 ## Q290887: FILE: VBRun60sp5.exe Installs Visual Basic 6.0 SP5 Run-Time File
 
+{% raw %}
+
 	Article: Q290887
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -197,3 +199,5 @@ permalink: /kb/290/Q290887/
 	
 	=============================================================================
 	
+
+{% endraw %}

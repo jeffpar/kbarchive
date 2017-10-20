@@ -6,6 +6,8 @@ permalink: /kb/319/Q319053/
 
 ## Q319053: How To Modify Program Settings In MSN Internet Access For Macint
 
+{% raw %}
+
 	Article: Q319053
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/319/Q319053/
 	
 	=============================================================================
 	
+
+{% endraw %}

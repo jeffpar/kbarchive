@@ -6,6 +6,8 @@ permalink: /kb/193/Q193334/
 
 ## Q193334: PRB: Modification to DefProgramGroup in Setup.lst is Ignored
 
+{% raw %}
+
 	Article: Q193334
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -74,3 +76,5 @@ permalink: /kb/193/Q193334/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/121/Q121878/
 
 ## Q121878: RAS Doesn't Support NetBIOS Chain Sends Greater than 64KB - 1
 
+{% raw %}
+
 	Article: Q121878
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -37,3 +39,5 @@ permalink: /kb/121/Q121878/
 	
 	=============================================================================
 	
+
+{% endraw %}

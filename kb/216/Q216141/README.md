@@ -6,6 +6,8 @@ permalink: /kb/216/Q216141/
 
 ## Q216141: HOWTO: Disable IRDP Automatically Using WSH VBScript
 
+{% raw %}
+
 	Article: Q216141
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -106,3 +108,5 @@ permalink: /kb/216/Q216141/
 	
 	=============================================================================
 	
+
+{% endraw %}

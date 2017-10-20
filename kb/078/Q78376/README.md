@@ -6,6 +6,8 @@ permalink: /kb/078/Q78376/
 
 ## Q78376: Paradise 8514/A Combo and Windows Needs EMMEXCLUDE
 
+{% raw %}
+
 	Article: Q78376
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -72,3 +74,5 @@ permalink: /kb/078/Q78376/
 	
 	=============================================================================
 	
+
+{% endraw %}

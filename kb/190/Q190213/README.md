@@ -6,6 +6,8 @@ permalink: /kb/190/Q190213/
 
 ## Q190213: BUG: Type Mismatch Error Comparing String With Byte Array
 
+{% raw %}
+
 	Article: Q190213
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -80,3 +82,5 @@ permalink: /kb/190/Q190213/
 	
 	=============================================================================
 	
+
+{% endraw %}

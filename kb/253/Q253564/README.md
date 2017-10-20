@@ -6,6 +6,8 @@ permalink: /kb/253/Q253564/
 
 ## Q253564: XFOR: GroupWise Migration Creates Duplicate Folders in Outlook
 
+{% raw %}
+
 	Article: Q253564
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -80,3 +82,5 @@ permalink: /kb/253/Q253564/
 	
 	=============================================================================
 	
+
+{% endraw %}

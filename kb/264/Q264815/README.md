@@ -6,6 +6,8 @@ permalink: /kb/264/Q264815/
 
 ## Q264815: Visual InterDev 6.0 Enterprise Developer's Workshop Comments and
 
+{% raw %}
+
 	Article: Q264815
 	Product(s): Microsoft Press
 	Version(s): 
@@ -107,3 +109,5 @@ permalink: /kb/264/Q264815/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198374/
 
 ## Q198374: WD97: Error Message: &quot;This Document Cannot Be Registered&quot;
 
+{% raw %}
+
 	Article: Q198374
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -187,3 +189,5 @@ permalink: /kb/198/Q198374/
 	
 	=============================================================================
 	
+
+{% endraw %}

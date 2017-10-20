@@ -6,6 +6,8 @@ permalink: /kb/168/Q168609/
 
 ## Q168609: How to Use Display Heap (DH.EXE) Resource Kit Utility
 
+{% raw %}
+
 	Article: Q168609
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -161,3 +163,5 @@ permalink: /kb/168/Q168609/
 	
 	=============================================================================
 	
+
+{% endraw %}

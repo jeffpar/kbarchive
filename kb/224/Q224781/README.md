@@ -6,6 +6,8 @@ permalink: /kb/224/Q224781/
 
 ## Q224781: BackOffice Server Requires Minimum of 256 Megabyte Swap File
 
+{% raw %}
+
 	Article: Q224781
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -58,3 +60,5 @@ permalink: /kb/224/Q224781/
 	
 	=============================================================================
 	
+
+{% endraw %}

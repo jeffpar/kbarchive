@@ -6,6 +6,8 @@ permalink: /kb/165/Q165705/
 
 ## Q165705: Client Functions Can't Use TCP/IP Sockets on SNA Server
 
+{% raw %}
+
 	Article: Q165705
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1,2.11 SP2,3.0
@@ -87,3 +89,5 @@ permalink: /kb/165/Q165705/
 	
 	=============================================================================
 	
+
+{% endraw %}

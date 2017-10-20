@@ -6,6 +6,8 @@ permalink: /kb/175/Q175287/
 
 ## Q175287: XADM: Incorrectly Formatted Export File Contains Only Obj-Class
 
+{% raw %}
+
 	Article: Q175287
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -42,3 +44,5 @@ permalink: /kb/175/Q175287/
 	
 	=============================================================================
 	
+
+{% endraw %}

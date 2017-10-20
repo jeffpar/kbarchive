@@ -6,6 +6,8 @@ permalink: /kb/307/Q307361/
 
 ## Q307361: AS/400 Data Queues: ALLOCATE Verb Fails With AP_BAD_SECURITY
 
+{% raw %}
+
 	Article: Q307361
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -148,3 +150,5 @@ permalink: /kb/307/Q307361/
 	
 	=============================================================================
 	
+
+{% endraw %}

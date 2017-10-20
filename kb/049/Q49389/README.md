@@ -6,6 +6,8 @@ permalink: /kb/049/Q49389/
 
 ## Q49389: Example Passing Fixed-Length String from BASIC to MASM (Far)
 
+{% raw %}
+
 	Article: Q49389
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -73,3 +75,5 @@ permalink: /kb/049/Q49389/
 	BFSTRF.EXE produces the following output:
 	
 	   BASIC String
+
+{% endraw %}

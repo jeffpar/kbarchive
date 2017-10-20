@@ -6,6 +6,8 @@ permalink: /kb/177/Q177672/
 
 ## Q177672: &quot;Fatal Exception 0E&quot; Error Message When Running McAfee VirusScan
 
+{% raw %}
+
 	Article: Q177672
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -64,3 +66,5 @@ permalink: /kb/177/Q177672/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153184/
 
 ## Q153184: Bunyan and Koi: 32-bit Setup Doesn't Remove 16-bit Version
 
+{% raw %}
+
 	Article: Q153184
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -189,3 +191,5 @@ permalink: /kb/153/Q153184/
 	
 	=============================================================================
 	
+
+{% endraw %}

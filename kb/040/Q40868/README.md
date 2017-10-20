@@ -6,6 +6,8 @@ permalink: /kb/040/Q40868/
 
 ## Q40868: BC 6.00 Example of OS/2 API Function Call DosExecPgm
 
+{% raw %}
+
 	Article: Q40868
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -56,3 +58,5 @@ permalink: /kb/040/Q40868/
 	SLEEP(5)
 	PRINT "This Parent is Complete"
 	END
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/070/Q70467/
 
 ## Q70467: Windows Err Msg: Cannot Find KRNLxxx.EXE
 
+{% raw %}
+
 	Article: Q70467
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11,95
@@ -106,3 +108,5 @@ permalink: /kb/070/Q70467/
 	
 	=============================================================================
 	
+
+{% endraw %}

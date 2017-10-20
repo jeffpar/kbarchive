@@ -6,6 +6,8 @@ permalink: /kb/230/Q230725/
 
 ## Q230725: Err Msg: GRPCONV.EXE Is Not a Valid Windows NT Application
 
+{% raw %}
+
 	Article: Q230725
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/230/Q230725/
 	
 	=============================================================================
 	
+
+{% endraw %}

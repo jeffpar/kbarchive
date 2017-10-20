@@ -6,6 +6,8 @@ permalink: /kb/312/Q312284/
 
 ## Q312284: A Direct RAS Connection on a Serial Cable Always Uses 1 Stop Bit
 
+{% raw %}
+
 	Article: Q312284
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -93,3 +95,5 @@ permalink: /kb/312/Q312284/
 	
 	=============================================================================
 	
+
+{% endraw %}

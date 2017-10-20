@@ -6,6 +6,8 @@ permalink: /kb/224/Q224166/
 
 ## Q224166: FP98: Script Wizard Button Disappears After Installing Internet
 
+{% raw %}
+
 	Article: Q224166
 	Product(s): Word Front Page
 	Version(s): WINDOWS:5
@@ -66,3 +68,5 @@ permalink: /kb/224/Q224166/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/240/Q240265/
 
 ## Q240265: Programming MS Office 2000 Web Components Comments &amp; Corrections
 
+{% raw %}
+
 	Article: Q240265
 	Product(s): Microsoft Press
 	Version(s): 
@@ -109,3 +111,5 @@ permalink: /kb/240/Q240265/
 	
 	=============================================================================
 	
+
+{% endraw %}

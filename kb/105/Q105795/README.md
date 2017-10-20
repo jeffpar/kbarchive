@@ -6,6 +6,8 @@ permalink: /kb/105/Q105795/
 
 ## Q105795: BUG: Cannot Have a Pathname &gt; 29 Char for SYSTEM.MDA
 
+{% raw %}
+
 	Article: Q105795
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/105/Q105795/
 	
 	=============================================================================
 	
+
+{% endraw %}

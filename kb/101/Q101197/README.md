@@ -6,6 +6,8 @@ permalink: /kb/101/Q101197/
 
 ## Q101197: Using the Hercules Graphics Station Card in Standard Mode
 
+{% raw %}
+
 	Article: Q101197
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/101/Q101197/
 	
 	=============================================================================
 	
+
+{% endraw %}

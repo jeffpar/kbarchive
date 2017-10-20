@@ -6,6 +6,8 @@ permalink: /kb/162/Q162299/
 
 ## Q162299: PRB: Icons on Controls Have Garbled White Area to Right/Below
 
+{% raw %}
+
 	Article: Q162299
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -84,3 +86,5 @@ permalink: /kb/162/Q162299/
 	
 	=============================================================================
 	
+
+{% endraw %}

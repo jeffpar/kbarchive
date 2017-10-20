@@ -6,6 +6,8 @@ permalink: /kb/120/Q120220/
 
 ## Q120220: PC Adm: Message Stuck in Queue--Sent Multiple Times
 
+{% raw %}
+
 	Article: Q120220
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -59,3 +61,5 @@ permalink: /kb/120/Q120220/
 	
 	=============================================================================
 	
+
+{% endraw %}

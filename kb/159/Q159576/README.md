@@ -6,6 +6,8 @@ permalink: /kb/159/Q159576/
 
 ## Q159576: FIX: Cannot Open Stored Procedure from Call Stack Context
 
+{% raw %}
+
 	Article: Q159576
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.2
@@ -70,3 +72,5 @@ permalink: /kb/159/Q159576/
 	
 	=============================================================================
 	
+
+{% endraw %}

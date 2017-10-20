@@ -6,6 +6,8 @@ permalink: /kb/200/Q200095/
 
 ## Q200095: PRB: Problems with Help Compiler 3.5 and Certain RTF Formats
 
+{% raw %}
+
 	Article: Q200095
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:4.0,4.0b
@@ -119,3 +121,5 @@ permalink: /kb/200/Q200095/
 	
 	=============================================================================
 	
+
+{% endraw %}

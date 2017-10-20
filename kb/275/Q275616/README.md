@@ -6,6 +6,8 @@ permalink: /kb/275/Q275616/
 
 ## Q275616: XCON: Messages Are Lost When Domain Controller Is Unavailable
 
+{% raw %}
+
 	Article: Q275616
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -65,3 +67,5 @@ permalink: /kb/275/Q275616/
 	
 	=============================================================================
 	
+
+{% endraw %}

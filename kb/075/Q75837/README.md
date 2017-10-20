@@ -6,6 +6,8 @@ permalink: /kb/075/Q75837/
 
 ## Q75837: Using BACKUP/F After Installing the MS-DOS 5 Upgrade
 
+{% raw %}
+
 	Article: Q75837
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -53,3 +55,5 @@ permalink: /kb/075/Q75837/
 	
 	=============================================================================
 	
+
+{% endraw %}

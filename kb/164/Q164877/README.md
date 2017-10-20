@@ -6,6 +6,8 @@ permalink: /kb/164/Q164877/
 
 ## Q164877: SMS: PCMSVC32 Doesn't Send Status MIF After Running Job
 
+{% raw %}
+
 	Article: Q164877
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -47,3 +49,5 @@ permalink: /kb/164/Q164877/
 	
 	=============================================================================
 	
+
+{% endraw %}

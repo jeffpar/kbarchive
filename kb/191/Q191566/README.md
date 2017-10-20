@@ -6,6 +6,8 @@ permalink: /kb/191/Q191566/
 
 ## Q191566: PRB: Cannot Access Network Resource If Client Certificate Mapped
 
+{% raw %}
+
 	Article: Q191566
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -72,3 +74,5 @@ permalink: /kb/191/Q191566/
 	
 	=============================================================================
 	
+
+{% endraw %}

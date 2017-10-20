@@ -6,6 +6,8 @@ permalink: /kb/098/Q98120/
 
 ## Q98120: PC WSPlus: Troubleshooting Corrupted Schedule+ Calendar Files
 
+{% raw %}
+
 	Article: Q98120
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -94,3 +96,5 @@ permalink: /kb/098/Q98120/
 	
 	=============================================================================
 	
+
+{% endraw %}

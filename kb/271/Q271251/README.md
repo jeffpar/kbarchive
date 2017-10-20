@@ -6,6 +6,8 @@ permalink: /kb/271/Q271251/
 
 ## Q271251: How to Download Microsoft Reader for Desktop or Laptop Computers
 
+{% raw %}
+
 	Article: Q271251
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.5
@@ -54,3 +56,5 @@ permalink: /kb/271/Q271251/
 	
 	=============================================================================
 	
+
+{% endraw %}

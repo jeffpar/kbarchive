@@ -6,6 +6,8 @@ permalink: /kb/083/Q83385/
 
 ## Q83385: Windows 3.1 Setup Asks for Disk 5
 
+{% raw %}
+
 	Article: Q83385
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/083/Q83385/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175732/
 
 ## Q175732: Installing and Using the KiXtart Login Processor Tool
 
+{% raw %}
+
 	Article: Q175732
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -99,3 +101,5 @@ permalink: /kb/175/Q175732/
 	
 	=============================================================================
 	
+
+{% endraw %}

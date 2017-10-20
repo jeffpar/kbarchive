@@ -6,6 +6,8 @@ permalink: /kb/135/Q135937/
 
 ## Q135937: DriveSpace 3 Compression May Change Filenames
 
+{% raw %}
+
 	Article: Q135937
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/135/Q135937/
 	
 	=============================================================================
 	
+
+{% endraw %}

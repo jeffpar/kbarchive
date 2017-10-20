@@ -6,6 +6,8 @@ permalink: /kb/164/Q164851/
 
 ## Q164851: XFOR: Embedded Message Wrapping Incorrect with DEC All-In-One
 
+{% raw %}
+
 	Article: Q164851
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/164/Q164851/
 	
 	=============================================================================
 	
+
+{% endraw %}

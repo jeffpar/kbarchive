@@ -6,6 +6,8 @@ permalink: /kb/129/Q129999/
 
 ## Q129999: Increasing Windows NT Backup Performance
 
+{% raw %}
+
 	Article: Q129999
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/129/Q129999/
 	
 	=============================================================================
 	
+
+{% endraw %}

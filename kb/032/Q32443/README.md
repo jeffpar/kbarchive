@@ -6,6 +6,8 @@ permalink: /kb/032/Q32443/
 
 ## Q32443: MS-DOS CHKDSK Program Not Designed to Work with Windows
 
+{% raw %}
+
 	Article: Q32443
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0; WINDOWS:3.0,3.0a,3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/032/Q32443/
 	
 	=============================================================================
 	
+
+{% endraw %}

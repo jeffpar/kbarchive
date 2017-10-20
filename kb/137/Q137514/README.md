@@ -6,6 +6,8 @@ permalink: /kb/137/Q137514/
 
 ## Q137514: Older ESS Sound Tools Incompatible with Windows 95
 
+{% raw %}
+
 	Article: Q137514
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -83,3 +85,5 @@ permalink: /kb/137/Q137514/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/058/Q58606/
 
 ## Q58606: LOCAL (Procedure) ERROR Handling Introduced in BASIC PDS 7.00
 
+{% raw %}
+
 	Article: Q58606
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -166,3 +168,5 @@ permalink: /kb/058/Q58606/
 	RESUME NEXT
 	
 	END SUB
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132480/
 
 ## Q132480: BUG: Aliases in View Window Are Listed in Reverse Order
 
+{% raw %}
+
 	Article: Q132480
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -60,3 +62,5 @@ permalink: /kb/132/Q132480/
 	
 	=============================================================================
 	
+
+{% endraw %}

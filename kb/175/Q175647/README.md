@@ -6,6 +6,8 @@ permalink: /kb/175/Q175647/
 
 ## Q175647: Event ID: 1011 Missing Library File Dfsinstr.dll
 
+{% raw %}
+
 	Article: Q175647
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -70,3 +72,5 @@ permalink: /kb/175/Q175647/
 	
 	=============================================================================
 	
+
+{% endraw %}

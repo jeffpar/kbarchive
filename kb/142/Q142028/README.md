@@ -6,6 +6,8 @@ permalink: /kb/142/Q142028/
 
 ## Q142028: RUN.EXE: A Logon Script Exit Utility
 
+{% raw %}
+
 	Article: Q142028
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2,2.2a,2.2b,2.2c,3.0,3.5,3.51
@@ -126,3 +128,5 @@ permalink: /kb/142/Q142028/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193363/
 
 ## Q193363: BUG: DDE Paste Link with Word Fails to Update Using LinkSend
 
+{% raw %}
+
 	Article: Q193363
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0,97
@@ -167,3 +169,5 @@ permalink: /kb/193/Q193363/
 	
 	=============================================================================
 	
+
+{% endraw %}

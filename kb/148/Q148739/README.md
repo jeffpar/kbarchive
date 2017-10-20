@@ -6,6 +6,8 @@ permalink: /kb/148/Q148739/
 
 ## Q148739: RUI_PURGE &amp; SLI_PURGE Verbs Fail When Using the Thunking DLLs
 
+{% raw %}
+
 	Article: Q148739
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -77,3 +79,5 @@ permalink: /kb/148/Q148739/
 	
 	=============================================================================
 	
+
+{% endraw %}

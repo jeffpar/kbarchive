@@ -6,6 +6,8 @@ permalink: /kb/187/Q187648/
 
 ## Q187648: INFO: FrontPage and VID Local Files on a Source Controlled Web
 
+{% raw %}
+
 	Article: Q187648
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:1.0,5.0,97
@@ -98,3 +100,5 @@ permalink: /kb/187/Q187648/
 	
 	=============================================================================
 	
+
+{% endraw %}

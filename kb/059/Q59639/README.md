@@ -6,6 +6,8 @@ permalink: /kb/059/Q59639/
 
 ## Q59639: Must Select Font in List Box to Install
 
+{% raw %}
+
 	Article: Q59639
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -35,3 +37,5 @@ permalink: /kb/059/Q59639/
 	
 	=============================================================================
 	
+
+{% endraw %}

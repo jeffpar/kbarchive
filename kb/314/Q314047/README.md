@@ -6,6 +6,8 @@ permalink: /kb/314/Q314047/
 
 ## Q314047: MCSE Training Kit: Windows XP Professional Comments and Correcti
 
+{% raw %}
+
 	Article: Q314047
 	Product(s): Microsoft Press
 	Version(s): 
@@ -780,3 +782,5 @@ permalink: /kb/314/Q314047/
 	
 	=============================================================================
 	
+
+{% endraw %}

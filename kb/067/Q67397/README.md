@@ -6,6 +6,8 @@ permalink: /kb/067/Q67397/
 
 ## Q67397: Hyperlink for MakeProcInstance in SDKADV.HLP Incorrect
 
+{% raw %}
+
 	Article: Q67397
 	Product(s): See article
 	Version(s): 1.70   | 1.70
@@ -54,3 +56,5 @@ permalink: /kb/067/Q67397/
 	The choice of /E0 indicates no compression, and is strictly arbitrary
 	in this case. If maximum compression is desired, the 0 argument to the
 	/E switch may be left off, or /E15 may be specified.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154005/
 
 ## Q154005: HOWTO: Delete a File into the Win95/98/Me Recycle Bin
 
+{% raw %}
+
 	Article: Q154005
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -110,3 +112,5 @@ permalink: /kb/154/Q154005/
 	
 	=============================================================================
 	
+
+{% endraw %}

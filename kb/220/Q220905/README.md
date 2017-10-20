@@ -6,6 +6,8 @@ permalink: /kb/220/Q220905/
 
 ## Q220905: XFOR: Error Retrieving Mail by IMAP4 on Exchange w/Windows CE
 
+{% raw %}
+
 	Article: Q220905
 	Product(s): Microsoft Exchange
 	Version(s): 3.0,3.0 Professional Edition,5.5
@@ -112,3 +114,5 @@ permalink: /kb/220/Q220905/
 	
 	=============================================================================
 	
+
+{% endraw %}

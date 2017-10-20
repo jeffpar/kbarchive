@@ -6,6 +6,8 @@ permalink: /kb/129/Q129658/
 
 ## Q129658: Reading and Writing Aldus Placeable Metafiles
 
+{% raw %}
+
 	Article: Q129658
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -67,3 +69,5 @@ permalink: /kb/129/Q129658/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137982/
 
 ## Q137982: Settings for Canon BubbleJet Not Maintained During Upgrade
 
+{% raw %}
+
 	Article: Q137982
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -56,3 +58,5 @@ permalink: /kb/137/Q137982/
 	
 	=============================================================================
 	
+
+{% endraw %}

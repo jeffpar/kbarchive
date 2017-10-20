@@ -6,6 +6,8 @@ permalink: /kb/199/Q199262/
 
 ## Q199262: SMS: Remote Control Compression Levels in SMS 2.0
 
+{% raw %}
+
 	Article: Q199262
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -54,3 +56,5 @@ permalink: /kb/199/Q199262/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154503/
 
 ## Q154503: SMS: Wuser2.exe GPF When Using Hurricane VMM
 
+{% raw %}
+
 	Article: Q154503
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -60,3 +62,5 @@ permalink: /kb/154/Q154503/
 	
 	=============================================================================
 	
+
+{% endraw %}

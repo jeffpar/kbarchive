@@ -6,6 +6,8 @@ permalink: /kb/289/Q289246/
 
 ## Q289246: MS02-001: Forged SID Could Result in Elevated Privileges in Wind
 
+{% raw %}
+
 	Article: Q289246
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -241,3 +243,5 @@ permalink: /kb/289/Q289246/
 	
 	=============================================================================
 	
+
+{% endraw %}

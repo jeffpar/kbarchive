@@ -6,6 +6,8 @@ permalink: /kb/090/Q90258/
 
 ## Q90258: Upgrading from Workgroup Connections to WFWG with OEM Drivers
 
+{% raw %}
+
 	Article: Q90258
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -43,3 +45,5 @@ permalink: /kb/090/Q90258/
 	
 	=============================================================================
 	
+
+{% endraw %}

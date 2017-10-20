@@ -6,6 +6,8 @@ permalink: /kb/318/Q318907/
 
 ## Q318907: MCSA/MCSE Self-Paced Training Kit: Managing a Microsoft Windows
 
+{% raw %}
+
 	Article: Q318907
 	Product(s): Microsoft Press
 	Version(s): 
@@ -683,3 +685,5 @@ permalink: /kb/318/Q318907/
 	
 	=============================================================================
 	
+
+{% endraw %}

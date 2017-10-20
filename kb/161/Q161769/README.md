@@ -6,6 +6,8 @@ permalink: /kb/161/Q161769/
 
 ## Q161769: Admin Select Domain Displays Local Configuration Instead
 
+{% raw %}
+
 	Article: Q161769
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -64,3 +66,5 @@ permalink: /kb/161/Q161769/
 	
 	=============================================================================
 	
+
+{% endraw %}

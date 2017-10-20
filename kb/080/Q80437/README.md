@@ -6,6 +6,8 @@ permalink: /kb/080/Q80437/
 
 ## Q80437: Description of the Map File Microsoft LINK Creates
 
+{% raw %}
+
 	Article: Q80437
 	Product(s): Microsoft Programming Utilities
 	Version(s): 3.x,4.x,5.0x,5.1,5.11,5.13,5.15,5.1x,5.2,5.3x,5.5
@@ -122,3 +124,5 @@ permalink: /kb/080/Q80437/
 	
 	=============================================================================
 	
+
+{% endraw %}

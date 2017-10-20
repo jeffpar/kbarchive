@@ -6,6 +6,8 @@ permalink: /kb/196/Q196448/
 
 ## Q196448: Print Screen Fails When Pasting into Paint
 
+{% raw %}
+
 	Article: Q196448
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -69,3 +71,5 @@ permalink: /kb/196/Q196448/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170265/
 
 ## Q170265: WD97: Error Opening Korean Document with Numbering in U.S. Word
 
+{% raw %}
+
 	Article: Q170265
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -90,3 +92,5 @@ permalink: /kb/170/Q170265/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176811/
 
 ## Q176811: XADM: License Service Logs the Wrong Exchange Version Number
 
+{% raw %}
+
 	Article: Q176811
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -49,3 +51,5 @@ permalink: /kb/176/Q176811/
 	
 	=============================================================================
 	
+
+{% endraw %}

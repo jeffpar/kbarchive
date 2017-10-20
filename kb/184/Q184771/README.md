@@ -6,6 +6,8 @@ permalink: /kb/184/Q184771/
 
 ## Q184771: XADM: How to Configure Exchange Server on Banyan VINES Network
 
+{% raw %}
+
 	Article: Q184771
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -92,3 +94,5 @@ permalink: /kb/184/Q184771/
 	
 	=============================================================================
 	
+
+{% endraw %}

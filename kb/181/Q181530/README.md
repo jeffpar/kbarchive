@@ -6,6 +6,8 @@ permalink: /kb/181/Q181530/
 
 ## Q181530: WD97: Sample Code to Scroll to Top or Bottom of Document Window
 
+{% raw %}
+
 	Article: Q181530
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/181/Q181530/
 	
 	=============================================================================
 	
+
+{% endraw %}

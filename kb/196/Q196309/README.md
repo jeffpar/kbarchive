@@ -6,6 +6,8 @@ permalink: /kb/196/Q196309/
 
 ## Q196309: IIS 4.0 Stops Responding (Access Violates) When Adding Counter
 
+{% raw %}
+
 	Article: Q196309
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -68,3 +70,5 @@ permalink: /kb/196/Q196309/
 	
 	=============================================================================
 	
+
+{% endraw %}

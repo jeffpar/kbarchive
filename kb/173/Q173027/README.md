@@ -6,6 +6,8 @@ permalink: /kb/173/Q173027/
 
 ## Q173027: FIX: CRichEditView as Second Splitter Pane Causes Crash
 
+{% raw %}
+
 	Article: Q173027
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.0a,4.1
@@ -71,3 +73,5 @@ permalink: /kb/173/Q173027/
 	
 	=============================================================================
 	
+
+{% endraw %}

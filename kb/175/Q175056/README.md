@@ -6,6 +6,8 @@ permalink: /kb/175/Q175056/
 
 ## Q175056: &quot;Error -2&quot; in 16-Bit Program When Disconnecting from SQL Server
 
+{% raw %}
+
 	Article: Q175056
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -57,3 +59,5 @@ permalink: /kb/175/Q175056/
 	
 	=============================================================================
 	
+
+{% endraw %}

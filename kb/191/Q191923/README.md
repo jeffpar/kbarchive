@@ -6,6 +6,8 @@ permalink: /kb/191/Q191923/
 
 ## Q191923: PRB: COPY TO ARRAY Causes Insufficient Memory Error
 
+{% raw %}
+
 	Article: Q191923
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0,7.0
@@ -125,3 +127,5 @@ permalink: /kb/191/Q191923/
 	
 	=============================================================================
 	
+
+{% endraw %}

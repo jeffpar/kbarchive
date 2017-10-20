@@ -6,6 +6,8 @@ permalink: /kb/151/Q151358/
 
 ## Q151358: Disk Administrator Does Not Set System Partitions Correctly
 
+{% raw %}
+
 	Article: Q151358
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -91,3 +93,5 @@ permalink: /kb/151/Q151358/
 	
 	=============================================================================
 	
+
+{% endraw %}

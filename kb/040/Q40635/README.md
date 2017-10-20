@@ -6,6 +6,8 @@ permalink: /kb/040/Q40635/
 
 ## Q40635: &quot;Permission Denied&quot; Is Only Error for BASIC Record/File LOCK
 
+{% raw %}
+
 	Article: Q40635
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -100,3 +102,5 @@ permalink: /kb/040/Q40635/
 	UNLOCK #3
 	UNLOCK #5, 1
 	CLOSE
+
+{% endraw %}

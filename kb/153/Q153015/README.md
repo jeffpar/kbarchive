@@ -6,6 +6,8 @@ permalink: /kb/153/Q153015/
 
 ## Q153015: TTS - Release Physical Record Does Not Work with CSNW
 
+{% raw %}
+
 	Article: Q153015
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -48,3 +50,5 @@ permalink: /kb/153/Q153015/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85496/
 
 ## Q85496: PRB: Assertion Failed: WINAPP.CPP, APPCORE.CPP, or WINMAIN.CPP
 
+{% raw %}
+
 	Article: Q85496
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -105,3 +107,5 @@ permalink: /kb/085/Q85496/
 	
 	=============================================================================
 	
+
+{% endraw %}

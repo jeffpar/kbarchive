@@ -6,6 +6,8 @@ permalink: /kb/153/Q153220/
 
 ## Q153220: DHCP Manager Error &quot;No More Data Is Available&quot;
 
+{% raw %}
+
 	Article: Q153220
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -57,3 +59,5 @@ permalink: /kb/153/Q153220/
 	
 	=============================================================================
 	
+
+{% endraw %}

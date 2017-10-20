@@ -6,6 +6,8 @@ permalink: /kb/080/Q80279/
 
 ## Q80279: MS-DOS Window on 8514/a or SuperVGA Monitor Is Small
 
+{% raw %}
+
 	Article: Q80279
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -64,3 +66,5 @@ permalink: /kb/080/Q80279/
 	
 	=============================================================================
 	
+
+{% endraw %}

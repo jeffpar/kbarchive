@@ -6,6 +6,8 @@ permalink: /kb/238/Q238739/
 
 ## Q238739: Cannot Administer Index Server 2.0 from the MMC
 
+{% raw %}
+
 	Article: Q238739
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0
@@ -52,3 +54,5 @@ permalink: /kb/238/Q238739/
 	
 	=============================================================================
 	
+
+{% endraw %}

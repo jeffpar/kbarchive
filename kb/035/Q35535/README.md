@@ -6,6 +6,8 @@ permalink: /kb/035/Q35535/
 
 ## Q35535: Keeping the Editor from Saving Backup Files
 
+{% raw %}
+
 	Article: Q35535
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -37,3 +39,5 @@ permalink: /kb/035/Q35535/
 	which version you would like to restore. Because these files take up
 	actual disk space, they should be periodically removed from the disk
 	by using EXP.EXE. Typing "exp" will delete these files permanently.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124616/
 
 ## Q124616: Single Window Resizes When Returning to MSN Central
 
+{% raw %}
+
 	Article: Q124616
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -58,3 +60,5 @@ permalink: /kb/124/Q124616/
 	
 	=============================================================================
 	
+
+{% endraw %}

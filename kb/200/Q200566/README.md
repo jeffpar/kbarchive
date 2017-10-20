@@ -6,6 +6,8 @@ permalink: /kb/200/Q200566/
 
 ## Q200566: XFOR: FPNW Required on WinNT 3.51 using MS Mail and NWLINK
 
+{% raw %}
+
 	Article: Q200566
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/200/Q200566/
 	
 	=============================================================================
 	
+
+{% endraw %}

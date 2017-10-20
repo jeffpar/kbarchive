@@ -6,6 +6,8 @@ permalink: /kb/153/Q153769/
 
 ## Q153769: XCLN: How to Automatically Import Holidays into Schedule+ 7.0
 
+{% raw %}
+
 	Article: Q153769
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -89,3 +91,5 @@ permalink: /kb/153/Q153769/
 	
 	=============================================================================
 	
+
+{% endraw %}

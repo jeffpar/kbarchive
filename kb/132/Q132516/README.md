@@ -6,6 +6,8 @@ permalink: /kb/132/Q132516/
 
 ## Q132516: Suspend Command Appears on Start Menu But Does Not Function
 
+{% raw %}
+
 	Article: Q132516
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/132/Q132516/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/077/Q77209/
 
 ## Q77209: Moving the DOSSHELL.INI File to a Network Drive
 
+{% raw %}
+
 	Article: Q77209
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -57,3 +59,5 @@ permalink: /kb/077/Q77209/
 	
 	=============================================================================
 	
+
+{% endraw %}

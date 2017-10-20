@@ -6,6 +6,8 @@ permalink: /kb/115/Q115283/
 
 ## Q115283: Installing Sound Producer Pro Alters ANSI Escape Sequences
 
+{% raw %}
+
 	Article: Q115283
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2
@@ -78,3 +80,5 @@ permalink: /kb/115/Q115283/
 	
 	=============================================================================
 	
+
+{% endraw %}

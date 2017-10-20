@@ -6,6 +6,8 @@ permalink: /kb/087/Q87923/
 
 ## Q87923: FIX: CVW 4.0 Does Not Always Stop on Breakpoints in DLL
 
+{% raw %}
+
 	Article: Q87923
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01
@@ -79,3 +81,5 @@ permalink: /kb/087/Q87923/
 	
 	=============================================================================
 	
+
+{% endraw %}

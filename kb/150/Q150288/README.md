@@ -6,6 +6,8 @@ permalink: /kb/150/Q150288/
 
 ## Q150288: HOWTO: How to Enable Selection Button in Print Dialog Box
 
+{% raw %}
+
 	Article: Q150288
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1
@@ -181,3 +183,5 @@ permalink: /kb/150/Q150288/
 	
 	=============================================================================
 	
+
+{% endraw %}

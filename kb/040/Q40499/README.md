@@ -6,6 +6,8 @@ permalink: /kb/040/Q40499/
 
 ## Q40499: Internal Compiler Error: regMD.c 1.117 Line 292
 
+{% raw %}
+
 	Article: Q40499
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -62,3 +64,5 @@ permalink: /kb/040/Q40499/
 	
 	   temp_sub[x + 1] = Themain.sub[x];  /* Error occurs on this line. */
 	}
+
+{% endraw %}

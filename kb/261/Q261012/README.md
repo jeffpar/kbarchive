@@ -6,6 +6,8 @@ permalink: /kb/261/Q261012/
 
 ## Q261012: How to Change MdbDomains Value for SNAPMP Service in HIS2000
 
+{% raw %}
+
 	Article: Q261012
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -147,3 +149,5 @@ permalink: /kb/261/Q261012/
 	
 	=============================================================================
 	
+
+{% endraw %}

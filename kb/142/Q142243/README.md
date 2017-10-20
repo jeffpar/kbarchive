@@ -6,6 +6,8 @@ permalink: /kb/142/Q142243/
 
 ## Q142243: PRB: Cannot Create an MFC Thread During DLL Startup
 
+{% raw %}
+
 	Article: Q142243
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -116,3 +118,5 @@ permalink: /kb/142/Q142243/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/061/Q61592/
 
 ## Q61592: Mouse Command-Line Switches for Mouse Driver Version 7.04
 
+{% raw %}
+
 	Article: Q61592
 	Product(s): See article
 	Version(s): 1.00
@@ -114,3 +116,5 @@ permalink: /kb/061/Q61592/
 	
 	           (This is added for PS/2 only. It directs the driver to look
 	           for the mouse at the mouse port.)
+
+{% endraw %}

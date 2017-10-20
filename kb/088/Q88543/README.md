@@ -6,6 +6,8 @@ permalink: /kb/088/Q88543/
 
 ## Q88543: Troubleshooting Microsoft and Compatible Mice in Windows
 
+{% raw %}
+
 	Article: Q88543
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -294,3 +296,5 @@ permalink: /kb/088/Q88543/
 	
 	=============================================================================
 	
+
+{% endraw %}

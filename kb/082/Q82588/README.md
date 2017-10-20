@@ -6,6 +6,8 @@ permalink: /kb/082/Q82588/
 
 ## Q82588: Icon DoIt 3.0 Requires Update to Run with Windows 3.1
 
+{% raw %}
+
 	Article: Q82588
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/082/Q82588/
 	
 	=============================================================================
 	
+
+{% endraw %}

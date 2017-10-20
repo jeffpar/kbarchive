@@ -6,6 +6,8 @@ permalink: /kb/131/Q131276/
 
 ## Q131276: Cannot Make System Disk from File Manager
 
+{% raw %}
+
 	Article: Q131276
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/131/Q131276/
 	
 	=============================================================================
 	
+
+{% endraw %}

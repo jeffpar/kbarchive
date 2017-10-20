@@ -6,6 +6,8 @@ permalink: /kb/059/Q59662/
 
 ## Q59662: Can't Arrow Between Items in Program Manager Group
 
+{% raw %}
+
 	Article: Q59662
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/059/Q59662/
 	
 	=============================================================================
 	
+
+{% endraw %}

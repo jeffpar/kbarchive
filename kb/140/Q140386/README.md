@@ -6,6 +6,8 @@ permalink: /kb/140/Q140386/
 
 ## Q140386: Using TEMP Directory on Server Causes Sharing Violation
 
+{% raw %}
+
 	Article: Q140386
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:; winnt:3.5,3.51
@@ -50,3 +52,5 @@ permalink: /kb/140/Q140386/
 	
 	=============================================================================
 	
+
+{% endraw %}

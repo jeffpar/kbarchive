@@ -6,6 +6,8 @@ permalink: /kb/280/Q280770/
 
 ## Q280770: Information Store Fails After You Restore an Offline Backup
 
+{% raw %}
+
 	Article: Q280770
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -115,3 +117,5 @@ permalink: /kb/280/Q280770/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152000/
 
 ## Q152000: PRB: Appearance Property Uses Windows 4.0 WS_EX_CLIENTEDGE
 
+{% raw %}
+
 	Article: Q152000
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -125,3 +127,5 @@ permalink: /kb/152/Q152000/
 	
 	=============================================================================
 	
+
+{% endraw %}

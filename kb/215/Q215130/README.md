@@ -6,6 +6,8 @@ permalink: /kb/215/Q215130/
 
 ## Q215130: Scheduler Routes &quot;Send&quot; Requests to Deleted Addresses
 
+{% raw %}
+
 	Article: Q215130
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -132,3 +134,5 @@ permalink: /kb/215/Q215130/
 	
 	=============================================================================
 	
+
+{% endraw %}

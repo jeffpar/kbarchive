@@ -6,6 +6,8 @@ permalink: /kb/256/Q256880/
 
 ## Q256880: SMS: Package Routing Fails Distrib. from Central to Grandp Site
 
+{% raw %}
+
 	Article: Q256880
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP1
@@ -86,3 +88,5 @@ permalink: /kb/256/Q256880/
 	
 	=============================================================================
 	
+
+{% endraw %}

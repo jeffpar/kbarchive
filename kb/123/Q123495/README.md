@@ -6,6 +6,8 @@ permalink: /kb/123/Q123495/
 
 ## Q123495: BUG: MSVC20 Setup Fails to Install Books Online Only
 
+{% raw %}
+
 	Article: Q123495
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -85,3 +87,5 @@ permalink: /kb/123/Q123495/
 	
 	=============================================================================
 	
+
+{% endraw %}

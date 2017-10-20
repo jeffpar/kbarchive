@@ -6,6 +6,8 @@ permalink: /kb/194/Q194590/
 
 ## Q194590: XFOR: Lotus Notes Connector Diagnostic Logging Registry Settings
 
+{% raw %}
+
 	Article: Q194590
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -74,3 +76,5 @@ permalink: /kb/194/Q194590/
 	
 	=============================================================================
 	
+
+{% endraw %}

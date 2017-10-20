@@ -6,6 +6,8 @@ permalink: /kb/094/Q94967/
 
 ## Q94967: FAX: &quot;Communication Error&quot; Using Intel SatisFAXtion 200 Board
 
+{% raw %}
+
 	Article: Q94967
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1b,3.0
@@ -73,3 +75,5 @@ permalink: /kb/094/Q94967/
 	
 	=============================================================================
 	
+
+{% endraw %}

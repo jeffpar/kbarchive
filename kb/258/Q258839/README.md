@@ -6,6 +6,8 @@ permalink: /kb/258/Q258839/
 
 ## Q258839: Space at End of Batch File Name Causes Server to Hang
 
+{% raw %}
+
 	Article: Q258839
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -98,3 +100,5 @@ permalink: /kb/258/Q258839/
 	
 	=============================================================================
 	
+
+{% endraw %}

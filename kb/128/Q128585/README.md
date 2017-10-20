@@ -6,6 +6,8 @@ permalink: /kb/128/Q128585/
 
 ## Q128585: PC Ext: External May Fail to Answer Incoming Calls
 
+{% raw %}
+
 	Article: Q128585
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -82,3 +84,5 @@ permalink: /kb/128/Q128585/
 	
 	=============================================================================
 	
+
+{% endraw %}

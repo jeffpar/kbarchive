@@ -6,6 +6,8 @@ permalink: /kb/148/Q148321/
 
 ## Q148321: Standard Edition Missing Help Entries for Win32SDK
 
+{% raw %}
+
 	Article: Q148321
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -85,3 +87,5 @@ permalink: /kb/148/Q148321/
 	
 	=============================================================================
 	
+
+{% endraw %}

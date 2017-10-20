@@ -6,6 +6,8 @@ permalink: /kb/214/Q214549/
 
 ## Q214549: CC III: Screen Turns Black and Computer Hangs When Playing Game
 
+{% raw %}
+
 	Article: Q214549
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -75,3 +77,5 @@ permalink: /kb/214/Q214549/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/110/Q110212/
 
 ## Q110212: Repair Utility Fails if Computer Name is More Than 8 Characters
 
+{% raw %}
+
 	Article: Q110212
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -59,3 +61,5 @@ permalink: /kb/110/Q110212/
 	
 	=============================================================================
 	
+
+{% endraw %}

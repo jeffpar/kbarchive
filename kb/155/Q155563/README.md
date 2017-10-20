@@ -6,6 +6,8 @@ permalink: /kb/155/Q155563/
 
 ## Q155563: Toshiba T4900CT Laptop Computer Hangs at NTDETECT Screen
 
+{% raw %}
+
 	Article: Q155563
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -42,3 +44,5 @@ permalink: /kb/155/Q155563/
 	
 	=============================================================================
 	
+
+{% endraw %}

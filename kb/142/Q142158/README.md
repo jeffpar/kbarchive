@@ -6,6 +6,8 @@ permalink: /kb/142/Q142158/
 
 ## Q142158: PRB: QuickWin App Causes Access Violation Under Windows 95
 
+{% raw %}
+
 	Article: Q142158
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.1
@@ -60,3 +62,5 @@ permalink: /kb/142/Q142158/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185696/
 
 ## Q185696: INFO: &quot;Invalid DOS path &lt;drive&gt;:&lt;path&gt;&quot; when Adding Files
 
+{% raw %}
+
 	Article: Q185696
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/185/Q185696/
 	
 	=============================================================================
 	
+
+{% endraw %}

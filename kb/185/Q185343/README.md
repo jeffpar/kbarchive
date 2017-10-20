@@ -6,6 +6,8 @@ permalink: /kb/185/Q185343/
 
 ## Q185343: SMS: Splitting One Domain Across Multiple SMS Sites
 
+{% raw %}
+
 	Article: Q185343
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -84,3 +86,5 @@ permalink: /kb/185/Q185343/
 	
 	=============================================================================
 	
+
+{% endraw %}

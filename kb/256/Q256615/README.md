@@ -6,6 +6,8 @@ permalink: /kb/256/Q256615/
 
 ## Q256615: Setup Time-Out Attempting to Create Indexes on Large Tables
 
+{% raw %}
+
 	Article: Q256615
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -63,3 +65,5 @@ permalink: /kb/256/Q256615/
 	
 	=============================================================================
 	
+
+{% endraw %}

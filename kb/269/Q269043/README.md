@@ -6,6 +6,8 @@ permalink: /kb/269/Q269043/
 
 ## Q269043: Problems Saving or Opening Files with Extended Characters
 
+{% raw %}
+
 	Article: Q269043
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -94,3 +96,5 @@ permalink: /kb/269/Q269043/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196254/
 
 ## Q196254: XFOR: MMC Must Be Closed and Reopened after a Net Stop
 
+{% raw %}
+
 	Article: Q196254
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -57,3 +59,5 @@ permalink: /kb/196/Q196254/
 	
 	=============================================================================
 	
+
+{% endraw %}

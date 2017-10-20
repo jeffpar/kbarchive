@@ -6,6 +6,8 @@ permalink: /kb/072/Q72099/
 
 ## Q72099: Greater than 16 MB RAM in System in Windows 3.0
 
+{% raw %}
+
 	Article: Q72099
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -54,3 +56,5 @@ permalink: /kb/072/Q72099/
 	
 	=============================================================================
 	
+
+{% endraw %}

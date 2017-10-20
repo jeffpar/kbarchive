@@ -6,6 +6,8 @@ permalink: /kb/136/Q136205/
 
 ## Q136205: Results Vary for Reminders Set 2 Minutes or Less
 
+{% raw %}
+
 	Article: Q136205
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -47,3 +49,5 @@ permalink: /kb/136/Q136205/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131022/
 
 ## Q131022: INFO: Required Network Rights for the SourceSafe Directories
 
+{% raw %}
+
 	Article: Q131022
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,5.0,6.0
@@ -184,3 +186,5 @@ permalink: /kb/131/Q131022/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/244/Q244346/
 
 ## Q244346: XCON: Routing Restrictions Don't Work with % Addresses RFC 1123
 
+{% raw %}
+
 	Article: Q244346
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -54,3 +56,5 @@ permalink: /kb/244/Q244346/
 	
 	=============================================================================
 	
+
+{% endraw %}

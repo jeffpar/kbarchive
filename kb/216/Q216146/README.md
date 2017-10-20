@@ -6,6 +6,8 @@ permalink: /kb/216/Q216146/
 
 ## Q216146: HOWTO:Get Number of Windows NT Event Log Records in Visual Basic
 
+{% raw %}
+
 	Article: Q216146
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -124,3 +126,5 @@ permalink: /kb/216/Q216146/
 	
 	=============================================================================
 	
+
+{% endraw %}

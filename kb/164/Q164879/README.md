@@ -6,6 +6,8 @@ permalink: /kb/164/Q164879/
 
 ## Q164879: SMS: Server Name Not Displayed in Permissions Box
 
+{% raw %}
+
 	Article: Q164879
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -53,3 +55,5 @@ permalink: /kb/164/Q164879/
 	
 	=============================================================================
 	
+
+{% endraw %}

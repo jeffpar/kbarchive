@@ -6,6 +6,8 @@ permalink: /kb/248/Q248819/
 
 ## Q248819: IIS 4.0 Logs Incorrect Values for Bytes Sent Field in W3C
 
+{% raw %}
+
 	Article: Q248819
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/248/Q248819/
 	
 	=============================================================================
 	
+
+{% endraw %}

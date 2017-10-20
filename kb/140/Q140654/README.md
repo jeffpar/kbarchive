@@ -6,6 +6,8 @@ permalink: /kb/140/Q140654/
 
 ## Q140654: PRB: ODBC Error: Column &lt;xxx&gt; in Table &lt;yyy&gt; May Not Be Null
 
+{% raw %}
+
 	Article: Q140654
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,6.0
@@ -101,3 +103,5 @@ permalink: /kb/140/Q140654/
 	
 	=============================================================================
 	
+
+{% endraw %}

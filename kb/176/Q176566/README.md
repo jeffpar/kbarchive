@@ -6,6 +6,8 @@ permalink: /kb/176/Q176566/
 
 ## Q176566: XADM: Service Is Hung, Need to Set to Manual in Registry
 
+{% raw %}
+
 	Article: Q176566
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -96,3 +98,5 @@ permalink: /kb/176/Q176566/
 	
 	=============================================================================
 	
+
+{% endraw %}

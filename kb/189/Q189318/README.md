@@ -6,6 +6,8 @@ permalink: /kb/189/Q189318/
 
 ## Q189318: Scheduled Fax ThatIncludes Files Is Never Sent
 
+{% raw %}
+
 	Article: Q189318
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:; winnt:4.0,5.0,5.5
@@ -154,3 +156,5 @@ permalink: /kb/189/Q189318/
 	
 	=============================================================================
 	
+
+{% endraw %}

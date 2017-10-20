@@ -6,6 +6,8 @@ permalink: /kb/105/Q105273/
 
 ## Q105273: System Hangs When Booting with IBM Token Ring RPL
 
+{% raw %}
+
 	Article: Q105273
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -67,3 +69,5 @@ permalink: /kb/105/Q105273/
 	
 	=============================================================================
 	
+
+{% endraw %}

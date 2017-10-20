@@ -6,6 +6,8 @@ permalink: /kb/069/Q69045/
 
 ## Q69045: PRINT TAB Blanks Out Passed-Over Characters in BASIC
 
+{% raw %}
+
 	Article: Q69045
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -44,3 +46,5 @@ permalink: /kb/069/Q69045/
 	
 	      1234567890
 	      abcDEFghij
+
+{% endraw %}

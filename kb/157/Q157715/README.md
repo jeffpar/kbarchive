@@ -6,6 +6,8 @@ permalink: /kb/157/Q157715/
 
 ## Q157715: PRB: VSS OLE Add-in Model Not Supported by Visual Basic 4.0
 
+{% raw %}
+
 	Article: Q157715
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/157/Q157715/
 	
 	=============================================================================
 	
+
+{% endraw %}

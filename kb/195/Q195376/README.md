@@ -6,6 +6,8 @@ permalink: /kb/195/Q195376/
 
 ## Q195376: FIX: Incorrect Code Generated with /Og and /Oa or /Ow
 
+{% raw %}
+
 	Article: Q195376
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -101,3 +103,5 @@ permalink: /kb/195/Q195376/
 	
 	=============================================================================
 	
+
+{% endraw %}

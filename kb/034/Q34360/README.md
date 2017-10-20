@@ -6,6 +6,8 @@ permalink: /kb/034/Q34360/
 
 ## Q34360: Documentation Error Regarding Precedence Operators
 
+{% raw %}
+
 	Article: Q34360
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -20,3 +22,5 @@ permalink: /kb/034/Q34360/
 	   The curly brace at the top should only extend from the second line
 	to the third line; the curly brace at the bottom should start at the
 	fourth-to-last line and stop at the second-to-last line.
+
+{% endraw %}

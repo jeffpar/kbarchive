@@ -6,6 +6,8 @@ permalink: /kb/077/Q77653/
 
 ## Q77653: PRB: Bitfield Breakpoint Halts Execution on Neighboring Fields
 
+{% raw %}
+
 	Article: Q77653
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -85,3 +87,5 @@ permalink: /kb/077/Q77653/
 	
 	=============================================================================
 	
+
+{% endraw %}

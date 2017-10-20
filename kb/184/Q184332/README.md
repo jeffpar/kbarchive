@@ -6,6 +6,8 @@ permalink: /kb/184/Q184332/
 
 ## Q184332: FIX: UserControl in VB4 or VC++ 5.0 Container Causes IPF on Exit
 
+{% raw %}
+
 	Article: Q184332
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0
@@ -168,3 +170,5 @@ permalink: /kb/184/Q184332/
 	
 	=============================================================================
 	
+
+{% endraw %}

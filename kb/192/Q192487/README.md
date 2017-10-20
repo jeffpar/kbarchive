@@ -6,6 +6,8 @@ permalink: /kb/192/Q192487/
 
 ## Q192487: SMS: Logon Discovery May Not Find Windows NT Domain Controllers
 
+{% raw %}
+
 	Article: Q192487
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,2.0
@@ -51,3 +53,5 @@ permalink: /kb/192/Q192487/
 	
 	=============================================================================
 	
+
+{% endraw %}

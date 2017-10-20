@@ -6,6 +6,8 @@ permalink: /kb/178/Q178829/
 
 ## Q178829: FS98/2000: How to Use VOR2 Guage in LearJet 45, Boeing 737-400
 
+{% raw %}
+
 	Article: Q178829
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/178/Q178829/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/042/Q42949/
 
 ## Q42949: Example of Buffered Keyboard Input Using QuickBASIC
 
+{% raw %}
+
 	Article: Q42949
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -96,3 +98,5 @@ permalink: /kb/042/Q42949/
 	WEND
 	
 	END SUB
+
+{% endraw %}

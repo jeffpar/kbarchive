@@ -6,6 +6,8 @@ permalink: /kb/151/Q151783/
 
 ## Q151783: XCLN: Exchange Client Unable to Add Public Folder to PAB
 
+{% raw %}
+
 	Article: Q151783
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -55,3 +57,5 @@ permalink: /kb/151/Q151783/
 	
 	=============================================================================
 	
+
+{% endraw %}

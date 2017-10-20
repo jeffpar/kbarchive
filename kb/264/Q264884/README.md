@@ -6,6 +6,8 @@ permalink: /kb/264/Q264884/
 
 ## Q264884: SMS: Windows 2000 Client Video Cannot Be Accelerated
 
+{% raw %}
+
 	Article: Q264884
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -66,3 +68,5 @@ permalink: /kb/264/Q264884/
 	
 	=============================================================================
 	
+
+{% endraw %}

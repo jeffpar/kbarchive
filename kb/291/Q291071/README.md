@@ -6,6 +6,8 @@ permalink: /kb/291/Q291071/
 
 ## Q291071: Sending File Attachments With MSN Explorer's Online Buddies Or W
 
+{% raw %}
+
 	Article: Q291071
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -77,3 +79,5 @@ permalink: /kb/291/Q291071/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/039/Q39381/
 
 ## Q39381: BASIC Supports MASM 5.10 Update .MODEL and PROC Extensions
 
+{% raw %}
+
 	Article: Q39381
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -97,3 +99,5 @@ permalink: /kb/039/Q39381/
 	       ret   4            ; Return and restore 4 bytes.
 	Power2 endp
 	       end
+
+{% endraw %}

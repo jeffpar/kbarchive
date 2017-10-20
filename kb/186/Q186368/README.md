@@ -6,6 +6,8 @@ permalink: /kb/186/Q186368/
 
 ## Q186368: FIX: GPF Issuing QUIT from a Form Run in the Form Designer
 
+{% raw %}
+
 	Article: Q186368
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -92,3 +94,5 @@ permalink: /kb/186/Q186368/
 	
 	=============================================================================
 	
+
+{% endraw %}

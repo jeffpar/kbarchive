@@ -6,6 +6,8 @@ permalink: /kb/125/Q125415/
 
 ## Q125415: PROGRAMMING WINDOWS 3.1: 3rd Edition Corrections
 
+{% raw %}
+
 	Article: Q125415
 	Product(s): Microsoft Press
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/125/Q125415/
 	
 	=============================================================================
 	
+
+{% endraw %}

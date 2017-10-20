@@ -6,6 +6,8 @@ permalink: /kb/134/Q134950/
 
 ## Q134950: X400: Err Msg: Translate to Local Form Failed on Message:
 
+{% raw %}
+
 	Article: Q134950
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -56,3 +58,5 @@ permalink: /kb/134/Q134950/
 	
 	=============================================================================
 	
+
+{% endraw %}

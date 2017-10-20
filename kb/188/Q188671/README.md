@@ -6,6 +6,8 @@ permalink: /kb/188/Q188671/
 
 ## Q188671: XADM: How to Determine When Permissions Have Been Altered
 
+{% raw %}
+
 	Article: Q188671
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -87,3 +89,5 @@ permalink: /kb/188/Q188671/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/225/Q225099/
 
 ## Q225099: FIX: Memory Access Violation Caused by Repeated Reallocs
 
+{% raw %}
+
 	Article: Q225099
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -216,3 +218,5 @@ permalink: /kb/225/Q225099/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/264/Q264126/
 
 ## Q264126: XADM: Cannot Send SSL Messages After Installing Certificate
 
+{% raw %}
+
 	Article: Q264126
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -56,3 +58,5 @@ permalink: /kb/264/Q264126/
 	
 	=============================================================================
 	
+
+{% endraw %}

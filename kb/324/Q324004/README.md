@@ -6,6 +6,8 @@ permalink: /kb/324/Q324004/
 
 ## Q324004: Games: &quot;SynthCore License Is Invalid&quot; Err Msg When Starting Game
 
+{% raw %}
+
 	Article: Q324004
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -83,3 +85,5 @@ permalink: /kb/324/Q324004/
 	
 	=============================================================================
 	
+
+{% endraw %}

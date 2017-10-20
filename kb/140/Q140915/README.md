@@ -6,6 +6,8 @@ permalink: /kb/140/Q140915/
 
 ## Q140915: XNF List Box Only Shows 2 Entries
 
+{% raw %}
+
 	Article: Q140915
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -44,3 +46,5 @@ permalink: /kb/140/Q140915/
 	
 	=============================================================================
 	
+
+{% endraw %}

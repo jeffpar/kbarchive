@@ -6,6 +6,8 @@ permalink: /kb/298/Q298340/
 
 ## Q298340: MS01-044: Patch Available for WebDAV Denial of Service
 
+{% raw %}
+
 	Article: Q298340
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -107,3 +109,5 @@ permalink: /kb/298/Q298340/
 	
 	=============================================================================
 	
+
+{% endraw %}

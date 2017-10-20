@@ -6,6 +6,8 @@ permalink: /kb/165/Q165708/
 
 ## Q165708: Trap in SNAPrint when Stopping Logical Printer
 
+{% raw %}
+
 	Article: Q165708
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -87,3 +89,5 @@ permalink: /kb/165/Q165708/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/279/Q279817/
 
 ## Q279817: Motocross Madness 2: Known Video Issues
 
+{% raw %}
+
 	Article: Q279817
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -104,3 +106,5 @@ permalink: /kb/279/Q279817/
 	
 	=============================================================================
 	
+
+{% endraw %}

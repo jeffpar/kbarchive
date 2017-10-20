@@ -6,6 +6,8 @@ permalink: /kb/164/Q164844/
 
 ## Q164844: XCLN: Meeting Request Booked on Wrong Calendar If Auto-Forwarded
 
+{% raw %}
+
 	Article: Q164844
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0a; winnt:3.5,3.51
@@ -71,3 +73,5 @@ permalink: /kb/164/Q164844/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161094/
 
 ## Q161094: HOWTO: Use the Procedure Attributes Dialog Box
 
+{% raw %}
+
 	Article: Q161094
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -146,3 +148,5 @@ permalink: /kb/161/Q161094/
 	
 	=============================================================================
 	
+
+{% endraw %}

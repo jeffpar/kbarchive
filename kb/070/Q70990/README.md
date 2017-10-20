@@ -6,6 +6,8 @@ permalink: /kb/070/Q70990/
 
 ## Q70990: WD97: Formula in Table Produces Error in Word
 
+{% raw %}
+
 	Article: Q70990
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -60,3 +62,5 @@ permalink: /kb/070/Q70990/
 	
 	=============================================================================
 	
+
+{% endraw %}

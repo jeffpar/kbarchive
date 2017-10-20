@@ -6,6 +6,8 @@ permalink: /kb/129/Q129799/
 
 ## Q129799: BUG: Data Control Errors Do Not Populate Error Object
 
+{% raw %}
+
 	Article: Q129799
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -114,3 +116,5 @@ permalink: /kb/129/Q129799/
 	
 	=============================================================================
 	
+
+{% endraw %}

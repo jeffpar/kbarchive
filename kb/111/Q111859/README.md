@@ -6,6 +6,8 @@ permalink: /kb/111/Q111859/
 
 ## Q111859: PC WSPlus: Lost Connection to LAN Manager or NetWare Server
 
+{% raw %}
+
 	Article: Q111859
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -95,3 +97,5 @@ permalink: /kb/111/Q111859/
 	
 	=============================================================================
 	
+
+{% endraw %}

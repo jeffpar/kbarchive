@@ -6,6 +6,8 @@ permalink: /kb/129/Q129567/
 
 ## Q129567: WSPlus: Err Msg: Your Login Credentials Do Not Match
 
+{% raw %}
+
 	Article: Q129567
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -74,3 +76,5 @@ permalink: /kb/129/Q129567/
 	
 	=============================================================================
 	
+
+{% endraw %}

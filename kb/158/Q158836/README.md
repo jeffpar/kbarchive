@@ -6,6 +6,8 @@ permalink: /kb/158/Q158836/
 
 ## Q158836: Compaq USB Camera May Not Work Properly on Other Computers
 
+{% raw %}
+
 	Article: Q158836
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -52,3 +54,5 @@ permalink: /kb/158/Q158836/
 	
 	=============================================================================
 	
+
+{% endraw %}

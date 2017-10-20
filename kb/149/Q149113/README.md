@@ -6,6 +6,8 @@ permalink: /kb/149/Q149113/
 
 ## Q149113: AT Gen: First Contact Form for Schedule+ for AppleTalk Network
 
+{% raw %}
+
 	Article: Q149113
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/149/Q149113/
 	
 	=============================================================================
 	
+
+{% endraw %}

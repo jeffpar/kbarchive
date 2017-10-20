@@ -6,6 +6,8 @@ permalink: /kb/100/Q100815/
 
 ## Q100815: FoxCentral Default Directory Doesn't Affect FoxBASE+'s
 
+{% raw %}
+
 	Article: Q100815
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -44,3 +46,5 @@ permalink: /kb/100/Q100815/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197441/
 
 ## Q197441: WD97: &quot;Find Whole Words Only&quot; and &quot;Match Case&quot; Are Unavailable
 
+{% raw %}
+
 	Article: Q197441
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/197/Q197441/
 	
 	=============================================================================
 	
+
+{% endraw %}

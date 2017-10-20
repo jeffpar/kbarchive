@@ -6,6 +6,8 @@ permalink: /kb/163/Q163098/
 
 ## Q163098: WD97: Run-Time Error 1517 Running Converted WordBasic Macro
 
+{% raw %}
+
 	Article: Q163098
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -125,3 +127,5 @@ permalink: /kb/163/Q163098/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111946/
 
 ## Q111946: X400: Slow Message Transfer
 
+{% raw %}
+
 	Article: Q111946
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.2
@@ -98,3 +100,5 @@ permalink: /kb/111/Q111946/
 	
 	=============================================================================
 	
+
+{% endraw %}

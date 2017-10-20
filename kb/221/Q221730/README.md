@@ -6,6 +6,8 @@ permalink: /kb/221/Q221730/
 
 ## Q221730: FIX: Enabled_Assign Fires Incorrectly for Container in Container
 
+{% raw %}
+
 	Article: Q221730
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -120,3 +122,5 @@ permalink: /kb/221/Q221730/
 	
 	=============================================================================
 	
+
+{% endraw %}

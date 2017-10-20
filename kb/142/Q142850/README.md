@@ -6,6 +6,8 @@ permalink: /kb/142/Q142850/
 
 ## Q142850: Administering IIS over the Internet
 
+{% raw %}
+
 	Article: Q142850
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -101,3 +103,5 @@ permalink: /kb/142/Q142850/
 	
 	=============================================================================
 	
+
+{% endraw %}

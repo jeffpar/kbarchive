@@ -6,6 +6,8 @@ permalink: /kb/156/Q156657/
 
 ## Q156657: Deadly Tide: Joystick, Hardware, and System Information
 
+{% raw %}
+
 	Article: Q156657
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -84,3 +86,5 @@ permalink: /kb/156/Q156657/
 	
 	=============================================================================
 	
+
+{% endraw %}

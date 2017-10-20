@@ -6,6 +6,8 @@ permalink: /kb/179/Q179739/
 
 ## Q179739: XCON: T.61 Body Part of Incoming Messages Not Handled Correctly
 
+{% raw %}
+
 	Article: Q179739
 	Product(s): Microsoft Exchange
 	Version(s): 5.0 SP2,5.5
@@ -75,3 +77,5 @@ permalink: /kb/179/Q179739/
 	
 	=============================================================================
 	
+
+{% endraw %}

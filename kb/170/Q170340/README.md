@@ -6,6 +6,8 @@ permalink: /kb/170/Q170340/
 
 ## Q170340: FIX: Debugging ActiveX Server in IDE Causes Application Error
 
+{% raw %}
+
 	Article: Q170340
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -119,3 +121,5 @@ permalink: /kb/170/Q170340/
 	
 	=============================================================================
 	
+
+{% endraw %}

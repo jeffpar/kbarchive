@@ -6,6 +6,8 @@ permalink: /kb/100/Q100377/
 
 ## Q100377: FIX: F1001: confold.c Line 253, Negative Integer Exponent
 
+{% raw %}
+
 	Article: Q100377
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -110,3 +112,5 @@ permalink: /kb/100/Q100377/
 	
 	=============================================================================
 	
+
+{% endraw %}

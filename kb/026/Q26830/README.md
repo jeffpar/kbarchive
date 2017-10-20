@@ -6,6 +6,8 @@ permalink: /kb/026/Q26830/
 
 ## Q26830: FIX: Code Segment Defined within a Procedure
 
+{% raw %}
+
 	Article: Q26830
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.0a,5.1,5.1a
@@ -48,3 +50,5 @@ permalink: /kb/026/Q26830/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86006/
 
 ## Q86006: DOCERR: DdeUnaccessData Function Documented Incorrectly
 
+{% raw %}
+
 	Article: Q86006
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -41,3 +43,5 @@ permalink: /kb/086/Q86006/
 	
 	=============================================================================
 	
+
+{% endraw %}

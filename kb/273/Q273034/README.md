@@ -6,6 +6,8 @@ permalink: /kb/273/Q273034/
 
 ## Q273034: Cannot Share Printer if Spooler Service Not Using System Account
 
+{% raw %}
+
 	Article: Q273034
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -58,3 +60,5 @@ permalink: /kb/273/Q273034/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134231/
 
 ## Q134231: SNA Server Setup Resets CA400 Settings in WNAP
 
+{% raw %}
+
 	Article: Q134231
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -67,3 +69,5 @@ permalink: /kb/134/Q134231/
 	
 	=============================================================================
 	
+
+{% endraw %}

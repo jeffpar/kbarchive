@@ -6,6 +6,8 @@ permalink: /kb/124/Q124321/
 
 ## Q124321: BUG: SQLGetData Returns SQL_SUCCESS on a Binary Column
 
+{% raw %}
+
 	Article: Q124321
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -85,3 +87,5 @@ permalink: /kb/124/Q124321/
 	
 	=============================================================================
 	
+
+{% endraw %}

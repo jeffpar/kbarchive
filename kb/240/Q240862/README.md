@@ -6,6 +6,8 @@ permalink: /kb/240/Q240862/
 
 ## Q240862: FIX: C2555 On Virtual Functions with Covariant Return Types
 
+{% raw %}
+
 	Article: Q240862
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -98,3 +100,5 @@ permalink: /kb/240/Q240862/
 	
 	=============================================================================
 	
+
+{% endraw %}

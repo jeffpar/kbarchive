@@ -6,6 +6,8 @@ permalink: /kb/150/Q150512/
 
 ## Q150512: Client Setup is Unable To Validate Windows Path
 
+{% raw %}
+
 	Article: Q150512
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -68,3 +70,5 @@ permalink: /kb/150/Q150512/
 	
 	=============================================================================
 	
+
+{% endraw %}

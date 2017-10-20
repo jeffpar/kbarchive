@@ -6,6 +6,8 @@ permalink: /kb/106/Q106616/
 
 ## Q106616: No Sound During Fly-By in Multimedia Golf
 
+{% raw %}
+
 	Article: Q106616
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -126,3 +128,5 @@ permalink: /kb/106/Q106616/
 	
 	=============================================================================
 	
+
+{% endraw %}

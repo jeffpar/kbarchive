@@ -6,6 +6,8 @@ permalink: /kb/112/Q112715/
 
 ## Q112715: Sound Boards and Compressed Audio Support
 
+{% raw %}
+
 	Article: Q112715
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a,2.0
@@ -166,3 +168,5 @@ permalink: /kb/112/Q112715/
 	
 	=============================================================================
 	
+
+{% endraw %}

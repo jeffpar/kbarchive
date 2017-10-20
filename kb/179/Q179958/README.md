@@ -6,6 +6,8 @@ permalink: /kb/179/Q179958/
 
 ## Q179958: When to Use &quot;Already Verified Authentication&quot;
 
+{% raw %}
+
 	Article: Q179958
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0
@@ -78,3 +80,5 @@ permalink: /kb/179/Q179958/
 	
 	=============================================================================
 	
+
+{% endraw %}

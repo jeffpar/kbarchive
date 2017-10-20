@@ -6,6 +6,8 @@ permalink: /kb/104/Q104736/
 
 ## Q104736: System Hangs When DoubleDisk Gold Is Installed
 
+{% raw %}
+
 	Article: Q104736
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2
@@ -61,3 +63,5 @@ permalink: /kb/104/Q104736/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188855/
 
 ## Q188855: Security Privilege Must be Enabled to View Security Event Log
 
+{% raw %}
+
 	Article: Q188855
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -84,3 +86,5 @@ permalink: /kb/188/Q188855/
 	
 	=============================================================================
 	
+
+{% endraw %}

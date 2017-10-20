@@ -6,6 +6,8 @@ permalink: /kb/139/Q139294/
 
 ## Q139294: FIX: Replace &quot;Beginning of Line&quot; Skips Blank Lines
 
+{% raw %}
+
 	Article: Q139294
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -79,3 +81,5 @@ permalink: /kb/139/Q139294/
 	
 	=============================================================================
 	
+
+{% endraw %}

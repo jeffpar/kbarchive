@@ -6,6 +6,8 @@ permalink: /kb/195/Q195461/
 
 ## Q195461: How to Set Up a Logon Script Only for Terminal Server Users
 
+{% raw %}
+
 	Article: Q195461
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/195/Q195461/
 	
 	=============================================================================
 	
+
+{% endraw %}

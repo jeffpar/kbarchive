@@ -6,6 +6,8 @@ permalink: /kb/042/Q42471/
 
 ## Q42471: How to Scroll Text in Separately Defined Windows in QuickBASIC
 
+{% raw %}
+
 	Article: Q42471
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -206,3 +208,5 @@ permalink: /kb/042/Q42471/
 	    PRINT CHR$(219)
 	  NEXT I%
 	END SUB
+
+{% endraw %}

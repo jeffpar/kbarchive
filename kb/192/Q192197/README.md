@@ -6,6 +6,8 @@ permalink: /kb/192/Q192197/
 
 ## Q192197: FIX: Beautify May Not Uppercase Extended ASCII Characters
 
+{% raw %}
+
 	Article: Q192197
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -96,3 +98,5 @@ permalink: /kb/192/Q192197/
 	
 	=============================================================================
 	
+
+{% endraw %}

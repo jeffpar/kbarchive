@@ -6,6 +6,8 @@ permalink: /kb/158/Q158978/
 
 ## Q158978: FIX: SQL Debugger Stops Working
 
+{% raw %}
+
 	Article: Q158978
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -76,3 +78,5 @@ permalink: /kb/158/Q158978/
 	
 	=============================================================================
 	
+
+{% endraw %}

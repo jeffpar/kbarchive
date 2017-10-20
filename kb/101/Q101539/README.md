@@ -6,6 +6,8 @@ permalink: /kb/101/Q101539/
 
 ## Q101539: PC Forms: Using Visual Basic OLE 2.0 Control
 
+{% raw %}
+
 	Article: Q101539
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -124,3 +126,5 @@ permalink: /kb/101/Q101539/
 	
 	=============================================================================
 	
+
+{% endraw %}

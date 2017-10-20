@@ -6,6 +6,8 @@ permalink: /kb/110/Q110947/
 
 ## Q110947: Diamond Viper VLB Video Adapter Driver Fails To Load
 
+{% raw %}
+
 	Article: Q110947
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -46,3 +48,5 @@ permalink: /kb/110/Q110947/
 	
 	=============================================================================
 	
+
+{% endraw %}

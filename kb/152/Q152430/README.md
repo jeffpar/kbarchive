@@ -6,6 +6,8 @@ permalink: /kb/152/Q152430/
 
 ## Q152430: XCLN: Exchange NT Client will not Allow Terminal Window
 
+{% raw %}
+
 	Article: Q152430
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,97
@@ -63,3 +65,5 @@ permalink: /kb/152/Q152430/
 	
 	=============================================================================
 	
+
+{% endraw %}

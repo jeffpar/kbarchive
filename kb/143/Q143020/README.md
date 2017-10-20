@@ -6,6 +6,8 @@ permalink: /kb/143/Q143020/
 
 ## Q143020: PPT7: White Shadows Overlay Text with HP LaserJet 4
 
+{% raw %}
+
 	Article: Q143020
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -75,3 +77,5 @@ permalink: /kb/143/Q143020/
 	
 	=============================================================================
 	
+
+{% endraw %}

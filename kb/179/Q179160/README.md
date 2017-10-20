@@ -6,6 +6,8 @@ permalink: /kb/179/Q179160/
 
 ## Q179160: Games: General Protection Fault in Module Dibeng.dll
 
+{% raw %}
+
 	Article: Q179160
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -101,3 +103,5 @@ permalink: /kb/179/Q179160/
 	
 	=============================================================================
 	
+
+{% endraw %}

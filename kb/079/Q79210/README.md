@@ -6,6 +6,8 @@ permalink: /kb/079/Q79210/
 
 ## Q79210: DOCERR: Extended Keyboard Detection Is Documented Incorrectly
 
+{% raw %}
+
 	Article: Q79210
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -67,3 +69,5 @@ permalink: /kb/079/Q79210/
 	
 	=============================================================================
 	
+
+{% endraw %}

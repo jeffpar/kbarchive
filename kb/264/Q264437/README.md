@@ -6,6 +6,8 @@ permalink: /kb/264/Q264437/
 
 ## Q264437: XADM: Event 1088 and Error 1276 Occur After Reinstalling w. DN
 
+{% raw %}
+
 	Article: Q264437
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.0 SP1,5.0 SP2,5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -117,3 +119,5 @@ permalink: /kb/264/Q264437/
 	
 	=============================================================================
 	
+
+{% endraw %}

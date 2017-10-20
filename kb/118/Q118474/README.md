@@ -6,6 +6,8 @@ permalink: /kb/118/Q118474/
 
 ## Q118474: Multimedia: Not Enough Memory to Play Some Videos
 
+{% raw %}
+
 	Article: Q118474
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -63,3 +65,5 @@ permalink: /kb/118/Q118474/
 	
 	=============================================================================
 	
+
+{% endraw %}

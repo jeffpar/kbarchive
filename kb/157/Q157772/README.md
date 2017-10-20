@@ -6,6 +6,8 @@ permalink: /kb/157/Q157772/
 
 ## Q157772: WD97: Bitmap Icon Is Lost After Saving to RTF
 
+{% raw %}
+
 	Article: Q157772
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -67,3 +69,5 @@ permalink: /kb/157/Q157772/
 	
 	=============================================================================
 	
+
+{% endraw %}

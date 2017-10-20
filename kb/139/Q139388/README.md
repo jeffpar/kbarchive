@@ -6,6 +6,8 @@ permalink: /kb/139/Q139388/
 
 ## Q139388: HOWTO: Create a Thermometer Bar in Visual FoxPro
 
+{% raw %}
+
 	Article: Q139388
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -175,3 +177,5 @@ permalink: /kb/139/Q139388/
 	
 	=============================================================================
 	
+
+{% endraw %}

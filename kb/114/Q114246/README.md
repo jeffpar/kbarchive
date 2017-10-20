@@ -6,6 +6,8 @@ permalink: /kb/114/Q114246/
 
 ## Q114246: PC Adm: Effects of Changing Network or Postoffice Names
 
+{% raw %}
+
 	Article: Q114246
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -90,3 +92,5 @@ permalink: /kb/114/Q114246/
 	
 	=============================================================================
 	
+
+{% endraw %}

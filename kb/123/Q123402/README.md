@@ -6,6 +6,8 @@ permalink: /kb/123/Q123402/
 
 ## Q123402: Microsoft Office Manager ToolTips Don't Appear
 
+{% raw %}
+
 	Article: Q123402
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/123/Q123402/
 	
 	=============================================================================
 	
+
+{% endraw %}

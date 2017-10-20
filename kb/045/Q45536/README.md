@@ -6,6 +6,8 @@ permalink: /kb/045/Q45536/
 
 ## Q45536: FIX: LINK 5.02 Should Not Be Used with ILINK 1.1
 
+{% raw %}
+
 	Article: Q45536
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:5.02
@@ -70,3 +72,5 @@ permalink: /kb/045/Q45536/
 	
 	=============================================================================
 	
+
+{% endraw %}

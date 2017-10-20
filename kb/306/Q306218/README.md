@@ -6,6 +6,8 @@ permalink: /kb/306/Q306218/
 
 ## Q306218: Err Msg: &quot;Message too large&quot; When Sending Attachments Smaller Th
 
+{% raw %}
+
 	Article: Q306218
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -65,3 +67,5 @@ permalink: /kb/306/Q306218/
 	
 	=============================================================================
 	
+
+{% endraw %}

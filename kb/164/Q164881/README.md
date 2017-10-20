@@ -6,6 +6,8 @@ permalink: /kb/164/Q164881/
 
 ## Q164881: PERL 5 May Cause a Dr. Watson Access Violation in Inetinfo.exe
 
+{% raw %}
+
 	Article: Q164881
 	Product(s): Internet Information Server
 	Version(s): WinNT:2.0,3.0
@@ -63,3 +65,5 @@ permalink: /kb/164/Q164881/
 	
 	=============================================================================
 	
+
+{% endraw %}

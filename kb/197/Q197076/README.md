@@ -6,6 +6,8 @@ permalink: /kb/197/Q197076/
 
 ## Q197076: INFO: Controlling Anti-aliased Text via the LOGFONT Structure
 
+{% raw %}
+
 	Article: Q197076
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95,98; winnt:4.0
@@ -100,3 +102,5 @@ permalink: /kb/197/Q197076/
 	
 	=============================================================================
 	
+
+{% endraw %}

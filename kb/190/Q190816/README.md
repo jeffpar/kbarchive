@@ -6,6 +6,8 @@ permalink: /kb/190/Q190816/
 
 ## Q190816: PRB: Component Gallery - Installed ActiveX Controls Refresh
 
+{% raw %}
+
 	Article: Q190816
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -81,3 +83,5 @@ permalink: /kb/190/Q190816/
 	
 	=============================================================================
 	
+
+{% endraw %}

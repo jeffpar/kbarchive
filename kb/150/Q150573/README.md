@@ -6,6 +6,8 @@ permalink: /kb/150/Q150573/
 
 ## Q150573: FIX: C2084 When Template Class Constructor Has No Body
 
+{% raw %}
+
 	Article: Q150573
 	Product(s): Microsoft C Compiler
 	Version(s): 4.1 4.2
@@ -104,3 +106,5 @@ permalink: /kb/150/Q150573/
 	
 	=============================================================================
 	
+
+{% endraw %}

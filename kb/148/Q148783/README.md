@@ -6,6 +6,8 @@ permalink: /kb/148/Q148783/
 
 ## Q148783: Poor Sound Quality with Future Domain 850-Series Controllers
 
+{% raw %}
+
 	Article: Q148783
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -70,3 +72,5 @@ permalink: /kb/148/Q148783/
 	
 	=============================================================================
 	
+
+{% endraw %}

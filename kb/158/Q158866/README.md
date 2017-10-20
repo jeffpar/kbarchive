@@ -6,6 +6,8 @@ permalink: /kb/158/Q158866/
 
 ## Q158866: How to Manually Create an Emergency Repair Disk
 
+{% raw %}
+
 	Article: Q158866
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.51,4.0
@@ -73,3 +75,5 @@ permalink: /kb/158/Q158866/
 	
 	=============================================================================
 	
+
+{% endraw %}

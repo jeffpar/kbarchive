@@ -6,6 +6,8 @@ permalink: /kb/140/Q140692/
 
 ## Q140692: Scenes 2.0: Invalid Dynamic Link Call Error
 
+{% raw %}
+
 	Article: Q140692
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 2.00
@@ -79,3 +81,5 @@ permalink: /kb/140/Q140692/
 	
 	=============================================================================
 	
+
+{% endraw %}

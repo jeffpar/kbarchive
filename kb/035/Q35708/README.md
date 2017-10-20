@@ -6,6 +6,8 @@ permalink: /kb/035/Q35708/
 
 ## Q35708: Raw.exe Sends Binary Data to Printer w/Device Driver
 
+{% raw %}
+
 	Article: Q35708
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -66,3 +68,5 @@ permalink: /kb/035/Q35708/
 	
 	=============================================================================
 	
+
+{% endraw %}

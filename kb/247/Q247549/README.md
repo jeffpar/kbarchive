@@ -6,6 +6,8 @@ permalink: /kb/247/Q247549/
 
 ## Q247549: FS2000: No &quot;Land Me&quot; Command in Flight Simulator 2000
 
+{% raw %}
+
 	Article: Q247549
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -45,3 +47,5 @@ permalink: /kb/247/Q247549/
 	
 	=============================================================================
 	
+
+{% endraw %}

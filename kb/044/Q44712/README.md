@@ -6,6 +6,8 @@ permalink: /kb/044/Q44712/
 
 ## Q44712: Mac Wkst: Identifying Which Users Are Logged On Local Server
 
+{% raw %}
+
 	Article: Q44712
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -53,3 +55,5 @@ permalink: /kb/044/Q44712/
 	
 	=============================================================================
 	
+
+{% endraw %}

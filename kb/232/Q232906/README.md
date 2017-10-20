@@ -6,6 +6,8 @@ permalink: /kb/232/Q232906/
 
 ## Q232906: WRQ NFS Client Cannot Connect to NFS File System Using UNC
 
+{% raw %}
+
 	Article: Q232906
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -58,3 +60,5 @@ permalink: /kb/232/Q232906/
 	
 	=============================================================================
 	
+
+{% endraw %}

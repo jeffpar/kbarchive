@@ -6,6 +6,8 @@ permalink: /kb/138/Q138986/
 
 ## Q138986: 3D Movie Maker: Plane/Actor Flips Over When Raising or Lowering
 
+{% raw %}
+
 	Article: Q138986
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/138/Q138986/
 	
 	=============================================================================
 	
+
+{% endraw %}

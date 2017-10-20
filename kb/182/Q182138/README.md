@@ -6,6 +6,8 @@ permalink: /kb/182/Q182138/
 
 ## Q182138: PRB: MVCOUNT May Cause Illegal Operation Error in VFP 5.0x
 
+{% raw %}
+
 	Article: Q182138
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -91,3 +93,5 @@ permalink: /kb/182/Q182138/
 	
 	=============================================================================
 	
+
+{% endraw %}

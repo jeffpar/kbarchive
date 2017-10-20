@@ -6,6 +6,8 @@ permalink: /kb/242/Q242804/
 
 ## Q242804: FS2000/CFS: Cannot Kill Engine by Turning Off Fuel Tank Selector
 
+{% raw %}
+
 	Article: Q242804
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -77,3 +79,5 @@ permalink: /kb/242/Q242804/
 	
 	=============================================================================
 	
+
+{% endraw %}

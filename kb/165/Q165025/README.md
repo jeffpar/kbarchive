@@ -6,6 +6,8 @@ permalink: /kb/165/Q165025/
 
 ## Q165025: 16-bit Apps Always Return a Retcode of 0 When Run As a Service
 
+{% raw %}
+
 	Article: Q165025
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -58,3 +60,5 @@ permalink: /kb/165/Q165025/
 	
 	=============================================================================
 	
+
+{% endraw %}

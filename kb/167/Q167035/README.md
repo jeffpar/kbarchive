@@ -6,6 +6,8 @@ permalink: /kb/167/Q167035/
 
 ## Q167035: Print Queue May Stop Responding When Running LPR on Server
 
+{% raw %}
+
 	Article: Q167035
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP5,4.0
@@ -82,3 +84,5 @@ permalink: /kb/167/Q167035/
 	
 	=============================================================================
 	
+
+{% endraw %}

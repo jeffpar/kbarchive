@@ -6,6 +6,8 @@ permalink: /kb/117/Q117709/
 
 ## Q117709: PRB: BROWSE FIELDS Results Inconsistent in 1-to-Many Relation
 
+{% raw %}
+
 	Article: Q117709
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5x,2.6,2.6a; WINDOWS:2.5x,2.6,2.6a,3.0
@@ -117,3 +119,5 @@ permalink: /kb/117/Q117709/
 	
 	=============================================================================
 	
+
+{% endraw %}

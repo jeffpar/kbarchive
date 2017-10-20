@@ -6,6 +6,8 @@ permalink: /kb/111/Q111951/
 
 ## Q111951: PRB: System Errors When Using SET LIBRARY TO in FoxPro for Mac
 
+{% raw %}
+
 	Article: Q111951
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5b,2.5c,2.6a,3.0b
@@ -96,3 +98,5 @@ permalink: /kb/111/Q111951/
 	
 	=============================================================================
 	
+
+{% endraw %}

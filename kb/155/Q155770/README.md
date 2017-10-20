@@ -6,6 +6,8 @@ permalink: /kb/155/Q155770/
 
 ## Q155770: FP: Registration Form not Supported on IIS Web Server
 
+{% raw %}
+
 	Article: Q155770
 	Product(s): Word Front Page
 	Version(s): ; MACINTOSH:1.0; WINDOWS:1.1
@@ -70,3 +72,5 @@ permalink: /kb/155/Q155770/
 	
 	=============================================================================
 	
+
+{% endraw %}

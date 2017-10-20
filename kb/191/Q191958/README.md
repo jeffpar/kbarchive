@@ -6,6 +6,8 @@ permalink: /kb/191/Q191958/
 
 ## Q191958: SMS: SMS_Site_Config_Manager Appears to Stop Responding
 
+{% raw %}
+
 	Article: Q191958
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -64,3 +66,5 @@ permalink: /kb/191/Q191958/
 	
 	=============================================================================
 	
+
+{% endraw %}

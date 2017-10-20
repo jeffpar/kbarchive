@@ -6,6 +6,8 @@ permalink: /kb/024/Q24710/
 
 ## Q24710: Erratic Cursor Movement Using 123 Mouse Menu
 
+{% raw %}
+
 	Article: Q24710
 	Product(s): See article
 	Version(s): 4.x 5.00
@@ -21,3 +23,5 @@ permalink: /kb/024/Q24710/
 	
 	If you own Mouse Version 6.00, use the MS123-2.COM found on your
 	Expert Mouse Menus disk. This supersedes the 123.MNU file.
+
+{% endraw %}

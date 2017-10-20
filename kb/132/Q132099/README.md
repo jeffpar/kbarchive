@@ -6,6 +6,8 @@ permalink: /kb/132/Q132099/
 
 ## Q132099: PC NTMMTA: Cannot Use NT System Account with NT MMTA
 
+{% raw %}
+
 	Article: Q132099
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -87,3 +89,5 @@ permalink: /kb/132/Q132099/
 	
 	=============================================================================
 	
+
+{% endraw %}

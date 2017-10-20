@@ -6,6 +6,8 @@ permalink: /kb/170/Q170157/
 
 ## Q170157: INFO: VB 6.0 Readme Part 11: Miscellaneous Issues
 
+{% raw %}
+
 	Article: Q170157
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -153,3 +155,5 @@ permalink: /kb/170/Q170157/
 	
 	=============================================================================
 	
+
+{% endraw %}

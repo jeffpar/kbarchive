@@ -6,6 +6,8 @@ permalink: /kb/147/Q147496/
 
 ## Q147496: SMS Admin Query Operators Not Available in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q147496
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.1,4.0
@@ -55,3 +57,5 @@ permalink: /kb/147/Q147496/
 	
 	=============================================================================
 	
+
+{% endraw %}

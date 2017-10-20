@@ -6,6 +6,8 @@ permalink: /kb/057/Q57888/
 
 ## Q57888: INFO: Return Value for getch() on Extended Characters
 
+{% raw %}
+
 	Article: Q57888
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:5.1,6.0,6.00a,6.00ax,7.0; WINDOWS:1.0,1.5; WINDOWS NT:1.0,2.0,2.1,4.0,5.0
@@ -70,3 +72,5 @@ permalink: /kb/057/Q57888/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150853/
 
 ## Q150853: Addusers.Exe Allows Group Names Greater Than 21 Characters
 
+{% raw %}
+
 	Article: Q150853
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -59,3 +61,5 @@ permalink: /kb/150/Q150853/
 	
 	=============================================================================
 	
+
+{% endraw %}

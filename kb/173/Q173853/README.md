@@ -6,6 +6,8 @@ permalink: /kb/173/Q173853/
 
 ## Q173853: PRB: Error 32002 &quot;Unspecified Error&quot; When Adding an Attachment
 
+{% raw %}
+
 	Article: Q173853
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -60,3 +62,5 @@ permalink: /kb/173/Q173853/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179195/
 
 ## Q179195: Coolbar ActiveX Control and Sample Project
 
+{% raw %}
+
 	Article: Q179195
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0,5.0
@@ -71,3 +73,5 @@ permalink: /kb/179/Q179195/
 	
 	=============================================================================
 	
+
+{% endraw %}

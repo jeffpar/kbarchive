@@ -6,6 +6,8 @@ permalink: /kb/173/Q173252/
 
 ## Q173252: FIX: CArchive::GetObjectSchema Returns Incorrect Schema
 
+{% raw %}
+
 	Article: Q173252
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS NT:4.2,5.0
@@ -94,3 +96,5 @@ permalink: /kb/173/Q173252/
 	
 	=============================================================================
 	
+
+{% endraw %}

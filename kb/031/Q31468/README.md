@@ -6,6 +6,8 @@ permalink: /kb/031/Q31468/
 
 ## Q31468: PATCH87 Gives &quot;Cannot Open IO.SYS&quot; Message
 
+{% raw %}
+
 	Article: Q31468
 	Product(s): See article
 	Version(s): 5.10
@@ -19,3 +21,5 @@ permalink: /kb/031/Q31468/
 	message, then you must contact the original equipment manufacturer
 	(OEM) for more information. It is likely that the IO.SYS file has been
 	renamed in the provided version of DOS.
+
+{% endraw %}

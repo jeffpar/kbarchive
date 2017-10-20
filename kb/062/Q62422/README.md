@@ -6,6 +6,8 @@ permalink: /kb/062/Q62422/
 
 ## Q62422: C4047 Incorrectly Generated on Void Pointer Assignment
 
+{% raw %}
+
 	Article: Q62422
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -52,3 +54,5 @@ permalink: /kb/062/Q62422/
 	Microsoft has confirmed this to be a problem with C version 6.00. We
 	are researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

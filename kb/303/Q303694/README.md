@@ -6,6 +6,8 @@ permalink: /kb/303/Q303694/
 
 ## Q303694: GetLoginChallenge Does Not Pass Back AuthHeader in JavaScript
 
+{% raw %}
+
 	Article: Q303694
 	Product(s): Microsoft Developer Network
 	Version(s): 2.0
@@ -53,3 +55,5 @@ permalink: /kb/303/Q303694/
 	
 	=============================================================================
 	
+
+{% endraw %}

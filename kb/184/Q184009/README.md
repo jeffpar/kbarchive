@@ -6,6 +6,8 @@ permalink: /kb/184/Q184009/
 
 ## Q184009: Error Message: Unable to Save to Registry. Error Code 1243516.
 
+{% raw %}
+
 	Article: Q184009
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -102,3 +104,5 @@ permalink: /kb/184/Q184009/
 	
 	=============================================================================
 	
+
+{% endraw %}

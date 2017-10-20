@@ -6,6 +6,8 @@ permalink: /kb/191/Q191132/
 
 ## Q191132: CG4: Clip Gallery Hangs When Importing Multiple CGM Files
 
+{% raw %}
+
 	Article: Q191132
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0
@@ -78,3 +80,5 @@ permalink: /kb/191/Q191132/
 	
 	=============================================================================
 	
+
+{% endraw %}

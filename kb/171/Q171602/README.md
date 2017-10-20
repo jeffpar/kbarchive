@@ -6,6 +6,8 @@ permalink: /kb/171/Q171602/
 
 ## Q171602: WD97: Cannot Insert Address from Schedule+ Address Book
 
+{% raw %}
+
 	Article: Q171602
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:1.0,2.0,7.0,97
@@ -70,3 +72,5 @@ permalink: /kb/171/Q171602/
 	
 	=============================================================================
 	
+
+{% endraw %}

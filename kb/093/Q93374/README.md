@@ -6,6 +6,8 @@ permalink: /kb/093/Q93374/
 
 ## Q93374: MemMaker Doesn't Find SYSTEM.INI File on Network
 
+{% raw %}
+
 	Article: Q93374
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -46,3 +48,5 @@ permalink: /kb/093/Q93374/
 	
 	=============================================================================
 	
+
+{% endraw %}

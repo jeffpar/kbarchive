@@ -6,6 +6,8 @@ permalink: /kb/176/Q176435/
 
 ## Q176435: PRB: Compiling to Native Code Can Be Slow
 
+{% raw %}
+
 	Article: Q176435
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -117,3 +119,5 @@ permalink: /kb/176/Q176435/
 	
 	=============================================================================
 	
+
+{% endraw %}

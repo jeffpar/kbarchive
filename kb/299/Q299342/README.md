@@ -6,6 +6,8 @@ permalink: /kb/299/Q299342/
 
 ## Q299342: FP: Confirmation Page Appears, Data Not Added to Database
 
+{% raw %}
+
 	Article: Q299342
 	Product(s): Word Front Page
 	Version(s): 
@@ -123,3 +125,5 @@ permalink: /kb/299/Q299342/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168208/
 
 ## Q168208: FIX: StillExecuting Is True After Async Execution Completes
 
+{% raw %}
+
 	Article: Q168208
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/168/Q168208/
 	
 	=============================================================================
 	
+
+{% endraw %}

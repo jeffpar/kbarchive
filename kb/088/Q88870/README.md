@@ -6,6 +6,8 @@ permalink: /kb/088/Q88870/
 
 ## Q88870: PRB: /NOLOGO Option Does Not Work in PWB
 
+{% raw %}
+
 	Article: Q88870
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:2.0,2.1.49
@@ -79,3 +81,5 @@ permalink: /kb/088/Q88870/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181736/
 
 ## Q181736: LUA or EIS Application Must Enforce 3270 Bracket Protocol
 
+{% raw %}
+
 	Article: Q181736
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0,4.0
@@ -81,3 +83,5 @@ permalink: /kb/181/Q181736/
 	
 	=============================================================================
 	
+
+{% endraw %}

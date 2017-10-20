@@ -6,6 +6,8 @@ permalink: /kb/072/Q72691/
 
 ## Q72691: INFO: Banding, Printing, and the Number of Bands
 
+{% raw %}
+
 	Article: Q72691
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -57,3 +59,5 @@ permalink: /kb/072/Q72691/
 	
 	=============================================================================
 	
+
+{% endraw %}

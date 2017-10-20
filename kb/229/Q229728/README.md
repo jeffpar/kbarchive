@@ -6,6 +6,8 @@ permalink: /kb/229/Q229728/
 
 ## Q229728: XCON: Intersite MTA Distribution List Cache Issue
 
+{% raw %}
+
 	Article: Q229728
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -128,3 +130,5 @@ permalink: /kb/229/Q229728/
 	
 	=============================================================================
 	
+
+{% endraw %}

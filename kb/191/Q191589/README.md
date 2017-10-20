@@ -6,6 +6,8 @@ permalink: /kb/191/Q191589/
 
 ## Q191589: BUG: Output Lines from TYPE Command Not Numbered
 
+{% raw %}
+
 	Article: Q191589
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a,6.0
@@ -78,3 +80,5 @@ permalink: /kb/191/Q191589/
 	
 	=============================================================================
 	
+
+{% endraw %}

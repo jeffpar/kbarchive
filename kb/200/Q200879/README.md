@@ -6,6 +6,8 @@ permalink: /kb/200/Q200879/
 
 ## Q200879: SMS: Resource Explorer Doesn't Show Readable  Inventory Values
 
+{% raw %}
+
 	Article: Q200879
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -95,3 +97,5 @@ permalink: /kb/200/Q200879/
 	
 	=============================================================================
 	
+
+{% endraw %}

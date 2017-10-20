@@ -6,6 +6,8 @@ permalink: /kb/304/Q304744/
 
 ## Q304744: Print Jobs May Have Incorrect LPI Or Page Breaks
 
+{% raw %}
+
 	Article: Q304744
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -129,3 +131,5 @@ permalink: /kb/304/Q304744/
 	
 	=============================================================================
 	
+
+{% endraw %}

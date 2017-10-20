@@ -6,6 +6,8 @@ permalink: /kb/178/Q178406/
 
 ## Q178406: Availability of Animated Cursor Editor and Image Editor Programs
 
+{% raw %}
+
 	Article: Q178406
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -64,3 +66,5 @@ permalink: /kb/178/Q178406/
 	
 	=============================================================================
 	
+
+{% endraw %}

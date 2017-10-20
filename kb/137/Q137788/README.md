@@ -6,6 +6,8 @@ permalink: /kb/137/Q137788/
 
 ## Q137788: Intel 8/16 Lan Adapter Displays Different Name For the Same Card
 
+{% raw %}
+
 	Article: Q137788
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -48,3 +50,5 @@ permalink: /kb/137/Q137788/
 	
 	=============================================================================
 	
+
+{% endraw %}

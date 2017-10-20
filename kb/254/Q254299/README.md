@@ -6,6 +6,8 @@ permalink: /kb/254/Q254299/
 
 ## Q254299: Wrong Version of Symbol Files for SecEdit on SP5 and SP6 CD-ROM
 
+{% raw %}
+
 	Article: Q254299
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP5,4.0 SP6,4.0 SP6a
@@ -82,3 +84,5 @@ permalink: /kb/254/Q254299/
 	
 	=============================================================================
 	
+
+{% endraw %}

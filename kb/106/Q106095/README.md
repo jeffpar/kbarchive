@@ -6,6 +6,8 @@ permalink: /kb/106/Q106095/
 
 ## Q106095: ScanDisk Repeatedly Tells You to Exit and Run ScanDisk Again
 
+{% raw %}
+
 	Article: Q106095
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -47,3 +49,5 @@ permalink: /kb/106/Q106095/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131226/
 
 ## Q131226: INFO: NERR_PasswordTooShort Error Returned for Other Errors
 
+{% raw %}
+
 	Article: Q131226
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1; :
@@ -51,3 +53,5 @@ permalink: /kb/131/Q131226/
 	
 	=============================================================================
 	
+
+{% endraw %}

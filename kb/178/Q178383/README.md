@@ -6,6 +6,8 @@ permalink: /kb/178/Q178383/
 
 ## Q178383: Scenery, Airport, Adventures, VOR, Sound Problems W/O Correct CD
 
+{% raw %}
+
 	Article: Q178383
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -150,3 +152,5 @@ permalink: /kb/178/Q178383/
 	
 	=============================================================================
 	
+
+{% endraw %}

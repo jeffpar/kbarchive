@@ -6,6 +6,8 @@ permalink: /kb/164/Q164624/
 
 ## Q164624: WD97: Inserting OLE Object in Header Opens OLE Application
 
+{% raw %}
+
 	Article: Q164624
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -138,3 +140,5 @@ permalink: /kb/164/Q164624/
 	
 	=============================================================================
 	
+
+{% endraw %}

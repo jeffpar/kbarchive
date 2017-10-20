@@ -6,6 +6,8 @@ permalink: /kb/058/Q58330/
 
 ## Q58330: Location of Enhanced Mode Temporary Swap Files
 
+{% raw %}
+
 	Article: Q58330
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -65,3 +67,5 @@ permalink: /kb/058/Q58330/
 	
 	=============================================================================
 	
+
+{% endraw %}

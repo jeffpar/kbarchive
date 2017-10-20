@@ -6,6 +6,8 @@ permalink: /kb/164/Q164123/
 
 ## Q164123: Multiple Successful Print Events with Zero Bytes in Event Viewer
 
+{% raw %}
+
 	Article: Q164123
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/164/Q164123/
 	
 	=============================================================================
 	
+
+{% endraw %}

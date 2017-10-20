@@ -6,6 +6,8 @@ permalink: /kb/089/Q89001/
 
 ## Q89001: Blank Lines Not Printed on Labels in FoxBASE+
 
+{% raw %}
+
 	Article: Q89001
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:1.21,2.1
@@ -44,3 +46,5 @@ permalink: /kb/089/Q89001/
 	
 	=============================================================================
 	
+
+{% endraw %}

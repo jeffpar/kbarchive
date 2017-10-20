@@ -6,6 +6,8 @@ permalink: /kb/215/Q215367/
 
 ## Q215367: GetEffectiveRightsFromAcl() Returns Incorrect Access Mask Value
 
+{% raw %}
+
 	Article: Q215367
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -88,3 +90,5 @@ permalink: /kb/215/Q215367/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/317/Q317828/
 
 ## Q317828: FS2002: How to Import Aircraft from Combat Flight Simulator
 
+{% raw %}
+
 	Article: Q317828
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -60,3 +62,5 @@ permalink: /kb/317/Q317828/
 	
 	=============================================================================
 	
+
+{% endraw %}

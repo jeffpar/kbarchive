@@ -6,6 +6,8 @@ permalink: /kb/170/Q170566/
 
 ## Q170566: Ntbackup.exe Log Has Additional Space at Beginning of Each Line
 
+{% raw %}
+
 	Article: Q170566
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/170/Q170566/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132942/
 
 ## Q132942: Flight Simulator 5.1: CD-ROM Contents (Part 3 of 5)
 
+{% raw %}
+
 	Article: Q132942
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.1
@@ -717,3 +719,5 @@ permalink: /kb/132/Q132942/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199731/
 
 ## Q199731: Duplicate Datakeys in Table After Datdupck Runs
 
+{% raw %}
+
 	Article: Q199731
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -81,3 +83,5 @@ permalink: /kb/199/Q199731/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/257/Q257630/
 
 ## Q257630: FIX: Exception Error Closing Application with CoolBar Control
 
+{% raw %}
+
 	Article: Q257630
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -98,3 +100,5 @@ permalink: /kb/257/Q257630/
 	
 	=============================================================================
 	
+
+{% endraw %}

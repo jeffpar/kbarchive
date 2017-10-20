@@ -6,6 +6,8 @@ permalink: /kb/235/Q235735/
 
 ## Q235735: SMS: Scheduled Site Backup Fails to Run Daily
 
+{% raw %}
+
 	Article: Q235735
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -50,3 +52,5 @@ permalink: /kb/235/Q235735/
 	
 	=============================================================================
 	
+
+{% endraw %}

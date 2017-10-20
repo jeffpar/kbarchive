@@ -6,6 +6,8 @@ permalink: /kb/028/Q28500/
 
 ## Q28500: Use MOUSE.SYS with Flight Simulator
 
+{% raw %}
+
 	Article: Q28500
 	Product(s): See article
 	Version(s): 1.0
@@ -20,3 +22,5 @@ permalink: /kb/028/Q28500/
 	   The Version 6.11 of the mouse driver that uses the MOUSE.COM file,
 	may cause Flight Simulator to continuously ask if you have a mouse.
 	Using the MOUSE.SYS file solved the problem.
+
+{% endraw %}

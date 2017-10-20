@@ -6,6 +6,8 @@ permalink: /kb/325/Q325045/
 
 ## Q325045: A &quot;STOP 0x50&quot; Occurs in Rdr.sys with the SRP Installed
 
+{% raw %}
+
 	Article: Q325045
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -84,3 +86,5 @@ permalink: /kb/325/Q325045/
 	
 	=============================================================================
 	
+
+{% endraw %}

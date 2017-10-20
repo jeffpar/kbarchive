@@ -6,6 +6,8 @@ permalink: /kb/192/Q192556/
 
 ## Q192556: Side Effect of StickyKeys on Client Hotkeys
 
+{% raw %}
+
 	Article: Q192556
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -48,3 +50,5 @@ permalink: /kb/192/Q192556/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67363/
 
 ## Q67363: In QBX 7.10, F8 Step then Editing Active Statement Can Fail
 
+{% raw %}
+
 	Article: Q67363
 	Product(s): See article
 	Version(s): 7.10
@@ -60,3 +62,5 @@ permalink: /kb/067/Q67363/
 	When the line is highlighted, place the cursor on the variable "a" and
 	press ENTER. This will not duplicate the current line but will cause
 	the "+" to be deleted between a and b.
+
+{% endraw %}

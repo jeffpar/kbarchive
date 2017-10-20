@@ -6,6 +6,8 @@ permalink: /kb/117/Q117647/
 
 ## Q117647: PC Rmt: Mail to External Postoffice Group Members Disappears
 
+{% raw %}
+
 	Article: Q117647
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.2
@@ -49,3 +51,5 @@ permalink: /kb/117/Q117647/
 	
 	=============================================================================
 	
+
+{% endraw %}

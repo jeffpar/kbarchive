@@ -6,6 +6,8 @@ permalink: /kb/167/Q167932/
 
 ## Q167932: FP: General Information About Using &quot;Localhost&quot; as Server Name
 
+{% raw %}
+
 	Article: Q167932
 	Product(s): Word Front Page
 	Version(s): WINDOWS:1.1
@@ -84,3 +86,5 @@ permalink: /kb/167/Q167932/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/060/Q60716/
 
 ## Q60716: Reading Data from the Communications Port to a File
 
+{% raw %}
+
 	Article: Q60716
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -52,3 +54,5 @@ permalink: /kb/060/Q60716/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/297/Q297427/
 
 ## Q297427: Event ID 5718 Generated During LSA Database Replication
 
+{% raw %}
+
 	Article: Q297427
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -86,3 +88,5 @@ permalink: /kb/297/Q297427/
 	
 	=============================================================================
 	
+
+{% endraw %}

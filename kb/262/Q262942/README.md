@@ -6,6 +6,8 @@ permalink: /kb/262/Q262942/
 
 ## Q262942: SMS: LSM Is Unable to Uninstall When SMS Sites Share a Domain
 
+{% raw %}
+
 	Article: Q262942
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -82,3 +84,5 @@ permalink: /kb/262/Q262942/
 	
 	=============================================================================
 	
+
+{% endraw %}

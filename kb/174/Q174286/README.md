@@ -6,6 +6,8 @@ permalink: /kb/174/Q174286/
 
 ## Q174286: Cannot Close Regional Settings Properties Dialog Box
 
+{% raw %}
+
 	Article: Q174286
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -49,3 +51,5 @@ permalink: /kb/174/Q174286/
 	
 	=============================================================================
 	
+
+{% endraw %}

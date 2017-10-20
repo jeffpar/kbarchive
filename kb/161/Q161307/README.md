@@ -6,6 +6,8 @@ permalink: /kb/161/Q161307/
 
 ## Q161307: HOWTO: Use Visual FoxPro Tables in Visual Basic
 
+{% raw %}
+
 	Article: Q161307
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,6.0
@@ -114,3 +116,5 @@ permalink: /kb/161/Q161307/
 	
 	=============================================================================
 	
+
+{% endraw %}

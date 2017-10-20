@@ -6,6 +6,8 @@ permalink: /kb/300/Q300956/
 
 ## Q300956: How to Manually Rebuild Performance Library Values
 
+{% raw %}
+
 	Article: Q300956
 	Product(s): Microsoft Windows NT
 	Version(s): 2000
@@ -130,3 +132,5 @@ permalink: /kb/300/Q300956/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169657/
 
 ## Q169657: ADT95: Installation of Run-Time Application Disables DFS Client
 
+{% raw %}
+
 	Article: Q169657
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0
@@ -90,3 +92,5 @@ permalink: /kb/169/Q169657/
 	
 	=============================================================================
 	
+
+{% endraw %}

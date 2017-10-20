@@ -6,6 +6,8 @@ permalink: /kb/141/Q141637/
 
 ## Q141637: PRB: Listbox Does Not Automatically Display Correct Row
 
+{% raw %}
+
 	Article: Q141637
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -77,3 +79,5 @@ permalink: /kb/141/Q141637/
 	
 	=============================================================================
 	
+
+{% endraw %}

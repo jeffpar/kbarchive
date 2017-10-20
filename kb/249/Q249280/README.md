@@ -6,6 +6,8 @@ permalink: /kb/249/Q249280/
 
 ## Q249280: XADM: Error Joining an Existing Site Running on Windows 2000
 
+{% raw %}
+
 	Article: Q249280
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -76,3 +78,5 @@ permalink: /kb/249/Q249280/
 	
 	=============================================================================
 	
+
+{% endraw %}

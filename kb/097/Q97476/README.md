@@ -6,6 +6,8 @@ permalink: /kb/097/Q97476/
 
 ## Q97476: ATI Ultra Pro Video Card May Not Work with 8514 Driver
 
+{% raw %}
+
 	Article: Q97476
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/097/Q97476/
 	
 	=============================================================================
 	
+
+{% endraw %}

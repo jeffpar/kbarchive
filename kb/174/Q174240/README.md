@@ -6,6 +6,8 @@ permalink: /kb/174/Q174240/
 
 ## Q174240: The Microsoft Network Setup Stops Responding
 
+{% raw %}
+
 	Article: Q174240
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -160,3 +162,5 @@ permalink: /kb/174/Q174240/
 	
 	=============================================================================
 	
+
+{% endraw %}

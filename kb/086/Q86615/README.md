@@ -6,6 +6,8 @@ permalink: /kb/086/Q86615/
 
 ## Q86615: Cakewalk Professional for Windows May Cause GP Fault
 
+{% raw %}
+
 	Article: Q86615
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/086/Q86615/
 	
 	=============================================================================
 	
+
+{% endraw %}

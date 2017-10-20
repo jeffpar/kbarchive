@@ -6,6 +6,8 @@ permalink: /kb/184/Q184358/
 
 ## Q184358: WD97: Text Becomes Wider Using Generic/Text Only Printer
 
+{% raw %}
+
 	Article: Q184358
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/184/Q184358/
 	
 	=============================================================================
 	
+
+{% endraw %}

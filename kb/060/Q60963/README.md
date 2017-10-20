@@ -6,6 +6,8 @@ permalink: /kb/060/Q60963/
 
 ## Q60963: Wrong Colors Displayed If Map Mask Register Set Incorrectly
 
+{% raw %}
+
 	Article: Q60963
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -196,3 +198,5 @@ permalink: /kb/060/Q60963/
 	                               'instead of 14.
 	PCOPY 0, 1                     'the copied line will still use
 	                               'attribute 12.
+
+{% endraw %}

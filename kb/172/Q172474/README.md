@@ -6,6 +6,8 @@ permalink: /kb/172/Q172474/
 
 ## Q172474: Err Msg: Mpr.dll Cannot Start, Check the File to Determine...
 
+{% raw %}
+
 	Article: Q172474
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -62,3 +64,5 @@ permalink: /kb/172/Q172474/
 	
 	=============================================================================
 	
+
+{% endraw %}

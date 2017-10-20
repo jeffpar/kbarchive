@@ -6,6 +6,8 @@ permalink: /kb/127/Q127078/
 
 ## Q127078: PC Win: All Custom Data Is Displayed at Same Start Position
 
+{% raw %}
+
 	Article: Q127078
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -66,3 +68,5 @@ permalink: /kb/127/Q127078/
 	
 	=============================================================================
 	
+
+{% endraw %}

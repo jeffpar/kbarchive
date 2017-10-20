@@ -6,6 +6,8 @@ permalink: /kb/247/Q247345/
 
 ## Q247345: XADM: Setting the Number of Objects in a Replication Message
 
+{% raw %}
+
 	Article: Q247345
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -67,3 +69,5 @@ permalink: /kb/247/Q247345/
 	
 	=============================================================================
 	
+
+{% endraw %}

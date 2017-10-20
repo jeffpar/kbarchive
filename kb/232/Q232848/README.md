@@ -6,6 +6,8 @@ permalink: /kb/232/Q232848/
 
 ## Q232848: How to Create a WinMSD Report
 
+{% raw %}
+
 	Article: Q232848
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/232/Q232848/
 	
 	=============================================================================
 	
+
+{% endraw %}

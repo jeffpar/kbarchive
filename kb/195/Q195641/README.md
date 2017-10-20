@@ -6,6 +6,8 @@ permalink: /kb/195/Q195641/
 
 ## Q195641: Btrieve, IPX, and Event ID 2012
 
+{% raw %}
+
 	Article: Q195641
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -86,3 +88,5 @@ permalink: /kb/195/Q195641/
 	
 	=============================================================================
 	
+
+{% endraw %}

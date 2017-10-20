@@ -6,6 +6,8 @@ permalink: /kb/149/Q149828/
 
 ## Q149828: CACLS /C Doesn't Work with /T switch
 
+{% raw %}
+
 	Article: Q149828
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -75,3 +77,5 @@ permalink: /kb/149/Q149828/
 	
 	=============================================================================
 	
+
+{% endraw %}

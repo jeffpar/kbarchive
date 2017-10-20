@@ -6,6 +6,8 @@ permalink: /kb/134/Q134608/
 
 ## Q134608: Wrong Drive Icon and Format for Removable Drive
 
+{% raw %}
+
 	Article: Q134608
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -50,3 +52,5 @@ permalink: /kb/134/Q134608/
 	
 	=============================================================================
 	
+
+{% endraw %}

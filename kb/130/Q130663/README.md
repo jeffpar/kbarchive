@@ -6,6 +6,8 @@ permalink: /kb/130/Q130663/
 
 ## Q130663: PRB: ZAP Command Ignores Table's Delete Triggers
 
+{% raw %}
+
 	Article: Q130663
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/130/Q130663/
 	
 	=============================================================================
 	
+
+{% endraw %}

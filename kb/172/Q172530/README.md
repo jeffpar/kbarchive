@@ -6,6 +6,8 @@ permalink: /kb/172/Q172530/
 
 ## Q172530: Deleted UNC Connection While In Use Causes an In-Page Error
 
+{% raw %}
+
 	Article: Q172530
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -78,3 +80,5 @@ permalink: /kb/172/Q172530/
 	
 	=============================================================================
 	
+
+{% endraw %}

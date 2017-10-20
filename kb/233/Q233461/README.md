@@ -6,6 +6,8 @@ permalink: /kb/233/Q233461/
 
 ## Q233461: Business Planner: Data Lost After Low Disk Space Warning Appears
 
+{% raw %}
+
 	Article: Q233461
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -73,3 +75,5 @@ permalink: /kb/233/Q233461/
 	
 	=============================================================================
 	
+
+{% endraw %}

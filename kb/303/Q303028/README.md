@@ -6,6 +6,8 @@ permalink: /kb/303/Q303028/
 
 ## Q303028: Error Message When You Modify otherMailbox or Mail
 
+{% raw %}
+
 	Article: Q303028
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2.2 SP1,5.5
@@ -188,3 +190,5 @@ permalink: /kb/303/Q303028/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185602/
 
 ## Q185602: XWEB: Error Message When Saving An Attachment Through OWA
 
+{% raw %}
+
 	Article: Q185602
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -59,3 +61,5 @@ permalink: /kb/185/Q185602/
 	
 	=============================================================================
 	
+
+{% endraw %}

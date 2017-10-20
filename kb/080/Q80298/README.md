@@ -6,6 +6,8 @@ permalink: /kb/080/Q80298/
 
 ## Q80298: AST Premium Exec Notebook May Need Reverse Video
 
+{% raw %}
+
 	Article: Q80298
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/080/Q80298/
 	
 	=============================================================================
 	
+
+{% endraw %}

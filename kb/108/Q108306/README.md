@@ -6,6 +6,8 @@ permalink: /kb/108/Q108306/
 
 ## Q108306: dwBearerModes and dwMaxRate in LINEDEVCAPS
 
+{% raw %}
+
 	Article: Q108306
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 1.0; NT:4.0; WINDOWS:4.0
@@ -50,3 +52,5 @@ permalink: /kb/108/Q108306/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99022/
 
 ## Q99022: INFO: Foundation Class Debug Library Detects Memory Leaks
 
+{% raw %}
+
 	Article: Q99022
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0
@@ -142,3 +144,5 @@ permalink: /kb/099/Q99022/
 	
 	=============================================================================
 	
+
+{% endraw %}

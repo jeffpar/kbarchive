@@ -6,6 +6,8 @@ permalink: /kb/130/Q130433/
 
 ## Q130433: Secondary Time Zone Defaults to Pacific Time
 
+{% raw %}
+
 	Article: Q130433
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -44,3 +46,5 @@ permalink: /kb/130/Q130433/
 	
 	=============================================================================
 	
+
+{% endraw %}

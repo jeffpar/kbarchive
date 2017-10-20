@@ -6,6 +6,8 @@ permalink: /kb/031/Q31536/
 
 ## Q31536: MASM 5.10 EXT.DOC: KbHook - Enable M's Logical Keyboard
 
+{% raw %}
+
 	Article: Q31536
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -25,3 +27,5 @@ permalink: /kb/031/Q31536/
 	 *  by the editor.
 	 */
 	void pascal KbHook();
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112345/
 
 ## Q112345: FIX: F1001 or F1002 Compiling Program with Record Using -Zi
 
+{% raw %}
+
 	Article: Q112345
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -101,3 +103,5 @@ permalink: /kb/112/Q112345/
 	
 	=============================================================================
 	
+
+{% endraw %}

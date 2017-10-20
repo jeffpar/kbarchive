@@ -6,6 +6,8 @@ permalink: /kb/175/Q175871/
 
 ## Q175871: FPNW Volume Size Limits to 2 GB for DOS/NetWare Client
 
+{% raw %}
+
 	Article: Q175871
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -48,3 +50,5 @@ permalink: /kb/175/Q175871/
 	
 	=============================================================================
 	
+
+{% endraw %}

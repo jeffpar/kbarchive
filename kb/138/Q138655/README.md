@@ -6,6 +6,8 @@ permalink: /kb/138/Q138655/
 
 ## Q138655: How to Highlight a Single Grid Field
 
+{% raw %}
+
 	Article: Q138655
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/138/Q138655/
 	
 	=============================================================================
 	
+
+{% endraw %}

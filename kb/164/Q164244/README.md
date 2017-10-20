@@ -6,6 +6,8 @@ permalink: /kb/164/Q164244/
 
 ## Q164244: WD97: Pleading Wizard Doesn't Change Lines Per Page
 
+{% raw %}
+
 	Article: Q164244
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -87,3 +89,5 @@ permalink: /kb/164/Q164244/
 	
 	=============================================================================
 	
+
+{% endraw %}

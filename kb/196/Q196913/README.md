@@ -6,6 +6,8 @@ permalink: /kb/196/Q196913/
 
 ## Q196913: WD97:Errors Saving Files or Running Wizards over PC-NFS Networks
 
+{% raw %}
+
 	Article: Q196913
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -146,3 +148,5 @@ permalink: /kb/196/Q196913/
 	
 	=============================================================================
 	
+
+{% endraw %}

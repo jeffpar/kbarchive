@@ -6,6 +6,8 @@ permalink: /kb/262/Q262483/
 
 ## Q262483: XADM: Error Message: The Ordinal 6883 Could Not Be Located...
 
+{% raw %}
+
 	Article: Q262483
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -44,3 +46,5 @@ permalink: /kb/262/Q262483/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150338/
 
 ## Q150338: Microsoft Voice Does Not Extract WordPad Commands
 
+{% raw %}
+
 	Article: Q150338
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -65,3 +67,5 @@ permalink: /kb/150/Q150338/
 	
 	=============================================================================
 	
+
+{% endraw %}

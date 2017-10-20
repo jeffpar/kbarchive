@@ -6,6 +6,8 @@ permalink: /kb/197/Q197603/
 
 ## Q197603: Learn Visual Basic Scripting Now Corrections and Comments
 
+{% raw %}
+
 	Article: Q197603
 	Product(s): Microsoft Press
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/197/Q197603/
 	
 	=============================================================================
 	
+
+{% endraw %}

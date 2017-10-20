@@ -6,6 +6,8 @@ permalink: /kb/179/Q179450/
 
 ## Q179450: Unable to Modify Logon Hours on a Member Server
 
+{% raw %}
+
 	Article: Q179450
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -74,3 +76,5 @@ permalink: /kb/179/Q179450/
 	
 	=============================================================================
 	
+
+{% endraw %}

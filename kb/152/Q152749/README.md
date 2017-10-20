@@ -6,6 +6,8 @@ permalink: /kb/152/Q152749/
 
 ## Q152749: Complete Gardening: No Garden Bed Planner Available
 
+{% raw %}
+
 	Article: Q152749
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -53,3 +55,5 @@ permalink: /kb/152/Q152749/
 	
 	=============================================================================
 	
+
+{% endraw %}

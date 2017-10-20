@@ -6,6 +6,8 @@ permalink: /kb/094/Q94595/
 
 ## Q94595: Voice Pilot: Limit to Number of Words in Vocabulary Files
 
+{% raw %}
+
 	Article: Q94595
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/094/Q94595/
 	
 	=============================================================================
 	
+
+{% endraw %}

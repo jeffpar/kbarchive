@@ -6,6 +6,8 @@ permalink: /kb/048/Q48251/
 
 ## Q48251: Mixed-Language Examples for Calling Pascal Are Incorrect
 
+{% raw %}
+
 	Article: Q48251
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -61,3 +63,5 @@ permalink: /kb/048/Q48251/
 	Note: There is an incorrect reference to the errors in the Fact
 	function in the Pascal Version 4.00 README.DOC file. This correction
 	does not work.
+
+{% endraw %}

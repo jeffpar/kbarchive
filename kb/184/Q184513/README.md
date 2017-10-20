@@ -6,6 +6,8 @@ permalink: /kb/184/Q184513/
 
 ## Q184513: WD97: &quot;Create a Custom HTML Template&quot; Incorrect in Word Help
 
+{% raw %}
+
 	Article: Q184513
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -95,3 +97,5 @@ permalink: /kb/184/Q184513/
 	
 	=============================================================================
 	
+
+{% endraw %}

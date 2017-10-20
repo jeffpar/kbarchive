@@ -6,6 +6,8 @@ permalink: /kb/088/Q88785/
 
 ## Q88785: Windows Err Msg: A Permanent Swap File Has...
 
+{% raw %}
+
 	Article: Q88785
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/088/Q88785/
 	
 	=============================================================================
 	
+
+{% endraw %}

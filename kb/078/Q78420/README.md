@@ -6,6 +6,8 @@ permalink: /kb/078/Q78420/
 
 ## Q78420: Heath/Zenith XT 151 Is Incompatible with MS-DOS 5.x or 6.x
 
+{% raw %}
+
 	Article: Q78420
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -42,3 +44,5 @@ permalink: /kb/078/Q78420/
 	
 	=============================================================================
 	
+
+{% endraw %}

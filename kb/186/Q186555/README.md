@@ -6,6 +6,8 @@ permalink: /kb/186/Q186555/
 
 ## Q186555: Terminal Server Error Messages: 2200 to 2299
 
+{% raw %}
+
 	Article: Q186555
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -894,3 +896,5 @@ permalink: /kb/186/Q186555/
 	
 	=============================================================================
 	
+
+{% endraw %}

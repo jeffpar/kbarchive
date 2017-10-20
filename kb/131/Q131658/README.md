@@ -6,6 +6,8 @@ permalink: /kb/131/Q131658/
 
 ## Q131658: Use Ftedit.exe to Recover Fault Tolerant Disk Configuration
 
+{% raw %}
+
 	Article: Q131658
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -356,3 +358,5 @@ permalink: /kb/131/Q131658/
 	
 	=============================================================================
 	
+
+{% endraw %}

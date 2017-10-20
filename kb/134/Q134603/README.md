@@ -6,6 +6,8 @@ permalink: /kb/134/Q134603/
 
 ## Q134603: Cannot Change I/O Value on EtherExpress 16 Network Adapter
 
+{% raw %}
+
 	Article: Q134603
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/134/Q134603/
 	
 	=============================================================================
 	
+
+{% endraw %}

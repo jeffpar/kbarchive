@@ -6,6 +6,8 @@ permalink: /kb/183/Q183702/
 
 ## Q183702: WD97: DocErr: &quot;Field Codes: =(Formula) Field&quot; Help Topic Wrong
 
+{% raw %}
+
 	Article: Q183702
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -154,3 +156,5 @@ permalink: /kb/183/Q183702/
 	
 	=============================================================================
 	
+
+{% endraw %}

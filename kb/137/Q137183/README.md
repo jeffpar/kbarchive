@@ -6,6 +6,8 @@ permalink: /kb/137/Q137183/
 
 ## Q137183: How to Add Items to a Multiple-Column Combo Box
 
+{% raw %}
+
 	Article: Q137183
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -121,3 +123,5 @@ permalink: /kb/137/Q137183/
 	
 	=============================================================================
 	
+
+{% endraw %}

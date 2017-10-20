@@ -6,6 +6,8 @@ permalink: /kb/071/Q71693/
 
 ## Q71693: File Managing Functions in Shell Not Found at Command Line
 
+{% raw %}
+
 	Article: Q71693
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.0,4.01,4.01a,5.0
@@ -64,3 +66,5 @@ permalink: /kb/071/Q71693/
 	
 	=============================================================================
 	
+
+{% endraw %}

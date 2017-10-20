@@ -6,6 +6,8 @@ permalink: /kb/139/Q139200/
 
 ## Q139200: PerfMon: Text for Redirector Server Session Counter is Wrong
 
+{% raw %}
+
 	Article: Q139200
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -61,3 +63,5 @@ permalink: /kb/139/Q139200/
 	
 	=============================================================================
 	
+
+{% endraw %}

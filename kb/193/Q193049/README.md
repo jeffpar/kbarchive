@@ -6,6 +6,8 @@ permalink: /kb/193/Q193049/
 
 ## Q193049: XCON: MTA Stops; Events 2110, 2171, &amp; 9299 Appear in Event Log
 
+{% raw %}
+
 	Article: Q193049
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -103,3 +105,5 @@ permalink: /kb/193/Q193049/
 	
 	=============================================================================
 	
+
+{% endraw %}

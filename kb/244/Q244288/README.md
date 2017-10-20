@@ -6,6 +6,8 @@ permalink: /kb/244/Q244288/
 
 ## Q244288: Phone Dialer Speed Dial Cannot Accept More Than 46 Characters
 
+{% raw %}
+
 	Article: Q244288
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -88,3 +90,5 @@ permalink: /kb/244/Q244288/
 	
 	=============================================================================
 	
+
+{% endraw %}

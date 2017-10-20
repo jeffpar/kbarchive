@@ -6,6 +6,8 @@ permalink: /kb/096/Q96836/
 
 ## Q96836: Using Disk Change Detection with Backup for MS-DOS or Windows
 
+{% raw %}
+
 	Article: Q96836
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -57,3 +59,5 @@ permalink: /kb/096/Q96836/
 	
 	=============================================================================
 	
+
+{% endraw %}

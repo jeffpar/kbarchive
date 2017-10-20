@@ -6,6 +6,8 @@ permalink: /kb/040/Q40852/
 
 ## Q40852: FIX: A2042 May Be Caused By Using LOW and OFFSET In MASM 5.1
 
+{% raw %}
+
 	Article: Q40852
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -66,3 +68,5 @@ permalink: /kb/040/Q40852/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136470/
 
 ## Q136470: HP Vectra 486/50 Computer Hangs After Choosing to Restart
 
+{% raw %}
+
 	Article: Q136470
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/136/Q136470/
 	
 	=============================================================================
 	
+
+{% endraw %}

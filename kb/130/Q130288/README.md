@@ -6,6 +6,8 @@ permalink: /kb/130/Q130288/
 
 ## Q130288: PC NTMMTA: Using Performance Monitor with MMTA
 
+{% raw %}
+
 	Article: Q130288
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2,3.5
@@ -111,3 +113,5 @@ permalink: /kb/130/Q130288/
 	
 	=============================================================================
 	
+
+{% endraw %}

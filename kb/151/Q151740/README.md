@@ -6,6 +6,8 @@ permalink: /kb/151/Q151740/
 
 ## Q151740: Network Client 3.0 Logon Fails On Token Ring
 
+{% raw %}
+
 	Article: Q151740
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -61,3 +63,5 @@ permalink: /kb/151/Q151740/
 	
 	=============================================================================
 	
+
+{% endraw %}

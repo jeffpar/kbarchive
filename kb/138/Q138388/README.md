@@ -6,6 +6,8 @@ permalink: /kb/138/Q138388/
 
 ## Q138388: Dynamically Loading/Unloading WINRUI32.DLL Causes System Hang
 
+{% raw %}
+
 	Article: Q138388
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -74,3 +76,5 @@ permalink: /kb/138/Q138388/
 	
 	=============================================================================
 	
+
+{% endraw %}

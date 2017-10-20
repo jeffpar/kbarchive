@@ -6,6 +6,8 @@ permalink: /kb/172/Q172955/
 
 ## Q172955: FIX: ATL Service Causes Random Asserts in Run Member Function
 
+{% raw %}
+
 	Article: Q172955
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.1,2.1
@@ -76,3 +78,5 @@ permalink: /kb/172/Q172955/
 	
 	=============================================================================
 	
+
+{% endraw %}

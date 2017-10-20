@@ -6,6 +6,8 @@ permalink: /kb/123/Q123942/
 
 ## Q123942: Invalid User Names Causes Memory Leak
 
+{% raw %}
+
 	Article: Q123942
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -46,3 +48,5 @@ permalink: /kb/123/Q123942/
 	
 	=============================================================================
 	
+
+{% endraw %}

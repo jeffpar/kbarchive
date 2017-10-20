@@ -6,6 +6,8 @@ permalink: /kb/197/Q197291/
 
 ## Q197291: XFOR: Dirsync Does Not Correctly Convert Date to UTC Format
 
+{% raw %}
+
 	Article: Q197291
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -110,3 +112,5 @@ permalink: /kb/197/Q197291/
 	
 	=============================================================================
 	
+
+{% endraw %}

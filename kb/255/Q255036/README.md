@@ -6,6 +6,8 @@ permalink: /kb/255/Q255036/
 
 ## Q255036: Microsoft Support Policy on Hardware Not On Windows NT HCL
 
+{% raw %}
+
 	Article: Q255036
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.51,4.0,4.0a,4.5
@@ -181,3 +183,5 @@ permalink: /kb/255/Q255036/
 	
 	=============================================================================
 	
+
+{% endraw %}

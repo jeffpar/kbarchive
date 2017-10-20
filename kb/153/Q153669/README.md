@@ -6,6 +6,8 @@ permalink: /kb/153/Q153669/
 
 ## Q153669: DOC: Documented Properties Do Not Exist on DBGrid
 
+{% raw %}
+
 	Article: Q153669
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0 5.0
@@ -68,3 +70,5 @@ permalink: /kb/153/Q153669/
 	
 	=============================================================================
 	
+
+{% endraw %}

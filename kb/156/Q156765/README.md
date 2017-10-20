@@ -6,6 +6,8 @@ permalink: /kb/156/Q156765/
 
 ## Q156765: XADM: Multiple Private IS Logons for Each User
 
+{% raw %}
+
 	Article: Q156765
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -48,3 +50,5 @@ permalink: /kb/156/Q156765/
 	
 	=============================================================================
 	
+
+{% endraw %}

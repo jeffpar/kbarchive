@@ -6,6 +6,8 @@ permalink: /kb/197/Q197764/
 
 ## Q197764: WD97: Table Headings Do Not Appear in Normal View
 
+{% raw %}
+
 	Article: Q197764
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -48,3 +50,5 @@ permalink: /kb/197/Q197764/
 	
 	=============================================================================
 	
+
+{% endraw %}

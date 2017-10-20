@@ -6,6 +6,8 @@ permalink: /kb/121/Q121637/
 
 ## Q121637: Summary List of MS-DOS 6.22 Confirmed Bugs
 
+{% raw %}
+
 	Article: Q121637
 	Product(s): Microsoft Disk Operating System
 	Version(s): 6.22
@@ -60,3 +62,5 @@ permalink: /kb/121/Q121637/
 	
 	=============================================================================
 	
+
+{% endraw %}

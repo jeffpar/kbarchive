@@ -6,6 +6,8 @@ permalink: /kb/247/Q247062/
 
 ## Q247062: Code Page 852 Not Working Since Windows NT 4.0 Service Pack 4
 
+{% raw %}
+
 	Article: Q247062
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5,4.0 SP6
@@ -77,3 +79,5 @@ permalink: /kb/247/Q247062/
 	
 	=============================================================================
 	
+
+{% endraw %}

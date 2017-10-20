@@ -6,6 +6,8 @@ permalink: /kb/149/Q149563/
 
 ## Q149563: Fatal Exception 0E in Ios.vxd with SCSI Printer
 
+{% raw %}
+
 	Article: Q149563
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/149/Q149563/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131204/
 
 ## Q131204: PRB: Wrong Project Selection Causes LNK2001 on _WinMain@16
 
+{% raw %}
+
 	Article: Q131204
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,4.0,5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/131/Q131204/
 	
 	=============================================================================
 	
+
+{% endraw %}

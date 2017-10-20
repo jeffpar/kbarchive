@@ -6,6 +6,8 @@ permalink: /kb/131/Q131253/
 
 ## Q131253: PRB: Right Mouse Functions Incorrectly w/ IntelliPoint Driver
 
+{% raw %}
+
 	Article: Q131253
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -70,3 +72,5 @@ permalink: /kb/131/Q131253/
 	
 	=============================================================================
 	
+
+{% endraw %}

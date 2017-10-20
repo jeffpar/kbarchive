@@ -6,6 +6,8 @@ permalink: /kb/171/Q171841/
 
 ## Q171841: FIX: Dragging Multiple Controls on a Form May Cause Crash
 
+{% raw %}
+
 	Article: Q171841
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -87,3 +89,5 @@ permalink: /kb/171/Q171841/
 	
 	=============================================================================
 	
+
+{% endraw %}

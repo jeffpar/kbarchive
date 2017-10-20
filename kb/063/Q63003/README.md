@@ -6,6 +6,8 @@ permalink: /kb/063/Q63003/
 
 ## Q63003: BASIC 7.00 SETMEM Example Uses malloc/free; Should Be halloc
 
+{% raw %}
+
 	Article: Q63003
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -53,3 +55,5 @@ permalink: /kb/063/Q63003/
 	}
 	
 	Note: The C code must be compiled using the huge model (/AH).
+
+{% endraw %}

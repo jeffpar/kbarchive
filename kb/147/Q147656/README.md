@@ -6,6 +6,8 @@ permalink: /kb/147/Q147656/
 
 ## Q147656: Updated Backup Corrects Erasing Data and Memory Manager Errors
 
+{% raw %}
+
 	Article: Q147656
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -91,3 +93,5 @@ permalink: /kb/147/Q147656/
 	
 	=============================================================================
 	
+
+{% endraw %}

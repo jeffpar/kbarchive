@@ -6,6 +6,8 @@ permalink: /kb/151/Q151471/
 
 ## Q151471: Processes Do Not Respond When NTFS Encounters an Error
 
+{% raw %}
+
 	Article: Q151471
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -56,3 +58,5 @@ permalink: /kb/151/Q151471/
 	
 	=============================================================================
 	
+
+{% endraw %}

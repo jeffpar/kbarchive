@@ -6,6 +6,8 @@ permalink: /kb/060/Q60391/
 
 ## Q60391: Operator Missing in C 6.00 A.P.T. Manual's /Oz Example
 
+{% raw %}
+
 	Article: Q60391
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -23,3 +25,5 @@ permalink: /kb/060/Q60391/
 	The correct code should read as follows:
 	
 	   for( i = 0; i <100; ++i )
+
+{% endraw %}

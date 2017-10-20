@@ -6,6 +6,8 @@ permalink: /kb/113/Q113156/
 
 ## Q113156: MS-DOS 6.2 Step By Step p.xxi: Install Does Not Make Backup.
 
+{% raw %}
+
 	Article: Q113156
 	Product(s): Microsoft Press
 	Version(s): 
@@ -92,3 +94,5 @@ permalink: /kb/113/Q113156/
 	
 	=============================================================================
 	
+
+{% endraw %}

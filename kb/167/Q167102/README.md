@@ -6,6 +6,8 @@ permalink: /kb/167/Q167102/
 
 ## Q167102: Cannot Open Devices or Modem Tool in Control Panel
 
+{% raw %}
+
 	Article: Q167102
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/167/Q167102/
 	
 	=============================================================================
 	
+
+{% endraw %}

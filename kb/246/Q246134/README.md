@@ -6,6 +6,8 @@ permalink: /kb/246/Q246134/
 
 ## Q246134: FS2000: &quot;General Protection Fault&quot; Err Msg or Wrong Screen Size
 
+{% raw %}
+
 	Article: Q246134
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -104,3 +106,5 @@ permalink: /kb/246/Q246134/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84188/
 
 ## Q84188: Idlewild May Cause Desktop Screen Saver Option Not to Save
 
+{% raw %}
+
 	Article: Q84188
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/084/Q84188/
 	
 	=============================================================================
 	
+
+{% endraw %}

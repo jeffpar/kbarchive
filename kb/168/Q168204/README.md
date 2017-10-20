@@ -6,6 +6,8 @@ permalink: /kb/168/Q168204/
 
 ## Q168204: HOWTO: Kill an Application with System Menu Using VB
 
+{% raw %}
+
 	Article: Q168204
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -122,3 +124,5 @@ permalink: /kb/168/Q168204/
 	
 	=============================================================================
 	
+
+{% endraw %}

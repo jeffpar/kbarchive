@@ -6,6 +6,8 @@ permalink: /kb/235/Q235590/
 
 ## Q235590: Err Msg: &quot;STOP 0x0000000A&quot; When You Install SP4 on Alpha Server
 
+{% raw %}
+
 	Article: Q235590
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -78,3 +80,5 @@ permalink: /kb/235/Q235590/
 	
 	=============================================================================
 	
+
+{% endraw %}

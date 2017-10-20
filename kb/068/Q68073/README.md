@@ -6,6 +6,8 @@ permalink: /kb/068/Q68073/
 
 ## Q68073: C1001: Internal Compiler Error: mactab.c:1.70, Line 482
 
+{% raw %}
+
 	Article: Q68073
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -46,3 +48,5 @@ permalink: /kb/068/Q68073/
 	      else low=5 ;
 	   }
 	}
+
+{% endraw %}

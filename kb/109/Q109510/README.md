@@ -6,6 +6,8 @@ permalink: /kb/109/Q109510/
 
 ## Q109510: Err Msg Changing Virtual Memory Setting: 32-Bit File Access...
 
+{% raw %}
+
 	Article: Q109510
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -82,3 +84,5 @@ permalink: /kb/109/Q109510/
 	
 	=============================================================================
 	
+
+{% endraw %}

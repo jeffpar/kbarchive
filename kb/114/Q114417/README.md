@@ -6,6 +6,8 @@ permalink: /kb/114/Q114417/
 
 ## Q114417: Net Help Start &lt;Service&gt; Works only for Windows NT 3.1 Services
 
+{% raw %}
+
 	Article: Q114417
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -42,3 +44,5 @@ permalink: /kb/114/Q114417/
 	
 	=============================================================================
 	
+
+{% endraw %}

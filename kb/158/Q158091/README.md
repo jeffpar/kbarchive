@@ -6,6 +6,8 @@ permalink: /kb/158/Q158091/
 
 ## Q158091: STL Sample for the list::list Functions
 
+{% raw %}
+
 	Article: Q158091
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -138,3 +140,5 @@ permalink: /kb/158/Q158091/
 	
 	=============================================================================
 	
+
+{% endraw %}

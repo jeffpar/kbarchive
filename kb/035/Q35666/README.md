@@ -6,6 +6,8 @@ permalink: /kb/035/Q35666/
 
 ## Q35666: In QB.EXE, Improper FOR NEXT Control after NEXT Is Inserted
 
+{% raw %}
+
 	Article: Q35666
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -49,3 +51,5 @@ permalink: /kb/035/Q35666/
 	
 	   If the NEXT is inserted after the already existing NEXT, the
 	   program runs correctly.
+
+{% endraw %}

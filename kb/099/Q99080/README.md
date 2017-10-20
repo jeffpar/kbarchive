@@ -6,6 +6,8 @@ permalink: /kb/099/Q99080/
 
 ## Q99080: Loading a Two-Player Chess Game
 
+{% raw %}
+
 	Article: Q99080
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -71,3 +73,5 @@ permalink: /kb/099/Q99080/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193269/
 
 ## Q193269: SMS: Remote Control to Win9x Clients Fails w/Winsock2, Using IP
 
+{% raw %}
+
 	Article: Q193269
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -318,3 +320,5 @@ permalink: /kb/193/Q193269/
 	
 	=============================================================================
 	
+
+{% endraw %}

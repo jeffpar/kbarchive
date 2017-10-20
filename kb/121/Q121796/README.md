@@ -6,6 +6,8 @@ permalink: /kb/121/Q121796/
 
 ## Q121796: PC WSPlus: Support for Timex Datalink and Schedule+ Interface
 
+{% raw %}
+
 	Article: Q121796
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -45,3 +47,5 @@ permalink: /kb/121/Q121796/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152779/
 
 ## Q152779: PRB: ODBC Driver &quot;unrecognized phrase/keyword&quot; Error
 
+{% raw %}
+
 	Article: Q152779
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:1.0
@@ -86,3 +88,5 @@ permalink: /kb/152/Q152779/
 	
 	=============================================================================
 	
+
+{% endraw %}

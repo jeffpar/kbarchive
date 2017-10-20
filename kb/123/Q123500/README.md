@@ -6,6 +6,8 @@ permalink: /kb/123/Q123500/
 
 ## Q123500: Administrators Permissions for a Printer Change to Read
 
+{% raw %}
+
 	Article: Q123500
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/123/Q123500/
 	
 	=============================================================================
 	
+
+{% endraw %}

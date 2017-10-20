@@ -6,6 +6,8 @@ permalink: /kb/159/Q159583/
 
 ## Q159583: Flight Simulator 95 and the SideWinder 3D Pro Joystick
 
+{% raw %}
+
 	Article: Q159583
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -72,3 +74,5 @@ permalink: /kb/159/Q159583/
 	
 	=============================================================================
 	
+
+{% endraw %}

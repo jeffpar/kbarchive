@@ -6,6 +6,8 @@ permalink: /kb/132/Q132590/
 
 ## Q132590: Math Co-Processor &quot;Present&quot;/&quot;Not Present&quot; Printed in English
 
+{% raw %}
+
 	Article: Q132590
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -43,3 +45,5 @@ permalink: /kb/132/Q132590/
 	
 	=============================================================================
 	
+
+{% endraw %}

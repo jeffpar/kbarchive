@@ -6,6 +6,8 @@ permalink: /kb/084/Q84963/
 
 ## Q84963: dBASE IV Text Not Being Displayed in Reverse Video in Cells
 
+{% raw %}
+
 	Article: Q84963
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/084/Q84963/
 	
 	=============================================================================
 	
+
+{% endraw %}

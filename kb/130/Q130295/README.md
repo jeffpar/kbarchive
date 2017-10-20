@@ -6,6 +6,8 @@ permalink: /kb/130/Q130295/
 
 ## Q130295: Problems Using Saved Colors with 256-Color Bitmap
 
+{% raw %}
+
 	Article: Q130295
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -65,3 +67,5 @@ permalink: /kb/130/Q130295/
 	
 	=============================================================================
 	
+
+{% endraw %}

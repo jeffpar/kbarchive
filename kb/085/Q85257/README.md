@@ -6,6 +6,8 @@ permalink: /kb/085/Q85257/
 
 ## Q85257: Banyan Err Msg: This Application Has Violated System...
 
+{% raw %}
+
 	Article: Q85257
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -72,3 +74,5 @@ permalink: /kb/085/Q85257/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196710/
 
 ## Q196710: INFO: Files Installed Windows 98&#92;SYSTEM Folder for VFP6 Setup
 
+{% raw %}
+
 	Article: Q196710
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -257,3 +259,5 @@ permalink: /kb/196/Q196710/
 	
 	=============================================================================
 	
+
+{% endraw %}

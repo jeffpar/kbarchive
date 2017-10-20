@@ -6,6 +6,8 @@ permalink: /kb/079/Q79143/
 
 ## Q79143: Using the /HIGH and /DS LINK Options
 
+{% raw %}
+
 	Article: Q79143
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:2.x,3.x,4.x,5.0x,5.2,5.3x,5.5,5.6
@@ -68,3 +70,5 @@ permalink: /kb/079/Q79143/
 	
 	=============================================================================
 	
+
+{% endraw %}

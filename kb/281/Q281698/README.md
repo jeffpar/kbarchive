@@ -6,6 +6,8 @@ permalink: /kb/281/Q281698/
 
 ## Q281698: FIX: Error When You Run EXE Remotely Using UNC Name with Spaces
 
+{% raw %}
+
 	Article: Q281698
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -87,3 +89,5 @@ permalink: /kb/281/Q281698/
 	
 	=============================================================================
 	
+
+{% endraw %}

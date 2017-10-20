@@ -6,6 +6,8 @@ permalink: /kb/156/Q156898/
 
 ## Q156898: STL Sample for deque::assign and deque::swap Functions
 
+{% raw %}
+
 	Article: Q156898
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -174,3 +176,5 @@ permalink: /kb/156/Q156898/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/278/Q278013/
 
 ## Q278013: BUG: ASP Error 80070005 When You Create a Visual Basic Component
 
+{% raw %}
+
 	Article: Q278013
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -89,3 +91,5 @@ permalink: /kb/278/Q278013/
 	
 	=============================================================================
 	
+
+{% endraw %}

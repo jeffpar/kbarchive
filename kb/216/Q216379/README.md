@@ -6,6 +6,8 @@ permalink: /kb/216/Q216379/
 
 ## Q216379: FIX: Visual Basic 6.0 Booleans are Coerced to Localized Strings
 
+{% raw %}
+
 	Article: Q216379
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -111,3 +113,5 @@ permalink: /kb/216/Q216379/
 	
 	=============================================================================
 	
+
+{% endraw %}

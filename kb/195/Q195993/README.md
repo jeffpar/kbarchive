@@ -6,6 +6,8 @@ permalink: /kb/195/Q195993/
 
 ## Q195993: WD97: Invalid Parameter Error When Inserting Address
 
+{% raw %}
+
 	Article: Q195993
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97; :4.0
@@ -67,3 +69,5 @@ permalink: /kb/195/Q195993/
 	
 	=============================================================================
 	
+
+{% endraw %}

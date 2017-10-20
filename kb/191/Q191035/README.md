@@ -6,6 +6,8 @@ permalink: /kb/191/Q191035/
 
 ## Q191035: BUG: Changes to WebClass Templates Are Not Always Detected
 
+{% raw %}
+
 	Article: Q191035
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -70,3 +72,5 @@ permalink: /kb/191/Q191035/
 	
 	=============================================================================
 	
+
+{% endraw %}

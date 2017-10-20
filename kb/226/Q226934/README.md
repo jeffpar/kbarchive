@@ -6,6 +6,8 @@ permalink: /kb/226/Q226934/
 
 ## Q226934: How To Create a Setup.log With SNA 4.0 SP2 Update.exe.
 
+{% raw %}
+
 	Article: Q226934
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0SP2
@@ -68,3 +70,5 @@ permalink: /kb/226/Q226934/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118786/
 
 ## Q118786: FFAPI: The Role of Application FFAPI
 
+{% raw %}
+
 	Article: Q118786
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/118/Q118786/
 	
 	=============================================================================
 	
+
+{% endraw %}

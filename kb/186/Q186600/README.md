@@ -6,6 +6,8 @@ permalink: /kb/186/Q186600/
 
 ## Q186600: Do Not Use Screen Savers with Terminal Server
 
+{% raw %}
+
 	Article: Q186600
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -41,3 +43,5 @@ permalink: /kb/186/Q186600/
 	
 	=============================================================================
 	
+
+{% endraw %}

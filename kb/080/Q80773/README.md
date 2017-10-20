@@ -6,6 +6,8 @@ permalink: /kb/080/Q80773/
 
 ## Q80773: File Manager Window Not Visible
 
+{% raw %}
+
 	Article: Q80773
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -88,3 +90,5 @@ permalink: /kb/080/Q80773/
 	
 	=============================================================================
 	
+
+{% endraw %}

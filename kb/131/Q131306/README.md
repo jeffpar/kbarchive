@@ -6,6 +6,8 @@ permalink: /kb/131/Q131306/
 
 ## Q131306: Transferring Data Between General Fields Programmatically
 
+{% raw %}
+
 	Article: Q131306
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -75,3 +77,5 @@ permalink: /kb/131/Q131306/
 	
 	=============================================================================
 	
+
+{% endraw %}

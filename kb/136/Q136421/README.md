@@ -6,6 +6,8 @@ permalink: /kb/136/Q136421/
 
 ## Q136421: How NULL Values Sort in Indexes
 
+{% raw %}
+
 	Article: Q136421
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/136/Q136421/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148684/
 
 ## Q148684: What to Do When You Can't Open the FoxPro Macintosh Help File
 
+{% raw %}
+
 	Article: Q148684
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -88,3 +90,5 @@ permalink: /kb/148/Q148684/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154556/
 
 ## Q154556: Delegation Requires a Stop and Restart of the DNS Server
 
+{% raw %}
+
 	Article: Q154556
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -95,3 +97,5 @@ permalink: /kb/154/Q154556/
 	
 	=============================================================================
 	
+
+{% endraw %}

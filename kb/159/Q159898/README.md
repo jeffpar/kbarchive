@@ -6,6 +6,8 @@ permalink: /kb/159/Q159898/
 
 ## Q159898: Games: Using 3D Hardware Acceleration with Diamond Stealth 3D
 
+{% raw %}
+
 	Article: Q159898
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -77,3 +79,5 @@ permalink: /kb/159/Q159898/
 	
 	=============================================================================
 	
+
+{% endraw %}

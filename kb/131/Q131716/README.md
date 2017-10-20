@@ -6,6 +6,8 @@ permalink: /kb/131/Q131716/
 
 ## Q131716: 16-bit Program Group Control Requires Drive Letter
 
+{% raw %}
+
 	Article: Q131716
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -45,3 +47,5 @@ permalink: /kb/131/Q131716/
 	
 	=============================================================================
 	
+
+{% endraw %}

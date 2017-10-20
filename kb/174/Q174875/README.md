@@ -6,6 +6,8 @@ permalink: /kb/174/Q174875/
 
 ## Q174875: FIX: Bogus &quot;File is exclusively checked out&quot; Error
 
+{% raw %}
+
 	Article: Q174875
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/174/Q174875/
 	
 	=============================================================================
 	
+
+{% endraw %}

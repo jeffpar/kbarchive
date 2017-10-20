@@ -6,6 +6,8 @@ permalink: /kb/123/Q123285/
 
 ## Q123285: IPCONFIG Displays Invalid Results
 
+{% raw %}
+
 	Article: Q123285
 	Product(s): Microsoft Windows NT
 	Version(s): 3.00 2.20C
@@ -63,3 +65,5 @@ permalink: /kb/123/Q123285/
 	
 	=============================================================================
 	
+
+{% endraw %}

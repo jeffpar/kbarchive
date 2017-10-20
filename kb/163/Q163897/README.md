@@ -6,6 +6,8 @@ permalink: /kb/163/Q163897/
 
 ## Q163897: Using GSI Model 18 Add-in IDE Controller Causes STOP 0x7B
 
+{% raw %}
+
 	Article: Q163897
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/163/Q163897/
 	
 	=============================================================================
 	
+
+{% endraw %}

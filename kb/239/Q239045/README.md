@@ -6,6 +6,8 @@ permalink: /kb/239/Q239045/
 
 ## Q239045: IIS: Receives a &quot;500 Server Error&quot; Accessing the Admin Web Site
 
+{% raw %}
+
 	Article: Q239045
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -65,3 +67,5 @@ permalink: /kb/239/Q239045/
 	
 	=============================================================================
 	
+
+{% endraw %}

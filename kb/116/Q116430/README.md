@@ -6,6 +6,8 @@ permalink: /kb/116/Q116430/
 
 ## Q116430: PPT: Font Substitutions - Macintosh to Windows
 
+{% raw %}
+
 	Article: Q116430
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,4.0a,4.0c,7.0
@@ -80,3 +82,5 @@ permalink: /kb/116/Q116430/
 	
 	=============================================================================
 	
+
+{% endraw %}

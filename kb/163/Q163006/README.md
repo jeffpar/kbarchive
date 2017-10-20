@@ -6,6 +6,8 @@ permalink: /kb/163/Q163006/
 
 ## Q163006: Section Heading of 32 or More Characters Truncated
 
+{% raw %}
+
 	Article: Q163006
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -54,3 +56,5 @@ permalink: /kb/163/Q163006/
 	
 	=============================================================================
 	
+
+{% endraw %}

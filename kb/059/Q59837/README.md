@@ -6,6 +6,8 @@ permalink: /kb/059/Q59837/
 
 ## Q59837: How to Write Directly to Video Memory Under OS/2
 
+{% raw %}
+
 	Article: Q59837
 	Product(s): See article
 	Version(s): 5.10
@@ -99,3 +101,5 @@ permalink: /kb/059/Q59837/
 	    /* We're done, so we can unlock the video buffer. */
 	    VioScrUnLock(0);
 	}
+
+{% endraw %}

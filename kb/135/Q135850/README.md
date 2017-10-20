@@ -6,6 +6,8 @@ permalink: /kb/135/Q135850/
 
 ## Q135850: SMS: No Query Results Returned When SQL Tempdb Is Too Small
 
+{% raw %}
+
 	Article: Q135850
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -102,3 +104,5 @@ permalink: /kb/135/Q135850/
 	
 	=============================================================================
 	
+
+{% endraw %}

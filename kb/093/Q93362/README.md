@@ -6,6 +6,8 @@ permalink: /kb/093/Q93362/
 
 ## Q93362: C2 Evaluation and Certification for Windows NT
 
+{% raw %}
+
 	Article: Q93362
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -117,3 +119,5 @@ permalink: /kb/093/Q93362/
 	
 	=============================================================================
 	
+
+{% endraw %}

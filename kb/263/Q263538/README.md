@@ -6,6 +6,8 @@ permalink: /kb/263/Q263538/
 
 ## Q263538: XWEB: How to Move Messages to Folders in OWA
 
+{% raw %}
+
 	Article: Q263538
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -57,3 +59,5 @@ permalink: /kb/263/Q263538/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141313/
 
 ## Q141313: How to Have One Executable Call Another w/FoxPro for Macintosh
 
+{% raw %}
+
 	Article: Q141313
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -71,3 +73,5 @@ permalink: /kb/141/Q141313/
 	
 	=============================================================================
 	
+
+{% endraw %}

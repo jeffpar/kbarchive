@@ -6,6 +6,8 @@ permalink: /kb/157/Q157275/
 
 ## Q157275: Troubleshooting Dual-Channel ISDN Connection Problems
 
+{% raw %}
+
 	Article: Q157275
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5
@@ -94,3 +96,5 @@ permalink: /kb/157/Q157275/
 	
 	=============================================================================
 	
+
+{% endraw %}

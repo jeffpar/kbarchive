@@ -6,6 +6,8 @@ permalink: /kb/192/Q192099/
 
 ## Q192099: FIX: STATIC_DOWNCAST and DYNAMIC_DOWNCAST
 
+{% raw %}
+
 	Article: Q192099
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,5.0
@@ -127,3 +129,5 @@ permalink: /kb/192/Q192099/
 	
 	=============================================================================
 	
+
+{% endraw %}

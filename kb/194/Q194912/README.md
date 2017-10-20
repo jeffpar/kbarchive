@@ -6,6 +6,8 @@ permalink: /kb/194/Q194912/
 
 ## Q194912: FIX: Add Method of Forms Collection Fails in Executable
 
+{% raw %}
+
 	Article: Q194912
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -158,3 +160,5 @@ permalink: /kb/194/Q194912/
 	
 	=============================================================================
 	
+
+{% endraw %}

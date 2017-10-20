@@ -6,6 +6,8 @@ permalink: /kb/148/Q148418/
 
 ## Q148418: XCLN: Line Underneath From: Header May Be Displayed
 
+{% raw %}
+
 	Article: Q148418
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -57,3 +59,5 @@ permalink: /kb/148/Q148418/
 	
 	=============================================================================
 	
+
+{% endraw %}

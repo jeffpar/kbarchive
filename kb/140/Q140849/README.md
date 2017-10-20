@@ -6,6 +6,8 @@ permalink: /kb/140/Q140849/
 
 ## Q140849: HOWTO: Make a PageFrame Work with the Wizard Txtbtns Class
 
+{% raw %}
+
 	Article: Q140849
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -86,3 +88,5 @@ permalink: /kb/140/Q140849/
 	
 	=============================================================================
 	
+
+{% endraw %}

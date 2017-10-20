@@ -6,6 +6,8 @@ permalink: /kb/178/Q178230/
 
 ## Q178230: INFO: Summary List: Visual C++ Version 4.2 Known Problems
 
+{% raw %}
+
 	Article: Q178230
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,4.2b
@@ -543,3 +545,5 @@ permalink: /kb/178/Q178230/
 	
 	=============================================================================
 	
+
+{% endraw %}

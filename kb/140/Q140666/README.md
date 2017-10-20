@@ -6,6 +6,8 @@ permalink: /kb/140/Q140666/
 
 ## Q140666: Macintosh Music Central: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q140666
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -102,3 +104,5 @@ permalink: /kb/140/Q140666/
 	
 	=============================================================================
 	
+
+{% endraw %}

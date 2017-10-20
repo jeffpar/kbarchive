@@ -6,6 +6,8 @@ permalink: /kb/073/Q73747/
 
 ## Q73747: QDOS II Must Be Upgraded for Use with MS-DOS
 
+{% raw %}
+
 	Article: Q73747
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -58,3 +60,5 @@ permalink: /kb/073/Q73747/
 	
 	=============================================================================
 	
+
+{% endraw %}

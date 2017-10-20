@@ -6,6 +6,8 @@ permalink: /kb/193/Q193917/
 
 ## Q193917: Encarta Err Msg: Enc99 Caused a General Protection Fault...
 
+{% raw %}
+
 	Article: Q193917
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -124,3 +126,5 @@ permalink: /kb/193/Q193917/
 	
 	=============================================================================
 	
+
+{% endraw %}

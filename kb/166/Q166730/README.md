@@ -6,6 +6,8 @@ permalink: /kb/166/Q166730/
 
 ## Q166730: With Unencrypted Password SP3 Fails to Connect to SMB Server
 
+{% raw %}
+
 	Article: Q166730
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP3,4.0 SP4
@@ -105,3 +107,5 @@ permalink: /kb/166/Q166730/
 	
 	=============================================================================
 	
+
+{% endraw %}

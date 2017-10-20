@@ -6,6 +6,8 @@ permalink: /kb/193/Q193386/
 
 ## Q193386: MSJET35.dll Error Installing Microsoft Office 97 SR2
 
+{% raw %}
+
 	Article: Q193386
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/193/Q193386/
 	
 	=============================================================================
 	
+
+{% endraw %}

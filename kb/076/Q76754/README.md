@@ -6,6 +6,8 @@ permalink: /kb/076/Q76754/
 
 ## Q76754: Windows Err Msg: Unknown File Copy Failure
 
+{% raw %}
+
 	Article: Q76754
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -54,3 +56,5 @@ permalink: /kb/076/Q76754/
 	
 	=============================================================================
 	
+
+{% endraw %}

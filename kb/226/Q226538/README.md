@@ -6,6 +6,8 @@ permalink: /kb/226/Q226538/
 
 ## Q226538: TCP/IP Clients Lose Connections To Multihomed SNA Server
 
+{% raw %}
+
 	Article: Q226538
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11SP1,2.11SP2,3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
@@ -88,3 +90,5 @@ permalink: /kb/226/Q226538/
 	
 	=============================================================================
 	
+
+{% endraw %}

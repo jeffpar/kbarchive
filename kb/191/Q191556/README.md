@@ -6,6 +6,8 @@ permalink: /kb/191/Q191556/
 
 ## Q191556: Urban Assault Does Not Start After Introductory Movie Is Played
 
+{% raw %}
+
 	Article: Q191556
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/191/Q191556/
 	
 	=============================================================================
 	
+
+{% endraw %}

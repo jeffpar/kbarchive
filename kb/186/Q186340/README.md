@@ -6,6 +6,8 @@ permalink: /kb/186/Q186340/
 
 ## Q186340: NAT Routers Disallow Setup of One-way Trusts Between Domains
 
+{% raw %}
+
 	Article: Q186340
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -68,3 +70,5 @@ permalink: /kb/186/Q186340/
 	
 	=============================================================================
 	
+
+{% endraw %}

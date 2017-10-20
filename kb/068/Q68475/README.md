@@ -6,6 +6,8 @@ permalink: /kb/068/Q68475/
 
 ## Q68475: PRB: C2118: Negative Subscript May Be Caused by int Expression
 
+{% raw %}
+
 	Article: Q68475
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,2.0,2.1,4.0,5.0
@@ -101,3 +103,5 @@ permalink: /kb/068/Q68475/
 	
 	=============================================================================
 	
+
+{% endraw %}

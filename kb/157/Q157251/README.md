@@ -6,6 +6,8 @@ permalink: /kb/157/Q157251/
 
 ## Q157251: Changing Video Card Produces Error Message
 
+{% raw %}
+
 	Article: Q157251
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -92,3 +94,5 @@ permalink: /kb/157/Q157251/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/272/Q272492/
 
 ## Q272492: POP3 and IMAP Clients Are Not Authenicated on Exchange Server
 
+{% raw %}
+
 	Article: Q272492
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -86,3 +88,5 @@ permalink: /kb/272/Q272492/
 	
 	=============================================================================
 	
+
+{% endraw %}

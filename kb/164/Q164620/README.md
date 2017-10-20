@@ -6,6 +6,8 @@ permalink: /kb/164/Q164620/
 
 ## Q164620: FP: How to Add a Script to the ActiveX Calendar Control
 
+{% raw %}
+
 	Article: Q164620
 	Product(s): Word Front Page
 	Version(s): 
@@ -106,3 +108,5 @@ permalink: /kb/164/Q164620/
 	
 	=============================================================================
 	
+
+{% endraw %}

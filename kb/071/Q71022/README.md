@@ -6,6 +6,8 @@ permalink: /kb/071/Q71022/
 
 ## Q71022: BUG: RC Error RW1008 If NULL Entry in PATH
 
+{% raw %}
+
 	Article: Q71022
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -47,3 +49,5 @@ permalink: /kb/071/Q71022/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/273/Q273356/
 
 ## Q273356: XFOR: &quot;&#92;&#92;&quot; in Meeting Request Migrated From Notes to Exch Double
 
+{% raw %}
+
 	Article: Q273356
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -91,3 +93,5 @@ permalink: /kb/273/Q273356/
 	
 	=============================================================================
 	
+
+{% endraw %}

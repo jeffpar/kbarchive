@@ -6,6 +6,8 @@ permalink: /kb/068/Q68168/
 
 ## Q68168: Using the GeoGraphics Geological Survey Program with Windows
 
+{% raw %}
+
 	Article: Q68168
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -53,3 +55,5 @@ permalink: /kb/068/Q68168/
 	
 	=============================================================================
 	
+
+{% endraw %}

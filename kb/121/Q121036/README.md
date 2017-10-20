@@ -6,6 +6,8 @@ permalink: /kb/121/Q121036/
 
 ## Q121036: MAC Musical Instruments: README Contents
 
+{% raw %}
+
 	Article: Q121036
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -311,3 +313,5 @@ permalink: /kb/121/Q121036/
 	
 	=============================================================================
 	
+
+{% endraw %}

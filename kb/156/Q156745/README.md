@@ -6,6 +6,8 @@ permalink: /kb/156/Q156745/
 
 ## Q156745: SMS: App Log Error: Remote Control Keyboard Driver Failed...
 
+{% raw %}
+
 	Article: Q156745
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -64,3 +66,5 @@ permalink: /kb/156/Q156745/
 	
 	=============================================================================
 	
+
+{% endraw %}

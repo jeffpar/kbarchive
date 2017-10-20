@@ -6,6 +6,8 @@ permalink: /kb/072/Q72161/
 
 ## Q72161: MS-DOS 5 README.TXT: Notes on Memory Management
 
+{% raw %}
+
 	Article: Q72161
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -59,3 +61,5 @@ permalink: /kb/072/Q72161/
 	
 	=============================================================================
 	
+
+{% endraw %}

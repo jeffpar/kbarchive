@@ -6,6 +6,8 @@ permalink: /kb/101/Q101878/
 
 ## Q101878: Windows NT RAS Server Port Reset
 
+{% raw %}
+
 	Article: Q101878
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -82,3 +84,5 @@ permalink: /kb/101/Q101878/
 	
 	=============================================================================
 	
+
+{% endraw %}

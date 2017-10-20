@@ -6,6 +6,8 @@ permalink: /kb/168/Q168105/
 
 ## Q168105: WinNT Fails to Create a Memory.dmp On Any Other LUN Than 0
 
+{% raw %}
+
 	Article: Q168105
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -116,3 +118,5 @@ permalink: /kb/168/Q168105/
 	
 	=============================================================================
 	
+
+{% endraw %}

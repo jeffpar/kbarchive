@@ -6,6 +6,8 @@ permalink: /kb/082/Q82470/
 
 ## Q82470: No System Event Sounds After Installing Sound Driver
 
+{% raw %}
+
 	Article: Q82470
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/082/Q82470/
 	
 	=============================================================================
 	
+
+{% endraw %}

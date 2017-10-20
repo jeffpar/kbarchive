@@ -6,6 +6,8 @@ permalink: /kb/170/Q170376/
 
 ## Q170376: XFOR: Surgically Removing LinkAge Connectors and Dirsync Compone
 
+{% raw %}
+
 	Article: Q170376
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -57,3 +59,5 @@ permalink: /kb/170/Q170376/
 	
 	=============================================================================
 	
+
+{% endraw %}

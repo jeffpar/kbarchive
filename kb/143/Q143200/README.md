@@ -6,6 +6,8 @@ permalink: /kb/143/Q143200/
 
 ## Q143200: RAS Server Does Not Prompt Client for a Callback Number
 
+{% raw %}
+
 	Article: Q143200
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -64,3 +66,5 @@ permalink: /kb/143/Q143200/
 	
 	=============================================================================
 	
+
+{% endraw %}

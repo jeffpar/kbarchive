@@ -6,6 +6,8 @@ permalink: /kb/150/Q150164/
 
 ## Q150164: VFBACKUP Could Not Load VFD.VXD
 
+{% raw %}
+
 	Article: Q150164
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -104,3 +106,5 @@ permalink: /kb/150/Q150164/
 	
 	=============================================================================
 	
+
+{% endraw %}

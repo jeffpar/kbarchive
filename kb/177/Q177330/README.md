@@ -6,6 +6,8 @@ permalink: /kb/177/Q177330/
 
 ## Q177330: XWEB: How to Set Default Calendar Backend for OWA Client
 
+{% raw %}
+
 	Article: Q177330
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -105,3 +107,5 @@ permalink: /kb/177/Q177330/
 	
 	=============================================================================
 	
+
+{% endraw %}

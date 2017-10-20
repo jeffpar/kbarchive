@@ -6,6 +6,8 @@ permalink: /kb/194/Q194115/
 
 ## Q194115: HOWTO: Use ADSI in VB to Enumerate the Computers in an NT Domain
 
+{% raw %}
+
 	Article: Q194115
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.5,5.0,6.0
@@ -167,3 +169,5 @@ permalink: /kb/194/Q194115/
 	
 	=============================================================================
 	
+
+{% endraw %}

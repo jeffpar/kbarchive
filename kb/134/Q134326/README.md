@@ -6,6 +6,8 @@ permalink: /kb/134/Q134326/
 
 ## Q134326: Windows NT 3.5 Service Pack 2 Does Not Detect Windows NT Version
 
+{% raw %}
+
 	Article: Q134326
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/134/Q134326/
 	
 	=============================================================================
 	
+
+{% endraw %}

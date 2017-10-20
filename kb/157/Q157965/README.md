@@ -6,6 +6,8 @@ permalink: /kb/157/Q157965/
 
 ## Q157965: Inventory Taken at Every Login When Scan Interval Is One Day
 
+{% raw %}
+
 	Article: Q157965
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -68,3 +70,5 @@ permalink: /kb/157/Q157965/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/215/Q215404/
 
 ## Q215404: BUG: Graphical Style Property of CheckBox Does Not Work
 
+{% raw %}
+
 	Article: Q215404
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -67,3 +69,5 @@ permalink: /kb/215/Q215404/
 	
 	=============================================================================
 	
+
+{% endraw %}

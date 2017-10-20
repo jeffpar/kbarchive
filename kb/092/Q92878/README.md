@@ -6,6 +6,8 @@ permalink: /kb/092/Q92878/
 
 ## Q92878: WFWG NET.EXE Err Msg: MS-DOS Popup for Workgroups Could Not...
 
+{% raw %}
+
 	Article: Q92878
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/092/Q92878/
 	
 	=============================================================================
 	
+
+{% endraw %}

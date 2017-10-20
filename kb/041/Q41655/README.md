@@ -6,6 +6,8 @@ permalink: /kb/041/Q41655/
 
 ## Q41655: QuickC 2.00 README.DOC: Creating a .COM File (/BI)
 
+{% raw %}
+
 	Article: Q41655
 	Product(s): See article
 	Version(s): 2.00
@@ -21,3 +23,5 @@ permalink: /kb/041/Q41655/
 	
 	Delete this section (5.4.2). The linkers that shipped with QuickC 2.00
 	do not support the /BI option.
+
+{% endraw %}

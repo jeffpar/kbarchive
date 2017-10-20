@@ -6,6 +6,8 @@ permalink: /kb/160/Q160120/
 
 ## Q160120: ADT95: Error Installing ADT Application with OLE Controls
 
+{% raw %}
+
 	Article: Q160120
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0
@@ -134,3 +136,5 @@ permalink: /kb/160/Q160120/
 	
 	=============================================================================
 	
+
+{% endraw %}

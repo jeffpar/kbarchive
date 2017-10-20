@@ -6,6 +6,8 @@ permalink: /kb/173/Q173836/
 
 ## Q173836: Learn VB Now Hangs With IE 4.0 Platform Preview
 
+{% raw %}
+
 	Article: Q173836
 	Product(s): Microsoft Press
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/173/Q173836/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/268/Q268847/
 
 ## Q268847: PRB: Assign Method/Optimistic Buffering Makes GetFieldState = 2
 
+{% raw %}
+
 	Article: Q268847
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -191,3 +193,5 @@ permalink: /kb/268/Q268847/
 	
 	=============================================================================
 	
+
+{% endraw %}

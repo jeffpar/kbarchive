@@ -6,6 +6,8 @@ permalink: /kb/236/Q236782/
 
 ## Q236782: Mapi32.dll File Is Not Included in Service Pack 4 or Later
 
+{% raw %}
+
 	Article: Q236782
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -42,3 +44,5 @@ permalink: /kb/236/Q236782/
 	
 	=============================================================================
 	
+
+{% endraw %}

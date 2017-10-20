@@ -6,6 +6,8 @@ permalink: /kb/087/Q87046/
 
 ## Q87046: SMTP: How the Gateway Communicates with the SMTP World
 
+{% raw %}
+
 	Article: Q87046
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -41,3 +43,5 @@ permalink: /kb/087/Q87046/
 	
 	=============================================================================
 	
+
+{% endraw %}

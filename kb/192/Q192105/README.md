@@ -6,6 +6,8 @@ permalink: /kb/192/Q192105/
 
 ## Q192105: HOWTO: Programmatically Creating and Building a Project
 
+{% raw %}
+
 	Article: Q192105
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -115,3 +117,5 @@ permalink: /kb/192/Q192105/
 	
 	=============================================================================
 	
+
+{% endraw %}

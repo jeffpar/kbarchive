@@ -6,6 +6,8 @@ permalink: /kb/077/Q77697/
 
 ## Q77697: PRB: sndPlaySound with SND_MEMORY and SND_ASYNC Flags Hangs
 
+{% raw %}
+
 	Article: Q77697
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -69,3 +71,5 @@ permalink: /kb/077/Q77697/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196391/
 
 ## Q196391: Factors Affecting COMTI Performance.
 
+{% raw %}
+
 	Article: Q196391
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2
@@ -266,3 +268,5 @@ permalink: /kb/196/Q196391/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151825/
 
 ## Q151825: Gateway Error When Run CGI Application Connecting to Database
 
+{% raw %}
+
 	Article: Q151825
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0,3.0,4.0
@@ -70,3 +72,5 @@ permalink: /kb/151/Q151825/
 	
 	=============================================================================
 	
+
+{% endraw %}

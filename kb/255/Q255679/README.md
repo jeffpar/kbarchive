@@ -6,6 +6,8 @@ permalink: /kb/255/Q255679/
 
 ## Q255679: TPU: Outlook Bar Displayed After User Is Removed from Workspace
 
+{% raw %}
+
 	Article: Q255679
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5; :
@@ -54,3 +56,5 @@ permalink: /kb/255/Q255679/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/274/Q274525/
 
 ## Q274525: MSN Companion sets up automatically to other member ID
 
+{% raw %}
+
 	Article: Q274525
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -150,3 +152,5 @@ permalink: /kb/274/Q274525/
 	
 	=============================================================================
 	
+
+{% endraw %}

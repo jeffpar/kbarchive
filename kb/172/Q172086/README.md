@@ -6,6 +6,8 @@ permalink: /kb/172/Q172086/
 
 ## Q172086: FIX: Data Corruption with Row Buffering in Visual FoxPro 3.0
 
+{% raw %}
+
 	Article: Q172086
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -124,3 +126,5 @@ permalink: /kb/172/Q172086/
 	
 	=============================================================================
 	
+
+{% endraw %}

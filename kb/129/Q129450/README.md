@@ -6,6 +6,8 @@ permalink: /kb/129/Q129450/
 
 ## Q129450: PRB: &quot;For Each&quot; Behavior on Dynamically Changing Control Array
 
+{% raw %}
+
 	Article: Q129450
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -111,3 +113,5 @@ permalink: /kb/129/Q129450/
 	
 	=============================================================================
 	
+
+{% endraw %}

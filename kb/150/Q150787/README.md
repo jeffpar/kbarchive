@@ -6,6 +6,8 @@ permalink: /kb/150/Q150787/
 
 ## Q150787: Encarta 96: Contents of the October 1995 Yearbook Update
 
+{% raw %}
+
 	Article: Q150787
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :1996 edition
@@ -85,3 +87,5 @@ permalink: /kb/150/Q150787/
 	
 	=============================================================================
 	
+
+{% endraw %}

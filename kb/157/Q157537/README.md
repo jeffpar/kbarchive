@@ -6,6 +6,8 @@ permalink: /kb/157/Q157537/
 
 ## Q157537: Windows NT Backup Does Not Recognize Multiple Tape Partitions
 
+{% raw %}
+
 	Article: Q157537
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/157/Q157537/
 	
 	=============================================================================
 	
+
+{% endraw %}

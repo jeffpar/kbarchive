@@ -6,6 +6,8 @@ permalink: /kb/259/Q259575/
 
 ## Q259575: XADM:  How to Determine Which User Deleted an Exchange Recipient
 
+{% raw %}
+
 	Article: Q259575
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -117,3 +119,5 @@ permalink: /kb/259/Q259575/
 	
 	=============================================================================
 	
+
+{% endraw %}

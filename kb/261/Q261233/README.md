@@ -6,6 +6,8 @@ permalink: /kb/261/Q261233/
 
 ## Q261233: Changing or Adding a Record Selection Formula in Crystal Reports
 
+{% raw %}
+
 	Article: Q261233
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -84,3 +86,5 @@ permalink: /kb/261/Q261233/
 	
 	=============================================================================
 	
+
+{% endraw %}

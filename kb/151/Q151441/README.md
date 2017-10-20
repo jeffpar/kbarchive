@@ -6,6 +6,8 @@ permalink: /kb/151/Q151441/
 
 ## Q151441: 3D Movie Maker: Cannot Hear Background Music
 
+{% raw %}
+
 	Article: Q151441
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -94,3 +96,5 @@ permalink: /kb/151/Q151441/
 	
 	=============================================================================
 	
+
+{% endraw %}

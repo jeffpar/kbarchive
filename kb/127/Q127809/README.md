@@ -6,6 +6,8 @@ permalink: /kb/127/Q127809/
 
 ## Q127809: Practical Peripherals Modems Need Firmware Update for MS Fax
 
+{% raw %}
+
 	Article: Q127809
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/127/Q127809/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136711/
 
 ## Q136711: Error 2140 When Starting Service With Parameters
 
+{% raw %}
+
 	Article: Q136711
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/136/Q136711/
 	
 	=============================================================================
 	
+
+{% endraw %}

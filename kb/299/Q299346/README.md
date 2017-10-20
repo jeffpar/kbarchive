@@ -6,6 +6,8 @@ permalink: /kb/299/Q299346/
 
 ## Q299346: Windows 2000 Resource Kits Include Wrong Files
 
+{% raw %}
+
 	Article: Q299346
 	Product(s): Microsoft Press
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/299/Q299346/
 	
 	=============================================================================
 	
+
+{% endraw %}

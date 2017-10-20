@@ -6,6 +6,8 @@ permalink: /kb/077/Q77668/
 
 ## Q77668: PC OS2: Libraries Installed During PM Client Setup
 
+{% raw %}
+
 	Article: Q77668
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.0b,3.2,3.2a
@@ -52,3 +54,5 @@ permalink: /kb/077/Q77668/
 	
 	=============================================================================
 	
+
+{% endraw %}

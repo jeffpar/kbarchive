@@ -6,6 +6,8 @@ permalink: /kb/082/Q82094/
 
 ## Q82094: Microsoft Replacement MOUSE.DRV May Hang Windows
 
+{% raw %}
+
 	Article: Q82094
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -76,3 +78,5 @@ permalink: /kb/082/Q82094/
 	
 	=============================================================================
 	
+
+{% endraw %}

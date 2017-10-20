@@ -6,6 +6,8 @@ permalink: /kb/061/Q61676/
 
 ## Q61676: Expanded Memory Emulators Slow Down Floating-Point Operations
 
+{% raw %}
+
 	Article: Q61676
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -46,3 +48,5 @@ permalink: /kb/061/Q61676/
 	checks to see if it should handle the interrupt. This extra processing
 	by the virtual machine manager is responsible for the reduced
 	performance.
+
+{% endraw %}

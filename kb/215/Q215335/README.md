@@ -6,6 +6,8 @@ permalink: /kb/215/Q215335/
 
 ## Q215335: XADM: Disabling Per-user Read/Unread Properties on Public Folder
 
+{% raw %}
+
 	Article: Q215335
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -95,3 +97,5 @@ permalink: /kb/215/Q215335/
 	
 	=============================================================================
 	
+
+{% endraw %}

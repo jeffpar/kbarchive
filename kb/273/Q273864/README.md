@@ -6,6 +6,8 @@ permalink: /kb/273/Q273864/
 
 ## Q273864: Asheron's Call: How to Securely Trade with Another Player
 
+{% raw %}
+
 	Article: Q273864
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -53,3 +55,5 @@ permalink: /kb/273/Q273864/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/275/Q275641/
 
 ## Q275641: Encarta 2001: Pinpointer Missing or Find Feature Does Not Work
 
+{% raw %}
+
 	Article: Q275641
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -320,3 +322,5 @@ permalink: /kb/275/Q275641/
 	
 	=============================================================================
 	
+
+{% endraw %}

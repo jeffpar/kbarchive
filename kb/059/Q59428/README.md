@@ -6,6 +6,8 @@ permalink: /kb/059/Q59428/
 
 ## Q59428: Bad EXE Result, Expression Indexing Dynamic Long Integer Array
 
+{% raw %}
+
 	Article: Q59428
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -96,3 +98,5 @@ permalink: /kb/059/Q59428/
 	   PRINT "Fail=", Fail&, "Work=", Work&      'Should print two 0's, but
 	                                             'Fail& gives garbage.
 	NEXT j%
+
+{% endraw %}

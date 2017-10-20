@@ -6,6 +6,8 @@ permalink: /kb/132/Q132697/
 
 ## Q132697: PRB: Application Appears Then Exits to Operating System
 
+{% raw %}
+
 	Article: Q132697
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 5.00
@@ -145,3 +147,5 @@ permalink: /kb/132/Q132697/
 	
 	=============================================================================
 	
+
+{% endraw %}

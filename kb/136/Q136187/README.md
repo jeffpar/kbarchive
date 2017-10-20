@@ -6,6 +6,8 @@ permalink: /kb/136/Q136187/
 
 ## Q136187: DOC: Missing ALL Clause on Page 46 of Developer's Guide
 
+{% raw %}
+
 	Article: Q136187
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -48,3 +50,5 @@ permalink: /kb/136/Q136187/
 	
 	=============================================================================
 	
+
+{% endraw %}

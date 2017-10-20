@@ -6,6 +6,8 @@ permalink: /kb/172/Q172238/
 
 ## Q172238: Snatrace Doesn't Set Global Trace Properties on Remote Computer
 
+{% raw %}
+
 	Article: Q172238
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -59,3 +61,5 @@ permalink: /kb/172/Q172238/
 	
 	=============================================================================
 	
+
+{% endraw %}

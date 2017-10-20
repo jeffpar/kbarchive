@@ -6,6 +6,8 @@ permalink: /kb/173/Q173854/
 
 ## Q173854: WD97: Cannot View Graphics Inserted with Image Submit Control
 
+{% raw %}
+
 	Article: Q173854
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -254,3 +256,5 @@ permalink: /kb/173/Q173854/
 	
 	=============================================================================
 	
+
+{% endraw %}

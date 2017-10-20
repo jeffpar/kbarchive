@@ -6,6 +6,8 @@ permalink: /kb/272/Q272114/
 
 ## Q272114: BUG: EndPage() Fails with Large Spool Files
 
+{% raw %}
+
 	Article: Q272114
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -53,3 +55,5 @@ permalink: /kb/272/Q272114/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135763/
 
 ## Q135763: Single-User Error Opening File in FileMaker Pro for Windows
 
+{% raw %}
+
 	Article: Q135763
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.5,3.51
@@ -72,3 +74,5 @@ permalink: /kb/135/Q135763/
 	
 	=============================================================================
 	
+
+{% endraw %}

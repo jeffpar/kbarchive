@@ -6,6 +6,8 @@ permalink: /kb/177/Q177823/
 
 ## Q177823: XADM: Incorrect RPC Operations Cause Information Store to Fail
 
+{% raw %}
+
 	Article: Q177823
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -70,3 +72,5 @@ permalink: /kb/177/Q177823/
 	
 	=============================================================================
 	
+
+{% endraw %}

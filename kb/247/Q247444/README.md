@@ -6,6 +6,8 @@ permalink: /kb/247/Q247444/
 
 ## Q247444: Err Msg: This User or User Group Could Not Be Added to the SMS..
 
+{% raw %}
+
 	Article: Q247444
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -58,3 +60,5 @@ permalink: /kb/247/Q247444/
 	
 	=============================================================================
 	
+
+{% endraw %}

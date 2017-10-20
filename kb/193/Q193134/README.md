@@ -6,6 +6,8 @@ permalink: /kb/193/Q193134/
 
 ## Q193134: XCLN: Contact Folders Use Mail Folder Icon in OWA
 
+{% raw %}
+
 	Article: Q193134
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -45,3 +47,5 @@ permalink: /kb/193/Q193134/
 	
 	=============================================================================
 	
+
+{% endraw %}

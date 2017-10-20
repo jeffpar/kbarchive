@@ -6,6 +6,8 @@ permalink: /kb/119/Q119796/
 
 ## Q119796: PC Adm: TEMPLATE.EXE Err Msg: No Memory; Error Releasing Mem
 
+{% raw %}
+
 	Article: Q119796
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -51,3 +53,5 @@ permalink: /kb/119/Q119796/
 	
 	=============================================================================
 	
+
+{% endraw %}

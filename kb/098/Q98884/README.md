@@ -6,6 +6,8 @@ permalink: /kb/098/Q98884/
 
 ## Q98884: Recover from 20CLEAN.CMD when Upgrading from LAN Man 2.1
 
+{% raw %}
+
 	Article: Q98884
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/098/Q98884/
 	
 	=============================================================================
 	
+
+{% endraw %}

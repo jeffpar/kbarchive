@@ -6,6 +6,8 @@ permalink: /kb/064/Q64439/
 
 ## Q64439: Trapping a Keystroke and Displaying Its Extended Scan Code
 
+{% raw %}
+
 	Article: Q64439
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -127,3 +129,5 @@ permalink: /kb/064/Q64439/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/265/Q265360/
 
 ## Q265360: Using the Command Line to Edit Multiple Subdirectory Permissions
 
+{% raw %}
+
 	Article: Q265360
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/265/Q265360/
 	
 	=============================================================================
 	
+
+{% endraw %}

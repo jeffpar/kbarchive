@@ -6,6 +6,8 @@ permalink: /kb/192/Q192657/
 
 ## Q192657: XADM: Missing Transaction Log Yields &quot;Unable to Find the File&quot;
 
+{% raw %}
+
 	Article: Q192657
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -90,3 +92,5 @@ permalink: /kb/192/Q192657/
 	
 	=============================================================================
 	
+
+{% endraw %}

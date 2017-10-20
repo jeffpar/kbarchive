@@ -6,6 +6,8 @@ permalink: /kb/174/Q174873/
 
 ## Q174873: FIX: Lost Net Connection Causes Source Code Control to Hang
 
+{% raw %}
+
 	Article: Q174873
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/174/Q174873/
 	
 	=============================================================================
 	
+
+{% endraw %}

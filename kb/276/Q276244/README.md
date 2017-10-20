@@ -6,6 +6,8 @@ permalink: /kb/276/Q276244/
 
 ## Q276244: Microsoft Casino: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q276244
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -67,3 +69,5 @@ permalink: /kb/276/Q276244/
 	
 	=============================================================================
 	
+
+{% endraw %}

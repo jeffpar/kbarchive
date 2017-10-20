@@ -6,6 +6,8 @@ permalink: /kb/139/Q139912/
 
 ## Q139912: Saving Programmatically-Created Form &amp; Data Environment to SCX
 
+{% raw %}
+
 	Article: Q139912
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -87,3 +89,5 @@ permalink: /kb/139/Q139912/
 	
 	=============================================================================
 	
+
+{% endraw %}

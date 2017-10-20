@@ -6,6 +6,8 @@ permalink: /kb/186/Q186479/
 
 ## Q186479: Terminal Server Commands: MIGRATE
 
+{% raw %}
+
 	Article: Q186479
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -79,3 +81,5 @@ permalink: /kb/186/Q186479/
 	
 	=============================================================================
 	
+
+{% endraw %}

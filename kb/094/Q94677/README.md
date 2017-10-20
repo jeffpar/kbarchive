@@ -6,6 +6,8 @@ permalink: /kb/094/Q94677/
 
 ## Q94677: Cannot Start Applications from Command Line with WFWG
 
+{% raw %}
+
 	Article: Q94677
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -54,3 +56,5 @@ permalink: /kb/094/Q94677/
 	
 	=============================================================================
 	
+
+{% endraw %}

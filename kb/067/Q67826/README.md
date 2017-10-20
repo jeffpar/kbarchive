@@ -6,6 +6,8 @@ permalink: /kb/067/Q67826/
 
 ## Q67826: ASD: Relationship Between Runway Numbers and Heading
 
+{% raw %}
+
 	Article: Q67826
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/067/Q67826/
 	
 	=============================================================================
 	
+
+{% endraw %}

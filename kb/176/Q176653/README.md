@@ -6,6 +6,8 @@ permalink: /kb/176/Q176653/
 
 ## Q176653: FIX: Incorrect Decimal Data Sent to SQL Server with Remote View
 
+{% raw %}
+
 	Article: Q176653
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,5.0,5.0a
@@ -246,3 +248,5 @@ permalink: /kb/176/Q176653/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161772/
 
 ## Q161772: IBM CA/400 ODBC Driver Stops Receiving Large Query Responses
 
+{% raw %}
+
 	Article: Q161772
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -83,3 +85,5 @@ permalink: /kb/161/Q161772/
 	
 	=============================================================================
 	
+
+{% endraw %}

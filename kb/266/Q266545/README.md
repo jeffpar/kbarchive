@@ -6,6 +6,8 @@ permalink: /kb/266/Q266545/
 
 ## Q266545: Encarta World Atlas 2001: Cannot Open Pushpin Menu
 
+{% raw %}
+
 	Article: Q266545
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/266/Q266545/
 	
 	=============================================================================
 	
+
+{% endraw %}

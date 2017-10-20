@@ -6,6 +6,8 @@ permalink: /kb/135/Q135104/
 
 ## Q135104: Sign-up Does Not Display the Complete Phone Number Dialed
 
+{% raw %}
+
 	Article: Q135104
 	Product(s): The Microsoft Network
 	Version(s): 1.0,1.2,1.3,2.0
@@ -42,3 +44,5 @@ permalink: /kb/135/Q135104/
 	
 	=============================================================================
 	
+
+{% endraw %}

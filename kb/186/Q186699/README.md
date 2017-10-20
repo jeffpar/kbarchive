@@ -6,6 +6,8 @@ permalink: /kb/186/Q186699/
 
 ## Q186699: XWEB: MAC: Internet Explorer 4.0 Opens Attachments as ASP Files
 
+{% raw %}
+
 	Article: Q186699
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:4.0; WINDOWS:5.5
@@ -58,3 +60,5 @@ permalink: /kb/186/Q186699/
 	
 	=============================================================================
 	
+
+{% endraw %}

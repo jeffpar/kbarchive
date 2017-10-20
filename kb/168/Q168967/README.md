@@ -6,6 +6,8 @@ permalink: /kb/168/Q168967/
 
 ## Q168967: WD97: File Size Twice as Big When Compared to Earlier Version
 
+{% raw %}
+
 	Article: Q168967
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -91,3 +93,5 @@ permalink: /kb/168/Q168967/
 	
 	=============================================================================
 	
+
+{% endraw %}

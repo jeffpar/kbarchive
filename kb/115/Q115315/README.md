@@ -6,6 +6,8 @@ permalink: /kb/115/Q115315/
 
 ## Q115315: Comprehensive List of WSS 2.0 User's Guide Doc Errors
 
+{% raw %}
+
 	Article: Q115315
 	Product(s): Miscellaneous Windows Products
 	Version(s): 2.00
@@ -51,3 +53,5 @@ permalink: /kb/115/Q115315/
 	
 	=============================================================================
 	
+
+{% endraw %}

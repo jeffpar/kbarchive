@@ -6,6 +6,8 @@ permalink: /kb/129/Q129482/
 
 ## Q129482: Systems Management Server Inventory Via RAS Causes STOP Screen
 
+{% raw %}
+
 	Article: Q129482
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,3.5
@@ -55,3 +57,5 @@ permalink: /kb/129/Q129482/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/133/Q133449/
 
 ## Q133449: PRB: ESL File Not Automatically Included w/ Visual FoxPro EXE
 
+{% raw %}
+
 	Article: Q133449
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 5.00 | 3.00b
@@ -72,3 +74,5 @@ permalink: /kb/133/Q133449/
 	
 	=============================================================================
 	
+
+{% endraw %}

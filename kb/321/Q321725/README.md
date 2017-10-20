@@ -6,6 +6,8 @@ permalink: /kb/321/Q321725/
 
 ## Q321725: Err Msg: Unable to Determine the Computer File System Type (3.2)
 
+{% raw %}
+
 	Article: Q321725
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -62,3 +64,5 @@ permalink: /kb/321/Q321725/
 	
 	=============================================================================
 	
+
+{% endraw %}

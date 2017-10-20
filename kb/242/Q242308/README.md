@@ -6,6 +6,8 @@ permalink: /kb/242/Q242308/
 
 ## Q242308: HOWTO: Find a Window Handle from an Instance Handle
 
+{% raw %}
+
 	Article: Q242308
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -160,3 +162,5 @@ permalink: /kb/242/Q242308/
 	
 	=============================================================================
 	
+
+{% endraw %}

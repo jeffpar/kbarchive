@@ -6,6 +6,8 @@ permalink: /kb/128/Q128751/
 
 ## Q128751: No &quot;Advanced&quot; button in Client TCP/IP Configuration Box
 
+{% raw %}
+
 	Article: Q128751
 	Product(s): Microsoft Windows NT
 	Version(s): 3.00
@@ -189,3 +191,5 @@ permalink: /kb/128/Q128751/
 	
 	=============================================================================
 	
+
+{% endraw %}

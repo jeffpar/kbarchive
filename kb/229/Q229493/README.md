@@ -6,6 +6,8 @@ permalink: /kb/229/Q229493/
 
 ## Q229493: XCON: How to Move X.400 Connectors Between Bridgeheads
 
+{% raw %}
+
 	Article: Q229493
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -62,3 +64,5 @@ permalink: /kb/229/Q229493/
 	
 	=============================================================================
 	
+
+{% endraw %}

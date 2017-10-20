@@ -6,6 +6,8 @@ permalink: /kb/190/Q190233/
 
 ## Q190233: Terminal Licensing Failed with the Specific Error 3221487623
 
+{% raw %}
+
 	Article: Q190233
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/190/Q190233/
 	
 	=============================================================================
 	
+
+{% endraw %}

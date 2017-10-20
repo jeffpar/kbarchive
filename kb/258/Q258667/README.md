@@ -6,6 +6,8 @@ permalink: /kb/258/Q258667/
 
 ## Q258667: Baseball 2001: Cannot Use Mouse to Play or Pause Instant Replay
 
+{% raw %}
+
 	Article: Q258667
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -50,3 +52,5 @@ permalink: /kb/258/Q258667/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173341/
 
 ## Q173341: SNA Manager Fails to Open Backup Config File.
 
+{% raw %}
+
 	Article: Q173341
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -77,3 +79,5 @@ permalink: /kb/173/Q173341/
 	
 	=============================================================================
 	
+
+{% endraw %}

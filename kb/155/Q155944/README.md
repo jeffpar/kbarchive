@@ -6,6 +6,8 @@ permalink: /kb/155/Q155944/
 
 ## Q155944: WD97: Display Icon Changes After Clicking Undo Convert Object
 
+{% raw %}
+
 	Article: Q155944
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -87,3 +89,5 @@ permalink: /kb/155/Q155944/
 	
 	=============================================================================
 	
+
+{% endraw %}

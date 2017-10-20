@@ -6,6 +6,8 @@ permalink: /kb/201/Q201131/
 
 ## Q201131: BUG: Mixed Case Option Does Not Function Properly in Beautify
 
+{% raw %}
+
 	Article: Q201131
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -76,3 +78,5 @@ permalink: /kb/201/Q201131/
 	
 	=============================================================================
 	
+
+{% endraw %}

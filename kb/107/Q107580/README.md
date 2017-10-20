@@ -6,6 +6,8 @@ permalink: /kb/107/Q107580/
 
 ## Q107580: Net Watcher Event Log May Not Clear
 
+{% raw %}
+
 	Article: Q107580
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -62,3 +64,5 @@ permalink: /kb/107/Q107580/
 	
 	=============================================================================
 	
+
+{% endraw %}

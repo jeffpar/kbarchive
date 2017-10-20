@@ -6,6 +6,8 @@ permalink: /kb/038/Q38069/
 
 ## Q38069: &quot;Division By Zero&quot; Dynamic, Fixed-Length STRING&#42;1, 64K+ Array
 
+{% raw %}
+
 	Article: Q38069
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -37,3 +39,5 @@ permalink: /kb/038/Q38069/
 	REM $DYNAMIC
 	' A dynamic, STRING*1, 64K+ array gives "DIVISION BY ZERO" at run time:
 	DIM carray(1 TO 4096, 1 TO 16) AS STRING * 1
+
+{% endraw %}

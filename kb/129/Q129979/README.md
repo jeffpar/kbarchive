@@ -6,6 +6,8 @@ permalink: /kb/129/Q129979/
 
 ## Q129979: How to Reinstall Win32s with Visual FoxPro
 
+{% raw %}
+
 	Article: Q129979
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -111,3 +113,5 @@ permalink: /kb/129/Q129979/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191222/
 
 ## Q191222: INFO: ActiveX Controls Supported by Visual FoxPro 6.0
 
+{% raw %}
+
 	Article: Q191222
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -88,3 +90,5 @@ permalink: /kb/191/Q191222/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246307/
 
 ## Q246307: BUG: EXE Crashes on Windows NT when Icon has More Than 256 color
 
+{% raw %}
+
 	Article: Q246307
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -113,3 +115,5 @@ permalink: /kb/246/Q246307/
 	
 	=============================================================================
 	
+
+{% endraw %}

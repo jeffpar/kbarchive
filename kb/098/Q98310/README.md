@@ -6,6 +6,8 @@ permalink: /kb/098/Q98310/
 
 ## Q98310: How to Use Intel 16/s Card with Windows for Workgroups
 
+{% raw %}
+
 	Article: Q98310
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/098/Q98310/
 	
 	=============================================================================
 	
+
+{% endraw %}

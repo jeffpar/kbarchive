@@ -6,6 +6,8 @@ permalink: /kb/156/Q156715/
 
 ## Q156715: XADM: Unable to Back Up Exchange on Remote Server from NT 4.0
 
+{% raw %}
+
 	Article: Q156715
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/156/Q156715/
 	
 	=============================================================================
 	
+
+{% endraw %}

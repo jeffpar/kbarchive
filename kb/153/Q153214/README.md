@@ -6,6 +6,8 @@ permalink: /kb/153/Q153214/
 
 ## Q153214: Close Combat: Minimum System Requirements for Macintosh
 
+{% raw %}
+
 	Article: Q153214
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0
@@ -60,3 +62,5 @@ permalink: /kb/153/Q153214/
 	
 	=============================================================================
 	
+
+{% endraw %}

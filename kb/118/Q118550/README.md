@@ -6,6 +6,8 @@ permalink: /kb/118/Q118550/
 
 ## Q118550: BUG: READ and WRITE Fail on Unit 64
 
+{% raw %}
+
 	Article: Q118550
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -75,3 +77,5 @@ permalink: /kb/118/Q118550/
 	
 	=============================================================================
 	
+
+{% endraw %}

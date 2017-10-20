@@ -6,6 +6,8 @@ permalink: /kb/090/Q90332/
 
 ## Q90332: Cannot Change Order of First Print Job in WFWG
 
+{% raw %}
+
 	Article: Q90332
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/090/Q90332/
 	
 	=============================================================================
 	
+
+{% endraw %}

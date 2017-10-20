@@ -6,6 +6,8 @@ permalink: /kb/122/Q122474/
 
 ## Q122474: Encarta 1995: Manual Installation Instructions for Windows 3.x
 
+{% raw %}
+
 	Article: Q122474
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 editions; WINDOWS:3.x
@@ -249,3 +251,5 @@ permalink: /kb/122/Q122474/
 	
 	=============================================================================
 	
+
+{% endraw %}

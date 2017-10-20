@@ -6,6 +6,8 @@ permalink: /kb/197/Q197985/
 
 ## Q197985: PDC Performs Only Full Synchronizations to BDCs
 
+{% raw %}
+
 	Article: Q197985
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -101,3 +103,5 @@ permalink: /kb/197/Q197985/
 	
 	=============================================================================
 	
+
+{% endraw %}

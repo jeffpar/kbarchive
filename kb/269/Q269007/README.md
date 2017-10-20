@@ -6,6 +6,8 @@ permalink: /kb/269/Q269007/
 
 ## Q269007: XADM: Issues While Running Multiple Link Monitor Sessions
 
+{% raw %}
+
 	Article: Q269007
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -93,3 +95,5 @@ permalink: /kb/269/Q269007/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139968/
 
 ## Q139968: TextOut() Is Different in Hebrew and Arabic Windows
 
+{% raw %}
+
 	Article: Q139968
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/139/Q139968/
 	
 	=============================================================================
 	
+
+{% endraw %}

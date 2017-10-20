@@ -6,6 +6,8 @@ permalink: /kb/130/Q130835/
 
 ## Q130835: Class Browser: How to Save Data to a File
 
+{% raw %}
+
 	Article: Q130835
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -162,3 +164,5 @@ permalink: /kb/130/Q130835/
 	
 	=============================================================================
 	
+
+{% endraw %}

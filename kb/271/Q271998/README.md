@@ -6,6 +6,8 @@ permalink: /kb/271/Q271998/
 
 ## Q271998: DOM:Event 5718 on the BDC
 
+{% raw %}
+
 	Article: Q271998
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/271/Q271998/
 	
 	=============================================================================
 	
+
+{% endraw %}

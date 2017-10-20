@@ -6,6 +6,8 @@ permalink: /kb/138/Q138012/
 
 ## Q138012: Incorrect Settings for File System Performance Profiles
 
+{% raw %}
+
 	Article: Q138012
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -120,3 +122,5 @@ permalink: /kb/138/Q138012/
 	
 	=============================================================================
 	
+
+{% endraw %}

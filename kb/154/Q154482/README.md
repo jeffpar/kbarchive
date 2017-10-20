@@ -6,6 +6,8 @@ permalink: /kb/154/Q154482/
 
 ## Q154482: FIX: Undocumented Functions in Type Safe Collection Classes
 
+{% raw %}
+
 	Article: Q154482
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2
@@ -111,3 +113,5 @@ permalink: /kb/154/Q154482/
 	
 	=============================================================================
 	
+
+{% endraw %}

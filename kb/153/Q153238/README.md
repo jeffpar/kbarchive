@@ -6,6 +6,8 @@ permalink: /kb/153/Q153238/
 
 ## Q153238: HOWTO: Use GetChunk and AppendChunk Methods of RDO/ADO Object
 
+{% raw %}
+
 	Article: Q153238
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -323,3 +325,5 @@ permalink: /kb/153/Q153238/
 	
 	=============================================================================
 	
+
+{% endraw %}

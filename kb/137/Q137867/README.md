@@ -6,6 +6,8 @@ permalink: /kb/137/Q137867/
 
 ## Q137867: No Postoffice Needed for The Microsoft Network Mail
 
+{% raw %}
+
 	Article: Q137867
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5
@@ -63,3 +65,5 @@ permalink: /kb/137/Q137867/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128461/
 
 ## Q128461: PROFS: Out-of-Memory Conditions in MS-GATE, MS-CSM, MS-GRF
 
+{% raw %}
+
 	Article: Q128461
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.4a
@@ -80,3 +82,5 @@ permalink: /kb/128/Q128461/
 	
 	=============================================================================
 	
+
+{% endraw %}

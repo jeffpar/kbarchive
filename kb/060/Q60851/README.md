@@ -6,6 +6,8 @@ permalink: /kb/060/Q60851/
 
 ## Q60851: TSCNIOxx.OBJ Stub Files Remove COLOR Border Parameter
 
+{% raw %}
+
 	Article: Q60851
 	Product(s): See article
 	Version(s): 7.00
@@ -27,3 +29,5 @@ permalink: /kb/060/Q60851/
 	   COLOR [foreground][,background][,border]
 	
 	This statement is only supported on a CGA graphics adapter in SCREEN 0.
+
+{% endraw %}

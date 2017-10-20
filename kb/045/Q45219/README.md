@@ -6,6 +6,8 @@ permalink: /kb/045/Q45219/
 
 ## Q45219: _ERESNOCOLOR Is a Monochrome/Graphics Mode
 
+{% raw %}
+
 	Article: Q45219
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -24,3 +26,5 @@ permalink: /kb/045/Q45219/
 	This line should read as follows:
 	
 	   _ERESNOCOLOR   M/G   640x350   2   EGA
+
+{% endraw %}

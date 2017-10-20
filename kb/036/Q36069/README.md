@@ -6,6 +6,8 @@ permalink: /kb/036/Q36069/
 
 ## Q36069: Different Results between Alternate and Coprocessor/Emulator Math
 
+{% raw %}
+
 	Article: Q36069
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10 | 5.10
@@ -32,3 +34,5 @@ permalink: /kb/036/Q36069/
 	Alternate math calculations are performed using real*4 or real*8
 	format which can result in less precision than that available with
 	coprocessor/emulator math.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190085/
 
 ## Q190085: BUG: No Binary Compatibility Error With Null GUIDs Enums
 
+{% raw %}
+
 	Article: Q190085
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -101,3 +103,5 @@ permalink: /kb/190/Q190085/
 	
 	=============================================================================
 	
+
+{% endraw %}

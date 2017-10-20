@@ -6,6 +6,8 @@ permalink: /kb/041/Q41661/
 
 ## Q41661: QuickC 2.00 README.DOC: /K
 
+{% raw %}
+
 	Article: Q41661
 	Product(s): See article
 	Version(s): 2.00
@@ -52,3 +54,5 @@ permalink: /kb/041/Q41661/
 	         h>
 	
 	Repeated over the entire QC.HLP file, the small savings add up.
+
+{% endraw %}

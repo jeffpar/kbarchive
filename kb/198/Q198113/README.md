@@ -6,6 +6,8 @@ permalink: /kb/198/Q198113/
 
 ## Q198113: XCLN:How To Use IExpress To Generate Profiles for Users at Logon
 
+{% raw %}
+
 	Article: Q198113
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:97,98
@@ -124,3 +126,5 @@ permalink: /kb/198/Q198113/
 	
 	=============================================================================
 	
+
+{% endraw %}

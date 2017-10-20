@@ -6,6 +6,8 @@ permalink: /kb/159/Q159217/
 
 ## Q159217: RESKIT: RshSvc Leaks Process Handles
 
+{% raw %}
+
 	Article: Q159217
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -56,3 +58,5 @@ permalink: /kb/159/Q159217/
 	
 	=============================================================================
 	
+
+{% endraw %}

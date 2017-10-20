@@ -6,6 +6,8 @@ permalink: /kb/146/Q146060/
 
 ## Q146060: No Left-Hand Support for BallPoint Mouse in Windows 95
 
+{% raw %}
+
 	Article: Q146060
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -45,3 +47,5 @@ permalink: /kb/146/Q146060/
 	
 	=============================================================================
 	
+
+{% endraw %}

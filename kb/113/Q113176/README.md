@@ -6,6 +6,8 @@ permalink: /kb/113/Q113176/
 
 ## Q113176: SET PATH TO Syntax for Folder Names with Spaces
 
+{% raw %}
+
 	Article: Q113176
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -44,3 +46,5 @@ permalink: /kb/113/Q113176/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96485/
 
 ## Q96485: MS-DOS Application Does Not Display Directories and Files
 
+{% raw %}
+
 	Article: Q96485
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/096/Q96485/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138513/
 
 ## Q138513: Cannot Change Font Used in Printed Online Help Topic
 
+{% raw %}
+
 	Article: Q138513
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/138/Q138513/
 	
 	=============================================================================
 	
+
+{% endraw %}

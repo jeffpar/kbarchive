@@ -6,6 +6,8 @@ permalink: /kb/112/Q112299/
 
 ## Q112299: DOC: MSVCRT10.DLL and MSFRT10.DLL Are Redistributable
 
+{% raw %}
+
 	Article: Q112299
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0
@@ -46,3 +48,5 @@ permalink: /kb/112/Q112299/
 	
 	=============================================================================
 	
+
+{% endraw %}

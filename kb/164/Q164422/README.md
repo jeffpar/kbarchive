@@ -6,6 +6,8 @@ permalink: /kb/164/Q164422/
 
 ## Q164422: XADM: How to Test the LDAP Functionality of Exchange Server
 
+{% raw %}
+
 	Article: Q164422
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -58,3 +60,5 @@ permalink: /kb/164/Q164422/
 	
 	=============================================================================
 	
+
+{% endraw %}

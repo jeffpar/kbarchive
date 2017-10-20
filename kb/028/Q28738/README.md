@@ -6,6 +6,8 @@ permalink: /kb/028/Q28738/
 
 ## Q28738: Types Of Mice Available: Serial, Bus, and InPort
 
+{% raw %}
+
 	Article: Q28738
 	Product(s): See article
 	Version(s): 1.00
@@ -30,3 +32,5 @@ permalink: /kb/028/Q28738/
 	not come with a Microsoft InPort interface-equipped interface card.
 	You must have the Microsoft InPort interface within your system (e.g.
 	the MACH 20 has built-in InPort technology).
+
+{% endraw %}

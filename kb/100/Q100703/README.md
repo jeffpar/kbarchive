@@ -6,6 +6,8 @@ permalink: /kb/100/Q100703/
 
 ## Q100703: SMTP: Err Msg: ERROR MMFF Protocol Error
 
+{% raw %}
+
 	Article: Q100703
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -60,3 +62,5 @@ permalink: /kb/100/Q100703/
 	
 	=============================================================================
 	
+
+{% endraw %}

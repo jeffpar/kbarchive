@@ -6,6 +6,8 @@ permalink: /kb/198/Q198588/
 
 ## Q198588: Spaces in Contact Web Page URL are Changed to %20
 
+{% raw %}
+
 	Article: Q198588
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -49,3 +51,5 @@ permalink: /kb/198/Q198588/
 	
 	=============================================================================
 	
+
+{% endraw %}

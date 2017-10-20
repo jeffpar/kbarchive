@@ -6,6 +6,8 @@ permalink: /kb/186/Q186205/
 
 ## Q186205: XADM: CPU Utilization for Information Store Is at 100%
 
+{% raw %}
+
 	Article: Q186205
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -91,3 +93,5 @@ permalink: /kb/186/Q186205/
 	
 	=============================================================================
 	
+
+{% endraw %}

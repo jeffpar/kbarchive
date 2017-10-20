@@ -6,6 +6,8 @@ permalink: /kb/124/Q124869/
 
 ## Q124869: Configuring Sound Blaster Drivers Version 3.02 and 3.04
 
+{% raw %}
+
 	Article: Q124869
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a,1991 edition,1992 edition,1993 edition,1994 edition,1995 edition,2.0,3.1,3.11
@@ -144,3 +146,5 @@ permalink: /kb/124/Q124869/
 	
 	=============================================================================
 	
+
+{% endraw %}

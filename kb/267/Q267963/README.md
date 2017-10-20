@@ -6,6 +6,8 @@ permalink: /kb/267/Q267963/
 
 ## Q267963: Ping Utility Takes a Long Time to Return Results with NetBIOS Na
 
+{% raw %}
+
 	Article: Q267963
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/267/Q267963/
 	
 	=============================================================================
 	
+
+{% endraw %}

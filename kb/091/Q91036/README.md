@@ -6,6 +6,8 @@ permalink: /kb/091/Q91036/
 
 ## Q91036: PC Ext: Uninstall Enhanced Security Message Not Required
 
+{% raw %}
+
 	Article: Q91036
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0,3.2
@@ -59,3 +61,5 @@ permalink: /kb/091/Q91036/
 	
 	=============================================================================
 	
+
+{% endraw %}

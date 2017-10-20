@@ -6,6 +6,8 @@ permalink: /kb/094/Q94199/
 
 ## Q94199: TaxCut for Windows Requires Windows 3.1
 
+{% raw %}
+
 	Article: Q94199
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/094/Q94199/
 	
 	=============================================================================
 	
+
+{% endraw %}

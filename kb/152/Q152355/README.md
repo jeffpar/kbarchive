@@ -6,6 +6,8 @@ permalink: /kb/152/Q152355/
 
 ## Q152355: PRB: Error Installing EXE With &quot;&#92;&quot; in Icon File Description
 
+{% raw %}
+
 	Article: Q152355
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -77,3 +79,5 @@ permalink: /kb/152/Q152355/
 	
 	=============================================================================
 	
+
+{% endraw %}

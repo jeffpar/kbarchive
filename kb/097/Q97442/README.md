@@ -6,6 +6,8 @@ permalink: /kb/097/Q97442/
 
 ## Q97442: Undelete for Windows Allows a &quot;?&quot; in a Directory Name
 
+{% raw %}
+
 	Article: Q97442
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -75,3 +77,5 @@ permalink: /kb/097/Q97442/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235179/
 
 ## Q235179: Licsvcfg.log Exposes the SQL SA Account Password
 
+{% raw %}
+
 	Article: Q235179
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -72,3 +74,5 @@ permalink: /kb/235/Q235179/
 	
 	=============================================================================
 	
+
+{% endraw %}

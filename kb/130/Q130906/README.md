@@ -6,6 +6,8 @@ permalink: /kb/130/Q130906/
 
 ## Q130906: Site Configuration Manager's Stages of Operation
 
+{% raw %}
+
 	Article: Q130906
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -84,3 +86,5 @@ permalink: /kb/130/Q130906/
 	
 	=============================================================================
 	
+
+{% endraw %}

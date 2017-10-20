@@ -6,6 +6,8 @@ permalink: /kb/302/Q302644/
 
 ## Q302644: Settings My Account Change My Information
 
+{% raw %}
+
 	Article: Q302644
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -38,3 +40,5 @@ permalink: /kb/302/Q302644/
 	
 	=============================================================================
 	
+
+{% endraw %}

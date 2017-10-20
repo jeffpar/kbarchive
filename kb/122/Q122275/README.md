@@ -6,6 +6,8 @@ permalink: /kb/122/Q122275/
 
 ## Q122275: FIX: C Run-time Include Files Missing #pragma Pack Directives
 
+{% raw %}
+
 	Article: Q122275
 	Product(s): Microsoft C Compiler
 	Version(s): 1.00 2.00
@@ -104,3 +106,5 @@ permalink: /kb/122/Q122275/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234898/
 
 ## Q234898: XCLN: How to Manage Outlook 97 with System Policies
 
+{% raw %}
+
 	Article: Q234898
 	Product(s): Microsoft Exchange
 	Version(s): 8.03,8.04
@@ -180,3 +182,5 @@ permalink: /kb/234/Q234898/
 	
 	=============================================================================
 	
+
+{% endraw %}

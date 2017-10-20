@@ -6,6 +6,8 @@ permalink: /kb/196/Q196516/
 
 ## Q196516: WD97: Ampersand Displays Incorrectly in Drop-Down Form Field
 
+{% raw %}
+
 	Article: Q196516
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -78,3 +80,5 @@ permalink: /kb/196/Q196516/
 	
 	=============================================================================
 	
+
+{% endraw %}

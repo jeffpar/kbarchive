@@ -6,6 +6,8 @@ permalink: /kb/062/Q62571/
 
 ## Q62571: Converting Drive Letters to MS-DOS INT 13H Disk Drive Numbers
 
+{% raw %}
+
 	Article: Q62571
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -84,3 +86,5 @@ permalink: /kb/062/Q62571/
 	
 	=============================================================================
 	
+
+{% endraw %}

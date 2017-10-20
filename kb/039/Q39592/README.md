@@ -6,6 +6,8 @@ permalink: /kb/039/Q39592/
 
 ## Q39592: In QB.EXE 4.50, No Editor Color on TANDY 1000 with CGA
 
+{% raw %}
+
 	Article: Q39592
 	Product(s): See article
 	Version(s): 4.50
@@ -38,3 +40,5 @@ permalink: /kb/039/Q39592/
 	3. When you exit QuickBASIC, the QB.INI file will contain the new
 	   settings. The next time you invoke QB.EXE, it will come up in
 	   color.
+
+{% endraw %}

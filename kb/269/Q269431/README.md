@@ -6,6 +6,8 @@ permalink: /kb/269/Q269431/
 
 ## Q269431: Cannot Print with Error: The Network Name Cannot Be Found
 
+{% raw %}
+
 	Article: Q269431
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/269/Q269431/
 	
 	=============================================================================
 	
+
+{% endraw %}

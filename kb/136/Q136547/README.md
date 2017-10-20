@@ -6,6 +6,8 @@ permalink: /kb/136/Q136547/
 
 ## Q136547: Restoring Windows NT Dual Boot After Installing Windows 95
 
+{% raw %}
+
 	Article: Q136547
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0; Windows:95
@@ -106,3 +108,5 @@ permalink: /kb/136/Q136547/
 	
 	=============================================================================
 	
+
+{% endraw %}

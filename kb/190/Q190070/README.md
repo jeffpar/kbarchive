@@ -6,6 +6,8 @@ permalink: /kb/190/Q190070/
 
 ## Q190070: PRB: Old ACCESS/ASSIGN Refs Remain on Property Name Change
 
+{% raw %}
+
 	Article: Q190070
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -72,3 +74,5 @@ permalink: /kb/190/Q190070/
 	
 	=============================================================================
 	
+
+{% endraw %}

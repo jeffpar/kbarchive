@@ -6,6 +6,8 @@ permalink: /kb/171/Q171061/
 
 ## Q171061: RIP Does Not Advertise Zero Subnets
 
+{% raw %}
+
 	Article: Q171061
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -83,3 +85,5 @@ permalink: /kb/171/Q171061/
 	
 	=============================================================================
 	
+
+{% endraw %}

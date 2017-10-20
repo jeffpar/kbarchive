@@ -6,6 +6,8 @@ permalink: /kb/173/Q173256/
 
 ## Q173256: Flight Simulator for Win95 Inside Moves, Corrections
 
+{% raw %}
+
 	Article: Q173256
 	Product(s): Microsoft Press
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/173/Q173256/
 	
 	=============================================================================
 	
+
+{% endraw %}

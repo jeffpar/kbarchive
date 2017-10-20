@@ -6,6 +6,8 @@ permalink: /kb/088/Q88113/
 
 ## Q88113: INFO: Compile and Link Requirements for MFC Applications
 
+{% raw %}
+
 	Article: Q88113
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,7.0
@@ -158,3 +160,5 @@ permalink: /kb/088/Q88113/
 	
 	=============================================================================
 	
+
+{% endraw %}

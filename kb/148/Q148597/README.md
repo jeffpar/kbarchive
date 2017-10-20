@@ -6,6 +6,8 @@ permalink: /kb/148/Q148597/
 
 ## Q148597: Incoming Call Support With Distributed Link Services
 
+{% raw %}
+
 	Article: Q148597
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -79,3 +81,5 @@ permalink: /kb/148/Q148597/
 	
 	=============================================================================
 	
+
+{% endraw %}

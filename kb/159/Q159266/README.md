@@ -6,6 +6,8 @@ permalink: /kb/159/Q159266/
 
 ## Q159266: Error Message at Boot with Ositech Trumpcard Ethernet Adapter
 
+{% raw %}
+
 	Article: Q159266
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -69,3 +71,5 @@ permalink: /kb/159/Q159266/
 	
 	=============================================================================
 	
+
+{% endraw %}

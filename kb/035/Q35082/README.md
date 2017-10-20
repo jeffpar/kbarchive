@@ -6,6 +6,8 @@ permalink: /kb/035/Q35082/
 
 ## Q35082: Mouse Versions Prior to New Mouse 1.00 Used MOUSE.SYS
 
+{% raw %}
+
 	Article: Q35082
 	Product(s): See article
 	Version(s): 1.x 2.x 3.x 4.x 5.x 6.x
@@ -20,3 +22,5 @@ permalink: /kb/035/Q35082/
 	
 	The MOUSE.COM driver provides greater flexibility in that it is able
 	to deallocate from memory and is executable from DOS.
+
+{% endraw %}

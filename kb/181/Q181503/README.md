@@ -6,6 +6,8 @@ permalink: /kb/181/Q181503/
 
 ## Q181503: PRB: Custom AppWizards Can't Make Per-File Settings/Build Steps
 
+{% raw %}
+
 	Article: Q181503
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -94,3 +96,5 @@ permalink: /kb/181/Q181503/
 	
 	=============================================================================
 	
+
+{% endraw %}

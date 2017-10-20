@@ -6,6 +6,8 @@ permalink: /kb/113/Q113098/
 
 ## Q113098: Bookshelf: Can't Run Reinstall from a Different Drive
 
+{% raw %}
+
 	Article: Q113098
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,1995 edition
@@ -76,3 +78,5 @@ permalink: /kb/113/Q113098/
 	
 	=============================================================================
 	
+
+{% endraw %}

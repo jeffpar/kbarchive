@@ -6,6 +6,8 @@ permalink: /kb/109/Q109306/
 
 ## Q109306: REPORT FORM ... PLAIN Command Is Not Functioning Properly
 
+{% raw %}
+
 	Article: Q109306
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.5b; WINDOWS:2.5x,2.6,2.6a,3.0
@@ -44,3 +46,5 @@ permalink: /kb/109/Q109306/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/257/Q257895/
 
 ## Q257895: XCLN: Support for Macintosh Operating System
 
+{% raw %}
+
 	Article: Q257895
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.2.1
@@ -57,3 +59,5 @@ permalink: /kb/257/Q257895/
 	
 	=============================================================================
 	
+
+{% endraw %}

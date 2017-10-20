@@ -6,6 +6,8 @@ permalink: /kb/192/Q192742/
 
 ## Q192742: XADM: PerfMon Counters Unavailable After Applying 5.5 SP1
 
+{% raw %}
+
 	Article: Q192742
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -179,3 +181,5 @@ permalink: /kb/192/Q192742/
 	
 	=============================================================================
 	
+
+{% endraw %}

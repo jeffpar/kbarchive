@@ -6,6 +6,8 @@ permalink: /kb/176/Q176486/
 
 ## Q176486: BUG: Bookmark for Unbound DBGrid is Incorrect for the Last Row
 
+{% raw %}
+
 	Article: Q176486
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -129,3 +131,5 @@ permalink: /kb/176/Q176486/
 	
 	=============================================================================
 	
+
+{% endraw %}

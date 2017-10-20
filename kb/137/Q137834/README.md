@@ -6,6 +6,8 @@ permalink: /kb/137/Q137834/
 
 ## Q137834: Streets 4.0: Detailed Map View Option Missing
 
+{% raw %}
+
 	Article: Q137834
 	Product(s): Microsoft Automap
 	Version(s): 4.00
@@ -59,3 +61,5 @@ permalink: /kb/137/Q137834/
 	
 	=============================================================================
 	
+
+{% endraw %}

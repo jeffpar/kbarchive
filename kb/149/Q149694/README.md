@@ -6,6 +6,8 @@ permalink: /kb/149/Q149694/
 
 ## Q149694: PCMCIA Problem on Austin Business Audio DX4 100 Color Notebook
 
+{% raw %}
+
 	Article: Q149694
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -65,3 +67,5 @@ permalink: /kb/149/Q149694/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/306/Q306579/
 
 ## Q306579: BUG: ODBC Application Terminates When CTRL+ALT+DEL Pressed
 
+{% raw %}
+
 	Article: Q306579
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): (all versions and editions),4.0
@@ -110,3 +112,5 @@ permalink: /kb/306/Q306579/
 	
 	=============================================================================
 	
+
+{% endraw %}

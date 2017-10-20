@@ -6,6 +6,8 @@ permalink: /kb/193/Q193040/
 
 ## Q193040: XADM: Cannot Stop Information Store from a Command Prompt
 
+{% raw %}
+
 	Article: Q193040
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -69,3 +71,5 @@ permalink: /kb/193/Q193040/
 	
 	=============================================================================
 	
+
+{% endraw %}

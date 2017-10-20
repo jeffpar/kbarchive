@@ -6,6 +6,8 @@ permalink: /kb/195/Q195386/
 
 ## Q195386: PRB: C4786 After Porting from Version 5.0 to Version 6.0
 
+{% raw %}
+
 	Article: Q195386
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:6.0
@@ -99,3 +101,5 @@ permalink: /kb/195/Q195386/
 	
 	=============================================================================
 	
+
+{% endraw %}

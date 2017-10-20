@@ -6,6 +6,8 @@ permalink: /kb/147/Q147717/
 
 ## Q147717: How to Remotely Disable a RAS Port
 
+{% raw %}
+
 	Article: Q147717
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -49,3 +51,5 @@ permalink: /kb/147/Q147717/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124744/
 
 ## Q124744: Command Prompt Err Msg: All Pipe Instances Are Busy
 
+{% raw %}
+
 	Article: Q124744
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -55,3 +57,5 @@ permalink: /kb/124/Q124744/
 	
 	=============================================================================
 	
+
+{% endraw %}

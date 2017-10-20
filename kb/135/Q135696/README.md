@@ -6,6 +6,8 @@ permalink: /kb/135/Q135696/
 
 ## Q135696: FAX: Configuring PureData SatisFAXtion Fax Modems
 
+{% raw %}
+
 	Article: Q135696
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -484,3 +486,5 @@ permalink: /kb/135/Q135696/
 	
 	=============================================================================
 	
+
+{% endraw %}

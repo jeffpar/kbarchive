@@ -6,6 +6,8 @@ permalink: /kb/214/Q214687/
 
 ## Q214687: Official Microsoft NetMeeting Book Comments &amp; Corrections
 
+{% raw %}
+
 	Article: Q214687
 	Product(s): Microsoft Press
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/214/Q214687/
 	
 	=============================================================================
 	
+
+{% endraw %}

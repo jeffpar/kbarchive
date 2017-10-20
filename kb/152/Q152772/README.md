@@ -6,6 +6,8 @@ permalink: /kb/152/Q152772/
 
 ## Q152772: Mapiform.exe How to Send Mail Messages with MAPI
 
+{% raw %}
+
 	Article: Q152772
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,6.0
@@ -53,3 +55,5 @@ permalink: /kb/152/Q152772/
 	
 	=============================================================================
 	
+
+{% endraw %}

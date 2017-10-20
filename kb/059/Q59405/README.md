@@ -6,6 +6,8 @@ permalink: /kb/059/Q59405/
 
 ## Q59405: Illegal DIM x AS STRING&#42;&lt;Variable&gt; Can Hang QB.EXE or QBX.EXE
 
+{% raw %}
+
 	Article: Q59405
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -70,3 +72,5 @@ permalink: /kb/059/Q59405/
 	      x AS STRING * flen
 	   END TYPE
 	   DIM datetest AS recordtype
+
+{% endraw %}

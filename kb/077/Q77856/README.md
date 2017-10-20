@@ -6,6 +6,8 @@ permalink: /kb/077/Q77856/
 
 ## Q77856: IF EXIST Finds Hidden and System Files
 
+{% raw %}
+
 	Article: Q77856
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -56,3 +58,5 @@ permalink: /kb/077/Q77856/
 	
 	=============================================================================
 	
+
+{% endraw %}

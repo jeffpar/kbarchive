@@ -6,6 +6,8 @@ permalink: /kb/299/Q299053/
 
 ## Q299053: MapPoint 2002: Program May Hang While Creating Territories
 
+{% raw %}
+
 	Article: Q299053
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/299/Q299053/
 	
 	=============================================================================
 	
+
+{% endraw %}

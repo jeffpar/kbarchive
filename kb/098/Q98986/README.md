@@ -6,6 +6,8 @@ permalink: /kb/098/Q98986/
 
 ## Q98986: Microsoft Diagnostics (MSD) Does Not Print DBLSPACE.INI File
 
+{% raw %}
+
 	Article: Q98986
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2
@@ -78,3 +80,5 @@ permalink: /kb/098/Q98986/
 	
 	=============================================================================
 	
+
+{% endraw %}

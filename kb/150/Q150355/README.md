@@ -6,6 +6,8 @@ permalink: /kb/150/Q150355/
 
 ## Q150355: Windows NT Nonresponsive during NTFS Directory Traversal
 
+{% raw %}
+
 	Article: Q150355
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -127,3 +129,5 @@ permalink: /kb/150/Q150355/
 	
 	=============================================================================
 	
+
+{% endraw %}

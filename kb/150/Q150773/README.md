@@ -6,6 +6,8 @@ permalink: /kb/150/Q150773/
 
 ## Q150773: Microsoft Press &quot;Step by Step&quot; Setup Copies Zero-Byte Files
 
+{% raw %}
+
 	Article: Q150773
 	Product(s): Microsoft Press
 	Version(s): 
@@ -123,3 +125,5 @@ permalink: /kb/150/Q150773/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/257/Q257423/
 
 ## Q257423: XFOR: Meeting Request NDR When Sent to Multiple Recipients
 
+{% raw %}
+
 	Article: Q257423
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -71,3 +73,5 @@ permalink: /kb/257/Q257423/
 	
 	=============================================================================
 	
+
+{% endraw %}

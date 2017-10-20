@@ -6,6 +6,8 @@ permalink: /kb/084/Q84937/
 
 ## Q84937: Err Msg: The Microsoft Windows 32-Bit Disk Driver (WDCTRL)...
 
+{% raw %}
+
 	Article: Q84937
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/084/Q84937/
 	
 	=============================================================================
 	
+
+{% endraw %}

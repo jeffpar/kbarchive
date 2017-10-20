@@ -6,6 +6,8 @@ permalink: /kb/039/Q39367/
 
 ## Q39367: QCARDS Code Entry 19 Correction; Press SHIFT+F6 Once
 
+{% raw %}
+
 	Article: Q39367
 	Product(s): See article
 	Version(s): 4.50
@@ -24,3 +26,5 @@ permalink: /kb/039/Q39367/
 	It should say the following:
 	
 	   Press SHIFT+F6 once.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/079/Q79090/
 
 ## Q79090: Michaelangelo Virus Disables Floppy Drive
 
+{% raw %}
+
 	Article: Q79090
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0,5.0a
@@ -58,3 +60,5 @@ permalink: /kb/079/Q79090/
 	
 	=============================================================================
 	
+
+{% endraw %}

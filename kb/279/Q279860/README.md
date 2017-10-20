@@ -6,6 +6,8 @@ permalink: /kb/279/Q279860/
 
 ## Q279860: XFOR: How to Stop IMS from Relaying Junk E-mail
 
+{% raw %}
+
 	Article: Q279860
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP1,5.5 SP2,5.5 SP3
@@ -92,3 +94,5 @@ permalink: /kb/279/Q279860/
 	
 	=============================================================================
 	
+
+{% endraw %}

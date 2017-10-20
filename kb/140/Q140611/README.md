@@ -6,6 +6,8 @@ permalink: /kb/140/Q140611/
 
 ## Q140611: PRB: InstallSHIELD Error: Setup requires a different version
 
+{% raw %}
+
 	Article: Q140611
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/140/Q140611/
 	
 	=============================================================================
 	
+
+{% endraw %}

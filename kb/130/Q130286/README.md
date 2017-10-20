@@ -6,6 +6,8 @@ permalink: /kb/130/Q130286/
 
 ## Q130286: PC Gen: External Postoffice Message Volume Using TRAFFIC.EXE
 
+{% raw %}
+
 	Article: Q130286
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -52,3 +54,5 @@ permalink: /kb/130/Q130286/
 	
 	=============================================================================
 	
+
+{% endraw %}

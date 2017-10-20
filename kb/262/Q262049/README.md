@@ -6,6 +6,8 @@ permalink: /kb/262/Q262049/
 
 ## Q262049: Cannot Change Service Account Password for Secondary Site Server
 
+{% raw %}
+
 	Article: Q262049
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -103,3 +105,5 @@ permalink: /kb/262/Q262049/
 	
 	=============================================================================
 	
+
+{% endraw %}

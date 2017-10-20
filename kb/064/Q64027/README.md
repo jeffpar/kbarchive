@@ -6,6 +6,8 @@ permalink: /kb/064/Q64027/
 
 ## Q64027: Adding Dependencies to QuickC 2.50 Make File Disrupts QuickC
 
+{% raw %}
+
 	Article: Q64027
 	Product(s): See article
 	Version(s): 2.50 2.51
@@ -36,3 +38,5 @@ permalink: /kb/064/Q64027/
 	so through the menu system. The other alternative is to make the
 	changes to the make file and then rebuild from the command line with
 	the NMAKE utility.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/238/Q238044/
 
 ## Q238044: Encarta Dictionary 2000: Comparison with Bookshelf 99
 
+{% raw %}
+
 	Article: Q238044
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -56,3 +58,5 @@ permalink: /kb/238/Q238044/
 	
 	=============================================================================
 	
+
+{% endraw %}

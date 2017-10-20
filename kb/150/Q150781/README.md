@@ -6,6 +6,8 @@ permalink: /kb/150/Q150781/
 
 ## Q150781: Golf Err Msg: Glfmod2 Caused a Divide Error in Glfani32.dll
 
+{% raw %}
+
 	Article: Q150781
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0,95
@@ -103,3 +105,5 @@ permalink: /kb/150/Q150781/
 	
 	=============================================================================
 	
+
+{% endraw %}

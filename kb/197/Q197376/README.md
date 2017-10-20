@@ -6,6 +6,8 @@ permalink: /kb/197/Q197376/
 
 ## Q197376: XFOR: IRCX Channel Name on Remote Server Appears Incorrectly
 
+{% raw %}
+
 	Article: Q197376
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -57,3 +59,5 @@ permalink: /kb/197/Q197376/
 	
 	=============================================================================
 	
+
+{% endraw %}

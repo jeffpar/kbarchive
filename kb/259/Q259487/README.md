@@ -6,6 +6,8 @@ permalink: /kb/259/Q259487/
 
 ## Q259487: XADM: Isinteg Loops If Folder's Parent Doesn't Exist in Store
 
+{% raw %}
+
 	Article: Q259487
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -99,3 +101,5 @@ permalink: /kb/259/Q259487/
 	
 	=============================================================================
 	
+
+{% endraw %}

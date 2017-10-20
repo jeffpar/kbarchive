@@ -6,6 +6,8 @@ permalink: /kb/178/Q178939/
 
 ## Q178939: XADM: Language Not Maintained with Cyrillic (KOI8-R) Messages
 
+{% raw %}
+
 	Article: Q178939
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/178/Q178939/
 	
 	=============================================================================
 	
+
+{% endraw %}

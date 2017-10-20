@@ -6,6 +6,8 @@ permalink: /kb/136/Q136182/
 
 ## Q136182: Multimedia AutoStart: Setup Continuously Restarts Windows
 
+{% raw %}
+
 	Article: Q136182
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a,2.0
@@ -241,3 +243,5 @@ permalink: /kb/136/Q136182/
 	
 	=============================================================================
 	
+
+{% endraw %}

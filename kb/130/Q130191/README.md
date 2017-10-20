@@ -6,6 +6,8 @@ permalink: /kb/130/Q130191/
 
 ## Q130191: Support Policies for Microsoft Press Books
 
+{% raw %}
+
 	Article: Q130191
 	Product(s): Microsoft Press
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/130/Q130191/
 	
 	=============================================================================
 	
+
+{% endraw %}

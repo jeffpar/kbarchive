@@ -6,6 +6,8 @@ permalink: /kb/166/Q166261/
 
 ## Q166261: BUG: &quot;File is Exclusively Checked Out&quot; Error
 
+{% raw %}
+
 	Article: Q166261
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0
@@ -73,3 +75,5 @@ permalink: /kb/166/Q166261/
 	
 	=============================================================================
 	
+
+{% endraw %}

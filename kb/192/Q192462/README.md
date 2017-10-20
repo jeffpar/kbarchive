@@ -6,6 +6,8 @@ permalink: /kb/192/Q192462/
 
 ## Q192462: SMS: Client Stops Responding Using DisableFailedServerDialog
 
+{% raw %}
+
 	Article: Q192462
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -86,3 +88,5 @@ permalink: /kb/192/Q192462/
 	
 	=============================================================================
 	
+
+{% endraw %}

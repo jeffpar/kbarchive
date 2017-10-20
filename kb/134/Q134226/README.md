@@ -6,6 +6,8 @@ permalink: /kb/134/Q134226/
 
 ## Q134226: PC DirSync: Purpose and Results of Choosing Global-List Option
 
+{% raw %}
+
 	Article: Q134226
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.2a,3.5
@@ -75,3 +77,5 @@ permalink: /kb/134/Q134226/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150554/
 
 ## Q150554: Error: Thomas Conrad TC4145 Adapter Not Functioning
 
+{% raw %}
+
 	Article: Q150554
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -45,3 +47,5 @@ permalink: /kb/150/Q150554/
 	
 	=============================================================================
 	
+
+{% endraw %}

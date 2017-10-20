@@ -6,6 +6,8 @@ permalink: /kb/126/Q126117/
 
 ## Q126117: Plug and Play BIOS Required for Hot/Warm Docking/Undocking
 
+{% raw %}
+
 	Article: Q126117
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/126/Q126117/
 	
 	=============================================================================
 	
+
+{% endraw %}

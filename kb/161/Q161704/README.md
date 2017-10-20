@@ -6,6 +6,8 @@ permalink: /kb/161/Q161704/
 
 ## Q161704: Ibmsync.sys May Cause Connection Loss
 
+{% raw %}
+
 	Article: Q161704
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -69,3 +71,5 @@ permalink: /kb/161/Q161704/
 	
 	=============================================================================
 	
+
+{% endraw %}

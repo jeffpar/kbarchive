@@ -6,6 +6,8 @@ permalink: /kb/271/Q271696/
 
 ## Q271696: SMS: Smsapm32 Creates Large &quot;Complete&quot; Job Files on Clients
 
+{% raw %}
+
 	Article: Q271696
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP2
@@ -156,3 +158,5 @@ permalink: /kb/271/Q271696/
 	
 	=============================================================================
 	
+
+{% endraw %}

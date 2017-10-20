@@ -6,6 +6,8 @@ permalink: /kb/183/Q183238/
 
 ## Q183238: SNARAS Logs Events 101, 102, and 201 When Dialing Out
 
+{% raw %}
+
 	Article: Q183238
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -72,3 +74,5 @@ permalink: /kb/183/Q183238/
 	
 	=============================================================================
 	
+
+{% endraw %}

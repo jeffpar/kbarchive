@@ -6,6 +6,8 @@ permalink: /kb/234/Q234383/
 
 ## Q234383: XCON: GroupWise Router Doesn't Stop w. Connectivity Controller
 
+{% raw %}
+
 	Article: Q234383
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -45,3 +47,5 @@ permalink: /kb/234/Q234383/
 	
 	=============================================================================
 	
+
+{% endraw %}

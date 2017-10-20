@@ -6,6 +6,8 @@ permalink: /kb/124/Q124161/
 
 ## Q124161: Space Required Value Based on Cluster Size
 
+{% raw %}
+
 	Article: Q124161
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/124/Q124161/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/050/Q50638/
 
 ## Q50638: &quot;Subscript Out Of Range&quot; If REDIM Long Integer Array in SUB
 
+{% raw %}
+
 	Article: Q50638
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -40,3 +42,5 @@ permalink: /kb/050/Q50638/
 	SUB Test(arrayc&())
 	   REDIM arrayc&(100)
 	END SUB
+
+{% endraw %}

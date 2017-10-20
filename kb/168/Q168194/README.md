@@ -6,6 +6,8 @@ permalink: /kb/168/Q168194/
 
 ## Q168194: PRB: DAO Recordset Name Property Is Limited to 256 Characters
 
+{% raw %}
+
 	Article: Q168194
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -116,3 +118,5 @@ permalink: /kb/168/Q168194/
 	
 	=============================================================================
 	
+
+{% endraw %}

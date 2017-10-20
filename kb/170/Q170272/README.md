@@ -6,6 +6,8 @@ permalink: /kb/170/Q170272/
 
 ## Q170272: WD97: Not All Word Editing Functions Available in Form Fields
 
+{% raw %}
+
 	Article: Q170272
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -205,3 +207,5 @@ permalink: /kb/170/Q170272/
 	
 	=============================================================================
 	
+
+{% endraw %}

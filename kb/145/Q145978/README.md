@@ -6,6 +6,8 @@ permalink: /kb/145/Q145978/
 
 ## Q145978: XCLN: Shiva Does Not Always Prompt to Hang Up Connection
 
+{% raw %}
+
 	Article: Q145978
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -49,3 +51,5 @@ permalink: /kb/145/Q145978/
 	
 	=============================================================================
 	
+
+{% endraw %}

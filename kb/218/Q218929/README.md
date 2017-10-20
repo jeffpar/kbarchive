@@ -6,6 +6,8 @@ permalink: /kb/218/Q218929/
 
 ## Q218929: FIX: UUID.LIB In VC6 Has Bad Definition for IViewFilter w/OLE DB
 
+{% raw %}
+
 	Article: Q218929
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -75,3 +77,5 @@ permalink: /kb/218/Q218929/
 	
 	=============================================================================
 	
+
+{% endraw %}

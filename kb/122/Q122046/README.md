@@ -6,6 +6,8 @@ permalink: /kb/122/Q122046/
 
 ## Q122046: BUG: Custom Menu Option Disabled in the Edit Menu
 
+{% raw %}
+
 	Article: Q122046
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a,3.0b
@@ -106,3 +108,5 @@ permalink: /kb/122/Q122046/
 	
 	=============================================================================
 	
+
+{% endraw %}

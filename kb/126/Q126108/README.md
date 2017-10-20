@@ -6,6 +6,8 @@ permalink: /kb/126/Q126108/
 
 ## Q126108: Cannot Share Program Manager Group Files
 
+{% raw %}
+
 	Article: Q126108
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/126/Q126108/
 	
 	=============================================================================
 	
+
+{% endraw %}

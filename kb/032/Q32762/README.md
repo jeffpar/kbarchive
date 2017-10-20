@@ -6,6 +6,8 @@ permalink: /kb/032/Q32762/
 
 ## Q32762: FIX: Forward Reference to Segment Name Gives Phase Error
 
+{% raw %}
+
 	Article: Q32762
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -89,3 +91,5 @@ permalink: /kb/032/Q32762/
 	
 	=============================================================================
 	
+
+{% endraw %}

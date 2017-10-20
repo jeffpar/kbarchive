@@ -6,6 +6,8 @@ permalink: /kb/067/Q67315/
 
 ## Q67315: How to Use CALL INTERRUPT to Diagnose COM &quot;Device I/O&quot; Error
 
+{% raw %}
+
 	Article: Q67315
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -187,3 +189,5 @@ permalink: /kb/067/Q67315/
 	      MessageCount% = MessageCount% + 1
 	   END IF
 	END SUB
+
+{% endraw %}

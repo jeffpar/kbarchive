@@ -6,6 +6,8 @@ permalink: /kb/180/Q180120/
 
 ## Q180120: WD97: Word Setup Does Not Install ODBC Drivers
 
+{% raw %}
+
 	Article: Q180120
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -157,3 +159,5 @@ permalink: /kb/180/Q180120/
 	
 	=============================================================================
 	
+
+{% endraw %}

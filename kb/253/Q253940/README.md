@@ -6,6 +6,8 @@ permalink: /kb/253/Q253940/
 
 ## Q253940: PRB: Incorrect Screen Object Width/Height After the Desktop Is R
 
+{% raw %}
+
 	Article: Q253940
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -85,3 +87,5 @@ permalink: /kb/253/Q253940/
 	
 	=============================================================================
 	
+
+{% endraw %}

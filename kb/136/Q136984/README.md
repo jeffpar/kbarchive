@@ -6,6 +6,8 @@ permalink: /kb/136/Q136984/
 
 ## Q136984: Julia Child: Windows 95 Installation Instructions Not Included
 
+{% raw %}
+
 	Article: Q136984
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0; WINDOWS:95
@@ -66,3 +68,5 @@ permalink: /kb/136/Q136984/
 	
 	=============================================================================
 	
+
+{% endraw %}

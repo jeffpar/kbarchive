@@ -6,6 +6,8 @@ permalink: /kb/120/Q120055/
 
 ## Q120055: OS/2 IOPL Applications May Fail in Windows NT
 
+{% raw %}
+
 	Article: Q120055
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/120/Q120055/
 	
 	=============================================================================
 	
+
+{% endraw %}

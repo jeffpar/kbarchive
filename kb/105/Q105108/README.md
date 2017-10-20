@@ -6,6 +6,8 @@ permalink: /kb/105/Q105108/
 
 ## Q105108: PC Win: Modifying the MSMAIL.INI File in Windows NT
 
+{% raw %}
+
 	Article: Q105108
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.1
@@ -69,3 +71,5 @@ permalink: /kb/105/Q105108/
 	
 	=============================================================================
 	
+
+{% endraw %}

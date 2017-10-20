@@ -6,6 +6,8 @@ permalink: /kb/126/Q126384/
 
 ## Q126384: Err Msg: User configuration for parameter Serial1 must ...
 
+{% raw %}
+
 	Article: Q126384
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/126/Q126384/
 	
 	=============================================================================
 	
+
+{% endraw %}

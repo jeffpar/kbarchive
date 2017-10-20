@@ -6,6 +6,8 @@ permalink: /kb/140/Q140108/
 
 ## Q140108: BUG: Opening an AVI file Fails When MCIWnd Is Subclassed
 
+{% raw %}
+
 	Article: Q140108
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1; :1.1
@@ -57,3 +59,5 @@ permalink: /kb/140/Q140108/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183283/
 
 ## Q183283: Internet Explorer via Proxy to IIS May Stop on Page with Scripts
 
+{% raw %}
+
 	Article: Q183283
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:4.01; winnt:2.0,4.0
@@ -88,3 +90,5 @@ permalink: /kb/183/Q183283/
 	
 	=============================================================================
 	
+
+{% endraw %}

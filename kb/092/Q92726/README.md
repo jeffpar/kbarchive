@@ -6,6 +6,8 @@ permalink: /kb/092/Q92726/
 
 ## Q92726: Applications Appearing in Windows 3.1 APPS.HLP (A-C)
 
+{% raw %}
+
 	Article: Q92726
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -211,3 +213,5 @@ permalink: /kb/092/Q92726/
 	
 	=============================================================================
 	
+
+{% endraw %}

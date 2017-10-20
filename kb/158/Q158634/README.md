@@ -6,6 +6,8 @@ permalink: /kb/158/Q158634/
 
 ## Q158634: XCLN: Using Exchange Client With Windows NT Mandatory Profile
 
+{% raw %}
+
 	Article: Q158634
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -80,3 +82,5 @@ permalink: /kb/158/Q158634/
 	
 	=============================================================================
 	
+
+{% endraw %}

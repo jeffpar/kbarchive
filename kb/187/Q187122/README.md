@@ -6,6 +6,8 @@ permalink: /kb/187/Q187122/
 
 ## Q187122: Deleted Files Appear Under in Recycler for All SIDs
 
+{% raw %}
+
 	Article: Q187122
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -56,3 +58,5 @@ permalink: /kb/187/Q187122/
 	
 	=============================================================================
 	
+
+{% endraw %}

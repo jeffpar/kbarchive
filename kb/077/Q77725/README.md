@@ -6,6 +6,8 @@ permalink: /kb/077/Q77725/
 
 ## Q77725: Must Exit and Reenter Windows to Update Sound Driver
 
+{% raw %}
+
 	Article: Q77725
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.0; WINDOWS:3.0,3.0a
@@ -40,3 +42,5 @@ permalink: /kb/077/Q77725/
 	
 	=============================================================================
 	
+
+{% endraw %}

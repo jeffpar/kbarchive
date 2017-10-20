@@ -6,6 +6,8 @@ permalink: /kb/216/Q216271/
 
 ## Q216271: SAMPLE: SamScrpt.exe Demos Active Debug w/C++ ActiveX Script
 
+{% raw %}
+
 	Article: Q216271
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -323,3 +325,5 @@ permalink: /kb/216/Q216271/
 	
 	=============================================================================
 	
+
+{% endraw %}

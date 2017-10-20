@@ -6,6 +6,8 @@ permalink: /kb/067/Q67736/
 
 ## Q67736: PRB: &quot;missing ':' in -&gt;&quot; Caused by Control Character
 
+{% raw %}
+
 	Article: Q67736
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -57,3 +59,5 @@ permalink: /kb/067/Q67736/
 	
 	=============================================================================
 	
+
+{% endraw %}

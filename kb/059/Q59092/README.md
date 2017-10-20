@@ -6,6 +6,8 @@ permalink: /kb/059/Q59092/
 
 ## Q59092: Oakland Runway Disappears on Landing Approach
 
+{% raw %}
+
 	Article: Q59092
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/059/Q59092/
 	
 	=============================================================================
 	
+
+{% endraw %}

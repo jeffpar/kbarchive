@@ -6,6 +6,8 @@ permalink: /kb/190/Q190975/
 
 ## Q190975: FIX: Delete Files from Project Doesn't Update IntelliSense
 
+{% raw %}
+
 	Article: Q190975
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -99,3 +101,5 @@ permalink: /kb/190/Q190975/
 	
 	=============================================================================
 	
+
+{% endraw %}

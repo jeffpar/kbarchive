@@ -6,6 +6,8 @@ permalink: /kb/113/Q113019/
 
 ## Q113019: PPT: Cannot Change Default Fit Text or Anchor Point Options
 
+{% raw %}
+
 	Article: Q113019
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:3.0,3.0b,4.0; WINDOWS:3.0,4.0,4.0a,7.0
@@ -91,3 +93,5 @@ permalink: /kb/113/Q113019/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/208/Q208616/
 
 ## Q208616: MCM: Motorcycles and Riders Are Not Displayed Correctly
 
+{% raw %}
+
 	Article: Q208616
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -80,3 +82,5 @@ permalink: /kb/208/Q208616/
 	
 	=============================================================================
 	
+
+{% endraw %}

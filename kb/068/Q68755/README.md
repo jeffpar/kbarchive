@@ -6,6 +6,8 @@ permalink: /kb/068/Q68755/
 
 ## Q68755: Cannot Print from a DOS Application in Enhanced Mode
 
+{% raw %}
+
 	Article: Q68755
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -52,3 +54,5 @@ permalink: /kb/068/Q68755/
 	
 	=============================================================================
 	
+
+{% endraw %}

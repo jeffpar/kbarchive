@@ -6,6 +6,8 @@ permalink: /kb/142/Q142582/
 
 ## Q142582: 3D Movie Maker: Clicks During Melanie Talking Don't Invoke Act
 
+{% raw %}
+
 	Article: Q142582
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -54,3 +56,5 @@ permalink: /kb/142/Q142582/
 	
 	=============================================================================
 	
+
+{% endraw %}

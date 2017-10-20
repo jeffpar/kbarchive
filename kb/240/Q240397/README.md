@@ -6,6 +6,8 @@ permalink: /kb/240/Q240397/
 
 ## Q240397: INFO: Adding a VCCE ActiveX Control to a VBCE Form
 
+{% raw %}
+
 	Article: Q240397
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,3.0,6.0
@@ -95,3 +97,5 @@ permalink: /kb/240/Q240397/
 	
 	=============================================================================
 	
+
+{% endraw %}

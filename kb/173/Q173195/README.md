@@ -6,6 +6,8 @@ permalink: /kb/173/Q173195/
 
 ## Q173195: XCLN: Mac Client Shows No Insertion Point in Editable Field
 
+{% raw %}
+
 	Article: Q173195
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -53,3 +55,5 @@ permalink: /kb/173/Q173195/
 	
 	=============================================================================
 	
+
+{% endraw %}

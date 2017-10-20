@@ -6,6 +6,8 @@ permalink: /kb/170/Q170147/
 
 ## Q170147: HOWTO: Retrieve Identity Column After Insert Using RDO
 
+{% raw %}
+
 	Article: Q170147
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -175,3 +177,5 @@ permalink: /kb/170/Q170147/
 	
 	=============================================================================
 	
+
+{% endraw %}

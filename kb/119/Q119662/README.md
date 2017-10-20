@@ -6,6 +6,8 @@ permalink: /kb/119/Q119662/
 
 ## Q119662: Bookshelf 1994: Can Print Only Once to Canon BJ-200
 
+{% raw %}
+
 	Article: Q119662
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -71,3 +73,5 @@ permalink: /kb/119/Q119662/
 	
 	=============================================================================
 	
+
+{% endraw %}

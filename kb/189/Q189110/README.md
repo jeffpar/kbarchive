@@ -6,6 +6,8 @@ permalink: /kb/189/Q189110/
 
 ## Q189110: PRB: &quot;File Already Open&quot; Error w/VSS DB on Unix Server
 
+{% raw %}
+
 	Article: Q189110
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0
@@ -91,3 +93,5 @@ permalink: /kb/189/Q189110/
 	
 	=============================================================================
 	
+
+{% endraw %}

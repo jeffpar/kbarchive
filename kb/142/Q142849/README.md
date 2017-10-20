@@ -6,6 +6,8 @@ permalink: /kb/142/Q142849/
 
 ## Q142849: Obtaining a Secure Sockets Layer (PCT/SSL) Digital Certificate
 
+{% raw %}
+
 	Article: Q142849
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -72,3 +74,5 @@ permalink: /kb/142/Q142849/
 	
 	=============================================================================
 	
+
+{% endraw %}

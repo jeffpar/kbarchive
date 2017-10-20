@@ -6,6 +6,8 @@ permalink: /kb/137/Q137662/
 
 ## Q137662: UNCONF: Unable to Process Msjt2032.dll Running Setup Wizard
 
+{% raw %}
+
 	Article: Q137662
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -54,3 +56,5 @@ permalink: /kb/137/Q137662/
 	
 	=============================================================================
 	
+
+{% endraw %}

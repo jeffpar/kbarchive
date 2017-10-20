@@ -6,6 +6,8 @@ permalink: /kb/235/Q235994/
 
 ## Q235994: How Windows NT Saves Window Size and Location Parameters
 
+{% raw %}
+
 	Article: Q235994
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -88,3 +90,5 @@ permalink: /kb/235/Q235994/
 	
 	=============================================================================
 	
+
+{% endraw %}

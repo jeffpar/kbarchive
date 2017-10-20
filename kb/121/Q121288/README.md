@@ -6,6 +6,8 @@ permalink: /kb/121/Q121288/
 
 ## Q121288: SETUP Truncates the 40th-46th Character in Company Name
 
+{% raw %}
+
 	Article: Q121288
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/121/Q121288/
 	
 	=============================================================================
 	
+
+{% endraw %}

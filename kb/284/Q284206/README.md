@@ -6,6 +6,8 @@ permalink: /kb/284/Q284206/
 
 ## Q284206: Motocross Madness 2: Textures Are Distorted on Intel 810
 
+{% raw %}
+
 	Article: Q284206
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -112,3 +114,5 @@ permalink: /kb/284/Q284206/
 	
 	=============================================================================
 	
+
+{% endraw %}

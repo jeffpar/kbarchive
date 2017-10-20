@@ -6,6 +6,8 @@ permalink: /kb/111/Q111929/
 
 ## Q111929: Error 58 with SMC Ethercard and ODI Drivers
 
+{% raw %}
+
 	Article: Q111929
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -58,3 +60,5 @@ permalink: /kb/111/Q111929/
 	
 	=============================================================================
 	
+
+{% endraw %}

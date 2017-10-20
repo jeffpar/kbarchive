@@ -6,6 +6,8 @@ permalink: /kb/179/Q179309/
 
 ## Q179309: XADM: LDAP Port for SSL Is Not Configurable In Exchange
 
+{% raw %}
+
 	Article: Q179309
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -49,3 +51,5 @@ permalink: /kb/179/Q179309/
 	
 	=============================================================================
 	
+
+{% endraw %}

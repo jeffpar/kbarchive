@@ -6,6 +6,8 @@ permalink: /kb/088/Q88371/
 
 ## Q88371: PC Win: Change Default Printer in Windows Not Changed in Mail
 
+{% raw %}
+
 	Article: Q88371
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -67,3 +69,5 @@ permalink: /kb/088/Q88371/
 	
 	=============================================================================
 	
+
+{% endraw %}

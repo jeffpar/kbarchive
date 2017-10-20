@@ -6,6 +6,8 @@ permalink: /kb/103/Q103944/
 
 ## Q103944: PC Win: GP Fault Copying Many Messages to Shared Folder
 
+{% raw %}
+
 	Article: Q103944
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -47,3 +49,5 @@ permalink: /kb/103/Q103944/
 	
 	=============================================================================
 	
+
+{% endraw %}

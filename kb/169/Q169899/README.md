@@ -6,6 +6,8 @@ permalink: /kb/169/Q169899/
 
 ## Q169899: XGEN: Event Log Displays Different Error Description
 
+{% raw %}
+
 	Article: Q169899
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/169/Q169899/
 	
 	=============================================================================
 	
+
+{% endraw %}

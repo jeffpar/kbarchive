@@ -6,6 +6,8 @@ permalink: /kb/166/Q166570/
 
 ## Q166570: XFOR: IMS May Crash When Receiving Message from Pegasus Mail
 
+{% raw %}
+
 	Article: Q166570
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -63,3 +65,5 @@ permalink: /kb/166/Q166570/
 	
 	=============================================================================
 	
+
+{% endraw %}

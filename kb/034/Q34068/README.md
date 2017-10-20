@@ -6,6 +6,8 @@ permalink: /kb/034/Q34068/
 
 ## Q34068: Graphic Adapters Supported by the Graphics Routines
 
+{% raw %}
+
 	Article: Q34068
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -32,3 +34,5 @@ permalink: /kb/034/Q34068/
 	
 	   The Hercules card was not supported in previous versions of
 	Microsoft C or QuickC.
+
+{% endraw %}

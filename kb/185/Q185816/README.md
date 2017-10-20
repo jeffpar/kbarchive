@@ -6,6 +6,8 @@ permalink: /kb/185/Q185816/
 
 ## Q185816: DNS Server Event Log IDs Incorrect After Applying SP4
 
+{% raw %}
+
 	Article: Q185816
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/185/Q185816/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168857/
 
 ## Q168857: XFOR: Err Msg: MSMI Service Returned Service-Specific Error 105
 
+{% raw %}
+
 	Article: Q168857
 	Product(s): Microsoft Exchange
 	Version(s): WinNT: 4.0,5.0
@@ -96,3 +98,5 @@ permalink: /kb/168/Q168857/
 	
 	=============================================================================
 	
+
+{% endraw %}

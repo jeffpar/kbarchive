@@ -6,6 +6,8 @@ permalink: /kb/093/Q93572/
 
 ## Q93572: PC Win: Attachment Icon Redraws When Using BACKSPACE Key
 
+{% raw %}
+
 	Article: Q93572
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -49,3 +51,5 @@ permalink: /kb/093/Q93572/
 	
 	=============================================================================
 	
+
+{% endraw %}

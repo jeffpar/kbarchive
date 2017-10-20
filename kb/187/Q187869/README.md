@@ -6,6 +6,8 @@ permalink: /kb/187/Q187869/
 
 ## Q187869: XADM: Information Store Stops While Processing Message
 
+{% raw %}
+
 	Article: Q187869
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -68,3 +70,5 @@ permalink: /kb/187/Q187869/
 	
 	=============================================================================
 	
+
+{% endraw %}

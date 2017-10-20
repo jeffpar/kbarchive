@@ -6,6 +6,8 @@ permalink: /kb/192/Q192863/
 
 ## Q192863: PRB: Data Entered in Text Box with Mask Differs from Exit Method
 
+{% raw %}
+
 	Article: Q192863
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -94,3 +96,5 @@ permalink: /kb/192/Q192863/
 	
 	=============================================================================
 	
+
+{% endraw %}

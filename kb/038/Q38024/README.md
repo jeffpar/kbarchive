@@ -6,6 +6,8 @@ permalink: /kb/038/Q38024/
 
 ## Q38024: INFO: A Case Where BUFF&#91;&#93; and &#42;BUFF Are Different
 
+{% raw %}
+
 	Article: Q38024
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,2.1,4.0,5.0,6.0
@@ -72,3 +74,5 @@ permalink: /kb/038/Q38024/
 	
 	=============================================================================
 	
+
+{% endraw %}

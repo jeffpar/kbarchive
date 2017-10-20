@@ -6,6 +6,8 @@ permalink: /kb/106/Q106730/
 
 ## Q106730: BUG: F6103 Reading &quot;0.&quot; into COMPLEX Number
 
+{% raw %}
+
 	Article: Q106730
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a,4.0
@@ -84,3 +86,5 @@ permalink: /kb/106/Q106730/
 	
 	=============================================================================
 	
+
+{% endraw %}

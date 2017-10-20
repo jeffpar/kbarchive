@@ -6,6 +6,8 @@ permalink: /kb/179/Q179559/
 
 ## Q179559: WD97: Changing Object Wrapping Changes Order to Behind Text
 
+{% raw %}
+
 	Article: Q179559
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -58,3 +60,5 @@ permalink: /kb/179/Q179559/
 	
 	=============================================================================
 	
+
+{% endraw %}

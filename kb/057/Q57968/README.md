@@ -6,6 +6,8 @@ permalink: /kb/057/Q57968/
 
 ## Q57968: Flt Sim: Mouse Click Does Not Always Change MAG Indicator
 
+{% raw %}
+
 	Article: Q57968
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/057/Q57968/
 	
 	=============================================================================
 	
+
+{% endraw %}

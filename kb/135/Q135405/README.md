@@ -6,6 +6,8 @@ permalink: /kb/135/Q135405/
 
 ## Q135405: Repairing a Corrupted WINS Database w/ Starting Version Count
 
+{% raw %}
+
 	Article: Q135405
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -102,3 +104,5 @@ permalink: /kb/135/Q135405/
 	
 	=============================================================================
 	
+
+{% endraw %}

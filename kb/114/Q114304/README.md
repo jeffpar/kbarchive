@@ -6,6 +6,8 @@ permalink: /kb/114/Q114304/
 
 ## Q114304: ACLs Not Translated When User Names Have Extended Characters
 
+{% raw %}
+
 	Article: Q114304
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -47,3 +49,5 @@ permalink: /kb/114/Q114304/
 	
 	=============================================================================
 	
+
+{% endraw %}

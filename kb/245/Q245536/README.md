@@ -6,6 +6,8 @@ permalink: /kb/245/Q245536/
 
 ## Q245536: How to Change an SNA Server's Configuration Role with SVCONFIG
 
+{% raw %}
+
 	Article: Q245536
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -57,3 +59,5 @@ permalink: /kb/245/Q245536/
 	
 	=============================================================================
 	
+
+{% endraw %}

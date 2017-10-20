@@ -6,6 +6,8 @@ permalink: /kb/080/Q80891/
 
 ## Q80891: Mac MSPlus: Values Entered in Distribution Settings Truncated
 
+{% raw %}
+
 	Article: Q80891
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -39,3 +41,5 @@ permalink: /kb/080/Q80891/
 	
 	=============================================================================
 	
+
+{% endraw %}

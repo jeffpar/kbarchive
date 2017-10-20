@@ -6,6 +6,8 @@ permalink: /kb/130/Q130270/
 
 ## Q130270: BUG: SourceSafe Reports a Date/Time of 1/1/70
 
+{% raw %}
+
 	Article: Q130270
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/130/Q130270/
 	
 	=============================================================================
 	
+
+{% endraw %}

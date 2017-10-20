@@ -6,6 +6,8 @@ permalink: /kb/165/Q165509/
 
 ## Q165509: CSNW Clients May Get Access Denied Using WHOAMI
 
+{% raw %}
+
 	Article: Q165509
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/165/Q165509/
 	
 	=============================================================================
 	
+
+{% endraw %}

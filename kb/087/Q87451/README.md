@@ -6,6 +6,8 @@ permalink: /kb/087/Q87451/
 
 ## Q87451: PRB: 386MAX May Conflict with Profiler When Running PLIST
 
+{% raw %}
+
 	Article: Q87451
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,1.2,1.3
@@ -52,3 +54,5 @@ permalink: /kb/087/Q87451/
 	
 	=============================================================================
 	
+
+{% endraw %}

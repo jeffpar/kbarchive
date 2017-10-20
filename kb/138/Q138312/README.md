@@ -6,6 +6,8 @@ permalink: /kb/138/Q138312/
 
 ## Q138312: PRB: Image Editor Not Saving .Cur Files as Mono Color
 
+{% raw %}
+
 	Article: Q138312
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -85,3 +87,5 @@ permalink: /kb/138/Q138312/
 	
 	=============================================================================
 	
+
+{% endraw %}

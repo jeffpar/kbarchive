@@ -6,6 +6,8 @@ permalink: /kb/268/Q268657/
 
 ## Q268657: XADM: Exchange Server 5.5 Post-SP3 MAPI Fixes Available
 
+{% raw %}
+
 	Article: Q268657
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -84,3 +86,5 @@ permalink: /kb/268/Q268657/
 	
 	=============================================================================
 	
+
+{% endraw %}

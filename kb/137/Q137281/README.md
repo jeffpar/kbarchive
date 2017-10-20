@@ -6,6 +6,8 @@ permalink: /kb/137/Q137281/
 
 ## Q137281: Encarta 1995: Mindmaze and Gallery Will Not Launch
 
+{% raw %}
+
 	Article: Q137281
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1995 edition
@@ -53,3 +55,5 @@ permalink: /kb/137/Q137281/
 	
 	=============================================================================
 	
+
+{% endraw %}

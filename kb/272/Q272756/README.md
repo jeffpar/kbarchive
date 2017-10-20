@@ -6,6 +6,8 @@ permalink: /kb/272/Q272756/
 
 ## Q272756: INFO: Visual FoxPro Is Not Supported on Terminal Server 4.0
 
+{% raw %}
+
 	Article: Q272756
 	Product(s): Microsoft FoxPro
 	Version(s): 4.0,5.0,6.0,7.0
@@ -74,3 +76,5 @@ permalink: /kb/272/Q272756/
 	
 	=============================================================================
 	
+
+{% endraw %}

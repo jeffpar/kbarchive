@@ -6,6 +6,8 @@ permalink: /kb/197/Q197941/
 
 ## Q197941: FIX: Setup Wizard Cannot Register Foxhhelpps.dll File
 
+{% raw %}
+
 	Article: Q197941
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -109,3 +111,5 @@ permalink: /kb/197/Q197941/
 	
 	=============================================================================
 	
+
+{% endraw %}

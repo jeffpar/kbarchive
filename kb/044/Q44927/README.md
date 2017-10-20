@@ -6,6 +6,8 @@ permalink: /kb/044/Q44927/
 
 ## Q44927: How Does _osmode Get Set?
 
+{% raw %}
+
 	Article: Q44927
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -34,3 +36,5 @@ permalink: /kb/044/Q44927/
 	the same token, when you compile with /Lp, the linker links the proper
 	library for OS/2 (xLIBCyP). If you don't specify one of these options,
 	your code is linked with xLIBCy.
+
+{% endraw %}

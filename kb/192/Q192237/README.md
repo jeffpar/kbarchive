@@ -6,6 +6,8 @@ permalink: /kb/192/Q192237/
 
 ## Q192237: Message &quot;Click here to begin&quot; Missing from Taskbar
 
+{% raw %}
+
 	Article: Q192237
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/192/Q192237/
 	
 	=============================================================================
 	
+
+{% endraw %}

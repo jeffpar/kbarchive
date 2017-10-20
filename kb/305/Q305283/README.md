@@ -6,6 +6,8 @@ permalink: /kb/305/Q305283/
 
 ## Q305283: ENC: Error Message: The Page Cannot Be Displayed
 
+{% raw %}
+
 	Article: Q305283
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -91,3 +93,5 @@ permalink: /kb/305/Q305283/
 	
 	=============================================================================
 	
+
+{% endraw %}

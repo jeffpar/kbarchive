@@ -6,6 +6,8 @@ permalink: /kb/068/Q68655/
 
 ## Q68655: Windows 3.0 Enhanced Mode Requires WINA20.386
 
+{% raw %}
+
 	Article: Q68655
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22; WINDOWS:3.0
@@ -76,3 +78,5 @@ permalink: /kb/068/Q68655/
 	
 	=============================================================================
 	
+
+{% endraw %}

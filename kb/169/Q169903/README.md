@@ -6,6 +6,8 @@ permalink: /kb/169/Q169903/
 
 ## Q169903: SNA Server 3.0 Print Sessions Remain Pending on Windows NT
 
+{% raw %}
+
 	Article: Q169903
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1; winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/169/Q169903/
 	
 	=============================================================================
 	
+
+{% endraw %}

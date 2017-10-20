@@ -6,6 +6,8 @@ permalink: /kb/198/Q198179/
 
 ## Q198179: Enabling an APPC/CPIC Program to Use Persistent Verification
 
+{% raw %}
+
 	Article: Q198179
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP3,4.0,4.0 SP1
@@ -117,3 +119,5 @@ permalink: /kb/198/Q198179/
 	
 	=============================================================================
 	
+
+{% endraw %}

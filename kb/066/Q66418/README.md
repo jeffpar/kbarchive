@@ -6,6 +6,8 @@ permalink: /kb/066/Q66418/
 
 ## Q66418: One-Key Macros Can Be Used to Substitute for Two-Key Sequences
 
+{% raw %}
+
 	Article: Q66418
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -41,3 +43,5 @@ permalink: /kb/066/Q66418/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111954/
 
 ## Q111954: SMB Incorrectly Defined in Windows NT Resource Kit
 
+{% raw %}
+
 	Article: Q111954
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -71,3 +73,5 @@ permalink: /kb/111/Q111954/
 	
 	=============================================================================
 	
+
+{% endraw %}

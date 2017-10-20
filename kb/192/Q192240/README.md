@@ -6,6 +6,8 @@ permalink: /kb/192/Q192240/
 
 ## Q192240: Remote MS-DOS Client May Sort Incorrectly After Year 2000
 
+{% raw %}
+
 	Article: Q192240
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/192/Q192240/
 	
 	=============================================================================
 	
+
+{% endraw %}

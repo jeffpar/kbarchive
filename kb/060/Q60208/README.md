@@ -6,6 +6,8 @@ permalink: /kb/060/Q60208/
 
 ## Q60208: PRINT.COM Does Not Print Binary Files
 
+{% raw %}
+
 	Article: Q60208
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:2.x,3.x,4.x,5.0
@@ -39,3 +41,5 @@ permalink: /kb/060/Q60208/
 	
 	=============================================================================
 	
+
+{% endraw %}

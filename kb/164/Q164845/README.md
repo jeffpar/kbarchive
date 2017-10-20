@@ -6,6 +6,8 @@ permalink: /kb/164/Q164845/
 
 ## Q164845: XADM: Access Violation in Srvrmax.exe During Setup
 
+{% raw %}
+
 	Article: Q164845
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -101,3 +103,5 @@ permalink: /kb/164/Q164845/
 	
 	=============================================================================
 	
+
+{% endraw %}

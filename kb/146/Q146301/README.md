@@ -6,6 +6,8 @@ permalink: /kb/146/Q146301/
 
 ## Q146301: XCLN: Exchange Form Label Minimum Value Is 300
 
+{% raw %}
+
 	Article: Q146301
 	Product(s): Microsoft Exchange
 	Version(s): 4.00
@@ -58,3 +60,5 @@ permalink: /kb/146/Q146301/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/100/Q100741/
 
 ## Q100741: MS-DOS Setup Err Msg: Setup Cannot Install MS-DOS 6...
 
+{% raw %}
+
 	Article: Q100741
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -57,3 +59,5 @@ permalink: /kb/100/Q100741/
 	
 	=============================================================================
 	
+
+{% endraw %}

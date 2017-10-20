@@ -6,6 +6,8 @@ permalink: /kb/100/Q100853/
 
 ## Q100853: IO.SYS &amp; MSDOS.SYS File Sizes Don't Change After Uninstalling
 
+{% raw %}
+
 	Article: Q100853
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -57,3 +59,5 @@ permalink: /kb/100/Q100853/
 	
 	=============================================================================
 	
+
+{% endraw %}

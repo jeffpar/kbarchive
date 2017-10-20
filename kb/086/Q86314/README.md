@@ -6,6 +6,8 @@ permalink: /kb/086/Q86314/
 
 ## Q86314: PC OS2: PM Client Does Not Support UNC Names
 
+{% raw %}
+
 	Article: Q86314
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -36,3 +38,5 @@ permalink: /kb/086/Q86314/
 	
 	=============================================================================
 	
+
+{% endraw %}

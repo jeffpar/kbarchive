@@ -6,6 +6,8 @@ permalink: /kb/197/Q197141/
 
 ## Q197141: SMS: SMS Administrator and Quick Viewer Close Without Warning
 
+{% raw %}
+
 	Article: Q197141
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -90,3 +92,5 @@ permalink: /kb/197/Q197141/
 	
 	=============================================================================
 	
+
+{% endraw %}

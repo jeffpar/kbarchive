@@ -6,6 +6,8 @@ permalink: /kb/192/Q192187/
 
 ## Q192187: PRB: TabStrip MultiRow Only True When Placement Not Top
 
+{% raw %}
+
 	Article: Q192187
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -99,3 +101,5 @@ permalink: /kb/192/Q192187/
 	
 	=============================================================================
 	
+
+{% endraw %}

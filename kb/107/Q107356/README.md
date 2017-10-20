@@ -6,6 +6,8 @@ permalink: /kb/107/Q107356/
 
 ## Q107356: PC MAPI: No Subject or Message Text with Return Receipt
 
+{% raw %}
+
 	Article: Q107356
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -50,3 +52,5 @@ permalink: /kb/107/Q107356/
 	
 	=============================================================================
 	
+
+{% endraw %}

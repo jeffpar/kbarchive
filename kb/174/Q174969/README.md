@@ -6,6 +6,8 @@ permalink: /kb/174/Q174969/
 
 ## Q174969: DOC: Btrieve Driver Does Not Ship with VFP 5.0
 
+{% raw %}
+
 	Article: Q174969
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -69,3 +71,5 @@ permalink: /kb/174/Q174969/
 	
 	=============================================================================
 	
+
+{% endraw %}

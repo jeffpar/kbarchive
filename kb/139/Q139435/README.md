@@ -6,6 +6,8 @@ permalink: /kb/139/Q139435/
 
 ## Q139435: WMConfig Tool in MS Plus! Refers to Hover! in About Box
 
+{% raw %}
+
 	Article: Q139435
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -50,3 +52,5 @@ permalink: /kb/139/Q139435/
 	
 	=============================================================================
 	
+
+{% endraw %}

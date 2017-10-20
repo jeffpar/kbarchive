@@ -6,6 +6,8 @@ permalink: /kb/067/Q67234/
 
 ## Q67234: QuickHelp Duplicate Search Brings Up Wrong Help
 
+{% raw %}
+
 	Article: Q67234
 	Product(s): See article
 	Version(s): 1.70   | 1.70
@@ -31,3 +33,5 @@ permalink: /kb/067/Q67234/
 	Microsoft has confirmed this to be a problem in QuickHelp version
 	1.70. We are researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

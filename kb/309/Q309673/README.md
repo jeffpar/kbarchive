@@ -6,6 +6,8 @@ permalink: /kb/309/Q309673/
 
 ## Q309673: Flight Simulator 2002: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q309673
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/309/Q309673/
 	
 	=============================================================================
 	
+
+{% endraw %}

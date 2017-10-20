@@ -6,6 +6,8 @@ permalink: /kb/245/Q245208/
 
 ## Q245208: Problem with added SMTP service through Add/Remove
 
+{% raw %}
+
 	Article: Q245208
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -113,3 +115,5 @@ permalink: /kb/245/Q245208/
 	
 	=============================================================================
 	
+
+{% endraw %}

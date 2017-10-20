@@ -6,6 +6,8 @@ permalink: /kb/160/Q160835/
 
 ## Q160835: FP: Renamed Executable Folder No Longer Executable
 
+{% raw %}
+
 	Article: Q160835
 	Product(s): Word Front Page
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/160/Q160835/
 	
 	=============================================================================
 	
+
+{% endraw %}

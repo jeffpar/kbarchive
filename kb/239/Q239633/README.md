@@ -6,6 +6,8 @@ permalink: /kb/239/Q239633/
 
 ## Q239633: World Atlas 2000: Error Messages When You Use InterActivity
 
+{% raw %}
+
 	Article: Q239633
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -137,3 +139,5 @@ permalink: /kb/239/Q239633/
 	
 	=============================================================================
 	
+
+{% endraw %}

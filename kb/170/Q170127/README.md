@@ -6,6 +6,8 @@ permalink: /kb/170/Q170127/
 
 ## Q170127: HOWTO: Add Tables in a Database to Source Control
 
+{% raw %}
+
 	Article: Q170127
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -56,3 +58,5 @@ permalink: /kb/170/Q170127/
 	
 	=============================================================================
 	
+
+{% endraw %}

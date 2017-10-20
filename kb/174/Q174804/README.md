@@ -6,6 +6,8 @@ permalink: /kb/174/Q174804/
 
 ## Q174804: Whitepaper: Creating Highly-Scalable Server-Side Components
 
+{% raw %}
+
 	Article: Q174804
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -74,3 +76,5 @@ permalink: /kb/174/Q174804/
 	
 	=============================================================================
 	
+
+{% endraw %}

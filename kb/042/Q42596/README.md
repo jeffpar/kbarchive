@@ -6,6 +6,8 @@ permalink: /kb/042/Q42596/
 
 ## Q42596: BASIC's SETMEM Doesn't Free C Far Allocation; _fmalloc, _ffree
 
+{% raw %}
+
 	Article: Q42596
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -113,3 +115,5 @@ permalink: /kb/042/Q42596/
 	   PRINT "SETMEM DID NOT FUNCTION PROPERLY"
 	END IF
 	END
+
+{% endraw %}

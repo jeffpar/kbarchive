@@ -6,6 +6,8 @@ permalink: /kb/142/Q142548/
 
 ## Q142548: PRB: SelectOnEntry Property Is Ignored When KEYCOMP = DOS
 
+{% raw %}
+
 	Article: Q142548
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -83,3 +85,5 @@ permalink: /kb/142/Q142548/
 	
 	=============================================================================
 	
+
+{% endraw %}

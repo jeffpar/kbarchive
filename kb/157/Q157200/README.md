@@ -6,6 +6,8 @@ permalink: /kb/157/Q157200/
 
 ## Q157200: WD97: Paragraph Border Extends Past Text Box Border
 
+{% raw %}
+
 	Article: Q157200
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -59,3 +61,5 @@ permalink: /kb/157/Q157200/
 	
 	=============================================================================
 	
+
+{% endraw %}

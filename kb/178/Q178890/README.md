@@ -6,6 +6,8 @@ permalink: /kb/178/Q178890/
 
 ## Q178890: HOWTO: Use ON ERROR To Debug Applications
 
+{% raw %}
+
 	Article: Q178890
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -150,3 +152,5 @@ permalink: /kb/178/Q178890/
 	
 	=============================================================================
 	
+
+{% endraw %}

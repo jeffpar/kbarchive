@@ -6,6 +6,8 @@ permalink: /kb/164/Q164540/
 
 ## Q164540: Using the Expansion Pack with default FS95 Scenery
 
+{% raw %}
+
 	Article: Q164540
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/164/Q164540/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132847/
 
 ## Q132847: All Desktop Settings Not Restored After Full-System Backup
 
+{% raw %}
+
 	Article: Q132847
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/132/Q132847/
 	
 	=============================================================================
 	
+
+{% endraw %}

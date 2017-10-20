@@ -6,6 +6,8 @@ permalink: /kb/125/Q125033/
 
 ## Q125033: Writer/Artist: Unable to Record Sounds on Power Macintosh
 
+{% raw %}
+
 	Article: Q125033
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1
@@ -69,3 +71,5 @@ permalink: /kb/125/Q125033/
 	
 	=============================================================================
 	
+
+{% endraw %}

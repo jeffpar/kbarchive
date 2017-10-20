@@ -6,6 +6,8 @@ permalink: /kb/308/Q308136/
 
 ## Q308136: FP: How to Create Alternate Text for Different Hot Spots
 
+{% raw %}
+
 	Article: Q308136
 	Product(s): Word Front Page
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/308/Q308136/
 	
 	=============================================================================
 	
+
+{% endraw %}

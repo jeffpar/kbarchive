@@ -6,6 +6,8 @@ permalink: /kb/082/Q82339/
 
 ## Q82339: DEC Pathworks and Print Manager Net Error
 
+{% raw %}
+
 	Article: Q82339
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/082/Q82339/
 	
 	=============================================================================
 	
+
+{% endraw %}

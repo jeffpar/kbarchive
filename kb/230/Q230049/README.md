@@ -6,6 +6,8 @@ permalink: /kb/230/Q230049/
 
 ## Q230049: HOWTO: Highlight Row of Multi-Column Report-View CListCtrlR
 
+{% raw %}
+
 	Article: Q230049
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -98,3 +100,5 @@ permalink: /kb/230/Q230049/
 	
 	=============================================================================
 	
+
+{% endraw %}

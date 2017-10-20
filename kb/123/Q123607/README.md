@@ -6,6 +6,8 @@ permalink: /kb/123/Q123607/
 
 ## Q123607: Graphics and True Type Fonts Print Garbage on Okidata ML320
 
+{% raw %}
+
 	Article: Q123607
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/123/Q123607/
 	
 	=============================================================================
 	
+
+{% endraw %}

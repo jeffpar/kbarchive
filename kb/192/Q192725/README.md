@@ -6,6 +6,8 @@ permalink: /kb/192/Q192725/
 
 ## Q192725: XCLN: Forwarding Message, Scroll Bars Disappear on New Message
 
+{% raw %}
+
 	Article: Q192725
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -55,3 +57,5 @@ permalink: /kb/192/Q192725/
 	
 	=============================================================================
 	
+
+{% endraw %}

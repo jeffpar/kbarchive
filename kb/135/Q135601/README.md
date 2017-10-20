@@ -6,6 +6,8 @@ permalink: /kb/135/Q135601/
 
 ## Q135601: Farallon Etherwave ISA Network Card Does Not See the Network
 
+{% raw %}
+
 	Article: Q135601
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/135/Q135601/
 	
 	=============================================================================
 	
+
+{% endraw %}

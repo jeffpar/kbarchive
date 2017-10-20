@@ -6,6 +6,8 @@ permalink: /kb/185/Q185300/
 
 ## Q185300: STOP 0x24 in Ntfs.sys Function NTFSMoveFile()
 
+{% raw %}
+
 	Article: Q185300
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -68,3 +70,5 @@ permalink: /kb/185/Q185300/
 	
 	=============================================================================
 	
+
+{% endraw %}

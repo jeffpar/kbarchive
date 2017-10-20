@@ -6,6 +6,8 @@ permalink: /kb/260/Q260413/
 
 ## Q260413: Logoff May Not Finish If User Profile Is Stored on AS/400
 
+{% raw %}
+
 	Article: Q260413
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/260/Q260413/
 	
 	=============================================================================
 	
+
+{% endraw %}

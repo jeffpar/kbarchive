@@ -6,6 +6,8 @@ permalink: /kb/176/Q176231/
 
 ## Q176231: XADM: TEXT/PLAIN Bodyparts Discarded in Embedded Messages
 
+{% raw %}
+
 	Article: Q176231
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -118,3 +120,5 @@ permalink: /kb/176/Q176231/
 	
 	=============================================================================
 	
+
+{% endraw %}

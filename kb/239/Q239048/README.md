@@ -6,6 +6,8 @@ permalink: /kb/239/Q239048/
 
 ## Q239048: Access Denied When Sending a Request to an Enterprise CA
 
+{% raw %}
+
 	Article: Q239048
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -58,3 +60,5 @@ permalink: /kb/239/Q239048/
 	
 	=============================================================================
 	
+
+{% endraw %}

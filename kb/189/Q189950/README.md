@@ -6,6 +6,8 @@ permalink: /kb/189/Q189950/
 
 ## Q189950: HOWTO: Install the Microsoft Windowless Controls for VB6
 
+{% raw %}
+
 	Article: Q189950
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -87,3 +89,5 @@ permalink: /kb/189/Q189950/
 	
 	=============================================================================
 	
+
+{% endraw %}

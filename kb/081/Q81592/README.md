@@ -6,6 +6,8 @@ permalink: /kb/081/Q81592/
 
 ## Q81592: Timer2.exe - Timers and Timing in Microsoft Windows
 
+{% raw %}
+
 	Article: Q81592
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -362,3 +364,5 @@ permalink: /kb/081/Q81592/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158405/
 
 ## Q158405: PRB: Properties of a Class May Be Evaluated at Design Time
 
+{% raw %}
+
 	Article: Q158405
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -85,3 +87,5 @@ permalink: /kb/158/Q158405/
 	
 	=============================================================================
 	
+
+{% endraw %}

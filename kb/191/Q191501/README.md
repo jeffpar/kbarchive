@@ -6,6 +6,8 @@ permalink: /kb/191/Q191501/
 
 ## Q191501: HOWTO: Detect If the Floppy Drive Is Ready on Windows NT
 
+{% raw %}
+
 	Article: Q191501
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -105,3 +107,5 @@ permalink: /kb/191/Q191501/
 	
 	=============================================================================
 	
+
+{% endraw %}

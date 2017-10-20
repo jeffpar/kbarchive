@@ -6,6 +6,8 @@ permalink: /kb/176/Q176929/
 
 ## Q176929: Err Msg: The Password You Have Typed Was Incorrect...
 
+{% raw %}
+
 	Article: Q176929
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0
@@ -54,3 +56,5 @@ permalink: /kb/176/Q176929/
 	
 	=============================================================================
 	
+
+{% endraw %}

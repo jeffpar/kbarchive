@@ -6,6 +6,8 @@ permalink: /kb/073/Q73406/
 
 ## Q73406: Program Group File Format Differences with MS-DOS Shell
 
+{% raw %}
+
 	Article: Q73406
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.x,6.x
@@ -51,3 +53,5 @@ permalink: /kb/073/Q73406/
 	
 	=============================================================================
 	
+
+{% endraw %}

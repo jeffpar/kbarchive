@@ -6,6 +6,8 @@ permalink: /kb/176/Q176320/
 
 ## Q176320: Impact of Network Adapter Failure in a Cluster
 
+{% raw %}
+
 	Article: Q176320
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -109,3 +111,5 @@ permalink: /kb/176/Q176320/
 	
 	=============================================================================
 	
+
+{% endraw %}

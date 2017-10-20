@@ -6,6 +6,8 @@ permalink: /kb/038/Q38299/
 
 ## Q38299: How CodeView Interprets Values (octal, decimal, hexadecimal)
 
+{% raw %}
+
 	Article: Q38299
 	Product(s): See article
 	Version(s): 1.x 2.00 2.10 2.20 | 2.20
@@ -62,3 +64,5 @@ permalink: /kb/038/Q38299/
 	Notice that watches 1 and 3 match. This is because by default CodeView
 	is in base 10, so 50 and 0n50 evaluate to the same thing. Using N 8 will
 	cause watches 1 and 2 to match, and N 16 will match 1 and 4.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/049/Q49723/
 
 ## Q49723: Spot Plane Doesn't Recognize Aircraft Carrier
 
+{% raw %}
+
 	Article: Q49723
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -37,3 +39,5 @@ permalink: /kb/049/Q49723/
 	
 	=============================================================================
 	
+
+{% endraw %}

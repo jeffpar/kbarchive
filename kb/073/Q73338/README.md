@@ -6,6 +6,8 @@ permalink: /kb/073/Q73338/
 
 ## Q73338: Comprehensive List of Windows 3.1 &quot;User's Guide&quot; Doc Errs
 
+{% raw %}
+
 	Article: Q73338
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1
@@ -348,3 +350,5 @@ permalink: /kb/073/Q73338/
 	
 	=============================================================================
 	
+
+{% endraw %}

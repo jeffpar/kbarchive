@@ -6,6 +6,8 @@ permalink: /kb/179/Q179197/
 
 ## Q179197: XFOR: Notes Client Receives &quot;Error Loading Metafile&quot;
 
+{% raw %}
+
 	Article: Q179197
 	Product(s): Microsoft Exchange
 	Version(s): 3.2,4.0,5.0,5.5
@@ -127,3 +129,5 @@ permalink: /kb/179/Q179197/
 	
 	=============================================================================
 	
+
+{% endraw %}

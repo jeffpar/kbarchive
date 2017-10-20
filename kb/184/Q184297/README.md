@@ -6,6 +6,8 @@ permalink: /kb/184/Q184297/
 
 ## Q184297: HOWTO: Create a Form That Always Stays on Top
 
+{% raw %}
+
 	Article: Q184297
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -135,3 +137,5 @@ permalink: /kb/184/Q184297/
 	
 	=============================================================================
 	
+
+{% endraw %}

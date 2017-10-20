@@ -6,6 +6,8 @@ permalink: /kb/012/Q12049/
 
 ## Q12049: Writer and Artist 1.x: How to Save to a Floppy Disk
 
+{% raw %}
+
 	Article: Q12049
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
@@ -65,3 +67,5 @@ permalink: /kb/012/Q12049/
 	
 	=============================================================================
 	
+
+{% endraw %}

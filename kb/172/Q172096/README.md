@@ -6,6 +6,8 @@ permalink: /kb/172/Q172096/
 
 ## Q172096: FIX: Forms Under Source Control Open Slowly
 
+{% raw %}
+
 	Article: Q172096
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -164,3 +166,5 @@ permalink: /kb/172/Q172096/
 	
 	=============================================================================
 	
+
+{% endraw %}

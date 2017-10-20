@@ -6,6 +6,8 @@ permalink: /kb/147/Q147260/
 
 ## Q147260: XCLN: Printing with Print Icon Does Not Use Default Printer
 
+{% raw %}
+
 	Article: Q147260
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -50,3 +52,5 @@ permalink: /kb/147/Q147260/
 	
 	=============================================================================
 	
+
+{% endraw %}

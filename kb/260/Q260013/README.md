@@ -6,6 +6,8 @@ permalink: /kb/260/Q260013/
 
 ## Q260013: XADM: Unable to View Free and Busy Time Across Exchange Sites
 
+{% raw %}
+
 	Article: Q260013
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -62,3 +64,5 @@ permalink: /kb/260/Q260013/
 	
 	=============================================================================
 	
+
+{% endraw %}

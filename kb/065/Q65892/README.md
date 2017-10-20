@@ -6,6 +6,8 @@ permalink: /kb/065/Q65892/
 
 ## Q65892: Using 101-Keyboard with COMPAQ SLT/286 Under Windows
 
+{% raw %}
+
 	Article: Q65892
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -49,3 +51,5 @@ permalink: /kb/065/Q65892/
 	
 	=============================================================================
 	
+
+{% endraw %}

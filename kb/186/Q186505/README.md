@@ -6,6 +6,8 @@ permalink: /kb/186/Q186505/
 
 ## Q186505: Terminal Server Client Taskbar Clock Not Enabled
 
+{% raw %}
+
 	Article: Q186505
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.1,3.1 Service Pack 1,3.5,3.5 SP1,3.5 SP2,3.5 SP3,3.51,3.51 SP1,3.51 SP2,3.51 SP
@@ -58,3 +60,5 @@ permalink: /kb/186/Q186505/
 	
 	=============================================================================
 	
+
+{% endraw %}

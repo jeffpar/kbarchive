@@ -6,6 +6,8 @@ permalink: /kb/126/Q126005/
 
 ## Q126005: MSB Solar and Ocean: Err Msg: Problem Loading or Finding Files
 
+{% raw %}
+
 	Article: Q126005
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -173,3 +175,5 @@ permalink: /kb/126/Q126005/
 	
 	=============================================================================
 	
+
+{% endraw %}

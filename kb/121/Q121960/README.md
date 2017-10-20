@@ -6,6 +6,8 @@ permalink: /kb/121/Q121960/
 
 ## Q121960: INFO: Alternative to PtInRegion() for Hit-Testing
 
+{% raw %}
+
 	Article: Q121960
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -273,3 +275,5 @@ permalink: /kb/121/Q121960/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/095/Q95304/
 
 ## Q95304: Three Ways to Use the RUN Command in FoxPro for Windows
 
+{% raw %}
+
 	Article: Q95304
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 2.50b 2.60 2.60a 3.00
@@ -109,3 +111,5 @@ permalink: /kb/095/Q95304/
 	
 	=============================================================================
 	
+
+{% endraw %}

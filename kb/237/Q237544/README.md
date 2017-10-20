@@ -6,6 +6,8 @@ permalink: /kb/237/Q237544/
 
 ## Q237544: XADM: Unable to Connect Using IMAP/SSL
 
+{% raw %}
+
 	Article: Q237544
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -83,3 +85,5 @@ permalink: /kb/237/Q237544/
 	
 	=============================================================================
 	
+
+{% endraw %}

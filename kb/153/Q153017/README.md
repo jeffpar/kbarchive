@@ -6,6 +6,8 @@ permalink: /kb/153/Q153017/
 
 ## Q153017: BUG: Invalid Operation After Setting RDC Resultset = Nothing
 
+{% raw %}
+
 	Article: Q153017
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -96,3 +98,5 @@ permalink: /kb/153/Q153017/
 	
 	=============================================================================
 	
+
+{% endraw %}

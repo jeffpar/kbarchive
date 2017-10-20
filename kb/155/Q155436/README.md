@@ -6,6 +6,8 @@ permalink: /kb/155/Q155436/
 
 ## Q155436: DOC: CImageList Returned from CreateDragImage Needs Delete
 
+{% raw %}
+
 	Article: Q155436
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -63,3 +65,5 @@ permalink: /kb/155/Q155436/
 	
 	=============================================================================
 	
+
+{% endraw %}

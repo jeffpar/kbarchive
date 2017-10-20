@@ -6,6 +6,8 @@ permalink: /kb/169/Q169415/
 
 ## Q169415: Routing and Remote Access Release Notes Readme.doc File
 
+{% raw %}
+
 	Article: Q169415
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -613,3 +615,5 @@ permalink: /kb/169/Q169415/
 	
 	=============================================================================
 	
+
+{% endraw %}

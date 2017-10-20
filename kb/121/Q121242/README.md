@@ -6,6 +6,8 @@ permalink: /kb/121/Q121242/
 
 ## Q121242: HOWTO: Produce a List of Other Applications Running in Windows
 
+{% raw %}
+
 	Article: Q121242
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6,2.6a,3.0,5.0,6.0
@@ -160,3 +162,5 @@ permalink: /kb/121/Q121242/
 	
 	=============================================================================
 	
+
+{% endraw %}

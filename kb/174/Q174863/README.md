@@ -6,6 +6,8 @@ permalink: /kb/174/Q174863/
 
 ## Q174863: DNS Name Queries Only Sent Through One Network Adapter
 
+{% raw %}
+
 	Article: Q174863
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -65,3 +67,5 @@ permalink: /kb/174/Q174863/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159974/
 
 ## Q159974: HOWTO: Evaluate Numeric Expressions Stored as a String
 
+{% raw %}
+
 	Article: Q159974
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -95,3 +97,5 @@ permalink: /kb/159/Q159974/
 	
 	=============================================================================
 	
+
+{% endraw %}

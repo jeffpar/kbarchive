@@ -6,6 +6,8 @@ permalink: /kb/143/Q143119/
 
 ## Q143119: PractiCard 14.4 PCMCIA Modem Is Not Initialized
 
+{% raw %}
+
 	Article: Q143119
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -39,3 +41,5 @@ permalink: /kb/143/Q143119/
 	
 	=============================================================================
 	
+
+{% endraw %}

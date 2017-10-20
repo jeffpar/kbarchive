@@ -6,6 +6,8 @@ permalink: /kb/152/Q152605/
 
 ## Q152605: RAS Error 720 When Dialing Out
 
+{% raw %}
+
 	Article: Q152605
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:3.5,3.51,4.0
@@ -106,3 +108,5 @@ permalink: /kb/152/Q152605/
 	
 	=============================================================================
 	
+
+{% endraw %}

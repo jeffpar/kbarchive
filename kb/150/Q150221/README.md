@@ -6,6 +6,8 @@ permalink: /kb/150/Q150221/
 
 ## Q150221: FIX: DLLs Not Shown in the Add Reference...Browse Dialog Box
 
+{% raw %}
+
 	Article: Q150221
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,95,98
@@ -74,3 +76,5 @@ permalink: /kb/150/Q150221/
 	
 	=============================================================================
 	
+
+{% endraw %}

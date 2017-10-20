@@ -6,6 +6,8 @@ permalink: /kb/281/Q281318/
 
 ## Q281318: Unattended Installation Of Windows 2000 Resource Kits To A Custo
 
+{% raw %}
+
 	Article: Q281318
 	Product(s): Microsoft Press
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/281/Q281318/
 	
 	=============================================================================
 	
+
+{% endraw %}

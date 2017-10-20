@@ -6,6 +6,8 @@ permalink: /kb/249/Q249214/
 
 ## Q249214: &quot;Stop 0x0000007B&quot; After Updating Service Pack or SSD on Compaq
 
+{% raw %}
+
 	Article: Q249214
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/249/Q249214/
 	
 	=============================================================================
 	
+
+{% endraw %}

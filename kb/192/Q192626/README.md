@@ -6,6 +6,8 @@ permalink: /kb/192/Q192626/
 
 ## Q192626: FIX: Adding Method to Custom Interface Causes MIDL2269
 
+{% raw %}
+
 	Article: Q192626
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/192/Q192626/
 	
 	=============================================================================
 	
+
+{% endraw %}

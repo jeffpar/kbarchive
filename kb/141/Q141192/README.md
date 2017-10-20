@@ -6,6 +6,8 @@ permalink: /kb/141/Q141192/
 
 ## Q141192: Mandatory After Date Not Updated For Repeated Jobs
 
+{% raw %}
+
 	Article: Q141192
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -46,3 +48,5 @@ permalink: /kb/141/Q141192/
 	
 	=============================================================================
 	
+
+{% endraw %}

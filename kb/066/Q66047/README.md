@@ -6,6 +6,8 @@ permalink: /kb/066/Q66047/
 
 ## Q66047: How to Remove QBasic and EDIT from MS-DOS 5.0 and Later
 
+{% raw %}
+
 	Article: Q66047
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -50,3 +52,5 @@ permalink: /kb/066/Q66047/
 	
 	=============================================================================
 	
+
+{% endraw %}

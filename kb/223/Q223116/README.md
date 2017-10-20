@@ -6,6 +6,8 @@ permalink: /kb/223/Q223116/
 
 ## Q223116: FIX: Public Type Statement Causes Application Error
 
+{% raw %}
+
 	Article: Q223116
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -129,3 +131,5 @@ permalink: /kb/223/Q223116/
 	
 	=============================================================================
 	
+
+{% endraw %}

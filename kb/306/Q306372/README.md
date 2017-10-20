@@ -6,6 +6,8 @@ permalink: /kb/306/Q306372/
 
 ## Q306372: Microsoft Excel 2002 Visual Basic for Applications Step by Step
 
+{% raw %}
+
 	Article: Q306372
 	Product(s): Microsoft Press
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/306/Q306372/
 	
 	=============================================================================
 	
+
+{% endraw %}

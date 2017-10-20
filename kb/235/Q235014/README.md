@@ -6,6 +6,8 @@ permalink: /kb/235/Q235014/
 
 ## Q235014: Microsoft Access 2000 Step by Step Comments and Corrections
 
+{% raw %}
+
 	Article: Q235014
 	Product(s): Microsoft Press
 	Version(s): 
@@ -164,3 +166,5 @@ permalink: /kb/235/Q235014/
 	
 	=============================================================================
 	
+
+{% endraw %}

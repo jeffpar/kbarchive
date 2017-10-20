@@ -6,6 +6,8 @@ permalink: /kb/065/Q65549/
 
 ## Q65549: Disappearing SUB Statement When Editing in QB.EXE/QBX.EXE
 
+{% raw %}
+
 	Article: Q65549
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -66,3 +68,5 @@ permalink: /kb/065/Q65549/
 	in BASIC PDS versions 7.00 and 7.10 by choosing the Undo command from
 	the Edit menu to reverse the previous edit. The Undo command reverses
 	up to 20 previous edits.
+
+{% endraw %}

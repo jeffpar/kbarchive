@@ -6,6 +6,8 @@ permalink: /kb/168/Q168577/
 
 ## Q168577: XFOR: Err Msg: All Pipe Instances Are Busy
 
+{% raw %}
+
 	Article: Q168577
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -97,3 +99,5 @@ permalink: /kb/168/Q168577/
 	
 	=============================================================================
 	
+
+{% endraw %}

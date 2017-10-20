@@ -6,6 +6,8 @@ permalink: /kb/169/Q169468/
 
 ## Q169468: BUG: SQL Server ODBC Driver AVs When Inserting from a Remote SP
 
+{% raw %}
+
 	Article: Q169468
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.65
@@ -53,3 +55,5 @@ permalink: /kb/169/Q169468/
 	
 	=============================================================================
 	
+
+{% endraw %}

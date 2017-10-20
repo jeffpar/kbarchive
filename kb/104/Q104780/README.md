@@ -6,6 +6,8 @@ permalink: /kb/104/Q104780/
 
 ## Q104780: MIRROR Err Msg on DBLSPACE Drive: The Boot Sector for this...
 
+{% raw %}
+
 	Article: Q104780
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -57,3 +59,5 @@ permalink: /kb/104/Q104780/
 	
 	=============================================================================
 	
+
+{% endraw %}

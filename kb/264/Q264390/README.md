@@ -6,6 +6,8 @@ permalink: /kb/264/Q264390/
 
 ## Q264390: Multimedia: Invalid Page Fault Error Message During Installation
 
+{% raw %}
+
 	Article: Q264390
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0; :
@@ -159,3 +161,5 @@ permalink: /kb/264/Q264390/
 	
 	=============================================================================
 	
+
+{% endraw %}

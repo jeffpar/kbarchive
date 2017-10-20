@@ -6,6 +6,8 @@ permalink: /kb/149/Q149525/
 
 ## Q149525: Poor Performance May Occur During FTP File Transfers
 
+{% raw %}
+
 	Article: Q149525
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -80,3 +82,5 @@ permalink: /kb/149/Q149525/
 	
 	=============================================================================
 	
+
+{% endraw %}

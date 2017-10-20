@@ -6,6 +6,8 @@ permalink: /kb/146/Q146602/
 
 ## Q146602: MSB Ocean: Program Stops Responding with Ensoniq Soundscape
 
+{% raw %}
+
 	Article: Q146602
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,3.x
@@ -81,3 +83,5 @@ permalink: /kb/146/Q146602/
 	
 	=============================================================================
 	
+
+{% endraw %}

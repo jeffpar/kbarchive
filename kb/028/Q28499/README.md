@@ -6,6 +6,8 @@ permalink: /kb/028/Q28499/
 
 ## Q28499: DOS 2.xx Does Not Recognize &#92;Mouse1&#92;Mouse
 
+{% raw %}
+
 	Article: Q28499
 	Product(s): See article
 	Version(s): 1.00
@@ -29,3 +31,5 @@ permalink: /kb/028/Q28499/
 	  MOUSE
 	  CPANEL
 	  CD\
+
+{% endraw %}

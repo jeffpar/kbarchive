@@ -6,6 +6,8 @@ permalink: /kb/092/Q92635/
 
 ## Q92635: Windows Temporary Files
 
+{% raw %}
+
 	Article: Q92635
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -116,3 +118,5 @@ permalink: /kb/092/Q92635/
 	
 	=============================================================================
 	
+
+{% endraw %}

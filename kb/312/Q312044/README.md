@@ -6,6 +6,8 @@ permalink: /kb/312/Q312044/
 
 ## Q312044: Access Violation in Dns.exe Causes the DNS Service to Stop
 
+{% raw %}
+
 	Article: Q312044
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/312/Q312044/
 	
 	=============================================================================
 	
+
+{% endraw %}

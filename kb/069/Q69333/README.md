@@ -6,6 +6,8 @@ permalink: /kb/069/Q69333/
 
 ## Q69333: How to Work Around Floating-Point Accuracy/Comparison Problems
 
+{% raw %}
+
 	Article: Q69333
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -124,3 +126,5 @@ permalink: /kb/069/Q69333/
 	articles found with the following query:
 	
 	   floating and point and format and QuickBASIC
+
+{% endraw %}

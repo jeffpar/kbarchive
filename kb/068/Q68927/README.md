@@ -6,6 +6,8 @@ permalink: /kb/068/Q68927/
 
 ## Q68927: Effect of Spawning COMMAND.COM on the Environment
 
+{% raw %}
+
 	Article: Q68927
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -56,3 +58,5 @@ permalink: /kb/068/Q68927/
 	
 	=============================================================================
 	
+
+{% endraw %}

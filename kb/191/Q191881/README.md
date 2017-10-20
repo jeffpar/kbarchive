@@ -6,6 +6,8 @@ permalink: /kb/191/Q191881/
 
 ## Q191881: PRB: DIRECTORY() Fails to See System or Hidden Folder
 
+{% raw %}
+
 	Article: Q191881
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -63,3 +65,5 @@ permalink: /kb/191/Q191881/
 	
 	=============================================================================
 	
+
+{% endraw %}

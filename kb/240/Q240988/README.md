@@ -6,6 +6,8 @@ permalink: /kb/240/Q240988/
 
 ## Q240988: Pandora's Box: Program Hangs When You Quit the Game
 
+{% raw %}
+
 	Article: Q240988
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/240/Q240988/
 	
 	=============================================================================
 	
+
+{% endraw %}

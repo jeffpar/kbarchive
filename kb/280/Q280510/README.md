@@ -6,6 +6,8 @@ permalink: /kb/280/Q280510/
 
 ## Q280510: BUG: Control Properties Depersist Incorrectly When Host in ATL
 
+{% raw %}
+
 	Article: Q280510
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0
@@ -155,3 +157,5 @@ permalink: /kb/280/Q280510/
 	
 	=============================================================================
 	
+
+{% endraw %}

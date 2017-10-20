@@ -6,6 +6,8 @@ permalink: /kb/077/Q77003/
 
 ## Q77003: Novell NET5.COM Installation and Command Line Help Information
 
+{% raw %}
+
 	Article: Q77003
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -82,3 +84,5 @@ permalink: /kb/077/Q77003/
 	
 	=============================================================================
 	
+
+{% endraw %}

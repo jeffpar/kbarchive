@@ -6,6 +6,8 @@ permalink: /kb/197/Q197840/
 
 ## Q197840: WD97: Certain Characters Do Not Display in Field Result
 
+{% raw %}
+
 	Article: Q197840
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/197/Q197840/
 	
 	=============================================================================
 	
+
+{% endraw %}

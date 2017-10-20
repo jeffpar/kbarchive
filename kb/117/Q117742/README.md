@@ -6,6 +6,8 @@ permalink: /kb/117/Q117742/
 
 ## Q117742: INFO: Limitations of WINOLDAP's Terminal Fonts
 
+{% raw %}
+
 	Article: Q117742
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -65,3 +67,5 @@ permalink: /kb/117/Q117742/
 	
 	=============================================================================
 	
+
+{% endraw %}

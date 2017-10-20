@@ -6,6 +6,8 @@ permalink: /kb/068/Q68170/
 
 ## Q68170: Disabling Shadow RAM on the AST Bravo 386sx
 
+{% raw %}
+
 	Article: Q68170
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -60,3 +62,5 @@ permalink: /kb/068/Q68170/
 	
 	=============================================================================
 	
+
+{% endraw %}

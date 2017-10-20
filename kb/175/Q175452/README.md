@@ -6,6 +6,8 @@ permalink: /kb/175/Q175452/
 
 ## Q175452: Microsoft TCP/IP Training Comments and Corrections
 
+{% raw %}
+
 	Article: Q175452
 	Product(s): Microsoft Press
 	Version(s): 
@@ -429,3 +431,5 @@ permalink: /kb/175/Q175452/
 	
 	=============================================================================
 	
+
+{% endraw %}

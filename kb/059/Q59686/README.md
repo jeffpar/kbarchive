@@ -6,6 +6,8 @@ permalink: /kb/059/Q59686/
 
 ## Q59686: Windows: Mouse Not Working in Multiplan 3.0
 
+{% raw %}
+
 	Article: Q59686
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -40,3 +42,5 @@ permalink: /kb/059/Q59686/
 	
 	=============================================================================
 	
+
+{% endraw %}

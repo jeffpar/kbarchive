@@ -6,6 +6,8 @@ permalink: /kb/185/Q185604/
 
 ## Q185604: Windows 3.x Client Returns One Local APPC LU Using Display Verb
 
+{% raw %}
+
 	Article: Q185604
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -70,3 +72,5 @@ permalink: /kb/185/Q185604/
 	
 	=============================================================================
 	
+
+{% endraw %}

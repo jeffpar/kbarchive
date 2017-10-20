@@ -6,6 +6,8 @@ permalink: /kb/096/Q96552/
 
 ## Q96552: What Defragmenter Does &amp; How It Works with 3rd-Party Utilities
 
+{% raw %}
+
 	Article: Q96552
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -58,3 +60,5 @@ permalink: /kb/096/Q96552/
 	
 	=============================================================================
 	
+
+{% endraw %}

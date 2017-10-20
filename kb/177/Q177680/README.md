@@ -6,6 +6,8 @@ permalink: /kb/177/Q177680/
 
 ## Q177680: With GSNW, WinNT Client Cannot See All Files on NetWare Server
 
+{% raw %}
+
 	Article: Q177680
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/177/Q177680/
 	
 	=============================================================================
 	
+
+{% endraw %}

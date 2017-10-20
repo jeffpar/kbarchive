@@ -6,6 +6,8 @@ permalink: /kb/173/Q173519/
 
 ## Q173519: WINS Allows Duplicate Name Registrations Across Slow Link
 
+{% raw %}
+
 	Article: Q173519
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -121,3 +123,5 @@ permalink: /kb/173/Q173519/
 	
 	=============================================================================
 	
+
+{% endraw %}

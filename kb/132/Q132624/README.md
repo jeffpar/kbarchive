@@ -6,6 +6,8 @@ permalink: /kb/132/Q132624/
 
 ## Q132624: Protocols Can Be Installed When Network Is Not Installed
 
+{% raw %}
+
 	Article: Q132624
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/132/Q132624/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/047/Q47226/
 
 ## Q47226: _makepath() and _splitpath Examples Are Incomplete
 
+{% raw %}
+
 	Article: Q47226
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.00 5.10
@@ -55,3 +57,5 @@ permalink: /kb/047/Q47226/
 	    printf("fname: %s\n", fname);
 	    printf("ext: %s\n", ext);
 	}
+
+{% endraw %}

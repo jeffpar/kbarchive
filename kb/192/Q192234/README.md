@@ -6,6 +6,8 @@ permalink: /kb/192/Q192234/
 
 ## Q192234: Winstone 97 Running on Console Freezes System
 
+{% raw %}
+
 	Article: Q192234
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -118,3 +120,5 @@ permalink: /kb/192/Q192234/
 	
 	=============================================================================
 	
+
+{% endraw %}

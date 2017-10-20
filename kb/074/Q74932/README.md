@@ -6,6 +6,8 @@ permalink: /kb/074/Q74932/
 
 ## Q74932: Second FCBS Parameter Not Used in MS-DOS 5.x and 6.x
 
+{% raw %}
+
 	Article: Q74932
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -44,3 +46,5 @@ permalink: /kb/074/Q74932/
 	
 	=============================================================================
 	
+
+{% endraw %}

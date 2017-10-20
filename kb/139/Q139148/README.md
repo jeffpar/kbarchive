@@ -6,6 +6,8 @@ permalink: /kb/139/Q139148/
 
 ## Q139148: Julia Child: How To Add Cookware To Shopping List
 
+{% raw %}
+
 	Article: Q139148
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/139/Q139148/
 	
 	=============================================================================
 	
+
+{% endraw %}

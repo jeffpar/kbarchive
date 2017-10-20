@@ -6,6 +6,8 @@ permalink: /kb/185/Q185005/
 
 ## Q185005: XADM: How To Restore a 4.0 Directory To a 5.0 Server
 
+{% raw %}
+
 	Article: Q185005
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -76,3 +78,5 @@ permalink: /kb/185/Q185005/
 	
 	=============================================================================
 	
+
+{% endraw %}

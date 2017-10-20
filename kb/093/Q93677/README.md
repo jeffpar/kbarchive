@@ -6,6 +6,8 @@ permalink: /kb/093/Q93677/
 
 ## Q93677: Windows Sound System Will Not Load on Diskless Workstations
 
+{% raw %}
+
 	Article: Q93677
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/093/Q93677/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184333/
 
 ## Q184333: XADM: Message Class Changed during Forward from Public Folder
 
+{% raw %}
+
 	Article: Q184333
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -110,3 +112,5 @@ permalink: /kb/184/Q184333/
 	
 	=============================================================================
 	
+
+{% endraw %}

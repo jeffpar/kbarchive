@@ -6,6 +6,8 @@ permalink: /kb/184/Q184314/
 
 ## Q184314: File Path Error During Setup of Certificate Server
 
+{% raw %}
+
 	Article: Q184314
 	Product(s): Internet Information Server
 	Version(s): WINNT:1.0
@@ -58,3 +60,5 @@ permalink: /kb/184/Q184314/
 	
 	=============================================================================
 	
+
+{% endraw %}

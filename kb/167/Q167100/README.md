@@ -6,6 +6,8 @@ permalink: /kb/167/Q167100/
 
 ## Q167100: XCLN: Out of Memory Errors with Exchange 5.0 16-Bit Client
 
+{% raw %}
+
 	Article: Q167100
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -72,3 +74,5 @@ permalink: /kb/167/Q167100/
 	
 	=============================================================================
 	
+
+{% endraw %}

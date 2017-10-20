@@ -6,6 +6,8 @@ permalink: /kb/065/Q65749/
 
 ## Q65749: How to BSAVE and BLOAD Multiple Screen Pages in SCREEN 0
 
+{% raw %}
+
 	Article: Q65749
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -113,3 +115,5 @@ permalink: /kb/065/Q65749/
 	SCREEN 0, 0, 0, 0 ' Clean up before ending
 	KILL "page?.pic"  ' and kill the picture files.
 	END
+
+{% endraw %}

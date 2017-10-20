@@ -6,6 +6,8 @@ permalink: /kb/080/Q80269/
 
 ## Q80269: PC Gen: Contents of Modem Script File VSERIES.MDM
 
+{% raw %}
+
 	Article: Q80269
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e
@@ -282,3 +284,5 @@ permalink: /kb/080/Q80269/
 	
 	=============================================================================
 	
+
+{% endraw %}

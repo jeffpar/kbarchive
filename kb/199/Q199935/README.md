@@ -6,6 +6,8 @@ permalink: /kb/199/Q199935/
 
 ## Q199935: XWEB: Forms Text Vanishes When Resizing Window in UNIX Netscape
 
+{% raw %}
+
 	Article: Q199935
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -48,3 +50,5 @@ permalink: /kb/199/Q199935/
 	
 	=============================================================================
 	
+
+{% endraw %}

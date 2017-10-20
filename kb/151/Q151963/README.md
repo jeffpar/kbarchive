@@ -6,6 +6,8 @@ permalink: /kb/151/Q151963/
 
 ## Q151963: CGI Scripts Must Use Full Directory Path
 
+{% raw %}
+
 	Article: Q151963
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -59,3 +61,5 @@ permalink: /kb/151/Q151963/
 	
 	=============================================================================
 	
+
+{% endraw %}

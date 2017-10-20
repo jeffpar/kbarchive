@@ -6,6 +6,8 @@ permalink: /kb/083/Q83972/
 
 ## Q83972: File Manager Cannot Format Drive the System Was Started From
 
+{% raw %}
+
 	Article: Q83972
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:4.x,5.0; WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/083/Q83972/
 	
 	=============================================================================
 	
+
+{% endraw %}

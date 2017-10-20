@@ -6,6 +6,8 @@ permalink: /kb/190/Q190224/
 
 ## Q190224: HOWTO: Set a Minimum and Maximum Size for a UserControl
 
+{% raw %}
+
 	Article: Q190224
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -97,3 +99,5 @@ permalink: /kb/190/Q190224/
 	
 	=============================================================================
 	
+
+{% endraw %}

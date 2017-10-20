@@ -6,6 +6,8 @@ permalink: /kb/184/Q184506/
 
 ## Q184506: Err Msg: MSN Requires a Previous Version of Internet Explorer
 
+{% raw %}
+
 	Article: Q184506
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,4.0,4.01
@@ -128,3 +130,5 @@ permalink: /kb/184/Q184506/
 	
 	=============================================================================
 	
+
+{% endraw %}

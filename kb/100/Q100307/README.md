@@ -6,6 +6,8 @@ permalink: /kb/100/Q100307/
 
 ## Q100307: No Default Guest Account in Windows NT Advanced Server
 
+{% raw %}
+
 	Article: Q100307
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -34,3 +36,5 @@ permalink: /kb/100/Q100307/
 	
 	=============================================================================
 	
+
+{% endraw %}

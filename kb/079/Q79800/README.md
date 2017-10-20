@@ -6,6 +6,8 @@ permalink: /kb/079/Q79800/
 
 ## Q79800: PRB: Pen-Based Computer Unavailable While Running AfterDark
 
+{% raw %}
+
 	Article: Q79800
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -48,3 +50,5 @@ permalink: /kb/079/Q79800/
 	
 	=============================================================================
 	
+
+{% endraw %}

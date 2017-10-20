@@ -6,6 +6,8 @@ permalink: /kb/050/Q50336/
 
 ## Q50336: Passing a Stream File Pointer (FILE &#42;) Between DLLs
 
+{% raw %}
+
 	Article: Q50336
 	Product(s): See article
 	Version(s): 5.10
@@ -38,3 +40,5 @@ permalink: /kb/050/Q50336/
 	CRTLIB.DLL. The correct way to do this is to have one of your DLLs
 	export a version of the fread() function and/or fopen() function. The
 	fopen() and fread() that get called must be in the same DLL.
+
+{% endraw %}

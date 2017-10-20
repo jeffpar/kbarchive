@@ -6,6 +6,8 @@ permalink: /kb/156/Q156727/
 
 ## Q156727: XCON: WAN Drive Functionality of PC Connector and ISDN Lines
 
+{% raw %}
+
 	Article: Q156727
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/156/Q156727/
 	
 	=============================================================================
 	
+
+{% endraw %}

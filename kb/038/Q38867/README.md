@@ -6,6 +6,8 @@ permalink: /kb/038/Q38867/
 
 ## Q38867: Specifying Both /T and /W Disables Mouse
 
+{% raw %}
+
 	Article: Q38867
 	Product(s): See article
 	Version(s): 2.20    | 2.20
@@ -20,3 +22,5 @@ permalink: /kb/038/Q38867/
 	
 	Don't specify the /T switch. Using /T with /W produces mutually
 	exclusive modes of operation.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/078/Q78413/
 
 ## Q78413: Procom SCSI Drives Require Updated Driver with MS-DOS
 
+{% raw %}
+
 	Article: Q78413
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -72,3 +74,5 @@ permalink: /kb/078/Q78413/
 	
 	=============================================================================
 	
+
+{% endraw %}

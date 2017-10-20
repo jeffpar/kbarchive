@@ -6,6 +6,8 @@ permalink: /kb/249/Q249870/
 
 ## Q249870: XADM: Can't Access Client Permissions on Internet Newsgroup
 
+{% raw %}
+
 	Article: Q249870
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -69,3 +71,5 @@ permalink: /kb/249/Q249870/
 	
 	=============================================================================
 	
+
+{% endraw %}

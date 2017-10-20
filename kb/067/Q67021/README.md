@@ -6,6 +6,8 @@ permalink: /kb/067/Q67021/
 
 ## Q67021: Fontware Installation Kit Unable to Use Bitstream SoftFonts
 
+{% raw %}
+
 	Article: Q67021
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/067/Q67021/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/249/Q249682/
 
 ## Q249682: HOWTO: Change a Field's Datatype using DAO
 
+{% raw %}
+
 	Article: Q249682
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -450,3 +452,5 @@ permalink: /kb/249/Q249682/
 	
 	=============================================================================
 	
+
+{% endraw %}

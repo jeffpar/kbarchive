@@ -6,6 +6,8 @@ permalink: /kb/194/Q194869/
 
 ## Q194869: XFOR: EventID 1004 Migration Wizard Fails to Migrate cc:Mail Use
 
+{% raw %}
+
 	Article: Q194869
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -65,3 +67,5 @@ permalink: /kb/194/Q194869/
 	
 	=============================================================================
 	
+
+{% endraw %}

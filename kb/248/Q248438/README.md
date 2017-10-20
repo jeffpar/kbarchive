@@ -6,6 +6,8 @@ permalink: /kb/248/Q248438/
 
 ## Q248438: Fighter Ace II: Direct 3D and Glide Options Are Unavailable
 
+{% raw %}
+
 	Article: Q248438
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/248/Q248438/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/091/Q91702/
 
 ## Q91702: PC DOS: Deleting Messages from Shared Folders
 
+{% raw %}
+
 	Article: Q91702
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0
@@ -53,3 +55,5 @@ permalink: /kb/091/Q91702/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186965/
 
 ## Q186965: WD97: Cannot Turn Off List of Most Recently Used Fonts
 
+{% raw %}
+
 	Article: Q186965
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -78,3 +80,5 @@ permalink: /kb/186/Q186965/
 	
 	=============================================================================
 	
+
+{% endraw %}

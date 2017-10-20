@@ -6,6 +6,8 @@ permalink: /kb/287/Q287111/
 
 ## Q287111: PRB: SET COMPATIBLE ON Causes Error with Gendbc.prg
 
+{% raw %}
+
 	Article: Q287111
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -60,3 +62,5 @@ permalink: /kb/287/Q287111/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/262/Q262898/
 
 ## Q262898: Cannot Start MMS As Either a Service or a Console Application
 
+{% raw %}
+
 	Article: Q262898
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -69,3 +71,5 @@ permalink: /kb/262/Q262898/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171476/
 
 ## Q171476: FIX: Masked Edit Control Right-Aligned with NT 4.0 SP3
 
+{% raw %}
+
 	Article: Q171476
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -68,3 +70,5 @@ permalink: /kb/171/Q171476/
 	
 	=============================================================================
 	
+
+{% endraw %}

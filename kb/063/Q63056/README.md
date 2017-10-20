@@ -6,6 +6,8 @@ permalink: /kb/063/Q63056/
 
 ## Q63056: Fatal Error C1043 When Compiling with C1L.EXE
 
+{% raw %}
+
 	Article: Q63056
 	Product(s): See article
 	Version(s): 6.00
@@ -31,3 +33,5 @@ permalink: /kb/063/Q63056/
 	Microsoft has confirmed this to be a problem with C version 6.00. We
 	are researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

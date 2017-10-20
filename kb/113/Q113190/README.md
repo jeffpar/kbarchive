@@ -6,6 +6,8 @@ permalink: /kb/113/Q113190/
 
 ## Q113190: Npclnt.exe WFW Named Pipe Client
 
+{% raw %}
+
 	Article: Q113190
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11
@@ -82,3 +84,5 @@ permalink: /kb/113/Q113190/
 	
 	=============================================================================
 	
+
+{% endraw %}

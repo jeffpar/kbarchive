@@ -6,6 +6,8 @@ permalink: /kb/035/Q35031/
 
 ## Q35031: Unresolved Externals when Linking for Protected Mode
 
+{% raw %}
+
 	Article: Q35031
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -47,3 +49,5 @@ permalink: /kb/035/Q35031/
 	understands this request and searches for DOSCALLS.LIB in the
 	directories specified in the LIB environment variable; LINK Version
 	5.01.04 does not understand this request.
+
+{% endraw %}

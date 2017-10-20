@@ -6,6 +6,8 @@ permalink: /kb/121/Q121682/
 
 ## Q121682: SMS: Memory Performance Tuning in Systems Management Server
 
+{% raw %}
+
 	Article: Q121682
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -123,3 +125,5 @@ permalink: /kb/121/Q121682/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157614/
 
 ## Q157614: WD97: Word Document Objects Scale When Cropped
 
+{% raw %}
+
 	Article: Q157614
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -53,3 +55,5 @@ permalink: /kb/157/Q157614/
 	
 	=============================================================================
 	
+
+{% endraw %}

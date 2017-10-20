@@ -6,6 +6,8 @@ permalink: /kb/022/Q22523/
 
 ## Q22523: Windows Does Not Support Real-Time Programming
 
+{% raw %}
+
 	Article: Q22523
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -62,3 +64,5 @@ permalink: /kb/022/Q22523/
 	
 	=============================================================================
 	
+
+{% endraw %}

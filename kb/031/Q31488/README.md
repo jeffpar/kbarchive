@@ -6,6 +6,8 @@ permalink: /kb/031/Q31488/
 
 ## Q31488: UTILITY.DOC: Filetab Switch Expands Tabs
 
+{% raw %}
+
 	Article: Q31488
 	Product(s): See article
 	Version(s): 1.00 | 1.00
@@ -29,3 +31,5 @@ permalink: /kb/031/Q31488/
 	uses the filetab switch to determine how to convert spaces into tabs
 	when writing a file.
 	   The default value of filetab is eight (8).
+
+{% endraw %}

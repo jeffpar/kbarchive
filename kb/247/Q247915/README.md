@@ -6,6 +6,8 @@ permalink: /kb/247/Q247915/
 
 ## Q247915: Cannot Import Config.nt FILES Value into 16-Bit Program
 
+{% raw %}
+
 	Article: Q247915
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -49,3 +51,5 @@ permalink: /kb/247/Q247915/
 	
 	=============================================================================
 	
+
+{% endraw %}

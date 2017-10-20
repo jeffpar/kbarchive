@@ -6,6 +6,8 @@ permalink: /kb/140/Q140189/
 
 ## Q140189: PC Win: Err Msg: STOP: Some Names Could Not Be Matched...
 
+{% raw %}
+
 	Article: Q140189
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b,3.2,3.2a,3.5
@@ -60,3 +62,5 @@ permalink: /kb/140/Q140189/
 	
 	=============================================================================
 	
+
+{% endraw %}

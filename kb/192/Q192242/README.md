@@ -6,6 +6,8 @@ permalink: /kb/192/Q192242/
 
 ## Q192242: Admin Print Functions after Year 2000 Show Incorrect Date Format
 
+{% raw %}
+
 	Article: Q192242
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.2a,3.5
@@ -61,3 +63,5 @@ permalink: /kb/192/Q192242/
 	
 	=============================================================================
 	
+
+{% endraw %}

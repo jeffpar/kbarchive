@@ -6,6 +6,8 @@ permalink: /kb/101/Q101374/
 
 ## Q101374: ADT/ODE: How to Create a Custom Startup &quot;Splash&quot; Screen
 
+{% raw %}
+
 	Article: Q101374
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:1.1,2.0,7.0,97
@@ -199,3 +201,5 @@ permalink: /kb/101/Q101374/
 	
 	=============================================================================
 	
+
+{% endraw %}

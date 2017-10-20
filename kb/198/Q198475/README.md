@@ -6,6 +6,8 @@ permalink: /kb/198/Q198475/
 
 ## Q198475: XWEB: Time Out Error Attaching File in Outlook Web Access
 
+{% raw %}
+
 	Article: Q198475
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5,5.5SP1
@@ -60,3 +62,5 @@ permalink: /kb/198/Q198475/
 	
 	=============================================================================
 	
+
+{% endraw %}

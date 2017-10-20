@@ -6,6 +6,8 @@ permalink: /kb/101/Q101140/
 
 ## Q101140: PC Adm: Deleted External User Still Shows
 
+{% raw %}
+
 	Article: Q101140
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -47,3 +49,5 @@ permalink: /kb/101/Q101140/
 	
 	=============================================================================
 	
+
+{% endraw %}

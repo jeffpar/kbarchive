@@ -6,6 +6,8 @@ permalink: /kb/025/Q25996/
 
 ## Q25996: No EOF (CTRL+Z) Marker Written at End of Sequential File
 
+{% raw %}
+
 	Article: Q25996
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -42,3 +44,5 @@ permalink: /kb/025/Q25996/
 	You can write your own CTRL+Z to the end of a file by writing a
 	program that opens the file for append and sends a chr$(26) to the
 	file.
+
+{% endraw %}

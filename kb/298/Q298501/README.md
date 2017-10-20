@@ -6,6 +6,8 @@ permalink: /kb/298/Q298501/
 
 ## Q298501: BUG: Menu Item Captions Is Displayed Incorrectly
 
+{% raw %}
+
 	Article: Q298501
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): (all versions and editions),4.0,5.0,6.0
@@ -85,3 +87,5 @@ permalink: /kb/298/Q298501/
 	
 	=============================================================================
 	
+
+{% endraw %}

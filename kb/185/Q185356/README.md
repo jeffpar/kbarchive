@@ -6,6 +6,8 @@ permalink: /kb/185/Q185356/
 
 ## Q185356: TEST/XID Retries not Configurable for DLC Connections
 
+{% raw %}
+
 	Article: Q185356
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,3.0 SP1
@@ -146,3 +148,5 @@ permalink: /kb/185/Q185356/
 	
 	=============================================================================
 	
+
+{% endraw %}

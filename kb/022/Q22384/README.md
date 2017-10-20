@@ -6,6 +6,8 @@ permalink: /kb/022/Q22384/
 
 ## Q22384: Windows Does Not Implement INT 15H to Handle Multitasking
 
+{% raw %}
+
 	Article: Q22384
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -39,3 +41,5 @@ permalink: /kb/022/Q22384/
 	
 	=============================================================================
 	
+
+{% endraw %}

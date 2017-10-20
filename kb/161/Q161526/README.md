@@ -6,6 +6,8 @@ permalink: /kb/161/Q161526/
 
 ## Q161526: FP97: Heading Style Ignored in Converted Word Document
 
+{% raw %}
+
 	Article: Q161526
 	Product(s): Word Front Page
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/161/Q161526/
 	
 	=============================================================================
 	
+
+{% endraw %}

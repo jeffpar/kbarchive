@@ -6,6 +6,8 @@ permalink: /kb/175/Q175579/
 
 ## Q175579: XFOR: Systems Using Addresses with DDATYPE=MSXCX500, Will NDR
 
+{% raw %}
+
 	Article: Q175579
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -66,3 +68,5 @@ permalink: /kb/175/Q175579/
 	
 	=============================================================================
 	
+
+{% endraw %}

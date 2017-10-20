@@ -6,6 +6,8 @@ permalink: /kb/175/Q175384/
 
 ## Q175384: TN3270 Client Hangs with Keyboard Locked on Some Host Screens
 
+{% raw %}
+
 	Article: Q175384
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -86,3 +88,5 @@ permalink: /kb/175/Q175384/
 	
 	=============================================================================
 	
+
+{% endraw %}

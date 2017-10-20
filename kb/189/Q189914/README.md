@@ -6,6 +6,8 @@ permalink: /kb/189/Q189914/
 
 ## Q189914: BUG: Wrapped CoolBar Control May GPF Client EXE Program
 
+{% raw %}
+
 	Article: Q189914
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -120,3 +122,5 @@ permalink: /kb/189/Q189914/
 	
 	=============================================================================
 	
+
+{% endraw %}

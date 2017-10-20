@@ -6,6 +6,8 @@ permalink: /kb/215/Q215494/
 
 ## Q215494: XFOR: Message Flow Through the IBM OV/VM-PROFS Connector
 
+{% raw %}
+
 	Article: Q215494
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -111,3 +113,5 @@ permalink: /kb/215/Q215494/
 	
 	=============================================================================
 	
+
+{% endraw %}

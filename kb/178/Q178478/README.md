@@ -6,6 +6,8 @@ permalink: /kb/178/Q178478/
 
 ## Q178478: WD97: Can't Send Word Document with Outlook Express
 
+{% raw %}
+
 	Article: Q178478
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -107,3 +109,5 @@ permalink: /kb/178/Q178478/
 	
 	=============================================================================
 	
+
+{% endraw %}

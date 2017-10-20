@@ -6,6 +6,8 @@ permalink: /kb/130/Q130379/
 
 ## Q130379: Repeating ALT+TAB, ALT+ENTER, or ALT+ESC Corrupts Display
 
+{% raw %}
+
 	Article: Q130379
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -61,3 +63,5 @@ permalink: /kb/130/Q130379/
 	
 	=============================================================================
 	
+
+{% endraw %}

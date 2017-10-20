@@ -6,6 +6,8 @@ permalink: /kb/068/Q68743/
 
 ## Q68743: ASD: Scenery Does Not Change Color at Night
 
+{% raw %}
+
 	Article: Q68743
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/068/Q68743/
 	
 	=============================================================================
 	
+
+{% endraw %}

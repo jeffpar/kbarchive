@@ -6,6 +6,8 @@ permalink: /kb/251/Q251116/
 
 ## Q251116: BUG: Source Files Not Compiled When Header Files Are Modified
 
+{% raw %}
+
 	Article: Q251116
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/251/Q251116/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195345/
 
 ## Q195345: My Personal Tutor: No Sound After You Sign In
 
+{% raw %}
+
 	Article: Q195345
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/195/Q195345/
 	
 	=============================================================================
 	
+
+{% endraw %}

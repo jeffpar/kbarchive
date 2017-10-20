@@ -6,6 +6,8 @@ permalink: /kb/057/Q57342/
 
 ## Q57342: Light Pens Tested with Microsoft BASIC
 
+{% raw %}
+
 	Article: Q57342
 	Product(s): See article
 	Version(s): 4.50
@@ -47,3 +49,5 @@ permalink: /kb/057/Q57342/
 	   x = PEN (4) : y = PEN(5)
 	   PRINT "x=" x, "y=" y
 	LOOP
+
+{% endraw %}

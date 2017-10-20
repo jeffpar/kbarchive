@@ -6,6 +6,8 @@ permalink: /kb/138/Q138696/
 
 ## Q138696: MS Exchange Err Msg: The Set of Folders Could Not Be Opened
 
+{% raw %}
+
 	Article: Q138696
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/138/Q138696/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97416/
 
 ## Q97416: MS-DOS 6 Upgrade Setup May Delete CONFIG.SYS and AUTOEXEC.BAT
 
+{% raw %}
+
 	Article: Q97416
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -79,3 +81,5 @@ permalink: /kb/097/Q97416/
 	
 	=============================================================================
 	
+
+{% endraw %}

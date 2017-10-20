@@ -6,6 +6,8 @@ permalink: /kb/187/Q187119/
 
 ## Q187119: Custom Dictionaries in Office97
 
+{% raw %}
+
 	Article: Q187119
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/187/Q187119/
 	
 	=============================================================================
 	
+
+{% endraw %}

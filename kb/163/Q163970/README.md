@@ -6,6 +6,8 @@ permalink: /kb/163/Q163970/
 
 ## Q163970: DNS Sample File Place.dns Contains an Error
 
+{% raw %}
+
 	Article: Q163970
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -53,3 +55,5 @@ permalink: /kb/163/Q163970/
 	
 	=============================================================================
 	
+
+{% endraw %}

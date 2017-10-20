@@ -6,6 +6,8 @@ permalink: /kb/092/Q92532/
 
 ## Q92532: PRB: Display Monitor Goes Blank After the Logo Display
 
+{% raw %}
+
 	Article: Q92532
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/092/Q92532/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119874/
 
 ## Q119874: Lost Colors with Cirrus Logic Based VLB Video Adapter
 
+{% raw %}
+
 	Article: Q119874
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -57,3 +59,5 @@ permalink: /kb/119/Q119874/
 	
 	=============================================================================
 	
+
+{% endraw %}

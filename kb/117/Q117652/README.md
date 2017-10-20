@@ -6,6 +6,8 @@ permalink: /kb/117/Q117652/
 
 ## Q117652: PC Forms: Sender Does Not Appear in Read Reply Form
 
+{% raw %}
+
 	Article: Q117652
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -78,3 +80,5 @@ permalink: /kb/117/Q117652/
 	
 	=============================================================================
 	
+
+{% endraw %}

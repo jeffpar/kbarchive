@@ -6,6 +6,8 @@ permalink: /kb/183/Q183345/
 
 ## Q183345: FIX: ORA-00000 Error Message with ASP, MTS, and Connection Pooli
 
+{% raw %}
+
 	Article: Q183345
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 1.5,Build 2.73.7269,Build 2.73.7283.01,Build 2.73.7283.03
@@ -108,3 +110,5 @@ permalink: /kb/183/Q183345/
 	
 	=============================================================================
 	
+
+{% endraw %}

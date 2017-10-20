@@ -6,6 +6,8 @@ permalink: /kb/304/Q304135/
 
 ## Q304135: Double-Byte Field Name is Improperly Encoded When Using UTF-8
 
+{% raw %}
+
 	Article: Q304135
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -111,3 +113,5 @@ permalink: /kb/304/Q304135/
 	
 	=============================================================================
 	
+
+{% endraw %}

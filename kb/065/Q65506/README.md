@@ -6,6 +6,8 @@ permalink: /kb/065/Q65506/
 
 ## Q65506: &quot;Invalid Column&quot; If CREATEINDEX on Field of Nested User TYPE
 
+{% raw %}
+
 	Article: Q65506
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.10
@@ -43,3 +45,5 @@ permalink: /kb/065/Q65506/
 	             CustomerName AS STRING * 20
 	             CompanyInfo AS CompanyRec
 	   END TYPE
+
+{% endraw %}

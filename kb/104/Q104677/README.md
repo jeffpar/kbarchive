@@ -6,6 +6,8 @@ permalink: /kb/104/Q104677/
 
 ## Q104677: BUG: H2INC Versions 1.0 and 1.1 Do Not Support _syscall
 
+{% raw %}
+
 	Article: Q104677
 	Product(s): Microsoft C Compiler
 	Version(s): OS/2:1.0; winnt:1.0,1.1,1.11
@@ -60,3 +62,5 @@ permalink: /kb/104/Q104677/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245225/
 
 ## Q245225: HOW TO: Configure and Test a PERL Script with IIS 4.0, 5.0, 5.1
 
+{% raw %}
+
 	Article: Q245225
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -179,3 +181,5 @@ permalink: /kb/245/Q245225/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189802/
 
 ## Q189802: DocErr: Perfmon Command Line Options Are Incorrect in Reskit
 
+{% raw %}
+
 	Article: Q189802
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/189/Q189802/
 	
 	=============================================================================
 	
+
+{% endraw %}

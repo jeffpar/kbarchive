@@ -6,6 +6,8 @@ permalink: /kb/192/Q192779/
 
 ## Q192779: PRB: DAO Doesn't Support ISAM Formats on Alpha
 
+{% raw %}
+
 	Article: Q192779
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:5.0
@@ -56,3 +58,5 @@ permalink: /kb/192/Q192779/
 	
 	=============================================================================
 	
+
+{% endraw %}

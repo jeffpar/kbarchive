@@ -6,6 +6,8 @@ permalink: /kb/081/Q81680/
 
 ## Q81680: Windows 3.1 Setup Requires Spaces Between Parameters
 
+{% raw %}
+
 	Article: Q81680
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/081/Q81680/
 	
 	=============================================================================
 	
+
+{% endraw %}

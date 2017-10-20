@@ -6,6 +6,8 @@ permalink: /kb/086/Q86319/
 
 ## Q86319: PC Win: Update Message when Closing Unfinished OLE Object
 
+{% raw %}
+
 	Article: Q86319
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -57,3 +59,5 @@ permalink: /kb/086/Q86319/
 	
 	=============================================================================
 	
+
+{% endraw %}

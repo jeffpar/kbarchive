@@ -6,6 +6,8 @@ permalink: /kb/238/Q238671/
 
 ## Q238671: SP4 and SP5 Enable Automatic Adjustment for Daylight Saving Time
 
+{% raw %}
+
 	Article: Q238671
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5
@@ -88,3 +90,5 @@ permalink: /kb/238/Q238671/
 	
 	=============================================================================
 	
+
+{% endraw %}

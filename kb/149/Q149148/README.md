@@ -6,6 +6,8 @@ permalink: /kb/149/Q149148/
 
 ## Q149148: BUG: READ with Backspace Fails in Standard Graphics Programs
 
+{% raw %}
+
 	Article: Q149148
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -63,3 +65,5 @@ permalink: /kb/149/Q149148/
 	
 	=============================================================================
 	
+
+{% endraw %}

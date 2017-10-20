@@ -6,6 +6,8 @@ permalink: /kb/194/Q194384/
 
 ## Q194384: X400: Cannot Send Message with 246-Byte P1 File Through Gateway
 
+{% raw %}
+
 	Article: Q194384
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -80,3 +82,5 @@ permalink: /kb/194/Q194384/
 	
 	=============================================================================
 	
+
+{% endraw %}

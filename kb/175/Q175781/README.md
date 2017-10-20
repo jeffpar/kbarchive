@@ -6,6 +6,8 @@ permalink: /kb/175/Q175781/
 
 ## Q175781: XCLN: How To Create A Personal Distribution List
 
+{% raw %}
+
 	Article: Q175781
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -50,3 +52,5 @@ permalink: /kb/175/Q175781/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/090/Q90420/
 
 ## Q90420: Optimizing FoxBASE+ Searches with SEEK and FIND
 
+{% raw %}
+
 	Article: Q90420
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -43,3 +45,5 @@ permalink: /kb/090/Q90420/
 	
 	=============================================================================
 	
+
+{% endraw %}

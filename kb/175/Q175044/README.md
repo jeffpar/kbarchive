@@ -6,6 +6,8 @@ permalink: /kb/175/Q175044/
 
 ## Q175044: HOWTO: Implement a MessageFilter in VFP Using Active Messaging
 
+{% raw %}
+
 	Article: Q175044
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/175/Q175044/
 	
 	=============================================================================
 	
+
+{% endraw %}

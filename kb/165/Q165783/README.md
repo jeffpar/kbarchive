@@ -6,6 +6,8 @@ permalink: /kb/165/Q165783/
 
 ## Q165783: SNACFG Doesn't Delete LUA LUs from Configuration File
 
+{% raw %}
+
 	Article: Q165783
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -79,3 +81,5 @@ permalink: /kb/165/Q165783/
 	
 	=============================================================================
 	
+
+{% endraw %}

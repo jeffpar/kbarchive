@@ -6,6 +6,8 @@ permalink: /kb/114/Q114957/
 
 ## Q114957: Artist: Prints Only in Landscape Orientation
 
+{% raw %}
+
 	Article: Q114957
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
@@ -43,3 +45,5 @@ permalink: /kb/114/Q114957/
 	
 	=============================================================================
 	
+
+{% endraw %}

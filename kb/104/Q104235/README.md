@@ -6,6 +6,8 @@ permalink: /kb/104/Q104235/
 
 ## Q104235: Operating the HP ScanJet IIC/P with Windows NT
 
+{% raw %}
+
 	Article: Q104235
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -210,3 +212,5 @@ permalink: /kb/104/Q104235/
 	
 	=============================================================================
 	
+
+{% endraw %}

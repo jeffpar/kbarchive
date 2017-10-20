@@ -6,6 +6,8 @@ permalink: /kb/110/Q110942/
 
 ## Q110942: Hang on Reboot Autocheck of Stripe Set with Parity
 
+{% raw %}
+
 	Article: Q110942
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -58,3 +60,5 @@ permalink: /kb/110/Q110942/
 	
 	=============================================================================
 	
+
+{% endraw %}

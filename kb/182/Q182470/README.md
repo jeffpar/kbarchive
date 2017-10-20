@@ -6,6 +6,8 @@ permalink: /kb/182/Q182470/
 
 ## Q182470: HOWTO: Use Setup Wizard Command Line Arguments for Silent Mode
 
+{% raw %}
+
 	Article: Q182470
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -98,3 +100,5 @@ permalink: /kb/182/Q182470/
 	
 	=============================================================================
 	
+
+{% endraw %}

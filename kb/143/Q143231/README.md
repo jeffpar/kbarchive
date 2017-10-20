@@ -6,6 +6,8 @@ permalink: /kb/143/Q143231/
 
 ## Q143231: 3D Movie Maker: How to Remove or Change a Text Box Mid-Movie
 
+{% raw %}
+
 	Article: Q143231
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/143/Q143231/
 	
 	=============================================================================
 	
+
+{% endraw %}

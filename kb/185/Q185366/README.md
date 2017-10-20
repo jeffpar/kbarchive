@@ -6,6 +6,8 @@ permalink: /kb/185/Q185366/
 
 ## Q185366: Return of Arcade: Exception 10H When You Calibrate Joystick
 
+{% raw %}
+
 	Article: Q185366
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/185/Q185366/
 	
 	=============================================================================
 	
+
+{% endraw %}

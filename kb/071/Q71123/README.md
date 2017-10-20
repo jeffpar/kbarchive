@@ -6,6 +6,8 @@ permalink: /kb/071/Q71123/
 
 ## Q71123: Display Driver Version 1.06 for NEC Graphics Engine (DGIS)
 
+{% raw %}
+
 	Article: Q71123
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -72,3 +74,5 @@ permalink: /kb/071/Q71123/
 	
 	=============================================================================
 	
+
+{% endraw %}

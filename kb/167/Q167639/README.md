@@ -6,6 +6,8 @@ permalink: /kb/167/Q167639/
 
 ## Q167639: XFOR: MSMI Reports Warning 2597 About Un-installed Codepage
 
+{% raw %}
+
 	Article: Q167639
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -60,3 +62,5 @@ permalink: /kb/167/Q167639/
 	
 	=============================================================================
 	
+
+{% endraw %}

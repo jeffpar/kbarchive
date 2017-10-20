@@ -6,6 +6,8 @@ permalink: /kb/050/Q50003/
 
 ## Q50003: Bits Per Pixel Per Plane for Graphics GET for SCREEN 3 and 4
 
+{% raw %}
+
 	Article: Q50003
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -71,3 +73,5 @@ permalink: /kb/050/Q50003/
 	the following formula gives the required size of the array in bytes:
 	
 	   4+INT(((x2-x1+1)*(bits-per-pixel-per-plane)+7)/8)*planes*((y2-y1)+1)
+
+{% endraw %}

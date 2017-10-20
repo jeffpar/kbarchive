@@ -6,6 +6,8 @@ permalink: /kb/071/Q71124/
 
 ## Q71124: Using Terminal and a Direct Host
 
+{% raw %}
+
 	Article: Q71124
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/071/Q71124/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160494/
 
 ## Q160494: DNS Zone Transfer Fails After WINS Record Added
 
+{% raw %}
+
 	Article: Q160494
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/160/Q160494/
 	
 	=============================================================================
 	
+
+{% endraw %}

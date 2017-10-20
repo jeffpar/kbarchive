@@ -6,6 +6,8 @@ permalink: /kb/182/Q182068/
 
 ## Q182068: BUG: ListView SubItemIndex Property Not Converted
 
+{% raw %}
+
 	Article: Q182068
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -147,3 +149,5 @@ permalink: /kb/182/Q182068/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185880/
 
 ## Q185880: BUG: Access Key for Constituent Control is Ignored
 
+{% raw %}
+
 	Article: Q185880
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -139,3 +141,5 @@ permalink: /kb/185/Q185880/
 	
 	=============================================================================
 	
+
+{% endraw %}

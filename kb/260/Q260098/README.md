@@ -6,6 +6,8 @@ permalink: /kb/260/Q260098/
 
 ## Q260098: FIX: Cannot Set the ComboBox Text in the Click Event in VB 6.0
 
+{% raw %}
+
 	Article: Q260098
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0,6.0 sp1, sp2, sp3
@@ -97,3 +99,5 @@ permalink: /kb/260/Q260098/
 	
 	=============================================================================
 	
+
+{% endraw %}

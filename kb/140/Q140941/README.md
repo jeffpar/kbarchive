@@ -6,6 +6,8 @@ permalink: /kb/140/Q140941/
 
 ## Q140941: XCLN: Identifying Exportable Client Versions
 
+{% raw %}
+
 	Article: Q140941
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -56,3 +58,5 @@ permalink: /kb/140/Q140941/
 	
 	=============================================================================
 	
+
+{% endraw %}

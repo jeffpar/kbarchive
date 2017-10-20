@@ -6,6 +6,8 @@ permalink: /kb/154/Q154856/
 
 ## Q154856: SMS: Software Audit Fails to Find Package
 
+{% raw %}
+
 	Article: Q154856
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -56,3 +58,5 @@ permalink: /kb/154/Q154856/
 	
 	=============================================================================
 	
+
+{% endraw %}

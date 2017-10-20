@@ -6,6 +6,8 @@ permalink: /kb/196/Q196841/
 
 ## Q196841: WD97: Footnote Not Found When You Click &quot;Footnote Mark&quot; in Find
 
+{% raw %}
+
 	Article: Q196841
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -48,3 +50,5 @@ permalink: /kb/196/Q196841/
 	
 	=============================================================================
 	
+
+{% endraw %}

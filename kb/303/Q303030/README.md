@@ -6,6 +6,8 @@ permalink: /kb/303/Q303030/
 
 ## Q303030: Flight Simulator 2000: Force Feedback 2 Throttle Doesn't Work
 
+{% raw %}
+
 	Article: Q303030
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/303/Q303030/
 	
 	=============================================================================
 	
+
+{% endraw %}

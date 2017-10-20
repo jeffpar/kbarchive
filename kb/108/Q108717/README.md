@@ -6,6 +6,8 @@ permalink: /kb/108/Q108717/
 
 ## Q108717: BUG: Resource Manager Error When Printing Lots of Fonts
 
+{% raw %}
+
 	Article: Q108717
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS: 2.5x,2.6x,3.0,3.0b,5.0,5.0a,6.0
@@ -124,3 +126,5 @@ permalink: /kb/108/Q108717/
 	
 	=============================================================================
 	
+
+{% endraw %}

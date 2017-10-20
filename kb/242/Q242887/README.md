@@ -6,6 +6,8 @@ permalink: /kb/242/Q242887/
 
 ## Q242887: AoE II: Screen Colors Flicker When Game Screens Change
 
+{% raw %}
+
 	Article: Q242887
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -83,3 +85,5 @@ permalink: /kb/242/Q242887/
 	
 	=============================================================================
 	
+
+{% endraw %}

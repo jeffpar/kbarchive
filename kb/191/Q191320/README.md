@@ -6,6 +6,8 @@ permalink: /kb/191/Q191320/
 
 ## Q191320: SMS: Getmem Hangs Inventory at 27 to 30 Percent
 
+{% raw %}
+
 	Article: Q191320
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -119,3 +121,5 @@ permalink: /kb/191/Q191320/
 	
 	=============================================================================
 	
+
+{% endraw %}

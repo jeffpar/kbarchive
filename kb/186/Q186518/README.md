@@ -6,6 +6,8 @@ permalink: /kb/186/Q186518/
 
 ## Q186518: Using Microsoft Exchange Forms with Terminal Server
 
+{% raw %}
+
 	Article: Q186518
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/186/Q186518/
 	
 	=============================================================================
 	
+
+{% endraw %}

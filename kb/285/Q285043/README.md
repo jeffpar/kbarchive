@@ -6,6 +6,8 @@ permalink: /kb/285/Q285043/
 
 ## Q285043: Combat Flight Simulator 2: Unable to Change Gunsight
 
+{% raw %}
+
 	Article: Q285043
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -44,3 +46,5 @@ permalink: /kb/285/Q285043/
 	
 	=============================================================================
 	
+
+{% endraw %}

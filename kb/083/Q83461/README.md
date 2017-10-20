@@ -6,6 +6,8 @@ permalink: /kb/083/Q83461/
 
 ## Q83461: INFO: Extended Characters Different Under Windows
 
+{% raw %}
+
 	Article: Q83461
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -187,3 +189,5 @@ permalink: /kb/083/Q83461/
 	
 	=============================================================================
 	
+
+{% endraw %}

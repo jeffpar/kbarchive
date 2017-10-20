@@ -6,6 +6,8 @@ permalink: /kb/137/Q137515/
 
 ## Q137515: HOWTo: Using .pch Files Across Projects in the Visual Workbench
 
+{% raw %}
+
 	Article: Q137515
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0
@@ -99,3 +101,5 @@ permalink: /kb/137/Q137515/
 	
 	=============================================================================
 	
+
+{% endraw %}

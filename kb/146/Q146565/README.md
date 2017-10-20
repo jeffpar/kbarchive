@@ -6,6 +6,8 @@ permalink: /kb/146/Q146565/
 
 ## Q146565: Multiple Indented IF Statements Results in Error
 
+{% raw %}
+
 	Article: Q146565
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -78,3 +80,5 @@ permalink: /kb/146/Q146565/
 	
 	=============================================================================
 	
+
+{% endraw %}

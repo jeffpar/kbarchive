@@ -6,6 +6,8 @@ permalink: /kb/136/Q136988/
 
 ## Q136988: Bookshelf 1995: Some Animations Do Not Have Audio
 
+{% raw %}
+
 	Article: Q136988
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -59,3 +61,5 @@ permalink: /kb/136/Q136988/
 	
 	=============================================================================
 	
+
+{% endraw %}

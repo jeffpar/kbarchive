@@ -6,6 +6,8 @@ permalink: /kb/193/Q193077/
 
 ## Q193077: FIX: Passing Array to Init with Addobject Passes First Element
 
+{% raw %}
+
 	Article: Q193077
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -103,3 +105,5 @@ permalink: /kb/193/Q193077/
 	
 	=============================================================================
 	
+
+{% endraw %}

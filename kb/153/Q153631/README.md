@@ -6,6 +6,8 @@ permalink: /kb/153/Q153631/
 
 ## Q153631: FP: &quot;Error Code 1722&quot; When You Install IIS Extensions
 
+{% raw %}
+
 	Article: Q153631
 	Product(s): Word Front Page
 	Version(s): ; WINDOWS:1.1
@@ -60,3 +62,5 @@ permalink: /kb/153/Q153631/
 	
 	=============================================================================
 	
+
+{% endraw %}

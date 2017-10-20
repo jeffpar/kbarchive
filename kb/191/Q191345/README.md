@@ -6,6 +6,8 @@ permalink: /kb/191/Q191345/
 
 ## Q191345: SMS: Custom MIF Entry: Which Form Comes Up by Default
 
+{% raw %}
+
 	Article: Q191345
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -38,3 +40,5 @@ permalink: /kb/191/Q191345/
 	
 	=============================================================================
 	
+
+{% endraw %}

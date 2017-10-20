@@ -6,6 +6,8 @@ permalink: /kb/318/Q318612/
 
 ## Q318612: How to Associate TN3270 Display LUs with TN3270 Printer LUs
 
+{% raw %}
+
 	Article: Q318612
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -97,3 +99,5 @@ permalink: /kb/318/Q318612/
 	
 	=============================================================================
 	
+
+{% endraw %}

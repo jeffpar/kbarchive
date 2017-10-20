@@ -6,6 +6,8 @@ permalink: /kb/159/Q159931/
 
 ## Q159931: Error 5 Opening File Using DataEase
 
+{% raw %}
+
 	Article: Q159931
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51
@@ -51,3 +53,5 @@ permalink: /kb/159/Q159931/
 	
 	=============================================================================
 	
+
+{% endraw %}

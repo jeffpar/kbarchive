@@ -6,6 +6,8 @@ permalink: /kb/173/Q173423/
 
 ## Q173423: DOC: IsFieldNull() Does Not Accept NULL
 
+{% raw %}
+
 	Article: Q173423
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.2,5.0
@@ -66,3 +68,5 @@ permalink: /kb/173/Q173423/
 	
 	=============================================================================
 	
+
+{% endraw %}

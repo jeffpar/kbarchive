@@ -6,6 +6,8 @@ permalink: /kb/191/Q191546/
 
 ## Q191546: PRB: Visual Basic Files Are Missing From Common&#92;Tools Directory
 
+{% raw %}
+
 	Article: Q191546
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -1393,3 +1395,5 @@ permalink: /kb/191/Q191546/
 	
 	=============================================================================
 	
+
+{% endraw %}

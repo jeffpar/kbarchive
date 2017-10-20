@@ -6,6 +6,8 @@ permalink: /kb/272/Q272726/
 
 ## Q272726: XADM: Administrators Can Browse User List of Untrusted Domains
 
+{% raw %}
+
 	Article: Q272726
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,5.5
@@ -54,3 +56,5 @@ permalink: /kb/272/Q272726/
 	
 	=============================================================================
 	
+
+{% endraw %}

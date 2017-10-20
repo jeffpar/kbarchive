@@ -6,6 +6,8 @@ permalink: /kb/169/Q169385/
 
 ## Q169385: PRB: Screen Turns Black While Making .exe
 
+{% raw %}
+
 	Article: Q169385
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -86,3 +88,5 @@ permalink: /kb/169/Q169385/
 	
 	=============================================================================
 	
+
+{% endraw %}

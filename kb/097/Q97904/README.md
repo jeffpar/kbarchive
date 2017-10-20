@@ -6,6 +6,8 @@ permalink: /kb/097/Q97904/
 
 ## Q97904: HPPCL5E: Changes From LaserJet 4/4M v31.1.03a to v31.1.08
 
+{% raw %}
+
 	Article: Q97904
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -140,3 +142,5 @@ permalink: /kb/097/Q97904/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/237/Q237962/
 
 ## Q237962: MMC Application Exception after Applying SNA Server 4.0 SP2
 
+{% raw %}
+
 	Article: Q237962
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -142,3 +144,5 @@ permalink: /kb/237/Q237962/
 	
 	=============================================================================
 	
+
+{% endraw %}

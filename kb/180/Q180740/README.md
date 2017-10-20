@@ -6,6 +6,8 @@ permalink: /kb/180/Q180740/
 
 ## Q180740: PPT7: Embossed Graphics in Converted File Appear as Solid Color
 
+{% raw %}
+
 	Article: Q180740
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -90,3 +92,5 @@ permalink: /kb/180/Q180740/
 	
 	=============================================================================
 	
+
+{% endraw %}

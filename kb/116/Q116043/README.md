@@ -6,6 +6,8 @@ permalink: /kb/116/Q116043/
 
 ## Q116043: Network Share Access Denied After Limit Met, Then a Disconnect
 
+{% raw %}
+
 	Article: Q116043
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5
@@ -70,3 +72,5 @@ permalink: /kb/116/Q116043/
 	
 	=============================================================================
 	
+
+{% endraw %}

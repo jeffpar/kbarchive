@@ -6,6 +6,8 @@ permalink: /kb/241/Q241489/
 
 ## Q241489: User Right Incorrectly Configured in SCE High-Security Template
 
+{% raw %}
+
 	Article: Q241489
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -109,3 +111,5 @@ permalink: /kb/241/Q241489/
 	
 	=============================================================================
 	
+
+{% endraw %}

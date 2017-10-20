@@ -6,6 +6,8 @@ permalink: /kb/067/Q67364/
 
 ## Q67364: QBX.EXE &quot;EMS Corrupt&quot; Using Expanded Memory in Windows 3.00
 
+{% raw %}
+
 	Article: Q67364
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -159,3 +161,5 @@ permalink: /kb/067/Q67364/
 	ELSE
 	   PRINT "PAGE FRAME ADDRESS: NONE "
 	END IF
+
+{% endraw %}

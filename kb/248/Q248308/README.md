@@ -6,6 +6,8 @@ permalink: /kb/248/Q248308/
 
 ## Q248308: Fighter Ace II: Bombs Do Not Explode When You Drop Them
 
+{% raw %}
+
 	Article: Q248308
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/248/Q248308/
 	
 	=============================================================================
 	
+
+{% endraw %}

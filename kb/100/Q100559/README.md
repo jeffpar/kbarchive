@@ -6,6 +6,8 @@ permalink: /kb/100/Q100559/
 
 ## Q100559: PRB: File Imported from MS-DOS Doesn't Appear in FoxBASE+/Mac
 
+{% raw %}
+
 	Article: Q100559
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -48,3 +50,5 @@ permalink: /kb/100/Q100559/
 	
 	=============================================================================
 	
+
+{% endraw %}

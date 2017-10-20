@@ -6,6 +6,8 @@ permalink: /kb/143/Q143171/
 
 ## Q143171: HOWTO: Unattended Setup Does Not Offer Option for ERD
 
+{% raw %}
+
 	Article: Q143171
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/143/Q143171/
 	
 	=============================================================================
 	
+
+{% endraw %}

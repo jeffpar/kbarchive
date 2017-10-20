@@ -6,6 +6,8 @@ permalink: /kb/149/Q149284/
 
 ## Q149284: XADM: PC Mail Shared Folders not Converted To Public Folders
 
+{% raw %}
+
 	Article: Q149284
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/149/Q149284/
 	
 	=============================================================================
 	
+
+{% endraw %}

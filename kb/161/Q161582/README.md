@@ -6,6 +6,8 @@ permalink: /kb/161/Q161582/
 
 ## Q161582: WD97: AutoCorrect Text Deleted, Partially Visible in Form Field
 
+{% raw %}
+
 	Article: Q161582
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/161/Q161582/
 	
 	=============================================================================
 	
+
+{% endraw %}

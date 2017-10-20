@@ -6,6 +6,8 @@ permalink: /kb/150/Q150472/
 
 ## Q150472: Downstream PU Fails to Reactivate After an Outage
 
+{% raw %}
+
 	Article: Q150472
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -65,3 +67,5 @@ permalink: /kb/150/Q150472/
 	
 	=============================================================================
 	
+
+{% endraw %}

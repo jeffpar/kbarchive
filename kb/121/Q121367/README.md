@@ -6,6 +6,8 @@ permalink: /kb/121/Q121367/
 
 ## Q121367: INFO: Can't Watch Variables in Debugger - Nine Possible Causes
 
+{% raw %}
+
 	Article: Q121367
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,2.0,2.1,4.0,4.01,4.1,5.0,6.0
@@ -217,3 +219,5 @@ permalink: /kb/121/Q121367/
 	
 	=============================================================================
 	
+
+{% endraw %}

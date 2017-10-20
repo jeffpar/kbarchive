@@ -6,6 +6,8 @@ permalink: /kb/092/Q92875/
 
 ## Q92875: WFWG Err Msg: Parameter Format Not Correct
 
+{% raw %}
+
 	Article: Q92875
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -49,3 +51,5 @@ permalink: /kb/092/Q92875/
 	
 	=============================================================================
 	
+
+{% endraw %}

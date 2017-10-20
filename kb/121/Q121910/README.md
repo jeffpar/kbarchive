@@ -6,6 +6,8 @@ permalink: /kb/121/Q121910/
 
 ## Q121910: Upgrade Does Not Move Font Files from SYSTEM Subdirectory
 
+{% raw %}
+
 	Article: Q121910
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/121/Q121910/
 	
 	=============================================================================
 	
+
+{% endraw %}

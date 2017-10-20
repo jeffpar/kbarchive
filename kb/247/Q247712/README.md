@@ -6,6 +6,8 @@ permalink: /kb/247/Q247712/
 
 ## Q247712: Wlbs.exe Generates Incorrect Information on Cluster Status
 
+{% raw %}
+
 	Article: Q247712
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP6,4.0 SP6a
@@ -92,3 +94,5 @@ permalink: /kb/247/Q247712/
 	
 	=============================================================================
 	
+
+{% endraw %}

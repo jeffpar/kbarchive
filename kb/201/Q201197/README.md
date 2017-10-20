@@ -6,6 +6,8 @@ permalink: /kb/201/Q201197/
 
 ## Q201197: HOWTO: Use a ComboBox to Enter Data into a FlexGrid Control
 
+{% raw %}
+
 	Article: Q201197
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -186,3 +188,5 @@ permalink: /kb/201/Q201197/
 	
 	=============================================================================
 	
+
+{% endraw %}

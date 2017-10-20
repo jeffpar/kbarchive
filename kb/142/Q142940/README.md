@@ -6,6 +6,8 @@ permalink: /kb/142/Q142940/
 
 ## Q142940: How to Gain Access to the View Menu in an .EXE File
 
+{% raw %}
+
 	Article: Q142940
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b
@@ -80,3 +82,5 @@ permalink: /kb/142/Q142940/
 	
 	=============================================================================
 	
+
+{% endraw %}

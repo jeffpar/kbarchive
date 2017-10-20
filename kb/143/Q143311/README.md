@@ -6,6 +6,8 @@ permalink: /kb/143/Q143311/
 
 ## Q143311: INFO: Form Events and Sub Procedures Can Be Exposed
 
+{% raw %}
+
 	Article: Q143311
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -87,3 +89,5 @@ permalink: /kb/143/Q143311/
 	
 	=============================================================================
 	
+
+{% endraw %}

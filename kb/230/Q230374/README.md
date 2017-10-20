@@ -6,6 +6,8 @@ permalink: /kb/230/Q230374/
 
 ## Q230374: 'Subscript out of range' Error When Saving a Component Library
 
+{% raw %}
+
 	Article: Q230374
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0SP2
@@ -71,3 +73,5 @@ permalink: /kb/230/Q230374/
 	
 	=============================================================================
 	
+
+{% endraw %}

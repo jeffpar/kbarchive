@@ -6,6 +6,8 @@ permalink: /kb/246/Q246620/
 
 ## Q246620: Est2000: Runtime Error When You Print a Map to a Lexmark Printer
 
+{% raw %}
+
 	Article: Q246620
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -58,3 +60,5 @@ permalink: /kb/246/Q246620/
 	
 	=============================================================================
 	
+
+{% endraw %}

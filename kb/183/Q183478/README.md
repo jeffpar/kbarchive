@@ -6,6 +6,8 @@ permalink: /kb/183/Q183478/
 
 ## Q183478: HOWTO: Call EnumServicesStatus API From Visual Basic
 
+{% raw %}
+
 	Article: Q183478
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -225,3 +227,5 @@ permalink: /kb/183/Q183478/
 	
 	=============================================================================
 	
+
+{% endraw %}

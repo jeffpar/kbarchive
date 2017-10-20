@@ -6,6 +6,8 @@ permalink: /kb/093/Q93076/
 
 ## Q93076: PC Adm: Deleting Users Does Not Delete Users from Groups
 
+{% raw %}
+
 	Article: Q93076
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a
@@ -53,3 +55,5 @@ permalink: /kb/093/Q93076/
 	
 	=============================================================================
 	
+
+{% endraw %}

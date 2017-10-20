@@ -6,6 +6,8 @@ permalink: /kb/050/Q50078/
 
 ## Q50078: Flt Sim: Plane Accelerates While Taxiing
 
+{% raw %}
+
 	Article: Q50078
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -35,3 +37,5 @@ permalink: /kb/050/Q50078/
 	
 	=============================================================================
 	
+
+{% endraw %}

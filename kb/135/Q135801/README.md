@@ -6,6 +6,8 @@ permalink: /kb/135/Q135801/
 
 ## Q135801: BUG: Print Preview Toolbar May Be Off Screen
 
+{% raw %}
+
 	Article: Q135801
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS: 3.0,3.0b,5.0,6.0
@@ -71,3 +73,5 @@ permalink: /kb/135/Q135801/
 	
 	=============================================================================
 	
+
+{% endraw %}

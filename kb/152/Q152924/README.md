@@ -6,6 +6,8 @@ permalink: /kb/152/Q152924/
 
 ## Q152924: XFOR: DXA Sends Invalid Replace (R) Transactions
 
+{% raw %}
+
 	Article: Q152924
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/152/Q152924/
 	
 	=============================================================================
 	
+
+{% endraw %}

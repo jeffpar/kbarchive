@@ -6,6 +6,8 @@ permalink: /kb/106/Q106042/
 
 ## Q106042: WFWG Err Msg: This Application Was Communicating on...Network
 
+{% raw %}
+
 	Article: Q106042
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -79,3 +81,5 @@ permalink: /kb/106/Q106042/
 	
 	=============================================================================
 	
+
+{% endraw %}

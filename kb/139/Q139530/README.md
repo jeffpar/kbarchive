@@ -6,6 +6,8 @@ permalink: /kb/139/Q139530/
 
 ## Q139530: Multimedia: Using an Asterisk Wildcard Slows Searches
 
+{% raw %}
+
 	Article: Q139530
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/139/Q139530/
 	
 	=============================================================================
 	
+
+{% endraw %}

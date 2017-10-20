@@ -6,6 +6,8 @@ permalink: /kb/057/Q57891/
 
 ## Q57891: How BC /G2 Option Makes Smaller .EXE Code in BASIC 7.00
 
+{% raw %}
+
 	Article: Q57891
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -40,3 +42,5 @@ permalink: /kb/057/Q57891/
 	
 	We provided the BC /G2 option for developers who market their
 	compiled-BASIC products to customers with 286 or 386 machines.
+
+{% endraw %}

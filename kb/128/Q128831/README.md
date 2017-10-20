@@ -6,6 +6,8 @@ permalink: /kb/128/Q128831/
 
 ## Q128831: FIX: CFile Exception: badSeek, OS error information = -1
 
+{% raw %}
+
 	Article: Q128831
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1
@@ -134,3 +136,5 @@ permalink: /kb/128/Q128831/
 	
 	=============================================================================
 	
+
+{% endraw %}

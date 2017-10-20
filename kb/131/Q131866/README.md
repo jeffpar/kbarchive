@@ -6,6 +6,8 @@ permalink: /kb/131/Q131866/
 
 ## Q131866: Mail Err Msg: There Was an Error Switching Between Private...
 
+{% raw %}
+
 	Article: Q131866
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/131/Q131866/
 	
 	=============================================================================
 	
+
+{% endraw %}

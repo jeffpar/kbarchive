@@ -6,6 +6,8 @@ permalink: /kb/118/Q118340/
 
 ## Q118340: QuickWin Apps Allowed 50 User-Added Menu Items
 
+{% raw %}
+
 	Article: Q118340
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,4.0
@@ -72,3 +74,5 @@ permalink: /kb/118/Q118340/
 	
 	=============================================================================
 	
+
+{% endraw %}

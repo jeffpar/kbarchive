@@ -6,6 +6,8 @@ permalink: /kb/135/Q135112/
 
 ## Q135112: How to Use GENDBC to Create Utility that Recreates Complex CDX
 
+{% raw %}
+
 	Article: Q135112
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -85,3 +87,5 @@ permalink: /kb/135/Q135112/
 	
 	=============================================================================
 	
+
+{% endraw %}

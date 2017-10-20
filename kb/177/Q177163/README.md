@@ -6,6 +6,8 @@ permalink: /kb/177/Q177163/
 
 ## Q177163: FIX: Focus Doesn't Return to MDI Form After Modal Form Is Closed
 
+{% raw %}
+
 	Article: Q177163
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -109,3 +111,5 @@ permalink: /kb/177/Q177163/
 	
 	=============================================================================
 	
+
+{% endraw %}

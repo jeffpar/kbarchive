@@ -6,6 +6,8 @@ permalink: /kb/194/Q194371/
 
 ## Q194371: Puzzle Collection: Computer Hangs When You Remove Program
 
+{% raw %}
+
 	Article: Q194371
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -102,3 +104,5 @@ permalink: /kb/194/Q194371/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151235/
 
 ## Q151235: FPNW Does Not Search Trusted Domains for Object Names
 
+{% raw %}
+
 	Article: Q151235
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -67,3 +69,5 @@ permalink: /kb/151/Q151235/
 	
 	=============================================================================
 	
+
+{% endraw %}

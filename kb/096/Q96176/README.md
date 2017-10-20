@@ -6,6 +6,8 @@ permalink: /kb/096/Q96176/
 
 ## Q96176: ADDNAME2.EXE: A More Flexible ADDNAME Utility
 
+{% raw %}
+
 	Article: Q96176
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/096/Q96176/
 	
 	=============================================================================
 	
+
+{% endraw %}

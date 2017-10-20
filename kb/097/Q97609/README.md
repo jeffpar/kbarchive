@@ -6,6 +6,8 @@ permalink: /kb/097/Q97609/
 
 ## Q97609: CONVERT.BAT Fails with a Syntax Error if You Are Running NDOS
 
+{% raw %}
+
 	Article: Q97609
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -58,3 +60,5 @@ permalink: /kb/097/Q97609/
 	
 	=============================================================================
 	
+
+{% endraw %}

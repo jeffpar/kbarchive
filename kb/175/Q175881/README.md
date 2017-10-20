@@ -6,6 +6,8 @@ permalink: /kb/175/Q175881/
 
 ## Q175881: XADM: View Only Admin can Modify MS Mail Connector Properties
 
+{% raw %}
+
 	Article: Q175881
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -96,3 +98,5 @@ permalink: /kb/175/Q175881/
 	
 	=============================================================================
 	
+
+{% endraw %}

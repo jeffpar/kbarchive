@@ -6,6 +6,8 @@ permalink: /kb/148/Q148883/
 
 ## Q148883: FIX: Setting the Value of a Text Box Adds New Record to Table
 
+{% raw %}
+
 	Article: Q148883
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -76,3 +78,5 @@ permalink: /kb/148/Q148883/
 	
 	=============================================================================
 	
+
+{% endraw %}

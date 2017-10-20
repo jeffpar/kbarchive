@@ -6,6 +6,8 @@ permalink: /kb/272/Q272746/
 
 ## Q272746: MSN Companion Keyboard doesn't work
 
+{% raw %}
+
 	Article: Q272746
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -67,3 +69,5 @@ permalink: /kb/272/Q272746/
 	
 	=============================================================================
 	
+
+{% endraw %}

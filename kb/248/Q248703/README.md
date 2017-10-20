@@ -6,6 +6,8 @@ permalink: /kb/248/Q248703/
 
 ## Q248703: Multiple Separator Pages with Win95 Client and NT4 Print Server
 
+{% raw %}
+
 	Article: Q248703
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/248/Q248703/
 	
 	=============================================================================
 	
+
+{% endraw %}

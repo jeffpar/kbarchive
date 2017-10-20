@@ -6,6 +6,8 @@ permalink: /kb/162/Q162541/
 
 ## Q162541: WD97: Can't Access Mail Merge Data Source on Banyan Network
 
+{% raw %}
+
 	Article: Q162541
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -90,3 +92,5 @@ permalink: /kb/162/Q162541/
 	
 	=============================================================================
 	
+
+{% endraw %}

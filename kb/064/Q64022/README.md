@@ -6,6 +6,8 @@ permalink: /kb/064/Q64022/
 
 ## Q64022: Watch Value Can Display Incorrect Value of Far Memory
 
+{% raw %}
+
 	Article: Q64022
 	Product(s): See article
 	Version(s): 2.50
@@ -35,3 +37,5 @@ permalink: /kb/064/Q64022/
 	
 	Microsoft is researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

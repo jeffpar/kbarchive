@@ -6,6 +6,8 @@ permalink: /kb/158/Q158188/
 
 ## Q158188: HITCHHIKER'S GDE TO VB4 AND SQL SERVER Corrections and Comment
 
+{% raw %}
+
 	Article: Q158188
 	Product(s): Microsoft Press
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/158/Q158188/
 	
 	=============================================================================
 	
+
+{% endraw %}

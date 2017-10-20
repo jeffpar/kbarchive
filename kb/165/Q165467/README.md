@@ -6,6 +6,8 @@ permalink: /kb/165/Q165467/
 
 ## Q165467: How to Install a Windows-Based Program on a Dual-Boot Computer
 
+{% raw %}
+
 	Article: Q165467
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11,95; winnt:3.5,3.51,4.0
@@ -69,3 +71,5 @@ permalink: /kb/165/Q165467/
 	
 	=============================================================================
 	
+
+{% endraw %}

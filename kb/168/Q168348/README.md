@@ -6,6 +6,8 @@ permalink: /kb/168/Q168348/
 
 ## Q168348: RasDial( ) Leaks Resources on WinNT 4.0
 
+{% raw %}
+
 	Article: Q168348
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/168/Q168348/
 	
 	=============================================================================
 	
+
+{% endraw %}

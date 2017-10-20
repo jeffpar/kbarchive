@@ -6,6 +6,8 @@ permalink: /kb/094/Q94163/
 
 ## Q94163: Disabling Carbon Copy for Windows
 
+{% raw %}
+
 	Article: Q94163
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -83,3 +85,5 @@ permalink: /kb/094/Q94163/
 	
 	=============================================================================
 	
+
+{% endraw %}

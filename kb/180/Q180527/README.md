@@ -6,6 +6,8 @@ permalink: /kb/180/Q180527/
 
 ## Q180527: BUG: Setting WindowState = 0 Doesn't Set Window State to Normal
 
+{% raw %}
+
 	Article: Q180527
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -111,3 +113,5 @@ permalink: /kb/180/Q180527/
 	
 	=============================================================================
 	
+
+{% endraw %}

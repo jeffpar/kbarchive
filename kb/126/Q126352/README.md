@@ -6,6 +6,8 @@ permalink: /kb/126/Q126352/
 
 ## Q126352: File Manager Reports Size of NetWare Volume Incorrectly
 
+{% raw %}
+
 	Article: Q126352
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/126/Q126352/
 	
 	=============================================================================
 	
+
+{% endraw %}

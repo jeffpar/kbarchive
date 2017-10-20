@@ -6,6 +6,8 @@ permalink: /kb/069/Q69926/
 
 ## Q69926: Windows 3.0 HIMEM.SYS Requires /M:2 Switch on Tangent 486
 
+{% raw %}
+
 	Article: Q69926
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -53,3 +55,5 @@ permalink: /kb/069/Q69926/
 	
 	=============================================================================
 	
+
+{% endraw %}

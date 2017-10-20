@@ -6,6 +6,8 @@ permalink: /kb/150/Q150866/
 
 ## Q150866: XADM: Location of Microsoft Exchange Books OnLine
 
+{% raw %}
+
 	Article: Q150866
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/150/Q150866/
 	
 	=============================================================================
 	
+
+{% endraw %}

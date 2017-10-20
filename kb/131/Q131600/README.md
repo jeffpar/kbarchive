@@ -6,6 +6,8 @@ permalink: /kb/131/Q131600/
 
 ## Q131600: How to Customize RightClick Behavior
 
+{% raw %}
+
 	Article: Q131600
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -101,3 +103,5 @@ permalink: /kb/131/Q131600/
 	
 	=============================================================================
 	
+
+{% endraw %}

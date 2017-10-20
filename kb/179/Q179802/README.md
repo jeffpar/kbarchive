@@ -6,6 +6,8 @@ permalink: /kb/179/Q179802/
 
 ## Q179802: XCLN: Error Msg: Application Error, Call to Undefined Dynalink
 
+{% raw %}
+
 	Article: Q179802
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,8.0
@@ -69,3 +71,5 @@ permalink: /kb/179/Q179802/
 	
 	=============================================================================
 	
+
+{% endraw %}

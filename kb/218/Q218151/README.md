@@ -6,6 +6,8 @@ permalink: /kb/218/Q218151/
 
 ## Q218151: SBS: Network Installation Is Not Available for SBS 4.5 Server
 
+{% raw %}
+
 	Article: Q218151
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -53,3 +55,5 @@ permalink: /kb/218/Q218151/
 	
 	=============================================================================
 	
+
+{% endraw %}

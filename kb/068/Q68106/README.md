@@ -6,6 +6,8 @@ permalink: /kb/068/Q68106/
 
 ## Q68106: Quattro Pro 2.0 Graphics Mode Needs /Y Switch
 
+{% raw %}
+
 	Article: Q68106
 	Product(s): See article
 	Version(s): 1.00
@@ -22,3 +24,5 @@ permalink: /kb/068/Q68106/
 	earlier version 6.24b mouse driver will work in any mode of Quattro
 	Pro 2.0. Borland recommends that you should not use a Microsoft Mouse
 	driver earlier than version 6.10.
+
+{% endraw %}

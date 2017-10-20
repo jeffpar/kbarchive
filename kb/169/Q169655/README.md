@@ -6,6 +6,8 @@ permalink: /kb/169/Q169655/
 
 ## Q169655: XCLN: Netscape Messenger Recognizes Only Its Own Priority Values
 
+{% raw %}
+
 	Article: Q169655
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5; Win95:5.5
@@ -49,3 +51,5 @@ permalink: /kb/169/Q169655/
 	
 	=============================================================================
 	
+
+{% endraw %}

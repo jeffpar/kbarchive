@@ -6,6 +6,8 @@ permalink: /kb/255/Q255890/
 
 ## Q255890: PRB: DCOM Client Hangs When You Pass Callback Interface Pointer
 
+{% raw %}
+
 	Article: Q255890
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0; winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/255/Q255890/
 	
 	=============================================================================
 	
+
+{% endraw %}

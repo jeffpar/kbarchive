@@ -6,6 +6,8 @@ permalink: /kb/192/Q192118/
 
 ## Q192118: HOWTO: Use HTML Help Text Popup Windows in VBasic Program
 
+{% raw %}
+
 	Article: Q192118
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.1,1.3,5.0
@@ -185,3 +187,5 @@ permalink: /kb/192/Q192118/
 	
 	=============================================================================
 	
+
+{% endraw %}

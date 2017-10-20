@@ -6,6 +6,8 @@ permalink: /kb/138/Q138567/
 
 ## Q138567: BUG: Incorrect Function Name Binding in Function Templates
 
+{% raw %}
+
 	Article: Q138567
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -98,3 +100,5 @@ permalink: /kb/138/Q138567/
 	
 	=============================================================================
 	
+
+{% endraw %}

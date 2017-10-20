@@ -6,6 +6,8 @@ permalink: /kb/121/Q121733/
 
 ## Q121733: PC Ext: Err: &#91;012&#93; This Corrupt Message Cannot Be Delivered...
 
+{% raw %}
+
 	Article: Q121733
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -92,3 +94,5 @@ permalink: /kb/121/Q121733/
 	
 	=============================================================================
 	
+
+{% endraw %}

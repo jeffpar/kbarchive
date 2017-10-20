@@ -6,6 +6,8 @@ permalink: /kb/189/Q189586/
 
 ## Q189586: XFOR: Dial-up Internet Mail Service Fails with Event 4106
 
+{% raw %}
+
 	Article: Q189586
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/189/Q189586/
 	
 	=============================================================================
 	
+
+{% endraw %}

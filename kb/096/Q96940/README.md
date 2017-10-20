@@ -6,6 +6,8 @@ permalink: /kb/096/Q96940/
 
 ## Q96940: MS-DOS 6 Upgrade Setup Err Msg: Setup Cannot Find the...
 
+{% raw %}
+
 	Article: Q96940
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -57,3 +59,5 @@ permalink: /kb/096/Q96940/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181349/
 
 ## Q181349: Applications and Icons Not Displayed in Start Menu
 
+{% raw %}
+
 	Article: Q181349
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -56,3 +58,5 @@ permalink: /kb/181/Q181349/
 	
 	=============================================================================
 	
+
+{% endraw %}

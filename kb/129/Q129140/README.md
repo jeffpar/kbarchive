@@ -6,6 +6,8 @@ permalink: /kb/129/Q129140/
 
 ## Q129140: SMTP: Gateway Hangs While Processing Message
 
+{% raw %}
+
 	Article: Q129140
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -72,3 +74,5 @@ permalink: /kb/129/Q129140/
 	
 	=============================================================================
 	
+
+{% endraw %}

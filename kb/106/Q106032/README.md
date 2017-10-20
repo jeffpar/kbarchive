@@ -6,6 +6,8 @@ permalink: /kb/106/Q106032/
 
 ## Q106032: System Requirements for FoxPro Extensions
 
+{% raw %}
+
 	Article: Q106032
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,3.0
@@ -71,3 +73,5 @@ permalink: /kb/106/Q106032/
 	
 	=============================================================================
 	
+
+{% endraw %}

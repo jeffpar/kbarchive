@@ -6,6 +6,8 @@ permalink: /kb/094/Q94775/
 
 ## Q94775: Disks Created by MS-DOS 6 Upgrade Using SETUP /F
 
+{% raw %}
+
 	Article: Q94775
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -67,3 +69,5 @@ permalink: /kb/094/Q94775/
 	
 	=============================================================================
 	
+
+{% endraw %}

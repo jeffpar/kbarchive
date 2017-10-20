@@ -6,6 +6,8 @@ permalink: /kb/049/Q49322/
 
 ## Q49322: Linker Err Msg Under OS/2: L1083: Cannot Open Run File
 
+{% raw %}
+
 	Article: Q49322
 	Product(s): Microsoft Programming Utilities
 	Version(s): OS/2:5.0x,5.1x
@@ -40,3 +42,5 @@ permalink: /kb/049/Q49322/
 	
 	=============================================================================
 	
+
+{% endraw %}

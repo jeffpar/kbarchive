@@ -6,6 +6,8 @@ permalink: /kb/269/Q269814/
 
 ## Q269814: Magic School Bus: How to Troubleshoot Video Display Issues
 
+{% raw %}
+
 	Article: Q269814
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -105,3 +107,5 @@ permalink: /kb/269/Q269814/
 	
 	=============================================================================
 	
+
+{% endraw %}

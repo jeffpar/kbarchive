@@ -6,6 +6,8 @@ permalink: /kb/066/Q66648/
 
 ## Q66648: Compiler Hangs If Array of Voids Is Initialized
 
+{% raw %}
+
 	Article: Q66648
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -36,3 +38,5 @@ permalink: /kb/066/Q66648/
 	{
 	   return;
 	}
+
+{% endraw %}

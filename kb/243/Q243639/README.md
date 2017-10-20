@@ -6,6 +6,8 @@ permalink: /kb/243/Q243639/
 
 ## Q243639: Asheron's Call: Introductory Movies Are Not Played
 
+{% raw %}
+
 	Article: Q243639
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -86,3 +88,5 @@ permalink: /kb/243/Q243639/
 	
 	=============================================================================
 	
+
+{% endraw %}

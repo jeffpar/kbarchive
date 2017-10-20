@@ -6,6 +6,8 @@ permalink: /kb/073/Q73035/
 
 ## Q73035: Onboard System Memory Cache May Affect Profile Times
 
+{% raw %}
+
 	Article: Q73035
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/073/Q73035/
 	
 	=============================================================================
 	
+
+{% endraw %}

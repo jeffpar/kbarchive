@@ -6,6 +6,8 @@ permalink: /kb/142/Q142657/
 
 ## Q142657: Data Corruption on Windows NT 4.0
 
+{% raw %}
+
 	Article: Q142657
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -77,3 +79,5 @@ permalink: /kb/142/Q142657/
 	
 	=============================================================================
 	
+
+{% endraw %}

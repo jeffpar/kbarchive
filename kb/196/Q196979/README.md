@@ -6,6 +6,8 @@ permalink: /kb/196/Q196979/
 
 ## Q196979: WD97: Save As Text Converts Table to Paragraph-Delimited Text
 
+{% raw %}
+
 	Article: Q196979
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/196/Q196979/
 	
 	=============================================================================
 	
+
+{% endraw %}

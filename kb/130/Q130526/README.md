@@ -6,6 +6,8 @@ permalink: /kb/130/Q130526/
 
 ## Q130526: How to Use the ON ERROR Command and the Error Event
 
+{% raw %}
+
 	Article: Q130526
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -119,3 +121,5 @@ permalink: /kb/130/Q130526/
 	
 	=============================================================================
 	
+
+{% endraw %}

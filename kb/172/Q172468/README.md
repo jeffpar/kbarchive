@@ -6,6 +6,8 @@ permalink: /kb/172/Q172468/
 
 ## Q172468: SNA Server Print Service Doesn't Support Print Position &gt; 132
 
+{% raw %}
+
 	Article: Q172468
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -71,3 +73,5 @@ permalink: /kb/172/Q172468/
 	
 	=============================================================================
 	
+
+{% endraw %}

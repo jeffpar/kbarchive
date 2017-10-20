@@ -6,6 +6,8 @@ permalink: /kb/074/Q74202/
 
 ## Q74202: Contents of the MS-DOS 5.x and 6.x Upgrade Uninstall Disk
 
+{% raw %}
+
 	Article: Q74202
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -85,3 +87,5 @@ permalink: /kb/074/Q74202/
 	
 	=============================================================================
 	
+
+{% endraw %}

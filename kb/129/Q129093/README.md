@@ -6,6 +6,8 @@ permalink: /kb/129/Q129093/
 
 ## Q129093: Using Favorite Places to Insert Shortcuts in Messages
 
+{% raw %}
+
 	Article: Q129093
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -52,3 +54,5 @@ permalink: /kb/129/Q129093/
 	
 	=============================================================================
 	
+
+{% endraw %}

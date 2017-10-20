@@ -6,6 +6,8 @@ permalink: /kb/160/Q160045/
 
 ## Q160045: Kids Plus!: Talk It! Is Uncensored
 
+{% raw %}
+
 	Article: Q160045
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -48,3 +50,5 @@ permalink: /kb/160/Q160045/
 	
 	=============================================================================
 	
+
+{% endraw %}

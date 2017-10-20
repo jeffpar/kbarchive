@@ -6,6 +6,8 @@ permalink: /kb/184/Q184235/
 
 ## Q184235: PRB: LNK2005 Errors on New and Delete When Defining _ATL_MIN_CRT
 
+{% raw %}
+
 	Article: Q184235
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -101,3 +103,5 @@ permalink: /kb/184/Q184235/
 	
 	=============================================================================
 	
+
+{% endraw %}

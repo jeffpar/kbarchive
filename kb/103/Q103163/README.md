@@ -6,6 +6,8 @@ permalink: /kb/103/Q103163/
 
 ## Q103163: PC Win: Microsoft Word Send Option Sends Icon or Text
 
+{% raw %}
+
 	Article: Q103163
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -56,3 +58,5 @@ permalink: /kb/103/Q103163/
 	
 	=============================================================================
 	
+
+{% endraw %}

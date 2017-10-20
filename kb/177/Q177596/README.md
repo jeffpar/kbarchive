@@ -6,6 +6,8 @@ permalink: /kb/177/Q177596/
 
 ## Q177596: MarkVision TCP/IP Auto-Discovery for Windows 95 and Windows NT
 
+{% raw %}
+
 	Article: Q177596
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT:4.0;Windows:95
@@ -73,3 +75,5 @@ permalink: /kb/177/Q177596/
 	
 	=============================================================================
 	
+
+{% endraw %}

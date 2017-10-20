@@ -6,6 +6,8 @@ permalink: /kb/152/Q152926/
 
 ## Q152926: XADM: Exchange IS Error 1025
 
+{% raw %}
+
 	Article: Q152926
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/152/Q152926/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/220/Q220157/
 
 ## Q220157: PRB: GETPRINTER()  Behaves Differently Based on Machine's OS
 
+{% raw %}
+
 	Article: Q220157
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -84,3 +86,5 @@ permalink: /kb/220/Q220157/
 	
 	=============================================================================
 	
+
+{% endraw %}

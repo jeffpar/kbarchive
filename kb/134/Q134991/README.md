@@ -6,6 +6,8 @@ permalink: /kb/134/Q134991/
 
 ## Q134991: Unable to Run Windows NT Administrative Tools in SMS Admin UI
 
+{% raw %}
+
 	Article: Q134991
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -58,3 +60,5 @@ permalink: /kb/134/Q134991/
 	
 	=============================================================================
 	
+
+{% endraw %}

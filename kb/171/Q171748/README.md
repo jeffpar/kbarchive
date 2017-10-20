@@ -6,6 +6,8 @@ permalink: /kb/171/Q171748/
 
 ## Q171748: Back Office Resource Kit Eximwiz Utility Update
 
+{% raw %}
+
 	Article: Q171748
 	Product(s): Microsoft Press
 	Version(s): 
@@ -127,3 +129,5 @@ permalink: /kb/171/Q171748/
 	
 	=============================================================================
 	
+
+{% endraw %}

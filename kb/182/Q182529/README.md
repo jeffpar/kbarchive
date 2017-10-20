@@ -6,6 +6,8 @@ permalink: /kb/182/Q182529/
 
 ## Q182529: Controlling Message Size Traced in SNA Server Message Traces
 
+{% raw %}
+
 	Article: Q182529
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -108,3 +110,5 @@ permalink: /kb/182/Q182529/
 	
 	=============================================================================
 	
+
+{% endraw %}

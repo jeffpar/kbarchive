@@ -6,6 +6,8 @@ permalink: /kb/201/Q201177/
 
 ## Q201177: INFO: Visual Studio Macros for MFC and ATL Source Code
 
+{% raw %}
+
 	Article: Q201177
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,5.0,6.0
@@ -119,3 +121,5 @@ permalink: /kb/201/Q201177/
 	
 	=============================================================================
 	
+
+{% endraw %}

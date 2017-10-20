@@ -6,6 +6,8 @@ permalink: /kb/245/Q245699/
 
 ## Q245699: Cannot Save RRAS Configuration After Upgrading to Service Pack 6
 
+{% raw %}
+
 	Article: Q245699
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP6
@@ -84,3 +86,5 @@ permalink: /kb/245/Q245699/
 	
 	=============================================================================
 	
+
+{% endraw %}

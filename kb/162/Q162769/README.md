@@ -6,6 +6,8 @@ permalink: /kb/162/Q162769/
 
 ## Q162769: Wrong CNAME RR Causes DNS Startup and Zone Transfer Failure
 
+{% raw %}
+
 	Article: Q162769
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -88,3 +90,5 @@ permalink: /kb/162/Q162769/
 	
 	=============================================================================
 	
+
+{% endraw %}

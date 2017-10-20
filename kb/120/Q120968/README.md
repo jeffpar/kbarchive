@@ -6,6 +6,8 @@ permalink: /kb/120/Q120968/
 
 ## Q120968: BUG: Limitation w/ Disabling Warnings Above 4699 w/ #pragma
 
+{% raw %}
+
 	Article: Q120968
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,4.0,4.1,4.2,5.0,6.0
@@ -97,3 +99,5 @@ permalink: /kb/120/Q120968/
 	
 	=============================================================================
 	
+
+{% endraw %}

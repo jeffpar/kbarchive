@@ -6,6 +6,8 @@ permalink: /kb/129/Q129643/
 
 ## Q129643: How Transaction Processing Interacts with TableUpdate
 
+{% raw %}
+
 	Article: Q129643
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -133,3 +135,5 @@ permalink: /kb/129/Q129643/
 	
 	=============================================================================
 	
+
+{% endraw %}

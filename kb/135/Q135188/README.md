@@ -6,6 +6,8 @@ permalink: /kb/135/Q135188/
 
 ## Q135188: Page Fault When Setup Detects Future Domain SCSI Controller
 
+{% raw %}
+
 	Article: Q135188
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/135/Q135188/
 	
 	=============================================================================
 	
+
+{% endraw %}

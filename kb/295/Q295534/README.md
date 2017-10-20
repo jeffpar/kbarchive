@@ -6,6 +6,8 @@ permalink: /kb/295/Q295534/
 
 ## Q295534: Superfluous Decoding Operation Can Allow Command Execution
 
+{% raw %}
+
 	Article: Q295534
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -265,3 +267,5 @@ permalink: /kb/295/Q295534/
 	
 	=============================================================================
 	
+
+{% endraw %}

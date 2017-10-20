@@ -6,6 +6,8 @@ permalink: /kb/092/Q92989/
 
 ## Q92989: Persistent Connections May Not Work with Real Mode Redirector
 
+{% raw %}
+
 	Article: Q92989
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/092/Q92989/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148812/
 
 ## Q148812: HOWTO: Configure Visual SourceSafe Explorer to Use System Font
 
+{% raw %}
+
 	Article: Q148812
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0,6.0
@@ -62,3 +64,5 @@ permalink: /kb/148/Q148812/
 	
 	=============================================================================
 	
+
+{% endraw %}

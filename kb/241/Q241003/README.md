@@ -6,6 +6,8 @@ permalink: /kb/241/Q241003/
 
 ## Q241003: Microsoft Works Suite 2000 Step by Step Comments and Corrections
 
+{% raw %}
+
 	Article: Q241003
 	Product(s): Microsoft Press
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/241/Q241003/
 	
 	=============================================================================
 	
+
+{% endraw %}

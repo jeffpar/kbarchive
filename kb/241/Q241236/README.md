@@ -6,6 +6,8 @@ permalink: /kb/241/Q241236/
 
 ## Q241236: Running Microsoft Office 2000 Indexes Contain Errors
 
+{% raw %}
+
 	Article: Q241236
 	Product(s): Microsoft Press
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/241/Q241236/
 	
 	=============================================================================
 	
+
+{% endraw %}

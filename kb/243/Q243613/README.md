@@ -6,6 +6,8 @@ permalink: /kb/243/Q243613/
 
 ## Q243613: Unable to access AOL with MSN
 
+{% raw %}
+
 	Article: Q243613
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:5.0
@@ -61,3 +63,5 @@ permalink: /kb/243/Q243613/
 	
 	=============================================================================
 	
+
+{% endraw %}

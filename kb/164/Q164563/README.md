@@ -6,6 +6,8 @@ permalink: /kb/164/Q164563/
 
 ## Q164563: SMS: BIOS Manufacturer Field Is Limited to 25 Characters
 
+{% raw %}
+
 	Article: Q164563
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -49,3 +51,5 @@ permalink: /kb/164/Q164563/
 	
 	=============================================================================
 	
+
+{% endraw %}

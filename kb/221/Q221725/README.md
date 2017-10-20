@@ -6,6 +6,8 @@ permalink: /kb/221/Q221725/
 
 ## Q221725: FIX: DATE() Function Does Not Propagate NULLs Properly
 
+{% raw %}
+
 	Article: Q221725
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -79,3 +81,5 @@ permalink: /kb/221/Q221725/
 	
 	=============================================================================
 	
+
+{% endraw %}

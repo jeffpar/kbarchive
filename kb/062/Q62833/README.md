@@ -6,6 +6,8 @@ permalink: /kb/062/Q62833/
 
 ## Q62833: No Array Bounds Checking for Arrays in TYPEs in BC 7.00 .EXE
 
+{% raw %}
+
 	Article: Q62833
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -49,3 +51,5 @@ permalink: /kb/062/Q62833/
 	   DIM aVar as aType
 	
 	   aVar.Array(1000) = 1000   '1000 as a subscript is out of range
+
+{% endraw %}

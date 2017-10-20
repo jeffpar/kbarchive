@@ -6,6 +6,8 @@ permalink: /kb/193/Q193174/
 
 ## Q193174: PRB: Filename Must Contain Text Error Msg When Packaging Project
 
+{% raw %}
+
 	Article: Q193174
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -110,3 +112,5 @@ permalink: /kb/193/Q193174/
 	
 	=============================================================================
 	
+
+{% endraw %}

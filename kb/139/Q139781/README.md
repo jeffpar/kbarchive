@@ -6,6 +6,8 @@ permalink: /kb/139/Q139781/
 
 ## Q139781: PRB: Converted Trans.scx 2.x Sample Must Be Modified to Work
 
+{% raw %}
+
 	Article: Q139781
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -135,3 +137,5 @@ permalink: /kb/139/Q139781/
 	
 	=============================================================================
 	
+
+{% endraw %}

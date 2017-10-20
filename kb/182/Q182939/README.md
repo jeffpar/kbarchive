@@ -6,6 +6,8 @@ permalink: /kb/182/Q182939/
 
 ## Q182939: ODE97: Name &amp; Product ID Are Incorrect After Install of ODE App
 
+{% raw %}
+
 	Article: Q182939
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:97
@@ -191,3 +193,5 @@ permalink: /kb/182/Q182939/
 	
 	=============================================================================
 	
+
+{% endraw %}

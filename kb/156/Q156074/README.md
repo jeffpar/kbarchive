@@ -6,6 +6,8 @@ permalink: /kb/156/Q156074/
 
 ## Q156074: XCON: &quot;Ordinal 136&quot; Error Occurs When Starting the MTA
 
+{% raw %}
+
 	Article: Q156074
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:97; winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/156/Q156074/
 	
 	=============================================================================
 	
+
+{% endraw %}

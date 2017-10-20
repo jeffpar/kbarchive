@@ -6,6 +6,8 @@ permalink: /kb/133/Q133353/
 
 ## Q133353: FAQs about E-mail on The Microsoft Network
 
+{% raw %}
+
 	Article: Q133353
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.6,5.0,5.1
@@ -184,3 +186,5 @@ permalink: /kb/133/Q133353/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150758/
 
 ## Q150758: Installing MSN 1.3 Downgrades Access Number Phone Book
 
+{% raw %}
+
 	Article: Q150758
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3
@@ -35,3 +37,5 @@ permalink: /kb/150/Q150758/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164739/
 
 ## Q164739: BUG: &quot;Invalid Coordinates&quot; Error Message Received when Sending @
 
+{% raw %}
+
 	Article: Q164739
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -124,3 +126,5 @@ permalink: /kb/164/Q164739/
 	
 	=============================================================================
 	
+
+{% endraw %}

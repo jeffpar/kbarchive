@@ -6,6 +6,8 @@ permalink: /kb/041/Q41217/
 
 ## Q41217: Alleged Problems with Listing Options (/Fc, /Fl, /Fa)
 
+{% raw %}
+
 	Article: Q41217
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -32,3 +34,5 @@ permalink: /kb/041/Q41217/
 	If you find a case in which the listing is different from the
 	generated code when both are compiled with EXACTLY the same options,
 	please report the problem to Microsoft.
+
+{% endraw %}

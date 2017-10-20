@@ -6,6 +6,8 @@ permalink: /kb/261/Q261077/
 
 ## Q261077: Motocross Madness 2: Ground Textures in the Game Are Distorted
 
+{% raw %}
+
 	Article: Q261077
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -84,3 +86,5 @@ permalink: /kb/261/Q261077/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/256/Q256211/
 
 ## Q256211: SMS: Smsapm32.exe Does Not Stop When Client Agent Is Upgraded
 
+{% raw %}
+
 	Article: Q256211
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -80,3 +82,5 @@ permalink: /kb/256/Q256211/
 	
 	=============================================================================
 	
+
+{% endraw %}

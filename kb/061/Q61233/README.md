@@ -6,6 +6,8 @@ permalink: /kb/061/Q61233/
 
 ## Q61233: C 6.00 README: Getting Help on Start-Up Error Messages
 
+{% raw %}
+
 	Article: Q61233
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -40,3 +42,5 @@ permalink: /kb/061/Q61233/
 	"Errors Help" from the Microsoft Advisor Contents screen in PWB. (The
 	Microsoft Advisor Contents screen appears when you choose "Contents"
 	from the Help menu in PWB.)
+
+{% endraw %}

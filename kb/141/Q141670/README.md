@@ -6,6 +6,8 @@ permalink: /kb/141/Q141670/
 
 ## Q141670: FIX: Profiling May Fail If Install Dir Contains Long File Name
 
+{% raw %}
+
 	Article: Q141670
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00
@@ -66,3 +68,5 @@ permalink: /kb/141/Q141670/
 	
 	=============================================================================
 	
+
+{% endraw %}

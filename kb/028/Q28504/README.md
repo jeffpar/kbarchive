@@ -6,6 +6,8 @@ permalink: /kb/028/Q28504/
 
 ## Q28504: STB VGA Extra Using Mouse
 
+{% raw %}
+
 	Article: Q28504
 	Product(s): See article
 	Version(s): 1.00
@@ -15,3 +17,5 @@ permalink: /kb/028/Q28504/
 	
 	STB requests that callers having problems with the mouse and VGA Extra
 	(unspecified symptoms) contact STB at (214) 234-8750.
+
+{% endraw %}

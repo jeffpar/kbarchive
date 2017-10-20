@@ -6,6 +6,8 @@ permalink: /kb/118/Q118539/
 
 ## Q118539: Windows 95 Err Msg: This Application Has Performed an Illegal...
 
+{% raw %}
+
 	Article: Q118539
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/118/Q118539/
 	
 	=============================================================================
 	
+
+{% endraw %}

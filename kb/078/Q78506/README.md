@@ -6,6 +6,8 @@ permalink: /kb/078/Q78506/
 
 ## Q78506: Additional EMM386.EXE Include Ranges with AMI BIOS
 
+{% raw %}
+
 	Article: Q78506
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a
@@ -58,3 +60,5 @@ permalink: /kb/078/Q78506/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134671/
 
 ## Q134671: PC Gen: 3.5 Mail for PC Networks Technical Reference Disk &#91;3.5&#93;
 
+{% raw %}
+
 	Article: Q134671
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -184,3 +186,5 @@ permalink: /kb/134/Q134671/
 	
 	=============================================================================
 	
+
+{% endraw %}

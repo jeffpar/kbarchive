@@ -6,6 +6,8 @@ permalink: /kb/185/Q185028/
 
 ## Q185028: XGEN: WWW Location of Microsoft Exchange Server Resource Kit
 
+{% raw %}
+
 	Article: Q185028
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -161,3 +163,5 @@ permalink: /kb/185/Q185028/
 	
 	=============================================================================
 	
+
+{% endraw %}

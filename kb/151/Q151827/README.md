@@ -6,6 +6,8 @@ permalink: /kb/151/Q151827/
 
 ## Q151827: BUG: Mastering VC++: Print Topic Doesn't Print Topic Title
 
+{% raw %}
+
 	Article: Q151827
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0,1.0a
@@ -47,3 +49,5 @@ permalink: /kb/151/Q151827/
 	
 	=============================================================================
 	
+
+{% endraw %}

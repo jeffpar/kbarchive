@@ -6,6 +6,8 @@ permalink: /kb/135/Q135893/
 
 ## Q135893: Windows 95 Tips.txt File Contents
 
+{% raw %}
+
 	Article: Q135893
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -785,3 +787,5 @@ permalink: /kb/135/Q135893/
 	
 	=============================================================================
 	
+
+{% endraw %}

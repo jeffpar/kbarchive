@@ -6,6 +6,8 @@ permalink: /kb/082/Q82479/
 
 ## Q82479: PostScript Italics Simulation Doesn't Print Italics
 
+{% raw %}
+
 	Article: Q82479
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -42,3 +44,5 @@ permalink: /kb/082/Q82479/
 	
 	=============================================================================
 	
+
+{% endraw %}

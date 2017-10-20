@@ -6,6 +6,8 @@ permalink: /kb/241/Q241888/
 
 ## Q241888: Unable to Obtain DHCP Lease When Using a Cable Modem
 
+{% raw %}
+
 	Article: Q241888
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/241/Q241888/
 	
 	=============================================================================
 	
+
+{% endraw %}

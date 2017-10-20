@@ -6,6 +6,8 @@ permalink: /kb/109/Q109847/
 
 ## Q109847: ScanDisk Err Msg: Directory Tree on This Drive Too Deep...
 
+{% raw %}
+
 	Article: Q109847
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -69,3 +71,5 @@ permalink: /kb/109/Q109847/
 	
 	=============================================================================
 	
+
+{% endraw %}

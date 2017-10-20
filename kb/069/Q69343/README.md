@@ -6,6 +6,8 @@ permalink: /kb/069/Q69343/
 
 ## Q69343: ISAMCVT Btrieve Specfiles Cannot Have Spaces; Must Use Commas
 
+{% raw %}
+
 	Article: Q69343
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -71,3 +73,5 @@ permalink: /kb/069/Q69343/
 	
 	Microsoft QuickBASIC
 	=============================================================================
+
+{% endraw %}

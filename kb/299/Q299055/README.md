@@ -6,6 +6,8 @@ permalink: /kb/299/Q299055/
 
 ## Q299055: OFFXP: Help Does Not Work After MapPoint Is Uninstalled
 
+{% raw %}
+
 	Article: Q299055
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/299/Q299055/
 	
 	=============================================================================
 	
+
+{% endraw %}

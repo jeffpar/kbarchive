@@ -6,6 +6,8 @@ permalink: /kb/264/Q264985/
 
 ## Q264985: BUG: C4305 &amp; C4800, When VARIANT&#42; Used as a Parameter to Event
 
+{% raw %}
+
 	Article: Q264985
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -176,3 +178,5 @@ permalink: /kb/264/Q264985/
 	
 	=============================================================================
 	
+
+{% endraw %}

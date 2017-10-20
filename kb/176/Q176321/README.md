@@ -6,6 +6,8 @@ permalink: /kb/176/Q176321/
 
 ## Q176321: Unable to Resolve NetBIOS Names Through PPTP Connection
 
+{% raw %}
+
 	Article: Q176321
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -117,3 +119,5 @@ permalink: /kb/176/Q176321/
 	
 	=============================================================================
 	
+
+{% endraw %}

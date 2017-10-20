@@ -6,6 +6,8 @@ permalink: /kb/190/Q190055/
 
 ## Q190055: Baseball 3D: How to Use General Manager
 
+{% raw %}
+
 	Article: Q190055
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -98,3 +100,5 @@ permalink: /kb/190/Q190055/
 	
 	=============================================================================
 	
+
+{% endraw %}

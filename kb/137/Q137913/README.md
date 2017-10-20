@@ -6,6 +6,8 @@ permalink: /kb/137/Q137913/
 
 ## Q137913: Problems Printing to PCPI Laser Image 1030 Printer
 
+{% raw %}
+
 	Article: Q137913
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -48,3 +50,5 @@ permalink: /kb/137/Q137913/
 	
 	=============================================================================
 	
+
+{% endraw %}

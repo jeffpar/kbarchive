@@ -6,6 +6,8 @@ permalink: /kb/164/Q164086/
 
 ## Q164086: Err Msg: http/1.0 500 server error (-2146893048) with Proxy
 
+{% raw %}
+
 	Article: Q164086
 	Product(s): Internet Information Server
 	Version(s): WINNT: 1.0
@@ -86,3 +88,5 @@ permalink: /kb/164/Q164086/
 	
 	=============================================================================
 	
+
+{% endraw %}

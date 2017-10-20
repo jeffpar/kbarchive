@@ -6,6 +6,8 @@ permalink: /kb/105/Q105154/
 
 ## Q105154: How AppleTalk Routers Function in Internet Communications
 
+{% raw %}
+
 	Article: Q105154
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/105/Q105154/
 	
 	=============================================================================
 	
+
+{% endraw %}

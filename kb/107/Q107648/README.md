@@ -6,6 +6,8 @@ permalink: /kb/107/Q107648/
 
 ## Q107648: Using Novell's ODINSUP with VLM.EXE and WFWG 3.11
 
+{% raw %}
+
 	Article: Q107648
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.11
@@ -345,3 +347,5 @@ permalink: /kb/107/Q107648/
 	
 	=============================================================================
 	
+
+{% endraw %}

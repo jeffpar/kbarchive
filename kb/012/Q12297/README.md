@@ -6,6 +6,8 @@ permalink: /kb/012/Q12297/
 
 ## Q12297: PRB: Rounding Error Casting Double to Long
 
+{% raw %}
+
 	Article: Q12297
 	Product(s): Microsoft Programming Utilities
 	Version(s): 5.1,6.0,6.0a,6.0ax; MS-DOS:7.0; WINDOWS:1.0,1.5,1.51,1.52
@@ -113,3 +115,5 @@ permalink: /kb/012/Q12297/
 	
 	=============================================================================
 	
+
+{% endraw %}

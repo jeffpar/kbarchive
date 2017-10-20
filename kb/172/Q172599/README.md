@@ -6,6 +6,8 @@ permalink: /kb/172/Q172599/
 
 ## Q172599: Rmtshare.exe Does Not Work with Numeric Usernames
 
+{% raw %}
+
 	Article: Q172599
 	Product(s): Microsoft Press
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/172/Q172599/
 	
 	=============================================================================
 	
+
+{% endraw %}

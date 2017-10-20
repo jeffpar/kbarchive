@@ -6,6 +6,8 @@ permalink: /kb/259/Q259525/
 
 ## Q259525: XFOR: Required .csv Entries for Migration from IMAP to Exchange
 
+{% raw %}
+
 	Article: Q259525
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -61,3 +63,5 @@ permalink: /kb/259/Q259525/
 	
 	=============================================================================
 	
+
+{% endraw %}

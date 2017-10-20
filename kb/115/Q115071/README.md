@@ -6,6 +6,8 @@ permalink: /kb/115/Q115071/
 
 ## Q115071: Creative Writer 1: Difficulty Printing Card to HP DeskJet
 
+{% raw %}
+
 	Article: Q115071
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1
@@ -193,3 +195,5 @@ permalink: /kb/115/Q115071/
 	
 	=============================================================================
 	
+
+{% endraw %}

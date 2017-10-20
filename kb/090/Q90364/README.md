@@ -6,6 +6,8 @@ permalink: /kb/090/Q90364/
 
 ## Q90364: PPT: Omit Master Disables Number, Date, Time Features
 
+{% raw %}
+
 	Article: Q90364
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:3.0,4.0; WINDOWS:3.0,4.0,7.0,97
@@ -87,3 +89,5 @@ permalink: /kb/090/Q90364/
 	
 	=============================================================================
 	
+
+{% endraw %}

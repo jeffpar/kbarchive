@@ -6,6 +6,8 @@ permalink: /kb/132/Q132954/
 
 ## Q132954: Mac Srv: How to Get Mail Version Information
 
+{% raw %}
+
 	Article: Q132954
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -57,3 +59,5 @@ permalink: /kb/132/Q132954/
 	
 	=============================================================================
 	
+
+{% endraw %}

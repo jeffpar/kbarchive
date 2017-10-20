@@ -6,6 +6,8 @@ permalink: /kb/131/Q131614/
 
 ## Q131614: Propagating MIF Entry Forms (XNF files) to SMS Clients
 
+{% raw %}
+
 	Article: Q131614
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -103,3 +105,5 @@ permalink: /kb/131/Q131614/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/050/Q50705/
 
 ## Q50705: DOCERR: L4011, L1005 Errors When /PACKCODE Value Too Large
 
+{% raw %}
+
 	Article: Q50705
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.6x,4.x,5.0x,5.1x,5.2x,5.3x,5.5,5.6; OS/2:5.0x,5.1,5.11,5.13,5.15
@@ -66,3 +68,5 @@ permalink: /kb/050/Q50705/
 	
 	=============================================================================
 	
+
+{% endraw %}

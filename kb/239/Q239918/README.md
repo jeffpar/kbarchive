@@ -6,6 +6,8 @@ permalink: /kb/239/Q239918/
 
 ## Q239918: NDIS_STATUS_RESET_END Message May Not Be Processed Correctly
 
+{% raw %}
+
 	Article: Q239918
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -92,3 +94,5 @@ permalink: /kb/239/Q239918/
 	
 	=============================================================================
 	
+
+{% endraw %}

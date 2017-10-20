@@ -6,6 +6,8 @@ permalink: /kb/179/Q179933/
 
 ## Q179933: Bookshelf 95: How to Add Define to the Word 97 Shortcut Menu
 
+{% raw %}
+
 	Article: Q179933
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/179/Q179933/
 	
 	=============================================================================
 	
+
+{% endraw %}

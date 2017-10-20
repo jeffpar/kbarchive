@@ -6,6 +6,8 @@ permalink: /kb/107/Q107669/
 
 ## Q107669: Writer: Speller Does Not Spell Check Document
 
+{% raw %}
+
 	Article: Q107669
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
@@ -81,3 +83,5 @@ permalink: /kb/107/Q107669/
 	
 	=============================================================================
 	
+
+{% endraw %}

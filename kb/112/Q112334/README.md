@@ -6,6 +6,8 @@ permalink: /kb/112/Q112334/
 
 ## Q112334: Hollerith Constants in Argument Lists
 
+{% raw %}
+
 	Article: Q112334
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a,4.0
@@ -115,3 +117,5 @@ permalink: /kb/112/Q112334/
 	
 	=============================================================================
 	
+
+{% endraw %}

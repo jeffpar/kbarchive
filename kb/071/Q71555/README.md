@@ -6,6 +6,8 @@ permalink: /kb/071/Q71555/
 
 ## Q71555: Paintbrush: Insufficient Memory and Disk Error Messages
 
+{% raw %}
+
 	Article: Q71555
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/071/Q71555/
 	
 	=============================================================================
 	
+
+{% endraw %}

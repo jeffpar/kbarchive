@@ -6,6 +6,8 @@ permalink: /kb/173/Q173493/
 
 ## Q173493: Loss of Performance or Functionality in Microsoft Exchange
 
+{% raw %}
+
 	Article: Q173493
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -97,3 +99,5 @@ permalink: /kb/173/Q173493/
 	
 	=============================================================================
 	
+
+{% endraw %}

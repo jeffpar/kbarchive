@@ -6,6 +6,8 @@ permalink: /kb/235/Q235347/
 
 ## Q235347: WD97: Styles and AutoText Not Copied to New Template
 
+{% raw %}
+
 	Article: Q235347
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -95,3 +97,5 @@ permalink: /kb/235/Q235347/
 	
 	=============================================================================
 	
+
+{% endraw %}

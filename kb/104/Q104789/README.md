@@ -6,6 +6,8 @@ permalink: /kb/104/Q104789/
 
 ## Q104789: DOC: WM_TIMER Case on Page 94 of Guide to Programming
 
+{% raw %}
+
 	Article: Q104789
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -52,3 +54,5 @@ permalink: /kb/104/Q104789/
 	
 	=============================================================================
 	
+
+{% endraw %}

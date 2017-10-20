@@ -6,6 +6,8 @@ permalink: /kb/066/Q66432/
 
 ## Q66432: &quot;QC Is Already Running&quot; Message Appears
 
+{% raw %}
+
 	Article: Q66432
 	Product(s): See article
 	Version(s): 2.50 2.00
@@ -43,3 +45,5 @@ permalink: /kb/066/Q66432/
 	
 	The solution to this problem is to delete the QC.LCK file; it is
 	placed in the BIN subdirectory.
+
+{% endraw %}

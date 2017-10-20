@@ -6,6 +6,8 @@ permalink: /kb/325/Q325782/
 
 ## Q325782: HIS MMC Does Not Close After You Run Host Security Domain Wizard
 
+{% raw %}
+
 	Article: Q325782
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/325/Q325782/
 	
 	=============================================================================
 	
+
+{% endraw %}

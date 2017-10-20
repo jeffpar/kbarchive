@@ -6,6 +6,8 @@ permalink: /kb/142/Q142242/
 
 ## Q142242: DOC: Create SQL View Incorrectly Documented
 
+{% raw %}
+
 	Article: Q142242
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -107,3 +109,5 @@ permalink: /kb/142/Q142242/
 	
 	=============================================================================
 	
+
+{% endraw %}

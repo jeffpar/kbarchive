@@ -6,6 +6,8 @@ permalink: /kb/124/Q124183/
 
 ## Q124183: ADT2: Setup Wizard Templates Are Lost Installing Service Pack
 
+{% raw %}
+
 	Article: Q124183
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -94,3 +96,5 @@ permalink: /kb/124/Q124183/
 	
 	=============================================================================
 	
+
+{% endraw %}

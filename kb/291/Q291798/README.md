@@ -6,6 +6,8 @@ permalink: /kb/291/Q291798/
 
 ## Q291798: Performance Loss When Termsrv.exe Uses Registry Keys
 
+{% raw %}
+
 	Article: Q291798
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6
@@ -89,3 +91,5 @@ permalink: /kb/291/Q291798/
 	
 	=============================================================================
 	
+
+{% endraw %}

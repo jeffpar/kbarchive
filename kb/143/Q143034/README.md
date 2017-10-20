@@ -6,6 +6,8 @@ permalink: /kb/143/Q143034/
 
 ## Q143034: How To Use GetRows to Pass Recordset Data Back from OLE Server
 
+{% raw %}
+
 	Article: Q143034
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -319,3 +321,5 @@ permalink: /kb/143/Q143034/
 	
 	=============================================================================
 	
+
+{% endraw %}

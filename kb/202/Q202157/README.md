@@ -6,6 +6,8 @@ permalink: /kb/202/Q202157/
 
 ## Q202157: FP98: Unable to Create CGI-BIN Folder When Publishing Web
 
+{% raw %}
+
 	Article: Q202157
 	Product(s): Word Front Page
 	Version(s): WINDOWS:
@@ -54,3 +56,5 @@ permalink: /kb/202/Q202157/
 	
 	=============================================================================
 	
+
+{% endraw %}

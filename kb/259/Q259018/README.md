@@ -6,6 +6,8 @@ permalink: /kb/259/Q259018/
 
 ## Q259018: GetNextTimedEvent Halts and Does Not Allow Background Tasks to R
 
+{% raw %}
+
 	Article: Q259018
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -79,3 +81,5 @@ permalink: /kb/259/Q259018/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191636/
 
 ## Q191636: FIX: Access Violation or Page Fault with Multiple Toolbars
 
+{% raw %}
+
 	Article: Q191636
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -89,3 +91,5 @@ permalink: /kb/191/Q191636/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/027/Q27558/
 
 ## Q27558: FIX: Protection Violation, Application Error, From COMMON Name
 
+{% raw %}
+
 	Article: Q27558
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.1,5.0,5.1
@@ -76,3 +78,5 @@ permalink: /kb/027/Q27558/
 	
 	=============================================================================
 	
+
+{% endraw %}

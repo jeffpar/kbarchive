@@ -6,6 +6,8 @@ permalink: /kb/175/Q175129/
 
 ## Q175129: XADM: Wrong OFL Deleted in Forms Administrator
 
+{% raw %}
+
 	Article: Q175129
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -72,3 +74,5 @@ permalink: /kb/175/Q175129/
 	
 	=============================================================================
 	
+
+{% endraw %}

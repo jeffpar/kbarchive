@@ -6,6 +6,8 @@ permalink: /kb/295/Q295592/
 
 ## Q295592: BUG: PDW Limits 'Add Files' String to 256 Characters
 
+{% raw %}
+
 	Article: Q295592
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -101,3 +103,5 @@ permalink: /kb/295/Q295592/
 	
 	=============================================================================
 	
+
+{% endraw %}

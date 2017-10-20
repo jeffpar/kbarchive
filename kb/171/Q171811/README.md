@@ -6,6 +6,8 @@ permalink: /kb/171/Q171811/
 
 ## Q171811: FIX: Cannot See Relationship Collection on Interface with Tab
 
+{% raw %}
+
 	Article: Q171811
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -89,3 +91,5 @@ permalink: /kb/171/Q171811/
 	
 	=============================================================================
 	
+
+{% endraw %}

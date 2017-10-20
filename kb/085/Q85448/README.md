@@ -6,6 +6,8 @@ permalink: /kb/085/Q85448/
 
 ## Q85448: Word for Windows Icon Displays When Pasting Text to Paintbrush
 
+{% raw %}
+
 	Article: Q85448
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/085/Q85448/
 	
 	=============================================================================
 	
+
+{% endraw %}

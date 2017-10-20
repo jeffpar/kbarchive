@@ -6,6 +6,8 @@ permalink: /kb/137/Q137816/
 
 ## Q137816: Formatted Disk May Show Incorrect Bad Sector Information
 
+{% raw %}
+
 	Article: Q137816
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -66,3 +68,5 @@ permalink: /kb/137/Q137816/
 	
 	=============================================================================
 	
+
+{% endraw %}

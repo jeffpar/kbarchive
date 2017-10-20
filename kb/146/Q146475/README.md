@@ -6,6 +6,8 @@ permalink: /kb/146/Q146475/
 
 ## Q146475: Vertical Line Appears in a Project Name
 
+{% raw %}
+
 	Article: Q146475
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -43,3 +45,5 @@ permalink: /kb/146/Q146475/
 	
 	=============================================================================
 	
+
+{% endraw %}

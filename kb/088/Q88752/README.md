@@ -6,6 +6,8 @@ permalink: /kb/088/Q88752/
 
 ## Q88752: Err Msg: Full API Support Was Not Loaded... IBM OS/2 LAN
 
+{% raw %}
+
 	Article: Q88752
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -116,3 +118,5 @@ permalink: /kb/088/Q88752/
 	
 	=============================================================================
 	
+
+{% endraw %}

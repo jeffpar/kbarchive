@@ -6,6 +6,8 @@ permalink: /kb/134/Q134430/
 
 ## Q134430: Mac Bkup: Mail Backup Notification Message Can Be Disabled
 
+{% raw %}
+
 	Article: Q134430
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1x
@@ -54,3 +56,5 @@ permalink: /kb/134/Q134430/
 	
 	=============================================================================
 	
+
+{% endraw %}

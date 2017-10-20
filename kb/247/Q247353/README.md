@@ -6,6 +6,8 @@ permalink: /kb/247/Q247353/
 
 ## Q247353: DLC Connections Fail to Restart after Outage
 
+{% raw %}
+
 	Article: Q247353
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 (all SP),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -100,3 +102,5 @@ permalink: /kb/247/Q247353/
 	
 	=============================================================================
 	
+
+{% endraw %}

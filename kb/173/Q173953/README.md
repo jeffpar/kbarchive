@@ -6,6 +6,8 @@ permalink: /kb/173/Q173953/
 
 ## Q173953: Frequently Asked Questions on the Internet Mail Address Book
 
+{% raw %}
+
 	Article: Q173953
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,2.0,2.5
@@ -72,3 +74,5 @@ permalink: /kb/173/Q173953/
 	
 	=============================================================================
 	
+
+{% endraw %}

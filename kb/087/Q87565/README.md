@@ -6,6 +6,8 @@ permalink: /kb/087/Q87565/
 
 ## Q87565: Windows &amp; MS-DOS 5 Upgrade Disk Set (5.25 Inch)
 
+{% raw %}
+
 	Article: Q87565
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -684,3 +686,5 @@ permalink: /kb/087/Q87565/
 	
 	=============================================================================
 	
+
+{% endraw %}

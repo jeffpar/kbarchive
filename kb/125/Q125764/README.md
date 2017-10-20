@@ -6,6 +6,8 @@ permalink: /kb/125/Q125764/
 
 ## Q125764: Writer: Edited Stickers Are Not Saved
 
+{% raw %}
+
 	Article: Q125764
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -49,3 +51,5 @@ permalink: /kb/125/Q125764/
 	
 	=============================================================================
 	
+
+{% endraw %}

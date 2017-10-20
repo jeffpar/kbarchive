@@ -6,6 +6,8 @@ permalink: /kb/160/Q160470/
 
 ## Q160470: Stop 0x0000000a IPX Sends Browser an Incomplete Datagram
 
+{% raw %}
+
 	Article: Q160470
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/160/Q160470/
 	
 	=============================================================================
 	
+
+{% endraw %}

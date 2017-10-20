@@ -6,6 +6,8 @@ permalink: /kb/185/Q185594/
 
 ## Q185594: Error Message: Access Violation in _INS0432._MP
 
+{% raw %}
+
 	Article: Q185594
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -87,3 +89,5 @@ permalink: /kb/185/Q185594/
 	
 	=============================================================================
 	
+
+{% endraw %}

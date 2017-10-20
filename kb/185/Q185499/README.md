@@ -6,6 +6,8 @@ permalink: /kb/185/Q185499/
 
 ## Q185499: XADM: Inbox Rule to Forward w/ Leave Intact Rewrites P2 Headers
 
+{% raw %}
+
 	Article: Q185499
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0 5.5
@@ -79,3 +81,5 @@ permalink: /kb/185/Q185499/
 	
 	=============================================================================
 	
+
+{% endraw %}

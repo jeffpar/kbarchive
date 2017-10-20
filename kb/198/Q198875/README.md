@@ -6,6 +6,8 @@ permalink: /kb/198/Q198875/
 
 ## Q198875: PRB: Text in Controls Are Clipped on Chinese/Korean Windows
 
+{% raw %}
+
 	Article: Q198875
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95,98
@@ -73,3 +75,5 @@ permalink: /kb/198/Q198875/
 	
 	=============================================================================
 	
+
+{% endraw %}

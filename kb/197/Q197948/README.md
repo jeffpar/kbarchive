@@ -6,6 +6,8 @@ permalink: /kb/197/Q197948/
 
 ## Q197948: HOWTO: Get Domain Information Using ADSI
 
+{% raw %}
+
 	Article: Q197948
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0; winnt:2.0,2.5
@@ -98,3 +100,5 @@ permalink: /kb/197/Q197948/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165454/
 
 ## Q165454: Error Message: Cannot Find Enable.vxd
 
+{% raw %}
+
 	Article: Q165454
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -62,3 +64,5 @@ permalink: /kb/165/Q165454/
 	
 	=============================================================================
 	
+
+{% endraw %}

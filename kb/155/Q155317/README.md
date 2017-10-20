@@ -6,6 +6,8 @@ permalink: /kb/155/Q155317/
 
 ## Q155317: INFO: File Manipulation Commands Now Support MS-DOS Wildcards
 
+{% raw %}
+
 	Article: Q155317
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -53,3 +55,5 @@ permalink: /kb/155/Q155317/
 	
 	=============================================================================
 	
+
+{% endraw %}

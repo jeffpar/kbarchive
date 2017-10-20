@@ -6,6 +6,8 @@ permalink: /kb/194/Q194339/
 
 ## Q194339: WINS Event ID 4183
 
+{% raw %}
+
 	Article: Q194339
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -94,3 +96,5 @@ permalink: /kb/194/Q194339/
 	
 	=============================================================================
 	
+
+{% endraw %}

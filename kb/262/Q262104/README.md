@@ -6,6 +6,8 @@ permalink: /kb/262/Q262104/
 
 ## Q262104: Options Are Not Sent to DHCP Clients Using DHCP Inform Packets
 
+{% raw %}
+
 	Article: Q262104
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/262/Q262104/
 	
 	=============================================================================
 	
+
+{% endraw %}

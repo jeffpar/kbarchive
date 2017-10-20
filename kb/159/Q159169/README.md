@@ -6,6 +6,8 @@ permalink: /kb/159/Q159169/
 
 ## Q159169: SMS: Quick Viewer Hotkey Causes Keyboard Problems on Client
 
+{% raw %}
+
 	Article: Q159169
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -71,3 +73,5 @@ permalink: /kb/159/Q159169/
 	
 	=============================================================================
 	
+
+{% endraw %}

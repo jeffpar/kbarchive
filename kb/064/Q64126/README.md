@@ -6,6 +6,8 @@ permalink: /kb/064/Q64126/
 
 ## Q64126: Overview of How to Share Memory Between Applications
 
+{% raw %}
+
 	Article: Q64126
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -124,3 +126,5 @@ permalink: /kb/064/Q64126/
 	
 	=============================================================================
 	
+
+{% endraw %}

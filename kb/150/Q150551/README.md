@@ -6,6 +6,8 @@ permalink: /kb/150/Q150551/
 
 ## Q150551: INFO: Duplicate Fields Naming Differs in Local and Remote View
 
+{% raw %}
+
 	Article: Q150551
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b
@@ -72,3 +74,5 @@ permalink: /kb/150/Q150551/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148927/
 
 ## Q148927: Bookshelf 96-97: Update Files on Second Drive Will Not Integra
 
+{% raw %}
+
 	Article: Q148927
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.x
@@ -50,3 +52,5 @@ permalink: /kb/148/Q148927/
 	
 	=============================================================================
 	
+
+{% endraw %}

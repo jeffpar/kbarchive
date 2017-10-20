@@ -6,6 +6,8 @@ permalink: /kb/043/Q43993/
 
 ## Q43993: How to Flush the Keyboard Typeahead Buffer
 
+{% raw %}
+
 	Article: Q43993
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,1.5,5.1,6.0,6.0a,6.0ax; MS-DOS:7.0
@@ -87,3 +89,5 @@ permalink: /kb/043/Q43993/
 	
 	=============================================================================
 	
+
+{% endraw %}

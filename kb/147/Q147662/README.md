@@ -6,6 +6,8 @@ permalink: /kb/147/Q147662/
 
 ## Q147662: Err Msg: DRVSPACE130 Your Computer Does Not Have Any...
 
+{% raw %}
+
 	Article: Q147662
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -69,3 +71,5 @@ permalink: /kb/147/Q147662/
 	
 	=============================================================================
 	
+
+{% endraw %}

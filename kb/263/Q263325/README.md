@@ -6,6 +6,8 @@ permalink: /kb/263/Q263325/
 
 ## Q263325: SMS: MMC 1.2 Requires Internet Explorer 5 or Later
 
+{% raw %}
+
 	Article: Q263325
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -60,3 +62,5 @@ permalink: /kb/263/Q263325/
 	
 	=============================================================================
 	
+
+{% endraw %}

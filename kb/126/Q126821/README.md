@@ -6,6 +6,8 @@ permalink: /kb/126/Q126821/
 
 ## Q126821: MSB Human: Hangs at Classroom or Driver's License
 
+{% raw %}
+
 	Article: Q126821
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -91,3 +93,5 @@ permalink: /kb/126/Q126821/
 	
 	=============================================================================
 	
+
+{% endraw %}

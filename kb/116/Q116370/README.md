@@ -6,6 +6,8 @@ permalink: /kb/116/Q116370/
 
 ## Q116370: BUG: EE: &quot;CXX0058: Error: Overloaded Operator Not Found&quot;
 
+{% raw %}
+
 	Article: Q116370
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.1
@@ -76,3 +78,5 @@ permalink: /kb/116/Q116370/
 	
 	=============================================================================
 	
+
+{% endraw %}

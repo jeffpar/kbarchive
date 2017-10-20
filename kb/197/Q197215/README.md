@@ -6,6 +6,8 @@ permalink: /kb/197/Q197215/
 
 ## Q197215: WD97: Including Chapter Numbers in Header/Footer But Not in Text
 
+{% raw %}
+
 	Article: Q197215
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -181,3 +183,5 @@ permalink: /kb/197/Q197215/
 	
 	=============================================================================
 	
+
+{% endraw %}

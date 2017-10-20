@@ -6,6 +6,8 @@ permalink: /kb/180/Q180298/
 
 ## Q180298: Setup of Windows NT MMTA on Windows NT 4.0 Does Not Complete
 
+{% raw %}
+
 	Article: Q180298
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -73,3 +75,5 @@ permalink: /kb/180/Q180298/
 	
 	=============================================================================
 	
+
+{% endraw %}

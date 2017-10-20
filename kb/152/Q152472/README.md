@@ -6,6 +6,8 @@ permalink: /kb/152/Q152472/
 
 ## Q152472: XADM: How to Specify a Tab or Space as Separator in .csv File
 
+{% raw %}
+
 	Article: Q152472
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -70,3 +72,5 @@ permalink: /kb/152/Q152472/
 	
 	=============================================================================
 	
+
+{% endraw %}

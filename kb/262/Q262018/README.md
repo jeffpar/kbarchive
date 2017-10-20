@@ -6,6 +6,8 @@ permalink: /kb/262/Q262018/
 
 ## Q262018: SMS: SMS Installer Error Message Using Oracle ODBC Script Items
 
+{% raw %}
+
 	Article: Q262018
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.2,2.0
@@ -74,3 +76,5 @@ permalink: /kb/262/Q262018/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/270/Q270918/
 
 ## Q270918: XADM: Event Service Delay in Processing Scripts
 
+{% raw %}
+
 	Article: Q270918
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -72,3 +74,5 @@ permalink: /kb/270/Q270918/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171537/
 
 ## Q171537: FIX: Bad Error Number Returned if Relationship Doesn't Exist
 
+{% raw %}
+
 	Article: Q171537
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97
@@ -68,3 +70,5 @@ permalink: /kb/171/Q171537/
 	
 	=============================================================================
 	
+
+{% endraw %}

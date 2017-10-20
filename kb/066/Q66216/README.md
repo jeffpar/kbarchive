@@ -6,6 +6,8 @@ permalink: /kb/066/Q66216/
 
 ## Q66216: Loop Optimizations May Generate Bad Code on Nested Loops
 
+{% raw %}
+
 	Article: Q66216
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -71,3 +73,5 @@ permalink: /kb/066/Q66216/
 	      60                             -20
 	      50                             -30
 	      40                             -40
+
+{% endraw %}

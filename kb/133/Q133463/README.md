@@ -6,6 +6,8 @@ permalink: /kb/133/Q133463/
 
 ## Q133463: Obtaining Localized Versions of Microsoft Multimedia Programs
 
+{% raw %}
+
 	Article: Q133463
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -178,3 +180,5 @@ permalink: /kb/133/Q133463/
 	
 	=============================================================================
 	
+
+{% endraw %}

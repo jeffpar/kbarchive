@@ -6,6 +6,8 @@ permalink: /kb/153/Q153200/
 
 ## Q153200: How To Determine Whether a Number is Prime
 
+{% raw %}
+
 	Article: Q153200
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,2.6a; MS-DOS:2.0,2.5,2.5a,2.5b,2.6,2.6a; UNIX:2.6; WINDOWS:3.0,3.0b
@@ -64,3 +66,5 @@ permalink: /kb/153/Q153200/
 	
 	=============================================================================
 	
+
+{% endraw %}

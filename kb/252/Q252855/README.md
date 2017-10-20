@@ -6,6 +6,8 @@ permalink: /kb/252/Q252855/
 
 ## Q252855: SMS: 16-Bit SMS Installer May Not Recognize the 0x5c Character
 
+{% raw %}
+
 	Article: Q252855
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -59,3 +61,5 @@ permalink: /kb/252/Q252855/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193685/
 
 ## Q193685: Sending E-mail from a Command Prompt Using IIS SMTP Service
 
+{% raw %}
+
 	Article: Q193685
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -122,3 +124,5 @@ permalink: /kb/193/Q193685/
 	
 	=============================================================================
 	
+
+{% endraw %}

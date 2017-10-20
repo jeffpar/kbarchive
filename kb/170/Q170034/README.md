@@ -6,6 +6,8 @@ permalink: /kb/170/Q170034/
 
 ## Q170034: XFOR: IMC Causes Stop Error in Windows NT
 
+{% raw %}
+
 	Article: Q170034
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/170/Q170034/
 	
 	=============================================================================
 	
+
+{% endraw %}

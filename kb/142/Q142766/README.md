@@ -6,6 +6,8 @@ permalink: /kb/142/Q142766/
 
 ## Q142766: Updated Ifsmgr.vxd Allows Trailing Backslashes
 
+{% raw %}
+
 	Article: Q142766
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/142/Q142766/
 	
 	=============================================================================
 	
+
+{% endraw %}

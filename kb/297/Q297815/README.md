@@ -6,6 +6,8 @@ permalink: /kb/297/Q297815/
 
 ## Q297815: Microsoft Word 97/Excel 97 In Depth Training Starts Here Comment
 
+{% raw %}
+
 	Article: Q297815
 	Product(s): Microsoft Press
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/297/Q297815/
 	
 	=============================================================================
 	
+
+{% endraw %}

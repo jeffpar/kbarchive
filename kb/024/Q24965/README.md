@@ -6,6 +6,8 @@ permalink: /kb/024/Q24965/
 
 ## Q24965: Jump to Absolute Address
 
+{% raw %}
+
 	Article: Q24965
 	Product(s): Microsoft Macro Assembler
 	Version(s): 1.25,1.27,3.0x,4.0,5.0,5.1,5.1a,6.0,6.0a,6.0b
@@ -74,3 +76,5 @@ permalink: /kb/024/Q24965/
 	
 	=============================================================================
 	
+
+{% endraw %}

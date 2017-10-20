@@ -6,6 +6,8 @@ permalink: /kb/191/Q191284/
 
 ## Q191284: STOP 0x0000001E in Netbt.sys
 
+{% raw %}
+
 	Article: Q191284
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/191/Q191284/
 	
 	=============================================================================
 	
+
+{% endraw %}

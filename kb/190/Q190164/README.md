@@ -6,6 +6,8 @@ permalink: /kb/190/Q190164/
 
 ## Q190164: Using Terminal Server as a User Workstation
 
+{% raw %}
+
 	Article: Q190164
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -73,3 +75,5 @@ permalink: /kb/190/Q190164/
 	
 	=============================================================================
 	
+
+{% endraw %}

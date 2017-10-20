@@ -6,6 +6,8 @@ permalink: /kb/136/Q136706/
 
 ## Q136706: Address 0.0.0.0 in DHCP DNS Servers Causes Client DNS to Fail
 
+{% raw %}
+
 	Article: Q136706
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 3.11
@@ -61,3 +63,5 @@ permalink: /kb/136/Q136706/
 	
 	=============================================================================
 	
+
+{% endraw %}

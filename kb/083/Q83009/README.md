@@ -6,6 +6,8 @@ permalink: /kb/083/Q83009/
 
 ## Q83009: BUG: Common Dialog GP-Fault on ESC Key with Mouse Button Down
 
+{% raw %}
+
 	Article: Q83009
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -49,3 +51,5 @@ permalink: /kb/083/Q83009/
 	
 	=============================================================================
 	
+
+{% endraw %}

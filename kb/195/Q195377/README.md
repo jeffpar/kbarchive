@@ -6,6 +6,8 @@ permalink: /kb/195/Q195377/
 
 ## Q195377: FIX: LNK1104 When Linking VXD with /MAP
 
+{% raw %}
+
 	Article: Q195377
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -65,3 +67,5 @@ permalink: /kb/195/Q195377/
 	
 	=============================================================================
 	
+
+{% endraw %}

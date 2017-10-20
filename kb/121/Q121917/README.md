@@ -6,6 +6,8 @@ permalink: /kb/121/Q121917/
 
 ## Q121917: CONN: Stuck Handshake File When Postoffice on NTAS 3.1
 
+{% raw %}
+
 	Article: Q121917
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -58,3 +60,5 @@ permalink: /kb/121/Q121917/
 	
 	=============================================================================
 	
+
+{% endraw %}

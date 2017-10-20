@@ -6,6 +6,8 @@ permalink: /kb/086/Q86828/
 
 ## Q86828: BUG: CodeView Breakpoints with Nested Quotes Unrecognized
 
+{% raw %}
+
 	Article: Q86828
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.05,4.1
@@ -82,3 +84,5 @@ permalink: /kb/086/Q86828/
 	
 	=============================================================================
 	
+
+{% endraw %}

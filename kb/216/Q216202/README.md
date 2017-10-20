@@ -6,6 +6,8 @@ permalink: /kb/216/Q216202/
 
 ## Q216202: PRB: Application Hangs; IBM CICS/VSE Terminal Unavailable
 
+{% raw %}
+
 	Article: Q216202
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -110,3 +112,5 @@ permalink: /kb/216/Q216202/
 	
 	=============================================================================
 	
+
+{% endraw %}

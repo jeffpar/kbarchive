@@ -6,6 +6,8 @@ permalink: /kb/136/Q136475/
 
 ## Q136475: Err Msg: Explorer Caused a Divide Error in Module Shell32.dll
 
+{% raw %}
+
 	Article: Q136475
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -105,3 +107,5 @@ permalink: /kb/136/Q136475/
 	
 	=============================================================================
 	
+
+{% endraw %}

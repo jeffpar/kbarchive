@@ -6,6 +6,8 @@ permalink: /kb/157/Q157830/
 
 ## Q157830: SMS: Remote Ctl. With FR Regional Setting 1.2 SP2 - Grey Viewer
 
+{% raw %}
+
 	Article: Q157830
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP2
@@ -57,3 +59,5 @@ permalink: /kb/157/Q157830/
 	
 	=============================================================================
 	
+
+{% endraw %}

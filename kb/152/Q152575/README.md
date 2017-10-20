@@ -6,6 +6,8 @@ permalink: /kb/152/Q152575/
 
 ## Q152575: XADM: Directory Replication Option Not Disp. in Standard Edition
 
+{% raw %}
+
 	Article: Q152575
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -54,3 +56,5 @@ permalink: /kb/152/Q152575/
 	
 	=============================================================================
 	
+
+{% endraw %}

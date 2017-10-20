@@ -6,6 +6,8 @@ permalink: /kb/120/Q120419/
 
 ## Q120419: IBM Token Ring II EISA Card Not Supported
 
+{% raw %}
+
 	Article: Q120419
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/120/Q120419/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161942/
 
 ## Q161942: XADM: Setup or Update Fails to Upgrade Admin-Only Computer
 
+{% raw %}
+
 	Article: Q161942
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -90,3 +92,5 @@ permalink: /kb/161/Q161942/
 	
 	=============================================================================
 	
+
+{% endraw %}

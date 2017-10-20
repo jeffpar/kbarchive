@@ -6,6 +6,8 @@ permalink: /kb/154/Q154810/
 
 ## Q154810: FIX: Errors When Accessing rdoPreparedStatements Not Consistent
 
+{% raw %}
+
 	Article: Q154810
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -116,3 +118,5 @@ permalink: /kb/154/Q154810/
 	
 	=============================================================================
 	
+
+{% endraw %}

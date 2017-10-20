@@ -6,6 +6,8 @@ permalink: /kb/314/Q314296/
 
 ## Q314296: PRB: HTML Help Does Not Work from VFP Application
 
+{% raw %}
+
 	Article: Q314296
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -82,3 +84,5 @@ permalink: /kb/314/Q314296/
 	
 	=============================================================================
 	
+
+{% endraw %}

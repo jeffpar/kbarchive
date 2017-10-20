@@ -6,6 +6,8 @@ permalink: /kb/213/Q213289/
 
 ## Q213289: Err Msg: &quot;Directory File Needed for Initialization Could Not...&quot;
 
+{% raw %}
+
 	Article: Q213289
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -49,3 +51,5 @@ permalink: /kb/213/Q213289/
 	
 	=============================================================================
 	
+
+{% endraw %}

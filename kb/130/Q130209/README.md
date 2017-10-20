@@ -6,6 +6,8 @@ permalink: /kb/130/Q130209/
 
 ## Q130209: List and Description of Windows NT 3.5 Information Files (&#42;.INF)
 
+{% raw %}
+
 	Article: Q130209
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -230,3 +232,5 @@ permalink: /kb/130/Q130209/
 	
 	=============================================================================
 	
+
+{% endraw %}

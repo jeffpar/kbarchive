@@ -6,6 +6,8 @@ permalink: /kb/114/Q114351/
 
 ## Q114351: Error Message When Starting Resource Kit PVIEWER.EXE
 
+{% raw %}
+
 	Article: Q114351
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -61,3 +63,5 @@ permalink: /kb/114/Q114351/
 	
 	=============================================================================
 	
+
+{% endraw %}

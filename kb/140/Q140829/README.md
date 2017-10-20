@@ -6,6 +6,8 @@ permalink: /kb/140/Q140829/
 
 ## Q140829: TN3270 Clients Do Not Accept &quot;Do TN3270E&quot;
 
+{% raw %}
+
 	Article: Q140829
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11
@@ -109,3 +111,5 @@ permalink: /kb/140/Q140829/
 	
 	=============================================================================
 	
+
+{% endraw %}

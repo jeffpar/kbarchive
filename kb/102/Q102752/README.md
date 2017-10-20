@@ -6,6 +6,8 @@ permalink: /kb/102/Q102752/
 
 ## Q102752: PC Win: GP Fault Converting Folders When Server Is Full
 
+{% raw %}
+
 	Article: Q102752
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -42,3 +44,5 @@ permalink: /kb/102/Q102752/
 	
 	=============================================================================
 	
+
+{% endraw %}

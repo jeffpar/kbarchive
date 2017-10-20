@@ -6,6 +6,8 @@ permalink: /kb/083/Q83438/
 
 ## Q83438: Printer Driver and Version Supplied in Windows SDL
 
+{% raw %}
+
 	Article: Q83438
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -254,3 +256,5 @@ permalink: /kb/083/Q83438/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/264/Q264776/
 
 ## Q264776: User Manager Returns &quot;Access Is Denied&quot; Message Concerning User
 
+{% raw %}
+
 	Article: Q264776
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/264/Q264776/
 	
 	=============================================================================
 	
+
+{% endraw %}

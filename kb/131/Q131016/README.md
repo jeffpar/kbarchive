@@ -6,6 +6,8 @@ permalink: /kb/131/Q131016/
 
 ## Q131016: Settings for the 16550 UART FIFO Buffer
 
+{% raw %}
+
 	Article: Q131016
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -108,3 +110,5 @@ permalink: /kb/131/Q131016/
 	
 	=============================================================================
 	
+
+{% endraw %}

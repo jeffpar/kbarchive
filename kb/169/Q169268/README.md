@@ -6,6 +6,8 @@ permalink: /kb/169/Q169268/
 
 ## Q169268: FTP Err Msg: Error: Connection Timed Out
 
+{% raw %}
+
 	Article: Q169268
 	Product(s): Internet Information Server
 	Version(s): 3.0
@@ -92,3 +94,5 @@ permalink: /kb/169/Q169268/
 	
 	=============================================================================
 	
+
+{% endraw %}

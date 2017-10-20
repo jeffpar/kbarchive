@@ -6,6 +6,8 @@ permalink: /kb/172/Q172899/
 
 ## Q172899: SMS: Despooler Instruction (.SNI) Files Are Not Processed
 
+{% raw %}
+
 	Article: Q172899
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -120,3 +122,5 @@ permalink: /kb/172/Q172899/
 	
 	=============================================================================
 	
+
+{% endraw %}

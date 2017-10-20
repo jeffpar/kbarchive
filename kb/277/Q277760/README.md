@@ -6,6 +6,8 @@ permalink: /kb/277/Q277760/
 
 ## Q277760: Passport Express Purchase Implementation Guide Release Notes
 
+{% raw %}
+
 	Article: Q277760
 	Product(s): Internet Information Server
 	Version(s): 1.4
@@ -71,3 +73,5 @@ permalink: /kb/277/Q277760/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194340/
 
 ## Q194340: Access Violation When Using Rcp.exe to Copy to UNIX
 
+{% raw %}
+
 	Article: Q194340
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/194/Q194340/
 	
 	=============================================================================
 	
+
+{% endraw %}

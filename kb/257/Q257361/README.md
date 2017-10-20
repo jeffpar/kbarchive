@@ -6,6 +6,8 @@ permalink: /kb/257/Q257361/
 
 ## Q257361: Mixed-Case Names Are Registered in WINS
 
+{% raw %}
+
 	Article: Q257361
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:2000,95; winnt:3.5,3.51,4.0
@@ -74,3 +76,5 @@ permalink: /kb/257/Q257361/
 	
 	=============================================================================
 	
+
+{% endraw %}

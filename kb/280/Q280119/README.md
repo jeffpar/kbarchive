@@ -6,6 +6,8 @@ permalink: /kb/280/Q280119/
 
 ## Q280119: Patch Available for NTLMSSP Privilege Elevation Vulnerability
 
+{% raw %}
+
 	Article: Q280119
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -232,3 +234,5 @@ permalink: /kb/280/Q280119/
 	
 	=============================================================================
 	
+
+{% endraw %}

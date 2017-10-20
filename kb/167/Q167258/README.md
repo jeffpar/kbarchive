@@ -6,6 +6,8 @@ permalink: /kb/167/Q167258/
 
 ## Q167258: PRB: Analyze Leaves Files with .old Extension in Database
 
+{% raw %}
+
 	Article: Q167258
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/167/Q167258/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/215/Q215343/
 
 ## Q215343: WD97: Outline Numbering Wrong with Special Characters
 
+{% raw %}
+
 	Article: Q215343
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -107,3 +109,5 @@ permalink: /kb/215/Q215343/
 	
 	=============================================================================
 	
+
+{% endraw %}

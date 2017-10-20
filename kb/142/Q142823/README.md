@@ -6,6 +6,8 @@ permalink: /kb/142/Q142823/
 
 ## Q142823: INFO: Visual Basic Programmer's Guide to Visual SourceSafe
 
+{% raw %}
+
 	Article: Q142823
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0; :
@@ -127,3 +129,5 @@ permalink: /kb/142/Q142823/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164190/
 
 ## Q164190: Kids Plus!: Network Neighborhood not Restricted by Protect It!
 
+{% raw %}
+
 	Article: Q164190
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -51,3 +53,5 @@ permalink: /kb/164/Q164190/
 	
 	=============================================================================
 	
+
+{% endraw %}

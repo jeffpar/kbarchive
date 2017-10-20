@@ -6,6 +6,8 @@ permalink: /kb/198/Q198411/
 
 ## Q198411: Combat FS: Color Palette of Mission Briefing Maps Is Distorted
 
+{% raw %}
+
 	Article: Q198411
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -64,3 +66,5 @@ permalink: /kb/198/Q198411/
 	
 	=============================================================================
 	
+
+{% endraw %}

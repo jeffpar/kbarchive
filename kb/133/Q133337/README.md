@@ -6,6 +6,8 @@ permalink: /kb/133/Q133337/
 
 ## Q133337: Automate Setup to Configure TCP/IP for Static Addressing Fails
 
+{% raw %}
+
 	Article: Q133337
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -115,3 +117,5 @@ permalink: /kb/133/Q133337/
 	
 	=============================================================================
 	
+
+{% endraw %}

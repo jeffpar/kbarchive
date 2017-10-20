@@ -6,6 +6,8 @@ permalink: /kb/061/Q61919/
 
 ## Q61919: CV 3.00 Gives R6000, Hangs When Accessing Help During Start-Up
 
+{% raw %}
+
 	Article: Q61919
 	Product(s): See article
 	Version(s): 3.00
@@ -37,3 +39,5 @@ permalink: /kb/061/Q61919/
 	
 	Microsoft has confirmed this to be a problem in CodeView version 3.00.
 	This problem was corrected in CodeView version 3.10.
+
+{% endraw %}

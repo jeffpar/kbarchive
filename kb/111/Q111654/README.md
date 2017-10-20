@@ -6,6 +6,8 @@ permalink: /kb/111/Q111654/
 
 ## Q111654: BUG: StretchDIBits Not Correctly Stretching RLE DIBs w/ Jumps
 
+{% raw %}
+
 	Article: Q111654
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -46,3 +48,5 @@ permalink: /kb/111/Q111654/
 	
 	=============================================================================
 	
+
+{% endraw %}

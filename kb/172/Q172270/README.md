@@ -6,6 +6,8 @@ permalink: /kb/172/Q172270/
 
 ## Q172270: HOWTO: Certify a VB Application with Microsoft Windows Logo
 
+{% raw %}
+
 	Article: Q172270
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -132,3 +134,5 @@ permalink: /kb/172/Q172270/
 	
 	=============================================================================
 	
+
+{% endraw %}

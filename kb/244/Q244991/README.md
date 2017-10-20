@@ -6,6 +6,8 @@ permalink: /kb/244/Q244991/
 
 ## Q244991: Services Do Not Start with Intel EtherExpress Pro 100+ NIC.
 
+{% raw %}
+
 	Article: Q244991
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -93,3 +95,5 @@ permalink: /kb/244/Q244991/
 	
 	=============================================================================
 	
+
+{% endraw %}

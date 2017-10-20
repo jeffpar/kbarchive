@@ -6,6 +6,8 @@ permalink: /kb/051/Q51281/
 
 ## Q51281: Mac Wkst: Urgent &amp; Return Receipt Missing from Inquiry Message
 
+{% raw %}
+
 	Article: Q51281
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -40,3 +42,5 @@ permalink: /kb/051/Q51281/
 	
 	=============================================================================
 	
+
+{% endraw %}

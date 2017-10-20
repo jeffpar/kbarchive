@@ -6,6 +6,8 @@ permalink: /kb/156/Q156925/
 
 ## Q156925: PRB: NULL and .NULL. Are Not Interchangeable in Properties
 
+{% raw %}
+
 	Article: Q156925
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/156/Q156925/
 	
 	=============================================================================
 	
+
+{% endraw %}

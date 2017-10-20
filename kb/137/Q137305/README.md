@@ -6,6 +6,8 @@ permalink: /kb/137/Q137305/
 
 ## Q137305: SMS Remote Control: Unavailable Controls Have Blue Backgrounds
 
+{% raw %}
+
 	Article: Q137305
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -42,3 +44,5 @@ permalink: /kb/137/Q137305/
 	
 	=============================================================================
 	
+
+{% endraw %}

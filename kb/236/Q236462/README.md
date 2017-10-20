@@ -6,6 +6,8 @@ permalink: /kb/236/Q236462/
 
 ## Q236462: Asheron's Call: Characters Receive Damage Through Doors
 
+{% raw %}
+
 	Article: Q236462
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -54,3 +56,5 @@ permalink: /kb/236/Q236462/
 	
 	=============================================================================
 	
+
+{% endraw %}

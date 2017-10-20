@@ -6,6 +6,8 @@ permalink: /kb/092/Q92845/
 
 ## Q92845: SoundBits: How to Reset the Sound Scheme to Windows Default
 
+{% raw %}
+
 	Article: Q92845
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/092/Q92845/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167405/
 
 ## Q167405: INFO: Visual FoxPro ODBC Driver Connect String Attributes
 
+{% raw %}
+
 	Article: Q167405
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,6.0
@@ -71,3 +73,5 @@ permalink: /kb/167/Q167405/
 	
 	=============================================================================
 	
+
+{% endraw %}

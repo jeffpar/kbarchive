@@ -6,6 +6,8 @@ permalink: /kb/269/Q269014/
 
 ## Q269014: XADM: How to Move the Edb.chk File on a Cluster
 
+{% raw %}
+
 	Article: Q269014
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -95,3 +97,5 @@ permalink: /kb/269/Q269014/
 	
 	=============================================================================
 	
+
+{% endraw %}

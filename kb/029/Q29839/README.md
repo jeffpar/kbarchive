@@ -6,6 +6,8 @@ permalink: /kb/029/Q29839/
 
 ## Q29839: C 5.10 MTDYNA.DOC: Component Files of a Single Thread DLL
 
+{% raw %}
+
 	Article: Q29839
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -39,3 +41,5 @@ permalink: /kb/029/Q29839/
 	
 	   MKSTDLL.CMD      OS/2 batch file for creating single-thread
 	                    dynamic-link library.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165947/
 
 ## Q165947: Event 2007 Error When Printing to an LPR Port
 
+{% raw %}
+
 	Article: Q165947
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -51,3 +53,5 @@ permalink: /kb/165/Q165947/
 	
 	=============================================================================
 	
+
+{% endraw %}

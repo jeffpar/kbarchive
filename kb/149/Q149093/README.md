@@ -6,6 +6,8 @@ permalink: /kb/149/Q149093/
 
 ## Q149093: BUG: Property Page of Remote Data Control Causes an Error
 
+{% raw %}
+
 	Article: Q149093
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,95,98
@@ -71,3 +73,5 @@ permalink: /kb/149/Q149093/
 	
 	=============================================================================
 	
+
+{% endraw %}

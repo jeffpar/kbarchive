@@ -6,6 +6,8 @@ permalink: /kb/195/Q195130/
 
 ## Q195130: WD97: How to Convert Documents Between LotusWorks and Word
 
+{% raw %}
+
 	Article: Q195130
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -96,3 +98,5 @@ permalink: /kb/195/Q195130/
 	
 	=============================================================================
 	
+
+{% endraw %}

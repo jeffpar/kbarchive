@@ -6,6 +6,8 @@ permalink: /kb/141/Q141024/
 
 ## Q141024: How to Start a Visual Basic Screen Saver Using SendMessage API
 
+{% raw %}
+
 	Article: Q141024
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/141/Q141024/
 	
 	=============================================================================
 	
+
+{% endraw %}

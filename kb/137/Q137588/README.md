@@ -6,6 +6,8 @@ permalink: /kb/137/Q137588/
 
 ## Q137588: TN3270 Service Will Not Start with a Large Config File
 
+{% raw %}
+
 	Article: Q137588
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -67,3 +69,5 @@ permalink: /kb/137/Q137588/
 	
 	=============================================================================
 	
+
+{% endraw %}

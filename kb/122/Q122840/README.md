@@ -6,6 +6,8 @@ permalink: /kb/122/Q122840/
 
 ## Q122840: BUG: ODS Driver May Give an Error on Outer Join Escape Clause
 
+{% raw %}
+
 	Article: Q122840
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -90,3 +92,5 @@ permalink: /kb/122/Q122840/
 	
 	=============================================================================
 	
+
+{% endraw %}

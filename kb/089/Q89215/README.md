@@ -6,6 +6,8 @@ permalink: /kb/089/Q89215/
 
 ## Q89215: INFO: Mapping Modes and Round-Off Errors
 
+{% raw %}
+
 	Article: Q89215
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51
@@ -202,3 +204,5 @@ permalink: /kb/089/Q89215/
 	
 	=============================================================================
 	
+
+{% endraw %}

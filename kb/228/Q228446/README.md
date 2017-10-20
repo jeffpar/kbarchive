@@ -6,6 +6,8 @@ permalink: /kb/228/Q228446/
 
 ## Q228446: WD97: Styles with Custom Outline Numbering Change Unexpectedly
 
+{% raw %}
+
 	Article: Q228446
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -116,3 +118,5 @@ permalink: /kb/228/Q228446/
 	
 	=============================================================================
 	
+
+{% endraw %}

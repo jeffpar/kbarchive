@@ -6,6 +6,8 @@ permalink: /kb/138/Q138125/
 
 ## Q138125: How to Set Replication Interval to Minimum
 
+{% raw %}
+
 	Article: Q138125
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/138/Q138125/
 	
 	=============================================================================
 	
+
+{% endraw %}

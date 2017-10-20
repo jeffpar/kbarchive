@@ -6,6 +6,8 @@ permalink: /kb/185/Q185616/
 
 ## Q185616: XADM: Directory Replication Fails, Event 1124 Error Displayed
 
+{% raw %}
+
 	Article: Q185616
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -127,3 +129,5 @@ permalink: /kb/185/Q185616/
 	
 	=============================================================================
 	
+
+{% endraw %}

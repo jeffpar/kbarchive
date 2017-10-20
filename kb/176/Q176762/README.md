@@ -6,6 +6,8 @@ permalink: /kb/176/Q176762/
 
 ## Q176762: XCLN: Shiva Remote Setup for Outlook Icon Missing
 
+{% raw %}
+
 	Article: Q176762
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS 3.1x:8.0
@@ -61,3 +63,5 @@ permalink: /kb/176/Q176762/
 	
 	=============================================================================
 	
+
+{% endraw %}

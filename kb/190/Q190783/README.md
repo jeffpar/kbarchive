@@ -6,6 +6,8 @@ permalink: /kb/190/Q190783/
 
 ## Q190783: Zone: Cannot Enter Zone Game Rooms
 
+{% raw %}
+
 	Article: Q190783
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -166,3 +168,5 @@ permalink: /kb/190/Q190783/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169947/
 
 ## Q169947: HOWTO: DDX - DDV for 64-Bit Numbers
 
+{% raw %}
+
 	Article: Q169947
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2b,5.0,6.0
@@ -134,3 +136,5 @@ permalink: /kb/169/Q169947/
 	
 	=============================================================================
 	
+
+{% endraw %}

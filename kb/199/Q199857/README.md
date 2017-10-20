@@ -6,6 +6,8 @@ permalink: /kb/199/Q199857/
 
 ## Q199857: Return of Arcade: Game Quits and You Are Returned to Desktop
 
+{% raw %}
+
 	Article: Q199857
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -73,3 +75,5 @@ permalink: /kb/199/Q199857/
 	
 	=============================================================================
 	
+
+{% endraw %}

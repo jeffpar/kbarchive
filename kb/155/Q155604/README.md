@@ -6,6 +6,8 @@ permalink: /kb/155/Q155604/
 
 ## Q155604: INF: Unable to Load ODBCCP32.DLL in Custom ODBC Setup Programs
 
+{% raw %}
+
 	Article: Q155604
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.5
@@ -74,3 +76,5 @@ permalink: /kb/155/Q155604/
 	
 	=============================================================================
 	
+
+{% endraw %}

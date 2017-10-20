@@ -6,6 +6,8 @@ permalink: /kb/168/Q168325/
 
 ## Q168325: WV: IPF Opening RTF File with Background Texture in Viewer
 
+{% raw %}
+
 	Article: Q168325
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -86,3 +88,5 @@ permalink: /kb/168/Q168325/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164177/
 
 ## Q164177: XFOR: Error 2410 When Starting the MSMI
 
+{% raw %}
+
 	Article: Q164177
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -69,3 +71,5 @@ permalink: /kb/164/Q164177/
 	
 	=============================================================================
 	
+
+{% endraw %}

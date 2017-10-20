@@ -6,6 +6,8 @@ permalink: /kb/157/Q157364/
 
 ## Q157364: Attempt to Log on During an Unauthorized Time Period
 
+{% raw %}
+
 	Article: Q157364
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -61,3 +63,5 @@ permalink: /kb/157/Q157364/
 	
 	=============================================================================
 	
+
+{% endraw %}

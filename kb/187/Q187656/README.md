@@ -6,6 +6,8 @@ permalink: /kb/187/Q187656/
 
 ## Q187656: XADM: Exceeding Storage Limit For Public Folder
 
+{% raw %}
+
 	Article: Q187656
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -63,3 +65,5 @@ permalink: /kb/187/Q187656/
 	
 	=============================================================================
 	
+
+{% endraw %}

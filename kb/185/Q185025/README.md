@@ -6,6 +6,8 @@ permalink: /kb/185/Q185025/
 
 ## Q185025: XFOR: Dr. Watson on Startup Due to Excess DNS Search Entries
 
+{% raw %}
+
 	Article: Q185025
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -62,3 +64,5 @@ permalink: /kb/185/Q185025/
 	
 	=============================================================================
 	
+
+{% endraw %}

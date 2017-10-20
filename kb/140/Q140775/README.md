@@ -6,6 +6,8 @@ permalink: /kb/140/Q140775/
 
 ## Q140775: BBS Messages Marked as Read Appear as Not Read
 
+{% raw %}
+
 	Article: Q140775
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -65,3 +67,5 @@ permalink: /kb/140/Q140775/
 	
 	=============================================================================
 	
+
+{% endraw %}

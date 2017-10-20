@@ -6,6 +6,8 @@ permalink: /kb/069/Q69686/
 
 ## Q69686: Disabling Screen Saver on Leading Edge D/LT386SX Portable
 
+{% raw %}
+
 	Article: Q69686
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/069/Q69686/
 	
 	=============================================================================
 	
+
+{% endraw %}

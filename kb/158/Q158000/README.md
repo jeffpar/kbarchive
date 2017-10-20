@@ -6,6 +6,8 @@ permalink: /kb/158/Q158000/
 
 ## Q158000: STL Sample for the nth_element Function
 
+{% raw %}
+
 	Article: Q158000
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -160,3 +162,5 @@ permalink: /kb/158/Q158000/
 	
 	=============================================================================
 	
+
+{% endraw %}

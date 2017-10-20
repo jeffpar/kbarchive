@@ -6,6 +6,8 @@ permalink: /kb/247/Q247774/
 
 ## Q247774: XADM: MSExchangeIS (306) Error in Event Log with Antivirus Use
 
+{% raw %}
+
 	Article: Q247774
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -83,3 +85,5 @@ permalink: /kb/247/Q247774/
 	
 	=============================================================================
 	
+
+{% endraw %}

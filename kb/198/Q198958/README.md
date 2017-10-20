@@ -6,6 +6,8 @@ permalink: /kb/198/Q198958/
 
 ## Q198958: XCON: Messages Remain in Queue and Are Resent at MTA Startup
 
+{% raw %}
+
 	Article: Q198958
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -68,3 +70,5 @@ permalink: /kb/198/Q198958/
 	
 	=============================================================================
 	
+
+{% endraw %}

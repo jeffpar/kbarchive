@@ -6,6 +6,8 @@ permalink: /kb/083/Q83077/
 
 ## Q83077: Troubleshooting an Unsuccessful Windows 3.1 Installation
 
+{% raw %}
+
 	Article: Q83077
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -79,3 +81,5 @@ permalink: /kb/083/Q83077/
 	
 	=============================================================================
 	
+
+{% endraw %}

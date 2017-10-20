@@ -6,6 +6,8 @@ permalink: /kb/072/Q72390/
 
 ## Q72390: FIX: MASM 6.0 Setup May Generate &quot;Bad Full Path&quot; Error Message
 
+{% raw %}
+
 	Article: Q72390
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b
@@ -91,3 +93,5 @@ permalink: /kb/072/Q72390/
 	
 	=============================================================================
 	
+
+{% endraw %}

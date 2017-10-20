@@ -6,6 +6,8 @@ permalink: /kb/206/Q206461/
 
 ## Q206461: PRB: Query Designer Expression Builder Uses Wrong MIN() / MAX()
 
+{% raw %}
+
 	Article: Q206461
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -78,3 +80,5 @@ permalink: /kb/206/Q206461/
 	
 	=============================================================================
 	
+
+{% endraw %}

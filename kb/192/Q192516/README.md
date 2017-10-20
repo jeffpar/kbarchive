@@ -6,6 +6,8 @@ permalink: /kb/192/Q192516/
 
 ## Q192516: XFOR: T-shooting cc:Mail Connector Mail Conversion Problems
 
+{% raw %}
+
 	Article: Q192516
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -101,3 +103,5 @@ permalink: /kb/192/Q192516/
 	
 	=============================================================================
 	
+
+{% endraw %}

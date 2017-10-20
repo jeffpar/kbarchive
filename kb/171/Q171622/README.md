@@ -6,6 +6,8 @@ permalink: /kb/171/Q171622/
 
 ## Q171622: CMINIT Returns Error 24 if Symbolic Name Not Space-Padded
 
+{% raw %}
+
 	Article: Q171622
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0 SP1
@@ -83,3 +85,5 @@ permalink: /kb/171/Q171622/
 	
 	=============================================================================
 	
+
+{% endraw %}

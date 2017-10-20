@@ -6,6 +6,8 @@ permalink: /kb/159/Q159216/
 
 ## Q159216: XCLN: How to Create One-off Address in Korean Exchange Client
 
+{% raw %}
+
 	Article: Q159216
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/159/Q159216/
 	
 	=============================================================================
 	
+
+{% endraw %}

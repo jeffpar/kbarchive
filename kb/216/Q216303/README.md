@@ -6,6 +6,8 @@ permalink: /kb/216/Q216303/
 
 ## Q216303: Incorrect NDIS Filtering of Some Ethernet Multicast Frames
 
+{% raw %}
+
 	Article: Q216303
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/216/Q216303/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153378/
 
 ## Q153378: FIX: Syntax Error in MFC ODBC Recordset with SQL Server 6.5
 
+{% raw %}
+
 	Article: Q153378
 	Product(s): Microsoft C Compiler
 	Version(s): 1.51,1.52,1.52b,1.52c,2.0,2.1,2.2,4.0,4.1
@@ -127,3 +129,5 @@ permalink: /kb/153/Q153378/
 	
 	=============================================================================
 	
+
+{% endraw %}

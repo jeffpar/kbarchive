@@ -6,6 +6,8 @@ permalink: /kb/234/Q234604/
 
 ## Q234604: Files Not Found Using SCM with Terminal Server
 
+{% raw %}
+
 	Article: Q234604
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -86,3 +88,5 @@ permalink: /kb/234/Q234604/
 	
 	=============================================================================
 	
+
+{% endraw %}

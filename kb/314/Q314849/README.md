@@ -6,6 +6,8 @@ permalink: /kb/314/Q314849/
 
 ## Q314849: FIX: Parameters Passed as Empty Placeholders Default to NULL
 
+{% raw %}
+
 	Article: Q314849
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -97,3 +99,5 @@ permalink: /kb/314/Q314849/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194137/
 
 ## Q194137: XFOR: How to Access Public Folders Via URL
 
+{% raw %}
+
 	Article: Q194137
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -41,3 +43,5 @@ permalink: /kb/194/Q194137/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171532/
 
 ## Q171532: FIX: Crash Stepping Thru Code After Using Locals/Watch Window
 
+{% raw %}
+
 	Article: Q171532
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -105,3 +107,5 @@ permalink: /kb/171/Q171532/
 	
 	=============================================================================
 	
+
+{% endraw %}

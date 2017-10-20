@@ -6,6 +6,8 @@ permalink: /kb/197/Q197286/
 
 ## Q197286: Third-Party Services May Fail to Start After Upgrade to NT SP4
 
+{% raw %}
+
 	Article: Q197286
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -87,3 +89,5 @@ permalink: /kb/197/Q197286/
 	
 	=============================================================================
 	
+
+{% endraw %}

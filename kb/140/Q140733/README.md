@@ -6,6 +6,8 @@ permalink: /kb/140/Q140733/
 
 ## Q140733: Manual Dial Setting Does Not Function After Restarting
 
+{% raw %}
+
 	Article: Q140733
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5,2.51,2.52,2.6
@@ -59,3 +61,5 @@ permalink: /kb/140/Q140733/
 	
 	=============================================================================
 	
+
+{% endraw %}

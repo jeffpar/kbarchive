@@ -6,6 +6,8 @@ permalink: /kb/191/Q191129/
 
 ## Q191129: FIX: Menu Merge Problem with Server in Active Doc Container
 
+{% raw %}
+
 	Article: Q191129
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -90,3 +92,5 @@ permalink: /kb/191/Q191129/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143135/
 
 ## Q143135: PORTUAS Err Msg: Unexpected Return Code 5 From API NetGroupAdd
 
+{% raw %}
+
 	Article: Q143135
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -49,3 +51,5 @@ permalink: /kb/143/Q143135/
 	
 	=============================================================================
 	
+
+{% endraw %}

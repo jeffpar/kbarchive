@@ -6,6 +6,8 @@ permalink: /kb/136/Q136380/
 
 ## Q136380: PROFS: Propagating Existing PROFS Nodes to a New Postoffice
 
+{% raw %}
+
 	Article: Q136380
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -82,3 +84,5 @@ permalink: /kb/136/Q136380/
 	
 	=============================================================================
 	
+
+{% endraw %}

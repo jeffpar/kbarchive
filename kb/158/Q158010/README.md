@@ -6,6 +6,8 @@ permalink: /kb/158/Q158010/
 
 ## Q158010: XCLN: Setup Could Not Write to File Mapiform.vbx
 
+{% raw %}
+
 	Article: Q158010
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -56,3 +58,5 @@ permalink: /kb/158/Q158010/
 	
 	=============================================================================
 	
+
+{% endraw %}

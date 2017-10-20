@@ -6,6 +6,8 @@ permalink: /kb/155/Q155774/
 
 ## Q155774: WD97: Framed Object Positioned Incorrectly in Online Layout View
 
+{% raw %}
+
 	Article: Q155774
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -51,3 +53,5 @@ permalink: /kb/155/Q155774/
 	
 	=============================================================================
 	
+
+{% endraw %}

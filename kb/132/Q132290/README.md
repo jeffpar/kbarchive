@@ -6,6 +6,8 @@ permalink: /kb/132/Q132290/
 
 ## Q132290: PRB: Problems Using CFile::m_hFile When Porting MFC Apps
 
+{% raw %}
+
 	Article: Q132290
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,2.2,4.0
@@ -69,3 +71,5 @@ permalink: /kb/132/Q132290/
 	
 	=============================================================================
 	
+
+{% endraw %}

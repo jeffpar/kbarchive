@@ -6,6 +6,8 @@ permalink: /kb/319/Q319764/
 
 ## Q319764: FS2002: Error Message: Cannot Find the Default Flight
 
+{% raw %}
+
 	Article: Q319764
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/319/Q319764/
 	
 	=============================================================================
 	
+
+{% endraw %}

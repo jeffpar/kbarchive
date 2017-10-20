@@ -6,6 +6,8 @@ permalink: /kb/129/Q129732/
 
 ## Q129732: INFO: Data Access Objects Have Properties Based on Database Type
 
+{% raw %}
+
 	Article: Q129732
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -137,3 +139,5 @@ permalink: /kb/129/Q129732/
 	
 	=============================================================================
 	
+
+{% endraw %}

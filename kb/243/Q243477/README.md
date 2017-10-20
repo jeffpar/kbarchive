@@ -6,6 +6,8 @@ permalink: /kb/243/Q243477/
 
 ## Q243477: STOP 0x0000001E Error Message with Intermediate Network Driver
 
+{% raw %}
+
 	Article: Q243477
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -98,3 +100,5 @@ permalink: /kb/243/Q243477/
 	
 	=============================================================================
 	
+
+{% endraw %}

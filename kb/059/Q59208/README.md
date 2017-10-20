@@ -6,6 +6,8 @@ permalink: /kb/059/Q59208/
 
 ## Q59208: PPT: Creating Transparent Bitmaps in Paintbrush for PowerPoint
 
+{% raw %}
+
 	Article: Q59208
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:2.0,3.0,4.0,7.0
@@ -97,3 +99,5 @@ permalink: /kb/059/Q59208/
 	
 	=============================================================================
 	
+
+{% endraw %}

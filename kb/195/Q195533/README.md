@@ -6,6 +6,8 @@ permalink: /kb/195/Q195533/
 
 ## Q195533: INFO: Application Object Protected in Custom VFP COM Servers
 
+{% raw %}
+
 	Article: Q195533
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/195/Q195533/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/264/Q264753/
 
 ## Q264753: FP98: Error Messages When You Try to Install Extensions
 
+{% raw %}
+
 	Article: Q264753
 	Product(s): Word Front Page
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/264/Q264753/
 	
 	=============================================================================
 	
+
+{% endraw %}

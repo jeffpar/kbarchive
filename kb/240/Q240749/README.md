@@ -6,6 +6,8 @@ permalink: /kb/240/Q240749/
 
 ## Q240749: BUG: WM_LBUTTONUP Message May Not Fire
 
+{% raw %}
+
 	Article: Q240749
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -146,3 +148,5 @@ permalink: /kb/240/Q240749/
 	
 	=============================================================================
 	
+
+{% endraw %}

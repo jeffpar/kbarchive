@@ -6,6 +6,8 @@ permalink: /kb/131/Q131846/
 
 ## Q131846: BUG: Deleted Rows Show w/ 'Show Deleted Rows' Option Cleared
 
+{% raw %}
+
 	Article: Q131846
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -64,3 +66,5 @@ permalink: /kb/131/Q131846/
 	
 	=============================================================================
 	
+
+{% endraw %}

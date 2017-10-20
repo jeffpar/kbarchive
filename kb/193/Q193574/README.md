@@ -6,6 +6,8 @@ permalink: /kb/193/Q193574/
 
 ## Q193574: FIX: DBGETPROP() of Offline Property May Incorrectly Return .T.
 
+{% raw %}
+
 	Article: Q193574
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -106,3 +108,5 @@ permalink: /kb/193/Q193574/
 	
 	=============================================================================
 	
+
+{% endraw %}

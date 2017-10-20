@@ -6,6 +6,8 @@ permalink: /kb/132/Q132699/
 
 ## Q132699: Pressing ALT+SPACEBAR Does Not Open System Menu
 
+{% raw %}
+
 	Article: Q132699
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -70,3 +72,5 @@ permalink: /kb/132/Q132699/
 	
 	=============================================================================
 	
+
+{% endraw %}

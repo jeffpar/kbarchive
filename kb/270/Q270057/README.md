@@ -6,6 +6,8 @@ permalink: /kb/270/Q270057/
 
 ## Q270057: Upgrade to Windows 2000 Indexing Service Deletes Custom Catalogs
 
+{% raw %}
+
 	Article: Q270057
 	Product(s): Internet Information Server
 	Version(s): 2000
@@ -74,3 +76,5 @@ permalink: /kb/270/Q270057/
 	
 	=============================================================================
 	
+
+{% endraw %}

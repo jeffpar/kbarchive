@@ -6,6 +6,8 @@ permalink: /kb/177/Q177083/
 
 ## Q177083: How to Verify the Internet Mail Enhancement Patch Is Installed
 
+{% raw %}
+
 	Article: Q177083
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,97
@@ -93,3 +95,5 @@ permalink: /kb/177/Q177083/
 	
 	=============================================================================
 	
+
+{% endraw %}

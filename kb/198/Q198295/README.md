@@ -6,6 +6,8 @@ permalink: /kb/198/Q198295/
 
 ## Q198295: WD97: How to Read Postal Bar Codes
 
+{% raw %}
+
 	Article: Q198295
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -111,3 +113,5 @@ permalink: /kb/198/Q198295/
 	
 	=============================================================================
 	
+
+{% endraw %}

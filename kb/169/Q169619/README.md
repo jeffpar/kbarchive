@@ -6,6 +6,8 @@ permalink: /kb/169/Q169619/
 
 ## Q169619: SMS: SMS 1.2 SP2 Does Not Prompt for a Restart of Windows NT
 
+{% raw %}
+
 	Article: Q169619
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2 SP2
@@ -54,3 +56,5 @@ permalink: /kb/169/Q169619/
 	
 	=============================================================================
 	
+
+{% endraw %}

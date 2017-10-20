@@ -6,6 +6,8 @@ permalink: /kb/323/Q323578/
 
 ## Q323578: Microsoft Windows XP Inside Out Comments and Corrections
 
+{% raw %}
+
 	Article: Q323578
 	Product(s): Microsoft Press
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/323/Q323578/
 	
 	=============================================================================
 	
+
+{% endraw %}

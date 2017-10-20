@@ -6,6 +6,8 @@ permalink: /kb/260/Q260003/
 
 ## Q260003: Asheron's Call: Unable to Restore Characters or Lost Items
 
+{% raw %}
+
 	Article: Q260003
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -61,3 +63,5 @@ permalink: /kb/260/Q260003/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/218/Q218475/
 
 ## Q218475: FIX: ATL In-Proc Servers Load Twice if Using Short Filename
 
+{% raw %}
+
 	Article: Q218475
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -331,3 +333,5 @@ permalink: /kb/218/Q218475/
 	
 	=============================================================================
 	
+
+{% endraw %}

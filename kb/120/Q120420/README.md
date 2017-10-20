@@ -6,6 +6,8 @@ permalink: /kb/120/Q120420/
 
 ## Q120420: Unable to Print Multiple Quattro Pro Spreadsheets
 
+{% raw %}
+
 	Article: Q120420
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -54,3 +56,5 @@ permalink: /kb/120/Q120420/
 	
 	=============================================================================
 	
+
+{% endraw %}

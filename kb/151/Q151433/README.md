@@ -6,6 +6,8 @@ permalink: /kb/151/Q151433/
 
 ## Q151433: MSB Solar: ErrMsg: Video Not Available, Cannot Find vids:msvc
 
+{% raw %}
+
 	Article: Q151433
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -146,3 +148,5 @@ permalink: /kb/151/Q151433/
 	
 	=============================================================================
 	
+
+{% endraw %}

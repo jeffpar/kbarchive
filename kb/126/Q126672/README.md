@@ -6,6 +6,8 @@ permalink: /kb/126/Q126672/
 
 ## Q126672: COMMAND.COM Parses Long Filenames to 8.3 Standard
 
+{% raw %}
+
 	Article: Q126672
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -73,3 +75,5 @@ permalink: /kb/126/Q126672/
 	
 	=============================================================================
 	
+
+{% endraw %}

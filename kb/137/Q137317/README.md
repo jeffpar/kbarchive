@@ -6,6 +6,8 @@ permalink: /kb/137/Q137317/
 
 ## Q137317: Bookshelf/Encarta: Wrong Fonts Are Displayed
 
+{% raw %}
+
 	Article: Q137317
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.1,3.11; :1995 edition
@@ -70,3 +72,5 @@ permalink: /kb/137/Q137317/
 	
 	=============================================================================
 	
+
+{% endraw %}

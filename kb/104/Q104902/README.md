@@ -6,6 +6,8 @@ permalink: /kb/104/Q104902/
 
 ## Q104902: Print Processors and Data Types
 
+{% raw %}
+
 	Article: Q104902
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -72,3 +74,5 @@ permalink: /kb/104/Q104902/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172015/
 
 ## Q172015: FS95: Color and Markings (Aircraft Texture) Missing on Aircraft
 
+{% raw %}
+
 	Article: Q172015
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -56,3 +58,5 @@ permalink: /kb/172/Q172015/
 	
 	=============================================================================
 	
+
+{% endraw %}

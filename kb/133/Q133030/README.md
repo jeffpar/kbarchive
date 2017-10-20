@@ -6,6 +6,8 @@ permalink: /kb/133/Q133030/
 
 ## Q133030: Upgrading Windows NT 3.1 to Windows NT 3.51 on Compaq Computers
 
+{% raw %}
+
 	Article: Q133030
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -53,3 +55,5 @@ permalink: /kb/133/Q133030/
 	
 	=============================================================================
 	
+
+{% endraw %}

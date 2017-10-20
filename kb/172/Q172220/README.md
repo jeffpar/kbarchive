@@ -6,6 +6,8 @@ permalink: /kb/172/Q172220/
 
 ## Q172220: Query Screen Fails to Redraw Field Names Correctly
 
+{% raw %}
+
 	Article: Q172220
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.0,4.0
@@ -64,3 +66,5 @@ permalink: /kb/172/Q172220/
 	
 	=============================================================================
 	
+
+{% endraw %}

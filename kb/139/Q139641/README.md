@@ -6,6 +6,8 @@ permalink: /kb/139/Q139641/
 
 ## Q139641: Backup of Schedule File Smaller Than Original
 
+{% raw %}
+
 	Article: Q139641
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -49,3 +51,5 @@ permalink: /kb/139/Q139641/
 	
 	=============================================================================
 	
+
+{% endraw %}

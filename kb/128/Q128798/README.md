@@ -6,6 +6,8 @@ permalink: /kb/128/Q128798/
 
 ## Q128798: Marquee Screen Saver Displays Wrong Colors During Remote Control
 
+{% raw %}
+
 	Article: Q128798
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -46,3 +48,5 @@ permalink: /kb/128/Q128798/
 	
 	=============================================================================
 	
+
+{% endraw %}

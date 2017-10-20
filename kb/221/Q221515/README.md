@@ -6,6 +6,8 @@ permalink: /kb/221/Q221515/
 
 ## Q221515: Delay When Saving File to a Server with High Number of Shares
 
+{% raw %}
+
 	Article: Q221515
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/221/Q221515/
 	
 	=============================================================================
 	
+
+{% endraw %}

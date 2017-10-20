@@ -6,6 +6,8 @@ permalink: /kb/247/Q247228/
 
 ## Q247228: Attachmate Advanced ISCA PCI Adapter Stays Pending
 
+{% raw %}
+
 	Article: Q247228
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 (all versions),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -74,3 +76,5 @@ permalink: /kb/247/Q247228/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/071/Q71763/
 
 ## Q71763: BUG: HELPMAKE Allows Only One CrossRef Per Line in RTF Files
 
+{% raw %}
+
 	Article: Q71763
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.05,1.06,1.07,1.08; OS/2:1.05,1.06,1.07
@@ -116,3 +118,5 @@ permalink: /kb/071/Q71763/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118854/
 
 ## Q118854: Mac OOF: Unable to Register Server Names Containing Commas
 
+{% raw %}
+
 	Article: Q118854
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.1d
@@ -61,3 +63,5 @@ permalink: /kb/118/Q118854/
 	
 	=============================================================================
 	
+
+{% endraw %}

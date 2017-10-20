@@ -6,6 +6,8 @@ permalink: /kb/156/Q156229/
 
 ## Q156229: XFOR: Errors 2140 and 4074 When Starting the IMC
 
+{% raw %}
+
 	Article: Q156229
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/156/Q156229/
 	
 	=============================================================================
 	
+
+{% endraw %}

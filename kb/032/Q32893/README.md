@@ -6,6 +6,8 @@ permalink: /kb/032/Q32893/
 
 ## Q32893: Difference between Huge Pointers
 
+{% raw %}
+
 	Article: Q32893
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10 | 5.10
@@ -44,3 +46,5 @@ permalink: /kb/032/Q32893/
 	  k = (long)(ptr2-ptr1); /* cast the integer to a long */
 	  printf("difference is %lp\n",k);
 	}
+
+{% endraw %}

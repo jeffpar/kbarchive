@@ -6,6 +6,8 @@ permalink: /kb/154/Q154694/
 
 ## Q154694: New Policy Available to Hide Go To on Tools Menu
 
+{% raw %}
+
 	Article: Q154694
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/154/Q154694/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163549/
 
 ## Q163549: WD97: Downloads and Updates Available from Microsoft
 
+{% raw %}
+
 	Article: Q163549
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/163/Q163549/
 	
 	=============================================================================
 	
+
+{% endraw %}

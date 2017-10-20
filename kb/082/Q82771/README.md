@@ -6,6 +6,8 @@ permalink: /kb/082/Q82771/
 
 ## Q82771: Windows 3.1 Setup Error Codes (S208 through S214)
 
+{% raw %}
+
 	Article: Q82771
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -108,3 +110,5 @@ permalink: /kb/082/Q82771/
 	
 	=============================================================================
 	
+
+{% endraw %}

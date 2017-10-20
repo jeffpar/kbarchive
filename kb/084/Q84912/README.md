@@ -6,6 +6,8 @@ permalink: /kb/084/Q84912/
 
 ## Q84912: Reinstalling WRK May Not Re-Create a WRK Program Group
 
+{% raw %}
+
 	Article: Q84912
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -72,3 +74,5 @@ permalink: /kb/084/Q84912/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149133/
 
 ## Q149133: BUG: Fixed-Form Source in Column 7 Is Shifted to Column 6
 
+{% raw %}
+
 	Article: Q149133
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -74,3 +76,5 @@ permalink: /kb/149/Q149133/
 	
 	=============================================================================
 	
+
+{% endraw %}

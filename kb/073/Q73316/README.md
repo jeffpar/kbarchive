@@ -6,6 +6,8 @@ permalink: /kb/073/Q73316/
 
 ## Q73316: MS-DOS Shell Error Message: Unable to Load COMMAND.COM
 
+{% raw %}
+
 	Article: Q73316
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -79,3 +81,5 @@ permalink: /kb/073/Q73316/
 	
 	=============================================================================
 	
+
+{% endraw %}

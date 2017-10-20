@@ -6,6 +6,8 @@ permalink: /kb/244/Q244462/
 
 ## Q244462: Err Msg: Cannot Start Verifying User Name and Password
 
+{% raw %}
+
 	Article: Q244462
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -55,3 +57,5 @@ permalink: /kb/244/Q244462/
 	
 	=============================================================================
 	
+
+{% endraw %}

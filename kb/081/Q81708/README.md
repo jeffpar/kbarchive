@@ -6,6 +6,8 @@ permalink: /kb/081/Q81708/
 
 ## Q81708: HOWTO: Create Applications that Task Manager Does Not Tile
 
+{% raw %}
+
 	Article: Q81708
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -80,3 +82,5 @@ permalink: /kb/081/Q81708/
 	
 	=============================================================================
 	
+
+{% endraw %}

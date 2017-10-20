@@ -6,6 +6,8 @@ permalink: /kb/194/Q194491/
 
 ## Q194491: WD97: How to Convert WordPerfect Merge Data Documents to Word
 
+{% raw %}
+
 	Article: Q194491
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -486,3 +488,5 @@ permalink: /kb/194/Q194491/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167245/
 
 ## Q167245: List of Documentation Errors in FPNW Administrator's Guide
 
+{% raw %}
+
 	Article: Q167245
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -67,3 +69,5 @@ permalink: /kb/167/Q167245/
 	
 	=============================================================================
 	
+
+{% endraw %}

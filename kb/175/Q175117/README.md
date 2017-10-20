@@ -6,6 +6,8 @@ permalink: /kb/175/Q175117/
 
 ## Q175117: XADM: Setup Fails When Joining a Site
 
+{% raw %}
+
 	Article: Q175117
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -65,3 +67,5 @@ permalink: /kb/175/Q175117/
 	
 	=============================================================================
 	
+
+{% endraw %}

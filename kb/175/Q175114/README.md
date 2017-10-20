@@ -6,6 +6,8 @@ permalink: /kb/175/Q175114/
 
 ## Q175114: XWEB: Cannot Access Custom Views Created with Outlook in OWA
 
+{% raw %}
+
 	Article: Q175114
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -40,3 +42,5 @@ permalink: /kb/175/Q175114/
 	
 	=============================================================================
 	
+
+{% endraw %}

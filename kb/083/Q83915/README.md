@@ -6,6 +6,8 @@ permalink: /kb/083/Q83915/
 
 ## Q83915: NoTitle.exe - Adding and Removing Caption of a Window
 
+{% raw %}
+
 	Article: Q83915
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -83,3 +85,5 @@ permalink: /kb/083/Q83915/
 	
 	=============================================================================
 	
+
+{% endraw %}

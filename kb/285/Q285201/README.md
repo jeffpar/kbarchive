@@ -6,6 +6,8 @@ permalink: /kb/285/Q285201/
 
 ## Q285201: Entertainment PocketPak Setup Does Not Recognize Device Type
 
+{% raw %}
+
 	Article: Q285201
 	Product(s): Microsoft Home Games
 	Version(s): 2.0,2.11,2.12,3.0
@@ -61,3 +63,5 @@ permalink: /kb/285/Q285201/
 	
 	=============================================================================
 	
+
+{% endraw %}

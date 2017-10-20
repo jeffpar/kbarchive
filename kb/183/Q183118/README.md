@@ -6,6 +6,8 @@ permalink: /kb/183/Q183118/
 
 ## Q183118: Special Characters Disallowed in Transaction Program Name
 
+{% raw %}
+
 	Article: Q183118
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -64,3 +66,5 @@ permalink: /kb/183/Q183118/
 	
 	=============================================================================
 	
+
+{% endraw %}

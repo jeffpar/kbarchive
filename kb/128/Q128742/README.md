@@ -6,6 +6,8 @@ permalink: /kb/128/Q128742/
 
 ## Q128742: PC MAPI: Custom Messages Do Not Work with IPC Messages
 
+{% raw %}
+
 	Article: Q128742
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2,3.2a
@@ -56,3 +58,5 @@ permalink: /kb/128/Q128742/
 	
 	=============================================================================
 	
+
+{% endraw %}

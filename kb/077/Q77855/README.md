@@ -6,6 +6,8 @@ permalink: /kb/077/Q77855/
 
 ## Q77855: Lotus 1-2-3 Versions 3.x and EMM386.EXE
 
+{% raw %}
+
 	Article: Q77855
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -100,3 +102,5 @@ permalink: /kb/077/Q77855/
 	
 	=============================================================================
 	
+
+{% endraw %}

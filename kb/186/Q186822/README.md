@@ -6,6 +6,8 @@ permalink: /kb/186/Q186822/
 
 ## Q186822: FP: Bookmark Hyperlink on Same Page Appears in Visited Color
 
+{% raw %}
+
 	Article: Q186822
 	Product(s): Word Front Page
 	Version(s): MACINTOSH:1.0; WINDOWS:97
@@ -50,3 +52,5 @@ permalink: /kb/186/Q186822/
 	
 	=============================================================================
 	
+
+{% endraw %}

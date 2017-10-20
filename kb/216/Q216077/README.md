@@ -6,6 +6,8 @@ permalink: /kb/216/Q216077/
 
 ## Q216077: WD97: Error Saving to NetWare Server After Upgrading to SR-2
 
+{% raw %}
+
 	Article: Q216077
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/216/Q216077/
 	
 	=============================================================================
 	
+
+{% endraw %}

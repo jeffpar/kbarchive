@@ -6,6 +6,8 @@ permalink: /kb/115/Q115205/
 
 ## Q115205: PC Tools Disk Formatter Err Msg: Can't Format Strange Disk
 
+{% raw %}
+
 	Article: Q115205
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -44,3 +46,5 @@ permalink: /kb/115/Q115205/
 	
 	=============================================================================
 	
+
+{% endraw %}

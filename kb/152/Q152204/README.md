@@ -6,6 +6,8 @@ permalink: /kb/152/Q152204/
 
 ## Q152204: DBCLEAN Fix for MIF Backup to Add Date Related Field
 
+{% raw %}
+
 	Article: Q152204
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -48,3 +50,5 @@ permalink: /kb/152/Q152204/
 	
 	=============================================================================
 	
+
+{% endraw %}

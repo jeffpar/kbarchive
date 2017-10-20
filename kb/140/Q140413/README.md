@@ -6,6 +6,8 @@ permalink: /kb/140/Q140413/
 
 ## Q140413: Bypassing Display Settings Test During an Unattended Setup
 
+{% raw %}
+
 	Article: Q140413
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -109,3 +111,5 @@ permalink: /kb/140/Q140413/
 	
 	=============================================================================
 	
+
+{% endraw %}

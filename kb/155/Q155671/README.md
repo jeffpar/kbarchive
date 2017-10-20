@@ -6,6 +6,8 @@ permalink: /kb/155/Q155671/
 
 ## Q155671: DBWEB: NT 3.51 SP4 Doesn't Restart After Installing dbWeb1.1a
 
+{% raw %}
+
 	Article: Q155671
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:1.1
@@ -129,3 +131,5 @@ permalink: /kb/155/Q155671/
 	
 	=============================================================================
 	
+
+{% endraw %}

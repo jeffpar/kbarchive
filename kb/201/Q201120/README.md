@@ -6,6 +6,8 @@ permalink: /kb/201/Q201120/
 
 ## Q201120: XFOR: Missing Postoffice in the MSMI Connection Tab
 
+{% raw %}
+
 	Article: Q201120
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -92,3 +94,5 @@ permalink: /kb/201/Q201120/
 	
 	=============================================================================
 	
+
+{% endraw %}

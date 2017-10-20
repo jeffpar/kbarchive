@@ -6,6 +6,8 @@ permalink: /kb/068/Q68139/
 
 ## Q68139: Cannot Create Macro with Macro Recorder to End Windows Session
 
+{% raw %}
+
 	Article: Q68139
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -34,3 +36,5 @@ permalink: /kb/068/Q68139/
 	
 	=============================================================================
 	
+
+{% endraw %}

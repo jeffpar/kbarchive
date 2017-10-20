@@ -6,6 +6,8 @@ permalink: /kb/094/Q94024/
 
 ## Q94024: Exclude DASDDRVR.SYS When Running MemMaker
 
+{% raw %}
+
 	Article: Q94024
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -56,3 +58,5 @@ permalink: /kb/094/Q94024/
 	
 	=============================================================================
 	
+
+{% endraw %}

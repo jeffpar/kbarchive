@@ -6,6 +6,8 @@ permalink: /kb/163/Q163313/
 
 ## Q163313: DCA ISCA SDLC Link Service Sets Incorrect Registry Entries
 
+{% raw %}
+
 	Article: Q163313
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -85,3 +87,5 @@ permalink: /kb/163/Q163313/
 	
 	=============================================================================
 	
+
+{% endraw %}

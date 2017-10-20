@@ -6,6 +6,8 @@ permalink: /kb/248/Q248075/
 
 ## Q248075: Error: HTTP 403.12 - Access Forbidden: Mapper Denied Access
 
+{% raw %}
+
 	Article: Q248075
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -79,3 +81,5 @@ permalink: /kb/248/Q248075/
 	
 	=============================================================================
 	
+
+{% endraw %}

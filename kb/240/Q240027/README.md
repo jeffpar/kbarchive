@@ -6,6 +6,8 @@ permalink: /kb/240/Q240027/
 
 ## Q240027: W3SVC and IIS Log File Names Are Listed with NCSA Format
 
+{% raw %}
+
 	Article: Q240027
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -46,3 +48,5 @@ permalink: /kb/240/Q240027/
 	
 	=============================================================================
 	
+
+{% endraw %}

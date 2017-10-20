@@ -6,6 +6,8 @@ permalink: /kb/165/Q165768/
 
 ## Q165768: FIX: Treeview Control ItemTips Fail on Windows NT 4.0
 
+{% raw %}
+
 	Article: Q165768
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0 5.0a
@@ -99,3 +101,5 @@ permalink: /kb/165/Q165768/
 	
 	=============================================================================
 	
+
+{% endraw %}

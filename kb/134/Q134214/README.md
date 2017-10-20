@@ -6,6 +6,8 @@ permalink: /kb/134/Q134214/
 
 ## Q134214: PRB: Form Won't Scroll When Selecting Item Beyond Design Area
 
+{% raw %}
+
 	Article: Q134214
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/134/Q134214/
 	
 	=============================================================================
 	
+
+{% endraw %}

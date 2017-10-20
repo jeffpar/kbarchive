@@ -6,6 +6,8 @@ permalink: /kb/218/Q218941/
 
 ## Q218941: Four-Digit Year Format for Short Date Style Regional Setting
 
+{% raw %}
+
 	Article: Q218941
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -61,3 +63,5 @@ permalink: /kb/218/Q218941/
 	
 	=============================================================================
 	
+
+{% endraw %}

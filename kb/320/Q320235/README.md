@@ -6,6 +6,8 @@ permalink: /kb/320/Q320235/
 
 ## Q320235: SMS: Components Change to Install Pending After Service Restart
 
+{% raw %}
+
 	Article: Q320235
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -86,3 +88,5 @@ permalink: /kb/320/Q320235/
 	
 	=============================================================================
 	
+
+{% endraw %}

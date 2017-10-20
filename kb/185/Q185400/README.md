@@ -6,6 +6,8 @@ permalink: /kb/185/Q185400/
 
 ## Q185400: WD97: How to Set Up a Table as a Spreadsheet in Word
 
+{% raw %}
+
 	Article: Q185400
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -229,3 +231,5 @@ permalink: /kb/185/Q185400/
 	
 	=============================================================================
 	
+
+{% endraw %}

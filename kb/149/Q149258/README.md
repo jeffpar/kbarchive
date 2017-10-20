@@ -6,6 +6,8 @@ permalink: /kb/149/Q149258/
 
 ## Q149258: Windows 95 Uninstall Does Not Restore Dual-Boot Manager
 
+{% raw %}
+
 	Article: Q149258
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.5 3.51 4.0 95
@@ -62,3 +64,5 @@ permalink: /kb/149/Q149258/
 	
 	=============================================================================
 	
+
+{% endraw %}

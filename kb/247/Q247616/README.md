@@ -6,6 +6,8 @@ permalink: /kb/247/Q247616/
 
 ## Q247616: XADM: Error 1025 Appears Approximately Every 15 Seconds
 
+{% raw %}
+
 	Article: Q247616
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -105,3 +107,5 @@ permalink: /kb/247/Q247616/
 	
 	=============================================================================
 	
+
+{% endraw %}

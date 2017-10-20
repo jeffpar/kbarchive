@@ -6,6 +6,8 @@ permalink: /kb/149/Q149978/
 
 ## Q149978: Restricted User Security Issues when Using Microsoft Programs
 
+{% raw %}
+
 	Article: Q149978
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1996 edition,1997 edition
@@ -89,3 +91,5 @@ permalink: /kb/149/Q149978/
 	
 	=============================================================================
 	
+
+{% endraw %}

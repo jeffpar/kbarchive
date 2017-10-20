@@ -6,6 +6,8 @@ permalink: /kb/198/Q198019/
 
 ## Q198019: FIX: ATL Control Does Not Size Correctly
 
+{% raw %}
+
 	Article: Q198019
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -117,3 +119,5 @@ permalink: /kb/198/Q198019/
 	
 	=============================================================================
 	
+
+{% endraw %}

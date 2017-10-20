@@ -6,6 +6,8 @@ permalink: /kb/117/Q117605/
 
 ## Q117605: Printer Names May Change When Administered Remotely
 
+{% raw %}
+
 	Article: Q117605
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -65,3 +67,5 @@ permalink: /kb/117/Q117605/
 	
 	=============================================================================
 	
+
+{% endraw %}

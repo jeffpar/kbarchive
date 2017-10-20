@@ -6,6 +6,8 @@ permalink: /kb/186/Q186543/
 
 ## Q186543: Terminal Server Error Messages: 3000 to 3099
 
+{% raw %}
+
 	Article: Q186543
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -573,3 +575,5 @@ permalink: /kb/186/Q186543/
 	
 	=============================================================================
 	
+
+{% endraw %}

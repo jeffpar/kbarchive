@@ -6,6 +6,8 @@ permalink: /kb/122/Q122648/
 
 ## Q122648: BUG: Outer Join with Another Table in FROM May Cause SQL_ERROR
 
+{% raw %}
+
 	Article: Q122648
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -84,3 +86,5 @@ permalink: /kb/122/Q122648/
 	
 	=============================================================================
 	
+
+{% endraw %}

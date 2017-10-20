@@ -6,6 +6,8 @@ permalink: /kb/131/Q131109/
 
 ## Q131109: Explorapedia Nature: Earth Rotates in Wrong Direction
 
+{% raw %}
+
 	Article: Q131109
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -42,3 +44,5 @@ permalink: /kb/131/Q131109/
 	
 	=============================================================================
 	
+
+{% endraw %}

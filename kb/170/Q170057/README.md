@@ -6,6 +6,8 @@ permalink: /kb/170/Q170057/
 
 ## Q170057: Dr. Watson Dialog Box Stops Responding
 
+{% raw %}
+
 	Article: Q170057
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/170/Q170057/
 	
 	=============================================================================
 	
+
+{% endraw %}

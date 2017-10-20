@@ -6,6 +6,8 @@ permalink: /kb/249/Q249215/
 
 ## Q249215: How to Hide the Active Desktop Item on the Settings Menu
 
+{% raw %}
+
 	Article: Q249215
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/249/Q249215/
 	
 	=============================================================================
 	
+
+{% endraw %}

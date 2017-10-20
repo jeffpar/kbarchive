@@ -6,6 +6,8 @@ permalink: /kb/066/Q66104/
 
 ## Q66104: Use of _far Keyword in Tiny Programs
 
+{% raw %}
+
 	Article: Q66104
 	Product(s): See article
 	Version(s): 6.00
@@ -46,3 +48,5 @@ permalink: /kb/066/Q66104/
 	
 	No Microsoft graphics library routines can be used when generating
 	.COM files because they are all compiled as far calls.
+
+{% endraw %}

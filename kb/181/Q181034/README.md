@@ -6,6 +6,8 @@ permalink: /kb/181/Q181034/
 
 ## Q181034: INFO: Misleading Location for VBCE Application Install Wizard
 
+{% raw %}
+
 	Article: Q181034
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/181/Q181034/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/089/Q89737/
 
 ## Q89737: Error Messages When Canon LBP-4 Set to Emulate Diablo
 
+{% raw %}
+
 	Article: Q89737
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -83,3 +85,5 @@ permalink: /kb/089/Q89737/
 	
 	=============================================================================
 	
+
+{% endraw %}

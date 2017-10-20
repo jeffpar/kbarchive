@@ -6,6 +6,8 @@ permalink: /kb/155/Q155055/
 
 ## Q155055: PRB: Problem Adding VB File from Other Drive to VSS Project
 
+{% raw %}
+
 	Article: Q155055
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,5.0
@@ -118,3 +120,5 @@ permalink: /kb/155/Q155055/
 	
 	=============================================================================
 	
+
+{% endraw %}

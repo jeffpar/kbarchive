@@ -6,6 +6,8 @@ permalink: /kb/191/Q191802/
 
 ## Q191802: How to Remove Document Templates from the New Menu
 
+{% raw %}
+
 	Article: Q191802
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/191/Q191802/
 	
 	=============================================================================
 	
+
+{% endraw %}

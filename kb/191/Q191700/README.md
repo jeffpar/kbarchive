@@ -6,6 +6,8 @@ permalink: /kb/191/Q191700/
 
 ## Q191700: PRB: Cannot Change Visual FoxPro Installation Directory
 
+{% raw %}
+
 	Article: Q191700
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -74,3 +76,5 @@ permalink: /kb/191/Q191700/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197398/
 
 ## Q197398: XCON: MTA Stops Processing Mail with Events 57, 2051 and 1105
 
+{% raw %}
+
 	Article: Q197398
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -101,3 +103,5 @@ permalink: /kb/197/Q197398/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/262/Q262796/
 
 ## Q262796: XADM: Unable to Log On When Running Replication Configurator
 
+{% raw %}
+
 	Article: Q262796
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -66,3 +68,5 @@ permalink: /kb/262/Q262796/
 	
 	=============================================================================
 	
+
+{% endraw %}

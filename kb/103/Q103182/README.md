@@ -6,6 +6,8 @@ permalink: /kb/103/Q103182/
 
 ## Q103182: ADT/ODE: Function to Determine Retail or Run-Time Version
 
+{% raw %}
+
 	Article: Q103182
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:1.1,2.0,7.0,97
@@ -104,3 +106,5 @@ permalink: /kb/103/Q103182/
 	
 	=============================================================================
 	
+
+{% endraw %}

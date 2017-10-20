@@ -6,6 +6,8 @@ permalink: /kb/130/Q130525/
 
 ## Q130525: PRB: SetFocus Doesn't Work When Called in the Valid Event
 
+{% raw %}
+
 	Article: Q130525
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -103,3 +105,5 @@ permalink: /kb/130/Q130525/
 	
 	=============================================================================
 	
+
+{% endraw %}

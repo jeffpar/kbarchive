@@ -6,6 +6,8 @@ permalink: /kb/134/Q134256/
 
 ## Q134256: Creation Time for Files in Backup May Differ from Originals
 
+{% raw %}
+
 	Article: Q134256
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/134/Q134256/
 	
 	=============================================================================
 	
+
+{% endraw %}

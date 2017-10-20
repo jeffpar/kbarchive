@@ -6,6 +6,8 @@ permalink: /kb/316/Q316787/
 
 ## Q316787: Invokable TP Registry Locations That Tpsetup.ex Creates
 
+{% raw %}
+
 	Article: Q316787
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -121,3 +123,5 @@ permalink: /kb/316/Q316787/
 	
 	=============================================================================
 	
+
+{% endraw %}

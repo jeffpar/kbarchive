@@ -6,6 +6,8 @@ permalink: /kb/168/Q168417/
 
 ## Q168417: WD97: Application.Help wdHelp Generates Run-Time Error
 
+{% raw %}
+
 	Article: Q168417
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -125,3 +127,5 @@ permalink: /kb/168/Q168417/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68250/
 
 ## Q68250: VFINTD.exe Capturing Global Interrupts in Enhanced Mode
 
+{% raw %}
+
 	Article: Q68250
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -185,3 +187,5 @@ permalink: /kb/068/Q68250/
 	
 	=============================================================================
 	
+
+{% endraw %}

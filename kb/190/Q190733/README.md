@@ -6,6 +6,8 @@ permalink: /kb/190/Q190733/
 
 ## Q190733: WD97: Opening Word Document in Text Editor Displays Deleted Text
 
+{% raw %}
+
 	Article: Q190733
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -96,3 +98,5 @@ permalink: /kb/190/Q190733/
 	
 	=============================================================================
 	
+
+{% endraw %}

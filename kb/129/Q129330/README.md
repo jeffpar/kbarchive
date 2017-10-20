@@ -6,6 +6,8 @@ permalink: /kb/129/Q129330/
 
 ## Q129330: FIX: Installing CDK Appears to Corrupt Visual C++ Help Index
 
+{% raw %}
+
 	Article: Q129330
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -60,3 +62,5 @@ permalink: /kb/129/Q129330/
 	
 	=============================================================================
 	
+
+{% endraw %}

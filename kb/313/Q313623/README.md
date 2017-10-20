@@ -6,6 +6,8 @@ permalink: /kb/313/Q313623/
 
 ## Q313623: FIX: Menus Display in English on Spanish-Language OS
 
+{% raw %}
+
 	Article: Q313623
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -97,3 +99,5 @@ permalink: /kb/313/Q313623/
 	
 	=============================================================================
 	
+
+{% endraw %}

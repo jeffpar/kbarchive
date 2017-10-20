@@ -6,6 +6,8 @@ permalink: /kb/317/Q317179/
 
 ## Q317179: Cannot Set MSN Explorer as Default E-mail Client
 
+{% raw %}
+
 	Article: Q317179
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/317/Q317179/
 	
 	=============================================================================
 	
+
+{% endraw %}

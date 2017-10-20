@@ -6,6 +6,8 @@ permalink: /kb/096/Q96517/
 
 ## Q96517: Using DoubleSpace to Compress a Bootable Hard Card
 
+{% raw %}
+
 	Article: Q96517
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -131,3 +133,5 @@ permalink: /kb/096/Q96517/
 	
 	=============================================================================
 	
+
+{% endraw %}

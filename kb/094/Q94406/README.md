@@ -6,6 +6,8 @@ permalink: /kb/094/Q94406/
 
 ## Q94406: DCA's IRMA Board Requires Updated Drivers
 
+{% raw %}
+
 	Article: Q94406
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -54,3 +56,5 @@ permalink: /kb/094/Q94406/
 	
 	=============================================================================
 	
+
+{% endraw %}

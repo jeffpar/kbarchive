@@ -6,6 +6,8 @@ permalink: /kb/040/Q40598/
 
 ## Q40598: HELPMAKE Interprets Backslashes as Formatting Flags
 
+{% raw %}
+
 	Article: Q40598
 	Product(s): See article
 	Version(s): 1.00 1.04 1.05 1.06 | 1.04 1.05 1.06
@@ -21,3 +23,5 @@ permalink: /kb/040/Q40598/
 	For further information on formatting flags, refer to the HELPMAKE
 	documentation in the utilities manual, or the online help supplied
 	with your particular compiler.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160590/
 
 ## Q160590: XFOR: PCMTA: The Status Could Not Be Logged
 
+{% raw %}
+
 	Article: Q160590
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/160/Q160590/
 	
 	=============================================================================
 	
+
+{% endraw %}

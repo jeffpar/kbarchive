@@ -6,6 +6,8 @@ permalink: /kb/085/Q85849/
 
 ## Q85849: MicroSpeed FastTrap Mouse and Windows 3.1
 
+{% raw %}
+
 	Article: Q85849
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -62,3 +64,5 @@ permalink: /kb/085/Q85849/
 	
 	=============================================================================
 	
+
+{% endraw %}

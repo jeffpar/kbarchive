@@ -6,6 +6,8 @@ permalink: /kb/044/Q44640/
 
 ## Q44640: QuickC Incorrectly Complains Struct/Union Undefined
 
+{% raw %}
+
 	Article: Q44640
 	Product(s): See article
 	Version(s): 2.00
@@ -45,3 +47,5 @@ permalink: /kb/044/Q44640/
 	Microsoft has confirmed this to be a problem in Version 2.00 of the
 	QuickC Compiler. We are researching this problem and will post new
 	information as soon as it becomes available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/244/Q244860/
 
 ## Q244860: XCLN: Foreign Characters in Subject Line Appear as ????????
 
+{% raw %}
+
 	Article: Q244860
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,97,98
@@ -50,3 +52,5 @@ permalink: /kb/244/Q244860/
 	
 	=============================================================================
 	
+
+{% endraw %}

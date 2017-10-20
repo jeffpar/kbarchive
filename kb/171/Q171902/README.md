@@ -6,6 +6,8 @@ permalink: /kb/171/Q171902/
 
 ## Q171902: Cannot Connect to The Microsoft Network
 
+{% raw %}
+
 	Article: Q171902
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5,2.51,2.52,2.6,5.0
@@ -67,3 +69,5 @@ permalink: /kb/171/Q171902/
 	
 	=============================================================================
 	
+
+{% endraw %}

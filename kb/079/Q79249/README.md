@@ -6,6 +6,8 @@ permalink: /kb/079/Q79249/
 
 ## Q79249: Restore Command Isn't Available in Maximized Group Window
 
+{% raw %}
+
 	Article: Q79249
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -44,3 +46,5 @@ permalink: /kb/079/Q79249/
 	
 	=============================================================================
 	
+
+{% endraw %}

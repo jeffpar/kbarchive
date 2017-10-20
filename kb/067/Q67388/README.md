@@ -6,6 +6,8 @@ permalink: /kb/067/Q67388/
 
 ## Q67388: ASD: To Set a Timer, Altitude Alert Warning, or Pitot Heat
 
+{% raw %}
+
 	Article: Q67388
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/067/Q67388/
 	
 	=============================================================================
 	
+
+{% endraw %}

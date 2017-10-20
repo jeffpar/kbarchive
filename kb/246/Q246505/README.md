@@ -6,6 +6,8 @@ permalink: /kb/246/Q246505/
 
 ## Q246505: PRB: Error Granting Permissions to a Domain Account on a Cluster
 
+{% raw %}
+
 	Article: Q246505
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0,1.1
@@ -70,3 +72,5 @@ permalink: /kb/246/Q246505/
 	
 	=============================================================================
 	
+
+{% endraw %}

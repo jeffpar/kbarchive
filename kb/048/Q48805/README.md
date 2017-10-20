@@ -6,6 +6,8 @@ permalink: /kb/048/Q48805/
 
 ## Q48805: Tabs from QuickC Get Expanded
 
+{% raw %}
+
 	Article: Q48805
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -31,3 +33,5 @@ permalink: /kb/048/Q48805/
 	default value is eight blank spaces per tab character. Changing this
 	default value within QuickC does not change the default value for
 	other editors.
+
+{% endraw %}

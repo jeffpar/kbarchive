@@ -6,6 +6,8 @@ permalink: /kb/288/Q288238/
 
 ## Q288238: Fix from Q275657 Causes Problems with HTML Admin
 
+{% raw %}
+
 	Article: Q288238
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -99,3 +101,5 @@ permalink: /kb/288/Q288238/
 	
 	=============================================================================
 	
+
+{% endraw %}

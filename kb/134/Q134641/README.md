@@ -6,6 +6,8 @@ permalink: /kb/134/Q134641/
 
 ## Q134641: DOCERR: Calling Parent Class Method Code Example Is Incorrect
 
+{% raw %}
+
 	Article: Q134641
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -63,3 +65,5 @@ permalink: /kb/134/Q134641/
 	
 	=============================================================================
 	
+
+{% endraw %}

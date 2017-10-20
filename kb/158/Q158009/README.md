@@ -6,6 +6,8 @@ permalink: /kb/158/Q158009/
 
 ## Q158009: WD97: Error Message: An Error Occurred While Importing This File
 
+{% raw %}
+
 	Article: Q158009
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -132,3 +134,5 @@ permalink: /kb/158/Q158009/
 	
 	=============================================================================
 	
+
+{% endraw %}

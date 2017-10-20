@@ -6,6 +6,8 @@ permalink: /kb/074/Q74550/
 
 ## Q74550: NET&#36;OS.EXE File from Novell Network Needs HIMEM /int15 Switch
 
+{% raw %}
+
 	Article: Q74550
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -56,3 +58,5 @@ permalink: /kb/074/Q74550/
 	
 	=============================================================================
 	
+
+{% endraw %}

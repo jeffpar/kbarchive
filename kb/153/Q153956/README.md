@@ -6,6 +6,8 @@ permalink: /kb/153/Q153956/
 
 ## Q153956: System Performance Degrades w/ 16-Bit OLE Application
 
+{% raw %}
+
 	Article: Q153956
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -49,3 +51,5 @@ permalink: /kb/153/Q153956/
 	
 	=============================================================================
 	
+
+{% endraw %}

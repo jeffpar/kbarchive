@@ -6,6 +6,8 @@ permalink: /kb/215/Q215468/
 
 ## Q215468: SMS: Systems Management Server 2.0 Release Notes
 
+{% raw %}
+
 	Article: Q215468
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -109,3 +111,5 @@ permalink: /kb/215/Q215468/
 	
 	=============================================================================
 	
+
+{% endraw %}

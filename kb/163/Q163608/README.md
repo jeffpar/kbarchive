@@ -6,6 +6,8 @@ permalink: /kb/163/Q163608/
 
 ## Q163608: XADM: SQL MS Mail Messaging Breaks After Upgrading Windows NT
 
+{% raw %}
+
 	Article: Q163608
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -63,3 +65,5 @@ permalink: /kb/163/Q163608/
 	
 	=============================================================================
 	
+
+{% endraw %}

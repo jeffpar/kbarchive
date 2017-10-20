@@ -6,6 +6,8 @@ permalink: /kb/131/Q131948/
 
 ## Q131948: DOGS: TROUBLE.TXT Contents
 
+{% raw %}
+
 	Article: Q131948
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -344,3 +346,5 @@ permalink: /kb/131/Q131948/
 	
 	=============================================================================
 	
+
+{% endraw %}

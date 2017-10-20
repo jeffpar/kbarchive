@@ -6,6 +6,8 @@ permalink: /kb/258/Q258859/
 
 ## Q258859: Description of Special SFUUSER Account Created by SFU 2.0
 
+{% raw %}
+
 	Article: Q258859
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:
@@ -50,3 +52,5 @@ permalink: /kb/258/Q258859/
 	
 	=============================================================================
 	
+
+{% endraw %}

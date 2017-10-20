@@ -6,6 +6,8 @@ permalink: /kb/272/Q272923/
 
 ## Q272923: SMS: Documentation Incorrectly States NTFS Permissions
 
+{% raw %}
+
 	Article: Q272923
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -67,3 +69,5 @@ permalink: /kb/272/Q272923/
 	
 	=============================================================================
 	
+
+{% endraw %}

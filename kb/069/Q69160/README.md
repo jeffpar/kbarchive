@@ -6,6 +6,8 @@ permalink: /kb/069/Q69160/
 
 ## Q69160: &quot;Subscript Out of Range,&quot; Graphics GET with LONG Integer
 
+{% raw %}
+
 	Article: Q69160
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10 | 6.00 6.00b 7.00 7.10
@@ -56,3 +58,5 @@ permalink: /kb/069/Q69160/
 	SUB test (array() AS LONG)
 	7  GET (50, 50)-(100, 100), array(4)
 	END SUB
+
+{% endraw %}

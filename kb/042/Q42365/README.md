@@ -6,6 +6,8 @@ permalink: /kb/042/Q42365/
 
 ## Q42365: 43- and 50-Line Modes with the IBM 8514 Monitor
 
+{% raw %}
+
 	Article: Q42365
 	Product(s): See article
 	Version(s): 1.00 1.02
@@ -27,3 +29,5 @@ permalink: /kb/042/Q42365/
 	Microsoft has confirmed this to be a problem in Version 1.00 of the
 	Microsoft Editor. This problem was corrected in the Microsoft Editor
 	Version 1.02.
+
+{% endraw %}

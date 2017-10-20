@@ -6,6 +6,8 @@ permalink: /kb/265/Q265088/
 
 ## Q265088: XCLN: Free and Busy Details Unavailable from Different Time Zone
 
+{% raw %}
+
 	Article: Q265088
 	Product(s): Microsoft Exchange
 	Version(s): 2000
@@ -89,3 +91,5 @@ permalink: /kb/265/Q265088/
 	
 	=============================================================================
 	
+
+{% endraw %}

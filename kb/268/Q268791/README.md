@@ -6,6 +6,8 @@ permalink: /kb/268/Q268791/
 
 ## Q268791: SMS: How Status MIF Produced by ISMIF32.exe Is Processed in SMS
 
+{% raw %}
+
 	Article: Q268791
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -103,3 +105,5 @@ permalink: /kb/268/Q268791/
 	
 	=============================================================================
 	
+
+{% endraw %}

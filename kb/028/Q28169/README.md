@@ -6,6 +6,8 @@ permalink: /kb/028/Q28169/
 
 ## Q28169: Selecting Text in QB.EXE with Nondedicated Cursors on Toshiba
 
+{% raw %}
+
 	Article: Q28169
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -35,3 +37,5 @@ permalink: /kb/028/Q28169/
 	as a toggle to allow the cursor arrow keys to select text. After the
 	text is selected, you must press CTRL+ALT+BACKSPACE again to resume
 	the original keyboard mode.
+
+{% endraw %}

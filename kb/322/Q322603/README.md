@@ -6,6 +6,8 @@ permalink: /kb/322/Q322603/
 
 ## Q322603: HOW TO: Enable ASPX Compression in IIS
 
+{% raw %}
+
 	Article: Q322603
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -123,3 +125,5 @@ permalink: /kb/322/Q322603/
 	
 	=============================================================================
 	
+
+{% endraw %}

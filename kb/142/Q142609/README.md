@@ -6,6 +6,8 @@ permalink: /kb/142/Q142609/
 
 ## Q142609: Corruption Problem When Running DPMI Application
 
+{% raw %}
+
 	Article: Q142609
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -59,3 +61,5 @@ permalink: /kb/142/Q142609/
 	
 	=============================================================================
 	
+
+{% endraw %}

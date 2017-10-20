@@ -6,6 +6,8 @@ permalink: /kb/138/Q138390/
 
 ## Q138390: Cannot Find API getnamebyaddr Referred to in TN3270 Event 203
 
+{% raw %}
+
 	Article: Q138390
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -79,3 +81,5 @@ permalink: /kb/138/Q138390/
 	
 	=============================================================================
 	
+
+{% endraw %}

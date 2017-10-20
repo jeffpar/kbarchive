@@ -6,6 +6,8 @@ permalink: /kb/163/Q163474/
 
 ## Q163474: BUG: MessageBox with Keycomp=Windows Returns Incorrect Value
 
+{% raw %}
+
 	Article: Q163474
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -69,3 +71,5 @@ permalink: /kb/163/Q163474/
 	
 	=============================================================================
 	
+
+{% endraw %}

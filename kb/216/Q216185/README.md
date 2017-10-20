@@ -6,6 +6,8 @@ permalink: /kb/216/Q216185/
 
 ## Q216185: HOWTO: Create Multi-Column Menus in Visual Basic Using the WIN32
 
+{% raw %}
+
 	Article: Q216185
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -196,3 +198,5 @@ permalink: /kb/216/Q216185/
 	
 	=============================================================================
 	
+
+{% endraw %}

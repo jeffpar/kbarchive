@@ -6,6 +6,8 @@ permalink: /kb/305/Q305332/
 
 ## Q305332: SMS: Permissions Assigned to Domain Local Groups Do Not Work
 
+{% raw %}
+
 	Article: Q305332
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -86,3 +88,5 @@ permalink: /kb/305/Q305332/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/095/Q95198/
 
 ## Q95198: PRB: C2061 Error Generated When DEBUG_NEW Used in Application
 
+{% raw %}
+
 	Article: Q95198
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1
@@ -63,3 +65,5 @@ permalink: /kb/095/Q95198/
 	
 	=============================================================================
 	
+
+{% endraw %}

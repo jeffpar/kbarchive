@@ -6,6 +6,8 @@ permalink: /kb/177/Q177525/
 
 ## Q177525: &quot;Fatal Exception 0D&quot; Error Message After Pressing CAPS LOCK Key
 
+{% raw %}
+
 	Article: Q177525
 	Product(s): Microsoft Home Miscellaneous Products
 	Version(s): WINDOWS:1.0,2.0,5.0
@@ -126,3 +128,5 @@ permalink: /kb/177/Q177525/
 	
 	=============================================================================
 	
+
+{% endraw %}

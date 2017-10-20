@@ -6,6 +6,8 @@ permalink: /kb/163/Q163488/
 
 ## Q163488: SMS: PCM Processes .Ins File Only When .Ins File Is Modified
 
+{% raw %}
+
 	Article: Q163488
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -77,3 +79,5 @@ permalink: /kb/163/Q163488/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171993/
 
 ## Q171993: GET_LU_STATUS May Return PARAMETER_CHECK/BAD_REMOTE_LU_ALIAS
 
+{% raw %}
+
 	Article: Q171993
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -61,3 +63,5 @@ permalink: /kb/171/Q171993/
 	
 	=============================================================================
 	
+
+{% endraw %}

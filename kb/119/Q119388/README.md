@@ -6,6 +6,8 @@ permalink: /kb/119/Q119388/
 
 ## Q119388: Autopilot: Landing Gear Deployed at High Altitudes
 
+{% raw %}
+
 	Article: Q119388
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -44,3 +46,5 @@ permalink: /kb/119/Q119388/
 	
 	=============================================================================
 	
+
+{% endraw %}

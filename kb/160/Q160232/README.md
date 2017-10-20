@@ -6,6 +6,8 @@ permalink: /kb/160/Q160232/
 
 ## Q160232: FP97: Inserted TIFF Files Appear as Broken Images
 
+{% raw %}
+
 	Article: Q160232
 	Product(s): Word Front Page
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/160/Q160232/
 	
 	=============================================================================
 	
+
+{% endraw %}

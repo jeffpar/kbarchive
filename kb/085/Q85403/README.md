@@ -6,6 +6,8 @@ permalink: /kb/085/Q85403/
 
 ## Q85403: MS-DOS 5.0a Upgrade PACKING.LST (5.25-Inch, 1.2 MB Disk Set)
 
+{% raw %}
+
 	Article: Q85403
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0a
@@ -269,3 +271,5 @@ permalink: /kb/085/Q85403/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87305/
 
 ## Q87305: X400: Outgoing Messages Will No Longer Sit in Outgoing Queue
 
+{% raw %}
+
 	Article: Q87305
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -39,3 +41,5 @@ permalink: /kb/087/Q87305/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197154/
 
 ## Q197154: WD97: All Revisions, Changes Not Merged After Merging Documents
 
+{% raw %}
+
 	Article: Q197154
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -52,3 +54,5 @@ permalink: /kb/197/Q197154/
 	
 	=============================================================================
 	
+
+{% endraw %}

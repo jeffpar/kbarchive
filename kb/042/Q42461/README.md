@@ -6,6 +6,8 @@ permalink: /kb/042/Q42461/
 
 ## Q42461: C Function _dos_setdrive Returns &quot;5&quot; Drives in the System
 
+{% raw %}
+
 	Article: Q42461
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -46,3 +48,5 @@ permalink: /kb/042/Q42461/
 	Note: The above information applies only to DOS Versions 3.x and 4.x.
 	Under DOS 2.x, the actual number of drives present in the system will
 	be reported.
+
+{% endraw %}

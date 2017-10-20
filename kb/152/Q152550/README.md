@@ -6,6 +6,8 @@ permalink: /kb/152/Q152550/
 
 ## Q152550: Mac Cinemania: How to Import ListMaker Files
 
+{% raw %}
+
 	Article: Q152550
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -79,3 +81,5 @@ permalink: /kb/152/Q152550/
 	
 	=============================================================================
 	
+
+{% endraw %}

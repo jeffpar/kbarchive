@@ -6,6 +6,8 @@ permalink: /kb/137/Q137939/
 
 ## Q137939: Shortcut to MS-DOS-Based Program Limited to 62 Characters
 
+{% raw %}
+
 	Article: Q137939
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -55,3 +57,5 @@ permalink: /kb/137/Q137939/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177952/
 
 ## Q177952: Age of Empires: Turtle, or Yellow or Red Dot Next to Player Name
 
+{% raw %}
+
 	Article: Q177952
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -101,3 +103,5 @@ permalink: /kb/177/Q177952/
 	
 	=============================================================================
 	
+
+{% endraw %}

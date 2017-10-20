@@ -6,6 +6,8 @@ permalink: /kb/154/Q154172/
 
 ## Q154172: How To Pass Binary Data Between an ActiveX Control and VB
 
+{% raw %}
+
 	Article: Q154172
 	Product(s): Microsoft C Compiler
 	Version(s): 2.00 2.10 2.20 4.00 4.10 4.20
@@ -124,3 +126,5 @@ permalink: /kb/154/Q154172/
 	
 	=============================================================================
 	
+
+{% endraw %}

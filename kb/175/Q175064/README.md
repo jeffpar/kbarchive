@@ -6,6 +6,8 @@ permalink: /kb/175/Q175064/
 
 ## Q175064: Bookshelf 98: Unneeded Excel Integration File Copied to Computer
 
+{% raw %}
+
 	Article: Q175064
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -49,3 +51,5 @@ permalink: /kb/175/Q175064/
 	
 	=============================================================================
 	
+
+{% endraw %}

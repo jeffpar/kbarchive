@@ -6,6 +6,8 @@ permalink: /kb/042/Q42668/
 
 ## Q42668: &quot;Statement Illegal in TYPE Block&quot; Using F7 in QB.EXE Debug
 
+{% raw %}
+
 	Article: Q42668
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -33,3 +35,5 @@ permalink: /kb/042/Q42668/
 	   ANYDATA AS INTEGER
 	END TYPE
 	CLS
+
+{% endraw %}

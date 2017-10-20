@@ -6,6 +6,8 @@ permalink: /kb/173/Q173966/
 
 ## Q173966: How to Filter Certain Folders from Query Results
 
+{% raw %}
+
 	Article: Q173966
 	Product(s): Internet Information Server
 	Version(s): WINNT: 1.1
@@ -70,3 +72,5 @@ permalink: /kb/173/Q173966/
 	
 	=============================================================================
 	
+
+{% endraw %}

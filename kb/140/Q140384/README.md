@@ -6,6 +6,8 @@ permalink: /kb/140/Q140384/
 
 ## Q140384: FTP Server Welcome Banner Has Old Computer Name
 
+{% raw %}
+
 	Article: Q140384
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -83,3 +85,5 @@ permalink: /kb/140/Q140384/
 	
 	=============================================================================
 	
+
+{% endraw %}

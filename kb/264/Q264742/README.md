@@ -6,6 +6,8 @@ permalink: /kb/264/Q264742/
 
 ## Q264742: Inactive LUs May Cause SnaPrint Service Utilization to Increase
 
+{% raw %}
+
 	Article: Q264742
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -57,3 +59,5 @@ permalink: /kb/264/Q264742/
 	
 	=============================================================================
 	
+
+{% endraw %}

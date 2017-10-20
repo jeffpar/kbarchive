@@ -6,6 +6,8 @@ permalink: /kb/194/Q194702/
 
 ## Q194702: HOWTO: Locate Windows Special Folder Locations
 
+{% raw %}
+
 	Article: Q194702
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -99,3 +101,5 @@ permalink: /kb/194/Q194702/
 	
 	=============================================================================
 	
+
+{% endraw %}

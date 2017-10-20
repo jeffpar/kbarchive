@@ -6,6 +6,8 @@ permalink: /kb/034/Q34285/
 
 ## Q34285: CLEAR Can Cause READ/DATA &quot;Syntax Error&quot; in Non-Stand Alone
 
+{% raw %}
+
 	Article: Q34285
 	Product(s): See article
 	Version(s): 4.00b
@@ -44,3 +46,5 @@ permalink: /kb/034/Q34285/
 	40 PRINT a, b
 	50 INPUT ; r$
 	60 IF r$ <> "q" THEN GOTO 10    'Type "q" to end program.
+
+{% endraw %}

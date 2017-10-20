@@ -6,6 +6,8 @@ permalink: /kb/158/Q158720/
 
 ## Q158720: Error Message: No Data Requested
 
+{% raw %}
+
 	Article: Q158720
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:1.0
@@ -94,3 +96,5 @@ permalink: /kb/158/Q158720/
 	
 	=============================================================================
 	
+
+{% endraw %}

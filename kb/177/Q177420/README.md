@@ -6,6 +6,8 @@ permalink: /kb/177/Q177420/
 
 ## Q177420: Rcmd.exe Err Msg: Failed to Connect
 
+{% raw %}
+
 	Article: Q177420
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -82,3 +84,5 @@ permalink: /kb/177/Q177420/
 	
 	=============================================================================
 	
+
+{% endraw %}

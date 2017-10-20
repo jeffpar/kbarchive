@@ -6,6 +6,8 @@ permalink: /kb/282/Q282901/
 
 ## Q282901: Drive Letters Are Not Assigned for SCSI Devices
 
+{% raw %}
+
 	Article: Q282901
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1,2.5
@@ -82,3 +84,5 @@ permalink: /kb/282/Q282901/
 	
 	=============================================================================
 	
+
+{% endraw %}

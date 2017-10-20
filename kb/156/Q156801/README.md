@@ -6,6 +6,8 @@ permalink: /kb/156/Q156801/
 
 ## Q156801: Stop 0x4,0x1,0,0 on DEC ALPHA 1000 During Setup
 
+{% raw %}
+
 	Article: Q156801
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -48,3 +50,5 @@ permalink: /kb/156/Q156801/
 	
 	=============================================================================
 	
+
+{% endraw %}

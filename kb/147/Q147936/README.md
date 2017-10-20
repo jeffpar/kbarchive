@@ -6,6 +6,8 @@ permalink: /kb/147/Q147936/
 
 ## Q147936: Incorrect Output Printing Through Captured LPT Port to FPNW
 
+{% raw %}
+
 	Article: Q147936
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -56,3 +58,5 @@ permalink: /kb/147/Q147936/
 	
 	=============================================================================
 	
+
+{% endraw %}

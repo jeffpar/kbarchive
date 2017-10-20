@@ -6,6 +6,8 @@ permalink: /kb/110/Q110523/
 
 ## Q110523: No Text in Colored Boxes using HP1200C Under Windows NT
 
+{% raw %}
+
 	Article: Q110523
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -56,3 +58,5 @@ permalink: /kb/110/Q110523/
 	
 	=============================================================================
 	
+
+{% endraw %}

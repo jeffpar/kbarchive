@@ -6,6 +6,8 @@ permalink: /kb/176/Q176350/
 
 ## Q176350: HOWTO: Open Visual SourceSafe to a Specific Database
 
+{% raw %}
+
 	Article: Q176350
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/176/Q176350/
 	
 	=============================================================================
 	
+
+{% endraw %}

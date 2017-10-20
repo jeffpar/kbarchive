@@ -6,6 +6,8 @@ permalink: /kb/140/Q140037/
 
 ## Q140037: CPI-C cmecsu() Call Always Returns pLengthUserID=1
 
+{% raw %}
+
 	Article: Q140037
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -70,3 +72,5 @@ permalink: /kb/140/Q140037/
 	
 	=============================================================================
 	
+
+{% endraw %}

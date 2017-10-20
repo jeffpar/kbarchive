@@ -6,6 +6,8 @@ permalink: /kb/164/Q164778/
 
 ## Q164778: BUG: Loading Visual Test Project May Crash Developer Studio
 
+{% raw %}
+
 	Article: Q164778
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00 4.10 4.20
@@ -94,3 +96,5 @@ permalink: /kb/164/Q164778/
 	
 	=============================================================================
 	
+
+{% endraw %}

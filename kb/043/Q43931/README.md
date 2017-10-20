@@ -6,6 +6,8 @@ permalink: /kb/043/Q43931/
 
 ## Q43931: BC 6.00's BUILDRTM Has Not Been Tested with QB 4.50's Compiler
 
+{% raw %}
+
 	Article: Q43931
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -28,3 +30,5 @@ permalink: /kb/043/Q43931/
 	Version 7.00 for MS-DOS and OS/2. BUILDRTM adds routines to extend the
 	BRUN6xx.EXE run-time libraries for Versions 6.00 and 6.00b and the
 	BRT70xxx.EXE run-time libraries for BASIC PDS 7.00.
+
+{% endraw %}

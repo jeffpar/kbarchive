@@ -6,6 +6,8 @@ permalink: /kb/130/Q130801/
 
 ## Q130801: Common Causes of STOP Messages 0x00000077 and 0x0000007A
 
+{% raw %}
+
 	Article: Q130801
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -82,3 +84,5 @@ permalink: /kb/130/Q130801/
 	
 	=============================================================================
 	
+
+{% endraw %}

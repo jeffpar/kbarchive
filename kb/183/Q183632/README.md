@@ -6,6 +6,8 @@ permalink: /kb/183/Q183632/
 
 ## Q183632: INFO: How to Add &quot;Generate Report&quot; Menu Item in Visual Mode
 
+{% raw %}
+
 	Article: Q183632
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -63,3 +65,5 @@ permalink: /kb/183/Q183632/
 	
 	=============================================================================
 	
+
+{% endraw %}

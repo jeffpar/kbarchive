@@ -6,6 +6,8 @@ permalink: /kb/195/Q195271/
 
 ## Q195271: Dev Int'l Software: Unicode to ANSI Conversion May Fail
 
+{% raw %}
+
 	Article: Q195271
 	Product(s): Microsoft Press
 	Version(s): 
@@ -479,3 +481,5 @@ permalink: /kb/195/Q195271/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/221/Q221681/
 
 ## Q221681: FIX: Locals Window Not Refreshed with SUSPEND or SET STEP ON
 
+{% raw %}
+
 	Article: Q221681
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -135,3 +137,5 @@ permalink: /kb/221/Q221681/
 	
 	=============================================================================
 	
+
+{% endraw %}

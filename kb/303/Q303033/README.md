@@ -6,6 +6,8 @@ permalink: /kb/303/Q303033/
 
 ## Q303033: Asherons Call: You Cannot Communicate with Other Players
 
+{% raw %}
+
 	Article: Q303033
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/303/Q303033/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/094/Q94388/
 
 ## Q94388: Modifying MS-DOS Help Command Reference
 
+{% raw %}
+
 	Article: Q94388
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -39,3 +41,5 @@ permalink: /kb/094/Q94388/
 	
 	=============================================================================
 	
+
+{% endraw %}

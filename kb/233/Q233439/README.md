@@ -6,6 +6,8 @@ permalink: /kb/233/Q233439/
 
 ## Q233439: Business Planner: Scroll Box Jumps When You Release Mouse Button
 
+{% raw %}
+
 	Article: Q233439
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -57,3 +59,5 @@ permalink: /kb/233/Q233439/
 	
 	=============================================================================
 	
+
+{% endraw %}

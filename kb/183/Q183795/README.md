@@ -6,6 +6,8 @@ permalink: /kb/183/Q183795/
 
 ## Q183795: XCLN: Err Msg Opening Read Receipt After Upgrading NT Server
 
+{% raw %}
+
 	Article: Q183795
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/183/Q183795/
 	
 	=============================================================================
 	
+
+{% endraw %}

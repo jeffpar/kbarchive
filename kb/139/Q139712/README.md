@@ -6,6 +6,8 @@ permalink: /kb/139/Q139712/
 
 ## Q139712: Removable SCSI Media Not Visible in Windows Explorer
 
+{% raw %}
+
 	Article: Q139712
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -89,3 +91,5 @@ permalink: /kb/139/Q139712/
 	
 	=============================================================================
 	
+
+{% endraw %}

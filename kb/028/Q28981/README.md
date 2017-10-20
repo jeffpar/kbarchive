@@ -6,6 +6,8 @@ permalink: /kb/028/Q28981/
 
 ## Q28981: Compiled with BC, SHARED Long Integer Arrays Are Wrong in SUB
 
+{% raw %}
+
 	Article: Q28981
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -89,3 +91,5 @@ permalink: /kb/028/Q28981/
 	ntn! 1
 	ntn! 1
 	ntn! -5.965761E-30
+
+{% endraw %}

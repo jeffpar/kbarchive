@@ -6,6 +6,8 @@ permalink: /kb/085/Q85490/
 
 ## Q85490: PRB: Number Causes Help Compiler Invalid Context ID Error
 
+{% raw %}
+
 	Article: Q85490
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 3.0,3.1; WINDOWS:3.5,3.51,4.0
@@ -55,3 +57,5 @@ permalink: /kb/085/Q85490/
 	
 	=============================================================================
 	
+
+{% endraw %}

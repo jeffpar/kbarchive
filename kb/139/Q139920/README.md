@@ -6,6 +6,8 @@ permalink: /kb/139/Q139920/
 
 ## Q139920: Multimedia: Error Message: Uninstaller Error
 
+{% raw %}
+
 	Article: Q139920
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -132,3 +134,5 @@ permalink: /kb/139/Q139920/
 	
 	=============================================================================
 	
+
+{% endraw %}

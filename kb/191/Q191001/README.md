@@ -6,6 +6,8 @@ permalink: /kb/191/Q191001/
 
 ## Q191001: BUG: PDW May Handle .REG Files Incorrectly
 
+{% raw %}
+
 	Article: Q191001
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -72,3 +74,5 @@ permalink: /kb/191/Q191001/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68556/
 
 ## Q68556: DlgMain.exe Uses a Dialog Box as the Main Window
 
+{% raw %}
+
 	Article: Q68556
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -185,3 +187,5 @@ permalink: /kb/068/Q68556/
 	
 	=============================================================================
 	
+
+{% endraw %}

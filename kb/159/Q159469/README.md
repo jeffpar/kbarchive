@@ -6,6 +6,8 @@ permalink: /kb/159/Q159469/
 
 ## Q159469: WD97: Run-Time Error Using VBA Macro to Resize Document Window
 
+{% raw %}
+
 	Article: Q159469
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -118,3 +120,5 @@ permalink: /kb/159/Q159469/
 	
 	=============================================================================
 	
+
+{% endraw %}

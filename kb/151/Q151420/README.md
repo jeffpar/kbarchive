@@ -6,6 +6,8 @@ permalink: /kb/151/Q151420/
 
 ## Q151420: Fury3: AVI Music Turns Off When Resizing Window
 
+{% raw %}
+
 	Article: Q151420
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -76,3 +78,5 @@ permalink: /kb/151/Q151420/
 	
 	=============================================================================
 	
+
+{% endraw %}

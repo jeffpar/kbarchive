@@ -6,6 +6,8 @@ permalink: /kb/259/Q259274/
 
 ## Q259274: PRB: INSERT - SQL Does Not Support Use of SELECT Statement
 
+{% raw %}
+
 	Article: Q259274
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -85,3 +87,5 @@ permalink: /kb/259/Q259274/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196716/
 
 ## Q196716: WD97: Selecting &quot;(None)&quot; Resets Filter Comparison
 
+{% raw %}
+
 	Article: Q196716
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/196/Q196716/
 	
 	=============================================================================
 	
+
+{% endraw %}

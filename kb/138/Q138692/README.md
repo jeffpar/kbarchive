@@ -6,6 +6,8 @@ permalink: /kb/138/Q138692/
 
 ## Q138692: HOWTO: Configure a Time-Out on a CSocket Operation
 
+{% raw %}
+
 	Article: Q138692
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0
@@ -210,3 +212,5 @@ permalink: /kb/138/Q138692/
 	
 	=============================================================================
 	
+
+{% endraw %}

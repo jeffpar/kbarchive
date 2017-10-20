@@ -6,6 +6,8 @@ permalink: /kb/085/Q85968/
 
 ## Q85968: PC Win: Excel 4.0 Chart May Appear Smaller Than Normal
 
+{% raw %}
+
 	Article: Q85968
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -65,3 +67,5 @@ permalink: /kb/085/Q85968/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143013/
 
 ## Q143013: PPT7: After Build Step Fails in Slide Show
 
+{% raw %}
+
 	Article: Q143013
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -64,3 +66,5 @@ permalink: /kb/143/Q143013/
 	
 	=============================================================================
 	
+
+{% endraw %}

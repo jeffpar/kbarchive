@@ -6,6 +6,8 @@ permalink: /kb/098/Q98934/
 
 ## Q98934: Description of Tic Tac Drop
 
+{% raw %}
+
 	Article: Q98934
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -59,3 +61,5 @@ permalink: /kb/098/Q98934/
 	
 	=============================================================================
 	
+
+{% endraw %}

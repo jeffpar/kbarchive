@@ -6,6 +6,8 @@ permalink: /kb/094/Q94384/
 
 ## Q94384: Err Msg: MSBACKUP Program Files Must Be Located on Hard Disk
 
+{% raw %}
+
 	Article: Q94384
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -55,3 +57,5 @@ permalink: /kb/094/Q94384/
 	
 	=============================================================================
 	
+
+{% endraw %}

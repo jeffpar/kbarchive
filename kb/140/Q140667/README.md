@@ -6,6 +6,8 @@ permalink: /kb/140/Q140667/
 
 ## Q140667: Dinosaurs and MSB Ocean: Unable to Print to a Canon BJC-610
 
+{% raw %}
+
 	Article: Q140667
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,1.0a
@@ -84,3 +86,5 @@ permalink: /kb/140/Q140667/
 	
 	=============================================================================
 	
+
+{% endraw %}

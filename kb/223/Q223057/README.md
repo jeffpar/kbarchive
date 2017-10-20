@@ -6,6 +6,8 @@ permalink: /kb/223/Q223057/
 
 ## Q223057: XCON: PROFS Connector Fails to Remove .att Files from Objects
 
+{% raw %}
+
 	Article: Q223057
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -71,3 +73,5 @@ permalink: /kb/223/Q223057/
 	
 	=============================================================================
 	
+
+{% endraw %}

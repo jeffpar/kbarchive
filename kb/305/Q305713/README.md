@@ -6,6 +6,8 @@ permalink: /kb/305/Q305713/
 
 ## Q305713: &quot;Margins Do Not Fit Page Size&quot; After You Switch Printer Driver
 
+{% raw %}
+
 	Article: Q305713
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -156,3 +158,5 @@ permalink: /kb/305/Q305713/
 	
 	=============================================================================
 	
+
+{% endraw %}

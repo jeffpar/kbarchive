@@ -6,6 +6,8 @@ permalink: /kb/179/Q179573/
 
 ## Q179573: XADM: Orphaned Objects and Exchange Server Directory
 
+{% raw %}
+
 	Article: Q179573
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -187,3 +189,5 @@ permalink: /kb/179/Q179573/
 	
 	=============================================================================
 	
+
+{% endraw %}

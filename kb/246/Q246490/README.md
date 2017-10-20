@@ -6,6 +6,8 @@ permalink: /kb/246/Q246490/
 
 ## Q246490: PRB: Unspecified Error When You Add an HTML Template to WebClass
 
+{% raw %}
+
 	Article: Q246490
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -85,3 +87,5 @@ permalink: /kb/246/Q246490/
 	
 	=============================================================================
 	
+
+{% endraw %}

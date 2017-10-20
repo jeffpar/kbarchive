@@ -6,6 +6,8 @@ permalink: /kb/234/Q234805/
 
 ## Q234805: XWEB: How to Install OWA and IIS on a Stand-Alone Server
 
+{% raw %}
+
 	Article: Q234805
 	Product(s): Microsoft Exchange
 	Version(s): 2000,3.0,4.0,5.0,5.5,5.5 SP3
@@ -84,3 +86,5 @@ permalink: /kb/234/Q234805/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/047/Q47035/
 
 ## Q47035: QC 2.00: Watch Values on Float Pointers Show char String
 
+{% raw %}
+
 	Article: Q47035
 	Product(s): See article
 	Version(s): 2.00
@@ -60,3 +62,5 @@ permalink: /kb/047/Q47035/
 	points to. The string continues until a null character is encountered.
 	The float pointer Watch Value displays a string even before program
 	execution, when other watch values display <Unknown Identifier>.
+
+{% endraw %}

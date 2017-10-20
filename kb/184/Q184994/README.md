@@ -6,6 +6,8 @@ permalink: /kb/184/Q184994/
 
 ## Q184994: XFOR: How to Send SMTP Mail to cc:Mail's SMTP Gateway
 
+{% raw %}
+
 	Article: Q184994
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -52,3 +54,5 @@ permalink: /kb/184/Q184994/
 	
 	=============================================================================
 	
+
+{% endraw %}

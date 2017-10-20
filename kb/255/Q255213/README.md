@@ -6,6 +6,8 @@ permalink: /kb/255/Q255213/
 
 ## Q255213: Hewlett-Packard HP4000 Print Drivers May Hang the Print Queue
 
+{% raw %}
+
 	Article: Q255213
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -42,3 +44,5 @@ permalink: /kb/255/Q255213/
 	
 	=============================================================================
 	
+
+{% endraw %}

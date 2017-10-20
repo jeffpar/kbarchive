@@ -6,6 +6,8 @@ permalink: /kb/113/Q113731/
 
 ## Q113731: WD97: ODBC Error Opening a DBF File with Hyphen in the File Name
 
+{% raw %}
+
 	Article: Q113731
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -59,3 +61,5 @@ permalink: /kb/113/Q113731/
 	
 	=============================================================================
 	
+
+{% endraw %}

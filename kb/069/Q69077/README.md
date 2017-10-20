@@ -6,6 +6,8 @@ permalink: /kb/069/Q69077/
 
 ## Q69077: IsDialog.exe - Simulates a Dialog Box
 
+{% raw %}
+
 	Article: Q69077
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -56,3 +58,5 @@ permalink: /kb/069/Q69077/
 	
 	=============================================================================
 	
+
+{% endraw %}

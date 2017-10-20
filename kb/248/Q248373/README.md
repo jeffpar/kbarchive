@@ -6,6 +6,8 @@ permalink: /kb/248/Q248373/
 
 ## Q248373: XADM: Primary Windows NT Account Cannot Log On to Mailbox
 
+{% raw %}
+
 	Article: Q248373
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -101,3 +103,5 @@ permalink: /kb/248/Q248373/
 	
 	=============================================================================
 	
+
+{% endraw %}

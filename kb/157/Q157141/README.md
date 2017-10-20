@@ -6,6 +6,8 @@ permalink: /kb/157/Q157141/
 
 ## Q157141: PPT7: Pack and Go Never Prompts to Insert Disk into Drive A:
 
+{% raw %}
+
 	Article: Q157141
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -56,3 +58,5 @@ permalink: /kb/157/Q157141/
 	
 	=============================================================================
 	
+
+{% endraw %}

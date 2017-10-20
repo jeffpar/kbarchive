@@ -6,6 +6,8 @@ permalink: /kb/201/Q201191/
 
 ## Q201191: PRB: Registering ATL Server Causes 0x80040154 Error
 
+{% raw %}
+
 	Article: Q201191
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,3.0,5.0,6.0
@@ -110,3 +112,5 @@ permalink: /kb/201/Q201191/
 	
 	=============================================================================
 	
+
+{% endraw %}

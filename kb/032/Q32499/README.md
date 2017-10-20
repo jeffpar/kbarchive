@@ -6,6 +6,8 @@ permalink: /kb/032/Q32499/
 
 ## Q32499: PRINT Does Not Scroll Line 25 after a SHELL
 
+{% raw %}
+
 	Article: Q32499
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -53,3 +55,5 @@ permalink: /kb/032/Q32499/
 	INPUT a$
 	PRINT #1, a$
 	END
+
+{% endraw %}

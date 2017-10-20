@@ -6,6 +6,8 @@ permalink: /kb/127/Q127910/
 
 ## Q127910: Windows NT version 3.5 Setup Requests Disk 4
 
+{% raw %}
+
 	Article: Q127910
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -60,3 +62,5 @@ permalink: /kb/127/Q127910/
 	
 	=============================================================================
 	
+
+{% endraw %}

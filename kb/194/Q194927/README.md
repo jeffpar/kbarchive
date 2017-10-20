@@ -6,6 +6,8 @@ permalink: /kb/194/Q194927/
 
 ## Q194927: INFO: VB6 Enables Single Project Testing of Controls/Documents
 
+{% raw %}
+
 	Article: Q194927
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -78,3 +80,5 @@ permalink: /kb/194/Q194927/
 	
 	=============================================================================
 	
+
+{% endraw %}

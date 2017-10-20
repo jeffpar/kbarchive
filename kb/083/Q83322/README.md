@@ -6,6 +6,8 @@ permalink: /kb/083/Q83322/
 
 ## Q83322: Pen Cursor Doesn't Appear When Tablet in Use
 
+{% raw %}
+
 	Article: Q83322
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/083/Q83322/
 	
 	=============================================================================
 	
+
+{% endraw %}

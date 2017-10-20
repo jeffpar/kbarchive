@@ -6,6 +6,8 @@ permalink: /kb/043/Q43141/
 
 ## Q43141: QuickC: Locating a Corresponding Brace
 
+{% raw %}
+
 	Article: Q43141
 	Product(s): See article
 	Version(s): 1.00 1.01 2.00
@@ -22,3 +24,5 @@ permalink: /kb/043/Q43141/
 	
 	In QuickC Version 2.00 the same functionality is provided, although
 	only CTRL+} will invoke the function. CTRL+{ will not have any effect.
+
+{% endraw %}

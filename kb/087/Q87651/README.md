@@ -6,6 +6,8 @@ permalink: /kb/087/Q87651/
 
 ## Q87651: FFAPI: Sending Mail Through the MCI Gateway Using FFAPI
 
+{% raw %}
+
 	Article: Q87651
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -90,3 +92,5 @@ permalink: /kb/087/Q87651/
 	
 	=============================================================================
 	
+
+{% endraw %}

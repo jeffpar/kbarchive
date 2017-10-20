@@ -6,6 +6,8 @@ permalink: /kb/134/Q134340/
 
 ## Q134340: Font Display Problems Using Systems Management Server Helpdesk
 
+{% raw %}
+
 	Article: Q134340
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -61,3 +63,5 @@ permalink: /kb/134/Q134340/
 	
 	=============================================================================
 	
+
+{% endraw %}

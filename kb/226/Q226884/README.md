@@ -6,6 +6,8 @@ permalink: /kb/226/Q226884/
 
 ## Q226884: SMS: 16-Bit Remote Control Agent Stops Responding for IPX
 
+{% raw %}
+
 	Article: Q226884
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -43,3 +45,5 @@ permalink: /kb/226/Q226884/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/249/Q249863/
 
 ## Q249863: SGC Connections May Fail from Domestic Clients
 
+{% raw %}
+
 	Article: Q249863
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0,5,5.01
@@ -192,3 +194,5 @@ permalink: /kb/249/Q249863/
 	
 	=============================================================================
 	
+
+{% endraw %}

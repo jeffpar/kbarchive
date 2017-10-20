@@ -6,6 +6,8 @@ permalink: /kb/170/Q170405/
 
 ## Q170405: WD97: Changes to Compatibility Options Not Saved in Normal.dot
 
+{% raw %}
+
 	Article: Q170405
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -100,3 +102,5 @@ permalink: /kb/170/Q170405/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164684/
 
 ## Q164684: PRB: VFP/VSS File Could Not Be Mapped to SourceSafe Project
 
+{% raw %}
+
 	Article: Q164684
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -141,3 +143,5 @@ permalink: /kb/164/Q164684/
 	
 	=============================================================================
 	
+
+{% endraw %}

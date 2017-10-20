@@ -6,6 +6,8 @@ permalink: /kb/241/Q241534/
 
 ## Q241534: Internet Service Manager Connects to Wrong Web Site
 
+{% raw %}
+
 	Article: Q241534
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -85,3 +87,5 @@ permalink: /kb/241/Q241534/
 	
 	=============================================================================
 	
+
+{% endraw %}

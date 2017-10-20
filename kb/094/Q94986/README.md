@@ -6,6 +6,8 @@ permalink: /kb/094/Q94986/
 
 ## Q94986: Golf Err Msg: Bad or Missing RealSound Driver
 
+{% raw %}
+
 	Article: Q94986
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/094/Q94986/
 	
 	=============================================================================
 	
+
+{% endraw %}

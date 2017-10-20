@@ -6,6 +6,8 @@ permalink: /kb/125/Q125196/
 
 ## Q125196: PPT: Automatic Timings Don't Work in Playlist Slide Show
 
+{% raw %}
+
 	Article: Q125196
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -132,3 +134,5 @@ permalink: /kb/125/Q125196/
 	
 	=============================================================================
 	
+
+{% endraw %}

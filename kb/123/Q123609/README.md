@@ -6,6 +6,8 @@ permalink: /kb/123/Q123609/
 
 ## Q123609: Languages Supported by HP Plotters
 
+{% raw %}
+
 	Article: Q123609
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/123/Q123609/
 	
 	=============================================================================
 	
+
+{% endraw %}

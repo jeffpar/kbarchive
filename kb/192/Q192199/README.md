@@ -6,6 +6,8 @@ permalink: /kb/192/Q192199/
 
 ## Q192199: DOS Remote Client Displays Year 100 on or after Year 2000
 
+{% raw %}
+
 	Article: Q192199
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0; WINDOWS:3.0,3.2,3.2a,3.5
@@ -64,3 +66,5 @@ permalink: /kb/192/Q192199/
 	
 	=============================================================================
 	
+
+{% endraw %}

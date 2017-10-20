@@ -6,6 +6,8 @@ permalink: /kb/155/Q155153/
 
 ## Q155153: Writer 2: Paste Using Keyboard and Menu Behave Differently
 
+{% raw %}
+
 	Article: Q155153
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -44,3 +46,5 @@ permalink: /kb/155/Q155153/
 	
 	=============================================================================
 	
+
+{% endraw %}

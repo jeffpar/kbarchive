@@ -6,6 +6,8 @@ permalink: /kb/080/Q80387/
 
 ## Q80387: Deleting Partitions Can Reduce Usable Hard Disk Space
 
+{% raw %}
+
 	Article: Q80387
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -91,3 +93,5 @@ permalink: /kb/080/Q80387/
 	
 	=============================================================================
 	
+
+{% endraw %}

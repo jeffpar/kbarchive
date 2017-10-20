@@ -6,6 +6,8 @@ permalink: /kb/149/Q149971/
 
 ## Q149971: Network in Workstation Properties Displays Multiple Rows
 
+{% raw %}
+
 	Article: Q149971
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -49,3 +51,5 @@ permalink: /kb/149/Q149971/
 	
 	=============================================================================
 	
+
+{% endraw %}

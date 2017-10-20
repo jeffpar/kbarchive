@@ -6,6 +6,8 @@ permalink: /kb/158/Q158008/
 
 ## Q158008: HOWTO: Use MSCOMM32.OCX to Transfer Data on DBCS Windows
 
+{% raw %}
+
 	Article: Q158008
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0
@@ -250,3 +252,5 @@ permalink: /kb/158/Q158008/
 	
 	=============================================================================
 	
+
+{% endraw %}

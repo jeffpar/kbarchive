@@ -6,6 +6,8 @@ permalink: /kb/063/Q63055/
 
 ## Q63055: qsort() Compare Routine Must Have Equal Case Under C 6.00
 
+{% raw %}
+
 	Article: Q63055
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -54,3 +56,5 @@ permalink: /kb/063/Q63055/
 	    if (*p<*q) return(-1);
 	    else return(1);
 	}
+
+{% endraw %}

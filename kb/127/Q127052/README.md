@@ -6,6 +6,8 @@ permalink: /kb/127/Q127052/
 
 ## Q127052: SMS Unique ID (SMSID) Allocation
 
+{% raw %}
+
 	Article: Q127052
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -123,3 +125,5 @@ permalink: /kb/127/Q127052/
 	
 	=============================================================================
 	
+
+{% endraw %}

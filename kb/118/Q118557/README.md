@@ -6,6 +6,8 @@ permalink: /kb/118/Q118557/
 
 ## Q118557: How FoxPro Uses Universal Thunking for 32-Bit API Calls
 
+{% raw %}
+
 	Article: Q118557
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x 2.6x 3.00 | 2.5x 2.6x
@@ -120,3 +122,5 @@ permalink: /kb/118/Q118557/
 	
 	=============================================================================
 	
+
+{% endraw %}

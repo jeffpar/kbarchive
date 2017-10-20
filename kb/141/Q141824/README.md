@@ -6,6 +6,8 @@ permalink: /kb/141/Q141824/
 
 ## Q141824: INFO: Common Remote OLE Automation Errors
 
+{% raw %}
+
 	Article: Q141824
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -263,3 +265,5 @@ permalink: /kb/141/Q141824/
 	
 	=============================================================================
 	
+
+{% endraw %}

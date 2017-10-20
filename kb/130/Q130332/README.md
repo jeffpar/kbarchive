@@ -6,6 +6,8 @@ permalink: /kb/130/Q130332/
 
 ## Q130332: Installed Files for a Laptop Setup
 
+{% raw %}
+
 	Article: Q130332
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -84,3 +86,5 @@ permalink: /kb/130/Q130332/
 	
 	=============================================================================
 	
+
+{% endraw %}

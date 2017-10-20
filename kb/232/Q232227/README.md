@@ -6,6 +6,8 @@ permalink: /kb/232/Q232227/
 
 ## Q232227: SMS: Inaccurate Installation Date Is Reported in the Inventory
 
+{% raw %}
+
 	Article: Q232227
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -59,3 +61,5 @@ permalink: /kb/232/Q232227/
 	
 	=============================================================================
 	
+
+{% endraw %}

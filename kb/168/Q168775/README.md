@@ -6,6 +6,8 @@ permalink: /kb/168/Q168775/
 
 ## Q168775: Unused Dependent LU6.2 Session Not Deactivated
 
+{% raw %}
+
 	Article: Q168775
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -69,3 +71,5 @@ permalink: /kb/168/Q168775/
 	
 	=============================================================================
 	
+
+{% endraw %}

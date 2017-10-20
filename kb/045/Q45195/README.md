@@ -6,6 +6,8 @@ permalink: /kb/045/Q45195/
 
 ## Q45195: Run-Time Library FP Signal Handler Assumes SS=DS
 
+{% raw %}
+
 	Article: Q45195
 	Product(s): See article
 	Version(s): 5.10
@@ -61,3 +63,5 @@ permalink: /kb/045/Q45195/
 	   README.DOC
 	   PIEM.LIB
 	   PI87.LIB
+
+{% endraw %}

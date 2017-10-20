@@ -6,6 +6,8 @@ permalink: /kb/103/Q103675/
 
 ## Q103675: Err Msg: This Operation is Not Allowed in this Special Group
 
+{% raw %}
+
 	Article: Q103675
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -77,3 +79,5 @@ permalink: /kb/103/Q103675/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/239/Q239721/
 
 ## Q239721: NFL Fever 2000: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q239721
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -80,3 +82,5 @@ permalink: /kb/239/Q239721/
 	
 	=============================================================================
 	
+
+{% endraw %}

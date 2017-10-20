@@ -6,6 +6,8 @@ permalink: /kb/136/Q136996/
 
 ## Q136996: Advantages of Manual vs. Automatic DataEnvironment Behavior
 
+{% raw %}
+
 	Article: Q136996
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/136/Q136996/
 	
 	=============================================================================
 	
+
+{% endraw %}

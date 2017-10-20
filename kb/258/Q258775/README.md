@@ -6,6 +6,8 @@ permalink: /kb/258/Q258775/
 
 ## Q258775: XADM: How to Create and Manage a Contacts Public Folder
 
+{% raw %}
+
 	Article: Q258775
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -146,3 +148,5 @@ permalink: /kb/258/Q258775/
 	
 	=============================================================================
 	
+
+{% endraw %}

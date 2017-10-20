@@ -6,6 +6,8 @@ permalink: /kb/248/Q248823/
 
 ## Q248823: &quot;Connection Failed&quot; Attempting to Use Remote SMS Admin Console
 
+{% raw %}
+
 	Article: Q248823
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -76,3 +78,5 @@ permalink: /kb/248/Q248823/
 	
 	=============================================================================
 	
+
+{% endraw %}

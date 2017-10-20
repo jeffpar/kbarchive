@@ -6,6 +6,8 @@ permalink: /kb/137/Q137506/
 
 ## Q137506: Adding and Providing The FPNW Serial Number
 
+{% raw %}
+
 	Article: Q137506
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -56,3 +58,5 @@ permalink: /kb/137/Q137506/
 	
 	=============================================================================
 	
+
+{% endraw %}

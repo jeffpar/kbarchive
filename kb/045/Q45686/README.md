@@ -6,6 +6,8 @@ permalink: /kb/045/Q45686/
 
 ## Q45686: How to Round Up a Fraction to Its Integral Ceiling in BASIC
 
+{% raw %}
+
 	Article: Q45686
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -65,3 +67,5 @@ permalink: /kb/045/Q45686/
 	FUNCTION ce& (x#) STATIC
 	ce& = -INT(-x#)    ' Values of x# outside -2147483648 to 2147483647
 	END FUNCTION       ' will give a long-integer overflow error.
+
+{% endraw %}

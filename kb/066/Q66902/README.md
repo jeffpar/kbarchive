@@ -6,6 +6,8 @@ permalink: /kb/066/Q66902/
 
 ## Q66902: QuickC Version 2.51 Packing List (5.25-Inch Disk Set)
 
+{% raw %}
+
 	Article: Q66902
 	Product(s): See article
 	Version(s): 2.51
@@ -245,3 +247,5 @@ permalink: /kb/066/Q66902/
 	
 	Microsoft Programmer's Work Bench [Development Environment]
 	=============================================================================
+
+{% endraw %}

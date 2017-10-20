@@ -6,6 +6,8 @@ permalink: /kb/022/Q22242/
 
 ## Q22242: PRB: Area Around Text and Remainder of Window Different Colors
 
+{% raw %}
+
 	Article: Q22242
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -100,3 +102,5 @@ permalink: /kb/022/Q22242/
 	
 	=============================================================================
 	
+
+{% endraw %}

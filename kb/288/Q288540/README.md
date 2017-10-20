@@ -6,6 +6,8 @@ permalink: /kb/288/Q288540/
 
 ## Q288540: XADM: No Traditional Spanish Templates in Exchange Server 5.5
 
+{% raw %}
+
 	Article: Q288540
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -70,3 +72,5 @@ permalink: /kb/288/Q288540/
 	
 	=============================================================================
 	
+
+{% endraw %}

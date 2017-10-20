@@ -6,6 +6,8 @@ permalink: /kb/225/Q225108/
 
 ## Q225108: SNA 4.0 SP2 May Cause Trap in Function RamWrite or CheckInboundQ
 
+{% raw %}
+
 	Article: Q225108
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0SP2
@@ -123,3 +125,5 @@ permalink: /kb/225/Q225108/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86055/
 
 ## Q86055: Garbled, Incomplete, or Broken Printing on Novell Network
 
+{% raw %}
+
 	Article: Q86055
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -74,3 +76,5 @@ permalink: /kb/086/Q86055/
 	
 	=============================================================================
 	
+
+{% endraw %}

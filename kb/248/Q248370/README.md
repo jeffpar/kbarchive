@@ -6,6 +6,8 @@ permalink: /kb/248/Q248370/
 
 ## Q248370: Invoking COMTI Method Results in 1533 Exception Error
 
+{% raw %}
+
 	Article: Q248370
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0 SP3
@@ -169,3 +171,5 @@ permalink: /kb/248/Q248370/
 	
 	=============================================================================
 	
+
+{% endraw %}

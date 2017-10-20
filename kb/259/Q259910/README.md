@@ -6,6 +6,8 @@ permalink: /kb/259/Q259910/
 
 ## Q259910: How to Use Session Request Types to Control Access to TN3270
 
+{% raw %}
+
 	Article: Q259910
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -115,3 +117,5 @@ permalink: /kb/259/Q259910/
 	
 	=============================================================================
 	
+
+{% endraw %}

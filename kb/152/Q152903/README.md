@@ -6,6 +6,8 @@ permalink: /kb/152/Q152903/
 
 ## Q152903: XFOR: Mail Connector Dispatch Fails Against Postoffice on Unix
 
+{% raw %}
+
 	Article: Q152903
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/152/Q152903/
 	
 	=============================================================================
 	
+
+{% endraw %}

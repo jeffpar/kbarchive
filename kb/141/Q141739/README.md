@@ -6,6 +6,8 @@ permalink: /kb/141/Q141739/
 
 ## Q141739: BUG: Sendmail.scx Hangs FoxPro If Mail Client Not Installed
 
+{% raw %}
+
 	Article: Q141739
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -71,3 +73,5 @@ permalink: /kb/141/Q141739/
 	
 	=============================================================================
 	
+
+{% endraw %}

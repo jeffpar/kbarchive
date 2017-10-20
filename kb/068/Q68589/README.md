@@ -6,6 +6,8 @@ permalink: /kb/068/Q68589/
 
 ## Q68589: How to Display Mouse Pointer on Multiple Pages, in UI Toolbox
 
+{% raw %}
+
 	Article: Q68589
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -49,3 +51,5 @@ permalink: /kb/068/Q68589/
 	   Regs.BX = 0
 	   Interrupt &H33, Regs, Regs
 	END SUB
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84794/
 
 ## Q84794: Windows Err Msg: Cannot Run DOS Application in Second...
 
+{% raw %}
+
 	Article: Q84794
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -70,3 +72,5 @@ permalink: /kb/084/Q84794/
 	
 	=============================================================================
 	
+
+{% endraw %}

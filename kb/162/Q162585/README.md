@@ -6,6 +6,8 @@ permalink: /kb/162/Q162585/
 
 ## Q162585: File: DNS_DOC.EXE replaces corrupt DNS.DOC in IIS Training Kit
 
+{% raw %}
+
 	Article: Q162585
 	Product(s): Microsoft Press
 	Version(s): 
@@ -104,3 +106,5 @@ permalink: /kb/162/Q162585/
 	
 	=============================================================================
 	
+
+{% endraw %}

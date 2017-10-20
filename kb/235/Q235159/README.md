@@ -6,6 +6,8 @@ permalink: /kb/235/Q235159/
 
 ## Q235159: SMS: WBEM Is Not Installed on Windows NT 3.51 Workstation
 
+{% raw %}
+
 	Article: Q235159
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -61,3 +63,5 @@ permalink: /kb/235/Q235159/
 	
 	=============================================================================
 	
+
+{% endraw %}

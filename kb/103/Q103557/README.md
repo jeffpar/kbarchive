@@ -6,6 +6,8 @@ permalink: /kb/103/Q103557/
 
 ## Q103557: HIMEM.SYS Fails to See More than 64 MB on EISA Machine
 
+{% raw %}
+
 	Article: Q103557
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.01,5.x,6.0,6.2,6.21; WINDOWS:3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/103/Q103557/
 	
 	=============================================================================
 	
+
+{% endraw %}

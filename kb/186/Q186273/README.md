@@ -6,6 +6,8 @@ permalink: /kb/186/Q186273/
 
 ## Q186273: BUG: AV Running VB-Built Component in Multithreaded Environment
 
+{% raw %}
+
 	Article: Q186273
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,97,97 SP1,97 SP2,97 SP3
@@ -91,3 +93,5 @@ permalink: /kb/186/Q186273/
 	
 	=============================================================================
 	
+
+{% endraw %}

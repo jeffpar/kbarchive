@@ -6,6 +6,8 @@ permalink: /kb/141/Q141737/
 
 ## Q141737: BUG: Invalid Page Fault When Form Released in Error Event
 
+{% raw %}
+
 	Article: Q141737
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0
@@ -74,3 +76,5 @@ permalink: /kb/141/Q141737/
 	
 	=============================================================================
 	
+
+{% endraw %}

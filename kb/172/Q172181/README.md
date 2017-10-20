@@ -6,6 +6,8 @@ permalink: /kb/172/Q172181/
 
 ## Q172181: WD97: WithEvents Fails Quit Event with No Documents Open
 
+{% raw %}
+
 	Article: Q172181
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -160,3 +162,5 @@ permalink: /kb/172/Q172181/
 	
 	=============================================================================
 	
+
+{% endraw %}

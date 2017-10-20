@@ -6,6 +6,8 @@ permalink: /kb/197/Q197853/
 
 ## Q197853: SBS Client Setup Will Not Run After Reboot
 
+{% raw %}
+
 	Article: Q197853
 	Product(s): Microsoft Windows NT
 	Version(s): Windows:95; WinNT:4.0,4.0a
@@ -99,3 +101,5 @@ permalink: /kb/197/Q197853/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156740/
 
 ## Q156740: Window Frame Blinks When Dragged
 
+{% raw %}
+
 	Article: Q156740
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -55,3 +57,5 @@ permalink: /kb/156/Q156740/
 	
 	=============================================================================
 	
+
+{% endraw %}

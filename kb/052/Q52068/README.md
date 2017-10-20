@@ -6,6 +6,8 @@ permalink: /kb/052/Q52068/
 
 ## Q52068: Example of Using NPV and IRR Financial Functions in BASIC 7.00
 
+{% raw %}
+
 	Article: Q52068
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -113,3 +115,5 @@ permalink: /kb/052/Q52068/
 	For the above values, IRR returns .0514 (5.14 percent return per
 	period). NPV returns 0 (zero), since IRR returns the discount rate at
 	which NPV returns 0.
+
+{% endraw %}

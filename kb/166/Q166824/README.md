@@ -6,6 +6,8 @@ permalink: /kb/166/Q166824/
 
 ## Q166824: XADM: Permissions Needed to Backup Exchange on Member Server
 
+{% raw %}
+
 	Article: Q166824
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -60,3 +62,5 @@ permalink: /kb/166/Q166824/
 	
 	=============================================================================
 	
+
+{% endraw %}

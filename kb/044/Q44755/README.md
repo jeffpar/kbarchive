@@ -6,6 +6,8 @@ permalink: /kb/044/Q44755/
 
 ## Q44755: Long Arithmetic Incorrect in Certain Circumstances in QuickC
 
+{% raw %}
+
 	Article: Q44755
 	Product(s): See article
 	Version(s): 2.00
@@ -87,3 +89,5 @@ permalink: /kb/044/Q44755/
 	Microsoft has confirmed this to be a problem with QuickC Version 2.00.
 	We are researching this problem and will post new information as it
 	becomes available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181281/
 
 ## Q181281: BUG: ListBox Text Property Not Functional
 
+{% raw %}
+
 	Article: Q181281
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -56,3 +58,5 @@ permalink: /kb/181/Q181281/
 	
 	=============================================================================
 	
+
+{% endraw %}

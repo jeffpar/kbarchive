@@ -6,6 +6,8 @@ permalink: /kb/207/Q207723/
 
 ## Q207723: SMS: Button Text in Software Metering Tool Disappears
 
+{% raw %}
+
 	Article: Q207723
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -53,3 +55,5 @@ permalink: /kb/207/Q207723/
 	
 	=============================================================================
 	
+
+{% endraw %}

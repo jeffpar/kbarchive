@@ -6,6 +6,8 @@ permalink: /kb/150/Q150814/
 
 ## Q150814: Creating Audited Software Report with Crystal Reports
 
+{% raw %}
+
 	Article: Q150814
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -88,3 +90,5 @@ permalink: /kb/150/Q150814/
 	
 	=============================================================================
 	
+
+{% endraw %}

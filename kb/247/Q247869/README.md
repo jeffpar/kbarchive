@@ -6,6 +6,8 @@ permalink: /kb/247/Q247869/
 
 ## Q247869: MS00-003: Local Procedure Call May Permit Unauthorized Account U
 
+{% raw %}
+
 	Article: Q247869
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.5
@@ -134,3 +136,5 @@ permalink: /kb/247/Q247869/
 	
 	=============================================================================
 	
+
+{% endraw %}

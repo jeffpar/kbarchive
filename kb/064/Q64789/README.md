@@ -6,6 +6,8 @@ permalink: /kb/064/Q64789/
 
 ## Q64789: _outtext Can Produce Protection Violation Error
 
+{% raw %}
+
 	Article: Q64789
 	Product(s): See article
 	Version(s): 6.00
@@ -55,3 +57,5 @@ permalink: /kb/064/Q64789/
 	Microsoft has confirmed this to be a problem with C version 6.00. We
 	are researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/076/Q76581/
 
 ## Q76581: PRB: LoadLibrary() Returns Error 6
 
+{% raw %}
+
 	Article: Q76581
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -57,3 +59,5 @@ permalink: /kb/076/Q76581/
 	
 	=============================================================================
 	
+
+{% endraw %}

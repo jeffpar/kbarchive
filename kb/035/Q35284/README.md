@@ -6,6 +6,8 @@ permalink: /kb/035/Q35284/
 
 ## Q35284: Order of Precedence in Locating Executable Files
 
+{% raw %}
+
 	Article: Q35284
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.0,5.0a,6.0,6.2,6.21,6.22
@@ -130,3 +132,5 @@ permalink: /kb/035/Q35284/
 	
 	=============================================================================
 	
+
+{% endraw %}

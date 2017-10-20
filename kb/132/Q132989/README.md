@@ -6,6 +6,8 @@ permalink: /kb/132/Q132989/
 
 ## Q132989: HOWTO: Use Relative Paths in 32-bit Visual C++ .MAK Files
 
+{% raw %}
+
 	Article: Q132989
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:2.0,2.1,4.0;
@@ -68,3 +70,5 @@ permalink: /kb/132/Q132989/
 	
 	=============================================================================
 	
+
+{% endraw %}

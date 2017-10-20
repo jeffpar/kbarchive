@@ -6,6 +6,8 @@ permalink: /kb/237/Q237579/
 
 ## Q237579: Performance Monitor Logs Lose Data Across Subnets
 
+{% raw %}
+
 	Article: Q237579
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -108,3 +110,5 @@ permalink: /kb/237/Q237579/
 	
 	=============================================================================
 	
+
+{% endraw %}

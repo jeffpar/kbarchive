@@ -6,6 +6,8 @@ permalink: /kb/134/Q134202/
 
 ## Q134202: PC Win: Message Subject Over 40 Characters Not Displayed
 
+{% raw %}
+
 	Article: Q134202
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -56,3 +58,5 @@ permalink: /kb/134/Q134202/
 	
 	=============================================================================
 	
+
+{% endraw %}

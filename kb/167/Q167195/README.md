@@ -6,6 +6,8 @@ permalink: /kb/167/Q167195/
 
 ## Q167195: 5250 Print Jobs Fail If Connection to Printer Lost/Recovered
 
+{% raw %}
+
 	Article: Q167195
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -82,3 +84,5 @@ permalink: /kb/167/Q167195/
 	
 	=============================================================================
 	
+
+{% endraw %}

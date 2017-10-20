@@ -6,6 +6,8 @@ permalink: /kb/132/Q132734/
 
 ## Q132734: NetWare Support in Windows 95 Questions and Answers
 
+{% raw %}
+
 	Article: Q132734
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -180,3 +182,5 @@ permalink: /kb/132/Q132734/
 	
 	=============================================================================
 	
+
+{% endraw %}

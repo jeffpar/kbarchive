@@ -6,6 +6,8 @@ permalink: /kb/160/Q160810/
 
 ## Q160810: FP: IDC Wizard Creates IDC File on Non-IDC Server
 
+{% raw %}
+
 	Article: Q160810
 	Product(s): Word Front Page
 	Version(s): windows:97, macintosh:1.0
@@ -51,3 +53,5 @@ permalink: /kb/160/Q160810/
 	
 	=============================================================================
 	
+
+{% endraw %}

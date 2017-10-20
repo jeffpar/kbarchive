@@ -6,6 +6,8 @@ permalink: /kb/169/Q169239/
 
 ## Q169239: PPT: Cannot Unpack Presentation on a Macintosh Computer
 
+{% raw %}
+
 	Article: Q169239
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:7.0
@@ -71,3 +73,5 @@ permalink: /kb/169/Q169239/
 	
 	=============================================================================
 	
+
+{% endraw %}

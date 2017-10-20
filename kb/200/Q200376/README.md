@@ -6,6 +6,8 @@ permalink: /kb/200/Q200376/
 
 ## Q200376: XFOR: Authentication Package DPA Errors
 
+{% raw %}
+
 	Article: Q200376
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -58,3 +60,5 @@ permalink: /kb/200/Q200376/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/050/Q50297/
 
 ## Q50297: Calculating Available Memory in Large Model
 
+{% raw %}
+
 	Article: Q50297
 	Product(s): See article
 	Version(s): 5.10
@@ -127,3 +129,5 @@ permalink: /kb/050/Q50297/
 	
 	   _fheapwalk in Compact and Large model
 	   _nheapwalk in Medium and Small model
+
+{% endraw %}

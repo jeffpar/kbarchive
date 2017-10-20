@@ -6,6 +6,8 @@ permalink: /kb/198/Q198601/
 
 ## Q198601: WLBS Convergence Event Log Appears As Comma-Delimited or Binary
 
+{% raw %}
+
 	Article: Q198601
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/198/Q198601/
 	
 	=============================================================================
 	
+
+{% endraw %}

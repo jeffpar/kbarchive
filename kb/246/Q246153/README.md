@@ -6,6 +6,8 @@ permalink: /kb/246/Q246153/
 
 ## Q246153: XCLN: How to Recover Items That Have Been Hard Deleted
 
+{% raw %}
+
 	Article: Q246153
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,8.01,8.02,8.03
@@ -153,3 +155,5 @@ permalink: /kb/246/Q246153/
 	
 	=============================================================================
 	
+
+{% endraw %}

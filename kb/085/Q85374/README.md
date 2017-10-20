@@ -6,6 +6,8 @@ permalink: /kb/085/Q85374/
 
 ## Q85374: HP LaserJet Does Not Support International Cartridge
 
+{% raw %}
+
 	Article: Q85374
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/085/Q85374/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138879/
 
 ## Q138879: SpartaCom SAPS Modem Sharing Software for Windows NT
 
+{% raw %}
+
 	Article: Q138879
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -44,3 +46,5 @@ permalink: /kb/138/Q138879/
 	
 	=============================================================================
 	
+
+{% endraw %}

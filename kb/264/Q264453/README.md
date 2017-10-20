@@ -6,6 +6,8 @@ permalink: /kb/264/Q264453/
 
 ## Q264453: FS2000: How to Control One Engine on a Multiple Engine Aircraft
 
+{% raw %}
+
 	Article: Q264453
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -63,3 +65,5 @@ permalink: /kb/264/Q264453/
 	
 	=============================================================================
 	
+
+{% endraw %}

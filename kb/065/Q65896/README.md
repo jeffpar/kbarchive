@@ -6,6 +6,8 @@ permalink: /kb/065/Q65896/
 
 ## Q65896: Mislabeled Windows 3.00 Disk
 
+{% raw %}
+
 	Article: Q65896
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -53,3 +55,5 @@ permalink: /kb/065/Q65896/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/243/Q243087/
 
 ## Q243087: IIS Does Not Start If French (Canadian) Is Set as System Locale
 
+{% raw %}
+
 	Article: Q243087
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/243/Q243087/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231266/
 
 ## Q231266: &quot;Cannot Open SQL Server&quot; Error Message and Report Does Not Run
 
+{% raw %}
+
 	Article: Q231266
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -78,3 +80,5 @@ permalink: /kb/231/Q231266/
 	
 	=============================================================================
 	
+
+{% endraw %}

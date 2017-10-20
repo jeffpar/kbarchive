@@ -6,6 +6,8 @@ permalink: /kb/216/Q216097/
 
 ## Q216097: HOWTO: Clear the Windows NT Event Log in Visual Basic
 
+{% raw %}
+
 	Article: Q216097
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -121,3 +123,5 @@ permalink: /kb/216/Q216097/
 	
 	=============================================================================
 	
+
+{% endraw %}

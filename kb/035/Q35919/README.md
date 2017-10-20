@@ -6,6 +6,8 @@ permalink: /kb/035/Q35919/
 
 ## Q35919: How to Force CAPS LOCK On or Off with PEEK and POKE
 
+{% raw %}
+
 	Article: Q35919
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -92,3 +94,5 @@ permalink: /kb/035/Q35919/
 	SCROLL LOCK on, NUM LOCK on, CAPS LOCK on, INSert on. QuickBASIC and
 	the BASIC Compiler have a CALL INTERRUPT statement (not found in
 	GW-BASIC) which can call this interrupt.
+
+{% endraw %}

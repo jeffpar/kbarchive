@@ -6,6 +6,8 @@ permalink: /kb/084/Q84641/
 
 ## Q84641: Installation Error with Sound Blaster Pro Driver from WRK
 
+{% raw %}
+
 	Article: Q84641
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/084/Q84641/
 	
 	=============================================================================
 	
+
+{% endraw %}

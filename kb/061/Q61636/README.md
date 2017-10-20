@@ -6,6 +6,8 @@ permalink: /kb/061/Q61636/
 
 ## Q61636: Saving Compiler Results File in the PWB
 
+{% raw %}
+
 	Article: Q61636
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -53,3 +55,5 @@ permalink: /kb/061/Q61636/
 	
 	=============================================================================
 	
+
+{% endraw %}

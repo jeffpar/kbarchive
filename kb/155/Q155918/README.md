@@ -6,6 +6,8 @@ permalink: /kb/155/Q155918/
 
 ## Q155918: HOWTO: How To Scroll a CFormView to See the Controls
 
+{% raw %}
+
 	Article: Q155918
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -138,3 +140,5 @@ permalink: /kb/155/Q155918/
 	
 	=============================================================================
 	
+
+{% endraw %}

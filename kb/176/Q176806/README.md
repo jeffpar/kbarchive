@@ -6,6 +6,8 @@ permalink: /kb/176/Q176806/
 
 ## Q176806: XGEN: How to Order Exchange 4.0 and 5.0 Manuals
 
+{% raw %}
+
 	Article: Q176806
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -87,3 +89,5 @@ permalink: /kb/176/Q176806/
 	
 	=============================================================================
 	
+
+{% endraw %}

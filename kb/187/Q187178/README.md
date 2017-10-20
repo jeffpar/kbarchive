@@ -6,6 +6,8 @@ permalink: /kb/187/Q187178/
 
 ## Q187178: Mouse Pointer Location Undetected by RDP Client
 
+{% raw %}
+
 	Article: Q187178
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/187/Q187178/
 	
 	=============================================================================
 	
+
+{% endraw %}

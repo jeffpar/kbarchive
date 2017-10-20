@@ -6,6 +6,8 @@ permalink: /kb/057/Q57480/
 
 ## Q57480: Intel Phone Number for Information About EMS Specifications
 
+{% raw %}
+
 	Article: Q57480
 	Product(s): See article
 	Version(s): 5.10
@@ -29,3 +31,5 @@ permalink: /kb/057/Q57480/
 	writing code that uses EMS specifications, including a reprint of the
 	March 1987 Microsoft Systems Journal article, "Expanded Memory:
 	Writing Programs That Break the 640K Barrier."
+
+{% endraw %}

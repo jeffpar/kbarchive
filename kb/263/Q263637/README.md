@@ -6,6 +6,8 @@ permalink: /kb/263/Q263637/
 
 ## Q263637: BUG: Class Access Specifier Ignored When Creating Temp Objects
 
+{% raw %}
+
 	Article: Q263637
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -87,3 +89,5 @@ permalink: /kb/263/Q263637/
 	
 	=============================================================================
 	
+
+{% endraw %}

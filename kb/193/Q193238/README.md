@@ -6,6 +6,8 @@ permalink: /kb/193/Q193238/
 
 ## Q193238: HOWTO: Run Automation Manager as a Windows NT Service
 
+{% raw %}
+
 	Article: Q193238
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0; winnt:4.0
@@ -133,3 +135,5 @@ permalink: /kb/193/Q193238/
 	
 	=============================================================================
 	
+
+{% endraw %}

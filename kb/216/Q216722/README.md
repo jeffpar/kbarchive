@@ -6,6 +6,8 @@ permalink: /kb/216/Q216722/
 
 ## Q216722: FIX: C2440 Using Function Pointer As Class Template Argument
 
+{% raw %}
+
 	Article: Q216722
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -78,3 +80,5 @@ permalink: /kb/216/Q216722/
 	
 	=============================================================================
 	
+
+{% endraw %}

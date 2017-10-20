@@ -6,6 +6,8 @@ permalink: /kb/138/Q138227/
 
 ## Q138227: Network Monitor Agent Does Not Deallocate Memory in Winlogon
 
+{% raw %}
+
 	Article: Q138227
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0,3.5
@@ -66,3 +68,5 @@ permalink: /kb/138/Q138227/
 	
 	=============================================================================
 	
+
+{% endraw %}

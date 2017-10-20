@@ -6,6 +6,8 @@ permalink: /kb/037/Q37405/
 
 ## Q37405: &quot;Device I/O,&quot; Error 57, Using SCREEN 3 and Communications Port
 
+{% raw %}
+
 	Article: Q37405
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -26,3 +28,5 @@ permalink: /kb/037/Q37405/
 	This information applies to Microsoft QuickBASIC Versions 4.00, 4.00b,
 	4.50 and to Microsoft BASIC Compiler 6.00 and 6.00B (buglist6.00,
 	buglist6.00b) for MS-DOS.
+
+{% endraw %}

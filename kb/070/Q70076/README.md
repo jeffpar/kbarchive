@@ -6,6 +6,8 @@ permalink: /kb/070/Q70076/
 
 ## Q70076: DOCERR: APT Location of Floating-Point Options in PWB
 
+{% raw %}
+
 	Article: Q70076
 	Product(s): Microsoft Programming Utilities
 	Version(s): 6.0,6.0a
@@ -42,3 +44,5 @@ permalink: /kb/070/Q70076/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216500/
 
 ## Q216500: Encarta 99: Blank Box Displayed When You Play A Video Clip
 
+{% raw %}
+
 	Article: Q216500
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -71,3 +73,5 @@ permalink: /kb/216/Q216500/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141405/
 
 ## Q141405: Mac Encarta 96: Images with Text Don't Paste
 
+{% raw %}
+
 	Article: Q141405
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -71,3 +73,5 @@ permalink: /kb/141/Q141405/
 	
 	=============================================================================
 	
+
+{% endraw %}

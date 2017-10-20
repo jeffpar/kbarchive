@@ -6,6 +6,8 @@ permalink: /kb/156/Q156993/
 
 ## Q156993: INFO: STL Sample for the Predicate Version of nth_element Functi
 
+{% raw %}
+
 	Article: Q156993
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -174,3 +176,5 @@ permalink: /kb/156/Q156993/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/259/Q259051/
 
 ## Q259051: Compass Client Shuts Down Unexpectedly
 
+{% raw %}
+
 	Article: Q259051
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -55,3 +57,5 @@ permalink: /kb/259/Q259051/
 	
 	=============================================================================
 	
+
+{% endraw %}

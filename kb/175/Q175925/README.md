@@ -6,6 +6,8 @@ permalink: /kb/175/Q175925/
 
 ## Q175925: WD97: Print # Statement Separates Fields with Spaces, Not Tabs
 
+{% raw %}
+
 	Article: Q175925
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -135,3 +137,5 @@ permalink: /kb/175/Q175925/
 	
 	=============================================================================
 	
+
+{% endraw %}

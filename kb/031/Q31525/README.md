@@ -6,6 +6,8 @@ permalink: /kb/031/Q31525/
 
 ## Q31525: MASM 5.10 EXT.DOC: CopyStream - Copies Stream of Text
 
+{% raw %}
+
 	Article: Q31525
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -37,3 +39,5 @@ permalink: /kb/031/Q31525/
 	PFILE pFileSrc, pFileDst;
 	COL  xStart, xEnd, xDst;
 	LINE yStart, yEnd, yDst;
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/305/Q305723/
 
 ## Q305723: PRB: COM Application Hangs When CoCreateInstance Is Called from
 
+{% raw %}
+
 	Article: Q305723
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/305/Q305723/
 	
 	=============================================================================
 	
+
+{% endraw %}

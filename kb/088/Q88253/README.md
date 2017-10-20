@@ -6,6 +6,8 @@ permalink: /kb/088/Q88253/
 
 ## Q88253: Printer Settings Cannot Be Saved for More than One HP III
 
+{% raw %}
+
 	Article: Q88253
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/088/Q88253/
 	
 	=============================================================================
 	
+
+{% endraw %}

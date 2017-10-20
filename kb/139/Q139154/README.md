@@ -6,6 +6,8 @@ permalink: /kb/139/Q139154/
 
 ## Q139154: INFO: OLE Control Licensing in Visual FoxPro
 
+{% raw %}
+
 	Article: Q139154
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -259,3 +261,5 @@ permalink: /kb/139/Q139154/
 	
 	=============================================================================
 	
+
+{% endraw %}

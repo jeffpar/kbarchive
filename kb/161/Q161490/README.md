@@ -6,6 +6,8 @@ permalink: /kb/161/Q161490/
 
 ## Q161490: Power Users, Print Operators May Get Errors Installing Drivers
 
+{% raw %}
+
 	Article: Q161490
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -104,3 +106,5 @@ permalink: /kb/161/Q161490/
 	
 	=============================================================================
 	
+
+{% endraw %}

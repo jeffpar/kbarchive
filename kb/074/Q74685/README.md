@@ -6,6 +6,8 @@ permalink: /kb/074/Q74685/
 
 ## Q74685: Problems Running Rbase 2.11 from MS-DOS Shell
 
+{% raw %}
+
 	Article: Q74685
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -44,3 +46,5 @@ permalink: /kb/074/Q74685/
 	
 	=============================================================================
 	
+
+{% endraw %}

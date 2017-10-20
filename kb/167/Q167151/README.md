@@ -6,6 +6,8 @@ permalink: /kb/167/Q167151/
 
 ## Q167151: Error Message: Setup Cannot Find Oemsetup.inf or Oemsetnt.inf
 
+{% raw %}
+
 	Article: Q167151
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -104,3 +106,5 @@ permalink: /kb/167/Q167151/
 	
 	=============================================================================
 	
+
+{% endraw %}

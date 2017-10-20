@@ -6,6 +6,8 @@ permalink: /kb/129/Q129227/
 
 ## Q129227: PRB: Wrong Form Name Returned in Opentables Event
 
+{% raw %}
+
 	Article: Q129227
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -79,3 +81,5 @@ permalink: /kb/129/Q129227/
 	
 	=============================================================================
 	
+
+{% endraw %}

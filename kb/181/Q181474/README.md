@@ -6,6 +6,8 @@ permalink: /kb/181/Q181474/
 
 ## Q181474: SAMPLE: Cdplyr.exe Demonstrates Using the mciSendString Function
 
+{% raw %}
+
 	Article: Q181474
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -106,3 +108,5 @@ permalink: /kb/181/Q181474/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198043/
 
 ## Q198043: WD97: Extra Paragraph Mark Above Include Field at Top of Doc
 
+{% raw %}
+
 	Article: Q198043
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/198/Q198043/
 	
 	=============================================================================
 	
+
+{% endraw %}

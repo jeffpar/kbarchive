@@ -6,6 +6,8 @@ permalink: /kb/171/Q171843/
 
 ## Q171843: BUG: Winsock Control Leaks Memory When Unloaded
 
+{% raw %}
+
 	Article: Q171843
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -120,3 +122,5 @@ permalink: /kb/171/Q171843/
 	
 	=============================================================================
 	
+
+{% endraw %}

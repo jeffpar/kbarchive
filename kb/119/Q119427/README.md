@@ -6,6 +6,8 @@ permalink: /kb/119/Q119427/
 
 ## Q119427: PC WRmt: Err Msg: MAILSPL Caused a GP-Fault in MSRMT.DLL
 
+{% raw %}
+
 	Article: Q119427
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -71,3 +73,5 @@ permalink: /kb/119/Q119427/
 	
 	=============================================================================
 	
+
+{% endraw %}

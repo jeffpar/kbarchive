@@ -6,6 +6,8 @@ permalink: /kb/162/Q162595/
 
 ## Q162595: NTFS Causes Windows NT Server to Stop Responding
 
+{% raw %}
+
 	Article: Q162595
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -56,3 +58,5 @@ permalink: /kb/162/Q162595/
 	
 	=============================================================================
 	
+
+{% endraw %}

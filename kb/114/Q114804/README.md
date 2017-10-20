@@ -6,6 +6,8 @@ permalink: /kb/114/Q114804/
 
 ## Q114804: Error Running NTBACKUP on NCR System 3000 Model 3410
 
+{% raw %}
+
 	Article: Q114804
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51,4.0
@@ -61,3 +63,5 @@ permalink: /kb/114/Q114804/
 	
 	=============================================================================
 	
+
+{% endraw %}

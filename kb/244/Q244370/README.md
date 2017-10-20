@@ -6,6 +6,8 @@ permalink: /kb/244/Q244370/
 
 ## Q244370: Mastering eCommerce Dev.: Business to Consumer Corrections
 
+{% raw %}
+
 	Article: Q244370
 	Product(s): Microsoft Press
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/244/Q244370/
 	
 	=============================================================================
 	
+
+{% endraw %}

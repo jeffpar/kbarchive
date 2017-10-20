@@ -6,6 +6,8 @@ permalink: /kb/226/Q226911/
 
 ## Q226911: SMS: NetDisc: Cannot Access DHCP Servers in Different Domains
 
+{% raw %}
+
 	Article: Q226911
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -49,3 +51,5 @@ permalink: /kb/226/Q226911/
 	
 	=============================================================================
 	
+
+{% endraw %}

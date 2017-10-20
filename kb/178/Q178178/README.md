@@ -6,6 +6,8 @@ permalink: /kb/178/Q178178/
 
 ## Q178178: Error Message: Error SU995034 -- Invalid INF file (0x13aa)
 
+{% raw %}
+
 	Article: Q178178
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -66,3 +68,5 @@ permalink: /kb/178/Q178178/
 	
 	=============================================================================
 	
+
+{% endraw %}

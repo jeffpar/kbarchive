@@ -6,6 +6,8 @@ permalink: /kb/138/Q138741/
 
 ## Q138741: Intermittent System Hangs with OPTI-495SLC Chipset
 
+{% raw %}
+
 	Article: Q138741
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a,3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/138/Q138741/
 	
 	=============================================================================
 	
+
+{% endraw %}

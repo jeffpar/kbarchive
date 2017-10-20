@@ -6,6 +6,8 @@ permalink: /kb/179/Q179798/
 
 ## Q179798: How to Increase Free Space on Your Hard Disk
 
+{% raw %}
+
 	Article: Q179798
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:95
@@ -121,3 +123,5 @@ permalink: /kb/179/Q179798/
 	
 	=============================================================================
 	
+
+{% endraw %}

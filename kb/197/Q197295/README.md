@@ -6,6 +6,8 @@ permalink: /kb/197/Q197295/
 
 ## Q197295: WinNT Does Not Boot to Partition That Starts More Than 4 GB
 
+{% raw %}
+
 	Article: Q197295
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/197/Q197295/
 	
 	=============================================================================
 	
+
+{% endraw %}

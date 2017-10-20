@@ -6,6 +6,8 @@ permalink: /kb/099/Q99671/
 
 ## Q99671: Chaining NotifyRegister Callbacks Issuing Notifications
 
+{% raw %}
+
 	Article: Q99671
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -87,3 +89,5 @@ permalink: /kb/099/Q99671/
 	
 	=============================================================================
 	
+
+{% endraw %}

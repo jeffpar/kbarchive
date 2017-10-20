@@ -6,6 +6,8 @@ permalink: /kb/198/Q198893/
 
 ## Q198893: Effects of Checking &quot;Use Network Name for Computer Name&quot; in MSCS
 
+{% raw %}
+
 	Article: Q198893
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/198/Q198893/
 	
 	=============================================================================
 	
+
+{% endraw %}

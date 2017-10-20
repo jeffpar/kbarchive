@@ -6,6 +6,8 @@ permalink: /kb/153/Q153139/
 
 ## Q153139: Removing Deleted or Renamed Servers from License Manager
 
+{% raw %}
+
 	Article: Q153139
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -50,3 +52,5 @@ permalink: /kb/153/Q153139/
 	
 	=============================================================================
 	
+
+{% endraw %}

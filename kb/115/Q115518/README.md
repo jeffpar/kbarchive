@@ -6,6 +6,8 @@ permalink: /kb/115/Q115518/
 
 ## Q115518: FFAPI: Memory Usage for MS-DOS Get and Put Executable Files
 
+{% raw %}
+
 	Article: Q115518
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1,3.0
@@ -65,3 +67,5 @@ permalink: /kb/115/Q115518/
 	
 	=============================================================================
 	
+
+{% endraw %}

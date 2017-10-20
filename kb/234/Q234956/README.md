@@ -6,6 +6,8 @@ permalink: /kb/234/Q234956/
 
 ## Q234956: Desktop Applications VB MCSD Training Kit: Chapter 12 missing he
 
+{% raw %}
+
 	Article: Q234956
 	Product(s): Microsoft Press
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/234/Q234956/
 	
 	=============================================================================
 	
+
+{% endraw %}

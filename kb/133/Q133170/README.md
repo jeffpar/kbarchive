@@ -6,6 +6,8 @@ permalink: /kb/133/Q133170/
 
 ## Q133170: Encarta: Incorrect Font is Displayed
 
+{% raw %}
+
 	Article: Q133170
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1995 edition,1996 edition; WINDOWS:
@@ -66,3 +68,5 @@ permalink: /kb/133/Q133170/
 	
 	=============================================================================
 	
+
+{% endraw %}

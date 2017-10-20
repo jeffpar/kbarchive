@@ -6,6 +6,8 @@ permalink: /kb/245/Q245451/
 
 ## Q245451: Streets and Trips 2000: Errors When You Open Saved Trips or Maps
 
+{% raw %}
+
 	Article: Q245451
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -60,3 +62,5 @@ permalink: /kb/245/Q245451/
 	
 	=============================================================================
 	
+
+{% endraw %}

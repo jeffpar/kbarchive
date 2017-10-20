@@ -6,6 +6,8 @@ permalink: /kb/138/Q138925/
 
 ## Q138925: Requesting an IP Address with NT RAS or Win95 Dial Up Networking
 
+{% raw %}
+
 	Article: Q138925
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.5,3.51
@@ -64,3 +66,5 @@ permalink: /kb/138/Q138925/
 	
 	=============================================================================
 	
+
+{% endraw %}

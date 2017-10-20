@@ -6,6 +6,8 @@ permalink: /kb/058/Q58672/
 
 ## Q58672: Using INT with _asm Does Not Output Text in Debugger
 
+{% raw %}
+
 	Article: Q58672
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -96,3 +98,5 @@ permalink: /kb/058/Q58672/
 	Microsoft has confirmed this to be a problem with QuickC Version 2.00.
 	We are researching this problem and will post new information here as
 	it becomes available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155922/
 
 ## Q155922: No Memory Load Index in Windows NT 4.0 Diagnostics Tool
 
+{% raw %}
+
 	Article: Q155922
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -49,3 +51,5 @@ permalink: /kb/155/Q155922/
 	
 	=============================================================================
 	
+
+{% endraw %}

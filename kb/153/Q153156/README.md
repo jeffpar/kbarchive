@@ -6,6 +6,8 @@ permalink: /kb/153/Q153156/
 
 ## Q153156: Sched.exe OLE Automation Adds Schedule+ Appointments
 
+{% raw %}
+
 	Article: Q153156
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -57,3 +59,5 @@ permalink: /kb/153/Q153156/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139756/
 
 ## Q139756: PRB: Cannot Reuse Deleted Primary Key Values in Visual FoxPro
 
+{% raw %}
+
 	Article: Q139756
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -70,3 +72,5 @@ permalink: /kb/139/Q139756/
 	
 	=============================================================================
 	
+
+{% endraw %}

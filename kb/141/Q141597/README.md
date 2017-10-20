@@ -6,6 +6,8 @@ permalink: /kb/141/Q141597/
 
 ## Q141597: Cannot Install Sound Blaster AWE32 Sound Card from Setup Disk
 
+{% raw %}
+
 	Article: Q141597
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -103,3 +105,5 @@ permalink: /kb/141/Q141597/
 	
 	=============================================================================
 	
+
+{% endraw %}

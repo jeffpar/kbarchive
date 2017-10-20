@@ -6,6 +6,8 @@ permalink: /kb/279/Q279455/
 
 ## Q279455: MSN Companion e-mail appears to be having temporary server probl
 
+{% raw %}
+
 	Article: Q279455
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -97,3 +99,5 @@ permalink: /kb/279/Q279455/
 	
 	=============================================================================
 	
+
+{% endraw %}

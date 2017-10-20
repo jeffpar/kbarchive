@@ -6,6 +6,8 @@ permalink: /kb/142/Q142946/
 
 ## Q142946: Troubleshooting Video Codecs in Windows 95
 
+{% raw %}
+
 	Article: Q142946
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -248,3 +250,5 @@ permalink: /kb/142/Q142946/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159963/
 
 ## Q159963: WD97: Word 97 Supports ODMA
 
+{% raw %}
+
 	Article: Q159963
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -175,3 +177,5 @@ permalink: /kb/159/Q159963/
 	
 	=============================================================================
 	
+
+{% endraw %}

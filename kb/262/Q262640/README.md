@@ -6,6 +6,8 @@ permalink: /kb/262/Q262640/
 
 ## Q262640: Windows NT 4.0 Option Pack Does Not Install on Windows 2000
 
+{% raw %}
+
 	Article: Q262640
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -59,3 +61,5 @@ permalink: /kb/262/Q262640/
 	
 	=============================================================================
 	
+
+{% endraw %}

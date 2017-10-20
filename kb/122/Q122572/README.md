@@ -6,6 +6,8 @@ permalink: /kb/122/Q122572/
 
 ## Q122572: Multiple Events Appear for Intelligent Digiboard Adapters
 
+{% raw %}
+
 	Article: Q122572
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/122/Q122572/
 	
 	=============================================================================
 	
+
+{% endraw %}

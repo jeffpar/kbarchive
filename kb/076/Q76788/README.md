@@ -6,6 +6,8 @@ permalink: /kb/076/Q76788/
 
 ## Q76788: QAPLUS 4.21 Produces Errors with EMM386.EXE
 
+{% raw %}
+
 	Article: Q76788
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -45,3 +47,5 @@ permalink: /kb/076/Q76788/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135286/
 
 ## Q135286: BUG: Can't Use Keyboard to Change Vertical Size of Object
 
+{% raw %}
+
 	Article: Q135286
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -63,3 +65,5 @@ permalink: /kb/135/Q135286/
 	
 	=============================================================================
 	
+
+{% endraw %}

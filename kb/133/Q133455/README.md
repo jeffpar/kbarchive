@@ -6,6 +6,8 @@ permalink: /kb/133/Q133455/
 
 ## Q133455: How to Create an Array of Structures in Visual FoxPro
 
+{% raw %}
+
 	Article: Q133455
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -66,3 +68,5 @@ permalink: /kb/133/Q133455/
 	
 	=============================================================================
 	
+
+{% endraw %}

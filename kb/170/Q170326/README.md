@@ -6,6 +6,8 @@ permalink: /kb/170/Q170326/
 
 ## Q170326: SNMPUTIL Fails with &quot;invalid oid &lt;oid name&gt; specified&quot; Error Msg
 
+{% raw %}
+
 	Article: Q170326
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/170/Q170326/
 	
 	=============================================================================
 	
+
+{% endraw %}

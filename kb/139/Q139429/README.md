@@ -6,6 +6,8 @@ permalink: /kb/139/Q139429/
 
 ## Q139429: Problems Using TekRam VLB Controller with Windows 95
 
+{% raw %}
+
 	Article: Q139429
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -68,3 +70,5 @@ permalink: /kb/139/Q139429/
 	
 	=============================================================================
 	
+
+{% endraw %}

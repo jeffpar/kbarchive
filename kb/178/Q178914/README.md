@@ -6,6 +6,8 @@ permalink: /kb/178/Q178914/
 
 ## Q178914: CSNW: Cannot Use Wildcards Connecting to Printers in NDS Tree
 
+{% raw %}
+
 	Article: Q178914
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -51,3 +53,5 @@ permalink: /kb/178/Q178914/
 	
 	=============================================================================
 	
+
+{% endraw %}

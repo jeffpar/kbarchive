@@ -6,6 +6,8 @@ permalink: /kb/149/Q149513/
 
 ## Q149513: BUG: An OPEN Status= Option Like String Converted to Uppercase
 
+{% raw %}
+
 	Article: Q149513
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/149/Q149513/
 	
 	=============================================================================
 	
+
+{% endraw %}

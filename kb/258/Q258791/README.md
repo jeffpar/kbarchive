@@ -6,6 +6,8 @@ permalink: /kb/258/Q258791/
 
 ## Q258791: &quot;LdapErr&quot;When Connecting to MMS Configured with Compass
 
+{% raw %}
+
 	Article: Q258791
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -81,3 +83,5 @@ permalink: /kb/258/Q258791/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/267/Q267913/
 
 ## Q267913: Incorrect Last Modified Time for File Is Returned
 
+{% raw %}
+
 	Article: Q267913
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/267/Q267913/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157816/
 
 ## Q157816: SMS: Hardware Inventory Changes Lotus Organizer Sound Output
 
+{% raw %}
+
 	Article: Q157816
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -50,3 +52,5 @@ permalink: /kb/157/Q157816/
 	
 	=============================================================================
 	
+
+{% endraw %}

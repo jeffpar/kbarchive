@@ -6,6 +6,8 @@ permalink: /kb/255/Q255987/
 
 ## Q255987: Service Pack Requires Logon with Local Administrative Rights
 
+{% raw %}
+
 	Article: Q255987
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -88,3 +90,5 @@ permalink: /kb/255/Q255987/
 	
 	=============================================================================
 	
+
+{% endraw %}

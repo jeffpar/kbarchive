@@ -6,6 +6,8 @@ permalink: /kb/142/Q142057/
 
 ## Q142057: How to Install PPD Files From Postscript Printer Manufacturers
 
+{% raw %}
+
 	Article: Q142057
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -145,3 +147,5 @@ permalink: /kb/142/Q142057/
 	
 	=============================================================================
 	
+
+{% endraw %}

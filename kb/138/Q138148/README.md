@@ -6,6 +6,8 @@ permalink: /kb/138/Q138148/
 
 ## Q138148: Visual SourceSafe Directory Listing
 
+{% raw %}
+
 	Article: Q138148
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.00 5.00 | 4.00 5.00
@@ -73,3 +75,5 @@ permalink: /kb/138/Q138148/
 	
 	=============================================================================
 	
+
+{% endraw %}

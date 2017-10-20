@@ -6,6 +6,8 @@ permalink: /kb/189/Q189352/
 
 ## Q189352: PRB: Assert When Creating MFC Windows in Printer Drivers
 
+{% raw %}
+
 	Article: Q189352
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -105,3 +107,5 @@ permalink: /kb/189/Q189352/
 	
 	=============================================================================
 	
+
+{% endraw %}

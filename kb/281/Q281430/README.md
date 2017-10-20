@@ -6,6 +6,8 @@ permalink: /kb/281/Q281430/
 
 ## Q281430: HOWTO: Retrieve XML Data from SQL Server 2000 with CRowsetStream
 
+{% raw %}
+
 	Article: Q281430
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -256,3 +258,5 @@ permalink: /kb/281/Q281430/
 	
 	=============================================================================
 	
+
+{% endraw %}

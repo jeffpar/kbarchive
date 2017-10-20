@@ -6,6 +6,8 @@ permalink: /kb/144/Q144930/
 
 ## Q144930: OFF97: Size of TIFF Picture Is Incorrect When Inserted
 
+{% raw %}
+
 	Article: Q144930
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/144/Q144930/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134706/
 
 ## Q134706: Error Message: The Font File May Be Damaged
 
+{% raw %}
+
 	Article: Q134706
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/134/Q134706/
 	
 	=============================================================================
 	
+
+{% endraw %}

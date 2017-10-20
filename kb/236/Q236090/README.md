@@ -6,6 +6,8 @@ permalink: /kb/236/Q236090/
 
 ## Q236090: XCLN: Optional Attendee Displayed as Required to Delegate
 
+{% raw %}
+
 	Article: Q236090
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -100,3 +102,5 @@ permalink: /kb/236/Q236090/
 	
 	=============================================================================
 	
+
+{% endraw %}

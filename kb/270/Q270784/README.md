@@ -6,6 +6,8 @@ permalink: /kb/270/Q270784/
 
 ## Q270784: ELL: Speech Recognition Stops in Virtual Challenge
 
+{% raw %}
+
 	Article: Q270784
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -118,3 +120,5 @@ permalink: /kb/270/Q270784/
 	
 	=============================================================================
 	
+
+{% endraw %}

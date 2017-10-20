@@ -6,6 +6,8 @@ permalink: /kb/186/Q186302/
 
 ## Q186302: XWEB: OWA Logon Page Shows Version 5.01 After SP2 Upgrade
 
+{% raw %}
+
 	Article: Q186302
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -42,3 +44,5 @@ permalink: /kb/186/Q186302/
 	
 	=============================================================================
 	
+
+{% endraw %}

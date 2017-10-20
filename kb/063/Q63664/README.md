@@ -6,6 +6,8 @@ permalink: /kb/063/Q63664/
 
 ## Q63664: Color Support for NEC Pinwriter Printers in Windows 3.0
 
+{% raw %}
+
 	Article: Q63664
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -35,3 +37,5 @@ permalink: /kb/063/Q63664/
 	
 	=============================================================================
 	
+
+{% endraw %}

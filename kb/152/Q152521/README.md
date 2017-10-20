@@ -6,6 +6,8 @@ permalink: /kb/152/Q152521/
 
 ## Q152521: XCLN: Can Not Open MS Excel for Macintosh Four Attachments
 
+{% raw %}
+
 	Article: Q152521
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -92,3 +94,5 @@ permalink: /kb/152/Q152521/
 	
 	=============================================================================
 	
+
+{% endraw %}

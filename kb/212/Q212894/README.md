@@ -6,6 +6,8 @@ permalink: /kb/212/Q212894/
 
 ## Q212894: SMS: Windows Clients Cannot Connect to Software Metering Server
 
+{% raw %}
+
 	Article: Q212894
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -55,3 +57,5 @@ permalink: /kb/212/Q212894/
 	
 	=============================================================================
 	
+
+{% endraw %}

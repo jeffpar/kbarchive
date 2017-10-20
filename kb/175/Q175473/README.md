@@ -6,6 +6,8 @@ permalink: /kb/175/Q175473/
 
 ## Q175473: Bookshelf 98: Remove All Deletes Internet Directory 96 Updates
 
+{% raw %}
+
 	Article: Q175473
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -56,3 +58,5 @@ permalink: /kb/175/Q175473/
 	
 	=============================================================================
 	
+
+{% endraw %}

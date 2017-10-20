@@ -6,6 +6,8 @@ permalink: /kb/081/Q81220/
 
 ## Q81220: How to Use More than One Type of Font in Picture Box
 
+{% raw %}
+
 	Article: Q81220
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0,3.0
@@ -109,3 +111,5 @@ permalink: /kb/081/Q81220/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/319/Q319688/
 
 ## Q319688: MS02-018: Patch Available for Chunked Encoding Vulnerability
 
+{% raw %}
+
 	Article: Q319688
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -142,3 +144,5 @@ permalink: /kb/319/Q319688/
 	
 	=============================================================================
 	
+
+{% endraw %}

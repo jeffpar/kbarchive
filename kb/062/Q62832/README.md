@@ -6,6 +6,8 @@ permalink: /kb/062/Q62832/
 
 ## Q62832: 7.00 CREATEINDEX Example Gives &quot;No Current Record&quot; at Run-Time
 
+{% raw %}
+
 	Article: Q62832
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -138,3 +140,5 @@ permalink: /kb/062/Q62832/
 	DELETEINDEX TableNum, "C"
 	CLOSE
 	END
+
+{% endraw %}

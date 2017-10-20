@@ -6,6 +6,8 @@ permalink: /kb/120/Q120495/
 
 ## Q120495: Changing a Bitmap Palette to Prevent Distortion &amp; Screen Flash
 
+{% raw %}
+
 	Article: Q120495
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:1.0,1.1
@@ -55,3 +57,5 @@ permalink: /kb/120/Q120495/
 	
 	=============================================================================
 	
+
+{% endraw %}

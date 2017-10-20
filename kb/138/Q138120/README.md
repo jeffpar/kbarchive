@@ -6,6 +6,8 @@ permalink: /kb/138/Q138120/
 
 ## Q138120: Windows 95 Readme.txt File from Drivers&#92;Other&#92;Qtwfix Folder
 
+{% raw %}
+
 	Article: Q138120
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -98,3 +100,5 @@ permalink: /kb/138/Q138120/
 	
 	=============================================================================
 	
+
+{% endraw %}

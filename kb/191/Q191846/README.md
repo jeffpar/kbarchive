@@ -6,6 +6,8 @@ permalink: /kb/191/Q191846/
 
 ## Q191846: WINS Automatic Backup Does Not Run Every Three Hours
 
+{% raw %}
+
 	Article: Q191846
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -56,3 +58,5 @@ permalink: /kb/191/Q191846/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195520/
 
 ## Q195520: Encarta 99: How to Turn Off Sounds and Visual Effects
 
+{% raw %}
+
 	Article: Q195520
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -114,3 +116,5 @@ permalink: /kb/195/Q195520/
 	
 	=============================================================================
 	
+
+{% endraw %}

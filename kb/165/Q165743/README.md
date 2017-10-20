@@ -6,6 +6,8 @@ permalink: /kb/165/Q165743/
 
 ## Q165743: Default Domain Administrator Not Correctly Configured
 
+{% raw %}
+
 	Article: Q165743
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -63,3 +65,5 @@ permalink: /kb/165/Q165743/
 	
 	=============================================================================
 	
+
+{% endraw %}

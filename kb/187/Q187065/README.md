@@ -6,6 +6,8 @@ permalink: /kb/187/Q187065/
 
 ## Q187065: Problem Setting Pagefile to 0 on Alpha
 
+{% raw %}
+
 	Article: Q187065
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -51,3 +53,5 @@ permalink: /kb/187/Q187065/
 	
 	=============================================================================
 	
+
+{% endraw %}

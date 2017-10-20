@@ -6,6 +6,8 @@ permalink: /kb/254/Q254428/
 
 ## Q254428: MapPoint 2001: Draw Object Hides Existing Pushpins on the Map
 
+{% raw %}
+
 	Article: Q254428
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -50,3 +52,5 @@ permalink: /kb/254/Q254428/
 	
 	=============================================================================
 	
+
+{% endraw %}

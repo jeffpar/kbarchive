@@ -6,6 +6,8 @@ permalink: /kb/165/Q165603/
 
 ## Q165603: WD97: Borders.Count Returns Five on a Selected Paragraph
 
+{% raw %}
+
 	Article: Q165603
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/165/Q165603/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152161/
 
 ## Q152161: XCLN: Survey Application Error 380 Invalid Property Value
 
+{% raw %}
+
 	Article: Q152161
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -45,3 +47,5 @@ permalink: /kb/152/Q152161/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/226/Q226350/
 
 ## Q226350: XCLN: Can't Open Additional Mailboxes with Outlook DPA
 
+{% raw %}
+
 	Article: Q226350
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -81,3 +83,5 @@ permalink: /kb/226/Q226350/
 	
 	=============================================================================
 	
+
+{% endraw %}

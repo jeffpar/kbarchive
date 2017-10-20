@@ -6,6 +6,8 @@ permalink: /kb/148/Q148362/
 
 ## Q148362: Connecting Two Windows NT Computers with EiconCards
 
+{% raw %}
+
 	Article: Q148362
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -79,3 +81,5 @@ permalink: /kb/148/Q148362/
 	
 	=============================================================================
 	
+
+{% endraw %}

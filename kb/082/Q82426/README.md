@@ -6,6 +6,8 @@ permalink: /kb/082/Q82426/
 
 ## Q82426: KEAterm 1.1.0 Does Not Print TrueType Fonts to an HP III
 
+{% raw %}
+
 	Article: Q82426
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/082/Q82426/
 	
 	=============================================================================
 	
+
+{% endraw %}

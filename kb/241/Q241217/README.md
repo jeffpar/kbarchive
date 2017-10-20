@@ -6,6 +6,8 @@ permalink: /kb/241/Q241217/
 
 ## Q241217: BUG: Source Browser Shows Decorated Name for Member Template
 
+{% raw %}
+
 	Article: Q241217
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -94,3 +96,5 @@ permalink: /kb/241/Q241217/
 	
 	=============================================================================
 	
+
+{% endraw %}

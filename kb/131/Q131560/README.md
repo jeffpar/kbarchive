@@ -6,6 +6,8 @@ permalink: /kb/131/Q131560/
 
 ## Q131560: BUG: Creating a Header Class Definition in a VCX Causes Error
 
+{% raw %}
+
 	Article: Q131560
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -109,3 +111,5 @@ permalink: /kb/131/Q131560/
 	
 	=============================================================================
 	
+
+{% endraw %}

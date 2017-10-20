@@ -6,6 +6,8 @@ permalink: /kb/295/Q295398/
 
 ## Q295398: PRB: Error in Remote View Wizard When Connecting to DB2
 
+{% raw %}
+
 	Article: Q295398
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -83,3 +85,5 @@ permalink: /kb/295/Q295398/
 	
 	=============================================================================
 	
+
+{% endraw %}

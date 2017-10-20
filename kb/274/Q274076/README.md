@@ -6,6 +6,8 @@ permalink: /kb/274/Q274076/
 
 ## Q274076: Microsoft Reader: Text Is Displayed Upside Down
 
+{% raw %}
+
 	Article: Q274076
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.5
@@ -154,3 +156,5 @@ permalink: /kb/274/Q274076/
 	
 	=============================================================================
 	
+
+{% endraw %}

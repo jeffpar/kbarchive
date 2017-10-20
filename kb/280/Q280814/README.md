@@ -6,6 +6,8 @@ permalink: /kb/280/Q280814/
 
 ## Q280814: SMS: SMS_LOGON_DISCOVERY_AGENT Does Not Start on Windows 2000
 
+{% raw %}
+
 	Article: Q280814
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -56,3 +58,5 @@ permalink: /kb/280/Q280814/
 	
 	=============================================================================
 	
+
+{% endraw %}

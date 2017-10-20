@@ -6,6 +6,8 @@ permalink: /kb/135/Q135647/
 
 ## Q135647: Media Vision Premium 3D and Pro 3D Cards Not Supported
 
+{% raw %}
+
 	Article: Q135647
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51
@@ -42,3 +44,5 @@ permalink: /kb/135/Q135647/
 	
 	=============================================================================
 	
+
+{% endraw %}

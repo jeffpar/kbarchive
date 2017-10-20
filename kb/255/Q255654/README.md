@@ -6,6 +6,8 @@ permalink: /kb/255/Q255654/
 
 ## Q255654: IIS Performance Counters Not Available in TS Client Session
 
+{% raw %}
+
 	Article: Q255654
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -50,3 +52,5 @@ permalink: /kb/255/Q255654/
 	
 	=============================================================================
 	
+
+{% endraw %}

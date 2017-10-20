@@ -6,6 +6,8 @@ permalink: /kb/081/Q81681/
 
 ## Q81681: Windows 3.1 32-Bit Disk Access Not Compatible with DISCTEC
 
+{% raw %}
+
 	Article: Q81681
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/081/Q81681/
 	
 	=============================================================================
 	
+
+{% endraw %}

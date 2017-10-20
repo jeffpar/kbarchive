@@ -6,6 +6,8 @@ permalink: /kb/155/Q155569/
 
 ## Q155569: MS Mail 3.5 Mail Service Manager Setup Does Not Work
 
+{% raw %}
+
 	Article: Q155569
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:4.0; :3.5
@@ -61,3 +63,5 @@ permalink: /kb/155/Q155569/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/317/Q317112/
 
 ## Q317112: SMS: Site Server Enumerates Group Membership Too Often
 
+{% raw %}
+
 	Article: Q317112
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -258,3 +260,5 @@ permalink: /kb/317/Q317112/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159186/
 
 ## Q159186: XCON: Mail Sent Outside Site via X.400 Takes Illogical Route
 
+{% raw %}
+
 	Article: Q159186
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -118,3 +120,5 @@ permalink: /kb/159/Q159186/
 	
 	=============================================================================
 	
+
+{% endraw %}

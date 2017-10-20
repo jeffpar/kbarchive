@@ -6,6 +6,8 @@ permalink: /kb/305/Q305286/
 
 ## Q305286: ENC: You Hear No Audio When You Play Sound Files
 
+{% raw %}
+
 	Article: Q305286
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -86,3 +88,5 @@ permalink: /kb/305/Q305286/
 	
 	=============================================================================
 	
+
+{% endraw %}

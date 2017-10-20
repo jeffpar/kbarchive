@@ -6,6 +6,8 @@ permalink: /kb/109/Q109257/
 
 ## Q109257: CONN: Traffic Is Suspended During Address Import/Export
 
+{% raw %}
+
 	Article: Q109257
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -45,3 +47,5 @@ permalink: /kb/109/Q109257/
 	
 	=============================================================================
 	
+
+{% endraw %}

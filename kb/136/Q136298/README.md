@@ -6,6 +6,8 @@ permalink: /kb/136/Q136298/
 
 ## Q136298: Using NET DIAG Produces French Output from NET.EXE
 
+{% raw %}
+
 	Article: Q136298
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -44,3 +46,5 @@ permalink: /kb/136/Q136298/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153401/
 
 ## Q153401: User Profile Editor Does Not Save System Default Profiles
 
+{% raw %}
+
 	Article: Q153401
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP4
@@ -62,3 +64,5 @@ permalink: /kb/153/Q153401/
 	
 	=============================================================================
 	
+
+{% endraw %}

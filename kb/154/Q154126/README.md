@@ -6,6 +6,8 @@ permalink: /kb/154/Q154126/
 
 ## Q154126: PRB: Using Extension DLL, Database/OLE/Sockets in Regular DLL
 
+{% raw %}
+
 	Article: Q154126
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -312,3 +314,5 @@ permalink: /kb/154/Q154126/
 	
 	=============================================================================
 	
+
+{% endraw %}

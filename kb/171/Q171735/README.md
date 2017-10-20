@@ -6,6 +6,8 @@ permalink: /kb/171/Q171735/
 
 ## Q171735: Err Msg: Detection Manager Error: Failed to Hook Ring 0 Code
 
+{% raw %}
+
 	Article: Q171735
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -47,3 +49,5 @@ permalink: /kb/171/Q171735/
 	
 	=============================================================================
 	
+
+{% endraw %}

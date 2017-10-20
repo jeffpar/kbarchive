@@ -6,6 +6,8 @@ permalink: /kb/235/Q235808/
 
 ## Q235808: SMS: Smsapm32.exe May Report Status Incorrectly
 
+{% raw %}
+
 	Article: Q235808
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -86,3 +88,5 @@ permalink: /kb/235/Q235808/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248652/
 
 ## Q248652: Dial-Up Networking Cannot Connect to 56-Bit Windows 2000 Server
 
+{% raw %}
+
 	Article: Q248652
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -102,3 +104,5 @@ permalink: /kb/248/Q248652/
 	
 	=============================================================================
 	
+
+{% endraw %}

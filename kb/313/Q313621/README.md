@@ -6,6 +6,8 @@ permalink: /kb/313/Q313621/
 
 ## Q313621: Port Mapper Services Cause Services for UNIX Not to Work
 
+{% raw %}
+
 	Article: Q313621
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,2.1 OEM Only,2.2 OEM Only,3.0
@@ -267,3 +269,5 @@ permalink: /kb/313/Q313621/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135170/
 
 ## Q135170: Cannot Use Alternate Font Character Set in WordPad
 
+{% raw %}
+
 	Article: Q135170
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/135/Q135170/
 	
 	=============================================================================
 	
+
+{% endraw %}

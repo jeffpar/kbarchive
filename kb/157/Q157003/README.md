@@ -6,6 +6,8 @@ permalink: /kb/157/Q157003/
 
 ## Q157003: PC Adm: Microsoft Mail Administrator Program and VDM
 
+{% raw %}
+
 	Article: Q157003
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -67,3 +69,5 @@ permalink: /kb/157/Q157003/
 	
 	=============================================================================
 	
+
+{% endraw %}

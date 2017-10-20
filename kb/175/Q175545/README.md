@@ -6,6 +6,8 @@ permalink: /kb/175/Q175545/
 
 ## Q175545: XADM: Directory Replication Occurs Five Minutes After Startup
 
+{% raw %}
+
 	Article: Q175545
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -102,3 +104,5 @@ permalink: /kb/175/Q175545/
 	
 	=============================================================================
 	
+
+{% endraw %}

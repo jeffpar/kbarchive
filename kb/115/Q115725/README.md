@@ -6,6 +6,8 @@ permalink: /kb/115/Q115725/
 
 ## Q115725: FORTRAN PowerStation 1.0a README.TXT: Executing and Debugging
 
+{% raw %}
+
 	Article: Q115725
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0a
@@ -193,3 +195,5 @@ permalink: /kb/115/Q115725/
 	
 	=============================================================================
 	
+
+{% endraw %}

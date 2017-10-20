@@ -6,6 +6,8 @@ permalink: /kb/089/Q89022/
 
 ## Q89022: Event Managers or Launchers for Windows
 
+{% raw %}
+
 	Article: Q89022
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -87,3 +89,5 @@ permalink: /kb/089/Q89022/
 	
 	=============================================================================
 	
+
+{% endraw %}

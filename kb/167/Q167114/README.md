@@ -6,6 +6,8 @@ permalink: /kb/167/Q167114/
 
 ## Q167114: SMS: PCM Service Is Now Available for Windows NT Clients
 
+{% raw %}
+
 	Article: Q167114
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,3.51,4.0
@@ -78,3 +80,5 @@ permalink: /kb/167/Q167114/
 	
 	=============================================================================
 	
+
+{% endraw %}

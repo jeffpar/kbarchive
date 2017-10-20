@@ -6,6 +6,8 @@ permalink: /kb/087/Q87490/
 
 ## Q87490: X400: Use of &quot;_&quot; Character in the X.400 Version 2.1b3 Setup
 
+{% raw %}
+
 	Article: Q87490
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -44,3 +46,5 @@ permalink: /kb/087/Q87490/
 	
 	=============================================================================
 	
+
+{% endraw %}

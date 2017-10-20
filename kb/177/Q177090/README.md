@@ -6,6 +6,8 @@ permalink: /kb/177/Q177090/
 
 ## Q177090: FIX: Returning Empty Array from ActiveX EXE Fails with SP2
 
+{% raw %}
+
 	Article: Q177090
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -101,3 +103,5 @@ permalink: /kb/177/Q177090/
 	
 	=============================================================================
 	
+
+{% endraw %}

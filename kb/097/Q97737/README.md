@@ -6,6 +6,8 @@ permalink: /kb/097/Q97737/
 
 ## Q97737: Running Windows for Workgroups on a DEC Pathworks Network
 
+{% raw %}
+
 	Article: Q97737
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:
@@ -421,3 +423,5 @@ permalink: /kb/097/Q97737/
 	
 	=============================================================================
 	
+
+{% endraw %}

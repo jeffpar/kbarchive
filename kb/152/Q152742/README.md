@@ -6,6 +6,8 @@ permalink: /kb/152/Q152742/
 
 ## Q152742: Error Message: &quot;Could Not Start Directory Replicator Service&quot;
 
+{% raw %}
+
 	Article: Q152742
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.50,3.51
@@ -78,3 +80,5 @@ permalink: /kb/152/Q152742/
 	
 	=============================================================================
 	
+
+{% endraw %}

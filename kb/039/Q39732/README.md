@@ -6,6 +6,8 @@ permalink: /kb/039/Q39732/
 
 ## Q39732: In QB.EXE 4.50 on Tandy 1000 SX, &quot;&#92;&quot; Key Acts Like HOME Key
 
+{% raw %}
+
 	Article: Q39732
 	Product(s): See article
 	Version(s): 4.50
@@ -52,3 +54,5 @@ permalink: /kb/039/Q39732/
 	To get a pipe character (|), press ALT+124 (where NUM LOCK must be
 	active, and 1, 2, and 4 must be typed sequentially on the numeric
 	keypad while holding down the ALT key).
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/238/Q238329/
 
 ## Q238329: Malformed IGMP Packets May Promote &quot;Denial of Service&quot; Attack
 
+{% raw %}
+
 	Article: Q238329
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.0,4.0
@@ -259,3 +261,5 @@ permalink: /kb/238/Q238329/
 	
 	=============================================================================
 	
+
+{% endraw %}

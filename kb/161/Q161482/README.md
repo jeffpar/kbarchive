@@ -6,6 +6,8 @@ permalink: /kb/161/Q161482/
 
 ## Q161482: XCON: A Directory Name Object Allocation Command Failed
 
+{% raw %}
+
 	Article: Q161482
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/161/Q161482/
 	
 	=============================================================================
 	
+
+{% endraw %}

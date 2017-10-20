@@ -6,6 +6,8 @@ permalink: /kb/086/Q86579/
 
 ## Q86579: AM or PM Missing from Digital Clock
 
+{% raw %}
+
 	Article: Q86579
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -75,3 +77,5 @@ permalink: /kb/086/Q86579/
 	
 	=============================================================================
 	
+
+{% endraw %}

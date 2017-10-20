@@ -6,6 +6,8 @@ permalink: /kb/153/Q153758/
 
 ## Q153758: XCON: Dynamic RAS Error Msg: An Interface Error Has Occured
 
+{% raw %}
+
 	Article: Q153758
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -69,3 +71,5 @@ permalink: /kb/153/Q153758/
 	
 	=============================================================================
 	
+
+{% endraw %}

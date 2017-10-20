@@ -6,6 +6,8 @@ permalink: /kb/278/Q278268/
 
 ## Q278268: Lowercase Characters Appear with CAPS LOCK on Bulgarian Keyboard
 
+{% raw %}
+
 	Article: Q278268
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -89,3 +91,5 @@ permalink: /kb/278/Q278268/
 	
 	=============================================================================
 	
+
+{% endraw %}

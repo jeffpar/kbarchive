@@ -6,6 +6,8 @@ permalink: /kb/183/Q183731/
 
 ## Q183731: How to Index and Create a Catalog for a New Web Site
 
+{% raw %}
+
 	Article: Q183731
 	Product(s): Internet Information Server
 	Version(s): WINNT:2.0
@@ -76,3 +78,5 @@ permalink: /kb/183/Q183731/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/071/Q71247/
 
 ## Q71247: Semicolon, Equal Sign As Arguments in Batch File
 
+{% raw %}
+
 	Article: Q71247
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.x,6.0,6.2,6.21,6.22
@@ -56,3 +58,5 @@ permalink: /kb/071/Q71247/
 	
 	=============================================================================
 	
+
+{% endraw %}

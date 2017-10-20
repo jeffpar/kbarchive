@@ -6,6 +6,8 @@ permalink: /kb/273/Q273877/
 
 ## Q273877: IIS Shuts Down and Restarts for No Apparent Reason
 
+{% raw %}
+
 	Article: Q273877
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -161,3 +163,5 @@ permalink: /kb/273/Q273877/
 	
 	=============================================================================
 	
+
+{% endraw %}

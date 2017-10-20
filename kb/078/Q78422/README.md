@@ -6,6 +6,8 @@ permalink: /kb/078/Q78422/
 
 ## Q78422: Incorrect DIR Listing with Personics Ultravision
 
+{% raw %}
+
 	Article: Q78422
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -53,3 +55,5 @@ permalink: /kb/078/Q78422/
 	
 	=============================================================================
 	
+
+{% endraw %}

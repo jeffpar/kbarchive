@@ -6,6 +6,8 @@ permalink: /kb/195/Q195649/
 
 ## Q195649: Service Making Connection to NetWare Server May Fail
 
+{% raw %}
+
 	Article: Q195649
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -80,3 +82,5 @@ permalink: /kb/195/Q195649/
 	
 	=============================================================================
 	
+
+{% endraw %}

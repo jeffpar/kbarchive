@@ -6,6 +6,8 @@ permalink: /kb/174/Q174504/
 
 ## Q174504: Detection of IntelliPoint Mouse on Serial Adapter Fails
 
+{% raw %}
+
 	Article: Q174504
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/174/Q174504/
 	
 	=============================================================================
 	
+
+{% endraw %}

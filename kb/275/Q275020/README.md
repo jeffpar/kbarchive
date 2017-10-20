@@ -6,6 +6,8 @@ permalink: /kb/275/Q275020/
 
 ## Q275020: SMB Signing May Become Unsynchronized
 
+{% raw %}
+
 	Article: Q275020
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -96,3 +98,5 @@ permalink: /kb/275/Q275020/
 	
 	=============================================================================
 	
+
+{% endraw %}

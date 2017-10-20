@@ -6,6 +6,8 @@ permalink: /kb/107/Q107490/
 
 ## Q107490: Art Gallery: Some Buttons Stay Depressed
 
+{% raw %}
+
 	Article: Q107490
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -41,3 +43,5 @@ permalink: /kb/107/Q107490/
 	
 	=============================================================================
 	
+
+{% endraw %}

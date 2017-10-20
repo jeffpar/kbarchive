@@ -6,6 +6,8 @@ permalink: /kb/177/Q177956/
 
 ## Q177956: XFOR: Interoperability Between Exchange Server 5.0 and 5.5
 
+{% raw %}
+
 	Article: Q177956
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -97,3 +99,5 @@ permalink: /kb/177/Q177956/
 	
 	=============================================================================
 	
+
+{% endraw %}

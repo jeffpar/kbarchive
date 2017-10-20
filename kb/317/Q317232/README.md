@@ -6,6 +6,8 @@ permalink: /kb/317/Q317232/
 
 ## Q317232: Errors After You Change the Cluster Service Account Password
 
+{% raw %}
+
 	Article: Q317232
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,2000 SP2,4.0,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -110,3 +112,5 @@ permalink: /kb/317/Q317232/
 	
 	=============================================================================
 	
+
+{% endraw %}

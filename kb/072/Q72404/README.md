@@ -6,6 +6,8 @@ permalink: /kb/072/Q72404/
 
 ## Q72404: MASM 6.0 Contains Windows 3.0a Device Drivers
 
+{% raw %}
+
 	Article: Q72404
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -58,3 +60,5 @@ permalink: /kb/072/Q72404/
 	
 	=============================================================================
 	
+
+{% endraw %}

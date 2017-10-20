@@ -6,6 +6,8 @@ permalink: /kb/174/Q174524/
 
 ## Q174524: HOWTO: Retrieve and Insert HTML Into Memo Field
 
+{% raw %}
+
 	Article: Q174524
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -154,3 +156,5 @@ permalink: /kb/174/Q174524/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172169/
 
 ## Q172169: SMP Server Fails with Stop 0xA During Browser Shutdown
 
+{% raw %}
+
 	Article: Q172169
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/172/Q172169/
 	
 	=============================================================================
 	
+
+{% endraw %}

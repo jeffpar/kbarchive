@@ -6,6 +6,8 @@ permalink: /kb/147/Q147677/
 
 ## Q147677: IBM PC Server 320/520 Hangs Using IBM Tidewater Adapter
 
+{% raw %}
+
 	Article: Q147677
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -68,3 +70,5 @@ permalink: /kb/147/Q147677/
 	
 	=============================================================================
 	
+
+{% endraw %}

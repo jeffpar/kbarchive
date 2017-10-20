@@ -6,6 +6,8 @@ permalink: /kb/039/Q39517/
 
 ## Q39517: Comparing String Arguments in Macros
 
+{% raw %}
+
 	Article: Q39517
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b
@@ -47,3 +49,5 @@ permalink: /kb/039/Q39517/
 	
 	=============================================================================
 	
+
+{% endraw %}

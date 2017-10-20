@@ -6,6 +6,8 @@ permalink: /kb/129/Q129485/
 
 ## Q129485: Piping Text Files Using RSH Fails
 
+{% raw %}
+
 	Article: Q129485
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -63,3 +65,5 @@ permalink: /kb/129/Q129485/
 	
 	=============================================================================
 	
+
+{% endraw %}

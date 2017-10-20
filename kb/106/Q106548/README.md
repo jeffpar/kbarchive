@@ -6,6 +6,8 @@ permalink: /kb/106/Q106548/
 
 ## Q106548: Encarta: GP Fault with Diamond Speedstar Pro Video Card
 
+{% raw %}
+
 	Article: Q106548
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1994 edition; WINDOWS:
@@ -69,3 +71,5 @@ permalink: /kb/106/Q106548/
 	
 	=============================================================================
 	
+
+{% endraw %}

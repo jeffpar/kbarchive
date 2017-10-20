@@ -6,6 +6,8 @@ permalink: /kb/132/Q132695/
 
 ## Q132695: PRB: Private Data Session Causes Blank Grid to Appear
 
+{% raw %}
+
 	Article: Q132695
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -80,3 +82,5 @@ permalink: /kb/132/Q132695/
 	
 	=============================================================================
 	
+
+{% endraw %}

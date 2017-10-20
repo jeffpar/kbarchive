@@ -6,6 +6,8 @@ permalink: /kb/191/Q191353/
 
 ## Q191353: SMS: SMS SQL View Generator Not Completely Silent in Unattended
 
+{% raw %}
+
 	Article: Q191353
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -103,3 +105,5 @@ permalink: /kb/191/Q191353/
 	
 	=============================================================================
 	
+
+{% endraw %}

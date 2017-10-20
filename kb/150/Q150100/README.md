@@ -6,6 +6,8 @@ permalink: /kb/150/Q150100/
 
 ## Q150100: DOC:Technote 64 Incorrect About ThreadingModel Registration
 
+{% raw %}
+
 	Article: Q150100
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.1,4.2
@@ -57,3 +59,5 @@ permalink: /kb/150/Q150100/
 	
 	=============================================================================
 	
+
+{% endraw %}

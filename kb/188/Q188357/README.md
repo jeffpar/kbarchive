@@ -6,6 +6,8 @@ permalink: /kb/188/Q188357/
 
 ## Q188357: DSMN Application Log Error Messages
 
+{% raw %}
+
 	Article: Q188357
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -376,3 +378,5 @@ permalink: /kb/188/Q188357/
 	
 	=============================================================================
 	
+
+{% endraw %}

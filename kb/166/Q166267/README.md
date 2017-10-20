@@ -6,6 +6,8 @@ permalink: /kb/166/Q166267/
 
 ## Q166267: Office Shortcut Bar Fonts Appear as Non-Cyrillic on Russian NT
 
+{% raw %}
+
 	Article: Q166267
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/166/Q166267/
 	
 	=============================================================================
 	
+
+{% endraw %}

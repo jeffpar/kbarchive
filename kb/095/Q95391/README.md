@@ -6,6 +6,8 @@ permalink: /kb/095/Q95391/
 
 ## Q95391: BUG: Superclassed Scroll Bar's Parent Not Sent WM_CTLCOLOR Msg
 
+{% raw %}
+
 	Article: Q95391
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -47,3 +49,5 @@ permalink: /kb/095/Q95391/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125226/
 
 ## Q125226: PRB: ODBC Reserved Word in a RFX Function Causes Syntax Error
 
+{% raw %}
+
 	Article: Q125226
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -101,3 +103,5 @@ permalink: /kb/125/Q125226/
 	
 	=============================================================================
 	
+
+{% endraw %}

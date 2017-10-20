@@ -6,6 +6,8 @@ permalink: /kb/131/Q131888/
 
 ## Q131888: PRB: Transaction Affects When Rules or Triggers Fire
 
+{% raw %}
+
 	Article: Q131888
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -173,3 +175,5 @@ permalink: /kb/131/Q131888/
 	
 	=============================================================================
 	
+
+{% endraw %}

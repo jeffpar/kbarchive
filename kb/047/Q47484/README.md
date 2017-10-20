@@ -6,6 +6,8 @@ permalink: /kb/047/Q47484/
 
 ## Q47484: Determining the Number of Valid Drives in DOS
 
+{% raw %}
+
 	Article: Q47484
 	Product(s): See article
 	Version(s): 5.10
@@ -120,3 +122,5 @@ permalink: /kb/047/Q47484/
 	
 	  return ((int) reg.h.al);
 	}
+
+{% endraw %}

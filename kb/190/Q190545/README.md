@@ -6,6 +6,8 @@ permalink: /kb/190/Q190545/
 
 ## Q190545: BUG: RUN Command Hangs Form with WindowType=1 and Desktop=.T.
 
+{% raw %}
+
 	Article: Q190545
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -95,3 +97,5 @@ permalink: /kb/190/Q190545/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87217/
 
 ## Q87217: PROFS: Necessary Command-Line Options for HostDisp (or VMGATE)
 
+{% raw %}
+
 	Article: Q87217
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -59,3 +61,5 @@ permalink: /kb/087/Q87217/
 	
 	=============================================================================
 	
+
+{% endraw %}

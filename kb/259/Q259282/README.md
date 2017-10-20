@@ -6,6 +6,8 @@ permalink: /kb/259/Q259282/
 
 ## Q259282: XADM: How to Remove Accounts with Invalid Characters
 
+{% raw %}
+
 	Article: Q259282
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -122,3 +124,5 @@ permalink: /kb/259/Q259282/
 	
 	=============================================================================
 	
+
+{% endraw %}

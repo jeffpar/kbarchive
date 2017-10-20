@@ -6,6 +6,8 @@ permalink: /kb/216/Q216356/
 
 ## Q216356: Visual C++ Project Settings and .DBG File Creation
 
+{% raw %}
+
 	Article: Q216356
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,5.0,6.0
@@ -127,3 +129,5 @@ permalink: /kb/216/Q216356/
 	
 	=============================================================================
 	
+
+{% endraw %}

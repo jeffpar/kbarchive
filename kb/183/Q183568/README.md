@@ -6,6 +6,8 @@ permalink: /kb/183/Q183568/
 
 ## Q183568: CCSID In The Data Source Does Not Override Driver's Value
 
+{% raw %}
+
 	Article: Q183568
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -56,3 +58,5 @@ permalink: /kb/183/Q183568/
 	
 	=============================================================================
 	
+
+{% endraw %}

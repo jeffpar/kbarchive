@@ -6,6 +6,8 @@ permalink: /kb/197/Q197084/
 
 ## Q197084: Cannot Access Shares on a FPNW Server using Client32 v2.5 -3.02
 
+{% raw %}
+
 	Article: Q197084
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/197/Q197084/
 	
 	=============================================================================
 	
+
+{% endraw %}

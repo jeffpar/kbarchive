@@ -6,6 +6,8 @@ permalink: /kb/164/Q164870/
 
 ## Q164870: HOWTO: Apply, Remove a Filter from Form's DataEnvironment
 
+{% raw %}
+
 	Article: Q164870
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/164/Q164870/
 	
 	=============================================================================
 	
+
+{% endraw %}

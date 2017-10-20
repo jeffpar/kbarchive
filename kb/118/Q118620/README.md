@@ -6,6 +6,8 @@ permalink: /kb/118/Q118620/
 
 ## Q118620: PC Ext: Support of EXTERNAL.EXE Under Windows NT
 
+{% raw %}
+
 	Article: Q118620
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5; :3.2
@@ -79,3 +81,5 @@ permalink: /kb/118/Q118620/
 	
 	=============================================================================
 	
+
+{% endraw %}

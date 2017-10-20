@@ -6,6 +6,8 @@ permalink: /kb/207/Q207382/
 
 ## Q207382: Desktop Themes Component Total Changes Randomly
 
+{% raw %}
+
 	Article: Q207382
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -57,3 +59,5 @@ permalink: /kb/207/Q207382/
 	
 	=============================================================================
 	
+
+{% endraw %}

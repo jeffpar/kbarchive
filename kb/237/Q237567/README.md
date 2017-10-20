@@ -6,6 +6,8 @@ permalink: /kb/237/Q237567/
 
 ## Q237567: Encarta: Program Starts Slowly and Animations Are Played Slowly
 
+{% raw %}
+
 	Article: Q237567
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/237/Q237567/
 	
 	=============================================================================
 	
+
+{% endraw %}

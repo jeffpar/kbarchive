@@ -6,6 +6,8 @@ permalink: /kb/254/Q254735/
 
 ## Q254735: SMS: How to Clean Up Duplicate Computer IDs
 
+{% raw %}
+
 	Article: Q254735
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -145,3 +147,5 @@ permalink: /kb/254/Q254735/
 	
 	=============================================================================
 	
+
+{% endraw %}

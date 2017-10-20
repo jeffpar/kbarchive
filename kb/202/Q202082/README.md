@@ -6,6 +6,8 @@ permalink: /kb/202/Q202082/
 
 ## Q202082: SMS: Software Inventory Does Not List Individual Files
 
+{% raw %}
+
 	Article: Q202082
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -66,3 +68,5 @@ permalink: /kb/202/Q202082/
 	
 	=============================================================================
 	
+
+{% endraw %}

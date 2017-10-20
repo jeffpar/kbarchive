@@ -6,6 +6,8 @@ permalink: /kb/241/Q241101/
 
 ## Q241101: Streets and Trips: Description of the Pushpin Conversion Tool
 
+{% raw %}
+
 	Article: Q241101
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -89,3 +91,5 @@ permalink: /kb/241/Q241101/
 	
 	=============================================================================
 	
+
+{% endraw %}

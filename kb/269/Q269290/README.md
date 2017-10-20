@@ -6,6 +6,8 @@ permalink: /kb/269/Q269290/
 
 ## Q269290: Error: CAPI2 = 80093005 When Installing a WWW Certificate
 
+{% raw %}
+
 	Article: Q269290
 	Product(s): Internet Information Server
 	Version(s): 2.0,4.0
@@ -69,3 +71,5 @@ permalink: /kb/269/Q269290/
 	
 	=============================================================================
 	
+
+{% endraw %}

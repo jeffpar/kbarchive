@@ -6,6 +6,8 @@ permalink: /kb/170/Q170753/
 
 ## Q170753: Window Focus Set to Invoke Wrong 16-bit Application Through DDE
 
+{% raw %}
+
 	Article: Q170753
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -76,3 +78,5 @@ permalink: /kb/170/Q170753/
 	
 	=============================================================================
 	
+
+{% endraw %}

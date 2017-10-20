@@ -6,6 +6,8 @@ permalink: /kb/130/Q130649/
 
 ## Q130649: Writer/Artist: ErrMsg: There Isn't Enough Space to Setup
 
+{% raw %}
+
 	Article: Q130649
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a
@@ -116,3 +118,5 @@ permalink: /kb/130/Q130649/
 	
 	=============================================================================
 	
+
+{% endraw %}

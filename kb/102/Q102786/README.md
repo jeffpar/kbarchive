@@ -6,6 +6,8 @@ permalink: /kb/102/Q102786/
 
 ## Q102786: HOWTO: Optimize FoxPro Performance on a Network
 
+{% raw %}
+
 	Article: Q102786
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/102/Q102786/
 	
 	=============================================================================
 	
+
+{% endraw %}

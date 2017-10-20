@@ -6,6 +6,8 @@ permalink: /kb/121/Q121594/
 
 ## Q121594: Tasking Option Affects Server Service Priority
 
+{% raw %}
+
 	Article: Q121594
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50
@@ -106,3 +108,5 @@ permalink: /kb/121/Q121594/
 	
 	=============================================================================
 	
+
+{% endraw %}

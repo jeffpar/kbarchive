@@ -6,6 +6,8 @@ permalink: /kb/150/Q150215/
 
 ## Q150215: Disabling Automatic Network Shortcut Resolution
 
+{% raw %}
+
 	Article: Q150215
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -252,3 +254,5 @@ permalink: /kb/150/Q150215/
 	
 	=============================================================================
 	
+
+{% endraw %}

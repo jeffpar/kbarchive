@@ -6,6 +6,8 @@ permalink: /kb/068/Q68989/
 
 ## Q68989: FIX: HELPMAKE Decodes Help Database Incorrectly
 
+{% raw %}
+
 	Article: Q68989
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.03,1.05,1.06,1.07
@@ -89,3 +91,5 @@ permalink: /kb/068/Q68989/
 	
 	=============================================================================
 	
+
+{% endraw %}

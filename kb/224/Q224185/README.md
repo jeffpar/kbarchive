@@ -6,6 +6,8 @@ permalink: /kb/224/Q224185/
 
 ## Q224185: FIX: User Defined Type in Public Function of User Control Fails
 
+{% raw %}
+
 	Article: Q224185
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -133,3 +135,5 @@ permalink: /kb/224/Q224185/
 	
 	=============================================================================
 	
+
+{% endraw %}

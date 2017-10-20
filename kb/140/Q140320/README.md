@@ -6,6 +6,8 @@ permalink: /kb/140/Q140320/
 
 ## Q140320: HOWTO: List the Current Version of All Files in a Project
 
+{% raw %}
+
 	Article: Q140320
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/140/Q140320/
 	
 	=============================================================================
 	
+
+{% endraw %}

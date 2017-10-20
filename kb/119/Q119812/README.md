@@ -6,6 +6,8 @@ permalink: /kb/119/Q119812/
 
 ## Q119812: BUG: SQLSRVR.DLL GP Fault on Vines When SQL Server Not Running
 
+{% raw %}
+
 	Article: Q119812
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -74,3 +76,5 @@ permalink: /kb/119/Q119812/
 	
 	=============================================================================
 	
+
+{% endraw %}

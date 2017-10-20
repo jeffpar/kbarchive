@@ -6,6 +6,8 @@ permalink: /kb/033/Q33687/
 
 ## Q33687: Temporary Memory in SUBprogram Is Not Deallocated after CALL
 
+{% raw %}
+
 	Article: Q33687
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -44,3 +46,5 @@ permalink: /kb/033/Q33687/
 	     size% = 4000
 	     WindowBuffer$ = STRING$(size%, CHR$(0))
 	   END SUB
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/236/Q236394/
 
 ## Q236394: WD97: Proofing Tools Do Not Function As Expected
 
+{% raw %}
+
 	Article: Q236394
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -151,3 +153,5 @@ permalink: /kb/236/Q236394/
 	
 	=============================================================================
 	
+
+{% endraw %}

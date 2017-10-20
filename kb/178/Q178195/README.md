@@ -6,6 +6,8 @@ permalink: /kb/178/Q178195/
 
 ## Q178195: XCLN: How to Install the Server Scripting Extension in Outlook
 
+{% raw %}
+
 	Article: Q178195
 	Product(s): Microsoft Exchange
 	Version(s): 8.03
@@ -60,3 +62,5 @@ permalink: /kb/178/Q178195/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/238/Q238954/
 
 ## Q238954: XWEB: OWA Server Connectivity over a Firewall/Proxy using NAT
 
+{% raw %}
+
 	Article: Q238954
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -78,3 +80,5 @@ permalink: /kb/238/Q238954/
 	
 	=============================================================================
 	
+
+{% endraw %}

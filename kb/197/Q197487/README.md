@@ -6,6 +6,8 @@ permalink: /kb/197/Q197487/
 
 ## Q197487: BUG: MSChart EditCopy Sends Incorrect Legends To Clipboard
 
+{% raw %}
+
 	Article: Q197487
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -161,3 +163,5 @@ permalink: /kb/197/Q197487/
 	
 	=============================================================================
 	
+
+{% endraw %}

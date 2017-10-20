@@ -6,6 +6,8 @@ permalink: /kb/154/Q154845/
 
 ## Q154845: Bugcheck in Fastfat.sys
 
+{% raw %}
+
 	Article: Q154845
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -47,3 +49,5 @@ permalink: /kb/154/Q154845/
 	
 	=============================================================================
 	
+
+{% endraw %}

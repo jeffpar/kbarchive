@@ -6,6 +6,8 @@ permalink: /kb/142/Q142638/
 
 ## Q142638: Can't Create New Microsoft Mail Postoffice
 
+{% raw %}
+
 	Article: Q142638
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -80,3 +82,5 @@ permalink: /kb/142/Q142638/
 	
 	=============================================================================
 	
+
+{% endraw %}

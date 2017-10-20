@@ -6,6 +6,8 @@ permalink: /kb/261/Q261246/
 
 ## Q261246: SMS: Sms20info Tool Added to Support.exe in SMS 2.0 Service Pack
 
+{% raw %}
+
 	Article: Q261246
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP2
@@ -77,3 +79,5 @@ permalink: /kb/261/Q261246/
 	
 	=============================================================================
 	
+
+{% endraw %}

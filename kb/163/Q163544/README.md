@@ -6,6 +6,8 @@ permalink: /kb/163/Q163544/
 
 ## Q163544: XCLN: Mac Client Toggles Focus Between Inbox and Message Window
 
+{% raw %}
+
 	Article: Q163544
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -59,3 +61,5 @@ permalink: /kb/163/Q163544/
 	
 	=============================================================================
 	
+
+{% endraw %}

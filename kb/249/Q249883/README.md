@@ -6,6 +6,8 @@ permalink: /kb/249/Q249883/
 
 ## Q249883: XFOR: Migration Wizard Reports Error Message 12024
 
+{% raw %}
+
 	Article: Q249883
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -61,3 +63,5 @@ permalink: /kb/249/Q249883/
 	
 	=============================================================================
 	
+
+{% endraw %}

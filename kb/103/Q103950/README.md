@@ -6,6 +6,8 @@ permalink: /kb/103/Q103950/
 
 ## Q103950: SetSelectorLimit() Crossing 1 Megabyte Boundary
 
+{% raw %}
+
 	Article: Q103950
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -106,3 +108,5 @@ permalink: /kb/103/Q103950/
 	
 	=============================================================================
 	
+
+{% endraw %}

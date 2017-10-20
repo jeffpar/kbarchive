@@ -6,6 +6,8 @@ permalink: /kb/147/Q147663/
 
 ## Q147663: INFO: Multiple vbCancel Constants Defined with VB 4.0
 
+{% raw %}
+
 	Article: Q147663
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -76,3 +78,5 @@ permalink: /kb/147/Q147663/
 	
 	=============================================================================
 	
+
+{% endraw %}

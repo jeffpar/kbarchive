@@ -6,6 +6,8 @@ permalink: /kb/194/Q194387/
 
 ## Q194387: FIX: Handle Leak in ODBC Driver/OLE DB Provider
 
+{% raw %}
+
 	Article: Q194387
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.0,Build 2.573.2927
@@ -117,3 +119,5 @@ permalink: /kb/194/Q194387/
 	
 	=============================================================================
 	
+
+{% endraw %}

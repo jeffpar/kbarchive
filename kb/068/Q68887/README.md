@@ -6,6 +6,8 @@ permalink: /kb/068/Q68887/
 
 ## Q68887: ASD: Crashing into Blue Mountain Causes &quot;Splash&quot; Message
 
+{% raw %}
+
 	Article: Q68887
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/068/Q68887/
 	
 	=============================================================================
 	
+
+{% endraw %}

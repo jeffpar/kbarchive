@@ -6,6 +6,8 @@ permalink: /kb/157/Q157224/
 
 ## Q157224: WD97: Horizontal Rule and Other Web Elements Limited to 6.5 Inch
 
+{% raw %}
+
 	Article: Q157224
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -57,3 +59,5 @@ permalink: /kb/157/Q157224/
 	
 	=============================================================================
 	
+
+{% endraw %}

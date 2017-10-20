@@ -6,6 +6,8 @@ permalink: /kb/108/Q108801/
 
 ## Q108801: Loading NetBEUI or NetPopup in Conventional Memory
 
+{% raw %}
+
 	Article: Q108801
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -50,3 +52,5 @@ permalink: /kb/108/Q108801/
 	
 	=============================================================================
 	
+
+{% endraw %}

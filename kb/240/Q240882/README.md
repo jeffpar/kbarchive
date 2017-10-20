@@ -6,6 +6,8 @@ permalink: /kb/240/Q240882/
 
 ## Q240882: PRB: SP Calls May Result in Attentions Being Seen on SQL Server
 
+{% raw %}
+
 	Article: Q240882
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 3.5,3.6,3.7,6.5,7.0
@@ -117,3 +119,5 @@ permalink: /kb/240/Q240882/
 	
 	=============================================================================
 	
+
+{% endraw %}

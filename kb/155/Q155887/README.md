@@ -6,6 +6,8 @@ permalink: /kb/155/Q155887/
 
 ## Q155887: How to Change International Dialing Access Codes
 
+{% raw %}
+
 	Article: Q155887
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -352,3 +354,5 @@ permalink: /kb/155/Q155887/
 	
 	=============================================================================
 	
+
+{% endraw %}

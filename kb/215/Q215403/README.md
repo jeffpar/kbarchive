@@ -6,6 +6,8 @@ permalink: /kb/215/Q215403/
 
 ## Q215403: BUG: VBCE Design Time HelpContextID Not Persisted at Run Time
 
+{% raw %}
+
 	Article: Q215403
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -92,3 +94,5 @@ permalink: /kb/215/Q215403/
 	
 	=============================================================================
 	
+
+{% endraw %}

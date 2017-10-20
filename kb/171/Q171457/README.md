@@ -6,6 +6,8 @@ permalink: /kb/171/Q171457/
 
 ## Q171457: FIX: SENDTIME Sample Does Not Work
 
+{% raw %}
+
 	Article: Q171457
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.2
@@ -98,3 +100,5 @@ permalink: /kb/171/Q171457/
 	
 	=============================================================================
 	
+
+{% endraw %}

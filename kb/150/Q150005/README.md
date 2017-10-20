@@ -6,6 +6,8 @@ permalink: /kb/150/Q150005/
 
 ## Q150005: Bookshelf 96-97: Summary of Word and Office Integration
 
+{% raw %}
+
 	Article: Q150005
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -107,3 +109,5 @@ permalink: /kb/150/Q150005/
 	
 	=============================================================================
 	
+
+{% endraw %}

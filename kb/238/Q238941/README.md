@@ -6,6 +6,8 @@ permalink: /kb/238/Q238941/
 
 ## Q238941: Dcomcnfg Changes the &quot;Logon As&quot; Type on Service's Identity Tab
 
+{% raw %}
+
 	Article: Q238941
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -84,3 +86,5 @@ permalink: /kb/238/Q238941/
 	
 	=============================================================================
 	
+
+{% endraw %}

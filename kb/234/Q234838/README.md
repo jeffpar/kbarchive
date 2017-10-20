@@ -6,6 +6,8 @@ permalink: /kb/234/Q234838/
 
 ## Q234838: MOD2000: Deleted Modules Not Are Removed from VSS Control
 
+{% raw %}
+
 	Article: Q234838
 	Product(s): Microsoft SourceSafe
 	Version(s): ; WINDOWS:6.0
@@ -98,3 +100,5 @@ permalink: /kb/234/Q234838/
 	
 	=============================================================================
 	
+
+{% endraw %}

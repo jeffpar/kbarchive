@@ -6,6 +6,8 @@ permalink: /kb/263/Q263380/
 
 ## Q263380: SMS: Remote Control File Transfer Doesn't List All Files
 
+{% raw %}
+
 	Article: Q263380
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP2
@@ -43,3 +45,5 @@ permalink: /kb/263/Q263380/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140600/
 
 ## Q140600: Optimizing Windows 95 for Flight Simulator 5.1
 
+{% raw %}
+
 	Article: Q140600
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.1; WINDOWS:95
@@ -482,3 +484,5 @@ permalink: /kb/140/Q140600/
 	
 	=============================================================================
 	
+
+{% endraw %}

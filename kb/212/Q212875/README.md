@@ -6,6 +6,8 @@ permalink: /kb/212/Q212875/
 
 ## Q212875: SMS: SMS Installer on Novell Server Doesn't Allow Space in Name
 
+{% raw %}
+
 	Article: Q212875
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -54,3 +56,5 @@ permalink: /kb/212/Q212875/
 	
 	=============================================================================
 	
+
+{% endraw %}

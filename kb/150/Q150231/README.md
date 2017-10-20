@@ -6,6 +6,8 @@ permalink: /kb/150/Q150231/
 
 ## Q150231: FIX: Toolbar Does Not Show ToolTips Under Certain Circumstance
 
+{% raw %}
+
 	Article: Q150231
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -67,3 +69,5 @@ permalink: /kb/150/Q150231/
 	
 	=============================================================================
 	
+
+{% endraw %}

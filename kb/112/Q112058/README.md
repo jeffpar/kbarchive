@@ -6,6 +6,8 @@ permalink: /kb/112/Q112058/
 
 ## Q112058: BUG: Visual Workbench Does Not Allow Stack Size Over 32K
 
+{% raw %}
+
 	Article: Q112058
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -80,3 +82,5 @@ permalink: /kb/112/Q112058/
 	
 	=============================================================================
 	
+
+{% endraw %}

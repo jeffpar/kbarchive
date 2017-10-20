@@ -6,6 +6,8 @@ permalink: /kb/235/Q235770/
 
 ## Q235770: SMS: Win95 Client Software Causes Login Failure: Status 8890
 
+{% raw %}
+
 	Article: Q235770
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -72,3 +74,5 @@ permalink: /kb/235/Q235770/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137476/
 
 ## Q137476: NTVDM Error with Matrox Video Card
 
+{% raw %}
+
 	Article: Q137476
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/137/Q137476/
 	
 	=============================================================================
 	
+
+{% endraw %}

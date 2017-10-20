@@ -6,6 +6,8 @@ permalink: /kb/264/Q264076/
 
 ## Q264076: FOR /F in Batch Command File Causes Access Violation in Cmd.exe
 
+{% raw %}
+
 	Article: Q264076
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/264/Q264076/
 	
 	=============================================================================
 	
+
+{% endraw %}

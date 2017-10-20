@@ -6,6 +6,8 @@ permalink: /kb/231/Q231872/
 
 ## Q231872: FIX: Using #import May Cause Memory Leaks
 
+{% raw %}
+
 	Article: Q231872
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:5.0,6.0
@@ -161,3 +163,5 @@ permalink: /kb/231/Q231872/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/232/Q232650/
 
 ## Q232650: HOWTO: Store, Display, and Print JPG Images in Visual FoxPro
 
+{% raw %}
+
 	Article: Q232650
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -52,3 +54,5 @@ permalink: /kb/232/Q232650/
 	
 	=============================================================================
 	
+
+{% endraw %}

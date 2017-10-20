@@ -6,6 +6,8 @@ permalink: /kb/170/Q170793/
 
 ## Q170793: PPT7: Error Editing PowerPoint File Type in Windows Explorer
 
+{% raw %}
+
 	Article: Q170793
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -110,3 +112,5 @@ permalink: /kb/170/Q170793/
 	
 	=============================================================================
 	
+
+{% endraw %}

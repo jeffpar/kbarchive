@@ -6,6 +6,8 @@ permalink: /kb/263/Q263981/
 
 ## Q263981: DOC: Wake Up Pattern OIDs Are Not Correctly Documented
 
+{% raw %}
+
 	Article: Q263981
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; winnt:
@@ -50,3 +52,5 @@ permalink: /kb/263/Q263981/
 	
 	=============================================================================
 	
+
+{% endraw %}

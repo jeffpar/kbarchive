@@ -6,6 +6,8 @@ permalink: /kb/264/Q264106/
 
 ## Q264106: SMS: Err Msg: A DB Could Not Be Found with the Name Supplied
 
+{% raw %}
+
 	Article: Q264106
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -88,3 +90,5 @@ permalink: /kb/264/Q264106/
 	
 	=============================================================================
 	
+
+{% endraw %}

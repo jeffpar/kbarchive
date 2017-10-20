@@ -6,6 +6,8 @@ permalink: /kb/160/Q160572/
 
 ## Q160572: XADM: Start and Stop Exchange Services from a Command Line
 
+{% raw %}
+
 	Article: Q160572
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -70,3 +72,5 @@ permalink: /kb/160/Q160572/
 	
 	=============================================================================
 	
+
+{% endraw %}

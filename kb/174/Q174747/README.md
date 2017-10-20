@@ -6,6 +6,8 @@ permalink: /kb/174/Q174747/
 
 ## Q174747: XWEB: OWA Calendar Displays Only 2 Months in Date Picker Field
 
+{% raw %}
+
 	Article: Q174747
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -40,3 +42,5 @@ permalink: /kb/174/Q174747/
 	
 	=============================================================================
 	
+
+{% endraw %}

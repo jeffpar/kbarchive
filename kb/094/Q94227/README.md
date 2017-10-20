@@ -6,6 +6,8 @@ permalink: /kb/094/Q94227/
 
 ## Q94227: INFO: Output Stream cout Is Buffered
 
+{% raw %}
+
 	Article: Q94227
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
@@ -80,3 +82,5 @@ permalink: /kb/094/Q94227/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/037/Q37030/
 
 ## Q37030: BASIC Memory Model: Determining Segment Sizes with LINK /MAP
 
+{% raw %}
+
 	Article: Q37030
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -119,3 +121,5 @@ permalink: /kb/037/Q37030/
 	Debuggers such as Microsoft CodeView, provided with the BASIC compiler
 	Versions 6.00 and 6.00b, may also be used to determine absolute load
 	locations at run time.
+
+{% endraw %}

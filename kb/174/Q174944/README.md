@@ -6,6 +6,8 @@ permalink: /kb/174/Q174944/
 
 ## Q174944: How to Use the /debug Option for Cluster Service
 
+{% raw %}
+
 	Article: Q174944
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -70,3 +72,5 @@ permalink: /kb/174/Q174944/
 	
 	=============================================================================
 	
+
+{% endraw %}

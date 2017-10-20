@@ -6,6 +6,8 @@ permalink: /kb/149/Q149545/
 
 ## Q149545: Err Msg: The Mail Headers Could Not Be Displayed
 
+{% raw %}
+
 	Article: Q149545
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -61,3 +63,5 @@ permalink: /kb/149/Q149545/
 	
 	=============================================================================
 	
+
+{% endraw %}

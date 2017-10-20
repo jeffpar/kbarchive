@@ -6,6 +6,8 @@ permalink: /kb/309/Q309650/
 
 ## Q309650: SMS: Error Message: There Are No Forms Available
 
+{% raw %}
+
 	Article: Q309650
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -70,3 +72,5 @@ permalink: /kb/309/Q309650/
 	
 	=============================================================================
 	
+
+{% endraw %}

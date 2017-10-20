@@ -6,6 +6,8 @@ permalink: /kb/221/Q221565/
 
 ## Q221565: XFOR:Messages Blocked from Host to Exchange on OV/VM(PROFS)
 
+{% raw %}
+
 	Article: Q221565
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -88,3 +90,5 @@ permalink: /kb/221/Q221565/
 	
 	=============================================================================
 	
+
+{% endraw %}

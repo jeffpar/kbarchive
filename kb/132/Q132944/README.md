@@ -6,6 +6,8 @@ permalink: /kb/132/Q132944/
 
 ## Q132944: FltSim 5.1: Floppy Disk README1.TXT Contents
 
+{% raw %}
+
 	Article: Q132944
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.1
@@ -351,3 +353,5 @@ permalink: /kb/132/Q132944/
 	
 	=============================================================================
 	
+
+{% endraw %}

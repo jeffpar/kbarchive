@@ -6,6 +6,8 @@ permalink: /kb/259/Q259928/
 
 ## Q259928: PRB: REPLACE Command Runs Slowly When Applied to a Remote Table
 
+{% raw %}
+
 	Article: Q259928
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -130,3 +132,5 @@ permalink: /kb/259/Q259928/
 	
 	=============================================================================
 	
+
+{% endraw %}

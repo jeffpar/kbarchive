@@ -6,6 +6,8 @@ permalink: /kb/146/Q146432/
 
 ## Q146432: Bookshelf 95: How to Register Online After Setup Completes
 
+{% raw %}
+
 	Article: Q146432
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -51,3 +53,5 @@ permalink: /kb/146/Q146432/
 	
 	=============================================================================
 	
+
+{% endraw %}

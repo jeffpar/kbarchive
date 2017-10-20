@@ -6,6 +6,8 @@ permalink: /kb/169/Q169274/
 
 ## Q169274: TCP/IP Causes Time Wait States to Exceed Four Minutes
 
+{% raw %}
+
 	Article: Q169274
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -74,3 +76,5 @@ permalink: /kb/169/Q169274/
 	
 	=============================================================================
 	
+
+{% endraw %}

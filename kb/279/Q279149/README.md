@@ -6,6 +6,8 @@ permalink: /kb/279/Q279149/
 
 ## Q279149: CFS2: How to Import Scenery from Flight Simulator
 
+{% raw %}
+
 	Article: Q279149
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -101,3 +103,5 @@ permalink: /kb/279/Q279149/
 	
 	=============================================================================
 	
+
+{% endraw %}

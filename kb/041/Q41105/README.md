@@ -6,6 +6,8 @@ permalink: /kb/041/Q41105/
 
 ## Q41105: The Steps Required to Create a Chart in QuickC Version 2.00
 
+{% raw %}
+
 	Article: Q41105
 	Product(s): See article
 	Version(s): 2.00
@@ -133,3 +135,5 @@ permalink: /kb/041/Q41105/
 	     }
 	    return(0);
 	}
+
+{% endraw %}

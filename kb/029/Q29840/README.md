@@ -6,6 +6,8 @@ permalink: /kb/029/Q29840/
 
 ## Q29840: C 5.10 MTDYNA.DOC: Creating a Single Thread DLL
 
+{% raw %}
+
 	Article: Q29840
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -93,3 +95,5 @@ permalink: /kb/029/Q29840/
 	Note: The LIBPATH is set in your CONFIG.SYS or CONFIG.OS2 file,
 	depending on which version of OS/2 you are using. LIBPATH is not part
 	of your environment strings like the LIB, INCLUDE and PATH variables.
+
+{% endraw %}

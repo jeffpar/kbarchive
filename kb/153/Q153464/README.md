@@ -6,6 +6,8 @@ permalink: /kb/153/Q153464/
 
 ## Q153464: XFOR: Unexpected Text Attachment in Mail Received from Internet
 
+{% raw %}
+
 	Article: Q153464
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -98,3 +100,5 @@ permalink: /kb/153/Q153464/
 	
 	=============================================================================
 	
+
+{% endraw %}

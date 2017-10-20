@@ -6,6 +6,8 @@ permalink: /kb/126/Q126562/
 
 ## Q126562: Question Marks Appear During a Chat Session
 
+{% raw %}
+
 	Article: Q126562
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3,2.0,2.5
@@ -81,3 +83,5 @@ permalink: /kb/126/Q126562/
 	
 	=============================================================================
 	
+
+{% endraw %}

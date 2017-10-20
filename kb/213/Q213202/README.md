@@ -6,6 +6,8 @@ permalink: /kb/213/Q213202/
 
 ## Q213202: XADM: Event 30 Appears When a Program Is Accessing the Log Files
 
+{% raw %}
+
 	Article: Q213202
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -91,3 +93,5 @@ permalink: /kb/213/Q213202/
 	
 	=============================================================================
 	
+
+{% endraw %}

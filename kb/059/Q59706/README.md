@@ -6,6 +6,8 @@ permalink: /kb/059/Q59706/
 
 ## Q59706: Terminal Won't Display VT100 Bold Characters on EGA
 
+{% raw %}
+
 	Article: Q59706
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -42,3 +44,5 @@ permalink: /kb/059/Q59706/
 	
 	=============================================================================
 	
+
+{% endraw %}

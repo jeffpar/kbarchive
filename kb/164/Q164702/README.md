@@ -6,6 +6,8 @@ permalink: /kb/164/Q164702/
 
 ## Q164702: WINDISK Stops Responding During Initialization
 
+{% raw %}
+
 	Article: Q164702
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/164/Q164702/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158251/
 
 ## Q158251: BUG: Incorrect Group Header Information in Report
 
+{% raw %}
+
 	Article: Q158251
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -74,3 +76,5 @@ permalink: /kb/158/Q158251/
 	
 	=============================================================================
 	
+
+{% endraw %}

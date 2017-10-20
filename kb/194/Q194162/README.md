@@ -6,6 +6,8 @@ permalink: /kb/194/Q194162/
 
 ## Q194162: Encarta Virtual Globe 99: Error Message if You Remove CD-ROM
 
+{% raw %}
+
 	Article: Q194162
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -76,3 +78,5 @@ permalink: /kb/194/Q194162/
 	
 	=============================================================================
 	
+
+{% endraw %}

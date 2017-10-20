@@ -6,6 +6,8 @@ permalink: /kb/129/Q129079/
 
 ## Q129079: You Need Arabic Word to Read or Print Arabic SDK Documents
 
+{% raw %}
+
 	Article: Q129079
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -40,3 +42,5 @@ permalink: /kb/129/Q129079/
 	
 	=============================================================================
 	
+
+{% endraw %}

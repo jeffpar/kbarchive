@@ -6,6 +6,8 @@ permalink: /kb/194/Q194626/
 
 ## Q194626: Shared Folders Unable to Copy Files With Compression Enabled
 
+{% raw %}
+
 	Article: Q194626
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -74,3 +76,5 @@ permalink: /kb/194/Q194626/
 	
 	=============================================================================
 	
+
+{% endraw %}

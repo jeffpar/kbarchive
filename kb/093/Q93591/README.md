@@ -6,6 +6,8 @@ permalink: /kb/093/Q93591/
 
 ## Q93591: DOC: strstream Constructor Documented Incorrectly
 
+{% raw %}
+
 	Article: Q93591
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:; WINDOWS:1.0,1.5,1.51,1.52; winnt:1.0,2.0,2.1,4.0,4.1,5.0,6.0
@@ -66,3 +68,5 @@ permalink: /kb/093/Q93591/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156246/
 
 ## Q156246: Bookshelf 1994: Find with &quot;?&quot; Wildcard Search Fails
 
+{% raw %}
+
 	Article: Q156246
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -64,3 +66,5 @@ permalink: /kb/156/Q156246/
 	
 	=============================================================================
 	
+
+{% endraw %}

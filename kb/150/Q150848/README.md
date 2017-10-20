@@ -6,6 +6,8 @@ permalink: /kb/150/Q150848/
 
 ## Q150848: Err Msg: &quot;There Are No Entries in the List&quot;
 
+{% raw %}
+
 	Article: Q150848
 	Product(s): Microsoft Windows NT
 	Version(s): 3.11,3.5,3.51
@@ -69,3 +71,5 @@ permalink: /kb/150/Q150848/
 	
 	=============================================================================
 	
+
+{% endraw %}

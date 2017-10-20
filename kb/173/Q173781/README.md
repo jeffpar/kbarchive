@@ -6,6 +6,8 @@ permalink: /kb/173/Q173781/
 
 ## Q173781: How to Configure Friends Online on The Microsoft Network
 
+{% raw %}
+
 	Article: Q173781
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6
@@ -65,3 +67,5 @@ permalink: /kb/173/Q173781/
 	
 	=============================================================================
 	
+
+{% endraw %}

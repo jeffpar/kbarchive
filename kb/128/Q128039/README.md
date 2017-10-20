@@ -6,6 +6,8 @@ permalink: /kb/128/Q128039/
 
 ## Q128039: DOS Inventory Agent Hangs on HP Vectra
 
+{% raw %}
+
 	Article: Q128039
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -73,3 +75,5 @@ permalink: /kb/128/Q128039/
 	
 	=============================================================================
 	
+
+{% endraw %}

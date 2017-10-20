@@ -6,6 +6,8 @@ permalink: /kb/154/Q154023/
 
 ## Q154023: FIX: Error: &quot;Cannot Nest Aggregate Functions&quot;
 
+{% raw %}
+
 	Article: Q154023
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.6,2.6a; WINDOWS:2.6,2.6a,3.0,3.0b
@@ -73,3 +75,5 @@ permalink: /kb/154/Q154023/
 	
 	=============================================================================
 	
+
+{% endraw %}

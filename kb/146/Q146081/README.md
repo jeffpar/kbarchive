@@ -6,6 +6,8 @@ permalink: /kb/146/Q146081/
 
 ## Q146081: XADM: IMC Keystrokes to Make Selection Causes Setup to Fail
 
+{% raw %}
+
 	Article: Q146081
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -54,3 +56,5 @@ permalink: /kb/146/Q146081/
 	
 	=============================================================================
 	
+
+{% endraw %}

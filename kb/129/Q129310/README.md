@@ -6,6 +6,8 @@ permalink: /kb/129/Q129310/
 
 ## Q129310: PRB: OLE Error Messages Contain Both English &amp; German Text
 
+{% raw %}
+
 	Article: Q129310
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -82,3 +84,5 @@ permalink: /kb/129/Q129310/
 	
 	=============================================================================
 	
+
+{% endraw %}

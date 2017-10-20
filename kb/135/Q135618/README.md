@@ -6,6 +6,8 @@ permalink: /kb/135/Q135618/
 
 ## Q135618: BUG: View Designer Doesn't Properly Display Crosstab
 
+{% raw %}
+
 	Article: Q135618
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -57,3 +59,5 @@ permalink: /kb/135/Q135618/
 	
 	=============================================================================
 	
+
+{% endraw %}

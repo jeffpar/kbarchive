@@ -6,6 +6,8 @@ permalink: /kb/258/Q258551/
 
 ## Q258551: BUG: Incorrect Error Message When You Install VSS 5.0 Y2K
 
+{% raw %}
+
 	Article: Q258551
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0
@@ -78,3 +80,5 @@ permalink: /kb/258/Q258551/
 	
 	=============================================================================
 	
+
+{% endraw %}

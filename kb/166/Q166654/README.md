@@ -6,6 +6,8 @@ permalink: /kb/166/Q166654/
 
 ## Q166654: XFOR: Message Loop Across Two Mail Systems
 
+{% raw %}
+
 	Article: Q166654
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -83,3 +85,5 @@ permalink: /kb/166/Q166654/
 	
 	=============================================================================
 	
+
+{% endraw %}

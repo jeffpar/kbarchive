@@ -6,6 +6,8 @@ permalink: /kb/138/Q138751/
 
 ## Q138751: Netware Login Script Fails to Capture Printer
 
+{% raw %}
+
 	Article: Q138751
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -71,3 +73,5 @@ permalink: /kb/138/Q138751/
 	
 	=============================================================================
 	
+
+{% endraw %}

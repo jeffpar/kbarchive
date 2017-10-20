@@ -6,6 +6,8 @@ permalink: /kb/186/Q186393/
 
 ## Q186393: PRB: Problems Trying to Resize the MonthView Control
 
+{% raw %}
+
 	Article: Q186393
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -103,3 +105,5 @@ permalink: /kb/186/Q186393/
 	
 	=============================================================================
 	
+
+{% endraw %}

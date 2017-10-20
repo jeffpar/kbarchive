@@ -6,6 +6,8 @@ permalink: /kb/033/Q33046/
 
 ## Q33046: QB.EXE Editor Deletes File if Saved with Insufficient Memory
 
+{% raw %}
+
 	Article: Q33046
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -44,3 +46,5 @@ permalink: /kb/033/Q33046/
 	
 	8. The file will no longer be present; however, it usually can be
 	   "unerased" with Norton's Utilities.
+
+{% endraw %}

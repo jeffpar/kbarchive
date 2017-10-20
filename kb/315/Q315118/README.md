@@ -6,6 +6,8 @@ permalink: /kb/315/Q315118/
 
 ## Q315118: Games: Audio Is Affected When You Change Cockpit View
 
+{% raw %}
+
 	Article: Q315118
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -94,3 +96,5 @@ permalink: /kb/315/Q315118/
 	
 	=============================================================================
 	
+
+{% endraw %}

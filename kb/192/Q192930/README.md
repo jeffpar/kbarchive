@@ -6,6 +6,8 @@ permalink: /kb/192/Q192930/
 
 ## Q192930: XCCC: OWA Error 404 Opening Messages After You Apply 5.5 SP
 
+{% raw %}
+
 	Article: Q192930
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -140,3 +142,5 @@ permalink: /kb/192/Q192930/
 	
 	=============================================================================
 	
+
+{% endraw %}

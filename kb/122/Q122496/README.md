@@ -6,6 +6,8 @@ permalink: /kb/122/Q122496/
 
 ## Q122496: Head Coach Football Err Msg: SU Installed Properly...But...
 
+{% raw %}
+
 	Article: Q122496
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/122/Q122496/
 	
 	=============================================================================
 	
+
+{% endraw %}

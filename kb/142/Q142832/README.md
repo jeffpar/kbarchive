@@ -6,6 +6,8 @@ permalink: /kb/142/Q142832/
 
 ## Q142832: INFO: Effect of Priority Setting in the References Dialog
 
+{% raw %}
+
 	Article: Q142832
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -68,3 +70,5 @@ permalink: /kb/142/Q142832/
 	
 	=============================================================================
 	
+
+{% endraw %}

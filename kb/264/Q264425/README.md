@@ -6,6 +6,8 @@ permalink: /kb/264/Q264425/
 
 ## Q264425: XFOR: Finding Detailed Instructions for Exchange SNADS Connector
 
+{% raw %}
+
 	Article: Q264425
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -42,3 +44,5 @@ permalink: /kb/264/Q264425/
 	
 	=============================================================================
 	
+
+{% endraw %}

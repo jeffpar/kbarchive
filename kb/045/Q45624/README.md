@@ -6,6 +6,8 @@ permalink: /kb/045/Q45624/
 
 ## Q45624: CodeView &quot;??&quot; Command Can't Show All of Large Structures
 
+{% raw %}
+
 	Article: Q45624
 	Product(s): See article
 	Version(s): 2.20 2.30 | 2.20 2.30
@@ -33,3 +35,5 @@ permalink: /kb/045/Q45624/
 	Versions 2.20 and 2.30. One way is to shrink or nest the structures.
 	Another workaround is to use the "?" or Watch command to look at the
 	individual member(s) you want to see.
+
+{% endraw %}

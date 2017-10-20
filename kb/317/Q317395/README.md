@@ -6,6 +6,8 @@ permalink: /kb/317/Q317395/
 
 ## Q317395: Reader: How to Transfer E-books to Your Pocket PC
 
+{% raw %}
+
 	Article: Q317395
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/317/Q317395/
 	
 	=============================================================================
 	
+
+{% endraw %}

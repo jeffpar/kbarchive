@@ -6,6 +6,8 @@ permalink: /kb/163/Q163700/
 
 ## Q163700: IIS Access Violation for Polygon with More Than 100 Vertices
 
+{% raw %}
+
 	Article: Q163700
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,3.0
@@ -64,3 +66,5 @@ permalink: /kb/163/Q163700/
 	
 	=============================================================================
 	
+
+{% endraw %}

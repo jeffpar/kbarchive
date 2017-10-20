@@ -6,6 +6,8 @@ permalink: /kb/167/Q167950/
 
 ## Q167950: FIX: DAO Internet Component Download Fails to Install
 
+{% raw %}
+
 	Article: Q167950
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0 97
@@ -61,3 +63,5 @@ permalink: /kb/167/Q167950/
 	
 	=============================================================================
 	
+
+{% endraw %}

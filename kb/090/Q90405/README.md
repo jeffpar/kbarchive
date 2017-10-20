@@ -6,6 +6,8 @@ permalink: /kb/090/Q90405/
 
 ## Q90405: PC MAPI: How to Mail Enable/Disable Excel 4.0
 
+{% raw %}
+
 	Article: Q90405
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -48,3 +50,5 @@ permalink: /kb/090/Q90405/
 	
 	=============================================================================
 	
+
+{% endraw %}

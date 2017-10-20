@@ -6,6 +6,8 @@ permalink: /kb/142/Q142020/
 
 ## Q142020: PRB: Corel Professional Photos CD-ROM Shows _1 After File Name
 
+{% raw %}
+
 	Article: Q142020
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -54,3 +56,5 @@ permalink: /kb/142/Q142020/
 	
 	=============================================================================
 	
+
+{% endraw %}

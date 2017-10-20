@@ -6,6 +6,8 @@ permalink: /kb/253/Q253155/
 
 ## Q253155: HOWTO: Review Visual Basic WebClasses for CSSI Vulnerability
 
+{% raw %}
+
 	Article: Q253155
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -132,3 +134,5 @@ permalink: /kb/253/Q253155/
 	
 	=============================================================================
 	
+
+{% endraw %}

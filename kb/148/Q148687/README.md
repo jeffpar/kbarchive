@@ -6,6 +6,8 @@ permalink: /kb/148/Q148687/
 
 ## Q148687: FIX: Clipboard Assistant - Paste Fails or Causes Hard Break
 
+{% raw %}
+
 	Article: Q148687
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2
@@ -174,3 +176,5 @@ permalink: /kb/148/Q148687/
 	
 	=============================================================================
 	
+
+{% endraw %}

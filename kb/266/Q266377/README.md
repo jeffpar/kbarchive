@@ -6,6 +6,8 @@ permalink: /kb/266/Q266377/
 
 ## Q266377: PRB: .Exe File Created in Visual FoxPro Doesn't Appear on Screen
 
+{% raw %}
+
 	Article: Q266377
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -92,3 +94,5 @@ permalink: /kb/266/Q266377/
 	
 	=============================================================================
 	
+
+{% endraw %}

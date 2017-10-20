@@ -6,6 +6,8 @@ permalink: /kb/191/Q191102/
 
 ## Q191102: Golf 98/99: How to Host or Join a Multiplayer Game
 
+{% raw %}
+
 	Article: Q191102
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -189,3 +191,5 @@ permalink: /kb/191/Q191102/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/041/Q41324/
 
 ## Q41324: QHMEP.DLL Remaps Two Keys in MEP Version 1.00
 
+{% raw %}
+
 	Article: Q41324
 	Product(s): See article
 	Version(s): 1.00
@@ -30,3 +32,5 @@ permalink: /kb/041/Q41324/
 	Microsoft has confirmed this to be a problem in MEP Version 1.00. We are
 	researching this problem and will post new information as it becomes
 	available.
+
+{% endraw %}

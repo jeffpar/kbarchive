@@ -6,6 +6,8 @@ permalink: /kb/260/Q260848/
 
 ## Q260848: Allegiance Err Msg: The Server You Are Trying to Play on Has...
 
+{% raw %}
+
 	Article: Q260848
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -95,3 +97,5 @@ permalink: /kb/260/Q260848/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/069/Q69027/
 
 ## Q69027: Handling Critical Errors in Windows-Based Application
 
+{% raw %}
+
 	Article: Q69027
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -53,3 +55,5 @@ permalink: /kb/069/Q69027/
 	
 	=============================================================================
 	
+
+{% endraw %}

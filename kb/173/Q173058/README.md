@@ -6,6 +6,8 @@ permalink: /kb/173/Q173058/
 
 ## Q173058: How to Disable the Welcome Screen for All Users
 
+{% raw %}
+
 	Article: Q173058
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -124,3 +126,5 @@ permalink: /kb/173/Q173058/
 	
 	=============================================================================
 	
+
+{% endraw %}

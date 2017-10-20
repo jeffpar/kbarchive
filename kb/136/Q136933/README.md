@@ -6,6 +6,8 @@ permalink: /kb/136/Q136933/
 
 ## Q136933: Out of Virtual Memory Using Office 95 Shortcut Bar
 
+{% raw %}
+
 	Article: Q136933
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -64,3 +66,5 @@ permalink: /kb/136/Q136933/
 	
 	=============================================================================
 	
+
+{% endraw %}

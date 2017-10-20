@@ -6,6 +6,8 @@ permalink: /kb/228/Q228368/
 
 ## Q228368: Baseball 2000: Screen Is Black When You Start the Game
 
+{% raw %}
+
 	Article: Q228368
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -75,3 +77,5 @@ permalink: /kb/228/Q228368/
 	
 	=============================================================================
 	
+
+{% endraw %}

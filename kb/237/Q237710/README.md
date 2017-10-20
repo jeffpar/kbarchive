@@ -6,6 +6,8 @@ permalink: /kb/237/Q237710/
 
 ## Q237710: NBA 2000: Pointer Disappears When Pointing at Help Menu Items
 
+{% raw %}
+
 	Article: Q237710
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -42,3 +44,5 @@ permalink: /kb/237/Q237710/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164385/
 
 ## Q164385: BUG: Large Result Sets May Become Corrupted in VFP
 
+{% raw %}
+
 	Article: Q164385
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/164/Q164385/
 	
 	=============================================================================
 	
+
+{% endraw %}

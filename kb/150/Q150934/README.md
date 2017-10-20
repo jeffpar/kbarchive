@@ -6,6 +6,8 @@ permalink: /kb/150/Q150934/
 
 ## Q150934: How to Create a Performance Monitor Log for NT Troubleshooting
 
+{% raw %}
+
 	Article: Q150934
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -142,3 +144,5 @@ permalink: /kb/150/Q150934/
 	
 	=============================================================================
 	
+
+{% endraw %}

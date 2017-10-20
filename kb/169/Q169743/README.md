@@ -6,6 +6,8 @@ permalink: /kb/169/Q169743/
 
 ## Q169743: XCLN: Exchange Windows 3.x client Does Not Receive New Mail
 
+{% raw %}
+
 	Article: Q169743
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -54,3 +56,5 @@ permalink: /kb/169/Q169743/
 	
 	=============================================================================
 	
+
+{% endraw %}

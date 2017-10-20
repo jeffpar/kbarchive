@@ -6,6 +6,8 @@ permalink: /kb/155/Q155356/
 
 ## Q155356: Cannot Save Changes to Bootsector using Dskprobe
 
+{% raw %}
+
 	Article: Q155356
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -78,3 +80,5 @@ permalink: /kb/155/Q155356/
 	
 	=============================================================================
 	
+
+{% endraw %}

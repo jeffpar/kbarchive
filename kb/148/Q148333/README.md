@@ -6,6 +6,8 @@ permalink: /kb/148/Q148333/
 
 ## Q148333: How to Create a Multiple-Select Mover List Box Using Code
 
+{% raw %}
+
 	Article: Q148333
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -184,3 +186,5 @@ permalink: /kb/148/Q148333/
 	
 	=============================================================================
 	
+
+{% endraw %}

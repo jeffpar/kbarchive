@@ -6,6 +6,8 @@ permalink: /kb/181/Q181930/
 
 ## Q181930: XCLN: Form Required to View This Message Cannot Be Displayed
 
+{% raw %}
+
 	Article: Q181930
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,8.0,8.01,8.02,8.03
@@ -85,3 +87,5 @@ permalink: /kb/181/Q181930/
 	
 	=============================================================================
 	
+
+{% endraw %}

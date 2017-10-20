@@ -6,6 +6,8 @@ permalink: /kb/072/Q72236/
 
 ## Q72236: Maximizing the Use of Available Memory in Windows
 
+{% raw %}
+
 	Article: Q72236
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -110,3 +112,5 @@ permalink: /kb/072/Q72236/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178051/
 
 ## Q178051: FIX: Dialog Box Appears Many Times When Changing Alias Property
 
+{% raw %}
+
 	Article: Q178051
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -94,3 +96,5 @@ permalink: /kb/178/Q178051/
 	
 	=============================================================================
 	
+
+{% endraw %}

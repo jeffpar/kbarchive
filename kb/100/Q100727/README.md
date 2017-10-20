@@ -6,6 +6,8 @@ permalink: /kb/100/Q100727/
 
 ## Q100727: Encarta Err Msg: MindMaze: Player Already Playing
 
+{% raw %}
+
 	Article: Q100727
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1993 edition
@@ -81,3 +83,5 @@ permalink: /kb/100/Q100727/
 	
 	=============================================================================
 	
+
+{% endraw %}

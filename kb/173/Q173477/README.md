@@ -6,6 +6,8 @@ permalink: /kb/173/Q173477/
 
 ## Q173477: How to Dial Local Access Numbers Using a Different Area Code
 
+{% raw %}
+
 	Article: Q173477
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6
@@ -109,3 +111,5 @@ permalink: /kb/173/Q173477/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169672/
 
 ## Q169672: XCON: Missing X.400 Route in GWART
 
+{% raw %}
+
 	Article: Q169672
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -118,3 +120,5 @@ permalink: /kb/169/Q169672/
 	
 	=============================================================================
 	
+
+{% endraw %}

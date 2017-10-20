@@ -6,6 +6,8 @@ permalink: /kb/168/Q168077/
 
 ## Q168077: XFOR: Ccmail Connector Alias Name Rule Not Functioning Properly
 
+{% raw %}
+
 	Article: Q168077
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -48,3 +50,5 @@ permalink: /kb/168/Q168077/
 	
 	=============================================================================
 	
+
+{% endraw %}

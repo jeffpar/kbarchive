@@ -6,6 +6,8 @@ permalink: /kb/075/Q75613/
 
 ## Q75613: In CodeView, Strings Not Watchable Beyond Null (0) Character
 
+{% raw %}
+
 	Article: Q75613
 	Product(s): Microsoft Programming Utilities
 	Version(s): 2.2,3.11,4.0,4.0b,4.5,7.0,7.1
@@ -119,3 +121,5 @@ permalink: /kb/075/Q75613/
 	
 	=============================================================================
 	
+
+{% endraw %}

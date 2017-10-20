@@ -6,6 +6,8 @@ permalink: /kb/182/Q182203/
 
 ## Q182203: XADM: Browse Does Not Locate Exchange Servers Across Windows NT
 
+{% raw %}
+
 	Article: Q182203
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/182/Q182203/
 	
 	=============================================================================
 	
+
+{% endraw %}

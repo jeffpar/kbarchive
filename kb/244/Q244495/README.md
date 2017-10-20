@@ -6,6 +6,8 @@ permalink: /kb/244/Q244495/
 
 ## Q244495: HOWTO: Implement Thread-Pooled, Apartment Model COM Svr in ATL
 
+{% raw %}
+
 	Article: Q244495
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -107,3 +109,5 @@ permalink: /kb/244/Q244495/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/033/Q33622/
 
 ## Q33622: COMMON SHARED Problem when Period in Variable after CHAIN
 
+{% raw %}
+
 	Article: Q33622
 	Product(s): See article
 	Version(s): 4.00b 4.50
@@ -42,3 +44,5 @@ permalink: /kb/033/Q33622/
 	   DIM d AS t    'If this line is taken out, or if d is DIMmed to
 	                 'something else, it works correctly.
 	   PRINT m$
+
+{% endraw %}

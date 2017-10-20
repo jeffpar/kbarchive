@@ -6,6 +6,8 @@ permalink: /kb/192/Q192937/
 
 ## Q192937: Motocross Madness: White Lines Displayed in Background
 
+{% raw %}
+
 	Article: Q192937
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/192/Q192937/
 	
 	=============================================================================
 	
+
+{% endraw %}

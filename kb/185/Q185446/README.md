@@ -6,6 +6,8 @@ permalink: /kb/185/Q185446/
 
 ## Q185446: TN3270 Server LUA Pool Use Should Load Balance Across Servers
 
+{% raw %}
+
 	Article: Q185446
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -113,3 +115,5 @@ permalink: /kb/185/Q185446/
 	
 	=============================================================================
 	
+
+{% endraw %}

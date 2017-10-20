@@ -6,6 +6,8 @@ permalink: /kb/224/Q224964/
 
 ## Q224964: SP4 Server Hangs with St. Bernard OFM and McAfee NetShield
 
+{% raw %}
+
 	Article: Q224964
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -57,3 +59,5 @@ permalink: /kb/224/Q224964/
 	
 	=============================================================================
 	
+
+{% endraw %}

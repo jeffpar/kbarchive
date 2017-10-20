@@ -6,6 +6,8 @@ permalink: /kb/176/Q176430/
 
 ## Q176430: FIX: Controls on Nested Frames on SSTab May Paint Incorrectly
 
+{% raw %}
+
 	Article: Q176430
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -109,3 +111,5 @@ permalink: /kb/176/Q176430/
 	
 	=============================================================================
 	
+
+{% endraw %}

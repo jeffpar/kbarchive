@@ -6,6 +6,8 @@ permalink: /kb/038/Q38311/
 
 ## Q38311: Inserting a Line from Clipboard into File with Editor
 
+{% raw %}
+
 	Article: Q38311
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -41,3 +43,5 @@ permalink: /kb/038/Q38311/
 	and end on different lines. Note that the COPY key (CTRL+INS) does not
 	accept stream arguments, therefore, it always copies the highlighted
 	area.
+
+{% endraw %}

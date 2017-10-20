@@ -6,6 +6,8 @@ permalink: /kb/136/Q136450/
 
 ## Q136450: Programs Must Support 32-Bit Windows Sockets to Use AutoDial
 
+{% raw %}
+
 	Article: Q136450
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -52,3 +54,5 @@ permalink: /kb/136/Q136450/
 	
 	=============================================================================
 	
+
+{% endraw %}

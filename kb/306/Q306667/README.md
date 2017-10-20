@@ -6,6 +6,8 @@ permalink: /kb/306/Q306667/
 
 ## Q306667: Server Certificate Button Unavailable in IIS
 
+{% raw %}
+
 	Article: Q306667
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -106,3 +108,5 @@ permalink: /kb/306/Q306667/
 	
 	=============================================================================
 	
+
+{% endraw %}

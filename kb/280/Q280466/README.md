@@ -6,6 +6,8 @@ permalink: /kb/280/Q280466/
 
 ## Q280466: Programs Using LDAP May Generate Access Violation Error Messages
 
+{% raw %}
+
 	Article: Q280466
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -92,3 +94,5 @@ permalink: /kb/280/Q280466/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157085/
 
 ## Q157085: WD97: Limitations of Converting WordPerfect 5.x Documents
 
+{% raw %}
+
 	Article: Q157085
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -317,3 +319,5 @@ permalink: /kb/157/Q157085/
 	
 	=============================================================================
 	
+
+{% endraw %}

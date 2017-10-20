@@ -6,6 +6,8 @@ permalink: /kb/117/Q117656/
 
 ## Q117656: Microsoft Systems Journal: August 1994
 
+{% raw %}
+
 	Article: Q117656
 	Product(s): Miscrosoft Systems Journal
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/117/Q117656/
 	
 	=============================================================================
 	
+
+{% endraw %}

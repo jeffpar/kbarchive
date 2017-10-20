@@ -6,6 +6,8 @@ permalink: /kb/201/Q201436/
 
 ## Q201436: XFOR: After Notes Migration, Calendar Entries Cannot Be Modified
 
+{% raw %}
+
 	Article: Q201436
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -59,3 +61,5 @@ permalink: /kb/201/Q201436/
 	
 	=============================================================================
 	
+
+{% endraw %}

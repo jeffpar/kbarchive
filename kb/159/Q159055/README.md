@@ -6,6 +6,8 @@ permalink: /kb/159/Q159055/
 
 ## Q159055: NTBACKUP Always Reports Time as PM in Backup.log
 
+{% raw %}
+
 	Article: Q159055
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -44,3 +46,5 @@ permalink: /kb/159/Q159055/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/254/Q254452/
 
 ## Q254452: Streets and Trips 2001: Help Is Displayed in Unexpected Language
 
+{% raw %}
+
 	Article: Q254452
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -70,3 +72,5 @@ permalink: /kb/254/Q254452/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/268/Q268419/
 
 ## Q268419: HOWTO: Enable Password Change Functionality for OWA
 
+{% raw %}
+
 	Article: Q268419
 	Product(s): Internet Information Server
 	Version(s): 5.0,5.5
@@ -88,3 +90,5 @@ permalink: /kb/268/Q268419/
 	
 	=============================================================================
 	
+
+{% endraw %}

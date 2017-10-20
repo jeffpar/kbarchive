@@ -6,6 +6,8 @@ permalink: /kb/130/Q130456/
 
 ## Q130456: Comparing Visual FoxPro to Other Programming Languages
 
+{% raw %}
+
 	Article: Q130456
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -242,3 +244,5 @@ permalink: /kb/130/Q130456/
 	
 	=============================================================================
 	
+
+{% endraw %}

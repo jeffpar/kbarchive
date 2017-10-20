@@ -6,6 +6,8 @@ permalink: /kb/120/Q120080/
 
 ## Q120080: BUG: CTRL+Q Doesn't Exit from a READ
 
+{% raw %}
+
 	Article: Q120080
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a,3.0b
@@ -59,3 +61,5 @@ permalink: /kb/120/Q120080/
 	
 	=============================================================================
 	
+
+{% endraw %}

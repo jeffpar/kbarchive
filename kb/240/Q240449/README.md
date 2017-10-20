@@ -6,6 +6,8 @@ permalink: /kb/240/Q240449/
 
 ## Q240449: Aciniupd Does Not Update Some Characters Properly into .ini File
 
+{% raw %}
+
 	Article: Q240449
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0,4.0 SP4,4.0 SP5
@@ -76,3 +78,5 @@ permalink: /kb/240/Q240449/
 	
 	=============================================================================
 	
+
+{% endraw %}

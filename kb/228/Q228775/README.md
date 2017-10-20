@@ -6,6 +6,8 @@ permalink: /kb/228/Q228775/
 
 ## Q228775: Baseball 2000: Cannot Locate Season Database in General Manager
 
+{% raw %}
+
 	Article: Q228775
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/228/Q228775/
 	
 	=============================================================================
 	
+
+{% endraw %}

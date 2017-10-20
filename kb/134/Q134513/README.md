@@ -6,6 +6,8 @@ permalink: /kb/134/Q134513/
 
 ## Q134513: ClarisWorks Setup Error Message: Cannot Find Win32s
 
+{% raw %}
+
 	Article: Q134513
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/134/Q134513/
 	
 	=============================================================================
 	
+
+{% endraw %}

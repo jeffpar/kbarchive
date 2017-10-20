@@ -6,6 +6,8 @@ permalink: /kb/268/Q268091/
 
 ## Q268091: Event 7022: Messenger Service Hung on Startup
 
+{% raw %}
+
 	Article: Q268091
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/268/Q268091/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122037/
 
 ## Q122037: HOWTO: How to Use a Program to Calculate Print Margins
 
+{% raw %}
+
 	Article: Q122037
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:
@@ -115,3 +117,5 @@ permalink: /kb/122/Q122037/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126613/
 
 ## Q126613: BUG: Connection Fails with SQLSetConnectOption-SQLConnect
 
+{% raw %}
+
 	Article: Q126613
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -81,3 +83,5 @@ permalink: /kb/126/Q126613/
 	
 	=============================================================================
 	
+
+{% endraw %}

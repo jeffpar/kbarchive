@@ -6,6 +6,8 @@ permalink: /kb/282/Q282988/
 
 ## Q282988: Microsoft Reader: Problems Starting, Unable to Display EULA
 
+{% raw %}
+
 	Article: Q282988
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.5
@@ -221,3 +223,5 @@ permalink: /kb/282/Q282988/
 	
 	=============================================================================
 	
+
+{% endraw %}

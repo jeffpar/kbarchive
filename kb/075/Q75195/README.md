@@ -6,6 +6,8 @@ permalink: /kb/075/Q75195/
 
 ## Q75195: Requesting MS-DOS Version Number with DEBUG
 
+{% raw %}
+
 	Article: Q75195
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0,6.0
@@ -97,3 +99,5 @@ permalink: /kb/075/Q75195/
 	
 	=============================================================================
 	
+
+{% endraw %}

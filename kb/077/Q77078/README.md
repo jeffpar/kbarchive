@@ -6,6 +6,8 @@ permalink: /kb/077/Q77078/
 
 ## Q77078: FIX: Whitespace Character Must Precede DUP Operator
 
+{% raw %}
+
 	Article: Q77078
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -82,3 +84,5 @@ permalink: /kb/077/Q77078/
 	
 	=============================================================================
 	
+
+{% endraw %}

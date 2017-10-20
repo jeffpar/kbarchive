@@ -6,6 +6,8 @@ permalink: /kb/231/Q231206/
 
 ## Q231206: SMS: Problems Installing Netmon When Dialog Box Is Open
 
+{% raw %}
+
 	Article: Q231206
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -69,3 +71,5 @@ permalink: /kb/231/Q231206/
 	
 	=============================================================================
 	
+
+{% endraw %}

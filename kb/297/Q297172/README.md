@@ -6,6 +6,8 @@ permalink: /kb/297/Q297172/
 
 ## Q297172: XADM: Arcserve Backup Agent Fails with Error 301
 
+{% raw %}
+
 	Article: Q297172
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -61,3 +63,5 @@ permalink: /kb/297/Q297172/
 	
 	=============================================================================
 	
+
+{% endraw %}

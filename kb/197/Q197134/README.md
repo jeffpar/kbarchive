@@ -6,6 +6,8 @@ permalink: /kb/197/Q197134/
 
 ## Q197134: WD97: Caption Numbers Reset When Caption Includes Chapter Number
 
+{% raw %}
+
 	Article: Q197134
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -70,3 +72,5 @@ permalink: /kb/197/Q197134/
 	
 	=============================================================================
 	
+
+{% endraw %}

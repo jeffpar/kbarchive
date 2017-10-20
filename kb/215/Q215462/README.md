@@ -6,6 +6,8 @@ permalink: /kb/215/Q215462/
 
 ## Q215462: WD97: Template Security Patch Installation Issues
 
+{% raw %}
+
 	Article: Q215462
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -327,3 +329,5 @@ permalink: /kb/215/Q215462/
 	
 	=============================================================================
 	
+
+{% endraw %}

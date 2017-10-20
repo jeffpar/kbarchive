@@ -6,6 +6,8 @@ permalink: /kb/177/Q177773/
 
 ## Q177773: XADM: Log Files Not Deleted After Full Backup
 
+{% raw %}
+
 	Article: Q177773
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -55,3 +57,5 @@ permalink: /kb/177/Q177773/
 	
 	=============================================================================
 	
+
+{% endraw %}

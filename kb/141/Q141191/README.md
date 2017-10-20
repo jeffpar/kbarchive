@@ -6,6 +6,8 @@ permalink: /kb/141/Q141191/
 
 ## Q141191: File &amp; Print Services for NetWare Volume Disappears After Reboot
 
+{% raw %}
+
 	Article: Q141191
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -71,3 +73,5 @@ permalink: /kb/141/Q141191/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172748/
 
 ## Q172748: WD97: Tab Character Appears as Space in Web Browser
 
+{% raw %}
+
 	Article: Q172748
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -89,3 +91,5 @@ permalink: /kb/172/Q172748/
 	
 	=============================================================================
 	
+
+{% endraw %}

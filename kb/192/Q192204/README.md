@@ -6,6 +6,8 @@ permalink: /kb/192/Q192204/
 
 ## Q192204: XADM: Information Store Stops When Forwarding Internet Message
 
+{% raw %}
+
 	Article: Q192204
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -63,3 +65,5 @@ permalink: /kb/192/Q192204/
 	
 	=============================================================================
 	
+
+{% endraw %}

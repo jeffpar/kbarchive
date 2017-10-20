@@ -6,6 +6,8 @@ permalink: /kb/263/Q263262/
 
 ## Q263262: Baseball 2001: Screen Is Not Properly Redrawn
 
+{% raw %}
+
 	Article: Q263262
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -65,3 +67,5 @@ permalink: /kb/263/Q263262/
 	
 	=============================================================================
 	
+
+{% endraw %}

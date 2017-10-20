@@ -6,6 +6,8 @@ permalink: /kb/167/Q167280/
 
 ## Q167280: XFOR: Err Msg: Cannot Open, HTTP/1.0 500 Server Error
 
+{% raw %}
+
 	Article: Q167280
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -67,3 +69,5 @@ permalink: /kb/167/Q167280/
 	
 	=============================================================================
 	
+
+{% endraw %}

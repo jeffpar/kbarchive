@@ -6,6 +6,8 @@ permalink: /kb/181/Q181556/
 
 ## Q181556: SMS: Cannot Query on Historical Inventory with SmsView.exe
 
+{% raw %}
+
 	Article: Q181556
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -50,3 +52,5 @@ permalink: /kb/181/Q181556/
 	
 	=============================================================================
 	
+
+{% endraw %}

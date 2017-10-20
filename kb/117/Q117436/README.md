@@ -6,6 +6,8 @@ permalink: /kb/117/Q117436/
 
 ## Q117436: MS-DOS 6.22 Upgrade Directory Listing 3.5-Inch 1.44 MB Set
 
+{% raw %}
+
 	Article: Q117436
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -212,3 +214,5 @@ permalink: /kb/117/Q117436/
 	
 	=============================================================================
 	
+
+{% endraw %}

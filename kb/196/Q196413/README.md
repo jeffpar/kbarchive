@@ -6,6 +6,8 @@ permalink: /kb/196/Q196413/
 
 ## Q196413: XADM: Remove Connectors Before Running Move Server Wizard
 
+{% raw %}
+
 	Article: Q196413
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -59,3 +61,5 @@ permalink: /kb/196/Q196413/
 	
 	=============================================================================
 	
+
+{% endraw %}

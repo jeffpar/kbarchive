@@ -6,6 +6,8 @@ permalink: /kb/138/Q138927/
 
 ## Q138927: Server Operators Unable to Format Server Hard Disk
 
+{% raw %}
+
 	Article: Q138927
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/138/Q138927/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177598/
 
 ## Q177598: XFOR: RTF Always Sent from Exchange Server to Lotus Notes
 
+{% raw %}
+
 	Article: Q177598
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -44,3 +46,5 @@ permalink: /kb/177/Q177598/
 	
 	=============================================================================
 	
+
+{% endraw %}

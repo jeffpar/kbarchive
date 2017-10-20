@@ -6,6 +6,8 @@ permalink: /kb/083/Q83902/
 
 ## Q83902: Windows 3.1 Cannot Run on a Novell Nondedicated File Server
 
+{% raw %}
+
 	Article: Q83902
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/083/Q83902/
 	
 	=============================================================================
 	
+
+{% endraw %}

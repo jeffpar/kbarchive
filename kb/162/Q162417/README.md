@@ -6,6 +6,8 @@ permalink: /kb/162/Q162417/
 
 ## Q162417: RPC Error Opening .evt File on Windows 95 Computer
 
+{% raw %}
+
 	Article: Q162417
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0 95
@@ -68,3 +70,5 @@ permalink: /kb/162/Q162417/
 	
 	=============================================================================
 	
+
+{% endraw %}

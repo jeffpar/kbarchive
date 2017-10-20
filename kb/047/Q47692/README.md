@@ -6,6 +6,8 @@ permalink: /kb/047/Q47692/
 
 ## Q47692: INFO: Some errno Values Do Not Apply to MS-DOS, Windows NT
 
+{% raw %}
+
 	Article: Q47692
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:5.1,6.0,6.00a,6.00ax,7.0; WINDOWS:1.0,1.5; WINDOWS NT:1.0,2.0,2.1,4.0,5.0
@@ -124,3 +126,5 @@ permalink: /kb/047/Q47692/
 	
 	=============================================================================
 	
+
+{% endraw %}

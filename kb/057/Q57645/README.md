@@ -6,6 +6,8 @@ permalink: /kb/057/Q57645/
 
 ## Q57645: Setting COMSPEC &amp; SHELL in OS/2; SHELL &quot;Illegal Function Call&quot;
 
+{% raw %}
+
 	Article: Q57645
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -118,3 +120,5 @@ permalink: /kb/057/Q57645/
 	Note again that both COMSPEC and SHELL are set in the CONFIG.SYS file
 	under OS/2. Nothing is done in the AUTOEXEC.BAT file to specify
 	information about command interpreters under OS/2.
+
+{% endraw %}

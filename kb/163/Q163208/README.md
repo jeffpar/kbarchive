@@ -6,6 +6,8 @@ permalink: /kb/163/Q163208/
 
 ## Q163208: Downstream PU Fails to Activate After Short ACTLU Response
 
+{% raw %}
+
 	Article: Q163208
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -116,3 +118,5 @@ permalink: /kb/163/Q163208/
 	
 	=============================================================================
 	
+
+{% endraw %}

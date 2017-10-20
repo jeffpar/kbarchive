@@ -6,6 +6,8 @@ permalink: /kb/220/Q220876/
 
 ## Q220876: HOWTO: Restore an Entire Database Archive with Restore Wizard
 
+{% raw %}
+
 	Article: Q220876
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -99,3 +101,5 @@ permalink: /kb/220/Q220876/
 	
 	=============================================================================
 	
+
+{% endraw %}

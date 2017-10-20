@@ -6,6 +6,8 @@ permalink: /kb/135/Q135740/
 
 ## Q135740: PPT7: Format Painter Doesn't Copy Custom Background in Sorter
 
+{% raw %}
+
 	Article: Q135740
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -44,3 +46,5 @@ permalink: /kb/135/Q135740/
 	
 	=============================================================================
 	
+
+{% endraw %}

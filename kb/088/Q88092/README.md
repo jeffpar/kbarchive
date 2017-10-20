@@ -6,6 +6,8 @@ permalink: /kb/088/Q88092/
 
 ## Q88092: BUG: Cannot Access Static Data Members in Inline Assembly
 
+{% raw %}
+
 	Article: Q88092
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0,4.1,4.2,5.0,6.0
@@ -105,3 +107,5 @@ permalink: /kb/088/Q88092/
 	
 	=============================================================================
 	
+
+{% endraw %}

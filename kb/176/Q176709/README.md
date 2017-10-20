@@ -6,6 +6,8 @@ permalink: /kb/176/Q176709/
 
 ## Q176709: XADM: Memory Leak in Microsoft Exchange Server Information Store
 
+{% raw %}
+
 	Article: Q176709
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -55,3 +57,5 @@ permalink: /kb/176/Q176709/
 	
 	=============================================================================
 	
+
+{% endraw %}

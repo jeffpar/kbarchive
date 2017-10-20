@@ -6,6 +6,8 @@ permalink: /kb/050/Q50945/
 
 ## Q50945: How to Get Blinking Text in BASIC SCREEN Modes 7, 8, 9, 12, 13
 
+{% raw %}
+
 	Article: Q50945
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -114,3 +116,5 @@ permalink: /kb/050/Q50945/
 	a program is running on a dual-monitor system (Hercules and VGA) and
 	the current mode is monochrome, this interrupt will not affect the
 	color card.
+
+{% endraw %}

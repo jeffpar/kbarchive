@@ -6,6 +6,8 @@ permalink: /kb/253/Q253596/
 
 ## Q253596: XCLN: Files (Outlook/Exchange) Setting on Advanced Find
 
+{% raw %}
+
 	Article: Q253596
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000
@@ -52,3 +54,5 @@ permalink: /kb/253/Q253596/
 	
 	=============================================================================
 	
+
+{% endraw %}

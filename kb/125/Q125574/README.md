@@ -6,6 +6,8 @@ permalink: /kb/125/Q125574/
 
 ## Q125574: Excessive Server Manager File Lock Counts
 
+{% raw %}
+
 	Article: Q125574
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -60,3 +62,5 @@ permalink: /kb/125/Q125574/
 	
 	=============================================================================
 	
+
+{% endraw %}

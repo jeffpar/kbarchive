@@ -6,6 +6,8 @@ permalink: /kb/142/Q142445/
 
 ## Q142445: DOC: CWnd::LockWindowUpdate Does Not Unlock the Window
 
+{% raw %}
+
 	Article: Q142445
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,2.2,4.0; :1.0,1.5,1.51,1.52
@@ -54,3 +56,5 @@ permalink: /kb/142/Q142445/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136022/
 
 ## Q136022: Mac Bookshelf 95: Israel Anthem Suddenly Stops
 
+{% raw %}
+
 	Article: Q136022
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -47,3 +49,5 @@ permalink: /kb/136/Q136022/
 	
 	=============================================================================
 	
+
+{% endraw %}

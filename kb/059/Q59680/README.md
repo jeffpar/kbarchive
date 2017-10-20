@@ -6,6 +6,8 @@ permalink: /kb/059/Q59680/
 
 ## Q59680: File Manager &quot;System Error&quot; When SUBST'd Drive Present
 
+{% raw %}
+
 	Article: Q59680
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -34,3 +36,5 @@ permalink: /kb/059/Q59680/
 	
 	=============================================================================
 	
+
+{% endraw %}

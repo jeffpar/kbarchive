@@ -6,6 +6,8 @@ permalink: /kb/195/Q195835/
 
 ## Q195835: PRB: Images Are Not Exported From the Report Writer
 
+{% raw %}
+
 	Article: Q195835
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -87,3 +89,5 @@ permalink: /kb/195/Q195835/
 	
 	=============================================================================
 	
+
+{% endraw %}

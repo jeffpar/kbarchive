@@ -6,6 +6,8 @@ permalink: /kb/037/Q37929/
 
 ## Q37929: Mac DOS: Description and Features of MS-DOS Mail Client
 
+{% raw %}
+
 	Article: Q37929
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.0,3.1
@@ -64,3 +66,5 @@ permalink: /kb/037/Q37929/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169160/
 
 ## Q169160: Routing Protocols Changes Not Updated in Routing and RAS Admin
 
+{% raw %}
+
 	Article: Q169160
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -51,3 +53,5 @@ permalink: /kb/169/Q169160/
 	
 	=============================================================================
 	
+
+{% endraw %}

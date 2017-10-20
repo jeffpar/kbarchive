@@ -6,6 +6,8 @@ permalink: /kb/059/Q59384/
 
 ## Q59384: BUG: NMAKE /D /C Switches Suppress Modification Date
 
+{% raw %}
+
 	Article: Q59384
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.01,1.1,1.11,1.12,1.13,1.2,1.3,1.4; OS/2:1.11,1.12,1.13,1.21
@@ -49,3 +51,5 @@ permalink: /kb/059/Q59384/
 	
 	=============================================================================
 	
+
+{% endraw %}

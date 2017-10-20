@@ -6,6 +6,8 @@ permalink: /kb/095/Q95539/
 
 ## Q95539: Orchid Fahrenheit VA Version 4.1 and Windows 3.1
 
+{% raw %}
+
 	Article: Q95539
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -116,3 +118,5 @@ permalink: /kb/095/Q95539/
 	
 	=============================================================================
 	
+
+{% endraw %}

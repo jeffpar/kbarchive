@@ -6,6 +6,8 @@ permalink: /kb/178/Q178532/
 
 ## Q178532: XFOR: Configuring Exchange Internet Protocols with Proxy Server
 
+{% raw %}
+
 	Article: Q178532
 	Product(s): Microsoft Exchange
 	Version(s): winnt:2.0,5.0,5.5
@@ -104,3 +106,5 @@ permalink: /kb/178/Q178532/
 	
 	=============================================================================
 	
+
+{% endraw %}

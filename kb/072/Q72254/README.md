@@ -6,6 +6,8 @@ permalink: /kb/072/Q72254/
 
 ## Q72254: User Directory Must Precede the Shared Windows Directory
 
+{% raw %}
+
 	Article: Q72254
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -52,3 +54,5 @@ permalink: /kb/072/Q72254/
 	
 	=============================================================================
 	
+
+{% endraw %}

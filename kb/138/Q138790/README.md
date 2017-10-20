@@ -6,6 +6,8 @@ permalink: /kb/138/Q138790/
 
 ## Q138790: Envelopes Printed Incorrectly on HP DeskJet 540 Printer
 
+{% raw %}
+
 	Article: Q138790
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -47,3 +49,5 @@ permalink: /kb/138/Q138790/
 	
 	=============================================================================
 	
+
+{% endraw %}

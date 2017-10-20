@@ -6,6 +6,8 @@ permalink: /kb/312/Q312434/
 
 ## Q312434: XADM: OWA Error When Users Try to Gain Access to Messages
 
+{% raw %}
+
 	Article: Q312434
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -56,3 +58,5 @@ permalink: /kb/312/Q312434/
 	
 	=============================================================================
 	
+
+{% endraw %}

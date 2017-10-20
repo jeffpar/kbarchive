@@ -6,6 +6,8 @@ permalink: /kb/200/Q200747/
 
 ## Q200747: SMS: Wuser Causes Invalid Page Fault in Coexist.dll
 
+{% raw %}
+
 	Article: Q200747
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -82,3 +84,5 @@ permalink: /kb/200/Q200747/
 	
 	=============================================================================
 	
+
+{% endraw %}

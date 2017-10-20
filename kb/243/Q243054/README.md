@@ -6,6 +6,8 @@ permalink: /kb/243/Q243054/
 
 ## Q243054: Data Corruption in RPC Causes Tight Loop with RPC Programs
 
+{% raw %}
+
 	Article: Q243054
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -67,3 +69,5 @@ permalink: /kb/243/Q243054/
 	
 	=============================================================================
 	
+
+{% endraw %}

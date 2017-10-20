@@ -6,6 +6,8 @@ permalink: /kb/128/Q128626/
 
 ## Q128626: Message Size on BBS Differs in Message List and Property Sheet
 
+{% raw %}
+
 	Article: Q128626
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -48,3 +50,5 @@ permalink: /kb/128/Q128626/
 	
 	=============================================================================
 	
+
+{% endraw %}

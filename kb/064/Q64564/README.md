@@ -6,6 +6,8 @@ permalink: /kb/064/Q64564/
 
 ## Q64564: Internal Compiler Error: '@(#)regMD.c:1.100' Line 929
 
+{% raw %}
+
 	Article: Q64564
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -63,3 +65,5 @@ permalink: /kb/064/Q64564/
 	Microsoft has confirmed this to be a problem with the C Compiler
 	version 6.00. We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67378/
 
 ## Q67378: OPEN &quot;SCRN:&quot; or &quot;CONS:&quot; Wrong Output in QBX.EXE When Step (F8)
 
+{% raw %}
+
 	Article: Q67378
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -37,3 +39,5 @@ permalink: /kb/067/Q67378/
 	momentarily flash on the environment screen; no text will be displayed
 	on the output screen. Note that just running the program (F5) will
 	correctly print to the output screen.
+
+{% endraw %}

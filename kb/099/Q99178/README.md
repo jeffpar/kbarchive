@@ -6,6 +6,8 @@ permalink: /kb/099/Q99178/
 
 ## Q99178: Bookshelf: Cannot Cancel Deletion of Bookmark
 
+{% raw %}
+
 	Article: Q99178
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1992 editions,1993 edition,1993 editions,1994 editions,2.0
@@ -39,3 +41,5 @@ permalink: /kb/099/Q99178/
 	
 	=============================================================================
 	
+
+{% endraw %}

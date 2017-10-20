@@ -6,6 +6,8 @@ permalink: /kb/192/Q192484/
 
 ## Q192484: XFOR: Exchange DSS Gets Event ID 133, 143, 168 Errors in Dirsync
 
+{% raw %}
+
 	Article: Q192484
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -150,3 +152,5 @@ permalink: /kb/192/Q192484/
 	
 	=============================================================================
 	
+
+{% endraw %}

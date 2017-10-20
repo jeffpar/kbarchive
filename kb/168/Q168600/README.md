@@ -6,6 +6,8 @@ permalink: /kb/168/Q168600/
 
 ## Q168600: SMS: Simultaneous Attempts to Remote Control May Cause Errors
 
+{% raw %}
+
 	Article: Q168600
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -95,3 +97,5 @@ permalink: /kb/168/Q168600/
 	
 	=============================================================================
 	
+
+{% endraw %}

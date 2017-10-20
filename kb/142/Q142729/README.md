@@ -6,6 +6,8 @@ permalink: /kb/142/Q142729/
 
 ## Q142729: Distorted Sound with Media Vision 3D or Pro 3D Sound Card
 
+{% raw %}
+
 	Article: Q142729
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -57,3 +59,5 @@ permalink: /kb/142/Q142729/
 	
 	=============================================================================
 	
+
+{% endraw %}

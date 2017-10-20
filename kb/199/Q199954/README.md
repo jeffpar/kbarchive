@@ -6,6 +6,8 @@ permalink: /kb/199/Q199954/
 
 ## Q199954: XADM: Forklifting All Users to a New Server
 
+{% raw %}
+
 	Article: Q199954
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -390,3 +392,5 @@ permalink: /kb/199/Q199954/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/202/Q202303/
 
 ## Q202303: SMS: Product Denials in Software Metering Fail to Create Report
 
+{% raw %}
+
 	Article: Q202303
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -71,3 +73,5 @@ permalink: /kb/202/Q202303/
 	
 	=============================================================================
 	
+
+{% endraw %}

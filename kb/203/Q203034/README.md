@@ -6,6 +6,8 @@ permalink: /kb/203/Q203034/
 
 ## Q203034: XIMS: Internet Custom Recipients Sending Wrong REPLY TO Address
 
+{% raw %}
+
 	Article: Q203034
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -80,3 +82,5 @@ permalink: /kb/203/Q203034/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98469/
 
 ## Q98469: Razzle Dazzle 1.0 and MS-DOS 6.0
 
+{% raw %}
+
 	Article: Q98469
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -64,3 +66,5 @@ permalink: /kb/098/Q98469/
 	
 	=============================================================================
 	
+
+{% endraw %}

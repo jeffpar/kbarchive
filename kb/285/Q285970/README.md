@@ -6,6 +6,8 @@ permalink: /kb/285/Q285970/
 
 ## Q285970: Additional SNA Server Services Cannot Use Specific TCP/IP Ports
 
+{% raw %}
+
 	Article: Q285970
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -176,3 +178,5 @@ permalink: /kb/285/Q285970/
 	
 	=============================================================================
 	
+
+{% endraw %}

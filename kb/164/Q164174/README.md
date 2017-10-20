@@ -6,6 +6,8 @@ permalink: /kb/164/Q164174/
 
 ## Q164174: NET0133 Error When Loading TINYRFC
 
+{% raw %}
+
 	Article: Q164174
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2.2, 3.0,WFWG:3.11
@@ -50,3 +52,5 @@ permalink: /kb/164/Q164174/
 	
 	=============================================================================
 	
+
+{% endraw %}

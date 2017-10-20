@@ -6,6 +6,8 @@ permalink: /kb/082/Q82916/
 
 ## Q82916: PC Win: Not Sorting Correctly Based on Subject Field
 
+{% raw %}
+
 	Article: Q82916
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -43,3 +45,5 @@ permalink: /kb/082/Q82916/
 	
 	=============================================================================
 	
+
+{% endraw %}

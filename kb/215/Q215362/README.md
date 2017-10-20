@@ -6,6 +6,8 @@ permalink: /kb/215/Q215362/
 
 ## Q215362: HOWTO: Detect DCOM Installation Under VFP 6.0
 
+{% raw %}
+
 	Article: Q215362
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -75,3 +77,5 @@ permalink: /kb/215/Q215362/
 	
 	=============================================================================
 	
+
+{% endraw %}

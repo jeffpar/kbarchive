@@ -6,6 +6,8 @@ permalink: /kb/060/Q60072/
 
 ## Q60072: FIX: Duplicate Struc Declaration and /Zi Hangs MASM 5.1, 5.1a
 
+{% raw %}
+
 	Article: Q60072
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.1,5.1a
@@ -67,3 +69,5 @@ permalink: /kb/060/Q60072/
 	
 	=============================================================================
 	
+
+{% endraw %}

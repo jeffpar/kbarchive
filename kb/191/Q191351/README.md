@@ -6,6 +6,8 @@ permalink: /kb/191/Q191351/
 
 ## Q191351: SMS: Long Environment Paths May Cause Incomplete Inventory
 
+{% raw %}
+
 	Article: Q191351
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -64,3 +66,5 @@ permalink: /kb/191/Q191351/
 	
 	=============================================================================
 	
+
+{% endraw %}

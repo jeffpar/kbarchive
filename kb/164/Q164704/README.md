@@ -6,6 +6,8 @@ permalink: /kb/164/Q164704/
 
 ## Q164704: Password Change DLL Fails if First Host Account Cache Offline
 
+{% raw %}
+
 	Article: Q164704
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -78,3 +80,5 @@ permalink: /kb/164/Q164704/
 	
 	=============================================================================
 	
+
+{% endraw %}

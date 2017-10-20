@@ -6,6 +6,8 @@ permalink: /kb/256/Q256073/
 
 ## Q256073: SMS: Dataloader Cannot Load MIF After Removing Group Class
 
+{% raw %}
+
 	Article: Q256073
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -125,3 +127,5 @@ permalink: /kb/256/Q256073/
 	
 	=============================================================================
 	
+
+{% endraw %}

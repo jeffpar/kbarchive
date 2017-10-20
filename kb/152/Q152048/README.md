@@ -6,6 +6,8 @@ permalink: /kb/152/Q152048/
 
 ## Q152048: File Manager Incorrectly Reports Free Space on 3.5-inch Disk
 
+{% raw %}
+
 	Article: Q152048
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -49,3 +51,5 @@ permalink: /kb/152/Q152048/
 	
 	=============================================================================
 	
+
+{% endraw %}

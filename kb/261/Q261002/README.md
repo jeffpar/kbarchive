@@ -6,6 +6,8 @@ permalink: /kb/261/Q261002/
 
 ## Q261002: How to Move the Default Web Site to a Different Drive in IIS 5.0
 
+{% raw %}
+
 	Article: Q261002
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/261/Q261002/
 	
 	=============================================================================
 	
+
+{% endraw %}

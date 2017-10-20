@@ -6,6 +6,8 @@ permalink: /kb/190/Q190200/
 
 ## Q190200: BUG: Name Conflict Error Even After Renaming Module
 
+{% raw %}
+
 	Article: Q190200
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -89,3 +91,5 @@ permalink: /kb/190/Q190200/
 	
 	=============================================================================
 	
+
+{% endraw %}

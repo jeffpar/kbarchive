@@ -6,6 +6,8 @@ permalink: /kb/124/Q124250/
 
 ## Q124250: ScanDisk Incorrectly Displays &quot;&#91;&quot; as a Drive Letter in Err Msg
 
+{% raw %}
+
 	Article: Q124250
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -52,3 +54,5 @@ permalink: /kb/124/Q124250/
 	
 	=============================================================================
 	
+
+{% endraw %}

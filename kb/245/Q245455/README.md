@@ -6,6 +6,8 @@ permalink: /kb/245/Q245455/
 
 ## Q245455: Err Msg: You Have Been Booted from Asheron's Call...
 
+{% raw %}
+
 	Article: Q245455
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -81,3 +83,5 @@ permalink: /kb/245/Q245455/
 	
 	=============================================================================
 	
+
+{% endraw %}

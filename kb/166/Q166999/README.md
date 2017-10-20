@@ -6,6 +6,8 @@ permalink: /kb/166/Q166999/
 
 ## Q166999: Using SetArcDirection Results in Incorrect Output
 
+{% raw %}
+
 	Article: Q166999
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/166/Q166999/
 	
 	=============================================================================
 	
+
+{% endraw %}

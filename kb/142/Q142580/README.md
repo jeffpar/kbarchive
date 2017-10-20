@@ -6,6 +6,8 @@ permalink: /kb/142/Q142580/
 
 ## Q142580: BUGLIST: List of Problems in Visual SourceSafe 4.0
 
+{% raw %}
+
 	Article: Q142580
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0
@@ -83,3 +85,5 @@ permalink: /kb/142/Q142580/
 	
 	=============================================================================
 	
+
+{% endraw %}

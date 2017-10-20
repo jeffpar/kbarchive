@@ -6,6 +6,8 @@ permalink: /kb/236/Q236552/
 
 ## Q236552: MOD2000: Errors When Clicking Get in Get Object from SourceSafe
 
+{% raw %}
+
 	Article: Q236552
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -126,3 +128,5 @@ permalink: /kb/236/Q236552/
 	
 	=============================================================================
 	
+
+{% endraw %}

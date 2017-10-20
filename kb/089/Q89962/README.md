@@ -6,6 +6,8 @@ permalink: /kb/089/Q89962/
 
 ## Q89962: Toshiba T3300SL Date and Time Do Not Change on Resume
 
+{% raw %}
+
 	Article: Q89962
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/089/Q89962/
 	
 	=============================================================================
 	
+
+{% endraw %}

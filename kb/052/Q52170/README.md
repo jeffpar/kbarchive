@@ -6,6 +6,8 @@ permalink: /kb/052/Q52170/
 
 ## Q52170: Bad LINE Drawn Using Coordinates Far Outside WINDOW Viewport
 
+{% raw %}
+
 	Article: Q52170
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -106,3 +108,5 @@ permalink: /kb/052/Q52170/
 	   xul! = PMAP(32762, 2)
 	   PRINT "Axis limits "; xll!; xul!; yll!; yul!
 	RESUME NEXT
+
+{% endraw %}

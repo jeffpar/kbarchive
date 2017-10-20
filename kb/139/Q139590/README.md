@@ -6,6 +6,8 @@ permalink: /kb/139/Q139590/
 
 ## Q139590: SMS Despooler May GP Fault with No Distribute Phase
 
+{% raw %}
+
 	Article: Q139590
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -54,3 +56,5 @@ permalink: /kb/139/Q139590/
 	
 	=============================================================================
 	
+
+{% endraw %}

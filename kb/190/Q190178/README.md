@@ -6,6 +6,8 @@ permalink: /kb/190/Q190178/
 
 ## Q190178: BUG: PDW Creates an Invalid Setup for a VB 5.0 Project
 
+{% raw %}
+
 	Article: Q190178
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -63,3 +65,5 @@ permalink: /kb/190/Q190178/
 	
 	=============================================================================
 	
+
+{% endraw %}

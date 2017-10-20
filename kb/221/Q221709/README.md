@@ -6,6 +6,8 @@ permalink: /kb/221/Q221709/
 
 ## Q221709: FIX: Component Gallery Refresh Button for Web View Doesn't Work
 
+{% raw %}
+
 	Article: Q221709
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -81,3 +83,5 @@ permalink: /kb/221/Q221709/
 	
 	=============================================================================
 	
+
+{% endraw %}

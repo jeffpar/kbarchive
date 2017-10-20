@@ -6,6 +6,8 @@ permalink: /kb/087/Q87176/
 
 ## Q87176: Associating .EXE, .COM, or .BAT Files with MS-DOS Shell
 
+{% raw %}
+
 	Article: Q87176
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.0,5.0a,6.0
@@ -83,3 +85,5 @@ permalink: /kb/087/Q87176/
 	
 	=============================================================================
 	
+
+{% endraw %}

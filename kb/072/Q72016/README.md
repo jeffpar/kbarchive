@@ -6,6 +6,8 @@ permalink: /kb/072/Q72016/
 
 ## Q72016: Loading Networks into UMBs with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q72016
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -154,3 +156,5 @@ permalink: /kb/072/Q72016/
 	
 	=============================================================================
 	
+
+{% endraw %}

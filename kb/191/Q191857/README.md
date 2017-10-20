@@ -6,6 +6,8 @@ permalink: /kb/191/Q191857/
 
 ## Q191857: BUG: Scrollbar Disabled in IDE When Enabled is Set to False
 
+{% raw %}
+
 	Article: Q191857
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/191/Q191857/
 	
 	=============================================================================
 	
+
+{% endraw %}

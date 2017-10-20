@@ -6,6 +6,8 @@ permalink: /kb/197/Q197178/
 
 ## Q197178: Passing Environment Variables to Applications Started by SRVANY
 
+{% raw %}
+
 	Article: Q197178
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -109,3 +111,5 @@ permalink: /kb/197/Q197178/
 	
 	=============================================================================
 	
+
+{% endraw %}

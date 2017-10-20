@@ -6,6 +6,8 @@ permalink: /kb/031/Q31939/
 
 ## Q31939: I/O to a File OPENed as &quot;NUL&quot; or &quot;NUL.xxx&quot; Does Nothing
 
+{% raw %}
+
 	Article: Q31939
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -61,3 +63,5 @@ permalink: /kb/031/Q31939/
 	INPUT #1, x
 	PRINT x
 	CLOSE
+
+{% endraw %}

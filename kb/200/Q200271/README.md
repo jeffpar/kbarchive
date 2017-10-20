@@ -6,6 +6,8 @@ permalink: /kb/200/Q200271/
 
 ## Q200271: INFO: How to Diagnose and Resolve Some Automation Errors
 
+{% raw %}
+
 	Article: Q200271
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -160,3 +162,5 @@ permalink: /kb/200/Q200271/
 	
 	=============================================================================
 	
+
+{% endraw %}

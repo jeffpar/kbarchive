@@ -6,6 +6,8 @@ permalink: /kb/314/Q314302/
 
 ## Q314302: Stop Error Message When You Run Optus FACSys Version 4.1 Program
 
+{% raw %}
+
 	Article: Q314302
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -76,3 +78,5 @@ permalink: /kb/314/Q314302/
 	
 	=============================================================================
 	
+
+{% endraw %}

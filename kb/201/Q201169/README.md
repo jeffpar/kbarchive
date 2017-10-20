@@ -6,6 +6,8 @@ permalink: /kb/201/Q201169/
 
 ## Q201169: WD97: Tabs May Be Removed Running Spelling and Grammar Check
 
+{% raw %}
+
 	Article: Q201169
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -71,3 +73,5 @@ permalink: /kb/201/Q201169/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139569/
 
 ## Q139569: BUG: MDI Window Reverses Parent/Child Window Name in Title Bar
 
+{% raw %}
+
 	Article: Q139569
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -66,3 +68,5 @@ permalink: /kb/139/Q139569/
 	
 	=============================================================================
 	
+
+{% endraw %}

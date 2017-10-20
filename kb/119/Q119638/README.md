@@ -6,6 +6,8 @@ permalink: /kb/119/Q119638/
 
 ## Q119638: ERR: Unexpected Error; File Too Large to Compress...
 
+{% raw %}
+
 	Article: Q119638
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5b,2.5c; MACINTOSH:3.0b
@@ -62,3 +64,5 @@ permalink: /kb/119/Q119638/
 	
 	=============================================================================
 	
+
+{% endraw %}

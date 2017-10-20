@@ -6,6 +6,8 @@ permalink: /kb/105/Q105745/
 
 ## Q105745: WD97: Unable to See List of Merge Fields
 
+{% raw %}
+
 	Article: Q105745
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -153,3 +155,5 @@ permalink: /kb/105/Q105745/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156047/
 
 ## Q156047: &quot;A Temporary File...&quot; Error Occurs Opening Attachment
 
+{% raw %}
+
 	Article: Q156047
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -82,3 +84,5 @@ permalink: /kb/156/Q156047/
 	
 	=============================================================================
 	
+
+{% endraw %}

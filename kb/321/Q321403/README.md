@@ -6,6 +6,8 @@ permalink: /kb/321/Q321403/
 
 ## Q321403: FIX: SNA Server May Trap When Receiving Long BINDs
 
+{% raw %}
+
 	Article: Q321403
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -170,3 +172,5 @@ permalink: /kb/321/Q321403/
 	
 	=============================================================================
 	
+
+{% endraw %}

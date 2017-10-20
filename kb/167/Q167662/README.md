@@ -6,6 +6,8 @@ permalink: /kb/167/Q167662/
 
 ## Q167662: ODE97: Uninstall Fails If Run-Time Not Shown in Component List
 
+{% raw %}
+
 	Article: Q167662
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -99,3 +101,5 @@ permalink: /kb/167/Q167662/
 	
 	=============================================================================
 	
+
+{% endraw %}

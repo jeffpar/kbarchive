@@ -6,6 +6,8 @@ permalink: /kb/281/Q281402/
 
 ## Q281402: IIS Problems After Applying a Security Patch
 
+{% raw %}
+
 	Article: Q281402
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -85,3 +87,5 @@ permalink: /kb/281/Q281402/
 	
 	=============================================================================
 	
+
+{% endraw %}

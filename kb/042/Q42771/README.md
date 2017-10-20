@@ -6,6 +6,8 @@ permalink: /kb/042/Q42771/
 
 ## Q42771: HELPMAKE: &quot;/A:&quot; Must Be Used When Using Colon (:) Commands
 
+{% raw %}
+
 	Article: Q42771
 	Product(s): See article
 	Version(s): 1.00
@@ -30,3 +32,5 @@ permalink: /kb/042/Q42771/
 	   HELPMAKE /A: /E /OHELPTEST.HLP HELPTEST.SRC
 	
 	HELPMAKE options may be in either uppercase or lowercase letters.
+
+{% endraw %}

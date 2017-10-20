@@ -6,6 +6,8 @@ permalink: /kb/175/Q175088/
 
 ## Q175088: Bookshelf 98: Quick Zip Code Returns Different Results
 
+{% raw %}
+
 	Article: Q175088
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:; WINDOWS:
@@ -47,3 +49,5 @@ permalink: /kb/175/Q175088/
 	
 	=============================================================================
 	
+
+{% endraw %}

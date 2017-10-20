@@ -6,6 +6,8 @@ permalink: /kb/234/Q234639/
 
 ## Q234639: XFOR: Server Location and the Internet Mail Service
 
+{% raw %}
+
 	Article: Q234639
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -122,3 +124,5 @@ permalink: /kb/234/Q234639/
 	
 	=============================================================================
 	
+
+{% endraw %}

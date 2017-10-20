@@ -6,6 +6,8 @@ permalink: /kb/216/Q216181/
 
 ## Q216181: FIX: Incorrect Code Generated with /Og Optimization
 
+{% raw %}
+
 	Article: Q216181
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:6.0
@@ -89,3 +91,5 @@ permalink: /kb/216/Q216181/
 	
 	=============================================================================
 	
+
+{% endraw %}

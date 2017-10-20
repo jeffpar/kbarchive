@@ -6,6 +6,8 @@ permalink: /kb/185/Q185821/
 
 ## Q185821: Ident.exe Retrieves @@IDENTITY From ODBC Inserts
 
+{% raw %}
+
 	Article: Q185821
 	Product(s): Microsoft C Compiler
 	Version(s): 2.5,2.6,3.5,3.6,5.0,6.0
@@ -167,3 +169,5 @@ permalink: /kb/185/Q185821/
 	
 	=============================================================================
 	
+
+{% endraw %}

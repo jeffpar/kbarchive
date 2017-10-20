@@ -6,6 +6,8 @@ permalink: /kb/181/Q181511/
 
 ## Q181511: FIX: Custom AppWizard May Ignore Changes to Predefined Macros
 
+{% raw %}
+
 	Article: Q181511
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:4.0,4.1,4.2
@@ -121,3 +123,5 @@ permalink: /kb/181/Q181511/
 	
 	=============================================================================
 	
+
+{% endraw %}

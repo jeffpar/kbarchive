@@ -6,6 +6,8 @@ permalink: /kb/131/Q131519/
 
 ## Q131519: Century Information Lost with m/d/yy Date Format
 
+{% raw %}
+
 	Article: Q131519
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -65,3 +67,5 @@ permalink: /kb/131/Q131519/
 	
 	=============================================================================
 	
+
+{% endraw %}

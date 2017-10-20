@@ -6,6 +6,8 @@ permalink: /kb/163/Q163213/
 
 ## Q163213: WebSTONE Benchmark of IIS May Show Poor Results for MP Systems
 
+{% raw %}
+
 	Article: Q163213
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/163/Q163213/
 	
 	=============================================================================
 	
+
+{% endraw %}

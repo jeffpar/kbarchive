@@ -6,6 +6,8 @@ permalink: /kb/119/Q119853/
 
 ## Q119853: INFO: PC Hangs While Running a Communications Application
 
+{% raw %}
+
 	Article: Q119853
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -90,3 +92,5 @@ permalink: /kb/119/Q119853/
 	
 	=============================================================================
 	
+
+{% endraw %}

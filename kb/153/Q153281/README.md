@@ -6,6 +6,8 @@ permalink: /kb/153/Q153281/
 
 ## Q153281: XLCN: MAPIForm and MSRichEd VBX's Not For Use Outside of Forms
 
+{% raw %}
+
 	Article: Q153281
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -41,3 +43,5 @@ permalink: /kb/153/Q153281/
 	
 	=============================================================================
 	
+
+{% endraw %}

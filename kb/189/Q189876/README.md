@@ -6,6 +6,8 @@ permalink: /kb/189/Q189876/
 
 ## Q189876: FP: FrontPage Personal Web Server Not Designed for Dedicated Use
 
+{% raw %}
+
 	Article: Q189876
 	Product(s): Word Front Page
 	Version(s): WINDOWS:1.0,1.1,97
@@ -68,3 +70,5 @@ permalink: /kb/189/Q189876/
 	
 	=============================================================================
 	
+
+{% endraw %}

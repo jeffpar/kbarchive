@@ -6,6 +6,8 @@ permalink: /kb/094/Q94751/
 
 ## Q94751: FIX: ORG Behavior Different with Span-Dependent Value
 
+{% raw %}
+
 	Article: Q94751
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -91,3 +93,5 @@ permalink: /kb/094/Q94751/
 	
 	=============================================================================
 	
+
+{% endraw %}

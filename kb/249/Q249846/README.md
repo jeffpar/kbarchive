@@ -6,6 +6,8 @@ permalink: /kb/249/Q249846/
 
 ## Q249846: PRB: Event ID 4250 When Calling Queued Components
 
+{% raw %}
+
 	Article: Q249846
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,6.0
@@ -95,3 +97,5 @@ permalink: /kb/249/Q249846/
 	
 	=============================================================================
 	
+
+{% endraw %}

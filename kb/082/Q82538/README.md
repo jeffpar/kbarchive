@@ -6,6 +6,8 @@ permalink: /kb/082/Q82538/
 
 ## Q82538: WinSleuth Causes a GP Fault When Started
 
+{% raw %}
+
 	Article: Q82538
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -35,3 +37,5 @@ permalink: /kb/082/Q82538/
 	
 	=============================================================================
 	
+
+{% endraw %}

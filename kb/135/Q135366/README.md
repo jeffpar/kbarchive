@@ -6,6 +6,8 @@ permalink: /kb/135/Q135366/
 
 ## Q135366: Garbled Output from HP DeskJet Printer Connected to ECP Port
 
+{% raw %}
+
 	Article: Q135366
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -60,3 +62,5 @@ permalink: /kb/135/Q135366/
 	
 	=============================================================================
 	
+
+{% endraw %}

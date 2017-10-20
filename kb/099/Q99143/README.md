@@ -6,6 +6,8 @@ permalink: /kb/099/Q99143/
 
 ## Q99143: Running ftp from Remote Boot Workstation
 
+{% raw %}
+
 	Article: Q99143
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/099/Q99143/
 	
 	=============================================================================
 	
+
+{% endraw %}

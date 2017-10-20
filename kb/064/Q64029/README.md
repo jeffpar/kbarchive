@@ -6,6 +6,8 @@ permalink: /kb/064/Q64029/
 
 ## Q64029: MS-DOS 3.20 Patch Is Missing from C Version 6.00
 
+{% raw %}
+
 	Article: Q64029
 	Product(s): See article
 	Version(s): 6.00
@@ -35,3 +37,5 @@ permalink: /kb/064/Q64029/
 	The IBM-DOS version 3.20 patch files are included with the Microsoft C
 	Compiler version 6.00.
 	`
+
+{% endraw %}

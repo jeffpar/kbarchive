@@ -6,6 +6,8 @@ permalink: /kb/174/Q174534/
 
 ## Q174534: BitBlt May Not Work When Raster Operation Mode Is NOTSRCCOPY
 
+{% raw %}
+
 	Article: Q174534
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -69,3 +71,5 @@ permalink: /kb/174/Q174534/
 	
 	=============================================================================
 	
+
+{% endraw %}

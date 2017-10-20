@@ -6,6 +6,8 @@ permalink: /kb/271/Q271208/
 
 ## Q271208: BUG: Crash in Mfc42(d).dll During Process Exit on Windows 95, W
 
+{% raw %}
+
 	Article: Q271208
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -104,3 +106,5 @@ permalink: /kb/271/Q271208/
 	
 	=============================================================================
 	
+
+{% endraw %}

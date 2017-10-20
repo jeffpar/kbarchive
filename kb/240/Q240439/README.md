@@ -6,6 +6,8 @@ permalink: /kb/240/Q240439/
 
 ## Q240439: XFOR: Host Messages Backed Up on OV/VM Connector
 
+{% raw %}
+
 	Article: Q240439
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -88,3 +90,5 @@ permalink: /kb/240/Q240439/
 	
 	=============================================================================
 	
+
+{% endraw %}

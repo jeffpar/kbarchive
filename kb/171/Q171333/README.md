@@ -6,6 +6,8 @@ permalink: /kb/171/Q171333/
 
 ## Q171333: WD97: Skip Numbering and Stop Numbering Not on Shortcut Menu
 
+{% raw %}
+
 	Article: Q171333
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -146,3 +148,5 @@ permalink: /kb/171/Q171333/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104869/
 
 ## Q104869: PC Adm: Err Msg: Import Error &#91;72&#93; Fullname Is Too Long
 
+{% raw %}
+
 	Article: Q104869
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.0b,3.2
@@ -69,3 +71,5 @@ permalink: /kb/104/Q104869/
 	
 	=============================================================================
 	
+
+{% endraw %}

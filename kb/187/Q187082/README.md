@@ -6,6 +6,8 @@ permalink: /kb/187/Q187082/
 
 ## Q187082: BackOffice 4.0 Exchange Setup Fails
 
+{% raw %}
+
 	Article: Q187082
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/187/Q187082/
 	
 	=============================================================================
 	
+
+{% endraw %}

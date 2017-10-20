@@ -6,6 +6,8 @@ permalink: /kb/186/Q186380/
 
 ## Q186380: BUG: Error When Using Table Aliases with Oracle ODBC Driver
 
+{% raw %}
+
 	Article: Q186380
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5,Build 2.573.2927,Build 2.73.7269,Build 2.73.7283.01,Build 2.73.7283.03
@@ -98,3 +100,5 @@ permalink: /kb/186/Q186380/
 	
 	=============================================================================
 	
+
+{% endraw %}

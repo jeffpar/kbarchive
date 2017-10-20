@@ -6,6 +6,8 @@ permalink: /kb/168/Q168858/
 
 ## Q168858: XGEN: How to Obtain Exchange Server 5.0 U.S. Service Pack 2
 
+{% raw %}
+
 	Article: Q168858
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -154,3 +156,5 @@ permalink: /kb/168/Q168858/
 	
 	=============================================================================
 	
+
+{% endraw %}

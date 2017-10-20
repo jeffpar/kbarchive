@@ -6,6 +6,8 @@ permalink: /kb/124/Q124082/
 
 ## Q124082: Remote Control Causes GP Fault on Windows 95 Client
 
+{% raw %}
+
 	Article: Q124082
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.1
@@ -46,3 +48,5 @@ permalink: /kb/124/Q124082/
 	
 	=============================================================================
 	
+
+{% endraw %}

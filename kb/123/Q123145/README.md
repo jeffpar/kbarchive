@@ -6,6 +6,8 @@ permalink: /kb/123/Q123145/
 
 ## Q123145: Changing the Keyboard in Arabic, Hebrew, &amp; Greek Windows
 
+{% raw %}
+
 	Article: Q123145
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -47,3 +49,5 @@ permalink: /kb/123/Q123145/
 	
 	=============================================================================
 	
+
+{% endraw %}

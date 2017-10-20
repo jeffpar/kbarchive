@@ -6,6 +6,8 @@ permalink: /kb/142/Q142646/
 
 ## Q142646: Upgrading to SP4 Can Overwrite Newer Verions of Oleaut32.dll
 
+{% raw %}
+
 	Article: Q142646
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -77,3 +79,5 @@ permalink: /kb/142/Q142646/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/031/Q31161/
 
 ## Q31161: LINE INPUT Avoids INPUT Statement's &quot;Redo from Start&quot; Error
 
+{% raw %}
+
 	Article: Q31161
 	Product(s): See article
 	Version(s): 1.00 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -42,3 +44,5 @@ permalink: /kb/031/Q31161/
 	6. Microsoft BASIC Compiler Version 1.00 for the Apple Macintosh
 	
 	7. QuickBASIC Version 1.00 for the Apple Macintosh
+
+{% endraw %}

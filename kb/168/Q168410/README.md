@@ -6,6 +6,8 @@ permalink: /kb/168/Q168410/
 
 ## Q168410: FIX: Dependency Information Is Lost After Workspace Is Closed
 
+{% raw %}
+
 	Article: Q168410
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -66,3 +68,5 @@ permalink: /kb/168/Q168410/
 	
 	=============================================================================
 	
+
+{% endraw %}

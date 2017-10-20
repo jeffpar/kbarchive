@@ -6,6 +6,8 @@ permalink: /kb/150/Q150198/
 
 ## Q150198: Bus Contention and PCI, EISA, and ISA
 
+{% raw %}
+
 	Article: Q150198
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -69,3 +71,5 @@ permalink: /kb/150/Q150198/
 	
 	=============================================================================
 	
+
+{% endraw %}

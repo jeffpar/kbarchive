@@ -6,6 +6,8 @@ permalink: /kb/092/Q92799/
 
 ## Q92799: Configuring the Buffer Size Used by the MCIWAVE Driver
 
+{% raw %}
+
 	Article: Q92799
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/092/Q92799/
 	
 	=============================================================================
 	
+
+{% endraw %}

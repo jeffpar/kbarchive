@@ -6,6 +6,8 @@ permalink: /kb/272/Q272676/
 
 ## Q272676: BUG: CComContainedObject::QueryInterface() Implementation Is Inc
 
+{% raw %}
+
 	Article: Q272676
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0
@@ -134,3 +136,5 @@ permalink: /kb/272/Q272676/
 	
 	=============================================================================
 	
+
+{% endraw %}

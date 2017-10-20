@@ -6,6 +6,8 @@ permalink: /kb/152/Q152807/
 
 ## Q152807: INFO: Error Messages from Analyze Tool of Visual SourceSafe
 
+{% raw %}
+
 	Article: Q152807
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,5.0,6.0
@@ -705,3 +707,5 @@ permalink: /kb/152/Q152807/
 	
 	=============================================================================
 	
+
+{% endraw %}

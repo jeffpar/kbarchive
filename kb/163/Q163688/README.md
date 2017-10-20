@@ -6,6 +6,8 @@ permalink: /kb/163/Q163688/
 
 ## Q163688: XCLN: Unable to Change Default Exchange Client Installation
 
+{% raw %}
+
 	Article: Q163688
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/163/Q163688/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136250/
 
 ## Q136250: HOWTO: Determine Visual Basic Trappable Errors
 
+{% raw %}
+
 	Article: Q136250
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -95,3 +97,5 @@ permalink: /kb/136/Q136250/
 	
 	=============================================================================
 	
+
+{% endraw %}

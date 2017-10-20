@@ -6,6 +6,8 @@ permalink: /kb/136/Q136044/
 
 ## Q136044: How to Make ImagEdit Create 16X16 Icons
 
+{% raw %}
+
 	Article: Q136044
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00b
@@ -51,3 +53,5 @@ permalink: /kb/136/Q136044/
 	
 	=============================================================================
 	
+
+{% endraw %}

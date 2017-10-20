@@ -6,6 +6,8 @@ permalink: /kb/142/Q142398/
 
 ## Q142398: How the Paint Event of a Form Works
 
+{% raw %}
+
 	Article: Q142398
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -74,3 +76,5 @@ permalink: /kb/142/Q142398/
 	
 	=============================================================================
 	
+
+{% endraw %}

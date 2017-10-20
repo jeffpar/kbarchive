@@ -6,6 +6,8 @@ permalink: /kb/136/Q136469/
 
 ## Q136469: Cannot Install WordPerfect Presentations 2.0
 
+{% raw %}
+
 	Article: Q136469
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -68,3 +70,5 @@ permalink: /kb/136/Q136469/
 	
 	=============================================================================
 	
+
+{% endraw %}

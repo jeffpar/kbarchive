@@ -6,6 +6,8 @@ permalink: /kb/153/Q153152/
 
 ## Q153152: How To Compile a CFM for Visual FoxPro/Mac with CodeWarrior
 
+{% raw %}
+
 	Article: Q153152
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -140,3 +142,5 @@ permalink: /kb/153/Q153152/
 	
 	=============================================================================
 	
+
+{% endraw %}

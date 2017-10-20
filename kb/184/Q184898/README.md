@@ -6,6 +6,8 @@ permalink: /kb/184/Q184898/
 
 ## Q184898: PRB: Can't Use Late Binding When Server Method Uses UDT
 
+{% raw %}
+
 	Article: Q184898
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -144,3 +146,5 @@ permalink: /kb/184/Q184898/
 	
 	=============================================================================
 	
+
+{% endraw %}

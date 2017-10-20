@@ -6,6 +6,8 @@ permalink: /kb/140/Q140012/
 
 ## Q140012: ScanDisk in Setup Does Not Scan DriveSpace 3 Drive's MDFAT
 
+{% raw %}
+
 	Article: Q140012
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -70,3 +72,5 @@ permalink: /kb/140/Q140012/
 	
 	=============================================================================
 	
+
+{% endraw %}

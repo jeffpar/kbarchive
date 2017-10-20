@@ -6,6 +6,8 @@ permalink: /kb/245/Q245231/
 
 ## Q245231: SNA Server and Mode Session Limit Errors
 
+{% raw %}
+
 	Article: Q245231
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 (all SP),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -73,3 +75,5 @@ permalink: /kb/245/Q245231/
 	
 	=============================================================================
 	
+
+{% endraw %}

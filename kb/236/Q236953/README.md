@@ -6,6 +6,8 @@ permalink: /kb/236/Q236953/
 
 ## Q236953: Printer Sessions Status Not Updated in SNA Manager
 
+{% raw %}
+
 	Article: Q236953
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1,4.0 SP2
@@ -64,3 +66,5 @@ permalink: /kb/236/Q236953/
 	
 	=============================================================================
 	
+
+{% endraw %}

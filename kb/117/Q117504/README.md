@@ -6,6 +6,8 @@ permalink: /kb/117/Q117504/
 
 ## Q117504: Prompted to Do Full Installation in Maintenance-Mode Setup
 
+{% raw %}
+
 	Article: Q117504
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -52,3 +54,5 @@ permalink: /kb/117/Q117504/
 	
 	=============================================================================
 	
+
+{% endraw %}

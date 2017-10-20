@@ -6,6 +6,8 @@ permalink: /kb/156/Q156923/
 
 ## Q156923: PRB: IMPORT FROM Paradox Fails on Numeric Fields on Macintosh
 
+{% raw %}
+
 	Article: Q156923
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -74,3 +76,5 @@ permalink: /kb/156/Q156923/
 	
 	=============================================================================
 	
+
+{% endraw %}

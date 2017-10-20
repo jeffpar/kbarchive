@@ -6,6 +6,8 @@ permalink: /kb/162/Q162657/
 
 ## Q162657: Choosing Default Domain Name for RAS Client Authentication
 
+{% raw %}
+
 	Article: Q162657
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/162/Q162657/
 	
 	=============================================================================
 	
+
+{% endraw %}

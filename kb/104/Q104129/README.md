@@ -6,6 +6,8 @@ permalink: /kb/104/Q104129/
 
 ## Q104129: PC WSPlus: Subject Field Incorrect for X.400 User
 
+{% raw %}
+
 	Article: Q104129
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -43,3 +45,5 @@ permalink: /kb/104/Q104129/
 	
 	=============================================================================
 	
+
+{% endraw %}

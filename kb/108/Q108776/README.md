@@ -6,6 +6,8 @@ permalink: /kb/108/Q108776/
 
 ## Q108776: Excel Prints at 300 DPI to HP LaserJet 4 Series Printers
 
+{% raw %}
+
 	Article: Q108776
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): 3.1,4.0,4.0a,7.0
@@ -63,3 +65,5 @@ permalink: /kb/108/Q108776/
 	
 	=============================================================================
 	
+
+{% endraw %}

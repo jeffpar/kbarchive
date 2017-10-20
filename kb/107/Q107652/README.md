@@ -6,6 +6,8 @@ permalink: /kb/107/Q107652/
 
 ## Q107652: Writer: Necessary Lantastic Network User Rights
 
+{% raw %}
+
 	Article: Q107652
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.00 1.10 1.10a
@@ -50,3 +52,5 @@ permalink: /kb/107/Q107652/
 	
 	=============================================================================
 	
+
+{% endraw %}

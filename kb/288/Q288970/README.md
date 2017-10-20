@@ -6,6 +6,8 @@ permalink: /kb/288/Q288970/
 
 ## Q288970: SMS: RM Can't Process Transactions if Trans. ID Isn't in Sync
 
+{% raw %}
+
 	Article: Q288970
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -148,3 +150,5 @@ permalink: /kb/288/Q288970/
 	
 	=============================================================================
 	
+
+{% endraw %}

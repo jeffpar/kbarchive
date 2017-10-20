@@ -6,6 +6,8 @@ permalink: /kb/244/Q244906/
 
 ## Q244906: Deny Access to Programs with Software Metering in Offline Mode
 
+{% raw %}
+
 	Article: Q244906
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -51,3 +53,5 @@ permalink: /kb/244/Q244906/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231612/
 
 ## Q231612: HOWTO: Use a SourceSafe Database with Multiple Web Servers
 
+{% raw %}
+
 	Article: Q231612
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:1.0,5.0,6.0
@@ -147,3 +149,5 @@ permalink: /kb/231/Q231612/
 	
 	=============================================================================
 	
+
+{% endraw %}

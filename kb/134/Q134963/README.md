@@ -6,6 +6,8 @@ permalink: /kb/134/Q134963/
 
 ## Q134963: Quick Viewer Displays Garbled Fonts During Remote Control View
 
+{% raw %}
+
 	Article: Q134963
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -48,3 +50,5 @@ permalink: /kb/134/Q134963/
 	
 	=============================================================================
 	
+
+{% endraw %}

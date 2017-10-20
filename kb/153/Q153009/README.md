@@ -6,6 +6,8 @@ permalink: /kb/153/Q153009/
 
 ## Q153009: XCLN: Installing Microsoft Mail Service on Windows 3.x Client
 
+{% raw %}
+
 	Article: Q153009
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -62,3 +64,5 @@ permalink: /kb/153/Q153009/
 	
 	=============================================================================
 	
+
+{% endraw %}

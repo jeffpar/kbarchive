@@ -6,6 +6,8 @@ permalink: /kb/238/Q238386/
 
 ## Q238386: XADM: High Network Use When Generating Address Book View
 
+{% raw %}
+
 	Article: Q238386
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -54,3 +56,5 @@ permalink: /kb/238/Q238386/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180121/
 
 ## Q180121: XCLN: Agents Tab Is Missing from Folder Properties
 
+{% raw %}
+
 	Article: Q180121
 	Product(s): Microsoft Exchange
 	Version(s): 8.03
@@ -140,3 +142,5 @@ permalink: /kb/180/Q180121/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173009/
 
 ## Q173009: FIX: Run-Time Error 87 Using RegEnumValue Function
 
+{% raw %}
+
 	Article: Q173009
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -98,3 +100,5 @@ permalink: /kb/173/Q173009/
 	
 	=============================================================================
 	
+
+{% endraw %}

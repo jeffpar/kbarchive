@@ -6,6 +6,8 @@ permalink: /kb/221/Q221733/
 
 ## Q221733: FIX: C0000005 Fatal Error With French Wizstyle Baseform Class
 
+{% raw %}
+
 	Article: Q221733
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -78,3 +80,5 @@ permalink: /kb/221/Q221733/
 	
 	=============================================================================
 	
+
+{% endraw %}

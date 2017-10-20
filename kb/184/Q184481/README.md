@@ -6,6 +6,8 @@ permalink: /kb/184/Q184481/
 
 ## Q184481: XCON: MTACheck Causes Access Violation
 
+{% raw %}
+
 	Article: Q184481
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -124,3 +126,5 @@ permalink: /kb/184/Q184481/
 	
 	=============================================================================
 	
+
+{% endraw %}

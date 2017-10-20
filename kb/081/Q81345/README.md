@@ -6,6 +6,8 @@ permalink: /kb/081/Q81345/
 
 ## Q81345: Mac Fax: Fax Gateway and Fax Modem ROM Incompatibilities
 
+{% raw %}
+
 	Article: Q81345
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.x,3.0
@@ -70,3 +72,5 @@ permalink: /kb/081/Q81345/
 	
 	=============================================================================
 	
+
+{% endraw %}

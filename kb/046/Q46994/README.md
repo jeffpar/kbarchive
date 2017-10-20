@@ -6,6 +6,8 @@ permalink: /kb/046/Q46994/
 
 ## Q46994: Internal Compiler Error: grammar.c:1.29, Line 108
 
+{% raw %}
+
 	Article: Q46994
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -57,3 +59,5 @@ permalink: /kb/046/Q46994/
 	    temp = call[0]();
 	    printf("%lf\n", temp );
 	}
+
+{% endraw %}

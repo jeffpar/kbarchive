@@ -6,6 +6,8 @@ permalink: /kb/257/Q257901/
 
 ## Q257901: How to Force the Cluster Service to Stop and Cause a Failover
 
+{% raw %}
+
 	Article: Q257901
 	Product(s): Microsoft Windows NT
 	Version(s): 1.1,2000,4.0
@@ -52,3 +54,5 @@ permalink: /kb/257/Q257901/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119575/
 
 ## Q119575: TCP/IP-32 Winsock Stops FD_READ Notification
 
+{% raw %}
+
 	Article: Q119575
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -38,3 +40,5 @@ permalink: /kb/119/Q119575/
 	
 	=============================================================================
 	
+
+{% endraw %}

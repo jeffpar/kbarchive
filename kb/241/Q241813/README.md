@@ -6,6 +6,8 @@ permalink: /kb/241/Q241813/
 
 ## Q241813: 1106: SNMP Service Is Ignoring Extension Agent DLL W3pmib.dll
 
+{% raw %}
+
 	Article: Q241813
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:2.0,4.0
@@ -79,3 +81,5 @@ permalink: /kb/241/Q241813/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199357/
 
 ## Q199357: SMS: Common Issues and Resolutions for Crystal Info Reports
 
+{% raw %}
+
 	Article: Q199357
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -99,3 +101,5 @@ permalink: /kb/199/Q199357/
 	
 	=============================================================================
 	
+
+{% endraw %}

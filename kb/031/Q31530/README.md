@@ -6,6 +6,8 @@ permalink: /kb/031/Q31530/
 
 ## Q31530: MASM 5.10 EXT.DOC: PutLine - Places Line of Text in File
 
+{% raw %}
+
 	Article: Q31530
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -35,3 +37,5 @@ permalink: /kb/031/Q31530/
 	LINE line;
 	char far *buf;
 	PFILE pfile;
+
+{% endraw %}

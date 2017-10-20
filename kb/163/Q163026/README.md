@@ -6,6 +6,8 @@ permalink: /kb/163/Q163026/
 
 ## Q163026: FIX: OLE Automation with MS Project Depletes User Resources
 
+{% raw %}
+
 	Article: Q163026
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b 4.10a 5.00
@@ -129,3 +131,5 @@ permalink: /kb/163/Q163026/
 	
 	=============================================================================
 	
+
+{% endraw %}

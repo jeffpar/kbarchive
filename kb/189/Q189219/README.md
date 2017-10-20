@@ -6,6 +6,8 @@ permalink: /kb/189/Q189219/
 
 ## Q189219: Internet Explorer Resource Kit Comments &amp; Corrections
 
+{% raw %}
+
 	Article: Q189219
 	Product(s): Microsoft Press
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/189/Q189219/
 	
 	=============================================================================
 	
+
+{% endraw %}

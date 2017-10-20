@@ -6,6 +6,8 @@ permalink: /kb/282/Q282062/
 
 ## Q282062: IIS Does Not Authenticate for the /_AuthChangeUrl URL
 
+{% raw %}
+
 	Article: Q282062
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -77,3 +79,5 @@ permalink: /kb/282/Q282062/
 	
 	=============================================================================
 	
+
+{% endraw %}

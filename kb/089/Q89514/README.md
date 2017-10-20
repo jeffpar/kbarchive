@@ -6,6 +6,8 @@ permalink: /kb/089/Q89514/
 
 ## Q89514: LAN Man 2.1 Test Summary (DigiBoard DigiCHANNEL PC/16e)
 
+{% raw %}
+
 	Article: Q89514
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/089/Q89514/
 	
 	=============================================================================
 	
+
+{% endraw %}

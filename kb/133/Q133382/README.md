@@ -6,6 +6,8 @@ permalink: /kb/133/Q133382/
 
 ## Q133382: Unable to Detect Storage Devices on Compaq Proliant 4500
 
+{% raw %}
+
 	Article: Q133382
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -69,3 +71,5 @@ permalink: /kb/133/Q133382/
 	
 	=============================================================================
 	
+
+{% endraw %}

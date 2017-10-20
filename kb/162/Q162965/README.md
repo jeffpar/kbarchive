@@ -6,6 +6,8 @@ permalink: /kb/162/Q162965/
 
 ## Q162965: ODE97: &quot;Setup Error 993&quot; Reinstalling MS ODE Tools Sampler
 
+{% raw %}
+
 	Article: Q162965
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -109,3 +111,5 @@ permalink: /kb/162/Q162965/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/035/Q35667/
 
 ## Q35667: OP Parameter Fails to Make OPEN &quot;COM1:&quot; Wait Indefinitely
 
+{% raw %}
+
 	Article: Q35667
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -65,3 +67,5 @@ permalink: /kb/035/Q35667/
 	                PRINT "fatal error abort"
 	                END
 	        END IF
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168053/
 
 ## Q168053: HOWTO: Use VFP Automation Servers with Active Server Pages
 
+{% raw %}
+
 	Article: Q168053
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -114,3 +116,5 @@ permalink: /kb/168/Q168053/
 	
 	=============================================================================
 	
+
+{% endraw %}

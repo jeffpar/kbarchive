@@ -6,6 +6,8 @@ permalink: /kb/216/Q216744/
 
 ## Q216744: SMS: APM Detects Non-Zero Exit Code as a Failed Advertisement
 
+{% raw %}
+
 	Article: Q216744
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -86,3 +88,5 @@ permalink: /kb/216/Q216744/
 	
 	=============================================================================
 	
+
+{% endraw %}

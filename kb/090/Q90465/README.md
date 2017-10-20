@@ -6,6 +6,8 @@ permalink: /kb/090/Q90465/
 
 ## Q90465: WinLogin Support Policies
 
+{% raw %}
+
 	Article: Q90465
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -82,3 +84,5 @@ permalink: /kb/090/Q90465/
 	
 	=============================================================================
 	
+
+{% endraw %}

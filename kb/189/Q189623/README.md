@@ -6,6 +6,8 @@ permalink: /kb/189/Q189623/
 
 ## Q189623: HOWTO: Give Descriptions to Private Procedures
 
+{% raw %}
+
 	Article: Q189623
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -87,3 +89,5 @@ permalink: /kb/189/Q189623/
 	
 	=============================================================================
 	
+
+{% endraw %}

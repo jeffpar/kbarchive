@@ -6,6 +6,8 @@ permalink: /kb/094/Q94339/
 
 ## Q94339: Using FoxPro to Check for Existence of a Directory
 
+{% raw %}
+
 	Article: Q94339
 	Product(s): Microsoft FoxPro
 	Version(s): 2.00 2.50 2.50a | 2.50 2.50a 3.0
@@ -95,3 +97,5 @@ permalink: /kb/094/Q94339/
 	
 	=============================================================================
 	
+
+{% endraw %}

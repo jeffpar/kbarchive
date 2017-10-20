@@ -6,6 +6,8 @@ permalink: /kb/181/Q181928/
 
 ## Q181928: Using POLEDIT to Save Policy Files on NetWare Servers May Fail
 
+{% raw %}
+
 	Article: Q181928
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/181/Q181928/
 	
 	=============================================================================
 	
+
+{% endraw %}

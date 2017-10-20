@@ -6,6 +6,8 @@ permalink: /kb/151/Q151990/
 
 ## Q151990: Mail Client Incorrectly Resolves Names with Extended Characters
 
+{% raw %}
+
 	Article: Q151990
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -67,3 +69,5 @@ permalink: /kb/151/Q151990/
 	
 	=============================================================================
 	
+
+{% endraw %}

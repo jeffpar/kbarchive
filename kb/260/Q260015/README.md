@@ -6,6 +6,8 @@ permalink: /kb/260/Q260015/
 
 ## Q260015: PC DirSync: Dispatch Does Not Work on Windows 2000
 
+{% raw %}
+
 	Article: Q260015
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.x
@@ -53,3 +55,5 @@ permalink: /kb/260/Q260015/
 	
 	=============================================================================
 	
+
+{% endraw %}

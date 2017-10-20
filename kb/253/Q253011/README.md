@@ -6,6 +6,8 @@ permalink: /kb/253/Q253011/
 
 ## Q253011: XFOR: Exchange Notes Connector Doesn't Use StartDate Property
 
+{% raw %}
+
 	Article: Q253011
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -62,3 +64,5 @@ permalink: /kb/253/Q253011/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154046/
 
 ## Q154046: HOWTO: Use the ODBC API Function SQLExecDirect with RDO
 
+{% raw %}
+
 	Article: Q154046
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -130,3 +132,5 @@ permalink: /kb/154/Q154046/
 	
 	=============================================================================
 	
+
+{% endraw %}

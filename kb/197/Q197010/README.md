@@ -6,6 +6,8 @@ permalink: /kb/197/Q197010/
 
 ## Q197010: WD97: Drop Cap (Framed Paragraph) Causes Unwanted Behavior
 
+{% raw %}
+
 	Article: Q197010
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -81,3 +83,5 @@ permalink: /kb/197/Q197010/
 	
 	=============================================================================
 	
+
+{% endraw %}

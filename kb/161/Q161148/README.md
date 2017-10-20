@@ -6,6 +6,8 @@ permalink: /kb/161/Q161148/
 
 ## Q161148: PRB: ActiveX Control Click Event Not Firing When Form Is Modal
 
+{% raw %}
+
 	Article: Q161148
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/161/Q161148/
 	
 	=============================================================================
 	
+
+{% endraw %}

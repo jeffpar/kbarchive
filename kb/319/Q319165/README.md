@@ -6,6 +6,8 @@ permalink: /kb/319/Q319165/
 
 ## Q319165: Documentation Error in Host Integration Server 2000 SDK
 
+{% raw %}
+
 	Article: Q319165
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/319/Q319165/
 	
 	=============================================================================
 	
+
+{% endraw %}

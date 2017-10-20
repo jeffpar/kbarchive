@@ -6,6 +6,8 @@ permalink: /kb/136/Q136965/
 
 ## Q136965: SETUP.TXT Incorrectly States to Run UPDATE.EXE on Windows NT 3.5
 
+{% raw %}
+
 	Article: Q136965
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/136/Q136965/
 	
 	=============================================================================
 	
+
+{% endraw %}

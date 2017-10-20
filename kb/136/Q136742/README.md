@@ -6,6 +6,8 @@ permalink: /kb/136/Q136742/
 
 ## Q136742: Drives Use MS-DOS Compatibility Mode with Iomega Zip Drive
 
+{% raw %}
+
 	Article: Q136742
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -70,3 +72,5 @@ permalink: /kb/136/Q136742/
 	
 	=============================================================================
 	
+
+{% endraw %}

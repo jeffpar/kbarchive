@@ -6,6 +6,8 @@ permalink: /kb/174/Q174152/
 
 ## Q174152: XADM: Exchange Does not Support AUTH-LOGIN Authentication
 
+{% raw %}
+
 	Article: Q174152
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -50,3 +52,5 @@ permalink: /kb/174/Q174152/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/257/Q257550/
 
 ## Q257550: FIX: An Invalid Page Fault Error Occurs When You Use DataReport
 
+{% raw %}
+
 	Article: Q257550
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -57,3 +59,5 @@ permalink: /kb/257/Q257550/
 	
 	=============================================================================
 	
+
+{% endraw %}

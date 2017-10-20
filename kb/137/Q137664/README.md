@@ -6,6 +6,8 @@ permalink: /kb/137/Q137664/
 
 ## Q137664: BUG: Number of Lines on First Page of Listing File Incorrect
 
+{% raw %}
+
 	Article: Q137664
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0x,6.11x,6.1x
@@ -63,3 +65,5 @@ permalink: /kb/137/Q137664/
 	
 	=============================================================================
 	
+
+{% endraw %}

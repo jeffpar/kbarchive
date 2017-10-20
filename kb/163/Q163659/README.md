@@ -6,6 +6,8 @@ permalink: /kb/163/Q163659/
 
 ## Q163659: WD97: Deleted Text from Tracked Changes Appears in HTML
 
+{% raw %}
+
 	Article: Q163659
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/163/Q163659/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/259/Q259276/
 
 ## Q259276: PC Win: Personal Name Field in nNw PAB Entry Cannot Be Modified
 
+{% raw %}
+
 	Article: Q259276
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -155,3 +157,5 @@ permalink: /kb/259/Q259276/
 	
 	=============================================================================
 	
+
+{% endraw %}

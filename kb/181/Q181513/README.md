@@ -6,6 +6,8 @@ permalink: /kb/181/Q181513/
 
 ## Q181513: XCON: MTA DRAS Connection Terminates With 1294 and 9316 Events
 
+{% raw %}
+
 	Article: Q181513
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -71,3 +73,5 @@ permalink: /kb/181/Q181513/
 	
 	=============================================================================
 	
+
+{% endraw %}

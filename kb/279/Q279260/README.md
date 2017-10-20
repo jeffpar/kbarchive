@@ -6,6 +6,8 @@ permalink: /kb/279/Q279260/
 
 ## Q279260: Asynch ACTIVATE/DEACTIVATE_SESSION May Complete Three Times
 
+{% raw %}
+
 	Article: Q279260
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP3
@@ -56,3 +58,5 @@ permalink: /kb/279/Q279260/
 	
 	=============================================================================
 	
+
+{% endraw %}

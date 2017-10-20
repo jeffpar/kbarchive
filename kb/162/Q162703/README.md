@@ -6,6 +6,8 @@ permalink: /kb/162/Q162703/
 
 ## Q162703: XCLN: OST Synch Problem After Org Forms Library Deleted
 
+{% raw %}
+
 	Article: Q162703
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; winnt:4.0,5.0,5.5
@@ -102,3 +104,5 @@ permalink: /kb/162/Q162703/
 	
 	=============================================================================
 	
+
+{% endraw %}

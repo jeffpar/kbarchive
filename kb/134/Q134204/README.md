@@ -6,6 +6,8 @@ permalink: /kb/134/Q134204/
 
 ## Q134204: PC Win: How to Export a Personal Address Book to a New MMF
 
+{% raw %}
+
 	Article: Q134204
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -71,3 +73,5 @@ permalink: /kb/134/Q134204/
 	
 	=============================================================================
 	
+
+{% endraw %}

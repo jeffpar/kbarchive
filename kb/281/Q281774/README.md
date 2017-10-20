@@ -6,6 +6,8 @@ permalink: /kb/281/Q281774/
 
 ## Q281774: Install Eicon S-51 Link Service in Windows 2000
 
+{% raw %}
+
 	Article: Q281774
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP3,4.0 SP4
@@ -118,3 +120,5 @@ permalink: /kb/281/Q281774/
 	
 	=============================================================================
 	
+
+{% endraw %}

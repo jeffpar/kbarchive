@@ -6,6 +6,8 @@ permalink: /kb/088/Q88736/
 
 ## Q88736: Software Labs Fonts May Cause Crosslinked Files
 
+{% raw %}
+
 	Article: Q88736
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a,3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/088/Q88736/
 	
 	=============================================================================
 	
+
+{% endraw %}

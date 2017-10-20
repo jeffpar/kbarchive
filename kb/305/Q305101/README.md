@@ -6,6 +6,8 @@ permalink: /kb/305/Q305101/
 
 ## Q305101: BUG: VB Modal Form Freezes When Called from DataGrid Click Event
 
+{% raw %}
+
 	Article: Q305101
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0,6.0 SP3,6.0 SP4,6.0 SP5
@@ -85,3 +87,5 @@ permalink: /kb/305/Q305101/
 	
 	=============================================================================
 	
+
+{% endraw %}

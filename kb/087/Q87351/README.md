@@ -6,6 +6,8 @@ permalink: /kb/087/Q87351/
 
 ## Q87351: BUG: Scrolling DIB DC Fails
 
+{% raw %}
+
 	Article: Q87351
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -49,3 +51,5 @@ permalink: /kb/087/Q87351/
 	
 	=============================================================================
 	
+
+{% endraw %}

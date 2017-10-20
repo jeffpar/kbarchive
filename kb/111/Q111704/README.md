@@ -6,6 +6,8 @@ permalink: /kb/111/Q111704/
 
 ## Q111704: PC WRmt: Mail Remote MSRMT.DLL Version 3.2.4013 Update
 
+{% raw %}
+
 	Article: Q111704
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -121,3 +123,5 @@ permalink: /kb/111/Q111704/
 	
 	=============================================================================
 	
+
+{% endraw %}

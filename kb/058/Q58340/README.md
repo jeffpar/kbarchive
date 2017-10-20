@@ -6,6 +6,8 @@ permalink: /kb/058/Q58340/
 
 ## Q58340: Contents of Windows 3.0 SYSINI.TXT
 
+{% raw %}
+
 	Article: Q58340
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -183,3 +185,5 @@ permalink: /kb/058/Q58340/
 	
 	=============================================================================
 	
+
+{% endraw %}

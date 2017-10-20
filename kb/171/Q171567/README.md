@@ -6,6 +6,8 @@ permalink: /kb/171/Q171567/
 
 ## Q171567: Windows NT 4.0 ServiceProvider Priority Values Not Applied
 
+{% raw %}
+
 	Article: Q171567
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -97,3 +99,5 @@ permalink: /kb/171/Q171567/
 	
 	=============================================================================
 	
+
+{% endraw %}

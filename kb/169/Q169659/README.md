@@ -6,6 +6,8 @@ permalink: /kb/169/Q169659/
 
 ## Q169659: XFOR: Err Msg: AppleTalk Mail Connector Service Not Created.
 
+{% raw %}
+
 	Article: Q169659
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -79,3 +81,5 @@ permalink: /kb/169/Q169659/
 	
 	=============================================================================
 	
+
+{% endraw %}

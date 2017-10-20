@@ -6,6 +6,8 @@ permalink: /kb/159/Q159515/
 
 ## Q159515: Encarta 97: Black screen or Flydown Menus Don't Drop
 
+{% raw %}
+
 	Article: Q159515
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.1,3.11
@@ -86,3 +88,5 @@ permalink: /kb/159/Q159515/
 	
 	=============================================================================
 	
+
+{% endraw %}

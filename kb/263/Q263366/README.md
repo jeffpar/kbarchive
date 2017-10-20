@@ -6,6 +6,8 @@ permalink: /kb/263/Q263366/
 
 ## Q263366: SMS: Performing a Site Reset or Modification Displays Warning
 
+{% raw %}
+
 	Article: Q263366
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -89,3 +91,5 @@ permalink: /kb/263/Q263366/
 	
 	=============================================================================
 	
+
+{% endraw %}

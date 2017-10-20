@@ -6,6 +6,8 @@ permalink: /kb/156/Q156005/
 
 ## Q156005: FIX: Incorrect Warning About Procedure/ Trigger Name Length
 
+{% raw %}
+
 	Article: Q156005
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.2
@@ -94,3 +96,5 @@ permalink: /kb/156/Q156005/
 	
 	=============================================================================
 	
+
+{% endraw %}

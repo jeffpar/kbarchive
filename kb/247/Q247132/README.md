@@ -6,6 +6,8 @@ permalink: /kb/247/Q247132/
 
 ## Q247132: HOW TO: Perform a Server-to-Server FTP Transfer by Using IIS
 
+{% raw %}
+
 	Article: Q247132
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -227,3 +229,5 @@ permalink: /kb/247/Q247132/
 	
 	=============================================================================
 	
+
+{% endraw %}

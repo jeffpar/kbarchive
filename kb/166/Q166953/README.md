@@ -6,6 +6,8 @@ permalink: /kb/166/Q166953/
 
 ## Q166953: WD97: Cannot Locate Msconv97.dll When Converting Files
 
+{% raw %}
+
 	Article: Q166953
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -150,3 +152,5 @@ permalink: /kb/166/Q166953/
 	
 	=============================================================================
 	
+
+{% endraw %}

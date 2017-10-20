@@ -6,6 +6,8 @@ permalink: /kb/196/Q196503/
 
 ## Q196503: WD97: Word Link to Microsoft Excel Shows Unexpected Information
 
+{% raw %}
+
 	Article: Q196503
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -93,3 +95,5 @@ permalink: /kb/196/Q196503/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/312/Q312443/
 
 ## Q312443: IMS Stops &amp; 3013 - The Outbound Message Queue Is Corrupt ErrMsg
 
+{% raw %}
+
 	Article: Q312443
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -54,3 +56,5 @@ permalink: /kb/312/Q312443/
 	
 	=============================================================================
 	
+
+{% endraw %}

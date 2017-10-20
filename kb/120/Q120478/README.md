@@ -6,6 +6,8 @@ permalink: /kb/120/Q120478/
 
 ## Q120478: Schubert: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q120478
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -175,3 +177,5 @@ permalink: /kb/120/Q120478/
 	
 	=============================================================================
 	
+
+{% endraw %}

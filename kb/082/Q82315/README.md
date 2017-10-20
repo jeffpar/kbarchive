@@ -6,6 +6,8 @@ permalink: /kb/082/Q82315/
 
 ## Q82315: Inconsistent Rotation Between Device and TrueType Fonts
 
+{% raw %}
+
 	Article: Q82315
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/082/Q82315/
 	
 	=============================================================================
 	
+
+{% endraw %}

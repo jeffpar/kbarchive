@@ -6,6 +6,8 @@ permalink: /kb/142/Q142736/
 
 ## Q142736: PRB: RETRY Command in Method Causes Visual FoxPro to Quit
 
+{% raw %}
+
 	Article: Q142736
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -78,3 +80,5 @@ permalink: /kb/142/Q142736/
 	
 	=============================================================================
 	
+
+{% endraw %}

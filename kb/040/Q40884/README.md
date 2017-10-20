@@ -6,6 +6,8 @@ permalink: /kb/040/Q40884/
 
 ## Q40884: Passing a LONG INTEGER Array to FORTRAN 4.10 From QuickBASIC
 
+{% raw %}
+
 	Article: Q40884
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -145,3 +147,5 @@ permalink: /kb/040/Q40884/
 	    37940       33524       13884       43346
 	    27709        3244         147       10789
 	    9183       19917       29339
+
+{% endraw %}

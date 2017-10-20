@@ -6,6 +6,8 @@ permalink: /kb/228/Q228943/
 
 ## Q228943: FIX: Degree of Derived Table Err Using Table Name in Select List
 
+{% raw %}
+
 	Article: Q228943
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.1,2.1 SP2,Build 2.573.2927,Build 2.573.3513,Build 2.573.3711
@@ -110,3 +112,5 @@ permalink: /kb/228/Q228943/
 	
 	=============================================================================
 	
+
+{% endraw %}

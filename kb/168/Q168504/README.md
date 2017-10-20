@@ -6,6 +6,8 @@ permalink: /kb/168/Q168504/
 
 ## Q168504: XGEN: DocErr: Set Archiving to None to Stop Archiving
 
+{% raw %}
+
 	Article: Q168504
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5,0
@@ -37,3 +39,5 @@ permalink: /kb/168/Q168504/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117329/
 
 ## Q117329: PC Adm: Running IMPORT.EXE under OS/2 with the -ST Parameter
 
+{% raw %}
+
 	Article: Q117329
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -64,3 +66,5 @@ permalink: /kb/117/Q117329/
 	
 	=============================================================================
 	
+
+{% endraw %}

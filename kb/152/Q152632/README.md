@@ -6,6 +6,8 @@ permalink: /kb/152/Q152632/
 
 ## Q152632: Remote Control Using IPX over Routers Fails with NAK
 
+{% raw %}
+
 	Article: Q152632
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -49,3 +51,5 @@ permalink: /kb/152/Q152632/
 	
 	=============================================================================
 	
+
+{% endraw %}

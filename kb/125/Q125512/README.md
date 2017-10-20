@@ -6,6 +6,8 @@ permalink: /kb/125/Q125512/
 
 ## Q125512: PC Adm: Changing Administrator Name Changes Keep Updates Field
 
+{% raw %}
+
 	Article: Q125512
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -53,3 +55,5 @@ permalink: /kb/125/Q125512/
 	
 	=============================================================================
 	
+
+{% endraw %}

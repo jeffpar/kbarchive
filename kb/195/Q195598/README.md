@@ -6,6 +6,8 @@ permalink: /kb/195/Q195598/
 
 ## Q195598: WD97: How to Use EQ Field to Place Box Around Characters
 
+{% raw %}
+
 	Article: Q195598
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -93,3 +95,5 @@ permalink: /kb/195/Q195598/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161269/
 
 ## Q161269: Encarta 97: Internet Explorer Doesn't Start in Online Library
 
+{% raw %}
+
 	Article: Q161269
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/161/Q161269/
 	
 	=============================================================================
 	
+
+{% endraw %}

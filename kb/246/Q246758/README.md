@@ -6,6 +6,8 @@ permalink: /kb/246/Q246758/
 
 ## Q246758: How to Monitor a Remote Computer Without Logging On to It
 
+{% raw %}
+
 	Article: Q246758
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -127,3 +129,5 @@ permalink: /kb/246/Q246758/
 	
 	=============================================================================
 	
+
+{% endraw %}

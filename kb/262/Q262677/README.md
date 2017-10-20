@@ -6,6 +6,8 @@ permalink: /kb/262/Q262677/
 
 ## Q262677: SMS: Clients Are Not Upgraded by Logon Points with SP2
 
+{% raw %}
+
 	Article: Q262677
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP2
@@ -64,3 +66,5 @@ permalink: /kb/262/Q262677/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/304/Q304373/
 
 ## Q304373: MapPoint 2002: System Requirements
 
+{% raw %}
+
 	Article: Q304373
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -110,3 +112,5 @@ permalink: /kb/304/Q304373/
 	
 	=============================================================================
 	
+
+{% endraw %}

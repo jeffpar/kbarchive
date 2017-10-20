@@ -6,6 +6,8 @@ permalink: /kb/142/Q142489/
 
 ## Q142489: Problems After Modifying Maximum Connections or Sockets Value
 
+{% raw %}
+
 	Article: Q142489
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -136,3 +138,5 @@ permalink: /kb/142/Q142489/
 	
 	=============================================================================
 	
+
+{% endraw %}

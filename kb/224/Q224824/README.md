@@ -6,6 +6,8 @@ permalink: /kb/224/Q224824/
 
 ## Q224824: Error Messsage: STOP 0xA in SYMC810.SYS
 
+{% raw %}
+
 	Article: Q224824
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -60,3 +62,5 @@ permalink: /kb/224/Q224824/
 	
 	=============================================================================
 	
+
+{% endraw %}

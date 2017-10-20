@@ -6,6 +6,8 @@ permalink: /kb/092/Q92611/
 
 ## Q92611: PRB: MASM Generates Unexpected Prefix Bytes 66h, 67h
 
+{% raw %}
+
 	Article: Q92611
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b
@@ -163,3 +165,5 @@ permalink: /kb/092/Q92611/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/255/Q255697/
 
 ## Q255697: XADM: How to Forward Mail from Exchange Mailbox to POP3 Address
 
+{% raw %}
+
 	Article: Q255697
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -80,3 +82,5 @@ permalink: /kb/255/Q255697/
 	
 	=============================================================================
 	
+
+{% endraw %}

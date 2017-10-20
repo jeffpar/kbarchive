@@ -6,6 +6,8 @@ permalink: /kb/069/Q69031/
 
 ## Q69031: Epson 9- and 24-Pin Drivers Print Landscape When in Portrait
 
+{% raw %}
+
 	Article: Q69031
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/069/Q69031/
 	
 	=============================================================================
 	
+
+{% endraw %}

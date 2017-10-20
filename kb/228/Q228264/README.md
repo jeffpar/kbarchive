@@ -6,6 +6,8 @@ permalink: /kb/228/Q228264/
 
 ## Q228264: Baseball 2000: Black Screen Displayed After Clicking &quot;Play Ball&quot;
 
+{% raw %}
+
 	Article: Q228264
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -80,3 +82,5 @@ permalink: /kb/228/Q228264/
 	
 	=============================================================================
 	
+
+{% endraw %}

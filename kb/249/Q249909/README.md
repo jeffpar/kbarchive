@@ -6,6 +6,8 @@ permalink: /kb/249/Q249909/
 
 ## Q249909: Error 5719 During Logon After Restarting a Cluster Server
 
+{% raw %}
+
 	Article: Q249909
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/249/Q249909/
 	
 	=============================================================================
 	
+
+{% endraw %}

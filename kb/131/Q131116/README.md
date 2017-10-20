@@ -6,6 +6,8 @@ permalink: /kb/131/Q131116/
 
 ## Q131116: PC Ext: Err Msg: Mail Was Received...Addressed to Unknown...
 
+{% raw %}
+
 	Article: Q131116
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -61,3 +63,5 @@ permalink: /kb/131/Q131116/
 	
 	=============================================================================
 	
+
+{% endraw %}

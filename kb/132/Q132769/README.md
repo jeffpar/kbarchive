@@ -6,6 +6,8 @@ permalink: /kb/132/Q132769/
 
 ## Q132769: Cannot Play Wave Files on HP Vectra with Sound Blaster
 
+{% raw %}
+
 	Article: Q132769
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/132/Q132769/
 	
 	=============================================================================
 	
+
+{% endraw %}

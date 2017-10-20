@@ -6,6 +6,8 @@ permalink: /kb/151/Q151824/
 
 ## Q151824: FoxPro Query May Return Inaccurate Results with FPNW
 
+{% raw %}
+
 	Article: Q151824
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -63,3 +65,5 @@ permalink: /kb/151/Q151824/
 	
 	=============================================================================
 	
+
+{% endraw %}

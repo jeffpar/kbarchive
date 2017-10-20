@@ -6,6 +6,8 @@ permalink: /kb/137/Q137380/
 
 ## Q137380: How Windows 95 Setup Handles SUBST, JOIN, APPEND, and ASSIGN
 
+{% raw %}
+
 	Article: Q137380
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -109,3 +111,5 @@ permalink: /kb/137/Q137380/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194840/
 
 ## Q194840: FIX: The &quot;&#42;&quot; Key Does Not Expand All ClassView Branches Properly
 
+{% raw %}
+
 	Article: Q194840
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -94,3 +96,5 @@ permalink: /kb/194/Q194840/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245014/
 
 ## Q245014: Err Msg: STOP 0xC0000263 Driver Entry Point Not Found.
 
+{% raw %}
+
 	Article: Q245014
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/245/Q245014/
 	
 	=============================================================================
 	
+
+{% endraw %}

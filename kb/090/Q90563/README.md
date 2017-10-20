@@ -6,6 +6,8 @@ permalink: /kb/090/Q90563/
 
 ## Q90563: Using the AdvancedSetUpDialog() Configuration Call
 
+{% raw %}
+
 	Article: Q90563
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.1
@@ -86,3 +88,5 @@ permalink: /kb/090/Q90563/
 	
 	=============================================================================
 	
+
+{% endraw %}

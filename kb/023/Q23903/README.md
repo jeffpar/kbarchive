@@ -6,6 +6,8 @@ permalink: /kb/023/Q23903/
 
 ## Q23903: Too Much Data or Mixing Memory Models Causes &quot;Fixup Overflow&quot;
 
+{% raw %}
+
 	Article: Q23903
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10 6.00 6.00a | 5.10 6.00 6.00a
@@ -40,3 +42,5 @@ permalink: /kb/023/Q23903/
 	the segment containing the near address comes before the segment using
 	it, or if it is more than 64K away from the start of the segment.
 	Removing the near keyword will correct the problem in this case.
+
+{% endraw %}

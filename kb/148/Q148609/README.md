@@ -6,6 +6,8 @@ permalink: /kb/148/Q148609/
 
 ## Q148609: BUG: GO TO Statement Syntax Coloring Fails in Developer Studio
 
+{% raw %}
+
 	Article: Q148609
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/148/Q148609/
 	
 	=============================================================================
 	
+
+{% endraw %}

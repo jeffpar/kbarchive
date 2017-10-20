@@ -6,6 +6,8 @@ permalink: /kb/221/Q221809/
 
 ## Q221809: Combat Flight Simulator: Computer Hangs When Airplane Crashes
 
+{% raw %}
+
 	Article: Q221809
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -58,3 +60,5 @@ permalink: /kb/221/Q221809/
 	
 	=============================================================================
 	
+
+{% endraw %}

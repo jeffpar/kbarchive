@@ -6,6 +6,8 @@ permalink: /kb/131/Q131683/
 
 ## Q131683: Help File Opens Very Slowly with Office 95 Applications
 
+{% raw %}
+
 	Article: Q131683
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/131/Q131683/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/233/Q233478/
 
 ## Q233478: FIX: VB6 Version of RDO Cannot Access Oracle Packages
 
+{% raw %}
+
 	Article: Q233478
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -74,3 +76,5 @@ permalink: /kb/233/Q233478/
 	
 	=============================================================================
 	
+
+{% endraw %}

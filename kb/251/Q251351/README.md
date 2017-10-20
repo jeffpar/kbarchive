@@ -6,6 +6,8 @@ permalink: /kb/251/Q251351/
 
 ## Q251351: Cannot View Files Other Than Bitmaps in Microsoft Paint
 
+{% raw %}
+
 	Article: Q251351
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000,4.0
@@ -57,3 +59,5 @@ permalink: /kb/251/Q251351/
 	
 	=============================================================================
 	
+
+{% endraw %}

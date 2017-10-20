@@ -6,6 +6,8 @@ permalink: /kb/184/Q184686/
 
 ## Q184686: HOWTO: Disable the Close Option on Control Menu of a VB Form
 
+{% raw %}
+
 	Article: Q184686
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -274,3 +276,5 @@ permalink: /kb/184/Q184686/
 	
 	=============================================================================
 	
+
+{% endraw %}

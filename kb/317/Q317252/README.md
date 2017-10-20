@@ -6,6 +6,8 @@ permalink: /kb/317/Q317252/
 
 ## Q317252: &quot;Stop 0x0000001E&quot; Err Msg After You Install SRP
 
+{% raw %}
+
 	Article: Q317252
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -140,3 +142,5 @@ permalink: /kb/317/Q317252/
 	
 	=============================================================================
 	
+
+{% endraw %}

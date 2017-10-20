@@ -6,6 +6,8 @@ permalink: /kb/171/Q171881/
 
 ## Q171881: SMS: Remote Control French WinNT 4.0 SP3 Client Has Grey Viewer
 
+{% raw %}
+
 	Article: Q171881
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP2
@@ -64,3 +66,5 @@ permalink: /kb/171/Q171881/
 	
 	=============================================================================
 	
+
+{% endraw %}

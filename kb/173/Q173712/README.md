@@ -6,6 +6,8 @@ permalink: /kb/173/Q173712/
 
 ## Q173712: SMS: Pause Key Is Mapped to NUMLOCK During Remote Control
 
+{% raw %}
+
 	Article: Q173712
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -51,3 +53,5 @@ permalink: /kb/173/Q173712/
 	
 	=============================================================================
 	
+
+{% endraw %}

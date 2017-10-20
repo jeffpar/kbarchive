@@ -6,6 +6,8 @@ permalink: /kb/171/Q171340/
 
 ## Q171340: Requirements for Using RAS to Connect to NetWare Connect
 
+{% raw %}
+
 	Article: Q171340
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:3.51,4.0
@@ -70,3 +72,5 @@ permalink: /kb/171/Q171340/
 	
 	=============================================================================
 	
+
+{% endraw %}

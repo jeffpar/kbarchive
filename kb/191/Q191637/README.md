@@ -6,6 +6,8 @@ permalink: /kb/191/Q191637/
 
 ## Q191637: PRB: SEEK Returns Different Results Depending on No. of Fields
 
+{% raw %}
+
 	Article: Q191637
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -89,3 +91,5 @@ permalink: /kb/191/Q191637/
 	
 	=============================================================================
 	
+
+{% endraw %}

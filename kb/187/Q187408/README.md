@@ -6,6 +6,8 @@ permalink: /kb/187/Q187408/
 
 ## Q187408: Shutdown of Terminal Server Takes Longer Than Windows NT 4.0
 
+{% raw %}
+
 	Article: Q187408
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -43,3 +45,5 @@ permalink: /kb/187/Q187408/
 	
 	=============================================================================
 	
+
+{% endraw %}

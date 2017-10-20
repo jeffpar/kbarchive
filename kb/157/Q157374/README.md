@@ -6,6 +6,8 @@ permalink: /kb/157/Q157374/
 
 ## Q157374: Soccer: System Requirements
 
+{% raw %}
+
 	Article: Q157374
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/157/Q157374/
 	
 	=============================================================================
 	
+
+{% endraw %}

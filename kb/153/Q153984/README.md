@@ -6,6 +6,8 @@ permalink: /kb/153/Q153984/
 
 ## Q153984: NTBackup Utility Unusable; Err Msg: &quot;NTBackup Error&quot;
 
+{% raw %}
+
 	Article: Q153984
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -95,3 +97,5 @@ permalink: /kb/153/Q153984/
 	
 	=============================================================================
 	
+
+{% endraw %}

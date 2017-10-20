@@ -6,6 +6,8 @@ permalink: /kb/261/Q261084/
 
 ## Q261084: MCM2: Cannot Join Multiplayer Game on Zone.com
 
+{% raw %}
+
 	Article: Q261084
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -60,3 +62,5 @@ permalink: /kb/261/Q261084/
 	
 	=============================================================================
 	
+
+{% endraw %}

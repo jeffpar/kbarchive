@@ -6,6 +6,8 @@ permalink: /kb/255/Q255247/
 
 ## Q255247: Terminal Server Profile Path and Home Directory Missing
 
+{% raw %}
+
 	Article: Q255247
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/255/Q255247/
 	
 	=============================================================================
 	
+
+{% endraw %}

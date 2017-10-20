@@ -6,6 +6,8 @@ permalink: /kb/072/Q72173/
 
 ## Q72173: Hyundai 386 with Toshiba 3.5-Inch Floppy Drives
 
+{% raw %}
+
 	Article: Q72173
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -67,3 +69,5 @@ permalink: /kb/072/Q72173/
 	
 	=============================================================================
 	
+
+{% endraw %}

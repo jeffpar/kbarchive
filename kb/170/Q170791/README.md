@@ -6,6 +6,8 @@ permalink: /kb/170/Q170791/
 
 ## Q170791: Windows 95 TCP Clients Run Out of Ports
 
+{% raw %}
+
 	Article: Q170791
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -59,3 +61,5 @@ permalink: /kb/170/Q170791/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162527/
 
 ## Q162527: WD97: Word Count for Comments Number Incorrect
 
+{% raw %}
+
 	Article: Q162527
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -118,3 +120,5 @@ permalink: /kb/162/Q162527/
 	
 	=============================================================================
 	
+
+{% endraw %}

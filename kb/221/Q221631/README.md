@@ -6,6 +6,8 @@ permalink: /kb/221/Q221631/
 
 ## Q221631: FIX: Component Gallery Find/Cancel Leaves &quot;Unknown&quot; Data Session
 
+{% raw %}
+
 	Article: Q221631
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -69,3 +71,5 @@ permalink: /kb/221/Q221631/
 	
 	=============================================================================
 	
+
+{% endraw %}

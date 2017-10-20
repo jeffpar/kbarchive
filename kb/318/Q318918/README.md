@@ -6,6 +6,8 @@ permalink: /kb/318/Q318918/
 
 ## Q318918: Writing Secure Code Comments And Corrections
 
+{% raw %}
+
 	Article: Q318918
 	Product(s): Microsoft Press
 	Version(s): 
@@ -472,3 +474,5 @@ permalink: /kb/318/Q318918/
 	
 	=============================================================================
 	
+
+{% endraw %}

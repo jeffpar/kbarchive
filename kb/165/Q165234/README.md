@@ -6,6 +6,8 @@ permalink: /kb/165/Q165234/
 
 ## Q165234: PRB: CREATEOFFLINE Opens Parent Table Exclusively
 
+{% raw %}
+
 	Article: Q165234
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -110,3 +112,5 @@ permalink: /kb/165/Q165234/
 	
 	=============================================================================
 	
+
+{% endraw %}

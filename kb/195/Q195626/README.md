@@ -6,6 +6,8 @@ permalink: /kb/195/Q195626/
 
 ## Q195626: FIX: Save As HTML Not Working Correctly with Double Data Types
 
+{% raw %}
+
 	Article: Q195626
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -83,3 +85,5 @@ permalink: /kb/195/Q195626/
 	
 	=============================================================================
 	
+
+{% endraw %}

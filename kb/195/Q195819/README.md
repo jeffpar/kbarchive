@@ -6,6 +6,8 @@ permalink: /kb/195/Q195819/
 
 ## Q195819: AS/400 APPC Printing Lost Spool File Attributes
 
+{% raw %}
+
 	Article: Q195819
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -60,3 +62,5 @@ permalink: /kb/195/Q195819/
 	
 	=============================================================================
 	
+
+{% endraw %}

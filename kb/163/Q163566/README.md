@@ -6,6 +6,8 @@ permalink: /kb/163/Q163566/
 
 ## Q163566: PPT: Sample VB Code to Group Objects Together
 
+{% raw %}
+
 	Article: Q163566
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -182,3 +184,5 @@ permalink: /kb/163/Q163566/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138001/
 
 ## Q138001: AS/400 Shared Folders Users See Each Other's Folders
 
+{% raw %}
+
 	Article: Q138001
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0
@@ -73,3 +75,5 @@ permalink: /kb/138/Q138001/
 	
 	=============================================================================
 	
+
+{% endraw %}

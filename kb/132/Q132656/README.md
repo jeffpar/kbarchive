@@ -6,6 +6,8 @@ permalink: /kb/132/Q132656/
 
 ## Q132656: Quattro Pro 6.0: Problems Setting Up to NetWare drive
 
+{% raw %}
+
 	Article: Q132656
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -69,3 +71,5 @@ permalink: /kb/132/Q132656/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189789/
 
 ## Q189789: XFOR: Linkage 3.2 PROFS Connector Repeatedly Restarts Itself
 
+{% raw %}
+
 	Article: Q189789
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.2
@@ -85,3 +87,5 @@ permalink: /kb/189/Q189789/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107118/
 
 ## Q107118: Multiple Calls of GetHostByName to DNS Causes Errors
 
+{% raw %}
+
 	Article: Q107118
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -50,3 +52,5 @@ permalink: /kb/107/Q107118/
 	
 	=============================================================================
 	
+
+{% endraw %}

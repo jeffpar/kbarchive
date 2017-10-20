@@ -6,6 +6,8 @@ permalink: /kb/237/Q237732/
 
 ## Q237732: NFL 2000: Quits Unexpectedly If Main Screen Remains Displayed
 
+{% raw %}
+
 	Article: Q237732
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/237/Q237732/
 	
 	=============================================================================
 	
+
+{% endraw %}

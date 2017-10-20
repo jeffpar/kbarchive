@@ -6,6 +6,8 @@ permalink: /kb/159/Q159438/
 
 ## Q159438: FP97: Page Fault When 1.1 Server Administrator Run on FP Web
 
+{% raw %}
+
 	Article: Q159438
 	Product(s): Word Front Page
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/159/Q159438/
 	
 	=============================================================================
 	
+
+{% endraw %}

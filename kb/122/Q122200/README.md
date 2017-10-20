@@ -6,6 +6,8 @@ permalink: /kb/122/Q122200/
 
 ## Q122200: Err Msg: The Remoteboot Service Service Returned...
 
+{% raw %}
+
 	Article: Q122200
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/122/Q122200/
 	
 	=============================================================================
 	
+
+{% endraw %}

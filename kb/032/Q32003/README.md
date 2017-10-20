@@ -6,6 +6,8 @@ permalink: /kb/032/Q32003/
 
 ## Q32003: Assigning Addresses to Overlay Segments
 
+{% raw %}
+
 	Article: Q32003
 	Product(s): See article
 	Version(s): 3.x 5.01.20 5.01.21
@@ -69,3 +71,5 @@ permalink: /kb/032/Q32003/
 	modules, to overlays.
 	   For more information on overlays, refer to the 1988 "MS-DOS
 	Encyclopedia."
+
+{% endraw %}

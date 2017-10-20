@@ -6,6 +6,8 @@ permalink: /kb/137/Q137148/
 
 ## Q137148: STOP 0x0000001E or System Hangs When Mirroring Seagate ST32550
 
+{% raw %}
+
 	Article: Q137148
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/137/Q137148/
 	
 	=============================================================================
 	
+
+{% endraw %}

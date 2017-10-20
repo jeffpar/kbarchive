@@ -6,6 +6,8 @@ permalink: /kb/064/Q64535/
 
 ## Q64535: FIX: Incorrect Code Generated for IRET With PROC USES
 
+{% raw %}
+
 	Article: Q64535
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.1,5.1a
@@ -67,3 +69,5 @@ permalink: /kb/064/Q64535/
 	
 	=============================================================================
 	
+
+{% endraw %}

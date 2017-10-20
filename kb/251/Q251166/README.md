@@ -6,6 +6,8 @@ permalink: /kb/251/Q251166/
 
 ## Q251166: NetBIOS Connections Using IP Address Fail After Applying SP5
 
+{% raw %}
+
 	Article: Q251166
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -96,3 +98,5 @@ permalink: /kb/251/Q251166/
 	
 	=============================================================================
 	
+
+{% endraw %}

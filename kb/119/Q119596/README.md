@@ -6,6 +6,8 @@ permalink: /kb/119/Q119596/
 
 ## Q119596: Windows 95 and After Dark 3.0 Issues
 
+{% raw %}
+
 	Article: Q119596
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -60,3 +62,5 @@ permalink: /kb/119/Q119596/
 	
 	=============================================================================
 	
+
+{% endraw %}

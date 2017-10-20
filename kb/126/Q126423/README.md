@@ -6,6 +6,8 @@ permalink: /kb/126/Q126423/
 
 ## Q126423: STOP: 0x0000007B &quot;Inaccessible_Boot_Device&quot; - during setup disk2
 
+{% raw %}
+
 	Article: Q126423
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/126/Q126423/
 	
 	=============================================================================
 	
+
+{% endraw %}

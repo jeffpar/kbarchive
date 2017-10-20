@@ -6,6 +6,8 @@ permalink: /kb/036/Q36898/
 
 ## Q36898: CTRL+INSERT to Copy Selected Text May Fail in QB.EXE 4.50
 
+{% raw %}
+
 	Article: Q36898
 	Product(s): See article
 	Version(s): 4.50
@@ -28,3 +30,5 @@ permalink: /kb/036/Q36898/
 	QuickBASIC Version 4.50 Edit menu.
 	
 	This problem does not occur in QuickBASIC Versions 4.00 and 4.00b.
+
+{% endraw %}

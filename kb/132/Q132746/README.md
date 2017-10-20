@@ -6,6 +6,8 @@ permalink: /kb/132/Q132746/
 
 ## Q132746: PC Ext NTMMTA: External Will Not Answer w/ USR Sportster Modem
 
+{% raw %}
+
 	Article: Q132746
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.2a,3.5; :3.5
@@ -80,3 +82,5 @@ permalink: /kb/132/Q132746/
 	
 	=============================================================================
 	
+
+{% endraw %}

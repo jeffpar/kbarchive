@@ -6,6 +6,8 @@ permalink: /kb/243/Q243472/
 
 ## Q243472: Oleaut32.dll Can Cause Incorrect Results in OLE Objects
 
+{% raw %}
+
 	Article: Q243472
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -93,3 +95,5 @@ permalink: /kb/243/Q243472/
 	
 	=============================================================================
 	
+
+{% endraw %}

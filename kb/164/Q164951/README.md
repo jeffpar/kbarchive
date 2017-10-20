@@ -6,6 +6,8 @@ permalink: /kb/164/Q164951/
 
 ## Q164951: INFO: Visual C++ RISC Edition Version Information
 
+{% raw %}
+
 	Article: Q164951
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.0a,4.0,4.0a,4.2b,5.0
@@ -168,3 +170,5 @@ permalink: /kb/164/Q164951/
 	
 	=============================================================================
 	
+
+{% endraw %}

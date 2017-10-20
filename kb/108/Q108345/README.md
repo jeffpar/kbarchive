@@ -6,6 +6,8 @@ permalink: /kb/108/Q108345/
 
 ## Q108345: DOCERR: GetCharQQ Not Accepting Direction Keys in QuickWin
 
+{% raw %}
+
 	Article: Q108345
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,4.0
@@ -89,3 +91,5 @@ permalink: /kb/108/Q108345/
 	
 	=============================================================================
 	
+
+{% endraw %}

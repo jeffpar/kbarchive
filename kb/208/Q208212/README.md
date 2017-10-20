@@ -6,6 +6,8 @@ permalink: /kb/208/Q208212/
 
 ## Q208212: PRB: Error When Using Assign Method to Assign Object References
 
+{% raw %}
+
 	Article: Q208212
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -158,3 +160,5 @@ permalink: /kb/208/Q208212/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/095/Q95494/
 
 ## Q95494: DoubleSpace Err Msg: 'Not Enough Conventional Memory...'
 
+{% raw %}
+
 	Article: Q95494
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2
@@ -58,3 +60,5 @@ permalink: /kb/095/Q95494/
 	
 	=============================================================================
 	
+
+{% endraw %}

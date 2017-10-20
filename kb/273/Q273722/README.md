@@ -6,6 +6,8 @@ permalink: /kb/273/Q273722/
 
 ## Q273722: BUG: GARBAGE: Product Token Test article for Windows NT
 
+{% raw %}
+
 	Article: Q273722
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.1
@@ -40,3 +42,5 @@ permalink: /kb/273/Q273722/
 	
 	=============================================================================
 	
+
+{% endraw %}

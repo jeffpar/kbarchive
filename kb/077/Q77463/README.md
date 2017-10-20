@@ -6,6 +6,8 @@ permalink: /kb/077/Q77463/
 
 ## Q77463: 'INVALID PATH' Message Following 'DISK IS FULL' Message
 
+{% raw %}
+
 	Article: Q77463
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0
@@ -91,3 +93,5 @@ permalink: /kb/077/Q77463/
 	
 	=============================================================================
 	
+
+{% endraw %}

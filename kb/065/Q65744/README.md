@@ -6,6 +6,8 @@ permalink: /kb/065/Q65744/
 
 ## Q65744: C 6.00 Fails to Generate Symbolic Info for ELSE IF Statement
 
+{% raw %}
+
 	Article: Q65744
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -49,3 +51,5 @@ permalink: /kb/065/Q65744/
 	           IF(i==7);
 	
 	This method allows stepping through the IF statement.
+
+{% endraw %}

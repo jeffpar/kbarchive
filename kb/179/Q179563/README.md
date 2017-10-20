@@ -6,6 +6,8 @@ permalink: /kb/179/Q179563/
 
 ## Q179563: SMS: WinNT UDP Remote Control Fails with Security Context Lost
 
+{% raw %}
+
 	Article: Q179563
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -58,3 +60,5 @@ permalink: /kb/179/Q179563/
 	
 	=============================================================================
 	
+
+{% endraw %}

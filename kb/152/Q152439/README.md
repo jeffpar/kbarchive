@@ -6,6 +6,8 @@ permalink: /kb/152/Q152439/
 
 ## Q152439: XADM: How to Tell if Exchange a Has Service Pack Installed
 
+{% raw %}
+
 	Article: Q152439
 	Product(s): Microsoft Exchange
 	Version(s): 2000,4.0,5.0,5.5
@@ -44,3 +46,5 @@ permalink: /kb/152/Q152439/
 	
 	=============================================================================
 	
+
+{% endraw %}

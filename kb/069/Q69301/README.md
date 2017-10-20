@@ -6,6 +6,8 @@ permalink: /kb/069/Q69301/
 
 ## Q69301: Windows Demonstration Won't Run Full-Featured Applications
 
+{% raw %}
+
 	Article: Q69301
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -52,3 +54,5 @@ permalink: /kb/069/Q69301/
 	
 	=============================================================================
 	
+
+{% endraw %}

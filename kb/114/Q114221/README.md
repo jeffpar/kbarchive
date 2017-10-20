@@ -6,6 +6,8 @@ permalink: /kb/114/Q114221/
 
 ## Q114221: Windows for Workgroups Client Session Dropped
 
+{% raw %}
+
 	Article: Q114221
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -74,3 +76,5 @@ permalink: /kb/114/Q114221/
 	
 	=============================================================================
 	
+
+{% endraw %}

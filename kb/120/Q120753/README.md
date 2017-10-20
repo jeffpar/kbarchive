@@ -6,6 +6,8 @@ permalink: /kb/120/Q120753/
 
 ## Q120753: WINS Manager Disappears or Closes Suddenly
 
+{% raw %}
+
 	Article: Q120753
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/120/Q120753/
 	
 	=============================================================================
 	
+
+{% endraw %}

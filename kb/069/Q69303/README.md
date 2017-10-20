@@ -6,6 +6,8 @@ permalink: /kb/069/Q69303/
 
 ## Q69303: Using the Western Digital Ethernet Plus Card and Windows 3.0
 
+{% raw %}
+
 	Article: Q69303
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -52,3 +54,5 @@ permalink: /kb/069/Q69303/
 	
 	=============================================================================
 	
+
+{% endraw %}

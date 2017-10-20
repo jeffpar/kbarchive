@@ -6,6 +6,8 @@ permalink: /kb/134/Q134982/
 
 ## Q134982: PRB: Err Msgs Starting Wizards, Building EXE, or Class Browser
 
+{% raw %}
+
 	Article: Q134982
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -75,3 +77,5 @@ permalink: /kb/134/Q134982/
 	
 	=============================================================================
 	
+
+{% endraw %}

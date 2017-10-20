@@ -6,6 +6,8 @@ permalink: /kb/162/Q162390/
 
 ## Q162390: &quot;Fatal Exception 0D&quot; Error Message Installing Program
 
+{% raw %}
+
 	Article: Q162390
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 98
@@ -71,3 +73,5 @@ permalink: /kb/162/Q162390/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129815/
 
 ## Q129815: LSA Secret Limitation Increased to 4096 in WinNT 4.0 and Win2000
 
+{% raw %}
+
 	Article: Q129815
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.1,3.5,3.51,4.0
@@ -46,3 +48,5 @@ permalink: /kb/129/Q129815/
 	
 	=============================================================================
 	
+
+{% endraw %}

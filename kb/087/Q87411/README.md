@@ -6,6 +6,8 @@ permalink: /kb/087/Q87411/
 
 ## Q87411: PC DB: Err Msg: Error in Transmitting Mail or Server Disk Full
 
+{% raw %}
+
 	Article: Q87411
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.2
@@ -43,3 +45,5 @@ permalink: /kb/087/Q87411/
 	
 	=============================================================================
 	
+
+{% endraw %}

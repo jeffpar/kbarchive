@@ -6,6 +6,8 @@ permalink: /kb/163/Q163597/
 
 ## Q163597: SMS: PCM Service Leaves Drive Letters Connected
 
+{% raw %}
+
 	Article: Q163597
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -61,3 +63,5 @@ permalink: /kb/163/Q163597/
 	
 	=============================================================================
 	
+
+{% endraw %}

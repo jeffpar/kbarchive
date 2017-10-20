@@ -6,6 +6,8 @@ permalink: /kb/161/Q161422/
 
 ## Q161422: FP: How to Change the Color of a Marquee
 
+{% raw %}
+
 	Article: Q161422
 	Product(s): Word Front Page
 	Version(s): windows:97; macintosh:1.0
@@ -69,3 +71,5 @@ permalink: /kb/161/Q161422/
 	
 	=============================================================================
 	
+
+{% endraw %}

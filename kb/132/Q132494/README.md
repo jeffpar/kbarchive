@@ -6,6 +6,8 @@ permalink: /kb/132/Q132494/
 
 ## Q132494: PRB: Memory Leaks in SQL Srv Driver During Connect/Disconnect
 
+{% raw %}
+
 	Article: Q132494
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0,2.5
@@ -90,3 +92,5 @@ permalink: /kb/132/Q132494/
 	
 	=============================================================================
 	
+
+{% endraw %}

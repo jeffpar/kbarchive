@@ -6,6 +6,8 @@ permalink: /kb/195/Q195052/
 
 ## Q195052: Removing or Renaming Directory C:&#92;Program Breaks Applications
 
+{% raw %}
+
 	Article: Q195052
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -164,3 +166,5 @@ permalink: /kb/195/Q195052/
 	
 	=============================================================================
 	
+
+{% endraw %}

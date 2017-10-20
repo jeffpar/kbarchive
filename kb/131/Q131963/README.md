@@ -6,6 +6,8 @@ permalink: /kb/131/Q131963/
 
 ## Q131963: PC Mac: Client Hangs When Accessing PO on NT 3.5 Server
 
+{% raw %}
+
 	Article: Q131963
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/131/Q131963/
 	
 	=============================================================================
 	
+
+{% endraw %}

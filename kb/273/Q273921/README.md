@@ -6,6 +6,8 @@ permalink: /kb/273/Q273921/
 
 ## Q273921: Crimson Skies: &quot;Abnormal Program Termination&quot; Error Message
 
+{% raw %}
+
 	Article: Q273921
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -149,3 +151,5 @@ permalink: /kb/273/Q273921/
 	
 	=============================================================================
 	
+
+{% endraw %}

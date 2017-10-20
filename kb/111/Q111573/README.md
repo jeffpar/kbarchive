@@ -6,6 +6,8 @@ permalink: /kb/111/Q111573/
 
 ## Q111573: Standby Mode with APM, Mail, &amp; AWFAX May Result in a GP Fault
 
+{% raw %}
+
 	Article: Q111573
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -59,3 +61,5 @@ permalink: /kb/111/Q111573/
 	
 	=============================================================================
 	
+
+{% endraw %}

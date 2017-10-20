@@ -6,6 +6,8 @@ permalink: /kb/138/Q138568/
 
 ## Q138568: 4mm DAT Tape Drives Fail on PCI Controller
 
+{% raw %}
+
 	Article: Q138568
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -49,3 +51,5 @@ permalink: /kb/138/Q138568/
 	
 	=============================================================================
 	
+
+{% endraw %}

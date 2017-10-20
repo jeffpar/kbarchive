@@ -6,6 +6,8 @@ permalink: /kb/197/Q197759/
 
 ## Q197759: WD97: Drawing Object Is Printed over Header/Footer Text
 
+{% raw %}
+
 	Article: Q197759
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/197/Q197759/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/110/Q110092/
 
 ## Q110092: How to Flush 32-Bit File Access Cache (VCACHE)
 
+{% raw %}
+
 	Article: Q110092
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -35,3 +37,5 @@ permalink: /kb/110/Q110092/
 	
 	=============================================================================
 	
+
+{% endraw %}

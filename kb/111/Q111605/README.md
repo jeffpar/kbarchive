@@ -6,6 +6,8 @@ permalink: /kb/111/Q111605/
 
 ## Q111605: BUG: LoadResource() GP Faults When Passed an Invalid HRSRC
 
+{% raw %}
+
 	Article: Q111605
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -45,3 +47,5 @@ permalink: /kb/111/Q111605/
 	
 	=============================================================================
 	
+
+{% endraw %}

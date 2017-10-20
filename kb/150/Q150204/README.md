@@ -6,6 +6,8 @@ permalink: /kb/150/Q150204/
 
 ## Q150204: HOWTO: Retrieve the Actual Parent Window of an ActiveX Control
 
+{% raw %}
+
 	Article: Q150204
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,5.0,6.0
@@ -104,3 +106,5 @@ permalink: /kb/150/Q150204/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192773/
 
 ## Q192773: Cluster Server Memory Leak When MTS Explorer Is Running
 
+{% raw %}
+
 	Article: Q192773
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/192/Q192773/
 	
 	=============================================================================
 	
+
+{% endraw %}

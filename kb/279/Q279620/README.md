@@ -6,6 +6,8 @@ permalink: /kb/279/Q279620/
 
 ## Q279620: MechWarrior 4 Err Msg: Invalid to Call ApplyFilters...
 
+{% raw %}
+
 	Article: Q279620
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -111,3 +113,5 @@ permalink: /kb/279/Q279620/
 	
 	=============================================================================
 	
+
+{% endraw %}

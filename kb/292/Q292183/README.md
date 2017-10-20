@@ -6,6 +6,8 @@ permalink: /kb/292/Q292183/
 
 ## Q292183: XCLN: How to Troubleshoot Reminders and Free/Busy Issues
 
+{% raw %}
+
 	Article: Q292183
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -87,3 +89,5 @@ permalink: /kb/292/Q292183/
 	
 	=============================================================================
 	
+
+{% endraw %}

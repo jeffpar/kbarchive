@@ -6,6 +6,8 @@ permalink: /kb/210/Q210519/
 
 ## Q210519: Golf 99: Help Topic Lists Incorrect Clubs in Standard Golf Bag
 
+{% raw %}
+
 	Article: Q210519
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/210/Q210519/
 	
 	=============================================================================
 	
+
+{% endraw %}

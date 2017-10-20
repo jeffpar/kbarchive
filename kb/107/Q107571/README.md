@@ -6,6 +6,8 @@ permalink: /kb/107/Q107571/
 
 ## Q107571: Running SNA Server Win16, OS/2, or MS-DOS Applications
 
+{% raw %}
+
 	Article: Q107571
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11; :2.0,2.1,2.11,3.0,4.0
@@ -135,3 +137,5 @@ permalink: /kb/107/Q107571/
 	
 	=============================================================================
 	
+
+{% endraw %}

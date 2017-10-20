@@ -6,6 +6,8 @@ permalink: /kb/184/Q184820/
 
 ## Q184820: FIX: Apply Button on an ATL Control's Property Page Is Disabled
 
+{% raw %}
+
 	Article: Q184820
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.0,2.1
@@ -126,3 +128,5 @@ permalink: /kb/184/Q184820/
 	
 	=============================================================================
 	
+
+{% endraw %}

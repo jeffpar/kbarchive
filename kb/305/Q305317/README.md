@@ -6,6 +6,8 @@ permalink: /kb/305/Q305317/
 
 ## Q305317: PRB: SQL Builder Improperly Refreshes upon Editing Query
 
+{% raw %}
+
 	Article: Q305317
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -78,3 +80,5 @@ permalink: /kb/305/Q305317/
 	
 	=============================================================================
 	
+
+{% endraw %}

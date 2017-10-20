@@ -6,6 +6,8 @@ permalink: /kb/187/Q187067/
 
 ## Q187067: Multitasking Hotkeys Do Not Work in Terminal Server Session
 
+{% raw %}
+
 	Article: Q187067
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/187/Q187067/
 	
 	=============================================================================
 	
+
+{% endraw %}

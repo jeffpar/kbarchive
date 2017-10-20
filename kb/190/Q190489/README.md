@@ -6,6 +6,8 @@ permalink: /kb/190/Q190489/
 
 ## Q190489: BUG: Choosing Page Setup Causes &quot;Printer not ready&quot; Error
 
+{% raw %}
+
 	Article: Q190489
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -63,3 +65,5 @@ permalink: /kb/190/Q190489/
 	
 	=============================================================================
 	
+
+{% endraw %}

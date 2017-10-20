@@ -6,6 +6,8 @@ permalink: /kb/169/Q169671/
 
 ## Q169671: XFOR: MSMI Terminates on Bad SMTP Address
 
+{% raw %}
+
 	Article: Q169671
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.00,5.00
@@ -71,3 +73,5 @@ permalink: /kb/169/Q169671/
 	
 	=============================================================================
 	
+
+{% endraw %}

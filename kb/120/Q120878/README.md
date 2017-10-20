@@ -6,6 +6,8 @@ permalink: /kb/120/Q120878/
 
 ## Q120878: PRB: Operator New Can't Be Called for CONST or VOLATILE Types
 
+{% raw %}
+
 	Article: Q120878
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0
@@ -97,3 +99,5 @@ permalink: /kb/120/Q120878/
 	
 	=============================================================================
 	
+
+{% endraw %}

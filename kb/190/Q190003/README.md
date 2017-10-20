@@ -6,6 +6,8 @@ permalink: /kb/190/Q190003/
 
 ## Q190003: Error -1073741670(0xC0000098) Using the HTML Administrator
 
+{% raw %}
+
 	Article: Q190003
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/190/Q190003/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/202/Q202048/
 
 ## Q202048: SMS: File Transfer Sessions Start in Different Directories
 
+{% raw %}
+
 	Article: Q202048
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -46,3 +48,5 @@ permalink: /kb/202/Q202048/
 	
 	=============================================================================
 	
+
+{% endraw %}

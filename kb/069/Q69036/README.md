@@ -6,6 +6,8 @@ permalink: /kb/069/Q69036/
 
 ## Q69036: dBASE IV's CACHEDB Disk Cache Incompatible with SMARTDRIVE
 
+{% raw %}
+
 	Article: Q69036
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21; WINDOWS:3.0,3.0a,3.1,3.11
@@ -80,3 +82,5 @@ permalink: /kb/069/Q69036/
 	
 	=============================================================================
 	
+
+{% endraw %}

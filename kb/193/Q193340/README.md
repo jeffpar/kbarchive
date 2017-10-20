@@ -6,6 +6,8 @@ permalink: /kb/193/Q193340/
 
 ## Q193340: Err Msg: An Error Occurred During Extraction of Required Files
 
+{% raw %}
+
 	Article: Q193340
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,2.0
@@ -79,3 +81,5 @@ permalink: /kb/193/Q193340/
 	
 	=============================================================================
 	
+
+{% endraw %}

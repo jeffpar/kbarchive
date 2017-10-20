@@ -6,6 +6,8 @@ permalink: /kb/299/Q299255/
 
 ## Q299255: XADM: Error Message Using the Check Name Option
 
+{% raw %}
+
 	Article: Q299255
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -71,3 +73,5 @@ permalink: /kb/299/Q299255/
 	
 	=============================================================================
 	
+
+{% endraw %}

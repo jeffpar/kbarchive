@@ -6,6 +6,8 @@ permalink: /kb/093/Q93241/
 
 ## Q93241: PC Win: Word Wrap Does Not Work Correctly When Using Tabs
 
+{% raw %}
+
 	Article: Q93241
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -47,3 +49,5 @@ permalink: /kb/093/Q93241/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132243/
 
 ## Q132243: HOWTO: How to Create Controls w/ a 3D Border at Run Time Using M
 
+{% raw %}
+
 	Article: Q132243
 	Product(s): Microsoft C Compiler
 	Version(s): ; winnt:2.1,2.2,4.0,5.0,6.0
@@ -93,3 +95,5 @@ permalink: /kb/132/Q132243/
 	
 	=============================================================================
 	
+
+{% endraw %}

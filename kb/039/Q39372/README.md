@@ -6,6 +6,8 @@ permalink: /kb/039/Q39372/
 
 ## Q39372: DOCERR: MOV mem,accum and MOV accum,mem Formats Documented Wrong
 
+{% raw %}
+
 	Article: Q39372
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b
@@ -90,3 +92,5 @@ permalink: /kb/039/Q39372/
 	
 	=============================================================================
 	
+
+{% endraw %}

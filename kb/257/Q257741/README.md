@@ -6,6 +6,8 @@ permalink: /kb/257/Q257741/
 
 ## Q257741: FIX: UserControl Validate Event Hangs the VB IDE
 
+{% raw %}
+
 	Article: Q257741
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -92,3 +94,5 @@ permalink: /kb/257/Q257741/
 	
 	=============================================================================
 	
+
+{% endraw %}

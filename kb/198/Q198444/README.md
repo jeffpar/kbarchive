@@ -6,6 +6,8 @@ permalink: /kb/198/Q198444/
 
 ## Q198444: XWEB: Can't Log On to OWA because of Ambiguous Mailbox Names
 
+{% raw %}
+
 	Article: Q198444
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5,5.5SP1
@@ -73,3 +75,5 @@ permalink: /kb/198/Q198444/
 	
 	=============================================================================
 	
+
+{% endraw %}

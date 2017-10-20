@@ -6,6 +6,8 @@ permalink: /kb/166/Q166050/
 
 ## Q166050: WV: Outlook/WordMail Tries to Use Word Viewer as Editor
 
+{% raw %}
+
 	Article: Q166050
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -104,3 +106,5 @@ permalink: /kb/166/Q166050/
 	
 	=============================================================================
 	
+
+{% endraw %}

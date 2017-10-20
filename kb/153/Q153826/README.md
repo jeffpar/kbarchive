@@ -6,6 +6,8 @@ permalink: /kb/153/Q153826/
 
 ## Q153826: Double Quotes in Software Inventory Package Causes Event ID 118
 
+{% raw %}
+
 	Article: Q153826
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -81,3 +83,5 @@ permalink: /kb/153/Q153826/
 	
 	=============================================================================
 	
+
+{% endraw %}

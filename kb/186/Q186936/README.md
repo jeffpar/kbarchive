@@ -6,6 +6,8 @@ permalink: /kb/186/Q186936/
 
 ## Q186936: XWEB: URLs Do Not Activate In OWA Contact or Appointment
 
+{% raw %}
+
 	Article: Q186936
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:
@@ -54,3 +56,5 @@ permalink: /kb/186/Q186936/
 	
 	=============================================================================
 	
+
+{% endraw %}

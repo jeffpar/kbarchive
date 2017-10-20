@@ -6,6 +6,8 @@ permalink: /kb/154/Q154942/
 
 ## Q154942: IIS Virtual Root Cannot Be Browsed on a SAMBA or WIN95 Share
 
+{% raw %}
+
 	Article: Q154942
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,3.5,3.51
@@ -68,3 +70,5 @@ permalink: /kb/154/Q154942/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86246/
 
 ## Q86246: Setup Documentation Error Bookshelf 1991
 
+{% raw %}
+
 	Article: Q86246
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1991 edition
@@ -43,3 +45,5 @@ permalink: /kb/086/Q86246/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122789/
 
 ## Q122789: FIX: Error C2579 When Using Function Templates
 
+{% raw %}
+
 	Article: Q122789
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,4.0,4.1,4.2
@@ -90,3 +92,5 @@ permalink: /kb/122/Q122789/
 	
 	=============================================================================
 	
+
+{% endraw %}

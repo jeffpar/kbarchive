@@ -6,6 +6,8 @@ permalink: /kb/169/Q169217/
 
 ## Q169217: XADM: Two Copies of Subfolder Found if Replication Not Specified
 
+{% raw %}
+
 	Article: Q169217
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -39,3 +41,5 @@ permalink: /kb/169/Q169217/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216665/
 
 ## Q216665: User Manager for Domains Loses Terminal Server Extension Informa
 
+{% raw %}
+
 	Article: Q216665
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/216/Q216665/
 	
 	=============================================================================
 	
+
+{% endraw %}

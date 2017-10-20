@@ -6,6 +6,8 @@ permalink: /kb/135/Q135971/
 
 ## Q135971: Cannot Compress Incorrectly Configured Drive with DriveSpace
 
+{% raw %}
+
 	Article: Q135971
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/135/Q135971/
 	
 	=============================================================================
 	
+
+{% endraw %}

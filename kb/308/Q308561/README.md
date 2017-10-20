@@ -6,6 +6,8 @@ permalink: /kb/308/Q308561/
 
 ## Q308561: PerfMon Counters Not Available for OLE DB &amp; ODBC Providers
 
+{% raw %}
+
 	Article: Q308561
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/308/Q308561/
 	
 	=============================================================================
 	
+
+{% endraw %}

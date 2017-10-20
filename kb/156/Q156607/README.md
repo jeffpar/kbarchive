@@ -6,6 +6,8 @@ permalink: /kb/156/Q156607/
 
 ## Q156607: HP OEM Matrox Ultima Plus Video Card Causes WinNT to Hang
 
+{% raw %}
+
 	Article: Q156607
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -93,3 +95,5 @@ permalink: /kb/156/Q156607/
 	
 	=============================================================================
 	
+
+{% endraw %}

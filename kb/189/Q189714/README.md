@@ -6,6 +6,8 @@ permalink: /kb/189/Q189714/
 
 ## Q189714: Closing Lotus Notes Window Opens Desktop Context Menu
 
+{% raw %}
+
 	Article: Q189714
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -85,3 +87,5 @@ permalink: /kb/189/Q189714/
 	
 	=============================================================================
 	
+
+{% endraw %}

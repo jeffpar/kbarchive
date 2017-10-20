@@ -6,6 +6,8 @@ permalink: /kb/074/Q74625/
 
 ## Q74625: MS-DOS Upgrade: Unable to Start Premier 200, 210
 
+{% raw %}
+
 	Article: Q74625
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -69,3 +71,5 @@ permalink: /kb/074/Q74625/
 	
 	=============================================================================
 	
+
+{% endraw %}

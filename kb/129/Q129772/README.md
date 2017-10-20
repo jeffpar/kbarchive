@@ -6,6 +6,8 @@ permalink: /kb/129/Q129772/
 
 ## Q129772: FIX: &quot;Attempt to load required component ODBC32.DLL failed&quot;
 
+{% raw %}
+
 	Article: Q129772
 	Product(s): Microsoft C Compiler
 	Version(s): 2.00 2.10
@@ -71,3 +73,5 @@ permalink: /kb/129/Q129772/
 	
 	=============================================================================
 	
+
+{% endraw %}

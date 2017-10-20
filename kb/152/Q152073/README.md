@@ -6,6 +6,8 @@ permalink: /kb/152/Q152073/
 
 ## Q152073: PRB: Wrapper Class for Automation Object May Be Incomplete
 
+{% raw %}
+
 	Article: Q152073
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1
@@ -126,3 +128,5 @@ permalink: /kb/152/Q152073/
 	
 	=============================================================================
 	
+
+{% endraw %}

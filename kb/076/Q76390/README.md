@@ -6,6 +6,8 @@ permalink: /kb/076/Q76390/
 
 ## Q76390: Full-Screen MS-DOS Apps Slow Timer Msgs in Enhanced Mode
 
+{% raw %}
+
 	Article: Q76390
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -116,3 +118,5 @@ permalink: /kb/076/Q76390/
 	
 	=============================================================================
 	
+
+{% endraw %}

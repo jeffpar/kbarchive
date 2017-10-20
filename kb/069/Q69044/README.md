@@ -6,6 +6,8 @@ permalink: /kb/069/Q69044/
 
 ## Q69044: Repackaged QuickBASIC 4.50 Correction; Requires Two Drives
 
+{% raw %}
+
 	Article: Q69044
 	Product(s): See article
 	Version(s): 4.50
@@ -54,3 +56,5 @@ permalink: /kb/069/Q69044/
 	and shipped without a box. The previous release had normal (nonpacked)
 	files on five 5.25-inch disks and three 3.5-inch disks, and shipped
 	with two manuals. The previous release was packaged inside a box.
+
+{% endraw %}

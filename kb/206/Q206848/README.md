@@ -6,6 +6,8 @@ permalink: /kb/206/Q206848/
 
 ## Q206848: Windows NT Service Pack 4.0 Tools Not Included on CD-ROM
 
+{% raw %}
+
 	Article: Q206848
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -178,3 +180,5 @@ permalink: /kb/206/Q206848/
 	
 	=============================================================================
 	
+
+{% endraw %}

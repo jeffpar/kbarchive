@@ -6,6 +6,8 @@ permalink: /kb/153/Q153713/
 
 ## Q153713: Changing the WINS Refresh Interval for WFW Clients
 
+{% raw %}
+
 	Article: Q153713
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.5,3.51,4.0; :3.11,3.11a,3.11b
@@ -61,3 +63,5 @@ permalink: /kb/153/Q153713/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181087/
 
 ## Q181087: Computer Hangs When Using the DIR Command in DFS Shared Folders
 
+{% raw %}
+
 	Article: Q181087
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,2.1,2.5,4.0
@@ -60,3 +62,5 @@ permalink: /kb/181/Q181087/
 	
 	=============================================================================
 	
+
+{% endraw %}

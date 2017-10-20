@@ -6,6 +6,8 @@ permalink: /kb/247/Q247701/
 
 ## Q247701: FILE: Updated Grid Control for H/PC Pro and PsPC Platforms
 
+{% raw %}
+
 	Article: Q247701
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:1.0
@@ -106,3 +108,5 @@ permalink: /kb/247/Q247701/
 	
 	=============================================================================
 	
+
+{% endraw %}

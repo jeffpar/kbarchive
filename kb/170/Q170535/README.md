@@ -6,6 +6,8 @@ permalink: /kb/170/Q170535/
 
 ## Q170535: XFOR: Event 290 Occurs When Performing Dirsync with cc:Mail
 
+{% raw %}
+
 	Article: Q170535
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/170/Q170535/
 	
 	=============================================================================
 	
+
+{% endraw %}

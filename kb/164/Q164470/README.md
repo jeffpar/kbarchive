@@ -6,6 +6,8 @@ permalink: /kb/164/Q164470/
 
 ## Q164470: XCLN: Scanpst Fails to Detect and Fix File Truncation Corruption
 
+{% raw %}
+
 	Article: Q164470
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -48,3 +50,5 @@ permalink: /kb/164/Q164470/
 	
 	=============================================================================
 	
+
+{% endraw %}

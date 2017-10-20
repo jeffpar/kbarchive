@@ -6,6 +6,8 @@ permalink: /kb/159/Q159258/
 
 ## Q159258: Spike's World: How Do I Get My High Score Uploaded?
 
+{% raw %}
+
 	Article: Q159258
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -44,3 +46,5 @@ permalink: /kb/159/Q159258/
 	
 	=============================================================================
 	
+
+{% endraw %}

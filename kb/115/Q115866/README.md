@@ -6,6 +6,8 @@ permalink: /kb/115/Q115866/
 
 ## Q115866: Err Msg After Installing MS-DOS: Your Computer Is Running...
 
+{% raw %}
+
 	Article: Q115866
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -56,3 +58,5 @@ permalink: /kb/115/Q115866/
 	
 	=============================================================================
 	
+
+{% endraw %}

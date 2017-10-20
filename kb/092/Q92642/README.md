@@ -6,6 +6,8 @@ permalink: /kb/092/Q92642/
 
 ## Q92642: Commonly Asked Schedule+ Questions &amp; Answers
 
+{% raw %}
+
 	Article: Q92642
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:1.0,3.1,3.11
@@ -366,3 +368,5 @@ permalink: /kb/092/Q92642/
 	
 	=============================================================================
 	
+
+{% endraw %}

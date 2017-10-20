@@ -6,6 +6,8 @@ permalink: /kb/183/Q183785/
 
 ## Q183785: FP: How to Play Background Sound in Netscape Navigator
 
+{% raw %}
+
 	Article: Q183785
 	Product(s): Word Front Page
 	Version(s): 1.0,1.1
@@ -144,3 +146,5 @@ permalink: /kb/183/Q183785/
 	
 	=============================================================================
 	
+
+{% endraw %}

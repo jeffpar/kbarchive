@@ -6,6 +6,8 @@ permalink: /kb/140/Q140925/
 
 ## Q140925: SMS Setup Doesn't Run on Windows NT v. 3.5 w/ Service Pack 3
 
+{% raw %}
+
 	Article: Q140925
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -46,3 +48,5 @@ permalink: /kb/140/Q140925/
 	
 	=============================================================================
 	
+
+{% endraw %}

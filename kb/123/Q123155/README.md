@@ -6,6 +6,8 @@ permalink: /kb/123/Q123155/
 
 ## Q123155: Err Msg: The Remote Computer is Not Available
 
+{% raw %}
+
 	Article: Q123155
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -59,3 +61,5 @@ permalink: /kb/123/Q123155/
 	
 	=============================================================================
 	
+
+{% endraw %}

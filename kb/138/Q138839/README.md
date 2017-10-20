@@ -6,6 +6,8 @@ permalink: /kb/138/Q138839/
 
 ## Q138839: PPT: Pictures Display as QuickTime Pict Placeholders
 
+{% raw %}
+
 	Article: Q138839
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:3.0,3.0b,4.0; WINDOWS:4.0,7.0
@@ -101,3 +103,5 @@ permalink: /kb/138/Q138839/
 	
 	=============================================================================
 	
+
+{% endraw %}

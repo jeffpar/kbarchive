@@ -6,6 +6,8 @@ permalink: /kb/098/Q98963/
 
 ## Q98963: Mac Srv: Hardware Recommendations
 
+{% raw %}
+
 	Article: Q98963
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -162,3 +164,5 @@ permalink: /kb/098/Q98963/
 	
 	=============================================================================
 	
+
+{% endraw %}

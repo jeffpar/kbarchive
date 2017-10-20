@@ -6,6 +6,8 @@ permalink: /kb/154/Q154640/
 
 ## Q154640: Computer Hangs During Setup with Intel EtherExpress PRO/100A
 
+{% raw %}
+
 	Article: Q154640
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/154/Q154640/
 	
 	=============================================================================
 	
+
+{% endraw %}

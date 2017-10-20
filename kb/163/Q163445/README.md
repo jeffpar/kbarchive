@@ -6,6 +6,8 @@ permalink: /kb/163/Q163445/
 
 ## Q163445: XADM: NDR When Forwarding Message from Dec All-In-One
 
+{% raw %}
+
 	Article: Q163445
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/163/Q163445/
 	
 	=============================================================================
 	
+
+{% endraw %}

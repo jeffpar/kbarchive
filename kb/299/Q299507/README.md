@@ -6,6 +6,8 @@ permalink: /kb/299/Q299507/
 
 ## Q299507: FIX: Disabled Label On a Form Only Wraps One of Two Colors
 
+{% raw %}
+
 	Article: Q299507
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -83,3 +85,5 @@ permalink: /kb/299/Q299507/
 	
 	=============================================================================
 	
+
+{% endraw %}

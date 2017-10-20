@@ -6,6 +6,8 @@ permalink: /kb/278/Q278854/
 
 ## Q278854: No dial tone error during Web Companion account set up
 
+{% raw %}
+
 	Article: Q278854
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -56,3 +58,5 @@ permalink: /kb/278/Q278854/
 	
 	=============================================================================
 	
+
+{% endraw %}

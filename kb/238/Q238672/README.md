@@ -6,6 +6,8 @@ permalink: /kb/238/Q238672/
 
 ## Q238672: FIX: Mouse Hook Not Called When Used in User Controls
 
+{% raw %}
+
 	Article: Q238672
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -176,3 +178,5 @@ permalink: /kb/238/Q238672/
 	
 	=============================================================================
 	
+
+{% endraw %}

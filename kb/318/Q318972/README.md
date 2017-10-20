@@ -6,6 +6,8 @@ permalink: /kb/318/Q318972/
 
 ## Q318972: How To Add A POP3 MSN E-mail Account To Microsoft Entourage
 
+{% raw %}
+
 	Article: Q318972
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/318/Q318972/
 	
 	=============================================================================
 	
+
+{% endraw %}

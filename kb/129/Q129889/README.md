@@ -6,6 +6,8 @@ permalink: /kb/129/Q129889/
 
 ## Q129889: How to Use a UDF in Index with the Trim Functions
 
+{% raw %}
+
 	Article: Q129889
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6x; UNIX:2.6; WINDOWS:2.5x,2.6x,3.0
@@ -143,3 +145,5 @@ permalink: /kb/129/Q129889/
 	
 	=============================================================================
 	
+
+{% endraw %}

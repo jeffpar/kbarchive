@@ -6,6 +6,8 @@ permalink: /kb/216/Q216196/
 
 ## Q216196: PRB: Text Output Parameter Empty with Unicode Build
 
+{% raw %}
+
 	Article: Q216196
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/216/Q216196/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124026/
 
 ## Q124026: DHCP Requests Fail on Logically Multihomed Server (Single NIC)
 
+{% raw %}
+
 	Article: Q124026
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -72,3 +74,5 @@ permalink: /kb/124/Q124026/
 	
 	=============================================================================
 	
+
+{% endraw %}

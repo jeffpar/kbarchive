@@ -6,6 +6,8 @@ permalink: /kb/142/Q142856/
 
 ## Q142856: Error 3095 and 3096 with Intel EtherExpress MCA &amp; MCA/TP
 
+{% raw %}
+
 	Article: Q142856
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.11,3.5,3.51
@@ -90,3 +92,5 @@ permalink: /kb/142/Q142856/
 	
 	=============================================================================
 	
+
+{% endraw %}

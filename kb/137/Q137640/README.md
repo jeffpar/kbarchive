@@ -6,6 +6,8 @@ permalink: /kb/137/Q137640/
 
 ## Q137640: BACKSPACE Removes Only Half of Character in HyperTerminal
 
+{% raw %}
+
 	Article: Q137640
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -53,3 +55,5 @@ permalink: /kb/137/Q137640/
 	
 	=============================================================================
 	
+
+{% endraw %}

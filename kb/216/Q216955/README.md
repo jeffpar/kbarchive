@@ -6,6 +6,8 @@ permalink: /kb/216/Q216955/
 
 ## Q216955: PRB: Negative Values Put in Remote View Rounded Up in SQL Table
 
+{% raw %}
+
 	Article: Q216955
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0
@@ -179,3 +181,5 @@ permalink: /kb/216/Q216955/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235956/
 
 ## Q235956: DOC: /OPT:NOWIN98 Linker Option Missing in Linker Reference
 
+{% raw %}
+
 	Article: Q235956
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -58,3 +60,5 @@ permalink: /kb/235/Q235956/
 	
 	=============================================================================
 	
+
+{% endraw %}

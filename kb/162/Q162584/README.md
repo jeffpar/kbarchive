@@ -6,6 +6,8 @@ permalink: /kb/162/Q162584/
 
 ## Q162584: ADT/ODE: Developing a Plan to Deploy Run-Time Applications
 
+{% raw %}
+
 	Article: Q162584
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0,7.0
@@ -118,3 +120,5 @@ permalink: /kb/162/Q162584/
 	
 	=============================================================================
 	
+
+{% endraw %}

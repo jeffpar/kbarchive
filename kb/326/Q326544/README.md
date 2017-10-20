@@ -6,6 +6,8 @@ permalink: /kb/326/Q326544/
 
 ## Q326544: BUG: Error Selecting Empty VFP Memo w/ .NET OleDbDataAdapter
 
+{% raw %}
+
 	Article: Q326544
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0.0.9262,7.0.0.9465
@@ -105,3 +107,5 @@ permalink: /kb/326/Q326544/
 	
 	=============================================================================
 	
+
+{% endraw %}

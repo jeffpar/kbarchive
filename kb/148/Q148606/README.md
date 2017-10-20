@@ -6,6 +6,8 @@ permalink: /kb/148/Q148606/
 
 ## Q148606: BUG: FOR1138 Error INQUIRE(IOLENGTH) of Character Function
 
+{% raw %}
+
 	Article: Q148606
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -70,3 +72,5 @@ permalink: /kb/148/Q148606/
 	
 	=============================================================================
 	
+
+{% endraw %}

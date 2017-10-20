@@ -6,6 +6,8 @@ permalink: /kb/197/Q197915/
 
 ## Q197915: PRB: Report Width is Larger than the Paper Width
 
+{% raw %}
+
 	Article: Q197915
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -87,3 +89,5 @@ permalink: /kb/197/Q197915/
 	
 	=============================================================================
 	
+
+{% endraw %}

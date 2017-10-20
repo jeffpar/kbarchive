@@ -6,6 +6,8 @@ permalink: /kb/181/Q181031/
 
 ## Q181031: Callback Verbs Documented Incorrectly in the LUA SNA SDK
 
+{% raw %}
+
 	Article: Q181031
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -83,3 +85,5 @@ permalink: /kb/181/Q181031/
 	
 	=============================================================================
 	
+
+{% endraw %}

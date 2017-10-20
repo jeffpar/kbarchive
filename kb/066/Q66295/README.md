@@ -6,6 +6,8 @@ permalink: /kb/066/Q66295/
 
 ## Q66295: What Happens to Stack Memory When Thread Terminates?
 
+{% raw %}
+
 	Article: Q66295
 	Product(s): See article
 	Version(s): 6.00
@@ -40,3 +42,5 @@ permalink: /kb/066/Q66295/
 	As a side note, in 32-bit OS/2, this is all a moot point. The 32-bit
 	DosCreateThread() API call will automatically allocate/deallocate the
 	thread stack.
+
+{% endraw %}

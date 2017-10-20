@@ -6,6 +6,8 @@ permalink: /kb/166/Q166063/
 
 ## Q166063: WV: Document Open in Word Viewer, Word Has Read-Only Access
 
+{% raw %}
+
 	Article: Q166063
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -68,3 +70,5 @@ permalink: /kb/166/Q166063/
 	
 	=============================================================================
 	
+
+{% endraw %}

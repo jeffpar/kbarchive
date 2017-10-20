@@ -6,6 +6,8 @@ permalink: /kb/247/Q247273/
 
 ## Q247273: BUG: IOleObjectImpl&lt;&gt;::DoVerb Does Not Process Positive Verbs
 
+{% raw %}
+
 	Article: Q247273
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.0,2.1,3.0
@@ -119,3 +121,5 @@ permalink: /kb/247/Q247273/
 	
 	=============================================================================
 	
+
+{% endraw %}

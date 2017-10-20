@@ -6,6 +6,8 @@ permalink: /kb/318/Q318298/
 
 ## Q318298: PRB: Cannot Add Project to Source Control in VS .NET IDE
 
+{% raw %}
+
 	Article: Q318298
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -82,3 +84,5 @@ permalink: /kb/318/Q318298/
 	
 	=============================================================================
 	
+
+{% endraw %}

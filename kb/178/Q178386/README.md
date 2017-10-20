@@ -6,6 +6,8 @@ permalink: /kb/178/Q178386/
 
 ## Q178386: XWEB: RecvTextA Interface for Channel Service Is Broken
 
+{% raw %}
+
 	Article: Q178386
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -58,3 +60,5 @@ permalink: /kb/178/Q178386/
 	
 	=============================================================================
 	
+
+{% endraw %}

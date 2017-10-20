@@ -6,6 +6,8 @@ permalink: /kb/075/Q75230/
 
 ## Q75230: PCSupport 2.1, MEM /C, and Enhanced Mode Windows 3.0
 
+{% raw %}
+
 	Article: Q75230
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -45,3 +47,5 @@ permalink: /kb/075/Q75230/
 	
 	=============================================================================
 	
+
+{% endraw %}

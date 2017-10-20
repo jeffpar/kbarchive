@@ -6,6 +6,8 @@ permalink: /kb/046/Q46217/
 
 ## Q46217: QuickC Does Not Always Deallocate Memory Given to Video Buffer
 
+{% raw %}
+
 	Article: Q46217
 	Product(s): See article
 	Version(s): 2.00
@@ -75,3 +77,5 @@ permalink: /kb/046/Q46217/
 	   /* _setvideomode (_DEFAULTMODE); */
 	   /* uncomment the line above, and the program works every time */
 	}
+
+{% endraw %}

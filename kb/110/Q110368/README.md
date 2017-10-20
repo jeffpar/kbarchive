@@ -6,6 +6,8 @@ permalink: /kb/110/Q110368/
 
 ## Q110368: Encarta 1994: README.WRI Contents
 
+{% raw %}
+
 	Article: Q110368
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994
@@ -558,3 +560,5 @@ permalink: /kb/110/Q110368/
 	
 	=============================================================================
 	
+
+{% endraw %}

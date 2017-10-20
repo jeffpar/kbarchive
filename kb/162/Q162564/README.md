@@ -6,6 +6,8 @@ permalink: /kb/162/Q162564/
 
 ## Q162564: XCLN: Cannot Change Time of Recurring Appointments
 
+{% raw %}
+
 	Article: Q162564
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0,7.0a; :4.0; Win95:4.0
@@ -51,3 +53,5 @@ permalink: /kb/162/Q162564/
 	
 	=============================================================================
 	
+
+{% endraw %}

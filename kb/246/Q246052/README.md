@@ -6,6 +6,8 @@ permalink: /kb/246/Q246052/
 
 ## Q246052: XCLN: No Offline Folder Settings Button in Service Properties
 
+{% raw %}
+
 	Article: Q246052
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -64,3 +66,5 @@ permalink: /kb/246/Q246052/
 	
 	=============================================================================
 	
+
+{% endraw %}

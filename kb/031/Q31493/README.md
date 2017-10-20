@@ -6,6 +6,8 @@ permalink: /kb/031/Q31493/
 
 ## Q31493: Macro to Toggle HOME Key
 
+{% raw %}
+
 	Article: Q31493
 	Product(s): See article
 	Version(s): 1.00
@@ -32,3 +34,5 @@ permalink: /kb/031/Q31493/
 	
 	After following this procedure, the F10 key will toggle among begline,
 	home, and mark.
+
+{% endraw %}

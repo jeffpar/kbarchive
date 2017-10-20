@@ -6,6 +6,8 @@ permalink: /kb/086/Q86248/
 
 ## Q86248: Incorrect CMOS Setting May Cause Insufficient Memory Error
 
+{% raw %}
+
 	Article: Q86248
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/086/Q86248/
 	
 	=============================================================================
 	
+
+{% endraw %}

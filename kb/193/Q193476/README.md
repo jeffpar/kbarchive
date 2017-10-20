@@ -6,6 +6,8 @@ permalink: /kb/193/Q193476/
 
 ## Q193476: FIX: Type Info for &#95;&#95;asm Crashes Developer Studio
 
+{% raw %}
+
 	Article: Q193476
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -107,3 +109,5 @@ permalink: /kb/193/Q193476/
 	
 	=============================================================================
 	
+
+{% endraw %}

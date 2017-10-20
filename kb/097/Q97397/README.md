@@ -6,6 +6,8 @@ permalink: /kb/097/Q97397/
 
 ## Q97397: FONTUTIL.RTF - Technical Article
 
+{% raw %}
+
 	Article: Q97397
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -79,3 +81,5 @@ permalink: /kb/097/Q97397/
 	
 	=============================================================================
 	
+
+{% endraw %}

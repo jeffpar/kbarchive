@@ -6,6 +6,8 @@ permalink: /kb/096/Q96327/
 
 ## Q96327: Disconnected Network Drive Becomes Floppy Disk Drive
 
+{% raw %}
+
 	Article: Q96327
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2; WINDOWS:3.1,3.11; :2.1,2.1a,2.2
@@ -114,3 +116,5 @@ permalink: /kb/096/Q96327/
 	
 	=============================================================================
 	
+
+{% endraw %}

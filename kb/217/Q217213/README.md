@@ -6,6 +6,8 @@ permalink: /kb/217/Q217213/
 
 ## Q217213: HOWTO: Open a Password-Protected Paradox Table Using DAO
 
+{% raw %}
+
 	Article: Q217213
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0,7.0,97
@@ -136,3 +138,5 @@ permalink: /kb/217/Q217213/
 	
 	=============================================================================
 	
+
+{% endraw %}

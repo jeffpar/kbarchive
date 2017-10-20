@@ -6,6 +6,8 @@ permalink: /kb/134/Q134462/
 
 ## Q134462: Fonts May Be Listed Twice in Contents Tab of Properties
 
+{% raw %}
+
 	Article: Q134462
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -47,3 +49,5 @@ permalink: /kb/134/Q134462/
 	
 	=============================================================================
 	
+
+{% endraw %}

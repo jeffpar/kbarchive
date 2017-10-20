@@ -6,6 +6,8 @@ permalink: /kb/186/Q186631/
 
 ## Q186631: Modifying Terminal Server Clients Default Windows Directory Name
 
+{% raw %}
+
 	Article: Q186631
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -85,3 +87,5 @@ permalink: /kb/186/Q186631/
 	
 	=============================================================================
 	
+
+{% endraw %}

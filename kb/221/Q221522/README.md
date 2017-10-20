@@ -6,6 +6,8 @@ permalink: /kb/221/Q221522/
 
 ## Q221522: XCLN: Adding Address from GAL to PAB in Outlook 97 May Not Work
 
+{% raw %}
+
 	Article: Q221522
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/221/Q221522/
 	
 	=============================================================================
 	
+
+{% endraw %}

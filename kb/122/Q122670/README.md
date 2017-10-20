@@ -6,6 +6,8 @@ permalink: /kb/122/Q122670/
 
 ## Q122670: MSB Human: How to Play the Games
 
+{% raw %}
+
 	Article: Q122670
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -285,3 +287,5 @@ permalink: /kb/122/Q122670/
 	
 	=============================================================================
 	
+
+{% endraw %}

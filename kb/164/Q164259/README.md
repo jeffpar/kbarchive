@@ -6,6 +6,8 @@ permalink: /kb/164/Q164259/
 
 ## Q164259: MS DOS 3.0 Client May Need Newer Network Card Driver
 
+{% raw %}
+
 	Article: Q164259
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -52,3 +54,5 @@ permalink: /kb/164/Q164259/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168351/
 
 ## Q168351: WD97: Word for Alpha Crashes Converting Some WP Graphics
 
+{% raw %}
+
 	Article: Q168351
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -80,3 +82,5 @@ permalink: /kb/168/Q168351/
 	
 	=============================================================================
 	
+
+{% endraw %}

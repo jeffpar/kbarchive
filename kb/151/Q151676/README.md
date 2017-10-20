@@ -6,6 +6,8 @@ permalink: /kb/151/Q151676/
 
 ## Q151676: Automap Streets GPS Enabler Disk Contents (3.5 inch, 1.44 MB)
 
+{% raw %}
+
 	Article: Q151676
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/151/Q151676/
 	
 	=============================================================================
 	
+
+{% endraw %}

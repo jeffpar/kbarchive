@@ -6,6 +6,8 @@ permalink: /kb/228/Q228959/
 
 ## Q228959: Midtown Madness: Snow or Traffic Lines Not Displayed Correctly
 
+{% raw %}
+
 	Article: Q228959
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -65,3 +67,5 @@ permalink: /kb/228/Q228959/
 	
 	=============================================================================
 	
+
+{% endraw %}

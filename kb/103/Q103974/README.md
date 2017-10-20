@@ -6,6 +6,8 @@ permalink: /kb/103/Q103974/
 
 ## Q103974: Token Ring Error Msg: Bad FC/AR flags--Probable Causes
 
+{% raw %}
+
 	Article: Q103974
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/103/Q103974/
 	
 	=============================================================================
 	
+
+{% endraw %}

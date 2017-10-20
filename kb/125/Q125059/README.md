@@ -6,6 +6,8 @@ permalink: /kb/125/Q125059/
 
 ## Q125059: Network Monitor Displays Expiration Notice
 
+{% raw %}
+
 	Article: Q125059
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -61,3 +63,5 @@ permalink: /kb/125/Q125059/
 	
 	=============================================================================
 	
+
+{% endraw %}

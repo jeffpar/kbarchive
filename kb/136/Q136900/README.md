@@ -6,6 +6,8 @@ permalink: /kb/136/Q136900/
 
 ## Q136900: Manually Updating the Startup Disk After Installing MS Plus!
 
+{% raw %}
+
 	Article: Q136900
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -145,3 +147,5 @@ permalink: /kb/136/Q136900/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/070/Q70753/
 
 ## Q70753: DELOLDOS Command and OLD_DOS Directory Creation Limit
 
+{% raw %}
+
 	Article: Q70753
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -56,3 +58,5 @@ permalink: /kb/070/Q70753/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158982/
 
 ## Q158982: TN3270E Server Sends SSCP Screens to Printer LUs
 
+{% raw %}
+
 	Article: Q158982
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -56,3 +58,5 @@ permalink: /kb/158/Q158982/
 	
 	=============================================================================
 	
+
+{% endraw %}

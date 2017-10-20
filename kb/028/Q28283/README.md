@@ -6,6 +6,8 @@ permalink: /kb/028/Q28283/
 
 ## Q28283: It Is Illegal to Pass a CONST Type Constant in COMMON
 
+{% raw %}
+
 	Article: Q28283
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -49,3 +51,5 @@ permalink: /kb/028/Q28283/
 	     test AS STRING * x
 	   END TYPE
 	   DIM joe AS person
+
+{% endraw %}

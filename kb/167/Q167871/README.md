@@ -6,6 +6,8 @@ permalink: /kb/167/Q167871/
 
 ## Q167871: Error When Connecting to a Share on WinNT 4.0 NTFS Partition
 
+{% raw %}
+
 	Article: Q167871
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -121,3 +123,5 @@ permalink: /kb/167/Q167871/
 	
 	=============================================================================
 	
+
+{% endraw %}

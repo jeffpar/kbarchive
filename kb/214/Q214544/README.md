@@ -6,6 +6,8 @@ permalink: /kb/214/Q214544/
 
 ## Q214544: NSLOOKUP Does Not Devolve MX Record Queries
 
+{% raw %}
+
 	Article: Q214544
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -94,3 +96,5 @@ permalink: /kb/214/Q214544/
 	
 	=============================================================================
 	
+
+{% endraw %}

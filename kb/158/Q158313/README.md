@@ -6,6 +6,8 @@ permalink: /kb/158/Q158313/
 
 ## Q158313: SMS: Configuration Command Line Ignores Specified Drive Letter
 
+{% raw %}
+
 	Article: Q158313
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -49,3 +51,5 @@ permalink: /kb/158/Q158313/
 	
 	=============================================================================
 	
+
+{% endraw %}

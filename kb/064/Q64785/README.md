@@ -6,6 +6,8 @@ permalink: /kb/064/Q64785/
 
 ## Q64785: ON KEY Key Trap with INKEY&#36; Loop Requires Additional Key Press
 
+{% raw %}
+
 	Article: Q64785
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -122,3 +124,5 @@ permalink: /kb/064/Q64785/
 	
 	Sample 3 above works without producing the "Out of Stack Space" error
 	because no keys are pressed or trapped in SUB or FUNCTION procedures.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107163/
 
 ## Q107163: Registering KERNEL Functions in Viewer
 
+{% raw %}
+
 	Article: Q107163
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -76,3 +78,5 @@ permalink: /kb/107/Q107163/
 	
 	=============================================================================
 	
+
+{% endraw %}

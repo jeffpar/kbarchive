@@ -6,6 +6,8 @@ permalink: /kb/112/Q112862/
 
 ## Q112862: SFMATALK.SYS Could Cause STOP Message 0x0000000A
 
+{% raw %}
+
 	Article: Q112862
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -48,3 +50,5 @@ permalink: /kb/112/Q112862/
 	
 	=============================================================================
 	
+
+{% endraw %}

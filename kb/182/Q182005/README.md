@@ -6,6 +6,8 @@ permalink: /kb/182/Q182005/
 
 ## Q182005: Euro Currency Not Available in Windows NT Character Sets
 
+{% raw %}
+
 	Article: Q182005
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/182/Q182005/
 	
 	=============================================================================
 	
+
+{% endraw %}

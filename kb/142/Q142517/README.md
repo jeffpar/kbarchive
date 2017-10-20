@@ -6,6 +6,8 @@ permalink: /kb/142/Q142517/
 
 ## Q142517: INFO: VB Doesn't Support Administrator or Network Installation
 
+{% raw %}
+
 	Article: Q142517
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -56,3 +58,5 @@ permalink: /kb/142/Q142517/
 	
 	=============================================================================
 	
+
+{% endraw %}

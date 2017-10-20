@@ -6,6 +6,8 @@ permalink: /kb/034/Q34069/
 
 ## Q34069: Putting Global Variables in the Default Data Segment
 
+{% raw %}
+
 	Article: Q34069
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10 | 5.10
@@ -23,3 +25,5 @@ permalink: /kb/034/Q34069/
 	ensures that the variable is referenced with a 16-bit address, as
 	opposed to the far 32-bit addresses, which will make variables defined
 	with the near keyword faster to access.
+
+{% endraw %}

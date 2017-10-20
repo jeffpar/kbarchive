@@ -6,6 +6,8 @@ permalink: /kb/254/Q254117/
 
 ## Q254117: HOWTO: Display Recordset 'Pages' in MSHFlexGrid Control
 
+{% raw %}
+
 	Article: Q254117
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -208,3 +210,5 @@ permalink: /kb/254/Q254117/
 	
 	=============================================================================
 	
+
+{% endraw %}

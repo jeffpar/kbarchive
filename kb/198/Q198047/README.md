@@ -6,6 +6,8 @@ permalink: /kb/198/Q198047/
 
 ## Q198047: WD97: Can't Find Text Using Wildcards with Find or Replace
 
+{% raw %}
+
 	Article: Q198047
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -105,3 +107,5 @@ permalink: /kb/198/Q198047/
 	
 	=============================================================================
 	
+
+{% endraw %}

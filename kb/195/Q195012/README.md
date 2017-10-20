@@ -6,6 +6,8 @@ permalink: /kb/195/Q195012/
 
 ## Q195012: Queued 3270 Print Jobs May Intermittently Print Incorrectly
 
+{% raw %}
+
 	Article: Q195012
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,4.0
@@ -95,3 +97,5 @@ permalink: /kb/195/Q195012/
 	
 	=============================================================================
 	
+
+{% endraw %}

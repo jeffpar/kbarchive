@@ -6,6 +6,8 @@ permalink: /kb/179/Q179813/
 
 ## Q179813: Underlining Shifted to the Left When Printing from Applications
 
+{% raw %}
+
 	Article: Q179813
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -83,3 +85,5 @@ permalink: /kb/179/Q179813/
 	
 	=============================================================================
 	
+
+{% endraw %}

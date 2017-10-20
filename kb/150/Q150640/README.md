@@ -6,6 +6,8 @@ permalink: /kb/150/Q150640/
 
 ## Q150640: Joystick Uncontrollable in Fury3
 
+{% raw %}
+
 	Article: Q150640
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -61,3 +63,5 @@ permalink: /kb/150/Q150640/
 	
 	=============================================================================
 	
+
+{% endraw %}

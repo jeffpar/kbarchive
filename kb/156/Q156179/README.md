@@ -6,6 +6,8 @@ permalink: /kb/156/Q156179/
 
 ## Q156179: HOWTO: Use the BoundTo Property to Store Numeric Values
 
+{% raw %}
+
 	Article: Q156179
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/156/Q156179/
 	
 	=============================================================================
 	
+
+{% endraw %}

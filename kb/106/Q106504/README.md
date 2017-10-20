@@ -6,6 +6,8 @@ permalink: /kb/106/Q106504/
 
 ## Q106504: Ability to Change Password Added to SNA Win3.x Client
 
+{% raw %}
+
 	Article: Q106504
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -71,3 +73,5 @@ permalink: /kb/106/Q106504/
 	
 	=============================================================================
 	
+
+{% endraw %}

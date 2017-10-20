@@ -6,6 +6,8 @@ permalink: /kb/154/Q154867/
 
 ## Q154867: DBWEB: How to Create a Custom Update DBX
 
+{% raw %}
+
 	Article: Q154867
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:1.0,1.1
@@ -180,3 +182,5 @@ permalink: /kb/154/Q154867/
 	
 	=============================================================================
 	
+
+{% endraw %}

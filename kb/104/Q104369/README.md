@@ -6,6 +6,8 @@ permalink: /kb/104/Q104369/
 
 ## Q104369: PC WSPlus: Wrong Message When Deleting Meeting
 
+{% raw %}
+
 	Article: Q104369
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -54,3 +56,5 @@ permalink: /kb/104/Q104369/
 	
 	=============================================================================
 	
+
+{% endraw %}

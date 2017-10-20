@@ -6,6 +6,8 @@ permalink: /kb/214/Q214442/
 
 ## Q214442: FIX: Incorrect Prototype in ClassWizard CRecordset::Move()
 
+{% raw %}
+
 	Article: Q214442
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -42,11 +44,11 @@ permalink: /kb/214/Q214442/
 	
 	  class CMyRecordset : public CRecordset
 	  {  // [...]
-	     //{ {AFX_VIRTUAL(CMyRecordset)
+	     //{{AFX_VIRTUAL(CMyRecordset)
 	     public:
 	     // [...]
 	     virtual void Move(long lRows);
-	     //} }AFX_VIRTUAL
+	     //}}AFX_VIRTUAL
 	     // [...]
 	  };
 	
@@ -54,11 +56,11 @@ permalink: /kb/214/Q214442/
 	
 	  class CMyRecordset : public CRecordset
 	  {  // [...]
-	     //{ {AFX_VIRTUAL(CMyRecordset)
+	     //{{AFX_VIRTUAL(CMyRecordset)
 	     public:
 	     // [...]
 	     virtual void Move(long lRows, WORD wFetchType = SQL_FETCH_RELATIVE);
-	     //} }AFX_VIRTUAL
+	     //}}AFX_VIRTUAL
 	     // [...]
 	  };
 	
@@ -100,3 +102,5 @@ permalink: /kb/214/Q214442/
 	
 	=============================================================================
 	
+
+{% endraw %}

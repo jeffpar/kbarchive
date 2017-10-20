@@ -6,6 +6,8 @@ permalink: /kb/181/Q181937/
 
 ## Q181937: Latest SGC-Enabled Schannel.dll Breaks IIS 3.0 Key Manager
 
+{% raw %}
+
 	Article: Q181937
 	Product(s): Internet Information Server
 	Version(s): WINNT:3.0
@@ -69,3 +71,5 @@ permalink: /kb/181/Q181937/
 	
 	=============================================================================
 	
+
+{% endraw %}

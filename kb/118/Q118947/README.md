@@ -6,6 +6,8 @@ permalink: /kb/118/Q118947/
 
 ## Q118947: PC Adm: Err Msg: Error 29 Alias Does Not Exist
 
+{% raw %}
+
 	Article: Q118947
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -62,3 +64,5 @@ permalink: /kb/118/Q118947/
 	
 	=============================================================================
 	
+
+{% endraw %}

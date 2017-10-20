@@ -6,6 +6,8 @@ permalink: /kb/060/Q60037/
 
 ## Q60037: Floating-Point Differences Between the 8086 and MC68000
 
+{% raw %}
+
 	Article: Q60037
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -80,3 +82,5 @@ permalink: /kb/060/Q60037/
 	
 	which is the original number (allowing for some floating point
 	inaccuracies).
+
+{% endraw %}

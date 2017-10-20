@@ -6,6 +6,8 @@ permalink: /kb/240/Q240996/
 
 ## Q240996: Troubleshooting Distinctive Ring
 
+{% raw %}
+
 	Article: Q240996
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -196,3 +198,5 @@ permalink: /kb/240/Q240996/
 	
 	=============================================================================
 	
+
+{% endraw %}

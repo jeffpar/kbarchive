@@ -6,6 +6,8 @@ permalink: /kb/129/Q129976/
 
 ## Q129976: INFO: Differences Between FoxPro and Visual FoxPro
 
+{% raw %}
+
 	Article: Q129976
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -497,3 +499,5 @@ permalink: /kb/129/Q129976/
 	
 	=============================================================================
 	
+
+{% endraw %}

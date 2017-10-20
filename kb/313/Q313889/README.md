@@ -6,6 +6,8 @@ permalink: /kb/313/Q313889/
 
 ## Q313889: XGEN:  Microsoft Does Not Recommend Installing Exchange Server 5
 
+{% raw %}
+
 	Article: Q313889
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -118,3 +120,5 @@ permalink: /kb/313/Q313889/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/302/Q302561/
 
 ## Q302561: LinkSys USB 10T Ethernet Adaptor Status Light
 
+{% raw %}
+
 	Article: Q302561
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -40,3 +42,5 @@ permalink: /kb/302/Q302561/
 	
 	=============================================================================
 	
+
+{% endraw %}

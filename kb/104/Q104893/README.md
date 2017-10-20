@@ -6,6 +6,8 @@ permalink: /kb/104/Q104893/
 
 ## Q104893: FIX: Using /4Yb and /Ox Together Is Not Recommended
 
+{% raw %}
+
 	Article: Q104893
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -82,3 +84,5 @@ permalink: /kb/104/Q104893/
 	
 	=============================================================================
 	
+
+{% endraw %}

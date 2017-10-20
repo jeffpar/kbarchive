@@ -6,6 +6,8 @@ permalink: /kb/155/Q155754/
 
 ## Q155754: PRB: File Could Not Be Mapped to the SourceSafe Project
 
+{% raw %}
+
 	Article: Q155754
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/155/Q155754/
 	
 	=============================================================================
 	
+
+{% endraw %}

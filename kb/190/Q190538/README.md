@@ -6,6 +6,8 @@ permalink: /kb/190/Q190538/
 
 ## Q190538: PRB: Cannot Directly Put Active Document on Active Desktop
 
+{% raw %}
+
 	Article: Q190538
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -93,3 +95,5 @@ permalink: /kb/190/Q190538/
 	
 	=============================================================================
 	
+
+{% endraw %}

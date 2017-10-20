@@ -6,6 +6,8 @@ permalink: /kb/132/Q132170/
 
 ## Q132170: NET VIEW to LAN Manager for UNIX Server Fails from Windows NT
 
+{% raw %}
+
 	Article: Q132170
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -62,3 +64,5 @@ permalink: /kb/132/Q132170/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/264/Q264492/
 
 ## Q264492: Heap Corruption Occurs When DHCP Is Restarted
 
+{% raw %}
+
 	Article: Q264492
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -84,3 +86,5 @@ permalink: /kb/264/Q264492/
 	
 	=============================================================================
 	
+
+{% endraw %}

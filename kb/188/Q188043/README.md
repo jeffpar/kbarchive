@@ -6,6 +6,8 @@ permalink: /kb/188/Q188043/
 
 ## Q188043: SMS Admin Shows Incomplete List of Paths for Software Inventory
 
+{% raw %}
+
 	Article: Q188043
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -62,3 +64,5 @@ permalink: /kb/188/Q188043/
 	
 	=============================================================================
 	
+
+{% endraw %}

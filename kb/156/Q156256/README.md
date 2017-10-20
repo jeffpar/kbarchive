@@ -6,6 +6,8 @@ permalink: /kb/156/Q156256/
 
 ## Q156256: Encarta 97 World Atlas: Contents of README.WRI
 
+{% raw %}
+
 	Article: Q156256
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -303,3 +305,5 @@ permalink: /kb/156/Q156256/
 	
 	=============================================================================
 	
+
+{% endraw %}

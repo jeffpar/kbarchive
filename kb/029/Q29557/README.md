@@ -6,6 +6,8 @@ permalink: /kb/029/Q29557/
 
 ## Q29557: printf() Default Floating-Point Precision Is 6 Decimals
 
+{% raw %}
+
 	Article: Q29557
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -71,3 +73,5 @@ permalink: /kb/029/Q29557/
 	
 	=============================================================================
 	
+
+{% endraw %}

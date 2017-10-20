@@ -6,6 +6,8 @@ permalink: /kb/224/Q224311/
 
 ## Q224311: SNA Server 4.0 Service Pack 2 Upgrades MDAC To Version 2.1
 
+{% raw %}
+
 	Article: Q224311
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0SP2
@@ -60,3 +62,5 @@ permalink: /kb/224/Q224311/
 	
 	=============================================================================
 	
+
+{% endraw %}

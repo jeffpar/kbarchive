@@ -6,6 +6,8 @@ permalink: /kb/215/Q215432/
 
 ## Q215432: PRB: CE TabStrip Images Might Not Be Redrawn Properly
 
+{% raw %}
+
 	Article: Q215432
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,3.0
@@ -138,3 +140,5 @@ permalink: /kb/215/Q215432/
 	
 	=============================================================================
 	
+
+{% endraw %}

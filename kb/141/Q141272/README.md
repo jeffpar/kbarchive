@@ -6,6 +6,8 @@ permalink: /kb/141/Q141272/
 
 ## Q141272: XCLN: How Exchange Clients Use MSMAIL.INI and SHARED.INI
 
+{% raw %}
+
 	Article: Q141272
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -141,3 +143,5 @@ permalink: /kb/141/Q141272/
 	
 	=============================================================================
 	
+
+{% endraw %}

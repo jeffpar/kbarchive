@@ -6,6 +6,8 @@ permalink: /kb/183/Q183240/
 
 ## Q183240: Master and Backup Host Account Databases Not in Sync
 
+{% raw %}
+
 	Article: Q183240
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -76,3 +78,5 @@ permalink: /kb/183/Q183240/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104874/
 
 ## Q104874: Multimedia: Stack Fault Error When Playing AVI Clip on Tandy
 
+{% raw %}
+
 	Article: Q104874
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1992 1993 1994 1995 1996 1997
@@ -65,3 +67,5 @@ permalink: /kb/104/Q104874/
 	
 	=============================================================================
 	
+
+{% endraw %}

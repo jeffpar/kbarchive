@@ -6,6 +6,8 @@ permalink: /kb/146/Q146202/
 
 ## Q146202: AT&amp;T Globalyst TPC Modems Not Detected Properly
 
+{% raw %}
+
 	Article: Q146202
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95,98
@@ -48,3 +50,5 @@ permalink: /kb/146/Q146202/
 	
 	=============================================================================
 	
+
+{% endraw %}

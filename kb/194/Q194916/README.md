@@ -6,6 +6,8 @@ permalink: /kb/194/Q194916/
 
 ## Q194916: Restarting Web Services and Scheduled Tasks with a Batch File
 
+{% raw %}
+
 	Article: Q194916
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0,3.0,4.0
@@ -219,3 +221,5 @@ permalink: /kb/194/Q194916/
 	
 	=============================================================================
 	
+
+{% endraw %}

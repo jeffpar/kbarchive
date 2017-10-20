@@ -6,6 +6,8 @@ permalink: /kb/143/Q143008/
 
 ## Q143008: 32-Bit PowerPoint Viewer Interface Different on Windows NT
 
+{% raw %}
+
 	Article: Q143008
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 7.0; winnt:3.51
@@ -95,3 +97,5 @@ permalink: /kb/143/Q143008/
 	
 	=============================================================================
 	
+
+{% endraw %}

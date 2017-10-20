@@ -6,6 +6,8 @@ permalink: /kb/152/Q152851/
 
 ## Q152851: Cannot Change System File Attribute in Windows Explorer
 
+{% raw %}
+
 	Article: Q152851
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -53,3 +55,5 @@ permalink: /kb/152/Q152851/
 	
 	=============================================================================
 	
+
+{% endraw %}

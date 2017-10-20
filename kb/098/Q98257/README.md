@@ -6,6 +6,8 @@ permalink: /kb/098/Q98257/
 
 ## Q98257: PC WFW: 1.0a Microsoft Schedule+ Disk 2 &#91;3.5, 720K&#93;
 
+{% raw %}
+
 	Article: Q98257
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -66,3 +68,5 @@ permalink: /kb/098/Q98257/
 	
 	=============================================================================
 	
+
+{% endraw %}

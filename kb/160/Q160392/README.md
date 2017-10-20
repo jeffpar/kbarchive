@@ -6,6 +6,8 @@ permalink: /kb/160/Q160392/
 
 ## Q160392: Systems with 4 GB or More of RAM Cannot Boot Windows NT 4.0
 
+{% raw %}
+
 	Article: Q160392
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/160/Q160392/
 	
 	=============================================================================
 	
+
+{% endraw %}

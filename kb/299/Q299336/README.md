@@ -6,6 +6,8 @@ permalink: /kb/299/Q299336/
 
 ## Q299336: FIX: Fatal Exception Error with Macros Dialog Box
 
+{% raw %}
+
 	Article: Q299336
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -65,3 +67,5 @@ permalink: /kb/299/Q299336/
 	
 	=============================================================================
 	
+
+{% endraw %}

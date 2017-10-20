@@ -6,6 +6,8 @@ permalink: /kb/260/Q260253/
 
 ## Q260253: PC NTMMTA: NTMMTA Setup on Windows 2000 May Not Work
 
+{% raw %}
+
 	Article: Q260253
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2000,3.x
@@ -82,3 +84,5 @@ permalink: /kb/260/Q260253/
 	
 	=============================================================================
 	
+
+{% endraw %}

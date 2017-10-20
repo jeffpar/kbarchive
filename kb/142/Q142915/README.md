@@ -6,6 +6,8 @@ permalink: /kb/142/Q142915/
 
 ## Q142915: Unattended Installation of Windows NT 3.51 Service Pack 3
 
+{% raw %}
+
 	Article: Q142915
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -100,3 +102,5 @@ permalink: /kb/142/Q142915/
 	
 	=============================================================================
 	
+
+{% endraw %}

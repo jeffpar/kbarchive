@@ -6,6 +6,8 @@ permalink: /kb/307/Q307490/
 
 ## Q307490: Authoring MOM Reports With Access 2002 Is Not Recommended
 
+{% raw %}
+
 	Article: Q307490
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/307/Q307490/
 	
 	=============================================================================
 	
+
+{% endraw %}

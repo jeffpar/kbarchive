@@ -6,6 +6,8 @@ permalink: /kb/197/Q197213/
 
 ## Q197213: WD97: Word Fields Include Spaces at Beginning and End
 
+{% raw %}
+
 	Article: Q197213
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -51,3 +53,5 @@ permalink: /kb/197/Q197213/
 	
 	=============================================================================
 	
+
+{% endraw %}

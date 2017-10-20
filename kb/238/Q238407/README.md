@@ -6,6 +6,8 @@ permalink: /kb/238/Q238407/
 
 ## Q238407: WD97: Table Border Broken When Table Breaks Across Page
 
+{% raw %}
+
 	Article: Q238407
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -67,3 +69,5 @@ permalink: /kb/238/Q238407/
 	
 	=============================================================================
 	
+
+{% endraw %}

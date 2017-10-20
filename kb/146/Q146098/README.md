@@ -6,6 +6,8 @@ permalink: /kb/146/Q146098/
 
 ## Q146098: XCLN: ClipArt Converted as Embedded Object Disappears
 
+{% raw %}
+
 	Article: Q146098
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -52,3 +54,5 @@ permalink: /kb/146/Q146098/
 	
 	=============================================================================
 	
+
+{% endraw %}

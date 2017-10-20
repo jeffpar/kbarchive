@@ -6,6 +6,8 @@ permalink: /kb/317/Q317908/
 
 ## Q317908: XADM: Inter-Site Message Tracking May Stop Responding
 
+{% raw %}
+
 	Article: Q317908
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP3,5.5 SP4
@@ -109,3 +111,5 @@ permalink: /kb/317/Q317908/
 	
 	=============================================================================
 	
+
+{% endraw %}

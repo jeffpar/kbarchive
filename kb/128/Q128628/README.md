@@ -6,6 +6,8 @@ permalink: /kb/128/Q128628/
 
 ## Q128628: PC Ext: External Reports Incorrect Version
 
+{% raw %}
+
 	Article: Q128628
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0a,3.2,3.2a
@@ -91,3 +93,5 @@ permalink: /kb/128/Q128628/
 	
 	=============================================================================
 	
+
+{% endraw %}

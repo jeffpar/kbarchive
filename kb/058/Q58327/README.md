@@ -6,6 +6,8 @@ permalink: /kb/058/Q58327/
 
 ## Q58327: Windows 3.0 WIN.INI &#91;windows&#93; Section
 
+{% raw %}
+
 	Article: Q58327
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -196,3 +198,5 @@ permalink: /kb/058/Q58327/
 	
 	=============================================================================
 	
+
+{% endraw %}

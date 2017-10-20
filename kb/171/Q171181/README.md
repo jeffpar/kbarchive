@@ -6,6 +6,8 @@ permalink: /kb/171/Q171181/
 
 ## Q171181: Deadlock in TCP/IP on Multiprocessor Computers
 
+{% raw %}
+
 	Article: Q171181
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/171/Q171181/
 	
 	=============================================================================
 	
+
+{% endraw %}

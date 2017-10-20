@@ -6,6 +6,8 @@ permalink: /kb/069/Q69085/
 
 ## Q69085: Trailing Space in SET TEMP Causes Printing Problems in Windows
 
+{% raw %}
+
 	Article: Q69085
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -148,3 +150,5 @@ permalink: /kb/069/Q69085/
 	
 	=============================================================================
 	
+
+{% endraw %}

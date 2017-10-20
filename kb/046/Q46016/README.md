@@ -6,6 +6,8 @@ permalink: /kb/046/Q46016/
 
 ## Q46016: C2018: Unknown Characters During Compile
 
+{% raw %}
+
 	Article: Q46016
 	Product(s): See article
 	Version(s): 2.00
@@ -34,3 +36,5 @@ permalink: /kb/046/Q46016/
 	
 	To prevent this problem, delete the Advisor header lines from your
 	source file.
+
+{% endraw %}

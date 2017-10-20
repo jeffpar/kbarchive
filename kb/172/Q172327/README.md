@@ -6,6 +6,8 @@ permalink: /kb/172/Q172327/
 
 ## Q172327: WD97: Can't Merge Documents with Tracked Changes
 
+{% raw %}
+
 	Article: Q172327
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -145,3 +147,5 @@ permalink: /kb/172/Q172327/
 	
 	=============================================================================
 	
+
+{% endraw %}

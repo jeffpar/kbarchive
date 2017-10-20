@@ -6,6 +6,8 @@ permalink: /kb/133/Q133459/
 
 ## Q133459: Art Gallery: Animations Fail with QVision 2000 Video Driver
 
+{% raw %}
+
 	Article: Q133459
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -85,3 +87,5 @@ permalink: /kb/133/Q133459/
 	
 	=============================================================================
 	
+
+{% endraw %}

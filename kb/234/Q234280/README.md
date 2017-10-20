@@ -6,6 +6,8 @@ permalink: /kb/234/Q234280/
 
 ## Q234280: XCON: Increasing MTA Ability to Pass Mail over Slow Connections
 
+{% raw %}
+
 	Article: Q234280
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -101,3 +103,5 @@ permalink: /kb/234/Q234280/
 	
 	=============================================================================
 	
+
+{% endraw %}

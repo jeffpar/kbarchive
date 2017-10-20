@@ -6,6 +6,8 @@ permalink: /kb/118/Q118547/
 
 ## Q118547: PRB: Multithreaded Program Crashes
 
+{% raw %}
+
 	Article: Q118547
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -134,3 +136,5 @@ permalink: /kb/118/Q118547/
 	
 	=============================================================================
 	
+
+{% endraw %}

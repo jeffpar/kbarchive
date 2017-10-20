@@ -6,6 +6,8 @@ permalink: /kb/129/Q129119/
 
 ## Q129119: Unable to Set Typematic Rate on AT&amp;T Globalyst
 
+{% raw %}
+
 	Article: Q129119
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/129/Q129119/
 	
 	=============================================================================
 	
+
+{% endraw %}

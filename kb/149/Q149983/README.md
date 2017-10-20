@@ -6,6 +6,8 @@ permalink: /kb/149/Q149983/
 
 ## Q149983: Serial Mouse Not Installed; Err Msg: STOP 0x0000001E
 
+{% raw %}
+
 	Article: Q149983
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -78,3 +80,5 @@ permalink: /kb/149/Q149983/
 	
 	=============================================================================
 	
+
+{% endraw %}

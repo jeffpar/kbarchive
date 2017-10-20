@@ -6,6 +6,8 @@ permalink: /kb/167/Q167704/
 
 ## Q167704: Explanation of Windows NT 4.0 WINS Consistency Checking
 
+{% raw %}
+
 	Article: Q167704
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.00
@@ -63,3 +65,5 @@ permalink: /kb/167/Q167704/
 	
 	=============================================================================
 	
+
+{% endraw %}

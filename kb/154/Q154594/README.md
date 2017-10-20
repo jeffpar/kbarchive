@@ -6,6 +6,8 @@ permalink: /kb/154/Q154594/
 
 ## Q154594: PC-NFS Logon Box Missing After Upgrade
 
+{% raw %}
+
 	Article: Q154594
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -93,3 +95,5 @@ permalink: /kb/154/Q154594/
 	
 	=============================================================================
 	
+
+{% endraw %}

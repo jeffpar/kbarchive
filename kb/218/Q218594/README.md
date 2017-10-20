@@ -6,6 +6,8 @@ permalink: /kb/218/Q218594/
 
 ## Q218594: DirectX Troubleshooter Displays Incorrect Troubleshooting Steps
 
+{% raw %}
+
 	Article: Q218594
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -61,3 +63,5 @@ permalink: /kb/218/Q218594/
 	
 	=============================================================================
 	
+
+{% endraw %}

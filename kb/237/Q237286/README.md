@@ -6,6 +6,8 @@ permalink: /kb/237/Q237286/
 
 ## Q237286: BUG: Event Doesn't Fire when Raised from a DLL's Modal Form
 
+{% raw %}
+
 	Article: Q237286
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -171,3 +173,5 @@ permalink: /kb/237/Q237286/
 	
 	=============================================================================
 	
+
+{% endraw %}

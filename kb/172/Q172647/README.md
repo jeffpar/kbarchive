@@ -6,6 +6,8 @@ permalink: /kb/172/Q172647/
 
 ## Q172647: Server Copy of User Profile May Be Overwritten By Local Copy
 
+{% raw %}
+
 	Article: Q172647
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -75,3 +77,5 @@ permalink: /kb/172/Q172647/
 	
 	=============================================================================
 	
+
+{% endraw %}

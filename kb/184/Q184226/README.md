@@ -6,6 +6,8 @@ permalink: /kb/184/Q184226/
 
 ## Q184226: XADM: How Advanced Security Works on a Mailbox
 
+{% raw %}
+
 	Article: Q184226
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -49,3 +51,5 @@ permalink: /kb/184/Q184226/
 	
 	=============================================================================
 	
+
+{% endraw %}

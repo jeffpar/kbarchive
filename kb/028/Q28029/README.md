@@ -6,6 +6,8 @@ permalink: /kb/028/Q28029/
 
 ## Q28029: If ANSI.SYS Sets Background Color, BASIC Clears Line 25
 
+{% raw %}
+
 	Article: Q28029
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -48,3 +50,5 @@ permalink: /kb/028/Q28029/
 	file on your root directory:
 	
 	   DEVICE=ANSI.SYS
+
+{% endraw %}

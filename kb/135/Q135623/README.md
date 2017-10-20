@@ -6,6 +6,8 @@ permalink: /kb/135/Q135623/
 
 ## Q135623: DOC: Column Title of Property Should Be Method
 
+{% raw %}
+
 	Article: Q135623
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -41,3 +43,5 @@ permalink: /kb/135/Q135623/
 	
 	=============================================================================
 	
+
+{% endraw %}

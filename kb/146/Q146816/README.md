@@ -6,6 +6,8 @@ permalink: /kb/146/Q146816/
 
 ## Q146816: IIS Troubleshooting With ODBC SQL Integration
 
+{% raw %}
+
 	Article: Q146816
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -84,3 +86,5 @@ permalink: /kb/146/Q146816/
 	
 	=============================================================================
 	
+
+{% endraw %}

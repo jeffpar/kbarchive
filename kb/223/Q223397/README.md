@@ -6,6 +6,8 @@ permalink: /kb/223/Q223397/
 
 ## Q223397: Event Log Error 3221229574 from Service Control Manager
 
+{% raw %}
+
 	Article: Q223397
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -156,3 +158,5 @@ permalink: /kb/223/Q223397/
 	
 	=============================================================================
 	
+
+{% endraw %}

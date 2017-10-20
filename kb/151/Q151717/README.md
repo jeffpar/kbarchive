@@ -6,6 +6,8 @@ permalink: /kb/151/Q151717/
 
 ## Q151717: Cannot Exit MS-DOS Mode
 
+{% raw %}
+
 	Article: Q151717
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -106,3 +108,5 @@ permalink: /kb/151/Q151717/
 	
 	=============================================================================
 	
+
+{% endraw %}

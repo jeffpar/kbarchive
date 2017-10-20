@@ -6,6 +6,8 @@ permalink: /kb/236/Q236565/
 
 ## Q236565: TCP Connections Not Released by IIS
 
+{% raw %}
+
 	Article: Q236565
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/236/Q236565/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/059/Q59578/
 
 ## Q59578: Maximum File Size Limits for Notepad
 
+{% raw %}
+
 	Article: Q59578
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/059/Q59578/
 	
 	=============================================================================
 	
+
+{% endraw %}

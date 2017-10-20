@@ -6,6 +6,8 @@ permalink: /kb/248/Q248489/
 
 ## Q248489: XADM: Insufficient Access Rights When Creating Site Connectors
 
+{% raw %}
+
 	Article: Q248489
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -68,3 +70,5 @@ permalink: /kb/248/Q248489/
 	
 	=============================================================================
 	
+
+{% endraw %}

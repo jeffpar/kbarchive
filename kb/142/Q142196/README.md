@@ -6,6 +6,8 @@ permalink: /kb/142/Q142196/
 
 ## Q142196: PC Gen: BackOffice Mail Server Has Serial Number 0799-99992
 
+{% raw %}
+
 	Article: Q142196
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -72,3 +74,5 @@ permalink: /kb/142/Q142196/
 	
 	=============================================================================
 	
+
+{% endraw %}

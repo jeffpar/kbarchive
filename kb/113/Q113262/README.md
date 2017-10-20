@@ -6,6 +6,8 @@ permalink: /kb/113/Q113262/
 
 ## Q113262: Plotting TrueType Characters
 
+{% raw %}
+
 	Article: Q113262
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -90,3 +92,5 @@ permalink: /kb/113/Q113262/
 	
 	=============================================================================
 	
+
+{% endraw %}

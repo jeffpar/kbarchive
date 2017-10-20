@@ -6,6 +6,8 @@ permalink: /kb/133/Q133735/
 
 ## Q133735: PPT: Rotated Text Prints Horizontally on Canon LBP 1260 Printer
 
+{% raw %}
+
 	Article: Q133735
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0,97
@@ -72,3 +74,5 @@ permalink: /kb/133/Q133735/
 	
 	=============================================================================
 	
+
+{% endraw %}

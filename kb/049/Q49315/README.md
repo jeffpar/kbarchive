@@ -6,6 +6,8 @@ permalink: /kb/049/Q49315/
 
 ## Q49315: Parameter Order Incorrect for _pg_chartms, _pg_charscatterms
 
+{% raw %}
+
 	Article: Q49315
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -46,3 +48,5 @@ permalink: /kb/049/Q49315/
 	   _pg_chartscatterms (chartenv far *env, float far *valuesx,
 	                       float far *valuesy, short nseries, short n,
 	                       short arraydim, char * far *serieslabels);
+
+{% endraw %}

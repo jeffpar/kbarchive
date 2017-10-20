@@ -6,6 +6,8 @@ permalink: /kb/111/Q111568/
 
 ## Q111568: Video Display Problems with MS-DOS Prompt and Trident Card
 
+{% raw %}
+
 	Article: Q111568
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -71,3 +73,5 @@ permalink: /kb/111/Q111568/
 	
 	=============================================================================
 	
+
+{% endraw %}

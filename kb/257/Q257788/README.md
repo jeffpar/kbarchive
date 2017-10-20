@@ -6,6 +6,8 @@ permalink: /kb/257/Q257788/
 
 ## Q257788: FIX: DataGrid Row Selector Does Not Update
 
+{% raw %}
+
 	Article: Q257788
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -126,3 +128,5 @@ permalink: /kb/257/Q257788/
 	
 	=============================================================================
 	
+
+{% endraw %}

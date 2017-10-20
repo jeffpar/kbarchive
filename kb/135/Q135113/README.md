@@ -6,6 +6,8 @@ permalink: /kb/135/Q135113/
 
 ## Q135113: How to Create a Form that Has No Title Bar
 
+{% raw %}
+
 	Article: Q135113
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -72,3 +74,5 @@ permalink: /kb/135/Q135113/
 	
 	=============================================================================
 	
+
+{% endraw %}

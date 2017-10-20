@@ -6,6 +6,8 @@ permalink: /kb/246/Q246067/
 
 ## Q246067: Sorting a Scripting Dictionary Populated with String Data
 
+{% raw %}
+
 	Article: Q246067
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -238,3 +240,5 @@ permalink: /kb/246/Q246067/
 	
 	=============================================================================
 	
+
+{% endraw %}

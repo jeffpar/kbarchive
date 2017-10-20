@@ -6,6 +6,8 @@ permalink: /kb/137/Q137828/
 
 ## Q137828: Cannot Open Unassociated File with Office 95 Programs
 
+{% raw %}
+
 	Article: Q137828
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -97,3 +99,5 @@ permalink: /kb/137/Q137828/
 	
 	=============================================================================
 	
+
+{% endraw %}

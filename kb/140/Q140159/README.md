@@ -6,6 +6,8 @@ permalink: /kb/140/Q140159/
 
 ## Q140159: Streets 4.0: Unable to Print Highways with HP Printer
 
+{% raw %}
+
 	Article: Q140159
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:4.0,95
@@ -60,3 +62,5 @@ permalink: /kb/140/Q140159/
 	
 	=============================================================================
 	
+
+{% endraw %}

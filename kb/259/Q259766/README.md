@@ -6,6 +6,8 @@ permalink: /kb/259/Q259766/
 
 ## Q259766: XADM: Installation of ADC Stops Responding at Schema Update
 
+{% raw %}
+
 	Article: Q259766
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -58,3 +60,5 @@ permalink: /kb/259/Q259766/
 	
 	=============================================================================
 	
+
+{% endraw %}

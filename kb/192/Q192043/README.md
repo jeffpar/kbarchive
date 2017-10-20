@@ -6,6 +6,8 @@ permalink: /kb/192/Q192043/
 
 ## Q192043: XADM: Cannot Get Properties of Public Folders After a Restore
 
+{% raw %}
+
 	Article: Q192043
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -135,3 +137,5 @@ permalink: /kb/192/Q192043/
 	
 	=============================================================================
 	
+
+{% endraw %}

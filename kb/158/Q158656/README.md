@@ -6,6 +6,8 @@ permalink: /kb/158/Q158656/
 
 ## Q158656: Mac Encarta 97: Print Output Differs From Expected
 
+{% raw %}
+
 	Article: Q158656
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -66,3 +68,5 @@ permalink: /kb/158/Q158656/
 	
 	=============================================================================
 	
+
+{% endraw %}

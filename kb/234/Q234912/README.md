@@ -6,6 +6,8 @@ permalink: /kb/234/Q234912/
 
 ## Q234912: SMS: Y2K Queries Use Large Amounts of Tempdb &amp; Fail to Complete
 
+{% raw %}
+
 	Article: Q234912
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -60,3 +62,5 @@ permalink: /kb/234/Q234912/
 	
 	=============================================================================
 	
+
+{% endraw %}

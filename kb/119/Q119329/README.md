@@ -6,6 +6,8 @@ permalink: /kb/119/Q119329/
 
 ## Q119329: INFO: AppWizard and Precompiled Header Files
 
+{% raw %}
+
 	Article: Q119329
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
@@ -81,3 +83,5 @@ permalink: /kb/119/Q119329/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/256/Q256860/
 
 ## Q256860: XFOR: Lotus Notes Users Unable to View Exchange Users' Free Busy
 
+{% raw %}
+
 	Article: Q256860
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3,SP1
@@ -75,3 +77,5 @@ permalink: /kb/256/Q256860/
 	
 	=============================================================================
 	
+
+{% endraw %}

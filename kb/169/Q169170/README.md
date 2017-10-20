@@ -6,6 +6,8 @@ permalink: /kb/169/Q169170/
 
 ## Q169170: RAS Error 692 Using USR Sportster ISDN 128k
 
+{% raw %}
+
 	Article: Q169170
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/169/Q169170/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175083/
 
 ## Q175083: HOWTO: Print Line-by-Line to a Printer
 
+{% raw %}
+
 	Article: Q175083
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -134,3 +136,5 @@ permalink: /kb/175/Q175083/
 	
 	=============================================================================
 	
+
+{% endraw %}

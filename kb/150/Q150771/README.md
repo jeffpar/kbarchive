@@ -6,6 +6,8 @@ permalink: /kb/150/Q150771/
 
 ## Q150771: LEARN VISUAL BASIC NOW Corrections and Comments
 
+{% raw %}
+
 	Article: Q150771
 	Product(s): Microsoft Press
 	Version(s): 
@@ -142,3 +144,5 @@ permalink: /kb/150/Q150771/
 	
 	=============================================================================
 	
+
+{% endraw %}

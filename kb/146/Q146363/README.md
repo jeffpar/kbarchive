@@ -6,6 +6,8 @@ permalink: /kb/146/Q146363/
 
 ## Q146363: XCLN: Using Space Bar in Name Field on Contact Page
 
+{% raw %}
+
 	Article: Q146363
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0a
@@ -38,3 +40,5 @@ permalink: /kb/146/Q146363/
 	
 	=============================================================================
 	
+
+{% endraw %}

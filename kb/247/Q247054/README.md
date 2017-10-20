@@ -6,6 +6,8 @@ permalink: /kb/247/Q247054/
 
 ## Q247054: How to Change the Blinking Rate of the Insertion Point
 
+{% raw %}
+
 	Article: Q247054
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95,98,98 Second Edition
@@ -96,3 +98,5 @@ permalink: /kb/247/Q247054/
 	
 	=============================================================================
 	
+
+{% endraw %}

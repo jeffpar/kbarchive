@@ -6,6 +6,8 @@ permalink: /kb/166/Q166940/
 
 ## Q166940: PRB: Error Attempting to Run Visual FoxPro Online Documentation
 
+{% raw %}
+
 	Article: Q166940
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0 5.0a
@@ -62,3 +64,5 @@ permalink: /kb/166/Q166940/
 	
 	=============================================================================
 	
+
+{% endraw %}

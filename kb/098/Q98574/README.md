@@ -6,6 +6,8 @@ permalink: /kb/098/Q98574/
 
 ## Q98574: PC WSPlus: Cannot View Another User's Notes
 
+{% raw %}
+
 	Article: Q98574
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a,3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/098/Q98574/
 	
 	=============================================================================
 	
+
+{% endraw %}

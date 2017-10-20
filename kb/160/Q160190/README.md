@@ -6,6 +6,8 @@ permalink: /kb/160/Q160190/
 
 ## Q160190: RasSetEntryProperties Does Not Save a Full Path Script Name
 
+{% raw %}
+
 	Article: Q160190
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/160/Q160190/
 	
 	=============================================================================
 	
+
+{% endraw %}
